@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ (*Introduction to the General Quaternionic Algebra of Quaternions*). This article collects the properties that single it out among the six algebraic structures of the space, and it is the closing article of the Common Theory of the block: the norm, the roots of the central values and the roots of a general element are settled in the three articles before it, and what is left is the list of the structural landmarks.
+The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ (*Introduction to the General Quaternionic Algebra*). This article collects the properties that single it out among the three companion structures of the space, and it is the closing article of the Common Theory of the block: the norm, the roots of the central values and the roots of a general element are settled in the three articles before it, and what is left is the list of the structural landmarks.
 
-Four of the landmarks are negative and decide the block: the unit is one-sided, the product is not associative, there are no zero divisors, and there are no nilpotents. Two are the counterparts of the plain algebra: the idempotents are $0$ and $e_0$ and no others, and the two one-sided actions do not combine into a two-sided module structure. Two concern the conjugation, which fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and is **not** one of the quaternionic product. The last section records the position of the algebra among the six.
+Four of the landmarks are negative and decide the block: the unit is one-sided, the product is not associative, there are no zero divisors, and there are no nilpotents. Two are the counterparts of the plain algebra: the idempotents are $0$ and $e_0$ and no others, and the two one-sided actions do not combine into a two-sided module structure. Two concern the conjugation, which fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and is **not** one of the quaternionic product. The last section records the position of the algebra among the three companion structures.
 
 ## The One-Sided Unit
 
 **Theorem.** The element $e_0$ is a left unit of the product and no right unit exists; the algebra is left-unital and not unital, and the two-sided inverse of a unital algebra is absent.
 
-*Proof.* $\tilde q \star e_0 = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra of Quaternions*. The consequences for inversion are *Norm and Invertibility in the General Quaternionic Algebra*: the two one-sided equations have the coincident solution $\zeta(\tilde p) = \tilde p/N(\tilde p)$, and the units do not form a group.
+*Proof.* $\tilde q \star e_0 = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra*. The consequences for inversion are *Norm and Invertibility in the General Quaternionic Algebra*: the two one-sided equations have the coincident solution $\zeta(\tilde p) = \tilde p/\langle\tilde p\rangle_{\natural}$, and the units do not form a group.
 
-The plain algebra is the only one of the six with a two-sided unit; the two antisymmetric products and the two symmetrised ones have none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
+The symmetric plain algebra is the only one of the three companion structures with a two-sided unit; the antisymmetric plain structure has none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
 
 ## The Associator and its Defect
 
@@ -32,15 +32,15 @@ nonzero at $[e_1,e_0,e_0] = 2e_1$ and at $24$ of the $64$ basis triples. The pro
 
 **Theorem.** The product has no zero divisors: $\tilde p \star \tilde q = 0$ forces $\tilde p = 0$ or $\tilde q = 0$. It has no nonzero nilpotent: $\tilde p \star \tilde p = 0$ forces $\tilde p = 0$.
 
-*Proof.* Both follow from the norm, which is multiplicative and definite: $N(\tilde p \star \tilde q) = N(\tilde p)N(\tilde q)$ and $N(\tilde p \star \tilde p) = N(\tilde p)^2$ (*Norm and Invertibility in the General Quaternionic Algebra*), so a vanishing product or a vanishing square forces a vanishing norm and hence a vanishing element.
+*Proof.* Both follow from the norm, which is multiplicative and definite: $\langle\tilde p \star \tilde q\rangle_{\natural} = \langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$ and $\langle\tilde p \star \tilde p\rangle_{\natural} = \langle\tilde p\rangle_{\natural}^2$ (*Norm and Invertibility in the General Quaternionic Algebra*), so a vanishing product or a vanishing square forces a vanishing norm and hence a vanishing element.
 
-**Remark.** The two facts are the specification of the block against the four companion operations. The symmetrised product has zero divisors, two orthogonal pure elements being one, $e_1 \bullet e_2 = 0$; the two antisymmetric products are alternating, so every element has square zero there. The plain product and the quaternionic product are the two without zero divisors, and they are exactly the two **division** structures of the list. The zero divisors of the symmetric plain and symmetric quaternionic algebras are *Zero Divisors of the Symmetric Plain Algebra* and the corresponding article of the symmetric quaternionic block, both below this article in this category.
+**Remark.** The two facts are the specification of the block against the four companion operations. The symmetrised product has zero divisors, two orthogonal pure elements being one, $e_1 \bullet e_2 = 0$; the two antisymmetric products are alternating, so every element has square zero there. The plain product and the quaternionic product are the two without zero divisors, and they are exactly the two **division** structures of the list. The zero divisors of the symmetric plain and symmetric quaternionic algebras are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and the corresponding article of the symmetric quaternionic block, both below this article in this category.
 
 ## The Idempotents
 
 **Theorem.** The idempotents of the product, the elements $\tilde\pi$ with $\tilde\pi \star \tilde\pi = \tilde\pi$, are exactly $0$ and $e_0$.
 
-*Proof.* The square is $\tilde\pi \star \tilde\pi = N(\tilde\pi)e_0$, a real scalar; equality with $\tilde\pi$ forces $\tilde\pi = p_0e_0$ with $p_0^2 = p_0$, hence $p_0 = 0$ or $p_0 = 1$.
+*Proof.* The square is $\tilde\pi \star \tilde\pi = \langle\tilde\pi\rangle_{\natural}e_0$, a real scalar; equality with $\tilde\pi$ forces $\tilde\pi = p_0e_0$ with $p_0^2 = p_0$, hence $p_0 = 0$ or $p_0 = 1$.
 
 **Corollary.** The two idempotents are central, they are the idempotents of the plain product as well, and there is no minimal idempotent and no nontrivial projective decomposition in this block: the product is a division structure and its only idempotents are the two degenerate ones.
 
@@ -52,7 +52,7 @@ nonzero at $[e_1,e_0,e_0] = 2e_1$ and at $24$ of the $64$ basis triples. The pro
 
 **Theorem (the right side).** The honest right multiplications $\tilde x \mapsto \tilde x \star \tilde p$ do **not** close under composition. The twisted right multiplications $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ do close, with the direct law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$, so that $\{\varrho_{\tilde p}\} \cong \mathbb{H}$ on the right; the two families do not commute in general.
 
-*Proof.* All three statements are computed in *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, below this article in this category, and again by the operator articles of the block (*One-Sided Operators on the General Quaternionic Algebra of Quaternions*, below this article in this category). The reason for the asymmetry is the same as the reason for the missing right unit: the conjugation sits in the first slot, so a product read from the right conjugates the wrong factor.
+*Proof.* All three statements are computed in *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, below this article in this category, and again by the operator articles of the block (*One-Sided Operators on the General Quaternionic Algebra*, below this article in this category). The reason for the asymmetry is the same as the reason for the missing right unit: the conjugation sits in the first slot, so a product read from the right conjugates the wrong factor.
 
 **Corollary.** The algebra carries a left action on itself and a twisted right action, and it carries no two-sided module structure over itself; the failure is the operator form of the missing right unit, and it is the sense in which the product is left-handed.
 
@@ -76,24 +76,21 @@ so the conjugation carries the product to the mirror product and back, and the t
 
 ## The Relation to the Other Five
 
-**Theorem (the position).** Among the six algebraic structures of the quaternion real space, the general quaternionic algebra is the only one that is left-unital and not right-unital; it is not associative, it has no zero divisors and it has two idempotents.
+**Theorem (the position).** Among the three companion structures of the quaternion real space, the general quaternionic algebra is the only one that is left-unital and not right-unital; it is not associative, it has no zero divisors and it has two idempotents.
 
-*Proof.* The unit statement is the first section; the non-associativity the second; the absence of zero divisors the third; the idempotents the fourth. The companions are excluded by the shared list of facts of the chapter: the two symmetrised products have zero divisors, the two antisymmetrised products are alternating with every element square-zero, and the plain product is associative with a two-sided unit.
+*Proof.* The unit statement is the first section; the non-associativity the second; the absence of zero divisors the third; the idempotents the fourth. The companions are excluded by the shared list of facts: the symmetric plain product has zero divisors, the antisymmetric plain product is alternating with every element square-zero, and the algebra product is associative with a two-sided unit.
 
 | structure | product | character |
 |---|---|---|
-| general plain (GPA) | $\tilde p\tilde q$ | associative, two-sided unit, division |
 | symmetric plain (SPA) | $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | commutative, Jordan, no unit, zero divisors |
 | antisymmetric plain (APA) | $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ | alternating, Lie, no unit |
 | general quaternionic (GQA) | $\tilde p^{\natural}\tilde q$ | not associative, left unit only, division |
-| symmetric quaternionic (SQA) | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | commutative, scalar-valued, no unit, zero divisors |
-| antisymmetric quaternionic (AQA) | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | alternating, Jacobi fails |
 
-**Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; it is reproduced here for the relation only. The symmetric and antisymmetric quaternionic blocks are below this article in this category, as is the synthesis.
+**Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternioid Real Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; it is reproduced here for the relation only.
 
 ## Summary
 
-The general quaternionic algebra is left-unital and not unital; its product is not associative and fails every weaker rung; it has no zero divisors and no nonzero nilpotents; its only idempotents are $0$ and $e_0$; its left multiplications form a monoid isomorphic to the opposite algebra, its honest right multiplications do not close, and its twisted right multiplications close with the direct law, so the algebra is left-handed; its conjugation fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and not of its own, and satisfies instead the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p$. Among the six structures of the space it is the one left-unital, non-associative, zero-divisor-free member.
+The general quaternionic algebra is left-unital and not unital; its product is not associative and fails every weaker rung; it has no zero divisors and no nonzero nilpotents; its only idempotents are $0$ and $e_0$; its left multiplications form a monoid isomorphic to the opposite algebra, its honest right multiplications do not close, and its twisted right multiplications close with the direct law, so the algebra is left-handed; its conjugation fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and not of its own, and satisfies instead the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p$. Among the three companion structures of the space it is the one left-unital, non-associative, zero-divisor-free member.
 
 ## Summary of Notation
 

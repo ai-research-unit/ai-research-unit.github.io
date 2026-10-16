@@ -7,7 +7,7 @@ An **abelian topological group** is an abelian group carrying a topology for whi
 
 The article is written additively throughout, since the groups here are abelian: the group law is $+$, the identity is $0$, and the inverse is $-x$. The topological frame is that of the companion articles *Topological Spaces* and *Metric, Uniform and Complete Spaces*, the group-theoretic frame is *Topological Groups*, and the abstract structure theory of discrete abelian groups — torsion, divisibility, rank — is that of *Infinite Abelian Groups* in the algebra of Part I. A topology on an abelian group may come from a distance, from a norm, from a filtration by subgroups, or from no metric at all; the examples below include the first three and the profinite groups of the third kind.
 
-Two boundaries are stated once and used throughout. The **measure** enters only as the Haar measure constructed in *Locally Compact Groups and Haar Measure*, the opening article of Part III's *Analysis on Groups*: this article uses it only as an invariant measure on a locally compact group, and integrates against it nowhere beyond the finite sums of the finite case. The Fourier transform, the convolution algebra $L^1(G)$, the $L^p$ spaces and the Plancherel theorem are the subject in Part III, where the measure and the limit are available; where the harmonic analysis of an example is classical, the example is named and the analysis is deferred. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; no physics is invoked.
+Two boundaries are stated once and used throughout. The **measure** enters only as the Haar measure constructed in *Locally Compact Groups and Haar Measure*, the opening article of Part III's *Analysis on Groups*: this article uses it only as an invariant measure on a locally compact group, and integrates against it nowhere beyond the finite sums of the finite case. The Fourier transform, the convolution algebra $L^1(G)$, the $L^{n}$ spaces and the Plancherel theorem are the subject in Part III, where the measure and the limit are available; where the harmonic analysis of an example is classical, the example is named and the analysis is deferred. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; no physics is invoked.
 
 ## The Additive Setting
 
@@ -27,7 +27,7 @@ The definition is the additive case of *Topological Groups*, §The Axioms and Th
 
 **Pro.** The left uniformity has a base of sets $\{(x,y): x^{-1}y \in U\}$ and the right uniformity a base of sets $\{(x,y): yx^{-1} \in U\}$; in additive notation $x^{-1}y = y - x = yx^{-1}$, so the two families are identical. For uniform continuity of addition, if $y - x \in U$ and $y' - x' \in U$ then $(y + y') - (x + x') = (y - x) + (y' - x') \in U + U$, so the preimage of the entourage of $U + U$ contains the product of the entourages of $U$. Unimodularity (a Part III statement, quoted): the modular function is a continuous homomorphism to the abelian group $\mathbb{R}_{>0}$, and the modular function is invariant under conjugation, and conjugation is trivial in an abelian group, so the modular function is identically $1$ and left and right invariance agree.
 
-**Example (the classical additive groups).** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$, $\mathbb{R}^n$ and $\mathbb{K}^n$ with the usual topology are abelian topological groups; $\mathbb{Z}$ and every group with the discrete topology are discrete abelian topological groups; a finite group is a compact discrete abelian topological group. The circle group $S^1 = \{z \in \mathbb{C} : |z| = 1\}$ is a compact abelian topological group, and the map $t \mapsto e^{2\pi i t}$ presents it as $\mathbb{R}/\mathbb{Z}$.
+**Example (the classical additive groups).** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$, $\mathbb{R}^n$ and $\mathbb{K}^n$ with the usual topology are abelian topological groups; $\mathbb{Z}$ and every group with the discrete topology are discrete abelian topological groups; a finite group is a compact discrete abelian topological group. The circle group $S^1 = \{z \in \mathbb{C} : |z| = 1\}$ is a compact abelian topological group, and the map $t \mapsto \exp(2\pi i t)$ presents it as $\mathbb{R}/\mathbb{Z}$.
 
 **Example (locally compact and p-adic cases).** $\mathbb{Q}_p$ with the $p$-adic absolute value and $\mathbb{Z}_p$ with the subspace topology are locally compact abelian topological groups, the second compact and totally disconnected; both are treated, and the profinite topology of $\mathbb{Z}_p$ is developed in *Topological Groups*. The direct product of locally compact abelian groups with the product topology is locally compact abelian.
 
@@ -77,20 +77,20 @@ The symbol $G^\vee$ is used throughout in preference to a hat, which the corpus 
 
 | Group $G$ | Dual $G^\vee$ | Pairing $\chi(x)$ |
 |---|---|---|
-| $\mathbb{R}$ | $\mathbb{R}$ | $x \mapsto e^{2\pi i \xi x}$, $\xi \in \mathbb{R}$ |
-| $\mathbb{R}^n$ | $\mathbb{R}^n$ | $x \mapsto e^{2\pi i \langle \xi, x\rangle}$ |
+| $\mathbb{R}$ | $\mathbb{R}$ | $x \mapsto \exp(2\pi i \xi x)$, $\xi \in \mathbb{R}$ |
+| $\mathbb{R}^n$ | $\mathbb{R}^n$ | $x \mapsto \exp(2\pi i \langle \xi, x\rangle)$ |
 | $S^1 = \mathbb{R}/\mathbb{Z}$ | $\mathbb{Z}$ | $z \mapsto z^n$, $n \in \mathbb{Z}$ |
 | $\mathbb{Z}$ | $S^1$ | $n \mapsto z^n$, $z \in S^1$ |
-| $\mathbb{Z}/n\mathbb{Z}$ | $\mathbb{Z}/n\mathbb{Z}$ | $m \mapsto e^{2\pi i k m/n}$, $k \in \mathbb{Z}/n\mathbb{Z}$ |
+| $\mathbb{Z}/n\mathbb{Z}$ | $\mathbb{Z}/n\mathbb{Z}$ | $m \mapsto \exp(2\pi i k m/n)$, $k \in \mathbb{Z}/n\mathbb{Z}$ |
 | $\mathbb{Z}_p$ | $\mu_{p^\infty}$ | compatible system of $p^k$-th roots of unity |
-| $\mathbb{Q}_p$ | $\mathbb{Q}_p$ | additive character $x \mapsto e^{2\pi i \{x\}}$ composed with a duality |
+| $\mathbb{Q}_p$ | $\mathbb{Q}_p$ | additive character $x \mapsto \exp(2\pi i \{x\})$ composed with a duality |
 | $\mathbb{Q}$ (discrete) | compact, the Bohr compactification | $\chi$ continuous for the discrete topology |
 
 The **Prüfer group** $\mu_{p^\infty} = \bigcup_k \mu_{p^k}$ is the group of all $p$-power roots of unity, with the discrete topology; it is the dual of the compact group $\mathbb{Z}_p$, and its own dual is $\mathbb{Z}_p$. The passage $\mathbb{Z}_p \leftrightarrow \mu_{p^\infty}$ is the basic example of the interchange of compactness and discreteness under duality, and it is why the structure theory of the dual of a compact group is a statement about a discrete torsion group.
 
 **Proposition (separation).** For a locally compact abelian group $G$ and $x \neq 0$ in $G$, there is a character $\chi$ with $\chi(x) \neq 1$. Hence the characters separate the points of $G$, and the evaluation map $G \to G^{\vee\vee}$ is injective.
 
-**Pro.** By the structure theorem below, $G$ contains an open subgroup of the form $\mathbb{R}^n \times K$ with $K$ compact, so it suffices first to separate points of $\mathbb{R}^n$ and of a compact group, and then to observe that a character of an open subgroup extends to $G$ because $G/H$ is discrete. For $\mathbb{R}^n$ the characters $x \mapsto e^{2\pi i\langle \xi, x\rangle}$ separate points by the non-degeneracy of the inner product. For a compact group $K$ the characters separate points by the Peter–Weyl theory in Part III, or equivalently by the theorem of Gelfand–Raĭkov that a compact abelian group embeds in a product of circles; the construction uses the Haar measure and the integration of Part III, and is quoted as standard here. Extension from an open subgroup to $G$ uses that $G/H$ is discrete, so a homomorphism on $H$ extends by choosing values on a set of coset representatives and using compactness.
+**Pro.** By the structure theorem below, $G$ contains an open subgroup of the form $\mathbb{R}^n \times K$ with $K$ compact, so it suffices first to separate points of $\mathbb{R}^n$ and of a compact group, and then to observe that a character of an open subgroup extends to $G$ because $G/H$ is discrete. For $\mathbb{R}^n$ the characters $x \mapsto \exp(2\pi i\langle \xi, x\rangle)$ separate points by the non-degeneracy of the inner product. For a compact group $K$ the characters separate points by the Peter–Weyl theory in Part III, or equivalently by the theorem of Gelfand–Raĭkov that a compact abelian group embeds in a product of circles; the construction uses the Haar measure and the integration of Part III, and is quoted as standard here. Extension from an open subgroup to $G$ uses that $G/H$ is discrete, so a homomorphism on $H$ extends by choosing values on a set of coset representatives and using compactness.
 
 ### Annihilators and the Algebraic Duality
 
@@ -162,13 +162,13 @@ The two extreme cases govern the general one, and they are dual to each other.
 
 **Proof.** (a) and (b) are proved in the theorem on the dual above: for discrete $G$ the compact-open topology on $G^\vee$ is the product topology on a closed subgroup of $(S^1)^G$, hence compact, and a compact $G$ has discrete dual; the converse directions follow on applying the two forward statements to $G^\vee$ and using the reflexivity $G \cong G^{\vee\vee}$ of the duality theorem. (c) is the compactly generated half of the structure theorem, restated; dually the structure theorem gives $G^\vee \cong \mathbb{R}^n \times T^m \times K^\vee$ with $K^\vee$ discrete, and $K^\vee$ is finitely generated precisely when the compact factor $K$ is a compact Lie group, $K \cong T^k \times F$ with $F$ finite.
 
-**Example (finite abelian groups).** For a finite abelian group $G$ the dual $G^\vee = \operatorname{Hom}(G, S^1)$ has the same order as $G$, and $G \cong G^\vee$ non-canonically, the isomorphism requiring a choice of roots of unity. For $G = \mathbb{Z}/n\mathbb{Z}$ every character is $\chi_k(m) = e^{2\pi i k m/n}$ for a unique $k$, and the orthogonality relation
+**Example (finite abelian groups).** For a finite abelian group $G$ the dual $G^\vee = \operatorname{Hom}(G, S^1)$ has the same order as $G$, and $G \cong G^\vee$ non-canonically, the isomorphism requiring a choice of roots of unity. For $G = \mathbb{Z}/n\mathbb{Z}$ every character is $\chi_k(m) = \exp(2\pi i k m/n)$ for a unique $k$, and the orthogonality relation
 
 $$
 \frac{1}{n}\sum_{m=0}^{n-1} \chi_k(m)\overline{\chi_l(m)} = \delta_{kl}
 $$
 
-holds, the left-hand side being the average $\frac{1}{n}\sum_{m=0}^{n-1} (e^{2\pi i (k-l)/n})^m$ of the $n$-th roots of unity, which is $1$ for $k = l$ and $0$ otherwise. The dual of a direct sum of cyclic groups is the direct sum of the duals, so the duality of finite abelian groups is decided on the cyclic factors; for $G = \bigoplus_i \mathbb{Z}/n_i\mathbb{Z}$ one has $G^\vee \cong \bigoplus_i \mathbb{Z}/n_i\mathbb{Z}$.
+holds, the left-hand side being the average $\frac{1}{n}\sum_{m=0}^{n-1} (\exp(2\pi i (k-l)/n))^m$ of the $n$-th roots of unity, which is $1$ for $k = l$ and $0$ otherwise. The dual of a direct sum of cyclic groups is the direct sum of the duals, so the duality of finite abelian groups is decided on the cyclic factors; for $G = \bigoplus_i \mathbb{Z}/n_i\mathbb{Z}$ one has $G^\vee \cong \bigoplus_i \mathbb{Z}/n_i\mathbb{Z}$.
 
 **Example (compact abelian groups).** The dual of $S^1$ is $\mathbb{Z}$, the dual of $T^n$ is $\mathbb{Z}^n$, the dual of $\mathbb{Z}_p$ is the discrete Prüfer group $\mu_{p^\infty}$, and the dual of a finite abelian group is finite. A compact abelian group embeds in a product of circles, and its dual is a discrete torsion-free group for the connected case: the dual of a torus is free abelian, and a connected compact abelian group is the dual of a discrete torsion-free group (such groups are called solenoids).
 
@@ -253,7 +253,7 @@ $$
 
 The theory above is the *structure* theory of abelian topological groups: it describes the objects, their duals and the correspondence between them, and it is complete without any integration. The next steps in the classical development use the Haar measure and the integration of Part III, and they are deliberately not taken here.
 
-- The **Fourier transform** $\hat f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$ requires the integral and the $L^p$ spaces; it is treated in Part III, together with the inversion theorem and the Plancherel theorem for a locally compact abelian group.
+- The **Fourier transform** $\\mathcal F f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$ requires the integral and the $L^{n}$ spaces; it is treated in Part III, together with the inversion theorem and the Plancherel theorem for a locally compact abelian group.
 - The **convolution algebra** $L^1(G)$ and its relation to the dual is likewise Part III; the finite case, in which convolution is a finite sum and the transform is the discrete Fourier transform, is the content of *Representations of Groups* and is used here only as the motivating example.
 - **Positive definite functions**, the Gelfand–Raĭkov theorem and the construction of Haar measure itself are stated where they are needed from the standard literature; the measure and its invariance are the subject, and the analytic consequences are Part III.
 

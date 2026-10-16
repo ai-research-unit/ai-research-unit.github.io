@@ -41,7 +41,7 @@ $$
 Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $A = a + \varepsilon a'$,
 
 $$
-\exp(A) = e^a + e^a a' \varepsilon = e^a (1 + a' \varepsilon).
+\exp(A) = \exp(a) + \exp(a) a' \varepsilon = \exp(a) (1 + a' \varepsilon).
 $$
 
 So the dual exponential is the ordinary real exponential applied to the real part, multiplied by the factor $1 + \varepsilon a'$ in the infinitesimal part.
@@ -57,7 +57,7 @@ $$
 **Proof.** The first identity follows from the truncated series and the addition formula for the real exponential:
 
 $$
-\exp(a + \varepsilon a') \exp(b + \varepsilon b') = e^a (1 + \varepsilon a') \cdot e^b (1 + \varepsilon b') = e^{a+b} (1 + (a' + b')\varepsilon) = \exp((a + b) + \varepsilon(a' + b')).
+\exp(a + \varepsilon a') \exp(b + \varepsilon b') = \exp(a) (1 + \varepsilon a') \cdot \exp(b) (1 + \varepsilon b') = \exp(a+b) (1 + (a' + b')\varepsilon) = \exp((a + b) + \varepsilon(a' + b')).
 $$
 
 The second is immediate. The third follows from term-by-term differentiation of the series, or from the structure theorem applied to the real part.
@@ -67,14 +67,14 @@ The second is immediate. The third follows from term-by-term differentiation of 
 The dual analogue of Euler's formula is
 
 $$
-e^{\varepsilon a'} = 1 + \varepsilon a'.
+\exp(\varepsilon a') = 1 + \varepsilon a'.
 $$
 
 This is the truncation of the exponential series at first order in $\varepsilon$, and it is the algebraic content of the infinitesimal translation: adding $\varepsilon a'$ to the exponent multiplies the exponential by $1 + \varepsilon a'$, which is an infinitesimal perturbation of the identity.
 
 ### The Kernel of the Exponential
 
-The dual exponential is injective on the real part and affine in the infinitesimal part. Its kernel is empty, because $e^a \neq 0$ for all real $a$. So the exponential has no zeros, and it is invertible everywhere.
+The dual exponential is injective on the real part and affine in the infinitesimal part. Its kernel is empty, because $\exp(a) \neq 0$ for all real $a$. So the exponential has no zeros, and it is invertible everywhere.
 
 ## The Dual Logarithm
 
@@ -155,7 +155,7 @@ This is the binomial expansion truncated at first order, and it is the reason th
 The **dual sine** and **cosine** are defined by
 
 $$
-\sin(A) = \frac{e^{i A} - e^{-i A}}{2i}, \qquad \cos(A) = \frac{e^{i A} + e^{-i A}}{2},
+\sin(A) = \frac{\exp(i A) - \exp(-i A)}{2i}, \qquad \cos(A) = \frac{\exp(i A) + \exp(-i A)}{2},
 $$
 
 where $i$ is the ordinary complex imaginary unit and the exponential is the complex exponential. Since $A = a + \varepsilon a'$ is a dual number, the argument $iA$ is a complex number with a dual infinitesimal part, and the functions are defined by the ordinary complex trigonometric functions applied to the real part, with an infinitesimal correction.
@@ -201,7 +201,7 @@ The dual trigonometric functions are periodic in the real part with period $2\pi
 The **dual hyperbolic sine** and **cosine** are defined by
 
 $$
-\sinh(A) = \frac{e^A - e^{-A}}{2}, \qquad \cosh(A) = \frac{e^A + e^{-A}}{2},
+\sinh(A) = \frac{\exp(A) - \exp(-A)}{2}, \qquad \cosh(A) = \frac{\exp(A) + \exp(-A)}{2},
 $$
 
 where the exponential is the dual exponential. For $A = a + \varepsilon a'$,
@@ -241,10 +241,10 @@ where $i$ is the ordinary complex imaginary unit.
 The **dual gamma function** is defined for $A$ with positive real part by
 
 $$
-\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt,
+\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt,
 $$
 
-where the integral is along the positive real axis, $t^{A-1}$ is the dual power, and $e^{-t}$ is the dual exponential. For $A = a + \varepsilon a'$ with $a > 0$,
+where the integral is along the positive real axis, $t^{A-1}$ is the dual power, and $\exp(-t)$ is the dual exponential. For $A = a + \varepsilon a'$ with $a > 0$,
 
 $$
 \Gamma(A) = \Gamma(a) + a' \Gamma'(a) \varepsilon = \Gamma(a) + a' \Gamma(a) \psi(a) \varepsilon,
@@ -309,13 +309,13 @@ $$
 The **dual error function** is defined by
 
 $$
-\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt,
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A \exp(-t^2) \, dt,
 $$
 
 where the integral is along a path from $0$ to $A$ and the exponential is the dual exponential. For $A = a + \varepsilon a'$,
 
 $$
-\operatorname{erf}(A) = \operatorname{erf}(a) + \frac{2}{\sqrt{\pi}} e^{-a^2} a' \varepsilon.
+\operatorname{erf}(A) = \operatorname{erf}(a) + \frac{2}{\sqrt{\pi}} \exp(-a^2) a' \varepsilon.
 $$
 
 So the dual error function is the ordinary real error function applied to the real part, with an infinitesimal correction given by the Gaussian.
@@ -323,7 +323,7 @@ So the dual error function is the ordinary real error function applied to the re
 ### Properties
 
 $$
-\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2},
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} \exp(-A^2),
 $$
 
 $$
@@ -335,13 +335,13 @@ where the limits are taken along the real axis.
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty \exp(-t^2) \, dt.
 $$
 
 For $A = a + \varepsilon a'$,
 
 $$
-\operatorname{erfc}(A) = \operatorname{erfc}(a) - \frac{2}{\sqrt{\pi}} e^{-a^2} a' \varepsilon.
+\operatorname{erfc}(A) = \operatorname{erfc}(a) - \frac{2}{\sqrt{\pi}} \exp(-a^2) a' \varepsilon.
 $$
 
 ## The Dual Airy Function
@@ -375,7 +375,7 @@ This is Airy's equation, and it holds in the dual sense: the second derivative w
 For $a \to +\infty$,
 
 $$
-\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} e^{-2 a^{3/2}/3}.
+\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} \exp(-2 a^{3/2}/3).
 $$
 
 For $a \to -\infty$,
@@ -463,10 +463,10 @@ For $A = a + \varepsilon a'$, the dual function is the real function plus its de
 The **dual Lambert W function** is the inverse of
 
 $$
-f(B) = B e^B,
+f(B) = B \exp(B),
 $$
 
-where the exponential is the dual exponential. For $A = a + \varepsilon a'$, the equation $W(A) e^{W(A)} = A$ has a unique solution of the form
+where the exponential is the dual exponential. For $A = a + \varepsilon a'$, the equation $W(A) \exp(W(A)) = A$ has a unique solution of the form
 
 $$
 W(A) = W(a) + a' \frac{W(a)}{a(1 + W(a))} \varepsilon,
@@ -490,13 +490,13 @@ The dual Lambert W function has two real branches, corresponding to the two real
 
 The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.
 
-**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $A = a + \varepsilon a'$ with $a \in I$,
+**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F^{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $A = a + \varepsilon a'$ with $a \in I$,
 
 $$
-\tilde{F}(A) = F(a) + a' F'(a) \varepsilon.
+F^{\mathrm{ext}}(A) = F(a) + a' F'(a) \varepsilon.
 $$
 
-**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(a) + (a' u'(a) + c(a))\varepsilon$. Evaluating at $a' = 0$ gives $u(a) = F(a)$, hence $u'(a) = F'(a)$. The coefficient of $a'$ in the infinitesimal part is therefore $F'(a)$, and the term $c(a)$ is the value of the infinitesimal part at $a' = 0$, which is zero because the extension reduces to the real function $F$ when $a' = 0$.
+**Proof.** The extension $F^{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(a) + (a' u'(a) + c(a))\varepsilon$. Evaluating at $a' = 0$ gives $u(a) = F(a)$, hence $u'(a) = F'(a)$. The coefficient of $a'$ in the infinitesimal part is therefore $F'(a)$, and the term $c(a)$ is the value of the infinitesimal part at $a' = 0$, which is zero because the extension reduces to the real function $F$ when $a' = 0$.
 
 This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
 
@@ -506,7 +506,7 @@ The dual special functions are the named functions of dual numbers analysis. All
 
 The exponential is defined by its series, which truncates at the first order in $\varepsilon$; the dual logarithm is its inverse and is the ordinary logarithm together with a term in the infinitesimal direction; the dual power function is defined by $A^B = \exp(B\log A)$; and the trigonometric and hyperbolic functions are built from the dual exponential as in the real case.
 
-Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $B \mapsto Be^B$.
+Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $B \mapsto B\exp(B)$.
 
 The section on the structure principle states what organises all of the definitions: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part.
 
@@ -517,7 +517,7 @@ The section on the structure principle states what organises all of the definiti
 | $\mathbb{D}'$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $A = a + \varepsilon a'$ | General dual number, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ |
-| $e^A, \log A$ | Dual exponential, logarithm |
+| $\exp(A), \log A$ | Dual exponential, logarithm |
 | $\sin A, \cos A, \tan A$ | Dual trigonometric functions |
 | $\sinh A, \cosh A, \tanh A$ | Dual hyperbolic functions |
 | $A^B$ | Dual power |

@@ -87,7 +87,7 @@ Objects that a reader may expect in a list of linear groups, and does not find h
 
 | Object | Why it is not listed | Introduced in |
 |---|---|---|
-| $O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$ | they are defined by a form and are listed among the classical geometric groups | *List of Classical Geometric Groups* |
+| $O(V,\mathfrak{Q})$, $U(V,h)$, $Sp(V,\omega)$ | they are defined by a form and are listed among the classical geometric groups | *List of Classical Geometric Groups* |
 | the alternating and symmetric groups $A_n$, $S_n$ | they are permutation groups, a different family; the coincidences with the linear groups are recorded above | *The Classification of Finite Simple Groups*; *Groups* |
 | $\operatorname{GL}_n(D)$ over a division ring | the linear group over a non-commutative division ring, recorded with the automorphism groups | *List of Automorphism Groups* |
 | the affine and Euclidean groups | they are the semidirect products of the linear groups with the translations | *List of Affine and Euclidean Groups* |

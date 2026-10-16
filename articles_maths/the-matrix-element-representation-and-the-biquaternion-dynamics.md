@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde C)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $N$ and $\|\cdot\|_E$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
+The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde C)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $\langle\cdot\rangle_{\natural}$ and $\|\cdot\|_E$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
 
-The isomorphism and its basic properties, the trace and the determinant, the spectrum and the Cayley–Hamilton identity are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the four conjugations in matrix form are in the second of these; the quadratic family is *The Biquaternion Quadratic Map and Its Julia Sets*; the norms are *Norm and Invertibility in the General Quaternionic Algebra*. The several-variable complex theory the matrix family belongs to is *Several Complex Variables* and the holomorphic dynamics of Part III.
+The isomorphism and its basic properties, the trace and the determinant, the spectrum and the Cayley–Hamilton identity are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the four conjugations in matrix form are in the second of these; the quadratic family is *The Biquaternion Quadratic Map and Its Julia Sets*; the norms are *Norm and Invertibility in the General Quaternionic Algebra*. The several-variable complex theory the matrix family belongs to is *Several Complex Variables* and the holomorphic dynamics of Part III.
 
 The article owns the transport of the family, the norm comparison that makes the escape notions agree, the eigenvalue and determinant invariants along the orbit, the reading of the dynamics as two-variable matrix iteration, and the warning that the isomorphism concerns the elements and not the operators on them. It does not re-derive the isomorphism or the conjugations.
 
@@ -20,7 +20,7 @@ $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{pmatrix},\qquad Q_\mu=q_\mu+iq'_\mu ,
 $$
 
-of determinant $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$ and trace $2Q_0$.
+of determinant $\langle\tilde Q\rangle_{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2$ and trace $2Q_0$.
 
 ## The Model as a Model of the Dynamics
 
@@ -57,7 +57,7 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 
 **Corollary (the escape notions agree).** A biquaternion orbit is bounded in the Euclidean norm exactly when its matrix orbit is bounded in the Frobenius norm, and exactly when it is bounded in the operator norm. The filled Julia set and the Julia set are the same sets in the two models.
 
-**Proof.** The three norms are pairwise comparable on the fixed finite-dimensional space, by the proposition, and a sequence is bounded for one exactly when it is bounded for the others. The biquaternion norm $N$ is a different object: it is the determinant of the matrix and the product $\tilde Q\tilde Q^{\natural}$, it is complex-valued and indefinite and vanishes on the zero divisors, so boundedness of $N$ is **not** equivalent to boundedness in the Euclidean norm — a nilpotent element has $N=0$ and arbitrarily large Euclidean norm.
+**Proof.** The three norms are pairwise comparable on the fixed finite-dimensional space, by the proposition, and a sequence is bounded for one exactly when it is bounded for the others. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a different object: it is the determinant of the matrix and the product $\tilde Q\tilde Q^{\natural}$, it is complex-valued and indefinite and vanishes on the zero divisors, so boundedness of $\langle\cdot\rangle_{\natural}$ is **not** equivalent to boundedness in the Euclidean norm — a nilpotent element has $N=0$ and arbitrarily large Euclidean norm.
 
 **Remark (the constant $\sqrt2$ is the only discrepancy).** Every statement of the category phrased in a norm differs between the algebra and the model by at most the factor $\sqrt2$, and the escape radius of the model and of the algebra differ accordingly. **The factor is a normalisation and not a phenomenon**, but it must be tracked, because a radius of $2$ in the model is a radius of $\sqrt2$ in the algebra.
 
@@ -66,10 +66,10 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 **Proposition (determinant and trace).** Along the orbit,
 
 $$
-\det\mathsf{M}_2(\tilde Q_n)=N(\tilde Q_n), \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_n)=2(Q_n)_0 ,
+\det\mathsf{M}_2(\tilde Q_n)=\langle\tilde Q_n\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_n)=2(Q_n)_0 ,
 $$
 
-and for the parameter zero, $N(\tilde Q_n)=N(\tilde Q)^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
+and for the parameter zero, $\langle\tilde Q_n\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
 
 $$
 M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
@@ -107,7 +107,7 @@ Q_3&-Q_2&Q_1&Q_0
 \end{pmatrix},
 $$
 
-of determinant $N(\tilde Q)^2$ and trace $4Q_0$, with characteristic polynomial $\bigl((\zeta-Q_0)^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_0+iB,Q_0+iB,Q_0-iB,Q_0-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q)$ each counted twice.
+of determinant $\langle\tilde Q\rangle_{\natural}^2$ and trace $4Q_0$, with characteristic polynomial $\bigl((\zeta-Q_0)^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_0+iB,Q_0+iB,Q_0-iB,Q_0-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q)$ each counted twice.
 
 **Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q)$ acts by $M$ (*Modules over the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_0\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
 
@@ -117,7 +117,7 @@ $$
 dF_{\tilde C}\big|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q=L_{\tilde Q}(\tilde P)+R_{\tilde Q}(\tilde P),
 $$
 
-which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q)$ — $\det dF=4N(\tilde Q)(2Q_0)^2$ — and not from the matrix of the element alone.
+which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q)$ — $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_0)^2$ — and not from the matrix of the element alone.
 
 **Proof.** The product rule; the determinant computation is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*.
 
@@ -138,12 +138,12 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 | $p_n$ | the iterated polynomial, $p_{n+1}=p_n^2+N$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication operators |
 | $dF_{\tilde C}=\tilde Q\tilde P+\tilde P\tilde Q$ | the derivative, the sum of two operators |
-| $\det dF=4N(\tilde Q)(2Q_0)^2$ | the determinant of the derivative |
+| $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_0)^2$ | the determinant of the derivative |
 
 ## Further Reading
 
-- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`) and *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the isomorphism, the trace and the determinant, the spectrum and the conjugations in matrix form.
+- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`) and *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, for the isomorphism, the trace and the determinant, the spectrum and the conjugations in matrix form.
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the family, the eigenvalue reduction and the critical set.
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the regular representation and the doubling of the spectrum.
 - *The Zero Divisors and the Singular Julia Sets* (`articles_maths/the-zero-divisors-and-the-singular-julia-sets.md`), for the cone that the leading part of the matrix family is not proper over.
-- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $N$ and the Euclidean norm compared here.
+- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $\langle\cdot\rangle_{\natural}$ and the Euclidean norm compared here.

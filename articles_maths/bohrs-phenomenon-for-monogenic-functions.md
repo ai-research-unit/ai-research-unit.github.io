@@ -27,7 +27,7 @@ The algebra is the reduced quaternions $\mathcal{A} = \operatorname{span}_\mathb
 **The basis, quoted.** The explicit homogeneous monogenic polynomials $X_n^{l,\dagger}$, $l = 0,\dots,n+1$, and $Y_n^{m,\dagger}$, $m = 1,\dots,n+1$, built from the associated Legendre functions $P_n^{l}$ and the Chebyshev polynomials $T_l$, $U_l$, form an orthogonal system in $L^2(B;\mathcal{A};\mathbb{R})$, and their normalisations $X_n^{0,\dagger,*}$, $X_n^{m,\dagger,*}$, $Y_n^{m,\dagger,*}$ an orthonormal basis of $\mathcal{R}^+(B;\mathcal{A};n)$. Every $f \in \mathcal{R}^+(B;\mathcal{A})$ has the Fourier expansion
 
 $$
-f = \sum_{n\ge 0}\Big[ X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big( X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big],
+f = \sum_{n\ge 0}\Big[ X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big(X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big],
 $$
 
 with real coefficients, and it splits orthogonally as $f = f(0) + g + h$, where the **main part** $g$ is the series with $m$ running only to $n$ and $h$ is a hyperholomorphic constant expanded in $X_n^{n+1,\dagger,*}$ and $Y_n^{n+1,\dagger,*}$. Two properties of the basis are the analytic input of everything below, and both are stated in *Quaternion Regular Functions*:
@@ -44,7 +44,7 @@ The classical proof needs to bound every coefficient by the first. In the monoge
 **Lemma (coefficient estimate).** Let $f$ be a monogenic function with $\lvert f(\tilde q)\rvert < 1$ in $B$ such that $f(\tilde q)-f(0)$ is orthogonal to the hyperholomorphic constants in $L^2(B;\mathcal{A};\mathbb{R})$. Then each coefficient satisfies
 
 $$
-\lvert a_n^{l}\rvert \le \max_{B}\lvert \operatorname{Sc}(X_n^{l,\dagger})\rvert \, \frac{\lVert X_n^{l,\dagger}\rVert_{L^2(B;\mathcal{A};\mathbb{R})}}{\lVert \operatorname{Sc}(X_n^{l,\dagger})\rVert^2_{L^2(B)}} \, \frac{4\pi}{3}\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big),
+\lvert a_n^{l}\rvert \le \max_{B}\lvert \operatorname{Sc}(X_n^{l,\dagger})\rvert \, \frac{\lVert X_n^{l,\dagger}\rVert_{L^2(B;\mathcal{A};\mathbb{R})}}{\lVert \operatorname{Sc}(X_n^{l,\dagger})\rVert^2_{L^2(B)}} \, \frac{4\pi}{3}\big(\mathcal{M}_f(1) - \operatorname{Sc}f(0) \big),
 $$
 
 and the same inequality holds with $Y_n^{m,\dagger}$ and $b_n^m$; here $\mathcal{M}_f(1) = \sup_{\lvert \tilde q\rvert<1}\lvert f(\tilde q)\rvert$. In the normalised form of the source, in which $\mathcal{M}_f(1) = 1$, the last factor is written as $2\sqrt{\pi/3}\,(2\sqrt{\pi/3} - a_0^0)$.
@@ -66,7 +66,7 @@ The monogenic analogue of Bohr's theorem has two readings, which differ in where
 **Corollary (the case $f(0) = 0$).** Let $f$ be a square-integrable monogenic function with $f(0) = 0$ and $\lvert f(\tilde q)\rvert < 1$ in $B$. Then
 
 $$
-\sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big( X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1
+\sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big(X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1
 $$
 
 in the ball $\lvert \tilde q\rvert = r < 0.125$.
@@ -76,7 +76,7 @@ The modulus is taken of the whole cluster of summands of one degree, which is th
 **Theorem (the general case, summand by summand).** Let $f$ be a monogenic function such that $f(\tilde q)-f(0)$ is orthogonal to the hyperholomorphic constants, with $\lvert f(\tilde q)\rvert < 1$ in $B$. Then
 
 $$
-\sum_{n\ge 0}\Big[ \lvert X_n^{0,\dagger,*}\rvert\,\lvert a_n^0\rvert + \sum_{m=1}^{n} \big( \lvert X_n^{m,\dagger,*}\rvert\,\lvert a_n^m\rvert + \lvert Y_n^{m,\dagger,*}\rvert\,\lvert b_n^m\rvert \big) \Big] < 1
+\sum_{n\ge 0}\Big[ \lvert X_n^{0,\dagger,*}\rvert\,\lvert a_n^0\rvert + \sum_{m=1}^{n} \big(\lvert X_n^{m,\dagger,*}\rvert\,\lvert a_n^m\rvert + \lvert Y_n^{m,\dagger,*}\rvert\,\lvert b_n^m\rvert \big) \Big] < 1
 $$
 
 in the ball of radius $r$ with $0 \le r < 0.026$.
@@ -96,13 +96,13 @@ The engine of the coefficient estimate is an inequality for the hypercomplex der
 **Theorem.** Let $f$ be a square-integrable monogenic function in $B$. Then for $0 \le r < 1$,
 
 $$
-\mathcal{M}\Big( \tfrac12\bar Df, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big( \mathcal{M}_f(1) - \lvert \operatorname{Sc}f(0)\rvert \Big).
+\mathcal{M}\Big(\tfrac12\bar Df, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big(\mathcal{M}_f(1) - \lvert \operatorname{Sc}f(0)\rvert \Big).
 $$
 
 **Corollary.** Let $\tilde f$ be a square-integrable monogenic function in $B$ orthogonal to the non-trivial hyperholomorphic constants. Then for $0 \le r < 1$,
 
 $$
-\mathcal{M}\Big( \tfrac12\bar D\tilde f, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big( \mathcal{M}_{\tilde f}(1) - \lvert \tilde f(0)\rvert \Big),
+\mathcal{M}\Big(\tfrac12\bar D\tilde f, r \Big) \le \frac{8(3r+1)}{(1-r)^5}\Big(\mathcal{M}_{\tilde f}(1) - \lvert \tilde f(0)\rvert \Big),
 $$
 
 and $\tilde f(0)$ is real, because the orthogonality removes the $e_1$- and $e_2$-valued parts of the constant term.
@@ -110,7 +110,7 @@ and $\tilde f(0)$ is real, because the orthogonality removes the $e_1$- and $e_2
 **The decisive step, and its arithmetic.** The proof replaces $f$ by its main part $g$, applies the ladder to the Fourier series, estimates each term by the pointwise bound and sums, which gives
 
 $$
-\Big\lvert \tfrac12\bar Dg(\tilde q)\Big\rvert \le \frac43\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big) \sum_{n\ge 1} n^2(n+1)(n+2)\lvert \tilde q\rvert^{n-1}.
+\Big\lvert \tfrac12\bar Dg(\tilde q)\Big\rvert \le \frac43\big(\mathcal{M}_f(1) - \operatorname{Sc}f(0) \big) \sum_{n\ge 1} n^2(n+1)(n+2)\lvert \tilde q\rvert^{n-1}.
 $$
 
 The series is elementary. With $\lvert \tilde q\rvert = r$,

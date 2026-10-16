@@ -20,7 +20,7 @@ inversely proportional to the mass. This article develops that statement in the 
 
 **The trap that hides the identity.** The quantity $a$ in the Unruh formula is a proper acceleration, and the temptation is to carry it over to the black-hole horizon by computing the proper acceleration of a static observer there. That quantity **diverges** at the horizon and is not the Hawking temperature's argument. What enters is the surface gravity $\kappa$, which is the *redshifted* acceleration, finite at the horizon. Section "The Schwarzschild Horizon and Its Surface Gravity" computes both, shows that $a(r)\,\sqrt{f}\to\kappa$ while $a(r)\to\infty$, and states the identification in a form that uses the divergent quantity nowhere. The Hawking temperature is the Unruh temperature of the near-horizon static observer, redshifted from the horizon to infinity; the divergence of the local Unruh temperature is exactly cancelled by the redshift.
 
-**The trap that hides the derivation.** Writing down a Planck spectrum and reading off a temperature is not a derivation of thermality. The thermal form comes from the **mode mixing** between the vacuum in the far past (the *in* vacuum) and the quanta detected in the far future (the *out* modes): the two sets of modes are related by a Bogoliubov transformation, and the coefficients of that transformation carry the exponential factor that produces the Planck distribution. The article exhibits the Bogoliubov transformation, derives the particle number as the squared negative-frequency coefficient, shows where the exponential $e^{-2\pi\omega/\kappa}$ comes from (the logarithmic phase of the mode at the horizon), and obtains both the Bose–Einstein and Fermi–Dirac forms from the same exponential. Thermality is shown; it is not asserted.
+**The trap that hides the derivation.** Writing down a Planck spectrum and reading off a temperature is not a derivation of thermality. The thermal form comes from the **mode mixing** between the vacuum in the far past (the *in* vacuum) and the quanta detected in the far future (the *out* modes): the two sets of modes are related by a Bogoliubov transformation, and the coefficients of that transformation carry the exponential factor that produces the Planck distribution. The article exhibits the Bogoliubov transformation, derives the particle number as the squared negative-frequency coefficient, shows where the exponential $\exp(-2\pi\omega/\kappa)$ comes from (the logarithmic phase of the mode at the horizon), and obtains both the Bose–Einstein and Fermi–Dirac forms from the same exponential. Thermality is shown; it is not asserted.
 
 Three structures carry the effect, and their homes in the framework differ.
 
@@ -30,14 +30,14 @@ Three structures carry the effect, and their homes in the framework differ.
 
 **Relation to the sibling and the parent.** *The Unruh Effect in Biquaternionic Form* is the nearest sibling, and this article does not rederive its result. It takes the sibling's KMS strip, its Planck factor, and its identification of the modular flow with the boost, and asks what changes when the boost's horizon is the horizon of a black hole rather than the edge of a Rindler wedge. What changes is the surface gravity and the global redshift; what does not change is the KMS statement. *The KMS Condition and the Biquaternion Framework* is the parent, and it leaves the same gap the sibling records: its modular Hamiltonian is finite-dimensional and does not extend to a field algebra; the identification of the modular flow with the horizon flow is imported. The gap is stated here rather than filled.
 
-- **Established, and recomputed below.** For Schwarzschild, the surface gravity is $\kappa=c^2 f'(r_s)/2=c^4/(4GM)$ with $f=1-r_s/r$, $r_s=2GM/c^2$; the static observer's proper acceleration is $a(r)=c^2 f'/(2\sqrt f)=GM/(r^2\sqrt f)$, which diverges at $r_s$ and equals $\kappa/\sqrt f$ only at $r=r_s$, while its redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ tends to $\kappa$ as $r\to r_s$. The Euclidean Schwarzschild section is regular at the horizon only if the imaginary time has period $8\pi GM/c^3=2\pi c/\kappa=2\pi/\kappa_\omega$, which is the inverse Hawking temperature. Tractable pieces of the Bogoliubov formalism are recomputed: the coefficients' consistency relations, the particle number $\sum_i|\mathcal B_{ji}|^2$, the branch-point factor $e^{-\pi\omega/\kappa}$, the two-mode squeeze identity $\sinh^2 r=1/(e^{2\pi\omega/\kappa}-1)$ with $\tanh r=e^{-\pi\omega/\kappa}$, the Bose and Fermi geometric sums, and the $M^{-1}$ scaling of $T_{\mathrm H}$.
+- **Established, and recomputed below.** For Schwarzschild, the surface gravity is $\kappa=c^2 f'(r_s)/2=c^4/(4GM)$ with $f=1-r_s/r$, $r_s=2GM/c^2$; the static observer's proper acceleration is $a(r)=c^2 f'/(2\sqrt f)=GM/(r^2\sqrt f)$, which diverges at $r_s$ and equals $\kappa/\sqrt f$ only at $r=r_s$, while its redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ tends to $\kappa$ as $r\to r_s$. The Euclidean Schwarzschild section is regular at the horizon only if the imaginary time has period $8\pi GM/c^3=2\pi c/\kappa=2\pi/\kappa_\omega$, which is the inverse Hawking temperature. Tractable pieces of the Bogoliubov formalism are recomputed: the coefficients' consistency relations, the particle number $\sum_i|\mathcal B_{ji}|^2$, the branch-point factor $\exp(-\pi\omega/\kappa)$, the two-mode squeeze identity $\sinh^2 r=1/(\exp(2\pi\omega/\kappa)-1)$ with $\tanh r=\exp(-\pi\omega/\kappa)$, the Bose and Fermi geometric sums, and the $M^{-1}$ scaling of $T_{\mathrm H}$.
 - **Standard, and imported.** Hawking's calculation; the metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the horizon mode's analytic continuation with the Bogoliubov coefficient ratio; the Hartle–Hawking and Unruh vacua; the KMS characterization of thermal equilibrium; the Bisognano–Wichmann theorem.
 - **Interpretation.** Interpretation the KMS imaginary time as the intrinsic imaginary time of $\mathbb{M}_-$; reading the local light cone as the zero-divisor cone; reading the modular Hamiltonian as the Hermitian generator in $\mathbb{M}_+$. These are structural interpretations of the imported construction; the algebra is consistent with them and does not force them.
 - **Gaps, left visible.** The framework contains no black-hole geometry and generates no dynamics; the Schwarzschild metric is imported as a frame field that nothing selects. The framework does not derive the mode mixing, the exponential factor, or the KMS property; it houses them. Hawking radiation has never been observed, and no claim of observation is made here. The thermodynamics of the horizon — its entropy, its laws, its evaporation — is the subject of a separate planned article and is not developed here.
 
 The article is organized as follows. The next section fixes the Schwarzschild horizon, computes the proper acceleration and the surface gravity, and separates them. The section after that reduces the near-horizon geometry to Rindler and states the identification with the Unruh effect precisely. A short section records what the biquaternion framework carries and what it imports. Two sections construct the Bogoliubov transformation and derive the Planck spectrum from it. A section computes the temperature, checks it against the Euclidean period and against the mass scaling, and records the observational status. The article closes with the established/interpretation split, open questions, and the summary.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$; the biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $G$ is Newton's constant, $M$ the black-hole mass, $f=1-r_s/r$, $r_s=2GM/c^2$; $\kappa$ is the surface gravity in the **acceleration normalization**, in which the temperature is $T=\hbar\kappa/(2\pi c k_B)$, and $\kappa_\omega=\kappa/c$ is the same quantity in the **frequency normalization**, in which $T=\hbar\kappa_\omega/(2\pi k_B)$. Bogoliubov coefficients carry mode indices and are written $\alpha_{ji}$ and $\mathcal B_{ji}$; the index-free scalar $\beta=\hbar/(k_BT)$ is the inverse temperature. Natural units $\hbar=c=k_B=1$ are used in the mode analysis and restored in every physical result.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$; the biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $G$ is Newton's constant, $M$ the black-hole mass, $f=1-r_s/r$, $r_s=2GM/c^2$; $\kappa$ is the surface gravity in the **acceleration normalization**, in which the temperature is $T=\hbar\kappa/(2\pi c k_B)$, and $\kappa_\omega=\kappa/c$ is the same quantity in the **frequency normalization**, in which $T=\hbar\kappa_\omega/(2\pi k_B)$. Bogoliubov coefficients carry mode indices and are written $\alpha_{ji}$ and $\mathcal B_{ji}$; the index-free scalar $\beta=\hbar/(k_BT)$ is the inverse temperature. Natural units $\hbar=c=k_B=1$ are used in the mode analysis and restored in every physical result.
 
 ## The Schwarzschild Horizon and Its Surface Gravity
 
@@ -74,7 +74,7 @@ which is tangent to the horizon, null on it, time-translation outside it, and no
 A static observer outside the horizon has four-velocity proportional to $\xi$,
 
 $$
-u^\mu \propto \delta^\mu_t, \qquad u^\mu u_\mu = -c^2,
+v^\mu \propto \delta^\mu_t, \qquad v^\mu v_\mu = -c^2,
 $$
 
 with proper time $d\tau = \sqrt f\,dt$. Its proper acceleration is
@@ -221,7 +221,7 @@ and records two algebraic facts that this article uses unchanged: the imaginary 
 
 - *The metric.* The Schwarzschild solution is not derived. The framework can carry it as a frame field, and nothing in the algebra selects it; the local-scale route of *Curved Spacetime and the Biquaternion Framework* cannot contain it (its Ricci-flat class is flat). The horizon, the surface gravity, and the collapse are imported from general relativity.
 - *The in/out mode decomposition and the Bogoliubov coefficients.* The splitting of the field into modes on past and future null infinity, and the transformation between them, are standard quantum field theory in curved spacetime. The framework supplies the notation in which the modes are written.
-- *The exponential factor and the KMS property.* That the horizon-mode Bogoliubov coefficients carry the factor $e^{-\pi\omega/\kappa}$, and that the relevant vacuum is KMS, are results of the standard derivation. The sections below show where thermality comes from in terms of these inputs; they do not derive the inputs from the algebra.
+- *The exponential factor and the KMS property.* That the horizon-mode Bogoliubov coefficients carry the factor $\exp(-\pi\omega/\kappa)$, and that the relevant vacuum is KMS, are results of the standard derivation. The sections below show where thermality comes from in terms of these inputs; they do not derive the inputs from the algebra.
 - *The dynamics.* There is no action and no field equation for the frame or the connection in the framework, hence no equation that would produce the collapse or fix the vacuum. The same limitation the curved-spacetime article records applies here unchanged.
 
 The honest summary, in the sibling's form: the framework supplies the *algebraic home* — the material sector for the field and its imaginary time, the informational sector for the modular generator, the zero-divisor cone for the local horizon — and it *transcribes* the Hawking calculation. It does not derive it.
@@ -296,29 +296,29 @@ because only the $a_i a_k^\dagger$ contraction survives. The total number of out
 The horizon is what forces the specific distribution. Consider the outgoing radial null coordinate $u$ (retarded time), and the Kruskal coordinate $U$ that is regular across the horizon. Near the horizon they are related by
 
 $$
-U=-e^{-\kappa u}\quad\Longleftrightarrow\quad u=-\frac{1}{\kappa}\ln(-U),
+U=-\exp(-\kappa u)\quad\Longleftrightarrow\quad u=-\frac{1}{\kappa}\ln(-U),
 \qquad (\hbar=c=1,\ \kappa=\kappa_\omega),
 $$
 
 where $\kappa$ is the surface gravity in natural units. A positive-frequency out mode of frequency $\omega$ is proportional to
 
 $$
-e^{-i\omega u}=\left(-U\right)^{i\omega/\kappa},
+\exp(-i\omega u)=\left(-U\right)^{i\omega/\kappa},
 $$
 
-which has a **logarithmic phase** at the horizon: the phase diverges as $U\to0$. Now continue $U$ around the branch point at the horizon, $U\to e^{\pm i\pi}U$ (so that $(-U)\to e^{\pm i\pi}(-U)$); the logarithm shifts by $\pm i\pi$, so
+which has a **logarithmic phase** at the horizon: the phase diverges as $U\to0$. Now continue $U$ around the branch point at the horizon, $U\to \exp(\pm i\pi)U$ (so that $(-U)\to \exp(\pm i\pi)(-U)$); the logarithm shifts by $\pm i\pi$, so
 
 $$
-e^{-i\omega u}\;\longmapsto\;e^{\mp\pi\omega/\kappa}\,e^{-i\omega u}.
+\exp(-i\omega u)\;\longmapsto\;\exp(\mp\pi\omega/\kappa)\,\exp(-i\omega u).
 $$
 
-The two branches of the continuation differ by the factor $e^{2\pi\omega/\kappa}$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by
+The two branches of the continuation differ by the factor $\exp(2\pi\omega/\kappa)$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by
 
 $$
-\frac{|\mathcal B|}{|\alpha|}=e^{-\pi\omega/\kappa}.
+\frac{|\mathcal B|}{|\alpha|}=\exp(-\pi\omega/\kappa).
 $$
 
-This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $e^{-2\pi\omega/\kappa}$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $e^{\pm\pi\omega/\kappa}=5.428$ in one half-plane and $e^{-\pi\omega/\kappa}=0.1842$ in the other, and the two differ by $e^{2\pi\omega/\kappa}$, as stated.
+This is the exponential that makes the spectrum thermal, and its origin is the branch point where the horizon is. In the mode-mixing language it is a statement about the analyticity of the modes across the horizon; in the two-point-function language it is exactly the sibling article's statement that the two-point function is periodic under a shift of $2\pi/\kappa$ in imaginary time, equivalently the detailed-balance factor $\exp(-2\pi\omega/\kappa)$. The two are the same analytic fact written in the mode basis and in the correlator basis. The branch-point factor was checked directly: with $\kappa=1.3$, $\omega=0.7$, the continuation multiplies the mode by $\exp(\pm\pi\omega/\kappa)=5.428$ in one half-plane and $\exp(-\pi\omega/\kappa)=0.1842$ in the other, and the two differ by $\exp(2\pi\omega/\kappa)$, as stated.
 
 The identification of $|\mathcal B/\alpha|$ with that branch-point factor, and the mode decomposition that makes it a Bogoliubov coefficient, are the standard Hawking calculation. What the article recomputes is the exponential and the route from it to the Planck distribution; what it does not do is derive the coefficient ratio from the biquaternion algebra, which the algebra does not produce.
 
@@ -326,7 +326,7 @@ The identification of $|\mathcal B/\alpha|$ with that branch-point factor, and t
 
 ### The Vacuum Is a Squeezed State
 
-The exponential ratio $\tanh r_\omega=|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$ says that the in-vacuum is a **two-mode squeezed state** over the out modes: the out quantum of frequency $\omega$ on the exterior side is entangled with a partner mode of the same frequency on the other side of the horizon. Writing $|n\rangle_R|n\rangle_L$ for the occupation of the pair,
+The exponential ratio $\tanh r_\omega=|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$ says that the in-vacuum is a **two-mode squeezed state** over the out modes: the out quantum of frequency $\omega$ on the exterior side is entangled with a partner mode of the same frequency on the other side of the horizon. Writing $|n\rangle_R|n\rangle_L$ for the occupation of the pair,
 
 $$
 |0_{\mathrm{in}}\rangle
@@ -344,13 +344,13 @@ $$
 
 where the sum is restricted to $n\in\{0,1\}$ by Pauli exclusion, which the single-mode algebra of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* realizes. Tracing out the partner mode (which is inaccessible to the exterior observer) leaves a mixed state on the exterior modes, and its occupation number is the mean of $N_R$ in the squeezed state.
 
-**Bosons.** With $\tanh r_\omega=e^{-\pi\omega/\kappa}$,
+**Bosons.** With $\tanh r_\omega=\exp(-\pi\omega/\kappa)$,
 
 $$
 \langle N_R\rangle
 =\frac{\tanh^2 r_\omega}{1-\tanh^2 r_\omega}
-=\frac{e^{-2\pi\omega/\kappa}}{1-e^{-2\pi\omega/\kappa}}
-=\frac{1}{e^{2\pi\omega/\kappa}-1}
+=\frac{\exp(-2\pi\omega/\kappa)}{1-\exp(-2\pi\omega/\kappa)}
+=\frac{1}{\exp(2\pi\omega/\kappa)-1}
 =n_{\mathrm B}(\omega).
 $$
 
@@ -359,12 +359,12 @@ $$
 $$
 \langle N_R\rangle
 =\frac{\tanh^2 r_\omega}{1+\tanh^2 r_\omega}
-=\frac{e^{-2\pi\omega/\kappa}}{1+e^{-2\pi\omega/\kappa}}
-=\frac{1}{e^{2\pi\omega/\kappa}+1}
+=\frac{\exp(-2\pi\omega/\kappa)}{1+\exp(-2\pi\omega/\kappa)}
+=\frac{1}{\exp(2\pi\omega/\kappa)+1}
 =n_{\mathrm F}(\omega).
 $$
 
-Both identities were checked symbolically and numerically for several values of $\omega/\kappa$: the squeeze parameter is $\tanh r_\omega=e^{-\pi\omega/\kappa}$, and its hyperbolic-square reproduces the Bose–Einstein and Fermi–Dirac forms exactly. The statistics enters only in the normalization of the geometric sum; **the temperature, which is fixed by the exponential, is the same for both.** This is the mode-space content of the parent's observation that the KMS boundary relation is the same for bosons and fermions while the statistics enters the time-ordered correlators.
+Both identities were checked symbolically and numerically for several values of $\omega/\kappa$: the squeeze parameter is $\tanh r_\omega=\exp(-\pi\omega/\kappa)$, and its hyperbolic-square reproduces the Bose–Einstein and Fermi–Dirac forms exactly. The statistics enters only in the normalization of the geometric sum; **the temperature, which is fixed by the exponential, is the same for both.** This is the mode-space content of the parent's observation that the KMS boundary relation is the same for bosons and fermions while the statistics enters the time-ordered correlators.
 
 ### Restoring the Constants and Reading Off the Temperature
 
@@ -379,17 +379,17 @@ $$
 with $T=\hbar\kappa/(2\pi c k_B)$; equivalently, in the frequency normalization $T=\hbar\kappa_\omega/(2\pi k_B)$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution
 
 $$
-n(\omega)=\frac{1}{e^{\hbar\omega/(k_BT)}\mp1}
+n(\omega)=\frac{1}{\exp(\hbar\omega/(k_BT))\mp1}
 $$
 
-is Planckian at the temperature determined by the surface gravity, and the two normalizations of $\kappa$ reproduce it. The temperature is not put in at this stage: it was fixed earlier by the exponential $e^{-\pi\omega/\kappa}$ from the horizon, and the geometric sums merely exhibit the distribution that exponential implies.
+is Planckian at the temperature determined by the surface gravity, and the two normalizations of $\kappa$ reproduce it. The temperature is not put in at this stage: it was fixed earlier by the exponential $\exp(-\pi\omega/\kappa)$ from the horizon, and the geometric sums merely exhibit the distribution that exponential implies.
 
 ### The Same Statement as the KMS Condition
 
 The ratio of the emission and absorption coefficients, equivalently the ratio of the negative- and positive-frequency parts, is
 
 $$
-e^{-2\pi\omega/\kappa}=e^{-\hbar\omega/(k_BT)},
+\exp(-2\pi\omega/\kappa)=\exp(-\hbar\omega/(k_BT)),
 $$
 
 which is the **detailed-balance** relation of a thermal state and is the Fourier-space form of the KMS boundary relation $F(t+i\beta)=F(-t)$ at $\beta=\hbar/(k_BT)$. So the chain is: the horizon's branch point gives the exponential; the exponential gives the squeezed state; the squeezed state gives the geometric distribution; the distribution is the KMS/Planck one. Every link after the first is recomputed above; the first is the standard horizon-mode computation, and its result is the same analytic fact the sibling article derived in the correlator language. Thermality has been shown at each step, not asserted at the end.
@@ -474,7 +474,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 - The Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$, with $\kappa$ the surface gravity of the horizon; for Schwarzschild $\kappa=c^4/(4GM)$ and $T=\hbar c^3/(8\pi G M k_B)$.
 - The near-horizon geometry of a non-extremal horizon is Rindler with acceleration equal to the surface gravity, and the Hawking temperature is the near-horizon Unruh temperature redshifted to infinity.
 - The Bogoliubov transformation between in and out modes, its consistency relations, and the particle number $\sum_i|\mathcal B_{ji}|^2$ in the in-vacuum.
-- The exponential ratio $|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.
+- The exponential ratio $|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.
 - The Euclidean regularity condition, period $\beta=8\pi GM/c^3=2\pi c/\kappa$, independent of the surface-gravity computation.
 - The $M^{-1}$ scaling of $T_{\mathrm H}$.
 - The observational status: unobserved for gravitational black holes; analogue systems test the kinematic mechanism only.
@@ -502,7 +502,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 
 1. **Can the framework carry the Schwarzschild frame field in a distinguished way?** The metric is imported. Is there a biquaternion condition on the frame or the connection — beyond the flatness of the local-scale class — that singles out a non-flat solution with a horizon? This is the gap of *Curved Spacetime and the Biquaternion Framework* seen from the side of the horizon.
 
-2. **Is there an algebra-native origin of the exponential?** The factor $e^{-\pi\omega/\kappa}$ is a property of the horizon's analytic structure. Can the material sector's zero-divisor cone or its complex structure produce it without importing the mode analysis? If it can, the framework would be deriving rather than transcribing.
+2. **Is there an algebra-native origin of the exponential?** The factor $\exp(-\pi\omega/\kappa)$ is a property of the horizon's analytic structure. Can the material sector's zero-divisor cone or its complex structure produce it without importing the mode analysis? If it can, the framework would be deriving rather than transcribing.
 
 3. **Is there a global algebraic object for the horizon?** The zero-divisor cone is pointwise. The horizon is a global null surface. Does the framework admit a global analogue — a family of cones with a conformal structure — that is not merely the imported manifold restated?
 
@@ -522,7 +522,7 @@ The Unruh effect and Hawking radiation are the **same KMS statement seen in diff
 
 The trap of confusing the proper acceleration with the surface gravity is stated and avoided: the static observer's proper acceleration $a(r)=c^2f'/(2\sqrt f)$ diverges at the horizon, while the redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ is finite and equals $\kappa$ at the horizon. The local Unruh temperature diverges; the redshift cancels it; the surface gravity is what remains.
 
-The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\mathcal B_{ji}$ gives the particle number $\sum_i|\mathcal B_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $e^{-i\omega u}=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\mathcal B/\alpha|=e^{-\pi\omega/\kappa}$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\hbar\kappa/(2\pi c k_B)$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
+The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\mathcal B_{ji}$ gives the particle number $\sum_i|\mathcal B_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\mathcal B/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\hbar\kappa/(2\pi c k_B)$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
 
 The biquaternion framework supplies the algebraic home for the effect — the material sector $\mathbb{M}_-$ for the field and its intrinsic imaginary time, the informational sector $\mathbb{M}_+$ for the Hermitian modular generator, the zero-divisor cone for the local light cone — and it transcribes the Hawking calculation rather than deriving it. It contains no black-hole geometry and no dynamics, and it gives no correction to the standard temperature. Hawking radiation has never been observed; no claim of observation is made.
 
@@ -537,7 +537,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$ | Material coordinate |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $-c^2t^2+x^2+y^2+z^2$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $-c^2t^2+x^2+y^2+z^2$ |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula |
 | $M$ | Black-hole mass |
 | $r_s=2GM/c^2$ | Schwarzschild radius |
@@ -553,7 +553,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $a_i,a_i^\dagger$ | In-mode operators |
 | $b_j,b_j^\dagger$ | Out-mode operators |
 | $\alpha_{ji},\mathcal B_{ji}$ | Bogoliubov coefficients |
-| $r_\omega$ | Squeeze parameter, $\tanh r_\omega=e^{-\pi\omega/\kappa}$ |
+| $r_\omega$ | Squeeze parameter, $\tanh r_\omega=\exp(-\pi\omega/\kappa)$ |
 | $n_{\mathrm B},n_{\mathrm F}$ | Bose–Einstein, Fermi–Dirac occupation |
 | $K=-\log\Delta$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 

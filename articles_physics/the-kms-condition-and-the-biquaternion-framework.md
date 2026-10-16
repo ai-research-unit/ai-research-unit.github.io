@@ -158,9 +158,9 @@ The thermal formalism downstream of the KMS condition is usually reached by a Wi
 $$
 \tilde{k}_E = i\omega_n e_0 + \vec p \in \mathbb{M}_- ,
 $$
-and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $N(\tilde{k}_E) = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = N(-\omega_n e_0+\vec p)$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
+and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $\langle\tilde{k}_E\rangle_{\natural} = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = \langle -\omega_n e_0+\vec p\rangle_{\natural}$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
 
-**Where the positivity comes from.** The thermal correlator's positivity is not an extra assumption of the thermal theory: it is the central-root case of the Bochner theorem for the biquaternion transform. The kernel $e^{i\omega_n\tau}$ is the exponential of the central root $\rho = i$, which is skew-adjoint, $\rho^{*}=-\rho$, and degenerate, and skew-adjointness is exactly the criterion under which the theorem holds — the central imaginary and the real roots being the roots for which the transform of a positive measure is positive definite (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*).
+**Where the positivity comes from.** The thermal correlator's positivity is not an extra assumption of the thermal theory: it is the central-root case of the Bochner theorem for the biquaternion transform. The kernel $\exp(i\omega_n\tau)$ is the exponential of the central root $\rho = i$, which is skew-adjoint, $\rho^{*}=-\rho$, and degenerate, and skew-adjointness is exactly the criterion under which the theorem holds — the central imaginary and the real roots being the roots for which the transform of a positive measure is positive definite (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*).
 
 ### The Fermionic Case and the Structure of the Algebra
 
@@ -185,7 +185,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 - The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time coordinate $ict$.
 - The complexification of $\mathbb{M}_-$ as the full algebra $\mathbb{B}$.
 - The modular Hamiltonian $K = -\log \rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{M}_+$.
-- The identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = N(-\omega_n e_0+\vec p)$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
+- The identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = \langle -\omega_n e_0+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
 
 **Interpretation.**
 

@@ -36,22 +36,22 @@ The singular complex of the base is the coinvariant complex of the cover. The re
 
 ### The Transfer of a Simplex
 
-**Definition.** Let $\sigma : \Delta_n \to B$ be a singular $n$-simplex and let $\tilde\sigma : \Delta_n \to E$ be a lift of $\sigma$. The **transfer** of $\sigma$ is the chain
+**Definition.** Let $\sigma : \Delta_n \to B$ be a singular $n$-simplex and let $\sigma^{\mathrm{lift}} : \Delta_n \to E$ be a lift of $\sigma$. The **transfer** of $\sigma$ is the chain
 
 $$
-\tau_n(\sigma) = \sum_{g \in G} g_\#(\tilde\sigma) = \sum_{g \in G} g \circ \tilde\sigma \;\in\; C_n(E;R),
+\tau_n(\sigma) = \sum_{g \in G} g_\#(\sigma^{\mathrm{lift}}) = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}} \;\in\; C_n(E;R),
 $$
 
 and $\tau_n : C_n(B;R) \to C_n(E;R)$ is its $R$-linear extension.
 
-A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\tilde\sigma$ and, by the homotopy lifting property of *The Fundamental Group and Covering Spaces*, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.
+A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\sigma^{\mathrm{lift}}$ and, by the homotopy lifting property of *The Fundamental Group and Covering Spaces*, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.
 
-**Lemma.** $\tau_n$ is well defined: it does not depend on the choice of the lift $\tilde\sigma$.
+**Lemma.** $\tau_n$ is well defined: it does not depend on the choice of the lift $\sigma^{\mathrm{lift}}$.
 
-*Proof.* Let $\tilde\sigma'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with $\tilde\sigma' = h \circ \tilde\sigma$. Then
+*Proof.* Let $\sigma^{\mathrm{lift}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with $\sigma^{\mathrm{lift}}' = h \circ \sigma^{\mathrm{lift}}$. Then
 
 $$
-\sum_{g \in G} g \circ \tilde\sigma' = \sum_{g \in G} g \circ h \circ \tilde\sigma = \sum_{g \in G} g \circ \tilde\sigma,
+\sum_{g \in G} g \circ \sigma^{\mathrm{lift}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
 $$
 
 the last equality because $g \mapsto gh$ is a bijection of $G$.
@@ -65,7 +65,7 @@ p_\#\, \tau_n = d \cdot \mathrm{id}_{C_n(B;R)}, \qquad\qquad
 \tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R).
 $$
 
-*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \tilde\sigma = \sum_g (hg)_\# \tilde\sigma = \sum_g g_\# \tilde\sigma$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \tilde\sigma = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \tilde\sigma = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
+*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \sigma^{\mathrm{lift}} = \sum_g (hg)_\# \sigma^{\mathrm{lift}} = \sum_g g_\# \sigma^{\mathrm{lift}}$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \sigma^{\mathrm{lift}} = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \sigma^{\mathrm{lift}} = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
 
 The second identity is the **multiplicity** of the covering: the composite $p_\# \tau_n$ is multiplication by the number of sheets. The third is the **norm** operator $N = \sum_{g} g_\#$, whose image lies in the invariant subcomplex and whose square is $dN$.
 
@@ -83,10 +83,10 @@ $$
 \tau_* : H_n(B;R) \longrightarrow H_n(E;R).
 $$
 
-*Proof.* Let $\sigma : \Delta_n \to B$ and let $\tilde\sigma$ be a lift. The faces of $\tilde\sigma$ are the lifts of the corresponding faces of $\sigma$, and the deck action commutes with taking faces because $g \circ \sigma \circ \delta^i = (g \circ \sigma) \circ \delta^i$ with $\delta^i$ the face maps of *Simplicial and Singular Homology*. Hence
+*Proof.* Let $\sigma : \Delta_n \to B$ and let $\sigma^{\mathrm{lift}}$ be a lift. The faces of $\sigma^{\mathrm{lift}}$ are the lifts of the corresponding faces of $\sigma$, and the deck action commutes with taking faces because $g \circ \sigma \circ \delta^i = (g \circ \sigma) \circ \delta^i$ with $\delta^i$ the face maps of *Simplicial and Singular Homology*. Hence
 
 $$
-\partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\tilde\sigma) = \sum_g g_\# \partial_n(\tilde\sigma) = \sum_g g_\#\Bigl(\sum_i (-1)^i \tilde\sigma \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
+\partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\sigma^{\mathrm{lift}}) = \sum_g g_\# \partial_n(\sigma^{\mathrm{lift}}) = \sum_g g_\#\Bigl(\sum_i (-1)^i \sigma^{\mathrm{lift}} \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
 $$
 
 so the two sides agree on the generators and therefore on all chains. A chain map carries cycles to cycles and boundaries to boundaries, whence the induced map on homology.
@@ -208,7 +208,7 @@ The transfer of a regular finite covering $p : E \to B$ with deck group $G$ of o
 | $A, E_A$ | Subspace of $B$ and its preimage $p^{-1}(A)$; a covering of pairs |
 | $C_n(X;R)$, $\partial_n$ | Singular chains and boundary, as in *Simplicial and Singular Homology* |
 | $g_\#$, $g_*$ | Chain map and homology map induced by a deck transformation $g$ |
-| $\tau_n$, $\tau_*$ | Transfer on chains and on homology: $\tau_n(\sigma) = \sum_{g \in G} g_\# \tilde\sigma$ |
+| $\tau_n$, $\tau_*$ | Transfer on chains and on homology: $\tau_n(\sigma) = \sum_{g \in G} g_\# \sigma^{\mathrm{lift}}$ |
 | $N = \sum_{g \in G} g_\#$ | Norm (symmetrisation) operator; $N^2 = dN$ |
 | $M^G$, $M_G$ | Invariant and coinvariant parts of a complex of $R[G]$-modules |
 | $\tau^*$ | Cohomology transfer, the dual of $\tau_*$; adjoint under the evaluation pairing |

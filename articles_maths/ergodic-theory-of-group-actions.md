@@ -10,7 +10,7 @@ This article develops the group-action theory: the definitions of invariance, er
 Three boundaries are held exactly.
 
 - The general measure-theoretic theory of a **single** measure-preserving transformation is the subject of another article of the category. That article develops the theory in the sharp form it takes for one map: Poincaré recurrence, the Birkhoff pointwise theorem and the von Neumann mean theorem with their proofs and maximal inequalities, the ergodic decomposition, Kolmogorov–Sinai entropy, Bernoulli shifts and the Ornstein isomorphism theorem. This article is the *group-action* theory. The two overlap at the von Neumann and Birkhoff theorems for $\mathbb{Z}$; both are stated here as standard mathematics, with their proofs in the cited literature, and the sharp form for a single map is not covered here. The division is stated again in the introduction.
-- The general **measure theory** — measurable spaces, measures, the integral, the $L^p$ spaces, convergence almost everywhere, the Radon–Nikodym theorem — belongs to *Measure Theory and Integration*, and the comparison of the modes of convergence to *Modes of Convergence*, both written. The **Haar measure** of an action group is *Locally Compact Groups and Haar Measure*, in this Part, and the criterion of **amenability** is Part II's *Amenable Groups*; this article uses both and does not construct them.
+- The general **measure theory** — measurable spaces, measures, the integral, the $L^{n}$ spaces, convergence almost everywhere, the Radon–Nikodym theorem — belongs to *Measure Theory and Integration*, and the comparison of the modes of convergence to *Modes of Convergence*, both written. The **Haar measure** of an action group is *Locally Compact Groups and Haar Measure*, in this Part, and the criterion of **amenability** is Part II's *Amenable Groups*; this article uses both and does not construct them.
 - The **harmonic analysis** used for the spectral criterion is the first six articles of the category, and in particular the decomposition of a unitary representation and the Fourier transform on an abelian group; the **homogeneous** and arithmetic side — lattices, arithmetic groups, homogeneous spaces — is Part II's, and the dynamics on a specific homogeneous space belongs to another article. No physics is invoked.
 
 Throughout, $(X, \mathcal{B}, \mu)$ is a probability space — a measure space with $\mu(X) = 1$ — and measurable sets and functions are meant modulo null sets. A measurable map $T : X \to X$ is **measure-preserving** if $\mu(T^{-1}A) = \mu(A)$ for all $A \in \mathcal{B}$, and an action of a locally compact second countable group $G$ is a measurable map $G \times X \to X$, $(g, x) \mapsto gx$, with $ex = x$ and $(gh)x = g(hx)$, such that each $x \mapsto gx$ is measure-preserving. The identity of $G$ is $e$, $dx$ is a left Haar measure, and a statement holds **a.e.** (almost everywhere) if it fails on a set of measure zero; the probabilistic synonym *almost surely* is not used. The Koopman representation is written $U$, the invariant $\sigma$-algebra $\mathcal{I}$, and a Følner sequence $\{F_n\}$ as in *Amenable Groups*.
@@ -164,24 +164,24 @@ The first criterion is a contraction property of the group, and it explains why 
 **Theorem (Mautner phenomenon).** Let $a_s$ and $u_t$ be one-parameter groups of measure-preserving transformations of $(X,\mathcal{B},\mu)$ satisfying the commutation relation
 
 $$
-a_s u_t a_s^{-1} = u_{e^{\lambda s} t}, \qquad \lambda > 0,
+a_s u_t a_s^{-1} = u_{\exp(\lambda s) t}, \qquad \lambda > 0,
 $$
 
 so that the conjugates $a_s u_t a_s^{-1}$ shrink to the identity as $s \to -\infty$. Then every measurable function invariant under the $a_s$ is invariant under every $u_t$.
 
-*Proof.* Let $f \in L^2(X,\mu)$ satisfy $f \circ a_s = f$ a.e. for every $s$, and fix $t$. For each $s > 0$ the relation gives $u_t = a_s u_{e^{-\lambda s} t} a_s^{-1}$, so
+*Proof.* Let $f \in L^2(X,\mu)$ satisfy $f \circ a_s = f$ a.e. for every $s$, and fix $t$. For each $s > 0$ the relation gives $u_t = a_s u_{\exp(-\lambda s) t} a_s^{-1}$, so
 
 $$
-f \circ u_t = f \circ a_s \circ u_{e^{-\lambda s} t} \circ a_s^{-1} = (f \circ u_{e^{-\lambda s}t}) \circ a_s^{-1},
+f \circ u_t = f \circ a_s \circ u_{\exp(-\lambda s) t} \circ a_s^{-1} = (f \circ u_{\exp(-\lambda s)t}) \circ a_s^{-1},
 $$
 
 using the invariance of $f$ under $a_s$ on the left. Since each $a_s^{-1}$ preserves $\mu$,
 
 $$
-\|f \circ u_t - f\|_2^2 = \bigl\|(f \circ u_{e^{-\lambda s}t} - f) \circ a_s^{-1}\bigr\|_2^2 = \|f \circ u_{e^{-\lambda s} t} - f\|_2^2.
+\|f \circ u_t - f\|_2^2 = \bigl\|(f \circ u_{\exp(-\lambda s)t} - f) \circ a_s^{-1}\bigr\|_2^2 = \|f \circ u_{\exp(-\lambda s) t} - f\|_2^2.
 $$
 
-As $s \to +\infty$ one has $e^{-\lambda s}t \to 0$, and the map $t \mapsto f \circ u_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ u_t = f$ a.e. for every $t$.
+As $s \to +\infty$ one has $\exp(-\lambda s)t \to 0$, and the map $t \mapsto f \circ u_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ u_t = f$ a.e. for every $t$.
 
 **Corollary.** If the unipotent flow $u_t$ acts ergodically on $(X,\mu)$ and $a_s$ contracts $u_t$ as in the theorem, then the flow $a_s$ acts ergodically too: an invariant function of the diagonal flow is invariant under the unipotent flow, hence constant.
 
@@ -243,15 +243,15 @@ Kac's lemma is the quantitative form of Poincaré recurrence, and it is the seed
 
 **Example.** Let $G = \mathbb{Z}$ act on the torus $T^n = \mathbb{R}^n/\mathbb{Z}^n$ by the translation $T_a(x) = x + a$. The action is ergodic if and only if $1, a_1, \dots, a_n$ are rationally independent.
 
-Indeed, by the harmonic analysis of *Harmonic Analysis on Groups* the characters $\chi_m(x) = e^{2\pi i \langle m, x\rangle}$ form an orthonormal basis of $L^2(T^n)$ and diagonalise the Koopman operator: $U_{T_a}\chi_m = e^{-2\pi i\langle m,a\rangle}\chi_m$. Each character is an eigenfunction, so the mean of a character over the orbit is
+Indeed, by the harmonic analysis of *Harmonic Analysis on Groups* the characters $\chi_m(x) = \exp(2\pi i \langle m, x\rangle)$ form an orthonormal basis of $L^2(T^n)$ and diagonalise the Koopman operator: $U_{T_a}\chi_m = \exp(-2\pi i\langle m,a\rangle)\chi_m$. Each character is an eigenfunction, so the mean of a character over the orbit is
 
 $$
-\frac{1}{N}\sum_{k=0}^{N-1} e^{2\pi i k \langle m,a\rangle} \longrightarrow \begin{cases} 1, & \langle m, a\rangle \in \mathbb{Z}, \\ 0, & \text{otherwise}, \end{cases}
+\frac{1}{N}\sum_{k=0}^{N-1} \exp(2\pi i k \langle m,a\rangle) \longrightarrow \begin{cases} 1, & \langle m, a\rangle \in \mathbb{Z}, \\ 0, & \text{otherwise}, \end{cases}
 $$
 
 by the geometric series. Hence the only characters fixed by $T_a$ other than the constant are those with $\langle m,a\rangle \in \mathbb{Z}$ for some $m \neq 0$, and ergodicity fails exactly when such an $m$ exists, that is, exactly when $1, a_1, \dots, a_n$ are rationally dependent. The same computation with a $\mathbb{Z}^d$-action generated by $a^{(1)}, \dots, a^{(d)}$ shows that the action is ergodic if and only if the only integer vector $(m_1,\dots,m_d)$ with $\langle m_i, a^{(j)}\rangle \in \mathbb{Z}$ for all $j$ is zero, i.e. if and only if the matrix with rows $a^{(j)}$ together with the row $(1,\dots,1)$ has rank $d+1$ over $\mathbb{Q}$.
 
-A rotation is never mixing: the eigenfunction computation shows $\langle U_{T_a}\chi_m, \chi_m\rangle = e^{-2\pi i\langle m,a\rangle}$ does not tend to $0$, so the spectral measure is discrete and there is no decay of correlations. Thus ergodicity and mixing are genuinely different, and the rotation is the standard witness.
+A rotation is never mixing: the eigenfunction computation shows $\langle U_{T_a}\chi_m, \chi_m\rangle = \exp(-2\pi i\langle m,a\rangle)$ does not tend to $0$, so the spectral measure is discrete and there is no decay of correlations. Thus ergodicity and mixing are genuinely different, and the rotation is the standard witness.
 
 **Example (ergodic algebraic $\mathbb{Z}^2$-action).** Let $A \in SL_2(\mathbb{Z})$ have $|\operatorname{tr} A| > 2$, so that it is hyperbolic with eigenvalues $\lambda, \lambda^{-1}$ of modulus not $1$; let $\mathbb{Z}^2$ act on $T^2$ by $A^{m} A_1^{m_1}$, where $A_1$ is a second matrix chosen so that the action is generated by two commuting automorphisms. The action is ergodic, and this is the algebraic model of an Anosov system: the hyperbolic structure of $A$ supplies the unstable directions along which the orbit separates exponentially. The two-dimensional case is the elementary instance of the general fact that a $\mathbb{Z}^d$-action by automorphisms of a torus is ergodic when the eigenvalues of the generators have no common root of unity on the unit circle.
 
@@ -269,7 +269,7 @@ $$
 u_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}, \qquad U = \left\{u_t : t \in \mathbb{R}\right\},
 $$
 
-and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(e^{t/2}, e^{-t/2})\}$. The Mautner relation $a_s u_t a_s^{-1} = u_{e^{-s}t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed.
+and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(\exp(t/2), \exp(-t/2))\}$. The Mautner relation $a_s u_t a_s^{-1} = u_{\exp(-s)t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed.
 
 **Example (flows on nilmanifolds).** Let $N$ be a simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. The action of $u_t$ on $N/\Gamma$ is ergodic if and only if the flow is not confined to a smaller closed orbit, and the general principle — that the orbit closure is a submanifold and the flow is uniquely ergodic on it — is the content of Ratner's topological theorem for unipotent flows. The rotation flow of the two-torus, the special case in which $N = \mathbb{R}^2$ and $\Gamma = \mathbb{Z}^2$, is the elementary instance; the Heisenberg nilmanifold is the first genuinely non-abelian case and exhibits a unipotent flow that is mixing in the direction of the centre and periodic in the transverse direction.
 
@@ -299,7 +299,7 @@ The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \t
 | $F_n$ | Følner sequence: $\lvert gF_n\triangle F_n\rvert/\lvert F_n\rvert\to0$ |
 | amenable | existence of a Følner sequence (Part II, *Amenable Groups*) |
 | tempered | growth condition $\mu_G(F_1\cdots F_n)\le C\mu_G(F_n)$ on a Følner sequence |
-| Mautner | $a_s u_t a_s^{-1}=u_{e^{\lambda s}t}$: $A$-invariant functions are $u_t$-invariant |
+| Mautner | $a_s u_t a_s^{-1}=u_{\exp(\lambda s)t}$: $A$-invariant functions are $u_t$-invariant |
 | Moore's theorem | each non-compact factor acts ergodically on the quotient by an irreducible lattice |
 | Howe–Moore | matrix coefficients of an invariant-free representation vanish at infinity |
 | orbit equivalence | measure isomorphism carrying orbits to orbits |

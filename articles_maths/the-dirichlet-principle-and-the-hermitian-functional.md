@@ -5,10 +5,10 @@
 The weak solution of an elliptic problem is the minimiser of an energy. For the Dirichlet problem of $L$ with data $f$ the functional is
 
 $$
-E_f(u) = a(u,u) - 2\operatorname{Re}\langle f,u\rangle ,
+E_f(u) = \mathfrak{a}(u,u) - 2\operatorname{Re}\langle f,u\rangle ,
 $$
 
-the Hermitian quadratic part of the sesquilinear form minus the pairing with the data, and the **Dirichlet principle** is the statement that $E_f$ attains its minimum at exactly one point of the test space and that the minimiser is the weak solution. The principle is the energy reading of the weak formulation: the variational equation $a(u,v)=\langle f,v\rangle$ is the vanishing of the first variation of $E_f$, and the coercivity of the form is what makes the stationary point a minimum and makes it unique.
+the Hermitian quadratic part of the sesquilinear form minus the pairing with the data, and the **Dirichlet principle** is the statement that $E_f$ attains its minimum at exactly one point of the test space and that the minimiser is the weak solution. The principle is the energy reading of the weak formulation: the variational equation $\mathfrak{a}(u,v)=\langle f,v\rangle$ is the vanishing of the first variation of $E_f$, and the coercivity of the form is what makes the stationary point a minimum and makes it unique.
 
 This article reads the elliptic problem with the conjugation of the unknown function and moves from the equation to the functional. It fixes the Hermitian functional — its quadratic part, its reality, its strict convexity and the completion of the square — and proves the Dirichlet principle in the elliptic setting: the minimiser over the Dirichlet test space exists, is unique, and is the weak solution; conversely the weak solution minimises. It then proves the regularity of the minimiser, the interior smoothness of a weak solution of an elliptic equation (Weyl's lemma) and the classical Dirichlet principle for the Laplacian, whose minimiser with given boundary values is the harmonic function.
 
@@ -16,21 +16,21 @@ The sesquilinear form, its boundedness, coercivity and Hermitian property, the w
 
 ## The Hermitian Functional
 
-**Definition.** Let $a$ be the sesquilinear form of an elliptic operator, bounded on $H^1(\Omega)$ and coercive on $H^1_0(\Omega)$, with Hermitian part $a_{\mathrm H}(u,v)=\tfrac12\bigl(a(u,v)+\overline{a(v,u)}\bigr)$, and let $f\in L^2(\Omega)$. The **Hermitian functional** of the problem is
+**Definition.** Let $\mathfrak{a}$ be the sesquilinear form of an elliptic operator, bounded on $H^1(\Omega)$ and coercive on $H^1_0(\Omega)$, with Hermitian part $a_{\mathrm H}(u,v)=\tfrac12\bigl(\mathfrak{a}(u,v)+\overline{\mathfrak{a}(v,u)}\bigr)$, and let $f\in L^2(\Omega)$. The **Hermitian functional** of the problem is
 
 $$
 E_f(u) = a_{\mathrm H}(u,u) - 2\operatorname{Re}\langle f,u\rangle ,
 $$
 
-and for the Dirichlet integral of the Laplacian $a(u,v)=\int_\Omega\nabla u\cdot\overline{\nabla v}$ it is the classical **Dirichlet functional**
+and for the Dirichlet integral of the Laplacian $\mathfrak{a}(u,v)=\int_\Omega\nabla u\cdot\overline{\nabla v}$ it is the classical **Dirichlet functional**
 
 $$
 D(u) = \int_\Omega|\nabla u|^2\,dx - 2\operatorname{Re}\langle f,u\rangle .
 $$
 
-When the form is Hermitian, $a_{\mathrm H}=a$ and $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$; this is the case of the formally self-adjoint problem, and it is the case in which the functional is the energy.
+When the form is Hermitian, $a_{\mathrm H}=a$ and $E_f(u)=\mathfrak{a}(u,u)-2\operatorname{Re}\langle f,u\rangle$; this is the case of the formally self-adjoint problem, and it is the case in which the functional is the energy.
 
-**Proposition (reality, convexity and coercivity).** Let $a$ be Hermitian with coercivity constant $c$, so that $a(u,u)\ge c\|u\|_{H^1}^2$. Then $E_f$ is real-valued, strictly convex on $H^1_0(\Omega)$, bounded below, and **coercive** on the test space:
+**Proposition (reality, convexity and coercivity).** Let $\mathfrak{a}$ be Hermitian with coercivity constant $c$, so that $\mathfrak{a}(u,u)\ge c\|u\|_{H^1}^2$. Then $E_f$ is real-valued, strictly convex on $H^1_0(\Omega)$, bounded below, and **coercive** on the test space:
 
 $$
 E_f(u)\ge \tfrac{c}{2}\|u\|_{H^1}^2 - \frac{2}{c}\|f\|_{L^2}^2 ,
@@ -38,35 +38,35 @@ $$
 
 so that $E_f(u)\to+\infty$ as $\|u\|_{H^1}\to\infty$; the functional attains a minimum on the nonempty closed convex set $H^1_0(\Omega)$.
 
-*Proof.* Reality is the Hermitian property, $a(u,u)=\overline{a(u,u)}$. Strict convexity is the strict positivity of the quadratic part: for $u\neq v$ and $0<t<1$, $a(tu+(1-t)v,\cdot)$ expands into $ta(u,\cdot)+(1-t)a(v,\cdot)$ and the quadratic part is strictly convex because $a$ is coercive and the form modulus is bounded. For the lower bound, $|2\operatorname{Re}\langle f,u\rangle|\le2\|f\|_{L^2}\|u\|_{L^2}\le\frac{c}{2}\|u\|_{H^1}^2+\frac{2}{c}\|f\|_{L^2}^2$ by the elementary inequality $2\|f\|\|u\|\le\frac{c}{2}\|u\|^2+\frac{2}{c}\|f\|^2$; subtracting from the coercive bound gives the display. Coercive convex continuous functionals on a closed convex set attain their minimum.
+*Proof.* Reality is the Hermitian property, $\mathfrak{a}(u,u)=\overline{\mathfrak{a}(u,u)}$. Strict convexity is the strict positivity of the quadratic part: for $u\neq v$ and $0<t<1$, $\mathfrak{a}(tu+(1-t)v,\cdot)$ expands into $ta(u,\cdot)+(1-t)\mathfrak{a}(v,\cdot)$ and the quadratic part is strictly convex because $\mathfrak{a}$ is coercive and the form modulus is bounded. For the lower bound, $|2\operatorname{Re}\langle f,u\rangle|\le2\|f\|_{L^2}\|u\|_{L^2}\le\frac{c}{2}\|u\|_{H^1}^2+\frac{2}{c}\|f\|_{L^2}^2$ by the elementary inequality $2\|f\|\|u\|\le\frac{c}{2}\|u\|^2+\frac{2}{c}\|f\|^2$; subtracting from the coercive bound gives the display. Coercive convex continuous functionals on a closed convex set attain their minimum.
 
 **Proposition (completion of the square).** Let $u_0$ be the minimiser of $E_f$. Then for every $u\in H^1_0(\Omega)$,
 
 $$
-E_f(u) = a(u-u_0,u-u_0) - a(u_0,u_0) ,
+E_f(u) = \mathfrak{a}(u-u_0,u-u_0) - \mathfrak{a}(u_0,u_0) ,
 $$
 
-so that the minimum value is $-a(u_0,u_0)=-\langle f,u_0\rangle$, and $E_f$ is the translate of the squared form norm.
+so that the minimum value is $-\mathfrak{a}(u_0,u_0)=-\langle f,u_0\rangle$, and $E_f$ is the translate of the squared form norm.
 
-*Proof.* Expanding the right side and using the Hermitian symmetry $a(u,u_0)=\overline{a(u_0,u)}$ together with the variational equation $a(u_0,u)=\langle f,u\rangle$,
+*Proof.* Expanding the right side and using the Hermitian symmetry $\mathfrak{a}(u,u_0)=\overline{\mathfrak{a}(u_0,u)}$ together with the variational equation $\mathfrak{a}(u_0,u)=\langle f,u\rangle$,
 
 $$
-a(u-u_0,u-u_0)-a(u_0,u_0) = a(u,u)-2\operatorname{Re}a(u,u_0) = a(u,u)-2\operatorname{Re}\overline{\langle f,u\rangle} = E_f(u) ,
+\mathfrak{a}(u-u_0,u-u_0)-\mathfrak{a}(u_0,u_0) = \mathfrak{a}(u,u)-2\operatorname{Re}\mathfrak{a}(u,u_0) = \mathfrak{a}(u,u)-2\operatorname{Re}\overline{\langle f,u\rangle} = E_f(u) ,
 $$
 
 which is the display; the minimum value follows on setting $u=u_0$, where the squared form norm vanishes.
 
 ## The Dirichlet Principle
 
-**Theorem (the Dirichlet principle).** Let the Hermitian form $a$ be bounded and coercive on $H^1_0(\Omega)$. Then $E_f$ has a unique minimiser in $H^1_0(\Omega)$, and $u$ is that minimiser if and only if $u$ is the weak solution, $a(u,v)=\langle f,v\rangle$ for every $v\in H^1_0(\Omega)$.
+**Theorem (the Dirichlet principle).** Let the Hermitian form $\mathfrak{a}$ be bounded and coercive on $H^1_0(\Omega)$. Then $E_f$ has a unique minimiser in $H^1_0(\Omega)$, and $u$ is that minimiser if and only if $u$ is the weak solution, $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every $v\in H^1_0(\Omega)$.
 
 *Proof.* If $u$ minimises then for every $v$ and every real $t$ the function $t\mapsto E_f(u+tv)$ has a minimum at $t=0$; expanding,
 
 $$
-E_f(u+tv)-E_f(u) = 2t\operatorname{Re}\bigl(a(u,v)-\langle f,v\rangle\bigr) + t^2 a(v,v) ,
+E_f(u+tv)-E_f(u) = 2t\operatorname{Re}\bigl(\mathfrak{a}(u,v)-\langle f,v\rangle\bigr) + t^2 \mathfrak{a}(v,v) ,
 $$
 
-so the derivative at $0$ vanishes, which for all $v$ is the variational equation; taking $v$ and then $iv$ separates the real and the imaginary part of $a(u,v)-\langle f,v\rangle$. Conversely, if the equation holds then the expansion reads $E_f(u+tv)-E_f(u)=t^2a(v,v)\ge0$ for every $v$, so no admissible direction lowers the value and $u$ minimises. Uniqueness is the strict convexity, or the completion of the square: two minimisers are both $u_0$ in that identity.
+so the derivative at $0$ vanishes, which for all $v$ is the variational equation; taking $v$ and then $iv$ separates the real and the imaginary part of $\mathfrak{a}(u,v)-\langle f,v\rangle$. Conversely, if the equation holds then the expansion reads $E_f(u+tv)-E_f(u)=t^2\mathfrak{a}(v,v)\ge0$ for every $v$, so no admissible direction lowers the value and $u$ minimises. Uniqueness is the strict convexity, or the completion of the square: two minimisers are both $u_0$ in that identity.
 
 **Corollary (the minimiser is the weak solution).** The unique minimiser of the Dirichlet functional $D$ with datum $f$ is the weak solution of $-\Delta u=f$ with $u=0$ on $\partial\Omega$, and the minimal value is $-\langle f,u_0\rangle$ with $u_0$ the minimiser.
 
@@ -95,33 +95,33 @@ and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ h
 **Theorem (the inhomogeneous Dirichlet problem).** Let $U\in H^1(\Omega)$ carry the boundary data and let $\phi\in H^1_0(\Omega)$, so that $u=U+\phi$ is the general admissible function. Then the minimiser of $\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ over the affine set $U+H^1_0(\Omega)$ is $u=U+\phi_0$, where $\phi_0$ is the weak solution of
 
 $$
-a(\phi,v) = \langle f,v\rangle - a(U,v) \qquad (v\in H^1_0(\Omega)) ,
+\mathfrak{a}(\phi,v) = \langle f,v\rangle - \mathfrak{a}(U,v) \qquad (v\in H^1_0(\Omega)) ,
 $$
 
-and the dependence of $\phi_0$ on $U$ is affine and bounded; the boundary data therefore enter the problem as an extra source term $-a(U,\cdot)$.
+and the dependence of $\phi_0$ on $U$ is affine and bounded; the boundary data therefore enter the problem as an extra source term $-\mathfrak{a}(U,\cdot)$.
 
-*Proof.* Substituting $u=U+\phi$ in the Dirichlet principle, the functional becomes $E_f(U+\phi)$, whose part depending on $\phi$ is $a(\phi,\phi)-2\operatorname{Re}\langle f,\phi\rangle+2\operatorname{Re}a(U,\phi)$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.
+*Proof.* Substituting $u=U+\phi$ in the Dirichlet principle, the functional becomes $E_f(U+\phi)$, whose part depending on $\phi$ is $\mathfrak{a}(\phi,\phi)-2\operatorname{Re}\langle f,\phi\rangle+2\operatorname{Re}\mathfrak{a}(U,\phi)$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.
 
-**Theorem (variational inequalities).** Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $a$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $u$ over $K$, and $u$ is characterised by the variational inequality
+**Theorem (variational inequalities).** Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $\mathfrak{a}$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $u$ over $K$, and $u$ is characterised by the variational inequality
 
 $$
-\operatorname{Re}\bigl(a(u,v-u)\bigr) \ge \operatorname{Re}\langle f,v-u\rangle \qquad \text{for every } v\in K .
+\operatorname{Re}\bigl(\mathfrak{a}(u,v-u)\bigr) \ge \operatorname{Re}\langle f,v-u\rangle \qquad \text{for every } v\in K .
 $$
 
-*Proof.* Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $u+t(v-u)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(u+t(v-u))$ at $t=0$ is $2\operatorname{Re}(a(u,v-u)-\langle f,v-u\rangle)$, and it must be nonnegative.
+*Proof.* Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $u+t(v-u)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(u+t(v-u))$ at $t=0$ is $2\operatorname{Re}(\mathfrak{a}(u,v-u)-\langle f,v-u\rangle)$, and it must be nonnegative.
 
 **Example (the obstacle problem).** For $K=\{u\in H^1_0(\Omega) : u\ge\psi \text{ a.e.}\}$ with an obstacle $\psi\le0$ on the boundary and datum $f=0$, the minimiser satisfies the variational inequality and is the smallest superharmonic majorant of $\psi$: $-\Delta u\ge0$ on $\Omega$, $-\Delta u=0$ on the coincidence set $\{u>\psi\}$, and $u\ge\psi$. The inequality replaces the equation on the contact set, and it is the prototype of the variational inequalities of *The Calculus of Variations* and, in the literature, of *An Introduction to Variational Inequalities and Their Applications* by Kinderlehrer and Stampacchia.
 
 ## Summary
 
-The elliptic weak problem has a Hermitian functional $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$, the Dirichlet functional $D(u)=\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ for the Laplacian; it is real, strictly convex and coercive, $E_f(u)\ge\frac{c}{2}\|u\|_{H^1}^2-\frac{2}{c}\|f\|_{L^2}^2$, and it is a translate of the squared form norm, $E_f(u)=a(u-u_0,u-u_0)-a(u_0,u_0)$, with the minimum value $-\langle f,u_0\rangle$. The Dirichlet principle identifies its unique minimiser with the weak solution: the first variation vanishes at $u$ for every direction exactly when $a(u,v)=\langle f,v\rangle$ for every $v$, and the second variation is $a(v,v)\ge0$, so the stationary point is the minimum, unique by strict convexity. For the Laplacian with given boundary values the minimiser of the Dirichlet integral is the harmonic function, the difference of the energies of two admissible functions being the Dirichlet integral of their difference. Finally, the minimiser is smooth: Weyl's lemma makes a weak solution of an elliptic equation with smooth coefficients and data of class $C^\infty$ in the interior, so the existence given by coercivity and the smoothness given by ellipticity meet in the minimiser. Over an affine admissible set the boundary data enter as the source term $-a(U,\cdot)$, and over a closed convex set the minimiser is characterised by the variational inequality $\operatorname{Re}a(u,v-u)\ge\operatorname{Re}\langle f,v-u\rangle$, of which the obstacle problem is the prototype.
+The elliptic weak problem has a Hermitian functional $E_f(u)=\mathfrak{a}(u,u)-2\operatorname{Re}\langle f,u\rangle$, the Dirichlet functional $D(u)=\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ for the Laplacian; it is real, strictly convex and coercive, $E_f(u)\ge\frac{c}{2}\|u\|_{H^1}^2-\frac{2}{c}\|f\|_{L^2}^2$, and it is a translate of the squared form norm, $E_f(u)=\mathfrak{a}(u-u_0,u-u_0)-\mathfrak{a}(u_0,u_0)$, with the minimum value $-\langle f,u_0\rangle$. The Dirichlet principle identifies its unique minimiser with the weak solution: the first variation vanishes at $u$ for every direction exactly when $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every $v$, and the second variation is $\mathfrak{a}(v,v)\ge0$, so the stationary point is the minimum, unique by strict convexity. For the Laplacian with given boundary values the minimiser of the Dirichlet integral is the harmonic function, the difference of the energies of two admissible functions being the Dirichlet integral of their difference. Finally, the minimiser is smooth: Weyl's lemma makes a weak solution of an elliptic equation with smooth coefficients and data of class $C^\infty$ in the interior, so the existence given by coercivity and the smoothness given by ellipticity meet in the minimiser. Over an affine admissible set the boundary data enter as the source term $-\mathfrak{a}(U,\cdot)$, and over a closed convex set the minimiser is characterised by the variational inequality $\operatorname{Re}\mathfrak{a}(u,v-u)\ge\operatorname{Re}\langle f,v-u\rangle$, of which the obstacle problem is the prototype.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $a(u,v)$ | Sesquilinear form of the elliptic operator |
-| $a_{\mathrm H}(u,v)=\tfrac12(a(u,v)+\overline{a(v,u)})$ | Hermitian part of the form |
+| $\mathfrak{a}(u,v)$ | Sesquilinear form of the elliptic operator |
+| $a_{\mathrm H}(u,v)=\tfrac12(\mathfrak{a}(u,v)+\overline{\mathfrak{a}(v,u)})$ | Hermitian part of the form |
 | $E_f(u)=a_{\mathrm H}(u,u)-2\operatorname{Re}\langle f,u\rangle$ | Hermitian functional (energy) |
 | $D(u)=\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ | Dirichlet functional |
 | $u_0$ | The minimiser, equal to the weak solution |

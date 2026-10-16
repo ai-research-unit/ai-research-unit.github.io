@@ -63,10 +63,10 @@ is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\xi
 
 *Proof (sketch).* The irreducibility is proved by computing the commutant with the theory of the induced representations and the nilpotency, which makes the orbit method exact; the independence of the polarisation is the theorem that two polarisations of the same functional give equivalent representations; the surjectivity and the injectivity of the assignment are the Kirillov orbit bijection. The complete proof is in the references.
 
-**Theorem (the character formula).** For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $\hat f(\xi) = \int_{\mathrm{G}}f(X)e^{-2\pi i\langle\xi,X\rangle}\,dX$ on the algebra,
+**Theorem (the character formula).** For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $(\mathcal F f)(\xi) = \int_{\mathrm{G}}f(X)\exp(-2\pi i\langle\xi,X\rangle)\,dX$ on the algebra,
 
 $$
-\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
+\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}(\mathcal F f)(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
 $$
 
 where $\beta$ is the Liouville measure of the symplectic form on the orbit and $2n$ is its dimension; equivalently the character of $\pi_\xi$ is the Fourier transform of the invariant measure on the orbit.
@@ -157,7 +157,7 @@ The **coadjoint action** of a Lie group on the dual of its Lie algebra has orbit
 | $\mathfrak{p}$ | a polarisation, maximal isotropic containing $\mathfrak{g}_\xi$ |
 | $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ | the character of the polarisation subgroup |
 | $\pi_\xi = \operatorname{Ind}_P^G\chi_\xi$ | the representation of the orbit |
-| $\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f\,d\beta/(2\pi)^n$ | the Kirillov character formula |
+| $\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\mathcal F f\,d\beta/(2\pi)^n$ | the Kirillov character formula |
 | Pukanszky condition | the closedness of the orbit of $P$, the irreducibility criterion |
 
 ## Further Reading

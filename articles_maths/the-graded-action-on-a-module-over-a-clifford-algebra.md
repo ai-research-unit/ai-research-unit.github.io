@@ -7,13 +7,13 @@ A Clifford algebra is a $\mathbb{Z}/2$-graded algebra, with the even elements $\
 
 The geometric reading is the chirality grading. The module grading of a Clifford module is the decomposition of a spinor bundle into its two chiral halves, the parity of the operator $c(v)$ for a vector is the statement that the Clifford multiplication exchanges the halves, and the parity of the Cauchy–Riemann operator is the analytic consequence: $D$ is an odd operator and therefore exchanges the chiral summands. The sign rule is what makes the parity a rule and not a convention, and the two examples that keep the account concrete are the exterior algebra $\Lambda^\bullet V$ with $c(v)=v\wedge-\iota_v$ and the spinor module with the chirality operator.
 
-**The boundaries.** The parity of the one-sided and two-sided multiplication operators is *One-Sided Operators on a Clifford Algebra* and *The Two-Sided Multiplication Operators*; the twisting of those operators by the grading is *The Graded Multiplication Operators*; the module theory of the regular module is *Left Multiplication and the Clifford Module Structure*; the abstract algebra of the grading is *Clifford Algebras* and its companions in Part II. The chirality operator of the spinor bundle and the parity of the Cauchy–Riemann operator are *Spin Geometry* and *The Spinor Operator*. The base is a field $F$ of characteristic not $2$, $q$ a quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$, and a $\mathbb{Z}/2$-graded module (a supermodule) over $\mathrm{Cl}(V,q)$.
+**The boundaries.** The parity of the one-sided and two-sided multiplication operators is *One-Sided Operators on a Clifford Algebra* and *The Two-Sided Multiplication Operators*; the twisting of those operators by the grading is *The Graded Multiplication Operators*; the module theory of the regular module is *Left Multiplication and the Clifford Module Structure*; the abstract algebra of the grading is *Clifford Algebras* and its companions in Part II. The chirality operator of the spinor bundle and the parity of the Cauchy–Riemann operator are *Spin Geometry* and *The Spinor Operator*. The base is a field $F$ of characteristic not $2$, $q$ a quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$, and a $\mathbb{Z}/2$-graded module (a supermodule) over $\mathrm{Cl}(V,\mathfrak{Q})$.
 
 ## The Graded Module Structure
 
 ### Definition and Parity
 
-**Definition.** A **graded module** over $\mathrm{Cl}(V,q)$ is a $\mathbb{Z}/2$-graded vector space $S=S^0\oplus S^1$ with a bilinear multiplication $\mathrm{Cl}(V,q)\times S\to S$ that is a module action and satisfies $\mathrm{Cl}^i\cdot S^j\subseteq S^{i+j}$. A **graded endomorphism** of $S$ is a linear map preserving the grading, an **odd** endomorphism one exchanging the two summands, and $\mathrm{End}(S)$ is the graded algebra of all endomorphisms with the parity so defined.
+**Definition.** A **graded module** over $\mathrm{Cl}(V,\mathfrak{Q})$ is a $\mathbb{Z}/2$-graded vector space $S=S^0\oplus S^1$ with a bilinear multiplication $\mathrm{Cl}(V,\mathfrak{Q})\times S\to S$ that is a module action and satisfies $\mathrm{Cl}^i\cdot S^j\subseteq S^{i+j}$. A **graded endomorphism** of $S$ is a linear map preserving the grading, an **odd** endomorphism one exchanging the two summands, and $\mathrm{End}(S)$ is the graded algebra of all endomorphisms with the parity so defined.
 
 **Proposition.** The action of a homogeneous element $a\in\mathrm{Cl}^i$ on $S$ is an operator of parity $i$, and the assignment $c(a)\in\mathrm{End}^i(S)$ is an algebra homomorphism that preserves the parity and the relations: for vectors $u,v$,
 
@@ -21,7 +21,7 @@ $$
 c(u)c(v)+c(v)c(u) = 2B(u,v)\operatorname{id}_S ,
 $$
 
-and every relation of $\mathrm{Cl}(V,q)$ holds in $\mathrm{End}(S)$ with the same signs.
+and every relation of $\mathrm{Cl}(V,\mathfrak{Q})$ holds in $\mathrm{End}(S)$ with the same signs.
 
 **Proof.** The inclusion $\mathrm{Cl}^iS^j\subseteq S^{i+j}$ says exactly that the operator of $a\in\mathrm{Cl}^i$ maps $S^j$ into $S^{i+j}$, which is parity $i$. The action being a module action means $c(a)c(b)=c(ab)$, a homomorphism; the Clifford relations are their images in the endomorphism algebra. The parity preservation of the homomorphism is read off the grading inclusions.
 
@@ -37,7 +37,7 @@ $$
 
 For odd $A,B$ it is the anticommutator $AB+BA$, and for even $A$ or $B$ it is the ordinary commutator.
 
-**Proposition.** The Clifford relations are the statement that the Clifford multiplication is a **graded representation**: for homogeneous $a,b\in\mathrm{Cl}(V,q)$,
+**Proposition.** The Clifford relations are the statement that the Clifford multiplication is a **graded representation**: for homogeneous $a,b\in\mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 [c(a),c(b)\} = c([a,b\}) ,
@@ -87,7 +87,7 @@ For $\dim V$ even and $q$ definite, the spinor module $S$ splits into the two ha
 
 ### A One-Dimensional Module
 
-For $\dim V=1$ with $q(u)\ne0$, the module $S=F\oplus F$ with $c(u)$ swapping the two summands is a graded module, the operator $c(u)$ is odd with square $q(u)$, and the even intertwiners are the diagonal scalars and the odd intertwiners the off-diagonal ones. The sign rule is visible in the single nontrivial relation $f(c(u)s)=(-1)^{|f|}c(u)f(s)$.
+For $\dim V=1$ with $\mathfrak{Q}(u)\ne0$, the module $S=F\oplus F$ with $c(u)$ swapping the two summands is a graded module, the operator $c(u)$ is odd with square $\mathfrak{Q}(u)$, and the even intertwiners are the diagonal scalars and the odd intertwiners the off-diagonal ones. The sign rule is visible in the single nontrivial relation $f(c(u)s)=(-1)^{|f|}c(u)f(s)$.
 
 ## Summary
 

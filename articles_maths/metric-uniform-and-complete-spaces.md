@@ -25,7 +25,7 @@ The pair $(X, d)$ is a **metric space**; the last condition is the **triangle in
 
 **Pro.** The empty union gives $\emptyset$ and $X = \bigcup_{x} B(x, 1)$; arbitrary unions of balls are open by definition, and if $U, V$ are open and $x \in U \cap V$ choose $r_1, r_2$ with $B(x, r_i)$ inside the respective set; then $B(x, \min(r_1, r_2)) \subseteq U \cap V$. Hausdorffness uses $d(x, y) > 0$ and the balls of radius $d(x,y)/2$; first countability uses the rational radii; normality is shown.
 
-**Example (Euclidean spaces).** On $\mathbb{K}^n$ the **Euclidean metric** is $d(x, y) = \left(\sum_{i=1}^n |x_i - y_i|^2\right)^{1/2}$, and the **sup metric** $d_\infty(x, y) = \max_i |x_i - y_i|$ induces the same topology; both are special cases of the $\ell^p$ metrics for $1 \leq p \leq \infty$.
+**Example (Euclidean spaces).** On $\mathbb{K}^n$ the **Euclidean metric** is $d(x, y) = \left(\sum_{i=1}^n |x_i - y_i|^2\right)^{1/2}$, and the **sup metric** $d_\infty(x, y) = \max_i |x_i - y_i|$ induces the same topology; both are special cases of the $\ell^{n}$ metrics for $1 \leq p \leq \infty$.
 
 **Example (discrete and induced metrics).** The **discrete metric** is $d(x, y) = 1$ for $x \neq y$, giving the discrete topology. Any subset $A$ of a metric space is a metric space with the restricted metric, and its metric topology is the subspace topology.
 
@@ -83,7 +83,7 @@ $$
 f_n(x) = \sum_{k=0}^{n} \frac{1}{k!}\left(\frac{x}{2}\right)^{k},
 $$
 
-by induction on $n$, since integrating the $k$-th term of $f_n$ produces the $(k+1)$-st term of $f_{n+1}$; the limit is $f(x) = e^{x/2}$, the solution of the initial value problem $f' = f/2$, $f(0) = 1$. The error estimate reads $\|f_n - f\|_\infty \leq \frac{(1/2)^n}{1 - 1/2}\cdot\frac{1}{2} = 2^{-n}$, and the supremum of the error is attained at $x = 1$, since every term of the series increases with $x$; there the error is the tail of $\sum_k (1/2)^k/k!$ and is smaller than the bound. This is the Picard iteration for the equation, and it shows why the complete space has to be a space of functions rather than a space of points.
+by induction on $n$, since integrating the $k$-th term of $f_n$ produces the $(k+1)$-st term of $f_{n+1}$; the limit is $f(x) = \exp(x/2)$, the solution of the initial value problem $f' = f/2$, $f(0) = 1$. The error estimate reads $\|f_n - f\|_\infty \leq \frac{(1/2)^n}{1 - 1/2}\cdot\frac{1}{2} = 2^{-n}$, and the supremum of the error is attained at $x = 1$, since every term of the series increases with $x$; there the error is the tail of $\sum_k (1/2)^k/k!$ and is smaller than the bound. This is the Picard iteration for the equation, and it shows why the complete space has to be a space of functions rather than a space of points.
 
 ### Isometries and the Failure of Topological Invariance
 

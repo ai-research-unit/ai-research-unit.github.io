@@ -48,7 +48,7 @@ is a topological direct sum, the norm of each projection being $1$. The polar fo
 
 **Corollary (an alternating form is never a polar form).** An alternating form on a space of characteristic not $2$ is the polar form of a quadratic form only if it is zero.
 
-*Proof.* The polar form of a quadratic form is symmetric, by the symmetry of the identity $B(x,y)=\tfrac12(q(x+y)-q(x)-q(y))$, and a form that is both symmetric and alternating satisfies $B=-B^{\intercal}=-B$, hence $2B=0$ and $B=0$ because $2$ is invertible.
+*Proof.* The polar form of a quadratic form is symmetric, by the symmetry of the identity $B(x,y)=\tfrac12(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y))$, and a form that is both symmetric and alternating satisfies $B=-B^{\intercal}=-B$, hence $2B=0$ and $B=0$ because $2$ is invertible.
 
 The corollary is the reason the two articles of the category are disjoint in their content and not merely distinct in their emphasis: the layer of this article is the second summand of the degree-2 forms, and the symplectic structure on a vector space is not the quadratic structure on the same space.
 

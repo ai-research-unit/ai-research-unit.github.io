@@ -11,13 +11,13 @@ The base is a commutative ring $R$ in which $2$ is invertible. The isometry grou
 
 ### Definition
 
-Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $q$ and polar form $B$. An $F$-linear map $A : V \to V$ is **skew** with respect to $B$ if
+Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $\mathfrak{Q}$ and polar form $B$. An $F$-linear map $A : V \to V$ is **skew** with respect to $B$ if
 
 $$
 B(Au, v) + B(u, Av) = 0 \qquad (u, v \in V).
 $$
 
-The set of skew maps is written $\mathrm{SO}(V, q)$, and its elements are the **infinitesimal isometries** of $q$.
+The set of skew maps is written $\mathrm{SO}(V, \mathfrak{Q})$, and its elements are the **infinitesimal isometries** of $q$.
 
 **Proposition.** Let $G$ be the Gram matrix of $B$ in a basis. Then $A$ is skew if and only if its matrix $M$ in that basis satisfies
 
@@ -43,7 +43,7 @@ These are the infinitesimal rotations about the three coordinate axes.
 
 ### The Bracket
 
-**Proposition.** The space $\mathrm{SO}(V, q)$ is closed under the commutator $[A, C] = AC - CA$, and with this bracket it is a Lie algebra over $F$, a Lie subalgebra of $\mathrm{GL}(V)$.
+**Proposition.** The space $\mathrm{SO}(V, \mathfrak{Q})$ is closed under the commutator $[A, C] = AC - CA$, and with this bracket it is a Lie algebra over $F$, a Lie subalgebra of $\mathrm{GL}(V)$.
 
 **Proof.** If $A$ and $C$ are skew, then for all $u, v$,
 
@@ -139,7 +139,7 @@ using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A
 
 ### A Cartan Subalgebra
 
-Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, q)$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators
+Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, \mathfrak{Q})$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators
 
 $$
 H_k = \varphi(e_{2k-1} \wedge e_{2k}),
@@ -148,17 +148,17 @@ $$
 each of which rotates the corresponding coordinate plane and annihilates the rest. Then $\mathrm{H}$ is a **Cartan subalgebra**: it is abelian, and it is maximal among the abelian subalgebras consisting of semisimple elements. Its dimension is
 
 $$
-\operatorname{rank}\mathrm{SO}(V, q) = \left\lfloor \frac{n}{2} \right\rfloor,
+\operatorname{rank}\mathrm{SO}(V, \mathfrak{Q}) = \left\lfloor \frac{n}{2} \right\rfloor,
 $$
 
-which is also the dimension of a maximal torus of $\operatorname{SO}(V, q)$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a one-parameter maximal torus, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two independent one-parameter groups of planar rotations.
+which is also the dimension of a maximal torus of $\operatorname{SO}(V, \mathfrak{Q})$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a one-parameter maximal torus, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two independent one-parameter groups of planar rotations.
 
 ### The Split and Definite Forms
 
-Over $\mathbb{R}$ the isomorphism class of $\mathrm{SO}(V, q)$ depends on the signature, not only on the dimension, because the Gram matrix can be brought to the form $\operatorname{diag}(1^p, (-1)^r)$ by Sylvester's law. Writing
+Over $\mathbb{R}$ the isomorphism class of $\mathrm{SO}(V, \mathfrak{Q})$ depends on the signature, not only on the dimension, because the Gram matrix can be brought to the form $\operatorname{diag}(1^p, (-1)^r)$ by Sylvester's law. Writing
 
 $$
-\mathrm{SO}(p, r) = \mathrm{SO}(V, q), \qquad q \cong p\langle 1\rangle \perp r\langle -1\rangle,
+\mathrm{SO}(p, r) = \mathrm{SO}(V, \mathfrak{Q}), \qquad q \cong p\langle 1\rangle \perp r\langle -1\rangle,
 $$
 
 the complexifications of all the $\mathrm{SO}(p, r)$ with $p + r = n$ are isomorphic to $\mathrm{SO}(n, \mathbb{C})$; over $\mathbb{R}$ they are the different real forms, of which the definite form $\mathrm{SO}(n) = \mathrm{SO}(n, 0)$ and the split form $\mathrm{SO}(m, m)$ or $\mathrm{SO}(m+1, m)$ are the extremes. The common complex dimension is $\binom{n}{2}$ and the common rank is $\lfloor n/2\rfloor$.
@@ -261,7 +261,7 @@ so the complexification is $\mathrm{SL}(2, \mathbb{C}) \oplus \mathrm{SL}(2, \ma
 
 ## Summary
 
-The **orthogonal Lie algebra** $\mathrm{SO}(V, q)$ of a non-degenerate quadratic space is the space of **skew** maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.
+The **orthogonal Lie algebra** $\mathrm{SO}(V, \mathfrak{Q})$ of a non-degenerate quadratic space is the space of **skew** maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.
 
 For any symmetric $B$ the formula $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the **bivectors** $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.
 
@@ -282,12 +282,12 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $R$ | Commutative ring with $2$ invertible |
 | $F$ | Field, characteristic not $2$ unless stated |
 | $V$ | Finite-dimensional free module or space |
-| $q$, $B$ | Quadratic form and its polar form, $q(v) = B(v, v)$ |
+| $q$, $B$ | Quadratic form and its polar form, $\mathfrak{Q}(v) = B(v, v)$ |
 | $G$ | Gram matrix of $B$ |
 | $A$, $C$, $M$ | Endomorphisms and their matrices |
 | $[A, C] = AC - CA$ | Commutator bracket |
 | $\mathrm{GL}(V)$ | Lie algebra of all endomorphisms |
-| $\mathrm{SO}(V, q)$ | Orthogonal Lie algebra of skew maps |
+| $\mathrm{SO}(V, \mathfrak{Q})$ | Orthogonal Lie algebra of skew maps |
 | $\mathrm{SO}(n)$ | Definite orthogonal Lie algebra, signature $(n, 0)$ |
 | $\mathrm{SO}(p, r)$ | Orthogonal Lie algebra of signature $(p, r)$, with $\mathrm{SO}(p, r) \cong \mathrm{SO}(r, p)$ |
 | $\mathrm{SL}(2, \mathbb{C})$ | Lie algebra of traceless $2 \times 2$ complex matrices |
@@ -302,7 +302,7 @@ and $\kappa$ is negative definite because $\operatorname{tr}(X^2) = -\sum_{ij}X_
 | $\operatorname{tr}$ | Trace of an endomorphism or matrix |
 | $C(A)$ | Cayley transform $(I+A)(I-A)^{-1}$ |
 | $\mathrm{H}$ | Cartan subalgebra |
-| $\operatorname{rank}\mathrm{SO}(V, q)$ | $\lfloor n/2\rfloor$, dimension of a maximal torus |
+| $\operatorname{rank}\mathrm{SO}(V, \mathfrak{Q})$ | $\lfloor n/2\rfloor$, dimension of a maximal torus |
 | $\epsilon_{ijk}$ | Levi-Civita symbol |
 | $\times$ | Vector product on $\mathbb{R}^3$ |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |

@@ -43,13 +43,13 @@ $$
 
 ### The Decomposition and the Witt Index
 
-**Theorem (the decomposition).** Let $(V,h)$ be a nondegenerate Hermitian space of dimension $n$ over a field of characteristic not two. Then $V$ decomposes as
+**Theorem (the decomposition).** Let $(V,h)$ be a nondegenerate Hermitian space of dimension $N$ over a field of characteristic not two. Then $V$ decomposes as
 
 $$
 V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0 ,
 $$
 
-an orthogonal sum of $r$ hyperbolic planes and an **anisotropic** subspace $V_0$ (one containing no isotropic vector), of dimension $n - 2r$; the number $r$ is the Witt index, it is the same for every such decomposition by the Witt cancellation theorem, and the isometry class of the whole space is determined by the number $r$ and the isometry class of the anisotropic residue $V_0$.
+an orthogonal sum of $r$ hyperbolic planes and an **anisotropic** subspace $V_0$ (one containing no isotropic vector), of dimension $N - 2r$; the number $r$ is the Witt index, it is the same for every such decomposition by the Witt cancellation theorem, and the isometry class of the whole space is determined by the number $r$ and the isometry class of the anisotropic residue $V_0$.
 
 **Proof.** If $V$ contains an isotropic vector then the proposition gives a hyperbolic plane $\mathbb{H} \subset V$, and $V = \mathbb{H} \perp \mathbb{H}^\perp$ because the plane is nondegenerate; the induction on the dimension applied to $\mathbb{H}^\perp$ gives the decomposition. The uniqueness of $r$ is the Witt cancellation: two decompositions give $r_1$ and $r_2$ planes and the residues, and cancelling the planes one by one forces the two residues to be isometric and the numbers to be equal. The statement is in *Quadratic Forms and Polarisation*.
 
@@ -59,13 +59,13 @@ an orthogonal sum of $r$ hyperbolic planes and an **anisotropic** subspace $V_0$
 
 ### The Classification over the Standard Fields
 
-**Theorem (over $\mathbb{R}$).** A nondegenerate Hermitian form over $\mathbb{R}$ with the trivial involution is a symmetric bilinear form and is classified by its **signature** $(p,q)$ with $p + q = n$, the numbers of the positive and the negative eigenvalues; the Witt index is $\min(p,q)$ and the anisotropic residue is the positive-definite space of dimension $|p-q|$. The Hermitian forms over $\mathbb{C}$ with the complex conjugation are classified by the signature as well, by the spectral theorem for the Hermitian matrices.
+**Theorem (over $\mathbb{R}$).** A nondegenerate Hermitian form over $\mathbb{R}$ with the trivial involution is a symmetric bilinear form and is classified by its **signature** $(n,m)$, the numbers of the positive and the negative eigenvalues; the Witt index is $\min(n,m)$ and the anisotropic residue is the positive-definite space of dimension $|n-m|$. The Hermitian forms over $\mathbb{C}$ with the complex conjugation are classified by the signature as well, by the spectral theorem for the Hermitian matrices.
 
 **Proof.** Sylvester's law of inertia shows that the form is diagonalisable with the eigenvalues reduced to their signs and the number of the positive ones is an invariant; over $\mathbb{C}$ with the conjugation the same argument applies to the Hermitian matrices by the spectral theorem. The statement is in *Quadratic Forms and Polarisation* and *Self-Adjoint Operators and the Spectral Theorem*.
 
-**Theorem (over $\mathbb{C}$ with the trivial involution and over an algebraically closed field).** Every nondegenerate symmetric bilinear form over an algebraically closed field of characteristic not two is hyperbolic in an even dimension and is the orthogonal sum of a hyperbolic plane and a one-dimensional form in an odd dimension; the classification is by the rank alone, and the Witt index is $\lfloor n/2 \rfloor$.
+**Theorem (over $\mathbb{C}$ with the trivial involution and over an algebraically closed field).** Every nondegenerate symmetric bilinear form over an algebraically closed field of characteristic not two is hyperbolic in an even dimension and is the orthogonal sum of a hyperbolic plane and a one-dimensional form in an odd dimension; the classification is by the rank alone, and the Witt index is $\lfloor N/2 \rfloor$.
 
-**Proof.** The Gram–Schmidt argument diagonalises the form, and each diagonal entry is a square in an algebraically closed field, so it may be scaled to $1$; the form $\sum x_i^2$ in dimension $n$ is, after a change of basis $e_i = (u_i + u_{i+1})/2$, the sum of the hyperbolic planes in the even part and one unit vector in the odd part. The statement is in *Quadratic Forms and Polarisation*.
+**Proof.** The Gram–Schmidt argument diagonalises the form, and each diagonal entry is a square in an algebraically closed field, so it may be scaled to $1$; the form $\sum x_i^2$ in dimension $N$ is, after a change of basis $e_i = (u_i + u_{i+1})/2$, the sum of the hyperbolic planes in the even part and one unit vector in the odd part. The statement is in *Quadratic Forms and Polarisation*.
 
 **Theorem (over a finite field and a local field).** Over a finite field of odd characteristic a nondegenerate form is classified by its dimension and its **discriminant**, the Hasse invariant being determined by the two; over a non-Archimedean local field the classification is by the rank, the discriminant and the Hasse invariant, and the invariants determine the Witt index and the anisotropic residue, whose dimension is at most two.
 
@@ -89,7 +89,7 @@ an orthogonal sum of $r$ hyperbolic planes and an **anisotropic** subspace $V_0$
 
 ## The Unitary Geometry of the Isotropic Flags
 
-**Definition.** Let $(V,h)$ be a nondegenerate Hermitian space of dimension $n$ and Witt index $r$. The **isotropic Grassmannian** $\mathrm{IG}_k(V)$ is the set of the $k$-dimensional totally isotropic subspaces of $V$, for $0 \leq k \leq r$; the **maximal isotropic** subspaces are the elements of $\mathrm{IG}_r(V)$, and the **isotropic flag manifold** is the set of the complete flags $0 \subset W_1 \subset \cdots \subset W_r$ of totally isotropic subspaces.
+**Definition.** Let $(V,h)$ be a nondegenerate Hermitian space of dimension $N$ and Witt index $r$. The **isotropic Grassmannian** $\mathrm{IG}_k(V)$ is the set of the $k$-dimensional totally isotropic subspaces of $V$, for $0 \leq k \leq r$; the **maximal isotropic** subspaces are the elements of $\mathrm{IG}_r(V)$, and the **isotropic flag manifold** is the set of the complete flags $0 \subset W_1 \subset \cdots \subset W_r$ of totally isotropic subspaces.
 
 **Theorem.** The unitary group acts transitively on each isotropic Grassmannian, and the stabiliser of a totally isotropic subspace is a **parabolic** subgroup of the unitary group; the isotropic flag manifold is the quotient of the unitary group by a **Borel** subgroup, and the Weyl group of the unitary group acts on the cohomology of the flag manifold with the Schubert cells indexed by the isotropic flags. The geometry of the isotropic flags is the unitary counterpart of the projective geometry of the flags of *Operators on a Projective Space*.
 
@@ -110,7 +110,7 @@ A Hermitian space decomposes as an orthogonal sum of hyperbolic planes and an an
 | isotropic, anisotropic | $h(x,x)=0$; $h(x,x)\neq0$ for every nonzero $x$ |
 | $r$ | Witt index, the largest dimension of a totally isotropic subspace |
 | $V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0$ | Witt decomposition |
-| $(p,q)$ | Signature over $\mathbb{R}$; Witt index $\min(p,q)$ |
+| $(n,m)$ | Signature over $\mathbb{R}$; Witt index $\min(n,m)$ |
 | $W(K,\sigma)$ | Witt group of the Hermitian forms |
 | $W(K)$ | Witt group of the quadratic forms (trivial involution) |
 | $\mathrm{IG}_k(V)$ | Isotropic Grassmannian of the $k$-dimensional isotropic subspaces |

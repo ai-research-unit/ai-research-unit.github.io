@@ -30,7 +30,7 @@ T^{\mu\nu} = \frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\mu\nu}} ,
 $$
 and the trace is $T^\mu{}_\mu = g_{\mu\nu}T^{\mu\nu}$. A **Weyl transformation** is a local rescaling
 $$
-g_{\mu\nu}\;\longrightarrow\;e^{2\sigma(x)}g_{\mu\nu},
+g_{\mu\nu}\;\longrightarrow\;\exp(2\sigma(x))g_{\mu\nu},
 \qquad
 \delta_\sigma g_{\mu\nu} = 2\sigma\,g_{\mu\nu},
 $$
@@ -68,7 +68,7 @@ and the anomaly is the statement that this is non-zero for a classically Weyl-in
 
 **The heat-kernel origin.** Regulating the determinant with a proper-time cutoff, the trace of the heat kernel has the small-$t$ expansion
 $$
-\mathrm{Tr}\,e^{-t\,S''}\;\sim\;\sum_{k\ge0} t^{(k-d)/2}\,a_k ,
+\mathrm{Tr}\,\exp(-t\,S'')\;\sim\;\sum_{k\ge0} t^{(k-d)/2}\,a_k ,
 $$
 and the divergence that survives renormalisation is $a_{d/2}$, the Seeley–DeWitt coefficient of order $d/2$. The conformal variation of the regularised determinant is
 $$
@@ -76,7 +76,7 @@ $$
 $$
 so that the anomalous trace is proportional to $a_{d/2}$. This is the standard heat-kernel account (DeWitt 2003; Vassilevich 2003), and it is the reason the anomaly is a one-loop, one-coefficient statement rather than a tower of terms: $a_{d/2}$ is local, and the higher coefficients are not.
 
-**The algebra's role in the formula.** The heat kernel of $S''$ is taken on a space that the framework names. If $S''$ is a differential operator acting on a biquaternion-valued field, then the trace in $\mathrm{Tr}\,e^{-t S''}$ runs over the module, and the coefficient $a_{d/2}$ carries the module's multiplicity as an overall factor. The geometry of the operator supplies the curvature invariants; the algebra supplies the space on which the trace is taken. This is the same division as in the determinant article, and it is why the anomaly's *coefficient* — as opposed to its *form* — is the algebra's contribution.
+**The algebra's role in the formula.** The heat kernel of $S''$ is taken on a space that the framework names. If $S''$ is a differential operator acting on a biquaternion-valued field, then the trace in $\mathrm{Tr}\,\exp(-t S'')$ runs over the module, and the coefficient $a_{d/2}$ carries the module's multiplicity as an overall factor. The geometry of the operator supplies the curvature invariants; the algebra supplies the space on which the trace is taken. This is the same division as in the determinant article, and it is why the anomaly's *coefficient* — as opposed to its *form* — is the algebra's contribution.
 
 ## The Coefficients in Two and Four Dimensions
 
@@ -106,11 +106,11 @@ $$
 \qquad
 \mathrm{Tr}(e_0)=2 .
 $$
-The factor $2$ is the trace of the identity in the regular representation, and it is the algebraic origin of the "$2\,\mathrm{Sc}$" that recurs throughout the series. On the algebra regarded as a complex four-dimensional space the trace of the identity in the regular representation would be $4$; on the module $\mathbb{B}\tilde\Pi(\hat u)\cong\mathbb{C}^2$, which is the space the determinant and the anomaly's trace are taken over, the trace is $2$. The two numbers are *not* interchangeable, and the anomaly's coefficient depends on which space the field is valued in; the determinant article's treatment of the module resolves which is meant in a given calculation.
+The factor $2$ is the trace of the identity in the regular representation, and it is the algebraic origin of the "$2\,\mathrm{Sc}$" that recurs throughout the series. On the algebra regarded as a complex four-dimensional space the trace of the identity in the regular representation would be $4$; on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, which is the space the determinant and the anomaly's trace are taken over, the trace is $2$. The two numbers are *not* interchangeable, and the anomaly's coefficient depends on which space the field is valued in; the determinant article's treatment of the module resolves which is meant in a given calculation.
 
 **The level-1 biquaternion norm.** The primary convention is the biquaternion norm on $\mathbb{C}^4$,
 $$
-N(\tilde Q) = \sum_{\mu=0}^{3} Q_\mu^2 ,
+\langle\tilde Q\rangle_{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 \qquad
 N = \mathrm{diag}(+1,+1,+1,+1),
 $$
@@ -159,15 +159,15 @@ The anomaly's arithmetic comes from the heat-kernel expansion, and the framework
 
 **The one-loop effective action.** With $S''$ the second variation of the action about the background, the one-loop contribution is
 $$
-\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S'' = -\tfrac12\int_0^\infty\frac{dt}{t}\,\mathrm{Tr}\,e^{-tS''}
+\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S'' = -\tfrac12\int_0^\infty\frac{dt}{t}\,\mathrm{Tr}\,\exp(-tS'')
 $$
 up to a divergent constant, the proper-time representation of the logarithm. The integrand is the heat kernel of $S''$, and its small-$t$ behaviour carries the anomaly.
 
 **The heat-kernel expansion.** For a second-order operator on a $d$-dimensional manifold,
 $$
-\mathrm{Tr}\,e^{-tS''} \;\sim\; \frac{1}{(4\pi t)^{d/2}}\int d^dx\sqrt{g}\,\big(a_0+a_1t+a_2t^2+\cdots\big),
+\mathrm{Tr}\,\exp(-tS'') \;\sim\; \frac{1}{(4\pi t)^{d/2}}\int d^dx\sqrt{g}\,\big(a_0+a_1t+a_2t^2+\cdots\big),
 $$
-with the Seeley–DeWitt coefficients $a_k$ built from the curvature and the operator's potential. The conformal transformation $g\to e^{2\Omega}g$ acts on the expansion through $\Omega$, and the term that survives in the trace is the one multiplying $a_{d/2}$: that is the origin of the anomalous trace,
+with the Seeley–DeWitt coefficients $a_k$ built from the curvature and the operator's potential. The conformal transformation $g\to \exp(2\Omega)g$ acts on the expansion through $\Omega$, and the term that survives in the trace is the one multiplying $a_{d/2}$: that is the origin of the anomalous trace,
 $$
 T^\mu{}_\mu = \frac{c}{24\pi}R \quad (d=2),
 $$
@@ -175,7 +175,7 @@ with $c$ the central charge, and the corresponding combination of the curvature 
 
 **The coefficients, and the framework's multiplicity.** In $d=2$ the relevant coefficient is $a_1=R/6$, giving $c=1$ per real scalar; in $d=4$ the analogous coefficients give the standard $a$ and $c$ per field of each spin. The framework's contribution is the multiplicity: the trace runs over the module or the algebra, and the count is $\mathrm{Tr}(I)=2$ on the module and $4$ on the algebra, so a biquaternion-valued field contributes the corresponding multiple of the per-component coefficient. This is the same counting that the partition-function and harmonic-oscillator articles perform, and it is a count of components and not a multiplication of independent fields, for the reason those articles give. The finite-dimensional shadow of the whole construction was verified: for a complex $K$,
 $$
-\partial_s\log\det\big(e^{s}K\big)\big|_{s=0} = \dim ,
+\partial_s\log\det\big(\exp(s)K\big)\big|_{s=0} = \dim ,
 $$
 obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99999\ldots$ for a $2\times2$ $K$ — the dimension of the space is the coefficient of the conformal-like rescaling, which is the finite-dimensional image of "the anomaly's coefficient counts components".
 
@@ -188,7 +188,7 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 - The Weyl transformation rescales the level-1 biquaternion norm and leaves the algebra, the basis, the $ict$ assignment, and the sector split unchanged; a rescaling is not the Wick rotation and not a Lorentz transformation.
 - The framework's trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_0)=2$; the level-1 biquaternion norm has trace $4$ over the complex four-dimensional algebra; and the two interpretations are related by $\dim_\mathbb{C}\mathbb{B}/\dim_\mathbb{C}\text{module}=2$.
 - A biquaternion field has four complex coefficients, hence eight real components and four real components per sector; the anomaly's multiplicity is fixed by that count. This is a component count and not a multiplicity of complex scalars, for the reason *The Functional Integral in Biquaternionic Form*, *The Partition Function in Biquaternionic Form*, and *The Harmonic Oscillator in Biquaternionic Form* give.
-- The conformal variation of a finite-dimensional Gaussian determinant is proportional to the dimension of the space, $\partial_s\log\det(e^{s}K)\big|_{s=0}=\dim$; verified by finite differences as $3.99999\ldots$ for a $4\times4$ complex $K$ and $1.99999\ldots$ for a $2\times2$ complex $K$, and the corresponding determinant derivative equals $\dim\cdot\det K$. This is the finite-dimensional shadow of the statement that the anomaly's coefficient counts components.
+- The conformal variation of a finite-dimensional Gaussian determinant is proportional to the dimension of the space, $\partial_s\log\det(\exp(s)K)\big|_{s=0}=\dim$; verified by finite differences as $3.99999\ldots$ for a $4\times4$ complex $K$ and $1.99999\ldots$ for a $2\times2$ complex $K$, and the corresponding determinant derivative equals $\dim\cdot\det K$. This is the finite-dimensional shadow of the statement that the anomaly's coefficient counts components.
 
 **Standard, and transcribed.**
 
@@ -196,7 +196,7 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 - The one-loop trace as the conformal variation of $\log\det S''$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
 - The values $c=1$ per real scalar in two dimensions and the four-dimensional $a$ and $c$ coefficients for scalar, fermion, and vector fields.
 - The relation $T^\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).
-- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dt}{t}\mathrm{Tr}\,e^{-tS''}$ and the small-$t$ expansion of the heat kernel, $\mathrm{Tr}\,e^{-tS''}\sim(4\pi t)^{-d/2}\int\sqrt g\,(a_0+a_1t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
+- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dt}{t}\mathrm{Tr}\,\exp(-tS'')$ and the small-$t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-tS'')\sim(4\pi t)^{-d/2}\int\sqrt g\,(a_0+a_1t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
 
 **Interpretation.**
 
@@ -226,10 +226,10 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | Level-1 biquaternion norm, $\mathrm{diag}(+1,+1,+1,+1)$; trace $4$ on $\mathbb{B}$ |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Level-1 biquaternion norm, $\mathrm{diag}(+1,+1,+1,+1)$; trace $4$ on $\mathbb{B}$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict$ metric; an output of $\tilde{Q}=ict\,e_0+\vec x$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$ | Series d'Alembertian |
-| $g_{\mu\nu}\to e^{2\sigma}g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
+| $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T^{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$ | One-loop effective action whose variation is the anomaly |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |

@@ -154,7 +154,7 @@ $$
 
 This bracket is bilinear, antisymmetric, and satisfies the Jacobi identity. So $A$, equipped with this bracket, is a Lie algebra.
 
-This construction applies in particular to every associative algebra: an associative algebra is a Lie algebra with the commutator bracket. The Clifford algebras are the central instance — they are associative and carry a form — and the Lie algebras they yield, the bivectors together with the orthogonal Lie algebra $\mathrm{SO}(V,Q)$ and the rotations these generate, belong to Part II and to Part IV, where the form and the distance are available, and are named only.
+This construction applies in particular to every associative algebra: an associative algebra is a Lie algebra with the commutator bracket. The Clifford algebras are the central instance — they are associative and carry a form — and the Lie algebras they yield, the bivectors together with the orthogonal Lie algebra $\mathrm{SO}(V,\mathfrak{Q})$ and the rotations these generate, belong to Part II and to Part IV, where the form and the distance are available, and are named only.
 
 The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ is an example of a Lie algebra that does not arise from an associative algebra. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.
 

@@ -123,7 +123,7 @@ because the integration by parts against the density produces the divergence ter
 **Definition.** For a formally self-adjoint operator $P$ the **quadratic form** (or **Dirichlet form**) is
 
 $$
-Q(u) = \langle Pu, u\rangle_{L^2} = \int_M \langle Pu, u\rangle\, d\mu,
+\mathfrak{Q}(u) = \langle Pu, u\rangle_{L^2} = \int_M \langle Pu, u\rangle\, d\mu,
 $$
 
 defined on the compactly supported sections; it is real when the fibrewise metrics and the operator are real, and it is the object from which the variational characterisation of the eigenvalues and the weak solutions proceeds.
@@ -131,7 +131,7 @@ defined on the compactly supported sections; it is real when the fibrewise metri
 **Proposition.** For a formally self-adjoint second-order operator $P = -\nabla^*\nabla + V$ with $V$ self-adjoint, the quadratic form is
 
 $$
-Q(u) = \lVert\nabla u\rVert_{L^2}^2 + \langle Vu, u\rangle_{L^2} = \int_M\bigl(\lvert\nabla u\rvert^2 + \langle Vu,u\rangle\bigr)\,d\mu,
+\mathfrak{Q}(u) = \lVert\nabla u\rVert_{L^2}^2 + \langle Vu, u\rangle_{L^2} = \int_M\bigl(\lvert\nabla u\rvert^2 + \langle Vu,u\rangle\bigr)\,d\mu,
 $$
 
 which is the energy form of the operator; the operator is nonnegative, $P \geq 0$, when $V \geq 0$, and the association of the operator with the form is the content of the **Dirichlet principle**.
@@ -161,7 +161,7 @@ The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so t
 | $\int_\Omega(\langle v,Pu\rangle-\langle u,P^*v\rangle)=\int_{\partial\Omega}\langle W,\nu\rangle\,dS$ | Green formula; the boundary term |
 | $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$ | Symbol of the adjoint; ellipticity preserved |
 | Formally self-adjoint, skew-adjoint, normal | $P^*=P$; $P^*=-P$; $P^*P=PP^*$ |
-| $Q(u)=\langle Pu,u\rangle_{L^2}$ | Dirichlet form; energy of a self-adjoint operator |
+| $\mathfrak{Q}(u)=\langle Pu,u\rangle_{L^2}$ | Dirichlet form; energy of a self-adjoint operator |
 
 ## Further Reading
 

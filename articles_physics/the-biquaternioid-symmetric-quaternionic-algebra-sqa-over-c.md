@@ -15,24 +15,24 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
 - **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_0$ return the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the interval read on the square — and the invertibility criterion of the symmetrised quaternionic product. Owner: *Norm and Invertibility in the Symmetric Quaternionic Algebra*.
-- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors of the Symmetric Quaternionic Algebra*.
-- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators of the Symmetric Quaternionic Algebra*.
-- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*, *Square Roots of a General Element in the Symmetric Quaternionic Algebra*.
+- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Symmetric Quaternionic Algebra*.
 - **The radical and the isotropic elements.** The radical of the central product and the isotropic elements it contains, which are the null cone read as a degeneration of a product. Owner: *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
-- **The quaternion form as a product.** The quaternion form $N(\tilde P,\tilde Q)=\sum_\mu P_\mu Q_\mu$ is the product itself read on the material side, and its values are central; the structure is therefore a pairing of two material operations into a number. Owner: *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
-- **The remarkable subspaces and the realification.** The restriction of the product and of its form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Quaternionic Algebra*, *The Realification of the Symmetric Quaternionic Algebra*.
+- **The quaternion form as a product.** The quaternion form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ is the product itself read on the material side, and its values are central; the structure is therefore a pairing of two material operations into a number. Owner: *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
+- **The remarkable subspaces and the realification.** The restriction of the product and of its form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Quaternionic Algebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
 
-- **The multiplication operators.** The one family of the multiplication operators of the structure, its adjoint for the quaternion form, its types and its symmetries; the family is rank one, and the spin group is not realised in it. Owner: *The Multiplication Operators of the Symmetric Quaternionic Product and the Coupling*.
+- **The multiplication operators.** The one family of the multiplication operators of the structure, its adjoint for the quaternion form, its types and its symmetries; the family is rank one, and the spin group is not realised in it. Owner: *The Multiplication Operators of the Symmetric Quaternionic Algebra*.
 
 ### Representations
 
-- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation*, *The Symmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation*.
+- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Physical Interpretation
 
@@ -47,7 +47,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ## Summary
 
-The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ over $\mathbb{C}$, the coupling band of the framework: commutative, without a unit, with central values, with the quaternion form $N$ as its pairing and with the null cone as the radical of the product. It can weight a comparison of two material operations and cannot label an outcome; its operators are rank-one functionals, it moves no state, and it realises no spin group. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ over $\mathbb{C}$, the coupling band of the framework: commutative, without a unit, with central values, with the quaternion form $\langle\cdot\rangle_{\natural}$ as its pairing and with the null cone as the radical of the product. It can weight a comparison of two material operations and cannot label an outcome; its operators are rank-one functionals, it moves no state, and it realises no spin group. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
@@ -55,9 +55,9 @@ The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star
 |---|---|
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | the symmetric quaternionic product, $\mathrm{SQA}$ |
 | $\tilde P\star\tilde Q=\tilde Q\star\tilde P$ | commutativity; the absence of a side |
-| $N(\tilde P,\tilde Q)=\sum_\mu P_\mu Q_\mu$ | the quaternion form; the coupling |
-| $N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
-| $\{N(\tilde Q)=0\}$ | the isotropic elements; the radical of the product |
+| $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ | the quaternion form; the coupling |
+| $\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
+| $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic elements; the radical of the product |
 | $e_0\star\tilde X=\tilde X^{\natural}$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | the centre; the line of the values |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |

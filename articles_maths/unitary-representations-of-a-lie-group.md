@@ -25,7 +25,7 @@ The article assumes the Hilbert space, the bounded operators and the spectral th
 
 ### The Derived Representation
 
-**Theorem (Stone).** Let $g : \mathbb{R} \to U(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = e^{itA}$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.
+**Theorem (Stone).** Let $g : \mathbb{R} \to U(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.
 
 *Proof.* Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is skew-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.
 
@@ -125,7 +125,7 @@ which is bounded, continuous and uniformly continuous in each variable; it is **
 
 ### The Vector Group
 
-For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\xi(x) = e^{2\pi i\,\xi\cdot x}$ with $\xi \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\xi\cdot X)v$, skew-adjoint because the scalar is imaginary.
+For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\xi(x) = \exp(2\pi i\,\xi\cdot x)$ with $\xi \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\xi\cdot X)v$, skew-adjoint because the scalar is imaginary.
 
 ### A Compact Group
 

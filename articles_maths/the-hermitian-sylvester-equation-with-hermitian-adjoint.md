@@ -17,10 +17,10 @@ The two-sided operators and their adjoints are *Two-Sided Operators on a Cliffor
 
 ## The Solution Operator
 
-**Definition.** For $a\in\mathrm{Cl}(V,q)$ the **Hermitian Sylvester operator** with coefficient $a$ is
+**Definition.** For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the **Hermitian Sylvester operator** with coefficient $a$ is
 
 $$
-L_a : \mathrm{Cl}(V,q)\longrightarrow \mathrm{Cl}(V,q), \qquad L_a(X) = a^{\dagger}X + Xa ,
+L_a : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad L_a(X) = a^{\dagger}X + Xa ,
 $$
 
 and the equation $L_a(X) = C$ is the **Hermitian Sylvester equation**.

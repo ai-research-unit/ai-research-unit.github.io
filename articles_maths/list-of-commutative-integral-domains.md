@@ -93,7 +93,7 @@ The quotient $\mathbb{Z}[\sqrt{-5}]/(2)$ records that $2$ is irreducible but not
 |---|---|---|
 | $\mathbb{Z}/6\mathbb{Z}$ | $2 \cdot 3 = 0$ with neither factor zero | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $2$ is a nonzero nilpotent, hence a zero divisor | *Reduced Rings and the Nilradical* |
-| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | the idempotents $e_{\pm}$ satisfy $e_+e_- = 0$ | *Split-Complex Algebra* |
+| $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | the idempotents $\Pi_{1,2}$ satisfy $\Pi_1\Pi_2 = 0$ | *Split-Complex Algebra* |
 | $\mathbb{D}'$ | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |
 | $R \times S$ for nonzero $R, S$ | $(1,0)(0,1) = 0$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | not commutative, and it has zero divisors | *Matrix Algebras* |

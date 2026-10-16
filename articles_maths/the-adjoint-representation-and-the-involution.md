@@ -61,7 +61,7 @@ $$
 
 **Proof.** The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation.
 
-**Corollary.** The Killing form is symmetric, $B(y,z)=B(z,y)$, so the adjoint representation is of **orthogonal** type; the isomorphism $\mathrm{G}\to\mathrm{G}^{*}$, $x\mapsto B(x,\cdot)$, intertwines the adjoint action with the negative transpose action, $\operatorname{ad}_x^{*}=-\operatorname{ad}_x$ for the contragredient action on the dual, which is the self-duality expressed on the dual.
+**Corollary.** The Killing form is symmetric, $B(y,z)=B(z,y)$, so the adjoint representation is of **orthogonal** type; the isomorphism $\mathrm{G}\to\mathrm{G}^{*}$, $x\mapsto \langle x,\cdot\rangle$, intertwines the adjoint action with the negative transpose action, $\operatorname{ad}_x^{*}=-\operatorname{ad}_x$ for the contragredient action on the dual, which is the self-duality expressed on the dual.
 
 **Proposition.** When $\theta$ is an involution, the twisted form $B_\theta(x,y)=-B(x,\theta y)$ is invariant under the $\theta$-twisted action, $B_\theta(\theta x,\theta y)=B_\theta(x,y)$; it pairs the two eigenspaces $\mathrm{K},\mathrm{P}$ with themselves and $\mathrm{K}$ with $\mathrm{P}$ according to the parity, and it is symmetric because $B$ and $\theta$ commute with the symmetry.
 

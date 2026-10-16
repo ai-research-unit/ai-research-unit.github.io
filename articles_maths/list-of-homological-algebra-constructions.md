@@ -81,9 +81,9 @@ A **spectral sequence** is a sequence of pages $E^r$ with differentials, converg
 
 | Construction | What it measures and produces | Introduced in |
 |---|---|---|
-| Filtered complex and associated graded | the data producing the spectral sequence; $\operatorname{gr}_pC = F_pC/F_{p+1}C$ | *Spectral Sequences* |
-| Pages $E^r_{p,q}$ and differentials $d^r$ | the successive approximations of the answer | *Spectral Sequences* |
-| Convergence $E^2_{p,q} \Rightarrow H_{p+q}$ | the stabilisation of the pages to the graded pieces of the homology | *Spectral Sequences* |
+| Filtered complex and associated graded | the data producing the spectral sequence; $\operatorname{gr}_pC = F_pC/F_{n+1}C$ | *Spectral Sequences* |
+| Pages $E^r_{n,m}$ and differentials $d^r$ | the successive approximations of the answer | *Spectral Sequences* |
+| Convergence $E^2_{n,m} \Rightarrow H_{n+m}$ | the stabilisation of the pages to the graded pieces of the homology | *Spectral Sequences* |
 | Spectral sequence of a double complex | the two filtrations of the total complex; the horizontal and vertical homology | *Spectral Sequences* |
 | Grothendieck spectral sequence | the derived functors $R^pG(R^qF(A))$ as the $E_2$-page | *Spectral Sequences* |
 | Five-term exact sequence | the low-degree terms of a converging spectral sequence | *Spectral Sequences* |
@@ -129,7 +129,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $P_\bullet \to M$, $M \to I^\bullet$ | projective and injective resolutions |
 | $R^nF$, $L_nG$ | right and left derived functors |
 | $\operatorname{Ext}_R^n(M,N)$, $\operatorname{Tor}_n^R(M,N)$ | Ext and Tor |
-| $E^r_{p,q}$, $d^r$, $E^\infty_{p,q}$ | pages, differentials, stable terms of a spectral sequence |
+| $E^r_{n,m}$, $d^r$, $E^\infty_{n,m}$ | pages, differentials, stable terms of a spectral sequence |
 | $K(\mathcal{A})$, $D(\mathcal{A})$, $D^b$ | homotopy and derived categories |
 | $\mathbb{R}\operatorname{Hom}$, $\otimes^{\mathbb{L}}$ | derived hom and tensor |
 | $X \to Y \to Z \to TX$ | distinguished triangle |

@@ -68,7 +68,7 @@ so the unitary group of the form is the group of bounded operators preserving $B
 1. for $B$ the inner product on a complex Hilbert space, $U(H)$, the unitary group, and on a real Hilbert space $O(H)$, the orthogonal group;
 2. for $B$ a non-degenerate symmetric bilinear form on a real space, the orthogonal group of $B$;
 3. for $B$ a non-degenerate alternating (skew-symmetric) form, the symplectic group $Sp(H,B)$;
-4. for $B$ an indefinite non-degenerate Hermitian form of signature $(p,q)$ on $\mathbb{K}^{n}$, the indefinite unitary group $U(p,q)$.
+4. for $B$ an indefinite non-degenerate Hermitian form of signature $(n,m)$ on $\mathbb{K}^{n}$, the indefinite unitary group $U(n,m)$.
 
 **Proof.** These are the definitions read through the theorem: the preservation of the form is the defining condition in each case, the group being unitary, orthogonal or symplectic according to the symmetry type of $B$. The indefinite Hermitian forms and their geometry are Part III, named here and not developed; the finite-dimensional forms and the groups are *Hilbert Algebras*.
 
@@ -80,13 +80,13 @@ so the unitary group of the form is the group of bounded operators preserving $B
 
 **Example (the self-adjoint and skew parts of an involution).** For each involution $T \mapsto T^{\sharp}$ of $B(H)$ the algebra splits over $\mathbb{R}$ into the $\sharp$-self-adjoint operators $T = T^{\sharp}$ and the $\sharp$-skew operators $T = -T^{\sharp}$, with $T = \frac12(T+T^{\sharp}) + \frac12(T-T^{\sharp})$; for the canonical involution these are the self-adjoint and skew-adjoint operators of *The Adjoint of a Bounded Operator*, and for the form-adjoint they are the operators self-adjoint or skew with respect to $B$.
 
-**Example (the Minkowski form).** On $\mathbb{C}^{n}$ with the form $B(x,y) = \sum_{i=1}^{p}x_{i}\overline{y_{i}} - \sum_{i=p+1}^{n}x_{i}\overline{y_{i}}$ of signature $(p,q)$, the induced operator is $\Phi = \mathrm{diag}(1,\dots,1,-1,\dots,-1)$, the form-adjoint is $T^{\dagger} = \Phi T^{*}\Phi$, and the unitary group is the indefinite unitary group $U(p,q)$; its self-adjoint part contains the operators that are $\Phi$-self-adjoint, and the indefinite geometry is Part III.
+**Example (the Minkowski form).** On $\mathbb{C}^{n}$ with the form $B(x,y) = \sum_{i=1}^{n}x_{i}\overline{y_{i}} - \sum_{i=n+1}^{n}x_{i}\overline{y_{i}}$ of signature $(n,m)$, the induced operator is $\Phi = \mathrm{diag}(1,\dots,1,-1,\dots,-1)$, the form-adjoint is $T^{\dagger} = \Phi T^{*}\Phi$, and the unitary group is the indefinite unitary group $U(n,m)$; its self-adjoint part contains the operators that are $\Phi$-self-adjoint, and the indefinite geometry is Part III.
 
 **Example (the real orthogonal and the symplectic cases).** On $\mathbb{R}^{n}$ with the standard symmetric form the form-adjoint is the transpose, $T^{\dagger} = T^{\mathsf{T}}$, and the unitary group is the orthogonal group $O(n)$; on $\mathbb{R}^{2m}$ with the standard alternating form $B(x,y) = \sum_{i}(x_{2i-1}y_{2i} - x_{2i}y_{2i-1})$ the form-adjoint is the symplectic transpose and the unitary group is the symplectic group $Sp(2m,\mathbb{R})$.
 
 ## Summary
 
-The algebra $B(H)$ of bounded operators on a Hilbert space carries the canonical involution $T \mapsto T^{*}$, the adjoint, and every non-degenerate bounded form $B$ with induced invertible operator $\Phi$, $B(x,y) = \langle x,\Phi y\rangle$, defines the form-adjoint $T^{\dagger} = \Phi^{-1}T^{*}\Phi$, which is again an involutive anti-automorphism of $B(H)$ and is the canonical adjoint transported by the similarity $\Phi$; the two involutions therefore have the same structural properties, and they coincide only for a central $\Phi$. The unitary group of an involution is the group of operators satisfying $T^{\sharp}T = TT^{\sharp} = \mathrm{id}$; for the form-adjoint it is the group of operators preserving $B$, closed in $B(H)$ and hence a topological group, and it takes the classical values: the unitary and orthogonal groups of the inner product, the orthogonal group of a symmetric bilinear form, the symplectic group of an alternating form, and the indefinite unitary groups $U(p,q)$ of the indefinite Hermitian forms. The involutions of equivalent forms are conjugate, so the classification of the groups reduces to the classification of the forms, which is *Hilbert Algebras* in finite dimension and Part III in general. The adjoint defined by an abstract dual pairing is *The Dual Pairing and the Adjoint*.
+The algebra $B(H)$ of bounded operators on a Hilbert space carries the canonical involution $T \mapsto T^{*}$, the adjoint, and every non-degenerate bounded form $B$ with induced invertible operator $\Phi$, $B(x,y) = \langle x,\Phi y\rangle$, defines the form-adjoint $T^{\dagger} = \Phi^{-1}T^{*}\Phi$, which is again an involutive anti-automorphism of $B(H)$ and is the canonical adjoint transported by the similarity $\Phi$; the two involutions therefore have the same structural properties, and they coincide only for a central $\Phi$. The unitary group of an involution is the group of operators satisfying $T^{\sharp}T = TT^{\sharp} = \mathrm{id}$; for the form-adjoint it is the group of operators preserving $B$, closed in $B(H)$ and hence a topological group, and it takes the classical values: the unitary and orthogonal groups of the inner product, the orthogonal group of a symmetric bilinear form, the symplectic group of an alternating form, and the indefinite unitary groups $U(n,m)$ of the indefinite Hermitian forms. The involutions of equivalent forms are conjugate, so the classification of the groups reduces to the classification of the forms, which is *Hilbert Algebras* in finite dimension and Part III in general. The adjoint defined by an abstract dual pairing is *The Dual Pairing and the Adjoint*.
 
 ## Summary of Notation
 
@@ -99,7 +99,7 @@ The algebra $B(H)$ of bounded operators on a Hilbert space carries the canonical
 | $T^{\dagger} = \Phi^{-1}T^{*}\Phi$ | form-adjoint, an involution of $B(H)$ |
 | $T^{\sharp}$ | a general involution of $B(H)$ |
 | $U(H,\sharp)$ | unitary group of an involution |
-| $U(H)$, $O(H)$, $Sp(H,B)$, $U(p,q)$ | the classical groups |
+| $U(H)$, $O(H)$, $Sp(H,B)$, $U(n,m)$ | the classical groups |
 
 ## Further Reading
 

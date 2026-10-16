@@ -16,7 +16,7 @@ Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and t
 The dual plane $\mathbb{D}'$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:
 
 $$
-\chi_\xi(A) = e^{2\pi i \langle \xi, A \rangle}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(A) = \exp(2\pi i \langle \xi, A \rangle), \qquad \xi \in \mathbb{D}',
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
@@ -34,7 +34,7 @@ So at the level of the additive group, dual harmonic analysis is the same as Fou
 The **dual characters** are the homomorphisms into the multiplicative monoid of $\mathbb{D}'$:
 
 $$
-\chi_\xi(A) = e^{\langle \xi, A \rangle \varepsilon}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(A) = \exp(\langle \xi, A \rangle \varepsilon), \qquad \xi \in \mathbb{D}',
 $$
 
 where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
@@ -54,13 +54,13 @@ So the dual case is intermediate between the complex case, where the characters 
 The **dual Fourier transform** of a function $f : \mathbb{D}' \to \mathbb{D}'$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(A) e^{- \langle \xi, A \rangle \varepsilon} \, dA,
+(\mathcal F f)(\xi) = \int_{\mathbb{D}'} f(A) \exp(- \langle \xi, A \rangle \varepsilon) \, dA,
 $$
 
 where $dA$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(A) (1 - \langle \xi, A \rangle \varepsilon) \, dA.
+(\mathcal F f)(\xi) = \int_{\mathbb{D}'} f(A) (1 - \langle \xi, A \rangle \varepsilon) \, dA.
 $$
 
 So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.
@@ -70,7 +70,7 @@ So the dual Fourier transform is the ordinary two-dimensional Fourier transform 
 Write $f(A) = u(a, a') + v(a, a') \varepsilon$. Then
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}^2} u(a, a') \, da \, da' + \left( \int_{\mathbb{R}^2} v(a, a') \, da \, da' - \int_{\mathbb{R}^2} u(a, a') \langle \xi, A \rangle \, da \, da' \right) \varepsilon.
+(\mathcal F f)(\xi) = \int_{\mathbb{R}^2} u(a, a') \, da \, da' + \left( \int_{\mathbb{R}^2} v(a, a') \, da \, da' - \int_{\mathbb{R}^2} u(a, a') \langle \xi, A \rangle \, da \, da' \right) \varepsilon.
 $$
 
 So the dual Fourier transform has:
@@ -84,7 +84,7 @@ This is the fundamental structural fact about the dual Fourier transform: the re
 
 | Property | Complex | Split Complex | Dual |
 |---|---|---|---|
-| Characters | $e^{i\xi a}$, bounded | $e^{j\xi a}$, unbounded | $1 + \xi a \varepsilon$, linear growth |
+| Characters | $\exp(i\xi a)$, bounded | $\exp(j\xi a)$, unbounded | $1 + \xi a \varepsilon$, linear growth |
 | Transform converges | for $f \in L^1$ | only for rapid decay | for $f \in L^1$ |
 | Real part of transform | oscillatory | exponential | constant |
 | Infinitesimal part | — | — | affine in $\xi$ |
@@ -99,7 +99,7 @@ So the dual case is the only one of the three where the transform converges on $
 On a bounded interval $[-T, T]^2$, the dual Fourier transform
 
 $$
-\hat{f}(\xi) = \int_{[-T, T]^2} f(A) e^{- \langle \xi, A \rangle \varepsilon} \, dA
+(\mathcal F f)(\xi) = \int_{[-T, T]^2} f(A) \exp(- \langle \xi, A \rangle \varepsilon) \, dA
 $$
 
 converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as above: the real part is the total integral of the real part of $f$, and the infinitesimal part is the total integral of the infinitesimal part minus the first moment of the real part.
@@ -109,13 +109,13 @@ converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as ab
 The inversion formula is
 
 $$
-f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\langle \xi, A \rangle \varepsilon} \, d\xi,
+f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, A \rangle \varepsilon) \, d\xi,
 $$
 
 under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to
 
 $$
-f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \langle \xi, A \rangle \varepsilon) \, d\xi.
+f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) (1 + \langle \xi, A \rangle \varepsilon) \, d\xi.
 $$
 
 The real part of the inversion recovers the total integral, and the infinitesimal part recovers the first moment. So the inversion is not a true inversion: it recovers only the total integral and the first moment of the function, not the function itself. This is the degeneracy of the dual Fourier transform.
@@ -150,18 +150,18 @@ whenever the integral converges. This is the convolution on the additive group $
 
 **Associativity.** $(f * g) * h = f * (g * h)$.
 
-**Young's inequality.** If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
+**Young's inequality.** If $1/n + 1/m = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
 
 $$
 \|f * g\|_r \leq \|f\|_p \|g\|_q,
 $$
 
-where the norms are the ordinary $L^p$ norms on $\mathbb{R}^2$.
+where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.
 
 **Convolution theorem.** For functions for which the dual Fourier transform is defined,
 
 $$
-\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
 $$
 
 **Proof.** Write the definition, apply Fubini, and change variables.
@@ -171,7 +171,7 @@ $$
 Because the dual Fourier transform is a moment map, the convolution theorem says that the moments of the convolution are the products of the moments of the factors. Explicitly, if
 
 $$
-\hat{f} = F_0 + F_1 \varepsilon, \qquad \hat{g} = G_0 + G_1 \varepsilon,
+\mathcal F f = F_0 + F_1 \varepsilon, \qquad \mathcal F g = G_0 + G_1 \varepsilon,
 $$
 
 then
@@ -192,7 +192,7 @@ $$
 
 for every $\delta > 0$.
 
-**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^p(\mathbb{D}')$ for $1 \leq p < \infty$, then
+**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{D}')$ for $1 \leq p < \infty$, then
 
 $$
 \|f * \phi_n - f\|_p \to 0.
@@ -204,7 +204,7 @@ This is the same as in the real case, because the additive group of $\mathbb{D}'
 
 ### Definition
 
-A **tempered distribution** on $\mathbb{D}'$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{D}')$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{D}')$. It includes all functions in $L^p(\mathbb{D}')$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.
+A **tempered distribution** on $\mathbb{D}'$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{D}')$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{D}')$. It includes all functions in $L^{n}(\mathbb{D}')$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.
 
 ### Operations on Distributions
 
@@ -272,7 +272,7 @@ where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual H
 
 ### Basic Properties
 
-**Boundedness.** $H$ is bounded on $L^p(\mathbb{D}')$ for $1 < p < \infty$, with
+**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p < \infty$, with
 
 $$
 \|Hf\|_p \leq C_p \|f\|_p.
@@ -281,7 +281,7 @@ $$
 **Fourier multiplier.** In terms of the dual Fourier transform,
 
 $$
-\widehat{Hf}(\xi) = -i \operatorname{sgn}(\xi) \hat{f}(\xi),
+\widehat{Hf}(\xi) = -i \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
 $$
 
 where $\operatorname{sgn}$ is the sign function on the real part.
@@ -306,7 +306,7 @@ $$
 |\{A : Mf(A) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$
 
-This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^p(\mathbb{D}')$ for $1 < p \leq \infty$.
+This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p \leq \infty$.
 
 **Theorem.** For $1 < p \leq \infty$, there exists $C_p > 0$ such that
 
@@ -342,7 +342,7 @@ $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.
 
-**Theorem (Calderón–Zygmund, dual version).** Every dual Calderón–Zygmund operator is bounded on $L^p(\mathbb{D}')$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
+**Theorem (Calderón–Zygmund, dual version).** Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{D}')$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
 
 **Examples.** The dual Hilbert transform, the dual Riesz transforms, and the Beurling–Ahlfors transform are dual Calderón–Zygmund operators.
 
@@ -372,13 +372,13 @@ So the dual Mellin transform has a real part that is the ordinary Mellin transfo
 
 ### Relation to the Dual Fourier Transform
 
-Under the change of variables $t = e^a$, the Mellin transform becomes the dual Fourier transform on the real line:
+Under the change of variables $t = \exp(a)$, the Mellin transform becomes the dual Fourier transform on the real line:
 
 $$
-\mathcal{M} f(\sigma + \tau \varepsilon) = \int_{-\infty}^\infty e^{(\sigma + \tau \varepsilon) a} f(e^a) \, da = \hat{g}(\tau),
+\mathcal{M} f(\sigma + \tau \varepsilon) = \int_{-\infty}^\infty \exp((\sigma + \tau \varepsilon) a) f(\exp(a)) \, da = (\mathcal F g)(\tau),
 $$
 
-where $g(a) = e^{\sigma a} f(e^a)$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.
+where $g(a) = \exp(\sigma a) f(\exp(a))$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.
 
 ## The Radon Transform
 
@@ -397,7 +397,7 @@ where $L(\theta, t)$ is the line with normal direction $(\cos\theta, \sin\theta)
 **Theorem (Fourier Slice, dual version).** The one-dimensional dual Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional dual Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:
 
 $$
-\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
+\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
 $$
 
 **Proof.** Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables.
@@ -409,7 +409,7 @@ The Fourier slice theorem is the mathematical basis of dual tomography, the anal
 **Theorem.** For suitable $f$,
 
 $$
-f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\langle \xi, A \rangle \varepsilon} \, d\sigma \, d\theta,
+f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(\langle \xi, A \rangle \varepsilon) \, d\sigma \, d\theta,
 $$
 
 where $\xi = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.
@@ -483,7 +483,7 @@ The section on the structure principle states what organises the subject: whenev
 | $A = a + \varepsilon a'$ | General dual number, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ |
 | $B = b + \varepsilon b'$ | Second dual number, $b = \operatorname{Re} B$, $b' = \operatorname{Inf} B$ |
 | $\chi_\xi(A) = 1 + \langle \xi, A \rangle \varepsilon$ | Dual character |
-| $\hat{f}$ | Dual Fourier transform |
+| $\mathcal F f$ | Dual Fourier transform |
 | $f * g$ | Convolution |
 | $\delta$ | delta distribution |
 | $Hf$ | Dual Hilbert transform |

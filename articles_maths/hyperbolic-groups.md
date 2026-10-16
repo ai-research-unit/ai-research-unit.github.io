@@ -92,7 +92,7 @@ so that a quasi-geodesic is a quasi-isometric embedding of an interval; it is a 
 **Definition.** Let $X$ be a proper hyperbolic space with base point $p$ and let $\varepsilon > 0$ be small. For $\xi \neq \eta \in \partial X$ let
 
 $$
-\rho_\varepsilon(\xi,\eta) = e^{-\varepsilon(\xi\vert\eta)_p} ,
+\rho_\varepsilon(\xi,\eta) = \exp(-\varepsilon(\xi\vert\eta)_p) ,
 $$
 
 where $(\xi\vert\eta)_p$ is the Gromov product of two representatives. For $\varepsilon$ sufficiently small, $(\xi,\eta) \mapsto \rho_\varepsilon(\xi,\eta)$ is comparable to a metric on $\partial X$ that induces the boundary topology; the resulting metrics are the **visual metrics**, and they are pairwise Hölder equivalent for different choices of $\varepsilon$ and of the base point.
@@ -213,7 +213,7 @@ A finitely generated group is hyperbolic when its Cayley graph is. Hyperbolic gr
 | Morse lemma | Quasi-geodesics stay in an $R(\delta,\lambda,C)$-neighbourhood of geodesics |
 | $\partial X$ | Boundary at infinity: asymptotic classes of geodesic rays |
 | $\overline{X} = X\cup\partial X$ | Compactification of a proper hyperbolic space |
-| visual metric | Metric on $\partial X$ from $e^{-\varepsilon(\xi\vert\eta)_p}$ |
+| visual metric | Metric on $\partial X$ from $\exp(-\varepsilon(\xi\vert\eta)_p)$ |
 | quasi-symmetry | Distortion control of the boundary map induced by a quasi-isometry |
 | $\partial\Gamma$ | Boundary of a hyperbolic group, well defined up to homeomorphism |
 | $\tau(\gamma) = \inf_x d(x,\gamma x)$ | Translation length of an isometry |

@@ -6,7 +6,7 @@
 The Fourier transform is not only a formula for a function but an operator, and as an operator it is
 unitary. Written
 $$
-(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)e^{-2\pi ix\cdot\xi}\,dx ,
+(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\xi)\,dx ,
 $$
 it extends from the Schwartz class to an isometry of $L^2(\mathbb R^n)$ onto itself, so that it preserves
 the inner product and the norm; its inverse is the transform with the conjugate character. The operator
@@ -37,11 +37,11 @@ transform acts on functions and the operator is studied through the integral and
 
 **Definition.** The **Fourier operator** on $\mathbb R^n$ is the map
 $$
-(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)e^{-2\pi ix\cdot\xi}\,dx ,
+(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\xi)\,dx ,
 $$
 under the normalisation of *Fourier Analysis on Euclidean Spaces*; the conjugate transform is
-$(\overline{\mathcal F}f)(\xi)=\int f(x)e^{2\pi ix\cdot\xi}dx$, and the inverse transform is
-$\check g(x)=\int g(\xi)e^{2\pi ix\cdot\xi}d\xi$.
+$(\overline{\mathcal F}f)(\xi)=\int f(x)\exp(2\pi ix\cdot\xi)dx$, and the inverse transform is
+$\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$.
 
 On the Schwartz class $\mathcal S(\mathbb R^n)$ the transform is a linear homeomorphism onto itself, of
 order four; this is the content of the invariance of $\mathcal S$ and of the inversion theorem of the
@@ -66,7 +66,7 @@ and the extension is given by the $L^2$ limit of the transforms of an approximat
 product identity is the polarisation of the norm identity over $\mathbb C$ (the article works over
 $\mathbb K=\mathbb R$ or $\mathbb C$; over $\mathbb R$ the norm identity is equivalent to the inner product
 identity by the polarisation formula). The inverse is the conjugate transform, since the inversion theorem
-gives $\check{\hat f}=f$ on $\mathcal S$ and hence, by density and continuity, on $L^2$; surjectivity
+gives $\mathcal F^{-1}\mathcal F f=f$ on $\mathcal S$ and hence, by density and continuity, on $L^2$; surjectivity
 follows.
 
 The word **unitary** for $\mathcal F$ is used in the sense of *Banach and Hilbert Spaces*, later in this
@@ -89,9 +89,9 @@ $\mathcal F^4=\mathrm{id}$, $\mathcal F^{-1}=\mathcal F^3$, and $\mathcal F^3=\m
 **Proof.** On $\mathcal S$, inserting the definition and exchanging the order of integration, which the
 rapid decrease justifies,
 $$
-\mathcal F^2f(x)=\int \mathcal Ff(\xi)e^{-2\pi ix\cdot\xi}\,d\xi
-=\iint f(y)e^{-2\pi iy\cdot\xi}e^{-2\pi ix\cdot\xi}\,dy\,d\xi
-=\int f(y)\Bigl(\int e^{-2\pi i(x+y)\cdot\xi}d\xi\Bigr)dy ,
+\mathcal F^2f(x)=\int \mathcal Ff(\xi)\exp(-2\pi ix\cdot\xi)\,d\xi
+=\iint f(y)\exp(-2\pi iy\cdot\xi)\exp(-2\pi ix\cdot\xi)\,dy\,d\xi
+=\int f(y)\Bigl(\int \exp(-2\pi i(x+y)\cdot\xi)d\xi\Bigr)dy ,
 $$
 and the inner integral is the delta distribution at $x+y$, so it selects $y=-x$ and $\mathcal F^2f=f(-x)$.
 Both sides extend to $L^2$ by continuity and density. Then $\mathcal F^4=(\mathcal F^2)^2=P^2=\mathrm{id}$,
@@ -115,7 +115,7 @@ Spaces*, later in this Part.
 **Definition.** On $\mathbb R$ the **Hermite functions** are obtained from the Gaussian by the operators of
 multiplication by $x$ and of differentiation,
 $$
-h_k(x)=\frac{(-1)^k}{(2^kk!\sqrt\pi)^{1/2}}e^{\pi x^2}\frac{d^k}{dx^k}\bigl(e^{-2\pi x^2}\bigr),
+h_k(x)=\frac{(-1)^k}{(2^kk!\sqrt\pi)^{1/2}}\exp(\pi x^2)\frac{d^k}{dx^k}\bigl(\exp(-2\pi x^2)\bigr),
 \qquad k=0,1,2,\dots,
 $$
 and on $\mathbb R^n$ the product functions $h_\alpha(x)=h_{\alpha_1}(x_1)\cdots h_{\alpha_n}(x_n)$, for
@@ -139,7 +139,7 @@ $$
 $\mathcal F(xf)=-\frac1{2\pi i}\partial_x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
 annihilation operators $x\pm\frac1{2\pi}\frac{d}{dx}$ which raise and lower $k$, hence that $\mathcal F$
 carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by the Gaussian computation
-$\mathcal F(e^{-\pi x^2})=e^{-\pi x^2}$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
+$\mathcal F(\exp(-\pi x^2))=\exp(-\pi x^2)$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
 commutation with the raising operator multiplies the eigenvalue by $-i$ at each step, giving
 $\mathcal Fh_k=(-i)^kh_k$. In $n$ variables the eigenvalue of $h_\alpha$ is the product of the one-variable
 eigenvalues along the coordinates, $(-i)^{\lvert\alpha\rvert}$.
@@ -172,19 +172,19 @@ becomes an algebraic one.
 
 ### Translation and Convolution Become Multiplication
 
-**Theorem.** For the translation $\tau_y$ and the character $\chi_y(\xi)=e^{-2\pi iy\cdot\xi}$ one has
+**Theorem.** For the translation $\tau_y$ and the character $\chi_y(\xi)=\exp(-2\pi iy\cdot\xi)$ one has
 $$
 \mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y} ,
 $$
 and for $k\in L^1(\mathbb R^n)$, with $T_k$ the convolution operator of the previous article,
 $$
-\mathcal FT_k\mathcal F^{-1}=M_{\hat k},\qquad \mathcal F^{-1}T_m\mathcal F=M_m
+\mathcal FT_k\mathcal F^{-1}=M_{\mathcal F k},\qquad \mathcal F^{-1}T_m\mathcal F=M_m
 $$
 for the multiplier operator $T_m$.
 
-**Proof.** $\mathcal F(\tau_yf)=\widehat{f(\cdot-y)}=\chi_y\mathcal Ff$ is the translation identity of the
-Fourier article and gives the first formula; the convolution theorem $\widehat{k*f}=\hat k\hat f$ gives
-$T_k=\mathcal F^{-1}M_{\hat k}\mathcal F$, and the multiplier operator is defined by
+**Proof.** $\mathcal F(\tau_yf)=\mathcal F(f(\cdot-y))=\chi_y\mathcal Ff$ is the translation identity of the
+Fourier article and gives the first formula; the convolution theorem $\mathcal F(k*f)=\mathcal F k\,\mathcal F f$ gives
+$T_k=\mathcal F^{-1}M_{\mathcal F k}\mathcal F$, and the multiplier operator is defined by
 $T_m=\mathcal F^{-1}M_m\mathcal F$.
 
 **Corollary.** Conjugation by $\mathcal F$ is a unitary isomorphism of the algebra of translation-invariant
@@ -205,7 +205,7 @@ $$
 \qquad f\in\ell^2(G),
 $$
 and the characters form an orthonormal basis of $\ell^2(G)$, so $\mathcal F$ is a unitary operator. For
-$G=\mathbb Z/N\mathbb Z$ it is the matrix with entries $N^{-1/2}\omega^{jk}$, $\omega=e^{-2\pi i/N}$, which
+$G=\mathbb Z/N\mathbb Z$ it is the matrix with entries $N^{-1/2}\omega^{jk}$, $\omega=\exp(-2\pi i/N)$, which
 is symmetric, and its square is the reversal of the coordinates, so $\mathcal F^2=P$ and
 $\mathcal F^4=\mathrm{id}$ exactly as on $\mathbb R^n$. This is the finite model of the theory: the four
 eigenvalues, the order-four structure and the diagonalisation by characters are all visible in an
@@ -219,15 +219,15 @@ structure is the one the integral transform shares.
 ### The Group $\mathbb Z$ and the Circle
 
 **Example ($\mathbb Z$ and $\mathbb T$).** On $\ell^2(\mathbb Z)$ the transform to $L^2(\mathbb T)$ is
-$(\mathcal Fa)(\theta)=\sum_{n\in\mathbb Z}a_ne^{-2\pi in\theta}$, a unitary isomorphism by Parseval for
+$(\mathcal Fa)(\theta)=\sum_{n\in\mathbb Z}a_n\exp(-2\pi in\theta)$, a unitary isomorphism by Parseval for
 Fourier series; its inverse is the coefficient map. The shift of *Convolution Operators* becomes
-multiplication by $e^{-2\pi i\theta}$, and a convolution operator becomes multiplication by a function on
+multiplication by $\exp(-2\pi i\theta)$, and a convolution operator becomes multiplication by a function on
 the circle. The same dictionary of this article — order four, diagonalisation, equivalence of translation
 and multiplication — holds verbatim, with the Hermite basis replaced by the characters.
 
 ## Summary
 
-The Fourier operator $\mathcal Ff(\xi)=\int f(x)e^{-2\pi ix\cdot\xi}dx$ extends from the Schwartz class to
+The Fourier operator $\mathcal Ff(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$ extends from the Schwartz class to
 a unitary operator of $L^2(\mathbb R^n)$, isometric for the inner product, with inverse the conjugate
 transform. It has order four: $\mathcal F^2=P$ is parity and $\mathcal F^4=\mathrm{id}$, so its spectrum
 lies in the fourth roots of unity, and it is diagonalised in the Hermite basis by
@@ -243,14 +243,14 @@ $\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place o
 | Symbol | Meaning |
 |---|---|
 | $\mathcal F$, $\overline{\mathcal F}$ | Fourier operator and its conjugate |
-| $\check g$ | Inverse transform, $\check g(x)=\int g(\xi)e^{2\pi ix\cdot\xi}d\xi$ |
+| $\check g$ | Inverse transform, $\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$ |
 | $P$ | Parity, $(Pf)(x)=f(-x)$; $\mathcal F^2=P$ |
 | $h_\alpha$ | Hermite functions, orthonormal basis with $\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$ |
 | $D_j$ | $\frac1{2\pi i}\partial_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$ |
 | $M_{x_j}$, $M_m$ | Multiplication operators |
 | $\tau_y$, $\chi_y$ | Translation and character, $\mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y}$ |
 | $T_k$, $T_m$ | Convolution operator and multiplier operator |
-| $\omega$ | $e^{-2\pi i/N}$, the primitive $N$-th root of the finite transform |
+| $\omega$ | $\exp(-2\pi i/N)$, the primitive $N$-th root of the finite transform |
 
 ## Further Reading
 

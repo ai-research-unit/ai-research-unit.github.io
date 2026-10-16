@@ -13,7 +13,7 @@ The Clifford algebra and its two-sided operators are *Two-Sided Operators on a C
 
 ### The Four Operators
 
-**Definition.** Let $\theta$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,q)$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be a unit. The **two-sided operator** with left twist $\theta$ and right factor $\rho$ is
+**Definition.** Let $\theta$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,\mathfrak{Q})$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be a unit. The **two-sided operator** with left twist $\theta$ and right factor $\rho$ is
 
 $$
 \Phi^{\theta,\rho}_{x}(y) = \theta(x)\,y\,\rho(x) .

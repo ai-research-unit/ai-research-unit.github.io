@@ -274,10 +274,10 @@ the **Gauss norm** of $f$ at the radius $r$. Then $\lVert f \rVert_r = \lVert f 
 **Proof sketch.** The inequality $\lVert f \rVert_r \leq \lVert f \rVert_G$ is the ultrametric inequality applied term by term at each point of the disc. For the reverse, let $F_0$ be the finite set of indices at which $\lvert a_n \rvert r^n$ is maximal and let
 
 $$
-P(\xi) = \sum_{n \in F_0} \tilde{a}_n \xi^n \in k[\xi] ,
+P(\xi) = \sum_{n \in F_0} a^{\mathrm{res}}_n \xi^n \in k[\xi] ,
 $$
 
-with $\tilde{a}_n$ the reduction of $a_n$; the polynomial $P$ is nonzero, its coefficient at $N = \max F_0$ being the unit $\tilde{a}_N$, so it has at most $\deg P$ roots and an infinite residue field contains a $\xi$ with $P(\xi) \neq 0$. Choose $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$, which exists whenever $r$ lies in the value group. At $x_0$ the terms of index in $F_0$ all have absolute value $\lVert f \rVert_G$ and their sum is $a_N x_0^N P(\xi)/\tilde{a}_N$, of absolute value $\lVert f \rVert_G$ because $P(\xi) \neq 0$; every term of index outside $F_0$ is strictly smaller; hence $\lvert f(x_0) \rvert = \lVert f \rVert_G$ by the equality case of the ultrametric inequality.
+with $a^{\mathrm{res}}_n$ the reduction of $a_n$; the polynomial $P$ is nonzero, its coefficient at $N = \max F_0$ being the unit $a^{\mathrm{res}}_N$, so it has at most $\deg P$ roots and an infinite residue field contains a $\xi$ with $P(\xi) \neq 0$. Choose $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$, which exists whenever $r$ lies in the value group. At $x_0$ the terms of index in $F_0$ all have absolute value $\lVert f \rVert_G$ and their sum is $a_N x_0^N P(\xi)/a^{\mathrm{res}}_N$, of absolute value $\lVert f \rVert_G$ because $P(\xi) \neq 0$; every term of index outside $F_0$ is strictly smaller; hence $\lvert f(x_0) \rvert = \lVert f \rVert_G$ by the equality case of the ultrametric inequality.
 
 **Remark (necessity of the hypothesis).** The identity fails over a finite residue field. Over $\mathbb{Q}_2$ and at $r = 1$ the series $f(x) = x + x^2$ has $\lVert f \rVert_G = 1$, while $\lvert x + x^2 \rvert = \lvert x \rvert\lvert 1 + x \rvert \leq \tfrac12$ for every $\lvert x \rvert \leq 1$: the two maximal coefficients cancel modulo the maximal ideal, since $1 + x$ is divisible by $2$ whenever $x$ is odd. The identity is restored over an extension with infinite residue field, the Gauss norm being unchanged by the extension.
 

@@ -92,7 +92,7 @@ $$
 
 Four functions satisfy this, one for each coordinate direction, so the gauge freedom is **not** exhausted by the harmonic condition. It is a residual gauge freedom of the same kind that the Lorenz condition leaves in electromagnetism, where the condition is preserved by $\Box\Gamma = 0$. A count that imposes harmonic gauge and then declares the remaining six components physical has used the gauge freedom twice in the wrong order: the six components include the four that the residual freedom still moves.
 
-For a plane wave there is an instructive simplification. Writing $\xi_\nu = \varepsilon_\nu e^{ik_\lambda x^\lambda}$, the preservation condition is $k^2\varepsilon_\nu = 0$, and for a lightlike wave vector $k^2 = 0$ it holds for every $\varepsilon_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.
+For a plane wave there is an instructive simplification. Writing $\xi_\nu = \varepsilon_\nu \exp(ik_\lambda x^\lambda)$, the preservation condition is $k^2\varepsilon_\nu = 0$, and for a lightlike wave vector $k^2 = 0$ it holds for every $\varepsilon_\nu$; every residual gauge function is available for a plane wave. This is the case on which the count below is computed.
 
 ## Counting the Physical Degrees of Freedom
 
@@ -187,10 +187,10 @@ The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}
 
 $$
 h_{ij}^{\mathrm{TT}}(t,\vec x) = \frac{2G}{c^4 r}\,\ddot{Q}_{ij}^{\mathrm{TT}}(t - r/c), \qquad
-Q_{ij} = \int \rho(\vec x')\left(x'_ix'_j - \tfrac{1}{3}r'^2\delta_{ij}\right)d^3x',
+\Theta_{ij} = \int \rho(\vec x')\left(x'_ix'_j - \tfrac{1}{3}r'^2\delta_{ij}\right)d^3x',
 $$
 
-where $r = |\vec x|$, $Q_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
+where $r = |\vec x|$, $\Theta_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
 
 **No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $\dot{M} = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $\dot{d}_i = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $\ddot{d}_i = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
 
@@ -206,14 +206,14 @@ $$
 P = \frac{G}{5c^5}\left\langle \dddot{I}_{ij}\dddot{I}_{ij} - \tfrac{1}{3}\left(\dddot{I}_{kk}\right)^2 \right\rangle,
 $$
 
-which reduces to the traceless form because $I_{ij} = Q_{ij} + \tfrac13\delta_{ij}I_{kk}$.
+which reduces to the traceless form because $I_{ij} = \Theta_{ij} + \tfrac13\delta_{ij}I_{kk}$.
 
 **The prefactor, verified on the binary.** The equal-mass circular binary is the standard check. Two masses $m$ in a circular orbit of radius $R$ (separation $d = 2R$) at angular frequency $\omega$ have the traceless quadrupole
 
 $$
-Q_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega t, \qquad
-Q_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega t, \qquad
-Q_{xy} = mR^2\sin 2\omega t,
+\Theta_{xx} = \frac{mR^2}{3} + mR^2\cos 2\omega t, \qquad
+\Theta_{yy} = \frac{mR^2}{3} - mR^2\cos 2\omega t, \qquad
+\Theta_{xy} = mR^2\sin 2\omega t,
 $$
 
 whose third derivatives give $\dddot{Q}_{ij}\dddot{Q}_{ij} = 128\,m^2R^4\omega^6$, a constant. Then
@@ -267,7 +267,7 @@ $$
 
 Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a **complex pure vector** — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{e_k, ie_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a **field strength** built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the *field strength* sits in the bivector subspace, the *potential* sits in $\mathbb{M}_-$, and the *graviton itself* sits in no sector of the algebra at all.
 
-**The source and the quadrupole moment.** The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $Q_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}Q_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}Q_{ij})e_0 = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.
+**The source and the quadrupole moment.** The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $\Theta_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}\Theta_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}\Theta_{ij})e_0 = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.
 
 ## What the Algebra Supplies and What It Does Not
 
@@ -283,7 +283,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 1. **A biquaternionic handle on the polarization count.** The main text states plainly that the algebra supplies no natural handle on the reduction $6 \to 2$. The framework does, however, contain the Lorentz group and its representations, and a lightlike wave vector has a nonzero stabiliser in it. Is the little group of the null direction — together with the representations the framework's Lorentz-group structure already carries — enough to produce the helicity $\pm2$ algebraically, without importing the little-group argument from the standard theory? If it is, the count would be a framework result rather than a transcription; if it is not, the reason would be worth stating as sharply as the absence.
 
-2. **A faithful biquaternion carrier of the quadrupole moment.** No single biquaternion carries the symmetric traceless $Q_{ij}$: the natural packaging collapses it to its vanishing trace, exactly as it collapses $h_{\mu\nu}$ to the trace that does not propagate. The electromagnetic energy–momentum tensor is carried not by a single biquaternion but by a bilinear, and the exercise on that object shows how. Is the same true of $Q_{ij}$ — is there a bilinear of two $\mathbb{M}_-$ elements, or of a matter field, whose symmetric traceless part is the quadrupole moment and whose transformation under the Lorentz group is correct? A positive answer would give the framework a place to stand in the generation problem; a negative answer would explain why the quadrupole formula resists transcription into a single algebra element.
+2. **A faithful biquaternion carrier of the quadrupole moment.** No single biquaternion carries the symmetric traceless $\Theta_{ij}$: the natural packaging collapses it to its vanishing trace, exactly as it collapses $h_{\mu\nu}$ to the trace that does not propagate. The electromagnetic energy–momentum tensor is carried not by a single biquaternion but by a bilinear, and the exercise on that object shows how. Is the same true of $\Theta_{ij}$ — is there a bilinear of two $\mathbb{M}_-$ elements, or of a matter field, whose symmetric traceless part is the quadrupole moment and whose transformation under the Lorentz group is correct? A positive answer would give the framework a place to stand in the generation problem; a negative answer would explain why the quadrupole formula resists transcription into a single algebra element.
 
 3. **The retarded solution and the null cone.** The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \ddot{Q}_{ij}^{\mathrm{TT}}$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.
 
@@ -327,7 +327,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $k^\mu = (\omega/c)(1,0,0,1)$, $k^\mu k_\mu = 0$ | Wave vector along $+z$ and its null condition |
 | $R_{\mu\nu\rho\sigma}$, $R_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{R}_{\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}^\rho\varepsilon^\sigma$ | Curvature as a bivector-valued two-form |
-| $Q_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
+| $\Theta_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
 | $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}\ddot{Q}_{ij}^{\mathrm{TT}}$, $P = \tfrac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ | Quadrupole amplitude and power |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula of the informational sector |
 

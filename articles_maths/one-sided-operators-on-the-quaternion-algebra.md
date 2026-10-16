@@ -24,13 +24,13 @@ The one-sided operators are the left and the right multiplications, $L_{\tilde a
 
 ## The Adjoints and the Association that Swaps the Families
 
-**Theorem.** With respect to the plain form $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$,
+**Theorem.** With respect to the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$,
 
 $$
 L_{\tilde a}^{\sim}=R_{\tilde a},\qquad R_{\tilde b}^{\sim}=L_{\tilde b}.
 $$
 
-*Proof.* $\mathrm B(\tilde a\tilde p,\tilde q)=\mathrm{Sc}(\tilde a\tilde p\tilde q)=\mathrm{Sc}(\tilde p\tilde q\tilde a)=\mathrm B(\tilde p,\tilde q\tilde a)$ by the cyclic invariance of the association functional, which is *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the second identity is the mirror.
+*Proof.* $\langle\tilde a\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde a\tilde p\tilde q)=\mathrm{Sc}(\tilde p\tilde q\tilde a)=\langle\tilde p,\tilde q\tilde a\rangle$ by the cyclic invariance of the association functional, which is *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the second identity is the mirror.
 
 **Corollary (the association).** The transpose is an anti-isomorphism $\mathcal L\to\mathcal R$, $L_{\tilde a}\mapsto R_{\tilde a}$, and it is the identity on the scalars; it is the operator-level form of the association that exchanges the two factors of a product.
 
@@ -96,7 +96,7 @@ The left and right multiplications of $\mathbb{H}$ are two four-dimensional fami
 | $\mathcal L,\mathcal R$ | The two four-dimensional families |
 | $T^{\sim}$ | Transpose with respect to $\mathrm B$ |
 | $\operatorname{ad}_{\tilde a}=L_{\tilde a}-R_{\tilde a}$ | Inner derivation |
-| $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ | The plain form |
+| $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ | The plain form |
 
 ## Further Reading
 

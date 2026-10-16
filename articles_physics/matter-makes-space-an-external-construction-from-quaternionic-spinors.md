@@ -57,7 +57,7 @@ In the alternative complex $2\times2$ interpretation with the basis $\{1,\sigma_
 The heart of the construction is the source's Section 4. With $\kappa \equiv 8\pi G$ the source defines three bilinear composites,
 
 $$
-e^a{}_\mu = \kappa^{-1}\,\mathrm{ReTr}_{\text{spinor}}\bigl(\bar\Psi\gamma^a\partial_\mu\Psi\bigr) ,
+\exp(a){}_\mu = \kappa^{-1}\,\mathrm{ReTr}_{\text{spinor}}\bigl(\bar\Psi\gamma^a\partial_\mu\Psi\bigr) ,
 $$
 
 $$
@@ -74,13 +74,13 @@ and identifies them with the tetrad, the torsion tensor and the contorsion. It t
 
 **The printed contorsion–torsion relation has the wrong index order.** The source prints $K^{ab}{}_\mu = \tfrac12 T_{\mu ab} - T_{ab\mu} + T_{ba\mu}$ (the grouping is the source's). The relation that is exact for a totally antisymmetric torsion is $K_{\mu ab} = \tfrac12(T_{\mu ab} - T_{ab\mu} + T_{b\mu a})$, the third term with the order $b\mu a$. With total antisymmetry, $T_{ba\mu} = -T_{b\mu a}$, so the printed relation has the sign of its third term reversed; the error was checked and is nonzero even in the totally antisymmetric case the source uses.
 
-**The composite tetrad vanishes on the free Dirac solutions.** This is the decisive failure of the section. For a plane wave $\Psi = u\,e^{ik\cdot x}$ with constant $u$, the derivative gives $\partial_\mu\Psi = ik_\mu\Psi$, so
+**The composite tetrad vanishes on the free Dirac solutions.** This is the decisive failure of the section. For a plane wave $\Psi = \psi\,\exp(ik\cdot x)$ with constant $\psi$, the derivative gives $\partial_\mu\Psi = ik_\mu\Psi$, so
 
 $$
-e^a{}_\mu = \kappa^{-1}\mathrm{ReTr}_{\text{spinor}}\bigl(\bar u\,\gamma^a u\bigr)\,i k_\mu = \kappa^{-1}k_\mu\,\mathrm{Re}\bigl(i\,\bar u\gamma^a u\bigr) .
+\exp(a){}_\mu = \kappa^{-1}\mathrm{ReTr}_{\text{spinor}}\bigl(\bar \psi\,\gamma^a \psi\bigr)\,i k_\mu = \kappa^{-1}k_\mu\,\mathrm{Re}\bigl(i\,\bar \psi\gamma^a \psi\bigr) .
 $$
 
-The vector current $\bar u\gamma^a u$ is real for any Dirac spinor, so its real part times $i$ vanishes identically. The composite tetrad is therefore **zero** for every plane-wave spinor, verified here to $8\times 10^{-17}$ on four independent spinors, and the induced metric $g_{\mu\nu} = \eta_{ab}e^a{}_\mu e^b{}_\nu$ is the zero metric. The construction does not merely fail to be a tetrad — it assigns no geometry at all to the free Dirac field, which is the only field the paper's action contains before the constraints are imposed. No check in the paper detects this, and Section 4.2's "Example verification" does not evaluate Eq. (4).
+The vector current $\bar \psi\gamma^a \psi$ is real for any Dirac spinor, so its real part times $i$ vanishes identically. The composite tetrad is therefore **zero** for every plane-wave spinor, verified here to $8\times 10^{-17}$ on four independent spinors, and the induced metric $g_{\mu\nu} = \eta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ is the zero metric. The construction does not merely fail to be a tetrad — it assigns no geometry at all to the free Dirac field, which is the only field the paper's action contains before the constraints are imposed. No check in the paper detects this, and Section 4.2's "Example verification" does not evaluate Eq. (4).
 
 **The defined torsion has no time–space components.** A third of the torsion components are identically zero. The object the same section matches it to, $\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$, is *totally antisymmetric* and has exactly those components nonzero. So Eq. (5) and the Einstein–Cartan matching of Section 4.4 contradict each other, and it is the matching that carries the claim that the source reproduces Einstein–Cartan.
 
@@ -89,13 +89,13 @@ The vector current $\bar u\gamma^a u$ is real for any Dirac spinor, so its real 
 **The constrained action does not constrain.** The master action of Section 5,
 
 $$
-S = \int d^4x\, e\left[\frac{1}{2\kappa}e^a{}_\mu e^b{}_\nu R^{\mu\nu}{}_{ab}(e,K) + \bar\Psi\bigl(i\gamma^a e^a{}_\mu D_\mu(e,K)\Psi - m\bar\Psi\Psi\bigr) + L_{\text{constr}}\right] ,
+S = \int d^4x\, e\left[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu R^{\mu\nu}{}_{ab}(e,K) + \bar\Psi\bigl(i\gamma^a \exp(a){}_\mu D_\mu(e,K)\Psi - m\bar\Psi\Psi\bigr) + L_{\text{constr}}\right] ,
 $$
 
 adds the constraint Lagrangian
 
 $$
-L_{\text{constr}} = \lambda^a{}_\mu\bigl(e^a{}_\mu - e^a{}_\mu[\Psi]\bigr) + \Lambda^{ab}{}_\mu\bigl(K_\mu{}^{ab} - K_\mu{}^{ab}[\Psi]\bigr) ,
+L_{\text{constr}} = \lambda^a{}_\mu\bigl(\exp(a){}_\mu - \exp(a){}_\mu[\Psi]\bigr) + \Lambda^{ab}{}_\mu\bigl(K_\mu{}^{ab} - K_\mu{}^{ab}[\Psi]\bigr) ,
 $$
 
 with the composite expressions of Section 4 on the right. Variation with respect to the multipliers returns $e = e[\Psi]$ and $K = K[\Psi]$, which the source describes as enforcing "our composite ansätze once and for all". But those equations are the *definitions* of $e[\Psi]$ and $K[\Psi]$; a "constraint" that repeats a definition removes no degree of freedom, and substituting it back into the action replaces the tetrad by a first derivative of the spinor, making the gravitational term higher-derivative in $\Psi$ rather than giving the Palatini system the source claims. The multipliers are then not eliminated: the metric variation carries
@@ -108,7 +108,7 @@ in the source's own notation, which is a factor $2\kappa = 16\pi G$ rather than 
 
 ## The Teleparallel Sector
 
-Section 9.1 adds a Lagrange multiplier $\Theta^{ab}{}_{\mu\nu}$ enforcing $R^{ab}{}_{\mu\nu}(\omega) = 0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega^{ab}{}_\mu = 0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K^{ab}{}_\mu = -\omega^{ab}{}_\mu(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\partial_\mu e^a{}_\nu$ is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
+Section 9.1 adds a Lagrange multiplier $\Theta^{ab}{}_{\mu\nu}$ enforcing $R^{ab}{}_{\mu\nu}(\omega) = 0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega^{ab}{}_\mu = 0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K^{ab}{}_\mu = -\omega^{ab}{}_\mu(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\partial_\mu \exp(a){}_\nu$ is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
 What is *not* correct is what the source puts into that identity. The contrapositive of the teleparallel gauge condition is that the contorsion — hence, through Eq. (6), the spinor bilinear $\kappa\,\mathrm{ReTr}_{\text{spinor}}(\bar\Psi\gamma^{[a}\gamma^{b]}\partial_\mu\Psi)$ — must equal $-\omega^{ab}{}_\mu(e)$ of the *composite* tetrad. That is an over-determined differential equation on $\Psi$, not a consequence of anything, since the composite tetrad of Eq. (4) vanishes on the free solutions and takes no values at all in the case where the constraint is to be imposed. The teleparallel section therefore rests on the same composite that fails above.
 
@@ -221,7 +221,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $\Psi$, $\bar\Psi$ | the source's bi-quaternionic spinor and its Dirac adjoint |
 | $q^\mu$ | the quaternion units, $q^0 = 1$, $q^k = -i\sigma^k$ |
 | $\kappa = 8\pi G$ | the source's single coupling, used with both signs of power |
-| $e^a{}_\mu$ | the source's composite tetrad, Eq. (4) |
+| $\exp(a){}_\mu$ | the source's composite tetrad, Eq. (4) |
 | $T^\rho{}_{\mu\nu}$ | the source's composite torsion, Eq. (5) |
 | $K^{ab}{}_\mu$ | the source's composite contorsion, Eq. (6) |
 | $\sigma^\rho{}_{\mu\nu} = \bar\Psi\gamma^{[\rho}\gamma_\mu\gamma_{\nu]}\Psi$ | the standard Einstein–Cartan spin density |

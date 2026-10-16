@@ -10,10 +10,10 @@ The Clifford algebra and its grading are *Clifford Algebras* and *Clifford Algeb
 
 ## Clifford Modules and the Signed Action
 
-**Definition.** A **Clifford module** is a vector space $S$ with an action of $\mathrm{Cl}(V,q)$ by $F$-linear maps, $x\otimes s\mapsto x\cdot s$, respecting the algebra structure. Its **signed action** is
+**Definition.** A **Clifford module** is a vector space $S$ with an action of $\mathrm{Cl}(V,\mathfrak{Q})$ by $F$-linear maps, $x\otimes s\mapsto x\cdot s$, respecting the algebra structure. Its **signed action** is
 
 $$
-x \cdot_{\alpha} s = \alpha(x)\cdot s, \qquad x \in \mathrm{Cl}(V,q),\ s \in S .
+x \cdot_{\alpha} s = \alpha(x)\cdot s, \qquad x \in \mathrm{Cl}(V,\mathfrak{Q}),\ s \in S .
 $$
 
 **Proposition.** The signed action makes $S$ into a Clifford module, denoted $S^{\alpha}$ and called the **twist** of $S$ by $\alpha$, and the identity map on the underlying space is an isomorphism of $F$-vector spaces carrying the signed action to the ordinary one. On a homogeneous element the signed action is $x\cdot_{\alpha} s = (-1)^{|x|}x\cdot s$.
@@ -28,7 +28,7 @@ $$
 
 ## The Twist by an Automorphism
 
-**Definition.** For an algebra automorphism $\theta$ of $\mathrm{Cl}(V,q)$ and a module $S$, the **twist** $S^{\theta}$ is the module with the action $x\cdot_{\theta}s = \theta(x)\cdot s$.
+**Definition.** For an algebra automorphism $\theta$ of $\mathrm{Cl}(V,\mathfrak{Q})$ and a module $S$, the **twist** $S^{\theta}$ is the module with the action $x\cdot_{\theta}s = \theta(x)\cdot s$.
 
 **Proposition (the criterion for isomorphism).** The twist $S^{\theta}$ is isomorphic to $S$ for every module $S$ if $\theta$ is inner, that is $\theta = \mathrm{Ad}_u$ for a unit $u$; the isomorphism is the operator of $u$ on $S$. If $\theta$ is not inner, there are modules for which $S^{\theta}$ is not isomorphic to $S$; and if $\theta$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.
 
@@ -43,18 +43,18 @@ $$
 **Theorem.** Let $\dim V = n$ be **even**, and let $\omega = e_1\cdots e_n$ be the volume element. Then $\omega$ is even, it is a unit with $\omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_i) \in F^{\times}$, and it implements the grade involution:
 
 $$
-\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,q).
+\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,\mathfrak{Q}).
 $$
 
 Consequently $\alpha$ is an inner automorphism in even dimension, the signed action is the ordinary action conjugated by the operator of $\omega$ on the module, and $S^{\alpha}\cong S$ for every Clifford module $S$. For the spinor module the operator of $\omega$ is the **chirality operator** $\Gamma_S$, and the signed action is $\Gamma_S\,x\,\Gamma_S^{-1}$.
 
-**Proof.** For a vector $v$, $\omega v\omega^{-1} = (-1)^{n-1}v = -v$ because $n$ is even, so $v\omega = -\omega v$ and $\omega v\omega^{-1} = -v$; since $v\mapsto -v$ extends to the unique automorphism $\alpha$ and both sides of the identity are automorphisms agreeing on the generators, they agree everywhere. The unit condition and the isomorphism are the preceding criterion, and the identification with the chirality is the definition of the chirality operator of a spinor module.
+**Proof.** For a vector $b$, $\omega b\omega^{-1} = (-1)^{n-1}b = -b$ because $n$ is even, so $b\omega = -\omega b$ and $\omega b\omega^{-1} = -b$; since $b\mapsto -b$ extends to the unique automorphism $\alpha$ and both sides of the identity are automorphisms agreeing on the generators, they agree everywhere. The unit condition and the isomorphism are the preceding criterion, and the identification with the chirality is the definition of the chirality operator of a spinor module.
 
 **Corollary (the grading is internal in even dimension).** In even dimension the graded structure of every Clifford module is detected by an operator of the algebra: the chirality $\Gamma_S = \omega\big|_S$ commutes with the even part, is invertible, and satisfies $\Gamma_S^{2} = \omega^{2}$, a scalar. Where that scalar is a square the eigenspaces of $\Gamma_S$ are the two chiral halves of $S$; in general the chirality grades the module over the extension of $F$ in which $\omega^{2}$ has a square root, and the signed action is the conjugation by this grading operator, so the sign rule of the graded operators is implemented inside the module and not merely declared.
 
 ### The Odd Dimension
 
-**Theorem.** Let $n$ be **odd** and let $\omega$ be the volume element. Then $\omega$ is central and odd, it lies in the centre $F\oplus F\omega$, and $\alpha(\omega) = -\omega$. The conjugation by $\omega$ is the identity on the algebra and hence does **not** implement $\alpha$; the grade involution is an **outer** automorphism, and it exchanges the two simple modules of $\mathrm{Cl}(V,q)$, sending a minimal left ideal $I$ to a minimal left ideal $I^{\alpha}$ carrying the other simple module.
+**Theorem.** Let $n$ be **odd** and let $\omega$ be the volume element. Then $\omega$ is central and odd, it lies in the centre $F\oplus F\omega$, and $\alpha(\omega) = -\omega$. The conjugation by $\omega$ is the identity on the algebra and hence does **not** implement $\alpha$; the grade involution is an **outer** automorphism, and it exchanges the two simple modules of $\mathrm{Cl}(V,\mathfrak{Q})$, sending a minimal left ideal $I$ to a minimal left ideal $I^{\alpha}$ carrying the other simple module.
 
 **Proof.** $\omega$ is central in odd dimension by *Clifford Algebras in Finite Dimensions*, and $\alpha(\omega) = (-1)^{n}\omega = -\omega$. If $\alpha = \mathrm{Ad}_u$ then $\mathrm{Ad}_u(\omega) = \omega$ because $\omega$ is central, but $\alpha(\omega) = -\omega \neq \omega$, so $\alpha$ is not inner. The simple modules of the centre are distinguished by the scalar by which $\omega$ acts, and when $\omega^{2} = 1$ these scalars are the two signs $\pm1$; twisting by $\alpha$ changes the sign of that scalar and therefore exchanges the classes, and when the centre $F\oplus F\omega$ is a field the corresponding statement is the exchange of the two embeddings of that field.
 
@@ -64,7 +64,7 @@ Consequently $\alpha$ is an inner automorphism in even dimension, the signed act
 
 ### The Even Case $\mathrm{Cl}_{1,1}(\mathbb{R})$
 
-With $e_1^{2} = 1$, $e_2^{2} = -1$ the algebra is $M_2(\mathbb{R})$ and $\omega = e_1e_2$ has $\omega^{2} = -1$. For a vector $v$, $\omega v\omega^{-1} = -v$; the endomorphism $\omega$ of the module $\mathbb{R}^2$ has square $-1$, so it has no real eigenspaces and the chiral halves appear over $\mathbb{C}$, where the two eigenspaces of $\omega$ split the complexified module. The signed action is the conjugation by that endomorphism, hence isomorphic to the ordinary action.
+With $e_1^{2} = 1$, $e_2^{2} = -1$ the algebra is $M_2(\mathbb{R})$ and $\omega = e_1e_2$ has $\omega^{2} = -1$. For a vector $b$, $\omega b\omega^{-1} = -b$; the endomorphism $\omega$ of the module $\mathbb{R}^2$ has square $-1$, so it has no real eigenspaces and the chiral halves appear over $\mathbb{C}$, where the two eigenspaces of $\omega$ split the complexified module. The signed action is the conjugation by that endomorphism, hence isomorphic to the ordinary action.
 
 ### The Odd Case $\mathrm{Cl}_{0,3}(\mathbb{R})$
 
@@ -76,7 +76,7 @@ In $\mathrm{Cl}_{3,1}(\mathbb{R})$ with $e_1^{2} = e_2^{2} = e_3^{2} = 1$ and $e
 
 ## Summary
 
-The **signed action** on a Clifford module is $x\cdot_{\alpha}s = \alpha(x)\cdot s$; it makes the module into the twist $S^{\alpha}$ by the grade involution and equals the ordinary action with the sign $(-1)^{|x|}$ on an odd element; it agrees with the ordinary action on the even part. Whether $S^{\alpha}$ is isomorphic to $S$ is decided by whether $\alpha$ is inner. It is inner in **even** dimension: the volume element $\omega$ is even with $\omega v\omega^{-1} = -v$, so $\alpha = \mathrm{Ad}_{\omega}$, the signed action is the conjugation by the **chirality operator** $\Gamma_S = \omega\big|_S$, and the twisted module is isomorphic to the original. It is outer in **odd** dimension: $\omega$ is central and odd with $\alpha(\omega) = -\omega$, so no unit implements $\alpha$, and the signed action **exchanges the two simple modules**, which are distinguished by the sign of $\omega$. This is the compatibility of the signed action with the grading: in even dimension the grading is an operator inside the module and the signed action is its conjugation, while in odd dimension the grading is the centre and the signed action permutes the two chiralities instead of conjugating one of them. The module theory is *Left Multiplication and the Clifford Module Structure* and *The One-Sided Action and the Spin Representation*; the graded operators are *The Graded Multiplication Operators*.
+The **signed action** on a Clifford module is $x\cdot_{\alpha}s = \alpha(x)\cdot s$; it makes the module into the twist $S^{\alpha}$ by the grade involution and equals the ordinary action with the sign $(-1)^{|x|}$ on an odd element; it agrees with the ordinary action on the even part. Whether $S^{\alpha}$ is isomorphic to $S$ is decided by whether $\alpha$ is inner. It is inner in **even** dimension: the volume element $\omega$ is even with $\omega b\omega^{-1} = -b$, so $\alpha = \mathrm{Ad}_{\omega}$, the signed action is the conjugation by the **chirality operator** $\Gamma_S = \omega\big|_S$, and the twisted module is isomorphic to the original. It is outer in **odd** dimension: $\omega$ is central and odd with $\alpha(\omega) = -\omega$, so no unit implements $\alpha$, and the signed action **exchanges the two simple modules**, which are distinguished by the sign of $\omega$. This is the compatibility of the signed action with the grading: in even dimension the grading is an operator inside the module and the signed action is its conjugation, while in odd dimension the grading is the centre and the signed action permutes the two chiralities instead of conjugating one of them. The module theory is *Left Multiplication and the Clifford Module Structure* and *The One-Sided Action and the Spin Representation*; the graded operators are *The Graded Multiplication Operators*.
 
 ## Summary of Notation
 

@@ -13,9 +13,9 @@ The article assumes the manifold theory, the tangent space and the differential,
 
 ### Critical Points and Regular Values
 
-**Definition.** Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$. A point $p \in M$ is a **critical point** of $F$ if the differential $dF_p : T_pM \to T_{F(p)}N$ is not surjective, and a **regular point** otherwise. The image $F(p)$ of a critical point is a **critical value**, and a point of $N$ that is not a critical value is a **regular value**; every point of $N \setminus F(M)$ is a regular value vacuously.
+**Definition.** Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$. A point $n \in M$ is a **critical point** of $F$ if the differential $dF_p : T_pM \to T_{F(n)}N$ is not surjective, and a **regular point** otherwise. The image $F(n)$ of a critical point is a **critical value**, and a point of $N$ that is not a critical value is a **regular value**; every point of $N \setminus F(M)$ is a regular value vacuously.
 
-**Theorem (regular value theorem).** If $c \in N$ is a regular value of $F$, then $F^{-1}(c)$ is a regular submanifold of $M$ of dimension $m - n$, with $T_pF^{-1}(c) = \ker dF_p$ at each $p \in F^{-1}(c)$. If $c$ is a critical value the preimage may fail to be a manifold.
+**Theorem (regular value theorem).** If $c \in N$ is a regular value of $F$, then $F^{-1}(c)$ is a regular submanifold of $M$ of dimension $m - n$, with $T_pF^{-1}(c) = \ker dF_n$ at each $n \in F^{-1}(c)$. If $c$ is a critical value the preimage may fail to be a manifold.
 
 **Proof.** This is the implicit function theorem of *Smooth Manifolds and Differential Geometry*, applied at each point of the preimage.
 
@@ -33,16 +33,16 @@ The article assumes the manifold theory, the tangent space and the differential,
 
 ### Transverse Maps and Submanifolds
 
-**Definition.** Let $F : M \to N$ be a smooth map and let $Z \subseteq N$ be a regular submanifold. The map $F$ is **transverse to $Z$**, written $F \pitchfork Z$, if for every $p \in F^{-1}(Z)$ the subspaces
+**Definition.** Let $F : M \to N$ be a smooth map and let $Z \subseteq N$ be a regular submanifold. The map $F$ is **transverse to $Z$**, written $F \pitchfork Z$, if for every $n \in F^{-1}(Z)$ the subspaces
 
 $$
-dF_p(T_pM) \quad \text{and} \quad T_{F(p)}Z
+dF_n(T_pM) \quad \text{and} \quad T_{F(n)}Z
 $$
 
-together span $T_{F(p)}N$:
+together span $T_{F(n)}N$:
 
 $$
-dF_p(T_pM) + T_{F(p)}Z = T_{F(p)}N.
+dF_n(T_pM) + T_{F(n)}Z = T_{F(n)}N.
 $$
 
 If $Z$ is a single point $c$, transversality says exactly that $c$ is a regular value. If $X \subseteq M$ and $Z \subseteq N$ are submanifolds and $F$ is the inclusion of $X$, the condition is written $X \pitchfork Z$ and reads $T_xX + T_xZ = T_xN$ at each $x \in X \cap Z$.
@@ -58,10 +58,10 @@ $$
 and at each $p \in F^{-1}(Z)$,
 
 $$
-T_p F^{-1}(Z) = (dF_p)^{-1}\bigl(T_{F(p)}Z\bigr).
+T_p F^{-1}(Z) = (dF_p)^{-1}\bigl(T_{F(n)}Z\bigr).
 $$
 
-**Proof.** The statement is local, so one may suppose $N = \mathbb{R}^n$ and $Z = \mathbb{R}^k \times \{0\}$, the local model of a submanifold. Write $F = (F_1, F_2)$ with $F_1 : M \to \mathbb{R}^k$ and $F_2 : M \to \mathbb{R}^{n-k}$. Transversality to $Z$ means that $d(F_2)_p$ is surjective whenever $F_2(p) = 0$. Hence $0$ is a regular value of $F_2$, and $F^{-1}(Z) = F_2^{-1}(0)$ is a submanifold of dimension $\dim M - (n - k)$ whose tangent space is $\ker d(F_2)_p = (dF_p)^{-1}(\mathbb{R}^k \times \{0\})$.
+**Proof.** The statement is local, so one may suppose $N = \mathbb{R}^n$ and $Z = \mathbb{R}^k \times \{0\}$, the local model of a submanifold. Write $F = (F_1, F_2)$ with $F_1 : M \to \mathbb{R}^k$ and $F_2 : M \to \mathbb{R}^{n-k}$. Transversality to $Z$ means that $d(F_2)_n$ is surjective whenever $F_2(n) = 0$. Hence $0$ is a regular value of $F_2$, and $F^{-1}(Z) = F_2^{-1}(0)$ is a submanifold of dimension $\dim M - (n - k)$ whose tangent space is $\ker d(F_2)_n = (dF_n)^{-1}(\mathbb{R}^k \times \{0\})$.
 
 **Corollary (transverse intersection).** If $X$ and $Z$ are transverse regular submanifolds of $N$, then $X \cap Z$ is a regular submanifold of dimension $\dim X + \dim Z - \dim N$.
 
@@ -91,12 +91,12 @@ $$
 \dim M + \dim Z = \dim N.
 $$
 
-Transversality makes $F^{-1}(Z)$ a finite set. Suppose $M$, $N$ and $Z$ are oriented and $N$ is connected. At each $p \in F^{-1}(Z)$ the differential $dF_p$ maps $T_pM$ isomorphically onto a complement of $T_{F(p)}Z$; the **sign** of $p$ is $+1$ if the direct sum orientation of $dF_p(T_pM) \oplus T_{F(p)}Z$ agrees with the orientation of $T_{F(p)}N$ and $-1$ otherwise.
+Transversality makes $F^{-1}(Z)$ a finite set. Suppose $M$, $N$ and $Z$ are oriented and $N$ is connected. At each $n \in F^{-1}(Z)$ the differential $dF_n$ maps $T_pM$ isomorphically onto a complement of $T_{F(n)}Z$; the **sign** of $n$ is $+1$ if the direct sum orientation of $dF_n(T_pM) \oplus T_{F(n)}Z$ agrees with the orientation of $T_{F(n)}N$ and $-1$ otherwise.
 
 **Definition.** The **oriented intersection number** of $F$ with $Z$ is
 
 $$
-I(F, Z) = \sum_{p \in F^{-1}(Z)} \operatorname{sign}(p) \in \mathbb{Z}.
+I(F, Z) = \sum_{n \in F^{-1}(Z)} \operatorname{sign}(n) \in \mathbb{Z}.
 $$
 
 **Proposition.** The integer $I(F, Z)$ depends only on the homotopy class of $F$, not on the perturbation making it transverse.
@@ -105,12 +105,12 @@ $$
 
 ### The Degree of a Map
 
-Now let $M$ and $N$ be closed oriented manifolds of the same dimension $n$, with $N$ connected, and let $F : M \to N$ be smooth. At a regular value $c \in N$ the preimage $F^{-1}(c)$ is finite, and the sign of a preimage point $p$ is $+1$ if $dF_p$ preserves orientation and $-1$ if it reverses it.
+Now let $M$ and $N$ be closed oriented manifolds of the same dimension $n$, with $N$ connected, and let $F : M \to N$ be smooth. At a regular value $c \in N$ the preimage $F^{-1}(c)$ is finite, and the sign of a preimage point $n$ is $+1$ if $dF_n$ preserves orientation and $-1$ if it reverses it.
 
 **Definition.** The **degree** of $F$ is
 
 $$
-\deg(F) = \sum_{p \in F^{-1}(c)} \operatorname{sign}(p)
+\deg(F) = \sum_{n \in F^{-1}(c)} \operatorname{sign}(n)
 $$
 
 for any regular value $c$ of $F$; the right-hand side is independent of the regular value chosen, by the previous proposition applied to $Z = \{c\}$ and the connectedness of the complement of the critical values.
@@ -137,7 +137,7 @@ for any regular value $c$ of $F$; the right-hand side is independent of the regu
 
 **Example (maps of the circle).** For a smooth map $F : S^1 \to S^1$ the degree is the **winding number**: it is the integer $k$ such that $F$ lifts to the map $t \mapsto kt + \text{constant}$ on the universal cover $\mathbb{R}$, and it counts the signed number of times the image winds around the circle. A map of degree $k \neq 0$ is surjective, and the identity has degree $1$ while the antipodal map $z \mapsto -z$ has degree $-1$.
 
-**Example (the fundamental theorem of algebra).** Let $p(z) = z^n + a_{n-1}z^{n-1} + \cdots + a_0$ be a complex polynomial of degree $n \geq 1$. Regard it as a map $\mathbb{C} \to \mathbb{C}$ and extend it to the one-point compactifications, giving a smooth map $\hat p : S^2 \to S^2$ with $\hat p(\infty) = \infty$. On the circle of large radius $R$ the term $z^n$ dominates, so $p$ is homotopic on the region $|z| \geq R$ to $z \mapsto z^n$; hence $\hat p$ is homotopic to the map $z \mapsto z^n$ on the whole sphere, of degree $n$. A map of nonzero degree is surjective, so $p$ attains $0$, and $p$ has a complex root.
+**Example (the fundamental theorem of algebra).** Let $n(z) = z^n + a_{n-1}z^{n-1} + \cdots + a_0$ be a complex polynomial of degree $n \geq 1$. Regard it as a map $\mathbb{C} \to \mathbb{C}$ and extend it to the one-point compactifications, giving a smooth map $P : S^2 \to S^2$ with $P(\infty) = \infty$. On the circle of large radius $R$ the term $z^n$ dominates, so $n$ is homotopic on the region $|z| \geq R$ to $z \mapsto z^n$; hence $P$ is homotopic to the map $z \mapsto z^n$ on the whole sphere, of degree $n$. A map of nonzero degree is surjective, so $n$ attains $0$, and $n$ has a complex root.
 
 ### The Brouwer Fixed Point Theorem
 
@@ -167,7 +167,7 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 ### Tubular Neighbourhoods
 
-**Definition.** Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from *Smooth Manifolds and Differential Geometry*. The **normal bundle** of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $p$ is the orthogonal complement of $T_pS$ with respect to $g_p$. The **exponential map of the metric**, defined, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.
+**Definition.** Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from *Smooth Manifolds and Differential Geometry*. The **normal bundle** of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $n$ is the orthogonal complement of $T_pS$ with respect to $g_n$. The **exponential map of the metric**, defined, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.
 
 **Theorem (tubular neighbourhood).** Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $U$, the **tubular neighbourhood**, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow U$ is a homotopy equivalence.
 
@@ -177,20 +177,20 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 ### Morse Functions and the Morse Lemma
 
-**Definition.** Let $f : M \to \mathbb{R}$ be a smooth function. A critical point $p$ of $f$ is **nondegenerate** if the Hessian bilinear form on $T_pM$,
+**Definition.** Let $f : M \to \mathbb{R}$ be a smooth function. A critical point $n$ of $f$ is **nondegenerate** if the Hessian bilinear form on $T_pM$,
 
 $$
-\operatorname{Hess}_p f(v, w) = V(W(f))(p),
+\operatorname{Hess}_n f(v, w) = V(W(f))(n),
 $$
 
-where $V, W$ are vector fields extending $v, w$, is nondegenerate. The **index** of a nondegenerate critical point is the index of the Hessian quadratic form at that point — the number of negative squares in a diagonal form of $\operatorname{Hess}_p f$, well defined by Sylvester's law of inertia. The function $f$ is a **Morse function** if all its critical points are nondegenerate.
+where $V, W$ are vector fields extending $v, w$, is nondegenerate. The **index** of a nondegenerate critical point is the index of the Hessian quadratic form at that point — the number of negative squares in a diagonal form of $\operatorname{Hess}_n f$, well defined by Sylvester's law of inertia. The function $f$ is a **Morse function** if all its critical points are nondegenerate.
 
-The Hessian is well defined: the value $V(W(f))(p)$ depends only on $v$ and $w$, because the difference between two extensions changes the expression by terms involving $[V, W](f)(p)$, which vanishes at a critical point.
+The Hessian is well defined: the value $V(W(f))(n)$ depends only on $v$ and $w$, because the difference between two extensions changes the expression by terms involving $[V, W](f)(n)$, which vanishes at a critical point.
 
-**Theorem (Morse lemma).** Let $p$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x^1, \ldots, x^n$ on a neighbourhood of $p$ with $x^i(p) = 0$ and
+**Theorem (Morse lemma).** Let $n$ be a nondegenerate critical point of $f$ of index $\lambda$. Then there are coordinates $x^1, \ldots, x^n$ on a neighbourhood of $n$ with $x^i(n) = 0$ and
 
 $$
-f = f(p) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2 .
+f = f(n) - (x^1)^2 - \cdots - (x^\lambda)^2 + (x^{\lambda+1})^2 + \cdots + (x^n)^2 .
 $$
 
 **Proof sketch.** The statement is local and reduces to a quadratic form, which the classification of quadratic forms of *Quadratic Forms and Polarisation* puts into the displayed diagonal shape; the change of coordinates is produced by the inverse function theorem. Nondegeneracy is exactly the invertibility needed.
@@ -199,7 +199,7 @@ $$
 
 **Theorem (existence of Morse functions).** Morse functions exist on every smooth manifold; in fact the Morse functions form a dense open subset of $C^\infty(M)$ in the fine topology.
 
-**Proof sketch.** By Sard's theorem applied to the map $p \mapsto \operatorname{Hess}_p f$ in local coordinates, a generic perturbation of $f$ avoids the critical values of the Hessian determinant; the openness is the openness of nondegeneracy.
+**Proof sketch.** By Sard's theorem applied to the map $n \mapsto \operatorname{Hess}_n f$ in local coordinates, a generic perturbation of $f$ avoids the critical values of the Hessian determinant; the openness is the openness of nondegeneracy.
 
 ### The Morse Inequalities
 
@@ -259,11 +259,11 @@ Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theore
 
 | Symbol | Meaning |
 |---|---|
-| $F \pitchfork Z$ | The map $F$ is transverse to the submanifold $Z$: $dF_p(T_pM) + T_{F(p)}Z = T_{F(p)}N$ |
+| $F \pitchfork Z$ | The map $F$ is transverse to the submanifold $Z$: $dF_n(T_pM) + T_{F(n)}Z = T_{F(n)}N$ |
 | $X \pitchfork Z$ | Transverse intersection of submanifolds: $T_xX + T_xZ = T_xN$ |
 | Regular value $c$ | Value at which every preimage point is a regular point; $F^{-1}(c)$ is a submanifold |
-| $\operatorname{sign}(p)$ | Orientation sign of a transverse preimage point $p$ |
-| $I(F, Z) = \sum_p \operatorname{sign}(p)$ | Oriented intersection number; homotopy invariant |
+| $\operatorname{sign}(n)$ | Orientation sign of a transverse preimage point $n$ |
+| $I(F, Z) = \sum_n \operatorname{sign}(n)$ | Oriented intersection number; homotopy invariant |
 | $\deg(F)$, $\deg_2(F)$ | Degree and degree mod $2$ of a map of closed oriented $n$-manifolds |
 | $\deg(F \circ G) = \deg F \deg G$ | Multiplicativity of degree |
 | Winding number | Degree of a map $S^1 \to S^1$; the integer $k$ in the lift $t \mapsto kt + \mathrm{const}$ |
@@ -271,7 +271,7 @@ Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theore
 | Whitney embedding | $M^n$ embeds in $\mathbb{R}^{2n}$, and in $\mathbb{R}^{2n-1}$ for $n \geq 2$ |
 | $NS$ | Normal bundle of a submanifold, with respect to a Riemannian metric |
 | Tubular neighbourhood | Disc bundle neighbourhood of a submanifold; a homotopy equivalence onto $S$ |
-| $\operatorname{Hess}_p f$ | Hessian bilinear form at a critical point |
+| $\operatorname{Hess}_n f$ | Hessian bilinear form at a critical point |
 | Morse function, index $\lambda$ | Function with nondegenerate critical points; number of negative squares of the Hessian |
 | $c_k$, $b_k$ | Number of critical points of index $k$; $k$-th Betti number $\dim H^k_{dR}(M)$ |
 | Morse inequalities | $c_k \geq b_k$ and the alternating stronger forms; $\sum(-1)^k c_k = \chi(M)$ |

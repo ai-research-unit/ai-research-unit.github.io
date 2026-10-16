@@ -47,7 +47,7 @@ $$
 
 **Theorem (the adjoint).** $(L_{\tilde A}+R_{\tilde B})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, that is $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$.
 
-*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
+*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra*.
 
 **Corollary (self-adjointness needs both parameters Hermitian).** $S_{\tilde A,\tilde B}$ is self-adjoint if and only if $\tilde A$ and $\tilde B$ are both Hermitian. In particular the Lyapunov operator $S_{\tilde A,\tilde{A}^{*}}=L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint if and only if $\tilde A$ is Hermitian; for general $\tilde A$ it is not, and its adjoint is $L_{\tilde{A}^{*}}+R_{\tilde A}$. **The temptation to call $L_{\tilde A}+R_{\tilde{A}^{*}}$ self-adjoint for every $\tilde A$ is the trap of this article.**
 
@@ -80,7 +80,7 @@ and $\mathrm{ad}_{\tilde A}$ is a derivation of the associative algebra, $\mathr
 
 *Proof.* $(L_{\tilde A}+R_{\tilde A})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{A}^{*}}$, which equals $L_{\tilde A}+R_{\tilde A}$ iff $\tilde{A}^{*}=\tilde A$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$ for (1).
 
-**Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
+**Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the General Plain Sesqualgebra*.
 
 ## The Solution
 
@@ -95,12 +95,12 @@ $$
 **Theorem (the integral representation).** Let $\tilde A,\tilde B$ have spectra in the open right half-plane (so that $\exp(-t\tilde A)$ and $\exp(-t\tilde B)$ decay). Then
 
 $$
-\tilde P = \int_{0}^{\infty} e^{-t\tilde A}\,c\,e^{-t\tilde B}\,dt
+\tilde P = \int_{0}^{\infty} \exp(-t\tilde A)\,c\,\exp(-t\tilde B)\,dt
 $$
 
 is the solution of $\tilde A\tilde P+\tilde P\tilde B=c$.
 
-*Proof.* Differentiate: $\tilde A\tilde P+\tilde P\tilde B=\int_{0}^{\infty}\bigl(\tilde A e^{-t\tilde A}ce^{-t\tilde B}+e^{-t\tilde A}ce^{-t\tilde B}\tilde B\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(e^{-t\tilde A}ce^{-t\tilde B}\bigr)dt=e^{0}ce^{0}=c$.
+*Proof.* Differentiate: $\tilde A\tilde P+\tilde P\tilde B=\int_{0}^{\infty}\bigl(\tilde A \exp(-t\tilde A)c\exp(-t\tilde B)+\exp(-t\tilde A)c\exp(-t\tilde B)\tilde B\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(\exp(-t\tilde A)c\exp(-t\tilde B)\bigr)dt=\exp(0)ce^{0}=c$.
 
 **Remark (why the Hermitian case is the interesting one).** For Hermitian $\tilde A,\tilde B$ the operator is self-adjoint and the equation is the **operator form of the Hermitian condition**: it is the equation satisfied by the fixed point of the linear relaxation $\tilde P\mapsto c-\tilde A\tilde P-\tilde P\tilde B$, by the correction term of any perturbative expansion, and by the solution of the Lyapunov problem of linear systems theory. The integral representation is the statement that the solution is a **time-ordered average** of the two exponential factors, and it is the reason the solution of a stable equation is written with two decaying exponentials rather than one.
 
@@ -118,7 +118,7 @@ is the solution of $\tilde A\tilde P+\tilde P\tilde B=c$.
 
 ## Summary
 
-The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde A,\tilde B}^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, so $S_{\tilde A,\tilde B}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint only for Hermitian $\tilde A$, which is the trap of the article. The companion operator $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde A\mapsto\mathrm{ad}_{\tilde A}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $P_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}e^{-t\tilde A}ce^{-t\tilde B}dt$ in the stable case.
+The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde A,\tilde B}^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, so $S_{\tilde A,\tilde B}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint only for Hermitian $\tilde A$, which is the trap of the article. The companion operator $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde A\mapsto\mathrm{ad}_{\tilde A}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $P_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}\exp(-t\tilde A)c\exp(-t\tilde B)dt$ in the stable case.
 
 ## Summary of Notation
 
@@ -132,14 +132,14 @@ The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion
 | $\{\tilde A,\cdot\}=L_{\tilde A}+R_{\tilde A}$ | Anticommutator operator; self-adjoint iff $\tilde A$ Hermitian |
 | $[L_{\tilde A},L_{\tilde B}]=L_{[\tilde A,\tilde B]}$ | Commutator law of the left multiplications |
 | $P_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ | The solution in the diagonalisable case |
-| $\int_{0}^{\infty}e^{-t\tilde A}ce^{-t\tilde B}dt$ | The solution in the stable case |
+| $\int_{0}^{\infty}\exp(-t\tilde A)c\exp(-t\tilde B)dt$ | The solution in the stable case |
 
 ## Further Reading
 
 - *The Hermitian Sylvester Equation with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the spectral rules used throughout.
-- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich, its invariants and the congruence.
+- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
+- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich, its invariants and the congruence.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations, the roots and the exponential.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general theory of the adjoint on an operator algebra.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the commutator, the roots and the Lie structure of the algebra.
+- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the commutator, the roots and the Lie structure of the algebra.

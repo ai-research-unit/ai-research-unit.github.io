@@ -47,7 +47,7 @@ positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The
 
 Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J] = \int\mathcal{D}\tilde\Phi\; e^{\,iS[\tilde\Phi]/\hbar + \langle \tilde J,\tilde\Phi\rangle},
+Z[\tilde J] = \int\mathcal{D}\tilde\Phi\; \exp(\,iS[\tilde\Phi]/\hbar + \langle \tilde J,\tilde\Phi\rangle),
 $$
 with $\tilde J$ valued in the module and the pairing as above. The connected functional is
 $$
@@ -215,11 +215,11 @@ the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm
 
 The determinant is often traded for an integral over a **proper time** $s$, by
 $$
-\frac12\,\mathrm{Tr}\log S''[\tilde\phi] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,e^{-s\,S''[\tilde\phi]},
+\frac12\,\mathrm{Tr}\log S''[\tilde\phi] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,\exp(-s\,S''[\tilde\phi]),
 $$
 which is exact when the integral converges and is defined by regularization otherwise. In the biquaternion framework $S''[\tilde\phi]$ is an operator on the module and the trace is the pairing, so the integrand is a one-loop **heat kernel** on the module,
 $$
-K(s) = \mathrm{Tr}\,e^{-s\,S''[\tilde\phi]} ,
+K(s) = \mathrm{Tr}\,\exp(-s\,S''[\tilde\phi]) ,
 $$
 whose small-$s$ expansion
 $$
@@ -258,7 +258,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$ | Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$ |
-| $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{iS/\hbar+\langle\tilde J,\tilde\Phi\rangle}$ | Generating functional |
+| $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(iS/\hbar+\langle\tilde J,\tilde\Phi\rangle)$ | Generating functional |
 | $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |
 | $\tilde\phi=\delta W/\delta\tilde J$ | Classical field (module-valued) |
 | $\Gamma[\tilde\phi]=\langle\tilde J,\tilde\phi\rangle-W[\tilde J]$ | Effective action (Legendre transform) |

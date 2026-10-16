@@ -111,53 +111,53 @@ The spin term is not separately conserved; its divergence contributes to $\parti
 For plane-wave solutions the position-space identity becomes the form used in scattering amplitudes. Write
 
 $$
-\psi(x) = u(p)\,e^{-ip_\mu x^\mu},
+\psi(x) = w(p)\,\exp(-ip_\mu x^\mu),
 \qquad
-\left(\gamma^\mu p_\mu - m\right)u(p) = 0,
+\left(\gamma^\mu p_\mu - m\right)w(p) = 0,
 $$
 
-and let $\bar u(p')$ be the adjoint spinor of an on-shell momentum $p'$,
+and let $\bar w(p')$ be the adjoint spinor of an on-shell momentum $p'$,
 
 $$
-\bar u(p')\left(\gamma^\mu p'_\mu - m\right) = 0 .
+\bar w(p')\left(\gamma^\mu p'_\mu - m\right) = 0 .
 $$
 
 Between such spinors the Gordon decomposition reads
 
 $$
-\bar u(p')\,\gamma^\mu\,u(p)
-= \bar u(p')\left[
+\bar w(p')\,\gamma^\mu\,w(p)
+= \bar w(p')\left[
 \frac{(p+p')^\mu}{2m}
 + \frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}
-\right]u(p).
+\right]w(p).
 $$
 
-Equivalently, with the momentum transfer $q = p' - p$ and the average momentum $P = \tfrac12(p+p')$,
+Equivalently, with the momentum transfer $k = p' - p$ and the average momentum $P = \tfrac12(p+p')$,
 
 $$
-\bar u(p')\gamma^\mu u(p)
-= \frac{1}{m}\left[P^\mu\,\bar u(p')u(p)
-+ i\,\bar u(p')S^{\mu\nu}u(p)\,q_\nu\right],
+\bar w(p')\gamma^\mu w(p)
+= \frac{1}{m}\left[P^\mu\,\bar w(p')w(p)
++ i\,\bar w(p')S^{\mu\nu}w(p)\,k_\nu\right],
 \qquad
 S^{\mu\nu} = \tfrac12\sigma^{\mu\nu} .
 $$
 
-The first term is proportional to the scalar bilinear $\bar u'u$, the second to the tensor bilinear $\bar u'S^{\mu\nu}u$. The two coefficients are fixed: the first is $P^\mu/m$, the second is $i q_\nu/m$. This is the form in which the vertex decomposition of the companion article on the anomalous magnetic moment is stated, and it is the identity that was verified numerically there and here.
+The first term is proportional to the scalar bilinear $\bar w'w$, the second to the tensor bilinear $\bar w'S^{\mu\nu}w$. The two coefficients are fixed: the first is $P^\mu/m$, the second is $i k_\nu/m$. This is the form in which the vertex decomposition of the companion article on the anomalous magnetic moment is stated, and it is the identity that was verified numerically there and here.
 
 ### Parent identity
 
 The momentum-space Gordon identity is a consequence of the simpler **parent identity**, valid for any matrix $\Gamma$ and any on-shell pair,
 
 $$
-2m\,\bar u(p')\,\Gamma\,u(p)
-= \bar u(p')\left(\gamma^\mu p'_\mu\,\Gamma + \Gamma\,\gamma^\mu p_\mu\right)u(p),
+2m\,\bar w(p')\,\Gamma\,w(p)
+= \bar w(p')\left(\gamma^\mu p'_\mu\,\Gamma + \Gamma\,\gamma^\mu p_\mu\right)w(p),
 $$
 
-which follows from the two on-shell conditions $u(p')$ and $\bar u(p')$ and is the form in which the companion article on the anomalous magnetic moment states it. With $\Gamma = \gamma^\mu$ the parent identity gives the Gordon form; with $\Gamma = \gamma^\mu\gamma_5$ it gives the axial companion,
+which follows from the two on-shell conditions $w(p')$ and $\bar w(p')$ and is the form in which the companion article on the anomalous magnetic moment states it. With $\Gamma = \gamma^\mu$ the parent identity gives the Gordon form; with $\Gamma = \gamma^\mu\gamma_5$ it gives the axial companion,
 
 $$
-2m\,\bar u(p')\gamma^\mu\gamma_5 u(p)
-= \bar u(p')\left(\gamma^\mu\gamma_5\,\not p + \not p'\,\gamma^\mu\gamma_5\right)u(p),
+2m\,\bar w(p')\gamma^\mu\gamma_5 w(p)
+= \bar w(p')\left(\gamma^\mu\gamma_5\,\not p + \not p'\,\gamma^\mu\gamma_5\right)w(p),
 $$
 
 which is the same statement for the axial current and is used in the analysis of the axial anomaly.
@@ -168,9 +168,9 @@ which is the same statement for the axial current and is used in the analysis of
 
 The two terms of the momentum-space identity have a direct interpretation, and it is the reason the decomposition is useful.
 
-The **convection term** $\bar u'\frac{(p+p')^\mu}{2m}u$ is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p')$. It is the orbital part: it depends on the average four-momentum, it reduces to $\bar u'\gamma^\mu u \to \bar u' u\,v^\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
+The **convection term** $\bar w'\frac{(p+p')^\mu}{2m}w$ is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p')$. It is the orbital part: it depends on the average four-momentum, it reduces to $\bar w'\gamma^\mu w \to \bar w' w\,v^\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
 
-The **spin term** $\bar u'\frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}u$ depends on the momentum **transfer** $q_\nu$ and on the tensor bilinear. It is the piece that couples to the field strength rather than to the potential: contracted with the momentum-space photon, it produces an effective Pauli moment term. Its coefficient is exactly the one that gives $g = 2$, as the next subsection shows.
+The **spin term** $\bar w'\frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}w$ depends on the momentum **transfer** $k_\nu$ and on the tensor bilinear. It is the piece that couples to the field strength rather than to the potential: contracted with the momentum-space photon, it produces an effective Pauli moment term. Its coefficient is exactly the one that gives $g = 2$, as the next subsection shows.
 
 The identification of the second term with the spin density is not a metaphor. In position space the second term is $\frac{1}{m}\partial_\nu(\bar\psi\Sigma^{\mu\nu}\psi)$; the spatial components of the tensor density are the spin angular-momentum density, and the magnetic moment is its integral.
 
@@ -183,13 +183,13 @@ $$
 = -\frac{e\hbar}{2mc}\cdot\tfrac12 F_{\mu\nu}\,\bar\psi\sigma^{\mu\nu}\psi,
 $$
 
-which is an effective **Pauli moment term** $-\frac{e\hbar}{2mc}\,\vec B\cdot\psi^\dagger\boldsymbol\sigma\psi$. Its coefficient is the Dirac value $g = 2$. The companion article on the anomalous magnetic moment uses exactly this split: the tree-level vertex is $\gamma^\mu F_1 + \frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2$ with $F_1(0) = 1$, $F_2(0) = 1$, and the anomaly is the radiative correction to $F_2(0)$. The convection coefficient is fixed by the Ward identity; the spin coefficient is the one that can be corrected.
+which is an effective **Pauli moment term** $-\frac{e\hbar}{2mc}\,\vec B\cdot\psi^\dagger\boldsymbol\sigma\psi$. Its coefficient is the Dirac value $g = 2$. The companion article on the anomalous magnetic moment uses exactly this split: the tree-level vertex is $\gamma^\mu F_1 + \frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2$ with $F_1(0) = 1$, $F_2(0) = 1$, and the anomaly is the radiative correction to $F_2(0)$. The convection coefficient is fixed by the Ward identity; the spin coefficient is the one that can be corrected.
 
 The same decomposition underlies the companion article on the classical origin of $g = 2$: the factor of two is the statement that the spin-density gradient is twice as effective at generating an electric current as it is at contributing to the linear momentum, which is the factor-of-two asymmetry recorded below.
 
 ## The Massless Generalisation
 
-The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t) = \psi(\vec r)e^{-iEt}$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
+The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t) = \psi(\vec r)\exp(-iEt)$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
 
 $$
 \vec j \equiv e\,\bar\psi\boldsymbol\gamma\psi
@@ -200,11 +200,11 @@ $$
 with $\boldsymbol\gamma = (\gamma^1,\gamma^2,\gamma^3)$ and
 
 $$
-\vec S = \psi^\dagger S^{\mathrm{fop}}\psi,
+\vec S = \psi^\dagger S\psi,
 \qquad
-\left(S_x^{\mathrm{fop}},S_y^{\mathrm{fop}},S_z^{\mathrm{fop}}\right) = \left(\Sigma^{23},\Sigma^{31},\Sigma^{12}\right),
+\left(S_x,S_y,S_z\right) = \left(\Sigma^{23},\Sigma^{31},\Sigma^{12}\right),
 \qquad
-S^{\mathrm{fop}} = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
+S = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
 $$
 
 The first term is the **free current**: for a near plane wave of finite extent it is $e\rho\,\vec k/E = e\rho\,\vec v$ with $\rho = \psi^\dagger\psi$ and $\vec v = \vec k/E$, which is the transport of charge at the group velocity. The second is the **bound spin current** $(e/E)\nabla\times\vec S$.
@@ -216,7 +216,7 @@ $$
 = \frac{e}{E}\int\vec S\,d^3x .
 $$
 
-In the rest frame $E = m$ this is $\vec\mu_{\rm Dirac} = (e/m)\vec S = (eg/2m)\vec S$ with $g = 2$, recovering the massive result. For a massless right-handed Weyl particle the spin is locked to the direction $\hat k$ of the kinetic momentum and the moment is $\vec\mu_{\rm Weyl} = (e/E)(\hbar\hat k/2)$. This is the cleanest form of the statement that the massless limit does not remove the spin current; it only removes the separation scale $m$ in favour of the energy $E$.
+In the rest frame $E = m$ this is $\vec\mu_{\rm Dirac} = (e/m)\vec S = (eg/2m)\vec S$ with $g = 2$, recovering the massive result. For a massless right-handed Weyl particle the spin is locked to the direction $\vec u_k$ of the kinetic momentum and the moment is $\vec\mu_{\rm Weyl} = (e/E)(\hbar\vec u_k/2)$. This is the cleanest form of the statement that the massless limit does not remove the spin current; it only removes the separation scale $m$ in favour of the energy $E$.
 
 ## The Angular-Momentum and Stress-Tensor Relatives
 
@@ -316,9 +316,9 @@ $$
 into a convection part and the divergence of a spin density. In momentum space it is
 
 $$
-\bar u(p')\gamma^\mu u(p)
-= \bar u(p')\left[\frac{(p+p')^\mu}{2m}
-+ \frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}\right]u(p),
+\bar w(p')\gamma^\mu w(p)
+= \bar w(p')\left[\frac{(p+p')^\mu}{2m}
++ \frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}\right]w(p),
 $$
 
 where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g = 2$. The decomposition requires $m \neq 0$ because both terms carry $1/m$; the massless version replaces $m$ by the energy $E$ and writes the spin term as $(e/E)\nabla\times\vec S$, recovering the Dirac moment in the rest frame and the locked Weyl moment for a massless particle. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g = 2$.
@@ -335,9 +335,9 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\Sigma^{\mu\nu} = \frac12\sigma^{\mu\nu} = \frac{i}{4}[\gamma^\mu,\gamma^\nu]$ | Spin generator of the Lorentz transformations |
 | $\gamma^\mu\gamma^\nu = g^{\mu\nu}I_4 - i\sigma^{\mu\nu}$ | Symmetric/antisymmetric generator split |
 | $j^\mu = \bar\psi\gamma^\mu\psi$ | Conserved number current |
-| $p$, $p'$, $q = p'-p$, $P = \frac12(p+p')$ | Momenta, transfer and average |
-| $\bar u'\gamma^\mu u = \bar u'[(p+p')^\mu + i\sigma^{\mu\nu}q_\nu]u/2m$ | Momentum-space Gordon identity |
-| $\vec S = \psi^\dagger S^{\mathrm{fop}}\psi$, $S^{\mathrm{fop}} = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
+| $p$, $p'$, $k = p'-p$, $P = \frac12(p+p')$ | Momenta, transfer and average |
+| $\bar w'\gamma^\mu w = \bar w'[(p+p')^\mu + i\sigma^{\mu\nu}k_\nu]w/2m$ | Momentum-space Gordon identity |
+| $\vec S = \psi^\dagger S\psi$, $S = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
 | $T^{\mu\nu}_{\rm BR}$, $T^{\mu\nu}_{\rm canonical}$ | Belinfante–Rosenfeld and canonical stress tensors |
 | $\frac{e\hbar}{2mc}\cdot\frac12 F_{\mu\nu}\bar\psi\sigma^{\mu\nu}\psi$ | Effective Pauli moment term ($g = 2$) |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational and material sectors; bivector magnetic and boost parts |

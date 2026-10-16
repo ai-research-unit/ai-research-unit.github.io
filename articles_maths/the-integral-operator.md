@@ -17,9 +17,9 @@ $L^2$ inner product: the algebra its kernels carry, its boundedness on $L^2$ und
 that supply it, the Hilbert–Schmidt case in which the kernel is square-integrable, and the compactness
 that the square-integrable case yields.
 
-The prerequisites are *Measure Theory and Integration* for the Lebesgue integral, the $L^p$ spaces, the
+The prerequisites are *Measure Theory and Integration* for the Lebesgue integral, the $L^{n}$ spaces, the
 Cauchy–Schwarz and Hölder inequalities and the Fubini–Tonelli theorem, and *Modes of Convergence* for
-convergence in $L^p$. The $L^2$ inner product is the one of that article, $\langle f,g\rangle=\int f\bar g$,
+convergence in $L^{n}$. The $L^2$ inner product is the one of that article, $\langle f,g\rangle=\int f\bar g$,
 linear in the first argument and conjugate-linear in the second. Nothing here uses the general theory of
 operators on a Hilbert space beyond the inner product and Cauchy–Schwarz: the boundedness, the
 Hilbert–Schmidt norm and the compactness are all proved concretely from the integral. The operator norm,
@@ -160,8 +160,8 @@ $$
 \qquad
 \int_XK(x,y)\,d\mu(x)\leq C\ \text{for almost every }y .
 $$
-Then $T_K$ maps $L^p(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
-$\lVert T_K\rVert_{L^p\to L^p}\leq C$.
+Then $T_K$ maps $L^{n}(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
+$\lVert T_K\rVert_{L^{n}}\to L^{n}\leq C$.
 
 **Proof.** The case $p=1$ is Fubini and the case $p=\infty$ is the first hypothesis. For $1<p<\infty$ put
 $q=p/(p-1)$ and write $K\lvert f\rvert=K^{1/q}\cdot K^{1/p}\lvert f\rvert$; Hölder gives
@@ -179,7 +179,7 @@ since $p/q+1=p$.
 
 **Remark.** The test also holds with two weights: if $p_0,q_0>0$ are measurable and
 $\int_XK(x,y)q_0(y)\,dy\leq Cp_0(x)$, $\int_XK(x,y)p_0(x)\,dx\leq Cq_0(y)$ almost everywhere, then $T_K$ is
-bounded on the weighted space $L^p(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
+bounded on the weighted space $L^{n}(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
 one used in this corpus, and the weighted one is recorded because the kernel of a Riemann–Liouville
 fractional integral satisfies it.
 
@@ -323,9 +323,9 @@ $T_KT_L=T_{K\star L}$; the finite-dimensional instance is matrix multiplication,
 $k(x-y)$ gives a convolution operator.
 
 The operator is bounded on $L^2$ with $\lVert T_K\rVert\leq\lVert K\rVert_{L^2(X\times Y)}$ whenever the
-kernel is square-integrable, by Cauchy–Schwarz and Tonelli; it is bounded on every $L^p$ with
+kernel is square-integrable, by Cauchy–Schwarz and Tonelli; it is bounded on every $L^{n}$ with
 $\lVert T_K\rVert\leq C$ whenever a nonnegative kernel has row and column integrals bounded by $C$, by the
-Schur test; and it is bounded on every $L^p$ with $\lVert T_K\rVert\leq\lVert k\rVert_1$ when the kernel is
+Schur test; and it is bounded on every $L^{n}$ with $\lVert T_K\rVert\leq\lVert k\rVert_1$ when the kernel is
 translation invariant with an integrable profile, by Young's inequality. The Hilbert–Schmidt operators are
 the square-integrable kernels, with norm $\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_2$ dominating the
 operator norm, basis-independent and multiplicative under composition; they are the ideal of the bounded
@@ -360,6 +360,6 @@ to the Fredholm alternative.
 - Israel Gohberg, Seymour Goldberg and Marinus A. Kaashoek, *Classes of Linear Operators, Vol. I*
   (Birkhäuser, 1990), for the algebra of kernels and the Schatten classes.
 - Adriaan C. Zaanen, *Linear Analysis* (North-Holland, 1953), for the Schur test and the boundedness of
-  integral operators on $L^p$.
+  integral operators on $L^{n}$.
 - Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications* (2nd ed., Wiley, 1999), for
   the integral operator with a square-integrable kernel as an example in Hilbert space.

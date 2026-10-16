@@ -39,7 +39,7 @@ The sections run as follows. Convex sets, their hulls, their relative interiors,
 
 **Proof.** If $x_0\notin\operatorname{ri}(C)$, work in $\operatorname{aff}(C)$ and reduce to the case in which $C$ has nonempty interior in $\mathbb{R}^n$ and $x_0$ lies on its boundary. Then $x_0 + t(x_0-z)\notin C$ for every $z\in\operatorname{int}C$ and every $t>0$, since otherwise the convex combination expressing $x_0$ from that point and $z$ would put $x_0$ in the interior; so $x_0$ is the limit of points outside $\overline{C}$, and the projection of those points onto $\overline{C}$ gives a sequence of separating vectors by the projection theorem, whose limit is the required supporting vector. The equivalence follows because a point not in the closure of a convex set is strictly separated from it by a hyperplane.
 
-**Theorem (strict separation).** If $C_1,C_2\subseteq\mathbb{R}^n$ are disjoint nonempty convex sets with $C_1$ closed and $C_2$ compact, there is $y\neq0$ and $\gamma\in\mathbb{R}$ with $\langle y,x\rangle<\gamma<\langle y,z\rangle$ for all $x\in C_1$, $z\in C_2$. If both are merely convex and disjoint with one relatively open, the separation is non-strict; and if both are closed and convex the strict separation may fail: the epigraph $\{u_2\geq e^{u_1}\}$ and the half-plane $\{u_2\leq0\}$ are disjoint closed convex sets at distance $0$, and no hyperplane separates them strictly.
+**Theorem (strict separation).** If $C_1,C_2\subseteq\mathbb{R}^n$ are disjoint nonempty convex sets with $C_1$ closed and $C_2$ compact, there is $y\neq0$ and $\gamma\in\mathbb{R}$ with $\langle y,x\rangle<\gamma<\langle y,z\rangle$ for all $x\in C_1$, $z\in C_2$. If both are merely convex and disjoint with one relatively open, the separation is non-strict; and if both are closed and convex the strict separation may fail: the epigraph $\{u_2\geq \exp(u_1)\}$ and the half-plane $\{u_2\leq0\}$ are disjoint closed convex sets at distance $0$, and no hyperplane separates them strictly.
 
 **Proof sketch.** Translate so that one set contains the origin and take the difference $C_2-C_1$, a compact convex set not containing the origin because the sets are disjoint; the nearest point of this difference set to the origin is nonzero, and the perpendicular bisector through it separates the two sets by a computation with the inner product. In the absence of compactness the distance may be $0$ and the projection gives only a non-strict inequality, as the example shows.
 
@@ -95,7 +95,7 @@ a closed convex set, possibly empty and possibly unbounded; a $y\in\partial f(x)
 
 **Proof sketch.** The infimal convolution formula is the interchange of the two suprema in $\sup_{x}\{\langle x,y\rangle-f(x)-g(x)\} = \sup_x\inf_{y_1+y_2 = y}\{\langle x,y_1\rangle-f(x)+\langle x,y_2\rangle-g(x)\}$ together with the minimax interchange justified by the qualification; the affine case is the change of variable $u = Ax$; and the differentiability statement is the equality case of Fenchel–Young.
 
-**Example.** For $f(x) = \frac12\lvert x\rvert^2$ one has $f^* = f$; for $f(x) = \lvert x\rvert$ the conjugate is the indicator of $[-1,1]$; for $f(x) = e^x$ on $\mathbb{R}$ the conjugate is $y\log y-y$ on $y>0$ and $+\infty$ otherwise; and for $f(x) = -\log x$ on $x>0$ the conjugate on $y<0$ is $-1-\log(-y)$. These have been checked by direct maximisation, and each illustrates the rule that steep growth of $f$ means a small domain of $f^*$.
+**Example.** For $f(x) = \frac12\lvert x\rvert^2$ one has $f^* = f$; for $f(x) = \lvert x\rvert$ the conjugate is the indicator of $[-1,1]$; for $f(x) = \exp(x)$ on $\mathbb{R}$ the conjugate is $y\log y-y$ on $y>0$ and $+\infty$ otherwise; and for $f(x) = -\log x$ on $x>0$ the conjugate on $y<0$ is $-1-\log(-y)$. These have been checked by direct maximisation, and each illustrates the rule that steep growth of $f$ means a small domain of $f^*$.
 
 **Definition.** For $\lambda>0$ the **Moreau envelope** of $f$ is $e_\lambda f(x) = \inf_z\{f(z)+\frac{1}{2\lambda}\lvert x-z\rvert^2\}$ and the **proximal map** is the (single-valued, by strict convexity) minimiser $\operatorname{prox}_{\lambda f}(x)$.
 
@@ -125,7 +125,7 @@ and the supremum is attained.
 $$
 \text{minimise } f_0(x) \quad\text{subject to}\quad f_i(x)\leq0\ (i = 1,\dots,m),\quad Ax = b,
 $$
-with $f_i$ closed proper convex, the **Lagrangian** is $L(x,\lambda,\mu) = f_0(x)+\sum_i\lambda_if_i(x)+\langle\mu,Ax-b\rangle$ for $\lambda\geq0$, and the **dual problem** is to maximise $q(\lambda,\mu) = \inf_xL(x,\lambda,\mu)$ over $\lambda\geq0$.
+with $f_i$ closed proper convex, the **Lagrangian** is $L(x,\lambda,\mu) = f_0(x)+\sum_i\lambda_if_i(x)+\langle\mu,Ax-b\rangle$ for $\lambda\geq0$, and the **dual problem** is to maximise $\mathfrak{Q}(\lambda,\mu) = \inf_xL(x,\lambda,\mu)$ over $\lambda\geq0$.
 
 **Theorem (Karush–Kuhn–Tucker; Slater).** If the programme is feasible and Slater's condition holds — there is a feasible $x$ with $f_i(x)<0$ for all $i$ — then there is no duality gap, the dual optimum is attained, and $x^*$ is optimal exactly when there are $(\lambda^*,\mu^*)$ with $\lambda^*\geq0$, complementary slackness $\lambda_i^*f_i(x^*) = 0$, and the stationarity condition
 $$
@@ -172,7 +172,7 @@ A convex subset of $\mathbb{R}^n$ has a convex hull every point of which is a co
 | $\delta_C$, $\sigma_C$ | Indicator and support function of $C$ |
 | | Infimal convolution |
 | $e_\lambda f$, $\operatorname{prox}_{\lambda f}$ | Moreau envelope and proximal map |
-| $L(x,\lambda,\mu)$, $q(\lambda,\mu)$ | Lagrangian and dual function |
+| $L(x,\lambda,\mu)$, $\mathfrak{Q}(\lambda,\mu)$ | Lagrangian and dual function |
 | $A$, $b$ | Matrix and vector of the affine constraint |
 | $\langle\cdot,\cdot\rangle$, $\lvert\cdot\rvert$ | Euclidean inner product and norm on $\mathbb{R}^n$ |
 

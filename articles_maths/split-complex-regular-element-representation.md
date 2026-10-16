@@ -5,9 +5,9 @@
 
 The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication is the **left regular representation**, and writing that action in the basis $\{1, j\}$ gives the **regular matrix** of a split-complex number. This article develops that matrix in full: the Cayley matrix of multiplication by $A = a+j a'$, its identification with the algebra of $2\times 2$ real matrices of hyperbolic type, its multiplicativity, its determinant as the norm, its diagonalisation by the idempotent basis, and its relation to the hyperbolic rotations of the geometry slot. It is the second of the three Representation articles, after *Split-Complex Element Representations* and before *Split-Complex Two-Component Element Representation*.
 
-The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{aI+a'J\}$, the determinant identity $\det \mathsf{M}_2(A) = N(A)$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Split-Complex Polar Element Representation*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
+The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{aI+a'J\}$, the determinant identity $\det \mathsf{M}_2(A) = \langle A\rangle_{\natural}$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Split-Complex Polar Element Representation*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = a^2-a'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $\langle A\rangle_{\natural} = a^2-a'^2$. The coefficient space is the two-dimensional real vector space $\mathbb{D}$ itself, and the matrix of an operator is taken in the basis $\{1, j\}$ unless stated.
 
 ## The Left Regular Representation
 
@@ -144,23 +144,23 @@ which is the table of $\mathbb{Z}/2$ under addition, that is, the group ring $\m
 **Theorem.** For $A = a+j a'$,
 
 $$
-\det \mathsf{M}_2(A) = a^2 - a'^2 = N(A), \qquad \operatorname{Tr}\mathsf{M}_2(A) = 2a = A_+ + A_-.
+\det \mathsf{M}_2(A) = a^2 - a'^2 = \langle A\rangle_{\natural}, \qquad \operatorname{Tr}\mathsf{M}_2(A) = 2a = A_+ + A_-.
 $$
 
-**Proof.** The determinant of a $2\times2$ matrix with diagonal $a$ and off-diagonal $a'$ is $a^2-a'^2$, which is $N(A)$; the trace is $2a$, which is $A_+ + A_-$.
+**Proof.** The determinant of a $2\times2$ matrix with diagonal $a$ and off-diagonal $a'$ is $a^2-a'^2$, which is $\langle A\rangle_{\natural}$; the trace is $2a$, which is $A_+ + A_-$.
 
 **Corollary (multiplicativity of the norm).** Since $\mathsf{M}_2$ is a homomorphism and the determinant is multiplicative,
 
 $$
-N(AB) = \det \mathsf{M}_2(AB) = \det\bigl(\mathsf{M}_2(A)\mathsf{M}_2(B)\bigr) = \det \mathsf{M}_2(A)\det \mathsf{M}_2(B) = N(A)N(B),
+\langle AB\rangle_{\natural} = \det \mathsf{M}_2(AB) = \det\bigl(\mathsf{M}_2(A)\mathsf{M}_2(B)\bigr) = \det \mathsf{M}_2(A)\det \mathsf{M}_2(B) = \langle A\rangle_{\natural}\langle B\rangle_{\natural},
 $$
 
 which is the multiplicativity of the norm, proved here as a special case of the multiplicativity of the determinant.
 
-**Corollary (invertibility).** The matrix $\mathsf{M}_2(A)$ is invertible iff $\det \mathsf{M}_2(A) = N(A) \neq 0$, so $\mathbb{D}^\times$ corresponds to the invertible matrices in $M_2(\mathbb{D})$, and
+**Corollary (invertibility).** The matrix $\mathsf{M}_2(A)$ is invertible iff $\det \mathsf{M}_2(A) = \langle A\rangle_{\natural} \neq 0$, so $\mathbb{D}^\times$ corresponds to the invertible matrices in $M_2(\mathbb{D})$, and
 
 $$
-\mathsf{M}_2(A)^{-1} = \mathsf{M}_2(A^{-1}) = \frac{1}{N(A)}\begin{pmatrix} a & -a' \\ -a' & a \end{pmatrix}.
+\mathsf{M}_2(A)^{-1} = \mathsf{M}_2(A^{-1}) = \frac{1}{\langle A\rangle_{\natural}}\begin{pmatrix} a & -a' \\ -a' & a \end{pmatrix}.
 $$
 
 **The characteristic polynomial.** A $2\times2$ matrix has characteristic polynomial
@@ -220,30 +220,30 @@ The corresponding abstract statement — that $\Pi_{1,2}$ are the diagonal matri
 
 ## The Unit-Norm Subgroup and the Hyperbolic Rotations
 
-The unit-norm elements are those with $N(A) = 1$; in the matrix picture they are the matrices of determinant $1$ in $M_2(\mathbb{D})$,
+The unit-norm elements are those with $\langle A\rangle_{\natural} = 1$; in the matrix picture they are the matrices of determinant $1$ in $M_2(\mathbb{D})$,
 
 $$
-SO(1,1) \;\cong\; \mathsf{M}_2(\{A : N(A) = 1\}) = \left\{ \begin{pmatrix} a & a' \\ a' & a \end{pmatrix} : a^2 - a'^2 = 1 \right\},
+SO(1,1) \;\cong\; \mathsf{M}_2(\{A : \langle A\rangle_{\natural} = 1\}) = \left\{ \begin{pmatrix} a & a' \\ a' & a \end{pmatrix} : a^2 - a'^2 = 1 \right\},
 $$
 
 Writing the spacelike branch $a > 0$ in the hyperbolic parametrisation $a = \cosh t$, $a' = \sinh t$ gives
 
 $$
-R_j(t) = \mathsf{M}_2(e^{jt}) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix},
+R_j(t) = \mathsf{M}_2(\exp(jt)) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix},
 \qquad t \in \mathbb{R},
 $$
 
-the **hyperbolic rotation** matrix of angle $t$. It is the matrix of the one-parameter group $\{e^{jt}\}$, and the group law
+the **hyperbolic rotation** matrix of angle $t$. It is the matrix of the one-parameter group $\{\exp(jt)\}$, and the group law
 
 $$
 R_j(t)R_j(s) = R_j(t+s)
 $$
 
-is the multiplicativity of $\mathsf{M}_2$ combined with $e^{jt}e^{js} = e^{j(t+s)}$.
+is the multiplicativity of $\mathsf{M}_2$ combined with $\exp(jt)\exp(js) = \exp(j(t+s))$.
 
-**Proposition.** For every $t$, $R_j(t)$ preserves the norm: if $B = b+j b'$, then $N(R_j(t)B) = N(B)$.
+**Proposition.** For every $t$, $R_j(t)$ preserves the norm: if $B = b+j b'$, then $\langle R_j(t)B\rangle_{\natural} = \langle B\rangle_{\natural}$.
 
-**Proof.** $\det R_j(t) = \cosh^2 t - \sinh^2 t = 1$, and $N$ is the determinant of the coordinate matrix, so $N(R_j(t)B) = \det(R_j(t)\mathsf{M}_2(B)) = \det R_j(t)\det \mathsf{M}_2(B) = N(B)$.
+**Proof.** $\det R_j(t) = \cosh^2 t - \sinh^2 t = 1$, and $\langle\cdot\rangle_{\natural}$ is the determinant of the coordinate matrix, so $\langle R_j(t)B\rangle_{\natural} = \det(R_j(t)\mathsf{M}_2(B)) = \det R_j(t)\det \mathsf{M}_2(B) = \langle B\rangle_{\natural}$.
 
 So the hyperbolic rotations are exactly the identity component $SO^+(1,1)$ of the determinant-one subgroup of the regular matrix algebra, and their action is the linear action on $\mathbb{R}^2$ preserving $a^2-a'^2$. The unit-norm group has a second branch, $a < 0$, related to the first by the central reflection $-1$, and the whole group $\{N=1\}$ has two components; the matrix picture and the group structure are developed in *Split-Complex Exponential and Lie Group Structure* and in *Hyperbolic Rotations*, where $R_j(t)$ is the generator of the hyperbolic one-parameter group.
 
@@ -266,7 +266,7 @@ So $M_2(\mathbb{D})$ is its own centralizer and its own bicommutant, a **maximal
 
 The left regular representation $\mathsf{M}_2$ of $\mathbb{D}$ sends $A$ to the endomorphism $B \mapsto AB$ of the coefficient space $\mathbb{D}$, with matrix $\begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ in the basis $\{1, j\}$. The map is an algebra homomorphism and a faithful embedding, so $\mathbb{D}$ is isomorphic to the algebra $\{aI+a'J\}$ of real $2\times2$ matrices with $J^2 = I$, the hyperbolic analogue of the matrix model of $\mathbb{C}$. Because $\mathbb{D}$ is commutative the right regular representation coincides with the left, and the regular matrix is symmetric.
 
-The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a'^2 = N(A)$, and the trace is $2a$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - A_+)(\lambda - A_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(A) = \operatorname{diag}(a+a', a-a')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $A \mapsto A_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself.
+The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a'^2 = \langle A\rangle_{\natural}$, and the trace is $2a$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - A_+)(\lambda - A_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(A) = \operatorname{diag}(a+a', a-a')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $A \mapsto A_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself.
 
 ## Summary of Notation
 
@@ -284,8 +284,8 @@ The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a
 | $A_\pm = a\pm a'$ | Idempotent coordinates, the eigenvalues |
 | $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents |
 | $I_1 = \mathbb{R}\Pi_1$, $I_2 = \mathbb{R}\Pi_2$ | The two minimal left ideals |
-| $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$ | Hyperbolic rotation matrix, $\mathsf{M}_2(e^{jt})$ |
-| $N(A) = a^2-a'^2$ | Norm |
+| $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$ | Hyperbolic rotation matrix, $\mathsf{M}_2(\exp(jt))$ |
+| $\langle A\rangle_{\natural} = a^2-a'^2$ | Norm |
 
 ## Further Reading
 

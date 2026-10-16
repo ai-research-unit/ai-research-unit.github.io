@@ -12,7 +12,7 @@ as the single biquaternionic object that carries the electromagnetic field, and 
 
 Two features make the field strength worth treating separately. First, $\tilde{F}$ is *not* a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has **vanishing scalar part** and a **mixed real/imaginary vector part**: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the **biquaternion norm** evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $E^2 - c^2B^2$ and $\vec E\cdot\vec B$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.
 
-This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec V = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
+This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
 
 The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The three-dimensional complex **vector part** of $\mathbb{B}$ is denoted by its components $\vec F = \sum_k F_k e_k$, with the usual quaternion product $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$ for pure vectors. The conjugations are the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*} = \bar{\cdot}{}^{\natural}$, with the four real fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ (scalars), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector) and $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector). The symbol $c$ always denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0 = 1/\sqrt{\epsilon_0\mu_0}$.
 
@@ -123,7 +123,7 @@ $$
 \tilde{F} \;=\; \underbrace{i\sqrt{\epsilon}\,\vec E}_{\text{timelike planes}\;\in\,\mathbb{M}_+} \;-\; \underbrace{\sqrt{\mu}\,\vec H}_{\text{spacelike planes}\;\in\,\mathbb{M}_-}.
 $$
 
-The electric part is a combination of the three planes that contain the time direction, and the magnetic part a combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric field is a *boost-type* object and the magnetic field a *rotation-type* object, in the sense that the timelike planes generate the Lorentz boosts and the spacelike planes the rotations (*The 12 Products of the Biquaternion Complex Space*). The six components of the field are the six planes, and the field is a sum of one plane of each type.
+The electric part is a combination of the three planes that contain the time direction, and the magnetic part a combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric field is a *boost-type* object and the magnetic field a *rotation-type* object, in the sense that the timelike planes generate the Lorentz boosts and the spacelike planes the rotations (*The 12 Products of the Biquaternioid Complex Space*). The six components of the field are the six planes, and the field is a sum of one plane of each type.
 
 Two familiar facts are read off from the plane type and are recorded here because the corpus states them separately elsewhere. The **quaternion conjugate** of the field reverses the electric planes and fixes the magnetic ones,
 
@@ -131,14 +131,14 @@ $$
 \tilde{F}^{\natural} = -i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H,
 $$
 
-because the conjugate negates the vector part of each coefficient and the electric part is the imaginary vector while the magnetic part is the real vector; read on the fields this is $\vec E\to-\vec E$, $\vec H\to\vec H$, the polar-vector and axial-vector behaviour of the electric and magnetic fields. The **duality rotation** of the later section, $\tilde{F}\mapsto e^{i\varphi}\tilde{F}$, rotates one family of planes into the other: at $\varphi = \pi/2$ the factor is the central $i$, which carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and exchanges the two families exactly, while for general $\varphi$ it rotates the electric planes into the magnetic ones and back. This is why the duality rotation is a symmetry of the source-free vacuum equations and not of the equations with electric sources: it moves the field along the cylinder of constant $I_1+iI_2$ without preserving the planes separately.
+because the conjugate negates the vector part of each coefficient and the electric part is the imaginary vector while the magnetic part is the real vector; read on the fields this is $\vec E\to-\vec E$, $\vec H\to\vec H$, the polar-vector and axial-vector behaviour of the electric and magnetic fields. The **duality rotation** of the later section, $\tilde{F}\mapsto \exp(i\varphi)\tilde{F}$, rotates one family of planes into the other: at $\varphi = \pi/2$ the factor is the central $i$, which carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and exchanges the two families exactly, while for general $\varphi$ it rotates the electric planes into the magnetic ones and back. This is why the duality rotation is a symmetry of the source-free vacuum equations and not of the equations with electric sources: it moves the field along the cylinder of constant $I_1+iI_2$ without preserving the planes separately.
 
 ## The Biquaternion Norm and the Two Invariants
 
 The biquaternion norm on $\mathbb{B}$ is
 
 $$
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$
 
 For a pure-vector biquaternion the quaternion conjugate is $\tilde{F}^{\natural} = -\vec F$, and the quaternion product of two pure vectors is $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$. Hence
@@ -150,22 +150,22 @@ $$
 because $\vec F\times\vec F = 0$. The cross term drops out for the biquaternion norm of a vector, and one is left with the **general plain bilinear form**
 
 $$
-N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3} F_k^2,
+\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3} F_k^2,
 $$
 
 which is a complex scalar. Substituting $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ and expanding,
 
 $$
-N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3}\left(i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k\right)^2
+\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \sum_{k=1}^{3}\left(i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k\right)^2
 = -\epsilon\,\vec E^2 + \mu\,\vec H^2 - 2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H.
 $$
 
 This is the central computation of the article. Written with the magnetic induction $\vec B = \mu\vec H$ and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$, the real and imaginary parts become
 
 $$
-\mathrm{Re}\,N(\tilde{F}) = -\epsilon\left(\vec E^2 - c^2\vec B^2\right),
+\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} = -\epsilon\left(\vec E^2 - c^2\vec B^2\right),
 \qquad
-\mathrm{Im}\,N(\tilde{F}) = -2\epsilon c\,\vec E\cdot\vec B.
+\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural} = -2\epsilon c\,\vec E\cdot\vec B.
 $$
 
 The two real quantities appearing here are the two classical **Lorentz invariants** of the electromagnetic field, up to the factors $-\epsilon$ and $-2\epsilon c$:
@@ -179,11 +179,11 @@ $$
 so that
 
 $$
-N(\tilde{F}) = -\epsilon\left[\,I_1 + 2ic\,I_2\,\right],
+\langle\tilde{F}\rangle_{\natural} = -\epsilon\left[\,I_1 + 2ic\,I_2\,\right],
 \qquad
-I_1 = -\frac{1}{\epsilon}\,\mathrm{Re}\,N(\tilde{F}),
+I_1 = -\frac{1}{\epsilon}\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 \qquad
-I_2 = -\frac{1}{2\epsilon c}\,\mathrm{Im}\,N(\tilde{F}).
+I_2 = -\frac{1}{2\epsilon c}\,\mathrm{Im}\,\langle\tilde{F}\rangle_{\natural}.
 $$
 
 The biquaternion norm is a single complex number, and it carries exactly two real invariants. It is the *fully contracted* object built from the field strength with no derivatives and no extra vectors, so these are the only two independent invariants of the field; any other algebraic invariant is a function of $I_1$ and $I_2$.
@@ -191,21 +191,21 @@ The biquaternion norm is a single complex number, and it carries exactly two rea
 **The conjugate biquaternion norm.** The quaternion norm is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\tilde{F}^{\natural} = -\vec F$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \vec F^*$. For the biquaternion norm of the complex-conjugate field,
 
 $$
-N(\tilde{F}^*) = N(\tilde{F})^*,
+\langle\tilde{F}^*\rangle_{\natural} = \langle\tilde{F}\rangle_{\natural}^*,
 $$
 
-so the biquaternion norm and its conjugate carry the same two real invariants. Equivalently, the reverse product is $\tilde{F}^{\natural}\tilde{F} = \tilde{F}\tilde{F}^{\natural} = N(\tilde{F})$ for a pure vector. The two invariants are therefore the two real components of the complex biquaternion norm.
+so the biquaternion norm and its conjugate carry the same two real invariants. Equivalently, the reverse product is $\tilde{F}^{\natural}\tilde{F} = \tilde{F}\tilde{F}^{\natural} = \langle\tilde{F}\rangle_{\natural}$ for a pure vector. The two invariants are therefore the two real components of the complex biquaternion norm.
 
 **Vanishing of the biquaternion norm.** Because $\tilde{F}$ is a pure vector,
 
 $$
-\tilde{F}^2 = -\vec F\cdot\vec F = -N(\tilde{F}),
+\tilde{F}^2 = -\vec F\cdot\vec F = -\langle\tilde{F}\rangle_{\natural},
 $$
 
 so the biquaternion norm vanishes if and only if $\tilde{F}$ squares to zero. A nonzero element of $\mathbb{B}$ whose biquaternion norm vanishes is a **zero divisor**, and $\tilde{F}$ is nilpotent in that case. Thus
 
 $$
-N(\tilde{F}) = 0
+\langle\tilde{F}\rangle_{\natural} = 0
 \quad\Longleftrightarrow\quad
 I_1 = 0 \ \text{ and }\ I_2 = 0
 \quad\Longleftrightarrow\quad
@@ -257,13 +257,13 @@ The quantity $I_1$ is an ordinary scalar and $I_2$ is a **pseudoscalar**. Both a
 The two real fields can be combined into one complex three-vector, and this combination is the form in which the invariants look simplest. Define the **Riemann–Silberstein vector**
 
 $$
-\vec V = \vec E + ic\,\vec B.
+\vec N = \vec E + ic\,\vec B.
 $$
 
 The field-strength biquaternion is an overall constant multiple of it. Indeed, using $\vec B = \mu\vec H$ and $c = 1/\sqrt{\epsilon\mu}$,
 
 $$
-i\sqrt{\epsilon}\,\vec V = i\sqrt{\epsilon}\left(\vec E + ic\vec B\right)
+i\sqrt{\epsilon}\,\vec N = i\sqrt{\epsilon}\left(\vec E + ic\vec B\right)
 = i\sqrt{\epsilon}\,\vec E - \sqrt{\epsilon}\,c\,\vec B
 = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 = \tilde{F},
@@ -272,15 +272,15 @@ $$
 because $\sqrt{\epsilon}\,c\,\mu = \sqrt{\mu}$. Thus
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec V.
+\tilde{F} = i\sqrt{\epsilon}\,\vec N.
 $$
 
 This is the sense in which the Riemann–Silberstein vector and the field-strength biquaternion are **the same object**: they differ only by the constant $i\sqrt{\epsilon}$, so they carry identical information and have proportional invariants. The complex vector was introduced by Ludwik Silberstein in 1907, and the biquaternion formulation is its natural algebraic home: the complex vector is the vector part of a biquaternion with vanishing scalar part.
 
-The biquaternion norm is now immediate. Since $\vec V$ is a complex three-vector,
+The biquaternion norm is now immediate. Since $\vec N$ is a complex three-vector,
 
 $$
-\vec V\cdot\vec V = \left(\vec E + ic\vec B\right)\cdot\left(\vec E + ic\vec B\right)
+\vec N\cdot\vec N = \left(\vec E + ic\vec B\right)\cdot\left(\vec E + ic\vec B\right)
 = \vec E^2 - c^2\vec B^2 + 2ic\,\vec E\cdot\vec B
 = I_1 + 2ic\,I_2,
 $$
@@ -288,20 +288,20 @@ $$
 and therefore
 
 $$
-N(\tilde{F}) = \left(i\sqrt{\epsilon}\right)^2 \vec V\cdot\vec V = -\epsilon\left(I_1 + 2ic\,I_2\right),
+\langle\tilde{F}\rangle_{\natural} = \left(i\sqrt{\epsilon}\right)^2 \vec N\cdot\vec N = -\epsilon\left(I_1 + 2ic\,I_2\right),
 $$
 
-in agreement with the direct computation. The two invariants are the real and imaginary parts of the complex number $\vec V\cdot\vec V$, up to constant factors.
+in agreement with the direct computation. The two invariants are the real and imaginary parts of the complex number $\vec N\cdot\vec N$, up to constant factors.
 
 The Riemann–Silberstein vector also linearizes the source-free field equations. In vacuum or in a homogeneous medium with no free sources, Maxwell's equations give $\mathrm{rot}\,\vec E = -\partial_t\vec B$ and $\mathrm{rot}\,\vec B = c^{-2}\partial_t\vec E$, and combining these,
 
 $$
-i\,\partial_t \vec V = c\,\mathrm{rot}\,\vec V,
+i\,\partial_t \vec N = c\,\mathrm{rot}\,\vec N,
 \qquad
-\mathrm{div}\,\vec V = 0 .
+\mathrm{div}\,\vec N = 0 .
 $$
 
-The first equation has the form of a Schrödinger equation whose Hamiltonian is $c\,\mathrm{rot}$; the second is the transverse (divergence-free) condition inherited from $\mathrm{div}\,\vec D = 0$ and $\mathrm{div}\,\vec B = 0$. This is the form in which the radiative content of the field is most transparent, and the null condition $\vec V\cdot\vec V = 0$ is precisely the condition that the complex vector be a null vector of the complexified spatial metric. A field whose Riemann–Silberstein vector is null, i.e. for which $N(\tilde{F}) = 0$, is a radiation field.
+The first equation has the form of a Schrödinger equation whose Hamiltonian is $c\,\mathrm{rot}$; the second is the transverse (divergence-free) condition inherited from $\mathrm{div}\,\vec D = 0$ and $\mathrm{div}\,\vec B = 0$. This is the form in which the radiative content of the field is most transparent, and the null condition $\vec N\cdot\vec N = 0$ is precisely the condition that the complex vector be a null vector of the complexified spatial metric. A field whose Riemann–Silberstein vector is null, i.e. for which $\langle\tilde{F}\rangle_{\natural} = 0$, is a radiation field.
 
 Finally, the antisymmetric field tensor decomposes into its **self-dual and anti-self-dual parts**. Define the Hodge dual by its action on the fields,
 $$
@@ -311,19 +311,19 @@ $$
 $$
 which is the $\theta = \pi/2$ case of the duality rotation below. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
 $$
-\vec V(\star F) = -i\,\vec V,
+\vec N(\star F) = -i\,\vec N,
 \qquad
-\vec V^*(\star F) = +i\,\vec V^* .
+\vec N^*(\star F) = +i\,\vec N^* .
 $$
 The two combinations $F \pm i\star F$ are therefore the two parts, of opposite chirality,
 $$
-F + i\,\star F \ \longleftrightarrow\ 2\vec V = 2(\vec E + ic\vec B),
+F + i\,\star F \ \longleftrightarrow\ 2\vec N = 2(\vec E + ic\vec B),
 \qquad
-F - i\,\star F \ \longleftrightarrow\ 2\vec V^* = 2(\vec E - ic\vec B),
+F - i\,\star F \ \longleftrightarrow\ 2\vec N^* = 2(\vec E - ic\vec B),
 $$
-with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec V$ part ($\star F = -iF$) is the **self-dual** half and the $\vec V^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec V^*$ adds no new data: $\vec V$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and transform separately under the Lorentz group in the two three-dimensional complex representations — the two chiralities.
+with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec N$ part ($\star F = -iF$) is the **self-dual** half and the $\vec N^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec N^*$ adds no new data: $\vec N$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and transform separately under the Lorentz group in the two three-dimensional complex representations — the two chiralities.
 
-*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, the real-time convention with $\star^2 = -1$, which is the form in which the self-dual/anti-self-dual split is standard. Two sign conventions are in circulation for the star. We use the one in which $\star$ is the $\theta = \pi/2$ duality rotation, giving $\star\vec V = -i\vec V$; the **self-dual** half is then the $\vec V$ combination $F + i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half the $\vec V^*$ combination $F - i\star F$ ($\star$-eigenvalue $+i$). With the opposite sign of $\epsilon^{\mu\nu\rho\sigma}$ the two names are exchanged and nothing else changes. The component-wise dual read off from the $ict$ tensor above, $(\star F)_{0k} = B_k$, is $-i$ times this one and has $\star^2 = +1$; it is the same decomposition, with the two parts appearing as the real $\pm1$ eigenfields $F \pm \star F$ instead of the complex ones $F \pm i\star F$.
+*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, the real-time convention with $\star^2 = -1$, which is the form in which the self-dual/anti-self-dual split is standard. Two sign conventions are in circulation for the star. We use the one in which $\star$ is the $\theta = \pi/2$ duality rotation, giving $\star\vec N = -i\vec N$; the **self-dual** half is then the $\vec N$ combination $F + i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half the $\vec N^*$ combination $F - i\star F$ ($\star$-eigenvalue $+i$). With the opposite sign of $\epsilon^{\mu\nu\rho\sigma}$ the two names are exchanged and nothing else changes. The component-wise dual read off from the $ict$ tensor above, $(\star F)_{0k} = B_k$, is $-i$ times this one and has $\star^2 = +1$; it is the same decomposition, with the two parts appearing as the real $\pm1$ eigenfields $F \pm \star F$ instead of the complex ones $F \pm i\star F$.
 
 ## Duality Rotation
 
@@ -338,12 +338,12 @@ $$
 In terms of the Riemann–Silberstein vector this is a phase rotation,
 
 $$
-\vec V \mapsto e^{-i\theta}\,\vec V,
+\vec N \mapsto \exp(-i\theta)\,\vec N,
 \qquad
-\vec V^* \mapsto e^{+i\theta}\,\vec V^*,
+\vec N^* \mapsto \exp(+i\theta)\,\vec N^*,
 $$
 
-as one checks by expanding $e^{-i\theta}(\vec E + ic\vec B)$. The object that transforms with $e^{+i\theta}$ is the complex conjugate $\vec V^* = \vec E - ic\vec B$, not the quaternion conjugate $\bar{\vec V}$, which for a pure vector is $\bar{\vec V} = -\vec V$ and therefore transforms with $e^{-i\theta}$. The special case $\theta = \pi/2$,
+as one checks by expanding $\exp(-i\theta)(\vec E + ic\vec B)$. The object that transforms with $\exp(+i\theta)$ is the complex conjugate $\vec N^* = \vec E - ic\vec B$, not the quaternion conjugate $\bar{\vec N}$, which for a pure vector is $\bar{\vec N} = -\vec N$ and therefore transforms with $\exp(-i\theta)$. The special case $\theta = \pi/2$,
 
 $$
 \vec E \mapsto c\,\vec B,
@@ -355,10 +355,10 @@ is the classical **electric–magnetic duality** transformation.
 
 The transformation is a symmetry of the **source-free** Maxwell equations. Under it, $\mathrm{rot}\,\vec E' = -\partial_t\vec B'$ and $\mathrm{rot}\,\vec B' = c^{-2}\partial_t\vec E'$ are preserved, the two terms of each equation matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
 
-The effect of the duality rotation on the invariants is clean. Writing $\vec V\cdot\vec V = I_1 + 2icI_2$, the phase rotation gives
+The effect of the duality rotation on the invariants is clean. Writing $\vec N\cdot\vec N = I_1 + 2icI_2$, the phase rotation gives
 
 $$
-\vec V\cdot\vec V \mapsto e^{-2i\theta}\,\vec V\cdot\vec V,
+\vec N\cdot\vec N \mapsto \exp(-2i\theta)\,\vec N\cdot\vec N,
 $$
 
 so that
@@ -372,16 +372,16 @@ $$
 In other words, the pair $(I_1,\,2cI_2)$ rotates by the doubled angle $2\theta$; the quantity
 
 $$
-I_1^2 + 4c^2 I_2^2 = \left|\vec V\cdot\vec V\right|^2 = \frac{1}{\epsilon^2}\left|N(\tilde{F})\right|^2
+I_1^2 + 4c^2 I_2^2 = \left|\vec N\cdot\vec N\right|^2 = \frac{1}{\epsilon^2}\left|\langle\tilde{F}\rangle_{\natural}\right|^2
 $$
 
 is invariant under duality as well as under Lorentz transformations. Each of $I_1$ and $I_2$ is separately Lorentz invariant, but duality mixes them; only the combination above is invariant under both. Equivalently, in biquaternion language,
 
 $$
-N(\tilde{F}) \mapsto e^{-2i\theta}\,N(\tilde{F}),
+\langle\tilde{F}\rangle_{\natural} \mapsto \exp(-2i\theta)\,\langle\tilde{F}\rangle_{\natural},
 $$
 
-since the scalar $e^{-i\theta}$ commutes with quaternion conjugation, which fixes scalars. Duality is not a Lorentz transformation: it is an independent $U(1)$ symmetry of the source-free equations that rotates the complex biquaternion norm.
+since the scalar $\exp(-i\theta)$ commutes with quaternion conjugation, which fixes scalars. Duality is not a Lorentz transformation: it is an independent $U(1)$ symmetry of the source-free equations that rotates the complex biquaternion norm.
 
 ## How the Invariants Constrain the Field
 
@@ -436,10 +436,10 @@ $$
 It is Hermitian, $\tilde{\Sigma}^{*} = \tilde{\Sigma}$, with real scalar part $W$ and imaginary vector part $(i/c)\vec S$. For an element of that shape the biquaternion norm is real — and indefinite — and
 
 $$
-N(\tilde{\Sigma}) = \tilde{\Sigma}\circ\tilde{\Sigma}^{\natural} = W^2 - \frac{\|\vec S\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 ,
+\langle\tilde{\Sigma}\rangle_{\natural} = \tilde{\Sigma}\circ\tilde{\Sigma}^{\natural} = W^2 - \frac{\|\vec S\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 ,
 $$
 
-The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation as $\langle\langle\tilde{\Sigma}\rangle\rangle^2 = \tilde{\Sigma}\circ\tilde{\Sigma}^-$; on a Hermitian element the corpus's norm $N$ and the source's pseudonorm agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $N(\tilde{\Sigma}) = \tfrac14 I_1^2 + I_2^2$.
+The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation as $\langle\langle\tilde{\Sigma}\rangle\rangle^2 = \tilde{\Sigma}\circ\tilde{\Sigma}^-$; on a Hermitian element the corpus's norm $\langle\cdot\rangle_{\natural}$ and the source's pseudonorm agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $\langle\tilde{\Sigma}\rangle_{\natural} = \tfrac14 I_1^2 + I_2^2$.
 
 ## Summary
 
@@ -448,7 +448,7 @@ The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\m
 The biquaternion norm of the field strength is the complex scalar
 
 $$
-N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_{k=1}^{3} F_k^2
+\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_{k=1}^{3} F_k^2
 = -\epsilon\left(I_1 + 2ic\,I_2\right),
 \qquad
 I_1 = \vec E^2 - c^2\vec B^2,
@@ -458,9 +458,9 @@ $$
 
 Its real and imaginary parts are the two Lorentz invariants of the field; the biquaternion norm and its complex conjugate carry the same pair. Both are invariant under the proper orthochronous Lorentz group, $I_1$ is parity-even and $I_2$ is a pseudoscalar. The biquaternion norm vanishes exactly when the field is null, in which case the field-strength biquaternion is a zero divisor.
 
-The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec V = \vec E + ic\vec B$, whose self-product $\vec V\cdot\vec V = I_1 + 2icI_2$ is the complex number whose real and imaginary parts are the invariants, and which obeys the source-free equation $i\partial_t\vec V = c\,\mathrm{rot}\,\vec V$ with $\mathrm{div}\,\vec V = 0$.
+The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ is the complex number whose real and imaginary parts are the invariants, and which obeys the source-free equation $i\partial_t\vec N = c\,\mathrm{rot}\,\vec N$ with $\mathrm{div}\,\vec N = 0$.
 
-Duality is the rotation $\vec V\mapsto e^{-i\theta}\vec V$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant. Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field.
+Duality is the rotation $\vec N\mapsto \exp(-i\theta)\vec N$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant. Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field.
 
 ## Summary of Notation
 
@@ -479,14 +479,14 @@ Duality is the rotation $\vec V\mapsto e^{-i\theta}\vec V$; at $\theta = \pi/2$ 
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $N(\tilde{F}) = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
+| $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$ | First Lorentz invariant (scalar) |
 | $I_2 = \vec E\cdot\vec B$ | Second Lorentz invariant (pseudoscalar) |
-| $\vec V = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec V$ |
+| $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B, -\vec E/c)$, $\star^2 = -1$ |
 | $W = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
-| $\tilde{\Sigma} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_0 + \tfrac{i}{c}\vec S$ | Energy–momentum biquaternion (Hermitian); $N(\tilde{\Sigma}) = W^2 - \|\vec S\|^2/c^2$ |
+| $\tilde{\Sigma} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_0 + \tfrac{i}{c}\vec S$ | Energy–momentum biquaternion (Hermitian); $\langle\tilde{\Sigma}\rangle_{\natural} = W^2 - \|\vec S\|^2/c^2$ |
 | $\vec v$ | Boost (frame) velocity |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

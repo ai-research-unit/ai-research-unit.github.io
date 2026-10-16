@@ -106,8 +106,8 @@ The table is the complete classification of the exponentials of $\mathbb{R}$. Th
 
 The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.
 
-- **The identity component.** The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = e^{\theta} > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.
-- **The nontrivial component.** The negative root $\nu = -1$ gives $\exp(-\theta) = e^{-\theta} > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore **not** in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.
+- **The identity component.** The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = \exp(\theta) > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.
+- **The nontrivial component.** The negative root $\nu = -1$ gives $\exp(-\theta) = \exp(-\theta) > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore **not** in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.
 
 The exponential of the real algebra is thus the positive ray alone, and the sign factor is not produced by it. The correct statement of the exponential form is therefore
 
@@ -140,7 +140,7 @@ The verification is immediate in the basis: $1$ is fixed and $1^2 = +e_0$, so th
 
 The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{R}$ the scale is the continuous fixed slot, and the second occupied slot is the compact slot, which in $\mathbb{R}$ is discrete and carries the sign. The remaining two slots are absent, for the following reasons.
 
-**No boost, and no continuous rotor or phase.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_0$ **off** the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_0$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_0$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $e^{\pm\phi}$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The unit group contains exactly one continuous one-parameter subgroup, the scale.
+**No boost, and no continuous rotor or phase.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_0$ **off** the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_0$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_0$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $\exp(\pm\phi)$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The unit group contains exactly one continuous one-parameter subgroup, the scale.
 
 **The sign is the whole compact part.** In the complex algebra the second factor is the connected circle $U(1)$, and the group of units is connected. Here the second factor is the disconnected group $O(1) = \{\pm1\}$, and it is the component group of $\mathbb{R}^\times$. The two-dimensional definite case is the first in which the second factor is connected, and the passage from $O(1)$ to $U(1)$ is the first place the family acquires a nontrivial continuous compact factor.
 
@@ -236,7 +236,7 @@ The first two lines are a positive and a negative number: same modulus shape, op
 The exponential of the real algebra is injective,
 
 $$
-e^{t_1} = e^{t_2} \iff t_1 = t_2,
+\exp(t_1) = \exp(t_2) \iff t_1 = t_2,
 $$
 
 so its kernel is $\{0\}$ and the continuous coordinate of a positive element is unique. The non-uniqueness that the complex and higher cases exhibit is absent here: the only ambiguity is the sign, which is a discrete choice and not a kernel element. In this sense the real algebra is the one member of the family whose continuous exponential coordinate is canonical.
@@ -246,8 +246,8 @@ so its kernel is $\{0\}$ and the continuous coordinate of a positive element is 
 | algebra | norm | modulus | unit factor | occupied slots | unit group |
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $a^2$, definite | $\sqrt{N} = \lvert a\rvert$, positive real | $\operatorname{sgn}a \in \{\pm1\}$ | scale, compact sign (rotor and phase together, discrete) | two components, $\mathbb{R}_{>0}\times O(1)$ |
-| $\mathbb{C}$ | $u^2+v^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | connected, $\mathbb{R}_{>0}\times U(1)$ |
-| $\mathbb{D}$ | $u^2-v^2$, indefinite | $\sqrt{\lvert N\rvert}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
+| $\mathbb{C}$ | $u^2+v^2$, definite | $\sqrt{N}$, positive real | $\exp(i\theta)$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | connected, $\mathbb{R}_{>0}\times U(1)$ |
+| $\mathbb{D}$ | $u^2-v^2$, indefinite | $\sqrt{\lvert N\rvert}$, positive real | $\exp(\phi j)$ or $j\exp(\phi j)$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
 
 The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.
 

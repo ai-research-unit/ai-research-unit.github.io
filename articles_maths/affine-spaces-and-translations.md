@@ -5,7 +5,7 @@
 
 A vector space has a distinguished point, its origin, and every linear statement is made with respect to it. An affine space is what remains when the origin is forgotten: a set of points on which the additive group of a vector space acts freely and transitively, so that any two points determine a difference vector but no point is singled out. This is a torsor structure, and it is the correct language for geometry, since points, lines, planes and barycentres are all affine notions and none of them survives the loss of translational symmetry that a fixed origin would impose.
 
-Throughout, $F$ is a field, $V$ is an $F$-vector space of dimension $n$, and an affine space with direction $V$ is a set $\mathbb{A}$ equipped with a free and transitive action of $(V,+)$. Translating between the affine and linear pictures is done by choosing an origin, and every construction in the article is checked to be independent of that choice. The affine group $\operatorname{Aff}(V)=V \rtimes \operatorname{GL}(V)$ is the symmetry group of the affine structure, exactly as $\operatorname{GL}(V)$ is the symmetry group of the linear structure. The Euclidean case, where the group is $V \rtimes O(V,Q)$, is treated in Part IV.
+Throughout, $F$ is a field, $V$ is an $F$-vector space of dimension $n$, and an affine space with direction $V$ is a set $\mathbb{A}$ equipped with a free and transitive action of $(V,+)$. Translating between the affine and linear pictures is done by choosing an origin, and every construction in the article is checked to be independent of that choice. The affine group $\operatorname{Aff}(V)=V \rtimes \operatorname{GL}(V)$ is the symmetry group of the affine structure, exactly as $\operatorname{GL}(V)$ is the symmetry group of the linear structure. The Euclidean case, where the group is $V \rtimes O(V,\mathfrak{Q})$, is treated in Part IV.
 
 ## Affine Spaces
 
@@ -189,7 +189,7 @@ The translations $t_v(a)=a+v$ form a normal subgroup isomorphic to $(V,+)$ and a
 
 Affine combinations $\sum\lambda_ia_i$ with $\sum\lambda_i=1$ are well defined independently of the origin and give barycentres when the weights are equal and the number of points is invertible; affinely independent points give barycentric coordinates, and an affine basis of $n+1$ points gives every point a unique coordinate vector summing to $1$. Affine subspaces $a+W$ have a well-defined direction, two subspaces with the same direction are equal or disjoint, and a nonempty intersection has direction $W \cap U$; in dimensions two and three this is the incidence theory of points, lines and planes. Affine maps are the maps with a linear part, and affine automorphisms form the affine group.
 
-The Euclidean group $V \rtimes O(V,Q)$ and the classification of its isometries are treated in Part IV.
+The Euclidean group $V \rtimes O(V,\mathfrak{Q})$ and the classification of its isometries are treated in Part IV.
 
 ## Summary of Notation
 

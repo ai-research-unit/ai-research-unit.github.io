@@ -208,7 +208,7 @@ $$
 h(\tilde{P},\tilde{Q}) = \operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\,\varsigma(Q_\mu)
 $$
 
-is Hermitian, compatible, nondegenerate and positive definite, so the inequality holds for it with the diagonal $\sum_\mu\lvert Q_\mu\rvert^{2}$ and the constant one, the seminorm being the Euclidean norm of *The Norm Defined by a Form*, §*The Biquaternion Trace Form*. The general quaternionic sesquilinear pairing $\operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$, of signature $(2,6)$, is indefinite, and for it the inequality **fails**: it is the caution of *The Indefinite Case and the Signature*, §*The Biquaternion Caution*, and the example separates the positive semi-definite hypothesis of the article from the Hermitian one. The two forms are the forms of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
+is Hermitian, compatible, nondegenerate and positive definite, so the inequality holds for it with the diagonal $\sum_\mu\lvert Q_\mu\rvert^{2}$ and the constant one, the seminorm being the Euclidean norm of *The Norm Defined by a Form*, §*The Biquaternion Trace Form*. The general quaternionic sesquilinear pairing $\operatorname{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$, of signature $(2,6)$, is indefinite, and for it the inequality **fails**: it is the caution of *The Indefinite Case and the Signature*, §*The Biquaternion Caution*, and the example separates the positive semi-definite hypothesis of the article from the Hermitian one. The two forms are the forms of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ### The Unbounded Positive Form
 

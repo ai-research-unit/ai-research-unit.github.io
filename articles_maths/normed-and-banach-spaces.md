@@ -15,11 +15,11 @@ Throughout, $\mathbb{K}$ denotes $\mathbb{R}$ or $\mathbb{C}$ and all spaces are
 
 **Example.** (i) $\mathbb{K}^n$ with $\|x\|_p=(\sum_i|x_i|^p)^{1/p}$ for $1 \le p<\infty$, and $\|x\|_\infty=\max_i|x_i|$.
 
-(ii) The sequence space $\ell^p$ of $x$ with $\sum_i|x_i|^p<\infty$, $1 \le p<\infty$, under $\|x\|_p$; the space $c_0$ of sequences tending to $0$ and $\ell^\infty$ of bounded sequences under $\|\cdot\|_\infty$.
+(ii) The sequence space $\ell^{n}$ of $x$ with $\sum_i|x_i|^p<\infty$, $1 \le p<\infty$, under $\|x\|_p$; the space $c_0$ of sequences tending to $0$ and $\ell^\infty$ of bounded sequences under $\|\cdot\|_\infty$.
 
 (iii) $C(K)$ for a compact Hausdorff space $K$, under $\|f\|_\infty=\sup_{x \in K}|f(x)|$.
 
-(iv) The $L^p(\mu)$ spaces, the standard Banach spaces of Part III: they are built from the integral, so they are named here and constructed there, where the measure is available.
+(iv) The $L^{n}(\mu)$ spaces, the standard Banach spaces of Part III: they are built from the integral, so they are named here and constructed there, where the measure is available.
 
 (v) For normed spaces $X,Y$, the space $B(X,Y)$ of bounded linear maps under the operator norm defined below; this is the standard example of a normed space whose elements are themselves maps.
 
@@ -57,7 +57,7 @@ $$
 
 **Definition.** A linear bijection $T:X \to Y$ is a **topological isomorphism** if $T$ and $T^{-1}$ are bounded, and an **isometry** if $\|Tx\|=\|x\|$ for all $x$; an isometric isomorphism is a **linear isometry**. Two norms are equivalent exactly when the identity is a topological isomorphism.
 
-**Example.** The map $\ell^p \to (\ell^q)^*$, $x \mapsto (y \mapsto \sum_i x_i\overline{y_i})$, is an isometric isomorphism for $1<p<\infty$ with $1/p+1/q=1$; the same formula identifies $\ell^1$ with $(c_0)^*$ and $\ell^\infty$ with $(\ell^1)^*$. The dual of $C(K)$ is the space of finite signed or complex measures by the Riesz–Markov theorem — a Part III theorem, quoted here for the identification — and the duality of the $L^p$ spaces has the same shape as $(\ell^p)^* \cong \ell^q$; that statement is measure-theoretic and is Part III's, quoted there.
+**Example.** The map $\ell^{n} \to (\ell^{m})^*$, $x \mapsto (y \mapsto \sum_i x_i\overline{y_i})$, is an isometric isomorphism for $1<p<\infty$ with $1/n + 1/m=1$; the same formula identifies $\ell^1$ with $(c_0)^*$ and $\ell^\infty$ with $(\ell^1)^*$. The dual of $C(K)$ is the space of finite signed or complex measures by the Riesz–Markov theorem — a Part III theorem, quoted here for the identification — and the duality of the $L^{n}$ spaces has the same shape as $(\ell^{n})^* \cong \ell^{m}$; that statement is measure-theoretic and is Part III's, quoted there.
 
 ## Completeness
 
@@ -111,9 +111,9 @@ $$
 
 ### Hahn–Banach
 
-**Theorem (Hahn–Banach, analytic form).** Let $X$ be a real vector space, $p:X \to \mathbb{R}$ a seminorm, $M \subseteq X$ a subspace and $f:M \to \mathbb{R}$ linear with $f \le p$ on $M$. Then $f$ extends to a linear $\tilde f:X \to \mathbb{R}$ with $\tilde f \le p$ on $X$. Over $\mathbb{C}$ the extension preserves the norm of a bounded functional.
+**Theorem (Hahn–Banach, analytic form).** Let $X$ be a real vector space, $p:X \to \mathbb{R}$ a seminorm, $M \subseteq X$ a subspace and $f:M \to \mathbb{R}$ linear with $f \le p$ on $M$. Then $f$ extends to a linear $f^{\mathrm{ext}}:X \to \mathbb{R}$ with $f^{\mathrm{ext}} \le p$ on $X$. Over $\mathbb{C}$ the extension preserves the norm of a bounded functional.
 
-*Proof (sketch).* The one-step extension: for $x \notin M$, the values $\tilde f(x)=t$ making $\tilde f \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension.
+*Proof (sketch).* The one-step extension: for $x \notin M$, the values $f^{\mathrm{ext}}(x)=t$ making $f^{\mathrm{ext}} \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension.
 
 **Corollary.** (i) For every $x \neq 0$ in a normed space there is $f \in X^*$ with $\|f\|=1$ and $f(x)=\|x\|$; hence $X^*$ separates points and $\|x\|=\sup_{\|f\|\le1}|f(x)|$. (ii) A subspace $M$ is dense if and only if every $f \in X^*$ vanishing on $M$ is zero. (iii) If $Y \subseteq X$ is a closed subspace and $x \notin Y$, there is $f \in X^*$ with $f|_Y=0$ and $f(x) \neq 0$.
 
@@ -127,7 +127,7 @@ $$
 
 *Proof.* The completeness and the isometry were established above; the topologies are defined by the stated families of functionals, and Banach–Alaoglu is the statement that the product of the closed discs $\{|f(x)| \le \|x\|\}$ is compact, the ball being closed inside it.
 
-**Example.** $\ell^p$ is reflexive for $1<p<\infty$, while $\ell^1$ and $\ell^\infty$ are not; $c_0$ is not reflexive, since $c_0^{**}=\ell^\infty \neq c_0$. Hilbert spaces are reflexive, by the Riesz representation theorem of the companion article on Banach and Hilbert spaces.
+**Example.** $\ell^{n}$ is reflexive for $1<p<\infty$, while $\ell^1$ and $\ell^\infty$ are not; $c_0$ is not reflexive, since $c_0^{**}=\ell^\infty \neq c_0$. Hilbert spaces are reflexive, by the Riesz representation theorem of the companion article on Banach and Hilbert spaces.
 
 ## Quotients, Direct Sums and Completion
 
@@ -139,9 +139,9 @@ $$
 
 *Proof.* Equivalence of the three norms reduces to equivalence of the corresponding norms on $\mathbb{K}^n$, together with homogeneity. Cauchy sequences are Cauchy in each coordinate and conversely, which gives both the completeness statement and the diagonal limit. For the countable case fix nonzero $x_i \in X_i$ with $\sum_i\|x_i\|<\infty$, and put $x^{(k)}=(x_1,\dots,x_k,0,\dots)$. Then $\|x^{(k)}-x^{(m)}\|$ is $\sum_{i>\min(k,m)}^{\max(k,m)}\|x_i\|$ for the sum norm and $\max_{i>\min(k,m)}\|x_i\|$ for the supremum norm, and both tend to $0$, so $(x^{(k)})$ is Cauchy in either norm. It has no limit in the direct sum: a limit $y$ there has finite support, and for $j$ outside that support and $k \ge j$ one has $\|x^{(k)}-y\| \ge \|x_j\|$, a fixed positive number, so the distance does not tend to $0$. Hence the direct sum is incomplete in both norms, and the two completions are the sequences with $\sum_i\|x_i\|<\infty$ and those with $\|x_i\| \to 0$.
 
-**Corollary (completion).** Every normed space $X$ has a completion $\widehat X$, unique up to isometric isomorphism, which is a Banach space containing $X$ as a dense subspace. The completion of the finitely supported sequences under $\|\cdot\|_p$ is $\ell^p$.
+**Corollary (completion).** Every normed space $X$ has a completion $\widehat X$, unique up to isometric isomorphism, which is a Banach space containing $X$ as a dense subspace. The completion of the finitely supported sequences under $\|\cdot\|_p$ is $\ell^{n}$.
 
-*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^p$.
+*Proof.* Complete the metric space $X$; the vector operations and the norm extend by continuity and uniformity, and the result is a Banach space. Uniqueness is the universal property of the completion of a metric space. The finitely supported sequences are dense in $\ell^{n}$.
 
 ## Summary
 
@@ -149,9 +149,9 @@ A norm on a vector space gives it a metric and a topology; two norms are equival
 
 A Banach space is a complete normed space; in it absolute convergence implies convergence, and conversely that property characterises completeness. The closed unit ball is compact exactly in finite dimension, by Riesz's lemma, and separable Banach spaces need not have a Schauder basis, although separable Hilbert spaces do.
 
-The four cornerstones rest on completeness and Baire category: the uniform boundedness principle says that a pointwise bounded family of bounded operators on a Banach space is uniformly bounded; the open mapping theorem says that a surjective bounded map between Banach spaces is open, so a bounded bijection has a bounded inverse; the closed graph theorem says that a linear map between Banach spaces with closed graph is bounded; and the Hahn–Banach theorem extends a linear functional bounded by a seminorm from a subspace to the whole space, giving the existence of norming functionals, the separation of points, and the description $\|x\|=\sup_{\|f\|\le1}|f(x)|$. The dual space and the canonical isometry $J:X \to X^{**}$ complete the picture; reflexivity is the surjectivity of $J$, it holds for $\ell^p$ with $1<p<\infty$ and for Hilbert spaces, and it fails for $c_0$, $\ell^1$ and $\ell^\infty$.
+The four cornerstones rest on completeness and Baire category: the uniform boundedness principle says that a pointwise bounded family of bounded operators on a Banach space is uniformly bounded; the open mapping theorem says that a surjective bounded map between Banach spaces is open, so a bounded bijection has a bounded inverse; the closed graph theorem says that a linear map between Banach spaces with closed graph is bounded; and the Hahn–Banach theorem extends a linear functional bounded by a seminorm from a subspace to the whole space, giving the existence of norming functionals, the separation of points, and the description $\|x\|=\sup_{\|f\|\le1}|f(x)|$. The dual space and the canonical isometry $J:X \to X^{**}$ complete the picture; reflexivity is the surjectivity of $J$, it holds for $\ell^{n}$ with $1<p<\infty$ and for Hilbert spaces, and it fails for $c_0$, $\ell^1$ and $\ell^\infty$.
 
-A quotient $X/M$ by a closed subspace is a normed space with the quotient norm, the quotient map is bounded and open, and the quotient is complete when $X$ is; a finite direct sum carries the equivalent sum, maximum and Euclidean norms and is complete exactly when every summand is, and every normed space has a unique completion, the completion of the finitely supported sequences under $\|\cdot\|_p$ being $\ell^p$ and that of $C[0,1]$ under $\|\cdot\|_1$ being $L^1[0,1]$.
+A quotient $X/M$ by a closed subspace is a normed space with the quotient norm, the quotient map is bounded and open, and the quotient is complete when $X$ is; a finite direct sum carries the equivalent sum, maximum and Euclidean norms and is complete exactly when every summand is, and every normed space has a unique completion, the completion of the finitely supported sequences under $\|\cdot\|_p$ being $\ell^{n}$ and that of $C[0,1]$ under $\|\cdot\|_1$ being $L^1[0,1]$.
 
 ## Summary of Notation
 
@@ -163,7 +163,7 @@ A quotient $X/M$ by a closed subspace is a normed space with the quotient norm, 
 | $B(X,Y)$ | bounded linear maps |
 | $X^*=B(X,\mathbb{K})$ | dual space |
 | $X^{**}$, $J$ | bidual and canonical isometry |
-| $c_0$, $\ell^p$, $\ell^\infty$ | sequence spaces |
+| $c_0$, $\ell^{n}$, $\ell^\infty$ | sequence spaces |
 | $C(K)$ | continuous functions on a compact Hausdorff space |
 | $c_1$, $c_2$ | equivalence constants for norms |
 | $M$, $Y$ | subspace, closed subspace |

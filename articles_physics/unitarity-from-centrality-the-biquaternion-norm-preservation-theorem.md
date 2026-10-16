@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **biquaternion norm** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
+Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}
 $$
@@ -10,9 +10,9 @@ preserves it. The answer is a norm-preservation theorem with a single organising
 
 Three statements are proved. The first is that $\Gamma_{\tilde{U}}$ preserves the Hermitian norm if and only if $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*}=e_0$. The second is that $\Gamma_{\tilde{U}}$ scales the biquaternion norm by a **central scalar**,
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{Q}),
+N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural},
 $$
-so that it preserves the biquaternion norm exactly when $|N(\tilde{U})|=1$, i.e. when $N(\tilde{U})$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word *centrality* in the title: the product $\tilde{U}^{*}\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_0$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus
+so that it preserves the biquaternion norm exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$, i.e. when $\langle\tilde{U}\rangle_{\natural}$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word *centrality* in the title: the product $\tilde{U}^{*}\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_0$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus
 
 $$
 \Gamma_{\tilde{U}}\ \text{is multiplicative} \iff \tilde{U}^{*}\tilde{U}=e_0 \iff \tilde{U}\ \text{unitary},
@@ -32,7 +32,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\vec h$ one has $N(\tilde{H})=(h_0^2-|\vec h|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the **anti-Hermitian** ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\tilde{\Xi}=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and a pure state is $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$.
+The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\vec h$ one has $\langle\tilde{H}\rangle_{\natural}=(h_0^2-|\vec h|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A root of $-e_0$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the **anti-Hermitian** ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\tilde{\Xi}=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and a pure state is $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$.
 
 ## The Two Norms
 
@@ -53,13 +53,13 @@ This form is positive definite of signature $(8,0)$ on the real eight-dimensiona
 
 **The biquaternion norm.** The second object is
 $$
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_0^2+x_1^2+x_2^2+x_3^2\bigr)e_0\in\mathbb{C}_{\mathbb{B}},
 $$
-a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, so $N$ is multiplicative,
+a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}e_0=\det M(\tilde{Q})\,e_0$, so $\langle\cdot\rangle_{\natural}$ is multiplicative,
 $$
-N(\tilde{Q}\tilde{Y})=N(\tilde{Q})N(\tilde{Y}),
+\langle\tilde{Q}\tilde{Y}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Y}\rangle_{\natural},
 $$
-and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\vec h$ one has $N(\tilde{H})=(h_0^2-|\vec h|^2)e_0$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
+and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\vec h$ one has $\langle\tilde{H}\rangle_{\natural}=(h_0^2-|\vec h|^2)e_0$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
 
 The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.
 
@@ -143,13 +143,13 @@ The theorem extends from the norm to the pairing by polarization, and it extends
 
 **Theorem 2.** Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
 $$
-N\bigl(\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\bigl|N(\tilde{U})\bigr|^2\,N(\tilde{Q})
+N\bigl(\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural}
 \qquad
 \text{for all }\tilde{Q},
 $$
-where $|N(\tilde{U})|^2=N(\tilde{U})\,N(\tilde{U})^{*}$ is a non-negative real scalar, the complex conjugate being taken coefficientwise on the central element $N(\tilde{U})$. Consequently $\Gamma_{\tilde{U}}$ preserves the biquaternion norm if and only if
+where $|\langle\tilde{U}\rangle_{\natural}|^2=\langle\tilde{U}\rangle_{\natural}\,\langle\tilde{U}\rangle_{\natural}^{*}$ is a non-negative real scalar, the complex conjugate being taken coefficientwise on the central element $\langle\tilde{U}\rangle_{\natural}$. Consequently $\Gamma_{\tilde{U}}$ preserves the biquaternion norm if and only if
 $$
-\bigl|N(\tilde{U})\bigr|=1 ,
+\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|=1 ,
 $$
 i.e. if and only if the biquaternion norm of $\tilde{U}$ lies on the unit circle of the centre.
 
@@ -159,11 +159,11 @@ $$
 =\det M(\tilde{U})\,\det M(\tilde{Q})\,\det M(\tilde{U})^{*}
 =\bigl|\det M(\tilde{U})\bigr|^2\det M(\tilde{Q}).
 $$
-Since $\det M(\tilde{Q})=N(\tilde{Q})$ for every $\tilde{Q}$, and since $N(\tilde{Q})e_0=\det M(\tilde{Q})\,e_0$, the stated identity follows. Preservation for all $\tilde{Q}$ is equivalent to $|N(\tilde{U})|^2=1$, i.e. $|N(\tilde{U})|=1$.
+Since $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ for every $\tilde{Q}$, and since $\langle\tilde{Q}\rangle_{\natural}e_0=\det M(\tilde{Q})\,e_0$, the stated identity follows. Preservation for all $\tilde{Q}$ is equivalent to $|\langle\tilde{U}\rangle_{\natural}|^2=1$, i.e. $|\langle\tilde{U}\rangle_{\natural}|=1$.
 
-Two features of the proof are worth isolating. First, the scaling factor $|N(\tilde{U})|^2$ is a **central** scalar: it is a real non-negative multiple of $e_0$, so it commutes with everything and multiplies the biquaternion norm uniformly. The biquaternion norm of an element is itself central-valued, and its modulus is therefore a classical number; preservation of the biquaternion norm is a condition on that number. This is the second appearance of the centre, and it is of a different kind from the first: there the centre appeared as the condition for the multiplicative anomaly to be scalar, here as the target space of the biquaternion norm itself.
+Two features of the proof are worth isolating. First, the scaling factor $|\langle\tilde{U}\rangle_{\natural}|^2$ is a **central** scalar: it is a real non-negative multiple of $e_0$, so it commutes with everything and multiplies the biquaternion norm uniformly. The biquaternion norm of an element is itself central-valued, and its modulus is therefore a classical number; preservation of the biquaternion norm is a condition on that number. This is the second appearance of the centre, and it is of a different kind from the first: there the centre appeared as the condition for the multiplicative anomaly to be scalar, here as the target space of the biquaternion norm itself.
 
-Second, the hypothesis $|N(\tilde{U})|=1$ is genuinely weaker than unitarity. A unitary $\tilde{U}$ has $|\det M(\tilde{U})|=1$, hence $|N(\tilde{U})|=1$, so every unitary preserves the biquaternion norm; but the converse fails, as the next section's counterexample shows. The two theorems are therefore not equivalent, and the difference between them is the difference between the quantum norm and the determinant.
+Second, the hypothesis $|\langle\tilde{U}\rangle_{\natural}|=1$ is genuinely weaker than unitarity. A unitary $\tilde{U}$ has $|\det M(\tilde{U})|=1$, hence $|\langle\tilde{U}\rangle_{\natural}|=1$, so every unitary preserves the biquaternion norm; but the converse fails, as the next section's counterexample shows. The two theorems are therefore not equivalent, and the difference between them is the difference between the quantum norm and the determinant.
 
 ### Putting the two together
 
@@ -185,23 +185,23 @@ By Theorem 1 these are exactly the elements for which $\Gamma_{\tilde{U}}$ prese
 
 **The unit-norm elements.** Define
 $$
-SL(2,\mathbb{C})=\bigl\{\tilde{U}\in\mathbb{B}:\ N(\tilde{U}) = \langle\tilde{U},\tilde{U}\rangle_{\natural}=e_0\bigr\}=\bigl\{\tilde{U}:\ \det M(\tilde{U})=1\bigr\},
+SL(2,\mathbb{C})=\bigl\{\tilde{U}\in\mathbb{B}:\ \langle\tilde{U}\rangle_{\natural} = \langle\tilde{U},\tilde{U}\rangle_{\natural}=e_0\bigr\}=\bigl\{\tilde{U}:\ \det M(\tilde{U})=1\bigr\},
 $$
 the elements of unit norm. By Theorem 2 these preserve the biquaternion norm, with the scaling factor exactly $1$; they need not be unitary, and they need not be norm-preserving for the Hermitian norm. This is the group that acts on the biquaternion norm, and it is the group that the companion articles on the algebra's real structure identify with the determinant-preserving transformations.
 
-**The exact biquaternion-norm group.** Theorem 2 gives preservation of the biquaternion norm under the weaker condition $|N(\tilde{U})|=1$, and the group is
+**The exact biquaternion-norm group.** Theorem 2 gives preservation of the biquaternion norm under the weaker condition $|\langle\tilde{U}\rangle_{\natural}|=1$, and the group is
 $$
-G_N=\bigl\{\tilde{U}\in\mathbb{B}^{\times}:\ |N(\tilde{U})|=1\bigr\}.
+G_N=\bigl\{\tilde{U}\in\mathbb{B}^{\times}:\ |\langle\tilde{U}\rangle_{\natural}|=1\bigr\}.
 $$
 It contains $SL(2,\mathbb{C})$ as the subgroup with phase $1$, and every element factors as a central phase times a unit-norm element,
 $$
 G_N=U(1)\cdot SL(2,\mathbb{C}),
 \qquad
-\tilde{U}=\lambda\,\tilde{U}_0,\quad |\lambda|=1,\quad N(\tilde{U}_0)=e_0 ,
+\tilde{U}=\lambda\,\tilde{U}_0,\quad |\lambda|=1,\quad \langle\tilde{U}_0\rangle_{\natural}=e_0 ,
 $$
-because if $N(\tilde{U})=\mu e_0$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $N(\tilde{U}/\lambda)=e_0$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_0$, and $N(\lambda e_0)=\lambda^2e_0$, so $|N|=1$ gives $|\lambda|=1$ while $N=e_0$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_0\}$.
+because if $\langle\tilde{U}\rangle_{\natural}=\mu e_0$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $\langle\tilde{U}/\lambda\rangle_{\natural}=e_0$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_0$, and $\langle \lambda e_0\rangle_{\natural}=\lambda^2e_0$, so $|N|=1$ gives $|\lambda|=1$ while $N=e_0$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_0\}$.
 
-The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $N(\tilde{U})=e_0$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $U(2)$ is four-real-dimensional. The inclusions are
+The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde{U}\rangle_{\natural}=e_0$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $U(2)$ is four-real-dimensional. The inclusions are
 $$
 SU(2)=U(2)\cap SL(2,\mathbb{C})\ \subset\ U(2)\ \subset\ G_N=U(1)\cdot SL(2,\mathbb{C}),
 $$
@@ -217,35 +217,35 @@ the general plain sesquilinear algebraic norm interpretation the scalar part alo
 
 **The unitary conjugation is an isometry of all four forms.** The conjugation by a unitary preserves **all four** forms of *Conventions in the Biquaternion Universe* at once — the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the Krein form — and not the general plain sesquilinear form alone. The computation reduces to two facts already in hand. A unitary splits as a central phase times a determinant-one part,
 $$
-U(2)=U(1)\cdot SU(2),\qquad \tilde{U}=\lambda\tilde{U}_0,\quad |\lambda|=1,\quad N(\tilde{U}_0)=e_0 ,
+U(2)=U(1)\cdot SU(2),\qquad \tilde{U}=\lambda\tilde{U}_0,\quad |\lambda|=1,\quad \langle\tilde{U}_0\rangle_{\natural}=e_0 ,
 $$
 and the phase is invisible to conjugation, $\Gamma_{\lambda e_0}=\mathrm{id}$, so only the $SU(2)$ part acts; and that part is a **unit real quaternion**, so for it the bar is the identity and the natural sign and the star agree, $\bar{\tilde{U}}_0=\tilde{U}_0$, $\tilde{U}_0^{\natural}=\tilde{U}_0^{*}=\tilde{U}_0^{-1}$. The four forms are $\mathrm{Sc}(\tilde{Z}^{a}\tilde{Y}^{b})$ with $a$ the identity or the natural sign on the first slot and $b$ the identity or the star on the second; with the bar trivial and the natural sign equal to the star, each dressing is carried along by the automorphism $\Gamma_{\tilde{U}_0}$, and each of the four forms is preserved by the multiplicativity of $\Gamma_{\tilde{U}_0}$ together with $\mathrm{Sc}(\tilde{U}_0\tilde{X}\tilde{U}_0^{*})=\mathrm{Sc}(\tilde{X})$.
 
-**Which group preserves which pair.** The four forms are not preserved by the same larger group, and the split follows the first slot. The two forms that carry the natural sign there — the general quaternionic bilinear form and the Krein form — scale by the **central factor** $\lvert N(\tilde{U})\rvert^{2}$ under a conjugation,
+**Which group preserves which pair.** The four forms are not preserved by the same larger group, and the split follows the first slot. The two forms that carry the natural sign there — the general quaternionic bilinear form and the Krein form — scale by the **central factor** $\lvert \langle\tilde{U}\rangle_{\natural}\rvert^{2}$ under a conjugation,
 $$
-\langle\Gamma_{\tilde{U}}\tilde{P},\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\lvert N(\tilde{U})\rvert^{2}\langle\tilde{P},\tilde{Q}\rangle_{\natural},
+\langle\Gamma_{\tilde{U}}\tilde{P},\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\lvert \langle\tilde{U}\rangle_{\natural}\rvert^{2}\langle\tilde{P},\tilde{Q}\rangle_{\natural},
 \qquad
-\langle\Gamma_{\tilde{U}}\tilde{P},\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural*}=\lvert N(\tilde{U})\rvert^{2}\langle\tilde{P},\tilde{Q}\rangle_{\natural*} ,
+\langle\Gamma_{\tilde{U}}\tilde{P},\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural*}=\lvert \langle\tilde{U}\rangle_{\natural}\rvert^{2}\langle\tilde{P},\tilde{Q}\rangle_{\natural*} ,
 $$
-both resting on the identity $\tilde{U}^{*}\bar{\tilde{U}}=\overline{N(\tilde{U})}e_0$, the counterpart of $\tilde{U}\tilde{U}^{\natural}=N(\tilde{U})e_0$. They are therefore preserved **exactly by $G_N$**, the larger group. The two forms without the natural sign — the general plain bilinear and the general plain sesquilinear — are preserved **exactly by $U(2)$**: for the general plain sesquilinear form the diagonal of a conjugate reads
+both resting on the identity $\tilde{U}^{*}\bar{\tilde{U}}=\overline{\langle\tilde{U}\rangle_{\natural}}e_0$, the counterpart of $\tilde{U}\tilde{U}^{\natural}=\langle\tilde{U}\rangle_{\natural}e_0$. They are therefore preserved **exactly by $G_N$**, the larger group. The two forms without the natural sign — the general plain bilinear and the general plain sesquilinear — are preserved **exactly by $U(2)$**: for the general plain sesquilinear form the diagonal of a conjugate reads
 $$
 \mathrm{Sc}\bigl(\tilde{U}\tilde{P}\tilde{U}^{*}(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{D}\tilde{Q}^{*}\tilde{D}\bigr),\qquad \tilde{D}=\tilde{U}^{*}\tilde{U},
 $$
-which returns $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ for all $\tilde{P}$ and $\tilde{Q}$ only when $\tilde{D}=e_0$ — setting $\tilde{Q}=e_0$ already forces $\tilde{D}^{2}=e_0$, and a Hermitian positive $\tilde{D}$ with that square is $e_0$. The common part of the two groups is $U(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ has $N(\tilde{U})=e_0$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
+which returns $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ for all $\tilde{P}$ and $\tilde{Q}$ only when $\tilde{D}=e_0$ — setting $\tilde{Q}=e_0$ already forces $\tilde{D}^{2}=e_0$, and a Hermitian positive $\tilde{D}$ with that square is $e_0$. The common part of the two groups is $U(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ has $\langle\tilde{U}\rangle_{\natural}=e_0$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
 
 **A caution on the word isometry.** The isometry group of a form, read in the standard linear sense as the full group of linear maps that preserve it, is far larger than the unitary group, and it is not one group but three: $O_4(\mathbb{C})$ of real dimension twelve for the two bilinear forms, $U(4)$ of real dimension sixteen and compact for the general plain sesquilinear form, and $U(1,3)$ of real dimension sixteen and non-compact for the Krein form. What the unitaries supply is not one of those groups but the **inner isometries**, the conjugations by an element of the algebra, and because the central phase acts trivially the acting group is $PU(2)\cong SO(3)$, of real dimension three. The two statements do not compete, and a reader should hold both: every conjugation by a unitary is an isometry of each of the four forms, and the isometry group of each form is very much larger than the image of the unitary group. The sharper form of the first statement is that these inner isometries are exactly the isometries that also preserve the algebra's multiplication — the $\mathbb{C}$-linear isometries preserving the product are the inner ones and no others. That is why the four forms survive a unitary conjugation together: the reason is not an accident of the coefficients, it is that the conjugation is an automorphism of the algebra as well as an isometry of the forms, and the four forms are four dressings of the one product that the automorphism preserves.
 
-**A remark on the direction of the two accounts.** Theorem 1 is a statement about the algebra's own conjugation action: it says which inner maps are automorphisms. Theorem 2 is a statement about the determinant: it says that the biquaternion norm detects $\tilde{U}$ only through the central number $N(\tilde{U})$. The two are related by the fact that the unitaries are precisely the elements with $N(\tilde{U})$ a unit-modulus central scalar **and** $\tilde{U}^{*}\tilde{U}=e_0$, the second condition being the genuinely non-abelian one. In the centre, equality cannot distinguish $U(2)$ from $G_N$; the non-central defect $\tilde{U}^{*}\tilde{U}$ is what does.
+**A remark on the direction of the two accounts.** Theorem 1 is a statement about the algebra's own conjugation action: it says which inner maps are automorphisms. Theorem 2 is a statement about the determinant: it says that the biquaternion norm detects $\tilde{U}$ only through the central number $\langle\tilde{U}\rangle_{\natural}$. The two are related by the fact that the unitaries are precisely the elements with $\langle\tilde{U}\rangle_{\natural}$ a unit-modulus central scalar **and** $\tilde{U}^{*}\tilde{U}=e_0$, the second condition being the genuinely non-abelian one. In the centre, equality cannot distinguish $U(2)$ from $G_N$; the non-central defect $\tilde{U}^{*}\tilde{U}$ is what does.
 
 ## Worked Examples and Counterexamples
 
 The following computations exhibit each hypothesis failing when it is dropped.
 
-**Example 1: a non-unitary element of unit norm.** Take $\tilde{U}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ in the algebra, with $\lambda=e^{t}$, which the matrix model sends to $\mathrm{diag}(e^{t},e^{-t})$. Its determinant is $1$, so $N(\tilde{U})=e_0$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
+**Example 1: a non-unitary element of unit norm.** Take $\tilde{U}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde{U}\rangle_{\natural}=e_0$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$
 \tilde{U}^{*}\tilde{U}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
-which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_0+i e_1)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $N$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
+which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_0+i e_1)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
 
 **Example 2: a central scaling.** Take $\tilde{U}=\lambda_0 e_0$ with $\lambda_0>0$, $\lambda_0\neq1$. This defect is central, $\tilde{U}^{*}\tilde{U}=\lambda_0^2e_0$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_0^2$: for all $\tilde{Q},\tilde{Y}$,
 $$
@@ -253,7 +253,7 @@ $$
 \qquad
 \Gamma_{\tilde{U}}(\tilde{Q})=\lambda_0^2\tilde{Q}.
 $$
-The biquaternion norm scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\bigl|\lambda_0^2\bigr|^2N(\tilde{Q})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
+The biquaternion norm scales as $\langle\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\lambda_0^4\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\bigl|\lambda_0^2\bigr|^2\langle\tilde{Q}\rangle_{\natural}$, in agreement with Theorem 2 with $|\langle\tilde{U}\rangle_{\natural}|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.
 
 **Example 3: a non-central root of $-e_0$.** Take $J=e_3$, so $J^2=-e_0$, and take the Hermitian generator $\tilde{H}=i e_1$ (i.e. $\vec h=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}J\tilde{H}$,
 $$
@@ -269,9 +269,9 @@ $$
 \qquad
 \mathrm{Tr}\bigl(\exp(Gt)^\dagger\exp(Gt)\bigr)=2\cosh(2\hbar^{-1}t),
 $$
-which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $N(\exp Gt)=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_0=e_0$, so this non-unitary element has $|N|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=e_3$ with the Hermitian element $ie_1$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
+which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_0=e_0$, so this non-unitary element has $|N|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=e_3$ with the Hermitian element $ie_1$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
 
-**Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{Q}=\tilde\Pi(\hat u)$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\hat u$, the Hermitian norm of that particular $\tilde{Q}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{Q}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
+**Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{Q}=\tilde\Pi(\vec u)$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\vec u$, the Hermitian norm of that particular $\tilde{Q}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{Q}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
 
 ## Unitarity from Centrality: the Flow
 
@@ -331,13 +331,13 @@ Third, the **forced centrality of the unit in the dynamics** is algebraic in a w
 
 ## Summary
 
-The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
+The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
 
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|N(\tilde{U})\bigr|^2N(\tilde{Q}),
+N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\langle\tilde{Q}\rangle_{\natural},
 $$
 
-so it is preserved exactly when $|N(\tilde{U})|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=U(1)\cdot SL(2,\mathbb{C})$, which contains $U(2)$; the intersection is $U(2)$ itself, while $U(2)\cap SL(2,\mathbb{C})=SU(2)$.
+so it is preserved exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=U(1)\cdot SL(2,\mathbb{C})$, which contains $U(2)$; the intersection is $U(2)$ itself, while $U(2)\cap SL(2,\mathbb{C})=SU(2)$.
 
 The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde{Z}=e_0$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde{Z}$ is central the multiplicative anomaly collapses to the scalar $\tilde{Z}$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_0$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.
 
@@ -352,13 +352,13 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian (Hilbert–Schmidt) pairing |
 | $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action |
 | $\tilde{Z}=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
 | $U(2)=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_0\}$ | Unitary group; preserves the Hermitian norm |
-| $SL(2,\mathbb{C})=\{\tilde{U}:N(\tilde{U})=e_0\}$ | Unit-norm group |
-| $G_N=\{\tilde{U}:|N(\tilde{U})|=1\}=U(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
+| $SL(2,\mathbb{C})=\{\tilde{U}:\langle\tilde{U}\rangle_{\natural}=e_0\}$ | Unit-norm group |
+| $G_N=\{\tilde{U}:|\langle\tilde{U}\rangle_{\natural}|=1\}=U(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
 | $J$ | Root of $-e_0$, $J^2=-e_0$ |
 | $G=-\hbar^{-1}J\tilde{H}$ | Generator of the state-vector flow |
 | $M(\tilde{Q})$ | $2\times2$ matrix model, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathbb{C}$-linear |

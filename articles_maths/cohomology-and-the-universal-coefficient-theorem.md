@@ -170,10 +170,10 @@ the map $\beta$ being that of **coefficient reduction**; it detects whether an i
 **Theorem (universal coefficient spectral sequence).** Let $X$ be a topological space, $R$ a commutative ring with $1\neq0$ and $G$ an $R$-module. There is a convergent first-quadrant spectral sequence
 
 $$
-E_2^{p,q} = \operatorname{Ext}^p_R\bigl(H_q(X;R),G\bigr)\ \Longrightarrow\ H^{p+q}(X;G),
+E_2^{n,m} = \operatorname{Ext}^p_R\bigl(H_q(X;R),G\bigr)\ \Longrightarrow\ H^{p+q}(X;G),
 $$
 
-natural in $X$ and in $G$ as an $R$-module, with $E_2^{p,q} = 0$ for $p\geq2$. Consequently $E_2 = E_\infty$, and the filtration of $H^n(X;G)$ has exactly two pieces, $E_\infty^{0,n} = \operatorname{Hom}_R(H_n(X;R),G)$ and $E_\infty^{1,n-1} = \operatorname{Ext}^1_R(H_{n-1}(X;R),G)$, whose extension is $H^n(X;G)$.
+natural in $X$ and in $G$ as an $R$-module, with $E_2^{n,m} = 0$ for $p\geq2$. Consequently $E_2 = E_\infty$, and the filtration of $H^n(X;G)$ has exactly two pieces, $E_\infty^{0,n} = \operatorname{Hom}_R(H_n(X;R),G)$ and $E_\infty^{1,n-1} = \operatorname{Ext}^1_R(H_{n-1}(X;R),G)$, whose extension is $H^n(X;G)$.
 
 *Proof.* The spectral sequence is the one of the double complex obtained from a projective resolution of $G$ and a projective resolution of the chain complex $C_*(X;R)$, and it is the standard spectral sequence of these two resolutions, as in Part I's *Spectral Sequences* and *Derived Functors*; its $E_2$ page is as stated and it converges to the cohomology of the total complex, which is $H^*(X;G)$. The vanishing of the columns $p\geq2$ forces all differentials out of $E_2$ to land in zero, so $E_2 = E_\infty$, and only the two columns with $p = 0,1$ can contribute to total degree $n$.
 

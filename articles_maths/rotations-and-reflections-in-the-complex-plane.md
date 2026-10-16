@@ -7,7 +7,7 @@ This article describes the group of rotations and reflections of the plane as it
 
 The treatment is mathematical throughout. A rotation is an element of $SO(2)$ and a reflection is an element of $O(2)$; no physical object is introduced, and no physical interpretation is invoked.
 
-The complex algebra is taken from *Complex Algebra*, with conjugation $\bar A$, the norm $N(A) = A\bar A$, and the real inner product $\operatorname{Re}(\bar A B)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
+The complex algebra is taken from *Complex Algebra*, with conjugation $\bar A$, the norm $N(A) = A\bar A$, and the real inner product $\operatorname{Re}(\bar A B)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
 
 ## The Unit Circle and Its Group Structure
 
@@ -47,19 +47,19 @@ The map $A \mapsto (|A|, A/|A|)$ is an isomorphism of groups from $\mathbb{C}^\t
 
 **Theorem.** $U(1)$ is compact and connected.
 
-**Proof.** It is the image of the compact interval $[0, 2\pi]$ under the continuous map $\theta \mapsto e^{i\theta}$, hence compact; and that same map is continuous from the connected interval, hence the image is connected.
+**Proof.** It is the image of the compact interval $[0, 2\pi]$ under the continuous map $\theta \mapsto \exp(i\theta)$, hence compact; and that same map is continuous from the connected interval, hence the image is connected.
 
 **Theorem.** The map
 
 $$
-\theta \mapsto e^{i\theta}, \qquad \mathbb{R} \to U(1),
+\theta \mapsto \exp(i\theta), \qquad \mathbb{R} \to U(1),
 $$
 
 is a surjective continuous group homomorphism from $(\mathbb{R}, +)$ onto $U(1)$ with kernel $2\pi\mathbb{Z}$. Hence $U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ as topological groups.
 
-**Proof.** Since $e^{i(\theta+\varphi)} = e^{i\theta} e^{i\varphi}$, it is a homomorphism. Every unit is $e^{i\phi}$ for some $\phi$ modulo $2\pi$, so it is surjective, and $e^{i\theta} = 1$ exactly when $\theta \in 2\pi\mathbb{Z}$. The first isomorphism theorem for topological groups gives the quotient.
+**Proof.** Since $\exp(i(\theta+\varphi)) = \exp(i\theta) \exp(i\varphi)$, it is a homomorphism. Every unit is $\exp(i\phi)$ for some $\phi$ modulo $2\pi$, so it is surjective, and $\exp(i\theta) = 1$ exactly when $\theta \in 2\pi\mathbb{Z}$. The first isomorphism theorem for topological groups gives the quotient.
 
-The parameter $\theta$ is the **angle** of the unit $u = e^{i\theta}$. It is defined modulo $2\pi$; no continuous single-valued function $U(1) \to \mathbb{R}$ selects it, and the multivalued argument is discussed below.
+The parameter $\theta$ is the **angle** of the unit $u = \exp(i\theta)$. It is defined modulo $2\pi$; no continuous single-valued function $U(1) \to \mathbb{R}$ selects it, and the multivalued argument is discussed below.
 
 ## Multiplication by a Unit Is a Rotation
 
@@ -95,7 +95,7 @@ and every element of $SO(2)$ is the rotation $R_u$ for exactly one $u \in U(1)$,
 
 **Proof.** The product rule $R_{uv} = R_u \circ R_v$ and $R_1 = \mathrm{id}$ follow from associativity of multiplication, so the map is a homomorphism; it is injective because $R_u = R_v$ implies $u = R_u(1) = R_v(1) = v$. For surjectivity, let $L \in SO(2)$ and put $u = L(1)$, so that $|u| = |1| = 1$ and $u \in U(1)$. The map $R_u^{-1} \circ L$ then fixes $1$ and preserves distances; a distance-preserving $\mathbb{R}$-linear map fixing $1$ and preserving the determinant is the identity, since it carries the orthonormal basis $\{1, i\}$ to an orthonormal basis with the same orientation and the same first vector. Hence $L = R_u$.
 
-So $U(1)$ and $SO(2)$ are two descriptions of one group: the multiplicative group of units of $\mathbb{C}$ and the group of orientation-preserving isometries of the plane fixing the origin. Multiplication by the unit $u = e^{i\theta}$ is the rotation through the angle $\theta$.
+So $U(1)$ and $SO(2)$ are two descriptions of one group: the multiplicative group of units of $\mathbb{C}$ and the group of orientation-preserving isometries of the plane fixing the origin. Multiplication by the unit $u = \exp(i\theta)$ is the rotation through the angle $\theta$.
 
 ### Why the Sandwich Form Degenerates
 
@@ -143,17 +143,17 @@ $$
 S_u(S_u(A)) = u\overline{u\bar A} = u\bar u A = |u|^2 A = A,
 $$
 
-so $S_u$ is an involution. For the determinant, write $u = e^{2i\alpha}$; then $S_u$ sends $1$ to $e^{2i\alpha}$ and $i$ to $e^{2i\alpha}(-i) = -e^{2i\alpha} i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$.
+so $S_u$ is an involution. For the determinant, write $u = \exp(2i\alpha)$; then $S_u$ sends $1$ to $\exp(2i\alpha)$ and $i$ to $\exp(2i\alpha)(-i) = -\exp(2i\alpha) i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$.
 
-**Theorem (fixed line).** Write $u = e^{2i\alpha}$. The fixed-point set of $S_u$ is the line through the origin of direction $e^{i\alpha}$:
+**Theorem (fixed line).** Write $u = \exp(2i\alpha)$. The fixed-point set of $S_u$ is the line through the origin of direction $\exp(i\alpha)$:
 
 $$
-\{A \in \mathbb{C} : S_u(A) = A\} = \{t e^{i\alpha} : t \in \mathbb{R}\}.
+\{A \in \mathbb{C} : S_u(A) = A\} = \{t \exp(i\alpha) : t \in \mathbb{R}\}.
 $$
 
-**Proof.** The equation $u\bar A = A$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar A = \bar u A$. Write $A = re^{i\phi}$ with $r \ge 0$; then $e^{-i\phi} = e^{-2i\alpha} e^{i\phi}$, that is, $e^{2i\phi} = e^{2i\alpha}$, so $\phi \equiv \alpha \pmod \pi$. Conversely every $A = te^{i\alpha}$ with $t$ real satisfies $u\bar A = e^{2i\alpha}t e^{-i\alpha} = t e^{i\alpha} = A$.
+**Proof.** The equation $u\bar A = A$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar A = \bar u A$. Write $A = r\exp(i\phi)$ with $r \ge 0$; then $\exp(-i\phi) = \exp(-2i\alpha) \exp(i\phi)$, that is, $\exp(2i\phi) = \exp(2i\alpha)$, so $\phi \equiv \alpha \pmod \pi$. Conversely every $A = t\exp(i\alpha)$ with $t$ real satisfies $u\bar A = \exp(2i\alpha)t \exp(-i\alpha) = t \exp(i\alpha) = A$.
 
-Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\alpha$, where $u = e^{2i\alpha}$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $e^{i(\alpha + \pi/2)}$ it acts as $-1$, since $S_u(e^{i(\alpha+\pi/2)}) = e^{2i\alpha} e^{-i(\alpha+\pi/2)} = e^{i(\alpha - \pi/2)} = -e^{i(\alpha+\pi/2)}$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
+Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\alpha$, where $u = \exp(2i\alpha)$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $\exp(i(\alpha + \pi/2))$ it acts as $-1$, since $S_u(\exp(i(\alpha+\pi/2))) = \exp(2i\alpha) \exp(-i(\alpha+\pi/2)) = \exp(i(\alpha - \pi/2)) = -\exp(i(\alpha+\pi/2))$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
 
 **Example.** For $u = 1$ the reflection $S_1(A) = \bar A$ is complex conjugation, with fixed line the real axis. For $u = -1$ the reflection $S_{-1}(A) = -\bar A$ has fixed line the imaginary axis. The first is the nontrivial field automorphism of $\mathbb{C}$; the second is its composition with the rotation by $\pi$, and it is not a field automorphism, since it sends $1$ to $-1$.
 
@@ -199,15 +199,15 @@ $$
 S_u(S_v(A)) = u\overline{v\bar A} = u\bar v A = R_{u\bar v}(A).
 $$
 
-**Corollary (the angle).** Let $S_u$ be the reflection in the line at angle $\alpha$ and $S_v$ the reflection in the line at angle $\beta$, so that $u = e^{2i\alpha}$ and $v = e^{2i\beta}$. Then
+**Corollary (the angle).** Let $S_u$ be the reflection in the line at angle $\alpha$ and $S_v$ the reflection in the line at angle $\beta$, so that $u = \exp(2i\alpha)$ and $v = \exp(2i\beta)$. Then
 
 $$
-S_u \circ S_v = R_{e^{2i(\alpha - \beta)}},
+S_u \circ S_v = R_{\exp(2i(\alpha - \beta))},
 $$
 
 the rotation through the angle $2(\alpha - \beta)$.
 
-**Proof.** $u \bar v = e^{2i\alpha} e^{-2i\beta} = e^{2i(\alpha-\beta)}$.
+**Proof.** $u \bar v = \exp(2i\alpha) \exp(-2i\beta) = \exp(2i(\alpha-\beta))$.
 
 Two reflections in lines meeting at angle $\phi = \alpha - \beta$ therefore compose to a rotation through $2\phi$, twice the angle between the lines. When the lines coincide, $\phi = 0$ and the composition is the identity, consistent with $S_u^2 = \mathrm{id}$.
 
@@ -297,19 +297,19 @@ $$
 \mathrm{U}(1) = i\mathbb{R} \subset \mathbb{C},
 $$
 
-a one-dimensional abelian real Lie algebra, and the exponential is $\exp(it) = e^{it}$, which maps this line onto $U(1)$ with kernel $2\pi i\mathbb{Z}$. Written as a rotation, $R_{e^{i\theta}}(A) = e^{i\theta}A$, and $\exp : \mathrm{U}(1) \to SO(2)$ is surjective with kernel $2\pi i \mathbb{Z}$; the identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to the one-dimensional Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ of $SO(2)$.
+a one-dimensional abelian real Lie algebra, and the exponential is $\exp(it) = \exp(it)$, which maps this line onto $U(1)$ with kernel $2\pi i\mathbb{Z}$. Written as a rotation, $R_{\exp(i\theta)}(A) = \exp(i\theta)A$, and $\exp : \mathrm{U}(1) \to SO(2)$ is surjective with kernel $2\pi i \mathbb{Z}$; the identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to the one-dimensional Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ of $SO(2)$.
 
-**Theorem.** The determinant and the trace of the rotation $R_u$ with $u = e^{i\theta}$ are
+**Theorem.** The determinant and the trace of the rotation $R_u$ with $u = \exp(i\theta)$ are
 
 $$
 \det R_u = 1, \qquad \operatorname{tr} R_{u} = 2\cos\theta,
 $$
 
-and the eigenvalues of $R_u$, over $\mathbb{C}$, are $e^{i\theta}$ and $e^{-i\theta}$. For a reflection the eigenvalues are $+1$ and $-1$, and $\det S_u = -1$, $\operatorname{tr} S_u = 0$.
+and the eigenvalues of $R_u$, over $\mathbb{C}$, are $\exp(i\theta)$ and $\exp(-i\theta)$. For a reflection the eigenvalues are $+1$ and $-1$, and $\det S_u = -1$, $\operatorname{tr} S_u = 0$.
 
-**Proof.** The determinant is $N(u) = 1$ and the trace is twice the real part of $u$, as for any multiplication operator on $\mathbb{C}$; the eigenvalues of $R_u$ are the roots of $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$, namely $e^{\pm i\theta}$. The reflection was treated in the fixed-line theorem, where its two eigenvalues $+1$ and $-1$ on the fixed and perpendicular lines were exhibited, so its trace is $0$ and its determinant $-1$.
+**Proof.** The determinant is $N(u) = 1$ and the trace is twice the real part of $u$, as for any multiplication operator on $\mathbb{C}$; the eigenvalues of $R_u$ are the roots of $\lambda^2 - 2\cos\theta\,\lambda + 1 = 0$, namely $\exp(\pm i\theta)$. The reflection was treated in the fixed-line theorem, where its two eigenvalues $+1$ and $-1$ on the fixed and perpendicular lines were exhibited, so its trace is $0$ and its determinant $-1$.
 
-The trace recovers $\cos\theta$ and hence $\theta$ up to sign: it identifies the pair $\{R_u, R_{u^{-1}}\}$ and cannot distinguish a rotation from its inverse. The angle itself is not a continuous single-valued function on all of $SO(2)$, because $SO(2)$ is a circle and $\theta$ unwraps it; this is exactly the multivaluedness of the argument $\arg u$. Choosing a branch of $\arg$ on a slit circle gives a local angle, and the total change of the angle around the circle is $2\pi$, the winding number of $\theta \mapsto e^{i\theta}$ about the origin.
+The trace recovers $\cos\theta$ and hence $\theta$ up to sign: it identifies the pair $\{R_u, R_{u^{-1}}\}$ and cannot distinguish a rotation from its inverse. The angle itself is not a continuous single-valued function on all of $SO(2)$, because $SO(2)$ is a circle and $\theta$ unwraps it; this is exactly the multivaluedness of the argument $\arg u$. Choosing a branch of $\arg$ on a slit circle gives a local angle, and the total change of the angle around the circle is $2\pi$, the winding number of $\theta \mapsto \exp(i\theta)$ about the origin.
 
 ## Rotations, Automorphisms and Similarities
 
@@ -355,11 +355,11 @@ Every orientation-preserving isometry with $u = 1$ is a translation, and with $u
 
 ## Summary
 
-The unit circle $U(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto e^{i\theta}$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ by the polar decomposition.
+The unit circle $U(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto \exp(i\theta)$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(A) = uA$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $A \mapsto uAu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(A) = A\bar A$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(A) = uA$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $A \mapsto uAu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(A) = A\bar A$. Multiplication, not conjugation, is the natural action.
 
-The reflections are the maps $S_u(A) = u\bar A$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = e^{2i\alpha}$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
+The reflections are the maps $S_u(A) = u\bar A$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = \exp(2i\alpha)$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
 The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant homomorphism onto $\{\pm 1\}$ and kernel $SO(2) = U(1)$ of index $2$. It is the semidirect product $O(2) \cong U(1) \rtimes \mathbb{Z}/2\mathbb{Z}$ with the generator acting by inversion $u \mapsto \bar u$, it is compact with two circle components, and its identity component is the rotation group. The exponential identifies $\mathrm{SO}(2) \cong \mathbb{R}$ with the Lie algebra of $SO(2)$ and $\mathrm{U}(1) = i\mathbb{R}$ with that of $U(1)$. Adding translations gives $\operatorname{Isom}(\mathbb{C}) \cong \mathbb{C} \rtimes O(2)$, in which the linear part is an element of $O(2)$ and the orientation is the sign of its determinant.
 
@@ -374,8 +374,8 @@ The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant hom
 | $N(A) = A\bar A$ | Norm |
 | $\operatorname{Re}(\bar A B)$ | Real inner product |
 | $U(1) = \{u : \lvert u\rvert = 1\}$ | Unit circle, unit group of $\mathbb{C}$ |
-| $e^{i\theta} = \cos\theta + i\sin\theta$ | Exponential of an angle |
-| $R_u(A) = uA$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = e^{i\theta}$ |
+| $\exp(i\theta) = \cos\theta + i\sin\theta$ | Exponential of an angle |
+| $R_u(A) = uA$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = \exp(i\theta)$ |
 | $S_u(A) = u\bar A$ | Reflection determined by the unit $u$ |
 | $O(2)$ | Orthogonal group of the plane; rotations and reflections |
 | $SO(2)$ | Rotation group, $\cong U(1)$ |

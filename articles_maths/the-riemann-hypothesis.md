@@ -59,7 +59,7 @@ each to six decimal places, these being the exact ordinates of zeros of $\zeta$ 
 $$
 Z(t) = 2\sum_{n\leq N}\frac{\cos(\theta(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
 $$
-for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.
+for the function $Z(t) = \exp(i\theta(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.
 
 **Remark (the extent of the verification).** The numerical verification of the hypothesis has reached the first $10^{13}$ zeros in computations without rigorous error bounds, and all the zeros with $\lvert\gamma\rvert < 3\cdot10^{12}$ in a rigorous computation; no zero off the line has ever been found, and none has ever been proved to exist.
 
@@ -93,11 +93,11 @@ for the function $Z(t) = e^{i\theta(t)}\zeta(\tfrac12+it)$, which is real for re
 
 **(a)** For every $\epsilon>0$, $M(x) = O(x^{1/2+\epsilon})$.
 
-**(b)** Robin's inequality: $\sigma(n) < e^{\gamma}n\log\log n$ for every integer $n \geq 5041$, where $\gamma$ is Euler's constant.
+**(b)** Robin's inequality: $\sigma(n) < \exp(\gamma)n\log\log n$ for every integer $n \geq 5041$, where $\gamma$ is Euler's constant.
 
-**(c)** Lagarias' inequality: $\sigma(n) \leq H_n + e^{H_n}\log H_n$ for every $n\geq1$, with equality only at $n=1$.
+**(c)** Lagarias' inequality: $\sigma(n) \leq H_n + \exp(H_n)\log H_n$ for every $n\geq1$, with equality only at $n=1$.
 
-**Proof sketch.** For (a), the Mellin transform of $M$ is $1/(s\zeta(s))$; the hypothesis makes $1/\zeta$ holomorphic for $\sigma>\tfrac12$, and the standard a priori bound on the growth of the transform converts the analytic continuation into the estimate. For (b) and (c) the equivalence is a computation of the extremal order of $\sigma$, using the explicit formula for $\sum_{n\le x}\Lambda(n)/n$ and the fact that $\limsup\sigma(n)/(n\log\log n) = e^\gamma$; the direction RH$\Rightarrow$(b) is Robin's theorem of 1984 and the converse is by the standard construction of colossally abundant $n$ violating the bound if a zero lies off the line.
+**Proof sketch.** For (a), the Mellin transform of $M$ is $1/(s\zeta(s))$; the hypothesis makes $1/\zeta$ holomorphic for $\sigma>\tfrac12$, and the standard a priori bound on the growth of the transform converts the analytic continuation into the estimate. For (b) and (c) the equivalence is a computation of the extremal order of $\sigma$, using the explicit formula for $\sum_{n\le x}\Lambda(n)/n$ and the fact that $\limsup\sigma(n)/(n\log\log n) = \exp(\gamma)$; the direction RH$\Rightarrow$(b) is Robin's theorem of 1984 and the converse is by the standard construction of colossally abundant $n$ violating the bound if a zero lies off the line.
 
 **Remark (the discredited heuristic).** The bound $M(x) = O(\sqrt x)$ — the Mertens conjecture — would have implied the hypothesis, and it is false: Odlyzko and te Riele showed in 1985 that $M(x)/\sqrt x$ exceeds $1$ and is less than $-1$ infinitely often, so the hypothesis cannot be reached through a pointwise bound of that shape. The hypothesis itself allows the slower bound $O(x^{1/2+\epsilon})$, and no proof of the hypothesis by this route is known.
 
@@ -115,7 +115,7 @@ $$
 
 **Remark (Weil's positivity criterion).** The explicit formula of *The Prime Number Theorem*, in Weil's form, expresses the sum $\sum_\rho h(\gamma)$ over the nontrivial zeros, for a suitable test function $h$, as an explicit distribution $W(h)$ whose terms involve the archimedean factor and the sum over the primes. The criterion, proved by Weil and reformulated by Bombieri, is that the Riemann hypothesis is equivalent to the positivity
 $$
-W(h * \tilde h) \geq 0 \quad\text{for every Schwartz function } h, \qquad \tilde h(x) = \overline{h(-x)},
+W(h * h^{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h^{\mathrm{refl}}(x) = \overline{h(-x)},
 $$
 where the convolution is on the additive group of the line. The criterion is the framework in which the positivity methods of the theory are stated; the same shape, with the primes of a function field in place of the primes of $\mathbb{Z}$, is what Weil's proof of the analogue of the hypothesis for a curve uses, and the same shape is what a proof over $\mathbb{Q}$ would have to supply.
 
@@ -123,7 +123,7 @@ where the convolution is on the additive group of the line. The criterion is the
 
 **Definition.** For real $\lambda$ let
 $$
-H_\lambda(u) = \int_0^\infty e^{\lambda v^2}\,\Phi(v)\cos(uv)\,dv, \qquad \Phi(v) = \sum_{n\geq1}\bigl(2\pi^2n^4e^{9v/2}-3\pi n^2e^{5v/2}\bigr)e^{-\pi n^2e^{2v}} ,
+H_\lambda(u) = \int_0^\infty \exp(\lambda v^2)\,\Phi(v)\cos(uv)\,dv, \qquad \Phi(v) = \sum_{n\geq1}\bigl(2\pi^2n^4\exp(9v/2)-3\pi n^2\exp(5v/2)\bigr)\exp(-\pi n^2\exp(2v)) ,
 $$
 so that $H_0$ is the Riemann $\Xi$ function in the variable $u$; let $\Lambda$ be the infimum of the $\lambda$ for which all the zeros of $H_\lambda$ are real.
 
@@ -187,7 +187,7 @@ with $g_k$ a rational number and $a_k$ an Euler product; the constants predicted
 $$
 \frac{1}{N(T)}\sum_{0<\gamma,\gamma'\leq T}f\Bigl(\frac{\gamma-\gamma'}{2\pi/\log T}\Bigr) \longrightarrow \int_{-\infty}^{\infty}f(x)\Bigl(1-\Bigl(\frac{\sin\pi x}{\pi x}\Bigr)^2\Bigr)dx .
 $$
-**Remark (the evidence).** The limiting kernel $1-(\sin\pi x/\pi x)^2$ is exactly the pair-correlation density of the eigenvalues of a large random Hermitian matrix drawn from the Gaussian unitary ensemble, the probability measure on $n\times n$ Hermitian matrices proportional to $e^{-\operatorname{tr}H^2/2}dH$; the numerical computations of Odlyzko for zeros near height $10^{20}$ match the predicted distribution to high accuracy. The higher correlation functions are conjectured to agree with the same ensemble, and the moment constants $g_k$ of the previous subsection are its characteristic-polynomial moments; the whole is a statistical model of the zeros, and no part of it is proved beyond Montgomery's range $0\leq\alpha\leq1$ and the elementary consequences.
+**Remark (the evidence).** The limiting kernel $1-(\sin\pi x/\pi x)^2$ is exactly the pair-correlation density of the eigenvalues of a large random Hermitian matrix drawn from the Gaussian unitary ensemble, the probability measure on $n\times n$ Hermitian matrices proportional to $\exp(-\operatorname{tr}H^2/2)dH$; the numerical computations of Odlyzko for zeros near height $10^{20}$ match the predicted distribution to high accuracy. The higher correlation functions are conjectured to agree with the same ensemble, and the moment constants $g_k$ of the previous subsection are its characteristic-polynomial moments; the whole is a statistical model of the zeros, and no part of it is proved beyond Montgomery's range $0\leq\alpha\leq1$ and the elementary consequences.
 
 **Conjecture (the simple zeros).** All the nontrivial zeros are simple, and the ordinates of the zeros are linearly independent over $\mathbb{Q}$. The first is weaker than the hypothesis in the sense that it does not imply it, and it is known only in the sense of a positive proportion; the second is a much stronger statement, false for the broader class of $L$-functions.
 
@@ -213,7 +213,7 @@ $$
 
 The Riemann hypothesis asserts that every nontrivial zero $\rho = \beta+i\gamma$ of the zeta function satisfies $\beta=\tfrac12$. By the functional equation and the removal of the pole and the trivial zeros, it is the statement that the entire function $\xi(s) = \tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ has all its zeros on the critical line, equivalently that the Riemann $\Xi$ function $\Xi(t) = \xi(\tfrac12+it)$ has only real zeros. There are $N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e}+\frac78+S(T)+O(T^{-1})$ zeros with $0<\gamma\leq T$, where $S(T) = O(\log T)$ unconditionally and $O(\log T/\log\log T)$ under the hypothesis, so that the mean spacing near height $T$ is $2\pi/\log(T/2\pi)$; the hypothesis has been verified for ranges of the order of $10^{13}$ zeros, the first ten ordinates being $14.134725$, $21.022040$, $25.010858$, $30.424876$, $32.935062$, $37.586178$, $40.918719$, $43.327073$, $48.005151$, $49.773832$.
 
-The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x$ and to $O(\sqrt x\log x)$ in $\pi(x)-\mathrm{Li}(x)$, equivalently to $O(x^{1/2+\epsilon})$ in either; to the bound $O(x^{1/2+\epsilon})$ for the summatory Möbius function; to Robin's inequality $\sigma(n)<e^\gamma n\log\log n$ for $n\geq5041$ and to Lagarias' inequality for the harmonic numbers; to the nonnegativity of all the Li coefficients; to the Nyman–Beurling density condition in $L^2(0,\infty)$; to Weil's positivity $W(h*\tilde h)\geq0$ for every Schwartz function $h$; and to the vanishing of the de Bruijn–Newman constant, whose nonnegativity was proved by Rodgers and Tao. Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, Littlewood showed that $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, the Mertens conjecture $M(x)=O(\sqrt x)$ is false by Odlyzko and te Riele, and the best known zero-free region is $\sigma>1-c/(\log\lvert t\rvert)^{2/3}(\log\log\lvert t\rvert)^{1/3}$. Hardy proved that infinitely many zeros lie on the critical line, Selberg that a positive proportion do, and the proportion is known to be at least five twelfths; Montgomery's pair correlation conjecture predicts the local statistics of the zeros and its limiting kernel is that of the Gaussian unitary ensemble, in agreement with the numerical computations. The hypothesis implies the Lindelöf hypothesis and the density hypothesis, and it implies the effective statements about primes in arithmetic progressions, the least quadratic nonresidue, and the generalised statements over number fields; it is a theorem for the zeta functions of curves and varieties over finite fields, by Weil and by Deligne, where the proof is a positivity statement of intersection theory.
+The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x$ and to $O(\sqrt x\log x)$ in $\pi(x)-\mathrm{Li}(x)$, equivalently to $O(x^{1/2+\epsilon})$ in either; to the bound $O(x^{1/2+\epsilon})$ for the summatory Möbius function; to Robin's inequality $\sigma(n)<\exp(\gamma) n\log\log n$ for $n\geq5041$ and to Lagarias' inequality for the harmonic numbers; to the nonnegativity of all the Li coefficients; to the Nyman–Beurling density condition in $L^2(0,\infty)$; to Weil's positivity $W(h*h^{\mathrm{refl}})\geq0$ for every Schwartz function $h$; and to the vanishing of the de Bruijn–Newman constant, whose nonnegativity was proved by Rodgers and Tao. Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, Littlewood showed that $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, the Mertens conjecture $M(x)=O(\sqrt x)$ is false by Odlyzko and te Riele, and the best known zero-free region is $\sigma>1-c/(\log\lvert t\rvert)^{2/3}(\log\log\lvert t\rvert)^{1/3}$. Hardy proved that infinitely many zeros lie on the critical line, Selberg that a positive proportion do, and the proportion is known to be at least five twelfths; Montgomery's pair correlation conjecture predicts the local statistics of the zeros and its limiting kernel is that of the Gaussian unitary ensemble, in agreement with the numerical computations. The hypothesis implies the Lindelöf hypothesis and the density hypothesis, and it implies the effective statements about primes in arithmetic progressions, the least quadratic nonresidue, and the generalised statements over number fields; it is a theorem for the zeta functions of curves and varieties over finite fields, by Weil and by Deligne, where the proof is a positivity statement of intersection theory.
 
 ## Summary of Notation
 
@@ -226,12 +226,12 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 | $\Lambda(s)$ | $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
 | $N(T)$, $N(\sigma,T)$ | Number of zeros with $0<\gamma\leq T$; with $\beta>\sigma$, $\lvert\gamma\rvert\leq T$ |
 | $S(T)$ | $\frac1\pi\arg\zeta(\tfrac12+iT)$, the fluctuation in the count |
-| $Z(t)$, $\theta(t)$ | Riemann–Siegel function $e^{i\theta(t)}\zeta(\tfrac12+it)$ and its phase |
+| $Z(t)$, $\theta(t)$ | Riemann–Siegel function $\exp(i\theta(t))\zeta(\tfrac12+it)$ and its phase |
 | $M(x)$ | Mertens function $\sum_{n\leq x}\mu(n)$ |
 | $\sigma(n)$, $H_n$ | Divisor sum, $n$-th harmonic number |
 | $\lambda_n$ | Li coefficients, $\lambda_n = \sum_\rho(1-(1-1/\rho)^n)$ |
 | $\rho_\theta$ | Nyman–Beurling function $\{\theta/x\}-\theta\{1/x\}$ |
-| $W(h)$, $\tilde h$ | Weil positivity functional and the reflection $h\mapsto\tilde h(x)=\overline{h(-x)}$ |
+| $W(h)$, $h^{\mathrm{refl}}$ | Weil positivity functional and the reflection $h\mapstoh^{\mathrm{refl}}(x)=\overline{h(-x)}$ |
 | $H_\lambda$, $\Lambda$ | de Bruijn–Newman family, de Bruijn–Newman constant |
 | $F(\alpha,T)$ | Montgomery's pair-correlation function |
 | GRH, GUE | Generalised Riemann hypothesis; Gaussian unitary ensemble |

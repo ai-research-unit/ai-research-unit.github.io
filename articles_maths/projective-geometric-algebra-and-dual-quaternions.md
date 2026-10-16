@@ -7,16 +7,16 @@ The rigid motions of space form a group of six parameters, three of rotation and
 
 This article develops the two constructions and their relation. The degeneracy of the form is the point of the second: the ideal element of the projective space is null, so that the translations are rotations about the ideal plane rather than transformations of a non-degenerate algebra, and the algebra is the smallest one that carries the incidence of projective geometry together with the metric of Euclidean geometry. The dual quaternions are the even part of that algebra, and the study of rigid motions in them is the older form of the same theory.
 
-The Clifford algebra, the geometric product, the grade decomposition and the contraction are from *Clifford Algebras* and *The Geometric Product and the Grade Decomposition*; the degenerate Clifford algebras, the radical and the filtration are from *Degenerate Clifford Algebras and the Radical* and *The Filtration and the Associated Graded Algebra*; the volume element, the duality and the Hodge star are from *The Volume Element, Duality and the Hodge Star*; the versors, the rotors, the sandwich action and the exponentiation of a bivector are from *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the quaternions, the rotation group and the quaternion double cover are from *Quaternion Rotations and Reflections* and *Biquaternion Rotations and Lorentz Transformations*; the dual numbers are from *The Number Systems as Clifford Algebras*; the biquaternion algebra is from *Biquaternions as a Vector Space over $\mathbb{C}$* and its zero divisors from *Zero Divisors of the General Plain Algebra*; the null vectors and the sphere vocabulary of the conformal model are from *The Conformal Model of Euclidean Space*. Nothing owned by those entries is re-derived.
+The Clifford algebra, the geometric product, the grade decomposition and the contraction are from *Clifford Algebras* and *The Geometric Product and the Grade Decomposition*; the degenerate Clifford algebras, the radical and the filtration are from *Degenerate Clifford Algebras and the Radical* and *The Filtration and the Associated Graded Algebra*; the volume element, the duality and the Hodge star are from *The Volume Element, Duality and the Hodge Star*; the versors, the rotors, the sandwich action and the exponentiation of a bivector are from *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*; the quaternions, the rotation group and the quaternion double cover are from *Quaternion Rotations and Reflections* and *Biquaternion Rotations and Lorentz Transformations*; the dual numbers are from *The Number Systems as Clifford Algebras*; the biquaternion algebra is from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and its zero divisors from *Zero Divisors of the Biquaternion Algebra*; the null vectors and the sphere vocabulary of the conformal model are from *The Conformal Model of Euclidean Space*. Nothing owned by those entries is re-derived.
 
 ## The Projective Model of Space
 
 ### The Degenerate Algebra
 
-**Definition.** Let $V=\mathbb{R}^{3,0,1}=\mathbb{R}^3\oplus\mathbb{R}e_0$ with the form $q$ positive definite on $\mathbb{R}^3$ and $q(e_0)=0$, the vector $e_0$ being orthogonal to $\mathbb{R}^3$ and spanning the radical. The **projective geometric algebra** of the three-dimensional space is the Clifford algebra
+**Definition.** Let $V=\mathbb{R}^{3,0,1}=\mathbb{R}^3\oplus\mathbb{R}e_0$ with the form $\mathfrak{Q}$ positive definite on $\mathbb{R}^3$ and $\mathfrak{Q}(e_0)=0$, the vector $e_0$ being orthogonal to $\mathbb{R}^3$ and spanning the radical. The **projective geometric algebra** of the three-dimensional space is the Clifford algebra
 
 $$
-\mathrm{Cl}_{3,0,1}=\mathrm{Cl}(V,q),
+\mathrm{Cl}_{3,0,1}=\mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
 of dimension $2^4=16$.
@@ -55,7 +55,7 @@ $$
 
 with $t$ a Euclidean vector and $e_0$ the null generator of the radical, so that $t e_0$ has square zero and the exponential terminates.
 
-**Proof.** That the rotations of the Euclidean part are the rotors of $\mathrm{Cl}_{3,0}$ is in *Quaternion Rotations and Reflections*; the extension acts on the whole algebra because the construction is by the sandwich and the extra generator is annihilated. For the translations: $(te_0)^2=q(t)q(e_0)=0$, so $\exp(-\tfrac12te_0)=1-\tfrac12te_0$; the norm is $1$, so it is a rotor, and its sandwich action on the planes is the translation of the planes by $+t$, the computation being the degenerate analogue of the one for the conformal model.
+**Proof.** That the rotations of the Euclidean part are the rotors of $\mathrm{Cl}_{3,0}$ is in *Quaternion Rotations and Reflections*; the extension acts on the whole algebra because the construction is by the sandwich and the extra generator is annihilated. For the translations: $(te_0)^2=q(t)\mathfrak{Q}(e_0)=0$, so $\exp(-\tfrac12te_0)=1-\tfrac12te_0$; the norm is $1$, so it is a rotor, and its sandwich action on the planes is the translation of the planes by $+t$, the computation being the degenerate analogue of the one for the conformal model.
 
 **Corollary (screw motions).** Every rigid motion of space is a rotor of the algebra, and every rotor is the exponential of a bivector, so every rigid motion is the exponential of a bivector and is therefore a **screw motion**: a rotation about an axis together with a translation along it.
 
@@ -90,18 +90,18 @@ $$
 **Theorem.** A dual quaternion is written $q=q_0+\varepsilon q_1$ with $q_0,q_1\in\mathbb{H}$; it is a unit when it satisfies the two conditions
 
 $$
-N(q_0)=1,\qquad B(q_0,q_1)=0 ,
+\langle q_0\rangle=1,\qquad B(q_0,q_1)=0 ,
 $$
 
-where $N$ and $B$ are the quaternionic norm and inner product, so that the group of unit dual quaternions is six-dimensional and is the double cover of the group of rigid motions:
+where $\langle\cdot\rangle$ and $B$ are the quaternionic norm and inner product, so that the group of unit dual quaternions is six-dimensional and is the double cover of the group of rigid motions:
 
 $$
-\{q:\ N(q)=1\}\longrightarrow SE(3),
+\{q:\ \langle q\rangle=1\}\longrightarrow SE(3),
 $$
 
 with kernel $\{\pm1\}$.
 
-**Proof.** The norm of $q_0+\varepsilon q_1$ is $N(q_0)+\varepsilon\,2B(q_0,q_1)$ in the dual numbers, and it equals $1$ in $\mathbb{D}$ exactly when $N(q_0)=1$ and $B(q_0,q_1)=0$. The first condition is the unit sphere of the quaternions, of dimension three, and the second is a linear condition on $q_1$, cutting the six real dimensions of $q_1$ down to three; the total is six, equal to the dimension of the group of rigid motions, and the map to $SE(3)$ is the sandwich action, which forgets the sign.
+**Proof.** The norm of $q_0+\varepsilon q_1$ is $\langle q_0\rangle+\varepsilon\,2B(q_0,q_1)$ in the dual numbers, and it equals $1$ in $\mathbb{D}$ exactly when $\langle q_0\rangle=1$ and $B(q_0,q_1)=0$. The first condition is the unit sphere of the quaternions, of dimension three, and the second is a linear condition on $q_1$, cutting the six real dimensions of $q_1$ down to three; the total is six, equal to the dimension of the group of rigid motions, and the map to $SE(3)$ is the sandwich action, which forgets the sign.
 
 **Corollary (the action on points).** The image of a point $p\in\mathbb{R}^3$ is the sandwich
 
@@ -133,14 +133,14 @@ where $p$ is identified with the quaternion with zero real part and $q$ is the u
 
 The **projective geometric algebra** of space is the Clifford algebra $\mathrm{Cl}_{3,0,1}$ of a degenerate form: the Euclidean space of dimension three together with one orthogonal generator $e_0$ of square zero, spanning the radical. Planes are the vectors, $a\cdot x=d$ being the plane $\pi=a+de_0$; lines are the wedges of two planes, points the wedges of three, the whole space the pseudoscalar. A plane contains a point exactly when the wedge of the two vanishes, the intersection of two planes being the wedge of their vectors and the intersection of three the wedge of all three; the join of two objects is obtained from the meet of their duals by the duality that pairs blades of complementary grade, so that the line through two points and the plane through three are computed from the same products as their meet counterparts. The degeneracy is what makes the model economical: the ideal element of the projective completion is null, and the ordinary Euclidean metric lives on the non-degenerate part.
 
-The **rigid motions** are the rotors of this algebra, the rotations being the rotors of the Euclidean part and the translations being the rotors $T_t=1-\tfrac12te_0=\exp(-\tfrac12te_0)$, whose generator has square zero. Every rigid motion is a rotor, every rotor is the exponential of a bivector, and therefore every rigid motion is a screw motion, a rotation about an axis together with a translation along it. The **even part** of the algebra is the algebra of **dual quaternions** $\mathbb{D}\mathbb{H}=\mathbb{H}[\varepsilon]/(\varepsilon^2)$ of dimension eight, a unit dual quaternion $q_0+\varepsilon q_1$ being characterised by the two conditions $N(q_0)=1$ and $B(q_0,q_1)=0$, which cut the eight dimensions to the six of the group of rigid motions; the group of unit dual quaternions is the double cover of $SE(3)$, and it acts on the point $P=1+\varepsilon p$ by the sandwich $P\mapsto qPq^{-1}$. The three descriptions — the rotors of $\mathrm{Cl}_{3,0,1}$, the unit dual quaternions, and the group $SE(3)$ — agree. The construction is the degenerate and economical counterpart of the conformal model: the projective model takes the plane as primitive, describes the rigid motions and the projective incidence, and carries one extra null dimension, while the conformal model takes the point as primitive, describes the conformal transformations and the spheres, and carries two extra dimensions with a non-degenerate form.
+The **rigid motions** are the rotors of this algebra, the rotations being the rotors of the Euclidean part and the translations being the rotors $T_t=1-\tfrac12te_0=\exp(-\tfrac12te_0)$, whose generator has square zero. Every rigid motion is a rotor, every rotor is the exponential of a bivector, and therefore every rigid motion is a screw motion, a rotation about an axis together with a translation along it. The **even part** of the algebra is the algebra of **dual quaternions** $\mathbb{D}\mathbb{H}=\mathbb{H}[\varepsilon]/(\varepsilon^2)$ of dimension eight, a unit dual quaternion $q_0+\varepsilon q_1$ being characterised by the two conditions $\langle q_0\rangle=1$ and $B(q_0,q_1)=0$, which cut the eight dimensions to the six of the group of rigid motions; the group of unit dual quaternions is the double cover of $SE(3)$, and it acts on the point $P=1+\varepsilon p$ by the sandwich $P\mapsto qPq^{-1}$. The three descriptions — the rotors of $\mathrm{Cl}_{3,0,1}$, the unit dual quaternions, and the group $SE(3)$ — agree. The construction is the degenerate and economical counterpart of the conformal model: the projective model takes the plane as primitive, describes the rigid motions and the projective incidence, and carries one extra null dimension, while the conformal model takes the point as primitive, describes the conformal transformations and the spheres, and carries two extra dimensions with a non-degenerate form.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{R}^{3,0,1}$ | Euclidean part plus a radical generator |
-| $e_0$, $q(e_0)=0$ | The null generator of the radical, the ideal point |
+| $e_0$, $\mathfrak{Q}(e_0)=0$ | The null generator of the radical, the ideal point |
 | $\mathrm{Cl}_{3,0,1}$ | Projective geometric algebra, dimension $16$ |
 | $\pi=a+de_0$ | Plane $a\cdot x=d$ |
 | $\pi_1\wedge\pi_2$, $\pi_1\wedge\pi_2\wedge\pi_3$ | Line and point, the blades of the planes through them |
@@ -148,7 +148,7 @@ The **rigid motions** are the rotors of this algebra, the rotations being the ro
 | $\mathrm{Cl}^0_{3,0,1}\cong\mathbb{D}\mathbb{H}$ | Dual quaternions, dimension $8$ |
 | $\mathbb{D}=\mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers |
 | $q=q_0+\varepsilon q_1$ | Dual quaternion |
-| $N(q_0)=1$, $B(q_0,q_1)=0$ | Unit conditions, six-dimensional |
+| $\langle q_0\rangle=1$, $B(q_0,q_1)=0$ | Unit conditions, six-dimensional |
 | $P\mapsto qPq^{-1}$, $P=1+\varepsilon p$ | Action on a point |
 | $SE(3)$ | Group of rigid motions |
 

@@ -21,7 +21,7 @@ The bilinear form is the basic datum: a rule linear in each argument, represente
 | the orthogonal direct sum $B_1 \perp B_2$ | the form on $M_1 \oplus \mathsf{M}_2$ with $B(M_1,\mathsf{M}_2) = 0$; the operation of the classification | *Bilinear Forms* |
 | the isometry group $\operatorname{Isom}(M,B)$ | the linear maps preserving $B$; $\operatorname{O}(M,B)$ in the symmetric case, $\operatorname{Sp}(M,B)$ in the alternating case | *Bilinear Forms*; *List of Classical Geometric Groups* |
 | a $\sigma$-sesquilinear form | linear in one argument and $\sigma$-linear in the other for an involution $\sigma$ of the ring | *Hilbert Algebras* |
-| a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring | *Hilbert Algebras* |
+| a Hermitian form $s(x,y)$ | $s(x,y) = \sigma(s(y,x))$; the diagonal $\mathfrak{Q}(x) = s(x,x)$ is a quadratic form over the fixed ring | *Hilbert Algebras* |
 | the Hermitian Gram matrix $H$ | $H^\dagger = \sigma(H)^T = H$; the unitary group is its isometry group | *Hilbert Algebras*; *The Unitary and Symplectic Groups* |
 | the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ | the regular trace of a finite-dimensional algebra; the reduced trace form in the central simple case | *Hilbert Algebras* |
 | the reduced norm $\operatorname{Nrd}$ | the norm of a central simple algebra of degree $d$; a form of dimension $d^2$ | *Hilbert Algebras* |
@@ -32,13 +32,13 @@ A quadratic form is homogeneous of degree two, and it is recovered from its pola
 
 | Form or invariant | Its classifying data | Introduced in |
 |---|---|---|
-| a quadratic form $q : M \to R$ | $q(av) = a^2q(v)$ and the polar identity; the polar form $B$ with $q(v) = B(v,v)$ | *Quadratic Forms and Polarisation* |
+| a quadratic form $q : M \to R$ | $\mathfrak{Q}(av) = a^2q(v)$ and the polar identity; the polar form $B$ with $\mathfrak{Q}(v) = B(v,v)$ | *Quadratic Forms and Polarisation* |
 | the passage to the polar form | a bijection between quadratic and symmetric bilinear forms when $2$ is invertible; a genuine obstruction otherwise | *Quadratic Forms and Polarisation* |
 | the diagonal form $\langle a_1,\ldots,a_n\rangle$ | $\sum_i a_ix_i^2$; the diagonalisation of a form over a field of characteristic not $2$ | *Quadratic Forms and Polarisation* |
 | Sylvester's law of inertia | over $\mathbb{R}$ a form is classified by its signature $(p,r)$; the indices are invariant | *Quadratic Forms and Polarisation* |
 | the signature $\sigma(q) = p - r$ and the rank $p + r$ | the real classification; the complex classification is the rank alone | *Quadratic Forms and Polarisation*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | the discriminant $\Delta(q)$ | $a_1\cdots a_n \in F^\times/(F^\times)^2$; an invariant of the isometry class | *Quadratic Forms and Polarisation*; *Bilinear Forms* |
-| the hyperbolicity and the isotropic vectors | a form is isotropic when $q(v) = 0$ for some $v \neq 0$; the hyperbolic plane is the model | *Witt's Theorems* |
+| the hyperbolicity and the isotropic vectors | a form is isotropic when $\mathfrak{Q}(v) = 0$ for some $v \neq 0$; the hyperbolic plane is the model | *Witt's Theorems* |
 | the norms of the algebras | $N(x) = x\bar x$ on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{O}$; a composition law $N(xy) = N(x)N(y)$ only in dimensions $1$, $2$, $4$, $8$ | *Quadratic Forms over Algebras and Norms* |
 | a Pfister form $\langle\!\langle a_1,\ldots,a_n\rangle\!\rangle$ | the norm of a composition algebra of dimension $2^n$; the tensor product $\bigotimes_i\langle 1,-a_i\rangle$ | *Quadratic Forms over Algebras and Norms*; *The Witt Group and the Grothendieck–Witt Ring* |
 
@@ -81,11 +81,11 @@ The norms of the number systems are the examples through which the general theor
 |---|---|---|
 | $\mathbb{C}$ with $N(z) = z\bar z$ | the positive definite norm of dimension $2$; a composition law | *Quadratic Forms over Algebras and Norms*; *The Complex Numbers* |
 | $\mathbb{H}$ with $N(q) = q\bar q$ | the positive definite quaternion norm of dimension $4$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Quaternion Algebra* |
-| $\mathbb{B}$ with $N(q) = q\bar q$ | the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$ | *Quadratic Forms over Algebras and Norms*; *The Realification of the General Plain Algebra* |
+| $\mathbb{B}$ with $N(q) = q\bar q$ | the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$ | *Quadratic Forms over Algebras and Norms*; *The Realification and the Effect of the Change of Scalars* |
 | the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | a norm that is isotropic; the split form of the quaternion norm | *Quadratic Forms over Algebras and Norms*; *Split-Biquaternions and Hyperbolic Geometry* |
 | $\mathbb{O}$ with $N(x) = x\bar x$ | the octonion norm of dimension $8$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Octonion Algebra* |
 | the split octonions | the isotropic norm of dimension $8$; the $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$ | *Quadratic Forms over Algebras and Norms* |
-| the quadric $\mathcal{Q}(Q)$ | the projective quadric $\{[x] : Q(x) = 0\}$ of an $A$-valued form | *Quadratic Forms over Algebras and Norms*; *Projective Geometry* |
+| the quadric $\mathcal{Q}(Q)$ | the projective quadric $\{[x] : \mathfrak{Q}(x) = 0\}$ of an $A$-valued form | *Quadratic Forms over Algebras and Norms*; *Projective Geometry* |
 
 ## Non-examples and Warnings
 
@@ -95,7 +95,7 @@ The norms of the number systems are the examples through which the general theor
 | an alternating form in characteristic $2$ | it is not the same as a skew-symmetric form; skew-symmetry with $\omega(u,u) = 0$ is the condition available over every ring | *The Determinant and Alternating Forms*; *Symplectic Forms and Poisson Brackets* |
 | the split octonions | their norm is isotropic, unlike the norm of the division algebra $\mathbb{O}$; the two are different forms of the same dimension | *Quadratic Forms over Algebras and Norms* |
 | the classification over $\mathbb{Q}$ | it is not read from the signature alone; the Hasse–Minkowski principle needs the local invariants at the completions | *Witt's Theorems* |
-| the Hermitian form over a non-commutative ring | the diagonal $q(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hilbert Algebras* |
+| the Hermitian form over a non-commutative ring | the diagonal $\mathfrak{Q}(x) = s(x,x)$ is a quadratic form over the fixed ring and not over the base; the transfer is part of the theory | *Hilbert Algebras* |
 | a degenerate form, $\langle 0\rangle$ | its matrix is not invertible and there is no discriminant in $F^\times/(F^\times)^2$; the radical is the whole space | *Bilinear Forms* |
 | a form of odd dimension over a finite field | the discriminant alone does not classify it in characteristic $2$; the classification stated above needs $q$ odd | *Witt's Theorems* |
 
@@ -124,7 +124,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\operatorname{rad}(B)$, $\operatorname{rank}(B)$ | the radical and the rank of a form |
 | $\Delta$ | the discriminant, in $F^\times/(F^\times)^2$ |
 | $\perp$ | the orthogonal direct sum |
-| $q$ | a quadratic form; $B$ its polar form, $q(v) = B(v,v)$ |
+| $q$ | a quadratic form; $B$ its polar form, $\mathfrak{Q}(v) = B(v,v)$ |
 | $\langle a_1,\ldots,a_n\rangle$ | the diagonal form $\sum_i a_ix_i^2$ |
 | $\sigma(q) = p - r$ | the signature of a real quadratic form, of positive index $p$ and negative index $r$ |
 | $H$ | the hyperbolic plane |

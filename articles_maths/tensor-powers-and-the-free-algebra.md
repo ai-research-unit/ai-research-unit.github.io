@@ -19,10 +19,10 @@ $$
 
 The elements of $V^{\otimes n}$ are finite sums of **elementary tensors** $v_1 \otimes \cdots \otimes v_n$, and the product $\otimes$ is $R$-multilinear in the $n$ arguments.
 
-**Universal property.** For every $R$-module $W$, the $R$-linear maps $V^{\otimes n} \to W$ correspond bijectively to the $R$-**multilinear** maps $V^n \to W$, the correspondence being $\tilde{f} \leftrightarrow f$ with
+**Universal property.** For every $R$-module $W$, the $R$-linear maps $V^{\otimes n} \to W$ correspond bijectively to the $R$-**multilinear** maps $V^n \to W$, the correspondence being $f^{\mathrm{lin}} \leftrightarrow f$ with
 
 $$
-f(v_1, \dots, v_n) = \tilde{f}(v_1 \otimes \cdots \otimes v_n).
+f(v_1, \dots, v_n) = f^{\mathrm{lin}}(v_1 \otimes \cdots \otimes v_n).
 $$
 
 This is the universal property of the tensor product of two modules applied $n-1$ times, and it is the form in which $V^{\otimes n}$ is used.
@@ -122,19 +122,19 @@ including the empty word $1$, with the product given by juxtaposition. This is t
 
 The tensor algebra is characterised, up to a unique isomorphism, by the following property.
 
-**Theorem (universal property of $T(V)$).** Let $A$ be an associative unital $R$-algebra and let $\varphi : V \to A$ be an $R$-linear map. Then there is a unique unital $R$-algebra homomorphism $\tilde{\varphi} : T(V) \to A$ such that $\tilde{\varphi} \circ \iota = \varphi$, namely
+**Theorem (universal property of $T(V)$).** Let $A$ be an associative unital $R$-algebra and let $\varphi : V \to A$ be an $R$-linear map. Then there is a unique unital $R$-algebra homomorphism $\varphi^{\mathrm{ind}} : T(V) \to A$ such that $\varphi^{\mathrm{ind}} \circ \iota = \varphi$, namely
 
 $$
-\tilde{\varphi}(v_1 \otimes \cdots \otimes v_n) = \varphi(v_1)\varphi(v_2)\cdots\varphi(v_n), \qquad \tilde{\varphi}(1) = 1_A.
+\varphi^{\mathrm{ind}}(v_1 \otimes \cdots \otimes v_n) = \varphi(v_1)\varphi(v_2)\cdots\varphi(v_n), \qquad \varphi^{\mathrm{ind}}(1) = 1_A.
 $$
 
 Equivalently, there is a natural bijection
 
 $$
-\operatorname{Hom}_{R\text{-alg}}(T(V), A) \;\cong\; \operatorname{Hom}_R(V, A), \qquad \tilde{\varphi} \longmapsto \tilde{\varphi} \circ \iota.
+\operatorname{Hom}_{R\text{-alg}}(T(V), A) \;\cong\; \operatorname{Hom}_R(V, A), \qquad \varphi^{\mathrm{ind}} \longmapsto \varphi^{\mathrm{ind}} \circ \iota.
 $$
 
-*Proof.* The map $V^n \to A$, $(v_1, \dots, v_n) \mapsto \varphi(v_1)\cdots\varphi(v_n)$, is $R$-multilinear, since $\varphi$ is linear and the product of $A$ is bilinear. By the universal property of $V^{\otimes n}$ it induces a unique $R$-linear map $T^n(V) \to A$ with the stated values on elementary tensors. Taking the direct sum over $n$ and sending $1 \in V^{\otimes 0}$ to $1_A$ gives an $R$-linear map $\tilde{\varphi} : T(V) \to A$. It is multiplicative on elementary tensors, since concatenation on the left corresponds to product in $A$ on the right; both sides extend by bilinearity, so $\tilde{\varphi}$ is a unital algebra homomorphism. If $\psi$ is another such homomorphism, then $\psi$ and $\tilde{\varphi}$ agree on $V = T^1(V)$ and on $1$, hence on all products of these, hence on all of $T(V)$ by generation; so $\psi = \tilde{\varphi}$.
+*Proof.* The map $V^n \to A$, $(v_1, \dots, v_n) \mapsto \varphi(v_1)\cdots\varphi(v_n)$, is $R$-multilinear, since $\varphi$ is linear and the product of $A$ is bilinear. By the universal property of $V^{\otimes n}$ it induces a unique $R$-linear map $T^n(V) \to A$ with the stated values on elementary tensors. Taking the direct sum over $n$ and sending $1 \in V^{\otimes 0}$ to $1_A$ gives an $R$-linear map $\varphi^{\mathrm{ind}} : T(V) \to A$. It is multiplicative on elementary tensors, since concatenation on the left corresponds to product in $A$ on the right; both sides extend by bilinearity, so $\varphi^{\mathrm{ind}}$ is a unital algebra homomorphism. If $\psi$ is another such homomorphism, then $\psi$ and $\varphi^{\mathrm{ind}}$ agree on $V = T^1(V)$ and on $1$, hence on all products of these, hence on all of $T(V)$ by generation; so $\psi = \varphi^{\mathrm{ind}}$.
 
 **Corollary (the free-forgetful adjunction).** Write $U$ for the forgetful functor from unital associative $R$-algebras to $R$-modules, sending an algebra to its underlying module. Then the tensor algebra functor $T$ is left adjoint to $U$:
 
@@ -148,10 +148,10 @@ naturally in the $R$-module $V$ and the algebra $A$. In the notation of adjoint 
 
 The adjunction says exactly that $T(V)$ is the **free algebra** on the module $V$: a linear map out of $V$ into any algebra extends uniquely to an algebra homomorphism out of $T(V)$. The universal property also identifies $T$ as a functor: a linear map $f : V \to W$ gives the algebra homomorphism $T(f) : T(V) \to T(W)$ extending $\iota_W \circ f$, and $T$ preserves composition and identities.
 
-**Corollary (every algebra is a quotient of a tensor algebra).** Let $A$ be a unital associative $R$-algebra. Choose an $R$-module $V$ and a surjection $\varphi : V \to A$; for instance, take $V$ free on a generating set of $A$ with $\varphi$ sending each generator to the corresponding element. Then $\tilde{\varphi} : T(V) \to A$ is a surjective algebra homomorphism, so
+**Corollary (every algebra is a quotient of a tensor algebra).** Let $A$ be a unital associative $R$-algebra. Choose an $R$-module $V$ and a surjection $\varphi : V \to A$; for instance, take $V$ free on a generating set of $A$ with $\varphi$ sending each generator to the corresponding element. Then $\varphi^{\mathrm{ind}} : T(V) \to A$ is a surjective algebra homomorphism, so
 
 $$
-A \;\cong\; T(V)/\ker\tilde{\varphi}.
+A \;\cong\; T(V)/\ker\varphi^{\mathrm{ind}}.
 $$
 
 This is the general form of a presentation of an algebra by generators and relations. Taking $V$ free on the generators produces the presentation $A \cong R\langle X\rangle/I$ used for $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{H}$ in *Ideals and Quotients of Algebras*, and the ideal $I$ is generated by the relations.
@@ -240,7 +240,7 @@ The **free algebra** $R\langle X\rangle$ is the tensor algebra of the free modul
 | $T^n(V) = V^{\otimes n}$ | $n$-th graded piece |
 | $T^+(V) = \bigoplus_{n \geq 1} V^{\otimes n}$ | Augmentation ideal |
 | $\iota : V \hookrightarrow T(V)$ | Inclusion of the degree-one part |
-| $\tilde{\varphi} : T(V) \to A$ | Algebra homomorphism extending $\varphi : V \to A$ |
+| $\varphi^{\mathrm{ind}} : T(V) \to A$ | Algebra homomorphism extending $\varphi : V \to A$ |
 | $T \dashv U$ | Tensor algebra left adjoint to the forgetful functor |
 | $R\langle X\rangle$ | Free algebra on the set $X$ |
 | $R\langle x_1,\dots,x_n\rangle$ | Free algebra on $n$ generators |

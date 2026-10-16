@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(p,q)$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.
+This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(n,m)$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.
 
 It is recorded with an explicit standing, stated at the outset so that it is not misread as a framework result. The companion *The Gauge Group Ceiling* shows that the biquaternion algebra's compact structure reaches $\mathrm{SU}(2)$ and stops, and *The Gluon: An Octet Outside the Biquaternion Algebra* states the boundary. The $\mathrm{SU}(3)$ structure below is therefore **not an algebra of $\mathbb{B}$**. It is the external machinery by which the hadron spectrum is classified, and it appears in the corpus because the spinor-structure programme attaches it to the spinor structure through the spin–charge Hilbert space — the spin factor of that space is the framework's own, the charge factor is this external $\mathrm{SU}(3)$.
 
@@ -10,7 +10,7 @@ The article is organised as follows. A section gives the representations as trac
 
 **Conventions.** The Okubo basis and the degree formula are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§4–6) and from Okubo's *Lecture Notes in Physics* **94**; the mass relations are the standard Gell-Mann–Okubo relations and are checked against the Particle Data Group values. The companion *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form* supplies the space on which these representations act, and *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form* supplies the mass $m_0$ of a supermultiplet.
 
-- Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.
+- Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Ϙ\otimes\mathcal{H}_\infty$ on which these representations act.
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.
 - Companion articles *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *The Gluon: An Octet Outside the Biquaternion Algebra*, for why $\mathrm{SU}(3)$ is external.
 - Corpus article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the octet's scalar sector and the Gell-Mann–Oakes–Renner relation, a different mass formula.
@@ -18,25 +18,25 @@ The article is organised as follows. A section gives the representations as trac
 
 ## Representations of SU(3)
 
-An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $T^{a_1\dots a_p}_{b_1\dots b_q}$, symmetric in the upper and in the lower indices and traceless on any contraction. The pair $(p,q)$ of non-negative integers labels the representation, and its **degree** is
+An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $T^{a_1\dots a_n}_{b_1\dots b_m}$, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its **degree** is
 
 $$
-N(p,q) = \tfrac12\,(p+1)(q+1)(p+q+2).
+N(n,m) = \tfrac12\,(n+1)(m+1)(n+m+2).
 $$
 
 ### The Degree Table
 
 The degree counts the particles in the supermultiplet the representation carries. The lower-left corner of the table is
 
-| $N(p,q)$ | $q=0$ | $q=1$ | $q=2$ | $q=3$ | $q=4$ | $q=5$ | $q=6$ |
+| $N(n,m)$ | $m=0$ | $m=1$ | $m=2$ | $m=3$ | $m=4$ | $m=5$ | $m=6$ |
 |---|---|---|---|---|---|---|---|
-| $p=0$ | $1$ | $3$ | $6$ | $10$ | $15$ | $21$ | $28$ |
-| $p=1$ | $3$ | $8$ | $15$ | $24$ | $35$ | $48$ | $63$ |
-| $p=2$ | $6$ | $15$ | $27$ | $42$ | $60$ | $81$ | $105$ |
-| $p=3$ | $10$ | $24$ | $42$ | $64$ | $90$ | $120$ | $154$ |
-| $p=4$ | $15$ | $35$ | $60$ | $90$ | $125$ | $165$ | $210$ |
-| $p=5$ | $21$ | $48$ | $81$ | $120$ | $165$ | $216$ | $273$ |
-| $p=6$ | $28$ | $63$ | $105$ | $154$ | $210$ | $273$ | $343$ |
+| $n=0$ | $1$ | $3$ | $6$ | $10$ | $15$ | $21$ | $28$ |
+| $n=1$ | $3$ | $8$ | $15$ | $24$ | $35$ | $48$ | $63$ |
+| $n=2$ | $6$ | $15$ | $27$ | $42$ | $60$ | $81$ | $105$ |
+| $n=3$ | $10$ | $24$ | $42$ | $64$ | $90$ | $120$ | $154$ |
+| $n=4$ | $15$ | $35$ | $60$ | $90$ | $125$ | $165$ | $210$ |
+| $n=5$ | $21$ | $48$ | $81$ | $120$ | $165$ | $216$ | $273$ |
+| $n=6$ | $28$ | $63$ | $105$ | $154$ | $210$ | $273$ | $343$ |
 
 The singlet is $(0,0)$, degree $1$; the fundamental triplet is $(1,0)$, degree $3$, and its conjugate $(0,1)$, also $3$; the adjoint (the **octet**) is $(1,1)$, degree $8$; the decuplet is $(3,0)$, degree $10$; the $(2,2)$ is the $27$. These are the degrees the programme's particle assignments use.
 
@@ -75,7 +75,7 @@ $$
 the **I-spin**, **U-spin** and **V-spin** of the eightfold way. A charge operator on a representation of degree $N$ then has the form
 
 $$
-Q^{(N)} = \alpha\,A^{1}_{\ 1}(N)+\beta\,A^{3}_{\ 3}(N)+\gamma\,\mathbf{1}_N,
+Ϙ^{(N)} = \alpha\,A^{1}_{\ 1}(N)+\beta\,A^{3}_{\ 3}(N)+\gamma\,\mathbf{1}_N,
 $$
 
 with the constant $\gamma$ a shift. The three subalgebras matter because different mass relations are statements in different ones: the Gell-Mann–Okubo relation is a U-spin statement, and the equal-spacing relation of the decuplet is an I-spin statement.
@@ -85,16 +85,16 @@ with the constant $\gamma$ a shift. The three subalgebras matter because differe
 Hadrons are classified into supermultiplets of equal baryon number, spin and parity, one supermultiplet per irreducible representation. A representation can carry hadrons only if the eigenvalues of the charge and hypercharge operators on it are integers. That selects the **admissible** representations
 
 $$
-p-q\equiv 0 \pmod 3,
+n-m\equiv 0 \pmod 3,
 $$
 
-that is, $p-q\in\{0,\pm3,\pm6,\dots\}$. Reading the table above, the admissible degrees are
+that is, $n-m\in\{0,\pm3,\pm6,\dots\}$. Reading the table above, the admissible degrees are
 
 $$
 1,\,8,\,10,\,27,\,28,\,35,\,55,\,64,\,80,\,81,\,91,\,125,\,136,\,143,\,154,\dots
 $$
 
-For example $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=N(0,3)=10$, $N(2,2)=27$, $N(0,6)=N(6,0)=28$, $N(4,1)=N(1,4)=35$, $N(0,9)=55$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=N(6,3)=154$; all satisfy $p-q\equiv0\pmod3$. The non-admissible degrees — $3$, $6$, $15$, $24$, $42$, $48$, $60$, $\dots$ — correspond to representations whose charge eigenvalues would be fractional, as the triplet $(1,0)$ and sextet $(2,0)$ illustrate: the quark and antiquark are the degrees of freedom, and their fractional charges are why the triplet is not an admissible hadron supermultiplet while the octet built from three of them is.
+For example $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=N(0,3)=10$, $N(2,2)=27$, $N(0,6)=N(6,0)=28$, $N(4,1)=N(1,4)=35$, $N(0,9)=55$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=N(6,3)=154$; all satisfy $n-m\equiv0\pmod3$. The non-admissible degrees — $3$, $6$, $15$, $24$, $42$, $48$, $60$, $\dots$ — correspond to representations whose charge eigenvalues would be fractional, as the triplet $(1,0)$ and sextet $(2,0)$ illustrate: the quark and antiquark are the degrees of freedom, and their fractional charges are why the triplet is not an admissible hadron supermultiplet while the octet built from three of them is.
 
 ## Reduction of the Octet into Isospin Multiplets
 
@@ -146,11 +146,11 @@ Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
 \qquad |C'|\ll|C| .
 $$
 
-The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Q$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m^{2\prime}=\xi'A^{1}_{\ 1}+\eta'A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi'=\theta\xi$, $\eta'=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
+The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m^{2\prime}=\xi'A^{1}_{\ 1}+\eta'A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi'=\theta\xi$, $\eta'=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
 
 $$
 m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)
-+\alpha'+\beta'Y+\gamma'\Bigl(U(U+1)-\tfrac14Q^2\Bigr),
++\alpha'+\beta'Y+\gamma'\Bigl(U(U+1)-\tfrac14Ϙ^2\Bigr),
 \qquad
 \frac{\alpha'}{\alpha}=\frac{\beta'}{\beta}=\frac{\gamma'}{\gamma}=\theta .
 $$
@@ -220,8 +220,8 @@ One further point is worth recording because the programme itself flags it. The 
 
 **Established, and recomputed.**
 
-- The degree formula $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
-- The admissibility condition $p-q\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
+- The degree formula $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
+- The admissibility condition $n-m\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
 - The octet reduction $\mathrm{Sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.
 - The Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.
 
@@ -251,7 +251,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Summary
 
-An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(p,q)$ with degree $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $p-q\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
+An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,m)$ with degree $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
 
 The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is not an algebra of the biquaternion algebra, the gauge-group ceiling stops at $\mathrm{SU}(2)$, and the Okubo matrices are three-by-three. The article records the structure accurately, checks its numerical content, and states that the splitting pattern — not the group — is what borders the framework's own sector structure.
 
@@ -259,17 +259,17 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 
 | Symbol | Meaning |
 |---|---|
-| $(p,q)$, $p,q\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
-| $T^{a_1\dots a_p}_{b_1\dots b_q}$ | Traceless bisymmetric tensor carrying the representation |
-| $N(p,q)=\tfrac12(p+1)(q+1)(p+q+2)$ | Degree of the representation |
+| $(n,m)$, $n,m\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
+| $T^{a_1\dots a_n}_{b_1\dots b_m}$ | Traceless bisymmetric tensor carrying the representation |
+| $N(n,m)=\tfrac12(n+1)(m+1)(n+m+2)$ | Degree of the representation |
 | $A^{i}_{\ k}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |
-| $Y,Q,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
+| $Y,Ϙ,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
 | $m^2=m_0^2+\delta m^2+\delta m^{2\prime}$ | Mass operator split into symmetric and breaking parts |
 | $Z$, $D^{a}_{\ b}$ | Unitary field and unitary moment of the Zeeman analogy |
 | $\theta$ | Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$ |
 | $m_\Xi+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$ | Gell-Mann–Okubo relation, baryon octet |
-| $p-q\equiv0\pmod3$ | Admissibility condition for a hadron supermultiplet |
+| $n-m\equiv0\pmod3$ | Admissibility condition for a hadron supermultiplet |
 
 ## Further Reading
 

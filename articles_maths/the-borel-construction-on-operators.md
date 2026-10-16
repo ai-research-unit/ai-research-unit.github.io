@@ -133,12 +133,12 @@ up to the natural quasi-isomorphism; the Borel construction of an operator $T$ i
 **Theorem.** The Serre spectral sequence of the Borel fibration has the $E^2$ page
 
 $$
-E_2^{p,q} = H^p\bigl(G;H^q(X;k)\bigr) ,
+E_2^{n,m} = H^p\bigl(G;H^q(X;k)\bigr) ,
 $$
 
 the group cohomology with coefficients in the cohomology of the fibre, and it converges to $H_G^*(X;k)$; for the trivial action and the field of coefficients it reduces to the tensor product $H^p(BG;k)\otimes H^q(X;k)$ under the Künneth hypothesis, and the Borel construction of an operator acts on the pages as the induced map on the coefficient modules. The spectral sequence is that of *The Leray–Serre Spectral Sequence*, with the local system of the fibre cohomology along the base.
 
-*Proof.* The Serre spectral sequence of the fibration $X\to X_G\to BG$ has $E_2^{p,q}=H^p(BG;\mathcal H^q(X;k))$ with the local system $\mathcal H^q(X;k)$; the local system is the module $H^q(X;k)$ with the action of the fundamental group $G$, and its cohomology is the group cohomology, which is the stated page.
+*Proof.* The Serre spectral sequence of the fibration $X\to X_G\to BG$ has $E_2^{n,m}=H^p(BG;\mathcal H^q(X;k))$ with the local system $\mathcal H^q(X;k)$; the local system is the module $H^q(X;k)$ with the action of the fundamental group $G$, and its cohomology is the group cohomology, which is the stated page.
 
 ### The Module Structure
 

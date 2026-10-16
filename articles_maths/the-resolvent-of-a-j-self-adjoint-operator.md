@@ -82,7 +82,7 @@ is $J$-unitary, $C(A)^{[*]}C(A)=C(A)C(A)^{[*]}=I$, and the assignment is a bijec
 
 *Proof.* Since $\pm i\in\rho(A)$ for a bounded $J$-self-adjoint operator by the symmetry of the spectrum, the transform is defined; writing $C(A)=(A+iI-2iI)(A+iI)^{-1}=I-2iR(-i)$ one computes $C(A)^{[*]}C(A)=I$ from $R(\bar z)^{[*]}=R(z)$; the inverse is the inverse Möbius transformation, and the continuity is the continuity of the resolvent and of the algebraic operations.
 
-**Proposition (the spectrum on the circle).** The Cayley transform carries the spectrum of $A$ by the Möbius map $\lambda\mapsto(\lambda-i)/(\lambda+i)$, so the non-real spectrum of $A$ corresponds to the points of $\sigma(C(A))$ off the unit circle; in the definite case $\sigma(C(A))\subseteq\mathbb{T}$, and the group $e^{itA}$ is a $J$-unitary group whose generator is $A$.
+**Proposition (the spectrum on the circle).** The Cayley transform carries the spectrum of $A$ by the Möbius map $\lambda\mapsto(\lambda-i)/(\lambda+i)$, so the non-real spectrum of $A$ corresponds to the points of $\sigma(C(A))$ off the unit circle; in the definite case $\sigma(C(A))\subseteq\mathbb{T}$, and the group $\exp(itA)$ is a $J$-unitary group whose generator is $A$.
 
 *Proof.* The functional calculus in the definite metric gives the spectral mapping; the off-circle correspondence is the image of the real axis by a Möbius map when the metric is not definite, and the group statement is the computation of the exponential with the indefinite adjoint.
 

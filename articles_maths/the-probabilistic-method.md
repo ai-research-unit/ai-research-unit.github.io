@@ -131,7 +131,7 @@ The result is strictly stronger than the first moment bound on the number of edg
 **Theorem (Erdős).** For every $g \geq 3$ and every $\chi \geq 3$ there is a graph of girth greater than $g$ and chromatic number greater than $\chi$.
 
 *Proof (sketch).* Let $G = G(n,p)$ with $p = n^{\theta-1}$ for a fixed $\theta \in (0,1)$. The expected number of cycles of length at most $g$ is $O(n^{\theta g})$ and the expected number of independent sets of size $s = \lceil 3\ln n/p\rceil$ is $o(1)$; more precisely, a first moment estimate bounds the probability that some $s$-set is independent by
-$\binom{n}{s}(1-p)^{\binom{s}{2}} \leq (ne^{-p(s-1)/2})^s = o(1)$.
+$\binom{n}{s}(1-p)^{\binom{s}{2}} \leq (n\exp(-p(s-1)/2))^s = o(1)$.
 Alter the graph by deleting one vertex from each short cycle: the graph that remains has girth exceeding $g$ and its chromatic number is at least $n/(2s)$ — because every colour class is an independent set of size at most $s$, and at most $n/(2s)$ vertices were deleted when $n$ is large — which exceeds $\chi$ for $n$ large.
 
 The alteration method is the second of the classical techniques: one first produces a random object with few defects, then repairs the defects by discarding them, and shows that the repair costs little relative to the size of the object. It is the technique behind the construction of graphs of large girth and large chromatic number, the Ramsey lower bound $\frac{k}{e\sqrt2}2^{k/2}$ of Spencer, and many of the constructions of extremal combinatorics.
@@ -184,7 +184,7 @@ $$
 \mathbb{P}(f(X) - \mathbb{E}[f(X)] \geq t) \leq \exp\!\left(-\frac{2t^2}{\sum_ic_i^2}\right).
 $$
 
-The four inequalities are the standard concentration tools, and they are proved by the exponential moment method of *Measure-Theoretic Probability*: the Chernoff bound by the Markov inequality and the computation of $\mathbb{E}[e^{\lambda S}]$; Hoeffding by the lemma that a bounded centred variable has a subgaussian moment generating function; Azuma by the martingale version of the same computation, using the conditional expectation; and McDiarmid by exposing the coordinates one at a time and applying Azuma to the resulting martingale. The last two are the form in which the method applies to a function of many independent variables, and they are the reason the probabilistic method yields not only existence but also the typical behaviour of the objects.
+The four inequalities are the standard concentration tools, and they are proved by the exponential moment method of *Measure-Theoretic Probability*: the Chernoff bound by the Markov inequality and the computation of $\mathbb{E}[\exp(\lambda S)]$; Hoeffding by the lemma that a bounded centred variable has a subgaussian moment generating function; Azuma by the martingale version of the same computation, using the conditional expectation; and McDiarmid by exposing the coordinates one at a time and applying Azuma to the resulting martingale. The last two are the form in which the method applies to a function of many independent variables, and they are the reason the probabilistic method yields not only existence but also the typical behaviour of the objects.
 
 ## Summary
 

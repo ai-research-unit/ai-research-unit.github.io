@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $H$, and the **split metric** from the realified bilinear form $B$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
+The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the **split metric** from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $A^{2}$ and $\lvert A\rvert^{2}$ that are their diagonals. The modulus $\lvert A\rvert=\sqrt{H(A)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, nor the two algebraic norms $A^{2}$ and $\lvert A\rvert^{2}$ that are their diagonals. The modulus $\lvert A\rvert=\sqrt{H(A)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
 
-**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $A=a+ia'$ and $C=c+ic'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ia'$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complex Subspaces*, *Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are the four general forms; on $\mathbb{C}$ the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $B(A,C)=AC$ and the Hermitian form $H(A,C)=A\bar C$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the worked second element of the category, $1-2i$, is written $C$ here.
+**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $A=a+ia'$ and $C=c+ic'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ia'$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complexoid Subspaces*, *Conventions in Mathematics*). The four general forms are written with brackets — $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ the two bilinear, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ the two sesquilinear; on $\mathbb{C}$ the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $\langle A,C\rangle=AC$ and the Hermitian form $\langle A,C\rangle_{*}=A\bar C$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*). Elements are therefore written $A$ and $C$ and never $B$; the worked second element of the category, $1-2i$, is written $C$ here.
 
 ## The Two Forms and Their Realifications
 
@@ -19,13 +19,13 @@ $$
 B(A,C)=AC, \qquad H(A,C)=A\bar C,
 $$
 
-the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $AC$ and $A\bar C$ (*The Two Products of the Complex Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Their diagonals are the two algebraic norms,
+the first the multiplication of the field, symmetric, and the second the derived operation of the algebra, conjugate-symmetric; the two products of the complex space are exactly these, $AC$ and $A\bar C$ (*The Two Products of the Complexoid Space*). Both are $\mathbb{C}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}$ (*The Two Forms and the Two Algebraic Norms of the Complexoid Space*). Their diagonals are the two algebraic norms,
 
 $$
 B(A,A)=A^{2}, \qquad H(A,A)=A\bar A=\lvert A\rvert^{2},
 $$
 
-the first complex and anisotropic and the second real, positive definite and multiplicative. The form $B$ is the two-dimensional case of the general plain bilinear form and $H$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=N$ and $H=K$, which is the reason the two diagonal norms are written $A^{2}$ and $\lvert A\rvert^{2}$.
+the first complex and anisotropic and the second real, positive definite and multiplicative. The form $\langle\cdot,\cdot\rangle$ is the two-dimensional case of the general plain bilinear form and $\langle\cdot,\cdot\rangle_{*}$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=N$ and $H=K$, which is the reason the two diagonal norms are written $A^{2}$ and $\lvert A\rvert^{2}$.
 
 Both forms are complex-valued, and a real function is obtained from each by realification. In the real basis $1$, $i$, with $A=a+ia'$ and $C=c+ic'$,
 
@@ -43,7 +43,7 @@ of signatures $(1,1)$ and $(2,0)$.
 
 *Proof.* The four values on the basis are $\operatorname{Re}B(1,1)=1$, $\operatorname{Re}B(1,i)=0$, $\operatorname{Re}B(i,i)=-1$ and $\operatorname{Re}H(1,1)=\operatorname{Re}H(i,i)=1$, $\operatorname{Re}H(1,i)=0$. The two matrices are diagonal, and the signs of their diagonals give the signatures.
 
-The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(A,C)=ac+a'c'$, and its diagonal is the real norm $\lvert A\rvert^{2}$. The realified $B$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the two scalar readings of one complex form, and the rules behind them — a symmetric bilinear form realifying to the split signature $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
+The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(A,C)=ac+a'c'$, and its diagonal is the real norm $\lvert A\rvert^{2}$. The realified $\langle\cdot,\cdot\rangle$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the two scalar readings of one complex form, and the rules behind them — a symmetric bilinear form realifying to the split signature $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
 
 ## The Euclidean Metric
 
@@ -53,7 +53,7 @@ $$
 d_{H}^{2}(A,C)=H(A-C,A-C)=\lvert A-C\rvert^{2}=(a-c)^{2}+(a'-c')^{2}.
 $$
 
-It is the diagonal of the definite form $H$ read on the difference $A-C$; the modulus $\lvert\cdot\rvert$ and its multiplicativity are *Complex Norm and Invertibility*.
+It is the diagonal of the definite form $\langle\cdot,\cdot\rangle_{*}$ read on the difference $A-C$; the modulus $\lvert\cdot\rvert$ and its multiplicativity are *Complex Norm and Invertibility*.
 
 **Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $A=C$. Its Gram matrix is $\mathrm{I}_{2}$ and its signature is $(2,0)$; the only null difference is the zero difference.
 
@@ -63,7 +63,7 @@ It is the diagonal of the definite form $H$ read on the difference $A-C$; the mo
 
 The level sets are the circles: $d_{H}(A,C)=r$ is the circle of radius $r$ about $C$. The form is definite, so there is no null cone beyond the point $A=C$.
 
-**The group of maps preserving the form.** The $\mathbb{C}$-linear maps preserving $H$ are the multiplications by the units of norm one, $A\mapsto uA$ with $\lvert u\rvert=1$; the identification of this group of multiplications with $\mathrm{SO}(2)$, together with the reading of the parameter, is *Rotations and Reflections in the Complex Plane*, below this article in this category. The full group of $\mathbb{R}$-linear maps preserving $H$ is the group $O(2)$, given by the matrix condition
+**The group of maps preserving the form.** The $\mathbb{C}$-linear maps preserving $\langle\cdot,\cdot\rangle_{*}$ are the multiplications by the units of norm one, $A\mapsto uA$ with $\lvert u\rvert=1$; the identification of this group of multiplications with $\mathrm{SO}(2)$, together with the reading of the parameter, is *Rotations and Reflections in the Complex Plane*, below this article in this category. The full group of $\mathbb{R}$-linear maps preserving $H$ is the group $O(2)$, given by the matrix condition
 
 $$
 M^{\mathsf T}M=\mathrm{I}_{2}
@@ -73,7 +73,7 @@ on the matrix of the map in the basis $1$, $i$. The maps of determinant $+1$ in 
 
 ## The Split Metric
 
-**Definition.** The **split metric** of the complex space is the quadratic function induced by the realified bilinear form $B$,
+**Definition.** The **split metric** of the complex space is the quadratic function induced by the realified bilinear form $\langle\cdot,\cdot\rangle$,
 
 $$
 d_{B}^{2}(A,C)=\operatorname{Re}B(A-C,A-C)=\operatorname{Re}\bigl((A-C)^{2}\bigr)=(a-c)^{2}-(a'-c')^{2}.
@@ -171,9 +171,9 @@ for every real $t$; the same holds on the line of direction $1-i$. On those diff
 
 ## Summary
 
-The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $H(A,C)=A\bar C$ gives the Euclidean metric $d_{H}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $B(A,C)=AC$ gives the split metric $d_{B}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
+The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $\langle A,C\rangle_{*}=A\bar C$ gives the Euclidean metric $d_{H}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $\langle A,C\rangle=AC$ gives the split metric $d_{B}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
 
-The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{B}^{2}=2(a'-c')^{2}$ and $d_{H}^{2}+d_{B}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $H(A,C)=B(A,\bar C)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
+The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{B}^{2}=2(a'-c')^{2}$ and $d_{H}^{2}+d_{B}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\langle A,C\rangle_{*}=B(A,\bar C)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
 
 ## Summary of Notation
 
@@ -194,13 +194,13 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
-- *The Two Products of the Complex Space* (`articles_maths/the-two-products-of-the-complexoid-space.md`), for the two products $AC$ and $A\bar C$ whose forms are realified here.
+- *The Two Forms and the Two Algebraic Norms of the Complexoid Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
+- *The Two Products of the Complexoid Space* (`articles_maths/the-two-products-of-the-complexoid-space.md`), for the two products $AC$ and $A\bar C$ whose forms are realified here.
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.md`), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - *Complex Algebra* (`articles_maths/complex-algebra.md`), for the algebra, its basis and its one nontrivial involution.
 - *Complex Norm and Invertibility* (`articles_maths/complex-norm-and-invertibility.md`), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - *Rotations and Reflections in the Complex Plane* (`articles_maths/rotations-and-reflections-in-the-complex-plane.md`), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- *Complex Subspaces* (`articles_maths/complexoid-subspaces.md`), for the real and imaginary subspaces on which the split metric is definite of opposite signs.
-- *Remarkable Subspaces of the Complex Numbers and the Two Forms* (`articles_maths/remarkable-subspaces-of-the-complexoid-and-the-two-forms.md`), for the restrictions of the two forms to the two subspaces.
+- *Complexoid Subspaces* (`articles_maths/complexoid-subspaces.md`), for the real and imaginary subspaces on which the split metric is definite of opposite signs.
+- *Remarkable Subspaces of the Complexoid and the Two Forms* (`articles_maths/remarkable-subspaces-of-the-complexoid-and-the-two-forms.md`), for the restrictions of the two forms to the two subspaces.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

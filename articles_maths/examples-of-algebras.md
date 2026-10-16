@@ -15,11 +15,11 @@ The following table is the summary; each entry is justified in the sections belo
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $1$ | $\mathbb{R}$ | $\mathbb{R}\setminus\{0\}$ | none | $0,\ \mathbb{R}$ | field, division |
 | $\mathbb{C}$ | $2$ | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | none | $0,\ \mathbb{C}$ | field, division |
-| $\mathbb{D}$ | $2$ | $\mathbb{D}$ | $N(u) \neq 0$ | yes | $0,\ \mathbb{D}e_\pm,\ \mathbb{D}$ | semisimple, not simple |
+| $\mathbb{D}$ | $2$ | $\mathbb{D}$ | $N(u) \neq 0$ | yes | $0,\ \mathbb{D}\Pi_{1,2},\ \mathbb{D}$ | semisimple, not simple |
 | $\mathbb{D}'$ | $2$ | $\mathbb{D}'$ | $x \neq 0$ | yes | $(\varepsilon^m)$ | local, not semisimple |
 | $\mathbb{H}$ | $4$ | $\mathbb{R}$ | $\mathbb{H}\setminus\{0\}$ | none | $0,\ \mathbb{H}$ | division, simple |
 | $\mathbb{H}_{\mathbb{D}}$ | $8$ | $\mathbb{D}$ | $N(u) \in \mathbb{D}^\times$ | yes | two maximal ideals | semisimple, not simple |
-| $\mathbb{B}$ | $8$ (over $\mathbb{R}$) | $\mathbb{C}$ | $N(\tilde{Q}) \neq 0$ | yes | $0,\ \mathbb{B}$ | simple, not division |
+| $\mathbb{B}$ | $8$ (over $\mathbb{R}$) | $\mathbb{C}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | $0,\ \mathbb{B}$ | simple, not division |
 | $M_n(k)$, $n \geq 2$ | $n^2$ | $k I_n$ | $\mathrm{GL}_n(k)$ | yes | $0,\ M_n(k)$ | simple, not division |
 | $k[x]$ | $\infty$ | $k[x]$ | $k^\times$ | none | principal | domain, not simple |
 | $k[G]$, $G$ finite | $\lvert G\rvert$ | class sums | contains $G$ | yes if $\lvert G\rvert\geq2$ | from representations | semisimple if $\operatorname{char} k \nmid \lvert G\rvert$ |
@@ -45,10 +45,10 @@ $$
 so the units are the elements off the two lines $x = \pm y$, and the nonzero elements on those lines are zero divisors. The idempotents
 
 $$
-e_+ = \tfrac{1}{2}(1+j), \qquad e_- = \tfrac{1}{2}(1-j)
+\Pi_1 = \tfrac{1}{2}(1+j), \qquad \Pi_2 = \tfrac{1}{2}(1-j)
 $$
 
-satisfy $e_+^2 = e_+$, $e_-^2 = e_-$, $e_+e_- = 0$, $e_+ + e_- = 1$, and exhibit the isomorphism $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, $x + jy \mapsto (x+y, x-y)$. Through this isomorphism the ideals are $0$, $\mathbb{R}e_+$, $\mathbb{R}e_-$ and $\mathbb{D}$: the algebra is semisimple (it is a product of two fields) but not simple, and it is not a domain. The relation $e_+e_- = 0$ with both factors nonzero is the archetype of a zero-divisor pair.
+satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$, $\Pi_1\Pi_2 = 0$, $\Pi_1 + \Pi_2 = 1$, and exhibit the isomorphism $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, $x + jy \mapsto (x+y, x-y)$. Through this isomorphism the ideals are $0$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ and $\mathbb{D}$: the algebra is semisimple (it is a product of two fields) but not simple, and it is not a domain. The relation $\Pi_1\Pi_2 = 0$ with both factors nonzero is the archetype of a zero-divisor pair.
 
 ### The Dual Numbers
 

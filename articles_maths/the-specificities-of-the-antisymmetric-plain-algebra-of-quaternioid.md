@@ -4,11 +4,11 @@
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
-*Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article states what singles
-the block out among the six products of the space: the two identities it satisfies, the classes its
-laws empty, and the place it takes in the law table of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+*Introduction to the Antisymmetric Plain Algebra*. This article states what singles
+the block out among the companion products of the space: the two identities it satisfies, the classes its
+laws empty, and the place it takes in the law table of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
-The block is the **only** product of the six that is at once alternating and Jacobi; the two
+The block is the **only** companion product that is at once alternating and Jacobi; the two
 properties together make it the Lie product of the space. It has no unit, hence no inverse and no
 group of units, and no algebraic norm in the sense of the block. Its idempotents reduce to $0$, and
 its nilpotents are the whole space; the two classes, to which the biquaternion chapter gave
@@ -21,20 +21,19 @@ but $\times$ is a different multiplication, alternating and without a unit. Thro
 sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has
 no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-The operation and its table are *Introduction to the Antisymmetric Plain Algebra of Quaternions*; the
+The operation and its table are *Introduction to the Antisymmetric Plain Algebra*; the
 Lie structure, the form and the operators are *The Lie Algebra of the Antisymmetric Plain Algebra*,
 *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations
 of the Antisymmetric Plain Algebra*, and the element theory is *Zero Divisors of the Antisymmetric
-Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and
-*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article
+Plain Algebra*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and
+*Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, all below this article
 in this category. The law vocabulary is *Definitions for the Study of
-the Algebraic Structures* and the law table *The Algebraic Structures over the Quaternion
-$\mathbb{R}$ Space*.
+the Algebraic Structures* and the law table *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
-The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 ## The Criterion
 
@@ -60,7 +59,7 @@ which vanishes by the anticommutativity of the vector product; it is verified on
 on the $64$ triples of the units.
 
 **Corollary (the block is the Lie product of the space).** An alternating bilinear rule satisfying
-the Jacobi identity is a Lie bracket, so $(\mathbb{H},\times)$ is a Lie algebra. Among the six
+the Jacobi identity is a Lie bracket, so $(\mathbb{H},\times)$ is a Lie algebra. Among the companion
 products of the space, the block is the only structure that is both alternating and Jacobi: the other
 alternating product, the antisymmetric quaternionic operation, fails the Jacobi identity, and the four
 remaining products are not alternating. The Lie structure is *The Lie Algebra of the Antisymmetric
@@ -81,7 +80,7 @@ $(\tilde p\times\tilde q)\times\tilde r-\tilde p\times(\tilde q\times\tilde r)$ 
 the right alternative law fails at $e_1,e_2,e_2$.
 
 *Proof.* A bilinear alternating rule is antisymmetric, and the implications "alternating and bilinear
-$\Rightarrow$ flexible, power-associative, cube-zero" of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* give the first three; flexibility is checked at $e_1,e_2$, where
+$\Rightarrow$ flexible, power-associative, cube-zero" of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* give the first three; flexibility is checked at $e_1,e_2$, where
 $(e_1\times e_2)\times e_1=e_3\times e_1=e_2$ and $e_1\times(e_2\times e_1)=e_1\times(-e_3)=e_2$. The
 associator is read on the units, where $(e_1\times e_2)\times e_2=e_3\times e_2=-e_1$ is different
 from $e_1\times(e_2\times e_2)=0$, so the rule is not associative; the same triple is the failure of
@@ -97,13 +96,13 @@ would be a non-pure value; and the scalar direction is not reached at all, $\til
 having zero scalar part. So no element is a unit on either side, the inverse being defined relative to
 a two-sided unit. The algebraic norm of a product is a quadratic form multiplicative for the product;
 the diagonal form of the block is the vanishing function $\tilde q\times\tilde q=0$, so the block's own
-algebraic norm is the zero form, and the norms $N$ and $B$ of the space are not multiplicative for
+algebraic norm is the zero form, and the norms $\langle\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural}$ of the space are not multiplicative for
 $\times$.
 
 **Remark (the contrast with the plain and symmetric blocks).** The plain algebra has the unit $e_0$
-and the multiplicative norm $N(\tilde q)=\tilde q\tilde q^{\natural}$; the symmetric plain algebra
+and the multiplicative norm $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$; the symmetric plain algebra
 keeps the unit $e_0$, but it is no longer a division algebra and its norm is no longer multiplicative;
-the antisymmetric block has neither, its two quadratic objects $N$ and $B$ being carried by the
+the antisymmetric block has neither, its two quadratic objects $\langle\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural}$ being carried by the
 symmetric products instead. The absence is *definitional*, not accidental: it follows from alternation
 alone.
 
@@ -133,36 +132,33 @@ $$
 
 The nonzero nilpotents are the punctured space, and the class coincides with the zero-divisor set and
 with the root set of $0$ (*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain
-Algebra* and *Zero Divisors of the Antisymmetric Plain Algebra*, both below this article in this
+Algebra* and *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, both below this article in this
 category).
 
 *Proof.* The square vanishes identically, so every element is square-zero; the index of nilpotency is
 two for a nonzero element, the square being zero and the element itself nonzero, and one for the
-origin. The reading is the one of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, where the
+origin. The reading is the one of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the
 class of nonzero nilpotents is the whole space for the two antisymmetric structures.
 
-## The Isolation among the Six
+## The Isolation among the Companion Products
 
-The following table, the law table of *The Algebraic Structures over the Quaternion $\mathbb{R}$
-Space* read on the identities, shows the isolation of the block. The entries are the structures that
+The following table, the law table of *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* read on the identities, shows the isolation of the block. The entries are the structures that
 satisfy the identity.
 
-| identity | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
-|---|---|---|---|---|---|---|
-| alternating | no | no | **yes** | no | no | yes |
-| flexible | yes | yes | yes | no | yes | yes |
-| power-associative | yes | yes | yes | no | yes | yes |
-| Jordan identity | yes | yes | yes | yes | no | yes |
-| associative | yes | no | no | no | no | no |
-| Jacobi identity | no | no | **yes** | no | no | no |
+| identity | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ |
+|---|---|---|---|
+| alternating | no | **yes** | no |
+| flexible | yes | yes | no |
+| power-associative | yes | yes | no |
+| Jordan identity | yes | yes | yes |
+| associative | no | no | no |
+| Jacobi identity | no | **yes** | no |
 
 **Remark (what isolates the block).** Two readings single the block out. First, $\mathrm{APA}$ is the
-**only** structure that is both alternating and Jacobi, hence the only Lie structure of the six, and
-it is the only one that is alternating together with $\mathrm{AQA}$. Second, the block has no unit
-while the general plain structure does, is not associative while the general plain structure is, and
-fails the norm while the plain and symmetric structures carry one. The block is therefore
-$\mathrm{APA}$, the first of the two antisymmetric structures in the order of the catalogue, paired
-with the antisymmetric quaternionic structure and separated from it by the Jacobi identity alone.
+**only** structure that is both alternating and Jacobi, hence the only Lie structure of the companion
+products. Second, the block has no unit while the symmetric plain structure does, is not associative,
+and fails the norm while the symmetric plain structure carries one. The block is therefore
+$\mathrm{APA}$, the Lie bracket of the space.
 
 ## The Boundary of the Criterion
 
@@ -180,7 +176,7 @@ basis computation, as the table of empty classes records.
 
 ## Summary
 
-The antisymmetric plain block is isolated among the six products by a single pair of identities: it is
+The antisymmetric plain block is isolated among the companion products by a single pair of identities: it is
 alternating, $\tilde p\times\tilde p=0$, and it satisfies the Jacobi identity, so it is the unique Lie
 structure of the space. Its laws are those the two properties force: flexible, power-associative and
 cube-zero, and neither associative nor alternative in the nonzero sense. The block has no unit on
@@ -199,12 +195,12 @@ the Jacobi identity is the whole of the difference between them.
 | $\{0\}$ | the idempotents, folded here |
 | $\mathbb{H}$ | the nilpotent set, the whole space, folded here |
 | $\varnothing$ | the group of units, the algebraic norm taken as nonzero |
-| $\mathrm{APA}$ | the unique Lie structure of the six |
+| $\mathrm{APA}$ | the unique Lie structure of the companion products |
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra of Quaternions*, for the operation, its table and the absence of a unit.
+- *Introduction to the Antisymmetric Plain Algebra*, for the operation, its table and the absence of a unit.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the Lie structure.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the derivations.
-- *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article in this category, for the element classes folded here.
-- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, all below this article in this category, for the element classes folded here.
+- *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, for the law vocabulary and the law table.

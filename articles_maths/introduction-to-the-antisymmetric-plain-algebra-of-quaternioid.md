@@ -14,7 +14,7 @@ $$
 
 the cross product of the two vector parts. The space $\mathbb{H}$ with this operation is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block, the operation named
-$\mathrm{APA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+$\mathrm{APA}$ in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real
 scalars, but $\times$ is a different multiplication from $\tilde p\tilde q$: it is alternating, it
@@ -25,8 +25,8 @@ and the star coincides with the natural sign and gives nothing new.
 The article owns the operation as a multiplication: the rule, the class, the laws, the sixteen
 products of the basis, the image, the absence of a unit and the reconstruction of the plain product
 from its two halves. The element theory of the block is the companion articles of the same section,
-all below this article in this category — *Zero Divisors of the Antisymmetric Plain Algebra*,
-*Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero
+all below this article in this category — *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
+*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero
 and the Nilpotents of the Antisymmetric Plain Algebra* and *The
 Specificities of the Antisymmetric Plain Algebra*; the Lie theory is
 *The Lie Algebra of the Antisymmetric Plain Algebra*, *The Killing Form of the Antisymmetric Plain
@@ -57,7 +57,7 @@ $$
 It is the **antisymmetrisation** of the general plain bilinear product $\tilde p\tilde q$, the
 operation called the antisymmetric part of the product in *The Symmetric and Antisymmetric Parts of
 an Algebra Product*, and the operation named $\mathrm{APA}$ in *The Algebraic Structures over the
-Quaternion $\mathbb{R}$ Space*. The space $\mathbb{H}$ with the product $\times$ is written
+Quaternioid $\mathbb{R}$ Space*. The space $\mathbb{H}$ with the product $\times$ is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block.
 
 ### The Coordinate and Scalar–Vector Forms
@@ -176,27 +176,20 @@ all $\tilde q$, in particular a pure right-hand side for $\tilde q=\tilde e$ and
 pure $\tilde q$; the two demands are incompatible off the pure elements. Checked on the four units:
 $e_k\times e_0=0\neq e_k$ and $e_0\times e_0=0\neq e_0$.
 
-**Proposition (the reconstruction).** The plain product is the sum of its two halves,
+**Proposition (the reconstruction).** The algebra product is the sum of its two halves,
 
 $$
-\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA},\qquad
 \tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\times\tilde q ,
 $$
 
 with $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ the symmetric half. The
 square map sees only the symmetric half, $\tilde q\tilde q=\tilde q\bullet\tilde q$, so the
 antisymmetric half carries no square and no norm; this is why the block is its own product and not a
-reading of the plain one.
+reading of the algebra product.
 
-## The Placement of the Block among the Six
+## The Placement of the Block among the Companion Products
 
-The space $\mathbb{H}$ carries six bilinear products, set out in *The 6 Products of the Quaternion
-$\mathbb{R}$ Space* and structured in *The Algebraic Structures over the Quaternion $\mathbb{R}$
-Space*: the two general products, their symmetrisations and their antisymmetrisations. The block of
-this article is the antisymmetrisation of the plain product. It is the one **alternating** product of
-the plain row; the other antisymmetric operation of the six, the antisymmetrisation of the
-quaternionic product, is *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*,
-below this article in this category.
+The space $\mathbb{H}$ carries, beside the algebra product of the *Quaternions* category, the companion products set out in *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. The block of this article is the antisymmetrisation of the algebra product, the one **alternating** structure of the category.
 
 ## Summary
 
@@ -207,10 +200,8 @@ $\mathbb{R}$-bilinear and alternating, with $\tilde p\times\tilde p=0$, half the
 $[\tilde p,\tilde q]=2(\tilde p\times\tilde q)$ of the associative product. It satisfies the Jacobi
 identity, so $(\mathbb{H},\times)$ is a real Lie algebra of dimension four; its image is the vector
 subspace $\mathrm{Vect}(\mathbb{H})$ of real dimension three; and it has no unit on either side. The
-plain product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, and the square map sees
-only the symmetric half, so the block carries no square of its own. Among the six products the block
-is one of the two antisymmetrisations, the plain one; the quaternionic one fails the Jacobi identity
-and is the neighbouring block.
+algebra product is reconstructed as $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$, and the square map sees
+only the symmetric half, so the block carries no square of its own. Among the companion products of the category the block is the antisymmetrisation of the algebra product, the Lie bracket of the space.
 
 ## Summary of Notation
 
@@ -222,15 +213,15 @@ and is the neighbouring block.
 | $[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p=2(\tilde p\times\tilde q)$ | the commutator of the plain product, twice the operation |
 | $\tilde p\times\tilde p=0$ | the alternation, the vanishing square |
 | $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$ | the image, the vector subspace |
-| $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ | the reconstruction of the plain product from its two halves |
+| $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ | the reconstruction of the algebra product from its two halves |
 | $\mathfrak{g}=(\mathbb{H},\times)$ | the real Lie algebra of the block |
 
 ## Further Reading
 
-- *Introduction to the General Plain Algebra of Quaternions*, for the plain product, its scalar–vector rule and its square.
+- *Introduction to the Quaternion Algebra*, for the plain product, its scalar–vector rule and its square.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the split, its two projections and the admissibility conditions.
-- *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six products and their names.
-- *Introduction to the Symmetric Plain Algebra of Quaternions*, for the symmetric half of the same product.
+- *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, for the companion products and their names.
+- *Introduction to the Symmetric Plain Algebra*, for the symmetric half of the same product.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the structure of the Lie algebra.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the operators.
-- *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.

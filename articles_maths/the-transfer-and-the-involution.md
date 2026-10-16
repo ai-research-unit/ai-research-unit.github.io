@@ -15,10 +15,10 @@ Nothing analytic and nothing geometric is used. The article is the algebra of a 
 **Definition.** Let $\sigma$ act freely on $X$, let $B = X/\sigma$ be the orbit space and let $p : X \to B$ be the quotient, a double cover with deck transformation $\sigma$. The **transfer** is the chain map
 
 $$
-\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}\tilde\eta^{\pm},
+\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}\eta^{\mathrm{lift}}^{\pm},
 $$
 
-where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices $\tilde\eta^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.
+where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices $\eta^{\mathrm{lift}}^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.
 
 **Theorem.** The transfer is a well-defined chain map and it satisfies
 

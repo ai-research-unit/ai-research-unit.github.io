@@ -22,11 +22,11 @@ $$
 
 ## The Non-Minimal Substitution
 
-Minimal coupling replaces $\vec p$ by $\vec p - q\vec A$; the added term is a vector potential and enters the Hamiltonian through $\boldsymbol\alpha\cdot\vec A$. The oscillator substitution is different in three ways, and each matters.
+Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a vector potential and enters the Hamiltonian through $\boldsymbol\alpha\cdot\vec A$. The oscillator substitution is different in three ways, and each matters.
 
 **It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r) = (\boldsymbol\alpha\beta)\cdot\vec r = -(\beta\boldsymbol\alpha)\cdot\vec r$ is frame-**odd**: it is a spacelike Clifford vector contracted with the position, in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$ and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the resulting square is again central.
 
-**It is imaginary, and it is Hermitian.** The coefficient is $i$, not a real coupling: a gauge interaction adds the real, Hermitian $q\vec A$ to $\vec p$, whereas the substitution multiplies the position by $im\omega$, so that the imaginary coefficient comes paired with the matrix $\boldsymbol\alpha\beta$, which is itself anti-Hermitian. The product is Hermitian all the same. Writing $\beta = \gamma^0$ and $\alpha^k = \gamma^0\gamma^k$ gives $\alpha^k\beta = -\gamma^k$, and $\gamma^k$ is anti-Hermitian, $(\gamma^k)^\dagger = -\gamma^k$, since $\gamma^0\gamma^k\gamma^0 = -\gamma^k$ with $\gamma^0$ Hermitian and anticommuting with $\gamma^k$; the added operator is therefore $-icm\omega(\boldsymbol\alpha\beta)\cdot\vec r = +icm\omega\,\boldsymbol\gamma\cdot\vec r$, and $i$ times an anti-Hermitian matrix is Hermitian. What the imaginary coefficient signals is not a complex deformation — the oscillator Hamiltonian is Hermitian and its spectrum real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
+**It is imaginary, and it is Hermitian.** The coefficient is $i$, not a real coupling: a gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$, whereas the substitution multiplies the position by $im\omega$, so that the imaginary coefficient comes paired with the matrix $\boldsymbol\alpha\beta$, which is itself anti-Hermitian. The product is Hermitian all the same. Writing $\beta = \gamma^0$ and $\alpha^k = \gamma^0\gamma^k$ gives $\alpha^k\beta = -\gamma^k$, and $\gamma^k$ is anti-Hermitian, $(\gamma^k)^\dagger = -\gamma^k$, since $\gamma^0\gamma^k\gamma^0 = -\gamma^k$ with $\gamma^0$ Hermitian and anticommuting with $\gamma^k$; the added operator is therefore $-icm\omega(\boldsymbol\alpha\beta)\cdot\vec r = +icm\omega\,\boldsymbol\gamma\cdot\vec r$, and $i$ times an anti-Hermitian matrix is Hermitian. What the imaginary coefficient signals is not a complex deformation — the oscillator Hamiltonian is Hermitian and its spectrum real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining; the spectrum is discrete; and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and it is the reason the spectrum consists of bound levels with the mass gap at their base.
 
@@ -146,7 +146,7 @@ $$
 = c^2\left(\vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\,\boldsymbol\sigma\cdot\vec L\right)\phi .
 $$
 
-The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,j,m_j\rangle$: it commutes with $\vec J^2$, $\vec L^2$ and $N$. Its eigenvalues are the standard ones,
+The operator on the right is central in the spatial variables but contains the spin–orbit term, which is diagonal in the basis $|N,l,j,m_j\rangle$: it commutes with $\vec J^2$, $\vec L^2$ and $\langle\cdot\rangle_{\natural}$. Its eigenvalues are the standard ones,
 
 $$
 \frac{1}{\hbar}\,\boldsymbol\sigma\cdot\vec L =
@@ -208,13 +208,13 @@ Each level is non-degenerate in the oscillator quantum number and the ground sta
 
 ## The Non-Relativistic Limit and the Pseudo-Oscillator
 
-The companion article on the Foldy–Wouthuysen transformation gives the systematic non-relativistic expansion; applied to the oscillator it produces, in the upper block, the effective operator $Q^\dagger Q/(2m)$ obtained from $E^2 - m^2c^4 = c^2Q^\dagger Q$, and its negative in the lower block. Its oscillator part is
+The companion article on the Foldy–Wouthuysen transformation gives the systematic non-relativistic expansion; applied to the oscillator it produces, in the upper block, the effective operator $\mathcal{Q}^\dagger \mathcal{Q}/(2m)$ obtained from $E^2 - m^2c^4 = c^2\mathcal{Q}^\dagger \mathcal{Q}$, and its negative in the lower block. Its oscillator part is
 
 $$
 H_{\mathrm{osc}} \approx \frac{\vec p^2}{2m} + \tfrac12 m\omega^2\vec r^2 ,
 $$
 
-whose levels would be $\hbar\omega(N+\tfrac32)$ if it were the whole of the operator. But the **physical** second-order operator has the zero point removed and carries in addition the spin–orbit term $-2m\omega\boldsymbol\sigma\cdot\vec L$; in the energy, the relation $E - mc^2 \approx Q^\dagger Q/(2m)$, which follows from $E^2 - m^2c^4 = c^2Q^\dagger Q$ at leading order, contributes $-\hbar\omega\,\boldsymbol\sigma\cdot\vec L/\hbar$, whose eigenvalues $-\hbar\omega\,l$ (for $j = l+\tfrac12$) and $+\hbar\omega(l+1)$ (for $j = l-\tfrac12$) exceed the oscillator spacing $\hbar\omega$ in magnitude by the orbital factor. It is therefore not legitimate to treat the term as a small perturbation of the non-relativistic oscillator. The non-relativistic limit of the Dirac oscillator is the oscillator **with a spin–orbit coupling of order $\omega$**, and its spectrum is the branch structure derived above, not the pure oscillator spectrum. This is a standard feature of the model, and it is the reason the Dirac oscillator is used as a test of relativistic confinement rather than as a mere relativistic correction to the oscillator.
+whose levels would be $\hbar\omega(N+\tfrac32)$ if it were the whole of the operator. But the **physical** second-order operator has the zero point removed and carries in addition the spin–orbit term $-2m\omega\boldsymbol\sigma\cdot\vec L$; in the energy, the relation $E - mc^2 \approx \mathcal{Q}^\dagger \mathcal{Q}/(2m)$, which follows from $E^2 - m^2c^4 = c^2\mathcal{Q}^\dagger \mathcal{Q}$ at leading order, contributes $-\hbar\omega\,\boldsymbol\sigma\cdot\vec L/\hbar$, whose eigenvalues $-\hbar\omega\,l$ (for $j = l+\tfrac12$) and $+\hbar\omega(l+1)$ (for $j = l-\tfrac12$) exceed the oscillator spacing $\hbar\omega$ in magnitude by the orbital factor. It is therefore not legitimate to treat the term as a small perturbation of the non-relativistic oscillator. The non-relativistic limit of the Dirac oscillator is the oscillator **with a spin–orbit coupling of order $\omega$**, and its spectrum is the branch structure derived above, not the pure oscillator spectrum. This is a standard feature of the model, and it is the reason the Dirac oscillator is used as a test of relativistic confinement rather than as a mere relativistic correction to the oscillator.
 
 The comparison isolates where the relativistic content lives. In the free theory, the spin–orbit coupling is a $1/c^2$ correction; in the oscillator it is present at leading order because the confining substitution is itself linear in the position and frame-odd. The biquaternion framework reads this as the statement that the substitution shifts the **odd** part of the operator, and the odd part is precisely what the square converts into an even operator with a spin–orbit component.
 
@@ -229,11 +229,11 @@ Three structural statements can now be made in the algebra.
 **The zero modes are supersymmetric.** The operator identity has the form of a factorisation. Write
 
 $$
-Q = \boldsymbol\sigma\cdot(\vec p - im\omega\vec r), \qquad
-Q^\dagger = \boldsymbol\sigma\cdot(\vec p + im\omega\vec r),
+\mathcal{Q} = \boldsymbol\sigma\cdot(\vec p - im\omega\vec r), \qquad
+\mathcal{Q}^\dagger = \boldsymbol\sigma\cdot(\vec p + im\omega\vec r),
 $$
 
-so that $Q^\dagger Q = \vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\boldsymbol\sigma\cdot\vec L$. The aligned states with $n_r = 0$ are exactly the **zero modes** $Q\phi = 0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(Q,Q^\dagger)$ is the standard supersymmetric pair of quantum physics: $Q^\dagger Q$ and $QQ^\dagger$ are partner Hamiltonians, and the zero modes of $Q$ are the states the supersymmetry relates. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The reader should note that the two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
+so that $\mathcal{Q}^\dagger \mathcal{Q} = \vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega - 2m\omega\boldsymbol\sigma\cdot\vec L$. The aligned states with $n_r = 0$ are exactly the **zero modes** $\mathcal{Q}\phi = 0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q},\mathcal{Q}^\dagger)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}^\dagger \mathcal{Q}$ and $\mathcal{Q}\mathcal{Q}^\dagger$ are partner Hamiltonians, and the zero modes of $\mathcal{Q}$ are the states the supersymmetry relates. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The reader should note that the two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
 
 ## Summary
 
@@ -276,8 +276,8 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 | $H = c\,\boldsymbol\alpha\cdot(\vec p-im\omega\beta\vec r) + \beta mc^2$ | Dirac-oscillator Hamiltonian |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution (frame-odd shift) |
 | $\phi$, $\chi$ | Upper (large) and lower (small) two-spinors |
-| $Q = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$, $Q^\dagger = \boldsymbol\sigma\cdot(\vec p+im\omega\vec r)$ | Factorised conjugate operators |
-| $Q^\dagger Q = \vec p^2+m^2\omega^2\vec r^2-3m\hbar\omega-2m\omega\boldsymbol\sigma\cdot\vec L$ | Operator identity |
+| $\mathcal{Q} = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$, $\mathcal{Q}^\dagger = \boldsymbol\sigma\cdot(\vec p+im\omega\vec r)$ | Factorised conjugate operators |
+| $\mathcal{Q}^\dagger \mathcal{Q} = \vec p^2+m^2\omega^2\vec r^2-3m\hbar\omega-2m\omega\boldsymbol\sigma\cdot\vec L$ | Operator identity |
 | $\vec L = \vec r\times\vec p$ | Orbital angular momentum |
 | $N = 2n_r + l$ | Total oscillator quantum number |
 | $n_r$ | Radial quantum number |

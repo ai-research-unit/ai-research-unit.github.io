@@ -25,7 +25,7 @@ a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of whi
 
 ### The local and global conductor
 
-**Definition.** The **conductor** of a Hecke character is the ideal $\mathfrak{f}=\prod_v\mathfrak{p}_v^{a_v}$, where $a_v$ is the smallest integer such that $\chi_v$ is trivial on $1+\mathfrak{p}_v^{a_v}$, together with the archimedean part recording the order of vanishing of $\chi_v$ at the archimedean places; the character is **primitive** if it is not induced from a character of a smaller modulus.
+**Definition.** The **conductor** of a Hecke character is the ideal $\mathfrak{f}=\prod_v\mathfrak{n}_v^{a_v}$, where $a_v$ is the smallest integer such that $\chi_v$ is trivial on $1+\mathfrak{n}_v^{a_v}$, together with the archimedean part recording the order of vanishing of $\chi_v$ at the archimedean places; the character is **primitive** if it is not induced from a character of a smaller modulus.
 
 **Theorem.** Every Hecke character is induced from a primitive character of its conductor, and the $L$-function $L(s,\chi)$ attached to a primitive character satisfies an Euler product and a functional equation with conductor $\mathfrak{f}$ and root number $W(\chi)$.
 
@@ -49,12 +49,12 @@ $$
 $$
 the limit over the growing compact subgroups $C_K^T$ of the idèle class group; it is well defined on the characters of bounded conductor and it is $\delta_{\chi\psi}$.
 
-**Theorem.** For Hecke characters of bounded conductor the conjugate orthogonality holds, and for the Dirichlet characters modulo $q$ it specialises to
+**Theorem.** For Hecke characters of bounded conductor the conjugate orthogonality holds, and for the Dirichlet characters modulo $m$ it specialises to
 $$
-\frac{1}{\varphi(q)}\sum_{a\in(\mathbb{Z}/q)^\times}\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}.
+\frac{1}{\varphi(m)}\sum_{a\in(\mathbb{Z}/m)^\times}\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}.
 $$
 
-**Proof.** The first statement is the orthogonality applied to the compact group $(C_K)_T$ and the passage to the limit; the specialisation is the identification of the Dirichlet characters with the characters of $(\mathbb{Z}/q)^\times$ and the orthogonality of the finite abelian group, in *Algebraic Number Theory*.
+**Proof.** The first statement is the orthogonality applied to the compact group $(C_K)_T$ and the passage to the limit; the specialisation is the identification of the Dirichlet characters with the characters of $(\mathbb{Z}/m)^\times$ and the orthogonality of the finite abelian group, in *Algebraic Number Theory*.
 
 ### The conductor-discriminant formula
 
@@ -68,9 +68,9 @@ the discriminant of the extension being the product of the conductors of its cha
 
 ## Worked Examples
 
-**Example (the Dirichlet characters).** For $q$ prime the group $(\mathbb{Z}/q)^\times$ is cyclic of order $q-1$ and the orthogonality is the discrete Fourier transform on a cyclic group; the Dirichlet characters are the Hecke characters of $\mathbb{Q}$ of conductor $q$.
+**Example (the Dirichlet characters).** For $m$ prime the group $(\mathbb{Z}/m)^\times$ is cyclic of order $m-1$ and the orthogonality is the discrete Fourier transform on a cyclic group; the Dirichlet characters are the Hecke characters of $\mathbb{Q}$ of conductor $m$.
 
-**Example (a quadratic character).** The nontrivial character modulo $q$ of order $2$ is real, $\chi=\bar\chi$, its conductor is the discriminant of the quadratic field, and the conductor-discriminant formula gives the discriminant of $\mathbb{Q}(\sqrt{d})$ as the conductor of the character.
+**Example (a quadratic character).** The nontrivial character modulo $m$ of order $2$ is real, $\chi=\bar\chi$, its conductor is the discriminant of the quadratic field, and the conductor-discriminant formula gives the discriminant of $\mathbb{Q}(\sqrt{d})$ as the conductor of the character.
 
 **Example (a grossencharacter of an imaginary quadratic field).** The Hecke characters of $\mathbb{Q}(i)$ of conductor $1$ are the powers of the character $z\mapsto z/|z|$ on the idèle class group; their $L$-functions are the Hecke $L$-functions of the Gaussian integers.
 
@@ -80,7 +80,7 @@ The orthogonality fails in four degenerate configurations. First, for characters
 
 ## Summary
 
-A Hecke character of a number field is a continuous homomorphism from the idèle class group to the circle group, factoring as a product of local characters; for $\mathbb{Q}$ these are the Dirichlet characters. The characters satisfy the conjugate orthogonality $\langle\chi,\psi\rangle=\delta_{\chi\psi}$, which specialises for the Dirichlet characters modulo $q$ to $\frac1{\varphi(q)}\sum_a\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}$, and the arithmetic content of the pairing is the conductor-discriminant formula, $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$, which expresses the discriminant of an abelian extension as the product of the conductors of its characters. The degenerate cases are the characters of unbounded conductor, the archimedean ramification, the quasi-characters and the nonabelian generalisation.
+A Hecke character of a number field is a continuous homomorphism from the idèle class group to the circle group, factoring as a product of local characters; for $\mathbb{Q}$ these are the Dirichlet characters. The characters satisfy the conjugate orthogonality $\langle\chi,\psi\rangle=\delta_{\chi\psi}$, which specialises for the Dirichlet characters modulo $m$ to $\frac1{\varphi(m)}\sum_a\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}$, and the arithmetic content of the pairing is the conductor-discriminant formula, $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$, which expresses the discriminant of an abelian extension as the product of the conductors of its characters. The degenerate cases are the characters of unbounded conductor, the archimedean ramification, the quasi-characters and the nonabelian generalisation.
 
 ## Summary of Notation
 

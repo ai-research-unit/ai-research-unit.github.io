@@ -39,16 +39,16 @@ with $\gamma = (1-\vec v^2/c^2)^{-1/2}$, $E=\gamma mc^2$ the relativistic energy
 
 ### The norm is the shell
 
-Because the biquaternion norm of a four-vector of the material sector is $N(\tilde{Q}) = -c^2t^2 + \vec x^2$ for $\tilde{Q}=ict\,e_0+\vec x$, the norm of the four-momentum is
+Because the biquaternion norm of a four-vector of the material sector is $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + \vec x^2$ for $\tilde{Q}=ict\,e_0+\vec x$, the norm of the four-momentum is
 
 $$
-N(\tilde{P}) \;=\; -\frac{E^2}{c^2} + \vec p^2 \;=\; -m^2c^2,
+\langle\tilde{P}\rangle_{\natural} \;=\; -\frac{E^2}{c^2} + \vec p^2 \;=\; -m^2c^2,
 $$
 
-the last equality being the ordinary mass-shell relation $E^2=\vec p^2c^2+m^2c^4$. The four-velocity carries the same norm for every particle, $N(\tilde{V})=-c^2$, and the two statements are the same statement multiplied by $m^2$:
+the last equality being the ordinary mass-shell relation $E^2=\vec p^2c^2+m^2c^4$. The four-velocity carries the same norm for every particle, $\langle\tilde{V}\rangle_{\natural}=-c^2$, and the two statements are the same statement multiplied by $m^2$:
 
 $$
-N(\tilde{P}) = N(m\tilde{V}) = m^2N(\tilde{V}) = -m^2c^2,
+\langle\tilde{P}\rangle_{\natural} = \langle m\tilde{V}\rangle_{\natural} = m^2\langle\tilde{V}\rangle_{\natural} = -m^2c^2,
 $$
 
 the middle step being the multiplicativity of the norm. This is worth pausing on. The four-velocity is a **fixed** element of the sector's geometry, of the same norm for every particle; the mass is a scale factor on it; and the algebra's own multiplicativity converts the fixed geometric statement into the mass-dependent shell.
@@ -58,38 +58,38 @@ the middle step being the multiplicativity of the norm. This is worth pausing on
 The mass-shell relation, read backwards, says
 
 $$
-m^2c^2 = -N(\tilde{P}).
+m^2c^2 = -\langle\tilde{P}\rangle_{\natural}.
 $$
 
-Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $N$ on its four-momentum.
+Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $\langle\cdot\rangle_{\natural}$ on its four-momentum.
 
 ## Four Things the Cone Derives
 
 ### The massless shell is the zero-divisor cone
 
-Set $m=0$ in the shell. The condition becomes $N(\tilde{P})=0$, which is $E=c|\vec p|$, and $N(\tilde{P})=0$ on a nonzero element of $\mathbb{B}$ is precisely the definition of a zero divisor. So the massless shell is the part of the zero-divisor set that lies in the material sector, which is the light cone. This identification is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and it is restated here only to fix what the cone owns.
+Set $m=0$ in the shell. The condition becomes $\langle\tilde{P}\rangle_{\natural}=0$, which is $E=c|\vec p|$, and $\langle\tilde{P}\rangle_{\natural}=0$ on a nonzero element of $\mathbb{B}$ is precisely the definition of a zero divisor. So the massless shell is the part of the zero-divisor set that lies in the material sector, which is the light cone. This identification is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and it is restated here only to fix what the cone owns.
 
 What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is not an accident of the units but the statement that the four-momentum is not invertible in the algebra, and that the non-invertibility is the same non-invertibility that the wave operator exhibits.
 
-**Uniqueness of the shell.** Among the level sets of $N$ on $\mathbb{M}_-$, the null set is the only cone. The set $N = -m^2c^2$ with $m\neq0$ is a two-sheeted hyperboloid, disconnected and with a positive minimum gap from the origin; the set $N=0$ is a cone, and it is the only level set with the apex at the origin and with scaling invariance. So the algebra does not merely admit the massless case; it **singles it out geometrically** as the degenerate level. It singles it out and does not select it, and that gap is the subject of the next section.
+**Uniqueness of the shell.** Among the level sets of $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_-$, the null set is the only cone. The set $N = -m^2c^2$ with $m\neq0$ is a two-sheeted hyperboloid, disconnected and with a positive minimum gap from the origin; the set $N=0$ is a cone, and it is the only level set with the apex at the origin and with scaling invariance. So the algebra does not merely admit the massless case; it **singles it out geometrically** as the degenerate level. It singles it out and does not select it, and that gap is the subject of the next section.
 
 ### The propagation speed is $c$, and is frame-independent
 
-For a four-wavevector $\tilde{K}=i(\omega/c)e_0+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = N(\tilde{K})f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $N(\tilde{K})=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
+For a four-wavevector $\tilde{K}=i(\omega/c)e_0+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \langle\tilde{K}\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde{K}\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
 
 What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}$ of unit norm acts on the sector, and the norm is multiplicative, so
 
 $$
-N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^{*}) = \left|N(\tilde{\Lambda})\right|^2N(\tilde{Q}) = N(\tilde{Q}),
+N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \left|\langle\tilde{\Lambda}\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
 $$
 
-using $N(\tilde{\Lambda}^{*})=\overline{N(\tilde{\Lambda})}$ and $N(\tilde{\Lambda})=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
+using $\langle\tilde{\Lambda}^{*}\rangle_{\natural}=\overline{\langle\tilde{\Lambda}\rangle_{\natural}}$ and $\langle\tilde{\Lambda}\rangle_{\natural}=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
 
 The argument is short but it is doing real work. In the metric formulation the invariance of the light cone under the Lorentz group and the constancy of $c$ are two statements, and their agreement is a consistency to be checked. Here there is one statement: the norm is multiplicative and the rotor has unit norm. The cone article states the invariance; the point made here is the consequence for the speed, and the fact that the speed is a *derived* frame-independent number rather than a separate kinematical postulate.
 
 ### A null four-momentum has no rest frame
 
-A rest frame is a frame in which the vector part of the four-momentum vanishes, $\vec p=0$. In such a frame $N(\tilde{P}) = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $N$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\vec p$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest.
+A rest frame is a frame in which the vector part of the four-momentum vanishes, $\vec p=0$. In such a frame $\langle\tilde{P}\rangle_{\natural} = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $\langle\cdot\rangle_{\natural}$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\vec p$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest.
 
 The **physical interpretation** is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
 
@@ -103,7 +103,7 @@ $$
 
 At $m=0$ the expression is exactly $1$ for every $|\vec p|$, with no limiting procedure: the null shell is $E=c|\vec p|$ at every momentum, so the speed is $c$ at every momentum. For $m>0$ the speed increases monotonically towards $c$ as $m\to0$ but never reaches it, as the table shows with $c=1$, $|\vec p|=1$.
 
-| $m$ | $E$ | $v/c$ | $N(\tilde{P})$ |
+| $m$ | $E$ | $v/c$ | $\langle\tilde{P}\rangle_{\natural}$ |
 |---|---|---|---|
 | $1$ | $1.414214$ | $0.707107$ | $-1.000000$ |
 | $0.5$ | $1.118034$ | $0.894427$ | $-0.250000$ |
@@ -126,7 +126,7 @@ The cone marks the value $m=0$ and only that value. Distinguishing a value is no
 There is a structural reason behind the previous paragraph, and it is stronger than a statement about what the cone happens to say. The norm is homogeneous of degree two,
 
 $$
-N(\lambda\tilde{Q}) = \lambda^2N(\tilde{Q})
+\langle\lambda\tilde{Q}\rangle_{\natural} = \lambda^2\langle\tilde{Q}\rangle_{\natural}
 $$
 
 The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\lambda\tilde{Q}$, for every $\lambda$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — *Canonical Quantization of the Biquaternion Maxwell Field* for the massless case and *Canonical Quantization of the Biquaternion Proca Field* for the massive one — and the difference is precisely the presence of a term the algebra does not contain.
@@ -147,12 +147,12 @@ A separate input, often blurred with masslessness, is the transversality of the 
 
 ### The null momentum is an idempotent multiple
 
-The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_0+\vec p$ with $\hat u=\vec p/|\vec p|$,
+The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_0+\vec p$ with $\vec u=\vec p/|\vec p|$,
 
 $$
-\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\hat u),
+\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u),
 \qquad
-\tilde\Pi(\hat u) \;=\; \tfrac{1}{2}\left(e_0 + i\hat u\right),
+\tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_0 + i\vec u\right),
 $$
 
 an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**.
@@ -173,12 +173,12 @@ The division of the article, in one table. Each row is a statement about the pho
 |---|---|---|
 | The four-momentum is an element of $\mathbb{M}_-$ | Derived | the sector's definition; verified for every $m$ |
 | The mass shell is the level set $N=-m^2c^2$ | Derived | the norm of the four-momentum |
-| Mass is the value of the invariant, $m^2c^2=-N(\tilde{P})$ | Derived | the shell, read backwards |
+| Mass is the value of the invariant, $m^2c^2=-\langle\tilde{P}\rangle_{\natural}$ | Derived | the shell, read backwards |
 | The massless shell is the zero-divisor cone | Derived | the norm's vanishing set; the cone article |
 | The null shell is the only shell that is a cone | Derived | scaling invariance; verified |
 | The propagation speed is $c$ | Given | the cone article's $\Box$ computation |
 | The speed $c$ is frame-independent | Derived | multiplicativity of the norm; verified on 100 rotors |
-| A null four-momentum has no rest frame | Derived | invariance of $N$ and the sign of $N$ at rest; verified |
+| A null four-momentum has no rest frame | Derived | invariance of $\langle\cdot\rangle_{\natural}$ and the sign of $\langle\cdot\rangle_{\natural}$ at rest; verified |
 | The massless particle moves at $c$ for every $|\vec p|$ | Derived | the null shell; verified on 100 momenta |
 | The null momentum is a scaled idempotent of $\mathbb{M}_+$ | Derived | the idempotent form of the real cone; verified |
 | The value $m=0$ | Inserted | the field equation; not fixed by the algebra |
@@ -207,25 +207,25 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ | Material (anti-Hermitian) sector |
 | $\mathbb{M}_+ = \mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ | Informational (Hermitian) sector |
-| $\tilde{Q}=ict\,e_0+\vec x$ | Material coordinate; $N(\tilde{Q})=-c^2t^2+\vec x^2$ |
-| $N(\tilde{Q})=0$ | The light cone; the material part of the zero-divisor set $\mathcal{Z}$ |
+| $\tilde{Q}=ict\,e_0+\vec x$ | Material coordinate; $\langle\tilde{Q}\rangle_{\natural}=-c^2t^2+\vec x^2$ |
+| $\langle\tilde{Q}\rangle_{\natural}=0$ | The light cone; the material part of the zero-divisor set $\mathcal{Z}$ |
 | $\tilde{P}=m\tilde{V}=i\frac{E}{c}e_0+\vec p$ | Four-momentum, in $\mathbb{M}_-$; $E=\gamma mc^2$, $\vec p=\gamma m\vec v$ |
-| $\tilde{V}=\gamma(ic\,e_0+\vec v)$ | Four-velocity, in $\mathbb{M}_-$; $N(\tilde{V})=-c^2$ |
-| $N(\tilde{P})=-E^2/c^2+\vec p^2=-m^2c^2$ | Mass shell as a norm condition |
-| $m^2c^2=-N(\tilde{P})$ | Mass as the value of the invariant |
-| $E=c\lvert\vec p\rvert$ | The null shell, $m=0$; equivalently $N(\tilde{P})=0$ |
+| $\tilde{V}=\gamma(ic\,e_0+\vec v)$ | Four-velocity, in $\mathbb{M}_-$; $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
+| $\langle\tilde{P}\rangle_{\natural}=-E^2/c^2+\vec p^2=-m^2c^2$ | Mass shell as a norm condition |
+| $m^2c^2=-\langle\tilde{P}\rangle_{\natural}$ | Mass as the value of the invariant |
+| $E=c\lvert\vec p\rvert$ | The null shell, $m=0$; equivalently $\langle\tilde{P}\rangle_{\natural}=0$ |
 | $v=\lvert\vec p\rvert c^2/E$ | Speed from the shell; $v=c$ exactly at $m=0$ |
-| $\tilde{K}=i\frac{\omega}{c}e_0+\vec k$ | Four-wavevector; $N(\tilde{K})=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
+| $\tilde{K}=i\frac{\omega}{c}e_0+\vec k$ | Four-wavevector; $\langle\tilde{K}\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
 | $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Lorentz rotor (unit norm) |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation; $N$ invariant, so the cone and $c$ are frame-independent |
-| $\tilde\Pi(\hat u)=\tfrac{1}{2}(e_0+i\hat u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $N(\tilde\Pi)=0$ |
-| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\hat u)$, $\hat u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
-| $N(\lambda\tilde{Q})=\lambda^2N(\tilde{Q})$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
+| $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_0+i\vec u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ |
+| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
+| $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $\mathcal{Z}=\{\tilde{Q}\neq0 : N(\tilde{Q})=0\}$ | Zero-divisor set |
+| $\mathcal{Z}=\{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set |
 
 ## Further Reading
 

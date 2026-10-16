@@ -200,7 +200,7 @@ $$
 T^{\dagger} = J\,T^{*}\,J ,
 $$
 
-where $T^{*}$ is the adjoint for the definite general plain sesquilinear form $h_{*}$. The operators with $T^{\dagger} = T$ are the $J$-self-adjoint ones, and the unitary ones are the $J$-unitary ones, the operators of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*, whose spectra lie on the real axis and on the unit circle of the indefinite geometry. The example is the finite-dimensional instance in which the definite adjoint and the indefinite one are compared through $J$.
+where $T^{*}$ is the adjoint for the definite general plain sesquilinear form $h_{*}$. The operators with $T^{\dagger} = T$ are the $J$-self-adjoint ones, and the unitary ones are the $J$-unitary ones, the operators of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*, whose spectra lie on the real axis and on the unit circle of the indefinite geometry. The example is the finite-dimensional instance in which the definite adjoint and the indefinite one are compared through $J$.
 
 ## The Collapse at the Trivial Involution
 

@@ -68,7 +68,7 @@ On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the self-adjoint operators are
 
 ### The Indefinite Case
 
-With the form of signature $(p,q)$ on $\mathbb{R}^{n}$ the sign rule gives the Lie algebra $\mathfrak{o}(p,q)$ of the skew operators for the form $h(Tx,x) = 0$; the self-adjoint operators are the forms of the layer and the Cayley transform produces the elements of $\operatorname{SO}(p,q)$ from them, the framework of *The Orthogonal Lie Algebra*.
+With the form of signature $(n,m)$ on $\mathbb{R}^{n}$ the sign rule gives the Lie algebra $\mathfrak{o}(n,m)$ of the skew operators for the form $h(Tx,x) = 0$; the self-adjoint operators are the forms of the layer and the Cayley transform produces the elements of $\\operatorname{SO}(n,m)$ from them, the framework of *The Orthogonal Lie Algebra*.
 
 ### The Biquaternions
 

@@ -102,7 +102,7 @@ The maximal inequality is the estimate behind the pointwise ergodic theorem: app
 
 ## Worked Examples
 
-**Example (an irrational rotation).** Let $X=\mathbb R/\mathbb Z$, $\mu$ the Lebesgue measure and $Tx=x+\alpha$ with $\alpha$ irrational. The characters $e_m(x)=e^{2\pi imx}$ satisfy $Ue_m=e^{2\pi im\alpha}e_m$, so $A_ne_m=\frac1n\sum_{k<n}e^{2\pi imk\alpha}e_m\to0$ for $m\ne0$ and $A_ne_0=e_0$; the ergodic projection is the mean $Pf=\int f\,d\mu$, and the system is ergodic. The convergence is not absolute and the rate is not geometric, which is the generic behaviour of the ergodic operator.
+**Example (an irrational rotation).** Let $X=\mathbb R/\mathbb Z$, $\mu$ the Lebesgue measure and $Tx=x+\alpha$ with $\alpha$ irrational. The characters $e_m(x)=\exp(2\pi imx)$ satisfy $Ue_m=\exp(2\pi im\alpha)e_m$, so $A_ne_m=\frac1n\sum_{k<n}\exp(2\pi imk\alpha)e_m\to0$ for $m\ne0$ and $A_ne_0=e_0$; the ergodic projection is the mean $Pf=\int f\,d\mu$, and the system is ergodic. The convergence is not absolute and the rate is not geometric, which is the generic behaviour of the ergodic operator.
 
 **Example (the Bernoulli shift).** Let $X=\{0,1\}^{\mathbb Z}$ with the product measure $\frac12,\frac12$ and $T$ the shift. The system is mixing, hence ergodic, the invariant $\sigma$-algebra is trivial, and the ergodic projection is the mean; the correlation $\langle U^nf,g\rangle\to\langle f,1\rangle\langle1,g\rangle$ decays exponentially for a finitely determined $f,g$, which is faster than the mean convergence of the ergodic operator and is a mixing statement, not a mean ergodic one.
 

@@ -61,8 +61,8 @@ An integral form is a bilinear or quadratic form taking integral values on a lat
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| an integral quadratic form | a quadratic form $q$ with $q(x) \in \mathbb{Z}$ for all lattice vectors | *Quadratic Forms and Polarisation* |
-| the polar form $g(u,v) = \tfrac12(q(u+v)-q(u)-q(v))$ | the bilinear form associated with a quadratic form | *Quadratic Forms and Polarisation* |
+| an integral quadratic form | a quadratic form $\mathfrak{Q}$ with $\mathfrak{Q}(x) \in \mathbb{Z}$ for all lattice vectors | *Quadratic Forms and Polarisation* |
+| the polar form $g(u,v) = \tfrac12(\mathfrak{Q}(u+v)-\mathfrak{Q}(u)-\mathfrak{Q}(v))$ | the bilinear form associated with a quadratic form | *Quadratic Forms and Polarisation* |
 | an integral bilinear form | a symmetric bilinear form with integral values on the lattice | *Bilinear Forms* |
 | the Gram matrix of a form | the matrix of an integral form, an integral matrix | *Bilinear Forms* |
 | the norm $N(x) = x x^{\natural}$ | the quadratic form of the quaternion algebra, integral on the quaternion lattices | *Lattices and the Quaternion Lattice* |

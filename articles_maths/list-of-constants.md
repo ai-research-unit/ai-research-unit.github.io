@@ -20,7 +20,7 @@ This article lists the mathematical constants the corpus names and computes. A c
 
 | Object | Its definition, and the arithmetic fact proved for it | Introduced in |
 |---|---|---|
-| $\gamma$, Euler's constant | the limit $\lim_{n\to\infty}(\sum_{k\leq n}1/k - \log n)$; the corpus proves no irrationality and no transcendence, and it is the constant of the Weierstrass product $1/\Gamma(z) = ze^{\gamma z}\prod(1+z/n)e^{-z/n}$ | *Zeta Functions*; *Complex Special Functions* |
+| $\gamma$, Euler's constant | the limit $\lim_{n\to\infty}(\sum_{k\leq n}1/k - \log n)$; the corpus proves no irrationality and no transcendence, and it is the constant of the Weierstrass product $1/\Gamma(z) = z\exp(\gamma z)\prod(1+z/n)\exp(-z/n)$ | *Zeta Functions*; *Complex Special Functions* |
 | $\zeta(2) = \pi^2/6$ | the value of the zeta function at $2$; a rational multiple of $\pi^2$, hence irrational and transcendental | *Zeta Functions* |
 | $\zeta(3)$ | the value of the zeta function at $3$; irrational, by Apéry's theorem, with no rational multiple of a power of $\pi$ known | *Zeta Functions* |
 | $\zeta(4) = \pi^4/90$ and $\zeta(6) = \pi^6/945$ | the even zeta values; rational multiples of powers of $\pi$, hence transcendental, in contrast to the odd ones | *Zeta Functions* |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$ and the conjugation $\tilde q^{\natural} = q_0 - \vec q$; the basis, the table, the scalar–vector splitting and the conjugation are those of *Quaternion Algebra*, and they are used here without restatement. A quaternion is written $\tilde q = q_0e_0 + \vec q$ with $\vec q = q_1e_1 + q_2e_2 + q_3e_3$, the glyph of the quaternion layer. The real space $\mathbb{H}$ carries six operations, set out in *The 6 Products of the Quaternion Real Space* and structured in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. This article introduces the algebra carried by the second of its two bilinear operations, the **general quaternionic bilinear product**
+The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$ and the conjugation $\tilde q^{\natural} = q_0 - \vec q$; the basis, the table, the scalar–vector splitting and the conjugation are those of *Quaternion Algebra*, and they are used here without restatement. A quaternion is written $\tilde q = q_0e_0 + \vec q$ with $\vec q = q_1e_1 + q_2e_2 + q_3e_3$, the glyph of the quaternion layer. The real space $\mathbb{H}$ carries, beside the algebra product of the *Quaternions* category, the companion products set out in *The 6 Products of the Quaternioid Real Space* and named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. This article introduces the algebra carried by the second of its two bilinear operations, the **general quaternionic bilinear product**
 
 $$
 \tilde p \star \tilde q = \tilde p^{\natural}\tilde q .
@@ -10,7 +10,7 @@ $$
 
 The algebra $(\mathbb{H}, +, \star)$ is the **general quaternionic algebra of quaternions**, and it is the object of this block.
 
-This article does three things. It fixes the product and its coordinate rule. It records the two defects that decide the whole block: the product is **not associative**, and it has $e_0$ as a **left unit and no right unit**, so the algebra is left-unital and not unital. It then places the algebra among the six operations of the space. The element theory is read in the five Common Theory articles that follow (*Norm and Invertibility in the General Quaternionic Algebra*, *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, *Square Roots of a General Element in the General Quaternionic Algebra* and *The Specificities of the General Quaternionic Algebra*, all below this article in this category), the defect theory in *The Associator and the Ternary Product of the Quaternionic Product*, below this article in this category, the form in *The Isotropic Structure of the General Quaternionic Algebra*, below this article in this category, and the operator and matrix readings in *Two-Sided Operators on the General Quaternionic Algebra of Quaternions* and *One-Sided Operators on the General Quaternionic Algebra of Quaternions*, both below this article in this category.
+This article does three things. It fixes the product and its coordinate rule. It records the two defects that decide the whole block: the product is **not associative**, and it has $e_0$ as a **left unit and no right unit**, so the algebra is left-unital and not unital. It then places the algebra among the companion structures of the space. The element theory is read in the five Common Theory articles that follow (*Norm and Invertibility in the General Quaternionic Algebra*, *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, *Square Roots of a General Element in the General Quaternionic Algebra* and *The Specificities of the General Quaternionic Algebra*, all below this article in this category), the defect theory in *The Associator and the Ternary Product of the Quaternionic Product*, below this article in this category, the form in *The Isotropic Structure of the General Quaternionic Algebra*, below this article in this category, and the operator and matrix readings in *Two-Sided Operators on the General Quaternionic Algebra* and *One-Sided Operators on the General Quaternionic Algebra*, both below this article in this category.
 
 ## The General Quaternionic Bilinear Product
 
@@ -88,9 +88,9 @@ There is no right unit: no $\tilde u \in \mathbb{H}$ satisfies $\tilde q \star \
 
 ## The Other Five Operations
 
-The real space $\mathbb{H}$ carries six operations (*The 6 Products of the Quaternion Real Space*) and they organise into six algebraic structures (*The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). This article's product is one of the two bilinear ones. The other is the plain product $\tilde p\tilde q$, the multiplication of the general plain algebra of the same space, and it is the only associative and the only unital one of the six.
+The real space $\mathbb{H}$ carries, beside the algebra product of the *Quaternions* category, the companion products of *The 6 Products of the Quaternioid Real Space*, which the category organises into three structures in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. This article's product is one of the two bilinear ones; the other is the algebra product $\tilde p\tilde q$, the multiplication of the quaternion algebra, and it is the only associative and the only unital one of them.
 
-The remaining operations of the six are the companions of the two bilinear laws: the mirror of this article's law, $\tilde q^{\natural}\tilde p$, and the symmetrised and antisymmetrised products $\tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ and $\tfrac12(\tilde p \star \tilde q - \tilde q \star \tilde p)$, which carry the Symmetric and the Antisymmetric quaternionic algebras of the chapter. The full comparison is *Comparison Between the Two General Products*, the reading on the distinguished subspaces is *The Remarkable Subspaces under the Six Operations*, below this article in this category, and the theory of the two forms is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category; this article records only the orientation.
+The remaining companion products are the companions of the two bilinear laws: the mirror of this article's law, $\tilde q^{\natural}\tilde p$, and the symmetrised and antisymmetrised products $\tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ and $\tfrac12(\tilde p \star \tilde q - \tilde q \star \tilde p)$, which carry the Symmetric and the Antisymmetric quaternionic algebras of the chapter. The full comparison is *Comparison Between the Two General Products*, the reading on the distinguished subspaces is *Remarkable Subspaces and the Two General Products*, below this article in this category, and the theory of the two forms is *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, above this article in this category; this article records only the orientation.
 
 ## The Place of the Algebra among the Two Bilinear Laws
 
@@ -104,7 +104,7 @@ The quaternionic product and the plain product are the two bilinear laws on one 
 | right unit | $e_0$ | none |
 | associative | yes | no |
 | zero divisors | none | none |
-| quadratic form | $N$, multiplicative | $N$, multiplicative |
+| quadratic form | $\langle\cdot,\cdot\rangle_{\natural}$, multiplicative | $\langle\cdot,\cdot\rangle_{\natural}$, multiplicative |
 
 **Proposition (the isolated features).** The quaternionic product is characterised among the operations of the space by the conjunction of three properties: it is left-unital and not right-unital; it is not associative; and it has no zero divisors. The plain product has the two-sided unit and is associative; the companion operations are either not unital or not zero-divisor-free.
 
@@ -125,8 +125,8 @@ The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ u
 | $\tilde p^{\natural} = p_0 - \vec p$ | the conjugation |
 | $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
 | $[\tilde p,\tilde q,\tilde r]$ | the associator of the product |
-| $N$ | the quaternionic bilinear algebraic norm, *Norm and Invertibility in the General Quaternionic Algebra*, below this article in this category |
-| $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | the polar form of $N$ |
+| $\langle\cdot\rangle_{\natural}$ | the quaternionic bilinear algebraic norm, *Norm and Invertibility in the General Quaternionic Algebra*, below this article in this category |
+| $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | the polar form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 
 ## Further Reading
 

@@ -42,10 +42,10 @@ The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\m
 A state of the pair is a Hermitian, positive, trace-one element of $\mathbb{B}\otimes\mathbb{B}$, and an observable is a Hermitian element. The pure product states are the idempotents
 
 $$
-P_{\hat m}\otimes P_{\hat u}=\tfrac{1}{4}\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat u_le_l-\hat m_k\hat u_l\,e_k\otimes e_l\right),
+P_{\vec u_m}\otimes P_{\vec u}=\tfrac{1}{4}\left(e_0\otimes e_0+i\vec u_{m,k}e_k\otimes e_0+i e_0\otimes\vec u_le_l-\vec u_{m,k}\vec u_l\,e_k\otimes e_l\right),
 $$
 
-where $P_{\hat m}=\tfrac12(e_0+i\hat m_ke_k)$ is a one-particle idempotent. The **partial traces** are
+where $P_{\vec u_m}=\tfrac12(e_0+i\vec u_{m,k}e_k)$ is a one-particle idempotent. The **partial traces** are
 
 $$
 \mathrm{Tr}_2(x\otimes y)=x\,\mathrm{Tr}_\mathbb{B}(y),\qquad
@@ -235,7 +235,7 @@ which is the standard triplet ladder in algebraic form. The last relation is the
 The exchange operator exchanges the two factors. On a product idempotent,
 
 $$
-F\,(P_{\hat m}\otimes P_{\hat u})F=P_{\hat u}\otimes P_{\hat m},
+F\,(P_{\vec u_m}\otimes P_{\vec u})F=P_{\vec u}\otimes P_{\vec u_m},
 $$
 
 and on the product basis vectors, under $\mathsf{M}_2\otimes\mathsf{M}_2$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,

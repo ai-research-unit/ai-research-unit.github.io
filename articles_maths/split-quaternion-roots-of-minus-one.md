@@ -5,37 +5,37 @@
 
 This article determines the solutions of the equation $\tilde\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $N$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
-**Theorem (The Solutions).** Let $\tilde\xi = q_0 + \vec u$ with $q_0 \in \mathbb{R}$ and $\vec u \in V$. Then $\tilde\xi^2 = -1$ if and only if
+**Theorem (The Solutions).** Let $\tilde\xi = q_0 + \vec q$ with $q_0 \in \mathbb{R}$ and $\vec q \in V$. Then $\tilde\xi^2 = -1$ if and only if
 
 $$
-q_0 = 0 \quad \text{and} \quad N(\vec u) = 1 .
+q_0 = 0 \quad \text{and} \quad \langle \vec q\rangle_{\natural} = 1 .
 $$
 
 Hence the solution set is
 
 $$
-\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
+\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
 $$
 
 a subset of the vector subspace. No solution has a nonzero scalar part.
 
-**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\xi = q_0 + \vec u$,
+**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\xi = q_0 + \vec q$,
 
 $$
-\tilde\xi^2 = q_0^2 + 2q_0\vec u + \vec u^2 = \big(q_0^2 - N(\vec u)\big) + 2q_0\vec u,
+\tilde\xi^2 = q_0^2 + 2q_0\vec q + \vec q^2 = \big(q_0^2 - \langle \vec q\rangle_{\natural}\big) + 2q_0\vec q,
 $$
 
 where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\xi^2 = -1$ splits into the two equations
 
 $$
-q_0^2 - N(\vec u) = -1, \qquad 2q_0\vec u = 0 .
+q_0^2 - \langle \vec q\rangle_{\natural} = -1, \qquad 2q_0\vec q = 0 .
 $$
 
-If $q_0 \neq 0$ the second equation gives $\vec u = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\vec u) = -1$, that is $N(\vec u) = 1$. Conversely these two conditions give $\tilde\xi^2 = -N(\tilde\xi) = -1$.
+If $q_0 \neq 0$ the second equation gives $\vec q = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-\langle \vec q\rangle_{\natural} = -1$, that is $\langle \vec q\rangle_{\natural} = 1$. Conversely these two conditions give $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
 
 **Corollary (The Root Set Is the Level Set $N = 1$).** The solution set is a two-dimensional subset of the three-dimensional vector space $V$, namely the level set $N = 1$ in $V$, with two components
 
@@ -47,19 +47,19 @@ the two components being distinguished by the sign of the coefficient $q_1$ of $
 
 **Proof.** The two components are the intersections of the level set with the closed half-spaces $q_1 \geq 1$ and $q_1 \leq -1$; on the first, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
 
-The solutions therefore have $N(\tilde\xi) = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
+The solutions therefore have $\langle\tilde\xi\rangle_{\natural} = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
 
 ## Identification with the Complex Structures of the Plane
 
 **Theorem (The Root Set Is the Level Set $N = 1$).** The solutions of $\tilde\xi^2 = -1$ are exactly the vectors of the vector subspace with $N = 1$:
 
 $$
-\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\},
+\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\},
 $$
 
-the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $N(\tilde\xi) = 1$, and conversely.
+the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $\langle\tilde\xi\rangle_{\natural} = 1$, and conversely.
 
-**Proof.** Write $\tilde\xi = \xi_0 + \vec v$ with $\xi_0 \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\vec v + \vec v^2 = \xi_0^2 + 2\xi_0\vec v - N(\vec v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\vec v$ vanishes, so $\xi_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\vec v) = -1$, that is $N(\tilde\xi) = 1$. Conversely $\tilde\xi \in V$ with $N(\tilde\xi) = 1$ has $\tilde\xi^2 = -N(\tilde\xi) = -1$.
+**Proof.** Write $\tilde\xi = \xi_0 + \vec v$ with $\xi_0 \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\vec v + \vec v^2 = \xi_0^2 + 2\xi_0\vec v - \langle \vec v\rangle_{\natural}$; this equals $-1$ exactly when the $V$-component $2\xi_0\vec v$ vanishes, so $\xi_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-\langle \vec v\rangle_{\natural} = -1$, that is $\langle\tilde\xi\rangle_{\natural} = 1$. Conversely $\tilde\xi \in V$ with $\langle\tilde\xi\rangle_{\natural} = 1$ has $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
 
 **Corollary (The Root Set as Complex Lines).** For each solution $\tilde\xi$, the subalgebra generated by $\tilde\xi$ is
 
@@ -85,7 +85,7 @@ The set is a single conjugacy class of the group $\mathbb{H}_{\mathrm{s}}^{\time
 
 **Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group $\mathbb{H}_{\mathrm{s}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $e_2$, since $e_2 e_1 e_2^{-1} = -e_1$.
 
-**Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $e_2$ is the computation $e_2 e_1 = -e_3 = -e_1 e_2$, so $e_2 e_1 e_2^{-1} = -e_1$; here $e_2^{-1} = e_2$ and $N(e_2) = -1$.
+**Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $e_2$ is the computation $e_2 e_1 = -e_3 = -e_1 e_2$, so $e_2 e_1 e_2^{-1} = -e_1$; here $e_2^{-1} = e_2$ and $\langle e_2\rangle_{\natural} = -1$.
 
 ## The Root Set as a Homogeneous Space
 
@@ -117,9 +117,9 @@ The name for the object is therefore: **the root set is the conjugacy class of $
 
 The companion equation clarifies the role of the two signs.
 
-**Proposition (The Roots of $+1$).** Let $\eta = q_0 + \vec u$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\vec u = 0$, or $q_0 = 0$ and $N(\vec u) = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.
+**Proposition (The Roots of $+1$).** Let $\eta = q_0 + \vec q$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\vec q = 0$, or $q_0 = 0$ and $\langle \vec q\rangle_{\natural} = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.
 
-**Proof.** The same splitting as in the proof of the main theorem gives $q_0^2 - N(\vec u) = 1$ and $2q_0\vec u = 0$. If $\vec u = 0$ then $q_0 = \pm 1$; if $\vec u \neq 0$ then $q_0 = 0$ and $N(\vec u) = -1$.
+**Proof.** The same splitting as in the proof of the main theorem gives $q_0^2 - \langle \vec q\rangle_{\natural} = 1$ and $2q_0\vec q = 0$. If $\vec q = 0$ then $q_0 = \pm 1$; if $\vec q \neq 0$ then $q_0 = 0$ and $\langle \vec q\rangle_{\natural} = -1$.
 
 **Theorem (The Idempotents Come from the Roots of $+1$).** Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then
 
@@ -137,7 +137,7 @@ $$
 
 so the idempotent is a zero divisor, and the same holds for $p_-$.
 
-For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $N(u) = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $N(\eta) = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $p^{\natural} = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then
+For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $\langle u\rangle_{\natural} = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $\langle \eta\rangle_{\natural} = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $p^{\natural} = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then
 
 $$
 \bar{\eta} = 2p^{\natural} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
@@ -150,10 +150,10 @@ so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\et
 **Theorem (Disjointness and Generation).** No solution of $\tilde\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\xi$ and each idempotent $p$ of a root of $+1$, the product $\tilde\xi p$ is a nonzero zero divisor, since
 
 $$
-N(\tilde\xi p) = N(\tilde\xi) N(p) = 1 \cdot 0 = 0 .
+\langle\tilde\xi p\rangle_{\natural} = \langle\tilde\xi\rangle_{\natural} \langle p\rangle_{\natural} = 1 \cdot 0 = 0 .
 $$
 
-**Proof.** $N(\tilde\xi) = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\xi p$ is nonzero because $\tilde\xi$ is invertible and $p \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $N(p)$.
+**Proof.** $\langle\tilde\xi\rangle_{\natural} = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\xi p$ is nonzero because $\tilde\xi$ is invertible and $p \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle p\rangle_{\natural}$.
 
 The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.
 
@@ -172,7 +172,7 @@ For the quaternion algebra the equation has a different solution set.
 | homogeneous space | $Sp(1)/U(1)$ | $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes |
 | generated algebra | a copy of $\mathbb{C}$ | a copy of $\mathbb{C}$ |
 
-The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in *Quaternion Algebra*, §*Basic Properties*: for a pure quaternion $\vec u$ one has $\vec u^2 = -N(\vec u)$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to *Split-Quaternion Topology*; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.
+The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in *Quaternion Algebra*, §*Basic Properties*: for a pure quaternion $\vec q$ one has $\vec q^2 = -\langle \vec q\rangle_{\natural}$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to *Split-Quaternion Topology*; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.
 
 ### The Biquaternion Case
 
@@ -180,7 +180,7 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the not
 
 ## Summary
 
-The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\tilde\xi) = 1$, that is, the points of the level set $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
+The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\xi\rangle_{\natural} = 1$, that is, the points of the level set $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
 
 Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\xi$ and $-\tilde\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
@@ -193,13 +193,13 @@ The roots of $+1$ play the companion role: they are $\pm 1$ together with the le
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\tilde\xi^2 = -1$ | the equation of the article | this article |
-| $\mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\}$ | the solution set | this article |
+| $\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\}$ | the solution set | this article |
 | $q_1^2 - q_2^2 - q_3^2 = 1$ | the level set $N = 1$ in the basis $e_1,e_2,e_3$ | this article |
 | $X^2 = -I$ | the corresponding equation for matrices | this article |
 | $GL_1(\mathbb{C})$ | the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$ | this article |
 | $\operatorname{Cent}(e_1)$ | the centraliser of $e_1$, $\cong \mathbb{C}^{\times}$ | this article |
 | $\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$ | the root set as a homogeneous space | this article |
-| $\eta^2 = +1$, $N(\eta) = -1$ | the root set of $+1$ in $V$ | this article |
+| $\eta^2 = +1$, $\langle \eta\rangle_{\natural} = -1$ | the root set of $+1$ in $V$ | this article |
 | $\tfrac12(1 \pm \eta)$ | the idempotents attached to a root of $+1$ | this article |
 | $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the group of units with $N = 1$ | *Split-Quaternion Norm and Invertibility* |
 | $V$ | the vector subspace | *Split-Quaternion Algebra* |

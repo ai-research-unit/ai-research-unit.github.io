@@ -54,9 +54,9 @@ with $x^2 = \eta_{\rho\sigma}x^\rho x^\sigma$. The conformal group contains the 
 
 Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
-I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} ,
+I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
-N\bigl(I(\tilde{Q})\bigr) = \frac{1}{N(\tilde{Q})} .
+N\bigl(I(\tilde{Q})\bigr) = \frac{1}{\langle\tilde{Q}\rangle_{\natural}} .
 $$
 The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the biquaternion norm, and the inversion is built from the biquaternion norm by division.
 
@@ -64,9 +64,9 @@ The companion establishes the count precisely: six generators inside, one expres
 
 One convention note is needed before the weight is used, because two quadratic forms are in play. The conformal group is the conformal group of Minkowski space, and its invariant interval is
 $$
-x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \vec x^2 = N(\tilde{Q}) ,
+x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \vec x^2 = \langle\tilde{Q}\rangle_{\natural} ,
 $$
-with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\vec x)$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\vec x^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $N(\tilde{Q})$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
+with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\vec x)$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\vec x^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $\langle\tilde{Q}\rangle_{\natural}$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
 
 ### Conformal weight
 
@@ -74,7 +74,7 @@ A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}'$ w
 $$
 d\tilde{Q}'\,\overline{d\tilde{Q}'} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
 $$
-so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}' = \tilde{Q}^{\natural}/N(\tilde{Q})$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
+so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}' = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
 $$
 \phi'(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr) ,
 $$
@@ -96,7 +96,7 @@ so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **ever
 
 ### The inversion and the conformal Laplacian
 
-For the inversion $\tilde{Q}' = I(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$, the conformal factor is $\Omega(\tilde{Q}) = 1/N(\tilde{Q})$, and the transformation law of the box operator is
+For the inversion $\tilde{Q}' = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
 $$
 \Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr)\Bigr]
 = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}'}\phi\bigr)\bigl(\tilde{Q}'\bigr)
@@ -106,9 +106,9 @@ with a residual proportional to $(\Delta-1)$ at other weights. The identity is t
 
 The elementary consequence is that the inversion image of the constant is a solution,
 $$
-\Box\Bigl[\frac{1}{N(\tilde{Q})}\Bigr] = 0 \quad \text{off the origin},
+\Box\Bigl[\frac{1}{\langle\tilde{Q}\rangle_{\natural}}\Bigr] = 0 \quad \text{off the origin},
 $$
-which was verified numerically at five random points with a maximum residual of $1.5\times10^{-7}$. The function $1/N(\tilde{Q}) = 1/\rho^2$ is the massless invariant Green's function of the operator article, and the computation says that it is *also* the inversion image of the constant field, which is the first sign that the kernel and the conformal structure are the same object.
+which was verified numerically at five random points with a maximum residual of $1.5\times10^{-7}$. The function $1/\langle\tilde{Q}\rangle_{\natural} = 1/\rho^2$ is the massless invariant Green's function of the operator article, and the computation says that it is *also* the inversion image of the constant field, which is the first sign that the kernel and the conformal structure are the same object.
 
 ### The special conformal transformations
 
@@ -117,13 +117,13 @@ $$
 \tilde{Q} \longmapsto I\bigl(I(\tilde{Q}) + \tilde{A}^{\natural}\bigr) ,
 \qquad \tilde{A} \in \mathbb{M}_- ,
 $$
-the reversal on the parameter compensating the parity that the framework's inversion $I(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$ carries. In finite form the map and its conformal factor are
+the reversal on the parameter compensating the parity that the framework's inversion $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ carries. In finite form the map and its conformal factor are
 $$
-\tilde{Q}' = \frac{\tilde{Q} + \tilde{A}\,N(\tilde{Q})}{1 + 2\,\mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}\bigr) + N(\tilde{A})N(\tilde{Q})} ,
+\tilde{Q}' = \frac{\tilde{Q} + \tilde{A}\,\langle\tilde{Q}\rangle_{\natural}}{1 + 2\,\mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}\bigr) + \langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
-\Omega(\tilde{Q}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}\bigr) + N(\tilde{A})N(\tilde{Q})} ,
+\Omega(\tilde{Q}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}\bigr) + \langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
 $$
-so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{A}$, reproducing $x'^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = N(d\tilde{Q}')/N(d\tilde{Q})$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{A}\to0$ the map is the identity and $\Omega\to1$; for $\tilde{A}\to\infty$ it degenerates to the constant $I(\tilde{A}^{\natural}) = \tilde{A}/N(\tilde{A})$, while $\Omega$ tends to a constant multiple of the inversion's $1/N(\tilde{Q})$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
+so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{A}$, reproducing $x'^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = \langle d\tilde{Q}'\rangle_{\natural}/\langle d\tilde{Q}\rangle_{\natural}$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{A}\to0$ the map is the identity and $\Omega\to1$; for $\tilde{A}\to\infty$ it degenerates to the constant $I(\tilde{A}^{\natural}) = \tilde{A}/\langle\tilde{A}\rangle_{\natural}$, while $\Omega$ tends to a constant multiple of the inversion's $1/\langle\tilde{Q}\rangle_{\natural}$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
 $$
 \mathcal{K}_\mu = 2x_\mu x^\nu\partial_\nu - x^2\partial_\mu ,
 $$
@@ -131,23 +131,23 @@ the standard expression; the point for this article is that the four extra symme
 
 ### The finite transformations and the compactification
 
-The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{A}$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/N(\tilde{Q})$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = N(\tilde{Q})$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $N(\tilde{Q}) = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
+The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{A}$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $\langle\tilde{Q}\rangle_{\natural} = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
 
 ## The Conformal Two-Point Function
 
 The massless invariant Green's function of the operator article,
 $$
-G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 N(\tilde{Q})} ,
+G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 \langle\tilde{Q}\rangle_{\natural}} ,
 $$
 is the conformal two-point function of a field of weight $\Delta = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
 $$
-\bigl\langle\phi(\tilde{Q})\phi(\tilde{Y})\bigr\rangle = \frac{\text{const}}{N(\tilde{Q}-\tilde{Y})^{\Delta}} \qquad\text{with } \Delta = 1 ,
+\bigl\langle\phi(\tilde{Q})\phi(\tilde{Y})\bigr\rangle = \frac{\text{const}}{\langle\tilde{Q}-\tilde{Y}\rangle_{\natural}^{\Delta}} \qquad\text{with } \Delta = 1 ,
 $$
-and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Y}) = 1/(4\pi^2N(\tilde{Q}-\tilde{Y}))$. Second, it obeys the inversion covariance of a weight-one two-point function,
+and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Y}) = 1/(4\pi^2\langle\tilde{Q}-\tilde{Y}\rangle_{\natural})$. Second, it obeys the inversion covariance of a weight-one two-point function,
 $$
-G\bigl(I(\tilde{Q})-I(\tilde{Y})\bigr) = N(\tilde{Q})^{\Delta}N(\tilde{Y})^{\Delta}\,G(\tilde{Q}-\tilde{Y}) \Big|_{\Delta=1} ,
+G\bigl(I(\tilde{Q})-I(\tilde{Y})\bigr) = \langle\tilde{Q}\rangle_{\natural}^{\Delta}\langle\tilde{Y}\rangle_{\natural}^{\Delta}\,G(\tilde{Q}-\tilde{Y}) \Big|_{\Delta=1} ,
 $$
-which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Y})|^2 = N(\tilde{Q}-\tilde{Y})/(N(\tilde{Q})N(\tilde{Y}))$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
+which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Y})|^2 = \langle\tilde{Q}-\tilde{Y}\rangle_{\natural}/(\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Y}\rangle_{\natural})$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
 
 ## The Massless Limit
 
@@ -167,11 +167,11 @@ because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the ma
 
 On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_0 + \vec k$, and the symbol of the operator is its biquaternion norm,
 $$
-\text{massive:}\quad N(\tilde{K}) = -\mu^2 \neq 0 ,
+\text{massive:}\quad \langle\tilde{K}\rangle_{\natural} = -\mu^2 \neq 0 ,
 \qquad\qquad
-\text{massless:}\quad N(\tilde{K}) = 0 .
+\text{massless:}\quad \langle\tilde{K}\rangle_{\natural} = 0 .
 $$
-In the massless case $\tilde{K}$ is a **zero divisor** of the algebra, and left multiplication by it is a singular linear map. The rank of left multiplication on the complex four-dimensional module was computed for two on-shell momenta: for the massive one with $N(\tilde{K}) = -0.65$ the rank is four, and for the massless one with $N(\tilde{K}) = 0$ the rank is two. The drop from four to two is the algebraic form of the massless limit: the operator's symbol acquires a kernel, the propagator acquires a pole on the light cone, and the equation acquires the gauge-like degeneracy that the conformal symmetry organises. The geometry of that cone is the geometry of the algebra's zero divisors; the point for the massless limit is that the limit is a *degeneration of the symbol*, not merely the removal of a constant.
+In the massless case $\tilde{K}$ is a **zero divisor** of the algebra, and left multiplication by it is a singular linear map. The rank of left multiplication on the complex four-dimensional module was computed for two on-shell momenta: for the massive one with $\langle\tilde{K}\rangle_{\natural} = -0.65$ the rank is four, and for the massless one with $\langle\tilde{K}\rangle_{\natural} = 0$ the rank is two. The drop from four to two is the algebraic form of the massless limit: the operator's symbol acquires a kernel, the propagator acquires a pole on the light cone, and the equation acquires the gauge-like degeneracy that the conformal symmetry organises. The geometry of that cone is the geometry of the algebra's zero divisors; the point for the massless limit is that the limit is a *degeneration of the symbol*, not merely the removal of a constant.
 
 ### The limit of the massive theory
 
@@ -227,7 +227,7 @@ A quantum caveat belongs here. The trace of the *renormalised* stress tensor of 
 
 The electromagnetic field is the other window on the same symmetry, and its case is cleaner. The Maxwell action of the action article,
 $$
-S_{\mathrm{Maxwell}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x = -\frac12\int \mathrm{Re}\,\mathrm{Sc}\bigl(N(\tilde{F})\bigr)\,d^4x ,
+S_{\mathrm{Maxwell}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x = -\frac12\int \mathrm{Re}\,\mathrm{Sc}\bigl(\langle\tilde{F}\rangle_{\natural}\bigr)\,d^4x ,
 $$
 contains no dimensional parameter when written in terms of the field strength alone, so it is invariant under dilations without any massless limit being taken: the photon is massless, and there is no mass to remove. The Maxwell field is conformally invariant in four dimensions, and its improved stress tensor is traceless on shell,
 $$
@@ -268,23 +268,23 @@ The symmetry statement has a worked consequence in the article that follows this
 
 Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the biquaternion norm.
 
-The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\Delta$ transforms by $N(\tilde{Q})^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
+The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\Delta$ transforms by $\langle\tilde{Q}\rangle_{\natural}^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
 
-The **inversion** is the biquaternion norm's division, $I(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
+The **inversion** is the biquaternion norm's division, $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
 
 The **null cone** is the biquaternion norm's zero set. All conformal transformations preserve it and only it; it is the single invariant object of the group that is native to the algebra, and the massless limit is the limit in which the on-shell momentum lies on it and becomes a zero divisor.
 
-The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation of the kinetic term. The mass is the biquaternion norm's value on the four-momentum, $N(\tilde{P}) = -m^2c^2$, and the same norm that the particle action normalises to $-c^2$ is the quantity whose nonvanishing breaks the symmetry. Conformal invariance and the mass shell are therefore two interpretations of one biquaternion norm: on the cone it is zero and the symmetry holds, off the cone it is the mass and the symmetry fails.
+The **breaking** is the mass term, and it is measured by the trace, $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation of the kinetic term. The mass is the biquaternion norm's value on the four-momentum, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, and the same norm that the particle action normalises to $-c^2$ is the quantity whose nonvanishing breaks the symmetry. Conformal invariance and the mass shell are therefore two interpretations of one biquaternion norm: on the cone it is zero and the symmetry holds, off the cone it is the mass and the symmetry fails.
 
 ## The Norm as a Weyl Factor
 
-The carrier of the conformal statement is the weight $\Delta$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$. Read on the norm, that carrier has a second name. The biquaternion norm $N$ is a **scale** and its logarithm $\log\lvert N\rvert$ a **dilation potential**: a change of $N$ is a change of the unit of length, the weight $\Delta$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}N)$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
+The carrier of the conformal statement is the weight $\Delta$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Read on the norm, that carrier has a second name. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a **scale** and its logarithm $\log\lvert N\rvert$ a **dilation potential**: a change of $\langle\cdot\rangle_{\natural}$ is a change of the unit of length, the weight $\Delta$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}N)$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
 
 The interpretation is offered as an interpretation, and its boundary is the article's own count: the algebra carries the inversion and the weight, and six of the fifteen conformal generators are algebra elements, while the remaining nine are imported (*The Biquaternion Structure of the Conformal Statement*). What the interpretation adds is only the name: the framework's scale is a conformal weight. The norm is owned by *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*, which gives it as the scale of the polar representation, and the same logarithm is read as the Weyl factor of a local metric in *The Local Complex Structure and the Speed of Light*; what the interpretation here adds is the name and the connection, that the framework's scale is a conformal weight. **Open question.** Whether that scale is a dynamical field, as the interpretation here proposes, or a gauge choice of the local complex structure, is not decided by the algebra; the norm is read here as a Weyl factor and the question is left open (*The Polar Element Representation of Biquaternions*, *The Local Complex Structure and the Speed of Light*).
 
 ## Summary
 
-The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the biquaternion norm's zero set, the inversion as $I(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
+The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the biquaternion norm's zero set, the inversion as $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
 
 The massless scalar field transforms with weight $\Delta = 1$,
 $$
@@ -292,9 +292,9 @@ $$
 \qquad
 \Box_{\tilde{Q}}\Bigl[\Omega^{\Delta}\phi\circ I\Bigr] = \Omega^{\Delta+2}\bigl(\Box\phi\bigr)\circ I \ \text{ at } \Delta = 1 ,
 $$
-the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/N(\tilde{Q})$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{Q}))$, and it is the inversion image of the constant.
+the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/\langle\tilde{Q}\rangle_{\natural}$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$, and it is the inversion image of the constant.
 
-The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $N(\tilde{K}) = \langle\tilde{K},\tilde{K}\rangle_{\natural} = -\mu^2\neq0$ and rank two for $N(\tilde{K}) = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
+The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $\langle\tilde{K}\rangle_{\natural} = \langle\tilde{K},\tilde{K}\rangle_{\natural} = -\mu^2\neq0$ and rank two for $\langle\tilde{K}\rangle_{\natural} = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
 
 The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation, verified on an off-shell test field and on an on-shell one in the $ict$ coordinates; the trace is proportional to the mass squared and vanishes in the massless limit, which is the local statement of the symmetry. The Maxwell field is conformally invariant with no limit to take and has $\Theta^\mu{}_\mu = 0$; the Proca field is broken by its mass as the scalar is. The Thomson limit of photon–electron scattering is the physical instance of the massless limit treated here, and the polarisation algebra of that limit is the subject of the article that follows.
 
@@ -308,16 +308,16 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/N$ for the inversion |
 | $\Delta$ | Conformal weight of the field; $\Delta = 1$ for the massless scalar in $d=4$ |
 | $\phi'(\tilde{Q}) = \Omega^{\Delta}\phi(\tilde{Q}')$ | Conformal transformation law |
-| $I(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Conformal inversion; $N(I(\tilde{Q})) = 1/N(\tilde{Q})$ |
+| $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Conformal inversion; $\langle I(\tilde{Q})\rangle_{\natural} = 1/\langle\tilde{Q}\rangle_{\natural}$ |
 | $\Box[\Omega^{\Delta}\phi\circ I] = \Omega^{\Delta+2}(\Box\phi)\circ I$ | Conformal covariance of the box operator at $\Delta=1$ |
-| $\Box[1/N(\tilde{Q})] = 0$ | Harmonicity of the inversion image of the constant |
-| $G_{\mathrm{inv}} = 1/(4\pi^2N(\tilde{Q}))$ | Massless kernel = conformal two-point function of weight one |
+| $\Box[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
+| $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
 | $\mu = mc/\hbar$ | The unique scale; breaks the conformal symmetry |
-| $N(\tilde{K}) = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
+| $\langle\tilde{K}\rangle_{\natural} = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
 | $\Theta_{\mu\nu} = T_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial_\mu\partial_\nu)\phi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\Theta^\mu{}_\mu = 0$ (Maxwell) | Trace-free conformally invariant vector field |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 
 ## Further Reading
 

@@ -27,7 +27,7 @@ $$
 
 together with the growth condition that $f$ is bounded as $z \to i\infty$ along vertical strips. The form is **cuspidal** if $f(z) \to 0$ as $z \to i\infty$; the space of modular forms of weight $k$ is denoted $M_k(SL_2(\mathbb{Z}))$ and the subspace of cusp forms $S_k(SL_2(\mathbb{Z}))$.
 
-The transformation law is invariance of the function $\tilde f(g) = (ci+d)^{-k} f(g \cdot i)$ under $SL_2(\mathbb{Z})$, and the growth condition is the analytic part of the definition. The $q$-expansion $f(z) = \sum_{n\geq0} a_n q^n$, $q = e^{2\pi iz}$, converts the arithmetic into the coefficients $a_n$, and the finite-dimensionality of $M_k$ is the first structural theorem: $M_k = 0$ for odd $k$ and for $k<0$, and for even $k \geq 4$,
+The transformation law is invariance of the function $f^{\mathrm{lift}}(g) = (ci+d)^{-k} f(g \cdot i)$ under $SL_2(\mathbb{Z})$, and the growth condition is the analytic part of the definition. The $q$-expansion $f(z) = \sum_{n\geq0} a_n q^n$, $q = \exp(2\pi iz)$, converts the arithmetic into the coefficients $a_n$, and the finite-dimensionality of $M_k$ is the first structural theorem: $M_k = 0$ for odd $k$ and for $k<0$, and for even $k \geq 4$,
 
 $$
 \dim M_k = \begin{cases}\lfloor k/12\rfloor + 1, & k \not\equiv 2 \pmod{12}, \\ \lfloor k/12\rfloor, & k \equiv 2 \pmod{12},\end{cases}
@@ -179,10 +179,10 @@ where $N_\pi$ is the **conductor** of $\pi$ — the product of the local conduct
 **Theorem (functional equation).** For a cuspidal automorphic representation $\pi$ of $GL_n$ there is a **root number** $\varepsilon(\pi) \in \mathbb{C}^\times$ with $|\varepsilon(\pi)| = 1$ such that
 
 $$
-\Lambda(s, \pi) = \varepsilon(\pi)\, \Lambda(1-s, \tilde\pi),
+\Lambda(s, \pi) = \varepsilon(\pi)\, \Lambda(1-s, \pi^{\vee}),
 $$
 
-where $\tilde\pi$ is the contragredient representation. The completed $L$-function extends to a meromorphic function of $s$ of finite order, and it is entire when $\pi$ is cuspidal.
+where $\pi^{\vee}$ is the contragredient representation. The completed $L$-function extends to a meromorphic function of $s$ of finite order, and it is entire when $\pi$ is cuspidal.
 
 The functional equation is proved by Tate's thesis for $GL_1$ and by the theory of the zeta integrals for $GL_n$: one writes the $L$-function as the greatest common divisor of a family of local–global integrals $Z(s, f, \varphi) = \int_{G(\mathbb{Q})\backslash G(\mathbb{A})} f(g)\varphi(g)\, dg$ and proves the functional equation for the integrals, which transfers to the $L$-function. Tate's thesis is the case $G = GL_1$, in which the integrals are the classical adelic zeta integrals and the functional equation is the one of the Riemann zeta function; it is developed in *Adeles and Ideles*, where the adelic measure and the local Fourier analysis are constructed.
 

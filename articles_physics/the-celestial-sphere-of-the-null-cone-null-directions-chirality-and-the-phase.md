@@ -9,13 +9,13 @@ A massless element of the framework is an element of zero biquaternion norm, and
 The null cone is the zero set of the biquaternion norm,
 
 $$
-N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0,
 $$
 
 and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_0 + \vec x$, the norm is the interval,
 
 $$
-N(\tilde{Q}) = -c^2t^2 + |\vec x|^2,
+\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + |\vec x|^2,
 $$
 
 so the null cone of the algebra restricts to the **light cone** of the material sector, and its nonzero elements are the lightlike four-vectors. The cone is a real three-dimensional cone in the four real dimensions of the sector; it has a single point at the origin and is otherwise regular, and its nonzero elements are the lightlike directions of the material geometry.
@@ -54,7 +54,7 @@ $$
 \tilde{\Pi}_\xi = \xi\,\xi^{\dagger}, \qquad \xi \in \mathbb{C}^2,
 $$
 
-with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*The Spinor-Helicity Formalism and Biquaternions*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $e^{i\alpha}\xi$ multiplies $\xi\xi^{\dagger}$ by $e^{i\alpha}e^{-i\alpha} = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
+with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*The Spinor-Helicity Formalism and Biquaternions*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $\exp(i\alpha)\xi$ multiplies $\xi\xi^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
 
 $$
 \mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
@@ -64,10 +64,10 @@ This is the standard identification of the Riemann sphere with the celestial sph
 
 ## The Little Group and the Phase
 
-A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto e^{i\alpha}\xi$, which is the compact $U(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
+A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto \exp(i\alpha)\xi$, which is the compact $U(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
 
 $$
-\xi \;\longmapsto\; e^{i\alpha}\xi, \qquad \text{the field} \;\longmapsto\; e^{i h\alpha}\,\text{the field},
+\xi \;\longmapsto\; \exp(i\alpha)\xi, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
 $$
 
 so the helicity is the **weight** of the central $U(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are *The Spinor-Helicity Formalism and Biquaternions*; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is *The Hopf Fibration and the Biquaternion Gauge Bundle*. What the celestial sphere supplies here is only the **base**: the point of $S^2$ at which the phase sits.
@@ -93,11 +93,11 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $N=0$ is the null cone |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $N=0$ is the null cone |
 | $\mathbb{M}_-$ | the material sector, $\tilde{Q} = ict\,e_0 + \vec x$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
-| $\xi \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\xi\mapsto e^{i\alpha}\xi$ |
+| $\xi \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\xi\mapsto \exp(i\alpha)\xi$ |
 | $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$ | a positive rank-one Hermitian element, hence null; idempotent for unit $\xi$ |
 | $h$ | the helicity, the weight of the little-group $U(1)$ |
 | $\mathbb{C}\mathbb{P}^1 \cong S^2$ | the sphere in spinor coordinates |

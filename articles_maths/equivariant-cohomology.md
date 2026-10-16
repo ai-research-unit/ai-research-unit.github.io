@@ -83,13 +83,13 @@ The two cases are the anchors of the theory: a free action has the equivariant c
 **Theorem.** The Borel fibration $p : X_G \to BG$ has a cohomological Serre spectral sequence of *The Leray–Serre Spectral Sequence*,
 
 $$
-E_2^{p,q} = H^p\bigl(BG;\, \mathcal{H}^q(X;R)\bigr) \ \Longrightarrow \ H_G^{p+q}(X;R),
+E_2^{n,m} = H^p\bigl(BG;\, \mathcal{H}^q(X;R)\bigr) \ \Longrightarrow \ H_G^{p+q}(X;R),
 $$
 
 where $\mathcal{H}^q(X;R)$ is the local system on $BG$ determined by the action of $\pi_1(BG)$ on the cohomology of the fibre; the system is trivial and the formula reads
 
 $$
-E_2^{p,q} = H^p(BG;R)\otimes_R H^q(X;R) \ \Longrightarrow \ H_G^{p+q}(X;R)
+E_2^{n,m} = H^p(BG;R)\otimes_R H^q(X;R) \ \Longrightarrow \ H_G^{p+q}(X;R)
 $$
 
 when the action of the fundamental group is trivial, in particular for a connected group $G$ or when $X$ has trivial monodromy. The spectral sequence converges to the equivariant cohomology, is natural in equivariant maps, and its edge maps are the pullback $H^*(BG;R)\to H_G^*(X;R)$ along $X_G\to BG$ and the map $H_G^*(X;R)\to H^*(X;R)^G$ to the invariants.
@@ -175,7 +175,7 @@ and since the action on $F$ is trivial there, the right side is $H^*(F;\mathbb{Q
 
 ## Summary
 
-Equivariant cohomology in the Borel model is the ordinary cohomology of the homotopy quotient $X_G = EG\times_G X$; the diagonal action is free, the projection $X_G\to BG$ is a fibration with fibre $X$, and the construction is natural in the equivariant map and homotopy invariant on the equivariant homotopy category. For a free action the homotopy quotient is the orbit space and $H_G^*(X;R)\cong H^*(X/G;R)$; for a trivial action it is $X\times BG$ and the equivariant cohomology is the product with $H^*(BG;R)$; for a homogeneous space $G/H$ it is $H^*(BH;R)$. The Serre spectral sequence of the Borel fibration has $E_2^{p,q}=H^p(BG;\mathcal{H}^q(X;R))$ and converges to $H_G^{p+q}(X;R)$, with the trivial monodromy giving $H^*(BG;R)\otimes H^*(X;R)$; the cohomology of the base makes the equivariant cohomology a module over $H^*(BG;R)$, and the module is free when the sequence collapses. The rings $H^*(BG;R)$ are polynomial for the classical groups, and the localization theorem computes the rational equivariant cohomology of a torus action from the fixed set. The comparison with the cohomology of the orbit space is the isomorphism for free actions and the transfer isomorphism for finite groups with the group order inverted; the general comparison is the subject of *The Cohomology of an Orbit Space*. Nothing analytic and nothing geometric was used beyond the classifying spaces and the fibration.
+Equivariant cohomology in the Borel model is the ordinary cohomology of the homotopy quotient $X_G = EG\times_G X$; the diagonal action is free, the projection $X_G\to BG$ is a fibration with fibre $X$, and the construction is natural in the equivariant map and homotopy invariant on the equivariant homotopy category. For a free action the homotopy quotient is the orbit space and $H_G^*(X;R)\cong H^*(X/G;R)$; for a trivial action it is $X\times BG$ and the equivariant cohomology is the product with $H^*(BG;R)$; for a homogeneous space $G/H$ it is $H^*(BH;R)$. The Serre spectral sequence of the Borel fibration has $E_2^{n,m}=H^p(BG;\mathcal{H}^q(X;R))$ and converges to $H_G^{p+q}(X;R)$, with the trivial monodromy giving $H^*(BG;R)\otimes H^*(X;R)$; the cohomology of the base makes the equivariant cohomology a module over $H^*(BG;R)$, and the module is free when the sequence collapses. The rings $H^*(BG;R)$ are polynomial for the classical groups, and the localization theorem computes the rational equivariant cohomology of a torus action from the fixed set. The comparison with the cohomology of the orbit space is the isomorphism for free actions and the transfer isomorphism for finite groups with the group order inverted; the general comparison is the subject of *The Cohomology of an Orbit Space*. Nothing analytic and nothing geometric was used beyond the classifying spaces and the fibration.
 
 ## Summary of Notation
 
@@ -188,7 +188,7 @@ Equivariant cohomology in the Borel model is the ordinary cohomology of the homo
 | $H_G^*(X;R)$ | Equivariant cohomology $H^*(X_G;R)$ |
 | $H^*(G;R) = H^*(BG;R)$ | Cohomology of the group; the base ring |
 | $H_G^*(f)$, $\mathrm{id}\times_G f$ | Contravariant functoriality in equivariant maps |
-| $E_2^{p,q} = H^p(BG;\mathcal{H}^q(X))$ | Serre spectral sequence of the Borel fibration |
+| $E_2^{n,m} = H^p(BG;\mathcal{H}^q(X))$ | Serre spectral sequence of the Borel fibration |
 | $\mathcal{H}^q(X;R)$ | Local system of the fibre cohomology over $BG$ |
 | $H^*(BG;R)\otimes H^*(X;R)$ | $E_2$ page and $H_G^*$ when the monodromy is trivial |
 | $c : X_G \to X/G$ | Comparison map with the orbit space |

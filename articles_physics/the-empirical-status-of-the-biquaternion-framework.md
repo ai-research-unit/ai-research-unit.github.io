@@ -14,7 +14,7 @@ The temptation this article exists to resist is the opposite of that conclusion:
 
 A candidate that traces to an undetermined parameter or an unverified claim is **not a signature**, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.
 
-Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## What Would Count as a Signature
 
@@ -28,7 +28,7 @@ A measurement $M$ is a **signature** of the framework relative to a standard the
 
 **(S4) Resolution.** An existing or feasible experimental bound on $O-O_S$ is tighter than the predicted $\delta$. A deviation smaller than the best bound is not a test; it is an aspiration.
 
-The four conditions fail together for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{M}_-\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{M}_+$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $N$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.
+The four conditions fail together for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{M}_-\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{M}_+$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $\langle\cdot\rangle_{\natural}$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.
 
 The consequence is a barrier that this article will meet repeatedly. Any quantity the framework fixes **by its algebra alone** is a quantity that the standard theory, using the same algebra, fixes identically. A signature therefore requires an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle. The series has supplied such inputs in the places where a transcription needed them (the Dirac mass term, the gauge fixing of the Maxwell field, the frame field of the curved-spacetime construction), but in no case has it supplied one whose value the algebra forces. That is the central structural reason the framework currently makes no distinguishing prediction.
 
@@ -41,7 +41,7 @@ The following table collects the quantitative results the series has obtained an
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
 | Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $N(d\tilde{Q})=-c^2dt^2+d\vec x^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Relativistic point mechanics | $\langle d\tilde{Q}\rangle_{\natural}=-c^2dt^2+d\vec x^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
@@ -103,7 +103,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\vec q^2$ and $q_0^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\vec q^2$ and $q_0^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 
@@ -203,9 +203,9 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The framework-specific quantity.** None of the framework's. The programme uses the four-velocity biquaternion, the semi-biquaternion product, and the complexified four-position, which the corpus's companion articles read as a rewriting of standard four-vector kinematics. Its distinctive content is the added hypothesis that $c$ varies with position and that the line element is $ds^2=-f^2c_0^2\,dt^2+(dr^2+r^2d\Omega^2)/f^2$. The algebra does not force either.
 
-**Derived or posited.** Mixed, and the split is the point. The profile is **fitted**, not derived: it comes from setting the model's force law equal to Newton's, so Newton's law is the input. The inverse squaring of the spatial part of the line element is a **second posit**, independent of the profile, and it is what carries the construction to the Schwarzschild form. The consequence is checkable and worth stating: at the profile the paper derives, $f=e^{-r_s/(2r)}$, the metric is **not** Ricci-flat ($R_{11}=-r_s^2/(2r^4)$ in the corpus's curvature convention, recomputed here), so it is not a vacuum solution of Einstein's equations. The Schwarzschild metric is the first-order truncation of that profile, which is why the classical tests come out right at leading order and differ only at order $(r_s/r)^2$.
+**Derived or posited.** Mixed, and the split is the point. The profile is **fitted**, not derived: it comes from setting the model's force law equal to Newton's, so Newton's law is the input. The inverse squaring of the spatial part of the line element is a **second posit**, independent of the profile, and it is what carries the construction to the Schwarzschild form. The consequence is checkable and worth stating: at the profile the paper derives, $f=\exp(-r_s/(2r))$, the metric is **not** Ricci-flat ($R_{11}=-r_s^2/(2r^4)$ in the corpus's curvature convention, recomputed here), so it is not a vacuum solution of Einstein's equations. The Schwarzschild metric is the first-order truncation of that profile, which is why the classical tests come out right at leading order and differ only at order $(r_s/r)^2$.
 
-**The existing bound.** Two, and both are empty by a wide margin. The model's deviation from general relativity is of order $(r_s/r)^2$, which at the solar surface is $1.8\times10^{-11}$ — far below the precision of the classical tests the programme reproduces. The programme's own distinctive prediction is a screening factor $e^{-Gm/(c_0^2r)}$ in the static field of a mass: this is $1-2.1\times10^{-6}$ at the solar surface, $1-7.0\times10^{-10}$ at the Earth's surface, and below $1-10^{-25}$ for any laboratory mass at laboratory separations. No experiment reaches either.
+**The existing bound.** Two, and both are empty by a wide margin. The model's deviation from general relativity is of order $(r_s/r)^2$, which at the solar surface is $1.8\times10^{-11}$ — far below the precision of the classical tests the programme reproduces. The programme's own distinctive prediction is a screening factor $\exp(-Gm/(c_0^2r))$ in the static field of a mass: this is $1-2.1\times10^{-6}$ at the solar surface, $1-7.0\times10^{-10}$ at the Earth's surface, and below $1-10^{-25}$ for any laboratory mass at laboratory separations. No experiment reaches either.
 
 **Verdict.** Not a signature of the framework, and not the framework's claim. It is recorded because it is the one worked-out route by which a varying $c$ reaches the Schwarzschild metric — a route the framework's own local scale factor does not take, as *Curved Spacetime and the Biquaternion Framework*, section *What the Restricted Class Cannot Do*, records — and because it shows the price of the route: two inserted inputs, the fitted profile and the spatial scaling, and a metric that is not itself a vacuum solution. Its provenance is worth noting with the claims: the paper is self-issued, with no journal, DOI or arXiv identifier.
 
@@ -260,11 +260,11 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
-| $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{u})$ | Idempotent (pure state) |
+| $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\vec{u})$ | Idempotent (pure state) |
 | $\tilde{H}=h_0e_0+i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |

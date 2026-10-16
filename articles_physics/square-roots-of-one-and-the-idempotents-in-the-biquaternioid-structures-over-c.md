@@ -16,7 +16,7 @@ idempotents, since $\tilde\Xi^{2}=e_0$ exactly when $\tilde\Pi^{2}=\tilde\Pi$; t
 is the plain square, and the other structures read their idempotent sets from their own squares. The map
 needs no central unit and no root of $-1$; it is proved on the
 mathematics side, in *Square Roots of One and the Idempotents in the Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space*, and cited here. This article reads the roots of one and the idempotent
+Biquaternioid $\mathbb{C}$ Space*, and cited here. This article reads the roots of one and the idempotent
 states as one subject, and it is the physics companion of that mathematics article.
 
 The physics of the two objects is fixed by the corpus. A root of $+1$ is an **involution**: an order-two
@@ -44,7 +44,7 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2
 $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central with $i^{2}=-1$. The conjugations are
 ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
 $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with
-$C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square** is $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$;
+$C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square** is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$;
 the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. An element is
 **pure** when $\Xi_0=0$ and **central** when $\vec\Xi=0$. The material coordinate is
 $\tilde\Xi=i c t\,e_0+\vec x$ with $c=1/\sqrt{\epsilon\mu}$. The twelve structures are cited by their
@@ -112,7 +112,7 @@ direction, and the involution it defines is one the coupling does not see.
 **In the probability band, the unitary group.** The general plain sesqualgebra has $+1$ as its only signed
 value, and its roots are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the
 unitary group $U(2)$ of the spinor space, of real dimension four, described as the family
-$e^{i\theta}w$ over the real unit quaternions $w$. The physical interpretation is the corpus's operator
+$\exp(i\theta)w$ over the real unit quaternions $w$. The physical interpretation is the corpus's operator
 reading of the pairing: the unitaries are the reversible transformations that leave the probability form
 invariant, that is the gauge and symmetry group of the state space, and *Observables, Gauge Generators and
 the Chirality of the Internal Action* reads the Hermitian conjugation on which they are built. The
@@ -120,14 +120,13 @@ probability band therefore produces reversible transformations as its roots of $
 of $-1$: the band that measures has a symmetry group and no clock of its own.
 
 **The symmetrisation loses the group.** In the symmetric plain sesqualgebra the square is the scalar
-$H(\tilde\Xi)e_0$, so the roots of $+1$ are the quadric $H=1$, the sphere
+$\langle\tilde\Xi\rangle_{*}e_0$, so the roots of $+1$ are the quadric $H=1$, the sphere
 $\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of $\mathbb{C}^{4}$, of real dimension seven. The group $U(2)$
 has grown to the sphere: the symmetrisation forgets the vector part of the square, so it forgets the phase
 of the unitary and keeps only its norm. The physics is the contrast between **unitarity** and
 **normalisation**: the general pairing's root of $+1$ is a reversible transformation, and the symmetrised
 pairing's root of $+1$ is a normalised amplitude, a state vector without its phase. The corpus reads the
-normalised amplitude and the sphere in *The Squares and the Positive Cone of the Biquaternion
-Sesqualgebra* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
+normalised amplitude and the sphere in *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
 **In the quaternionic families.** The quaternionic square is the central square $C(\tilde\Xi)e_0$, so
 the roots of $+1$ are the quadric $C=+1$ for $\mathrm{GQA}$ and $\mathrm{SQA}$, containing the central pair
@@ -174,7 +173,7 @@ one.
 
 **The two signed values are two kinds of order-two object, and the word "reflection" is used with care.**
 A root of $-1$ is a complex structure: it rotates by a quarter turn and carries the continuous
-one-parameter group $e^{\theta\tilde\Xi}$, an $SO(2)$. A root of $+1$ is an involution, its own inverse,
+one-parameter group $\exp(\theta\tilde\Xi)$, an $SO(2)$. A root of $+1$ is an involution, its own inverse,
 and carries only the two signs, a $\mathbb{Z}_2$. So $0$ is a direction, $+1$ is a sign and $-1$ is a
 rotation. One caution is owed to *The Reflection and the Rotation in Biquaternionic Form*: the biquaternion
 algebra is the **even** part of the Clifford algebra and its elements turn, they are the Lorentz rotors; a
@@ -200,15 +199,13 @@ Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
 The product is the pairing and its square is the Hermitian square, whose scalar part $H$ is non-negative.
 The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the
 group $U(2)$ of real dimension four. Physically the band has reversibility and normalisation. The reading
-is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *The Spinor Space as a Hilbert Space of the General
-Plain Sesqualgebra*.
+is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *The Spinor Space as a Module and as a Hilbert Space*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
 The product is the natural product $\tilde P^{\natural}\tilde Q$ and its square is the central interval $C(\tilde\Xi)e_0$, so
 the root problem of $+1$ is the level set $C=+1$, the quadric of real dimension six. It contains the
-central pair $\pm e_0$ and the real vector roots $\tilde\xi$. The reading is *The Interval as the Square and
-the Charge of the Material Composition*.
+central pair $\pm e_0$ and the real vector roots $\tilde\xi$. The reading is *The Four Forms, the Four Algebraic Norms and the Change of Scalars*.
 
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
@@ -226,7 +223,7 @@ block, and the pure roots are in bijection with the idempotents by the halving m
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
-The product is the scalar-valued symmetrisation and its square is $H(\tilde\Xi)e_0$, so the root
+The product is the scalar-valued symmetrisation and its square is $\langle\tilde\Xi\rangle_{*}e_0$, so the root
 problem is the single real equation $H=1$. The roots of $+1$ are the sphere
 $\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of real dimension seven, and the witness $\tilde w$ shows that a
 member need not be a unit. The symmetrisation replaces unitarity by normalisation. The reading is *Why
@@ -281,7 +278,7 @@ plain pair's family being the one the halving map produces.
 | GQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$, dim 6 | trivial pair only | the spacelike shell of the interval |
 | GQS | the Krein value | slopes $\lvert t\rvert>1$ and the central circle | the invertible states $-\tfrac12e_0+\mu$ | the spacelike class of the indefinite metric |
 | SPA | $\tilde\Xi^{2}$ | the set of GPA | the set of GPA | the same, but the pure roots are zero divisors of the block |
-| SPS | $H(\tilde\Xi)e_0$ | the sphere $H=1$, dim 7 | trivial pair only | normalisation replaces unitarity |
+| SPS | $\langle\tilde\Xi\rangle_{*}e_0$ | the sphere $H=1$, dim 7 | trivial pair only | normalisation replaces unitarity |
 | SQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$ | trivial pair only | the same |
 | SQS | the Hermitian part | $\mathcal R_{+1}$ with $\lvert\alpha\rvert\geq1$ | the same family as the general partner | a root of one need not be a unit |
 | APA | $0$ | none | none | a bracket has no involution |
@@ -362,8 +359,7 @@ roots of one: the four parameters of the non-trivial idempotents are the four pa
 and the Hermitian subfamily is the part of the family the probability band keeps. The plain idempotents are the
 idempotents of the algebra, and they are the states that the composition can prepare; the owner of the
 algebra's idempotents and of their parametrisation is *The Biquaternion Vacuum as a Minimal Idempotent*,
-and the corpus reads the associated splitting of the algebra in *Ideals and Peirce Decomposition of the
-General Plain Algebra* (mathematics). A Peirce decomposition of the algebra by an idempotent is a splitting
+and the corpus reads the associated splitting of the algebra in *Ideals and Peirce Decomposition of the Biquaternion Algebra* (mathematics). A Peirce decomposition of the algebra by an idempotent is a splitting
 of the states into two orthogonal families, and it requires associativity; this is the algebraic reason the
 plain product is the band whose states build the whole algebra.
 
@@ -477,8 +473,7 @@ Cone* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
 The product is the natural product and its square is the central element $C(\tilde\Pi)e_0$, so an
 idempotent is central and the equation on the centre leaves only $0$ and $e_0$. The band of the interval
-carries no nontrivial state. The reading is *The Interval as the Square and the Charge of the Material
-Composition*.
+carries no nontrivial state. The reading is *The Four Forms, the Four Algebraic Norms and the Change of Scalars*.
 
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
@@ -667,7 +662,7 @@ of a state $\tilde\rho=\tfrac12(e_0+i\vec r)$ and find it to be a single scalar,
 
 $$
 \mathrm{Sc}\bigl(\tilde\rho^{2}-\tilde\rho\bigr)=\tfrac14\bigl(\lvert\vec r\rvert^{2}-1\bigr)
-=-N(\tilde\rho),
+=-\langle\tilde\rho\rangle_{\natural},
 $$
 
 so that purity, idempotency and the vanishing of the biquaternion norm are three interpretations of one
@@ -703,7 +698,7 @@ neighbours, and the two readings agree through a **reciprocity**. The classical 
 state's spectral family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
 
 $$
-g_{rr}=\frac{1}{1-|\vec r|^{2}}=\frac{1}{4\,\mathrm{Sc}\,N(\tilde\rho)} .
+g_{rr}=\frac{1}{1-|\vec r|^{2}}=\frac{1}{4\,\mathrm{Sc}\,\langle\tilde\rho\rangle_{\natural}} .
 $$
 
 It is minimal at the maximally mixed state, where the norm is largest, and it **diverges on the
@@ -869,7 +864,7 @@ chirality splitting.
   determinate state, and a state is not an interval.
 - The root of $+1$ has a sharp physical carrier: the $S$-matrix of a single mode is matrix-unitary,
   $\tilde S\tilde S^{*}=e_0$, which is the $U(2)$ root-of-$+1$ condition and not the unit-norm Lorentz
-  condition $N(\tilde S)=e_0$ (*The S-Matrix in Biquaternionic Form*).
+  condition $\langle\tilde S\rangle_{\natural}=e_0$ (*The S-Matrix in Biquaternionic Form*).
 - The root of $+1$ carries the double cover. In *The Two-Sheeted Cover and the Topology of Boosts in
   Biquaternionic Form* the rotor $R(2\pi)=-e_0$ is the nontrivial central root of $+1$, while the boost
   manifold is contractible and the closure failure of two boosts is the Thomas–Wigner rotation.
@@ -968,7 +963,7 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 
 - $\tilde\Xi$ a root of $+1$, $\tilde\Xi\star\tilde\Xi=e_0$; $\tilde\Pi$ an idempotent, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$; the trivial pair $0$ and $e_0$.
 - The halving map $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ and its inverse $\tilde\Xi=2\tilde\Pi-e_0$.
-- $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi$ the central square; $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)$ the Krein value; $C\neq0$ is the criterion of invertibility.
+- $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi$ the central square; $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)$ the Krein value; $C\neq0$ is the criterion of invertibility.
 - pure means $\Xi_0=0$; central means $\vec\Xi=0$; $\tilde\xi$ a real unit vector.
 - The families $\tfrac12(e_0+\tilde\Xi)$ over the roots of $+1$, $\tfrac12(e_0+i\tilde\xi)$, and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$.
 - The complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$, with $\tilde\Pi(e_0-\tilde\Pi)=0$; the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi)$.
@@ -978,10 +973,10 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the classification of the roots of $+1$ in the twelve structures, the unit theorem, the twelve idempotent sets, the central-square theorem, the halving map and the complementation.
+- The mathematics companion: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the classification of the roots of $+1$ in the twelve structures, the unit theorem, the twelve idempotent sets, the central-square theorem, the halving map and the complementation.
 - The companion articles of the section: *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$*, for the roots of $0$; *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$*, for the general radicand and the four existence classes; *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$*; *Annihilators in the Biquaternioid Structures over $\mathbb{C}$*.
 - The state reading of a process: *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
-- The plain family and the algebra's idempotents: *The Biquaternion Vacuum as a Minimal Idempotent*; *Ideals and Peirce Decomposition of the General Plain Algebra* (mathematics); *Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
+- The plain family and the algebra's idempotents: *The Biquaternion Vacuum as a Minimal Idempotent*; *Ideals and Peirce Decomposition of the Biquaternion Algebra* (mathematics); *Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
 - The pure states and the Bloch ball: *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Hermitian Subspace M₊ as the Informational Sector*; *The Anti-Hermitian Subspace M₋ as the Material Sector*.
 - The gauge family and the indefinite metric: *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*; *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*; *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* (mathematics).
 - The observable face of the involution: *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*; *The Reflection and the Rotation in Biquaternionic Form*.
@@ -990,4 +985,4 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - The entropy, the coarse-graining and the vacuum energy: *Von Neumann Entropy and the Biquaternion Norm*; *Coarse-Graining and the Biquaternion Entropy Functional*; *Relative Entropy and the Biquaternion Framework*; *Fisher Information and the Biquaternion Norm*; *The Vacuum State and the Casimir Effect in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*.
 - The contexts, the codes and the resources: *Contextuality and the Kochen–Specker Theorem in Biquaternionic Form*; *Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form*; *Mutually Unbiased Bases and the Biquaternion Algebra*; *Bosonization in Biquaternionic Form*; *Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form*; *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*; *Quantum Teleportation in Biquaternionic Form*.
 - The roots of $-1$ and their owners: *The Local Complex Structure and the Speed of Light*; *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*; *Thermal Time and the Modular Flow in the Biquaternion Framework*; *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*; *The Spectral Triple of the Biquaternion Algebra*.
-- The grid and the definitions: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; *Conventions in the Biquaternion Universe*.
+- The grid and the definitions: *The 12 Products of the Biquaternioid Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; *Conventions in the Biquaternion Universe*.

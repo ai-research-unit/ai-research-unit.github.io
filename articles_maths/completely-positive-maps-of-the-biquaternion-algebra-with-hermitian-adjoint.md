@@ -9,7 +9,7 @@ Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$
 > \Phi = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}},\qquad \Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\,\tilde P\,\tilde{Q}^{*},\qquad r\le 4 .
 > $$
 
-The rank-one case is exactly the sandwich of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, so the completely positive maps are **sums of sandwiches**, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is *not* completely positive looks like. The criterion is **Choi's**: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the **Choi matrix** of the map.
+The rank-one case is exactly the sandwich of *Two-Sided Operators on the General Plain Sesqualgebra*, so the completely positive maps are **sums of sandwiches**, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is *not* completely positive looks like. The criterion is **Choi's**: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the **Choi matrix** of the map.
 
 ## Positive Maps and the Cone
 
@@ -71,7 +71,7 @@ The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 
 *Proof.* (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde P\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde P)$, so the trace is preserved for all $\tilde P$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{0}$.
 
-**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde P\mapsto \tilde{Q}\tilde P\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
+**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde P\mapsto \tilde{Q}\tilde P\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
 
 ## The Transposition
 
@@ -103,7 +103,7 @@ whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity on
 
 **The transposition relative to a sandwich.** The composition of a sandwich with the transposition is positive and not completely positive; its Choi matrix has a negative eigenvalue, and the negativity is the obstruction to a Kraus representation.
 
-**The null sandwich revisited.** $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
+**The null sandwich revisited.** $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the General Plain Sesqualgebra*.
 
 ## Summary
 
@@ -126,7 +126,7 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 ## Further Reading
 
 - *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich as an operator, its positivity and its cone.
+- *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich as an operator, its positivity and its cone.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
 - *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.

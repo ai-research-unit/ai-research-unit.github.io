@@ -17,7 +17,7 @@ for every finite family $x_1,\dots,x_n\in G$ and scalars $c_1,\dots,c_n\in\mathb
 
 ## The Positive Definite Functions
 
-**Theorem (elementary properties).** A continuous $\phi$ is positive definite if and only if the function $\tilde\phi(x) = \overline{\phi(x^{-1})}$ is, and then
+**Theorem (elementary properties).** A continuous $\phi$ is positive definite if and only if the function $\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ is, and then
 
 $$
 \phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0 ;
@@ -25,7 +25,7 @@ $$
 
 if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.
 
-**Proof.** The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\tilde\phi$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.
+**Proof.** The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\phi^{\mathrm{refl}}$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.
 
 **Proposition (the functional on the algebra).** A bounded continuous $\phi$ is positive definite if and only if the functional
 
@@ -43,7 +43,7 @@ is positive semidefinite on $C_c(G)$.
 
 **Proof.** The sesquilinear form on step functions $f = \sum c_i\delta_{x_i}$ reduces to the defining double sum, so positive definiteness is precisely its positive semidefiniteness on $C_c(G)$; the equivalence with the positivity of $\omega_\phi$ is the standard computation relating the two expressions by Fubini and the definition of $f^*\!*f$, and is in the references.
 
-**Corollary (the cone and its closure).** The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\tilde\phi$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the **states** of the group.
+**Corollary (the cone and its closure).** The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\phi^{\mathrm{refl}}$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the **states** of the group.
 
 **Proof.** Convexity is the linearity of the defining sum in $\phi$; closure under pointwise limits is the closedness of the non-negative reals. Closure under products follows from the representation-theoretic description below via the tensor product, and the normalisation is the statement $\|\phi\|_\infty = \phi(e)$.
 
@@ -103,7 +103,7 @@ A continuous function $\phi$ on $G$ is positive definite when the defining finit
 |---|---|
 | $\phi\gg0$ | $\phi$ is continuous positive definite |
 | $\sum_{i,j}c_i\overline{c_j}\phi(x_i^{-1}x_j)\geq0$ | The defining inequality |
-| $\tilde\phi(x) = \overline{\phi(x^{-1})}$ | The involuted function, positive definite with $\phi$ |
+| $\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ | The involuted function, positive definite with $\phi$ |
 | $\phi(x^{-1}) = \overline{\phi(x)}$, $\|\phi\|_\infty = \phi(e)$ | The elementary properties |
 | $\omega_\phi(f) = \int_G f\phi\,dx$ | The functional, positive iff $\phi\gg0$ |
 | $\langle Sf,Sg\rangle_\phi$ | The positive semidefinite sesquilinear form |

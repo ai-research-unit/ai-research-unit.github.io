@@ -15,7 +15,7 @@ R\in O(2),\quad \det R=-1,\quad R^2=I_2 ,
 $$
 an element of $O(2)=U(1)\rtimes\mathbb{Z}_2$, and the $\mathbb{Z}_2$ is the exchange of the two branches — the reversal of the contour's orientation. In the rotated basis the $2\times2$ Green's function matrix takes the form
 $$
-\hat{\mathcal G} = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix},
+\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix},
 $$
 with the $qq$ entry **exactly zero**; this was verified by explicit rotation of a consistent CTP matrix and is a general algebraic identity, not an approximation.
 - **Established (algebra).** At equilibrium the Keldysh component obeys the **fluctuation–dissipation relation**
@@ -28,7 +28,7 @@ whose thermal factor is a **central scalar**, so it multiplies every entry of th
 
 The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\vec x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
+**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\vec x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
 
 ## The Closed-Time-Path Contour and the Doubled Fields
 
@@ -42,7 +42,7 @@ $$
 $$
 The generating functional is
 $$
-Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;e^{\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)},
+Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\exp(\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)),
 $$
 with the relative sign between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
 
@@ -63,7 +63,7 @@ which define the Keldysh, retarded, and advanced functions. These identities are
 
 **The two-branch action in the framework.** For the quadratic biquaternion action with central operator $\tilde K$ the two-branch action is $S[\tilde\Phi_+]-S[\tilde\Phi_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(\Phi_+,\Phi_-)$ basis is therefore
 $$
-\hat G_0 = \begin{pmatrix} \tilde K^{-1} & 0 \\ 0 & -\tilde K^{-1}\end{pmatrix},
+G_0 = \begin{pmatrix} \tilde K^{-1} & 0 \\ 0 & -\tilde K^{-1}\end{pmatrix},
 $$
 block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation of this matrix is not the equilibrium form $\left(\begin{smallmatrix}G^K&G^R\\G^A&0\end{smallmatrix}\right)$ — the free contour's matrix has no Keldysh component in the vacuum — and the equilibrium form appears only once the state is specified. Two structural points follow and are the framework's: the free propagator is central in each block, so the branch structure and the module structure are independently diagonal; and the sector decomposition of $\tilde K^{-1}$ multiplies each block, so a scalar biquaternion field's free CTP propagator is the standard one taken twice in the module and twice in the branch. The interactions couple the branches and the sectors; the vertex carries the relative sign of the two branches, which is what makes the loop integrals converge with the in-in boundary conditions rather than the Feynman ones.
 
@@ -71,7 +71,7 @@ block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation
 
 This is where a plausible-looking identification is wrong, and it is worth being explicit.
 
-**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat u)\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
+**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
 
 **The branch factor is external.** The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a **tensor product**,
 $$
@@ -103,13 +103,13 @@ R^2 = I_2 ,
 $$
 so $R\in O(2)$. The group $O(2)=U(1)\rtimes\mathbb{Z}_2$ is the group of the branch-space rotations, and its $\mathbb{Z}_2$ subgroup is the exchange of the two branches, i.e. the reversal of the contour's orientation. The same group governs the one-mode Bogoliubov transformations of the companion article on Bogoliubov transformations; the $\mathbb{Z}_2$ there is the particle–hole exchange, and here it is the branch exchange. That the two are the same $O(2)$ is a statement about the two-dimensional real orthogonal group, not an identification of the two physical operations.
 
-**The rotated matrix.** Rotating the CTP matrix $\hat G=\left(\begin{smallmatrix}G^{++}&G^{+-}\\G^{-+}&G^{--}\end{smallmatrix}\right)$ by $R$, $\hat{\mathcal G}=R\,\hat G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
+**The rotated matrix.** Rotating the CTP matrix $G=\left(\begin{smallmatrix}G^{++}&G^{+-}\\G^{-+}&G^{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
 $$
-\hat{\mathcal G} = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}.
+\mathcal G = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}.
 $$
 The $qq$ entry vanishes identically. With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
 $$
-\hat{\mathcal G} = \begin{pmatrix} 4 & 1.5 \\ -0.5 & 0\end{pmatrix},
+\mathcal G = \begin{pmatrix} 4 & 1.5 \\ -0.5 & 0\end{pmatrix},
 \qquad
 G^R=G^{++}-G^{+-}=1.5 ,
 \qquad
@@ -119,7 +119,7 @@ G^K=4 ,
 $$
 with the $qq$ entry exactly $0$ (to machine precision) and the off-diagonal entries exactly $G^R$ and $G^A$. The two off-diagonal entries are transposes of each other in the matrix-valued (spinor) case, where they are not central; for a scalar biquaternion field they are central scalars.
 
-**Biquaternion content.** Each entry of $\hat{\mathcal G}$ is a module object. For a scalar field the entries are central scalars times the identity on the module and the matrix is the standard one taken twice (the sector copies); for a spinor field the entries are $\mathsf{M}_2$-valued in the spinor module and the matrix is not diagonal in the module index. The vanishing of the $qq$ entry is a branch-space fact and holds in both cases; the module structure multiplies it entrywise.
+**Biquaternion content.** Each entry of $\mathcal G$ is a module object. For a scalar field the entries are central scalars times the identity on the module and the matrix is the standard one taken twice (the sector copies); for a spinor field the entries are $\mathsf{M}_2$-valued in the spinor module and the matrix is not diagonal in the module index. The vanishing of the $qq$ entry is a branch-space fact and holds in both cases; the module structure multiplies it entrywise.
 
 ## Equilibrium and the Fluctuation–Dissipation Relation
 
@@ -154,7 +154,7 @@ the Matsubara function on the discrete grid, the retarded function on the real a
 
 **The thermal states of the companions.** The Unruh and Hawking states are equilibrium states at $\beta=2\pi c/a$ and $\beta=2\pi c/\kappa$; their CTP description is the equilibrium one above, with the Keldysh component carrying the thermal factor and the retarded/advanced functions carrying the causal response. The framework adds no new ingredient: the imaginary material time is intrinsic, which is why the KMS strip has a preferred direction, and the temperature is the input that the Unruh and Hawking articles state it to be.
 
-**Consistency with the KMS article.** The modular Hamiltonian $K=-\log\rho$ is a Hermitian element of $\mathbb{M}_+$ in the KMS article's finite-dimensional setting, and the Keldysh component is $\rho$-dependent through the thermal factor; for a Gibbs state $\rho=e^{-\beta H}/Z$ the two agree. The same caveat as in the Matsubara article applies: the field-algebra modular operator is not constructed in the framework, and the equilibrium CTP function is used as the standard one.
+**Consistency with the KMS article.** The modular Hamiltonian $K=-\log\rho$ is a Hermitian element of $\mathbb{M}_+$ in the KMS article's finite-dimensional setting, and the Keldysh component is $\rho$-dependent through the thermal factor; for a Gibbs state $\rho=\exp(-\beta H)/Z$ the two agree. The same caveat as in the Matsubara article applies: the field-algebra modular operator is not constructed in the framework, and the equilibrium CTP function is used as the standard one.
 
 ## The Non-Equilibrium Case
 
@@ -170,15 +170,15 @@ Away from equilibrium the Keldysh function is an independent dynamical object, a
 
 The dynamical content of the formalism is a matrix Dyson equation, and it is worth stating how the framework's objects enter it.
 
-**The matrix Dyson equation.** With the free propagator matrix $\hat G_0$ and the self-energy matrix $\hat\Sigma$, the exact propagator obeys
+**The matrix Dyson equation.** With the free propagator matrix $G_0$ and the self-energy matrix $\Sigma$, the exact propagator obeys
 $$
-\hat G^{-1} = \hat G_0^{-1}-\hat\Sigma ,
+G^{-1} = G_0^{-1}-\Sigma ,
 \qquad\text{equivalently}\qquad
-\hat G = \hat G_0+\hat G_0\,\hat\Sigma\,\hat G ,
+G = G_0+G_0\,\Sigma\,G ,
 $$
-a $2\times2$ equation in branch space. In the rotated basis it splits into a retarded/advanced equation and a kinetic equation for the Keldysh component; the retarded equation fixes the spectral function $A$, and the kinetic equation for $G^K$ is the quantum Boltzmann equation, whose collision term is built from $\hat\Sigma$. At equilibrium the kinetic equation is satisfied by the fluctuation–dissipation form of $G^K$, and the fluctuation–dissipation relation is its solution rather than an independent input. This is the standard Kadanoff–Baym structure and is cited.
+a $2\times2$ equation in branch space. In the rotated basis it splits into a retarded/advanced equation and a kinetic equation for the Keldysh component; the retarded equation fixes the spectral function $A$, and the kinetic equation for $G^K$ is the quantum Boltzmann equation, whose collision term is built from $\Sigma$. At equilibrium the kinetic equation is satisfied by the fluctuation–dissipation form of $G^K$, and the fluctuation–dissipation relation is its solution rather than an independent input. This is the standard Kadanoff–Baym structure and is cited.
 
-**Biquaternion content.** Each entry of $\hat G$ and $\hat\Sigma$ is a module object. When the self-energy is central the matrix Dyson equation is a set of scalar equations taken twice over the sectors; when it is not central — a spinor self-energy coupling chiralities — the entries are matrices in the spinor module and the products in the Dyson equation are module products, with the trace pairing supplying the scalar invariants. The branch index is external throughout, so the matrix structure and the module structure never mix: the Dyson equation is the tensor product of a $2\times2$ branch algebra with the module algebra, and the framework's contribution is the identification of the second factor.
+**Biquaternion content.** Each entry of $G$ and $\Sigma$ is a module object. When the self-energy is central the matrix Dyson equation is a set of scalar equations taken twice over the sectors; when it is not central — a spinor self-energy coupling chiralities — the entries are matrices in the spinor module and the products in the Dyson equation are module products, with the trace pairing supplying the scalar invariants. The branch index is external throughout, so the matrix structure and the module structure never mix: the Dyson equation is the tensor product of a $2\times2$ branch algebra with the module algebra, and the framework's contribution is the identification of the second factor.
 
 **The kinetic limit.** Gradient-expanding the Dyson equation gives the semiclassical transport equation, in which the Keldysh component becomes the distribution function and the retarded one the spectral density. The framework adds to this its module-valued distribution function, whose sector decomposition is the two-species structure; the transport equation itself is standard.
 
@@ -190,7 +190,7 @@ The generating-functional structure of the previous articles carries over with t
 $$
 \tilde J = \begin{pmatrix}\tilde J_+\\\tilde J_-\end{pmatrix},
 \qquad
-Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;e^{\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)} ,
+Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\exp(\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)) ,
 $$
 one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as its source derivatives; the Legendre transform in both sources gives the two-particle-irreducible effective action, whose stationarity is the Kadanoff–Baym equation. This is the contour version of *The Generating Functional and the Effective Action in Biquaternionic Form*, with the fields and sources taking values in the module and with one extra external index. The biquaternion content is unchanged: the sources are module-valued, the quadratic operator is the biquaternion-norm operator, and the sector factorization holds whenever the operator is central.
 
@@ -229,7 +229,7 @@ R=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix},
 $$
 brings the matrix of Green's functions to
 $$
-\hat{\mathcal G}=\begin{pmatrix}G^K&G^R\\G^A&0\end{pmatrix},
+\mathcal G=\begin{pmatrix}G^K&G^R\\G^A&0\end{pmatrix},
 $$
 with the $qq$ entry exactly zero; this was verified on the consistent set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$, which gives $G^R=1.5$, $G^A=-0.5$, $G^K=4$, and the rotated matrix $\left(\begin{smallmatrix}4&1.5\\-0.5&0\end{smallmatrix}\right)$. At equilibrium the fluctuation–dissipation relation
 $$
@@ -252,10 +252,10 @@ was checked for a model retarded function at $\beta=2$ and several frequencies; 
 | $G^R=G^{++}-G^{+-}$, $G^A=G^{+-}-G^{--}$ | Retarded and advanced functions |
 | $R=\frac{1}{\sqrt2}\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)\in O(2)$ | Keldysh rotation; $\det R=-1$, $R^2=I_2$ |
 | $\tilde\Phi_{cl},\tilde\Phi_q$ | Classical / quantum components |
-| $\hat{\mathcal G}=\left(\begin{smallmatrix}G^K&G^R\\G^A&0\end{smallmatrix}\right)$ | Rotated Green's-function matrix ($qq$ entry $0$) |
+| $\mathcal G=\left(\begin{smallmatrix}G^K&G^R\\G^A&0\end{smallmatrix}\right)$ | Rotated Green's-function matrix ($qq$ entry $0$) |
 | $A(\omega)=G^R-G^A$ (times $-i$) | Spectral function, $A\ge0$ |
 | $G^K=\coth(\beta\omega/2)(G^R-G^A)$ | Fluctuation–dissipation relation |
-| $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$ | Bose occupation number |
+| $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$ | Bose occupation number |
 | $\beta=\hbar/(k_BT)$ | Inverse temperature (input) |
 
 ## Further Reading

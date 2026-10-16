@@ -65,9 +65,9 @@ These are the axioms of a module over the ring $\mathbb{Z}$, so that an abelian 
 
 **Definition.** An abelian group $F$ is **free abelian** with **basis** $B \subseteq F$ if every element of $F$ is a unique finite integer combination of elements of $B$. Equivalently, $F = \bigoplus_{b \in B} \mathbb{Z} b$ with $\mathbb{Z} b \cong \mathbb{Z}$. A free abelian group of finite basis cardinality $n$ is written $\mathbb{Z}^n$.
 
-**Theorem (universal property).** Let $B$ be a set. There is a free abelian group $F(B)$ with basis $B$ such that for every abelian group $A$ and every function $f : B \to A$ there is a unique homomorphism $\tilde f : F(B) \to A$ extending $f$.
+**Theorem (universal property).** Let $B$ be a set. There is a free abelian group $F(B)$ with basis $B$ such that for every abelian group $A$ and every function $f : B \to A$ there is a unique homomorphism $f^{\mathrm{ind}} : F(B) \to A$ extending $f$.
 
-**Proof.** Take $F(B) = \bigoplus_{b \in B} \mathbb{Z}$ and let $B$ be the set of standard basis elements. Every element is a finite sum $\sum_b n_b b$, and the assignment $\tilde f(\sum_b n_b b) = \sum_b n_b f(b)$ is a homomorphism, unique because it is determined on the generators.
+**Proof.** Take $F(B) = \bigoplus_{b \in B} \mathbb{Z}$ and let $B$ be the set of standard basis elements. Every element is a finite sum $\sum_b n_b b$, and the assignment $f^{\mathrm{ind}}(\sum_b n_b b) = \sum_b n_b f(b)$ is a homomorphism, unique because it is determined on the generators.
 
 This is the universal arrow from a set to the forgetful functor, in the sense of *Universal Properties and Categories*, and it is the model of the free construction whose group-theoretic form is the free group. The free abelian group on $B$ is the abelianisation of the free group on $B$.
 

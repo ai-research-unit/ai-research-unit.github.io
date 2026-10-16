@@ -112,20 +112,20 @@ Since the centre is central and the four subspaces are the fixed spaces of invol
 | $\mathbb{M}_-, \mathbb{M}_-$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 | $\mathbb{M}_+, \mathbb{M}_-$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_-$ | $\mathrm{span}\{je_1,je_2,je_3\}$ |
 
-The entries are read off the expansions of the product. For $\tilde{Q} = q_0 e_0 + j\vec u$ and $\tilde{R} = r_0 e_0 + j\vec v$ in $\mathbb{M}_+$,
+The entries are read off the expansions of the product. For $\tilde{Q} = q_0 e_0 + j\vec q$ and $\tilde{R} = r_0 e_0 + j\vec v$ in $\mathbb{M}_+$,
 
 $$
-\tilde{Q}\tilde{R} = q_0 r_0 - \vec u\cdot\vec v + \vec u\times\vec v + j(q_0\vec v+r_0\vec u),
+\tilde{Q}\tilde{R} = q_0 r_0 - \vec q\cdot\vec v + \vec q\times\vec v + j(q_0\vec v+r_0\vec q),
 $$
 
-which has real scalar part, real vector part $\vec u\times\vec v$ and split-imaginary vector part $j(q_0\vec v+r_0\vec u)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec u\times\vec v$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec u\times\vec v$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
+which has real scalar part, real vector part $\vec q\times\vec v$ and split-imaginary vector part $j(q_0\vec v+r_0\vec q)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec q\times\vec v$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec q\times\vec v$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
 
 ### The Reduction from Remarkable Subspaces to Four
 
 In $\mathbb{B}$ the fixed spaces of ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ are complemented by naming the two **anti-fixed** spaces of ${}^{\natural}$ and $\bar{\cdot}$, namely $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$, which gives remarkable subspaces. In $\mathbb{H}_{\mathbb{D}}$ only four are named. The reason is the sign in the central square:
 
 - $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ is the six-dimensional complement of the centre in the scalar–vector split; it is treated inside the algebra article rather than as a subspace of its own, because it is larger than the other members and is not a fixed space of any of the four involutions.
-- $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the split-biquaternion norm, $N(j\tilde{Q}) = j^2 N(\tilde{Q}) = N(\tilde{Q})$, so $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the split-biquaternion norm, $N(i\tilde{Q}) = i^2 N(\tilde{Q}) = -N(\tilde{Q})$, so the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is negative definite and is genuinely distinct from $\mathbb{H}_{\mathbb{B}}$.
+- $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the split-biquaternion norm, $\langle j\tilde{Q}\rangle_{\natural} = j^2 \langle\tilde{Q}\rangle_{\natural}$, so $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is isometric to $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the split-biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = i^2 \langle\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is negative definite and is genuinely distinct from $\mathbb{H}_{\mathbb{B}}$.
 
 The four named subspaces are therefore the four fixed spaces of the four involutions, and the two anti-fixed spaces are omitted: one because it is a degenerate six-dimensional object, the other because it is isometric to a named subspace.
 
@@ -163,7 +163,7 @@ The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on
 
 ### The Analysis
 
-The quaternion subspace carries the elliptic quaternion analysis of *Quaternion Analysis* and the centre the hyperbolic split complex analysis of *Split Complex Analysis*; the two Hermitian sectors are not subalgebras and carry only the restricted ambient analysis, governed respectively by a wave operator of signature $(1,3)$ and $(3,1)$. The distinction follows the sign of the restricted Hermitian form: elliptic where that form is definite, hyperbolic where it is Lorentzian.
+The quaternion subspace carries the elliptic quaternion analysis of *Quaternion Analysis* and the centre the hyperbolic split complex analysis of *Split-Complex Analysis*; the two Hermitian sectors are not subalgebras and carry only the restricted ambient analysis, governed respectively by a wave operator of signature $(1,3)$ and $(3,1)$. The distinction follows the sign of the restricted Hermitian form: elliptic where that form is definite, hyperbolic where it is Lorentzian.
 
 ### The Geometry
 

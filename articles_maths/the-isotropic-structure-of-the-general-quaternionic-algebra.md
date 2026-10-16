@@ -11,9 +11,9 @@ $$
 
 has for its null set the zero-divisor cone of the algebra. This article develops the cone: its two families of maximal totally isotropic planes, the minimal ideals it carries, and its identification with the zero-divisor set of the algebra. The topology of the cone and the realified invariants are not developed here; the pointers are in the last paragraph of this introduction.
 
-The form itself, its polarisation and its quadratic space are *Norm and Invertibility in the General Quaternionic Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*; the classification of the isotropic elements is *Zero Divisors of the General Plain Algebra*; the projective picture of the cone, the quadric surface, the Klein quadric and the Plücker embedding are *The Null Quadric and Its Projective Geometry*; and the invertibility criterion that makes the cone the boundary of the group of units is *Norm and Invertibility in the General Quaternionic Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
+The form itself, its polarisation and its quadratic space are *Norm and Invertibility in the General Quaternionic Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra*; the classification of the isotropic elements is *Zero Divisors of the Biquaternion Algebra*; the projective picture of the cone, the quadric surface, the Klein quadric and the Plücker embedding are *The Null Quadric and Its Projective Geometry*; and the invertibility criterion that makes the cone the boundary of the group of units is *Norm and Invertibility in the General Quaternionic Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.
 
 ## The Null Cone
 
@@ -27,7 +27,7 @@ The cone is the zero set of the polynomial $f=\sum_\mu Q_\mu^2$, homogeneous of 
 
 **Proposition (the cone is the zero-divisor set).** The cone is exactly the zero-divisor set: an element is a unit precisely when its norm is nonzero, so a nonzero null element is a zero divisor, and the algebra is a division algebra off the cone.
 
-*Proof.* The criterion for invertibility is $N(\tilde Q)\neq0$, which is the statement that the form does not vanish at the two equal arguments. Hence the nonzero null elements are exactly the nonzero non-units, and the classification of the two families of zero divisors is by their purity.
+*Proof.* The criterion for invertibility is $\langle\tilde Q\rangle_{\natural}\neq0$, which is the statement that the form does not vanish at the two equal arguments. Hence the nonzero null elements are exactly the nonzero non-units, and the classification of the two families of zero divisors is by their purity.
 
 The projective geometry of the cone is *The Null Quadric and Its Projective Geometry*.
 
@@ -48,7 +48,7 @@ are totally isotropic, one from each family; through each non-singular point of 
 
 **Corollary (the maximal totally isotropic dimension of the realified form).** The realified form of signature $(4,4)$ has maximal totally isotropic real dimension $4$.
 
-*Proof.* The bound is the smaller of the two inertia indices of the signature $(4,4)$, which is $4$, and the realification of one of the complex planes above is a real totally isotropic $4$-space attaining it. The index, the defect and the full signature of the realified form, and their values on the remarkable subspaces, are *The Realification of the Four Forms* and *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
+*Proof.* The bound is the smaller of the two inertia indices of the signature $(4,4)$, which is $4$, and the realification of one of the complex planes above is a real totally isotropic $4$-space attaining it. The index, the defect and the full signature of the realified form, and their values on the remarkable subspaces, are *The Realification of the Four Forms* and *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 ## The Minimal Ideals and the Hyperbolic Peirce Basis
 
@@ -64,7 +64,7 @@ $$
 
 so the left ideal $\mathbb{B}\tilde Q$ is totally isotropic; it has complex dimension $2$, and a totally isotropic subspace of the four-dimensional complex algebra has complex dimension at most $2$, since the form is non-degenerate of Witt index $2$. So $\mathbb{B}\tilde Q$ is maximal, and conversely a maximal totally isotropic left ideal is generated by a null element and is minimal. The right-handed statements are the mirror.
 
-The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi,\hat\Upsilon_1,f,\hat\Upsilon_2$ of *Ideals and Peirce Decomposition of the General Plain Algebra*, where $\tilde\Pi=\tfrac12(e_0+ie_1)$, $f=e_0-\tilde\Pi$, $\hat\Upsilon_1=e_3+ie_2$ and $\hat\Upsilon_2=e_3-ie_2$, the Gram matrix of the form is
+The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi,\vec\Upsilon_1,f,\vec\Upsilon_2$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, where $\tilde\Pi=\tfrac12(e_0+ie_1)$, $f=e_0-\tilde\Pi$, $\vec\Upsilon_1=e_3+ie_2$ and $\vec\Upsilon_2=e_3-ie_2$, the Gram matrix of the form is
 
 $$
 \begin{pmatrix}
@@ -75,15 +75,15 @@ $$
 \end{pmatrix},
 $$
 
-an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\hat\Upsilon_1$ with the nilpotent line $\mathbb{C}\hat\Upsilon_2$. The two minimal left ideals $\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\hat\Upsilon_1$ and $\mathbb{B}f=\mathbb{C}f\oplus\mathbb{C}\hat\Upsilon_2$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\hat\Upsilon_2$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal, since it mixes the two.
+an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\vec\Upsilon_1$ with the nilpotent line $\mathbb{C}\vec\Upsilon_2$. The two minimal left ideals $\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_1$ and $\mathbb{B}f=\mathbb{C}f\oplus\mathbb{C}\vec\Upsilon_2$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\vec\Upsilon_2$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal, since it mixes the two.
 
-**Corollary (the isotropic lines of the remarkable subspaces).** Since the null elements of the form are exactly the zero divisors, its isotropic lines inside the remarkable subspaces are their zero-divisor lines, tabulated in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, §*The Isotropic Lines of the Indefinite Restrictions*; no isotropic subspace beyond a line lies inside a single one of the remarkable subspaces, since each restriction is non-degenerate.
+**Corollary (the isotropic lines of the remarkable subspaces).** Since the null elements of the form are exactly the zero divisors, its isotropic lines inside the remarkable subspaces are their zero-divisor lines, tabulated in *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Isotropic Lines of the Indefinite Restrictions*; no isotropic subspace beyond a line lies inside a single one of the remarkable subspaces, since each restriction is non-degenerate.
 
 ## Worked Examples
 
 **A null vector of the vector subspace.** For $\tilde Q=e_1+ie_2$ the norm is $1+i^{2}=0$, so the element lies on the cone and is a zero divisor; it is one of the isotropic directions of the vector subspace, a point of the conic $\sum_kQ_k^{2}=0$.
 
-**A non-pure null element.** For $\tilde Q=e_0+ie_1$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *Zero Divisors of the General Plain Algebra*.
+**A non-pure null element.** For $\tilde Q=e_0+ie_1$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *Zero Divisors of the Biquaternion Algebra*.
 
 **A point of each family.** On the complex generators displayed, $\langle e_0+ie_1,e_2+ie_3\rangle_{\natural}=0$ and $\langle e_0+ie_1,e_2-ie_3\rangle_{\natural}=0$, so the line $\mathbb{C}(e_0+ie_1)$ lies in one plane of each family; the two planes $W_+$ and $W_-$ meet along it, as the proposition records.
 
@@ -91,7 +91,7 @@ an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the fo
 
 ## Summary
 
-The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$, the zero-divisor cone of the algebra, of complex dimension $3$ and real dimension $6$, non-singular off the apex, which is its only singular point. It is ruled by two families of maximal totally isotropic planes, of complex dimension $2$, and the maximal totally isotropic dimension is $2$ over $\mathbb{C}$ and $4$ over the realified form of signature $(4,4)$. The realified form has index $4$ and trivial defect (*The Realification of the Four Forms*). The cone is exactly the zero-divisor set: a nonzero null element is a zero divisor, and the algebra is a division algebra off the cone. The restrictions of the form to the remarkable subspaces, and the comparison of this cone with the null cones of the three sibling forms, belong to *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and to the synthesis of the four forms.
+The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$, the zero-divisor cone of the algebra, of complex dimension $3$ and real dimension $6$, non-singular off the apex, which is its only singular point. It is ruled by two families of maximal totally isotropic planes, of complex dimension $2$, and the maximal totally isotropic dimension is $2$ over $\mathbb{C}$ and $4$ over the realified form of signature $(4,4)$. The realified form has index $4$ and trivial defect (*The Realification of the Four Forms*). The cone is exactly the zero-divisor set: a nonzero null element is a zero divisor, and the algebra is a division algebra off the cone. The restrictions of the form to the remarkable subspaces, and the comparison of this cone with the null cones of the three sibling forms, belong to *Remarkable Subspaces under the General Quaternionic Algebra* and to the synthesis of the four forms.
 
 ## Summary of Notation
 
@@ -105,9 +105,9 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the classification of the isotropic elements
-- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
-- *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the realified null cones of the four forms and the comparison of the cones
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the classification of the isotropic elements
+- *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
+- *The Realification of the Eight Derived Structures* (`articles_maths/the-realification-of-the-eight-derived-structures.md`), for the realified null cones of the four forms and the comparison of the cones
 - *The Null Quadric and Its Projective Geometry* (`articles_maths/the-null-quadric-and-its-projective-geometry.md`), for the null quadric and the rulings
 - *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the link of the cone

@@ -38,7 +38,7 @@ $$
 
 and the inner product is then unique and given by the polarisation identity.
 
-*Proof.* Expanding the squares shows that an inner-product norm satisfies the law; conversely, defining the form by polarisation, the parallelogram law is precisely what is needed for additivity in each argument, and the remaining axioms follow. The norm of $\ell^p$ for $p\neq2$ and of $C(K)$ for $K$ with more than one point fails the law, so those spaces are not Hilbert spaces for their given norms.
+*Proof.* Expanding the squares shows that an inner-product norm satisfies the law; conversely, defining the form by polarisation, the parallelogram law is precisely what is needed for additivity in each argument, and the remaining axioms follow. The norm of $\ell^{n}$ for $p\neq2$ and of $C(K)$ for $K$ with more than one point fails the law, so those spaces are not Hilbert spaces for their given norms.
 
 ## Completeness and the Projection Theorem
 

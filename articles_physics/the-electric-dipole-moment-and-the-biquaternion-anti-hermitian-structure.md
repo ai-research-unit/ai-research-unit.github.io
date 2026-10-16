@@ -28,7 +28,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\quad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon^{0123}=+1$; indices are raised and lowered with $g$, so that $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
+with $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, and $\sigma^{\mu\nu}=\tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$. The field strength is $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$, and $\epsilon^{0123}=+1$, with the metric form $\sigma_{\rho\sigma}=g_{\rho\mu}g_{\sigma\nu}\sigma^{\mu\nu}$. The mass terms are the linear Dirac pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ (not a conjugation), and the antilinear real structure $\flat=-{}^{*}$ is a separate object. Natural units $\hbar=c=1$ are used, and the EDM unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 
 The framework results used here are those of the companion articles:
 
@@ -169,11 +169,11 @@ The EDM sits in the antisymmetric tensor with the axial insertion, and the patte
 
 ## The Form Factors and the Two Coefficients
 
-**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $q$, is
+**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p'-p$, is
 
 $$
-\Gamma^\mu(p',p) = \gamma^\mu F_1(q^2) + \frac{i}{2m}\,\sigma^{\mu\nu}q_\nu\,F_2(q^2)
-+ \frac{i}{2m}\,\sigma^{\mu\nu}q_\nu\gamma_5\,F_3(q^2) + \cdots ,
+\Gamma^\mu(p',p) = \gamma^\mu F_1(k^2) + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\,F_2(k^2)
++ \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\gamma_5\,F_3(k^2) + \cdots ,
 $$
 
 with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,
@@ -268,7 +268,7 @@ $$
 
 verified for all pairs $(\mu,\nu)$ with residual exactly zero, and the $i$ of the duality exchanges Hermiticity between the pair. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian and is the algebra's marker of the CP-odd coefficient.
 
-The form-factor decomposition $\Gamma^\mu=\gamma^\mu F_1+\tfrac{i}{2m}\sigma^{\mu\nu}q_\nu F_2+\tfrac{i}{2m}\sigma^{\mu\nu}q_\nu\gamma_5F_3+\cdots$ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, and the framework places them in the informational and material sectors. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term's constraint ($|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$). The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d\sim e\,m_e\sin\varphi/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
+The form-factor decomposition $\Gamma^\mu=\gamma^\mu F_1+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu F_2+\tfrac{i}{2m}\sigma^{\mu\nu}k_\nu\gamma_5F_3+\cdots$ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, and the framework places them in the informational and material sectors. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term's constraint ($|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$). The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d\sim e\,m_e\sin\varphi/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
 
 ## Summary of Notation
 

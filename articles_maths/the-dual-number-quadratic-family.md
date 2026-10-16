@@ -22,7 +22,7 @@ The article is the $\mathbb{D}'$ instance of the quadratic family. The algebra, 
 
 ### The Coordinates
 
-**Definition.** The **dual numbers** are $\mathbb{D}' = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is a unit exactly when $x \neq 0$. The **norm** is $N(z) = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
+**Definition.** The **dual numbers** are $\mathbb{D}' = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is a unit exactly when $x \neq 0$. The **norm** is $\langle z\rangle = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
 
 **Theorem (the triangular form).** With $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$,
 
@@ -68,7 +68,7 @@ $$
 M_{\mathbb{D}'} = \{c \in \mathbb{D}' : \text{the orbit of the critical point } 0 \text{ is bounded}\} .
 $$
 
-**Theorem (the escape is read on the real part).** The norm is $N(z) = x^2$, so the norm-escape of $z$ is exactly the escape of its real part; the real part of the orbit is the orbit of $x$ under $g_\gamma$, and the orbit is bounded in the Euclidean metric if and only if both the real orbit $(g_\gamma^n(x))$ and the sequence
+**Theorem (the escape is read on the real part).** The norm is $\langle z\rangle = x^2$, so the norm-escape of $z$ is exactly the escape of its real part; the real part of the orbit is the orbit of $x$ under $g_\gamma$, and the orbit is bounded in the Euclidean metric if and only if both the real orbit $(g_\gamma^n(x))$ and the sequence
 
 $$
 y_n = \delta\,P_n(\gamma), \qquad P_0 = 0, \quad P_{n+1} = 2g_\gamma^n(0)\,P_n + 1 ,
@@ -76,7 +76,7 @@ $$
 
 are bounded; for the critical orbit, $x_0 = 0$ and the real orbit is $(g_\gamma^n(0))$.
 
-**Proof.** $N(z) = (x+\varepsilon y)(x-\varepsilon y) = x^2$, and the real part recursion is $x_{n+1} = x_n^2+\gamma$. For the infinitesimal part, $y_{n+1} = 2x_n y_n+\delta$ with $x_n = g_\gamma^n(x_0)$; for $y_0 = 0$ the solution is the displayed affine combination, since $y_n$ is linear in $\delta$ with the homogeneous part built from the derivatives $2x_n$.
+**Proof.** $\langle z\rangle = (x+\varepsilon y)(x-\varepsilon y) = x^2$, and the real part recursion is $x_{n+1} = x_n^2+\gamma$. For the infinitesimal part, $y_{n+1} = 2x_n y_n+\delta$ with $x_n = g_\gamma^n(x_0)$; for $y_0 = 0$ the solution is the displayed affine combination, since $y_n$ is linear in $\delta$ with the homogeneous part built from the derivatives $2x_n$.
 
 **Theorem (the projection of the connectedness locus).** The projection $\pi(M_{\mathbb{D}'}) \subseteq \mathbb{R}$ is the real Mandelbrot interval $[-2,\tfrac14]$, and the fibre over $\gamma \in [-2,\tfrac14]$ is
 
@@ -98,7 +98,7 @@ so the connectedness locus is the real interval in $\gamma$ with the fibre eithe
 
 ## Summary
 
-The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$ it is $f_c(z) = (x^2+\gamma)+\varepsilon(2xy+\delta)$, so the real part is the real quadratic map $x \mapsto x^2+\gamma$ and the infinitesimal part is the affine map $y \mapsto 2xy+\delta$, whose coefficient is the derivative of the real map. The derivative of $f_c$ is the multiplication by $2z$, a unit exactly off the ideal $\mathbb{R}\varepsilon$; the critical locus is therefore the whole ideal of the nilpotents, and every critical point has the image $c$, so the critical value is the single parameter $c$. The norm is $N(z) = x^2$, so the escape is the escape of the real part; the connectedness locus projects onto the real Mandelbrot interval $[-2,\tfrac14]$, and its fibre over $\gamma$ is $\mathbb{R}$ when the derivative cocycle is summable and the single point $0$ when it is not. The hyperbolic parameters give the whole line; the Chebyshev parameter $-2$ and the parabolic parameter $\tfrac14$ give the single point, and at those parameters a nonzero $\delta$ escapes. The algebra, the norm and the units are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the real quadratic family that the base dynamics repeats is that of *The Mandelbrot Set and the Quadratic Family*; and the infinitesimal coordinate, the derivative cocycle, is the subject of *The Infinitesimal Dynamics of the Dual Numbers*.
+The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$ it is $f_c(z) = (x^2+\gamma)+\varepsilon(2xy+\delta)$, so the real part is the real quadratic map $x \mapsto x^2+\gamma$ and the infinitesimal part is the affine map $y \mapsto 2xy+\delta$, whose coefficient is the derivative of the real map. The derivative of $f_c$ is the multiplication by $2z$, a unit exactly off the ideal $\mathbb{R}\varepsilon$; the critical locus is therefore the whole ideal of the nilpotents, and every critical point has the image $c$, so the critical value is the single parameter $c$. The norm is $\langle z\rangle = x^2$, so the escape is the escape of the real part; the connectedness locus projects onto the real Mandelbrot interval $[-2,\tfrac14]$, and its fibre over $\gamma$ is $\mathbb{R}$ when the derivative cocycle is summable and the single point $0$ when it is not. The hyperbolic parameters give the whole line; the Chebyshev parameter $-2$ and the parabolic parameter $\tfrac14$ give the single point, and at those parameters a nonzero $\delta$ escapes. The algebra, the norm and the units are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the real quadratic family that the base dynamics repeats is that of *The Mandelbrot Set and the Quadratic Family*; and the infinitesimal coordinate, the derivative cocycle, is the subject of *The Infinitesimal Dynamics of the Dual Numbers*.
 
 ## Summary of Notation
 
@@ -106,7 +106,7 @@ The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\va
 |---|---|
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]$, $\varepsilon^2=0$ | Dual numbers |
 | $z = x+\varepsilon y$ | Element, with real part $x$ and infinitesimal part $y$ |
-| $\bar z = x-\varepsilon y$, $N(z) = x^2$ | Conjugation and norm |
+| $\bar z = x-\varepsilon y$, $\langle z\rangle = x^2$ | Conjugation and norm |
 | $f_c(z) = z^2+c$ | The dual quadratic family |
 | $g_\gamma(x) = x^2+\gamma$ | The real quadratic map of the real part |
 | $\mathbb{R}\varepsilon$ | The ideal of the nilpotents, the critical locus |

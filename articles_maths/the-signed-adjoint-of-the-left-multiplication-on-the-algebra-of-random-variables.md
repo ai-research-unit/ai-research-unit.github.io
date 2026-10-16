@@ -100,11 +100,11 @@ Abelian, and the self-adjoint unitary members are the unimodular $\alpha$-Hermit
 
 **Example (the two-atom swap).** For $\Omega=\{\omega_-,\omega_+\}$ with the uniform probability and $\alpha(x_-,x_+)=(x_+,x_-)$, the signed left multiplication by $a=(a_-,a_+)$ is $T^\alpha_a(x_-,x_+)=(a_-x_+,a_+x_-)$; its adjoint has the parameter $\delta(a)=(\bar a_+,\bar a_-)$ and acts by $(x_-,x_+)\mapsto(\bar a_+x_+,\bar a_-x_-)$, which is the direct adjoint of the coordinate action; the operator is self-adjoint exactly when $a_-=a_+$, that is when $a$ is even.
 
-**Example (the circle phase).** On $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\alpha(x)(\theta)=x(-\theta)$, the parameter $a(\theta)=e^{2\pi i\theta}$ satisfies $\alpha(a)(\theta)=e^{-2\pi i\theta}=a(\theta)^*$, so $a$ is $\alpha$-Hermitian, $\delta(a)=a$, and $T^\alpha_a$ is self-adjoint and unitary; it is the operator $x(\theta)\mapsto e^{2\pi i\theta}x(-\theta)$, an involution of the circle.
+**Example (the circle phase).** On $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\alpha(x)(\theta)=x(-\theta)$, the parameter $a(\theta)=\exp(2\pi i\theta)$ satisfies $\alpha(a)(\theta)=\exp(-2\pi i\theta)=a(\theta)^*$, so $a$ is $\alpha$-Hermitian, $\delta(a)=a$, and $T^\alpha_a$ is self-adjoint and unitary; it is the operator $x(\theta)\mapsto \exp(2\pi i\theta)x(-\theta)$, an involution of the circle.
 
 **Example (the trivial grading).** For $\alpha=\mathrm{id}$ the signed left multiplication is the ordinary one, the closed form is $L_a^*=L_{a^*}$, self-adjointness is $a$ real and unitarity is $|a|=1$; this is the boundary at which the signed adjoint is the ordinary adjoint of *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category.
 
-**Example (the non-self-adjoint phase).** For the parameter $a(\theta)=e^{2\pi i\theta}$ with the **trivial** grading the operator $L_a$ is unitary but not self-adjoint; with the reflection grading it is self-adjoint. The example shows that the same operator can be self-adjoint or not according as the grading is present, the adjoint being computed with respect to the same form.
+**Example (the non-self-adjoint phase).** For the parameter $a(\theta)=\exp(2\pi i\theta)$ with the **trivial** grading the operator $L_a$ is unitary but not self-adjoint; with the reflection grading it is self-adjoint. The example shows that the same operator can be self-adjoint or not according as the grading is present, the adjoint being computed with respect to the same form.
 
 ## Failure of the Degenerate Cases
 

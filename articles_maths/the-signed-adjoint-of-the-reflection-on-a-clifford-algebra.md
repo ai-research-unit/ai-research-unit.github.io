@@ -17,7 +17,7 @@ $$
 
 and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **every reflection is self-adjoint**. The article proves this, generalises it to the criterion that a reflection-shaped sandwich is self-adjoint exactly when $\alpha(a)a$ is central, exhibits the failure of self-adjointness by an explicit non-central element, and reads the $\pm1$-eigenspace decomposition of a reflection as the spectral decomposition of a self-adjoint involution.
 
-**The boundaries.** The reflection-shaped signed sandwich, the reflection condition and its failure for a degenerate form are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the geometric reflection formula $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$, the composition law and the reflection correspondence are *The Signed Sandwich on a Clifford Algebra* and *One-Sided Operators with the Signed Product*; the adjoint of the general signed sandwich and the isometry criterion are *The Signed Adjoint Sandwich on a Clifford Algebra*; the Clifford conjugation and the standard form are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the group generated and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The analytic spectral theory of a self-adjoint operator belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
+**The boundaries.** The reflection-shaped signed sandwich, the reflection condition and its failure for a degenerate form are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the geometric reflection formula $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$, the composition law and the reflection correspondence are *The Signed Sandwich on a Clifford Algebra* and *One-Sided Operators with the Signed Product*; the adjoint of the general signed sandwich and the isometry criterion are *The Signed Adjoint Sandwich on a Clifford Algebra*; the Clifford conjugation and the standard form are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the group generated and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The analytic spectral theory of a self-adjoint operator belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
 
 ## The Adjoint of a Reflection
 
@@ -65,7 +65,7 @@ $$
 \Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a} ,
 $$
 
-which is the zero operator when $a\alpha(a)=0$. For an isotropic vector $u$, $q(u)=0$ and $u^2=0$, the operator $\Sigma^{\alpha}_{u,u}$ is square-zero, a degenerate limiting case of a reflection and not a reflection; the self-adjointness question does not arise because the reflection itself is not defined.
+which is the zero operator when $a\alpha(a)=0$. For an isotropic vector $u$, $\mathfrak{Q}(u)=0$ and $u^2=0$, the operator $\Sigma^{\alpha}_{u,u}$ is square-zero, a degenerate limiting case of a reflection and not a reflection; the self-adjointness question does not arise because the reflection itself is not defined.
 
 ## The Eigenspace Decomposition
 
@@ -81,13 +81,13 @@ for a self-adjoint reflection the decomposition is orthogonal for the standard f
 
 **Corollary.** The fixed part of the grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is the even part and the anti-fixed part the odd part; the fixed part of a general reflection is $\{x : \alpha(x)=a^{-1}xa\}$; and on the quadratic space the reflection $\rho_u$ restricts to the fixed hyperplane $u^{\perp}$ and the anti-fixed line $Fu$, its two eigenspaces.
 
-**Proof.** The statement for $\alpha$ is the definition of the grading; the fixed part is read from $a\alpha(x)a^{-1}=x$; and on $V$ the reflection formula $\rho_u(v)=v-2B(u,v)u/q(u)$ gives $\rho_u(u)=-u$ and $\rho_u(v)=v$ for $B(u,v)=0$.
+**Proof.** The statement for $\alpha$ is the definition of the grading; the fixed part is read from $a\alpha(x)a^{-1}=x$; and on $V$ the reflection formula $\rho_u(v)=v-2B(u,v)u/\mathfrak{Q}(u)$ gives $\rho_u(u)=-u$ and $\rho_u(v)=v$ for $B(u,v)=0$.
 
 ## Worked Cases
 
 ### The Negative-Definite Plane
 
-For the plane with $e_1^2=e_2^2=-1$ and $q(e_1)=-1$, the reflection condition for $a=e_1$ reads $e_1\alpha(e_1)=e_1(-e_1)=-e_1^2=1$, so $\Sigma^{\alpha}_{e_1,e_1^{-1}}$ is a reflection; its adjoint is itself by the theorem, and on the plane it is the reflection in the line $e_2$ with $\rho(e_1)=-e_1$, $\rho(e_2)=e_2$.
+For the plane with $e_1^2=e_2^2=-1$ and $\mathfrak{Q}(e_1)=-1$, the reflection condition for $a=e_1$ reads $e_1\alpha(e_1)=e_1(-e_1)=-e_1^2=1$, so $\Sigma^{\alpha}_{e_1,e_1^{-1}}$ is a reflection; its adjoint is itself by the theorem, and on the plane it is the reflection in the line $e_2$ with $\rho(e_1)=-e_1$, $\rho(e_2)=e_2$.
 
 ### The Quaternions
 

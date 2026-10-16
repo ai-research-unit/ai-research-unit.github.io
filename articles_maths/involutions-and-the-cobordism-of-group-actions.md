@@ -103,7 +103,7 @@ Two involutions of closed manifolds are equivariantly cobordant when they bound 
 
 ## Further Reading
 
-- Pierre E. Conner and Edwin E. Floyd, *Differentiable Periodic Maps* (Springer, 1964), for the equivariant bordism rings, the Conner–Floyd classes and the structure theorems for $\mathbb{Z}/p$ actions.
+- Pierre E. Conner and Edwin E. Floyd, *Differentiable Periodic Maps* (Springer, 1964), for the equivariant bordism rings, the Conner–Floyd classes and the structure theorems for $\mathbb{Z}/n$ actions.
 - Pierre E. Conner, *Differentiable Periodic Maps*, second edition (Springer Lecture Notes 738, 1979), for the systematic theory and the Smith homomorphisms.
 - Tammo tom Dieck, "Bordism of $G$-Manifolds and Integrality Theorems", *Topology* 9 (1970), 345–358, for the splitting of the equivariant bordism and the integrality.
 - Tammo tom Dieck, *Transformation Groups and Representation Theory* (Springer Lecture Notes 766, 1979), for the equivariant homotopy, the Thom spectra and the bordism.

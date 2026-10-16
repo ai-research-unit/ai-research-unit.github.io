@@ -23,7 +23,7 @@ $$
 
 These are the basic facts of the normed theory; they are proved in the companion article *Normed and Banach Spaces*, which also proves the cornerstones resting on completeness and Baire category: the Hahn–Banach extension theorem, the open mapping theorem, the closed graph theorem and the uniform boundedness principle. This article uses them where the Hilbert-space theory needs them, namely in the construction of orthonormal bases and in the Riesz theorem, and does not re-prove them.
 
-**Example.** For $1 \le p < \infty$, the space $\ell^p$ of sequences $x=(x_1,x_2,\dots)$ with $\sum_i|x_i|^p<\infty$ is a Banach space under $\|x\|_p=(\sum_i|x_i|^p)^{1/p}$. The space $\ell^\infty$ of bounded sequences is a Banach space under $\|x\|_\infty=\sup_i|x_i|$. The space $C(K)$ of continuous functions on a compact Hausdorff space $K$ is a Banach space under the supremum norm. The space $L^p(\mu)$ of $p$-integrable functions modulo null functions is a Banach space under $\|f\|_p=(\int|f|^p\,d\mu)^{1/p}$.
+**Example.** For $1 \le p < \infty$, the space $\ell^{n}$ of sequences $x=(x_1,x_2,\dots)$ with $\sum_i|x_i|^p<\infty$ is a Banach space under $\|x\|_p=(\sum_i|x_i|^p)^{1/p}$. The space $\ell^\infty$ of bounded sequences is a Banach space under $\|x\|_\infty=\sup_i|x_i|$. The space $C(K)$ of continuous functions on a compact Hausdorff space $K$ is a Banach space under the supremum norm. The space $L^{n}(\mu)$ of $p$-integrable functions modulo null functions is a Banach space under $\|f\|_p=(\int|f|^p\,d\mu)^{1/p}$.
 
 ## Inner Product Spaces
 
@@ -75,7 +75,7 @@ $$
 
 *Proof.* Necessity is the proposition. For sufficiency, define $\langle x,y\rangle$ by the polarisation identity and verify additivity and homogeneity; the parallelogram law is exactly the identity needed to prove $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$, and the remaining properties follow from the norm axioms.
 
-The parallelogram law therefore characterises the inner-product norms among all norms, and this is the source of many non-Hilbert Banach spaces: $\ell^p$ for $p \neq 2$ and $C(K)$ for $K$ with more than one point fail the law, so they carry no inner product inducing their norms.
+The parallelogram law therefore characterises the inner-product norms among all norms, and this is the source of many non-Hilbert Banach spaces: $\ell^{n}$ for $p \neq 2$ and $C(K)$ for $K$ with more than one point fail the law, so they carry no inner product inducing their norms.
 
 ## Hilbert Spaces
 
@@ -266,7 +266,7 @@ The adjoint of a bounded operator is characterised by $\langle Tx,y\rangle=\lang
 | $L^2(\mu)$, $\ell^2$ | standard Hilbert spaces |
 | $K$ | compact operator |
 | $\lambda_n$, $e_n$ | eigenvalues and eigenvectors of a compact self-adjoint operator |
-| $C(K)$, $\ell^p$, $L^p$ | Banach spaces that are not Hilbert spaces for $p \neq 2$ |
+| $C(K)$, $\ell^{n}$, $L^{n}$ | Banach spaces that are not Hilbert spaces for $p \neq 2$ |
 
 ## Further Reading
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The Banach spaces that arise in analysis rarely occur alone: the spaces $L^p$ form a one-parameter family, the Sobolev spaces $W^{k,p}$ a two-parameter family, and the analytic properties of an operator are usually known at the two ends of such a family and wanted in the middle. Interpolation theory answers the question that this situation poses. Given two Banach spaces $A_0$ and $A_1$ sitting inside a common ambient space, it constructs the spaces that lie *between* them, and it shows that a linear map bounded on the two endpoints is automatically bounded on every constructed space, with a norm controlled by the two endpoint norms. The construction is a *functor*: it acts on the spaces and on the maps at once.
+The Banach spaces that arise in analysis rarely occur alone: the spaces $L^{n}$ form a one-parameter family, the Sobolev spaces $W^{k,n}$ a two-parameter family, and the analytic properties of an operator are usually known at the two ends of such a family and wanted in the middle. Interpolation theory answers the question that this situation poses. Given two Banach spaces $A_0$ and $A_1$ sitting inside a common ambient space, it constructs the spaces that lie *between* them, and it shows that a linear map bounded on the two endpoints is automatically bounded on every constructed space, with a norm controlled by the two endpoint norms. The construction is a *functor*: it acts on the spaces and on the maps at once.
 
 Two constructions do the work, and the article is organised around them. The **complex method** embeds $A_0$ and $A_1$ as the two edges of a strip in $\mathbb{C}$ and takes the values of bounded analytic functions at an interior point; it is the source of the Riesz–Thorin theorem and of the interpolation of the Fourier transform. The **real method** measures how well an element of $A_0+A_1$ splits into a sum of an element of $A_0$ and an element of $A_1$, and integrates that measure against a weight; it is the source of the Lorentz spaces and of the interpolation of Sobolev spaces, and it produces a second parameter $q$ that the complex method does not see.
 
@@ -33,7 +33,7 @@ are Banach spaces, and $A_0 \cap A_1 \subseteq A_i \subseteq A_0+A_1$ with conti
 
 **Definition.** An **intermediate space** for $(A_0,A_1)$ is a Banach space $A$ with continuous inclusions $A_0 \cap A_1 \subseteq A \subseteq A_0+A_1$.
 
-**Example.** For $1 \le p \le \infty$ the pair $(L^1(\mu),L^\infty(\mu))$ on a $\sigma$-finite measure space is compatible, both spaces lying in the space of measurable functions; $L^p(\mu)$ is intermediate for every $p$. Likewise $(\ell^1,\ell^\infty)$ is compatible, both spaces lying in the space of all sequences, and $\ell^p$, $c_0$ and the space of finitely supported sequences are intermediate. The pair $(C[0,1],C^1[0,1])$, with the supremum norms of the function and of its derivative, is compatible inside $C[0,1]$.
+**Example.** For $1 \le p \le \infty$ the pair $(L^1(\mu),L^\infty(\mu))$ on a $\sigma$-finite measure space is compatible, both spaces lying in the space of measurable functions; $L^{n}(\mu)$ is intermediate for every $p$. Likewise $(\ell^1,\ell^\infty)$ is compatible, both spaces lying in the space of all sequences, and $\ell^{n}$, $c_0$ and the space of finitely supported sequences are intermediate. The pair $(C[0,1],C^1[0,1])$, with the supremum norms of the function and of its derivative, is compatible inside $C[0,1]$.
 
 ### Interpolation Functors
 
@@ -63,7 +63,7 @@ The inequality is the elementary half of the theory and shows that the interpola
 
 ### Analytic Functions with Values in a Banach Space
 
-**Definition.** Let $A$ be a Banach space and $U \subseteq \mathbb{C}$ open. A function $f:U \to A$ is **analytic** if for every $z \in U$ the limit
+**Definition.** Let $A$ be a Banach space and $\Omega \subseteq \mathbb{C}$ open. A function $f:\Omega \to A$ is **analytic** if for every $z \in \Omega$ the limit
 
 $$
 f'(z)=\lim_{h \to 0}\frac{f(z+h)-f(z)}{h}
@@ -71,13 +71,13 @@ $$
 
 exists in the norm of $A$. Equivalently, $f$ is analytic if it is weakly analytic, that is, if $z \mapsto \varphi(f(z))$ is analytic for every $\varphi \in A^*$; the two notions agree because Cauchy's integral formula for a scalar analytic function may be applied to the bounded functional $\varphi$, and then utilised with a norming functional to recover the norm estimate for $f'$.
 
-**Theorem (maximum modulus).** If $f$ is analytic on $U$ and continuous on $\overline U$ with $U$ bounded, then $\|f\|$ attains its maximum on the boundary $\partial U$; more precisely $\sup_U\|f\|\le\sup_{\partial U}\|f\|$.
+**Theorem (maximum modulus).** If $f$ is analytic on $\Omega$ and continuous on $\overline \Omega$ with $\Omega$ bounded, then $\|f\|$ attains its maximum on the boundary $\partial \Omega$; more precisely $\sup_\Omega\|f\|\le\sup_{\partial \Omega}\|f\|$.
 
-*Proof.* Apply the scalar maximum modulus principle to $z\mapsto\varphi(f(z))$ for each $\varphi \in A^*$ with $\|\varphi\|\le1$; this gives $\|\varphi(f(z))\|\le\sup_{\partial U}\|\varphi(f)\|$, and taking the supremum over such $\varphi$ and using $\|a\|=\sup_{\|\varphi\|\le1}|\varphi(a)|$, which is a corollary of Hahn–Banach in *Normed and Banach Spaces*, gives the result.
+*Proof.* Apply the scalar maximum modulus principle to $z\mapsto\varphi(f(z))$ for each $\varphi \in A^*$ with $\|\varphi\|\le1$; this gives $\|\varphi(f(z))\|\le\sup_{\partial \Omega}\|\varphi(f)\|$, and taking the supremum over such $\varphi$ and using $\|a\|=\sup_{\|\varphi\|\le1}|\varphi(a)|$, which is a corollary of Hahn–Banach in *Normed and Banach Spaces*, gives the result.
 
 **Lemma (three-lines).** Let $S=\{z:0<\operatorname{Re}z<1\}$ and let $f$ be bounded and continuous on $\overline S$ and analytic on $S$. Suppose $\|f(it)\| \le M_0$ and $\|f(1+it)\| \le M_1$ for all real $t$. Then $\|f(\theta)\| \le M_0^{1-\theta}M_1^{\theta}$ for $0<\theta<1$.
 
-*Proof.* For $\varepsilon>0$ set $f_\varepsilon(z)=e^{\varepsilon(z^2-1)}f(z)$ and $g(z)=f_\varepsilon(z)M_0^{z-1}M_1^{-z}$. On the two boundary lines $|f_\varepsilon(z)|\le e^{-\varepsilon t^2}M_i$ and $|M_0^{z-1}M_1^{-z}|=M_i^{-1}$, so $\|g\|\le e^{-\varepsilon t^2}\le1$ there, and $g\to0$ at the horizontal ends of the strip; the maximum modulus principle applied to $z\mapsto\varphi(g(z))$ for $\varphi\in A^*$ therefore gives $\|g(z)\|\le1$ throughout the strip. Hence $\|f(\theta)\|\le M_0^{1-\theta}M_1^{\theta}e^{\varepsilon(1-\theta^2)}$, and letting $\varepsilon\to0$ gives the claim, the interpolation of the two endpoint bounds and not merely the larger of them coming from the exponential factor $M_0^{z-1}M_1^{-z}$.
+*Proof.* For $\varepsilon>0$ set $f_\varepsilon(z)=\exp(\varepsilon(z^2-1))f(z)$ and $g(z)=f_\varepsilon(z)M_0^{z-1}M_1^{-z}$. On the two boundary lines $|f_\varepsilon(z)|\le \exp(-\varepsilon t^2)M_i$ and $|M_0^{z-1}M_1^{-z}|=M_i^{-1}$, so $\|g\|\le \exp(-\varepsilon t^2)\le1$ there, and $g\to0$ at the horizontal ends of the strip; the maximum modulus principle applied to $z\mapsto\varphi(g(z))$ for $\varphi\in A^*$ therefore gives $\|g(z)\|\le1$ throughout the strip. Hence $\|f(\theta)\|\le M_0^{1-\theta}M_1^{\theta}\exp(\varepsilon(1-\theta^2))$, and letting $\varepsilon\to0$ gives the claim, the interpolation of the two endpoint bounds and not merely the larger of them coming from the exponential factor $M_0^{z-1}M_1^{-z}$.
 
 ### The Complex Interpolation Space
 
@@ -103,37 +103,37 @@ $$
 
 ### The Riesz–Thorin Theorem
 
-The first substantial consequence of the complex method is that boundedness at two $L^p$ endpoints propagates to the whole segment.
+The first substantial consequence of the complex method is that boundedness at two $L^{n}$ endpoints propagates to the whole segment.
 
-**Theorem (Riesz–Thorin).** Let $(X,\mu)$ and $(Y,\nu)$ be $\sigma$-finite measure spaces, let $1 \le p_0,p_1,q_0,q_1 \le \infty$, and let $T$ be a linear map bounded from $L^{p_0}(\mu)$ to $L^{q_0}(\nu)$ with norm $M_0$ and from $L^{p_1}(\mu)$ to $L^{q_1}(\nu)$ with norm $M_1$. For $0<\theta<1$ put
+**Theorem (Riesz–Thorin).** Let $(X,\mu)$ and $(Y,\nu)$ be $\sigma$-finite measure spaces, let $1 \le p_0,p_1,q_0,q_1 \le \infty$, and let $T$ be a linear map bounded from $L^{n}_0}(\mu)$ to $L^{m}_0}(\nu)$ with norm $M_0$ and from $L^{n}_1}(\mu)$ to $L^{m}_1}(\nu)$ with norm $M_1$. For $0<\theta<1$ put
 
 $$
 \frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1}, \qquad \frac1q=\frac{1-\theta}{q_0}+\frac{\theta}{q_1}.
 $$
 
-Then $T$ maps $L^p(\mu)$ boundedly to $L^q(\nu)$ with
+Then $T$ maps $L^{n}(\mu)$ boundedly to $L^{m}(\nu)$ with
 
 $$
-\|T\|_{L^p \to L^q} \le M_0^{1-\theta}M_1^{\theta}.
+\|T\|_{L^{n}} \to L^{m} \le M_0^{1-\theta}M_1^{\theta}.
 $$
 
-*Proof (sketch).* The functional $T$ is known on the dense subspace of simple functions. Write $S=\{z:0<\operatorname{Re}z<1\}$ and define, for a simple function $u$ and $z \in \overline S$, the function $G(z)=T\bigl(|u|^{p/p(z)}\operatorname{sgn}u\bigr)$ and pair it against $|v|^{q'/q'(z)}\operatorname{sgn}v$ for a simple $v$, where $1/p(z)=(1-z)/p_0+z/p_1$ and $1/q'(z)=(1-z)/q_0'+z/q_1'$. Then $H(z)=\int G(z)v$ is bounded and continuous on the strip and analytic inside, with $|H(it)| \le M_0\|u\|_p^{p/p_0}\|v\|_{q'}^{q'/q_0'}$ and $|H(1+it)| \le M_1\|u\|_p^{p/p_1}\|v\|_{q'}^{q'/q_1'}$, the two powers of $\|v\|_{q'}$ being the $L^{q_0'}$ and $L^{q_1'}$ norms of $|v|^{q'/q'(z)}$ on the boundary lines; the three-lines lemma, whose exponent $\theta$ combines the four powers into $\|u\|_p^{(1-\theta)p/p_0+\theta p/p_1}=\|u\|_p$ and $\|v\|_{q'}^{(1-\theta)q'/q_0'+\theta q'/q_1'}=\|v\|_{q'}$, gives $|H(\theta)| \le M_0^{1-\theta}M_1^{\theta}\|u\|_p\|v\|_{q'}$, and taking the supremum over simple $v$ of unit $L^{q'}$ norm and then over simple $u$ gives the claim on a dense subspace, hence on $L^p$ by continuity.
+*Proof (sketch).* The functional $T$ is known on the dense subspace of simple functions. Write $S=\{z:0<\operatorname{Re}z<1\}$ and define, for a simple function $u$ and $z \in \overline S$, the function $G(z)=T\bigl(|u|^{p/p(z)}\operatorname{sgn}u\bigr)$ and pair it against $|v|^{q'/q'(z)}\operatorname{sgn}v$ for a simple $v$, where $1/p(z)=(1-z)/p_0+z/p_1$ and $1/q'(z)=(1-z)/q_0'+z/q_1'$. Then $H(z)=\int G(z)v$ is bounded and continuous on the strip and analytic inside, with $|H(it)| \le M_0\|u\|_p^{p/p_0}\|v\|_{q'}^{q'/q_0'}$ and $|H(1+it)| \le M_1\|u\|_p^{p/p_1}\|v\|_{q'}^{q'/q_1'}$, the two powers of $\|v\|_{q'}$ being the $L^{m}_0'}$ and $L^{m}_1'}$ norms of $|v|^{q'/q'(z)}$ on the boundary lines; the three-lines lemma, whose exponent $\theta$ combines the four powers into $\|u\|_p^{(1-\theta)p/p_0+\theta p/p_1}=\|u\|_p$ and $\|v\|_{q'}^{(1-\theta)q'/q_0'+\theta q'/q_1'}=\|v\|_{q'}$, gives $|H(\theta)| \le M_0^{1-\theta}M_1^{\theta}\|u\|_p\|v\|_{q'}$, and taking the supremum over simple $v$ of unit $L^{m}'}$ norm and then over simple $u$ gives the claim on a dense subspace, hence on $L^{n}$ by continuity.
 
-**Corollary (interpolation of $L^p$).** For $1 \le p_0<p_1 \le \infty$ and $0<\theta<1$,
+**Corollary (interpolation of $L^{n}$).** For $1 \le p_0<p_1 \le \infty$ and $0<\theta<1$,
 
 $$
-[L^{p_0}(\mu),L^{p_1}(\mu)]_\theta=L^p(\mu), \qquad \frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1},
+[L^{n}_0}(\mu),L^{n}_1}(\mu)]_\theta=L^{n}(\mu), \qquad \frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1},
 $$
 
-with equivalence of norms; in particular $[L^1,L^\infty]_\theta=L^{1/(1-\theta)}$. The same holds for the couple $(\ell^{p_0},\ell^{p_1})$ of sequence spaces, and the identity is a statement about the two sets and their norms, not merely about the underlying vector spaces.
+with equivalence of norms; in particular $[L^1,L^\infty]_\theta=L^{1/(1-\theta)}$. The same holds for the couple $(\ell^{n}_0},\ell^{n}_1})$ of sequence spaces, and the identity is a statement about the two sets and their norms, not merely about the underlying vector spaces.
 
-*Proof.* The inclusion $[L^{p_0},L^{p_1}]_\theta \subseteq L^p$ with norm at most $1$ is the Riesz–Thorin theorem applied to the identity. For the reverse inclusion, the density of the simple functions in each $L^{p_i}$ makes the dual of the complex space the complex space of the dual couple, $([A_0,A_1]_\theta)^*=[A_0^*,A_1^*]_\theta$, and the interpolation theorem applied to the dual couple $(L^{p_0'},L^{p_1'})$, with $\frac1{p'}=\frac{1-\theta}{p_0'}+\frac{\theta}{p_1'}$, gives $\|v\|_{[A_0^*,A_1^*]_\theta}\le\|v\|_{L^{p'}}$. Hence, for $a \in L^p$, the dual characterisation of the norm of a complex interpolation space gives $\|a\|_{L^p}=\sup\{|\langle a,v\rangle|:\|v\|_{L^{p'}}\le1\}\le\sup\{|\langle a,v\rangle|:\|v\|_{[A_0^*,A_1^*]_\theta}\le1\}=\|a\|_\theta$, with $1<p<\infty$ throughout because $p_0<p_1$ and $0<\theta<1$. The sequence case is the counting measure.
+*Proof.* The inclusion $[L^{n}_0},L^{n}_1}]_\theta \subseteq L^{n}$ with norm at most $1$ is the Riesz–Thorin theorem applied to the identity. For the reverse inclusion, the density of the simple functions in each $L^{n}_i}$ makes the dual of the complex space the complex space of the dual couple, $([A_0,A_1]_\theta)^*=[A_0^*,A_1^*]_\theta$, and the interpolation theorem applied to the dual couple $(L^{n}_0'},L^{n}_1'})$, with $\frac1{p'}=\frac{1-\theta}{p_0'}+\frac{\theta}{p_1'}$, gives $\|v\|_{[A_0^*,A_1^*]_\theta}\le\|v\|_{L^{n}}'}}$. Hence, for $a \in L^{n}$, the dual characterisation of the norm of a complex interpolation space gives $\|a\|_{L^{n}}=\sup\{|\langle a,v\rangle|:\|v\|_{L^{n}}'}}\le1\}\le\sup\{|\langle a,v\rangle|:\|v\|_{[A_0^*,A_1^*]_\theta}\le1\}=\|a\|_\theta$, with $1<p<\infty$ throughout because $p_0<p_1$ and $0<\theta<1$. The sequence case is the counting measure.
 
-**Corollary (Hausdorff–Young).** Let $1 \le p \le 2$ and $1/p+1/q=1$. The Fourier transform $\mathcal F$ on $\mathbb{R}^n$, bounded on $L^1$ with norm $1$ and unitary on $L^2$ up to the standard constant, maps $L^p$ boundedly into $L^q$; interpolating at $\theta$ with $1/q=\theta/2$ and $1/p=1-\theta/2$ recovers $1/p+1/q=1$, and the bound is $1$.
+**Corollary (Hausdorff–Young).** Let $1 \le p \le 2$ and $1/n + 1/m=1$. The Fourier transform $\mathcal F$ on $\mathbb{R}^n$, bounded on $L^1$ with norm $1$ and unitary on $L^2$ up to the standard constant, maps $L^{n}$ boundedly into $L^{m}$; interpolating at $\theta$ with $1/q=\theta/2$ and $1/p=1-\theta/2$ recovers $1/n + 1/m=1$, and the bound is $1$.
 
 The corollary is the classical application: the two endpoint estimates are trivial and the interpolated estimate is not. The transform theory itself, and the conventions for the constant, belong to *Fourier Analysis on Euclidean Spaces*, earlier in this Part.
 
-**Theorem (Stein's interpolation of analytic families).** Let $S$ be the strip and let $\{T_z\}$ be a family of linear maps such that $z \mapsto \int (T_zf)g$ is analytic on $S$ and continuous on $\overline S$ for simple $f,g$. Suppose $\|T_{it}\|_{L^{p_0}\to L^{q_0}}\le M_0(t)$ and $\|T_{1+it}\|_{L^{p_1}\to L^{q_1}}\le M_1(t)$ with $\sup_t M_i(t)<\infty$. Then $T_\theta$ maps $L^p$ to $L^q$ for the indices above with norm at most $\sup_tM_0(t)^{1-\theta}\sup_tM_1(t)^{\theta}$.
+**Theorem (Stein's interpolation of analytic families).** Let $S$ be the strip and let $\{T_z\}$ be a family of linear maps such that $z \mapsto \int (T_zf)g$ is analytic on $S$ and continuous on $\overline S$ for simple $f,g$. Suppose $\|T_{it}\|_{L^{n}}_0}\to L^{m}_0}}\le M_0(t)$ and $\|T_{1+it}\|_{L^{n}}_1}\to L^{m}_1}}\le M_1(t)$ with $\sup_t M_i(t)<\infty$. Then $T_\theta$ maps $L^{n}$ to $L^{m}$ for the indices above with norm at most $\sup_tM_0(t)^{1-\theta}\sup_tM_1(t)^{\theta}$.
 
 Stein's theorem is what permits the endpoint norms to vary with the imaginary part, and it is the version used to interpolate the analytic families of operators that arise in harmonic analysis and in the theory of singular integrals; the applications are treated elsewhere, where the Calderón–Zygmund decomposition provides the endpoint hypotheses.
 
@@ -187,10 +187,10 @@ The two descriptions are the **equivalence theorem** of the real method: every e
 **Example (Lorentz spaces).** Let $\mu$ be a $\sigma$-finite measure. Then
 
 $$
-(L^1(\mu),L^\infty(\mu))_{\theta,q}=L^{p,q}(\mu), \qquad \frac1p=1-\theta,
+(L^1(\mu),L^\infty(\mu))_{\theta,q}=L^{n},q}(\mu), \qquad \frac1p=1-\theta,
 $$
 
-the **Lorentz space** of measurable functions whose decreasing rearrangement $f^*$ satisfies $\bigl(\int_0^\infty (t^{1/p}f^*(t))^q\,dt/t\bigr)^{1/q}<\infty$. For $q=p$ this is $L^p$, for $q=\infty$ it is the weak $L^p$ space $L^{p,\infty}$; on the sequence side $(\ell^1,\ell^\infty)_{\theta,q}=\ell^{p,q}$. The spaces $\ell^{p,q}$ with $p$ fixed and $q$ varying are distinct as sets, which is exactly the refinement that the complex method misses.
+the **Lorentz space** of measurable functions whose decreasing rearrangement $f^*$ satisfies $\bigl(\int_0^\infty (t^{1/p}f^*(t))^q\,dt/t\bigr)^{1/q}<\infty$. For $q=p$ this is $L^{n}$, for $q=\infty$ it is the weak $L^{n}$ space $L^{n},\infty}$; on the sequence side $(\ell^1,\ell^\infty)_{\theta,q}=\ell^{n},q}$. The spaces $\ell^{n},q}$ with $p$ fixed and $q$ varying are distinct as sets, which is exactly the refinement that the complex method misses.
 
 ### Duality and Reiteration
 
@@ -224,59 +224,59 @@ with continuous inclusions. Consequently the complex space coincides with a real
 
 The two methods apply to the families of spaces that occur in analysis, and the resulting dictionary is the working content of the theory.
 
-### The $L^p$ and Lorentz Families
+### The $L^{n}$ and Lorentz Families
 
 **Theorem.** Let $1\le p_0<p_1\le\infty$ and $0<\theta<1$. With $1/p=(1-\theta)/p_0+\theta/p_1$,
 
 $$
-[L^{p_0}(\mu),L^{p_1}(\mu)]_\theta=L^p(\mu), \qquad (L^{p_0}(\mu),L^{p_1}(\mu))_{\theta,q}=L^{p,q}(\mu),
+[L^{n}_0}(\mu),L^{n}_1}(\mu)]_\theta=L^{n}(\mu), \qquad (L^{n}_0}(\mu),L^{n}_1}(\mu))_{\theta,q}=L^{n},q}(\mu),
 $$
 
-where $L^{p,q}$ is the Lorentz space. For $q=p$ the two constructions agree, $L^{p,p}=L^p$.
+where $L^{n},q}$ is the Lorentz space. For $q=p$ the two constructions agree, $L^{n},p}=L^{n}$.
 
-The case $p_1=\infty$ is the definition of the Lorentz spaces; the case $p_1<\infty$ follows from it by the reiteration theorem, since $(L^{p_0},L^{p_1})_{\theta,q}$ lies between the corresponding Lorentz spaces. This is the mechanism by which the theory of a single family of spaces is generated from the two extreme members.
+The case $p_1=\infty$ is the definition of the Lorentz spaces; the case $p_1<\infty$ follows from it by the reiteration theorem, since $(L^{n}_0},L^{n}_1})_{\theta,q}$ lies between the corresponding Lorentz spaces. This is the mechanism by which the theory of a single family of spaces is generated from the two extreme members.
 
 ### The Sobolev and Besov Families
 
-**Definition.** For $s \in \mathbb{R}$ and $1<p<\infty$ the **Bessel-potential space** $H^s_p(\mathbb{R}^n)$ is the set of tempered distributions $u$ whose Fourier transform satisfies
+**Definition.** For $s \in \mathbb{R}$ and $1<p<\infty$ the **Bessel-potential space** $H^{s}_{n}(\mathbb{R}^n)$ is the set of tempered distributions $u$ whose Fourier transform satisfies
 
 $$
-\|u\|_{H^s_p}=\bigl\|\mathcal F^{-1}\bigl((1+|\xi|^2)^{s/2}\hat u\bigr)\bigr\|_{L^p}<\infty .
+\|u\|_{H^{s}_{n}}=\bigl\|\mathcal F^{-1}\bigl((1+|\xi|^2)^{s/2}\widehat{u}\bigr)\bigr\|_{L^{n}}<\infty .
 $$
 
-For $s=k \in \mathbb{N}$ and $1<p<\infty$ the space $H^k_p$ coincides with the Sobolev space $W^{k,p}$ of functions whose weak derivatives of order at most $k$ lie in $L^p$, with equivalent norms; this identification is the content, and only the Fourier description is used here.
+For $s=k \in \mathbb{N}$ and $1<p<\infty$ the space $H^k_p$ coincides with the Sobolev space $W^{k,n}$ of functions whose weak derivatives of order at most $k$ lie in $L^{n}$, with equivalent norms; this identification is the content, and only the Fourier description is used here.
 
 **Theorem.** For $s_0,s_1 \in \mathbb{R}$, $1<p_0,p_1<\infty$ and $0<\theta<1$,
 
 $$
-[H^{s_0}_{p_0},H^{s_1}_{p_1}]_\theta=H^{s}_p, \qquad s=(1-\theta)s_0+\theta s_1, \quad \frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1},
+[H^{s_0}_{p_0},H^{s_1}_{p_1}]_\theta=H^{s}_{n}, \qquad s=(1-\theta)s_0+\theta s_1, \quad \frac1p=\frac{1-\theta}{p_0}+\frac{\theta}{p_1},
 $$
 
 and for the real method
 
 $$
-(H^{s_0}_p,H^{s_1}_p)_{\theta,q}=B^{s}_{p,q}, \qquad s=(1-\theta)s_0+\theta s_1,
+(H^{s_0}_p,H^{s_1}_p)_{\theta,q}=B^{s}_{n,m}, \qquad s=(1-\theta)s_0+\theta s_1,
 $$
 
-where $B^s_{p,q}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\xi|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^s_{p,q}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
+where $B^{s}_{n,m}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\xi|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^{s}_{n,m}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
 
-**Corollary (Sobolev embedding, interpolated).** If $0 \le s_1<s_0$ and $1<p<\infty$, then $H^{s_0}_p\subseteq H^{s_1}_p$, and for $s=(1-\theta)s_1+\theta s_0$ the interpolation identity above exhibits $H^s_p$ as an intermediate space. The classical Sobolev embedding $H^{s}_p\subseteq L^r$ with $1/r=1/p-s/n$, when $s<n/p$, is obtained from the endpoint embeddings at $s=0$ and at a large $s$ by interpolation, and the embedding theorems in the sharp form are standard.
+**Corollary (Sobolev embedding, interpolated).** If $0 \le s_1<s_0$ and $1<p<\infty$, then $H^{s_0}_p\subseteq H^{s_1}_p$, and for $s=(1-\theta)s_1+\theta s_0$ the interpolation identity above exhibits $H^{s}_{n}$ as an intermediate space. The classical Sobolev embedding $H^{s}_{n}\subseteq L^r$ with $1/r=1/p-s/n$, when $s<n/p$, is obtained from the endpoint embeddings at $s=0$ and at a large $s$ by interpolation, and the embedding theorems in the sharp form are standard.
 
 ### Interpolation of Analytic and Harmonic Spaces
 
 **Theorem (Marcinkiewicz).** Let $T$ be a sublinear map defined on the simple functions of a $\sigma$-finite measure space and taking measurable functions, and suppose $T$ is of weak type $(p_0,p_0)$ with constant $M_0$ and of weak type $(p_1,p_1)$ with constant $M_1$, where $1\le p_0<p_1\le\infty$. Then $T$ is of strong type $(p,p)$ for every $p_0<p<p_1$, with a bound depending only on the constants and the indices.
 
-The proof of Marcinkiewicz's theorem is the standard decomposition of $f$ into a part of large values, controlled by the weak-type hypothesis at $p_0$, and a part of small values, controlled at $p_1$, followed by an application of the $K$-functional calculus in the form $(L^{p_0},L^{p_1})_{\theta,p}=L^p$. The theorem is the real-method counterpart of Riesz–Thor, and it is the version that applies to singular integral operators, where the endpoint estimate is weak; the operators themselves are treated, and the interpolation step is the one recorded here.
+The proof of Marcinkiewicz's theorem is the standard decomposition of $f$ into a part of large values, controlled by the weak-type hypothesis at $p_0$, and a part of small values, controlled at $p_1$, followed by an application of the $K$-functional calculus in the form $(L^{n}_0},L^{n}_1})_{\theta,p}=L^{n}$. The theorem is the real-method counterpart of Riesz–Thor, and it is the version that applies to singular integral operators, where the endpoint estimate is weak; the operators themselves are treated, and the interpolation step is the one recorded here.
 
 ## Summary
 
 An interpolation theory begins with a compatible couple $(A_0,A_1)$ of Banach spaces inside a common ambient space and constructs the intermediate spaces. The intersection $A_0\cap A_1$ with the maximum norm and the sum $A_0+A_1$ with the infimum norm are Banach spaces, and every intermediate space lies between them. An interpolation functor assigns to the couple a space and to the maps between couples a map, and it is of exponent $\theta$ when the operator norm obeys $\|T\| \le \|T\|_{A_0\to B_0}^{1-\theta}\|T\|_{A_1\to B_1}^{\theta}$; both methods below are exact functors of exponent $\theta$.
 
-The complex method takes the values at the interior point $\theta$ of the bounded analytic functions on the strip whose boundary values lie in $A_0$ and $A_1$; the three-lines lemma and the maximum modulus principle for Banach-space-valued analytic functions make the construction a Banach space and a functor. Its principal theorem is Riesz–Thorin: a linear map bounded between two pairs of $L^p$ spaces is bounded between the interpolated pair, with norm at most $M_0^{1-\theta}M_1^{\theta}$, where the exponents interpolate reciprocally. The method gives $[L^{p_0},L^{p_1}]_\theta=L^p$, the Hausdorff–Young theorem for the Fourier transform, and, in Stein's form, the interpolation of analytic families of operators.
+The complex method takes the values at the interior point $\theta$ of the bounded analytic functions on the strip whose boundary values lie in $A_0$ and $A_1$; the three-lines lemma and the maximum modulus principle for Banach-space-valued analytic functions make the construction a Banach space and a functor. Its principal theorem is Riesz–Thorin: a linear map bounded between two pairs of $L^{n}$ spaces is bounded between the interpolated pair, with norm at most $M_0^{1-\theta}M_1^{\theta}$, where the exponents interpolate reciprocally. The method gives $[L^{n}_0},L^{n}_1}]_\theta=L^{n}$, the Hausdorff–Young theorem for the Fourier transform, and, in Stein's form, the interpolation of analytic families of operators.
 
-The real method uses the Peetre functional $K(t,a)=\inf_{a=a_0+a_1}(\|a_0\|_{A_0}+t\|a_1\|_{A_1})$, integrated against the weight $t^{-\theta q}\,dt/t$, and produces a space $(A_0,A_1)_{\theta,q}$ with a second parameter $q$; the $J$-functional gives an equivalent description, and the two descriptions coincide. The method yields the Lorentz spaces $(L^1,L^\infty)_{\theta,q}=L^{p,q}$ with $1/p=1-\theta$, is self-reiterating, and dualises to the pair of dual couples for $1\le q<\infty$. The complex space lies between the real spaces at $q=1$ and $q=\infty$, and the two methods agree on $(L^1,L^\infty)$ at the diagonal $q=p$.
+The real method uses the Peetre functional $K(t,a)=\inf_{a=a_0+a_1}(\|a_0\|_{A_0}+t\|a_1\|_{A_1})$, integrated against the weight $t^{-\theta q}\,dt/t$, and produces a space $(A_0,A_1)_{\theta,q}$ with a second parameter $q$; the $J$-functional gives an equivalent description, and the two descriptions coincide. The method yields the Lorentz spaces $(L^1,L^\infty)_{\theta,q}=L^{n},q}$ with $1/p=1-\theta$, is self-reiterating, and dualises to the pair of dual couples for $1\le q<\infty$. The complex space lies between the real spaces at $q=1$ and $q=\infty$, and the two methods agree on $(L^1,L^\infty)$ at the diagonal $q=p$.
 
-On the classical families the dictionary reads $[L^{p_0},L^{p_1}]_\theta=L^p$, $(L^{p_0},L^{p_1})_{\theta,q}=L^{p,q}$, $[H^{s_0}_{p_0},H^{s_1}_{p_1}]_\theta=H^s_p$ and $(H^{s_0}_p,H^{s_1}_p)_{\theta,q}=B^s_{p,q}$, with the exponent interpolated linearly and the Lebesgue index reciprocally; Marcinkiewicz's theorem complements Riesz–Thorin by interpolating weak endpoint estimates into strong ones, and the Besov scale, the Sobolev embeddings and the singular integral operators are the places where the theory is applied.
+On the classical families the dictionary reads $[L^{n}_0},L^{n}_1}]_\theta=L^{n}$, $(L^{n}_0},L^{n}_1})_{\theta,q}=L^{n},q}$, $[H^{s_0}_{p_0},H^{s_1}_{p_1}]_\theta=H^{s}_{n}$ and $(H^{s_0}_p,H^{s_1}_p)_{\theta,q}=B^{s}_{n,m}$, with the exponent interpolated linearly and the Lebesgue index reciprocally; Marcinkiewicz's theorem complements Riesz–Thorin by interpolating weak endpoint estimates into strong ones, and the Besov scale, the Sobolev embeddings and the singular integral operators are the places where the theory is applied.
 
 ## Summary of Notation
 
@@ -292,10 +292,10 @@ On the classical families the dictionary reads $[L^{p_0},L^{p_1}]_\theta=L^p$, $
 | $[A_0,A_1]_\theta$ | complex interpolation space |
 | $K(t,a)$, $J(t,a)$ | Peetre $K$- and $J$-functionals |
 | $(A_0,A_1)_{\theta,q}$ | real interpolation space |
-| $L^{p,q}$ | Lorentz space |
-| $\ell^{p,q}$ | Lorentz sequence space |
-| $H^s_p$ | Bessel-potential (Sobolev) space |
-| $W^{k,p}$, $B^s_{p,q}$ | Sobolev and Besov spaces |
+| $L^{n},q}$ | Lorentz space |
+| $\ell^{n},q}$ | Lorentz sequence space |
+| $H^{s}_{n}$ | Bessel-potential (Sobolev) space |
+| $W^{k,n}$, $B^{s}_{n,m}$ | Sobolev and Besov spaces |
 | $M_0$, $M_1$ | endpoint operator norms |
 | $\mathcal F$ | Fourier transform on $\mathbb{R}^n$ |
 | $M_0(t)$, $M_1(t)$ | endpoint norms of an analytic family |

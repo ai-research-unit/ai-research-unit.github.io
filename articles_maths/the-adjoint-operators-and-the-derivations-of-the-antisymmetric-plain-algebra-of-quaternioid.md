@@ -160,8 +160,8 @@ acts on the vector subspace by a linear map preserving the cross product.
 The centre is characteristic, being the set of elements that annihilate every element on the left, so
 $T$ preserves $\mathbb{R}e_0$ and $Te_0=c e_0$ with $c\neq0$. Then $T$ preserves the vector subspace,
 which is the image of the block, and on it $A=T|_{\mathrm{Vect}(\mathbb{H})}$ satisfies
-$A(\vec u\times\vec v)=A\vec u\times A\vec v$, because the two sides are the images of
-$\vec u\times\vec v$ and of $\vec u,\vec v$. Every such $A$ is a linear map of
+$A(\vec q_a\times\vec v)=A\vec q_a\times A\vec v$, because the two sides are the images of
+$\vec q_a\times\vec v$ and of $\vec q_a,\vec v$. Every such $A$ is a linear map of
 $\mathbb{R}^3$ preserving the cross product, which is the special orthogonal group
 $\operatorname{SO}(3)$; its dimension is three, the scalar $c$ contributes one, and the two choices are
 independent and commute. The group is therefore $\mathbb{R}^{\times}\times\operatorname{SO}(3)$ of
@@ -199,8 +199,8 @@ same structure has $\mathfrak{sl}(2,\mathbb{C})$ and $\mathbb{C}^{\times}\times\
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra of Quaternions*, for the bracket, its table and the Jacobi identity.
+- *Introduction to the Antisymmetric Plain Algebra*, for the bracket, its table and the Jacobi identity.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the centre, the derived algebra and the structure constants.
 - *The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category, for the form and the Casimir element.
-- *Zero Divisors of the Antisymmetric Plain Algebra*, below this article in this category, for the annihilator that is the kernel of the adjoint.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, below this article in this category, for the annihilator that is the kernel of the adjoint.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, below this article in this category, for the block whose adjoint is not a derivation.

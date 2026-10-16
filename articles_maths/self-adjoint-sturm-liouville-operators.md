@@ -32,7 +32,7 @@ The conditions defining such domains are the **self-adjoint boundary conditions*
 
 ## The Regular Case
 
-**Definition.** The endpoint $a$ is **regular** if it is finite and $1/p$, $q$, $w$ are integrable near it; the problem is **regular** if both endpoints are regular. For a regular problem the boundary values $u(a),(pu')(a),u(b),(pu')(b)$ are defined and the bracket is a skew-Hermitian form in them.
+**Definition.** The endpoint $\mathfrak{a}$ is **regular** if it is finite and $1/p$, $q$, $w$ are integrable near it; the problem is **regular** if both endpoints are regular. For a regular problem the boundary values $u(a),(pu')(a),u(b),(pu')(b)$ are defined and the bracket is a skew-Hermitian form in them.
 
 **Theorem (the self-adjoint conditions of a regular problem).** For a regular Sturm–Liouville problem every self-adjoint extension is given by two separated conditions
 
@@ -58,9 +58,9 @@ $$
 
 ## The Singular Case
 
-**Definition.** The endpoint $a$ is **singular** if it is infinite or if the coefficients fail to be integrable near it. The **limit-circle** and **limit-point** alternatives concern the number of solutions of $\ell u=\lambda u$ in $L^2_w(a,c)$: for a nonreal $\lambda$ that number is constant, and the endpoint is **limit-circle** if it is two and **limit-point** if it is one.
+**Definition.** The endpoint $\mathfrak{a}$ is **singular** if it is infinite or if the coefficients fail to be integrable near it. The **limit-circle** and **limit-point** alternatives concern the number of solutions of $\ell u=\lambda u$ in $L^2_w(a,c)$: for a nonreal $\lambda$ that number is constant, and the endpoint is **limit-circle** if it is two and **limit-point** if it is one.
 
-**Theorem (Weyl's classification).** For a formally self-adjoint Sturm–Liouville expression and a nonreal $\lambda$, the number of linearly independent solutions of $\ell u=\lambda u$ in $L^2_w$ near the endpoint $a$ is either one or two, independent of the nonreal $\lambda$; if it is one, the endpoint is limit-point, no boundary condition is needed there and the operator is essentially self-adjoint at that endpoint; if it is two, the endpoint is limit-circle, a boundary condition is needed, and the self-adjoint extensions are parameterised by the real boundary conditions of a one-dimensional family.
+**Theorem (Weyl's classification).** For a formally self-adjoint Sturm–Liouville expression and a nonreal $\lambda$, the number of linearly independent solutions of $\ell u=\lambda u$ in $L^2_w$ near the endpoint $\mathfrak{a}$ is either one or two, independent of the nonreal $\lambda$; if it is one, the endpoint is limit-point, no boundary condition is needed there and the operator is essentially self-adjoint at that endpoint; if it is two, the endpoint is limit-circle, a boundary condition is needed, and the self-adjoint extensions are parameterised by the real boundary conditions of a one-dimensional family.
 
 *Proof.* The solutions of $\ell u=\lambda u$ near a singular endpoint span a two-dimensional space, and the $L^2_w$ condition selects a subspace whose dimension is independent of $\lambda$ in the upper half-plane by the theory of the Weyl circle and the Weyl coefficient; the two cases are the two possibilities. At a limit-point endpoint the maximal and minimal domains require no boundary condition because only one solution is $L^2_w$, so the bracket vanishes automatically; at a limit-circle endpoint the two $L^2_w$ solutions make the bracket nontrivial and a one-parameter family of conditions is required. The detailed computation with the Weyl circles is that of *The Sturm–Liouville Operator* and *Ordinary Differential Equations*.
 

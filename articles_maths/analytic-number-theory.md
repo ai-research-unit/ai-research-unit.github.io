@@ -35,7 +35,7 @@ $$
 
 **Theorem (Mertens).** As $x\to\infty$,
 $$
-\sum_{p\leq x}\frac{\log p}{p} = \log x + O(1), \qquad \prod_{p\leq x}\Bigl(1-\frac1p\Bigr) = \frac{e^{-\gamma}}{\log x}\bigl(1+o(1)\bigr), \qquad \sum_{p\leq x}\frac1p = \log\log x + M + o(1),
+\sum_{p\leq x}\frac{\log p}{p} = \log x + O(1), \qquad \prod_{p\leq x}\Bigl(1-\frac1p\Bigr) = \frac{\exp(-\gamma)}{\log x}\bigl(1+o(1)\bigr), \qquad \sum_{p\leq x}\frac1p = \log\log x + M + o(1),
 $$
 where $\gamma$ is Euler's constant and $M$ is the Mertens constant.
 
@@ -127,7 +127,7 @@ $$
 
 **Theorem (Siegel–Walfisz).** For every $A>0$ there is a constant $c_A>0$, ineffective because it depends on a possible exceptional zero, such that
 $$
-\pi(x;q,a) = \frac{\mathrm{Li}(x)}{\varphi(q)}\Bigl(1 + O\bigl(e^{-c_A\sqrt{\log x}}\bigr)\Bigr)
+\pi(x;q,a) = \frac{\mathrm{Li}(x)}{\varphi(q)}\Bigl(1 + O\bigl(\exp(-c_A\sqrt{\log x})\bigr)\Bigr)
 $$
 uniformly for $q \leq (\log x)^A$.
 
@@ -157,7 +157,7 @@ $$
 
 **Definition.** The circle method writes a count of solutions of an additive equation, such as the number of representations of $n$ as a sum of $s$ $k$-th powers, as
 $$
-\int_0^1 f(\alpha)^s e^{-2\pi i n\alpha}\,d\alpha, \qquad f(\alpha) = \sum_{x\leq N} e^{2\pi i \alpha x^k},
+\int_0^1 f(\alpha)^s \exp(-2\pi i n\alpha)\,d\alpha, \qquad f(\alpha) = \sum_{x\leq N} \exp(2\pi i \alpha x^k),
 $$
 and analyses the integral by decomposing the circle into the arcs near rational points with small denominators, where $f$ is large and can be approximated, and the complementary arcs, where $f$ is small by Weyl's estimates for exponential sums.
 

@@ -69,7 +69,7 @@ where $u_\alpha$ is a normalised approximate identity of $L^1(G)$; equivalently 
 
 **Proof.** The commutant of an irreducible representation is the scalars; a self-adjoint element of the commutant has real spectrum, and its spectral projections commute with $\pi$, so by irreducibility they are $0$ or $1$, giving a scalar.
 
-**Remark (what the article does not do).** The adjoint of a convolution operator on its own terms, its expression on $L^p$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, later in this group. The adjoint of a representation operator is given here only through the unitarity condition; the Plancherel measure and the inversion formula are *Unitary Representations and the Plancherel Theorem*. The adjoint of the two-sided operators of the signed block is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, where the signed form appears.
+**Remark (what the article does not do).** The adjoint of a convolution operator on its own terms, its expression on $L^{n}$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, later in this group. The adjoint of a representation operator is given here only through the unitarity condition; the Plancherel measure and the inversion formula are *Unitary Representations and the Plancherel Theorem*. The adjoint of the two-sided operators of the signed block is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, where the signed form appears.
 
 ## Summary
 

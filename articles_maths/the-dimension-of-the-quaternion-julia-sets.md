@@ -15,7 +15,7 @@ Throughout, $\dim_H$ is the Hausdorff dimension and $\dim_B$ the upper box dimen
 **Definition.** The **profile map** is
 
 $$
-\Phi : \mathbb{H} \to \mathbb{R}\times[0,\infty) , \qquad \Phi(\tilde q) = (q_0,|\vec q|) ,
+\Phi : \mathbb{H} \to \mathbb{R}\times[0,\infty), \qquad \Phi(\tilde q) = (q_0,|\vec q|),
 $$
 
 and the **profile** of $J_c$ is $\Phi_c=\Phi(J_c)$. The profile is a subset of the closed half-plane; for a real parameter it is the $\sigma_c$ of *The Slices of the Quaternion Julia Sets*.
@@ -27,7 +27,7 @@ and the **profile** of $J_c$ is $\Phi_c=\Phi(J_c)$. The profile is a subset of t
 **Corollary (the slice is a lower bound).** Let $d=\dim_H J^{\mathbb{C}}_{\kappa(c)}$ be the dimension of the complex Julia set of the reduced parameter. Then
 
 $$
-d \leq \dim_H J_c \leq \dim_H \Phi_c + 2 .
+d \leq \dim_H J_c \leq \dim_H \Phi_c + 2.
 $$
 
 *Proof.* The restriction of $\Phi$ to the invariant plane $\mathbb{C}_c$ is, on the closed upper half-plane $\{b\geq0\}$ of $\mathbb{C}_c$, the bi-Lipschitz map $a+b\hat c\mapsto(a,b)$ onto a half-plane; it carries $J_c\cap\mathbb{C}_c\cap\{b\geq0\}$ onto a subset of $\Phi_c$ of the same dimension, and that subset has dimension $d$ because the complex Julia set is symmetric under the reflection $y\mapsto-y$, so the whole set is the union of the two half-planes and the real part, and the maximum of the three dimensions is $d$. Hence $\dim_H\Phi_c\geq d$, and the proposition gives the bounds with the slice computed by *The Slices of the Quaternion Julia Sets*.
@@ -39,7 +39,7 @@ $$
 **Theorem (the exact formula for a real parameter).** Let $c \in \mathbb{R}$ and put $d=\dim_H J^{\mathbb{C}}_c$. If the slice $J^{\mathbb{C}}_c$ is not contained in the real axis, then
 
 $$
-\dim_H J_c = \dim_H\bigl(\Phi_c\cap\{r>0\}\bigr) + 2 = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr) + 2 ,
+\dim_H J_c = \dim_H\bigl(\Phi_c\cap\{r>0\}\bigr) + 2 = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr) + 2,
 $$
 
 and if in addition the top dimension of $J^{\mathbb{C}}_c$ is carried by its off-axis part, then $\dim_H J_c=d+2$. If the slice is contained in the real axis — which happens for the real parameters with $c\leq-2$ or $c>\tfrac14$ — then $\Phi_c\cap\{r>0\}=\emptyset$ and $\dim_H J_c=d$.
@@ -55,7 +55,7 @@ and if in addition the top dimension of $J^{\mathbb{C}}_c$ is carried by its off
 **Theorem (the bounds for a non-real parameter).** Let $c \notin \mathbb{R}$ and $d=\dim_H J^{\mathbb{C}}_{\kappa(c)}$. Then
 
 $$
-d \leq \dim_H J_c \leq \dim_H \Phi_c + 2 ,
+d \leq \dim_H J_c \leq \dim_H \Phi_c + 2,
 $$
 
 and no equality is asserted.
@@ -95,7 +95,7 @@ The limit sets of the discrete groups of hyperbolic isometries are the fractal s
 The profile map $\Phi(\tilde q)=(q_0,|\vec q|)$ is $1$-Lipschitz with spherical fibres, and it gives the general bounds $d\leq\dim_H J_c\leq\dim_H\Phi_c+2$, where $d$ is the dimension of the complex Julia set of the reduced parameter and $\Phi_c$ is the profile. For a real parameter the set is $\Phi$-saturated, the fibres over the off-axis part of the profile are full two-spheres, and the exact formula is
 
 $$
-\dim_H J_c = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr)+2 ,
+\dim_H J_c = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr)+2,
 $$
 
 which is $d+2$ when the off-axis part carries the top dimension; the exceptions are the parameters with the slice on the real axis ($c\leq-2$ or $c>\tfrac14$), for which the dimension is that of the slice. The increase is two and not one, because the symmetry orbit is a two-sphere and not a circle; the case $c=0$ shows it, the unit circle becoming the unit sphere $S^3$. For a non-real parameter the set is not the hull of its slice — the reduction fails at $c=\tfrac12e_2$ — and only the general bounds survive; the exact general value is stated as an open point.

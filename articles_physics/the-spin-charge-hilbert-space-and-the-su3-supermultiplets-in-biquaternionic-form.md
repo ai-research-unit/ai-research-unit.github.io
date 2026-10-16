@@ -103,10 +103,10 @@ $$
 and a state vector of it is written
 
 $$
-|A\rangle = \bigl(\tau^{l\dot l},\ \mathrm{Sym}^{(k,r)},\ \mathrm{Cl}_{p,q},\ S_{(p+q)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
+|A\rangle = \bigl(\tau^{l\dot l},\ \mathrm{Sym}^{(k,r)},\ \mathrm{Cl}_{n,m},\ S_{(n+m)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
 $$
 
-the entries being the Lorentz representation $\tau^{l\dot l}$ that fixes the spin $s=|l-\dot l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\dot l+1)$, the Clifford algebra $\mathrm{Cl}_{p,q}$ associated with the representation, its spin space $S_{(p+q)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\dot l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
+the entries being the Lorentz representation $\tau^{l\dot l}$ that fixes the spin $s=|l-\dot l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\dot l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\dot l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
 
 The charge takes the three values $\{-1,0,\bar0\}$: the values $\pm1$ are the charged particles, carried by the complex representations; the value $0$ is the neutral particle with a distinct antiparticle, carried by the real representations of quaternionic division ring; and the value $\bar0$ is the **truly neutral** particle, carried by the real representations of real division ring. This trichotomy is the subject of the companion *Charge Conjugation and the Division Ring*, and the present section takes it as the labelling of the charge factor. A supermultiplet is then a set of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ sharing a Lorentz representation and a Clifford algebra and differing in the charge projection.
 
@@ -132,7 +132,7 @@ and when $\omega\ne1$ the ordinary theory of group representations does not appl
 
 ## The Biquaternion Reading
 
-The framework's relation to all this is precise, and it is a relation of **one** of the three factors. The spin factor $\mathcal{H}_S$ is exactly the framework's own spinor structure: the Lorentz representations $\tau^{l\dot l}$, the spin lines, and the spin spaces $S_{(p+q)/2}$ are the corpus's objects, and the finite-dimensional spin space of a state is the module of the biquaternion algebra or of its tensor powers. The mass formula that fixes the degree on each spin line is the companion article's.
+The framework's relation to all this is precise, and it is a relation of **one** of the three factors. The spin factor $\mathcal{H}_S$ is exactly the framework's own spinor structure: the Lorentz representations $\tau^{l\dot l}$, the spin lines, and the spin spaces $S_{(n+m)/2}$ are the corpus's objects, and the finite-dimensional spin space of a state is the module of the biquaternion algebra or of its tensor powers. The mass formula that fixes the degree on each spin line is the companion article's.
 
 The charge factor $\mathcal{H}_Q$ is a different matter. The internal symmetry groups act there by central extension, and the companion *The Gauge Group Ceiling* establishes that the biquaternion algebra's own compact structure reaches $\mathrm{SU}(2)$ and stops: the $\mathrm{SU}(3)$ of the charge triplet's further generalisation is not an algebra of $\mathbb{B}$. The spin–charge space is therefore something the framework can **state** and lay out, but not something it **contains**; the charge factor is added from outside, and its $\mathrm{SU}(3)$ structure is transcribed.
 
@@ -183,8 +183,8 @@ The framework's relation to this is a relation of one factor. The spin factor is
 | $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ | Spin–charge Hilbert space |
 | $s=\lvert l-\dot l\rvert$ | Spin of the Lorentz representation |
 | $\mathrm{Sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\dot l}$, $k=2l$, $r=2\dot l$ |
-| $\mathrm{Cl}_{p,q}$, $S_{(p+q)/2}$ | Associated Clifford algebra and spin space |
-| $Q=+1,0,\bar0$ | Charged, neutral, truly neutral charge states |
+| $\mathrm{Cl}_{n,m}$, $S_{(n+m)/2}$ | Associated Clifford algebra and spin space |
+| $Ϙ=+1,0,\bar0$ | Charged, neutral, truly neutral charge states |
 | $T_{gg'}=\omega(g,g')T_gT_{g'}$ | Ray (projective) representation of the symmetry group |
 | $E=\{(\omega,x)\}$ | Central extension whose representations lift the ray representations |
 | Coherent subspace | Maximal domain of allowed superposition under superselection |

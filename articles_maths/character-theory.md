@@ -26,7 +26,7 @@ Throughout, $G$ is a finite group, $k$ a field of characteristic zero containing
 *Proof.* If $W\subseteq V$ is a $k[G]$-submodule, choose any $k$-linear projection $\pi:V\to W$ and average it,
 
 $$
-\tilde\pi(v) = \frac{1}{\lvert G\rvert}\sum_{g\in G}g\,\pi(g^{-1}v),
+\pi^{\mathrm{avg}}(v) = \frac{1}{\lvert G\rvert}\sum_{g\in G}g\,\pi(g^{-1}v),
 $$
 
 which is $k[G]$-linear because the averaging is invariant under the action, and which is a projection onto $W$; its kernel is a complement. The argument applies to every submodule, so the module is semisimple, and the structure theory of *Simple and Semisimple Modules* gives the decomposition into simple summands.

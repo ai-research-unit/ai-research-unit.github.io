@@ -34,7 +34,7 @@ $$
 \operatorname{Herm}(A,h) \longrightarrow \{\text{Hermitian forms on } A\}, \qquad T \longmapsto Q_{T}, \quad Q_{T}(x) = h(Tx,x) ,
 $$
 
-is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape $h(T\cdot,\cdot)$ when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$; its inverse sends such a form back to its operator through the polarisation $\tfrac{1}{2}\bigl(Q(x+y) - Q(x) - Q(y)\bigr) = \tfrac{1}{2}\bigl(h(Tx,y) + h(Ty,x)\bigr)$ and the non-degeneracy of $h$.
+is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape $h(T\cdot,\cdot)$ when the sesquilinear forms are determined by their diagonals — in particular over a field containing a scalar $\mathrm{i}$ with $\varsigma(\mathrm{i}) = -\mathrm{i}$; its inverse sends such a form back to its operator through the polarisation $\tfrac{1}{2}\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr) = \tfrac{1}{2}\bigl(h(Tx,y) + h(Ty,x)\bigr)$ and the non-degeneracy of $h$.
 
 **Proof.** The map is additive in $T$; it is valued in the Hermitian forms by the equivalence of *Self-Adjoint and Skew Operators of a Form*, and the polarisation formula is the polarisation identity of *Polarisation and the Hermitian Square* applied to $Q_{T}$. Its kernel is the set of the self-adjoint operators with $h(Tx,x) = 0$ for every $x$, which is zero under the hypothesis on the diagonal and is otherwise the part that the diagonal loses, by the remark of *The Form-Adjoint of an Operator*; the non-degeneracy of $h$ gives the injectivity on that kernel.
 

@@ -21,11 +21,11 @@ $$
 
 the group of all operators of a space with the form that preserve it; the three descriptions agree by the unitarity theorem of *The Adjoint of a Symmetry Operator*.
 
-**Proposition.** The unitary group is a subgroup of $GL(V)$, closed under the adjoint and in the Zariski topology, and equal to the isometry group of $h$; it is the **maximal** symmetry group of the form, in the sense that every symmetry group of the form is a subgroup of it. In the definite case it is compact; the classical instances are the orthogonal group $O(V,Q)$ of a symmetric form, the unitary group $U(V,h)$ of a Hermitian form and the symplectic group $Sp(V,\omega)$ of an alternating form, each the unitary group of its form, *The Unitary and Symplectic Groups*.
+**Proposition.** The unitary group is a subgroup of $GL(V)$, closed under the adjoint and in the Zariski topology, and equal to the isometry group of $h$; it is the **maximal** symmetry group of the form, in the sense that every symmetry group of the form is a subgroup of it. In the definite case it is compact; the classical instances are the orthogonal group $O(V,\mathfrak{Q})$ of a symmetric form, the unitary group $U(V,h)$ of a Hermitian form and the symplectic group $Sp(V,\omega)$ of an alternating form, each the unitary group of its form, *The Unitary and Symplectic Groups*.
 
 **Proof.** The group properties are the multiplicativity of the form and the closure of the conditions; maximality is the definition, an isometry of $h$ being exactly an element of $U(V,h)$; compactness in the definite case is that the group is closed and bounded in $GL(V)$, and the identifications of the classical cases are the definitions.
 
-**Remark.** The unitary group depends on the form, not on the vector space alone: $O(p,q)$ and $O(n)$ are the unitary groups of different forms on the same space, and they are not isomorphic. The maximal symmetry group is the geometric datum.
+**Remark.** The unitary group depends on the form, not on the vector space alone: $O(n,m)$ and $O(n)$ are the unitary groups of different forms on the same space, and they are not isomorphic. The maximal symmetry group is the geometric datum.
 
 ### The Lie Algebra
 
@@ -99,7 +99,7 @@ by the invariance of the Haar measure; the operators of the symmetry group on th
 
 **Example (the regular representation of a compact group).** Let $G$ be compact and $V = L^2(G)$; the regular representation is unitary, and its decomposition into irreducibles is the Peter–Weyl theorem. The unitary operators of the group are the translations and their limits, and the unitary operators commuting with the whole regular representation are the operators of convolution by the central functions, *Analysis on Compact Groups*.
 
-**Example (the indefinite case).** Let $h$ be a Hermitian form of signature $(p,q)$ and $G = U(p,q)$; the unitary group is $U(p,q)$ itself, the maximal symmetry group of the indefinite form, and it is noncompact, so the averaging that unitarises a compact representation is unavailable; the unitary representations of $U(p,q)$ are the object of the harmonic analysis of *Noncommutative Harmonic Analysis* and are not the defining representation alone.
+**Example (the indefinite case).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = U(n,m)$; the unitary group is $U(n,m)$ itself, the maximal symmetry group of the indefinite form, and it is noncompact, so the averaging that unitarises a compact representation is unavailable; the unitary representations of $U(n,m)$ are the object of the harmonic analysis of *Noncommutative Harmonic Analysis* and are not the defining representation alone.
 
 ## Summary
 

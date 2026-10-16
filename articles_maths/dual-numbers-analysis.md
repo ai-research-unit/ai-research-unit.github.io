@@ -21,7 +21,7 @@ $$
 
 where $\varepsilon^2 = 0$. The element $a$ is the **real part**, and $a'$ is the **infinitesimal part**. We write $a = \operatorname{Re} A$ and $a' = \operatorname{Inf} A$.
 
-There is no Euclidean modulus intrinsic to the algebra, because the norm $N(A) = a^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
+There is no Euclidean modulus intrinsic to the algebra, because the norm $\langle A\rangle = a^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
 
 $$
 \|A\|_E = \sqrt{a^2 + a'^2},

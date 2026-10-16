@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, on its
 underlying complex space, the four general products of *The Four General Products of the
-Biquaternion $\mathbb{C}$ Space*, and this article treats the **zero divisors** of the fourth, the
+Biquaternioid $\mathbb{C}$ Space*, and this article treats the **zero divisors** of the fourth, the
 **general quaternionic sesquilinear product**
 
 $$
@@ -55,12 +55,12 @@ element $\tilde Q$ is a **left zero divisor of $\star$** when there is a nonzero
 $\tilde Q\star\tilde R = 0$; a **right zero divisor of $\star$** when there is a nonzero $\tilde R$
 with $\tilde R\star\tilde Q = 0$; and a **zero divisor of $\star$** when it is a left zero divisor
 or a right zero divisor. The equation and the pair both name the product, so the notion is relative
-to it; the general definition, with the two-sided reading, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+to it; the general definition, with the two-sided reading, is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 Throughout this article the product is the general quaternionic sesquilinear product
 $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, **zero divisor** means
 **zero divisor of $\star$**. The zero-divisor sets of the other three general products, and the
-theorem that the four coincide, are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+theorem that the four coincide, are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ## The Criterion
 
@@ -183,8 +183,8 @@ cones are the same subset of $\mathbb{B}$.
 **The four general products have the same zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a quoted theorem that holds for the left and the right reading separately; the predicate coincides but the square does not, the square-zero set of $\star$ being of real dimension four while that of the plain product is the pure isotropic cone.**
 
 **Theorem (the four products have one zero-divisor set, quoted).** The four general products of
-*The Four General Products of the Biquaternion $\mathbb{C}$ Space* have the same zero-divisor set,
-namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+*The Four General Products of the Biquaternioid $\mathbb{C}$ Space* have the same zero-divisor set,
+namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 and it holds for the left and the right reading separately.
 
 **Proof.** The four products are $\theta(\tilde Q)\phi(\tilde R)$ with
@@ -213,7 +213,7 @@ $\tilde Q\star\tilde Q = 0$ is a zero divisor of $\star$, and the square-zero el
 proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family.
 
 **Proof.** If $\tilde Q\star\tilde Q = 0$ then $\tilde Q$ is a zero divisor with
-$\tilde R = \tilde Q$. The identification with the family $c(\hat u + i)$, its dimension and its
+$\tilde R = \tilde Q$. The identification with the family $c(\vec u + i)$, its dimension and its
 non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements
@@ -237,7 +237,7 @@ they are the nonzero elements with $C(\tilde Q) = \sum_\mu Q_\mu^2 = 0$, equival
 $\tilde Q\tilde Q^{\natural} = 0$; the left and the right reading give the same condition. The set
 is the complex cone $C = 0$ of complex dimension three and real dimension six, the same subset of
 the space that the plain product, the natural product and the general plain sesquilinear product
-cut out, a coincidence that is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* because the criterion
+cut out, a coincidence that is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* because the criterion
 is the vanishing of the central square and the four products differ only by the two slot
 involutions.
 
@@ -263,12 +263,12 @@ and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the definition of the zero divisor relative to a product and the two-sided reading.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain product, the two families and the element theory of the cone.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
-- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat u+i)$, its real dimension and its non-purity.
-- *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the product, its table and its axioms.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the definition of the zero divisor relative to a product and the two-sided reading.
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain product, the two families and the element theory of the cone.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\vec u+i)$, its real dimension and its non-purity.
+- *Introduction to the General Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the product, its table and its axioms.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.
-- *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the position of the cone in the remarkable subspaces.
+- *Remarkable Subspaces under the General Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the position of the cone in the remarkable subspaces.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.
 - *Annihilators of the General Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.md`), below this article in this category, the companion article, for the two distinct annihilators of an element and the rank table

@@ -108,7 +108,7 @@ The reduced state is not pure: it is a mixed state, and it carries the maximum p
 
 ### Step 1: The joint state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_0 + i\vec u_m)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
 
 $$
 P_{\mathrm{singlet}} = \frac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
@@ -251,7 +251,7 @@ The contrast is the operational signature of entanglement: **product states have
 | Physical process | Measurement | Evolution | Successive measurements | Entangled measurement | Reduced state |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\hat{a}\cdot\hat{b})$ | $\rho_1 = \frac{1}{2}e_0$, purity $\frac{1}{2}$, entropy $\log 2$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\rho_1 = \frac{1}{2}e_0$, purity $\frac{1}{2}$, entropy $\log 2$ |
 
 These exercises illustrate five fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), **entangled measurement** (Exercise: Two Spins in the Singlet State), and **partial trace** (Exercise: The Reduced State of an Entangled Subsystem). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$, $\mathbb{H}_\mathbb{B}$, and their tensor products.
 

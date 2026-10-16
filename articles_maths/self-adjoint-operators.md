@@ -128,7 +128,7 @@ and the calculus is order-continuous: an increasing uniformly bounded net of con
 
 *Proof.* The order criterion is the positivity of $g-f$ evaluated by the calculus; the order continuity is the spectral theorem applied to the joint algebra and the monotone convergence of the scalar integrals.
 
-**Example (the positive cone from the calculus).** The cone of positive operators is the image of the cone of nonnegative continuous functions under the calculus, the square root is the image of $\sqrt{\cdot}$, the modulus is the image of $|\cdot|$, and the polar decomposition is the operator-valued form of $z=|z|e^{i\theta}$; these are the computations of *Positive Operators and the Square Root*, here read as statements about the order embedding.
+**Example (the positive cone from the calculus).** The cone of positive operators is the image of the cone of nonnegative continuous functions under the calculus, the square root is the image of $\sqrt{\cdot}$, the modulus is the image of $|\cdot|$, and the polar decomposition is the operator-valued form of $z=|z|\exp(i\theta)$; these are the computations of *Positive Operators and the Square Root*, here read as statements about the order embedding.
 
 ## Summary
 

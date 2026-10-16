@@ -30,7 +30,7 @@ $$
 (E \otimes F)^{-} = (E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+}) ,
 $$
 
-and in the types $(p,q)$ of $T$ and $(r,s)$ of $S$ the type of the product is $(pr + qs,\, ps + qr)$.
+and in the types $(n,m)$ of $T$ and $(r,s)$ of $S$ the type of the product is $(pr + qs,\, ps + qr)$.
 
 **Proof.** This is the signature computation of *Involutive Nuclear Spaces*; it uses only the tensor product and does not need nuclearity.
 

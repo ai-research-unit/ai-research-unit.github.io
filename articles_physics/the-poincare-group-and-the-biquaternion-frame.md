@@ -44,13 +44,13 @@ $$
 $$
 is what makes the product of rotors compose Lorentz transformations, and it is the homogeneous half of the group law derived below.
 
-Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\hat u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
+Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
 $$
-\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b},
+\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
 $$
-is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\hat u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
+is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
 $$
-\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat u_{\mathrm r},
+\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
 $$
 is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde{\Lambda}=\tilde{B}\tilde{R}$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.
 
@@ -93,9 +93,9 @@ It is not an accident of parametrisation that the translation is separated out. 
 
 **A rotor conjugation cannot shift.** Conjugation fixes the origin: $\tilde{\Lambda}\,0\,\tilde{\Lambda}^{*}=0$ for every rotor. A shift by $\tilde{a}\ne0$ sends $0$ to $\tilde{a}$. Since both maps are linear-plus-constant and they disagree at one point, no rotor conjugation equals a nonzero translation.
 
-**Conjugation preserves the biquaternion norm pointwise; a shift does not.** For any rotor, $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*})=N(\tilde{Q})$. A shift changes the biquaternion norm of a single element:
+**Conjugation preserves the biquaternion norm pointwise; a shift does not.** For any rotor, $\langle\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$. A shift changes the biquaternion norm of a single element:
 $$
-N(\tilde{Q}+\tilde{a})=N(\tilde{Q})+\mathrm{Sc}\bigl(\tilde{Q}\tilde{a}^{\natural}+\tilde{a}\tilde{Q}^{\natural}\bigr)+N(\tilde{a}),
+\langle\tilde{Q}+\tilde{a}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}+\mathrm{Sc}\bigl(\tilde{Q}\tilde{a}^{\natural}+\tilde{a}\tilde{Q}^{\natural}\bigr)+\langle\tilde{a}\rangle_{\natural},
 $$
 and the correction terms vanish for all $\tilde{Q}$ only when $\tilde{a}=0$. The biquaternion norm of a four-vector is origin-dependent; only the biquaternion norm of a **difference** is intrinsic. This is why the affine map, and not a linear one, is the physically correct transformation: the interval $(\tilde{Q}_1-\tilde{Q}_2)\overline{(\tilde{Q}_1-\tilde{Q}_2)}$ is unchanged by the shift, since the displacements cancel, and a Poincaré transformation preserves it.
 
@@ -106,7 +106,7 @@ $$
 \mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
 \qquad [P_\mu,P_\nu]=0,
 $$
-with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde{K}\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{a})\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$, the multiplier is $e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a}) = \langle\tilde{K},\tilde{a}\rangle$, not $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = \langle\tilde{K},\tilde{a}\rangle_{\natural}$: for $\tilde{K},\tilde{a}\in\mathbb{M}_-$ the latter equals $-(k_0a_0)+\vec k\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
+with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(a^\mu\partial_\mu)$, and on a plane wave of four-wavevector $\tilde{K}\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{a})\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde{K}\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{a}))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a}) = \langle\tilde{K},\tilde{a}\rangle$, not $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = \langle\tilde{K},\tilde{a}\rangle_{\natural}$: for $\tilde{K},\tilde{a}\in\mathbb{M}_-$ the latter equals $-(k_0a_0)+\vec k\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
 
 ## The Semidirect Structure
 
@@ -238,12 +238,12 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors and displacements |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
-| $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
+| $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
 | $\tilde{V}=\gamma(ic\,e_0+\vec v)$, $\tilde{\Lambda}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{a}\in\mathbb{M}_-$ | Translation (displacement) |
 | $(\tilde{\Lambda},\tilde{a})$ | Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$ |

@@ -187,7 +187,7 @@ The split biquaternion hyperbolic geometry is the three-dimensional member of a 
 
 Two features of the table deserve emphasis. First, the one-dimensional case has only hyperbolic isometries: the group $SO^{+}(1,1)$ is a single one-parameter family, and the three types of the three-dimensional case collapse to one because there is no compact isotropy and no nilpotent part. The passage to dimension three creates the compact rotations of $\operatorname{Im}\mathbb{H}$ and, at the same time, the parabolic boundary-fixing isometries. Second, the compact case is exactly complementary: the quaternion sphere has only elliptic isometries, no boundary, and the form is definite, while the split biquaternion hyperbolic space has a boundary of dimension two, a non-compact isometry group and a non-compact space.
 
-The relation to the split complex plane is not merely an analogy: the split complex hyperbolic one-parameter group $\{e^{\theta j}\}$ of *Hyperbolic Rotations* sits inside the split biquaternion algebra as the one-parameter group of the neutral plane, and its action on $H^1$ is the restriction of the action on $H^3$ to the invariant geodesic of a hyperbolic isometry. In this sense the one-dimensional hyperbolic geometry is the skeleton of the three-dimensional one, the remaining content being the compact rotations of the two-sphere at infinity and the parabolic translations.
+The relation to the split complex plane is not merely an analogy: the split complex hyperbolic one-parameter group $\{\exp(\theta j)\}$ of *Hyperbolic Rotations* sits inside the split biquaternion algebra as the one-parameter group of the neutral plane, and its action on $H^1$ is the restriction of the action on $H^3$ to the invariant geodesic of a hyperbolic isometry. In this sense the one-dimensional hyperbolic geometry is the skeleton of the three-dimensional one, the remaining content being the compact rotations of the two-sphere at infinity and the parabolic translations.
 
 ## Summary
 
@@ -227,7 +227,7 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $\operatorname{Hor}(\xi,s)$ | Horosphere centred at the boundary point $\xi$ |
 | $\ell > 0$ | Translation length of a hyperbolic isometry |
 | $H^1\cong\mathbb{R}$ | One-dimensional hyperbolic space, the split complex case |
-| $e^{\theta j} = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
+| $\exp(\theta j) = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
 
 ## Further Reading
 

@@ -51,7 +51,7 @@ $$
 **Theorem.** The one-sided operators are the edge rows of the Conway basis:
 
 $$
-L_{e_n}=e_n[\,]e_0,\qquad R_{e_m}=e_0[\,]e_m .
+L_{e_n}=e_n[\,]e_0,\qquad R_{e_m}=e_0[\,]e_m.
 $$
 
 *Proof.* The definitions: $e_n[\,]e_0(\tilde q)=e_n\tilde q\,e_0=e_n\tilde q$ and $e_0[\,]e_m(\tilde q)=e_0\tilde qe_m=\tilde qe_m$.

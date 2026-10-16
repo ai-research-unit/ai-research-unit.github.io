@@ -61,9 +61,9 @@ $$
 
 the largest singular value, the identification of the injective norm of *Topological Tensor Products*. For the identity matrix this is $1$, and for a diagonal matrix it is the largest modulus of a diagonal entry.
 
-**Example (the shift on $\ell^p$).** On $X = \ell^p$, $1 \leq p \leq \infty$, the right shift $R(x_{1}, x_{2}, \dots) = (0, x_{1}, x_{2}, \dots)$ is a linear isometry, so $R \in B(\ell^p)$ with $\lVert R\rVert = 1$; the left shift $L(x_{1}, x_{2}, \dots) = (x_{2}, x_{3}, \dots)$ is surjective with $\lVert L\rVert = 1$, and $LR = \mathrm{id}$ while $RL \neq \mathrm{id}$, so $B(X)$ is not commutative.
+**Example (the shift on $\ell^{n}$).** On $X = \ell^{n}$, $1 \leq p \leq \infty$, the right shift $R(x_{1}, x_{2}, \dots) = (0, x_{1}, x_{2}, \dots)$ is a linear isometry, so $R \in B(\ell^{n})$ with $\lVert R\rVert = 1$; the left shift $L(x_{1}, x_{2}, \dots) = (x_{2}, x_{3}, \dots)$ is surjective with $\lVert L\rVert = 1$, and $LR = \mathrm{id}$ while $RL \neq \mathrm{id}$, so $B(X)$ is not commutative.
 
-**Example (diagonal and multiplication operators).** On $\ell^p$ the diagonal operator $D_{\varphi}(x_{k}) = (\varphi_{k}x_{k})$ is bounded exactly when $\varphi \in \ell^{\infty}$, and then $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$. On $C(K)$ for a compact Hausdorff space $K$ the multiplication operator $M_{f}(g) = fg$ is bounded for every $f \in C(K)$, with $\lVert M_{f}\rVert = \lVert f\rVert_{\infty}$.
+**Example (diagonal and multiplication operators).** On $\ell^{n}$ the diagonal operator $D_{\varphi}(x_{k}) = (\varphi_{k}x_{k})$ is bounded exactly when $\varphi \in \ell^{\infty}$, and then $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$. On $C(K)$ for a compact Hausdorff space $K$ the multiplication operator $M_{f}(g) = fg$ is bounded for every $f \in C(K)$, with $\lVert M_{f}\rVert = \lVert f\rVert_{\infty}$.
 
 **Example (functionals).** The continuous linear functionals are the elements of $E' = \mathcal{L}(E, \mathbb{K})$; for a normed space $X$ one has $\mathcal{L}(X, \mathbb{K}) = B(X, \mathbb{K}) = X^{*}$ with the norm $\lVert \varphi\rVert = \sup_{\lVert x\rVert \leq 1}\lvert \varphi(x)\rvert$, and the dual norm is computed by the polar calculus of *Duality Theory*.
 

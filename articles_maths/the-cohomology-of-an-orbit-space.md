@@ -95,7 +95,7 @@ is an isomorphism onto the invariants, and it is injective with image the invari
 **Theorem (Cartan–Leray).** Let the involution act, and consider the two-fold covering $\pi : X\to Q$ of the free part; then the cohomology of the quotient is the abutment of the spectral sequence
 
 $$
-E_2^{p,q} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2),
+E_2^{n,m} = H^p(\mathbb{Z}/2; H^q(X;\mathbb{F}_2)) \ \Longrightarrow \ H^{p+q}(Q;\mathbb{F}_2),
 $$
 
 with coefficients in the cohomology of $X$ regarded as a module over the group ring $\mathbb{F}_2[\mathbb{Z}/2]$ through the action $\sigma^*$; the sequence is natural for equivariant maps, and for the free action it converges to the quotient cohomology from the group cohomology of the coefficient module.
@@ -182,7 +182,7 @@ and the quotient is a topological manifold only when $V^-=0$ or $V^+=0$, that is
 
 ## Summary
 
-The orbit space $Q = X/\sigma$ of an involution is the quotient of the space by the equivalence $x\sim\sigma x$, with projection $\pi$ that is a double cover over the complement of the fixed set and a homeomorphism on the fixed set. Two comparisons govern its cohomology: the pullback $\pi^* : H^*(Q;k)\to H^*(X;k)$, whose image lies in the invariants and which satisfies the transfer identities $\tau\pi^*=2$ and $\pi^*\tau=1+\sigma^*$, and the comparison map $\pi_G^* : H^*(Q;k)\to H_{\mathbb{Z}/2}^*(X;k)$ from the orbit space to the homotopy quotient, which is an isomorphism exactly for the free action. Over a field in which two is invertible Grothendieck's theorem gives $H^*(Q;k)\cong H^*(X;k)^\sigma$, so the quotient cohomology is the invariant cohomology and the Euler characteristics are related by $\chi(Q)=\tfrac12(\chi(X)+\chi(F))$; over $\mathbb{F}_2$ the quotient is computed by the Cartan–Leray spectral sequence $E_2^{p,q}=H^p(\mathbb{Z}/2;H^q(X;\mathbb{F}_2))\Rightarrow H^{p+q}(Q;\mathbb{F}_2)$, the pullback has a kernel that vanishes on the free part and is annihilated by the Euler class, and the fixed set is the singular locus of the quotient, glued to the free part by Mayer–Vietoris. The transfer and the Gysin sequence are those of *The Transfer and the Involution* and *The Gysin Sequence of a Two-Fold Covering*, the equivariant cohomology and its localisation are those of *Equivariant Cohomology*, and the fixed-set theory is that of *The Mod 2 Cohomology of an Involution*. Nothing analytic and nothing geometric was used.
+The orbit space $Q = X/\sigma$ of an involution is the quotient of the space by the equivalence $x\sim\sigma x$, with projection $\pi$ that is a double cover over the complement of the fixed set and a homeomorphism on the fixed set. Two comparisons govern its cohomology: the pullback $\pi^* : H^*(Q;k)\to H^*(X;k)$, whose image lies in the invariants and which satisfies the transfer identities $\tau\pi^*=2$ and $\pi^*\tau=1+\sigma^*$, and the comparison map $\pi_G^* : H^*(Q;k)\to H_{\mathbb{Z}/2}^*(X;k)$ from the orbit space to the homotopy quotient, which is an isomorphism exactly for the free action. Over a field in which two is invertible Grothendieck's theorem gives $H^*(Q;k)\cong H^*(X;k)^\sigma$, so the quotient cohomology is the invariant cohomology and the Euler characteristics are related by $\chi(Q)=\tfrac12(\chi(X)+\chi(F))$; over $\mathbb{F}_2$ the quotient is computed by the Cartan–Leray spectral sequence $E_2^{n,m}=H^p(\mathbb{Z}/2;H^q(X;\mathbb{F}_2))\Rightarrow H^{p+q}(Q;\mathbb{F}_2)$, the pullback has a kernel that vanishes on the free part and is annihilated by the Euler class, and the fixed set is the singular locus of the quotient, glued to the free part by Mayer–Vietoris. The transfer and the Gysin sequence are those of *The Transfer and the Involution* and *The Gysin Sequence of a Two-Fold Covering*, the equivariant cohomology and its localisation are those of *Equivariant Cohomology*, and the fixed-set theory is that of *The Mod 2 Cohomology of an Involution*. Nothing analytic and nothing geometric was used.
 
 ## Summary of Notation
 
@@ -195,7 +195,7 @@ The orbit space $Q = X/\sigma$ of an involution is the quotient of the space by 
 | $\tau : H^*(X;k)\to H^*(Q;k)$ | Transfer (free case); $\tau\pi^*=2$, $\pi^*\tau=N$ |
 | $H^*(Q;k)\cong H^*(X;k)^\sigma$ | Grothendieck's theorem, two invertible in $k$ |
 | $\chi(Q)=\tfrac12(\chi(X)+\chi(F))$ | Euler characteristics over $\mathbb{Q}$ |
-| $E_2^{p,q}=H^p(\mathbb{Z}/2;H^q(X;\mathbb{F}_2))\Rightarrow H^{p+q}(Q;\mathbb{F}_2)$ | Cartan–Leray spectral sequence of the quotient |
+| $E_2^{n,m}=H^p(\mathbb{Z}/2;H^q(X;\mathbb{F}_2))\Rightarrow H^{p+q}(Q;\mathbb{F}_2)$ | Cartan–Leray spectral sequence of the quotient |
 | $\pi_G : X_{\mathbb{Z}/2}\to Q$, $\pi_G^*$ | Comparison map to the homotopy quotient and on cohomology |
 | $\pi_G^* : H^*(Q;k)\cong H_{\mathbb{Z}/2}^*(X;k)$ | Isomorphism exactly for the free action |
 | $\pi(F)$ | Image of the fixed set; the singular locus of the projection |

@@ -25,7 +25,7 @@ The word semisimple is used in the sense of *Simple and Semisimple Modules*: a r
 
 | Ring | Decomposition | Idempotents | Introduced in |
 |---|---|---|---|
-| $\mathbb{D}$ | $\mathbb{R} \times \mathbb{R}$, via $j \mapsto (1, -1)$ | $e_{\pm} = \tfrac12(1 \pm j)$ | *Split-Complex Algebra* |
+| $\mathbb{D}$ | $\mathbb{R} \times \mathbb{R}$, via $j \mapsto (1, -1)$ | $\Pi_{1,2} = \tfrac12(1 \pm j)$ | *Split-Complex Algebra* |
 | $\mathbb{R} \times \mathbb{R}$ | the product itself | $(1,0)$ and $(0,1)$ | *Examples of Rings and Fields* |
 | $\mathbb{C} \times \mathbb{C}$ | the product itself | $(1,0)$ and $(0,1)$ | *Examples of Rings and Fields* |
 | $\mathbb{Z}/6\mathbb{Z}$ | $\mathbb{F}_2 \times \mathbb{F}_3$ | four idempotents | *Modular Arithmetic and the Ring of Residues* |
@@ -89,7 +89,7 @@ The contrast between $\mathbb{D}$ and $\mathbb{D}'$ is the whole content of the 
 |---|---|---|
 | $M_n(\mathbb{R})$, $n \geq 2$ | semisimple and simple as a ring, but not commutative and not a product of fields | *Matrix Algebras* |
 | $\mathbb{H}$ | a division ring, finite-dimensional over $\mathbb{R}$, but not commutative | *Quaternion Algebra* |
-| $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | not commutative, and with zero divisors; not in the commutative Artinian split | *Biquaternions as a Vector Space over $\mathbb{C}$*, *Split-Biquaternion Algebra* |
+| $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | not commutative, and with zero divisors; not in the commutative Artinian split | *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Split-Biquaternion Algebra* |
 | $\mathbb{O}$ | not a ring | *Octonion Algebra* |
 | $\mathbb{Z}$, $\mathbb{Z}[x]$, $k[x]$ | commutative and reduced, but not Artinian, so the structure theorem does not apply | *The Integers*, *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}_{(p)}$, $k[[x]]$ | local and reduced, but not Artinian: a discrete valuation ring has dimension $1$ | *Localization and the Fraction Field*, *Examples of Rings and Fields* |
@@ -106,7 +106,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{D}$ | The split-complex numbers, $\mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}$ |
 | $\mathbb{D}'$ | The dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
-| $e_{\pm}$ | The idempotents $\tfrac12(1 \pm j)$ of $\mathbb{D}$ |
+| $\Pi_{1,2}$ | The idempotents $\tfrac12(1 \pm j)$ of $\mathbb{D}$ |
 | $\mathrm{M}$ | The maximal ideal of a local ring |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$ | Residue ring, prime field |
 | $k[x]/(x^n)$, $\mathbb{F}_2[C_2]$ | Truncated polynomial ring, a local group ring |

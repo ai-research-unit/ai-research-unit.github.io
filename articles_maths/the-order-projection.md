@@ -131,7 +131,7 @@ Let $E = \ell^\infty$ with the pointwise order, a Dedekind complete Riesz space.
 
 ### The Lebesgue Space
 
-Let $E = L^p(X,\mu)$ for $1<p<\infty$ with the almost-everywhere order, a Dedekind complete Riesz space. Its bands are the subspaces $L^p(A)$ of functions supported on a measurable set $A$; the order projections are the conditional expectations $P_A f = \mathbb{E}(f\mid A)\mathbf{1}_A = f\mathbf{1}_A$, and the Boolean algebra of projections is the measure algebra of $(X,\mu)$. For $p = 1$ and $p = \infty$ the lattice is still complete, and the norm is not a lattice norm in the same strict sense; the normed theory is not entered here.
+Let $E = L^{n}(X,\mu)$ for $1<p<\infty$ with the almost-everywhere order, a Dedekind complete Riesz space. Its bands are the subspaces $L^{n}(A)$ of functions supported on a measurable set $A$; the order projections are the conditional expectations $P_A f = \mathbb{E}(f\mid A)\mathbf{1}_A = f\mathbf{1}_A$, and the Boolean algebra of projections is the measure algebra of $(X,\mu)$. For $p = 1$ and $p = \infty$ the lattice is still complete, and the norm is not a lattice norm in the same strict sense; the normed theory is not entered here.
 
 ### The Continuous Functions
 

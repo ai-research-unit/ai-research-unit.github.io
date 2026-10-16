@@ -10,10 +10,10 @@ The base is a field $F$ of characteristic not $2$ throughout, and $F(t)$ is its 
 
 ## The Places of $F(t)$
 
-A **place** of $F(t)$ is a $\mathbb{Z}$-valued valuation that is trivial on $F$, that is, a surjective map $v : F(t)^\times \to \mathbb{Z}$ with $v(xy) = v(x) + v(y)$ and $v(x + y) \geq \min\{v(x), v(y)\}$, whose restriction to $F^\times$ is zero. There are two kinds of places. Each monic irreducible polynomial $p \in F[t]$ determines the valuation $v_p$ with $v_p(p) = 1$, whose residue field is
+A **place** of $F(t)$ is a $\mathbb{Z}$-valued valuation that is trivial on $F$, that is, a surjective map $v : F(t)^\times \to \mathbb{Z}$ with $v(xy) = v(x) + v(y)$ and $v(x + y) \geq \min\{v(x), v(y)\}$, whose restriction to $F^\times$ is zero. There are two kinds of places. Each monic irreducible polynomial $n \in F[t]$ determines the valuation $v_n$ with $v_n(n) = 1$, whose residue field is
 
 $$
-\kappa_p = F_p = F[t]/(p), \qquad [F_p : F] = \deg p ;
+\kappa_n = F_n = F[t]/(n), \qquad [F_n : F] = \deg n ;
 $$
 
 and there is the place at infinity, determined by $v_\infty(h) = -\deg h$, whose residue field is $F_\infty = F$. We write $P$ for the set of monic irreducible polynomials and
@@ -22,7 +22,7 @@ $$
 P' = P \cup \{\infty\}
 $$
 
-for the set of all places. The **degree** of a place is $[\kappa_p : F]$, so a finite place has degree $\deg p$ and the place at infinity has degree $1$.
+for the set of all places. The **degree** of a place is $[\kappa_n : F]$, so a finite place has degree $\deg n$ and the place at infinity has degree $1$.
 
 ## The Tame Symbol and Milnor's Exact Sequence
 
@@ -36,10 +36,10 @@ $$
 
 where $f = u_f\pi^{v(f)}$ and $g = u_g\pi^{v(g)}$ are the decompositions into a power of the uniformiser and a unit, and $k_1(\kappa) = \kappa^\times/\kappa^{\times 2}$. That article proves that $\partial_v$ annihilates the defining relations of the symbols, so that it descends to a homomorphism on $k_2$.
 
-At a finite place $p$ of $F(t)$ the uniformiser is $p$ and the decomposition is $f = p^{v_p(f)}u_f$ with $u_f = f/p^{v_p(f)}$, so the entry of a symbol is the class of
+At a finite place $n$ of $F(t)$ the uniformiser is $n$ and the decomposition is $f = n^{v_n(f)}u_f$ with $u_f = f/n^{v_n(f)}$, so the entry of a symbol is the class of
 
 $$
-(-1)^{v_p(f)v_p(g)}\left(\frac{f}{p^{v_p(f)}}\right)^{-v_p(g)}\left(\frac{g}{p^{v_p(g)}}\right)^{v_p(f)} \quad \text{in } F_p^\times/F_p^{\times 2}.
+(-1)^{v_n(f)v_n(g)}\left(\frac{f}{n^{v_n(f)}}\right)^{-v_n(g)}\left(\frac{g}{n^{v_n(g)}}\right)^{v_n(f)} \quad \text{in } F_n^\times/F_n^{\times 2}.
 $$
 
 At the place at infinity the uniformiser is $1/t$, and the entry of a symbol lies in $F^\times/F^{\times 2}$.
@@ -49,13 +49,13 @@ At the place at infinity the uniformiser is $1/t$, and the entry of a symbol lie
 **Theorem (Milnor).** Let $F$ be a field of characteristic not $2$. The tame symbols at the places of $F(t)$ sum to the **ramification map**
 
 $$
-\partial = \sum_{p \in P'} \partial_p : k_2(F(t)) \longrightarrow \bigoplus_{p \in P'} k_1(\kappa_p),
+\partial = \sum_{n \in P'} \partial_n : k_2(F(t)) \longrightarrow \bigoplus_{n \in P'} k_1(\kappa_n),
 $$
 
-the norm maps of the residue field extensions sum to $N : \bigoplus_{p\in P'}k_1(\kappa_p) \to k_1(F)$, the place at infinity contributing the identity of $k_1(F)$, and the sequence
+the norm maps of the residue field extensions sum to $N : \bigoplus_{n\in P'}k_1(\kappa_n) \to k_1(F)$, the place at infinity contributing the identity of $k_1(F)$, and the sequence
 
 $$
-0 \longrightarrow k_2(F) \longrightarrow k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{p \in P'} k_1(\kappa_p) \xrightarrow{\ N\ } k_1(F) \longrightarrow 0
+0 \longrightarrow k_2(F) \longrightarrow k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{n \in P'} k_1(\kappa_n) \xrightarrow{\ N\ } k_1(F) \longrightarrow 0
 $$
 
 is exact.
@@ -65,7 +65,7 @@ The first map is extension of scalars from $F$ to $F(t)$. The theorem is Milnor'
 **Definition.** The **group of ramification sequences** of $F$ is
 
 $$
-R_2(F) = \ker N = \operatorname{im}\partial \subseteq \bigoplus_{p \in P'} k_1(\kappa_p),
+R_2(F) = \ker N = \operatorname{im}\partial \subseteq \bigoplus_{n \in P'} k_1(\kappa_n),
 $$
 
 the equality being exactness of the sequence at the middle term.
@@ -74,22 +74,22 @@ Exactness at $k_2(F(t))$ says that a class of $k_2(F(t))$ has trivial ramificati
 
 ### Ramification Sequences
 
-**Definition.** For a finite set $S \subseteq P'$ its **degree** is $\deg(S) = \sum_{p \in S}[\kappa_p : F]$. For a sequence $\rho = (\rho_p)_{p \in P'}$ the **support** is the finite set
+**Definition.** For a finite set $S \subseteq P'$ its **degree** is $\deg(S) = \sum_{n \in S}[\kappa_n : F]$. For a sequence $\rho = (\rho_n)_{n \in P'}$ the **support** is the finite set
 
 $$
-\operatorname{Supp}(\rho) = \{p \in P' : \rho_p \neq 1\},
+\operatorname{Supp}(\rho) = \{n \in P' : \rho_n \neq 1\},
 $$
 
 and the **degree** of $\rho$ is $\deg(\rho) = \deg(\operatorname{Supp}\rho)$. A ramification sequence $\rho \in R_2(F)$ is **represented by a symbol** if there are $f, g \in F(t)^\times$ with $\rho = \partial(\{f,g\})$.
 
 Since the symbols generate $k_2(F(t))$ and $\partial$ is additive, the sequences of symbols generate $R_2(F)$; the question is whether a given sequence is the sequence of one symbol, and it is the question the Bezoutian form answers.
 
-**Remark.** The norm condition of the exact sequence is a genuine restriction, and it fixes the entry at the place at infinity once the finitely many entries at the finite places are given. For a finite place $p$ and a constant $c \in F^\times$ the class of $c$ is the class of the constant in $\kappa_p^\times/\kappa_p^{\times 2}$, whose norm to $F$ is $c^{[\kappa_p : F]}$; so the product of the norms of the finite entries must be trivial in $k_1(F)$, and the entry at infinity is then forced.
+**Remark.** The norm condition of the exact sequence is a genuine restriction, and it fixes the entry at the place at infinity once the finitely many entries at the finite places are given. For a finite place $n$ and a constant $c \in F^\times$ the class of $c$ is the class of the constant in $\kappa_n^\times/\kappa_n^{\times 2}$, whose norm to $F$ is $c^{[\kappa_n : F]}$; so the product of the norms of the finite entries must be trivial in $k_1(F)$, and the entry at infinity is then forced.
 
 **Definition (the sequence of a pair).** Let $g \in F[t]$ be monic and square-free and let $f \in F[t]$ be coprime to $g$. Write $R(f/g)$ for the element of $R_2(F)$ whose entries are
 
 $$
-R(f/g)_p = \{f\} \quad \text{for every } p \in P \text{ dividing } g, \qquad R(f/g)_p = 1 \quad \text{for every other finite place } p,
+R(f/g)_n = \{f\} \quad \text{for every } n \in P \text{ dividing } g, \qquad R(f/g)_n = 1 \quad \text{for every other finite place } n,
 $$
 
 the entry at infinity being the one that the norm condition forces. The definition is the source's, and it is the shape a sequence takes when its support is the set of factors of a square-free polynomial.
@@ -133,34 +133,34 @@ while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}
 **Definition.** Let $g \in F[t]$ be monic of degree $n$ and square-free and let $f \in F[t]$ be coprime to $g$. The **Bezoutian form** of $f$ modulo $g$ is the quadratic form
 
 $$
-q_{f,g} : E_g \longrightarrow F, \qquad q_{f,g}(x) = s_g\big(f(\theta)x^2\big),
+m_{f,g} : E_g \longrightarrow F, \qquad m_{f,g}(x) = s_g\big(f(\theta)x^2\big),
 $$
 
 and its class in the Witt group of *The Witt Group and the Grothendieck–Witt Ring* is written
 
 $$
-B(f/g) = [q_{f,g}] \in W(F).
+B(f/g) = [m_{f,g}] \in W(F).
 $$
 
-The polar form of $q_{f,g}$ is the bilinear form $b(x,y) = s_g(f(\theta)xy)$, so in the basis $1, \theta, \ldots, \theta^{n-1}$ the Gram matrix is
+The polar form of $m_{f,g}$ is the bilinear form $\mathfrak{b}(x,y) = s_g(f(\theta)xy)$, so in the basis $1, \theta, \ldots, \theta^{n-1}$ the Gram matrix is
 
 $$
-G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\theta^{i+j}), \qquad q_{f,g}\Big(\sum_{i=0}^{n-1}x_i\theta^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
+G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\theta^{i+j}), \qquad m_{f,g}\Big(\sum_{i=0}^{n-1}x_i\theta^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
 $$
 
-The matrix $G$ is symmetric because $i + j = j + i$, so $q_{f,g}$ is a quadratic form in the sense of *Quadratic Forms and Polarisation*, with $q(x) = B(x,x)$ for its polar form $B$.
+The matrix $G$ is symmetric because $i + j = j + i$, so $m_{f,g}$ is a quadratic form in the sense of *Quadratic Forms and Polarisation*, with $\mathfrak{Q}(x) = B(x,x)$ for its polar form $B$.
 
 **Remark (invariance).** For $g$ monic and square-free and $f$ coprime to $g$ the Bezoutian depends on the pair only through the class of $f$ modulo $g$ and modulo squares: for $h \in F[t]$ coprime to $g$ and $c \in F^\times$ one has
 
 $$
-q_{f h^2, g} \cong q_{f,g} \ \text{ via } x \mapsto hx, \qquad q_{cf,g} = c\,q_{f,g}, \qquad q_{f^{-1},g} \cong q_{f,g} \ \text{ via } x \mapsto fx,
+m_{f h^2, g} \cong m_{f,g} \ \text{ via } x \mapsto hx, \qquad m_{cf,g} = c\,m_{f,g}, \qquad m_{f^{-1},g} \cong m_{f,g} \ \text{ via } x \mapsto fx,
 $$
 
 on $E_g$. In particular $B(f/g)$ depends on $f$ only through its class in $E_g^\times/E_g^{\times 2}$, and the element $R(f/g)$ of the definition above is therefore attached to the pair in a way compatible with the form.
 
-**Theorem (non-degeneracy).** Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $q_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.
+**Theorem (non-degeneracy).** Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $m_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.
 
-**Proof for $n = 1$.** Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $q_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.
+**Proof for $n = 1$.** Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $m_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.
 
 The non-degeneracy is the reason the Bezoutian is taken over the square-free $g$ and the coprime $f$: the form is then a genuine element of the Witt group, and its triviality is a meaningful condition.
 
@@ -170,7 +170,7 @@ $$
 \operatorname{Bez}(f,g)(x,y) = \frac{f(x)g(y) - f(y)g(x)}{x-y},
 $$
 
-whose coefficient matrix $\mathcal{B}(f,g)$ is symmetric, whose determinant is $\pm\operatorname{Res}(f,g)$, and which is non-degenerate exactly when $\gcd(f,g) = 1$. The form $q_{f,g}$ above is the normalisation of Becher and Raczek, and it is a different quadratic form from the one of the classical matrix in general: for $f = t - 2$ and $g = t^2 - 2t - 2$ the classical form is negative definite, while $q_{f,g}$ is positive definite. The classical Bezoutian and its determinant are treated in the further reading below.
+whose coefficient matrix $\mathcal{B}(f,g)$ is symmetric, whose determinant is $\pm\operatorname{Res}(f,g)$, and which is non-degenerate exactly when $\gcd(f,g) = 1$. The form $m_{f,g}$ above is the normalisation of Becher and Raczek, and it is a different quadratic form from the one of the classical matrix in general: for $f = t - 2$ and $g = t^2 - 2t - 2$ the classical form is negative definite, while $m_{f,g}$ is positive definite. The classical Bezoutian and its determinant are treated in the further reading below.
 
 ### The Computation Rules
 
@@ -192,13 +192,13 @@ $$
 
 where $[1]$ is the class of the one-dimensional form $\langle 1\rangle$.
 
-**The second rule in a special case.** Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\theta^2 = 1$, and $q_{t,g}(x) = s_g(\theta x^2)$ has Gram matrix
+**The second rule in a special case.** Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\theta^2 = 1$, and $m_{t,g}(x) = s_g(\theta x^2)$ has Gram matrix
 
 $$
 G_{ij} = s_g(\theta^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\theta) & s_g(\theta^2) \\ s_g(\theta^2) & s_g(\theta^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
 $$
 
-because $s_g(1) = s_g(\theta^3) = 0$ and $s_g(\theta) = 1$; so $q_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $q_{g,t}(x) = s_t((\theta^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.
+because $s_g(1) = s_g(\theta^3) = 0$ and $s_g(\theta) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\theta^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.
 
 ### A Lemma on Even Degrees
 
@@ -218,7 +218,7 @@ $$
 B\!\left(\frac{t}{g_2}\right) = [1] - B\!\left(\frac{g_2}{t}\right) = [1] - [b].
 $$
 
-Because $g_1t$ is a square modulo $g_2$, the invariance of $q_{f,g}$ under multiplication of $f$ by a square and under inversion gives $B(g_1/g_2) = B(t/g_2)$, so $B(g_1/g_2) = [1]-[b]$; and the second rule applied to the pair $g_1, g_2$, whose degrees have the same parity, gives $B(g_2/g_1) = -B(g_1/g_2) = [b]-[1]$. Since $a_if$ is a square modulo $g_i$, the form $B(fg_j/g_i)$ differs from $a_iB(g_j/g_i)$ by a scalar, so the first rule gives
+Because $g_1t$ is a square modulo $g_2$, the invariance of $m_{f,g}$ under multiplication of $f$ by a square and under inversion gives $B(g_1/g_2) = B(t/g_2)$, so $B(g_1/g_2) = [1]-[b]$; and the second rule applied to the pair $g_1, g_2$, whose degrees have the same parity, gives $B(g_2/g_1) = -B(g_1/g_2) = [b]-[1]$. Since $a_if$ is a square modulo $g_i$, the form $B(fg_j/g_i)$ differs from $a_iB(g_j/g_i)$ by a scalar, so the first rule gives
 
 $$
 B\!\left(\frac{f}{g_1g_2}\right) = B\!\left(\frac{fg_2}{g_1}\right) + B\!\left(\frac{fg_1}{g_2}\right) \sim a_1\big([b]-[1]\big) + a_2\big([1]-[b]\big).
@@ -242,13 +242,13 @@ $$
 
 The two implications are the lemma and the theorem of Becher and Raczek, quoted as standard: a symbol whose ramification is the sequence of a pair has trivial Bezoutian, and a pair whose Bezoutian is trivial has its sequence represented by a symbol.
 
-**Proposition (the concrete form).** Let $a_1, a_2 \in F^\times$ and let $g_1, g_2 \in F[t]$ be monic of even degree and coprime, with $g_1t$ a square modulo $g_2$. Assume that the quadratic form $\langle 1, -a_1a_2\rangle$ over $F(t)$ does not represent $g_2(0)$, and that $a_i$ is a non-square in $\kappa_p$ for every irreducible factor $p$ of $g_i$. Then
+**Proposition (the concrete form).** Let $a_1, a_2 \in F^\times$ and let $g_1, g_2 \in F[t]$ be monic of even degree and coprime, with $g_1t$ a square modulo $g_2$. Assume that the quadratic form $\langle 1, -a_1a_2\rangle$ over $F(t)$ does not represent $g_2(0)$, and that $a_i$ is a non-square in $\kappa_n$ for every irreducible factor $n$ of $g_i$. Then
 
 $$
 \partial\big(\{g_1, a_1\} + \{g_2, a_2\}\big) \neq \partial(\sigma) \qquad \text{for every symbol } \sigma \in k_2(F(t)).
 $$
 
-**Proof.** Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{p \in P : p \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis.
+**Proof.** Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{n \in P : n \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis.
 
 ## The Example over $\mathbb{Q}$
 
@@ -282,7 +282,7 @@ $$
 
 Indeed $2f \equiv 4$ modulo $g_1$ and $6f \equiv 36$ modulo $g_2$ are squares, so the pair satisfies the hypotheses of the lemma with $a_1 = 2$, $a_2 = 6$ and $b = g_2(0) = 2$.
 
-The Bezoutian form $q_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \theta, \theta^2, \theta^3$ its Gram matrix $G_{ij} = s_g(f\theta^{i+j})$ is
+The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \theta, \theta^2, \theta^3$ its Gram matrix $G_{ij} = s_g(f\theta^{i+j})$ is
 
 $$
 G = \begin{pmatrix}
@@ -296,7 +296,7 @@ $$
 symmetric, of determinant $144$ and signature $(2,2)$. Its Lagrange diagonalisation over $\mathbb{Q}$ is
 
 $$
-q_{f,g_1g_2} \cong \langle -2, 4, -3, 6\rangle \cong 6\,\langle 1,-2,-3,6\rangle = 6\,\langle\!\langle 2,3\rangle\!\rangle,
+m_{f,g_1g_2} \cong \langle -2, 4, -3, 6\rangle \cong 6\,\langle 1,-2,-3,6\rangle = 6\,\langle\!\langle 2,3\rangle\!\rangle,
 $$
 
 so the Bezoutian is a scalar multiple of the Pfister form $\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle = \langle\!\langle 12, 2\rangle\!\rangle = \langle\!\langle 2,3\rangle\!\rangle$ of the lemma, as it must be. That Pfister form is the norm form of the quaternion algebra $(2,3)_{\mathbb{Q}}$, and that algebra is a division algebra, so the form is anisotropic; hence the Bezoutian form is anisotropic, in particular not hyperbolic, and $B(f/g_1g_2) \neq 0$ in $W(\mathbb{Q})$. By the criterion, the sequence $\rho$ is not represented by a symbol.
@@ -318,21 +318,21 @@ and the ramification of $B$ differs from the ramification of every quaternion al
 
 In particular, if $(a,b)_F$ is not split, then the ramification of $B$ is not the ramification of any quaternion algebra over $F(t)$, a situation the source records by saying that $B$ has Faddeev index $4$; then $B$ is a division algebra over $F(t)$ that contains no quaternion algebra defined over $F$.
 
-**Theorem (Becher, existence over a general field).** Assume that $k_2(F) \neq 0$ and that $F$ is not real euclidean, the set of squares of $F$ not being an ordering. Then there is a field element $a$ and a $b$ as above such that the ramification sequence $\rho = \partial(\{g_1,a\}+\{g_2,ab\})$ of degree $4$ is not represented by a symbol, and the algebra $B$ above is a division algebra that does not contain any quaternion algebra defined over $F$.
+**Theorem (Becher, existence over a general field).** Assume that $k_2(F) \neq 0$ and that $F$ is not real euclidean, the set of squares of $F$ not being an ordering. Then there is a field element $\mathfrak{a}$ and a $\mathfrak{b}$ as above such that the ramification sequence $\rho = \partial(\{g_1,a\}+\{g_2,ab\})$ of degree $4$ is not represented by a symbol, and the algebra $B$ above is a division algebra that does not contain any quaternion algebra defined over $F$.
 
 The example of this article is the case $F = \mathbb{Q}$, $a = 2$, $b = 3$ of the two theorems.
 
 ## Summary
 
-Let $F$ be a field of characteristic not $2$. The places of the rational function field $F(t)$ are the monic irreducible polynomials $p \in F[t]$, with residue field $\kappa_p = F[t]/(p)$, and the place at infinity, with residue field $F$. The tame symbol at a place is the homomorphism $\partial_p(\{f,g\}) = (-1)^{v(f)v(g)}u_f^{-v(g)}u_g^{v(f)}$ into $k_1(\kappa_p) = \kappa_p^\times/\kappa_p^{\times 2}$, and by **Milnor's exact sequence**
+Let $F$ be a field of characteristic not $2$. The places of the rational function field $F(t)$ are the monic irreducible polynomials $n \in F[t]$, with residue field $\kappa_n = F[t]/(n)$, and the place at infinity, with residue field $F$. The tame symbol at a place is the homomorphism $\partial_n(\{f,g\}) = (-1)^{v(f)v(g)}u_f^{-v(g)}u_g^{v(f)}$ into $k_1(\kappa_n) = \kappa_n^\times/\kappa_n^{\times 2}$, and by **Milnor's exact sequence**
 
 $$
-0 \to k_2(F) \to k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{p \in P'} k_1(\kappa_p) \xrightarrow{\ N\ } k_1(F) \to 0
+0 \to k_2(F) \to k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{n \in P'} k_1(\kappa_n) \xrightarrow{\ N\ } k_1(F) \to 0
 $$
 
 the ramification map is injective on $k_2(F)$ and its image is the **group of ramification sequences** $R_2(F)$, the kernel of the norm. The support and the degree of a sequence measure the places carrying it, and a sequence is **represented by a symbol** when it is $\partial(\{f,g\})$ for a single symbol.
 
-The **Bezoutian form** of $f$ modulo a monic square-free $g$ is the form $q_{f,g}(x) = s_g(f(\theta)x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\theta^{n-1}$ in the basis $1,\theta,\ldots,\theta^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\theta)/g'(\theta))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules
+The **Bezoutian form** of $f$ modulo a monic square-free $g$ is the form $m_{f,g}(x) = s_g(f(\theta)x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\theta^{n-1}$ in the basis $1,\theta,\ldots,\theta^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\theta)/g'(\theta))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules
 
 $$
 B\!\left(\frac{f}{g_1g_2}\right) = B\!\left(\frac{fg_2}{g_1}\right) + B\!\left(\frac{fg_1}{g_2}\right), \qquad
@@ -349,11 +349,11 @@ Over $\mathbb{Q}$ the class $\{g_1,2\}+\{g_2,6\}$ with $g_1 = (t+1)(t+2)$ and $g
 |---|---|
 | $F$, $F(t)$ | Field of characteristic not $2$; its rational function field |
 | $P$, $P'$ | Monic irreducible polynomials of $F[t]$; the places $P \cup \{\infty\}$ |
-| $v_p$, $v_\infty$ | Valuation of a finite place; valuation $-\deg$ of the place at infinity |
-| $\kappa_p$, $F_p$ | Residue field of the place $p$; for $p \in P$ it is $F[t]/(p)$ |
-| $[\kappa_p : F]$ | Degree of a place |
+| $v_n$, $v_\infty$ | Valuation of a finite place; valuation $-\deg$ of the place at infinity |
+| $\kappa_n$, $F_n$ | Residue field of the place $n$; for $n \in P$ it is $F[t]/(n)$ |
+| $[\kappa_n : F]$ | Degree of a place |
 | $k_2$, $k_1$ | Milnor groups modulo $2$ of *Higher Algebraic K-Theory* |
-| $\partial_p$, $\partial$ | Tame symbol at $p$; the ramification map, the sum of the tame symbols |
+| $\partial_n$, $\partial$ | Tame symbol at $n$; the ramification map, the sum of the tame symbols |
 | $N$ | Sum of the norm maps of the residue extensions |
 | $R_2(F)$ | Group of ramification sequences, $\ker N = \operatorname{im}\partial$ |
 | $\operatorname{Supp}\rho$, $\deg\rho$ | Support and degree of a ramification sequence |
@@ -361,7 +361,7 @@ Over $\mathbb{Q}$ the class $\{g_1,2\}+\{g_2,6\}$ with $g_1 = (t+1)(t+2)$ and $g
 | $E_g = F[t]/(g)$ | The $F$-algebra of a monic square-free $g$, of degree $n$ |
 | $\theta$ | The class of $t$ in $E_g$ |
 | $s_g$ | Coefficient functional of $\theta^{n-1}$; $\operatorname{Tr}_{E_g/F}(\cdot/g'(\theta))$ |
-| $q_{f,g}$, $B(f/g)$ | Bezoutian form of $f$ modulo $g$; its class in $W(F)$ |
+| $m_{f,g}$, $B(f/g)$ | Bezoutian form of $f$ modulo $g$; its class in $W(F)$ |
 | $G_{ij} = s_g(f\theta^{i+j})$ | Gram matrix of the Bezoutian form |
 | $\langle\!\langle a,b\rangle\!\rangle$ | Pfister form $\langle 1,-a,-b,ab\rangle$ |
 | $\sim$ | Equality of Witt classes up to a scalar |

@@ -7,7 +7,7 @@ A Markov chain carries two operators, one acting on the functions of its state a
 
 The probabilistic content is fixed elsewhere and is cited rather than re-derived. The Markov chain, the transition kernel and the Chapman–Kolmogorov equations, the classification of the states, the recurrence and the transience, the existence and the uniqueness of the stationary distribution, the ergodic theorem for the chain and the convergence to stationarity are *Markov Chains and Processes*, written; the operator identities proved here are the operator form of those statements. The link to the martingale theory is $Ph=h$: a bounded harmonic function of the chain is a martingale along the chain, and the fixed space of the operator is the space of the harmonic functions, so the martingale convergence theorem of *Martingales* controls them. The condition that the operator be self-adjoint on $L^2(\pi)$, which is the reversibility of the chain, is *Reversible Markov Chains and Time Reversal* and the computation of the adjoint itself is *The Adjoint of the Markov Operator*, both later in this category; the continuous-time semigroup and its generator are *The Transition Operator*, next in this category; the general Cesàro averaging of a unitary operator is *The Ergodic Operator*, later in this category; and the shift whose orbit is the chain is *The Shift Operator of a Process*, later in this category. The general operator theory of the Hilbert space is *Banach and Hilbert Spaces*, and the measure theory is *Measure Theory and Integration*. No physics is invoked.
 
-Throughout, $E$ is a state space, countable with the discrete $\sigma$-algebra or a Polish space with its Borel $\sigma$-algebra, and $p(x,dy)$ is a Markov kernel on $E$; the chain is $\{X_n\}_{n\ge0}$ on a probability space $(\Omega,\mathcal F,\mathbb P)$ with $\mathbb P_x$ and $\mathbb E_x$ marking the law started at $x$. The pairing of a bounded measurable function and a finite measure is $\langle f,\mu\rangle=\int_E f\,d\mu$, the sup norm is $\|f\|_\infty=\operatorname{ess\,sup}_E|f|$, the norm of a finite signed measure is the total variation $\|\mu\|_{\mathrm{TV}}=\sup\{|\langle f,\mu\rangle|:\|f\|_\infty\le1\}$, and the norm of $L^p(\pi)$ is $\|f\|_{L^p(\pi)}=(\int_E|f|^p\,d\pi)^{1/p}$ for $1\le p<\infty$.
+Throughout, $E$ is a state space, countable with the discrete $\sigma$-algebra or a Polish space with its Borel $\sigma$-algebra, and $p(x,dy)$ is a Markov kernel on $E$; the chain is $\{X_n\}_{n\ge0}$ on a probability space $(\Omega,\mathcal F,\mathbb P)$ with $\mathbb P_x$ and $\mathbb E_x$ marking the law started at $x$. The pairing of a bounded measurable function and a finite measure is $\langle f,\mu\rangle=\int_E f\,d\mu$, the sup norm is $\|f\|_\infty=\operatorname{ess\,sup}_E|f|$, the norm of a finite signed measure is the total variation $\|\mu\|_{\mathrm{TV}}=\sup\{|\langle f,\mu\rangle|:\|f\|_\infty\le1\}$, and the norm of $L^{n}(\pi)$ is $\|f\|_{L^{n}}(\pi)}=(\int_E|f|^p\,d\pi)^{1/p}$ for $1\le p<\infty$.
 
 ## The Operator and Its Two Actions
 
@@ -42,13 +42,13 @@ The powers $\{P^n\}$ are the discrete semigroup of the chain, and the identity i
 
 *Proof.* The measure-preserving form of the Chapman–Kolmogorov equations of *Markov Chains and Processes* is $p^{(m+n)}(x,B)=\int_E p^{(m)}(y,B)\,p^{(n)}(x,dy)$; reading it as the composition of the two actions gives $P^{m+n}=P^mP^n$, and the probabilistic display is the iteration.
 
-### The action on $L^p(\pi)$
+### The action on $L^{n}(\pi)$
 
-**Theorem (contractivity on $L^p$).** Let $\pi$ be an invariant probability measure. Then $P$ acts on $L^p(\pi)$ for every $1\le p\le\infty$ and
+**Theorem (contractivity on $L^{n}$).** Let $\pi$ be an invariant probability measure. Then $P$ acts on $L^{n}(\pi)$ for every $1\le p\le\infty$ and
 $$
-\|Pf\|_{L^p(\pi)}\le\|f\|_{L^p(\pi)},\qquad P\mathbf 1=\mathbf 1 ,
+\|Pf\|_{L^{n}}(\pi)}\le\|f\|_{L^{n}}(\pi)},\qquad P\mathbf 1=\mathbf 1 ,
 $$
-so $P$ is a contraction of every $L^p(\pi)$ that fixes the constants.
+so $P$ is a contraction of every $L^{n}(\pi)$ that fixes the constants.
 
 *Proof.* For finite $p$ the bound is Jensen's inequality applied to the conditional expectation $Pf(x)=\mathbb E[f(X_1)\mid X_0=x]$ and the invariance of $\pi$, which makes $P$ the conditional expectation of $f(X_1)$ on the initial state; for $p=\infty$ it is the sup-norm bound. The preservation of the constants is the unitality.
 
@@ -139,7 +139,7 @@ so the chain mixes at the geometric rate of the spectral gap.
 
 **Example (a two-state chain).** Let $E=\{0,1\}$ and $P=\begin{pmatrix}1-a&a\\b&1-b\end{pmatrix}$ with $a,b\in(0,1)$. The invariant measure is $\pi=(b/(a+b),\,a/(a+b))$, the eigenvalues are $1$ and $1-a-b$, and the spectral gap is $a+b$. For $a=b=1$ the chain is the deterministic flip, with eigenvalues $1$ and $-1$; it is periodic and its gap is $0$, which is the degenerate case excluded by aperiodicity.
 
-**Example (the random walk on a finite cycle).** Let $E=\mathbb Z_n$ and $p(x,x\pm1)=\frac12$. The operator is $Pf(x)=\frac12(f(x+1)+f(x-1))$, with the characters $e^{2\pi ikx/n}$ as eigenfunctions and eigenvalues $\cos(2\pi k/n)$; the invariant measure is uniform and the spectral gap is $1-\cos(2\pi/n)$. This is the finite model of the Laplacian on the circle, whose spectral theory is that of the heat semigroup in *The Transition Operator*, next in this category.
+**Example (the random walk on a finite cycle).** Let $E=\mathbb Z_n$ and $p(x,x\pm1)=\frac12$. The operator is $Pf(x)=\frac12(f(x+1)+f(x-1))$, with the characters $\exp(2\pi ikx/n)$ as eigenfunctions and eigenvalues $\cos(2\pi k/n)$; the invariant measure is uniform and the spectral gap is $1-\cos(2\pi/n)$. This is the finite model of the Laplacian on the circle, whose spectral theory is that of the heat semigroup in *The Transition Operator*, next in this category.
 
 **Example (the independent chain).** Let $p(x,\cdot)=\pi$ for a fixed probability $\pi$, independently of $x$. Then $Pf(x)=\int f\,d\pi$, the operator is the rank-one projection $\Pi$ onto the constants, $P^2=P$, and the chain is ergodic and mixes in one step; every bounded harmonic function is constant because the kernel has one-dimensional range.
 
@@ -151,7 +151,7 @@ The operator structure degenerates in four configurations, and they are collecte
 
 ## Summary
 
-The Markov operator of a kernel $p$ acts on bounded functions by $Pf(x)=\int f\,dp(x,\cdot)$ and on finite measures by $\mu P(B)=\int\mu(dx)p(x,B)$, the two actions being paired by $\langle f,\mu P\rangle=\langle Pf,\mu\rangle$ and composed by the Chapman–Kolmogorov law $P^{m+n}=P^mP^n$. It is positive, unital and a contraction of the sup norm on the functions and of the total variation on the measures; if $\pi$ is invariant it is a contraction of every $L^p(\pi)$ fixing the constants. The invariant probabilities are the fixed vectors of the measure action and form a convex weakly compact set whose extreme points are the ergodic measures, unique when the chain is irreducible positive recurrent; the fixed vectors of the function action are the bounded harmonic functions, which are constant for an ergodic chain, and they produce the martingales $h(X_n)$. Ergodicity of $\pi$ is the one-dimensionality of the fixed space in $L^2(\pi)$, and the mean ergodic theorem states that the Cesàro averages of the powers converge in $L^2(\pi)$ to the projection onto the constants, with the occupation measure as the almost-sure corollary. The spectrum lies in the closed unit disc with $1$ an eigenvalue, simple for a finite irreducible chain by Perron–Frobenius and the only eigenvalue of modulus one in the aperiodic ergodic case, and the spectral gap bounds the geometric rate of convergence to stationarity. The adjoint is *The Adjoint of the Markov Operator*, the semigroup and the generator are *The Transition Operator*, the general mean ergodic theorem is *The Ergodic Operator*, and the shift is *The Shift Operator of a Process*, all later in this category.
+The Markov operator of a kernel $p$ acts on bounded functions by $Pf(x)=\int f\,dp(x,\cdot)$ and on finite measures by $\mu P(B)=\int\mu(dx)p(x,B)$, the two actions being paired by $\langle f,\mu P\rangle=\langle Pf,\mu\rangle$ and composed by the Chapman–Kolmogorov law $P^{m+n}=P^mP^n$. It is positive, unital and a contraction of the sup norm on the functions and of the total variation on the measures; if $\pi$ is invariant it is a contraction of every $L^{n}(\pi)$ fixing the constants. The invariant probabilities are the fixed vectors of the measure action and form a convex weakly compact set whose extreme points are the ergodic measures, unique when the chain is irreducible positive recurrent; the fixed vectors of the function action are the bounded harmonic functions, which are constant for an ergodic chain, and they produce the martingales $h(X_n)$. Ergodicity of $\pi$ is the one-dimensionality of the fixed space in $L^2(\pi)$, and the mean ergodic theorem states that the Cesàro averages of the powers converge in $L^2(\pi)$ to the projection onto the constants, with the occupation measure as the almost-sure corollary. The spectrum lies in the closed unit disc with $1$ an eigenvalue, simple for a finite irreducible chain by Perron–Frobenius and the only eigenvalue of modulus one in the aperiodic ergodic case, and the spectral gap bounds the geometric rate of convergence to stationarity. The adjoint is *The Adjoint of the Markov Operator*, the semigroup and the generator are *The Transition Operator*, the general mean ergodic theorem is *The Ergodic Operator*, and the shift is *The Shift Operator of a Process*, all later in this category.
 
 ## Summary of Notation
 
@@ -162,7 +162,7 @@ The Markov operator of a kernel $p$ acts on bounded functions by $Pf(x)=\int f\,
 | $Pf(x)=\int f\,dp(x,\cdot)$ | Markov operator on functions |
 | $\mu P(B)=\int\mu(dx)p(x,B)$ | the action on measures |
 | $\langle f,\mu\rangle=\int f\,d\mu$ | pairing of a function and a measure |
-| $\|f\|_\infty$, $\|\mu\|_{\mathrm{TV}}$, $\|f\|_{L^p(\pi)}$ | sup norm, total variation, $L^p(\pi)$ norm |
+| $\|f\|_\infty$, $\|\mu\|_{\mathrm{TV}}$, $\|f\|_{L^{n}}(\pi)}$ | sup norm, total variation, $L^{n}(\pi)$ norm |
 | $P^{m+n}=P^mP^n$ | Chapman–Kolmogorov for the operator |
 | $\pi P=\pi$ | invariant measure |
 | $Ph=h$, $h(X_n)$ | harmonic function and its martingale |
@@ -177,5 +177,5 @@ The Markov operator of a kernel $p$ acts on bounded functions by $Pf(x)=\int f\,
 - David A. Levin, Yuval Peres and Elizabeth L. Wilmer, *Markov Chains and Mixing Times* (American Mathematical Society, 2nd edition, 2017), for the $L^2(\pi)$ contraction, the spectral gap and the mixing rate.
 - Kai Lai Chung, *Markov Chains with Stationary Transition Probabilities* (Springer, 2nd edition, 1967), for the classical operator treatment of recurrence and stationarity.
 - Daniel W. Stroock, *An Introduction to Markov Processes* (Springer, 2nd edition, 2014), for the positive operators and the invariant measures on a general state space.
-- Einar Hille and Ralph Phillips, *Functional Analysis and Semi-Groups* (American Mathematical Society, 1957), for the semigroup of the powers and the contractions of $L^p$.
+- Einar Hille and Ralph Phillips, *Functional Analysis and Semi-Groups* (American Mathematical Society, 1957), for the semigroup of the powers and the contractions of $L^{n}$.
 - Paul Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the contractions, the fixed spaces and the mean ergodic theorem.

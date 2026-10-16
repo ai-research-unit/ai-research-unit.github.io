@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions* is neither associative nor commutative, and the object that measures the failure of associativity is the **associator**
+The multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *Introduction to the General Plain Sesqualgebra* is neither associative nor commutative, and the object that measures the failure of associativity is the **associator**
 
 $$
 [\tilde P,\tilde Q,\tilde R]=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R) .
@@ -23,9 +23,9 @@ $$
 
 and it satisfies the Jordan triple identity; equivalently, $\mathbb{B}$ with this ternary product is an **algebraic $J^{*}$-algebra**. The binary product is the shadow of the ternary one: inserting the unit in the third slot recovers the multiplication, and inserting it in the first and third slots recovers the involution.
 
-The article is the fourth of the structural batch, and it is the biquaternion reading of the general pair *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*, whose parity theorems, vanishing criteria and Jordan triple identity are quoted. The operator forms of the ternary product are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, and the sibling reading whose ternary product fails the identity is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*.
+The article is the fourth of the structural batch, and it is the biquaternion reading of the general pair *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*, whose parity theorems, vanishing criteria and Jordan triple identity are quoted. The operator forms of the ternary product are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, and the sibling reading whose ternary product fails the identity is *Introduction to the General Quaternionic Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\vec Q$ with $(\vec P,\vec Q)=\sum_kP_kQ_k$ and the cross product $\vec P\times\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\vec Q$ with $(\vec P,\vec Q)=\sum_kP_kQ_k$ and the cross product $\vec P\times\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*.
 
 ## The Associator
 
@@ -67,7 +67,7 @@ $$
 
 so the associator is $-2e_0$, and the defect $\tilde Q^{*}\tilde R^{*}-\tilde R\tilde Q^{*}=e_1^{*}e_1^{*}-e_1e_1^{*}=e_1^{2}-e_0$ evaluates to $-e_0-e_0=-2e_0$ as well, in agreement with the theorem.
 
-**Proof.** The two groupings are computed from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $e_0\star e_1=-e_1$, $e_1\star e_1=e_0$, hence $(-e_1)\star e_1=e_1^{2}=-e_0$ and $e_0\star e_0=e_0$; the defect is $e_1^{*}=-e_1$, so $e_1^{*}e_1^{*}=e_1^{2}=-e_0$ and $e_1e_1^{*}=-e_1^{2}=e_0$.
+**Proof.** The two groupings are computed from the multiplication table of *Introduction to the General Plain Sesqualgebra*: $e_0\star e_1=-e_1$, $e_1\star e_1=e_0$, hence $(-e_1)\star e_1=e_1^{2}=-e_0$ and $e_0\star e_0=e_0$; the defect is $e_1^{*}=-e_1$, so $e_1^{*}e_1^{*}=e_1^{2}=-e_0$ and $e_1e_1^{*}=-e_1^{2}=e_0$.
 
 **Remark.** The witness is the one the group article records for the failure of associativity, and the value $-2e_0$ is the associator there; the criterion of the corollary is the same failure read in the second and third slots alone. The associator is a central multiple of the unit at this triple because the first factor is the unit, which is the simplest case of the formula.
 
@@ -75,7 +75,7 @@ so the associator is $-2e_0$, and the defect $\tilde Q^{*}\tilde R^{*}-\tilde R\
 
 **Proposition.** The multiplication is not commutative, not flexible and not power-associative: at $(e_1,e_2)$ one has $e_1\star e_2=-e_3$ and $e_2\star e_1=e_3$, so commutativity fails; at $(\tilde P,\tilde Q)=(ie_0,e_0)$ the flexible law $(\tilde P\star\tilde Q)\star\tilde P=\tilde P\star(\tilde Q\star\tilde P)$ fails with the two sides $e_0$ and $-e_0$; and at $\tilde P=ie_0$ the degree-three identity $\tilde P\star(\tilde P\star\tilde P)=(\tilde P\star\tilde P)\star\tilde P$ fails with the two sides $ie_0$ and $-ie_0$.
 
-**Proof.** The witnesses are those of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*, read through the multiplication table; each is a direct computation from the rule $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
+**Proof.** The witnesses are those of *Introduction to the General Plain Sesqualgebra*, §*Neither Associative Nor Commutative*, read through the multiplication table; each is a direct computation from the rule $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
 
 **Remark.** The associator measures associativity, and the flexible and power identities are weaker forms of it that the multiplication also fails; the corpus keeps the three apart because for a sesqualgebra the first is the one that the ternary product repairs, while the second and the third fail before the ternary product is reached. Associativity is the strongest of the three, and the collapse theorem already excludes it.
 
@@ -151,7 +151,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 ### The Operator Interpretation
 
-**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Z\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$ and $\tilde X\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the ordinary left and right multiplications by $\tilde X\tilde Y^{*}$ and by $\tilde Y^{*}\tilde Z$; fixing the middle variable gives the conjugate-linear operator $\tilde Y\mapsto\{\tilde X,\tilde Y,\tilde Z\}$, which is the sandwich $S_{\tilde X,\tilde Z^{*}}$ of *The Sesquilinear Sandwich on the Biquaternions*. The **quadratic representation** is the case $\tilde X=\tilde Z$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Z\mapsto\tilde Z\tilde Y^{*}\tilde Z=\tilde Z\star\tilde Y\star\tilde Z^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternions* with the two parameters tied to one element.
+**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Z\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$ and $\tilde X\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the ordinary left and right multiplications by $\tilde X\tilde Y^{*}$ and by $\tilde Y^{*}\tilde Z$; fixing the middle variable gives the conjugate-linear operator $\tilde Y\mapsto\{\tilde X,\tilde Y,\tilde Z\}$, which is the sandwich $S_{\tilde X,\tilde Z^{*}}$ of *The Sesquilinear Sandwich on the Biquaternioid*. The **quadratic representation** is the case $\tilde X=\tilde Z$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Z\mapsto\tilde Z\tilde Y^{*}\tilde Z=\tilde Z\star\tilde Y\star\tilde Z^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with the two parameters tied to one element.
 
 ## The Contrast with the Quaternionic Sibling
 
@@ -161,9 +161,9 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 ### The Failure for the Fourth Product
 
-**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde T,\tilde S,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
+**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde T,\tilde S,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
 
-**Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
+**Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
 
 **Remark.** The comparison is sharp: the same construction applied to the two sesquilinear products of the corpus gives the middle model for the derived operation and the left model for the $\natural$-isotope, and only the first is in the class. The two products are related by the insertion of a $\mathbb{C}$-linear map in the first slot, by *Comparison Between the Four General Products*, and it is that insertion, and not the sesquilinearity, that moves the involution out of the middle slot and destroys the identity.
 

@@ -8,7 +8,7 @@ $$
 h = g + \mathrm{i}\,\omega, \qquad g = \operatorname{Re}h, \quad \omega = \operatorname{Im}h ,
 $$
 
-carries the Hermitian form to a real symmetric form $g$, and the **signature** is the invariant of $g$ under a real change of coordinates. The two readings agree: a Hermitian form over $\mathbb{C}$ is classified up to congruence by its signature $(p,q)$ exactly as a real symmetric form is over $\mathbb{R}$, by *Congruence and the Stabiliser of a Form*, and the real part $g$ doubles the inertia, its signature on the underlying real space of dimension $2n$ being $(2p,2q)$. This article states that correspondence in both directions: the descent of $h$ to a real form halves the inertia back to $(p,q)$, and the complexification doubles it.
+carries the Hermitian form to a real symmetric form $g$, and the **signature** is the invariant of $g$ under a real change of coordinates. The two readings agree: a Hermitian form over $\mathbb{C}$ is classified up to congruence by its signature $(n,m)$ exactly as a real symmetric form is over $\mathbb{R}$, by *Congruence and the Stabiliser of a Form*, and the real part $g$ doubles the inertia, its signature on the underlying real space of dimension $2n$ being $(2p,2q)$. This article states that correspondence in both directions: the descent of $h$ to a real form halves the inertia back to $(n,m)$, and the complexification doubles it.
 
 A **real structure** on the complex space is a conjugation $c$ compatible with $h$, its fixed space is the real form, and the form descends to the real form exactly when $c$ is compatible; the descended real symmetric form has the signature of $h$, and Sylvester's law of inertia makes the signature the complete invariant over an ordered field. The transfer between the complex and the real readings, and the arithmetic of the transfer, are the Galois descent of the layer and the Weil transfer, and the corresponding algebra-level descent — the real forms of the algebra itself — is *Real Forms of a Sesqualgebra* and *Real Forms and the Descent of an Algebra*.
 
@@ -36,13 +36,13 @@ $$
 
 **Corollary.** The real forms of $h$ are the compatible real structures, and the descended forms $g_{0}$ are the real symmetric forms of the layer; the passage from $h$ to $g_{0}$ is the **descent** of the layer, and its inverse is the complexification.
 
-**Proposition.** The descended form $g_{0}$ has the signature $(p,q)$ of $h$ itself, and the real part $g = \operatorname{Re}h$ has the signature $(2p,2q)$ on the underlying real space of dimension $2n$; the descent preserves the inertia and the complexification doubles it.
+**Proposition.** The descended form $g_{0}$ has the signature $(n,m)$ of $h$ itself, and the real part $g = \operatorname{Re}h$ has the signature $(2p,2q)$ on the underlying real space of dimension $2n$; the descent preserves the inertia and the complexification doubles it.
 
-**Proof.** For $x \in V_{0}$ the value $h(x,x)$ is fixed by $\varsigma$ and real, and it equals $g_{0}(x,x)$; a real basis of $V_{0}$ that diagonalises $g_{0}$ with $p$ positive and $q$ negative entries is therefore a basis in which $h$ has the same $p$ positive and $q$ negative entries, so the two signatures agree. Complexifying that basis adds the vectors $J e_{i}$ of the second copy, each contributing the same square again, and the inertia of $g$ on $V_{\mathbb{R}}$ is $(2p,2q)$. Conversely the inertia is the complete invariant on each side, by Sylvester's law.
+**Proof.** For $x \in V_{0}$ the value $h(x,x)$ is fixed by $\varsigma$ and real, and it equals $g_{0}(x,x)$; a real basis of $V_{0}$ that diagonalises $g_{0}$ with $n$ positive and $m$ negative entries is therefore a basis in which $h$ has the same $n$ positive and $m$ negative entries, so the two signatures agree. Complexifying that basis adds the vectors $J e_{i}$ of the second copy, each contributing the same square again, and the inertia of $g$ on $V_{\mathbb{R}}$ is $(2p,2q)$. Conversely the inertia is the complete invariant on each side, by Sylvester's law.
 
 ## The Signature
 
-**Definition.** For a real symmetric form $g_{0}$ on a real space of dimension $n$ the **signature** is the pair $(p,q)$ of the numbers of the positive and the negative squares in a diagonal shape; the form is **definite** when $q = 0$ or $p = 0$ and **indefinite** otherwise.
+**Definition.** For a real symmetric form $g_{0}$ on a real space of dimension $N$ the **signature** is the pair $(n,m)$ of the numbers of the positive and the negative squares in a diagonal shape; the form is **definite** when $m = 0$ or $n = 0$ and **indefinite** otherwise.
 
 **Theorem (Sylvester).** Two real symmetric forms are congruent exactly when they have the same signature; the signature is the complete invariant.
 
@@ -50,9 +50,9 @@ $$
 
 **Proposition.** The Hermitian form $h$ is definite exactly when the real part $g$ is definite, and then the Hermitian signature is $(n,0)$ or $(0,n)$ while $g$ has the signature $(2n,0)$ or $(0,2n)$; the indefinite case carries both signs.
 
-**Proof.** $h(x,x) = g(x,x)$ for every $x$, so the diagonal of $h$ is the diagonal of $g$; a Hermitian form is definite when its diagonal has a constant sign, which is the definiteness of $g$, and the two numbers $p$ and $q$ of $h$, with $p+q = n$, become $2p$ and $2q$ for $g$ on the real space of dimension $2n$.
+**Proof.** $h(x,x) = g(x,x)$ for every $x$, so the diagonal of $h$ is the diagonal of $g$; a Hermitian form is definite when its diagonal has a constant sign, which is the definiteness of $g$, and the two numbers $n$ and $m$ of $h$, with $n+m=N$, become $2p$ and $2q$ for $g$ on the real space of dimension $2n$.
 
-**Corollary (the descent is signature-preserving).** Inside a fixed complex congruence class — fixed by the signature $(p,q)$, by *Congruence and the Stabiliser of a Form* — every compatible real structure descends to a real symmetric form $g_{0}$ of the same signature, so the descended real forms are mutually isometric; the definite classes are the two extreme signatures $(n,0)$ and $(0,n)$ and the indefinite classes the intermediate ones.
+**Corollary (the descent is signature-preserving).** Inside a fixed complex congruence class — fixed by the signature $(n,m)$, by *Congruence and the Stabiliser of a Form* — every compatible real structure descends to a real symmetric form $g_{0}$ of the same signature, so the descended real forms are mutually isometric; the definite classes are the two extreme signatures $(n,0)$ and $(0,n)$ and the indefinite classes the intermediate ones.
 
 ## The Transfer Between the Two Interpretations
 
@@ -76,7 +76,7 @@ On $\mathbb{C}^{n}$ with the standard form $h(x,y) = \sum \bar{x}_{i}y_{i}$ the 
 
 ### The Indefinite Form
 
-On $\mathbb{C}^{n}$ with the form of signature $(p,q)$, $p+q = n$, the real part has signature $(2p,2q)$ on $\mathbb{R}^{2n}$; every compatible real structure descends to a real form of the same signature $(p,q)$, and the family is the set of the real forms of the complex class, all mutually isometric.
+On $\mathbb{C}^{n}$ with the form of signature $(n,m)$, $n+m=N$, the real part has signature $(2p,2q)$ on $\mathbb{R}^{2n}$; every compatible real structure descends to a real form of the same signature $(n,m)$, and the family is the set of the real forms of the complex class, all mutually isometric.
 
 ### The Biquaternion Algebra
 
@@ -86,9 +86,9 @@ On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ the s
 
 - A Hermitian form over $\mathbb{C}$ decomposes as $h = g + \mathrm{i}\omega$ into a real symmetric part and a real alternating part, tied by $g(x,y) = \omega(Jx,y)$.
 - A **real structure** is a conjugation $c$; it is compatible with $h$ exactly when $h$ descends to a symmetric real form on the fixed space, and then $h$ is its complexification.
-- The **signature** $(p,q)$ is the complete invariant of a real symmetric form (Sylvester) and of a Hermitian form over $\mathbb{C}$, and $h$ is definite exactly when $g$ is.
-- The complex congruence class is fixed by the signature $(p,q)$, and every compatible real structure inside it descends to a real form of the same signature; the two constructions between $h$ and $g$ are the descent and the complexification, the transfer and the norm in the arithmetic reading.
-- The descent **halves** the inertia and the complexification **doubles** it: $g_{0}$ has signature $(p,q)$ on $V_{0}$ and $g = \operatorname{Re}h$ has signature $(2p,2q)$ on $V_{\mathbb{R}}$.
+- The **signature** $(n,m)$ is the complete invariant of a real symmetric form (Sylvester) and of a Hermitian form over $\mathbb{C}$, and $h$ is definite exactly when $g$ is.
+- The complex congruence class is fixed by the signature $(n,m)$, and every compatible real structure inside it descends to a real form of the same signature; the two constructions between $h$ and $g$ are the descent and the complexification, the transfer and the norm in the arithmetic reading.
+- The descent **halves** the inertia and the complexification **doubles** it: $g_{0}$ has signature $(n,m)$ on $V_{0}$ and $g = \operatorname{Re}h$ has signature $(2p,2q)$ on $V_{\mathbb{R}}$.
 - The algebra-level descent is *Real Forms of a Sesqualgebra*; the inertia is *The Indefinite Case and the Signature*; the biquaternion signatures are *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ## Summary of Notation
@@ -101,7 +101,7 @@ On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ the s
 | $c$ | a real structure, a conjugation of the complex space |
 | $V_{0} = V^{c}$ | the real form, the fixed space of $c$ |
 | $g_{0}$ | the descended real symmetric form |
-| $(p,q)$ | the signature of a real symmetric form |
+| $(n,m)$ | the signature of a real symmetric form |
 
 ## Further Reading
 

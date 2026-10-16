@@ -23,7 +23,7 @@ $$
 
 a complex Hilbert space with orthonormal basis the monomials $e_n(z) = z^n$, $n \geq 0$; the map $e_n \mapsto (0,\dots,0,1,0,\dots)$ with the $1$ in the $n$-th place is a unitary isomorphism $H^2 \cong \ell^2(\mathbb{N})$.
 
-**Remark.** Classically $H^2$ is the closed subspace of $L^2(\mathbb{T})$ spanned by the nonnegative monomials, and the coefficient $a_n$ is the $n$-th Fourier coefficient, given by the integral $\hat f(n) = \frac{1}{2\pi}\int_0^{2\pi}f(e^{it})e^{-int}\,dt$. That integral, the harmonic analysis of the circle and the boundary-value theory of the Hardy space are *Analysis on Linear Spaces* in Part III, where the measure and the integral are available; the constructions of this article use only the coefficient description above and the operator theory of the Hilbert space.
+**Remark.** Classically $H^2$ is the closed subspace of $L^2(\mathbb{T})$ spanned by the nonnegative monomials, and the coefficient $a_n$ is the $n$-th Fourier coefficient, given by the integral $(\mathcal F f)(n) = \frac{1}{2\pi}\int_0^{2\pi}f(\exp(it))\exp(-int)\,dt$. That integral, the harmonic analysis of the circle and the boundary-value theory of the Hardy space are *Analysis on Linear Spaces* in Part III, where the measure and the integral are available; the constructions of this article use only the coefficient description above and the operator theory of the Hilbert space.
 
 **Proposition.** Every $f \in H^2$ has a unique expansion $f = \sum_{n\geq0}a_nz^n$ with $\sum_n\lvert a_n\rvert^2 = \lVert f\rVert^2 < \infty$, and $H^2$ is the space of functions on $\mathbb{T}$ that arise as radial boundary values of holomorphic functions on the disc with square-summable Taylor coefficients.
 

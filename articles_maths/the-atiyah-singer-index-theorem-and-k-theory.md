@@ -75,7 +75,7 @@ $$
 
 and after tensoring with $\mathbb{Q}$ it is an isomorphism $\operatorname{ch}\colon K^*(X)\otimes\mathbb{Q}\to H^*(X;\mathbb{Q})$ onto cohomology, carrying $K^0$ to the even part and $K^1$ to the odd part.
 
-**Proof sketch.** Additivity and multiplicativity follow from the trace identities $\operatorname{tr}\exp(A\oplus B)=\operatorname{tr}e^A+\operatorname{tr}e^B$ and $\operatorname{tr}\exp(A\otimes1+1\otimes B)=\operatorname{tr}e^A\cdot\operatorname{tr}e^B$. The statement that the induced map on $K\otimes\mathbb{Q}$ is an isomorphism is a theorem of Atiyah–Hirzebruch; it says that from the rational point of view $K$-theory is even cohomology, with the integral lattice carrying the refinement.
+**Proof sketch.** Additivity and multiplicativity follow from the trace identities $\operatorname{tr}\exp(A\oplus B)=\operatorname{tr}\exp(A)+\operatorname{tr}\exp(B)$ and $\operatorname{tr}\exp(A\otimes1+1\otimes B)=\operatorname{tr}\exp(A)\cdot\operatorname{tr}\exp(B)$. The statement that the induced map on $K\otimes\mathbb{Q}$ is an isomorphism is a theorem of Atiyah–Hirzebruch; it says that from the rational point of view $K$-theory is even cohomology, with the integral lattice carrying the refinement.
 
 **Corollary.** The Chern character converts the tensor product of bundles into the cup product of classes, so computations in $K$-theory can be performed in cohomology after tensoring with $\mathbb{Q}$. The integrality of the results, which is the content of the index theorem, is the information lost in this passage.
 

@@ -6,7 +6,7 @@ The companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form
 
 The interest of the mechanism for the framework is exactly this economy. The algebra's scalars are central, and the central scalar is the only scalar the abelian gauge structure of the companion articles can carry. The Higgs mechanism uses the radial mode of that scalar and needs a potential and a vacuum value; the Stueckelberg mechanism uses the phase and needs only the shift. In the abelian sector the two are the two ends of one construction: the Higgs mechanism with the radial mode taken infinitely heavy reduces to the Stueckelberg mechanism, and conversely the Stueckelberg model embeds in the abelian Higgs as its low-energy limit. This article derives the invariant mass term, carries out the gauge fixing and the degree-of-freedom count, relates the mechanism to the abelian Higgs, and states what the algebra supplies and what does not carry over to the non-abelian case.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The abelian connection is $\tilde{A}=ie_0A_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A'_\mu=A_\mu-\partial_\mu\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iq}{\hbar}\tilde{A}$ with $\kappa=q/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is kept distinct from the matrix trace.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The abelian connection is $\tilde{A}=ie_0A_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A'_\mu=A_\mu-\partial_\mu\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\kappa=ϙ/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is kept distinct from the matrix trace.
 
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive field equation, the Lorenz condition and the obstruction of the explicit mass term.
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the three polarizations, the second-class constraint structure and the propagator.
@@ -158,13 +158,13 @@ V=\beta\left(\varphi^*\varphi-\tfrac{v^2}{2}\right)^2 ,
 \qquad
 D_\mu=\partial_\mu+i\kappa A_\mu ,
 $$
-whose minimum is at $\vert\varphi\vert=v/\sqrt2$. Writing the scalar in polar form, $\varphi=\rho\,e^{i\vartheta}$ with $\rho$ the radial mode and $\vartheta$ the phase, the phase enters the covariant derivative only through
+whose minimum is at $\vert\varphi\vert=v/\sqrt2$. Writing the scalar in polar form, $\varphi=\rho\,\exp(i\vartheta)$ with $\rho$ the radial mode and $\vartheta$ the phase, the phase enters the covariant derivative only through
 $$
 \frac{1}{\kappa}\partial_\mu\vartheta
 $$
 in the combination $A_\mu+\tfrac{1}{\kappa}\partial_\mu\vartheta$, and it shifts under a gauge transformation. The Stueckelberg field is precisely this phase, and the Stueckelberg Lagrangian is what remains of the Higgs Lagrangian when the radial mode is **removed** — held at its vacuum value or given an infinite mass — so that only the phase, with its shift, survives:
 $$
-\varphi=\frac{v}{\sqrt2}e^{i\vartheta}=\frac{v}{\sqrt2}e^{-i\mu\sigma/v},
+\varphi=\frac{v}{\sqrt2}\exp(i\vartheta)=\frac{v}{\sqrt2}\exp(-i\mu\sigma/v),
 \qquad
 \vartheta=-\frac{\mu}{v}\,\sigma ,
 $$
@@ -172,15 +172,15 @@ with $\sigma$ normalized as above. Conversely, the abelian Higgs is the **ultrav
 
 ### The Explicit Limit
 
-The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\varphi=\frac{1}{\sqrt2}(\rho+v)e^{i\vartheta}$ with $\rho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
+The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\varphi=\frac{1}{\sqrt2}(\rho+v)\exp(i\vartheta)$ with $\rho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
 $$
-D_\mu\varphi=\frac{1}{\sqrt2}e^{i\vartheta}\Big[\partial_\mu\rho+i(\rho+v)\big(\partial_\mu\vartheta+\kappa A_\mu\big)\Big],
+D_\mu\varphi=\frac{1}{\sqrt2}\exp(i\vartheta)\Big[\partial_\mu\rho+i(\rho+v)\big(\partial_\mu\vartheta+\kappa A_\mu\big)\Big],
 $$
-so the Goldstone enters through $A_\mu+\tfrac{1}{\kappa}\partial_\mu\vartheta$, and the gauge transformation $\varphi\mapsto e^{+i\kappa\Gamma}\varphi$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$ shifts $\vartheta\mapsto\vartheta+\kappa\Gamma$, the same transformation law the Stueckelberg field carries. The **Stueckelberg field** is the rescaled phase, with the sign fixed by the requirement that it shift as $\sigma\mapsto\sigma-\Gamma$ and whose invariant combination is $A_\mu-\partial_\mu\sigma$:
+so the Goldstone enters through $A_\mu+\tfrac{1}{\kappa}\partial_\mu\vartheta$, and the gauge transformation $\varphi\mapsto \exp(+i\kappa\Gamma)\varphi$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$ shifts $\vartheta\mapsto\vartheta+\kappa\Gamma$, the same transformation law the Stueckelberg field carries. The **Stueckelberg field** is the rescaled phase, with the sign fixed by the requirement that it shift as $\sigma\mapsto\sigma-\Gamma$ and whose invariant combination is $A_\mu-\partial_\mu\sigma$:
 $$
 \sigma=-\frac{v}{\mu}\,\vartheta,
 \qquad
-\mu=\kappa v=\frac{qv}{\hbar},
+\mu=\kappa v=\frac{ϙv}{\hbar},
 $$
 in terms of which the combination $A_\mu-\partial_\mu\sigma$ is invariant and the mass term takes the invariant form, with the Goldstone kinetic term and the mixing arranged as in the Stueckelberg Lagrangian. The radial mode $\rho$ has the mass $m_h^2=2\beta v^2$ and couples to the vector only through $\rho^2$ terms; taking $m_h\to\infty$ at fixed $v$ removes it from the low-energy theory, and what remains is the Stueckelberg model with the parameter $\mu=\kappa v$. The limit is the precise sense in which the Stueckelberg mechanism is the abelian Higgs with the magnitude frozen.
 
@@ -194,7 +194,7 @@ The comparison isolates the economy of the shift-field description.
 | symmetry of the mass term | shift $\sigma\to\sigma-\Gamma$ | phase rotation of $\varphi$ |
 | potential | none | $V=\beta(\varphi^*\varphi-v^2/2)^2$ |
 | vacuum value | none | $\lvert\varphi\rvert=v/\sqrt2$ |
-| mass | parameter $\mu$ | $\mu=\kappa v=qv/\hbar$ |
+| mass | parameter $\mu$ | $\mu=\kappa v=ϙv/\hbar$ |
 | radial mode | absent (or infinitely heavy) | present, mass $m_h=\sqrt{2\beta}\,v$ |
 | Goldstone mode | $\sigma$, kept or gauged away | $\vartheta$, gauged away |
 | parameters | $\mu$ | $v$ and $\beta$ (or $v$ and $m_h$) |
@@ -209,7 +209,7 @@ In the framework's terms the Stueckelberg field is the phase of the central scal
 $$
 \tilde{\sigma}=\sigma e_0\in\mathbb{C}_{\mathbb{B}},
 \qquad
-\tilde{\varphi}=\rho\,e^{i\tilde{\sigma}}\in\mathbb{C}_{\mathbb{B}} ,
+\tilde{\varphi}=\rho\,\exp(i\tilde{\sigma})\in\mathbb{C}_{\mathbb{B}} ,
 $$
 so it lies in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $A_\mu-\partial_\mu\sigma$ is what the covariant derivative of a central scalar produces: the covariant derivative $D_\mu\varphi=(\partial_\mu+i\kappa A_\mu)\varphi$ on a central scalar of constant magnitude $\rho$ has phase $\kappa A_\mu+\partial_\mu\vartheta$, and the gauge-invariant content is the combination $A_\mu+\tfrac{1}{\kappa}\partial_\mu\vartheta$ — the same $B_\mu$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2B_\mu B^\mu$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
 
@@ -249,7 +249,7 @@ D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p
 $$
 has a gauge-dependent longitudinal part, with physical amplitudes independent of $\xi$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
 
-The mechanism is the abelian Higgs with the radial mode removed: the Stueckelberg field is the phase of the central scalar, and the Higgs is its ultraviolet completion with $\mu=\kappa v=qv/\hbar$ and a radial mode of mass $m_h=\sqrt{2\beta}\,v$. In the framework the Stueckelberg field is central, $\tilde{\sigma}=\sigma e_0\in\mathbb{C}_{\mathbb{B}}$, and the invariant mass term is the biquaternion norm of the gauge-invariant derivative; the mechanism requires only the shift, no potential and no vacuum value, which is why it is the framework's natural massive-abelian-vector mechanism. It does not extend to the compact factor: the non-abelian version requires a scalar in the adjoint representation, whereas the framework's scalar is a singlet. The mass $\mu$ remains a parameter, and the mechanism adds no empirical content.
+The mechanism is the abelian Higgs with the radial mode removed: the Stueckelberg field is the phase of the central scalar, and the Higgs is its ultraviolet completion with $\mu=\kappa v=ϙv/\hbar$ and a radial mode of mass $m_h=\sqrt{2\beta}\,v$. In the framework the Stueckelberg field is central, $\tilde{\sigma}=\sigma e_0\in\mathbb{C}_{\mathbb{B}}$, and the invariant mass term is the biquaternion norm of the gauge-invariant derivative; the mechanism requires only the shift, no potential and no vacuum value, which is why it is the framework's natural massive-abelian-vector mechanism. It does not extend to the compact factor: the non-abelian version requires a scalar in the adjoint representation, whereas the framework's scalar is a singlet. The mass $\mu$ remains a parameter, and the mechanism adds no empirical content.
 
 ## Summary of Notation
 
@@ -273,9 +273,9 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |
 | $m_\sigma^2=\xi\mu^2$ | Gauge-dependent scalar mass |
 | $V=\beta(\varphi^*\varphi-v^2/2)^2$, $\vert\varphi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
-| $\mu=\kappa v=qv/\hbar$ | Higgs origin of the mass; $\kappa=q/\hbar$ |
+| $\mu=\kappa v=ϙv/\hbar$ | Higgs origin of the mass; $\kappa=ϙ/\hbar$ |
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
-| $\varphi=\rho e^{i\vartheta}$, $\vartheta=-(\mu/v)\,\sigma$ | Polar form; $\sigma$ the Stueckelberg field |
+| $\varphi=\rho \exp(i\vartheta)$, $\vartheta=-(\mu/v)\,\sigma$ | Polar form; $\sigma$ the Stueckelberg field |
 | $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |
 

@@ -139,7 +139,7 @@ $$
 
 Completeness follows from finite dimension and equivalence of the norm with $\|\cdot\|_1$. The last statement is the standard equivalence of all norms on a finite-dimensional $\mathbb{K}$-vector space.
 
-**Corollary.** Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{p,q}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.
+**Corollary.** Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{D}$, $\mathbb{D}'$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{n,m}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.
 
 The uniqueness of the topology means that for finite-dimensional algebras the topological notions of convergence, continuity and differentiability do not depend on the norm chosen. This is what permits the hypercomplex-analysis entries to speak of the Euclidean topology on $\mathbb{H}$ or $\mathbb{B}$ without further qualification.
 
@@ -159,7 +159,7 @@ $$
 \exp(x) = \sum_{n \geq 0} \frac{x^n}{n!}.
 $$
 
-**Theorem.** Let $A$ be a unital Banach algebra over $\mathbb{K}$. Then the series defining $\exp(x)$ converges absolutely for every $x$, with $\|\exp(x)\| \leq e^{\|x\|}$; the map $\exp : A \to A^\times$ is continuous; and
+**Theorem.** Let $A$ be a unital Banach algebra over $\mathbb{K}$. Then the series defining $\exp(x)$ converges absolutely for every $x$, with $\|\exp(x)\| \leq \exp(\|x\|)$; the map $\exp : A \to A^\times$ is continuous; and
 
 $$
 \exp(x + y) = \exp(x)\exp(y) \quad \text{whenever } xy = yx.
@@ -167,7 +167,7 @@ $$
 
 The derivative of $\exp$ at $0$ is the identity, so $\exp$ maps a neighbourhood of $0$ diffeomorphically onto a neighbourhood of $1$ in $A^\times$.
 
-*Proof.* Absolute convergence follows from $\sum \|x\|^n/n! = e^{\|x\|} < \infty$ and completeness. The functional equation is the binomial theorem, valid because $x$ and $y$ commute. For the last statement, expand
+*Proof.* Absolute convergence follows from $\sum \|x\|^n/n! = \exp(\|x\|) < \infty$ and completeness. The functional equation is the binomial theorem, valid because $x$ and $y$ commute. For the last statement, expand
 
 $$
 \exp(h) = 1 + h + O(\|h\|^2),
@@ -229,26 +229,26 @@ topologised as a subset of the unit ball of the dual space $A'$ in the weak-$*$ 
 **Theorem (Gelfand transform).** Let $A$ be a commutative unital $\mathbb{C}$-Banach algebra. The **Gelfand transform**
 
 $$
-a \longmapsto \hat a, \qquad \hat a(\chi) = \chi(a),
+a \longmapsto \mathcal F a, \qquad \mathcal F a(\chi) = \chi(a),
 $$
 
-is a continuous unital algebra homomorphism $A \to C(\operatorname{Max}(A))$ with $\|\hat a\|_\infty \leq \|a\|$ and
+is a continuous unital algebra homomorphism $A \to C(\operatorname{Max}(A))$ with $\|\mathcal F a\|_\infty \leq \|a\|$ and
 
 $$
-\hat a\bigl(\operatorname{Max}(A)\bigr) = \sigma(a), \qquad \|\hat a\|_\infty = r(a) = \lim_{n\to\infty}\|a^n\|^{1/n},
+\mathcal F a\bigl(\operatorname{Max}(A)\bigr) = \sigma(a), \qquad \|\mathcal F a\|_\infty = r(a) = \lim_{n\to\infty}\|a^n\|^{1/n},
 $$
 
 the **spectral radius formula**. The kernel of the Gelfand transform is the intersection of the maximal ideals, the **Jacobson radical** of $A$, so the transform is injective exactly when $A$ is semisimple.
 
-*Proof (sketch).* Each $\hat a$ is continuous by definition of the weak-$*$ topology on $\operatorname{Max}(A)$, and multiplicativity and unitality are immediate from the definitions. The identification of the range of $\hat a$ with $\sigma(a)$ is the statement that $a - \lambda 1$ is non-invertible exactly when it lies in some maximal ideal, that is, when some character annihilates it. The spectral radius formula is the standard theorem on the convergence of the power series for the resolvent on the complement of $\sigma(a)$.
+*Proof (sketch).* Each $\mathcal F a$ is continuous by definition of the weak-$*$ topology on $\operatorname{Max}(A)$, and multiplicativity and unitality are immediate from the definitions. The identification of the range of $\mathcal F a$ with $\sigma(a)$ is the statement that $a - \lambda 1$ is non-invertible exactly when it lies in some maximal ideal, that is, when some character annihilates it. The spectral radius formula is the standard theorem on the convergence of the power series for the resolvent on the complement of $\sigma(a)$.
 
 **Example (the Fourier transform).** For the convolution algebra $L^1(\mathbb{R})$ the characters are
 
 $$
-\chi_\xi(f) = \int_\mathbb{R}f(x)\,e^{-i\xi x}\,dx, \qquad \xi \in \mathbb{R},
+\chi_\xi(f) = \int_\mathbb{R}f(x)\,\exp(-i\xi x)\,dx, \qquad \xi \in \mathbb{R},
 $$
 
-so $\operatorname{Max}\bigl(L^1(\mathbb{R})\bigr) = \mathbb{R}$ and the Gelfand transform is the Fourier transform, with $\|\hat f\|_\infty = r(f) \leq \|f\|_1$ for the spectral radius formula. For a finite abelian group $G$ the group algebra $\mathbb{C}[G]$ is semisimple with $\operatorname{Max}(\mathbb{C}[G])$ the character group $\hat G$, and the Gelfand transform is the discrete Fourier transform, $\mathbb{C}[G] \cong \prod_{\chi \in \hat G}\mathbb{C}$; the same computation over a general base ring is the content of *Group Algebras*.
+so $\operatorname{Max}\bigl(L^1(\mathbb{R})\bigr) = \mathbb{R}$ and the Gelfand transform is the Fourier transform, with $\|\mathcal F f\|_\infty = r(f) \leq \|f\|_1$ for the spectral radius formula. For a finite abelian group $G$ the group algebra $\mathbb{C}[G]$ is semisimple with $\operatorname{Max}(\mathbb{C}[G])$ the character group $\hat G$, and the Gelfand transform is the discrete Fourier transform, $\mathbb{C}[G] \cong \prod_{\chi \in \hat G}\mathbb{C}$; the same computation over a general base ring is the content of *Group Algebras*.
 
 **Definition.** A **$\mathrm{C}^*$-algebra** is a complex Banach algebra $A$ with an involution $a \mapsto a^*$ satisfying
 
@@ -263,7 +263,7 @@ for all $a, b \in A$.
 *Proof (sketch).* For a character of a $\mathrm{C}^*$-algebra one has $\chi(a^*) = \overline{\chi(a)}$, because $a = u + iv$ with $u,v$ self-adjoint and $\chi(u)$ is real; hence the Gelfand transform is a $*$-homomorphism. The $\mathrm{C}^*$-identity gives
 
 $$
-\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = r(a^*a) = \|a^*a\| = \|a\|^2,
+\|\mathcal F a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = r(a^*a) = \|a^*a\| = \|a\|^2,
 $$
 
 using the spectral radius formula and the fact that $a^*a$ is self-adjoint, so the transform is isometric; its image is a closed $*$-subalgebra of $C(\operatorname{Max}(A))$ separating points and containing the constants, hence all of $C(\operatorname{Max}(A))$ by the Stone–Weierstrass theorem. The equivalence statement is the functoriality of the constructions, a unital $*$-homomorphism $A \to B$ inducing a continuous map $\operatorname{Max}(B) \to \operatorname{Max}(A)$ by composition, and the inverse functor sending a compact space $X$ to $C(X)$.
@@ -276,7 +276,7 @@ $$
 
 onto the $\mathrm{C}^*$-subalgebra generated by $a$ and $1$, and $f(g(a)) = (f \circ g)(a)$.
 
-*Proof.* The subalgebra $C^*(a,1)$ is commutative, since $a$ and $a^*$ commute, so Gelfand duality identifies it with $C(\operatorname{Max}(C^*(a,1)))$; the map $a \mapsto \hat a$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$, and the inverse of the Gelfand transform is the required calculus.
+*Proof.* The subalgebra $C^*(a,1)$ is commutative, since $a$ and $a^*$ commute, so Gelfand duality identifies it with $C(\operatorname{Max}(C^*(a,1)))$; the map $a \mapsto \mathcal F a$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$, and the inverse of the Gelfand transform is the required calculus.
 
 The corollary supplies square roots of positive elements, moduli and the polar decomposition, and it is the technical heart of the spectral theorem. The non-commutative theory — the realisation of an abstract $\mathrm{C}^*$-algebra as operators on a Hilbert space, the Gelfand–Naimark–Segal construction, von Neumann algebras and the modular theory — is developed, which continues the present section with the involution present.
 
@@ -297,7 +297,7 @@ A norm and a norm are different objects, and the difference governs what the ana
 
 **Example (the quaternions).** For $\mathbb{H}$ the Euclidean norm $\|q\| = N(q)^{1/2}$ is multiplicative, because the norm $N(q) = \sum_\mu q_\mu^2$ is; so $\mathbb{H}$ is a normed division algebra, and $\|q^{-1}\| = \|q\|^{-1}$.
 
-**Example (the biquaternions).** For $\mathbb{B}$ the quadratic form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is the norm of the algebra and not a norm in the analytic sense. The Euclidean norm
+**Example (the biquaternions).** For $\mathbb{B}$ the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is the norm of the algebra and not a norm in the analytic sense. The Euclidean norm
 
 $$
 \|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\Bigr)^{1/2}
@@ -313,9 +313,9 @@ A **topological algebra** is a $\mathbb{K}$-algebra whose addition, scalar multi
 
 In a unital normed algebra the **unit group** $A^\times$ is open and inversion is continuous, by the Neumann series; in a unital Banach algebra $A^\times$ is a Banach Lie group with Lie algebra $A$ under the commutator bracket, and the **exponential** $\exp(x) = \sum x^n/n!$ converges everywhere, satisfies $\exp(x+y) = \exp(x)\exp(y)$ for commuting $x,y$, and is a local diffeomorphism at $0$; inner derivations exponentiate to inner automorphisms, as in *Automorphisms and Derivations of Algebras*. The **Gelfand–Mazur theorem** states that a unital complex Banach algebra in which every nonzero element is invertible is $\mathbb{C}$; with Hurwitz and Frobenius this pins the normed real division algebras to $\mathbb{R}, \mathbb{C}, \mathbb{H}$ (associative) and to $\mathbb{O}$ as well without associativity.
 
-A **norm** in the analytic sense is positive definite and never vanishes on a nonzero element, whereas the **norm** $N$ of an algebra is a quadratic form that may vanish on the zero divisors; the norm $N(\tilde{Q})$ of $\mathbb{B}$, being complex-valued and vanishing on the null set, is not a norm in the analytic sense, and the Euclidean norm of $\mathbb{B}$ detects only the zero element. Divisibility is read from the norm $N$, not from the Euclidean norm, and this distinction is what the hypercomplex analysis has to respect.
+A **norm** in the analytic sense is positive definite and never vanishes on a nonzero element, whereas the **norm** $N$ of an algebra is a quadratic form that may vanish on the zero divisors; the norm $\langle\tilde{Q}\rangle_{\natural}$ of $\mathbb{B}$, being complex-valued and vanishing on the null set, is not a norm in the analytic sense, and the Euclidean norm of $\mathbb{B}$ detects only the zero element. Divisibility is read from the norm $N$, not from the Euclidean norm, and this distinction is what the hypercomplex analysis has to respect.
 
-A **character** of a commutative unital complex Banach algebra is a nonzero homomorphism into $\mathbb{C}$, and the characters, equivalently the maximal ideals, form the compact Hausdorff **maximal ideal space** $\operatorname{Max}(A)$. The **Gelfand transform** $\hat a(\chi) = \chi(a)$ is a contractive unital homomorphism $A \to C(\operatorname{Max}(A))$ whose range on $a$ is $\sigma(a)$, with $\|\hat a\|_\infty = r(a) = \lim\|a^n\|^{1/n}$, and whose kernel is the Jacobson radical; it is the Fourier transform when $A = L^1(\mathbb{R})$ and the discrete Fourier transform when $A = \mathbb{C}[G]$. For a commutative unital **$\mathrm{C}^*$-algebra** the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, which is **Gelfand duality**, a contravariant equivalence with compact Hausdorff spaces; the **continuous functional calculus** for a normal element $a$ is the same theorem applied to the commutative $\mathrm{C}^*$-algebra $C^*(a,1)$, and identifies it with $C(\sigma(a))$.
+A **character** of a commutative unital complex Banach algebra is a nonzero homomorphism into $\mathbb{C}$, and the characters, equivalently the maximal ideals, form the compact Hausdorff **maximal ideal space** $\operatorname{Max}(A)$. The **Gelfand transform** $\mathcal F a(\chi) = \chi(a)$ is a contractive unital homomorphism $A \to C(\operatorname{Max}(A))$ whose range on $a$ is $\sigma(a)$, with $\|\mathcal F a\|_\infty = r(a) = \lim\|a^n\|^{1/n}$, and whose kernel is the Jacobson radical; it is the Fourier transform when $A = L^1(\mathbb{R})$ and the discrete Fourier transform when $A = \mathbb{C}[G]$. For a commutative unital **$\mathrm{C}^*$-algebra** the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, which is **Gelfand duality**, a contravariant equivalence with compact Hausdorff spaces; the **continuous functional calculus** for a normal element $a$ is the same theorem applied to the commutative $\mathrm{C}^*$-algebra $C^*(a,1)$, and identifies it with $C(\sigma(a))$.
 
 ## Summary of Notation
 
@@ -338,8 +338,8 @@ A **character** of a commutative unital complex Banach algebra is a nonzero homo
 | $\mathbb{O}$ | Octonions, the non-associative normed real division algebra |
 | $\chi$ | Character of a commutative unital complex Banach algebra |
 | $\operatorname{Max}(A)$ | Maximal ideal space (character space) of $A$ |
-| $\hat a(\chi) = \chi(a)$ | Gelfand transform of $a$ |
-| $r(a) = \lim_n\|a^n\|^{1/n}$ | Spectral radius, $= \|\hat a\|_\infty$ |
+| $\mathcal F a(\chi) = \chi(a)$ | Gelfand transform of $a$ |
+| $r(a) = \lim_n\|a^n\|^{1/n}$ | Spectral radius, $= \|\mathcal F a\|_\infty$ |
 | $C^*(a,1)$ | $\mathrm{C}^*$-subalgebra generated by a normal element $a$ and $1$ |
 
 

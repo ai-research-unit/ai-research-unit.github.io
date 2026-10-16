@@ -4,7 +4,7 @@
 
 The antisymmetric plain algebra of $\mathbb{H}$ carries the cross product
 $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
-*Introduction to the Antisymmetric Plain Algebra of Quaternions*, which is alternating and satisfies
+*Introduction to the Antisymmetric Plain Algebra*, which is alternating and satisfies
 the Jacobi identity (*The Specificities of the Antisymmetric Plain Algebra*, below this article in
 this category). By the definition of the Lie structure it is a **real Lie algebra** of dimension four,
 written
@@ -23,7 +23,7 @@ natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the ident
 $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives
 nothing new.
 
-The operation and its table are *Introduction to the Antisymmetric Plain Algebra of Quaternions*; the
+The operation and its table are *Introduction to the Antisymmetric Plain Algebra*; the
 elements of the structure are *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint
 Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this
 category, and the general theory of Lie algebras is *Structure of Lie Algebras*.
@@ -202,7 +202,7 @@ $\mathfrak{su}(2)$.
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra of Quaternions*, for the bracket and the basis table.
+- *Introduction to the Antisymmetric Plain Algebra*, for the bracket and the basis table.
 - *The Specificities of the Antisymmetric Plain Algebra*, below this article in this category, for the Jacobi identity and the isolation of the block.
 - *The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category, for the invariant form, the radical and the Casimir element.
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, below this article in this category, for the adjoint representation, its kernel and its image.

@@ -54,7 +54,7 @@ $$
 
 **Proof.** For $x,y \in V_0$ one has $h(x,y) = h(cx,cy) = \overline{h(x,y)}$, so $h(x,y)$ is real; symmetry of the restriction is the conjugate-symmetry of $h$ at real values. The form $g(x,y) = \operatorname{Re}h(x,y)$ is then symmetric and positive definite on $V_0$ and extends to all of $V$ as the real inner product of the underlying real space; the alternating form is $\omega(x,y) = -\operatorname{Im}h(x,y)$, and $\omega(x,Jy) = -\operatorname{Im}h(x,Jy) = \operatorname{Re}h(x,y) = g(x,y)$ by the $\mathbb C$-linearity of $h$ in the second argument... in the first, with the sign fixed by $h = g - i\omega$. The Hermitian form and its positivity are *Hermitian Geometry and the Unitary Group*.
 
-**Corollary (signature of the restriction).** The signature $(p,q)$ of $h$ restricted to a real form is an invariant of the pair $(h, c)$ under the unitary group; it is the classification of the compatible conjugations of *Complex Manifolds with an Antiholomorphic Involution*, and the standard conjugation $z\mapsto\bar z$ on $\mathbb C^m$ gives the definite real form of signature $(m,0)$.
+**Corollary (signature of the restriction).** The signature $(n,m)$ of $h$ restricted to a real form is an invariant of the pair $(h, c)$ under the unitary group; it is the classification of the compatible conjugations of *Complex Manifolds with an Antiholomorphic Involution*, and the standard conjugation $z\mapsto\bar z$ on $\mathbb C^m$ gives the definite real form of signature $(m,0)$.
 
 **Proof.** The restriction of $h$ to $V_0$ is a real symmetric form, its signature is invariant under the unitary group by Sylvester's law, and the normal form is the standard one. This is *Hermitian Geometry and the Unitary Group*.
 

@@ -45,13 +45,13 @@ up to multiplication by a unit $\pm t^{k}$, where $\Delta_K$ is the **Alexander 
 
 **Proof sketch.** The Alexander polynomial is computed from a presentation of the Alexander module $H_1$ of the infinite cyclic cover of the complement, obtained from a Seifert surface by the Fox calculus; the Seifert matrix computes the linking form on the surface, and the determinant formula for the Alexander polynomial is the resulting statement. The symmetry and the value at $1$ are formal properties of the determinant.
 
-**Example.** The torus knot $T(p,q)$ with $p,q$ coprime has Alexander polynomial
+**Example.** The torus knot $T(n,m)$ with $n,m$ coprime has Alexander polynomial
 
 $$
-\Delta_{T(p,q)}(t) \doteq \frac{(t^{pq}-1)(t-1)}{(t^p-1)(t^q-1)} ,
+\Delta_{T(n,m)}(t) \doteq \frac{(t^{nm}-1)(t-1)}{(t^n-1)(t^m-1)} ,
 $$
 
-so that $\Delta_{3_1}(t) = t^2-t+1$, $\Delta_{5_1}(t) = t^4-t^3+t^2-t+1$, and $|\Delta_{T(p,q)}(-1)| = 3$ for $(p,q)=(2,3)$, $5$ for $(2,5)$ and $3$ for $(3,4)$, computed by the formula; the determinants of these knots are $3$, $5$ and $3$ respectively. The figure-eight knot has $\Delta_{4_1}(t) \doteq t^2-3t+1$, so its determinant is $\Delta_{4_1}(-1) = 5$. The Conway polynomial $\nabla_K(z)$ is the normalisation $\nabla_K(z) = \Delta_K(t)$ with $t^{1/2}-t^{-1/2} = z$, so that $\nabla_{3_1}(z) = z^2+1$ and $\nabla_{4_1}(z) = 1-z^2$; the coefficients $a_n$ of $\nabla$ are the **Conway coefficients**, and the coefficient $a_2$ is the Arf invariant of the knot modulo $2$.
+so that $\Delta_{3_1}(t) = t^2-t+1$, $\Delta_{5_1}(t) = t^4-t^3+t^2-t+1$, and $|\Delta_{T(n,m)}(-1)| = 3$ for $(n,m)=(2,3)$, $5$ for $(2,5)$ and $3$ for $(3,4)$, computed by the formula; the determinants of these knots are $3$, $5$ and $3$ respectively. The figure-eight knot has $\Delta_{4_1}(t) \doteq t^2-3t+1$, so its determinant is $\Delta_{4_1}(-1) = 5$. The Conway polynomial $\nabla_K(z)$ is the normalisation $\nabla_K(z) = \Delta_K(t)$ with $t^{1/2}-t^{-1/2} = z$, so that $\nabla_{3_1}(z) = z^2+1$ and $\nabla_{4_1}(z) = 1-z^2$; the coefficients $a_n$ of $\nabla$ are the **Conway coefficients**, and the coefficient $a_2$ is the Arf invariant of the knot modulo $2$.
 
 **Theorem (fibered knots).** A knot $K$ is **fibered** if its complement fibres over the circle with the Seifert surface as fibre; equivalently $S^3\setminus K$ is a surface bundle over $S^1$ with fibre a once-punctured surface. Then the monodromy of the bundle is a diffeomorphism of the fibre, well defined up to isotopy and conjugation, and the Alexander polynomial is the characteristic polynomial of the induced map on the homology of the fibre; the pseudo-Anosov monodromies give the hyperbolic fibered knots, whose geometry is that of the mapping torus of *Mapping Class Groups*.
 
@@ -139,15 +139,15 @@ for the **smooth slice genus** $g_4(K)$, the minimal genus of a smoothly embedde
 
 **Proof sketch.** The Khovanov complex is built from the Kauffman bracket by replacing each state sum with a chain group and each smoothing with a map; the invariance under the Reidemeister moves is a chain-homotopy computation, and the graded Euler characteristic is the bracket by construction. The Lee deformation introduces a filtered differential whose homology is computed explicitly, and the Rasmussen invariant is its evaluation on the generator; the slice-genus inequality follows from the functoriality applied to a slice surface for $K$, whose induced map must respect the filtration.
 
-**Theorem (Milnor conjecture; Kronheimer–Mrowka; Rasmussen).** For the torus knot $T(p,q)$ the Seifert genus equals the smooth slice genus,
+**Theorem (Milnor conjecture; Kronheimer–Mrowka; Rasmussen).** For the torus knot $T(n,m)$ the Seifert genus equals the smooth slice genus,
 
 $$
-g_4(T(p,q)) = g(T(p,q)) = \frac{(p-1)(q-1)}{2},
+g_4(T(n,m)) = g(T(n,m)) = \frac{(n-1)(m-1)}{2},
 $$
 
-and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of the Seifert genus and the smooth slice genus, and the unknotting number formula, were proved by Kronheimer and Mrowka by gauge theory, using the analysis of the moduli spaces of the Seiberg–Witten equations of Part III; Rasmussen gave a second proof of the slice-genus statement by the $s$-invariant of Khovanov homology.
+and the unknotting number is $u(T(n,m)) = \frac{(n-1)(m-1)}{2}$. The equality of the Seifert genus and the smooth slice genus, and the unknotting number formula, were proved by Kronheimer and Mrowka by gauge theory, using the analysis of the moduli spaces of the Seiberg–Witten equations of Part III; Rasmussen gave a second proof of the slice-genus statement by the $s$-invariant of Khovanov homology.
 
-**Proof sketch.** The lower bound for the slice genus is supplied by the Rasmussen invariant, which evaluates to $s(T(p,q)) = (p-1)(q-1)$ for the standard orientation, so that $g_4\geq(p-1)(q-1)/2$; the Seifert surface of the torus knot realises the genus, so the bound is sharp, and the same argument applied to the unknotting inequality gives the unknotting number. The gauge-theoretic proof of Kronheimer–Mrowka uses the property that the Seiberg–Witten invariant of the knot complement detects the minimal genus of a surface representing a given class.
+**Proof sketch.** The lower bound for the slice genus is supplied by the Rasmussen invariant, which evaluates to $s(T(n,m)) = (n-1)(m-1)$ for the standard orientation, so that $g_4\geq(n-1)(m-1)/2$; the Seifert surface of the torus knot realises the genus, so the bound is sharp, and the same argument applied to the unknotting inequality gives the unknotting number. The gauge-theoretic proof of Kronheimer–Mrowka uses the property that the Seiberg–Witten invariant of the knot complement detects the minimal genus of a surface representing a given class.
 
 **Remark.** The two categorifications are not independent: the Khovanov homology categorifies the Jones polynomial and the knot Floer homology categorifies the Alexander polynomial, and there is a spectral sequence from the Khovanov homology to the knot Floer homology, constructed by Ozsváth–Szabó and by Rasmussen; the spectral sequence is the structural bridge between the quantum and the Floer-theoretic invariants. The detection theorems at the two ends are the sharpest known applications of the categorified invariants: the unknot detection and the genus detection at the Floer end, the slice-genus bound and the smooth four-ball genus at the Khovanov end.
 
@@ -155,7 +155,7 @@ and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of
 
 **Theorem (JSJ decomposition and the geometrisation of knot complements).** Let $K\subseteq S^3$ be a knot with complement $M_K = S^3\setminus K$, a compact three-manifold with torus boundary. Then $M_K$ has a unique torus decomposition into pieces that are Seifert fibred or hyperbolic. A knot is
 
-**(a)** a **torus knot** if and only if $M_K$ is Seifert fibred, and then $M_K$ carries the $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$ geometry: equivalently the universal cover of $S^3\setminus T(p,q)$ is $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, the universal cover of $SL_2(\mathbb{R})$;
+**(a)** a **torus knot** if and only if $M_K$ is Seifert fibred, and then $M_K$ carries the $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$ geometry: equivalently the universal cover of $S^3\setminus T(n,m)$ is $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, the universal cover of $SL_2(\mathbb{R})$;
 
 **(b)** a **satellite** knot if and only if $M_K$ contains an essential torus that is not boundary-parallel;
 
@@ -183,7 +183,7 @@ and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of
 
 A knot is a circle in $S^3$; knots are studied through their diagrams and the Reidemeister moves, through the complement and its fundamental group, and through the invariants computed from Seifert surfaces and from skein relations. The complement determines the knot by Gordon–Luecke, and the knot group, the Seifert genus and the Seifert matrix are the classical invariants of the complement; the Alexander polynomial is the determinant of the Seifert matrix, the signature is the signature of $V+V^{\mathsf{T}}$, and the Conway coefficients encode the same information. The Jones, HOMFLY and Kauffman polynomials are the quantum invariants, obtained from the Kauffman bracket by the writhe normalisation and structurally from the representations of the quantum groups; the Tait conjectures, proved from the bracket, compute the crossing number of a reduced alternating diagram and confirm the tabulation of the alternating knots.
 
-The two categorifications dominate the modern theory: the knot Floer homology categorifies the Alexander polynomial and detects the genus, the fibredness and the unknot; the Khovanov homology categorifies the Jones polynomial, is functorial for cobordisms, and produces the Rasmussen invariant whose bound $|s|\leq2g_4$ proves the Milnor conjecture on the slice genus and the unknotting number of the torus knots, $g_4(T(p,q)) = u(T(p,q)) = (p-1)(q-1)/2$. Geometrically, a knot complement is Seifert fibred exactly when the knot is a torus knot, is a satellite exactly when it contains an essential torus, and is hyperbolic otherwise; the figure-eight knot is the simplest hyperbolic knot, of volume $2.0298832\ldots$, and the hyperbolic volume is a topological invariant which by Mostow rigidity admits no deformation. The concordance group organises the invariants into homomorphisms, and the slice-ribbon conjecture remains open.
+The two categorifications dominate the modern theory: the knot Floer homology categorifies the Alexander polynomial and detects the genus, the fibredness and the unknot; the Khovanov homology categorifies the Jones polynomial, is functorial for cobordisms, and produces the Rasmussen invariant whose bound $|s|\leq2g_4$ proves the Milnor conjecture on the slice genus and the unknotting number of the torus knots, $g_4(T(n,m)) = u(T(n,m)) = (n-1)(m-1)/2$. Geometrically, a knot complement is Seifert fibred exactly when the knot is a torus knot, is a satellite exactly when it contains an essential torus, and is hyperbolic otherwise; the figure-eight knot is the simplest hyperbolic knot, of volume $2.0298832\ldots$, and the hyperbolic volume is a topological invariant which by Mostow rigidity admits no deformation. The concordance group organises the invariants into homomorphisms, and the slice-ribbon conjecture remains open.
 
 ## Summary of Notation
 
@@ -198,12 +198,12 @@ The two categorifications dominate the modern theory: the knot Floer homology ca
 | $|\Delta_K(-1)|$, $\sigma(K)$ | Knot determinant; signature of $V+V^{\mathsf{T}}$ |
 | $V_L(t)$, $P_L(a,z)$ | Jones polynomial; HOMFLY polynomial |
 | $\langle D\rangle$, $A$, $w(D)$ | Kauffman bracket, bracket variable, writhe; $V=(-A^3)^{-w}\langle D\rangle$ |
-| $T(p,q)$ | Torus knot; $\Delta_{T(p,q)}\doteq(t^{pq}-1)(t-1)/((t^p-1)(t^q-1))$ |
+| $T(n,m)$ | Torus knot; $\Delta_{T(n,m)}\doteq(t^{nm}-1)(t-1)/((t^n-1)(t^m-1))$ |
 | $L_+,L_-,L_0$ | Positive, negative and smoothed resolutions in the skein relations |
 | $\widehat{HFK}(K)$ | Knot Floer homology; Euler characteristic $\Delta_K$, detects $g$, fibredness, the unknot |
 | $\mathrm{Kh}(L)$, $s(K)$ | Khovanov homology categorifying $V_L$; Rasmussen invariant, $|s(K)|\leq2g_4(K)$ |
 | $\mathcal{C}$, $g_4(K)$ | Concordance group; smooth slice genus; $\sigma,\tau,s$ the concordance homomorphisms |
-| $T(p,q)$ slice genus | $g_4(T(p,q))=(p-1)(q-1)/2$ (Milnor conjecture; Kronheimer–Mrowka, Rasmussen) |
+| $T(n,m)$ slice genus | $g_4(T(n,m))=(n-1)(m-1)/2$ (Milnor conjecture; Kronheimer–Mrowka, Rasmussen) |
 
 
 

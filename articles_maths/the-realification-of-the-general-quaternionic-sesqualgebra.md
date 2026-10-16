@@ -6,11 +6,11 @@ The general quaternionic sesqualgebra is the structure carried by the general qu
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*},
 $$
-the fourth of the four general products and one of the twelve structures that the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). Over $\mathbb{C}$ it is a sesqualgebra over $(\mathbb{C},\varsigma)$, it has no unit on either side, and its scalar part is the general quaternionic sesquilinear form. This article is the **real reading** of that one product: the same product on the same eight-dimensional real space, the change of kind the passage produces, the two one-sided multiplications and the parities they take, and the realification of the form the product carries.
+the fourth of the four general products and one of the twelve structures that the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). Over $\mathbb{C}$ it is a sesqualgebra over $(\mathbb{C},\varsigma)$, it has no unit on either side, and its scalar part is the general quaternionic sesquilinear form. This article is the **real reading** of that one product: the same product on the same eight-dimensional real space, the change of kind the passage produces, the two one-sided multiplications and the parities they take, and the realification of the form the product carries.
 
 The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$, the two rules for forms and the table of the four effects are **The Realification and the Effect of the Change of Scalars**.
 
-**Boundary.** The product itself is defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; its complex body — the table, the two scalar rules, the associator, the ternary product, the square, the idempotents, the nilpotents and the zero divisors — is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, *The Specificities of the General Quaternionic Sesqualgebra* and the articles they cite, and none of it is repeated here. What the real reading adds is stated below and nowhere else.
+**Boundary.** The product itself is defined in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; its complex body — the table, the two scalar rules, the associator, the ternary product, the square, the idempotents, the nilpotents and the zero divisors — is *Introduction to the General Quaternionic Sesqualgebra*, *The Specificities of the General Quaternionic Sesqualgebra* and the articles they cite, and none of it is repeated here. What the real reading adds is stated below and nowhere else.
 
 ## The Change of Scalars
 
@@ -82,9 +82,9 @@ so the two blocks differ in their elements, their tables and their forms, and no
 
 The product carries the general quaternionic sesquilinear form, the Krein form
 $$
-K(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu},\qquad\varepsilon=(1,-1,-1,-1),
+\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu},\qquad\varepsilon=(1,-1,-1,-1),
 $$
-Hermitian of complex inertia $(1,3)$ (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*). It is real on the diagonal, and its imaginary part, alternating and non-zero off the diagonal, is no second independent form: it is recovered from the real part by $\operatorname{Im}K(\tilde P,\tilde Q)=-K_{\mathbb{R}}(J\tilde P,\tilde Q)$, so the realification is one real symmetric bilinear form and not the split pair that a bilinear form gives. By §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars* its signature is the double of the complex inertia,
+Hermitian of complex inertia $(1,3)$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). It is real on the diagonal, and its imaginary part, alternating and non-zero off the diagonal, is no second independent form: it is recovered from the real part by $\operatorname{Im}\langle\tilde P,\tilde Q\rangle_{\natural*}=-K_{\mathbb{R}}(J\tilde P,\tilde Q)$, so the realification is one real symmetric bilinear form and not the split pair that a bilinear form gives. By §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars* its signature is the double of the complex inertia,
 $$
 (2p,2q)=(2,6),
 $$
@@ -110,9 +110,9 @@ The passage adds three things that the complex reading does not state in this fo
 
 The rest of the block's body is unchanged, and the reason is the dictionary: the unit, the associativity, the idempotents, the nilpotents, the square-zero family and the zero divisors are read from the ring alone. In particular the idempotents are those of the complex reading, $0$, $e_0$ and the family
 $$
-\tilde\Pi(\hat u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u,\qquad(\hat u,\hat u)=1\ \text{in the real vector subspace};
+\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1\ \text{in the real vector subspace};
 $$
-the square-zero family is $\lambda(\hat u+i)$, equivalently $\lambda(e_0+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\hat u$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
+the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_0+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\vec u$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
 
 ## Summary
 
@@ -130,17 +130,17 @@ Read over $\mathbb{R}$ the general quaternionic sesqualgebra is the same product
 | $LJ=-JL$, $RJ=+JR$ | the two parities: the left anticommutes with $J$, the right commutes |
 | $\left(\begin{smallmatrix}A&B\\B&-A\end{smallmatrix}\right)$, $\left(\begin{smallmatrix}A&-B\\B&A\end{smallmatrix}\right)$ | the block matrices of the left and of the right multiplication |
 | $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\oplus\operatorname{Ant}_{\mathbb{C}}(\mathbb{B})$ | the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$, of real dimensions $32$ and $32$ |
-| $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar part of the product, of complex inertia $(1,3)$ |
+| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar part of the product, of complex inertia $(1,3)$ |
 | $(2,6)$, $\operatorname{diag}(\varepsilon,\varepsilon)$ | the signature and the Gram matrix of the realified form |
-| $\tilde\Pi(\hat u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$, $(\hat u,\hat u)=1$ | the nontrivial idempotents, a ring statement unchanged by the passage |
+| $\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$ | the nontrivial idempotents, a ring statement unchanged by the passage |
 
 ## Further Reading
 
 - **The Realification and the Effect of the Change of Scalars** (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the two rules of the realification of a form, the table of the four effects and the splitting $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Ant}_{\mathbb{C}}$.
-- **The Realification of the Four Forms** (`articles_maths/the-realification-of-the-four-forms.md`), for the four realified Gram matrices and signatures, the Krein row $\operatorname{diag}(\varepsilon,\varepsilon)$ of signature $(2,6)$, the restrictions and the realified null cones.
-- **Introduction to the General Quaternionic Sesqualgebra of Biquaternions** (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the product, its table, its scalar rules, the two one-sided actions of $e_0$, the associator, the ternary product and the idempotents.
+- **The Realification of the Eight Derived Structures** (`articles_maths/the-realification-of-the-eight-derived-structures.md`), for the four realified Gram matrices and signatures, the Krein row $\operatorname{diag}(\varepsilon,\varepsilon)$ of signature $(2,6)$, the restrictions and the realified null cones.
+- **Introduction to the General Quaternionic Sesqualgebra** (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the product, its table, its scalar rules, the two one-sided actions of $e_0$, the associator, the ternary product and the idempotents.
 - **The Specificities of the General Quaternionic Sesqualgebra** (`articles_maths/the-specificities-of-the-general-quaternionic-sesqualgebra.md`), for the star identity, the factorization, the parity obstruction and the isolation of the block among the twelve.
-- **Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra** (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md`), **Zero Divisors of the General Quaternionic Sesqualgebra** (`articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.md`) and **Norm and Invertibility in the General Quaternionic Sesqualgebra** (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.md`), for the idempotent family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$, the square-zero elements and the plain criterion $C\neq0$ quoted in §*What Is Specific to the Real Interpretation*.
+- **Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra** (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md`), **Zero Divisors of the General Quaternionic Sesqualgebra** and **Norm and Invertibility in the General Quaternionic Sesqualgebra**, for the idempotent family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$, the square-zero elements and the plain criterion $C\neq0$ quoted in §*What Is Specific to the Real Interpretation*.
 - **The Left and Right Multiplications of the General Quaternionic Sesquilinear Product** (`articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.md`), for the two one-sided families over $\mathbb{C}$, which this article reads over $\mathbb{R}$.
-- **The Krein Gram Matrix and the Restrictions of the Form** (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`) and **The Isotropic Structure of the General Quaternionic Sesqualgebra** (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the form, its inertia, its Gram matrix in the real basis and its null cone, which the passage does not move.
-- **The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space** (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`) and **The Four General Products of the Biquaternion $\mathbb{C}$ Space** (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the twelve structures and the four general products.
+- **The Krein Gram Matrix and the Restrictions of the Form** (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`) and **The Isotropic Structure of the General Quaternionic Sesqualgebra**, for the form, its inertia, its Gram matrix in the real basis and its null cone, which the passage does not move.
+- **The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space** (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`) and **The Four General Products of the Biquaternioid $\mathbb{C}$ Space**, for the twelve structures and the four general products.

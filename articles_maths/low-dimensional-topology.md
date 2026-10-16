@@ -53,7 +53,7 @@ of prime manifolds, and the collection $\{P_i\}$ is unique up to order and homeo
 
 **Proof sketch.** The classification reduces to the classification of circle actions on three-manifolds, which is the classification of the associated orbifold data; the geometric statements are read off from the possible total spaces of the six Seifert fibred geometries.
 
-**Example.** The lens spaces $L(p,q)$ — the quotients of $S^3$ by the free cyclic action of order $p$ — are Seifert fibred over $S^2$ with at most two exceptional fibres and carry the spherical geometry; their classification, their fundamental groups and their role in the classification of free group actions are the subject of *Lens Spaces*. The three-torus $T^3$ is Seifert fibred in many ways and carries the Euclidean geometry; $S^2\times S^1$ is Seifert fibred and carries the $S^2\times\mathbb{R}$ geometry; the unit tangent bundle of a hyperbolic surface is Seifert fibred and carries the $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$ geometry; the Heisenberg nilmanifold is Seifert fibred, carries $\mathrm{Nil}$ and is the model for the Kodaira–Thurston manifold of *Kähler Geometry*.
+**Example.** The lens spaces $L(n,m)$ — the quotients of $S^3$ by the free cyclic action of order $p$ — are Seifert fibred over $S^2$ with at most two exceptional fibres and carry the spherical geometry; their classification, their fundamental groups and their role in the classification of free group actions are the subject of *Lens Spaces*. The three-torus $T^3$ is Seifert fibred in many ways and carries the Euclidean geometry; $S^2\times S^1$ is Seifert fibred and carries the $S^2\times\mathbb{R}$ geometry; the unit tangent bundle of a hyperbolic surface is Seifert fibred and carries the $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$ geometry; the Heisenberg nilmanifold is Seifert fibred, carries $\mathrm{Nil}$ and is the model for the Kodaira–Thurston manifold of *Kähler Geometry*.
 
 ## Geometrisation and the Eight Model Geometries
 
@@ -142,7 +142,7 @@ unimodular over $\mathbb{Z}$ by Poincaré duality; it is **even** if $Q_M(a,a)$ 
 
 **Proof sketch.** The intersection form determines the cup-product structure of $H^2$ and hence, by the Whitehead theorem applied to the Postnikov tower, the homotopy type; the construction of the homotopy equivalence from the isometry uses the fact that the attaching maps of the $3$-cells of a cell decomposition realise the form.
 
-**Theorem (Freedman; topological classification).** Let $Q$ be a unimodular symmetric bilinear form over $\mathbb{Z}$. If $Q$ is even, there is a closed simply connected topological four-manifold with intersection form $Q$ and with Kirby–Siebenmann invariant determined by the signature of $Q$; if $Q$ is odd, there is a closed simply connected topological four-manifold with intersection form $Q$ with either value of the Kirby–Siebenmann invariant. Consequently the closed simply connected topological four-manifolds are classified by their intersection forms together with the Kirby–Siebenmann invariant, and $E_8$ is realised by a topological four-manifold, the **$E_8$ manifold**, which is not smoothable.
+**Theorem (Freedman; topological classification).** Let $Q$ be a unimodular symmetric bilinear form over $\mathbb{Z}$. If $Q$ is even, there is a closed simply connected topological four-manifold with intersection form $\mathfrak{Q}$ and with Kirby–Siebenmann invariant determined by the signature of $Q$; if $Q$ is odd, there is a closed simply connected topological four-manifold with intersection form $\mathfrak{Q}$ with either value of the Kirby–Siebenmann invariant. Consequently the closed simply connected topological four-manifolds are classified by their intersection forms together with the Kirby–Siebenmann invariant, and $E_8$ is realised by a topological four-manifold, the **$E_8$ manifold**, which is not smoothable.
 
 **Proof sketch.** The construction is by a topological handle decomposition, in which the Whitney trick for cancelling intersections of surfaces is replaced by the disc-embedding theorems of Freedman; the failure of the Whitney trick in the smooth case is exactly the source of the smooth obstruction. The proofs are analytic-topological and belong to the circle of ideas of Part III.
 
@@ -187,7 +187,7 @@ The combinatorial models of a three-manifold are the Heegaard splittings, unique
 | $M$, $N$ | Compact (usually closed oriented) manifolds of dimension two, three or four |
 | $g$, $k$, $b$, $\chi$ | Genus of an orientable surface, genus of a non-orientable surface, boundary count, Euler characteristic $\chi=2-2g-b$ |
 | $M_1\# \mathsf{M}_2$ | Connected sum; prime and irreducible three-manifolds |
-| $L(p,q)$ | Lens space $S^3/(\mathbb{Z}/p)$; Seifert fibred over $S^2$ |
+| $L(n,m)$ | Lens space $S^3/(\mathbb{Z}/n)$; Seifert fibred over $S^2$ |
 | $T^2\times I$, $\Sigma$ | Splitting tori of the JSJ decomposition; Heegaard surface |
 | $H_i$, $\Sigma_g$ | Handlebodies; genus-$g$ Heegaard splitting $M=H_0\cup_\Sigma H_1$ |
 | $S^3_{p/q}(K)$ | Dehn surgery on a knot with rational coefficient $p/q$ |

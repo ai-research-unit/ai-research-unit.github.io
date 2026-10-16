@@ -9,8 +9,8 @@ This article lists the integral transforms the corpus constructs and inverts. An
 
 | Object | Its kernel and its inversion theorem | Introduced in |
 |---|---|---|
-| the Fourier transform on $\mathbb R^n$ | kernel $e^{-2\pi i\langle x,\xi\rangle}$; inversion $\hat f \mapsto f$ under $f \in L^1$ with $\hat f \in L^1$, and the $L^2$ form by Plancherel | *Fourier Analysis on Euclidean Spaces* |
-| the Fourier series on the circle | kernel $e^{in\theta}$; inversion by the convergence of the partial sums, and by the Fejér and Cesàro means | *Real Harmonic Analysis*; *Fourier Analysis on Euclidean Spaces* |
+| the Fourier transform on $\mathbb R^n$ | kernel $\exp(-2\pi i\langle x,\xi\rangle)$; inversion $\mathcal F f \mapsto f$ under $f \in L^1$ with $\mathcal F f \in L^1$, and the $L^2$ form by Plancherel | *Fourier Analysis on Euclidean Spaces* |
+| the Fourier series on the circle | kernel $\exp(in\theta)$; inversion by the convergence of the partial sums, and by the Fejér and Cesàro means | *Real Harmonic Analysis*; *Fourier Analysis on Euclidean Spaces* |
 | the Fourier transform on a finite abelian group | the characters as kernel; discrete inversion by the orthogonality relations | *Harmonic Analysis on Groups* |
 | the Fourier transform on a locally compact abelian group | the characters of $\hat G$ as kernel; inversion and Plancherel for the Haar measure | *Harmonic Analysis on Groups* |
 | the Fourier transform on a compact group | the matrix coefficients of the irreducible representations as kernel; inversion by the Peter–Weyl theorem | *Analysis on Compact Groups* |
@@ -21,7 +21,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 
 | Object | Its kernel and its inversion theorem | Introduced in |
 |---|---|---|
-| the Laplace transform | kernel $e^{-st}$; inversion by the Bromwich integral, and the resolvent form $R(\lambda,A) = \int_0^\infty e^{-\lambda t}T(t)\,dt$ | *Semigroups and Evolution Equations*; *Split-Complex Harmonic Analysis*; *Markov Chains and Processes* |
+| the Laplace transform | kernel $\exp(-st)$; inversion by the Bromwich integral, and the resolvent form $R(\lambda,A) = \int_0^\infty \exp(-\lambda t)T(t)\,dt$ | *Semigroups and Evolution Equations*; *Split-Complex Harmonic Analysis*; *Markov Chains and Processes* |
 | the Fourier–Stieltjes transform $\hat\mu(\chi) = \int_G\overline{\chi(x)}\,d\mu(x)$ | the transform of a finite measure on a group, recovering the classical transform for $G = \mathbb R^n$; inversion by Bochner's theorem and the uniqueness of the transform | *Harmonic Analysis on Groups*; *Noncommutative Harmonic Analysis* |
 | the Mellin transform | kernel $x^{s-1}$; inversion on a vertical line, and its identification with the Fourier transform in logarithmic coordinates | *Complex Harmonic Analysis* |
 | the Mellin convolution and its inversion | the multiplicative convolution and its transform rule $\mathcal M(f \star g) = \mathcal M f\,\mathcal M g$ | *Complex Harmonic Analysis* |
@@ -30,7 +30,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 
 | Object | Its kernel and its inversion theorem | Introduced in |
 |---|---|---|
-| the Hilbert transform on the line | kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^p$, $1<p<\infty$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
+| the Hilbert transform on the line | kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^{n}$, $1<p<\infty$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Riesz transforms $R_j$ | symbols $-i\xi_j/\lvert\xi\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Radon transform | integration over hyperplanes; inversion by the Fourier slice theorem and filtered back-projection | *Complex Harmonic Analysis* |
 | the Hankel transform | kernel $J_\nu(\rho r)r$; inversion by the Hankel inversion theorem, the radial part of the Fourier transform | *Octonion Harmonic Analysis* |
@@ -68,7 +68,7 @@ The objects are named rather than denoted; the symbols in the tables are collect
 
 | Symbol | Meaning |
 |---|---|
-| $\hat f$, $\mathcal F f$ | the Fourier transform of $f$ |
+| $\mathcal F f$, $\mathcal F f$ | the Fourier transform of $f$ |
 | $\hat\mu$ | the Fourier–Stieltjes transform of a measure |
 | $\varphi_X$, $\chi$ | a character, and a characteristic function in the probabilistic use |
 | $R(\lambda,A)$ | the resolvent, the Laplace transform of a semigroup |

@@ -5,16 +5,16 @@
 
 The generators of a Clifford algebra are vectors, and the elements built from them by multiplication are the versors. An even versor of unit norm is a **rotor**, and it acts on the space of vectors by the **sandwich** $v\mapsto RvR^{-1}$, which is a rotation; the same element acts on the spinor module of *Spin Representations and Clifford Modules with Inner Conjugation* by **left multiplication** $\psi\mapsto R\psi$. The two actions are not interchangeable. The sandwich is the vector action and carries the full parameter of the rotation; left multiplication is the spinor action and carries half that parameter, which is why a spinor changes sign under the full parameter while a vector returns to itself. This article derives both actions, proves the rotation formula from the closed form of a bivector, exhibits the failure of left multiplication on a vector and shows how the sandwich repairs it, and records the two-to-one cover of the rotation group that the two actions express.
 
-The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade subspaces, the grade projection and the outer and inner products are from *The Geometric Product and the Grade Decomposition*; the volume element and the star are from *The Volume Element, Duality and the Hodge Star*; the Clifford group, the signed inner conjugation action, the Clifford norm, the Pin and Spin groups and the Cartan–Dieudonné theorem are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the general family of two-sided operators, of which the sandwich is the inverse member, is from *Two-Sided Operators on a Clifford Algebra*; the identification of the bivectors with the orthogonal Lie algebra is from *The Clifford Algebra as a Lie Algebra*; the quaternion rotations are from *Quaternion Rotations and Reflections* and the rotation and reflection groups of the biquaternion algebra from *Biquaternion Rotations and Lorentz Transformations*. Nothing owned by those entries is re-derived. The base is a field of characteristic not $2$, with $q$ non-degenerate on a finite-dimensional space $V$ and $B$ its polar form; the conventions are $v^2=q(v)\cdot1$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$.
+The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade subspaces, the grade projection and the outer and inner products are from *The Geometric Product and the Grade Decomposition*; the volume element and the star are from *The Volume Element, Duality and the Hodge Star*; the Clifford group, the signed inner conjugation action, the Clifford norm, the Pin and Spin groups and the Cartan–Dieudonné theorem are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the general family of two-sided operators, of which the sandwich is the inverse member, is from *Two-Sided Operators on a Clifford Algebra*; the identification of the bivectors with the orthogonal Lie algebra is from *The Clifford Algebra as a Lie Algebra*; the quaternion rotations are from *Quaternion Rotations and Reflections* and the rotation and reflection groups of the biquaternion algebra from *Biquaternion Rotations and Lorentz Transformations*. Nothing owned by those entries is re-derived. The base is a field of characteristic not $2$, with $q$ non-degenerate on a finite-dimensional space $V$ and $B$ its polar form; the conventions are $v^2=\mathfrak{Q}(v)\cdot1$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$.
 
 ## Versors
 
 ### Products of Invertible Vectors
 
-**Definition.** A **versor** is an element of $\mathrm{Cl}(V,q)$ of the form
+**Definition.** A **versor** is an element of $\mathrm{Cl}(V,\mathfrak{Q})$ of the form
 
 $$
-x=v_1v_2\cdots v_k, \qquad q(v_i)\neq0\ \text{ for every }i,
+x=v_1v_2\cdots v_k, \qquad \mathfrak{Q}(v_i)\neq0\ \text{ for every }i,
 $$
 
 a product of non-isotropic, hence invertible, vectors. The number $k$ is the length of the expression and its parity is the parity of the versor.
@@ -22,16 +22,16 @@ a product of non-isotropic, hence invertible, vectors. The number $k$ is the len
 **Proposition.** Every versor is invertible, with
 
 $$
-(v_1v_2\cdots v_k)^{-1}=v_k^{-1}\cdots v_2^{-1}v_1^{-1}, \qquad v^{-1}=v\,q(v)^{-1}\ \text{ for a vector }v,
+(v_1v_2\cdots v_k)^{-1}=v_k^{-1}\cdots v_2^{-1}v_1^{-1}, \qquad v^{-1}=v\,\mathfrak{Q}(v)^{-1}\ \text{ for a vector }v,
 $$
 
 and the inverse of a versor is a versor of the same length and parity.
 
-**Proof.** The inverse of a vector is $v/q(v)$ by the fundamental relation, since $v\cdot v=v^2=q(v)$; the inverse of the product is the product of the inverses in the reverse order.
+**Proof.** The inverse of a vector is $v/\mathfrak{Q}(v)$ by the fundamental relation, since $v\cdot v=v^2=\mathfrak{Q}(v)$; the inverse of the product is the product of the inverses in the reverse order.
 
-**Definition.** The **Lipschitz group** of $(V,q)$ is the group generated by the non-isotropic vectors.
+**Definition.** The **Lipschitz group** of $(V,\mathfrak{Q})$ is the group generated by the non-isotropic vectors.
 
-**Theorem.** The Lipschitz group is the Clifford group $\Gamma(V,q)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, that is, the group of units $x$ with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$, where $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
+**Theorem.** The Lipschitz group is the Clifford group $\Gamma(V,\mathfrak{Q})$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, that is, the group of units $x$ with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$, where $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
 
 **Proof.** A non-isotropic vector $u$ satisfies $\mathrm{Ad}^{\alpha}_u(v)=-uvu^{-1}=\rho_u(v)$, the reflection in the hyperplane $u^{\perp}$, which is a linear map of $V$ to $V$; hence $\mathrm{Ad}^{\alpha}_u(V)\subseteq V$ and $u\in\Gamma$. The signed inner conjugation is multiplicative, $\mathrm{Ad}^{\alpha}_{xy}=\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_y$, because $\alpha$ is an algebra automorphism, so the group generated by the vectors lies in $\Gamma$. Conversely $\Gamma$ is generated by the non-isotropic vectors it contains, as recorded in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; hence the two groups coincide.
 
@@ -41,7 +41,7 @@ and the inverse of a versor is a versor of the same length and parity.
 
 The parity of a versor is determined by its length, and the even versors are the ones that act by orientation-preserving isometries.
 
-**Proposition.** A versor of even length lies in $\mathrm{Cl}^0(V,q)$ and a versor of odd length in $\mathrm{Cl}^1(V,q)$; a versor of odd length acts on $V$ by an isometry of determinant $-1$ and a versor of even length by one of determinant $+1$.
+**Proposition.** A versor of even length lies in $\mathrm{Cl}^0(V,\mathfrak{Q})$ and a versor of odd length in $\mathrm{Cl}^1(V,\mathfrak{Q})$; a versor of odd length acts on $V$ by an isometry of determinant $-1$ and a versor of even length by one of determinant $+1$.
 
 **Proof.** The product of $k$ odd elements lies in $\mathrm{Cl}^0$ or $\mathrm{Cl}^1$ according to the parity of $k$, by the parity grading. The determinant statement is the corollary of Cartan–Dieudonné recorded in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*: each reflection has determinant $-1$, and the parity of the number of reflections is the parity of the length.
 
@@ -52,12 +52,12 @@ The parity of a versor is determined by its length, and the even versors are the
 **Definition.** A **rotor** is an even versor $R$ of unit norm,
 
 $$
-R\in\mathrm{Cl}^0(V,q), \qquad N(R)=R\bar R=RR^{r}=1.
+R\in\mathrm{Cl}^0(V,\mathfrak{Q}), \qquad N(R)=R\bar R=RR^{r}=1.
 $$
 
-**Proposition.** The rotors form a subgroup of the spin group $\mathrm{Spin}(V,q)$, containing $\pm1$, and the map $R\mapsto\mathrm{Ad}^{\alpha}_R$ is a homomorphism from the rotors into $SO(V,q)$, of kernel $\{\pm1\}$.
+**Proposition.** The rotors form a subgroup of the spin group $\mathrm{Spin}(V,\mathfrak{Q})$, containing $\pm1$, and the map $R\mapsto\mathrm{Ad}^{\alpha}_R$ is a homomorphism from the rotors into $SO(V,\mathfrak{Q})$, of kernel $\{\pm1\}$.
 
-**Proof.** The even versors form a subgroup of $\Gamma$ and the norm $N$ is multiplicative on $\Gamma$ with values in $F$, so the elements of norm $1$ form a subgroup; by the definition of $\mathrm{Spin}(V,q)$ in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* this subgroup lies in $\mathrm{Spin}$. The kernel of $\mathrm{Ad}^{\alpha}$ on $\Gamma$ is the group of nonzero scalars, and a scalar $\lambda$ has norm $\lambda^2$; intersecting with the rotors leaves $\lambda=\pm1$.
+**Proof.** The even versors form a subgroup of $\Gamma$ and the norm $N$ is multiplicative on $\Gamma$ with values in $F$, so the elements of norm $1$ form a subgroup; by the definition of $\mathrm{Spin}(V,\mathfrak{Q})$ in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* this subgroup lies in $\mathrm{Spin}$. The kernel of $\mathrm{Ad}^{\alpha}$ on $\Gamma$ is the group of nonzero scalars, and a scalar $\lambda$ has norm $\lambda^2$; intersecting with the rotors leaves $\lambda=\pm1$.
 
 **Remark (the condition is not redundant).** The two conditions of the definition — even and of norm one — do not by themselves put an element in the Clifford group: over an indefinite form there are units of norm one in the even part whose signed inner conjugation does not preserve $V$, and the example is recorded in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. What makes an element a rotor is that it be a versor; the norm-one condition then cuts the versors down to the spin group.
 
@@ -75,7 +75,7 @@ the last expression being the inner product of $B$ with $v$. Then $\operatorname
 
 ### The Rotation Formula in a Plane
 
-**Theorem (the plane).** Let $e_1,e_2$ be orthogonal with $q(e_1)=1$ and $q(e_2)=\varepsilon\in\{+1,-1\}$, and put $B=e_1e_2$, so that $B^2=-\varepsilon$. Then $J_B$ annihilates the orthogonal complement of the plane of $B$ and acts on the plane by
+**Theorem (the plane).** Let $e_1,e_2$ be orthogonal with $\mathfrak{Q}(e_1)=1$ and $\mathfrak{Q}(e_2)=\varepsilon\in\{+1,-1\}$, and put $B=e_1e_2$, so that $B^2=-\varepsilon$. Then $J_B$ annihilates the orthogonal complement of the plane of $B$ and acts on the plane by
 
 $$
 J_B(e_1)=-e_2, \qquad J_B(e_2)=\varepsilon e_1, \qquad J_B^2=-\varepsilon.
@@ -95,7 +95,7 @@ $$
 
 the hyperbolic element of the plane with parameter $\varphi$. In both cases the rotor fixes every vector orthogonal to the plane.
 
-**Proof.** With $B=e_1e_2$ the anticommutation gives $Be_1=-q(e_1)e_2=-e_2$, $e_1B=q(e_1)e_2=e_2$, $Be_2=q(e_2)e_1=\varepsilon e_1$ and $e_2B=-q(e_2)e_1=-\varepsilon e_1$; hence
+**Proof.** With $B=e_1e_2$ the anticommutation gives $Be_1=-\mathfrak{Q}(e_1)e_2=-e_2$, $e_1B=\mathfrak{Q}(e_1)e_2=e_2$, $Be_2=\mathfrak{Q}(e_2)e_1=\varepsilon e_1$ and $e_2B=-\mathfrak{Q}(e_2)e_1=-\varepsilon e_1$; hence
 
 $$
 J_B(e_1)=\tfrac12(Be_1-e_1B)=-e_2, \qquad J_B(e_2)=\tfrac12(Be_2-e_2B)=\varepsilon e_1,
@@ -115,9 +115,9 @@ $$
 R=\cosh\tfrac{\varphi}{2}-B\sinh\tfrac{\varphi}{2}
 $$
 
-and the map $v\mapsto RvR^{-1}$ is the hyperbolic element of the plane of $B$ with parameter $\varphi$, the rotor carrying the parameter $\varphi/2$: it preserves the form, fixes the orthogonal complement of the plane, and $R(\varphi)^{-1}=R(-\varphi)$. A bivector of square $+1$ thus generates a boost where a bivector of square $-1$ generates a rotation, the two cases being distinguished by the sign of $q(e_1)q(e_2)$.
+and the map $v\mapsto RvR^{-1}$ is the hyperbolic element of the plane of $B$ with parameter $\varphi$, the rotor carrying the parameter $\varphi/2$: it preserves the form, fixes the orthogonal complement of the plane, and $R(\varphi)^{-1}=R(-\varphi)$. A bivector of square $+1$ thus generates a boost where a bivector of square $-1$ generates a rotation, the two cases being distinguished by the sign of $\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)$.
 
-**Proof.** By the theorem $B^2=-\varepsilon=+1$, so $B=e_1e_2$ with $q(e_1)q(e_2)=-1$; the closed form of an element of square $+1$ is the hyperbolic cosine and sine, and the action on the plane is the second display of the theorem.
+**Proof.** By the theorem $B^2=-\varepsilon=+1$, so $B=e_1e_2$ with $\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)=-1$; the closed form of an element of square $+1$ is the hyperbolic cosine and sine, and the action on the plane is the second display of the theorem.
 
 **Remark (general bivectors).** Over the real numbers with a definite form, the operator $J_B$ is skew, so it has the canonical form of a skew transformation: $V$ splits into an orthogonal sum of planes invariant under $J_B$ on each of which $J_B^2=-1$, together with the kernel. The bivector is therefore a sum of pairwise commuting simple bivectors, $B=B_1+\cdots+B_r$, and the element factors as $R_1\cdots R_r$, a product of commuting elements, one in each plane. The element generated by an arbitrary bivector is thus a product of the two cases of this section.
 
@@ -125,17 +125,17 @@ and the map $v\mapsto RvR^{-1}$ is the hyperbolic element of the plane of $B$ wi
 
 ### The Sandwich Action on Vectors
 
-By the definition of the Clifford group, an element $R$ of $\Gamma(V,q)$ acts on the quadratic space by the signed inner conjugation, and for an even element the grade involution is the identity, so
+By the definition of the Clifford group, an element $R$ of $\Gamma(V,\mathfrak{Q})$ acts on the quadratic space by the signed inner conjugation, and for an even element the grade involution is the identity, so
 
 $$
-v\longmapsto \mathrm{Ad}^{\alpha}_R(v)=R\,v\,R^{-1}, \qquad R\in\mathrm{Cl}^0(V,q),
+v\longmapsto \mathrm{Ad}^{\alpha}_R(v)=R\,v\,R^{-1}, \qquad R\in\mathrm{Cl}^0(V,\mathfrak{Q}),
 $$
 
 the **sandwich** by $R$. For a rotor this is a rotation, and the theorems above compute it: the parameter inside the rotor is half that of the rotation it produces.
 
 **Proposition.** For a rotor $R$ and $v\in V$ the element $Rv$ is generally neither a vector nor even, while the sandwich $RvR^{-1}$ is a vector.
 
-**Proof.** The sandwich is a vector because $R$ lies in $\Gamma(V,q)$, so by definition $\mathrm{Ad}^{\alpha}_R(V)\subseteq V$. For the first statement, take $R$ of the plane case and $v$ orthogonal to the plane: $Rv=(c-sB)v=cv-sBv$, and $Bv$ is of grade three, being the outer product of the bivector with the vector, so that $Rv$ is the sum of a vector and a trivector.
+**Proof.** The sandwich is a vector because $R$ lies in $\Gamma(V,\mathfrak{Q})$, so by definition $\mathrm{Ad}^{\alpha}_R(V)\subseteq V$. For the first statement, take $R$ of the plane case and $v$ orthogonal to the plane: $Rv=(c-sB)v=cv-sBv$, and $Bv$ is of grade three, being the outer product of the bivector with the vector, so that $Rv$ is the sum of a vector and a trivector.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ take $B=e_1e_2$, the rotor $R=\cos\tfrac{\theta}{2}-B\sin\tfrac{\theta}{2}$, and the vector $e_3$ orthogonal to the plane. Then
 
@@ -158,17 +158,17 @@ the trivectors cancelling; this is the expected result, since $e_3$ is the axis 
 
 The other action of a rotor is multiplication on the left, and it is a different action on a different object.
 
-**Definition.** Let $S$ be a Clifford module over $\mathrm{Cl}(V,q)$, in the sense of *Spin Representations and Clifford Modules with Inner Conjugation*. The **spinor action** of the rotors is left multiplication,
+**Definition.** Let $S$ be a Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$, in the sense of *Spin Representations and Clifford Modules with Inner Conjugation*. The **spinor action** of the rotors is left multiplication,
 
 $$
 \psi\longmapsto R\psi, \qquad \psi\in S,\ R\ \text{a rotor},
 $$
 
-the restriction to the rotors of the left action of the even subalgebra $\mathrm{Cl}^0(V,q)$.
+the restriction to the rotors of the left action of the even subalgebra $\mathrm{Cl}^0(V,\mathfrak{Q})$.
 
 **Proposition.** Left multiplication by a rotor is a linear map of $S$ and a representation of the rotor group, with kernel $\{\pm1\}$ on an irreducible module. It is not a map of $V$ to $V$ in general: left multiplication by an even element sends a vector to a sum of odd grades.
 
-**Proof.** $S$ is a $\mathrm{Cl}(V,q)$-module, so the left action of every element is defined and multiplicative; the kernel statement is the one proved in *Spin Representations and Clifford Modules with Inner Conjugation* for the spin representation, $\rho(-1)=-\mathrm{id}_S$. For the last statement, an even element of positive grade does not preserve $\mathrm{Cl}_1$ under left multiplication; the example above, $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$, is a vector together with a trivector.
+**Proof.** $S$ is a $\mathrm{Cl}(V,\mathfrak{Q})$-module, so the left action of every element is defined and multiplicative; the kernel statement is the one proved in *Spin Representations and Clifford Modules with Inner Conjugation* for the spin representation, $\rho(-1)=-\mathrm{id}_S$. For the last statement, an even element of positive grade does not preserve $\mathrm{Cl}_1$ under left multiplication; the example above, $Re_3=\cos\tfrac{\theta}{2}e_3-\sin\tfrac{\theta}{2}\omega$, is a vector together with a trivector.
 
 ### Why the Two Actions Differ by the Factor Two
 
@@ -182,11 +182,11 @@ So the two actions are not two ways of rotating the same object. The sandwich ac
 
 ## The Double Cover
 
-**Theorem.** The map $R\mapsto\mathrm{Ad}^{\alpha}_R$ from the rotors to $SO(V,q)$ is surjective under the hypotheses of the theorem of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* on the field, in particular over $\mathbb{R}$, and its kernel is $\{\pm1\}$; hence the rotors are a two-to-one cover of the rotation group.
+**Theorem.** The map $R\mapsto\mathrm{Ad}^{\alpha}_R$ from the rotors to $SO(V,\mathfrak{Q})$ is surjective under the hypotheses of the theorem of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* on the field, in particular over $\mathbb{R}$, and its kernel is $\{\pm1\}$; hence the rotors are a two-to-one cover of the rotation group.
 
-**Proof.** The kernel is $\{\pm1\}$ by the proposition on the rotor group. For surjectivity, Cartan–Dieudonné writes every element of $SO(V,q)$ as a product of an even number of reflections, each reflection is $\mathrm{Ad}^{\alpha}_u$ for a non-isotropic vector $u$, and the product of the corresponding vectors is a versor of even length; rescaling the vectors as in the cited theorem puts it in the rotors.
+**Proof.** The kernel is $\{\pm1\}$ by the proposition on the rotor group. For surjectivity, Cartan–Dieudonné writes every element of $SO(V,\mathfrak{Q})$ as a product of an even number of reflections, each reflection is $\mathrm{Ad}^{\alpha}_u$ for a non-isotropic vector $u$, and the product of the corresponding vectors is a versor of even length; rescaling the vectors as in the cited theorem puts it in the rotors.
 
-**Remark (the local structure and surjectivity).** The linear term at $B=0$ of the passage from the bivectors to the group is the identity on the bivectors, and the identification of the bivectors with the orthogonal Lie algebra of *The Clifford Algebra as a Lie Algebra* makes it the isomorphism $\Lambda^2V\to\mathrm{SO}(V,q)$; so the map is a local isomorphism at the origin and its image generates the identity component of the rotor group. Over $\mathbb{R}$ with a definite form every rotor is such an exponential, since a rotation is a product of commuting plane rotations and the sign $-1$ is the element generated by $\pi B$ for a unit bivector $B$; over an indefinite form the map is not surjective in general, and the elements it misses are the ones reached only by products of rotations and hyperbolic elements.
+**Remark (the local structure and surjectivity).** The linear term at $B=0$ of the passage from the bivectors to the group is the identity on the bivectors, and the identification of the bivectors with the orthogonal Lie algebra of *The Clifford Algebra as a Lie Algebra* makes it the isomorphism $\Lambda^2V\to\mathrm{SO}(V,\mathfrak{Q})$; so the map is a local isomorphism at the origin and its image generates the identity component of the rotor group. Over $\mathbb{R}$ with a definite form every rotor is such an exponential, since a rotation is a product of commuting plane rotations and the sign $-1$ is the element generated by $\pi B$ for a unit bivector $B$; over an indefinite form the map is not surjective in general, and the elements it misses are the ones reached only by products of rotations and hyperbolic elements.
 
 ## Low-Dimensional Cases
 
@@ -213,16 +213,16 @@ The rotor has two actions. The **sandwich** $v\mapsto RvR^{-1}$ acts on the vect
 | Symbol | Meaning |
 |---|---|
 | $x=v_1\cdots v_k$ | Versor, a product of non-isotropic vectors |
-| $\Gamma(V,q)$ | Clifford group, equal to the Lipschitz group |
+| $\Gamma(V,\mathfrak{Q})$ | Clifford group, equal to the Lipschitz group |
 | $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$ | Signed inner conjugation action |
-| $N(x)=x x^{\natural}$ | Clifford norm, $N(v)=-q(v)$ on a vector |
+| $N(x)=x x^{\natural}$ | Clifford norm, $N(v)=-\mathfrak{Q}(v)$ on a vector |
 | $R$ | Rotor, an even versor with $N(R)=1$ |
 | $R=\cos\tfrac{\theta}{2}-\sin\tfrac{\theta}{2}B$ | Elliptic rotor of the plane of $B$, $B^2=-1$ |
 | $R=\cosh\tfrac{\varphi}{2}-\sinh\tfrac{\varphi}{2}B$ | Hyperbolic rotor, $B^2=+1$, parameter $\varphi/2$ |
 | $J_B=\tfrac12\operatorname{ad}_B$ | Endomorphism of $V$, the generator of the vector action |
 | $v\mapsto RvR^{-1}$ | Sandwich, the vector action, full parameter |
 | $\psi\mapsto R\psi$ | Left action, the spinor action, half parameter |
-| $\mathrm{Rotors}\to SO(V,q)$ | Two-to-one cover, kernel $\{\pm1\}$ |
+| $\mathrm{Rotors}\to SO(V,\mathfrak{Q})$ | Two-to-one cover, kernel $\{\pm1\}$ |
 
 ## Further Reading
 

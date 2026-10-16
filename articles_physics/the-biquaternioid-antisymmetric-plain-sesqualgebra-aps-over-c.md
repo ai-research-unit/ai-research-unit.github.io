@@ -15,16 +15,16 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}-\tilde Q^{*}\tilde P)$ is $\mathbb{R}$-bilinear, sesquilinear and **antisymmetric**; the trace form vanishes on it, its values lie in the vector subspace, and it is not alternating. Its class among the twelve structures is that of an antisymmetric sesqualgebra. Owner: *Introduction to the Antisymmetric Plain Sesqualgebra*.
 - **The absence of a unit.** The structure has no unit: $e_0$ annihilates it on both sides. Owner: *Introduction to the Antisymmetric Plain Sesqualgebra*.
 - **The algebraic norm and invertibility.** The norm of the structure, which is not zero, and the invertibility criterion of the antisymmetrised product. Owner: *Norm and Invertibility in the Antisymmetric Plain Sesqualgebra*.
-- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors of the Antisymmetric Plain Sesqualgebra*.
-- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators of the Antisymmetric Plain Sesqualgebra*.
-- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*, *Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra*.
+- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Antisymmetric Plain Sesqualgebra*.
 - **The vector part of the square and the Jacobi failure.** The square of the product has a vector part, and the **Jacobi identity fails** in the state space; the failure is why the structure carries a pairing and no symmetry algebra. Owner: *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 - **The sesquilinear pairing.** The pairing of the structure and the interference datum it carries. Owner: *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*.
-- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra*, *The Realification of the Antisymmetric Plain Sesqualgebra*.
+- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
 
@@ -32,7 +32,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Representations
 
-- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation*, *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation*.
+- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Physical Interpretation
 

@@ -60,7 +60,7 @@ The geometries of constant curvature are the three model geometries, and their q
 | a hyperbolic space form | a quotient $\mathbf{H}^n/\Gamma$ by a free discrete group of isometries | *Hyperbolic Geometry*, §Hyperbolic Space Forms and the Trichotomy |
 | a Euclidean space form | a compact flat manifold, the quotient of $\mathbb{R}^n$ by a torsion-free crystallographic group | *Symmetry, Point and Crystallographic Groups*; *Riemannian Geometry* |
 | the spherical space form problem | the classification of the finite free orthogonal actions, of which the lens spaces are the three-dimensional cases | *Low-Dimensional Topology*; *Lens Spaces* |
-| the lens spaces $L(p,q)$ | the quotients $S^3/(\mathbb{Z}/p)$ by a free cyclic action | *Lens Spaces* |
+| the lens spaces $L(n,m)$ | the quotients $S^3/(\mathbb{Z}/n)$ by a free cyclic action | *Lens Spaces* |
 | the trichotomy of curvature | the division of the constant-curvature geometries by the sign of the curvature | *Curvature and Geodesics*; *Euclidean Geometry* |
 
 The space-form theorem is proved by the comparison theory of the curvature, and it is the reason the geometries of constant curvature are exhausted by the three models and their discrete quotients. The spherical case is rigid and finite, the Euclidean case is classified by the Bieberbach theorems and finite in each dimension, and the hyperbolic case is the richest: its lattices deform in dimension two and are rigid in higher dimensions, which is the dichotomy recorded in the list of discrete geometric groups.
@@ -123,7 +123,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $O(n+1,1)$, $SO(n,1)$ | Conformal and hyperbolic isometry groups |
 | $O(n+1,1)/\{\pm 1\}$, $PO(n+1,2)$ | Möbius group; Lie sphere group |
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $V_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{K})$ | Grassmannian, Stiefel manifold, flag manifold |
-| $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $L(p,q)$ | Spherical and hyperbolic space forms; lens space |
+| $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $L(n,m)$ | Spherical and hyperbolic space forms; lens space |
 | $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | The eight three-dimensional model geometries |
 | $(\mathrm{G},\sigma)$, rank | Symmetric pair and rank of a symmetric space |
 | $\mathbb{Z}$ | The standard number systems of the corpus |

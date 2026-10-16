@@ -26,7 +26,7 @@ Hamilton had spent years trying to multiply triples of numbers to represent poin
 
 - **Linear equations**: solved, and within $\mathbb{H}$ itself. If $ax = b$ with $a \neq 0$, then $x = a^{-1}b$, and if $xa = b$ then $x = ba^{-1}$, each unique. The side on which $a$ stands matters — $e_1^{-1}e_2 = -e_3$ while $e_2e_1^{-1} = +e_3$ — but every nonzero quaternion is invertible, so a linear equation asked on a definite side always has its answer in $\mathbb{H}$.
 - **Quadratic equations**: no longer routine. There is no quadratic formula, and the solutions, when they are found, **sometimes require complex coefficients** — that is, complex quaternions rather than quaternions.
-- **Higher degree**: worse. The root sets cease to be finite. The cubic $x^{3} = 1$ has the root $1$ and a whole sphere of further roots $x = -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\hat u$, one for each unit pure quaternion $\hat u$, so a degree-$n$ equation over $\mathbb{H}$ cannot be reduced to $n$ linear factors.
+- **Higher degree**: worse. The root sets cease to be finite. The cubic $x^{3} = 1$ has the root $1$ and a whole sphere of further roots $x = -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\vec u$, one for each unit pure quaternion $\vec u$, so a degree-$n$ equation over $\mathbb{H}$ cannot be reduced to $n$ linear factors.
 
 The quadratic case fails at the first step of the classroom method. Completing the square requires
 
@@ -115,10 +115,10 @@ The algebra and its subspaces are established in the companion articles and are 
 $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the remarkable real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the centre of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
 
 $$
-N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
 $$
 
-whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $N(\tilde{Q}) = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.
+whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $\langle\tilde{Q}\rangle_{\natural} = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.
 
 The single structural fact that organizes the whole subsequent history is the isomorphism
 
@@ -126,7 +126,7 @@ $$
 \mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
 $$
 
-realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $N(\tilde{Q}) = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
+realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
 
 $$
 SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}
@@ -138,7 +138,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$
 
-These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
+These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
 
 ## Clifford's Rotors: Position, Lines, and Screws
 
@@ -268,7 +268,7 @@ The register of the third item matters as much as its content, and the corpus fi
 
 **A citation hazard.** The corpus holds two copies of the 2004 commentary (item (i) above) that carry the *same* arXiv identifier, math-ph/0402012v2, and differ only in an internal date — one dated 6 June 2005, one dated 29 October 2018. They are one paper, not two, and should be cited by the arXiv identifier so that the duplication is visible.
 
-**Two names from Dublin, and three later writers.** The objects the corpus calls the Hermitian subspace and the null cone have older names: in J. L. Synge's Dublin memoir on quaternions and the Lorentz group (1972) a **bireal** biquaternion — fixed by the biquaternion conjugation, the corpus's $\mathbb{M}_+$ — is a **minquat**, and a **singular** biquaternion — a zero divisor, hence an idempotent such as the $\sigma$ of the corpus's spinor construction — is a **nullquat**; the same memoir treats the Conway–Dirac–Eddington matrices. In the same decades Paul Weiss (1941), a student of Max Born, used the quaternion spinor decomposition of the four-velocity, $\tilde{U}=\tilde{B}\tilde{B}^{+}$, to write explicit formulas for the four-acceleration and the retarded null separation, and derived the **Lorentz–Dirac equation** from the condition that the energy–momentum flow through a hypersurface around the charge be stationary — plausibly the first significant use of spinors in classical physics; C. W. Kilmister (1955) set out the linear quaternion functions that tensor analysis requires; and the review volume of Gsponer and Hurni from which much of this section is drawn returned to Lanczos's dissertation in the 1990s.
+**Two names from Dublin, and three later writers.** The objects the corpus calls the Hermitian subspace and the null cone have older names: in J. L. Synge's Dublin memoir on quaternions and the Lorentz group (1972) a **bireal** biquaternion — fixed by the biquaternion conjugation, the corpus's $\mathbb{M}_+$ — is a **minquat**, and a **singular** biquaternion — a zero divisor, hence an idempotent such as the $\sigma$ of the corpus's spinor construction — is a **nullquat**; the same memoir treats the Conway–Dirac–Eddington matrices. In the same decades Paul Weiss (1941), a student of Max Born, used the quaternion spinor decomposition of the four-velocity, $\tilde{V}=\tilde{B}\tilde{B}^{+}$, to write explicit formulas for the four-acceleration and the retarded null separation, and derived the **Lorentz–Dirac equation** from the condition that the energy–momentum flow through a hypersurface around the charge be stationary — plausibly the first significant use of spinors in classical physics; C. W. Kilmister (1955) set out the linear quaternion functions that tensor analysis requires; and the review volume of Gsponer and Hurni from which much of this section is drawn returned to Lanczos's dissertation in the 1990s.
 
 A separate route is twistor theory: Roger Penrose's twistors live on complexified Minkowski space, with real Minkowski space as a slice, so the complexification that the biquaternion formulation makes algebraic is, in twistor theory, the fundamental arena. Modern biquaternionic treatments of the classical field equations — Silberstein's complex-vector Maxwell theory, the algebrodynamics of Vladimir Kassandrov and his collaborators, and the review work of Adrian Gsponer and Jean-Pierre Hurni — continue to use the algebra directly.
 
@@ -312,11 +312,11 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (real quaternions; norm $(4,0)$) |
 | $\mathbb{M}_{+}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{M}_{-}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(e_k) = -i\sigma_k$ |
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\vec E + ic\vec B$ | Riemann–Silberstein vector (Silberstein, 1907) |
 | $j$ | Split-complex unit, $j^{2} = +1$ (Clifford's twist $\omega$) |
@@ -354,7 +354,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 - Paul Weiss, "On some applications of quaternions to restricted relativity and classical radiation theory," *Proceedings of the Royal Irish Academy* **46** (1941) 129–168, for the quaternion spinor decomposition of the four-velocity, the explicit four-acceleration and retarded-null formulas, and the derivation of the Lorentz–Dirac equation from a stationary energy–momentum flow.
 - Clive W. Kilmister, "The application of certain linear quaternion functions to tensor analysis," *Proceedings of the Royal Irish Academy* **57** (1955) 37–99, for the linear quaternion functions that tensor analysis requires.
 - Feza Gürsey, "Applications of Quaternions to Field Equations" (PhD thesis, University of London, 1950) and "Relation of charge independence and baryon conservation to Pauli's transformation," *Il Nuovo Cimento* **7** (1958) 411–415, for the review of the quaternionic wave-equation tradition and the interpretation of Lanczos's doubling as isospin.
-- Kazuhiko Nishijima, "On the theory of leptons," *Il Nuovo Cimento* **5** (1957) 1349–1354, for the two-parameter group $G_N=\sigma e^{i\alpha}+\bar{\sigma}e^{i\beta}$ of the doubled system.
+- Kazuhiko Nishijima, "On the theory of leptons," *Il Nuovo Cimento* **5** (1957) 1349–1354, for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ of the doubled system.
 - Gérard Petiau, "Sur une généralisation non linéaire de la mécanique ondulatoire et sur les propriétés des fonctions d'ondes correspondantes," *Il Nuovo Cimento* **9** (1958) 542–568, and "Sur les théories quantiques des champs associés à des modèles simples d'équations d'ondes non linéaires," *Il Nuovo Cimento* **40** (1965) 84–101, for the closure of the mass field and the double-periodic elliptic solutions.
 - John L. Synge, "Quaternions, Lorentz transformations and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies*, Series A, No. 21 (1972), for the names **minquat** (bireal biquaternion) and **nullquat** (singular biquaternion, hence zero divisor and idempotent).
 - Cornelius Lanczos, *The Functional Theoretical Relationships of the Maxwell Aether Equations* (doctoral dissertation, Budapest, handwritten 1919), for the quaternion form of Maxwell's equations, the relativistic variational principle, and the quaternion Cauchy–Riemann conditions and Cauchy formula — the last anticipating Moisil and Fueter (1931).

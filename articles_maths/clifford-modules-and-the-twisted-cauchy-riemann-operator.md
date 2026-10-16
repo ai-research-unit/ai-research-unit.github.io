@@ -5,21 +5,21 @@
 
 A Clifford module is a module over a Clifford algebra, and over a manifold it becomes a bundle of modules twisted by the spinor bundle. On such a twisted module there is a canonical first-order operator, formed by contracting the covariant derivative with Clifford multiplication, which generalises both the Cauchy–Riemann operator of complex analysis and its Clifford-analytic relatives. This article builds the operator, shows that it is elliptic and odd for the natural grading, computes the square — the Weitzenböck formula — and evaluates the index of the resulting elliptic complex.
 
-The Clifford-module theory used here — modules over $\mathrm{Cl}(V,q)$, the spinor module, the chirality grading and the half-spin modules — is from *Spin Representations and Clifford Modules with Inner Conjugation*. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is that of *Fibre Bundles, Connections and Curvature*. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is, and its biquaternion form is; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject, and only the twisted case is treated here.
+The Clifford-module theory used here — modules over $\mathrm{Cl}(V,\mathfrak{Q})$, the spinor module, the chirality grading and the half-spin modules — is from *Spin Representations and Clifford Modules with Inner Conjugation*. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is that of *Fibre Bundles, Connections and Curvature*. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is, and its biquaternion form is; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject, and only the twisted case is treated here.
 
 ## Clifford Modules
 
-**Definition.** Let $(V,q)$ be a quadratic space over $\mathbb{R}$ or $\mathbb{C}$. A **Clifford module** for $\mathrm{Cl}(V,q)$ is a vector space $E$ with an algebra homomorphism $\mathrm{Cl}(V,q)\to\operatorname{End}(E)$, equivalently a linear map $c\colon V\to\operatorname{End}(E)$ with
+**Definition.** Let $(V,\mathfrak{Q})$ be a quadratic space over $\mathbb{R}$ or $\mathbb{C}$. A **Clifford module** for $\mathrm{Cl}(V,\mathfrak{Q})$ is a vector space $E$ with an algebra homomorphism $\mathrm{Cl}(V,\mathfrak{Q})\to\operatorname{End}(E)$, equivalently a linear map $c\colon V\to\operatorname{End}(E)$ with
 
 $$
-c(v)^2=q(v)\,\mathrm{id}_{E}, \qquad c(v)c(w)+c(w)c(v)=2B(v,w)\,\mathrm{id}_{E},
+c(v)^2=\mathfrak{Q}(v)\,\mathrm{id}_{E}, \qquad c(v)c(w)+c(w)c(v)=2B(v,w)\,\mathrm{id}_{E},
 $$
 
 where $B$ is the polar form.
 
 **Definition.** A **$\mathbb{Z}/2$-graded Clifford module** is a Clifford module $E=E_0\oplus E_1$ such that $c(v)$ is odd, $c(v)E_j\subseteq E_{1-j}$. The **chirality operator** of an even-dimensional module is the Clifford action of the volume element, and its $\pm1$-eigenspaces are the **half-modules** $E_\pm$.
 
-**Theorem (structure of Clifford modules).** Let $(V,q)$ be a non-degenerate real quadratic space of dimension $n$ and let $S$ be its spinor module. If $\mathrm{Cl}(V,q)$ is simple — that is, for $n$ even, and for $n$ odd with $d=p-q\equiv3,7\bmod8$ — every finite-dimensional Clifford module $E$ is a direct sum of copies of the unique irreducible module $S$. If $n$ is odd with $d\equiv1,5\bmod8$, where the algebra is a product of two simple factors, then $E$ is a direct sum of copies of each of the two irreducible modules. In the simple case, in particular in the even case, this reads $E\cong S\otimes W$ for a vector space $W$, with the Clifford action $c(v)=c_S(v)\otimes\mathrm{id}_W$.
+**Theorem (structure of Clifford modules).** Let $(V,\mathfrak{Q})$ be a non-degenerate real quadratic space of dimension $n$ and let $S$ be its spinor module. If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple — that is, for $n$ even, and for $n$ odd with $d=n-m\equiv3,7\bmod8$ — every finite-dimensional Clifford module $E$ is a direct sum of copies of the unique irreducible module $S$. If $n$ is odd with $d\equiv1,5\bmod8$, where the algebra is a product of two simple factors, then $E$ is a direct sum of copies of each of the two irreducible modules. In the simple case, in particular in the even case, this reads $E\cong S\otimes W$ for a vector space $W$, with the Clifford action $c(v)=c_S(v)\otimes\mathrm{id}_W$.
 
 **Proof.** The Clifford algebra is central simple over $\mathbb{R}$ for $n$ even, is simple with centre $\mathbb{C}$ for $n$ odd with $d\equiv3,7\bmod8$, and is a product of two simple algebras for $n$ odd with $d\equiv1,5\bmod8$, by the classification of the preceding articles; over a simple algebra every module is a direct sum of copies of the simple module, and over a product of two simple algebras it is a direct sum of copies of the simple module of each factor. The tensor form of the action is the definition of the tensor product action.
 
@@ -132,7 +132,7 @@ is a finite integer, equal to $\dim\ker D_+-\dim\ker D_-$ because $D_E$ is self-
 **Theorem (McKean–Singer).** For $t>0$ the index is given by the heat-kernel supertrace
 
 $$
-\operatorname{ind}(D_+)=\operatorname{Tr}\bigl(e^{-tD_-D_+}\bigr)-\operatorname{Tr}\bigl(e^{-tD_+D_-}\bigr),
+\operatorname{ind}(D_+)=\operatorname{Tr}\bigl(\exp(-tD_-D_+)\bigr)-\operatorname{Tr}\bigl(\exp(-tD_+D_-)\bigr),
 $$
 
 and the right-hand side is independent of $t$.
@@ -157,7 +157,7 @@ $$
 
 The index of the twisted operator is therefore the degree of the twisting line bundle; it is an integer, and the theorem produces the integrality rather than assuming it.
 
-**Example (a four-dimensional spin manifold).** Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}p_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}p_1$. Hence
+**Example (a four-dimensional spin manifold).** Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}n_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}n_1$. Hence
 
 $$
 \operatorname{ind}(D_+)=-\frac{1}{24}\int_Mp_1(TM)=-\frac{\sigma(M)}{8},
@@ -189,7 +189,7 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{Cl}(V,q)$, $c(v)$ | Clifford algebra and Clifford multiplication, $c(v)^2=q(v)$ |
+| $\mathrm{Cl}(V,\mathfrak{Q})$, $c(v)$ | Clifford algebra and Clifford multiplication, $c(v)^2=\mathfrak{Q}(v)$ |
 | $S$ | Spinor module or spinor bundle |
 | $E=S\otimes W$ | Twisted Clifford module, $W$ the twisting bundle |
 | $S\otimes S\cong\Lambda^\bullet T^*M\otimes\mathbb{C}$ | Spinor-bundle twist; $D_S=d+d^{*}$ |
@@ -202,7 +202,7 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 | $D_E^2=\nabla^{E,*}\nabla^E+\mathcal{R}^E$ | Weitzenböck formula |
 | $\mathcal{R}^E=\tfrac14s+c(F^W)$ | Weitzenböck curvature, $s$ the scalar curvature |
 | $D^2=\nabla^*\nabla+\tfrac14s$ | Lichnerowicz formula, untwisted case |
-| $\operatorname{Tr}(e^{-tD_-D_+})-\operatorname{Tr}(e^{-tD_+D_-})$ | McKean–Singer supertrace, equal to the index |
+| $\operatorname{Tr}(\exp(-tD_-D_+))-\operatorname{Tr}(\exp(-tD_+D_-))$ | McKean–Singer supertrace, equal to the index |
 | $\hat{A}(TM)$ | $\hat{A}$-class of the tangent bundle |
 | $\operatorname{ch}(W)$ | Chern character of the twisting bundle |
 | $\int_M\hat{A}(TM)\operatorname{ch}(W)$ | Twisted index formula |

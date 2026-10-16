@@ -3,7 +3,7 @@
 ## Introduction
 
 The framework's continuous symmetry is the **central phase**, the group of central unitaries
-$e^{i\theta}e_0\cong U(1)$. It is exact and it is global: being central, it multiplies every subspace and
+$\exp(i\theta)e_0\cong U(1)$. It is exact and it is global: being central, it multiplies every subspace and
 every element by the same factor, so it acts the same way at every point, and the corpus records the fact as
 the interpretation "centrality is globality". A gauge theory needs the opposite — a phase that may differ from
 point to point, and a compensating connection that makes the difference covariant — and the question this
@@ -24,10 +24,10 @@ $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$.
 
 ## The Central Phase and the Gauge Principle
 
-The central phase is the one-parameter subgroup $\theta\mapsto e^{i\theta}e_0$ of the centre. Three of its
+The central phase is the one-parameter subgroup $\theta\mapsto \exp(i\theta)e_0$ of the centre. Three of its
 properties are the whole of its relevance.
 
-- It is **central**: $e^{i\theta}e_0$ commutes with every element, so it acts by the same scalar at every
+- It is **central**: $\exp(i\theta)e_0$ commutes with every element, so it acts by the same scalar at every
   element and in every subspace.
 - It is **compact**: the parameter is an angle and the group is a circle, so its irreducible labels are
   integers and the internal charge it carries is **discrete**.
@@ -36,7 +36,7 @@ properties are the whole of its relevance.
 
 The gauge principle asks for the local version: a phase $\theta(x)$ that depends on the point, and a
 connection $\tilde{A}_\mu$ that transforms so that the covariant derivative
-$\partial_\mu - iq\tilde{A}_\mu$ is phase-covariant. **The framework has the phase and not the connection**,
+$\partial_\mu - iϙ\tilde{A}_\mu$ is phase-covariant. **The framework has the phase and not the connection**,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_0$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
@@ -53,7 +53,7 @@ the group is the structure of the centre:
 
 | piece of the group | where it lives | what it does |
 |---|---|---|
-| $U(1)$ | the centre, $\{e^{i\theta}e_0\}$ | the global phase, the discrete charge label |
+| $U(1)$ | the centre, $\{\exp(i\theta)e_0\}$ | the global phase, the discrete charge label |
 | $SU(2)$ | the unit quaternions, the real slice | the internal rotations acting on the module |
 | $\mathbb{Z}_2$ | $\{\pm e_0\}$ | the identification, the spin double cover |
 
@@ -121,7 +121,7 @@ question is being asked.
 
 ## Summary
 
-The framework's continuous symmetry is the central phase $e^{i\theta}e_0\cong U(1)$, central, compact and
+The framework's continuous symmetry is the central phase $\exp(i\theta)e_0\cong U(1)$, central, compact and
 global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
 the central $ie_0$, and a central connection couples to nothing. The intrinsic gauge group is the unitary
@@ -135,7 +135,7 @@ does not contain.
 
 | Symbol | Meaning |
 |---|---|
-| $e^{i\theta}e_0$ | the central phase, the group $U(1)$ of central unitaries |
+| $\exp(i\theta)e_0$ | the central phase, the group $U(1)$ of central unitaries |
 | $ie_0$ | the generator of the central phase, central and of one real dimension |
 | $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ | the unitary slice, the algebra's intrinsic gauge group |
 | $(SU(2)\times U(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |

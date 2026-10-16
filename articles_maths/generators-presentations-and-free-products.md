@@ -81,9 +81,9 @@ $$
 
 is a bijection: distinct reduced words give distinct permutations. In particular a word $a_1 \cdots a_n$ representing the identity is one whose reduction is empty, which is the precise sense in which the only relations in $F(X)$ are the trivial ones $x x^{-1} = e$.
 
-**Theorem (universal property of the free group).** Let $X$ be a set, $G$ a group, and $f : X \to G$ any function. Then there is a unique homomorphism $\tilde{f} : F(X) \to G$ with $\tilde{f}(\lambda_x) = f(x)$ for all $x \in X$.
+**Theorem (universal property of the free group).** Let $X$ be a set, $G$ a group, and $f : X \to G$ any function. Then there is a unique homomorphism $f^{\mathrm{ind}} : F(X) \to G$ with $f^{\mathrm{ind}}(\lambda_x) = f(x)$ for all $x \in X$.
 
-**Proof.** Extend $f$ to words by $f(\varepsilon) = e$, $f(a_1 \cdots a_n) = f(a_1) \cdots f(a_n)$ using $f(x^{-1}) = f(x)^{-1}$. This is multiplicative by construction and respects cancellation, since $f(x) f(x)^{-1} = e$; hence it descends to a homomorphism $\tilde{f} : F(X) \to G$ defined by $\tilde{f}(\lambda_{a_1}\cdots\lambda_{a_n}) = f(a_1)\cdots f(a_n)$. This is well defined because reduced words are in bijection with elements of $F(X)$ and the value depends only on the reduced form. Uniqueness holds because the $\lambda_x$ generate $F(X)$.
+**Proof.** Extend $f$ to words by $f(\varepsilon) = e$, $f(a_1 \cdots a_n) = f(a_1) \cdots f(a_n)$ using $f(x^{-1}) = f(x)^{-1}$. This is multiplicative by construction and respects cancellation, since $f(x) f(x)^{-1} = e$; hence it descends to a homomorphism $f^{\mathrm{ind}} : F(X) \to G$ defined by $f^{\mathrm{ind}}(\lambda_{a_1}\cdots\lambda_{a_n}) = f(a_1)\cdots f(a_n)$. This is well defined because reduced words are in bijection with elements of $F(X)$ and the value depends only on the reduced form. Uniqueness holds because the $\lambda_x$ generate $F(X)$.
 
 **Corollary.** The pair $(F(X), x \mapsto \lambda_x)$ is determined up to a unique isomorphism: if $F$ is any group with a map $\iota : X \to F$ such that every $f : X \to G$ extends uniquely to a homomorphism $F \to G$, then $F \cong F(X)$ canonically.
 

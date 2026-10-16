@@ -236,7 +236,7 @@ $$
 
 which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current: the centre is vector-like, and no axial generator exists in $\mathbb{C}_{\mathbb{B}}$. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the spinor and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
 
-**The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $q$ is proportional to $q$ as $q\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
+**The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $k$ is proportional to $k$ as $k\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
 
 **The Goldberger–Treiman relation.** The axial current also couples to the nucleon, and the relation
 

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The companion articles *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* and *The Einstein–de Haas and Barnett Effects in Biquaternionic Form* both work with one number they do not fix: the gyromagnetic ratio $\gamma$, the constant that ties a magnetic moment to its angular momentum, $\vec\mu = \gamma\vec S$. Expressed through the dimensionless gyromagnetic factor $g$ by $\gamma = g\,q/2m$, the number is $g = 1$ for the magnetism of an ordinary current and $g = 2$ for the intrinsic magnetism of a spin. This article asks where the second value comes from, and answers it **classically and algebraically**: the factor two is the **double-cover factor** of the biquaternion rotation rotor, present in the algebra before any quantization, and not a dynamical accident of a particular charge distribution.
+The companion articles *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* and *The Einstein–de Haas and Barnett Effects in Biquaternionic Form* both work with one number they do not fix: the gyromagnetic ratio $\gamma$, the constant that ties a magnetic moment to its angular momentum, $\vec\mu = \gamma\vec S$. Expressed through the dimensionless gyromagnetic factor $g$ by $\gamma = g\,ϙ/2m$, the number is $g = 1$ for the magnetism of an ordinary current and $g = 2$ for the intrinsic magnetism of a spin. This article asks where the second value comes from, and answers it **classically and algebraically**: the factor two is the **double-cover factor** of the biquaternion rotation rotor, present in the algebra before any quantization, and not a dynamical accident of a particular charge distribution.
 
-The subject is set up to separate two questions that are easily confused. The first is the *absolute* normalization of the moment, which is fixed by the definition $\vec\mu = \tfrac{1}{2}\int\vec r\times\vec j\,d^3x$ together with the charge and mass of the carrier, and which is the content of the convective theorem below: a rigid rotor whose charge and mass densities are proportional has $\gamma = q/2m$, that is $g = 1$. The second is the *relative* factor between the convective and the intrinsic cases, and it is this factor, equal to two, that the article derives. The derivation is a statement about the representations in which the two couplings of one charged configuration are carried: the electromagnetic coupling is the phase of the central $U(1)$ and acts with weight one, while the angular momentum couples to the rotation and acts with weight one half on an intrinsic spin and weight one on an orbital vector. The gyromagnetic ratio is the ratio of the two weights, and the ratio is two.
+The subject is set up to separate two questions that are easily confused. The first is the *absolute* normalization of the moment, which is fixed by the definition $\vec\mu = \tfrac{1}{2}\int\vec r\times\vec j\,d^3x$ together with the charge and mass of the carrier, and which is the content of the convective theorem below: a rigid rotor whose charge and mass densities are proportional has $\gamma = ϙ/2m$, that is $g = 1$. The second is the *relative* factor between the convective and the intrinsic cases, and it is this factor, equal to two, that the article derives. The derivation is a statement about the representations in which the two couplings of one charged configuration are carried: the electromagnetic coupling is the phase of the central $U(1)$ and acts with weight one, while the angular momentum couples to the rotation and acts with weight one half on an intrinsic spin and weight one on an orbital vector. The gyromagnetic ratio is the ratio of the two weights, and the ratio is two.
 
 The article is careful about what is derived and what is imported. The value $g=2$ is **fixed as a ratio** by the algebra, and this is what the two companion articles presuppose. The *magnitude* of the moment — one Bohr magneton $\mu_B = e\hbar/2m_e$ for the electron spin — is not fixed by the classical algebra, which has no $\hbar$; it is imported from the quantum normalization. The dynamical derivation of the coefficient $1/2m$ from the relativistic Dirac equation is likewise standard and is cited, not reproduced: it is a result of the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, which obtain $g=2$ by eliminating the small component. The two accounts agree, and they agree because they compute the same double-cover factor: the relativistic one dynamically, the non-relativistic one algebraically.
 
@@ -18,14 +18,14 @@ The gyromagnetic ratio and the gyromagnetic factor are defined by
 
 $$
 \vec\mu = \gamma\,\vec S
-= g\,\frac{q}{2m}\,\vec S,
+= g\,\frac{ϙ}{2m}\,\vec S,
 \qquad
-\gamma = g\,\frac{q}{2m},
+\gamma = g\,\frac{ϙ}{2m},
 \qquad
-g = \frac{2m}{q}\frac{\mu}{S},
+g = \frac{2m}{ϙ}\frac{\mu}{S},
 $$
 
-so that $g$ is dimensionless and is the ratio of the moment to the elementary moment $(q/2m)S$ that a uniformly charged and uniformly massive body would carry. For orbital magnetism $g = 1$; for the intrinsic magnetism of a spin it is $g\approx 2$, and the measured value for the electron is $g/2 = 1.00115965218$. The value of $g$, unlike the magnitude of the moment, is independent of the units and of the particular carrier, and it is the number the two companion articles measure.
+so that $g$ is dimensionless and is the ratio of the moment to the elementary moment $(ϙ/2m)S$ that a uniformly charged and uniformly massive body would carry. For orbital magnetism $g = 1$; for the intrinsic magnetism of a spin it is $g\approx 2$, and the measured value for the electron is $g/2 = 1.00115965218$. The value of $g$, unlike the magnitude of the moment, is independent of the units and of the particular carrier, and it is the number the two companion articles measure.
 
 ### The Moment and the Angular Momentum in the Algebra
 
@@ -41,15 +41,15 @@ $$
 
 with the intrinsic moment's informational-sector representative $\mu_k\,ie_k\in\mathbb{M}_+$ available when the moment is paired with the spin observable. The gyromagnetic relation is therefore a scalar proportionality between two elements of the *same* vector slot, and in the algebra the question of $g$ is the question of what fixes that scalar.
 
-Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $q$ transforms as $\tilde{\Psi}\to e^{i\alpha}\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
+Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{\Psi}\to \exp(i\alpha)\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
-\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\hat u)\,\tilde{\Psi},
+\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\vec u)\,\tilde{\Psi},
 \qquad
-\tilde{R}(\theta,\hat u) = \exp\!\left(\frac{\theta}{2}\,\hat u_ke_k\right),
+\tilde{R}(\theta,\vec u) = \exp\!\left(\frac{\theta}{2}\,\vec u_ke_k\right),
 $$
 
-and the generator of the rotation is the half-unit $+\tfrac{1}{2}\hat u_ke_k$ rather than the unit $\hat u_ke_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
+and the generator of the rotation is the half-unit $+\tfrac{1}{2}\vec u_ke_k$ rather than the unit $\vec u_ke_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
 
 ### The Two Contributions to the Moment
 
@@ -63,18 +63,18 @@ A body in rigid rotation with angular velocity $\vec\omega$ carries a charge cur
 
 $$
 \vec\mu = \frac{1}{2}\int \rho_c(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3x
-= \frac{1}{2}\,\hat{\mathcal{M}}\,\vec\omega,
+= \frac{1}{2}\,\mathcal{M}\,\vec\omega,
 \qquad
 \vec L = \int \rho_m(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3x
-= \hat{I}\,\vec\omega,
+= I\,\vec\omega,
 $$
 
 where
 
 $$
-\hat{\mathcal{M}}_{ij} = \int \rho_c(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
+\mathcal{M}_{ij} = \int \rho_c(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
 \qquad
-\hat{I}_{ij} = \int \rho_m(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x
+I_{ij} = \int \rho_m(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x
 $$
 
 are the charge and mass inertia tensors. The two tensors are built from the same geometric kernel $r^2\delta_{ij} - r_ir_j$ and differ only in the density that weights it, so that the entire classical gyromagnetic problem is the comparison of two weighted integrals of one kernel.
@@ -84,20 +84,20 @@ are the charge and mass inertia tensors. The two tensors are built from the same
 If the charge density is proportional to the mass density,
 
 $$
-\rho_c(\vec r) = \frac{q}{m}\,\rho_m(\vec r),
+\rho_c(\vec r) = \frac{ϙ}{m}\,\rho_m(\vec r),
 $$
 
-then the two tensors are proportional, $\hat{\mathcal{M}} = (q/m)\hat{I}$, and the moment is
+then the two tensors are proportional, $\mathcal{M} = (ϙ/m)I$, and the moment is
 
 $$
-\vec\mu = \frac{1}{2}\,\frac{q}{m}\,\hat{I}\,\vec\omega
-= \frac{q}{2m}\,\vec L.
+\vec\mu = \frac{1}{2}\,\frac{ϙ}{m}\,I\,\vec\omega
+= \frac{ϙ}{2m}\,\vec L.
 $$
 
 The gyromagnetic ratio is the convective value
 
 $$
-\boxed{\;\gamma_{\rm conv} = \frac{q}{2m},
+\boxed{\;\gamma_{\rm conv} = \frac{ϙ}{2m},
 \qquad g = 1,\;}
 $$
 
@@ -105,9 +105,9 @@ and this is the **classical theorem**: any rigid distribution of charge whose de
 
 ### The Classical Distributions
 
-For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\hat{\mathcal{M}}_{zz}$ and $\hat{I}_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.
+For a body that is not proportional, the value of $g$ is the ratio of the two inertia integrals about the rotation axis. Three elementary axisymmetric bodies, all of unit radius and carrying unit total charge and unit total mass, give the values of $\mathcal{M}_{zz}$ and $I_{zz}$ collected below. The uniform sphere and the thin spherical shell have proportional densities and return $g=1$; a distribution whose charge is concentrated on a ring or a shell while its mass is distributed uniformly returns a different value, and the table shows the range.
 
-| Charge distribution | Mass distribution | $\hat{\mathcal{M}}_{zz}$ | $\hat{I}_{zz}$ | $g = \hat{\mathcal{M}}_{zz}/\hat{I}_{zz}$ |
+| Charge distribution | Mass distribution | $\mathcal{M}_{zz}$ | $I_{zz}$ | $g = \mathcal{M}_{zz}/I_{zz}$ |
 |---|---|---|---|---|
 | uniform sphere | uniform sphere | $2/5$ | $2/5$ | $1$ |
 | thin shell | thin shell | $2/3$ | $2/3$ | $1$ |
@@ -126,15 +126,15 @@ The values are the standard moments of inertia and their charge analogues. The t
 The general condition for the convective value $g=2$ is read off the definition,
 
 $$
-g = \frac{2m}{q}\frac{\mu}{L} = \frac{m}{q}\frac{\hat{\mathcal{M}}_{zz}}{\hat{I}_{zz}} = 2
+g = \frac{2m}{ϙ}\frac{\mu}{L} = \frac{m}{ϙ}\frac{\mathcal{M}_{zz}}{I_{zz}} = 2
 \qquad\Longleftrightarrow\qquad
-\hat{\mathcal{M}}_{zz} = 2\,\frac{q}{m}\,\hat{I}_{zz},
+\mathcal{M}_{zz} = 2\,\frac{ϙ}{m}\,I_{zz},
 $$
 
-a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\hat{\mathcal{M}}_{zz} = qa^2$, meets it when the mass is distributed as the combination
+a single scalar condition for rotation about a given axis, and a tensor condition in general. A generic rigid body does not satisfy it. The condition can be met by a deliberate choice: a body whose charge is concentrated on the equator of a sphere, with $\mathcal{M}_{zz} = ϙa^2$, meets it when the mass is distributed as the combination
 
 $$
-\hat{I}_{zz} = \frac{1}{2}\,ma^2
+I_{zz} = \frac{1}{2}\,ma^2
 = \frac{5}{8}\left(\frac{2}{5}ma^2\right) + \frac{3}{8}\left(\frac{2}{3}ma^2\right),
 $$
 
@@ -156,7 +156,7 @@ g_k = -\,\frac{1}{2}\,e_k \in \mathbb{H}_{\mathbb{B}},
 [\,g_i, g_j\,] = -\,\epsilon_{ijk}\,g_k .
 $$
 
-A rotation through the angle $\theta$ about $\hat u$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\hat u_ke_k) = \exp(-\theta\,\hat u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\hat u_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
+A rotation through the angle $\theta$ about $\vec u$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\vec u_ke_k) = \exp(-\theta\,\vec u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\vec u_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
 
 $$
 \tilde{S}_k = -\,i\hbar\,g_k = \frac{\hbar}{2}\,i e_k \in \mathbb{M}_+ ,
@@ -172,15 +172,15 @@ and its eigenvalues are $\pm\hbar/2$. The half in the angular-momentum generator
 The half in the generator is visible in the rotor as the **double cover**. The rotation rotor
 
 $$
-\tilde{R}(\theta,\hat u) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat u_ke_k
+\tilde{R}(\theta,\vec u) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\vec u_ke_k
 $$
 
 returns to its starting value only after $\theta$ has advanced by $4\pi$:
 
 $$
-\tilde{R}(\theta + 2\pi,\hat u) = -\,\tilde{R}(\theta,\hat u),
+\tilde{R}(\theta + 2\pi,\vec u) = -\,\tilde{R}(\theta,\vec u),
 \qquad
-\tilde{R}(\theta + 4\pi,\hat u) = \tilde{R}(\theta,\hat u).
+\tilde{R}(\theta + 4\pi,\vec u) = \tilde{R}(\theta,\vec u).
 $$
 
 A material vector is rotated by conjugation, $\vec x\mapsto\tilde{R}\vec x\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
@@ -192,16 +192,16 @@ The gyromagnetic ratio compares the electromagnetic coupling of a configuration 
 - the **electromagnetic coupling** is the phase of the central $U(1)$ generated by $i$, and both the material and the intrinsic configuration transform with **weight one** under it, because the phase is central and multiplies every element once;
 - the **rotational coupling** is the phase of the rotor, and a material (orbital) configuration transforms with **weight one** under it while an intrinsic (spin) configuration transforms with **weight one half**.
 
-The moment is the first spatial moment of the electromagnetic current, and the angular momentum is the Noether charge of the rotation. Their ratio, for a configuration of charge $q$ and mass $m$, is fixed up to the common convective normalization by the ratio of the two weights:
+The moment is the first spatial moment of the electromagnetic current, and the angular momentum is the Noether charge of the rotation. Their ratio, for a configuration of charge $ϙ$ and mass $m$, is fixed up to the common convective normalization by the ratio of the two weights:
 
 $$
-\frac{\mu}{L} = \frac{q}{2m}\cdot\frac{w_{U(1)}}{w_{\rm rot}} .
+\frac{\mu}{L} = \frac{ϙ}{2m}\cdot\frac{w_{U(1)}}{w_{\rm rot}} .
 $$
 
-For a convective (orbital) configuration, $w_{U(1)} = 1$ and $w_{\rm rot} = 1$, so $\mu/L = q/2m$ and $g = 1$, which is the convective theorem. For an intrinsic (spin) configuration, $w_{U(1)} = 1$ and $w_{\rm rot} = \tfrac{1}{2}$, so
+For a convective (orbital) configuration, $w_{U(1)} = 1$ and $w_{\rm rot} = 1$, so $\mu/L = ϙ/2m$ and $g = 1$, which is the convective theorem. For an intrinsic (spin) configuration, $w_{U(1)} = 1$ and $w_{\rm rot} = \tfrac{1}{2}$, so
 
 $$
-\frac{\mu}{S} = \frac{q}{2m}\cdot\frac{1}{1/2} = \frac{q}{m},
+\frac{\mu}{S} = \frac{ϙ}{2m}\cdot\frac{1}{1/2} = \frac{ϙ}{m},
 \qquad
 \boxed{\;g = 2\;}
 $$
@@ -216,7 +216,7 @@ $$
 \tilde{S}_kB_k = \frac{\hbar}{2}\,i\vec B \in \mathbb{M}_+ ,
 $$
 
-the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{q\hbar}{2m}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (q/m)\vec S$ gives the intrinsic gyromagnetic ratio $q/m$, and the factor two relative to the convective ratio $q/2m$ is the same half-weight of the spin: the field couples to the full vector slot $ie_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}e_k$. The mismatch of the whole against the half is the factor two.
+the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{ϙ\hbar}{2m}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (ϙ/m)\vec S$ gives the intrinsic gyromagnetic ratio $ϙ/m$, and the factor two relative to the convective ratio $ϙ/2m$ is the same half-weight of the spin: the field couples to the full vector slot $ie_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}e_k$. The mismatch of the whole against the half is the factor two.
 
 ### Why the Ratio, and Not the Scale
 
@@ -251,12 +251,12 @@ For a pure orbital state, $s=0$ and $j=l$, the fraction vanishes and $g_J = 1$. 
 The dynamical derivation of the same number is standard and is the tree-level result of the Dirac equation. Carrying the biquaternion Dirac equation to the non-relativistic regime and eliminating the small component leaves the Pauli equation with the spin term
 
 $$
--\frac{q\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B
+-\frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B
 \;\longleftrightarrow\;
--\frac{q\hbar}{2m}\,i\vec B \in \mathbb{M}_+ ,
+-\frac{ϙ\hbar}{2m}\,i\vec B \in \mathbb{M}_+ ,
 $$
 
-whose comparison with $-\vec\mu\cdot\vec B$ gives $\vec\mu = (q/m)\vec S$ and hence $g=2$. The coefficient $1/2m$ is produced by the elimination and is not inserted. The computation is performed in the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, and it is the standard Dirac result; it is cited here as the standard dynamical account, not rederived.
+whose comparison with $-\vec\mu\cdot\vec B$ gives $\vec\mu = (ϙ/m)\vec S$ and hence $g=2$. The coefficient $1/2m$ is produced by the elimination and is not inserted. The computation is performed in the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, and it is the standard Dirac result; it is cited here as the standard dynamical account, not rederived.
 
 The relation between the two accounts is this. The relativistic elimination produces the $1/2m$ coefficient from the two-component structure of the Dirac field, and the two-component structure is the double cover; the non-relativistic account of this article reads the same double cover directly off the rotor, with the half-unit generator and the weight one half. Both compute the factor two, one from the dynamics of the mass term and one from the algebra of the rotation, and the two agree. The advantage of the algebraic account is that it exhibits $g=2$ as a property of the *representation* of the intrinsic angular momentum, and therefore as a classical, non-quantum feature of the framework rather than a consequence of the mass term.
 
@@ -274,15 +274,15 @@ and the anomaly $a=(g-2)/2$ is the one-loop Schwinger value $a\approx\alpha/2\pi
 
 ## Summary
 
-The gyromagnetic factor $g$, defined by $\vec\mu = g(q/2m)\vec S$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\vec\mu = \tfrac{1}{2}\hat{\mathcal{M}}\vec\omega$ and $\vec L = \hat{I}\vec\omega$, and proportional charge and mass densities give
+The gyromagnetic factor $g$, defined by $\vec\mu = g(ϙ/2m)\vec S$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\vec\mu = \tfrac{1}{2}\mathcal{M}\vec\omega$ and $\vec L = I\vec\omega$, and proportional charge and mass densities give
 
 $$
-\vec\mu = \frac{q}{2m}\,\vec L,
+\vec\mu = \frac{ϙ}{2m}\,\vec L,
 \qquad
 g = 1 .
 $$
 
-This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\hat{\mathcal{M}}_{zz} = 2(q/m)\hat{I}_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.
+This is the classical convective theorem. Values other than one are attainable when the densities differ, but $g=2$ requires the fine-tuned condition $\mathcal{M}_{zz} = 2(ϙ/m)I_{zz}$; it holds, for example, for a body whose charge is on the equator and whose mass is $5/8$ uniform and $3/8$ on a shell. Convective magnetism is therefore not pinned to two.
 
 The **intrinsic** magnetic moment is not a convective current, and its gyromagnetic factor is fixed by the representation of its angular momentum. In the biquaternion algebra the intrinsic angular momentum is generated by the half-unit
 
@@ -292,16 +292,16 @@ g_k = -\frac{1}{2}\,e_k,
 [\,g_i,g_j\,] = -\epsilon_{ijk}\,g_k,
 $$
 
-with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$, and the rotation rotor $\tilde{R} = \exp(\tfrac{\theta}{2}\hat u_ke_k)$ is a double cover, $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $U(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
+with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$, and the rotation rotor $\tilde{R} = \exp(\tfrac{\theta}{2}\vec u_ke_k)$ is a double cover, $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $U(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
 
 $$
-\frac{\mu}{S} = \frac{q}{2m}\cdot\frac{w_{U(1)}}{w_{\rm rot}},
+\frac{\mu}{S} = \frac{ϙ}{2m}\cdot\frac{w_{U(1)}}{w_{\rm rot}},
 $$
 
-so that the orbital case ($w_{\rm rot}=1$) gives $\mu/L = q/2m$ and $g=1$, and the intrinsic case ($w_{\rm rot}=\tfrac{1}{2}$) gives
+so that the orbital case ($w_{\rm rot}=1$) gives $\mu/L = ϙ/2m$ and $g=1$, and the intrinsic case ($w_{\rm rot}=\tfrac{1}{2}$) gives
 
 $$
-\frac{\mu}{S} = \frac{q}{m},
+\frac{\mu}{S} = \frac{ϙ}{m},
 \qquad
 \boxed{\;g = 2\;.}
 $$
@@ -313,20 +313,20 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | Symbol | Meaning |
 |---|---|
 | $\vec\mu = \gamma\vec S$ | Magnetic moment; gyromagnetic relation |
-| $\gamma = g\,q/2m$ | Gyromagnetic ratio |
-| $g = 2m\mu/(qS)$ | Gyromagnetic factor |
-| $\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
-| $\hat{I}_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
+| $\gamma = g\,ϙ/2m$ | Gyromagnetic ratio |
+| $g = 2m\mu/(ϙS)$ | Gyromagnetic factor |
+| $\mathcal{M}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
+| $I_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
 | $\rho_c$, $\rho_m$ | Charge and mass densities |
-| $\tfrac{1}{2}\hat u_ke_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |
+| $\tfrac{1}{2}\vec u_ke_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |
 | $g_k = -\tfrac{1}{2}e_k$ | Intrinsic angular-momentum generator (half-unit) |
 | $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$ | Spin observable in $\mathbb{M}_+$ |
 | $[g_i,g_j] = -\epsilon_{ijk}g_k$ | Generator algebra |
 | $[\tilde{S}_i,\tilde{S}_j] = i\hbar\epsilon_{ijk}\tilde{S}_k$ | Spin algebra |
-| $\tilde{R}(\theta,\hat u) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat u_ke_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde{R}(\theta,\vec u) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\vec u_ke_k$ | Rotation rotor (unit real quaternion) |
 | $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$ | Double cover |
 | $w_{U(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
-| $\mu/L = (q/2m)\,w_{U(1)}/w_{\rm rot}$ | Ratio of the two weights |
+| $\mu/L = (ϙ/2m)\,w_{U(1)}/w_{\rm rot}$ | Ratio of the two weights |
 | $g_J$ | Landé factor of the vector model |
 | $\mu_B = e\hbar/2m_e$ | Bohr magneton |
 | $a = (g-2)/2$ | Anomalous magnetic moment |

@@ -15,13 +15,13 @@ $$
 S=\int\left[-\tfrac12\,\partial_\mu\phi\,\partial^\mu\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi\right]d^4x
 $$
 has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_0$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\mu^2)\tilde{\Phi}=0$, with dispersion $\omega^2=c^2k^2+c^2\mu^2$ and range $\mu^{-1}$.
-- **The static central solution.** A point source of strength $Q$ gives the Yukawa field $\tilde{\Phi}=gQ\,e^{-\mu r}/(4\pi r)\,e_0$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
+- **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{\Phi}=gQ\,\exp(-\mu r)/(4\pi r)\,e_0$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
-- **The reduction to the central-force problem.** A test source of coupling $g'$ has interaction energy $U(r)=-\kappa e^{-\mu r}/r$ with $\kappa=gg'Q/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $U=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
+- **The reduction to the central-force problem.** A test source of coupling $g'$ has interaction energy $U(r)=-\kappa \exp(-\mu r)/r$ with $\kappa=gg'Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $U=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
 
 The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta=-\partial_t^2/c^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{Q}=ict\,e_0+\vec x$. The source density is $\rho$, the source strength $Q$, and the couplings are $g$ for the field and $g'$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta=-\partial_t^2/c^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{Q}=ict\,e_0+\vec x$. The source density is $\rho$, the source strength $Ϙ$, and the couplings are $g$ for the field and $g'$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
 
 ## The Centre as the Scalar's Value Space
 
@@ -107,10 +107,10 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{\Phi}(x)=\tilde{\Phi}_0\,e^{i(\vec k\cdot\vec x-\omega t)}, \qquad \tilde{\Phi}_0\in\mathbb{C},
+\tilde{\Phi}(x)=\tilde{\Phi}_0\,\exp(i(\vec k\cdot\vec x-\omega t)), \qquad \tilde{\Phi}_0\in\mathbb{C},
 $$
 
-with the central phase $e^{i(\vec k\cdot\vec x-\omega t)}$ understood as multiplication by a central element. Because $\Box=-\partial_t^2/c^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k\cdot\vec x-\omega t))$ understood as multiplication by a central element. Because $\Box=-\partial_t^2/c^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2\mu^2=c^2k^2+\frac{m^2c^4}{\hbar^2} .
@@ -129,7 +129,7 @@ $$
 The operator $\Delta-\mu^2$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
 
 $$
-G_\mu(\vec x)=\frac{e^{-\mu r}}{4\pi r}, \qquad
+G_\mu(\vec x)=\frac{\exp(-\mu r)}{4\pi r}, \qquad
 \left(\Delta-\mu^2\right)G_\mu=-\delta^{(3)}(\vec x) ,
 $$
 
@@ -139,12 +139,12 @@ with $r=|\vec x|$. The scale $\mu^{-1}$ is the **range** of the field: beyond a 
 
 ### The Point Source
 
-Let the source be a point of strength $Q$ at the origin, $\rho(\vec x)=Q\,\delta^{(3)}(\vec x)$. The static field is
+Let the source be a point of strength $Ϙ$ at the origin, $\rho(\vec x)=Ϙ\,\delta^{(3)}(\vec x)$. The static field is
 
 $$
-\phi(\vec x)=gQ\,G_\mu(\vec x)=\frac{gQ\,e^{-\mu r}}{4\pi r},
+\phi(\vec x)=gQ\,G_\mu(\vec x)=\frac{gQ\,\exp(-\mu r)}{4\pi r},
 \qquad\text{that is}\qquad
-\tilde{\Phi}(\vec x)=\frac{gQ\,e^{-\mu r}}{4\pi r}\,e_0 ,
+\tilde{\Phi}(\vec x)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_0 ,
 $$
 
 the **Yukawa field**. In the massless limit,
@@ -162,11 +162,11 @@ Two properties of the solution matter for what follows. It is **static** and **s
 It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G_{\text{ret}}(x)={\delta(t'-t+|\vec x-\vec x'|/c)}/(4\pi|\vec x-\vec x'|)$, and for a point source moving on a worldline $\vec x_s(t)$ the field is the scalar Liénard–Wiechert potential
 
 $$
-\tilde{\Phi}(\vec x,t)=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\hat u\right)}\,e_0 ,
+\tilde{\Phi}(\vec x,t)=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_0 ,
 \qquad
 R=|\vec x-\vec x_s(t_r)|,\quad
 \vec\beta=\frac{\vec v_s}{c},\quad
-\hat u=\frac{\vec x-\vec x_s(t_r)}{R},
+\vec u=\frac{\vec x-\vec x_s(t_r)}{R},
 $$
 
 evaluated at the retarded time $t_r=t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
@@ -196,10 +196,10 @@ the gradient energy outside a sphere of radius $a$ is
 $$
 E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\phi)^2\,d^3x
 =2\pi A^2\int_a^{\infty}\frac{dr}{r^2}
-=\frac{2\pi A^2}{a}=\frac{g^2Q^2}{8\pi a},
+=\frac{2\pi A^2}{a}=\frac{g^2Ϙ^2}{8\pi a},
 $$
 
-using $\nabla\phi=-A\hat r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is **positive**, as it must be; and it **diverges as $a\to0$**, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.
+using $\nabla\phi=-A\vec u_r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is **positive**, as it must be; and it **diverges as $a\to0$**, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.
 
 The divergence is the classical self-energy of the point-source idealization and not a property of the framework. A source of finite extent gives a finite field energy, and the self-energy is one of the standard reasons a point particle cannot be treated as a structureless classical object in a field theory. In the present article the source is prescribed, so the divergence does not affect the dynamics of the test source in the field, which is finite; it is recorded because it bounds the sense in which the static solution is physical.
 
@@ -210,15 +210,15 @@ The divergence is the classical self-energy of the point-source idealization and
 Let a test source of coupling $g'$ be placed in the field of the point source. The interaction Lagrangian of the test source is $g'\rho'\,\phi$ with $\rho'$ its density, so its potential energy in the field is
 
 $$
-U(r)=-g'\,\phi(r)=-\frac{gg'Q\,e^{-\mu r}}{4\pi r}=-\frac{\kappa\,e^{-\mu r}}{r},
-\qquad \kappa=\frac{gg'Q}{4\pi}>0 ,
+U(r)=-g'\,\phi(r)=-\frac{gg'Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r},
+\qquad \kappa=\frac{gg'Ϙ}{4\pi}>0 ,
 $$
 
 the sign following from the Hamiltonian sign $H_{\text{int}}=-L_{\text{int}}$ and the convention that like sources attract. The interaction energy is negative and increases to zero at infinity: the configuration is bound, and the massless limit is the inverse-square attraction
 
 $$
 U(r)=-\frac{\kappa}{r}, \qquad
-\vec F=-\nabla U=-\frac{\kappa}{r^2}\,\hat r,
+\vec F=-\nabla U=-\frac{\kappa}{r^2}\,\vec u_r,
 $$
 
 which is exactly the inverse-square force of the central-force articles, with $\kappa>0$ for attraction.
@@ -228,7 +228,7 @@ which is exactly the inverse-square force of the central-force articles, with $\
 The force is central for an algebraic reason. The field $\tilde{\Phi}=\phi(r)e_0$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:
 
 $$
-\vec F(\vec x)=-\nabla U(r)=g'\,\nabla\phi(r)=g'\,\frac{d\phi}{dr}\,\hat r ,
+\vec F(\vec x)=-\nabla U(r)=g'\,\nabla\phi(r)=g'\,\frac{d\phi}{dr}\,\vec u_r ,
 $$
 
 a real vector parallel to the position, pointing inward because $\frac{d\phi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $U(r)e_0$ is a **central scalar**, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.
@@ -238,9 +238,9 @@ a real vector parallel to the position, pointing inward because $\frac{d\phi}{dr
 The reduction is exact, and it hands the problem to the two sibling articles.
 
 - **Massless central scalar.** For $\mu=0$ the potential is $U=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article *The Relativistic Central Force Problem in Biquaternionic Form*: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles *Central Forces and the Classical Kepler Problem in Biquaternionic Form* and *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form*.
-- **Massive central scalar.** For $\mu>0$ the potential is the Yukawa potential $U=-\kappa e^{-\mu r}/r$ and the force is $F=-\kappa e^{-\mu r}(\mu r+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
+- **Massive central scalar.** For $\mu>0$ the potential is the Yukawa potential $U=-\kappa \exp(-\mu r)/r$ and the force is $F=-\kappa \exp(-\mu r)(\mu r+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.
 
-The reduction also identifies the coupling's meaning: $\kappa=gg'Q/(4\pi)$ is a product of the field coupling, the test coupling and the source strength. The framework does not fix these numbers, exactly as the central-force article does not fix $\kappa$; what the framework fixes is the **form** of the force once the field is the central scalar.
+The reduction also identifies the coupling's meaning: $\kappa=gg'Ϙ/(4\pi)$ is a product of the field coupling, the test coupling and the source strength. The framework does not fix these numbers, exactly as the central-force article does not fix $\kappa$; what the framework fixes is the **form** of the force once the field is the central scalar.
 
 ## The Central Phase and Its Current
 
@@ -249,10 +249,10 @@ The reduction also identifies the coupling's meaning: $\kappa=gg'Q/(4\pi)$ is a 
 A complex central scalar field carries the transformation
 
 $$
-\tilde{\Phi}\ \longrightarrow\ e^{i\alpha}\,\tilde{\Phi}, \qquad \alpha\in\mathbb{R},
+\tilde{\Phi}\ \longrightarrow\ \exp(i\alpha)\,\tilde{\Phi}, \qquad \alpha\in\mathbb{R},
 $$
 
-which acts on the single complex component by multiplication. Because $i$ is central, $e^{i\alpha}$ commutes with every element of $\mathbb{B}$ and in particular with the gradient, so the transformation is a symmetry of the field equation for constant $\alpha$. This is the framework's **central phase**, the natural continuous symmetry of the algebra; for the central scalar field it is literally a global $U(1)$ acting on the scalar line, and it is the reason the scalar field can carry a charge at all.
+which acts on the single complex component by multiplication. Because $i$ is central, $\exp(i\alpha)$ commutes with every element of $\mathbb{B}$ and in particular with the gradient, so the transformation is a symmetry of the field equation for constant $\alpha$. This is the framework's **central phase**, the natural continuous symmetry of the algebra; for the central scalar field it is literally a global $U(1)$ acting on the scalar line, and it is the reason the scalar field can carry a charge at all.
 
 ### The Conserved Current
 
@@ -302,7 +302,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 ### What the Algebra Does Not Contain
 
-**The numbers.** The couplings $g$, $g'$, the source strength $Q$ and the mass parameter $\mu$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.
+**The numbers.** The couplings $g$, $g'$, the source strength $Ϙ$ and the mass parameter $\mu$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.
 
 **The source's dynamics.** The source density is prescribed. A dynamical source, with its own equation of motion and its back-reaction on the field, is a coupled system that the present article does not treat; the framework's field–matter coupling is developed in the articles on the Lorentz force and on the external-field problem, and for the scalar field it is simpler and remains to be written out.
 
@@ -310,7 +310,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 ## Open Questions
 
-1. **The value of the couplings and the mass.** The framework fixes the form of the central potential and leaves $g$, $g'$, $Q$ and $\mu$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.
+1. **The value of the couplings and the mass.** The framework fixes the form of the central potential and leaves $g$, $g'$, $Ϙ$ and $\mu$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.
 
 2. **Self-interaction in the centre.** Because the centre is closed under multiplication, a potential $V(\tilde{\Phi})$ polynomial in a central field is well defined and stays in the centre. Whether the framework's scalar sector should be linear or self-interacting — and how a self-interacting central scalar relates to the Higgs sector treated elsewhere in the corpus — is open.
 
@@ -341,10 +341,10 @@ $$
 
 has the field equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_0$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k^2+c^2\mu^2$ and has range $\mu^{-1}$.
 
-A static point source of strength $Q$ produces the Yukawa field
+A static point source of strength $Ϙ$ produces the Yukawa field
 
 $$
-\tilde{\Phi}=\frac{gQ\,e^{-\mu r}}{4\pi r}\,e_0,
+\tilde{\Phi}=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_0,
 \qquad\text{whose massless limit is}\qquad
 \tilde{\Phi}=\frac{gQ}{4\pi r}\,e_0 .
 $$
@@ -354,12 +354,12 @@ The static field's energy density is $T^{00}=\tfrac12(\nabla\phi)^2+\tfrac12\mu^
 A test source of coupling $g'$ has the central potential energy
 
 $$
-U(r)=-\frac{\kappa e^{-\mu r}}{r}, \qquad \kappa=\frac{gg'Q}{4\pi}>0,
+U(r)=-\frac{\kappa \exp(-\mu r)}{r}, \qquad \kappa=\frac{gg'Ϙ}{4\pi}>0,
 $$
 
 whose massless limit $U=-\kappa/r$ is exactly the inverse-square central potential of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.
 
-The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$, with conserved current $j^\nu=\tfrac{i}{2}(\phi^*\partial^\nu\phi-\phi\,\partial^\nu\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
+The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$, with conserved current $j^\nu=\tfrac{i}{2}(\phi^*\partial^\nu\phi-\phi\,\partial^\nu\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
 
 ## Summary of Notation
 
@@ -376,14 +376,14 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto e^{i\
 | $\mathcal{L}=-\tfrac12\partial_\mu\phi\partial^\mu\phi-\tfrac12\mu^2\phi^2+g\rho\phi$ | Real scalar Lagrangian |
 | $(\Box-\mu^2)\tilde{\Phi}=-g\rho e_0$ | Field equation with source |
 | $\omega^2=c^2k^2+c^2\mu^2$ | Dispersion relation of the free field |
-| $G_\mu=e^{-\mu r}/(4\pi r)$ | Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$ |
-| $Q,\rho,g,g'$ | Source strength, source density, field coupling, test coupling |
-| $\tilde{\Phi}=gQe^{-\mu r}/(4\pi r)\,e_0$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_0$ for $\mu=0$ |
+| $G_\mu=\exp(-\mu r)/(4\pi r)$ | Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$ |
+| $Ϙ,\rho,g,g'$ | Source strength, source density, field coupling, test coupling |
+| $\tilde{\Phi}=gQ\exp(-\mu r)/(4\pi r)\,e_0$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_0$ for $\mu=0$ |
 | $\vec\beta$, $R$, $t_r$ | Source velocity over $c$, retarded distance, retarded time |
 | $T^{00}=\tfrac12\dot\phi^2/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
-| $U(r)=-\kappa e^{-\mu r}/r$, $\kappa=gg'Q/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
-| $\vec F=-\nabla U=g'\,\nabla\phi=g'\,(d\phi/dr)\,\hat r$ | Central force on the test source (inward) |
+| $U(r)=-\kappa \exp(-\mu r)/r$, $\kappa=gg'Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
+| $\vec F=-\nabla U=g'\,\nabla\phi=g'\,(d\phi/dr)\,\vec u_r$ | Central force on the test source (inward) |
 | $j^\nu=\tfrac{i}{2}(\phi^*\partial^\nu\phi-\phi\partial^\nu\phi^*)$ | Conserved current of the central phase; $\partial_\nu j^\nu=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

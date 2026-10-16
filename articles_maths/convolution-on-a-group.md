@@ -108,36 +108,36 @@ that is $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong op
 **Definition.** For a character $\chi$ of a locally compact abelian group $G$ the **Gelfand transform** is
 
 $$
-\hat f(\chi) = \int_G f(x)\,\chi(x)\,dx \qquad (f \in L^1(G)),
+(\mathcal F f)(\chi) = \int_G f(x)\,\chi(x)\,dx \qquad (f \in L^1(G)),
 $$
 
 and for a general locally compact group the **operator-valued transform** is
 
 $$
-\hat f(\pi) = \int_G f(x)\,\pi(x)\,dx \in B(\mathcal{H}_\pi) \qquad (\pi \in \operatorname{Irr}(G)).
+(\mathcal F f)(\pi) = \int_G f(x)\,\pi(x)\,dx \in B(\mathcal{H}_\pi) \qquad (\pi \in \operatorname{Irr}(G)).
 $$
 
 **Theorem (the convolution theorem).** The two transforms are algebra homomorphisms: for $f, g \in L^1(G)$,
 
 $$
-\widehat{f*g}(\chi) = \hat f(\chi)\,\hat g(\chi), \qquad \widehat{f*g}(\pi) = \hat f(\pi)\,\hat g(\pi),
+\widehat{f*g}(\chi) = (\mathcal F f)(\chi)\,(\mathcal F g)(\chi), \qquad \widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi),
 $$
 
-the first for abelian $G$, the second in general; both are continuous, with $|\hat f(\chi)| \leq \|f\|_1$ in the abelian case and $\|\hat f(\pi)\| \leq \|f\|_1$ in general.
+the first for abelian $G$, the second in general; both are continuous, with $|(\mathcal F f)(\chi)| \leq \|f\|_1$ in the abelian case and $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$ in general.
 
 **Proof.** The abelian identity is Fubini and the multiplicativity of $\chi$: $\widehat{f*g}(\chi) = \iint f(y)g(y^{-1}x)\chi(x)\,dy\,dx = \int f(y)\chi(y)\,dy\int g(z)\chi(z)\,dz$. The general identity is the same computation with the operator product in place of the scalar product, the integrals converging in the operator norm. Continuity is the triangle inequality for the vector-valued integral.
 
 **Proposition (the transform diagonalises convolution).** On a unimodular group of type I the Plancherel transform $\mathcal{F} : L^2(G) \to \int^\oplus (\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)\,d\mu_P(\pi)$ intertwines left convolution with the field of its transforms,
 
 $$
-\mathcal{F}\,L_f\,\mathcal{F}^{-1} = \int^\oplus \hat f(\pi)\,d\mu_P(\pi) ,
+\mathcal{F}\,L_f\,\mathcal{F}^{-1} = \int^\oplus (\mathcal F f)(\pi)\,d\mu_P(\pi) ,
 $$
 
-the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$; in the abelian case this is the statement that $L_f$ on $L^2(G)$ is unitarily equivalent to multiplication by the bounded continuous function $\hat f$ on $G^\vee$.
+the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$; in the abelian case this is the statement that $L_f$ on $L^2(G)$ is unitarily equivalent to multiplication by the bounded continuous function $\mathcal F f$ on $G^\vee$.
 
-**Proof.** The convolution theorem gives $\widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi)$, and the Plancherel transform carries $h$ to the field $\hat h(\pi)$; hence it carries $L_fh$ to $\hat f(\pi)\hat h(\pi)$. The abelian case is the specialisation $\mathcal{H}_\pi = \mathbb{C}$ and $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, where the field is multiplication by $\hat f(\chi)$.
+**Proof.** The convolution theorem gives $\widehat{f*h}(\pi) = (\mathcal F f)(\pi)(\mathcal F h)(\pi)$, and the Plancherel transform carries $h$ to the field $(\mathcal F h)(\pi)$; hence it carries $L_fh$ to $(\mathcal F f)(\pi)(\mathcal F h)(\pi)$. The abelian case is the specialisation $\mathcal{H}_\pi = \mathbb{C}$ and $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, where the field is multiplication by $(\mathcal F f)(\chi)$.
 
-**Remark (norm realised on the spectrum).** The transform of the previous proposition realises the operator norm of $L_f$ on $L^2(G)$ as an essential supremum in the abelian case, $\|L_f\|_{B(L^2)} = \|\hat f\|_\infty$, and in general as the essential supremum of $\pi \mapsto \|\hat f(\pi)\|$ against $\mu_P$; the $L^1$ norm of the theorem on $L_f$ is the norm of the same operator on $L^1(G)$, and the two need not agree. The $L^2$ norms belong to *The Plancherel Operator* and *Noncommutative Harmonic Analysis*.
+**Remark (norm realised on the spectrum).** The transform of the previous proposition realises the operator norm of $L_f$ on $L^2(G)$ as an essential supremum in the abelian case, $\|L_f\|_{B(L^2)} = \|\mathcal F f\|_\infty$, and in general as the essential supremum of $\pi \mapsto \|(\mathcal F f)(\pi)\|$ against $\mu_P$; the $L^1$ norm of the theorem on $L_f$ is the norm of the same operator on $L^1(G)$, and the two need not agree. The $L^2$ norms belong to *The Plancherel Operator* and *Noncommutative Harmonic Analysis*.
 
 ## The Algebra of Convolution Operators
 
@@ -145,21 +145,21 @@ the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{
 
 **Proof.** The map is an isometric homomorphism by the theorems above; the algebra properties are transferred from $\mathcal{A}$ along it; the strong closure contains the strong limit of the approximate identity, which is the identity operator, and the last statement is that of the section on approximate identities.
 
-**Proposition (the action on $L^p$).** For $1 \leq p \leq \infty$ and $f \in L^1(G)$ the formula $L_fh = f*h$ defines a bounded operator on $L^p(G)$ with
+**Proposition (the action on $L^{n}$).** For $1 \leq p \leq \infty$ and $f \in L^1(G)$ the formula $L_fh = f*h$ defines a bounded operator on $L^{n}(G)$ with
 
 $$
-\|L_f\|_{B(L^p)} \leq \|f\|_1 ,
+\|L_f\|_{B(L^{n})} \leq \|f\|_1 ,
 $$
 
-and on $L^\infty(G)$ the operator is weak-$*$ continuous; the left convolution operators on the several $L^p$ are the several integrated regular representations of the same element.
+and on $L^\infty(G)$ the operator is weak-$*$ continuous; the left convolution operators on the several $L^{n}$ are the several integrated regular representations of the same element.
 
-**Proof.** Young's inequality $\|f*h\|_p \leq \|f\|_1\|h\|_p$ is Minkowski's integral inequality, and the weak-$*$ continuity is duality with the $L^q$ action for $q$ conjugate to $p$, $1 < p < \infty$; the endpoint cases are the usual ones. The identification with the integrated regular representation is the definition.
+**Proof.** Young's inequality $\|f*h\|_p \leq \|f\|_1\|h\|_p$ is Minkowski's integral inequality, and the weak-$*$ continuity is duality with the $L^{m}$ action for $q$ conjugate to $p$, $1 < p < \infty$; the endpoint cases are the usual ones. The identification with the integrated regular representation is the definition.
 
 **Remark (what the article does not do).** The article has used no involution and no adjoint: the anti-linear structure of $L^1(G)$ and the adjoint of $L_f$ on $L^2(G)$ are the `- * Theory` and `- * Operator Theory` groups of this category, and the group $C^*$-algebras $C^*(G)$ and $C^*_r(G)$, together with the von Neumann algebra $L(G)$, are treated where their operator-algebraic foundations are available. The measure algebra and convolution by a bounded measure, which complete the commutant of the translations, are *The Involution on the Measure Algebra*, later in this category.
 
 ## Summary
 
-Convolution turns a locally compact group into the Banach algebra $L^1(G)$, the product $(f*g)(x) = \int_G f(y)g(y^{-1}x)dy$ being associative, submultiplicative and commutative exactly for abelian $G$, unital exactly for discrete $G$. Read as operators, the left and right multiplications $L_f h = f*h$ and $R_f h = h*f$ are the integrated regular representations, bounded on $L^1(G)$ with $\|L_f\| = \|R_f\| = \|f\|_1$, satisfying $L_fL_g = L_{f*g}$, $R_fR_g = R_{g*f}$ and $L_fR_g = R_gL_f$, and each commuting with the translations on the opposite side. A contractive approximate identity $\{u_i\}$ inside $L^1(G)$ is exactly a net with $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong operator topology, its strong limit being the identity although the algebra has no identity unless $G$ is discrete. The Gelfand transform $\hat f(\chi) = \int f\chi$ and the operator-valued transform $\hat f(\pi) = \int f\pi$ are algebra homomorphisms, continuous with bound $\|f\|_1$, and they diagonalise convolution: $\mathcal{F}L_f\mathcal{F}^{-1}$ is the field of operators $\hat f(\pi)$ on the Plancherel direct integral, multiplication by $\hat f$ in the abelian case. The left convolution operators form a closed subalgebra of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$, and the same formula gives bounded convolution operators on every $L^p(G)$ with $\|L_f\|_{B(L^p)} \leq \|f\|_1$. No involution, adjoint, group $C^*$-algebra or measure algebra is used; these belong to the `- *` groups of the category and to *The Involution on the Measure Algebra*, later.
+Convolution turns a locally compact group into the Banach algebra $L^1(G)$, the product $(f*g)(x) = \int_G f(y)g(y^{-1}x)dy$ being associative, submultiplicative and commutative exactly for abelian $G$, unital exactly for discrete $G$. Read as operators, the left and right multiplications $L_f h = f*h$ and $R_f h = h*f$ are the integrated regular representations, bounded on $L^1(G)$ with $\|L_f\| = \|R_f\| = \|f\|_1$, satisfying $L_fL_g = L_{f*g}$, $R_fR_g = R_{g*f}$ and $L_fR_g = R_gL_f$, and each commuting with the translations on the opposite side. A contractive approximate identity $\{u_i\}$ inside $L^1(G)$ is exactly a net with $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong operator topology, its strong limit being the identity although the algebra has no identity unless $G$ is discrete. The Gelfand transform $(\mathcal F f)(\chi) = \int f\chi$ and the operator-valued transform $(\mathcal F f)(\pi) = \int f\pi$ are algebra homomorphisms, continuous with bound $\|f\|_1$, and they diagonalise convolution: $\mathcal{F}L_f\mathcal{F}^{-1}$ is the field of operators $(\mathcal F f)(\pi)$ on the Plancherel direct integral, multiplication by $\mathcal F f$ in the abelian case. The left convolution operators form a closed subalgebra of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$, and the same formula gives bounded convolution operators on every $L^{n}(G)$ with $\|L_f\|_{B(L^{n})} \leq \|f\|_1$. No involution, adjoint, group $C^*$-algebra or measure algebra is used; these belong to the `- *` groups of the category and to *The Involution on the Measure Algebra*, later.
 
 ## Summary of Notation
 
@@ -174,8 +174,8 @@ Convolution turns a locally compact group into the Banach algebra $L^1(G)$, the 
 | $L_fL_g = L_{f*g}$, $R_fR_g = R_{g*f}$, $L_fR_g = R_gL_f$ | Composition laws |
 | $\lambda(x)$, $\rho(x)$ | Left and right translations, $h\mapsto\delta_x*h$, $h\mapsto h*\delta_x$ |
 | $\{u_i\}$ | Contractive approximate identity, $\|u_i\|_1 = 1$ |
-| $\hat f(\chi)$, $\hat f(\pi)$ | Gelfand transform; operator-valued transform |
-| $\widehat{f*g} = \hat f\hat g$ | Convolution theorem |
+| $(\mathcal F f)(\chi)$, $(\mathcal F f)(\pi)$ | Gelfand transform; operator-valued transform |
+| $\widehat{f*g} = \mathcal F f\mathcal F g$ | Convolution theorem |
 | $\mathcal{C}_L$, $\mathcal{C}_R$ | Closed subalgebras of $B(L^1(G))$ isomorphic to $L^1(G)$ and its opposite |
 | $\operatorname{Irr}(G)$, $\mu_P$, $\mathcal{H}_\pi$ | Unitary dual, Plancherel measure, representation space |
 
@@ -185,4 +185,4 @@ Convolution turns a locally compact group into the Banach algebra $L^1(G)$, the 
 - Lynn H. Loomis, *An Introduction to Abstract Harmonic Analysis* (Van Nostrand, 1953), for the convolution operators and the classical convolution theorem.
 - Walter Rudin, *Fourier Analysis on Groups* (Wiley, 1962), for the Gelfand transform of $L^1(G)$ on an abelian group and the norm realised on the dual.
 - Gerald B. Folland, *A Course in Abstract Harmonic Analysis* (CRC Press, second edition, 2015), for the operator-valued transform, the convolution theorem and the Plancherel transform.
-- John B. Conway, *A Course in Functional Analysis* (Springer, second edition, 1990), for the strong operator topology, isometric representations and the bounded operators on $L^p$.
+- John B. Conway, *A Course in Functional Analysis* (Springer, second edition, 1990), for the strong operator topology, isometric representations and the bounded operators on $L^{n}$.

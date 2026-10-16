@@ -13,10 +13,10 @@ The Clifford algebra, its universal property and the fundamental relation are fr
 
 ### The Orthogonal Lie Algebra
 
-**Theorem.** The subspace $\mathrm{Cl}_2(V,q)$ of bivectors is closed under the commutator $[A,B]=AB-BA$, and the map
+**Theorem.** The subspace $\mathrm{Cl}_2(V,\mathfrak{Q})$ of bivectors is closed under the commutator $[A,B]=AB-BA$, and the map
 
 $$
-\lambda:\mathrm{Cl}_2(V,q)\longrightarrow\mathrm{SO}(V,q),\qquad \lambda(B)=\operatorname{ad}_B,\qquad \operatorname{ad}_B(v)=Bv-vB,
+\lambda:\mathrm{Cl}_2(V,\mathfrak{Q})\longrightarrow\mathrm{SO}(V,\mathfrak{Q}),\qquad \lambda(B)=\operatorname{ad}_B,\qquad \operatorname{ad}_B(v)=Bv-vB,
 $$
 
 is an isomorphism of Lie algebras onto the orthogonal Lie algebra, the bracket being the commutator of endomorphisms on the right. The image consists of the skew endomorphisms, that is of those $f$ with $B(fv,w)+B(v,fw)=0$ for all $v,w$.
@@ -27,14 +27,14 @@ is an isomorphism of Lie algebras onto the orthogonal Lie algebra, the bracket b
 
 ### The Spinor Module
 
-**Theorem.** Let $S$ be an irreducible Clifford module over $\mathrm{Cl}(V,q)$, of dimension $2^{[n/2]}$ over the division algebra of the type, as in *Spin Representations and Clifford Modules with Inner Conjugation*. Then $S$ is a module over $\mathrm{Cl}_2(V,q)$ by restriction of the algebra action.
+**Theorem.** Let $S$ be an irreducible Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$, of dimension $2^{[n/2]}$ over the division algebra of the type, as in *Spin Representations and Clifford Modules with Inner Conjugation*. Then $S$ is a module over $\mathrm{Cl}_2(V,\mathfrak{Q})$ by restriction of the algebra action.
 
 **Proof.** A Clifford module is a module over the whole algebra by definition; restricting the action to the subalgebra of bivectors gives the statement.
 
 **Theorem (the infinitesimal spin representation).** The map
 
 $$
-\rho_*:\mathrm{SO}(V,q)\longrightarrow\mathrm{GL}(S),\qquad \rho_*(\operatorname{ad}_B)=\gamma(B),
+\rho_*:\mathrm{SO}(V,\mathfrak{Q})\longrightarrow\mathrm{GL}(S),\qquad \rho_*(\operatorname{ad}_B)=\gamma(B),
 $$
 
 where $\gamma(B)$ denotes left multiplication by the bivector $B$ on $S$, is a well-defined representation of the orthogonal Lie algebra on $S$, and it is the differential of the spin representation of the spin group.
@@ -57,7 +57,7 @@ $$
 
 ### Compatibility with the Vector Representation
 
-**Theorem.** For $\xi\in\mathrm{SO}(V,q)$, $v\in V$ and $\psi\in S$,
+**Theorem.** For $\xi\in\mathrm{SO}(V,\mathfrak{Q})$, $v\in V$ and $\psi\in S$,
 
 $$
 \rho_*(\xi)\bigl(\gamma(v)\psi\bigr)=\gamma(\xi v)\psi+\gamma(v)\rho_*(\xi)\psi,
@@ -66,7 +66,7 @@ or equivalently, on $S$,
 $$
 [\rho_*(\xi),\gamma(v)]=\gamma(\xi v).
 $$
-That is, $\gamma$ is a map of $\mathrm{SO}(V,q)$-modules from $V\otimes S$ to $S$, the Lie algebra acting on the vector factor in the defining representation and on the spinor factor by $\rho_*$.
+That is, $\gamma$ is a map of $\mathrm{SO}(V,\mathfrak{Q})$-modules from $V\otimes S$ to $S$, the Lie algebra acting on the vector factor in the defining representation and on the spinor factor by $\rho_*$.
 
 **Proof.** The element $\xi$ is $\operatorname{ad}_B$ for a unique bivector $B$. Left multiplication by the algebra is associative, so $\gamma(B)\gamma(v)\psi=\gamma(Bv)\psi$, which is $\rho_*(\xi)(\gamma(v)\psi)$; on the other side, $\gamma(\xi v)\psi+\gamma(v)\rho_*(\xi)\psi=\gamma(Bv-vB)\psi+\gamma(vB)\psi$, and the two terms in $vB$ cancel, leaving $\gamma(Bv)\psi$. The two sides agree, and subtracting the second term gives the commutator form.
 
@@ -76,7 +76,7 @@ So the action of the orthogonal Lie algebra on the spinor module is compatible w
 
 ### The Cartan Subalgebra and the Weights
 
-Let $n=2m$ or $n=2m+1$, let $e_1,\ldots,e_n$ be an orthonormal basis with $q(e_i)=1$ after complexification, and let $\mathrm{H}$ be the Cartan subalgebra spanned by the bivectors $b_i=\tfrac12e_{2i-1}e_{2i}$, $i=1,\ldots,m$, whose images $\lambda(b_i)$ are the standard diagonal Cartan elements of the orthogonal Lie algebra; the functional $\epsilon_i$ is dual to $\lambda(b_i)$. For $\xi\in\mathrm{H}$ the spinor module decomposes into eigenspaces of the commuting operators $\rho_*(\xi)$, and the weights are the labels of those eigenspaces: a vector $\psi$ has weight $\lambda$ when $\rho_*(\xi)\psi=i\lambda(\xi)\psi$ for every $\xi\in\mathrm{H}$, the factor $i$ being the one of the Hermitian normalisation, in which $2i\rho_*(b_i)$ has the eigenvalues $\pm1$.
+Let $n=2m$ or $n=2m+1$, let $e_1,\ldots,e_n$ be an orthonormal basis with $\mathfrak{Q}(e_i)=1$ after complexification, and let $\mathrm{H}$ be the Cartan subalgebra spanned by the bivectors $b_i=\tfrac12e_{2i-1}e_{2i}$, $i=1,\ldots,m$, whose images $\lambda(b_i)$ are the standard diagonal Cartan elements of the orthogonal Lie algebra; the functional $\epsilon_i$ is dual to $\lambda(b_i)$. For $\xi\in\mathrm{H}$ the spinor module decomposes into eigenspaces of the commuting operators $\rho_*(\xi)$, and the weights are the labels of those eigenspaces: a vector $\psi$ has weight $\lambda$ when $\rho_*(\xi)\psi=i\lambda(\xi)\psi$ for every $\xi\in\mathrm{H}$, the factor $i$ being the one of the Hermitian normalisation, in which $2i\rho_*(b_i)$ has the eigenvalues $\pm1$.
 
 **Theorem.** In the basis of the Cartan coordinates, the weights of the spinor module are the $2^m$ vectors
 
@@ -133,12 +133,12 @@ each of dimension $2^{m-1}$, and the spinor module is their direct sum, of dimen
 
 ## Branching under the Subalgebra
 
-**Theorem (branching).** Let $W\subseteq V$ be a hyperplane on which the form restricts non-degenerately, so that $\mathrm{SO}(W,q)\subseteq\mathrm{SO}(V,q)$ is a subalgebra. Then
+**Theorem (branching).** Let $W\subseteq V$ be a hyperplane on which the form restricts non-degenerately, so that $\mathrm{SO}(W,\mathfrak{Q})\subseteq\mathrm{SO}(V,\mathfrak{Q})$ is a subalgebra. Then
 
-1. for $n=2m+1$, the spinor module of $\mathrm{SO}(V,q)$ restricts to the direct sum $S^+\oplus S^-$ of the two half-spinor modules of $\mathrm{SO}(W,q)$;
-2. for $n=2m$, each half-spinor module of $\mathrm{SO}(V,q)$ restricts to the spinor module of $\mathrm{SO}(W,q)$, irreducibly.
+1. for $n=2m+1$, the spinor module of $\mathrm{SO}(V,\mathfrak{Q})$ restricts to the direct sum $S^+\oplus S^-$ of the two half-spinor modules of $\mathrm{SO}(W,\mathfrak{Q})$;
+2. for $n=2m$, each half-spinor module of $\mathrm{SO}(V,\mathfrak{Q})$ restricts to the spinor module of $\mathrm{SO}(W,\mathfrak{Q})$, irreducibly.
 
-**Proof.** The even part of $\mathrm{Cl}(V,q)$ is the Clifford algebra of a hyperplane, $\mathrm{Cl}^0(V,q)\cong\mathrm{Cl}(W,q|_W)$, by the identification recorded in *Clifford Algebras in Finite Dimensions*. In the first case $n=2m+1$ makes $\dim W=2m$ even, so $\mathrm{Cl}(W,q|_W)$ is of type $D_m$ and its spinor module decomposes into the two half-spinor modules; the restriction of $S$ to the even part is therefore the direct sum of those two, and the dimension count $2^m=2^{m-1}+2^{m-1}$ confirms it. In the second case $n=2m$ makes $\dim W=2m-1$ odd, so $\mathrm{Cl}(W,q|_W)$ is of type $B_{m-1}$ with a single irreducible spinor module of dimension $2^{m-1}$; the volume element $\omega$ of $V$ is even, hence lies in the even part, and it is central there, so each of its eigenspaces $S^\pm$ is a submodule over the even part, of dimension $2^{m-1}$, and therefore irreducible.
+**Proof.** The even part of $\mathrm{Cl}(V,\mathfrak{Q})$ is the Clifford algebra of a hyperplane, $\mathrm{Cl}^0(V,\mathfrak{Q})\cong\mathrm{Cl}(W,q|_W)$, by the identification recorded in *Clifford Algebras in Finite Dimensions*. In the first case $n=2m+1$ makes $\dim W=2m$ even, so $\mathrm{Cl}(W,q|_W)$ is of type $D_m$ and its spinor module decomposes into the two half-spinor modules; the restriction of $S$ to the even part is therefore the direct sum of those two, and the dimension count $2^m=2^{m-1}+2^{m-1}$ confirms it. In the second case $n=2m$ makes $\dim W=2m-1$ odd, so $\mathrm{Cl}(W,q|_W)$ is of type $B_{m-1}$ with a single irreducible spinor module of dimension $2^{m-1}$; the volume element $\omega$ of $V$ is even, hence lies in the even part, and it is central there, so each of its eigenspaces $S^\pm$ is a submodule over the even part, of dimension $2^{m-1}$, and therefore irreducible.
 
 **Remark.** The branching rule is the infinitesimal statement of the relation between the Clifford algebras of $V$ and of a hyperplane, and it is what makes the spin representations of the lower-dimensional orthogonal algebras appear inside the higher-dimensional one. The chain of inclusions of the spin groups that results is the source of the exceptional isomorphisms in low dimensions, developed in *The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation*.
 
@@ -152,11 +152,11 @@ For $n=3$ the algebra $\mathrm{SO}(3,\mathbb{C})\cong\mathrm{SL}(2,\mathbb{C})$ 
 
 For $n=5$ the spinor module has dimension four with weights $\tfrac12(\pm\epsilon_1\pm\epsilon_2)$, all four of them; it is the defining representation of the symplectic algebra under the isomorphism $\mathrm{SO}(5,\mathbb{C})\cong\mathrm{Sp}(2,\mathbb{C})$, and it is self-dual. For $n=6$ the two half-spinor modules have dimension four each, with weights the half-integral vectors of the two parities; they are the defining representation of $\mathrm{SL}(4,\mathbb{C})$ and its dual under the isomorphism $\mathrm{SO}(6,\mathbb{C})\cong\mathrm{SL}(4,\mathbb{C})$, and the two are interchanged by the outer automorphism of the Dynkin diagram of $A_3$, which is the diagram symmetry of $D_3$. The pair of examples is the infinitesimal half of the exceptional isomorphisms of the next entry.
 
-**Remark (no descent to the orthogonal group).** For every $n$ the spinor module is a representation of the spin group and of its Lie algebra, and it is not the differential of any representation of $SO(V,q)$, because the centre of the spin group acts by $-1$ while it acts trivially in every representation of the orthogonal group. The half-integral highest weight is the same statement read on the weight lattice: the weight lattice of the spin group is the lattice generated by the fundamental weights including the spinorial one, while that of the orthogonal group contains only the integral weights.
+**Remark (no descent to the orthogonal group).** For every $n$ the spinor module is a representation of the spin group and of its Lie algebra, and it is not the differential of any representation of $SO(V,\mathfrak{Q})$, because the centre of the spin group acts by $-1$ while it acts trivially in every representation of the orthogonal group. The half-integral highest weight is the same statement read on the weight lattice: the weight lattice of the spin group is the lattice generated by the fundamental weights including the spinorial one, while that of the orthogonal group contains only the integral weights.
 
 ## Summary
 
-The bivectors of $\mathrm{Cl}(V,q)$ form the orthogonal Lie algebra under the commutator, the identification being $\lambda(B)=\operatorname{ad}_B$, and the spinor module $S$ of *Spin Representations and Clifford Modules with Inner Conjugation* is a module over that Lie algebra by the map
+The bivectors of $\mathrm{Cl}(V,\mathfrak{Q})$ form the orthogonal Lie algebra under the commutator, the identification being $\lambda(B)=\operatorname{ad}_B$, and the spinor module $S$ of *Spin Representations and Clifford Modules with Inner Conjugation* is a module over that Lie algebra by the map
 
 $$
 \rho_*(\operatorname{ad}_B)=\gamma(B),
@@ -172,8 +172,8 @@ The branching rule relates the representations of consecutive orthogonal algebra
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{Cl}_2(V,q)$ | Bivectors, the orthogonal Lie algebra |
-| $\lambda(B)=\operatorname{ad}_B$ | Identification with $\mathrm{SO}(V,q)$ |
+| $\mathrm{Cl}_2(V,\mathfrak{Q})$ | Bivectors, the orthogonal Lie algebra |
+| $\lambda(B)=\operatorname{ad}_B$ | Identification with $\mathrm{SO}(V,\mathfrak{Q})$ |
 | $\gamma$ | The Clifford action on the spinor module $S$ |
 | $\rho_*(\operatorname{ad}_B)=\gamma(B)$ | Infinitesimal spin representation |
 | $\rho_*(\lambda(uw))=\tfrac12[\gamma(u),\gamma(w)]$ | Value on an orthogonal pair |

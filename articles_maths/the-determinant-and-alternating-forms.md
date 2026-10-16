@@ -143,7 +143,7 @@ $$
 (\alpha \wedge \beta)(x_1, \ldots, x_{p+q}) = \sum_{\sigma} \operatorname{sgn}(\sigma)\, \alpha(x_{\sigma(1)}, \ldots, x_{\sigma(p)})\, \beta(x_{\sigma(p+1)}, \ldots, x_{\sigma(p+q)}),
 $$
 
-the sum over the $(p, q)$-shuffles of $\{1, \ldots, p+q\}$. It is graded-commutative, $\alpha \wedge \beta = (-1)^{pq}\beta \wedge \alpha$, and associative.
+the sum over the $(n,m)$-shuffles of $\{1, \ldots, p+q\}$. It is graded-commutative, $\alpha \wedge \beta = (-1)^{pq}\beta \wedge \alpha$, and associative.
 
 ### Pullback
 

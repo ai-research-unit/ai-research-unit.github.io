@@ -20,7 +20,7 @@ $$
 
 the usual graph energy of the level-$n$ graph of *Graph Theory*, and the **level-$n$ Laplacian** is $\Delta_n u(x)=\sum_{y\sim_n x}(u(y)-u(x))$ on $V_n\setminus V_0$, with the boundary values held fixed.
 
-**Theorem (the renormalisation of the energy and of the resistance).** Let $u$ be harmonic at every interior vertex of level $n$ and let $\tilde u$ be its harmonic extension to the level $n+1$. Then $\mathcal{E}_{n+1}(\tilde u)=\tfrac35\mathcal{E}_n(u)$; equivalently the effective resistance of the level-$n$ graph between two boundary points is $R_n=(\tfrac53)^n R_0$. In particular the **Dirichlet form**
+**Theorem (the renormalisation of the energy and of the resistance).** Let $u$ be harmonic at every interior vertex of level $n$ and let $u_{\mathrm{ext}}$ be its harmonic extension to the level $n+1$. Then $\mathcal{E}_{n+1}(u_{\mathrm{ext}})=\tfrac35\mathcal{E}_n(u)$; equivalently the effective resistance of the level-$n$ graph between two boundary points is $R_n=(\tfrac53)^n R_0$. In particular the **Dirichlet form**
 
 $$
 \mathcal{E}(u)=\lim_{n\to\infty}\Bigl(\frac53\Bigr)^n\mathcal{E}_n(u)
@@ -59,7 +59,7 @@ the renormalised limit of the graph Laplacians.
 
 ### The Comparison with the Smooth Laplacian
 
-**Remark (the form is the definition, the operator the output).** On a Riemannian manifold the Laplacian of *Smooth Manifolds and Differential Geometry* is the divergence of the gradient, and the integration by parts against the volume form makes it the self-adjoint generator of the Dirichlet form $\int\langle\nabla u,\nabla v\rangle$. On the gasket there is no gradient and no volume form in the smooth sense: the form is defined on the level graphs and renormalised, and the weak Laplacian is its generator. The structural analogy is complete — the form is local, symmetric and Markovian, and the associated semigroup $e^{t\Delta}$ is a diffusion — but the operator is not a second-order differential operator in the classical sense, and its domain is a set of functions whose pointwise derivative exists at no point of the set. The precise dictionary between the two and the class of the generator are the analysis articles of Part III; the comparison of the **spectra** is what the rest of this article computes.
+**Remark (the form is the definition, the operator the output).** On a Riemannian manifold the Laplacian of *Smooth Manifolds and Differential Geometry* is the divergence of the gradient, and the integration by parts against the volume form makes it the self-adjoint generator of the Dirichlet form $\int\langle\nabla u,\nabla v\rangle$. On the gasket there is no gradient and no volume form in the smooth sense: the form is defined on the level graphs and renormalised, and the weak Laplacian is its generator. The structural analogy is complete — the form is local, symmetric and Markovian, and the associated semigroup $\exp(t\Delta)$ is a diffusion — but the operator is not a second-order differential operator in the classical sense, and its domain is a set of functions whose pointwise derivative exists at no point of the set. The precise dictionary between the two and the class of the generator are the analysis articles of Part III; the comparison of the **spectra** is what the rest of this article computes.
 
 ## The Eigenvalue Problem and Spectral Decimation
 

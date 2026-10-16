@@ -11,7 +11,7 @@ $$
 A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $N(A) = A\bar A = a^2$, Euclidean norm $\|A\|_E = \sqrt{a^2 + a'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$. To keep the two notions apart, the norm is written $N$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\rangle = A\bar A = a^2$, Euclidean norm $\|A\|_E = \sqrt{a^2 + a'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
 
 ## The Dual Plane as a Topological Space
 
@@ -31,7 +31,7 @@ is a linear isometry of $(\mathbb{D}', \|\cdot\|_E)$ onto $\mathbb{R}^2$ with th
 
 ### The Distinction Between the Two Forms
 
-The norm $N(A) = a^2$ and the Euclidean form $a^2 + a'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $N$ is continuous, its vanishing does not control the Euclidean size: a sequence with $N(A_n) \to 0$ need not have $A_n \to 0$, because $A_n$ may move along the null line $\mathrm{M}$.
+The norm $\langle A\rangle = a^2$ and the Euclidean form $a^2 + a'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle A_n\rangle \to 0$ need not have $A_n \to 0$, because $A_n$ may move along the null line $\mathrm{M}$.
 
 ### The Euclidean Unit Sphere
 
@@ -82,14 +82,14 @@ So the two eigenspaces of dual conjugation carry no topology beyond that of the 
 **Definition.** The **norm-one set** is
 
 $$
-H = \{A \in \mathbb{D}' : N(A) = 1\} = \{a + \varepsilon a' : a = \pm 1\},
+H = \{A \in \mathbb{D}' : \langle A\rangle = 1\} = \{a + \varepsilon a' : a = \pm 1\},
 $$
 
 the union of the two parallel lines $a = 1$ and $a = -1$.
 
 **Proposition.** $H$ is a closed subset with two contractible components, each homeomorphic to a line; its identity part is $H_0 = 1 + \mathrm{M} = \{a = 1\}$. Hence $H$ has the homotopy type of $S^0$.
 
-**Proof.** $N(A) = a^2 = 1$ gives $a = \pm 1$ with $a'$ free; the two lines are closed and contractible, and the line $a = 1$ is $1 + \mathrm{M}$.
+**Proof.** $\langle A\rangle = a^2 = 1$ gives $a = \pm 1$ with $a'$ free; the two lines are closed and contractible, and the line $a = 1$ is $1 + \mathrm{M}$.
 
 So the norm-one set of the dual numbers is not a circle, as in the complex case, nor a hyperbola with two branches, as in the split-complex case, but a pair of parallel lines; its homotopy type is that of the two-point space.
 
@@ -133,7 +133,7 @@ $$
 
 **Proposition.** The null line is a closed algebraic cone with apex $0$, and it is the radical of the norm. The zero-divisor set $\mathcal{Z}$ is neither open nor closed; its closure is $\mathrm{M}$ and its complement is dense.
 
-**Proof.** $N(tA) = t^2 N(A)$ makes $N^{-1}(0)$ a cone; $N(A+B) = N(A) + 2B(A,B) + N(B)$ with $B(A,B) = a b$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.
+**Proof.** $\langle tA\rangle = t^2 \langle A\rangle$ makes $N^{-1}(0)$ a cone; $\langle A+B\rangle = \langle A\rangle + 2B(A,B) + \langle B\rangle$ with $B(A,B) = a b$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.
 
 ### The Link of the Null Line
 
@@ -172,10 +172,10 @@ The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contrac
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
 | $A = a + \varepsilon a'$ | General dual number |
 | $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
-| $N(A) = a^2$ | Norm |
+| $\langle A\rangle = a^2$ | Norm |
 | $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean norm, giving the topology |
 | $S^1_E = \{\|A\|_E = 1\}$ | Euclidean unit sphere $\cong S^1$ |
-| $H = \{N(A) = 1\}$ | Norm-one set, lines $a = \pm 1$, $\simeq S^0$ |
+| $H = \{\langle A\rangle = 1\}$ | Norm-one set, lines $a = \pm 1$, $\simeq S^0$ |
 | $\mathrm{M} = (\varepsilon) = \{a = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |
 | $\mathcal{Z} = \mathrm{M}\setminus\{0\}$ | Zero-divisor set |
 | $(\mathbb{D}')^\times = \{a \neq 0\}$ | Group of units, two contractible components |

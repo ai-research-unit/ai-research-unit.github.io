@@ -27,9 +27,9 @@ so the derivative of the flow solves the linearised equation along the orbit. If
 
 *Proof.* In a coordinate chart the equation $\dot x=X(x)$ is a first-order system with a smooth right-hand side, and the existence, uniqueness and smooth dependence on the initial condition are the standard theorems of *Ordinary Differential Equations*; the openness of $\mathcal D$ and the maximality of the curves are the continuation properties of the solutions. For the compact case one covers $M$ by finitely many charts and uses the local existence time, which is bounded below by the compactness.
 
-**Example (linear and rotational flows).** (i) On $\mathbb{R}^n$ the constant vector field $X(x)=Ax$ has the complete flow $\varphi_t(x)=e^{tA}x$, and the flow is a group of linear maps; the orbit structure is governed by the Jordan form of $A$.
+**Example (linear and rotational flows).** (i) On $\mathbb{R}^n$ the constant vector field $X(x)=Ax$ has the complete flow $\varphi_t(x)=\exp(tA)x$, and the flow is a group of linear maps; the orbit structure is governed by the Jordan form of $A$.
 
-(ii) On $\mathbb{C}\cong\mathbb{R}^2$ the vector field $X(z)=iz$ has the flow $\varphi_t(z)=e^{it}z$, the rotation of the plane; its orbits are the circles centred at the origin and the fixed point at the origin, and the flow is periodic of period $2\pi$.
+(ii) On $\mathbb{C}\cong\mathbb{R}^2$ the vector field $X(z)=iz$ has the flow $\varphi_t(z)=\exp(it)z$, the rotation of the plane; its orbits are the circles centred at the origin and the fixed point at the origin, and the flow is periodic of period $2\pi$.
 
 (iii) On the torus $\mathbb{T}^2$ the constant vector field $X(\theta_1,\theta_2)=(1,\alpha)$ has the flow $\varphi_t(\theta_1,\theta_2)=(\theta_1+t,\theta_2+\alpha t)$; the orbits are dense when $\alpha$ is irrational and periodic when $\alpha$ is rational, which is the Kronecker flow of *Topological Dynamics*.
 
@@ -93,7 +93,7 @@ of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent 
 
 ### Lyapunov Stability
 
-**Definition.** Let $p$ be a fixed point of $X$ and let $d$ be a metric inducing the topology of $M$. The point is **Lyapunov stable** if for every $\epsilon>0$ there is $\delta>0$ such that $d(q,p)<\delta$ implies $d(\varphi_t(q),p)<\epsilon$ for all $t \ge0$; it is **asymptotically stable** if it is Lyapunov stable and there is $\delta>0$ such that $d(q,p)<\delta$ implies $\varphi_t(q)\to p$ as $t\to+\infty$; it is **exponentially stable** if the convergence is bounded by $Ce^{-\lambda t}$ with $\lambda>0$.
+**Definition.** Let $p$ be a fixed point of $X$ and let $d$ be a metric inducing the topology of $M$. The point is **Lyapunov stable** if for every $\epsilon>0$ there is $\delta>0$ such that $d(q,p)<\delta$ implies $d(\varphi_t(q),p)<\epsilon$ for all $t \ge0$; it is **asymptotically stable** if it is Lyapunov stable and there is $\delta>0$ such that $d(q,p)<\delta$ implies $\varphi_t(q)\to p$ as $t\to+\infty$; it is **exponentially stable** if the convergence is bounded by $C\exp(-\lambda t)$ with $\lambda>0$.
 
 **Theorem (linear stability).** Let $p$ be a fixed point of $X$ and $A=DX(p)$. If every eigenvalue of $A$ has negative real part, then $p$ is exponentially stable; if some eigenvalue has positive real part, then $p$ is unstable; if eigenvalues lie on the imaginary axis the linearisation decides nothing, and the stability depends on the nonlinear terms.
 
@@ -109,7 +109,7 @@ of the same dimensions as $E^s$ and $E^u$; they are invariant and their tangent 
 
 **Theorem (converse of Lyapunov).** Let $p$ be an exponentially stable fixed point of $X$ and let $A=DX(p)$ have its spectrum in the open left half-plane. Then for every symmetric positive definite matrix $Q$ there is a unique symmetric positive definite $P$ with $A^{\mathsf T}P+PA=-Q$, and $V(x)=x^{\mathsf T}Px$ is a Lyapunov function with $\dot V\le-\lambda\|x\|^2$ on a neighbourhood of $p$.
 
-*Proof.* The Lyapunov equation has the solution $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}\,dt$, convergent because the spectrum is in the left half-plane, and the stated inequality follows by differentiating $V$ along the linearised field and then using the smoothness of $X$ to absorb the nonlinear terms in a small neighbourhood.
+*Proof.* The Lyapunov equation has the solution $P=\int_0^\infty \exp(tA^{\mathsf T})Q\exp(tA)\,dt$, convergent because the spectrum is in the left half-plane, and the stated inequality follows by differentiating $V$ along the linearised field and then using the smoothness of $X$ to absorb the nonlinear terms in a small neighbourhood.
 
 ## The Poincaré–Bendixson Theory in the Plane
 
@@ -137,7 +137,7 @@ $$
 
 *Proof.* A periodic orbit bounds a disc $D$ in $U$ by the Jordan curve theorem; the divergence theorem gives $\int_D\operatorname{div}(gX)\,dx=0$ because the boundary integral of $gX$ along the periodic orbit vanishes, contradicting the strict one-signedness of the divergence.
 
-**Example (limit cycle).** The vector field in polar coordinates $\dot r=r(1-r)$, $\dot\theta=1$ has the unit circle $r=1$ as a periodic orbit, and every orbit with $r>0$ converges to it as $t\to+\infty$; the circle is a **limit cycle**, that is, a periodic orbit that is the $\omega$-limit set of a point outside it. The linearisation of the return map around the circle has multiplier $e^{-2\pi}<1$, so the cycles attract, and the example is the standard model of a stable limit cycle.
+**Example (limit cycle).** The vector field in polar coordinates $\dot r=r(1-r)$, $\dot\theta=1$ has the unit circle $r=1$ as a periodic orbit, and every orbit with $r>0$ converges to it as $t\to+\infty$; the circle is a **limit cycle**, that is, a periodic orbit that is the $\omega$-limit set of a point outside it. The linearisation of the return map around the circle has multiplier $\exp(-2\pi)<1$, so the cycles attract, and the example is the standard model of a stable limit cycle.
 
 ## Structural Stability and Genericity
 

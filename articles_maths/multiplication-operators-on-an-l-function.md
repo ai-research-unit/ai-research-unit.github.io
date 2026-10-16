@@ -89,11 +89,11 @@ that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an invol
 
 ### The dual form
 
-**Definition.** The **dual form** $\tilde f$ is the arithmetic function with Dirichlet series $L(\tilde f,s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapsto\tilde f$ is an involution on the forms whose completion satisfies the equation.
+**Definition.** The **dual form** $f^{\mathrm{dual}}$ is the arithmetic function with Dirichlet series $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapstof^{\mathrm{dual}}$ is an involution on the forms whose completion satisfies the equation.
 
-**Proposition.** $L(\tilde f,s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f}=M_{h^*}\tilde f$. The operator identity of the previous theorem and the definition of $\tilde f$ are the same identity read on two sides.
+**Proposition.** $L(f^{\mathrm{dual}},s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f}=M_{h^*}f^{\mathrm{dual}}$. The operator identity of the previous theorem and the definition of $f^{\mathrm{dual}}$ are the same identity read on two sides.
 
-**Proof.** Substitute $s\mapsto1-s$ into the definition of $\tilde f$ and use the functional equation; the compatibility with $M_h$ is the multiplicativity of the involution on coefficients. This is the operator form of the functional equation in the sense of *L-Functions*.
+**Proof.** Substitute $s\mapsto1-s$ into the definition of $f^{\mathrm{dual}}$ and use the functional equation; the compatibility with $M_h$ is the multiplicativity of the involution on coefficients. This is the operator form of the functional equation in the sense of *L-Functions*.
 
 ## Worked Examples
 
@@ -109,7 +109,7 @@ The representation $h\mapsto M_h$ is an isomorphism of algebras on the module $\
 
 ## Summary
 
-For $h\in\mathcal{A}$ the multiplication operator is $M_hf=h*f$, and $L(M_hf,s)=L(h,s)L(f,s)$; the assignment $h\mapsto M_h$ is a faithful representation of the algebra, with $M_hM_g=M_{h*g}$ and $M_\varepsilon=\mathrm{id}$. On the form of the category, $\langle f,g\rangle=\sum f(n)\overline{g(n)}$, the operator $M_h$ is bounded with $\|M_h\|\le\|h\|_{\ell^1}$ for $h\in\ell^1$, and it is unbounded otherwise. The Euler factors are the Toeplitz operators $M_{h_p}$ of the local sequences, and the global operator is the norm-convergent product $\prod_pM_{h_p}$, which is a compact perturbation of the identity when $h$ is $\ell^1$ and trivial at almost all primes. The functional equation is the operator identity $\mathcal{R}\Lambda_f=\epsilon\Lambda_{f^*}$ with $\mathcal{R}$ the reflection $s\mapsto1-s$, and the dual form $\tilde f$ carries the same content on the $L$-side. The involution on the elements and the adjoint on the operators agree only in the degenerate augmentation case.
+For $h\in\mathcal{A}$ the multiplication operator is $M_hf=h*f$, and $L(M_hf,s)=L(h,s)L(f,s)$; the assignment $h\mapsto M_h$ is a faithful representation of the algebra, with $M_hM_g=M_{h*g}$ and $M_\varepsilon=\mathrm{id}$. On the form of the category, $\langle f,g\rangle=\sum f(n)\overline{g(n)}$, the operator $M_h$ is bounded with $\|M_h\|\le\|h\|_{\ell^1}$ for $h\in\ell^1$, and it is unbounded otherwise. The Euler factors are the Toeplitz operators $M_{h_p}$ of the local sequences, and the global operator is the norm-convergent product $\prod_pM_{h_p}$, which is a compact perturbation of the identity when $h$ is $\ell^1$ and trivial at almost all primes. The functional equation is the operator identity $\mathcal{R}\Lambda_f=\epsilon\Lambda_{f^*}$ with $\mathcal{R}$ the reflection $s\mapsto1-s$, and the dual form $f^{\mathrm{dual}}$ carries the same content on the $L$-side. The involution on the elements and the adjoint on the operators agree only in the degenerate augmentation case.
 
 ## Summary of Notation
 
@@ -123,7 +123,7 @@ For $h\in\mathcal{A}$ the multiplication operator is $M_hf=h*f$, and $L(M_hf,s)=
 | $\Lambda_f(s)=N^{s/2}\prod_j\Gamma(s+\mu_j)L(f,s)$ | Completion |
 | $\mathcal{R}\Lambda(s)=\Lambda(1-s)$ | Reflection operator |
 | $\mathcal{R}\Lambda_f=\epsilon\Lambda_{f^*}$ | Functional equation as an operator identity |
-| $\tilde f$, $L(\tilde f,s)=\gamma(f,s)^{-1}L(f,1-s)$ | Dual form |
+| $f^{\mathrm{dual}}$, $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$ | Dual form |
 | $h^*$ | Coefficient involution $h^*(n)=\overline{h(n)}$ |
 
 ## Further Reading

@@ -14,36 +14,36 @@ This article develops the extension theorem, hyperbolic planes, the index and th
 **Definition.** A **hyperbolic plane** is a two-dimensional quadratic space $H$ with a basis $e, f$ such that
 
 $$
-q(e) = q(f) = 0, \qquad B(e, f) = 1.
+\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0, \qquad B(e, f) = 1.
 $$
 
 The basis $e, f$ is a **hyperbolic pair**, and $H$ is also written $\langle 1, -1\rangle$ in the diagonal notation of *Quadratic Forms and Polarisation*, the two descriptions being isometric over a field of characteristic not $2$.
 
 **Proposition.** The hyperbolic plane is non-degenerate, and its Gram matrix in the hyperbolic basis is $\begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}$, of determinant $-1$.
 
-**Proof.** The Gram matrix has entries $B(e,e) = q(e) = 0$, $B(e,f) = 1$, $B(f,e) = 1$ and $B(f,f) = q(f) = 0$; its determinant is $-1 \neq 0$, so the form is non-degenerate.
+**Proof.** The Gram matrix has entries $B(e,e) = \mathfrak{Q}(e) = 0$, $B(e,f) = 1$, $B(f,e) = 1$ and $B(f,f) = \mathfrak{Q}(f) = 0$; its determinant is $-1 \neq 0$, so the form is non-degenerate.
 
 **Proposition.** Over a field of characteristic not $2$ the hyperbolic plane is isometric to the diagonal form $\langle 1, -1\rangle$.
 
-**Proof.** In $\langle 1, -1\rangle$ with $q(x, y) = x^2 - y^2$ the vectors $e = (1, 1)$ and $f = (1/2, -1/2)$ satisfy
+**Proof.** In $\langle 1, -1\rangle$ with $\mathfrak{Q}(x, y) = x^2 - y^2$ the vectors $e = (1, 1)$ and $f = (1/2, -1/2)$ satisfy
 
 $$
-q(e) = 1 - 1 = 0, \qquad q(f) = \tfrac{1}{4} - \tfrac{1}{4} = 0, \qquad B(e, f) = 1 \cdot \tfrac{1}{2} - 1 \cdot \bigl(-\tfrac{1}{2}\bigr) = 1,
+\mathfrak{Q}(e) = 1 - 1 = 0, \qquad \mathfrak{Q}(f) = \tfrac{1}{4} - \tfrac{1}{4} = 0, \qquad B(e, f) = 1 \cdot \tfrac{1}{2} - 1 \cdot \bigl(-\tfrac{1}{2}\bigr) = 1,
 $$
 
 so $e, f$ is a hyperbolic pair and the two spaces are isometric.
 
 ### Isotropic Vectors and Hyperbolic Planes
 
-**Proposition.** Let $V$ be a non-degenerate quadratic space and let $0 \neq e \in V$ be isotropic, $q(e) = 0$. Then there is $f \in V$ with $B(e, f) \neq 0$, and after scaling $f$ the span $\operatorname{span}\{e, f\}$ is a hyperbolic plane.
+**Proposition.** Let $V$ be a non-degenerate quadratic space and let $0 \neq e \in V$ be isotropic, $\mathfrak{Q}(e) = 0$. Then there is $f \in V$ with $B(e, f) \neq 0$, and after scaling $f$ the span $\operatorname{span}\{e, f\}$ is a hyperbolic plane.
 
 **Proof.** If $B(e, f) = 0$ for every $f$, then $e$ lies in the radical of $B$, contradicting non-degeneracy. Choose $f$ with $B(e, f) = c \neq 0$ and let $f' = f/c$ and $f'' = f' - \tfrac{1}{2}q(f')e$, so that
 
 $$
-q(f'') = q(f') - q(f')B(e, f') + \tfrac{1}{4}q(f')^2 q(e) = 0,
+\mathfrak{Q}(f'') = \mathfrak{Q}(f') - \mathfrak{Q}(f')B(e, f') + \tfrac{1}{4}q(f')^2 \mathfrak{Q}(e) = 0,
 $$
 
-using $B(e, f') = 1$ and $q(e) = 0$. Then $e, f''$ is a hyperbolic pair.
+using $B(e, f') = 1$ and $\mathfrak{Q}(e) = 0$. Then $e, f''$ is a hyperbolic pair.
 
 So an isotropic line in a non-degenerate space is always contained in a hyperbolic plane; this is the first step in the decomposition theorem below.
 
@@ -51,7 +51,7 @@ So an isotropic line in a non-degenerate space is always contained in a hyperbol
 
 ### Statement
 
-**Theorem (Witt).** Let $(V, q)$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$. Let $W \subseteq V$ be a subspace and let $\sigma : W \to V$ be an injective linear map with $q(\sigma w) = q(w)$ for all $w \in W$. Then there is an isometry $T \in \operatorname{O}(V, q)$ with $T|_W = \sigma$.
+**Theorem (Witt).** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$. Let $W \subseteq V$ be a subspace and let $\sigma : W \to V$ be an injective linear map with $\mathfrak{Q}(\sigma w) = \mathfrak{Q}(w)$ for all $w \in W$. Then there is an isometry $T \in \operatorname{O}(V, \mathfrak{Q})$ with $T|_W = \sigma$.
 
 The theorem says that an isometry of a subspace into the whole space never sees more than the subspace: it can always be completed. The proof combines the equal-norm lemma of *Isometries and Orthogonal Transformations* with the fact that the orthogonal complement of a non-degenerate subspace is again non-degenerate.
 
@@ -59,11 +59,11 @@ The theorem says that an isometry of a subspace into the whole space never sees 
 
 **Proof.** Suppose first that $W$ is non-degenerate, so that $V = W \perp W^\perp$ with both summands non-degenerate, by *Bilinear Forms*. The image $\sigma(W)$ is isometric to $W$, hence also non-degenerate, and $V = \sigma(W) \perp \sigma(W)^\perp$.
 
-Argue by induction on $\dim V$, the case $\dim V = 0$ being trivial. If $W = 0$ then $T = \mathrm{id}$ works. Otherwise $W$ contains a vector $w$ with $q(w) \neq 0$: a space on which $q$ vanished identically would have $B = 0$ on it, so it would equal its own radical, which is $0$ in the non-degenerate space $W$. Let $w' = \sigma(w)$, so that $q(w') = q(w) \neq 0$, and let $\rho$ be the product of at most two reflections supplied by the equal-norm lemma of *Isometries and Orthogonal Transformations*, so that $\rho(w') = w$. Then $\rho\sigma$ is an isometry of $W$ into $V$ fixing $w$, so it carries $W \cap w^\perp$ isometrically into $w^\perp$; that hyperplane is non-degenerate of dimension $\dim V - 1$, and by induction on the ambient dimension the restriction of $\rho\sigma$ to $W \cap w^\perp$ extends to an isometry $S$ of $w^\perp$. Extend $S$ to an isometry $T_0$ of $V = \langle w\rangle \perp w^\perp$ by $T_0(w) = w$. As $W$ is spanned by $w$ and $W \cap w^\perp$, the isometry $T_0$ agrees with $\rho\sigma$ on all of $W$, and $T = \rho^{-1}T_0$ is the required extension of $\sigma$.
+Argue by induction on $\dim V$, the case $\dim V = 0$ being trivial. If $W = 0$ then $T = \mathrm{id}$ works. Otherwise $W$ contains a vector $w$ with $\mathfrak{Q}(w) \neq 0$: a space on which $q$ vanished identically would have $B = 0$ on it, so it would equal its own radical, which is $0$ in the non-degenerate space $W$. Let $w' = \sigma(w)$, so that $\mathfrak{Q}(w') = \mathfrak{Q}(w) \neq 0$, and let $\rho$ be the product of at most two reflections supplied by the equal-norm lemma of *Isometries and Orthogonal Transformations*, so that $\rho(w') = w$. Then $\rho\sigma$ is an isometry of $W$ into $V$ fixing $w$, so it carries $W \cap w^\perp$ isometrically into $w^\perp$; that hyperplane is non-degenerate of dimension $\dim V - 1$, and by induction on the ambient dimension the restriction of $\rho\sigma$ to $W \cap w^\perp$ extends to an isometry $S$ of $w^\perp$. Extend $S$ to an isometry $T_0$ of $V = \langle w\rangle \perp w^\perp$ by $T_0(w) = w$. As $W$ is spanned by $w$ and $W \cap w^\perp$, the isometry $T_0$ agrees with $\rho\sigma$ on all of $W$, and $T = \rho^{-1}T_0$ is the required extension of $\sigma$.
 
 ### Proof in General
 
-The general $W$ may contain isotropic vectors, and then $W^\perp$ is degenerate and the splitting above is not available. If $W$ contains a vector $w$ with $q(w) \neq 0$, the argument of the preceding paragraph applies verbatim: the equal-norm lemma relates $w$ and $\sigma(w)$, and the restriction of $\rho\sigma$ to $W \cap w^\perp$ is an isometry into the non-degenerate hyperplane $w^\perp$, to which the induction on the ambient dimension applies. If $W$ is totally isotropic, one first enlarges it to a subspace $W_1 \supseteq W$ containing a non-isotropic vector and extends $\sigma$ to an isometry of $W_1$ into $V$, using the non-degeneracy of $V$ exactly as in the construction of a hyperbolic plane above; the preceding case then produces an isometry of $V$ extending $\sigma$ on $W_1$, and hence on $W$. The statement is standard, and we cite it in full.
+The general $W$ may contain isotropic vectors, and then $W^\perp$ is degenerate and the splitting above is not available. If $W$ contains a vector $w$ with $\mathfrak{Q}(w) \neq 0$, the argument of the preceding paragraph applies verbatim: the equal-norm lemma relates $w$ and $\sigma(w)$, and the restriction of $\rho\sigma$ to $W \cap w^\perp$ is an isometry into the non-degenerate hyperplane $w^\perp$, to which the induction on the ambient dimension applies. If $W$ is totally isotropic, one first enlarges it to a subspace $W_1 \supseteq W$ containing a non-isotropic vector and extends $\sigma$ to an isometry of $W_1$ into $V$, using the non-degeneracy of $V$ exactly as in the construction of a hyperbolic plane above; the preceding case then produces an isometry of $V$ extending $\sigma$ on $W_1$, and hence on $W$. The statement is standard, and we cite it in full.
 
 **Corollary.** Let $W, W' \subseteq V$ be isometric subspaces of a non-degenerate quadratic space. Then every isometry $W \to W'$ extends to an isometry of $V$, and in particular $W^\perp$ and $(W')^\perp$ are isometric whenever $W$ and $W'$ are non-degenerate.
 
@@ -73,15 +73,15 @@ The general $W$ may contain isotropic vectors, and then $W^\perp$ is degenerate 
 
 ### Totally Isotropic Subspaces
 
-**Definition.** A subspace $U \subseteq V$ is **totally isotropic** if $q(u) = 0$ for all $u \in U$, equivalently if $B$ vanishes on $U \times U$. The **Witt index** of $(V, q)$ is the maximum of $\dim U$ over the totally isotropic subspaces $U$.
+**Definition.** A subspace $U \subseteq V$ is **totally isotropic** if $\mathfrak{Q}(u) = 0$ for all $u \in U$, equivalently if $B$ vanishes on $U \times U$. The **Witt index** of $(V, \mathfrak{Q})$ is the maximum of $\dim U$ over the totally isotropic subspaces $U$.
 
-**Theorem.** Let $(V, q)$ be a non-degenerate quadratic space over a field of characteristic not $2$. Then all maximal totally isotropic subspaces of $V$ have the same dimension, equal to the Witt index. In particular the index is an invariant of the isometry class of $q$.
+**Theorem.** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field of characteristic not $2$. Then all maximal totally isotropic subspaces of $V$ have the same dimension, equal to the Witt index. In particular the index is an invariant of the isometry class of $q$.
 
 **Proof (standard).** Let $U, U'$ be maximal totally isotropic subspaces, and argue by induction on $m = \dim U$. If $m = 0$ then $V$ is anisotropic, so $U' = 0$ as well. If $m \geq 1$, choose $0 \neq u \in U$. Either $u$ already lies in $U'$, or there is $u' \in U'$ with $B(u, u') \neq 0$: if $B(u, y) = 0$ for all $y \in U'$, then $U' + \langle u\rangle$ is totally isotropic, so maximality forces $u \in U'$. In the second case choose $u' \in U'$ with $B(u, u') \neq 0$ and scale it by the inverse of $B(u, u')$, which preserves both its isotropy and its membership in $U'$, so that $B(u, u') = 1$; in the first case take $u' = u$. The linear isomorphism $\langle u'\rangle \to \langle u\rangle$ preserves the form because both vectors are isotropic, so by Witt's extension theorem it extends to an isometry $T$ of $V$. Then $U$ and $T(U')$ are maximal totally isotropic subspaces both containing $u$, and their intersections with $u^\perp$ project onto maximal totally isotropic subspaces of the non-degenerate quotient $u^\perp/\langle u\rangle$, of dimensions $\dim U - 1$ and $\dim U' - 1$; induction on the dimension of the ambient space gives $\dim U - 1 = \dim U' - 1$.
 
 ### The Decomposition Theorem
 
-**Theorem.** Let $(V, q)$ be a non-degenerate quadratic space over a field of characteristic not $2$, of Witt index $m$. Then
+**Theorem.** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field of characteristic not $2$, of Witt index $m$. Then
 
 $$
 V \cong V_0 \perp m\,H,
@@ -97,19 +97,19 @@ where $V_0$ is anisotropic (contains no nonzero isotropic vector) and $m\,H$ is 
 
 **Example (hyperbolic forms).** For $V = m\,H$ choose from each hyperbolic plane its first isotropic vector; the $e_1, \ldots, e_m$ so obtained are pairwise orthogonal — vectors from distinct orthogonal summands are orthogonal — and each is isotropic, so their span is a totally isotropic subspace of dimension $m$. Since for a non-degenerate form of dimension $n = 2m$ a totally isotropic subspace has dimension at most $\lfloor n/2\rfloor = m$, the index is exactly $m$ and the anisotropic part is zero. So the forms of maximal index are exactly the hyperbolic forms.
 
-**Example (definite forms).** For the form $\langle 1, \ldots, 1\rangle$ on $\mathbb{R}^n$ one has $q(v) = \sum_i v_i^2 \geq 0$, with equality only for $v = 0$; the space is anisotropic and the index is $0$. The same holds for the negative definite form.
+**Example (definite forms).** For the form $\langle 1, \ldots, 1\rangle$ on $\mathbb{R}^n$ one has $\mathfrak{Q}(v) = \sum_i v_i^2 \geq 0$, with equality only for $v = 0$; the space is anisotropic and the index is $0$. The same holds for the negative definite form.
 
-**Example (a form over a finite field).** Let $F = \mathbb{F}_3$ and $V = F^3$ with $q = \langle 1, 1, 1\rangle$, so that $q(x, y, z) = x^2 + y^2 + z^2$. Since the squares in $\mathbb{F}_3$ are $0$ and $1$, and $1 + 1 + 1 = 0$ in $\mathbb{F}_3$, the vector $(1, 1, 1)$ is isotropic; the span of an isotropic vector is a totally isotropic line, so the index is at least $1$, and for a non-degenerate form of dimension $3$ the index is at most $\lfloor 3/2 \rfloor = 1$. Hence the index is $1$ and the anisotropic part is a line. This shows that a form can be anisotropic over $\mathbb{R}$ and isotropic over a field of positive characteristic, and that the index is a genuinely arithmetic invariant.
+**Example (a form over a finite field).** Let $F = \mathbb{F}_3$ and $V = F^3$ with $q = \langle 1, 1, 1\rangle$, so that $\mathfrak{Q}(x, y, z) = x^2 + y^2 + z^2$. Since the squares in $\mathbb{F}_3$ are $0$ and $1$, and $1 + 1 + 1 = 0$ in $\mathbb{F}_3$, the vector $(1, 1, 1)$ is isotropic; the span of an isotropic vector is a totally isotropic line, so the index is at least $1$, and for a non-degenerate form of dimension $3$ the index is at most $\lfloor 3/2 \rfloor = 1$. Hence the index is $1$ and the anisotropic part is a line. This shows that a form can be anisotropic over $\mathbb{R}$ and isotropic over a field of positive characteristic, and that the index is a genuinely arithmetic invariant.
 
 ### Isotropic Subspaces and the Orthogonal Group
 
 The extension theorem also governs the isotropic subspaces of $V$ as a family.
 
-**Theorem.** Let $(V, q)$ be a non-degenerate quadratic space of Witt index $m$ over a field of characteristic not $2$, and let $\mathcal{G}$ be the set of all totally isotropic subspaces of $V$ of dimension $m$. Then the orthogonal group $\operatorname{O}(V, q)$ acts transitively on $\mathcal{G}$.
+**Theorem.** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space of Witt index $m$ over a field of characteristic not $2$, and let $\mathcal{G}$ be the set of all totally isotropic subspaces of $V$ of dimension $m$. Then the orthogonal group $\operatorname{O}(V, \mathfrak{Q})$ acts transitively on $\mathcal{G}$.
 
-**Proof.** Let $U, U' \in \mathcal{G}$. Choose a linear isomorphism $f : U \to U'$, which exists because both have dimension $m$. Since $q$ vanishes on $U$ and on $U'$, and $B$ vanishes on $U \times U$ and on $U' \times U'$, the map $f$ satisfies $q(f(u)) = 0 = q(u)$ for all $u \in U$: it is an isometry of $U$ onto $U'$. By the extension theorem it extends to an isometry $T \in \operatorname{O}(V, q)$, and $T$ carries $U$ onto $U'$.
+**Proof.** Let $U, U' \in \mathcal{G}$. Choose a linear isomorphism $f : U \to U'$, which exists because both have dimension $m$. Since $q$ vanishes on $U$ and on $U'$, and $B$ vanishes on $U \times U$ and on $U' \times U'$, the map $f$ satisfies $\mathfrak{Q}(f(u)) = 0 = \mathfrak{Q}(u)$ for all $u \in U$: it is an isometry of $U$ onto $U'$. By the extension theorem it extends to an isometry $T \in \operatorname{O}(V, \mathfrak{Q})$, and $T$ carries $U$ onto $U'$.
 
-**Corollary.** The set $\mathcal{G}$ is a homogeneous space for $\operatorname{O}(V, q)$; the stabiliser of $U \in \mathcal{G}$ is the subgroup of isometries preserving $U$, and every maximal totally isotropic subspace is the translate of a fixed one by an isometry. In particular, over $\mathbb{R}$ the index and the anisotropic part determine the orbit structure of the orthogonal group on the totally isotropic subspaces.
+**Corollary.** The set $\mathcal{G}$ is a homogeneous space for $\operatorname{O}(V, \mathfrak{Q})$; the stabiliser of $U \in \mathcal{G}$ is the subgroup of isometries preserving $U$, and every maximal totally isotropic subspace is the translate of a fixed one by an isometry. In particular, over $\mathbb{R}$ the index and the anisotropic part determine the orbit structure of the orthogonal group on the totally isotropic subspaces.
 
 So the extension theorem is simultaneously the statement that isometries of subspaces extend and the statement that the maximal isotropic flags of $V$ form a single orbit.
 
@@ -149,7 +149,7 @@ Over a finite field of odd characteristic there are exactly two non-degenerate f
 
 **Corollary.** Over a finite field of odd characteristic every non-degenerate quadratic form of dimension at least $3$ is isotropic.
 
-**Proof.** Let $\dim V = n \geq 3$. The form is non-degenerate, so it does not vanish on all of $V$, and some $c \in V$ has $q(c) \neq 0$. Its orthogonal complement $W = c^\perp$ is non-degenerate of dimension $n - 1 \geq 2$, and by the proposition the restriction of $q$ to $W$ represents $-q(c)$: there is $w \in W$ with $q(w) = -q(c)$. Then $q(w + c) = q(w) + q(c) = 0$ and $w + c \neq 0$, so $w + c$ is a nonzero isotropic vector.
+**Proof.** Let $\dim V = n \geq 3$. The form is non-degenerate, so it does not vanish on all of $V$, and some $c \in V$ has $\mathfrak{Q}(c) \neq 0$. Its orthogonal complement $W = c^\perp$ is non-degenerate of dimension $n - 1 \geq 2$, and by the proposition the restriction of $q$ to $W$ represents $-\mathfrak{Q}(c)$: there is $w \in W$ with $\mathfrak{Q}(w) = -\mathfrak{Q}(c)$. Then $\mathfrak{Q}(w + c) = \mathfrak{Q}(w) + \mathfrak{Q}(c) = 0$ and $w + c \neq 0$, so $w + c$ is a nonzero isotropic vector.
 
 **Theorem (classification over a finite field).** Let $\mathbb{F}_q$ be a finite field of odd characteristic and let $d$ generate the group $\mathbb{F}_q^*$ modulo squares. A non-degenerate quadratic form over $\mathbb{F}_q$ is determined up to isometry by its dimension $n$ and its **discriminant** $\det G \bmod (\mathbb{F}_q^*)^2$, where $G$ is any Gram matrix. Consequently there are exactly two isometry classes of non-degenerate forms in each dimension $n \geq 1$, namely
 
@@ -169,7 +169,7 @@ where $b$ is the anisotropic binary form. In each line the first form has maxima
 
 Over $\mathbb{Q}$ the decomposition has to be carried out form by form, and the anisotropy of the anisotropic part is an arithmetic statement.
 
-**Example (an explicit decomposition).** On $\mathbb{Q}^3$ let $q = \langle 1, 1, -2\rangle$, so that $q(x,y,z) = x^2 + y^2 - 2z^2$ and $B(u,v) = x_ux_v + y_uy_v - 2z_uz_v$. The vector $u = (1,1,1)$ is isotropic, $q(u) = 1 + 1 - 2 = 0$, and the vector $f = \tfrac{1}{2}(1,-1,-1)$ satisfies $q(f) = \tfrac{1}{4}(1 + 1 - 2) = 0$ and $B(u, f) = \tfrac{1}{2}(1 - 1 + 2) = 1$, so $u, f$ is a hyperbolic pair. The orthogonal complement of $\operatorname{span}\{u, f\}$ is the set of $(x,y,z)$ with $x + y - 2z = 0$ and $x - y + 2z = 0$, that is the line spanned by $g = (0, 2, 1)$, and $q(g) = 4 - 2 = 2$. Hence
+**Example (an explicit decomposition).** On $\mathbb{Q}^3$ let $q = \langle 1, 1, -2\rangle$, so that $\mathfrak{Q}(x,y,z) = x^2 + y^2 - 2z^2$ and $B(u,v) = x_ux_v + y_uy_v - 2z_uz_v$. The vector $u = (1,1,1)$ is isotropic, $\mathfrak{Q}(u) = 1 + 1 - 2 = 0$, and the vector $f = \tfrac{1}{2}(1,-1,-1)$ satisfies $\mathfrak{Q}(f) = \tfrac{1}{4}(1 + 1 - 2) = 0$ and $B(u, f) = \tfrac{1}{2}(1 - 1 + 2) = 1$, so $u, f$ is a hyperbolic pair. The orthogonal complement of $\operatorname{span}\{u, f\}$ is the set of $(x,y,z)$ with $x + y - 2z = 0$ and $x - y + 2z = 0$, that is the line spanned by $g = (0, 2, 1)$, and $\mathfrak{Q}(g) = 4 - 2 = 2$. Hence
 
 $$
 \langle 1, 1, -2\rangle = H \perp \langle 2\rangle \cong \langle 1, -1, 2\rangle,
@@ -187,7 +187,7 @@ with the explicit basis $u, f, g$. The Witt index is $1$ and the anisotropic par
 
 ### Statement
 
-**Theorem (Witt cancellation).** Let $(V, q)$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_1, q_2$ be quadratic forms with
+**Theorem (Witt cancellation).** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_1, q_2$ be quadratic forms with
 
 $$
 q \perp q_1 \cong q \perp q_2.
@@ -232,13 +232,13 @@ Both moves are isometries written on the coefficients: the first is the scaling 
 
 ## The Failure in Characteristic $2$
 
-Everything above uses $2 \neq 0$: the polar form is defined with a factor $\tfrac{1}{2}$, a non-isotropic vector has $q(v) \neq 0$ and its reflection is defined with a factor $2/q(v)$, and the hyperbolic basis is normalised using $\tfrac{1}{2}$.
+Everything above uses $2 \neq 0$: the polar form is defined with a factor $\tfrac{1}{2}$, a non-isotropic vector has $\mathfrak{Q}(v) \neq 0$ and its reflection is defined with a factor $2/\mathfrak{Q}(v)$, and the hyperbolic basis is normalised using $\tfrac{1}{2}$.
 
 ### Quadratic Forms Are Not Determined by Their Associated Forms
 
-**Proposition.** Let $F$ be a field of characteristic $2$. Then the associated bilinear form $b(v, w) = q(v + w) - q(v) - q(w)$ of *Quadratic Forms and Polarisation* is alternating, $b(v, v) = 0$ for every $v$; and two quadratic forms with the same associated form need not be isometric.
+**Proposition.** Let $F$ be a field of characteristic $2$. Then the associated bilinear form $\mathfrak{b}(v, w) = \mathfrak{Q}(v + w) - \mathfrak{Q}(v) - \mathfrak{Q}(w)$ of *Quadratic Forms and Polarisation* is alternating, $\mathfrak{b}(v, v) = 0$ for every $v$; and two quadratic forms with the same associated form need not be isometric.
 
-**Proof.** In characteristic $2$, $b(v, v) = q(2v) - 2q(v) = q(0) - 0 = 0$. For the second assertion take $F = \mathbb{F}_2$ and the two forms on $\mathbb{F}_2^2$
+**Proof.** In characteristic $2$, $\mathfrak{b}(v, v) = \mathfrak{Q}(2v) - 2q(v) = \mathfrak{Q}(0) - 0 = 0$. For the second assertion take $F = \mathbb{F}_2$ and the two forms on $\mathbb{F}_2^2$
 
 $$
 q_1(x, y) = xy, \qquad q_2(x, y) = x^2 + xy + y^2.
@@ -256,7 +256,7 @@ $$
 
 **Proof.** The form $q_1 \perp r$ is $(x, y) \mapsto y^2$ and the form $q_2 \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_2 \perp r)(T(x, y)) = y^2 = (q_1 \perp r)(x, y)$; thus $T$ is an isometry $q_1 \perp r \to q_2 \perp r$. On the other hand $q_1(1) = 0 \neq 1 = q_2(1)$, so $q_1$ and $q_2$ are not isometric.
 
-The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $q(1) - q(1) - q(0) = 0$, so the example does not test the theorem on the forms the theory is built on. Two independent changes repair the theory: the invariant that replaces the discriminant takes its values in a different group, and the chain equivalence survives although the extension theorem and cancellation do not.
+The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $\mathfrak{Q}(1) - \mathfrak{Q}(1) - \mathfrak{Q}(0) = 0$, so the example does not test the theorem on the forms the theory is built on. Two independent changes repair the theory: the invariant that replaces the discriminant takes its values in a different group, and the chain equivalence survives although the extension theorem and cancellation do not.
 
 ### The Invariant in Characteristic Two
 
@@ -291,9 +291,9 @@ There is no hypothesis on the field, in contrast with the classification theorem
 
 Over a field every submodule is a direct summand, and the proofs above use this at several points, through the decomposition $V = W \perp W^\perp$ of a non-degenerate subspace. Over a general commutative ring the corresponding statement requires an additional hypothesis on the form, and the classical theorems take the following shape.
 
-**Definition.** A quadratic form $q$ on a free $R$-module $V$ is **Witt** if every submodule $U \subseteq V$ on which $q$ is non-degenerate, in the sense that the induced map $U \to U^*$ is an isomorphism, is a direct summand of $V$ with $V = U \perp U^\perp$.
+**Definition.** A quadratic form $\mathfrak{Q}$ on a free $R$-module $V$ is **Witt** if every submodule $U \subseteq V$ on which $q$ is non-degenerate, in the sense that the induced map $U \to U^*$ is an isomorphism, is a direct summand of $V$ with $V = U \perp U^\perp$.
 
-**Theorem (Witt's extension theorem over a ring, standard).** Let $R$ be a commutative ring in which $2$ is invertible, let $q$ be a Witt quadratic form on a free $R$-module $V$ of finite rank, and let $\sigma : W \to V$ be a linear map from a submodule $W$ that is an isometry onto its image in the sense that $q(\sigma w) = q(w)$ and $B(\sigma u, \sigma v) = B(u, v)$ for all $u, v \in W$, with $\sigma(W)$ a direct summand. Then $\sigma$ extends to an isometry of $(V, q)$.
+**Theorem (Witt's extension theorem over a ring, standard).** Let $R$ be a commutative ring in which $2$ is invertible, let $q$ be a Witt quadratic form on a free $R$-module $V$ of finite rank, and let $\sigma : W \to V$ be a linear map from a submodule $W$ that is an isometry onto its image in the sense that $\mathfrak{Q}(\sigma w) = \mathfrak{Q}(w)$ and $B(\sigma u, \sigma v) = B(u, v)$ for all $u, v \in W$, with $\sigma(W)$ a direct summand. Then $\sigma$ extends to an isometry of $(V, \mathfrak{Q})$.
 
 **Proof.** The proof is the same induction as over a field. The Witt condition supplies the decomposition $V = W \perp W^\perp$ that the field proof obtains from finite-dimensional linear algebra, and the equal-norm lemma is proved by the same reflection formula, which needs only that $q$ of the relevant vector be invertible.
 
@@ -303,7 +303,7 @@ These statements are the content of the theory of quadratic forms over rings; th
 
 ## Summary
 
-A **hyperbolic plane** is a two-dimensional space with a basis $e, f$ satisfying $q(e) = q(f) = 0$ and $B(e, f) = 1$; it is non-degenerate, has Gram determinant $-1$, and is isometric to $\langle 1, -1\rangle$ over a field of characteristic not $2$. Every isotropic line in a non-degenerate space lies in a hyperbolic plane.
+A **hyperbolic plane** is a two-dimensional space with a basis $e, f$ satisfying $\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0$ and $B(e, f) = 1$; it is non-degenerate, has Gram determinant $-1$, and is isometric to $\langle 1, -1\rangle$ over a field of characteristic not $2$. Every isotropic line in a non-degenerate space lies in a hyperbolic plane.
 
 **Witt's extension theorem** states that for a non-degenerate quadratic space over a field of characteristic not $2$, every isometry $\sigma : W \to V$ from a subspace into the space extends to an isometry of $V$. The proof reduces to a non-degenerate $W$, where $V = W \perp W^\perp$ and the extension is assembled from the isometry on $W$ and one on the complements; the general case uses the equal-norm lemma and an enlargement of a totally isotropic subspace. Consequences: isometric subspaces have isometric orthogonal complements, and isometries of subspaces are always completable.
 
@@ -315,7 +315,7 @@ The **chain equivalence**, Witt's *Kettensatz*, is the statement that two isomet
 
 The decomposition theorem carries the classification of forms over the classical fields. Over $\mathbb{R}$ a non-degenerate form is determined by its signature, with index $\min(p, r)$ and anisotropic part of dimension $|p - r|$. Over an algebraically closed field the index is $\lfloor n/2\rfloor$ and the anisotropic part has dimension $0$ or $1$. Over a finite field $\mathbb{F}_q$ of odd characteristic every non-degenerate binary form represents every element, by a counting argument, so every non-degenerate form of dimension at least $3$ is isotropic; a non-degenerate form is then determined by its dimension and its **discriminant** $\det G \bmod (\mathbb{F}_q^*)^2$, giving exactly two isometry classes in each dimension, of indices $\lfloor n/2\rfloor$ and, in even dimension, $\lfloor n/2\rfloor - 1$, the two odd-dimensional classes sharing the index $\lfloor n/2\rfloor$ and differing in discriminant. Over $\mathbb{Q}$ the dimension and discriminant no longer suffice, and the classification requires the invariants at all completions. The decomposition is nevertheless explicit form by form: $\langle 1,1,-2\rangle = H \perp \langle 2\rangle$ with hyperbolic pair $(1,1,1)$, $\tfrac{1}{2}(1,-1,-1)$ and complement spanned by $(0,2,1)$, and $\langle 1,1,-d\rangle$ is isotropic exactly when $d$ is a sum of two squares, so that $\langle 1,1,-2\rangle$ has index $1$ while the form $\langle 1,3,-6\rangle$, of the same dimension and determinant class, is anisotropic.
 
-In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - q(w)$ is alternating, $b(v, v) = 0$ for all $v$; quadratic forms are not determined by their associated forms, as the forms $xy$ and $x^2 + xy + y^2$ over $\mathbb{F}_2$ show, and cancellation fails as stated, as the forms $0$ and $x^2$ with the common summand $x^2$ show. The discriminant, a square class in $F^\times/(F^\times)^2$ in characteristic not $2$, is replaced by the **Arf invariant**, a class in the additive quotient $F/\wp(F)$ with $\wp(F) = \{\alpha^2 + \alpha : \alpha \in F\}$, which for the binary form $[a, b] : (x, y) \mapsto ax^2 + xy + by^2$ is the class of $ab$; over a finite field the dimension and the Arf invariant together classify. The extension theorem and cancellation fail as stated, but the chain equivalence does not: two isometric standard forms are connected by the four moves of Revoy, with no hypothesis on the field, and each of the four moves preserves the Arf invariant.
+In characteristic $2$ the associated bilinear form $\mathfrak{b}(v, w) = \mathfrak{Q}(v + w) - \mathfrak{Q}(v) - \mathfrak{Q}(w)$ is alternating, $\mathfrak{b}(v, v) = 0$ for all $v$; quadratic forms are not determined by their associated forms, as the forms $xy$ and $x^2 + xy + y^2$ over $\mathbb{F}_2$ show, and cancellation fails as stated, as the forms $0$ and $x^2$ with the common summand $x^2$ show. The discriminant, a square class in $F^\times/(F^\times)^2$ in characteristic not $2$, is replaced by the **Arf invariant**, a class in the additive quotient $F/\wp(F)$ with $\wp(F) = \{\alpha^2 + \alpha : \alpha \in F\}$, which for the binary form $[a, b] : (x, y) \mapsto ax^2 + xy + by^2$ is the class of $ab$; over a finite field the dimension and the Arf invariant together classify. The extension theorem and cancellation fail as stated, but the chain equivalence does not: two isometric standard forms are connected by the four moves of Revoy, with no hypothesis on the field, and each of the four moves preserves the Arf invariant.
 
 ## Summary of Notation
 
@@ -324,9 +324,9 @@ In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - 
 | $F$ | Field of characteristic not $2$ unless stated |
 | $V$, $W$ | Finite-dimensional $F$-spaces |
 | $q$ | Non-degenerate quadratic form |
-| $B$ | Polar form of $q$, $q(v) = B(v, v)$ |
-| $b = q(v + w) - q(v) - q(w)$ | Associated bilinear form, defined without dividing by $2$ |
-| $H$ | Hyperbolic plane, basis $e, f$ with $q(e) = q(f) = 0$, $B(e, f) = 1$ |
+| $B$ | Polar form of $q$, $\mathfrak{Q}(v) = B(v, v)$ |
+| $b = \mathfrak{Q}(v + w) - \mathfrak{Q}(v) - \mathfrak{Q}(w)$ | Associated bilinear form, defined without dividing by $2$ |
+| $H$ | Hyperbolic plane, basis $e, f$ with $\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0$, $B(e, f) = 1$ |
 | $\langle a_1, \dots, a_n\rangle$ | Diagonal form $\sum a_i x_i^2$ |
 | $\perp$ | Orthogonal direct sum |
 | $\cong$ | Isometry of quadratic spaces |
@@ -338,7 +338,7 @@ In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - 
 | Witt form | Form for which every non-degenerate submodule splits off |
 | $V_0$ | Anisotropic part of $V$ |
 | $mH$ | Orthogonal sum of $m$ hyperbolic planes |
-| $\operatorname{O}(V, q)$ | Orthogonal group |
+| $\operatorname{O}(V, \mathfrak{Q})$ | Orthogonal group |
 | $\mathbb{F}_q$ | Finite field with $q$ elements, $q$ odd |
 | $d$ | Generator of $\mathbb{F}_q^*$ modulo squares; also $\langle 1,1,-d\rangle$ over $\mathbb{Q}$ |
 | $\det G$ | Discriminant of a form, taken modulo squares |

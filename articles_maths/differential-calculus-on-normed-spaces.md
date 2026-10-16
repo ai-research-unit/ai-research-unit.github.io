@@ -37,7 +37,7 @@ $$
 
 identifies a $k$-linear map with the linear map obtained by fixing the first argument.
 
-*Proof.* Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $B(X_1,\cdot)$ iterated, by *Normed and Banach Spaces*.
+*Proof.* Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $\langle X_1,\cdot\rangle$ iterated, by *Normed and Banach Spaces*.
 
 **Definition.** When $X_1=\cdots=X_k=X$, the **symmetrisation** of $A \in \mathcal L^k(X;Y)$ is
 
@@ -141,7 +141,7 @@ Conversely, if the partial derivatives exist and are continuous on a neighbourho
 
 ### The Mean Value Inequality
 
-The mean value theorem of the real calculus has no direct vector-valued analogue: the function $f(t)=e^{it}$ on $[0,2\pi]$ satisfies $f(2\pi)-f(0)=0$ while $f'$ never vanishes. What survives is an inequality.
+The mean value theorem of the real calculus has no direct vector-valued analogue: the function $f(t)=\exp(it)$ on $[0,2\pi]$ satisfies $f(2\pi)-f(0)=0$ while $f'$ never vanishes. What survives is an inequality.
 
 **Theorem (mean value inequality).** Let $U$ be convex, let $f:U \to Y$ be continuous on $U$ and differentiable on the interior, and suppose $\|Df(z)\|\le M$ for all $z$ in the interior. Then
 
@@ -251,10 +251,10 @@ with $q=g(y+k)-g(y)$ shows that $g$ is differentiable with the stated derivative
 
 **Corollary (local structure).** With the hypotheses of the theorem, $f$ is a local homeomorphism at $x_0$: it maps some neighbourhood of $x_0$ homeomorphically onto a neighbourhood of $f(x_0)$, and it is an open map near $x_0$. In particular the image of an open set under such an $f$ is open.
 
-**Example (local does not imply global).** The map $f:\mathbb{R}^2 \to \mathbb{R}^2$, $f(x,y)=(e^x\cos y,e^x\sin y)$, has Jacobian
+**Example (local does not imply global).** The map $f:\mathbb{R}^2 \to \mathbb{R}^2$, $f(x,y)=(\exp(x)\cos y,\exp(x)\sin y)$, has Jacobian
 
 $$
-J_f(x,y)=\begin{pmatrix}e^x\cos y & -e^x\sin y\\ e^x\sin y & e^x\cos y\end{pmatrix}, \qquad \det J_f(x,y)=e^{2x}>0,
+J_f(x,y)=\begin{pmatrix}\exp(x)\cos y & -\exp(x)\sin y\\ \exp(x)\sin y & \exp(x)\cos y\end{pmatrix}, \qquad \det J_f(x,y)=\exp(2x)>0,
 $$
 
 so $Df(x,y)$ is invertible at every point and the theorem gives a local inverse everywhere; but $f$ is not injective, since $f(x,y+2\pi)=f(x,y)$, so no global inverse exists. The theorem is local for a reason.

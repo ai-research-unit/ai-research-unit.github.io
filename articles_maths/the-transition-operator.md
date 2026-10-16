@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Markov process is described by its transition operator, the family $\{P_t\}_{t\ge0}$ whose element $P_t$ sends the state at one moment to the law of the state $t$ units later: on functions $P_tf(x)=\mathbb E_x[f(X_t)]$ and on measures $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$. The family carries the structure of a semigroup, $P_0=I$ and $P_{s+t}=P_sP_t$, and the semigroup is the whole process; the local description of the process is its **generator**, the operator $L=\lim_{t\to0}(P_t-I)/t$, and the passage between the two is the content of this article. The generator is the derivative of the semigroup at the origin, the semigroup is recovered from the generator by $P_t=e^{tL}$ where the exponential is defined, and the resolvent $(\lambda-L)^{-1}$ is the Laplace transform of the semigroup. The article states the semigroup law, the Feller regularity that makes the theory work, the definition and the maximal domain of the generator, the resolvent identity, the Hille–Yosida characterisation, the Kolmogorov forward and backward equations, and the examples that fix the meaning: the Poisson process, whose generator is a difference operator, and the Brownian motion, whose generator is one half of the Laplacian.
+A Markov process is described by its transition operator, the family $\{P_t\}_{t\ge0}$ whose element $P_t$ sends the state at one moment to the law of the state $t$ units later: on functions $P_tf(x)=\mathbb E_x[f(X_t)]$ and on measures $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$. The family carries the structure of a semigroup, $P_0=I$ and $P_{s+t}=P_sP_t$, and the semigroup is the whole process; the local description of the process is its **generator**, the operator $L=\lim_{t\to0}(P_t-I)/t$, and the passage between the two is the content of this article. The generator is the derivative of the semigroup at the origin, the semigroup is recovered from the generator by $P_t=\exp(tL)$ where the exponential is defined, and the resolvent $(\lambda-L)^{-1}$ is the Laplace transform of the semigroup. The article states the semigroup law, the Feller regularity that makes the theory work, the definition and the maximal domain of the generator, the resolvent identity, the Hille–Yosida characterisation, the Kolmogorov forward and backward equations, and the examples that fix the meaning: the Poisson process, whose generator is a difference operator, and the Brownian motion, whose generator is one half of the Laplacian.
 
 The chain theory is fixed elsewhere. The discrete semigroup $\{P^n\}$ and the Markov operator $P=P_1$ of a chain are *The Markov Operator*, the preceding article of this category, and the semigroup statements there are the case of integer times; the transition semigroup, its generator, the Kolmogorov equations, the Hille–Yosida theorem and the martingale problem are *Markov Chains and Processes*, written, and are quoted here rather than proved; the heat semigroup, the Brownian motion and its generator $\frac12\Delta$ are *Brownian Motion and Stochastic Calculus*, written; the semigroups of operators on a Banach space and the $C_0$ theory are *Operator Algebras*; the spectral theory used in the examples is *Banach and Hilbert Spaces*; the invariant measures and the ergodicity of the semigroup are *Ergodic Theory*; and the adjoint semigroup and the time reversal are *The Adjoint of the Transition Operator*, later in this category. No physics is invoked.
 
@@ -50,7 +50,7 @@ with domain $\mathcal D(L)$ the set of $f\in C_0(E)$ for which the limit exists 
 
 **Definition.** For $\lambda>0$ the **resolvent** of the semigroup is the bounded operator
 $$
-R_\lambda f=\int_0^\infty e^{-\lambda t}P_tf\,dt .
+R_\lambda f=\int_0^\infty \exp(-\lambda t)P_tf\,dt .
 $$
 
 **Theorem (resolvent identity).** For $\lambda,\mu>0$,
@@ -59,13 +59,13 @@ R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
-*Proof.* The resolvent identity is the algebra of $\int_0^\infty e^{-\lambda t}P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial_t(P_tf)=-e^{-\lambda t}\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.
+*Proof.* The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial_t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.
 
 ### The Hille–Yosida characterisation
 
 **Theorem (Hille–Yosida).** A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative, and the range of $\lambda-L$ is dense for some, equivalently every, $\lambda>0$. Equivalently, $\lambda-L$ is invertible with $\|\lambda R_\lambda\|\le1$ for every $\lambda>0$.
 
-*Proof.* The necessity is the contraction property of the semigroup written through the resolvent; the sufficiency is the construction of the semigroup as the strong limit of the Yosida approximations $P_t=\lim_n e^{tLnR_n}$, by the exponential formula. The theorem is *Markov Chains and Processes*, and it is the functional-analytic characterisation that makes the generator an equivalent description of the process.
+*Proof.* The necessity is the contraction property of the semigroup written through the resolvent; the sufficiency is the construction of the semigroup as the strong limit of the Yosida approximations $P_t=\lim_n \exp(tLnR_n)$, by the exponential formula. The theorem is *Markov Chains and Processes*, and it is the functional-analytic characterisation that makes the generator an equivalent description of the process.
 
 ## The Kolmogorov Equations and the Discrete Case
 
@@ -73,9 +73,9 @@ and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
 **Theorem (Kolmogorov equations).** Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the **backward equation**
 $$
-\partial_tu=Lu,\qquad u(0,x)=f(x),
+\partial_t u=Lu,\qquad u(0,x)=f(x),
 $$
-and the transition kernels solve the **forward equation** $\partial_t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=e^{tL}$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.
+and the transition kernels solve the **forward equation** $\partial_t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.
 
 *Proof.* The backward equation is the semigroup law differentiated at $t=0$ in the space variable; the forward equation is the same statement read on the measures, where the generator acts as the transpose $L^*$ on the predual. The exponential formula is the Hille–Yosida approximation.
 
@@ -86,7 +86,7 @@ $$
 q_{xy}=\lim_{t\to0}\frac{p_t(x,y)-\delta_{xy}}{t},\qquad q_{xy}\ge0\ (x\ne y),\qquad \sum_y q_{xy}=0 .
 $$
 
-**Theorem.** The $Q$-matrix acts on finitely supported functions by $Lf(x)=\sum_y q_{xy}f(y)$, and on a finite state space the semigroup is the matrix exponential $P_t=e^{tQ}$.
+**Theorem.** The $Q$-matrix acts on finitely supported functions by $Lf(x)=\sum_y q_{xy}f(y)$, and on a finite state space the semigroup is the matrix exponential $P_t=\exp(tQ)$.
 
 *Proof.* The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial_tP_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.
 
@@ -104,7 +104,7 @@ $$
 
 ## Worked Examples
 
-**Example (the Poisson process).** Let $X_t$ count the arrivals of rate $\lambda>0$: the increments are independent and $X_{t+s}-X_s\sim\mathrm{Pois}(\lambda t)$. The semigroup is $P_tf(n)=\sum_{k\ge0}e^{-\lambda t}(\lambda t)^kf(n+k)/k!$, and the generator is the difference operator
+**Example (the Poisson process).** Let $X_t$ count the arrivals of rate $\lambda>0$: the increments are independent and $X_{t+s}-X_s\sim\mathrm{Pois}(\lambda t)$. The semigroup is $P_tf(n)=\sum_{k\ge0}\exp(-\lambda t)(\lambda t)^kf(n+k)/k!$, and the generator is the difference operator
 $$
 Lf(n)=\lambda\bigl(f(n+1)-f(n)\bigr),
 $$
@@ -114,13 +114,13 @@ R_\mu f(n)=\frac{1}{\mu+\lambda}\sum_{k\ge0}\Bigl(\frac{\lambda}{\mu+\lambda}\Bi
 $$
 and the semigroup has no invariant probability, the process drifting to infinity.
 
-**Example (Brownian motion and the heat semigroup).** For the standard Brownian motion on $\mathbb R^d$ the semigroup is the **heat semigroup** $P_tf(x)=\int_{\mathbb R^d}(2\pi t)^{-d/2}e^{-|x-y|^2/2t}f(y)\,dy$, with the Fourier multiplier $\widehat{P_tf}(\xi)=e^{-t|\xi|^2/2}\hat f(\xi)$ and the generator
+**Example (Brownian motion and the heat semigroup).** For the standard Brownian motion on $\mathbb R^d$ the semigroup is the **heat semigroup** $P_tf(x)=\int_{\mathbb R^d}(2\pi t)^{-d/2}\exp(-|x-y|^2/2t)f(y)\,dy$, with the Fourier multiplier $\widehat{P_tf}(\xi)=\exp(-t|\xi|^2/2)(\mathcal F f)(\xi)$ and the generator
 $$
 L=\tfrac12\Delta,
 $$
 the Laplacian being *Brownian Motion and Stochastic Calculus*, written; the semigroup is self-adjoint on $L^2(\mathbb R^d)$ and has no invariant probability, since Lebesgue measure is only invariant up to the normalisation.
 
-**Example (the Ornstein–Uhlenbeck semigroup).** For $dX_t=-\theta X_t\,dt+\sigma\,dW_t$ with $\theta,\sigma>0$ the semigroup is $P_tf(x)=\mathbb E[f(e^{-\theta t}x+\sigma\int_0^te^{-\theta(t-s)}dW_s)]$, the generator is
+**Example (the Ornstein–Uhlenbeck semigroup).** For $dX_t=-\theta X_t\,dt+\sigma\,dW_t$ with $\theta,\sigma>0$ the semigroup is $P_tf(x)=\mathbb E[f(\exp(-\theta t)x+\sigma\int_0^t\exp(-\theta(t-s))dW_s)]$, the generator is
 $$
 L=\tfrac{\sigma^2}{2}\frac{d^2}{dx^2}-\theta x\frac{d}{dx},
 $$
@@ -134,7 +134,7 @@ The transition operator degenerates in four configurations. First, the generator
 
 ## Summary
 
-A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0=I$ and $P_{s+t}=P_sP_t$, acting by $P_tf(x)=\mathbb E_x[f(X_t)]$ and $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$; it is Feller when it preserves $C_0(E)$ and is strongly continuous at the origin, and then its generator $L=\lim_{t\to0}(P_t-I)/t$ is closed and densely defined and determines the semigroup. The resolvent $R_\lambda=\int_0^\infty e^{-\lambda t}P_t\,dt$ satisfies the resolvent identity and inverts $\lambda-L$, and the Hille–Yosida theorem characterises the generators of Feller semigroups by density, dissipativity and the range condition. The Kolmogorov backward and forward equations are the differentiated forms of the semigroup law, reducing on a finite state space to $P_t=e^{tL}$ and on a countable state space to the $Q$-matrix exponential. The invariant measures are characterised by $\pi(Lf)=0$ on a core, they are the fixed vectors of $\pi P_t=\pi$, and the reversible case is the self-adjoint one in which the spectral gap of the generator gives the exponential rate. The Poisson process, the Brownian motion with the heat semigroup and the generator $\frac12\Delta$, the Ornstein–Uhlenbeck semigroup and the birth–death chain are the standard examples; the adjoint semigroup is *The Adjoint of the Transition Operator*, later in this category.
+A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0=I$ and $P_{s+t}=P_sP_t$, acting by $P_tf(x)=\mathbb E_x[f(X_t)]$ and $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$; it is Feller when it preserves $C_0(E)$ and is strongly continuous at the origin, and then its generator $L=\lim_{t\to0}(P_t-I)/t$ is closed and densely defined and determines the semigroup. The resolvent $R_\lambda=\int_0^\infty \exp(-\lambda t)P_t\,dt$ satisfies the resolvent identity and inverts $\lambda-L$, and the Hille–Yosida theorem characterises the generators of Feller semigroups by density, dissipativity and the range condition. The Kolmogorov backward and forward equations are the differentiated forms of the semigroup law, reducing on a finite state space to $P_t=\exp(tL)$ and on a countable state space to the $Q$-matrix exponential. The invariant measures are characterised by $\pi(Lf)=0$ on a core, they are the fixed vectors of $\pi P_t=\pi$, and the reversible case is the self-adjoint one in which the spectral gap of the generator gives the exponential rate. The Poisson process, the Brownian motion with the heat semigroup and the generator $\frac12\Delta$, the Ornstein–Uhlenbeck semigroup and the birth–death chain are the standard examples; the adjoint semigroup is *The Adjoint of the Transition Operator*, later in this category.
 
 ## Summary of Notation
 
@@ -146,11 +146,11 @@ A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0
 | $P_0=I$, $P_{s+t}=P_sP_t$ | the semigroup law |
 | $C_0(E)$, Feller | continuous functions vanishing at infinity; preservation and continuity |
 | $Lf=\lim_{t\to0}(P_tf-f)/t$ | generator, domain $\mathcal D(L)$ |
-| $R_\lambda=(\lambda-L)^{-1}=\int_0^\infty e^{-\lambda t}P_t\,dt$ | resolvent |
-| $P_t=e^{tL}$, $\partial_tu=Lu$ | exponential formula and Kolmogorov backward equation |
+| $R_\lambda=(\lambda-L)^{-1}=\int_0^\infty \exp(-\lambda t)P_t\,dt$ | resolvent |
+| $P_t=\exp(tL)$, $\partial_t u=Lu$ | exponential formula and Kolmogorov backward equation |
 | $q_{xy}$, $Q$ | generator matrix and its action on finitely supported functions |
 | $\pi P_t=\pi$, $\pi(Lf)=0$ | invariant measure, its generator characterisation |
-| $\widehat{P_tf}(\xi)=e^{-t|\xi|^2/2}\hat f$ | heat semigroup on $\mathbb R^d$ |
+| $\widehat{P_tf}(\xi)=\exp(-t|\xi|^2/2)\mathcal F f$ | heat semigroup on $\mathbb R^d$ |
 | $L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ | Brownian and Ornstein–Uhlenbeck generators |
 
 ## Further Reading

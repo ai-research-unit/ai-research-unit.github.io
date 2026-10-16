@@ -7,7 +7,7 @@ This article develops the integration theory of quaternion-valued functions of a
 
 The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its quaternion norm are taken from *Quaternion Algebra*; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from *Quaternion Analysis*. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of *Hypercomplex Integration* and *Regularity and the Cauchy–Riemann Operator*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. Its coordinates are $q_0, q_1, q_2, q_3$, and $\partial_\mu = \partial/\partial q_\mu$. The **Cauchy–Riemann operator** is
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. Its coordinates are $q_0, q_1, q_2, q_3$, and $\partial_\mu = \partial/\partial q_\mu$. The **Cauchy–Riemann operator** is
 
 $$
 D = \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
@@ -38,7 +38,7 @@ The definition is the componentwise one, so the integral inherits the properties
 **Theorem (linearity).** For $a, b \in \mathbb{H}$ constant and $f, g$ integrable,
 
 $$
-\int_\Omega (a f + g b) \, dV = a \int_\Omega f \, dV + \left(\int_\Omega g \, dV\right) b .
+\int_\Omega (a f + g b) \, dV = a \int_\Omega f \, dV + \left(\int_\Omega g \, dV\right) b.
 $$
 
 **Proof.** Multiplication by a constant quaternion is a real-linear map of $\mathbb{H}$, and it is applied after the componentwise integration. The left multiple $af$ has components given by the real matrix of left multiplication by $a$ acting on the components of $f$, and integration is linear in these; the same holds on the right for $b$.
@@ -46,7 +46,7 @@ $$
 **Theorem (additivity).** If $\Omega = \Omega_1 \cup \Omega_2$ with $\Omega_1 \cap \Omega_2$ of measure zero, then
 
 $$
-\int_\Omega f \, dV = \int_{\Omega_1} f \, dV + \int_{\Omega_2} f \, dV .
+\int_\Omega f \, dV = \int_{\Omega_1} f \, dV + \int_{\Omega_2} f \, dV.
 $$
 
 **Proof.** Apply the additivity of the Lebesgue integral to each component.
@@ -70,7 +70,7 @@ The integral along a curve in $\mathbb{H}$ was introduced in *Quaternion Analysi
 **Definition.** Let $\gamma : [a, b] \to \mathbb{H}$ be a piecewise continuously differentiable path and let $f$ be continuous on a neighbourhood of its image. The **left path integral** and the **right path integral** of $f$ along $\gamma$ are
 
 $$
-\int_\gamma f \, dq = \int_a^b f(\gamma(t)) \gamma'(t) \, dt, \qquad \int_\gamma dq \, f = \int_a^b \gamma'(t) f(\gamma(t)) \, dt .
+\int_\gamma f \, dq = \int_a^b f(\gamma(t)) \gamma'(t) \, dt, \qquad \int_\gamma dq \, f = \int_a^b \gamma'(t) f(\gamma(t)) \, dt.
 $$
 
 **Theorem.** Both path integrals are additive under concatenation of paths, change sign under reversal of the path, and satisfy the estimate
@@ -90,7 +90,7 @@ For a commutative algebra the two orders coincide; here they do not, and the ord
 **Definition.** Let $\Omega$ be a domain with smooth boundary, with outward unit normal $n(w) = (n_0, n_1, n_2, n_3)$ at $w \in \partial\Omega$. The **conormal element** is the quaternion
 
 $$
-\nu(w) = n_0(w) + n_1(w) e_1 + n_2(w) e_2 + n_3(w) e_3 = \sum_{\mu=0}^{3} n_\mu(w) e_\mu .
+\nu(w) = n_0(w) + n_1(w) e_1 + n_2(w) e_2 + n_3(w) e_3 = \sum_{\mu=0}^{3} n_\mu(w) e_\mu.
 $$
 
 It is a unit vector of $\mathbb{H}$, since $|\nu|^2 = \sum_\mu n_\mu^2 = 1$, and its conjugate is $\bar{\nu} = n_0 - n_1 e_1 - n_2 e_2 - n_3 e_3$.
@@ -136,7 +136,7 @@ the Laplacian of $\mathbb{R}^4$.
 **Definition.** The **symbol** of $D$ at a covector $\xi = (\xi_0, \xi_1, \xi_2, \xi_3)$ is left multiplication by
 
 $$
-\sigma_D(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3 .
+\sigma_D(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3.
 $$
 
 The operator is **elliptic** if $\sigma_D(\xi)$ is invertible for every $\xi \neq 0$.
@@ -162,13 +162,13 @@ so $f$ is left $D$-regular if and only if $\bar{f}$ is right $\bar{D}$-regular, 
 **Example.** The function $f(\tilde q) = e_1\tilde{q}^{\natural}$ is left regular but not right regular. On the one hand
 
 $$
-Df = \sum_{\mu=0}^{3} e_\mu\, \partial_\mu(e_1\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} e_\mu e_1e_\mu^{\natural} = e_1 + e_1 - e_1 - e_1 = 0 ,
+Df = \sum_{\mu=0}^{3} e_\mu\, \partial_\mu(e_1\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} e_\mu e_1e_\mu^{\natural} = e_1 + e_1 - e_1 - e_1 = 0,
 $$
 
 since $\partial_\mu\tilde{q}^{\natural} = e_\mu^{\natural}$; on the other hand
 
 $$
-fD = \sum_{\mu=0}^{3} \partial_\mu(e_1\tilde{q}^{\natural})\, e_\mu = \sum_{\mu=0}^{3} e_1e_\mu^{\natural} e_\mu = e_1\sum_{\mu=0}^{3}|e_\mu^{\natural}|^2 = 4e_1 \neq 0 .
+fD = \sum_{\mu=0}^{3} \partial_\mu(e_1\tilde{q}^{\natural})\, e_\mu = \sum_{\mu=0}^{3} e_1e_\mu^{\natural} e_\mu = e_1\sum_{\mu=0}^{3}|e_\mu^{\natural}|^2 = 4e_1 \neq 0.
 $$
 
 So $e_1\tilde{q}^{\natural}$ lies in the left-regular class and not in the right-regular class, and the two-sided functions are the intersection of the two.
@@ -214,7 +214,7 @@ Thus $D$ is the divergence of the quaternion-valued field with components $e_\mu
 **Theorem (divergence theorem).** Let $\Omega$ be a bounded domain with smooth boundary and let $f$ be $C^1$ on $\bar{\Omega}$. Then
 
 $$
-\int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS .
+\int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS.
 $$
 
 **Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial_\mu(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.
@@ -222,7 +222,7 @@ $$
 **Corollary (conjugate divergence theorem).** Under the same hypotheses,
 
 $$
-\int_\Omega \bar{D} f \, dV = \int_{\partial\Omega} \bar{\nu} f \, dS, \qquad \int_\Omega f \bar{D} \, dV = \int_{\partial\Omega} f \bar{\nu} \, dS .
+\int_\Omega \bar{D} f \, dV = \int_{\partial\Omega} \bar{\nu} f \, dS, \qquad \int_\Omega f \bar{D} \, dV = \int_{\partial\Omega} f \bar{\nu} \, dS.
 $$
 
 **Proof.** Replace $e_\mu$ by $e_\mu^{\natural}$ throughout the preceding proof.
@@ -232,7 +232,7 @@ $$
 **Theorem (integration by parts).** Let $\phi$ be real-valued and $C^1$ on $\bar{\Omega}$ and let $f$ be quaternion-valued and $C^1$ on $\bar{\Omega}$. Then
 
 $$
-\int_\Omega \bigl[\,(D\phi)\,f + \phi\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \phi f \, dS .
+\int_\Omega \bigl[\,(D\phi)\,f + \phi\,(Df)\,\bigr] dV = \int_{\partial\Omega} \nu \phi f \, dS.
 $$
 
 Equivalently, $\int_\Omega (D\phi) f \, dV = \int_{\partial\Omega}\nu\phi f\,dS - \int_\Omega \phi\,(Df)\,dV$.
@@ -254,7 +254,7 @@ where $\Delta$ is the Laplacian of $\mathbb{R}^4$ and $\partial/\partial n$ is t
 **Theorem (Cauchy–Goursat).** Let $f$ be left regular and $C^1$ on a bounded domain $\Omega$ with smooth boundary. Then
 
 $$
-\int_{\partial\Omega} \nu f \, dS = 0 .
+\int_{\partial\Omega} \nu f \, dS = 0.
 $$
 
 **Proof.** By the divergence theorem, $\int_{\partial\Omega}\nu f\,dS = \int_\Omega Df\,dV = 0$ because $f$ is left regular.
@@ -270,7 +270,7 @@ The Cauchy–Goursat theorem is a statement about the boundary of a domain in $\
 **Definition.** The **fundamental solution** of the Cauchy–Riemann operator on $\mathbb{H}$ is the function
 
 $$
-E(\tilde q) = \frac{\tilde{q}^{\natural}}{|\tilde q|^4} = \frac{\tilde q^{-1}}{|\tilde q|^2}, \qquad \tilde q \neq 0 .
+E(\tilde q) = \frac{\tilde{q}^{\natural}}{|\tilde q|^4} = \frac{\tilde q^{-1}}{|\tilde q|^2}, \qquad \tilde q \neq 0.
 $$
 
 It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\tilde q)$ for $\lambda > 0$, and it is real-analytic away from the origin.
@@ -354,7 +354,7 @@ $$
 since $E$ is right regular, and its boundary term is $\sum_\mu n_\mu F_\mu = E\nu f$. Hence
 
 $$
-\int_{\Omega_\varepsilon} E(w-\tilde p)\,(Df)(w)\,dV = \int_{\partial\Omega} E(w-\tilde p)\,\nu(w)\,f(w)\,dS - \int_{\partial B(\tilde p,\varepsilon)} E(w-\tilde p)\,\nu(w)\,f(w)\,dS .
+\int_{\Omega_\varepsilon} E(w-\tilde p)\,(Df)(w)\,dV = \int_{\partial\Omega} E(w-\tilde p)\,\nu(w)\,f(w)\,dS - \int_{\partial B(\tilde p,\varepsilon)} E(w-\tilde p)\,\nu(w)\,f(w)\,dS.
 $$
 
 On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(\tilde p)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-\tilde p)(Df)(w)\,dV$; the identity follows.
@@ -425,14 +425,14 @@ $$
 
 **Theorem (Liouville).** Every bounded left regular function on all of $\mathbb{H}$ is constant.
 
-**Proof.** Let $|f| \leq M$ and fix $\tilde p$. The Cauchy integral formula on the sphere $\partial B(\tilde p, r)$ expresses $f(\tilde p)$ as $\frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}K(\tilde p,w)\,dS(w)$ with kernel $K(\tilde q,w) = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\partial_k K(\tilde p,w)\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=\tilde p}\nu f$. On the sphere $|w - \tilde p| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(\tilde p)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(\tilde p) = 0$ for every $k$; since $\tilde p$ was arbitrary, $f$ is constant.
+**Proof.** Let $|f| \leq M$ and fix $\tilde p$. The Cauchy integral formula on the sphere $\partial B(\tilde p, r)$ expresses $f(\tilde p)$ as $\frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\langle\tilde p,w\rangle_{\natural*}\,dS(w)$ with kernel $\langle\tilde q,w\rangle_{\natural*} = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\partial_k \langle\tilde p,w\rangle_{\natural*}\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=\tilde p}\nu f$. On the sphere $|w - \tilde p| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(\tilde p)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(\tilde p) = 0$ for every $k$; since $\tilde p$ was arbitrary, $f$ is constant.
 
 ### The Cauchy Estimates
 
 **Theorem (Cauchy estimates).** Let $f$ be left regular on a ball $B(\tilde p, R)$ with $|f| \leq M$ on the boundary. Then for every multi-index $\alpha$ there is a constant $C_\alpha$, depending only on $\alpha$, with
 
 $$
-\left| \partial^\alpha f(\tilde p) \right| \leq \frac{C_\alpha M}{R^{|\alpha|}} .
+\left| \partial^\alpha f(\tilde p) \right| \leq \frac{C_\alpha M}{R^{|\alpha|}}.
 $$
 
 **Proof.** Differentiate the Cauchy integral formula $|\alpha|$ times with respect to $\tilde q$ under the integral sign. Each differentiation increases the order of the singularity of the kernel by one, so the integrand is bounded by a constant times $R^{-3-|\alpha|}$, and the surface area contributes $2\pi^2 R^3$.
@@ -485,7 +485,7 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $\partial_\mu = \partial/\partial q_\mu$ | Coordinate derivatives, $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ |
 | $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ | Cauchy–Riemann operator |
 | $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 - e_3\partial_3$ | Conjugate operator |

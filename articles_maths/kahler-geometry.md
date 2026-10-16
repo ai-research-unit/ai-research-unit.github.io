@@ -75,13 +75,13 @@ using $i\,dz\wedge d\bar z = 2\,dx\wedge dy$; so the flat metric is Kähler. The
 
 **Remark.** The Kähler potential is the local primitive of the Kähler form and is thus the Kähler analogue of the existence of a symplectic potential $\theta$ with $\omega = -d\theta$; the difference is that the potential is a function rather than a $1$-form, because the Kähler form has the extra type. The equality $\Omega = i\partial\bar\partial\varphi$ is the reason the local theory of Kähler metrics is the theory of a single real function, and the reason the global existence of a potential is obstructed by the cohomology class $[\Omega]$.
 
-**Proposition (Kähler normal coordinates).** Let $(M,J,g)$ be Kähler and let $p \in M$. There are holomorphic coordinates $z$ centred at $p$ with
+**Proposition (Kähler normal coordinates).** Let $(M,J,g)$ be Kähler and let $n \in M$. There are holomorphic coordinates $z$ centred at $n$ with
 
 $$
-g_{i\bar j}(z) = \delta_{ij} + O(|z|^2), \qquad \text{that is} \quad \Omega = \sum_i dx_i\wedge dy_i \text{ at } p .
+g_{i\bar j}(z) = \delta_{ij} + O(|z|^2), \qquad \text{that is} \quad \Omega = \sum_i dx_i\wedge dy_i \text{ at } n .
 $$
 
-**Proof.** Choose holomorphic coordinates and expand the potential about $p$; the terms of first order can be removed by a holomorphic change of coordinates, and the real quadratic part can be brought to the identity by a unitary linear transformation on the coordinates.
+**Proof.** Choose holomorphic coordinates and expand the potential about $n$; the terms of first order can be removed by a holomorphic change of coordinates, and the real quadratic part can be brought to the identity by a unitary linear transformation on the coordinates.
 
 **Remark.** Kähler normal coordinates show that a Kähler manifold has no first-order local invariants: the curvature is genuinely a second-order object, and the curvature is the only local invariant of a Kähler metric. This is the Kähler counterpart of the Darboux theorem of *Symplectic Geometry* and of the existence of normal coordinates for a Riemannian metric, in *Riemannian Geometry*, being written in parallel.
 
@@ -107,7 +107,7 @@ $$
 \int_{\mathbb{CP}^1}\Omega_{FS} = 2\pi,
 $$
 
-so that $[\Omega_{FS}/(2\pi)]$ is a positive generator of $H^2(\mathbb{CP}^n;\mathbb{Z})$; the powers $[\Omega_{FS}]^k/(2\pi)^k$ are the integral generators of $H^{2k}$, and the Hodge numbers are $h^{p,q} = 1$ for $0 \leq p = q \leq n$ and $h^{p,q} = 0$ otherwise. The Fubini–Study metric is the model compact Kähler metric and the quotient of the sphere $S^{2n+1}$ by the Hopf $U(1)$-action of *Contact Geometry*.
+so that $[\Omega_{FS}/(2\pi)]$ is a positive generator of $H^2(\mathbb{CP}^n;\mathbb{Z})$; the powers $[\Omega_{FS}]^k/(2\pi)^k$ are the integral generators of $H^{2k}$, and the Hodge numbers are $h^{n,m} = 1$ for $0 \leq n = m \leq n$ and $h^{n,m} = 0$ otherwise. The Fubini–Study metric is the model compact Kähler metric and the quotient of the sphere $S^{2n+1}$ by the Hopf $U(1)$-action of *Contact Geometry*.
 
 **Example (Hermitian symmetric spaces).** A compact Hermitian symmetric space $G/H$ of a semisimple Lie group carries an invariant Kähler structure, and its Kähler form is integral. The Grassmannians, the quadrics and the complex projective spaces are the classical cases, and the classification of the irreducible ones is that of the Cartan domains. The Lie-theoretic input is that of *Lie Groups* and its companions.
 
@@ -138,10 +138,10 @@ $$
 **Theorem (Hodge decomposition for a compact Kähler manifold).** Let $M$ be a compact Kähler manifold of complex dimension $n$. Then the cohomology of $M$ with complex coefficients decomposes by type,
 
 $$
-H^k(M;\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}(M), \qquad H^{p,q}(M) = \overline{H^{q,p}(M)},
+H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}(M), \qquad H^{n,m}(M) = \overline{H^{m,n}(M)},
 $$
 
-with $H^{p,q}(M) \cong H^{p,q}_{\bar\partial}(M)$, so that $h^{p,q} = h^{q,p}$, and $H^{p,q} = 0$ unless $0 \leq p,q \leq n$. Consequently the Betti numbers satisfy $b_k = \sum_{p+q=k}h^{p,q}$, the odd Betti numbers $b_{2k+1}$ are even, and $b_{2k} \geq 1$ for $0 \leq k \leq n$.
+with $H^{n,m}(M) \cong H^{n,m}_{\bar\partial}(M)$, so that $h^{n,m} = h^{m,n}$, and $H^{n,m} = 0$ unless $0 \leq n,m \leq n$. Consequently the Betti numbers satisfy $b_k = \sum_{n+m=k}h^{n,m}$, the odd Betti numbers $b_{2k+1}$ are even, and $b_{2k} \geq 1$ for $0 \leq k \leq n$.
 
 **Proof sketch.** The analysis: the Hodge theorem for the Laplace operator on a compact manifold identifies de Rham cohomology with the space of harmonic forms, and the equality $\Delta_d = 2\Delta_{\bar\partial}$ of the Kähler identities identifies the harmonic forms with those harmonic for $\Delta_{\bar\partial}$, which are exactly the $\bar\partial$-harmonic representatives of the Dolbeault groups. This identification is the content of the elliptic theory of $\Delta_{\bar\partial}$, and its proof — existence of a parametrix, compactness of the resolvent, the finiteness of the cohomology of an elliptic complex — belongs to Part III, where the measure and the limit are available. The type decomposition follows from $\Delta_d = 2\Delta_{\bar\partial}$ and the fact that $\Delta_{\bar\partial}$ preserves bidegree; conjugation follows from the reality of the Laplace operator; $b_{2k}\geq1$ because $[\Omega]^k \neq 0$, its top power being a nonzero multiple of the volume.
 
@@ -185,7 +185,7 @@ is an isomorphism. Consequently the Betti numbers satisfy $b_k = b_{2n-k}$, and 
 
 **Proof sketch.** The $\mathrm{SL}_2$-representation theory of the previous theorem decomposes $H^\bullet$ into finite-dimensional irreducible summands, and the operator $L^{n-k}$ acts invertibly on the summands contributing to degree $k$: on a highest-weight module the powers of the raising operator are isomorphisms in the range where the degree does not exceed the middle dimension.
 
-**Remark.** The Lefschetz decomposition and the hard Lefschetz theorem are the algebraic shadow of the Kähler class: the class $[\Omega]$ endows the cohomology ring with the structure of a Lefschetz module. Together with the Hodge–Riemann bilinear relations they constitute the **Hodge–Riemann package**, which is the input to the Hodge index theorem and to the theory of polarised Hodge structures. For a complex projective manifold the package holds as well, and the converse question — which integral $(p,p)$-classes are algebraic — is the Hodge conjecture, which lies outside this corpus.
+**Remark.** The Lefschetz decomposition and the hard Lefschetz theorem are the algebraic shadow of the Kähler class: the class $[\Omega]$ endows the cohomology ring with the structure of a Lefschetz module. Together with the Hodge–Riemann bilinear relations they constitute the **Hodge–Riemann package**, which is the input to the Hodge index theorem and to the theory of polarised Hodge structures. For a complex projective manifold the package holds as well, and the converse question — which integral $(n,n)$-classes are algebraic — is the Hodge conjecture, which lies outside this corpus.
 
 ## Ricci Curvature and the Kähler–Einstein Condition
 
@@ -220,7 +220,7 @@ for a constant $\lambda$, in which case the scalar curvature is constant. A Käh
 **Proof sketch.** In a fixed Kähler class, the Kähler metrics are parametrised by their potentials: $g' = g + i\partial\bar\partial\varphi$. The Ricci forms change by $-i\,\partial\bar\partial\log(\det(g'_{i\bar j})/\det(g_{i\bar j}))$, so the condition $\rho'=0$ becomes the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial_i\partial_{\bar j}\varphi\Bigr) = e^{F}\,\det(g_{i\bar j}),
+\det\Bigl(g_{i\bar j} + \partial_i\partial_{\bar j}\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
 $$
 
 for a function $F$ determined by the difference of the Ricci forms. Yau's theorem is the solution of this equation by the continuity method: the a priori estimates $C^0$, $C^1$, $C^2$ and $C^{2,\alpha}$ for the solution give openness and closedness of the set of solvable classes.
@@ -243,7 +243,7 @@ A Kähler manifold is a Hermitian manifold whose fundamental form $\Omega(X,Y)=g
 
 The examples are $\mathbb{C}^n$ and its quotients by lattices, the complex projective space with the Fubini–Study form $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ and $\int_{\mathbb{CP}^1}\Omega_{FS} = 2\pi$, the Hermitian symmetric spaces, the complex submanifolds and products, and the Riemann surfaces, where the condition is vacuous. Kähler normal coordinates make the metric flat to first order, so the curvature is the only local invariant.
 
-On a compact Kähler manifold the Kähler identities give $\Delta_d = 2\Delta_\partial = 2\Delta_{\bar\partial}$, and the Hodge decomposition $H^k(M;\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}$ with $H^{p,q}=\overline{H^{q,p}}$, so the odd Betti numbers are even and $b_{2k}\geq1$; the analytic proofs are deferred to Part III. The Lefschetz operators $L$, $\Lambda$, $H$ form an $\mathrm{SL}_2$-representation on cohomology, giving the Lefschetz decomposition into primitive classes and the hard Lefschetz isomorphism $L^{n-k}:H^k\to H^{2n-k}$.
+On a compact Kähler manifold the Kähler identities give $\Delta_d = 2\Delta_\partial = 2\Delta_{\bar\partial}$, and the Hodge decomposition $H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}$ with $H^{n,m}=\overline{H^{m,n}}$, so the odd Betti numbers are even and $b_{2k}\geq1$; the analytic proofs are deferred to Part III. The Lefschetz operators $L$, $\Lambda$, $H$ form an $\mathrm{SL}_2$-representation on cohomology, giving the Lefschetz decomposition into primitive classes and the hard Lefschetz isomorphism $L^{n-k}:H^k\to H^{2n-k}$.
 
 Finally, the Ricci form $\rho(X,Y)=\mathrm{Ric}(JX,Y)$ is a closed real $(1,1)$-form with $[\rho]=2\pi c_1(M)$, locally $\rho = -i\partial\bar\partial\log\det(g_{i\bar j})$. Kähler–Einstein metrics satisfy $\rho=\lambda\Omega$; Yau's theorem gives a unique Ricci-flat Kähler metric in each Kähler class when $c_1(M)=0$, the Aubin–Yau theorem gives the negative case, and the positive case is governed by $K$-stability. The Ricci-flat case is the doorway.
 
@@ -259,9 +259,9 @@ Finally, the Ricci form $\rho(X,Y)=\mathrm{Ric}(JX,Y)$ is a closed real $(1,1)$-
 | $d\Omega=0$ | The Kähler condition |
 | $\varphi$, $\Omega = i\partial\bar\partial\varphi$ | Kähler potential; unique up to $\varphi\mapsto\varphi+f+\bar f$ |
 | $\Omega_0 = \sum_i dx_i\wedge dy_i$ | Euclidean Kähler form on $\mathbb{C}^n$ |
-| $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ | Fubini–Study form; $\int_{\mathbb{CP}^1}\Omega_{FS}=2\pi$, $h^{p,p}(\mathbb{CP}^n)=1$ |
+| $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ | Fubini–Study form; $\int_{\mathbb{CP}^1}\Omega_{FS}=2\pi$, $h^{n,n}(\mathbb{CP}^n)=1$ |
 | $g_{i\bar j}=\delta_{ij}+O(|z|^2)$ | Kähler normal coordinates |
-| $H^{p,q}(M)$, $h^{p,q}$ | Hodge decomposition and Hodge numbers of a compact Kähler manifold |
+| $H^{n,m}(M)$, $h^{n,m}$ | Hodge decomposition and Hodge numbers of a compact Kähler manifold |
 | $L\alpha=\Omega\wedge\alpha$, $\Lambda=L^*$, $H$ | Lefschetz operators, $H\alpha=(k-n)\alpha$ on $k$-forms; $[L,\Lambda]=H$, $\mathrm{SL}_2$-relations |
 | $P^\bullet=\ker\Lambda$ | Primitive classes; Lefschetz decomposition |
 | $L^{n-k}:H^k\to H^{2n-k}$ | Hard Lefschetz isomorphism |

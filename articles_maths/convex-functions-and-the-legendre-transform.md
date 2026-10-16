@@ -151,7 +151,7 @@ For the indicator $f = \delta_C$ of a nonempty convex set $C$, finite and zero o
 
 ### The Entropy
 
-On $\mathbb{R}$ let $f(x) = e^x$. It is strictly convex and superlinear, $\nabla f = e^x$, and the classical formula gives $f^*(y) = y\log y - y$ for $y>0$, with $f^*(0) = 0$ by continuity and $f^*(y) = +\infty$ for $y<0$. The domain of the conjugate is the positive half-line, the image of the exponential, and the pair exhibits the general fact that the conjugate is determined on the image of the gradient and is $+\infty$ outside it.
+On $\mathbb{R}$ let $f(x) = \exp(x)$. It is strictly convex and superlinear, $\nabla f = \exp(x)$, and the classical formula gives $f^*(y) = y\log y - y$ for $y>0$, with $f^*(0) = 0$ by continuity and $f^*(y) = +\infty$ for $y<0$. The domain of the conjugate is the positive half-line, the image of the exponential, and the pair exhibits the general fact that the conjugate is determined on the image of the gradient and is $+\infty$ outside it.
 
 ## Summary
 

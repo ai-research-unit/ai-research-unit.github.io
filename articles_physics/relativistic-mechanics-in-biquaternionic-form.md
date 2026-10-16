@@ -81,7 +81,7 @@ $$
 \tilde{V}\tilde{V}^{\natural} = \gamma^2\left(-c^2 + \vec v^2\right) = -c^2,
 $$
 
-which is the biquaternion form of the standard relativistic normalization $u^\mu u_\mu = -c^2$. The normalization is the statement that the four-velocity has a **fixed negative norm** determined by the speed of light. It is a **constraint**, not an identity: not every biquaternion satisfies it, only the four-velocities of physical particles.
+which is the biquaternion form of the standard relativistic normalization $v^\mu v_\mu = -c^2$. The normalization is the statement that the four-velocity has a **fixed negative norm** determined by the speed of light. It is a **constraint**, not an identity: not every biquaternion satisfies it, only the four-velocities of physical particles.
 
 ## The Four-Momentum
 
@@ -136,10 +136,10 @@ which is the biquaternion form of the standard orthogonality condition $f^\mu p_
 For a charged particle in an electromagnetic field, the four-force in component form is
 
 $$
-\tilde{F} = i\gamma\frac{q}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma q\left(\vec E + \vec v\times\vec B\right),
+\tilde{F} = i\gamma\frac{ϙ}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
-where $q$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $ict$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma q(\vec E + \vec v\times\vec B)$.
+where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $ict$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma ϙ(\vec E + \vec v\times\vec B)$.
 
 **Note on the biquaternion expression.** The component formula above is standard and unambiguous. The expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{M}_-$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde{F}_{\text{EM}}$ and $\tilde{V}$ is deferred.
 
@@ -266,7 +266,7 @@ which reduces to the Lorentz force law under continuity conditions on the four-c
 
 1. **The Lorentz transformation of four-vectors.** The four-vectors in $\mathbb{M}_-$ transform under the Lorentz group by a **rotor conjugation** involving the boost biquaternion. The precise form of this transformation, and its relation to the standard four-vector transformation, is the subject of the companion article on the Lorentz transformation.
 
-2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{F} = i\gamma q(\vec E\cdot\vec v)/c\,e_0 + \gamma q(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
+2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{F} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_0 + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
 3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde{Q}\,\overline{d\tilde{Q}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form? A later tensor-dynamics formulation (de Haas, arXiv:1401.4470v1) gives one: the Lagrangian density as the trace of the stress–energy tensor, and the conservation law as the general force equation $\partial_\nu T^{\nu\mu} + \partial^\mu L = 0$. It is recorded, with its signs and its cautions, in *The Tensor-Dynamics Reading, and the Question of Extra Terms* above.
 

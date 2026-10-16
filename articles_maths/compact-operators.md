@@ -97,7 +97,7 @@ $$
 
 with $S_1$ the **trace class** and $S_2$ the **Hilbert–Schmidt class**.
 
-*Proof.* The inclusion of the classes is the comparison of $\ell^p$ norms on the singular values; the ideal property follows because the singular values of $ATB$ are dominated by $\|A\|\,\|B\|$ times those of $T$ (a standard majorisation), and $(S_p)^*=S_p$ because $|T^*|$ and $|T|$ are unitarily equivalent and have the same singular values.
+*Proof.* The inclusion of the classes is the comparison of $\ell^{n}$ norms on the singular values; the ideal property follows because the singular values of $ATB$ are dominated by $\|A\|\,\|B\|$ times those of $T$ (a standard majorisation), and $(S_p)^*=S_p$ because $|T^*|$ and $|T|$ are unitarily equivalent and have the same singular values.
 
 **Proposition (norms and Hölder).** $\|\cdot\|_p$ is a norm on $S_p$ making it a Banach space, $\|T\|_\infty=\|T\|$ is the limit of $\|T\|_p$ as $p\to\infty$, and for $\frac1p+\frac1q=\frac1r$,
 
@@ -113,7 +113,7 @@ $$
 
 under which $S_2(H)$ is a Hilbert space.
 
-*Proof.* The triangle inequality for $\|\cdot\|_p$ is the majorisation form of the triangle inequality in $\ell^p$; the limiting statement is immediate from $s_n\to0$; Hölder's inequality for singular values gives the product estimate; the Hilbert–Schmidt inner product is linear in the first argument and conjugate-linear in the second by the properties of the trace.
+*Proof.* The triangle inequality for $\|\cdot\|_p$ is the majorisation form of the triangle inequality in $\ell^{n}$; the limiting statement is immediate from $s_n\to0$; Hölder's inequality for singular values gives the product estimate; the Hilbert–Schmidt inner product is linear in the first argument and conjugate-linear in the second by the properties of the trace.
 
 **Theorem (trace and duality).** For $T\in S_1(H)$ the series $\operatorname{tr}T=\sum_n\langle Te_n,e_n\rangle$ converges absolutely and is independent of the orthonormal basis; $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ for $S\in B(H)$, $T\in S_1(H)$; and the pairing $(S,T)\mapsto\operatorname{tr}(ST)$ identifies
 
@@ -141,7 +141,7 @@ is Hilbert–Schmidt on $L^2(X,\mu)$ with $\|T_k\|_{\mathrm{HS}}=\|k\|_2$ and $T
 
 ### Diagonal Operators
 
-On $\ell^2$ let $D_a e_n=a_n e_n$ with $a\in\ell^\infty$. Then $D_a$ is compact exactly when $a_n\to0$, in which case $s_n(D_a)$ is the non-increasing rearrangement of $|a_n|$, and $D_a\in S_p$ exactly when $(a_n)\in\ell^p$. So $S_1$ is the space of summable diagonals, $S_2$ of square-summable diagonals, and the modulus of a compact diagonal operator realises the absolute value of the symbol.
+On $\ell^2$ let $D_a e_n=a_n e_n$ with $a\in\ell^\infty$. Then $D_a$ is compact exactly when $a_n\to0$, in which case $s_n(D_a)$ is the non-increasing rearrangement of $|a_n|$, and $D_a\in S_p$ exactly when $(a_n)\in\ell^{n}$. So $S_1$ is the space of summable diagonals, $S_2$ of square-summable diagonals, and the modulus of a compact diagonal operator realises the absolute value of the symbol.
 
 ### Finite Rank
 

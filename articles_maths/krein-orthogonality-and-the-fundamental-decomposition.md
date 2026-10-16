@@ -48,7 +48,7 @@ In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and 
 
 **Theorem (the maximal positive definite subspaces).** Over $\mathbb{C}$ the maximal positive definite subspaces are the lines $\mathbb{C}(e_0+\tilde{T})$ with $\tilde{T}\in\mathbb{V}_{\mathbb{B}}$ and $\|\tilde{T}\|_E<1$, and over $\mathbb{R}$ they are the real planes of the same form. The map $\tilde{T}\mapsto\mathbb{C}(e_0+\tilde{T})$ is a bijection onto the set of maximal positive definite subspaces, so that set is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$.
 
-**Proof.** $\langle e_0+\tilde{T},e_0+\tilde{T}\rangle_{\natural*}=1-\|\tilde{T}\|_E^{2}$ by the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$, so the line is positive definite exactly for $\|\tilde{T}\|_E<1$ and is maximal by the dimension bound; conversely a maximal positive definite line has a vector with $\tilde{Q}_0\neq0$, since it meets $\mathbb{V}_{\mathbb{B}}$ only at $0$, and can be scaled to the form $e_0+\tilde{T}$. The classification of the fundamental symmetries in *The Fundamental Symmetry of the Biquaternion Algebra* is the same parametrisation read on the operators.
+**Proof.** $\langle e_0+\tilde{T},e_0+\tilde{T}\rangle_{\natural*}=1-\|\tilde{T}\|_E^{2}$ by the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$, so the line is positive definite exactly for $\|\tilde{T}\|_E<1$ and is maximal by the dimension bound; conversely a maximal positive definite line has a vector with $\tilde{Q}_0\neq0$, since it meets $\mathbb{V}_{\mathbb{B}}$ only at $0$, and can be scaled to the form $e_0+\tilde{T}$. The classification of the fundamental symmetries in *The Fundamental Symmetry of the Biquaternioid Algebra* is the same parametrisation read on the operators.
 
 ## The Fundamental Decomposition
 
@@ -90,11 +90,11 @@ The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\p
 
 ## The Krein Gram–Schmidt Process
 
-**Theorem (orthonormalisation).** Every basis of $\mathbb{B}$ can be replaced by an orthonormal one, carrying $p$ vectors with $\langle u,u\rangle_{\natural*}=+1$ and $q$ with $\langle u,u\rangle_{\natural*}=-1$; the numbers $p,q$ do not depend on the basis.
+**Theorem (orthonormalisation).** Every basis of $\mathbb{B}$ can be replaced by an orthonormal one, carrying $p$ vectors with $\langle a,a\rangle_{\natural*}=+1$ and $q$ with $\langle a,a\rangle_{\natural*}=-1$; the numbers $p,q$ do not depend on the basis.
 
-**Proof.** Sylvester's law of inertia (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*) applied to the general plain sesquilinear form. Explicitly, if a vector $u$ with $\langle u,u\rangle_{\natural*}\neq0$ is found, replace the current basis by its Krein-orthogonal projection on $u^{\perp_{K}}$ together with $u$, and rescale $u$ so that $\langle u,u\rangle_{\natural*}=\pm1$; if the residual form is nonzero, repeat. The process stops because each step lowers the dimension by one, and at the end the remaining vectors, if any, are isotropic and span a totally isotropic subspace (*The Isotropic Structure of the General Quaternionic Sesqualgebra*).
+**Proof.** Sylvester's law of inertia (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*) applied to the general plain sesquilinear form. Explicitly, if a vector $a$ with $\langle a,a\rangle_{\natural*}\neq0$ is found, replace the current basis by its Krein-orthogonal projection on $a^{\perp_{K}}$ together with $a$, and rescale $a$ so that $\langle a,a\rangle_{\natural*}=\pm1$; if the residual form is nonzero, repeat. The process stops because each step lowers the dimension by one, and at the end the remaining vectors, if any, are isotropic and span a totally isotropic subspace (*The Isotropic Structure of the General Quaternionic Sesqualgebra*).
 
-**Worked example.** The basis $e_0,e_1,e_2,e_3$ is already orthonormal, with $p=1$ and $q=3$ over $\mathbb{C}$. Starting instead from $u_0=e_0+e_1$ and $u_1=e_0-e_1$: $\langle u_0,u_0\rangle_{\natural*}=0$ shows that $u_0$ is isotropic and the process cannot start with it; the pair spans a neutral non-degenerate plane and must be replaced by the orthonormal pair $e_0,e_1$.
+**Worked example.** The basis $e_0,e_1,e_2,e_3$ is already orthonormal, with $p=1$ and $q=3$ over $\mathbb{C}$. Starting instead from $a_0=e_0+e_1$ and $a_1=e_0-e_1$: $\langle a_0,a_0\rangle_{\natural*}=0$ shows that $a_0$ is isotropic and the process cannot start with it; the pair spans a neutral non-degenerate plane and must be replaced by the orthonormal pair $e_0,e_1$.
 
 ## Worked Examples
 
@@ -129,7 +129,7 @@ The Krein-orthogonal complement satisfies $\dim\mathbb{W}+\dim\mathbb{W}^{\perp_
 
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the Gram matrices and the inertia
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the totally isotropic subspaces
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the family of fundamental symmetries
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-self-adjoint idempotents inside the cone
+- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the family of fundamental symmetries
+- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-self-adjoint idempotents inside the cone
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the global structure of the maximal definite subspaces
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for orthogonality, the classification of subspaces and the fundamental decompositions of a Krein space

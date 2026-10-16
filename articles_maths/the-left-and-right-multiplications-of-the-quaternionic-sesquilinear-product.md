@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*), and the fourth of them,
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -217,7 +217,7 @@ for generic $\tilde A, \tilde B$.
 | $\tilde A\tilde X^{*}$ | $\tilde A\tilde X^{*}$ | conjugate-linear | $\tilde A\tilde X\tilde B^{*}$ | no |
 | $\tilde A^{\natural}\tilde X^{*}$ | $\tilde A^{\natural}\tilde X^{*}$ | conjugate-linear | $\tilde A^{\natural}\tilde X\overline{\tilde B}$ | no |
 
-**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde A}L^{\natural}_{\tilde B}(\tilde X) = \tilde A^{\natural}\tilde B^{\natural}\tilde X = (\tilde B\tilde A)^{\natural}\tilde X = L^{\natural}_{\tilde B\tilde A}(\tilde X)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra of Biquaternions*) and is recorded in *Relations Between the Four General Products* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde A}L^{*}_{\tilde B}(\tilde X) = \tilde A(\tilde B\tilde X^{*})^{*} = \tilde A\tilde X\tilde B^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article.
+**Proof.** The first row is the associativity of the plain product. The second is the composition $L^{\natural}_{\tilde A}L^{\natural}_{\tilde B}(\tilde X) = \tilde A^{\natural}\tilde B^{\natural}\tilde X = (\tilde B\tilde A)^{\natural}\tilde X = L^{\natural}_{\tilde B\tilde A}(\tilde X)$, which is the opposite monoid (*Introduction to the General Quaternionic Algebra*) and is recorded in *Relations Between the Four General Products* §*The Left Multiplications*. The third is the sibling sesquilinear composition $L^{*}_{\tilde A}L^{*}_{\tilde B}(\tilde X) = \tilde A(\tilde B\tilde X^{*})^{*} = \tilde A\tilde X\tilde B^{*}$, which is $\mathbb{C}$-linear whereas $L^{*}$ is conjugate-linear, so the class is not closed. The fourth is the composition law of this article.
 
 **Remark.** The comparison is the row of *Comparison Between the Four General Products* that reads the monoid property, and it separates the four general products into two classes: the two bilinear products, whose left multiplications form monoids, and the two sesquilinear products, whose left multiplications do not. The dividing line is the parity of the left multiplication: it is linear for the bilinear products, so that the composition of two of them has the same parity as the factors and stays in the class, and conjugate-linear for the sesquilinear products, so that the composition has the opposite parity and leaves the class.
 
@@ -242,12 +242,12 @@ and they satisfy $L_{e_0}^{2} = R_{e_0}^{2} = \mathrm{id}$ and $L_{e_0} \circ R_
 **Proposition.** Let $\tilde\Pi$ be a nontrivial idempotent of the multiplication, $\tilde\Pi \star \tilde\Pi = \tilde\Pi$. Then
 
 $$
-L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = N(\tilde\Pi)\,e_0 . 
+L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = \langle\tilde\Pi\rangle_{\natural}\,e_0 . 
 $$
 
-**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = N(\tilde\Pi)e_0$, the plain product of an element with its natural conjugate being the norm times the identity.
+**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = \langle\tilde\Pi\rangle_{\natural}e_0$, the plain product of an element with its natural conjugate being the norm times the identity.
 
-**Remark.** With $N(\tilde\Pi) = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_0$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
+**Remark.** With $\langle\tilde\Pi\rangle_{\natural} = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_0$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
 
 ## Summary
 

@@ -52,7 +52,7 @@ The **general linear group** $GL_n(F)$ is the group of invertible $n \times n$ m
 | $\operatorname{Aff}(V) = V \rtimes GL(V)$ | the affine group, the translations extended by the linear group | *Affine Spaces and Translations* |
 | $R^\times$ | the group of units of a ring | *Groups*, §1 |
 | $M_n(k)^\times$ | the units of a matrix algebra, equal to $GL_n(k)$ | *Matrix Algebras* |
-| Warning: $O(V,q)$, $U(V,h)$, $Sp(V,\omega)$, $\operatorname{Spin}$, $\operatorname{Pin}$ | not group-layer objects: each is defined by a form and a distance, so it belongs to Part II | *The General Linear Group*; *Finite Groups and Symmetry* |
+| Warning: $O(V,\mathfrak{Q})$, $U(V,h)$, $Sp(V,\omega)$, $\operatorname{Spin}$, $\operatorname{Pin}$ | not group-layer objects: each is defined by a form and a distance, so it belongs to Part II | *The General Linear Group*; *Finite Groups and Symmetry* |
 
 ## Free, Presented and Infinite Groups
 

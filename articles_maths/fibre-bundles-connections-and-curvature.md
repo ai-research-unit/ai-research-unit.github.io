@@ -42,7 +42,7 @@ on the triple intersections; conversely, given an open cover and functions satis
 **Definition.** Let $P \to B$ be a principal $G$-bundle and let $F$ be a manifold with a left $G$-action. The **associated bundle** is
 
 $$
-P \times_G F = (P \times F)/G, \qquad (p \cdot g, v) \sim (p, g \cdot v),
+P \times_G F = (P \times F)/G, \qquad (n \cdot g, v) \sim (n, g \cdot v),
 $$
 
 a fibre bundle over $B$ with fibre $F$. Every vector bundle of rank $k$ with structure group $G \subseteq GL_k$ is associated to a principal $G$-bundle, the **frame bundle** of the vector bundle.
@@ -109,7 +109,7 @@ $$
 \omega(A^{\#}) = A \ \text{ for all } A \in \mathrm{G}, \qquad R_g^*\omega = \operatorname{Ad}(g^{-1})\,\omega \ \text{ for all } g \in G.
 $$
 
-The **horizontal subspace** at $p \in P$ is $H_pP = \ker\omega_p \subseteq T_pP$, and it is complementary to the vertical subspace $T_p(P_{\pi(p)})$.
+The **horizontal subspace** at $n \in P$ is $H_pP = \ker\omega_n \subseteq T_pP$, and it is complementary to the vertical subspace $T_n(P_{\pi(n)})$.
 
 **Proposition.** A connection form exists on every principal bundle, and the horizontal distribution $H = \ker\omega$ is a $G$-invariant distribution complementary to the vertical distribution; a distribution with these properties determines a unique connection form.
 
@@ -222,7 +222,7 @@ the **first Chern class** of $L$, independent of the connection. For a connectio
 **Example (Pontryagin classes).** Let $E \to M$ be a real vector bundle of rank $k$ with a connection of curvature $R$, an $\operatorname{End}E$-valued $2$-form. The invariant polynomials
 
 $$
-p_j(E) = \left[(-1)^j \operatorname{tr}\!\left(\frac{R}{2\pi}\wedge\cdots\wedge\frac{R}{2\pi}\right)\right] \in H^{4j}_{dR}(M)
+n_j(E) = \left[(-1)^j \operatorname{tr}\!\left(\frac{R}{2\pi}\wedge\cdots\wedge\frac{R}{2\pi}\right)\right] \in H^{4j}_{dR}(M)
 $$
 
 are the **Pontryagin classes** of $E$, the trace being taken in $\operatorname{End}E$ and the wedge product repeated $2j$ times. They vanish in odd degree, and for a complex bundle the Chern classes $c_j(E)$ are the invariant polynomials obtained from $\det(I + \frac{i}{2\pi}R)$.
@@ -279,7 +279,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $\omega = (\omega^i_{\ j})$, $\nabla = d+\omega$ | Connection form in a frame |
 | $\omega' = g^{-1}\omega g + g^{-1}dg$ | Change of frame; gauge transformation rule |
 | $\omega \in \Omega^1(P;\mathrm{G})$, $\omega(A^\#) = A$, $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | Connection form on a principal bundle |
-| $H_pP = \ker\omega_p$ | Horizontal subspace; $G$-invariant complement to the vertical |
+| $H_pP = \ker\omega_n$ | Horizontal subspace; $G$-invariant complement to the vertical |
 | $R = d\omega + \omega\wedge\omega$ | Curvature of a vector bundle connection |
 | $\Omega = d\omega + \frac12[\omega,\omega]$ | Curvature of a principal connection |
 | $\operatorname{End}(E)$, $\Omega^k(M;\operatorname{End}E)$ | Bundle of endomorphisms and its form-valued sections; $R$ is an $\operatorname{End}E$-valued $2$-form |
@@ -288,7 +288,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $d^\nabla R = 0$, $dR + [\omega,R] = 0$ | Bianchi identity |
 | Flat | $R = 0$; locally $\omega = 0$ (vector bundle) or $\omega = g^{-1}dg$ (principal bundle) |
 | $f(\Omega)$, $S^\bullet(\mathrm{G}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ | Chern–Weil form and homomorphism |
-| $c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $p_j(E)$, $e(E)$ | First Chern, Pontryagin, and Euler classes |
+| $c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $n_j(E)$, $e(E)$ | First Chern, Pontryagin, and Euler classes |
 | $\operatorname{Pf}(R/2\pi)$ | Pfaffian form of a real oriented bundle of rank $2j$; its class is the Euler class |
 | $\int_M e(TM) = \chi(M)$ | Gauss–Bonnet |
 | $\nabla$ Levi-Civita, $R(X,Y)Z$ | Metric and torsion-free connection; Riemann curvature tensor |

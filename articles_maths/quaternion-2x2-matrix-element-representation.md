@@ -6,7 +6,7 @@ The quaternion algebra has no faithful representation by real $2\times2$ matrice
 
 The article depends on *Quaternion Algebra* for the basis and relations, on *Quaternion Norm and Invertibility* for the quaternion norm and the invertibility criterion, and on *The Scalar and Vector Subspaces of $\mathbb{H}$* for the two subspaces. The larger matrix representation is in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, and the coordinate description of the product in *Quaternion Four-Vector Element Representation*. The Clifford identification of the complex matrix algebra is sketched in *Quaternion Other Algebraic Element Representations*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The Pauli matrices are
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The Pauli matrices are
 
 $$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
@@ -51,7 +51,7 @@ a four-dimensional real subspace of $M_2(\mathbb{C})$.
 **Theorem.** For every quaternion,
 
 $$
-\operatorname{tr}\iota(\tilde q) = 2q_0, \qquad \det \iota(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = N(\tilde q).
+\operatorname{tr}\iota(\tilde q) = 2q_0, \qquad \det \iota(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = \langle\tilde q\rangle_{\natural}.
 $$
 
 *Proof.* The trace is the sum of the diagonal entries $q_0-iq_3$ and $q_0+iq_3$, namely $2q_0$. The determinant is
@@ -62,7 +62,7 @@ $$
 
 **Corollary.** An element $\tilde q$ is a unit exactly when $\det\iota(\tilde q)\neq0$, and then $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$; the matrix image of the unit group $\mathbb{H}^{\times}$ is the set of matrices in $\iota(\mathbb{H})$ of non-zero determinant, and the image of the norm-one subgroup $Sp(1)$ is the group of matrices in $\iota(\mathbb{H})$ of determinant $1$.
 
-*Proof.* Invertibility is non-vanishing norm by *Quaternion Norm and Invertibility*, and the determinant is the quaternion norm; multiplicativity of $\iota$ gives $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$. A norm-one element has $N(\tilde q) = 1$, so its determinant is $1$, and conversely a determinant-$1$ matrix in $\iota(\mathbb{H})$ is the image of a norm-one element.
+*Proof.* Invertibility is non-vanishing norm by *Quaternion Norm and Invertibility*, and the determinant is the quaternion norm; multiplicativity of $\iota$ gives $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$. A norm-one element has $\langle\tilde q\rangle_{\natural} = 1$, so its determinant is $1$, and conversely a determinant-$1$ matrix in $\iota(\mathbb{H})$ is the image of a norm-one element.
 
 **Theorem.** The restriction of $\iota$ to the unit sphere is an isomorphism of groups
 
@@ -78,12 +78,12 @@ where $SU(2)$ is the group of $2\times2$ complex unitary matrices of determinant
 
 ## The Inner Product and the Euclidean Norm
 
-**Definition.** The **inner product** of two quaternions is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$; the **Euclidean norm** is $|\tilde q| = \sqrt{N(\tilde q)}$. The one-variable expression $\tilde q\tilde{q}^{\natural}$ is the **Hermitian form**, which here coincides with the quaternion norm.
+**Definition.** The **inner product** of two quaternions is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$; the **Euclidean norm** is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The one-variable expression $\tilde q\tilde{q}^{\natural}$ is the **Hermitian form**, which here coincides with the quaternion norm.
 
 **Theorem.** The matrix image intertwines the quaternion norm and the determinant and the inner product and the Frobenius form:
 
 $$
-N(\tilde q) = \det\iota(\tilde q), \qquad \operatorname{tr}\bigl(\iota(p)\iota(\tilde q)^{\dagger}\bigr) = 2\,\langle p,\tilde q\rangle, \qquad \operatorname{tr}\bigl(\iota(\tilde q)\iota(\tilde q)^{\dagger}\bigr) = 2\,|\tilde q|^2,
+\langle\tilde q\rangle_{\natural} = \det\iota(\tilde q), \qquad \operatorname{tr}\bigl(\iota(p)\iota(\tilde q)^{\dagger}\bigr) = 2\,\langle p,\tilde q\rangle, \qquad \operatorname{tr}\bigl(\iota(\tilde q)\iota(\tilde q)^{\dagger}\bigr) = 2\,|\tilde q|^2,
 $$
 
 where $\dagger$ is the conjugate transpose.
@@ -94,11 +94,11 @@ $$
 \iota(\tilde q)^{\dagger} = \iota(\tilde{q}^{\natural}).
 $$
 
-Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, whose trace is $2N(\tilde q) = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\tilde{q}^{\natural})$, whose trace is $2\mathrm{Sc}(p\tilde{q}^{\natural}) = 2\langle p,\tilde q\rangle$.
+Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}I$, whose trace is $2\langle\tilde q\rangle_{\natural} = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\tilde{q}^{\natural})$, whose trace is $2\mathrm{Sc}(p\tilde{q}^{\natural}) = 2\langle p,\tilde q\rangle$.
 
 **Corollary.** The image $\iota(\mathbb{H})$ consists of those matrices $\iota(\tilde q)$ for which $\iota(\tilde q)^\dagger\iota(\tilde q)$ is a scalar matrix, namely $|\tilde q|^2 I$; the map $\tilde q\mapsto |\tilde q|^{-1}\iota(\tilde q)$ for $\tilde q\neq0$ is an isometric embedding of the unit sphere $Sp(1)$ into the unitary group $U(2)$.
 
-*Proof.* $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\tilde{q}^{\natural})\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(N(\tilde q)) = N(\tilde q)I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary.
+*Proof.* $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\tilde{q}^{\natural})\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary.
 
 ## The Conjugations in Matrix Form
 
@@ -169,7 +169,7 @@ $$
 with
 
 $$
-\operatorname{tr}\iota(\tilde q) = 2 = 2q_0, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = N(\tilde q).
+\operatorname{tr}\iota(\tilde q) = 2 = 2q_0, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = \langle\tilde q\rangle_{\natural}.
 $$
 
 The determinant is the quaternion norm and the trace is twice the scalar part, as the general theorem requires.
@@ -188,7 +188,7 @@ The determinant is the quaternion norm and the trace is twice the scalar part, a
 
 The image $\iota(\mathbb{H})$ is the four-dimensional real space of matrices $\begin{pmatrix} A & B \\ -\bar B & \bar A \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$.
 
-The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $N(\tilde q) = \sum_\mu q_\mu^2$, so invertibility is non-vanishing determinant. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices.
+The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $\langle\tilde q\rangle_{\natural} = \sum_\mu q_\mu^2$, so invertibility is non-vanishing determinant. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices.
 
 There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its image would be all of $M_2(\mathbb{R})$, which has zero divisors while $\mathbb{H}$ has none; the smallest real representation is the $4\times4$ regular one.
 
@@ -198,11 +198,11 @@ There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its 
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q)$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
 | $\iota : \mathbb{H}\to M_2(\mathbb{C})$ | Injective matrix representation of the algebra |
 | $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices; $\iota(e_k) = -i\sigma_k$ |
 | $\operatorname{tr}\iota(\tilde q) = 2q_0$ | Trace image of the scalar coordinate |
-| $\det \iota(\tilde q) = N(\tilde q)$ | Determinant image of the quaternion norm |
+| $\det \iota(\tilde q) = \langle\tilde q\rangle_{\natural}$ | Determinant image of the quaternion norm |
 | $\dagger$ | Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$ |
 | $\epsilon = i\sigma_2 = -\iota(e_2)$ | Antisymmetric form; $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar matrices and traceless matrices |

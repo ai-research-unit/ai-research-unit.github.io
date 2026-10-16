@@ -10,13 +10,13 @@ $$
 
 the eigenstates are labelled by the quantum numbers $n,l,m$, and each orbital level carries a two-valued spin factor.
 
-This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article *Angular Momentum and Spin in Biquaternionic Form* supplies the orbital operators $\tilde L_k=\hat L_k e_0$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article *The Schrödinger Equation in Biquaternionic Form* supplies the state module $\mathbb{B}\tilde P\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.
+This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article *Angular Momentum and Spin in Biquaternionic Form* supplies the orbital operators $\tilde L_k=L_k e_0$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article *The Schrödinger Equation in Biquaternionic Form* supplies the state module $\mathbb{B}\tilde P\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.
 
 The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a **central scalar** element of $\mathbb{M}_+$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde P$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does **not** supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.
 
 The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$.
 
 ## The Coulomb Hamiltonian in $\mathbb{M}_+$
 
@@ -25,33 +25,33 @@ The title covers the non-relativistic case only. The relativistic case begins fr
 The momentum operator of the framework is
 
 $$
-\tilde p = -i\hbar\nabla = e_k\hat p_k, \qquad \nabla = e_1\partial_x+e_2\partial_y+e_3\partial_z, \qquad \hat p_k = -i\hbar\partial_k .
+\tilde p = -i\hbar\nabla = e_kp_k, \qquad \nabla = e_1\partial_x+e_2\partial_y+e_3\partial_z, \qquad p_k = -i\hbar\partial_k .
 $$
 
 Since $\tilde p$ has a purely imaginary vector part, it is Hermitian and lies in $\mathbb{M}_+$: it is an observable, not a generator. It is the same element that the companion articles use to build the orbital angular momentum, $\tilde r\tilde p\in\mathbb{B}$ for the material-sector position $\tilde r\in\mathbb{H}_{\mathbb{B}}$.
 
-The kinetic energy requires care with the quaternion square. The components $\hat p_j$ commute, so the cross terms in the product $\tilde p\circ\tilde p$ cancel pairwise:
+The kinetic energy requires care with the quaternion square. The components $p_j$ commute, so the cross terms in the product $\tilde p\circ\tilde p$ cancel pairwise:
 
 $$
-\tilde p^{\,2} = \sum_{j,k} e_je_k\,\hat p_j\hat p_k
-= \sum_k e_k^2\hat p_k^{\,2}
-= -\Big(\sum_k \hat p_k^{\,2}\Big)e_0
-= -\hat p^{\,2}e_0 ,
+\tilde p^{\,2} = \sum_{j,k} e_je_k\,p_jp_k
+= \sum_k e_k^2p_k^{\,2}
+= -\Big(\sum_k p_k^{\,2}\Big)e_0
+= -p^{\,2}e_0 ,
 $$
 
-because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat p\cdot\hat p=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
+because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $p^{\,2}=p\cdot p=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
 
 $$
-\tilde p\,\tilde p^{\natural} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
+\tilde p\,\tilde p^{\natural} = \langle\tilde p\rangle_{\natural} = -\tilde p^{\,2} = p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
 $$
 
 The two natural transcriptions therefore agree, and the kinetic energy is
 
 $$
-\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
+\boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}}{2m}e_0 . \;}
 $$
 
-The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
+The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $\langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
 
 ### The potential
 
@@ -94,7 +94,7 @@ $$
 
 a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the **argument** of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.
 
-Under the isomorphism $\mathsf{M}_2$ the field $\psi$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$ act on its two components as $\tfrac{\hbar}{2}\sigma_k$, and the orbital operators $\tilde L_k=\hat L_k e_0$ act on the argument as $\hat L_k$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the **scalar** slot $e_0$; the spin operators occupy the **vector** slots $ie_k$. Because a scalar multiple of $e_0$ is central, the two families commute:
+Under the isomorphism $\mathsf{M}_2$ the field $\psi$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$ act on its two components as $\tfrac{\hbar}{2}\sigma_k$, and the orbital operators $\tilde L_k=L_k e_0$ act on the argument as $L_k$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the **scalar** slot $e_0$; the spin operators occupy the **vector** slots $ie_k$. Because a scalar multiple of $e_0$ is central, the two families commute:
 
 $$
 [\tilde L_i,\tilde S_j]=0 .
@@ -112,7 +112,7 @@ $$
 [\tilde H,\tilde L_k]=0, \qquad [\tilde H,\tilde S_k]=0, \qquad [\tilde H,\tilde L^2]=0, \qquad [\tilde H,\tilde S^2]=0,
 $$
 
-with the Casimir operators built from the operators of the companion article, $\tilde L^2=\hat L^2e_0$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$. The orbital magnetic quantum number $m$, the orbital quantum number $l$, and the spin quantum numbers are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.
+with the Casimir operators built from the operators of the companion article, $\tilde L^2=L^2e_0$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$. The orbital magnetic quantum number $m$, the orbital quantum number $l$, and the spin quantum numbers are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.
 
 One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $\tilde H$ is spin-independent, the **total** angular momentum $\tilde J_k=\tilde L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,j,m_j\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.
 
@@ -126,20 +126,20 @@ $$
 \tilde L^2\,Y_l^m = \hbar^2 l(l+1)\,Y_l^m, \qquad \tilde L_z\,Y_l^m = \hbar m\,Y_l^m ,
 $$
 
-with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\hat u$ has the two eigenspaces
+with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces
 
 $$
-\hat u_k\tilde S_k\,\tilde{\tilde\Pi}(\pm\hat u) = \pm\tfrac{\hbar}{2}\,\tilde{\tilde\Pi}(\pm\hat u),
+\vec u_k\tilde S_k\,\tilde{\Pi}(\pm\vec u) = \pm\tfrac{\hbar}{2}\,\tilde{\Pi}(\pm\vec u),
 \qquad
-\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u),
+\tilde{\Pi}(\pm\vec u)=\tfrac12(e_0\pm i\vec u),
 $$
 
-and for the axis $\hat u=e_3$ the two idempotents $\tilde{\tilde\Pi}(\pm e_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.
+and for the axis $\vec u=e_3$ the two idempotents $\tilde{\Pi}(\pm e_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.
 
-The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde{\tilde\Pi}(\hat u)=\tfrac12(e_0+i\hat u)$,
+The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde{\Pi}(\vec u)=\tfrac12(e_0+i\vec u)$,
 
 $$
-\mathrm{Tr}\bigl(\tilde{\tilde\Pi}(\hat u)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\tilde\Pi}(\hat u)\,\tilde S_k\bigr) = \frac{\hbar}{2}\hat u_k ,
+\mathrm{Tr}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_k\bigr) = \frac{\hbar}{2}\vec u_k ,
 $$
 
 which is the standard spin-1/2 expectation value, written as the trace pairing of $\mathbb{M}_+$.
@@ -156,7 +156,7 @@ $$
 with $\chi_{m_s}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\hbar\,\partial_t\psi=\tilde H\psi$ and using the spherical decomposition of the Laplacian,
 
 $$
--\hbar^2\nabla^2 = \frac{\hat L^2}{r^2} - \frac{\hbar^2}{r^2}\partial_r\bigl(r^2\partial_r\bigr),
+-\hbar^2\nabla^2 = \frac{L^2}{r^2} - \frac{\hbar^2}{r^2}\partial_r\bigl(r^2\partial_r\bigr),
 $$
 
 the angular factor is an eigenfunction of $\tilde L^2$ with eigenvalue $\hbar^2l(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:
@@ -199,26 +199,26 @@ and each carries the two spin values, so the level has degeneracy $2n^2$. The fa
 The radial eigenfunctions are the standard ones, expressed through the associated Laguerre polynomials:
 
 $$
-R_{nl}(r) = N_{nl}\,\rho^{\,l}e^{-\rho/2}\,L_{n-l-1}^{2l+1}(\rho),
+R_{nl}(r) = N_{nl}\,\rho^{\,l}\exp(-\rho/2)\,L_{n-l-1}^{2l+1}(\rho),
 \qquad \rho = \frac{2r}{n a_0},
 $$
 
 with $N_{nl}$ the normalisation constant. The lowest few, normalised for $\int_0^\infty R^2r^2\,dr=1$ in units $a_0=1$, are
 
 $$
-R_{10}=2e^{-r}, \qquad
-R_{20}=\frac{1}{\sqrt2}\Bigl(1-\frac{r}{2}\Bigr)e^{-r/2}, \qquad
-R_{21}=\frac{1}{\sqrt{24}}\,r\,e^{-r/2}.
+R_{10}=2\exp(-r), \qquad
+R_{20}=\frac{1}{\sqrt2}\Bigl(1-\frac{r}{2}\Bigr)\exp(-r/2), \qquad
+R_{21}=\frac{1}{\sqrt{24}}\,r\,\exp(-r/2).
 $$
 
 The ground state is therefore
 
 $$
-\psi_{100}(\vec x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
+\psi_{100}(\vec x) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\chi_{m_s},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$
 
-a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\tilde\Pi}(\pm e_3)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
+a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm e_3)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.
 
 ## Correspondence with the Standard Solution
 
@@ -227,8 +227,8 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
 | Hamiltonian $-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | $\tilde H = \bigl[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\bigr]e_0\in\mathbb{M}_+$ | scalar |
-| Kinetic term $\hat p^2/2m$ | $-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\tilde p^{\natural}$ | scalar |
-| Orbital $\hat L_k$ | $\tilde L_k=\hat L_k e_0$ | scalar |
+| Kinetic term $p^2/2m$ | $-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\tilde p^{\natural}$ | scalar |
+| Orbital $L_k$ | $\tilde L_k=L_k e_0$ | scalar |
 | Spin $S_k=\frac{\hbar}{2}\sigma_k$ | $\tilde S_k=\frac{\hbar}{2}ie_k$ | vector |
 | Wavefunction $\psi\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\psi(\vec x)\in\mathbb{B}\tilde P$ | module |
 | Spectrum $E_n=-\frac{m\kappa^2}{2\hbar^2n^2}$ | identical | — |
@@ -236,7 +236,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 
 The spectrum, the eigenfunctions, the quantum numbers and the degeneracies are the standard ones. The biquaternion form is a transcription, and it predicts nothing beyond the standard solution. What it does isolate is three structural facts that the standard notation leaves implicit:
 
-1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $\hat p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
+1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
 2. **The Hamiltonian is central and the generator is in the material sector.** The observable $\tilde H$ lies in $\mathbb{M}_+$; the generator $\tilde G=-i\tilde H/\hbar$ lies in $\mathbb{M}_-$ along $ie_0$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.
 3. **Orbital and spin operators occupy complementary slots.** The orbital operators are scalar multiples of $e_0$ and central; the spin operators are vector-slot elements. Their commutativity, $[\tilde L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.
 
@@ -289,7 +289,7 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 
 ## Summary
 
-The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-\hat p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=\hat p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives
+The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_0=\hbar^2\nabla^2e_0$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_0$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
 \tilde H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_0 = h_0e_0 \in \mathbb{M}_+,
@@ -319,18 +319,18 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; $\tilde r=xe_1+ye_2+ze_3$ the material position |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, $\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$ |
 | $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $\tilde p=-i\hbar\nabla=e_k\hat p_k$, $\hat p_k=-i\hbar\partial_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
-| $\tilde p^{\,2}=-\hat p^{\,2}e_0$, $\tilde p\tilde p^{\natural}=\hat p^{\,2}e_0$ | Quaternion square and biquaternion norm of the momentum |
+| $\tilde p=-i\hbar\nabla=e_kp_k$, $p_k=-i\hbar\partial_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
+| $\tilde p^{\,2}=-p^{\,2}e_0$, $\tilde p\tilde p^{\natural}=p^{\,2}e_0$ | Quaternion square and biquaternion norm of the momentum |
 | $\tilde T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
 | $\tilde H=h_0e_0$, $h_0=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |
 | $\tilde G=-i\tilde H/\hbar\in\mathbb{M}_-$ | Time-translation generator |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\hbar^2/(m\kappa)$ | Bohr radius |
-| $\tilde L_k=\hat L_k e_0$, $\tilde L^2=\hat L^2e_0$ | Orbital operators, scalar slot |
+| $\tilde L_k=L_k e_0$, $\tilde L^2=L^2e_0$ | Orbital operators, scalar slot |
 | $\tilde S_k=\tfrac{\hbar}{2}ie_k$, $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$ | Spin operators, vector slots |
 | $\tilde J_k=\tilde L_k+\tilde S_k$ | Total angular momentum (needed only relativistically) |
 | $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module of spinors $\psi$ |
-| $\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$ | Spin eigenstates (idempotents) |
+| $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
 | $E_n=-\frac{m\kappa^2}{2\hbar^2n^2}$ | Bound-state spectrum, $n=n_r+l+1$ |
 

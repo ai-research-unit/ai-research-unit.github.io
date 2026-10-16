@@ -16,12 +16,12 @@ The article assumes the Hilbert space, the bounded operator and its adjoint from
 **Definition.** Let $\mathcal{H}$ be a complex Hilbert space with inner product $\langle\cdot,\cdot\rangle$, linear in the first argument. The **adjoint** of a bounded operator $A$ is the bounded operator $A^{*}$ with
 
 $$
-\langle Av, w\rangle = \langle v, A^{*}w\rangle \qquad (v,w\in\mathcal{H}) ,
+\langle Av, w\rangle = \langle b, A^{*}w\rangle \qquad (b,w\in\mathcal{H}) ,
 $$
 
 and $A$ is **unitary** when $A^{*} = A^{-1}$, equivalently when $A$ is surjective and preserves the inner product; $A$ is **self-adjoint** when $A^{*} = A$ and **skew-adjoint** when $A^{*} = -A$.
 
-**Proposition.** A unitary representation is a homomorphism $\pi : G\to U(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)v,\pi(g)w\rangle = \langle v,w\rangle$ for all $g$ and all $v,w$.
+**Proposition.** A unitary representation is a homomorphism $\pi : G\to U(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)b,\pi(g)w\rangle = \langle b,w\rangle$ for all $g$ and all $b,w$.
 
 *Proof.* The equivalences are immediate from the definition of the adjoint and the invertibility of the operators; the preservation of the inner product is the defining property of the unitary group.
 
@@ -60,16 +60,16 @@ $$
 **Theorem (Stone).** For every $X\in\mathrm{G}$ the operators $A_X = i\pi_*(X)$ are the self-adjoint generators of the strongly continuous one-parameter unitary groups
 
 $$
-t\longmapsto\pi(\exp tX) = e^{-itA_X} ,
+t\longmapsto\pi(\exp tX) = \exp(-itA_X) ,
 $$
 
-the domain of $A_X$ is the set of $v\in\mathcal{H}$ for which the derivative of the group at $t = 0$ exists, and the spectral theorem for $A_X$ decomposes the representation of the one-parameter subgroup. The common domain of the operators $A_X$ is the intersection of their domains, on which the commutation relations above hold in the sense of the commutator of unbounded operators.
+the domain of $A_X$ is the set of $b\in\mathcal{H}$ for which the derivative of the group at $t = 0$ exists, and the spectral theorem for $A_X$ decomposes the representation of the one-parameter subgroup. The common domain of the operators $A_X$ is the intersection of their domains, on which the commutation relations above hold in the sense of the commutator of unbounded operators.
 
-*Proof.* The group $t\mapsto\pi(\exp tX)$ is strongly continuous and unitary, so Stone's theorem of *Unitary Operators and the Spectral Measure* gives a self-adjoint generator $B_X$ with $\pi(\exp tX) = e^{itB_X}$; the derivative at the origin is $\pi_*(X)$, so $B_X = -i\pi_*(X) = A_X$. The domain and the commutation statements are the standard ones for the generators of a representation.
+*Proof.* The group $t\mapsto\pi(\exp tX)$ is strongly continuous and unitary, so Stone's theorem of *Unitary Operators and the Spectral Measure* gives a self-adjoint generator $B_X$ with $\pi(\exp tX) = \exp(itB_X)$; the derivative at the origin is $\pi_*(X)$, so $B_X = -i\pi_*(X) = A_X$. The domain and the commutation statements are the standard ones for the generators of a representation.
 
 ### The Analytic Vectors
 
-**Theorem (Nelson).** The set of analytic vectors of $\pi$ — the vectors $v$ for which the map $g\mapsto\pi(g)v$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)v$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in U(\mathrm{G})$.
+**Theorem (Nelson).** The set of analytic vectors of $\pi$ — the vectors $b$ for which the map $g\mapsto\pi(g)b$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)b$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in U(\mathrm{G})$.
 
 *Proof.* The analytic vectors are dense by the analytic-vector theorem of Nelson, which uses the elliptic regularity of the Casimir operator; the essential self-adjointness on them is the commutation theorem for the analytic vectors, and the Gårding domain is dense by the approximate identity of the convolution algebra of *Operators on a Lie Group*. The proofs are in the references.
 
@@ -80,7 +80,7 @@ the domain of $A_X$ is the set of $v\in\mathcal{H}$ for which the derivative of 
 **Theorem.** A representation $\pi$ of $G$ by operators on a dense invariant domain is unitary if and only if the infinitesimal condition
 
 $$
-\langle \pi(X)v, w\rangle + \langle v, \pi(X)w\rangle = 0 \qquad (X\in\mathrm{G},\ v,w\in\mathcal{H}^\infty)
+\langle \pi(X)b, w\rangle + \langle b, \pi(X)w\rangle = 0 \qquad (X\in\mathrm{G},\ b,w\in\mathcal{H}^\infty)
 $$
 
 holds on the smooth vectors, equivalently if and only if the derived representation is a star-representation of the enveloping algebra, $\pi(u^{\star}) = \pi(u)^{*}$, for the principal anti-automorphism $\sigma(u) = u^{\star}$.
@@ -92,7 +92,7 @@ holds on the smooth vectors, equivalently if and only if the derived representat
 **Theorem.** Let $H$ be an invariant Hermitian form on $\mathrm{G}$ with $H([X,Y],Z) + H(Y,[X,Z]) = 0$, and let $\pi$ be a star-representation by skew-adjoint operators. Then the sesquilinear form
 
 $$
-\langle v,w\rangle_\pi = \langle v,w\rangle
+\langle b,w\rangle_\pi = \langle b,w\rangle
 $$
 
 is invariant under $\pi$, the operators $\pi_*(X)$ are skew-adjoint for it, and the derived representation is a representation by the skew-Hermitian operators attached to $H$; the representation is unitarisable exactly when the form it defines on the module is positive definite.
@@ -119,7 +119,7 @@ is self-adjoint on the smooth vectors and commutes with the representation; for 
 
 ### The Vector Group
 
-For $G = \mathbb{R}$ with the representation $\pi(x) = e^{ixt}$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial_t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t v,w\rangle + \langle v, itw\rangle = 0$.
+For $G = \mathbb{R}$ with the representation $\pi(x) = \exp(ixt)$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial_t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t b,w\rangle + \langle b, itw\rangle = 0$.
 
 ### The Rotation Group
 
@@ -127,11 +127,11 @@ For $G = SU(2)$ with the spin $j$ representation, the derived operators of the b
 
 ### The Real Rank-One Case
 
-For $G = SL_2(\mathbb{R})$ the discrete series representations have a lowest weight vector on which the Casimir acts by the quadratic invariant, and the self-adjoint generators of the compact subgroup have a discrete spectrum; the quadratic form $\langle v,w\rangle_\pi$ is definite for the square-integrable representations and indefinite for the complementary series, which is the criterion of unitarisability of *Unitary Representations of a Lie Group*.
+For $G = SL_2(\mathbb{R})$ the discrete series representations have a lowest weight vector on which the Casimir acts by the quadratic invariant, and the self-adjoint generators of the compact subgroup have a discrete spectrum; the quadratic form $\langle b,w\rangle_\pi$ is definite for the square-integrable representations and indefinite for the complementary series, which is the criterion of unitarisability of *Unitary Representations of a Lie Group*.
 
 ## Summary
 
-A unitary representation of $G$ is a representation by operators with $\pi(g)^{*} = \pi(g)^{-1}$, equivalently one preserving the inner product; its contragredient is the representation composed with the inversion, and Schur's lemma is the commutant statement. The derived representation on the smooth vectors is by **skew-adjoint** operators, $\pi_*(X)^{*} = -\pi_*(X)$, and the operators $A_X = i\pi_*(X)$ are the **self-adjoint generators**, the generators of the one-parameter unitary groups $\pi(\exp tX) = e^{-itA_X}$ by Stone's theorem, satisfying $[A_X,A_Y] = -iA_{[X,Y]}$. The unitarity is read infinitesimally as $\langle\pi(X)v,w\rangle + \langle v,\pi(X)w\rangle = 0$ on the smooth vectors, equivalently as the star identity $\pi(u^{\star}) = \pi(u)^{*}$ in the enveloping algebra, and an invariant Hermitian form on the Lie algebra is the algebraic datum that makes the operators skew-Hermitian, the unitarisability being the positive definiteness of the induced form on the module. The Casimir element has a self-adjoint image commuting with the representation, its negative $-\pi_*(\Omega)$ is the positive Laplace operator of the representation, and its eigenvalue on an irreducible summand is the quadratic invariant. The analytic vectors of Nelson are dense and the Gårding domain is dense and stable, so the algebraic relations of the generators determine the representation.
+A unitary representation of $G$ is a representation by operators with $\pi(g)^{*} = \pi(g)^{-1}$, equivalently one preserving the inner product; its contragredient is the representation composed with the inversion, and Schur's lemma is the commutant statement. The derived representation on the smooth vectors is by **skew-adjoint** operators, $\pi_*(X)^{*} = -\pi_*(X)$, and the operators $A_X = i\pi_*(X)$ are the **self-adjoint generators**, the generators of the one-parameter unitary groups $\pi(\exp tX) = \exp(-itA_X)$ by Stone's theorem, satisfying $[A_X,A_Y] = -iA_{[X,Y]}$. The unitarity is read infinitesimally as $\langle\pi(X)b,w\rangle + \langle b,\pi(X)w\rangle = 0$ on the smooth vectors, equivalently as the star identity $\pi(u^{\star}) = \pi(u)^{*}$ in the enveloping algebra, and an invariant Hermitian form on the Lie algebra is the algebraic datum that makes the operators skew-Hermitian, the unitarisability being the positive definiteness of the induced form on the module. The Casimir element has a self-adjoint image commuting with the representation, its negative $-\pi_*(\Omega)$ is the positive Laplace operator of the representation, and its eigenvalue on an irreducible summand is the quadratic invariant. The analytic vectors of Nelson are dense and the Gårding domain is dense and stable, so the algebraic relations of the generators determine the representation.
 
 ## Summary of Notation
 
@@ -143,8 +143,8 @@ A unitary representation of $G$ is a representation by operators with $\pi(g)^{*
 | $\pi_*(X)^{*} = -\pi_*(X)$ | skew-adjointness |
 | $A_X = i\pi_*(X)$ | the self-adjoint generator |
 | $[A_X,A_Y] = -iA_{[X,Y]}$ | the commutation relation of the generators |
-| $\pi(\exp tX) = e^{-itA_X}$ | Stone's theorem for the one-parameter group |
-| $\langle\pi(X)v,w\rangle + \langle v,\pi(X)w\rangle = 0$ | the infinitesimal unitarity condition |
+| $\pi(\exp tX) = \exp(-itA_X)$ | Stone's theorem for the one-parameter group |
+| $\langle\pi(X)b,w\rangle + \langle b,\pi(X)w\rangle = 0$ | the infinitesimal unitarity condition |
 | $\pi(u^{\star}) = \pi(u)^{*}$ | the star-representation |
 | $-\pi_*(\Omega)$ | the positive Laplace operator of the representation |
 

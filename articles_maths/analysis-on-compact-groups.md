@@ -23,19 +23,19 @@ $$
 \int_K f(k^{-1})\,dk = \int_K f(k)\,dk .
 $$
 
-**Proof.** The measure $d\tilde k$ defined by $\tilde k = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities.
+**Proof.** The measure $dk^{\mathrm{inv}}$ defined by $k^{\mathrm{inv}} = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities.
 
 **Example (the classical compact groups).** For $K = S^1 = \mathbb{R}/\mathbb{Z}$ the normalised Haar measure is $d\theta$ of total mass $1$. For $K = T^n$ it is the product measure. For $K = SU(2)$ the normalised Haar measure is fixed by the **Weyl integration formula**
 
 $$
-\int_{SU(2)} f\,dk = \frac{2}{\pi}\int_0^\pi f(t_\theta)\,\sin^2\theta\,d\theta , \qquad t_\theta = \operatorname{diag}(e^{i\theta}, e^{-i\theta}),
+\int_{SU(2)} f\,dk = \frac{2}{\pi}\int_0^\pi f(t_\theta)\,\sin^2\theta\,d\theta , \qquad t_\theta = \operatorname{diag}(\exp(i\theta), \exp(-i\theta)),
 $$
 
 valid for class functions $f$, the conjugacy class of $t_\theta$ carrying the normalised invariant measure $\frac{2}{\pi}\sin^2\theta\,d\theta$; the constant $\frac{2}{\pi}$ records the total mass $1$, since $\frac{2}{\pi}\int_0^\pi\sin^2\theta\,d\theta = 1$, and the formula is checked against the character orthogonality of the last section.
 
-### The Spaces $L^p(K)$ and the Regular Representation
+### The Spaces $L^{n}(K)$ and the Regular Representation
 
-For $1 \leq p < \infty$ the space $L^p(K)$ is with respect to $dk$; since $dk$ is a probability, Hölder's inequality gives $L^q(K) \subseteq L^p(K)$ for $q \geq p$, and $L^\infty(K)\subseteq L^p(K)$ for every $p$. The **left regular representation** $\lambda$ acts on functions by $(\lambda(k)f)(x) = f(k^{-1}x)$, and it is a unitary representation of $K$ on $L^2(K)$; the right regular representation $\rho$, $(\rho(k)f)(x) = f(xk)$, commutes with it, and on $L^2(K)$ the two combine into the action $(\lambda\otimes\rho)(k_1,k_2)f(x) = f(k_1^{-1}xk_2)$ of $K \times K$.
+For $1 \leq p < \infty$ the space $L^{n}(K)$ is with respect to $dk$; since $dk$ is a probability, Hölder's inequality gives $L^{m}(K) \subseteq L^{n}(K)$ for $q \geq p$, and $L^\infty(K)\subseteq L^{n}(K)$ for every $p$. The **left regular representation** $\lambda$ acts on functions by $(\lambda(k)f)(x) = f(k^{-1}x)$, and it is a unitary representation of $K$ on $L^2(K)$; the right regular representation $\rho$, $(\rho(k)f)(x) = f(xk)$, commutes with it, and on $L^2(K)$ the two combine into the action $(\lambda\otimes\rho)(k_1,k_2)f(x) = f(k_1^{-1}xk_2)$ of $K \times K$.
 
 **Theorem (unitarity).** The left regular representation is a continuous unitary representation of $K$ on $L^2(K)$: for every $f \in L^2(K)$ the map $k \mapsto \lambda(k)f$ is continuous, and $\|\lambda(k)f\|_2 = \|f\|_2$.
 
@@ -60,41 +60,41 @@ Because $K$ is unimodular and $dy$ is a probability measure, $L^1(K)$ is a Banac
 **Definition.** For $f \in L^1(K)$ and $\pi \in \operatorname{Irr}(K)$ the **Fourier transform** of $f$ at $\pi$ is the operator
 
 $$
-\hat f(\pi) = \int_K f(k)\,\pi(k)\,dk \in \operatorname{End}(\mathcal{H}_\pi) .
+(\mathcal F f)(\pi) = \int_K f(k)\,\pi(k)\,dk \in \operatorname{End}(\mathcal{H}_\pi) .
 $$
 
-Since $\pi(k)$ is unitary and $\|\pi(k)\| = 1$, the integral converges absolutely in the finite-dimensional norm and $\|\hat f(\pi)\| \leq \|f\|_1$. The transform is a map $f \mapsto (\hat f(\pi))_{\pi\in\operatorname{Irr}(K)}$ from functions on $K$ to operator fields on the dual, and it is the compact case of the matrix-valued transform of *Harmonic Analysis on Groups*, §The Matrix-Valued Transform.
+Since $\pi(k)$ is unitary and $\|\pi(k)\| = 1$, the integral converges absolutely in the finite-dimensional norm and $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$. The transform is a map $f \mapsto ((\mathcal F f)(\pi))_{\pi\in\operatorname{Irr}(K)}$ from functions on $K$ to operator fields on the dual, and it is the compact case of the matrix-valued transform of *Harmonic Analysis on Groups*, §The Matrix-Valued Transform.
 
 **Proposition (elementary properties).** For $f, g \in L^1(K)$, $x \in K$ and $\pi \in \operatorname{Irr}(K)$:
 
-**(a)** the transform is linear and $\|\hat f(\pi)\| \leq \|f\|_1$, with $\|\hat f(\pi)\|_{\mathrm{HS}} \leq \sqrt{d_\pi}\,\|f\|_1$;
+**(a)** the transform is linear and $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$, with $\|(\mathcal F f)(\pi)\|_{\mathrm{HS}} \leq \sqrt{d_\pi}\,\|f\|_1$;
 
-**(b)** $\widehat{\lambda(x)f}(\pi) = \pi(x)\hat f(\pi)$ and $\widehat{\rho(x)f}(\pi) = \hat f(\pi)\pi(x)^{-1}$;
+**(b)** $\widehat{\lambda(x)f}(\pi) = \pi(x)(\mathcal F f)(\pi)$ and $\widehat{\rho(x)f}(\pi) = (\mathcal F f)(\pi)\pi(x)^{-1}$;
 
-**(c)** $\widehat{f^*}(\pi) = \hat f(\pi)^*$, where ${}^*$ is the conjugate transpose;
+**(c)** $\widehat{f^*}(\pi) = (\mathcal F f)(\pi)^*$, where ${}^*$ is the conjugate transpose;
 
-**(d)** for a **class function** $f$ — one with $f(xkx^{-1}) = f(k)$ for all $x, k\in K$ — the operator $\hat f(\pi)$ is a scalar multiple of the identity, $\hat f(\pi) = \lambda_\pi(f)\,I$ with
+**(d)** for a **class function** $f$ — one with $f(xkx^{-1}) = f(k)$ for all $x, k\in K$ — the operator $(\mathcal F f)(\pi)$ is a scalar multiple of the identity, $(\mathcal F f)(\pi) = \lambda_\pi(f)\,I$ with
 
 $$
 \lambda_\pi(f) = \frac{1}{d_\pi}\int_K f(k)\,\chi_\pi(k)\,dk .
 $$
 
-**Proof.** (a) is the triangle inequality and the finite-dimensional bound $\|\pi(k)\|_{\mathrm{HS}} = \sqrt{d_\pi}$. (b) is the change of variable $k \mapsto x^{-1}k$, respectively $k\mapsto kx^{-1}$, and the multiplicativity of $\pi$. (c) is $(f*g)^*$ with $\pi(k)^* = \pi(k)^{-1} = \pi(k^{-1})$. For (d): for every $x \in K$, $\pi(x)^{-1}\hat f(\pi)\pi(x) = \int f(k)\pi(x^{-1}kx)\,dk = \int f(xkx^{-1})\pi(k)\,dk = \hat f(\pi)$, since $f$ is a class function and $dk$ is invariant; so $\hat f(\pi)$ commutes with every $\pi(x)$, and since $\pi$ is irreducible Schur's lemma gives $\hat f(\pi) = \lambda I$ for some scalar. Taking traces, $\operatorname{Tr}\hat f(\pi) = \int f\operatorname{Tr}\pi = \int f\chi_\pi$ and also $=\lambda d_\pi$, whence $\lambda = d_\pi^{-1}\int f\chi_\pi$.
+**Proof.** (a) is the triangle inequality and the finite-dimensional bound $\|\pi(k)\|_{\mathrm{HS}} = \sqrt{d_\pi}$. (b) is the change of variable $k \mapsto x^{-1}k$, respectively $k\mapsto kx^{-1}$, and the multiplicativity of $\pi$. (c) is $(f*g)^*$ with $\pi(k)^* = \pi(k)^{-1} = \pi(k^{-1})$. For (d): for every $x \in K$, $\pi(x)^{-1}(\mathcal F f)(\pi)\pi(x) = \int f(k)\pi(x^{-1}kx)\,dk = \int f(xkx^{-1})\pi(k)\,dk = (\mathcal F f)(\pi)$, since $f$ is a class function and $dk$ is invariant; so $(\mathcal F f)(\pi)$ commutes with every $\pi(x)$, and since $\pi$ is irreducible Schur's lemma gives $(\mathcal F f)(\pi) = \lambda I$ for some scalar. Taking traces, $\operatorname{Tr}(\mathcal F f)(\pi) = \int f\operatorname{Tr}\pi = \int f\chi_\pi$ and also $=\lambda d_\pi$, whence $\lambda = d_\pi^{-1}\int f\chi_\pi$.
 
-**Remark ($\hat f$ is compact).** For $f \in L^2(K)$ the operator $\hat f(\pi)$ is determined and the map $f \mapsto (\hat f(\pi))$ is a Hilbert–Schmidt transform; the compactness of the integral operator $T_f : L^2(K) \to L^2(K)$, $T_f h = f * h$, follows from the finite-dimensionality of the constituents, and it is the mechanism of the Peter–Weyl proof. The operator algebra generated by the transforms is the direct sum of the full matrix algebras $\operatorname{End}(\mathcal{H}_\pi)$, and its weak completion is the group von Neumann algebra $L(K),$ which for compact $K$ is a direct sum of type I factors (see *Operator Algebras* and *Type I Groups*).
+**Remark ($\mathcal F f$ is compact).** For $f \in L^2(K)$ the operator $(\mathcal F f)(\pi)$ is determined and the map $f \mapsto ((\mathcal F f)(\pi))$ is a Hilbert–Schmidt transform; the compactness of the integral operator $T_f : L^2(K) \to L^2(K)$, $T_f h = f * h$, follows from the finite-dimensionality of the constituents, and it is the mechanism of the Peter–Weyl proof. The operator algebra generated by the transforms is the direct sum of the full matrix algebras $\operatorname{End}(\mathcal{H}_\pi)$, and its weak completion is the group von Neumann algebra $L(K),$ which for compact $K$ is a direct sum of type I factors (see *Operator Algebras* and *Type I Groups*).
 
 ### The Convolution Theorem
 
 **Theorem.** For $f, g \in L^1(K)$ and every $\pi \in \operatorname{Irr}(K)$,
 
 $$
-\widehat{f*g}(\pi) = \hat f(\pi)\,\hat g(\pi) .
+\widehat{f*g}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F g)(\pi) .
 $$
 
 *Proof.* As in the abelian case, substituting $x = yz$ and using the left-invariance of $dz$ and the multiplicativity of $\pi$,
 
 $$
-\widehat{f*g}(\pi) = \int_K\int_K f(y)g(z)\,\pi(yz)\,dz\,dy = \left(\int_K f(y)\pi(y)\,dy\right)\left(\int_K g(z)\pi(z)\,dz\right) = \hat f(\pi)\hat g(\pi).
+\widehat{f*g}(\pi) = \int_K\int_K f(y)g(z)\,\pi(yz)\,dz\,dy = \left(\int_K f(y)\pi(y)\,dy\right)\left(\int_K g(z)\pi(z)\,dz\right) = (\mathcal F f)(\pi)(\mathcal F g)(\pi).
 $$
 
 Thus the transform is a homomorphism of the Banach algebra $L^1(K)$ into the algebra of operator fields on the dual with pointwise multiplication, and convolution is diagonalised by the transform exactly as in the abelian case, with the scalar product replaced by operator multiplication.
@@ -123,7 +123,7 @@ where $\delta_{\pi\sigma} = 1$ if $\pi \cong \sigma$ and $0$ otherwise.
 
 **Proof sketch.** The proof is an application of Schur's lemma to the operator $A = \int_K \sigma(k)^{-1}B\pi(k)\,dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi, \mathcal{H}_\sigma)$: the invariance $A\pi(x) = \sigma(x)A$ forces $A = 0$ when $\pi\not\cong\sigma$ and $A = \lambda I$ when $\pi = \sigma$, and taking $B$ a matrix unit and traces gives the display. The computation is the standard one; the representation-theoretic input (Schur's lemma, complete reducibility) is Part II's, and the explicit constant $d_\pi^{-1}$ follows from the normalisation $\int_K dk = 1$ by evaluating at $\pi = \sigma$, $i = l$, $j = m$ and summing over $i,j$ against $\chi_\pi(e) = d_\pi$.
 
-**Corollary (orthonormal basis).** The functions $e^\pi_{ij} = \sqrt{d_\pi}\,\pi_{ij}$, for $\pi \in \operatorname{Irr}(K)$ and $1 \leq i,j \leq d_\pi$, form an orthonormal family in $L^2(K)$. They form an orthonormal **basis** of $L^2(K)$, and this is the Peter–Weyl theorem; consequently
+**Corollary (orthonormal basis).** The functions $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$, for $\pi \in \operatorname{Irr}(K)$ and $1 \leq i,j \leq d_\pi$, form an orthonormal family in $L^2(K)$. They form an orthonormal **basis** of $L^2(K)$, and this is the Peter–Weyl theorem; consequently
 
 $$
 L^2(K) \cong \bigoplus_{\pi\in\operatorname{Irr}(K)} \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr),
@@ -177,15 +177,15 @@ where $m^\tau_{\pi\sigma}$ is the multiplicity of $\tau$ in the tensor product $
 
 **Definition.** The **representative-function algebra** (or coefficient algebra) $A(K)$ is the linear span of all matrix coefficients of the finite-dimensional continuous representations of $K$.
 
-**Theorem.** $A(K)$ is a subalgebra of $C(K)$ closed under conjugation and under convolution, it is invariant under left and right translation, and it is dense in $C(K)$ in the supremum norm and in $L^p(K)$ for every $1 \leq p < \infty$. Its completion as a Banach algebra under the norm
+**Theorem.** $A(K)$ is a subalgebra of $C(K)$ closed under conjugation and under convolution, it is invariant under left and right translation, and it is dense in $C(K)$ in the supremum norm and in $L^{n}(K)$ for every $1 \leq p < \infty$. Its completion as a Banach algebra under the norm
 
 $$
-\|f\|_{A} = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|\hat f(\pi)\|_1
+\|f\|_{A} = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_1
 $$
 
 is a Banach $*$-algebra isomorphic to the algebraic direct sum $\bigoplus_{\pi}\operatorname{End}(\mathcal{H}_\pi)$ completed appropriately; in particular $A(K)$ is closed under convolution and the convolution theorem holds inside it without convergence problems.
 
-**Proof.** The set of matrix coefficients is closed under products because $\pi_{ij}\sigma_{lm} = (\pi\otimes\sigma)_{ij,lm}$ is a matrix coefficient of the tensor product, and closed under conjugation because $\overline{\pi_{ij}}$ is a coefficient of the contragredient. Invariance under translation is (b) of the elementary properties. Density in $C(K)$ is the Stone–Weierstrass theorem: $A(K)$ is an algebra containing the constants and closed under conjugation, and it separates points of $K$ because for $x \neq y$ some matrix coefficient of the regular representation separates them. Density in $L^p$ follows from density in $C(K)$ and the finiteness of the measure.
+**Proof.** The set of matrix coefficients is closed under products because $\pi_{ij}\sigma_{lm} = (\pi\otimes\sigma)_{ij,lm}$ is a matrix coefficient of the tensor product, and closed under conjugation because $\overline{\pi_{ij}}$ is a coefficient of the contragredient. Invariance under translation is (b) of the elementary properties. Density in $C(K)$ is the Stone–Weierstrass theorem: $A(K)$ is an algebra containing the constants and closed under conjugation, and it separates points of $K$ because for $x \neq y$ some matrix coefficient of the regular representation separates them. Density in $L^{n}$ follows from density in $C(K)$ and the finiteness of the measure.
 
 ## The Inversion and Plancherel Formulas
 
@@ -194,7 +194,7 @@ is a Banach $*$-algebra isomorphic to the algebraic direct sum $\bigoplus_{\pi}\
 **Theorem (Fourier inversion).** For $f$ in the coefficient algebra $A(K)$ the function is recovered from its transform pointwise and uniformly by
 
 $$
-f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl(\hat f(\pi)\,\pi(k)^{-1}\bigr) ,
+f(k) = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\operatorname{Tr}\bigl((\mathcal F f)(\pi)\,\pi(k)^{-1}\bigr) ,
 $$
 
 the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^2(K)$.
@@ -208,10 +208,10 @@ the sum being finite. For $f \in L^2(K)$ the same series converges to $f$ in $L^
 **Theorem (Plancherel for compact $K$).** For every $f \in L^2(K)$,
 
 $$
-\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|\hat f(\pi)\|_{\mathrm{HS}}^2 ,
+\|f\|_2^2 = \int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 ,
 $$
 
-where $\|\hat f(\pi)\|_{\mathrm{HS}}^2 = \operatorname{Tr}\bigl(\hat f(\pi)\hat f(\pi)^*\bigr)$. Equivalently, the transform extends to a unitary equivalence of Hilbert spaces
+where $\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 = \operatorname{Tr}\bigl((\mathcal F f)(\pi)(\mathcal F f)(\pi)^*\bigr)$. Equivalently, the transform extends to a unitary equivalence of Hilbert spaces
 
 $$
 \mathcal{F} : L^2(K) \longrightarrow \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus} \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr),
@@ -219,11 +219,11 @@ $$
 
 where the direct summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the Hilbert–Schmidt inner product.
 
-**Proof.** The expansion of $f$ in the orthonormal basis $e^\pi_{ij} = \sqrt{d_\pi}\pi_{ij}$ gives $\|f\|_2^2 = \sum_{\pi, i, j} |\langle f, e^\pi_{ij}\rangle|^2$. On the other hand $\langle f, e^\pi_{ij}\rangle = \sqrt{d_\pi}\,\overline{\hat f(\pi)_{ij}}$ from the definition of $\hat f$ and the unitarity of $\pi$, so $\sum_{i,j}|\langle f, e^\pi_{ij}\rangle|^2 = d_\pi\sum_{i,j}|\hat f(\pi)_{ij}|^2 = d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$. Summing over $\pi$ gives the identity; the unitarity statement is its polarised form.
+**Proof.** The expansion of $f$ in the orthonormal basis $\exp(\pi)_{ij} = \sqrt{d_\pi}\pi_{ij}$ gives $\|f\|_2^2 = \sum_{\pi, i, j} |\langle f, \exp(\pi)_{ij}\rangle|^2$. On the other hand $\langle f, \exp(\pi)_{ij}\rangle = \sqrt{d_\pi}\,\overline{(\mathcal F f)(\pi)_{ij}}$ from the definition of $\mathcal F f$ and the unitarity of $\pi$, so $\sum_{i,j}|\langle f, \exp(\pi)_{ij}\rangle|^2 = d_\pi\sum_{i,j}|(\mathcal F f)(\pi)_{ij}|^2 = d_\pi\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2$. Summing over $\pi$ gives the identity; the unitarity statement is its polarised form.
 
 **Corollary (multiplicity of the regular representation).** In the decomposition of the left regular representation on $L^2(K)$, the irreducible $\pi$ occurs with multiplicity $\dim\mathcal{H}_\pi = d_\pi$, on the span of the coefficients $\pi_{ij}$ for fixed $\pi$; hence $\lambda \cong \bigoplus_{\pi\in\operatorname{Irr}(K)} \pi^{\oplus d_\pi}$.
 
-**Corollary (the trivial trace).** For $f \in L^2(K)$, $\hat f(\pi)$ is the operator whose entries are the Fourier coefficients, and $f(e) = \sum_\pi d_\pi\operatorname{Tr}\hat f(\pi)$ whenever the right-hand side converges absolutely; this is the inversion formula at the identity.
+**Corollary (the trivial trace).** For $f \in L^2(K)$, $(\mathcal F f)(\pi)$ is the operator whose entries are the Fourier coefficients, and $f(e) = \sum_\pi d_\pi\operatorname{Tr}(\mathcal F f)(\pi)$ whenever the right-hand side converges absolutely; this is the inversion formula at the identity.
 
 ## The Structure of the Dual
 
@@ -233,7 +233,7 @@ where the direct summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ carries the H
 
 **Proof.** Finite-dimensionality and complete reducibility are Peter–Weyl; discreteness of the dual is the isolation of each finite-dimensional irreducible in the Fell topology, since a small perturbation of a finite-dimensional representation retains an irreducible subrepresentation by the character orthogonality; the description of $L(K)$ follows because the coefficients of distinct irreducibles are mutually orthogonal in $L^2$ and each irreducible contributes a full matrix algebra of operators on the corresponding summand. The type-I statement is then Part II's *Type I Groups*, §Examples and Non-Examples.
 
-**Example (compact abelian).** If $K$ is compact abelian, every irreducible is one-dimensional, $d_\pi = 1$, $\operatorname{Irr}(K) = K^\vee$ is a discrete abelian group, and the formulas above reduce to the abelian inversion and Plancherel of *Harmonic Analysis on Groups*. The circle is the model: $\operatorname{Irr}(S^1) = \mathbb{Z}$ with $\chi_n(\theta) = e^{2\pi i n\theta}$ and $L^2(S^1) \cong \bigoplus_{n\in\mathbb{Z}}\mathbb{C}\chi_n$.
+**Example (compact abelian).** If $K$ is compact abelian, every irreducible is one-dimensional, $d_\pi = 1$, $\operatorname{Irr}(K) = K^\vee$ is a discrete abelian group, and the formulas above reduce to the abelian inversion and Plancherel of *Harmonic Analysis on Groups*. The circle is the model: $\operatorname{Irr}(S^1) = \mathbb{Z}$ with $\chi_n(\theta) = \exp(2\pi i n\theta)$ and $L^2(S^1) \cong \bigoplus_{n\in\mathbb{Z}}\mathbb{C}\chi_n$.
 
 ### Products, Tensor Products and Restrictions
 
@@ -251,15 +251,15 @@ and only finitely many multiplicities are nonzero; the characters multiply as $\
 
 ### The Classical Groups
 
-**The circle and the torus.** $\operatorname{Irr}(S^1) = \{\chi_n : n \in \mathbb{Z}\}$ with $\chi_n(\theta) = e^{2\pi i n\theta}$ and $d_n = 1$; the transform is the Fourier series of *Harmonic Analysis on Groups*, §The Standard Cases, and the orthogonality relation is the elementary $\int_0^1 e^{2\pi i(n-m)\theta}d\theta = \delta_{nm}$. For $T^n$ the dual is $\mathbb{Z}^n$ with characters $\chi_m(x) = e^{2\pi i\langle m,x\rangle}$ and the theory is the multiple Fourier series.
+**The circle and the torus.** $\operatorname{Irr}(S^1) = \{\chi_n : n \in \mathbb{Z}\}$ with $\chi_n(\theta) = \exp(2\pi i n\theta)$ and $d_n = 1$; the transform is the Fourier series of *Harmonic Analysis on Groups*, §The Standard Cases, and the orthogonality relation is the elementary $\int_0^1 \exp(2\pi i(n-m)\theta)d\theta = \delta_{nm}$. For $T^n$ the dual is $\mathbb{Z}^n$ with characters $\chi_m(x) = \exp(2\pi i\langle m,x\rangle)$ and the theory is the multiple Fourier series.
 
-**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_j$ of the defining two-dimensional representation, indexed by the **spin** $j \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of dimension $d_j = 2j+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(e^{i\theta},e^{-i\theta})$:
+**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_j$ of the defining two-dimensional representation, indexed by the **spin** $j \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of dimension $d_j = 2j+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(\exp(i\theta),\exp(-i\theta))$:
 
 $$
 \chi_j(t_\theta) = \frac{\sin\bigl((2j+1)\theta\bigr)}{\sin\theta} , \qquad 0 \leq \theta \leq \pi ,
 $$
 
-the sum of the $2j+1$ eigenvalues $e^{2ij\theta}, e^{2i(j-1)\theta}, \dots, e^{-2ij\theta}$. The class functions on $SU(2)$ are the functions of $\theta$, and $L^2(K)^K$ has orthonormal basis $(\chi_j)$ by the character orthogonality, with
+the sum of the $2j+1$ eigenvalues $\exp(2ij\theta), \exp(2i(j-1)\theta), \dots, \exp(-2ij\theta)$. The class functions on $SU(2)$ are the functions of $\theta$, and $L^2(K)^K$ has orthonormal basis $(\chi_j)$ by the character orthogonality, with
 
 $$
 \int_{SU(2)} |\chi_j|^2\,dk = \frac{2}{\pi}\int_0^\pi \frac{\sin^2((2j+1)\theta)}{\sin^2\theta}\,\sin^2\theta\,d\theta = \frac{2}{\pi}\int_0^\pi \sin^2((2j+1)\theta)\,d\theta = 1 ,
@@ -271,7 +271,7 @@ which is equivalent to $\frac{2}{\pi}\int_0^\pi \sin((2j+1)\theta)\sin((2l+1)\th
 
 ## Summary
 
-On a compact group $K$ the normalised Haar measure $dk$, $\int_K dk = 1$, is bi-invariant and inversion-invariant, and $L^1(K)$ is a Banach $*$-algebra under convolution with the involution $f^*(k) = \overline{f(k^{-1})}$. The Fourier transform $\hat f(\pi) = \int_K f(k)\pi(k)\,dk$ takes values in the finite-dimensional operators $\operatorname{End}(\mathcal{H}_\pi)$, turns convolution into operator multiplication, $\widehat{f*g}(\pi) = \hat f(\pi)\hat g(\pi)$, and is a homomorphism of $L^1(K)$ into the algebra of operator fields on $\operatorname{Irr}(K)$. The orthogonality relations $\int_K\pi_{ij}\overline{\sigma_{lm}} = d_\pi^{-1}\delta_{\pi\sigma}\delta_{il}\delta_{jm}$ make the functions $\sqrt{d_\pi}\pi_{ij}$ an orthonormal basis of $L^2(K)$ (Peter–Weyl), and summing the diagonal gives $\int_K\chi_\pi\overline{\chi_\sigma} = \delta_{\pi\sigma}$ and $\int_K\chi_\pi\chi_\sigma = \delta_{\pi\bar\sigma}$, so that the characters form an orthonormal basis of the class functions. Inversion reads $f(k) = \sum_\pi d_\pi\operatorname{Tr}(\hat f(\pi)\pi(k)^{-1})$ on the coefficient algebra and in $L^2$, and Plancherel reads $\|f\|_2^2 = \sum_\pi d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$; equivalently $L^2(K)\cong\bigoplus_\pi(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)$, each irreducible occurring with multiplicity $d_\pi$. The dual is discrete; products have product duals, tensor products decompose with multiplicities $\int\chi_\pi\chi_\sigma\overline{\chi_\tau}$, and the dual is not a group outside the abelian case. The examples are the Fourier series of the circle, the multiple series of the torus, the discrete Fourier analysis of a finite group with its Wedderburn decomposition, and the representation theory of $SU(2)$ and $SO(3)$ with characters $\sin((2j+1)\theta)/\sin\theta$ and the Wigner $D$-functions as the Peter–Weyl basis.
+On a compact group $K$ the normalised Haar measure $dk$, $\int_K dk = 1$, is bi-invariant and inversion-invariant, and $L^1(K)$ is a Banach $*$-algebra under convolution with the involution $f^*(k) = \overline{f(k^{-1})}$. The Fourier transform $(\mathcal F f)(\pi) = \int_K f(k)\pi(k)\,dk$ takes values in the finite-dimensional operators $\operatorname{End}(\mathcal{H}_\pi)$, turns convolution into operator multiplication, $\widehat{f*g}(\pi) = (\mathcal F f)(\pi)(\mathcal F g)(\pi)$, and is a homomorphism of $L^1(K)$ into the algebra of operator fields on $\operatorname{Irr}(K)$. The orthogonality relations $\int_K\pi_{ij}\overline{\sigma_{lm}} = d_\pi^{-1}\delta_{\pi\sigma}\delta_{il}\delta_{jm}$ make the functions $\sqrt{d_\pi}\pi_{ij}$ an orthonormal basis of $L^2(K)$ (Peter–Weyl), and summing the diagonal gives $\int_K\chi_\pi\overline{\chi_\sigma} = \delta_{\pi\sigma}$ and $\int_K\chi_\pi\chi_\sigma = \delta_{\pi\bar\sigma}$, so that the characters form an orthonormal basis of the class functions. Inversion reads $f(k) = \sum_\pi d_\pi\operatorname{Tr}((\mathcal F f)(\pi)\pi(k)^{-1})$ on the coefficient algebra and in $L^2$, and Plancherel reads $\|f\|_2^2 = \sum_\pi d_\pi\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2$; equivalently $L^2(K)\cong\bigoplus_\pi(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)$, each irreducible occurring with multiplicity $d_\pi$. The dual is discrete; products have product duals, tensor products decompose with multiplicities $\int\chi_\pi\chi_\sigma\overline{\chi_\tau}$, and the dual is not a group outside the abelian case. The examples are the Fourier series of the circle, the multiple series of the torus, the discrete Fourier analysis of a finite group with its Wedderburn decomposition, and the representation theory of $SU(2)$ and $SO(3)$ with characters $\sin((2j+1)\theta)/\sin\theta$ and the Wigner $D$-functions as the Peter–Weyl basis.
 
 ## Summary of Notation
 
@@ -289,9 +289,9 @@ On a compact group $K$ the normalised Haar measure $dk$, $\int_K dk = 1$, is bi-
 | $\lambda$, $\rho$ | Left and right regular representations on $L^2(K)$ |
 | $(f*g)(x) = \int_K f(y)g(y^{-1}x)\,dy$ | Convolution |
 | $f^*(k) = \overline{f(k^{-1})}$ | Involution of $L^1(K)$ |
-| $\hat f(\pi) = \int_K f(k)\pi(k)\,dk$ | Operator-valued Fourier transform |
-| $\|\hat f(\pi)\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
-| $e^\pi_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ | Orthonormal basis of $L^2(K)$ |
+| $(\mathcal F f)(\pi) = \int_K f(k)\pi(k)\,dk$ | Operator-valued Fourier transform |
+| $\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
+| $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ | Orthonormal basis of $L^2(K)$ |
 | $A(K)$ | Representative-function (coefficient) algebra |
 | $\lambda_\pi(f) = d_\pi^{-1}\int_K f\chi_\pi\,dk$ | Scalar transform of a class function |
 | $m^\tau_{\pi\sigma}$ | Multiplicity of $\tau$ in $\pi\otimes\sigma$ |

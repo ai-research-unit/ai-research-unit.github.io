@@ -47,7 +47,7 @@ $$
 e_0\mapsto I_2,\qquad e_1\mapsto -i\sigma_1,\qquad e_2\mapsto -i\sigma_2,\qquad e_3\mapsto -i\sigma_3,
 $$
 
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_k$ is the image of $ie_k$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_0+i\hat{m})$ corresponds to the spin-up projector along the unit vector $\hat{m}$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_k$ is the image of $ie_k$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_0+i\vec u_m)$ corresponds to the spin-up projector along the unit vector $\vec u_m$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
 
 The trace gives a symmetric bilinear form $\mathrm{Tr}(XY)$ on $\mathbb{B}\otimes\mathbb{B}$, and the four Bell idempotents below will be orthonormal with respect to it. It is therefore natural to ask for an **idempotent basis**: a family of idempotents that play, for the algebra and its module, the role that an orthonormal basis plays for a Hilbert space.
 
@@ -374,15 +374,15 @@ Obojska (*Journal of Physics Communications* **4** (2020) 055018), working in th
 **The premise already implies a continuum.** The proof of the corollary begins from the concurrence equation above, whose solution set is the entire continuum of maximally entangled states. The clearest family of solutions is
 
 $$
-\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\phi}\lvert11\rangle\right),\qquad \phi\in[0,2\pi),
+\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\phi)\lvert11\rangle\right),\qquad \phi\in[0,2\pi),
 $$
 
-for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}e^{i\phi}$, $c_2=c_3=0$, so $c_1c_4=\tfrac12 e^{i\phi}$, $\lvert c_1c_4-c_2c_3\rvert=\tfrac12$, and $C=1$ for every $\phi$. Every member of the family is maximally entangled. The source's own first case — $\lvert c_1\rvert=\lvert c_4\rvert$, $c_2=c_3=0$ — is exactly this family, so the free relative phase $\phi$ is already present in the source's case analysis.
+for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}\exp(i\phi)$, $c_2=c_3=0$, so $c_1c_4=\tfrac12 \exp(i\phi)$, $\lvert c_1c_4-c_2c_3\rvert=\tfrac12$, and $C=1$ for every $\phi$. Every member of the family is maximally entangled. The source's own first case — $\lvert c_1\rvert=\lvert c_4\rvert$, $c_2=c_3=0$ — is exactly this family, so the free relative phase $\phi$ is already present in the source's case analysis.
 
 **What the patterns select.** The twelve written patterns do not enumerate this family. They are obtained from the additional assumption — not part of the concurrence equation — that the quotient of the two amplitudes of the division lies in $\{-i,i,-1\}$. In every one of the twelve forms the relative phase of the two nonzero amplitudes is thereby fixed to one of the four values $0,\pm\pi/2,\pi$. A member of the family with $\phi=\pi/4$, say
 
 $$
-\lvert\psi_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\pi/4}\lvert11\rangle\right),
+\lvert\psi_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\pi/4)\lvert11\rangle\right),
 $$
 
 has $C=1$ and is of none of the twelve forms: its relative phase lies outside the discrete set. **Corollary 1 is therefore false as stated.** The twelve patterns are a proper subset of the maximally entangled states, namely the part admitted by the extra quotient assumption. (The source itself remarks that there are "uncountably many" such states, so the corollary can only be read as an exhaustiveness claim; that interpretation is what fails.)
@@ -453,7 +453,7 @@ The article established the following structure.
 - **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The partial trace of every Bell idempotent is the maximally mixed state, $\mathrm{Tr}_1(P_\epsilon)=\mathrm{Tr}_2(P_\epsilon)=\tfrac12 e_0$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.
 - **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the index pairs $\{0,3\}$ and $\{1,2\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_0-e_1-e_2+e_3)$ has concurrence zero — and never carries entanglement.
-- **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+e^{i\phi}\lvert11\rangle)$ is maximally entangled for every $\phi$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
+- **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\phi)\lvert11\rangle)$ is maximally entangled for every $\phi$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
 
 All of this is standard finite-dimensional algebra, expressed in the conventions of the companion articles. The construction presupposes the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$; whether that algebra is canonical for the framework is an open question inherited from the companion articles and is left unresolved.
 
@@ -466,7 +466,7 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 | $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathbb{C}^4\cong\mathbb{B}$ | Two-qubit state space (state vectors) |
 | $\tfrac{1}{\sqrt2}(e_0\pm e_3),\ \tfrac{1}{\sqrt2}(e_1\pm e_2)$ | Bell vectors written in the algebra basis |
 | $C=2\lvert c_1c_4-c_2c_3\rvert$ | Concurrence of a two-qubit pure state |
-| $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+e^{i\phi}\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\phi$ |
+| $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\phi)\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\phi$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |

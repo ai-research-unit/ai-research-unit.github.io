@@ -9,7 +9,7 @@ The article depends on *Quaternion Algebra* for the multiplication table and on 
 
 The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the quaternion norm is the statement over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$; the matrix of left multiplication is $\mathsf{M}_4(\tilde q)$ and the matrix of right multiplication is $\mathsf{M}_4^{R}(\tilde q)$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the matrix of left multiplication is $\mathsf{M}_4(\tilde q)$ and the matrix of right multiplication is $\mathsf{M}_4^{R}(\tilde q)$.
 
 ## The Left Regular Representation
 
@@ -94,7 +94,7 @@ $$
 \end{pmatrix},
 $$
 
-with $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = N(\tilde q)I$, $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2 = 225$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 = 4$.
+with $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$, $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = 225$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 = 4$.
 
 ## Multiplicativity
 
@@ -106,31 +106,31 @@ $$
 
 *Proof.* The first two are the homomorphism property; the third follows from $\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde q^{-1}) = \mathsf{M}_4(\tilde q \tilde q^{-1}) = \mathsf{M}_4(1) = I$ for an invertible $\tilde q$.
 
-**Corollary.** The Cayley matrix of a unit quaternion is invertible, and $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$; in particular the left regular representation restricts to an injective homomorphism of groups $Sp(1)\to O(4)$.
+**Corollary.** The Cayley matrix of a unit quaternion is invertible, and $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$; in particular the left regular representation restricts to an injective homomorphism of groups $Sp(1)\to O(4)$.
 
-*Proof.* $\mathsf{M}_4(\tilde{q}^{\natural}/N(\tilde q)) = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$ and $\mathsf{M}_4(\tilde{q}^{\natural})\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural} \tilde q) = \mathsf{M}_4(N(\tilde q)) = N(\tilde q)I$, so $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$. For a unit $N(\tilde q) = 1$ and $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural}) = \mathsf{M}_4(\tilde q)^{T}$ by the next theorem, so $\mathsf{M}_4(\tilde q)\in O(4)$.
+*Proof.* $\mathsf{M}_4(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$ and $\mathsf{M}_4(\tilde{q}^{\natural})\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural} \tilde q) = \mathsf{M}_4(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}I$, so $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$. For a unit $\langle\tilde q\rangle_{\natural} = 1$ and $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural}) = \mathsf{M}_4(\tilde q)^{T}$ by the next theorem, so $\mathsf{M}_4(\tilde q)\in O(4)$.
 
 ## Determinant and Trace
 
 **Theorem.** For every quaternion,
 
 $$
-\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2 = (q_0^2+q_1^2+q_2^2+q_3^2)^2, \qquad \operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 .
+\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = (q_0^2+q_1^2+q_2^2+q_3^2)^2, \qquad \operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 .
 $$
 
 *Proof.* The trace is the sum of the diagonal entries $q_0+q_0+q_0+q_0 = 4q_0$. For the determinant, compute $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q)$. By the next theorem $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, so
 
 $$
-\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural})\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural} \tilde q) = \mathsf{M}_4(N(\tilde q)) = N(\tilde q)\,I,
+\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural})\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural} \tilde q) = \mathsf{M}_4(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}\,I,
 $$
 
-whence $(\det \mathsf{M}_4(\tilde q))^2 = \det(N(\tilde q)I) = N(\tilde q)^4$, and $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$ by the sign check at $\tilde q = 1$, where $\mathsf{M}_4(1) = I$ and $\det = 1 = N(1)^2$.
+whence $(\det \mathsf{M}_4(\tilde q))^2 = \det(\langle\tilde q\rangle_{\natural}I) = \langle\tilde q\rangle_{\natural}^4$, and $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$ by the sign check at $\tilde q = 1$, where $\mathsf{M}_4(1) = I$ and $\det = 1 = \langle 1\rangle_{\natural}^2$.
 
 **Corollary.** The Cayley matrix of a non-zero quaternion is invertible, and $\det \mathsf{M}_4(\tilde q) > 0$ for $\tilde q\neq0$; the representation $\mathsf{M}_4$ sends $\mathbb{H}^{\times}$ into $GL_4(F)$, and over $\mathbb{R}$ the determinant is a perfect square.
 
-*Proof.* $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2\neq0$ for $\tilde q\neq0$ by the unit criterion, and the square of a non-zero real number is positive.
+*Proof.* $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2\neq0$ for $\tilde q\neq0$ by the unit criterion, and the square of a non-zero real number is positive.
 
-**Remark.** The identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ says that $\mathsf{M}_4(\tilde q)$ is $\sqrt{N(\tilde q)}$ times an orthogonal matrix; on the unit sphere the map $\tilde q\mapsto \mathsf{M}_4(\tilde q)$ is then a homomorphism $Sp(1)\to SO(4)$, the left-translation factor of the two-sided covering $Sp(1)\times Sp(1)\to SO(4)$, whose matrix form is recorded in *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and whose other factor is the right regular representation.
+**Remark.** The identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ says that $\mathsf{M}_4(\tilde q)$ is $\sqrt{\langle\tilde q\rangle_{\natural}}$ times an orthogonal matrix; on the unit sphere the map $\tilde q\mapsto \mathsf{M}_4(\tilde q)$ is then a homomorphism $Sp(1)\to SO(4)$, the left-translation factor of the two-sided covering $Sp(1)\times Sp(1)\to SO(4)$, whose matrix form is recorded in *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and whose other factor is the right regular representation.
 
 ## Transposition and the Conjugations
 
@@ -178,7 +178,7 @@ $$
 **Theorem.** The right representation has the same determinant and trace,
 
 $$
-\det \mathsf{M}_4^{R}(\tilde q) = N(\tilde q)^2, \qquad \operatorname{tr}\mathsf{M}_4^{R}(\tilde q) = 4q_0,
+\det \mathsf{M}_4^{R}(\tilde q) = \langle\tilde q\rangle_{\natural}^2, \qquad \operatorname{tr}\mathsf{M}_4^{R}(\tilde q) = 4q_0,
 $$
 
 and it satisfies $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ together with the relation
@@ -218,9 +218,9 @@ $$
 
 ## Summary
 
-The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$.
+The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$.
 
-The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
+The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
 
 The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$.
 
@@ -231,15 +231,15 @@ The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is 
 | $\mathbb{H}$ | The quaternion algebra |
 | $F$ | Base field |
 | $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q)$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
 | $\mathsf{M}_4(\tilde q)$ | Cayley matrix of left multiplication $\tilde r\mapsto \tilde q \tilde r$ |
 | $M_4(\mathbb{R})_L=\operatorname{image}\mathsf{M}_4$ | the regular matrices, the real subspace of dimension $4$ inside $M_4(\mathbb{R})$ |
 | $\Omega_q = \mathsf{M}_4(\tilde q) - q_0I$ | Skew-symmetric part of the Cayley matrix |
 | $\mathsf{M}_4^{R}(\tilde q)$ | Matrix of right multiplication $\tilde r\mapsto \tilde r\tilde q$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ |
 | $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ | Transposition as conjugation |
-| $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$ | Determinant and trace |
-| $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ | Orthogonality up to the quaternion norm scale |
+| $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$ | Determinant and trace |
+| $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ | Orthogonality up to the quaternion norm scale |
 | $\mathbb{H}^{\mathrm{opp}}$ | Opposite algebra, the commutant of the left image |
 
 ## Further Reading

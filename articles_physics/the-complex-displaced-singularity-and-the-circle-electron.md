@@ -15,10 +15,10 @@ The article is in three steps. It fixes the singular set of the displaced potent
 In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\vec x) = \frac{q}{4\pi\epsilon}\,\frac{1}{\|\vec x-\vec r_0\|},
+\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\vec x) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|\vec x-\vec r_0\|},
 $$
 
-where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\vec x\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\vec x=\vec r_0$, a single point, and it is the kernel $1/\|\vec x-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $q/4\pi\epsilon$ and are set aside below.
+where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\vec x\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\vec x=\vec r_0$, a single point, and it is the kernel $1/\|\vec x-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.
 
 Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\zeta)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
 
@@ -112,10 +112,10 @@ $$
 
 ### The Vanishing of the Integral
 
-The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=e^{i\varphi}$ turns the integral into a contour integral over the unit circle,
+The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=\exp(i\varphi)$ turns the integral into a contour integral over the unit circle,
 
 $$
-\int_0^{2\pi}\frac{\varepsilon+\varrho e^{i\varphi}}{\bigl[\varepsilon+2\varrho e^{i\varphi}\bigr]^2}\,d\varphi
+\int_0^{2\pi}\frac{\varepsilon+\varrho \exp(i\varphi)}{\bigl[\varepsilon+2\varrho \exp(i\varphi)\bigr]^2}\,d\varphi
 = \frac{1}{i}\oint \frac{\varepsilon+\varrho u}{u\,(\varepsilon+2\varrho u)^2}\,du ,
 $$
 
@@ -136,7 +136,7 @@ The corpus records a second ring-shaped electron, and the two must be kept apart
 | Equation | linear vacuum Maxwell, $\tilde{\nabla}\tilde{F}=0$ | nonlinear primary Cauchy–Riemann system |
 | Ring arises from | complex displacement of a point singularity into $\mathbb{M}_+$ | self-dual solution of the nonlinear system |
 | Radius | free, equal to the imaginary displacement $\varrho$ | fixed by the equation, the admissible family $R_n$ |
-| Charge | arbitrary | self-quantised, minimal value $|q|=\tfrac14$ |
+| Charge | arbitrary | self-quantised, minimal value $|ϙ|=\tfrac14$ |
 | Gravity | none | Kerr–Newman metric, $g=2$ |
 
 Both are classical models in which the electron is a ring rather than a point, and both are recorded in the corpus as external programmes rather than as results. The difference is the equation. Lanczos's ring lives on the **linear** Cauchy–Riemann equation, where the complex displacement is a symmetry of the equation and the ring is its image; the algebrodynamical ring lives on a **nonlinear, over-determined** primary equation, where the ring, the quantised charge and the induced metric are consequences of the nonlinearity. The linear ring has a free radius and no quantisation; the nonlinear ring has a fixed radius, a quantised charge and a metric. The corpus's linear framework reaches the first and is silent on the second, which is the boundary the algebrodynamical article states.

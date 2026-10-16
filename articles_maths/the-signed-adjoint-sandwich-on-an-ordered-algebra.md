@@ -111,7 +111,7 @@ Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grad
 
 ### The Clifford Algebra
 
-Let $A = \mathrm{Cl}(V,q)$ with the parity grading and let $e$ be a vector with $e^{2} = -1$, an odd reflection element. The signed sandwich $\Theta^{\alpha}_{e,e^{-1}} = \tau_e$ is a reflection, and its adjoint $\tau_{\alpha(e^{*})}$ is again a reflection; the parameters of the adjoint are the $\alpha$-twists of the adjoint of $e$, and the whole computation reduces to the parity of $e$. The Clifford case is the geometric instance of the adjoint formula.
+Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and let $e$ be a vector with $e^{2} = -1$, an odd reflection element. The signed sandwich $\Theta^{\alpha}_{e,e^{-1}} = \tau_e$ is a reflection, and its adjoint $\tau_{\alpha(e^{*})}$ is again a reflection; the parameters of the adjoint are the $\alpha$-twists of the adjoint of $e$, and the whole computation reduces to the parity of $e$. The Clifford case is the geometric instance of the adjoint formula.
 
 ## Summary
 

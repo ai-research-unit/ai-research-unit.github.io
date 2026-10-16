@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Each of the two general products carries an adjoint calculus, one adjoint for each pairing, and this article gathers the two rules and works them on examples. The plain product gives the transpose of the regular operators with respect to the plain pairing; the quaternionic product gives the conjugate transpose with respect to the quaternion pairing. The article is a synthesis: the operator calculus is *Association and the Transpose on the Quaternion Algebra* and the two operator articles of the general quaternionic block, above this article in this category, and the two forms that define them are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category.
+Each of the two general products carries an adjoint calculus, one adjoint for each pairing, and this article gathers the two rules and works them on examples. The plain product gives the transpose of the regular operators with respect to the plain pairing; the quaternionic product gives the conjugate transpose with respect to the quaternion pairing. The article is a synthesis: the operator calculus is *Association and the Transpose on the Quaternion Algebra* and the two operator articles of the general quaternionic block, above this article in this category, and the two forms that define them are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, above this article in this category.
 
 ## The Two Adjoint Rules
 
@@ -11,16 +11,16 @@ $$
 \langle T\tilde y,\tilde z\rangle=\langle\tilde y,T^{\dagger}\tilde z\rangle \qquad\text{for all }\tilde y,\tilde z .
 $$
 
-**Theorem.** For the plain pairing $B(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\tilde q)$,
+**Theorem.** For the plain pairing $\langle\tilde p,\tilde q\rangle=\operatorname{Sc}(\tilde p\tilde q)$,
 $$
 L_{\tilde x}^{\dagger}=R_{\tilde x} , \qquad R_{\tilde x}^{\dagger}=L_{\tilde x} ;
 $$
-for the quaternion pairing $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)$,
+for the quaternion pairing $\langle\tilde p,\tilde q\rangle_{\natural}=\operatorname{Sc}(\tilde p^{\natural}\tilde q)$,
 $$
 L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}} , \qquad R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}} .
 $$
 
-**Proof.** For the plain product, $B(L_{\tilde x}\tilde y,\tilde z)=\operatorname{Sc}(\tilde x\tilde y\tilde z)$ and $B(\tilde y,R_{\tilde x}\tilde z)=\operatorname{Sc}(\tilde y\tilde z\tilde x)$; the two are equal by the invariance of the scalar part under the cyclic permutation of a product, $\operatorname{Sc}(abc)=\operatorname{Sc}(bca)=\operatorname{Sc}(cab)$. The second identity follows by symmetry, or by taking the adjoint of the first. For the quaternionic product, $N(L_{\tilde x}\tilde y,\tilde z)=\operatorname{Sc}((\tilde x\tilde y)^{\natural}\tilde z)=\operatorname{Sc}(\tilde y^{\natural}\tilde x^{\natural}\tilde z)=N(\tilde y,L_{\tilde x^{\natural}}\tilde z)$, using $(\tilde x\tilde y)^{\natural}=\tilde y^{\natural}\tilde x^{\natural}$; the right-hand identity is the same computation with the cyclic order carried the other way, $N(R_{\tilde x}\tilde y,\tilde z)=\operatorname{Sc}((\tilde y\tilde x)^{\natural}\tilde z)=\operatorname{Sc}(\tilde x^{\natural}\tilde y^{\natural}\tilde z)=N(\tilde y,R_{\tilde x^{\natural}}\tilde z)$.
+**Proof.** For the plain product, $\langle L_{\tilde x}\tilde y,\tilde z\rangle=\operatorname{Sc}(\tilde x\tilde y\tilde z)$ and $\langle\tilde y,R_{\tilde x}\tilde z\rangle=\operatorname{Sc}(\tilde y\tilde z\tilde x)$; the two are equal by the invariance of the scalar part under the cyclic permutation of a product, $\operatorname{Sc}(abc)=\operatorname{Sc}(bca)=\operatorname{Sc}(cab)$. The second identity follows by symmetry, or by taking the adjoint of the first. For the quaternionic product, $\langle L_{\tilde x}\tilde y,\tilde z\rangle_{\natural}=\operatorname{Sc}((\tilde x\tilde y)^{\natural}\tilde z)=\operatorname{Sc}(\tilde y^{\natural}\tilde x^{\natural}\tilde z)=\langle\tilde y,L_{\tilde x^{\natural}}\tilde z\rangle_{\natural}$, using $(\tilde x\tilde y)^{\natural}=\tilde y^{\natural}\tilde x^{\natural}$; the right-hand identity is the same computation with the cyclic order carried the other way, $\langle R_{\tilde x}\tilde y,\tilde z\rangle_{\natural}=\operatorname{Sc}((\tilde y\tilde x)^{\natural}\tilde z)=\operatorname{Sc}(\tilde x^{\natural}\tilde y^{\natural}\tilde z)=\langle\tilde y,R_{\tilde x^{\natural}}\tilde z\rangle_{\natural}$.
 
 The two rules are one rule: the adjoint of a regular operator is the regular operator whose parameter is the parameter's conjugate, and the conjugation moves from the parameter to the side on which the plain pairing is read, because the plain pairing does not conjugate and the quaternion pairing does.
 
@@ -39,7 +39,7 @@ $$
 \langle L_{\tilde x}\tilde y,\tilde z\rangle_B=\langle\tilde y,R_{\tilde x}\tilde z\rangle_B , \qquad
 \langle L_{\tilde x}\tilde y,\tilde z\rangle_N=\langle\tilde y,L_{\tilde x^{\natural}}\tilde z\rangle_N ,
 $$
-and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde y\mapsto\tilde x\tilde y\tilde z$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $N(\tilde y^{\natural},\tilde z^{\natural})=\overline{N(\tilde y,\tilde z)}=N(\tilde y,\tilde z)$, the pairing being real valued.
+and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde y\mapsto\tilde x\tilde y\tilde z$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $\langle\tilde y^{\natural},\tilde z^{\natural}\rangle_{\natural}=\overline{\langle\tilde y,\tilde z\rangle_{\natural}}=\langle\tilde y,\tilde z\rangle_{\natural}$, the pairing being real valued.
 
 ## Summary
 
@@ -58,6 +58,6 @@ The plain product has the adjoint rule $L_{\tilde x}^{\dagger}=R_{\tilde x}$ and
 ## Further Reading
 
 - *Association and the Transpose on the Quaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-quaternion-algebra.md`), above this article in this category.
-- *Two-Sided Operators on the General Quaternionic Algebra of Quaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-quaternioid.md`), above this article in this category.
-- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternioid-r-space.md`), above this article in this category.
+- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-quaternioid.md`), above this article in this category.
+- *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternioid-r-space.md`), above this article in this category.
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the complex rung.

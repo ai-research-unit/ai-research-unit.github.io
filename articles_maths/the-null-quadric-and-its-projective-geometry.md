@@ -4,7 +4,7 @@
 
 The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
 
-The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
+The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
 
 **Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.
 
@@ -54,7 +54,7 @@ $$
 \langle\tilde R,\tilde S\rangle_{\natural}=\tfrac12\bigl(Z_0Z'_3+Z_3Z'_0-Z_1Z'_2-Z_2Z'_1\bigr),
 $$
 
-the polarisation of $Z_0Z_3-Z_1Z_2$, which returns the norm on the diagonal, $\langle\tilde R,\tilde R\rangle_{\natural}=N(\tilde R)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
+the polarisation of $Z_0Z_3-Z_1Z_2$, which returns the norm on the diagonal, $\langle\tilde R,\tilde R\rangle_{\natural}=\langle\tilde R\rangle_{\natural}$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
 
 $$
 W_{[u]}=\operatorname{span}\{(\alpha,0,\beta,0),\,(0,\alpha,0,\beta)\}=\{(\alpha\sigma,\alpha\tau,\beta\sigma,\beta\tau):\sigma,\tau\in\mathbb{C}\}

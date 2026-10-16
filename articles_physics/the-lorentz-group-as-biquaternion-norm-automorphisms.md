@@ -7,27 +7,27 @@ The group that acts on the material sector of the biquaternion framework has so 
 The point of the automorphism interpretation is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
 $$
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = \sum_{\mu=0}^{3}Q_\mu^2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = \sum_{\mu=0}^{3}Q_\mu^2,
 $$
 
 and it satisfies
 
 $$
-N(\tilde{Q}\tilde{R}) = N(\tilde{Q})\,N(\tilde{R})
+\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}
 $$
 
 for all biquaternions $\tilde{Q},\tilde{R}$. A multiplicative quadratic form on a four-dimensional algebra is a rare object, and the group that preserves it is thereby tied to the algebra's multiplication rather than imposed from outside. The automorphism group of the form on the complex algebra is $O(4,\mathbb{C})$; the automorphisms that also preserve the algebra's **real structure** — the anti-Hermitian material slice — form the Lorentz group.
 
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
-- **At the complex level**, $N$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$, acting by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$.
+- **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$, acting by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ by unit-norm biquaternions, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
 **Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \vec x$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{Q} = ict\,e_0 + \vec x$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Biquaternion Norm as a Quadratic Form
 
@@ -36,47 +36,47 @@ The biquaternion norm is the quadratic map
 $$
 N:\ \mathbb{B}\longrightarrow\mathbb{C},
 \qquad
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 ,
 $$
 
 whose polarization is the symmetric bilinear form
 
 $$
-B(\tilde{Q},\tilde{R}) = \tfrac12\left[N(\tilde{Q}+\tilde{R}) - N(\tilde{Q}) - N(\tilde{R})\right]
+\langle\tilde{Q},\tilde{R}\rangle = \tfrac12\left[\langle\tilde{Q}+\tilde{R}\rangle_{\natural} - \langle\tilde{Q}\rangle_{\natural} - \langle\tilde{R}\rangle_{\natural}\right]
 = Q_0R_0 + Q_1R_1 + Q_2R_2 + Q_3R_3 .
 $$
 
 In the coordinate basis $(e_0,e_1,e_2,e_3)$ its matrix is the identity,
 
 $$
-B(\tilde{Q},\tilde{R}) = \sum_\mu Q_\mu R_\mu ,
+\langle\tilde{Q},\tilde{R}\rangle = \sum_\mu Q_\mu R_\mu ,
 \qquad
 G = \mathrm{diag}(+1,+1,+1,+1) ,
 $$
 
-so $N$ is a **nondegenerate complex quadratic form of maximal Witt index** on $\mathbb{C}^4$. It is not positive definite over $\mathbb{C}$ — no complex form is — and it is isotropic: it has nonzero null vectors, which are the zero divisors of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*.
+so $\langle\cdot\rangle_{\natural}$ is a **nondegenerate complex quadratic form of maximal Witt index** on $\mathbb{C}^4$. It is not positive definite over $\mathbb{C}$ — no complex form is — and it is isotropic: it has nonzero null vectors, which are the zero divisors of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
-Two properties make $N$ the algebra's own form rather than a form on a vector space.
+Two properties make $\langle\cdot\rangle_{\natural}$ the algebra's own form rather than a form on a vector space.
 
 **Multiplicativity.** For all $\tilde{Q},\tilde{R}$,
 
 $$
-N(\tilde{Q}\tilde{R})
+\langle\tilde{Q}\tilde{R}\rangle_{\natural}
 = \tilde{Q}\tilde{R}\,\overline{\tilde{Q}\tilde{R}}
 = \tilde{Q}\tilde{R}\,\overline{\tilde{R}}\,\overline{\tilde{Q}}
-= \tilde{Q}\,N(\tilde{R})\,\overline{\tilde{Q}}
-= N(\tilde{R})\,\tilde{Q}\overline{\tilde{Q}}
-= N(\tilde{Q})\,N(\tilde{R}),
+= \tilde{Q}\,\langle\tilde{R}\rangle_{\natural}\,\overline{\tilde{Q}}
+= \langle\tilde{R}\rangle_{\natural}\,\tilde{Q}\overline{\tilde{Q}}
+= \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural},
 $$
 
-where the fourth equality uses that $N(\tilde{R})$ is a complex scalar and therefore central in $\mathbb{B}$. The biquaternion norm is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
+where the fourth equality uses that $\langle\tilde{R}\rangle_{\natural}$ is a complex scalar and therefore central in $\mathbb{B}$. The biquaternion norm is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
 
 **Compatibility with the real structure.** The conjugations act on the form by
 
 $$
-N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})} = N(\tilde{Q})^{*},
+\langle\tilde{Q}^{*}\rangle_{\natural} = \overline{\langle\tilde{Q}\rangle_{\natural}} = \langle\tilde{Q}\rangle_{\natural}^{*},
 \qquad
-N(\tilde{Q}^{\natural}) = N(\tilde{Q}),
+\langle\tilde{Q}^{\natural}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
 $$
 
 so the form is real on the Hermitian and anti-Hermitian slices. This is what will allow the complex form to restrict to a real form of Minkowski signature.
@@ -84,11 +84,11 @@ so the form is real on the Hermitian and anti-Hermitian slices. This is what wil
 **Automorphisms of the form.** An automorphism of $(\mathbb{B},N)$ is an invertible $\mathbb{C}$-linear map $T$ with
 
 $$
-N(T\tilde{Q}) = N(\tilde{Q})
+\langle T\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}
 \qquad\text{for all }\tilde{Q}\in\mathbb{B}.
 $$
 
-Since $N$ is nondegenerate with matrix the identity, the group of such maps is the complex orthogonal group
+Since $\langle\cdot\rangle_{\natural}$ is nondegenerate with matrix the identity, the group of such maps is the complex orthogonal group
 
 $$
 O(4,\mathbb{C}) = \{\,T\in GL_4(\mathbb{C}) : T^{T}T = I_4\,\},
@@ -107,10 +107,10 @@ Q_0 - iQ_3 & -iQ_1 - Q_2\\
 -iQ_1 + Q_2 & Q_0 + iQ_3
 \end{pmatrix},
 \qquad
-\det\mathsf{M}_2(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = N(\tilde{Q}).
+\det\mathsf{M}_2(\tilde{Q}) = Q_0^2+Q_1^2+Q_2^2+Q_3^2 = \langle\tilde{Q}\rangle_{\natural}.
 $$
 
-The biquaternion norm **is the determinant**, and $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\mathsf{M}_2(\tilde{Q})$ and $N(\tilde{Q})$ agreeing to machine precision.
+The biquaternion norm **is the determinant**, and $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras. The verification of the determinant identity is a direct expansion; it was also checked numerically on random biquaternions, with $\det\mathsf{M}_2(\tilde{Q})$ and $\langle\tilde{Q}\rangle_{\natural}$ agreeing to machine precision.
 
 The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map
 
@@ -123,12 +123,12 @@ $$
 It is invertible and $\mathbb{C}$-linear, and its effect on the form is
 
 $$
-N(T_{\tilde{A},\tilde{B}}\tilde{Q}) = \det\!\left(\tilde{A}\tilde{Q}\tilde{B}^{-1}\right)
+\langle T_{\tilde{A},\tilde{B}}\tilde{Q}\rangle_{\natural} = \det\!\left(\tilde{A}\tilde{Q}\tilde{B}^{-1}\right)
 = \frac{\det\tilde{A}}{\det\tilde{B}}\,\det\tilde{Q}
-= \frac{\det\tilde{A}}{\det\tilde{B}}\,N(\tilde{Q}).
+= \frac{\det\tilde{A}}{\det\tilde{B}}\,\langle\tilde{Q}\rangle_{\natural}.
 $$
 
-Preservation of $N$ therefore requires $\det\tilde{A} = \det\tilde{B}$, and one may normalize both to unit determinant; the surviving pairs are $(\tilde{A},\tilde{B})\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(\tilde{A},\tilde{B})\mapsto T_{\tilde{A},\tilde{B}}$ is the set of pairs acting trivially, $T_{\tilde{A},\tilde{B}} = \mathrm{id}$, which is
+Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det\tilde{A} = \det\tilde{B}$, and one may normalize both to unit determinant; the surviving pairs are $(\tilde{A},\tilde{B})\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(\tilde{A},\tilde{B})\mapsto T_{\tilde{A},\tilde{B}}$ is the set of pairs acting trivially, $T_{\tilde{A},\tilde{B}} = \mathrm{id}$, which is
 
 $$
 \ker = \{\,(\lambda I_2,\lambda I_2) : \lambda\in\mathbb{C}^\times\,\},
@@ -166,10 +166,10 @@ $$
 the biquaternion norm is real and indefinite:
 
 $$
-N(\tilde{Q}) = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 + \vec x^2 .
+\langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 + \vec x^2 .
 $$
 
-The restriction of $N$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix
 
 $$
 \eta = \mathrm{diag}(-1,+1,+1,+1),
@@ -177,7 +177,7 @@ $$
 
 the level-2 Minkowski form of the series. Identifying $x_0 = ct$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
-| Slice | General element | $N$ | Signature |
+| Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
 | $\mathbb{H}_{\mathbb{B}}$ | $a_0e_0 + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $i\mathbb{H}_{\mathbb{B}}$ | $i(a_0e_0+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
@@ -190,7 +190,7 @@ The real structure is not decoration: it is what tells the complex group which r
 
 ## The Lorentz Group as the Automorphisms of the Slice
 
-Consider the automorphisms of $N$ that preserve the real slice:
+Consider the automorphisms of $\langle\cdot\rangle_{\natural}$ that preserve the real slice:
 
 $$
 \mathcal{G} = \{\,T\in O(4,\mathbb{C}) : T(\mathbb{M}_-)\subseteq\mathbb{M}_-\,\}.
@@ -199,7 +199,7 @@ $$
 On $\mathbb{M}_-$ the map $T$ is a real-linear transformation, and the condition
 
 $$
-N(T\tilde{Q}) = N(\tilde{Q})\ \text{ for all }\tilde{Q}\in\mathbb{M}_-
+\langle T\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\ \text{ for all }\tilde{Q}\in\mathbb{M}_-
 $$
 
 says exactly that $T$ preserves the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Hence
@@ -243,18 +243,18 @@ so the image is again anti-Hermitian.
 **It preserves the form.** By multiplicativity,
 
 $$
-N(\tilde{U}\tilde{Q}\tilde{U}^{*})
-= N(\tilde{U})\,N(\tilde{Q})\,N(\tilde{U}^{*})
-= 1\cdot N(\tilde{Q})\cdot\overline{N(\tilde{U})}
-= N(\tilde{Q}),
+\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}
+= \langle\tilde{U}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{U}^{*}\rangle_{\natural}
+= 1\cdot \langle\tilde{Q}\rangle_{\natural}\cdot\overline{\langle\tilde{U}\rangle_{\natural}}
+= \langle\tilde{Q}\rangle_{\natural},
 $$
 
-using $N(\tilde{U}) = 1$ and $N(\tilde{U}^{*}) = \overline{N(\tilde{U})} = 1$.
+using $\langle\tilde{U}\rangle_{\natural} = 1$ and $\langle\tilde{U}^{*}\rangle_{\natural} = \overline{\langle\tilde{U}\rangle_{\natural}} = 1$.
 
 **It defines a homomorphism.** Since $\pi(\tilde{U}_1)\pi(\tilde{U}_2) = \pi(\tilde{U}_1\tilde{U}_2)$ and $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*}$ reuses the same $\tilde{U}$ on both sides, the assignment is a continuous group homomorphism
 
 $$
-\pi:\ SL(2,\mathbb{C}) = \{\tilde{U} : N(\tilde{U}) = 1\} \longrightarrow SO^+(1,3).
+\pi:\ SL(2,\mathbb{C}) = \{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
 $$
 
 Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{M}_-$. Since $-e_0$ is central,
@@ -276,7 +276,7 @@ The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronou
 
 $$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_0\}
-\;=\;\{\pi(\tilde{U}): N(\tilde{U})=1\}/\ker\pi .\;}
+\;=\;\{\pi(\tilde{U}): \langle\tilde{U}\rangle_{\natural}=1\}/\ker\pi .\;}
 $$
 
 
@@ -292,7 +292,7 @@ $$
 \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C}),
 $$
 
-of complex dimension three. In the parametrization $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ of the norm automorphisms above — where preservation of $N$ required only $\det\tilde{A}=\det\tilde{B}$ — this is the **diagonal** $\tilde{A}=\tilde{B}=\tilde{M}$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$,
+of complex dimension three. In the parametrization $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det\tilde{A}=\det\tilde{B}$ — this is the **diagonal** $\tilde{A}=\tilde{B}=\tilde{M}$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$,
 
 $$
 SO(3,\mathbb{C}) \;\cong\; \frac{SL(2,\mathbb{C})}{\{\pm e_0\}} \;\subset\; SO(4,\mathbb{C}),
@@ -398,10 +398,10 @@ $$
 \qquad \varepsilon\in\mathbb{R},\quad \varepsilon\ll1 .
 $$
 
-The condition $N(\tilde{U}) = 1$ becomes
+The condition $\langle\tilde{U}\rangle_{\natural} = 1$ becomes
 
 $$
-N(e_0+\varepsilon\tilde{Q}) = (e_0+\varepsilon\tilde{Q})(e_0+\varepsilon\tilde{Q}^{\natural})
+\langle e_0+\varepsilon\tilde{Q}\rangle_{\natural} = (e_0+\varepsilon\tilde{Q})(e_0+\varepsilon\tilde{Q}^{\natural})
 = e_0 + \varepsilon\left(\tilde{Q}+\tilde{Q}^{\natural}\right) + O(\varepsilon^2)
 = e_0 + 2\varepsilon\,\mathrm{Sc}(\tilde{Q}) + O(\varepsilon^2),
 $$
@@ -490,12 +490,12 @@ The conventions of the construction are those of the following companion article
 
 ## Summary
 
-The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
+The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
 
 $$
-N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R}),
+\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde{R}\rangle_{\natural},
 \qquad
-N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})}.
+\langle\tilde{Q}^{*}\rangle_{\natural} = \overline{\langle\tilde{Q}\rangle_{\natural}}.
 $$
 
 Its automorphism group at the complex level is $O(4,\mathbb{C})$, whose connected component is
@@ -507,7 +507,7 @@ $$
 realized by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ with $\det\tilde{A}=\det\tilde{B}=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
 
 $$
-N(ict\,e_0+\vec x) = -c^2t^2+\vec x^2,
+\langle ict\,e_0+\vec x\rangle_{\natural} = -c^2t^2+\vec x^2,
 \qquad
 \eta = \mathrm{diag}(-1,+1,+1,+1),
 $$
@@ -519,7 +519,7 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
 \qquad
 \tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*},
 \qquad
-N(\tilde{U})=1,
+\langle\tilde{U}\rangle_{\natural}=1,
 $$
 
 the map being two-to-one with kernel $\{\pm e_0\}$. Infinitesimally, the algebra is $\mathrm{SL}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_k = e_k$ and the boost generators $\mathcal{K}_k = ie_k$, with
@@ -558,9 +558,9 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$; $i$ | Quaternion basis ($e_k^2=-e_0$); central scalar imaginary |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
-| $B(\tilde{Q},\tilde{R}) = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
-| $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $N$; its identity component |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
+| $\langle\tilde{Q},\tilde{R}\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
+| $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $\langle\cdot\rangle_{\natural}$; its identity component |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
 | $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ | Complex group |
@@ -571,9 +571,9 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 Minkowski form, restriction of $N$ to $\mathbb{M}_-$ |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 Minkowski form, restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
-| $\tilde{U}$, $N(\tilde{U})=1$ | Unit-norm biquaternion (Lorentz rotor) |
+| $\tilde{U}$, $\langle\tilde{U}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_0\}$ | Two-to-one covering homomorphism |
 | $\mathrm{SL}(2,\mathbb{C}) = \{X:\mathrm{Sc}(\tilde{Q})=0\}$ | Lie algebra; $\mathcal{J}_k=e_k$ (rotations), $\mathcal{K}_k=ie_k$ (boosts) |

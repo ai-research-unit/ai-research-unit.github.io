@@ -14,7 +14,7 @@ The findings are stated in advance.
 4. **The symmetric two-branch case is a dephasing channel.** When the momentum branches are symmetric about the boost axis, the two Wigner rotations are rotations about a common axis by opposite angles, and their average is the dephasing of the spin about that axis: the Bloch component along the Wigner axis is preserved and the transverse components are damped by $\cos\alpha$, where $\alpha$ is the Wigner angle.
 5. **The $SL(2,\mathbb{C})$-invariant concurrence is a spinor concurrence.** In the spinor description, $\tilde{\Lambda}\otimes\tilde{\Lambda}$ acts with unit determinant on each factor and leaves the symplectic concurrence $|\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi|$ exactly invariant; the frame dependence appears only after normalization, i.e. only for configurations with momentum spread, which is the algebraic statement that the effect is kinematic rather than dynamical.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the little group, the Wigner rotation, and the distinction between the spinor action and the spin-state rotation.
@@ -66,15 +66,15 @@ The framework inherits all three unchanged: they are computed from the trace and
 
 ### Sharp momenta: local unitary rotations
 
-Consider two massive particles with sharp four-velocities $\tilde{U}_1,\tilde{U}_2$. Their joint state is a product of a momentum part and a spin part,
+Consider two massive particles with sharp four-velocities $\tilde{V}_1,\tilde{V}_2$. Their joint state is a product of a momentum part and a spin part,
 $$
-|\Psi\rangle = |\tilde{U}_1\rangle\otimes|\tilde{U}_2\rangle\otimes|\chi\rangle , \qquad |\chi\rangle\in S\otimes S ,
+|\Psi\rangle = |\tilde{V}_1\rangle\otimes|\tilde{V}_2\rangle\otimes|\chi\rangle , \qquad |\chi\rangle\in S\otimes S ,
 $$
-and a Lorentz transformation $\tilde{\Lambda}$ maps the momentum labels to $\tilde{U}_j' = \tilde{\Lambda}\tilde{U}_j\tilde{\Lambda}^{*}$ and applies to the spin the Wigner rotations of the two particles,
+and a Lorentz transformation $\tilde{\Lambda}$ maps the momentum labels to $\tilde{V}_j' = \tilde{\Lambda}\tilde{V}_j\tilde{\Lambda}^{*}$ and applies to the spin the Wigner rotations of the two particles,
 $$
-|\Psi\rangle \ \longmapsto\ |\tilde{U}_1'\rangle\otimes|\tilde{U}_2'\rangle\otimes\bigl(\tilde{W}_1\otimes\tilde{W}_2\bigr)|\chi\rangle ,
+|\Psi\rangle \ \longmapsto\ |\tilde{V}_1'\rangle\otimes|\tilde{V}_2'\rangle\otimes\bigl(\tilde{W}_1\otimes\tilde{W}_2\bigr)|\chi\rangle ,
 \qquad
-\tilde{W}_j = \tilde{W}(\tilde{\Lambda},\tilde{U}_j)\in SU(2).
+\tilde{W}_j = \tilde{W}(\tilde{\Lambda},\tilde{V}_j)\in SU(2).
 $$
 This is the standard action of the Lorentz group on definite-momentum one-particle states, and it is the content of the Wigner construction: the momentum labels move, the spin is rotated by an element of the little group, and the transformation is unitary on the full Hilbert space.
 
@@ -91,13 +91,13 @@ The theorem is worth stating because it is the exact sense in which the framewor
 
 ### A worked sharp-momentum instance
 
-The theorem is easily checked in an instance that also supplies the Wigner rotor used below. Let particle $A$ have speed $0.5c$ and momentum making angle $\theta = 0.8$ with the boost axis $\hat z$, and let particle $B$ have momentum along $\hat z$, so that $\tilde{W}_B = e_0$. For a boost of rapidity $\psi = 1$ the Wigner rotor of $A$ is
+The theorem is easily checked in an instance that also supplies the Wigner rotor used below. Let particle $A$ have speed $0.5c$ and momentum making angle $\theta = 0.8$ with the boost axis $\vec u_z$, and let particle $B$ have momentum along $\vec u_z$, so that $\tilde{W}_B = e_0$. For a boost of rapidity $\psi = 1$ the Wigner rotor of $A$ is
 $$
-\tilde{W}_A = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\hat y
-= 0.995308\,e_0 + 0.096756\,\hat y,
+\tilde{W}_A = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\vec u_y
+= 0.995308\,e_0 + 0.096756\,\vec u_y,
 \qquad \alpha = 0.193815\ \text{rad} = 11.1048^\circ ,
 $$
-a rotation about $\hat y\propto\hat z\times\hat u_{\mathrm b}$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_0$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
+a rotation about $\vec u_y\propto\vec u_z\times\vec u_{\mathrm b}$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_0$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
 
 ## Momentum Superposition and the Frame Dependence
 
@@ -105,20 +105,20 @@ a rotation about $\hat y\propto\hat z\times\hat u_{\mathrm b}$, as the geometry 
 
 Let the momentum of each particle be a superposition. Write the total state as
 $$
-|\Psi\rangle = \sum_{i}\sqrt{q_i}\,|\tilde{U}_{1,i}\rangle\otimes|\tilde{U}_{2,i}\rangle\otimes|\chi_i\rangle ,
-\qquad \sum_i q_i = 1 ,
+|\Psi\rangle = \sum_{i}\sqrt{w_i}\,|\tilde{V}_{1,i}\rangle\otimes|\tilde{V}_{2,i}\rangle\otimes|\chi_i\rangle ,
+\qquad \sum_i w_i = 1 ,
 $$
 where the spin state may itself be correlated with the momentum branch. The Lorentz transformation acts branch by branch,
 $$
-|\Psi\rangle \ \longmapsto\ \sum_i\sqrt{q_i}\,|\tilde{U}_{1,i}'\rangle\otimes|\tilde{U}_{2,i}'\rangle\otimes
+|\Psi\rangle \ \longmapsto\ \sum_i\sqrt{w_i}\,|\tilde{V}_{1,i}'\rangle\otimes|\tilde{V}_{2,i}'\rangle\otimes
 \bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)|\chi_i\rangle ,
 \qquad
-\tilde{W}_{j,i} = \tilde{W}(\tilde{\Lambda},\tilde{U}_{j,i}),
+\tilde{W}_{j,i} = \tilde{W}(\tilde{\Lambda},\tilde{V}_{j,i}),
 $$
-so the boost is a **controlled rotation**: it rotates the spin by an amount that depends on the momentum. When the states $|\tilde{U}_{j,i}\rangle$ are orthogonal, tracing the momentum leaves the spin state
+so the boost is a **controlled rotation**: it rotates the spin by an amount that depends on the momentum. When the states $|\tilde{V}_{j,i}\rangle$ are orthogonal, tracing the momentum leaves the spin state
 $$
 \tilde{\rho}_{\mathrm{spin}} \ \longmapsto\
-\sum_i q_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}_{\mathrm{spin},i}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger ,
+\sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}_{\mathrm{spin},i}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger ,
 $$
 a **mixed-unitary channel** on the spin factor whose Kraus operators are the branch Wigner rotations. Two features are immediate and are the whole of the mechanism.
 
@@ -128,18 +128,18 @@ First, the channel is unitary — hence entanglement-preserving — if and only 
 
 The simplest instance is sharp enough to be worked in closed form. Let particle $A$ have a momentum in a symmetric superposition of two directions making angles $\pm\theta$ with the boost axis in a common plane, and let particle $B$ have a sharp momentum parallel to the boost axis, so that $\tilde{W}_B = e_0$ and the boost acts on $A$ alone. By the symmetry, the two branch rotations are
 $$
-\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_0 \pm \sin\frac{\alpha}{2}\,\hat u_{\mathrm r},
+\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_0 \pm \sin\frac{\alpha}{2}\,\vec u_{\mathrm r},
 \qquad \alpha = \alpha(\psi,\theta),
 $$
-rotations about a common axis $\hat u_{\mathrm r}$ by opposite angles, and the channel is
+rotations about a common axis $\vec u_{\mathrm r}$ by opposite angles, and the channel is
 $$
 \tilde{\rho}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{\rho}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{\rho}_A\tilde{W}_{A,-}^{*}\bigr).
 $$
-Writing the Bloch vector of $\tilde{\rho}_A$ as $\vec r = r_\parallel\hat u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
+Writing the Bloch vector of $\tilde{\rho}_A$ as $\vec r = r_\parallel\vec u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
 r_\parallel \ \longmapsto\ r_\parallel, \qquad \vec r_\perp \ \longmapsto\ \cos\alpha\ \vec r_\perp ,
 $$
-so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\hat u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\hat u_{\mathrm r}$; for $\vec r\perp\hat u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\hat u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
+so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\vec u_{\mathrm r}$; for $\vec r\perp\vec u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
 $$
 S(\tilde{\rho}_A') = h\!\left(\frac{1+r'}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
@@ -174,7 +174,7 @@ The comparison of the two tables isolates the origin of the effect: what matters
 
 The channel of the previous subsection is **unital**: each branch rotates the identity into the identity,
 $$
-\sum_i q_i\,\tilde{W}_i\,e_0\,\tilde{W}_i^{*} = \sum_i q_i\,e_0 = e_0 ,
+\sum_i w_i\,\tilde{W}_i\,e_0\,\tilde{W}_i^{*} = \sum_i w_i\,e_0 = e_0 ,
 $$
 because every Wigner rotor is unitary. The maximally mixed spin state is therefore fixed, and the fully mixed state is a fixed point of every frame transformation. A consequence is worth recording: for the state $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$ the marginal of each particle is maximally mixed, and it remains maximally mixed under the boost, so the entire frame dependence of the concurrence is invisible in the single-particle marginals. The effect is a change in the *correlations* of the pair, not in the statistics of either particle alone. This is also why the boost cannot be used to signal: the marginal of the un-boosted particle is untouched, by the cyclicity of the partial trace, and the change in the joint state is only visible to an observer who has access to both particles and knows the momentum distribution.
 
@@ -202,11 +202,11 @@ The channel above is controlled by one number per branch, the Wigner angle, and 
 
 **Definition.** An element of $SU(2)$ is a unit real quaternion, and every such element is a rotation,
 $$
-\tilde{W} = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\hat u_{\mathrm r}, \qquad |\hat u_{\mathrm r}| = 1 ,
+\tilde{W} = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\vec u_{\mathrm r}, \qquad |\vec u_{\mathrm r}| = 1 ,
 $$
-with $\alpha$ the **Wigner angle** and $\hat u_{\mathrm r}$ the rotation axis. For a boost of rapidity $\psi$ along $\hat z$ and a particle of rapidity $\chi$ along a direction making angle $\theta$ with the boost axis, the axis is perpendicular to both,
+with $\alpha$ the **Wigner angle** and $\vec u_{\mathrm r}$ the rotation axis. For a boost of rapidity $\psi$ along $\vec u_z$ and a particle of rapidity $\chi$ along a direction making angle $\theta$ with the boost axis, the axis is perpendicular to both,
 $$
-\hat u_{\mathrm r} \propto \hat z\times\hat u_{\mathrm b},
+\vec u_{\mathrm r} \propto \vec u_z\times\vec u_{\mathrm b},
 $$
 and the angle depends on $\theta$ in a way that the following checks determine.
 
@@ -222,7 +222,7 @@ which is verified to machine precision at several rapidities. The angle increase
 $$
 \alpha = \tfrac12\,\psi\chi\,\sin\theta + O(3),
 $$
-with the coefficient $1/2$ confirmed by a numerical limit in which both rapidities are driven to zero at fixed ratio; since $\psi\approx v/c$ and $\chi\approx u/c$ at low speed, this is the leading Thomas–Wigner term $\alpha\approx vu\sin\theta/(2c^2)$, the rotation that accompanies the composition of two non-collinear boosts.
+with the coefficient $1/2$ confirmed by a numerical limit in which both rapidities are driven to zero at fixed ratio; since $\psi\approx v/c$ and $\chi\approx v_b/c$ at low speed, this is the leading Thomas–Wigner term $\alpha\approx v\,v_b\sin\theta/(2c^2)$, the rotation that accompanies the composition of two non-collinear boosts.
 
 **The maximum.** For fixed rapidities the angle vanishes at the endpoints and has a single maximum in between. For a boost of rapidity $\psi = 1.5$ and a particle of speed $0.5c$, the angle rises from $0$ at $\theta = 0$ through $11.40^\circ$ at $30^\circ$ and $15.58^\circ$ at $45^\circ$ to a maximum of $19.60^\circ$ near $\theta = 80^\circ$, then returns to $0$ at $\theta = 180^\circ$. The maximum is therefore attained, to within a few degrees, at perpendicular momentum, but the exact location is somewhat below $90^\circ$ and drifts as the rapidities change.
 
@@ -250,7 +250,7 @@ For two particles of definite four-velocity, a Lorentz transformation acts on th
 
 For a momentum superposition, the boost acts branch by branch and is a momentum-controlled rotation; tracing the momentum leaves the spin state acted on by the mixed-unitary channel
 $$
-\tilde{\rho}\ \longmapsto\ \sum_i q_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
+\tilde{\rho}\ \longmapsto\ \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
 $$
 The channel is unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r')/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
 
@@ -266,12 +266,12 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $C(|\Psi\rangle) = \|\langle\Psi|\tilde{\Psi}|\Psi^{*}\rangle\|$ | Concurrence, $\tilde{\Psi}=(i\sigma_2)\otimes(i\sigma_2)$ |
 | $E = S(\mathrm{Tr}_2\tilde\Pi)$ | Entanglement entropy of a pure state |
-| $\tilde{U}_j$ | Four-velocity of particle $j$, $N(\tilde{U}_j) = -c^2$ |
-| $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$ | Wigner rotation |
+| $\tilde{V}_j$ | Four-velocity of particle $j$, $\langle\tilde{V}_j\rangle_{\natural} = -c^2$ |
+| $\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\in SU(2)$ | Wigner rotation |
 | $\tilde{W}_{j,i}$ | Wigner rotation of particle $j$ in momentum branch $i$ |
-| $q_i$ | Momentum-branch probabilities, $\sum_iq_i = 1$ |
+| $w_i$ | Momentum-branch probabilities, $\sum_iw_i = 1$ |
 | $\alpha$ | Wigner angle of a branch |
-| $\hat u_{\mathrm r}$ | Wigner rotation axis |
+| $\vec u_{\mathrm r}$ | Wigner rotation axis |
 | $h(p) = -p\log p-(1-p)\log(1-p)$ | Binary entropy |
 | $\epsilon = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | Symplectic form, $\tilde{\Lambda}^{\mathsf T}\epsilon\tilde{\Lambda} = \det(\tilde{\Lambda})\epsilon$ |
 | $\mathcal{C}(\psi) = \|\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi\|$ | Symplectic (unnormalized) concurrence |

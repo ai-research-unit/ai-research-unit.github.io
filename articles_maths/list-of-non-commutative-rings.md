@@ -14,7 +14,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | Ring | Centre | Zero divisors | The structure that is lost | Introduced in |
 |---|---|---|---|---|
 | $M_n(R)$, $n \geq 2$ | the scalars | $E_{11}E_{22} = 0$ | commutativity; the ring is simple for $R$ a field | *Matrix Algebras* |
-| $M_2(\mathbb{C})$ | $\mathbb{C}$ | yes | the biquaternion algebra is this ring | *Biquaternions as a Vector Space over $\mathbb{C}$* |
+| $M_2(\mathbb{C})$ | $\mathbb{C}$ | yes | the biquaternion algebra is this ring | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | the upper triangular matrices | the diagonal | strictly upper triangular matrices square to zero | not simple: it has a nontrivial nilpotent ideal | *Matrix Algebras* |
 | $M_n(R) \times M_m(S)$ | $Z(R) \times Z(S)$ | $(1,0)(0,1) = 0$ | not simple | *Examples of Rings and Fields* |
 
@@ -25,11 +25,11 @@ The matrix ring is the standard non-commutative ring: it is simple when the coef
 | Ring | Centre | Zero divisors | What it is | Introduced in |
 |---|---|---|---|---|
 | $\mathbb{H}$ | $\mathbb{R}$ | none | a division ring, and a domain | *Quaternion Algebra* |
-| $\mathbb{B}$, the biquaternions | $\mathbb{C}$ | yes | isomorphic to $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra | *Biquaternions as a Vector Space over $\mathbb{C}$* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\mathbb{D}$ | yes | isomorphic to $\mathbb{H} \oplus \mathbb{H}$ via the idempotents $e_{\pm}$ | *Split-Biquaternion Algebra* |
+| $\mathbb{B}$, the biquaternions | $\mathbb{C}$ | yes | isomorphic to $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\mathbb{D}$ | yes | isomorphic to $\mathbb{H} \oplus \mathbb{H}$ via the idempotents $\tilde\Pi_{1,2}$ | *Split-Biquaternion Algebra* |
 | $\mathbb{O}$, the octonions | $\mathbb{R}$ | none | not a ring: the multiplication is not associative | *Octonion Algebra* |
 
-The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $e_{\pm} = \tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_1 \pi_2 = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.
+The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$, which satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.
 
 ## The Group Rings
 
@@ -52,7 +52,7 @@ A group ring is commutative exactly when the group is abelian, so the non-commut
 | $T(V)$, the tensor algebra | $\bigoplus_{n \geq 0} V^{\otimes n}$ | the free associative algebra on the vector space $V$ | *Tensor Powers and the Free Algebra* |
 | $\Lambda(V)$, the exterior algebra | $T(V)/(v \otimes v)$ | the free graded-commutative algebra; $v^2 = 0$ | *The Exterior Algebra* |
 | $A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$, the Weyl algebra | the quantised polynomial ring in two variables | the algebra of differential operators on $k[x]$ | *Quotients of the Tensor Algebra* |
-| $\mathbb{C}\ell(V, q)$, a Clifford algebra | $T(V)/(v \otimes v - q(v))$ | the quantised exterior algebra | *Clifford Algebras* |
+| $\mathbb{C}\ell(V, \mathfrak{Q})$, a Clifford algebra | $T(V)/(v \otimes v - \mathfrak{Q}(v))$ | the quantised exterior algebra | *Clifford Algebras* |
 
 The free algebra and the tensor algebra are the non-commutative analogues of the polynomial ring, and they lose the commutative universal property: a homomorphism from $R\langle x_1, \dots, x_n\rangle$ may send the $x_i$ to arbitrary elements, but the images need not commute, so the commutative polynomial ring is a quotient of the free algebra by the commutator ideal. The Weyl algebra and the Clifford algebras are the quotients of the tensor algebra in which the commutator and the square are fixed by a relation, and they are the standard quantisations.
 
@@ -62,13 +62,13 @@ The free algebra and the tensor algebra are the non-commutative analogues of the
 |---|---|---|---|
 | $M_n(k)$, $n \geq 2$ | yes | $(0)$ and $M_n(k)$ alone | *Matrix Algebras* |
 | $\mathbb{H}$ | yes | $(0)$ and $\mathbb{H}$ alone | *Quaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | yes | $(0)$ and $\mathbb{B}$ alone | *Biquaternions as a Vector Space over $\mathbb{C}$* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$ | yes | $(0)$ and $\mathbb{B}$ alone | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | no | the two ideals $\mathbb{H}\pi_1$ and $\mathbb{H}\pi_2$ | *Split-Biquaternion Algebra* |
 | $A_1(k)$ | yes | $(0)$ and $A_1(k)$ alone | *Quotients of the Tensor Algebra* |
 | the free algebra $R\langle x_1, \dots, x_n\rangle$ | no | the commutator ideal and the ideals generated by the relations | *Tensor Powers and the Free Algebra* |
 | the upper triangular matrices | no | the nilpotent ideal of strictly upper triangular matrices | *Matrix Algebras* |
 
-The simple rings replace the maximal ideals of the commutative theory: a commutative ring is a field exactly when its only ideals are $(0)$ and $(1)$, and the non-commutative analogue is the simple ring, of which $M_n(k)$ and $A_1(k)$ are the standard examples. The split-biquaternions are the example that shows the difference between simple and semisimple, since they are semisimple without being simple, and their two ideals come from the idempotents $e_{\pm}$.
+The simple rings replace the maximal ideals of the commutative theory: a commutative ring is a field exactly when its only ideals are $(0)$ and $(1)$, and the non-commutative analogue is the simple ring, of which $M_n(k)$ and $A_1(k)$ are the standard examples. The split-biquaternions are the example that shows the difference between simple and semisimple, since they are semisimple without being simple, and their two ideals come from the idempotents $\tilde\Pi_{1,2}$.
 
 ## What Is Lost by Comparison with the Commutative Case
 
@@ -109,10 +109,10 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $E_{11}, E_{22}$ | Matrix units |
 | $\mathbb{H}$, $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{O}$ | Quaternions, biquaternions, split-biquaternions, octonions |
 | $\mathbb{D}$ | The split-complex numbers, the centre of $\mathbb{H}_{\mathbb{D}}$ |
-| $e_{\pm} = \tfrac{1}{2}(1 \pm j)$ | The idempotents of $\mathbb{H}_{\mathbb{D}}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | The idempotents of $\mathbb{H}_{\mathbb{D}}$ |
 | $k[G]$, $k[F_n]$, $k[C_2]$ | Group rings; $F_n$ free, $C_2$ of order two |
 | $R\langle x_1,\dots,x_n\rangle$ | The free algebra |
-| $T(V)$, $\Lambda(V)$, $\mathbb{C}\ell(V,q)$ | Tensor, exterior and Clifford algebras |
+| $T(V)$, $\Lambda(V)$, $\mathbb{C}\ell(V,\mathfrak{Q})$ | Tensor, exterior and Clifford algebras |
 | $A_1(k)$ | The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$ |
 | $[a,b] = ab - ba$ | The commutator |
 

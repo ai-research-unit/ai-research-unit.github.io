@@ -6,7 +6,7 @@ A Clifford algebra over a definite real form can be made a Euclidean space by de
 
 The algebraic half is in Part I. The three invariant scalar forms — the blade form, the Hermitian–Schmidt form and the trace form — their diagonalisation by the blades, their definiteness and the adjoints of left and right multiplication with respect to them are in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*. What is added here is the metric layer: the form as a scalar product on a Hilbert space, the norm and its failure to be submultiplicative, and the completion.
 
-The conventions are those of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*: $\mathrm{Cl}(V,q)$ is the Clifford algebra of a quadratic form $q$, the $e_I$ are the blades of an orthogonal basis, and $\mathrm{Sc}$ is the scalar part.
+The conventions are those of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*: $\mathrm{Cl}(V,\mathfrak{Q})$ is the Clifford algebra of a quadratic form $\mathfrak{Q}$, the $e_I$ are the blades of an orthogonal basis, and $\mathrm{Sc}$ is the scalar part.
 
 ## The Euclidean Form and the Completion
 
@@ -18,7 +18,7 @@ $$
 
 the form in which the blades of an orthonormal basis are an orthonormal basis. Over a real base with $q$ positive definite it is the blade form of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, and $\langle x,x\rangle = \sum_I a_I^{2} > 0$; over a complex base the same positive structure is the conjugate-reversion form $\sum_I \bar a_I b_I = \mathrm{Sc}(x^{r,\sigma}y)$, $\sigma$-sesquilinear and positive definite.
 
-**Proposition.** Over a real base with $q$ positive definite the Euclidean form makes $\mathrm{Cl}(V,q)$ a finite-dimensional Hilbert space; its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented, in *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*. The blade form and the form of the dagger are the Euclidean form twisted by the signature signs, so all three are unitarily equivalent after a diagonal change of basis; the distinction between them is the distinction between the geometries and not between the topological spaces.
+**Proposition.** Over a real base with $q$ positive definite the Euclidean form makes $\mathrm{Cl}(V,\mathfrak{Q})$ a finite-dimensional Hilbert space; its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented, in *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*. The blade form and the form of the dagger are the Euclidean form twisted by the signature signs, so all three are unitarily equivalent after a diagonal change of basis; the distinction between them is the distinction between the geometries and not between the topological spaces.
 
 ## Boundedness of the Multiplication Operators
 
@@ -50,13 +50,13 @@ by Cauchy–Schwarz on the $2^{n}$ coefficients. Then $\|xy\| = \|L_xy\| \le \|L
 
 ## Summary
 
-Over a real base with $q$ positive definite the **Euclidean form** $(x,y)=\sum_I a_I b_I$, in which the blades are orthonormal, makes $\mathrm{Cl}(V,q)$ a finite-dimensional Hilbert space, and its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented. With the Euclidean norm every left and right multiplication is bounded, with $\|xy\|\le 2^{n/2}\|x\|\|y\|$ — a constant that is the price of the failure of the norm to be submultiplicative, and the reason the algebra is completed as a Hilbert space rather than as a Banach algebra in this norm. **Cauchy–Schwarz** holds for the Euclidean form, the set $\{x:(x,x)\le1\}$ is the compact closed unit ball, and $\{x:x=y^{\dagger}y\}$ is the positive cone. The algebraic forms, their definiteness and the adjoints of the multiplications are in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
+Over a real base with $q$ positive definite the **Euclidean form** $(x,y)=\sum_I a_I b_I$, in which the blades are orthonormal, makes $\mathrm{Cl}(V,\mathfrak{Q})$ a finite-dimensional Hilbert space, and its completion in infinite dimension is the Hilbert space on which the canonical anticommutation relations are represented. With the Euclidean norm every left and right multiplication is bounded, with $\|xy\|\le 2^{n/2}\|x\|\|y\|$ — a constant that is the price of the failure of the norm to be submultiplicative, and the reason the algebra is completed as a Hilbert space rather than as a Banach algebra in this norm. **Cauchy–Schwarz** holds for the Euclidean form, the set $\{x:(x,x)\le1\}$ is the compact closed unit ball, and $\{x:x=y^{\dagger}y\}$ is the positive cone. The algebraic forms, their definiteness and the adjoints of the multiplications are in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{Cl}(V,q)$ | Clifford algebra of a quadratic form $q$ |
+| $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of a quadratic form $\mathfrak{Q}$ |
 | $e_I$, $i_1 < \dots < i_k$ | Blade of an orthogonal basis |
 | $\mathrm{Sc}(x)$ | Scalar part, the coefficient of $1$ |
 | $(x,y) = \sum_I a_Ib_I$ | Euclidean form, blades orthonormal |

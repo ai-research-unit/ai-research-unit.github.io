@@ -35,7 +35,7 @@ so $\mathcal{R}$ preserves the type of bivectors and decomposes into a Hermitian
 
 **Definition.** On a Hermitian manifold the **Chern connection** is the unique connection $\nabla$ on $TM$ that is metric for $g$, has $\nabla^{0,1} = \bar\partial$ as its $(0,1)$-part, and satisfies $\nabla J = 0$ in its $(1,1)$-part; its **curvature** is $\Theta = \nabla^2 \in \Omega^{1,1}(\operatorname{End}TM)$, a $(1,1)$-form with values in the skew-Hermitian endomorphisms $\mathfrak{u}(n)$ of each tangent space.
 
-**Proposition (the Chern curvature operator preserves type).** The curvature of the Chern connection is of type $(1,1)$ with values in $\mathfrak u(n)$; its operator $R^{\mathbb C} = \Theta$ on $\Lambda^2T_pM\otimes\mathbb C$ acts as a complex-linear map preserving the bidegree, $R^{\mathbb C}(\Lambda^{p,q})\subseteq\Lambda^{p,q}$, and its action on $\Lambda^{1,1}$ is the Hermitian part of the curvature operator,
+**Proposition (the Chern curvature operator preserves type).** The curvature of the Chern connection is of type $(1,1)$ with values in $\mathfrak u(n)$; its operator $R^{\mathbb C} = \Theta$ on $\Lambda^2T_pM\otimes\mathbb C$ acts as a complex-linear map preserving the bidegree, $R^{\mathbb C}(\Lambda^{n,m})\subseteq\Lambda^{n,m}$, and its action on $\Lambda^{1,1}$ is the Hermitian part of the curvature operator,
 $$
 \langle R^{\mathbb C}(X\wedge\bar Y), Z\wedge\bar W\rangle = \Theta(X,\bar Y; Z,\bar W) ;
 $$

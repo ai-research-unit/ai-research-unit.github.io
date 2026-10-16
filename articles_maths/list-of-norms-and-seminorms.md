@@ -20,17 +20,17 @@ This article lists the norms, seminorms and families of seminorms that the corpu
 
 | Object | The space it defines, and the completeness it gives | Introduced in |
 |---|---|---|
-| the $\ell^p$ norm $\lVert(x_n)\rVert_p$ | $\ell^p$; complete for $1 \leq p \leq \infty$ | *Normed and Banach Spaces* |
+| the $\ell^{n}$ norm $\lVert(x_n)\rVert_p$ | $\ell^{n}$; complete for $1 \leq p \leq \infty$ | *Normed and Banach Spaces* |
 | the supremum norm $\lVert f\rVert_\infty = \sup_x \lvert f(x)\rvert$ | $C(K)$, $C_b(X)$, $B(X,Y)$; complete when the target is complete | *Normed and Banach Spaces*; *Metric, Uniform and Complete Spaces* |
 | the essential supremum norm | $L^\infty(\mu)$; complete | *Measure Theory and Integration* |
-| the $L^p$ norm $\lVert f\rVert_p$ | $L^p(\mu)$; complete for $1 \leq p \leq \infty$ | *Measure Theory and Integration* |
-| the Sobolev norm $\lVert f\rVert_{W^{k,p}}$ | $W^{k,p}(\Omega)$; complete | *Sobolev Spaces and Weak Solutions* |
-| the homogeneous Sobolev norm, and $p^* = np/(n-p)$ | the Sobolev conjugate exponent, with the embedding $W^{1,p}\hookrightarrow L^{p^*}$ | *Sobolev Spaces and Weak Solutions* |
-| the Bessel-potential norm $\lVert(1-\Delta)^{s/2}f\rVert_p$ | $H^s_p$; complete | *Interpolation Theory* |
+| the $L^{n}$ norm $\lVert f\rVert_p$ | $L^{n}(\mu)$; complete for $1 \leq p \leq \infty$ | *Measure Theory and Integration* |
+| the Sobolev norm $\lVert f\rVert_{W^{k,n}}$ | $W^{k,n}(\Omega)$; complete | *Sobolev Spaces and Weak Solutions* |
+| the homogeneous Sobolev norm, and $p^* = np/(n-p)$ | the Sobolev conjugate exponent, with the embedding $W^{1,n}\hookrightarrow L^{n^*}}$ | *Sobolev Spaces and Weak Solutions* |
+| the Bessel-potential norm $\lVert(1-\Delta)^{s/2}f\rVert_p$ | $H^{s}_{n}$; complete | *Interpolation Theory* |
 | the Hölder norm | $C^{k,\alpha}$; complete | *Besov and Triebel–Lizorkin Spaces* |
-| the Besov norm (an $\ell^q(L^p)$ norm of the Littlewood–Paley blocks) | $B^s_{p,q}$; a quasi-norm for $p<1$ or $q<1$, complete | *Besov and Triebel–Lizorkin Spaces* |
-| the Triebel–Lizorkin norm (an $L^p(\ell^q)$ norm of the blocks) | $F^s_{p,q}$; complete | *Besov and Triebel–Lizorkin Spaces* |
-| the Lorentz norm | $L^{p,q}$; complete, and the interpolation norm between two $L^p$ norms | *Interpolation Theory* |
+| the Besov norm (an $\ell^{m}(L^{n})$ norm of the Littlewood–Paley blocks) | $B^{s}_{n,m}$; a quasi-norm for $p<1$ or $q<1$, complete | *Besov and Triebel–Lizorkin Spaces* |
+| the Triebel–Lizorkin norm (an $L^{n}(\ell^{m})$ norm of the blocks) | $F^{s}_{n,m}$; complete | *Besov and Triebel–Lizorkin Spaces* |
+| the Lorentz norm | $L^{n},q}$; complete, and the interpolation norm between two $L^{n}$ norms | *Interpolation Theory* |
 | the Hardy-space norm $\lVert f\rVert_{H^p}$ | $H^p(\mathbb D)$ for $1 \leq p \leq \infty$; complete for $1 \leq p < \infty$, and $H^\infty$ is the bounded holomorphic functions | *Complex Harmonic Analysis* |
 | the Paley–Wiener norm inherited from $L^2$ | $PW_B$; a closed subspace of $L^2$, hence complete | *Complex Harmonic Analysis* |
 | the total-variation norm $\lvert\nu\rvert(X)$ | the space of signed and complex measures; complete | *Measure Theory and Integration* |
@@ -68,14 +68,14 @@ This article lists the norms, seminorms and families of seminorms that the corpu
 | Object | The property that fails | Introduced in |
 |---|---|---|
 | $\lvert f(0)\rvert$ on the continuous functions | vanishes on the nonzero functions that are $0$ at $0$: a seminorm and not a norm | *Locally Convex Spaces* |
-| $L^p(\mu)$ with $0 < p < 1$ | the triangle inequality fails; the function is a quasi-norm and not a norm, and the topology is not locally convex | *Locally Convex Spaces* |
+| $L^{n}(\mu)$ with $0 < p < 1$ | the triangle inequality fails; the function is a quasi-norm and not a norm, and the topology is not locally convex | *Locally Convex Spaces* |
 | the constant function $0$ | vanishes on every vector: the degenerate seminorm | *Locally Convex Spaces* |
 | the sup norm on $C^k(U)$ | does not control the derivatives, so it does not make $C^k$ complete: a norm, but not the one the class carries | *Differential Calculus on Normed Spaces* |
 | the spectral radius $r(a)$ | subadditive and submultiplicative, but not positive definite: a quasinilpotent element satisfies $r(a) = 0$ with $a \neq 0$ | *Topological Algebras and Banach Algebras* |
 
 ## Summary
 
-This list gathers the norms of the corpus — the operator, inner-product, supremum, $L^p$, Sobolev, Hölder, Besov, Triebel–Lizorkin and Lorentz norms, with the completeness each confers — and the seminorms, either single or in generating families, that define the locally convex, Fréchet and inductive-limit topologies. The final table records the functions that are named or used as norms and fail to be one.
+This list gathers the norms of the corpus — the operator, inner-product, supremum, $L^{n}$, Sobolev, Hölder, Besov, Triebel–Lizorkin and Lorentz norms, with the completeness each confers — and the seminorms, either single or in generating families, that define the locally convex, Fréchet and inductive-limit topologies. The final table records the functions that are named or used as norms and fail to be one.
 
 ## Summary of Notation
 
@@ -88,7 +88,7 @@ The objects are named rather than denoted; the symbols used in the tables are co
 | $\mathcal P$ | a generating family of seminorms |
 | $\lvert\cdot\rvert_p$, $v_p$ | the $p$-adic absolute value and valuation |
 | $F$-norm, Fréchet | the invariant metric norm and the complete metrisable locally convex case |
-| quasi-norm | a function failing the triangle inequality, as in $L^p$ with $p<1$ |
+| quasi-norm | a function failing the triangle inequality, as in $L^{n}$ with $p<1$ |
 
 ## Further Reading
 

@@ -121,13 +121,13 @@ for every $k$, natural with respect to smooth maps, where the second is the comp
 
 *Proof.* The first isomorphism is the theorem of the previous section. The second is the comparison theorem: a smooth manifold is paracompact and locally contractible, and for such a space the sheaf cohomology of the constant sheaf is the singular cohomology. The stated corollaries are the corollaries of the theorem of de Rham recorded in the written article, now obtained as properties of sheaf cohomology, which is homotopy invariant because the pullback of a constant sheaf along a homotopy equivalence is an isomorphism and the cohomology of the sheaf is transported along it.
 
-**Corollary (the two spectral-sequence proofs agree).** On a manifold the de Rham theorem may also be obtained from the Čech–de Rham double complex $K^{p,q} = \check C^p(\mathcal{U},\Omega^q)$ of *Čech Cohomology*, for a cover $\mathcal{U}$ with all finite intersections contractible. Since the sheaves $\Omega^q$ are acyclic and the cover is good, the Čech cohomology of the cover with coefficients in $\Omega^q$ vanishes in positive degree, so the filtration by $q$ has
+**Corollary (the two spectral-sequence proofs agree).** On a manifold the de Rham theorem may also be obtained from the Čech–de Rham double complex $K^{n,m} = \check C^n(\mathcal{U},\Omega^m)$ of *Čech Cohomology*, for a cover $\mathcal{U}$ with all finite intersections contractible. Since the sheaves $\Omega^m$ are acyclic and the cover is good, the Čech cohomology of the cover with coefficients in $\Omega^m$ vanishes in positive degree, so the filtration by $m$ has
 
 $$
-E_1^{p,q} = H^p\bigl(\check C^\bullet(\mathcal{U},\Omega^q)\bigr) = \begin{cases} \Omega^q(M), & p = 0,\\ 0, & p > 0,\end{cases}
+E_1^{n,m} = H^n\bigl(\check C^\bullet(\mathcal{U},\Omega^m)\bigr) = \begin{cases} \Omega^q(M), & n = 0,\\ 0, & n > 0,\end{cases}
 $$
 
-with $d_1$ the exterior derivative; hence $E_2^{0,q} = H^q_{dR}(M)$ on the axis $p=0$, and the double complex computes the hypercohomology of the de Rham resolution, so $H^q_{dR}(M)\cong\mathbb{H}^q(M,\Omega^\bullet) = H^q(M,\underline{\mathbb{R}})$. The filtration by $p$ has instead $E_1^{p,q} = \check C^p(\mathcal{U},\mathcal{H}^q_{dR})$, with $\mathcal{H}^q_{dR}$ the presheaf $U\mapsto H^q_{dR}(U)$, and the induced differential is the Čech differential; on a good cover this presheaf is concentrated in degree $q=0$, so $E_2^{p,0} = \check H^p(\mathcal{U},\underline{\mathbb{R}})$ on the bottom row, and Leray's theorem identifies it with $H^p(M,\underline{\mathbb{R}})$. The two filtrations of the same double complex have the same abutment, and their comparison is the de Rham theorem; the construction uses the hypercohomology of a complex of sheaves described in *Derived Functors and Sheaf Cohomology*.
+with $d_1$ the exterior derivative; hence $E_2^{0,m} = H^m_{dR}(M)$ on the axis $n=0$, and the double complex computes the hypercohomology of the de Rham resolution, so $H^m_{dR}(M)\cong\mathbb{H}^q(M,\Omega^\bullet) = H^q(M,\underline{\mathbb{R}})$. The filtration by $n$ has instead $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{H}^m_{dR})$, with $\mathcal{H}^m_{dR}$ the presheaf $U\mapsto H^m_{dR}(U)$, and the induced differential is the Čech differential; on a good cover this presheaf is concentrated in degree $m=0$, so $E_2^{n,0} = \check H^n(\mathcal{U},\underline{\mathbb{R}})$ on the bottom row, and Leray's theorem identifies it with $H^n(M,\underline{\mathbb{R}})$. The two filtrations of the same double complex have the same abutment, and their comparison is the de Rham theorem; the construction uses the hypercohomology of a complex of sheaves described in *Derived Functors and Sheaf Cohomology*.
 
 **Remark (the relative case).** The theorem is not a statement about forms alone: the same argument applies to any resolution of $\underline{\mathbb{R}}$ by acyclic sheaves on $M$, and gives the comparison of the cohomology of the resolution with the cohomology of $M$ with real coefficients. The characteristic classes of a vector bundle over $M$ are represented by the Chern and Pontryagin forms built from the curvature of a connection, as in the written *Fibre Bundles, Connections and Curvature*; the de Rham theorem then identifies the cohomology classes they define with the singular characteristic classes, and the resulting comparison of the graded rings is the Chern–Weil theory, which is not developed here.
 
@@ -162,15 +162,15 @@ $$
 **The Dolbeault complex.** On a complex manifold the decomposition of forms into types gives a bicomplex
 
 $$
-0 \to \Omega^{p,0} \xrightarrow{\ \bar\partial\ } \Omega^{p,1} \xrightarrow{\ \bar\partial\ } \Omega^{p,2} \to \cdots,
+0 \to \Omega^{n,0} \xrightarrow{\ \bar\partial\ } \Omega^{n,1} \xrightarrow{\ \bar\partial\ } \Omega^{n,2} \to \cdots,
 $$
 
-whose exactness on small polydiscs — the $\bar\partial$-Poincaré lemma — is the complex-geometric form of the Poincaré lemma, and which is therefore a resolution of the sheaf $\Omega^p$ of holomorphic $p$-forms by fine sheaves. The same argument then gives the **Dolbeault theorem** $H^q(M,\Omega^p)\cong H^{p,q}_{\bar\partial}(M)$, and on a Kähler manifold the Hodge decomposition refines the de Rham theorem into bidegrees. The complex manifolds, the operators $\partial,\bar\partial$ and the Kähler metrics are those of *Hermitian Geometry and Almost Complex Structures* and *Kähler Geometry*, where the statements are made; the Hodge star and the Laplace–de Rham operator used in the elliptic version of the argument are those of the written *Differential Forms and Stokes' Theorem*, and the analytic theory of the elliptic operator is Part III's.
+whose exactness on small polydiscs — the $\bar\partial$-Poincaré lemma — is the complex-geometric form of the Poincaré lemma, and which is therefore a resolution of the sheaf $\Omega^n$ of holomorphic $n$-forms by fine sheaves. The same argument then gives the **Dolbeault theorem** $H^q(M,\Omega^n)\cong H^{n,m}_{\bar\partial}(M)$, and on a Kähler manifold the Hodge decomposition refines the de Rham theorem into bidegrees. The complex manifolds, the operators $\partial,\bar\partial$ and the Kähler metrics are those of *Hermitian Geometry and Almost Complex Structures* and *Kähler Geometry*, where the statements are made; the Hodge star and the Laplace–de Rham operator used in the elliptic version of the argument are those of the written *Differential Forms and Stokes' Theorem*, and the analytic theory of the elliptic operator is Part III's.
 
 **The relative de Rham complex of a fibration.** Let $\pi : E\to B$ be a fibre bundle with fibre $F$, and filter the de Rham complex of $E$ by the number of differentials along the fibre; the first term of the resulting spectral sequence is the de Rham complex of $B$ with coefficients in the cohomology of the fibre, and the sequence degenerates when the monodromy is trivial and the base is simply connected. The construction yields the **Leray–Serre spectral sequence** of *The Leray–Serre Spectral Sequence* in its de Rham form,
 
 $$
-E_2^{p,q} = H^p(B;\underline{H}^q(F;\mathbb{R})) \Longrightarrow H^{p+q}(E;\mathbb{R}),
+E_2^{n,m} = H^n(B;\underline{H}^q(F;\mathbb{R})) \Longrightarrow H^{n+m}(E;\mathbb{R}),
 $$
 
 and the **Leray–Hirsch theorem** that $H^\bullet(E;\mathbb{R})\cong H^\bullet(B;\mathbb{R})\otimes H^\bullet(F;\mathbb{R})$ for a trivial monodromy and a cohomologically trivial base; the Chern classes of the bundle are then computed by the transgression in this sequence, as in *Fibre Bundles, Connections and Curvature*.
@@ -194,7 +194,7 @@ The de Rham complex is moreover a sheaf of commutative differential graded algeb
 | fine sheaf | module over a structure sheaf with partitions of unity; fine $\Rightarrow$ soft $\Rightarrow$ acyclic |
 | $\wedge$ | wedge product, graded-commutative; $[\alpha]\smile[\beta] = [\alpha\wedge\beta]$ |
 | $\Omega^k_c$, $H^k_{c,dR}$ | compactly supported forms and their cohomology; $\cong H^k_c(M;\mathbb{R})$ |
-| $\Omega^{p,q}$, $\bar\partial$ | forms of type $(p,q)$ and the Dolbeault operator; Dolbeault complex |
+| $\Omega^{n,m}$, $\bar\partial$ | forms of type $(n,m)$ and the Dolbeault operator; Dolbeault complex |
 | $Z^k$ | sheaf of closed $k$-forms; $0\to Z^k\to\Omega^k\to Z^{k+1}\to 0$ |
 
 

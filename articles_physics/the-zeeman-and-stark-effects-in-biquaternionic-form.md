@@ -7,11 +7,11 @@ If an atom is placed in a static magnetic field, its energy levels split; the sp
 This article treats both effects in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effects themselves are standard and are reproduced exactly. What the article establishes is the algebraic structure of the two couplings and the reason their leading behaviours differ:
 
 1. **Both couplings are Hermitian elements of $\mathbb{M}_+$.** The Zeeman coupling is $\tilde{H}_Z = -\gamma B\,\tilde{S}_3 = -\tfrac{\hbar\omega_L}{2}ie_3$; the Stark coupling in a two-level truncation is $\tilde{H}_S = -dE\,ie_1$. Both are of the form $h_0e_0 + i\vec h$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
-2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\hat u$ has energies $\pm\tfrac{\hbar\omega_L}{2}$ for every direction $\hat u$; the splitting $\hbar\omega_L$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
+2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\tfrac{\hbar\omega_L}{2}$ for every direction $\vec u$; the splitting $\hbar\omega_L$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,ie_1$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -(dE)^2/\hbar\omega_0 = -\tfrac12\alpha E^2$, with $\alpha = 2d^2/\hbar\omega_0$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, $\tilde{H} = h_0e_0 + i\vec h$ with eigenvalues $h_0\pm|\vec h|$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, $\tilde{H} = h_0e_0 + i\vec h$ with eigenvalues $h_0\pm|\vec h|$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
@@ -23,32 +23,32 @@ The companion articles supply the pieces:
 
 ### The Magnetic Coupling
 
-A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $U = -\vec\mu\cdot\vec B$. For a spin-1/2 with $\vec\mu = \gamma\vec S$, the coupling is the Hermitian element
+A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$. For a spin-1/2 with $\vec\mu = \gamma\vec S$, the coupling is the Hermitian element
 
 $$
-\tilde{H}_Z = -\gamma\,\vec B\cdot\tilde{\vec S} = -\gamma B\,\tilde{S}(\hat u)
-= -\frac{\hbar\omega_L}{2}\,i\hat u,
+\tilde{H}_Z = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
+= -\frac{\hbar\omega_L}{2}\,i\vec u,
 \qquad
-\tilde{S}(\hat u) = \hat u_k\tilde{S}_k = \frac{\hbar}{2}\,i\hat u,
+\tilde{S}(\vec u) = \vec u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
 $$
 
-where $\hat u = \vec B/B$ and
+where $\vec u = \vec B/B$ and
 
 $$
 \omega_L = \gamma B
 $$
 
-is the Larmor frequency. In the series convention $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ and the isomorphism $\mathsf{M}_2$ sends $ie_k\mapsto\sigma_k$, so $\tilde{H}_Z\mapsto -\tfrac{\hbar\omega_L}{2}(\hat u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{M}_+$ with $h_0 = 0$ and $\vec h = -\tfrac{\hbar\omega_L}{2}\hat u$.
+is the Larmor frequency. In the series convention $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ and the isomorphism $\mathsf{M}_2$ sends $ie_k\mapsto\sigma_k$, so $\tilde{H}_Z\mapsto -\tfrac{\hbar\omega_L}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{M}_+$ with $h_0 = 0$ and $\vec h = -\tfrac{\hbar\omega_L}{2}\vec u$.
 
 ### The Spin-1/2 Splitting
 
 The observable $\tilde{H}_Z$ has the spectral decomposition
 
 $$
-\tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\hat u) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\hat u),
+\tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\vec u) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\vec u),
 $$
 
-because $\hat u_k\tilde{S}_k\tilde\Pi_{1,2}(\hat u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\hat u)$ and $\tilde{H}_Z\propto\hat u_k\tilde{S}_k$. The two eigenvalues are
+because $\vec u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto\vec u_k\tilde{S}_k$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{\hbar\omega_L}{2},
@@ -60,7 +60,7 @@ $$
 \Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B,
 $$
 
-linear in the field and independent of its direction. The direction $\hat u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\hat u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\vec h|$, and $|\vec h|$ depends on the magnitude of the vector part alone.
+linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{M}_+$ has eigenvalues $\pm|\vec h|$, and $|\vec h|$ depends on the magnitude of the vector part alone.
 
 For an electron, $\gamma = -g_e\mu_B/\hbar$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
@@ -82,24 +82,24 @@ so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_
 
 ### Level Crossings and the Field Axis
 
-Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting is proportional to $B$, a spin-1/2 in a field has a single crossing at $B = 0$, where the two idempotents become degenerate and any axis is an eigenbasis. The Zeeman spectrum contains no accidental degeneracy and no level repulsion; the field cannot mix the two states because the coupling is diagonal in the basis it defines. This is in sharp contrast to the Stark case below, where the coupling is off-diagonal and produces an avoided crossing. The reason is algebraic: the Zeeman coupling is proportional to the same element $i\hat u$ whose idempotents it diagonalises, so it is a function of the observable being measured.
+Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting is proportional to $B$, a spin-1/2 in a field has a single crossing at $B = 0$, where the two idempotents become degenerate and any axis is an eigenbasis. The Zeeman spectrum contains no accidental degeneracy and no level repulsion; the field cannot mix the two states because the coupling is diagonal in the basis it defines. This is in sharp contrast to the Stark case below, where the coupling is off-diagonal and produces an avoided crossing. The reason is algebraic: the Zeeman coupling is proportional to the same element $i\vec u$ whose idempotents it diagonalises, so it is a function of the observable being measured.
 
 ### The Selection Rule as a Commutator
 
 A drive transverse to the static field is a Hermitian element built from $ie_1$ and $ie_2$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
-\left[\tilde{H}_Z,\,dE\,ie_1\right] = -2\left(-\frac{\hbar\omega_L}{2}\hat u\right)\times(dE\,\hat{e}_1)
-= \hbar\omega_L\,dE\,(\hat u\times\hat{e}_1),
+\left[\tilde{H}_Z,\,dE\,ie_1\right] = -2\left(-\frac{\hbar\omega_L}{2}\vec u\right)\times(dE\,\vec u_1)
+= \hbar\omega_L\,dE\,(\vec u\times\vec u_1),
 $$
 
-which is non-zero precisely when the transverse coupling is not parallel to the field. The selection rule $\Delta m = \pm1$ for a transverse drive and $\Delta m = 0$ for a longitudinal one is thus a statement about the vanishing of this cross product: the observable component along $\hat u$ commutes with $\tilde{H}_Z$ and the orthogonal components do not. In the spin-1/2 case the two non-commuting components are exactly the off-diagonal elements that connect the two eigenstates.
+which is non-zero precisely when the transverse coupling is not parallel to the field. The selection rule $\Delta m = \pm1$ for a transverse drive and $\Delta m = 0$ for a longitudinal one is thus a statement about the vanishing of this cross product: the observable component along $\vec u$ commutes with $\tilde{H}_Z$ and the orthogonal components do not. In the spin-1/2 case the two non-commuting components are exactly the off-diagonal elements that connect the two eigenstates.
 
 ## The Stark Effect
 
 ### The Electric Coupling
 
-An electric dipole $\vec d$ in a field $\vec E$ has energy $U = -\vec d\cdot\vec E$, giving the Hermitian coupling
+An electric dipole $\vec d$ in a field $\vec E$ has energy $V_{\mathrm{pot}} = -\vec d\cdot\vec E$, giving the Hermitian coupling
 
 $$
 \tilde{H}_S = -\vec d\cdot\vec E = -E\,d\,ie_1
@@ -123,9 +123,9 @@ $$
 E_\pm = \pm\,dE,
 $$
 
-a **linear** Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\hat{x})$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\hat{x}$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
+a **linear** Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\vec u_x)$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\vec u_x$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
 
-In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_S = -dE\,ie_1 = -dE\,(\tilde\Pi_1(\hat{x})-\tilde\Pi_2(\hat{x}))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
+In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_S = -dE\,ie_1 = -dE\,(\tilde\Pi_1(\vec u_x)-\tilde\Pi_2(\vec u_x))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
 
 ### Quadratic Stark and the Polarizability
 
@@ -178,7 +178,7 @@ $$
 
 which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\Delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha = 2d^2/\hbar\omega_0$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
 
-For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm{H}} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm{H}} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
+For the hydrogen ground state the sum gives the standard result $\alph\mathfrak{a}_{\mathrm{H}} = \tfrac92 a_0^3$ in atomic units, i.e. $\alph\mathfrak{a}_{\mathrm{H}} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
 
 ### The Avoided Crossing
 
@@ -196,7 +196,7 @@ $$
 \tilde{H}_S = -E\left(d_1\,ie_1 + d_2\,ie_2\right),
 $$
 
-after choosing $\hat{z}$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec h$ with real $\vec h$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the trace pairing and the spectral decomposition of $\mathbb{M}_+$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
+after choosing $\vec u_z$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec h$ with real $\vec h$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the trace pairing and the spectral decomposition of $\mathbb{M}_+$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
 
 ### Diagonal Versus Off-Diagonal
 
@@ -205,7 +205,7 @@ The difference between the two effects is the placement of the coupling in the e
 | Feature | Zeeman | Stark |
 |---|---|---|
 | Coupling | $\tilde{H}_Z = -\tfrac{\hbar\omega_L}{2}ie_3$ | $\tilde{H}_S = -E(d_1ie_1+d_2ie_2)$ |
-| Position in the $\hat{z}$ eigenbasis | diagonal | off-diagonal |
+| Position in the $\vec u_z$ eigenbasis | diagonal | off-diagonal |
 | Permanent moment? | yes (magnetic) | no (parity) |
 | First-order shift | linear, $\pm\tfrac{\hbar\omega_L}{2}$ | zero unless degenerate |
 | Degenerate case | level crossing at $B=0$ | linear Stark, $\pm Ed$ |
@@ -216,7 +216,7 @@ The reason the magnetic coupling is diagonal is that the two spin states carry d
 
 ### Conventions of Sign
 
-The signs in the two couplings follow from $U = -\vec\mu\cdot\vec B$ and $U = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{H}_Z = -\gamma B\tilde{S}_3 = -\tfrac{\hbar\omega_L}{2}ie_3$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
+The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{H}_Z = -\gamma B\tilde{S}_3 = -\tfrac{\hbar\omega_L}{2}ie_3$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -245,14 +245,14 @@ The signs in the two couplings follow from $U = -\vec\mu\cdot\vec B$ and $U = -\
 
 ## Summary
 
-The two elementary static field couplings of a spin-1/2 are Hermitian elements of the informational sector. The **Zeeman coupling** in a field $\vec B = B\hat u$ is
+The two elementary static field couplings of a spin-1/2 are Hermitian elements of the informational sector. The **Zeeman coupling** in a field $\vec B = B\vec u$ is
 
 $$
-\tilde{H}_Z = -\gamma B\,\tilde{S}(\hat u) = -\frac{\hbar\omega_L}{2}\,i\hat u,
+\tilde{H}_Z = -\gamma B\,\tilde{S}(\vec u) = -\frac{\hbar\omega_L}{2}\,i\vec u,
 \qquad \omega_L = \gamma B,
 $$
 
-with the spectral decomposition $\tilde{H}_Z = -\tfrac{\hbar\omega_L}{2}\tilde\Pi_1(\hat u) + \tfrac{\hbar\omega_L}{2}\tilde\Pi_2(\hat u)$ and linear, isotropic splitting $\Delta E = \hbar|\omega_L| = \hbar|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\hat u)$ and not the eigenvalues.
+with the spectral decomposition $\tilde{H}_Z = -\tfrac{\hbar\omega_L}{2}\tilde\Pi_1(\vec u) + \tfrac{\hbar\omega_L}{2}\tilde\Pi_2(\vec u)$ and linear, isotropic splitting $\Delta E = \hbar|\omega_L| = \hbar|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\vec u)$ and not the eigenvalues.
 
 The **Stark coupling** is off-diagonal in the energy basis, $\tilde{H}_S = -E\,d\,ie_1$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a traceless Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $\hbar\omega_0$ it gives $E_\pm = \pm\sqrt{(\hbar\omega_0/2)^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
 
@@ -274,8 +274,8 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_+$ | Hermitian (informational) subspace; home of both couplings |
-| $\tilde{S}(\hat u) = \tfrac{\hbar}{2}i\hat u$ | Spin observable along $\hat u$ |
-| $\tilde{H}_Z = -\gamma B\tilde{S}(\hat u) = -\tfrac{\hbar\omega_L}{2}i\hat u$ | Zeeman coupling |
+| $\tilde{S}(\vec u) = \tfrac{\hbar}{2}i\vec u$ | Spin observable along $\vec u$ |
+| $\tilde{H}_Z = -\gamma B\tilde{S}(\vec u) = -\tfrac{\hbar\omega_L}{2}i\vec u$ | Zeeman coupling |
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\Delta E_{\mathrm{Zeeman}} = \hbar|\omega_L| = \hbar|\gamma|B$ | Zeeman splitting |
 | $\tilde{H}_S = -E(d_1ie_1+d_2ie_2)$ | Stark coupling (two-level truncation) |

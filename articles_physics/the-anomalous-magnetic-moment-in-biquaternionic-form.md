@@ -9,7 +9,7 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 - **The vertex and its two structures.** The one-particle vertex has two independent Lorentz structures, and the magnetic one carries $F_2$. The tree-level value $g=2$ — the Dirac value — is taken as settled elsewhere; what is at issue here is $F_2(0)=a$.
 - **The Gordon decomposition, transcribed and verified.** The biquaternion content of the problem is the split of the vertex into a *symmetric* part (the metric, central direction) and an *antisymmetric* part (the bivector, the directions $e_k$ and $ie_k$). The Gordon identity, which is the tree-level form of that split, was verified numerically in the corpus conventions to $3\times10^{-15}$.
 - **The sector interpretation.** The magnetic structure is built from the rotation-type generators, which are the algebra's informational-sector elements $ie_k$; the convection structure is the metric, central part. The anomaly therefore sits in the same sector as the spin.
-- **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $q^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
+- **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $k^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
 - **What the algebra does not supply.** It does not produce $\alpha$, and it does not by itself remove the divergence. The finiteness of the anomaly rests on the Ward identity, that is, on gauge invariance; the framework writes the vertex in its own tensor language and does not replace that argument.
 
 **Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, $\mathbb{M}_-=i\,\mathbb{M}_+$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. On the spinor module the equation is $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric
@@ -30,10 +30,10 @@ The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\t
 
 ## The Vertex Function and the Form Factors
 
-**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p',p)$, where $p$ and $p'$ are the incoming and outgoing fermion momenta and $q=p'-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar u'\not p'=m\bar u'$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $q^2$:
+**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p',p)$, where $p$ and $p'$ are the incoming and outgoing fermion momenta and $k=p'-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar w'\not p'=m\bar w'$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:
 
 $$
-\Gamma^\mu(p',p)=\gamma^\mu F_1(q^2)+\frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2(q^2) ,
+\Gamma^\mu(p',p)=\gamma^\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
 \qquad
 \sigma^{\mu\nu}=\frac{i}{2}\big[\gamma^\mu,\gamma^\nu\big] .
 $$
@@ -60,11 +60,11 @@ is therefore the exact algebraic place where the two structures separate: the sy
 **The Gordon decomposition.** The separation is not merely formal; on shell it is an identity, the Gordon decomposition, which expresses the single-generator vertex as the sum of a convection term and the magnetic term:
 
 $$
-\bar u(p')\gamma^\mu u(p)
-=\bar u(p')\left[\frac{(p+p')^\mu}{2m}+\frac{i\sigma^{\mu\nu}q_\nu}{2m}\right]u(p) .
+\bar w(p')\gamma^\mu w(p)
+=\bar w(p')\left[\frac{(p+p')^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
 $$
 
-The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $u=(\not p+m)w$ for random $w$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar u'\gamma^\mu u=\bar u'(\not p'\gamma^\mu+\gamma^\mu\not p)u$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $q^2=0$.
+The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\not p+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.
 
 ## The Biquaternion Transcription
 
@@ -147,18 +147,18 @@ were verified entry by entry with residual $0$. These are the identities that co
 **The diagram.** The order-$\alpha$ correction to the vertex is the one-loop diagram in which the fermion line exchanges a virtual photon with itself. Its value is standard, and the reduction to form factors is standard; the result is
 
 $$
-F_1(q^2)=1+\frac{\alpha}{2\pi}\Big[\text{terms vanishing at }q^2=0\Big],
+F_1(k^2)=1+\frac{\alpha}{2\pi}\Big[\text{terms vanishing at }k^2=0\Big],
 \qquad
-F_2(q^2)=\frac{\alpha}{2\pi}\int_0^1\!dx\,dy\,dz\;\delta(x+y+z-1)\;
-\frac{2m^2z(1-z)}{m^2(1-z)^2+xy\,q^2},
+F_2(k^2)=\frac{\alpha}{2\pi}\int_0^1\!dx\,dy\,dz\;\delta(x+y+z-1)\;
+\frac{2m^2z(1-z)}{m^2(1-z)^2+xy\,k^2},
 $$
 
 in the standard Feynman-parameter representation, with the numerator and denominator fixed by the numerator reduction of the previous section. Two features are worth naming because they are what makes the anomaly the clean test it is.
 
 - **The divergence cancels.** Both the vertex diagram and the fermion self-energy are ultraviolet divergent, and the divergences cancel between them by the Ward identity, the statement of gauge invariance at the vertex. The anomaly is therefore *finite*: no counterterm is needed for $F_2$, and $F_2$ is a prediction of the theory rather than a parameter of it. This argument is standard and is not supplied by the algebra.
-- **The mass drops out at leading order.** At $q^2=0$ the parameter integral is independent of $m$ after the $m^2$ factors cancel, so the leading anomaly is universal: every charged lepton and, in the QCD-corrected sense, every charged fermion has the same leading $a=\alpha/2\pi$.
+- **The mass drops out at leading order.** At $k^2=0$ the parameter integral is independent of $m$ after the $m^2$ factors cancel, so the leading anomaly is universal: every charged lepton and, in the QCD-corrected sense, every charged fermion has the same leading $a=\alpha/2\pi$.
 
-**The $q^2=0$ integral.** At $q^2=0$ the denominator is $m^2(1-z)^2$, the mass cancels, and the parameter integral collapses:
+**The $k^2=0$ integral.** At $k^2=0$ the denominator is $m^2(1-z)^2$, the mass cancels, and the parameter integral collapses:
 
 $$
 \int_0^1\!dz\int_0^{1-z}\!dy\;\frac{2z(1-z)}{(1-z)^2}
@@ -229,15 +229,15 @@ All numerics are exact matrix arithmetic in plain Python, in the representatives
 | Bivector algebra | $[S^{\mu\nu},S^{\rho\sigma}]=i(g^{\nu\rho}S^{\mu\sigma}-g^{\mu\rho}S^{\nu\sigma}-g^{\nu\sigma}S^{\mu\rho}+g^{\mu\sigma}S^{\nu\rho})$ with $S^{\mu\nu}=\tfrac{i}{4}[\gamma^\mu,\gamma^\nu]$: residual $0$ |
 | Generator Hermiticity | $(S^{kl})^\dagger=S^{kl}$, $(S^{0k})^\dagger=-S^{0k}$, and $\sigma^{12}=2S^{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$ |
 | Sectors | $e_k$ anti-Hermitian ($\mathbb{M}_-$), $ie_k$ Hermitian ($\mathbb{M}_+$); rotation-type generators Hermitian at the $ie_k$ level, boost-type anti-Hermitian at the $e_k$ level |
-| Gordon identity | $\bar u'\gamma^\mu u=\bar u'[(p+p')^\mu+i\sigma^{\mu\nu}q_\nu]u/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$ |
-| Parent identity | $2m\bar u'\gamma^\mu u=\bar u'(\not p'\gamma^\mu+\gamma^\mu\not p)u$: max deviation $4.4\times10^{-15}$ |
-| On-shell conditions | $(\not p-m)u=0$, $\bar u'(\not p'-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
-| $q^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
+| Gordon identity | $\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$ |
+| Parent identity | $2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$: max deviation $4.4\times10^{-15}$ |
+| On-shell conditions | $(\not p-m)w=0$, $\bar w'(\not p'-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
+| $k^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
 | Leading anomaly | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ for $\alpha=1/137.035999084$ |
 | Two-loop coefficient | $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ |
 | Two-loop anomaly | $a_e=1.1596374278\times10^{-3}$ |
 
-The on-shell spinors were built as $u=(\not p+m)w$ for random $w$, which produces positive-energy solutions automatically; the momenta were $p,p'$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
+The on-shell spinors were built as $w=(\not p+m)\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p'$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
 
 ## What Is Standard and What the Algebra's
 
@@ -267,7 +267,7 @@ The on-shell spinors were built as $u=(\not p+m)w$ for random $w$, which produce
 The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,
 
 $$
-\Gamma^\mu=\gamma^\mu F_1+\frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2 ,
+\Gamma^\mu=\gamma^\mu F_1+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2 ,
 \qquad
 \sigma^{\mu\nu}=\frac{i}{2}[\gamma^\mu,\gamma^\nu],
 \qquad
@@ -276,7 +276,7 @@ $$
 
 with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two generators, $\gamma^\mu\gamma^\nu=g^{\mu\nu}I_4-i\sigma^{\mu\nu}$; the Gordon decomposition exhibits the split on shell and was verified to $3.0\times10^{-15}$ on random on-shell spinors. Under the dictionary the six bivectors are the six algebra directions, $\mathsf{M}_4(e_k)=\gamma^k\gamma^l$ and $\mathsf{M}_4(ie_k)=\gamma^0\gamma^k$, so the magnetic structure is the informational-sector ($\mathbb{M}_+$) object $ie_k$ at the level of the Hermitian generators — the same sector as the spin — with bivector part $\mathsf{M}_4(e_k)$, and the convection structure is central.
 
-The one-loop representation of $F_2$ reduces at $q^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.1596521807\times10^{-3}$ at the $5\times10^{-11}$ level. The Clifford trace and contraction identities on which the reduction rests were verified with residual $0$.
+The one-loop representation of $F_2$ reduces at $k^2=0$ to $\int_0^12z\,dz=1$, giving Schwinger's value $a=\alpha/2\pi=1.1614097329\times10^{-3}$; the two-loop coefficient $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ was recomputed, and with $A_3=1.181241456$ the prediction $a_e=1.1596522320\times10^{-3}$ matches the measured $1.1596521807\times10^{-3}$ at the $5\times10^{-11}$ level. The Clifford trace and contraction identities on which the reduction rests were verified with residual $0$.
 
 The algebra supplies the tensor structure, the sector placement and the conventions; it does not supply $\alpha$, the coefficients, or the Ward-identity argument that makes the anomaly finite. On this problem, as on the $i\epsilon$ and the masses, the framework names the axis and physics fixes the magnitude.
 
@@ -285,19 +285,19 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | Symbol | Meaning |
 |---|---|
 | $\Gamma^\mu(p',p)$ | Electromagnetic vertex; $-ie\Gamma^\mu$ is the amplitude |
-| $F_1(q^2),F_2(q^2)$ | Charge and magnetic form factors |
+| $F_1(k^2),F_2(k^2)$ | Charge and magnetic form factors |
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
 | $\sigma^{\mu\nu}=\tfrac i2[\gamma^\mu,\gamma^\nu]$ | Bivector (magnetic) structure |
 | $\gamma^\mu\gamma^\nu=g^{\mu\nu}I_4-i\sigma^{\mu\nu}$ | Symmetric/antisymmetric generator split |
-| $\bar u'\gamma^\mu u=\bar u'[(p+p')^\mu+i\sigma^{\mu\nu}q_\nu]u/2m$ | Gordon decomposition (verified $3.0\times10^{-15}$) |
-| $q=p'-p$ | Momentum transfer |
+| $\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ | Gordon decomposition (verified $3.0\times10^{-15}$) |
+| $k=p'-p$ | Momentum transfer |
 | $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ | Clifford metric (level 3) |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict$ metric (level 2) |
 | $\gamma^\mu\gamma_\mu=4$, $\gamma^\mu\gamma^\alpha\gamma_\mu=-2\gamma^\alpha$ | Contraction identities (residual $0$) |
 | $\mathrm{tr}(\gamma^\mu\gamma^\nu)=4g^{\mu\nu}$ | Trace identity (residual $0$) |
 | $\mathsf{M}_4(e_k)=\gamma^k\gamma^l$, $\mathsf{M}_4(ie_k)=\gamma^0\gamma^k$, $\mathsf{M}_4(i)=-\omega$ | Dictionary (verified) |
 | $e_k\in\mathbb{M}_-$ (anti-Hermitian), $ie_k\in\mathbb{M}_+$ (Hermitian) | Sectors; rotation-type generators at the $ie_k$ level ($\mathbb{M}_+$), boost-type at the $e_k$ level ($\mathbb{M}_-$) |
-| $F_2(0)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(\Sigma-1)\frac{2m^2z(1-z)}{m^2(1-z)^2+xyq^2}$ | One-loop parameter representation |
+| $F_2(0)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(\Sigma-1)\frac{2m^2z(1-z)}{m^2(1-z)^2+xyk^2}$ | One-loop parameter representation |
 | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ | Leading (Schwinger) anomaly |
 | $A_2=-0.328478965579$ | Two-loop coefficient (recomputed) |
 | $a_e^{\text{exp}}=1.1596521807\times10^{-3}$ | Measured electron anomaly |

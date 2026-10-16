@@ -2,37 +2,37 @@
 
 ## Introduction
 
-The quaternion space carries two **bilinear forms**, read off the two general products of *The Two General Products of the Quaternion $\mathbb{R}$ Space* by the scalar part:
+The quaternion space carries two **bilinear forms**, read off the two general products of *The Two General Products of the Quaternioid $\mathbb{R}$ Space* by the scalar part:
 
 $$
-B(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr) , \qquad N(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr) .
+\langle\tilde p,\tilde q\rangle=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr) , \qquad \langle\tilde p,\tilde q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr) .
 $$
 
-The **plain form** $B$ and the **quaternion form** $N$ are the scalar parts of the plain product and of the quaternionic product, and on the coordinates they are $B(\tilde p,\tilde q)=p_0q_0-(\vec p,\vec q)$ and $N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$. The two forms are symmetric and $\mathbb{R}$-bilinear, both are nondegenerate, and they differ in **signature**: $B$ has signature $(1,3)$, the form of the quaternion coordinates, and $N$ is positive definite with the identity Gram matrix.
+The **plain form** $\langle\cdot,\cdot\rangle$ and the **quaternion form** $\langle\cdot,\cdot\rangle_{\natural}$ are the scalar parts of the plain product and of the quaternionic product, and on the coordinates they are $\langle\tilde p,\tilde q\rangle=p_0q_0-(\vec p,\vec q)$ and $\langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+(\vec p,\vec q)$. The two forms are symmetric and $\mathbb{R}$-bilinear, both are nondegenerate, and they differ in **signature**: $\langle\cdot,\cdot\rangle$ has signature $(1,3)$, the form of the quaternion coordinates, and $\langle\cdot,\cdot\rangle_{\natural}$ is positive definite with the identity Gram matrix.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product of the vector parts, $\mathrm{Sc}$ is the scalar part, $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation, and $N(\tilde p)=\lvert\tilde p\rvert^2=\tilde p^{\natural}\tilde p$ is the quaternion norm of the element. The unit basis is $e_0,e_1,e_2,e_3$.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product of the vector parts, $\mathrm{Sc}$ is the scalar part, $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation, and $\langle\tilde p\rangle_{\natural}=\lvert\tilde p\rvert^2=\tilde p^{\natural}\tilde p$ is the quaternion norm of the element. The unit basis is $e_0,e_1,e_2,e_3$.
 
 ## The Two Forms
 
 **Definition.** The **plain form** and the **quaternion form** are the scalar parts
 
 $$
-B(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr) , \qquad N(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr) ,
+\langle\tilde p,\tilde q\rangle=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr) , \qquad \langle\tilde p,\tilde q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr) ,
 $$
 
 and on the coordinates
 
 $$
-B(\tilde p,\tilde q)=p_0q_0-(\vec p,\vec q) , \qquad N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q) .
+\langle\tilde p,\tilde q\rangle=p_0q_0-(\vec p,\vec q) , \qquad \langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+(\vec p,\vec q) .
 $$
 
 Both are symmetric and $\mathbb{R}$-bilinear. They differ by twice the dot product of the vector parts,
 
 $$
-N(\tilde p,\tilde q)-B(\tilde p,\tilde q)=2(\vec p,\vec q) , \qquad N(\tilde p,\tilde q)+B(\tilde p,\tilde q)=2p_0q_0 ,
+\langle\tilde p,\tilde q\rangle_{\natural}-\langle\tilde p,\tilde q\rangle=2(\vec p,\vec q) , \qquad \langle\tilde p,\tilde q\rangle_{\natural}+\langle\tilde p,\tilde q\rangle=2p_0q_0 ,
 $$
 
-so the sum of the two forms separates the scalar parts of the two elements and their difference the vector parts. The two are the two **scalar products of the two products**: $B$ is the scalar part of the plain product, read in *Comparison Between the Two General Products*, and $N$ is the scalar part of the quaternionic product, read in *Relations Between the Two General Products*; the two forms are therefore the two scalar parts of the two products, and no third scalar part is available over $\mathbb{R}$.
+so the sum of the two forms separates the scalar parts of the two elements and their difference the vector parts. The two are the two **scalar products of the two products**: $\langle\cdot,\cdot\rangle$ is the scalar part of the plain product, read in *Comparison Between the Two General Products*, and $\langle\cdot,\cdot\rangle_{\natural}$ is the scalar part of the quaternionic product, read in *Relations Between the Two General Products*; the two forms are therefore the two scalar parts of the two products, and no third scalar part is available over $\mathbb{R}$.
 
 ## The Gram Matrices
 
@@ -44,19 +44,19 @@ $$
 
 The plain form has signature $(1,3)$, one positive and three negative squares; the quaternion form has signature $(4,0)$, being positive definite, and its Gram matrix is the identity.
 
-*Proof.* On the units, $B(e_0,e_0)=1$ and $B(e_k,e_k)=-1$ for $k=1,2,3$, by the value $p_0q_0-(\vec p,\vec q)$ on a basis pair; the off-diagonal entries vanish, the units being mutually perpendicular. Similarly $N(e_k,e_k)=1$ for every $k$ and the off-diagonal entries vanish.
+*Proof.* On the units, $\langle e_0,e_0\rangle=1$ and $\langle e_k,e_k\rangle=-1$ for $k=1,2,3$, by the value $p_0q_0-(\vec p,\vec q)$ on a basis pair; the off-diagonal entries vanish, the units being mutually perpendicular. Similarly $\langle e_k,e_k\rangle_{\natural}=1$ for every $k$ and the off-diagonal entries vanish.
 
-So the two forms are the two standard forms on the coordinates: $B$ is the form of signature $(1,3)$ and $N$ the positive definite form of signature $(4,0)$. They are the two ends of the scale of the **index** of a symmetric bilinear form on a real four-dimensional space, $B$ of maximal index three and $N$ of minimal index zero, the forms of the two intermediate signatures $(3,1)$ and $(2,2)$ lying strictly between.
+So the two forms are the two standard forms on the coordinates: $\langle\cdot,\cdot\rangle$ is the form of signature $(1,3)$ and $\langle\cdot,\cdot\rangle_{\natural}$ the positive definite form of signature $(4,0)$. They are the two ends of the scale of the **index** of a symmetric bilinear form on a real four-dimensional space, $\langle\cdot,\cdot\rangle$ of maximal index three and $\langle\cdot,\cdot\rangle_{\natural}$ of minimal index zero, the forms of the two intermediate signatures $(3,1)$ and $(2,2)$ lying strictly between.
 
 ## The Polarisation and the Quadratic Forms
 
 **Definition.** The **associated quadratic forms** of the two forms are the values at the two equal arguments
 
 $$
-Q_B(\tilde p)=B(\tilde p,\tilde p)=\mathrm{Sc}\bigl(\tilde p^2\bigr)=p_0^2-\lvert\vec p\rvert^2 , \qquad Q_N(\tilde p)=N(\tilde p,\tilde p)=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde p\bigr)=\lvert\tilde p\rvert^2 .
+Q_B(\tilde p)=\langle\tilde p,\tilde p\rangle=\mathrm{Sc}\bigl(\tilde p^2\bigr)=p_0^2-\lvert\vec p\rvert^2 , \qquad Q_N(\tilde p)=\langle\tilde p,\tilde p\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde p\bigr)=\lvert\tilde p\rvert^2 .
 $$
 
-The two quadratic forms are the algebraic norm of the plain form and the quaternion norm of the element, written $B(\tilde p)$ and $N(\tilde p)$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.
+The two quadratic forms are the algebraic norm of the plain form and the quaternion norm of the element, written $\langle\tilde p\rangle$ and $\langle\tilde p\rangle_{\natural}$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.
 
 **Proposition (the polarisation).** The two forms are recovered from their quadratic forms by the polarisation identity
 
@@ -66,9 +66,9 @@ $$
 
 and the values of the quadratic forms on the units are $Q_B(e_0)=1$, $Q_B(e_k)=-1$ for $k\neq0$, and $Q_N(e_k)=1$ for every $k$.
 
-*Proof.* The polarisation identity holds for any symmetric bilinear form over a field of characteristic not two; expanding $Q_B(\tilde p+\tilde q)$ with the bilinearity gives $2B(\tilde p,\tilde q)$. The values on the units are those of the diagonal of the Gram matrices.
+*Proof.* The polarisation identity holds for any symmetric bilinear form over a field of characteristic not two; expanding $Q_B(\tilde p+\tilde q)$ with the bilinearity gives $2\langle\tilde p,\tilde q\rangle$. The values on the units are those of the diagonal of the Gram matrices.
 
-So each form is the polarised quadratic of its algebraic norm, and the quadratic forms are read on the units as the diagonal of the Gram matrices: $Q_B$ takes the value $1$ on the unit and $-1$ on each of the three imaginary units, while $Q_N$ takes the value $1$ on all four. The two quadratic forms are the *two algebraic norms* of the chapter, their level sets, their multiplicativity and the invertibility criteria they give being *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+So each form is the polarised quadratic of its algebraic norm, and the quadratic forms are read on the units as the diagonal of the Gram matrices: $Q_B$ takes the value $1$ on the unit and $-1$ on each of the three imaginary units, while $Q_N$ takes the value $1$ on all four. The two quadratic forms are the *two algebraic norms* of the chapter, their level sets, their multiplicativity and the invertibility criteria they give being *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
 
 ## The Radical
 
@@ -86,11 +86,11 @@ So neither form has a nonzero annihilator, and the two are nondegenerate in the 
 
 *Proof.* $Q_N$ is the sum of four squares, so it vanishes only at the origin. $Q_B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ vanishes exactly when $p_0^2=\lvert\vec p\rvert^2$, a single homogeneous quadratic equation in the four coordinates, hence a cone of real dimension three; it contains the elements $e_0\pm e_1$, whose scalar coefficient has the same square as the vector part, and it is not a subspace, a sum of two isotropic elements being isotropic only when they are proportional.
 
-So the plain form is indefinite and its null set is the light cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde p$ has $B(\tilde p,\tilde p)=0$, so its square $\tilde p^2=B(\tilde p)e_0+2p_0\vec p=2p_0\vec p$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde p^2=0$ forces $\tilde p=0$.
+So the plain form is indefinite and its null set is the light cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde p$ has $\langle\tilde p,\tilde p\rangle=0$, so its square $\tilde p^2=\langle\tilde p\rangle e_0+2p_0\vec p=2p_0\vec p$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde p^2=0$ forces $\tilde p=0$.
 
 ## Summary
 
-The quaternion space carries two bilinear forms, the plain form $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ and the quaternion form $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$, both symmetric and nondegenerate, differing by twice the dot product of the vector parts. Their Gram matrices in the unit basis are $\operatorname{diag}(1,-1,-1,-1)$, of signature $(1,3)$, and $I_4$, of signature $(4,0)$; their associated quadratic forms are $Q_B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$, indefinite, and $Q_N(\tilde p)=\lvert\tilde p\rvert^2$, positive definite; and each form is recovered from its quadratic form by polarisation.
+The quaternion space carries two bilinear forms, the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ and the quaternion form $\langle\tilde p,\tilde q\rangle_{\natural}=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$, both symmetric and nondegenerate, differing by twice the dot product of the vector parts. Their Gram matrices in the unit basis are $\operatorname{diag}(1,-1,-1,-1)$, of signature $(1,3)$, and $I_4$, of signature $(4,0)$; their associated quadratic forms are $Q_B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$, indefinite, and $Q_N(\tilde p)=\lvert\tilde p\rvert^2$, positive definite; and each form is recovered from its quadratic form by polarisation.
 
 The plain form has the isotropic cone $p_0^2=\lvert\vec p\rvert^2$, of real dimension three, and the quaternion form has no isotropic element. Both radicals are $\{0\}$.
 
@@ -98,8 +98,8 @@ The plain form has the isotropic cone $p_0^2=\lvert\vec p\rvert^2$, of real dime
 
 | Symbol | Meaning |
 |---|---|
-| $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ | the plain form, signature $(1,3)$ |
-| $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$ | the quaternion form, signature $(4,0)$ |
+| $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ | the plain form, signature $(1,3)$ |
+| $\langle\tilde p,\tilde q\rangle_{\natural}=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$ | the quaternion form, signature $(4,0)$ |
 | $\operatorname{Gram}(B)=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of the plain form |
 | $\operatorname{Gram}(N)=I_4$ | the Gram matrix of the quaternion form |
 | $Q_B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$, $Q_N(\tilde p)=\lvert\tilde p\rvert^2$ | the two quadratic forms |

@@ -14,7 +14,7 @@ whose integrand is built from the biquaternion norm of the displacement biquater
 
 **Two kinds of symmetry.** A relativistic action has
 
-- **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
+- **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
 - **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$ and six Lorentz transformations $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
 The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the framework form of $\partial_\mu J^\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
@@ -79,11 +79,11 @@ For a spacetime symmetry, the same construction applied to a transformation that
 **The symmetry.** Multiplication by a central phase,
 
 $$
-\tilde{\Phi}\ \longmapsto\ e^{i\alpha}\tilde{\Phi},
+\tilde{\Phi}\ \longmapsto\ \exp(i\alpha)\tilde{\Phi},
 \qquad \alpha\in\mathbb{R},
 $$
 
-leaves both terms of $\mathcal{L}$ unchanged, because $e^{i\alpha}$ is central and $\tilde{\Phi}^{*}\mapsto e^{-i\alpha}\tilde{\Phi}^{*}$: the two phase factors in $(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})$ cancel, and $\tilde{\Phi}^{*}\tilde{\Phi}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{\Phi}$ only through the invariant $\tilde{\Phi}^{*}\tilde{\Phi}$ — a fact used again below.
+leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central and $\tilde{\Phi}^{*}\mapsto \exp(-i\alpha)\tilde{\Phi}^{*}$: the two phase factors in $(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})$ cancel, and $\tilde{\Phi}^{*}\tilde{\Phi}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{\Phi}$ only through the invariant $\tilde{\Phi}^{*}\tilde{\Phi}$ — a fact used again below.
 
 **The current.** For the infinitesimal variation $\delta\tilde{\Phi} = i\alpha\tilde{\Phi}$, $\delta\tilde{\Phi}^{*} = -i\alpha\tilde{\Phi}^{*}$, the Noether current is
 
@@ -121,7 +121,7 @@ $$
 
 which is the continuity equation $\partial_t\rho + \mathrm{div}\,\vec j = 0$.
 
-**On what case was this checked?** A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0e^{i\,\mathrm{Sc}(\tilde{K}\tilde{Q})}$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
+**On what case was this checked?** A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde{K}\tilde{Q}))$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
 - **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ simplifies to **exactly zero**;
 - **a standing wave**, $\tilde{\Phi} = \sin(kx)\cos(\omega t) + i\sin(kx)\sin(\omega t)$ with $\omega^2 = c^2k^2 + m^2c^4/\hbar^2$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is **exactly zero**;
@@ -202,7 +202,7 @@ The naive sum of the parent's four-forces is not zero even though the total four
 **What translation does to a plane wave.** A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde{K}\tilde{Q}))$, $\tilde{K}\in\mathbb{M}_-$, and $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$,
 
 $$
-\tilde{\Phi}\big|_{\tilde{Q}+\tilde{a}} = e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{a})}\,\tilde{\Phi}\big|_{\tilde{Q}},
+\tilde{\Phi}\big|_{\tilde{Q}+\tilde{a}} = \exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{a}))\,\tilde{\Phi}\big|_{\tilde{Q}},
 \qquad
 \tilde{\Phi}_0\ \text{constant}.
 $$
@@ -213,7 +213,7 @@ $$
 \mathrm{Sc}(\tilde{K}\tilde{a}) = -\frac{\omega a_0}{c} - \vec k\cdot\vec a .
 $$
 
-The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a}) = \langle\tilde{K},\tilde{a}\rangle$, **not** $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = -\frac{\omega a_0}{c} + \vec k\cdot\vec a$: the latter is real, so $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a phase, and a translation multiplier must have unit modulus. For the values $\tilde{K} = 2i\,e_0 + 0.7e_1 - 0.3e_2 + 0.5e_3$ and $\tilde{a} = 0.4i\,e_0 + 0.25e_1 - 0.35e_2 + 0.15e_3$ (units $c = 1$) one has $\mathrm{Sc}(\tilde{K}\tilde{a}) = -1.155$ and $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = -0.445$; the true multiplier is $e^{-1.155i}$. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial_\mu$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
+The pairing is $\mathrm{Sc}(\tilde{K}\tilde{a}) = \langle\tilde{K},\tilde{a}\rangle$, **not** $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = -\frac{\omega a_0}{c} + \vec k\cdot\vec a$: the latter is real, so $\exp(\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}))$ is a positive real number rather than a phase, and a translation multiplier must have unit modulus. For the values $\tilde{K} = 2i\,e_0 + 0.7e_1 - 0.3e_2 + 0.5e_3$ and $\tilde{a} = 0.4i\,e_0 + 0.25e_1 - 0.35e_2 + 0.15e_3$ (units $c = 1$) one has $\mathrm{Sc}(\tilde{K}\tilde{a}) = -1.155$ and $\mathrm{Sc}(\tilde{K}\tilde{a}^{\natural}) = -0.445$; the true multiplier is $\exp(-1.155i)$. This central phase is the finite, field-space form of the translation subgroup; its infinitesimal generator is the derivation $\partial_\mu$, and it is not a rotor, as *The Poincaré Group and the Biquaternion Frame* establishes.
 
 ## The Energy–Momentum of the Field
 
@@ -283,7 +283,7 @@ the angular momentum of a free particle is a single biquaternion. This is the sa
 
 ## Summary
 
-Noether's theorem in biquaternionic form joins the action of *Relativistic Mechanics in Biquaternionic Form* to the conserved current of the same article. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{\Phi}\mapsto e^{i\alpha}\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is
+Noether's theorem in biquaternionic form joins the action of *Relativistic Mechanics in Biquaternionic Form* to the conserved current of the same article. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is
 
 $$
 \tilde{J} = i\left[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}\right] = J^\nu e_\nu,
@@ -341,7 +341,7 @@ The field translation current is the canonical energy–momentum, $\partial_\mu 
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula of the informational sector |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading

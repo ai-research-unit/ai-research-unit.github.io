@@ -36,22 +36,22 @@ $$
 **Definition.** The **two forms** are the scalar parts of the two products,
 
 $$
-B(A,C) = AC, \qquad\qquad H(A,C) = A\bar C ,
+\langle A,C\rangle = AC, \qquad\qquad \langle A,C\rangle_{*} = A\bar C ,
 $$
 
-named the **general plain bilinear form** and the **Hermitian form**; their **algebraic norms** are the values at the two equal arguments, $B(A) = A^2$ and $H(A) = \lvert A\rvert^2$.
+named the **general plain bilinear form** and the **Hermitian form**; their **algebraic norms** are the values at the two equal arguments, $\langle A\rangle = A^2$ and $\langle A\rangle_{*} = \lvert A\rvert^2$.
 
-**Theorem.** $B$ and $H$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $B$ symmetric and $H$ conjugate-symmetric. Their algebraic norms are $B(A) = A^2$, complex-valued and anisotropic, and $H(A) = \lvert A\rvert^2 = a^2 + a'^2$, real-valued and positive definite. **Both are multiplicative**, and $H$ alone is definite.
+**Theorem.** $\langle\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle A\rangle = A^2$, complex-valued and anisotropic, and $\langle A\rangle_{*} = \lvert A\rvert^2 = a^2 + a'^2$, real-valued and positive definite. **Both are multiplicative**, and $\langle\cdot,\cdot\rangle_{*}$ alone is definite.
 
-**Proof.** The Gram matrix is $[B(1,1)] = [1]$ and $[H(1,1)] = [1]$. Symmetry of $B$ is commutativity of the field; conjugate-symmetry $H(A,C) = \overline{H(C,A)}$ is conjugate-commutativity. The forms are $B(A) = (a+ia')^2$, which vanishes only at $A = 0$ over $\mathbb{C}$ but takes complex values and is anisotropic over $\mathbb{R}$, and $H(A) = A\bar A = a^2+a'^2 \geq 0$, zero only at the origin. Multiplicativity is $B(AC) = A^2C^2$ and $H(AC) = A\bar AC\bar C = H(A)H(C)$. That the complex space is the **degenerate base** of the general four-form construction, where the four forms $B, N, H, K$ collapse to the two settings of the second slot with $B = N$ and $H = K$, is *The Two Forms and the Two Algebraic Norms of the Complexoid Space*.
+**Proof.** The Gram matrix is $[\langle 1,1\rangle] = [1]$ and $[\langle 1,1\rangle_{*}] = [1]$. Symmetry of $\langle\cdot,\cdot\rangle$ is commutativity of the field; conjugate-symmetry $\langle A,C\rangle_{*} = \overline{\langle C,A\rangle_{*}}$ is conjugate-commutativity. The forms are $\langle A\rangle = (a+ia')^2$, which vanishes only at $A = 0$ over $\mathbb{C}$ but takes complex values and is anisotropic over $\mathbb{R}$, and $\langle A\rangle_{*} = A\bar A = a^2+a'^2 \geq 0$, zero only at the origin. Multiplicativity is $\langle AC\rangle = A^2C^2$ and $\langle AC\rangle_{*} = A\bar AC\bar C = \langle A\rangle_{*}\langle C\rangle_{*}$. That the complex space is the **degenerate base** of the general four-form construction, where the four forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*}$ collapse to the two settings of the second slot with $B = N$ and $H = K$, is *The Two Forms and the Two Algebraic Norms of the Complexoid Space*.
 
 ## The General Plain Sesqualgebra and the Ternary Product
 
 **Definition.** The **general plain sesqualgebra (GPS)** over $\mathbb{C}$ is the pair $(\mathbb{C}, \star)$ with the sesquilinear product $A\star C = A\bar C$.
 
-**Theorem.** The associator of $\star$ is $[A,B,C] = A\bar B(\bar C - C)$, nonzero but confined to the anti-self-adjoint part of the third slot; its **ternary product** $\{A,B,C\} = A\bar BC$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{A,B,C\}} = \{\bar A,\bar B,\bar C\}$, and satisfies the Jordan triple identity, so that the structure is a **$J^{*}$-algebra** (a Jordan triple with an involution).
+**Theorem.** The associator of $\star$ is $[A,B,C] = A\bar \langle \bar C - C\rangle$, nonzero but confined to the anti-self-adjoint part of the third slot; its **ternary product** $\{A,B,C\} = A\bar BC$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{A,B,C\}} = \{\bar A,\bar B,\bar C\}$, and satisfies the Jordan triple identity, so that the structure is a **$J^{*}$-algebra** (a Jordan triple with an involution).
 
-**Proof.** The associator is $[A,B,C] = (A\bar B)\bar C - A\bar B\bar C = A\bar B(\bar C - C)$, which vanishes exactly when $C$ is real, that is, on the self-adjoint part of the third slot. Outer symmetry is $\{A,B,C\} = A\bar BC = C\bar BA = \{C,B,A\}$ by commutativity, and Hermitian symmetry follows by conjugating the three entries. The Jordan triple identity is checked directly and was verified on random complex triples; it is the axiom of *Jordan Triples with an Involution* and *Algebraic J*-Algebras*. The article is *The Ternary Product of the Complexoid Space*, and the positivity of the associated Hermitian form is *The Hermitian Form and the Positivity of the Complexoid Algebra*.
+**Proof.** The associator is $[A,B,C] = (A\bar B)\bar C - A\bar B\bar C = A\bar \langle \bar C - C\rangle$, which vanishes exactly when $C$ is real, that is, on the self-adjoint part of the third slot. Outer symmetry is $\{A,B,C\} = A\bar BC = C\bar BA = \{C,B,A\}$ by commutativity, and Hermitian symmetry follows by conjugating the three entries. The Jordan triple identity is checked directly and was verified on random complex triples; it is the axiom of *Jordan Triples with an Involution* and *Algebraic J\*-Algebras*. The article is *The Ternary Product of the Complexoid Space*, and the positivity of the associated Hermitian form is *The Hermitian Form and the Positivity of the Complexoid Algebra*.
 
 ## The Remarkable Subspaces
 
@@ -67,9 +67,9 @@ of real dimension one each. The real subspace is closed under multiplication and
 
 ## The Matrix Models
 
-**Theorem.** The complex algebra has two real matrix models. The **regular representation** sends $A = a+ia'$ to the Cayley matrix $\mathsf M_2(A) = aI + a'J$ in $M_2(\mathbb{R})$, multiplicative and faithful, of determinant $H(A) = a^2+a'^2$ and trace the algebra trace $2a$. The **doubled model** sends $A$ to $\operatorname{diag}(\mathsf M_2(A),\mathsf M_2(A))$ in $M_4(\mathbb{R})$, equivalently to the scalar matrix $A I_2$ of $M_2(\mathbb{C})$, of determinant $H(A)^2$ and trace $4a$.
+**Theorem.** The complex algebra has two real matrix models. The **regular representation** sends $A = a+ia'$ to the Cayley matrix $\mathsf M_2(A) = aI + a'J$ in $M_2(\mathbb{R})$, multiplicative and faithful, of determinant $\langle A\rangle_{*} = a^2+a'^2$ and trace the algebra trace $2a$. The **doubled model** sends $A$ to $\operatorname{diag}(\mathsf M_2(A),\mathsf M_2(A))$ in $M_4(\mathbb{R})$, equivalently to the scalar matrix $A I_2$ of $M_2(\mathbb{C})$, of determinant $\langle A\rangle_{*}^2$ and trace $4a$.
 
-**Proof.** Multiplication by $A$ is the $\mathbb{R}$-linear map $C\mapsto AC$, whose matrix in the basis $1, i$ is $aI + a'J$ because $J$ is multiplication by $i$ and $A = a + a'i$. It is multiplicative since multiplication is associative. Its determinant is $\det(aI+a'J) = a^2+a'^2 = H(A)$, and its trace is $2a$. The doubled model is that model on the module $\mathbb{C}\oplus\mathbb{C}$, whose determinant and trace are squared and doubled by the module rank. The commutants are $\mathbb{C}$ and $M_2(\mathbb{C})$ respectively, of real dimensions two and eight. The models are *The Matrix Element Representations of the Complexoid*.
+**Proof.** Multiplication by $A$ is the $\mathbb{R}$-linear map $C\mapsto AC$, whose matrix in the basis $1, i$ is $aI + a'J$ because $J$ is multiplication by $i$ and $A = a + a'i$. It is multiplicative since multiplication is associative. Its determinant is $\det(aI+a'J) = a^2+a'^2 = \langle A\rangle_{*}$, and its trace is $2a$. The doubled model is that model on the module $\mathbb{C}\oplus\mathbb{C}$, whose determinant and trace are squared and doubled by the module rank. The commutants are $\mathbb{C}$ and $M_2(\mathbb{C})$ respectively, of real dimensions two and eight. The models are *The Matrix Element Representations of the Complexoid*.
 
 ## Comparisons with the Field
 
@@ -81,9 +81,9 @@ of real dimension one each. The real subspace is closed under multiplication and
 
 ## Summary
 
-The complexoid is the pair $(\mathbb{C},\bar\cdot)$ read over $\mathbb{R}$: the plane $\mathbb{C}_{\mathbb{R}}$ of real dimension two with the complex structure $J$. From that pair alone the category reads off every structure the field carries beside its field axioms. The carrier has two products — the field product $AC$ and the sesquilinear product $A\bar C$ — whose scalar parts are two forms, the symmetric $B$ and the conjugate-symmetric $H$, with the same Gram matrix $[1]$. Their algebraic norms are $B(A) = A^2$, complex and anisotropic, and $H(A) = \lvert A\rvert^2$, real and positive definite; both are multiplicative, and $H$ alone is definite. The complex space is the degenerate base of the general four-form construction: the four forms collapse to two, $B = N$ and $H = K$.
+The complexoid is the pair $(\mathbb{C},\bar\cdot)$ read over $\mathbb{R}$: the plane $\mathbb{C}_{\mathbb{R}}$ of real dimension two with the complex structure $J$. From that pair alone the category reads off every structure the field carries beside its field axioms. The carrier has two products — the field product $AC$ and the sesquilinear product $A\bar C$ — whose scalar parts are two forms, the symmetric $\langle\cdot,\cdot\rangle$ and the conjugate-symmetric $\langle\cdot,\cdot\rangle_{*}$, with the same Gram matrix $[1]$. Their algebraic norms are $\langle A\rangle = A^2$, complex and anisotropic, and $\langle A\rangle_{*} = \lvert A\rvert^2$, real and positive definite; both are multiplicative, and $\langle\cdot,\cdot\rangle_{*}$ alone is definite. The complex space is the degenerate base of the general four-form construction: the four forms collapse to two, $B = N$ and $H = K$.
 
-The sesquilinear product is non-associative and conjugate-commutative, with associator confined to the anti-self-adjoint part of the third slot, and its ternary product $\{A,B,C\} = A\bar BC$ is a $J^{*}$-algebra. The conjugation splits the algebra into the real and the imaginary axes, and the field's commutativity removes the Lie slot. Two matrix models realise the algebra over $\mathbb{R}$, of determinants $H$ and $H^2$. The comparison of the two products reads: they coincide on the real part of the second slot and oppose on the imaginary part.
+The sesquilinear product is non-associative and conjugate-commutative, with associator confined to the anti-self-adjoint part of the third slot, and its ternary product $\{A,B,C\} = A\bar BC$ is a $J^{*}$-algebra. The conjugation splits the algebra into the real and the imaginary axes, and the field's commutativity removes the Lie slot. Two matrix models realise the algebra over $\mathbb{R}$, of determinants $\langle\cdot,\cdot\rangle_{*}$ and $H^2$. The comparison of the two products reads: they coincide on the real part of the second slot and oppose on the imaginary part.
 
 | Structure | Object | Carrier | What it is |
 |---|---|---|---|
@@ -91,10 +91,10 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | General plain sesqualgebra (GPS) | $(\mathbb{C},\star)$ | $\mathbb{C}_{\mathbb{R}}$ | the product $A\bar C$ |
 | Two products | — | $\mathbb{C}_{\mathbb{R}}$ | $AC$, $A\bar C$ |
 | Two forms | $B, H$ | $\mathbb{C}_{\mathbb{R}}$ | $AC$, $A\bar C$ as forms, Gram $[1]$ |
-| Two algebraic norms | $B(A), H(A)$ | $\mathbb{C}$ | $A^2$ anisotropic; $\lvert A\rvert^2$ definite |
+| Two algebraic norms | $\langle A\rangle, \langle A\rangle_{*}$ | $\mathbb{C}$ | $A^2$ anisotropic; $\lvert A\rvert^2$ definite |
 | Ternary product | $\{A,B,C\}$ | $\mathbb{C}$ | $A\bar BC$, a $J^{*}$-algebra |
 | Subspaces | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | $\mathbb{C}_{\mathbb{R}}$ | fixed and anti-fixed lines |
-| Matrix models | $\mathsf M_2, \mathsf M_4$ | $M_2(\mathbb{R}), M_4(\mathbb{R})$ | determinants $H$, $H^2$ |
+| Matrix models | $\mathsf M_2, \mathsf M_4$ | $M_2(\mathbb{R}), M_4(\mathbb{R})$ | determinants $\langle\cdot,\cdot\rangle_{*}$, $H^2$ |
 | Realification | $J$ | $\mathbb{C}_{\mathbb{R}}$ | multiplication by $i$, $J^2 = -\operatorname{id}$ |
 
 ## Summary of Notation
@@ -105,8 +105,8 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | $\mathbb{C}_{\mathbb{R}}$ | $\mathbb{C}$ read as a real vector space, basis $1, i$ |
 | $J(A) = iA$ | the real-linear complex structure, $J^2 = -\operatorname{id}$ |
 | $AC$, $A\bar C$ | the two products |
-| $B(A,C) = AC$, $H(A,C) = A\bar C$ | the two forms |
-| $B(A) = A^2$, $H(A) = \lvert A\rvert^2$ | the two algebraic norms |
+| $\langle A,C\rangle = AC$, $\langle A,C\rangle_{*} = A\bar C$ | the two forms |
+| $\langle A\rangle = A^2$, $\langle A\rangle_{*} = \lvert A\rvert^2$ | the two algebraic norms |
 | $A\star C = A\bar C$ | the sesquilinear product of the GPS |
 | $\{A,B,C\} = A\bar BC$ | the ternary product, $J^{*}$-algebra |
 | $\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$ | real and imaginary axes |
@@ -120,4 +120,4 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 - *The Sesquilinear Product of the Complexoid Space* (`articles_maths/the-sesquilinear-product-of-the-complexoid-space.md`) and *The Hermitian Form and the Positivity of the Complexoid Algebra* (`articles_maths/the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.md`), for the GPS, the ternarisation and the positivity of the form.
 - *The Ternary Product of the Complexoid Space* (`articles_maths/the-ternary-product-of-the-complexoid-space.md`), for the ternary operation in full.
 - *The Matrix Element Representations of the Complexoid* (`articles_maths/the-matrix-element-representations-of-the-complexoid.md`), for the two matrix models and their commutants.
-- *Jordan Triples with an Involution*, *Algebraic J*-Algebras*, *Hermitian Forms over Algebras and Norms* and *The Norm Defined by a Form*, for the general theory of a sesqualgebra, of a ternary product and of an algebraic norm.
+- *Jordan Triples with an Involution*, *Algebraic J\*-Algebras*, *Hermitian Forms over Algebras and Norms* and *The Norm Defined by a Form*, for the general theory of a sesqualgebra, of a ternary product and of an algebraic norm.

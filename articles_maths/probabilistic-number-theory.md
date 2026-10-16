@@ -107,7 +107,7 @@ The criterion is the arithmetic form of the three-series theorem: the small valu
 **Theorem (smoothing and the local limit theorem; sketch).** Let $f$ be additive with $\mathbb{E}[f] = \mu(N)$ and $\operatorname{Var}(f) = v(N)^2$, where the moments are those of the model. Then for $f$ in a suitable class — the strongly additive functions with $f(p)$ varying slowly and not congruent to a fixed function modulo a lattice — the law of $f(n)$ admits a density after smoothing over intervals of length $v(N)^{1/2+\varepsilon}$, and the density is uniformly Gaussian:
 
 $$
-\mathbb{P}\bigl(f(n) - \mu(N) \in [a,b]\,v(N)\bigr) \longrightarrow \frac{1}{\sqrt{2\pi}}\int_a^be^{-t^2/2}\,dt.
+\mathbb{P}\bigl(f(n) - \mu(N) \in [a,b]\,v(N)\bigr) \longrightarrow \frac{1}{\sqrt{2\pi}}\int_a^b\exp(-t^2/2)\,dt.
 $$
 
 The local limit theorem is the refinement of the central limit theorem from the distribution function to the density, and it is the form in which the theorem is applied to the count of integers with a prescribed number of prime factors: the number of $n \leq N$ with $\omega(n) = k$ is, for $k$ near $\log\log N$, asymptotic to $N/\sqrt{2\pi\log\log N}$ times the Gaussian density at $(k - \log\log N)/\sqrt{\log\log N}$, with a congruence correction when the values of $f(p)$ lie on a lattice.

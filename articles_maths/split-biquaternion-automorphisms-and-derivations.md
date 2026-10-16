@@ -95,7 +95,7 @@ $$
 
 an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$.
 
-**Derivations and automorphisms.** The two structures are linked by the exponential, $\exp(t\,\mathrm{ad}_a)(\tilde Q) = e^{ta}\tilde Q e^{-ta}$, the inner automorphism determined by $e^{ta}$. Hence the Lie algebra of the identity component of $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ is the derivation algebra: $\mathrm{Lie}\left(SO(3)\times SO(3)\right) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)$.
+**Derivations and automorphisms.** The two structures are linked by the exponential, $\exp(t\,\mathrm{ad}_a)(\tilde Q) = \exp(ta)\tilde Q \exp(-ta)$, the inner automorphism determined by $\exp(ta)$. Hence the Lie algebra of the identity component of $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ is the derivation algebra: $\mathrm{Lie}\left(SO(3)\times SO(3)\right) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)$.
 
 **An explicit basis.** The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{je_k}$ act with opposite signs on the two factors. Their combinations
 
@@ -111,7 +111,7 @@ act on the first and on the second factor respectively and vanish on the other, 
 
 **An inner automorphism.** For $u = e_1$ in the first factor, $\sigma(\tilde Q_+,\tilde Q_-) = (e_1 \tilde Q_+ e_1^{-1}, \tilde Q_-)$ has $e_1^{-1} = -e_1$, so it fixes $e_1$ and reverses the signs of $e_2$ and $e_3$ in the first factor while leaving the second untouched: $\sigma(e_2,0) = (-e_2,0)$, $\sigma(e_3,0) = (-e_3,0)$.
 
-**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{e_3 \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(e_1,0) = (\cos t\,e_1 + \sin t\,e_2, 0)$, matching $A(e^{te_3/2},0)$; the second factor is fixed, because $\mathrm{ad}_{e_3\tilde\Pi_1}$ acts as zero there.
+**A derivation.** Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{e_3 \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(e_1,0) = (\cos t\,e_1 + \sin t\,e_2, 0)$, matching $A(\exp(te_3/2),0)$; the second factor is fixed, because $\mathrm{ad}_{e_3\tilde\Pi_1}$ acts as zero there.
 
 **A derivation that mixes nothing.** Any $a = a_+ \tilde\Pi_1 + a_- \tilde\Pi_2$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.
 

@@ -18,9 +18,9 @@ The reversible systems and the exchange relation are *Reversible Iterated Functi
 $$
 R_*\mu_p=\mu_{\rho(p)},\qquad\text{so that}\qquad R_*\mu_p=\mu_p\iff p=\rho(p).
 $$
-On the boundary the transport of the Bernoulli measure is $\tilde R_*\nu_p=\nu_{\rho(p)}$, the Bernoulli measure with the permuted weights.
+On the boundary the transport of the Bernoulli measure is $R^{\mathrm{flip}}_*\nu_p=\nu_{\rho(p)}$, the Bernoulli measure with the permuted weights.
 
-*Proof.* Using the coding and the intertwining $R\circ\pi=\pi\circ\tilde R$ of the previous article, $R_*\mu_p=\pi_*\tilde R_*\nu_p$; the letterwise flip carries the cylinder $[x_1\cdots x_n]$ to $[\rho(x_1)\cdots\rho(x_n)]$, so $\tilde R_*\nu_p[\rho(x_1)\cdots\rho(x_n)]=\nu_p[x_1\cdots x_n]=p_{x_1}\cdots p_{x_n}$, which is the Bernoulli mass of the permuted vector $\rho(p)$ at the word $[\rho(x_1)\cdots\rho(x_n)]$; hence $\tilde R_*\nu_p=\nu_{\rho(p)}$. The self-similar measure is the pushforward, so the same holds for it, and the invariance is the equality of the two weight vectors. The verification on the middle-thirds Cantor set with symmetric weights confirms $\mu[w]=\mu[\bar w]$ for the tested words, and with the biased weights confirms that the flipped cylinder has the mass of the permuted weights.
+*Proof.* Using the coding and the intertwining $R\circ\pi=\pi\circR^{\mathrm{flip}}$ of the previous article, $R_*\mu_p=\pi_*R^{\mathrm{flip}}_*\nu_p$; the letterwise flip carries the cylinder $[x_1\cdots x_n]$ to $[\rho(x_1)\cdots\rho(x_n)]$, so $R^{\mathrm{flip}}_*\nu_p[\rho(x_1)\cdots\rho(x_n)]=\nu_p[x_1\cdots x_n]=p_{x_1}\cdots p_{x_n}$, which is the Bernoulli mass of the permuted vector $\rho(p)$ at the word $[\rho(x_1)\cdots\rho(x_n)]$; hence $R^{\mathrm{flip}}_*\nu_p=\nu_{\rho(p)}$. The self-similar measure is the pushforward, so the same holds for it, and the invariance is the equality of the two weight vectors. The verification on the middle-thirds Cantor set with symmetric weights confirms $\mu[w]=\mu[\bar w]$ for the tested words, and with the biased weights confirms that the flipped cylinder has the mass of the permuted weights.
 
 **Corollary (the symmetrisation).** For arbitrary weights the measure $\tfrac12(\mu_p+\mu_{\rho(p)})$ is the reversible self-similar measure of the system with the averaged weights $\tfrac12(p+\rho(p))$; the reversible measures are exactly the self-similar measures of the symmetric weights.
 
@@ -56,7 +56,7 @@ in the self-similar case, the union being that of the top fixed tiles; this is t
 
 **Definition.** The **topological pressure of the reversible system** is the pressure of the quotient dynamical system $\varphi/R$,
 $$
-P_R(t)=\lim_{n\to\infty}\frac1n\log\sum_{R\text{-orbits}}e^{tS_n W} ,
+P_R(t)=\lim_{n\to\infty}\frac1n\log\sum_{R\text{-orbits}}\exp(tS_n W) ,
 $$
 the sum over the orbits up to the involution, for the potential $W$ of the system.
 
@@ -123,7 +123,7 @@ The **reversible self-similar measure** is the invariant measure of the limit dy
 |---|---|
 | $R$, $\rho$, $p_{\rho(i)}=p_i$ | The involution, the branch permutation, the symmetric weights |
 | $R_*\mu_p=\mu_{\rho(p)}$ | The transport of the self-similar measure |
-| $\tilde R_*\nu_p=\nu_{\rho(p)}$ | The transport of the Bernoulli measure |
+| $R^{\mathrm{flip}}_*\nu_p=\nu_{\rho(p)}$ | The transport of the Bernoulli measure |
 | $\mu=\mu_{\mathrm{fix}}+\mu_{\mathrm{exch}}$ | Fixed and exchanged parts of the measure |
 | $\mathrm{Fix}(R)$, $T_v$ with $\rho(v)=v$ | Fixed set, fixed tiles |
 | $P_R(t)=P(t)$, $P_{\mathrm{fix}}(t)=\log\sum_{\rho(i)=i}\Delta_i^t$ | Reversible pressure; fixed part of the pressure |

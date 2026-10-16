@@ -74,34 +74,34 @@ and positivity plus the trace condition give exactly
 $$
 \tilde\rho\ \text{a state}\iff |\vec r|\le1 .
 $$
-The state is **pure** on the Bloch sphere $|\vec r|=1$, where $\tilde\rho=\tilde\Pi(\hat r)=\tfrac12(e_0+i\hat r)$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is **faithful** on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.
+The state is **pure** on the Bloch sphere $|\vec r|=1$, where $\tilde\rho=\tilde\Pi(\vec u_r)=\tfrac12(e_0+i\vec u_r)$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is **faithful** on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the **trace state** at $\vec r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.
 
 The parameter is a genuine superposition coordinate: $\vec r$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.
 
 ### The Logarithm of a Biquaternion State
 
-The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\hat r$ one has $(i\hat r)^2=e_0$, so
+The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\vec u_r$ one has $(i\vec u_r)^2=e_0$, so
 $$
-\exp\big(\theta\,i\hat r\big)=\cosh\theta\,e_0+i\sinh\theta\,\hat r.
+\exp\big(\theta\,i\vec u_r\big)=\cosh\theta\,e_0+i\sinh\theta\,\vec u_r.
 $$
-Second, the determinant of the state, $\det\mathsf{M}_2(\tilde\rho)=\lambda_+\lambda_-=\tfrac14(1-|\vec r|^2)=N(\tilde\rho)$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
+Second, the determinant of the state, $\det\mathsf{M}_2(\tilde\rho)=\lambda_+\lambda_-=\tfrac14(1-|\vec r|^2)=\langle\tilde\rho\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
 \log\tilde\rho=b_0\,e_0+i\,\vec b\cdot\mathbf e,
 $$
 the scalar part is fixed by the product of eigenvalues and the vector part by their ratio,
 $$
 b_0=\tfrac12\log\det\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4},\qquad
-\vec b=\mathrm{artanh}\big(|\vec r|\big)\,\hat r,
+\vec b=\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 $$
 so that
 $$
 \log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_0
-+i\,\mathrm{artanh}\big(|\vec r|\big)\,\hat r,
++i\,\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 \qquad |\vec r|<1 .
 $$
-The formula was checked by exponentiating it and recovering $\tilde\rho$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $e^{b_0}\cosh|\vec b|=\tfrac12$ and $e^{b_0}\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde\rho\in\mathbb{M}_+$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
+The formula was checked by exponentiating it and recovering $\tilde\rho$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $\exp(b_0)\cosh|\vec b|=\tfrac12$ and $\exp(b_0)\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde\rho\in\mathbb{M}_+$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
 
-The domain is the open Bloch ball. On the pure boundary the state is a **zero divisor**, $N(\tilde\rho)=0$, and $\log\tilde\rho$ does not exist as an element of $\mathbb{B}$; the formal expression above diverges. This is not a defect of the framework but its zero-divisor structure appearing in the logarithm, and it is the reason the relative entropy is handled in two steps below: first as a finite expression in the interior, then by its continuous extension to the boundary.
+The domain is the open Bloch ball. On the pure boundary the state is a **zero divisor**, $\langle\tilde\rho\rangle_{\natural}=0$, and $\log\tilde\rho$ does not exist as an element of $\mathbb{B}$; the formal expression above diverges. This is not a defect of the framework but its zero-divisor structure appearing in the logarithm, and it is the reason the relative entropy is handled in two steps below: first as a finite expression in the interior, then by its continuous extension to the boundary.
 
 ## The Relative Entropy of Two Biquaternion States
 
@@ -146,12 +146,12 @@ S\big(\tfrac12e_0\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
 $$
 the relative entropy of the trace state from $\tilde\sigma$, which is finite for every faithful $\tilde\sigma$ and tends to $+\infty$ only as $\tilde\sigma$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
 $$
-S\big(\tilde\Pi(\hat r)\big\|\tilde\sigma\big)
+S\big(\tilde\Pi(\vec u_r)\big\|\tilde\sigma\big)
 =-\tfrac12\log\frac{1-|\vec s|^2}{4}
 -\mathrm{artanh}\big(|\vec s|\big)\cos\gamma',
-\qquad \cos\gamma'=\hat r\cdot\hat s,
+\qquad \cos\gamma'=\vec u_r\cdot\vec u_s,
 $$
-which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\hat r)\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 
@@ -223,7 +223,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **Established (theorem, imported).** The Umegaki relative entropy and the properties of positivity, joint convexity, monotonicity and additivity; the Araki relative entropy and the relative modular operator for general von Neumann algebras; the finiteness of the relative entropy of a local excitation of the vacuum; the role of the relative modular operator in the Bisognano–Wichmann theorem. All of this is standard.
 
-**Established (recomputed here).** The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\hat r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.
+**Established (recomputed here).** The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\vec u_r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.
 
 **Interpretation.** That the closed form, the identity of the trace, and the zero-divisor boundary give a biquaternion interpretation of relative entropy in which the algebra's own conjugation supplies the logarithm and the relative modular operator. The algebra houses the interpretation; it does not force it.
 
@@ -245,7 +245,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic interpretation of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.
 
-The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\hat r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
+The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
 S(\tilde\rho\|\tilde\sigma)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}

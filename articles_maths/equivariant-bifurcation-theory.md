@@ -30,7 +30,7 @@ so that the flow commutes with the action; a solution and its image under the ac
 
 ### The Equivariant Branching Lemma
 
-**Theorem (Vanderbauwhede–Cicogna, quoted).** Let $f$ be a sufficiently smooth $\Gamma$-equivariant family with $f(0,\lambda)=0$ and with the trivial solution losing stability at $\lambda=0$ through a zero eigenvalue of $D_xf(0,0)$. Let $\Sigma$ be an isotropy subgroup such that $\dim\mathrm{Fix}(\Sigma)=1$ and the kernel eigenvector $v$ lies in $\mathrm{Fix}(\Sigma)$. Then there is a branch of solutions of $f(x,\lambda)=0$ bifurcating from the trivial solution and lying in $\mathrm{Fix}(\Sigma)$, with isotropy containing $\Sigma$; the branch is a smooth curve parametrised by $\lambda$, and its direction is $v$.
+**Theorem (Vanderbauwhede–Cicogna, quoted).** Let $f$ be a sufficiently smooth $\Gamma$-equivariant family with $f(0,\lambda)=0$ and with the trivial solution losing stability at $\lambda=0$ through a zero eigenvalue of $D_xf(0,0)$. Let $\Sigma$ be an isotropy subgroup such that $\dim\mathrm{Fix}(\Sigma)=1$ and the kernel eigenvector $b$ lies in $\mathrm{Fix}(\Sigma)$. Then there is a branch of solutions of $f(x,\lambda)=0$ bifurcating from the trivial solution and lying in $\mathrm{Fix}(\Sigma)$, with isotropy containing $\Sigma$; the branch is a smooth curve parametrised by $\lambda$, and its direction is $b$.
 
 *Proof.* Quoted. The proof restricts the equation to the one-dimensional fixed-point subspace and applies the equivariant implicit function theorem; the restriction converts the problem into a scalar one, where the crossing of the eigenvalue gives the branch by the intermediate value theorem, and the equivariance guarantees that the branch is a full solution. The general statement, the isotropy lattice and the equivariant transversality are those of the equivariant bifurcation theory of Golubitsky–Stewart–Schaeffer and Chossat–Lauterbach.
 
@@ -90,7 +90,7 @@ An **equivariant bifurcation** is a bifurcation of a $\Gamma$-equivariant family
 | $\Gamma$, $\gamma$ | Symmetry group and its elements |
 | $f(\gamma x,\lambda)=\gamma f(x,\lambda)$ | Equivariance of the family |
 | $\Sigma$, $\mathrm{Fix}(\Sigma)$, $\Gamma_x$ | Subgroup, its fixed-point subspace, isotropy subgroup |
-| $v$, $D_xf(0,0)$ | Kernel eigenvector and linearisation |
+| $b$, $D_xf(0,0)$ | Kernel eigenvector and linearisation |
 | $\lambda x+ax^3$ | $\mathbb{Z}/2$ pitchfork normal form |
 | $x=\pm\sqrt{-\lambda/a}$ | The symmetry-breaking branch pair |
 | $a<0$, $a>0$ | Supercritical and subcritical pitchfork |

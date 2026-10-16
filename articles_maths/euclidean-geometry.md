@@ -141,7 +141,7 @@ For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement 
 
 **Definition.** A **regular polygon** with $m$ sides is a plane polygon whose sides all have the same length and whose angles are all equal; its **rotation group** is the cyclic group $C_m$ of order $m$ of rotations by multiples of $2\pi/m$, and its full symmetry group is the dihedral group $D_m$ of order $2m$.
 
-**Theorem.** The regular polygons exist for every $m \geq 3$, with the vertices at the $m$-th roots of unity in $\mathbb{C}$: $z_k = e^{2\pi i k/m}$.
+**Theorem.** The regular polygons exist for every $m \geq 3$, with the vertices at the $m$-th roots of unity in $\mathbb{C}$: $z_k = \exp(2\pi i k/m)$.
 
 **Definition.** A **regular polyhedron** is a convex polyhedron whose faces are congruent regular polygons and whose vertex figures are congruent. In Euclidean three-space there are exactly five: the tetrahedron, the cube, the octahedron, the dodecahedron and the icosahedron, with faces of $3, 4, 3, 5, 3$ sides respectively.
 

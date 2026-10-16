@@ -13,16 +13,16 @@ The article proceeds from eigen-elements to the characteristic polynomial, then 
 
 ### Definitions
 
-**Definition.** Let $T:V \to V$ be linear. A scalar $\lambda \in F$ is an **eigenvalue** of $T$ if there exists a nonzero $v \in V$ with
+**Definition.** Let $T:V \to V$ be linear. A scalar $\lambda \in F$ is an **eigenvalue** of $T$ if there exists a nonzero $b \in V$ with
 
 $$
-T(v)=\lambda v .
+T(b)=\lambda b .
 $$
 
-Such a $v$ is an **eigenvector** for $\lambda$, and the eigenspace is
+Such a $b$ is an **eigenvector** for $\lambda$, and the eigenspace is
 
 $$
-V_\lambda=\ker(T-\lambda \operatorname{id}_V)=\{v \in V : T(v)=\lambda v\},
+V_\lambda=\ker(T-\lambda \operatorname{id}_V)=\{b \in V : T(b)=\lambda b\},
 $$
 
 a subspace of $V$ containing the zero vector, which is not itself an eigenvector. The nonzero elements of $V_\lambda$ are the eigenvectors for $\lambda$.
@@ -43,7 +43,7 @@ $$
 
 so the sum of the eigenspaces is direct.
 
-*Proof.* Suppose $v_1+\cdots+v_k=0$ with $v_i \in V_{\lambda_i}$, and choose such a relation with the fewest nonzero terms; reindex so that $v_1,\dots,v_m \neq 0$. Applying $T$ gives $\lambda_1 v_1+\cdots+\lambda_m v_m=0$, and subtracting $\lambda_1$ times the original relation gives $(\lambda_2-\lambda_1)v_2+\cdots+(\lambda_m-\lambda_1)v_m=0$, a shorter relation with nonzero coefficients; this contradicts minimality unless $m=1$, in which case $v_1=0$, again a contradiction. Hence no nontrivial relation exists and the sum is direct.
+*Proof.* Suppose $b_1+\cdots+b_k=0$ with $b_i \in V_{\lambda_i}$, and choose such a relation with the fewest nonzero terms; reindex so that $b_1,\dots,b_m \neq 0$. Applying $T$ gives $\lambda_1 b_1+\cdots+\lambda_m b_m=0$, and subtracting $\lambda_1$ times the original relation gives $(\lambda_2-\lambda_1)b_2+\cdots+(\lambda_m-\lambda_1)b_m=0$, a shorter relation with nonzero coefficients; this contradicts minimality unless $m=1$, in which case $b_1=0$, again a contradiction. Hence no nontrivial relation exists and the sum is direct.
 
 A crucial point is that eigenvalues depend on the field. The real matrix $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has no real eigenvalue, because $J(x,y)=(-y,x)$ rotates the plane and fixes no line; over $\mathbb{C}$ its eigenvalues are $i$ and $-i$, with eigenvectors $(1,-i)$ and $(1,i)$. The characteristic polynomial below makes this precise: it has real coefficients and its real roots are the real eigenvalues.
 
@@ -69,7 +69,7 @@ The definition is legitimate for $T$ because similar matrices have equal determi
 
 **Proposition.** For every eigenvalue, the geometric multiplicity is at most the algebraic multiplicity.
 
-*Proof.* Extend a basis $v_1,\dots,v_g$ of $V_\lambda$ to a basis of $V$. In that basis the matrix of $T$ is block upper triangular,
+*Proof.* Extend a basis $b_1,\dots,b_g$ of $V_\lambda$ to a basis of $V$. In that basis the matrix of $T$ is block upper triangular,
 
 $$
 \begin{pmatrix} \lambda I_g & * \\ 0 & B \end{pmatrix},
@@ -83,7 +83,7 @@ The inequality can be strict, and the gap is exactly what prevents diagonalisati
 
 **Proposition.** (i) The eigenvalues of an upper triangular matrix are its diagonal entries, and $c_A(x)=\prod_i(x-a_{ii})$. (ii) If $A$ is invertible with eigenvalues $\lambda_1,\dots,\lambda_n$ then $A^{-1}$ has eigenvalues $\lambda_i^{-1}$, and $A^k$ has eigenvalues $\lambda_i^k$. (iii) $A$ and $A^{\mathsf{T}}$ have the same characteristic polynomial.
 
-*Proof.* (i) $xI-A$ is upper triangular with diagonal $x-a_{ii}$, so its determinant is the product. (ii) $Av=\lambda v$ gives $A^{-1}v=\lambda^{-1}v$ for $\lambda \neq 0$, and $A^kv=\lambda^k v$ by induction. (iii) $\det(xI-A^{\mathsf{T}})=\det((xI-A)^{\mathsf{T}})=\det(xI-A)$.
+*Proof.* (i) $xI-A$ is upper triangular with diagonal $x-a_{ii}$, so its determinant is the product. (ii) $Av=\lambda b$ gives $A^{-1}b=\lambda^{-1}b$ for $\lambda \neq 0$, and $A^kv=\lambda^k b$ by induction. (iii) $\det(xI-A^{\mathsf{T}})=\det((xI-A)^{\mathsf{T}})=\det(xI-A)$.
 
 ## Diagonalisation
 
@@ -124,10 +124,10 @@ Invariance is preserved by the operators that are polynomials in $T$: if $W$ is 
 Every eigenspace is invariant, and so is the sum of the eigenspaces for a set of eigenvalues, and the generalised eigenspace
 
 $$
-V^{(\lambda)}=\{v \in V : (T-\lambda\operatorname{id})^k v=0 \text{ for some } k \ge 1\}=\bigcup_{k \ge 1}\ker(T-\lambda\operatorname{id})^k .
+V^{(\lambda)}=\{b \in V : (T-\lambda\operatorname{id})^k b=0 \text{ for some } k \ge 1\}=\bigcup_{k \ge 1}\ker(T-\lambda\operatorname{id})^k .
 $$
 
-The generalised eigenspaces are the correct replacement for the eigenspaces when diagonalisation fails: they are the primary components of $V$ as a module over $F[x]$ under the action $x \cdot v=T(v)$, and they are treated in the applications article on the Jordan form.
+The generalised eigenspaces are the correct replacement for the eigenspaces when diagonalisation fails: they are the primary components of $V$ as a module over $F[x]$ under the action $x \cdot b=T(b)$, and they are treated in the applications article on the Jordan form.
 
 **Proposition.** If $V=W_1 \oplus \cdots \oplus W_k$ with each $W_i$ invariant under $T$, then in a basis adapted to the decomposition the matrix of $T$ is block diagonal, with blocks the matrices of the restrictions $T|_{W_i}$; consequently $c_T=\prod_i c_{T|_{W_i}}$.
 
@@ -139,7 +139,7 @@ The generalised eigenspaces are the correct replacement for the eigenspaces when
 
 **Theorem.** $T$ is triangularisable if and only if $c_T$ splits over $F$ into linear factors.
 
-*Proof.* If the matrix is upper triangular then $c_T$ is the product of the diagonal entries $x-a_{ii}$ by the proposition on triangular matrices, so it splits. Conversely, if $c_T$ splits, it has a root $\lambda_1 \in F$, hence an eigenvector $v_1$; the quotient $V/\langle v_1\rangle$ has dimension $n-1$ and the induced operator has characteristic polynomial $c_T(x)/(x-\lambda_1)$, which splits, so by induction the quotient has a basis of the required form, and lifting it gives a basis $v_1,\dots,v_n$ of $V$ in which the matrix is upper triangular with the roots on the diagonal.
+*Proof.* If the matrix is upper triangular then $c_T$ is the product of the diagonal entries $x-a_{ii}$ by the proposition on triangular matrices, so it splits. Conversely, if $c_T$ splits, it has a root $\lambda_1 \in F$, hence an eigenvector $b_1$; the quotient $V/\langle b_1\rangle$ has dimension $n-1$ and the induced operator has characteristic polynomial $c_T(x)/(x-\lambda_1)$, which splits, so by induction the quotient has a basis of the required form, and lifting it gives a basis $b_1,\dots,b_n$ of $V$ in which the matrix is upper triangular with the roots on the diagonal.
 
 Triangularisation is always available after extending scalars to a splitting field, and over $\mathbb{C}$ every matrix is triangularisable; diagonalisation is not, because the diagonal entries may repeat with a single eigenvector.
 
@@ -159,11 +159,11 @@ This is the standard Cayley–Hamilton theorem, proved by either of the usual ro
 
 **Theorem.** $T$ is diagonalisable over $F$ if and only if $m_T$ is a product of distinct linear factors in $F[x]$.
 
-*Proof.* If $T$ is diagonal, let $\mu_1,\dots,\mu_r$ be its **distinct** eigenvalues; then $\prod_{j=1}^{r}(x-\mu_j)$ annihilates $T$, since it vanishes at every diagonal entry, so $m_T$ divides it, hence $m_T$ is a product of distinct linear factors. Conversely, suppose $m_T=\prod_{i=1}^{k}(x-\lambda_i)$ with the $\lambda_i$ distinct. The polynomials $q_i=\prod_{j \neq i}(x-\lambda_j)$ have no common factor, so there exist $a_i \in F[x]$ with $\sum_i a_i q_i=1$ by Bézout. For $v \in V$, write $v=\sum_i a_i(T)q_i(T)v$, and $q_i(T)v \in \ker(T-\lambda_i\operatorname{id})$ because $(x-\lambda_i)q_i=m_T$ annihilates $T$. Hence $V$ is the sum of the eigenspaces, and it is a direct sum because eigenspaces for distinct eigenvalues are independent.
+*Proof.* If $T$ is diagonal, let $\mu_1,\dots,\mu_r$ be its **distinct** eigenvalues; then $\prod_{j=1}^{r}(x-\mu_j)$ annihilates $T$, since it vanishes at every diagonal entry, so $m_T$ divides it, hence $m_T$ is a product of distinct linear factors. Conversely, suppose $m_T=\prod_{i=1}^{k}(x-\lambda_i)$ with the $\lambda_i$ distinct. The polynomials $q_i=\prod_{j \neq i}(x-\lambda_j)$ have no common factor, so there exist $a_i \in F[x]$ with $\sum_i a_i q_i=1$ by Bézout. For $b \in V$, write $b=\sum_i a_i(T)q_i(T)b$, and $q_i(T)b \in \ker(T-\lambda_i\operatorname{id})$ because $(x-\lambda_i)q_i=m_T$ annihilates $T$. Hence $V$ is the sum of the eigenspaces, and it is a direct sum because eigenspaces for distinct eigenvalues are independent.
 
 **Theorem.** Let $K$ be a splitting field for $m_T$. The roots of $m_T$ in $K$ are exactly the eigenvalues of $T$ in $K$, and they coincide with the roots of $c_T$ in $K$.
 
-*Proof.* If $\lambda$ is an eigenvalue with eigenvector $v$, then $0=m_T(T)v=m_T(\lambda)v$ and $v \neq 0$, so $m_T(\lambda)=0$. Conversely, if $\mu$ is a root of $m_T$, write $m_T=(x-\mu)^k g$ with $g(\mu) \neq 0$ and $k \ge 1$. If $\mu$ were not an eigenvalue then $T-\mu\operatorname{id}$ would be invertible, hence so would $(T-\mu\operatorname{id})^k$, and multiplying $0=m_T(T)=(T-\mu\operatorname{id})^kg(T)$ by the inverse would give $g(T)=0$ with $\deg g<\deg m_T$, contradicting minimality. Hence $\mu$ is an eigenvalue. Since $m_T \mid c_T$ by Cayley–Hamilton, every root of $m_T$ is a root of $c_T$; and every root of $c_T$ is an eigenvalue, hence a root of $m_T$ by the first part. So the two polynomials have the same set of roots.
+*Proof.* If $\lambda$ is an eigenvalue with eigenvector $b$, then $0=m_T(T)b=m_T(\lambda)b$ and $b \neq 0$, so $m_T(\lambda)=0$. Conversely, if $\mu$ is a root of $m_T$, write $m_T=(x-\mu)^k g$ with $g(\mu) \neq 0$ and $k \ge 1$. If $\mu$ were not an eigenvalue then $T-\mu\operatorname{id}$ would be invertible, hence so would $(T-\mu\operatorname{id})^k$, and multiplying $0=m_T(T)=(T-\mu\operatorname{id})^kg(T)$ by the inverse would give $g(T)=0$ with $\deg g<\deg m_T$, contradicting minimality. Hence $\mu$ is an eigenvalue. Since $m_T \mid c_T$ by Cayley–Hamilton, every root of $m_T$ is a root of $c_T$; and every root of $c_T$ is an eigenvalue, hence a root of $m_T$ by the first part. So the two polynomials have the same set of roots.
 
 The minimal polynomial is a finer invariant than the characteristic polynomial and detects diagonalisability exactly. For the matrix $N=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one has $c_N=(x-1)^2$, and also $m_N=(x-1)^2$, since $N-I \neq 0$ but $(N-I)^2=0$; the repeated root occurs in both, so $N$ is not diagonalisable. For $A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ one has $c_A=(x-3)(x-1)=m_A$.
 
@@ -171,7 +171,7 @@ The minimal polynomial is a finer invariant than the characteristic polynomial a
 
 **Theorem.** Let $T_1,\dots,T_k$ be diagonalisable operators on $V$ that commute pairwise, and suppose each $T_i$ splits over $F$. Then there is a basis of $V$ in which every $T_i$ is diagonal.
 
-*Proof.* For $k=1$ this is the definition. Inductively, let $T_1$ be diagonalisable and decompose $V=\bigoplus_\lambda V_\lambda$ into its eigenspaces. Each $V_\lambda$ is invariant under every $T_i$, because if $v \in V_\lambda$ then $T_1T_i v=T_iT_1v=\lambda T_iv$, so $T_iv \in V_\lambda$. The restrictions $T_2|_{V_\lambda},\dots,T_k|_{V_\lambda}$ commute pairwise and remain diagonalisable with splitting characteristic polynomial on the invariant subspace $V_\lambda$; by induction they are simultaneously diagonal on $V_\lambda$. Combining bases over the finitely many $\lambda$ gives a basis of $V$ diagonal for all $T_i$.
+*Proof.* For $k=1$ this is the definition. Inductively, let $T_1$ be diagonalisable and decompose $V=\bigoplus_\lambda V_\lambda$ into its eigenspaces. Each $V_\lambda$ is invariant under every $T_i$, because if $b \in V_\lambda$ then $T_1T_i b=T_iT_1b=\lambda T_iv$, so $T_iv \in V_\lambda$. The restrictions $T_2|_{V_\lambda},\dots,T_k|_{V_\lambda}$ commute pairwise and remain diagonalisable with splitting characteristic polynomial on the invariant subspace $V_\lambda$; by induction they are simultaneously diagonal on $V_\lambda$. Combining bases over the finitely many $\lambda$ gives a basis of $V$ diagonal for all $T_i$.
 
 **Corollary.** Over an algebraically closed field the hypothesis that each $T_i$ splits is automatic, so every finite commuting family of diagonalisable operators is simultaneously diagonalisable. In particular a single diagonalisable operator lies in a maximal commutative subalgebra consisting entirely of simultaneously diagonalisable operators, namely the algebra of all operators that are diagonal in its eigenbasis; the algebra of polynomials in the operator and the scalars is the subalgebra of that one generated by the operator.
 
@@ -197,7 +197,7 @@ The characteristic polynomial is $c_M(x)=x^2-x-1$, with distinct real roots $\va
 
 ### Further Examples
 
-**A cycle over two fields.** Let $C=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix}$, the matrix of the $3$-cycle. Since $C^3=I$ and $C \neq I$, the minimal polynomial divides $x^3-1$ and is not $x-1$; in fact $x^3-1=(x-1)(x^2+x+1)$ has distinct roots over $\mathbb{C}$, namely $1,\omega,\omega^2$ with $\omega=e^{2\pi i/3}$. Over $\mathbb{C}$ the matrix has three distinct eigenvalues and is diagonalisable; over $\mathbb{R}$ its only eigenvalue is $1$, with eigenspace spanned by $(1,1,1)$, so the sum of the geometric multiplicities is $1<3$ and $C$ is not diagonalisable over $\mathbb{R}$. The same matrix is a different object over the two fields.
+**A cycle over two fields.** Let $C=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix}$, the matrix of the $3$-cycle. Since $C^3=I$ and $C \neq I$, the minimal polynomial divides $x^3-1$ and is not $x-1$; in fact $x^3-1=(x-1)(x^2+x+1)$ has distinct roots over $\mathbb{C}$, namely $1,\omega,\omega^2$ with $\omega=\exp(2\pi i/3)$. Over $\mathbb{C}$ the matrix has three distinct eigenvalues and is diagonalisable; over $\mathbb{R}$ its only eigenvalue is $1$, with eigenspace spanned by $(1,1,1)$, so the sum of the geometric multiplicities is $1<3$ and $C$ is not diagonalisable over $\mathbb{R}$. The same matrix is a different object over the two fields.
 
 **A Jordan block.** Let $N=\begin{pmatrix}1&1&0\\0&1&1\\0&0&1\end{pmatrix}$. Then $c_N(x)=(x-1)^3$ and $N-I$ has rank $2$, so $V_1$ has dimension $3-2=1$ and the geometric multiplicity is strictly less than the algebraic multiplicity. The minimal polynomial is $(x-1)^3$, the generalised eigenspace $V^{(1)}$ is all of $F^3$, and $N$ is not diagonalisable. This is the simplest matrix for which the generalised eigenspace is needed.
 
@@ -225,7 +225,7 @@ The theorem is proved in the applications article of this category on modules ov
 
 ## Summary
 
-An eigenvalue of $T:V \to V$ is a scalar $\lambda$ with $T(v)=\lambda v$ for some nonzero $v$, the eigenvector; the eigenvectors for $\lambda$ together with $0$ form the eigenspace $V_\lambda=\ker(T-\lambda\operatorname{id})$. Eigenvectors for distinct eigenvalues are independent, and the sum of the eigenspaces is always direct. The characteristic polynomial $c_T(x)=\det(xI-A)$ is a similarity invariant, monic of degree $n$, with $c_T=x^n-(\operatorname{tr}T)x^{n-1}+\cdots+(-1)^n\det T$, and its roots in $F$ are exactly the eigenvalues.
+An eigenvalue of $T:V \to V$ is a scalar $\lambda$ with $T(b)=\lambda b$ for some nonzero $b$, the eigenvector; the eigenvectors for $\lambda$ together with $0$ form the eigenspace $V_\lambda=\ker(T-\lambda\operatorname{id})$. Eigenvectors for distinct eigenvalues are independent, and the sum of the eigenspaces is always direct. The characteristic polynomial $c_T(x)=\det(xI-A)$ is a similarity invariant, monic of degree $n$, with $c_T=x^n-(\operatorname{tr}T)x^{n-1}+\cdots+(-1)^n\det T$, and its roots in $F$ are exactly the eigenvalues.
 
 $T$ is diagonalisable when $V$ has a basis of eigenvectors, equivalently when $V$ is the direct sum of the eigenspaces, equivalently when the geometric multiplicities sum to $n$, equivalently when $c_T$ splits over $F$ and every geometric multiplicity equals the corresponding algebraic multiplicity. Distinct eigenvalues always suffice but are not necessary. The eigenspace dimensions are computed as $n-\operatorname{rk}(\lambda I-A)$, so diagonalisation is decided by rank computations on the matrices $\lambda I-A$.
 
@@ -250,7 +250,7 @@ When diagonalisation fails one uses invariant subspaces: a generalised eigenspac
 | $P^{-1}AP$ | similar matrices |
 | $\operatorname{diag}(\lambda_1,\dots,\lambda_n)$ | diagonal matrix |
 | $\varphi,\psi$ | the roots $\tfrac12(1\pm\sqrt5)$ of $x^2-x-1$ |
-| $\omega$ | primitive cube root of unity $e^{2\pi i/3}$ |
+| $\omega$ | primitive cube root of unity $\exp(2\pi i/3)$ |
 | $\sigma(T)$ | spectrum: eigenvalues of $T$, with algebraic multiplicities over a splitting field |
 | $\rho(T)$ | spectral radius, $\max_{\lambda\in\sigma(T)}|\lambda|$ |
 | $J_e(\lambda)=\lambda I_e+N_e$ | Jordan block of size $e$ |

@@ -10,7 +10,7 @@ is, in this interpretation, the sign of $i^2$; it is not put into the metric by 
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
-Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
+Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. One symbol is introduced here and used only here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
 
 ## Two Senses of "Complex Structure"
 
@@ -48,19 +48,19 @@ A general element $i q_0e_0+\vec q$ of $\mathbb{M}_-$ is sent to $-q_0e_0+i\vec 
 
 The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
 $$
-N(JX,JY)=N(\tilde{Q},\tilde{R}) \qquad \text{for all } \tilde{Q},\tilde{R},
+\langle JX,JY\rangle_{\natural}=\langle\tilde{Q},\tilde{R}\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde{R},
 $$
-which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $N$,
+which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
 $$
-N(JX,-\tilde{Q})=N(\tilde{Q},JX) \;\Longrightarrow\; -N(\tilde{Q},JX)=N(\tilde{Q},JX) \;\Longrightarrow\; N(\tilde{Q},JX)=0 ,
+\langle JX,-\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; -\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; \langle\tilde{Q},JX\rangle_{\natural}=0 ,
 $$
 so a vector and its image under $J$ are orthogonal. Taking $\tilde{R}=\tilde{Q}$,
 $$
-N(JX,JX)=N(\tilde{Q},\tilde{Q}).
+\langle JX,JX\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $N(\tilde{Q},\tilde{Q})\neq0$, the form is definite with the sign of $N(\tilde{Q},\tilde{Q})$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde{R}$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde{R}$ orthogonal to the plane and $Z$ in the plane,
 $$
-N(JY,Z)=N(J^2\tilde{R},JZ)=-N(\tilde{R},JZ)=0,
+\langle JY,Z\rangle_{\natural}=\langle J^2\tilde{R},JZ\rangle_{\natural}=-\langle\tilde{R},JZ\rangle_{\natural}=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
@@ -92,7 +92,7 @@ Three features of this definition are the content of its locality.
 
 At each point the local structure induces the quadratic form of the material sector. With $d\tilde{Q}=ic\,dt\,e_0+d\vec x$,
 $$
-N(d\tilde{Q})=(ic\,dt)^2+d\vec x^2=-c^2\,dt^2+d\vec x^2 .
+\langle d\tilde{Q}\rangle_{\natural}=(ic\,dt)^2+d\vec x^2=-c^2\,dt^2+d\vec x^2 .
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.
 
@@ -187,7 +187,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian (informational), anti-Hermitian (material) subspaces |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |

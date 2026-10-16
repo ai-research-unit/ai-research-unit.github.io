@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The quaternions form a division algebra, so the units of the plain product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.
+The quaternions form a division algebra, so the units of the quaternion product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.
 
 **Boundaries.** The space and its topology are *Introduction to Topology on the Quaternions*, above this article in this category; the norm and the inverse formula are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the finite subgroups of the unit sphere are *Quaternion Orders and Finite Groups of Units*, below this article in this category; the exponential and the Lie structure are *Quaternion Exponential and Lie Group Structure*, below this article in this category; the rotations are *Quaternion Rotations and Reflections*, in `### Geometry`.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_0^{2}+|\vec q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
 
 ## The Group of Units
 
-**Proposition (the units are the nonzero elements).** The group of units of the plain product is
+**Proposition (the units are the nonzero elements).** The group of units of the quaternion product is
 
 $$
 \mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\},
@@ -18,11 +18,11 @@ $$
 
 of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^\times e_0\cong\mathbb{R}^\times$, of real dimension one.
 
-*Proof.* The algebra is a division algebra, so every nonzero element is invertible, with inverse $\tilde q^{\natural}/N(\tilde q)$ (*Norm and Invertibility in the Quaternion Algebra*); the origin is a closed proper algebraic subset, so its complement is open and dense; an element commutes with all of $\mathbb{H}$ exactly when it is a real scalar multiple of $e_0$, and the central units are the nonzero ones.
+*Proof.* The algebra is a division algebra, so every nonzero element is invertible, with inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ (*Norm and Invertibility in the Quaternion Algebra*); the origin is a closed proper algebraic subset, so its complement is open and dense; an element commutes with all of $\mathbb{H}$ exactly when it is a real scalar multiple of $e_0$, and the central units are the nonzero ones.
 
 **Proposition (the subspace is a topological group).** With the topology of $\mathbb{H}$ the multiplication $\mathbb{H}^\times\times\mathbb{H}^\times\to\mathbb{H}^\times$ and the inversion $\mathbb{H}^\times\to\mathbb{H}^\times$ are continuous, so $\mathbb{H}^\times$ is a topological group.
 
-*Proof.* The product is polynomial in the coordinates, and the inverse has coordinates rational with denominator $N(\tilde q)\neq0$; both are continuous on the punctured space.
+*Proof.* The product is polynomial in the coordinates, and the inverse has coordinates rational with denominator $\langle\tilde q\rangle_{\natural}\neq0$; both are continuous on the punctured space.
 
 ## The Decomposition with the Sphere
 
@@ -65,7 +65,7 @@ $$
 
 converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\vec v)=\cos\lvert\vec v\rvert+\dfrac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\vec q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.
 
-*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat u\sin\lvert\vec v\rvert$ with $\hat u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
+*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=\exp(q_0)\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=\exp(q_0)\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\vec u\sin\lvert\vec v\rvert$ with $\vec u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\vec u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
 
 **Corollary (the exponential generates the unit group).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
 
@@ -83,8 +83,8 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 | $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition |
 | $Sp(1)=S^3=\{N=1\}$ | the compact maximal subgroup |
 | $\{\pm e_0\}$, $Sp(1)/\{\pm e_0\}$ | the centre and the rotation quotient |
-| $\hat u=\vec q/\lvert\vec q\rvert$ | the unit pure quaternion, the direction of the vector part |
-| $\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat u\sin\lvert\vec q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
+| $\vec u=\vec q/\lvert\vec q\rvert$ | the unit pure quaternion, the direction of the vector part |
+| $\exp(\tilde q)=\exp(q_0)\bigl(\cos\lvert\vec q\rvert+\vec u\sin\lvert\vec q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
 | $\lvert\vec q\rvert<\pi$ | the band on which $\exp$ is a homeomorphism onto its image |
 
 ## Further Reading

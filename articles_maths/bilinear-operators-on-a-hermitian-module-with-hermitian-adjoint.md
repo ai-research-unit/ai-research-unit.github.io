@@ -18,7 +18,7 @@ The Clifford action and the module form are *Hermitian Modules over a Hermitian 
 **Definition.** A bilinear form $b$ is **Clifford-equivariant** (or **invariant**) if
 
 $$
-b(x\cdot s, t) = b\bigl(s, x^{\dagger}\cdot t\bigr) \qquad \text{for all } x \in \mathrm{Cl}(V,q),
+b(x\cdot s, t) = b\bigl(s, x^{\dagger}\cdot t\bigr) \qquad \text{for all } x \in \mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
 which is the adjointness condition of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*. So a Hermitian Clifford module is exactly a Clifford module with a Hermitian equivariant bilinear form, and the **spinor adjoint** $J$ of *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* is the bilinear operator of that form.
@@ -41,16 +41,16 @@ $$
 
 ### The Theorem
 
-**Theorem (completeness, the Fierz identity).** Let $V$ be even-dimensional over an algebraically closed field, so that $\mathrm{Cl}(V,q)\cong M_{2^m}(A)$ with $m = \dim V/2$, and let $S$ be the irreducible (spinor) module. Then the action map
+**Theorem (completeness, the Fierz identity).** Let $V$ be even-dimensional over an algebraically closed field, so that $\mathrm{Cl}(V,\mathfrak{Q})\cong M_{2^m}(A)$ with $m = \dim V/2$, and let $S$ be the irreducible (spinor) module. Then the action map
 
 $$
-\rho : \mathrm{Cl}(V,q)\longrightarrow \mathrm{End}_A(S)
+\rho : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow \mathrm{End}_A(S)
 $$
 
 is an **isomorphism** of algebras, and the $2^n$ blade operators $\rho(e_{i_1}\cdots e_{i_k})$ form a basis of $\mathrm{End}_A(S)$; equivalently every endomorphism of the spinor module is a Clifford-linear combination of the blades. In bilinear form, the **bilinear covariants**
 
 $$
-b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,q),
+b_A(s,t) = \bigl(s, \rho(\Gamma_A)\,t\bigr), \qquad \Gamma_A \text{ a basis of } \mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
 span the space of bilinear forms on $S$, and every bilinear form is a linear combination of the covariants.
@@ -61,7 +61,7 @@ span the space of bilinear forms on $S$, and every bilinear form is a linear com
 
 ### The Bilinear Covariants of a Spinor Module
 
-**Proposition (the classification by grade).** For a basis of $\mathrm{Cl}(V,q)$ by grade, the covariants organise by degree: degree $0$ gives the scalar covariant $b_1$ (the module form); degree $1$ the vector covariants $b_{e_j}$; degree $2$ the bivector covariants $b_{e_ie_j}$ with $i<j$, and so on up to the volume element. The covariant $b_A$ is Hermitian iff the blade $\Gamma_A$ is self-adjoint under the dagger, which for a real blade in the standard convention happens exactly when the degree satisfies $|A|\equiv 0,3 \pmod 4$, and skew-Hermitian exactly when $|A|\equiv 1,2\pmod 4$; so the scalar and the volume covariants are Hermitian, the vectors and the bivectors are skew-Hermitian.
+**Proposition (the classification by grade).** For a basis of $\mathrm{Cl}(V,\mathfrak{Q})$ by grade, the covariants organise by degree: degree $0$ gives the scalar covariant $b_1$ (the module form); degree $1$ the vector covariants $b_{e_j}$; degree $2$ the bivector covariants $b_{e_ie_j}$ with $i<j$, and so on up to the volume element. The covariant $b_A$ is Hermitian iff the blade $\Gamma_A$ is self-adjoint under the dagger, which for a real blade in the standard convention happens exactly when the degree satisfies $|A|\equiv 0,3 \pmod 4$, and skew-Hermitian exactly when $|A|\equiv 1,2\pmod 4$; so the scalar and the volume covariants are Hermitian, the vectors and the bivectors are skew-Hermitian.
 
 **Proof.** The dagger acts on a blade by $\Gamma_A^{\dagger} = \sigma(\alpha(\Gamma_A^{r})) = (-1)^{|A|(|A|-1)/2}(-1)^{|A|}\sigma(\Gamma_A) = (-1)^{T_{|A|}}\sigma(\Gamma_A)$ with $T_{|A|} = |A|(|A|+1)/2$ the triangular number, which is even exactly for $|A|\equiv0,3\pmod4$; the covariant inherits the sign by the corollary above. This was checked on the blades of $\mathrm{Cl}_{2,0}(\mathbb{C})$, $\mathrm{Cl}_{0,3}(\mathbb{R})$ and $\mathrm{Cl}_{3,0}(\mathbb{R})$: degrees $0$ and $3$ self-adjoint, degrees $1$ and $2$ skew-adjoint.
 
@@ -95,7 +95,7 @@ Let $\mathrm{Cl}_{0,2}(\mathbb{R}) = \mathbb{H}$ with the dagger positive and th
 
 A **bilinear operator** on a Clifford module is the operator $s\mapsto b(s,\cdot)$ induced by a bilinear form $b$, the two carrying the same data up to the adjunction $\mathrm{Bil}_A(S,S;A)\cong \mathrm{Hom}_A(S,S^{*})$. The adjoint of a bilinear operator is the operator of the **adjoint form** $b^{*}(s,t) = \sigma(b(t,s))$, so the Hermitian forms are the self-adjoint operators and form the symmetric part of the space of bilinear forms. A form is **Clifford-equivariant** exactly when it satisfies the adjointness axiom, and the Hermitian Clifford module is the case of a Hermitian equivariant form, of which the spinor adjoint is the bilinear operator.
 
-The **completeness of the Clifford action** — the Fierz identity — says that for an even-dimensional algebra over an algebraically closed field the action is an isomorphism $\mathrm{Cl}(V,q)\cong \mathrm{End}_A(S)$, so the $2^n$ blades are a basis of the endomorphisms and the $2^n$ **bilinear covariants** $(s,\Gamma_A t)$ span the space of bilinear forms; it was checked for the complex two-dimensional module, where the rank of the span is $4 = (\dim S)^{2}$. The covariants are classified by grade, the covariant $b_A$ being Hermitian for $|A|\equiv0,3\pmod4$ and skew-Hermitian for $|A|\equiv1,2\pmod4$, so the scalar and volume covariants are Hermitian and the vector and bivector covariants are skew-Hermitian; the adjoint of a covariant is the covariant of the dagger $\Gamma_A^{\dagger}$, so the scalar covariant is the module form and the vector covariants are skew-Hermitian. The **unitary slice** permutes the covariants by $\Gamma_A\mapsto u^{\dagger}\Gamma_Au$, fixes the scalar covariant, preserves the degree, and the invariants on the definite module are the scalar covariant alone; the expansion coefficients are the Fierz coefficients, computed by orthogonality of the blades for the trace form.
+The **completeness of the Clifford action** — the Fierz identity — says that for an even-dimensional algebra over an algebraically closed field the action is an isomorphism $\mathrm{Cl}(V,\mathfrak{Q})\cong \mathrm{End}_A(S)$, so the $2^n$ blades are a basis of the endomorphisms and the $2^n$ **bilinear covariants** $(s,\Gamma_A t)$ span the space of bilinear forms; it was checked for the complex two-dimensional module, where the rank of the span is $4 = (\dim S)^{2}$. The covariants are classified by grade, the covariant $b_A$ being Hermitian for $|A|\equiv0,3\pmod4$ and skew-Hermitian for $|A|\equiv1,2\pmod4$, so the scalar and volume covariants are Hermitian and the vector and bivector covariants are skew-Hermitian; the adjoint of a covariant is the covariant of the dagger $\Gamma_A^{\dagger}$, so the scalar covariant is the module form and the vector covariants are skew-Hermitian. The **unitary slice** permutes the covariants by $\Gamma_A\mapsto u^{\dagger}\Gamma_Au$, fixes the scalar covariant, preserves the degree, and the invariants on the definite module are the scalar covariant alone; the expansion coefficients are the Fierz coefficients, computed by orthogonality of the blades for the trace form.
 
 ## Summary of Notation
 
@@ -106,7 +106,7 @@ The **completeness of the Clifford action** — the Fierz identity — says that
 | $T_b : s\mapsto b(s,\cdot)$ | Bilinear operator, $T_b\in\mathrm{Hom}_A(S,S^{*})$ |
 | $(T_b)^{*} = T_{b^{*}}$ | Adjoint of a bilinear operator |
 | $b(xs,t) = b(s,x^{\dagger}t)$ | Clifford-equivariance |
-| $\rho : \mathrm{Cl}(V,q)\cong \mathrm{End}_A(S)$ | Completeness (Fierz identity) |
+| $\rho : \mathrm{Cl}(V,\mathfrak{Q})\cong \mathrm{End}_A(S)$ | Completeness (Fierz identity) |
 | $b_A(s,t) = (s,\rho(\Gamma_A)t)$ | Bilinear covariants, spanning the forms |
 | $b_A(us,ut) = b_{u^{\dagger}\Gamma_Au}(s,t)$ | Slice action on the covariants |
 

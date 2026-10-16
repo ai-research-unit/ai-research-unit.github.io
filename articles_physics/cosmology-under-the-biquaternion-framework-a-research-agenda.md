@@ -39,7 +39,7 @@ $$
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\nabla_\mu T^{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
 
 $$
-T_{\mu\nu} = \left(\rho + p\right)\frac{u_\mu u_\nu}{c^2} + p\,g_{\mu\nu},
+T_{\mu\nu} = \left(\rho + p\right)\frac{v_\mu v_\nu}{c^2} + p\,g_{\mu\nu},
 $$
 
 a **symmetric rank-two tensor** of ten independent components. The framework's relation to this object is the second theme of the article.
@@ -89,13 +89,13 @@ The FLRW assumptions are imposed symmetries, and the two of them have different 
 The framework's own proposal for locality is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis, not the frame. In its derivative-rule interpretation (Reading B of *Curved Spacetime and the Biquaternion Framework*) it produces
 
 $$
-g_{\mu\nu} = \mathrm{diag}\left(-u(\vec x)^2, 1, 1, 1\right), \qquad u = c,
+g_{\mu\nu} = \mathrm{diag}\left(-c_{\mathrm{loc}}(\vec x)^2, 1, 1, 1\right), \qquad c_{\mathrm{loc}} = c,
 $$
 
 a class with one free function, no shift, and **flat spatial slices** $g_{ij} = \delta_{ij}$. Two consequences were recomputed here.
 
-- **A time-dependent local $c$ produces no expansion.** For $u = u(t)$, the metric $g = \mathrm{diag}(-u(t)^2,1,1,1)$ is **flat**: the substitution $d\tau = u(t)\,dt$ turns it into $-d\tau^2 + d\vec x^2$, and a direct computation for $u = 2 + \sin t$ gives an identically vanishing Riemann tensor. A "local scale on the imaginary time axis" is a reparametrisation of time; it cannot produce a scale factor or a Hubble rate, because the spatial metric is untouched.
-- **A spatially varying local $c$ produces curvature, but not an FLRW metric.** For $u = u(\vec x)$ the class is genuinely curved — recomputed here on the independent case $u = 2 + \cos y$, where the Riemann tensor is nonzero, a statement independent of the Riemann sign convention, and the parent's closed forms read $R_{00} = u\,\Delta u$, $R_{ij} = -\partial_i\partial_j u/u$, $R = -2\,\Delta u/u$ in the corpus's curvature convention, the convention of *Curvature and Geodesics* and of the linearized-gravity and gravitational-wave articles — but the spatial slices remain flat, $g_{ij} = \delta_{ij}$, so no member is FLRW with a non-constant scale factor or non-zero spatial curvature. Within the class, Ricci-flatness forces $u$ to be affine in the spatial coordinates and the metric to be flat (the parent's result). The opposite Riemann signature convention reverses every sign quoted here and nothing else; the convention is fixed once in the companion.
+- **A time-dependent local $c$ produces no expansion.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(t)$, the metric $g = \mathrm{diag}(-c_{\mathrm{loc}}(t)^2,1,1,1)$ is **flat**: the substitution $d\tau = c_{\mathrm{loc}}(t)\,dt$ turns it into $-d\tau^2 + d\vec x^2$, and a direct computation for $c_{\mathrm{loc}} = 2 + \sin t$ gives an identically vanishing Riemann tensor. A "local scale on the imaginary time axis" is a reparametrisation of time; it cannot produce a scale factor or a Hubble rate, because the spatial metric is untouched.
+- **A spatially varying local $c$ produces curvature, but not an FLRW metric.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(\vec x)$ the class is genuinely curved — recomputed here on the independent case $c_{\mathrm{loc}} = 2 + \cos y$, where the Riemann tensor is nonzero, a statement independent of the Riemann sign convention, and the parent's closed forms read $R_{00} = c_{\mathrm{loc}}\,\Delta c_{\mathrm{loc}}$, $R_{ij} = -\partial_i\partial_j c_{\mathrm{loc}}/c_{\mathrm{loc}}$, $R = -2\,\Delta c_{\mathrm{loc}}/c_{\mathrm{loc}}$ in the corpus's curvature convention, the convention of *Curvature and Geodesics* and of the linearized-gravity and gravitational-wave articles — but the spatial slices remain flat, $g_{ij} = \delta_{ij}$, so no member is FLRW with a non-constant scale factor or non-zero spatial curvature. Within the class, Ricci-flatness forces $c_{\mathrm{loc}}$ to be affine in the spatial coordinates and the metric to be flat (the parent's result). The opposite Riemann signature convention reverses every sign quoted here and nothing else; the convention is fixed once in the companion.
 
 The conclusion is a negative but an exact one: **the framework's own locality device cannot produce the FLRW line element.** If a cosmological metric enters the framework, it enters by the frame route, which abandons the local complex structure as the carrier of curvature.
 
@@ -110,7 +110,7 @@ The decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ is a pointwise d
 For a Hermitian Hamiltonian $\tilde{H} = h_0e_0 + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the trace formula gives
 
 $$
-Z = \mathrm{Tr}\left(e^{-\beta\tilde{H}}\right) = 2\,\mathrm{Sc}\left(e^{-\beta\tilde{H}}\right) = 2e^{-\beta h_0}\cosh\left(\beta|\vec h|\right),
+Z = \mathrm{Tr}\left(\exp(-\beta\tilde{H})\right) = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_0)\cosh\left(\beta|\vec h|\right),
 $$
 
 the ordinary partition function of a **two-level system** with energies $h_0 \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
@@ -219,7 +219,7 @@ Two disciplines apply to every item. First, each candidate result must be recomp
 
 This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.
 
-**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_0$ and $\tilde{E}_i = a\,e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2e^{-\beta h_0}\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
+**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_0$ and $\tilde{E}_i = a\,e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
 
 **What is only carried, and is not a derived cosmology.** The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all **standard cosmology used as targets**. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.
 
@@ -255,8 +255,8 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $a(t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \dot a/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\tilde{T} = \sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu$ | natural packaging of a rank-two tensor; equals $(\eta^{\mu\nu}T_{\mu\nu})e_0$ | recomputed here from an inherited identity |
-| $Z = 2e^{-\beta h_0}\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
-| $u = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
+| $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
+| $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 
 ## Further Reading
 

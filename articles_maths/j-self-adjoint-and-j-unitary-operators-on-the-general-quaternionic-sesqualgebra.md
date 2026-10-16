@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fundamental symmetry $J={}^{\natural}$ equips the biquaternion algebra with a second adjoint operation: alongside the Hermitian adjoint ${}^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, there is the adjoint for the general quaternionic sesquilinear form,
+The fundamental symmetry $J={}^{\natural}$ equips the biquaternion algebra with a second adjoint operation: alongside the Hermitian adjoint ${}^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra* and *One-Sided Operators on the General Plain Sesqualgebra*, there is the adjoint for the general quaternionic sesquilinear form,
 
 $$
 T^{\dagger}=J\,T^{*}J,
@@ -10,9 +10,9 @@ $$
 
 for which the operators of the algebra can be self-adjoint, skew-adjoint, unitary or normal. This article computes that adjoint on the three operator families of the corpus — the left multiplications $L_{\tilde{Q}}$, the right multiplications $R_{\tilde{Q}}$ and the sandwiches $\Theta_{\tilde{Q}}$ — and reads off the indefinite counterparts of the self-adjointness, skew-adjointness, unitarity and normality of the Hermitian case. The single structural surprise is that the indefinite adjoint of a left multiplication is a **right** multiplication: the form built from the trace of a product does not see the order, so $J$ exchanges the sides.
 
-The general theory is *J-Self-Adjoint and J-Unitary Operators* and *Krein Spaces*; the symmetry and the bridge are *The Fundamental Symmetry of the Biquaternion Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the definite counterpart is *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the spectral consequences are *The Indefinite Spectra of the Operators on the Biquaternion Algebra*.
+The general theory is *J-Self-Adjoint and J-Unitary Operators* and *Krein Spaces*; the symmetry and the bridge are *The Fundamental Symmetry of the Biquaternioid Algebra*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the definite counterpart is *Two-Sided Operators on the General Plain Sesqualgebra*, *One-Sided Operators on the General Plain Sesqualgebra* and *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the spectral consequences are *The Indefinite Spectra of the Operators on the Biquaternion Algebra*.
 
-**Conventions.** Operators act on $\mathbb{B}$; $\Theta_{\tilde{Q}}(\tilde{T})=\tilde{Q}\tilde{T}\tilde{Q}^{*}$ is the dagger sandwich, $L_{\tilde{Q}}(\tilde{T})=\tilde{Q}\tilde{T}$, $R_{\tilde{Q}}(\tilde{T})=\tilde{T}\tilde{Q}$; ${}^{*}$ is the adjoint for the general plain sesquilinear form $\langle\cdot,\cdot\rangle$, so that $L_{\tilde{Q}}^{*}=L_{\tilde{Q}^{*}}$ and $R_{\tilde{Q}}^{*}=R_{\tilde{Q}^{*}}$ (*One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*); $J={}^{\natural}$, and $\bar{\tilde{Q}}$ denotes the coefficient (complex) conjugation. The **$J$-adjoint** is $T^{\dagger}=JT^{*}J$; convergence is automatic, $\mathbb{B}$ being finite-dimensional.
+**Conventions.** Operators act on $\mathbb{B}$; $\Theta_{\tilde{Q}}(\tilde{T})=\tilde{Q}\tilde{T}\tilde{Q}^{*}$ is the dagger sandwich, $L_{\tilde{Q}}(\tilde{T})=\tilde{Q}\tilde{T}$, $R_{\tilde{Q}}(\tilde{T})=\tilde{T}\tilde{Q}$; ${}^{*}$ is the adjoint for the general plain sesquilinear form $\langle\cdot,\cdot\rangle$, so that $L_{\tilde{Q}}^{*}=L_{\tilde{Q}^{*}}$ and $R_{\tilde{Q}}^{*}=R_{\tilde{Q}^{*}}$ (*One-Sided Operators on the General Plain Sesqualgebra*); $J={}^{\natural}$, and $\bar{\tilde{Q}}$ denotes the coefficient (complex) conjugation. The **$J$-adjoint** is $T^{\dagger}=JT^{*}J$; convergence is automatic, $\mathbb{B}$ being finite-dimensional.
 
 ## The $J$-Adjoint
 
@@ -65,7 +65,7 @@ $$
 
 where $\bar{\tilde{Q}}$ is the coefficient conjugate and ${}^{\natural}\tilde{Q}$ the natural conjugate of the parameter.
 
-**Proof.** By the anti-automorphism property of ${}^{\natural}$, ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ and ${}^{\natural}R_{\tilde{R}}{}^{\natural}=L_{\tilde{R}^{\natural}}$ (*The Fundamental Symmetry of the Biquaternion Algebra*). Hence $L_{\tilde{Q}}^{\dagger}={}^{\natural}L_{\tilde{Q}}^{*}{}^{\natural}={}^{\natural}L_{\tilde{Q}^{*}}{}^{\natural}=R_{\tilde{Q}^{*\natural}}$, and $\tilde{Q}^{*\natural}=(\tilde{Q}^{*})^{\natural}=\overline{\tilde{Q}}$ because $\dagger$ and $\natural$ commute; the second is the same with left and right interchanged. The third follows by antimultiplicativity, $(L_{\tilde{Q}}R_{\tilde{R}})^{\dagger}=R_{\tilde{R}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\bar{\tilde{R}}}R_{\bar{\tilde{Q}}}$. For the sandwich, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$, so $\Theta_{\tilde{Q}}^{\dagger}=R_{\tilde{Q}^{*}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\overline{\tilde{Q}^{*}}}R_{\bar{\tilde{Q}}}=L_{{}^{\natural}\tilde{Q}}R_{\bar{\tilde{Q}}}=\Theta_{{}^{\natural}\tilde{Q}}$, using $\overline{\tilde{Q}^{*}}={}^{\natural}\tilde{Q}$ and $\Theta_{\tilde{S}}=L_{\tilde{S}}R_{\tilde{S}^{*}}$.
+**Proof.** By the anti-automorphism property of ${}^{\natural}$, ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ and ${}^{\natural}R_{\tilde{R}}{}^{\natural}=L_{\tilde{R}^{\natural}}$ (*The Fundamental Symmetry of the Biquaternioid Algebra*). Hence $L_{\tilde{Q}}^{\dagger}={}^{\natural}L_{\tilde{Q}}^{*}{}^{\natural}={}^{\natural}L_{\tilde{Q}^{*}}{}^{\natural}=R_{\tilde{Q}^{*\natural}}$, and $\tilde{Q}^{*\natural}=(\tilde{Q}^{*})^{\natural}=\overline{\tilde{Q}}$ because $\dagger$ and $\natural$ commute; the second is the same with left and right interchanged. The third follows by antimultiplicativity, $(L_{\tilde{Q}}R_{\tilde{R}})^{\dagger}=R_{\tilde{R}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\bar{\tilde{R}}}R_{\bar{\tilde{Q}}}$. For the sandwich, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$, so $\Theta_{\tilde{Q}}^{\dagger}=R_{\tilde{Q}^{*}}^{\dagger}L_{\tilde{Q}}^{\dagger}=L_{\overline{\tilde{Q}^{*}}}R_{\bar{\tilde{Q}}}=L_{{}^{\natural}\tilde{Q}}R_{\bar{\tilde{Q}}}=\Theta_{{}^{\natural}\tilde{Q}}$, using $\overline{\tilde{Q}^{*}}={}^{\natural}\tilde{Q}$ and $\Theta_{\tilde{S}}=L_{\tilde{S}}R_{\tilde{S}^{*}}$.
 
 **Corollary (self-adjointness and skew-adjointness).**
 
@@ -131,7 +131,7 @@ The general indefinite polar decomposition replaces the positive definite root o
 
 **A mixed element.** $\tilde{Q}=e_0+e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=2$, so $\Theta_{\tilde{Q}}$ is not $J$-unitary, and since $e_0+e_1$ lies in neither eigenspace of ${}^{\natural}$ the sandwich is not $J$-self-adjoint either.
 
-**A central phase.** $\tilde{Q}=e^{i\theta}e_0$: $L_{\tilde{Q}}$ and $R_{\tilde{Q}}$ are $J$-unitary for every $\theta$, and $|\Theta_{\tilde{Q}}|=1$ as well, so the circle $S^{1}e_0$ is a common unitary subgroup in both senses.
+**A central phase.** $\tilde{Q}=\exp(i\theta)e_0$: $L_{\tilde{Q}}$ and $R_{\tilde{Q}}$ are $J$-unitary for every $\theta$, and $|\Theta_{\tilde{Q}}|=1$ as well, so the circle $S^{1}e_0$ is a common unitary subgroup in both senses.
 
 ## Summary
 
@@ -156,9 +156,9 @@ The **$J$-adjoint** $T^{\dagger}=JT^{*}J$ is the adjoint for the general quatern
 ## Further Reading
 
 - *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the general theory of the indefinite adjoint and the $J$-positive cone
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the symmetry $J={}^{\natural}$ and the bridge identity
+- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the symmetry $J={}^{\natural}$ and the bridge identity
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form whose adjoint this is
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`, `articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the definite counterparts
+- *Two-Sided Operators on the General Plain Sesqualgebra* and *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`, `articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the definite counterparts
 - *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the indefinite unitary group $U(1,3)$ and its maximal compact part
 - *The Indefinite Spectra of the Operators on the Biquaternion Algebra* (`articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.md`), for the spectral computations
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the indefinite adjoint and its normal forms

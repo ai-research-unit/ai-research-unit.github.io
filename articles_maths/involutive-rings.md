@@ -296,7 +296,7 @@ $$
 
 ### Polynomial Rings
 
-**Proposition.** Let $\sigma$ be an involution of $R$ and let $f^\sigma$ denote the polynomial obtained from $f$ by applying $\sigma$ to its coefficients. There is a unique ring endomorphism $\tilde\sigma_f$ of $R[x]$ with $\tilde\sigma_f|_R = \sigma$ and $\tilde\sigma_f(x) = f(x)$, and it is an involution exactly when
+**Proposition.** Let $\sigma$ be an involution of $R$ and let $f^\sigma$ denote the polynomial obtained from $f$ by applying $\sigma$ to its coefficients. There is a unique ring endomorphism $\sigma_f^{\mathrm{ext}}$ of $R[x]$ with $\sigma_f^{\mathrm{ext}}|_R = \sigma$ and $\sigma_f^{\mathrm{ext}}(x) = f(x)$, and it is an involution exactly when
 
 $$
 f^\sigma\bigl(f(x)\bigr) = x .
@@ -304,7 +304,7 @@ $$
 
 In the **affine** case $f(x) = ax+b$ the conditions are $a\sigma(a) = 1$ and $\sigma(a)b+\sigma(b) = 0$.
 
-**Proof.** $R[x]$ is generated as a ring by $R$ together with $x$, so a ring endomorphism is determined by its values on $R$ and on $x$ and these are arbitrary; the map $\tilde\sigma_f$ that extends $\sigma$ and sends $x$ to $f(x)$ is therefore unique. Its square fixes $R$ and takes $x$ to $\tilde\sigma_f(f(x)) = f^\sigma(f(x))$, since $\tilde\sigma_f$ applies $\sigma$ to coefficients and substitutes $f$ for $x$; so the square is the identity exactly when that value is $x$. In the affine case $f^\sigma(f(x)) = \sigma(a)ax+\sigma(a)b+\sigma(b)$, which equals $x$ exactly under the two conditions.
+**Proof.** $R[x]$ is generated as a ring by $R$ together with $x$, so a ring endomorphism is determined by its values on $R$ and on $x$ and these are arbitrary; the map $\sigma_f^{\mathrm{ext}}$ that extends $\sigma$ and sends $x$ to $f(x)$ is therefore unique. Its square fixes $R$ and takes $x$ to $\sigma_f^{\mathrm{ext}}(f(x)) = f^\sigma(f(x))$, since $\sigma_f^{\mathrm{ext}}$ applies $\sigma$ to coefficients and substitutes $f$ for $x$; so the square is the identity exactly when that value is $x$. In the affine case $f^\sigma(f(x)) = \sigma(a)ax+\sigma(a)b+\sigma(b)$, which equals $x$ exactly under the two conditions.
 
 **Example.** On $\mathbb{C}[x]$ with the coefficientwise conjugation the translations $x \mapsto x+b$ are involutions exactly when $b+\bar b = 0$, that is when $b$ is purely imaginary, since then $a = 1$ satisfies $a\bar a = 1$ and $\bar b+b = 0$. On $\mathbb{Z}[i][x]$ with the coefficientwise conjugation the substitution $x \mapsto ix$ is an involution, since $i\bar i = 1$ and $b = 0$.
 
@@ -314,21 +314,21 @@ In the **affine** case $f(x) = ax+b$ the conditions are $a\sigma(a) = 1$ and $\s
 
 **(b)** The involution $x \mapsto -x$ with coefficients acted on by $\sigma$ has fixed subring $R^\sigma[x^2] + R^-x$, a direct sum of abelian groups.
 
-**Proof.** (a) A polynomial is fixed coefficientwise exactly when every coefficient is fixed. (b) The extension is $\tilde\sigma(\sum_k a_kx^k) = \sum_k\sigma(a_k)(-x)^k$, so the fixed polynomials are those with $a_k \in R^\sigma$ for even $k$ and $a_k \in R^-$ for odd $k$, and the sum is direct on the monomials.
+**Proof.** (a) A polynomial is fixed coefficientwise exactly when every coefficient is fixed. (b) The extension is $\sigma^{\mathrm{ext}}(\sum_k a_kx^k) = \sum_k\sigma(a_k)(-x)^k$, so the fixed polynomials are those with $a_k \in R^\sigma$ for even $k$ and $a_k \in R^-$ for odd $k$, and the sum is direct on the monomials.
 
 ### Localization and the Fraction Field
 
 **Definition.** A multiplicative set $S \subseteq R$ with $1 \in S$ is **$\sigma$-stable** when $\sigma(S) = S$, and its fixed part is $S^\sigma = S \cap R^\sigma$.
 
-**Theorem.** Let $S$ be a $\sigma$-stable multiplicative set. Then $\sigma$ extends to an involution $\tilde\sigma$ of the localization $S^{-1}R$ by $\tilde\sigma(r/s) = \sigma(r)/\sigma(s)$, and
+**Theorem.** Let $S$ be a $\sigma$-stable multiplicative set. Then $\sigma$ extends to an involution $\sigma^{\mathrm{ext}}$ of the localization $S^{-1}R$ by $\sigma^{\mathrm{ext}}(r/s) = \sigma(r)/\sigma(s)$, and
 
 $$
-(S^{-1}R)^{\tilde\sigma} = (S^\sigma)^{-1}R^\sigma ,
+(S^{-1}R)^{\sigma^{\mathrm{ext}}} = (S^\sigma)^{-1}R^\sigma ,
 $$
 
 the localization of the fixed subring at the fixed part of $S$, identified with its image in $S^{-1}R$.
 
-**Proof.** If $r/s = r'/s'$ there is $t \in S$ with $t(rs'-r's) = 0$, and applying $\sigma$ gives $\sigma(t)(\sigma(r)\sigma(s')-\sigma(r')\sigma(s)) = 0$ with $\sigma(t) \in S$, so $\tilde\sigma$ is well defined; it is an involution because $\sigma$ is. For the fixed ring, let $x = r/s$ satisfy $\sigma(x) = x$, so that $t(\sigma(r)s-r\sigma(s)) = 0$ for some $t \in S$. Put
+**Proof.** If $r/s = r'/s'$ there is $t \in S$ with $t(rs'-r's) = 0$, and applying $\sigma$ gives $\sigma(t)(\sigma(r)\sigma(s')-\sigma(r')\sigma(s)) = 0$ with $\sigma(t) \in S$, so $\sigma^{\mathrm{ext}}$ is well defined; it is an involution because $\sigma$ is. For the fixed ring, let $x = r/s$ satisfy $\sigma(x) = x$, so that $t(\sigma(r)s-r\sigma(s)) = 0$ for some $t \in S$. Put
 
 $$
 b = s\,\sigma(s)\,t\,\sigma(t), \qquad a = r\,\sigma(s)\,\sigma(t)\,t .
@@ -336,7 +336,7 @@ $$
 
 Then $b \in S^\sigma$, since $\sigma(b) = \sigma(s)s\sigma(t)t = b$ by commutativity, and $a \in R^\sigma$, since $\sigma(a) = \sigma(r)s t\sigma(t) = t\sigma(r)s\sigma(t) = tr\sigma(s)\sigma(t) = a$, the identity $t(\sigma(r)s-r\sigma(s)) = 0$ being used in the middle. Moreover $a/b = r/s$, so $x \in (S^\sigma)^{-1}R^\sigma$. The reverse inclusion is clear, an element of $(S^\sigma)^{-1}R^\sigma$ being fixed because both its numerator and its denominator are.
 
-**Corollary.** Let $\mathrm{P}$ be a $\sigma$-stable prime and $S = R\setminus\mathrm{P}$, which is $\sigma$-stable. Then $R_\mathrm{P}$ carries the induced involution and $(R_\mathrm{P})^{\tilde\sigma} = (R^\sigma)_{\mathrm{P}\cap R^\sigma}$.
+**Corollary.** Let $\mathrm{P}$ be a $\sigma$-stable prime and $S = R\setminus\mathrm{P}$, which is $\sigma$-stable. Then $R_\mathrm{P}$ carries the induced involution and $(R_\mathrm{P})^{\sigma^{\mathrm{ext}}} = (R^\sigma)_{\mathrm{P}\cap R^\sigma}$.
 
 **Corollary.** Let $R$ be an integral domain with involution $\sigma$, and let $\sigma$ act on the fraction field by $\sigma(a/b) = \sigma(a)/\sigma(b)$. Then
 

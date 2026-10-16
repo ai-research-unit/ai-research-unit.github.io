@@ -9,7 +9,7 @@ $$
 h_c(x,y) = c(x)\,y
 $$
 
-is Hermitian with respect to $c$, and its diagonal $q_c(x) = c(x)x$ is fixed by $c$. The verification is the definition of an anti-involution together with $c^{2} = \mathrm{id}$, and it needs nothing else: no commutativity, no order, no hypothesis on the ring.
+is Hermitian with respect to $c$, and its diagonal $m_c(x) = c(x)x$ is fixed by $c$. The verification is the definition of an anti-involution together with $c^{2} = \mathrm{id}$, and it needs nothing else: no commutativity, no order, no hypothesis on the ring.
 
 Applied to a Clifford algebra this construction gives the **Hermitian forms carried by the algebra itself**. The Clifford algebra has three distinguished anti-involutions available to play the role of $c$: reversion $x^{r}$ and Clifford conjugation $x^{\natural} = \alpha(x^{r})$, which are intrinsic and need no hypothesis on the base, and the dagger $x^{\dagger} = \sigma(\alpha(x^{r}))$, which needs an involution $\sigma$ of the base and is defined in *Hilbert Algebras*. The three forms $h_r$, $h_{\bar\cdot}$ and $h_{\dagger}$ are consequently of two kinds, and the distinction is exact: the intrinsic ones act trivially on the coefficients, so they are $A$-bilinear, while the dagger is only $\sigma$-semilinear on the first argument and gives a genuine sesquilinear form. This is the whole content of the passage from the ordinary to the Hermitian theory.
 
@@ -33,23 +33,23 @@ $$
 
 **Proof.** By the definition, $h_c(y,x) = c(y)x$, and $c(h_c(x,y)) = c(c(x)y) = c(y)\,c(c(x)) = c(y)x$, using that $c$ is an anti-homomorphism and $c^{2} = \mathrm{id}$.
 
-**Proposition (the diagonal).** The diagonal $q_c(x) = h_c(x,x) = c(x)x$ is fixed by $c$,
+**Proposition (the diagonal).** The diagonal $m_c(x) = h_c(x,x) = c(x)x$ is fixed by $c$,
 
 $$
-c\bigl(q_c(x)\bigr) = q_c(x),
+c\bigl(m_c(x)\bigr) = m_c(x),
 $$
 
-and it satisfies $q_c(ax) = c(a)\,q_c(x)\,a$ for $a \in R$.
+and it satisfies $m_c(ax) = c(a)\,m_c(x)\,a$ for $a \in R$.
 
-**Proof.** $c(c(x)x) = c(x)c(c(x)) = c(x)x$, and $q_c(ax) = c(ax)ax = c(x)c(a)ax$.
+**Proof.** $c(c(x)x) = c(x)c(c(x)) = c(x)x$, and $m_c(ax) = c(ax)ax = c(x)c(a)ax$.
 
 **Remark.** The diagonal is the object that becomes a quadratic form when $R$ is commutative and $c$ acts on scalars; in the classical case of a field with $\sigma = \mathrm{id}$ it is the quadratic form that polarises to $h_c$, by
 
 $$
-q_c(x+y) - q_c(x) - q_c(y) = h_c(x,y) + h_c(y,x),
+m_c(x+y) - m_c(x) - m_c(y) = h_c(x,y) + h_c(y,x),
 $$
 
-which follows by expanding $q_c(x+y)$ and using $h_c(x,y) = c(x)y$ and $h_c(y,x) = c(y)x$.
+which follows by expanding $m_c(x+y)$ and using $h_c(x,y) = c(x)y$ and $h_c(y,x) = c(y)x$.
 
 ### Semilinearity and the Two Regimes
 
@@ -81,7 +81,7 @@ because $h_c(x,1) = c(x)$ and $c$ is bijective. In particular every Hermitian fo
 
 ### The Table
 
-Let $\sigma$ be an involution of the base $A$, and let $x, y \in \mathrm{Cl}(V,q)$.
+Let $\sigma$ be an involution of the base $A$, and let $x, y \in \mathrm{Cl}(V,\mathfrak{Q})$.
 
 | form | definition | anti-involution $c$ | kind | needs |
 |---|---|---|---|---|
@@ -104,7 +104,7 @@ and all three have their diagonal fixed by it. The first two of the table need n
 **Proposition.** The isometries of $h_c$ on the algebra are
 
 $$
-\mathrm{Isom}(h_c) = \{\, s \in \mathrm{Cl}(V,q) : c(s)\,s = 1 \,\},
+\mathrm{Isom}(h_c) = \{\, s \in \mathrm{Cl}(V,\mathfrak{Q}) : c(s)\,s = 1 \,\},
 $$
 
 an identity valid with $c$ the dagger, Clifford conjugation or reversion. In particular
@@ -113,7 +113,7 @@ $$
 \mathrm{Isom}(h_{\dagger}) = \{\, s : s^{\dagger}s = 1 \,\} = U,
 $$
 
-the unitary slice of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*, and $\mathrm{Isom}(h_{\bar\cdot}) = \{s : s^{\natural}\,s = 1\} = \mathrm{Pin}(V,q)$ when $\sigma = \mathrm{id}$.
+the unitary slice of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*, and $\mathrm{Isom}(h_{\bar\cdot}) = \{s : s^{\natural}\,s = 1\} = \mathrm{Pin}(V,\mathfrak{Q})$ when $\sigma = \mathrm{id}$.
 
 **Proof.** $h_c(sx, sy) = c(sx)(sy) = c(x)c(s)s\,y$. This equals $h_c(x,y) = c(x)y$ for all $x,y$ precisely when $c(s)s = 1$, taking $x = y = 1$ for the necessity. The identification $\{s^{\natural} s = 1\} = \mathrm{Pin}$ is the proposition of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*.
 
@@ -124,10 +124,10 @@ the unitary slice of *The Hermitian Sandwich on a Hermitian Algebra with Hermiti
 **Proposition.** The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ evaluated at the dagger:
 
 $$
-\Theta_x(1) = x\,x^{\dagger} = q_{\dagger}(x^{\dagger}), \qquad q_{\dagger}(u) = u^{\dagger}u .
+\Theta_x(1) = x\,x^{\dagger} = m_{\dagger}(x^{\dagger}), \qquad m_{\dagger}(u) = u^{\dagger}u .
 $$
 
-**Proof.** $(x^{\dagger})^{\dagger} = x$, so $q_{\dagger}(x^{\dagger}) = (x^{\dagger})^{\dagger}x^{\dagger} = x\,x^{\dagger} = \Theta_x(1)$.
+**Proof.** $(x^{\dagger})^{\dagger} = x$, so $m_{\dagger}(x^{\dagger}) = (x^{\dagger})^{\dagger}x^{\dagger} = x\,x^{\dagger} = \Theta_x(1)$.
 
 **Remark.** The cross-term of the form gives the operator: $h_{\dagger}(u,v) = u^{\dagger}v$, so that $\Theta_x(y) = x\,y\,x^{\dagger} = h_{\dagger}(x^{\dagger}, y)\,x^{\dagger}$ is the form applied to $x^{\dagger}$ and $y$, followed by right multiplication by $x^{\dagger}$. The forms of this article are thus the bilinear data of the operator of the previous one.
 
@@ -151,7 +151,7 @@ not by similarity. This is the algebraic reason why the invariants of a Hermitia
 
 ### Inertia and the Definite Case
 
-Over $A = \mathbb{R}$ with $\sigma = \mathrm{id}$, a Hermitian form is symmetric bilinear, and Sylvester's law of inertia assigns to it the pair $(p,q)$ of positive and negative squares in a diagonal basis; the form is non-degenerate exactly when $p + q = n$, definite when $pq = 0$, and the isometry group of a definite form is the orthogonal group, compact. Over $A = \mathbb{C}$ with complex conjugation, a Hermitian form satisfies $H^{\dagger} = H$ in the sense $H^{*T} = H$ and Sylvester's law applies with the same conclusion, the isometry group of a definite form being the unitary group. Both statements are the classical ones of *The Unitary and Symplectic Groups*; what the Clifford algebra adds is that the form is carried by the algebra itself, the scalar reductions give the invariants, and the dagger records the signature.
+Over $A = \mathbb{R}$ with $\sigma = \mathrm{id}$, a Hermitian form is symmetric bilinear, and Sylvester's law of inertia assigns to it the pair $(n,m)$ of positive and negative squares in a diagonal basis; the form is non-degenerate exactly when $n+m=N$, definite when $pq = 0$, and the isometry group of a definite form is the orthogonal group, compact. Over $A = \mathbb{C}$ with complex conjugation, a Hermitian form satisfies $H^{\dagger} = H$ in the sense $H^{*T} = H$ and Sylvester's law applies with the same conclusion, the isometry group of a definite form being the unitary group. Both statements are the classical ones of *The Unitary and Symplectic Groups*; what the Clifford algebra adds is that the form is carried by the algebra itself, the scalar reductions give the invariants, and the dagger records the signature.
 
 **Remark (the signature of the dagger form).** With $\sigma = \mathrm{id}$ the scalar form $\mathrm{Sc}(x^{\dagger}y) = \mathrm{Sc}(x^{\natural}\,y)$ has Gram matrix diagonal with entries $(-1)^{|I|}\prod_{i\in I}e_i^{2}$ on the blades, the blade form with the parity sign of the dagger inserted; over a positive definite quadratic form the products are $+1$ and the entries are $+1$ on the even blades and $-1$ on the odd ones, while over a negative definite form every entry is $+1$, so its signature is the one of the geometric product rather than the Euclidean one; this is worked out in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, and it is the reason the blade form uses reversion and not the dagger.
 
@@ -161,9 +161,9 @@ The construction $h_c(x,y) = c(x)y$ is the special case of a Hermitian form over
 
 ## Summary
 
-For an anti-involution $c$ of a ring $R$ the map $h_c(x,y) = c(x)y$ is **Hermitian with respect to $c$**, its diagonal $q_c(x) = c(x)x$ is fixed by $c$, and its radical on $R$ is trivial, so the form never degenerates on the algebra itself. A Clifford algebra carries three such forms: the **Hermitian form** $h_{\dagger}(x,y) = x^{\dagger}y$ of the dagger, which is $\sigma$-semilinear in the first argument and needs an involution of the base; and the two **intrinsic** forms $h_{\bar\cdot}(x,y) = x^{\natural}\,y$ and $h_r(x,y) = x^{r}y$, which fix the coefficients and are therefore bilinear, and which need nothing of the base. All three satisfy $h(y,x) = c(h(x,y))$ in the sense of their own $c$, and all three have $c$-fixed diagonals.
+For an anti-involution $c$ of a ring $R$ the map $h_c(x,y) = c(x)y$ is **Hermitian with respect to $c$**, its diagonal $m_c(x) = c(x)x$ is fixed by $c$, and its radical on $R$ is trivial, so the form never degenerates on the algebra itself. A Clifford algebra carries three such forms: the **Hermitian form** $h_{\dagger}(x,y) = x^{\dagger}y$ of the dagger, which is $\sigma$-semilinear in the first argument and needs an involution of the base; and the two **intrinsic** forms $h_{\bar\cdot}(x,y) = x^{\natural}\,y$ and $h_r(x,y) = x^{r}y$, which fix the coefficients and are therefore bilinear, and which need nothing of the base. All three satisfy $h(y,x) = c(h(x,y))$ in the sense of their own $c$, and all three have $c$-fixed diagonals.
 
-The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the unitary slice $U$, and for Clifford conjugation with $\sigma = \mathrm{id}$ it is the Pin group, so the intrinsic forms see the orthogonal geometry and the dagger sees the unitary one, which is the precise sense in which the involutive base adds to the algebra. The Gram matrix of a sesquilinear form satisfies $H^{\dagger} = H$ with $H^{\dagger} = \sigma(H)^{T}$ and transforms by congruence $H \mapsto S^{\dagger}HS$ under a change of basis, so the invariants are inertia and discriminant rather than spectrum; over $\mathbb{R}$ and $\mathbb{C}$ Sylvester's law gives the signature, and the scalar reduction of the dagger form has the signature of the geometric product, $(-1)^{|I|}\prod_{i\in I}e_i^{2}$ on the blades, which over a positive definite form reads $+1$ on the even blades and $-1$ on the odd ones. The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ at the dagger, $\Theta_x(1) = q_{\dagger}(x^{\dagger})$, which is how the forms of this article are the bilinear data of the operator.
+The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the unitary slice $U$, and for Clifford conjugation with $\sigma = \mathrm{id}$ it is the Pin group, so the intrinsic forms see the orthogonal geometry and the dagger sees the unitary one, which is the precise sense in which the involutive base adds to the algebra. The Gram matrix of a sesquilinear form satisfies $H^{\dagger} = H$ with $H^{\dagger} = \sigma(H)^{T}$ and transforms by congruence $H \mapsto S^{\dagger}HS$ under a change of basis, so the invariants are inertia and discriminant rather than spectrum; over $\mathbb{R}$ and $\mathbb{C}$ Sylvester's law gives the signature, and the scalar reduction of the dagger form has the signature of the geometric product, $(-1)^{|I|}\prod_{i\in I}e_i^{2}$ on the blades, which over a positive definite form reads $+1$ on the even blades and $-1$ on the odd ones. The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ at the dagger, $\Theta_x(1) = m_{\dagger}(x^{\dagger})$, which is how the forms of this article are the bilinear data of the operator.
 
 ## Summary of Notation
 
@@ -171,7 +171,7 @@ The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the u
 |---|---|
 | $c$ | Anti-involution, $c(xy)=c(y)c(x)$, $c^{2}=\mathrm{id}$ |
 | $h_c(x,y) = c(x)y$ | Hermitian form attached to $c$ |
-| $q_c(x) = c(x)x$ | Its diagonal, fixed by $c$ |
+| $m_c(x) = c(x)x$ | Its diagonal, fixed by $c$ |
 | $h_{\dagger}(x,y) = x^{\dagger}y$ | Hermitian form of the dagger, $\sigma$-sesquilinear |
 | $h_{\bar\cdot}(x,y) = x^{\natural}\,y$ | Conjugation form, bilinear |
 | $h_r(x,y) = x^{r}y$ | Reversion form, bilinear |
@@ -180,7 +180,7 @@ The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the u
 | $H \mapsto S^{\dagger}HS$ | Congruence under a change of basis |
 | $\mathrm{Isom}(h_c) = \{s : c(s)s=1\}$ | Isometry group of the form |
 | $U = \{s : s^{\dagger}s=1\}$ | Unitary slice, $\mathrm{Isom}(h_{\dagger})$ |
-| $(p,q)$ | Inertia of a scalar Hermitian form |
+| $(n,m)$ | Inertia of a scalar Hermitian form |
 
 ## Further Reading
 

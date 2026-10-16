@@ -5,7 +5,7 @@
 
 This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the family of algebras and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$ with $a, a' \in \mathbb{R}$, and the involution is complex conjugation $\bar{A} = a - i a'$. The norm is $N(A) = A\bar{A}$.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$ with $a, a' \in \mathbb{R}$, and the involution is complex conjugation $\bar{A} = a - i a'$. The norm is $\langle A\rangle_{*} = A\bar{A}$.
 
 ## The Norm
 
@@ -14,15 +14,15 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The **norm** of a complex number $A$ is
 
 $$
-N(A) = A\bar{A} = (a+i a')(a-i a') = a^2 + a'^2 \in \mathbb{R}.
+\langle A\rangle_{*} = A\bar{A} = (a+i a')(a-i a') = a^2 + a'^2 \in \mathbb{R}.
 $$
 
 **Basic properties.**
 
-- $N(A)$ is a **real** number, and $N(A) \geq 0$ with equality if and only if $A = 0$. The norm is positive definite.
-- $N(A)$ is invariant under conjugation: $N(\bar{A}) = A\bar{A} = N(A)$.
-- $N(A)$ is invariant under multiplication by the imaginary unit: $N(iZ) = (iZ)(\overline{iZ}) = (iZ)(-i\bar{A}) = A\bar{A} = N(A)$. There is no sign reversal, because the imaginary unit of $\mathbb{C}$ is not a coefficient scalar separate from the algebra.
-- $N(A) = 0$ if and only if $A = 0$. There are no nonzero complex numbers of vanishing norm; equivalently, the algebra has no zero divisors.
+- $\langle A\rangle_{*}$ is a **real** number, and $\langle A\rangle_{*} \geq 0$ with equality if and only if $A = 0$. The norm is positive definite.
+- $\langle A\rangle_{*}$ is invariant under conjugation: $\langle \bar{A}\rangle_{*} = A\bar{A} = \langle A\rangle_{*}$.
+- $\langle A\rangle_{*}$ is invariant under multiplication by the imaginary unit: $\langle iZ\rangle_{*} = (iZ)(\overline{iZ}) = (iZ)(-i\bar{A}) = A\bar{A} = \langle A\rangle_{*}$. There is no sign reversal, because the imaginary unit of $\mathbb{C}$ is not a coefficient scalar separate from the algebra.
+- $\langle A\rangle_{*} = 0$ if and only if $A = 0$. There are no nonzero complex numbers of vanishing norm; equivalently, the algebra has no zero divisors.
 
 The complex norm is a genuine positive-definite quadratic form.
 
@@ -31,18 +31,18 @@ The complex norm is a genuine positive-definite quadratic form.
 **Theorem.** The norm is multiplicative:
 
 $$
-N(A B) = N(A) \, N(B).
+\langle A B\rangle_{*} = \langle A\rangle_{*} \, \langle B\rangle_{*}.
 $$
 
 **Proof.** Compute
 
 $$
-N(AB) = (AB)\overline{(AB)} = A B \bar{B} \bar{A} = A\, N(B)\, \bar{A}.
+\langle AB\rangle_{*} = (AB)\overline{(AB)} = A B \bar{B} \bar{A} = A\, \langle B\rangle_{*}\, \bar{A}.
 $$
 
-Since $N(B)$ is a real number and the algebra is commutative, it commutes with $A$ and with $\bar{A}$, so $A N(B) \bar{A} = N(B) A\bar{A} = N(B) N(A)$.
+Since $\langle B\rangle_{*}$ is a real number and the algebra is commutative, it commutes with $A$ and with $\bar{A}$, so $A \langle B\rangle_{*} \bar{A} = \langle B\rangle_{*} A\bar{A} = \langle B\rangle_{*} \langle A\rangle_{*}$.
 
-**Corollary.** If $N(A) \neq 0$ and $N(B) \neq 0$, then $N(AB) \neq 0$. Equivalently, the product of two units is a unit.
+**Corollary.** If $\langle A\rangle_{*} \neq 0$ and $\langle B\rangle_{*} \neq 0$, then $\langle AB\rangle_{*} \neq 0$. Equivalently, the product of two units is a unit.
 
 The multiplicativity is used below to prove the invertibility criterion in one line, and it is the source of the polar decomposition: the norm is the squared scale.
 
@@ -51,7 +51,7 @@ The multiplicativity is used below to prove the invertibility criterion in one l
 The name "norm" is not a misnomer here. Define the **modulus**
 
 $$
-|A| = \sqrt{N(A)} = \sqrt{a^2 + a'^2} \geq 0.
+|A| = \sqrt{\langle A\rangle_{*}} = \sqrt{a^2 + a'^2} \geq 0.
 $$
 
 Then $|\cdot|$ satisfies the axioms of a norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$:
@@ -68,7 +68,7 @@ The value is real, the vanishing locus is the origin alone, and the scaling axio
 Writing $A = a + i a'$ with $a, a' \in \mathbb{R}$, the norm is the sum of two squares,
 
 $$
-N(A) = a^2 + a'^2,
+\langle A\rangle_{*} = a^2 + a'^2,
 $$
 
 a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign, and the norm is real throughout.
@@ -99,7 +99,7 @@ It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: p
 
 The two forms are related as follows.
 
-- The **norm** $N(A) = A\bar{A} = a^2+a'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.
+- The **norm** $\langle A\rangle_{*} = A\bar{A} = a^2+a'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.
 - The **Hermitian form** $A\bar{A} = a^2+a'^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.
 
 That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.
@@ -110,7 +110,7 @@ $$
 \langle A, B \rangle = \bar{A} B = (a b+a' b') + (a b'-a' b)i, \qquad A = a+i a', \; B = b+i b',
 $$
 
-linear in the second argument and anti-linear in the first, with $\langle A, A \rangle = a^2+a'^2 = N(A)$. It is complex-valued in general, and its imaginary part $a b' - a' b$ is the oriented area of the parallelogram on $A$ and $B$. It is Hermitian, $\langle A, B\rangle^{*} = \langle B, A\rangle$, and its diagonal is the norm, $\langle A,A\rangle = N(A)$: the inner product is the two-variable object of which the norm and the Hermitian form are the diagonal, and it is developed here.
+linear in the second argument and anti-linear in the first, with $\langle A, A \rangle = a^2+a'^2 = \langle A\rangle_{*}$. It is complex-valued in general, and its imaginary part $a b' - a' b$ is the oriented area of the parallelogram on $A$ and $B$. It is Hermitian, $\langle A, B\rangle^{*} = \langle B, A\rangle$, and its diagonal is the norm, $\langle A,A\rangle = \langle A\rangle_{*}$: the inner product is the two-variable object of which the norm and the Hermitian form are the diagonal, and it is developed here.
 
 ## Invertibility
 
@@ -130,30 +130,30 @@ In a general algebra the notions of left inverse, right inverse and two-sided in
 
 ### Criterion for Invertibility
 
-**Theorem.** A complex number $A$ is invertible if and only if $A \neq 0$, equivalently if and only if $N(A) \neq 0$.
+**Theorem.** A complex number $A$ is invertible if and only if $A \neq 0$, equivalently if and only if $\langle A\rangle_{*} \neq 0$.
 
-**Proof.** If $A \neq 0$ then $N(A) = a^2+a'^2 > 0$, and the element
+**Proof.** If $A \neq 0$ then $\langle A\rangle_{*} = a^2+a'^2 > 0$, and the element
 
 $$
-B = \frac{\bar{A}}{N(A)}
+B = \frac{\bar{A}}{\langle A\rangle_{*}}
 $$
 
 satisfies
 
 $$
-A B = \frac{A\bar{A}}{N(A)} = \frac{N(A)}{N(A)} = 1,
+A B = \frac{A\bar{A}}{\langle A\rangle_{*}} = \frac{\langle A\rangle_{*}}{\langle A\rangle_{*}} = 1,
 $$
 
-so $A$ has an inverse. Conversely, if $A$ is invertible then applying the norm to $AB = 1$ and using multiplicativity gives $N(A)N(B) = N(1) = 1$, so $N(A) \neq 0$ and hence $A \neq 0$.
+so $A$ has an inverse. Conversely, if $A$ is invertible then applying the norm to $AB = 1$ and using multiplicativity gives $\langle A\rangle_{*}\langle B\rangle_{*} = \langle 1\rangle_{*} = 1$, so $\langle A\rangle_{*} \neq 0$ and hence $A \neq 0$.
 
-The criterion $N(A) \neq 0$ is equivalent to the elementary statement $A \neq 0$ because the norm is definite.
+The criterion $\langle A\rangle_{*} \neq 0$ is equivalent to the elementary statement $A \neq 0$ because the norm is definite.
 
 ### The Inverse Formula
 
 For $A \neq 0$ the inverse is
 
 $$
-A^{-1} = \frac{\bar{A}}{N(A)} = \frac{a - i a'}{a^2+a'^2} = \frac{a}{a^2+a'^2} - \frac{a'}{a^2+a'^2} i .
+A^{-1} = \frac{\bar{A}}{\langle A\rangle_{*}} = \frac{a - i a'}{a^2+a'^2} = \frac{a}{a^2+a'^2} - \frac{a'}{a^2+a'^2} i .
 $$
 
 **Proof.** The verification is the computation in the first part of the proof of the criterion.
@@ -162,16 +162,16 @@ $$
 
 ### Worked Example
 
-For the worked pair of the category, $A = 3+4i$ and $B = 1-2i$, the criterion and the inverse formula are exact. Here $N(A) = 3^2+4^2 = 25 \neq 0$ and $N(B) = 1^2+(-2)^2 = 5 \neq 0$, so both are units, with
+For the worked pair of the category, $A = 3+4i$ and $B = 1-2i$, the criterion and the inverse formula are exact. Here $\langle A\rangle_{*} = 3^2+4^2 = 25 \neq 0$ and $\langle B\rangle_{*} = 1^2+(-2)^2 = 5 \neq 0$, so both are units, with
 
 $$
-A^{-1} = \frac{\bar{A}}{N(A)} = \frac{3-4i}{25} = 0.12 - 0.16 i, \qquad B^{-1} = \frac{\bar{B}}{N(B)} = \frac{1+2i}{5} = 0.2 + 0.4 i,
+A^{-1} = \frac{\bar{A}}{\langle A\rangle_{*}} = \frac{3-4i}{25} = 0.12 - 0.16 i, \qquad B^{-1} = \frac{\bar{B}}{\langle B\rangle_{*}} = \frac{1+2i}{5} = 0.2 + 0.4 i,
 $$
 
-and $A A^{-1} = 25/25 = 1$, $B B^{-1} = 5/5 = 1$. The product $AB = 11-2i$ has $N(AB) = 121+4 = 125 = 25 \cdot 5$, so it is a unit, and its inverse is computed in the two ways with the same result:
+and $A A^{-1} = 25/25 = 1$, $B B^{-1} = 5/5 = 1$. The product $AB = 11-2i$ has $\langle AB\rangle_{*} = 121+4 = 125 = 25 \cdot 5$, so it is a unit, and its inverse is computed in the two ways with the same result:
 
 $$
-(AB)^{-1} = B^{-1}A^{-1} = (0.2+0.4i)(0.12-0.16i) = 0.088 + 0.016 i, \qquad (AB)^{-1} = \frac{\overline{AB}}{N(AB)} = \frac{11+2i}{125} = 0.088 + 0.016 i .
+(AB)^{-1} = B^{-1}A^{-1} = (0.2+0.4i)(0.12-0.16i) = 0.088 + 0.016 i, \qquad (AB)^{-1} = \frac{\overline{AB}}{\langle AB\rangle_{*}} = \frac{11+2i}{125} = 0.088 + 0.016 i .
 $$
 
 The only element of vanishing norm is $0$, since $a^2+a'^2 = 0$ forces $a = a' = 0$, so there is no nonzero non-unit and no zero divisor.
@@ -183,7 +183,7 @@ The only element of vanishing norm is $0$, since $a^2+a'^2 = 0$ forces $a = a' =
 The **group of units** of $\mathbb{C}$ is the set of invertible elements:
 
 $$
-\mathbb{C}^\times = \{ A \in \mathbb{C} : N(A) \neq 0 \} = \mathbb{C} \setminus \{0\}.
+\mathbb{C}^\times = \{ A \in \mathbb{C} : \langle A\rangle_{*} \neq 0 \} = \mathbb{C} \setminus \{0\}.
 $$
 
 It is a group under multiplication with identity $1$.
@@ -227,13 +227,13 @@ An element of a finite-dimensional real algebra is of one of three kinds: a unit
 
 **Definition.** Let $A \in \mathbb{C}$. Then exactly one of the following holds:
 
-- $N(A) > 0$: $A$ is a **unit**, i.e. an invertible element;
-- $N(A) = 0$ and $A \neq 0$: $A$ is a **zero divisor**;
+- $\langle A\rangle_{*} > 0$: $A$ is a **unit**, i.e. an invertible element;
+- $\langle A\rangle_{*} = 0$ and $A \neq 0$: $A$ is a **zero divisor**;
 - $A = 0$: $A$ is **zero**.
 
 **Theorem (the classification of $\mathbb{C}$).** The zero-divisor class is empty, so every nonzero complex number is a unit and the classification has only two non-empty classes.
 
-**Proof.** $N(A) = a^2+a'^2 = 0$ forces $a = a' = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.
+**Proof.** $\langle A\rangle_{*} = a^2+a'^2 = 0$ forces $a = a' = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.
 
 ### The Algebra Is a Division Algebra
 
@@ -271,20 +271,20 @@ Equivalently, $\mathbb{C}^\times = (\mathbb{R}_{\mathbb{C}} \setminus \{0\}) \cu
 The algebra splits as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into the fixed and anti-fixed subspaces of conjugation, and on each piece the norm is definite:
 
 $$
-N(a) = a^2 \geq 0 \;\; (a \in \mathbb{R}_{\mathbb{C}}), \qquad N(i a') = a'^2 \geq 0 \;\; (a' \in \mathbb{R}_{\mathbb{C}}),
+\langle a\rangle_{*} = a^2 \geq 0 \;\; (a \in \mathbb{R}_{\mathbb{C}}), \qquad \langle i a'\rangle_{*} = a'^2 \geq 0 \;\; (a' \in \mathbb{R}_{\mathbb{C}}),
 $$
 
 each vanishing only at the origin. The two pieces therefore carry the **same** sign of the norm, $(+,+)$ on the two-dimensional real coordinate space, and multiplying by the imaginary unit preserves it:
 
 $$
-N(i A) = N(A).
+\langle i A\rangle_{*} = \langle A\rangle_{*}.
 $$
 
 This is the degeneracy of the Hermitian decomposition of the definite field. No sign reversal and no indefinite form occur. The distinction between the norm and the Hermitian form collapses: both are the single expression $A\bar{A}$.
 
 ## The Base Case of the Norm Series
 
-The norm series of the corpus records, for each algebra of the family, whether its norm is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm is the real positive-definite quadratic form $N(A) = a^2+a'^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:
+The norm series of the corpus records, for each algebra of the family, whether its norm is real, complex or split-complex valued, whether it is definite or indefinite, and what its vanishing locus is. In $\mathbb{C}$ the norm is the real positive-definite quadratic form $\langle A\rangle_{*} = a^2+a'^2$, the sum of two squares, and its vanishing locus is the single point $\{0\}$:
 
 | algebra | norm | value field | definite? | vanishing locus |
 |---|---|---|---|---|
@@ -293,13 +293,13 @@ The norm series of the corpus records, for each algebra of the family, whether i
 | $\mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{H}_{\mathbb{D}}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{D}$ | no | the elements whose norm is a zero divisor of $\mathbb{D}$ |
 
-The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$. The norm is multiplicative, $N(AB) = N(A)N(B)$, and because the form is definite the vanishing locus stays a single point.
+The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$. The norm is multiplicative, $\langle AB\rangle_{*} = \langle A\rangle_{*}\langle B\rangle_{*}$, and because the form is definite the vanishing locus stays a single point.
 
 ## Summary
 
-The norm of a complex number is $N(A) = A\bar{A} = a^2+a'^2$, real, positive-definite and multiplicative, $N(AB) = N(A)N(B)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|A\|_E = \sqrt{N(A)}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
+The norm of a complex number is $\langle A\rangle_{*} = A\bar{A} = a^2+a'^2$, real, positive-definite and multiplicative, $\langle AB\rangle_{*} = \langle A\rangle_{*}\langle B\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|A\|_E = \sqrt{\langle A\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
 
-A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $A^{-1} = \bar{A}/N(A)$. On the worked pair $A = 3+4i$, $B = 1-2i$ the criterion gives $N(A) = 25$, $N(B) = 5$ and $N(AB) = 125$, with inverses $A^{-1} = (3-4i)/25$ and $B^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
+A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $A^{-1} = \bar{A}/\langle A\rangle_{*}$. On the worked pair $A = 3+4i$, $B = 1-2i$ the criterion gives $\langle A\rangle_{*} = 25$, $\langle B\rangle_{*} = 5$ and $\langle AB\rangle_{*} = 125$, with inverses $A^{-1} = (3-4i)/25$ and $B^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
 
 The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ into a positive scale and a phase, the product form of that splitting being $A = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, and the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.
 
@@ -310,14 +310,14 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $A = a + i a'$ | a complex number, $a$ its real part, $a'$ its imaginary part |
 | $\bar{A} = a - i a'$ | complex conjugation, the nontrivial involution |
-| $N(A) = A\bar{A} = a^2+a'^2$ | the norm, real, positive definite, multiplicative |
-| $\|A\|_E = \sqrt{N(A)} = |A|$ | the Euclidean norm and the modulus |
-| $\langle A, B \rangle = \bar{A}B$ | the complex inner product, $\langle A,A\rangle = N(A)$ |
+| $\langle A\rangle_{*} = A\bar{A} = a^2+a'^2$ | the norm, real, positive definite, multiplicative |
+| $\|A\|_E = \sqrt{\langle A\rangle_{*}} = |A|$ | the Euclidean norm and the modulus |
+| $\langle A, B \rangle = \bar{A}B$ | the complex inner product, $\langle A,A\rangle = \langle A\rangle_{*}$ |
 | $A = 3+4i$, $B = 1-2i$ | the worked pair of the category |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
 | $U(1) = \{u : |u| = 1\}$ | the unit circle, the phase factor group |
 | $A = ru$ | the polar split, $r = |A| \in \mathbb{R}_{>0}$, $u = A/|A| \in U(1)$ |
-| $A^{-1} = \bar{A}/N(A)$ | the inverse of a nonzero element |
+| $A^{-1} = \bar{A}/\langle A\rangle_{*}$ | the inverse of a nonzero element |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the real and imaginary subspaces of $\mathbb{C}$ |
 
 ## Further Reading

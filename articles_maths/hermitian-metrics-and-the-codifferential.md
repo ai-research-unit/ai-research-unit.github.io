@@ -17,12 +17,12 @@ Let $(M,J,g)$ be a Hermitian manifold of complex dimension $m$, with real dimens
 **Proposition.** As a $\mathbb{C}$-linear operator on the complexified forms, the Hodge star respects the type decomposition by
 
 $$
-\star : \Omega^{p,q} \longrightarrow \Omega^{m-q,m-p}, \qquad \star(\alpha^{p,q}) \in \Omega^{m-q,m-p},
+\star : \Omega^{n,m} \longrightarrow \Omega^{m-m,m-n}, \qquad \star(\alpha^{n,m}) \in \Omega^{m-m,m-n},
 $$
 
-and it satisfies $\star^2 = (-1)^{k(2m-k)}$ on $\Omega^k$ with $k=p+q$. The Hermitian metric enters through the volume form and through the fibrewise metric on the forms.
+and it satisfies $\star^2 = (-1)^{k(2m-k)}$ on $\Omega^k$ with $k=n+m$. The Hermitian metric enters through the volume form and through the fibrewise metric on the forms.
 
-*Proof.* The metric pairing of two complexified forms, $\alpha\wedge\star\beta=g(\alpha,\beta)\mathrm{vol}$, is nonzero only when the bidegrees of $\alpha$ and $\beta$ are transposed, that is, it pairs $\Omega^{p,q}$ with $\Omega^{q,p}$ into $\mathbb{C}$: the Hermitian metric pairs a $(1,0)$-form with a $(0,1)$-form and vanishes on two $(1,0)$-forms, so the pairing of the forms of two bidegrees is nondegenerate exactly between the transposed bidegrees. Since $\mathrm{vol}$ has bidegree $(m,m)$, the identity forces the bidegree of $\star\beta$ to be the complement, $(m-q,m-p)$, when $\beta$ has bidegree $(p,q)$; and the identity $\star^2=(-1)^{k(2m-k)}$ is the real formula for the $2m$-dimensional manifold, extended $\mathbb{C}$-linearly.
+*Proof.* The metric pairing of two complexified forms, $\alpha\wedge\star\beta=g(\alpha,\beta)\mathrm{vol}$, is nonzero only when the bidegrees of $\alpha$ and $\beta$ are transposed, that is, it pairs $\Omega^{n,m}$ with $\Omega^{m,n}$ into $\mathbb{C}$: the Hermitian metric pairs a $(1,0)$-form with a $(0,1)$-form and vanishes on two $(1,0)$-forms, so the pairing of the forms of two bidegrees is nondegenerate exactly between the transposed bidegrees. Since $\mathrm{vol}$ has bidegree $(m,m)$, the identity forces the bidegree of $\star\beta$ to be the complement, $(m-m,m-n)$, when $\beta$ has bidegree $(n,m)$; and the identity $\star^2=(-1)^{k(2m-k)}$ is the real formula for the $2m$-dimensional manifold, extended $\mathbb{C}$-linearly.
 
 **Definition.** The **Hermitian pairing** of two complex-valued forms is
 
@@ -57,7 +57,7 @@ and it is the same operator as the Riemannian codifferential of *The Codifferent
 **Theorem.** On an integrable almost complex structure, with $d=\partial+\bar\partial$, the codifferential decomposes by type,
 
 $$
-\delta = \partial^* + \bar\partial^*, \qquad \partial^* : \Omega^{p,q}\to\Omega^{p-1,q}, \quad \bar\partial^* : \Omega^{p,q}\to\Omega^{p,q-1},
+\delta = \partial^* + \bar\partial^*, \qquad \partial^* : \Omega^{n,m}\to\Omega^{n-1,m}, \quad \bar\partial^* : \Omega^{n,m}\to\Omega^{n,m-1},
 $$
 
 where $\partial^*$ and $\bar\partial^*$ are the formal adjoints of the type components for the Hermitian pairing:
@@ -66,9 +66,9 @@ $$
 \langle\partial\alpha,\beta\rangle_{L^2} = \langle\alpha,\partial^*\beta\rangle_{L^2}, \qquad \langle\bar\partial\alpha,\beta\rangle_{L^2} = \langle\alpha,\bar\partial^*\beta\rangle_{L^2}.
 $$
 
-Consequently $\delta$ is the sum of an operator lowering $p$ and an operator lowering $q$, and it preserves the total degree by lowering it by one.
+Consequently $\delta$ is the sum of an operator lowering $n$ and an operator lowering $m$, and it preserves the total degree by lowering it by one.
 
-*Proof.* The adjoint of a sum is the sum of the adjoints, so $d^*=\partial^*+\bar\partial^*$; and $d^*=\delta$. The bidegrees of $\partial^*$ and $\bar\partial^*$ are those of $\partial$ and $\bar\partial$ with the degree reversed, because the Hermitian pairing is nondegenerate on each bidegree $\Omega^{p,q}\times\Omega^{p,q}\to\mathbb{C}$ and vanishes across different bidegrees; hence $\partial^*$ lowers $p$ and $\bar\partial^*$ lowers $q$. The two adjoint identities are the definitions.
+*Proof.* The adjoint of a sum is the sum of the adjoints, so $d^*=\partial^*+\bar\partial^*$; and $d^*=\delta$. The bidegrees of $\partial^*$ and $\bar\partial^*$ are those of $\partial$ and $\bar\partial$ with the degree reversed, because the Hermitian pairing is nondegenerate on each bidegree $\Omega^{n,m}\times\Omega^{n,m}\to\mathbb{C}$ and vanishes across different bidegrees; hence $\partial^*$ lowers $n$ and $\bar\partial^*$ lowers $m$. The two adjoint identities are the definitions.
 
 **Remark.** The two adjoints satisfy $\partial^{*2}=0$ and $\bar\partial^{*2}=0$ and anticommute, since they are the adjoints of operators with those properties; the pair $(\partial^*,\bar\partial^*)$ is the adjoint of the Dolbeault double complex, the mirror of $(\partial,\bar\partial)$, exactly as $\delta$ mirrors $d$.
 
@@ -106,23 +106,23 @@ $$
 
 and a form is harmonic for $\Delta$ exactly when it is harmonic for $\Delta_{\bar\partial}$. The identities producing this coincidence, the Lefschetz decomposition and the Hodge–Riemann relations are *Kähler Geometry* and *Hermitian Metrics and the Hodge Theory* in Part IV, and are named as forward references; the present article supplies only the operators and the split.
 
-**Corollary.** A form of type $(p,q)$ is harmonic for $\Delta_{\bar\partial}$ exactly when it is $\bar\partial$-closed and $\bar\partial^*$-closed; the space of such forms is the **harmonic representative** of its Dolbeault class. The finiteness of the space, the Hodge decomposition of the Dolbeault complex and the identification of the harmonic representatives with the Dolbeault cohomology require the ellipticity of $\Delta_{\bar\partial}$ and the analysis of the previous entry, and the resulting theorem is *Hermitian Metrics and the Hodge Theory* in Part IV.
+**Corollary.** A form of type $(n,m)$ is harmonic for $\Delta_{\bar\partial}$ exactly when it is $\bar\partial$-closed and $\bar\partial^*$-closed; the space of such forms is the **harmonic representative** of its Dolbeault class. The finiteness of the space, the Hodge decomposition of the Dolbeault complex and the identification of the harmonic representatives with the Dolbeault cohomology require the ellipticity of $\Delta_{\bar\partial}$ and the analysis of the previous entry, and the resulting theorem is *Hermitian Metrics and the Hodge Theory* in Part IV.
 
 *Proof.* The vanishing of $\Delta_{\bar\partial}\alpha = \bar\partial\bar\partial^*\alpha+\bar\partial^*\bar\partial\alpha$ paired with $\alpha$ gives $\lVert\bar\partial\alpha\rVert^2+\lVert\bar\partial^*\alpha\rVert^2=0$, hence the two closedness conditions, by the nonnegativity of the terms. The remaining assertions are the elliptic Hodge theory, deferred.
 
 ### The Involution on the Forms
 
-**Proposition (the conjugation).** The complex conjugation of the complex-valued forms, $\alpha\mapsto\bar\alpha$, maps $\Omega^{p,q}$ to $\Omega^{q,p}$, commutes with the exterior derivative, $d\bar\alpha=\overline{d\alpha}$, and with the Hodge star, $\star\bar\alpha=\overline{\star\alpha}$; consequently it commutes with the codifferential, $\delta\bar\alpha=\overline{\delta\alpha}$, and exchanges the two types of the differential, $\overline{\partial\alpha}=\bar\partial\bar\alpha$ and $\overline{\bar\partial\alpha}=\partial\bar\alpha$.
+**Proposition (the conjugation).** The complex conjugation of the complex-valued forms, $\alpha\mapsto\bar\alpha$, maps $\Omega^{n,m}$ to $\Omega^{m,n}$, commutes with the exterior derivative, $d\bar\alpha=\overline{d\alpha}$, and with the Hodge star, $\star\bar\alpha=\overline{\star\alpha}$; consequently it commutes with the codifferential, $\delta\bar\alpha=\overline{\delta\alpha}$, and exchanges the two types of the differential, $\overline{\partial\alpha}=\bar\partial\bar\alpha$ and $\overline{\bar\partial\alpha}=\partial\bar\alpha$.
 
-*Proof.* The conjugation of the coefficients is well defined on the complexified forms, and it exchanges the $(1,0)$- and the $(0,1)$-parts, hence the bidegrees $(p,q)$ and $(q,p)$. The commutation with the real operator $d$ is immediate from the reality of the exterior derivative; the Hodge star of the Riemannian metric is a real operator, so it commutes with the conjugation; the codifferential is built from $d$ and $\star$, so it commutes too. The exchange of $\partial$ and $\bar\partial$ is the conjugate of the type decomposition.
+*Proof.* The conjugation of the coefficients is well defined on the complexified forms, and it exchanges the $(1,0)$- and the $(0,1)$-parts, hence the bidegrees $(n,m)$ and $(m,n)$. The commutation with the real operator $d$ is immediate from the reality of the exterior derivative; the Hodge star of the Riemannian metric is a real operator, so it commutes with the conjugation; the codifferential is built from $d$ and $\star$, so it commutes too. The exchange of $\partial$ and $\bar\partial$ is the conjugate of the type decomposition.
 
 **Remark.** The conjugation is the involution of the layer, and $\delta$ is the operator that the involution and the metric jointly produce; the fixed forms of the involution are the real forms, and the Hermitian pairing is the involution-compatible pairing of the complex forms. This closes the group: the almost complex structure $J$ gives the type decomposition and the operators $\partial$ and $\bar\partial$, the Hermitian metric gives the fundamental form, the Hodge star, the codifferential and the Laplacians, and the adjoints $\partial^*$ and $\bar\partial^*$ are the involution-side mirrors of the two type components, exactly as the metric connection of the previous group was the metric-side mirror of the connection.
 
 ## Summary
 
-On a Hermitian manifold of complex dimension $m$ the Hodge star maps $\Omega^{p,q}$ to $\Omega^{m-q,m-p}$ and the codifferential of the even-dimensional manifold is $\delta=-\star d\star$, the formal adjoint of $d$ for the Hermitian pairing $\langle\alpha,\beta\rangle_{L^2}=\int\alpha\wedge\star\bar\beta$. The exterior derivative splits by type, $d=\partial+\bar\partial$, and the codifferential splits with it, $\delta=\partial^*+\bar\partial^*$, into the formal adjoints of the type components, with bidegrees $(p-1,q)$ and $(p,q-1)$; this is the mirror of the Dolbeault double complex.
+On a Hermitian manifold of complex dimension $m$ the Hodge star maps $\Omega^{n,m}$ to $\Omega^{m-m,m-n}$ and the codifferential of the even-dimensional manifold is $\delta=-\star d\star$, the formal adjoint of $d$ for the Hermitian pairing $\langle\alpha,\beta\rangle_{L^2}=\int\alpha\wedge\star\bar\beta$. The exterior derivative splits by type, $d=\partial+\bar\partial$, and the codifferential splits with it, $\delta=\partial^*+\bar\partial^*$, into the formal adjoints of the type components, with bidegrees $(p-1,q)$ and $(n,m-1)$; this is the mirror of the Dolbeault double complex.
 
-The Hodge Laplacian $\Delta=d\delta+\delta d$ and the Dolbeault Laplacians $\Delta_\partial=\partial\partial^*+\partial^*\partial$ and $\Delta_{\bar\partial}=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ are formally self-adjoint, nonnegative and bidegree-preserving; the expansion of $\Delta$ in terms of the two Dolbeault Laplacians carries two cross terms, which vanish exactly on a Kähler manifold, where then $\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$. The complex conjugation of the forms is the involution of the layer: it exchanges the bidegrees $(p,q)$ and $(q,p)$ and commutes with $d$, $\star$ and $\delta$, and it exchanges $\partial$ with $\bar\partial$. The Hodge decomposition of the Dolbeault complex, the finiteness of the harmonic spaces and the Kähler identities that make the cross terms vanish are *Hermitian Metrics and the Hodge Theory* and *Kähler Geometry* in Part IV.
+The Hodge Laplacian $\Delta=d\delta+\delta d$ and the Dolbeault Laplacians $\Delta_\partial=\partial\partial^*+\partial^*\partial$ and $\Delta_{\bar\partial}=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ are formally self-adjoint, nonnegative and bidegree-preserving; the expansion of $\Delta$ in terms of the two Dolbeault Laplacians carries two cross terms, which vanish exactly on a Kähler manifold, where then $\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$. The complex conjugation of the forms is the involution of the layer: it exchanges the bidegrees $(n,m)$ and $(m,n)$ and commutes with $d$, $\star$ and $\delta$, and it exchanges $\partial$ with $\bar\partial$. The Hodge decomposition of the Dolbeault complex, the finiteness of the harmonic spaces and the Kähler identities that make the cross terms vanish are *Hermitian Metrics and the Hodge Theory* and *Kähler Geometry* in Part IV.
 
 ## Summary of Notation
 
@@ -130,16 +130,16 @@ The Hodge Laplacian $\Delta=d\delta+\delta d$ and the Dolbeault Laplacians $\Del
 |---|---|
 | $m$, $2m$ | Complex and real dimensions of the Hermitian manifold |
 | $\omega$, $\omega^m=m!\,\mathrm{vol}$ | Fundamental form and the volume form |
-| $\star : \Omega^{p,q}\to\Omega^{m-q,m-p}$ | Hodge star; $\star^2=(-1)^{k(2m-k)}$ on $\Omega^k$ |
+| $\star : \Omega^{n,m}\to\Omega^{m-m,m-n}$ | Hodge star; $\star^2=(-1)^{k(2m-k)}$ on $\Omega^k$ |
 | $\langle\alpha,\beta\rangle_{L^2}=\int\alpha\wedge\star\bar\beta$ | Hermitian pairing on the complex-valued forms |
 | $\delta=-\star d\star$ | Codifferential; the sign from the even dimension $2m$ |
-| $\partial$, $\bar\partial$ | Type components of $d$; $\partial\Omega^{p,q}\subset\Omega^{p+1,q}$, $\bar\partial\Omega^{p,q}\subset\Omega^{p,q+1}$ |
+| $\partial$, $\bar\partial$ | Type components of $d$; $\partial\Omega^{n,m}\subset\Omega^{n+1,m}$, $\bar\partial\Omega^{n,m}\subset\Omega^{n,m+1}$ |
 | $\partial^*$, $\bar\partial^*$; $\delta=\partial^*+\bar\partial^*$ | Formal adjoints of $\partial,\bar\partial$; the bidegree split |
 | $\Delta=d\delta+\delta d$ | Hodge Laplacian (Laplace–de Rham operator) |
 | $\Delta_\partial$, $\Delta_{\bar\partial}$ | Dolbeault Laplacians; self-adjoint, nonnegative |
 | Cross terms $\partial\bar\partial^*+\bar\partial^*\partial$, $\bar\partial\partial^*+\partial^*\bar\partial$ | Vanishing exactly in the Kähler case |
 | $\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$ | Kähler case; forward reference to Part IV |
-| $\alpha\mapsto\bar\alpha$ | Conjugation; $\Omega^{p,q}\leftrightarrow\Omega^{q,p}$, commutes with $d,\star,\delta$ |
+| $\alpha\mapsto\bar\alpha$ | Conjugation; $\Omega^{n,m}\leftrightarrow\Omega^{m,n}$, commutes with $d,\star,\delta$ |
 
 ## Further Reading
 

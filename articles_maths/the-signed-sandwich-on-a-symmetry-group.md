@@ -29,7 +29,7 @@ The sign element $z$ is even, $z \in G_0$.
 
 **Proof.** The containments are the multiplicativity of the homomorphism and its values; $z^{2}=e$ makes $\varepsilon(z)=e$ because the only element of $\{e,z\}$ of order two is $e$ when $\varepsilon$ is a homomorphism into the two-element group.
 
-**Example (the Clifford realisation).** Let $V$ be a quadratic space over a field of characteristic not $2$ and let $G \leq \Gamma(V,q)$ be a subgroup of the Clifford group, together with the central element $-1$ of the algebra. The grading $\varepsilon(g) = +1$ on the even part and $-1$ on the odd part is a homomorphism, the sign element is $z = -1$, and the grade involution $\alpha(g) = \varepsilon(g) g$ is the restriction to $G$ of the grade involution of the Clifford algebra. This is the case the geometry uses; the abstract definition above is the same structure read without the algebra.
+**Example (the Clifford realisation).** Let $V$ be a quadratic space over a field of characteristic not $2$ and let $G \leq \Gamma(V,\mathfrak{Q})$ be a subgroup of the Clifford group, together with the central element $-1$ of the algebra. The grading $\varepsilon(g) = +1$ on the even part and $-1$ on the odd part is a homomorphism, the sign element is $z = -1$, and the grade involution $\alpha(g) = \varepsilon(g) g$ is the restriction to $G$ of the grade involution of the Clifford algebra. This is the case the geometry uses; the abstract definition above is the same structure read without the algebra.
 
 ### The Grade Involution
 
@@ -121,21 +121,21 @@ which contains the fixed subgroup $G^{\langle\alpha\rangle} = G_0$ when $a$ comm
 
 ### The Reflection
 
-**Theorem (the reflection).** Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $q(u) \neq 0$. In the pin group $\mathrm{Pin}(V,q) \leq \Gamma(V,q)$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,
+**Theorem (the reflection).** Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. In the pin group $\mathrm{Pin}(V,\mathfrak{Q}) \leq \Gamma(V,\mathfrak{Q})$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,
 
 $$
-\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{q(u)}\,u, \qquad v \in V,
+\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u, \qquad v \in V,
 $$
 
 while the unsigned inner conjugation is its negative, $\mathrm{Ad}_u(v) = -\rho_u(v)$. The signed sandwich is therefore the two-sided operator that realises the reflections, and the unsigned one realises them only up to sign.
 
-**Proof.** For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$ and $\mathrm{Ad}_u(v) = uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - q(u)v$ gives $uvu^{-1} = 2B(u,v)q(u)^{-1}u - v = -\rho_u(v)$, hence $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$. This is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, and is quoted here.
+**Proof.** For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$ and $\mathrm{Ad}_u(v) = uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - \mathfrak{Q}(u)v$ gives $uvu^{-1} = 2B(u,v)\mathfrak{Q}(u)^{-1}u - v = -\rho_u(v)$, hence $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$. This is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, and is quoted here.
 
 **Remark.** The signed sandwich generalises the reflection. A product $u_1 \cdots u_k$ of vectors acts by $\mathrm{Ad}^{\alpha}$ as the composite of the reflections $\rho_{u_1}\cdots\rho_{u_k}$, and the sandwich with two independent parameters $a, b$ realises the general composite of a reflection and a rotation in either order; the diagonal with a vector parameter is the single reflection. The presence of the sign element $z$ on the odd coset, and its absence on the even one, is exactly what makes the half-turn of a product of two vectors carry no sign.
 
 ## Worked Cases
 
-**Example (the pin group of the Euclidean plane).** Let $V = \mathbb{R}^2$ with the Euclidean form and $u = e^{i\theta}$ a unit vector, $q(u) = 1$. The reflection $\rho_u$ fixes the line $u^{\perp}$ and negates $u$; the signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is this reflection, and the unsigned $\mathrm{Ad}_u$ is its negative, the half-turn composed with it. For the product $u v$ of two unit vectors, even, the two sandwiches agree and both give the rotation through twice the angle between them.
+**Example (the pin group of the Euclidean plane).** Let $V = \mathbb{R}^2$ with the Euclidean form and $u = \exp(i\theta)$ a unit vector, $\mathfrak{Q}(u) = 1$. The reflection $\rho_u$ fixes the line $u^{\perp}$ and negates $u$; the signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is this reflection, and the unsigned $\mathrm{Ad}_u$ is its negative, the half-turn composed with it. For the product $u v$ of two unit vectors, even, the two sandwiches agree and both give the rotation through twice the angle between them.
 
 **Example (the dihedral group).** Let $G = D_n = \langle r, s \mid r^n = s^2 = e,\ srs = r^{-1}\rangle$ with the grading $\varepsilon(r) = e$, $\varepsilon(s) = z$, so that the rotations are even and the reflections odd. Then $\alpha(r^k) = r^k$ and $\alpha(r^k s) = z r^k s$. The signed left multiplication on $D_n$ fixes every rotation and sends each reflection to the reflection times the sign element; the signed sandwich $S^{\alpha}_{s,s}(x) = s\,\alpha(x)\,s$ is the inner conjugation by $s$ on the even part and its negative on the odd part, and it acts on the rotations by $r^k \mapsto r^{-k}$.
 
@@ -158,8 +158,8 @@ The grade involution here is the sign character of the grading, not the involuti
 | $S_{a,b}(x) = axb$ | the unsigned sandwich |
 | $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ | the signed sandwich |
 | $\mathrm{Ad}^{\alpha}_a$ | the signed inner conjugation, $a\alpha(x)a^{-1}$ |
-| $\rho_u(v) = v - 2B(v,u)q(u)^{-1}u$ | the reflection in $u^{\perp}$ |
-| $\mathrm{Pin}(V,q)$ | the pin group, in which the reflection is realised |
+| $\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$ | the reflection in $u^{\perp}$ |
+| $\mathrm{Pin}(V,\mathfrak{Q})$ | the pin group, in which the reflection is realised |
 
 ## Further Reading
 

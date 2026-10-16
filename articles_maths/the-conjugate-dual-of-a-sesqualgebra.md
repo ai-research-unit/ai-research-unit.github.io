@@ -132,7 +132,7 @@ is $\varsigma$-semilinear and continuous; under the identification $(A^{\varsigm
 
 *Proof.* The product is submultiplicative, $\lvert x_k\bar y_k\rvert \leq \lVert x\rVert_\infty\lVert y\rVert_\infty$ for every $k$, so $A$ is a normed sesqualgebra. The conjugate module $A^{\varsigma}$ is $c_0$ with the twisted action, which is the same Banach space, and $c_0^{*} \cong \ell^{1}$ with $(c_0)^{**} \cong \ell^{\infty}$, by *Normed and Banach Spaces*, §*The Dual Space*; since $c_0 \neq \ell^{\infty}$ the evaluation is not surjective. The conjugate dual is $\ell^{1}$ and the ordinary dual of $\ell^{1}$ is $\ell^{\infty}$ by the two-readings theorem, so reflexivity fails at the same place as it does for the Banach space.
 
-**Remark.** The example is the reason the article separates the two duals: the sesquilinear structure is invisible to the failure of reflexivity, which is a property of the underlying Banach space and is inherited from the conjugate module. A sesqualgebra is reflexive exactly when its Banach space is, and the examples of reflexive objects are the reflexive Banach spaces, the Hilbert spaces and the $\ell^{p}$ with $1 < p < \infty$, read with any sesquilinear product that makes them sesqualgebras.
+**Remark.** The example is the reason the article separates the two duals: the sesquilinear structure is invisible to the failure of reflexivity, which is a property of the underlying Banach space and is inherited from the conjugate module. A sesqualgebra is reflexive exactly when its Banach space is, and the examples of reflexive objects are the reflexive Banach spaces, the Hilbert spaces and the $\ell^{n}$ with $1 < p < \infty$, read with any sesquilinear product that makes them sesqualgebras.
 
 ## Examples
 

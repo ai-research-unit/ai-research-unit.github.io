@@ -11,7 +11,7 @@ introduced by Euler for real $s > 1$, continued by Riemann to the complex plane,
 
 The analytic input is Tate's thesis, the adelic integration and Fourier analysis of *Adelic Analysis*, written immediately: the completed zeta function is the integral of a Schwartz–Bruhat function against the norm character on the idele class group, the Euler product is the product of the local integrals, and the functional equation is the Poisson summation formula together with the self-duality of the adeles. That is the conceptual reason for the shape of the formulas; the elementary proofs by the theta function and by the Mellin transform are given as well, since they are the classical route and are needed for the estimates. The Dirichlet $L$-functions, their characters and their functional equations are not covered here; the distribution of the primes, the methods of complex analysis applied to arithmetic and the analytic proof of the prime number theorem belong to *Analytic Number Theory*; the statements and consequences of the hypothesis that all the zeros lie on the critical line belong to *The Riemann Hypothesis*. All four are in this Part. The per-system treatment of the zeta function as a special function of a particular number system is Part V's and is deferred.
 
-The prerequisites are *Adelic Analysis* for the adelic integrals and the local factors, and for the Gamma function, the Mellin transform, the theta function and the theory of analytic continuation, *Measure Theory and Integration* for the interchange of limits, *Algebraic Number Theory* for the ideals, the class number, the regulator and the discriminant, *Absolute Values, Valuations and Completions* and *Local Fields* for the local computations, and *Modules* and *Rings* for the arithmetic. The Gamma function is used as standard mathematics: $\Gamma(s) = \int_0^\infty e^{-t}t^{s-1}dt$ for $\Re s > 0$, extended meromorphically to $\mathbb{C}$ with simple poles at the nonpositive integers, satisfying $\Gamma(s+1) = s\Gamma(s)$, $\Gamma(1/2) = \sqrt{\pi}$ and the reflection formula $\Gamma(s)\Gamma(1-s) = \pi/\sin(\pi s)$; the Bernoulli numbers are those of the generating function $t/(e^t-1)$, so that $B_0=1$, $B_1=-\tfrac12$, $B_2=\tfrac16$, $B_4=-\tfrac{1}{30}$, and $B_{2m+1}=0$ for $m \geq 1$. Throughout, $s = \sigma + it$ is a complex variable.
+The prerequisites are *Adelic Analysis* for the adelic integrals and the local factors, and for the Gamma function, the Mellin transform, the theta function and the theory of analytic continuation, *Measure Theory and Integration* for the interchange of limits, *Algebraic Number Theory* for the ideals, the class number, the regulator and the discriminant, *Absolute Values, Valuations and Completions* and *Local Fields* for the local computations, and *Modules* and *Rings* for the arithmetic. The Gamma function is used as standard mathematics: $\Gamma(s) = \int_0^\infty \exp(-t)t^{s-1}dt$ for $\Re s > 0$, extended meromorphically to $\mathbb{C}$ with simple poles at the nonpositive integers, satisfying $\Gamma(s+1) = s\Gamma(s)$, $\Gamma(1/2) = \sqrt{\pi}$ and the reflection formula $\Gamma(s)\Gamma(1-s) = \pi/\sin(\pi s)$; the Bernoulli numbers are those of the generating function $t/(\exp(t)-1)$, so that $B_0=1$, $B_1=-\tfrac12$, $B_2=\tfrac16$, $B_4=-\tfrac{1}{30}$, and $B_{2m+1}=0$ for $m \geq 1$. Throughout, $s = \sigma + it$ is a complex variable.
 
 ## Dirichlet Series
 
@@ -45,11 +45,11 @@ The theorem is the mechanism by which the analytic properties of the counting fu
 
 **Theorem (the integral representation).** For $\sigma > 1$,
 $$
-\Gamma(s)\zeta(s) = \int_0^\infty \frac{x^{s-1}}{e^x - 1} \, dx ,
+\Gamma(s)\zeta(s) = \int_0^\infty \frac{x^{s-1}}{\exp(x) - 1} \, dx ,
 $$
-the integral converging at $0$ because $x^{s-1}/(e^x-1) \sim x^{s-2}$ and $s > 1$, and at $\infty$ by the exponential decay. The formula exhibits the pole of $\zeta$ at $s=1$: the function $\Gamma(s)\zeta(s)$, continued meromorphically by the integral, has a simple pole at $s=1$ of residue $1$, and since $\Gamma$ is holomorphic and nonzero at $1$, that pole belongs to $\zeta$ and has the same residue.
+the integral converging at $0$ because $x^{s-1}/(\exp(x)-1) \sim x^{s-2}$ and $s > 1$, and at $\infty$ by the exponential decay. The formula exhibits the pole of $\zeta$ at $s=1$: the function $\Gamma(s)\zeta(s)$, continued meromorphically by the integral, has a simple pole at $s=1$ of residue $1$, and since $\Gamma$ is holomorphic and nonzero at $1$, that pole belongs to $\zeta$ and has the same residue.
 
-**Proof.** Expand $(e^x-1)^{-1} = \sum_{n\geq1}e^{-nx}$ for $x>0$, integrate term by term with $\int_0^\infty e^{-nx}x^{s-1}dx = \Gamma(s)n^{-s}$ and sum.
+**Proof.** Expand $(\exp(x)-1)^{-1} = \sum_{n\geq1}\exp(-nx)$ for $x>0$, integrate term by term with $\int_0^\infty \exp(-nx)x^{s-1}dx = \Gamma(s)n^{-s}$ and sum.
 
 **Theorem (analytic continuation).** The function $\zeta$ extends to a meromorphic function on $\mathbb{C}$, holomorphic outside $s=1$, with a simple pole at $s=1$ of residue $1$, and with the Laurent expansion
 $$
@@ -57,15 +57,15 @@ $$
 $$
 where $\gamma$ is Euler's constant. The continuation is unique.
 
-**Proof sketch.** The integral representation, split at $x=1$, gives $\Gamma(s)\zeta(s) = \int_1^\infty\frac{x^{s-1}}{e^x-1}dx + \int_0^1 x^{s-2}\cdot\frac{x}{e^x-1}dx$; the second integrand extends to a holomorphic function of $s$ on a neighbourhood of $\Re s>1$ minus $s=1$ with a simple pole of residue $1$ and is continued by expanding $x/(e^x-1)$ in powers of $x$ and integrating term by term, the resulting series converging for $s$ off the nonpositive integers. Dividing by $\Gamma(s)$ and continuing meromorphically gives the statement.
+**Proof sketch.** The integral representation, split at $x=1$, gives $\Gamma(s)\zeta(s) = \int_1^\infty\frac{x^{s-1}}{\exp(x)-1}dx + \int_0^1 x^{s-2}\cdot\frac{x}{\exp(x)-1}dx$; the second integrand extends to a holomorphic function of $s$ on a neighbourhood of $\Re s>1$ minus $s=1$ with a simple pole of residue $1$ and is continued by expanding $x/(\exp(x)-1)$ in powers of $x$ and integrating term by term, the resulting series converging for $s$ off the nonpositive integers. Dividing by $\Gamma(s)$ and continuing meromorphically gives the statement.
 
 ### The Functional Equation
 
-**Definition.** The **theta function** is $\theta(t) = \sum_{n\in\mathbb{Z}} e^{-\pi n^2 t}$ for $t>0$, and the **completed zeta function** is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.
+**Definition.** The **theta function** is $\theta(t) = \sum_{n\in\mathbb{Z}} \exp(-\pi n^2 t)$ for $t>0$, and the **completed zeta function** is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.
 
 **Theorem (Jacobi's functional equation for theta).** For $t > 0$, $\theta(1/t) = \sqrt{t}\,\theta(t)$.
 
-**Proof sketch.** Both sides are the value at $0$ of the periodisation of the Gaussian $e^{-\pi t x^2}$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $e^{-\pi t x^2}$ has Fourier transform $t^{-1/2}e^{-\pi \xi^2/t}$.
+**Proof sketch.** Both sides are the value at $0$ of the periodisation of the Gaussian $\exp(-\pi t x^2)$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $\exp(-\pi t x^2)$ has Fourier transform $t^{-1/2}\exp(-\pi \xi^2/t)$.
 
 **Theorem (functional equation of the zeta function).** For all $s \in \mathbb{C}$,
 $$
@@ -97,7 +97,7 @@ so that in particular $\zeta(2) = \pi^2/6$, $\zeta(4) = \pi^4/90$, $\zeta(6) = \
 $$
 \zeta(-n) = -\frac{B_{n+1}}{n+1},
 $$
-so that $\zeta(-1) = -\tfrac{1}{12}$, $\zeta(-3) = \tfrac{1}{120}$, $\zeta(-5) = -\tfrac{1}{252}$, and $\zeta(-2m) = 0$ for $m \geq 1$. The apparent exception at $n=0$ is the change of Bernoulli convention: the formula $\zeta(1-n) = -B_n/n$ holds for all $n \geq 1$ in the convention in which $B_1 = +\tfrac12$, whereas the generating function $t/(e^t-1)$ used here gives $B_1 = -\tfrac12$ and requires $\zeta(0) = -\tfrac12$ to be stated separately.
+so that $\zeta(-1) = -\tfrac{1}{12}$, $\zeta(-3) = \tfrac{1}{120}$, $\zeta(-5) = -\tfrac{1}{252}$, and $\zeta(-2m) = 0$ for $m \geq 1$. The apparent exception at $n=0$ is the change of Bernoulli convention: the formula $\zeta(1-n) = -B_n/n$ holds for all $n \geq 1$ in the convention in which $B_1 = +\tfrac12$, whereas the generating function $t/(\exp(t)-1)$ used here gives $B_1 = -\tfrac12$ and requires $\zeta(0) = -\tfrac12$ to be stated separately.
 
 **Proof sketch.** Both families follow from the functional equation and from the values of the Bernoulli numbers, which compute the coefficients of the Mittag-Leffler expansion of $\pi\cot(\pi s)$; the even values are also the values of $\zeta$ obtained by the Fourier expansion of the Bernoulli polynomials, and the nonpositive values by the integral representation together with the expansion of the integrand. The vanishing at the negative even integers is the statement above about the trivial zeros.
 
@@ -169,10 +169,10 @@ The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has 
 | $\zeta(s)$ | Riemann zeta function, $\sum_{n\ge1}n^{-s}$ |
 | $\prod_p$ | Product over the primes |
 | $\Lambda(s)$ | Completed zeta, $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
-| $\theta(t)$ | Theta function, $\sum_{n\in\mathbb{Z}}e^{-\pi n^2t}$ |
+| $\theta(t)$ | Theta function, $\sum_{n\in\mathbb{Z}}\exp(-\pi n^2t)$ |
 | $\Gamma$ | Gamma function, $\Gamma(s+1)=s\Gamma(s)$ |
 | $\gamma$ | Euler's constant |
-| $B_n$ | Bernoulli numbers, generating function $t/(e^t-1)$ |
+| $B_n$ | Bernoulli numbers, generating function $t/(\exp(t)-1)$ |
 | $\sigma_c$, $\sigma_a$ | Abscissas of convergence and of absolute convergence |
 | $\zeta_K(s)$ | Dedekind zeta function of a number field $K$ |
 | $\mathcal{O}_K$, $\mathrm{A}$, $\mathrm{P}$, $N(\mathrm{A})$ | Ring of integers, ideals, prime ideals, absolute norm |

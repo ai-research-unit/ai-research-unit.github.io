@@ -35,7 +35,7 @@ $$
 \operatorname{disc}(H) = \det(H) \in K_0^\times / N(K^\times)
 $$
 
-and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate Hermitian forms are isometric if and only if they have the same rank, the same discriminant and the same Hasse invariant, and every compatible triple is realised. Over the real field the two invariants are replaced by the **signature** $(p,q)$, and over the complex field with the conjugation the form is classified by the signature as well.
+and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate Hermitian forms are isometric if and only if they have the same rank, the same discriminant and the same Hasse invariant, and every compatible triple is realised. Over the real field the two invariants are replaced by the **signature** $(n,m)$, and over the complex field with the conjugation the form is classified by the signature as well.
 
 **Proof.** The local classification is the decomposition into orthogonal hyperbolic planes and an anisotropic residue of rank at most two, and the residue is determined by the discriminant and the Hasse invariant; the Hilbert symbol of the extension gives the Hasse invariant and the norm class. The theorem and the proof are *Hermitian Forms over a Local Field*, and the article records the invariants as the data of the geometry.
 
@@ -43,13 +43,13 @@ and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate 
 
 ### The Space and the Invariants
 
-**Definition.** A **Hermitian space over the local field** $(K,c)$ is a finite-dimensional $K$-vector space $V$ with a nondegenerate Hermitian form $h$; the **rank** is the dimension $n$, the **Witt index** $r$ is the largest dimension of a totally isotropic subspace, and the **residue** is the anisotropic part of the Witt decomposition $V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0$ with $\dim V_0 = n - 2r$. The space is **hyperbolic** when $n = 2r$ and **anisotropic** when $r = 0$.
+**Definition.** A **Hermitian space over the local field** $(K,c)$ is a finite-dimensional $K$-vector space $V$ with a nondegenerate Hermitian form $h$; the **rank** is the dimension $N$, the **Witt index** $r$ is the largest dimension of a totally isotropic subspace, and the **residue** is the anisotropic part of the Witt decomposition $V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0$ with $\dim V_0 = N - 2r$. The space is **hyperbolic** when $N = 2r$ and **anisotropic** when $r = 0$.
 
 **Theorem.** Over a non-Archimedean local field the anisotropic residue has dimension at most two, so the space is determined by the rank $n$, the discriminant, the Hasse invariant and the Witt index $r = \lfloor (n - \dim V_0)/2 \rfloor$ with $\dim V_0 \in \{0, 1, 2\}$; the Hasse invariant decides the existence of an isotropic vector, and the space is hyperbolic exactly when $n$ is even, the discriminant is trivial and the Hasse invariant has the split value.
 
 **Proof.** The residue of dimension at most two is the local classification; the existence of an isotropic vector is decided by the Hasse invariant because the only anisotropic forms of rank at least three fail to exist over a non-Archimedean local field, and the hyperbolic condition is the vanishing of the residue. The statement is in *Hermitian Forms over a Local Field* and *Quadratic Forms and Polarisation*.
 
-**Example (the Archimedean signatures).** Over $\mathbb{R}$ with the trivial involution and the form of signature $(p,q)$ the Witt index is $\min(p,q)$ and the residue is the definite space of dimension $|p-q|$; over $\mathbb{C}$ with the conjugation the form of signature $(p,q)$ behaves the same way, and the unitary group of the standard form is the compact group $U(p,q)$ of the next section. The Archimedean case is the one in which the residue may have any dimension and the metric is not discrete.
+**Example (the Archimedean signatures).** Over $\mathbb{R}$ with the trivial involution and the form of signature $(n,m)$ the Witt index is $\min(n,m)$ and the residue is the definite space of dimension $|p-q|$; over $\mathbb{C}$ with the conjugation the form of signature $(n,m)$ behaves the same way, and the unitary group of the standard form is the compact group $U(n,m)$ of the next section. The Archimedean case is the one in which the residue may have any dimension and the metric is not discrete.
 
 ### The Isotropic Subspaces
 
@@ -95,7 +95,7 @@ and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate 
 
 ## Summary
 
-A Hermitian space over a local field $(K,c)$ is classified non-Archimedeanly by the rank, the discriminant $\operatorname{disc}(H) = \det(H) \in K_0^\times/N(K^\times)$ and the Hasse invariant $s(H) \in \{\pm 1\}$, the anisotropic residue having dimension at most two, and Archimedeanly by the signature $(p,q)$; the Witt index $r$ is the largest dimension of a totally isotropic subspace, and the unitary group acts transitively on the isotropic Grassmannians and the isotropic flags. The unitary group is a locally compact unimodular group, with the maximal compact subgroups the stabilisers of the self-dual lattices in the non-Archimedean case and the anisotropic groups compact; its rank is the Witt index, and the quotient by the amenable radical and the parabolic is compact. The lattices over the ring of integers organise the **Bruhat–Tits building**, a CAT(0) simplicial complex of dimension $r-1$ union of the apartments of the maximal split tori, on which the group acts transitively on the chambers, and the fixed point theorem relates the compact subgroups to the parahoric stabilisers. The boundary strata of the building are the isotropic flags, and the invariants of the form are the invariants of the geometry.
+A Hermitian space over a local field $(K,c)$ is classified non-Archimedeanly by the rank, the discriminant $\operatorname{disc}(H) = \det(H) \in K_0^\times/N(K^\times)$ and the Hasse invariant $s(H) \in \{\pm 1\}$, the anisotropic residue having dimension at most two, and Archimedeanly by the signature $(n,m)$; the Witt index $r$ is the largest dimension of a totally isotropic subspace, and the unitary group acts transitively on the isotropic Grassmannians and the isotropic flags. The unitary group is a locally compact unimodular group, with the maximal compact subgroups the stabilisers of the self-dual lattices in the non-Archimedean case and the anisotropic groups compact; its rank is the Witt index, and the quotient by the amenable radical and the parabolic is compact. The lattices over the ring of integers organise the **Bruhat–Tits building**, a CAT(0) simplicial complex of dimension $r-1$ union of the apartments of the maximal split tori, on which the group acts transitively on the chambers, and the fixed point theorem relates the compact subgroups to the parahoric stabilisers. The boundary strata of the building are the isotropic flags, and the invariants of the form are the invariants of the geometry.
 
 ## Summary of Notation
 
@@ -109,7 +109,7 @@ A Hermitian space over a local field $(K,c)$ is classified non-Archimedeanly by 
 | $V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0$ | Witt decomposition, $\dim V_0 \in \{0,1,2\}$ |
 | $\operatorname{disc}(H) = \det(H)$ | Discriminant in $K_0^\times/N(K^\times)$ |
 | $s(H) \in \{\pm 1\}$ | Hasse invariant |
-| $(p,q)$ | Signature in the Archimedean case |
+| $(n,m)$ | Signature in the Archimedean case |
 | $U(V,h)$ | Unitary group, a locally compact group |
 | lattice $L$ | Full-rank $\mathcal{O}_K$-submodule |
 | building | Flag complex of the homothety classes of the lattices |

@@ -57,9 +57,9 @@ where $E\mathbb{Z}/2\to B\mathbb{Z}/2 = \mathbb{RP}^\infty$ is the universal $\m
 
 **Theorem (the spectral sequence of the Borel construction).** There is a first-quadrant spectral sequence
 $$
-E^2_{p,q} = H_p\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{p+q}^{\mathbb{Z}/2}(M;\mathbb{Z}),
+E^2_{n,m} = H_n\bigl(\mathbb{Z}/2;H_q(M;\mathbb{Z})\bigr) \Longrightarrow H_{n+m}^{\mathbb{Z}/2}(M;\mathbb{Z}),
 $$
-with coefficients in the module $H_q(M;\mathbb{Z})$ carrying the action of the involution. For the trivial action it specialises to $H_p(\mathbb{RP}^\infty;\mathbb{Z})\otimes H_q(M;\mathbb{Z})$, and with $\mathbb{F}_2$ coefficients to the polynomial ring $\mathbb{F}_2[x]$ tensored with the homology; the $E^\infty$ page and the edge maps recover the Smith sequences relating $H_*(M)$, $H_*(F)$ and $H_*(M/T)$.
+with coefficients in the module $H_q(M;\mathbb{Z})$ carrying the action of the involution. For the trivial action it specialises to $H_n(\mathbb{RP}^\infty;\mathbb{Z})\otimes H_q(M;\mathbb{Z})$, and with $\mathbb{F}_2$ coefficients to the polynomial ring $\mathbb{F}_2[x]$ tensored with the homology; the $E^\infty$ page and the edge maps recover the Smith sequences relating $H_*(M)$, $H_*(F)$ and $H_*(M/T)$.
 
 **Proof sketch.** The spectral sequence is the Serre spectral sequence of the fibration $M\to M_{\mathbb{Z}/2}\to B\mathbb{Z}/2$, with the local coefficients given by the action of $\pi_1(B\mathbb{Z}/2) = \mathbb{Z}/2$ on $H_*(M)$. The identification of the edge maps with the Smith sequences is by comparing the Borel construction with the maps $F\times_{\mathbb{Z}/2}E\mathbb{Z}/2 = F\times B\mathbb{Z}/2$ and $(M/T)_{\mathbb{Z}/2}$, together with the relation $M/T = M_{\mathbb{Z}/2}$ for a free action. The full statements of the resulting exact sequences are *Periodic Maps and the Smith Theory*.
 
@@ -109,7 +109,7 @@ the Wall surgery obstruction group of the group ring of $\pi\times\mathbb{Z}/2$ 
 
 ## Summary
 
-A locally linear involution of an $n$-manifold has a locally flat fixed set $F$ of some dimension $r\leq n$ constant on each component, with an equivariant neighbourhood $F\times D^k$ on which the involution acts by reflection on the normal disc; the involution is free when $F$ is empty and the quotient is then a closed manifold, and otherwise the quotient is an orbifold with mirror locus the image of $F$, a manifold with boundary exactly in the codimension-one case. The equivariant invariants are assembled by the Borel construction $M\times_{\mathbb{Z}/2}E\mathbb{Z}/2$, whose Serre spectral sequence has $E^2_{p,q} = H_p(\mathbb{Z}/2;H_q(M))$ and whose edge maps recover the Smith sequences relating the manifold, its quotient and its fixed set. Equivariant surgery is the surgery theory of the pair, with the obstruction in the Wall group of the group ring of $\pi\times\mathbb{Z}/2$; the group ring splits into a trivial and a sign part, so the obstruction splits into a free part, which is the obstruction of the quotient, and a fixed part, whose components are the multisignature in dimension $4k$ and the Arf-type invariants in dimension $4k+2$. The classification of involutions with given fixed data is the equivariant Browder–Livesay–Sullivan surgery, and it is strictly richer than the free case, where it reduces to the surgery of the quotient.
+A locally linear involution of an $n$-manifold has a locally flat fixed set $F$ of some dimension $r\leq n$ constant on each component, with an equivariant neighbourhood $F\times D^k$ on which the involution acts by reflection on the normal disc; the involution is free when $F$ is empty and the quotient is then a closed manifold, and otherwise the quotient is an orbifold with mirror locus the image of $F$, a manifold with boundary exactly in the codimension-one case. The equivariant invariants are assembled by the Borel construction $M\times_{\mathbb{Z}/2}E\mathbb{Z}/2$, whose Serre spectral sequence has $E^2_{n,m} = H_n(\mathbb{Z}/2;H_q(M))$ and whose edge maps recover the Smith sequences relating the manifold, its quotient and its fixed set. Equivariant surgery is the surgery theory of the pair, with the obstruction in the Wall group of the group ring of $\pi\times\mathbb{Z}/2$; the group ring splits into a trivial and a sign part, so the obstruction splits into a free part, which is the obstruction of the quotient, and a fixed part, whose components are the multisignature in dimension $4k$ and the Arf-type invariants in dimension $4k+2$. The classification of involutions with given fixed data is the equivariant Browder–Livesay–Sullivan surgery, and it is strictly richer than the free case, where it reduces to the surgery of the quotient.
 
 ## Summary of Notation
 
@@ -121,7 +121,7 @@ A locally linear involution of an $n$-manifold has a locally flat fixed set $F$ 
 | $F\times D^k$, $(x,v)\mapsto(x,-v)$ | the equivariant tubular neighbourhood, the normal form |
 | $M/T$, $\pi : M\to M/T$ | the quotient and the orbit map; $\pi(F)$ the mirror locus |
 | $M_{\mathbb{Z}/2} = M\times_{\mathbb{Z}/2}E\mathbb{Z}/2$ | the Borel construction; its homology the equivariant homology |
-| $H_p(\mathbb{Z}/2;H_q(M))\Rightarrow H^{G}_{p+q}(M)$ | the Borel spectral sequence |
+| $H_n(\mathbb{Z}/2;H_q(M))\Rightarrow H^{G}_{n+m}(M)$ | the Borel spectral sequence |
 | $\mathbb{Z}[\mathbb{Z}/2] = \mathbb{Z}\oplus\mathbb{Z}_{\mathrm{sgn}}$ | the group ring split into the trivial and the sign summands |
 | $\sigma^{\mathbb{Z}/2}(f,b)\in L_n(\mathbb{Z}[\pi\times\mathbb{Z}/2])$ | the equivariant surgery obstruction |
 | multisignature, Arf invariants | the components of the obstruction in dimensions $4k$, $4k+2$ |

@@ -219,22 +219,22 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Example.** For a finite abelian group $G$, the dual $G^\vee$ is the character group $\operatorname{Hom}(G, S^1) = \operatorname{Hom}(G, \mathbb{C}^\times)$; it has the same order as $G$ and $G \cong G^\vee$ non-canonically, the isomorphism being canonical only after a choice of roots of unity. For $G = \mathbb{Z}/n\mathbb{Z}$ the dual is $\mu_n$, the group of $n$-th roots of unity, also cyclic of order $n$.
 
-**Example (characters and inversion on $\mathbb{Z}/n\mathbb{Z}$).** A character is determined by its value on the generator $1$, and that value $\zeta$ must satisfy $\zeta^n = 1$ because $n \cdot 1 = 0$; hence every character of $\mathbb{Z}/n\mathbb{Z}$ is of the form $\chi_k(m) = e^{2\pi i k m/n}$ for a unique $k \in \mathbb{Z}/n\mathbb{Z}$, and $k \mapsto \chi_k$ is an isomorphism of $\mathbb{Z}/n\mathbb{Z}$ onto $\mu_n$. The orthogonality relation
+**Example (characters and inversion on $\mathbb{Z}/n\mathbb{Z}$).** A character is determined by its value on the generator $1$, and that value $\zeta$ must satisfy $\zeta^n = 1$ because $n \cdot 1 = 0$; hence every character of $\mathbb{Z}/n\mathbb{Z}$ is of the form $\chi_k(m) = \exp(2\pi i k m/n)$ for a unique $k \in \mathbb{Z}/n\mathbb{Z}$, and $k \mapsto \chi_k$ is an isomorphism of $\mathbb{Z}/n\mathbb{Z}$ onto $\mu_n$. The orthogonality relation
 
 $$
 \frac{1}{n}\sum_{m=0}^{n-1} \chi_k(m)\overline{\chi_l(m)} = \delta_{kl}
 $$
 
-holds: the sum is $\frac{1}{n}\sum_m e^{2\pi i (k-l)m/n}$, which is $1$ for $k = l$ and the average of the $n$-th roots of unity for $k \neq l$, hence $0$. The normalised counting measure $f \mapsto \frac{1}{n}\sum_m f(m)$ is the Haar measure of the finite group, and the corresponding transform and inversion,
+holds: the sum is $\frac{1}{n}\sum_m \exp(2\pi i (k-l)m/n)$, which is $1$ for $k = l$ and the average of the $n$-th roots of unity for $k \neq l$, hence $0$. The normalised counting measure $f \mapsto \frac{1}{n}\sum_m f(m)$ is the Haar measure of the finite group, and the corresponding transform and inversion,
 
 $$
-\hat f(k) = \frac{1}{n}\sum_{m=0}^{n-1} f(m)\overline{\chi_k(m)}, \qquad
-f(m) = \sum_{k=0}^{n-1} \hat f(k)\chi_k(m),
+(\mathcal F f)(k) = \frac{1}{n}\sum_{m=0}^{n-1} f(m)\overline{\chi_k(m)}, \qquad
+f(m) = \sum_{k=0}^{n-1} (\mathcal F f)(k)\chi_k(m),
 $$
 
 hold for every $f : \mathbb{Z}/n\mathbb{Z} \to \mathbb{C}$; this is the discrete Fourier transform of the cyclic group, and the inversion formula is the expansion of $f$ in the orthogonal basis of characters. The same two displays, with the sum over $G$ replaced by Haar integration and the factor $1/n$ by the normalised Haar measure, are the orthogonality and inversion statements for a general compact abelian group.
 
-**Example.** $\mathbb{R}^\vee \cong \mathbb{R}$ via $\xi \mapsto (x \mapsto e^{2\pi i \xi x})$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; and $(\mathbb{Z}_p)^\vee \cong \mu_{p^\infty}$, the Prüfer group, with the discrete topology.
+**Example.** $\mathbb{R}^\vee \cong \mathbb{R}$ via $\xi \mapsto (x \mapsto \exp(2\pi i \xi x))$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; and $(\mathbb{Z}_p)^\vee \cong \mu_{p^\infty}$, the Prüfer group, with the discrete topology.
 
 ### Pontryagin Duality
 
@@ -252,7 +252,7 @@ is an isomorphism of topological groups. The assignment $G \mapsto G^\vee$ is a 
 
 **Proof sketch.** The identity component is a connected locally compact abelian group, hence of the form $\mathbb{R}^n \times K$ with $K$ compact by the solution of Hilbert's fifth problem in the abelian case; passing to the quotient by the identity component reduces to a totally disconnected locally compact abelian group, which contains an open compact subgroup. The compactly generated refinement uses that a compactly generated locally compact group is up to compact subgroups $\mathbb{R}^n \times \mathbb{Z}^m$ together with a finite group.
 
-**Example.** $\mathbb{Z}^\vee = S^1$ and $(S^1)^\vee = \mathbb{Z}$ illustrate the interchange of discrete and compact. The Fourier transform on a group $G$ — an object of Part III's *Harmonic Analysis on Groups*, defined there with the invariant integral — is the map $f \mapsto \hat f(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$, defined on $G^\vee$; on $\mathbb{R}$ it is the classical Fourier transform, on $S^1$ the Fourier series, on a finite abelian group the discrete Fourier transform, and the inversion formula holds in each case with the appropriate dual Haar measure. The Pontryagin theorem is what makes the same theorem true in all of them.
+**Example.** $\mathbb{Z}^\vee = S^1$ and $(S^1)^\vee = \mathbb{Z}$ illustrate the interchange of discrete and compact. The Fourier transform on a group $G$ — an object of Part III's *Harmonic Analysis on Groups*, defined there with the invariant integral — is the map $f \mapsto (\mathcal F f)(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$, defined on $G^\vee$; on $\mathbb{R}$ it is the classical Fourier transform, on $S^1$ the Fourier series, on a finite abelian group the discrete Fourier transform, and the inversion formula holds in each case with the appropriate dual Haar measure. The Pontryagin theorem is what makes the same theorem true in all of them.
 
 ## Summary
 
@@ -282,7 +282,7 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $\varprojlim$ | Inverse limit of finite groups |
 | residually finite | Every nontrivial element survives in a finite quotient |
 | $G^\vee$, $\chi$, $\chi_k$ | Pontryagin dual and a character; characters of $\mathbb{Z}/n\mathbb{Z}$ |
-| $\hat f$ | Fourier transform of $f$ on a locally compact abelian group |
+| $\mathcal F f$ | Fourier transform of $f$ on a locally compact abelian group |
 | $\mu_n$, $\mu_{p^\infty}$ | Group of $n$-th roots of unity, Prüfer group |
 
 

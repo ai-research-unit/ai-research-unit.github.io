@@ -26,11 +26,11 @@ Here $q$ is a unit biquaternion of the Lorentz group, $S_1(q)$ is left multiplic
 
 ### The Composition Law
 
-The building block is the matrix representation of the algebra on this four-dimensional carrier. Writing $e_\mu = i\hat e_\mu$ for the three spatial units in the trinomial basis, the units satisfy
+The building block is the matrix representation of the algebra on this four-dimensional carrier. Writing $e_\mu = i\vec u_{\mu}$ for the three spatial units in the trinomial basis, the units satisfy
 
 $$
-\hat e_1\hat e_2\hat e_3 = -I, \qquad \hat e_k^2 = -I, \qquad
-\hat e_1\hat e_2 = \hat e_3, \quad \hat e_2\hat e_3 = \hat e_1, \quad \hat e_3\hat e_1 = \hat e_2,
+\vec u_1\vec u_2\vec u_3 = -I, \qquad \vec u_k^2 = -I, \qquad
+\vec u_1\vec u_2 = \vec u_3, \quad \vec u_2\vec u_3 = \vec u_1, \quad \vec u_3\vec u_1 = \vec u_2,
 $$
 
 the quaternion relations of $\mathbb{B}$. An order-$\ell$ **ding** is an $\ell$-linear map on a product of the three spaces with values in $\mathbb{C}$ built from these units and a parameter $z \neq 0$. For each order the source exhibits the map explicitly; the invariant content of the construction is the low-order maps, which are the ones that can be contracted with the physical fields.
@@ -146,7 +146,7 @@ These questions are open.
 
 ## Summary
 
-A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first-type semi-spinor space $S_1$ and the second-type semi-spinor space $S_2$, built from the biquaternion units $e_\mu = i\hat e_\mu$ and a nonzero parameter. The order-three ding is the invariant trilinear form
+A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first-type semi-spinor space $S_1$ and the second-type semi-spinor space $S_2$, built from the biquaternion units $e_\mu = i\vec u_{\mu}$ and a nonzero parameter. The order-three ding is the invariant trilinear form
 
 $$
 \varepsilon(A,B,N) = 2\,A_\mu\,\varepsilon^{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda
@@ -167,7 +167,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $G^\mu = B^\mu + iN^\mu$ | s-Vector |
 | $q$ | Unit biquaternion of the Lorentz group |
 | $S_1(q), S_2(q), \Lambda(q)$ | Left, right and mixed actions of $q$ |
-| $e_\nu = i\hat e_\nu$ | Units of the trinomial basis, $\hat e_k^2 = -I$, $\hat e_1\hat e_2 = \hat e_3$ |
+| $e_\nu = i\vec u_{\nu}$ | Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_1\vec u_2 = \vec u_3$ |
 | $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
 | $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123} = 1$ |
 | $\varepsilon(A,B,N) = 2A_\mu\varepsilon^{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |

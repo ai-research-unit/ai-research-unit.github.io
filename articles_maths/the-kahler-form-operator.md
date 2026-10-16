@@ -25,7 +25,7 @@ $$
 $$
 for the $L^2$ inner product of the Kähler metric, lowering the total degree by two.
 
-**Proposition (the two operators are real and of bidegree $\pm(1,1)$).** $L$ is complex-linear in the complexified forms and maps $\Lambda^{p,q}$ to $\Lambda^{p+1,q+1}$; $\Lambda$ maps $\Lambda^{p,q}$ to $\Lambda^{p-1,q-1}$ and is the transpose of $L$; both commute with complex conjugation, $\overline{L\alpha} = L\bar\alpha$ and $\overline{\Lambda\alpha} = \Lambda\bar\alpha$, because $\Omega$ is real. In local coordinates, with $\Omega = i\sum_{j,k}g_{j\bar k}\,dz^j\wedge d\bar z^k$,
+**Proposition (the two operators are real and of bidegree $\pm(1,1)$).** $L$ is complex-linear in the complexified forms and maps $\Lambda^{n,m}$ to $\Lambda^{n+1,m+1}$; $\Lambda$ maps $\Lambda^{n,m}$ to $\Lambda^{n-1,m-1}$ and is the transpose of $L$; both commute with complex conjugation, $\overline{L\alpha} = L\bar\alpha$ and $\overline{\Lambda\alpha} = \Lambda\bar\alpha$, because $\Omega$ is real. In local coordinates, with $\Omega = i\sum_{j,k}g_{j\bar k}\,dz^j\wedge d\bar z^k$,
 $$
 \Lambda\alpha = \sum_{j,k} g^{j\bar k}\,\iota_{\partial_{\bar z^k}}\iota_{\partial_{z^j}}\,\alpha ,
 $$
@@ -69,7 +69,7 @@ that is when its power of $L$ beyond the middle degree vanishes; the space of pr
 $$
 \alpha = \sum_{r \ge 0} \frac{1}{r!}\, L^{r}\alpha_{r}, \qquad \alpha_{r} \in P^{k-2r},
 $$
-and the summands are the images of the primitive projections; the decomposition is compatible with the bidegree, so that the primitive part of type $(p,q)$ generates the $(p+r,q+r)$ term by $L^{r}$.
+and the summands are the images of the primitive projections; the decomposition is compatible with the bidegree, so that the primitive part of type $(n,m)$ generates the $(n+r,m+r)$ term by $L^{r}$.
 
 **Proof.** On a finite-dimensional $\mathfrak{sl}_2$-module the primitive vectors — those killed by the lowering operator $\Lambda$ in the standard labelling — generate the module by the raising operator, and the multiplicity-free degree structure forces the stated unique decomposition; the translation to $L,\Lambda$ uses $[L,\Lambda]=(k-n)\mathrm{id}$ from the previous section. This is the representation-theoretic decomposition of *Representations of Lie Algebras*.
 
@@ -88,23 +88,23 @@ $$
 
 **Definition.** For forms $\alpha,\beta$ of the same degree $k \le n$, the **Hodge–Riemann bilinear form** is
 $$
-Q(\alpha, \beta) = \int_M \alpha\wedge\beta\wedge\frac{\Omega^{\,n-k}}{(n-k)!} ,
+\mathfrak{Q}(\alpha, \beta) = \int_M \alpha\wedge\beta\wedge\frac{\Omega^{\,n-k}}{(n-k)!} ,
 $$
 complex-bilinear in $\alpha,\beta$; it is the intersection form of the manifold, written with the chosen Kähler form.
 
-**Theorem (the Hodge–Riemann relations).** For a nonzero primitive form $\alpha$ of type $(p,q)$, with $k = p+q$, the complex number
+**Theorem (the Hodge–Riemann relations).** For a nonzero primitive form $\alpha$ of type $(n,m)$, with $k = n+m$, the complex number
 $$
-i^{\,p-q}\,Q(\alpha, \bar\alpha)
+i^{\,n-m}\,\mathfrak{Q}(\alpha, \bar\alpha)
 $$
-is a **positive** real number; equivalently, the Hermitian form $i^{p-q}Q(\alpha,\bar\beta)$ is positive definite on each primitive space $P^{p,q}$. In particular, on the primitive $(p,p)$-forms the form $Q$ is positive definite, and the intersection form of $M$ is positive definite on the primitive part of middle cohomology and of that fixed sign on each primitive piece.
+is a **positive** real number; equivalently, the Hermitian form $i^{n-m}Q(\alpha,\bar\beta)$ is positive definite on each primitive space $P^{n,m}$. In particular, on the primitive $(n,n)$-forms the form $\mathfrak{Q}$ is positive definite, and the intersection form of $M$ is positive definite on the primitive part of middle cohomology and of that fixed sign on each primitive piece.
 
-**Proof.** The relation is proved by comparing $Q$ with the $L^2$ inner product through the Lefschetz decomposition: for a primitive form the two differ by a nonzero constant of modulus one that depends only on $p$, $q$ and the normalisation of the $L^2$ form, and the constant is computed from $[L,\Lambda]$ and the eigenform identities of the $\mathfrak{sl}_2$-action; the computation is the Hodge–Riemann calculation of *Kähler Manifolds and the Hermitian Form*, quoted here, and the sign $i^{p-q}$ displayed is the one it yields for the $L^2$ normalisation of this article. The Hodge decomposition that transports the definite form to cohomology is Part III.
+**Proof.** The relation is proved by comparing $Q$ with the $L^2$ inner product through the Lefschetz decomposition: for a primitive form the two differ by a nonzero constant of modulus one that depends only on $n$, $m$ and the normalisation of the $L^2$ form, and the constant is computed from $[L,\Lambda]$ and the eigenform identities of the $\mathfrak{sl}_2$-action; the computation is the Hodge–Riemann calculation of *Kähler Manifolds and the Hermitian Form*, quoted here, and the sign $i^{n-m}$ displayed is the one it yields for the $L^2$ normalisation of this article. The Hodge decomposition that transports the definite form to cohomology is Part III.
 
-**Remark (the operator content).** The Hodge–Riemann relations say that the $\mathfrak{sl}_2$-module of the forms is not merely a formal representation but carries a definite form: the raising operator $L$ is adjoint to $\Lambda$ for the $L^2$ form, the primitive pieces are the subspaces on which the metric pairing is definite, and the signs $i^{p-q}$ are the signatures of the pieces. The Hodge index theorem $Q(\alpha,\alpha)>0$ for a real $(1,1)$-class is the case $p=q=1$ and is the most used consequence.
+**Remark (the operator content).** The Hodge–Riemann relations say that the $\mathfrak{sl}_2$-module of the forms is not merely a formal representation but carries a definite form: the raising operator $L$ is adjoint to $\Lambda$ for the $L^2$ form, the primitive pieces are the subspaces on which the metric pairing is definite, and the signs $i^{n-m}$ are the signatures of the pieces. The Hodge index theorem $\mathfrak{Q}(\alpha,\alpha)>0$ for a real $(1,1)$-class is the case $n=m=1$ and is the most used consequence.
 
 ## Summary
 
-On a compact Kähler manifold the Kähler form acts by exterior multiplication as the Lefschetz operator $L(\alpha) = \Omega\wedge\alpha$, raising the degree by two and the bidegree by $(1,1)$, with formal adjoint the contraction $\Lambda = L^{*}$, lowering it, given in coordinates by contraction with the metric-dual $(1,1)$-vector. The two are real, and with $H = [L,\Lambda] = (k-n)\mathrm{id}$ on $k$-forms they satisfy $[L,\Lambda]=H$, $[H,L]=2L$, $[H,\Lambda]=-2\Lambda$, so the complexified exterior algebra is a finite-dimensional $\mathfrak{sl}_2$-module. The Kähler identities $[\Lambda,\partial] = -i\bar\partial^{*}$, $[\Lambda,\bar\partial] = i\partial^{*}$ and $[\Lambda,d] = d^{*}$ express the Cauchy–Riemann adjoints through $\Lambda$ and give $\Delta_{\partial} = \Delta_{\bar\partial} = \tfrac12\Delta_d$. Every form decomposes uniquely as $\alpha = \sum_r \tfrac1{r!}L^{r}\alpha_{r}$ through the primitive forms $\alpha_r$ with $L^{n-k+1}\alpha_r = 0$, the hard Lefschetz map $L^{n-k}:H^{k}\to H^{2n-k}$ is an isomorphism, and the Hodge–Riemann form $Q(\alpha,\beta) = \int_M\alpha\wedge\beta\wedge\Omega^{n-k}/(n-k)!$ satisfies $i^{p-q}Q(\alpha,\bar\alpha)>0$ on nonzero primitive forms of type $(p,q)$, so it is definite of that sign on each primitive piece. The Hodge theory and the cohomological transport are Part III; the Kähler structure is *Kähler Geometry* and *Kähler Manifolds and the Hermitian Form*.
+On a compact Kähler manifold the Kähler form acts by exterior multiplication as the Lefschetz operator $L(\alpha) = \Omega\wedge\alpha$, raising the degree by two and the bidegree by $(1,1)$, with formal adjoint the contraction $\Lambda = L^{*}$, lowering it, given in coordinates by contraction with the metric-dual $(1,1)$-vector. The two are real, and with $H = [L,\Lambda] = (k-n)\mathrm{id}$ on $k$-forms they satisfy $[L,\Lambda]=H$, $[H,L]=2L$, $[H,\Lambda]=-2\Lambda$, so the complexified exterior algebra is a finite-dimensional $\mathfrak{sl}_2$-module. The Kähler identities $[\Lambda,\partial] = -i\bar\partial^{*}$, $[\Lambda,\bar\partial] = i\partial^{*}$ and $[\Lambda,d] = d^{*}$ express the Cauchy–Riemann adjoints through $\Lambda$ and give $\Delta_{\partial} = \Delta_{\bar\partial} = \tfrac12\Delta_d$. Every form decomposes uniquely as $\alpha = \sum_r \tfrac1{r!}L^{r}\alpha_{r}$ through the primitive forms $\alpha_r$ with $L^{n-k+1}\alpha_r = 0$, the hard Lefschetz map $L^{n-k}:H^{k}\to H^{2n-k}$ is an isomorphism, and the Hodge–Riemann form $\mathfrak{Q}(\alpha,\beta) = \int_M\alpha\wedge\beta\wedge\Omega^{n-k}/(n-k)!$ satisfies $i^{n-m}Q(\alpha,\bar\alpha)>0$ on nonzero primitive forms of type $(n,m)$, so it is definite of that sign on each primitive piece. The Hodge theory and the cohomological transport are Part III; the Kähler structure is *Kähler Geometry* and *Kähler Manifolds and the Hermitian Form*.
 
 ## Summary of Notation
 
@@ -117,7 +117,7 @@ On a compact Kähler manifold the Kähler form acts by exterior multiplication a
 | $[\Lambda,\partial]=-i\bar\partial^{*}$, $[\Lambda,\bar\partial]=i\partial^{*}$ | the Kähler identities |
 | $P^{k}$ | primitive forms, $L^{n-k+1}\alpha = 0$ |
 | $L^{n-k}:H^{k}\to H^{2n-k}$ | hard Lefschetz |
-| $Q(\alpha,\beta)$ | the Hodge–Riemann form, $\int_M\alpha\wedge\beta\wedge\Omega^{n-k}/(n-k)!$ |
+| $\mathfrak{Q}(\alpha,\beta)$ | the Hodge–Riemann form, $\int_M\alpha\wedge\beta\wedge\Omega^{n-k}/(n-k)!$ |
 
 ## Further Reading
 

@@ -87,7 +87,7 @@ $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{D}) = \{\mathrm{id}, \tau\} \cong \mathbb{Z}/2, \qquad \tau(j) = -j,
 $$
 
-which is the swap $e_+ \leftrightarrow e_-$ of the two idempotents.
+which is the swap $\Pi_1 \leftrightarrow \Pi_2$ of the two idempotents.
 
 **The dual numbers.** An automorphism of $\mathbb{D}'$ fixes $1$ and sends $\varepsilon$ to $c + d\varepsilon$; from $0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = c^2 + 2cd\varepsilon$ one gets $c = 0$, and $d \neq 0$ by injectivity. Every $d \in \mathbb{R}^\times$ occurs, so
 
@@ -163,7 +163,7 @@ $$
 \operatorname{Der}_{\mathbb{R}}(\mathbb{D}') = \mathbb{R}\,\delta, \qquad \delta(\varepsilon) = \varepsilon,
 $$
 
-a one-dimensional space whose exponential is the automorphism $\varepsilon \mapsto e^{c}\varepsilon$.
+a one-dimensional space whose exponential is the automorphism $\varepsilon \mapsto \exp(c)\varepsilon$.
 
 ### The Lie Algebra Structure
 
@@ -290,10 +290,10 @@ The proposition is the algebraic form of the statement that the infinitesimal au
 **Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then
 
 $$
-\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = e^{a}\,x\,e^{-a}.
+\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a).
 $$
 
-This is the identity $\mathrm{Ad}_{e^a} = e^{\mathrm{ad}_a}$ of the adjoint representation. The identity is algebraic when $a$ is nilpotent, the series then terminating; in general it is read with the limit of Part II, where the series may be given a value.
+This is the identity $\mathrm{Ad}_{\exp(a)} = \exp(\mathrm{ad}_a)$ of the adjoint representation. The identity is algebraic when $a$ is nilpotent, the series then terminating; in general it is read with the limit of Part II, where the series may be given a value.
 
 **Failure over a general ring.** The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the sum $\sum \delta^k/k!$ is a formal series that need not terminate, the coefficients $1/k!$ need not make sense — over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$ — and giving the series a value requires a limit, hence the norms of Part II. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group is treated in *Topological Algebras and Banach Algebras*. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.
 

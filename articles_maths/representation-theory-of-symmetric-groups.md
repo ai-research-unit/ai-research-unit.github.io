@@ -18,7 +18,7 @@ Throughout, $K$ is a field of characteristic not dividing $n!$ unless a modular 
 
 **Theorem (Maschke).** Let $G$ be a finite group and $K$ a field whose characteristic does not divide $\lvert G\rvert$. Then every representation of $G$ over $K$ is completely reducible.
 
-**Proof.** Let $N \subseteq M$ be a subrepresentation and $\pi : M \to N$ any $K$-linear projection; the averaged map $\tilde\pi = \frac{1}{\lvert G\rvert}\sum_{g}\rho(g)\pi\rho(g)^{-1}$ is $G$-equivariant, has image $N$, and is a projection, so its kernel is a complementary subrepresentation. Iterating gives the decomposition.
+**Proof.** Let $N \subseteq M$ be a subrepresentation and $\pi : M \to N$ any $K$-linear projection; the averaged map $\pi^{\mathrm{avg}} = \frac{1}{\lvert G\rvert}\sum_{g}\rho(g)\pi\rho(g)^{-1}$ is $G$-equivariant, has image $N$, and is a projection, so its kernel is a complementary subrepresentation. Iterating gives the decomposition.
 
 **Lemma (Schur).** Let $M, N$ be irreducible representations over a field $K$. Then every nonzero homomorphism $M \to N$ is an isomorphism, and over an algebraically closed field every endomorphism of an irreducible $M$ is a scalar.
 

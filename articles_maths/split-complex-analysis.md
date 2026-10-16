@@ -1,5 +1,5 @@
 
-# __Split Complex Analysis__
+# __Split-Complex Analysis__
 
 ## Introduction
 

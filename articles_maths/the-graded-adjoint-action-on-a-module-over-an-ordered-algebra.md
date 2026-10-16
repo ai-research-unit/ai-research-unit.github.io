@@ -107,7 +107,7 @@ Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grad
 
 ### The Clifford Module
 
-Let $A = \mathrm{Cl}(V,q)$ with the parity grading and $M$ a Clifford module with the induced grading. The vectors act by odd operators, the sign rule is the statement that the Clifford relations involve only the even part of the contraction, and the signed action of a vector $e$ with $e^{2} = -1$ is an involution; its adjoint is the signed action of $\alpha(e^{*}) = -e^{*}$, the twist of the adjoint vector, and the whole computation reduces to the parity of $e$. The Clifford module is the instance in which the graded action and its adjoint are the entire content of the structure.
+Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and $M$ a Clifford module with the induced grading. The vectors act by odd operators, the sign rule is the statement that the Clifford relations involve only the even part of the contraction, and the signed action of a vector $e$ with $e^{2} = -1$ is an involution; its adjoint is the signed action of $\alpha(e^{*}) = -e^{*}$, the twist of the adjoint vector, and the whole computation reduces to the parity of $e$. The Clifford module is the instance in which the graded action and its adjoint are the entire content of the structure.
 
 ## Summary
 

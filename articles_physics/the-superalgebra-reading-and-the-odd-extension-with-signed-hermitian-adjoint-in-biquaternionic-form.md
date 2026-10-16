@@ -6,7 +6,7 @@ The biquaternion algebra is the even part of the graded Clifford algebra, $\math
 
 This article is the **Hermitian interpretation** of the same structure. A superalgebra used by physics does not carry only a bracket; it carries an **adjoint**, the operation that turns a state into a dual state and an operator into its Hermitian conjugate, and it is the adjoint that makes the Hamiltonian Hermitian and the probability real. In the inverse interpretation the odd sector is reached through the inverse of a parameter, which belongs to the group of units; here it is reached through the Hermitian adjoint $X^{*}$, the adjoint of the spinor form of the framework. The object of the article is the interaction of the two: a $\mathbb{Z}/2$-graded algebra with a parity-preserving anti-involution, and the sign it puts on the graded bracket.
 
-Three statements carry the interpretation. The first is that the dagger is an **even anti-involution** of the superalgebra, $(ab)^{*}=b^{*}a^{*}$ with $\lvert a^{*}\rvert=\lvert a\rvert$; it is the structure the corpus's own physics uses, since the biquaternionic supercharge is paired with its adjoint, $\{Q,Q^{*}\}=H$, in *Supersymmetric Quantum Physics in the Biquaternion Framework*. The second is that the adjoint **reverses the graded bracket** up to the parity sign,
+Three statements carry the interpretation. The first is that the dagger is an **even anti-involution** of the superalgebra, $(ab)^{*}=b^{*}a^{*}$ with $\lvert a^{*}\rvert=\lvert a\rvert$; it is the structure the corpus's own physics uses, since the biquaternionic supercharge is paired with its adjoint, $\{\mathcal{Q},\mathcal{Q}^{*}\}=H$, in *Supersymmetric Quantum Physics in the Biquaternion Framework*. The second is that the adjoint **reverses the graded bracket** up to the parity sign,
 
 $$
 \bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}},
@@ -14,7 +14,7 @@ $$
 
 so it reverses a commutator and preserves an anticommutator, the reason being that it reverses the order of the factors and the two graded signs then contribute in opposite directions. The third is that this is a statement about the *convention*: the Koszul-signed rule of a super-* would make the adjoint an anti-automorphism of the bracket without the extra sign, and the corpus's dagger does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses.
 
-The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are the ones of the inverse article and are restated only where the Hermitian structure changes them; the parity interpretation of the ambient algebra and the sectors are *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*; the supercharge pair and the chirality grading are *Supersymmetric Quantum Physics in the Biquaternion Framework*; the Grassmann envelope is *Grassmann Coherent States in Biquaternionic Form* and *BRST Symmetry in Biquaternionic Form*; the commutator bracket and the trace-free part are *The 12 Products of the Biquaternion Complex Space*; the one-mode parity is *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. Nothing owned by those articles is re-derived.
+The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are the ones of the inverse article and are restated only where the Hermitian structure changes them; the parity interpretation of the ambient algebra and the sectors are *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*; the supercharge pair and the chirality grading are *Supersymmetric Quantum Physics in the Biquaternion Framework*; the Grassmann envelope is *Grassmann Coherent States in Biquaternionic Form* and *BRST Symmetry in Biquaternionic Form*; the commutator bracket and the trace-free part are *The 12 Products of the Biquaternioid Complex Space*; the one-mode parity is *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. Nothing owned by those articles is re-derived.
 
 **Conventions.** $\mathrm{Cl}_{1,3}$ is the ambient Clifford algebra of Minkowski space in the mostly-minus convention, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ its even part, $\gamma^\mu$ the odd generators; the grading is by parity, $\lvert a\rvert\in\{0,1\}$; the graded commutator is $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$, the commutator for even or mixed pairs and the anticommutator for two odd elements; the dagger is the Hermitian adjoint of the algebra, extended to the envelope by $X^{*}=\sigma(\alpha(X^{r}))$ as in the companion article, so that $(ab)^{*}=b^{*}a^{*}$ and $\lvert a^{*}\rvert=\lvert a\rvert$.
 
@@ -44,7 +44,7 @@ $$
 
 **Proof.** These are the inclusions $\mathrm{Cl}^i\mathrm{Cl}^j\subseteq\mathrm{Cl}^{i+j}$ of the grading, read with the parity of the exponent, together with the fact that the graded commutator of two elements of the same parity is their commutator and of two of opposite parity is also their commutator, while that of two odd elements is their anticommutator.
 
-**Remark (the even part is the Lie algebra of the framework).** The restriction of the graded bracket to $\mathbb{B}$ is the ordinary commutator, that is the Lie algebra of *The 12 Products of the Biquaternion Complex Space*, whose trace-free part is the Lorentz algebra. The odd slot is a module over the even part and not a second Lie algebra: the bracket of two odd elements is even, exactly as the bracket of two reflections is a rotation.
+**Remark (the even part is the Lie algebra of the framework).** The restriction of the graded bracket to $\mathbb{B}$ is the ordinary commutator, that is the Lie algebra of *The 12 Products of the Biquaternioid Complex Space*, whose trace-free part is the Lorentz algebra. The odd slot is a module over the even part and not a second Lie algebra: the bracket of two odd elements is even, exactly as the bracket of two reflections is a rotation.
 
 ## The Adjoint of the Graded Bracket
 
@@ -83,45 +83,45 @@ $$
 
 ## Supercharges, the Adjoint and the Odd Generators
 
-**Definition.** A **supercharge** is an odd element $Q$ of a Lie superalgebra whose graded square is even,
+**Definition.** A **supercharge** is an odd element $\mathcal{Q}$ of a Lie superalgebra whose graded square is even,
 
 $$
-\{Q,Q\}=2H,\qquad [Q,H]_{\mathrm{gr}}=0 ,
+\{\mathcal{Q},\mathcal{Q}\}=2H,\qquad [\mathcal{Q},H]_{\mathrm{gr}}=0 ,
 $$
 
 so that the anticommutator of the supercharge with itself is a bosonic operator commuting with it. In the Hermitian interpretation the pairing used by the physics is the one with the **adjoint** rather than with the element itself,
 
 $$
-\{Q,Q^{*}\}=2H ,
+\{\mathcal{Q},\mathcal{Q}^{*}\}=2H ,
 $$
 
-which is the convention of *Supersymmetric Quantum Physics in the Biquaternion Framework*, $\{Q,Q^{*}\}=H$, $Q^{2}=(Q^{*})^{2}=0$ in the nilpotent realisation of the flat theory. The two displays coincide in the real forms in which $Q^{*}$ is identified with $Q$, and the numerical factor between the two conventions is a normalisation.
+which is the convention of *Supersymmetric Quantum Physics in the Biquaternion Framework*, $\{\mathcal{Q},\mathcal{Q}^{*}\}=H$, $\mathcal{Q}^{2}=(\mathcal{Q}^{*})^{2}=0$ in the nilpotent realisation of the flat theory. The two displays coincide in the real forms in which $\mathcal{Q}^{*}$ is identified with $\mathcal{Q}$, and the numerical factor between the two conventions is a normalisation.
 
-**Proposition (the adjoint pairing is Hermitian and even).** If $Q$ is odd then $Q^{*}$ is odd and
-
-$$
-\{Q,Q^{*}\}=QQ^{*}+Q^{*}Q
-$$
-
-is even and Hermitian, $\{Q,Q^{*}\}^{*}=\{Q,Q^{*}\}$; a supercharge is never an element of $\mathbb{B}$.
-
-*Proof.* The dagger preserves the parity, so $Q^{*}$ is odd and the product of two odd elements is even; the anticommutator of two elements and the adjoint of a product give $\{Q,Q^{*}\}^{*}=(QQ^{*}+Q^{*}Q)^{*}=QQ^{*}+Q^{*}Q$ by the anti-automorphism property. Since $\mathbb{B}=\mathrm{Cl}^0$ contains no odd element, no supercharge is an element of the algebra.
-
-**Remark (why the adjoint and not the inverse).** The Hamiltonian of the framework must be Hermitian, and its spectrum real, and the pairing $\{Q,Q^{*}\}$ is Hermitian automatically because the adjoint is an adjoint; a pairing built with the inverse, $\{Q,Q^{-1}\}$, has no reason to be. This is the physical content of the Hermitian reading of the odd sector: the operator that pairs the two chiralities is the adjoint of the supercharge and not its inverse, and the corpus's own supersymmetric realisation of the mass pair is written with the dagger for that reason. The difference between the two pairings is a norm, $X^{*}=\sigma(N(X))\sigma(X)^{-1}$, so on the unit slice of the real quaternions they coincide and elsewhere they differ by a scalar; the commutator structure below is insensitive to it, which is the honest scope of the distinction.
-
-**Remark (the supercharge in the module).** The odd slot is the rank-one module $\mathrm{Cl}^1=\mathbb{B}\gamma$, so an odd element is $Q=s\gamma$ with $s$ even. By the anti-automorphism property its adjoint is
+**Proposition (the adjoint pairing is Hermitian and even).** If $\mathcal{Q}$ is odd then $\mathcal{Q}^{*}$ is odd and
 
 $$
-Q^{*}=(s\gamma)^{*}=\gamma^{*}s^{*}=-\gamma\,s^{*},
+\{\mathcal{Q},\mathcal{Q}^{*}\}=\mathcal{Q}\mathcal{Q}^{*}+\mathcal{Q}^{*}\mathcal{Q}
+$$
+
+is even and Hermitian, $\{\mathcal{Q},\mathcal{Q}^{*}\}^{*}=\{\mathcal{Q},\mathcal{Q}^{*}\}$; a supercharge is never an element of $\mathbb{B}$.
+
+*Proof.* The dagger preserves the parity, so $\mathcal{Q}^{*}$ is odd and the product of two odd elements is even; the anticommutator of two elements and the adjoint of a product give $\{\mathcal{Q},\mathcal{Q}^{*}\}^{*}=(\mathcal{Q}\mathcal{Q}^{*}+\mathcal{Q}^{*}\mathcal{Q})^{*}=\mathcal{Q}\mathcal{Q}^{*}+\mathcal{Q}^{*}\mathcal{Q}$ by the anti-automorphism property. Since $\mathbb{B}=\mathrm{Cl}^0$ contains no odd element, no supercharge is an element of the algebra.
+
+**Remark (why the adjoint and not the inverse).** The Hamiltonian of the framework must be Hermitian, and its spectrum real, and the pairing $\{\mathcal{Q},\mathcal{Q}^{*}\}$ is Hermitian automatically because the adjoint is an adjoint; a pairing built with the inverse, $\{\mathcal{Q},\mathcal{Q}^{-1}\}$, has no reason to be. This is the physical content of the Hermitian reading of the odd sector: the operator that pairs the two chiralities is the adjoint of the supercharge and not its inverse, and the corpus's own supersymmetric realisation of the mass pair is written with the dagger for that reason. The difference between the two pairings is a norm, $X^{*}=\sigma(\langle X\rangle_{\natural})\sigma(X)^{-1}$, so on the unit slice of the real quaternions they coincide and elsewhere they differ by a scalar; the commutator structure below is insensitive to it, which is the honest scope of the distinction.
+
+**Remark (the supercharge in the module).** The odd slot is the rank-one module $\mathrm{Cl}^1=\mathbb{B}\gamma$, so an odd element is $\mathcal{Q}=s\gamma$ with $s$ even. By the anti-automorphism property its adjoint is
+
+$$
+\mathcal{Q}^{*}=(s\gamma)^{*}=\gamma^{*}s^{*}=-\gamma\,s^{*},
 $$
 
 an odd element again, and
 
 $$
-Q\,Q^{*}=-q(\gamma)\,s\,s^{*},
+\mathcal{Q}\,\mathcal{Q}^{*}=-q(\gamma)\,s\,s^{*},
 $$
 
-an even element whose Hermitian part is the pairing of the supercharge with its adjoint. When the even element $s$ is built from the generators orthogonal to $\gamma$ — so that $\gamma$ commutes with it — the anticommutator is the symmetric expression $\{Q,Q^{*}\}=-q(\gamma)(ss^{*}+s^{*}s)$, which is the form the Hamiltonian takes in the one-mode case. The general anticommutator is even and Hermitian by the previous proposition; the symmetric formula is not claimed beyond the case in which the commutation holds, because a generator need not commute with an even element.
+an even element whose Hermitian part is the pairing of the supercharge with its adjoint. When the even element $s$ is built from the generators orthogonal to $\gamma$ — so that $\gamma$ commutes with it — the anticommutator is the symmetric expression $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(\gamma)(ss^{*}+s^{*}s)$, which is the form the Hamiltonian takes in the one-mode case. The general anticommutator is even and Hermitian by the previous proposition; the symmetric formula is not claimed beyond the case in which the commutation holds, because a generator need not commute with an even element.
 
 ## What Must Be Adjoined
 
@@ -162,7 +162,7 @@ $$
 
 so it reverses a commutator and preserves an anticommutator: the adjoint reverses the order of the factors, and only the odd-odd, symmetric case is even under the reversal. The Koszul-signed super-* convention would give the cleaner rule without the parity sign, and the corpus's dagger is not of that convention; the two are distinguished on two generators.
 
-A **supercharge** is an odd element; it is paired with its **adjoint**, $\{Q,Q^{*}\}=2H$, which is Hermitian and even because the adjoint is an adjoint, this being the pairing of the corpus's supersymmetric quantum physics and the reason the Hamiltonian is real. In the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ a supercharge is $Q=s\gamma$ with adjoint $Q^{*}=-\gamma s^{*}$ and $QQ^{*}=-q(\gamma)ss^{*}$, an even element; the symmetric form of the self-pairing is claimed only when the generator commutes with $s$. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form.
+A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$, which is Hermitian and even because the adjoint is an adjoint, this being the pairing of the corpus's supersymmetric quantum physics and the reason the Hamiltonian is real. In the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ a supercharge is $\mathcal{Q}=s\gamma$ with adjoint $\mathcal{Q}^{*}=-\gamma s^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(\gamma)ss^{*}$, an even element; the symmetric form of the self-pairing is claimed only when the generator commutes with $s$. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form.
 
 ## Summary of Notation
 
@@ -177,8 +177,8 @@ A **supercharge** is an odd element; it is paired with its **adjoint**, $\{Q,Q^{
 | $X^{*}=\sigma(\alpha(X^{r}))$ | The Hermitian adjoint; even anti-involution of the superalgebra |
 | $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}[a^{*},b^{*}]_{\mathrm{gr}}$ | The adjoint reverses a commutator, preserves an anticommutator |
 | $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$ | The Koszul-signed super-*; **not** the dagger of the corpus |
-| $\{Q,Q^{*}\}=2H$ | Supercharge paired with its adjoint; Hermitian and even |
-| $Q=s\gamma$, $Q^{*}=-\gamma s^{*}$, $QQ^{*}=-q(\gamma)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ |
+| $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$ | Supercharge paired with its adjoint; Hermitian and even |
+| $\mathcal{Q}=s\gamma$, $\mathcal{Q}^{*}=-\gamma s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(\gamma)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ |
 | $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$, $\langle s,t\gamma\rangle=0$ | The Hermitian form on the odd slot ($\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$) |
 | $(-1)^F=ie_3\in\mathbb{M}_+$ | The one fermionic mode the algebra hosts natively |
 

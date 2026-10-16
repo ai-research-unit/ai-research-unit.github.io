@@ -20,13 +20,13 @@ $$
 T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\},
 $$
 
-with $T^{0,1}M = \overline{T^{1,0}M}$; the projection onto $T^{1,0}M$ is $\tfrac12(\mathrm{id}-iJ)$. Dually, the complexified cotangent bundle splits as $T^*_{\mathbb{C}}M = \Lambda^{1,0}M\oplus\Lambda^{0,1}M$, and the complexified $k$-forms decompose into the **forms of type $(p,q)$**,
+with $T^{0,1}M = \overline{T^{1,0}M}$; the projection onto $T^{1,0}M$ is $\tfrac12(\mathrm{id}-iJ)$. Dually, the complexified cotangent bundle splits as $T^*_{\mathbb{C}}M = \Lambda^{1,0}M\oplus\Lambda^{0,1}M$, and the complexified $k$-forms decompose into the **forms of type $(n,m)$**,
 
 $$
-\Lambda^kT^*_{\mathbb{C}}M = \bigoplus_{p+q=k}\Lambda^{p,q}M, \qquad \Omega^k(M;\mathbb{C}) = \bigoplus_{p+q=k}\Omega^{p,q}(M),
+\Lambda^kT^*_{\mathbb{C}}M = \bigoplus_{n+m=k}\Lambda^{n,m}M, \qquad \Omega^k(M;\mathbb{C}) = \bigoplus_{n+m=k}\Omega^{n,m}(M),
 $$
 
-where a $(p,q)$-form is a section of $\Lambda^{p,q}M = \Lambda^p\Lambda^{1,0}M\otimes\Lambda^q\Lambda^{0,1}M$.
+where a $(n,m)$-form is a section of $\Lambda^{n,m}M = \Lambda^n\Lambda^{1,0}M\otimes\Lambda^m\Lambda^{0,1}M$.
 
 *Proof.* The first two statements are the eigenbundle decomposition of the complexification of a real involution with eigenvalues $\pm i$, proved in *Hermitian Geometry and Almost Complex Structures*; the type decomposition of the exterior powers is the algebraic decomposition of the exterior algebra of a direct sum, applied fibrewise and made smooth.
 
@@ -49,10 +49,10 @@ $$
 **Definition.** The **partial derivatives** of the exterior derivative are the type components
 
 $$
-\partial = \pi^{p+1,q}\circ d \ : \ \Omega^{p,q}(M) \to \Omega^{p+1,q}(M), \qquad \bar\partial = \pi^{p,q+1}\circ d \ : \ \Omega^{p,q}(M) \to \Omega^{p,q+1}(M),
+\partial = \pi^{n+1,m}\circ d \ : \ \Omega^{n,m}(M) \to \Omega^{n+1,m}(M), \qquad \bar\partial = \pi^{n,m+1}\circ d \ : \ \Omega^{n,m}(M) \to \Omega^{n,m+1}(M),
 $$
 
-where $\pi^{p+1,q}$ and $\pi^{p,q+1}$ are the projections onto the two types; they are the **$(1,0)$-part** and the **$(0,1)$-part** of $d$, and the remaining components of $d$ on a $(p,q)$-form are the projections onto the other bidegrees.
+where $\pi^{n+1,m}$ and $\pi^{n,m+1}$ are the projections onto the two types; they are the **$(1,0)$-part** and the **$(0,1)$-part** of $d$, and the remaining components of $d$ on a $(n,m)$-form are the projections onto the other bidegrees.
 
 **Proposition.** The exterior derivative decomposes as
 
@@ -60,7 +60,7 @@ $$
 d = \partial + \bar\partial \quad \text{on the complexified forms},
 $$
 
-that is, $d$ preserves the bidegree in the sense $d\,\Omega^{p,q}\subseteq\Omega^{p+1,q}\oplus\Omega^{p,q+1}$, if and only if the almost complex structure is integrable, $N_J = 0$.
+that is, $d$ preserves the bidegree in the sense $d\,\Omega^{n,m}\subseteq\Omega^{n+1,m}\oplus\Omega^{n,m+1}$, if and only if the almost complex structure is integrable, $N_J = 0$.
 
 *Proof.* The type of $d\omega$ is determined by the Leibniz rule and the fact that $d$ of a function is a $(1,0)$-form plus a $(0,1)$-form; the failure of $d$ to preserve the bidegree is measured by the $(0,2)$- and $(2,0)$-components of $d$ of the $(1,0)$- and $(0,1)$-forms, and these components are precisely the Nijenhuis tensor. The identification is the theorem of Newlander and Nijenhuis in its operator form, quoted from *Hermitian Geometry and Almost Complex Structures*; for an integrable structure the Dolbeault complex is the standard complex of a complex manifold.
 
@@ -72,19 +72,19 @@ $$
 \partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0,
 $$
 
-so the forms carry a **double complex**: for each $q$ the operators $\bar\partial$ make the rows $\Omega^{\bullet,q}$ into cochain complexes, for each $p$ the operators $\partial$ make the columns $\Omega^{p,\bullet}$ into cochain complexes, and the two commute with the sign, giving the anticommutation.
+so the forms carry a **double complex**: for each $m$ the operators $\bar\partial$ make the rows $\Omega^{\bullet,m}$ into cochain complexes, for each $n$ the operators $\partial$ make the columns $\Omega^{n,\bullet}$ into cochain complexes, and the two commute with the sign, giving the anticommutation.
 
-*Proof.* The identity $d^2 = 0$ and the bidegree decomposition $d = \partial+\bar\partial$ give, by separating the bidegrees of $d^2 = \partial^2 + (\partial\bar\partial+\bar\partial\partial) + \bar\partial^2$, the three displays: the $(p+2,q)$-part of $d^2$ is $\partial^2$, the $(p+1,q+1)$-part is $\partial\bar\partial+\bar\partial\partial$, and the $(p,q+2)$-part is $\bar\partial^2$. Since $d^2=0$, each homogeneous part vanishes.
+*Proof.* The identity $d^2 = 0$ and the bidegree decomposition $d = \partial+\bar\partial$ give, by separating the bidegrees of $d^2 = \partial^2 + (\partial\bar\partial+\bar\partial\partial) + \bar\partial^2$, the three displays: the $(p+2,q)$-part of $d^2$ is $\partial^2$, the $(n+1,m+1)$-part is $\partial\bar\partial+\bar\partial\partial$, and the $(n,m+2)$-part is $\bar\partial^2$. Since $d^2=0$, each homogeneous part vanishes.
 
 **Definition.** The **Dolbeault cohomology** of an integrable almost complex structure is
 
 $$
-H^{p,q}_{\bar\partial}(M) = \frac{\ker(\bar\partial : \Omega^{p,q} \to \Omega^{p,q+1})}{\bar\partial\,\Omega^{p,q-1}} .
+H^{n,m}_{\bar\partial}(M) = \frac{\ker(\bar\partial : \Omega^{n,m} \to \Omega^{n,m+1})}{\bar\partial\,\Omega^{n,m-1}} .
 $$
 
-**Theorem ($\bar\partial$-Poincaré lemma).** On a polydisc in $\mathbb{C}^n$, a $\bar\partial$-closed form is locally $\bar\partial$-exact: for every $(p,q)$ with $q \geq 1$ there is an operator $K$ with $\bar\partial K + K\bar\partial = \mathrm{id}$ on the $(p,q)$-forms, obtained by integrating the contraction with the radial $(0,1)$-field along the complex lines. Consequently $H^{p,q}_{\bar\partial}(\mathbb{C}^n) = 0$ for $q \geq 1$, and the Dolbeault cohomology of a complex manifold is the local-global obstruction, exactly as the de Rham cohomology is for the exterior derivative.
+**Theorem ($\bar\partial$-Poincaré lemma).** On a polydisc in $\mathbb{C}^n$, a $\bar\partial$-closed form is locally $\bar\partial$-exact: for every $(n,m)$ with $m \geq 1$ there is an operator $K$ with $\bar\partial K + K\bar\partial = \mathrm{id}$ on the $(n,m)$-forms, obtained by integrating the contraction with the radial $(0,1)$-field along the complex lines. Consequently $H^{n,m}_{\bar\partial}(\mathbb{C}^n) = 0$ for $m \geq 1$, and the Dolbeault cohomology of a complex manifold is the local-global obstruction, exactly as the de Rham cohomology is for the exterior derivative.
 
-*Proof.* The operator $K$ is the complex analogue of the homotopy operator of *The Exterior Derivative*: the radial vector field of the polydisc is replaced by its $(0,1)$-component, and the fundamental theorem of calculus along the complex lines through the origin gives the identity; the argument is the Poincaré lemma applied to the $\bar\partial$-complex. The identifications $H^{p,q}_{\bar\partial} \cong H^{p,q}_{\bar\partial}$ with the sheaf cohomology of the holomorphic forms are the Dolbeault theorem, developed in *Sheaves and the de Rham Complex*.
+*Proof.* The operator $K$ is the complex analogue of the homotopy operator of *The Exterior Derivative*: the radial vector field of the polydisc is replaced by its $(0,1)$-component, and the fundamental theorem of calculus along the complex lines through the origin gives the identity; the argument is the Poincaré lemma applied to the $\bar\partial$-complex. The identifications $H^{n,m}_{\bar\partial} \cong H^{n,m}_{\bar\partial}$ with the sheaf cohomology of the holomorphic forms are the Dolbeault theorem, developed in *Sheaves and the de Rham Complex*.
 
 ## The Hermitian Structure
 
@@ -102,7 +102,7 @@ $$
 
 ## Summary
 
-An almost complex structure is an involution $J$ of the tangent bundle with $J^2=-\mathrm{id}$; it splits the complexified tangent and cotangent bundles, and hence the complexified forms, into types $(p,q)$. The Nijenhuis tensor is its integrability obstruction; the theorem of Newlander and Nijenhuis says that $J$ is integrable exactly when $N_J=0$. The exterior derivative of an integrable structure splits into the type components $d=\partial+\bar\partial$, the failure of the split being exactly the Nijenhuis tensor; from $d^2=0$ come $\partial^2=\bar\partial^2=0$ and $\partial\bar\partial+\bar\partial\partial=0$, so the forms form the Dolbeault double complex, with its Dolbeault cohomology and its local exactness on the polydiscs.
+An almost complex structure is an involution $J$ of the tangent bundle with $J^2=-\mathrm{id}$; it splits the complexified tangent and cotangent bundles, and hence the complexified forms, into types $(n,m)$. The Nijenhuis tensor is its integrability obstruction; the theorem of Newlander and Nijenhuis says that $J$ is integrable exactly when $N_J=0$. The exterior derivative of an integrable structure splits into the type components $d=\partial+\bar\partial$, the failure of the split being exactly the Nijenhuis tensor; from $d^2=0$ come $\partial^2=\bar\partial^2=0$ and $\partial\bar\partial+\bar\partial\partial=0$, so the forms form the Dolbeault double complex, with its Dolbeault cohomology and its local exactness on the polydiscs.
 
 A Hermitian structure is a metric invariant under the involution, equivalently a fixed point of the induced involution on the metrics; its fundamental form is a real nondegenerate $(1,1)$-form, closed exactly in the Kähler case. The involution and its invariant metric are the source of the whole involution layer of the group: the conjugate bundle, the metric as a conjugate-linear isomorphism, the self-adjointness of a metric connection and the Hermitian codifferential are the same operation at the level of the elements, and the operators $\partial$ and $\bar\partial$ are its operator form. The heavy analysis of the Hermitian Laplacian, in which the metric enters the adjoint of $\bar\partial$, is *Hermitian Metrics and the Codifferential* and *The L2 Adjoint of a Differential Operator*.
 
@@ -112,13 +112,13 @@ A Hermitian structure is a metric invariant under the involution, equivalently a
 |---|---|
 | $J$, $J^2=-\mathrm{id}$ | Almost complex structure; the involution of the tangent bundle |
 | $T^{1,0}M$, $T^{0,1}M$ | The $\pm i$ eigenbundles; $T_{\mathbb{C}}M=T^{1,0}\oplus T^{0,1}$ |
-| $\Omega^{p,q}(M)$, $\Lambda^{p,q}M$ | Forms of type $(p,q)$ and the bundle they section |
+| $\Omega^{n,m}(M)$, $\Lambda^{n,m}M$ | Forms of type $(n,m)$ and the bundle they section |
 | $N_J(X,Y)=[JX,JY]-J[X,JY]-J[JX,Y]-[X,Y]$ | Nijenhuis tensor; a section of $\Lambda^2T^*M\otimes TM$ |
 | $N_J=0 \Leftrightarrow$ integrable | Newlander–Nijenhuis theorem |
-| $\partial$, $\bar\partial$ | Type components of $d$; $\partial\Omega^{p,q}\subset\Omega^{p+1,q}$, $\bar\partial\Omega^{p,q}\subset\Omega^{p,q+1}$ |
+| $\partial$, $\bar\partial$ | Type components of $d$; $\partial\Omega^{n,m}\subset\Omega^{n+1,m}$, $\bar\partial\Omega^{n,m}\subset\Omega^{n,m+1}$ |
 | $d=\partial+\bar\partial$ | Equivalent to integrability |
 | $\partial^2=\bar\partial^2=0$, $\partial\bar\partial+\bar\partial\partial=0$ | Dolbeault double complex |
-| $H^{p,q}_{\bar\partial}(M)$ | Dolbeault cohomology; quotient of the $\bar\partial$-closed forms |
+| $H^{n,m}_{\bar\partial}(M)$ | Dolbeault cohomology; quotient of the $\bar\partial$-closed forms |
 | $\bar\partial K+K\bar\partial=\mathrm{id}$ | $\bar\partial$-Poincaré lemma; local exactness on a polydisc |
 | $g(JX,JY)=g(X,Y)$ | Hermitian structure; $J$ is a $g$-isometry, $J^*=-J$ |
 | $\omega(X,Y)=g(JX,Y)$ | Fundamental form; closed iff Kähler |

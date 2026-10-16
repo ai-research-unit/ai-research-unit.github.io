@@ -127,10 +127,10 @@ $$
 where $L(TM)$ is the **Hirzebruch $L$-genus** of the tangent bundle, the genus with the first terms
 
 $$
-L=1+\frac{p_1}{3}+\frac{7p_2-p_1^2}{45}+\cdots
+L=1+\frac{n_1}{3}+\frac{7p_2-n_1^2}{45}+\cdots
 $$
 
-in the Pontryagin classes $p_i$ of $TM$.
+in the Pontryagin classes $n_i$ of $TM$.
 
 **Proof sketch.** A harmonic form is closed and coclosed and represents its cohomology class, and the index of $D^{+}$ is the trace of the chirality on the kernel, $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)$, because $\ker D^{\pm}$ are the $\pm1$ eigenspaces of $\tau$ on $\ker D=\mathcal{H}^{\bullet}(M)$. On the middle degree the chirality is the Hodge star, so its trace on $\mathcal{H}^{2k}(M)$ is the signature $b_{+}-b_{-}$ of the intersection form; on a pair $\mathcal{H}^{j}(M)\oplus\mathcal{H}^{n-j}(M)$ with $j\neq n-j$ the chirality maps $\Omega^{j}$ to $\Omega^{n-j}$ and exchanges the two summands, so its trace there is $0$ and the non-middle harmonic forms cancel in the index. Hence $\operatorname{ind}D^{+}=b_{+}-b_{-}$. The identification of the index with $\int_ML(TM)$ is the Atiyah–Singer theorem in the case of the symbol of $d+d^{*}$, the symbol class being the Thom class whose Chern character is the $L$-class; the theorem and its heat-kernel proof are stated in *The Atiyah–Singer Index Theorem and K-Theory*.
 
@@ -140,21 +140,21 @@ in the Pontryagin classes $p_i$ of $TM$.
 
 ### Dimension Four
 
-**Example (the four-sphere).** For $S^4$ the middle cohomology $H^{2}(S^4;\mathbb{R})$ vanishes and the signature is $0$; consistently, $p_1(TS^4)=0$, so $\int_{S^4}L=0$. The signature operator has no harmonic middle forms and its index vanishes.
+**Example (the four-sphere).** For $S^4$ the middle cohomology $H^{2}(S^4;\mathbb{R})$ vanishes and the signature is $0$; consistently, $n_1(TS^4)=0$, so $\int_{S^4}L=0$. The signature operator has no harmonic middle forms and its index vanishes.
 
-**Example (the complex projective plane).** For $\mathbb{CP}^2$ the cohomology is $\mathbb{R}$ in degrees $0,2,4$, so $b_2=1$ and the intersection form on $H^{2}$ is the $1\times1$ matrix $(1)$, of signature $1$. The first Pontryagin class evaluates as $p_1[\mathbb{CP}^2]=3$, so $L_1=p_1/3$ gives $\sigma(\mathbb{CP}^2)=1$, in agreement.
+**Example (the complex projective plane).** For $\mathbb{CP}^2$ the cohomology is $\mathbb{R}$ in degrees $0,2,4$, so $b_2=1$ and the intersection form on $H^{2}$ is the $1\times1$ matrix $(1)$, of signature $1$. The first Pontryagin class evaluates as $n_1[\mathbb{CP}^2]=3$, so $L_1=n_1/3$ gives $\sigma(\mathbb{CP}^2)=1$, in agreement.
 
 **Example (the product of two spheres).** For $S^{2}\times S^{2}$ the middle cohomology has rank two, spanned by the two sphere classes with intersection matrix
 $$
 \begin{pmatrix}0&1\\1&0\end{pmatrix},
 $$
-whose eigenvalues are $1$ and $-1$ and whose signature is $0$; the first Pontryagin class is a torsion-free class with $p_1[S^2\times S^2]=0$, and $\int L=0$ again.
+whose eigenvalues are $1$ and $-1$ and whose signature is $0$; the first Pontryagin class is a torsion-free class with $n_1[S^2\times S^2]=0$, and $\int L=0$ again.
 
 **Example (a $K3$ surface).** For a $K3$ surface the middle cohomology has rank $22$, with $b_{+}=3$ and $b_{-}=19$, so the signature is
 $$
 \sigma(K3)=3-19=-16 ;
 $$
-the first Pontryagin number is $p_1[K3]=-48$, and $L_1=p_1/3$ gives $\int L=-16$, in agreement. The signature of a $K3$ surface is the standard negative value against which the signature theorem is checked, and the intersection form is the even unimodular form of rank $22$ and signature $-16$.
+the first Pontryagin number is $n_1[K3]=-48$, and $L_1=n_1/3$ gives $\int L=-16$, in agreement. The signature of a $K3$ surface is the standard negative value against which the signature theorem is checked, and the intersection form is the even unimodular form of rank $22$ and signature $-16$.
 
 ### Spheres and Complex Projective Spaces
 
@@ -166,7 +166,7 @@ the first Pontryagin number is $p_1[K3]=-48$, and $L_1=p_1/3$ gives $\int L=-16$
 
 The **signature operator** of a closed oriented Riemannian manifold of even dimension $n=2m$ is $D=d+d^{*}$, the sum of the exterior derivative and its formal adjoint, read with the chirality $\tau=i^{k(k-1)+m}\star$, which is an involution with $\tau^2=\mathrm{id}$ and $\tau D\tau^{-1}=-D$. The operator is self-adjoint and elliptic, it is odd for the chirality, and its square is the **Hodge Laplacian**, $D^2=dd^{*}+d^{*}d=\Delta$, whose kernel is the space of harmonic forms and is isomorphic to the de Rham cohomology. On the middle forms of a $4k$-manifold the chirality is the Hodge star, and the harmonic middle forms split into the self-dual and anti-self-dual parts of dimensions $b_{+}$ and $b_{-}$.
 
-The positive half $D^{+}:\Omega^{+}\to\Omega^{-}$ has index $b_{+}-b_{-}=\sigma(M)$, and the Atiyah–Singer theorem identifies this **signature** with the characteristic number $\int_M L(TM)$ of the Hirzebruch $L$-genus, whose first terms are $1+p_1/3+(7p_2-p_1^2)/45+\cdots$. The operator is assembled from the chosen metric — the star, the codifferential and the volume form all depend on it — while its index is a topological invariant, and the signature theorem is the statement of that independence. The graded operator on the even and odd forms instead has index the Euler characteristic. The examples are $S^4$, $\mathbb{CP}^2$ and $S^{2}\times S^{2}$ in dimension four and the $K3$ surface, whose signature is $-16$.
+The positive half $D^{+}:\Omega^{+}\to\Omega^{-}$ has index $b_{+}-b_{-}=\sigma(M)$, and the Atiyah–Singer theorem identifies this **signature** with the characteristic number $\int_M L(TM)$ of the Hirzebruch $L$-genus, whose first terms are $1+n_1/3+(7p_2-n_1^2)/45+\cdots$. The operator is assembled from the chosen metric — the star, the codifferential and the volume form all depend on it — while its index is a topological invariant, and the signature theorem is the statement of that independence. The graded operator on the even and odd forms instead has index the Euler characteristic. The examples are $S^4$, $\mathbb{CP}^2$ and $S^{2}\times S^{2}$ in dimension four and the $K3$ surface, whose signature is $-16$.
 
 ## Summary of Notation
 
@@ -182,7 +182,7 @@ The positive half $D^{+}:\Omega^{+}\to\Omega^{-}$ has index $b_{+}-b_{-}=\sigma(
 | $\Delta=dd^{*}+d^{*}d=D^2$ | Hodge Laplacian |
 | $\mathcal{H}^{k}(M)\cong H^{k}_{dR}(M)$ | Harmonic forms, de Rham cohomology, $b_k$ |
 | $b_{\pm}$, $\sigma(M)=b_{+}-b_{-}$ | Dimensions of the self-dual and anti-self-dual harmonic middle forms, signature |
-| $L(TM)=1+p_1/3+\cdots$ | Hirzebruch $L$-genus; $\sigma(M)=\int_ML(TM)$ |
+| $L(TM)=1+n_1/3+\cdots$ | Hirzebruch $L$-genus; $\sigma(M)=\int_ML(TM)$ |
 | $\chi(M)=\operatorname{ind}(d+d^{*})$ | Euler characteristic as the index of the total-degree grading |
 
 ## Further Reading

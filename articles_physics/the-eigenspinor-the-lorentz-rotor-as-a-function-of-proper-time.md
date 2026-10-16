@@ -10,28 +10,28 @@ $$
 \tilde{P}(\tau) = \tilde{\Lambda}(\tau)\,\bigl(imc\,e_0\bigr)\,\tilde{\Lambda}(\tau)^{*},
 $$
 
-where $\tilde{P} = m\tilde{U}$ is the four-momentum. The rotor is called the particle's **eigenspinor**, after W. E. Baylis, and it is the natural dynamical variable of the worldline: the four-momentum is a quadratic function of it, so the three independent components of the velocity are carried by the eight parameters of the rotor, of which four are fixed by unit norm and one by the rest-frame gauge. The eigenspinor obeys a single linear equation,
+where $\tilde{P} = m\tilde{V}$ is the four-momentum. The rotor is called the particle's **eigenspinor**, after W. E. Baylis, and it is the natural dynamical variable of the worldline: the four-momentum is a quadratic function of it, so the three independent components of the velocity are carried by the eight parameters of the rotor, of which four are fixed by unit norm and one by the rest-frame gauge. The eigenspinor obeys a single linear equation,
 
 $$
 \frac{d\tilde{\Lambda}}{d\tau} = \tfrac12\,\tilde{\Omega}\,\tilde{\Lambda},
 $$
 
-with $\tilde{\Omega}$ the spacetime rotation rate, and the Lorentz force follows from it in one line. The identification $\tilde{\Omega} = -(q/m)\tilde{F}^{*}$ then makes the equation the covariant equation of motion.
+with $\tilde{\Omega}$ the spacetime rotation rate, and the Lorentz force follows from it in one line. The identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ then makes the equation the covariant equation of motion.
 
 Three things are worth separating at the outset, and the article keeps them apart.
 
 - **What is standard and what is a translation.** The eigenspinor is standard relativistic mechanics in a geometric-algebra dress; Baylis, Hestenes and their school use it, and this article transcribes rather than re-derives. What the transcription adds is the $ict$ convention of this series and the dictionary to the companion articles.
 - **What the algebra supplies.** The linearity of the evolution equation, the closure of the rotor under the flow, the one-sided spinor law, and the fact that the force is the anti-Hermitian projection of the rate times the momentum are algebraic identities, and they are checked below.
-- **Where the earlier articles stop.** *The Lorentz Force in Biquaternion Form* records that the force is **not** a clean product of $\tilde{F}$ with $\tilde{U}$, and names the obstruction. The eigenspinor does not remove that obstruction; it offers a different, *differential* route to the same force. The two routes agree, and the agreement is checked.
+- **Where the earlier articles stop.** *The Lorentz Force in Biquaternion Form* records that the force is **not** a clean product of $\tilde{F}$ with $\tilde{V}$, and names the obstruction. The eigenspinor does not remove that obstruction; it offers a different, *differential* route to the same force. The two routes agree, and the agreement is checked.
 
 The article is organised as follows. The next section defines the eigenspinor and recovers the four-momentum and the four-velocity from it. The section after that derives the evolution equation and the conservation of the norm. The following section identifies the rotation rate with the field and recovers the Lorentz four-force. The next two sections record the eigenframe and the closed form in a uniform field. A short section separates what the framework supplies from what it only transcribes, and the article closes with open questions.
 
 ## The Eigenspinor of a Worldline
 
-The four-momentum of a particle of rest mass $m$ is $\tilde{P} = m\tilde{U}$, with $\tilde{U} = \gamma(ic\,e_0 + \vec v)$ the four-velocity. It lies in the material sector $\mathbb{M}_-$ and its biquaternion norm is fixed,
+The four-momentum of a particle of rest mass $m$ is $\tilde{P} = m\tilde{V}$, with $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ the four-velocity. It lies in the material sector $\mathbb{M}_-$ and its biquaternion norm is fixed,
 
 $$
-\tilde{P} \in \mathbb{M}_-, \qquad N(\tilde{P}) = \langle\tilde{P},\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -m^2c^2 .
+\tilde{P} \in \mathbb{M}_-, \qquad \langle\tilde{P}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -m^2c^2 .
 $$
 
 **Definition.** The **eigenspinor** of the worldline is the rotor $\tilde{\Lambda}(\tau)$ that carries the rest four-momentum $imc\,e_0$ to the lab four-momentum,
@@ -42,35 +42,35 @@ $$
 
 The rest four-momentum $imc\,e_0$ is central, so the definition reads $\tilde{P} = imc\,\tilde{\Lambda}\tilde{\Lambda}^{*}$; the whole of the velocity is carried by the product $\tilde{\Lambda}\tilde{\Lambda}^{*}$.
 
-A word on signs, because this is where the translation from the source is easiest to get wrong. For a pure boost of rapidity $\psi$ along $\hat u$ the eigenspinor is
+A word on signs, because this is where the translation from the source is easiest to get wrong. For a pure boost of rapidity $\psi$ along $\vec u$ the eigenspinor is
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 - i\sinh\frac{\psi}{2}\,\hat u .
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 - i\sinh\frac{\psi}{2}\,\vec u .
 $$
 
 This is the **quaternion conjugate** of the boost biquaternion
 
 $$
-\tilde{\Lambda}_{\text{lab}\to\text{mov}} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u
+\tilde{\Lambda}_{\text{lab}\to\text{mov}} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\vec u
 $$
 
 of *The Lorentz Transformation as a Biquaternionic Rotation*, which carries the laboratory to the moving frame. The sign is fixed by the definition: the eigenspinor carries the **rest frame to the laboratory**, so it is the inverse of the lab-to-moving rotor, and $\tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{-1}$ for a unit rotor.
 
-**The four-momentum and the four-velocity.** For this boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and of unit biquaternion norm, $N(\tilde{\Lambda}) = 1$, so $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 = \gamma(e_0 - i\beta\hat u)$ with $\beta = u/c$. Hence
+**The four-momentum and the four-velocity.** For this boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and of unit biquaternion norm, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$, so $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 = \gamma(e_0 - i\beta\vec u)$ with $\beta = v/c$. Hence
 
 $$
-\tilde{P} = imc\,\tilde{\Lambda}^2 = i\gamma mc\,(e_0 - i\beta\hat u) = m\gamma(ic\,e_0 + \vec v),
+\tilde{P} = imc\,\tilde{\Lambda}^2 = i\gamma mc\,(e_0 - i\beta\vec u) = m\gamma(ic\,e_0 + \vec v),
 $$
 
-which is $\tilde{P} = m\tilde{U}$ with $\vec v = c\beta\hat u$. The four-velocity, the Lorentz factor and the velocity are therefore read off the eigenspinor by
+which is $\tilde{P} = m\tilde{V}$ with $\vec v = c\beta\vec u$. The four-velocity, the Lorentz factor and the velocity are therefore read off the eigenspinor by
 
 $$
-\tilde{U} = ic\,\tilde{\Lambda}\tilde{\Lambda}^{*},
+\tilde{V} = ic\,\tilde{\Lambda}\tilde{\Lambda}^{*},
 \qquad
 \gamma = \mathrm{Sc}\bigl(\tilde{\Lambda}\tilde{\Lambda}^{*}\bigr),
 $$
 
-or, more usefully, component by component from $\tilde{P} = m\tilde{U}$ and the dictionary $\tilde{U} = \gamma(ic\,e_0 + \vec v)$.
+or, more usefully, component by component from $\tilde{P} = m\tilde{V}$ and the dictionary $\tilde{V} = \gamma(ic\,e_0 + \vec v)$.
 
 **Two gauges.** The eigenspinor is not unique. It is defined up to the two-element kernel $\tilde{\Lambda}\to-\tilde{\Lambda}$ of the covering map $SL(2,\mathbb{C})\to SO^+(1,3)$, already recorded in the group-structure section of the companion article, and up to a residual rotation of the rest frame, $\tilde{\Lambda}\to\tilde{\Lambda}\tilde{R}$ with $\tilde{R}$ a unit rotor built from the spatial units alone, which leaves $\tilde{\Lambda}\tilde{\Lambda}^{*}$ unchanged. The first is removed by the branch convention $\mathrm{Sc}(\tilde{\Lambda}) > 0$; the second is physical and is the freedom to orient the spin axes of the rest frame. Neither affects the four-momentum.
 
@@ -113,20 +113,20 @@ $$
 \boxed{\;\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\tilde{\Omega}\,\tilde{P}\right)\;}
 $$
 
-**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. Writing $\tilde{\Omega} = \tilde{\Omega}_0 + \tilde{\mathbf{V}}$ with $\tilde{\Omega}_0$ central and $\tilde{\mathbf{V}}$ a pure vector, the derivative of $N(\tilde{\Lambda}) = \tilde{\Lambda}\tilde{\Lambda}^{\natural}$ is
+**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. Writing $\tilde{\Omega} = \tilde{\Omega}_0 + \tilde{\mathbf{V}}$ with $\tilde{\Omega}_0$ central and $\tilde{\mathbf{V}}$ a pure vector, the derivative of $\langle\tilde{\Lambda}\rangle_{\natural} = \tilde{\Lambda}\tilde{\Lambda}^{\natural}$ is
 
 $$
-\frac{d}{d\tau}N(\tilde{\Lambda}) = \tfrac12\left(\tilde{\Omega} + \tilde{\Omega}^{\natural}\right) = \tilde{\Omega}_0 + \tfrac12\left(\tilde{\mathbf{V}} + \bar{\tilde{\mathbf{V}}}\right)
+\frac{d}{d\tau}\langle\tilde{\Lambda}\rangle_{\natural} = \tfrac12\left(\tilde{\Omega} + \tilde{\Omega}^{\natural}\right) = \tilde{\Omega}_0 + \tfrac12\left(\tilde{\mathbf{V}} + \bar{\tilde{\mathbf{V}}}\right)
 = \tilde{\Omega}_0,
 $$
 
 because a pure vector is anti-fixed by quaternion conjugation, $\bar{\tilde{\mathbf{V}}} = -\tilde{\mathbf{V}}$. Norm preservation is therefore exactly the condition that **the rotation rate have no scalar part**,
 
 $$
-N(\tilde{\Lambda}) = \text{const} \iff \tilde{\Omega} \in \mathrm{Vect}(\mathbb{B}),
+\langle\tilde{\Lambda}\rangle_{\natural} = \text{const} \iff \tilde{\Omega} \in \mathrm{Vect}(\mathbb{B}),
 $$
 
-and this is the same condition under which $N(\tilde{P}) = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$ recorded in the Lorentz-force article.
+and this is the same condition under which $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$ recorded in the Lorentz-force article.
 
 ## The Field as the Rotation Rate
 
@@ -136,23 +136,23 @@ $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-so that $\vec E$ is the imaginary vector part and $\vec B = \mu\vec H$ the real vector part. The rotation rate of a charge $q$ in this field is
+so that $\vec E$ is the imaginary vector part and $\vec B = \mu\vec H$ the real vector part. The rotation rate of a charge $ϙ$ in this field is
 
 $$
-\boxed{\;\tilde{\Omega} = -\frac{q}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{q}{m}\,\tilde{F}^{*}\;}
+\boxed{\;\tilde{\Omega} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{m}\,\tilde{F}^{*}\;}
 $$
 
 in the units of the field-strength article with $\sqrt{\epsilon_0} = 1/c_0$ and $\sqrt{\mu_0} = 1$ (Heaviside–Lorentz units), where $\tilde{F}^{*} = i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H = i\vec E/c + \vec B$. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
 
 $$
-\frac{d\tilde{P}}{d\tau} = -\frac{q}{m}\,P_{\mathbb{M}_-}\!\left(\tilde{F}^{*}\tilde{P}\right)
-= -q\,P_{\mathbb{M}_-}\!\left(\left(\frac{i}{c}\vec E + \vec B\right)\tilde{U}\right),
+\frac{d\tilde{P}}{d\tau} = -\frac{ϙ}{m}\,P_{\mathbb{M}_-}\!\left(\tilde{F}^{*}\tilde{P}\right)
+= -ϙ\,P_{\mathbb{M}_-}\!\left(\left(\frac{i}{c}\vec E + \vec B\right)\tilde{V}\right),
 $$
 
 and this is the Lorentz four-force
 
 $$
-\tilde{K} = i\,\frac{\gamma q}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma q\left(\vec E + \vec v\times\vec B\right)
+\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma ϙ\left(\vec E + \vec v\times\vec B\right)
 $$
 
 of the component-form section of *The Lorentz Force in Biquaternion Form*.
@@ -160,7 +160,7 @@ of the component-form section of *The Lorentz Force in Biquaternion Form*.
 **Consistency with the product formula.** The companion articles write the force as
 
 $$
-\tilde{K} = -q\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
+\tilde{K} = -ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 $$
 
 with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^{*}$. The eigenspinor route puts the field on the left and uses the conjugate. The two expressions are different-looking but equal; both reproduce the component $\tilde{K}$, and their difference is a genuine algebraic identity, not an approximation. What the eigenspinor supplies is not a new formula for the force but the **linear object** — the rotor — whose quadratic product is the four-momentum and whose rate is the field.
@@ -173,7 +173,7 @@ $$
 \tilde{E}_{(\mu)}(\tau) = \tilde{\Lambda}(\tau)\,\mathcal{E}_\mu\,\tilde{\Lambda}(\tau)^{*} \in \mathbb{M}_- ,
 $$
 
-and the four-vector $\tilde{E}_{(0)} = i\tilde{\Lambda}\tilde{\Lambda}^{*}$ is the four-velocity direction, $c\,\tilde{E}_{(0)} = \tilde{U}$. The three spatial images $\tilde{E}_{(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\tilde{\Omega}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
+and the four-vector $\tilde{E}_{(0)} = i\tilde{\Lambda}\tilde{\Lambda}^{*}$ is the four-velocity direction, $c\,\tilde{E}_{(0)} = \tilde{V}$. The three spatial images $\tilde{E}_{(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\tilde{\Omega}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
 
 This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\tilde{\Omega}$.
 
@@ -195,7 +195,7 @@ Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\ti
 
 **Transcribed.** The eigenspinor is not this series' invention. Baylis uses it throughout *Electrodynamics: A Modern Geometric Approach* and in the paravector lecture that is the source of this article; Hestenes uses the same object as the "rotor part" of the Dirac spinor in spacetime algebra. What the series adds is the $ict$ convention, the dictionary to the companion articles, and the checks.
 
-**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{U})$ or any single product of $\tilde{F}$ with $\tilde{U}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\tilde{\Omega}$ and the rotor $\tilde{\Lambda}$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
+**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\tilde{\Omega}$ and the rotor $\tilde{\Lambda}$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
 
 ## Open Questions
 
@@ -219,7 +219,7 @@ $$
 \tilde{P} = \tilde{\Lambda}\,\bigl(imc\,e_0\bigr)\,\tilde{\Lambda}^{*},
 $$
 
-and it is the natural dynamical variable of a relativistic worldline. For a pure boost of rapidity $\psi$ along $\hat u$ it is $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 - i\sinh\frac{\psi}{2}\hat u$, the quaternion conjugate of the lab-to-moving boost biquaternion of the companion article.
+and it is the natural dynamical variable of a relativistic worldline. For a pure boost of rapidity $\psi$ along $\vec u$ it is $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 - i\sinh\frac{\psi}{2}\vec u$, the quaternion conjugate of the lab-to-moving boost biquaternion of the companion article.
 
 It obeys the linear equation
 
@@ -234,25 +234,25 @@ $$
 = \tfrac12\left(\tilde{\Omega}\tilde{P} + \tilde{P}\tilde{\Omega}^{*}\right).
 $$
 
-With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\tilde{\Omega} = -(q/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde{\Lambda}\to\tilde{L}\tilde{\Lambda}$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde{\Lambda} = \exp(\tfrac12\tilde{\Omega}\tau)\tilde{\Lambda}(0)$.
+With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde{\Lambda}\to\tilde{L}\tilde{\Lambda}$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde{\Lambda} = \exp(\tfrac12\tilde{\Omega}\tau)\tilde{\Lambda}(0)$.
 
-The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}$ as a single product of $\tilde{F}$ with $\tilde{U}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
+The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde{\Lambda}(\tau)$ | Eigenspinor: the rotor carrying the rest frame to the laboratory |
-| $\tilde{P} = m\tilde{U}$ | Four-momentum, in the material sector $\mathbb{M}_-$ |
+| $\tilde{P} = m\tilde{V}$ | Four-momentum, in the material sector $\mathbb{M}_-$ |
 | $imc\,e_0$ | Rest four-momentum (central) |
 | $\tilde{\Omega}$ | Spacetime rotation rate, a pure vector, $\tilde{\Omega}^{\natural} = -\tilde{\Omega}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $\tilde{F}^{*}$ | Its conjugate, $i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H$ |
 | $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{E}_{(\mu)} = \tilde{\Lambda}\mathcal{E}_\mu\tilde{\Lambda}^{*}$ | Eigenframe (tetrad) along the worldline |
-| $\tilde{U} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity |
+| $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity |
 | $\tilde{K}$ | Lorentz four-force, $d\tilde{P}/d\tau$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 

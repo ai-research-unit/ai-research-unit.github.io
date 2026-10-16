@@ -6,24 +6,24 @@ Eleven hand-off briefs, one per agent. **Nothing is launched by this file.** Eac
 
 **The object.** The reduced biquaternion space is the commutative algebra
 
-$$\mathbb{R}\mathbb{B} = \mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C},$$
+$$\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C},$$
 
-with basis $1, i, e, ie$, the relations $i^{2} = -1$, $e^{2} = +1$, $ei = ie$, and the two idempotents $e_{\pm} = \tfrac12(1\pm e)$. An element is $Z = A + Be$ with $A = a + ia'$ and $B = b + ib'$ complex, and the idempotent decomposition is $Z = (A+B)\,e_{+} + (A-B)\,e_{-}$. It is the engineering **reduced biquaternion** algebra, equivalently the **tessarines**, the **double-complex** numbers or the **commutative hypercomplex** algebra. The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $Z = A+Be$ are fixed in *Conventions in Mathematics*, §*The Elements and their Coefficients*; the engineering sources write $z = z_{1} + z_{2}e$, and the corpus does not.
+with basis $1, i, j, ij$, the relations $i^{2} = -1$, $j^{2} = +1$, $ji = ij$, and the two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. An element is $T = A + Bj$ with $A = a + ia'$ and $B = b + ib'$ complex, and the idempotent decomposition is $T = (A+B)\Pi_1 + (A-B)\Pi_2$. It is the engineering **reduced biquaternion** algebra, equivalently the **tessarines**, the **double-complex** numbers or the **commutative hypercomplex** algebra. The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $T = A+Bj$ are fixed in *Conventions in Mathematics*, §*The Elements and their Coefficients*; the engineering sources write $z = z_{1} + z_{2}e$, and the corpus does not.
 
-**The involutions.** The **bar** conjugates the coefficients, $\overline{A+Be} = \bar A + \bar B e$; the **natural sign** ${}^{\natural}$ negates the second slot, $(A+Be)^{\natural} = A - Be$; the **star** is their composite, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$, and the **flat** is ${}^{\flat} = -{}^{*}$.
+**The involutions.** The **bar** conjugates the coefficients, $\overline{A+Bj} = \bar A + \bar B j$; the **natural sign** ${}^{\natural}$ negates the second slot, $(A+Bj)^{\natural} = A - Bj$; the **star** is their composite, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$, and the **flat** is ${}^{\flat} = -{}^{*}$.
 
 **The four general products** (verify these; they are the corpus's construction applied to the space):
 
-$$\mathrm{GPA} = Z W,\qquad \mathrm{GQA} = Z^{\natural}W,\qquad \mathrm{GPS} = ZW^{*},\qquad \mathrm{GQS} = Z^{\natural}W^{*}.$$
+$$\mathrm{GPA} = T W,\qquad \mathrm{GQA} = T^{\natural}W,\qquad \mathrm{GPS} = TW^{*},\qquad \mathrm{GQS} = T^{\natural}W^{*}.$$
 
-On $Z = A+Be$, $W = C+De$:
+On $T = A+Bj$, $W = C+Dj$:
 
-| code | value | scalar part | $e$-part |
+| code | value | scalar part | $j$-part |
 |---|---|---|---|
-| $\mathrm{GPA}$ | $ZW$ | $AC+BD$ | $AD+BC$ |
-| $\mathrm{GQA}$ | $Z^{\natural}W$ | $AC-BD$ | $AD-BC$ |
-| $\mathrm{GPS}$ | $ZW^{*}$ | $A\bar C - B\bar D$ | $B\bar C - A\bar D$ |
-| $\mathrm{GQS}$ | $Z^{\natural}W^{*}$ | $A\bar C + B\bar D$ | $-(A\bar D + B\bar C)$ |
+| $\mathrm{GPA}$ | $TW$ | $AC+BD$ | $AD+BC$ |
+| $\mathrm{GQA}$ | $T^{\natural}W$ | $AC-BD$ | $AD-BC$ |
+| $\mathrm{GPS}$ | $TW^{*}$ | $A\bar C - B\bar D$ | $B\bar C - A\bar D$ |
+| $\mathrm{GQS}$ | $T^{\natural}W^{*}$ | $A\bar C + B\bar D$ | $-(A\bar D + B\bar C)$ |
 
 **The twelve slots and the four that die.** Each general product splits into a symmetric and an antisymmetric part by the two exchanges — the bare interchange for the two $\mathbb{C}$-bilinear products, the interchange followed by the coefficientwise conjugation of the value for the two sesquilinear ones (*The Symmetric and Antisymmetric Parts of an Algebra Product*, *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*). Because the algebra is **commutative** four of the twelve slots are not new operations:
 
@@ -31,14 +31,14 @@ $$\mathrm{SPA} = \mathrm{GPA},\qquad \mathrm{APA} = 0,\qquad \mathrm{SQS} = \mat
 
 The space therefore carries **eight distinct algebraic structures**: $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$. The code is the corpus's (*Conventions in the Biquaternion Universe*, §*The Twelve Products and Their Names*): $\mathrm G/\mathrm S/\mathrm A$ the general product and its two parts, $\mathrm P/\mathrm Q$ the plain and the quaternionic first slot, $\mathrm A/\mathrm S$ the algebra over $\mathbb{C}$ and the sesqualgebra over $(\mathbb{C},\bar{\cdot})$.
 
-**The eight, in words.** $\mathrm{GPA}$ is the multiplication. $\mathrm{GQA}$ is $\mathrm{GPA}$ with the first factor read through ${}^{\natural}$. $\mathrm{GPS}$ and $\mathrm{GQS}$ are the sesquilinear pair. $\mathrm{SQA}$ and $\mathrm{AQA}$ are the two halves of $\mathrm{GQA}$; $\mathrm{SPS}$ and $\mathrm{APS}$ the two halves of $\mathrm{GPS}$. The four live halves are: $\mathrm{SQA}(Z,W) = A C - B D$ (central), $\mathrm{AQA}(Z,W) = (AD-BC)\,e$ (in $\mathbb{C}e$), $\mathrm{SPS}(Z,W) = A\bar C - B\bar D$ (central), $\mathrm{APS}(Z,W) = (B\bar C - A\bar D)\,e$ (in $\mathbb{C}e$).
+**The eight, in words.** $\mathrm{GPA}$ is the multiplication. $\mathrm{GQA}$ is $\mathrm{GPA}$ with the first factor read through ${}^{\natural}$. $\mathrm{GPS}$ and $\mathrm{GQS}$ are the sesquilinear pair. $\mathrm{SQA}$ and $\mathrm{AQA}$ are the two halves of $\mathrm{GQA}$; $\mathrm{SPS}$ and $\mathrm{APS}$ the two halves of $\mathrm{GPS}$. The four live halves are: $\mathrm{SQA}(T,W) = A C - B D$ (central), $\mathrm{AQA}(T,W) = (AD-BC)\,j$ (in $\mathbb{C}j$), $\mathrm{SPS}(T,W) = A\bar C - B\bar D$ (central), $\mathrm{APS}(T,W) = (B\bar C - A\bar D)\,j$ (in $\mathbb{C}j$).
 
 **Hard rules (from `PLAN.md`, not negotiable).**
 
 1. Read `/home/hp/.openhands/memory/MEMORY.md` and `PLAN.md` first.
 2. Read *Conventions in Mathematics* and *Conventions in the Biquaternion Universe* before writing.
 3. Every article: title line `# __Title__`, then `## Introduction`, thematic `##` sections, then `## Summary`, `## Summary of Notation`, `## Further Reading`.
-4. Write the `.md` **and** its companion `.context`. When the article is written, **drop the leading `+`** from its entry in `maths.md` (the `+` marks a planned article).
+4. Write the `.md`. When the article is written, **drop the leading `+`** from its entry in `maths.md` (the `+` marks a planned article).
 5. Cite, do not restate: a concept is introduced once, in the article that owns it. Every deferral is stated explicitly.
 6. **Verify by recomputation on at most 100 elements** before asserting anything. Scripts are written **outside** the repository and deleted afterwards.
 7. **Never touch version control or the build** (no `git`, no `build.py`).
@@ -53,7 +53,7 @@ The space therefore carries **eight distinct algebraic structures**: $\mathrm{GP
 
 ## Brief 1 — Agent 1 — the shared Algebra of the space (19 articles)
 
-**Deliverable: 19 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 19 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -83,10 +83,10 @@ Writes the shared Algebra the whole category stands on: the **space**, its **inv
 
 ### What each article must contain
 
-- **Reduced Biquaternion Space** — the algebra $z_1 + z_2e$, the relations, the two idempotents, the isomorphism $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the historical names (tessarines, double-complex, Cockle), the comparison with $\mathbb{H}_{\mathbb{D}}$.
+- **Reduced Biquaternion Space** — the algebra $T = A+Bj$, the relations, the two idempotents, the isomorphism $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the historical names (tessarines, double-complex, Cockle), the comparison with $\mathbb{H}_{\mathbb{D}}$.
 - **as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$** — dimension $4$ over $\mathbb{R}$ and $2$ over $\mathbb{C}$, the realification, the effect of the change of scalars.
 - **The Two Involutions and the Group of Involutions** — bar and natural sign, their fixed and anti-fixed spaces, the Klein group $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$, following *The Group of Involutions* of the biquaternion category.
-- **Remarkable Subspaces** — centre $\mathbb{C}_{\mathbb{R}\mathbb{B}}$, the $e$-line $\mathbb{C}e$, the fixed and anti-fixed spaces of each involution, and the idempotent lines $\mathbb{C}e_{\pm}$.
+- **Remarkable Subspaces** — centre $\mathbb{C}_{\mathbb{B}_{\mathrm{r}}}$, the $j$-line $\mathbb{C}j$, the fixed and anti-fixed spaces of each involution, and the idempotent lines $\mathbb{C}\Pi_{1,2}$.
 - **Standard Element Representations** — the four-vector (real quadruple; complex pair) and the $2\times2$ matrix model; the second one must show $\mathbb{B}_{\mathrm{r}}\cong$ the diagonal $2\times2$ complex matrices.
 - **The 4 General Products, Relations, Comparison** — the four coordinate displays above, the identities that link them, the property table; the drop of the cross terms relative to $\mathbb{B}$.
 - **The Four General Products and Operators / Remarkable Subspaces and the Four General Products** — the operators the products generate and their behaviour on the subspaces.
@@ -104,7 +104,7 @@ The four general products and the eight structures agree with the tables above; 
 
 ## Brief 2 — Agent 2 — General Plain Algebra (GPA), 13 articles
 
-**Deliverable: 13 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 13 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -124,14 +124,14 @@ The four general products and the eight structures agree with the tables above; 
 
 ### What this agent does
 
-Writes the complete structure of the **General Plain Algebra** over $\mathbb{R}\mathbb{B}$, following article for article the counterpart block *General Plain Algebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the multiplication $ZW$ (associative, commutative, unital).
+Writes the complete structure of the **General Plain Algebra** over $\mathbb{B}_{\mathrm{r}}$, following article for article the counterpart block *General Plain Algebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the multiplication $TW$ (associative, commutative, unital).
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(Z) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(Z)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(Z)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(Z)=|A|^{2}+|B|^{2}$ (real, positive definite).
-- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $e_{\pm}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
-- **Annihilators**; **roots of $1$ and the idempotents** (the $e_{\pm}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
-- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}e_{+}\oplus\mathbb{C}e_{-}$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
+- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(T) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(T)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(T)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(T)=|A|^{2}+|B|^{2}$ (real, positive definite).
+- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $\Pi_{1,2}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
+- **Annihilators**; **roots of $1$ and the idempotents** (the $\Pi_{1,2}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
+- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\Pi_1\oplus\mathbb{C}\Pi_2$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
 - **Form**; **multiplication operators and the bi-module structure**; **the $2\times2$ matrix element representation**.
 
 ### Readings specific to this brief
@@ -140,12 +140,12 @@ The counterpart *General Plain Algebra of the Biquaternions over $\mathbb{C}$* (
 
 ### Acceptance
 
-Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` and 13 `.context` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
+Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
 ---
 
 ## Brief 3 — Agent 3 — General Quaternionic Algebra (GQA), 13 articles
 
-**Deliverable: 13 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 13 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -165,14 +165,14 @@ Every algebraic claim recomputed on at most 100 elements; the norm, the zero-div
 
 ### What this agent does
 
-Writes the complete structure of the **General Quaternionic Algebra** over $\mathbb{R}\mathbb{B}$, following article for article the counterpart block *General Quaternionic Algebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the multiplication $Z^{\natural}W$ (not associative, commutative after the conjugation).
+Writes the complete structure of the **General Quaternionic Algebra** over $\mathbb{B}_{\mathrm{r}}$, following article for article the counterpart block *General Quaternionic Algebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the multiplication $T^{\natural}W$ (not associative, commutative after the conjugation).
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(Z) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(Z)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(Z)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(Z)=|A|^{2}+|B|^{2}$ (real, positive definite).
-- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $e_{\pm}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
-- **Annihilators**; **roots of $1$ and the idempotents** (the $e_{\pm}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
-- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}e_{+}\oplus\mathbb{C}e_{-}$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
+- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(T) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(T)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(T)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(T)=|A|^{2}+|B|^{2}$ (real, positive definite).
+- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $\Pi_{1,2}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
+- **Annihilators**; **roots of $1$ and the idempotents** (the $\Pi_{1,2}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
+- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\Pi_1\oplus\mathbb{C}\Pi_2$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
 - **Form**; **multiplication operators and the bi-module structure**; **the $2\times2$ matrix element representation**.
 
 ### Readings specific to this brief
@@ -181,12 +181,12 @@ The counterpart *General Quaternionic Algebra of the Biquaternions over $\mathbb
 
 ### Acceptance
 
-Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` and 13 `.context` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
+Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
 ---
 
 ## Brief 4 — Agent 4 — General Plain Sesqualgebra (GPS), 13 articles
 
-**Deliverable: 13 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 13 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -206,14 +206,14 @@ Every algebraic claim recomputed on at most 100 elements; the norm, the zero-div
 
 ### What this agent does
 
-Writes the complete structure of the **General Plain Sesqualgebra** over $\mathbb{R}\mathbb{B}$, following article for article the counterpart block *General Plain Sesqualgebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the sesquilinear product $ZW^{*}$ (not associative, sesquilinear over $(\mathbb{C},\bar{\cdot})$, right unit only).
+Writes the complete structure of the **General Plain Sesqualgebra** over $\mathbb{B}_{\mathrm{r}}$, following article for article the counterpart block *General Plain Sesqualgebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the sesquilinear product $TW^{*}$ (not associative, sesquilinear over $(\mathbb{C},\bar{\cdot})$, right unit only).
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(Z) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(Z)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(Z)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(Z)=|A|^{2}+|B|^{2}$ (real, positive definite).
-- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $e_{\pm}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
-- **Annihilators**; **roots of $1$ and the idempotents** (the $e_{\pm}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
-- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}e_{+}\oplus\mathbb{C}e_{-}$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
+- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(T) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(T)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(T)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(T)=|A|^{2}+|B|^{2}$ (real, positive definite).
+- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $\Pi_{1,2}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
+- **Annihilators**; **roots of $1$ and the idempotents** (the $\Pi_{1,2}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
+- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\Pi_1\oplus\mathbb{C}\Pi_2$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
 - **Form**; **multiplication operators and the bi-module structure**; **the $2\times2$ matrix element representation**.
 
 ### Readings specific to this brief
@@ -222,12 +222,12 @@ The counterpart *General Plain Sesqualgebra of the Biquaternions over $\mathbb{C
 
 ### Acceptance
 
-Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` and 13 `.context` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
+Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
 ---
 
 ## Brief 5 — Agent 5 — General Quaternionic Sesqualgebra (GQS), 13 articles
 
-**Deliverable: 13 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 13 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -247,14 +247,14 @@ Every algebraic claim recomputed on at most 100 elements; the norm, the zero-div
 
 ### What this agent does
 
-Writes the complete structure of the **General Quaternionic Sesqualgebra** over $\mathbb{R}\mathbb{B}$, following article for article the counterpart block *General Quaternionic Sesqualgebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the sesquilinear product $Z^{\natural}W^{*}$ (not associative, no unit).
+Writes the complete structure of the **General Quaternionic Sesqualgebra** over $\mathbb{B}_{\mathrm{r}}$, following article for article the counterpart block *General Quaternionic Sesqualgebra of the Biquaternions over $\mathbb{C}$* and the quaternion block of the same name. The operation here is the sesquilinear product $T^{\natural}W^{*}$ (not associative, no unit).
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(Z) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(Z)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(Z)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(Z)=|A|^{2}+|B|^{2}$ (real, positive definite).
-- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $e_{\pm}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
-- **Annihilators**; **roots of $1$ and the idempotents** (the $e_{\pm}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
-- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}e_{+}\oplus\mathbb{C}e_{-}$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
+- **Norm and invertibility** — the algebraic norm of the operation and its invertibility criterion. $\mathrm{GPA}$: $N(T) = A^{2}-B^{2}$ (complex, multiplicative, vanishing on the two idempotents, so every element of the null cone is a zero divisor). $\mathrm{GQA}$: $N(T)=A^{2}+B^{2}$. $\mathrm{GPS}$: $H(T)=|A|^{2}-|B|^{2}$ (real). $\mathrm{GQS}$: $K(T)=|A|^{2}+|B|^{2}$ (real, positive definite).
+- **Zero divisors** — the null cone of the above norm; $\mathrm{GPA}$ and $\mathrm{GPS}$ have zero divisors and $\mathrm{GQS}$ has none; the idempotents $\Pi_{1,2}$ are zero divisors of $\mathrm{GPA}$ (and each is a unit of $\mathrm{GPS}$).
+- **Annihilators**; **roots of $1$ and the idempotents** (the $\Pi_{1,2}$ and the central $\pm1$, beside the further roots of the operation); **roots of $0$ and the nilpotents**; **roots of a general element**.
+- **Specificities**; **ideals and Peirce decomposition** (the idempotent decomposition $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\Pi_1\oplus\mathbb{C}\Pi_2$ is the central one, and it is an algebra decomposition exactly for $\mathrm{GPA}$); **group of units** — for $\mathrm{GPA}$ it is the complement of the null cone, $A^{2}\neq B^{2}$.
 - **Form**; **multiplication operators and the bi-module structure**; **the $2\times2$ matrix element representation**.
 
 ### Readings specific to this brief
@@ -263,12 +263,12 @@ The counterpart *General Quaternionic Sesqualgebra of the Biquaternions over $\m
 
 ### Acceptance
 
-Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` and 13 `.context` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
+Every algebraic claim recomputed on at most 100 elements; the norm, the zero-divisor set and the unit criterion proven; the block's 13 `.md` written; the menu entries lose their `+`. For $\mathrm{GPA}$ only, note explicitly that it is the associative case and that the central idempotents split the algebra.
 ---
 
 ## Brief 6 — Agent 6 — SQA, the symmetric quaternionic algebra (11 articles)
 
-**Deliverable: 11 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 11 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -287,12 +287,12 @@ Every algebraic claim recomputed on at most 100 elements; the norm, the zero-div
 ### What this agent does
 
 Writes the **symmetric quaternionic algebra** $\mathrm{SQA}$, the symmetric part of $\mathrm{GQA}$ under the bare interchange:
-$$\mathrm{SQA}(Z,W) = \tfrac12\bigl(Z^{\natural}W + W^{\natural}Z\bigr) = AC - BD,$$
-a **central** commutative operation, value in $\mathbb{C}_{\mathbb{R}\mathbb{B}} = \mathbb{C}$.
+$$\mathrm{SQA}(T,W) = \tfrac12\bigl(T^{\natural}W + W^{\natural}T\bigr) = AC - BD,$$
+a **central** commutative operation, value in $\mathbb{C}_{\mathbb{B}_{\mathrm{r}}} = \mathbb{C}$.
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the operation is central-valued, so it is a **form read as a product**, the algebraic norm of the quaternion form $N(Z) = A^{2}-B^{2}$; it has no unit and no invertibility in the algebra sense, and the article must say so.
+- **Norm and invertibility** — the operation is central-valued, so it is a **form read as a product**, the algebraic norm of the quaternion form $N(T) = A^{2}-B^{2}$; it has no unit and no invertibility in the algebra sense, and the article must say so.
 - **Zero divisors** — where $AC-BD = 0$ for nonzero $W$; the sets and their structure.
 - **Annihilators**; **roots of $1$ and the idempotents**; **roots of $0$ and the nilpotents**; **roots of a general element** — the roots of a value read in the operation, per *Square Roots of a General Element in the Algebraic Structures over the Reduced Biquaternion $\mathbb{C}$ Space*.
 - **Specificities**; **the algebraic norm** (central, ring-valued); **multiplication operators**; **the $2\times2$ representation**.
@@ -303,12 +303,12 @@ The counterpart *Symmetric Quaternionic Algebra of the Biquaternions over $\math
 
 ### Acceptance
 
-The central-valued property proven; the contrast with the biquaternion $\mathrm{SQA}$ (non-central there, central here) stated; 11 `.md` and 11 `.context`; the `+` dropped.
+The central-valued property proven; the contrast with the biquaternion $\mathrm{SQA}$ (non-central there, central here) stated; 11 `.md`; the `+` dropped.
 ---
 
 ## Brief 7 — Agent 7 — SPS, the symmetric plain sesqualgebra (11 articles)
 
-**Deliverable: 11 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 11 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -327,12 +327,12 @@ The central-valued property proven; the contrast with the biquaternion $\mathrm{
 ### What this agent does
 
 Writes the **symmetric plain sesqualgebra** $\mathrm{SPS}$, the symmetric part of $\mathrm{GPS}$ under the conjugate transpose:
-$$\mathrm{SPS}(Z,W) = \tfrac12\bigl(ZW^{*} + \overline{WZ^{*}}\bigr) = A\bar C - B\bar D,$$
+$$\mathrm{SPS}(T,W) = \tfrac12\bigl(TW^{*} + \overline{WZ^{*}}\bigr) = A\bar C - B\bar D,$$
 a **central** conjugate-commutative sesquilinear operation, the Hermitian form $H$ read as a product.
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the algebraic norm is $H(Z) = |A|^{2}-|B|^{2}$, real and indefinite; the operation is the Hermitian form of the algebra.
+- **Norm and invertibility** — the algebraic norm is $H(T) = |A|^{2}-|B|^{2}$, real and indefinite; the operation is the Hermitian form of the algebra.
 - **Zero divisors** — the null cone $|A| = |B|$ and the isotropic structure; the relation to the light cone of the Lorentz group of the geometry slot.
 - **Annihilators**; **roots of $1$ and the idempotents**; **roots of $0$ and the nilpotents**; **roots of a general element**.
 - **Specificities**; **the algebraic norm**; **multiplication operators**; **the $2\times2$ representation**.
@@ -343,12 +343,12 @@ The counterpart *Symmetric Plain Sesqualgebra of the Biquaternions over $\mathbb
 
 ### Acceptance
 
-The central-valued and conjugate-commutative properties proven; the indefinite norm and its null cone carried; 11 `.md` and 11 `.context`; the `+` dropped.
+The central-valued and conjugate-commutative properties proven; the indefinite norm and its null cone carried; 11 `.md`; the `+` dropped.
 ---
 
 ## Brief 8 — Agent 8 — AQA, the antisymmetric quaternionic algebra (11 articles)
 
-**Deliverable: 11 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 11 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -367,13 +367,13 @@ The central-valued and conjugate-commutative properties proven; the indefinite n
 ### What this agent does
 
 Writes the **antisymmetric quaternionic algebra** $\mathrm{AQA}$, the antisymmetric part of $\mathrm{GQA}$:
-$$\mathrm{AQA}(Z,W) = \tfrac12\bigl(Z^{\natural}W - W^{\natural}Z\bigr) = (AD-BC)\,e,$$
-an alternating operation **with values in the $e$-line $\mathbb{C}e$** — so it is not a Lie bracket on the space, and the article must establish the identity it does satisfy and the one it fails, beside the corresponding biquaternion $\mathrm{AQA}$.
+$$\mathrm{AQA}(T,W) = \tfrac12\bigl(T^{\natural}W - W^{\natural}T\bigr) = (AD-BC)\,e,$$
+an alternating operation **with values in the $j$-line $\mathbb{C}j$** — so it is not a Lie bracket on the space, and the article must establish the identity it does satisfy and the one it fails, beside the corresponding biquaternion $\mathrm{AQA}$.
 
 ### Structure-specific content
 
-- **Norm and invertibility** — the operation is not a multiplication and has no unit; its algebraic norm is the diagonal value $\mathrm{AQA}(Z,Z)$.
-- **Zero divisors** — the elements $Z$ with $\mathrm{AQA}(Z,W)=0$ for some nonzero $W$.
+- **Norm and invertibility** — the operation is not a multiplication and has no unit; its algebraic norm is the diagonal value $\mathrm{AQA}(T,T)$.
+- **Zero divisors** — the elements $T$ with $\mathrm{AQA}(T,W)=0$ for some nonzero $W$.
 - **Annihilators**; **roots of $1$ and the idempotents**; **roots of $0$ and the nilpotents**; **roots of a general element**.
 - **Specificities**; **the algebraic norm**; **multiplication operators**; **the $2\times2$ representation**.
 
@@ -383,12 +383,12 @@ The counterpart *Antisymmetric Quaternionic Algebra of the Biquaternions over $\
 
 ### Acceptance
 
-The $\mathbb{C}e$-valued property and the failure of the Jacobi identity on the space (with witness) proven; the difference from the biquaternion $\mathrm{AQA}$ stated; 11 `.md` and 11 `.context`; the `+` dropped.
+The $\mathbb{C}j$-valued property and the failure of the Jacobi identity on the space (with witness) proven; the difference from the biquaternion $\mathrm{AQA}$ stated; 11 `.md`; the `+` dropped.
 ---
 
 ## Brief 9 — Agent 9 — APS, the antisymmetric plain sesqualgebra (11 articles)
 
-**Deliverable: 11 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 11 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -407,8 +407,8 @@ The $\mathbb{C}e$-valued property and the failure of the Jacobi identity on the 
 ### What this agent does
 
 Writes the **antisymmetric plain sesqualgebra** $\mathrm{APS}$, the antisymmetric part of $\mathrm{GPS}$:
-$$\mathrm{APS}(Z,W) = \tfrac12\bigl(ZW^{*} - \overline{WZ^{*}}\bigr) = (B\bar C - A\bar D)\,e,$$
-a conjugate-alternating sesquilinear operation **with values in the $e$-line $\mathbb{C}e$**, whose algebraic norm is the antisymmetrised square $\mathrm{APS}(Z,Z) = 2\,\mathrm{Im}(A\bar B)\,e$.
+$$\mathrm{APS}(T,W) = \tfrac12\bigl(TW^{*} - \overline{WZ^{*}}\bigr) = (B\bar C - A\bar D)\,e,$$
+a conjugate-alternating sesquilinear operation **with values in the $j$-line $\mathbb{C}j$**, whose algebraic norm is the antisymmetrised square $\mathrm{APS}(T,T) = 2\,\mathrm{Im}(A\bar B)\,j$.
 
 ### Structure-specific content
 
@@ -422,12 +422,12 @@ The counterpart *Antisymmetric Plain Sesqualgebra of the Biquaternions over $\ma
 
 ### Acceptance
 
-The $\mathbb{C}e$-valued property, the non-vanishing diagonal and the failure of the Jacobi identity proven; 11 `.md` and 11 `.context`; the `+` dropped.
+The $\mathbb{C}j$-valued property, the non-vanishing diagonal and the failure of the Jacobi identity proven; 11 `.md`; the `+` dropped.
 ---
 
 ## Brief 10 — Agent 10 — the Algebra closers, Topology and Analysis (16 articles)
 
-**Deliverable: 16 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 16 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -455,7 +455,7 @@ Closes the Algebra of the category and writes **Topology** and **Analysis**.
 ### Specific content
 
 - **Comparison of the Algebraic Structures** — the eight structures side by side, with laws, units, images, norms; the four dead slots restated; the comparison mirroring *Comparison of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
-- **Polar Element Representation** — the polar form of $Z = A+Be$, its uniqueness under the phase-range convention, the two-factor reading through $e_{\pm}$; the corpus's counterpart is *The Polar Element Representation of Biquaternions*.
+- **Polar Element Representation** — the polar form of $T = A+Bj$, its uniqueness under the phase-range convention, the two-factor reading through $\Pi_{1,2}$; the corpus's counterpart is *The Polar Element Representation of Biquaternions*.
 - **Operators** — the operators of the eight structures collected and compared.
 - **Topology** — the Euclidean topology of $\mathbb{R}^{4}$, the unit group as a topological group, the zero-divisor cone, and the topology and metric attached to each of the eight structures (the counterpart is *Topology and Metric for Each of the Twelve Operations*).
 - **Analysis** — the analysis on the algebra; the reduction by the idempotents to **two copies of the complex theory** (from *Harmonic Analysis over Hypercomplex Systems*, §*The Commutative Alternative*), with the discrete reduced biquaternion Fourier transform of Pei–Chang–Ding, its two kernel conventions, its convolution theorem and its cost in complex transforms; regular functions, spectral theory, integration, elementary and higher special functions, the exponential and Lie group structure, and Fueter theory.
@@ -466,12 +466,12 @@ Closes the Algebra of the category and writes **Topology** and **Analysis**.
 
 ### Acceptance
 
-The two-factor reduction is proven and used, not cited alone; the transform cost (two complex DFTs per convolution) is derived; 16 `.md` and 16 `.context`; the `+` dropped.
+The two-factor reduction is proven and used, not cited alone; the transform cost (two complex DFTs per convolution) is derived; 16 `.md`; the `+` dropped.
 ---
 
 ## Brief 11 — Agent 11 — Geometry and Fractal Geometry (14 articles)
 
-**Deliverable: 14 articles**, each as `articles_maths/<slug>.md` plus `articles_maths/<slug>.context`.
+**Deliverable: 14 articles**, each as `articles_maths/<slug>.md`.
 
 ### The articles
 
@@ -509,6 +509,6 @@ Writes **Geometry** and **Fractal Geometry**, closing the category.
 
 ### Acceptance
 
-The reduction of the dynamics to two complex slices is proven, with the effect of the zero divisors on the singular sets; the rotation-versus-boost reading is derived from the polar form; 14 `.md` and 14 `.context`; the `+` dropped.
+The reduction of the dynamics to two complex slices is proven, with the effect of the zero divisors on the singular sets; the rotation-versus-boost reading is derived from the polar form; 14 `.md`; the `+` dropped.
 ---
 

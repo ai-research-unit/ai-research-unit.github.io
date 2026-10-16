@@ -146,7 +146,7 @@ This is the quotient referred to in the category description: the symmetric alge
 
 ### Free Modules and Monomials
 
-Let $M = R^d$ be free with basis $e_1, \ldots, e_d$. By *Symmetric Powers*, each $\operatorname{Sym}^n M$ is free with basis the monomials $e^a = e_1^{a_1} \cdots e_d^{a_d}$, $|a| = n$. Summing over $n$ gives the following statement.
+Let $M = R^d$ be free with basis $e_1, \ldots, e_d$. By *Symmetric Powers*, each $\operatorname{Sym}^n M$ is free with basis the monomials $\exp(a) = e_1^{a_1} \cdots e_d^{a_d}$, $|a| = n$. Summing over $n$ gives the following statement.
 
 **Theorem.** The symmetric algebra on a free module of rank $d$ is the polynomial algebra:
 
@@ -164,7 +164,7 @@ The identification organises the classical vocabulary of polynomials in the lang
 |---|---|
 | Polynomial in $x_1, \ldots, x_d$ | Element of $\operatorname{Sym}(R^d)$ |
 | Degree-$n$ homogeneous polynomial | Element of $\operatorname{Sym}^n(R^d)$ |
-| Monomial $x^a$ with $|a| = n$ | Basis element $e^a$ |
+| Monomial $x^a$ with $|a| = n$ | Basis element $\exp(a)$ |
 | Total degree | Grading degree |
 | Constant polynomial | Element of $\operatorname{Sym}^0(R^d) = R$ |
 | Polynomials with zero constant term | Augmentation ideal $\operatorname{Sym}^{+}(R^d)$ |

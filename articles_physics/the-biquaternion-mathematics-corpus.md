@@ -160,10 +160,10 @@ The four blocks of the study read as a division of labour with the physics. Alge
 | $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ | a general element, with complex coefficients $Q_\mu$ |
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat$ | the four conjugations: quaternion, complex, Hermitian and reversal |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the remarkable subspaces |
-| $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the biquaternion norm, the form that carries the interval |
+| $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm, the form that carries the interval |
 | $\langle\cdot,\cdot\rangle$ | the bracket of the four forms of the study, the subscript recording the conjugation entering each argument |
 | $\Phi$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $M_n(k)$, $\mathrm{Cl}_{p,q}$ | the matrix algebras and the Clifford algebras that appear in the titles below |
+| $M_n(k)$, $\mathrm{Cl}_{n,m}$ | the matrix algebras and the Clifford algebras that appear in the titles below |
 
 ## Further Reading
 

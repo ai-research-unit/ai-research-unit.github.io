@@ -17,7 +17,7 @@ $$
 f(B_t) = f(B_0)+\int_0^tf'(B_s)\,dB_s+\frac12\int_0^tf''(B_s)\,ds ,
 $$
 
-the last term arising because the Brownian path accumulates quadratic variation $\langle B\rangle_t=t$ at a rate that makes the second-order Taylor term contribute at first order. Itô's formula is the fundamental theorem of the subject, and the generator $L$ of the process, defined by the equation $df(X_t)=Lf(X_t)dt+\text{martingale}$, is the object that connects the stochastic equation to the partial differential equations of this Part: the expectation $u(t,x)=\mathbb{E}_x[f(X_t)]$ solves the backward Kolmogorov equation $\partial_tu=Lu$, and with a killing or a discounting factor it solves the Feynman–Kac equation.
+the last term arising because the Brownian path accumulates quadratic variation $\langle B\rangle_t=t$ at a rate that makes the second-order Taylor term contribute at first order. Itô's formula is the fundamental theorem of the subject, and the generator $L$ of the process, defined by the equation $df(X_t)=Lf(X_t)dt+\text{martingale}$, is the object that connects the stochastic equation to the partial differential equations of this Part: the expectation $u(t,x)=\mathbb{E}_x[f(X_t)]$ solves the backward Kolmogorov equation $\partial_t u=Lu$, and with a killing or a discounting factor it solves the Feynman–Kac equation.
 
 The article develops the Brownian motion and its quadratic variation; the Itô integral and its isometry; Itô's formula and the generator; the Stratonovich integral, the correction formula and the conversion between the two forms of an equation; existence and uniqueness of strong solutions by Picard iteration, weak solutions and the Yamada–Watanabe principle; Girsanov's theorem and the change of measure; the Markov property, the Kolmogorov equations and Feynman–Kac; and the standard examples, the geometric Brownian motion, the Ornstein–Uhlenbeck process and the Bessel process. The measure theory is that of *Measure Theory and Integration*, and the probability spaces, martingales and Brownian motion are the notions of the probability articles of this Part, written in parallel; the partial differential equations that appear are those of the earlier article of this Part, and the semigroup theory connecting them is that of the preceding article.
 
@@ -86,7 +86,7 @@ $$
 
 *Proof.* Apply Itô's formula to $f(X_t)$, note that the stochastic integral is a martingale, and take expectations at the stopping time $\tau$; the optional stopping theorem for a bounded martingale and a truncation argument for the integrability of $\tau$ justify the passage.
 
-**Remark (the generator and the operators of the previous articles).** The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial_tu+Lu=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.
+**Remark (the generator and the operators of the previous articles).** The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial_t u+Lu=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.
 
 ## The Stratonovich Integral
 
@@ -153,10 +153,10 @@ and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\
 **Example (a Lipschitz equation).** The equation $dX_t=-\theta X_tdt+\sigma dB_t$ with constants $\theta,\sigma$ satisfies the Lipschitz hypotheses, and its solution is
 
 $$
-X_t = e^{-\theta t}X_0+\sigma\int_0^te^{-\theta(t-s)}dB_s ,
+X_t = \exp(-\theta t)X_0+\sigma\int_0^t\exp(-\theta(t-s))dB_s ,
 $$
 
-the Ornstein–Uhlenbeck process; if $X_0$ is Gaussian so is $X_t$, with mean $e^{-\theta t}\mathbb{E}X_0$ and variance $e^{-2\theta t}\operatorname{Var}X_0+\frac{\sigma^2}{2\theta}(1-e^{-2\theta t})$, tending to the stationary value $\sigma^2/(2\theta)$ as $t\to\infty$. The example is the standard mean-reverting diffusion and the standard instance in which the solution is written explicitly.
+the Ornstein–Uhlenbeck process; if $X_0$ is Gaussian so is $X_t$, with mean $\exp(-\theta t)\mathbb{E}X_0$ and variance $\exp(-2\theta t)\operatorname{Var}X_0+\frac{\sigma^2}{2\theta}(1-\exp(-2\theta t))$, tending to the stationary value $\sigma^2/(2\theta)$ as $t\to\infty$. The example is the standard mean-reverting diffusion and the standard instance in which the solution is written explicitly.
 
 **Remark (non-Lipschitz coefficients).** Without the Lipschitz condition the two uniqueness notions separate, and the classical examples exhibit the two possible failures. Girsanov's example is the one-dimensional equation $dX_t=|X_t|^{\alpha}dB_t$ with $X_0=0$ and $0<\alpha<\frac12$: the process $X\equiv0$ is a solution and there are nontrivial solutions as well, so uniqueness in law fails and hence, by the implication part of the Yamada–Watanabe theorem, pathwise uniqueness fails too. Tanaka's equation $dX_t=\operatorname{sgn}(X_t)\,dB_t$, $X_0=0$, exhibits the sharper phenomenon of pathwise non-uniqueness together with uniqueness in law: by Lévy's characterisation every solution is a Brownian motion, so the law is unique, while two solutions driven by the same $B$ need not coincide. The distinction is not a technicality: it separates the equations that determine the path from the Brownian motion (strong solutions, dependent on $B$) from those that determine only the law (weak solutions, which may be constructed on a different probability space).
 
@@ -171,12 +171,12 @@ $$
 defines a probability measure $\mathbb{Q}\sim\mathbb{P}$, and the process
 
 $$
-\tilde B_t = B_t+\int_0^t\theta_s\,ds
+B^{\mathbb{Q}}_t = B_t+\int_0^t\theta_s\,ds
 $$
 
 is a Brownian motion under $\mathbb{Q}$.
 
-*Proof.* Quoted as standard. The exponential is a positive martingale under Novikov's condition, so $\mathbb{Q}$ is a probability measure equivalent to $\mathbb{P}$; Bayes' rule shows that $\tilde B$ has the martingale property and the correct quadratic variation $t$ under $\mathbb{Q}$, and Lévy's characterisation of Brownian motion (a continuous local martingale with $\langle\tilde B\rangle_t=t$ is a Brownian motion) identifies it.
+*Proof.* Quoted as standard. The exponential is a positive martingale under Novikov's condition, so $\mathbb{Q}$ is a probability measure equivalent to $\mathbb{P}$; Bayes' rule shows that $B^{\mathbb{Q}}$ has the martingale property and the correct quadratic variation $t$ under $\mathbb{Q}$, and Lévy's characterisation of Brownian motion (a continuous local martingale with $\langle B^{\mathbb{Q}}\rangle_t=t$ is a Brownian motion) identifies it.
 
 **Corollary (removing a drift).** An equation with a drift, $dX_t=b(t,X_t)dt+dB_t$, can be transformed into a driftless equation by the change of measure with $\theta_t=b(t,X_t)$; consequently the law of the solution with drift is absolutely continuous with respect to that of the driftless solution on each finite time interval, with the Radon–Nikodym density given above.
 
@@ -195,7 +195,7 @@ and for time-homogeneous coefficients the kernels $P_t$ form a semigroup, $P_{s,
 **Theorem (backward and forward Kolmogorov equations).** Let $u(t,x)=\mathbb{E}_x[f(X_t)]$ for $f$ smooth. Then $u$ solves the **backward Kolmogorov equation**
 
 $$
-\partial_tu = Lu, \qquad u(0,x)=f(x),
+\partial_t u = Lu, \qquad u(0,x)=f(x),
 $$
 
 in the classical sense when the coefficients and $f$ are smooth, and more generally in the weak sense. If $X$ has a transition density $p(t,x,y)$ with respect to Lebesgue measure, then $p$ solves the **forward Kolmogorov** or **Fokker–Planck equation**
@@ -206,7 +206,7 @@ $$
 
 with the initial condition $p(0,\cdot,y)\to\delta_y$.
 
-*Proof.* Apply Itô's formula to $u(T-t,X_t)$: the drift is $(-\partial_tu+Lu)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $u(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.
+*Proof.* Apply Itô's formula to $u(T-t,X_t)$: the drift is $(-\partial_t u+Lu)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $u(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.
 
 **Theorem (Feynman–Kac).** Let $V$ be bounded and continuous and let $f$ be bounded. Then
 
@@ -214,11 +214,11 @@ $$
 u(t,x) = \mathbb{E}_x\left[\exp\left(-\int_0^tV(X_s)ds\right)f(X_t)\right]
 $$
 
-is the unique bounded solution of $\partial_tu = Lu - Vu$ with $u(0,x)=f(x)$.
+is the unique bounded solution of $\partial_t u = Lu - Vu$ with $u(0,x)=f(x)$.
 
 *Proof.* Quoted as standard (the Feynman–Kac formula). Let $Z_t = \exp(-\int_0^tV(X_s)ds)\,u(t,X_t)$. Itô's formula applied to the product gives
-$dZ_t = e^{-\int_0^tV}\bigl(\partial_tu+Lu-Vu\bigr)(t,X_t)\,dt+d(\text{martingale})$;
-when $\partial_tu=Lu-Vu$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=u(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$.
+$dZ_t = \exp(-\int_0^tV)\bigl(\partial_t u+Lu-Vu\bigr)(t,X_t)\,dt+d(\text{martingale})$;
+when $\partial_t u=Lu-Vu$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=u(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$.
 
 **Example (geometric Brownian motion).** For $dX_t=\mu X_tdt+\sigma X_tdB_t$ with constants $\mu,\sigma$, the solution is
 

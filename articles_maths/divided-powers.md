@@ -230,8 +230,8 @@ Conversely, suppose $c$ is an isomorphism. Take a free module of rank one, $M = 
 | Notion | Symmetric algebra $\operatorname{Sym}(M)$ | Divided power algebra $\Gamma(M)$ |
 |---|---|---|
 | Degree-one part | $M$ | $M$ |
-| Basis for $M$ free, $|a| = n$ | $e^a$ | $\gamma^{(a)}$ |
-| Product | $e^a e^b = e^{a+b}$ | $\gamma^{(a)}\gamma^{(b)} = \binom{a+b}{a}\gamma^{(a+b)}$ |
+| Basis for $M$ free, $|a| = n$ | $\exp(a)$ | $\gamma^{(a)}$ |
+| Product | $\exp(a) \exp(b) = \exp(a+b)$ | $\gamma^{(a)}\gamma^{(b)} = \binom{a+b}{a}\gamma^{(a+b)}$ |
 | Powers of one element | $x^m x^n = x^{m+n}$ | $\gamma_m(x)\gamma_n(x) = \binom{m+n}{m}\gamma_{m+n}(x)$ |
 | Composition | $x \mapsto x$ | $\gamma_m(\gamma_n(x)) = \frac{(mn)!}{m!(n!)^m}\gamma_{mn}(x)$ |
 | Concrete model over $\mathbb{Q}$ | polynomials $x^a$ | $x^a/a!$ |

@@ -85,7 +85,7 @@ $$
 \deg f = \frac{\int_{S^n} f^*\omega}{\int_{S^n}\omega},
 $$
 
-an immediate consequence of the change of variables formula for the integral of a top form, as constructed in the written *Differential Forms and Stokes' Theorem*. This article does not use the formula as a definition: the degree is homological, and the integral formula is quoted for orientation. The measure theory behind the change of variables formula, and the $L^p$ theory of the resulting densities, belong to Part III.
+an immediate consequence of the change of variables formula for the integral of a top form, as constructed in the written *Differential Forms and Stokes' Theorem*. This article does not use the formula as a definition: the degree is homological, and the integral formula is quoted for orientation. The measure theory behind the change of variables formula, and the $L^{n}$ theory of the resulting densities, belong to Part III.
 
 ## The Degree of a Map of Manifolds
 

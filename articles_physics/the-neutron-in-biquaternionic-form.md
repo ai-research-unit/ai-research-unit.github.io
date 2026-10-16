@@ -8,7 +8,7 @@ The answer is stated at the outset because the pull toward closure is strong. Th
 
 A second honest point belongs here. The series takes the standing position that its predictions agree with standard physics because it is a **reformulation**, not a new theory. For the neutron that position is radical: nothing here distinguishes the framework's neutron from the Standard Model's, and the tree-level spin coupling it inherits gives a **zero** magnetic moment for a neutral structureless Dirac field, which is not the neutron. The neutron is exactly the object on which a colourless reformulation has nothing to say about structure, and the article records the boundary rather than crossing it.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The spinor module is $\Delta = S\oplus\bar{S}$, with $S=\mathbb{C}^2$ the unique simple left $\mathbb{B}$-module, the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2, I_2)$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. The charge operator inherited from the chiral-fermion article is $Q = q_LP_L + q_RP_R$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, and the word *quark* are **standard-model notation, not framework objects**; they are used only where standard physics is quoted or where an object is named as absent.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The spinor module is $\Delta = S\oplus\bar{S}$, with $S=\mathbb{C}^2$ the unique simple left $\mathbb{B}$-module, the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2, I_2)$, and the chiral projectors are $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$. The charge operator inherited from the chiral-fermion article is $Ϙ = ϙ_LP_L + ϙ_RP_R$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, and the word *quark* are **standard-model notation, not framework objects**; they are used only where standard physics is quoted or where an object is named as absent.
 
 ## The Neutron as a Spin-$\tfrac12$ Biquaternion Field
 
@@ -34,46 +34,46 @@ with $m_n$ the neutron mass. The Lorentz group acts on the module through $SL(2,
 
 the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 1.293$ MeV): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the real-vector part of $\mathbb{M}_-$ is $\mathrm{SU}(2)$ under the commutator — but that is the rotation/gauge algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
 
-**Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it, but the doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: the two superpositions $D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}$ and $N=(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma)i\vec{\tau}$, with $\vec{\nu}$ the axis of the idempotent $\sigma$ and $\vec{\tau}\perp\vec{\nu}$, have **equal mass by construction** — one Lanczos mass parameter $m$ for both — and different charge, and Nishijima's two-parameter group $G_N=\sigma e^{i\alpha}+\bar{\sigma}e^{i\beta}$ leaves both intact, sending them to $e^{-\vec{\nu}\alpha}D$ and $e^{-\vec{\nu}\beta}N$. Two qualifications keep this from overturning the paragraph above. First, the isospin of that construction acts by **right** multiplication on $\tilde{A}$, $\tilde{B}$ of the doubled field, not by the left multiplication and commutator of the material sector's $\mathrm{SU}(2)$, so the two groups remain different objects. Second, the route doubles the field and still does not fix $m$. The precise statement is that the near-degeneracy is an **import in this equation** and a **structural feature of the doubled one**; the neutron article uses the single-field equation, and the choice is the reason the proton mass here is a parameter.
+**Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it, but the doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: the two superpositions $D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}$ and $N=(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma)i\vec{\tau}$, with $\vec{\nu}$ the axis of the idempotent $\sigma$ and $\vec{\tau}\perp\vec{\nu}$, have **equal mass by construction** — one Lanczos mass parameter $m$ for both — and different charge, and Nishijima's two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ leaves both intact, sending them to $\exp(-\vec{\nu}\alpha)D$ and $\exp(-\vec{\nu}\beta)N$. Two qualifications keep this from overturning the paragraph above. First, the isospin of that construction acts by **right** multiplication on $\tilde{A}$, $\tilde{B}$ of the doubled field, not by the left multiplication and commutator of the material sector's $\mathrm{SU}(2)$, so the two groups remain different objects. Second, the route doubles the field and still does not fix $m$. The precise statement is that the near-degeneracy is an **import in this equation** and a **structural feature of the doubled one**; the neutron article uses the single-field equation, and the choice is the reason the proton mass here is a parameter.
 
 ## Neutrality and the Charge Operator
 
 The neutron's charge is zero. Of the neutron's properties, neutrality looks like the one the framework might own, because the framework does have a charge operator. The chiral-fermion article constructs it on the Dirac module as
 
 $$
-Q \;=\; q_L\,P_L + q_R\,P_R,
+Ϙ \;=\; ϙ_L\,P_L + ϙ_R\,P_R,
 \qquad
-D_\mu = \partial_\mu + \frac{i}{\hbar}A_\mu Q,
+D_\mu = \partial_\mu + \frac{i}{\hbar}A_\mu Ϙ,
 \qquad
-[D_\mu,D_\nu] = \frac{i}{\hbar}F_{\mu\nu}Q,
+[D_\mu,D_\nu] = \frac{i}{\hbar}F_{\mu\nu}Ϙ,
 $$
 
-with independent chirality charges $q_L,q_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $q_L=q_R$). The operator $Q$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to $\gamma_5$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
+with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix (they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$). The operator $Ϙ$ is a module endomorphism, not an element of $\mathbb{B}$ multiplying from the left: its chiral part is proportional to $\gamma_5$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$. Written in the block basis $(\psi_L,\psi_R)$ it is diagonal,
 
 $$
-Q \;=\; \mathrm{diag}\big(q_L I_2,\ q_R I_2\big) \;\cong\; \mathrm{diag}\big(q_L,q_L,q_R,q_R\big),
+Ϙ \;=\; \mathrm{diag}\big(ϙ_L I_2,\ ϙ_R I_2\big) \;\cong\; \mathrm{diag}\big(ϙ_L,ϙ_L,ϙ_R,ϙ_R\big),
 $$
 
-so its spectrum is $\{q_L,q_R\}$, each with multiplicity two. A single-particle state is **neutral** when it is annihilated by the charge operator, $Q\psi=0$. The kernel is elementary and was recomputed exactly:
+so its spectrum is $\{ϙ_L,ϙ_R\}$, each with multiplicity two. A single-particle state is **neutral** when it is annihilated by the charge operator, $Ϙ\psi=0$. The kernel is elementary and was recomputed exactly:
 
-- If **both** $q_L$ and $q_R$ are nonzero, then $\ker Q = \{0\}$: the module contains no neutral single-particle state at all.
-- If $q_L=0$ and $q_R\neq0$, then $\ker Q = S$, the two-complex-dimensional left-handed block.
-- If $q_R=0$ and $q_L\neq0$, then $\ker Q = \bar{S}$, the right-handed block.
-- If $q_L=q_R=0$ the whole module is neutral (the trivially uncoupled case).
+- If **both** $ϙ_L$ and $ϙ_R$ are nonzero, then $\ker Ϙ = \{0\}$: the module contains no neutral single-particle state at all.
+- If $ϙ_L=0$ and $ϙ_R\neq0$, then $\ker Ϙ = S$, the two-complex-dimensional left-handed block.
+- If $ϙ_R=0$ and $ϙ_L\neq0$, then $\ker Ϙ = \bar{S}$, the right-handed block.
+- If $ϙ_L=ϙ_R=0$ the whole module is neutral (the trivially uncoupled case).
 
-Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $q_L=q_R=0$, the state that achieves it is **chirality-definite**. When $q_L=0$ the neutral space is $S$, on which $\gamma_5=-1$; when $q_R=0$ it is $\bar{S}$, with $\gamma_5=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**. When $ϙ_L=0$ the neutral space is $S$, on which $\gamma_5=-1$; when $ϙ_R=0$ it is $\bar{S}$, with $\gamma_5=+1$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed); so the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: on the module, neutrality and the massive Dirac interpretation pull in opposite directions.
 
 **Can a neutral composite be expressed?** The neutron is not a single module element; it is a bound state of three fermions. The framework does have a many-particle construction: the Fock-space article builds the antisymmetric tensor algebra of the spinor module, with creation and annihilation operators, so a three-fermion **state** is expressible in principle. But the three things the neutron needs are absent. First, **colour**: there is no three-dimensional internal space, and the module ceiling forbids a colour triplet, so any three constituents would be three excitations of one colourless species rather than three coloured quarks. Second, **binding**: the framework has no confinement mechanism and no bound-state construction, so nothing makes a three-particle state a neutron rather than a free scattering state, and there is no mass gap to hold it below threshold. Third, a **selection rule** fixing the constituent number three, the baryon number, and the spin-$\tfrac12$ of the bound state: none is supplied. The charge operator is defined on the one-particle module; a total charge on the Fock space would be its second-quantized sum $\sum_i Q_i$, additive by construction, but the corpus does not construct it, and even granting it the condition fixes a relation among unfixed charges rather than a value. If one imposes the additive condition on three constituents, neutrality reads
 
 $$
-n_L\,q_L + n_R\,q_R = 0, \qquad n_L+n_R = 3,
+n_L\,ϙ_L + n_R\,ϙ_R = 0, \qquad n_L+n_R = 3,
 $$
 
-which has solutions for special charge ratios (for instance $(n_L,n_R)=(1,2)$ requires $q_R=-\tfrac12 q_L$), but nothing in the framework fixes $q_L$ or $q_R$, and the standard quark charges are not framework objects. Reading the values $\tfrac23$ and $-\tfrac13$ into $q_L$ and $q_R$ would be exactly the manufacture of the neutrality from an imported quark model, and this article does not do it.
+which has solutions for special charge ratios (for instance $(n_L,n_R)=(1,2)$ requires $ϙ_R=-\tfrac12 ϙ_L$), but nothing in the framework fixes $ϙ_L$ or $ϙ_R$, and the standard quark charges are not framework objects. Reading the values $\tfrac23$ and $-\tfrac13$ into $ϙ_L$ and $ϙ_R$ would be exactly the manufacture of the neutrality from an imported quark model, and this article does not do it.
 
-**Verdict on the trap.** The framework's charge operator can *state* the neutron's neutrality as the constraint $Q\psi=0$, and it classifies the single-particle solutions of that constraint; a neutral many-particle **state** is not ruled out in principle once a Fock space and an additive total charge are granted. But the neutron as a **bound colour-singlet composite** is not expressible: colour, confinement, and the selection rule that fixes three constituents are all absent. And the neutrality is not *derived*, because the framework contains no constituents whose charges could sum to zero. The honest sentence is: **neutrality is expressible as a constraint on unfixed charges, a neutral bound composite is not expressible, and the neutrality itself is imported from standard physics.** That is a negative result, and it is reported as one.
+**Verdict on the trap.** The framework's charge operator can *state* the neutron's neutrality as the constraint $Ϙ\psi=0$, and it classifies the single-particle solutions of that constraint; a neutral many-particle **state** is not ruled out in principle once a Fock space and an additive total charge are granted. But the neutron as a **bound colour-singlet composite** is not expressible: colour, confinement, and the selection rule that fixes three constituents are all absent. And the neutrality is not *derived*, because the framework contains no constituents whose charges could sum to zero. The honest sentence is: **neutrality is expressible as a constraint on unfixed charges, a neutral bound composite is not expressible, and the neutrality itself is imported from standard physics.** That is a negative result, and it is reported as one.
 
 ## Composite Character: No Colour, No Confinement, No Constituents
 
@@ -91,10 +91,10 @@ The composite character is thus not a gap of the article; it is the framework's 
 
 ## The Magnetic Moment: A Neutral Field with a Nonzero Moment
 
-The electron article derives, from the $1/2m$ coefficient produced by the Dirac equation under minimal coupling, the tree-level gyromagnetic relation $\vec\mu = (g q/2m)\vec S$ with $g=2$. Applied to a **neutral** structureless Dirac fermion the same treatment gives
+The electron article derives, from the $1/2m$ coefficient produced by the Dirac equation under minimal coupling, the tree-level gyromagnetic relation $\vec\mu = (g ϙ/2m)\vec S$ with $g=2$. Applied to a **neutral** structureless Dirac fermion the same treatment gives
 
 $$
-\vec\mu \;=\; \frac{g\,q}{2m}\,\vec S \;=\; 0 \qquad (q=0),
+\vec\mu \;=\; \frac{g\,ϙ}{2m}\,\vec S \;=\; 0 \qquad (ϙ=0),
 $$
 
 for any $g$: a neutral point Dirac fermion has no magnetic moment. The measured neutron moment is
@@ -115,7 +115,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | unique simple module $\Delta=S\oplus\bar{S}$, spinor representation $(\tfrac12,0)\oplus(0,\tfrac12)$ |
 | Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ |
-| Neutrality constraint $Q\psi=0$ and its kernel | Derived (framework) | charge operator $Q=q_LP_L+q_RP_R$; kernel trivial unless one chirality charge vanishes |
+| Neutrality constraint $Ϙ\psi=0$ and its kernel | Derived (framework) | charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$; kernel trivial unless one chirality charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
 | The identification "*this* field is the neutron" | Represented | the inserted mass and charge |
@@ -143,7 +143,7 @@ The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquat
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same objects, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
-The framework's charge operator $Q=q_LP_L+q_RP_R$ acts on the module with spectrum $\{q_L,q_R\}$. The neutrality constraint $Q\psi=0$ has a nonzero solution only if one chirality is uncoupled ($q_L=0$ or $q_R=0$), and, apart from the trivially uncoupled case $q_L=q_R=0$, the neutral solution is then chirality-definite, so it carries no Dirac mass bilinear; whether it is massive depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
+The framework's charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$ acts on the module with spectrum $\{ϙ_L,ϙ_R\}$. The neutrality constraint $Ϙ\psi=0$ has a nonzero solution only if one chirality is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral solution is then chirality-definite, so it carries no Dirac mass bilinear; whether it is massive depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
 
 The framework does have a Fock space, so a neutral many-particle **state** is not ruled out in principle. But no neutral **bound composite** is expressible: there is no colour, no confinement, no binding, and no selection rule fixing three constituents. The neutrality is therefore stateable as a constraint on unfixed charges but not derived, and manufacturing it from the standard quark charges would be an import.
 
@@ -165,8 +165,8 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module; unique simple left module |
 | $\gamma_5 = \mathrm{diag}(-I_2,I_2)$ | Chirality operator, $\gamma_5^2=I_4$ |
 | $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |
-| $Q = q_LP_L+q_RP_R = \mathrm{diag}(q_L,q_L,q_R,q_R)$ | Charge operator on the module; $q_L,q_R$ unfixed parameters |
-| $Q\psi=0$ | Neutrality constraint; kernel trivial unless $q_L=0$ or $q_R=0$ |
+| $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
+| $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |
@@ -178,7 +178,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 
 - *The Electron in Biquaternionic Form* — the sibling accounting for a fundamental spin-$\tfrac12$ fermion, and the source of the tree-level $g=2$ relation used here to show that a neutral structureless Dirac field has zero magnetic moment.
 - *The Dirac Equation in Biquaternionic Form* — the biquaternion Dirac equation, its mass term, plane-wave solutions, and the mass-shell relation used throughout.
-- *Chiral Fermions in the Biquaternion Framework* — the Dirac module, the projectors, the charge operator $Q=q_LP_L+q_RP_R$, the mass selection rule, and the real structure whose interpretation is left open here.
+- *Chiral Fermions in the Biquaternion Framework* — the Dirac module, the projectors, the charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$, the mass selection rule, and the real structure whose interpretation is left open here.
 
 - *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* — the many-particle space (the antisymmetric tensor algebra of the spinor module) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
@@ -191,5 +191,5 @@ The neutron's composite character is not reached. The framework has no colour gr
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin observables and their algebra, used here only as the generic spin structure the neutron inherits.
 - *The Spin–Statistics Theorem in Biquaternionic Form* — why the neutron, as a spin-$\tfrac12$ fermion, obeys Fermi–Dirac statistics, another generic rather than neutron-specific consequence.
 - *Canonical Quantization of the Biquaternion Dirac Field* — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.
-- F. Gürsey, "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, and K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the neutron as the second superposition of Lanczos's doubled system and for the two-parameter group $G_N=\sigma e^{i\alpha}+\bar{\sigma}e^{i\beta}$ under which it and the proton carry independent phases.
+- F. Gürsey, "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, and K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the neutron as the second superposition of Lanczos's doubled system and for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ under which it and the proton carry independent phases.
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $N=(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma)i\vec{\tau}$.

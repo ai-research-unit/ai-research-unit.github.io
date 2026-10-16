@@ -172,20 +172,20 @@ $$
 is well defined and injective; its image is a closed smooth submanifold, and the map is an embedding. The image is the set of **decomposable** classes, characterised by the **Plücker relations**: for $1 \leq k \leq n$ and indices $i_1, \ldots, i_{k+1}$ and $j_1, \ldots, j_{k-1}$,
 
 $$
-\sum_{r=1}^{k+1}(-1)^r p_{i_1 \ldots \widehat{i_r} \ldots i_{k+1}}\, p_{i_r j_1 \ldots j_{k-1}} = 0,
+\sum_{r=1}^{k+1}(-1)^r n_{i_1 \ldots \widehat{i_r} \ldots i_{k+1}}\, n_{i_r j_1 \ldots j_{k-1}} = 0,
 $$
 
-where $p_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.
+where $n_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.
 
 **Proof sketch.** Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes.
 
-**Example (lines in $\mathbb{P}^3$).** For $k = 2$, $n = 4$ the Plücker vector has six coordinates $p_{ij}$, $i<j$, and there is a single Plücker relation
+**Example (lines in $\mathbb{P}^3$).** For $k = 2$, $n = 4$ the Plücker vector has six coordinates $n_{ij}$, $i<j$, and there is a single Plücker relation
 
 $$
-p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0,
+n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0,
 $$
 
-which is the **Klein quadric**, a smooth quadric hypersurface in $\mathbb{RP}^5$. The Grassmannian $\mathrm{Gr}_2(\mathbb{R}^4)$ is therefore a four-dimensional quadric in $\mathbb{RP}^5$, the Klein quadric, whose two rulings are the two families of lines of $\mathbb{RP}^3$ and realise the Klein correspondence between the points of one projective three-space and the lines of another. The relation is verified by expanding the six minors of a $2 \times 4$ matrix: the identity $p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$ is the Laplace expansion of the determinant of a $2\times 2$ matrix with repeated rows. The projective theory of the quadric and of the correspondence is in the article *Projective Geometry*, written in parallel.
+which is the **Klein quadric**, a smooth quadric hypersurface in $\mathbb{RP}^5$. The Grassmannian $\mathrm{Gr}_2(\mathbb{R}^4)$ is therefore a four-dimensional quadric in $\mathbb{RP}^5$, the Klein quadric, whose two rulings are the two families of lines of $\mathbb{RP}^3$ and realise the Klein correspondence between the points of one projective three-space and the lines of another. The relation is verified by expanding the six minors of a $2 \times 4$ matrix: the identity $n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0$ is the Laplace expansion of the determinant of a $2\times 2$ matrix with repeated rows. The projective theory of the quadric and of the correspondence is in the article *Projective Geometry*, written in parallel.
 
 **Remark (complex and quaternionic analogues).** The same construction with $\mathbb{C}$ or $\mathbb{H}$ in place of $\mathbb{R}$ gives the complex Grassmannian $\mathrm{Gr}_k(\mathbb{C}^n)$ and the quaternionic Grassmannian $\mathrm{Gr}_k(\mathbb{H}^n)$, of real dimensions $2k(n-k)$ and $4k(n-k)$, each a complex or quaternionic manifold and a symmetric space of compact type; the complex case carries the natural Kähler structure of the article *Kähler Geometry*, written in parallel, whose fundamental form and complex structure are defined there, and the complex Grassmannians are the simplest Kähler symmetric spaces. The real dimensions are computed from $\dim_{\mathbb{R}}\mathbb{K} = 1, 2, 4$ for $\mathbb{K} = \mathbb{R}, \mathbb{C}, \mathbb{H}$ and are $(\dim_{\mathbb{R}}\mathbb{K})k(n-k)$.
 
@@ -231,7 +231,7 @@ $$
 
 and in particular $\chi(\mathbb{RP}^{n-1}) = 1$ for $n$ odd and $0$ for $n$ even.
 
-**Proof sketch.** The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $q \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.
+**Proof sketch.** The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $m \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.
 
 **Example.** For $k = 2$, $n = 4$ the cells have dimensions $0, 1, 2, 2, 3, 4$ and $\chi = 1 - 1 + 2 - 1 + 1 = 2 = \binom{2}{1}$; the integral cohomology has $2$-torsion in degree $3$, so the integral Betti numbers are not the cell counts while the mod-$2$ Betti numbers are.
 
@@ -251,7 +251,7 @@ the classifying space of rank-$k$ real vector bundles, and for a suitable topolo
 
 **Corollary.** The characteristic classes of a real vector bundle are the pullbacks of the classes of the universal bundle on $BO(k)$; the Stiefel–Whitney and Pontryagin classes are computed by the cohomology of the Grassmannian, which is why the Schubert cells of the previous section are the computational device for the characteristic classes.
 
-**Theorem (Gauss map).** Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The **Gauss map** $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(p) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.
+**Theorem (Gauss map).** Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The **Gauss map** $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(n) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.
 
 **Proof.** The tangent space varies smoothly with the point, so the normal subspace does too; the two pullback identifications are the definitions of the bundles involved.
 
@@ -279,8 +279,8 @@ The Grassmannian embeds in the projective space of the $k$-th exterior power by 
 | $\sigma_W = P_W - P_{W^\perp}$ | Geodesic symmetry; the symmetric space involution |
 | rank $\min(k, n-k)$ | Rank of the symmetric space; dimension of a maximal flat |
 | $\iota : \mathrm{Gr}_k \to \mathbb{P}(\bigwedge^kV)$ | Plücker embedding; image cut out by the Plücker relations |
-| $p_{i_1\ldots i_k}$ | Plücker coordinates in the basis of exterior monomials |
-| $p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$ | The Klein quadric, for $k=2$, $n=4$ |
+| $n_{i_1\ldots i_k}$ | Plücker coordinates in the basis of exterior monomials |
+| $n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0$ | The Klein quadric, for $k=2$, $n=4$ |
 | $e_\lambda$, $X_\lambda$, $|\lambda| = \sum(\lambda_i - i)$ | Schubert cell, Schubert variety, dimension of a cell |
 | $\binom{n}{k}_t$, $\chi = \binom{n}{k}_{t=-1}$ | Gaussian binomial; cell-count generating function; Euler characteristic |
 | $BO(k) = \mathrm{Gr}_k(\mathbb{R}^\infty)$ | Classifying space of rank-$k$ real bundles |

@@ -7,7 +7,7 @@ The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar lin
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $N$, $B$ are the split-quaternion norm and its polarisation.
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in *Split-Quaternion Subspaces and the Involutions*, and $\langle\cdot\rangle_{\natural}$, $B$ are the split-quaternion norm and its polarisation.
 
 ## The Three Decompositions
 
@@ -30,7 +30,7 @@ The three decompositions are the **scalar–vector** decomposition, and the two 
 | $\mathbb{D}_2$ | closed under products of $1, e_2$ | $1,e_2$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_2^2$, signature $(1,1)$ |
 | $\mathbb{D}_3$ | $\alpha(\tilde q) = \tilde q$ | $1,e_3$ | $2$ | yes, $\cong \mathbb{D}$ | $q_0^2-q_3^2$, signature $(1,1)$ |
 
-Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.
+Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $\langle\cdot\rangle_{\natural}$; all four are non-degenerate, the first definite and the other three indefinite.
 
 ## The Four Coordinate Blocks
 
@@ -115,10 +115,10 @@ $S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cd
 The product of two vectors is not a vector: it splits as
 
 $$
-\vec u\vec v = -B(\vec u,\vec v)\cdot 1 + \tfrac{1}{2}[\vec u,\vec v],
+\vec q\vec v = -B(\vec q,\vec v)\cdot 1 + \tfrac{1}{2}[\vec q,\vec v],
 $$
 
-with scalar part $-B(\vec u,\vec v) \in S$ and the remainder $\tfrac{1}{2}[\vec u,\vec v] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,
+with scalar part $-B(\vec q,\vec v) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec v] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,
 
 $$
 [e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,
@@ -171,7 +171,7 @@ The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, an
 | $\mathbb{D}_2 = \langle 1,e_2\rangle$, $\mathbb{D}_3 = \langle 1,e_3\rangle$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 | $\langle \cdot \rangle$ | real span of the displayed elements | this article |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
-| $B$, $N$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |
+| $B$, $\langle\cdot\rangle_{\natural}$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q,\tilde p] = \tilde q \tilde p-\tilde p\tilde q$ | the commutator | *Split-Quaternion Scalar and Vector Subspaces* |
 
 ## Further Reading

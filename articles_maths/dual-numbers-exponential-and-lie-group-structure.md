@@ -11,7 +11,7 @@ $$
 A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $N(A) = a^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\rangle = a^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$.
 
 ## The Lie Algebra Structure
 
@@ -64,13 +64,13 @@ Over $R = \mathbb{R}$ the series converges for every $A$, in the topology of $\m
 **Theorem.** For every $A = a + \varepsilon a'$,
 
 $$
-\exp(a + \varepsilon a') = e^{a}\bigl(1 + \varepsilon a'\bigr) = e^{a} + e^{a}\varepsilon a'.
+\exp(a + \varepsilon a') = \exp(a)\bigl(1 + \varepsilon a'\bigr) = \exp(a) + \exp(a)\varepsilon a'.
 $$
 
 **Proof.** By the binomial expansion and $\varepsilon^2 = 0$, $(a + \varepsilon a')^k = a^k + k a^{k-1}\varepsilon a'$ for $k \geq 1$. Summing,
 
 $$
-\exp(a + \varepsilon a') = \sum_{k \geq 0}\frac{a^k}{k!} + \varepsilon \sum_{k \geq 1}\frac{k a^{k-1}a'}{k!} = e^{a} + \varepsilon\, a' \sum_{k \geq 1}\frac{a^{k-1}}{(k-1)!} = e^{a} + e^{a}\varepsilon a',
+\exp(a + \varepsilon a') = \sum_{k \geq 0}\frac{a^k}{k!} + \varepsilon \sum_{k \geq 1}\frac{k a^{k-1}a'}{k!} = \exp(a) + \varepsilon\, a' \sum_{k \geq 1}\frac{a^{k-1}}{(k-1)!} = \exp(a) + \exp(a)\varepsilon a',
 $$
 
 the two series being the exponential of $a$.
@@ -91,7 +91,7 @@ $$
 \exp(A + B) = \exp(A)\exp(B).
 $$
 
-**Proof.** The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $A, B$ the identity $\exp(A+B) = \exp(A)\exp(B)$ follows by the binomial theorem. Alternatively, $\exp(a + \varepsilon a')\exp(b + \varepsilon b') = e^a(1 + \varepsilon a')e^b(1 + \varepsilon b') = e^{a+b}(1 + (a'+b')\varepsilon) = \exp((a+b) + \varepsilon(a'+b'))$, matching $A + B$.
+**Proof.** The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $A, B$ the identity $\exp(A+B) = \exp(A)\exp(B)$ follows by the binomial theorem. Alternatively, $\exp(a + \varepsilon a')\exp(b + \varepsilon b') = \exp(a)(1 + \varepsilon a')\exp(b)(1 + \varepsilon b') = \exp(a+b)(1 + (a'+b')\varepsilon) = \exp((a+b) + \varepsilon(a'+b'))$, matching $A + B$.
 
 So $\exp$ is a homomorphism of groups, and the image is a subgroup of the unit group.
 
@@ -135,7 +135,7 @@ $$
 
 is injective, with image exactly the identity component $(\mathbb{D}')^\times_0 = \{a > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.
 
-**Proof.** $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ has real part $e^{a} > 0$, so the image is contained in $\{a > 0\}$. Conversely, for $b + \varepsilon b'$ with $b > 0$ set $a = \log b$ and $a' = b'/b$; then $\exp(a + \varepsilon a') = b(1 + \varepsilon b'/b) = b + \varepsilon b'$, so the image is $\{a > 0\}$. For injectivity, $\exp(a + \varepsilon a') = 1$ forces $e^{a} = 1$, hence $a = 0$, and then $e^{a}a' = a' = 0$. The map is smooth with the explicit smooth inverse $b + \varepsilon b' \mapsto \log b + (b'/b)\varepsilon$ on $\{b > 0\}$, so it is a diffeomorphism.
+**Proof.** $\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$ has real part $\exp(a) > 0$, so the image is contained in $\{a > 0\}$. Conversely, for $b + \varepsilon b'$ with $b > 0$ set $a = \log b$ and $a' = b'/b$; then $\exp(a + \varepsilon a') = b(1 + \varepsilon b'/b) = b + \varepsilon b'$, so the image is $\{a > 0\}$. For injectivity, $\exp(a + \varepsilon a') = 1$ forces $\exp(a) = 1$, hence $a = 0$, and then $\exp(a)a' = a' = 0$. The map is smooth with the explicit smooth inverse $b + \varepsilon b' \mapsto \log b + (b'/b)\varepsilon$ on $\{b > 0\}$, so it is a diffeomorphism.
 
 **Remark.** The kernel of the exponential is trivial. This is the sharpest contrast with the complex and matrix cases, where the exponential has a nontrivial kernel: on $\mathbb{C}$ the kernel is $2\pi i\mathbb{Z}$, and on $GL_2(\mathbb{C})$ the exponential is surjective but not injective, with kernel the matrices having eigenvalues in $2\pi i\mathbb{Z}$. Here the exponential is a global diffeomorphism from the abelian Lie algebra onto the identity component, the maximal simply connected abelian case.
 
@@ -209,7 +209,7 @@ The dual row is the two-dimensional row with the collapse of the quotient: the p
 
 ## Summary
 
-The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.
+The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.
 
 ## Summary of Notation
 
@@ -223,7 +223,7 @@ The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie alg
 | $[A,B] = AB - BA$ | Lie bracket, identically zero |
 | $\mathrm{G} = \mathbb{D}'$ | Abelian Lie algebra of the dual numbers |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, the nilpotent direction |
-| $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ | Exponential |
+| $\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$ | Exponential |
 | $(\mathbb{D}')^\times = \{a \neq 0\}$ | Group of units |
 | $G = 1 + \mathrm{M}$ | Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$ |
 | $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$ | Unit group modulo scaling |

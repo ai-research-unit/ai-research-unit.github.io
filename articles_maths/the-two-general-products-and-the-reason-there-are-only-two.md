@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ carries six algebraic structures, and all six descend from two multiplications. This article states the general construction that produces those multiplications, proves that exactly two general products arise over $\mathbb{R}$, and reads the six structures the two generate. It is the synthesis article of the block. The two general products, with their laws and their tables, are *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the six products their halves produce are *The 6 Products of the Quaternion Real Space*; the six structures and their names are *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; this article re-derives none of them. What it owns is the construction, the count, and the passage from the two general products to the six structures. The forms the products carry are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*; both are below this article in this category.
+The quaternion algebra $\mathbb{H}$ carries, besides the algebra product of the *Quaternions* category, the companion products of this category, and they all descend from two multiplications. This article states the general construction that produces those multiplications, proves that exactly two general products arise over $\mathbb{R}$, and reads the companion products the two generate. It is the synthesis article of the block. The two general products, with their laws and their tables, are *The Two General Products of the Quaternioid $\mathbb{R}$ Space*; the six products their halves produce are *The 6 Products of the Quaternioid Real Space*; the three companion structures and their names are *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; this article re-derives none of them. What it owns is the construction, the count, and the passage from the two general products to the companion products. The forms the products carry are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*; the norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*; both are below this article in this category.
 
 ## The General Construction
 
@@ -44,13 +44,13 @@ $$
 
 The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products read at conjugated arguments, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
 
-## The Six Structures the Two Products Generate
+## The Companion Structures the Two Products Generate
 
 Each general product splits into a **symmetric part** and an **antisymmetric part** under the exchange of its two slots. Over $\mathbb{R}$ the base ring has no nontrivial involution, the two slots are both linear, and the exchange is the bare interchange of the two arguments, so the split is
 
 $$
 \tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q ,\qquad
-\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q ,
+\tilde p^{\natural}\tilde q=\langle\tilde p,\tilde q\rangle_{\natural}e_0+\tilde p\wedge^{\natural}\tilde q ,
 $$
 
 with the four halves
@@ -61,31 +61,31 @@ $$
 $$
 
 $$
-N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p) ,\qquad
+\langle\tilde p,\tilde q\rangle_{\natural}e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p) ,\qquad
 \tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p) .
 $$
 
-The two general products and the four halves are the six products of the chapter, and the six products carry the six structures. The two indices that name them are the **family**, plain or quaternionic, and the **half**, general, symmetric or antisymmetric:
+The two general products and their four halves are the six products of the chapter, and three of them — the symmetric plain, the antisymmetric plain and the general quaternionic — carry the companion structures. The two indices that name them are the **family**, plain or quaternionic, and the **half**, general, symmetric or antisymmetric:
 
 | half | plain | quaternionic |
 |---|---|---|
-| general | $\mathrm{GPA}$, $\tilde p\tilde q$ | $\mathrm{GQA}$, $\tilde p^{\natural}\tilde q$ |
-| symmetric | $\mathrm{SPA}$, $\tilde p\bullet\tilde q$ | $\mathrm{SQA}$, $N(\tilde p,\tilde q)e_0$ |
-| antisymmetric | $\mathrm{APA}$, $\tilde p\wedge\tilde q$ | $\mathrm{AQA}$, $\tilde p\wedge^{\natural}\tilde q$ |
+| general | $\tilde p\tilde q$, the *Quaternions* algebra product | $\mathrm{GQA}$, $\tilde p^{\natural}\tilde q$ |
+| symmetric | $\mathrm{SPA}$, $\tilde p\bullet\tilde q$ | $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, the scalar-valued symmetrisation |
+| antisymmetric | $\mathrm{APA}$, $\tilde p\wedge\tilde q$ | $\tilde p\wedge^{\natural}\tilde q$, the quaternionic cross product |
 
-**Theorem (the two general products generate the six structures, and no more).** The split of the two general products under the interchange of their slots produces exactly four halves, the two general products together with the four halves are six distinct products, and every structure of the chapter is one of the six.
+**Theorem (the two general products generate the companion products, and no more).** The split of the two general products under the interchange of their slots produces exactly four halves, the two general products together with the four halves are six distinct products, and the three companion structures of the category are the symmetric plain, the antisymmetric plain and the general quaternionic one.
 
-*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and conversely each general product is recovered as the sum of its two halves. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\vec p\times\vec q$, which is nonzero on $(e_1,e_2)$; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; the cross product is pure vector while the plain product is not; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. Together these witnesses separate the four halves from the two general products and from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and the six structures are exactly the two general products and their halves.
+*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and conversely each general product is recovered as the sum of its two halves. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\vec p\times\vec q$, which is nonzero on $(e_1,e_2)$; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; the cross product is pure vector while the plain product is not; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. Together these witnesses separate the four halves from the two general products and from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and no companion product is missed.
 
-**Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $N(\tilde p,\tilde q)e_0$ and not the Jordan product. In the two triples the antisymmetric half is alternating in each, and the two triples separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the quaternionic symmetric half $\mathrm{SQA}$ is not.
+**Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $\langle\tilde p,\tilde q\rangle_{\natural}e_0$ and not the Jordan product. In the two triples the antisymmetric half is alternating in each, and the two triples separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the scalar-valued symmetrisation of the quaternionic product $\langle\tilde p,\tilde q\rangle_{\natural}e_0$ is not.
 
-**Remark (the count of the chapter).** The reason there are two general products is the reason there are six structures. The algebra has one nontrivial conjugation and the base field none, so the slot construction yields two general products; each general product yields exactly two halves; two general products therefore yield four halves and six structures in all. A third general product would need a second independent conjugation on the elements, and a seventh structure would need a bilinear rule with more than a symmetric and an antisymmetric part; neither exists over $\mathbb{R}$.
+**Remark (the count of the chapter).** The reason there are two general products is the reason the category keeps three companion structures. The algebra has one nontrivial conjugation and the base field none, so the slot construction yields two general products; each general product yields exactly two halves; two general products therefore yield four halves, of which three carry the companion structures. A third general product would need a second independent conjugation on the elements, and a seventh structure would need a bilinear rule with more than a symmetric and an antisymmetric part; neither exists over $\mathbb{R}$.
 
 ## Summary
 
 A general product on $\mathbb{H}$ is a slot pairing of the identity and the natural conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde p\tilde q$ and the general quaternionic product $\tilde p^{\natural}\tilde q$.
 
-Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde p\bullet\tilde q$, the quaternion form read as a product $N(\tilde p,\tilde q)e_0$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$, and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The two general products and the four halves are six distinct products, carrying the six structures $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{AQA}$, indexed by the family and the half; the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
+Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde p\bullet\tilde q$, the quaternion form read as a product $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$, and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The two general products and the four halves are six distinct products; three of them carry the companion structures, $\mathrm{SPA}$, $\mathrm{APA}$ and $\mathrm{GQA}$, indexed by the family and the half; the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=\langle\tilde p,\tilde q\rangle_{\natural}e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
 
 ## Summary of Notation
 
@@ -95,12 +95,12 @@ Each general product splits under the interchange of its slots into a symmetric 
 | $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{\natural})$, $({}^{\natural},{}^{\natural})$ | the four slot pairings |
 | $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | the two general products |
 | $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q$ | the symmetric and the antisymmetric half of the plain product |
-| $N(\tilde p,\tilde q)e_0$, $\tilde p\wedge^{\natural}\tilde q$ | the symmetric and the antisymmetric half of the quaternionic product |
-| $\mathrm{GPA},\mathrm{GQA},\mathrm{SPA},\mathrm{SQA},\mathrm{APA},\mathrm{AQA}$ | the six structures, one to a cell of the family-and-half grid |
+| $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, $\tilde p\wedge^{\natural}\tilde q$ | the symmetric and the antisymmetric half of the quaternionic product |
+| $\mathrm{SPA},\mathrm{APA},\mathrm{GQA}$ | the three companion structures of the category |
 
 ## Further Reading
 
-- *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternioid-r-space.md`), for the two products in coordinates.
-- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternioid-real-space.md`), for the split and the four halves on the coordinates.
-- *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md`), for the six names and the law table.
-- *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), below this article in this category, for the first of the element theories read across the six.
+- *The Two General Products of the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternioid-r-space.md`), for the two products in coordinates.
+- *The 6 Products of the Quaternioid Real Space* (`articles_maths/the-6-products-of-the-quaternioid-real-space.md`), for the split and the four halves on the coordinates.
+- *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md`), for the names and the law table.
+- *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), below this article in this category, for the first of the element theories read across the companion products.

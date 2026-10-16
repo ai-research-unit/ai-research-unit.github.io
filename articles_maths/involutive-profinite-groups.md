@@ -57,7 +57,7 @@ the limits taken over the stable $N$, and the fixed subgroup of the limit is the
 
 **Proof.** An involution of $\Gamma$ acts on the set of finite-index normal subgroups, permutes them and induces involutions of the finite quotients; the compatible system gives a continuous involution of the limit. The inclusion of the closures is clear, and the strictness is the cited warning, witnessed by $\sqrt2\,\mathbb{Z}\subseteq\mathbb{R}$ in the topological form.
 
-**Example (the $p$-adic integers).** On $\mathbb{Z}_p = \varprojlim_k\mathbb{Z}/p^k\mathbb{Z}$ the inversion $x\mapsto -x$ is a continuous involution; its fixed subgroup is $\{0\}$ because $2x = 0$ has only the solution $x = 0$ in $\mathbb{Z}_p$ for odd $p$, and the same holds on $\hat{\mathbb{Z}} = \prod_p\mathbb{Z}_p$. The finite quotients have fixed sets $\{0\}$ for $p$ odd and the whole of $\mathbb{Z}/2^k\mathbb{Z}$ for $p = 2$, so the inverse limit of the fixed sets is again $\{0\}$, consistently with the inverse-limit theorem.
+**Example (the $n$-adic integers).** On $\mathbb{Z}_n = \varprojlim_k\mathbb{Z}/n^k\mathbb{Z}$ the inversion $x\mapsto -x$ is a continuous involution; its fixed subgroup is $\{0\}$ because $2x = 0$ has only the solution $x = 0$ in $\mathbb{Z}_n$ for odd $n$, and the same holds on $\hat{\mathbb{Z}} = \prod_n\mathbb{Z}_n$. The finite quotients have fixed sets $\{0\}$ for $n$ odd and the whole of $\mathbb{Z}/2^k\mathbb{Z}$ for $n = 2$, so the inverse limit of the fixed sets is again $\{0\}$, consistently with the inverse-limit theorem.
 
 ## Summary
 

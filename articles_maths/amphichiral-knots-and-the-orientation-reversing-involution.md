@@ -61,7 +61,7 @@ where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ 
 
 **Example (the trefoil is chiral).** The signature of the trefoil is $\pm2$, so it is chiral; and $V_{3_1}(t) = -t^{-4}+t^{-3}+t^{-1}$ is not symmetric under $t\mapsto t^{-1}$ (the mirror has $V_{3_1}(t^{-1})$, the different polynomial $-t^4+t^3+t$). The same computation shows that the trefoil and its mirror are the two distinct chiral forms.
 
-**Example (the torus knots).** A torus knot $T(p,q)$ has mirror $T(p,q)^{*} = T(p,-q)$; the torus knots are classified by the unordered pair, and $T(p,-q)$ is isotopic to $T(p,q)$ (as an unoriented knot) only when $p = 2q$ and $q = 1$, namely for the unknot. Hence every nontrivial torus knot is chiral, and the clasp knots and the twist knots are chiral or amphichiral according to their symmetry. The examples show that chirality is the generic behaviour and amphichirality the exception.
+**Example (the torus knots).** A torus knot $T(n,m)$ has mirror $T(n,m)^{*} = T(n,-m)$; the torus knots are classified by the unordered pair, and $T(n,-m)$ is isotopic to $T(n,m)$ (as an unoriented knot) only when $n = 2m$ and $m = 1$, namely for the unknot. Hence every nontrivial torus knot is chiral, and the clasp knots and the twist knots are chiral or amphichiral according to their symmetry. The examples show that chirality is the generic behaviour and amphichirality the exception.
 
 **Example (the connected sum).** The connected sum of an amphichiral knot with a chiral knot is chiral; the connected sum of two amphichiral knots is amphichiral; and the concordance group of knots contains the chiral classes with the amphichiral ones forming a subgroup. The algebraic structure is *Knot Theory*, and the same additivity is used by *Equivariant Knot Theory* for the periodic knots.
 
@@ -83,7 +83,7 @@ where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ 
 
 **Proof sketch.** The double branched cover is the double cover of $S^3$ branched over $K$, and an orientation-reversing homeomorphism of the pair $(S^3,K)$ lifts to the cover, commuting with the deck transformation; conversely the quotient of the lifted involution by the deck transformation descends to the pair. The statement is the standard translation of the symmetry of the knot into the symmetry of the cover, and the invariants of the cover — the linking form, the Reidemeister torsion, the homology with the involution — are the equivariant invariants of the operation.
 
-**Corollary (the lens spaces and the torus knots).** For the torus knot $T(p,q)$ the double branched cover is a lens space, and its amphichirality is read off from the arithmetic condition $q^2\equiv-1$ of *Free Involutions and Lens Spaces*; the torus knot $T(2,3)$ and its mirror are chiral, while the figure-eight knot, not a torus knot, is amphichiral with the spherical double branched cover. The example ties the knot chirality to the chirality of the lens spaces of the earlier article.
+**Corollary (the lens spaces and the torus knots).** For the torus knot $T(n,m)$ the double branched cover is a lens space, and its amphichirality is read off from the arithmetic condition $m^2\equiv-1$ of *Free Involutions and Lens Spaces*; the torus knot $T(2,3)$ and its mirror are chiral, while the figure-eight knot, not a torus knot, is amphichiral with the spherical double branched cover. The example ties the knot chirality to the chirality of the lens spaces of the earlier article.
 
 ## Summary
 
@@ -102,7 +102,7 @@ A knot is amphichiral when it is isotopic to its mirror image, equivalently when
 | $\Delta_K$, $\nabla_K$, $V_K$, $P_K$ | Alexander, Conway, Jones, HOMFLY polynomials |
 | $V_K(t) = V_K(t^{-1})$, $\nabla_K(z) = \nabla_K(-z)$ | the symmetry conditions for an amphichiral knot |
 | $\Sigma_2(S^3,K)$ | the double branched cover; its covering involution has fixed set over $K$ |
-| $T(p,q)$ | the torus knot; $T(p,q)^{*} = T(p,-q)$, chiral unless the unknot |
+| $T(n,m)$ | the torus knot; $T(n,m)^{*} = T(n,-m)$, chiral unless the unknot |
 | $4_1$ | the figure-eight knot, the simplest amphichiral knot |
 | $v_2$ | the Casson invariant; one of the odd finite-type invariants vanishing for amphichiral knots |
 

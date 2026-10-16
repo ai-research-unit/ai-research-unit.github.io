@@ -20,7 +20,7 @@ and the **ratio** (or linear contraction factor) of $S$ is $|u|$. The similarity
 
 **Proposition.** The similarities of $\mathbb{C}$ form a group, the semidirect product $\mathbb{C} \rtimes \mathbb{C}^\times$ of the translations with the multiplications, of real dimension four; the direct similarities with $|u| = 1$ form the group of the Euclidean isometries fixing the origin, which is $U(1)$ acting by rotations, and every similarity is the composition of a rotation, a homothety and a translation.
 
-**Proof.** The composite of $z \mapsto u z+v$ and $z \mapsto u'z+v'$ is $z \mapsto u'u z + (u'v+v')$, again of the form; and every similarity with $u \neq 0$ is invertible with inverse $z \mapsto u^{-1}z - u^{-1}v$. The multiplication $z \mapsto uz$ is the rotation by $\arg u$ composed with the homothety of ratio $|u|$, since $uz = |u|e^{i\arg u}z$.
+**Proof.** The composite of $z \mapsto u z+v$ and $z \mapsto u'z+v'$ is $z \mapsto u'u z + (u'v+v')$, again of the form; and every similarity with $u \neq 0$ is invertible with inverse $z \mapsto u^{-1}z - u^{-1}v$. The multiplication $z \mapsto uz$ is the rotation by $\arg u$ composed with the homothety of ratio $|u|$, since $uz = |u|\exp(i\arg u)z$.
 
 **Remark (the rotation content).** This is the point at which the complex systems differ from the real ones. A similarity of $\mathbb{R}$ is $x \mapsto ax+b$ and carries no rotation; a similarity of $\mathbb{C}$ carries the angle $\arg u$, and the group of contractive similarities is the group $U(1) \times (0,1) \times \mathbb{C}$ of a rotation, a homothety and a translation. Two complex systems with the same ratios and the same translations but different rotation angles have different attractors.
 
@@ -56,7 +56,7 @@ where $s$ is the similarity dimension; likewise the box dimension of $\Lambda$ i
 
 **Proof sketch.** The open set condition lets the pieces of the $n$-th level be separated by the images of $O$, so the covering sum $\sum |(S_{i_1}\circ\cdots\circ S_{i_n})'|^s = \left(\sum|u_i|^s\right)^n = 1$ is uniformly controlled; the upper bound for the $s$-dimensional measure and the lower bound for the mass distribution both follow. The open set condition, the similarity dimension and this theorem are those of *Fractal Geometry*, and they are not reproved here.
 
-**Example (a complex Cantor set).** Let $S_1(z) = u z$ and $S_2(z) = u z + (1-u)$ with $u$ a real number in $(0,1/2)$. The attractor is the real middle-third-type Cantor set on the segment $[0,1]$, of dimension $s$ with $|u|^s = 1/2$, that is $s = \log 2/\log(1/|u|)$; for $u = 1/3$ this is the middle-third set of dimension $\log 2/\log 3 = 0.6309297535\ldots$, the value recorded in *Fractal Geometry*. If instead $u = \tfrac13 e^{i\pi/3}$, the two pieces are rotated relative to one another and the attractor is a complex Cantor set of the same dimension, not contained in any line.
+**Example (a complex Cantor set).** Let $S_1(z) = u z$ and $S_2(z) = u z + (1-u)$ with $u$ a real number in $(0,1/2)$. The attractor is the real middle-third-type Cantor set on the segment $[0,1]$, of dimension $s$ with $|u|^s = 1/2$, that is $s = \log 2/\log(1/|u|)$; for $u = 1/3$ this is the middle-third set of dimension $\log 2/\log 3 = 0.6309297535\ldots$, the value recorded in *Fractal Geometry*. If instead $u = \tfrac13 \exp(i\pi/3)$, the two pieces are rotated relative to one another and the attractor is a complex Cantor set of the same dimension, not contained in any line.
 
 ## The Kleinian Groups and Their Limit Sets
 

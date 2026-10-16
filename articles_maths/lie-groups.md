@@ -251,7 +251,7 @@ $$
 
 Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For subgroups, being embedded is equivalent to being closed, so an immersed subgroup is embedded exactly when it is closed.
 
-**Example.** In the torus $T^2 = \mathbb{R}^2/\mathbb{Z}^2$, the subgroup $H = \{(e^{2\pi it}, e^{2\pi i\alpha t}) : t \in \mathbb{R}\}$ with $\alpha$ irrational is a connected immersed subgroup of dimension $1$, with Lie algebra the line $\mathbb{R}\cdot(1,\alpha)$. It is dense, hence neither closed nor embedded, and its closure is all of $T^2$; thus a one-dimensional subalgebra can generate a dense subgroup.
+**Example.** In the torus $T^2 = \mathbb{R}^2/\mathbb{Z}^2$, the subgroup $H = \{(\exp(2\pi it), \exp(2\pi i\alpha t)) : t \in \mathbb{R}\}$ with $\alpha$ irrational is a connected immersed subgroup of dimension $1$, with Lie algebra the line $\mathbb{R}\cdot(1,\alpha)$. It is dense, hence neither closed nor embedded, and its closure is all of $T^2$; thus a one-dimensional subalgebra can generate a dense subgroup.
 
 ## 13. The Lie Correspondence for Simply Connected Groups
 
@@ -259,7 +259,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 
 **Equivalence theorem.** The assignment $G \mapsto \operatorname{Lie}(G)$ is an equivalence of categories between simply connected Lie groups and finite-dimensional real Lie algebras: essentially surjective by Lie's third theorem, full by the integration theorem, and faithful because a homomorphism is determined by its differential on a connected domain. Hence a connected simply connected Lie group is determined up to isomorphism by its Lie algebra.
 
-**Universal covering group.** Every connected Lie group $G$ has a simply connected **universal covering group** $\tilde{G}$ with a covering homomorphism $\pi : \tilde{G} \to G$ and $\operatorname{Lie}(\tilde{G}) \cong \mathrm{G}$. The kernel $\pi_1(G)$ is a discrete central subgroup, and $G \cong \tilde{G}/\pi_1(G)$. Examples: $\mathbb{R} \to S^1$ with $\pi_1(S^1) = \mathbb{Z}$; $SU(2) \to SO(3)$ with $\pi_1(SO(3)) = \mathbb{Z}/2$; and $\operatorname{Spin}(n) \to SO(n)$ for $n \geq 3$, which is simply connected.
+**Universal covering group.** Every connected Lie group $G$ has a simply connected **universal covering group** $G^{\mathrm{cov}}$ with a covering homomorphism $\pi : G^{\mathrm{cov}} \to G$ and $\operatorname{Lie}(G^{\mathrm{cov}}) \cong \mathrm{G}$. The kernel $\pi_1(G)$ is a discrete central subgroup, and $G \cong G^{\mathrm{cov}}/\pi_1(G)$. Examples: $\mathbb{R} \to S^1$ with $\pi_1(S^1) = \mathbb{Z}$; $SU(2) \to SO(3)$ with $\pi_1(SO(3)) = \mathbb{Z}/2$; and $\operatorname{Spin}(n) \to SO(n)$ for $n \geq 3$, which is simply connected.
 
 ## 14. Connected, Simply Connected, and Compact Examples
 
@@ -308,7 +308,7 @@ $$
 For $g \in G$ and $X \in \mathrm{G}$ one has
 
 $$
-g\exp(X)g^{-1} = \exp(\operatorname{Ad}_gX), \qquad \operatorname{Ad}_{\exp X} = e^{\operatorname{ad}_X} = \sum_{k \geq 0} \frac{\operatorname{ad}_X^k}{k!}.
+g\exp(X)g^{-1} = \exp(\operatorname{Ad}_gX), \qquad \operatorname{Ad}_{\exp X} = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{\operatorname{ad}_X^k}{k!}.
 $$
 
 If $G$ is connected, then $\ker\operatorname{Ad} = Z(G)$, so the **adjoint group** satisfies $\operatorname{Ad}(G) \cong G/Z(G)$, with Lie algebra $\operatorname{ad}(\mathrm{G}) \cong \mathrm{G}/Z(\mathrm{G})$. Connectedness is needed here: for $O(2)$, whose Lie algebra is abelian of dimension $1$, the rotations in $SO(2)$ act trivially on $\mathrm{SO}(2)$ while the reflections act by $-1$, so $\ker\operatorname{Ad} = SO(2) \neq Z(O(2)) = \{\pm I\}$.

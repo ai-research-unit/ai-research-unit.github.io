@@ -77,7 +77,7 @@ $$
 u_\sigma(u_\tau u_\rho) = u_\sigma c(\tau,\rho) u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr) u_\sigma u_{\tau\rho} = \alpha_\sigma\bigl(c(\tau,\rho)\bigr)c(\sigma,\tau\rho) u_{\sigma\tau\rho},
 $$
 
-so the two agree for all basis elements exactly when the displayed identity holds. A function satisfying it is a **$2$-cocycle** for the action, and the set of such functions is written $Z^2(G, A^\times)$; it is a group under pointwise multiplication, because $\alpha_\sigma$ is multiplicative and $A^\times$ is a group. A general cocycle is replaced by the normalised one $\tilde c(\sigma,\tau) = c(1,1)^{-1}c(\sigma,\tau)$, which yields the same algebra up to isomorphism, so we assume normalisation from now on.
+so the two agree for all basis elements exactly when the displayed identity holds. A function satisfying it is a **$2$-cocycle** for the action, and the set of such functions is written $Z^2(G, A^\times)$; it is a group under pointwise multiplication, because $\alpha_\sigma$ is multiplicative and $A^\times$ is a group. A general cocycle is replaced by the normalised one $c^{\mathrm{norm}}(\sigma,\tau) = c(1,1)^{-1}c(\sigma,\tau)$, which yields the same algebra up to isomorphism, so we assume normalisation from now on.
 
 ### Basic properties
 

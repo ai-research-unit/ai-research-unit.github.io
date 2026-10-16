@@ -101,7 +101,7 @@ $$
 \operatorname{U}(V, h) = \operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a).
 $$
 
-**Proof.** The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = a(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$.
+**Proof.** The identity $h(Tu, Tv) = h(u, v)$ is equivalent to the pair of real identities $s(Tu, Tv) = s(u, v)$ and $a(Tu, Tv) = \mathfrak{a}(u, v)$, because the real and imaginary parts of a complex number vanish together. The first is the orthogonal condition for $s$ and the second the symplectic condition for $a$.
 
 This is the precise sense in which the unitary group lies between the orthogonal and symplectic groups: it is the intersection of one of each on the realification of the space.
 
@@ -117,17 +117,17 @@ $$
 
 For $u = v$ the number $u^{\dagger}Hu$ is real, because its conjugate is $u^{\dagger}H^{\dagger}u = u^{\dagger}Hu$; so the diagonal $v \mapsto h(v, v)$ is a real-valued function even though $h$ is not symmetric. A change of basis with matrix $P$ replaces $H$ by the Hermitian-congruent matrix $P^{\dagger}HP$.
 
-**Theorem (inertia for Hermitian forms).** Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space of dimension $n$. Then there are unique integers $p, r, z \geq 0$ with $p + r + z = n$ and a basis in which the Gram matrix is $\operatorname{diag}(I_p, -I_r, 0_z)$.
+**Theorem (inertia for Hermitian forms).** Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space of dimension $n$. Then there are unique integers $n, r, z \geq 0$ with $n + r + z = n$ and a basis in which the Gram matrix is $\operatorname{diag}(I_n, -I_r, 0_z)$.
 
-**Proof.** The argument is that of Sylvester's law of inertia for real quadratic forms: the diagonalisation by completing the square applies, because the diagonal entries $h(e_i, e_i)$ are real and the substitution $v \mapsto v - \frac{h(e, v)}{h(e,e)}e$ kills the entries $h(v, e)$ for a vector with $h(e,e) \neq 0$; the uniqueness follows by counting the maximal dimension $p$ of a subspace on which $h$ is positive definite and the maximal dimension $r$ on which it is negative definite, both of which are invariants of $h$.
+**Proof.** The argument is that of Sylvester's law of inertia for real quadratic forms: the diagonalisation by completing the square applies, because the diagonal entries $h(e_i, e_i)$ are real and the substitution $v \mapsto v - \frac{h(e, v)}{h(e,e)}e$ kills the entries $h(v, e)$ for a vector with $h(e,e) \neq 0$; the uniqueness follows by counting the maximal dimension $n$ of a subspace on which $h$ is positive definite and the maximal dimension $r$ on which it is negative definite, both of which are invariants of $h$.
 
-The triple $(p, r, z)$ is the **signature** of $h$, and $h$ is non-degenerate exactly when $z = 0$. The isometry group of the form $\operatorname{diag}(I_p, -I_r)$ is written
+The triple $(n, r, z)$ is the **signature** of $h$, and $h$ is non-degenerate exactly when $z = 0$. The isometry group of the form $\operatorname{diag}(I_n, -I_r)$ is written
 
 $$
-U(p, r) = \{M \in GL(n, \mathbb{C}) : M^{\dagger} \begin{pmatrix} I_p & 0 \\ 0 & -I_r\end{pmatrix} M = \begin{pmatrix} I_p & 0 \\ 0 & -I_r\end{pmatrix}\},
+U(n, r) = \{M \in GL(n, \mathbb{C}) : M^{\dagger} \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix} M = \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix}\},
 $$
 
-with special subgroup $SU(p, r)$ the kernel of the determinant; both have real dimension $n^2$ and $n^2 - 1$ respectively, since the counting of the compact case uses only the Hermitian condition on $M^{\dagger}HM = H$ and the dimension of $H$ as a real vector space. For $p = n$ the group is the compact $U(n)$ of the previous section, and for $p, r > 0$ it is non-compact.
+with special subgroup $SU(n, r)$ the kernel of the determinant; both have real dimension $n^2$ and $n^2 - 1$ respectively, since the counting of the compact case uses only the Hermitian condition on $M^{\dagger}HM = H$ and the dimension of $H$ as a real vector space. For $n = n$ the group is the compact $U(n)$ of the previous section, and for $n, r > 0$ it is non-compact.
 
 ### The Group $U(1, 1)$
 
@@ -137,7 +137,7 @@ $$
 |a|^2 - |c|^2 = 1, \qquad |d|^2 - |b|^2 = 1, \qquad \bar a b - \bar c d = 0 .
 $$
 
-**Example.** The matrices $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$ for $t \in \mathbb{R}$ and $\begin{pmatrix} e^{i\theta} & 0 \\ 0 & e^{-i\theta}\end{pmatrix}$ for $\theta \in \mathbb{R}$ both lie in $SU(1,1)$: for the first the three equations reduce to $\cosh^2 t - \sinh^2 t = 1$, and for the second $|e^{i\theta}|^2 = 1$. The first family is a hyperbolic one-parameter subgroup, the second a compact circle, and the two generate a subgroup of $SU(1,1)$ through which the two types of one-parameter subgroup of a non-compact real form are visible.
+**Example.** The matrices $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$ for $t \in \mathbb{R}$ and $\begin{pmatrix} \exp(i\theta) & 0 \\ 0 & \exp(-i\theta)\end{pmatrix}$ for $\theta \in \mathbb{R}$ both lie in $SU(1,1)$: for the first the three equations reduce to $\cosh^2 t - \sinh^2 t = 1$, and for the second $|\exp(i\theta)|^2 = 1$. The first family is a hyperbolic one-parameter subgroup, the second a compact circle, and the two generate a subgroup of $SU(1,1)$ through which the two types of one-parameter subgroup of a non-compact real form are visible.
 
 **Remark.** The group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and to $Sp(2, \mathbb{R})$: the three symbols name one and the same group, the **split** (normal) real form of $\mathrm{SL}(2,\mathbb{C})$, not three different forms. That complex group has exactly two real forms of rank one, the compact $SU(2)$ and this split one, and all three names denote the split form. The coincidence $SU(1,1)\cong Sp(2,\mathbb{R})$ is the case $2m=2$ of the proposition below that $Sp(2,F)=SL(2,F)$, one of the low-dimensional coincidences of rank one.
 
@@ -272,7 +272,7 @@ The families $B_n$ and $C_n$ have the same dimension and rank and are dual to on
 
 ### Real Forms and Compact Groups
 
-Each complex family has several real forms. The **compact** real forms are $SU(n)$ for $A_n$, $SO(2n+1)$ for $B_n$, $Sp(n)$ for $C_n$, and $SO(2n)$ for $D_n$. The **split** real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, and $SO(n, n)$. The isometry groups of the real forms of a quadratic form are the groups $\operatorname{O}(p, r)$ of *The Rotation Group and Orientation*, and the isometry groups of the real forms of a Hermitian form are the groups $U(p, r)$; the corresponding Lie algebras are the real forms of *The Orthogonal Lie Algebra*.
+Each complex family has several real forms. The **compact** real forms are $SU(n)$ for $A_n$, $SO(2n+1)$ for $B_n$, $Sp(n)$ for $C_n$, and $SO(2n)$ for $D_n$. The **split** real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, and $SO(n, n)$. The isometry groups of the real forms of a quadratic form are the groups $\operatorname{O}(n, r)$ of *The Rotation Group and Orientation*, and the isometry groups of the real forms of a Hermitian form are the groups $U(n, r)$; the corresponding Lie algebras are the real forms of *The Orthogonal Lie Algebra*.
 
 **Remark.** The unitary and symplectic matrix groups belong to the classical groups as studied in category 04; the role of this article is to exhibit them as the isometry groups of the three types of form, so that the form, not the matrix, is the primary datum.
 
@@ -286,7 +286,7 @@ The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dim
 
 Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathrm{SL}(n+1)$, $B_n = \mathrm{SO}(2n+1)$, $C_n = \mathrm{Sp}(2n)$ and $D_n = \mathrm{SO}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.
 
-A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(p, r, z)$ with normal form $\operatorname{diag}(I_p, -I_r, 0_z)$, and its isometry group is $U(p, r)$, of real dimension $n^2$, with special subgroup $SU(p, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; the three symbols $SU(1, 1)$, $SL(2, \mathbb{R})$ and $Sp(2, \mathbb{R})$ name one group, the split real form of $SL(2, \mathbb{C})$, whose unitary dual is the trivial representation together with the discrete, continuous and complementary series. The series are carried by the homogeneous spaces according to the vector stabiliser: the compact $U(1)$ for the discrete series on the time-like hyperboloid $SU(1,1)/U(1)$, the non-compact boost subgroup for the continuous series on the space-like one, and the compact group $SU(2)$ for the finite multiplets of the sphere $SU(2)/U(1)$.
+A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(n, r, z)$ with normal form $\operatorname{diag}(I_n, -I_r, 0_z)$, and its isometry group is $U(n, r)$, of real dimension $n^2$, with special subgroup $SU(n, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; the three symbols $SU(1, 1)$, $SL(2, \mathbb{R})$ and $Sp(2, \mathbb{R})$ name one group, the split real form of $SL(2, \mathbb{C})$, whose unitary dual is the trivial representation together with the discrete, continuous and complementary series. The series are carried by the homogeneous spaces according to the vector stabiliser: the compact $U(1)$ for the discrete series on the time-like hyperboloid $SU(1,1)/U(1)$, the non-compact boost subgroup for the continuous series on the space-like one, and the compact group $SU(2)$ for the finite multiplets of the sphere $SU(2)/U(1)$.
 
 The compact and split forms of the symplectic family meet in the unitary group: on $\mathbb{R}^{2m}$ with the standard alternating and Euclidean forms, $Sp(2m, \mathbb{R}) \cap O(2m) = U(m)$, because a real matrix that is both symplectic and orthogonal commutes with $\Omega$ and is therefore complex-linear. Hence $U(m)$ is a maximal compact subgroup of $Sp(2m, \mathbb{R})$, of dimension $m^2$ inside the ambient dimension $2m^2 + m$.
 
@@ -304,13 +304,13 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $\operatorname{SU}(V, h)$, $SU(n)$ | Special unitary group, determinant one |
 | $U(n)$ | Standard unitary group, $U^{\dagger}U = I$ |
 | $H$ | Hermitian Gram matrix, $H^{\dagger} = H$, $h(u,v) = u^{\dagger}Hv$ |
-| $U(p, r)$, $SU(p, r)$ | Unitary group of a Hermitian form of signature $(p, r)$, and its determinant-one subgroup |
+| $U(n, r)$, $SU(n, r)$ | Unitary group of a Hermitian form of signature $(n, r)$, and its determinant-one subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Split (normal) real form of $\mathrm{SL}(2,\mathbb{C})$, of rank one, under three names |
 | $D_n$, $j=-\tfrac12+is$ | Discrete and continuous series of $SU(1,1)$ |
 | $S^2=SU(2)/U(1)$, $H^\pm=SU(1,1)/U(1)$ | Sphere and time-like hyperboloid as homogeneous spaces |
 | $H^{sl}$ | One-sheeted space-like hyperboloid; non-compact vector stabiliser |
-| $p, r, z$ | Signature of a Hermitian form, $p + r + z = n$ |
-| $I_p$ | Identity matrix of size $p$ |
+| $n, r, z$ | Signature of a Hermitian form, $n + r + z = n$ |
+| $I_n$ | Identity matrix of size $n$ |
 | $\operatorname{diag}$ | Diagonal matrix with the displayed entries |
 | $\operatorname{Sp}(V, \omega)$ | Symplectic group of an alternating form |
 | $Sp(2m, F)$ | Standard symplectic group, $M^T\Omega M = \Omega$ |

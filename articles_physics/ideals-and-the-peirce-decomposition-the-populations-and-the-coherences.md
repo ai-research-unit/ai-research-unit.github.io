@@ -10,9 +10,9 @@ The mathematics article *Ideals and Peirce Decomposition of the Biquaternion Alg
 
 **The physical interpretation.** The reading added here rests on the identification of the preceding article of this group: a **Hermitian root of $+1$ is a Hermitian observable of square one**, and the two idempotents it carries are the two **states** of that observable (*Square Roots of One and the Idempotents: the Hermitian Observables and the States*). Relative to such an observable the Peirce decomposition is the **populations-and-coherences block structure** of the algebra in the observable's own basis. The diagonal corners are the **populations**, the mixed corners the **coherences**; two coherences multiply back into the populations, which is the algebraic form of an interference term; the Hermitian conjugation fixes the populations and exchanges the two coherences, and it is exactly on the Hermitian frames that it does so; and the four Peirce coordinates of a state are its two populations and its two coherences, with the population sum the trace, the population difference the mean of the observable, and the norm the population product minus the coherence square. The last identity gives **purity as the saturation $p_+p_-=\lvert c\rvert^{2}$**, the population form of the zero-divisor cone of *Square Roots of Zero and the Nilpotents: the Light Cone*.
 
-The ideal structure is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the state carrier that the minimal left ideals supply is *The Native Qubit and the Defining Module of the Biquaternion Algebra* and *The Spinor Space as a Module of the Biquaternion Algebra*; the triviality of the two-sided ideals and its superselection consequence are *The Centre of the Biquaternion Algebra as the Classical Sector*; the matrix model whose four entries are the Peirce coordinates is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the positivity, the purity and the Bloch ball are *The Hermitian Subspace M₊ as the Informational Sector* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the dynamics of the populations and the coherences is *Decoherence as Idempotent Projection* and *Quantum Channels and the Reversible/Irreversible Dichotomy*; the observables as a Jordan algebra are *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*; and the four coordinate blocks of the eight real parameters, which are a different sense of the word block, are *Relations Between Subspaces*.
+The ideal structure is *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the state carrier that the minimal left ideals supply is *The Native Qubit and the Defining Module of the Biquaternion Algebra* and *The Spinor Space as a Module of the Biquaternion Algebra*; the triviality of the two-sided ideals and its superselection consequence are *The Centre of the Biquaternion Algebra as the Classical Sector*; the matrix model whose four entries are the Peirce coordinates is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the positivity, the purity and the Bloch ball are *The Hermitian Subspace M₊ as the Informational Sector* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the dynamics of the populations and the coherences is *Decoherence as Idempotent Projection* and *Quantum Channels and the Reversible/Irreversible Dichotomy*; the observables as a Jordan algebra are *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; and the four coordinate blocks of the eight real parameters, which are a different sense of the word block, are *Relations Between Subspaces*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=Q_0e_0+\vec Q$ with $Q_0\in\mathbb{C}$ and $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. A root of $+1$ is written $\tilde\Xi$, $\tilde\Xi^2=e_0$ (§*The Root Convention*, the glyph of a root of a central value); its pair is $\tilde\Pi_\pm=\tfrac12(e_0\pm\tilde\Xi)$, complete and orthogonal, the two members named by the sign of $\tilde\Xi$ (§*The Idempotent Convention* of *Conventions in Mathematics*). The two nilpotents are $\hat\Upsilon_1=\tfrac{ie_1-e_2}{2}$ and $\hat\Upsilon_2=\tfrac{ie_1+e_2}{2}$, with $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$ (§*The Nilpotent Convention*). The corners are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ with $s,t\in\{+,-\}$, and the Peirce coordinates $a_{ij}$ are read in matrix positions, position $1$ carrying $\tilde\Pi_+$ and position $2$ the member $\tilde\Pi_-$. The three conjugations are the natural $\natural$, the coefficient bar $\bar{\cdot}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ\natural$. The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=Q_0e_0+\vec Q$ with $Q_0\in\mathbb{C}$ and $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. A root of $+1$ is written $\tilde\Xi$, $\tilde\Xi^2=e_0$ (§*The Root Convention*, the glyph of a root of a central value); its pair is $\tilde\Pi_\pm=\tfrac12(e_0\pm\tilde\Xi)$, complete and orthogonal, the two members named by the sign of $\tilde\Xi$ (§*The Idempotent Convention* of *Conventions in Mathematics*). The two nilpotents are $\vec\Upsilon_1=\tfrac{ie_1-e_2}{2}$ and $\vec\Upsilon_2=\tfrac{ie_1+e_2}{2}$, with $\vec\Upsilon_1^2=\vec\Upsilon_2^2=0$ (§*The Nilpotent Convention*). The corners are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ with $s,t\in\{+,-\}$, and the Peirce coordinates $a_{ij}$ are read in matrix positions, position $1$ carrying $\tilde\Pi_+$ and position $2$ the member $\tilde\Pi_-$. The three conjugations are the natural $\natural$, the coefficient bar $\bar{\cdot}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ\natural$. The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$.
 
 **A caution on the word block.** The "block structure" of *Relations Between Subspaces* is the grouping of the eight real parameters into four coordinate blocks, material or informational against temporal or spatial. The blocks of this article are the four **Peirce corners**, that is the four matrix positions of $\mathsf{M}_2(\tilde Q)$. The two groupings are different: they are given by different decompositions and they cut the algebra differently. They must not be conflated, and the word is disambiguated as it is used.
 
@@ -27,14 +27,14 @@ The algebra is **simple** over $\mathbb{C}$. The proof averages the conjugates o
 **The algebra splits into its two minimal left ideals and into its two minimal right ideals, and the three pairings of the four basis elements differ.** With the pair $\tilde\Pi_+,\tilde\Pi_-$ the algebra splits two ways,
 
 $$
-\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-=(\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_2)\oplus(\mathbb{C}\hat\Upsilon_1\oplus\mathbb{C}\tilde\Pi_-),
+\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-=(\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_2)\oplus(\mathbb{C}\vec\Upsilon_1\oplus\mathbb{C}\tilde\Pi_-),
 $$
 
 $$
-\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}=(\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_1)\oplus(\mathbb{C}\hat\Upsilon_2\oplus\mathbb{C}\tilde\Pi_-),
+\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}=(\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_1)\oplus(\mathbb{C}\vec\Upsilon_2\oplus\mathbb{C}\tilde\Pi_-),
 $$
 
-the first exhibiting the direct sum of the two minimal left ideals, the second of the two minimal right ideals. **The three pairings of the four basis elements differ:** the columns collect $\tilde\Pi_+$ with $\hat\Upsilon_2$ and $\tilde\Pi_-$ with $\hat\Upsilon_1$, the rows collect $\tilde\Pi_+$ with $\hat\Upsilon_1$ and $\hat\Upsilon_2$ with $\tilde\Pi_-$, and the third pairing collects the two diagonal corners against the two mixed ones. The Peirce array is the table whose columns and rows are the two ideal decompositions, and the grading of §*The Peirce Decomposition of the Algebra* is the third pairing. A reader who identifies the three conflates objects that the algebra keeps apart.
+the first exhibiting the direct sum of the two minimal left ideals, the second of the two minimal right ideals. **The three pairings of the four basis elements differ:** the columns collect $\tilde\Pi_+$ with $\vec\Upsilon_2$ and $\tilde\Pi_-$ with $\vec\Upsilon_1$, the rows collect $\tilde\Pi_+$ with $\vec\Upsilon_1$ and $\vec\Upsilon_2$ with $\tilde\Pi_-$, and the third pairing collects the two diagonal corners against the two mixed ones. The Peirce array is the table whose columns and rows are the two ideal decompositions, and the grading of §*The Peirce Decomposition of the Algebra* is the third pairing. A reader who identifies the three conflates objects that the algebra keeps apart.
 
 ## The Peirce Decomposition of the Algebra
 
@@ -51,10 +51,10 @@ and conversely the pair of a root $\tilde\Xi$ of $+1$ is $\tilde\Pi_\pm=\tfrac12
 **The four corners.** Writing $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ for $s,t\in\{+,-\}$, each corner is one complex line,
 
 $$
-\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+,\qquad \mathbb{B}_{+-}=\mathbb{C}\hat\Upsilon_1,\qquad \mathbb{B}_{-+}=\mathbb{C}\hat\Upsilon_2,\qquad \mathbb{B}_{--}=\mathbb{C}\tilde\Pi_- ,
+\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+,\qquad \mathbb{B}_{+-}=\mathbb{C}\vec\Upsilon_1,\qquad \mathbb{B}_{-+}=\mathbb{C}\vec\Upsilon_2,\qquad \mathbb{B}_{--}=\mathbb{C}\tilde\Pi_- ,
 $$
 
-so that $\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_1\oplus\mathbb{C}\hat\Upsilon_2\oplus\mathbb{C}\tilde\Pi_-$. The spanning elements displayed are those of the **standard** pair, $\tilde\Pi_\pm=\tfrac12(e_0\pm ie_3)$; for any other root the four corners are still one complex line each, but they are spanned by that root's own two mixed elements, in general not by $\hat\Upsilon_1$ and $\hat\Upsilon_2$. A corner is a joint eigenspace of the two multiplications by the root,
+so that $\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_1\oplus\mathbb{C}\vec\Upsilon_2\oplus\mathbb{C}\tilde\Pi_-$. The spanning elements displayed are those of the **standard** pair, $\tilde\Pi_\pm=\tfrac12(e_0\pm ie_3)$; for any other root the four corners are still one complex line each, but they are spanned by that root's own two mixed elements, in general not by $\vec\Upsilon_1$ and $\vec\Upsilon_2$. A corner is a joint eigenspace of the two multiplications by the root,
 
 $$
 x\in\mathbb{B}_{st}\iff \tilde\Xi x=s\,x\ \text{ and }\ x\tilde\Xi=t\,x ,
@@ -71,19 +71,19 @@ $$
 The multiplication table on the four basis elements is
 
 $$
-\tilde\Pi_+\hat\Upsilon_1=\hat\Upsilon_1=\hat\Upsilon_1\tilde\Pi_-,\quad \tilde\Pi_-\hat\Upsilon_2=\hat\Upsilon_2=\hat\Upsilon_2\tilde\Pi_+,\quad \hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+,\quad \hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-,
+\tilde\Pi_+\vec\Upsilon_1=\vec\Upsilon_1=\vec\Upsilon_1\tilde\Pi_-,\quad \tilde\Pi_-\vec\Upsilon_2=\vec\Upsilon_2=\vec\Upsilon_2\tilde\Pi_+,\quad \vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+,\quad \vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-,
 $$
 
-with $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$ and $\tilde\Pi_+\hat\Upsilon_2=\hat\Upsilon_1\tilde\Pi_+=\tilde\Pi_-\hat\Upsilon_2=0$. Read as a table of which corner contains the products, the rule of the corners is the Peirce table.
+with $\vec\Upsilon_1^2=\vec\Upsilon_2^2=0$ and $\tilde\Pi_+\vec\Upsilon_2=\vec\Upsilon_1\tilde\Pi_+=\tilde\Pi_-\vec\Upsilon_2=0$. Read as a table of which corner contains the products, the rule of the corners is the Peirce table.
 
-| $\cdot$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\hat\Upsilon_1$ | $\mathbb{C}\hat\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ |
+| $\cdot$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\vec\Upsilon_1$ | $\mathbb{C}\vec\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ |
 |---|---|---|---|---|
-| $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\hat\Upsilon_1$ | $0$ | $0$ |
-| $\mathbb{C}\hat\Upsilon_1$ | $0$ | $0$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\hat\Upsilon_1$ |
-| $\mathbb{C}\hat\Upsilon_2$ | $\mathbb{C}\hat\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ | $0$ | $0$ |
-| $\mathbb{C}\tilde\Pi_-$ | $0$ | $0$ | $\mathbb{C}\hat\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ |
+| $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\vec\Upsilon_1$ | $0$ | $0$ |
+| $\mathbb{C}\vec\Upsilon_1$ | $0$ | $0$ | $\mathbb{C}\tilde\Pi_+$ | $\mathbb{C}\vec\Upsilon_1$ |
+| $\mathbb{C}\vec\Upsilon_2$ | $\mathbb{C}\vec\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ | $0$ | $0$ |
+| $\mathbb{C}\tilde\Pi_-$ | $0$ | $0$ | $\mathbb{C}\vec\Upsilon_2$ | $\mathbb{C}\tilde\Pi_-$ |
 
-**The grading.** Splitting the four corners into the two diagonal ones and the two mixed ones, $A_0=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ and $A_1=\mathbb{C}\hat\Upsilon_1\oplus\mathbb{C}\hat\Upsilon_2$, the product rule becomes the multiplication law of $\mathbb{Z}/2$,
+**The grading.** Splitting the four corners into the two diagonal ones and the two mixed ones, $A_0=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ and $A_1=\mathbb{C}\vec\Upsilon_1\oplus\mathbb{C}\vec\Upsilon_2$, the product rule becomes the multiplication law of $\mathbb{Z}/2$,
 
 $$
 A_0A_0\subseteq A_0,\qquad A_0A_1\subseteq A_1,\qquad A_1A_0\subseteq A_1,\qquad A_1A_1\subseteq A_0 ,
@@ -98,7 +98,7 @@ the parity being the product $st$ of the two signs of the corner. The diagonal p
 Writing $\tilde Q=\sum_\mu Q_\mu e_\mu$ and letting $a_{ij}$ be the coordinate on the corner in matrix position $(i,j)$, position $1$ carrying $\tilde\Pi_+$ and position $2$ the member $\tilde\Pi_-$,
 
 $$
-\tilde Q=a_{11}\tilde\Pi_++a_{12}\hat\Upsilon_1+a_{21}\hat\Upsilon_2+a_{22}\tilde\Pi_- ,
+\tilde Q=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_1+a_{21}\vec\Upsilon_2+a_{22}\tilde\Pi_- ,
 $$
 
 $$
@@ -120,7 +120,7 @@ $$
 is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$ carrying the four Peirce spaces onto the four matrix units (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The Peirce decomposition therefore supplies the matrix model directly: the four spaces are the four matrix positions and the coordinate functions are the entries. The two invariants of the decomposition are the trace and the determinant of the array,
 
 $$
-a_{11}+a_{22}=2Q_0,\qquad a_{11}a_{22}-a_{12}a_{21}=Q_0^2+Q_1^2+Q_2^2+Q_3^2=N(\tilde Q),
+a_{11}+a_{22}=2Q_0,\qquad a_{11}a_{22}-a_{12}a_{21}=Q_0^2+Q_1^2+Q_2^2+Q_3^2=\langle\tilde Q\rangle_{\natural},
 $$
 
 so that the scalar part is the trace and the biquaternion norm is the determinant. In this model the left ideals are the columns and the right ideals the rows, and the two groupings of §*The Ideal Structure of the Plain Algebra* are the two groupings of the four matrix units.
@@ -140,9 +140,9 @@ Four identities make the reading exact, all of them linear or quadratic in the c
 1. **The populations sum to the trace,** $p_++p_-=a_{11}+a_{22}=2\,\mathrm{Sc}(\tilde\rho)=1$ for a trace-one state. The two populations are the weights of the two outcomes, and they are the two eigenvalues of the observable on the state.
 2. **The populations differ by the mean of the observable,** $p_+-p_-=a_{11}-a_{22}=\vec r\!\cdot\!\vec\mu=\langle\tilde\Xi\rangle$. The observable of square one has values $\pm1$, and the state's mean value is the population difference.
 3. **The populations are probabilities,** $p_\pm=\tfrac12(1\pm\vec r\!\cdot\!\vec\mu)$ lies in $[0,1]$, and the coherences are a conjugate pair, $a_{21}=\overline{a_{12}}$.
-4. **The norm is the population product minus the coherence square,** $N(\tilde\rho)=a_{11}a_{22}-a_{12}a_{21}=p_+p_--\lvert c\rvert^{2}$ with $c=a_{12}$. The norm of the framework is therefore the classical population product minus the non-classical interference.
+4. **The norm is the population product minus the coherence square,** $\langle\tilde\rho\rangle_{\natural}=a_{11}a_{22}-a_{12}a_{21}=p_+p_--\lvert c\rvert^{2}$ with $c=a_{12}$. The norm of the framework is therefore the classical population product minus the non-classical interference.
 
-The last identity carries the purity. On the Bloch ball the norm of a Hermitian state is $N(\tilde\rho)=\tfrac14(1-\lvert\vec r\rvert^{2})$, which vanishes exactly on the pure states, the boundary of the ball. In the population-and-coherence form the vanishing is the **saturation**
+The last identity carries the purity. On the Bloch ball the norm of a Hermitian state is $\langle\tilde\rho\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^{2})$, which vanishes exactly on the pure states, the boundary of the ball. In the population-and-coherence form the vanishing is the **saturation**
 
 $$
 p_+p_-=\lvert c\rvert^{2}\quad\text{(pure state)},
@@ -150,7 +150,7 @@ $$
 
 that is, a pure state has as much coherence as its population product allows and no more. This is the population form of the statement that the pure states lie on the zero-divisor cone of the algebra (*Square Roots of Zero and the Nilpotents: the Light Cone*; *The Hermitian Subspace M₊ as the Informational Sector*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*).
 
-**Interference is the product of two coherences.** The grading of §*The Peirce Decomposition of the Algebra* reads physically as the interference rule: a product of two coherences lands in the populations, the products of the two mixed basis elements being $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$ and $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$. Two order-1 terms of the state combine into an order-0 term, which is the algebraic shape of an interference term; and the two orders differ, since a product of two populations stays in the populations. The diagonal part $A_0=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-\cong\mathbb{C}\times\mathbb{C}$ is a commutative two-dimensional subalgebra, the algebra of the two outcomes, carried by the populations; the mixed part $A_1$ carries the coherences and is not a subalgebra, its two elements being nilpotent.
+**Interference is the product of two coherences.** The grading of §*The Peirce Decomposition of the Algebra* reads physically as the interference rule: a product of two coherences lands in the populations, the products of the two mixed basis elements being $\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+$ and $\vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-$. Two order-1 terms of the state combine into an order-0 term, which is the algebraic shape of an interference term; and the two orders differ, since a product of two populations stays in the populations. The diagonal part $A_0=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-\cong\mathbb{C}\times\mathbb{C}$ is a commutative two-dimensional subalgebra, the algebra of the two outcomes, carried by the populations; the mixed part $A_1$ carries the coherences and is not a subalgebra, its two elements being nilpotent.
 
 **The two sectors cut across the four corners.** The Peirce split and the sector split are independent: each of $A_0$ and $A_1$ is invariant under the Hermitian conjugation and is four-real-dimensional, so each meets each of the sectors $\mathbb{M}_\pm$ in a real two-dimensional subspace. A corner is a complex line and therefore a real plane, and no nonzero element of a mixed corner is Hermitian or anti-Hermitian: the two mixed corners are exchanged by the Hermitian conjugation, and the mixed pair carries two real dimensions of each sector. The Peirce decomposition is not the sector decomposition and does not refine it, exactly as the two minimal left ideals of §*The Ideal Structure of the Plain Algebra* meet each sector in one real dimension without being sectors.
 
@@ -162,11 +162,11 @@ that is, a pure state has as much coherence as its population product allows and
 
 The three conjugations act on the four basis elements by
 
-| | $\tilde\Pi_+$ | $\hat\Upsilon_1$ | $\hat\Upsilon_2$ | $\tilde\Pi_-$ |
+| | $\tilde\Pi_+$ | $\vec\Upsilon_1$ | $\vec\Upsilon_2$ | $\tilde\Pi_-$ |
 |---|---|---|---|---|
-| natural ${}^{\natural}$ | $\tilde\Pi_-$ | $-\hat\Upsilon_1$ | $-\hat\Upsilon_2$ | $\tilde\Pi_+$ |
-| bar $\bar{\cdot}$ | $\tilde\Pi_-$ | $-\hat\Upsilon_2$ | $-\hat\Upsilon_1$ | $\tilde\Pi_+$ |
-| Hermitian ${}^{*}$ | $\tilde\Pi_+$ | $\hat\Upsilon_2$ | $\hat\Upsilon_1$ | $\tilde\Pi_-$ |
+| natural ${}^{\natural}$ | $\tilde\Pi_-$ | $-\vec\Upsilon_1$ | $-\vec\Upsilon_2$ | $\tilde\Pi_+$ |
+| bar $\bar{\cdot}$ | $\tilde\Pi_-$ | $-\vec\Upsilon_2$ | $-\vec\Upsilon_1$ | $\tilde\Pi_+$ |
+| Hermitian ${}^{*}$ | $\tilde\Pi_+$ | $\vec\Upsilon_2$ | $\vec\Upsilon_1$ | $\tilde\Pi_-$ |
 
 so all three preserve the set of the four Peirce spaces, the natural one exchanging the diagonal corners and fixing each mixed space up to the sign $-\mathrm{id}$, the bar exchanging both the diagonal and the mixed pairs, and the Hermitian conjugation fixing the diagonal corners and swapping the two mixed ones. The bar and the natural are the two factors of the composite ${}^{*}=\bar{\cdot}\circ\natural$, and each of them fails to fix the standard idempotents; **the Hermitian conjugation is the one that respects the pair.**
 
@@ -193,7 +193,7 @@ The decompositions therefore form one degenerate decomposition, a two-real-param
 By the matrix model the statement is the change-of-basis statement for $M_2(\mathbb{C})$, and the unit group of $\mathbb{B}$ acts transitively on the decompositions; a nontrivial idempotent may be carried anywhere by an invertible element, and the element carries its decomposition with it. The stabiliser of the standard pair is the torus $\{a\tilde\Pi_++b\tilde\Pi_-:a,b\in\mathbb{C}^\times\}$, which fixes the two idempotents and acts on the two mixed elements by the reciprocal scaling
 
 $$
-\hat\Upsilon_1\mapsto\frac{a}{b}\hat\Upsilon_1,\qquad \hat\Upsilon_2\mapsto\frac{b}{a}\hat\Upsilon_2 .
+\vec\Upsilon_1\mapsto\frac{a}{b}\vec\Upsilon_1,\qquad \vec\Upsilon_2\mapsto\frac{b}{a}\vec\Upsilon_2 .
 $$
 
 The reading is that the block structure is a property of the algebra and not of a frame: the algebra is a $2\times2$ matrix algebra, and what the choice of an idempotent selects is a frame, that is a basis in which the blocks are read. Changing the frame is an invertible operation, and the residual freedom inside a fixed frame is the reciprocal scaling of the two normalised mixed elements, an overall freedom of the coherence basis that leaves the populations and the products unchanged.
@@ -202,7 +202,7 @@ The reading is that the block structure is a property of the algebra and not of 
 
 ## Summary
 
-The plain product of the biquaternion algebra is simple: its only two-sided ideals are $0$ and $\mathbb{B}$, its radical is $0$, and its left ideals are exactly $0$, the minimal left ideals and $\mathbb{B}$, with the minimal ones $\mathbb{B}e$ generated by a primitive idempotent, all isomorphic, parametrised by $\mathbb{P}^1(\mathbb{C})$, and the algebra of length two as a module over itself. The Peirce decomposition derives from a root $\tilde\Xi$ of $+1$: the root gives its complete orthogonal pair $\tilde\Pi_\pm=\tfrac12(e_0\pm\tilde\Xi)$, and the pair gives the decomposition $\mathbb{B}=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_+\mathbb{B}\tilde\Pi_-\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_-$; for the standard pair the four corners are the four complex lines $\mathbb{C}\tilde\Pi_+$, $\mathbb{C}\hat\Upsilon_1$, $\mathbb{C}\hat\Upsilon_2$, $\mathbb{C}\tilde\Pi_-$, the product rule is $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and the diagonal and mixed parts form a $\mathbb{Z}/2$-grading. Conversely a single nontrivial idempotent $e$ recovers the root as $\tilde\Xi=2e-e_0$. The Peirce coordinates are the entries of the matrix element representation, their sum is twice the scalar part and their determinant is the norm. The decompositions are in bijection with the roots of $+1$ modulo the sign change, and all of them are conjugate by an inner automorphism.
+The plain product of the biquaternion algebra is simple: its only two-sided ideals are $0$ and $\mathbb{B}$, its radical is $0$, and its left ideals are exactly $0$, the minimal left ideals and $\mathbb{B}$, with the minimal ones $\mathbb{B}e$ generated by a primitive idempotent, all isomorphic, parametrised by $\mathbb{P}^1(\mathbb{C})$, and the algebra of length two as a module over itself. The Peirce decomposition derives from a root $\tilde\Xi$ of $+1$: the root gives its complete orthogonal pair $\tilde\Pi_\pm=\tfrac12(e_0\pm\tilde\Xi)$, and the pair gives the decomposition $\mathbb{B}=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_+\mathbb{B}\tilde\Pi_-\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_-$; for the standard pair the four corners are the four complex lines $\mathbb{C}\tilde\Pi_+$, $\mathbb{C}\vec\Upsilon_1$, $\mathbb{C}\vec\Upsilon_2$, $\mathbb{C}\tilde\Pi_-$, the product rule is $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and the diagonal and mixed parts form a $\mathbb{Z}/2$-grading. Conversely a single nontrivial idempotent $e$ recovers the root as $\tilde\Xi=2e-e_0$. The Peirce coordinates are the entries of the matrix element representation, their sum is twice the scalar part and their determinant is the norm. The decompositions are in bijection with the roots of $+1$ modulo the sign change, and all of them are conjugate by an inner automorphism.
 
 The readings are these. Relative to a **Hermitian root of $+1$**, that is an observable of square one, the four corners are the two **populations** and the two **coherences** of the algebra in the observable's basis; the populations are the diagonal corners and the coherences the mixed ones; the grading is the interference rule, two coherences multiplying back into the populations; the Hermitian conjugation fixes the populations and exchanges the coherences, and it is the only one of the three conjugations that does; the populations of a state sum to the trace, differ by the mean of the observable, and lie in $[0,1]$; and the norm is the population product minus the coherence square, so that a pure state is the saturation $p_+p_-=\lvert c\rvert^{2}$, the population form of the zero-divisor cone. The frame of the decomposition is the axis of the observable up to sign, and the observable-driven frames are the Hermitian ones, forming the real projective plane. The algebra supplies a single block structure, the decompositions being its frames, and marks out no frame. The triviality of the two-sided ideals and its superselection consequence are owned by *The Centre of the Biquaternion Algebra as the Classical Sector*, the state carrier by *The Native Qubit and the Defining Module of the Biquaternion Algebra*, and the dynamics of the populations and the coherences by *Decoherence as Idempotent Projection*. The readings are proposals about naming; the ideal structure, the corners, the grading, the coordinates, the conjugation table, the bijection and the rigidity are results.
 
@@ -215,14 +215,14 @@ The readings are these. Relative to a **Hermitian root of $+1$**, that is an obs
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde\Xi$, $\tilde\Xi^2=e_0$ | A root of $+1$ |
 | $\tilde\Pi_\pm=\tfrac12(e_0\pm\tilde\Xi)$ | The complete orthogonal pair of the root; the two idempotents, the two states in the reading |
-| $\hat\Upsilon_1,\hat\Upsilon_2$ | The two nilpotents, $\hat\Upsilon_1=\tfrac{ie_1-e_2}{2}$, $\hat\Upsilon_2=\tfrac{ie_1+e_2}{2}$ |
+| $\vec\Upsilon_1,\vec\Upsilon_2$ | The two nilpotents, $\vec\Upsilon_1=\tfrac{ie_1-e_2}{2}$, $\vec\Upsilon_2=\tfrac{ie_1+e_2}{2}$ |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | The four Peirce corners, one complex line each |
-| $\mathbb{C}\tilde\Pi_+,\mathbb{C}\hat\Upsilon_1,\mathbb{C}\hat\Upsilon_2,\mathbb{C}\tilde\Pi_-$ | The corners, in matrix positions $(1,1),(1,2),(2,1),(2,2)$ |
+| $\mathbb{C}\tilde\Pi_+,\mathbb{C}\vec\Upsilon_1,\mathbb{C}\vec\Upsilon_2,\mathbb{C}\tilde\Pi_-$ | The corners, in matrix positions $(1,1),(1,2),(2,1),(2,2)$ |
 | $A_0,A_1$ | The diagonal and the mixed parts; the $\mathbb{Z}/2$-grading |
 | $a_{ij}$ | Peirce coordinate, the $(i,j)$ entry of $\mathsf{M}_2(\tilde Q)$ |
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $a_{11}+a_{22}=2Q_0$ | The trace, twice the scalar part |
-| $a_{11}a_{22}-a_{12}a_{21}=N(\tilde Q)$ | The determinant, the biquaternion norm |
+| $a_{11}a_{22}-a_{12}a_{21}=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $p_+=a_{11}$, $p_-=a_{22}$, $c=a_{12}$ | Populations and coherence in a Hermitian frame |
 | $p_++p_-=1$, $p_+-p_-=\langle\tilde\Xi\rangle$ | The populations sum to the trace and differ by the mean |
 | $N=p_+p_--\lvert c\rvert^{2}$ | The norm as population product minus coherence square |

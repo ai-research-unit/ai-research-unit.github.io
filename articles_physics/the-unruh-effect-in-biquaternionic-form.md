@@ -13,7 +13,7 @@ with a Planckian spectrum in the frequency conjugate to the observer's proper ti
 Three structures carry the effect, and all three have a definite home in the framework.
 
 1. **The Rindler wedge.** The accelerated trajectory is confined to a wedge of Minkowski space, the **right Rindler wedge** $R=\{x>|ct|\}$. Its boundary is the light cone — which, in the material sector $\mathbb{M}_-$, is exactly the **zero-divisor cone** of the algebra. The wedge, its horizon, and its boost flow are material-sector objects.
-2. **The boost as the modular Hamiltonian.** By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, where $K_{\mathrm{boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $e_1$ it is $G_1=ie_1\in\mathbb{M}_+$.
+2. **The boost as the modular Hamiltonian.** By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, where $K_{\mathrm{boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $e_1$ it is $G_1=ie_1\in\mathbb{M}_+$.
 3. **The KMS condition.** The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=\hbar/(k_BT)$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.
 
 The trap in this subject is to *assert* the thermality — to write down the exponential spectrum and the temperature as if the algebra had produced them. It has not. Thermality is a statement about the **analyticity of the two-point function**, and the section that derives it shows the step: the two-point function along the accelerated orbit is an explicit function whose analytic continuation to imaginary proper time is periodic, and the period *is* the KMS width. The temperature is then recomputed a second time, from the **surface gravity** of the boost orbit, so that it is not a single formula asserted twice.
@@ -27,7 +27,7 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 
 The article is organized as follows. The next section fixes the wedge, the Rindler coordinates, and the boost. The section after that states the modular Hamiltonian and identifies the flow, with the parent's gap stated explicitly. The next section computes the two-point function and derives the KMS relation from its analytic strip. Two short sections recompute the temperature, one from the imaginary-time period and one from the surface gravity. A section isolates what the biquaternion framework adds and what it only transcribes, and a short section records the statistics. The article closes with the established/interpretation split, open questions, and the summary.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $e_k$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is inherited unchanged. Throughout, $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants, and $c$ is the speed of light. The two-point-function computation is done in units $c=1$, restoring $c$ only in the temperature.
 
 ## The Rindler Wedge and the Boost
 
@@ -36,7 +36,7 @@ The article is organized as follows. The next section fixes the wedge, the Rindl
 Work in the material sector and restrict to the $x$--$t$ plane, setting $y=z=0$. A point is
 
 $$
-\tilde{Q} = i\,ct\,e_0 + x\,e_1 \in \mathbb{M}_-, \qquad N(\tilde{Q}) = -c^2t^2 + x^2 .
+\tilde{Q} = i\,ct\,e_0 + x\,e_1 \in \mathbb{M}_-, \qquad \langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + x^2 .
 $$
 
 The **right Rindler wedge** is the region
@@ -48,10 +48,10 @@ $$
 and the **left wedge** is its mirror $L=\{(t,x): x<-|ct|\}$. The boundary
 
 $$
-N(\tilde{Q}) = 0 \quad\Longleftrightarrow\quad x = \pm ct
+\langle\tilde{Q}\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad x = \pm ct
 $$
 
-is the light cone. In the algebra the light cone of $\mathbb{M}_-$ is the **zero-divisor cone**: a nonzero $\tilde{Q}\in\mathbb{M}_-$ satisfies $\tilde{Q}\tilde{Q}^{\natural}=0$ exactly on $N(\tilde{Q})=0$ (the companion article on $\mathbb{M}_-$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
+is the light cone. In the algebra the light cone of $\mathbb{M}_-$ is the **zero-divisor cone**: a nonzero $\tilde{Q}\in\mathbb{M}_-$ satisfies $\tilde{Q}\tilde{Q}^{\natural}=0$ exactly on $\langle\tilde{Q}\rangle_{\natural}=0$ (the companion article on $\mathbb{M}_-$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
 
 Inside $R$ the biquaternion norm is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
 
@@ -59,7 +59,7 @@ $$
 x = \rho\cosh\eta, \qquad ct = \rho\sinh\eta, \qquad \rho>0,\ \eta\in\mathbb{R},
 $$
 
-so that $\tilde{Q} = i\rho\sinh\eta\,e_0+\rho\cosh\eta\,e_1$ and $N(\tilde{Q})=\rho^2$. The curves of constant $\rho$ are the orbits of a uniformly accelerated observer. Their proper time $\tau$ and proper acceleration $a$ are
+so that $\tilde{Q} = i\rho\sinh\eta\,e_0+\rho\cosh\eta\,e_1$ and $\langle\tilde{Q}\rangle_{\natural}=\rho^2$. The curves of constant $\rho$ are the orbits of a uniformly accelerated observer. Their proper time $\tau$ and proper acceleration $a$ are
 
 $$
 c\,d\tau = \rho\,d\eta, \qquad a = \frac{c^2}{\rho},
@@ -116,7 +116,7 @@ $$
 q_0 \longmapsto q_0 - 2s\,q_1, \qquad q_1 \longmapsto q_1 - 2s\,q_0
 $$
 
-for the flow parameter $s=\psi/2$. This is the sign that has to be fixed before anything else can be; we record it explicitly and use the orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $N(\tilde U\tilde{Q}\tilde U)=N(\tilde{Q})$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\psi$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{M}_-$.
+for the flow parameter $s=\psi/2$. This is the sign that has to be fixed before anything else can be; we record it explicitly and use the orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U\tilde{Q}\tilde U\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\psi$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{M}_-$.
 
 **Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $K_L=-K_R$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
 
@@ -145,13 +145,13 @@ The gap is the one anticipated in the introduction. In a quantum field theory th
 For the vacuum state of a Wightman quantum field theory and the right Rindler wedge $R$, the **Bisognano–Wichmann theorem** states that the modular operator is
 
 $$
-\Delta = e^{-2\pi K_{\mathrm{boost}}},
+\Delta = \exp(-2\pi K_{\mathrm{boost}}),
 $$
 
 where $K_{\mathrm{boost}}$ is the generator of the boosts that preserve $R$, normalized so that $\xi=\partial_\eta$. The modular flow is
 
 $$
-\alpha_s(\tilde A) = \Delta^{is}\,\tilde A\,\Delta^{-is} = e^{-2\pi i sK_{\mathrm{boost}}}\,\tilde A\,e^{2\pi i sK_{\mathrm{boost}}},
+\alpha_s(\tilde A) = \Delta^{is}\,\tilde A\,\Delta^{-is} = \exp(-2\pi i sK_{\mathrm{boost}})\,\tilde A\,\exp(2\pi i sK_{\mathrm{boost}}),
 $$
 
 which is the boost by rapidity $2\pi s$. This is established physics and is imported here; the article does not derive it, and says so. Its content for us is that the abstract modular flow of the parent acquires a **geometric realization**: it is the boost flow, and the modular parameter $s$ is the Rindler time measured in units of $2\pi$.
@@ -238,22 +238,22 @@ Two remarks keep the derivation honest.
 The KMS relation is equivalent, in frequency space, to a **detailed-balance** relation. Writing the Wightman function in terms of the Rindler frequency $\omega$ conjugate to $\eta$,
 
 $$
-W(\delta\eta)=\int\frac{d\omega}{2\pi}\,\tilde W(\omega)\,e^{-i\omega\,\delta\eta},
+W(\delta\eta)=\int\frac{d\omega}{2\pi}\,W^{\wedge}(\omega)\,\exp(-i\omega\,\delta\eta),
 $$
 
 the boundary relation $W(\delta\eta+2\pi i)=W(-\delta\eta)$ is equivalent, for the boundary values selected by the $i\epsilon$ of the displayed two-point function, to a **detailed-balance** relation among the spectral weights,
 
 $$
-\tilde W(-\omega) = e^{-2\pi\omega}\,\tilde W(\omega) \qquad (\omega>0),
+W^{\wedge}(-\omega) = \exp(-2\pi\omega)\,W^{\wedge}(\omega) \qquad (\omega>0),
 $$
 
-where we have written the transform in the convention $\tilde W(\omega)=\int d\eta\,e^{i\omega\eta}W(\eta)$ inverse to the display above. The two boundary edges of the strip differ by exactly the Boltzmann factor, so the exponent's sign is fixed by which edge is called $W$; we state it with the same $i\epsilon$ as the two-point function and do not read it off independently of that convention. This is the **Planck factor**: the ratio of the excitation and de-excitation weights of a detector of gap $\omega$ is $e^{-2\pi\omega}$ rather than $1$, which is the signature of a thermal bath at inverse temperature $\beta_\eta=2\pi$ in the Rindler time. Computing the Fourier transform of the displayed function explicitly — the poles of $\coth$ at $2\pi i n+i\epsilon$ are enclosed in the upper half plane for $\omega>0$, and the $n=0$ pole must be included — gives
+where we have written the transform in the convention $W^{\wedge}(\omega)=\int d\eta\,\exp(i\omega\eta)W(\eta)$ inverse to the display above. The two boundary edges of the strip differ by exactly the Boltzmann factor, so the exponent's sign is fixed by which edge is called $W$; we state it with the same $i\epsilon$ as the two-point function and do not read it off independently of that convention. This is the **Planck factor**: the ratio of the excitation and de-excitation weights of a detector of gap $\omega$ is $\exp(-2\pi\omega)$ rather than $1$, which is the signature of a thermal bath at inverse temperature $\beta_\eta=2\pi$ in the Rindler time. Computing the Fourier transform of the displayed function explicitly — the poles of $\coth$ at $2\pi i n+i\epsilon$ are enclosed in the upper half plane for $\omega>0$, and the $n=0$ pole must be included — gives
 
 $$
-\tilde W(\omega) = \frac{1}{16\pi^2\rho^2}\cdot\frac{8\pi\omega}{1-e^{-2\pi\omega}}\quad(\omega>0),
+W^{\wedge}(\omega) = \frac{1}{16\pi^2\rho^2}\cdot\frac{8\pi\omega}{1-\exp(-2\pi\omega)}\quad(\omega>0),
 $$
 
-whose ratio at $\pm\omega$ is $e^{-2\pi\omega}$. The transform has been checked numerically at two frequencies ($\omega=0.5$ and $\omega=1$), where the measured ratios $4.3\times10^{-2}$ and $1.87\times10^{-3}$ agree with $e^{-\pi}$ and $e^{-2\pi}$ to the accuracy of the regulator; this is recorded in the companion, together with the first attempt that omitted the $n=0$ pole and returned a ratio of $1$.
+whose ratio at $\pm\omega$ is $\exp(-2\pi\omega)$. The transform has been checked numerically at two frequencies ($\omega=0.5$ and $\omega=1$), where the measured ratios $4.3\times10^{-2}$ and $1.87\times10^{-3}$ agree with $\exp(-\pi)$ and $\exp(-2\pi)$ to the accuracy of the regulator; this is recorded in the companion, together with the first attempt that omitted the $n=0$ pole and returned a ratio of $1$.
 
 ## The Temperature from the Imaginary-Time Period
 
@@ -363,7 +363,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=ie_1\in\mathbb{M}_+$ acting on $\mathbb{M}_-$ by the two-sided rotor conjugation $\tilde{Q}\mapsto\tilde U\,\tilde{Q}\,\tilde U$ with $\tilde U(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$.
 
-By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $ie_1\in\mathbb{M}_+$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
+By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $ie_1\in\mathbb{M}_+$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
 
 $$
 W(\delta\tau) = -\frac{a^2}{16\pi^2}\,\frac{1}{\sinh^2\!\big(\tfrac{a}{2}(\delta\tau-i\epsilon)\big)},
@@ -390,7 +390,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3$ | Material-sector coordinate $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $R=\{x>|ct|\}$ | Right Rindler wedge; $L$ its mirror |
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |
@@ -401,13 +401,13 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator (Hermitian) |
 | $\tilde U(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
-| $K_{\mathrm{boost}},\ \Delta=e^{-2\pi K_{\mathrm{boost}}}$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
+| $K_{\mathrm{boost}},\ \Delta=\exp(-2\pi K_{\mathrm{boost}})$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
 | $\alpha_s$ | Modular flow = boost by rapidity $2\pi s$ |
 | $K=-\log\Delta$ | Modular Hamiltonian (parent's notation) |
 | $W(\delta\tau)$ | Massless two-point function on the orbit |
 | $\beta=2\pi/a$ | KMS strip width in imaginary proper time |
 | $T=\hbar a/(2\pi c k_B)$ | Unruh temperature |
-| $\tilde W(\omega)$ | Rindler-frequency transform of $W$; $\tilde W(-\omega)=e^{-2\pi\omega}\tilde W(\omega)$ |
+| $W^{\wedge}(\omega)$ | Rindler-frequency transform of $W$; $W^{\wedge}(-\omega)=\exp(-2\pi\omega)W^{\wedge}(\omega)$ |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (inherited) |
 
 ## Further Reading

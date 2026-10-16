@@ -17,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -69,90 +69,90 @@ A **neighborhood** of $\tilde{Q}_0$ is any set containing some $B(\tilde{Q}_0, r
 
 ### Limits of Functions
 
-**Definition (limit).** Let $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ be a function, $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ a point, and $\tilde{L} \in \mathbb{H}_{\mathbb{D}}$ a split biquaternion. We say that $\tilde{F}(\tilde{Q})$ **tends to** $\tilde{L}$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
+**Definition (limit).** Let $F^{\mathrm{fn}} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ be a function, $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ a point, and $\tilde{L} \in \mathbb{H}_{\mathbb{D}}$ a split biquaternion. We say that $F^{\mathrm{fn}}(\tilde{Q})$ **tends to** $\tilde{L}$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
 
 $$
-\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L},
+\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde{L},
 $$
 
 if for every $\varepsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon.
+0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon.
 $$
 
-The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $\tilde{F}$ at $\tilde{Q}_0$ itself does not affect the limit.
+The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $F^{\mathrm{fn}}$ at $\tilde{Q}_0$ itself does not affect the limit.
 
 **Theorem (uniqueness).** If the limit exists, it is unique.
 
-**Proof.** Suppose $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{F}(\tilde{Q}) \to \tilde{L}'$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde{L} \neq \tilde{L}'$. Let $\varepsilon = \|\tilde{L} - \tilde{L}'\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
+**Proof.** Suppose $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}$ and $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}'$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde{L} \neq \tilde{L}'$. Let $\varepsilon = \|\tilde{L} - \tilde{L}'\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}'\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
 
 $$
-\|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - \tilde{F}(\tilde{Q})\|_E + \|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
+\|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - F^{\mathrm{fn}}(\tilde{Q})\|_E + \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
 $$
 
 a contradiction.
 
-**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $\tilde{F}(\tilde{Q}_n) \to \tilde{L}$.
+**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $F^{\mathrm{fn}}(\tilde{Q}_n) \to \tilde{L}$.
 
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.
+**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $F^{\mathrm{fn}}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.
 
-**Theorem (algebra of limits).** If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
+**Theorem (algebra of limits).** If $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}$ and $G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
 $$
-\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q}) \circ \tilde{G}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+F^{\mathrm{fn}}(\tilde{Q}) + G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad F^{\mathrm{fn}}(\tilde{Q}) \circ G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
 $$
 
 **Proof.** For the sum, use the triangle inequality:
 
 $$
-\|(\tilde{F} + \tilde{G}) - (\tilde{L} + \tilde{M})\|_E \leq \|\tilde{F} - \tilde{L}\|_E + \|\tilde{G} - \tilde{M}\|_E.
+\|(F^{\mathrm{fn}} + G^{\mathrm{fn}}) - (\tilde{L} + \tilde{M})\|_E \leq \|F^{\mathrm{fn}} - \tilde{L}\|_E + \|G^{\mathrm{fn}} - \tilde{M}\|_E.
 $$
 
 For the product, use the identity
 
 $$
-\tilde{F} \tilde{G} - \tilde{L} \tilde{M} = (\tilde{F} - \tilde{L}) \tilde{G} + \tilde{L} (\tilde{G} - \tilde{M}),
+F^{\mathrm{fn}} G^{\mathrm{fn}} - \tilde{L} \tilde{M} = (F^{\mathrm{fn}} - \tilde{L}) G^{\mathrm{fn}} + \tilde{L} (G^{\mathrm{fn}} - \tilde{M}),
 $$
 
-and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
+and the fact that $G^{\mathrm{fn}}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
 
 ### Continuity
 
-**Definition (continuity).** A function $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ is **continuous at a point** $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ if the limit exists and equals the value of the function at that point:
+**Definition (continuity).** A function $F^{\mathrm{fn}} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ is **continuous at a point** $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ if the limit exists and equals the value of the function at that point:
 
 $$
-\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{F}(\tilde{Q}_0).
+\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = F^{\mathrm{fn}}(\tilde{Q}_0).
 $$
 
 Equivalently, for every $\varepsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \varepsilon.
+\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \varepsilon.
 $$
 
 The function is **continuous on an open set** if it is continuous at every point of the set.
 
-**Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.
+**Theorem (basic properties).** If $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ are continuous at $\tilde{Q}_0$, then so are $F^{\mathrm{fn}} + G^{\mathrm{fn}}$ and $F^{\mathrm{fn}} \circ G^{\mathrm{fn}}$. If $F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$ and $G^{\mathrm{fn}}$ is continuous at $F^{\mathrm{fn}}(\tilde{Q}_0)$, then $G^{\mathrm{fn}} \circ F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
+**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|G^{\mathrm{fn}}(\tilde{R}) - G^{\mathrm{fn}}(F^{\mathrm{fn}}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 
-**Theorem (component-wise continuity).** A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each split complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$, which in turn holds if and only if each of the eight real-valued functions $\Re(F_\mu)$, $\Im(F_\mu)$ (with respect to $j$) is continuous at $\tilde{Q}_0$.
+**Theorem (component-wise continuity).** A function $F^{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each split complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$, which in turn holds if and only if each of the eight real-valued functions $\Re(F_\mu)$, $\Im(F_\mu)$ (with respect to $j$) is continuous at $\tilde{Q}_0$.
 
 **Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients, and the modulus of a split complex number is equivalent to the maximum of the absolute values of its real and split parts. So convergence in $\mathbb{H}_{\mathbb{D}}$ is equivalent to convergence of each of the eight real components.
 
 **Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{H}_{\mathbb{D}}$ is uniformly continuous.
 
-**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality.
+**Proof.** This is the standard argument: if $F^{\mathrm{fn}}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|F^{\mathrm{fn}}(\tilde{Q}_n) - F^{\mathrm{fn}}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $F^{\mathrm{fn}}(\tilde{Q}_n) \to F^{\mathrm{fn}}(\tilde{Q})$ and $F^{\mathrm{fn}}(\tilde{R}_n) \to F^{\mathrm{fn}}(\tilde{Q})$, contradicting the inequality.
 
 ## The Problem of Differentiability
 
 ### The Naive Definition
 
-The derivative of a function $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit
+The derivative of a function $F^{\mathrm{fn}} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit
 
 $$
-\tilde{F}'(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{\tilde{F}(\tilde{Q}_0 + \tilde{H}) - \tilde{F}(\tilde{Q}_0)}{\tilde{H}},
+F^{\mathrm{fn}\prime}(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{F^{\mathrm{fn}}(\tilde{Q}_0 + \tilde{H}) - F^{\mathrm{fn}}(\tilde{Q}_0)}{\tilde{H}},
 $$
 
 where $\tilde{H}$ is a split biquaternion and the quotient is a split biquaternion quotient. This definition runs into two difficulties, both specific to the non-commutative and non-division structure of $\mathbb{H}_{\mathbb{D}}$.
@@ -203,28 +203,28 @@ The general theory is independent of the choice of basis; only the interpretatio
 A **split-biquaternion-valued function on $V$** is a map
 
 $$
-\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}).
+F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto F^{\mathrm{fn}}(\tilde{Q}).
 $$
 
-Writing $\tilde{Q} = \sum_\mu Q_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $Q_0, Q_1, Q_2, Q_3$:
+Writing $\tilde{Q} = \sum_\mu Q_\mu f_\mu$, the function $F^{\mathrm{fn}}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $Q_0, Q_1, Q_2, Q_3$:
 
 $$
-\tilde{F}(\tilde{Q}) = F_0(Q_0, Q_1, Q_2, Q_3) e_0 + F_1(Q_0, Q_1, Q_2, Q_3) e_1 + F_2(Q_0, Q_1, Q_2, Q_3) e_2 + F_3(Q_0, Q_1, Q_2, Q_3) e_3.
+F^{\mathrm{fn}}(\tilde{Q}) = F_0(Q_0, Q_1, Q_2, Q_3) e_0 + F_1(Q_0, Q_1, Q_2, Q_3) e_1 + F_2(Q_0, Q_1, Q_2, Q_3) e_2 + F_3(Q_0, Q_1, Q_2, Q_3) e_3.
 $$
 
 The restriction to $V$ reduces the number of independent real variables from eight to four.
 
 ### Partial Derivatives
 
-For each $\mu = 0, 1, 2, 3$, we define the **partial derivative** of $\tilde{F}$ with respect to $Q_\mu$ by
+For each $\mu = 0, 1, 2, 3$, we define the **partial derivative** of $F^{\mathrm{fn}}$ with respect to $Q_\mu$ by
 
 $$
-\frac{\partial \tilde{F}}{\partial Q_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
+\frac{\partial F^{\mathrm{fn}}}{\partial Q_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
 $$
 
 The partial derivative acts component-wise on the coefficients. Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately.
 
-We write $\partial_\mu$ for $\partial/\partial Q_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.
+We write $\partial_\mu$ for $\partial/\partial Q_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu F^{\mathrm{fn}} = \partial_\nu \partial_\mu F^{\mathrm{fn}}$ for all $\mu, \nu$.
 
 ## The Differential Operators
 
@@ -236,18 +236,18 @@ $$
 \tilde{\nabla} = e_0 \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3 = \sum_{\mu=0}^{3} e_\mu \partial_\mu.
 $$
 
-It acts on a split-biquaternion-valued function $\tilde{F}$ on $V$ by the rule
+It acts on a split-biquaternion-valued function $F^{\mathrm{fn}}$ on $V$ by the rule
 
 $$
-\tilde{\nabla} \tilde{F} = \left(\sum_{\mu=0}^{3} e_\mu \partial_\mu\right)\left(\sum_{\nu=0}^{3} F_\nu e_\nu\right) = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} (\partial_\mu F_\nu) \, e_\mu e_\nu.
+\tilde{\nabla} F^{\mathrm{fn}} = \left(\sum_{\mu=0}^{3} e_\mu \partial_\mu\right)\left(\sum_{\nu=0}^{3} F_\nu e_\nu\right) = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} (\partial_\mu F_\nu) \, e_\mu e_\nu.
 $$
 
 The tilde on $\tilde{\nabla}$ signals that it is a split-biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its "scalar" parts are the partial derivatives $\partial_\mu$.
 
-Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain
+Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}F^{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\partial_0 F_0 - \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
+\tilde{\nabla}F^{\mathrm{fn}} = \left(\partial_0 F_0 - \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$
 
 where
@@ -266,10 +266,10 @@ $$
 \tilde{\nabla}^{\natural} = e_0 \partial_0 - e_1 \partial_1 - e_2 \partial_2 - e_3 \partial_3.
 $$
 
-The product $\tilde{\nabla}^{\natural}\tilde{F}$ is computed in the same way:
+The product $\tilde{\nabla}^{\natural}F^{\mathrm{fn}}$ is computed in the same way:
 
 $$
-\tilde{\nabla}^{\natural}\tilde{F} = \left(\partial_0 F_0 + \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
+\tilde{\nabla}^{\natural}F^{\mathrm{fn}} = \left(\partial_0 F_0 + \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
 $$
 
 ### The d'Alembertian
@@ -314,7 +314,7 @@ $$
 \Box = \partial_0^2 + \Delta.
 $$
 
-The operator $\Box$ is a scalar operator: it multiplies a split biquaternion by the identity $e_0$. It acts component-wise on the coefficients of $\tilde{F}$.
+The operator $\Box$ is a scalar operator: it multiplies a split biquaternion by the identity $e_0$. It acts component-wise on the coefficients of $F^{\mathrm{fn}}$.
 
 ### The Product $\tilde{\nabla}^2$
 
@@ -357,7 +357,7 @@ This is a key structural fact: the gradient has **two** natural second-order pro
 Let
 
 $$
-\tilde{S} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
+\tilde{S} = \sum_{\mu=0}^{3} s_\mu e_\mu, \qquad s_\mu \in \mathbb{R},
 $$
 
 be a split biquaternion with real coefficients. The **split-biquaternion convective derivative** is the operator
@@ -366,46 +366,46 @@ $$
 \tilde{D} = \tilde{S}^{\natural} \tilde{\nabla},
 $$
 
-where $\tilde{S}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
+where $\tilde{S}^{\natural} = s_0 e_0 - s_1 e_1 - s_2 e_2 - s_3 e_3$ is the quaternion conjugate.
 
 We compute it explicitly:
 
 $$
-\tilde{D} = \left(\sum_{\mu=0}^{3} \bar{u}_\mu e_\mu\right)\left(\sum_{\nu=0}^{3} e_\nu \partial_\nu\right) = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \bar{u}_\mu e_\mu e_\nu \partial_\nu,
+\tilde{D} = \left(\sum_{\mu=0}^{3} \bar{s}_\mu e_\mu\right)\left(\sum_{\nu=0}^{3} e_\nu \partial_\nu\right) = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \bar{s}_\mu e_\mu e_\nu \partial_\nu,
 $$
 
-where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.
+where $\bar{s}_0 = s_0$ and $\bar{s}_k = -s_k$.
 
 Separating the cases and collecting terms, we obtain
 
 $$
-\tilde{D} = \left(u_0 \partial_0 + \vec u\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\vec u),
+\tilde{D} = \left(s_0 \partial_0 + \hat s\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (s_0 \partial_k - s_k \partial_0) - \mathrm{rot}(\vec u),
 $$
 
-where $\vec u\cdot\mathrm{grad} = \sum_k u_k \partial_k$ is a scalar and $\mathrm{rot}(\vec u) = \sum_{j,k,l} \epsilon_{jkl} u_j \partial_k e_l$ is a split biquaternion.
+where $\hat s\cdot\mathrm{grad} = \sum_k s_k \partial_k$ is a scalar and $\mathrm{rot}(\vec u) = \sum_{j,k,l} \epsilon_{jkl} s_j \partial_k e_l$ is a split biquaternion.
 
 The **scalar part** of $\tilde{D}$ is
 
 $$
-\mathrm{Sc}(\tilde{D}) = u_0 \partial_0 + \vec u\cdot\mathrm{grad}.
+\mathrm{Sc}(\tilde{D}) = s_0 \partial_0 + \hat s\cdot\mathrm{grad}.
 $$
 
-This is the convective derivative in four dimensions. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial_0 + \vec u\cdot\mathrm{grad}$ for a field advected by a flow with velocity $\vec u$.
+This is the convective derivative in four dimensions. When $s_0 = 1$, it reduces to the ordinary convective derivative $\partial_0 + \hat s\cdot\mathrm{grad}$ for a field advected by a flow with velocity $\vec u$.
 
 The **vector part** of $\tilde{D}$ is
 
 $$
-\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\vec u).
+\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k (s_0 \partial_k - s_k \partial_0) - \mathrm{rot}(\vec u).
 $$
 
 This contains terms that couple the four components of $\tilde{S}$ to the partial derivatives.
 
 ### The Operators in the Idempotent Basis
 
-Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:
+Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $F^{\mathrm{fn}} = F^{\mathrm{fn}}_+ \tilde\Pi_1 + F^{\mathrm{fn}}_- \tilde\Pi_2$ with $F^{\mathrm{fn}}_\pm \in \mathbb{H}$, the gradient acts componentwise:
 
 $$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_1 + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_2,
+\tilde{\nabla} F^{\mathrm{fn}} = (\tilde{\nabla} F^{\mathrm{fn}}_+) \tilde\Pi_1 + (\tilde{\nabla} F^{\mathrm{fn}}_-) \tilde\Pi_2,
 $$
 
 where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
@@ -418,7 +418,7 @@ The approach in this article is the split biquaternion analogue of the quaternio
 
 - The function is defined on a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with four real coordinates.
 - The differential operators are split-biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$.
-- The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the split biquaternion analogue of the Cauchy–Riemann equations.
+- The "regular" functions are those satisfying $\tilde{\nabla}F^{\mathrm{fn}} = 0$, the split biquaternion analogue of the Cauchy–Riemann equations.
 
 This approach is closely related to **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The split biquaternion algebra is isomorphic to the even subalgebra of a definite (Euclidean) Clifford algebra, $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,4}^+ \cong \mathrm{Cl}_{4,0}^+ \cong \mathrm{Cl}_{0,3}$, and the split biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
 
@@ -460,9 +460,9 @@ The following questions are not answered in this article and are left for later 
 
 1. **Invariance.** Under what transformations of the four-dimensional subspace $V$ do the operators $\tilde{\nabla}$, $\Box$, and $\tilde{\nabla}^2$ transform in a simple way?
 
-2. **Solutions of $\tilde{\nabla}\tilde{F} = 0$.** What is the structure of split-biquaternion-valued functions on $V$ that satisfy $\tilde{\nabla}\tilde{F} = 0$? This is the split biquaternion analogue of the Cauchy–Riemann equations.
+2. **Solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.** What is the structure of split-biquaternion-valued functions on $V$ that satisfy $\tilde{\nabla}F^{\mathrm{fn}} = 0$? This is the split biquaternion analogue of the Cauchy–Riemann equations.
 
-3. **Solutions of $\Box\tilde{F} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
+3. **Solutions of $\BoxF^{\mathrm{fn}} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
 
 4. **The convective operator.** What is the complete structure of $\tilde{D}\tilde{\nabla}$, and what does it represent mathematically?
 
@@ -505,12 +505,12 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^\flat$ | The four conjugations |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ |
 | $d(\tilde P, \tilde{Q}) = \|\tilde P - \tilde{Q}\|_E$ | Distance |
 | $V$ | A four-dimensional real subspace, coordinates $Q_0, Q_1, Q_2, Q_3$ |
-| $\tilde{F}$ | Split-biquaternion-valued function on $V$ |
+| $F^{\mathrm{fn}}$ | Split-biquaternion-valued function on $V$ |
 | $\tilde{\nabla}$ | Split-biquaternion gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of the gradient |
 | $\Box$ | d'Alembertian (wave operator) |

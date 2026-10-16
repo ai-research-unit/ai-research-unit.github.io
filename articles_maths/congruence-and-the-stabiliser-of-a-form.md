@@ -52,7 +52,7 @@ $$
 
 ## The Congruence Classification
 
-**Theorem (Sylvester's law of inertia).** Over $\mathbb{R}$ two non-degenerate symmetric or Hermitian forms are congruent exactly when they have the same signature $(p,q)$; the signature is the complete invariant of the congruence class.
+**Theorem (Sylvester's law of inertia).** Over $\mathbb{R}$ two non-degenerate symmetric or Hermitian forms are congruent exactly when they have the same signature $(n,m)$; the signature is the complete invariant of the congruence class.
 
 **Proof.** The theorem is the classical law of inertia, proved by the simultaneous reduction of the form to a diagonal shape with $\pm 1$ entries and by the invariance of the numbers of the positive and the negative squares under a change of basis; the algebraic proof over an ordered field, and the transfer to the Hermitian case, are *The Indefinite Case and the Signature*.
 
@@ -116,7 +116,7 @@ On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their si
 | $h_{C}$ | the congruent form $h(Cx,Cy)$ |
 | $\operatorname{Stab}(h)$ | the stabiliser of $h$, equal to $U(A,h)$ |
 | $G$, $G_{C}$ | the Gram matrices of $h$ and of $h_{C}$ |
-| $(p,q)$ | the signature of a form over an ordered field |
+| $(n,m)$ | the signature of a form over an ordered field |
 | $C^{-1}TC$ | the transported operator |
 
 ## Further Reading

@@ -8,7 +8,7 @@ in that product is zero, $\tilde\Upsilon\star\tilde\Upsilon=0$. The corpus calls
 mathematics companion calls it a **nilpotent of index two**, and the square-zero set of a structure is
 the solution set of the equation, the origin included. The two names are one object: a root of zero is a
 square-zero element, and this article is at once the roots-of-zero part of the three named values and the
-physics companion of the mathematics *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`).
+physics companion of the mathematics *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`).
 
 The essential physics of the roots of zero is fixed by the corpus. A square-zero element **annihilates
 itself**, so the square-zero set is the self-annihilation part of the zero-divisor theory, and its
@@ -59,8 +59,8 @@ nilpotent set of the structure.
 
 **In the plain product, the pure isotropic cone.** The plain square of a pure element is
 $-(\vec\Xi,\vec\Xi)e_0$, so the nonzero roots of $0$ are the pure elements with
-$(\vec\Xi,\vec\Xi)=0$. Written with real vectors as $\tilde\Xi=\vec u+i\vec v$, the equations
-are $\vec u^{2}=\vec v^{2}$ and $\vec u\cdot\vec v=0$; the root set is the **pure isotropic
+$(\vec\Xi,\vec\Xi)=0$. Written with real vectors as $\tilde\Xi=\vec q+i\vec v$, the equations
+are $\vec q^{2}=\vec v^{2}$ and $\vec q\cdot\vec v=0$; the root set is the **pure isotropic
 cone** $\{\Xi_0=0,\ \Xi_1^{2}+\Xi_2^{2}+\Xi_3^{2}=0\}$, of real dimension four, and it is one component of
 the plain cone $(\vec\Xi,\vec\Xi)=0$. The other component is the non-pure cone, the multiples of
 the projectors, and the two components meet at the origin alone. The physical interpretation is the lightlike
@@ -81,7 +81,7 @@ is lightlike.
 
 **In the gauge band, a proper subfamily of the cone.** The fourth product's square vanishes on the
 subfamily $\{\overline{\tilde\Xi}\tilde\Xi=0\}$, a proper subfamily of the cone containing $e_0+ie_1$ and
-missing $ie_0+e_1+e_2+ie_3$. In the parametrisation $\tilde\Xi=c(\hat u+it)$ the square is the central
+missing $ie_0+e_1+e_2+ie_3$. In the parametrisation $\tilde\Xi=c(\vec u+it)$ the square is the central
 $c^{2}(t^{2}-1)e_0$, so the parametrised family meets the cone at the slopes $\lvert t\rvert=1$, while the
 full square-zero set of the structure is wider; the parametrised description and the full
 description are both recorded in the mathematics companion, which owns the set. The owner of the
@@ -103,7 +103,7 @@ Rank and the Positivity of the Dagger*.
 **pure** roots, $\Xi_0=0$ with $(\vec\Xi,\vec\Xi)=0$, are the nilpotent lightlike displacements of
 the vector subspace; the **non-pure** family, reached only in the structures whose square is not the plain
 square, consists of the square-zero elements of the indefinite bands and carries the lightlike family
-$c(\hat u\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
+$c(\vec u\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
 $\tilde\Upsilon$ with $\tilde\Upsilon^{2}=0$: a translation along a null direction, whose iteration adds
 nothing quadratic. The corpus's nilpotent convention and the class are owned by this article, and the
 square-zero condition of the fourth product belongs to *The Square of the General Quaternionic
@@ -215,8 +215,7 @@ is *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*
 
 The product is the Jordan product and its square is the plain square, so the root set of $0$ is the pure
 isotropic cone, element for element that of $\mathrm{GPA}$. The same displacements are square-zero, and
-they are zero divisors of the symmetrised block in addition. The reading is *The Symmetrised Material
-Composition and the Jordan Identity*.
+they are zero divisors of the symmetrised block in addition. The reading is *The Specificities of the Symmetric Plain Algebra*.
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
@@ -322,8 +321,7 @@ $\tilde\Upsilon^{2}=0$. The two equations are the two extreme quadratic equation
 two objects they define are the two physical objects of the pair of companion articles: the state in
 *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* and the lightlike displacement here. The owner of the
 physical locus of the zero divisors is *Zero Divisors as a Physical Locus in Biquaternionic Form*, and the
-reading of the cone as the massless locus is *The Cone and the Massless Particles in the Algebraic Structures
-of Biquaternions over $\mathbb{C}$*.
+reading of the cone as the massless locus is *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*.
 
 The physical statement is that **the set of the non-invertible operations is strictly larger than the set
 of the lightlike ones**, and the difference is made of the states. In the probability band the gap is
@@ -345,8 +343,8 @@ probability and not because it is lightlike.
 | the two alternating structures have the whole space, the two conjugate-alternating ones a set containing $e_0$ outside the cone | mathematics companion; recomputed that $e_0$ is square-zero in APS and AQS | verified |
 | the two sets agree exactly for GQA and the two alternating structures | mathematics companion | cited |
 | the physical interpretations (lightlike displacement, absence in the probability band, gap made of states, the one-mode fermionic ladder, the odd nilpotents) | this article; owners cited in the text | interpretation |
-| the BRST charge $Q$ is nilpotent because the gauge-algebra Jacobi identity follows from associativity | *BRST Symmetry in Biquaternionic Form* | cited |
-| the supercharge has $Q^{2}=0$ and $\{Q,Q^{\dagger}\}=H$, realised by the biquaternion first-order Dirac operator | *Supersymmetric Quantum Physics in the Biquaternion Framework* | cited |
+| the BRST charge $\mathcal{Q}$ is nilpotent because the gauge-algebra Jacobi identity follows from associativity | *BRST Symmetry in Biquaternionic Form* | cited |
+| the supercharge has $\mathcal{Q}^{2}=0$ and $\{\mathcal{Q},\mathcal{Q}^{\dagger}\}=H$, realised by the biquaternion first-order Dirac operator | *Supersymmetric Quantum Physics in the Biquaternion Framework* | cited |
 | the nilpotent direction of the complex order is a discrete lightlike direction; the light cone is a lattice cone | *Lattice Gauge Theory and the Biquaternion Path Integral*; *Biquaternion Orders and Finite Groups of Units* | cited |
 | the square-zero variable is not an element of $\mathbb{B}$; the odd generator is a minimal extension the algebra does not contain | *Grassmann Coherent States in Biquaternionic Form* | cited |
 
@@ -368,16 +366,16 @@ a null vector.
 Biquaternionic Form* is the pair
 
 $$
-\hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \hat\Upsilon_2=\tfrac12(ie_1+e_2),
+\vec\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \vec\Upsilon_2=\tfrac12(ie_1+e_2),
 $$
 
 and a direct computation gives
 
 $$
-\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0,\qquad
-\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+,\qquad
-\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-,\qquad
-\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0,
+\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0,\qquad
+\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+,\qquad
+\vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-,\qquad
+\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0,
 $$
 
 with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ the vacuum and occupied
@@ -388,7 +386,7 @@ anticommutator $\{\tilde a,\tilde a^\dagger\}=e_0$ is the statement that a squar
 the identity. Pauli exclusion is the vanishing square: $\tilde\Upsilon^{2}=0$ says that a second
 application of the same step gives nothing, which is exactly the algebraic form of the statement that a
 mode cannot be occupied twice. The vacuum is the product of the two steps,
-$\tilde\Pi_+=\hat\Upsilon_1\hat\Upsilon_2$, so the state and the ladder are not independent objects:
+$\tilde\Pi_+=\vec\Upsilon_1\vec\Upsilon_2$, so the state and the ladder are not independent objects:
 the state is what the nilpotent pair creates. *The Spin–Statistics Theorem in Biquaternionic Form* fixes
 the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form* gives the
 two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
@@ -426,8 +424,8 @@ $\mathbb{B}\otimes\mathcal{G}$. The two classes share the equation $\tilde\Upsil
 class is the engine of cohomology, of supersymmetry and of the topological invariants of Dirac matter.
 
 **A nilpotent differential needs an associative product.** *BRST Symmetry in Biquaternionic Form*
-introduces a Grassmann-odd derivation $s$ with $s^{2}=0$, the BRST charge $Q$ with $Q^{2}=0$, and
-identifies the physical states with the cohomology $\mathcal{H}_{\mathrm{phys}}=\ker Q/\mathrm{im}\,Q$.
+introduces a Grassmann-odd derivation $s$ with $s^{2}=0$, the BRST charge $\mathcal{Q}$ with $\mathcal{Q}^{2}=0$, and
+identifies the physical states with the cohomology $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$.
 The article's own point is where the nilpotency comes from: $s^{2}=0$ rests on the Jacobi identity of the
 gauge algebra, and in the framework that Jacobi identity is a consequence of the **associativity** of
 quaternion multiplication. The associativity of the parent product is therefore what makes a nilpotent
@@ -439,15 +437,15 @@ Higher Structure for the Jacobi Failure* — are precisely the ones that cannot 
 A bracket that does not close is a symmetry without a cohomology.
 
 **The supercharge and the Dirac operator.** *Supersymmetric Quantum Physics in the Biquaternion
-Framework* uses the pair $Q,Q^{\dagger}$ with
+Framework* uses the pair $\mathcal{Q},\mathcal{Q}^{\dagger}$ with
 
 $$
-Q^{2}=0,\qquad (Q^{\dagger})^{2}=0,\qquad \{Q,Q^{\dagger}\}=H,
+\mathcal{Q}^{2}=0,\qquad (\mathcal{Q}^{\dagger})^{2}=0,\qquad \{\mathcal{Q},\mathcal{Q}^{\dagger}\}=H,
 $$
 
 and argues that the biquaternion first-order operator is the natural supercharge: the Dirac operator
 squares to the scalar d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\Box$, exactly as the
-anticommutator of a supercharge is the Hamiltonian. The nilpotent $Q^{2}=0$ is again an odd object, and
+anticommutator of a supercharge is the Hamiltonian. The nilpotent $\mathcal{Q}^{2}=0$ is again an odd object, and
 the framework supplies the operator, the module and the grading while the odd coordinates are adjoined.
 The even nilpotents of this article and the odd nilpotents of the supersymmetric construction therefore
 sit on the two sides of one boundary: the even class is a lightlike displacement inside $\mathbb{B}$, and
@@ -478,7 +476,7 @@ the discretised symbol, and what it says is that the square-zero set of a lattic
 **Nilpotency is why the Wick theorem is exact.** *The Wick Theorem in Biquaternionic Form* observes that
 for a **single fermionic mode** the theorem is not an approximation or a statement about vacuum
 expectation values in a large space: because the mode operators are square-zero,
-$\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
+$\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
 the four-point and six-point contractions reduce to products of the single two-point contraction with the
 fermionic signs. The identity is then an **exact operator identity** in a four-real-dimensional subalgebra,
 proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic contraction **terminate**:
@@ -519,9 +517,9 @@ grading that the map fails to preserve, appears only when a second site exists.
 
 **The eikonal avoids the cone.** *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic
 Form* gives a sharp negative result, and it is worth recording because it bounds the nilpotent's reach. In
-the semiclassical limit the phase is a central element $e^{iS/\hbar}$ and the momentum is the real quaternion
+the semiclassical limit the phase is a central element $\exp(iS/\hbar)$ and the momentum is the real quaternion
 $\nabla S=\sum_k(\partial_kS)e_k$; the Hamilton–Jacobi equation is the **biquaternion norm** of that momentum
-equated to the kinetic energy, $N(\nabla S)=2m(E-V)$. The article's own statement is then exact: "the null
+equated to the kinetic energy, $\langle \nabla S\rangle_{\natural}=2m(E-V)$. The article's own statement is then exact: "the null
 (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy
 defect and vanishes only where the classical particle stops". So the semiclassical momentum is never a
 **nonzero** nilpotent: its norm is pinned to the energy defect, and the only way it vanishes is the trivial
@@ -544,7 +542,7 @@ rather than a coincidence: nilpotency is not only the mechanism of the ladder, i
 has length two, and the same square-zero identity that creates the raising operator forbids a third rung.
 
 **The null direction makes the unit group infinite.** *Biquaternion Orders and Finite Groups of Units* shows
-the same vanishing square doing arithmetic. For a null element $P$ (so $N(P)=0$, hence $P^2=0$), the element
+the same vanishing square doing arithmetic. For a null element $P$ (so $\langle P\rangle_{\natural}=0$, hence $P^2=0$), the element
 $e_0+P$ is a **unit**, with inverse $e_0-P$, and $(e_0+P)^n=e_0+nP$: a nilpotent direction generates an
 infinite cyclic subgroup of the unit group. The article's own reading is exact and is the one to keep: the
 real orders have finite unit groups, the complex order does not, and the difference is the **light cone** —
@@ -557,7 +555,7 @@ order.
 **Nilpotency is the endpoint of a contraction.** *Squeezing Beyond the Biquaternion Algebra* shows where
 the nilpotent comes from as a limit. A **contraction** rescales generators so that some commutators and some
 norms go to zero; for $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ the article verifies numerically that
-$[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ **vanish together** as $\epsilon\to0$ (at
+$[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ **vanish together** as $\epsilon\to0$ (at
 $\epsilon=1,0.1,0.01$ the values are $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$). The limit
 is an algebra in which $E_2$ and $E_3$ are nilpotent and mutually annihilating, and the article states the
 mechanism exactly: "zero divisors are what survive when a quadratic structure is squeezed until its metric
@@ -579,8 +577,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   phase being the little-group $U(1)$. The lightlike displacement, the null four-momentum and the Dirac
   point are the same algebraic object in the three bands that reach it.
 - The branch-point reading of the value $0$ — the merging of the two roots of a nonzero value at the
-  massless limit — belongs to *Square Roots of a General Element in the Algebraic Structures of Biquaternions
-  over $\mathbb{C}$* and is cited, not restated.
+  massless limit — belongs to *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and is cited, not restated.
 
 - A square-zero element kills itself: it is an element of its own annihilator. Physically it is an
   infinitesimal object, of which two successive applications give nothing, and the lightlike displacement
@@ -602,11 +599,11 @@ definite structural reason — so the contraction limit is the one degeneration 
   difference is made of the states. A state is a zero divisor that is idempotent, a lightlike displacement
   is a zero divisor that is nilpotent.
 - The one-mode fermionic ladder is a pair of nilpotents, with
-  $\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0$ and
-  $\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0$, whose product is the vacuum projector. Nilpotency is Pauli
+  $\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0$ and
+  $\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0$, whose product is the vacuum projector. Nilpotency is Pauli
   exclusion, and the trace obstruction is why the algebra's ladder is fermionic.
-- The same equation $Q^{2}=0$ governs the odd nilpotents of the corpus: the BRST charge, whose cohomology
-  $\ker Q/\mathrm{im}\,Q$ is the physical state space, and the supercharge, whose anticommutator is the
+- The same equation $\mathcal{Q}^{2}=0$ governs the odd nilpotents of the corpus: the BRST charge, whose cohomology
+  $\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$ is the physical state space, and the supercharge, whose anticommutator is the
   Hamiltonian that the biquaternion Dirac operator realises. The even carrier is a lightlike displacement
   inside $\mathbb{B}$ and the odd carrier is a derivative of an extension.
 - A nilpotent differential exists only where the bracket closes: the associativity of quaternion
@@ -656,7 +653,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   orders carry no coupling and no dynamics; the structural point is that the null direction survives
   discretisation.
 - Nilpotency is the endpoint of a contraction. *Squeezing Beyond the Biquaternion Algebra* degenerates the
-  norm by rescaling generators, $[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ vanishing together, so
+  norm by rescaling generators, $[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ vanishing together, so
   invertible elements become nilpotent zero divisors and the cone is the limiting locus of that degeneration.
 
 ## Summary
@@ -685,12 +682,12 @@ element theory of the algebra.
 - $C(\tilde Q)e_0=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
-- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\vec x$; $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$.
+- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\vec x$; $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve square-zero sets, the order theorem $Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ and the gap with the zero-divisor sets.
+- The mathematics companion: *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve square-zero sets, the order theorem $Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ and the gap with the zero-divisor sets.
 - The companion articles of the section: *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$*; *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$*; *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$*; *Annihilators in the Biquaternioid Structures over $\mathbb{C}$*.
 - The lightlike displacement and the photon: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*.
 - The Grassmann reading of square-zero variables: *Grassmann Coherent States in Biquaternionic Form*, for the coherent-state labels as the minimal odd extension whose even part is the algebra itself and whose square-zero variable is not an element of $\mathbb{B}$; *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*.
@@ -701,8 +698,8 @@ element theory of the algebra.
 - The odd nilpotents and the cohomology: *BRST Symmetry in Biquaternionic Form*; *Supersymmetric Quantum Physics in the Biquaternion Framework*; *The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form*; *The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$*.
 - The Dirac cone and the null momentum: *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*; *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*, for the topological pairing of the null points; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.
 - The semiclassical limit: *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, for the phase gradient whose norm is the energy defect and never vanishes on a nonzero nilpotent.
-- The probability band and its positivity: *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*; *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
+- The probability band and its positivity: *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*; *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra* (mathematics).
 - The gauge band: *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*; *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).
 - The brackets: *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$*.
-- The conventions and the nilpotent convention: *Conventions in the Biquaternion Universe*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (mathematics).
-- The grid: *The 12 Products of the Biquaternion Complex Space* (mathematics); *The Twelve Structures Compared: Product, Law and Form*.
+- The conventions and the nilpotent convention: *Conventions in the Biquaternion Universe*; *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (mathematics).
+- The grid: *The 12 Products of the Biquaternioid Complex Space* (mathematics); *The Twelve Structures Compared: Product, Law and Form*.

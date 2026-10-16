@@ -77,9 +77,9 @@ so the adjoint operators of the algebra are skew-Hermitian.
 
 ### The Indefinite Case
 
-**Proposition.** Let $H$ be a non-degenerate invariant Hermitian form of signature $(p,q)$ on a real Lie algebra $\mathrm{G}$. Then the operators $\operatorname{ad}_X$ are in the Lie algebra $\mathrm{u}(p,q)$ of the form, the isometry algebra of $H$ is a real form of the complex algebra preserving the form, and the Cartan involution of $\mathrm{G}$ with respect to the compact part of the form is the map $+\mathrm{id}$ on the maximal compact subalgebra and $-\mathrm{id}$ on its complement.
+**Proposition.** Let $H$ be a non-degenerate invariant Hermitian form of signature $(n,m)$ on a real Lie algebra $\mathrm{G}$. Then the operators $\operatorname{ad}_X$ are in the Lie algebra $\mathrm{u}(n,m)$ of the form, the isometry algebra of $H$ is a real form of the complex algebra preserving the form, and the Cartan involution of $\mathrm{G}$ with respect to the compact part of the form is the map $+\mathrm{id}$ on the maximal compact subalgebra and $-\mathrm{id}$ on its complement.
 
-*Proof.* The invariance is the statement that the adjoint action preserves $H$, so the image of $\mathrm{G}$ lies in the isometry algebra $\mathrm{u}(p,q)$; the isometry algebra of the complexification contains the compact part $\mathrm{u}(p)\oplus\mathrm{u}(q)$, whose fixed algebra is the maximal compact subalgebra of the real form, and the Cartan involution is the conjugation of the form. This connects the form with *Real Forms of a Complex Lie Group and the Cartan Involution*.
+*Proof.* The invariance is the statement that the adjoint action preserves $H$, so the image of $\mathrm{G}$ lies in the isometry algebra $\mathrm{u}(n,m)$; the isometry algebra of the complexification contains the compact part $\mathrm{u}(n)\oplus\mathrm{u}(m)$, whose fixed algebra is the maximal compact subalgebra of the real form, and the Cartan involution is the conjugation of the form. This connects the form with *Real Forms of a Complex Lie Group and the Cartan Involution*.
 
 ## The Forms and the Representations
 
@@ -113,7 +113,7 @@ Let $\mathrm{G} = \mathrm{su}(n)$ with $H(X,Y) = -\operatorname{tr}(XY)$ on the 
 
 ### An Indefinite Form
 
-Let $\mathrm{G} = \mathrm{u}(p,q)$ with the Hermitian form of signature $(p,q)$ on $\mathbb{C}^{p+q}$. The form on the algebra $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t})$ has the indefinite signature $(p^2+q^2, 2pq)$, the invariance holds, and the Cartan involution is conjugation by the form; the unitary representations are the discrete series and the analytic continuation of *Unitary Representations of a Lie Group*, and the geometry of the associated domain is *Hermitian Lie Groups and the Bounded Domain*.
+Let $\mathrm{G} = \mathrm{u}(n,m)$ with the Hermitian form of signature $(n,m)$ on $\mathbb{C}^{n+m}$. The form on the algebra $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t})$ has the indefinite signature $(n^2+m^2, 2nm)$, the invariance holds, and the Cartan involution is conjugation by the form; the unitary representations are the discrete series and the analytic continuation of *Unitary Representations of a Lie Group*, and the geometry of the associated domain is *Hermitian Lie Groups and the Bounded Domain*.
 
 ### The Heisenberg Algebra
 
@@ -121,7 +121,7 @@ Let $\mathrm{G}$ be the Heisenberg algebra with the central element $Z$ and the 
 
 ## Summary
 
-A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetric and real-valued on the diagonal, and it is **invariant** when $H([X,Y],Z) = H(X,[Y,Z])$, equivalently when $H([X,Y],Z) + H(Y,[X,Z]) = 0$; the two forms of the condition are equivalent and they say that each adjoint operator $\operatorname{ad}_X$ is skew-Hermitian for $H$. A positive definite invariant Hermitian form makes the algebra a compact real form, and conversely every compact form carries such a form, unique up to a positive scalar and equal to the negative of the Killing form; non-degenerate indefinite forms have a signature and put the algebra inside the isometry algebra $\mathrm{u}(p,q)$, whose compact part gives the Cartan involution. The adjoint operation of the form coincides with the star of the principal anti-automorphism of the enveloping algebra, so the unitary representations are exactly the star-representations by skew-Hermitian operators, and the Casimir element $-\sum X_i^2$ of an orthonormal basis is a positive central Hermitian element whose images are positive self-adjoint operators. The definite case is the compact theory, the indefinite case is the theory of the real forms, and the degenerate case — in which the form vanishes on the radical — exhibits the limits of the construction, as the Heisenberg algebra shows.
+A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetric and real-valued on the diagonal, and it is **invariant** when $H([X,Y],Z) = H(X,[Y,Z])$, equivalently when $H([X,Y],Z) + H(Y,[X,Z]) = 0$; the two forms of the condition are equivalent and they say that each adjoint operator $\operatorname{ad}_X$ is skew-Hermitian for $H$. A positive definite invariant Hermitian form makes the algebra a compact real form, and conversely every compact form carries such a form, unique up to a positive scalar and equal to the negative of the Killing form; non-degenerate indefinite forms have a signature and put the algebra inside the isometry algebra $\mathrm{u}(n,m)$, whose compact part gives the Cartan involution. The adjoint operation of the form coincides with the star of the principal anti-automorphism of the enveloping algebra, so the unitary representations are exactly the star-representations by skew-Hermitian operators, and the Casimir element $-\sum X_i^2$ of an orthonormal basis is a positive central Hermitian element whose images are positive self-adjoint operators. The definite case is the compact theory, the indefinite case is the theory of the real forms, and the degenerate case — in which the form vanishes on the radical — exhibits the limits of the construction, as the Heisenberg algebra shows.
 
 ## Summary of Notation
 
@@ -132,8 +132,8 @@ A **Hermitian form** on a complex Lie algebra is sesquilinear, conjugate-symmetr
 | $H([X,Y],Z) = H(X,[Y,Z])$ | invariance of the form |
 | $\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X$ | skew-Hermitian adjoint operators |
 | $\flat(X)(Y) = H(X,Y)$ | the associated antilinear map to the dual |
-| $(p,q)$ | the signature of a non-degenerate form |
-| $\mathrm{u}(p,q)$ | the isometry algebra of a form of signature $(p,q)$ |
+| $(n,m)$ | the signature of a non-degenerate form |
+| $\mathrm{u}(n,m)$ | the isometry algebra of a form of signature $(n,m)$ |
 | $\Omega = -\sum_i X_i^2$ | the Casimir element of an orthonormal basis |
 | $\operatorname{ad}_X^{\dagger} = \operatorname{ad}_{\sigma(X)}$ | the agreement of the adjoint with the star |
 | positive definite invariant form | the compact case, $-B$ up to a scalar |

@@ -110,27 +110,27 @@ The existence of the resolution rests on power associativity and the Peirce deco
 
 ### The Second-Order Cone
 
-Let $J = JSpin(V)$ for a positive definite form $q$ on a finite-dimensional real vector space $V$, as in *Spin Factors and the Clifford Envelope with Inner Conjugation*: elements $(\alpha, v)$ with $(\alpha, v)^2 = (\alpha^2 + q(v),\, 2\alpha v)$.
+Let $J = JSpin(V)$ for a positive definite form $\mathfrak{Q}$ on a finite-dimensional real vector space $V$, as in *Spin Factors and the Clifford Envelope with Inner Conjugation*: elements $(\alpha, v)$ with $(\alpha, v)^2 = (\alpha^2 + \mathfrak{Q}(v),\, 2\alpha v)$.
 
-**Proposition.** $J_+ = \{(\alpha, v) : \alpha \geq 0,\ \alpha^2 \geq q(v)\}$, the second-order cone of the form $q$.
+**Proposition.** $J_+ = \{(\alpha, v) : \alpha \geq 0,\ \alpha^2 \geq \mathfrak{Q}(v)\}$, the second-order cone of the form $\mathfrak{Q}$.
 
-*Proof.* Suppose $(\alpha, v) = (\beta, w)^2 = (\beta^2 + q(w),\, 2\beta w)$. Then $v = 2\beta w$ and $\alpha = \beta^2 + q(w)$, so
+*Proof.* Suppose $(\alpha, v) = (\beta, w)^2 = (\beta^2 + \mathfrak{Q}(w),\, 2\beta w)$. Then $v = 2\beta w$ and $\alpha = \beta^2 + \mathfrak{Q}(w)$, so
 
 $$
-\alpha^2 - q(v) = \bigl(\beta^2 + q(w)\bigr)^2 - q(2\beta w) = \bigl(\beta^2 - q(w)\bigr)^2 \geq 0 ,
+\alpha^2 - \mathfrak{Q}(v) = \bigl(\beta^2 + \mathfrak{Q}(w)\bigr)^2 - \mathfrak{Q}(2\beta w) = \bigl(\beta^2 - \mathfrak{Q}(w)\bigr)^2 \geq 0 ,
 $$
 
-using $q(2\beta w) = 4\beta^2 q(w)$, and $\alpha = \beta^2 + q(w) \geq 0$. Conversely, given $(\alpha, v)$ with $\alpha \geq 0$ and $\alpha^2 \geq q(v)$, one solves $\beta^2 + q(w) = \alpha$, $2\beta w = v$: taking $\beta^2 = \tfrac12(\alpha \pm \sqrt{\alpha^2 - q(v)})$ and $w = v/(2\beta)$ realises the element as a square, the sign chosen so that $\beta \neq 0$ when $(\alpha,v) \neq 0$, and the zero element is $0^2$.
+using $\mathfrak{Q}(2\beta w) = 4\beta^2 \mathfrak{Q}(w)$, and $\alpha = \beta^2 + \mathfrak{Q}(w) \geq 0$. Conversely, given $(\alpha, v)$ with $\alpha \geq 0$ and $\alpha^2 \geq \mathfrak{Q}(v)$, one solves $\beta^2 + \mathfrak{Q}(w) = \alpha$, $2\beta w = v$: taking $\beta^2 = \tfrac12(\alpha \pm \sqrt{\alpha^2 - \mathfrak{Q}(v)})$ and $w = v/(2\beta)$ realises the element as a square, the sign chosen so that $\beta \neq 0$ when $(\alpha,v) \neq 0$, and the zero element is $0^2$.
 
 **Corollary.** $J_+$ is convex. Indeed, for $\lambda, \mu \geq 0$ and $(\alpha, v), (\beta, w) \in J_+$, the sum $(\lambda\alpha+\mu\beta, \lambda v+\mu w)$ satisfies
 
 $$
-(\lambda\alpha + \mu\beta)^2 - q(\lambda v + \mu w) \geq \lambda^2(\alpha^2 - q(v)) + \mu^2(\beta^2 - q(w)) + 2\lambda\mu\bigl(\alpha\beta - B(v,w)\bigr) \geq 0,
+(\lambda\alpha + \mu\beta)^2 - \mathfrak{Q}(\lambda v + \mu w) \geq \lambda^2(\alpha^2 - \mathfrak{Q}(v)) + \mu^2(\beta^2 - \mathfrak{Q}(w)) + 2\lambda\mu\bigl(\alpha\beta - B(v,w)\bigr) \geq 0,
 $$
 
-because $B(v,w) \leq \sqrt{q(v)q(w)} \leq \alpha\beta$ by the Cauchy–Schwarz inequality and the defining inequalities. Since the first coordinate is automatically nonnegative, the sum lies in $J_+$. The cone is the classical **second-order cone**, and the order it defines is the order used in the theory of quadratic forms.
+because $B(v,w) \leq \sqrt{\mathfrak{Q}(v)\mathfrak{Q}(w)} \leq \alpha\beta$ by the Cauchy–Schwarz inequality and the defining inequalities. Since the first coordinate is automatically nonnegative, the sum lies in $J_+$. The cone is the classical **second-order cone**, and the order it defines is the order used in the theory of quadratic forms.
 
-**Example.** For $JSpin_2 = \mathbb{R}\oplus\mathbb{R}^2$ the cone is $\{(\alpha, v_1, v_2) : \alpha \geq \sqrt{v_1^2 + v_2^2}\}$, the circular cone of revolution in three dimensions. For an indefinite form the spin factor is not formally real at all, since $v$ with $q(v) < 0$ gives $v^2 = q(v)1$ and hence $v^2 + |q(v)|1 = 0$ with both terms nonzero; the set $\{\alpha \geq 0 : \alpha^2 \geq q(v)\}$ then contains whole lines through the origin. The second-order cone proper is the case of a definite form.
+**Example.** For $JSpin_2 = \mathbb{R}\oplus\mathbb{R}^2$ the cone is $\{(\alpha, v_1, v_2) : \alpha \geq \sqrt{v_1^2 + v_2^2}\}$, the circular cone of revolution in three dimensions. For an indefinite form the spin factor is not formally real at all, since $v$ with $\mathfrak{Q}(v) < 0$ gives $v^2 = \mathfrak{Q}(v)1$ and hence $v^2 + |\mathfrak{Q}(v)|1 = 0$ with both terms nonzero; the set $\{\alpha \geq 0 : \alpha^2 \geq \mathfrak{Q}(v)\}$ then contains whole lines through the origin. The second-order cone proper is the case of a definite form.
 
 ## The Order Structure
 
@@ -194,7 +194,7 @@ The cone of squares organises and completes the algebra.
 
 The conditions make the product continuous and force the cone $J_+$ to be closed and the order to be archimedean. In a JB-algebra the norm is determined by the cone, and the cone determines the norm.
 
-**Example.** The algebra $C(X,\mathbb{R})$ of continuous real functions on a compact Hausdorff space $X$, with the pointwise product, the supremum norm and the cone of nonnegative functions, is a JB-algebra; here $x \bullet y = xy$ and the conditions are elementary. The algebras $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ with the operator norm and the cone of positive semidefinite elements are JB-algebras, and so are the spin factors of positive definite forms with the spectral norm $\|(\alpha, v)\| = |\alpha| + \sqrt{q(v)}$, which is the order-unit norm of the identity. The Albert algebra $H_3(\mathbb{O})$ with the spectral norm is a JB-algebra; it is the exceptional example.
+**Example.** The algebra $C(X,\mathbb{R})$ of continuous real functions on a compact Hausdorff space $X$, with the pointwise product, the supremum norm and the cone of nonnegative functions, is a JB-algebra; here $x \bullet y = xy$ and the conditions are elementary. The algebras $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ with the operator norm and the cone of positive semidefinite elements are JB-algebras, and so are the spin factors of positive definite forms with the spectral norm $\|(\alpha, v)\| = |\alpha| + \sqrt{\mathfrak{Q}(v)}$, which is the order-unit norm of the identity. The Albert algebra $H_3(\mathbb{O})$ with the spectral norm is a JB-algebra; it is the exceptional example.
 
 **Theorem.** The finite-dimensional JB-algebras are exactly the finite-dimensional formally real Jordan algebras, by the classical Jordan–von Neumann–Wigner classification. In general every JB-algebra is the self-adjoint part of a JB*-algebra and admits a Gelfand–Naimark representation as a Jordan algebra of self-adjoint operators on a complex Hilbert space; the representation theorem is due to Alfsen, Shultz and Størmer.
 
@@ -213,7 +213,7 @@ The interior $\Omega = \operatorname{int} J_+$ of the positive cone of a finite-
 1. **homogeneous**: the group of linear automorphisms of $\Omega$ acts transitively on it;
 2. **self-dual**: the dual cone $\{y : T(x,y) \geq 0 \text{ for all } x \in \overline{\Omega}\}$ equals $\overline{\Omega}$, with respect to the trace form $T$ of *Jordan Algebras*.
 
-For $H_n(\mathbb{R})$ the cone of positive definite matrices is homogeneous under $x \mapsto sxs^{\mathsf T}$ for $s$ invertible, and self-dual for the trace pairing $\langle x, y\rangle = \operatorname{tr}(xy)$; for the spin factor the cone is homogeneous under the conformal orthogonal group of the norm $N(\alpha, v) = \alpha^2 - q(v)$ on $\mathbb{R} \oplus V$, by the last section of *Spin Factors and the Clifford Envelope with Inner Conjugation*.
+For $H_n(\mathbb{R})$ the cone of positive definite matrices is homogeneous under $x \mapsto sxs^{\mathsf T}$ for $s$ invertible, and self-dual for the trace pairing $\langle x, y\rangle = \operatorname{tr}(xy)$; for the spin factor the cone is homogeneous under the conformal orthogonal group of the norm $N(\alpha, v) = \alpha^2 - \mathfrak{Q}(v)$ on $\mathbb{R} \oplus V$, by the last section of *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
 **Theorem (Koecher–Vinberg).** The symmetric cones are exactly the interiors of the positive cones of finite-dimensional formally real Jordan algebras; the correspondence between the cone and the algebra is bijective up to isomorphism.
 
@@ -248,7 +248,7 @@ The homogeneity of the cone itself uses the larger group: the connected structur
 
 ## Summary
 
-In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}$ is a pointed closed convex cone with interior $\Omega$, and the order $x \leq y \Leftrightarrow y - x \in J_+$ makes $J$ a partially ordered real vector space. For the Hermitian matrix algebra $H_n(\mathbb{R})$ the cone is the positive semidefinite cone, $J_+ = \{x : x = y^2,\ y \text{ symmetric}\}$, proved by the spectral theorem, and it is convex; for the spin factor $JSpin(V)$ of a positive definite form it is the second-order cone $\{(\alpha,v) : \alpha \geq 0,\ \alpha^2 \geq q(v)\}$, proved by completing the square, and it is convex by Cauchy–Schwarz. Every element has a spectral resolution $x = \sum_i \lambda_i e_i$ in orthogonal idempotents, and $x \in J_+$ exactly when all eigenvalues are nonnegative. The JB-algebra axioms — a real Jordan algebra with a Banach norm satisfying $\|x\bullet y\|\leq\|x\|\|y\|$, $\|x^2\|=\|x\|^2$ and $\|x^2\|\leq\|x^2+y^2\|$ — characterise the algebras whose cone is closed and whose order is archimedean, and the finite-dimensional ones are exactly the formally real Jordan algebras. The interior is a symmetric cone, homogeneous and self-dual; the Koecher–Vinberg theorem makes this a bijective correspondence between symmetric cones and formally real Jordan algebras, and the structure group is the group that acts transitively on it. The algebra automorphism group preserves the cone and acts transitively on the extreme rays; for $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the Albert algebra these are $PO(n)$, $PU(n)$, $PU(n,\mathbb{H})$ and $F_4$, while the structure groups are $GL_n(\mathbb{R})/\{\pm1\}$, $GL_n(\mathbb{C})/U(1)$, $GL_n(\mathbb{H})/\{\pm1\}$ and the $79$-dimensional $E_6\cdot\mathbb{R}_{>0}$, the quotient in each matrix case being by the scalars that act trivially on the Hermitian matrices, namely $\{\pm1\}$ over $\mathbb{R}$ and over $\mathbb{H}$ and the unit circle over $\mathbb{C}$, whereas on the Albert algebra no scalar other than $1$ acts trivially, so the dilations are retained and the structure group is one dimension larger than its norm-preserving part $E_6$.
+In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}$ is a pointed closed convex cone with interior $\Omega$, and the order $x \leq y \Leftrightarrow y - x \in J_+$ makes $J$ a partially ordered real vector space. For the Hermitian matrix algebra $H_n(\mathbb{R})$ the cone is the positive semidefinite cone, $J_+ = \{x : x = y^2,\ y \text{ symmetric}\}$, proved by the spectral theorem, and it is convex; for the spin factor $JSpin(V)$ of a positive definite form it is the second-order cone $\{(\alpha,v) : \alpha \geq 0,\ \alpha^2 \geq \mathfrak{Q}(v)\}$, proved by completing the square, and it is convex by Cauchy–Schwarz. Every element has a spectral resolution $x = \sum_i \lambda_i e_i$ in orthogonal idempotents, and $x \in J_+$ exactly when all eigenvalues are nonnegative. The JB-algebra axioms — a real Jordan algebra with a Banach norm satisfying $\|x\bullet y\|\leq\|x\|\|y\|$, $\|x^2\|=\|x\|^2$ and $\|x^2\|\leq\|x^2+y^2\|$ — characterise the algebras whose cone is closed and whose order is archimedean, and the finite-dimensional ones are exactly the formally real Jordan algebras. The interior is a symmetric cone, homogeneous and self-dual; the Koecher–Vinberg theorem makes this a bijective correspondence between symmetric cones and formally real Jordan algebras, and the structure group is the group that acts transitively on it. The algebra automorphism group preserves the cone and acts transitively on the extreme rays; for $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the Albert algebra these are $PO(n)$, $PU(n)$, $PU(n,\mathbb{H})$ and $F_4$, while the structure groups are $GL_n(\mathbb{R})/\{\pm1\}$, $GL_n(\mathbb{C})/U(1)$, $GL_n(\mathbb{H})/\{\pm1\}$ and the $79$-dimensional $E_6\cdot\mathbb{R}_{>0}$, the quotient in each matrix case being by the scalars that act trivially on the Hermitian matrices, namely $\{\pm1\}$ over $\mathbb{R}$ and over $\mathbb{H}$ and the unit circle over $\mathbb{C}$, whereas on the Albert algebra no scalar other than $1$ acts trivially, so the dilations are retained and the structure group is one dimension larger than its norm-preserving part $E_6$.
 
 ## Summary of Notation
 
@@ -261,7 +261,7 @@ In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}
 | $x \leq y$ | $y - x \in J_+$ |
 | $x = \sum_i \lambda_i e_i$ | Spectral resolution in orthogonal idempotents |
 | $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ | Trace form, self-duality pairing |
-| $JSpin(V)$ | Spin factor, second-order cone $\alpha^2 \geq q(v)$ |
+| $JSpin(V)$ | Spin factor, second-order cone $\alpha^2 \geq \mathfrak{Q}(v)$ |
 | JB-algebra | Real Jordan Banach algebra with axioms 1–3 |
 | $u$ | Order unit; order-unit norm $\|\cdot\|_u$ |
 | $\operatorname{Str}(J)$ | Structure group, preserves the cone (transitively) |

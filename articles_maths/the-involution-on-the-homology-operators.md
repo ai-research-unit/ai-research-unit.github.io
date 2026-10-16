@@ -47,7 +47,7 @@ and the anti-invariant operators form the complementary summand $\operatorname{H
 
 **(c)** the cap product and the evaluation pairing, by the naturality of the product;
 
-**(d)** the intersection form $Q$, with $Q(T_*x,T_*y) = \deg(T)Q(x,y)$;
+**(d)** the intersection form $\mathfrak{Q}$, with $\mathfrak{Q}(T_*x,T_*y) = \deg(T)\mathfrak{Q}(x,y)$;
 
 **(e)** the Steenrod squares $Sq^i$ and the Bockstein, which are natural operations and therefore commute with every induced map, hence with $T_*$; in particular the action of $\mathbb{Z}/2$ on $H^*(M;\mathbb{F}_2)$ commutes with the whole Steenrod algebra.
 
@@ -110,7 +110,7 @@ An involution of a space acts on the operators of its homology by conjugation, a
 | invariant / anti-equivariant operator | commuting with $T_*$, respectively anti-commuting |
 | $\operatorname{End}_k(H)^{\mathbb{Z}/2}\cong\operatorname{End}_k(H^{+})\oplus\operatorname{End}_k(H^{-})$ | the commutant, the block-diagonal operators |
 | $P^{\pm} = (1\pm T_*)/2$ | the equivariant projections onto the two parts |
-| $Q(T_*x,T_*y) = \deg(T)Q(x,y)$ | the equivariance of the intersection form |
+| $\mathfrak{Q}(T_*x,T_*y) = \deg(T)\mathfrak{Q}(x,y)$ | the equivariance of the intersection form |
 | $Sq^i$, Bockstein | the natural cohomology operations, commuting with the action |
 | $\operatorname{Str}(\alpha) = \sum_i(-1)^i\operatorname{tr}(\alpha|H_i)$ | the supertrace; $L(T) = \operatorname{Str}(T_*)$ the Lefschetz number |
 | $L(T) = \chi(F)$ | the Lefschetz number of a locally linear involution is the Euler characteristic of the fixed set |

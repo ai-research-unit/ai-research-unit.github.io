@@ -14,40 +14,40 @@ Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-vector space of dime
 **Definition.** A **transvection**, or **shear**, on $V$ is a linear map $\tau:V \to V$ of the form
 
 $$
-\tau(x)=x+f(x)v
+\tau(x)=x+f(x)b
 $$
 
-for a linear functional $f \in V^*$ and a vector $v \in V$ satisfying $f(v)=0$ and $f \neq 0$, $v \neq 0$.
+for a linear functional $f \in V^*$ and a vector $b \in V$ satisfying $f(b)=0$ and $f \neq 0$, $b \neq 0$.
 
-The condition $f(v)=0$ is what makes $\tau$ invertible with an inverse of the same shape.
+The condition $f(b)=0$ is what makes $\tau$ invertible with an inverse of the same shape.
 
-**Proposition.** Let $\tau(x)=x+f(x)v$ with $f(v)=0$. Then:
+**Proposition.** Let $\tau(x)=x+f(x)b$ with $f(b)=0$. Then:
 
 (i) $\tau$ is linear, and the fixed space of $\tau$ is $\ker f$, a hyperplane;
 
-(ii) $\tau(x)-x \in \langle v\rangle$ for every $x$, so $v$ spans the direction of the shift;
+(ii) $\tau(x)-x \in \langle b\rangle$ for every $x$, so $b$ spans the direction of the shift;
 
-(iii) $\tau^{-1}(x)=x-f(x)v$;
+(iii) $\tau^{-1}(x)=x-f(x)b$;
 
-(iv) $(\tau-\operatorname{id})(x)=f(x)v$, so $\tau-\operatorname{id}$ has rank $1$ and its square is zero:
+(iv) $(\tau-\operatorname{id})(x)=f(x)b$, so $\tau-\operatorname{id}$ has rank $1$ and its square is zero:
 
 $$
-(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(v)=f(x)f(v)v=0 ;
+(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)f(b)b=0 ;
 $$
 
 (v) $\det\tau=1$, so $\tau \in \operatorname{SL}(V)$.
 
-*Proof.* (i) Linearity is clear. If $\tau(x)=x$ then $f(x)v=0$ and $v \neq 0$, so $f(x)=0$; conversely $f(x)=0$ gives $\tau(x)=x$. The functional $f$ is nonzero, so $\ker f$ is a hyperplane. (ii) Immediate. (iii) Using $f(v)=0$ twice, $\tau(x-f(x)v)=x-f(x)v+f(x-f(x)v)v=x-f(x)v+f(x)v=x$. (iv) $(\tau-\operatorname{id})(x)=f(x)v$ has image $\langle v\rangle$, of dimension $1$; and $(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(v)=f(x)\cdot f(v)v=0$. (v) $\tau$ is unipotent with $\tau-\operatorname{id}$ nilpotent of rank $1$, so its only eigenvalue is $1$ and its determinant is a product of eigenvalues, hence $1$.
+*Proof.* (i) Linearity is clear. If $\tau(x)=x$ then $f(x)b=0$ and $b \neq 0$, so $f(x)=0$; conversely $f(x)=0$ gives $\tau(x)=x$. The functional $f$ is nonzero, so $\ker f$ is a hyperplane. (ii) Immediate. (iii) Using $f(b)=0$ twice, $\tau(x-f(x)b)=x-f(x)b+f(x-f(x)b)b=x-f(x)b+f(x)b=x$. (iv) $(\tau-\operatorname{id})(x)=f(x)b$ has image $\langle b\rangle$, of dimension $1$; and $(\tau-\operatorname{id})^2(x)=f(x)(\tau-\operatorname{id})(b)=f(x)\cdot f(b)b=0$. (v) $\tau$ is unipotent with $\tau-\operatorname{id}$ nilpotent of rank $1$, so its only eigenvalue is $1$ and its determinant is a product of eigenvalues, hence $1$.
 
-Property (iv) says that a transvection is exactly a transformation of the form $\operatorname{id}+N$ with $N^2=0$ and $\operatorname{rk}N=1$: the rank-one condition is not automatic, but every rank-one square-zero endomorphism with $\operatorname{im}N \subseteq \ker N$ and $N \neq 0$ is of the form $x\mapsto f(x)v$ with $f(v)=0$.
+Property (iv) says that a transvection is exactly a transformation of the form $\operatorname{id}+N$ with $N^2=0$ and $\operatorname{rk}N=1$: the rank-one condition is not automatic, but every rank-one square-zero endomorphism with $\operatorname{im}N \subseteq \ker N$ and $N \neq 0$ is of the form $x\mapsto f(x)b$ with $f(b)=0$.
 
 ### Coordinates and a Normal Form
 
-**Proposition.** Let $\tau(x)=x+f(x)v$ be a transvection. Choose $v_1 \in V$ with $f(v_1)=1$, and let $v_2,\dots,v_n$ be a basis of $\ker f$ chosen so that $v_2=v$. Then $(v_1,v_2,\dots,v_n)$ is a basis of $V$, in which $[\tau]=E_{21}(1)$.
+**Proposition.** Let $\tau(x)=x+f(x)b$ be a transvection. Choose $b_1 \in V$ with $f(b_1)=1$, and let $b_2,\dots,b_n$ be a basis of $\ker f$ chosen so that $b_2=b$. Then $(b_1,b_2,\dots,b_n)$ is a basis of $V$, in which $[\tau]=E_{21}(1)$.
 
-*Proof.* The vector $v_1$ is not in $\ker f$, so $v_1,v_2,\dots,v_n$ is a basis. For $j \ge 2$, $f(v_j)=0$ and hence $\tau(v_j)=v_j$. For $v_1$, $\tau(v_1)=v_1+f(v_1)v=v_1+v_2$. So the first column of the matrix is $(1,1,0,\dots,0)^{\mathsf{T}}$ and all other columns are standard basis vectors, that is, the matrix is $I+e_{21}=E_{21}(1)$.
+*Proof.* The vector $b_1$ is not in $\ker f$, so $b_1,b_2,\dots,b_n$ is a basis. For $j \ge 2$, $f(b_j)=0$ and hence $\tau(b_j)=b_j$. For $b_1$, $\tau(b_1)=b_1+f(b_1)b=b_1+b_2$. So the first column of the matrix is $(1,1,0,\dots,0)^{\mathsf{T}}$ and all other columns are standard basis vectors, that is, the matrix is $I+e_{21}=E_{21}(1)$.
 
-Note that the direction vector $v$ in the formula is fixed by $\tau$, because $f(v)=0$; the vectors that are moved are those $x$ with $f(x) \neq 0$, and each is moved parallel to $v$ by the amount $f(x)$. The hyperplane $\ker f$ is fixed pointwise, and the line $\langle v\rangle$ lies inside it and is the image of $\tau-\operatorname{id}$.
+Note that the direction vector $b$ in the formula is fixed by $\tau$, because $f(b)=0$; the vectors that are moved are those $x$ with $f(x) \neq 0$, and each is moved parallel to $b$ by the amount $f(x)$. The hyperplane $\ker f$ is fixed pointwise, and the line $\langle b\rangle$ lies inside it and is the image of $\tau-\operatorname{id}$.
 
 **Corollary.** Every transvection is conjugate in $\operatorname{GL}(V)$ to every other: for each $n$, all transvections lie in a single conjugacy class, represented by $E_{21}(1)$.
 
@@ -63,7 +63,7 @@ This is in sharp contrast with the orthogonal and symplectic cases, where the tr
 
 **Proposition.** In the standard basis of $F^n$, the matrix $E_{ij}(\lambda)$ is the transvection $x \mapsto x+\lambda x_j e_i$, where $x_j$ is the $j$-th coordinate functional and $e_i$ the $i$-th basis vector. It satisfies $E_{ij}(\lambda)E_{ij}(\mu)=E_{ij}(\lambda+\mu)$ and $E_{ij}(\lambda)^{-1}=E_{ij}(-\lambda)$, so the matrices $E_{ij}(\lambda)$, $\lambda \in F$, form a subgroup isomorphic to the additive group $(F,+)$.
 
-*Proof.* The matrix $e_{ij}$ sends $x$ to $x_je_i$, so $(I+\lambda e_{ij})x=x+\lambda x_je_i$. The functional $f(x)=\lambda x_j$ and the vector $v=e_i$ satisfy $f(v)=\lambda \cdot 0=0$ for $i \neq j$. Products: $(I+\lambda e_{ij})(I+\mu e_{ij})=I+(\lambda+\mu)e_{ij}$, since $e_{ij}^2=0$.
+*Proof.* The matrix $e_{ij}$ sends $x$ to $x_je_i$, so $(I+\lambda e_{ij})x=x+\lambda x_je_i$. The functional $f(x)=\lambda x_j$ and the vector $b=e_i$ satisfy $f(b)=\lambda \cdot 0=0$ for $i \neq j$. Products: $(I+\lambda e_{ij})(I+\mu e_{ij})=I+(\lambda+\mu)e_{ij}$, since $e_{ij}^2=0$.
 
 The **elementary column operations** are the same matrices applied on the right, $A \mapsto AE_{ij}(\lambda)$; they replace column $j$ by column $j$ plus $\lambda$ times column $i$. The **row operations** are the left multiplications $A \mapsto E_{ij}(\lambda)A$, which replace row $i$ by row $i$ plus $\lambda$ times row $j$. Row and column operations generate the same groups of matrices, but acting on the two sides of a matrix; and for an operator on $V$, a change of basis realises these operations as conjugation.
 
@@ -143,11 +143,11 @@ A unipotent map with $N^2=0$ but $\operatorname{rk}N=r \ge 2$ is a product of co
 
 ## Dilatations and the Centre
 
-**Definition.** A **dilatation** is a linear map $\delta$ that fixes a hyperplane $H$ pointwise and acts on a complementary line $\langle v\rangle$ by $\delta(v)=\lambda v$ with $\lambda \in F^{\times}$. A **homothety** is a scalar map $\lambda\operatorname{id}_V$.
+**Definition.** A **dilatation** is a linear map $\delta$ that fixes a hyperplane $H$ pointwise and acts on a complementary line $\langle b\rangle$ by $\delta(b)=\lambda b$ with $\lambda \in F^{\times}$. A **homothety** is a scalar map $\lambda\operatorname{id}_V$.
 
 **Proposition.** Each dilatation lies in $\operatorname{GL}(V)$, its determinant is $\lambda$, and the homotheties are exactly the dilatations whose fixed hyperplane can be chosen arbitrarily and whose scalar is independent of $H$.
 
-*Proof.* In a basis adapted to the decomposition $V=H \oplus \langle v\rangle$ the matrix is diagonal with one entry $\lambda$ and the rest $1$, so it is invertible with determinant $\lambda$. A scalar map $\lambda\operatorname{id}$ fixes every hyperplane; conversely if a map fixes every hyperplane pointwise it fixes every vector, and if it fixes a hyperplane $H$ pointwise and acts on a complementary line by $\lambda$, its fixed hyperplane is exactly $H$ unless $\lambda=1$.
+*Proof.* In a basis adapted to the decomposition $V=H \oplus \langle b\rangle$ the matrix is diagonal with one entry $\lambda$ and the rest $1$, so it is invertible with determinant $\lambda$. A scalar map $\lambda\operatorname{id}$ fixes every hyperplane; conversely if a map fixes every hyperplane pointwise it fixes every vector, and if it fixes a hyperplane $H$ pointwise and acts on a complementary line by $\lambda$, its fixed hyperplane is exactly $H$ unless $\lambda=1$.
 
 **Theorem.** Over any field, $\operatorname{GL}(V)$ is generated by transvections and dilatations.
 
@@ -161,11 +161,11 @@ $$
 
 exhibits the quarter-turn $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ of determinant $1$ as a product of transvections: the outer factors are the transvection $E_{12}(1)$ and the inner factor is the inverse of the transvection $E_{21}(1)$. It also shows that a product of transvections need not be triangular in any basis: the quarter turn has eigenvalues $\pm i$, which lie outside $\mathbb{R}$, so over $\mathbb{R}$ it is irreducible and in particular not conjugate to an elementary matrix.
 
-**Remark.** The centre of $\operatorname{GL}(V)$ consists of the homotheties, and the homotheties are the intersection of the family of all dilatations in the following weak sense: a homothety is a dilatation for every choice of complementary hyperplane and line, whereas a non-scalar dilatation is a dilatation only for the specific pair $(H,\langle v\rangle)$. The centre meets $\operatorname{SL}(V)$ in the $n$-th roots of unity, as in the preceding articles.
+**Remark.** The centre of $\operatorname{GL}(V)$ consists of the homotheties, and the homotheties are the intersection of the family of all dilatations in the following weak sense: a homothety is a dilatation for every choice of complementary hyperplane and line, whereas a non-scalar dilatation is a dilatation only for the specific pair $(H,\langle b\rangle)$. The centre meets $\operatorname{SL}(V)$ in the $n$-th roots of unity, as in the preceding articles.
 
 ## Summary
 
-A transvection on a finite-dimensional vector space over a field is a map $\tau(x)=x+f(x)v$ with $f(v)=0$, $f \neq 0$ and $v \neq 0$. It fixes the hyperplane $\ker f$ pointwise, translates each vector along $\langle v\rangle$ by the amount $f(x)$, is invertible with $\tau^{-1}(x)=x-f(x)v$, has rank-one nilpotent part $\tau-\operatorname{id}=v \otimes f$ with square zero, and lies in the special linear group with $\det\tau=1$. All transvections on a space of dimension $n$ are conjugate in $\operatorname{GL}(V)$ and are represented by the elementary matrix $E_{21}(1)$; the matrices $E_{ij}(\lambda)=I+\lambda e_{ij}$ are exactly the transvections in the standard basis, and the matrices $E_{ij}(\lambda)$ for fixed $i \neq j$ form a copy of the additive group. The identities $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ and $D E_{ij}(\lambda)D^{-1}=E_{ij}(t^2\lambda)$ drive the commutator theory.
+A transvection on a finite-dimensional vector space over a field is a map $\tau(x)=x+f(x)b$ with $f(b)=0$, $f \neq 0$ and $b \neq 0$. It fixes the hyperplane $\ker f$ pointwise, translates each vector along $\langle b\rangle$ by the amount $f(x)$, is invertible with $\tau^{-1}(x)=x-f(x)b$, has rank-one nilpotent part $\tau-\operatorname{id}=b \otimes f$ with square zero, and lies in the special linear group with $\det\tau=1$. All transvections on a space of dimension $n$ are conjugate in $\operatorname{GL}(V)$ and are represented by the elementary matrix $E_{21}(1)$; the matrices $E_{ij}(\lambda)=I+\lambda e_{ij}$ are exactly the transvections in the standard basis, and the matrices $E_{ij}(\lambda)$ for fixed $i \neq j$ form a copy of the additive group. The identities $[E_{ij}(\lambda),E_{jk}(\mu)]=E_{ik}(\lambda\mu)$ and $D E_{ij}(\lambda)D^{-1}=E_{ij}(t^2\lambda)$ drive the commutator theory.
 
 Row and column operations are left and right multiplication by these matrices, and Gaussian elimination is the computation that implements them; it yields the $LU$ factorisation when the leading principal minors are nonzero and the general row-echelon form with partial pivoting, and it requires no metric. Consequently the elementary matrices generate $\operatorname{SL}_n(F)$ for $n \ge 2$ and, together with the diagonal matrices, generate $\operatorname{GL}_n(F)$; in contrast the $QR$ decomposition requires an inner product and square roots and is not a statement about an arbitrary field.
 
@@ -177,9 +177,9 @@ Transvections are the elementary unipotent transformations: $u$ is unipotent whe
 |---|---|
 | $F$ | a field |
 | $V$ | $F$-vector space of dimension $n$ |
-| $\tau(x)=x+f(x)v$, $f(v)=0$ | transvection, with $f \in V^*$, $v \in V$ |
+| $\tau(x)=x+f(x)b$, $f(b)=0$ | transvection, with $f \in V^*$, $b \in V$ |
 | $\ker f$ | fixed hyperplane of the transvection |
-| $\langle v\rangle$ | direction of the shift |
+| $\langle b\rangle$ | direction of the shift |
 | $E_{ij}(\lambda)=I+\lambda e_{ij}$ | elementary matrix, a transvection |
 | $e_{ij}$ | matrix unit |
 | $L$, $U$, $P$ | lower triangular, upper triangular, permutation factors in $PA=LU$ |

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article collects what singles out the general plain product among the six products of the quaternion space, and with it the classes of element that an associative division algebra makes empty. The empty classes are folded here on purpose: the quaternion chapter has no article on the zero divisors, none on the nilpotents and none on the idempotents, because over the plain product there is nothing in those classes but $0$ and $e_0$, and the folding is the content of the first two sections. The remaining sections give the centre, the tensor products, the Frobenius theorem and the isolation of the block among the six. The product itself is defined in *Introduction to the Quaternion Algebra*, above this article in this category; the norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the ideal-theoretic reading of the same facts is *Ideals and Simplicity of the Quaternion Algebra*, below this article in this category; and the six products are owned by *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, above this article in this category, and are cited here rather than derived.
+This article collects what is specific to the quaternion algebra among the algebras the space $\mathbb{R}^4$ carries, and with it the classes of element that an associative division algebra makes empty. Those classes are read in the first section. The remaining sections give the centre, the tensor products, the Frobenius theorem and the place of $\mathbb{H}$ among the real division algebras. The product itself is defined in *Introduction to the Quaternion Algebra*, above this article in this category; the norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the ideal-theoretic reading of the same facts is *Ideals and Simplicity of the Quaternion Algebra*, below this article in this category; and the four element-theory articles *Zero Divisors of the Quaternion Algebra*, *Annihilators of the Quaternion Algebra*, *Square Roots of One and the Idempotents of the Quaternion Algebra*, *Square Roots of Zero and the Nilpotents of the Quaternion Algebra* and *Square Roots of a General Element in the Quaternion Algebra*, above this article in this category, carry the classes in full.
 
 ## The Classes of Element
 
-**Theorem (the folded classes).** Over the plain product the classes of element are
+**Theorem (the folded classes).** Over the quaternion product the classes of element are
 
 | Class | Condition | Set in $\mathbb{H}$ |
 |---|---|---|
@@ -27,11 +27,7 @@ The three properties that isolate the block are:
 - the **two-sided unit** $e_0$, $e_0\tilde q=\tilde qe_0=\tilde q$;
 - the **division property**, every non-zero element invertible, equivalently the equation $\tilde a\tilde x=\tilde b$ uniquely solvable for $\tilde x$ whenever $\tilde a\neq0$.
 
-**Theorem.** Of the six products of the quaternion space, the general plain product is the only one that is associative with a two-sided unit, and the only one with the division property.
-
-*Proof.* The other five are read off from *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, above this article in this category: the general quaternionic product has the unit on the left alone and is not associative; the symmetric plain product is commutative and unital but not associative; the antisymmetric plain product is alternating, hence has no unit and every element is square-zero; the symmetric quaternionic product is scalar valued and has no unit; the antisymmetric quaternionic product is alternating and fails the Jacobi identity. No property is re-derived here.
-
-**Corollary.** The division property fails for each of the other five: in the symmetric plain product two pure quaternions that anticommute multiply to $0$, and every element of each of the two antisymmetric products is square-zero; the quaternionic and the symmetric quaternionic products have no two-sided unit at all, so the equation $\tilde a\tilde x=\tilde b$ is not the equation of a multiplication by $a$ with a two-sided identity.
+**Theorem.** The quaternion product is associative with a two-sided unit and has the division property.
 
 ## The Centre
 
@@ -39,7 +35,7 @@ The three properties that isolate the block are:
 
 *Proof.* Commuting with $e_1$ and with $e_2$ forces the vector part to vanish; the scalars commute. For the units, an element commuting with every quaternion lies in the centre, and a non-zero scalar is a unit.
 
-The centrality of the scalar line is what makes $N(\tilde q)$ a scalar and what makes the polar split of the units a direct product; both readings are in *Norm and Invertibility in the Quaternion Algebra*, above this article in this category.
+The centrality of the scalar line is what makes $\langle\tilde q\rangle_{\natural}$ a scalar and what makes the polar split of the units a direct product; both readings are in *Norm and Invertibility in the Quaternion Algebra*, above this article in this category.
 
 ## The Tensor Product with the Opposite Algebra
 
@@ -63,24 +59,9 @@ Thus the algebra is a division algebra over $\mathbb{R}$ and its enveloping tens
 
 *Proof.* Quoted as standard. The two theorems are cited, not proved, and they are the reason the quaternion algebra is a distinguished rung: it is the top of the associative part of both classifications.
 
-## The Isolation among the Six
-
-The six products are generated from two seeds, the plain product $\tilde p\tilde q$ and the twisted product $\tilde p^{\natural}\tilde q$, taken with the three combinators of a bilinear form, the form itself, its symmetric part and its antisymmetric part. The two seeds and the three combinators give
-
-| Product | Formula | Character |
-|---|---|---|
-| general plain | $\tilde p\tilde q$ | associative, two-sided unit $e_0$, division |
-| general quaternionic | $\tilde p^{\natural}\tilde q$ | non-associative, left unit only, no division |
-| symmetric plain | $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | commutative, unital, Jordan, not associative, zero divisors |
-| antisymmetric plain | $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ | alternating, Lie, no unit |
-| symmetric quaternionic | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | commutative, scalar valued, no unit |
-| antisymmetric quaternionic | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | alternating, Jacobi fails, no unit |
-
-Only the first row carries the associative-unital theory, and it carries all of it: the division property, the two-sided unit, the simplicity, the free module category and the enveloping algebra. Over $\mathbb{R}$ the bar is the identity and the star coincides with the natural sign, so of the two slot operations only the natural one is available, and the six products above are all the products the block has.
-
 ## Summary
 
-The plain product is the only one of the six products of the quaternion space that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_0$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_0$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_0$; the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
+The quaternion product is the only product the space carries that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_0$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_0$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_0$; the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
 
 ## Summary of Notation
 

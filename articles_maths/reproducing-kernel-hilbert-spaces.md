@@ -158,7 +158,7 @@ $[0,1]$ with the Dirichlet condition at the left endpoint.
 trigonometric polynomials of degree at most $N$ under the $L^2(\mathbb T)$ inner product. Every element is
 continuous, so evaluation is bounded, and the reproducing kernel is the **Dirichlet kernel**
 $$
-K(x,y)=D_N(x-y)=\sum_{m=-N}^Ne^{2\pi im(x-y)},
+K(x,y)=D_N(x-y)=\sum_{m=-N}^N\exp(2\pi im(x-y)),
 $$
 with the reproducing property $f(x)=\int_{\mathbb T}f(y)\overline{D_N(x-y)}\,dy$. This is the kernel of the
 orthogonal projection onto $H_N$ in $L^2(\mathbb T)$, and it exhibits the general fact that the reproducing
@@ -168,8 +168,8 @@ projection onto it.
 **Example (the Hardy, Bergman and Fock spaces).** On the unit disc the Hardy space $H^2(\mathbb D)$ of
 square-summable power series has reproducing kernel $K(z,w)=(1-z\bar w)^{-1}$, the Bergman space
 $A^2(\mathbb D)$ has $K(z,w)=(1-z\bar w)^{-2}$, and the Fock space of entire functions with Gaussian weight
-has $K(z,w)=e^{z\bar w}$; on $\mathbb R$ the space of entire functions with the Gaussian kernel
-$e^{-\pi(x-y)^2}$ is the Segal–Bargmann space. These spaces and their kernels belong to the complex analysis
+has $K(z,w)=\exp(z\bar w)$; on $\mathbb R$ the space of entire functions with the Gaussian kernel
+$\exp(-\pi(x-y)^2)$ is the Segal–Bargmann space. These spaces and their kernels belong to the complex analysis
 and the operator theory of the later Parts, and are recorded here as instances of the correspondence.
 
 ## Properties of the Space
@@ -236,7 +236,7 @@ the space; that operator reading is completed in *Hermitian Kernels and the Inte
 | $f(x)=\langle f,k_x\rangle$ | Reproducing property |
 | $H_K$ | The reproducing kernel Hilbert space of $K$ |
 | $\lvert f(x)\rvert\leq\lVert f\rVert\sqrt{K(x,x)}$ | Pointwise bound |
-| $D_N$ | Dirichlet kernel $\sum_{\lvert m\rvert\leq N}e^{2\pi im(\cdot)}$ |
+| $D_N$ | Dirichlet kernel $\sum_{\lvert m\rvert\leq N}\exp(2\pi im(\cdot))$ |
 
 ## Further Reading
 

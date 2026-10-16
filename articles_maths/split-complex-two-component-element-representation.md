@@ -9,7 +9,7 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to *Split-Complex Regular Element Representation*; it does not treat the polar forms, which belong to *Split-Complex Polar Element Representation*; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the **definite** one and whose product rule differs from the present one in a single sign.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = a^2-a'^2$.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+j a'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-j a'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $\langle A\rangle_{\natural} = a^2-a'^2$.
 
 ## The Coefficient Space
 
@@ -168,7 +168,7 @@ In the idempotent basis the same two lines appear as the diagonals $(t,t)$ and $
 The norm of $A = a+j a'$ in coordinates is
 
 $$
-N(A) = A\bar A = a^2 - a'^2,
+\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2,
 $$
 
 the difference of the two squares of the coordinates. Its polarisation is the symmetric bilinear form
@@ -242,7 +242,7 @@ The conjugation is the reflection $(a,a') \mapsto (a,-a')$, with fixed subspace 
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{D}} = \{(a,0)\}$ | Fixed subspace, real axis |
 | $j\mathbb{R}_{\mathbb{D}} = \{(0,a')\}$ | Anti-fixed subspace, split imaginary axis |
-| $N(A) = a^2-a'^2$ | Norm, signature $(1,1)$ |
+| $\langle A\rangle_{\natural} = a^2-a'^2$ | Norm, signature $(1,1)$ |
 | $g(A,B) = a b-a' b'$ | Polarised form |
 | $(A_+, A_-) = (a+a', a-a')$ | Idempotent coordinates |
 

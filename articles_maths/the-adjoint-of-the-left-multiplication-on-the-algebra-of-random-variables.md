@@ -96,7 +96,7 @@ the functional calculus of the multiplication, and for a real $a$ the operator $
 
 **Example (the multiplications on the two-atom algebra).** For $\mathcal{A}\cong\mathbb{C}^2$ with the form $\langle f,g\rangle=\frac12(f_-\bar g_-+f_+\bar g_+)$ the left multiplication by $a=(a_-,a_+)$ is the diagonal operator with the entries $a_\pm$; its adjoint is the diagonal operator with the entries $\bar a_\pm$, the multiplication by $a^*$, and the operator is self-adjoint exactly when $a$ is real, unitary exactly when $|a_\pm|=1$.
 
-**Example (the multiplication on the circle).** For the circle with the Lebesgue measure and $a(\theta)=e^{2\pi i\theta}$ the multiplication $L_a$ is unitary, $L_a^*=L_{\bar a}=L_a^{-1}$, and its spectrum is the unit circle; for $a(\theta)=\cos(2\pi\theta)$ the operator is self-adjoint with the spectrum $[-1,1]$ and the arcsine law as its spectral measure, the law of the random variable.
+**Example (the multiplication on the circle).** For the circle with the Lebesgue measure and $a(\theta)=\exp(2\pi i\theta)$ the multiplication $L_a$ is unitary, $L_a^*=L_{\bar a}=L_a^{-1}$, and its spectrum is the unit circle; for $a(\theta)=\cos(2\pi\theta)$ the operator is self-adjoint with the spectrum $[-1,1]$ and the arcsine law as its spectral measure, the law of the random variable.
 
 **Example (a non-invertible multiplication).** For $a$ vanishing on a set of positive measure the multiplication $L_a$ is injective but not invertible, its image is the proper ideal $a\mathcal{H}$, and it is neither an isometry nor unitary; the adjoint $L_{a^*}$ vanishes on the same set, and the range and the kernel are related by the orthogonality of the multiplication.
 

@@ -53,7 +53,7 @@ $$
 
 Writing $[Z,X_i] = \sum_j c_{Zi}{}^j X_j$ and using the invariance of $B$ in the form $B([Z,X_i], X^j) = -B(X_i, [Z,X^j])$, one gets $[Z,X^i] = -\sum_j c_{Zj}{}^i X^j$; substituting and renaming the indices, the two sums cancel. Since the $\operatorname{ad}_Z$ generate the adjoint action and the centre of $U(\mathrm{G})$ is the common kernel of the derivations $\operatorname{ad}_Z$, the element is central.
 
-**Corollary (the Casimir operator).** Under the isomorphism $U(\mathrm{G}) \to D_L(G)$ of *Operators on a Lie Group*, the central element $\Omega_B$ corresponds to a bi-invariant differential operator, the **Casimir operator**, written $\Omega_B f = \sum_i \tilde X_i\tilde X^i f$ on functions and $u \mapsto \Omega_B u$ on the enveloping algebra.
+**Corollary (the Casimir operator).** Under the isomorphism $U(\mathrm{G}) \to D_L(G)$ of *Operators on a Lie Group*, the central element $\Omega_B$ corresponds to a bi-invariant differential operator, the **Casimir operator**, written $\Omega_B f = \sum_i X_i^{\mathrm{lift}}X^{i\,\mathrm{lift}} f$ on functions and $u \mapsto \Omega_B u$ on the enveloping algebra.
 
 ## The Casimir of a Representation
 
@@ -99,7 +99,7 @@ where $\varrho$ is the Weyl vector, half the sum of the positive roots.
 
 **Definition.** Let $G$ be a connected Lie group whose algebra $\mathrm{G}$ is compact and semisimple, and let $B$ be an invariant symmetric form that is negative definite, such as the negative of the Killing form. The **bi-invariant metric** associated with $B$ is the Riemannian metric obtained by translating $B$ to every tangent space by the left translations; it is also right-invariant because $B$ is invariant under the adjoint action.
 
-**Theorem.** For a compact semisimple group with the bi-invariant metric of $-B$, the Casimir operator $\Omega_{-B} = -\sum_i \tilde X_i\tilde X^i$ is the Laplace--Beltrami operator of the metric, up to the normalisation of the form.
+**Theorem.** For a compact semisimple group with the bi-invariant metric of $-B$, the Casimir operator $\Omega_{-B} = -\sum_i X_i^{\mathrm{lift}}X^{i\,\mathrm{lift}}$ is the Laplace--Beltrami operator of the metric, up to the normalisation of the form.
 
 *Proof.* In an orthonormal frame the Laplace--Beltrami operator of a bi-invariant metric is the sum of the squares of the orthonormal left-invariant fields, because the Levi-Civita connection of a bi-invariant metric is given by $2\nabla_XY = [X,Y]$ and the divergence of a left-invariant field vanishes at $e$; the sum is $\Omega_{-B}$ in the orthonormal basis. The precise identification of the Laplacian and its spectral consequences are the subject of the harmonic analysis of *Harmonic Analysis on Groups*, and the representation-theoretic diagonalisation is that of *The Regular Representation of a Lie Group*.
 

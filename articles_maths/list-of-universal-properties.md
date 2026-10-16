@@ -72,7 +72,7 @@ The **tensor product** is the universal object representing the bilinear maps; o
 | Symmetric algebra $\operatorname{Sym}(M)$ | the quotient of the tensor algebra by $x \otimes y - y \otimes x$ | *The Symmetric Algebra of a Module* |
 | Exterior power $\Lambda^n M$ | the universal object for the alternating $n$-multilinear maps | *Exterior Powers* |
 | Exterior algebra $\Lambda(M)$ | the quotient of the tensor algebra by $x \otimes x$ | *The Exterior Algebra* |
-| Clifford algebra $\mathrm{Cl}(V,Q)$ | the quotient of $T(V)$ by $x \otimes x - Q(x)$ | *Clifford Algebras* |
+| Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | the quotient of $T(V)$ by $x \otimes x - \mathfrak{Q}(x)$ | *Clifford Algebras* |
 | Non-example: the tensor product over a non-commutative ring without a bimodule structure | the candidate fails: $M \otimes_R N$ requires one side left and one right | *The Balanced Product over an Algebra* |
 
 ## Localizations and Fraction Objects
@@ -118,7 +118,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $F(X)$ | free group on a set $X$ |
 | $R^{(I)}$, $R^n$ | free module on the index set $I$ |
 | $\mathbb{Z}$, $\mathbb{R}$, $\mathbb{C}$ | the integers, the reals, the complex numbers |
-| $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,Q)$ | tensor, symmetric, exterior and Clifford algebras |
+| $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | tensor, symmetric, exterior and Clifford algebras |
 | $V^{\otimes n}$, $\operatorname{Sym}^n M$, $\Lambda^n M$ | tensor, symmetric and exterior powers |
 | $M \otimes_R N$ | balanced product over $R$ |
 | $A \sqcup B$, $A \otimes_C B$ | free product and pushout of algebras |

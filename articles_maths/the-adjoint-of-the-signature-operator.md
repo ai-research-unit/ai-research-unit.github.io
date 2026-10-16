@@ -109,7 +109,7 @@ so the star, normalized by the degree-dependent phase, intertwines the exterior 
 
 ## The Index as the Signature of the Kernel Pairing
 
-**Theorem.** Let $V=\ker D$ be the finite-dimensional kernel of the signature operator on a closed oriented manifold of dimension $4k$, and let $(\cdot,\cdot)$ be the metric inner product and $Q(\alpha,\beta)=\int_{M}\alpha\wedge\beta$ the intersection form, related by $Q(\alpha,\beta)=(\alpha,\star\beta)$ on the middle forms. Then
+**Theorem.** Let $V=\ker D$ be the finite-dimensional kernel of the signature operator on a closed oriented manifold of dimension $4k$, and let $(\cdot,\cdot)$ be the metric inner product and $\mathfrak{Q}(\alpha,\beta)=\int_{M}\alpha\wedge\beta$ the intersection form, related by $\mathfrak{Q}(\alpha,\beta)=(\alpha,\star\beta)$ on the middle forms. Then
 
 - the metric form $(\cdot,\cdot)$ is positive definite on $V$, and
 - the chirality acts on $V$ with the trace the index, and the non-middle harmonic forms cancel in that trace: the chirality maps $\mathcal{H}^{j}$ to $\mathcal{H}^{n-j}$, so its trace on the sum $\mathcal{H}^{j}\oplus\mathcal{H}^{n-j}$ is $0$ for $j\neq n-j$, and only the middle harmonic forms contribute, with
@@ -120,7 +120,7 @@ $$
 
 the **signature** of the middle intersection form.
 
-The index of the self-adjoint operator is therefore the signature of the restriction of the Hermitian pairing to the middle part of the kernel: the positive definite metric form and the indefinite intersection form differ by the star, $Q(\alpha,\beta)=(\alpha,\star\beta)$, and the index is the difference of the dimensions of the two star eigenspaces on the middle harmonic forms, the non-middle forms contributing nothing.
+The index of the self-adjoint operator is therefore the signature of the restriction of the Hermitian pairing to the middle part of the kernel: the positive definite metric form and the indefinite intersection form differ by the star, $\mathfrak{Q}(\alpha,\beta)=(\alpha,\star\beta)$, and the index is the difference of the dimensions of the two star eigenspaces on the middle harmonic forms, the non-middle forms contributing nothing.
 
 **Proof.** The kernel of $D$ consists of the harmonic forms, on which $d$ and $d^{*}$ vanish; the metric form is positive definite there, and the intersection form on the middle degree is nondegenerate by Poincaré duality; the star preserves the middle forms and squares to $+1$ there, so it splits them into the self-dual and anti-self-dual parts, the positive and negative definite parts of $Q$, and their dimensions differ by $\sigma(M)$. For $j\neq n-j$ the chirality exchanges $\mathcal{H}^{j}$ and $\mathcal{H}^{n-j}$, so the trace picks up no contribution from them, and its total value is the middle signature.
 
@@ -153,7 +153,7 @@ The signature operator $D=d+d^{*}$ on a closed oriented Riemannian manifold is *
 | $\tau D\tau^{-1}=-D$ | Chirality conjugates the operator to the negative of its adjoint |
 | $\tau=i^{k(k-1)+m}\star$, $\tau^2=\mathrm{id}$ | Chirality as the normalized star, the intertwining isometry |
 | $\sigma(M)=\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)$ | Index as the chirality trace |
-| $Q(\alpha,\beta)=\int_M\alpha\wedge\beta$ | Intersection form; on the middle harmonic forms its signature is $\sigma(M)$ |
+| $\mathfrak{Q}(\alpha,\beta)=\int_M\alpha\wedge\beta$ | Intersection form; on the middle harmonic forms its signature is $\sigma(M)$ |
 
 ## Further Reading
 

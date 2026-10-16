@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Inside the algebra of units of a Clifford algebra there sit three groups that act on the underlying quadratic space by isometries: the Clifford group $\Gamma(V,q)$, which consists of the units that preserve the space of vectors under signed inner conjugation; the Pin group, which is the part of $\Gamma$ on which the Clifford norm takes the value $\pm1$; and the Spin group, which is the even part of Pin. The action of Pin on the quadratic space is the two-to-one cover of the full orthogonal group, and the action of Spin is the two-to-one cover of the special orthogonal group. These groups are the algebraic source of the spin representations, and they organise the reflection and rotation groups of every quadratic space.
+Inside the algebra of units of a Clifford algebra there sit three groups that act on the underlying quadratic space by isometries: the Clifford group $\Gamma(V,\mathfrak{Q})$, which consists of the units that preserve the space of vectors under signed inner conjugation; the Pin group, which is the part of $\Gamma$ on which the Clifford norm takes the value $\pm1$; and the Spin group, which is the even part of Pin. The action of Pin on the quadratic space is the two-to-one cover of the full orthogonal group, and the action of Spin is the two-to-one cover of the special orthogonal group. These groups are the algebraic source of the spin representations, and they organise the reflection and rotation groups of every quadratic space.
 
-The Clifford algebra $\mathrm{Cl}(V,q)$, its parity grading $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, the graded tensor product and the volume element are taken from the opening of the Clifford layer. This article uses the reversion anti-involution $x\mapsto x^{r}$, the Clifford conjugation $x^{\natural}=\alpha(x^{r})$ and the grade involution $\alpha$; reversion reverses the order of the factors and fixes the vectors, Clifford conjugation reverses the order and negates the vectors, and the grade involution multiplies the degree-$k$ part by $(-1)^k$. These three are the standard involutions of the Clifford algebra and their signs depend only on the degree.
+The Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$, its parity grading $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, the graded tensor product and the volume element are taken from the opening of the Clifford layer. This article uses the reversion anti-involution $x\mapsto x^{r}$, the Clifford conjugation $x^{\natural}=\alpha(x^{r})$ and the grade involution $\alpha$; reversion reverses the order of the factors and fixes the vectors, Clifford conjugation reverses the order and negates the vectors, and the grade involution multiplies the degree-$k$ part by $(-1)^k$. These three are the standard involutions of the Clifford algebra and their signs depend only on the degree.
 
-The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $g$ its polar form. When $F=\mathbb{R}$ the form is written $q=\operatorname{diag}(+1^p,-1^q)$ and the groups are $\mathrm{Pin}(p,q)$, $\mathrm{Spin}(p,q)$; the definite case $q>0$ is written $\mathrm{Pin}(n)$, $\mathrm{Spin}(n)$.
+The base is a field $F$ of characteristic not $2$, with $m$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $g$ its polar form. When $F=\mathbb{R}$ the form is written $m=\operatorname{diag}(+1^n,-1^m)$ and the groups are $\mathrm{Pin}(n,m)$, $\mathrm{Spin}(n,m)$; the definite case $m>0$ is written $\mathrm{Pin}(n)$, $\mathrm{Spin}(n)$.
 
 The operators of this article are the inner conjugation $x\,y\,x^{-1}$ on the units and the signed inner conjugation $\alpha(x)\,y\,x^{-1}$, the two members of the family of two-sided operators in which the right factor is the inverse. The general family, its composition law, its parity, its value at the unit and its remaining members are from *Two-Sided Operators on a Clifford Algebra*, and none of that is restated here. What this article adds is the restriction of these two members to the quadratic space: the condition that the signed inner conjugation preserve the space of vectors, which defines the Clifford group, the scale $N(x)$ that the conjugation sandwich acquires on it, and the three groups cut out by the norm.
 
@@ -15,29 +15,29 @@ The operators of this article are the inner conjugation $x\,y\,x^{-1}$ on the un
 
 The elementary isometry of a quadratic space is the reflection in a hyperplane, and it has an explicit expression in the Clifford algebra.
 
-**Definition.** Let $u\in V$ with $q(u)\neq0$. The **reflection in the hyperplane** $u^{\perp}$ is the linear map
+**Definition.** Let $u\in V$ with $\mathfrak{Q}(u)\neq0$. The **reflection in the hyperplane** $u^{\perp}$ is the linear map
 
 $$
-\rho_u:V\longrightarrow V, \qquad \rho_u(v)=v-\frac{2g(v,u)}{q(u)}\,u.
+\rho_u:V\longrightarrow V, \qquad \rho_u(v)=v-\frac{2g(v,u)}{\mathfrak{Q}(u)}\,u.
 $$
 
-It fixes $u^{\perp}$ pointwise, sends $u$ to $-u$, and is an isometry: $q(\rho_u(v))=q(v)$ for all $v$.
+It fixes $u^{\perp}$ pointwise, sends $u$ to $-u$, and is an isometry: $\mathfrak{Q}(\rho_u(v))=\mathfrak{Q}(v)$ for all $v$.
 
-**Proposition.** For $u\in V$ with $q(u)\neq0$, the element $u$ is invertible in $\mathrm{Cl}(V,q)$ with $u^{-1}=u/q(u)$, and the reflection $\rho_u$ is given by the **signed inner conjugation**
+**Proposition.** For $u\in V$ with $\mathfrak{Q}(u)\neq0$, the element $u$ is invertible in $\mathrm{Cl}(V,\mathfrak{Q})$ with $u^{-1}=u/\mathfrak{Q}(u)$, and the reflection $\rho_u$ is given by the **signed inner conjugation**
 
 $$
 \rho_u(v)=-u\,v\,u^{-1}.
 $$
 
-**Proof.** From the fundamental relation, $u^2+u^2=2g(u,u)1$, that is $u^2=q(u)1$, so $u\cdot(u/q(u))=1$. The product $uvu$ is computed by writing $uv=2g(u,v)1-vu$:
+**Proof.** From the fundamental relation, $u^2+u^2=2g(u,u)1$, that is $u^2=\mathfrak{Q}(u)1$, so $u\cdot(u/\mathfrak{Q}(u))=1$. The product $uvu$ is computed by writing $uv=2g(u,v)1-vu$:
 
 $$
-uvu=2g(u,v)u-vu^2=2g(u,v)u-q(u)v.
+uvu=2g(u,v)u-vu^2=2g(u,v)u-\mathfrak{Q}(u)v.
 $$
 
-Hence $-uvu^{-1}=q(u)^{-1}\bigl(q(u)v-2g(u,v)u\bigr)=v-2g(u,v)q(u)^{-1}u=\rho_u(v)$.
+Hence $-uvu^{-1}=\mathfrak{Q}(u)^{-1}\bigl(\mathfrak{Q}(u)v-2g(u,v)u\bigr)=v-2g(u,v)\mathfrak{Q}(u)^{-1}u=\rho_u(v)$.
 
-**The signed inner conjugation.** The sign $-1$ in the formula above can be absorbed by the grade involution. For an invertible $x\in\mathrm{Cl}(V,q)$ define the **signed inner conjugation action** by
+**The signed inner conjugation.** The sign $-1$ in the formula above can be absorbed by the grade involution. For an invertible $x\in\mathrm{Cl}(V,\mathfrak{Q})$ define the **signed inner conjugation action** by
 
 $$
 \mathrm{Ad}^{\alpha}_x(v)=\alpha(x)\,v\,x^{-1}, \qquad v\in V.
@@ -45,13 +45,13 @@ $$
 
 For a vector $u$ the grade involution gives $\alpha(u)=-u$, so $\mathrm{Ad}^{\alpha}_u(v)=\rho_u(v)$: the odd elements of the algebra realise reflections. For an even element $x\in\mathrm{Cl}^0$ one has $\alpha(x)=x$ and $\mathrm{Ad}^{\alpha}_x(v)=xvx^{-1}$: the even elements realise the orientation-preserving isometries.
 
-**Definition.** The **Clifford group** $\Gamma(V,q)$ is the group of units $x\in\mathrm{Cl}(V,q)^{\times}$ such that
+**Definition.** The **Clifford group** $\Gamma(V,\mathfrak{Q})$ is the group of units $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ such that
 
 $$
 \mathrm{Ad}^{\alpha}_x(V)\subseteq V.
 $$
 
-**Proposition.** For $x\in\Gamma(V,q)$ the map $\mathrm{Ad}^{\alpha}_x$ is an isometry of $q$, and the assignment $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a group homomorphism $\Gamma(V,q)\to O(V,q)$.
+**Proposition.** For $x\in\Gamma(V,\mathfrak{Q})$ the map $\mathrm{Ad}^{\alpha}_x$ is an isometry of $m$, and the assignment $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a group homomorphism $\Gamma(V,\mathfrak{Q})\to O(V,\mathfrak{Q})$.
 
 **Proof.** The signed inner conjugation is a homomorphism because $\alpha$ is an algebra automorphism and $\alpha(x)^{-1}=\alpha(x^{-1})$. Since a non-degenerate Clifford group is generated by the non-isotropic vectors it contains, it suffices to check the isometry property there. For a vector $u$ this is the reflection $\rho_u$, already shown to be an isometry. For a homogeneous $x$ of degree $k$ one has $\alpha(x)=(-1)^kx$, so $x^{-1}\alpha(x)=(-1)^k$ is central, and for $v,w\in V$,
 
@@ -63,15 +63,15 @@ $$
 
 Comparing with the defining relation $v'w'+w'v'=2g(v',w')$ for $v'=\mathrm{Ad}^{\alpha}_x(v)$ and $w'=\mathrm{Ad}^{\alpha}_x(w)$ gives $g(\mathrm{Ad}^{\alpha}_xv,\mathrm{Ad}^{\alpha}_xw)=g(v,w)$.
 
-**Lemma.** The kernel of $\Gamma(V,q)\to O(V,q)$ is the group of nonzero scalars $F^{\times}\cdot1$.
+**Lemma.** The kernel of $\Gamma(V,\mathfrak{Q})\to O(V,\mathfrak{Q})$ is the group of nonzero scalars $F^{\times}\cdot1$.
 
-**Proof.** An element $x$ is in the kernel precisely when $\alpha(x)v=vx$ for every $v\in V$. Write $x=x_0+x_1$ with $x_0\in\mathrm{Cl}^0$, $x_1\in\mathrm{Cl}^1$. The equation reads $(x_0-x_1)v=v(x_0+x_1)$; separating the even parts gives $-x_1v=vx_1$, so $x_1$ anticommutes with every vector, hence commutes with every even element and anticommutes with every odd one. That is, $x_1$ lies in the graded centre of $\mathrm{Cl}(V,q)$, and the graded centre of the Clifford algebra of a non-degenerate form is $F$ concentrated in degree $0$. Indeed, an odd element $z$ of the graded centre commutes with $\mathrm{Cl}^0$ and satisfies $z^{2}=-z^{2}$, hence $z^{2}=0$; writing $z=ce_1$ with $c\in\mathrm{Cl}^0$ and $e_1$ a generator, commutation with $\mathrm{Cl}^0$ makes $c$ central in $\mathrm{Cl}^0$, while $ze_1=-e_1z$ gives $e_1ce_1=-q(e_1)c$ and hence $z^{2}=-q(e_1)c^{2}$, so $c^{2}=0$; the even Clifford algebra is semisimple with centre a product of fields, where a central element of square zero vanishes, so $c=0$ and $z=0$. Hence $x_1=0$. The remaining equation is $x_0v=vx_0$ for every $v$, so $x_0$ is a central element of $\mathrm{Cl}(V,q)$ lying in the even part. The centre equals $F$ when $n=\dim V$ is even, and equals $F\oplus F\omega$ with $\omega$ odd when $n$ is odd, so in both cases the even central elements are the scalars. Hence $x_0$ is a scalar, and the kernel is $F^{\times}\cdot1$.
+**Proof.** An element $x$ is in the kernel precisely when $\alpha(x)v=vx$ for every $v\in V$. Write $x=x_0+x_1$ with $x_0\in\mathrm{Cl}^0$, $x_1\in\mathrm{Cl}^1$. The equation reads $(x_0-x_1)v=v(x_0+x_1)$; separating the even parts gives $-x_1v=vx_1$, so $x_1$ anticommutes with every vector, hence commutes with every even element and anticommutes with every odd one. That is, $x_1$ lies in the graded centre of $\mathrm{Cl}(V,\mathfrak{Q})$, and the graded centre of the Clifford algebra of a non-degenerate form is $F$ concentrated in degree $0$. Indeed, an odd element $z$ of the graded centre commutes with $\mathrm{Cl}^0$ and satisfies $z^{2}=-z^{2}$, hence $z^{2}=0$; writing $z=ce_1$ with $c\in\mathrm{Cl}^0$ and $e_1$ a generator, commutation with $\mathrm{Cl}^0$ makes $c$ central in $\mathrm{Cl}^0$, while $ze_1=-e_1z$ gives $e_1ce_1=-\mathfrak{Q}(e_1)c$ and hence $z^{2}=-\mathfrak{Q}(e_1)c^{2}$, so $c^{2}=0$; the even Clifford algebra is semisimple with centre a product of fields, where a central element of square zero vanishes, so $c=0$ and $z=0$. Hence $x_1=0$. The remaining equation is $x_0v=vx_0$ for every $v$, so $x_0$ is a central element of $\mathrm{Cl}(V,\mathfrak{Q})$ lying in the even part. The centre equals $F$ when $n=\dim V$ is even, and equals $F\oplus F\omega$ with $\omega$ odd when $n$ is odd, so in both cases the even central elements are the scalars. Hence $x_0$ is a scalar, and the kernel is $F^{\times}\cdot1$.
 
 ## The Pin and Spin Groups
 
 The Clifford group is larger than the group of isometries by the scalars. The Clifford norm cuts it back down.
 
-**Definition.** The **Clifford norm** of $x\in\mathrm{Cl}(V,q)$ is
+**Definition.** The **Clifford norm** of $x\in\mathrm{Cl}(V,\mathfrak{Q})$ is
 
 $$
 N(x)=x x^{\natural},
@@ -79,7 +79,7 @@ $$
 
 where $x^{\natural}=\alpha(x^{r})$ is Clifford conjugation. On the Clifford group this is a scalar.
 
-**Lemma.** For $x,y\in\Gamma(V,q)$ one has $N(x)\in F$, $N(xy)=N(x)N(y)$, and $N(x)\neq0$. On a vector $u$ the norm is $N(u)=-q(u)$; on a scalar $\lambda$ it is $N(\lambda)=\lambda^2$.
+**Lemma.** For $x,y\in\Gamma(V,\mathfrak{Q})$ one has $N(x)\in F$, $N(xy)=N(x)N(y)$, and $N(x)\neq0$. On a vector $u$ the norm is $N(u)=-\mathfrak{Q}(u)$; on a scalar $\lambda$ it is $N(\lambda)=\lambda^2$.
 
 **Proof.** The Clifford group is generated by the non-isotropic vectors it contains, and $N$ is multiplicative whenever the middle factor is central: $(xy)^{\natural}=y^{\natural} x^{\natural}$ gives
 
@@ -87,49 +87,49 @@ $$
 N(xy)=xy(xy)^{\natural}=xy y^{\natural} x^{\natural}=xN(y)x^{\natural},
 $$
 
-so if $N(y)$ is central then $N(xy)=N(y)x x^{\natural}=N(x)N(y)$. On a vector $N(u)=u(-u)=-u^2=-q(u)\in F$; on a scalar $N(\lambda)=\lambda\bar\lambda=\lambda^2$. Since every element of $\Gamma$ is a product of vectors, multiplicativity gives $N(x)\in F$ and $N(x)\neq0$ for every $x\in\Gamma$.
+so if $N(y)$ is central then $N(xy)=N(y)x x^{\natural}=N(x)N(y)$. On a vector $N(u)=u(-u)=-u^2=-\mathfrak{Q}(u)\in F$; on a scalar $N(\lambda)=\lambda\bar\lambda=\lambda^2$. Since every element of $\Gamma$ is a product of vectors, multiplicativity gives $N(x)\in F$ and $N(x)\neq0$ for every $x\in\Gamma$.
 
 **Definition.** The **Pin group** is
 
 $$
-\mathrm{Pin}(V,q)=\{\,x\in\Gamma(V,q) : N(x)=\pm1\,\},
+\mathrm{Pin}(V,\mathfrak{Q})=\{\,x\in\Gamma(V,\mathfrak{Q}) : N(x)=\pm1\,\},
 $$
 
 and the **Spin group** is its even part,
 
 $$
-\mathrm{Spin}(V,q)=\mathrm{Pin}(V,q)\cap\mathrm{Cl}^0(V,q)=\{\,x\in\mathrm{Cl}^0(V,q)^{\times} : \mathrm{Ad}^{\alpha}_x(V)\subseteq V,\ N(x)=\pm1\,\}.
+\mathrm{Spin}(V,\mathfrak{Q})=\mathrm{Pin}(V,\mathfrak{Q})\cap\mathrm{Cl}^0(V,\mathfrak{Q})=\{\,x\in\mathrm{Cl}^0(V,\mathfrak{Q})^{\times} : \mathrm{Ad}^{\alpha}_x(V)\subseteq V,\ N(x)=\pm1\,\}.
 $$
 
-For $x=u_1\cdots u_k$ a product of vectors one has $N(x)=\prod_i(-q(u_i))$, so the sign of the norm on an element of Pin records the signs of the norms of its factors. Over a definite form the sign is fixed by the parity of $k$, since all the factors $q(u_i)$ have the same sign; over a positive definite form an odd element of Pin has norm $-1$ and an even one norm $+1$, and a vector $u$ with $q(u)=1$ is an odd element of Pin with $N(u)=-1$. Over an indefinite form both signs occur in each parity class: for a form containing orthogonal vectors with $q(u)=+1$ and $q(w)=-1$, the even element $uw$ has norm $N(u)N(w)=-1$. In general the subgroup $\{x\in\Gamma^0(V,q) : N(x)=1\}$ is the double cover of the identity component $SO^{+}(V,q)$, and it is proper in $\mathrm{Spin}$ exactly when the even part of $\Gamma$ contains an element of norm $-1$.
+For $x=u_1\cdots u_k$ a product of vectors one has $N(x)=\prod_i(-\mathfrak{Q}(u_i))$, so the sign of the norm on an element of Pin records the signs of the norms of its factors. Over a definite form the sign is fixed by the parity of $k$, since all the factors $\mathfrak{Q}(u_i)$ have the same sign; over a positive definite form an odd element of Pin has norm $-1$ and an even one norm $+1$, and a vector $u$ with $\mathfrak{Q}(u)=1$ is an odd element of Pin with $N(u)=-1$. Over an indefinite form both signs occur in each parity class: for a form containing orthogonal vectors with $\mathfrak{Q}(u)=+1$ and $\mathfrak{Q}(w)=-1$, the even element $uw$ has norm $N(u)N(w)=-1$. In general the subgroup $\{x\in\Gamma^0(V,\mathfrak{Q}) : N(x)=1\}$ is the double cover of the identity component $SO^{+}(V,\mathfrak{Q})$, and it is proper in $\mathrm{Spin}$ exactly when the even part of $\Gamma$ contains an element of norm $-1$.
 
 **Theorem.** Suppose that $-1$ is not a square in $F$ and that every element of $F^{\times}$ differs from $\pm1$ by a square; both hypotheses hold over $\mathbb{R}$ and over every Euclidean field. Then there are exact sequences
 
 $$
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,q)\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O(V,q)\longrightarrow 1,
+1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Pin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } O(V,\mathfrak{Q})\longrightarrow 1,
 $$
 
 $$
-1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,q)\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO(V,q)\longrightarrow 1.
+1\longrightarrow\{\pm1\}\longrightarrow \mathrm{Spin}(V,\mathfrak{Q})\xrightarrow{\ \mathrm{Ad}^{\alpha}\ } SO(V,\mathfrak{Q})\longrightarrow 1.
 $$
 
-**Proof.** By the previous lemma the kernel of $\mathrm{Ad}^{\alpha}$ on $\Gamma$ is $F^{\times}$; intersecting with the condition $N(x)=\pm1$ leaves the scalars $\lambda$ with $\lambda^2=\pm1$, which under the first hypothesis are $\lambda=\pm1$. The image of Pin is all of $O(V,q)$: a reflection depends only on the line $Fu$, and the second hypothesis allows the generator of that line to be rescaled so that $q(u)=\pm1$, whence $u\in\mathrm{Pin}$ with $N(u)=\mp1$, and the reflections generate $O$. The image of Spin lies in $SO$, because the determinant of an even element's signed inner conjugation is $+1$: the determinant of a reflection is $-1$, and the parity of the number of reflections is the parity of $x$. Surjectivity onto $SO$ follows from Cartan–Dieudonné, which writes every element of $SO$ as an even product of reflections, and each reflection lies in Pin.
+**Proof.** By the previous lemma the kernel of $\mathrm{Ad}^{\alpha}$ on $\Gamma$ is $F^{\times}$; intersecting with the condition $N(x)=\pm1$ leaves the scalars $\lambda$ with $\lambda^2=\pm1$, which under the first hypothesis are $\lambda=\pm1$. The image of Pin is all of $O(V,\mathfrak{Q})$: a reflection depends only on the line $Fu$, and the second hypothesis allows the generator of that line to be rescaled so that $\mathfrak{Q}(u)=\pm1$, whence $u\in\mathrm{Pin}$ with $N(u)=\mp1$, and the reflections generate $O$. The image of Spin lies in $SO$, because the determinant of an even element's signed inner conjugation is $+1$: the determinant of a reflection is $-1$, and the parity of the number of reflections is the parity of $x$. Surjectivity onto $SO$ follows from Cartan–Dieudonné, which writes every element of $SO$ as an even product of reflections, and each reflection lies in Pin.
 
-**Remark (general fields and the spinor norm).** Over a general field the sequences need not be exact, and the obstruction is the spinor norm: the assignment $\rho_u\mapsto q(u)F^{\times 2}$ extends to a homomorphism $\Theta\colon O(V,q)\to F^{\times}/F^{\times 2}$, and the image of $\mathrm{Pin}$ is the subgroup of isometries whose spinor norm lies in the subgroup generated by the class of $-1$. Over $\mathbb{Q}$, for instance, the reflection in a vector of norm $2$ is not the signed inner conjugation of any element of $\mathrm{Pin}$, since no rational multiple of that vector has norm $\pm1$. Over $\mathbb{R}$ the quotient $F^{\times}/F^{\times 2}$ has order two and the condition is vacuous, which is why the theorem above holds there.
+**Remark (general fields and the spinor norm).** Over a general field the sequences need not be exact, and the obstruction is the spinor norm: the assignment $\rho_u\mapsto \mathfrak{Q}(u)F^{\times 2}$ extends to a homomorphism $\Theta\colon O(V,\mathfrak{Q})\to F^{\times}/F^{\times 2}$, and the image of $\mathrm{Pin}$ is the subgroup of isometries whose spinor norm lies in the subgroup generated by the class of $-1$. Over $\mathbb{Q}$, for instance, the reflection in a vector of norm $2$ is not the signed inner conjugation of any element of $\mathrm{Pin}$, since no rational multiple of that vector has norm $\pm1$. Over $\mathbb{R}$ the quotient $F^{\times}/F^{\times 2}$ has order two and the condition is vacuous, which is why the theorem above holds there.
 
 Thus, under the hypotheses of the theorem — in particular over $\mathbb{R}$ — Pin is a double cover of the full orthogonal group and Spin is a double cover of the special orthogonal group, the two-to-one being the identification $x\sim-x$. The double cover is nontrivial precisely because $-1$ acts trivially on $V$ but is not the identity of the Clifford algebra; this is the algebraic fact behind the existence of spin structures.
 
-**Remark.** The construction is sensitive to the form. If $q$ is definite then $N(x)=x x^{\natural}$ is a nonzero real for every element of $\Gamma(V,q)$, of sign $(-1)^{k}$ on a product of $k$ vectors, and the groups $\mathrm{Pin}$ and $\mathrm{Spin}$ are those of a definite form. If $q$ is indefinite the norm $N$ is itself isotropic on the algebra: on $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the form $N$ is the determinant, of signature $(2,2)$, and it vanishes on the nonzero rank-one matrices. Those elements are zero divisors and not units, and on the Clifford group $N$ is still nonzero by the lemma; but the norm-one condition imposed on the invertible even elements rather than on $\Gamma(V,q)$ admits elements outside the Clifford group. In $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with $e_1=\operatorname{diag}(1,-1)$ and $e_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the matrix $\begin{pmatrix}1&1\\0&1\end{pmatrix}=1-\tfrac12e_2-\tfrac12e_1e_2$ has norm $\det=1$, while its signed inner conjugation sends $e_1$ to $\begin{pmatrix}1&-2\\0&-1\end{pmatrix}$, which is not a linear combination of $e_1$ and $e_2$ and hence is not a vector; so it is a unit of norm one that does not lie in $\Gamma(V,q)$. The condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ is not a consequence of the norm condition, and that is why it is part of the definition. If $q$ is degenerate then $\Gamma$ need not act on $V$ by invertible maps and the spin group does not exist in the usual sense; the next section records where the construction fails.
+**Remark.** The construction is sensitive to the form. If $m$ is definite then $N(x)=x x^{\natural}$ is a nonzero real for every element of $\Gamma(V,\mathfrak{Q})$, of sign $(-1)^{k}$ on a product of $k$ vectors, and the groups $\mathrm{Pin}$ and $\mathrm{Spin}$ are those of a definite form. If $m$ is indefinite the norm $N$ is itself isotropic on the algebra: on $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the form $N$ is the determinant, of signature $(2,2)$, and it vanishes on the nonzero rank-one matrices. Those elements are zero divisors and not units, and on the Clifford group $N$ is still nonzero by the lemma; but the norm-one condition imposed on the invertible even elements rather than on $\Gamma(V,\mathfrak{Q})$ admits elements outside the Clifford group. In $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with $e_1=\operatorname{diag}(1,-1)$ and $e_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the matrix $\begin{pmatrix}1&1\\0&1\end{pmatrix}=1-\tfrac12e_2-\tfrac12e_1e_2$ has norm $\det=1$, while its signed inner conjugation sends $e_1$ to $\begin{pmatrix}1&-2\\0&-1\end{pmatrix}$, which is not a linear combination of $e_1$ and $e_2$ and hence is not a vector; so it is a unit of norm one that does not lie in $\Gamma(V,\mathfrak{Q})$. The condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ is not a consequence of the norm condition, and that is why it is part of the definition. If $m$ is degenerate then $\Gamma$ need not act on $V$ by invertible maps and the spin group does not exist in the usual sense; the next section records where the construction fails.
 
 ## Cartan–Dieudonné and the Reflection Length
 
-The surjectivity of Pin onto $O(V,q)$ rests on the generation of the orthogonal group by reflections, and the parity of the number of reflections gives the determinant.
+The surjectivity of Pin onto $O(V,\mathfrak{Q})$ rests on the generation of the orthogonal group by reflections, and the parity of the number of reflections gives the determinant.
 
-**Theorem (Cartan–Dieudonné).** Let $(V,q)$ be a non-degenerate quadratic space of dimension $n$ over a field of characteristic not $2$. Every isometry of $V$ is a product of at most $n$ reflections. An isometry lies in $SO(V,q)$ if and only if it is a product of an even number of reflections; equivalently, $\det=+1$ on the special orthogonal group and $\det=-1$ on its complement.
+**Theorem (Cartan–Dieudonné).** Let $(V,\mathfrak{Q})$ be a non-degenerate quadratic space of dimension $n$ over a field of characteristic not $2$. Every isometry of $V$ is a product of at most $n$ reflections. An isometry lies in $SO(V,\mathfrak{Q})$ if and only if it is a product of an even number of reflections; equivalently, $\det=+1$ on the special orthogonal group and $\det=-1$ on its complement.
 
-**Proof sketch.** The theorem is standard, and the proof is by induction on $n$. For $n=1$ the only non-trivial isometry is the reflection in the origin; for $n\ge2$ one chooses $v$ with $q(v)\neq0$ and an isometry $\rho$ — a reflection when $\sigma(v)-v$ is non-isotropic, and one of the standard variants otherwise — such that $\rho\sigma$ fixes $v$; then $\rho\sigma$ preserves $v^{\perp}$ and the induction hypothesis applies to that hyperplane of dimension $n-1$. The parity statement follows because each reflection has determinant $-1$ and the determinant is multiplicative.
+**Proof sketch.** The theorem is standard, and the proof is by induction on $n$. For $n=1$ the only non-trivial isometry is the reflection in the origin; for $n\ge2$ one chooses $v$ with $\mathfrak{Q}(v)\neq0$ and an isometry $\rho$ — a reflection when $\sigma(v)-v$ is non-isotropic, and one of the standard variants otherwise — such that $\rho\sigma$ fixes $v$; then $\rho\sigma$ preserves $v^{\perp}$ and the induction hypothesis applies to that hyperplane of dimension $n-1$. The parity statement follows because each reflection has determinant $-1$ and the determinant is multiplicative.
 
-**Corollary.** Over $\mathbb{R}$, or more generally under the hypotheses of the theorem of the previous section, the maps $\mathrm{Pin}\to O$ and $\mathrm{Spin}\to SO$ are surjective, and an element of $O(V,q)$ is in $SO$ exactly when it has an even expression as a product of reflections. In dimension at most three every rotation is a product of two reflections and corresponds in $\mathrm{Spin}$ to a product of two unit vectors; in higher dimensions the number of reflections needed is the reflection length of the isometry, which is generally larger.
+**Corollary.** Over $\mathbb{R}$, or more generally under the hypotheses of the theorem of the previous section, the maps $\mathrm{Pin}\to O$ and $\mathrm{Spin}\to SO$ are surjective, and an element of $O(V,\mathfrak{Q})$ is in $SO$ exactly when it has an even expression as a product of reflections. In dimension at most three every rotation is a product of two reflections and corresponds in $\mathrm{Spin}$ to a product of two unit vectors; in higher dimensions the number of reflections needed is the reflection length of the isometry, which is generally larger.
 
 The reflection length, that is, the minimal number of reflections needed to express a given isometry, is a genuine invariant; it equals the length of the corresponding element of the Clifford group with respect to the generating set of vectors, and it is the algebraic counterpart of the word length in the reflection group generated by the reflections of the form.
 
@@ -151,28 +151,28 @@ $$
 
 **The general pattern.** The action of Spin$(n)$ on the spinor module is the double cover of $SO(n)$, and the chain of identifications above is the low-dimensional form of the accidental isomorphisms between the spin groups and the classical groups. In each case the spin group lies inside the units of the even Clifford algebra, and its representation on the spinor module is the module structure; the group and its representation are two aspects of one Clifford-module datum.
 
-**Remark.** The indefinite case is obtained by replacing the definite forms with the signature forms. The group $\mathrm{Spin}(p,q)$ is then the identity component of the double cover of $SO(p,q)$, and its structure is read from the eightfold table in the same way; the two signatures that exchange the signs of the form give the same complexification but different real forms of the Spin group. The special cases in which the ambient Clifford algebra is a biquaternion algebra — the identification $\mathrm{Spin}(3)\cong Sp(1)$ inside $\mathbb{H}$ and the identification of the double cover of the identity component of $SO(1,3)$ inside $\mathbb{B}$ — are the subject of the applications layer of this category.
+**Remark.** The indefinite case is obtained by replacing the definite forms with the signature forms. The group $\mathrm{Spin}(n,m)$ is then the identity component of the double cover of $SO(n,m)$, and its structure is read from the eightfold table in the same way; the two signatures that exchange the signs of the form give the same complexification but different real forms of the Spin group. The special cases in which the ambient Clifford algebra is a biquaternion algebra — the identification $\mathrm{Spin}(3)\cong Sp(1)$ inside $\mathbb{H}$ and the identification of the double cover of the identity component of $SO(1,3)$ inside $\mathbb{B}$ — are the subject of the applications layer of this category.
 
 ## The Degenerate Case
 
 When the form is degenerate the construction above fails, and it is worth recording exactly where.
 
-If $q$ has radical $\mathrm{rad}(q)\neq0$, then a radical vector $r$ satisfies $r^2=0$, so it is nilpotent and not invertible; the Clifford group, defined as a group of units, contains no radical vectors. The signed inner conjugation action therefore cannot send $V$ to $V$ for elements built from radical vectors, and the reflection formula $\rho_r(v)=v-2g(v,r)q(r)^{-1}r$ is undefined because $q(r)=0$. The orthogonal group of a degenerate form is still defined — it is the group of linear isometries of $q$ — but it is not generated by reflections, and the Clifford group does not surject onto it. Two failures are visible directly.
+If $m$ has radical $\mathrm{rad}(m)\neq0$, then a radical vector $r$ satisfies $r^2=0$, so it is nilpotent and not invertible; the Clifford group, defined as a group of units, contains no radical vectors. The signed inner conjugation action therefore cannot send $V$ to $V$ for elements built from radical vectors, and the reflection formula $\rho_r(v)=v-2g(v,r)\mathfrak{Q}(r)^{-1}r$ is undefined because $\mathfrak{Q}(r)=0$. The orthogonal group of a degenerate form is still defined — it is the group of linear isometries of $m$ — but it is not generated by reflections, and the Clifford group does not surject onto it. Two failures are visible directly.
 
-The first is that on a degenerate space an isometry need not have determinant $\pm1$: the Gram matrix $M$ is singular, so the identity $\det(A)^{2}\det(M)=\det(M)$, which forces $\det(A)=\pm1$ when $M$ is invertible, imposes no constraint. For the form $q(x,y,z)=x^{2}$ on $F^{3}$ the isometry $\operatorname{diag}(1,2,1)$ preserves $q$ and has determinant $2$, so it is not a product of reflections, whose determinants are $(-1)^{k}$. It is not the signed inner conjugation of a product of non-isotropic vectors either, for the same reason, and it also fails to fix the radical pointwise, doubling the radical vector $(0,1,0)$: a reflection $\rho_u$ with $q(u)\neq0$ fixes $\mathrm{rad}(q)$ pointwise, because $g(r,u)=0$ for a radical vector $r$, and hence so does every product of reflections.
+The first is that on a degenerate space an isometry need not have determinant $\pm1$: the Gram matrix $M$ is singular, so the identity $\det(A)^{2}\det(M)=\det(M)$, which forces $\det(A)=\pm1$ when $M$ is invertible, imposes no constraint. For the form $\mathfrak{Q}(x,y,z)=x^{2}$ on $F^{3}$ the isometry $\operatorname{diag}(1,2,1)$ preserves $m$ and has determinant $2$, so it is not a product of reflections, whose determinants are $(-1)^{k}$. It is not the signed inner conjugation of a product of non-isotropic vectors either, for the same reason, and it also fails to fix the radical pointwise, doubling the radical vector $(0,1,0)$: a reflection $\rho_u$ with $\mathfrak{Q}(u)\neq0$ fixes $\mathrm{rad}(m)$ pointwise, because $g(r,u)=0$ for a radical vector $r$, and hence so does every product of reflections.
 
-The second is that the signed inner conjugation can collapse. For the zero form on a line, $V=Fe$ with $q=0$, the algebra is $F[e]/(e^{2})$ with unit group $\{a+be:a\neq0\}$, and a direct computation gives $\mathrm{Ad}^{\alpha}_x(e)=e$ for every unit $x$. So the Clifford group is the whole unit group, its image in $O(V,q)=F^{\times}$ is the trivial subgroup, and its kernel is far larger than the scalars. Both properties on which the exact sequences of the non-degenerate case rest — generation of the orthogonal group by reflections and the kernel $F^{\times}$ — fail here.
+The second is that the signed inner conjugation can collapse. For the zero form on a line, $V=Fe$ with $m=0$, the algebra is $F[e]/(e^{2})$ with unit group $\{a+be:a\neq0\}$, and a direct computation gives $\mathrm{Ad}^{\alpha}_x(e)=e$ for every unit $x$. So the Clifford group is the whole unit group, its image in $O(V,\mathfrak{Q})=F^{\times}$ is the trivial subgroup, and its kernel is far larger than the scalars. Both properties on which the exact sequences of the non-degenerate case rest — generation of the orthogonal group by reflections and the kernel $F^{\times}$ — fail here.
 
-There is nevertheless a reduced construction. Every isometry preserves the radical, since $g(\sigma v,\sigma w)=g(v,w)$ and $\mathrm{rad}(q)=V^{\perp}$; choosing a complement $V=V_0\perp\mathrm{rad}(q)$, which exists because $2$ is invertible, gives a surjection $O(V,q)\to O(V_0,q)$ onto the orthogonal group of the non-degenerate reduction, with kernel the normal subgroup of isometries acting trivially on $V/\mathrm{rad}(q)$. So $\mathrm{Pin}$ and $\mathrm{Spin}$ are defined for the non-degenerate quotient and do not see the radical. In the algebraic language of the earlier articles, the degenerate Clifford algebra decomposes as a graded tensor product of a non-degenerate Clifford algebra and an exterior algebra on the radical, and it is the first factor that carries the spin groups.
+There is nevertheless a reduced construction. Every isometry preserves the radical, since $g(\sigma v,\sigma w)=g(v,w)$ and $\mathrm{rad}(m)=V^{\perp}$; choosing a complement $V=V_0\perp\mathrm{rad}(m)$, which exists because $2$ is invertible, gives a surjection $O(V,\mathfrak{Q})\to O(V_0,q)$ onto the orthogonal group of the non-degenerate reduction, with kernel the normal subgroup of isometries acting trivially on $V/\mathrm{rad}(m)$. So $\mathrm{Pin}$ and $\mathrm{Spin}$ are defined for the non-degenerate quotient and do not see the radical. In the algebraic language of the earlier articles, the degenerate Clifford algebra decomposes as a graded tensor product of a non-degenerate Clifford algebra and an exterior algebra on the radical, and it is the first factor that carries the spin groups.
 
 ## Summary
 
-Inside the units of a Clifford algebra the Clifford group $\Gamma(V,q)$ consists of the units $x$ with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ under the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$. This is the inverse member of the family of *Two-Sided Operators on a Clifford Algebra*, whose general theory is there; the map $\mathrm{Ad}^{\alpha}:\Gamma\to O(V,q)$ is surjective with kernel the scalars, on a vector $u$ it reproduces the reflection $\rho_u(v)=v-2g(v,u)q(u)^{-1}u=-uvu^{-1}$, and on an even element it is conjugation, which is a rotation.
+Inside the units of a Clifford algebra the Clifford group $\Gamma(V,\mathfrak{Q})$ consists of the units $x$ with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ under the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$. This is the inverse member of the family of *Two-Sided Operators on a Clifford Algebra*, whose general theory is there; the map $\mathrm{Ad}^{\alpha}:\Gamma\to O(V,\mathfrak{Q})$ is surjective with kernel the scalars, on a vector $u$ it reproduces the reflection $\rho_u(v)=v-2g(v,u)\mathfrak{Q}(u)^{-1}u=-uvu^{-1}$, and on an even element it is conjugation, which is a rotation.
 
-The Clifford norm $N(x)=x x^{\natural}$ is multiplicative and scalar on $\Gamma$, and it restricts to $-q$ on vectors and to the square on scalars. The Pin group is the set of $x\in\Gamma$ with $N(x)=\pm1$, and the Spin group is its even part. The exact sequences
+The Clifford norm $N(x)=x x^{\natural}$ is multiplicative and scalar on $\Gamma$, and it restricts to $-m$ on vectors and to the square on scalars. The Pin group is the set of $x\in\Gamma$ with $N(x)=\pm1$, and the Spin group is its even part. The exact sequences
 
 $$
-1\to\{\pm1\}\to\mathrm{Pin}(V,q)\to O(V,q)\to1, \qquad 1\to\{\pm1\}\to\mathrm{Spin}(V,q)\to SO(V,q)\to1
+1\to\{\pm1\}\to\mathrm{Pin}(V,\mathfrak{Q})\to O(V,\mathfrak{Q})\to1, \qquad 1\to\{\pm1\}\to\mathrm{Spin}(V,\mathfrak{Q})\to SO(V,\mathfrak{Q})\to1
 $$
 
 exhibit the double covers over $\mathbb{R}$, and over any field satisfying the two hypotheses of the theorem, the two-to-one being the identification $x\sim-x$. Cartan–Dieudonné guarantees the surjectivity, expressing every isometry as a product of at most $n$ reflections and every rotation as an even product. Over $\mathbb{R}$ the definite groups are $\mathrm{Spin}(2)\cong U(1)$, $\mathrm{Spin}(3)\cong Sp(1)=SU(2)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$, $\mathrm{Spin}(5)\cong Sp(2)$ and $\mathrm{Spin}(6)\cong SU(4)$. For a degenerate form the construction collapses on the radical, and the spin groups exist only for the non-degenerate quotient.
@@ -181,20 +181,20 @@ exhibit the double covers over $\mathbb{R}$, and over any field satisfying the t
 
 | Symbol | Meaning |
 |---|---|
-| $q$, $g$ | Quadratic form and its polar bilinear form |
-| $\mathrm{Cl}(V,q)=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its parity grading |
+| $m$, $g$ | Quadratic form and its polar bilinear form |
+| $\mathrm{Cl}(V,\mathfrak{Q})=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its parity grading |
 | $x^{r}$ | Reversion anti-involution, $v^{r}=v$ on vectors |
 | $x^{\natural}=\alpha(x^{r})$ | Clifford conjugation, $v^{\natural}=-v$ on vectors |
 | $\alpha$ | Grade involution, $\alpha(x)=(-1)^k x$ on the degree-$k$ part |
-| $\rho_u(v)=v-2g(v,u)q(u)^{-1}u$ | Reflection in the hyperplane $u^{\perp}$ |
+| $\rho_u(v)=v-2g(v,u)\mathfrak{Q}(u)^{-1}u$ | Reflection in the hyperplane $u^{\perp}$ |
 | $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$ | Signed inner conjugation action, the inverse two-sided operator |
-| $\Gamma(V,q)$ | Clifford group, units with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ |
+| $\Gamma(V,\mathfrak{Q})$ | Clifford group, units with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ |
 | $N(x)=x x^{\natural}$ | Clifford norm |
-| $\mathrm{Pin}(V,q)$ | $\{x\in\Gamma : N(x)=\pm1\}$; double cover of $O(V,q)$ over $\mathbb{R}$ |
-| $\mathrm{Spin}(V,q)$ | $\mathrm{Pin}\cap\mathrm{Cl}^0$; double cover of $SO(V,q)$ |
-| $\mathrm{Spin}(n)$, $\mathrm{Spin}(p,q)$ | Definite and signature cases |
-| $O(V,q)$, $SO(V,q)$ | Orthogonal group and special orthogonal group |
-| $\mathrm{rad}(q)$ | Radical of $q$ |
+| $\mathrm{Pin}(V,\mathfrak{Q})$ | $\{x\in\Gamma : N(x)=\pm1\}$; double cover of $O(V,\mathfrak{Q})$ over $\mathbb{R}$ |
+| $\mathrm{Spin}(V,\mathfrak{Q})$ | $\mathrm{Pin}\cap\mathrm{Cl}^0$; double cover of $SO(V,\mathfrak{Q})$ |
+| $\mathrm{Spin}(n)$, $\mathrm{Spin}(n,m)$ | Definite and signature cases |
+| $O(V,\mathfrak{Q})$, $SO(V,\mathfrak{Q})$ | Orthogonal group and special orthogonal group |
+| $\mathrm{rad}(m)$ | Radical of $m$ |
 
 
 

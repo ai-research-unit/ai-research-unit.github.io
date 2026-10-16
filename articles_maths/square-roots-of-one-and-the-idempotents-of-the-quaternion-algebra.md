@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the general plain bilinear product $\tilde p\tilde q$ of *Introduction to the Quaternion Algebra*, the multiplication of the algebra and the operation named the algebra in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. It is the only one of the six products of the space that is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.
+The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde p\tilde q$ of *Introduction to the Quaternion Algebra*, the multiplication of the quaternion algebra. It is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+e_0$, the elements $\tilde\xi\in\mathbb{H}$ with
 
 $$
-\tilde\xi^2=e_0 .
+\tilde\xi^2=e_0.
 $$
 
 The second is the idempotents of the algebra, the elements $\tilde\pi$ with $\tilde\pi^2=\tilde\pi$. The two subjects are one subject, because the **halving map**
@@ -22,15 +22,15 @@ is a bijection from the roots of $+e_0$ onto the idempotents, with inverse $\til
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\xi^2=\tilde q$, which is *Square Roots of a General Element in the Quaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Quaternion Algebra*; or the idempotent theory of the complexified block, which is *Square Roots of One and the Idempotents of the Quaternion Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-e_0$ are read; it is a remark, it is used nowhere, and it opens nothing.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$ or $\tilde p$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$ or $\tilde p$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots and idempotents of their own.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Algebras: A General Introduction*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the quaternion product, the multiplication of the algebra.
 
 ## The Roots of One
 
 **The roots of $+e_0$ are exactly the two central scalars $\pm e_0$; there are no others, and the class is the two-point set.**
 
-A **root of $+e_0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=e_0$, the square being the one of the general plain bilinear product.
+A **root of $+e_0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=e_0$, the square being the one of the quaternion product.
 
 ### The Reduction
 
@@ -43,7 +43,7 @@ $$
 The square of an element of the algebra closes in two terms, one central and one along the vector part, because the square of a pure element is central:
 
 $$
-\vec\xi^2=-|\vec\xi|^2e_0,\qquad \tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q .
+\vec\xi^2=-|\vec\xi|^2e_0,\qquad \tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q.
 $$
 
 **Proposition (the central reduction).** For $\tilde\xi=\xi_0e_0+\vec\xi$ and $\lambda\in\mathbb{R}$,
@@ -52,7 +52,7 @@ $$
 \tilde\xi^2=\lambda e_0\qquad\Longleftrightarrow\qquad
 \begin{cases}
 2\xi_0\vec\xi=0,\\[2pt]
-\xi_0^2-|\vec\xi|^2=\lambda .
+\xi_0^2-|\vec\xi|^2=\lambda.
 \end{cases}
 $$
 
@@ -65,7 +65,7 @@ Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ 
 In the scalar case $\tilde\xi=\xi_0e_0$ and the scalar equation reads $\xi_0^2=1$, whose roots are the two central elements
 
 $$
-\tilde\xi=+e_0,\qquad \tilde\xi=-e_0 .
+\tilde\xi=+e_0,\qquad \tilde\xi=-e_0.
 $$
 
 They are the only roots of $+e_0$ with non-vanishing scalar part and the only ones in the centre $\mathbb{R}e_0$.
@@ -94,7 +94,7 @@ the class being the two-point set $\{+e_0,-e_0\}$.
 
 ### Verification
 
-The two elements are roots, $(\pm e_0)^2=e_0$, and nothing else is, because the reduction yields only the two branches and the pure branch is empty. The class is the **central part of the level set** $\{N=1\}$: the level set is the elements of norm one, and a central element is a real scalar $se_0$ of norm $N(se_0)=s^2$, so the central elements of the level set are $\pm e_0$.
+The two elements are roots, $(\pm e_0)^2=e_0$, and nothing else is, because the reduction yields only the two branches and the pure branch is empty. The class is the **central part of the level set** $\{N=1\}$: the level set is the elements of norm one, and a central element is a real scalar $se_0$ of norm $\langle se_0\rangle_{\natural}=s^2$, so the central elements of the level set are $\pm e_0$.
 
 ### The Roots of One Are Units
 
@@ -106,23 +106,23 @@ $$
 
 and a unit is not a zero divisor. The single element common to the roots of $+e_0$ and the idempotents is $e_0$: an element that is both a root of $+e_0$ and an idempotent satisfies $\tilde\xi^2=e_0$ and $\tilde\xi^2=\tilde\xi$, hence $\tilde\xi=e_0$. The two classes are different sets, and the halving map of §*The Idempotents* is the bijection between them.
 
-**The roots of minus one.** The roots of $-e_0$ are not the image of the roots of $+e_0$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a **central element of square $-e_0$**, an element $i$ of the centre with $i^2=-e_0$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_0$ are read off the roots of $+e_0$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_0$ and no central element has square $-e_0$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §*The Reduction* reads $-\lvert\vec\xi\rvert^2=-1$ on the pure branch, that is $\lvert\vec\xi\rvert^2=1$, so the roots of $-e_0$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $N(\vec\xi)=|\vec\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_0$ alone, and the roots of $-e_0$ are quoted here and used nowhere in this article.
+**The roots of minus one.** The roots of $-e_0$ are not the image of the roots of $+e_0$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a **central element of square $-e_0$**, an element $i$ of the centre with $i^2=-e_0$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_0$ are read off the roots of $+e_0$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_0$ and no central element has square $-e_0$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §*The Reduction* reads $-\lvert\vec\xi\rvert^2=-1$ on the pure branch, that is $\lvert\vec\xi\rvert^2=1$, so the roots of $-e_0$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $\langle \vec\xi\rangle_{\natural}=|\vec\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_0$ alone, and the roots of $-e_0$ are quoted here and used nowhere in this article.
 
 ## The Idempotents
 
 **The idempotents of the algebra are exactly the origin and the unit, $\tilde\pi\in\{0,e_0\}$; the class is the two-point set, and there is no non-trivial idempotent.**
 
-The **idempotents** of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the general plain bilinear product. They are the algebraic form of a projection, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_0$, the complementary pairs, and a degenerate Peirce decomposition.
+The **idempotents** of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the quaternion product. They are the algebraic form of a projection, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_0$, the complementary pairs, and a degenerate Peirce decomposition.
 
 ### The Definition
 
 **Definition.** An element $\tilde\pi$ of $\mathbb{H}$ is an **idempotent of the quaternion algebra** when
 
 $$
-\tilde\pi^2=\tilde\pi .
+\tilde\pi^2=\tilde\pi.
 $$
 
-The origin is an idempotent, and so is the unit $e_0$; the two are the **trivial idempotents**. The equation names a product, and the notion is relative to it: throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and another product is named where it is meant.
+The origin is an idempotent, and so is the unit $e_0$; the two are the **trivial idempotents**. The equation names a product, and the notion is relative to it: throughout this article the product is the quaternion product, the multiplication of the algebra, and another product is named where it is meant.
 
 Idempotents encode direct summands of the regular module,
 
@@ -142,7 +142,7 @@ $$
 
 There is no non-trivial idempotent.
 
-*Proof.* Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_0)=0$. The plain product is a **division rule**: it has the two-sided unit $e_0$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/N(\tilde\pi)$ (*Norm and Invertibility in the Quaternion Algebra*). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_0=0$. The same conclusion in coordinates reads the plain square $\tilde\pi^2=(\pi_0^2-|\vec\pi|^2)e_0+2\pi_0\vec\pi$ and the pair $2\pi_0\vec\pi=\vec\pi$, $\pi_0^2-|\vec\pi|^2=\pi_0$: the first forces $(2\pi_0-1)\vec\pi=0$, and $\vec\pi\neq0$ with $\pi_0=\tfrac12$ would give $|\vec\pi|^2=-\tfrac14$, which has no real solution, so $\vec\pi=0$ and $\pi_0\in\{0,1\}$. **The two cases exhaust the equation and no non-trivial idempotent occurs.**
+*Proof.* Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_0)=0$. The quaternion product is a **division rule**: it has the two-sided unit $e_0$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/\langle\tilde\pi\rangle_{\natural}$ (*Norm and Invertibility in the Quaternion Algebra*). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_0=0$. The same conclusion in coordinates reads the square $\tilde\pi^2=(\pi_0^2-|\vec\pi|^2)e_0+2\pi_0\vec\pi$ and the pair $2\pi_0\vec\pi=\vec\pi$, $\pi_0^2-|\vec\pi|^2=\pi_0$: the first forces $(2\pi_0-1)\vec\pi=0$, and $\vec\pi\neq0$ with $\pi_0=\tfrac12$ would give $|\vec\pi|^2=-\tfrac14$, which has no real solution, so $\vec\pi=0$ and $\pi_0\in\{0,1\}$. **The two cases exhaust the equation and no non-trivial idempotent occurs.**
 
 **Remark (why the class collapses over $\mathbb{R}$).** The standard construction of a non-trivial idempotent is the element $\tfrac12(e_0+\tilde\xi)$ with $\tilde\xi$ a **non-central root of $+e_0$**: the square $\tfrac14(e_0+2\tilde\xi+\tilde\xi^2)$ equals $\tfrac12(e_0+\tilde\xi)$ exactly when $\tilde\xi^2=e_0$. Over $\mathbb{R}$ the roots of $+e_0$ are the two central scalars $\pm e_0$, so $\tfrac12(e_0+\tilde\xi)$ returns only $e_0$ and $0$; a non-central root of $+e_0$ would need a pure element of square $+e_0$, and the pure square is the non-positive $-|\vec\xi|^2e_0$. In the complexified block the roots of $+e_0$ include non-central elements, the construction closes, and a whole family of idempotents lies between the two trivial ones; that counterpart is *Square Roots of One and the Idempotents of the Quaternion Algebra*.
 
@@ -172,7 +172,7 @@ $$
 \mathbb{H}=0\cdot\mathbb{H}\oplus(e_0-0)\mathbb{H}=\{0\}\oplus\mathbb{H}.
 $$
 
-There is no proper nonzero direct summand of the regular module in the plain product.
+There is no proper nonzero direct summand of the regular module in the quaternion product.
 
 ### The Peirce Decomposition
 
@@ -219,7 +219,7 @@ so the two-point idempotent class is the image of the two-point root class, and 
 **Proposition (the complementary idempotent).** If $\tilde\pi$ is an idempotent of the algebra, then so is $e_0-\tilde\pi$, and the two are **orthogonal**:
 
 $$
-(e_0-\tilde\pi)^2=e_0-\tilde\pi,\qquad \tilde\pi(e_0-\tilde\pi)=0 .
+(e_0-\tilde\pi)^2=e_0-\tilde\pi,\qquad \tilde\pi(e_0-\tilde\pi)=0.
 $$
 
 *Proof.* $(e_0-\tilde\pi)^2=e_0-2\tilde\pi+\tilde\pi^2=e_0-\tilde\pi$, using $\tilde\pi^2=\tilde\pi$; and $\tilde\pi(e_0-\tilde\pi)=\tilde\pi-\tilde\pi^2=0$.
@@ -236,11 +236,11 @@ A non-trivial idempotent would be a zero divisor, since $\tilde\pi(e_0-\tilde\pi
 
 ### The Reading on the Centre and the Vector Subspace
 
-Both idempotents are **central**: $0$ and $e_0$ lie in the centre $\mathbb{R}e_0$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\vec u$ having square $\vec u^2=-|\vec u|^2e_0$, which equals $\vec u$ only for $\vec u=0$. **Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone**, the origin belonging to both.
+Both idempotents are **central**: $0$ and $e_0$ lie in the centre $\mathbb{R}e_0$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\vec q_a$ having square $\vec q_a^2=-|\vec q_a|^2e_0$, which equals $\vec q_a$ only for $\vec q_a=0$. **Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone**, the origin belonging to both.
 
 ## Summary
 
-The general plain bilinear product is the multiplication of the quaternion algebra, and the roots of $+e_0$ in that product are, by the reduction $\tilde\xi^2=\lambda e_0\Longleftrightarrow\{2\xi_0\vec\xi=0,\ \xi_0^2-|\vec\xi|^2=\lambda\}$, the two central scalars $\pm e_0$ alone: the pure branch needs $|\vec\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_0^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_0$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.
+The quaternion product is the multiplication of the quaternion algebra, and the roots of $+e_0$ in that product are, by the reduction $\tilde\xi^2=\lambda e_0\Longleftrightarrow\{2\xi_0\vec\xi=0,\ \xi_0^2-|\vec\xi|^2=\lambda\}$, the two central scalars $\pm e_0$ alone: the pure branch needs $|\vec\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_0^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_0$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.
 
 The roots of $-e_0$ are read from the same reduction at $\lambda=-1$: they are the elements of the vector subspace with $N=1$, a quadric of real dimension two. The sign cannot be flipped, the centre $\mathbb{R}e_0$ having no element of square $-e_0$, so the roots of $-e_0$ are not the image of the roots of $+e_0$; the paragraph is a remark, and the roots of $-e_0$ index no idempotent.
 
@@ -253,7 +253,7 @@ The idempotents are the trivial elements $0$ and $e_0$ and nothing else, the equ
 | $\mathbb{H}$ | Quaternion algebra, real dimension four |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $\tilde q=q_0e_0+\vec q$ | General element, scalar part $q_0$, vector part $\vec q$ |
-| $N(\tilde q)=q_0^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
+| $\langle\tilde q\rangle_{\natural}=q_0^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
 | $\mathbb{R}e_0$, $\mathrm{Vect}(\mathbb{H})$ | Centre and vector subspace |
 | $\tilde\xi$ | A root of a central value; of $+e_0$ through the body, of $-e_0$ in the closing remark |
 | $\tilde\xi=\xi_0e_0+\vec\xi$ | Scalar and vector parts of a root |
@@ -266,14 +266,13 @@ The idempotents are the trivial elements $0$ and $e_0$ and nothing else, the equ
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md`), §*The Element Vocabulary*, for the general definition of a root of a central value and of an idempotent; §*The Criterion for an Empty Class*, for the criterion that leaves the idempotent class the two-point set $\{0,e_0\}$.
 - *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), for the product, the unit and the square.
 - *Unital Algebras* (`articles_maths/unital-algebras.md`), §*Idempotents and the Peirce Decomposition*, for the orthogonal, complete and primitive families and the four Peirce spaces of an associative unital algebra.
 - *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the division property on which the classification rests.
 - *Zero Divisors of the Quaternion Algebra* (`articles_maths/zero-divisors-of-the-quaternion-algebra.md`), for the empty zero-divisor set and the two families of the complexified block.
 - *Square Roots of Zero and the Nilpotents of the Quaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.md`), for the roots of $0$, the square-zero class and the off-diagonal Peirce units.
 - *Square Roots of a General Element in the Quaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md`), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $+e_0$ here are one case.
-- *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), the complexified counterpart, for the idempotent family, the bijection with the roots of one and the minimal left ideals.
+- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), the complexified counterpart, for the idempotent family, the bijection with the roots of one and the minimal left ideals.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the imaginary units and the roots of $-1$.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the square of a quaternion and its classes of element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the structure of a Clifford algebra and its idempotents.

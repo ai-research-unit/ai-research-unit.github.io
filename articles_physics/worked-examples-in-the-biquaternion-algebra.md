@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Idempotents of the General Plain Algebra*; here they are only exhibited. The **physical interpretation** is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
+This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Square Roots of One and the Idempotents of the Biquaternion Algebra*; here they are only exhibited. The **physical interpretation** is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
 
 **Notation.** A biquaternion is written in developed form
 $$
@@ -76,22 +76,22 @@ Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q
 
 The standard idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ and $\tilde\Pi_++\tilde\Pi_-=e_0$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ into two minimal left ideals of real dimension $4$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-**Physical interpretation.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the splitting of the algebra into the two chiralities (*Modules over the General Plain Algebra of Biquaternions*).
+**Physical interpretation.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the splitting of the algebra into the two chiralities (*Modules over the Biquaternion Algebra*).
 
 ## The Norm and the Inverse of the Concrete Element
 
-The norm and the inverse are the two quantities every physics calculation of the framework needs, and they are worth exhibiting on the fixed element. With $N(\tilde{Q})=\sum_\mu Q_\mu^2$,
+The norm and the inverse are the two quantities every physics calculation of the framework needs, and they are worth exhibiting on the fixed element. With $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$,
 
 $$
-N(\tilde{Q})=(2+i)^2+(1-i)^2+3^2+i^2=(3+4i)+(-2i)+9-1=11+2i ,
+\langle\tilde{Q}\rangle_{\natural}=(2+i)^2+(1-i)^2+3^2+i^2=(3+4i)+(-2i)+9-1=11+2i ,
 $$
 
 which is nonzero, so $\tilde{Q}$ is a unit, with inverse
 $$
-\tilde{Q}^{-1}=\frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}=\frac{(2+i)e_0-(1-i)e_1-3e_2-ie_3}{11+2i}.
+\tilde{Q}^{-1}=\frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}}=\frac{(2+i)e_0-(1-i)e_1-3e_2-ie_3}{11+2i}.
 $$
 
-The element is neither purely material nor purely informational: its norm is complex with both parts nonzero, so it does not lie on either real sector and is not null. The material part $\tilde{Q}_-$ of the Hermitian decomposition has norm $N(\tilde{Q}_-)=\sum_\mu(Q_-)_\mu^2=(i)^2+1+9=i^2+10=9$, a spacelike interval in the $ict$ coordinate; the informational part has norm $N(\tilde{Q}_+)=4+(-i)^2+(i)^2=4-1-1=2$.
+The element is neither purely material nor purely informational: its norm is complex with both parts nonzero, so it does not lie on either real sector and is not null. The material part $\tilde{Q}_-$ of the Hermitian decomposition has norm $\langle\tilde{Q}_-\rangle_{\natural}=\sum_\mu(Q_-)_\mu^2=(i)^2+1+9=i^2+10=9$, a spacelike interval in the $ict$ coordinate; the informational part has norm $\langle\tilde{Q}_+\rangle_{\natural}=4+(-i)^2+(i)^2=4-1-1=2$.
 
 **Physical interpretation.** The norm $11+2i$ measures the element; its vanishing would be the light cone and its being real would be membership of a real sector. The example shows the generic case: a unit with a complex norm, whose material and informational halves have separately real intervals.
 
@@ -101,9 +101,9 @@ The element is neither purely material nor purely informational: its norm is com
 $$
 \tilde A\tilde B=e_0-(ie_3)^2=e_0-1=0,\qquad \tilde A\neq0,\qquad \tilde B\neq0 .
 $$
-Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $N(\tilde A)=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2\tilde A\neq0$.
+Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $\langle\tilde A\rangle_{\natural}=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2\tilde A\neq0$.
 
-**Physical interpretation.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Zero Divisors of the General Plain Algebra*).
+**Physical interpretation.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Zero Divisors of the Biquaternion Algebra*).
 
 ## Physical Readings
 
@@ -111,7 +111,7 @@ The computations read as the framework's calibration set. The multiplication tab
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_+,\tilde\Pi_-$ satisfy $\tilde\Pi_+\tilde\Pi_-=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $\langle\tilde{Q}\rangle_{\natural}=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_+,\tilde\Pi_-$ satisfy $\tilde\Pi_+\tilde\Pi_-=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.
 
 ## Summary of Notation
 
@@ -124,8 +124,8 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}={}^{\natural}\circ\bar{\cdot}$, ${}^{\flat}=-{}^{*}$ | The four conjugations |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | The remarkable subspaces |
 | $\tilde\Pi_+=\tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Orthogonal primitive idempotents; chiral projectors |
-| $N(\tilde{Q})=11+2i$ | Norm of the fixed element; nonzero, so a unit |
-| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse of the fixed element |
+| $\langle\tilde{Q}\rangle_{\natural}=11+2i$ | Norm of the fixed element; nonzero, so a unit |
+| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse of the fixed element |
 | $\tilde A=e_0+ie_3,\ \tilde B=e_0-ie_3$ | Null zero-divisor pair, $\tilde A\tilde B=0$ |
 
 ## Further Reading

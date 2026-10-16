@@ -135,7 +135,7 @@ families are those of *Fueter Theory*, and imposing the additional equations res
 ## Fueter's Theorem in the Hermitian Setting
 
 **Theorem (Fueter; quoted).** Let $f=u+iv$ be holomorphic on a domain of $\mathbb{C}$, and let
-$\tilde f(q)=u(q_0,r)+(\vec q/r)v(q_0,r)$ be its axial extension. Then $F=\Delta\tilde f$ is left
+$f^{\mathrm{ax}}(q)=u(q_0,r)+(\vec q/r)v(q_0,r)$ be its axial extension. Then $F=\Deltaf^{\mathrm{ax}}$ is left
 and right regular for the Fueter operator, the construction shifting the homogeneity by two and
 annihilating the constant and the identity.
 
@@ -151,7 +151,7 @@ extension followed by the Hermitian projection.
 
 *Proof.* The Fueter construction produces regular functions; the Hermitian monogenic axial functions
 are those regular axial functions that also satisfy the Hermitian axial system; the projection onto
-them is the operator of the Hermitian theory applied to $F=\Delta\tilde f$, and it commutes with the
+them is the operator of the Hermitian theory applied to $F=\Deltaf^{\mathrm{ax}}$, and it commutes with the
 axial reduction because both are rotation-invariant. The statement is the Hermitian form of the
 classical construction; the explicit basis of the image is obtained by applying the Hermitian
 Fischer decomposition of *The Hermitian Dirac Operator and the Fischer Decomposition* to the Fueter
@@ -197,7 +197,7 @@ $\partial_0$, whose square is $+1$. The axial structure survives: the axial func
 $f=A(q_0,r)+\vec qB(q_0,r)$ are regular exactly when $A_0=3B+rB_r$, $B_0=-A_r/r$, and on such
 functions the four Hermitian Dirac operators reduce to a system of ordinary differential equations
 in the two axial variables, whose simultaneous solutions are the axial Hermitian monogenic
-functions, a proper subclass of the axial regular ones. **Fueter's theorem**, $F=\Delta\tilde f$ for
+functions, a proper subclass of the axial regular ones. **Fueter's theorem**, $F=\Deltaf^{\mathrm{ax}}$ for
 the axial extension of a holomorphic function, is quoted from the ordinary theory, and its Hermitian
 refinement is the same construction followed by the Hermitian projection; what the refinement
 changes is the target class, not the construction. The spherical structure — the Fueter variables,
@@ -218,7 +218,7 @@ are Part V's.
 | $q=q_0+\vec q$, $r=|\vec q|$ | Quaternionic and axial variables |
 | $f=A(q_0,r)+\vec qB(q_0,r)$ | Axial form of a function |
 | $A_0=3B+rB_r$, $B_0=-A_r/r$ | Reduced Cauchy–Riemann system |
-| $\tilde f=u+\frac{\vec q}{r}v$, $F=\Delta\tilde f$ | Fueter construction; Hermitian refinement adds the Hermitian projection |
+| $f^{\mathrm{ax}}=u+\frac{\vec q}{r}v$, $F=\Deltaf^{\mathrm{ax}}$ | Fueter construction; Hermitian refinement adds the Hermitian projection |
 | $z_i=q_0e_i-q_i$, $V_\lambda$ | Fueter variables and Fueter polynomials |
 | $SU(2)$, $U(2)$ | Axial symmetry group; Hermitian symmetry group of the split |
 

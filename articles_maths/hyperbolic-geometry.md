@@ -242,7 +242,7 @@ $$
 **Theorem (Lobachevsky).** The angle of parallelism satisfies
 
 $$
-\tan\frac{\Pi(d)}{2} = e^{-d}, \qquad \text{equivalently} \qquad \cos\Pi(d) = \tanh d .
+\tan\frac{\Pi(d)}{2} = \exp(-d), \qquad \text{equivalently} \qquad \cos\Pi(d) = \tanh d .
 $$
 
 **Proof sketch.** In the upper half-plane place $\ell$ as the imaginary axis and $P = (t, u)$; the asymptotic rays from $P$ are the geodesics through $P$ with endpoint $0$ and $\infty$, and the angle between them is computed from the hyperbolic right triangle with vertices $0$, $P$ and the foot; the right-triangle formulae give the displayed relation.
@@ -303,7 +303,7 @@ Hyperbolic $n$-space is the complete simply connected Riemannian manifold of con
 
 The hyperboloid of radius $R$ is parametrised by its **Weierstrass coordinates** $X_0 = R\cosh(\rho/R)$, $X_i = R\sinh(\rho/R)l_i$, in which the metric reads $d\rho^2 + R^2\sinh^2(\rho/R)\,d\Omega_{n-1}^2$ and the curvature appears as the sign of the $\rho^4/3R^2$ correction to the Euclidean metric of a small geodesic ball; the spherical counterpart follows by $R \mapsto iR$, the hyperbolic functions becoming circular. The Beltrami–Klein ball carries the **Cayley–Klein metric**, whose distance is the cross-ratio of the two points with the two boundary points of their chord, equivalently $\cosh(d/R) = (R^2 - p\cdot q)/\sqrt{(R^2-|p|^2)(R^2-|q|^2)}$, and this is the hyperbolic distance because it equals $\langle x,y\rangle_{1,n}/R^2$ for the two points of the hyperboloid that project to $p$ and $q$.
 
-The angles of a hyperbolic triangle sum to $\pi$ minus its area, the area is the defect, and the trigonometric laws are the spherical laws with the circular functions replaced by the hyperbolic ones: $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$, and $\sinh a/\sin A$ is constant. Small triangles recover Euclidean trigonometry, the deviation being measured by the area. The angle of parallelism satisfies $\tan(\Pi(d)/2) = e^{-d}$, decaying exponentially, so through a point outside a line there are infinitely many parallels, two asymptotic rays and an open set of directions between them.
+The angles of a hyperbolic triangle sum to $\pi$ minus its area, the area is the defect, and the trigonometric laws are the spherical laws with the circular functions replaced by the hyperbolic ones: $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$, and $\sinh a/\sin A$ is constant. Small triangles recover Euclidean trigonometry, the deviation being measured by the area. The angle of parallelism satisfies $\tan(\Pi(d)/2) = \exp(-d)$, decaying exponentially, so through a point outside a line there are infinitely many parallels, two asymptotic rays and an open set of directions between them.
 
 The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension two and $PSL(2, \mathbb{C})$ in dimension three, acting on the half-space by Möbius transformations and their Poincaré extension; the elements are classified as elliptic, parabolic and hyperbolic by the trace, corresponding to the sign of the quadratic form of the algebra $\mathbb{D}$ and to the three kinds of two-dimensional rotation. The discrete subgroups — the Fuchsian and Kleinian groups — produce complete hyperbolic manifolds as quotients, and the hyperbolic area of a compact surface is $4\pi(g-1)$. Mostow rigidity makes the hyperbolic structure of a finite-volume manifold of dimension at least three unique, while in dimension two the structures deform, and that deformation is the Teichmüller theory of the sibling articles. Hyperbolic geometry completes the trichotomy of the model geometries and is the geometry in which the parallel postulate fails in the direction of infinitely many parallels.
 
@@ -322,7 +322,7 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 | $\Delta = \pi - (A+B+C)$ | Hyperbolic area via the defect |
 | $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$ | Hyperbolic law of cosines |
 | $\sinh a/\sin A = \sinh b/\sin B = \sinh c/\sin C$ | Hyperbolic law of sines |
-| $\Pi(d)$, $\tan(\Pi(d)/2) = e^{-d}$ | Angle of parallelism |
+| $\Pi(d)$, $\tan(\Pi(d)/2) = \exp(-d)$ | Angle of parallelism |
 | $PSL(2,\mathbb{R})$, $PSL(2,\mathbb{C})$ | Orientation-preserving isometry groups of $\mathbb{H}^2$ and $\mathbb{H}^3$ |
 | Elliptic, parabolic, hyperbolic element | $|\operatorname{tr}| < 2$, $=2$, $>2$; rotation, limit rotation, translation |
 | Fuchsian, Kleinian group | Discrete subgroup of $PSL(2,\mathbb{R})$, of $PSL(2,\mathbb{C})$ |

@@ -61,7 +61,7 @@ The method of steps is not merely a proof device: it is the algorithm by which t
 
 *Proof.* Each step is an ordinary initial-value problem, to which the maximal-interval theorem for the ordinary theory applies; the maximal interval of the delay equation is the union of the maximal intervals of the steps.
 
-**Example (logistic delay).** The equation $y'(t) = y(t)\bigl(1 - y(t-1)\bigr)$ with history $\phi \equiv \tfrac12$ is solved on $[0,1]$ by $y' = y(1-\tfrac12)$, that is $y(t) = \tfrac12 e^{t/2}$; the second step solves a logistic equation with a known forcing term, and the iteration continues. The solution remains defined for all time but its large-time behaviour depends on the lag, as the linear analysis below explains.
+**Example (logistic delay).** The equation $y'(t) = y(t)\bigl(1 - y(t-1)\bigr)$ with history $\phi \equiv \tfrac12$ is solved on $[0,1]$ by $y' = y(1-\tfrac12)$, that is $y(t) = \tfrac12 \exp(t/2)$; the second step solves a logistic equation with a known forcing term, and the iteration continues. The solution remains defined for all time but its large-time behaviour depends on the lag, as the linear analysis below explains.
 
 ## Linear Delay Equations
 
@@ -75,22 +75,22 @@ $$
 
 with $A, B \in B(X)$ bounded operators, and it is **homogeneous**; the general linear equation has an additional term $b(t)$.
 
-**Theorem (exponential solutions).** The scalar equation $y'(t) = ay(t) + by(t-r)$ has a solution $y(t) = e^{\lambda t}$ if and only if
+**Theorem (exponential solutions).** The scalar equation $y'(t) = ay(t) + by(t-r)$ has a solution $y(t) = \exp(\lambda t)$ if and only if
 
 $$
-\lambda = a + b\,e^{-\lambda r} ,
+\lambda = a + b\,\exp(-\lambda r) ,
 $$
 
-the **characteristic equation**. This transcendental equation has countably many roots $\lambda_n$, none of them with a finite accumulation point in $\mathbb{C}$, and for each root $e^{\lambda t}$ is a solution; when a root has multiplicity $m$, the functions $t^{k}e^{\lambda t}$, $0 \le k < m$, are also solutions.
+the **characteristic equation**. This transcendental equation has countably many roots $\lambda_n$, none of them with a finite accumulation point in $\mathbb{C}$, and for each root $\exp(\lambda t)$ is a solution; when a root has multiplicity $m$, the functions $t^{k}\exp(\lambda t)$, $0 \le k < m$, are also solutions.
 
-*Proof.* Substitution gives $\lambda e^{\lambda t} = (a + be^{-\lambda r})e^{\lambda t}$; the equation in $\lambda$ is transcendental and therefore has countably many roots. If $\lambda$ has multiplicity $m$ as a root of $\lambda - a - be^{-\lambda r}$, differentiation of the identity $m-1$ times with respect to $\lambda$ shows that $t^k e^{\lambda t}$ solves the equation for $k < m$.
+*Proof.* Substitution gives $\lambda \exp(\lambda t) = (a + b\exp(-\lambda r))\exp(\lambda t)$; the equation in $\lambda$ is transcendental and therefore has countably many roots. If $\lambda$ has multiplicity $m$ as a root of $\lambda - a - b\exp(-\lambda r)$, differentiation of the identity $m-1$ times with respect to $\lambda$ shows that $t^k \exp(\lambda t)$ solves the equation for $k < m$.
 
 The contrast with the ordinary theory is exact: a scalar linear ordinary equation has $n$ roots and an $n$-dimensional solution space, whereas a scalar linear delay equation has infinitely many roots and an infinite-dimensional solution space, because its initial datum is a function. The **spectrum** of the solution operator is the set of characteristic roots, and it is discrete but infinite.
 
-**Example (the pure delay).** For $y'(t) = -a\,y(t-r)$ with $a > 0$ the characteristic equation is $\lambda = -ae^{-\lambda r}$. Because $|\lambda| = a e^{-r\operatorname{Re}\lambda}$, every root satisfies $\operatorname{Re}\lambda \le a$, and the roots with $\operatorname{Re}\lambda\ge0$ satisfy $|\lambda|\le a$; throughout the spectrum one has $|\lambda| = ae^{-r\operatorname{Re}\lambda}\le ae^{ar}$, so the roots lie in the disc $\{|\lambda|\le ae^{ar}\}$, and the number of roots in any half-plane $\{\operatorname{Re}\lambda > \gamma\}$ is finite. The roots depend continuously on $a$ and $r$, and a root crosses the imaginary axis precisely when
+**Example (the pure delay).** For $y'(t) = -a\,y(t-r)$ with $a > 0$ the characteristic equation is $\lambda = -a\exp(-\lambda r)$. Because $|\lambda| = a \exp(-r\operatorname{Re}\lambda)$, every root satisfies $\operatorname{Re}\lambda \le a$, and the roots with $\operatorname{Re}\lambda\ge0$ satisfy $|\lambda|\le a$; throughout the spectrum one has $|\lambda| = a\exp(-r\operatorname{Re}\lambda)\le a\exp(ar)$, so the roots lie in the disc $\{|\lambda|\le a\exp(ar)\}$, and the number of roots in any half-plane $\{\operatorname{Re}\lambda > \gamma\}$ is finite. The roots depend continuously on $a$ and $r$, and a root crosses the imaginary axis precisely when
 
 $$
-i\omega = -a e^{-i\omega r},
+i\omega = -a \exp(-i\omega r),
 $$
 
 which forces $a = \omega$ by taking moduli and $\omega r = \pi/2 + 2k\pi$ by taking arguments. Hence the **stability condition** is $ar < \pi/2$: all characteristic roots have strictly negative real part, and every solution decays, exactly when $ar < \pi/2$. At $ar = \pi/2$ there is a pair of purely imaginary roots $\pm i\omega$ with $\omega = a$, and for $ar > \pi/2$ a pair has crossed to the right half-plane and the zero solution is unstable.
@@ -116,7 +116,7 @@ $$
 where $K$ is the **fundamental solution**: the solution of the homogeneous equation with the history $K(\theta) = 0$ for $\theta<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,
 
 $$
-K(t) = \frac{1}{2\pi i}\int_{\Gamma} \frac{e^{zt}}{z - a - be^{-zr}}\,dz ,
+K(t) = \frac{1}{2\pi i}\int_{\Gamma} \frac{\exp(zt)}{z - a - b\exp(-zr)}\,dz ,
 $$
 
 the contour $\Gamma$ enclosing all characteristic roots to the right of a vertical line, the integral being an inverse Laplace transform.
@@ -126,7 +126,7 @@ the contour $\Gamma$ enclosing all characteristic roots to the right of a vertic
 **Theorem (continuous dependence).** With $A, B$ bounded and $\|A\| + \|B\| \le M$, the solution of the homogeneous equation satisfies
 
 $$
-\|y_t\|_\infty \le \|\phi\|_\infty\, e^{Mt} \qquad (t \ge 0).
+\|y_t\|_\infty \le \|\phi\|_\infty\, \exp(Mt) \qquad (t \ge 0).
 $$
 
 *Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $u(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $u(t) \le \|\phi\|_\infty + M\int_\sigma^t u(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
@@ -135,17 +135,17 @@ $$
 
 ### Asymptotic Stability
 
-**Definition.** The zero solution of a linear delay equation is **exponentially stable** if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C e^{-\gamma t}\|\phi\|_\infty$ for every history $\phi$, and **asymptotically stable** if $y_t \to 0$ for every $\phi$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is **stable** if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\phi\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and **asymptotically stable** if in addition $y_t \to 0$.
+**Definition.** The zero solution of a linear delay equation is **exponentially stable** if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C \exp(-\gamma t)\|\phi\|_\infty$ for every history $\phi$, and **asymptotically stable** if $y_t \to 0$ for every $\phi$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is **stable** if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\phi\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and **asymptotically stable** if in addition $y_t \to 0$.
 
 **Theorem (spectral criterion).** The linear equation $y'(t) = Ay(t) + By(t-r)$ is exponentially stable if and only if every characteristic root $\lambda$ of
 
 $$
-\det\bigl(\lambda I - A - Be^{-\lambda r}\bigr) = 0
+\det\bigl(\lambda I - A - B\exp(-\lambda r)\bigr) = 0
 $$
 
 satisfies $\operatorname{Re}\lambda \le -\gamma$ for some $\gamma > 0$; equivalently, if and only if all roots lie in a fixed left half-plane.
 
-*Proof.* From the contour representation of the fundamental solution, the growth of $K(t)$ as $t\to\infty$ is governed by the rightmost characteristic root, and the estimate $|e^{\lambda t}| = e^{(\operatorname{Re}\lambda)t}$ gives the equivalence; the passage from the scalar contour formula to the matrix determinant is the standard Laplace-transform solution of the linear system.
+*Proof.* From the contour representation of the fundamental solution, the growth of $K(t)$ as $t\to\infty$ is governed by the rightmost characteristic root, and the estimate $|\exp(\lambda t)| = \exp((\operatorname{Re}\lambda)t)$ gives the equivalence; the passage from the scalar contour formula to the matrix determinant is the standard Laplace-transform solution of the linear system.
 
 **Example.** For $y'(t) = -ay(t-r)$ the criterion reproduces the condition $ar < \pi/2$ found above. For $y'(t) = -ay(t) - by(t-r)$ the boundary of stability in the $(a,b)$-plane is traced by the purely imaginary roots $\lambda = i\omega$. Separating the real and imaginary parts of $i\omega = -a - b(\cos\omega r - i\sin\omega r)$ gives
 
@@ -225,23 +225,23 @@ $$
 
 where $L(t) \in B(C,X)$ is a bounded linear map for each $t$ and $b$ is continuous. With $L$ constant and represented by a measure, $L\phi = \int_{-r}^{0}d\eta(\theta)\,\phi(\theta)$ for a finite matrix-valued measure $\eta$ of bounded variation, the equation is the general linear retarded equation with constant coefficients.
 
-**Theorem (characteristic equation).** For $L\phi = \int_{-r}^0 d\eta(\theta)\phi(\theta)$ the exponential $e^{\lambda t}v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
+**Theorem (characteristic equation).** For $L\phi = \int_{-r}^0 d\eta(\theta)\phi(\theta)$ the exponential $\exp(\lambda t)v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
 
 $$
-\Delta(\lambda)v = 0, \qquad \Delta(\lambda) = \lambda I - \int_{-r}^{0}e^{\lambda\theta}\,d\eta(\theta) ,
+\Delta(\lambda)v = 0, \qquad \Delta(\lambda) = \lambda I - \int_{-r}^{0}\exp(\lambda\theta)\,d\eta(\theta) ,
 $$
 
 and the **characteristic matrix** $\Delta$ has a determinant that is an entire function of exponential type; its zeros are the characteristic roots, they are countable, and for every $\gamma \in \mathbb{R}$ there are only finitely many with $\operatorname{Re}\lambda > \gamma$. The **spectral projection** onto the root subspace of a finite set of roots can be written as a contour integral of the resolvent $(\lambda I - L)^{-1}$ around the roots.
 
-*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int e^{\lambda\theta}\,d\eta$, each of which is entire of exponential type bounded by $e^{r|\lambda|}\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent.
+*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int \exp(\lambda\theta)\,d\eta$, each of which is entire of exponential type bounded by $\exp(r|\lambda|)\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent.
 
 **Remark (the decomposition theorem).** For a linear autonomous equation the space of solutions splits into a finite-dimensional part spanned by the exponential solutions corresponding to the finitely many roots in a right half-plane and a remainder on which the solution operator decays; this is the decomposition theorem of the theory, and it is the form in which the theory is used to reduce a delay equation to a finite-dimensional one plus a stable error. It is the seed of the semigroup theory of the evolution equations of this Part, where the same decomposition appears as the spectral decomposition of a semigroup with eventually compact orbits.
 
 ## Examples and Applications
 
-**Example (a delay in a control loop).** The scalar equation $y'(t) = -ay(t-r)$ has the characteristic equation $\lambda = -ae^{-\lambda r}$ and is stable exactly for $ar < \pi/2$. As the gain $a$ is increased with the lag fixed, the rightmost pair of roots crosses the imaginary axis at $a = \pi/(2r)$ with roots $\pm i\pi/(2r)$, and a periodic solution of period $4r$ is born. The computation is exact and shows that the delay converts a stable first-order system into an oscillator.
+**Example (a delay in a control loop).** The scalar equation $y'(t) = -ay(t-r)$ has the characteristic equation $\lambda = -a\exp(-\lambda r)$ and is stable exactly for $ar < \pi/2$. As the gain $a$ is increased with the lag fixed, the rightmost pair of roots crosses the imaginary axis at $a = \pi/(2r)$ with roots $\pm i\pi/(2r)$, and a periodic solution of period $4r$ is born. The computation is exact and shows that the delay converts a stable first-order system into an oscillator.
 
-**Example (the neutral equation).** The equation $y'(t) = -y'(t-1)$ has solutions of the form $y(t) = e^{\lambda t}$ with $\lambda = -\lambda e^{-\lambda}$, so that $e^{-\lambda} = -1$ and $\lambda = i(2k+1)\pi$; all solutions are oscillatory and none decays faster than polynomially, because the roots are purely imaginary and simple. A neutral equation may fail to smooth the solution, in contrast with a retarded one, and its characteristic function may have roots with $\operatorname{Re}\lambda \to \infty$.
+**Example (the neutral equation).** The equation $y'(t) = -y'(t-1)$ has solutions of the form $y(t) = \exp(\lambda t)$ with $\lambda = -\lambda \exp(-\lambda)$, so that $\exp(-\lambda) = -1$ and $\lambda = i(2k+1)\pi$; all solutions are oscillatory and none decays faster than polynomially, because the roots are purely imaginary and simple. A neutral equation may fail to smooth the solution, in contrast with a retarded one, and its characteristic function may have roots with $\operatorname{Re}\lambda \to \infty$.
 
 **Example (a state-dependent delay).** The equation $y'(t) = -y\bigl(t - r(y(t))\bigr)$ with $r \ge 0$ bounded and Lipschitz has a right-hand side $f(t,\phi) = -\phi(-r(\phi(0)))$ that is Lipschitz in $\phi$ when $r$ is, so the existence theorem applies; the history space must be enlarged to the Lipschitz functions when $r$ is itself state-dependent, because the evaluation at $-r(\phi(0))$ is not continuous in the supremum norm alone. This is the technical price of a state-dependent lag and it has no analogue in the constant-lag theory.
 
@@ -249,9 +249,9 @@ and the **characteristic matrix** $\Delta$ has a determinant that is an entire f
 
 A delay differential equation $y'(t) = f(t,y(t),y(t-r))$ is posed with a history $\phi \in C([-r,0],X)$ rather than with a point, and it is solved by the method of steps: on each interval of length $r$ the delayed terms are known from the preceding step and the equation is an ordinary initial-value problem, so the Picard–Lindelöf theorem applies step by step and gives a unique solution with a maximal interval of the usual kind. Smoothness of the solution requires compatibility conditions between the history and the equation at the initial time, and is lost at the first step when they fail.
 
-A linear delay equation with constant coefficients has exponential solutions $e^{\lambda t}$ where $\lambda$ solves the transcendental characteristic equation $\lambda = a + be^{-\lambda r}$, with countably many roots and no accumulation in the plane; the solution space is infinite-dimensional, since the datum is a function, and the solution operator $T(t)$ sending a history to its later history is a strongly continuous semigroup, compact for $t \ge r$, with the characteristic roots as its spectrum. The inhomogeneous equation is solved by a variation-of-constants formula with the fundamental solution, computable as an inverse Laplace transform. The zero solution is exponentially stable exactly when all characteristic roots lie in a fixed left half-plane, and for the pure delay this is the condition $ar < \pi/2$, so a lag can destabilise a stable system. For nonlinear equations stability is decided by a Lyapunov functional or by the Razumikhin condition on the history at the instants of maximal $V$.
+A linear delay equation with constant coefficients has exponential solutions $\exp(\lambda t)$ where $\lambda$ solves the transcendental characteristic equation $\lambda = a + b\exp(-\lambda r)$, with countably many roots and no accumulation in the plane; the solution space is infinite-dimensional, since the datum is a function, and the solution operator $T(t)$ sending a history to its later history is a strongly continuous semigroup, compact for $t \ge r$, with the characteristic roots as its spectrum. The inhomogeneous equation is solved by a variation-of-constants formula with the fundamental solution, computable as an inverse Laplace transform. The zero solution is exponentially stable exactly when all characteristic roots lie in a fixed left half-plane, and for the pure delay this is the condition $ar < \pi/2$, so a lag can destabilise a stable system. For nonlinear equations stability is decided by a Lyapunov functional or by the Razumikhin condition on the history at the instants of maximal $V$.
 
-A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and uniqueness theorem, with the Lipschitz condition taken in the norm of the history space and the right-hand side a function on the Banach space $C([-r,0],X)$; without the Lipschitz condition existence still holds under a complete-continuity hypothesis and uniqueness may fail. For the linear equation the characteristic matrix $\Delta(\lambda) = \lambda I - \int e^{\lambda\theta}d\eta(\theta)$ is entire of exponential type, its zeros form the spectrum, and the solutions split into a finite-dimensional exponential part and a decaying remainder. The general theory of the semigroup $T(t)$, its generator and its spectral decomposition is developed with the evolution equations of this Part.
+A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and uniqueness theorem, with the Lipschitz condition taken in the norm of the history space and the right-hand side a function on the Banach space $C([-r,0],X)$; without the Lipschitz condition existence still holds under a complete-continuity hypothesis and uniqueness may fail. For the linear equation the characteristic matrix $\Delta(\lambda) = \lambda I - \int \exp(\lambda\theta)d\eta(\theta)$ is entire of exponential type, its zeros form the spectrum, and the solutions split into a finite-dimensional exponential part and a decaying remainder. The general theory of the semigroup $T(t)$, its generator and its spectral decomposition is developed with the evolution equations of this Part.
 
 ## Summary of Notation
 
@@ -264,7 +264,7 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 | $\phi$ | Initial history |
 | $f(t,\phi)$ | Right-hand side of the functional equation |
 | $A$, $B$ | Coefficient operators of a linear delay equation |
-| $\lambda = a + be^{-\lambda r}$ | Characteristic equation of the scalar constant-coefficient delay equation |
+| $\lambda = a + b\exp(-\lambda r)$ | Characteristic equation of the scalar constant-coefficient delay equation |
 | $\Delta(\lambda)$ | Characteristic matrix of a general linear functional equation |
 | $T(t)$ | Solution operator on $C$, $T(t)\phi = y_t$ |
 | $K(t)$ | Fundamental solution of the inhomogeneous linear equation |

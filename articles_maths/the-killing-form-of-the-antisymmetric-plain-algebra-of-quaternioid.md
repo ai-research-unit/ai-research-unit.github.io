@@ -27,8 +27,8 @@ counterparts are *The Killing Form of the Antisymmetric Plain Algebra* and *Norm
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; $\vec p\cdot\vec q$ is the Euclidean dot product, $\vec p\times\vec q$
 the vector product, and $C_{\vec p}$ the cross-product matrix. The **plain form** is
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$, the **quaternion
-form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$, and the **scalar-part form** is
+$\langle\tilde p,\tilde q\rangle=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$, the **quaternion
+form** is $\langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+\vec p\cdot\vec q$, and the **scalar-part form** is
 $\varphi(\tilde p,\tilde q)=p_0q_0$.
 
 ## The Adjoint Representation and the Killing Form
@@ -89,7 +89,7 @@ $\varphi(\tilde p,\tilde q)=p_0q_0$. There is no nonzero **alternating** invaria
 form is the combination
 
 $$
-B=\varphi+\tfrac12\kappa,\qquad B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q ,
+B=\varphi+\tfrac12\kappa,\qquad \langle\tilde p,\tilde q\rangle=p_0q_0-\vec p\cdot\vec q ,
 $$
 
 and it is nondegenerate, of signature $(1,3)$.
@@ -162,7 +162,7 @@ of Gram matrix $\operatorname{diag}(0,-2,-2,-2)$: the Euclidean form of the vect
 negative direction, with the scalar direction in its radical. It is symmetric and invariant, negative
 semidefinite, and negative definite on the derived algebra, whose compact form it is. The space of
 invariant bilinear forms is two-dimensional, spanned by the Killing form and the scalar-part form
-$p_0q_0$, and the plain form is their combination $B=\varphi+\tfrac12\kappa$, nondegenerate of
+$p_0q_0$, and the plain form is their combination $\langle\cdot,\cdot\rangle=\varphi+\tfrac12\kappa$, nondegenerate of
 signature $(1,3)$; there is no nonzero alternating invariant form. The Casimir element
 $\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ acts as the identity on the adjoint and as $\tfrac38$ on the
 two-dimensional module. By Cartan's criterion the algebra is not semisimple, the radical being the
@@ -177,7 +177,7 @@ quaternionic block has no Killing form.
 | $-2\,\vec p\cdot\vec q$, Gram $\operatorname{diag}(0,-2,-2,-2)$ | the computation |
 | $\mathbb{R}e_0$ | the radical, the centre |
 | $\varphi(\tilde p,\tilde q)=p_0q_0$ | the scalar-part form, the second invariant form |
-| $B=\varphi+\tfrac12\kappa$ | the plain form, nondegenerate of signature $(1,3)$ |
+| $\langle\cdot,\cdot\rangle=\varphi+\tfrac12\kappa$ | the plain form, nondegenerate of signature $(1,3)$ |
 | $\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ | the Casimir element |
 
 ## Further Reading
@@ -186,4 +186,4 @@ quaternionic block has no Killing form.
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, below this article in this category, for the adjoint representation and the derivation algebra.
 - *The Specificities of the Antisymmetric Plain Algebra*, below this article in this category, for the isolation of the block and the folded element classes.
 - *Structure of Lie Algebras*, for the Killing form, the radical, the Cartan criterion and the Casimir element.
-- *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, for the plain and the quaternion forms of the space.
+- *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, for the plain and the quaternion forms of the space.

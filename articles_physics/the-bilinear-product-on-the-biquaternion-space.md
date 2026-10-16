@@ -15,14 +15,14 @@ properties are read as the composition of operations. The **scalar part** is the
 form** of this block,
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,
 $$
 
 symmetric and non-degenerate, with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient
 basis. It is neither the metric of spacetime nor the interval: the metric is the interval,
 $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, the general quaternionic bilinear form of signature
 $(-,+,+,+)$ on the material sector, and it belongs to the companion quaternionic block and to
-*The Interval as the Square and the Charge of the Material Composition*. The two forms sit on the same algebra with opposite types, $B$
+*The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The two forms sit on the same algebra with opposite types, $\langle\cdot,\cdot\rangle$
 definite on each sector where the interval is indefinite, and the place where that opposition is read
 physically is the material sector, in the companion article *The Bilinear Product on the Material Sector*.
 
@@ -31,8 +31,8 @@ restriction of the pair to the material sector, the sector sign and the absence 
 are *The Bilinear Product on the Material Sector*; the multiplication operators, one-sided and two-sided,
 and the sandwich are *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the
 invertibility criterion, the group of units and the cone are the mathematics of *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of
-*The Four Forms, the Four Algebraic Norms and the Change of Scalars* and *The Interval as the Square and the Charge of the Material Composition*, which own the norm, the interval, the light cone and the mass
-shell; the properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its restriction to
+*The Four Forms, the Four Algebraic Norms and the Change of Scalars* and *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, which own the norm, the interval, the light cone and the mass
+shell; the properties of $\langle\cdot,\cdot\rangle$ — its symmetry, its non-degeneracy, its Gram matrix and its restriction to
 the remarkable subspaces — are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *Remarkable
 Subspaces under the General Plain Algebra of Biquaternions*; and the comparison of the four general
 products is *The Four General Products and Their Physical Readings*. None of those is reproved here.
@@ -55,7 +55,7 @@ $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are bui
 conjugations. Its scalar part is the **general plain bilinear form** of this block,
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3=P_0Q_0-\vec P\!\cdot\!\vec Q,
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3=P_0Q_0-\vec P\!\cdot\!\vec Q,
 $$
 
 which is symmetric, since the scalar part is invariant under cyclic permutation
@@ -66,7 +66,7 @@ in the introduction.
 
 **Proposed interpretation, labelled as such.** The general plain bilinear product is read as the **composition of two
 operations**: $\tilde P\tilde Q$ is "the operation $\tilde P$, then the operation $\tilde Q$", the
-written order of the factors being the order of the operations, as in the polar word $e^{i\alpha}B\tilde q$
+written order of the factors being the order of the operations, as in the polar word $\exp(i\alpha)B\tilde q$
 of *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
 Biquaternions*). Three of its properties then carry their physical names.
 
@@ -87,37 +87,37 @@ unitary slices by *The Operators of the Bilinear Product: One-Sided, Two-Sided a
 $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$ and
 $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so the Hermitian conjugation is an anti-automorphism of
 the general plain bilinear product, and an element and its conjugate give the same scalar
-$B(\tilde P^{*},\tilde Q^{*})=B(\tilde P,\tilde Q)$, the scalar part being cyclically invariant and each
+$\langle\tilde P^{*},\tilde Q^{*}\rangle=\langle\tilde P,\tilde Q\rangle$, the scalar part being cyclically invariant and each
 conjugation reversing the order. The two identities are algebra and are used throughout the block; the
 second is the reason a product inherits the sector of its factors in the way the material article reads.
 
 ## The Scalar Form on the Algebra
 
 The algebra carries four forms and no more, the scalar parts of the four general products: the two
-bilinear $B$ and $N$ and the two sesquilinear $H$ and $K$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). $B$ and $N$ are complex-valued, $H$ is positive definite and $K$ is indefinite, and
-of the four only $N$ is multiplicative. $B$'s defining property among them is that it is the scalar part
-of the general plain bilinear product itself and the **plain** pairing, while $N$ is the same product with the natural
-conjugation inserted in the first slot, $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
+bilinear $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ and the two sesquilinear $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are complex-valued, $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural*}$ is indefinite, and
+of the four only $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative. The defining property of $\langle\cdot,\cdot\rangle$ among them is that it is the scalar part
+of the general plain bilinear product itself and the **plain** pairing, while $\langle\cdot,\cdot\rangle_{\natural}$ is the same product with the natural
+conjugation inserted in the first slot, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 The two differ by twice the coefficient square of the vector part,
 
 $$
-B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\vec Q\!\cdot\!\vec Q,\qquad \vec Q\!\cdot\!\vec Q=Q_1^{2}+Q_2^{2}+Q_3^{2},
+\langle\tilde Q,\tilde Q\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q,\qquad \vec Q\!\cdot\!\vec Q=Q_1^{2}+Q_2^{2}+Q_3^{2},
 $$
 
 so they agree only when the vector part is isotropic; the difference is the whole distinction between the
 sector sign and the interval, and it is displayed on the two sectors in the companion material article.
-The definiteness of $B$ and the indefiniteness of $N$ are also what separates the form that measures from
+The definiteness of $\langle\cdot,\cdot\rangle$ and the indefiniteness of $\langle\cdot,\cdot\rangle_{\natural}$ are also what separates the form that measures from
 the form that carries a metric, and that division is the physical job of the plain row.
 
 ## The Form on the Remarkable Subspaces
 
-Besides the two sectors the algebra carries four other remarkable real subspaces, and $B$ has a different
+Besides the two sectors the algebra carries four other remarkable real subspaces, and $\langle\cdot,\cdot\rangle$ has a different
 signature on them. On the **centre** $\mathbb{C}_{\mathbb{B}}$ and the **vector subspace**
 $\mathrm{Vect}(\mathbb{B})$, which are complex lines in each coordinate, the pairing of a real direction
 with its imaginary companion is purely imaginary, and it is the real part of the form that is read. On all
-four four-dimensional subspaces the form is real-valued. The restriction of $B$ is then
+four four-dimensional subspaces the form is real-valued. The restriction of $\langle\cdot,\cdot\rangle$ is then
 
-| subspace | $\dim_{\mathbb{R}}$ | $B$ |
+| subspace | $\dim_{\mathbb{R}}$ | $\langle\cdot,\cdot\rangle$ |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $2$ | $(1,1)$ |
 | $\mathrm{Vect}(\mathbb{B})$ | $6$ | $(3,3)$ |
@@ -126,39 +126,39 @@ four four-dimensional subspaces the form is real-valued. The restriction of $B$ 
 | $\mathbb{M}_+$ | $4$ | $(4,0)$ |
 | $\mathbb{M}_-$ | $4$ | $(0,4)$ |
 
-Two features of the table carry physical content. First, $B$ is **indefinite on the two quaternionic
+Two features of the table carry physical content. First, $\langle\cdot,\cdot\rangle$ is **indefinite on the two quaternionic
 subspaces** — $(1,3)$ on $\mathbb{H}_{\mathbb{B}}$ and $(3,1)$ on $i\mathbb{H}_{\mathbb{B}}$ — so it has
 a real cone there, unlike on the sectors; that cone is **not** the light cone of the framework. Second,
-$B$ is **neutral on the centre and on the vector subspace**, $(1,1)$ and $(3,3)$: as many positive as
+$\langle\cdot,\cdot\rangle$ is **neutral on the centre and on the vector subspace**, $(1,1)$ and $(3,3)$: as many positive as
 negative directions, so the form is definite on neither and carries no sector sign there.
 
-The null set of $B$ is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, with
+The null set of $\langle\cdot,\cdot\rangle$ is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, with
 $\varepsilon=(1,-1,-1,-1)$, of real dimension six. It is a third cone, distinct from both the ones the
 framework reads physically: the light cone is the null set of the interval read inside the material
-sector, the zero-divisor cone is the null set of the biquaternion norm, and the null set of $B$ is
-neither. On the sectors, the sharpest case, $B$ is definite and has no null element beyond the origin; the
-material light cone is the cone of the interval read inside $\mathbb{M}_-$ and is not a null set of $B$.
+sector, the zero-divisor cone is the null set of the biquaternion norm, and the null set of $\langle\cdot,\cdot\rangle$ is
+neither. On the sectors, the sharpest case, $\langle\cdot,\cdot\rangle$ is definite and has no null element beyond the origin; the
+material light cone is the cone of the interval read inside $\mathbb{M}_-$ and is not a null set of $\langle\cdot,\cdot\rangle$.
 The restriction of the two forms to the remarkable subspaces is tabulated in *Remarkable Subspaces under
 the General Plain Algebra of Biquaternions*.
 
 ## The Norm, the Units and the Cone
 
 An element of the general plain bilinear product is invertible, and the criterion is not the product's own scalar form
-$B$. The form $B$ is not multiplicative and supplies no criterion: two elements of non-vanishing $B$ can
-multiply to an element of vanishing $B$, so $B$ decides no inverse. The criterion is the norm of the
+$\langle\cdot,\cdot\rangle$. The form $\langle\cdot,\cdot\rangle$ is not multiplicative and supplies no criterion: two elements of non-vanishing $\langle\cdot,\cdot\rangle$ can
+multiply to an element of vanishing $\langle\cdot,\cdot\rangle$, so $\langle\cdot,\cdot\rangle$ decides no inverse. The criterion is the norm of the
 quaternionic bilinear form, which is multiplicative,
 
 $$
-N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q),\qquad N(\tilde Q)=\mathrm{Sc}\bigl(\tilde Q^{\natural}\tilde Q\bigr)=\sum_{\mu=0}^{3}Q_\mu^{2},
+\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural},\qquad \langle\tilde Q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q^{\natural}\tilde Q\bigr)=\sum_{\mu=0}^{3}Q_\mu^{2},
 $$
 
 so that the invertible elements are the elements of non-vanishing norm, forming the **group of units**
 
 $$
-\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\},\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)},
+\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\},\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-and the non-invertible ones are the elements of the **zero-divisor cone** $\mathcal{C}=\{N=0\}$. The
+and the non-invertible ones are the elements of the **zero-divisor cone** $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$. The
 algebra is the disjoint union of the units and the cone, the origin lying in the cone and being the one
 element that is neither a unit nor a zero divisor, a zero divisor being required to be nonzero. The norm,
 the group, the cone and the partition are the mathematics of *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of *Norm and Invertibility in the General Quaternionic Algebra*; what is read here is that they are read on the whole algebra at once, the criterion
@@ -167,7 +167,7 @@ being the same in every remarkable subspace, and the interior of the group being
 **Proposed interpretation, labelled as such.** *Invertible* reads **reversible**: the inverse is the
 operation that undoes the operation, the group of units is the set of the reversible operations, and the
 cone is the wall of the reversible region. The reading is stated on its own sector in *The Bilinear Product on the Material Sector*, where the cone is the light cone, the group is the set of the
-off-light-cone four-vectors and the mass shell $N=-m^{2}c^{2}$ lies inside the group.
+off-light-cone four-vectors and the mass shell $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ lies inside the group.
 
 ## Composition on Both Sides
 
@@ -202,20 +202,20 @@ and Lorentz Transformations*.
 The article states the product and its scalar form on the whole algebra, and the boundary of what it must
 declare is the same as the boundary of the form.
 
-- **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
+- **$\langle\cdot,\cdot\rangle$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
 causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
-- **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-level data of the general quaternionic bilinear form, owned by *The Interval as the Square and the Charge of the Material Composition*; the
+- **$\langle\cdot,\cdot\rangle$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
+level data of the general quaternionic bilinear form, owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*; the
 worked case of the companion material article shows the two forms giving different numbers on the same
 element.
-- **$B$ is not the reversibility.** The criterion of invertibility is the norm $N$ and not the scalar form
-$B$: the element $e_0+e_1$ is a unit with $B=0$ and the element $e_0+ie_1$ is a zero divisor with $B=2$,
-so $B$ decides no inverse. The group of units is the off-cone part of the algebra, and the reading of the
+- **$\langle\cdot,\cdot\rangle$ is not the reversibility.** The criterion of invertibility is the norm $\langle\tilde Q\rangle_{\natural}$ and not the scalar form
+$\langle\cdot,\cdot\rangle$: the element $e_0+e_1$ is a unit with $\langle e_0+e_1,e_0+e_1\rangle=0$ and the element $e_0+ie_1$ is a zero divisor with $\langle e_0+ie_1,e_0+ie_1\rangle=2$,
+so $\langle\cdot,\cdot\rangle$ decides no inverse. The group of units is the off-cone part of the algebra, and the reading of the
 reversible operations is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
-- **$B$ is not positivity.** The positive definite form of the state space and of the Born pairing is the
-Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
+- **$\langle\cdot,\cdot\rangle$ is not positivity.** The positive definite form of the state space and of the Born pairing is the
+Hermitian form of the sesqualgebra block, which is $+\langle\cdot,\cdot\rangle$ on $\mathbb{M}_+$ and $-\langle\cdot,\cdot\rangle$ on $\mathbb{M}_-$;
 positivity is blind to the sector.
-- **$B$ is not the Krein form.** The indefinite metric of the fourth corner restricts to $(1,3)$ on all
+- **$\langle\cdot,\cdot\rangle$ is not the Krein form.** The indefinite metric of the fourth corner restricts to $(1,3)$ on all
 four four-dimensional subspaces and so does not separate them.
 
 **What the framework does not claim.** The interpretation does not say which physical operation an element
@@ -225,21 +225,21 @@ of the section above, and the measurement update is an idempotent projection; ne
 ## The Ledger
 
 **Proved.** The general plain bilinear product is associative and two-sidedly unital, and its scalar part
-$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ is a symmetric
+$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ is a symmetric
 non-degenerate $\mathbb{C}$-bilinear form with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$; the
-form $B$ restricts to $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on
+form $\langle\cdot,\cdot\rangle$ restricts to $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on
 $\mathbb{H}_{\mathbb{B}}$, $(3,1)$ on $i\mathbb{H}_{\mathbb{B}}$, $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on
 $\mathbb{M}_-$, and its null set is a complex cone of real dimension six; the Hermitian conjugation is an
 anti-automorphism of the product, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$; the algebraic norm
-$N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ is multiplicative, its
+$\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ is multiplicative, its
 non-vanishing set $\mathbb{B}^{\times}$ is the group of invertible elements of the general plain bilinear product with
-the inverse $\tilde Q^{\natural}/N(\tilde Q)$, its vanishing set is the zero-divisor cone, and the algebra
+the inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, its vanishing set is the zero-divisor cone, and the algebra
 is their disjoint union; and the left and right multiplications commute, so the sandwich is their
 composition.
 
 **Interpretations.** That the general plain bilinear product is the **composition of operations**, with associativity
-read as composability, $e_0$ as the identity and non-commutativity as order dependence; that $B$ is the
-**plain** form that measures and $N$ the form that carries the metric; and that *invertible* reads
+read as composability, $e_0$ as the identity and non-commutativity as order dependence; that $\langle\cdot,\cdot\rangle$ is the
+**plain** form that measures and $\langle\cdot,\cdot\rangle_{\natural}$ the form that carries the metric; and that *invertible* reads
 **reversible**, the group of units being the reversible operations and the cone the wall of the reversible
 region. Each is the framework's naming of a proved algebraic fact and is labelled as such.
 
@@ -249,17 +249,17 @@ The general plain bilinear product $\tilde P\tilde Q$ — the only one of the fo
 and two-sidedly unital — acts on the whole biquaternion algebra $\mathbb{B}$, and this article reads it
 there. Its law is associativity, the unit $e_0$ and non-commutativity, read as the composition of
 operations with the written order of the factors the order of the operations. Its scalar part, the
-general plain bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$,
+general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$,
 is symmetric and non-degenerate with Gram matrix $\mathrm{diag}(1,-1,-1,-1)$; its restriction is $(1,1)$
 on the centre, $(3,3)$ on the vector subspace, $(1,3)$ and $(3,1)$ on the two quaternionic subspaces, and
 $(4,0)$ and $(0,4)$ on the two sectors, so it is neutral on the first two, indefinite with a cone on the
 quaternionic pair, and definite on the sectors. Being definite there it has no light cone and cannot be
-the metric; the metric is the interval, the general quaternionic bilinear form $N$ of the companion
+the metric; the metric is the interval, the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the companion
 quaternionic block, indefinite of signature $(-,+,+,+)$ on the material sector. The two forms differ by
 twice the coefficient square of the vector part and agree only when the vector part is isotropic. The
-invertibility of the general plain bilinear product is decided by the multiplicative norm $N$ and not by $B$: the
+invertibility of the general plain bilinear product is decided by the multiplicative norm $\langle\tilde Q\rangle_{\natural}$ and not by $\langle\cdot,\cdot\rangle$: the
 invertible elements are the elements of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with
-the inverse $\tilde Q^{\natural}/N(\tilde Q)$ and bounded by the zero-divisor cone, and the Hermitian
+the inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ and bounded by the zero-divisor cone, and the Hermitian
 conjugation is an anti-automorphism of the product. The left and right multiplications commute, so the
 sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$ is the composition on both sides. The
 distinctions are labelled throughout: what is proved is the algebra on the whole space, and the reading of
@@ -277,15 +277,15 @@ companion article *The Bilinear Product on the Material Sector*; what is propose
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\tilde P\tilde Q$ | General plain bilinear product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
-| $B\big|_{\mathbb{M}_-}=(0,4)$, $B\big|_{\mathbb{M}_+}=(4,0)$ | The sector sign carried by $B$; the reading is the companion material article |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
-| $B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\vec Q\!\cdot\!\vec Q$ | The relation between the two forms; they agree only on the isotropic vector part |
-| $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; multiplicative |
-| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
-| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | Inverse in the general plain bilinear product |
+| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-}=(0,4)$, $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+}=(4,0)$ | The sector sign carried by $\langle\cdot,\cdot\rangle$; the reading is the companion material article |
+| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
+| $\langle\tilde Q,\tilde Q\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q$ | The relation between the two forms; they agree only on the isotropic vector part |
+| $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; multiplicative |
+| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
+| $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | Inverse in the general plain bilinear product |
 | $L_{\tilde Q},R_{\tilde P},\ \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | Left and right multiplications and the sandwich |
-| $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
+| $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading
 
@@ -300,13 +300,13 @@ metric of signature $(-,+,+,+)$ and its contrast with a definite form.
 matrices and their signatures.
 - Mathematics article *Remarkable Subspaces and the Four Forms*
 (`articles_maths/remarkable-subspaces-and-the-four-forms.md`), for the
-restriction of $B$ to the remarkable subspaces.
+restriction of $\langle\cdot,\cdot\rangle$ to the remarkable subspaces.
 - Mathematics article *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*
 (`articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.md`),
 for the group of units, the multiplicativity of the norm and the cone as the boundary of invertibility.
 - Companion article *The Bilinear Product on the Material Sector*, for the sector sign, the sector of a
 composite and the reversibility read on $\mathbb{M}_-$.
-- Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval, the light cone, the mass
+- Companion article *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, for the interval, the light cone, the mass
 shell and the units.
 - Companion article *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*, for
 the multiplication operators, the sandwich and the adjoint.

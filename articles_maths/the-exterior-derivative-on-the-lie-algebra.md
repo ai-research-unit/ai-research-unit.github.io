@@ -54,7 +54,7 @@ $$
 (\alpha\smile\beta)(x_1,\dots,x_{p+q})=\sum_{\sigma}\operatorname{sgn}(\sigma)\,\alpha(x_{\sigma(1)},\dots,x_{\sigma(p)})\,\beta(x_{\sigma(p+1)},\dots,x_{\sigma(p+q)}),
 $$
 
-the sum over the $(p,q)$-shuffles of the symmetric group. Under the identification $C^\bullet(\mathrm{G};K)=\Lambda^\bullet\mathrm{G}^*$ the cup product is the wedge product of *The Exterior Algebra*.
+the sum over the $(n,m)$-shuffles of the symmetric group. Under the identification $C^\bullet(\mathrm{G};K)=\Lambda^\bullet\mathrm{G}^*$ the cup product is the wedge product of *The Exterior Algebra*.
 
 ### The Derivation Property
 

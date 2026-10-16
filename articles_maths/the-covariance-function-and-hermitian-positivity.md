@@ -89,12 +89,12 @@ $$
 
 **Theorem (Herglotz).** A function $R:\mathbb Z\to\mathbb{C}$ is the stationary covariance of some process if and only if it is positive definite, and then there is a unique finite positive measure $\mu$ on the circle with
 $$
-R(n)=\int_{\mathbb T}e^{in\lambda}\,d\mu(\lambda),\qquad R(0)=\mu(\mathbb T).
+R(n)=\int_{\mathbb T}\exp(in\lambda)\,d\mu(\lambda),\qquad R(0)=\mu(\mathbb T).
 $$
 
 **Theorem (Bochner).** A continuous function $R:\mathbb R\to\mathbb{C}$ is positive definite if and only if it is the Fourier transform of a unique finite positive measure,
 $$
-R(t)=\int_{\mathbb R}e^{it\lambda}\,d\mu(\lambda),
+R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda),
 $$
 and the measure is the **spectral measure** of the stationary process.
 
@@ -102,23 +102,23 @@ and the measure is the **spectral measure** of the stationary process.
 
 **Corollary (the spectral form of the variance).** For a stationary covariance, $R(0)=\mu(\mathbb R)$ and
 $$
-\operatorname{Var}\Bigl(\sum_ic_iX_{t_i}\Bigr)=\int_{\mathbb R}\Bigl|\sum_ic_ie^{it_i\lambda}\Bigr|^2d\mu(\lambda)\ge0 ,
+\operatorname{Var}\Bigl(\sum_ic_iX_{t_i}\Bigr)=\int_{\mathbb R}\Bigl|\sum_ic_i\exp(it_i\lambda)\Bigr|^2d\mu(\lambda)\ge0 ,
 $$
 a nonnegative trigonometric polynomial integrated against the positive spectral measure.
 
-*Proof.* The variance of the trigonometric polynomial of the shifts is the squared norm in $L^2(\mu)$ of the symbol $\sum_ic_ie^{it_i\lambda}$ by the Bochner representation.
+*Proof.* The variance of the trigonometric polynomial of the shifts is the squared norm in $L^2(\mu)$ of the symbol $\sum_ic_i\exp(it_i\lambda)$ by the Bochner representation.
 
 ## Worked Examples
 
 **Example (the white noise).** The covariance $R(s,t)=\delta_{s,t}$ is Hermitian and positive definite, with the spectral measure the Lebesgue measure of total mass one on the circle; the realization is the family of the orthonormal vectors of a Hilbert space, and the process is the white noise of unit variance. The covariance operator is the identity.
 
-**Example (the Gaussian kernel).** The function $R(t)=e^{-t^2/2}$ on $\mathbb R$ is continuous and positive definite, and its Fourier transform is the standard normal density; the realization is the stationary Gaussian process with that covariance, whose spectral measure is the normal law. This is the Bochner theorem in its smoothest instance.
+**Example (the Gaussian kernel).** The function $R(t)=\exp(-t^2/2)$ on $\mathbb R$ is continuous and positive definite, and its Fourier transform is the standard normal density; the realization is the stationary Gaussian process with that covariance, whose spectral measure is the normal law. This is the Bochner theorem in its smoothest instance.
 
 **Example (the Fejér kernel).** The function $R(n)=\bigl(1-|n|/N\bigr)_+$ on $\mathbb Z$, the triangular window of width $N$, is positive definite, its spectral density being the Fejér kernel $\frac{1}{2\pi N}\bigl(\frac{\sin(N\lambda/2)}{\sin(\lambda/2)}\bigr)^2$, the squared modulus of the Dirichlet kernel divided by $N$; the example shows that the positive definiteness is not a decay condition.
 
 **Example (a non-positive-definite function).** The function $R(n)=\mathbf 1_{|n|\le1}$ is Hermitian and bounded but not positive definite: for the indices $-1,0,1$ the matrix $(R(t_i-t_j))$ is $\begin{pmatrix}1&1&0\\1&1&1\\0&1&1\end{pmatrix}$, whose eigenvalues are $1$, $1+\sqrt2$ and $1-\sqrt2<0$. Hence it is not a covariance function, and no stationary process has it as its covariance. The example exhibits the content of the positive definiteness.
 
-**Example (the Ornstein–Uhlenbeck kernel).** The function $R(t)=e^{-\alpha|t|}$ on $\mathbb R$ is continuous and positive definite, with the spectral measure the Cauchy density $\frac{\alpha}{\pi(\alpha^2+\lambda^2)}d\lambda$; the realization is the stationary Ornstein–Uhlenbeck process, whose reversibility and self-adjoint generator are *Reversible Markov Chains and Time Reversal*, earlier in this category.
+**Example (the Ornstein–Uhlenbeck kernel).** The function $R(t)=\exp(-\alpha|t|)$ on $\mathbb R$ is continuous and positive definite, with the spectral measure the Cauchy density $\frac{\alpha}{\pi(\alpha^2+\lambda^2)}d\lambda$; the realization is the stationary Ornstein–Uhlenbeck process, whose reversibility and self-adjoint generator are *Reversible Markov Chains and Time Reversal*, earlier in this category.
 
 ## Failure of the Degenerate Cases
 
@@ -138,8 +138,8 @@ The covariance function of a family of random variables is the pairing $R(s,t)=\
 | $\sum c_i\bar c_jR(t_i,t_j)\ge0$ | positive definiteness |
 | $C$ | the covariance operator, the Gram operator of the family |
 | $R(-t)=\overline{R(t)}$, $|R(t)|\le R(0)$ | the stationary covariance |
-| $R(n)=\int_{\mathbb T}e^{in\lambda}d\mu$ | Herglotz representation |
-| $R(t)=\int_{\mathbb R}e^{it\lambda}d\mu$ | Bochner representation |
+| $R(n)=\int_{\mathbb T}\exp(in\lambda)d\mu$ | Herglotz representation |
+| $R(t)=\int_{\mathbb R}\exp(it\lambda)d\mu$ | Bochner representation |
 | $\mu$ | the spectral measure of the stationary process |
 
 ## Further Reading

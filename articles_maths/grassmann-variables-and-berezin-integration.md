@@ -229,7 +229,7 @@ $$
 
 so that $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2} = (2\pi)^{p/2}(\det B)^{-1/2}\operatorname{Pf}(A)$. This is the sense in which the odd Gaussian converts the Pfaffian into the square root of a determinant, and it is the origin of the Berezinian in the superalgebra article *Superalgebras and Graded Structures*.
 
-**Remark.** The bosonic Gaussian $\int_{\mathbb{R}^p} e^{-\frac12 x^TBx}dx = (2\pi)^{p/2}(\det B)^{-1/2}$ is an analytic statement, and it is quoted here as the classical counterpart of the algebraic odd Gaussian; the odd integral requires no analysis, and its value is an integral polynomial in the entries of $A$.
+**Remark.** The bosonic Gaussian $\int_{\mathbb{R}^p} \exp(-\frac12 x^TBx)dx = (2\pi)^{p/2}(\det B)^{-1/2}$ is an analytic statement, and it is quoted here as the classical counterpart of the algebraic odd Gaussian; the odd integral requires no analysis, and its value is an integral polynomial in the entries of $A$.
 
 ## Properties and Structural Remarks
 
@@ -253,7 +253,7 @@ The Grassmann algebra on $n$ odd generators is the exterior algebra of an $n$-di
 
 The Berezin integral is the linear functional extracting the top coefficient, equivalently the composition $\partial_{\theta_n}\cdots\partial_{\theta_1}$ of left derivatives. It is linear, invariant under odd translations, satisfies integration by parts, and obeys the Fubini rule for iterated integration. Under a linear change of odd variables $\theta = N\eta$ it scales by $\det(N)^{-1}$, the inverse of the determinant of the change of variables, in contrast with the bosonic Jacobian.
 
-The Gaussian integral over odd variables gives the Pfaffian, $\int e^{\frac12\theta^TA\theta}d\theta = \operatorname{Pf}(A)$ for an alternating matrix $A$, whose square is the determinant; the conjunction of the odd Gaussian with an ordinary Gaussian over even variables gives, up to $(2\pi)^{p/2}$, the inverse square root of the Berezinian, and the top-degree pairing of complementary exterior powers is perfect. The whole calculus is finite and algebraic.
+The Gaussian integral over odd variables gives the Pfaffian, $\int \exp(\frac12\theta^TA\theta)d\theta = \operatorname{Pf}(A)$ for an alternating matrix $A$, whose square is the determinant; the conjunction of the odd Gaussian with an ordinary Gaussian over even variables gives, up to $(2\pi)^{p/2}$, the inverse square root of the Berezinian, and the top-degree pairing of complementary exterior powers is perfect. The whole calculus is finite and algebraic.
 
 ## Summary of Notation
 
@@ -269,7 +269,7 @@ The Gaussian integral over odd variables gives the Pfaffian, $\int e^{\frac12\th
 | $\int f\, d\theta = c_{\{1,\ldots,n\}} = \partial_{\theta_n}\cdots\partial_{\theta_1} f$ | Berezin integral |
 | $\int f(\theta+\eta)\,d\theta = \int f(\theta)\,d\theta$ | Translation invariance for a constant odd shift $\eta$ |
 | $\theta = N\eta \Rightarrow \int f\,d\theta = \det(N)^{-1}\int f(N\eta)\,d\eta$ | Berezinian change of variables; Jacobian factor is an inverse determinant |
-| $\int e^{\frac12\theta^T A\theta}d\theta = \operatorname{Pf}(A)$ | Odd Gaussian integral |
+| $\int \exp(\frac12\theta^T A\theta)d\theta = \operatorname{Pf}(A)$ | Odd Gaussian integral |
 | $\operatorname{Pf}(A)^2 = \det(A)$ | Determinant from the odd Gaussian |
 | $(2\pi)^{p/2}(\det B)^{-1/2}\operatorname{Pf}(A)$ | Super-Gaussian; $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2}$ |
 | $\operatorname{Ber}\operatorname{diag}(B,A) = \det B/\operatorname{Pf}(A)^2$ | Berezinian of a block diagonal supermatrix |

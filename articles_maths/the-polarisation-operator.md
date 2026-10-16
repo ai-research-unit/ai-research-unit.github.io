@@ -14,9 +14,9 @@ $$
 (\Pi f)(x_1, \dots, x_n) = \frac{1}{n!}\sum_{S \subseteq \{1,\dots,n\}}(-1)^{n-|S|}\, f\Bigl(\sum_{i \in S} x_i\Bigr),
 $$
 
-which is the $n$-fold difference at the origin, normalised. The article defines this operator, shows that it is the inverse of the diagonal map on symmetric multilinear maps, and identifies the operators it produces when applied to the square of a Jordan algebra: the Jordan product itself in degree two, the Jordan triple product in degree three, and the quadratic representation $U_{a,b}$ when the quadratic map polarised is $a\mapsto U_a$.
+which is the $n$-fold difference at the origin, normalised. The article defines this operator, shows that it is the inverse of the diagonal map on symmetric multilinear maps, and identifies the operators it produces when applied to the square of a Jordan algebra: the Jordan product itself in degree two, the Jordan triple product in degree three, and the quadratic representation $\mathcal U_{a,b}$ when the quadratic map polarised is $a\mapsto \mathcal U_a$.
 
-The article assumes *Jordan Algebras* for the product and the quadratic representation, *The Jordan Multiplication Operators* for the operator reading of the Jordan identity by polarisation, and *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System* for the ternary product. The polarisation of a **quadratic form**, where the map polarised is $x\mapsto q(x)$ and the result is the polar form, is settled in *Quadratic Forms and Polarisation* and is not restated here; the present article treats the polarisation of a general symmetric multilinear map and of a general homogeneous map, together with the operator that effects it. No form, no norm and no distance is used; the only hypothesis is that $n!$ be invertible, which is a statement about the ground ring. Throughout, $R$ is a commutative ring with identity $1 \neq 0$, $V$ and $W$ are $R$-modules, and the integer $n$ is fixed.
+The article assumes *Jordan Algebras* for the product and the quadratic representation, *The Jordan Multiplication Operators* for the operator reading of the Jordan identity by polarisation, and *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System* for the ternary product. The polarisation of a **quadratic form**, where the map polarised is $x\mapsto \mathfrak{Q}(x)$ and the result is the polar form, is settled in *Quadratic Forms and Polarisation* and is not restated here; the present article treats the polarisation of a general symmetric multilinear map and of a general homogeneous map, together with the operator that effects it. No form, no norm and no distance is used; the only hypothesis is that $n!$ be invertible, which is a statement about the ground ring. Throughout, $R$ is a commutative ring with identity $1 \neq 0$, $V$ and $W$ are $R$-modules, and the integer $n$ is fixed.
 
 ## The Polarisation of the Jordan Product
 
@@ -57,7 +57,7 @@ $$
 (\Pi f)(x_1,\dots,x_n) = \frac{1}{n!}\sum_{S \subseteq \{1,\dots,n\}}(-1)^{n-|S|}\,f\Bigl(\sum_{i\in S}x_i\Bigr)
 $$
 
-is defined whenever $n!$ is invertible in $R$. Its symmetry is immediate: the right-hand side is a sum over subsets $S$, and the permutation of the variables $x_i$ permutes the subsets and their complements' cardinalities, so $(\Pi f)(x_{\sigma(1)},\dots,x_{\sigma(n)}) = (\Pi f)(x_1,\dots,x_n)$ for every $\sigma \in S_n$. It is $R$-linear in $f$, and it is natural: for an $R$-linear map $u : W \to W'$ one has $\Pi(uf) = u(\Pi f)$.
+is defined whenever $n!$ is invertible in $R$. Its symmetry is immediate: the right-hand side is a sum over subsets $S$, and the permutation of the variables $x_i$ permutes the subsets and their complements' cardinalities, so $(\Pi f)(x_{\sigma(1)},\dots,x_{\sigma(n)}) = (\Pi f)(x_1,\dots,x_n)$ for every $\sigma \in S_n$. It is $R$-linear in $f$, and it is natural: for an $R$-linear map $Q : W \to W'$ one has $\Pi(Qf) = Q(\Pi f)$.
 
 **Proposition (the difference reading).** Let $\nabla_h f(x) = f(x+h) - f(x)$ be the difference operator in the direction $h$. Then
 
@@ -125,13 +125,13 @@ the ternary product of *The Lie–Jordan Decomposition of a Bilinear Product and
 
 ### The Quadratic Representation
 
-The quadratic representation is the map $a \mapsto U_a$, quadratic on $J$ with values in the operators; its polarisation is
+The quadratic representation is the map $a \mapsto \mathcal U_a$, quadratic on $J$ with values in the operators; its polarisation is
 
 $$
-\Pi(a \mapsto U_a)(a,b) = \tfrac12\bigl(U_{a+b} - U_a - U_b\bigr) = U_{a,b} ,
+\Pi(a \mapsto \mathcal U_a)(a,b) = \tfrac12\bigl(\mathcal U_{a+b} - \mathcal U_a - \mathcal U_b\bigr) = \mathcal U_{a,b} ,
 $$
 
-which is the polarisation formula of *The Left and Right Multiplication Operators on a Jordan Algebra* and the source of the bilinear operator $U_{a,b}$. The same computation in the special case gives $U_{a,b}(x) = \tfrac12(axb + bxa)$ and, at $b = a$, $U_a(x) = axa$, so that the diagonal of the bilinear operator $U_{\cdot,\cdot}$ is the quadratic representation $U_a$ and the polarisation recovers the two-sided product from it. The triple product admits the same reading: the polarisation of the map $x\mapsto x^3$ can be written $\{x,y,z\} = U_{x,z}(y)$ when the product is special, which is the classical expression of the Jordan triple product through the quadratic representation.
+which is the polarisation formula of *The Left and Right Multiplication Operators on a Jordan Algebra* and the source of the bilinear operator $\mathcal U_{a,b}$. The same computation in the special case gives $\mathcal U_{a,b}(x) = \tfrac12(axb + bxa)$ and, at $b = a$, $\mathcal U_a(x) = axa$, so that the diagonal of the bilinear operator $\mathcal U_{\cdot,\cdot}$ is the quadratic representation $\mathcal U_a$ and the polarisation recovers the two-sided product from it. The triple product admits the same reading: the polarisation of the map $x\mapsto x^3$ can be written $\{x,y,z\} = \mathcal U_{x,z}(y)$ when the product is special, which is the classical expression of the Jordan triple product through the quadratic representation.
 
 ### The Multiplication Operators from the Square
 
@@ -141,11 +141,11 @@ $$
 \Pi s(a,b) = a \bullet b ,
 $$
 
-and the multiplication operator $L_a$ is that bilinear map with its first argument fixed, $L_a(b) = \Pi s(a,b)$. In the same way the quadratic representation $U_{a,b}$ is the polarisation of the quadratic family $a\mapsto U_a$, and the triple product is the polarisation of the cube. The rule is that polarisation applies to the **defining map** of the structure, which for a Jordan algebra is the square; the operators linear in a parameter carry no polarisation of their own.
+and the multiplication operator $L_a$ is that bilinear map with its first argument fixed, $L_a(b) = \Pi s(a,b)$. In the same way the quadratic representation $\mathcal U_{a,b}$ is the polarisation of the quadratic family $a\mapsto \mathcal U_a$, and the triple product is the polarisation of the cube. The rule is that polarisation applies to the **defining map** of the structure, which for a Jordan algebra is the square; the operators linear in a parameter carry no polarisation of their own.
 
 ## The Failure in Characteristic Two
 
-**Remark.** The polarisation operator involves the scalar $1/n!$, and when $n!$ is not invertible in $R$ there is no such operator. The failure is not a matter of a missing inverse formula: symmetry fails to imply multilinearity in characteristic two, and the diagonal map $\Delta$ need not be injective. The standard example is the quadratic form $q(x) = \sum_i x_i^2$ over a field of characteristic two, whose polar form $\Pi q$ is zero although $q$ is not; the general failure of polarisation in characteristic two is the subject of *Quadratic Forms and Polarisation*, where the kernel of the polar map and the classification in characteristic two are given. For a Jordan algebra the same caveat applies to every polarisation: over a ring in which $2$ is not invertible, the identity $x\bullet y = \tfrac12((x+y)^2 - x^2 - y^2)$ does not recover the product, and the theory must be stated in the square alone.
+**Remark.** The polarisation operator involves the scalar $1/n!$, and when $n!$ is not invertible in $R$ there is no such operator. The failure is not a matter of a missing inverse formula: symmetry fails to imply multilinearity in characteristic two, and the diagonal map $\Delta$ need not be injective. The standard example is the quadratic form $\mathfrak{Q}(x) = \sum_i x_i^2$ over a field of characteristic two, whose polar form $\Pi q$ is zero although $q$ is not; the general failure of polarisation in characteristic two is the subject of *Quadratic Forms and Polarisation*, where the kernel of the polar map and the classification in characteristic two are given. For a Jordan algebra the same caveat applies to every polarisation: over a ring in which $2$ is not invertible, the identity $x\bullet y = \tfrac12((x+y)^2 - x^2 - y^2)$ does not recover the product, and the theory must be stated in the square alone.
 
 ## Summary
 
@@ -155,7 +155,7 @@ $$
 (\Pi f)(x_1,\dots,x_n) = \frac1{n!}\sum_{S \subseteq \{1,\dots,n\}}(-1)^{n-|S|}f\Bigl(\sum_{i\in S}x_i\Bigr) = \frac1{n!}\,\nabla_{x_1}\cdots\nabla_{x_n}f(0) ,
 $$
 
-the normalised $n$-fold difference at the origin. It is symmetric, $R$-linear in $f$ and natural; it satisfies $\Pi\Delta F = F$ for every symmetric $n$-linear map $F$, and it inverts the diagonal $\Delta F(x) = F(x,\dots,x)$ on the homogeneous maps of degree $n$ whenever $n!$ is invertible in $R$. For a Jordan algebra it produces the product from the square, $\Pi(x\mapsto x^2)(x,y) = x\bullet y$, the Jordan triple product from the cube, $\Pi(x\mapsto x^3) = \{x,y,z\}$, and the quadratic representation $U_{a,b}$ from the quadratic family $a\mapsto U_a$. Over a ring in which $2$ is not invertible the operator does not exist and polarisation fails, as in the characteristic-two theory of quadratic forms of *Quadratic Forms and Polarisation*. No form, norm or distance is involved; the operator is a purely algebraic finite difference.
+the normalised $n$-fold difference at the origin. It is symmetric, $R$-linear in $f$ and natural; it satisfies $\Pi\Delta F = F$ for every symmetric $n$-linear map $F$, and it inverts the diagonal $\Delta F(x) = F(x,\dots,x)$ on the homogeneous maps of degree $n$ whenever $n!$ is invertible in $R$. For a Jordan algebra it produces the product from the square, $\Pi(x\mapsto x^2)(x,y) = x\bullet y$, the Jordan triple product from the cube, $\Pi(x\mapsto x^3) = \{x,y,z\}$, and the quadratic representation $\mathcal U_{a,b}$ from the quadratic family $a\mapsto \mathcal U_a$. Over a ring in which $2$ is not invertible the operator does not exist and polarisation fails, as in the characteristic-two theory of quadratic forms of *Quadratic Forms and Polarisation*. No form, norm or distance is involved; the operator is a purely algebraic finite difference.
 
 ## Summary of Notation
 
@@ -172,7 +172,7 @@ the normalised $n$-fold difference at the origin. It is symmetric, $R$-linear in
 | $\operatorname{Pol}^n(V;W)$ | Homogeneous maps $V \to W$ of degree $n$ |
 | $x\bullet y = \tfrac12((x+y)^2 - x^2 - y^2)$ | Polarisation identity of the Jordan product |
 | $\{x,y,z\}$ | Jordan triple product, polarisation of the cube |
-| $U_{a,b} = \tfrac12(U_{a+b} - U_a - U_b)$ | Polarisation of the quadratic representation |
+| $\mathcal U_{a,b} = \tfrac12(\mathcal U_{a+b} - \mathcal U_a - \mathcal U_b)$ | Polarisation of the quadratic representation |
 
 ## Further Reading
 

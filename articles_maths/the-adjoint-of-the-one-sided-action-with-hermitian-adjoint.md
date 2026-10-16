@@ -13,15 +13,15 @@ The Clifford action and the module form are *Hermitian Modules over a Hermitian 
 
 ### The Action and Its Adjoint
 
-**Setting.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,q)$ with form $(\cdot,\cdot)$ and scalar field $A$ with involution $\sigma$, and let
+**Setting.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$ with form $(\cdot,\cdot)$ and scalar field $A$ with involution $\sigma$, and let
 
 $$
-\rho : \mathrm{Cl}(V,q)\longrightarrow \mathrm{End}_A(S), \qquad \rho(x)(s) = x\cdot s
+\rho : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow \mathrm{End}_A(S), \qquad \rho(x)(s) = x\cdot s
 $$
 
 be the action. The **adjoint action** is the assignment $\rho^{*}(x) = \rho(x)^{*}$, the adjoint of $\rho(x)$ in $\mathrm{End}_A(S)$ with respect to the module form.
 
-**Theorem (the adjoint of the action is the action of the dagger).** For every $x \in \mathrm{Cl}(V,q)$,
+**Theorem (the adjoint of the action is the action of the dagger).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \rho(x)^{*} = \rho\bigl(x^{\dagger}\bigr),
@@ -35,11 +35,11 @@ $$
 
 **Proof.** The adjointness axiom of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint* is precisely $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$, that is $(\rho(x)s,t) = (s,\rho(x^{\dagger})t)$; comparing with the defining property of the adjoint, $(\rho(x)s,t) = (s,\rho(x)^{*}t)$, and using the non-degeneracy of the form to cancel $s$ and $t$, gives $\rho(x)^{*} = \rho(x^{\dagger})$. The multiplicativity of $\rho$ is the module axiom, and the $*$-property is what has just been shown.
 
-**Corollary (the adjoint action is multiplicative).** The adjoint action is a homomorphism of the daggered algebra, $\rho(x)^{*}\rho(y)^{*} = \rho(x^{\dagger})\rho(y^{\dagger}) = \rho(x^{\dagger}y^{\dagger})$, and it agrees with the action on the daggered element, so $\rho(x^{*}) = \rho(x)^{*}$ when ${}^{*}$ is the dagger of the coefficient field composed with the algebra anti-involution. Consequently the image of $\rho$ is a $*$-subalgebra of $\mathrm{End}_A(S)$, isomorphic to the quotient of $\mathrm{Cl}(V,q)$ by the kernel of the action.
+**Corollary (the adjoint action is multiplicative).** The adjoint action is a homomorphism of the daggered algebra, $\rho(x)^{*}\rho(y)^{*} = \rho(x^{\dagger})\rho(y^{\dagger}) = \rho(x^{\dagger}y^{\dagger})$, and it agrees with the action on the daggered element, so $\rho(x^{*}) = \rho(x)^{*}$ when ${}^{*}$ is the dagger of the coefficient field composed with the algebra anti-involution. Consequently the image of $\rho$ is a $*$-subalgebra of $\mathrm{End}_A(S)$, isomorphic to the quotient of $\mathrm{Cl}(V,\mathfrak{Q})$ by the kernel of the action.
 
 ### The Adjoint on the Algebra
 
-**Corollary (the adjoint of a one-sided operator on the algebra).** With $S = \mathrm{Cl}(V,q)$ the regular module and the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$,
+**Corollary (the adjoint of a one-sided operator on the algebra).** With $S = \mathrm{Cl}(V,\mathfrak{Q})$ the regular module and the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$,
 
 $$
 L_a^{*} = L_{a^{\dagger}}, \qquad R_b^{*} = R_{b^{\dagger}},
@@ -47,7 +47,7 @@ $$
 
 the statement of *One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint*; so the module theorem above is the general form of that identity, and the algebra case is its regular instance.
 
-**Corollary (vectors act by skew-adjoint operators).** For $v \in V$, $\rho(v)^{*} = \rho(v^{\dagger}) = -\rho(v)$, because the dagger negates the vectors; so every vector acts by a **skew-adjoint** operator, $\rho(v)^{*} = -\rho(v)$, and the Clifford relation reads $\rho(v)^{2} = q(v)\cdot\mathrm{id}$ with $\rho(v)$ skew-adjoint. This is the single fact from which the formal self-adjointness of the Dirac operator is read off below.
+**Corollary (vectors act by skew-adjoint operators).** For $v \in V$, $\rho(v)^{*} = \rho(v^{\dagger}) = -\rho(v)$, because the dagger negates the vectors; so every vector acts by a **skew-adjoint** operator, $\rho(v)^{*} = -\rho(v)$, and the Clifford relation reads $\rho(v)^{2} = \mathfrak{Q}(v)\cdot\mathrm{id}$ with $\rho(v)$ skew-adjoint. This is the single fact from which the formal self-adjointness of the Dirac operator is read off below.
 
 ## The Adjoint as an Involution on Operators
 
@@ -61,7 +61,7 @@ so that $T\mapsto T^{*}$ is an involutive $\sigma$-antilinear anti-automorphism 
 
 **Proof.** The first two are the standard properties of the Hermitian-space adjoint with respect to a $\sigma$-sesquilinear form, and the third records the semilinearity: $(\lambda Ts,t) = \lambda(Ts,t)$ while $(s, T^{*}\sigma(\lambda)t) = \sigma(\lambda)(s,T^{*}t)$.
 
-**Corollary (self-adjoint, skew-adjoint and normal elements).** For $a \in \mathrm{Cl}(V,q)$,
+**Corollary (self-adjoint, skew-adjoint and normal elements).** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \rho(a) \text{ is self-adjoint} \iff a^{\dagger} = a, \qquad
@@ -75,7 +75,7 @@ and $\rho(a)$ is unitary iff $a^{\dagger}a = 1$, that is iff $a$ lies in the uni
 
 ### The General Rule
 
-**Theorem (adjoint of a composite one-sided action).** Let $T_1,\dots,T_k$ be $A$-linear operators on $S$ that admit adjoints, and let $a_1,\dots,a_k \in \mathrm{Cl}(V,q)$. Then
+**Theorem (adjoint of a composite one-sided action).** Let $T_1,\dots,T_k$ be $A$-linear operators on $S$ that admit adjoints, and let $a_1,\dots,a_k \in \mathrm{Cl}(V,\mathfrak{Q})$. Then
 
 $$
 \Bigl(\sum_{i} \rho(a_i)\,T_i\Bigr)^{*} = \sum_{i} T_i^{*}\,\rho\bigl(a_i^{\dagger}\bigr) .

@@ -2,20 +2,20 @@
 
 ## Introduction
 
-This is the reference article of the remarkable-subspace group of the chapter. The two subspaces themselves, with their bases and dimensions, are *Introduction to the Remarkable Subspaces of the Quaternions*; the involutions are *The Group of Involutions of the Quaternions*; the decompositions are *Decompositions Along the Remarkable Subspaces of the Quaternions*.
+This is the reference article of the remarkable-subspace group of the chapter. The two subspaces themselves, with their bases and dimensions, are *Introduction to the Remarkable Subspaces of the Quaternions*; the involutions are *Quaternion Involutions and Projections*; the decompositions are *Decompositions Along the Remarkable Subspaces of the Quaternions*.
 
 ## The Two Subspaces
 
 The two remarkable subspaces are
 $$
-\mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_0 , \qquad
-\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3 .
+\mathbb{R}_{\mathbb{H}}=\{\tilde q:\tilde q^{\natural}=\tilde q\}=\mathbb{R}e_0, \qquad
+\mathrm{Vect}(\mathbb{H})=\{\tilde q:\tilde q^{\natural}=-\tilde q\}=\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3.
 $$
 
 **Proposition.** They are supplementary and their intersection is the origin:
 $$
-\mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0 , \qquad
-\mathbb{R}_{\mathbb{H}}+\mathrm{Vect}(\mathbb{H})=\mathbb{H} , \qquad 1+3=4 .
+\mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0, \qquad
+\mathbb{R}_{\mathbb{H}}+\mathrm{Vect}(\mathbb{H})=\mathbb{H}, \qquad 1+3=4.
 $$
 The first is a subalgebra, indeed the centre, and the second is not closed under the product.
 
@@ -29,13 +29,13 @@ $$
 $$
 with multiplicity $+1$ on the scalar line and multiplicity $-1$ on the vector space, that is, $1$ and $3$. Its negative $-\natural$ has the signs exchanged, $-1$ on the scalar line and $+1$ on the vector space, so the two together have the eigenspaces
 $$
-\mathbb{R}_{\mathbb{H}}=\text{fixed space of }{}^{\natural}=\text{anti-fixed space of }-{}^{\natural} , \qquad
+\mathbb{R}_{\mathbb{H}}=\text{fixed space of }{}^{\natural}=\text{anti-fixed space of }-{}^{\natural}, \qquad
 \mathrm{Vect}(\mathbb{H})=\text{anti-fixed space of }{}^{\natural}=\text{fixed space of }-{}^{\natural}.
 $$
 
 ## The Axis Lines and the Planes They Fix
 
-Each axis line $\mathbb{R}\nu$ of the vector subspace, $\nu$ a unit imaginary quaternion, carries the inner involution $\iota_\nu(\tilde q)=\nu \tilde q\nu^{-1}$ of *The Group of Involutions of the Quaternions*.
+Each axis line $\mathbb{R}\nu$ of the vector subspace, $\nu$ a unit imaginary quaternion, carries the inner involution $\iota_\nu(\tilde q)=\nu \tilde q\nu^{-1}$ of *Quaternion Involutions and Projections*.
 
 | object | value |
 |---|---|
@@ -52,7 +52,7 @@ The reflection $\rho_\nu=-\iota_\nu$ has the same sign pattern with the labels e
 
 The remarkable subspaces of an algebra over $\mathbb{R}$ under inclusion form its **lattice of fixed spaces**, the intersections acting as meets and the sums as joins. For $\mathbb{H}$ the lattice is the diamond
 $$
-0\subsetneq\mathbb{R}_{\mathbb{H}}\subsetneq\mathbb{H} , \qquad 0\subsetneq\mathrm{Vect}(\mathbb{H})\subsetneq\mathbb{H} ,
+0\subsetneq\mathbb{R}_{\mathbb{H}}\subsetneq\mathbb{H}, \qquad 0\subsetneq\mathrm{Vect}(\mathbb{H})\subsetneq\mathbb{H},
 $$
 the two chains meeting only at their ends: the two proper subspaces are incomparable, they meet in $0$ and they join to $\mathbb{H}$. The lattice has exactly the four elements $0,\mathbb{R}_{\mathbb{H}},\mathrm{Vect}(\mathbb{H}),\mathbb{H}$, with no intermediate subspace beyond those.
 
@@ -82,4 +82,3 @@ The quaternion algebra has two remarkable real subspaces, the scalar line and th
 
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the definition, basis and role of the two subspaces.
 - *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), for the three additive decompositions and the polar one.
-- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), for the natural sign and the inner involutions of the axis lines.

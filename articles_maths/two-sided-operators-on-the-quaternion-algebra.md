@@ -36,7 +36,7 @@ The two-sided operators are the products of a left and a right multiplication, $
 
 ## The Adjoint that Swaps the Parameters
 
-**Theorem.** With respect to the plain form $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ the transpose of a two-sided operator swaps the parameters:
+**Theorem.** With respect to the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ the transpose of a two-sided operator swaps the parameters:
 
 $$
 T_{\tilde a,\tilde b}^{\sim}=T_{\tilde b,\tilde a}=L_{\tilde b}R_{\tilde a}.
@@ -50,7 +50,7 @@ $$
 
 ## The Criterion of Form Preservation
 
-**Theorem.** $T_{\tilde a,\tilde b}$ preserves the plain form, $\mathrm B(T\tilde p,T\tilde q)=\mathrm B(\tilde p,\tilde q)$ for all $\tilde p,\tilde q$, exactly when $\tilde b\tilde a=\pm e_0$.
+**Theorem.** $T_{\tilde a,\tilde b}$ preserves the plain form, $\langle T\tilde p,T\tilde q\rangle=\langle\tilde p,\tilde q\rangle$ for all $\tilde p,\tilde q$, exactly when $\tilde b\tilde a=\pm e_0$.
 
 *Proof.* For $T=T_{\tilde a,\tilde b}$ invertible, preservation of the form is equivalent to $T^{\sim}T=\mathrm{id}$; if $\tilde a=0$ or $\tilde b=0$ then $T=0$, which preserves the form only if the form were zero. Now by the composition law $T^{\sim}T=T_{\tilde b,\tilde a}T_{\tilde a,\tilde b}=T_{\tilde b\tilde a,\tilde b\tilde a}$, and $T_{\tilde c,\tilde d}=\mathrm{id}$ exactly when $\tilde c\tilde q\tilde d=\tilde q$ for all $\tilde q$; at $\tilde q=e_0$ this gives $\tilde c\tilde d=e_0$, so $\tilde d=\tilde c^{-1}$, and substituting gives $\tilde c\tilde q\tilde c^{-1}=\tilde q$ for all $\tilde q$, that is $\tilde c$ central. Hence $\tilde c=\tilde b\tilde a$ is central with $\tilde c^2=e_0$; a central element with $\tilde c^2=e_0$ is $\pm e_0$, so $\tilde b\tilde a=\pm e_0$. Conversely $\tilde b\tilde a=\pm e_0$ makes $\tilde b=\pm\tilde a^{-1}$, and then $T(\tilde q)=\tilde a\tilde q(\pm\tilde a^{-1})=\pm\tilde a\tilde q\tilde a^{-1}$, which preserves the form.
 
@@ -86,7 +86,7 @@ The two-sided operators $T_{\tilde a,\tilde b}(\tilde q)=\tilde a\tilde q\tilde 
 | $\mathcal T$ | The family of two-sided operators, $=\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
 | $T_{\tilde a,\tilde b}^{\sim}$ | Transpose with respect to $\mathrm B$ |
 | $\operatorname{Ad}_{\tilde a}$ | Inner automorphism $\tilde q\mapsto\tilde a\tilde q\tilde a^{-1}$ |
-| $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ | The plain form |
+| $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ | The plain form |
 
 ## Further Reading
 

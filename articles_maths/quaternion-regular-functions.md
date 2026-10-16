@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* fo
 
 The corpus's default base is a commutative ring with identity; the analysis requires the real numbers, so the operator is defined over $\mathbb{R}$ and the results are stated for domains in $\mathbb{R}^4$. A separate section treats the three-dimensional theory of the **reduced quaternions** $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a real vector space that is not a subalgebra, whose operator is the reduced Cauchy–Riemann operator of the Riesz system; because that module is a subspace of codimension one, its left and right regularity coincide and the theory is two-sided.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $\tilde q = q_0+q_1e_1+q_2e_2+q_3e_3$ with $q_\mu\in\mathbb{R}$; the conjugate is $\tilde q^{\natural} = q_0-\vec q$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$. The partial derivatives are $\partial_\mu = \partial/\partial q_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\vec f = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\vec f = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\vec f = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $\tilde q = q_0+q_1e_1+q_2e_2+q_3e_3$ with $q_\mu\in\mathbb{R}$; the conjugate is $\tilde q^{\natural} = q_0-\vec q$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The partial derivatives are $\partial_\mu = \partial/\partial q_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\vec f = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\vec f = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\vec f = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 
@@ -67,7 +67,7 @@ $$
 so $f$ is left-regular if and only if it solves the **Cauchy–Riemann–Fueter system**
 
 $$
-\partial_0f_0 = \mathrm{div}\,\vec f, \qquad \partial_0\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0 .
+\partial_0f_0 = \mathrm{div}\,\vec f, \qquad \partial_0\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0.
 $$
 
 *Proof.* Multiply out $e_\mu\partial_\mu(f_0+\vec f)$ term by term, using $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$ for pure quaternions: the scalar part collects $\partial_0f_0-\mathrm{div}\,\vec f$, and the vector part collects $\partial_0\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f$. Both parts must vanish.
@@ -117,7 +117,7 @@ The operator $D$ of this article is four-dimensional, and its square is not the 
 **Definition.** The **Moisil–Theodoresco operator**, or three-dimensional Cauchy–Riemann operator, is
 
 $$
-D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3 .
+D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3.
 $$
 
 It agrees with $D$ on functions independent of $q_0$, but its kernel is larger: $D_3f = 0$ does not imply $Df = 0$, since $D = \partial_0+D_3$.
@@ -145,7 +145,7 @@ a vector-valued function, and it is logarithmic: $\check\partial(\phi_1\phi_2) =
 **Proposition (the Riccati PDE).** A non-vanishing scalar $\phi$ solves the three-dimensional Schrödinger equation $\Delta_3\phi+v\phi = 0$ if and only if $\vec f = \check\partial\phi$ solves
 
 $$
-D_3\vec f+\vec f^2 = v .
+D_3\vec f+\vec f^2 = v.
 $$
 
 *Proof.* With $\vec f = \phi^{-1}\nabla\phi$, the curl vanishes, $\mathrm{rot}\vec f = \nabla(\phi^{-1})\times\nabla\phi = 0$, so $D_3\vec f = -\mathrm{div}\vec f$, and the quadratic term $\vec f^2 = -\lvert\vec f\rvert^2$ cancels the second term of the divergence, leaving $D_3\vec f+\vec f^2 = -\phi^{-1}\Delta\phi$.
@@ -161,7 +161,7 @@ The coefficient of the previous section is a gradient, $\vec f = \check\partial\
 $$
 D_3f+f\vec\alpha = 0,
 \qquad
-\vec\alpha = \alpha_1e_1+\alpha_2e_2+\alpha_3e_3 ,
+\vec\alpha = \alpha_1e_1+\alpha_2e_2+\alpha_3e_3,
 $$
 
 with an arbitrary vector-valued coefficient on the **right**. The side is not a convention: the identity below is a right-multiplication statement, and the left-hand equation $D_3f+\vec\alpha f = 0$ is the regular equation conjugated by division by a scalar, by the carrier identity of *Electromagnetism in Media*, so only the right-hand form carries the Schrödinger connection. The equation is not artificial — several first-order systems of the physics corpus reduce to it, and that reading, with the dictionary of coefficients, is in the physics articles. Only the static Maxwell member forces $\vec\alpha$ to be a gradient, so the Riccati theory of the previous section covers that member and not the others.
@@ -169,7 +169,7 @@ with an arbitrary vector-valued coefficient on the **right**. The side is not a 
 **The scalar-carrier identity, without the gradient hypothesis.** The identity behind the Riccati section needs only the right factor to be **scalar**, not the coefficient to be a gradient: for any vector-valued $\vec\beta$ and any scalar $u$,
 
 $$
-(D_3+M_{\vec\beta})(D_3-M_{\vec\beta})u = -\Delta_3u-(D_3\vec\beta)u-\vec\beta^2u .
+(D_3+M_{\vec\beta})(D_3-M_{\vec\beta})u = -\Delta_3u-(D_3\vec\beta)u-\vec\beta^2u.
 $$
 
 *Proof.* Since $u$ is scalar, $D_3(u\vec\beta) = (D_3u)\vec\beta+u\,D_3\vec\beta$; therefore $(D_3+M_{\vec\beta})(D_3-M_{\vec\beta})u = D_3(D_3u-u\vec\beta)+(D_3u-u\vec\beta)\vec\beta = -\Delta_3u-u\,D_3\vec\beta-u\vec\beta^2$, the mixed terms cancelling. The Riccati PDE $D_3\vec f+\vec f^2 = v$ is thus the statement that the bracket $-D_3\vec\beta-\vec\beta^2$ is a *prescribed* scalar, which is what $\vec\beta = \check\partial\phi$ achieves and a general $\vec\beta$ does not.
@@ -177,7 +177,7 @@ $$
 **Proposition (componentwise reduction to four scalar Schrödinger operators).** Let the coefficient be **separated**, $\vec\alpha = \alpha_1(q_1)e_1+\alpha_2(q_2)e_2+\alpha_3(q_3)e_3$, each $\alpha_k$ a function of its own variable alone, and let $u = \sum_ku_ke_k$. Put $\vec\alpha^{(0)} = \vec\alpha$ and, for $k = 1,2,3$,
 
 $$
-\vec\alpha^{(k)} = \alpha_ke_k-\sum_{j\neq k}\alpha_je_j = -e_k\vec\alpha e_k ,
+\vec\alpha^{(k)} = \alpha_ke_k-\sum_{j\neq k}\alpha_je_j = -e_k\vec\alpha e_k,
 $$
 
 the coefficient with the two components other than $k$ **reversed**. Then
@@ -197,13 +197,13 @@ and each $D_3\vec\alpha^{(k)}$ is a **scalar**.
 $$
 (-\Delta_3+w_k)f_k = 0,
 \qquad
-w_k = D_3\vec\alpha^{(k)}-\vec\alpha^2 ,
+w_k = D_3\vec\alpha^{(k)}-\vec\alpha^2,
 $$
 
 so the four components of any solution solve four *scalar* Schrödinger equations. Conversely, if scalar functions $g_k$ solve $(-\Delta_3+v_k)g_k = 0$ with
 
 $$
-v_k = -D_3\vec\alpha^{(k)}-\vec\alpha^2 ,
+v_k = -D_3\vec\alpha^{(k)}-\vec\alpha^2,
 $$
 
 then $f = (D_3-M_{\vec\alpha})g$ with $g = \sum_kg_ke_k$ solves $D_3f+f\vec\alpha = 0$. The first-order equation therefore inherits the theory of the four scalar operators — fundamental solutions, solvability, boundary values — and the map $g\mapsto(D_3-M_{\vec\alpha})g$ is the way back. It is the exact analogue of the previous section's construction $\vec f = \check\partial\phi$, with four potentials and four carriers in place of the single one.
@@ -241,7 +241,7 @@ $$
 act on the right and diagonalise a *scalar* shift: for any function $\nu$,
 
 $$
-P^\pm_k\,(D_3+M_{\nu}) = \bigl(D_3 \pm M_{i\nu e_k}\bigr)P^\pm_k .
+P^\pm_k\,(D_3+M_{\nu}) = \bigl(D_3 \pm M_{i\nu e_k}\bigr)P^\pm_k.
 $$
 
 So an equation whose coefficient is a scalar multiple of one basis vector splits into two equations whose coefficients differ in sign, and a coefficient that is a sum of two independent shifts splits into four. The identity above is the statement that the projection commutes with the shifted operator up to the reversal of the shift, and it was checked symbolically for both signs and all three $k$.
@@ -259,7 +259,7 @@ and the decisive feature is that $\mathcal{A}$ is a three-dimensional real vecto
 **Definition (reduced Cauchy–Riemann operator).** On $\mathcal{A}$-valued functions of $\tilde q = q_0+q_1e_1+q_2e_2$ in a domain of $\mathbb{R}^3$, the **reduced Cauchy–Riemann operator** and its conjugate are
 
 $$
-D = \partial_0+e_1\partial_1+e_2\partial_2, \qquad \bar D = \partial_0-e_1\partial_1-e_2\partial_2 .
+D = \partial_0+e_1\partial_1+e_2\partial_2, \qquad \bar D = \partial_0-e_1\partial_1-e_2\partial_2.
 $$
 
 **Proposition.** $D\bar D = \bar DD = \Delta_3 = \partial_0^2+\partial_1^2+\partial_2^2$, so the two operators factor the Laplacian of $\mathbb{R}^3$ and every monogenic function is harmonic in each component.
@@ -279,7 +279,7 @@ $$
 so the equation $Df = 0$ is the first-order system
 
 $$
-\partial_0f_0 = \partial_1f_1+\partial_2f_2, \qquad \partial_0f_1 = -\partial_1f_0, \qquad \partial_0f_2 = -\partial_2f_0, \qquad \partial_1f_2 = \partial_2f_1 .
+\partial_0f_0 = \partial_1f_1+\partial_2f_2, \qquad \partial_0f_1 = -\partial_1f_0, \qquad \partial_0f_2 = -\partial_2f_0, \qquad \partial_1f_2 = \partial_2f_1.
 $$
 
 *Proof.* Direct expansion with $e_1^2 = e_2^2 = -e_0$ and $e_1e_2 = e_3 = -e_2e_1$; the $e_3$-component collects the two cross products $\partial_1f_2\,e_1e_2$ and $\partial_2f_1\,e_2e_1$, whose difference is $(\partial_1f_2-\partial_2f_1)e_3$.
@@ -295,7 +295,7 @@ $$
 and both are equivalent to the **Riesz system** for the field $F = (f_0,-f_1,-f_2)$,
 
 $$
-\operatorname{div}F = 0, \qquad \operatorname{curl}F = 0 .
+\operatorname{div}F = 0, \qquad \operatorname{curl}F = 0.
 $$
 
 *Proof.* Expanding $fD = \sum_\mu(\partial_\mu f)e_\mu$ gives the same scalar, $e_1$ and $e_2$ components as $Df$ above, and the opposite $e_3$ component $-(\partial_1f_2-\partial_2f_1)$; the two systems of four equations therefore have the same solutions. For the second statement, $\operatorname{div}F = \partial_0f_0-\partial_1f_1-\partial_2f_2$ is the scalar equation, the three components of $\operatorname{curl}F$ are $\partial_1F_2-\partial_2F_1 = -(\partial_1f_2-\partial_2f_1)$, $\partial_2F_0-\partial_0F_2 = \partial_2f_0+\partial_0f_2$ and $\partial_0F_1-\partial_1F_0 = -(\partial_0f_1+\partial_1f_0)$, and the four equations written above are exactly these four.
@@ -335,7 +335,7 @@ $$
 
 $$
 |X_n^{l,\dagger}(\tilde q)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,|\tilde q|^n, \qquad
-|Y_n^{m,\dagger}(\tilde q)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+m)!}{(n+1-m)!}}\,|\tilde q|^n .
+|Y_n^{m,\dagger}(\tilde q)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+m)!}{(n+1-m)!}}\,|\tilde q|^n.
 $$
 
 **Theorem (dimension of the monogenic polynomials).** $\dim\mathcal{R}^+(B_r;\mathcal{A};n) = 2n+3$.
@@ -366,7 +366,7 @@ with real coefficients, where $g$ is the **main part** of $f$ and $h$ is the hyp
 **Theorem (fundamental solution).** The Cauchy kernel $G(\tilde q) = \tilde q^{\natural}/|\tilde q|^4$ satisfies $DG = 0$ for $\tilde q\neq0$ and, in the sense of distributions,
 
 $$
-DG = 2\pi^2\delta_0 e_0 .
+DG = 2\pi^2\delta_0 e_0.
 $$
 
 **Theorem (Cauchy integral formula).** Let $f$ be continuously differentiable on a bounded domain $\Omega\subseteq\mathbb{H}$ with piecewise smooth boundary $\partial\Omega$, and let $q_0$ be an interior point. Then
@@ -378,7 +378,7 @@ $$
 where $n$ is the $\mathbb{H}$-valued outward unit normal. If $f$ is regular, the volume term vanishes and
 
 $$
-f(q_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_0)\,n(\tilde q)f(\tilde q)\,dS .
+f(q_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_0)\,n(\tilde q)f(\tilde q)\,dS.
 $$
 
 *Proof.* These are the standard results of Clifford analysis in dimension four; the kernel and the constant are computed from the distributional identity $DG = 2\pi^2\delta_0e_0$, which is verified by integrating over a ball of radius $\varepsilon$ and using the homogeneity of $G$. The formula is derived by applying Stokes' theorem to the form $G(\tilde q-q_0)n(\tilde q)f(\tilde q)\,dS$ and subtracting the singular contribution at $q_0$, all products being quaternion products with $G$ on the left and $f$ on the right.

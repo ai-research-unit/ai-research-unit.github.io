@@ -8,7 +8,7 @@ This article defines the family, proves the failure of the escape radius, exhibi
 
 The split-quaternion algebra, its conjugation, its norm, its idempotents and its subalgebras are from *Split-Quaternion Algebra*, *Split-Quaternion Norm and Invertibility*, *Split-Quaternion Ideals and Peirce Decomposition* and *Split-Quaternion Subspaces and the Involutions*; the adjoint action, the Lorentz group and the isomorphism $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$ are from *Split-Quaternion Rotations and the Lorentz Group*; the hyperbolic model is from *Split-Quaternions and Hyperbolic Geometry*; the complex quadratic family is from *The Julia Sets of a Complex Polynomial* and the split-complex one from *The Split-Complex Julia Sets*; and the dimensions are *Fractal Geometry*'s. The quaternion thread it neighbours is *The Quaternion Quadratic Map and Its Julia Sets* and its companions. No physics is invoked.
 
-Throughout, $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with $e_1^2=-e_0$ and $e_2^2=e_3^2=e_0$, $e_1e_2=e_3=-e_2e_1$; the conjugation is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+q_1^2-q_2^2-q_3^2$, and $|\tilde q|$ is the Euclidean norm $\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$, the positive-definite norm of the underlying space $\mathbb{R}^4$, kept distinct from $N$. The **null cone** is $\{\tilde q: N(\tilde q)=0\}$, the set of zero divisors. The scalar line is $S=\mathbb{R}e_0$ and the vector subspace is $V=\operatorname{span}\{e_1,e_2,e_3\}$.
+Throughout, $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with $e_1^2=-e_0$ and $e_2^2=e_3^2=e_0$, $e_1e_2=e_3=-e_2e_1$; the conjugation is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+q_1^2-q_2^2-q_3^2$, and $|\tilde q|$ is the Euclidean norm $\sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$, the positive-definite norm of the underlying space $\mathbb{R}^4$, kept distinct from $\langle\cdot\rangle_{\natural}$. The **null cone** is $\{\tilde q: \langle\tilde q\rangle_{\natural}=0\}$, the set of zero divisors. The scalar line is $S=\mathbb{R}e_0$ and the vector subspace is $V=\operatorname{span}\{e_1,e_2,e_3\}$.
 
 ## The Family and the Indefinite Geometry
 
@@ -22,13 +22,13 @@ the boundedness being with respect to the Euclidean norm $|\cdot|$.
 
 **Remark (the definition is by boundedness, not by a radius).** In the definite algebra the two definitions agree, because a radius exists beyond which every point escapes. Here they do not agree, and the definition by a radius is not available; this is the content of the next section. **The filled Julia set is therefore defined as the set of points whose orbit is bounded**, and the escape is not detected by a norm test.
 
-**Proposition (the critical set).** The differential of $f_c$ at $\tilde q$ is $\tilde h\mapsto\tilde q\tilde h+\tilde h\tilde q$, and it is singular **if and only if** $q_0=0$ or $N(\tilde q)=0$; equivalently the critical set is the union of the vector subspace $V$ and the null cone,
+**Proposition (the critical set).** The differential of $f_c$ at $\tilde q$ is $\tilde h\mapsto\tilde q\tilde h+\tilde h\tilde q$, and it is singular **if and only if** $q_0=0$ or $\langle\tilde q\rangle_{\natural}=0$; equivalently the critical set is the union of the vector subspace $V$ and the null cone,
 
 $$
-\mathcal{C}=\{\tilde q : q_0=0\}\cup\{\tilde q : N(\tilde q)=0\} .
+\mathcal{C}=\{\tilde q : q_0=0\}\cup\{\tilde q : \langle\tilde q\rangle_{\natural}=0\} .
 $$
 
-*Proof.* Under the matrix model $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ the differential is $h\mapsto qh+hq$; if $q$ has eigenvalues $\lambda_1,\lambda_2$ then this map has eigenvalues $\lambda_i+\lambda_j$ on the basis $v_iv_j^{\!\top}$, so it is singular exactly when some pair of eigenvalues sums to zero. For real eigenvalues this means $\lambda_1+\lambda_2=2q_0=0$, or $\lambda_1\lambda_2=N(q)=0$; for a conjugate complex pair it means $2\operatorname{Re}\lambda=2q_0=0$. Hence the condition is $q_0=0$ or $N(\tilde q)=0$. The verification at the nilpotent $e_1+e_2$ (kernel containing $e_1$) and at the invertible element $e_2+e_3$ (kernel containing $e_1$) is recorded in the companion file.
+*Proof.* Under the matrix model $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ the differential is $h\mapsto qh+hq$; if $q$ has eigenvalues $\lambda_1,\lambda_2$ then this map has eigenvalues $\lambda_i+\lambda_j$ on the basis $v_iv_j^{\!\top}$, so it is singular exactly when some pair of eigenvalues sums to zero. For real eigenvalues this means $\lambda_1+\lambda_2=2q_0=0$, or $\lambda_1\lambda_2=\langle q\rangle_{\natural}=0$; for a conjugate complex pair it means $2\operatorname{Re}\lambda=2q_0=0$. Hence the condition is $q_0=0$ or $\langle\tilde q\rangle_{\natural}=0$. The verification at the nilpotent $e_1+e_2$ (kernel containing $e_1$) and at the invertible element $e_2+e_3$ (kernel containing $e_1$) is recorded in the companion file.
 
 **Remark.** The critical set of the split-quaternion quadratic map is the three-dimensional subspace $V$ together with the three-dimensional null cone, and not the single point $0$; **there is no unique critical point**, and the connectedness locus cannot be tested by iterating one point. The natural substitute is the critical orbit of the subalgebra $\mathbb{R}[c]$, which does have a distinguished starting point, and it is the one used in *The Split-Quaternion Mandelbrot Set*. The whole subspace $V$ is critical because a purely vector element has trace zero, and the whole null cone is critical because a zero divisor has vanishing determinant.
 
@@ -38,15 +38,15 @@ $$
 
 *Proof.* Take $\tilde a=e_0+e_2$ and $\tilde b=e_0-e_2$; the multiplication table gives $\tilde a\tilde b=0$, while $|\tilde a|=|\tilde b|=\sqrt2$. Hence $|\tilde a\tilde b|=0$ while $|\tilde a||\tilde b|=2$, and no positive constant $\kappa$ exists. (The opposite inequality with a constant does hold, since the product is a bounded bilinear map of a finite-dimensional space; it is the lower bound that fails, and the lower bound is the one the escape lemma needs.)
 
-**Theorem (no escape radius).** For $c=0$ the filled Julia set is unbounded: every element of the null cone of the vector subspace, $\{\tilde q \in V: N(\tilde q)=0\}$, lies in $K_0$, and this set is a double cone of arbitrarily large Euclidean radius.
+**Theorem (no escape radius).** For $c=0$ the filled Julia set is unbounded: every element of the null cone of the vector subspace, $\{\tilde q \in V: \langle\tilde q\rangle_{\natural}=0\}$, lies in $K_0$, and this set is a double cone of arbitrarily large Euclidean radius.
 
-*Proof.* For $\tilde q\in V$ one has $\tilde q^2=2q_0\tilde q-N(\tilde q)e_0=-N(\tilde q)e_0$; if in addition $N(\tilde q)=0$ then $\tilde q^2=0$, so $f_0(\tilde q)=0$ and the orbit is $\tilde q\mapsto0\mapsto0\mapsto\cdots$, bounded. The set $\{\tilde q\in V:N(\tilde q)=0\}$ is the double cone $q_1^2=q_2^2+q_3^2$, which contains $t(e_1+e_2)$ for every $t$ and is unbounded. Hence $K_0$ is unbounded and contains points of arbitrarily large Euclidean radius.
+*Proof.* For $\tilde q\in V$ one has $\tilde q^2=2q_0\tilde q-\langle\tilde q\rangle_{\natural}e_0=-\langle\tilde q\rangle_{\natural}e_0$; if in addition $\langle\tilde q\rangle_{\natural}=0$ then $\tilde q^2=0$, so $f_0(\tilde q)=0$ and the orbit is $\tilde q\mapsto0\mapsto0\mapsto\cdots$, bounded. The set $\{\tilde q\in V:\langle\tilde q\rangle_{\natural}=0\}$ is the double cone $q_1^2=q_2^2+q_3^2$, which contains $t(e_1+e_2)$ for every $t$ and is unbounded. Hence $K_0$ is unbounded and contains points of arbitrarily large Euclidean radius.
 
 **Corollary (the escape-radius test is unavailable).** In the split-quaternion family there is no radius $R$ with the property that $|\tilde q_n|>R$ implies escape.
 
 *Proof.* For $c=0$ the point $t(e_1+e_2)$ has bounded orbit and Euclidean norm $\sqrt2\,|t|$, unbounded in $t$; so no radius separates the bounded from the unbounded orbits of $f_0$.
 
-**Remark (what the escape is tested on).** The menu's phrase "the escape is tested on the quadratic form and not on the norm" records the direction of the difficulty but not its resolution: the quadratic form $N$ is not sound either, because $|N(\tilde q)|\leq|\tilde q|^2$ and the equality is approached on the null cone, so $N$ can vanish on points of large Euclidean norm that are bounded, exactly as in the theorem. **The honest definition is the boundedness of the orbit itself**, and no single scalar quantity in the algebra detects the escape. The consequences are carried into *The Split-Quaternion Mandelbrot Set* and the rest of the thread.
+**Remark (what the escape is tested on).** The menu's phrase "the escape is tested on the quadratic form and not on the norm" records the direction of the difficulty but not its resolution: the quadratic form $\langle\cdot\rangle_{\natural}$ is not sound either, because $|\langle\tilde q\rangle_{\natural}|\leq|\tilde q|^2$ and the equality is approached on the null cone, so $\langle\cdot\rangle_{\natural}$ can vanish on points of large Euclidean norm that are bounded, exactly as in the theorem. **The honest definition is the boundedness of the orbit itself**, and no single scalar quantity in the algebra detects the escape. The consequences are carried into *The Split-Quaternion Mandelbrot Set* and the rest of the thread.
 
 ## The Empty Case and the Two Extremes
 
@@ -68,15 +68,15 @@ The inner automorphisms form the group of all automorphisms of the algebra over 
 
 *Proof.* An algebra automorphism preserves squares, so $\operatorname{Ad}_{\tilde u}(\tilde q^2)=(\operatorname{Ad}_{\tilde u}\tilde q)^2$; adding $\operatorname{Ad}_{\tilde u}(c)$ gives the identity. The group of automorphisms is the inner group because $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ is central simple, and the rest is the theorem on the adjoint representation of *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Remark (the menu's $SO(2,2)$).** The isometry group of the norm form $N$ on $\mathbb{R}^{2,2}$ is $O(2,2)$, and the menu names $SO(2,2)$ as the invariance group acting by the adjoint representation. **The group that actually intertwines the iteration is strictly smaller, namely the automorphism group** $\operatorname{Inn}\cong \operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$. An element of $O(2,2)$ need not preserve the product — the map $\tilde q\mapsto g\tilde q h^{-1}$ with $g,h\in\operatorname{SL}_2(\mathbb{R})$ preserves the norm, being the determinant, but satisfies $(g\tilde qh^{-1})^2=g\tilde qh^{-1}g\tilde qh^{-1}$, which is not $g\tilde q^2h^{-1}$ unless $g$ and $h$ commute with $\tilde q$; the orbit of the family under $O(2,2)$ is not one dynamical object. Only the automorphisms act on the parameter and the point simultaneously, so the equivariance group is the Lorentz group $SO^{+}(2,1)$ of the vector subspace, and the article states it.
+**Remark (the menu's $SO(2,2)$).** The isometry group of the norm form $\langle\cdot\rangle_{\natural}$ on $\mathbb{R}^{2,2}$ is $O(2,2)$, and the menu names $SO(2,2)$ as the invariance group acting by the adjoint representation. **The group that actually intertwines the iteration is strictly smaller, namely the automorphism group** $\operatorname{Inn}\cong \operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$. An element of $O(2,2)$ need not preserve the product — the map $\tilde q\mapsto g\tilde q h^{-1}$ with $g,h\in\operatorname{SL}_2(\mathbb{R})$ preserves the norm, being the determinant, but satisfies $(g\tilde qh^{-1})^2=g\tilde qh^{-1}g\tilde qh^{-1}$, which is not $g\tilde q^2h^{-1}$ unless $g$ and $h$ commute with $\tilde q$; the orbit of the family under $O(2,2)$ is not one dynamical object. Only the automorphisms act on the parameter and the point simultaneously, so the equivariance group is the Lorentz group $SO^{+}(2,1)$ of the vector subspace, and the article states it.
 
 **Remark (the anti-automorphisms).** The conjugation ${}^{\natural}$ and the reversal $\rho$ of *Split-Quaternion Algebra* are anti-automorphisms, and they too satisfy $\rho(\tilde q^2)=\rho(\tilde q)^2$, so they commute with $f_c$ whenever they fix $c$: the conjugation fixes a real parameter, and the reversal fixes the points of the plane $\operatorname{span}\{e_1,e_2\}$ by *Split-Quaternion Subspaces and the Involutions*. The full symmetry of a member is generated by the automorphisms and the anti-automorphisms fixing $c$, an enlargement of the Lorentz group by the reflections it does not contain.
 
 ## The Slice Reductions
 
-**Proposition (the parameter's subalgebra).** Let $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$. Then $\mathbb{R}[c]$ is a subalgebra, the critical orbit lies in it, and its isomorphism type is decided by the sign of $N(\vec c)$: it is a copy of $\mathbb{C}$ if $N(\vec c)>0$ (the vector part timelike), a copy of the split-complex algebra $\mathbb{D}$ if $N(\vec c)<0$ (the vector part spacelike), and the algebra of dual numbers if $N(\vec c)=0$ (the vector part null).
+**Proposition (the parameter's subalgebra).** Let $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$. Then $\mathbb{R}[c]$ is a subalgebra, the critical orbit lies in it, and its isomorphism type is decided by the sign of $\langle \vec c\rangle_{\natural}$: it is a copy of $\mathbb{C}$ if $\langle \vec c\rangle_{\natural}>0$ (the vector part timelike), a copy of the split-complex algebra $\mathbb{D}$ if $\langle \vec c\rangle_{\natural}<0$ (the vector part spacelike), and the algebra of dual numbers if $\langle \vec c\rangle_{\natural}=0$ (the vector part null).
 
-*Proof.* The span of $1$ and $c$ is closed under multiplication; the critical orbit starts at $0$ and stays in it as in the definite case. The minimal polynomial of $c$ is $x^2-2c_0x+N(c)$, with $N(c)=c_0^2+N(\vec c)$, so its discriminant is $4c_0^2-4N(c)=-4N(\vec c)$; the three cases correspond to a negative discriminant (complex roots, the algebra $\mathbb{C}$), a positive one (two real roots, the algebra $\mathbb{D}$), and a zero one (a double root, the dual numbers).
+*Proof.* The span of $1$ and $c$ is closed under multiplication; the critical orbit starts at $0$ and stays in it as in the definite case. The minimal polynomial of $c$ is $x^2-2c_0x+\langle c\rangle_{\natural}$, with $\langle c\rangle_{\natural}=c_0^2+\langle \vec c\rangle_{\natural}$, so its discriminant is $4c_0^2-4N(c)=-4N(\vec c)$; the three cases correspond to a negative discriminant (complex roots, the algebra $\mathbb{C}$), a positive one (two real roots, the algebra $\mathbb{D}$), and a zero one (a double root, the dual numbers).
 
 **Proposition (the complex and split-complex slices).** On $\mathbb{R}[c]$ the restriction of $f_c$ is the quadratic map of the subalgebra, conjugated to $z\mapsto z^2+\kappa$ in the complex case and to the split-complex map $A\mapsto A^2+C$ in the split-complex case, where the conjugate parameter is the image of $c$ under the isomorphism.
 
@@ -88,7 +88,7 @@ $$
 A_{\pm}^{(n+1)}=\bigl(A_\pm^{(n)}\bigr)^2+C_\pm , \qquad A_\pm^{(0)}=\text{the components of } A , \quad C_\pm=\text{the components of } c .
 $$
 
-Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $N(\vec c)>0$ the corresponding statement is a single complex orbit.
+Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $\langle \vec c\rangle_{\natural}>0$ the corresponding statement is a single complex orbit.
 
 *Proof.* The idempotents satisfy $\tilde\pi_1^2=\tilde\pi_1$, $\tilde\pi_2^2=\tilde\pi_2$ and $\tilde\pi_1\tilde\pi_2=0$ by *Split-Quaternion Ideals and Peirce Decomposition*, and the algebra $\mathbb{D}_2$ is the direct sum $\mathbb{R}\tilde\pi_1\oplus\mathbb{R}\tilde\pi_2$; squaring is componentwise in this basis, $(A_+\tilde\pi_1+A_-\tilde\pi_2)^2=A_+^2\tilde\pi_1+A_-^2\tilde\pi_2$, and adding $c$ adds the components. The direct computation is recorded in the companion file. The complex case has no real idempotents, and its orbit is the single complex orbit.
 
@@ -106,9 +106,9 @@ Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each
 
 **(b) The parameter $c=2e_2$.** The split-complex components are $C_+=2$ and $C_-=-2$; the real map $u\mapsto u^2+2$ has empty filled Julia set, so the invariant slice is empty; the critical orbit escapes, and the numerical search finds no bounded orbit.
 
-**(c) The parameter $c=e_1$.** Then $N(\vec c)=1>0$, the subalgebra $\mathbb{R}[e_1]=\operatorname{span}\{e_0,e_1\}\cong\mathbb{C}$, and the critical orbit is the complex orbit of $z\mapsto z^2+i$; it is bounded, and $e_1$ lies in the connectedness locus.
+**(c) The parameter $c=e_1$.** Then $\langle \vec c\rangle_{\natural}=1>0$, the subalgebra $\mathbb{R}[e_1]=\operatorname{span}\{e_0,e_1\}\cong\mathbb{C}$, and the critical orbit is the complex orbit of $z\mapsto z^2+i$; it is bounded, and $e_1$ lies in the connectedness locus.
 
-**(d) The parameter $c=e_2$.** Then $N(\vec c)=-1<0$, the subalgebra is the split-complex plane $\mathbb{D}_2$, and the idempotent components are $C_+=1$, $C_-=-1$; the real map $u\mapsto u^2+1$ has no bounded orbit, since $u^2+1>|u|$ for every real $u$, so the critical orbit escapes in the $+$ direction and $K_{e_2}\cap\mathbb{D}_2$ is empty. The parameter is outside the connectedness locus.
+**(d) The parameter $c=e_2$.** Then $\langle \vec c\rangle_{\natural}=-1<0$, the subalgebra is the split-complex plane $\mathbb{D}_2$, and the idempotent components are $C_+=1$, $C_-=-1$; the real map $u\mapsto u^2+1$ has no bounded orbit, since $u^2+1>|u|$ for every real $u$, so the critical orbit escapes in the $+$ direction and $K_{e_2}\cap\mathbb{D}_2$ is empty. The parameter is outside the connectedness locus.
 
 ## Summary
 
@@ -119,9 +119,9 @@ The split-quaternion quadratic map $f_c(\tilde q)=\tilde q^2+c$ is the pattern o
 | Symbol | Meaning |
 |---|---|
 | $f_c(\tilde q)=\tilde q^2+c$ | The split-quaternion quadratic map |
-| $N(\tilde q)=q_0^2+q_1^2-q_2^2-q_3^2$ | The indefinite norm, signature $(2,2)$ |
-| $\lvert\cdot\rvert$ | The Euclidean norm of $\mathbb{R}^4$, distinct from $N$ |
-| Null cone | $\{\tilde q:N(\tilde q)=0\}$, the zero divisors, the critical set |
+| $\langle\tilde q\rangle_{\natural}=q_0^2+q_1^2-q_2^2-q_3^2$ | The indefinite norm, signature $(2,2)$ |
+| $\lvert\cdot\rvert$ | The Euclidean norm of $\mathbb{R}^4$, distinct from $\langle\cdot\rangle_{\natural}$ |
+| Null cone | $\{\tilde q:\langle\tilde q\rangle_{\natural}=0\}$, the zero divisors, the critical set |
 | $K_c$, $J_c=\partial K_c$ | Filled Julia set (bounded orbits); Julia set |
 | $\operatorname{Ad}_{\tilde u}$ | Inner automorphism; group $\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$ |
 | $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$ | Subalgebra of the parameter and the critical orbit |

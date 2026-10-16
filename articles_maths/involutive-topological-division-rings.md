@@ -73,7 +73,7 @@ is a closed subgroup of $D^\times$.
 
 ## Examples
 
-**Example (the quaternions $\mathbb{H}$).** With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_1e_1 + q_2e_2 + q_3e_3$, and $N(\tilde q) = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.
+**Example (the quaternions $\mathbb{H}$).** With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_1e_1 + q_2e_2 + q_3e_3$, and $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.
 
 **Example ($\mathbb{C}$ with the conjugation).** The field of complex numbers is a topological division ring with the conjugation, an involution of the second kind because its centre is $\mathbb{C}$ and the involution acts nontrivially on it; the self-adjoint elements are the reals, a closed subfield of index two, and $N(Z) = Z\bar Z = |Z|^2$.
 

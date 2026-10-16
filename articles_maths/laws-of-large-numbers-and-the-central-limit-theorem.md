@@ -9,11 +9,11 @@ This article proves both, together with the refinements that make them usable: t
 
 Three boundaries are held.
 
-- The **notation and the groundwork** are those of *Measure-Theoretic Probability*: $(\Omega,\mathcal{F},\mathbb{P})$, $\mu_X$, $\mathbb{E}$, $\operatorname{Var}$, a.s., $\varphi_X(t) = \mathbb{E}[e^{itX}]$, and the four modes of convergence with the implications established there. The **independence** and the **product measure** are *Independence and Conditional Expectation*, and the **conditional expectation** with its properties is used below.
+- The **notation and the groundwork** are those of *Measure-Theoretic Probability*: $(\Omega,\mathcal{F},\mathbb{P})$, $\mu_X$, $\mathbb{E}$, $\operatorname{Var}$, a.s., $\varphi_X(t) = \mathbb{E}[\exp(itX)]$, and the four modes of convergence with the implications established there. The **independence** and the **product measure** are *Independence and Conditional Expectation*, and the **conditional expectation** with its properties is used below.
 - The **martingale theory** — the maximal inequalities of Doob, the optional stopping theorem, the martingale convergence theorem and the martingale central limit theorem — is the subject of this article, and the **functional limit theory** and the invariance principle are deferred; where a result belongs there it is named and deferred.
 - The **ergodic-theoretic form** of the law of large numbers — the convergence of the time averages of a measure-preserving transformation, with independent sequences as the special case of a Bernoulli shift — is treated here and the comparison is made in the prose rather than in the proofs. No physics is invoked.
 
-Throughout, $X_1, X_2, \dots$ are independent and identically distributed real random variables with mean $\mu = \mathbb{E}[X_1] \in \mathbb{R}$ and variance $\sigma^2 = \operatorname{Var}(X_1) \in (0,\infty)$ when the variance is finite; $S_n = X_1 + \cdots + X_n$ is the partial sum, $\bar X_n = S_n/n$ the sample mean, and $Z_n = (S_n - n\mu)/(\sigma\sqrt n)$ the standardised sum. The characteristic function is $\varphi(t) = \mathbb{E}[e^{itX_1}]$, the standard normal distribution is $N(0,1)$ with distribution function $\Phi$, and $X_n \xrightarrow{d} X$ denotes convergence in distribution.
+Throughout, $X_1, X_2, \dots$ are independent and identically distributed real random variables with mean $\mu = \mathbb{E}[X_1] \in \mathbb{R}$ and variance $\sigma^2 = \operatorname{Var}(X_1) \in (0,\infty)$ when the variance is finite; $S_n = X_1 + \cdots + X_n$ is the partial sum, $\bar X_n = S_n/n$ the sample mean, and $Z_n = (S_n - n\mu)/(\sigma\sqrt n)$ the standardised sum. The characteristic function is $\varphi(t) = \mathbb{E}[\exp(itX_1)]$, the standard normal distribution is $N(0,1)$ with distribution function $\Phi$, and $X_n \xrightarrow{d} X$ denotes convergence in distribution.
 
 ## Characteristic Functions and the Continuity Theorem
 
@@ -33,7 +33,7 @@ $$
 
 *Proof.* Integrate the identity $1 - \Re\varphi(t) = \int (1 - \cos tx)\, d\mu(x)$ over $-u \le t \le u$ and use $(1/u)\int_{-u}^u(1-\cos tx)\,dt = 1 - \sin(ux)/(ux)$, which is at least $1/2$ for $|ux| \ge 2$; this last inequality gives, after dividing by $u$, the bound $\mu(|x|\ge 2/u)\le \frac{2}{u}\int_{-u}^{u}(1 - \Re\varphi(t))\,dt$ on the union of the two tails.
 
-The continuity theorem is the reason the central limit theorem is proved by computing the limit of the characteristic functions: one computes $\varphi_{Z_n}(t) \to e^{-t^2/2}$ for every $t$, observes that the limit is continuous, and invokes Lévy. The same pattern proves the convergence of the binomial to the normal, of the Poisson to the normal in the appropriate regime, and of the triangular-array limits of the next sections.
+The continuity theorem is the reason the central limit theorem is proved by computing the limit of the characteristic functions: one computes $\varphi_{Z_n}(t) \to \exp(-t^2/2)$ for every $t$, observes that the limit is continuous, and invokes Lévy. The same pattern proves the convergence of the binomial to the normal, of the Poisson to the normal in the appropriate regime, and of the triangular-array limits of the next sections.
 
 ## The Weak Law of Large Numbers
 
@@ -63,7 +63,7 @@ $$
 
 by dominated convergence, because $|X_1|\mathbf{1}_{\{|X_1|\le n\}}\le|X_1| \in L^1$; hence $\bar Y_n \xrightarrow{\mathbb{P}} \mu$ by Chebyshev. It remains to control the discarded mass: $\mathbb{P}(\bigcup_{i\le n}\{X_i \neq Y_{n,i}\}) \leq n\mathbb{P}(|X_1| > n) \to 0$ since $n\mathbf{1}_{\{|X_1|>n\}}\le|X_1|\mathbf{1}_{\{|X_1|>n\}}$ and $X_1$ is integrable, and on the complement the two averages coincide.
 
-The truncation argument is the standard method for extracting a law of large numbers from an integrability hypothesis, and it identifies the correct hypothesis: the weak law holds precisely when the truncated means converge to $\mu$, which fails exactly for the distributions with $\mathbb{E}|X_1| = \infty$ and a Cauchy-like tail. The prototypical failure is the Cauchy distribution, whose characteristic function is $e^{-|t|}$ and for which the sample mean has the same Cauchy distribution for every $n$, so it does not converge.
+The truncation argument is the standard method for extracting a law of large numbers from an integrability hypothesis, and it identifies the correct hypothesis: the weak law holds precisely when the truncated means converge to $\mu$, which fails exactly for the distributions with $\mathbb{E}|X_1| = \infty$ and a Cauchy-like tail. The prototypical failure is the Cauchy distribution, whose characteristic function is $\exp(-|t|)$ and for which the sample mean has the same Cauchy distribution for every $n$, so it does not converge.
 
 ## The Strong Law of Large Numbers
 
@@ -115,7 +115,7 @@ $$
 Z_n = \frac{S_n - n\mu}{\sigma\sqrt n} \xrightarrow{d} N(0,1).
 $$
 
-*Proof.* By Lévy's continuity theorem it suffices to show $\varphi_{Z_n}(t) \to e^{-t^2/2}$ for every $t$. By independence, $\varphi_{Z_n}(t) = \varphi(t/(\sigma\sqrt n))^n$ after centring, and the expansion of the characteristic function of a mean-zero unit-variance variable is
+*Proof.* By Lévy's continuity theorem it suffices to show $\varphi_{Z_n}(t) \to \exp(-t^2/2)$ for every $t$. By independence, $\varphi_{Z_n}(t) = \varphi(t/(\sigma\sqrt n))^n$ after centring, and the expansion of the characteristic function of a mean-zero unit-variance variable is
 
 $$
 \varphi(u) = 1 - \frac{u^2}{2} + o(u^2) \qquad \text{as } u \to 0,
@@ -124,7 +124,7 @@ $$
 because $\varphi(u) = \mathbb{E}[1 + iuX_1 - u^2X_1^2/2 + o(u^2))] = 1 - u^2/2 + o(u^2)$. Putting $u = t/(\sigma\sqrt n)$ and raising to the $n$-th power,
 
 $$
-\varphi_{Z_n}(t) = \left(1 - \frac{t^2}{2n} + o\!\left(\frac{1}{n}\right)\right)^n \longrightarrow e^{-t^2/2},
+\varphi_{Z_n}(t) = \left(1 - \frac{t^2}{2n} + o\!\left(\frac{1}{n}\right)\right)^n \longrightarrow \exp(-t^2/2),
 $$
 
 which is the characteristic function of $N(0,1)$; the limit is continuous at $0$, so Lévy's theorem applies.
@@ -172,14 +172,14 @@ The Edgeworth expansion is the systematic refinement of the central limit theore
 **Theorem (local limit theorem).** Let $X_n$ be independent and identically distributed lattice-valued random variables with span $1$, mean $\mu$, finite variance $\sigma^2$, and suppose the characteristic function has $|\varphi(t)| < 1$ for $0 < |t| \le \pi$. Then
 
 $$
-\sup_{k \in \mathbb{Z}}\left|\sigma\sqrt n\,\mathbb{P}\!\left(\sum_{i=1}^{n}X_i = k\right) - \frac{1}{\sqrt{2\pi}}\,e^{-(k-n\mu)^2/(2n\sigma^2)}\right| \longrightarrow 0.
+\sup_{k \in \mathbb{Z}}\left|\sigma\sqrt n\,\mathbb{P}\!\left(\sum_{i=1}^{n}X_i = k\right) - \frac{1}{\sqrt{2\pi}}\,\exp(-(k-n\mu)^2/(2n\sigma^2))\right| \longrightarrow 0.
 $$
 
 The local theorem is the strengthening of the central limit theorem from the distribution function to the point probabilities; the hypothesis on the characteristic function excludes the periodic distributions, for which the lattice has a proper sublattice as its support and the local statement holds on that sublattice. The proof is the inversion formula of the characteristic function, applied to the probability of a single value and estimated by splitting the range of integration near $0$ and away from it.
 
 ### Large Deviations
 
-**Theorem (Cramér).** Let $X_1, X_2, \dots$ be independent and identically distributed with a finite moment generating function in a neighbourhood of the origin, and let $I(x) = \sup_{t}(tx - \log M(t))$ be the Legendre transform of the cumulant generating function $M(t) = \mathbb{E}[e^{tX_1}]$. Then for $x > \mu$,
+**Theorem (Cramér).** Let $X_1, X_2, \dots$ be independent and identically distributed with a finite moment generating function in a neighbourhood of the origin, and let $I(x) = \sup_{t}(tx - \log M(t))$ be the Legendre transform of the cumulant generating function $M(t) = \mathbb{E}[\exp(tX_1)]$. Then for $x > \mu$,
 
 $$
 \frac{1}{n}\log\mathbb{P}\!\left(\bar X_n \geq x\right) \longrightarrow -I(x) \qquad \text{as } n \to \infty,
@@ -200,12 +200,12 @@ The central limit theorem describes the limit of sums with finite variance. The 
 **Theorem (Lévy–Khintchine).** A probability measure $\mu$ on $\mathbb{R}$ is infinitely divisible if and only if its characteristic function has the form
 
 $$
-\varphi(t) = \exp\!\left(i\gamma t - \frac{\sigma^2 t^2}{2} + \int_{\mathbb{R}}\left(e^{itx} - 1 - itx\,\mathbf{1}_{\{|x|\le1\}}\right)\nu(dx)\right)
+\varphi(t) = \exp\!\left(i\gamma t - \frac{\sigma^2 t^2}{2} + \int_{\mathbb{R}}\left(\exp(itx) - 1 - itx\,\mathbf{1}_{\{|x|\le1\}}\right)\nu(dx)\right)
 $$
 
 for a real $\gamma$, a $\sigma^2 \geq 0$ and a measure $\nu$ on $\mathbb{R}\setminus\{0\}$ with $\int \min(1,x^2)\,\nu(dx) < \infty$; the triple $(\gamma,\sigma^2,\nu)$ is unique, and $\nu$ is the **Lévy measure**.
 
-The normal law is the case $\nu = 0$, and the stable laws are the infinitely divisible laws with a scaling property, whose characteristic functions are $e^{-c|t|^\alpha}$ up to drift for $\alpha \neq 1$ and $e^{-c|t|(1 + i\beta\operatorname{sgn}(t)\log|t|)}$ for $\alpha = 1$; they are the only possible limits in the central limit theorem without the finite-variance hypothesis. The Cauchy law is stable with exponent $1$, the normal with exponent $2$, and for $\alpha < 2$ the stable laws have heavy tails $\mathbb{P}(|X| > x) \sim Cx^{-\alpha}$; the classical central limit theorem is the statement that the finite-variance case has exponent $2$ with a finite second moment.
+The normal law is the case $\nu = 0$, and the stable laws are the infinitely divisible laws with a scaling property, whose characteristic functions are $\exp(-c|t|^\alpha)$ up to drift for $\alpha \neq 1$ and $\exp(-c|t|(1 + i\beta\operatorname{sgn}(t)\log|t|))$ for $\alpha = 1$; they are the only possible limits in the central limit theorem without the finite-variance hypothesis. The Cauchy law is stable with exponent $1$, the normal with exponent $2$, and for $\alpha < 2$ the stable laws have heavy tails $\mathbb{P}(|X| > x) \sim Cx^{-\alpha}$; the classical central limit theorem is the statement that the finite-variance case has exponent $2$ with a finite second moment.
 
 ## The Multidimensional and Functional Versions
 
@@ -231,7 +231,7 @@ Donsker's theorem is the functional form of the central limit theorem, and it is
 
 The characteristic function converts convergence in distribution into pointwise convergence: by Lévy's continuity theorem, if the characteristic functions converge to a function continuous at the origin then the measures converge weakly, and the tail estimate behind the proof is the only technical input. The weak law of large numbers asserts that the sample mean converges in probability to the mean; it follows from Chebyshev's inequality when the variance is finite, with the rate $O(1/n)$, and from Khinchin's truncation argument when only the first moment is finite. The strong law asserts almost-sure convergence; it follows from Kolmogorov's maximal inequality, which is the maximal bound for independent partial sums and the precursor of the martingale maximal inequality, and it holds for pairwise independent variables by Etemadi's refinement and fails exactly when the first moment is infinite. Borel's theorem on normal numbers is the special case of the binary digits.
 
-The central limit theorem asserts that the standardised sums of independent identically distributed variables with finite positive variance converge in distribution to the standard normal, and the proof is the computation $\varphi(t/\sqrt n)^n \to e^{-t^2/2}$ together with Lévy's theorem. The triangular-array version holds exactly under the Lindeberg condition, and the Lyapunov condition is its practical sufficient form. The rate is governed by the Berry–Esseen theorem, of order $n^{-1/2}$ in the Kolmogorov distance with a constant depending on the standardised third moment, with the Edgeworth expansion supplying the successive corrections from the cumulants; the local limit theorem sharpens the convergence to the point probabilities of a lattice law, and Cramér's theorem gives the exponential rate of the large deviations. The possible limits of sums of independent variables are the infinitely divisible laws, represented by the Lévy–Khintchine formula with the triple $(\gamma,\sigma^2,\nu)$, and the stable laws are the limits in the absence of a finite variance. In several dimensions the Cramér–Wold device reduces the theorem to the one-dimensional case, and in the functional setting Donsker's invariance principle upgrades the central limit theorem to the convergence of the rescaled random walk to Brownian motion.
+The central limit theorem asserts that the standardised sums of independent identically distributed variables with finite positive variance converge in distribution to the standard normal, and the proof is the computation $\varphi(t/\sqrt n)^n \to \exp(-t^2/2)$ together with Lévy's theorem. The triangular-array version holds exactly under the Lindeberg condition, and the Lyapunov condition is its practical sufficient form. The rate is governed by the Berry–Esseen theorem, of order $n^{-1/2}$ in the Kolmogorov distance with a constant depending on the standardised third moment, with the Edgeworth expansion supplying the successive corrections from the cumulants; the local limit theorem sharpens the convergence to the point probabilities of a lattice law, and Cramér's theorem gives the exponential rate of the large deviations. The possible limits of sums of independent variables are the infinitely divisible laws, represented by the Lévy–Khintchine formula with the triple $(\gamma,\sigma^2,\nu)$, and the stable laws are the limits in the absence of a finite variance. In several dimensions the Cramér–Wold device reduces the theorem to the one-dimensional case, and in the functional setting Donsker's invariance principle upgrades the central limit theorem to the convergence of the rescaled random walk to Brownian motion.
 
 ## Summary of Notation
 
@@ -240,14 +240,14 @@ The central limit theorem asserts that the standardised sums of independent iden
 | $X_i$, $S_n$, $\bar X_n$ | i.i.d. variables, partial sum, sample mean |
 | $\mu$, $\sigma^2$ | Mean and variance of $X_1$ |
 | $Z_n = (S_n - n\mu)/(\sigma\sqrt n)$ | Standardised sum |
-| $\varphi(t) = \mathbb{E}[e^{itX_1}]$ | Characteristic function |
+| $\varphi(t) = \mathbb{E}[\exp(itX_1)]$ | Characteristic function |
 | $\Phi$, $N(0,1)$ | Standard normal distribution function and law |
 | $\xrightarrow{\mathbb{P}}$, $\xrightarrow{d}$, a.s. | Convergence in probability, in distribution, almost surely |
 | $\bar X_n \to \mu$ | Weak and strong laws of large numbers |
 | Lindeberg condition | asymptotic negligibility of individual terms in a triangular array |
 | $\rho = \mathbb{E}\|X_1-\mu\|^3$ | Third absolute moment, in Berry–Esseen |
 | $\lambda_3$, Edgeworth | standardised third cumulant, expansion in cumulants |
-| $M(t) = \mathbb{E}[e^{tX_1}]$, $I(x)$ | Moment generating function and its Legendre transform (rate function) |
+| $M(t) = \mathbb{E}[\exp(tX_1)]$, $I(x)$ | Moment generating function and its Legendre transform (rate function) |
 | $(\gamma,\sigma^2,\nu)$ | Lévy–Khintchine triple; $\nu$ the Lévy measure |
 | stable law, $\alpha$ | self-similar limit law with exponent $\alpha\in(0,2]$ |
 | $W_n(t)$ | Rescaled, interpolated random walk |

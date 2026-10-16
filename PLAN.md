@@ -88,12 +88,9 @@ Then the agent writes the article .md file. Here are editorial preferences :
   - prefer "physical interpretation" to "physical reading"
 
 
+During this phase, the agent modifies the article, and the menu if necessary.
 
-He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
-
-During this phase, the agent modifies the article, its companion file .context, and the menu if necessary.
-
-In case the agent spots an obious mistake in another related article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
+In case the agent spots an obious mistake in another related article, he can also patch it, and he reports about the change implemented.
 
 This requires judgment and organization.
 
@@ -115,12 +112,9 @@ Then the agent reviews the article .md file. He searches for errors, notational 
 
 The agent respects the format of the article.
 
-He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
+During this phase, the agent modifies the article, and the menu if necessary.
 
-
-During this phase, the agent modifies the article, its companion file .context, and the menu if necessary.
-
-In case the agent spots an obious mistake in another related article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
+In case the agent spots an obious mistake in another related article, he can also patch it, and he reports about the change implemented.
 
 This requires rigor, carefulness, and suspicion to check assertions.
 
@@ -131,21 +125,16 @@ This requires rigor, carefulness, and suspicion to check assertions.
 ################################
 
 
-The agent reads the article, the companion .context file.
+The agent reads the article.
 
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
 For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
 
 
-The agent creates or modifies the companion file .ideas and writes inside it the open questions, the suggestions, the speculations contained or suggested in the article and its companion .context file that have not been implemented so far (nothing is excluded for being unproven).
+The agent report in chat the open questions, the suggestions, the speculations contained or suggested in the article that have not been implemented so far (nothing is excluded for being unproven).
 
-During this phase, the agent can modify the companion file .ideas of the article.
-
-In case the agent spots an obious mistake in an article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
-
-For example, the article fields.md would be along fields.ideas.
-
+In case the agent spots an obious mistake in an article, he can also patch it, and he reports about the change implemented.
 
 This requires judgment and creativity.
 
@@ -157,41 +146,22 @@ This requires judgment and creativity.
 ################################
 
 
-The agent reads the article, the companion .ideas file.
-
-He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
+The agent searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
 For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
 
-The agent suggests some modifications about the article, based on the ideas contained in the .ideas file.
+The agent suggests some modifications about the article.
 
 If modifications are approved by the author, he writes them.
 
 The agent respects the format of the article.
 
-He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.
+During this phase, the agent modifies the article.
 
-Once the changes are implemented in the article, he removes the implemented ideas from the .ideas file.
-
-During this phase, the agent modifies the article and the companion files .context and .ideas of the article.
-
-In case the agent spots an obious mistake in an article, he can also patch it, patch its .context file if necessary, and he reports about the change implemented.
+In case the agent spots an obious mistake in an article, he can also patch it, and he reports about the change implemented.
 
 This requires judgement and organization.
 
-
-
-################################
-### RULES DURING THE CLEANING PHASE
-################################
-
-
-The agent reads the companion .context file, and he removes the verbiage, the uninteresting things, the past checks, ... he only keep the interesting points and lets a lean file.
-
-During this phase, the agent does not touch any other file than the  companion file .context of the article.
-
-
-This requires judgment and focus.
 
 
 

@@ -84,7 +84,7 @@ The three sets are therefore entirely different in size, and they are collected 
 | $0$ | $0$ | $0$ | $0$ (one) |
 | $-1$ | none | $\pm i$ | none |
 
-The linear algebra of the three rows reads off the sign of the square function on the base field: over $\mathbb{R}$ the values $+1$ and $0$ are reached and $-1$ is not; over $\mathbb{C}$ all three are reached; over $\mathbb{D}$ the reachable set is the same as over $\mathbb{R}$ for these three values, but the *number* of roots changes, because the two idempotent coordinates double the count whenever both are nonzero. The value $+1$ is the only one of the three with a non-scalar root, and it is the reason the ring has four square roots of its unity. The roots of $+1$ are invertible, of norm $N(\pm 1) = 1$ and $N(\pm j) = -1$; the root of $0$ is not a unit, and the empty set of roots of $-1$ needs no comment.
+The linear algebra of the three rows reads off the sign of the square function on the base field: over $\mathbb{R}$ the values $+1$ and $0$ are reached and $-1$ is not; over $\mathbb{C}$ all three are reached; over $\mathbb{D}$ the reachable set is the same as over $\mathbb{R}$ for these three values, but the *number* of roots changes, because the two idempotent coordinates double the count whenever both are nonzero. The value $+1$ is the only one of the three with a non-scalar root, and it is the reason the ring has four square roots of its unity. The roots of $+1$ are invertible, of norm $\langle \pm 1\rangle_{\natural} = 1$ and $\langle \pm j\rangle_{\natural} = -1$; the root of $0$ is not a unit, and the empty set of roots of $-1$ needs no comment.
 
 ## The Square Roots of a General Element
 
@@ -120,7 +120,7 @@ $$
 
 the two rays of the null cone on which the idempotent coordinates are non-negative, and the zero divisors are that boundary with the origin removed. So the cone of squares and the null cone meet along two rays, and the interior of the cone of squares is the set of elements whose square roots number four.
 
-This is the algebraic core of the order on $\mathbb{D}$; its reading as a positivity cone, its two components when the sign of the norm is allowed to vary, and the reversed inequality that holds on it are *The Hermitian Form and the Cone of the Split-Complex Algebra*, below this article in this category. The forward cone is the single component of the double cone $a^2 \ge a'^2$ that contains $1$; the other component is $-\mathcal{C}$, and the two are exchanged by negation.
+This is the algebraic core of the order on $\mathbb{D}$; its reading as a positivity cone, its two components when the sign of the norm is allowed to vary, and the reversed inequality that holds on it are *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category. The forward cone is the single component of the double cone $a^2 \ge a'^2$ that contains $1$; the other component is $-\mathcal{C}$, and the two are exchanged by negation.
 
 ## The Square-Zero Elements
 
@@ -130,7 +130,7 @@ This is the algebraic core of the order on $\mathbb{D}$; its reading as a positi
 
 **Proof.** This is the theorem on the roots of $0$ above, and it agrees with the nilpotent theorem: a square-zero element is a nilpotent of index two, and the only nilpotent of $\mathbb{D}$ is $0$.
 
-The statement is worth separating from its complex analogue precisely because it is *not* the end of the matter. In $\mathbb{C}$ the square-zero elements are also only $0$, and it is easy to think that this is all a field can say; but in $\mathbb{D}$ the second product $A \star C = A\bar C$ carried by the same space has a different square, $A \star A = A\bar A = N(A)$, so its square-zero elements are the elements of vanishing norm, that is the whole null cone of zero divisors. The square-zero set of the plain product is a point; the square-zero set of the sesquilinear product is the pair of null lines. The comparison is drawn in *Relations and Comparison Between the Two Products of the Split-Complex Space*, above this article in this category.
+The statement is worth separating from its complex analogue precisely because it is *not* the end of the matter. In $\mathbb{C}$ the square-zero elements are also only $0$, and it is easy to think that this is all a field can say; but in $\mathbb{D}$ the second product $A \star C = A\bar C$ carried by the same space has a different square, $A \star A = A\bar A = \langle A\rangle_{\natural}$, so its square-zero elements are the elements of vanishing norm, that is the whole null cone of zero divisors. The square-zero set of the plain product is a point; the square-zero set of the sesquilinear product is the pair of null lines. The comparison is drawn in *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, above this article in this category.
 
 ## Summary
 

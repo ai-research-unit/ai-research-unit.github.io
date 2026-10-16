@@ -6,7 +6,7 @@
 A complex measure is a countable additive set function with complex values, and the theory of the integral
 associates with it its total variation $|\mu|$, a positive measure, and the **polar decomposition**
 $\mu=h\,|\mu|$ with $\lvert h\rvert=1$ almost everywhere, which is the measure-theoretic counterpart of the
-polar form $z=\lvert z\rvert e^{i\theta}$ of a complex number. The operation of complex conjugation acts on
+polar form $z=\lvert z\rvert \exp(i\theta)$ of a complex number. The operation of complex conjugation acts on
 the measures by conjugating their values,
 $$
 \bar\mu(A)=\overline{\mu(A)},
@@ -152,7 +152,7 @@ real and imaginary densities.
 
 **Definition.** For a finite complex measure $\mu$ on $\mathbb R^n$ the **Fourier–Stieltjes transform** is
 $$
-\hat\mu(\xi)=\int_{\mathbb R^n}e^{-2\pi ix\cdot\xi}\,d\mu(x),
+\hat\mu(\xi)=\int_{\mathbb R^n}\exp(-2\pi ix\cdot\xi)\,d\mu(x),
 $$
 with the normalisation of *Fourier Analysis on Euclidean Spaces*; it is a bounded uniformly continuous
 function of $\xi$, with $\lVert\hat\mu\rVert_\infty\leq\lVert\mu\rVert$, and it determines $\mu$ uniquely.
@@ -165,8 +165,8 @@ Consequently $\mu$ is Hermitian if and only if its transform is a Hermitian func
 $\hat\mu(-\xi)=\overline{\hat\mu(\xi)}$, and $\mu$ is anti-Hermitian if and only if $\hat\mu$ is odd, with
 $\hat\mu(-\xi)=-\overline{\hat\mu(\xi)}$.
 
-**Proof.** $\widehat{\bar\mu}(\xi)=\int e^{-2\pi ix\cdot\xi}d\bar\mu(x)
-=\overline{\int e^{2\pi ix\cdot\xi}d\mu(x)}=\overline{\hat\mu(-\xi)}$ by the conjugation of the integral and
+**Proof.** $\widehat{\bar\mu}(\xi)=\int \exp(-2\pi ix\cdot\xi)d\bar\mu(x)
+=\overline{\int \exp(2\pi ix\cdot\xi)d\mu(x)}=\overline{\hat\mu(-\xi)}$ by the conjugation of the integral and
 the sign change $x\mapsto-x$. The Hermitian condition $\hat\mu=\widehat{\bar\mu}$ is then the stated
 symmetry.
 
@@ -174,7 +174,7 @@ symmetry.
 
 **Theorem (Bochner, recast).** A continuous function $\varphi$ on $\mathbb R^n$ is positive definite if and
 only if $\varphi(x)=\hat\mu(-x)$ for a unique finite **positive** measure $\mu$, equivalently
-$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$; the Hermitian measures are exactly the measures whose
+$\varphi(x)=\int \exp(2\pi ix\cdot\xi)d\mu(\xi)$; the Hermitian measures are exactly the measures whose
 transforms satisfy the Hermitian symmetry, and the positive measures among them are exactly the transforms
 of the positive definite functions.
 
@@ -182,7 +182,7 @@ of the positive definite functions.
 article of this group, with the transform of the present Article; the statement that a positive measure
 gives a positive definite function is the computation
 $$
-\sum_{i,j}\overline{c_i}c_j\hat\mu(x_j-x_i)=\int\Bigl\lvert\sum_ic_ie^{-2\pi ix_i\cdot\xi}\Bigr\rvert^2d\mu(\xi)\geq0 ,
+\sum_{i,j}\overline{c_i}c_j\hat\mu(x_j-x_i)=\int\Bigl\lvert\sum_ic_i\exp(-2\pi ix_i\cdot\xi)\Bigr\rvert^2d\mu(\xi)\geq0 ,
 $$
 and the converse is the theorem quoted.
 
@@ -251,7 +251,7 @@ space whose positive cone is closed, convex and spanned by the positive measures
 | $\mu_{\mathrm h}=\frac12(\mu+\bar\mu)$ | Hermitian part, a real signed measure |
 | $\mu_{\mathrm a}=\frac12(\mu-\bar\mu)$ | Anti-Hermitian part, $i$ times a signed measure |
 | $\mu=h\lvert\mu\rvert$ | Polar decomposition, $\lvert h\rvert=1$ a.e. |
-| $\hat\mu(\xi)=\int e^{-2\pi ix\cdot\xi}d\mu(x)$ | Fourier–Stieltjes transform |
+| $\hat\mu(\xi)=\int \exp(-2\pi ix\cdot\xi)d\mu(x)$ | Fourier–Stieltjes transform |
 | $\widehat{\bar\mu}(\xi)=\overline{\hat\mu(-\xi)}$ | Involution property of the transform |
 | $\langle\mu,f\rangle=\int f\,d\mu$ | Pairing of a measure with a function |
 

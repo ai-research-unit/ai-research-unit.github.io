@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ carries a vector space structure over $\mathbb{R}$, and this article reads it: the additive group, the real scalar action, the basis $e_0,e_1,e_2,e_3$, the coordinates, the real-linear endomorphism ring, and the two coordinate blocks that the algebra singles out. Nothing here uses the product except to record that the two structures agree, and no form appears. The element, the basis and the multiplication table are those of *Quaternion Algebra*, whose worked computations are *Worked Examples in the Quaternion Algebra*; the algebra reading of the same set is *Introduction to the General Plain Algebra of Quaternions*, below this article in this category, and the product is developed in *The Two General Products of the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+The quaternion algebra $\mathbb{H}$ carries a vector space structure over $\mathbb{R}$, and this article reads it: the additive group, the real scalar action, the basis $e_0,e_1,e_2,e_3$, the coordinates, the real-linear endomorphism ring, and the two coordinate blocks that the algebra singles out. Nothing here uses the product except to record that the two structures agree, and no form appears. The element, the basis and the multiplication table are those of *Quaternion Algebra*, whose worked computations are *Worked Examples in the Quaternion Algebra*; the algebra reading of the same set is *Introduction to the Quaternion Algebra*, below this article in this category, and the product is developed in *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, below this article in this category.
 
 ## The Additive Group and the Real Scalar Action
 
@@ -61,7 +61,7 @@ $$
 $$
 in which each rung is a real vector space of dimension $1,2,4$ and the last is the division algebra $\mathbb{H}$.
 
-**Warning (the bar on an element).** On an element of $\mathbb{H}$ the complex conjugation $\bar{\cdot}$ of the coefficients acts as the identity, because the coefficients are real. The conjugation that acts on $\mathbb{H}$ is the natural one ${}^{\natural}$, and it is ${}^{\natural}$ and never a bar that is written on an element here. The reading of the two conjugations is the one of *The Quaternions as a Vector Space over $\mathbb{C}$*, below this article in this category, and the involutions they obey are *The Group of Involutions of the Quaternions*, below this article in this category.
+**Warning (the bar on an element).** On an element of $\mathbb{H}$ the complex conjugation $\bar{\cdot}$ of the coefficients acts as the identity, because the coefficients are real. The conjugation that acts on $\mathbb{H}$ is the natural one ${}^{\natural}$, and it is ${}^{\natural}$ and never a bar that is written on an element here. The reading of the two conjugations is the one of *The Quaternioid as a Vector Space over $\mathbb{C}$*, below this article in this category, and the involutions they obey are *The Group of Involutions of the Quaternioid*, below this article in this category.
 
 ## Summary
 
@@ -82,5 +82,5 @@ The quaternion algebra is a four-dimensional real vector space on the basis $e_0
 ## Further Reading
 
 - *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element, the basis and the multiplication table read as an algebra.
-- *The Quaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/the-quaternioid-as-a-vector-space-over-c.md`), below this article in this category, for the next rung and for the two distinct senses in which $\mathbb{H}$ is read over $\mathbb{C}$.
-- *Introduction to the General Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-quaternion-algebra.md`), below this article in this category, for the same set read through the product.
+- *The Quaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-quaternioid-as-a-vector-space-over-c.md`), below this article in this category, for the next rung and for the two distinct senses in which $\mathbb{H}$ is read over $\mathbb{C}$.
+- *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), below this article in this category, for the same set read through the product.

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The complex space carries two products, the plain bilinear $AC$ and the plain sesquilinear $A\bar C$, defined in *The Two Products of the Complex Space*, above in this category. This article reads the two on one and the same pair and sets them against each other: the conjugate of a product, the exchange of the two slots, the identities that hold for one product and fail for the other, and the property table of the two with a witness for every failing entry. It closes with the two slots the construction has on $\mathbb{C}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.
+The complex space carries two products, the plain bilinear $AC$ and the plain sesquilinear $A\bar C$, defined in *The Two Products of the Complexoid Space*, above in this category. This article reads the two on one and the same pair and sets them against each other: the conjugate of a product, the exchange of the two slots, the identities that hold for one product and fail for the other, and the property table of the two with a witness for every failing entry. It closes with the two slots the construction has on $\mathbb{C}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.
 
-The article is the complex reading of the relations and the table of the four general products; those have collapsed to the two products of the commutative base, and with them the relations and the table. The definitions are *The Two Products of the Complex Space* above; the forms and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complex Space*, below this article in this category, cited and not repeated. The only computations the article adds are the two adjoints of §*The Two Pairings and the Two Adjoints*.
+The article is the complex reading of the relations and the table of the four general products; those have collapsed to the two products of the commutative base, and with them the relations and the table. The definitions are *The Two Products of the Complexoid Space* above; the forms and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, below this article in this category, cited and not repeated. The only computations the article adds are the two adjoints of §*The Two Pairings and the Two Adjoints*.
 
 The elements are $A = a + ia'$ and $C = c + ic'$; the bar is complex conjugation and the star coincides with it.
 
@@ -75,7 +75,7 @@ The two products are told apart by the identities each satisfies and the other b
 | $X\bar C = XC$ when $C$ is real | yes | yes |
 | $X\bar X$ is the definite norm at the two equal arguments | no, the algebraic norm of $AC$ is $X^2$ | yes |
 
-**Proof.** The first row is the multiplicativity of the bar; the analogue for the sesquilinear product is $\overline{X\bar C} = \bar X C$, which equals $\bar X\bar C$ only for real $C$, so the sesquilinear product fails the row and satisfies the second instead. The third row is commutativity, owned by the bilinear product; the analogue $X\bar C = C\bar X$ asks for $\bar C = C$, so only the sesquilinear product is saved, by conjugating the value, and it satisfies the fourth. The fifth row is the proposition above. The sixth is the definition of the two algebraic norms, the definite norm $H(X) = X\bar X$ of the sesquilinear product against the bilinear algebraic norm $B(X) = X^2$; the two are the two algebraic norms of *The Two Forms and the Two Algebraic Norms of the Complex Space*, below this article in this category.
+**Proof.** The first row is the multiplicativity of the bar; the analogue for the sesquilinear product is $\overline{X\bar C} = \bar X C$, which equals $\bar X\bar C$ only for real $C$, so the sesquilinear product fails the row and satisfies the second instead. The third row is commutativity, owned by the bilinear product; the analogue $X\bar C = C\bar X$ asks for $\bar C = C$, so only the sesquilinear product is saved, by conjugating the value, and it satisfies the fourth. The fifth row is the proposition above. The sixth is the definition of the two algebraic norms, the definite norm $H(X) = X\bar X$ of the sesquilinear product against the bilinear algebraic norm $B(X) = X^2$; the two are the two algebraic norms of *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, below this article in this category.
 
 The two products have the same vanishing set: $AC = 0$ or $A\bar C = 0$ exactly when $A = 0$ or $C = 0$, since $\mathbb{C}$ is a field. The two differ in which of them carries the algebraic norm that is positive for every nonzero element, and that is the definite norm of the sesquilinear product.
 
@@ -155,7 +155,7 @@ The construction with both slots alive has four settings; on $\mathbb{C}$ the fi
 
 **Theorem (the second slot rules the composition and the form).** With $K=\mathrm{id}$ the product is associative, commutative and two-sidedly unital, and the form it carries is symmetric; with $K=\bar{\cdot}$ it is non-associative, conjugate-commutative and right-unital alone, and the form it carries is conjugate-symmetric.
 
-**Proof.** The two settings are $AC$ and $A\bar C$, and their laws are the two columns of the property table above: the first column is the field, whose laws are *The Specificities of the Complex Algebra*, and the second is the sesquilinear product of *The Sesquilinear Product of the Complex Space*.
+**Proof.** The two settings are $AC$ and $A\bar C$, and their laws are the two columns of the property table above: the first column is the field, whose laws are *The Specificities of the Complex Algebra*, and the second is the sesquilinear product of *The Sesquilinear Product of the Complexoid Space*.
 
 **Remark (the empty first slot and the centre).** The first slot carries the conjugation of the coefficient ring; the coefficients of $\mathbb{C}$ are real, so that conjugation is the identity and the first slot contributes nothing. What survives of it is the centre: the field is its own centre, the two products are the construction read on the centre, and the collapse of the first slot is the statement that the centre is fixed by the conjugation.
 
@@ -167,7 +167,7 @@ $$
 B(A,C)=\operatorname{Sc}(AC)=AC, \qquad H(A,C)=\operatorname{Sc}(A\bar C)=A\bar C,
 $$
 
-the first bilinear and symmetric, the second sesquilinear and conjugate-symmetric, both non-degenerate with Gram matrix $[1]$ in the basis $1$. They are the two forms of *The Two Forms and the Two Algebraic Norms of the Complex Space*, below this article in this category.
+the first bilinear and symmetric, the second sesquilinear and conjugate-symmetric, both non-degenerate with Gram matrix $[1]$ in the basis $1$. They are the two forms of *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, below this article in this category.
 
 **Proof.** On $\mathbb{C}$ the scalar part of an element is the element itself, so the two pairings are the two products read as forms; the Gram values are $B(1,1)=H(1,1)=1$, so the matrix is $[1]$ and the pairing is non-degenerate.
 
@@ -187,7 +187,7 @@ The transpose keeps the parameter and the adjoint conjugates it, so the transpos
 
 **Proof.** For the first pair, $B(AX,Y)=AXY$ and $B(X,AY)=XAY$ are equal because the multiplication is commutative, so $L^{\mathrm{alg}}_{A}$ is its own transpose; and $H(AX,Y)=AX\bar Y$ while $H(X,\bar AY)=X\overline{\bar AY}=XA\bar Y$, so the adjoint of $L^{\mathrm{alg}}_{A}$ is $L^{\mathrm{alg}}_{\bar A}$. For the second pair, $B(X\bar A,Y)=X\bar AY$ and $B(X,\bar AY)=X\bar AY$, so the transpose of $R_{A}$ is $L^{\mathrm{alg}}_{\bar A}$; and $H(X\bar A,Y)=X\bar A\bar Y$ while $H(X,AY)=X\bar A\bar Y$, so the adjoint of $R_{A}$ is $L^{\mathrm{alg}}_{A}$. The two agree exactly at $A=\bar A$, that is at the real $A$.
 
-**Remark (the conjugate-linear family).** The sesqualgebra left multiplication $L_{A}(X)=A\bar X$ is conjugate-linear and self-adjoint for $H$ in the convention of *The Sesquilinear Product of the Complex Space*, which owns that computation together with the adjoints of the right multiplication and of the sandwich.
+**Remark (the conjugate-linear family).** The sesqualgebra left multiplication $L_{A}(X)=A\bar X$ is conjugate-linear and self-adjoint for $H$ in the convention of *The Sesquilinear Product of the Complexoid Space*, which owns that computation together with the adjoints of the right multiplication and of the sandwich.
 
 ## Summary
 

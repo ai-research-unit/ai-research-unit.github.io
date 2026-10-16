@@ -6,7 +6,7 @@ The biquaternion algebra carries two real slices whose geometries differ, and th
 
 The article presupposes the biquaternion norm and its real forms (*Norm and Invertibility in the General Quaternionic Algebra*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*The Null Quadric and Its Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Criterion*, is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Criterion*, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
 
@@ -23,10 +23,10 @@ The same algebra carries the several geometries at once, and the passage from on
 
 ## The Lorentzian Slice and Its Light Cone
 
-By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $N$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $N(\tilde{Q})=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
+By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
 
 $$
-N(\tilde{Q})=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
+\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
 $$
 
 is the **light cone**, a double cone with apex at the origin. With this identification, the **null biquaternions of the Minkowski subspace** are exactly the elements of the light cone.
@@ -64,7 +64,7 @@ SU(2,2)\cong Spin(4,2),
 $$
 acting on a four-dimensional complex space that carries a Hermitian form of signature $(2,2)$, the biquaternion algebra read as a complex vector space. The fifteen dimensions are the six of the Lorentz group, the four of the translations, the four of the special conformal transformations, and the dilation.
 
-**The model.** In the conformal model of Euclidean space $\mathbb{R}^n$ the flat space is recovered from a null cone in $\mathbb{R}^{n+1,1}$. Two null vectors are distinguished, the origin $n$ and the point at infinity $n_\infty$, with $B(n,n_\infty)=-1$; a point $X\in\mathbb{R}^n$ is represented by a null vector whose inner products with $n$ and $n_\infty$ fix its coordinates. In this model a sphere is the vector $S=P-\tfrac12 r^2 n_\infty$ for a point $P$ and a radius $r$, a plane is a vector orthogonal to $n_\infty$, and a point lies on a sphere or a plane exactly when the corresponding vectors are orthogonal. The transformations of the model are the versors of the Clifford algebra $\mathrm{Cl}_{n+1,1}$, acting by the signed inner conjugation action; in the matrix form of the Vahlen matrices they are the analogues of the Möbius transformations, and the sandwich action of a biquaternion on the projective line is the case $n=2$.
+**The model.** In the conformal model of Euclidean space $\mathbb{R}^n$ the flat space is recovered from a null cone in $\mathbb{R}^{n+1,1}$. Two null vectors are distinguished, the origin $n$ and the point at infinity $n_\infty$, with $\langle n,n_\infty\rangle=-1$; a point $X\in\mathbb{R}^n$ is represented by a null vector whose inner products with $n$ and $n_\infty$ fix its coordinates. In this model a sphere is the vector $S=P-\tfrac12 r^2 n_\infty$ for a point $P$ and a radius $r$, a plane is a vector orthogonal to $n_\infty$, and a point lies on a sphere or a plane exactly when the corresponding vectors are orthogonal. The transformations of the model are the versors of the Clifford algebra $\mathrm{Cl}_{n+1,1}$, acting by the signed inner conjugation action; in the matrix form of the Vahlen matrices they are the analogues of the Möbius transformations, and the sandwich action of a biquaternion on the projective line is the case $n=2$.
 
 The construction, its null vectors and its versor action are those of *The Conformal Model of Euclidean Space*, and the Lorentzian framework is that of *Pseudo-Riemannian and Lorentzian Geometry*, both of Part IV; nothing beyond the cited statements is used here.
 

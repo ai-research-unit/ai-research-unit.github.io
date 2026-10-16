@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The antisymmetric part of the plain product of the biquaternions, introduced in *Introduction to the Antisymmetric Plain Algebra of Biquaternions*,
+The antisymmetric part of the plain product of the biquaternions, introduced in *Introduction to the Antisymmetric Plain Algebra*,
 
 $$
 \tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
@@ -16,7 +16,7 @@ $$
 
 of complex dimension four and real dimension eight. This article develops the structure of that Lie algebra: its centre, which is the centre $\mathbb{C}_{\mathbb{B}}$ of the biquaternion algebra, and the quotient by it; its derived algebra $\mathrm{Vect}(\mathbb{B})$, stable under the bracket, of complex dimension three and real dimension six; the identifications of that derived algebra with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$; the readings of the quaternion subspace and the anti-Hermitian subspace on the real forms, carrying $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and $\mathfrak{u}(2)$; the derived series, the readings of solvability, nilpotency and simplicity; the ideals and the quotients; and the enveloping algebra.
 
-The bracket and its Jacobi identity are established in *Introduction to the Antisymmetric Plain Algebra of Biquaternions* and are used here, not reproved. The general theory of Lie algebras, of their ideals, of their solvable and nilpotent series, of simplicity and of the enveloping algebra is *Lie Algebras* and *Structure of Lie Algebras*; the associativity of the plain product, from which the Jacobi identity descends, is *Associative Algebras* and *The Commutator Operator*; the remarkable subspaces and their names are *Introduction to the Remarkable Subspaces*, and their readings under the four general products are *Remarkable Subspaces and the Four General Products*; the skew-Hermitian elements and the group of linear maps preserving their form are *The Unitary Lie Algebra*; and the splitting of the plain product into the two halves is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The article reads the Lie algebra as a module over $\mathbb{C}$ with an alternating bracket, and no group, no exponential and no space enters.
+The bracket and its Jacobi identity are established in *Introduction to the Antisymmetric Plain Algebra* and are used here, not reproved. The general theory of Lie algebras, of their ideals, of their solvable and nilpotent series, of simplicity and of the enveloping algebra is *Lie Algebras* and *Structure of Lie Algebras*; the associativity of the plain product, from which the Jacobi identity descends, is *Associative Algebras* and *The Commutator Operator*; the remarkable subspaces and their names are *Introduction to the Remarkable Subspaces*, and their readings under the four general products are *Remarkable Subspaces and the Four General Products*; the skew-Hermitian elements and the group of linear maps preserving their form are *The Unitary Lie Algebra*; and the splitting of the plain product into the two halves is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The article reads the Lie algebra as a module over $\mathbb{C}$ with an alternating bracket, and no group, no exponential and no space enters.
 
 ## The Centre and the Quotient
 
@@ -66,7 +66,7 @@ $$
 
 of complex dimension three and real dimension six; the bracket restricted to it is again the cross product, so $[\mathfrak{g},\mathfrak{g}]$ is stable under the bracket and is a Lie subalgebra of $\mathfrak{g}$.
 
-*Proof.* Every value of the bracket has scalar part zero, by the scalar-part computation of *Introduction to the Antisymmetric Plain Algebra of Biquaternions*, so the image lies in the vector subspace; conversely $e_1\wedge e_2=e_3$, $e_2\wedge e_3=e_1$ and $e_3\wedge e_1=e_2$ generate the vector subspace, so the image and the derived algebra are equal to it. The bracket of two vector elements is a cross product and so a vector element, which is the stability. Computed exactly on the units and on general elements.
+*Proof.* Every value of the bracket has scalar part zero, by the scalar-part computation of *Introduction to the Antisymmetric Plain Algebra*, so the image lies in the vector subspace; conversely $e_1\wedge e_2=e_3$, $e_2\wedge e_3=e_1$ and $e_3\wedge e_1=e_2$ generate the vector subspace, so the image and the derived algebra are equal to it. The bracket of two vector elements is a cross product and so a vector element, which is the stability. Computed exactly on the units and on general elements.
 
 **Corollary.** The derived algebra is perfect for the vector part, $[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B})$, and the derived algebra of the whole algebra is reached in one step, $[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B})$.
 
@@ -80,9 +80,9 @@ $$
 
 of complex dimension three and real dimension six.
 
-*Proof.* The assignment $P_1e_1+P_2e_2+P_3e_3\mapsto(P_1,P_2,P_3)$ carries the bracket to the cross product, since $e_1\wedge e_2=e_3$ and its cyclic analogues are the cross-product table. The cross-product algebra of $\mathbb{C}^3$ is the complex orthogonal algebra $\mathfrak{so}(3,\mathbb{C})$, and the classical isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ of the structure theory of *Structure of Lie Algebras* applies; the isomorphism is exhibited in the two-dimensional matrix model in *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, where $\tilde P\wedge\tilde Q$ becomes $\tfrac12[\,\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\,]$ on the trace-free matrices.
+*Proof.* The assignment $P_1e_1+P_2e_2+P_3e_3\mapsto(P_1,P_2,P_3)$ carries the bracket to the cross product, since $e_1\wedge e_2=e_3$ and its cyclic analogues are the cross-product table. The cross-product algebra of $\mathbb{C}^3$ is the complex orthogonal algebra $\mathfrak{so}(3,\mathbb{C})$, and the classical isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ of the structure theory of *Structure of Lie Algebras* applies; the isomorphism is exhibited in the two-dimensional matrix model in *Introduction to the Symmetric Plain Algebra*, where $\tilde P\wedge\tilde Q$ becomes $\tfrac12[\,\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\,]$ on the trace-free matrices.
 
-**Remark (the two descriptions of the same Lie algebra).** The identification is the reason the block is called the Lie block: **the derived algebra of the antisymmetric plain algebra is $\mathfrak{sl}(2,\mathbb{C})$**, the smallest simple complex Lie algebra, and the whole algebra is $\mathfrak{sl}(2,\mathbb{C})$ with a one-dimensional central summand. The identification up to the factor two between the halved bracket and the matrix commutator is the one of *Introduction to the Antisymmetric Plain Algebra of Biquaternions*: the matrix commutator is twice the block's bracket, and the two presentations differ by the rescaling $\tilde P\mapsto2\tilde P$ of the Lie algebra.
+**Remark (the two descriptions of the same Lie algebra).** The identification is the reason the block is called the Lie block: **the derived algebra of the antisymmetric plain algebra is $\mathfrak{sl}(2,\mathbb{C})$**, the smallest simple complex Lie algebra, and the whole algebra is $\mathfrak{sl}(2,\mathbb{C})$ with a one-dimensional central summand. The identification up to the factor two between the halved bracket and the matrix commutator is the one of *Introduction to the Antisymmetric Plain Algebra*: the matrix commutator is twice the block's bracket, and the two presentations differ by the rescaling $\tilde P\mapsto2\tilde P$ of the Lie algebra.
 
 ### The Real Forms
 
@@ -188,7 +188,7 @@ is the numerical form of the count, with $\binom{k+2}{2}$ the degree-$k$ part of
 
 **A central bracket.** For $\tilde P=2e_0+3ie_0$ the vector part is zero, so $\tilde P\wedge e_1=0$: the two complex coordinates of the centre both stand in the kernel of the adjoint.
 
-**A bracket with a scalar part.** For $\tilde P=e_0+e_1$ and $\tilde Q=e_0+e_2$ the bracket is $e_3$, computed in *Introduction to the Antisymmetric Plain Algebra of Biquaternions*; the scalar parts of the two elements do not enter, and the value lies in the derived algebra.
+**A bracket with a scalar part.** For $\tilde P=e_0+e_1$ and $\tilde Q=e_0+e_2$ the bracket is $e_3$, computed in *Introduction to the Antisymmetric Plain Algebra*; the scalar parts of the two elements do not enter, and the value lies in the derived algebra.
 
 **The derived algebra in one step.** $(e_0+e_1)\wedge e_1=0$ and $e_1\wedge e_2=e_3$: the central direction of $\tilde P=e_0+e_1$ contributes nothing, and the derived algebra is generated by the vector parts alone.
 
@@ -220,7 +220,7 @@ The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathf
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket, its Jacobi identity and the sixteen brackets of the basis
+- *Introduction to the Antisymmetric Plain Algebra* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket, its Jacobi identity and the sixteen brackets of the basis
 - *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form, its radical and the Casimir element
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoints, their kernels, the derivations and the automorphisms of the bracket
 - *The Unitary Lie Algebra* (`articles_maths/the-unitary-lie-algebra.md`), for the skew-Hermitian elements, the unhalved commutator and the group of linear maps preserving their form

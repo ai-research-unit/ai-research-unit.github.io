@@ -9,9 +9,9 @@ This article lists the probability distributions and the stochastic processes th
 
 | Object | Its law, moments and characteristic function | Introduced in |
 |---|---|---|
-| the Bernoulli distribution $\mathrm{Bern}(p)$ | $p\delta_1+(1-p)\delta_0$ on $\{0,1\}$; mean $p$, variance $p(1-p)$; $\varphi(t)=1-p+pe^{it}$ | *Measure-Theoretic Probability* |
+| the Bernoulli distribution $\mathrm{Bern}(p)$ | $p\delta_1+(1-p)\delta_0$ on $\{0,1\}$; mean $p$, variance $p(1-p)$; $\varphi(t)=1-p+p\exp(it)$ | *Measure-Theoretic Probability* |
 | the binomial distribution $\mathrm{Bin}(n,p)$ | $\sum_k\binom nk p^k(1-p)^{n-k}\delta_k$; mean $np$, variance $np(1-p)$; the sum of $n$ independent Bernoulli laws | *Measure-Theoretic Probability* |
-| the Poisson distribution $\mathrm{Pois}(\lambda)$ | $e^{-\lambda}\sum_k\lambda^k\delta_k/k!$ on $\mathbb Z_{\geq0}$; mean and variance $\lambda$; $\varphi(t)=e^{\lambda(e^{it}-1)}$ | *Measure-Theoretic Probability* |
+| the Poisson distribution $\mathrm{Pois}(\lambda)$ | $\exp(-\lambda)\sum_k\lambda^k\delta_k/k!$ on $\mathbb Z_{\geq0}$; mean and variance $\lambda$; $\varphi(t)=\exp(\lambda(\exp(it)-1))$ | *Measure-Theoretic Probability* |
 | the point mass $\delta_x$ | the law of the constant random variable; mean $x$, variance $0$; a degenerate distribution | *Measure-Theoretic Probability* |
 | the uniform law on a finite set | equal mass on each point; the counting measure normalised | *Measure-Theoretic Probability* |
 
@@ -20,12 +20,12 @@ This article lists the probability distributions and the stochastic processes th
 | Object | Its density, moments and characteristic function | Introduced in |
 |---|---|---|
 | the uniform distribution on $[0,1]$ | density $\mathbf 1_{[0,1]}$; mean $1/2$, variance $1/12$; the universal law of the quantile construction | *Measure-Theoretic Probability* |
-| the normal distribution $N(\mu,\sigma^2)$ | density $(2\pi\sigma^2)^{-1/2}e^{-(x-\mu)^2/(2\sigma^2)}$; mean $\mu$, variance $\sigma^2$; $\varphi(t)=e^{i\mu t-\sigma^2t^2/2}$ | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
+| the normal distribution $N(\mu,\sigma^2)$ | density $(2\pi\sigma^2)^{-1/2}\exp(-(x-\mu)^2/(2\sigma^2))$; mean $\mu$, variance $\sigma^2$; $\varphi(t)=\exp(i\mu t-\sigma^2t^2/2)$ | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
 | the standard normal $N(0,1)$ | the limit law of the central limit theorem; all moments finite, the cumulants vanishing above the second | *Laws of Large Numbers and the Central Limit Theorem* |
-| the Cauchy distribution | density $1/(\pi(1+x^2))$; no mean and no variance; $\varphi(t)=e^{-\lvert t\rvert}$ | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
+| the Cauchy distribution | density $1/(\pi(1+x^2))$; no mean and no variance; $\varphi(t)=\exp(-\lvert t\rvert)$ | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
 | the Cantor distribution | singular continuous, supported on the Cantor set; distribution function the Cantor function; no density | *Measure-Theoretic Probability* |
 | the stable and infinitely divisible laws | the class closed under convolution and scaling; their characteristic functions given by the Lévy–Khintchine representation | *Laws of Large Numbers and the Central Limit Theorem* |
-| the Gaussian measure on a Banach space | the cylinder measure of a Gaussian process; its characteristic function is $e^{-\lVert x\rVert^2/2}$ | *Stochastic Partial Differential Equations* |
+| the Gaussian measure on a Banach space | the cylinder measure of a Gaussian process; its characteristic function is $\exp(-\lVert x\rVert^2/2)$ | *Stochastic Partial Differential Equations* |
 | the Wiener measure | the law of Brownian motion on the space of continuous paths | *Brownian Motion and Stochastic Calculus* |
 | the equilibrium and harmonic measures | the distribution of the exit point of a Brownian path from a domain | *Potential Theory*; *Brownian Motion and Stochastic Calculus* |
 
@@ -38,7 +38,7 @@ This article lists the probability distributions and the stochastic processes th
 | the Lebesgue decomposition of a law | the split into an absolutely continuous, a discrete and a singular continuous part | *Measure-Theoretic Probability* |
 | the quantile function $F^{-1}$ and the Skorokhod representation | every law on $\mathbb R$ is $F^{-1}(U)$ for $U$ uniform, so $[0,1]$ is universal | *Measure-Theoretic Probability* |
 | the expectation, variance and covariance | the moments as integrals, with the monotone and dominated convergence theorems | *Measure-Theoretic Probability* |
-| the characteristic function $\varphi_X(t)=\mathbb E[e^{itX}]$ | the Fourier transform of the law; it determines the law and inverts it | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
+| the characteristic function $\varphi_X(t)=\mathbb E[\exp(itX)]$ | the Fourier transform of the law; it determines the law and inverts it | *Measure-Theoretic Probability*; *Laws of Large Numbers and the Central Limit Theorem* |
 | the moment generating function and the cumulants | the exponential moments where they exist, and the cumulant expansion | *Measure-Theoretic Probability* |
 | the Lévy–Khintchine representation | the characteristic function of an infinitely divisible law as an exponential of a Lévy measure | *Laws of Large Numbers and the Central Limit Theorem* |
 | the Markov operator and the transition kernel | the action of a Markov chain on functions and on measures | *Markov Chains and Processes* |

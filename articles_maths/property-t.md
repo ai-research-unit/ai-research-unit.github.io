@@ -47,7 +47,7 @@ The representation $\pi$ **almost has invariant vectors** if for every compact $
 
 **Example (compact groups).** A compact group has property (T): the trivial representation is isolated because every unitary representation has a nonzero invariant vector, obtained by averaging a vector over the group using the normalised Haar measure of *Locally Compact Groups and Haar Measure*. The Kazhdan pair can be taken to be $(G, \sqrt{1/2})$ for the normalised Haar measure, since a vector whose translates move by less than $\sqrt{1/2}$ on average has a nonzero average.
 
-**Example (the additive line).** $G = \mathbb{R}$ does not have (T). The characters $\chi_\xi(x) = e^{2\pi i\xi x}$ converge to the trivial character as $\xi \to 0$ in the Fell topology, and each is irreducible and nontrivial; by the equivalence (c) the trivial representation is not isolated. Equivalently, for $Q = [-1,1]$ and any $\varepsilon > 0$ a unit vector in the one-dimensional space of $\chi_\xi$ is $(Q,\varepsilon)$-invariant as soon as $|\xi|$ is small, and the representation has no nonzero invariant vector unless $\xi = 0$.
+**Example (the additive line).** $G = \mathbb{R}$ does not have (T). The characters $\chi_\xi(x) = \exp(2\pi i\xi x)$ converge to the trivial character as $\xi \to 0$ in the Fell topology, and each is irreducible and nontrivial; by the equivalence (c) the trivial representation is not isolated. Equivalently, for $Q = [-1,1]$ and any $\varepsilon > 0$ a unit vector in the one-dimensional space of $\chi_\xi$ is $(Q,\varepsilon)$-invariant as soon as $|\xi|$ is small, and the representation has no nonzero invariant vector unless $\xi = 0$.
 
 ## The Fixed-Point and Cohomological Characterisations
 

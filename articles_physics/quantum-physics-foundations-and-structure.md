@@ -237,18 +237,18 @@ This is the standard formula for the expectation value of a qubit observable.
 For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities
 
 $$
-p_\pm = \frac{1}{2}\left(1 \pm \hat a\cdot\vec r\right),
+p_\pm = \frac{1}{2}\left(1 \pm a^{\mathrm{fop}}\cdot\vec r\right),
 $$
 
-where $\hat a = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat a$ and the Bloch vector $\vec r$.
+where $a^{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a^{\mathrm{fop}}$ and the Bloch vector $\vec r$.
 
 After the measurement with outcome $+$, the state collapses to the pure state
 
 $$
-\rho' = \frac{1}{2}\left(I + \hat a\cdot\boldsymbol{\sigma}\right),
+\rho' = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
 $$
 
-i.e., the Bloch vector becomes $\hat a$.
+i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
 
 ## Dynamics
 

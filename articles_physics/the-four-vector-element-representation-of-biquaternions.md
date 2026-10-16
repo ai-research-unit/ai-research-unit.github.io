@@ -10,7 +10,7 @@ $$
 
 which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The realization supplies a space and no action: the action is the $4 \times 4$ matrix of left multiplication in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and the $2 \times 2$ matrices of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. This article treats the coefficient space, the column and the dual row, the component form of the product, the four conjugations in coordinates, the remarkable subspaces as coordinate conditions, and the biquaternion norm with its two real restrictions.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
+The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
 
 $$
 \tilde{Q} = \underbrace{(ict)\,e_0 + \vec x}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + i\vec x'}_{\in\,\mathbb{M}_+},
@@ -298,7 +298,7 @@ with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquater
 **Definition.** The **biquaternion norm** of a biquaternion is the central element
 
 $$
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2 \in \mathbb{C}.
 $$
 
 In four-vector form the biquaternion norm has **all four signs positive**, and the Gram matrix of its polar form is the identity $\mathrm{diag}(+1,+1,+1,+1)$.
@@ -307,7 +307,7 @@ In four-vector form the biquaternion norm has **all four signs positive**, and t
 
 **Proof.** Expand $\tilde{Q}\tilde{Q}^{\natural} = \big(\sum_\mu Q_\mu e_\mu\big)\big(Q_0e_0 - \sum_k Q_k e_k\big)$. The cross terms between $e_0$ and the vector units cancel between the two orders. The remaining terms are $Q_0^2e_0$ together with $\sum_k Q_k^2 e_k^2 = -\sum_k Q_k^2e_0$ and the mixed terms $-Q_jQ_ke_je_k$ over ordered pairs with $j \neq k$. The pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and their basis products are negatives, so the pair contributes a multiple of $e_je_k + e_ke_j = 0$ and cancels. Collecting the surviving scalar terms gives $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$.
 
-Two consequences matter. First, the biquaternion norm is a **general plain bilinear** form of rank four, multiplicative, $N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q})$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
+Two consequences matter. First, the biquaternion norm is a **general plain bilinear** form of rank four, multiplicative, $\langle\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
 
 ### The Two Real Restrictions
 
@@ -316,42 +316,42 @@ The indefinite form is not on the coefficient space but on the two real sectors,
 **Proposition (the real restrictions).** On the material sector $\mathbb{M}_-$, writing $Q^0 = i a^0$ and $Q^k = a^k$ with $a^\mu \in \mathbb{R}$, the biquaternion norm restricts to
 
 $$
-N(\tilde{Q}) = -(a^0)^2 + (a^1)^2 + (a^2)^2 + (a^3)^2,
+\langle\tilde{Q}\rangle_{\natural} = -(a^0)^2 + (a^1)^2 + (a^2)^2 + (a^3)^2,
 $$
 
 a real quadratic form of signature $(3,1)$; with $a^0 = ct$ and $a^k = x_k$ it is the Minkowski interval $-c^2t^2 + \vec x^2$. On the informational sector $\mathbb{M}_+$, writing $Q^0 = a^0$ and $Q^k = i a^k$ with $a^\mu \in \mathbb{R}$, it restricts to
 
 $$
-N(\tilde{Q}) = (a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2,
+\langle\tilde{Q}\rangle_{\natural} = (a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2,
 $$
 
 a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it is $c^2(t')^2 - (\vec x')^2$.
 
 **Proof.** Substitute the coordinate conditions of the table above into $\sum_\mu (Q^\mu)^2$. On $\mathbb{M}_-$ the scalar term is $(ia^0)^2 = -(a^0)^2$ and the three vector terms are $(a^k)^2$; on $\mathbb{M}_+$ the scalar term is $(a^0)^2$ and the three vector terms are $(ia^k)^2 = -(a^k)^2$.
 
-The real sector $\mathbb{H}_{\mathbb{B}}$ is the case in which no coefficient carries the $i$, and its biquaternion norm is the positive-definite $q_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$. The two forms are exchanged by multiplication by the scalar imaginary, since $N(i\tilde{Q}) = -N(\tilde{Q})$ on every element and $\mathbb{M}_+ = i\mathbb{M}_-$, $\mathbb{M}_- = i\mathbb{M}_+$. The Lorentzian signature is therefore an **output** of the framework and not an input to it: the four coefficients start on an equal footing with all four signs positive, and the minus sign of the interval appears only when a real coordinate is placed on a direction whose coefficient carries the factor $i$.
+The real sector $\mathbb{H}_{\mathbb{B}}$ is the case in which no coefficient carries the $i$, and its biquaternion norm is the positive-definite $q_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$. The two forms are exchanged by multiplication by the scalar imaginary, since $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$ on every element and $\mathbb{M}_+ = i\mathbb{M}_-$, $\mathbb{M}_- = i\mathbb{M}_+$. The Lorentzian signature is therefore an **output** of the framework and not an input to it: the four coefficients start on an equal footing with all four signs positive, and the minus sign of the interval appears only when a real coordinate is placed on a direction whose coefficient carries the factor $i$.
 
-**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $N(\tilde{Q}) = 0$ is $-c^2t^2 + \vec x^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $N(\tilde{\Lambda}) = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
+**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $\langle\tilde{Q}\rangle_{\natural} = 0$ is $-c^2t^2 + \vec x^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\langle\tilde{\Lambda}\rangle_{\natural} = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
 
 ### The Inverse in Coordinates
 
-The invertibility criterion, that $\tilde{Q}$ is a unit exactly when $N(\tilde{Q}) \neq 0$, is that of the mathematics corpus; what the four-vector realization adds is the coordinate form of the inverse.
+The invertibility criterion, that $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural} \neq 0$, is that of the mathematics corpus; what the four-vector realization adds is the coordinate form of the inverse.
 
 **Proposition (the inverse in coordinates).** For an invertible biquaternion $\tilde{Q}$,
 
 $$
-\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Big), \qquad N = N(\tilde{Q}).
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^0}{N}, \, -\frac{Q^1}{N}, \, -\frac{Q^2}{N}, \, -\frac{Q^3}{N} \Big), \qquad N = \langle\tilde{Q}\rangle_{\natural}.
 $$
 
-**Proof.** With $N \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $N$.
+**Proof.** With $N \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^0, -Q^1, -Q^2, -Q^3)$, divided by the complex scalar $\langle\cdot\rangle_{\natural}$.
 
 **Example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ of the preceding example,
 
 $$
-N(\tilde{Q}) = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
+\langle\tilde{Q}\rangle_{\natural} = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
 $$
 
-so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $N(\tilde{Q}^{\natural}) = 11+2i$, $N(\tilde{Q}^{*}) = 11-2i$ and $N(\tilde{Q}^{*}) = 11-2i$, and multiplication by $i$ reverses its sign, $N(i\tilde{Q}) = -11-2i$.
+so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $\langle\tilde{Q}^{\natural}\rangle_{\natural} = 11+2i$, $\langle\tilde{Q}^{*}\rangle_{\natural} = 11-2i$ and $\langle\tilde{Q}^{*}\rangle_{\natural} = 11-2i$, and multiplication by $i$ reverses its sign, $\langle i\tilde{Q}\rangle_{\natural} = -11-2i$.
 
 ## The Four-Vectors of Relativistic Physics
 
@@ -360,7 +360,7 @@ The material sector is the home of the four-vectors, and the four-vector represe
 **The four-position.**
 
 $$
-\tilde{Q} = ict\,e_0 + \vec x, \qquad N(\tilde{Q}) = -c^2t^2 + \vec x^2,
+\tilde{Q} = ict\,e_0 + \vec x, \qquad \langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + \vec x^2,
 $$
 
 which is the Minkowski interval. The four-position is the element whose biquaternion norm vanishes on the light cone through the origin, and it is the object acted on by the rotor conjugation.
@@ -368,7 +368,7 @@ which is the Minkowski interval. The four-position is the element whose biquater
 **The four-velocity.** With $\gamma$ the Lorentz factor of a particle of velocity $\vec v$,
 
 $$
-\tilde{V} = i\gamma c\,e_0 + \gamma\vec v, \qquad N(\tilde{V}) = -\gamma^2\big( c^2 - \vec v^2 \big) = -c^2 .
+\tilde{V} = i\gamma c\,e_0 + \gamma\vec v, \qquad \langle\tilde{V}\rangle_{\natural} = -\gamma^2\big( c^2 - \vec v^2 \big) = -c^2 .
 $$
 
 The biquaternion norm of the four-velocity is **constant**, $-c^2$, on every timelike world line, which is the coordinate form of the statement that $\mathrm{d}\tau = \sqrt{-\mathrm{d}s^2}/c$ is the proper time.
@@ -376,13 +376,13 @@ The biquaternion norm of the four-velocity is **constant**, $-c^2$, on every tim
 **The four-momentum.**
 
 $$
-\tilde{P} = i\frac{E}{c}e_0 + \vec p, \qquad N(\tilde{P}) = -\frac{E^2}{c^2} + \vec p^2 .
+\tilde{P} = i\frac{E}{c}e_0 + \vec p, \qquad \langle\tilde{P}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^2 .
 $$
 
 For an on-shell particle the dispersion relation $E^2 = c^2\vec p^2 + m^2c^4$ gives
 
 $$
-N(\tilde{P}) = -\Big( \frac{E^2}{c^2} - \vec p^2 \Big) = -m^2c^2 ,
+\langle\tilde{P}\rangle_{\natural} = -\Big( \frac{E^2}{c^2} - \vec p^2 \Big) = -m^2c^2 ,
 $$
 
 so the mass-shell condition is the statement that the four-momentum lies on the sphere of radius $mc$ in the biquaternion norm, and the mass is read off the biquaternion norm of the four-momentum. The dispersion relation itself, in biquaternionic form, is the subject of the wave-mechanics articles.
@@ -390,13 +390,13 @@ so the mass-shell condition is the statement that the four-momentum lies on the 
 **The four-current and the four-potential.** The electric four-current is
 
 $$
-\tilde{J} = i\rho c\,e_0 + \vec J, \qquad N(\tilde{J}) = -\rho^2c^2 + \vec J^2 ,
+\tilde{J} = i\rho c\,e_0 + \vec J, \qquad \langle\tilde{J}\rangle_{\natural} = -\rho^2c^2 + \vec J^2 ,
 $$
 
 and the four-potential is
 
 $$
-\tilde{A} = i\frac{\phi}{c}e_0 + \vec A, \qquad N(\tilde{A}) = -\frac{\phi^2}{c^2} + \vec A^2 .
+\tilde{A} = i\frac{\phi}{c}e_0 + \vec A, \qquad \langle\tilde{A}\rangle_{\natural} = -\frac{\phi^2}{c^2} + \vec A^2 .
 $$
 
 Neither biquaternion norm is fixed on general configurations; what is invariant is the transformation law, which is the rotor conjugation, and the gauge freedom, which is the addition of a gradient.
@@ -410,7 +410,7 @@ $$
 with quadruple $(\partial_{ict}, \partial_x, \partial_y, \partial_z)$. Its biquaternion norm is the d'Alembertian,
 
 $$
-N(\tilde{\nabla}) = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box ,
+\langle\tilde{\nabla}\rangle_{\natural} = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \partial_x^2 + \partial_y^2 + \partial_z^2 = \Box ,
 $$
 
 the all-plus sign of the biquaternion norm being exactly what makes the spatial part of the d'Alembertian positive with the $ict$ convention. The gradient is the case in which the material four-vector is an operator, and the wave equation $\Box\tilde{\Psi} = 0$ is the statement that the biquaternion norm of the gradient annihilates the field.
@@ -446,15 +446,15 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The remarkable subspaces; coordinate conditions in the table above |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, the diagonal of the general quaternionic bilinear form and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
-| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | The inverse in coordinates |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, the diagonal of the general quaternionic bilinear form and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $ict$, $\vec x = x e_1 + y e_2 + z e_3$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
 | $ct'$, $i\vec x' = i x'e_1 + iy'e_2 + iz'e_3$ | The informational coordinate |
 | $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$ for the four-position |
 | $q_0, q'_1, q'_2, q'_3$ | Real parameters of an informational four-vector, $\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3$; $q_0 = ct'$, $(q'_1,q'_2,q'_3) = (x',y',z')$ |
-| $\tilde{V}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $N(\tilde{V}) = -c^2$, $N(\tilde{P}) = -m^2c^2$ on shell |
-| $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $N(\tilde{\nabla}) = \Box$ |
+| $\tilde{V}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $\langle\tilde{V}\rangle_{\natural} = -c^2$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ on shell |
+| $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $\langle\tilde{\nabla}\rangle_{\natural} = \Box$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | The $ict$-coordinate metric of the explicit contractions (level 2) |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

@@ -14,7 +14,7 @@ The article is organised as follows. The defining module and its classification 
 
 ## The Defining Module: Two Levels
 
-The classification is stated in the companion article *Modules over the General Plain Algebra of Biquaternions* and is used here as given.
+The classification is stated in the companion article *Modules over the Biquaternion Algebra* and is used here as given.
 
 **Theorem.** *Let $V=\mathbb{C}^2$ be the space of column vectors with the natural action of $\mathbb{B}\cong M_2(\mathbb{C})$. Every finite-dimensional $\mathbb{B}$-module is isomorphic to a direct sum of copies of $V$,*
 
@@ -241,8 +241,8 @@ The qubit's most characteristic results are properties of $\mathsf{M}_2$ rather 
 | Structure | Qubit, from $\mathbb{B}=M_2(\mathbb{C})$ | Qutrit, in $\mathrm{Sym}^2V$ |
 |---|---|---|
 | Number of levels | $2$, the module dimension | $3$, a summand of the tensor square |
-| Biquaternion norm | $N(\tilde H)=\det\tilde H$, a quadratic form of signature $(1,3)$ | the determinant of a $3\times3$ matrix, a cubic |
-| Positive cone | the future light cone of $N$; positivity $=$ causality | not a cone of a quadratic form; positivity is $|\vec b|\le1$ with $\det\rho\ge0$ |
+| Biquaternion norm | $\langle\tilde H\rangle_{\natural}=\det\tilde H$, a quadratic form of signature $(1,3)$ | the determinant of a $3\times3$ matrix, a cubic |
+| Positive cone | the future light cone of $\langle\cdot\rangle_{\natural}$; positivity $=$ causality | not a cone of a quadratic form; positivity is $|\vec b|\le1$ with $\det\rho\ge0$ |
 | Pure states | the zero divisors at trace one; the boundary of the ball | rank-one states; a four-real-dimensional manifold, not a sphere |
 | State space | the Bloch ball, a slice of the cone | an eight-dimensional convex body; the inscribed ball has radius $\tfrac12$ |
 | Ladder | one rung, $S_+^2=0$ | two rungs, $J_+^3=0$, $J_+^2\neq0$ |

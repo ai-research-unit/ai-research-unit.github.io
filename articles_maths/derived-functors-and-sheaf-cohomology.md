@@ -97,7 +97,7 @@ $$
 the right derived functors of the global sections functor applied to the complex, computed by replacing $\mathcal{A}^\bullet$ by a bounded below complex of injective sheaves quasi-isomorphic to it and taking the cohomology of the total complex of the resulting double complex. The two spectral sequences of the filtration of the total complex by the first and second degree have
 
 $$
-{}'E_2^{p,q} = H^p(X,\mathcal{H}^q(\mathcal{A}^\bullet)) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet), \qquad {}''E_1^{p,q} = H^q(X,\mathcal{A}^p) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet),
+{}'E_2^{n,m} = H^p(X,\mathcal{H}^q(\mathcal{A}^\bullet)) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet), \qquad {}''E_1^{p,q} = H^q(X,\mathcal{A}^p) \Longrightarrow \mathbb{H}^{p+q}(X,\mathcal{A}^\bullet),
 $$
 
 and when $\mathcal{A}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$, the hypercohomology is $H^i(X,\mathcal{F})$, so that the two spectral sequences compute the cohomology of $\mathcal{F}$ from a resolution whose terms need not be acyclic.
@@ -105,16 +105,16 @@ and when $\mathcal{A}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$, 
 **Theorem (the Grothendieck spectral sequence).** Let $F : \mathcal{A}\to\mathcal{B}$ and $G : \mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories, and suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects of $\mathcal{B}$ (that is, $R^jG(F(I)) = 0$ for $j>0$ and $I$ injective). Then for every object $A$ of $\mathcal{A}$ there is a spectral sequence of cohomological type
 
 $$
-E_2^{p,q} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A),
+E_2^{n,m} = \bigl(R^pG\bigr)\bigl(R^qF(A)\bigr) \Longrightarrow R^{p+q}(G\circ F)(A),
 $$
 
 natural in $A$. When $\mathcal{A}$ is a category of sheaves, $\mathcal{B} = \mathcal{C} = \mathbf{Ab}$, $F = f_*$ for a continuous map $f : X\to Y$ and $G = \Gamma(Y,-)$, the hypothesis holds and the sequence becomes the **Leray spectral sequence**
 
 $$
-E_2^{p,q} = H^p\bigl(Y, R^qf_*\mathcal{F}\bigr) \Longrightarrow H^{p+q}(X,\mathcal{F})
+E_2^{n,m} = H^p\bigl(Y, R^qf_*\mathcal{F}\bigr) \Longrightarrow H^{p+q}(X,\mathcal{F})
 $$
 
-of *Sheaf Cohomology*; when $F$ is the functor of sections of a complex of sheaves and $G$ the global sections, one obtains the Čech-to-derived and the hypercohomology sequences. The statement and proof of the general theorem, and the construction of the spectral sequence of a filtered complex, are *Spectral Sequences* of Part I; the fibration case $E_2^{p,q} = H^p(B;\underline{H}^q(F;A))\Rightarrow H^{p+q}(E;A)$ is the Leray–Serre sequence of *The Leray–Serre Spectral Sequence*.
+of *Sheaf Cohomology*; when $F$ is the functor of sections of a complex of sheaves and $G$ the global sections, one obtains the Čech-to-derived and the hypercohomology sequences. The statement and proof of the general theorem, and the construction of the spectral sequence of a filtered complex, are *Spectral Sequences* of Part I; the fibration case $E_2^{n,m} = H^p(B;\underline{H}^q(F;A))\Rightarrow H^{p+q}(E;A)$ is the Leray–Serre sequence of *The Leray–Serre Spectral Sequence*.
 
 *Proof sketch.* Take an injective resolution $A\to I^\bullet$; the hypothesis makes $F(I^\bullet)$ a complex of $G$-acyclic objects, and the double complex obtained by resolving each $F(I^q)$ by injectives has two filtrations whose spectral sequences are the ones displayed; the $E_2$ of the first filtration computes the cohomology of $F(I^\bullet)$ in the $q$-direction and then applies $R^pG$, and the abutment is the cohomology of the total complex, which computes $R^{p+q}(G\circ F)(A)$ by the standard comparison argument.
 
@@ -139,7 +139,7 @@ which is the exact sequence used to compute the cohomology of a fibration and of
 **Theorem (properties).** Let $f : X\to Y$ and $g : Y\to Z$ be continuous.
 
 1. $R^qf_* = 0$ for $q<0$ and $R^0f_* = f_*$; for a closed immersion $f$, $R^qf_* = 0$ for $q>0$.
-2. There is a natural spectral sequence $E_2^{p,q} = R^pg_*(R^qf_*\mathcal{F})\Rightarrow R^{p+q}(g\circ f)_*\mathcal{F}$, the Grothendieck spectral sequence of the composite of the two left exact functors.
+2. There is a natural spectral sequence $E_2^{n,m} = R^pg_*(R^qf_*\mathcal{F})\Rightarrow R^{p+q}(g\circ f)_*\mathcal{F}$, the Grothendieck spectral sequence of the composite of the two left exact functors.
 3. The **base change map** $g^{-1}R^qf_*\mathcal{F}\to R^qf'_*(g'^{-1}\mathcal{F})$ for a cartesian square with maps $f, g, f', g'$ is an isomorphism when $f$ is proper and of finite cohomological dimension, or when $g$ is flat; more generally there is a base change spectral sequence.
 4. The **projection formula** $R^qf_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}\cong R^qf_*(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G})$ holds when the tensor and direct image are taken over compatible structure sheaves.
 
@@ -151,7 +151,7 @@ which is the exact sequence used to compute the cohomology of a fibration and of
 
 The category of sheaves of abelian groups on a space is an abelian AB5 category with a family of generators and enough injectives, so that every left exact functor on it has right derived functors; the general theory of abelian categories, of derived functors and of spectral sequences is Part I's, and the article applies it to the two functors that occur on a space, the global sections $\Gamma(X,-)$ and the direct image $f_*$. The abstract notion that makes the application work is effaceability: a cohomological $\delta$-functor is effaceable if every class in positive degree can be killed by embedding the coefficient in a suitable object, and Grothendieck's theorem states that an effaceable $\delta$-functor is universal and that an effaceable $\delta$-functor with a left exact degree-zero part is that part's derived functor. Consequently the sheaf cohomology $H^\bullet(X,-)$ is the only cohomological theory with $H^0 = \Gamma$ whose positive-degree functors are effaceable, and the **abstract de Rham theorem** follows: any resolution of a sheaf by acyclic sheaves, or any resolution whose sections give an effaceable functor, computes the cohomology. The flabby resolution of Godement, the Čech complex in the limit, the de Rham complex of a manifold and the singular cochain complex of a locally contractible space are all instances, which is why the different cohomology theories of a space agree.
 
-The **Grothendieck spectral sequence** $E_2^{p,q} = R^pG(R^qF(A)) \Rightarrow R^{p+q}(G\circ F)(A)$ for a composite of left exact functors, its five-term exact sequence and its instances — the Leray spectral sequence of a continuous map, the hypercohomology of a complex of sheaves and the spectral sequence of a double complex — organise the computation of sheaf cohomology from a filtration, and the derived functors $R^qf_*$ of the direct image, with their base change and projection formulae and the duality of Verdier, are the degreewise shadow of the six operations of the derived category of Part I.
+The **Grothendieck spectral sequence** $E_2^{n,m} = R^pG(R^qF(A)) \Rightarrow R^{p+q}(G\circ F)(A)$ for a composite of left exact functors, its five-term exact sequence and its instances — the Leray spectral sequence of a continuous map, the hypercohomology of a complex of sheaves and the spectral sequence of a double complex — organise the computation of sheaf cohomology from a filtration, and the derived functors $R^qf_*$ of the direct image, with their base change and projection formulae and the duality of Verdier, are the degreewise shadow of the six operations of the derived category of Part I.
 
 ## Summary of Notation
 
@@ -164,8 +164,8 @@ The **Grothendieck spectral sequence** $E_2^{p,q} = R^pG(R^qF(A)) \Rightarrow R^
 | effaceable | $T^i(A)$ killed by some monomorphism $A\hookrightarrow B$ for $i>0$ |
 | universal | morphisms out of the $\delta$-functor determined by degree zero |
 | $\mathcal{A}^\bullet$, $\mathbb{H}^i(X,\mathcal{A}^\bullet)$ | complex of sheaves; hypercohomology $R^i\Gamma(X,\mathcal{A}^\bullet)$ |
-| $E_2^{p,q} = R^pG(R^qF(A))$ | Grothendieck spectral sequence of a composite of functors |
-| $E_2^{p,q} = H^p(Y,R^qf_*\mathcal{F})$ | Leray spectral sequence of a continuous map |
+| $E_2^{n,m} = R^pG(R^qF(A))$ | Grothendieck spectral sequence of a composite of functors |
+| $E_2^{n,m} = H^p(Y,R^qf_*\mathcal{F})$ | Leray spectral sequence of a continuous map |
 | $f^{-1}\dashv f_*$, $R^qf_*$ | inverse and direct image adjunction; higher direct images |
 | $f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$ | the six operations of the derived category |
 | Verdier duality | the adjunction $\mathbb{R}f_!\dashv f^!$; for $f$ to a point, $H^k(M)\cong H_{n-k}(M)^{\vee}$ |

@@ -55,7 +55,7 @@ $$
 \delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}} .
 $$
 
-**Proof.** The identity is $\delta_e$, since $(\delta_e*g)(x) = g(e^{-1}x) = g(x)$ and $(g*\delta_e)(x) = g(xe^{-1}) = g(x)$. For the products, $\delta_a*\delta_b = \delta_{ab}$ by the definition with the unique contributing pair $y = a$, $z = b$. Injectivity is clear from $\delta_a(e) \neq \delta_b(e)$ for $a \neq b$.
+**Proof.** The identity is $\delta_e$, since $(\delta_e*g)(x) = g(\exp(-1)x) = g(x)$ and $(g*\delta_e)(x) = g(xe^{-1}) = g(x)$. For the products, $\delta_a*\delta_b = \delta_{ab}$ by the definition with the unique contributing pair $y = a$, $z = b$. Injectivity is clear from $\delta_a(e) \neq \delta_b(e)$ for $a \neq b$.
 
 The corollary identifies the convolution algebra of finitely supported functions with the **group algebra** $k[G]$ of *Group Algebras*: the definition above is the multiplication of that algebra, written on functions instead of on formal sums. The identification is the reason convolution is the natural product on functions on a group, and it is used without further comment.
 

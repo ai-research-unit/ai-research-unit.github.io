@@ -158,7 +158,7 @@ $$
 obtained from the $\lambda$-operations on the $K$-theory and the Chern classes of a projective module, and it is an isomorphism after tensoring with $\mathbb{Q}$ for $R$ regular. The **Atiyah–Hirzebruch spectral sequence** of *Stable Homotopy Theory*,
 
 $$
-E^2_{p,q} = H_p(X;K_q(R)) \Longrightarrow K_{p+q}(R),
+E^2_{n,m} = H_p(X;K_q(R)) \Longrightarrow K_{p+q}(R),
 $$
 
 organises the computation. In particular for $R = \mathbb{C}$ the comparison with topological $K$-theory is detected by the Chern character: $K_0(\mathbb{C}) \cong \mathbb{Z}$ and $K_1(\mathbb{C}) \cong \mathbb{C}^\times$, and rationally $K_n(\mathbb{C})\otimes\mathbb{Q}$ is $\mathbb{Q}$ for even $n$ and $0$ for odd $n$, matching the topological $K$-theory of a point of *Stable Homotopy Theory*; the higher algebraic $K$-groups of $\mathbb{C}$ are divisible by the theorem of Suslin, so the comparison is rational and not integral, and this is the precise sense in which algebraic $K$-theory of $\mathbb{C}$ agrees with topological $K$-theory after inverting the primes.
@@ -252,7 +252,7 @@ For a field the Quillen groups are accompanied by the **Milnor $K$-groups** $k_n
 | Chern character | Comparison $K_n(R)\otimes\mathbb{Q} \to$ (co)homology of $\mathrm{Spec}\,R$ |
 | $KU$, $KO$ | Topological $K$-theory spectra (other agent's article) |
 | $K_*(A)$, $A$ a $C^*$-algebra | Operator-algebraic $K$-theory (other agent's article) |
-| Atiyah–Hirzebruch SS | $E^2_{p,q} = H_p(X;K_q(R)) \Rightarrow K_{p+q}(R)$ |
+| Atiyah–Hirzebruch SS | $E^2_{n,m} = H_p(X;K_q(R)) \Rightarrow K_{p+q}(R)$ |
 | $k_n^M(F)$ | Milnor $K$-groups of a field; $k_1^M(F) = F^\times$, $k_2^M(F) \cong K_2(F)$ |
 | $k_n(F) = k_n^M(F)/2$ | Mod-2 Milnor $K$-group; $k_2(F) \cong \operatorname{Br}_2(F)$ and $k_n(F) \cong H^n(F;\mathbb{Z}/2)$ |
 | $\{a_1, \ldots, a_n\}$ | Symbol in $k_n^M(F)$ |

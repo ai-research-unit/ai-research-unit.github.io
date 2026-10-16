@@ -465,7 +465,7 @@ $$
 \int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta,
 $$
 
-substitute $A = e^{i\theta}$, so that $\cos\theta = (A + A^{-1})/2$, $\sin\theta = (A - A^{-1})/(2i)$, and $d\theta = dA/(iA)$. The integral becomes a contour integral over the unit circle, evaluated by residues.
+substitute $A = \exp(i\theta)$, so that $\cos\theta = (A + A^{-1})/2$, $\sin\theta = (A - A^{-1})/(2i)$, and $d\theta = dA/(iA)$. The integral becomes a contour integral over the unit circle, evaluated by residues.
 
 **Integrals over the real line.** For an integral of the form
 
@@ -478,7 +478,7 @@ where $f$ is a rational function decaying faster than $1/|a|$ at infinity with n
 **Integrals with trigonometric kernels.** For an integral of the form
 
 $$
-\int_{-\infty}^\infty f(b) e^{iab} \, db, \qquad a > 0,
+\int_{-\infty}^\infty f(b) \exp(iab) \, db, \qquad a > 0,
 $$
 
 where $f$ is a rational function decaying at infinity with no poles on the real axis, use the same contour as above, with **Jordan's lemma** controlling the contribution from the semicircle.

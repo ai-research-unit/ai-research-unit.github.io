@@ -109,12 +109,12 @@ $$
 \rho_a = \operatorname{Ad}_{\exp a}\circ\alpha , \qquad \rho_a(x) = \operatorname{Ad}_{\exp a}\bigl(\alpha(x)\bigr) ,
 $$
 
-where $\operatorname{Ad}_{\exp a} = e^{\operatorname{ad}_a}$ is the inner automorphism of the algebra determined by the group element $\exp a$; it is the Lie-algebraic form of the associative conjugation $x\mapsto a\alpha(x)a^{-1}$.
+where $\operatorname{Ad}_{\exp a} = \exp(\operatorname{ad}_a)$ is the inner automorphism of the algebra determined by the group element $\exp a$; it is the Lie-algebraic form of the associative conjugation $x\mapsto a\alpha(x)a^{-1}$.
 
 **Theorem.** The square of the signed conjugation is the inner automorphism of the element $a + \alpha(a)$,
 
 $$
-\rho_a^{2} = \operatorname{Ad}_{\exp(a+\alpha(a))} = e^{\operatorname{ad}_{a+\alpha(a)}} ,
+\rho_a^{2} = \operatorname{Ad}_{\exp(a+\alpha(a))} = \exp(\operatorname{ad}_{a+\alpha(a)}) ,
 $$
 
 and it is an involution of the algebra exactly when $a+\alpha(a)$ is central.
@@ -131,7 +131,7 @@ $$
 
 and on the Lie algebra the restriction of this operator to $\mathrm{G}$ is the signed conjugation by $\exp a$ when $u = \exp a$. Hence the pair of a unit and its inverse is the carrying pair of a reflection, and the reflections of the next article are the signed sandwiches whose carrying pair is inverse.
 
-*Proof.* In the enveloping algebra the signed sandwich is $\Sigma^{\alpha}_{u,v}(x) = u\alpha(x)v$, and with $v = u^{-1}$ it is $u\alpha(x)u^{-1} = \rho_u$; the group element $\exp a$ acts on $\mathrm{G}$ through the adjoint representation $\operatorname{Ad}_{\exp a} = e^{\operatorname{ad}_a}$, so the restriction to the algebra is the signed conjugation. The infinitesimal form of the family at $u = e$ is the signed left multiplication, computed in the next article.
+*Proof.* In the enveloping algebra the signed sandwich is $\Sigma^{\alpha}_{u,v}(x) = u\alpha(x)v$, and with $v = u^{-1}$ it is $u\alpha(x)u^{-1} = \rho_u$; the group element $\exp a$ acts on $\mathrm{G}$ through the adjoint representation $\operatorname{Ad}_{\exp a} = \exp(\operatorname{ad}_a)$, so the restriction to the algebra is the signed conjugation. The infinitesimal form of the family at $u = e$ is the signed left multiplication, computed in the next article.
 
 **Corollary.** The signed sandwich realises the reflections when the carrying pair is a pair of inverses in the enveloping algebra, and the signed conjugation by $\exp a$ is the case $u = \exp a$; this is why the reflections of the next article are the signed two-sided operators attached to the elements and not to arbitrary pairs.
 

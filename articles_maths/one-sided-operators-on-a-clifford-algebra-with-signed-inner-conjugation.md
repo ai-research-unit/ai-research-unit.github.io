@@ -16,10 +16,10 @@ The general theory of the two one-sided families — their definitions, their co
 
 ## The Signed Left Multiplication
 
-**Definition.** For $x\in\mathrm{Cl}(V,q)$ the **signed left multiplication** by $x$ is the $F$-linear map
+**Definition.** For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **signed left multiplication** by $x$ is the $F$-linear map
 
 $$
-\Lambda^{\alpha}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad \Lambda^{\alpha}_x(y)=\alpha(x)\,y .
+\Lambda^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Lambda^{\alpha}_x(y)=\alpha(x)\,y .
 $$
 
 It is the left one-sided operator $\Lambda^{\theta}_x$ of *One-Sided Operators on a Clifford Algebra* with $\theta=\alpha$, and it is defined for every $x$, invertibility not being required.
@@ -49,7 +49,7 @@ $$
 **Definition.** For a unit $x$ the **inverse right multiplication** is
 
 $$
-R_{x^{-1}}:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad R_{x^{-1}}(y)=y\,x^{-1}.
+R_{x^{-1}}:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad R_{x^{-1}}(y)=y\,x^{-1}.
 $$
 
 It is the right one-sided operator $\mathrm P^{c}_x$ of *One-Sided Operators on a Clifford Algebra* with $c$ the inverse, which is an anti-automorphism of the unit group, $c(xz)=c(z)c(x)$; the operator is therefore available only on the units.
@@ -78,13 +78,13 @@ $$
 
 with the same $\varepsilon_x=(-1)^{k}$. The right factor is the same in both, so the entire sign bookkeeping of the two-sided operator is carried by the left one-sided operator.
 
-**Corollary (the reflection).** For a vector $u$ with $q(u)\neq0$ the pairing with the signed left multiplication gives the reflection on the space of vectors,
+**Corollary (the reflection).** For a vector $a$ with $\mathfrak{Q}(a)\neq0$ the pairing with the signed left multiplication gives the reflection on the space of vectors,
 
 $$
-\Lambda^{\alpha}_u\bigl(R_{u^{-1}}(v)\bigr)=\mathrm{Ad}^{\alpha}_u(v)=\rho_u(v),\qquad L_u\bigl(R_{u^{-1}}(v)\bigr)=\mathrm{Ad}_u(v)=-\rho_u(v),
+\Lambda^{\alpha}_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}^{\alpha}_a(v)=\rho_a(v),\qquad L_a\bigl(R_{a^{-1}}(v)\bigr)=\mathrm{Ad}_a(v)=-\rho_a(v),
 $$
 
-for every $v\in V$. So the plain pairing sends an odd element to the negative of the reflection and the signed pairing to the reflection itself; a reflection is produced by the pair, and the sign that selects $\rho_u$ over $-\rho_u$ is the one carried by $\Lambda^{\alpha}_u$.
+for every $v\in V$. So the plain pairing sends an odd element to the negative of the reflection and the signed pairing to the reflection itself; a reflection is produced by the pair, and the sign that selects $\rho_a$ over $-\rho_a$ is the one carried by $\Lambda^{\alpha}_a$.
 
 **Remark (why no one-sided operator can show the sign on $V$).** The corollary is the only place where the sign becomes visible, and it needs both factors. By the theorem of *One-Sided Operators on a Clifford Algebra* the only left multiplications with $L_x(V)\subseteq V$ are the scalars, and the same holds on the right; so no one-sided operator, signed or not, acts on the quadratic space, and the minus has no one-sided manifestation there. On the module, where a one-sided action is the natural one, the sign shows up differently, in the parity of the operator, and that is the subject of *Pin Representations and Clifford Modules with Signed Inner Conjugation*.
 
@@ -93,7 +93,7 @@ for every $v\in V$. So the plain pairing sends an odd element to the negative of
 **Proposition.** The kernel and the image of the signed left multiplication are those of the ordinary one,
 
 $$
-\ker\Lambda^{\alpha}_x=\ell(\alpha(x))=\ell(x),\qquad \Lambda^{\alpha}_x\bigl(\mathrm{Cl}(V,q)\bigr)=x\cdot\mathrm{Cl}(V,q),
+\ker\Lambda^{\alpha}_x=\ell(\alpha(x))=\ell(x),\qquad \Lambda^{\alpha}_x\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)=x\cdot\mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
 the left annihilator and the right ideal. For the inverse right multiplication, $\ker R_{x^{-1}}=r(x^{-1})$ and $R_{x^{-1}}(\mathrm{Cl})=\mathrm{Cl}\cdot x^{-1}$, a left ideal.
@@ -145,7 +145,7 @@ $$
 
 with $\varepsilon_x=(-1)^{k}$ the parity sign, so the entire difference between the two two-sided operators sits in the left factor. The signed left multiplication is the conjugate of the plain one by the grade involution, $\Lambda^{\alpha}_x=\alpha L_x\alpha$; it agrees with $L_x$ on the even part and is $-L_x$ on the odd part; it is defined for every $x$, unlike the right factor; its value at the unit is $\alpha(x)$; it preserves the parity for even $x$ and interchanges the two parts for odd $x$; and its kernel and image are those of $L_x$, because it differs from $L_x$ by an invertible scalar.
 
-The sign is visible only in the pairing and only on the quadratic space. For a vector $u$, $\Lambda^{\alpha}_uR_{u^{-1}}(v)=\rho_u(v)$ while $L_uR_{u^{-1}}(v)=-\rho_u(v)$, so the signed left multiplication is exactly what turns the negative of the reflection into the reflection; no one-sided operator preserves $V$, so the minus has no one-sided manifestation there, and on a module it appears instead as the parity of the operator.
+The sign is visible only in the pairing and only on the quadratic space. For a vector $a$, $\Lambda^{\alpha}_uR_{a^{-1}}(v)=\rho_a(v)$ while $L_uR_{a^{-1}}(v)=-\rho_a(v)$, so the signed left multiplication is exactly what turns the negative of the reflection into the reflection; no one-sided operator preserves $V$, so the minus has no one-sided manifestation there, and on a module it appears instead as the parity of the operator.
 
 ## Summary of Notation
 
@@ -158,7 +158,7 @@ The sign is visible only in the pairing and only on the quadratic space. For a v
 | $R_{x^{-1}}(y)=yx^{-1}$ | Inverse right multiplication, defined on the units |
 | $\Lambda^{\alpha}_{xz}=\Lambda^{\alpha}_x\Lambda^{\alpha}_z$, $R_{x^{-1}}R_{z^{-1}}=R_{(xz)^{-1}}$ | Composition laws |
 | $\Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x$, $L_xR_{x^{-1}}=\mathrm{Ad}_x$ | The two pairings |
-| $\Lambda^{\alpha}_uR_{u^{-1}}=\rho_u$, $L_uR_{u^{-1}}=-\rho_u$ | The reflection and its negative on a vector $u$ |
+| $\Lambda^{\alpha}_uR_{a^{-1}}=\rho_a$, $L_uR_{a^{-1}}=-\rho_a$ | The reflection and its negative on a vector $a$ |
 | $\ell(x)$, $r(x^{-1})$ | Left annihilator and right annihilator, the kernels |
 | $x\cdot\mathrm{Cl}$, $\mathrm{Cl}\cdot x^{-1}$ | Right and left ideals, the images |
 | $\{x:L_x(V)\subseteq V\}=F\cdot1$ | No one-sided operator preserves the space of vectors |

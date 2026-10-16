@@ -46,12 +46,12 @@ The symmetric, exterior and Clifford algebras are quotients of $T(V)$ by homogen
 | $R[x_1,\dots,x_n]$, the polynomial algebra | commutative and associative | *Polynomial Algebras* |
 | $\operatorname{Sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra of a Module* |
 | $\Lambda(V)$, the exterior algebra | the graded-commutative associative quotient by $v \otimes v$ | *The Exterior Algebra* |
-| $\mathrm{Cl}(V,q)$, the Clifford algebra | the associative quotient by $v \otimes v - q(v)$ | *Clifford Algebras* |
+| $\mathrm{Cl}(V,\mathfrak{Q})$, the Clifford algebra | the associative quotient by $v \otimes v - \mathfrak{Q}(v)$ | *Clifford Algebras* |
 | $A_1(k) = k\langle x,y\rangle/(xy - yx - 1)$, the Weyl algebra | associative, a domain, and not a quotient by homogeneous relations | *Non-Commutative Domains*, §The Weyl Algebra |
 | $k[G]$, the group algebra | associative; the group law extended bilinearly | *Group Algebras* |
 | $\mathbb{C}, \mathbb{D}, \mathbb{D}'$ as quotients of $T(V)$ | the number systems presented by generators and relations; associative | *Quotients of the Tensor Algebra* |
 | $\mathbb{H}$, the quaternions | associative division algebra, and not commutative | *Quaternion Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | associative, with zero divisors | *Biquaternions as a Vector Space over $\mathbb{C}$* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | associative, with zero divisors | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$, the split biquaternions | associative, with zero divisors | *Split-Biquaternion Algebra* |
 
 The group algebra is associative because the group law is, and $k[G]$ is commutative exactly when $G$ is abelian; the exterior algebra is associative but only graded-commutative, so it is not a commutative algebra for $\dim V \geq 2$. These are the standard associative non-commutative algebras of the corpus, and the boundary between them and the commutative ones is commutativity, not associativity.
@@ -129,7 +129,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $[x,y,z] = (xy)z - x(yz)$ | The associator, a trilinear function vanishing exactly on the associative algebras |
 | $T(V)$, $R\langle x_1,\dots,x_n\rangle$ | The tensor algebra and the free algebra |
-| $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,q)$ | The symmetric, exterior and Clifford algebras |
+| $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | The symmetric, exterior and Clifford algebras |
 | $A_1(k)$ | The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$ |
 | $k[G]$, $kQ$ | The group algebra and the path algebra of a quiver |
 | $M_n(R)$, $E_{ij}$, $I_n$ | The matrix algebra, its matrix units and identity matrix |

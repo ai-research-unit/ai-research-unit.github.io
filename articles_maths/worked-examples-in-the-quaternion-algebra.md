@@ -19,7 +19,7 @@ $$
 e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
 $$
 
-and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $N$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
+and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $\langle\cdot\rangle_{\natural}$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
 
 ## The Three Involutions
 
@@ -38,7 +38,7 @@ called quaternion, vector and total conjugation. Each is an involution: applying
 **Worked values.** For $\tilde q = 1+2e_1-e_2+3e_3$,
 
 $$
-\tilde{q}^{\natural} = 1-2e_1+e_2-3e_3, \qquad -\tilde{q}^{\natural} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3 .
+\tilde{q}^{\natural} = 1-2e_1+e_2-3e_3, \qquad -\tilde{q}^{\natural} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3.
 $$
 
 **Proposition (fixed-point subspaces).** The fixed points of the three involutions are
@@ -61,7 +61,7 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\tilde\xi = p_0+\vec p$. Then $\tilde\xi^2 = p_0^2-N(\vec p)+2p_0\vec p$, so $\tilde\xi^2 = -1$ gives $2p_0\vec p = 0$ and $p_0^2-N(\vec p) = -1$. If $p_0\neq0$ then $\vec p = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\vec p) = 1$.
+*Proof.* Write $\tilde\xi = p_0+\vec p$. Then $\tilde\xi^2 = p_0^2-\langle \vec p\rangle_{\natural}+2p_0\vec p$, so $\tilde\xi^2 = -1$ gives $2p_0\vec p = 0$ and $p_0^2-\langle \vec p\rangle_{\natural} = -1$. If $p_0\neq0$ then $\vec p = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $\langle \vec p\rangle_{\natural} = 1$.
 
 **Worked roots.** The element
 
@@ -92,13 +92,13 @@ $$
 so that $u^{-1} = u^{\natural} = (1-e_1)/\sqrt2$. Then on the imaginary basis,
 
 $$
-u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2 .
+u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2.
 $$
 
 For instance, $ue_2 = \tfrac{1}{\sqrt2}(e_2+e_1e_2) = \tfrac{1}{\sqrt2}(e_2+e_3)$, and multiplying on the right by $u^{-1}$ gives
 
 $$
-ue_2u^{-1} = \tfrac12(e_2+e_3)(1-e_1) = \tfrac12\bigl(e_2+e_3-e_2e_1-e_3e_1\bigr) = \tfrac12(e_2+e_3+e_3-e_2) = e_3 .
+ue_2u^{-1} = \tfrac12(e_2+e_3)(1-e_1) = \tfrac12\bigl(e_2+e_3-e_2e_1-e_3e_1\bigr) = \tfrac12(e_2+e_3+e_3-e_2) = e_3.
 $$
 
 So $\operatorname{Ad}_u$ fixes $e_1$ and carries $e_2$ to $e_3$ and $e_3$ to $-e_2$; its matrix in the basis $(e_1,e_2,e_3)$ is
@@ -123,7 +123,7 @@ $$
 \mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
 $$
 
-Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = N(\tilde q)$.
+Its trace is $2q_0 = 2$ and its determinant is $\langle\tilde q\rangle_{\natural} = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$.
 
 $$
 \mathsf{M}_4(\tilde q) = \begin{pmatrix}
@@ -134,13 +134,13 @@ $$
 \end{pmatrix}.
 $$
 
-Its trace is $4q_0 = 4$, its determinant is $N(\tilde q)^2 = 225$, and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = N(\tilde q)I$.
+Its trace is $4q_0 = 4$, its determinant is $\langle\tilde q\rangle_{\natural}^2 = 225$, and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$.
 
 ## Summary
 
 The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(e_1+e_2+e_3)/\sqrt3$ is a worked root of the first equation.
 
-The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $N(\tilde q) = 15$, the $2\times2$ complex image $\mathsf{M}_2(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
+The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $\langle\tilde q\rangle_{\natural} = 15$, the $2\times2$ complex image $\mathsf{M}_2(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
 
 ## Summary of Notation
 
@@ -152,7 +152,7 @@ The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and 
 | $\tilde{q}^{\natural}, -\tilde{q}^{\natural}, -\tilde q$ | Quaternion, vector and total conjugation |
 | $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Fixed space of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Fixed space of $\tilde{\cdot}$ |
-| $N$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $N(\tilde q) = 15$ for the worked element |
+| $\langle\cdot\rangle_{\natural}$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $\langle\tilde q\rangle_{\natural} = 15$ for the worked element |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{\natural}$ | Conjugation action |
 | $R_u$ | Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$ |
 | $\mathsf{M}_2$ | The isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ |

@@ -133,7 +133,7 @@ $$
 
 *Proof.* Take an injective resolution $I^\bullet$ of $A$. By hypothesis each $F(I^n)$ is $G$-acyclic, so the resolution $F(I^\bullet)$ of $FA$ by $G$-acyclic objects computes $R^nG(FA)$ by the acyclic-resolution theorem. But $R^n(GF)(A)$ is by definition $H^n(GF(I^\bullet))=H^n(G(F(I^\bullet)))$, which is also $R^nG(FA)$.
 
-**Remark.** When the hypothesis fails, the two sides are related by the Grothendieck spectral sequence $E_2^{p,q}=R^pG(R^qF(A))\Rightarrow R^{p+q}(GF)(A)$, developed. The elementary statement above is the case in which the spectral sequence collapses to its edge; the general statement is the reason the composition of derived functors is the main computational tool of the theory.
+**Remark.** When the hypothesis fails, the two sides are related by the Grothendieck spectral sequence $E_2^{n,m}=R^pG(R^qF(A))\Rightarrow R^{p+q}(GF)(A)$, developed. The elementary statement above is the case in which the spectral sequence collapses to its edge; the general statement is the reason the composition of derived functors is the main computational tool of the theory.
 
 ## Elementary Properties and Examples
 

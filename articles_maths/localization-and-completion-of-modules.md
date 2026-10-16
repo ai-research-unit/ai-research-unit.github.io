@@ -5,7 +5,7 @@
 
 Two constructions enlarge a ring so that a module over it acquires better behaviour. Localisation inverts a chosen set of elements, producing a ring in which those elements are units; it is exact, it is a flat extension of scalars, and it is the tool that reduces a global statement to the local statements at the prime ideals. Completion passes to an inverse limit of quotients by powers of an ideal; it is the algebraic side of taking the limit of an ever finer filtration, it produces the $p$-adic integers from $\mathbb{Z}$, and over a Noetherian ring it is again flat. This article develops both as operations on modules, records their exactness and flatness properties, and explains how they behave when the base ring is closed further.
 
-Throughout, $R$ is a commutative ring with $1 \neq 0$ and $M$ is an $R$-module. The extension-of-scalars formalism of the companion article of this category is used throughout: localisation is the base change along $R \to S^{-1}R$, and completion is the base change along $R \to \hat R$ for the classes of rings where it is flat.
+Throughout, $R$ is a commutative ring with $1 \neq 0$ and $M$ is an $R$-module. The extension-of-scalars formalism of the companion article of this category is used throughout: localisation is the base change along $R \to S^{-1}R$, and completion is the base change along $R \to \widehat{R}$ for the classes of rings where it is flat.
 
 ## Localization of Modules
 

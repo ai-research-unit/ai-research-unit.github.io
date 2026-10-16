@@ -6,12 +6,12 @@ The two preceding articles expand the field of a localised source in an infinite
 
 The question is worth taking seriously, because it is easy to ask it in a form that has no answer. If one expects the multipole moments to be *elements a field can take* — values of the algebra at each point — then an infinite tower cannot sit inside a four-dimensional algebra, and one might look for a larger algebra, or suspect an inconsistency. The resolution is that the tower is not a tower of algebra elements at all. The multipole order $l$ is a label of the angular structure of a **function** on the sphere; the tower is the decomposition of the infinite-dimensional function space into irreducible representations of the rotation group. The biquaternion algebra is the **value space** — the algebra in which the field takes its values at a point — and it is finite because it is the value algebra of a two-state, four-vector structure. Two different mathematical objects, of two different dimensions, are doing two different jobs, and there is no contradiction between them.
 
-There is also a sharper statement to make, and it is the strongest form of the answer. As a representation space of the rotation group, the biquaternion algebra decomposes as $D^{(0)}\oplus D^{(1)}$ — the trivial representation and the vector representation — and contains no representation of order $l\geq2$. Its **elements** therefore carry the monopole and the dipole and nothing higher, and its **product** cannot manufacture anything higher either, because the quaternion product of two vectors, $\vec u\vec v = -\vec u\cdot\vec v + \vec u\times\vec v$, keeps only the dot and the cross product and discards precisely the symmetric traceless part that a quadrupole would be. Not only does the algebra not *contain* the tower; it cannot *reach* it by multiplication. The tower lives elsewhere, in the function space and in the infinite-dimensional enveloping algebra of the rotation generators.
+There is also a sharper statement to make, and it is the strongest form of the answer. As a representation space of the rotation group, the biquaternion algebra decomposes as $D^{(0)}\oplus D^{(1)}$ — the trivial representation and the vector representation — and contains no representation of order $l\geq2$. Its **elements** therefore carry the monopole and the dipole and nothing higher, and its **product** cannot manufacture anything higher either, because the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, keeps only the dot and the cross product and discards precisely the symmetric traceless part that a quadrupole would be. Not only does the algebra not *contain* the tower; it cannot *reach* it by multiplication. The tower lives elsewhere, in the function space and in the infinite-dimensional enveloping algebra of the rotation generators.
 
 The article is structural and classical, and it stays inside the non-relativistic series; the algebra it examines is the same finite algebra used throughout. Conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
 - Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*), and the conventions of presentation.
-- Companion article *Modules over the General Plain Algebra of Biquaternions*, for the algebra as a complex algebra and its modules.
+- Companion article *Modules over the Biquaternion Algebra*, for the algebra as a complex algebra and its modules.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators and the spin operators inside the algebra.
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction that is the companion phenomenon in the bracket setting.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series and the quadrupole as a symmetric traceless tensor.
@@ -79,7 +79,7 @@ $$
 \qquad 1 + 3 = 4 .
 $$
 
-The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{U}$ gives the same conjugation as $\tilde{U}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the centre is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $e^{\mp i\theta}$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
+The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{U}$ gives the same conjugation as $\tilde{U}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the centre is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $\exp(\mp i\theta)$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
 
 $$
 2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta),
@@ -111,7 +111,7 @@ and the algebra's product is the part of this tensor product that lands back in 
 $$
 D^{(1)}\times D^{(1)} \longrightarrow D^{(0)}\oplus D^{(1)} \subset \mathbb{B} ,
 \qquad
-\vec u\vec v = -\vec u\cdot\vec v + \vec u\times\vec v .
+\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v .
 $$
 
 The dot product is the $D^{(0)}$ channel and the cross product is the $D^{(1)}$ channel; the symmetric traceless $D^{(2)}$ channel is not in the image. This is the role that closes the argument: the algebra does not merely fail to contain a quadrupole, its product cannot create one from vectors.
@@ -122,15 +122,15 @@ The three roles can be summarised in one line each: the algebra *as a value spac
 
 ### The Product
 
-From the three roles above, the product of two elements of $\mathbb{B}$ stays in $\mathbb{B}$ — that is what it means to be an algebra — and, restricted to the traceless part, it maps $D^{(1)}\otimes D^{(1)}$ onto $D^{(0)}\oplus D^{(1)}$. The truncation is visible in the symmetrization identities for pure vectors $\vec u, \vec v$:
+From the three roles above, the product of two elements of $\mathbb{B}$ stays in $\mathbb{B}$ — that is what it means to be an algebra — and, restricted to the traceless part, it maps $D^{(1)}\otimes D^{(1)}$ onto $D^{(0)}\oplus D^{(1)}$. The truncation is visible in the symmetrization identities for pure vectors $\vec q, \vec v$:
 
 $$
-\tfrac12\left(\vec u\vec v + \vec v\vec u\right) = -(\vec u\cdot\vec v)\,e_0 \in D^{(0)} ,
+\tfrac12\left(\vec q\vec v + \vec v\vec q\right) = -(\vec q\cdot\vec v)\,e_0 \in D^{(0)} ,
 \qquad
-\tfrac12\left(\vec u\vec v - \vec v\vec u\right) = \vec u\times\vec v \in D^{(1)} .
+\tfrac12\left(\vec q\vec v - \vec v\vec q\right) = \vec q\times\vec v \in D^{(1)} .
 $$
 
-The symmetric traceless part of $\vec u\otimes\vec v$, the $D^{(2)}$ channel, is annihilated by the symmetrized product. In angular-momentum language this is the statement that the symmetrized product of two vectors contains only the $l = 0$ and $l = 1$ combinations, and never the $l = 2$ one.
+The symmetric traceless part of $\vec q\otimes\vec v$, the $D^{(2)}$ channel, is annihilated by the symmetrized product. In angular-momentum language this is the statement that the symmetrized product of two vectors contains only the $l = 0$ and $l = 1$ combinations, and never the $l = 2$ one.
 
 ### The Gradient
 
@@ -253,7 +253,7 @@ In every case the pattern is the same: the *generators* and the *values* are fin
 
 The multipole tower is infinite and the biquaternion algebra is finite, and there is no contradiction. The tower is the decomposition of the infinite-dimensional space of angular functions, $L^2(S^2) = \bigoplus_{l\geq0} D^{(l)}$, and it is a property of the **field**, a function of position. The algebra is the finite-dimensional **value space**, of complex dimension four, isomorphic to $M_2(\mathbb{C})$, and it is a property of each individual value of the field.
 
-As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec u\vec v = -\vec u\cdot\vec v + \vec u\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_0$, so the composition of two derivatives also keeps only the trace.
+As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_0$, so the composition of two derivatives also keeps only the trace.
 
 The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_l^m$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
 

@@ -9,7 +9,7 @@ The physics is standard and the framework's role is once again delimiting. A bac
 Three statements organise the article.
 
 1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde\sigma(\tilde{Q})=\sigma(\tilde{Q})e_0$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
-2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $\hat a_{\vec k}$ with $\hat b_{-\vec k}^\dagger$; its generator commutes with the $U(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\vec k}|^2$. The framework's canonical continuous symmetry — the central $U(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
+2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $a^{\mathrm{fop}}_{\vec k}$ with $b^{\mathrm{fop}}_{-\vec k}^\dagger$; its generator commutes with the $U(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\vec k}|^2$. The framework's canonical continuous symmetry — the central $U(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
 3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the biquaternion-norm interpretation of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
 
 The article is organised as follows. The next section sets up the background and the mode equation. The following section defines the in- and out-regions and the Bogoliubov transformation. The next section derives the mean pair number and the vacuum persistence amplitude. The section after that works the exactly solvable sudden-quench limit and verifies it numerically. A section states the biquaternion interpretation and the charge-conservation statement. The article closes with the standard/open separation.
@@ -43,7 +43,7 @@ $$
 If the background is **homogeneous**, $\sigma=\sigma(t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
-\phi(t,\vec x)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t)\,e^{\,i\vec k\cdot\vec x},
+\phi(t,\vec x)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t)\,\exp(\,i\vec k\cdot\vec x),
 $$
 
 with the mode functions satisfying
@@ -57,12 +57,12 @@ $$
 This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
 
 $$
-N(\tilde{K}_{\vec k}(t))=-\left(\mu^2+g\,\sigma(t)\right)e_0 ,
+\langle\tilde{K}_{\vec k}(t)\rangle_{\natural}=-\left(\mu^2+g\,\sigma(t)\right)e_0 ,
 \qquad
 \tilde{K}_{\vec k}(t)=i\omega_{\vec k}(t)e_0+\vec k,
 $$
 
-equivalently $\mu^2+g\,\sigma(t)=-\mathrm{Sc}(N(\tilde{K}_{\vec k}(t)))$, since $N(\tilde{K})=(\vec k^2-\omega^2)e_0$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_0$, it commutes with the algebra, and no spinor structure is involved.
+equivalently $\mu^2+g\,\sigma(t)=-\mathrm{Sc}(\langle\tilde{K}_{\vec k}(t)\rangle_{\natural})$, since $\langle\tilde{K}\rangle_{\natural}=(\vec k^2-\omega^2)e_0$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_0$, it commutes with the algebra, and no spinor structure is involved.
 
 Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $u''+(\vec k^2+a^2(t)\mu^2)u=0$ in conformal time for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
@@ -89,9 +89,9 @@ $$
 In each asymptotic region the field admits a standard mode decomposition, and the corresponding operators define the **in** and **out** Fock spaces. The two sets of positive-frequency solutions are, in each region,
 
 $$
-u_{\vec k}^{\mathrm{in}}(t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{in},\vec k}}}e^{-i\omega_{\mathrm{in},\vec k}t},
+u_{\vec k}^{\mathrm{in}}(t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{in},\vec k}}}\exp(-i\omega_{\mathrm{in},\vec k}t),
 \qquad
-u_{\vec k}^{\mathrm{out}}(t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{out},\vec k}}}e^{-i\omega_{\mathrm{out},\vec k}t},
+u_{\vec k}^{\mathrm{out}}(t)\sim\frac{1}{\sqrt{2\omega_{\mathrm{out},\vec k}}}\exp(-i\omega_{\mathrm{out},\vec k}t),
 $$
 
 normalized by the Klein–Gordon inner product. Both sets solve the same second-order equation; they are related by a linear transformation with time-independent coefficients,
@@ -103,11 +103,11 @@ $$
 and the same transformation acts on the mode operators. Writing the in-operators in terms of the out-operators, and mixing the two charge-conjugate modes that carry the same momentum magnitude,
 
 $$
-\hat a_{\vec k}^{\mathrm{out}}
-=\alpha_{\vec k}\,\hat a_{\vec k}^{\mathrm{in}}+\beta_{\vec k}^*\,\hat b_{-\vec k}^{\mathrm{in}{}^{*}},
+a^{\mathrm{fop}}_{\vec k}^{\mathrm{out}}
+=\alpha_{\vec k}\,a^{\mathrm{fop}}_{\vec k}^{\mathrm{in}}+\beta_{\vec k}^*\,b^{\mathrm{fop}}_{-\vec k}^{\mathrm{in}{}^{*}},
 \qquad
-\hat b_{-\vec k}^{\mathrm{out}}
-=\alpha_{\vec k}\,\hat b_{-\vec k}^{\mathrm{in}}+\beta_{\vec k}^*\,\hat a_{\vec k}^{\mathrm{in}{}^{*}},
+b^{\mathrm{fop}}_{-\vec k}^{\mathrm{out}}
+=\alpha_{\vec k}\,b^{\mathrm{fop}}_{-\vec k}^{\mathrm{in}}+\beta_{\vec k}^*\,a^{\mathrm{fop}}_{\vec k}^{\mathrm{in}{}^{*}},
 $$
 
 with the same $\alpha,\beta$ for the conjugate pair (the coefficients for $+\vec k$ and $-\vec k$ are equal because the background is homogeneous and isotropic). The transformation is **canonical**: imposing the in-commutators and the out-commutators, and using the reality of the mixing, gives
@@ -121,22 +121,22 @@ The general derivation of this structure — the Bogoliubov group, its canonical
 The transform is **charge neutral**, and this is the framework's central symmetry at work. The generator of the two-mode mixing is
 
 $$
-\hat G_{\vec k}=\hat a_{\vec k}^\dagger\hat b_{-\vec k}^\dagger
--\hat a_{\vec k}\hat b_{-\vec k},
+G_{\vec k}=a^{\mathrm{fop}}_{\vec k}^\dagger b^{\mathrm{fop}}_{-\vec k}^\dagger
+-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k},
 $$
 
-and a direct computation gives $[\hat Q,\hat G_{\vec k}]=0$, so the background creates only **pairs**: a particle of momentum $\vec k$ and an antiparticle of momentum $-\vec k$, with total momentum zero and total charge zero. The $U(1)$ charge of the companion articles is thus the selection rule that makes the pair the unit of production, and it is the same central symmetry whose phase multiplies the field operator.
+and a direct computation gives $[Ϙ^{\mathrm{fop}},G_{\vec k}]=0$, so the background creates only **pairs**: a particle of momentum $\vec k$ and an antiparticle of momentum $-\vec k$, with total momentum zero and total charge zero. The $U(1)$ charge of the companion articles is thus the selection rule that makes the pair the unit of production, and it is the same central symmetry whose phase multiplies the field operator.
 
 ## The Number of Created Pairs and the Vacuum Persistence Amplitude
 
-Because the in- and out-mode operators differ, the in-vacuum is not annihilated by the out-annihilation operators. Writing $\hat a^{\mathrm{out}}=\alpha\hat a^{\mathrm{in}}+\beta^*\hat b^{\mathrm{in}{}^{*}}$ (and the conjugate relation), the in-vacuum contains pairs of out-quanta, and the mean number of particles of momentum $\vec k$ in the in-vacuum is
+Because the in- and out-mode operators differ, the in-vacuum is not annihilated by the out-annihilation operators. Writing $a^{\mathrm{fop},\mathrm{out}}=\alpha a^{\mathrm{fop},\mathrm{in}}+\beta^*b^{\mathrm{fop},\mathrm{in}^{*}}$ (and the conjugate relation), the in-vacuum contains pairs of out-quanta, and the mean number of particles of momentum $\vec k$ in the in-vacuum is
 
 $$
-\langle 0_{\mathrm{in}}|\hat a_{\vec k}^{\mathrm{out}{}^{*}}\hat a_{\vec k}^{\mathrm{out}}|0_{\mathrm{in}}\rangle
+\langle 0_{\mathrm{in}}|a^{\mathrm{fop}}_{\vec k}^{\mathrm{out}{}^{*}}a^{\mathrm{fop}}_{\vec k}^{\mathrm{out}}|0_{\mathrm{in}}\rangle
 =|\beta_{\vec k}|^2\,(2\pi)^3\delta^{(3)}(0),
 $$
 
-with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[\hat a_{\vec k},\hat a^\dagger_{\vec k'}]=(2\pi)^3\delta^{(3)}(\vec k-\vec k')$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k}|^2$, and the total pair number density is the momentum integral
+with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a^{\mathrm{fop}}_{\vec k},a^{\mathrm{fop}\dagger}_{\vec k'}]=(2\pi)^3\delta^{(3)}(\vec k-\vec k')$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k}|^2$, and the total pair number density is the momentum integral
 
 $$
 \frac{N_{\mathrm{pairs}}}{V}=\int\!\frac{d^3k}{(2\pi)^3}\,|\beta_{\vec k}|^2 .
@@ -156,7 +156,7 @@ with the pair states $|n_{\vec k},n_{-\vec k}\rangle$ containing equal numbers o
 **The mean pair number is the squeezing strength.** Since $\tanh^2 r=|\beta|^2/|\alpha|^2=|\beta|^2/(1+|\beta|^2)$, the geometric sum gives
 
 $$
-\langle\hat N_{\mathrm{pairs}}\rangle=|\beta_{\vec k}|^2 ,
+\langle N_{\mathrm{pairs}}\rangle=|\beta_{\vec k}|^2 ,
 $$
 
 exactly. **The vacuum persistence amplitude is the inverse of $|\alpha|$.** The overlap of the in- and out-vacua is
@@ -188,10 +188,10 @@ $$
 \omega(t)=\omega_2\ (\text{for }t>0),
 $$
 
-a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(t)=e^{-i\omega_1 t}/\sqrt{2\omega_1}$ for $t<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $\dot u$ at $t=0$ may be imposed on the un-normalized form $e^{-i\omega_1 t}$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
+a real scalar mode for economy; the complex case doubles the modes and the pair count below is the same per mode. The in-mode is $u_{\mathrm{in}}(t)=\exp(-i\omega_1 t)/\sqrt{2\omega_1}$ for $t<0$. The constant prefactor is common to both regions and cancels in the matching, so continuity of $u$ and $\dot u$ at $t=0$ may be imposed on the un-normalized form $\exp(-i\omega_1 t)$, whose value and derivative at the origin are $1$ and $-i\omega_1$; this requires the out-region form
 
 $$
-e^{-i\omega_1 t}=A\,e^{-i\omega_2 t}+B\,e^{+i\omega_2 t},
+\exp(-i\omega_1 t)=A\,\exp(-i\omega_2 t)+B\,\exp(+i\omega_2 t),
 \qquad
 A+B=1,
 \qquad
@@ -206,7 +206,7 @@ A=\frac{1}{2}\left(1+\frac{\omega_1}{\omega_2}\right),
 B=\frac{1}{2}\left(1-\frac{\omega_1}{\omega_2}\right).
 $$
 
-Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=e^{-i\omega_1t}/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=e^{-i\omega_2t}/\sqrt{2\omega_2}$, gives
+Rescaling to the canonical normalizations of both modes, $u_{\mathrm{in}}=\alpha u_{\mathrm{out}}+\beta u_{\mathrm{out}}^*$ with $u_{\mathrm{in}}=\exp(-i\omega_1t)/\sqrt{2\omega_1}$ and $u_{\mathrm{out}}=\exp(-i\omega_2t)/\sqrt{2\omega_2}$, gives
 
 $$
 \alpha=A\sqrt{\frac{\omega_2}{\omega_1}},
@@ -231,7 +231,7 @@ Four statements summarise what the framework contributes to scalar pair creation
 
 **The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the centre, and the state module is not acted on by the background.
 
-**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $N(\tilde{K})=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
+**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde{K}\rangle_{\natural}=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
 **The charge selects pairs.** The framework's canonical continuous symmetry is the central $U(1)$, whose Noether current $\tilde J$ lies in $\mathbb{M}_-$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
@@ -253,9 +253,9 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\vec k}+\omega_{\vec k}^2(t)u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(N(\tilde{K}))$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $\hat a_{\vec k}$ with $\hat b_{-\vec k}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_0$ coupling through $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $\ddot u_{\vec k}+\omega_{\vec k}^2(t)u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(\langle\tilde{K}\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with $b^{\mathrm{fop}}_{-\vec k}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
 
-The transformation is charge neutral: its generator $\hat G_{\vec k}=\hat a_{\vec k}^\dagger\hat b_{-\vec k}^\dagger-\hat a_{\vec k}\hat b_{-\vec k}$ commutes with the $U(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec k}|^2=1/(1+|\beta_{\vec k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\vec k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
+The transformation is charge neutral: its generator $G_{\vec k}=a^{\mathrm{fop}}_{\vec k}^\dagger b^{\mathrm{fop}}_{-\vec k}^\dagger-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k}$ commutes with the $U(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec k}|^2=1/(1+|\beta_{\vec k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\vec k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
 The process is standard scalar quantum field theory in an external background, transcribed into the framework's notation. The framework contributes the central-valued background, the biquaternion-norm interpretation of the asymptotic frequencies, and the charge selection rule; it contributes no creation mechanism of its own, because the scalar sector has no native ladder in $\mathbb{B}$. The general Bogoliubov theory is imported from the standard literature and from the generalities of the second-quantized framework, and is not re-derived here.
 
@@ -270,16 +270,16 @@ The process is standard scalar quantum field theory in an external background, t
 | $\tilde{\Phi}=\phi\,e_0$, $\tilde\sigma=\sigma\,e_0$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})\sigma$ | Central interaction |
 | $\omega_{\vec k}^2(t)=\vec k^2+\mu^2+g\sigma(t)$ | Time-dependent frequency |
-| $\tilde{K}_{\vec k}(t)=i\omega_{\vec k}(t)e_0+\vec k$ | Material four-wavevector; $N(\tilde{K})$ its biquaternion norm |
+| $\tilde{K}_{\vec k}(t)=i\omega_{\vec k}(t)e_0+\vec k$ | Material four-wavevector; $\langle\tilde{K}\rangle_{\natural}$ its biquaternion norm |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |
 | $\alpha_{\vec k},\beta_{\vec k}$ | Bogoliubov coefficients, $\vert\alpha\vert^2-\vert\beta\vert^2=1$ |
 | $r_{\vec k}$, $\tanh r_{\vec k}=\vert\beta_{\vec k}/\alpha_{\vec k}\vert$ | Squeezing parameter |
-| $\hat G_{\vec k}=\hat a_{\vec k}^\dagger\hat b_{-\vec k}^\dagger-\hat a_{\vec k}\hat b_{-\vec k}$ | Pair-creation generator; $[\hat Q,\hat G_{\vec k}]=0$ |
+| $G_{\vec k}=a^{\mathrm{fop}}_{\vec k}^\dagger b^{\mathrm{fop}}_{-\vec k}^\dagger-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k}$ | Pair-creation generator; $[Ϙ^{\mathrm{fop}},G_{\vec k}]=0$ |
 | $\vert 0_{\mathrm{in}}\rangle=(1/\cosh r_{\vec k})\sum_n(\tanh r_{\vec k})^n\,\vert n_{\vec k},n_{-\vec k}\rangle_{\mathrm{out}}$ | In-vacuum as a two-mode squeezed state |
-| $\langle\hat N_{\mathrm{pairs}}\rangle=\vert\beta_{\vec k}\vert^2$ | Mean number of created pairs per mode |
+| $\langle N_{\mathrm{pairs}}\rangle=\vert\beta_{\vec k}\vert^2$ | Mean number of created pairs per mode |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=1/\vert\alpha_{\vec k}\vert^2$ | Vacuum persistence amplitude |
 | $\vert\beta\vert^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$ | Sudden-quench result |
-| $\hat Q=\int\frac{d^3p}{(2\pi)^3}(\hat a^\dagger\hat a-\hat b^\dagger\hat b)$ | Conserved $U(1)$ charge; pairs have $Q=0$ |
+| $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Conserved $U(1)$ charge; pairs have $\u03d8=0$ |
 | $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}[\tilde A,\tilde B]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading

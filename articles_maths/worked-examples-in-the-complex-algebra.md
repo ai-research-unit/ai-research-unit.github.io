@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complex Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Element Representation*, *Complex Regular Element Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
+This article is the computed companion to the structural articles of the complex algebra. Where *Complex Algebra* states the definitions and proves the general properties, and *Complexoid Subspaces*, *Complex Norm and Invertibility*, *Complex Polar Element Representation*, *Complex Regular Element Representation* and *Complex Automorphisms and Derivations* develop them, the present article exhibits every one of those structures on explicit elements, so that the general statements can be read against a concrete computation.
 
 The elements used throughout are
 

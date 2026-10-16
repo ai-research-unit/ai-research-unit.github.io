@@ -44,7 +44,7 @@ with $\varepsilon \neq 0$, so $A$ is a zero divisor. Conversely, suppose $A B = 
 
 **Corollary (explicit annihilation).** For $A = \varepsilon a'$ with $a' \neq 0$ the element $B = \varepsilon$ is a nonzero annihilator, since $\varepsilon a' \cdot \varepsilon = \varepsilon^2 a' = 0$.
 
-**Remark.** The criterion is a condition on the real part alone: a dual number is a zero divisor exactly when it is purely infinitesimal and nonzero. The infinitesimal part is invisible to the criterion. The same set is the vanishing locus of the norm $N(A) = a^2$, so that $a = 0$ and $N(A) = 0$ agree; the norm is a measure of size rather than an algebraic object, and it is treated in *Dual-Numbers Norm and Invertibility*.
+**Remark.** The criterion is a condition on the real part alone: a dual number is a zero divisor exactly when it is purely infinitesimal and nonzero. The infinitesimal part is invisible to the criterion. The same set is the vanishing locus of the norm $\langle A\rangle = a^2$, so that $a = 0$ and $\langle A\rangle = 0$ agree; the norm is a measure of size rather than an algebraic object, and it is treated in *Dual-Numbers Norm and Invertibility*.
 
 ### The Three-Way Classification
 

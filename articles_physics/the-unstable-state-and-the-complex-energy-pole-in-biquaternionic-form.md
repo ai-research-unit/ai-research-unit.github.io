@@ -17,7 +17,7 @@ $$
 \tilde H = h_0\,e_0 + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(ie_k)=\sigma_k$; a pure state is the idempotent $\tilde P=\tfrac12(e_0+i\hat u)$ with $\hat u$ a unit vector along the $e_k$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=e^{-i\tilde Ht/\hbar}$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_0$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(ie_k)=\sigma_k$; a pure state is the idempotent $\tilde P=\tfrac12(e_0+i\vec u)$ with $\vec u$ a unit vector along the $e_k$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_0$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -35,7 +35,7 @@ $$
 Because $\tilde P_0$ has rank one, $\tilde P_0\tilde U\tilde P_0 = A(t)\,\tilde P_0$ with
 
 $$
-A(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde U(t)\bigr) = \mathrm{Tr}\bigl(\tilde P_0\,e^{-i\tilde Ht/\hbar}\bigr),
+A(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde U(t)\bigr) = \mathrm{Tr}\bigl(\tilde P_0\,\exp(-i\tilde Ht/\hbar)\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -66,12 +66,12 @@ $$
 P(t) = 1 - \frac{(\Delta\tilde H)^{2}}{\hbar^{2}}\,t^{2} + O(t^{4}).
 $$
 
-The odd powers are absent: at order $t$ the two linear terms of $A(t)$ and its conjugate combine into the quadratic term of the modulus, and the cubic term of $A(t)$ is purely imaginary and does not reach the modulus at order $t^{3}$. The variance is non-negative, so the survival probability leaves one from below, quadratically. This is the analytic content of the quantum Zeno effect, and it is a constraint that no pure exponential can meet: a function $e^{-\gamma t}$ has a linear slope $-\gamma$ at the origin, whereas the exact survival probability has vanishing slope there.
+The odd powers are absent: at order $t$ the two linear terms of $A(t)$ and its conjugate combine into the quadratic term of the modulus, and the cubic term of $A(t)$ is purely imaginary and does not reach the modulus at order $t^{3}$. The variance is non-negative, so the survival probability leaves one from below, quadratically. This is the analytic content of the quantum Zeno effect, and it is a constraint that no pure exponential can meet: a function $\exp(-\gamma t)$ has a linear slope $-\gamma$ at the origin, whereas the exact survival probability has vanishing slope there.
 
 The consequences are worth stating together.
 
 - **The exact law is quadratic at the origin.** For every state with $(\Delta\tilde H)^2>0$ the decay must begin as $1-O(t^2)$.
-- **The exponential is an intermediate-time approximation.** A decay law of the form $e^{-\Gamma t/\hbar}$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
+- **The exponential is an intermediate-time approximation.** A decay law of the form $\exp(-\Gamma t/\hbar)$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
 - **The two statements do not conflict.** The measured exponential of an unstable state is a fit over an intermediate window; the quadratic start and the power-law tail are outside that window.
 
 ## The Resolvent, the Self-Energy, and the Pole
@@ -190,7 +190,7 @@ The self-energy $\Sigma_{\mathrm{nc}}$ is the same object as before, with the el
 - **A discrete eliminated slot** gives a real, energy-dependent shift: the coupling displaces the level of the first slot, and the displacement is the level shift.
 - **An eliminated slot with a continuum** gives a complex self-energy, and the effective central potential acquires an imaginary part. The eliminated slot then acts as an absorber for the first: the coupling that would have moved probability into it appears in the first slot's equation as a width.
 
-This is the framework's form of the standard statement that a degree of freedom coupled to a continuum and then integrated out produces an absorptive effective potential — the **optical potential** of scattering theory and of the quaternionic formulation of the same problem. It also explains why an effective potential must be allowed to be complex: complexity is the signature of a channel that has been removed and whose on-shell states are now a loss. The reduction is a different decomposition from the sector maps catalogued in *Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors*, because it splits the module rather than the algebra's Hermitian and anti-Hermitian parts, and it is not one of that catalogue's entries.
+This is the framework's form of the standard statement that a degree of freedom coupled to a continuum and then integrated out produces an absorptive effective potential — the **optical potential** of scattering theory and of the quaternionic formulation of the same problem. It also explains why an effective potential must be allowed to be complex: complexity is the signature of a channel that has been removed and whose on-shell states are now a loss. The reduction is a different decomposition from the sector maps catalogued in *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors*, because it splits the module rather than the algebra's Hermitian and anti-Hermitian parts, and it is not one of that catalogue's entries.
 
 ## The Exactly Soluble Case
 
@@ -223,9 +223,9 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$,
 
 $$
-A(t)\simeq e^{-iz_\star t/\hbar} = e^{-i(E_0+\Delta)t/\hbar}\,e^{-\Gamma t/(2\hbar)},
+A(t)\simeq \exp(-iz_\star t/\hbar) = \exp(-i(E_0+\Delta)t/\hbar)\,\exp(-\Gamma t/(2\hbar)),
 \qquad
-P(t)\simeq e^{-\Gamma t/\hbar},
+P(t)\simeq \exp(-\Gamma t/\hbar),
 $$
 
 and the lifetime is
@@ -276,7 +276,7 @@ The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z
 
 A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
 
-The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(t)\simeq e^{-\Gamma t/\hbar}$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
+The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(t)\simeq \exp(-\Gamma t/\hbar)$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
 
 What the algebra adds is that the pole is central, that a non-central coupling reaches the lifetime only through an effective central self-energy, and that the conjugate symmetry and the choice of sheet are the two halves of one statement. What it does not add is a scale, a prediction, or a specific particle's lifetime; the coupling is always an input, and the framework's agreement with the standard treatment here is exact wherever the standard treatment applies.
 
@@ -288,7 +288,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H=h_0e_0+i\vec h$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde P_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde U(t)=e^{-i\tilde Ht/\hbar}$ | Unitary evolution, $\tilde U\tilde U^{*}=e_0$ |
+| $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_0$ |
 | $A(t)=\mathrm{Tr}(\tilde P_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |

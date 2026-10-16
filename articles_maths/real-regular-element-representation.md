@@ -184,13 +184,13 @@ $$
 
 On the worked elements, $\det\mathsf{M}_1(a)^2 = \bigl(-\tfrac{3}{4}\bigr)^2 = \tfrac{9}{16} = N(a)$ and $\det\mathsf{M}_1(b)^2 = \tfrac{49}{4} = N(b)$. The determinant is invertible exactly when the element is, which is the concrete form of the invertibility criterion.
 
-**The determinant of an exponential.** The classical identity $\det(e^{M}) = e^{\operatorname{tr}(M)}$ read for the $1\times1$ matrix $M = [a]$ gives
+**The determinant of an exponential.** The classical identity $\det(\exp(M)) = \exp(\operatorname{tr}(M))$ read for the $1\times1$ matrix $M = [a]$ gives
 
 $$
-\det\mathsf{M}_1(e^{a}) = \det\bigl[e^{a}\bigr] = e^{\operatorname{tr}[a]} = e^{a},
+\det\mathsf{M}_1(\exp(a)) = \det\bigl[\exp(a)\bigr] = \exp(\operatorname{tr}[a]) = \exp(a),
 $$
 
-whose square is the norm of the exponential, $N(e^{a}) = e^{2a}$.
+whose square is the norm of the exponential, $N(\exp(a)) = \exp(2a)$.
 
 ## Summary
 

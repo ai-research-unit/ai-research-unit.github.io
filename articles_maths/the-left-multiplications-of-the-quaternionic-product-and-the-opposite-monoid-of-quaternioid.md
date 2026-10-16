@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **left multiplication** of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra of Quaternions* is the linear operator
+The **left multiplication** of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra* is the linear operator
 
 $$
 L_{\tilde p}(\tilde x) = \tilde p \star \tilde x = \tilde p^{\natural}\tilde x .
@@ -10,7 +10,7 @@ $$
 
 The family $\{L_{\tilde p} : \tilde p \in \mathbb{H}\}$ is the image of the algebra in the space of linear operators, and it is the object that carries the semigroup-theoretic content of the block: the product is not associative, so the single fact that decides the whole one-sided theory is the **composition law of the family**, and that law turns out to be the *opposite* of the plain one. This article computes the law, describes the monoid it defines, identifies the $\mathbb{R}$-algebra of operators it generates, compares the whole picture with the plain algebra of the same space, and relates it to the two one-sided actions of the block.
 
-The two-sided operators $\tilde q \mapsto \tilde a^{\natural}\tilde q\,\tilde b$ and the one-sided operators of the product are the articles of *Two-Sided Operators on the General Quaternionic Algebra of Quaternions* and *One-Sided Operators on the General Quaternionic Algebra of Quaternions*, both below this article in this category; this article owns the **left** family and the monoid, and it cites the other two for the adjoint theory and for the two-sided completer. The element theory is not used beyond the norm and the coincidence of the one-sided inverses (*Norm and Invertibility in the General Quaternionic Algebra*).
+The two-sided operators $\tilde q \mapsto \tilde a^{\natural}\tilde q\,\tilde b$ and the one-sided operators of the product are the articles of *Two-Sided Operators on the General Quaternionic Algebra* and *One-Sided Operators on the General Quaternionic Algebra*, both below this article in this category; this article owns the **left** family and the monoid, and it cites the other two for the adjoint theory and for the two-sided completer. The element theory is not used beyond the norm and the coincidence of the one-sided inverses (*Norm and Invertibility in the General Quaternionic Algebra*).
 
 ## The Left Multiplications and their Composition
 
@@ -34,17 +34,17 @@ The composition is therefore the **opposite** of the plain multiplication in the
 
 *Proof.* Closure and the identity are the composition law read at $\tilde q = e_0$: $L_{e_0}(\tilde x) = e_0^{\natural}\tilde x = \tilde x$. Injectivity holds because $\tilde p$ is recovered from $L_{\tilde p}$ at $\tilde x = e_0$: $L_{\tilde p}(e_0) = \tilde p^{\natural}e_0 = \tilde p^{\natural}$, so the index is the conjugate of the value at $e_0$. The two isomorphism statements are the two laws of the composition theorem.
 
-**Corollary (the units).** The invertible elements of the monoid are exactly the $L_{\tilde p}$ with $\tilde p$ invertible in the plain algebra, that is with $N(\tilde p) \neq 0$; the reindexing carries those to the nonzero elements, and the group of invertible elements of the monoid is the multiplicative group $\mathbb{H}^{\times}$, of real dimension four, isomorphic to the plain unit group. The quaternionic block therefore has a monoid of left multiplications whose group of units is the plain unit group, while the units of the product itself do not form a group (*Norm and Invertibility in the General Quaternionic Algebra*).
+**Corollary (the units).** The invertible elements of the monoid are exactly the $L_{\tilde p}$ with $\tilde p$ invertible in the plain algebra, that is with $\langle\tilde p\rangle_{\natural} \neq 0$; the reindexing carries those to the nonzero elements, and the group of invertible elements of the monoid is the multiplicative group $\mathbb{H}^{\times}$, of real dimension four, isomorphic to the plain unit group. The quaternionic block therefore has a monoid of left multiplications whose group of units is the plain unit group, while the units of the product itself do not form a group (*Norm and Invertibility in the General Quaternionic Algebra*).
 
-*Proof.* An element of a monoid of maps is invertible exactly when the map is a bijection; $L_{\tilde p}$ is bijective exactly when $M_{\tilde p^{\natural}}$ is, and a plain left multiplication is bijective exactly when its index is a unit of the division algebra, that is when $N(\tilde p) \neq 0$.
+*Proof.* An element of a monoid of maps is invertible exactly when the map is a bijection; $L_{\tilde p}$ is bijective exactly when $M_{\tilde p^{\natural}}$ is, and a plain left multiplication is bijective exactly when its index is a unit of the division algebra, that is when $\langle\tilde p\rangle_{\natural} \neq 0$.
 
 ## The Enveloping Structure
 
 **Theorem (the generated algebra).** The $\mathbb{R}$-linear span $L(\mathbb{H})$ of the family is a four-dimensional real subalgebra of $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$, it is isomorphic to $\mathbb{H}^{\mathrm{opp}}$ under $\tilde p \mapsto L_{\tilde p}$, and it is a division algebra: every nonzero element of $L(\mathbb{H})$ is invertible as an operator. It is therefore simple, semisimple and central over $\mathbb{R}$; its centre is the line $\mathbb{R}\,\mathrm{id}$ generated by the identity operator.
 
-*Proof.* The span is closed because the family is; it is four-dimensional because $\tilde p \mapsto L_{\tilde p}$ is injective and linear; the composition law makes it anti-isomorphic, hence isomorphic, to $\mathbb{H}^{\mathrm{opp}}$, and $\mathbb{H}^{\mathrm{opp}} \cong \mathbb{H}$ as an algebra through the conjugation (*The Two General Products of the Quaternion $\mathbb{R}$ Space*). A division algebra is simple and semisimple, and the centre of $\mathbb{H}\cong\mathbb{H}^{\mathrm{opp}}$ is the scalar line, which corresponds to the multiples of the identity.
+*Proof.* The span is closed because the family is; it is four-dimensional because $\tilde p \mapsto L_{\tilde p}$ is injective and linear; the composition law makes it anti-isomorphic, hence isomorphic, to $\mathbb{H}^{\mathrm{opp}}$, and $\mathbb{H}^{\mathrm{opp}} \cong \mathbb{H}$ as an algebra through the conjugation (*The Two General Products of the Quaternioid $\mathbb{R}$ Space*). A division algebra is simple and semisimple, and the centre of $\mathbb{H}\cong\mathbb{H}^{\mathrm{opp}}$ is the scalar line, which corresponds to the multiples of the identity.
 
-**Corollary.** The left regular representation $\tilde p \mapsto L_{\tilde p}$ is a faithful anti-representation of $(\mathbb{H},\cdot)$ by linear operators, and the reindexed representation $\tilde p \mapsto L_{\tilde p^{\natural}}$ is a faithful representation. The whole two-sided operator algebra, in which $L(\mathbb{H})$ sits as one of two commuting copies, is *Two-Sided Operators on the General Quaternionic Algebra of Quaternions*, below this article in this category.
+**Corollary.** The left regular representation $\tilde p \mapsto L_{\tilde p}$ is a faithful anti-representation of $(\mathbb{H},\cdot)$ by linear operators, and the reindexed representation $\tilde p \mapsto L_{\tilde p^{\natural}}$ is a faithful representation. The whole two-sided operator algebra, in which $L(\mathbb{H})$ sits as one of two commuting copies, is *Two-Sided Operators on the General Quaternionic Algebra*, below this article in this category.
 
 ## The Comparison with the Plain Algebra
 
@@ -68,7 +68,7 @@ the plain right multiplication by the conjugate, do close, with the direct law $
 
 **Corollary (the two one-sided actions and the missing right unit).** The product of the block has a left unit and no right one; its left multiplications form the monoid $L(\mathbb{H}) \cong \mathbb{H}^{\mathrm{opp}}$ and its honest right multiplications do not form a monoid at all; its twisted right multiplications form a monoid and give a right action, and the two commute. The asymmetry of the unit is therefore visible at the level of the operators as the choice of the twist: the left action needs no twist, the right action needs one, and the twist is the conjugation.
 
-*Proof.* The unit statements are those of *Introduction to the General Quaternionic Algebra of Quaternions* and *The Specificities of the General Quaternionic Algebra*; the operator statements are the two composition laws above. A right unit would be an operator $R_{\tilde u}$ equal to the identity, and $R_{\tilde u}(\tilde x) = \tilde x^{\natural}\tilde u$ is never $\tilde x$ for all $\tilde x$ by the non-existence theorem for the right unit.
+*Proof.* The unit statements are those of *Introduction to the General Quaternionic Algebra* and *The Specificities of the General Quaternionic Algebra*; the operator statements are the two composition laws above. A right unit would be an operator $R_{\tilde u}$ equal to the identity, and $R_{\tilde u}(\tilde x) = \tilde x^{\natural}\tilde u$ is never $\tilde x$ for all $\tilde x$ by the non-existence theorem for the right unit.
 
 ## Summary
 

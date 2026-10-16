@@ -12,13 +12,13 @@ The word *representation* is used here in the sense of a concrete realization of
 
 The treatment is algebraic and self-contained. The Clifford identification is established here; the change of scalars that exhibits it as a real reading of the algebra is *The Realification and the Effect of the Change of Scalars*, and the inner automorphisms are placed here from *Biquaternion Automorphisms and Derivations*. The array structure is treated nowhere else.
 
-Throughout, the conventions are those of *Biquaternions as a Vector Space over $\mathbb{C}$* and *Introduction to the Biquaternion Algebra*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and
+Throughout, the conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Introduction to the Biquaternion Algebra*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and
 
 $$
 \tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu,\qquad Q_\mu=q_\mu+iq'_\mu\in\mathbb{C},\quad q_\mu,q'_\mu\in\mathbb{R}.
 $$
 
-The quaternion subspace is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the Hermitian subspace is $\mathbb{M}_+$, the scalar imaginary spans $\mathbb{C}_{\mathbb{B}}$, and the norm is $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}$.
+The quaternion subspace is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the Hermitian subspace is $\mathbb{M}_+$, the scalar imaginary spans $\mathbb{C}_{\mathbb{B}}$, and the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$.
 
 ## The Clifford Algebra Identification
 
@@ -117,7 +117,7 @@ $$
 \operatorname{H}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{*}=\operatorname{Ad}_{\tilde Q}(\tilde T)\,(\tilde Q\tilde Q^{*}),
 $$
 
-so the sandwich is the inner automorphism followed by right multiplication by the Hermitian positive element $C=\tilde Q\tilde Q^{*}$, of norm $|N(\tilde Q)|^{2}>0$.
+so the sandwich is the inner automorphism followed by right multiplication by the Hermitian positive element $C=\tilde Q\tilde Q^{*}$, of norm $|\langle\tilde Q\rangle_{\natural}|^{2}>0$.
 
 - When $C$ is central — equivalently when $\tilde Q$ is a complex multiple of a real quaternion — one has $\tilde Q=\lambda\tilde U$ with central $\lambda$ and unitary $\tilde U$, and $\operatorname{H}_{\tilde Q}=|\lambda|^{2}\operatorname{Ad}_{\tilde Q}$ is a central dilation of the inner automorphism. This class is **not** all of $\mathbb{B}^{\times}$: it has real dimension five inside the eight, so a general unit admits no such decomposition.
 - Outside that class the sandwich is neither an automorphism nor a scalar multiple of one. What it still does, and the inner automorphism does not, is preserve the two Hermitian sectors for **every** unit; by the criterion of the next subsection the inner automorphism preserves them only on the class.
@@ -256,7 +256,7 @@ The third structure is not a realization of a single element. An **array of seve
 | $e_0,e_1,e_2,e_3$ | Basis, $e_0=1$, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $Q_\mu=q_\mu+iq'_\mu$ | Complex coefficients of $\tilde Q=\sum_\mu Q_\mu e_\mu$ |
-| $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ | Clifford generators, $\gamma_0^2=+\mathrm{I}$, $\gamma_k^2=-\mathrm{I}$ |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Pseudoscalar, $\omega^2=-1$, central in $\mathrm{Cl}^{+}_{1,3}$ |

@@ -77,7 +77,7 @@ so the adjoint action of a unitary element preserves self-adjointness, positivit
 
 **Proof.** With $\alpha = \mathrm{id}$, $\varepsilon$ is central and $\pi(\alpha(a)) = \pi(a)$; with $\alpha = c_z$, $\pi(\alpha(a)) = \pi(z)\pi(a)\pi(z)^{-1}$, which gives the stated transport and compatibility.
 
-**Remark (what the article does not do).** The adjoint of a convolution operator on its own terms, its expression on $L^p$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, the last article of this group; the abstract graded adjoint action over a graded algebra and the graded module over a topological group are the Part I and Part II articles of the same name; the graded forms of this article are not the Hermitian forms of the `- * Theory` group, which are conjugate-linear and are treated in *Hermitian Forms and the Group Algebra*.
+**Remark (what the article does not do).** The adjoint of a convolution operator on its own terms, its expression on $L^{n}$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, the last article of this group; the abstract graded adjoint action over a graded algebra and the graded module over a topological group are the Part I and Part II articles of the same name; the graded forms of this article are not the Hermitian forms of the `- * Theory` group, which are conjugate-linear and are treated in *Hermitian Forms and the Group Algebra*.
 
 ## Summary
 

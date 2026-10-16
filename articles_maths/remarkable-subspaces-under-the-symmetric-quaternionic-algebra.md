@@ -2,8 +2,8 @@
 
 ## Introduction
 
-The symmetric quaternionic multiplication $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$
-(*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*) is read here on the remarkable
+The symmetric quaternionic multiplication $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$
+(*Introduction to the Symmetric Quaternionic Algebra*) is read here on the remarkable
 real subspaces of *Introduction to the Remarkable Subspaces*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector
 subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion
 subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace
@@ -12,12 +12,12 @@ whether the subspace **stays inside itself**, the
 elements off the subspace that the product produces, the isotropic elements and the idempotents.
 
 The article follows the pattern of the companion readings of the same remarkable subspaces under the other
-$\mathbb{C}$-bilinear operations, *Remarkable Subspaces under the General Plain Algebra of Biquaternions* and
-*Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*; the subspaces themselves, their
+$\mathbb{C}$-bilinear operations, *Remarkable Subspaces and the Four Forms* and
+*Remarkable Subspaces under the General Quaternionic Algebra*; the subspaces themselves, their
 real bases and their elements are *Introduction to the Remarkable Subspaces*, and the restrictions of the form that
-the product carries are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and
+the product carries are *Remarkable Subspaces under the General Quaternionic Algebra* and
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, whose table is quoted here and not
-recomputed. The isotropic elements are *Zero Divisors of the General Plain Algebra* and *The Radical and the Isotropic
+recomputed. The isotropic elements are *Zero Divisors of the Biquaternion Algebra* and *The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*; the staying-inside statement for the symmetrised quaternionic
 product is *Remarkable Subspaces and the Four General Products*.
 
@@ -44,7 +44,7 @@ $$
 The product stays in the centre, and the restriction of the operation to the centre is the multiplication of
 $\mathbb{C}$: the centre is kept inside itself by $\star$ and is the only subspace on which the operation is a
 multiplication with a unit, the unit being $e_0$ for the centre. The idempotents are $0$ and $e_0$; the
-isotropic elements are none for the complex form, since the norm of a central element is $N(Ae_0)=A^2$, which
+isotropic elements are none for the complex form, since the norm of a central element is $\langle Ae_0\rangle_{\natural}=A^2$, which
 vanishes only at $A=0$; the two real
 lines $\mathbb{R}(e_0\pm ie_0)$ are isotropic for the **realification** of the form and not for the complex
 form.
@@ -61,9 +61,9 @@ $$
 The product does not stay in the vector subspace: it is central, and it is in the subspace only when the
 coefficient vanishes. The **smallest nonzero value off the subspace** is $e_0$, produced by the pair
 $e_1,e_1$; more generally $\vec P\star\vec Q=0$ exactly when the two complex vectors are
-$N$-isotropic partners, $(\vec P,\vec Q)=0$. The idempotents are $0$ alone, since $e_0$ is not in the
+$\langle\cdot\rangle_{\natural}$-isotropic partners, $(\vec P,\vec Q)=0$. The idempotents are $0$ alone, since $e_0$ is not in the
 subspace; the isotropic elements are the pure zero divisors, the complex cone
-$\sum_kQ_k^2=0$ of *Zero Divisors of the General Plain Algebra*.
+$\sum_kQ_k^2=0$ of *Zero Divisors of the Biquaternion Algebra*.
 
 ### The Quaternion Subspace
 
@@ -107,8 +107,8 @@ $$
 
 The coefficient is real, so the product is a real multiple of $e_0$, an element of the real line
 $\mathbb{R}e_0\subset\mathbb{M}_+$: the Hermitian subspace is kept inside itself by $\star$. The idempotents of the
-operation are $0$ and $e_0$: the nontrivial idempotents of the algebra, the elements $\tfrac12(e_0+i\vec u)$
-over real unit vectors $\vec u$, have norm $N=\tfrac14(1-(\vec u,\vec u))=0$ and are isotropic for
+operation are $0$ and $e_0$: the nontrivial idempotents of the algebra, the elements $\tfrac12(e_0+i\vec q_a)$
+over real unit vectors $\vec q_a$, have norm $N=\tfrac14(1-(\vec q_a,\vec q_a))=0$ and are isotropic for
 $\star$ instead of idempotent. The isotropic elements are the real light cone, the elements with
 $a_0^2=(\vec p,\vec p)$, which
 are the non-pure zero divisors of the Hermitian subspace (*Remarkable Subspaces under the General Quaternionic
@@ -150,11 +150,11 @@ anti-Hermitian subspaces return a real multiple of $e_0$, which lies in $\mathbb
 them: each of the three leaves the subspace and enters the centre.
 
 **Remark (no unit on any subspace).** The operation has no unit on the whole algebra
-(*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*), so it has no unit on any of the remarkable subspaces;
+(*Introduction to the Symmetric Quaternionic Algebra*), so it has no unit on any of the remarkable subspaces;
 and even on the centre, where the restriction is the multiplication of $\mathbb{C}$, the unit $e_0$ is a unit
 of the restricted centre and not of the algebra. The element $e_0$ acts on every subspace by the projection of
 the scalar part, $\tilde A\star e_0=A_0e_0$, which is the identity only on the centre. For every nonzero
-$\tilde A$ the equation $\tilde A\star\tilde X=e_0$ has the affine hyperplane $N(\tilde A,\tilde X)=1$ of
+$\tilde A$ the equation $\tilde A\star\tilde X=e_0$ has the affine hyperplane $\langle\tilde A,\tilde X\rangle_{\natural}=1$ of
 solutions, since the form is non-degenerate; but there is no unit, so no element is invertible in the sense of
 the operation.
 
@@ -165,7 +165,7 @@ regular element, its zero-divisor set being everything but the origin). The cent
 over $\mathbb{C}$; the vector subspace carries the complex isotropic cone of the pure zero divisors; and the
 two Hermitian subspaces carry the two real light cones of the non-pure zero divisors. The three isotropic
 readings — none, the complex cone, the real light cone — are the ones recorded in the table and developed in
-*Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
+*Remarkable Subspaces under the General Quaternionic Algebra*.
 
 ## Worked Examples
 
@@ -178,7 +178,7 @@ product of $e_1$ with $ie_2$ is $(1\cdot i)e_0=ie_0$, again off the subspace.
 
 **A quaternion pair.** For $h=e_0+e_1$ and $g=e_0-e_1$ the coefficient is $1-1=0$, so $h\star g=0$: two
 nonzero elements of the quaternion subspace multiply to $0$. Definiteness is a statement about the diagonal,
-$N(h,h)>0$, and does not prevent two distinct elements from pairing to zero.
+$\langle h,h\rangle_{\natural}>0$, and does not prevent two distinct elements from pairing to zero.
 
 **An anti-quaternion pair.** For $\tilde P=\tilde Q=ie_1$ the product is $-e_0$, which lies in
 $\mathbb{H}_{\mathbb{B}}$: the anti-quaternion subspace is not kept inside itself, and the value is the
@@ -192,7 +192,7 @@ $\tilde P=e_0+ie_1$ and $\tilde Q=e_0-ie_1$ the coefficient is $1+1=2$, so the p
 non-pure, and its product is $0$ with itself.
 
 **A cross pair.** For $\tilde P=e_0$ in the quaternion subspace and $\tilde Q=ie_1$ in the vector subspace the
-product is $N(e_0,ie_1)e_0=0$, the two directions being paired to zero by the form.
+product is $\langle e_0,ie_1\rangle_{\natural}e_0=0$, the two directions being paired to zero by the form.
 
 ## Summary
 
@@ -216,7 +216,7 @@ isotropic set appropriate to each.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable real subspaces |
-| $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
+| $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$ | the symmetric quaternionic multiplication |
 | $A,B$; $h,g$; $a_0,b_0$; $\vec p,\vec q$ | complex coefficients, real quaternions, real scalars, real vectors |
 | $(AB)e_0$, $(\vec P,\vec Q)e_0$, $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$ | the products on the centre, the vector and the quaternion subspaces |
 | $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$, $\bigl(a_0b_0-(\vec p,\vec q)\bigr)e_0$, $\bigl((\vec p,\vec q)-a_0b_0\bigr)e_0$ | the products on the anti-quaternion, Hermitian and anti-Hermitian subspaces |
@@ -227,8 +227,8 @@ isotropic set appropriate to each.
 ## Further Reading
 
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces, their bases and their elements
-- *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`) and *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
+- *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`) and *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the staying-inside statement of the symmetrisation
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the restrictions of the form and their signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic cone
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the pure and the non-pure zero divisors
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the pure and the non-pure zero divisors

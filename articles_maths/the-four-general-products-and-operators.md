@@ -9,9 +9,9 @@ This article states that division of labour precisely, with the matrices of one 
 
 The answer to the question of the title is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
 
-The four general products, their relations and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
+The four general products, their relations and their comparison are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_0}e_0+\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_0}e_0-\overline{Q_1}e_1-\overline{Q_2}e_2-\overline{Q_3}e_3$. The vector subspace is $V=\mathbb{C}\{e_1,e_2,e_3\}$, the norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $N(\tilde Q)\ne0$, and $\mathrm{Sc}$ is the scalar part.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_0}e_0+\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_0}e_0-\overline{Q_1}e_1-\overline{Q_2}e_2-\overline{Q_3}e_3$. The vector subspace is $V=\mathbb{C}\{e_1,e_2,e_3\}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\ne0$, and $\mathrm{Sc}$ is the scalar part.
 
 ## The Four General Products Are One Multiplication with Two Insertions
 
@@ -92,7 +92,7 @@ The products do not supply 1, and they supply the *repertoire* of 2 without choo
 
 ### The Four Operators of $e_1$
 
-Fix the element $\tilde A=e_1$, a unit with $N(e_1)=-e_0$, so that $e_1^{-1}=-e_1$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
+Fix the element $\tilde A=e_1$, a unit with $\langle e_1\rangle_{\natural}=-e_0$, so that $e_1^{-1}=-e_1$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
 
 $$
 \begin{aligned}
@@ -125,10 +125,10 @@ $$
 
 ### The Plain Product Gives Minus the Reflection
 
-**Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $N(\tilde A)\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$,
+**Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$,
 
 $$
-\rho_{\tilde A}(\tilde R)=\tilde R-\frac{2\langle\tilde R,\tilde A\rangle}{q(\tilde A)}\,\tilde A .
+\rho_{\tilde A}(\tilde R)=\tilde R-\frac{2\langle\tilde R,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
 $$
 
 Then the two insertions that read the parameter as it stands keep $V$ stable, and
@@ -140,7 +140,7 @@ $$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 
-*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $q(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde R+\tilde R\tilde A=2\langle\tilde A,\tilde R\rangle$ and $\tilde A^{2}=q(\tilde A)e_0$.
+*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde R+\tilde R\tilde A=2\langle\tilde A,\tilde R\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_0$.
 
 **Proposition (the star insertions leave $V$ in general).** For $\tilde A\in V$ the right factor of the starred insertions is $(\tilde A^{*})^{-1}=-(\bar{\tilde A})^{-1}$, so the two starred operators are $-L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$ and $+L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde A}$ is a scalar multiple of $\tilde A$, that is when the coefficient vector of $\tilde A$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde A}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
 
@@ -208,13 +208,13 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four rules and the statement that they differ in one point alone
+- *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four rules and the statement that they differ in one point alone
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the table of the four rules side by side
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their Gram matrices, their signatures and their isometry groups
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their Gram matrices, their signatures and their isometry groups
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints on explicit operators and the naming rule of the operator families
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
 - *The Signed Sandwich on a Clifford Algebra* (`articles_maths/the-signed-sandwich-on-a-clifford-algebra.md`), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - *Two-Sided Operators with the Signed Product* (`articles_maths/two-sided-operators-with-the-signed-product.md`), for the signed family, its twisted composition law and its coset structure
-- *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the parameter insertion in the biquaternion model
+- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the parameter insertion in the biquaternion model
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products read on the remarkable real subspaces
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the parity, the determinant and the Lorentz group

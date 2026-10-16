@@ -193,10 +193,10 @@ Every solution of the Majorana equation, in either eigenspace, obeys the massive
 
 The counting is the sharpest difference between the Majorana and Dirac equations, and it is a statement about the field rather than about a single plane wave.
 
-**A single plane wave is not self-conjugate.** For a plane wave $\psi=u\,e^{-ip\cdot x}$ one has $\psi^{c}=u^{c}e^{+ip\cdot x}$, so the condition $\psi^{c}=\psi$ for all $x$ forces $p=0$ and, at rest in the block basis, the only solution of the combined system is $u=0$. The self-conjugate object is not a single mode but the **field**
+**A single plane wave is not self-conjugate.** For a plane wave $\psi=u\,\exp(-ip\cdot x)$ one has $\psi^{c}=u^{c}\exp(+ip\cdot x)$, so the condition $\psi^{c}=\psi$ for all $x$ forces $p=0$ and, at rest in the block basis, the only solution of the combined system is $u=0$. The self-conjugate object is not a single mode but the **field**
 
 $$
-\psi(x)\;=\;u\,e^{-ip\cdot x}\;+\;u^{c}\,e^{+ip\cdot x},
+\psi(x)\;=\;u\,\exp(-ip\cdot x)\;+\;u^{c}\,\exp(+ip\cdot x),
 \qquad
 (p\!\!\!/\,-m)u=0 ,
 $$

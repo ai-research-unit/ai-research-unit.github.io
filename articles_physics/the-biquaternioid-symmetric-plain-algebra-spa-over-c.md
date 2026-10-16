@@ -15,16 +15,16 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Plain Algebra*.
 - **The unit.** $e_0$ is a two-sided identity, so the structure is one of the two structures of the space with a two-sided unit. Owner: *Introduction to the Symmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the trace form read on the square — and the invertibility criterion of the symmetrised product. Owner: *Norm and Invertibility in the Symmetric Plain Algebra*.
-- **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors of the Symmetric Plain Algebra*.
-- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators of the Symmetric Plain Algebra*.
-- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure, with the idempotents of the product. Owners: *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, *Square Roots of a General Element in the Symmetric Plain Algebra*.
+- **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure, with the idempotents of the product. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Symmetric Plain Algebra*.
 - **The square, the idempotents and the Jordan inverse.** The square of an element under the symmetrised product, its idempotents and the Jordan inverse of the structure. Owner: *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 - **The trace form and the invariance.** The trace form is the scalar part of the plain product, it is invariant for the multiplication, and it is indefinite; the structure of the invariants that follows. Owner: *The Trace Form and the Invariance of the Symmetric Plain Algebra*.
-- **The remarkable subspaces and the realification.** The restriction of the product and of the trace form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Plain Algebra*, *The Realification of the Symmetric Plain Algebra*.
+- **The remarkable subspaces and the realification.** The restriction of the product and of the trace form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Plain Algebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
 
@@ -32,7 +32,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ### Representations
 
-- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation*, *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation*.
+- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
 ## Physical Interpretation
 
@@ -54,7 +54,7 @@ The biquaternioid symmetric plain algebra is the structure $\tilde P\star\tilde 
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetric plain product, $\mathrm{SPA}$ |
 | $\tilde P\star\tilde Q=\tilde Q\star\tilde P$ | commutativity; the absence of orientation |
 | $e_0$ | the two-sided unit of the structure |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ | the trace form; invariant and indefinite |
+| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the trace form; invariant and indefinite |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace, twice the scalar part |
 | $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]$ | the order defects; the generators of the block, of dimension three |
 | $\mathbb{M}_+$ | the Hermitian sector; the Jordan algebra of the observables |

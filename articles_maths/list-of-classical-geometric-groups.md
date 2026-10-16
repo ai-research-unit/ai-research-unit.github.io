@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article lists the classical geometric groups of the corpus — the orthogonal, unitary and symplectic groups — each with the form it preserves and the article that defines it. A classical group is the isometry group of a non-degenerate form: a symmetric bilinear form gives the orthogonal group $\operatorname{O}(V,q)$ and its determinant-one subgroup $\operatorname{SO}(V,q)$, a Hermitian form gives the unitary group $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, and an alternating form gives the symplectic group $\operatorname{Sp}(V,\omega)$. With the general and special linear groups of the preceding catalogue, these are the groups that the corpus uses to generate the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.
+This article lists the classical geometric groups of the corpus — the orthogonal, unitary and symplectic groups — each with the form it preserves and the article that defines it. A classical group is the isometry group of a non-degenerate form: a symmetric bilinear form gives the orthogonal group $\operatorname{O}(V,\mathfrak{Q})$ and its determinant-one subgroup $\operatorname{SO}(V,\mathfrak{Q})$, a Hermitian form gives the unitary group $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, and an alternating form gives the symplectic group $\operatorname{Sp}(V,\omega)$. With the general and special linear groups of the preceding catalogue, these are the groups that the corpus uses to generate the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.
 
 Every entry points to the article that introduces the group. The article introduces nothing and proves nothing: it records the form each group preserves, the determinant constraint, the centre, the compactness and the family, and it neither restates a definition nor gives a proof.
 
-The article records examples and non-examples side by side. Beside the groups it lists the cases in which an expected parallel fails or a symbol carries two meanings: the orthogonal group is not connected, so it fails the connectedness that the other compact classical groups have; $\operatorname{SO}(n)$ has centre $\{\pm I\}$ for even $n$ and trivial centre for odd $n$, so the centre is not uniform in the family; the symbol $\operatorname{Sp}$ denotes both the compact quaternionic unitary group $Sp(n)$ and the split symplectic group $Sp(2n,F)$; the quaternionic determinant cannot be defined as an ordinary determinant and requires the Dieudonné construction; a degenerate form has an isometry group that is not a classical group; and $\operatorname{O}(V,q)$ is defined by a form, so it is not a group-layer object, each with the failure named and the article that records it.
+The article records examples and non-examples side by side. Beside the groups it lists the cases in which an expected parallel fails or a symbol carries two meanings: the orthogonal group is not connected, so it fails the connectedness that the other compact classical groups have; $\operatorname{SO}(n)$ has centre $\{\pm I\}$ for even $n$ and trivial centre for odd $n$, so the centre is not uniform in the family; the symbol $\operatorname{Sp}$ denotes both the compact quaternionic unitary group $Sp(n)$ and the split symplectic group $Sp(2n,F)$; the quaternionic determinant cannot be defined as an ordinary determinant and requires the Dieudonné construction; a degenerate form has an isometry group that is not a classical group; and $\operatorname{O}(V,\mathfrak{Q})$ is defined by a form, so it is not a group-layer object, each with the failure named and the article that records it.
 
 ## The Construction from a Form
 
@@ -16,9 +16,9 @@ The three classical families are the isometry groups of the three types of non-d
 | Object | The property it has | Introduced in |
 |---|---|---|
 | the isometry group $\operatorname{Isom}(V,\beta)$ | $\{g \in GL(V) : \beta(gx,gy) = \beta(x,y)\}$; the definition of a classical group from a form | *Matrix Groups and Classical Groups*; *Bilinear Forms* |
-| the orthogonal group $\operatorname{O}(V,q)$ | the isometries of a quadratic form $q$, equivalently of its polar form $B$ | *Isometries and Orthogonal Transformations*; *The Unitary and Symplectic Groups* |
-| the special orthogonal group $\operatorname{SO}(V,q)$ | the isometries of determinant $+1$; the kernel of $\det$ on $\operatorname{O}(V,q)$ | *Isometries and Orthogonal Transformations*; *The Rotation Group and Orientation* |
-| the similarity group $GO(V,q)$ | the maps with $q(Tv) = c\,q(v)$ for a multiplier $c$; its multiplier group | *Isometries and Orthogonal Transformations* |
+| the orthogonal group $\operatorname{O}(V,\mathfrak{Q})$ | the isometries of a quadratic form $\mathfrak{Q}$, equivalently of its polar form $B$ | *Isometries and Orthogonal Transformations*; *The Unitary and Symplectic Groups* |
+| the special orthogonal group $\operatorname{SO}(V,\mathfrak{Q})$ | the isometries of determinant $+1$; the kernel of $\det$ on $\operatorname{O}(V,\mathfrak{Q})$ | *Isometries and Orthogonal Transformations*; *The Rotation Group and Orientation* |
+| the similarity group $GO(V,\mathfrak{Q})$ | the maps with $\mathfrak{Q}(Tv) = c\,\mathfrak{Q}(v)$ for a multiplier $c$; its multiplier group | *Isometries and Orthogonal Transformations* |
 | the unitary group $\operatorname{U}(V,h)$ | the isometries of a Hermitian form; a sesquilinear form with an involution | *The Unitary and Symplectic Groups*; *Hilbert Algebras* |
 | the special unitary group $\operatorname{SU}(V,h)$ | the isometries of determinant one; $\operatorname{SU}(V,h) = \operatorname{U}(V,h) \cap SL(V)$ | *The Unitary and Symplectic Groups* |
 | the symplectic group $\operatorname{Sp}(V,\omega)$ | the isometries of a non-degenerate alternating form; contained in $SL(V)$ by the Pfaffian | *The Unitary and Symplectic Groups*; *Symplectic Forms and Poisson Brackets* |
@@ -31,10 +31,10 @@ The orthogonal group is generated by the reflections, and the Cartan–Dieudonn�
 
 | Object or statement | The property it has | Introduced in |
 |---|---|---|
-| the reflection $\tau_v$ | the isometry fixing the hyperplane $v^\perp$; $\tau_v(x) = x - 2B(x,v)v/q(v)$ | *Isometries and Orthogonal Transformations* |
+| the reflection $\tau_v$ | the isometry fixing the hyperplane $v^\perp$; $\tau_v(x) = x - 2B(x,v)v/\mathfrak{Q}(v)$ | *Isometries and Orthogonal Transformations* |
 | the Cartan–Dieudonné theorem | every isometry of a non-degenerate quadratic space is a product of reflections, at most $n$ of them, and at most $n+1$ in the affine case | *Isometries and Orthogonal Transformations*; *List of Affine and Euclidean Groups* |
-| the parity of the reflection length | the parity is an invariant; $\operatorname{SO}(V,q)$ is the even part | *The Rotation Group and Orientation* |
-| the range of the determinant | $\det A = \pm 1$ for $A \in O(n)$; $\operatorname{O}(V,q)$ has at most two components over a field | *Matrix Groups and Classical Groups* |
+| the parity of the reflection length | the parity is an invariant; $\operatorname{SO}(V,\mathfrak{Q})$ is the even part | *The Rotation Group and Orientation* |
+| the range of the determinant | $\det A = \pm 1$ for $A \in O(n)$; $\operatorname{O}(V,\mathfrak{Q})$ has at most two components over a field | *Matrix Groups and Classical Groups* |
 | the orthogonal group $O(p,r)$ | the isometry group of a real form of signature $(p,r)$; $\operatorname{O}(n) = O(n,0)$ compact, $\operatorname{O}(n,1)$ the Lorentz-type group | *The Rotation Group and Orientation*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | the centres | $Z(SO(n)) = \{\pm I\}$ for even $n \geq 4$ and trivial for odd $n \geq 3$; $Z(O(n)) = \{\pm I\}$ | *Matrix Groups and Classical Groups* |
 | the fundamental group of $SO(n)$ | $\pi_1(SO(n)) = \mathbb{Z}/2$ for $n \geq 3$; the double cover is $\operatorname{Spin}(n)$ | *Matrix Groups and Classical Groups*; *List of Clifford Algebras and Spin Groups* |
@@ -96,7 +96,7 @@ Over $\mathbb{C}$ the Lie algebras of the classical groups are the four infinite
 | the isometry group of a degenerate form | it is not a classical group; non-degeneracy is part of the definition of $O$, $U$ and $Sp$ | *Bilinear Forms*; *The Unitary and Symplectic Groups* |
 | the compact unitary group $U(n)$ | it is the quotient $(\operatorname{SU}(n) \times U(1))/\mu_n$ and not the direct product $\operatorname{SU}(n) \times U(1)$; the determinant sequence $1 \to \operatorname{SU}(n) \to U(n) \to U(1) \to 1$ has kernel $\mu_n$ | *Matrix Groups and Classical Groups* |
 | the group $Sp(n)$ of the quaternionic form | it is not the split group $Sp(2n,F)$, despite the shared symbol; the context separates them and the two have different real and complex dimensions | *The Unitary and Symplectic Groups* |
-| the group $O(V,q)$ as a group-layer object | it is *defined* by a form; the group-layer transformation group is $\operatorname{GL}(V)$, and $O(V,q)$ belongs to the form-preserving layer | *Transformation Groups*; *Matrix Groups and Classical Groups* |
+| the group $O(V,\mathfrak{Q})$ as a group-layer object | it is *defined* by a form; the group-layer transformation group is $\operatorname{GL}(V)$, and $O(V,\mathfrak{Q})$ belongs to the form-preserving layer | *Transformation Groups*; *Matrix Groups and Classical Groups* |
 
 Objects that a reader may expect in a list of classical geometric groups, and does not find here.
 
@@ -110,7 +110,7 @@ Objects that a reader may expect in a list of classical geometric groups, and do
 
 ## Summary
 
-This article has listed the classical geometric groups of the corpus: the orthogonal groups $\operatorname{O}(V,q)$ and $\operatorname{SO}(V,q)$, generated by reflections with the Cartan–Dieudonné theorem and the parity of the reflection length, together with the real forms $O(p,r)$; the unitary groups $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, with the inertia theorem, the signature $(p,r,z)$, the groups $U(p,r)$ and the intersection formula with the orthogonal and symplectic groups; the symplectic groups $\operatorname{Sp}(V,\omega)$ and $Sp(2m,F)$, with the Pfaffian determinant constraint and the compact quaternionic group $Sp(n)$; and the four families $A$, $B$, $C$, $D$ with their ranks, dimensions and small coincidences. Beside the examples stand the non-examples: the disconnectedness of $O(n)$, the centre of $SO(n)$ that changes with the parity of $n$, the Dieudonné determinant, the degenerate forms and the two meanings of $\operatorname{Sp}$. The list introduces and proves nothing; it is the index of the classical groups of the corpus.
+This article has listed the classical geometric groups of the corpus: the orthogonal groups $\operatorname{O}(V,\mathfrak{Q})$ and $\operatorname{SO}(V,\mathfrak{Q})$, generated by reflections with the Cartan–Dieudonné theorem and the parity of the reflection length, together with the real forms $O(p,r)$; the unitary groups $\operatorname{U}(V,h)$ and $\operatorname{SU}(V,h)$, with the inertia theorem, the signature $(p,r,z)$, the groups $U(p,r)$ and the intersection formula with the orthogonal and symplectic groups; the symplectic groups $\operatorname{Sp}(V,\omega)$ and $Sp(2m,F)$, with the Pfaffian determinant constraint and the compact quaternionic group $Sp(n)$; and the four families $A$, $B$, $C$, $D$ with their ranks, dimensions and small coincidences. Beside the examples stand the non-examples: the disconnectedness of $O(n)$, the centre of $SO(n)$ that changes with the parity of $n$, the Dieudonné determinant, the degenerate forms and the two meanings of $\operatorname{Sp}$. The list introduces and proves nothing; it is the index of the classical groups of the corpus.
 
 ## Summary of Notation
 
@@ -118,15 +118,15 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $V$, $q$, $B$ | a finite-dimensional space, a quadratic form, its polar form with $q(v) = B(v,v)$ |
+| $V$, $q$, $B$ | a finite-dimensional space, a quadratic form, its polar form with $\mathfrak{Q}(v) = B(v,v)$ |
 | $h$, $s$, $a$, $\sigma$ | a Hermitian form, its symmetric and alternating parts, the involution |
 | $\omega$, $\Omega$ | an alternating form, the standard alternating matrix |
-| $\operatorname{O}(V,q)$, $\operatorname{SO}(V,q)$, $O(p,r)$ | the orthogonal group, its determinant-one subgroup, the real form of signature $(p,r)$ |
+| $\operatorname{O}(V,\mathfrak{Q})$, $\operatorname{SO}(V,\mathfrak{Q})$, $O(p,r)$ | the orthogonal group, its determinant-one subgroup, the real form of signature $(p,r)$ |
 | $\operatorname{U}(V,h)$, $\operatorname{SU}(V,h)$, $U(p,r)$ | the unitary group, its determinant-one subgroup, the real form of signature $(p,r)$ |
 | $\operatorname{Sp}(V,\omega)$, $Sp(2m,F)$ | the symplectic group of a form, the standard split group |
 | $Sp(n)$ | the compact quaternionic unitary group, the compact real form of $Sp(2n,\mathbb{C})$ |
 | $GL(V)$, $SL(V)$ | the general and special linear groups |
-| $GO(V,q)$, $c$ | the similarity group, its multiplier |
+| $GO(V,\mathfrak{Q})$, $c$ | the similarity group, its multiplier |
 | $\tau_v$, $v^\perp$ | the reflection in $v$, the hyperplane orthogonal to $v$ |
 | $\operatorname{diag}(I_p,-I_r,0_z)$ | the normal form of a Hermitian form of signature $(p,r,z)$ |
 | $\operatorname{Pf}$ | the Pfaffian |

@@ -176,12 +176,12 @@ Analysis over Hypercomplex Systems*.
 **Theorem (Coifman–McIntosh–Meyer, quoted).** Let $\Gamma$ be a Lipschitz surface with a small
 Lipschitz constant. Then the singular Cauchy operator $\mathcal{S}$ extends to a bounded operator on
 $L^2(\Gamma;\mathcal{S})$ and, with the kernel $E(x-y)\nu_B(y)$ homogeneous of degree $-(m-1)$ on
-$\Gamma$ and odd, to a bounded operator on $L^p(\Gamma;\mathcal{S})$ for a range of $p$ around $2$.
+$\Gamma$ and odd, to a bounded operator on $L^{n}(\Gamma;\mathcal{S})$ for a range of $p$ around $2$.
 
 *Proof.* Quoted from the Clifford form of the Calderón–Zygmund theory; the kernel of $\mathcal{S}$
 is a singular integral kernel of the standard type, its restriction to the surface is homogeneous of
 degree $-(m-1)$ and odd, and the theorem of Coifman–McIntosh–Meyer supplies the $L^2$ boundedness
-for Lipschitz surfaces with small constant; the $L^p$ statement follows from the $L^2$ result by
+for Lipschitz surfaces with small constant; the $L^{n}$ statement follows from the $L^2$ result by
 interpolation and duality in the range in which the operator is of weak type. The Clifford case with
 operator-valued kernels is the one developed in *Harmonic Analysis over Hypercomplex Systems* and
 *Clifford Analysis*.
@@ -234,7 +234,7 @@ $P^\pm=\tfrac12(I\pm\mathcal{S})=\pm\mathcal{C}^\pm$ are complementary projectio
 space, the joint statement of the Plemelj–Sokhotski formulae and the classical continuation
 principle; the image of $P^+$ is the monogenic Hardy space $H^2(\Omega)$, and the orthogonal
 projection onto it is the Cauchy transform. On a Lipschitz surface with small constant,
-$\mathcal{S}$ is bounded on $L^2$ and on an interval of $L^p$ spaces by the Clifford form of the
+$\mathcal{S}$ is bounded on $L^2$ and on an interval of $L^{n}$ spaces by the Clifford form of the
 Coifman–McIntosh–Meyer theorem, the kernel being homogeneous of degree $-(m-1)$ and odd. The volume
 Teodorescu transform $\mathcal{T}_\Omega f(x)=\int_\Omega E(x-y)f(y)dy$ is a right inverse of $D$,
 and $\mathcal{T}_\Omega D=I-\mathcal{C}_{\partial\Omega}$ is the Cauchy–Pompeiu formula read as an

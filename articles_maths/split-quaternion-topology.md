@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional real vector space with an indefinite norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. Its topology is therefore simple wherever it is the topology of the underlying vector space, and interesting only where the split-quaternion norm cuts out the group of units, the norm-one group and the null cone. This article collects those topological facts: the contractibility of the algebra, the two components of the group of units, the circle that the norm-one group retracts onto, the torus that is the link of the null cone, the two families of isotropic lines, and the radial structure of the algebra near the null cone.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional real vector space with an indefinite norm $\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$. Its topology is therefore simple wherever it is the topology of the underlying vector space, and interesting only where the split-quaternion norm cuts out the group of units, the norm-one group and the null cone. This article collects those topological facts: the contractibility of the algebra, the two components of the group of units, the circle that the norm-one group retracts onto, the torus that is the link of the null cone, the two families of isotropic lines, and the radial structure of the algebra near the null cone.
 
 The article owns the topological statements of the category. It relies on *Split-Quaternion Norm and Invertibility* for the group of units, on *Split-Quaternion Exponential and Lie Group Structure* for the norm-one group and the Lorentz double cover, and on *Split-Quaternion Null Quadric and Projective Geometry* for the ruling of the null quadric. All the invariants below are standard; the signs of the indefinite form and the reality of the algebra are what distinguish the picture from the biquaternion one. No physics is invoked.
 
@@ -13,9 +13,9 @@ The article owns the topological statements of the category. It relies on *Split
 
 **Theorem.** As a topological space, $\mathbb{H}_{\mathrm{s}}$ is homeomorphic to $\mathbb{R}^4$ and is therefore **contractible**: $\pi_0(\mathbb{H}_{\mathrm{s}})$ is a point and $\pi_k(\mathbb{H}_{\mathrm{s}}) = 0$ for every $k \geq 1$.
 
-**Proof.** The coordinate map $\tilde q \mapsto (q_0,q_1,q_2,q_3)$ is a homeomorphism onto $\mathbb{R}^4$, and the straight-line homotopy $H(\tilde q,t) = (1-t)\tilde q$ contracts the algebra to the origin.
+**Proof.** The coordinate map $\tilde q \mapsto (q_0,q_1,q_2,q_3)$ is a homeomorphism onto $\mathbb{R}^4$, and the straight-line homotopy $\langle\tilde q,t\rangle_{*} = (1-t)\tilde q$ contracts the algebra to the origin.
 
-Consequently every interesting invariant of the article comes from a *deleted* set or a *level set* of $N$, not from the algebra itself. The punctured algebra $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ has the homotopy type of the Euclidean sphere $\Sigma^3$, by the radial deformation retraction $\tilde q \mapsto \tilde q/|\tilde q|_E$.
+Consequently every interesting invariant of the article comes from a *deleted* set or a *level set* of $\langle\cdot\rangle_{\natural}$, not from the algebra itself. The punctured algebra $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ has the homotopy type of the Euclidean sphere $\Sigma^3$, by the radial deformation retraction $\tilde q \mapsto \tilde q/|\tilde q|_E$.
 
 ## The Group of Units and Its Components
 
@@ -37,7 +37,7 @@ $$
 U \simeq S^1, \qquad \pi_1(U) = \mathbb{Z}.
 $$
 
-**Proof.** The set $U$ is the level set of the regular value $1$ of $N$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{N=1\} \cap \Sigma^3 = \{q_0^2+q_1^2 = 1, q_2=q_3=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $U \cong S^1 \times \mathbb{R}^2$.
+**Proof.** The set $U$ is the level set of the regular value $1$ of $\langle\cdot\rangle_{\natural}$, so it is a smooth three-manifold; it is connected, retracting onto its intersection with $\Sigma^3$, which is the set $\{N=1\} \cap \Sigma^3 = \{q_0^2+q_1^2 = 1, q_2=q_3=0\}$, a circle. The KAN (Iwasawa) decomposition $\mathrm{SL}_2(\mathbb{R}) = SO(2)\cdot A \cdot N$ with $A \cong \mathbb{R}$ and $N \cong \mathbb{R}$ gives the diffeomorphism $U \cong S^1 \times \mathbb{R}^2$.
 
 By *Split-Quaternion Exponential and Lie Group Structure* the group $U$ double-covers the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group. The double cover is **not** the universal cover: $\pi_1(U) = \mathbb{Z}$ is infinite, so the universal cover of $\mathrm{SO}^{+}(2,1)$ is an infinite cyclic cover of $U$ and not $U$ itself. This is a structural difference from the quaternion case, where the unit sphere is the simply connected three-sphere and its double cover of $SO(3)$ is universal.
 
@@ -46,7 +46,7 @@ By *Split-Quaternion Exponential and Lie Group Structure* the group $U$ double-c
 **Definition.** The **null cone** is
 
 $$
-\mathcal{N} = \{\, \tilde q : N(\tilde q) = 0 \,\} = \{\, q_0^2 + q_1^2 = q_2^2 + q_3^2 \,\},
+\mathcal{N} = \{\, \tilde q : \langle\tilde q\rangle_{\natural} = 0 \,\} = \{\, q_0^2 + q_1^2 = q_2^2 + q_3^2 \,\},
 $$
 
 the set of zero divisors together with the origin; the **link** of the cone is $\mathcal{N} \cap \Sigma^3$.
@@ -59,7 +59,7 @@ $$
 
 Hence $\mathcal{N}\setminus\{0\}$ is homotopy equivalent to $T^2$, with $\pi_1(\mathcal{N}\setminus\{0\}) = \mathbb{Z}^2$.
 
-**Proof.** A null point $\tilde q \neq 0$ is $t \tilde p$ with $t = |\tilde q|_E > 0$ and $\tilde p$ on the sphere; the cone property is homogeneity of $N$. On the sphere the equations $q_0^2+q_1^2 = q_2^2+q_3^2$ and $q_0^2+q_1^2+q_2^2+q_3^2 = 1$ give $q_0^2+q_1^2 = q_2^2+q_3^2 = \tfrac12$, so $(q_0,q_1)$ lies on the circle of radius $1/\sqrt2$ and $(q_2,q_3)$ on the circle of radius $1/\sqrt2$, independently: the link is the product of the two circles, a torus. The radial retraction makes $\mathcal{N}\setminus\{0\}$ homotopy equivalent to the link.
+**Proof.** A null point $\tilde q \neq 0$ is $t \tilde p$ with $t = |\tilde q|_E > 0$ and $\tilde p$ on the sphere; the cone property is homogeneity of $\langle\cdot\rangle_{\natural}$. On the sphere the equations $q_0^2+q_1^2 = q_2^2+q_3^2$ and $q_0^2+q_1^2+q_2^2+q_3^2 = 1$ give $q_0^2+q_1^2 = q_2^2+q_3^2 = \tfrac12$, so $(q_0,q_1)$ lies on the circle of radius $1/\sqrt2$ and $(q_2,q_3)$ on the circle of radius $1/\sqrt2$, independently: the link is the product of the two circles, a torus. The radial retraction makes $\mathcal{N}\setminus\{0\}$ homotopy equivalent to the link.
 
 The cone is singular at the origin, and the singularity is the vertex of the cone on the torus; away from the origin the cone is a smooth three-manifold.
 
@@ -67,7 +67,7 @@ The cone is singular at the origin, and the singularity is the vertex of the con
 
 Inside the null cone sit the **maximal isotropic subspaces** of the form, of dimension $2$. They fall into two families, each parametrised by a projective line.
 
-**Theorem.** The maximal isotropic subspaces of $N$ are the two families of two-dimensional planes
+**Theorem.** The maximal isotropic subspaces of $\langle\cdot\rangle_{\natural}$ are the two families of two-dimensional planes
 
 $$
 \mathcal{L} = \{\, L_\lambda \,\}, \qquad \mathcal{M} = \{\, M_\mu \,\},
@@ -81,21 +81,21 @@ $$
 L = \operatorname{span}\Bigl\{ \tfrac12(1+e_2),\; e_1 + e_3 \Bigr\},
 $$
 
-whose generators are null — $N\bigl(\tfrac12(1+e_2)\bigr) = \tfrac14 N(1+e_2) = 0$ and $N(e_1+e_3) = 1 - 1 = 0$ — and mutually $B$-orthogonal, $B\bigl(\tfrac12(1+e_2), e_1+e_3\bigr) = 0$; it is therefore totally isotropic. The isometry group $O(2,2)$ acts transitively on each family, and the two families are exchanged by the reflection $e_2 \mapsto -e_2$; each family is the set of images of $L$ under the two connected components of $O(2,2)$, a copy of $\mathrm{SO}^{+}(2,2)/P$ for a maximal parabolic $P$, hence a projective line. The identification of the projectivised cone with $\mathbb{P}^1\times\mathbb{P}^1$ and its two rulings is the standard description of a smooth quadric surface, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
+whose generators are null — $N\bigl(\tfrac12(1+e_2)\bigr) = \tfrac14 \langle 1+e_2\rangle_{\natural} = 0$ and $\langle e_1+e_3\rangle_{\natural} = 1 - 1 = 0$ — and mutually $B$-orthogonal, $B\bigl(\tfrac12(1+e_2), e_1+e_3\bigr) = 0$; it is therefore totally isotropic. The isometry group $O(2,2)$ acts transitively on each family, and the two families are exchanged by the reflection $e_2 \mapsto -e_2$; each family is the set of images of $L$ under the two connected components of $O(2,2)$, a copy of $\mathrm{SO}^{+}(2,2)/P$ for a maximal parabolic $P$, hence a projective line. The identification of the projectivised cone with $\mathbb{P}^1\times\mathbb{P}^1$ and its two rulings is the standard description of a smooth quadric surface, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
 
 The link of the null cone and the two rulings are the same object seen twice: the two families of lines of the quadric pull back to the two families of circles of the torus $T^2 = S^1 \times S^1$, one circle of each factor for each ruling.
 
 ## The Radial Structure and the Null Cone
 
-Every nonzero split-quaternion has the radial decomposition $\tilde q = \rho\, u$ with $\rho = \sqrt{|N(\tilde q)|} > 0$ and $u$ a unit of norm $\pm 1$. The map
+Every nonzero split-quaternion has the radial decomposition $\tilde q = \rho\, u$ with $\rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0$ and $u$ a unit of norm $\pm 1$. The map
 
 $$
-\mathbb{H}_{\mathrm{s}} \setminus \{0\} \longrightarrow \mathbb{R}_{>0} \times \{\, u : N(u) = \pm 1 \,\}, \qquad \tilde q \mapsto (\rho, \tilde q/\rho),
+\mathbb{H}_{\mathrm{s}} \setminus \{0\} \longrightarrow \mathbb{R}_{>0} \times \{\, u : \langle u\rangle_{\natural} = \pm 1 \,\}, \qquad \tilde q \mapsto (\rho, \tilde q/\rho),
 $$
 
 is a homeomorphism, and the second factor is the two-sheeted unit slice of *Split-Quaternion Norm and Invertibility*.
 
-**Theorem.** The **boundary of the radial decomposition** is the null cone. As $N(\tilde q) \to 0$ with $\tilde q$ fixed and nonzero, the modulus $\rho \to 0$ while the unit part $\tilde q/\rho$ leaves every compact set of the unit slice; the radial map does not extend continuously to $\mathcal{N}$, and its image is an open dense subset whose complement is $\mathcal{N}$.
+**Theorem.** The **boundary of the radial decomposition** is the null cone. As $\langle\tilde q\rangle_{\natural} \to 0$ with $\tilde q$ fixed and nonzero, the modulus $\rho \to 0$ while the unit part $\tilde q/\rho$ leaves every compact set of the unit slice; the radial map does not extend continuously to $\mathcal{N}$, and its image is an open dense subset whose complement is $\mathcal{N}$.
 
 **Proof.** The modulus is continuous and vanishes exactly on the null cone, where the normalisation $\tilde q/\rho$ is undefined. Along a path to a nonzero null point the unit part is unbounded because $\rho \to 0$ with $|\tilde q|_E$ bounded below. The identity above shows the polar map is a homeomorphism onto its image, which is the complement of the cone.
 

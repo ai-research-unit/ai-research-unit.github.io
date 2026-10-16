@@ -101,7 +101,7 @@ $$
 
 **Proof.** $\Lambda_a(f) = a*(z*f*z^{-1})$ by the inner form of the grade involution; the adjoint is the general formula, and the criterion is read on the parameters.
 
-**Remark (what the article does not do).** The graded adjoint action on a module over the group algebra is the next article; the adjoint of a general convolution operator, its form on $L^p$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, the last of this group; the discrete version with the bilinear signed form, where the adjoint is $\Lambda_a^\dagger = \Lambda_{\alpha(a)^{-1}}$, is *The Signed Adjoint of the Left Multiplication on a Topological Group*. The grade involution is an automorphism and the involution an anti-automorphism; the composite $\sigma$ is what the adjoint of the signed left multiplication detects.
+**Remark (what the article does not do).** The graded adjoint action on a module over the group algebra is the next article; the adjoint of a general convolution operator, its form on $L^{n}$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, the last of this group; the discrete version with the bilinear signed form, where the adjoint is $\Lambda_a^\dagger = \Lambda_{\alpha(a)^{-1}}$, is *The Signed Adjoint of the Left Multiplication on a Topological Group*. The grade involution is an automorphism and the involution an anti-automorphism; the composite $\sigma$ is what the adjoint of the signed left multiplication detects.
 
 ## Summary
 

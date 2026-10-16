@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The complex space carries two products, the **general plain bilinear product** $AC$ and the **general plain sesquilinear product** $A\bar C$, the reading on $\mathbb{C}$ of the four general products (*The Two Products of the Complex Space*). This article reads the two products on the two remarkable subspaces of the complex algebra, the real subspace $\mathbb{R}_{\mathbb{C}}$ and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, one subspace to a section, and collects the outcome in the table of the two.
+The complex space carries two products, the **general plain bilinear product** $AC$ and the **general plain sesquilinear product** $A\bar C$, the reading on $\mathbb{C}$ of the four general products (*The Two Products of the Complexoid Space*). This article reads the two products on the two remarkable subspaces of the complex algebra, the real subspace $\mathbb{R}_{\mathbb{C}}$ and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, one subspace to a section, and collects the outcome in the table of the two.
 
 Its result is a collapse, and it is written so that the collapse is visible: the four products become two, the six possible subspaces become two, and — the fact specific to $\mathbb{C}$ — the two products share one and the same closure table, so the closure of the subspaces cannot tell the two products apart.
 
-The subspaces are those of *Complex Subspaces*; the two involutions and the field are those of *Complex Algebra*, below this article in this category; the products are those of *The Two Products of the Complex Space*; the forms the products carry are *The Two Forms and the Two Algebraic Norms of the Complex Space*, and their restriction to the two subspaces is *Remarkable Subspaces of the Complex Numbers and the Two Forms*, both below this article in this category. The multiplication $AC$ is owned by *Complex Algebra*, and the topological norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*, both below this article in this category.
+The subspaces are those of *Complexoid Subspaces*; the two involutions and the field are those of *Complex Algebra*, below this article in this category; the products are those of *The Two Products of the Complexoid Space*; the forms the products carry are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, and their restriction to the two subspaces is *Remarkable Subspaces of the Complexoid and the Two Forms*, both below this article in this category. The multiplication $AC$ is owned by *Complex Algebra*, and the topological norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*, both below this article in this category.
 
-**Conventions.** The complex space is read over itself: **bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, and the letter $B$ is not used for an element, since $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive (*Complex Algebra*, *Complex Subspaces*).
+**Conventions.** The complex space is read over itself: **bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, and no bracket is used for an element, since the four forms are written with brackets, of which the plain and the Hermitian survive (*Complex Algebra*, *Complexoid Subspaces*).
 
 ## The Two Subspaces and the Two Products
 
@@ -18,17 +18,17 @@ $$
 \mathbb{R}_{\mathbb{C}}=\{A:\bar A=A\}=\mathbb{R}1,\qquad i\mathbb{R}_{\mathbb{C}}=\{A:\bar A=-A\}=\mathbb{R}i,
 $$
 
-each of real dimension one, with $\mathbb{C}=\mathbb{R}_{\mathbb{C}}\oplus i\mathbb{R}_{\mathbb{C}}$ (*Complex Subspaces*). On the coordinates $A=a+ia'$ and $C=c+ic'$, the two products are
+each of real dimension one, with $\mathbb{C}=\mathbb{R}_{\mathbb{C}}\oplus i\mathbb{R}_{\mathbb{C}}$ (*Complexoid Subspaces*). On the coordinates $A=a+ia'$ and $C=c+ic'$, the two products are
 
 $$
 AC=(ac-a'c')+i(ac'+a'c'),\qquad A\bar C=(ac+a'c')+i(a'c-ac').
 $$
 
-The general product fills two slots, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian mark; on $\mathbb{C}$ the first slot is the identity and the Hermitian mark is the bar, so the setting with the identity in the second slot gives $AC$ and the setting with the bar gives $A\bar C$. The product therefore takes two values, and no product of the space is a third operation (*The Two Products of the Complex Space*).
+The general product fills two slots, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian mark; on $\mathbb{C}$ the first slot is the identity and the Hermitian mark is the bar, so the setting with the identity in the second slot gives $AC$ and the setting with the bar gives $A\bar C$. The product therefore takes two values, and no product of the space is a third operation (*The Two Products of the Complexoid Space*).
 
 ## The Real Subspace
 
-An element of the real subspace is $A=a$, and the two products agree on the whole of it, since $\bar C=C$ for a real $C$. The product of two elements is $ac$, real, so the subspace is closed under both products; it is a subalgebra and a field, isomorphic to $\mathbb{R}$ (*Complex Subspaces*). Its units are all its nonzero elements, its idempotents are $0$ and $1$ alone, and neither product has a nonzero isotropic element in it, since $a^2=0$ and $a\bar a=a^2=0$ force $a=0$. The sesquilinear product reduces there to the plain one, $A\bar C=AC$, and the two products are told apart by no element of the subspace.
+An element of the real subspace is $A=a$, and the two products agree on the whole of it, since $\bar C=C$ for a real $C$. The product of two elements is $ac$, real, so the subspace is closed under both products; it is a subalgebra and a field, isomorphic to $\mathbb{R}$ (*Complexoid Subspaces*). Its units are all its nonzero elements, its idempotents are $0$ and $1$ alone, and neither product has a nonzero isotropic element in it, since $a^2=0$ and $a\bar a=a^2=0$ force $a=0$. The sesquilinear product reduces there to the plain one, $A\bar C=AC$, and the two products are told apart by no element of the subspace.
 
 ## The Imaginary Subspace
 
@@ -66,7 +66,7 @@ The element theory of the two subspaces is this.
 | $\mathbb{R}_{\mathbb{C}}$ | every nonzero element | $0$ and $1$ | $0$ alone |
 | $i\mathbb{R}_{\mathbb{C}}$ | every nonzero element, inverse in the subspace | $0$ alone | $0$ alone |
 
-Both products give the same table, since the isotropic sets are read from $B(A)=A^2$ and $H(A)=A\bar A$, and both vanish only at the origin on either subspace; the two vanishings are the anisotropy of the two forms (*Remarkable Subspaces of the Complex Numbers and the Two Forms*, below this article in this category).
+Both products give the same table, since the isotropic sets are read from $B(A)=A^2$ and $H(A)=A\bar A$, and both vanish only at the origin on either subspace; the two vanishings are the anisotropy of the two forms (*Remarkable Subspaces of the Complexoid and the Two Forms*, below this article in this category).
 
 ## Summary
 
@@ -85,11 +85,11 @@ The real subspace carries the units all its nonzero elements, the idempotents $0
 | $AC$ | the general plain bilinear product, the multiplication of the field |
 | $A\bar C$ | the general plain sesquilinear product |
 | $\bar{\cdot}$ | complex conjugation, the bar |
-| $B$, $H$ | the two forms, $B(A,C)=AC$ and $H(A,C)=A\bar C$ |
+| $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ | the two forms, $\langle A,C\rangle=AC$ and $\langle A,C\rangle_{*}=A\bar C$ |
 
 ## Further Reading
 
-- *The Two Products of the Complex Space*, for the two products, their definitions and the collapse of the four general products to them.
-- *Complex Subspaces* (`articles_maths/complexoid-subspaces.md`), for the two subspaces, their bases, their dimensions and the closure of the real subspace.
+- *The Two Products of the Complexoid Space*, for the two products, their definitions and the collapse of the four general products to them.
+- *Complexoid Subspaces* (`articles_maths/complexoid-subspaces.md`), for the two subspaces, their bases, their dimensions and the closure of the real subspace.
 - *Complex Algebra* (`articles_maths/complex-algebra.md`), for the field structure of the real subspace and the multiplication $AC$.
-- *The Two Forms and the Two Algebraic Norms of the Complex Space* and *Remarkable Subspaces of the Complex Numbers and the Two Forms*, below this article in this category, for the two forms and their restriction to the two subspaces.
+- *The Two Forms and the Two Algebraic Norms of the Complexoid Space* and *Remarkable Subspaces of the Complexoid and the Two Forms*, below this article in this category, for the two forms and their restriction to the two subspaces.

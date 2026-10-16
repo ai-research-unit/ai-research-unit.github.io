@@ -14,7 +14,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The split complex plane $\mathbb{D}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi} A)}, \qquad \xi \in \mathbb{D},
+\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{D},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
@@ -32,7 +32,7 @@ So at the level of the additive group, split complex harmonic analysis is the sa
 The **split complex characters** are the homomorphisms into the multiplicative monoid of $\mathbb{D}$:
 
 $$
-\chi_\xi(A) = e^{j \operatorname{Re}(\bar{\xi} A)}, \qquad \xi \in \mathbb{D},
+\chi_\xi(A) = \exp(j \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{D},
 $$
 
 where the exponential is the split complex exponential. Explicitly,
@@ -50,7 +50,7 @@ These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} A)| \to \in
 The **split complex Fourier transform** of a function $f : \mathbb{D} \to \mathbb{D}$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}} f(A) e^{-j \operatorname{Re}(\bar{\xi} A)} \, dA,
+(\mathcal F f)(\xi) = \int_{\mathbb{D}} f(A) \exp(-j \operatorname{Re}(\bar{\xi} A)) \, dA,
 $$
 
 where $dA$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
@@ -62,13 +62,13 @@ where $dA$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the expon
 In the idempotent basis, the split complex Fourier transform decomposes as
 
 $$
-\hat{f}(\xi) = \hat{f}_+(\xi_+) \Pi_1 + \hat{f}_-(\xi_-) \Pi_2,
+(\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_1 + \mathcal F f_-(\xi_-) \Pi_2,
 $$
 
 where
 
 $$
-\hat{f}_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(A_\pm) e^{\mp \xi_\pm A_\pm} \, dA_\pm.
+\mathcal F f_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(A_\pm) \exp(\mp \xi_\pm A_\pm) \, dA_\pm.
 $$
 
 The two integrals are **Laplace transforms**, one for each idempotent component. The first integral converges for $\xi_+ > 0$ and the second for $\xi_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.
@@ -88,7 +88,7 @@ The transform is **not** defined on $L^1(\mathbb{D})$ or $L^2(\mathbb{D})$, beca
 The **Laplace transform** of a function $f : [0, \infty) \to \mathbb{R}$ is
 
 $$
-\mathcal{L} f(s) = \int_0^\infty f(t) e^{-st} \, dt,
+\mathcal{L} f(s) = \int_0^\infty f(t) \exp(-st) \, dt,
 $$
 
 whenever the integral converges. For $f$ of exponential growth, the transform converges for $\operatorname{Re} s > \sigma_0$, where $\sigma_0$ is the abscissa of convergence.
@@ -98,7 +98,7 @@ whenever the integral converges. For $f$ of exponential growth, the transform co
 The split complex Fourier transform on the positive null direction is the Laplace transform:
 
 $$
-\hat{f}_+(\xi_+) = \int_0^\infty f_+(A_+) e^{-\xi_+ A_+} \, dA_+ = \mathcal{L} f_+(\xi_+).
+\mathcal F f_+(\xi_+) = \int_0^\infty f_+(A_+) \exp(-\xi_+ A_+) \, dA_+ = \mathcal{L} f_+(\xi_+).
 $$
 
 So the split complex Fourier transform is the pair of Laplace transforms on the two null directions. This is not an analogy; it is an identity.
@@ -108,7 +108,7 @@ So the split complex Fourier transform is the pair of Laplace transforms on the 
 The Laplace transform is inverted by the **Bromwich integral**
 
 $$
-f(t) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\sigma + i\infty} \mathcal{L} f(s) e^{st} \, ds,
+f(t) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\sigma + i\infty} \mathcal{L} f(s) \exp(st) \, ds,
 $$
 
 which is a contour integral in the complex plane. So the inversion of the split complex Fourier transform requires complexification of the idempotent components. This is the price of working with unbounded characters.
@@ -117,10 +117,10 @@ which is a contour integral in the complex plane. So the inversion of the split 
 
 ### Definition
 
-On a bounded interval $[-T, T]$, the characters $e^{-j \operatorname{Re}(\bar{\xi} A)}$ are bounded, and the split complex Fourier transform
+On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\xi} A))$ are bounded, and the split complex Fourier transform
 
 $$
-\hat{f}(\xi) = \int_{-T}^T f(A) e^{-j \operatorname{Re}(\bar{\xi} A)} \, dA
+(\mathcal F f)(\xi) = \int_{-T}^T f(A) \exp(-j \operatorname{Re}(\bar{\xi} A)) \, dA
 $$
 
 converges for $f \in L^1([-T, T])$.
@@ -130,7 +130,7 @@ converges for $f \in L^1([-T, T])$.
 On a bounded interval, the inversion formula is
 
 $$
-f(A) = \frac{1}{2\pi} \int_{\mathbb{R}} \hat{f}(\xi) e^{j \operatorname{Re}(\bar{\xi} A)} \, d\xi,
+f(A) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(j \operatorname{Re}(\bar{\xi} A)) \, d\xi,
 $$
 
 under suitable conditions. This is the analogue of the Fourier inversion theorem for the split complex case, and it is the setting in which split complex harmonic analysis is useful.
@@ -157,18 +157,18 @@ whenever the integral converges. This is the convolution on the additive group $
 
 **Associativity.** $(f * g) * h = f * (g * h)$.
 
-**Young's inequality.** If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
+**Young's inequality.** If $1/n + 1/m = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
 
 $$
 \|f * g\|_r \leq \|f\|_p \|g\|_q,
 $$
 
-where the norms are the ordinary $L^p$ norms on $\mathbb{R}^2$.
+where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.
 
 **Convolution theorem.** For functions for which the split complex Fourier transform is defined,
 
 $$
-\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
 $$
 
 **Proof.** Write the definition, apply Fubini, and change variables.
@@ -229,7 +229,7 @@ So the split complex Hilbert transform is the pair of ordinary real Hilbert tran
 
 ### Basic Properties
 
-**Boundedness.** $H$ is bounded on $L^p(\mathbb{D})$ for $1 < p < \infty$, with
+**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{D})$ for $1 < p < \infty$, with
 
 $$
 \|Hf\|_p \leq C_p \|f\|_p.
@@ -238,7 +238,7 @@ $$
 **Fourier multiplier.** In terms of the split complex Fourier transform,
 
 $$
-\widehat{Hf}(\xi) = -j \operatorname{sgn}(\xi) \hat{f}(\xi),
+\widehat{Hf}(\xi) = -j \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
 $$
 
 where $\operatorname{sgn}$ is the sign function on each idempotent component.
@@ -263,7 +263,7 @@ $$
 |\{A : Mf(A) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$
 
-This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^p(\mathbb{D})$ for $1 < p \leq \infty$.
+This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D})$ for $1 < p \leq \infty$.
 
 **Theorem.** For $1 < p \leq \infty$, there exists $C_p > 0$ such that
 
@@ -299,7 +299,7 @@ $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.
 
-**Theorem (Calderón–Zygmund, split version).** Every split complex Calderón–Zygmund operator is bounded on $L^p(\mathbb{D})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
+**Theorem (Calderón–Zygmund, split version).** Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{D})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
 
 **Examples.** The split complex Hilbert transform, the split complex Riesz transforms, and the Beurling–Ahlfors transform are split complex Calderón–Zygmund operators.
 
@@ -327,13 +327,13 @@ where $\mathcal{M}$ on the right is the ordinary real Mellin transform.
 
 ### Relation to the Split Complex Fourier Transform
 
-Under the change of variables $t = e^a$, the Mellin transform becomes the split complex Fourier transform on the real line:
+Under the change of variables $t = \exp(a)$, the Mellin transform becomes the split complex Fourier transform on the real line:
 
 $$
-\mathcal{M} f(\sigma + j\tau) = \int_{-\infty}^\infty e^{(\sigma + j\tau) a} f(e^a) \, da = \hat{g}(\tau),
+\mathcal{M} f(\sigma + j\tau) = \int_{-\infty}^\infty \exp((\sigma + j\tau) a) f(\exp(a)) \, da = (\mathcal F g)(\tau),
 $$
 
-where $g(a) = e^{\sigma a} f(e^a)$. So the Mellin transform is the split complex Fourier transform in logarithmic coordinates.
+where $g(a) = \exp(\sigma a) f(\exp(a))$. So the Mellin transform is the split complex Fourier transform in logarithmic coordinates.
 
 ### The Mellin Convolution
 
@@ -368,7 +368,7 @@ where $L(\theta, t)$ is the line with normal direction $(\cosh\theta, \sinh\thet
 **Theorem (Fourier Slice, split version).** The one-dimensional split complex Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional split complex Fourier transform of $f$ to the line through the origin in direction $(\cosh\theta, \sinh\theta)$:
 
 $$
-\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cosh\theta, \sigma \sinh\theta).
+\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cosh\theta, \sigma \sinh\theta).
 $$
 
 **Proof.** Write the definition of the Radon transform, take the split complex Fourier transform in $t$, and change variables.
@@ -380,7 +380,7 @@ The Fourier slice theorem is the mathematical basis of hyperbolic tomography, th
 **Theorem.** For suitable $f$,
 
 $$
-f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{j \sigma \operatorname{Re}(\bar{\xi} A)} \, d\sigma \, d\theta,
+f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\xi} A)) \, d\sigma \, d\theta,
 $$
 
 where $\xi = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.
@@ -436,8 +436,8 @@ The split complex Fourier transform is defined with a kernel built from the spli
 | $\mathbb{D}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
-| $\chi_\xi(A) = e^{j \operatorname{Re}(\bar{\xi} A)}$ | Split complex character |
-| $\hat{f}$ | Split complex Fourier transform |
+| $\chi_\xi(A) = \exp(j \operatorname{Re}(\bar{\xi} A))$ | Split complex character |
+| $\mathcal F f$ | Split complex Fourier transform |
 | $f * g$ | Convolution |
 | $f \star g$ | Mellin convolution |
 | $\delta$ | Split complex delta distribution |

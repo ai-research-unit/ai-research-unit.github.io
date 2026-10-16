@@ -4,9 +4,9 @@
 
 The complex algebra is one additive group carrying two scalar readings. Read over $\mathbb{R}$ it is the real plane with basis $1, i$, of real dimension two; read over itself it is a complex line, of complex dimension one. This article fixes the two readings, the operator $J$ that is multiplication by $i$, the classification of the real-linear maps of the plane into the complex-linear and the conjugate-linear ones, the real forms, and the self-duality that the one-dimensional complex reading enjoys.
 
-The article is purely linear. No form, no norm and no topology appear in it; the reading of the complex numbers as the realification of a form, with its signatures and its count of operations, is *The Realification and the Effect of the Change of Scalars*, below this article in this category. The multiplication itself is owned by *Complex Algebra* and the two distinguished subspaces by *Complex Subspaces*, both below this article in this category; both are cited here and neither is restated.
+The article is purely linear. No form, no norm and no topology appear in it; the reading of the complex numbers as the realification of a form, with its signatures and its count of operations, is *The Realification and the Effect of the Change of Scalars*, below this article in this category. The multiplication itself is owned by *Complex Algebra* and the two distinguished subspaces by *Complexoid Subspaces*, both below this article in this category; both are cited here and neither is restated.
 
-The reading of the marks is the corpus convention, stated once because the older complex articles use the words differently. The **bar** is complex conjugation, the one nontrivial involution of the algebra, and the **Hermitian star** coincides with the bar. The articles *Complex Algebra* and *Complex Subspaces*, below this article in this category, call these the "two conjugations" and the "two involutions" of the algebra, the identity and complex conjugation; those are the identity and the bar in the present vocabulary, and the two are the same two maps.
+The reading of the marks is the corpus convention, stated once because the older complex articles use the words differently. The **bar** is complex conjugation, the one nontrivial involution of the algebra, and the **Hermitian star** coincides with the bar. The articles *Complex Algebra* and *Complexoid Subspaces*, below this article in this category, call these the "two conjugations" and the "two involutions" of the algebra, the identity and complex conjugation; those are the identity and the bar in the present vocabulary, and the two are the same two maps.
 
 ## The Two Interpretations of the One Space
 
@@ -136,7 +136,7 @@ $$
 a + ia' \longmapsto a\,e_0 + a'\,(ie_0) .
 $$
 
-On it the two products $AC$ and $A\bar C$ act; the product theory is the subject of *The Two Products of the Complex Space*, below this article in this category.
+On it the two products $AC$ and $A\bar C$ act; the product theory is the subject of *The Two Products of the Complexoid Space*, below this article in this category.
 
 ## Summary
 

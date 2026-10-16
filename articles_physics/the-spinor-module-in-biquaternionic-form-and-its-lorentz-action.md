@@ -48,7 +48,7 @@ where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the compani
 
 $$
 \mathsf{M}_2(\tilde{Q}\tilde{R}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R}), \qquad
-\det\mathsf{M}_2(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}),
+\det\mathsf{M}_2(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \langle\tilde{Q}\rangle_{\natural},
 $$
 
 so that the **biquaternion norm** of $\mathbb{B}$ is the determinant. The isomorphism also intertwines Hermitian conjugation with the conjugate transpose,
@@ -115,27 +115,27 @@ $$
 The off-diagonal matrix units are recovered in biquaternion coordinates: with
 
 $$
-\hat\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \hat\Upsilon_2 = \frac{i e_1 + e_2}{2},
+\vec\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \vec\Upsilon_2 = \frac{i e_1 + e_2}{2},
 $$
 
-the set $\{\tilde\Pi_+,\hat\Upsilon_1,\hat\Upsilon_2,\tilde\Pi_-\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
+the set $\{\tilde\Pi_+,\vec\Upsilon_1,\vec\Upsilon_2,\tilde\Pi_-\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
 
 $$
 E_{11} = \tilde\Pi_+,\quad E_{12} = x,\quad E_{21} = y,\quad E_{22} = \tilde\Pi_-,
 \qquad
-\tilde\Pi_+\hat\Upsilon_1 = \hat\Upsilon_1 = \hat\Upsilon_1 \tilde\Pi_-,\quad \tilde\Pi_-\hat\Upsilon_2 = \hat\Upsilon_2 = \hat\Upsilon_2 \tilde\Pi_+,\quad \hat\Upsilon_1\hat\Upsilon_2 = \tilde\Pi_+,\quad \hat\Upsilon_2\hat\Upsilon_1 = \tilde\Pi_-.
+\tilde\Pi_+\vec\Upsilon_1 = \vec\Upsilon_1 = \vec\Upsilon_1 \tilde\Pi_-,\quad \tilde\Pi_-\vec\Upsilon_2 = \vec\Upsilon_2 = \vec\Upsilon_2 \tilde\Pi_+,\quad \vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_+,\quad \vec\Upsilon_2\vec\Upsilon_1 = \tilde\Pi_-.
 $$
 
 Under $\mathsf{M}_2$, $\tilde\Pi_+$ and $\tilde\Pi_-$ are the diagonal matrix units and $\mathbb{B}\tilde\Pi_+$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
 
 $$
-\{\tilde\Pi_+,\; \hat\Upsilon_2\}, \qquad \hat\Upsilon_2 = e_2 \tilde\Pi_+ = \frac{i e_1 + e_2}{2},
+\{\tilde\Pi_+,\; \vec\Upsilon_2\}, \qquad \vec\Upsilon_2 = e_2 \tilde\Pi_+ = \frac{i e_1 + e_2}{2},
 $$
 
 and a general spinor in $\mathbb{B}\tilde\Pi_+$ is
 
 $$
-\tilde{\psi} = \psi_1\, \tilde\Pi_+ + \psi_2\, \hat\Upsilon_2, \qquad \psi_1,\psi_2 \in \mathbb{C}.
+\tilde{\psi} = \psi_1\, \tilde\Pi_+ + \psi_2\, \vec\Upsilon_2, \qquad \psi_1,\psi_2 \in \mathbb{C}.
 $$
 
 The coordinate map $\tilde{\psi}\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
@@ -144,7 +144,7 @@ $$
 \tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}\tilde\Pi_+) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
 $$
 
-For example $e_3 \tilde\Pi_+ = -i \tilde\Pi_+$ and $e_3 \hat\Upsilon_2 = i \hat\Upsilon_2$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 \tilde\Pi_+ = -i \hat\Upsilon_2$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
+For example $e_3 \tilde\Pi_+ = -i \tilde\Pi_+$ and $e_3 \vec\Upsilon_2 = i \vec\Upsilon_2$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 \tilde\Pi_+ = -i \vec\Upsilon_2$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
 
 This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}\tilde\Pi_+$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
 
@@ -208,8 +208,8 @@ The subgroups relevant to the series sit inside it as follows:
 
 | Element | Characterization | Subspace |
 |---|---|---|
-| Pure boost $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
-| Pure rotation $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
+| Pure boost $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
+| Pure rotation $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
 | General $\tilde{U}$ | Unit norm | $\mathbb{B}$ |
 
 Pure boosts satisfy $\tilde{U}^{*} = \tilde{U}$; they do not form a subgroup (the product of two non-collinear boosts is a boost plus a rotation). Pure rotations form the subgroup $SU(2) = SL(2,\mathbb{C})\cap U(2)$.
@@ -264,16 +264,16 @@ No conjugation appears. This is the defining feature of the spinor representatio
 
 ### Boosts and Rotations Explicitly
 
-For a boost along $\hat u_{\mathrm b}$ with rapidity $\psi$,
+For a boost along $\vec u_{\mathrm b}$ with rapidity $\psi$,
 
 $$
-\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$
 
-as follows from $\mathsf{M}_2(i\hat u_{\mathrm b}) = \hat u_{\mathrm b}\cdot\boldsymbol{\sigma}$. For $\hat u_{\mathrm b} = \hat e_3$ this is the diagonal matrix $\operatorname{diag}(e^{\psi/2},e^{-\psi/2})$, which stretches one spinor component and contracts the other. For a rotation about $\hat u_{\mathrm r}$ by angle $\theta$,
+as follows from $\mathsf{M}_2(i\vec u_{\mathrm b}) = \vec u_{\mathrm b}\cdot\boldsymbol{\sigma}$. For $\vec u_{\mathrm b} = \vec u_3$ this is the diagonal matrix $\operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$, which stretches one spinor component and contracts the other. For a rotation about $\vec u_{\mathrm r}$ by angle $\theta$,
 
 $$
-\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat u_{\mathrm r}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma},
 $$
 
 the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\mathsf{M}_2(\tilde{R})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
@@ -316,7 +316,7 @@ $$
 \varepsilon(g\psi, g\phi) = \psi^{T} g^{T}\epsilon\, g\,\phi = \varepsilon(\psi,\phi).
 $$
 
-The form $\varepsilon$ is a nondegenerate **invariant bilinear form** on $S$. It identifies $S$ with its dual, $S^{*}\cong S$: the defining module is **self-dual**. This is the spinor metric used to raise and lower Weyl indices, and it is the reason a pair of left-handed spinors has an invariant antisymmetric contraction. Self-duality is not self-conjugacy: $S^{*}\cong S$, but $\bar{S}\not\cong S$.
+The form $\varepsilon$ is a nondegenerate **invariant bilinear form** on $S$. It identifies $S$ with its dual, $S^{*}\cong S$: the defining module is **self-dual**. This is the spinor metric behind the invariant antisymmetric contraction of a pair of left-handed spinors. Self-duality is not self-conjugacy: $S^{*}\cong S$, but $\bar{S}\not\cong S$.
 
 ### The Hermitian Form
 
@@ -339,7 +339,7 @@ It is invariant exactly when $g^{*}g = I_2$, i.e. on the compact subgroup $SU(2)
 There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$. Then the sesquilinear pairing
 
 $$
-b(\psi,\chi) = \psi^{\dagger}\chi
+\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi
 $$
 
 is invariant. Indeed,
@@ -391,7 +391,7 @@ The transformation laws are collected in the following table.
 |---|---|---|---|
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | $S\times S\to\mathbb{C}$ | invariant | $g^{T}\epsilon g = \epsilon$ |
 | $h(\psi,\phi) = \psi^{\dagger}\phi$ | $S\times S\to\mathbb{C}$ | $\psi^{\dagger}g^{*}g\,\phi$ | invariant iff $g\in SU(2)$ |
-| $b(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde{U}^{*}\tilde{U}^{*}=e_0$ |
+| $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde{U}^{*}\tilde{U}^{*}=e_0$ |
 | $\tilde{Q} = u\,v^{\dagger}$ | $S\times\bar{S}\to\mathbb{B}$ | $g\,\tilde{Q}\,g^{*}$ | equivariant |
 | $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$ | $S\times\bar{S}\to\mathbb{M}_+$ | $g\,H\,g^{*}$ | Hermitian; four-vector is $iH$ |
 
@@ -525,20 +525,20 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
 | $S = \mathbb{C}^2$ | Spinor module (unique simple module), $\dim_{\mathbb{C}}S=2$ |
 | $V_1 = (\tfrac12,0)$ | Left-handed Weyl (defining) representation |
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |
 | $\Delta = S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}\Delta=4$ |
 | $\tilde\Pi_+ = \tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
-| $\hat\Upsilon_1 = \tfrac12(ie_1-e_2),\ \hat\Upsilon_2=\tfrac12(ie_1+e_2)=e_2\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\hat\Upsilon_2\}$ of $S$ |
+| $\vec\Upsilon_1 = \tfrac12(ie_1-e_2),\ \vec\Upsilon_2=\tfrac12(ie_1+e_2)=e_2\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\vec\Upsilon_2\}$ of $S$ |
 | $SL(2,\mathbb{C}) = \{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_0\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
-| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
 | $\psi\mapsto\tilde{U}\psi$ | Lorentz action on the spinor module |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | Hermitian form (invariant on $SU(2)$) |
-| $b(\psi,\chi)=\psi^{\dagger}\chi$ | Invariant pairing $S\times\bar{S}\to\mathbb{C}$ |
+| $\mathfrak{b}(\psi,\chi)=\psi^{\dagger}\chi$ | Invariant pairing $S\times\bar{S}\to\mathbb{C}$ |
 | $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})\mapsto gHg^{\dagger}$ | Spinor bilinear; four-vector is $iH$ |
 | $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ | Even Clifford subalgebra correspondence |
 | $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing, signature $(1,1)$ |

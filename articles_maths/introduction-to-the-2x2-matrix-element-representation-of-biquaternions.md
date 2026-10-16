@@ -150,30 +150,30 @@ where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the m
 
 $$
 \det(\tilde{Q}) = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-iQ_1 - Q_2)(-iQ_1 + Q_2)
-= (Q_0^2 + Q_3^2) - \big[(-iQ_1)^2 - Q_2^2\big] = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}).
+= (Q_0^2 + Q_3^2) - \big[(-iQ_1)^2 - Q_2^2\big] = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \langle\tilde{Q}\rangle_{\natural}.
 $$
 
 This is the central fact of the representation. The biquaternion norm, defined algebraically as $\tilde{Q}\tilde{Q}^{\natural}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.
 
-**Invertibility.** A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
+**Invertibility.** A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
 
-**Multiplicativity.** $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
+**Multiplicativity.** $\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde{R}\rangle_{\natural}$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
 
-**Zero divisors.** The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $N(\tilde{Q}) = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.
+**Zero divisors.** The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $\langle\tilde{Q}\rangle_{\natural} = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.
 
-**Worked example.** For $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the image is $\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix}$, of trace $4+2i=2Q_0$ and determinant $11+2i=N(\tilde{Q})$, so the element is a unit with inverse $\tilde{Q}^{\natural}/N$.
+**Worked example.** For $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the image is $\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix}$, of trace $4+2i=2Q_0$ and determinant $11+2i=\langle\tilde{Q}\rangle_{\natural}$, so the element is a unit with inverse $\tilde{Q}^{\natural}/N$.
 
 ## The Rank-One Elements and the Outer Product
 
 The determinant is the norm, so the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.
 
-**Proposition.** For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\mathsf{M}_2(\tilde{Q})$ is singular; $\mathsf{M}_2(\tilde{Q})$ is an outer product
+**Proposition.** For $\tilde{Q}\neq0$ the following are equivalent: $\langle\tilde{Q}\rangle_{\natural}=0$; $\mathsf{M}_2(\tilde{Q})$ is singular; $\mathsf{M}_2(\tilde{Q})$ is an outer product
 $$
 \mathsf{M}_2(\tilde{Q})=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
 $$
 the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
 
-**Proof.** The first two are equivalent by $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\mathsf{M}_2(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
+**Proof.** The first two are equivalent by $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\mathsf{M}_2(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
 $$
 u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
 $$
@@ -188,20 +188,20 @@ The trace identity of §*Trace, Determinant and the Biquaternion Norm* is a pair
 **Theorem (the trace pairing).** For all biquaternions,
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr),
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr),
 $$
 
 so the matrix trace is the carrier of the scalar part, and on the diagonal
 
 $$
-B(\tilde Q,\tilde Q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)=\sum_\mu\varepsilon_\mu Q_\mu^2,\qquad \varepsilon_0=+1,\ \varepsilon_1=\varepsilon_2=\varepsilon_3=-1 .
+\langle\tilde Q,\tilde Q\rangle=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)=\sum_\mu\varepsilon_\mu Q_\mu^2,\qquad \varepsilon_0=+1,\ \varepsilon_1=\varepsilon_2=\varepsilon_3=-1 .
 $$
 
 *Proof.* The first equality is the definition of the general plain bilinear form; the second is the trace identity of §*Trace, Determinant and the Biquaternion Norm* applied to the product $\tilde P\tilde Q$; the diagonal is that identity read on the basis, where $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\operatorname{Tr}(\mathsf{M}_2(e_\mu)\mathsf{M}_2(e_\nu))=2\varepsilon_\mu\delta_{\mu\nu}$.
 
 **The Gram matrix, the congruence and the signature.** In the coefficient basis the Gram matrix of $B$ is the sign matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, and a change of basis of matrix $S$ replaces it by $S^{\mathsf T}\mathrm{E}S$; over $\mathbb{C}$ the form is determined up to congruence by its rank alone, every non-degenerate complex quadratic form of rank $4$ being equivalent to this one. The plain product is what puts the sign matrix $\mathrm{E}$, and not $\mathrm{I}_4$, in the coefficient basis. Over $\mathbb{R}$ the form has signature $(4,4)$ on the eight real coordinates, and it is indefinite.
 
-**The null set.** The pairing vanishes on the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, a complex cone of real dimension $6$ in $\mathbb{R}^8$, with two families of isotropic planes. It is the null set of neither the determinant nor the general quaternionic bilinear form; the quadric, its isotropic planes, the hyperbolic splitting and the index are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+**The null set.** The pairing vanishes on the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, a complex cone of real dimension $6$ in $\mathbb{R}^8$, with two families of isotropic planes. It is the null set of neither the determinant nor the general quaternionic bilinear form; the quadric, its isotropic planes, the hyperbolic splitting and the index are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
 **The automorphisms.** A matrix preserves the trace pairing exactly when $T^{\mathsf T}\mathrm{E}T=\mathrm{E}$, so on the coefficients the automorphism group is $\{T\in GL_4(\mathbb{C}):T^{\mathsf T}\mathrm{E}T=\mathrm{E}\}=O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, its Lie algebra $\{X:X^{\mathsf T}\mathrm{E}+\mathrm{E}X=0\}$ being of real dimension $12$. The real structures exhibit the real forms: the Hermitian conjugation is an antilinear form reversal whose fixed space is the Hermitian subspace, of restriction signature $(4,0)$, so the automorphisms commuting with it form the real orthogonal group $O(4)$; the coefficient conjugation has fixed space the quaternion subspace, of signature $(1,3)$, exhibited by $O(1,3)$. The group of real-linear automorphisms of the realified form is the larger $O(4,4)$, which is not the group the form defines over $\mathbb{C}$. On the matrices the conjugation $M\mapsto UMU^{-1}$ by a unit and the transposition $M\mapsto M^{\mathsf T}$ are automorphisms, since $\operatorname{Tr}(UMU^{-1}\cdot UNU^{-1})=\operatorname{Tr}(MN)$ and $\operatorname{Tr}(M^{\mathsf T}N^{\mathsf T})=\operatorname{Tr}(MN)$; the inner automorphisms and the transposition together form a proper subgroup of the full group $O_4(\mathbb{C})$.
 
@@ -384,7 +384,7 @@ $$
 which is $i$ times a Hermitian matrix: the scalar part is carried by $i$, and the vector signs are reversed. Its trace is $2iq'_0$, purely imaginary, and its determinant is
 
 $$
-\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 ,
+\det \mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
 the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \vec x^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
@@ -419,14 +419,14 @@ Two structural facts are visible in this form, and both are used by the physics 
 **The two columns are the two chiralities.** Left multiplication preserves each column: for any $M$, the products $ME_{11}$ and $ME_{21}$ again have vanishing second column. No left multiplication can therefore relate the two columns. A mass term that couples the left- and right-handed components cannot be a left multiplication; it must be a **right** multiplication, and the element that performs it is the one carried to the off-diagonal matrix unit,
 
 $$
-\hat\Upsilon_1 = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12} = |0\rangle\langle 1| .
+\vec\Upsilon_1 = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12} = |0\rangle\langle 1| .
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $\hat\Upsilon_1$, with $\hat\Upsilon_2 = \tfrac12(ie_1 + e_2)$; the pair satisfies the matrix-unit relations $\hat\Upsilon_1\hat\Upsilon_2 = \tilde\Pi_+$, $\hat\Upsilon_2\hat\Upsilon_1 = \tilde\Pi_-$, $\hat\Upsilon_1^2 = \hat\Upsilon_2^2 = 0$.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $\vec\Upsilon_1$, with $\vec\Upsilon_2 = \tfrac12(ie_1 + e_2)$; the pair satisfies the matrix-unit relations $\vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_+$, $\vec\Upsilon_2\vec\Upsilon_1 = \tilde\Pi_-$, $\vec\Upsilon_1^2 = \vec\Upsilon_2^2 = 0$.
 
 **The two-sided ideals are not among them.** Since $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, its only two-sided ideals are $0$ and $\mathbb{B}$; the columns are one-sided. That is what allows the algebra to be simple and still carry two distinct chiralities, and it is why the mass term must be off-diagonal rather than a multiplication confined to a single column.
 
-The pair $\tilde\Pi_\pm$ used here is not the only one: every unit vector $\hat u$ gives the idempotent pair $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$, and $\tilde\Pi_\pm = \tilde\Pi_{1,2}(\hat e_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde\Pi_1(\hat e_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
+The pair $\tilde\Pi_\pm$ used here is not the only one: every unit vector $\vec u$ gives the idempotent pair $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0 \pm i\vec u)$, and $\tilde\Pi_\pm = \tilde\Pi_{1,2}(\vec u_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde\Pi_1(\vec u_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
 
 ## The Conjugations in Matrix Form
 
@@ -453,7 +453,7 @@ $$
 \quad\text{for}\quad M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}.
 $$
 
-Quaternion conjugation is therefore the classical adjoint, and the identity $\tilde{Q}\tilde{Q}^{\natural} = N(\tilde{Q})e_0$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)\,\mathsf{M}_2(e_0)$. The other two are the operations a physicist expects: ${}^{*}$ is the conjugate transpose, so its fixed points are the Hermitian matrices, and $\flat = -{}^{*}$ has the anti-Hermitian matrices as its fixed points. The real structure $\flat$, which the corpus uses for the $\mathbb{M}_\pm$ split and for Majorana-type pairings, is the negative conjugate transpose.
+Quaternion conjugation is therefore the classical adjoint, and the identity $\tilde{Q}\tilde{Q}^{\natural} = \langle\tilde{Q}\rangle_{\natural}e_0$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)\,\mathsf{M}_2(e_0)$. The other two are the operations a physicist expects: ${}^{*}$ is the conjugate transpose, so its fixed points are the Hermitian matrices, and $\flat = -{}^{*}$ has the anti-Hermitian matrices as its fixed points. The real structure $\flat$, which the corpus uses for the $\mathbb{M}_\pm$ split and for Majorana-type pairings, is the negative conjugate transpose.
 
 **Complex conjugation is the one that does not act entrywise.** It is sometimes said that $\tilde{Q}^*$ conjugates the entries of the matrix. That is not true, and the reason is structural: the representation is built with the same $i$ that conjugates the coefficients, so the two operations compete. Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ sends $\mathsf{M}_2(e_1) \mapsto -\mathsf{M}_2(e_1)$ and $\mathsf{M}_2(e_3) \mapsto -\mathsf{M}_2(e_3)$ — the images of $e_1$ and $e_3$ to their negatives — while the image of $e_2$ is left alone; the entrywise operation is therefore not $\mathsf{M}_2(\tilde{Q}^*)$, and it is not the image of any involution of the algebra. The correct correspondence is the one in the table,
 
@@ -479,10 +479,10 @@ The symmetric part of a product is the half-sum of its word and of the word with
 **The four forms are four traces.** The four products are four matrix traces, and the four forms of the algebra are read from them:
 
 $$
-\tfrac12\operatorname{Tr}(XY)=B(\tilde P,\tilde Q),\qquad
-\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N(\tilde P,\tilde Q),\qquad
-\tfrac12\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
-\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K(\tilde P,\tilde Q),
+\tfrac12\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=\langle\tilde P,\tilde Q\rangle_{\natural},\qquad
+\tfrac12\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*},
 $$
 
 the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear form, in the two slots the table of the words prescribes. The adjugate is quaternion conjugation and the dagger is Hermitian conjugation, so in the two slots the four words are the two conjugations switched on and off, and the four forms are one trace read four times.
@@ -502,11 +502,11 @@ which are the Hermitian spin matrices. The eigenvalue statement $\tilde{S}_k^2 =
 **States as projectors.** The rank-one idempotents of $\mathbb{M}_+$ are the pure-state projectors. The element
 
 $$
-\tilde\Pi_1(\hat e_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+\tilde\Pi_1(\vec u_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
 = \tfrac{1}{2}\big(\mathsf{M}_2(e_0) + \mathsf{M}_2(ie_1)\big)
 $$
 
-satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde\Pi_2(\hat e_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde\Pi_1(\hat e_1) + \tilde\Pi_2(\hat e_1) = e_0$ is $\mathsf{M}_2(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\mathsf{M}_2(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
+satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde\Pi_2(\vec u_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde\Pi_1(\vec u_1) + \tilde\Pi_2(\vec u_1) = e_0$ is $\mathsf{M}_2(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\mathsf{M}_2(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 **The density matrix.** A general mixed state is
 
@@ -524,7 +524,7 @@ verified for all three components. The purity condition $\mathrm{Tr}(\rho^2) = 1
 
 ## The Groups
 
-The multiplicative group of the algebra has a matrix image with a standard name. An element of unit norm, $N(\tilde{Q}) = e_0$, has
+The multiplicative group of the algebra has a matrix image with a standard name. An element of unit norm, $\langle\tilde{Q}\rangle_{\natural} = e_0$, has
 
 $$
 \det \mathsf{M}_2(\tilde{Q}) = 1,
@@ -533,13 +533,13 @@ $$
 so the unit-norm biquaternions map into the special linear group,
 
 $$
-\{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) = e_0\} \;\cong\; \mathrm{SL}(2,\mathbb{C}).
+\{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} = e_0\} \;\cong\; \mathrm{SL}(2,\mathbb{C}).
 $$
 
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
-\tilde{R}(\theta, \hat u) = \exp\!\big(\tfrac{1}{2}\theta \hat u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(e_k)\big),
+\tilde{R}(\theta, \vec u) = \exp\!\big(\tfrac{1}{2}\theta \vec u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(e_k)\big),
 $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.
@@ -558,7 +558,7 @@ The limitation is equally clear. The matrix form is a representation of the **co
 
 The isomorphism reads as the dictionary of the framework: the trace is the scalar part and the determinant the biquaternion norm, so the interval and the mass are the trace and the determinant of one $2\times2$ complex matrix. Read on the states, the Hermitian matrices are the observables and the determinant is the positivity test, so the same two matrix invariants carry the framework's metric and its state condition. Read on the conjugations, the matrix image of a conjugation is a matrix conjugation, which is why the four forms can be computed in the smallest representation that carries them.
 
-The determinant is read as a **volume**: $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the **volume-preserving** group, and a general element is a four-volume element its determinant measures. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.
+The determinant is read as a **volume**: $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the **volume-preserving** group, and a general element is a four-volume element its determinant measures. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.
 
 Read as a **phase fibre**, the unit spinors of the representation are the three-sphere over the Bloch sphere, and the $U(1)$ that fixes a state's ray is the central phase, so the phase of the framework is a fibre over the state space and its holonomy is the geometric phase. Boundary: the bundle, the invariant and the phase are owned by *The Hopf Fibration and the Biquaternion Gauge Bundle* and by *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; the reading records the smallest matrix image of the fibre and adds no topology.
 
@@ -567,13 +567,13 @@ Read as a **phase fibre**, the unit spinors of the representation are the three-
 The matrix representation of the biquaternion algebra is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ given by $\mathsf{M}_2(e_0) = I_2$ and the three basis matrices asserted above, with $\mathsf{M}_2(i) = i\,\mathsf{M}_2(e_0)$ on the central scalar. The images of the Hermitian units, $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$, are the three Hermitian basis matrices named in the remark above.
 
 - The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
-- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.
+- The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.
 - The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\mathsf{M}_2(e_0)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\vec x')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \vec x^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
-- The minimal left ideals are the matrix **columns**: $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\hat\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
+- The minimal left ideals are the matrix **columns**: $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\vec\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
-- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_{1,2}(\hat u)$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ on the Bloch ball.
+- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_{1,2}(\vec u)$ and are the null elements $\langle\tilde{P}\rangle_{\natural} = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ on the Bloch ball.
 - Unit norm is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
-- The form and the four products are traces. The trace pairing is $B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of signature $(4,4)$ on the eight real coordinates, isotropic on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$, with automorphism group $O_4(\mathbb{C})$ and the real forms $O(4)$, $O(1,3)$ and $O(4,4)$. The four products are the four words $XY$, $\operatorname{adj}X\,Y$, $XY^{\dagger}$ and $\operatorname{adj}X\,Y^{\dagger}$ in the matrix and its adjugate and dagger, and the four forms are the four half-traces $B$, $N$, $H$ and $K$ in those words.
+- The form and the four products are traces. The trace pairing is $\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of signature $(4,4)$ on the eight real coordinates, isotropic on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$, with automorphism group $O_4(\mathbb{C})$ and the real forms $O(4)$, $O(1,3)$ and $O(4,4)$. The four products are the four words $XY$, $\operatorname{adj}X\,Y$, $XY^{\dagger}$ and $\operatorname{adj}X\,Y^{\dagger}$ in the matrix and its adjugate and dagger, and the four forms are the four half-traces $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ in those words.
 
 ## Summary of Notation
 
@@ -588,7 +588,7 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\epsilon=i\sigma_2=\mathsf{M}_2(-e_2)$ | the matrix of the conjugate-reflection of the quaternion subspace |
 | $\tilde{Q} \mapsto \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3\end{pmatrix}$ | Image of a general biquaternion |
 | $\mathrm{Tr}(\tilde{Q}) = 2Q_0$ | Trace is twice the scalar part |
-| $\det(\tilde{Q}) = N(\tilde{Q})$ | Determinant is the biquaternion norm |
+| $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$ | Determinant is the biquaternion norm |
 | $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ | Rank-one form of a nonzero null element: the columns $u = (\alpha,\beta)^{T}$ and $v = (\gamma,\delta)^{T}$ are nonzero and determined up to $(\lambda u,\lambda^{-1}v)$ |
 | $\tilde{Q}^{\natural} \mapsto \mathrm{adj}\,M = \epsilon M^{\mathsf T}\epsilon^{-1}$ | Quaternion conjugation is the adjugate |
 | $\tilde{Q}^* \mapsto \epsilon\overline{M}\epsilon^{-1}$ | Complex conjugation, dressed by $\epsilon$ |
@@ -603,17 +603,17 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \vec x$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \vec x^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
 | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part |
 | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
-| $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_{1,2}(\hat e_3)$ | Idempotents generating the two minimal left ideals; $\mathsf{M}_2(\tilde\Pi_\pm) = E_{11}, E_{22}$ |
-| $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
+| $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_{1,2}(\vec u_3)$ | Idempotents generating the two minimal left ideals; $\mathsf{M}_2(\tilde\Pi_\pm) = E_{11}, E_{22}$ |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0 \pm i\vec u)$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $\langle\tilde{P}\rangle_{\natural} = 0$ |
 | $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The two matrix **columns**, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ |
-| $\hat\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $\hat\Upsilon_1$, its conjugate $\hat\Upsilon_2$ |
+| $\vec\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $\vec\Upsilon_1$, its conjugate $\vec\Upsilon_2$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin operators; the images $\tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$ are Hermitian |
 | $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ | Density matrix; Bloch vector $\vec r$, $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Image of the unit-norm biquaternions |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $B(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form as a half-trace in the model, $X=\mathsf{M}_2(\tilde P)$, $Y=\mathsf{M}_2(\tilde Q)$; signature $(4,4)$ on the eight real coordinates |
+| $\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form as a half-trace in the model, $X=\mathsf{M}_2(\tilde P)$, $Y=\mathsf{M}_2(\tilde Q)$; signature $(4,4)$ on the eight real coordinates |
 | $\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N$, $\tfrac12\operatorname{Tr}(XY^{\dagger})=H$, $\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K$ | the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form as half-traces, in the words the table prescribes |
 | $\operatorname{adj}X=M^{\natural}$, $Y^{\dagger}=M^{*}$ | the adjugate is quaternion conjugation and the dagger is Hermitian conjugation, the two involutions the four words are built from |
 | $O_4(\mathbb{C})$, $O(4)$, $O(1,3)$, $O(4,4)$ | the automorphism group of the trace pairing over $\mathbb{C}$, of complex dimension $6$, and its real forms cut out by the Hermitian and the coefficient conjugations, with the $O(4,4)$ of the realified form |

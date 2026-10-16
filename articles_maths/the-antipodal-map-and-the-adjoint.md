@@ -69,10 +69,10 @@ $$
 **Definition.** The **cup-product pairing** on the cohomology of the sphere, with coefficients in a commutative ring $R$, is
 
 $$
-b : H^{*}(S^{n};R) \times H^{*}(S^{n};R) \longrightarrow R, \qquad b(u,v) = \langle u \cup v, [S^{n}]\rangle,
+b : H^{*}(S^{n};R) \times H^{*}(S^{n};R) \longrightarrow R, \qquad \mathfrak{b}(u,v) = \langle u \cup v, [S^{n}]\rangle,
 $$
 
-the evaluation of the cup product on the fundamental class; it is nondegenerate in the sense of Poincaré duality, and it vanishes unless the degrees of $u$ and $v$ sum to $n$. On the middle group $H^{n}(S^{n};R)$ it is the symmetric form $b(u,v) = u_{n}$-coefficient of $u \cup v$, and it is $\varepsilon$-symmetric with the graded sign $\varepsilon = (-1)^{n}$: symmetric in the even dimensions and alternating in the odd dimensions.
+the evaluation of the cup product on the fundamental class; it is nondegenerate in the sense of Poincaré duality, and it vanishes unless the degrees of $u$ and $v$ sum to $n$. On the middle group $H^{n}(S^{n};R)$ it is the symmetric form $\mathfrak{b}(u,v) = u_{n}$-coefficient of $u \cup v$, and it is $\varepsilon$-symmetric with the graded sign $\varepsilon = (-1)^{n}$: symmetric in the even dimensions and alternating in the odd dimensions.
 
 **Proof.** The cup product is graded-commutative, $u \cup v = (-1)^{|u||v|}v \cup u$, so the pairing is symmetric when both degrees are even and alternating when both are odd; the only nonzero case for the sphere has $|u| = |v| = n$ in the middle, giving the stated sign. The nondegeneracy is Poincaré duality of the sphere, *Poincaré Duality*.
 
@@ -81,7 +81,7 @@ the evaluation of the cup product on the fundamental class; it is nondegenerate 
 **Theorem.** The antipodal operator scales the cup-product pairing by its degree:
 
 $$
-b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, b(u,v) \qquad (u, v \in H^{*}(S^{n};R)).
+b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, \mathfrak{b}(u,v) \qquad (u, v \in H^{*}(S^{n};R)).
 $$
 
 Consequently the adjoint of the antipodal operator with respect to the pairing is the same operator multiplied by that scalar,
@@ -95,20 +95,20 @@ so that the antipodal operator is **self-adjoint** in the odd dimensions and **s
 **Proof.** The antipodal operator is a ring homomorphism, so $\alpha^{*}(u\cup v) = \alpha^{*}u \cup \alpha^{*}v$; naturality of the evaluation gives
 
 $$
-b(\alpha^{*}u,\alpha^{*}v) = \langle \alpha^{*}(u\cup v),[S^{n}]\rangle = \langle u\cup v, \alpha_{*}[S^{n}]\rangle = (-1)^{n+1}b(u,v),
+b(\alpha^{*}u,\alpha^{*}v) = \langle \alpha^{*}(u\cup v),[S^{n}]\rangle = \langle u\cup v, \alpha_{*}[S^{n}]\rangle = (-1)^{n+1}\mathfrak{b}(u,v),
 $$
 
 using $\alpha_{*}[S^{n}] = (-1)^{n+1}[S^{n}]$ of the corollary. For the adjoint, the defining relation of the adjoint operator and the fact that $\alpha^{*}$ is an involution give
 
 $$
-b(\alpha^{*}u, v) = (-1)^{n+1}b(u,\alpha^{*}v),
+b(\alpha^{*}u, v) = (-1)^{n+1}\mathfrak{b}(u,\alpha^{*}v),
 $$
 
 because $v = \alpha^{*}\alpha^{*}v$ and the isometry-up-to-sign relation applies to the pair $(u,\alpha^{*}v)$; hence $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$. The self-adjoint and the skew-adjoint statements are the two cases of the sign, and the invariance and anti-invariance are the two cases of the displayed scaling.
 
-**Corollary.** The pairing defined by the antipodal operator through the adjoint is the scaled pairing $b_{\alpha}(u,v) = b(\alpha^{*}u,v) = (-1)^{n+1}b(u,\alpha^{*}v)$; it is symmetric in the even dimensions and skew-symmetric in the odd dimensions, and it is nondegenerate exactly when the cup-product pairing is, since $\alpha^{*}$ is an invertible operator.
+**Corollary.** The pairing defined by the antipodal operator through the adjoint is the scaled pairing $b_{\alpha}(u,v) = b(\alpha^{*}u,v) = (-1)^{n+1}\mathfrak{b}(u,\alpha^{*}v)$; it is symmetric in the even dimensions and skew-symmetric in the odd dimensions, and it is nondegenerate exactly when the cup-product pairing is, since $\alpha^{*}$ is an invertible operator.
 
-**Proof.** The displayed identity is the definition of $b_{\alpha}$ read through the adjoint. For the symmetry, the defining relation of the adjoint and the graded symmetry of $b$ give $b_{\alpha}(u,v) = (-1)^{n+1}b(u,\alpha^{*}v) = (-1)^{n+1}\cdot(-1)^{n}b(\alpha^{*}v,u) = (-1)^{n}b_{\alpha}(v,u)$, since $\alpha^{*}$ is an involution and $b(\alpha^{*}v,u) = b_{\alpha}(v,u)$; hence the symmetry sign of $b_{\alpha}$ is $(-1)^{n}$, as stated. Nondegeneracy is preserved by the invertible operator $\alpha^{*}$.
+**Proof.** The displayed identity is the definition of $b_{\alpha}$ read through the adjoint. For the symmetry, the defining relation of the adjoint and the graded symmetry of $\mathfrak{b}$ give $b_{\alpha}(u,v) = (-1)^{n+1}\mathfrak{b}(u,\alpha^{*}v) = (-1)^{n+1}\cdot(-1)^{n}b(\alpha^{*}v,u) = (-1)^{n}b_{\alpha}(v,u)$, since $\alpha^{*}$ is an involution and $b(\alpha^{*}v,u) = b_{\alpha}(v,u)$; hence the symmetry sign of $b_{\alpha}$ is $(-1)^{n}$, as stated. Nondegeneracy is preserved by the invertible operator $\alpha^{*}$.
 
 ## The Fixed Part of the Antipodal Operator
 
@@ -139,9 +139,9 @@ The antipodal map is a free involution of the sphere, the orbit map is the unive
 | $\alpha^{*}$ | The antipodal operator on $H^{*}(S^{n};R)$ |
 | $\deg(\alpha) = (-1)^{n+1}$ | The degree of the antipodal map |
 | $\alpha_{*}[S^{n}] = (-1)^{n+1}[S^{n}]$ | The action on the fundamental class |
-| $b(u,v) = \langle u\cup v,[S^{n}]\rangle$ | The cup-product (intersection) pairing |
+| $\mathfrak{b}(u,v) = \langle u\cup v,[S^{n}]\rangle$ | The cup-product (intersection) pairing |
 | $\varepsilon = (-1)^{n}$ | The symmetry sign of the middle pairing |
-| $b(\alpha^{*}u,\alpha^{*}v) = (-1)^{n+1}b(u,v)$ | The scaling of the pairing by the degree |
+| $b(\alpha^{*}u,\alpha^{*}v) = (-1)^{n+1}\mathfrak{b}(u,v)$ | The scaling of the pairing by the degree |
 | $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$ | The adjoint of the antipodal operator |
 | self-adjoint / skew-adjoint | Odd dimensions / even dimensions |
 | $b_{\alpha}(u,v) = b(\alpha^{*}u,v)$ | The pairing defined by the antipodal operator |

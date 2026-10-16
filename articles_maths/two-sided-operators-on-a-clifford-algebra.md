@@ -7,16 +7,16 @@ Every operator used in the geometric layer of a Clifford algebra dresses an elem
 
 The family has five members, indexed by the right factor: the **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$, both defined on the units; the **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,x^{\natural}$, both defined on the whole algebra; and the **Hermitian sandwich** $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.
 
-The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$ are from the same entry and from *Clifford Algebras in Finite Dimensions*; the Clifford group $\Gamma(V,q)$, the Clifford norm $N(x)=x x^{\natural}$ and the signed inner conjugation action are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger, its involution of the base and the Hermitian sandwich are from *Hilbert Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
+The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$ are from the same entry and from *Clifford Algebras in Finite Dimensions*; the Clifford group $\Gamma(V,\mathfrak{Q})$, the Clifford norm $N(x)=x x^{\natural}$ and the signed inner conjugation action are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger, its involution of the base and the Hermitian sandwich are from *Hilbert Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
 
 ## The General Operator
 
 ### Definition
 
-**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,q)$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,q)$ the **two-sided operator** attached to the pair $(\theta,c)$ is the map
+**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **two-sided operator** attached to the pair $(\theta,c)$ is the map
 
 $$
-\Phi^{\theta,c}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x).
+\Phi^{\theta,c}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x).
 $$
 
 The left factor carries the element and the right factor carries its conjugate. The pairing of the two factors is what makes the family closed under composition.
@@ -31,7 +31,7 @@ Every member of the family is thus the product of a left translation and a right
 
 ### Multiplicativity
 
-**Proposition.** Let $\theta$ be an automorphism and $c$ an anti-automorphism. Then $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ for all $x,z\in\mathrm{Cl}(V,q)$.
+**Proposition.** Let $\theta$ be an automorphism and $c$ an anti-automorphism. Then $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ for all $x,z\in\mathrm{Cl}(V,\mathfrak{Q})$.
 
 **Proof.** Evaluating the composition on $y$ and using the two defining properties of the pair,
 
@@ -39,7 +39,7 @@ $$
 \Phi^{\theta,c}_x\bigl(\Phi^{\theta,c}_z(y)\bigr)=\theta(x)\bigl(\theta(z)\,y\,c(z)\bigr)c(x)=\theta(xz)\,y\,\bigl(c(z)c(x)\bigr)=\theta(xz)\,y\,c(xz).
 $$
 
-**Remark.** The assignment $x\mapsto\Phi^{\theta,c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,q)$ to the endomorphisms of $\mathrm{Cl}(V,q)$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.
+**Remark.** The assignment $x\mapsto\Phi^{\theta,c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.
 
 ### The Value at the Unit
 
@@ -86,7 +86,7 @@ The two members with the inverse to the right are the ones that act on the quadr
 
 The **inner conjugation** $y\mapsto x\,y\,x^{-1}$ is defined on the unit group and is the conjugation by $x$. On the even units it acts on the vectors as a rotation, and on the whole algebra it is the inner automorphism attached to $x$.
 
-The **signed inner conjugation** $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on the unit group and differs from the inner conjugation by the grade involution in the left factor. On a vector $u$ with $q(u)\neq0$ it reproduces the reflection $\rho_u(v)=v-2B(v,u)q(u)^{-1}u=-uvu^{-1}$, and the elements $x$ for which it preserves the space of vectors are by definition the elements of the Clifford group $\Gamma(V,q)$.
+The **signed inner conjugation** $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on the unit group and differs from the inner conjugation by the grade involution in the left factor. On a vector $u$ with $\mathfrak{Q}(u)\neq0$ it reproduces the reflection $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u=-uvu^{-1}$, and the elements $x$ for which it preserves the space of vectors are by definition the elements of the Clifford group $\Gamma(V,\mathfrak{Q})$.
 
 **Remark.** The two differ exactly on the odd part: for even $x$ the factors $\alpha(x)$ and $x$ coincide, and the two operators agree. This is why a rotation, carried by an even element, is described by either one, while a reflection, carried by an odd element, requires the graded form.
 
@@ -128,13 +128,13 @@ For the signed inner conjugation this condition is the definition of the Cliffor
 
 ### The Scaling by the Norm
 
-**Proposition.** Let $x\in\Gamma(V,q)$ and let $N(x)=x x^{\natural}$ be its Clifford norm. Then $x^{\natural}=N(x)\,x^{-1}$ and
+**Proposition.** Let $x\in\Gamma(V,\mathfrak{Q})$ and let $N(x)=x x^{\natural}$ be its Clifford norm. Then $x^{\natural}=N(x)\,x^{-1}$ and
 
 $$
 x\,y\,x^{\natural}=N(x)\,\bigl(x\,y\,x^{-1}\bigr)
 $$
 
-for every $y\in\mathrm{Cl}(V,q)$. The conjugation sandwich on $\Gamma$ is thus the inner conjugation scaled by the norm.
+for every $y\in\mathrm{Cl}(V,\mathfrak{Q})$. The conjugation sandwich on $\Gamma$ is thus the inner conjugation scaled by the norm.
 
 **Proof.** The norm of an element of $\Gamma$ is a scalar, so $x x^{\natural}=N(x)$, and multiplication on the right by $x^{-1}$ gives $x^{\natural}=N(x)\,x^{-1}$. Substituting this expression for $x^{\natural}$ and moving the scalar $N(x)$ to the front gives the identity.
 
@@ -189,7 +189,7 @@ The members differ at the unit by a parity sign and a norm: the inner conjugatio
 
 | Symbol | Meaning |
 |---|---|
-| $\theta$ | Automorphism of $\mathrm{Cl}(V,q)$, the left factor's map |
+| $\theta$ | Automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$, the left factor's map |
 | $c$ | Anti-automorphism, $c(xz)=c(z)c(x)$, $c(1)=1$ |
 | $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$ | Two-sided operator |
 | $L_a$, $R_b$ | Left and right translation, $\Phi^{\theta,c}_x=L_{\theta(x)}R_{c(x)}$ |
@@ -198,7 +198,7 @@ The members differ at the unit by a parity sign and a norm: the inner conjugatio
 | $x\,y\,x^{r}$ | Reversion sandwich, defined for every $x$ |
 | $x\,y\,x^{\natural}$ | Conjugation sandwich, defined for every $x$ |
 | $x\,y\,x^{\dagger}$ | Hermitian sandwich, needs an involution of the base |
-| $\Gamma(V,q)$ | Clifford group, the $x$ with $\Phi_x(V)\subseteq V$ |
+| $\Gamma(V,\mathfrak{Q})$ | Clifford group, the $x$ with $\Phi_x(V)\subseteq V$ |
 | $N(x)=x x^{\natural}$ | Clifford norm, the value of the conjugation sandwich at $1$ |
 | $\rho_u$ | Reflection in $u^{\perp}$, a value of the signed inner conjugation |
 

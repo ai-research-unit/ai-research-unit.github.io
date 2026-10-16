@@ -12,7 +12,7 @@ the four quaternion units $e_0, e_1, e_2, e_3$ kept and the new scalar imaginary
 
 The construction is short and the consequences long. The multiplication $\tilde P \tilde Q$ is $\mathbb{C}$-bilinear, associative and unital, so the complex vector space $\mathbb{B}$ becomes an associative unital $\mathbb{C}$-algebra; a bilinear map is determined by its values on a basis, so the sixteen products of the basis elements carry the whole multiplication, and the table is the quaternion table with the central imaginary admitted only as a coefficient. Once the algebra is in place its scalar structure, its centre, its generators, its presentation by relations, its conjugations and its matrix model are read off in turn. The algebra is central and simple of complex dimension four, hence isomorphic to the matrix algebra $M_2(\mathbb{C})$, and it is not a division algebra: the element $e_0 + ie_1$ is a zero divisor.
 
-**Boundaries.** The multiplication is the **general plain bilinear product**; it is not developed here. The four general products the same space carries, with their forms and their algebraic norms, are *The Four Products, Their Forms and Their Algebraic Norms*, and the general plain bilinear product is developed one product among four in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The elements, the basis and the conjugation formulas are *Biquaternions as a Vector Space over $\mathbb{C}$*; the conjugations as a group, its Cayley table and the place of the anti-Hermitian conjugation are *The Group of Involutions*. The invertibility criterion and the group of units are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the Biquaternion Algebra*; the simplicity and the two-sided ideals read here as cited are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the modules are *Modules over the Biquaternion Algebra*; the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the real reading is *The Realification and the Effect of the Change of Scalars*. The general theory is *Algebras: A General Introduction*, *Associative Algebras*, *Unital Algebras*, *Tensor Products of Algebras*, *Quotients of the Tensor Algebra* and *Opposite Algebras and Anti-Isomorphisms*.
+**Boundaries.** The multiplication is the **general plain bilinear product**; it is not developed here. The four general products the same space carries, with their forms and their algebraic norms, are *The Four Products, Their Forms and Their Algebraic Norms*, and the general plain bilinear product is developed one product among four in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. The elements, the basis and the conjugation formulas are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; the conjugations as a group, its Cayley table and the place of the anti-Hermitian conjugation are *The Group of Involutions*. The invertibility criterion and the group of units are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of the Biquaternion Algebra*; the simplicity and the two-sided ideals read here as cited are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the modules are *Modules over the Biquaternion Algebra*; the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the real reading is *The Realification and the Effect of the Change of Scalars*. The general theory is *Algebras: A General Introduction*, *Associative Algebras*, *Unital Algebras*, *Tensor Products of Algebras*, *Quotients of the Tensor Algebra* and *Opposite Algebras and Anti-Isomorphisms*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0, e_1, e_2, e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0 e_0 + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_k e_k$ the **vector part**, and a coefficient splits as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$. The sign vector of the natural conjugation is $\varepsilon = (1, -1, -1, -1)$, and $(\vec P, \vec Q) = \sum_{k=1}^{3} P_k Q_k$ is the complex bilinear dot product of the vector parts.
 
@@ -54,7 +54,7 @@ $$
 \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu = Q_0 e_0 + \vec Q , \qquad Q_\mu = q_\mu + i q'_\mu \in \mathbb{C} ,
 $$
 
-the **scalar part** $Q_0 e_0$ and the **vector part** $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of *Biquaternions as a Vector Space over $\mathbb{C}$*.
+the **scalar part** $Q_0 e_0$ and the **vector part** $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
 
 ### The Scalar–Vector Split and the Two Products of Vector Parts
 
@@ -78,7 +78,7 @@ $$
 (\tilde P, \tilde Q) \longmapsto \tilde P \tilde Q = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} P_\mu Q_\nu \, e_\mu e_\nu ,
 $$
 
-the general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0, \dots, e_3$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
+the general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0, \dots, e_3$: **the rule is a map into $\mathbb{B}$ and is well defined**. On the four coordinates it reads
 
 $$
 \tilde P \tilde Q = (P_0 Q_0 - P_1 Q_1 - P_2 Q_2 - P_3 Q_3)
@@ -95,7 +95,7 @@ $$
 \tilde P \tilde Q = \bigl(P_0 Q_0 - (\vec P, \vec Q)\bigr) + P_0 \vec Q + Q_0 \vec P + \vec P \times \vec Q ,
 $$
 
-the display being the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde P \tilde Q) = \sum_{\mu=0}^{3} \varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1, -1, -1, -1)$.
+the display being the one of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde P \tilde Q) = \sum_{\mu=0}^{3} \varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1, -1, -1, -1)$.
 
 ### The Multiplication Table
 
@@ -346,20 +346,20 @@ $$
 \tilde Q \tilde Q^{\natural} = \tilde Q^{\natural} \tilde Q = \Bigl(\sum_{\mu=0}^{3} Q_\mu^2\Bigr) e_0 .
 $$
 
-The scalar $\sum_\mu Q_\mu^2$ is the **reduced norm** $N(\tilde Q)$, and it is the determinant in the matrix model,
+The scalar $\sum_\mu Q_\mu^2$ is the **reduced norm** $\langle\tilde Q\rangle_{\natural}$, and it is the determinant in the matrix model,
 
 $$
-N(\tilde Q) = \sum_{\mu=0}^{3} Q_\mu^2 = \det\bigl(\rho(\tilde Q)\bigr) , \qquad
+\langle\tilde Q\rangle_{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 = \det\bigl(\rho(\tilde Q)\bigr) , \qquad
 \rho(\tilde Q) = \begin{pmatrix} Q_0 + iQ_3 & Q_1 + iQ_2 \\ -Q_1 + iQ_2 & Q_0 - iQ_3 \end{pmatrix} .
 $$
 
-**Theorem.** The reduced norm is multiplicative, $N(\tilde P \tilde Q) = N(\tilde P)N(\tilde Q)$, and an element $\tilde Q$ is invertible if and only if $N(\tilde Q) \neq 0$; then $\tilde Q^{-1} = \tilde Q^{\natural}/N(\tilde Q)$. A nonzero element is a zero divisor exactly when $N(\tilde Q) = 0$.
+**Theorem.** The reduced norm is multiplicative, $\langle\tilde P \tilde Q\rangle_{\natural} = \langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and an element $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural} \neq 0$; then $\tilde Q^{-1} = \tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. A nonzero element is a zero divisor exactly when $\langle\tilde Q\rangle_{\natural} = 0$.
 
 **Proof.** The determinant is multiplicative, and the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ transfers both statements: a matrix is invertible exactly when its determinant is nonzero, and a nonzero matrix of zero determinant is a zero divisor. The inverse formula is the natural-conjugate product divided by its scalar value.
 
-**Corollary.** The reduced norm vanishes on the **zero-divisor cone** $\mathcal N = \{\tilde Q \neq 0 : N(\tilde Q) = 0\}$, and the invertible elements form the group of units $\mathbb{B}^{\times} = \{\tilde Q : N(\tilde Q) \neq 0\}$, of structure *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
+**Corollary.** The reduced norm vanishes on the **zero-divisor cone** $\mathcal N = \{\tilde Q \neq 0 : \langle\tilde Q\rangle_{\natural} = 0\}$, and the invertible elements form the group of units $\mathbb{B}^{\times} = \{\tilde Q : \langle\tilde Q\rangle_{\natural} \neq 0\}$, of structure *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
 
-The reduced norm is the algebraic norm of the **general quaternionic product** $\tilde P^{\natural}\tilde Q$ and not of the plain product: the algebraic norm of the plain product is $B(\tilde Q) = \sum_\mu \varepsilon_\mu Q_\mu^2$, a different function on the same space, and the units of the plain product are read from the norm of the other. The separation, and the names of the two, are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*.
+The reduced norm is the algebraic norm of the **general quaternionic product** $\tilde P^{\natural}\tilde Q$ and not of the plain product: the algebraic norm of the plain product is $\langle\tilde Q\rangle = \sum_\mu \varepsilon_\mu Q_\mu^2$, a different function on the same space, and the units of the plain product are read from the norm of the other. The separation, and the names of the two, are *Norm and Invertibility in the Biquaternion Algebra* and *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## The Subalgebra Generated by One Element
 
@@ -375,7 +375,7 @@ A unital subalgebra contains the identity $e_0$ and hence every $\mathbb{C}$-mul
 
 ## Summary
 
-The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_0, e_1, e_2, e_3$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear, associative and unital; it is determined by the sixteen products of the four basis elements.
+The biquaternion algebra is the complexification $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the real quaternions: the four-dimensional complex space on $e_0, e_1, e_2, e_3$, with the quaternion multiplication table unchanged and the complex unit $i$ central, so that $i$ is a coefficient and never a factor. The general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear, associative and unital; it is determined by the sixteen products of the four basis elements.
 
 $$
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
@@ -383,7 +383,7 @@ $$
 
 Its scalars enter through the structure map $\varphi(A) = Ae_0$, whose image is the scalar line and which is central; the algebra is the complexification of $\mathbb{H}$ by the tensor product of algebras; its centre is the scalar line, so it is central and simple, hence central simple; and it is not a division algebra, the product of $e_0 + ie_1$ and $e_0 - ie_1$ being zero. Two generators suffice, and the relations $e_1^2 = e_2^2 = -e_0$ and $e_1 e_2 + e_2 e_1 = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-Central simplicity and dimension four force the classification: $\mathbb{B} \cong M_2(\mathbb{C})$. The reduced norm $N(\tilde Q) = \sum_\mu Q_\mu^2$, the determinant in the model, is multiplicative and decides both invertibility and the zero divisors: $\tilde Q$ is invertible exactly when $N(\tilde Q) \neq 0$. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — carry the natural one as the unique $\mathbb{C}$-linear one and give the Klein four-group on the first four, and their fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
+Central simplicity and dimension four force the classification: $\mathbb{B} \cong M_2(\mathbb{C})$. The reduced norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, the determinant in the model, is multiplicative and decides both invertibility and the zero divisors: $\tilde Q$ is invertible exactly when $\langle\tilde Q\rangle_{\natural} \neq 0$. The four conjugations — the identity, the natural $\natural$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}$, with the anti-Hermitian $\flat = -{}^{*}$ beside them — carry the natural one as the unique $\mathbb{C}$-linear one and give the Klein four-group on the first four, and their fixed spaces are the six remarkable subspaces. The subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q, \vec Q) \neq 0$ and the dual numbers when $(\vec Q, \vec Q) = 0$.
 
 | Property | Value for $\mathbb{B}$ |
 |---|---|
@@ -394,8 +394,8 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 | Conjugations | $\{\mathrm{id}, \natural, \bar{\cdot}, {}^{*}\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2$, with $\flat = -{}^{*}$ outside |
 | Classification | $\mathbb{B} \cong M_2(\mathbb{C})$, central simple of degree $2$ |
 | Division algebra | no; with $e_0 + ie_1$ a zero divisor |
-| Reduced norm | $N(\tilde Q) = \sum_\mu Q_\mu^2$, multiplicative, $\det$ in $M_2(\mathbb{C})$ |
-| Invertibility | $N(\tilde Q) \neq 0$; zero divisor iff $N(\tilde Q) = 0$, $\tilde Q \neq 0$ |
+| Reduced norm | $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, multiplicative, $\det$ in $M_2(\mathbb{C})$ |
+| Invertibility | $\langle\tilde Q\rangle_{\natural} \neq 0$; zero divisor iff $\langle\tilde Q\rangle_{\natural} = 0$, $\tilde Q \neq 0$ |
 | General products | four: $\tilde P \tilde Q$, $\tilde P \tilde Q^{*}$, $\tilde P^{\natural} \tilde Q$, $\tilde P^{\natural} \tilde Q^{*}$ |
 
 ## Summary of Notation
@@ -418,9 +418,9 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 | ${}^{\flat} = -{}^{*}$ | the anti-Hermitian conjugation, outside the Klein group |
 | $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the natural conjugation |
 | $\tilde Q \tilde Q^{\natural} = \bigl(\sum_\mu Q_\mu^2\bigr)e_0$ | the product of an element with its natural conjugate, central and scalar |
-| $N(\tilde Q) = \sum_\mu Q_\mu^2$ | the reduced norm; $\det$ of the $2 \times 2$ model |
+| $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$ | the reduced norm; $\det$ of the $2 \times 2$ model |
 | $\rho$ | the isomorphism $\mathbb{B} \to M_2(\mathbb{C})$ |
-| $\mathcal N$ | the zero-divisor cone, $\{\tilde Q \neq 0 : N(\tilde Q) = 0\}$ |
+| $\mathcal N$ | the zero-divisor cone, $\{\tilde Q \neq 0 : \langle\tilde Q\rangle_{\natural} = 0\}$ |
 
 ## Further Reading
 
@@ -429,8 +429,8 @@ Central simplicity and dimension four force the classification: $\mathbb{B} \con
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
 - *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms.md`), for the four general products the space carries, their forms and their algebraic norms.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
-- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the element, the basis, the three coordinate systems and the conjugation formulas.
+- *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
+- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the element, the basis, the three coordinate systems and the conjugation formulas.
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations, their Cayley table and their orbits.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the reduced norm, the invertibility criterion and the zero-divisor cone.
 - *Ideals and Peirce Decomposition of the Biquaternion Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md`), for the simplicity of $\mathbb{B}$ and the matrix model $M_2(\mathbb{C})$.

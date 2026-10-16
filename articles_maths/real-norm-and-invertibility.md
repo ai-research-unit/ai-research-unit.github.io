@@ -8,10 +8,10 @@ This article studies the norm of the real algebra and the invertibility of its e
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $e_0 = 1$, a general element is $a = a e_0$ with $a \in \mathbb{R}$, the sole involution is the identity $\operatorname{id}$, and the norm is
 
 $$
-N(a) = a\,a = a^2 .
+\langle a\rangle = a\,a = a^2 .
 $$
 
-The same symbol $N$ is used for the real norm $N(a) = a^2$ throughout.
+The same symbol $\langle\cdot\rangle$ is used for the real norm $\langle a\rangle = a^2$ throughout.
 
 ## The Norm
 
@@ -20,29 +20,29 @@ The same symbol $N$ is used for the real norm $N(a) = a^2$ throughout.
 The **norm** of a real number $a$ is
 
 $$
-N(a) = a\,a = a^2 \in \mathbb{R}.
+\langle a\rangle = a\,a = a^2 \in \mathbb{R}.
 $$
 
 **Basic properties.**
 
-- $N(a)$ is a real number, and $N(a) \geq 0$ with equality if and only if $a = 0$. The norm is **positive definite**.
-- $N(a)$ is invariant under the involution: the involution is the identity, so $N(\operatorname{id} a) = N(a)$ holds trivially. There is no central scalar imaginary separate from the algebra.
-- $N$ is an even function, $N(-a) = (-a)^2 = a^2 = N(a)$.
-- $N(a) = 0$ if and only if $a = 0$. There are no nonzero real numbers of vanishing norm; equivalently, the algebra has no zero divisors.
+- $\langle a\rangle$ is a real number, and $\langle a\rangle \geq 0$ with equality if and only if $a = 0$. The norm is **positive definite**.
+- $\langle a\rangle$ is invariant under the involution: the involution is the identity, so $\langle \operatorname{id} a\rangle = \langle a\rangle$ holds trivially. There is no central scalar imaginary separate from the algebra.
+- $\langle\cdot\rangle$ is an even function, $\langle -a\rangle = (-a)^2 = a^2 = \langle a\rangle$.
+- $\langle a\rangle = 0$ if and only if $a = 0$. There are no nonzero real numbers of vanishing norm; equivalently, the algebra has no zero divisors.
 
-The difference from the complex algebra is only in the number of squares: $N(A) = u^2+v^2$ is a sum of two squares, and $N(a) = a^2$ is the single-square base case of that sum.
+The difference from the complex algebra is only in the number of squares: $\langle A\rangle = u^2+v^2$ is a sum of two squares, and $\langle a\rangle = a^2$ is the single-square base case of that sum.
 
 ### Multiplicativity
 
 **Theorem.** The norm is multiplicative:
 
 $$
-N(ab) = N(a)\,N(b).
+\langle ab\rangle = \langle a\rangle\,\langle b\rangle.
 $$
 
-**Proof.** By definition $N(ab) = (ab)^2$, and commutativity and associativity of the real product give $(ab)^2 = abab = a^2b^2 = N(a)N(b)$.
+**Proof.** By definition $\langle ab\rangle = (ab)^2$, and commutativity and associativity of the real product give $(ab)^2 = abab = a^2b^2 = \langle a\rangle\langle b\rangle$.
 
-**Corollary.** If $N(a) \neq 0$ and $N(b) \neq 0$ then $N(ab) \neq 0$. Equivalently, the product of two units is a unit.
+**Corollary.** If $\langle a\rangle \neq 0$ and $\langle b\rangle \neq 0$ then $\langle ab\rangle \neq 0$. Equivalently, the product of two units is a unit.
 
 The multiplicativity is the formal identity $a^2b^2 = (ab)^2$ of any commutative ring, and it is used below to prove the invertibility criterion in one line, exactly as in the complex case. It is also the source of the scale-and-sign decomposition: the norm is the squared scale.
 
@@ -51,7 +51,7 @@ The multiplicativity is the formal identity $a^2b^2 = (ab)^2$ of any commutative
 The name "norm" is not a misnomer here. Define the **modulus**, or absolute value,
 
 $$
-|a| = \sqrt{N(a)} = \sqrt{a^2} \ \geq 0 .
+|a| = \sqrt{\langle a\rangle} = \sqrt{a^2} \ \geq 0 .
 $$
 
 Then $|\cdot|$ satisfies the axioms of a norm on the one-dimensional real vector space $\mathbb{R}$:
@@ -61,14 +61,14 @@ Then $|\cdot|$ satisfies the axioms of a norm on the one-dimensional real vector
 - **Triangle inequality:** $|a + b| \leq |a| + |b|$.
 - **Multiplicativity:** $|ab| = |a|\,|b|$, from the multiplicativity of the norm.
 
-The square root is a strictly non-negative real number with no sign choice and no branch choice, because $N(a) \geq 0$. The modulus is the **Euclidean norm** of the underlying one-dimensional real space, and the audit of the semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a real scalar.
+The square root is a strictly non-negative real number with no sign choice and no branch choice, because $\langle a\rangle \geq 0$. The modulus is the **Euclidean norm** of the underlying one-dimensional real space, and the audit of the semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a real scalar.
 
 ### The Norm from the Real Coordinate
 
 Writing an element as $a = a e_0$ with coordinate $a \in \mathbb{R}$, the norm is the single square
 
 $$
-N(a) = a^2 ,
+\langle a\rangle = a^2 ,
 $$
 
 a positive-definite quadratic form on the coordinate space $\mathbb{R}^1$ of signature $(1,0)$. The one coordinate contributes with a positive sign. In the complex algebra the corresponding expression is the sum of two squares $u^2+v^2$, also of signature $(2,0)$. The real algebra has no second coordinate and no sector on which the sign reverses; the norm is real and definite throughout.
@@ -99,7 +99,7 @@ It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: p
 
 The two forms are related as follows.
 
-- The **norm** $N(a) = a^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the scale (the modulus).
+- The **norm** $\langle a\rangle = a^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the scale (the modulus).
 - The **Hermitian form** $a^2$ is the same expression. It controls the topological structure: the Euclidean norm, the metric topology of $\mathbb{R}$, and completeness.
 
 The **inner product** on $\mathbb{R}$ as a real vector space is
@@ -108,7 +108,7 @@ $$
 \langle a, b \rangle = a\,b = ab,
 $$
 
-symmetric and bilinear, with $\langle a, a \rangle = a^2 = N(a)$. It is real-valued, and its "imaginary part" is identically zero; the complex inner product $\langle c, w \rangle = \bar{c}w$ is complex-valued in general. The real algebra is the case in which the inner product, the Hermitian form and the norm are one and the same real-valued object, and this collapse is the degeneracy of the one-dimensional case.
+symmetric and bilinear, with $\langle a, a \rangle = a^2 = \langle a\rangle$. It is real-valued, and its "imaginary part" is identically zero; the complex inner product $\langle c, w \rangle = \bar{c}w$ is complex-valued in general. The real algebra is the case in which the inner product, the Hermitian form and the norm are one and the same real-valued object, and this collapse is the degeneracy of the one-dimensional case.
 
 ## Invertibility
 
@@ -128,24 +128,24 @@ In a general algebra the notions of left inverse, right inverse and two-sided in
 
 ### Criterion for Invertibility
 
-**Theorem.** A real number $a$ is invertible if and only if $a \neq 0$, equivalently if and only if $N(a) \neq 0$.
+**Theorem.** A real number $a$ is invertible if and only if $a \neq 0$, equivalently if and only if $\langle a\rangle \neq 0$.
 
-**Proof.** If $a \neq 0$ then $N(a) = a^2 > 0$, and the element
+**Proof.** If $a \neq 0$ then $\langle a\rangle = a^2 > 0$, and the element
 
 $$
-b = \frac{a}{N(a)} = \frac{1}{a}
+b = \frac{a}{\langle a\rangle} = \frac{1}{a}
 $$
 
-satisfies $ab = a\cdot\frac{1}{a} = 1$, so $a$ has an inverse. Conversely, if $a$ is invertible then applying the norm to $ab = 1$ and using multiplicativity gives $N(a)N(b) = N(1) = 1$, so $N(a) \neq 0$ and hence $a \neq 0$.
+satisfies $ab = a\cdot\frac{1}{a} = 1$, so $a$ has an inverse. Conversely, if $a$ is invertible then applying the norm to $ab = 1$ and using multiplicativity gives $\langle a\rangle\langle b\rangle = \langle 1\rangle = 1$, so $\langle a\rangle \neq 0$ and hence $a \neq 0$.
 
-The criterion $N(a) \neq 0$ is the general form of the invertibility test of the family; in $\mathbb{R}$ it is equivalent to the elementary statement $a \neq 0$ because the norm is definite.
+The criterion $\langle a\rangle \neq 0$ is the general form of the invertibility test of the family; in $\mathbb{R}$ it is equivalent to the elementary statement $a \neq 0$ because the norm is definite.
 
 ### The Inverse Formula
 
 For $a \neq 0$ the inverse is
 
 $$
-a^{-1} = \frac{1}{N(a)}\,a = \frac{1}{a}.
+a^{-1} = \frac{1}{\langle a\rangle}\,a = \frac{1}{a}.
 $$
 
 **Proof.** The verification is the computation in the first part of the proof of the criterion.
@@ -161,9 +161,9 @@ a^{-1} = \frac{a}{a^2} = \frac{-\tfrac{3}{4}}{\tfrac{9}{16}} = -\tfrac{4}{3}, \q
 b^{-1} = \frac{b}{b^2} = \frac{\tfrac{7}{2}}{\tfrac{49}{4}} = \tfrac{2}{7},
 $$
 
-with the exact verifications $a\,a^{-1} = 1$ and $b\,b^{-1} = 1$; the element $0$ has $N(0) = 0$ and is the only non-unit.
+with the exact verifications $a\,a^{-1} = 1$ and $b\,b^{-1} = 1$; the element $0$ has $\langle 0\rangle = 0$ and is the only non-unit.
 
-| element | $N$ | unit? | inverse |
+| element | $\langle\cdot\rangle$ | unit? | inverse |
 |---|---|---|---|
 | $a = -\tfrac{3}{4}$ | $\tfrac{9}{16}$ | yes | $-\tfrac{4}{3}$ |
 | $b = \tfrac{7}{2}$ | $\tfrac{49}{4}$ | yes | $\tfrac{2}{7}$ |
@@ -176,7 +176,7 @@ with the exact verifications $a\,a^{-1} = 1$ and $b\,b^{-1} = 1$; the element $0
 The **group of units** of $\mathbb{R}$ is the set of invertible elements:
 
 $$
-\mathbb{R}^\times = \{ a \in \mathbb{R} : N(a) \neq 0 \} = \mathbb{R} \setminus \{0\}.
+\mathbb{R}^\times = \{ a \in \mathbb{R} : \langle a\rangle \neq 0 \} = \mathbb{R} \setminus \{0\}.
 $$
 
 It is a group under multiplication with identity $e_0 = 1$.
@@ -222,13 +222,13 @@ An element of a finite-dimensional real algebra of the tensor family is of one o
 
 **Definition.** Let $a \in \mathbb{R}$. Then exactly one of the following holds:
 
-- $N(a) > 0$: $a$ is a **unit**, i.e. an invertible element;
-- $N(a) = 0$ and $a \neq 0$: $a$ is a **zero divisor**;
+- $\langle a\rangle > 0$: $a$ is a **unit**, i.e. an invertible element;
+- $\langle a\rangle = 0$ and $a \neq 0$: $a$ is a **zero divisor**;
 - $a = 0$: $a$ is **zero**.
 
 **Theorem (the classification of $\mathbb{R}$).** The zero-divisor class is empty, so every nonzero real number is a unit and the classification has only two non-empty classes.
 
-**Proof.** $N(a) = a^2 = 0$ forces $a = 0$ because the square of a real number is non-negative, so the only element of vanishing norm is $0$.
+**Proof.** $\langle a\rangle = a^2 = 0$ forces $a = 0$ because the square of a real number is non-negative, so the only element of vanishing norm is $0$.
 
 ### The Sign Trichotomy
 
@@ -236,9 +236,9 @@ The three-way classification refines, in the ordered case, to the **sign trichot
 
 | class | sign | norm | unit? | sign factor |
 |---|---|---|---|---|
-| $a > 0$ | $\operatorname{sgn}a = +1$ | $N(a) = a^2 > 0$ | yes | $+1$ |
-| $a = 0$ | none | $N(a) = 0$ | no | undefined |
-| $a < 0$ | $\operatorname{sgn}a = -1$ | $N(a) = a^2 > 0$ | yes | $-1$ |
+| $a > 0$ | $\operatorname{sgn}a = +1$ | $\langle a\rangle = a^2 > 0$ | yes | $+1$ |
+| $a = 0$ | none | $\langle a\rangle = 0$ | no | undefined |
+| $a < 0$ | $\operatorname{sgn}a = -1$ | $\langle a\rangle = a^2 > 0$ | yes | $-1$ |
 
 The trichotomy is the statement that $\mathbb{R}$ is a **linearly ordered field**: the positive cone $\mathbb{R}_{>0}$ is closed under addition and multiplication, and $\mathbb{R}$ is its disjoint union with $\{0\}$ and $-\mathbb{R}_{>0}$. The sign group $\{\pm1\}$ is the multiplicative quotient $\mathbb{R}^\times/\mathbb{R}_{>0}$, the group of the two components.
 
@@ -270,17 +270,17 @@ $$
 \mathbb{R} = \mathbb{R}_{\mathbb{R}} ,
 $$
 
-with no anti-fixed summand. On the single piece the norm is definite, $N(a) = a^2 \geq 0$, and multiplying by an element preserves it:
+with no anti-fixed summand. On the single piece the norm is definite, $\langle a\rangle = a^2 \geq 0$, and multiplying by an element preserves it:
 
 $$
-N(ab) = N(a)N(b).
+\langle ab\rangle = \langle a\rangle\langle b\rangle.
 $$
 
 This is the degeneracy of the involution decomposition of the real field. In the complex algebra the involution splits $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into two definite pieces of the same signature. Here there is no second subspace, no central scalar imaginary and no sign reversal; the fixed-point decomposition collapses to its single summand, and the norm and the Hermitian form collapse with it.
 
 ## The Base Case of the Norm Series
 
-The norm series of the corpus records, for each algebra of the family, whether its norm is real or complex, definite or indefinite, and what its vanishing locus is. In $\mathbb{R}$ the norm is the single square $N(a) = a^2$, a real positive-definite quadratic form, and its vanishing locus is the single point $\{0\}$:
+The norm series of the corpus records, for each algebra of the family, whether its norm is real or complex, definite or indefinite, and what its vanishing locus is. In $\mathbb{R}$ the norm is the single square $\langle a\rangle = a^2$, a real positive-definite quadratic form, and its vanishing locus is the single point $\{0\}$:
 
 | algebra | norm | value field | definite? | vanishing locus |
 |---|---|---|---|---|
@@ -302,9 +302,9 @@ The norm is real and definite in $\mathbb{R}$ and $\mathbb{C}$, and both are div
 
 ## Summary
 
-The norm of a real number is $N(a) = a^2$, real, positive-definite and multiplicative, $N(ab) = N(a)N(b)$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $|a| = \sqrt{N(a)}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.
+The norm of a real number is $\langle a\rangle = a^2$, real, positive-definite and multiplicative, $\langle ab\rangle = \langle a\rangle\langle b\rangle$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $|a| = \sqrt{\langle a\rangle}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.
 
-A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $a^{-1} = a/N(a) = 1/a$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of units together with zero.
+A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $a^{-1} = a/\langle a\rangle = 1/a$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of units together with zero.
 
 The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $a = |a|\operatorname{sgn}a$. The norm is definite on the whole algebra, and the sign trichotomy $a > 0$, $a = 0$, $a < 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.
 
@@ -315,15 +315,15 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, o
 | $\mathbb{R}$ | the real algebra, the complete ordered field, basis $e_0 = 1$ |
 | $a = a e_0$ | a real number, $a$ its coordinate |
 | $\operatorname{id}$ | the identity involution, the sole involution of $\mathbb{R}$ |
-| $N(a) = a\,a = a^2$ | the norm, real, positive definite, multiplicative |
-| $\lvert a\rvert = \sqrt{N(a)} = \sqrt{a^2}$ | the modulus, the Euclidean norm |
-| $\langle a, b \rangle = ab$ | the real inner product, $\langle a, a \rangle = N(a)$ |
+| $\langle a\rangle = a\,a = a^2$ | the norm, real, positive definite, multiplicative |
+| $\lvert a\rvert = \sqrt{\langle a\rangle} = \sqrt{a^2}$ | the modulus, the Euclidean norm |
+| $\langle a, b \rangle = ab$ | the real inner product, $\langle a, a \rangle = \langle a\rangle$ |
 | $\operatorname{sgn} a = a/\lvert a\rvert$ | the sign of a nonzero $a$, an element of $\{\pm1\}$ |
 | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units |
 | $\mathbb{R}_{>0}, \mathbb{R}_{<0}$ | the positive and negative rays, the two components of $\mathbb{R}^\times$ |
 | $\{\pm1\} \cong O(1)$ | the sign group, the two-element cyclic group |
 | $a = \lvert a\rvert\operatorname{sgn}a$ | the sign decomposition, $r = \lvert a\rvert \in \mathbb{R}_{>0}$, $\sigma = \operatorname{sgn}a$ |
-| $a^{-1} = a/N(a) = 1/a$ | the inverse of a nonzero element |
+| $a^{-1} = a/\langle a\rangle = 1/a$ | the inverse of a nonzero element |
 | $\mathbb{R}_{\mathbb{R}}$ | the fixed subspace of the identity involution, all of $\mathbb{R}$ |
 
 ## Further Reading

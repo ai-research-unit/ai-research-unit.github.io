@@ -94,10 +94,10 @@ $$
 
 a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $U(2)$.
 
-The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{D}$ — is the kernel of $N$ restricted to the units. Since $N(\tilde{Q}) = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $N(\tilde{Q}) = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
+The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{D}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
 
 $$
-\left\{ \tilde{Q} : N(\tilde{Q}) = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
+\left\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
 $$
 
 ## Finite-Dimensional Representations
@@ -167,7 +167,7 @@ The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a r
 | $\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |
 | $\mathbb{H}\tilde\Pi_{1,2}$ | Minimal two-sided ideals, projective but not free as $\mathbb{D}$-modules |
 | $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of units |
-| $\{ \tilde{Q} : N(\tilde{Q}) = 1 \} = S^3 \times S^3$ | Norm-one group |
+| $\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \} = S^3 \times S^3$ | Norm-one group |
 | $\rho_{(n_1,n_2)}$ | Irreducible unit-group representation, spin $(n_1/2, n_2/2)$ |
 | $S_+ \otimes_{\mathbb{R}} S_-$ | Tensor product of simple modules; not a module here |
 

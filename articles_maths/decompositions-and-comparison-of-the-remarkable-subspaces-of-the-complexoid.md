@@ -4,7 +4,7 @@
 
 The complex algebra carries one nontrivial involution, complex conjugation, and beside it the identity, and each of the two cuts the algebra into a fixed subspace and an anti-fixed subspace. This article writes the two decompositions those involutions produce, with their projections, records how the product and the two forms behave along the split, and describes the resulting two-member lattice of remarkable subspaces.
 
-The subspaces themselves, their bases and their dimensions are the subject of *Complex Subspaces*, which this article cites and does not repeat; the two forms are the subject of *The Two Forms and the Two Algebraic Norms of the Complex Space*, and the products are *The Two Products of the Complex Space*, both below this article in this category. What is new here is the frame: the two decompositions read as the degenerate and the content-bearing case, the behaviour of the products and the forms along that split, and the comparison of the two subspaces.
+The subspaces themselves, their bases and their dimensions are the subject of *Complexoid Subspaces*, which this article cites and does not repeat; the two forms are the subject of *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, and the products are *The Two Products of the Complexoid Space*, both below this article in this category. What is new here is the frame: the two decompositions read as the degenerate and the content-bearing case, the behaviour of the products and the forms along that split, and the comparison of the two subspaces.
 
 The reading of the marks is the corpus convention: the **bar** is complex conjugation, the one nontrivial involution of $\mathbb{C}$; and the **Hermitian star** coincides with the bar. The two involutions of *Complex Algebra*, below this article in this category, are the identity and the bar.
 
@@ -40,7 +40,7 @@ These are the two halves of the developed form $A = a + i a'$, and the sum of th
 
 ## The Product Along the Split
 
-The two products of the complex space are the plain product $AC$, the multiplication of the field, and the plain sesquilinear product $A\bar C$, both defined in *The Two Products of the Complex Space*, below this article in this category. Their behaviour on elements drawn from the two subspaces is read from the multiplication table of the basis.
+The two products of the complex space are the plain product $AC$, the multiplication of the field, and the plain sesquilinear product $A\bar C$, both defined in *The Two Products of the Complexoid Space*, below this article in this category. Their behaviour on elements drawn from the two subspaces is read from the multiplication table of the basis.
 
 | product | $\mathbb{R}_{\mathbb{C}}$ | $i\mathbb{R}_{\mathbb{C}}$ |
 |---|---|---|
@@ -55,23 +55,23 @@ $$
 
 **Proof.** The bar fixes $\mathbb{R}_{\mathbb{C}}$ pointwise and negates $i\mathbb{R}_{\mathbb{C}}$, so $\bar C = C$ in the first case and $\bar C = -C$ in the second; the subspace table is unchanged because a sign does not move an element out of a subspace and because a line through the origin is closed under sign.
 
-The product table is the multiplication table of $1, i$, $1\cdot 1 = 1$, $1\cdot i = i$, $i\cdot i = -1$; it is the table owned by *Complex Subspaces*, and the sesquilinear reading above is the only addition this article makes to it. Two features of the complex case are immediate. The product of a real and an imaginary element stays imaginary, and the product of two imaginary elements is real, so the imaginary subspace is not closed under either product while its square lands in the real one. And because $\mathbb{C}$ is commutative, every commutator vanishes, $[A, C] = AC - CA = 0$, so the antisymmetric product produces no subspace.
+The product table is the multiplication table of $1, i$, $1\cdot 1 = 1$, $1\cdot i = i$, $i\cdot i = -1$; it is the table owned by *Complexoid Subspaces*, and the sesquilinear reading above is the only addition this article makes to it. Two features of the complex case are immediate. The product of a real and an imaginary element stays imaginary, and the product of two imaginary elements is real, so the imaginary subspace is not closed under either product while its square lands in the real one. And because $\mathbb{C}$ is commutative, every commutator vanishes, $[A, C] = AC - CA = 0$, so the antisymmetric product produces no subspace.
 
 ## The Two Forms Along the Split
 
-The forms carried by the two products are the plain bilinear form $B$ and the Hermitian form $H$, defined on a pair by
+The forms carried by the two products are the plain bilinear form $\langle\cdot,\cdot\rangle$ and the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, defined on a pair by
 
 $$
 B(A, C) = AC, \qquad H(A, C) = A\bar C ,
 $$
 
-with the names and the two algebraic norms owned by *The Two Forms and the Two Algebraic Norms of the Complex Space*, below this article in this category. Read along the split, the two forms agree on the real subspace and differ by a sign on the imaginary one:
+with the names and the two algebraic norms owned by *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, below this article in this category. Read along the split, the two forms agree on the real subspace and differ by a sign on the imaginary one:
 
 $$
 B = H = AC \text{ on } \mathbb{R}_{\mathbb{C}} \times \mathbb{R}_{\mathbb{C}}, \qquad B = -H \text{ on } i\mathbb{R}_{\mathbb{C}} \times i\mathbb{R}_{\mathbb{C}} .
 $$
 
-Their diagonals are the two algebraic norms, $B(A) = A^2$ and $H(A) = \lvert A \rvert^2 = A\bar A$. On the real subspace $A^2$ and $\lvert A \rvert^2$ coincide and are positive; on the imaginary subspace they are opposite, $A^2 = -a'^2$ against $\lvert A \rvert^2 = a'^2$. The full restriction table is the subject of *Remarkable Subspaces of the Complex Numbers and the Two Forms*, below this article in this category; here only the signs along the split are recorded, since they are what the decomposition produces.
+Their diagonals are the two algebraic norms, $\langle A\rangle = A^2$ and $\langle A\rangle_{*} = \lvert A \rvert^2 = A\bar A$. On the real subspace $A^2$ and $\lvert A \rvert^2$ coincide and are positive; on the imaginary subspace they are opposite, $A^2 = -a'^2$ against $\lvert A \rvert^2 = a'^2$. The full restriction table is the subject of *Remarkable Subspaces of the Complexoid and the Two Forms*, below this article in this category; here only the signs along the split are recorded, since they are what the decomposition produces.
 
 ## The Lattice of the Two Subspaces
 
@@ -83,7 +83,7 @@ The Hermitian form is definite, so no nonzero element of $\mathbb{C}$ has vanish
 
 The complex algebra carries two involutions, the identity and the bar, and each gives an eigenline decomposition. The decomposition of the identity is degenerate, $\mathbb{C} = \mathbb{C} \oplus \{0\}$, with projections the identity and the zero map; the decomposition of the bar is the content-bearing one, $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$, with projections $A \mapsto \tfrac{1}{2}(A+\bar A)$ onto the real line and $A \mapsto \tfrac{1}{2}(A-\bar A)$ onto the imaginary line.
 
-Along the split, the two products $AC$ and $A\bar C$ send the same pairs of subspaces to the same subspaces as the plain product, and the sesquilinear product differs from the plain one by the sign of the second argument, which the bar fixes on the real line and negates on the imaginary line. The two forms $B$ and $H$ agree on the real subspace and are opposite on the imaginary one, and their diagonals $A^2$ and $\lvert A \rvert^2$ coincide and are positive on the real line and are opposite on the imaginary line. The commutator vanishes identically, so the antisymmetric product produces no subspace.
+Along the split, the two products $AC$ and $A\bar C$ send the same pairs of subspaces to the same subspaces as the plain product, and the sesquilinear product differs from the plain one by the sign of the second argument, which the bar fixes on the real line and negates on the imaginary line. The two forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ agree on the real subspace and are opposite on the imaginary one, and their diagonals $A^2$ and $\lvert A \rvert^2$ coincide and are positive on the real line and are opposite on the imaginary line. The commutator vanishes identically, so the antisymmetric product produces no subspace.
 
 The two subspaces form the two-member lattice: one subalgebra, the field $\mathbb{R}_{\mathbb{C}}$, and one line that is stable under inversion but is not a subalgebra, with no isotropic element, the complex form being definite. The two spaces are the real line and the imaginary line, and the two involutions of $\mathbb{C}$ are the identity and the bar.
 
@@ -97,7 +97,7 @@ The two subspaces form the two-member lattice: one subalgebra, the field $\mathb
 | $A \mapsto \tfrac{1}{2}(A \pm \bar A)$ | the two projections of the bar decomposition |
 | $AC$, $A\bar C$ | the plain bilinear product and the plain sesquilinear product |
 | $B, H$ | the plain bilinear form and the Hermitian form, $B = AC$, $H = A\bar C$ |
-| $A^2, \lvert A \rvert^2$ | the two algebraic norms, the diagonals of $B$ and of $H$ |
+| $A^2, \lvert A \rvert^2$ | the two algebraic norms, the diagonals of $\langle\cdot,\cdot\rangle$ and of $\langle\cdot,\cdot\rangle_{*}$ |
 
 ## Further Reading
 

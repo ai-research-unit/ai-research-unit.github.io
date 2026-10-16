@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* fo
 
 The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \vec q$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \vec q$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
 
 ## The Spectrum of a Quaternion
 
@@ -17,7 +17,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 **Theorem.** For every quaternion $\tilde q$, $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$; the algebra is a division algebra, so $\tilde q-\lambda$ fails to be invertible only when $\tilde q-\lambda = 0$.
 
-*Proof.* $\tilde q-\lambda$ is invertible for every $\lambda\neq \tilde q$, since $N(\tilde q-\lambda) > 0$ when $\tilde q\neq\lambda$, and equals $0$ when $\lambda = \tilde q$.
+*Proof.* $\tilde q-\lambda$ is invertible for every $\lambda\neq \tilde q$, since $\langle\tilde q-\lambda\rangle_{\natural} > 0$ when $\tilde q\neq\lambda$, and equals $0$ when $\lambda = \tilde q$.
 
 Thus a single quaternion has no interesting algebra spectrum; the structure appears in the eigenvector problems of the operators it defines. The following two notions, well defined for matrices over any division ring, are the source of the whole subject.
 
@@ -82,13 +82,13 @@ which is a finite union of at most $n$ spheres or points.
 **Definition.** The **trace functional** and **determinant functional** — more precisely the **reduced trace** and **reduced norm** — of a quaternion are
 
 $$
-T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2 .
+T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2.
 $$
 
 **Theorem (Cayley–Hamilton for a quaternion).** Every quaternion satisfies
 
 $$
-\tilde q^2-T(\tilde q)\,\tilde q+D(\tilde q) = 0, \qquad \text{that is} \qquad \tilde q^2-2q_0\tilde q+N(\tilde q) = 0 .
+\tilde q^2-T(\tilde q)\,\tilde q+D(\tilde q) = 0, \qquad \text{that is} \qquad \tilde q^2-2q_0\tilde q+\langle\tilde q\rangle_{\natural} = 0.
 $$
 
 *Proof.* With $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\vec q^2 = -|\vec q|^2$,
@@ -108,16 +108,16 @@ over the quaternions a negative discriminant is not a failure of existence but t
 **Proposition.** The functionals satisfy
 
 $$
-T(p+\tilde q) = T(p)+T(\tilde q), \quad T(\lambda \tilde q) = \lambda T(\tilde q)\ (\lambda\in\mathbb{R}), \quad T(e_0) = 2, \quad T(\tilde q) = T(\tilde q^{-1})N(\tilde q),
+T(p+\tilde q) = T(p)+T(\tilde q), \quad T(\lambda \tilde q) = \lambda T(\tilde q)\ (\lambda\in\mathbb{R}), \quad T(e_0) = 2, \quad T(\tilde q) = T(\tilde q^{-1})\langle\tilde q\rangle_{\natural},
 $$
 
 $$
 D(p\tilde q) = D(p)D(\tilde q), \quad D(\lambda \tilde q) = \lambda^2D(\tilde q)\ (\lambda\in\mathbb{R}), \quad D(e_0) = 1,
 $$
 
-and both are invariant under similarity, $T(v^{-1}qv) = T(\tilde q)$ and $D(v^{-1}qv) = D(\tilde q)$ for $v\neq0$. The determinant functional is multiplicative, the trace functional is real-linear but not multiplicative, and $T(\tilde q^{-1}) = T(\tilde q)/N(\tilde q)$.
+and both are invariant under similarity, $T(v^{-1}qv) = T(\tilde q)$ and $D(v^{-1}qv) = D(\tilde q)$ for $v\neq0$. The determinant functional is multiplicative, the trace functional is real-linear but not multiplicative, and $T(\tilde q^{-1}) = T(\tilde q)/\langle\tilde q\rangle_{\natural}$.
 
-*Proof.* The scalar part and the quaternion norm are additive and multiplicative as stated; similarity preserves the scalar part because $v^{-1}qv$ has the same real part, and preserves the quaternion norm by multiplicativity of $N$.
+*Proof.* The scalar part and the quaternion norm are additive and multiplicative as stated; similarity preserves the scalar part because $v^{-1}qv$ has the same real part, and preserves the quaternion norm by multiplicativity of $\langle\cdot\rangle_{\natural}$.
 
 **Remark.** For matrices the corresponding statements are more delicate. The trace $\operatorname{tr}M = \sum_iM_{ii}$ is not similarity-invariant, since trace is not cyclic over a non-commutative ring; only its real part is, $\mathrm{Sc}\operatorname{tr}(M) = \mathrm{Sc}\operatorname{tr}(S^{-1}MS)$. The determinant is replaced by the **Dieudonné determinant** $\det M$, with values in the abelianisation $\mathbb{H}^{\times}/[\mathbb{H}^{\times},\mathbb{H}^{\times}]\cong\mathbb{R}_{>0}$; it is multiplicative, and $|\det M| = \prod_{i=1}^{n}|\lambda_i|$ for the standard spectrum. These are the correct replacements for the commutative trace and determinant, and their use is standard (Rodman 2014).
 
@@ -185,7 +185,7 @@ with $\tilde q = q_0+\vec v$ and $s = s_0+\vec w$; it has a simple pole on the t
 
 **Proposition.** For a single quaternion the spectral radius is the modulus, $\rho(\tilde q) = |\tilde q|$; the S-spectrum $[\tilde q]$ consists of elements all of the same modulus $|\tilde q|$, so the maximum is attained everywhere on it.
 
-*Proof.* Every element of the class $[\tilde q]$ has the same norm $N(\tilde q)$ as $\tilde q$, hence the same modulus; the S-spectrum is the class.
+*Proof.* Every element of the class $[\tilde q]$ has the same norm $\langle\tilde q\rangle_{\natural}$ as $\tilde q$, hence the same modulus; the S-spectrum is the class.
 
 **Theorem (spectral radius formula).** For any quaternionic matrix and any submultiplicative norm, $\rho(M) = \lim_{k\to\infty}\|M^k\|^{1/k}$; for a normal matrix $\rho(M)$ equals the operator norm $\|M\|$.
 
@@ -223,7 +223,7 @@ so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[
 
 The spectrum of a single quaternion in the algebra is the single point $\{\tilde q\}$, but the eigenvector problems of the operator $[\tilde q]$ give two different sets: the left spectrum $\sigma_L([\tilde q]) = \{\tilde q\}$ and the right spectrum $\sigma_R([\tilde q]) = $ the similarity class $[\tilde q]$, which is a point for real $\tilde q$ and a two-sphere of fixed modulus for non-real $\tilde q$. For a quaternionic matrix the right spectrum is a finite union of at most $n$ similarity classes, described by the standard form with complex representatives of non-negative imaginary part; the left spectrum is not invariant under similarity and need not be a finite union of classes, and the two spectra are in general incomparable, agreeing when the eigenvalue is complex.
 
-The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ holds with the reduced trace $T(\tilde q) = 2q_0$ and reduced norm $D(\tilde q) = N(\tilde q)$, both similarity-invariant, the former real-linear and the latter multiplicative; for matrices the trace is replaced by its real part and the determinant by the Dieudonné determinant, with $|\det M| = \prod_i|\lambda_i|$. Similarity of quaternions is classified by $(T,D)$, so the classes are points or spheres, and the eigenvalue dichotomy separates each class as a real point or a non-degenerate two-sphere.
+The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ holds with the reduced trace $T(\tilde q) = 2q_0$ and reduced norm $D(\tilde q) = \langle\tilde q\rangle_{\natural}$, both similarity-invariant, the former real-linear and the latter multiplicative; for matrices the trace is replaced by its real part and the determinant by the Dieudonné determinant, with $|\det M| = \prod_i|\lambda_i|$. Similarity of quaternions is classified by $(T,D)$, so the classes are points or spheres, and the eigenvalue dichotomy separates each class as a real point or a non-degenerate two-sphere.
 
 The right eigenspace attached to a class is a right $\mathbb{H}$-subspace, of dimension one over $\mathbb{H}$ for a single quaternion, whereas the eigenspace of a fixed non-real representative is only a complex line; the left eigenspace for a single quaternion is all of $\mathbb{H}$. The S-resolvent and the left resolvent have explicit closed forms, and the spectral radius of a single quaternion is its modulus; in general the spectral radius obeys the Gelfand-type limit formula and, for normal matrices, equals the operator norm.
 
@@ -235,13 +235,13 @@ The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ sin
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, a division algebra; scalars non-central |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\vec q = \mathrm{Vect}\tilde q$ |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Quaternion norm and modulus |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{\langle\tilde q\rangle_{\natural}}$ | Quaternion norm and modulus |
 | $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$ | Algebra spectrum of a single quaternion |
 | $\sigma_L(M)$, $\sigma_R(M)$ | Left and right spectra |
 | $[\lambda] = \{v^{-1}\lambda v : v\neq0\}$ | Similarity class; a point or a two-sphere |
 | $\sigma_R([\tilde q]) = [\tilde q]$ | Spectrum of a single quaternion, a two-sphere for non-real $\tilde q$ |
 | $\lambda_1,\dots,\lambda_n$ | Standard spectrum, complex with $\operatorname{Im}\lambda_i\geq0$ |
-| $T(\tilde q) = 2q_0$, $D(\tilde q) = N(\tilde q)$ | Reduced trace and reduced norm functionals |
+| $T(\tilde q) = 2q_0$, $D(\tilde q) = \langle\tilde q\rangle_{\natural}$ | Reduced trace and reduced norm functionals |
 | $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ | Cayley–Hamilton identity for a quaternion |
 | $\operatorname{tr}M$, $\det M$ | Matrix trace (not similarity-invariant) and Dieudonné determinant |
 | $V_{[\lambda]}$ | Right eigenspace of a class, a right $\mathbb{H}$-subspace |

@@ -48,10 +48,10 @@ which vanishes by the Jacobi identity. This is the standard verification, record
 **Proposition.** The exterior product of forms induces the **cup product**
 
 $$
-H^p(\mathrm{G};M)\otimes H^q(\mathrm{G};N)\longrightarrow H^{p+q}(\mathrm{G};M\otimes N),
+H^n(\mathrm{G};M)\otimes H^q(\mathrm{G};N)\longrightarrow H^{n+m}(\mathrm{G};M\otimes N),
 $$
 
-giving $H^\bullet(\mathrm{G};k)$ the structure of a graded-commutative algebra over $k$, and giving $H^\bullet(\mathrm{G};M)$ the structure of a graded module over $H^\bullet(\mathrm{G};k)$; the product is associative, and graded-commutative in the sense that $\alpha\beta = (-1)^{pq}\beta\alpha$ for classes of degrees $p$ and $q$ in characteristic different from $2$.
+giving $H^\bullet(\mathrm{G};k)$ the structure of a graded-commutative algebra over $k$, and giving $H^\bullet(\mathrm{G};M)$ the structure of a graded module over $H^\bullet(\mathrm{G};k)$; the product is associative, and graded-commutative in the sense that $\alpha\beta = (-1)^{pq}\beta\alpha$ for classes of degrees $n$ and $m$ in characteristic different from $2$.
 
 *Proof.* The cup product of forms is the composite of the exterior product of the form parts with the pairing $M\otimes N$, and the Leibniz rule for the exterior differential on the differential graded algebra shows that the product of two cocycles is a cocycle and that the product of a cocycle with a coboundary is a coboundary; hence the product descends to cohomology. Associativity is inherited from the exterior algebra, and the graded-commutativity is the statement that the transposition of the two factors multiplies by the sign of the permutation of the two form parts, the module parts being even.
 

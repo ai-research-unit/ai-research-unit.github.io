@@ -8,7 +8,7 @@ The ADHM construction is unusual among the results of gauge theory in that its n
 
 The article proceeds in four steps. It writes the self-duality equation and identifies its quaternionic content; it states the ADHM equations and the quotient; it derives the dimension of the moduli space by counting the data, the constraints and the gauge redundancy, and checks the counting against the known cases; and it verifies the minimal ($k=1$) datum against the equations and against the BPST solution. It then separates the algebraic content from the analytic input, because the existence and completeness of the construction — that every self-dual connection arises this way and that the quotient is a manifold — are theorems of analysis, not identities of the algebra.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$; the real-quaternion subspace is $\mathbb H_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_0,e_1,e_2,e_3\}$ and the compact factor is $SU(2)=\{U\in\mathbb H_{\mathbb B}:U\bar U=e_0\}$. On the Euclidean slice the coordinates are $x_4,x_1,x_2,x_3$ with the self-dual 't Hooft symbols $\eta^a_{\mu\nu}$ of *Instantons and Solitons in Biquaternionic Form*, and the curvature is written without the explicit factor of $i$ in the commutator, $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+[\mathcal A_\mu,\mathcal A_\nu]$, on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$; the placement of the factor $i$ is the signature convention recorded in that article. The matrix trace on the gauge factor is distinguished from the informational trace $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$.
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$; the real-quaternion subspace is $\mathbb H_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_0,e_1,e_2,e_3\}$ and the compact factor is $SU(2)=\{\tilde U\in\mathbb H_{\mathbb B}:\tilde U\bar{\tilde U}=e_0\}$. On the Euclidean slice the coordinates are $x_4,x_1,x_2,x_3$ with the self-dual 't Hooft symbols $\eta^a_{\mu\nu}$ of *Instantons and Solitons in Biquaternionic Form*, and the curvature is written without the explicit factor of $i$ in the commutator, $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+[\mathcal A_\mu,\mathcal A_\nu]$, on Hermitian generators with $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$; the placement of the factor $i$ is the signature convention recorded in that article. The matrix trace on the gauge factor is distinguished from the informational trace $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$.
 
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton solutions and the topological charge.
 - Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the boundary data and the structure group.
@@ -31,7 +31,7 @@ $$
 F_{12}=F_{34},\qquad F_{13}=-F_{24},\qquad F_{14}=F_{23},
 $$
 
-in terms of which the six independent components are reduced to three. The companion article established that a solution of this first-order equation is automatically a solution of the second-order Yang–Mills equation, by the Bianchi identity, and that it saturates the Bogomolny bound $S\ge 8\pi^2|Q|/g^2$. What the present article adds is the recognition that the three conditions above are the three components of one quaternionic statement.
+in terms of which the six independent components are reduced to three. The companion article established that a solution of this first-order equation is automatically a solution of the second-order Yang–Mills equation, by the Bianchi identity, and that it saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$. What the present article adds is the recognition that the three conditions above are the three components of one quaternionic statement.
 
 **The quaternionic structure.** Identify a point of $\mathbb R^4$ with a real quaternion,
 
@@ -220,7 +220,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $i$ | Central scalar imaginary |
 | $x=x_4e_0+x_1e_1+x_2e_2+x_3e_3$ | Quaternionic coordinate |
 | $z_1=x_2+ix_1,\ z_2=x_4+ix_3$ | Complex coordinates, defining module $\mathbb C^2$ |
-| $k$ | Instanton number (topological charge $Q$) |
+| $k$ | Instanton number (topological charge $Ϙ$) |
 | $N$ | Rank parameter; $N=2$ for the framework's $SU(2)$ |
 | $B_1,B_2\in\mathrm{End}(\mathbb C^k)$ | ADHM matrices |
 | $I\in\mathrm{Hom}(\mathbb C^N,\mathbb C^k)$, $J\in\mathrm{Hom}(\mathbb C^k,\mathbb C^N)$ | ADHM boundary vectors |

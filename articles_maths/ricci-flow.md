@@ -124,13 +124,13 @@ for a constant $C$ depending only on the initial metric; consequently the curvat
 **Theorem (Perelman's monotonicity).** The **entropy** functionals
 
 $$
-\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)e^{-f}dV, \qquad
-\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}e^{-f}dV
+\mathcal{F}(g,f) = \int_M\bigl(R+|\nabla f|^2\bigr)\exp(-f)dV, \qquad
+\mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV
 $$
 
 are monotone along the coupled flow $\partial_tg=-2R_{ij}$, $\partial_tf=-\Delta f+|\nabla f|^2-R$ (and $\partial_t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.
 
-*Proof.* Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}e^{-f}dV$, which is nonnegative and vanishes exactly on a shrinking soliton.
+*Proof.* Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}\exp(-f)dV$, which is nonnegative and vanishes exactly on a shrinking soliton.
 
 **Theorem (no local collapsing).** For a Ricci flow on a compact manifold with a curvature bound on a parabolic ball and a lower bound on the injectivity radius at the base point, the solution is $\kappa$-noncollapsed at scale $r$ for a constant $\kappa>0$ depending on the bounds; consequently a region of bounded curvature cannot collapse to lower dimension, and the blow-up limits of a singularity are nonflat.
 

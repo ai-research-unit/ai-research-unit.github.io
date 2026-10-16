@@ -108,7 +108,7 @@ $$
 
 ### The Equivariant Lifting
 
-**Definition.** For a $G$-fibration $p : E\to B$ with fibre the $G$-space $F$ and a $G$-map $f : X\to B$, the **equivariant lifting problem** is the search for a $G$-map $\tilde f : X\to E$ with $p\tilde f=f$; it is solved degreewise on the equivariant skeleta, and its obstructions are the equivariant obstruction classes with coefficients the homotopy groups of the fibre fixed sets.
+**Definition.** For a $G$-fibration $p : E\to B$ with fibre the $G$-space $F$ and a $G$-map $f : X\to B$, the **equivariant lifting problem** is the search for a $G$-map $f^{\mathrm{lift}} : X\to E$ with $pf^{\mathrm{lift}}=f$; it is solved degreewise on the equivariant skeleta, and its obstructions are the equivariant obstruction classes with coefficients the homotopy groups of the fibre fixed sets.
 
 **Theorem.** A $G$-lift of $f$ over the $n$-skeleton extends over the $(n+1)$-skeleton exactly when the equivariant obstruction class in $H^{n+1}_G(X;\underline\pi_n(F))$ vanishes, computed with the same obstruction cocycle as in the extension problem, the value on an equivariant cell being the class of the lifting problem on its boundary in $\pi_n(F^{H})$; the successive obstructions for $n$ increasing are the only obstructions. The lifting problem is thus the extension problem with the coefficient system of the fibre, and the two are the same computation.
 

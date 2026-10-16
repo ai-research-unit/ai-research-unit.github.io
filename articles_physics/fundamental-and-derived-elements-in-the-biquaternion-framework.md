@@ -180,7 +180,7 @@ $$
 i\,\mathbb{M}_+=\mathbb{M}_-, \qquad i\,\mathbb{M}_-=\mathbb{M}_+,
 $$
 
-since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q)^{*}=-i\tilde Q^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{M}_-$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $N(i\tilde Q)=i^2N(\tilde Q)=-N(\tilde Q)$, it identifies them only as anti-isometric real quadratic spaces.
+since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q)^{*}=-i\tilde Q^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{M}_-$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $\langle i\tilde Q\rangle_{\natural}=i^2\langle\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, it identifies them only as anti-isometric real quadratic spaces.
 
 **Is the split forced or chosen?** Relative to the base, the split is forced: it is the eigenspace decomposition of the derived involution ${}^{*}$, and no automorphism of the base can move it. It is not an independent posit, and no further choice enters.
 
@@ -277,7 +277,7 @@ The polar representations are the last family of objects whose status is settled
 **The Hamilton polar form.** For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\vec Q,\vec Q)=B^2\ne0$, put
 
 $$
-R=\sqrt{N(\tilde Q)},\qquad \tilde{\Xi}=\vec Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
+R=\sqrt{\langle\tilde Q\rangle_{\natural}},\qquad \tilde{\Xi}=\vec Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
 $$
 
 so that $\tilde Q=R\exp(\tilde{\Xi}\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,
@@ -316,7 +316,7 @@ The results are collected in one place. The statuses are those of the criterion,
 | Anti-Hermitian conjugation $\flat$ | Derived (rigid) | Defined as $-{}^{*}$; the central sign is a definitional convention, not a presentation — no automorphism of the base moves it. |
 | The sectors $\mathbb{M}_+,\mathbb{M}_-$ | Derived | Eigenspaces of the derived involution ${}^{*}$. |
 | The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Forced relative to the base | Eigen-decomposition of ${}^{*}$; the real form it uses is an input. |
-| The biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | Derived | Multiplication plus ${}^{\natural}$. |
+| The biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Derived | Multiplication plus ${}^{\natural}$. |
 | The trace $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
 | The trace form $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Derived | Consequence of the trace. |
 | Exponential, roots of $-1$, idempotents, $SL(2,\mathbb{C})$ | Derived | Solving equations with coefficients in the base. |
@@ -350,7 +350,7 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace; centre; fixed set of ${}^{\natural}$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; derived |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; derived |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace; rigidly derived |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace form; derived |
 | $\mathcal{S}$ | The base: (B1) $\mathbb{H}$, (B2) the complexification |

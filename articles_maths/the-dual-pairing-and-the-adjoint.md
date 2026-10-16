@@ -83,7 +83,7 @@ and the adjoint operation is an involution exchanging the two sides, $\mathcal{L
 
 ## Examples
 
-**Example (the sequence spaces).** On the dual pair $(\ell^{p}, \ell^{q})$ with $1 < p,q < \infty$ and $1/p+1/q = 1$, an operator with matrix $(a_{ij})$ that acts continuously on both spaces has the transpose with matrix $(a_{ji})$; for $p = q = 2$ the pairing is the inner product and the adjoint is the conjugate transpose, the operator and its adjoint differing by the conjugation of the matrix entries.
+**Example (the sequence spaces).** On the dual pair $(\ell^{n}, \ell^{m})$ with $1 < p,q < \infty$ and $1/n + 1/m = 1$, an operator with matrix $(a_{ij})$ that acts continuously on both spaces has the transpose with matrix $(a_{ji})$; for $p = q = 2$ the pairing is the inner product and the adjoint is the conjugate transpose, the operator and its adjoint differing by the conjugation of the matrix entries.
 
 **Example (the reflexive Banach space).** For a reflexive Banach space $E$ and $T \in \mathcal{L}(E)$ the adjoint is the double transpose under the canonical embedding, so the algebra $\mathcal{L}(E)$ is an involutive algebra when $E$ is reflexive and the pairing is the canonical one; in the non-reflexive case $c_{0}$ with dual $\ell^{1}$ and bidual $\ell^{\infty}$ shows that a continuous operator need not be weakly continuous, and then the adjoint is defined on $\ell^{1}$ but not on $c_{0}$ by transposition alone.
 

@@ -14,7 +14,7 @@ The article states each boundary, computes what can be computed, and marks the r
 
 The article is organised as follows. The next section sets up squeezing inside the algebra and verifies the squeezed-vacuum uncertainty product. The third section explains why the module cannot be squeezed centrally and where spin squeezing lives. The fourth treats contractions and the degeneration of the biquaternion norm. The fifth treats q-deformations, Clifford and octonionic enlargements, and infinite-dimensional or non-unitary extensions. The sixth collects the boundary statements, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the biquaternion norm is $N(x)=x\bar x$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the biquaternion norm is $\langle x\rangle_{\natural}=x\bar x$.
 
 ## Squeezing Inside the Algebra
 
@@ -23,19 +23,19 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 For a one-dimensional oscillator with mass $m$ and frequency $\omega$, the creation and annihilation operators are
 
 $$
-a=\sqrt{\frac{m\omega}{2\hbar}}\,\hat x+\frac{i}{\sqrt{2m\hbar\omega}}\,\hat p,
+a=\sqrt{\frac{m\omega}{2\hbar}}\,x+\frac{i}{\sqrt{2m\hbar\omega}}\,p,
 \qquad
-a^\dagger=\sqrt{\frac{m\omega}{2\hbar}}\,\hat x-\frac{i}{\sqrt{2m\hbar\omega}}\,\hat p,
+a^\dagger=\sqrt{\frac{m\omega}{2\hbar}}\,x-\frac{i}{\sqrt{2m\hbar\omega}}\,p,
 \qquad
 [a,a^\dagger]=e_0 .
 $$
 
-Both $\hat x$ and $\hat p=-i\hbar\partial_x$ are central operators: $\hat x$ multiplies by a real scalar and $\hat p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
+Both $x$ and $p=-i\hbar\partial_x$ are central operators: $x$ multiplies by a real scalar and $p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
 
 $$
 S(\xi)=\exp\left[\tfrac12\left(\bar\xi\,a^2-\xi\,a^{\dagger 2}\right)\right],
 \qquad
-\xi=re^{\,i\theta},
+\xi=r\exp(\,i\theta),
 $$
 
 is a central element of $\mathbb{B}$. Its generator $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$ is anti-Hermitian, so $S$ is unitary in the framework's sense,
@@ -55,48 +55,48 @@ so it changes the envelope and leaves the module orientation exactly as it was. 
 The standard Bogoliubov transformation follows from the central algebra,
 
 $$
-S^{*}\,a\,S=a\cosh r-e^{\,i\theta}\sinh r\,a^\dagger ,
+S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
 \qquad
-S^{*}\,a^\dagger\,S=a^\dagger\cosh r-e^{-i\theta}\sinh r\,a ,
+S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a ,
 $$
 
-and in terms of quadratures it is the general Bogoliubov dilation. Writing $\hat x$ and $\hat p$ in terms of $a$ and $a^\dagger$ and using their transformation,
+and in terms of quadratures it is the general Bogoliubov dilation. Writing $x$ and $p$ in terms of $a$ and $a^\dagger$ and using their transformation,
 
 $$
-S^{*}\hat xS=\sqrt{\frac{\hbar}{2m\omega}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(e^{\,i\theta}a^\dagger+e^{-i\theta}a\big)\Big],
+S^{*}xS=\sqrt{\frac{\hbar}{2m\omega}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta)a^\dagger+\exp(-i\theta)a\big)\Big],
 $$
 
-which for real $\xi$ ($\theta=0$) reduces to the pure dilation $S^{*}\hat xS=e^{-r}\hat x$ and $S^{*}\hat pS=e^{r}\hat p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $\hat x$ and $\hat p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
+which for real $\xi$ ($\theta=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
 
 ### The squeezed vacuum and the uncertainty product
 
-The squeezed vacuum is $S(\xi)|0\rangle$, a Gaussian whose width in $x$ is reduced by $e^{-r}$. In the position representation it is
+The squeezed vacuum is $S(\xi)|0\rangle$, a Gaussian whose width in $x$ is reduced by $\exp(-r)$. In the position representation it is
 
 $$
-\psi_r(x)=\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}e^{\,r/2}
-\exp\left[-\frac{m\omega}{2\hbar}\,e^{2r}\,x^2\right],
+\psi_r(x)=\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}\exp(\,r/2)
+\exp\left[-\frac{m\omega}{2\hbar}\,\exp(2r)\,x^2\right],
 $$
 
 up to a phase. The quadrature variances are
 
 $$
-\Delta x^2=\frac{\hbar}{2m\omega}e^{-2r},
+\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r),
 \qquad
-\Delta p^2=\frac{\hbar m\omega}{2}e^{2r},
+\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r),
 \qquad
 \Delta x\,\Delta p=\frac{\hbar}{2},
 $$
 
-so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\hbar/2$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[\hat x,\hat p]=i\hbar e_0$.
+so the state is a minimum-uncertainty state at every $r$: squeezing redistributes the uncertainty between the quadratures but cannot reduce the product below $\hbar/2$. This is the algebraic reason squeezing is a legitimate operation of the framework: it is a central automorphism of the oscillator algebra, and the uncertainty product is fixed by the central commutator $[x,p]=i\hbar e_0$.
 
-The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with $m=\hbar=\omega=1$ and the width convention $\alpha=(m\omega/\hbar)e^{2r}$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
+The variances were verified numerically by direct quadrature in the position representation, in explicit arithmetic with $m=\hbar=\omega=1$ and the width convention $\alpha=(m\omega/\hbar)\exp(2r)$. The squeezed vacuum is not a single oscillator state but a superposition of all the even-numbered states, and the computation used its position wave function in that superposition:
 
 $$
 \begin{aligned}
-r=0.5:&\quad \Delta x^2=0.18393972=\tfrac{\hbar}{2m\omega}e^{-1},\quad
-\Delta p^2=1.35914091=\tfrac{\hbar m\omega}{2}e^{1},\quad \Delta x\Delta p=0.50000000,\\[2pt]
-r=0.7:&\quad \Delta x^2=0.12329848=\tfrac{\hbar}{2m\omega}e^{-1.4},\quad
-\Delta p^2=2.02759998=\tfrac{\hbar m\omega}{2}e^{1.4},\quad \Delta x\Delta p=0.50000000 .
+r=0.5:&\quad \Delta x^2=0.18393972=\tfrac{\hbar}{2m\omega}\exp(-1),\quad
+\Delta p^2=1.35914091=\tfrac{\hbar m\omega}{2}\exp(1),\quad \Delta x\Delta p=0.50000000,\\[2pt]
+r=0.7:&\quad \Delta x^2=0.12329848=\tfrac{\hbar}{2m\omega}\exp(-1.4),\quad
+\Delta p^2=2.02759998=\tfrac{\hbar m\omega}{2}\exp(1.4),\quad \Delta x\Delta p=0.50000000 .
 \end{aligned}
 $$
 
@@ -108,7 +108,7 @@ The whole squeezing construction lives in the centre. The generator is $\tfrac12
 
 ### Composition and two-mode squeezing
 
-Squeezes compose by adding their rapidities in the same direction: $S(r_1\hat u)S(r_2\hat u)=S((r_1+r_2)\hat u)$ for a fixed squeezing axis $\hat u$, because the one-parameter subgroups of the corresponding central generators add. The composition was checked at the level of the variances: squeezing twice by $r_1=0.3$ and $r_2=0.4$ gives the same width $e^{-(r_1+r_2)}=e^{-0.7}$ as a single squeeze of $r=0.7$, which is the width already tabulated. Squeezes along different axes do not commute, because their generators do not: the resulting group is the metaplectic group acting on the envelope, and its whole action is central.
+Squeezes compose by adding their rapidities in the same direction: $S(r_1\vec u)S(r_2\vec u)=S((r_1+r_2)\vec u)$ for a fixed squeezing axis $\vec u$, because the one-parameter subgroups of the corresponding central generators add. The composition was checked at the level of the variances: squeezing twice by $r_1=0.3$ and $r_2=0.4$ gives the same width $\exp(-(r_1+r_2))=\exp(-0.7)$ as a single squeeze of $r=0.7$, which is the width already tabulated. Squeezes along different axes do not commute, because their generators do not: the resulting group is the metaplectic group acting on the envelope, and its whole action is central.
 
 A two-mode version is also inside the algebra and is worth recording because it is the strongest central correlation available. For two oscillator modes $a_1,a_2$ the two-mode squeeze operator
 
@@ -122,16 +122,16 @@ has a central generator and is a central unitary, and it creates correlations be
 
 A different operation suggests itself: squeeze the **module**. The state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ carries the two components of a state, and one could ask for a transformation that reduces the uncertainty of one component at the expense of the other. Such a transformation is not central. A central unitary multiplies both components by the same phase, so it acts on the module as the identity matrix $I_2$ and cannot change the relative weights or the correlations of the components. To redistribute uncertainty inside the module one needs an operator whose module action is a non-trivial element of $U(2)$ — a rotation generated by the $e_k$, the non-central generators.
 
-In the framework those generators are exactly the ones that produce the spin structure: $\mathsf{M}_2(ie_k)=-i\sigma_k$, and a rotation $e^{i\alpha e_k}$ acts on the module as a spin rotation. A squeeze built from such a generator is a **spin-squeezing** operation, and it uses precisely the non-central part of the algebra that the spin-0 subcategory excludes. The framework's statement is sharp: the operator that squeezes the module is a rotation of the module, and the sibling subcategories treat it. The companion article *Angular Momentum and Spin in Biquaternionic Form* develops the rotation generators; the spin-squeezing problem itself is the subject of a spin subcategory article.
+In the framework those generators are exactly the ones that produce the spin structure: $\mathsf{M}_2(ie_k)=-i\sigma_k$, and a rotation $\exp(i\alpha e_k)$ acts on the module as a spin rotation. A squeeze built from such a generator is a **spin-squeezing** operation, and it uses precisely the non-central part of the algebra that the spin-0 subcategory excludes. The framework's statement is sharp: the operator that squeezes the module is a rotation of the module, and the sibling subcategories treat it. The companion article *Angular Momentum and Spin in Biquaternionic Form* develops the rotation generators; the spin-squeezing problem itself is the subject of a spin subcategory article.
 
 It is worth being precise about what is and is not claimed. The central squeeze cannot change the module *orientation*; it can still change the module's *magnitude* relative to the envelope (a global scale), and it can change the correlations between the envelope's quadratures and a fixed module basis. But a genuine reduction of one module component's uncertainty at the cost of the other — the operation a spin-squeezing experiment performs — requires a non-central invariant, and the framework provides it only in the spin subcategories. In the spin-0 subcategory the module is a spectator by construction.
 
-The contrast is visible in the module's matrix image. Under $\mathsf{M}_2$, a central unitary is $e^{i\phi}I_2$ and a non-central rotation generated by $e_1$ is $e^{\,i\alpha\sigma_1/2}$. Acting on the module element $(1,0)^T$,
+The contrast is visible in the module's matrix image. Under $\mathsf{M}_2$, a central unitary is $\exp(i\phi)I_2$ and a non-central rotation generated by $e_1$ is $\exp(\,i\alpha\sigma_1/2)$. Acting on the module element $(1,0)^T$,
 
 $$
-e^{\,i\phi}I_2\begin{pmatrix}1\\0\end{pmatrix}=e^{\,i\phi}\begin{pmatrix}1\\0\end{pmatrix},
+\exp(\,i\phi)I_2\begin{pmatrix}1\\0\end{pmatrix}=\exp(\,i\phi)\begin{pmatrix}1\\0\end{pmatrix},
 \qquad
-e^{\,i\alpha\sigma_1/2}\begin{pmatrix}1\\0\end{pmatrix}
+\exp(\,i\alpha\sigma_1/2)\begin{pmatrix}1\\0\end{pmatrix}
 =\begin{pmatrix}\cos(\alpha/2)\\ i\sin(\alpha/2)\end{pmatrix},
 $$
 
@@ -163,9 +163,9 @@ E_2^2=E_3^2=-\epsilon^2 e_0,
 [E_1,E_2]=2E_3,\quad [E_1,E_3]=-2E_2 ,
 $$
 
-so that as $\epsilon\to0$ the bracket $[E_2,E_3]=2\epsilon^2E_1$ vanishes while $[E_1,E_2]=2E_3$ and $[E_1,E_3]=-2E_2$ survive. The imaginary span therefore contracts from $\mathfrak{so}(3)$ to the Euclidean algebra $\mathfrak{e}(2)$ of the plane, solvable rather than simple, its derived ideal spanned by $E_2,E_3$ abelian; in the limit product of the contracted basis, $E_2^{\,2}=E_3^{\,2}=E_2E_3=0$, so $E_2$ and $E_3$ are nilpotent and mutually annihilating. The rescaling was verified numerically: the commutator $[E_2,E_3]=2\epsilon^2E_1$ and the biquaternion norm $N(E_2)=\epsilon^2e_0$ both scale as $\epsilon^2$ and vanish together, at $\epsilon=1,0.1,0.01$ giving the values $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$ respectively, while $[E_1,E_2]=2E_3$ and $[E_1,E_3]=-2E_2$ are independent of $\epsilon$.
+so that as $\epsilon\to0$ the bracket $[E_2,E_3]=2\epsilon^2E_1$ vanishes while $[E_1,E_2]=2E_3$ and $[E_1,E_3]=-2E_2$ survive. The imaginary span therefore contracts from $\mathfrak{so}(3)$ to the Euclidean algebra $\mathfrak{e}(2)$ of the plane, solvable rather than simple, its derived ideal spanned by $E_2,E_3$ abelian; in the limit product of the contracted basis, $E_2^{\,2}=E_3^{\,2}=E_2E_3=0$, so $E_2$ and $E_3$ are nilpotent and mutually annihilating. The rescaling was verified numerically: the commutator $[E_2,E_3]=2\epsilon^2E_1$ and the biquaternion norm $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ both scale as $\epsilon^2$ and vanish together, at $\epsilon=1,0.1,0.01$ giving the values $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$ respectively, while $[E_1,E_2]=2E_3$ and $[E_1,E_3]=-2E_2$ are independent of $\epsilon$.
 
-The essential point is that the **biquaternion norm degenerates with the algebra**. For $\epsilon>0$ the biquaternion norm on the real span of $E_1,E_2,E_3$ is positive definite and every nonzero element of that real span is invertible; at $\epsilon=0$ the elements $E_2,E_3$ have $N=0$ despite being nonzero, and are nilpotent zero divisors. The contraction takes a real basis with a nondegenerate biquaternion norm to one with a degenerate biquaternion norm. This is the algebraic mechanism behind the zero divisor locus: zero divisors are what survive when a quadratic structure is squeezed until its metric collapses. The companion article *Zero Divisors as a Physical Locus in Biquaternionic Form* treats the locus itself; here it appears as the endpoint of a contraction.
+The essential point is that the **biquaternion norm degenerates with the algebra**. For $\epsilon>0$ the biquaternion norm on the real span of $E_1,E_2,E_3$ is positive definite and every nonzero element of that real span is invertible; at $\epsilon=0$ the elements $E_2,E_3$ have vanishing biquaternion norm despite being nonzero, and are nilpotent zero divisors. The contraction takes a real basis with a nondegenerate biquaternion norm to one with a degenerate biquaternion norm. This is the algebraic mechanism behind the zero divisor locus: zero divisors are what survive when a quadratic structure is squeezed until its metric collapses. The companion article *Zero Divisors as a Physical Locus in Biquaternionic Form* treats the locus itself; here it appears as the endpoint of a contraction.
 
 ### Contractions to split and degenerate algebras
 
@@ -187,7 +187,7 @@ $$
 (1+K)(1-K)=0 .
 $$
 
-Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $N(x)>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.
+Both identities were verified in the two-dimensional representation $I=i\sigma_z$, $J=\sigma_x$: the products vanish exactly, while $I^2=-1$ and $J^2=+1$ were confirmed. The split algebra is what one obtains when the biquaternion norm is contracted in one direction, and its zero divisors are the real image of the biquaternion null cone. The real quaternion algebra $\mathbb{H}$ is a division algebra — every nonzero element of $\mathbb{H}$ has $\langle x\rangle_{\natural}>0$ and is invertible — but $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not: the complex coefficients supply the null cone that the last article of this subcategory treats. The contraction exhibits that locus in a real basis, where it becomes the lightlike cone of the split algebra.
 
 ## Deforming and Enlarging
 
@@ -203,13 +203,13 @@ $$
 
 which reduces to the undeformed $\mathrm{SU}(2)$ relations as $q\to1$. The limit was verified numerically: at $J_3=1$ the deformed bracket takes the values $2.0333$, $2.0001$, and $2.000001$ for $q=1.2,1.01,1.001$, approaching the undeformed value $2J_3=2$.
 
-The q-deformed algebra lies **beyond** the biquaternion algebra in a definite sense. It is a Hopf algebra, not simply a unital associative algebra; its representation theory is not the representation theory of $\mathbb{H}$ or $\mathbb{B}$; and, crucially for this corpus, it does not carry an invariant positive-definite quadratic form playing the role of $N$. The biquaternion norm is the framework's central object — it defines unitarity, the sectors, and the zero divisor cone — and a q-deformation does not preserve it. Whether a q-deformed biquaternion structure with an appropriate q-biquaternion norm exists, and what its **physical interpretation** would be, is not addressed here; the framework's conventions do not contain such an object, and inventing one would go beyond the algebra the corpus uses.
+The q-deformed algebra lies **beyond** the biquaternion algebra in a definite sense. It is a Hopf algebra, not simply a unital associative algebra; its representation theory is not the representation theory of $\mathbb{H}$ or $\mathbb{B}$; and, crucially for this corpus, it does not carry an invariant positive-definite quadratic form playing the role of the biquaternion norm. The biquaternion norm is the framework's central object — it defines unitarity, the sectors, and the zero divisor cone — and a q-deformation does not preserve it. Whether a q-deformed biquaternion structure with an appropriate q-biquaternion norm exists, and what its **physical interpretation** would be, is not addressed here; the framework's conventions do not contain such an object, and inventing one would go beyond the algebra the corpus uses.
 
 A concrete worked family locates the obstruction exactly. The **quantum quaternion spheres** $\mathrm{SP}_q(2n)/\mathrm{SP}_q(2n-2)$ are the quantum homogeneous spaces whose classical limit is the unit quaternion sphere $S^{4n-1}\subset\mathbb{H}^n$, and for $n=1$ the quantum three-sphere $S_q^3=\mathrm{SU}_q(2)$ (Saurabh, arXiv:1401.3503); each is a universal $\mathrm{C}^*$-algebra generated by $z_1,\dots,z_{2n}$ with q-commutation relations and the q-sphere relation $\sum_{i=1}^{2n} z_iz_i^{*}=1$, whose content is a **relation** and not a **form**: it defines a noncommutative space, not the level set of an invariant quadratic form, and the machinery the paper needs — the branching rules for the representations of the symplectic group and the K-groups — is that of a $\mathrm{C}^*$-algebra, the K-groups coming out equal to the classical ones, so that the deformation adds no new topological invariant. A q-deformed **sphere** therefore exists in the literature; a q-deformed **norm** of the framework's kind still does not, and the family sharpens the boundary rather than crossing it.
 
 ### Clifford enlargements and octonionic doubling
 
-The biquaternion algebra sits inside the Clifford family: $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, and the Dirac article of the series uses the Clifford algebra of the spacetime metric. Enlarging to $\mathrm{Cl}_{p,q}$ with more generators, or taking the complexification as a Clifford algebra in more dimensions, produces algebras of matrices over $\mathbb{R},\mathbb{C},\mathbb{H}$ of larger size, with no finite-dimensional faithful module of the same two-component kind. Such enlargements lie beyond the algebra in the sense that the state module, the two sectors, and the trace pairing all change dimension and structure.
+The biquaternion algebra sits inside the Clifford family: $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, and the Dirac article of the series uses the Clifford algebra of the spacetime metric. Enlarging to $\mathrm{Cl}_{n,m}$ with more generators, or taking the complexification as a Clifford algebra in more dimensions, produces algebras of matrices over $\mathbb{R},\mathbb{C},\mathbb{H}$ of larger size, with no finite-dimensional faithful module of the same two-component kind. Such enlargements lie beyond the algebra in the sense that the state module, the two sectors, and the trace pairing all change dimension and structure.
 
 The Cayley–Dickson doubling gives a sharper boundary. Doubling $\mathbb{C}$ gives $\mathbb{H}$, and doubling $\mathbb{H}$ gives the **octonions** $\mathbb{O}$, which are non-associative:
 
@@ -221,9 +221,9 @@ The biquaternion framework uses associativity at every step — the module actio
 
 ### Infinite-dimensional and non-unitary extensions
 
-Two further extensions are outside $\mathbb{B}$ for different reasons. The **infinite-dimensional** algebras of quantum field theory — the canonical commutation relations of a field, the Virasoro and Kac–Moody algebras, the algebra of local observables — have no finite trace and no finite-dimensional module, so the framework's trace pairing $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ has no direct analogue. The **non-unitary** (dissipative) algebras of open systems, generated by Lindblad operators, take the evolution out of the unitary group: the semigroup $e^{\mathcal{L}t}$ is not unitary, a state's purity is not conserved, and the biquaternion norm's value changes with time. The informational interpretation of such evolution belongs to the informational subcategory.
+Two further extensions are outside $\mathbb{B}$ for different reasons. The **infinite-dimensional** algebras of quantum field theory — the canonical commutation relations of a field, the Virasoro and Kac–Moody algebras, the algebra of local observables — have no finite trace and no finite-dimensional module, so the framework's trace pairing $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ has no direct analogue. The **non-unitary** (dissipative) algebras of open systems, generated by Lindblad operators, take the evolution out of the unitary group: the semigroup $\exp(\mathcal{L}t)$ is not unitary, a state's purity is not conserved, and the biquaternion norm's value changes with time. The informational interpretation of such evolution belongs to the informational subcategory.
 
-The framework's central statement about unitarity — that a central Hamiltonian generates a unitary flow, $e^{-i\tilde Ht/\hbar}$ with $\tilde H$ Hermitian and central — is exactly what fails in each of these cases: a field-theoretic Hamiltonian has no finite trace, and a Lindbladian is not anti-Hermitian. Both are honest extensions, and both are beyond the algebra as the corpus uses it.
+The framework's central statement about unitarity — that a central Hamiltonian generates a unitary flow, $\exp(-i\tilde Ht/\hbar)$ with $\tilde H$ Hermitian and central — is exactly what fails in each of these cases: a field-theoretic Hamiltonian has no finite trace, and a Lindbladian is not anti-Hermitian. Both are honest extensions, and both are beyond the algebra as the corpus uses it.
 
 ## What the Algebra Cannot Reach
 
@@ -243,7 +243,7 @@ The table is the article's answer: envelope squeezing is available, module squee
 
 ## Open Questions
 
-**1. Is there a q-deformed biquaternion norm?** The framework's structure is carried by the quadratic form $N$. Whether a q-analogue exists that reduces to $N$ as $q\to1$ and supports a sector decomposition is unknown; the quantum quaternion spheres settle one half of the question, since a q-deformed sphere **relation** exists but it is a $\mathrm{C}^*$-algebraic relation, not an invariant form, so the existence of the quantum sphere does not supply the q-norm.
+**1. Is there a q-deformed biquaternion norm?** The framework's structure is carried by the quadratic form $\langle\tilde Q,\tilde Q\rangle_{\natural}$. Whether a q-analogue exists that reduces to $\langle\tilde Q,\tilde Q\rangle_{\natural}$ as $q\to1$ and supports a sector decomposition is unknown; the quantum quaternion spheres settle one half of the question, since a q-deformed sphere **relation** exists but it is a $\mathrm{C}^*$-algebraic relation, not an invariant form, so the existence of the quantum sphere does not supply the q-norm.
 
 **2. Can a contraction be given a physical interpretation?** The contraction to the split algebra produces the light cone zero divisors; whether the contraction parameter has a **physical interpretation** — a decoherence rate, an infrared cutoff, a strong-field limit — is not established here.
 
@@ -253,11 +253,11 @@ The table is the article's answer: envelope squeezing is available, module squee
 
 ## Summary
 
-Squeezing is generated by $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central unitary, $SS^{*}=e_0$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\psi_r\propto e^{-(m\omega/2\hbar)e^{2r}x^2}$ has variances $\Delta x^2=\frac{\hbar}{2m\omega}e^{-2r}$, $\Delta p^2=\frac{\hbar m\omega}{2}e^{2r}$, $\Delta x\Delta p=\hbar/2$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\hbar/2$.
+Squeezing is generated by $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central unitary, $SS^{*}=e_0$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\psi_r\propto \exp(-(m\omega/2\hbar)\exp(2r)x^2)$ has variances $\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r)$, $\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r)$, $\Delta x\Delta p=\hbar/2$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\hbar/2$.
 
 Squeezing the **module** is beyond the spin-0 reach: a central unitary cannot change the relative weights of the two module components, and a module squeeze requires a non-central generator, which is a spin rotation and belongs to the sibling spin subcategories.
 
-Contracting the algebra by $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ degenerates the biquaternion norm: $[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ vanish together as $\epsilon\to0$ (verified at $\epsilon=1,0.1,0.01$), and the limit contains nilpotent zero divisors. In the split algebra with $I^2=-1$, $J^2=+1$, the elements $1+J$ and $1+K$ are zero divisors, $(1+J)(1-J)=(1+K)(1-K)=0$, verified exactly in the representation $I=i\sigma_z$, $J=\sigma_x$.
+Contracting the algebra by $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ degenerates the biquaternion norm: $[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ vanish together as $\epsilon\to0$ (verified at $\epsilon=1,0.1,0.01$), and the limit contains nilpotent zero divisors. In the split algebra with $I^2=-1$, $J^2=+1$, the elements $1+J$ and $1+K$ are zero divisors, $(1+J)(1-J)=(1+K)(1-K)=0$, verified exactly in the representation $I=i\sigma_z$, $J=\sigma_x$.
 
 q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $q\to1$ (verified at $q=1.2,1.01,1.001$), lie beyond the algebra because no invariant quadratic form of the framework's kind survives. Clifford enlargements change the module and trace pairing; the octonionic doubling is non-associative and therefore destroys the module action and the trace; and the field-theoretic and dissipative algebras have no finite trace or no unitary evolution. Envelope squeezing is inside the algebra; module squeezing, contractions, deformations, enlargements, and completions are beyond it, each for a definite structural reason.
 
@@ -272,14 +272,14 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $N(x)=x\bar x$ | Biquaternion norm |
+| $\langle x\rangle_{\natural}=x\bar x$ | Biquaternion norm |
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_0$ |
 | $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$ | Squeeze operator; central unitary |
-| $\xi=re^{i\theta}$ | Squeeze parameter |
-| $S^{*} aS=a\cosh r-e^{i\theta}\sinh r\,a^\dagger$ | Bogoliubov transformation |
-| $\Delta x^2=\frac{\hbar}{2m\omega}e^{-2r}$, $\Delta p^2=\frac{\hbar m\omega}{2}e^{2r}$ | Squeezed-vacuum variances |
+| $\xi=r\exp(i\theta)$ | Squeeze parameter |
+| $S^{*} aS=a\cosh r-\exp(i\theta)\sinh r\,a^\dagger$ | Bogoliubov transformation |
+| $\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r)$, $\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r)$ | Squeezed-vacuum variances |
 | $E_k=\epsilon e_k$ | Contracting basis |
-| $\mathrm{Cl}_{p,q}$, $\mathbb{O}$ | Clifford algebras; octonions (non-associative) |
+| $\mathrm{Cl}_{n,m}$, $\mathbb{O}$ | Clifford algebras; octonions (non-associative) |
 | $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}$ | q-deformed bracket |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
 

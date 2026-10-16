@@ -42,10 +42,10 @@ Weak convergence against all continuous functions is equivalently tested against
 **Theorem (Weyl's criterion).** A sequence $(x_n)$ in $[0,1)$ is equidistributed if and only if for every nonzero integer $k$,
 
 $$
-\frac{1}{N}\sum_{n=1}^{N} e^{2\pi i k x_n} \longrightarrow 0 \qquad \text{as } N \to \infty.
+\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n) \longrightarrow 0 \qquad \text{as } N \to \infty.
 $$
 
-*Proof.* If the sequence is equidistributed, the average of the continuous function $x\mapsto e^{2\pi ikx}$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function.
+*Proof.* If the sequence is equidistributed, the average of the continuous function $x\mapsto \exp(2\pi ikx)$ tends to its integral, which is $0$ for $k \neq 0$. Conversely, the exponentials with $k \in \mathbb{Z}$ span a self-adjoint algebra of functions separating points, so by the Stone–Weierstrass theorem they are dense in $C([0,1))$, and the hypothesis tested against them extends to every continuous function.
 
 The criterion is the $\mathbb{R}/\mathbb{Z}$ case of the general statement on a compact group, and it is the reason equidistribution is a chapter of harmonic analysis.
 
@@ -63,15 +63,15 @@ where $\pi_{ij}$ are the matrix coefficients of $\pi$; equivalently, if and only
 
 ### The Circle and the Torus
 
-**Example ($\{n\alpha\}$).** For irrational $\alpha$ the sequence $x_n = n\alpha$ is equidistributed on $[0,1)$. By Weyl's criterion it suffices to show $\frac{1}{N}\sum_{n=1}^N e^{2\pi i kn\alpha} \to 0$ for $k \neq 0$; the sum is the geometric series
+**Example ($\{n\alpha\}$).** For irrational $\alpha$ the sequence $x_n = n\alpha$ is equidistributed on $[0,1)$. By Weyl's criterion it suffices to show $\frac{1}{N}\sum_{n=1}^N \exp(2\pi i kn\alpha) \to 0$ for $k \neq 0$; the sum is the geometric series
 
 $$
-\frac{1}{N}\sum_{n=1}^{N} \zeta^n = \frac{\zeta(1-\zeta^N)}{N(1-\zeta)}, \qquad \zeta = e^{2\pi i k\alpha} \neq 1,
+\frac{1}{N}\sum_{n=1}^{N} \zeta^n = \frac{\zeta(1-\zeta^N)}{N(1-\zeta)}, \qquad \zeta = \exp(2\pi i k\alpha) \neq 1,
 $$
 
 whose modulus is at most $\frac{1}{N}\cdot\frac{2}{|1-\zeta|}$, which tends to $0$ as $N\to\infty$. The irrationality of $\alpha$ is exactly what makes $\zeta \neq 1$ for every $k \neq 0$.
 
-**Example (the torus).** Let $\alpha = (\alpha_1, \dots, \alpha_d) \in \mathbb{R}^d$ and let $x_n = n\alpha$ modulo $\mathbb{Z}^d$. The sequence is equidistributed in $T^d$ if and only if $1, \alpha_1, \dots, \alpha_d$ are rationally independent. The criterion is the same: the characters of $T^d$ are $\chi_m(x) = e^{2\pi i \langle m, x\rangle}$, and the average is a geometric series that vanishes unless $\langle m, \alpha\rangle \in \mathbb{Z}$; the rational-independence condition excludes the latter for every nonzero $m$. This is the sequential form of the ergodicity of the translation of a torus in *Ergodic Theory of Group Actions*, and the two statements are the same harmonic computation.
+**Example (the torus).** Let $\alpha = (\alpha_1, \dots, \alpha_d) \in \mathbb{R}^d$ and let $x_n = n\alpha$ modulo $\mathbb{Z}^d$. The sequence is equidistributed in $T^d$ if and only if $1, \alpha_1, \dots, \alpha_d$ are rationally independent. The criterion is the same: the characters of $T^d$ are $\chi_m(x) = \exp(2\pi i \langle m, x\rangle)$, and the average is a geometric series that vanishes unless $\langle m, \alpha\rangle \in \mathbb{Z}$; the rational-independence condition excludes the latter for every nonzero $m$. This is the sequential form of the ergodicity of the translation of a torus in *Ergodic Theory of Group Actions*, and the two statements are the same harmonic computation.
 
 ## Weyl's Theorem for Polynomial Sequences
 
@@ -87,7 +87,7 @@ $$
 \left|\frac{1}{N}\sum_{n=1}^{N} z_n\right|^2 \le \frac{1}{N}\sum_{h=0}^{H-1}\Bigl(1 - \frac{h}{H}\Bigr)\left|\frac{1}{N}\sum_{n=1}^{N-h} z_{n+h}\overline{z_n}\right| + \frac{2H}{N} + \frac{1}{H}.
 $$
 
-Applied with $z_n = e^{2\pi i p(n)}$ the product $z_{n+h}\overline{z_n}$ is the exponential of a polynomial of degree $k-1$ in $n$, so the estimate reduces the degree by one and the induction can proceed; the final step is the geometric series of the linear case. The reader will recognise the inequality as an averaging form of the Cauchy–Schwarz inequality, and it is the standard tool of the subject.
+Applied with $z_n = \exp(2\pi i p(n))$ the product $z_{n+h}\overline{z_n}$ is the exponential of a polynomial of degree $k-1$ in $n$, so the estimate reduces the degree by one and the induction can proceed; the final step is the geometric series of the linear case. The reader will recognise the inequality as an averaging form of the Cauchy–Schwarz inequality, and it is the standard tool of the subject.
 
 **Corollary.** For irrational $\alpha$ and any $k \geq 1$ the sequence $\{\alpha n^k\}$ is equidistributed; in particular $\{n^2\alpha\}$ is equidistributed, a statement that has no elementary proof of the same simplicity as the linear case. The corollary is the classical equidistribution of the fractional parts of a quadratic polynomial, and it is the base of the applications to the distribution of lattice points on circles and to the Waring problem.
 
@@ -114,12 +114,12 @@ The discrepancy measures the rate of equidistribution, and the quantitative theo
 **Theorem (Erdős–Turán).** There is an absolute constant $C$ such that for every sequence $(x_n)$ in $[0,1)$ and every $H \geq 1$,
 
 $$
-D_N(x_1, \dots, x_N) \le C\left(\frac{1}{H} + \sum_{k=1}^{H}\frac{1}{k}\left|\frac{1}{N}\sum_{n=1}^{N} e^{2\pi i k x_n}\right|\right).
+D_N(x_1, \dots, x_N) \le C\left(\frac{1}{H} + \sum_{k=1}^{H}\frac{1}{k}\left|\frac{1}{N}\sum_{n=1}^{N} \exp(2\pi i k x_n)\right|\right).
 $$
 
 The inequality converts an estimate of the exponential sums — the Fourier coefficients of the empirical measure — into an estimate of the discrepancy, and it is the quantitative form of Weyl's criterion: the criterion says that the sums vanish in the limit, and the inequality says how quickly they must vanish for the discrepancy to be small. Its proof uses a trigonometric approximation of the indicator function of an interval by a Fejér kernel; the constant is absolute and the optimal version has been improved by later authors.
 
-**Corollary.** If the exponential sums satisfy $\left|\frac{1}{N}\sum_{n\le N} e^{2\pi i kx_n}\right| \le K/N$ uniformly in $k$, then $D_N = O((\log N)/N)$; this is the rate attained by the sequence $\{n\alpha\}$ for an irrational $\alpha$ with bounded partial quotients, and it is, up to the logarithm, the best possible, since $D_N \geq c\log N/N$ along a subsequence for every sequence.
+**Corollary.** If the exponential sums satisfy $\left|\frac{1}{N}\sum_{n\le N} \exp(2\pi i kx_n)\right| \le K/N$ uniformly in $k$, then $D_N = O((\log N)/N)$; this is the rate attained by the sequence $\{n\alpha\}$ for an irrational $\alpha$ with bounded partial quotients, and it is, up to the logarithm, the best possible, since $D_N \geq c\log N/N$ along a subsequence for every sequence.
 
 ### The Circle and Continued Fractions
 
@@ -143,7 +143,7 @@ $$
 \frac{1}{T}\int_0^T f(u_t x)\, dt \longrightarrow \int_{G/\Gamma} f\, d\mu \qquad \text{for every } f \in C_c(G/\Gamma).
 $$
 
-The theorem is stated here for the homogeneous case because it is the continuous-parameter analogue of Weyl's criterion: the time average against every continuous function converges, and the convergence holds for every starting point, not merely almost every one. The proof uses the commutation relation $a_su_ta_s^{-1} = u_{e^st}$ to rescale the horocycle and the ergodicity of the geodesic flow; the two flows are two aspects of one equidistribution theorem, and the details are in *Homogeneous Dynamics*.
+The theorem is stated here for the homogeneous case because it is the continuous-parameter analogue of Weyl's criterion: the time average against every continuous function converges, and the convergence holds for every starting point, not merely almost every one. The proof uses the commutation relation $a_su_ta_s^{-1} = u_{\exp(s)t}$ to rescale the horocycle and the ergodicity of the geodesic flow; the two flows are two aspects of one equidistribution theorem, and the details are in *Homogeneous Dynamics*.
 
 ### Unipotent Orbits and Ratner's Theorem
 
@@ -191,7 +191,7 @@ The relevance of unique ergodicity to equidistribution is that it removes the nu
 
 ### The Mean and the Bohr Compactification
 
-**Definition.** A bounded continuous function $f : \mathbb{R} \to \mathbb{C}$ is **almost periodic** (in the sense of Bohr) if its translates $\{f(\cdot + t) : t \in \mathbb{R}\}$ form a relatively compact subset of the space of bounded continuous functions with the supremum norm. Equivalently, $f$ is a uniform limit of finite trigonometric sums $\sum_j c_j e^{i\lambda_j t}$.
+**Definition.** A bounded continuous function $f : \mathbb{R} \to \mathbb{C}$ is **almost periodic** (in the sense of Bohr) if its translates $\{f(\cdot + t) : t \in \mathbb{R}\}$ form a relatively compact subset of the space of bounded continuous functions with the supremum norm. Equivalently, $f$ is a uniform limit of finite trigonometric sums $\sum_j c_j \exp(i\lambda_j t)$.
 
 The mean of an almost periodic function does not require an equidistribution theorem for its existence.
 
@@ -213,7 +213,7 @@ $$
 \|f\|_B = \left(\overline{\lim}_{T\to\infty}\frac{1}{2T}\int_{-T}^{T}|f(t)|^2\,dt\right)^{1/2},
 $$
 
-of finite trigonometric sums $\sum_j c_j e^{i\lambda_j t}$; the space is the quotient by the functions of seminorm zero. A bounded sequence on $\mathbb{Z}$ is Besicovitch almost periodic when the same holds with the discrete mean $\lim_N \frac{1}{N}\sum_{n\le N}$ in place of the integral.
+of finite trigonometric sums $\sum_j c_j \exp(i\lambda_j t)$; the space is the quotient by the functions of seminorm zero. A bounded sequence on $\mathbb{Z}$ is Besicovitch almost periodic when the same holds with the discrete mean $\lim_N \frac{1}{N}\sum_{n\le N}$ in place of the integral.
 
 The Besicovitch theory relaxes the *uniform* approximation of Bohr to mean-square approximation and admits a mean for a wider class of functions, which is what makes it the natural tool for equidistribution: the empirical measures of a sequence test a function by its discrete averages, and a mean-square control is exactly what a Weyl-type criterion delivers.
 

@@ -29,8 +29,8 @@ $$
 A **Hilbert algebra** is the pair $(A, \bar{\cdot})$ together with a form $\langle \cdot, \cdot \rangle : A \times A \to F$ that is
 
 - **sesquilinear**: additive in each argument, with $\langle ax, y \rangle = a\langle x, y\rangle$ and $\langle x, ay \rangle = \sigma(a)\langle x, y \rangle$ for a central $a$;
-- **Hermitian**: $\langle x, y \rangle = \sigma(\langle y, x \rangle)$, so that the diagonal $q(x) = \langle x, x \rangle$ lies in the fixed field $F^\sigma$;
-- **positive definite**: $q(x) = \langle x, x \rangle > 0$ for every $x \neq 0$;
+- **Hermitian**: $\langle x, y \rangle = \sigma(\langle y, x \rangle)$, so that the diagonal $\mathfrak{Q}(x) = \langle x, x \rangle$ lies in the fixed field $F^\sigma$;
+- **positive definite**: $\mathfrak{Q}(x) = \langle x, x \rangle > 0$ for every $x \neq 0$;
 - **adjoint**: $\langle xy, z \rangle = \langle y, x^{\dagger}z \rangle$ for all $x, y, z \in A$.
 
 The last axiom is the one that binds the form to the involution. When the base involution $\sigma$ is the identity the form is bilinear, and the examples of the category are of this kind; a non-trivial $\sigma$ is what makes the form sesquilinear rather than bilinear.
@@ -129,7 +129,7 @@ $$
 h_c(x, y) = c(x)\,y
 $$
 
-is Hermitian with respect to $c$, in the sense $h_c(x,y) = c(h_c(y,x))$, and its diagonal $q_c(x) = c(x)x$ is fixed by $c$. The verification is the definition of an anti-involution together with $c^2 = \mathrm{id}$, and it needs nothing else: no commutativity, no order, no hypothesis on the ring.
+is Hermitian with respect to $c$, in the sense $h_c(x,y) = c(h_c(y,x))$, and its diagonal $m_c(x) = c(x)x$ is fixed by $c$. The verification is the definition of an anti-involution together with $c^2 = \mathrm{id}$, and it needs nothing else: no commutativity, no order, no hypothesis on the ring.
 
 So each of the anti-involutions of the algebra carries a form: reversion gives $h_r$, the conjugate gives $h_{\bar\cdot}$, and the dagger gives $h_{\dagger}$. The three are the canonical Hermitian forms of the algebra. They are **algebra-valued**; the scalar form is the trace form, and the operators built from them belong to the group `- * Operator Theory`.
 
@@ -189,7 +189,7 @@ The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natura
 
 ### Positivity of the Trace Form
 
-**Example (the biquaternions).** For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the reduced norm. It is $\mathbb{C}$-valued and isotropic, and it vanishes on the zero divisors, its nonzero zeros being exactly the matrices of rank one.
+**Example (the biquaternions).** For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the reduced norm. It is $\mathbb{C}$-valued and isotropic, and it vanishes on the zero divisors, its nonzero zeros being exactly the matrices of rank one.
 
 The dagger changes the picture completely. The form $\operatorname{Trd}(\tilde P\bar{\tilde{Q}})$ is complex-Hermitian with diagonal
 
@@ -241,7 +241,7 @@ The form is the **trace form** $\langle x, y\rangle = \tau(x^{\dagger}y)$, with 
 | $\bar{\cdot}$ | The involution of the Hilbert algebra; $x^{\dagger} = \sigma(\alpha(x^{r}))$ |
 | $\sigma$ | Involution of the base; the identity for a bilinear form |
 | $\langle x, y\rangle = \tau(x^{\dagger}y)$ | The trace form, positive definite |
-| $q(x) = \langle x, x\rangle$ | The value at the two equal arguments, valued in the fixed field |
+| $\mathfrak{Q}(x) = \langle x, x\rangle$ | The value at the two equal arguments, valued in the fixed field |
 | $H$, $H^{\dagger} = \sigma(H)^T$ | Gram matrix of the form; Hermitian transpose |
 | $\operatorname{rad}\langle\cdot,\cdot\rangle$ | Radical, the kernel of $H$ |
 | $P = \{\sum_i x_i^{\dagger}x_i\}$ | Positive cone |

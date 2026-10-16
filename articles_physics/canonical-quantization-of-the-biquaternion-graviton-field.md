@@ -88,7 +88,7 @@ physical polarizations. These two are the transverse-traceless modes: transverse
 
 ### The Transverse-Traceless Projector
 
-The projection is performed by the transverse-traceless projector. For a wave vector $\vec k$ with transverse metric $\theta_{ij}=\delta_{ij}-\hat{k}_i\hat{k}_j$, the projector on symmetric spatial tensors is
+The projection is performed by the transverse-traceless projector. For a wave vector $\vec k$ with transverse metric $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$, the projector on symmetric spatial tensors is
 
 $$
 P_{ij,kl} = \tfrac12\left(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk}\right)-\tfrac12\,\theta_{ij}\theta_{kl} ,
@@ -112,7 +112,7 @@ $$
 6-4 = 2 ,
 $$
 
-in agreement with the component count. The two explicit polarizations, $\varepsilon^{+}_{ij}=\hat{x}_i\hat{x}_j-\hat{y}_i\hat{y}_j$ and $\varepsilon^{\times}_{ij}=\hat{x}_i\hat{y}_j+\hat{y}_i\hat{x}_j$, were verified to be fixed points of the projector — transverse, traceless, and spanning the two-dimensional space.
+in agreement with the component count. The two explicit polarizations, $\varepsilon^{+}_{ij}=\vec u_{x_i}\vec u_{x_j}-\vec u_{y_i}\vec u_{y_j}$ and $\varepsilon^{\times}_{ij}=\vec u_{x_i}\vec u_{y_j}+\vec u_{y_i}\vec u_{x_j}$, were verified to be fixed points of the projector — transverse, traceless, and spanning the two-dimensional space.
 
 ### The Biquaternion Form of the Count
 
@@ -149,8 +149,8 @@ In the transverse-traceless gauge the field carries only the two physical modes,
 $$
 h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
 \sum_{r=+,\times}\left[
-a_r(\vec p)\,\varepsilon^{r}_{ij}(\hat p)\,e^{-ip\cdot x}
-+ a_r^\dagger(\vec p)\,\varepsilon^{r*}_{ij}(\hat p)\,e^{+ip\cdot x}
+a_r(\vec p)\,\varepsilon^{r}_{ij}(\vec u_p)\,\exp(-ip\cdot x)
++ a_r^\dagger(\vec p)\,\varepsilon^{r*}_{ij}(\vec u_p)\,\exp(+ip\cdot x)
 \right] ,
 $$
 
@@ -161,10 +161,10 @@ with $E_p=|\vec p|$ for the massless field, $\varepsilon^{r}_{ij}$ the two trans
 The graviton is a boson, and the field is quantized with commutators:
 
 $$
-\left[a_r(\vec p),\,a_s^\dagger(\vec q)\right]
-= (2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec q) ,
+\left[a_r(\vec p),\,a_s^\dagger(\vec k)\right]
+= (2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k) ,
 \qquad
-\left[a_r(\vec p),\,a_s(\vec q)\right] = 0 .
+\left[a_r(\vec p),\,a_s(\vec k)\right] = 0 .
 $$
 
 The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each application adds a graviton of momentum $\vec p$ and helicity $r$. The statistics is bosonic because the spin is integer: the framework's account of the spin–statistics relation is the subject of the companion article on the theorem, and it applies here with $s=2$, so the commutators are the ones above and not anticommutators. The equal-time commutator of the field operators is the transverse-traceless projection of the naive one, in the same way that the Rarita–Schwinger anticommutator was the projected one.
@@ -177,7 +177,7 @@ Covariant quantization cannot use the transverse-traceless gauge, because that g
 
 In the canonical formulation the linearized theory is a constrained system, and the constraints are the field equations with no time derivatives — the Hamiltonian and momentum constraints of the linearized Arnowitt–Deser–Misner analysis. They are first class, and they generate the gauge transformations: the momentum constraint generates the spatial diffeomorphisms and the Hamiltonian constraint generates the time reparametrizations. Their first-class character is the canonical statement of the gauge symmetry, and it is the graviton's counterpart of the first-class constraint structure of the massless vector and the massless Rarita–Schwinger field.
 
-The quantization therefore proceeds as for any first-class system. One introduces a gauge-fixing condition — the de Donder condition or a transverse-traceless condition — and the Faddeev–Popov determinant, or one imposes the constraints on the states as subsidiary conditions, $\hat{H}|\mathrm{phys}\rangle=\hat{H}_i|\mathrm{phys}\rangle=0$, in the manner of the Gupta–Bleuler treatment of the vector field. Either route removes the non-physical states and leaves the two transverse-traceless polarizations. The two routes are related by the BRST symmetry when the gauge fixing is covariant, with the vector ghosts of the preceding subsection. At the nonlinear level the constraint algebra ceases to be the algebra of a fixed group — the diffeomorphism algebra closes only with field-dependent structure functions — and the quantization becomes the problem of quantum gravity, including the problem of time; the linearized theory avoids this, which is why the graviton's canonical quantization is well defined as the quantization of a free field.
+The quantization therefore proceeds as for any first-class system. One introduces a gauge-fixing condition — the de Donder condition or a transverse-traceless condition — and the Faddeev–Popov determinant, or one imposes the constraints on the states as subsidiary conditions, $H|\mathrm{phys}\rangle=H_i|\mathrm{phys}\rangle=0$, in the manner of the Gupta–Bleuler treatment of the vector field. Either route removes the non-physical states and leaves the two transverse-traceless polarizations. The two routes are related by the BRST symmetry when the gauge fixing is covariant, with the vector ghosts of the preceding subsection. At the nonlinear level the constraint algebra ceases to be the algebra of a fixed group — the diffeomorphism algebra closes only with field-dependent structure functions — and the quantization becomes the problem of quantum gravity, including the problem of time; the linearized theory avoids this, which is why the graviton's canonical quantization is well defined as the quantization of a free field.
 
 ## The Propagator and the Coupled Theory
 
@@ -225,10 +225,10 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 The split is explicit in components. Write a material vector as $u=u_ke_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
-\langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,
+\langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec q_a\cdot\vec v ,
 $$
 
-which for the symmetric square is $|\vec u|^2$, and the trace-free part is
+which for the symmetric square is $|\vec q_a|^2$, and the trace-free part is
 
 $$
 T_{jk}-\tfrac13\delta_{jk}T^l{}_l ,
@@ -262,7 +262,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial_\mu\xi_\nu+\partial_\nu\xi_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
-In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec q)]=(2\pi)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
+In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec k)]=(2\pi)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
 The framework's statement about the graviton is therefore the same as its statement about the other higher spins: the field is the top component of a tensor product of the material vector with a lower-spin carrier, selected by a projector built from the algebra's invariant form. The graviton is the symmetric-square case, the trace-free part of $V\odot V$; and the count, five massive and two massless, follows from the decomposition and the gauge. What the framework does not supply is the coupling to $T_{\mu\nu}$, the equivalence principle, Newton's constant, the odd coordinates, or any empirical content.
 
@@ -276,12 +276,12 @@ The framework's statement about the graviton is therefore the same as its statem
 | $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
 | $\partial^\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
-| $\theta_{ij}=\delta_{ij}-\hat{k}_i\hat{k}_j$ | Transverse metric |
+| $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse metric |
 | $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
 | $\varepsilon^{+}_{ij},\varepsilon^{\times}_{ij}$ | Two polarizations; helicities $\pm2$ |
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |
-| $[a_r(\vec p),a_s^\dagger(\vec q)]=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Bosonic mode algebra |
+| $[a_r(\vec p),a_s^\dagger(\vec k)]=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Bosonic mode algebra |
 | $\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})-\tfrac{1}{D-2}\eta_{\mu\nu}\eta_{\rho\sigma}$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
 | Fierz–Pauli | Massive spin-two theory; five polarizations; vDVZ discontinuity |
 

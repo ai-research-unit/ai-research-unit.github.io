@@ -5,12 +5,12 @@
 The classical Coulomb problem is the motion of a charged particle in the inverse-square electrostatic field of a fixed charge. Its force law,
 
 $$
-\vec F = \frac{q_1q_2}{4\pi\epsilon_0}\frac{\hat r}{r^2},
+\vec F = \frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{\vec u_r}{r^2},
 $$
 
-is the same inverse-square form as the Kepler force, with the coupling $\kappa = -q_1q_2/(4\pi\epsilon_0)$ replacing $GMm$; for opposite charges the coupling is attractive and the problem is the Kepler problem with a different constant. The orbits are the conic sections derived in the preceding article of this subcategory, and the present article does not repeat them. Its subject is the symmetry that the $1/r$ potential conceals.
+is the same inverse-square form as the Kepler force, with the coupling $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ replacing $GMm$; for opposite charges the coupling is attractive and the problem is the Kepler problem with a different constant. The orbits are the conic sections derived in the preceding article of this subcategory, and the present article does not repeat them. Its subject is the symmetry that the $1/r$ potential conceals.
 
-The inverse-square force conserves not only the angular momentum $\vec L = \vec r\times\vec p$ but also the **Runge–Lenz vector** $\vec A = \vec p\times\vec L - m\kappa\hat r$. Together these six quantities close under the Poisson bracket into a Lie algebra, and for bound orbits the algebra is $\mathrm{SO}(4)$, the six-dimensional rotation algebra of four-dimensional space. The symmetry is **hidden** in the sense that it is not a symmetry of space; it is a symmetry of the phase space that mixes the conserved orbital vectors. It is the classical origin of the $n^2$ degeneracy of the non-relativistic hydrogen spectrum, and the quantization of the same algebra is how Pauli obtained the Balmer formula before the Schrödinger equation existed.
+The inverse-square force conserves not only the angular momentum $\vec L = \vec r\times\vec p$ but also the **Runge–Lenz vector** $\vec A = \vec p\times\vec L - m\kappa\vec u_r$. Together these six quantities close under the Poisson bracket into a Lie algebra, and for bound orbits the algebra is $\mathrm{SO}(4)$, the six-dimensional rotation algebra of four-dimensional space. The symmetry is **hidden** in the sense that it is not a symmetry of space; it is a symmetry of the phase space that mixes the conserved orbital vectors. It is the classical origin of the $n^2$ degeneracy of the non-relativistic hydrogen spectrum, and the quantization of the same algebra is how Pauli obtained the Balmer formula before the Schrödinger equation existed.
 
 The article develops the symmetry in the framework's notation and states plainly what the framework does and does not supply. The generators $\vec L$ and $\vec A$ are real vectors, $\vec L$ is the vector part of the quaternion product $\vec r\vec p$, and the brackets are computed with the Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*. What the framework does **not** supply is the compact algebra $\mathrm{SO}(4)$ itself: the biquaternion algebra is finite-dimensional, and its largest compact subalgebra is the material sector $\mathbb{M}_- \cong \mathrm{U}(2)$, of real dimension four, so a compact six-dimensional algebra does not embed in it. The six-dimensional algebra it does carry is its traceless part, the Lorentz algebra $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ of rotations and boosts — the split real form of the very same complexification as $\mathrm{SO}(4)$, and the symmetry type of the unbound case below. The extra generators of the bound-state symmetry live in the phase space of the particle, not in $\mathbb{B}$, and the article is explicit about that boundary. The non-relativistic hydrogen article records the same boundary from the quantum side, as an open question about the algebraic origin of the degeneracy; the present article supplies the classical symmetry algebra, locates it correctly, and fixes how far the algebra's own structure reaches towards it.
 
@@ -20,13 +20,13 @@ The article develops the symmetry in the framework's notation and states plainly
 
 ### The Force and the Potential
 
-Two point charges at separation $r$ interact with the Coulomb force. For a light charge $q_1$ moving in the field of a fixed heavy charge $q_2$ the force is central and inverse-square,
+Two point charges at separation $r$ interact with the Coulomb force. For a light charge $ϙ_1$ moving in the field of a fixed heavy charge $ϙ_2$ the force is central and inverse-square,
 
 $$
-V(r) = \frac{q_1q_2}{4\pi\epsilon_0}\frac{1}{r} , \qquad \vec F = -\frac{q_1q_2}{4\pi\epsilon_0}\frac{\hat r}{r^2} .
+V(r) = \frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{1}{r} , \qquad \vec F = -\frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{\vec u_r}{r^2} .
 $$
 
-Writing $\kappa = -q_1q_2/(4\pi\epsilon_0)$ puts the force in the Kepler form $\vec F = -\kappa\hat r/r^2$: for opposite charges $q_1q_2 < 0$ so $\kappa > 0$ and the force is attractive, while for like charges $\kappa < 0$ and the force is repulsive. The potential $\tilde{\Phi} = V(r)e_0$ is a central scalar in $\mathbb{M}_+$, the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, and the whole central-scalar machinery of the preceding articles applies without change.
+Writing $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ puts the force in the Kepler form $\vec F = -\kappa\vec u_r/r^2$: for opposite charges $ϙ_1ϙ_2 < 0$ so $\kappa > 0$ and the force is attractive, while for like charges $\kappa < 0$ and the force is repulsive. The potential $\tilde{\Phi} = V(r)e_0$ is a central scalar in $\mathbb{M}_+$, the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, and the whole central-scalar machinery of the preceding articles applies without change.
 
 The two-body problem reduces to the one-body form by separating the centre of mass, exactly as in the gravitational case, with $m$ the reduced mass and $\vec r$ the relative coordinate. In the atomic case the heavy charge is a nucleus and the reduced mass is close to the electron mass.
 
@@ -41,7 +41,7 @@ This is worth stating because the conserved Runge–Lenz vector is sometimes mis
 The effective potential and the orbit classification are those of the Kepler problem, with $\kappa$ carrying the sign of the interaction:
 
 $$
-V_{\text{eff}}(r) = \frac{q_1q_2}{4\pi\epsilon_0}\frac{1}{r} + \frac{L^2}{2mr^2} = -\frac{\kappa}{r} + \frac{L^2}{2mr^2} .
+V_{\text{eff}}(r) = \frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{1}{r} + \frac{L^2}{2mr^2} = -\frac{\kappa}{r} + \frac{L^2}{2mr^2} .
 $$
 
 For the attractive case $\kappa > 0$: the energy is negative for bound orbits and the orbit is an ellipse with the focus at the fixed charge,
@@ -63,7 +63,7 @@ $$
 so that the deflection grows without bound as the impact parameter decreases, and it is toward the force centre for attraction and away from it for repulsion. The classical differential cross section that follows is the Rutherford formula,
 
 $$
-\frac{d\sigma}{d\Omega} = \left(\frac{|\kappa|}{2mv_\infty^2}\right)^2\frac{1}{\sin^4(\Theta/2)} = \left(\frac{|q_1q_2|}{16\pi\epsilon_0 E}\right)^2\frac{1}{\sin^4(\Theta/2)} ,
+\frac{d\sigma}{d\Omega} = \left(\frac{|\kappa|}{2mv_\infty^2}\right)^2\frac{1}{\sin^4(\Theta/2)} = \left(\frac{|ϙ_1ϙ_2|}{16\pi\epsilon_0 E}\right)^2\frac{1}{\sin^4(\Theta/2)} ,
 $$
 
 whose agreement with experiment established the nuclear model of the atom. The formula uses only the classical orbit; no spin, no magnetic moment and no quantum state enters. The particle is the structureless charged point of the central-scalar limit, and the scattering is its purely electrostatic response.
@@ -85,7 +85,7 @@ with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in 
 The extra conserved vector is
 
 $$
-\vec A = \vec p\times\vec L - m\kappa\,\hat r , \qquad \{A_i, H\} = 0 ,
+\vec A = \vec p\times\vec L - m\kappa\,\vec u_r , \qquad \{A_i, H\} = 0 ,
 $$
 
 whose conservation, direction and magnitude were established in the preceding article:
@@ -263,7 +263,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. Its two Casi
 
 ### What the Algebra Does Not Contain
 
-**The reciprocal length.** The Runge–Lenz vector contains $\hat r = \vec r/|\vec r|$, and $|\vec r|^{-1}$ is not a polynomial in the components of $\vec r$. Normalization is a nonlinear operation, and the finite-dimensional algebra does not implement it. The same obstruction applies to the potential $-\kappa/r$, which is a central scalar function but not an element built from $\vec r$ by algebra operations; it is a function on the configuration space, inserted as data.
+**The reciprocal length.** The Runge–Lenz vector contains $\vec u_r = \vec r/|\vec r|$, and $|\vec r|^{-1}$ is not a polynomial in the components of $\vec r$. Normalization is a nonlinear operation, and the finite-dimensional algebra does not implement it. The same obstruction applies to the potential $-\kappa/r$, which is a central scalar function but not an element built from $\vec r$ by algebra operations; it is a function on the configuration space, inserted as data.
 
 **The phase space.** The six generators and their brackets are functions on the six-dimensional space of pairs $(\vec r,\vec p)$. That space is not a module over $\mathbb{B}$; the algebra is a single copy of $M_2(\mathbb{C})$ and the phase space is infinite-dimensional as a space of functions. The hidden symmetry is a symmetry of the phase space.
 
@@ -271,7 +271,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. Its two Casi
 
 ## Summary
 
-The classical Coulomb problem is the inverse-square force with coupling $\kappa = -q_1q_2/(4\pi\epsilon_0)$. Its force is a central real vector in $\mathbb{M}_-$, its potential a central scalar in $\mathbb{M}_+$, and its orbits the conic sections. For the attractive case $\kappa > 0$, with the mass written $m$ as everywhere else in this subcategory,
+The classical Coulomb problem is the inverse-square force with coupling $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$. Its force is a central real vector in $\mathbb{M}_-$, its potential a central scalar in $\mathbb{M}_+$, and its orbits the conic sections. For the attractive case $\kappa > 0$, with the mass written $m$ as everywhere else in this subcategory,
 
 $$
 p = \frac{L^2}{m\kappa}, \qquad e = \sqrt{1 + \frac{2EL^2}{m\kappa^2}} , \qquad a = -\frac{\kappa}{2E} .
@@ -281,7 +281,7 @@ The repulsive case $\kappa < 0$ has $p < 0$, so its polar orbit is the same expr
 
 The particle is structureless and carries no intrinsic magnetic moment; its orbital motion's magnetic field is not an intrinsic magnetism.
 
-The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\hat r$ with $|\vec A| = m\kappa e$. The six generators close under the Poisson bracket:
+The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m\kappa e$. The six generators close under the Poisson bracket:
 
 $$
 \{L_i,L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i,A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k .
@@ -312,12 +312,12 @@ The framework supplies the real three-space in which all six generators take the
 | $i$ | Central scalar imaginary, $i^2 = -e_0$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian), informational (Hermitian) sectors |
 | $\vec r, \vec p$ | Position, momentum: real vectors in $\operatorname{span}\{e_1,e_2,e_3\}$ |
-| $q_1, q_2$, $\epsilon_0$ | Charges; vacuum permittivity |
-| $\kappa = -q_1q_2/(4\pi\epsilon_0)$ | Coulomb coupling; $\kappa>0$ attractive |
+| $ϙ_1, ϙ_2$, $\epsilon_0$ | Charges; vacuum permittivity |
+| $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ | Coulomb coupling; $\kappa>0$ attractive |
 | $V(r) = -\kappa/r$ | Coulomb potential; central scalar |
 | $H = p^2/(2m) - \kappa/r$ | Hamiltonian |
 | $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ | Angular momentum; vector part of $\vec r\vec p$ |
-| $\vec A = \vec p\times\vec L - m\kappa\hat r$ | Runge–Lenz vector |
+| $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m\kappa e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
 | $\{L_i,L_j\}=\epsilon_{ijk}L_k$ | Angular-momentum bracket |

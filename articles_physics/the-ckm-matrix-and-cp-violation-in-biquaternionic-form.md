@@ -19,7 +19,7 @@ The framework's contribution is therefore the tensor structure of the flavour se
 
 The article is organised as follows. A section defines the CKM matrix and places it on the flavour factor. A section gives the parameter count and the CP phase. A section explains why the phase is not central. A section gives the mass-matrix origin of the mixing. A section treats the Jarlskog invariant and the condition for CP violation. A section collects the Wolfenstein parametrisation, the unitarity triangle, and the measured values. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$; $\mathbb{B}\cong M_2(\mathbb{C})$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The Dirac module is $\Delta=S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta=4$, with $P_L,P_R$ the chiral projectors. The generation space is $\mathcal{F}=\mathbb{C}^{N_g}$ and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$; the flavour operators are $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The quark mass matrices are $M_u,M_d\in M_{N_g}(\mathbb{C})\otimes I_\Delta$ and are diagonalised by unitary rotations on $\mathcal{F}$. The **CKM matrix** is $V=U_u^\dagger U_d$; the parametrisation and the numerical values are the Particle Data Group's, with $\lambda=0.22500$, $A=0.826$, $\bar\rho=0.159$, $\bar\eta=0.348$ and $\delta$ the CP-violating phase. Natural units $\hbar=c=1$ are used.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$; $\mathbb{B}\cong M_2(\mathbb{C})$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The Dirac module is $\Delta=S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta=4$, with $P_L,P_R$ the chiral projectors. The generation space is $\mathcal{F}=\mathbb{C}^{N_g}$ and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$; the flavour operators are $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The quark mass matrices are $M_u,M_d\in M_{N_g}(\mathbb{C})\otimes I_\Delta$ and are diagonalised by unitary rotations on $\mathcal{F}$. The **CKM matrix** is $V=X_u^\dagger X_d$; the parametrisation and the numerical values are the Particle Data Group's, with $\lambda=0.22500$, $A=0.826$, $\bar\rho=0.159$, $\bar\eta=0.348$ and $\delta$ the CP-violating phase. Natural units $\hbar=c=1$ are used.
 
 The framework results used here are those of the companion articles:
 
@@ -34,11 +34,11 @@ The framework results used here are those of the companion articles:
 
 $$
 \mathcal{L}_{W} \supset \frac{g}{\sqrt2}\,W^+_\mu\,
-\bar{u}_{iL}\gamma^\mu V_{ij}\,d_{jL} + \text{h.c.},
-\qquad V = U_u^\dagger U_d ,
+\bar{\mathrm u}_{iL}\gamma^\mu V_{ij}\,d_{jL} + \text{h.c.},
+\qquad V = X_u^\dagger X_d ,
 $$
 
-where $U_u$ and $U_d$ diagonalise the up- and down-type mass matrices. In the framework the mass matrices are flavour operators, $M_u=I_\Delta\otimes M_u^{\mathcal{F}}$ and $M_d=I_\Delta\otimes M_d^{\mathcal{F}}$, with the module factor common and the flavour factor carrying the generation dependence; the diagonalising matrices are unitary operators on $\mathcal{F}$, and $V$ is their relative rotation. The whole construction lives on $\mathcal{F}$.
+where $X_u$ and $X_d$ diagonalise the up- and down-type mass matrices. In the framework the mass matrices are flavour operators, $M_u=I_\Delta\otimes M_u^{\mathcal{F}}$ and $M_d=I_\Delta\otimes M_d^{\mathcal{F}}$, with the module factor common and the flavour factor carrying the generation dependence; the diagonalising matrices are unitary operators on $\mathcal{F}$, and $V$ is their relative rotation. The whole construction lives on $\mathcal{F}$.
 
 **The tensor form.** The interaction vertex is therefore
 
@@ -89,12 +89,12 @@ a decomposition that follows by counting the antisymmetric and orthogonal genera
 **The diagonalisation.** The mixing matrix arises from the mismatch between the up- and down-type mass matrices. In the framework,
 
 $$
-M_u^{\mathcal{F}} = U_u\,D_u\,U_u^\dagger,\qquad
-M_d^{\mathcal{F}} = U_d\,D_d\,U_d^\dagger,\qquad
-V = U_u^\dagger U_d ,
+M_u^{\mathcal{F}} = X_u\,D_u\,X_u^\dagger,\qquad
+M_d^{\mathcal{F}} = X_d\,D_d\,X_d^\dagger,\qquad
+V = X_u^\dagger X_d ,
 $$
 
-with $D_u,D_d$ diagonal and positive. The mixing is a measure of how differently the two matrices are diagonalised, and it vanishes when $U_u=U_d$. The framework's module factor is common to both, which is why the two diagonalisations are on the same flavour space and why the relative rotation is meaningful. The mass matrices $M^{\mathcal{F}}$ are general complex $N_g\times N_g$ matrices, and the eigenvalues are the quark masses.
+with $D_u,D_d$ diagonal and positive. The mixing is a measure of how differently the two matrices are diagonalised, and it vanishes when $X_u=X_d$. The framework's module factor is common to both, which is why the two diagonalisations are on the same flavour space and why the relative rotation is meaningful. The mass matrices $M^{\mathcal{F}}$ are general complex $N_g\times N_g$ matrices, and the eigenvalues are the quark masses.
 
 **The invariant content.** The mixing matrix and the mass eigenvalues contain the same information as the two mass matrices up to the rephasings. The framework's statement is that all of this information lives on $\mathcal{F}$, that the module factor contributes nothing to it, and that the gauge sector's flavour-universality is what makes the mixing observable in the charged current and not in the neutral current. This is the algebraic content of the GIM mechanism and it is exact in the framework.
 
@@ -187,12 +187,12 @@ exactly half the Jarlskog invariant: $|J|/2 = 1.541866\times10^{-5}$, and the co
 
 ## CP Violation in the Lepton Sector
 
-**The parallel structure.** The lepton sector has the same framework structure as the quark sector: a mixing matrix $U_{\mathrm{PMNS}}=U_e^\dagger U_\nu$ on the flavour factor, diagonalising the charged-lepton and neutrino mass matrices, with the same tensor placement $I_\Delta\otimes U_{\mathrm{PMNS}}$. The matrix is unitary and, for three generations, carries one CP-violating phase $\delta_{\mathrm{CP}}$ (and possibly two Majorana phases, which do not affect neutrino oscillations). The companion article on the neutrino and the seesaw article supply the neutrino mass matrices; this section records the parallel.
+**The parallel structure.** The lepton sector has the same framework structure as the quark sector: a mixing matrix $X_{\mathrm{PMNS}}=X_e^\dagger X_\nu$ on the flavour factor, diagonalising the charged-lepton and neutrino mass matrices, with the same tensor placement $I_\Delta\otimes X_{\mathrm{PMNS}}$. The matrix is unitary and, for three generations, carries one CP-violating phase $\delta_{\mathrm{CP}}$ (and possibly two Majorana phases, which do not affect neutrino oscillations). The companion article on the neutrino and the seesaw article supply the neutrino mass matrices; this section records the parallel.
 
 **The leptonic Jarlskog invariant.** The leptonic analogue of $J$ is
 
 $$
-J_{\mathrm{CP}} = \mathrm{Im}\big(U_{e1}U_{\mu2}U_{e2}^{*}U_{\mu1}^{*}\big)
+J_{\mathrm{CP}} = \mathrm{Im}\big(X_{e1}X_{\mu2}X_{e2}^{*}X_{\mu1}^{*}\big)
 = c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta_{\mathrm{CP}} ,
 $$
 
@@ -221,7 +221,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 | The count $(N_g-1)^2$, and $N_g\ge3$ for a CP phase | **Supplied** by the unitary group of the flavour factor; standard counting |
 | The non-centrality of the CP phase | **Supplied**; the centre is $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ and acts on all generations alike |
 | The Jarlskog invariant as a flavour-factor commutator | **Supplied** in form; standard in content |
-| The mass-matrix origin of the mixing, $V=U_u^\dagger U_d$ | **Transcribed**; standard |
+| The mass-matrix origin of the mixing, $V=X_u^\dagger X_d$ | **Transcribed**; standard |
 | The Wolfenstein parametrisation and the unitarity triangle | **Transcribed**; standard |
 | The measured values of the angles, phase, and $J$ | **Transcribed**; standard, with unitarity and $J$ recomputed |
 | The values of the CKM parameters, and the mass matrices | **Not supplied**; empirical |
@@ -240,7 +240,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 ## Summary
 
-The CKM matrix is a unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=U_u^\dagger U_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $I_\Delta\otimes(\gamma^\mu P_LV)$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $U(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
+The CKM matrix is a unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=X_u^\dagger X_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $I_\Delta\otimes(\gamma^\mu P_LV)$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $U(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
 
 The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor $I_\Delta\otimes M_{N_g}(\mathbb{C})$. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is proportional to the imaginary part of the determinant of the commutator of the two mass-matrix products; the recomputation with the standard parameters gave $J=3.08\times10^{-5}$, unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
 
@@ -255,7 +255,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in U(N_g)$ | The CKM matrix as a flavour-factor operator |
 | $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ | Up- and down-type mass matrices on $\mathcal{F}$ |
-| $V=U_u^\dagger U_d$ | CKM matrix from the diagonalisations |
+| $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
 | $I_\Delta\otimes(\gamma^\mu P_LV)$ | Charged-current vertex |
 | $I_\Delta\otimes I_{\mathcal{F}}$ | Gauge vertices; flavour universality (GIM) |
 | $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
@@ -265,7 +265,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\lambda,A,\bar\rho,\bar\eta$ | Wolfenstein parameters (barred values) |
 | $\alpha,\beta,\gamma$ | Unitarity-triangle angles |
 | $A_\triangle=\tfrac12|J|$ | Unitarity-triangle area |
-| $U_{\mathrm{PMNS}}$, $\delta_{\mathrm{CP}}$, $J_{\mathrm{CP}}$ | Leptonic mixing matrix, phase, invariant |
+| $X_{\mathrm{PMNS}}$, $\delta_{\mathrm{CP}}$, $J_{\mathrm{CP}}$ | Leptonic mixing matrix, phase, invariant |
 | $J=3.08\times10^{-5}$ | Measured Jarlskog invariant (recomputed) |
 | $\sin2\beta=0.707$, $\gamma\simeq65.4^\circ$ | Recomputed CP observables |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

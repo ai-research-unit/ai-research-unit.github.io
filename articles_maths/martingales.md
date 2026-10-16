@@ -5,7 +5,7 @@
 
 A martingale is the mathematical model of a fair game. The process records the fortune of a gambler, the filtration records the history of the play, and the defining relation — the conditional expectation of tomorrow's fortune given today's history equals today's fortune — is the statement that the game offers no advantage at any time. The theory built on this definition is the most useful part of probability: the maximal inequalities control the size of a process at all times, the convergence theorem decides when a process has a limit, the optional stopping theorem permits the replacement of a fixed time by a random one, and the tools apply to sums of independent variables, to likelihood ratios, to branching processes and to the fluctuations of an estimator.
 
-This article develops the discrete-time theory. It defines the filtration, the stopping time and the three varieties of the martingale, gives the standard examples, proves the Doob decomposition, the maximal inequality and the upcrossing inequality, establishes the almost-sure and $L^p$ convergence theorems, characterises the uniformly integrable martingales and proves the optional stopping theorem in the forms in which it is used, and derives the martingale central limit theorem as the bridge to the continuous-time theory.
+This article develops the discrete-time theory. It defines the filtration, the stopping time and the three varieties of the martingale, gives the standard examples, proves the Doob decomposition, the maximal inequality and the upcrossing inequality, establishes the almost-sure and $L^{n}$ convergence theorems, characterises the uniformly integrable martingales and proves the optional stopping theorem in the forms in which it is used, and derives the martingale central limit theorem as the bridge to the continuous-time theory.
 
 The place of the article is fixed by three boundaries.
 
@@ -79,9 +79,9 @@ $$
 \mathbb{E}[X_n] \geq \mathbb{E}[X_n\mathbf{1}_{\{X_n^*\geq\lambda\}}] \geq \mathbb{E}[X_\tau \mathbf{1}_{\{X_n^*\geq\lambda\}}] \geq \lambda\,\mathbb{P}(X_n^*\geq\lambda).
 $$
 
-The maximal inequality is the martingale form of the Kolmogorov inequality of *Laws of Large Numbers and the Central Limit Theorem*, and it is the engine of the almost-sure convergence theorem below. Its $L^p$ version is the following.
+The maximal inequality is the martingale form of the Kolmogorov inequality of *Laws of Large Numbers and the Central Limit Theorem*, and it is the engine of the almost-sure convergence theorem below. Its $L^{n}$ version is the following.
 
-**Theorem (Doob's $L^p$ inequality).** For a nonnegative submartingale and $p > 1$,
+**Theorem (Doob's $L^{n}$ inequality).** For a nonnegative submartingale and $p > 1$,
 
 $$
 \|X_n^*\|_p \leq \frac{p}{p-1}\,\|X_n\|_p,
@@ -89,7 +89,7 @@ $$
 
 and for a martingale the same inequality holds with $|X|$ in place of $X$ and $X_n^{**} = \max_{k\leq n}|X_k|$.
 
-The constant $p/(p-1)$ is the best possible, and the inequality is the reason the martingale transform and the stochastic integral are bounded operators on $L^p$. The case $p = 2$ gives $\|X_n^*\|_2 \leq 2\|X_n\|_2$ and is the form used in the martingale central limit theorem.
+The constant $p/(p-1)$ is the best possible, and the inequality is the reason the martingale transform and the stochastic integral are bounded operators on $L^{n}$. The case $p = 2$ gives $\|X_n^*\|_2 \leq 2\|X_n\|_2$ and is the form used in the martingale central limit theorem.
 
 ### The Upcrossing Inequality
 
@@ -121,7 +121,7 @@ The upcrossing inequality is the criterion for convergence: a process that canno
 
 **Corollary (the martingale case).** A martingale that is bounded in $L^1$ converges a.s. to an integrable limit. The limit need not be the $L^1$ limit, and the process need not be uniformly integrable: the multiplicative martingale $M_0 = 1$, $M_{n+1} = 2M_n$ on a head and $M_{n+1} = 0$ on a tail, with independent fair tosses, is nonnegative with $\mathbb{E}M_n = 1$ for every $n$, and $M_n \to 0$ a.s. because a tail eventually occurs, but $M_n$ does not converge to $0$ in $L^1$ since $\mathbb{E}M_n = 1$.
 
-### $L^p$ Convergence and Uniform Integrability
+### $L^{n}$ Convergence and Uniform Integrability
 
 **Definition.** A family $\{X_i\}$ of integrable random variables is **uniformly integrable** if
 
@@ -129,7 +129,7 @@ $$
 \lim_{K\to\infty}\sup_i \mathbb{E}\bigl[|X_i|\mathbf{1}_{\{|X_i|>K\}}\bigr] = 0.
 $$
 
-**Theorem (uniform integrability and convergence).** Let $\{X_n\}$ be a submartingale. The following are equivalent: $\{X_n\}$ is uniformly integrable; $X_n \to X_\infty$ a.s. and in $L^1$ for some integrable $X_\infty$; and there is an integrable $X_\infty$ with $X_n = \mathbb{E}[X_\infty \mid \mathcal{F}_n]$ for every $n$. If $\sup_n\mathbb{E}|X_n|^p < \infty$ for some $p > 1$ then the process is uniformly integrable and $X_n \to X_\infty$ in $L^p$.
+**Theorem (uniform integrability and convergence).** Let $\{X_n\}$ be a submartingale. The following are equivalent: $\{X_n\}$ is uniformly integrable; $X_n \to X_\infty$ a.s. and in $L^1$ for some integrable $X_\infty$; and there is an integrable $X_\infty$ with $X_n = \mathbb{E}[X_\infty \mid \mathcal{F}_n]$ for every $n$. If $\sup_n\mathbb{E}|X_n|^p < \infty$ for some $p > 1$ then the process is uniformly integrable and $X_n \to X_\infty$ in $L^{n}$.
 
 *Proof (sketch).* Uniform integrability gives $\sup_n\mathbb{E}|X_n| < \infty$, so $X_\infty$ exists a.s. by the convergence theorem; the uniform integrability upgrades the almost-sure convergence to $L^1$ convergence by the theorem of Vitali, and the $L^1$ convergence gives $X_n = \mathbb{E}[X_\infty\mid\mathcal{F}_n]$ by passing to the limit in the defining identity. Conversely a process closed by an integrable terminal variable is uniformly integrable by the absolute continuity of the integral.
 
@@ -197,7 +197,7 @@ The theorem is the martingale form of the strong law of large numbers, and it re
 
 A martingale is an adapted integrable process whose conditional expectation one step ahead is its present value; a submartingale has nonnegative drift and a supermartingale nonpositive drift. The fundamental examples are the partial sums of independent mean-zero variables, the conditional expectations $\mathbb{E}[X\mid\mathcal{F}_n]$, the likelihood ratio process of an absolutely continuous change of measure, and the martingale transform of a martingale by a bounded predictable integrand; convex functions of a martingale are submartingales by Jensen, and every submartingale is the sum of a martingale and a predictable increasing compensator by the Doob decomposition.
 
-A stopping time is a stopping rule that uses only the information available at the time, and the $\sigma$-algebra $\mathcal{F}_\tau$ collects the events decidable by then. Doob's maximal inequality bounds the distribution of the running maximum by the expectation of the terminal value, and its $L^p$ form bounds the $L^p$ norm of the running maximum by $p/(p-1)$ times the terminal norm; the upcrossing inequality bounds the expected number of crossings of an interval by the expectation of the terminal positive part, and it is the engine of the martingale convergence theorem: a submartingale with bounded positive part converges almost surely to an integrable limit. The convergence is in $L^1$ and in $L^p$ exactly when the process is uniformly integrable, or when it is closed by a terminal variable; Lévy's theorem identifies the limit of $\mathbb{E}[X\mid\mathcal{F}_n]$ as $\mathbb{E}[X\mid\mathcal{F}_\infty]$, and the optional stopping theorem states that a uniformly integrable martingale sampled at stopping times preserves its conditional expectations, with the gambler's ruin formulas as the classical application. The martingale central limit theorem replaces the deterministic variances of the classical theorem by the predictable quadratic variation and leads to the functional limit theorem and the Brownian motion; the applications to branching processes, to the Radon–Nikodym derivatives and to the strong law complete the discrete theory.
+A stopping time is a stopping rule that uses only the information available at the time, and the $\sigma$-algebra $\mathcal{F}_\tau$ collects the events decidable by then. Doob's maximal inequality bounds the distribution of the running maximum by the expectation of the terminal value, and its $L^{n}$ form bounds the $L^{n}$ norm of the running maximum by $p/(p-1)$ times the terminal norm; the upcrossing inequality bounds the expected number of crossings of an interval by the expectation of the terminal positive part, and it is the engine of the martingale convergence theorem: a submartingale with bounded positive part converges almost surely to an integrable limit. The convergence is in $L^1$ and in $L^{n}$ exactly when the process is uniformly integrable, or when it is closed by a terminal variable; Lévy's theorem identifies the limit of $\mathbb{E}[X\mid\mathcal{F}_n]$ as $\mathbb{E}[X\mid\mathcal{F}_\infty]$, and the optional stopping theorem states that a uniformly integrable martingale sampled at stopping times preserves its conditional expectations, with the gambler's ruin formulas as the classical application. The martingale central limit theorem replaces the deterministic variances of the classical theorem by the predictable quadratic variation and leads to the functional limit theorem and the Brownian motion; the applications to branching processes, to the Radon–Nikodym derivatives and to the strong law complete the discrete theory.
 
 ## Summary of Notation
 

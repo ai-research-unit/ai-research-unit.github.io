@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The sesquilinear sandwich $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\star\tilde X\star\tilde Q=\tilde P\tilde X^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternions* is a conjugate-linear operator, and the Hermitian form
+The sesquilinear sandwich $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\star\tilde X\star\tilde Q=\tilde P\tilde X^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternioid* is a conjugate-linear operator, and the Hermitian form
 
 $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})=\sum_\mu X_\mu\overline{Y_\mu}=\tfrac12\,\mathrm{tr}\bigl(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger}\bigr)
 $$
 
-of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
+of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
 
 $$
 \varphi\bigl(S_{\tilde P,\tilde Q}\tilde X,\tilde Y\bigr)=\overline{\varphi\bigl(\tilde X,S_{\tilde P,\tilde Q}^{\dagger}\tilde Y\bigr)} .
@@ -23,27 +23,27 @@ $$
 
 The adjoint exchanges the two parameters and conjugates them; it is an involution on the sandwich family, and the **self-adjoint** sandwiches are those whose two parameters are a conjugate pair, $S_{\tilde P,\tilde P^{*}}$, the conjugate pair being the self-adjoint pairs up to the scalar ambiguity of the parametrisation. The quadratic representation of the ternary product, which is the sandwich $\tilde Z\tilde Y^{*}\tilde Z=S_{\tilde Z,\tilde Z^{*}}$, is therefore self-adjoint, and this is the operator form of the Hermitian symmetry of the ternary product.
 
-The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternions*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
+The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternioid*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q$.
 
 ## The Hermitian Form and the Adjoint
 
 ### The Form
 
-**Recall.** The Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is
+**Recall.** The Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is
 
 $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}\bigl(\tilde X\tilde Y^{*}\bigr)=\sum_{\mu=0}^{3}X_\mu\overline{Y_\mu} ,
 $$
 
-with the scalar part $\mathrm{Sc}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
+with the scalar part $\mathrm{Sc}$ of *Introduction to the General Plain Sesqualgebra*; it is $\mathbb{C}$-linear in the first argument, conjugate-linear in the second, sesqui-symmetric, $\varphi(\tilde Y,\tilde X)=\overline{\varphi(\tilde X,\tilde Y)}$, and nondegenerate.
 
 **Proposition (the form is perfect).** If $\varphi(\tilde X,\tilde Y)=0$ for every $\tilde Y$ then $\tilde X=0$, and the same in the other argument; hence every conjugate-linear operator has a unique adjoint.
 
 **Proof.** Taking $\tilde Y=e_\mu$ gives $\varphi(\tilde X,e_\mu)=X_\mu$, so the vanishing for every $\mu$ gives the vanishing of $\tilde X$; the other argument is the sesqui-symmetry. Uniqueness of the adjoint is the standard consequence of nondegeneracy.
 
-**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*.
+**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*.
 
 ### The Twisted Adjoint Rule
 
@@ -59,7 +59,7 @@ for all $\tilde X,\tilde Y$. For a linear operator $T$ the adjoint is defined by
 
 **Proof.** The definitions are those of *The Sesquilinear Adjoint Operator*, §*The Definition*, on the sesqualgebra $\mathbb{B}$ with the form $\varphi$; the existence and the uniqueness are the perfection of §*The Form*, and the involution follows by applying the definition twice and using the sesqui-symmetry.
 
-**Remark.** The twist is not a convention but a necessity: a conjugate-linear operator cannot be self-adjoint under the linear rule unless it vanishes, exactly as a nonzero left multiplication cannot be $\mathbb{C}$-linear, by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Obstruction to a Single Linear Representation*. The two rules are the two parities of the operator theory read through the form.
+**Remark.** The twist is not a convention but a necessity: a conjugate-linear operator cannot be self-adjoint under the linear rule unless it vanishes, exactly as a nonzero left multiplication cannot be $\mathbb{C}$-linear, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Obstruction to a Single Linear Representation*. The two rules are the two parities of the operator theory read through the form.
 
 ### The General Theorem
 
@@ -67,7 +67,7 @@ for all $\tilde X,\tilde Y$. For a linear operator $T$ the adjoint is defined by
 
 **Proof.** These are the two computations of *The Sesquilinear Adjoint Operator*, §*The Sandwich and the Two-Sided Multiplication*, with the trace functional $\tau$ of that article read as the scalar part $\mathrm{Sc}$ here, the datum $(\mathbb{C},\varsigma)$ being the conjugation on the scalars; the compatibility $\mathrm{Sc}(\tilde S^{*})=\overline{\mathrm{Sc}(\tilde S)}$ and the centrality $\mathrm{Sc}(\tilde S\tilde R)=\mathrm{Sc}(\tilde R\tilde S)$ are the properties of the scalar part, and the pairings are perfect by §*The Form*.
 
-**Remark.** The translation between the general notation and the notation of this batch is the placement of the star: in the general article the sandwich is $ax^{*}b$, while the batch writes the sandwich of *The Sesquilinear Sandwich on the Biquaternions* as $\tilde P\tilde X^{*}\tilde Q^{*}$, that is $S_{\tilde P,\tilde Q}=S_{\tilde P,\tilde Q^{*}}$ in the general notation, with the second parameter conjugated. The next section translates the general theorem accordingly.
+**Remark.** The translation between the general notation and the notation of this batch is the placement of the star: in the general article the sandwich is $ax^{*}b$, while the batch writes the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* as $\tilde P\tilde X^{*}\tilde Q^{*}$, that is $S_{\tilde P,\tilde Q}=S_{\tilde P,\tilde Q^{*}}$ in the general notation, with the second parameter conjugated. The next section translates the general theorem accordingly.
 
 ## The Adjoint of the Sandwich
 
@@ -113,7 +113,7 @@ $$
 
 and for two invertible parameters the criterion is equivalent to $\tilde Q=\bar c\,\tilde P^{*}$ for a nonzero complex number $c$, so that the self-adjoint sandwiches with invertible parameters are the conjugate pairs up to that scalar ambiguity.
 
-**Proof.** By the main identity, $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}$, so self-adjointness is the equality $S_{\tilde Q^{*},\tilde P^{*}}=S_{\tilde P,\tilde Q}$. The conjugate pair satisfies it, because $(\tilde Q^{*},\tilde P^{*})=(\tilde P,\tilde P^{*})$ when $\tilde Q=\tilde P^{*}$. Conversely the equality of two sandwiches is the equality of two parametrised two-sided operators, and the kernel of the parametrisation is the group of the central units $\tilde Z=c\,e_0$, by *The Sesquilinear Sandwich on the Biquaternions*, §*The Invertible Sandwiches*; for invertible parameters the equality therefore reads $(\tilde Q^{*},\tilde P^{*})=(\tilde P\tilde Z,\tilde Q\tilde Z^{-1*})$ with $\tilde Z=c\,e_0$ a central unit, $c\in\mathbb{C}^{\times}$, that is $\tilde Q^{*}=c\tilde P$ and $\tilde P^{*}=\bar c^{-1}\tilde Q$, which is the single equation $\tilde Q=\bar c\,\tilde P^{*}$.
+**Proof.** By the main identity, $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}$, so self-adjointness is the equality $S_{\tilde Q^{*},\tilde P^{*}}=S_{\tilde P,\tilde Q}$. The conjugate pair satisfies it, because $(\tilde Q^{*},\tilde P^{*})=(\tilde P,\tilde P^{*})$ when $\tilde Q=\tilde P^{*}$. Conversely the equality of two sandwiches is the equality of two parametrised two-sided operators, and the kernel of the parametrisation is the group of the central units $\tilde Z=c\,e_0$, by *The Sesquilinear Sandwich on the Biquaternioid*, §*The Invertible Sandwiches*; for invertible parameters the equality therefore reads $(\tilde Q^{*},\tilde P^{*})=(\tilde P\tilde Z,\tilde Q\tilde Z^{-1*})$ with $\tilde Z=c\,e_0$ a central unit, $c\in\mathbb{C}^{\times}$, that is $\tilde Q^{*}=c\tilde P$ and $\tilde P^{*}=\bar c^{-1}\tilde Q$, which is the single equation $\tilde Q=\bar c\,\tilde P^{*}$.
 
 **Remark.** The self-adjoint sandwiches are therefore the sandwiches of the conjugate pairs, and they are parametrised by the elements $\tilde P$ of the algebra together with the scalar ambiguity $\tilde Q=\bar c\,\tilde P^{*}$, a four-dimensional complex family of operators. The adjoint is an involution on the sandwich family, so the self-adjoint sandwiches are the fixed points of that involution. The involution $S_{e_0,e_0}={}^{*}$ is the case $\tilde P=e_0$, and it is self-adjoint; the quadratic representation of the ternary product is the general case, by the next section.
 
@@ -141,7 +141,7 @@ $$
 
 **Proof.** The left multiplication is the sandwich $S_{\tilde P,e_0}$, so the main identity gives $L_{\tilde P}^{\dagger}=S_{e_0,\tilde P^{*}}$. The right multiplication is linear and equals $T_{e_0,\tilde Q^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
 
-**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_0,\tilde P^{*}}$ is the map $\tilde X\mapsto\tilde X^{*}\tilde P$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde P^{*}}L_{e_0}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
+**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_0,\tilde P^{*}}$ is the map $\tilde X\mapsto\tilde X^{*}\tilde P$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde P^{*}}L_{e_0}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
 
 ### The Quadratic Representation
 

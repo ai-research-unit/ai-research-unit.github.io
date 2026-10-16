@@ -93,7 +93,7 @@ the criterion of *The Signed Sandwich on a Topological Group*, read in the measu
 
 **Proof.** The transport is that of *The Signed Sandwich on the Group Algebra*; the adjoint formula applied to the transported parameters gives the displayed expression, and unitarity is invariant under a transport by a fixed element because $z$ cancels.
 
-**Remark (what the article does not do).** The adjoint of the reflection and of the signed left multiplication are the next two articles; the adjoint of a general convolution operator, its expression on $L^p$ and the involutive algebra it generates are *The Adjoint of a Convolution Operator*; the discrete version with the natural and signed bilinear forms, where the adjoint relation is $(L_a)^\dagger = L_{a^{-1}}$, is *The Signed Adjoint Sandwich on a Topological Group*, and the two forms are reconciled by the passage from the bilinear form to the Haar pairing through the involution $a\mapsto a^*$.
+**Remark (what the article does not do).** The adjoint of the reflection and of the signed left multiplication are the next two articles; the adjoint of a general convolution operator, its expression on $L^{n}$ and the involutive algebra it generates are *The Adjoint of a Convolution Operator*; the discrete version with the natural and signed bilinear forms, where the adjoint relation is $(L_a)^\dagger = L_{a^{-1}}$, is *The Signed Adjoint Sandwich on a Topological Group*, and the two forms are reconciled by the passage from the bilinear form to the Haar pairing through the involution $a\mapsto a^*$.
 
 ## Summary
 

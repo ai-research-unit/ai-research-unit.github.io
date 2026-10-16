@@ -160,7 +160,7 @@ is a homeomorphism onto its image, where $X^{G} = \{x : Gx = \{x\}\}$ is the fix
 
 **Example (a trivial action on a nontrivial space).** Let $G$ act on a space $X$ by $gx = x$. Every orbit is a singleton, $\pi$ is a homeomorphism, and the invariant subsets are all subsets; the universal property degenerates to the statement that every continuous map is invariant.
 
-**Example (a free action of a finite group).** Let $G = \mathbb{Z}/3$ act on the circle $S^{1}$ by a homeomorphism of order three with no fixed points, for instance by the map that carries $z$ to $\omega z$ with $\omega = e^{2\pi i/3}$ on the unit circle. The orbit map is a three-sheeted covering and the quotient is again a circle. The action is free, so the fibres have three points, and $\pi$ is open and closed.
+**Example (a free action of a finite group).** Let $G = \mathbb{Z}/3$ act on the circle $S^{1}$ by a homeomorphism of order three with no fixed points, for instance by the map that carries $z$ to $\omega z$ with $\omega = \exp(2\pi i/3)$ on the unit circle. The orbit map is a three-sheeted covering and the quotient is again a circle. The action is free, so the fibres have three points, and $\pi$ is open and closed.
 
 **Remark.** The orbit space of an action of a topological group on a Hausdorff space is not automatically Hausdorff, and the failure for the group $\mathbb{Z}/2$ is the subject of *Spaces with an Involution and the Orbit Space*, where the exact condition is identified. For an abstract group acting by homeomorphisms the general criterion is the closedness of the orbit equivalence relation in $X \times X$, used there in the special case of an involution.
 

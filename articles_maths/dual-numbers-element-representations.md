@@ -278,7 +278,7 @@ $$
 \dim_R \operatorname{End}_{\mathbb{D}'}(V) = p^2 + 2pq + 2q^2.
 $$
 
-It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{D}')$ (acting on the regular summands) as subalgebras, but it is **not** their direct sum when $p, q > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{D}'$ is not semisimple.
+It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{D}')$ (acting on the regular summands) as subalgebras, but it is **not** their direct sum when $n, m > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{D}'$ is not semisimple.
 
 ## The Category of Representations
 

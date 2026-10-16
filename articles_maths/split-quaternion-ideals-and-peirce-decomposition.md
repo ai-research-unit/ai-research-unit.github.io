@@ -15,7 +15,7 @@ and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the w
 
 The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.
 
-**Conventions.** The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $N$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
+**Conventions.** The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
 
 ## Ideals in an Algebra
 
@@ -194,7 +194,7 @@ The middle elements are pairwise incomparable; each covers $0$ and is covered by
 
 **The quaternions.** The algebra $\mathbb{H}$ is a division algebra, so every nonzero element is invertible and the only left ideal is $0$ or $\mathbb{H}$ itself; there are no proper one-sided ideals and no nontrivial idempotents. The absence of proper ideals is a consequence of the division property: if $I \neq 0$ is a left ideal and $0 \neq \tilde q \in I$, then $1 = \tilde q^{-1} \tilde q \in I$, so $I = \mathbb{H}$. The split-quaternion algebra has the same two-sided ideal lattice as $\mathbb{H}$ — just $0$ and the whole algebra — but its one-sided ideal lattice is as large as a circle, and the difference is entirely due to the zero divisors.
 
-**The biquaternions.** Over $\mathbb{C}$, $\mathbb{B} \cong M_2(\mathbb{C})$ is simple in the same way, its length as a left module over itself is $2$, its idempotents $p, q$ play the role of $\tilde\pi_{1,2}$, and its matrix units satisfy the same relations; the only change is that the minimal left ideals are indexed by the **complex** projective line $\mathbb{P}^1(\mathbb{C})$, a two-dimensional real surface, rather than the circle $\mathbb{P}^1(\mathbb{R})$. The ideal theory over the base field $\mathbb{R}$ is developed in *Ideals and Peirce Decomposition of the General Plain Algebra*; the passage from $\mathbb{C}$ to $\mathbb{R}$ restricts the parameter space of minimal left ideals to a real circle but leaves the shape of the lattice unchanged.
+**The biquaternions.** Over $\mathbb{C}$, $\mathbb{B} \cong M_2(\mathbb{C})$ is simple in the same way, its length as a left module over itself is $2$, its idempotents $p, q$ play the role of $\tilde\pi_{1,2}$, and its matrix units satisfy the same relations; the only change is that the minimal left ideals are indexed by the **complex** projective line $\mathbb{P}^1(\mathbb{C})$, a two-dimensional real surface, rather than the circle $\mathbb{P}^1(\mathbb{R})$. The ideal theory over the base field $\mathbb{R}$ is developed in *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the passage from $\mathbb{C}$ to $\mathbb{R}$ restricts the parameter space of minimal left ideals to a real circle but leaves the shape of the lattice unchanged.
 
 ## Summary
 
@@ -222,7 +222,7 @@ The two columns $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ are the minimal left i
 | $eAe$, $eAf$, … | the Peirce spaces of an idempotent $e$ | this article |
 | $L_W$ | the minimal left ideal annihilating the line $W$ | this article |
 | $\mathbb{P}^1(\mathbb{R})$ | the real projective line, parametrising the minimal left ideals | this article |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically | this article |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically | this article |
 
 ## Further Reading
 

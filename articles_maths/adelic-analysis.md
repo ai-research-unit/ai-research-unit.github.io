@@ -49,9 +49,9 @@ the same quantity as the additive volume, in accordance with the Tamagawa number
 
 **Definition.** A choice of a nontrivial additive character of $\mathbb{A}/K$ is made once and for all: at the finite places
 $$
-\psi_v(x) = e^{-2\pi i \{x\}_v} \quad \text{with } \{x\}_v \in \mathbb{Z}[1/p] \text{ the fractional part of } x,
+\psi_v(x) = \exp(-2\pi i \{x\}_v) \quad \text{with } \{x\}_v \in \mathbb{Z}[1/p] \text{ the fractional part of } x,
 $$
-at the real place $\psi_v(x) = e^{2\pi i x}$, and at a complex place $\psi_v(z) = e^{4\pi i \operatorname{Re} z}$; and $\psi = \prod_v \psi_v$ is the product character on $\mathbb{A}$.
+at the real place $\psi_v(x) = \exp(2\pi i x)$, and at a complex place $\psi_v(z) = \exp(4\pi i \operatorname{Re} z)$; and $\psi = \prod_v \psi_v$ is the product character on $\mathbb{A}$.
 
 **Theorem.** The product character is well defined, continuous and trivial on $K$:
 $$
@@ -65,13 +65,13 @@ by the product formula; consequently it induces a character of the compact group
 
 **Definition.** The Fourier transform of a function $f$ on $\mathbb{A}$ for which the integral converges is
 $$
-\hat f(\xi) = \int_{\mathbb{A}} f(x)\, \psi(\xi x)\, d\mu(x),
+(\mathcal F f)(\xi) = \int_{\mathbb{A}} f(x)\, \psi(\xi x)\, d\mu(x),
 $$
 and the **Schwartz–Bruhat space** $\mathcal{S}(\mathbb{A})$ is the restricted product of the local Schwartz spaces: locally constant compactly supported functions at the finite places and Schwartz functions at the infinite ones, with the convergence requirement that almost every local factor be the indicator of $\mathcal{O}_v$.
 
 **Theorem (inversion and Plancherel).** For $f \in \mathcal{S}(\mathbb{A})$ the Fourier transform lies in $\mathcal{S}(\mathbb{A})$ and
 $$
-\hat{\hat f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert \hat f(\xi) \rvert^2 \, d\mu(\xi) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
+\hat{\mathcal F f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert (\mathcal F f)(\xi) \rvert^2 \, d\mu(\xi) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
 $$
 **Proof sketch.** The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $\psi_v$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument.
 
@@ -79,11 +79,11 @@ $$
 
 **Theorem (Poisson summation).** Let $f \in \mathcal{S}(\mathbb{A})$. Then
 $$
-\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} \hat f(\gamma),
+\sum_{\gamma \in K} f(\gamma) = \sum_{\gamma \in K} (\mathcal F f)(\gamma),
 $$
 both series converging absolutely.
 
-**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $\hat f(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.
+**Proof sketch.** The sum over $K$ of $f$ defines a continuous function $F$ on the compact quotient $\mathbb{A}/K$; its Fourier coefficients on the compact group are the values $(\mathcal F f)(\gamma)$ of the transform, by the computation of the pairing of $F$ against the character $\psi_\gamma$. The inversion formula for the compact group $\mathbb{A}/K$, applied at $x=0$, identifies the value $F(0)$ with the sum of the coefficients.
 
 **Corollary (Riemann–Roch).** Let $K$ be a function field of one variable over a finite field, let $D$ be a divisor of $K$ and let $f$ be the indicator of the compact open subgroup of the adeles consisting of the elements integral with respect to $D$. Then the Poisson summation formula becomes the Riemann–Roch theorem: the dimension of the space of functions whose divisor is bounded below by $D$, together with the corresponding dimension for the complementary divisor $K-D$, differs by the fixed amount $\deg D + 1 - g$.
 
@@ -162,19 +162,19 @@ with the global root number satisfying $\epsilon(s,\chi)\epsilon(1-s,\chi^{-1}) 
 
 ### The Completed Zeta Function
 
-**Corollary (the Riemann zeta function).** Take $K = \mathbb{Q}$, $\chi = 1$ and $\Phi = \prod_v \Phi_v$ with $\Phi_\infty(x) = e^{-\pi x^2}$ and $\Phi_p = \mathbf{1}_{\mathbb{Z}_p}$. Then the global zeta integral is
+**Corollary (the Riemann zeta function).** Take $K = \mathbb{Q}$, $\chi = 1$ and $\Phi = \prod_v \Phi_v$ with $\Phi_\infty(x) = \exp(-\pi x^2)$ and $\Phi_p = \mathbf{1}_{\mathbb{Z}_p}$. Then the global zeta integral is
 $$
 Z(s) = \pi^{-s/2}\Gamma(s/2)\,\zeta(s) = \Lambda(s),
 $$
 the completed Riemann zeta function, and the functional equation of the theorem becomes $\Lambda(s) = \Lambda(1-s)$; the Euler product of the theorem becomes $\zeta(s) = \prod_p (1-p^{-s})^{-1}$.
 
-**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} e^{-\pi x^2}\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\zeta$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$.
+**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} \exp(-\pi x^2)\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\zeta$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$.
 
 The corollary is the prototype. The analytic continuation, the special values, the distribution of the zeros and the arithmetic applications of $\zeta$ and of the Hecke $L$-functions $L(s,\chi)$ are the subject , which take this article's local and global functional equations as their analytic input; the analytic proof of the prime number theorem belongs and the statements about the zeros. What this article supplies is the adelic integration, the Fourier transform, the Poisson summation formula and the two functional equations, local and global.
 
 ## Summary
 
-The adele ring of a number field carries a Haar measure obtained by multiplying the local Haar measures of its completions: at a finite place the measure with $\mu_v(\mathcal{O}_v) = 1$, at a real place the Lebesgue measure and at a complex place twice the plane Lebesgue measure, chosen so that every local measure is self-dual with respect to the standard local additive character. The product of the local measures is a well-defined Haar measure on the restricted product, the Tamagawa measure, and the volume of $\mathbb{A}/K$ is finite and equal to $\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{\lvert d_K\rvert}}$, which is $1$ for $\mathbb{Q}$; the compactness of $\mathbb{A}/K$ characterises the function fields, and the norm-one idele class group is compact with the same volume. The product of the standard local characters is a character of $\mathbb{A}/K$ by the product formula, and it makes $\mathbb{A}$ self-dual; the Fourier transform on the Schwartz–Bruhat space satisfies inversion and Plancherel, and the Poisson summation formula $\sum_K f = \sum_K \hat f$ holds, specialising to the Riemann–Roch theorem for a function field.
+The adele ring of a number field carries a Haar measure obtained by multiplying the local Haar measures of its completions: at a finite place the measure with $\mu_v(\mathcal{O}_v) = 1$, at a real place the Lebesgue measure and at a complex place twice the plane Lebesgue measure, chosen so that every local measure is self-dual with respect to the standard local additive character. The product of the local measures is a well-defined Haar measure on the restricted product, the Tamagawa measure, and the volume of $\mathbb{A}/K$ is finite and equal to $\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{\lvert d_K\rvert}}$, which is $1$ for $\mathbb{Q}$; the compactness of $\mathbb{A}/K$ characterises the function fields, and the norm-one idele class group is compact with the same volume. The product of the standard local characters is a character of $\mathbb{A}/K$ by the product formula, and it makes $\mathbb{A}$ self-dual; the Fourier transform on the Schwartz–Bruhat space satisfies inversion and Plancherel, and the Poisson summation formula $\sum_K f = \sum_K \mathcal F f$ holds, specialising to the Riemann–Roch theorem for a function field.
 
 The local zeta integrals $Z_v(s,\chi_v,\Phi_v) = \int \Phi_v\chi_v\lvert x\rvert_v^s d^\times x$ converge for $\Re s$ large, are rational in $q_v^{-s}$, and satisfy Tate's local functional equation with the local $\gamma$- and $\epsilon$-factors. The global zeta integral of a Hecke character and a factorisable function is the product of the local integrals, and it satisfies the global functional equation $Z(1-s,\chi^{-1},\hat\Phi) = Z(s,\chi,\Phi)$, from which the functional equation $\Lambda(s,\chi) = \epsilon(s,\chi)\Lambda(1-s,\chi^{-1})$ of the completed Hecke $L$-function follows by multiplying the local equations over the places. The completed Riemann zeta function is the case $K = \mathbb{Q}$, $\chi = 1$, $\Phi_\infty$ the Gaussian, and $\Phi_p$ the indicator of $\mathbb{Z}_p$, and its functional equation $\Lambda(s) = \Lambda(1-s)$ is the simplest instance of the whole theory.
 
@@ -192,8 +192,8 @@ The local zeta integrals $Z_v(s,\chi_v,\Phi_v) = \int \Phi_v\chi_v\lvert x\rvert
 | $\mu_v$, $\mu$ | Local Haar measures, the Tamagawa measure on $\mathbb{A}$ |
 | $d^\times x$ | Multiplicative measure on $\mathbb{A}^\times$ |
 | $\psi_v$, $\psi$ | Standard local additive characters, their product on $\mathbb{A}/K$ |
-| $\hat f$, $\mathcal{S}(\mathbb{A})$ | Fourier transform, Schwartz–Bruhat space |
-| Poisson summation | $\sum_{\gamma\in K} f(\gamma) = \sum_{\gamma\in K}\hat f(\gamma)$ |
+| $\mathcal F f$, $\mathcal{S}(\mathbb{A})$ | Fourier transform, Schwartz–Bruhat space |
+| Poisson summation | $\sum_{\gamma\in K} f(\gamma) = \sum_{\gamma\in K}(\mathcal F f)(\gamma)$ |
 | $\chi$, $\chi_v$ | Hecke character, its local components |
 | $\Phi$, $\Phi_v$ | Factorisable test function, local components |
 | $Z_v$, $Z$ | Local and global zeta integrals |

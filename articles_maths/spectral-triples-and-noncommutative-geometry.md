@@ -16,7 +16,7 @@ This article states the definition and the axioms, derives the distance formula,
 
 The triple is **even** if there is a $\mathbb{Z}/2$-grading $\gamma$ on $H$, $\gamma=\gamma^{*}$, $\gamma^{2}=1$, with $\gamma D=-D\gamma$ and $\gamma\pi(a)=\pi(a)\gamma$ for all $a\in A$; and **odd** otherwise.
 
-**Definition.** The **dimension** of a spectral triple is the number $p>0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(e^{-tD^{2}})\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following **axioms**: *regularity*, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; *finiteness*, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; *reality*, the existence of a real structure (below); *first order*, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and *orientation*, that the Hochschild cycle representing the volume element maps to the chirality operator.
+**Definition.** The **dimension** of a spectral triple is the number $p>0$ such that the eigenvalues $\lambda_n$ of $|D|$, listed with multiplicity, satisfy $\lambda_n\sim C n^{1/p}$; equivalently, such that the heat trace has the asymptotic $\operatorname{Tr}(\exp(-tD^{2}))\sim a_0 t^{-p/2}$ as $t\to0^{+}$. A spectral triple of finite dimension is also required to satisfy the following **axioms**: *regularity*, that $\pi(a)$ and $[D,\pi(a)]$ lie in the domain of every iterated commutator with $|D|$; *finiteness*, that the smooth domain $H^{\infty}=\bigcap_k\operatorname{Dom}D^{k}$ is a finitely generated projective $A$-module; *reality*, the existence of a real structure (below); *first order*, that $[[D,\pi(a)],\pi(b)^{o}]=0$ for all $a,b$, where $\pi(b)^{o}$ is the opposite representation; and *orientation*, that the Hochschild cycle representing the volume element maps to the chirality operator.
 
 **Remark.** The axioms are the algebraic shadow of the properties of a first-order elliptic operator on a closed spin manifold. The boundedness of the commutators is the statement that $D$ is a first-order differential operator; the compactness of the resolvent is the statement that the manifold is closed, so that the spectrum of $D$ is discrete; the dimension is the growth rate of the spectrum; and the finiteness axiom makes the smooth domain a projective module, so that it can serve as the module of sections of a bundle.
 
@@ -108,10 +108,10 @@ and the reconstruction is functorial.
 **Definition.** Let $(A,H,D)$ be an even spectral triple of finite dimension with grading $\gamma$. The **Connes–Chern character** is the cyclic cocycle
 
 $$
-\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}\bigl(\gamma\,a_0[D,a_1]\cdots[D,a_n]\,e^{-D^{2}}\bigr),
+\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}\bigl(\gamma\,a_0[D,a_1]\cdots[D,a_n]\,\exp(-D^{2})\bigr),
 $$
 
-of even degree, a closed cyclic cocycle modulo coboundaries; the operator $e^{-D^{2}}$ regularises the trace, and the boundedness of the commutators makes each term trace-class.
+of even degree, a closed cyclic cocycle modulo coboundaries; the operator $\exp(-D^{2})$ regularises the trace, and the boundedness of the commutators makes each term trace-class.
 
 **Theorem (index pairing).** Let $e\in M_N(A)$ be an idempotent representing a class $[e]\in K_0(A)$. Then the compression $eDe$ is a Fredholm operator on the range of $e$, the pairing of its index with the Connes–Chern character is
 
@@ -121,7 +121,7 @@ $$
 
 computed in the graded sense, and it depends only on the cyclic cohomology class of $\operatorname{ch}(D)$ and the $K$-theory class of $e$.
 
-**Proof sketch.** The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,e^{-(eDe)^{2}}$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.
+**Proof sketch.** The compressed operator $eDe$ is essentially self-adjoint with compact resolvent; its grading splitting has finite-dimensional kernel and cokernel, and the McKean–Singer supertrace argument expresses the index as the trace of $\gamma e\,\exp(-(eDe)^{2})$, which expands into the cyclic expression defining the character. The pairing is well defined because a coboundary in cyclic cohomology pairs trivially with $K$-theory.
 
 **Theorem (Connes–Moscovici local index formula).** Let $(A,H,D)$ be a spectral triple with finite dimension spectrum. Then the Connes–Chern character is a sum of residues of zeta functions at the points of the dimension spectrum, each residue being a local expression in $D$ and the elements of $A$; in particular the character is computable from the small-time asymptotics of the heat kernel of $D$.
 
@@ -136,7 +136,7 @@ computed in the graded sense, and it depends only on the cyclic cohomology class
 **Theorem.** For a spectral triple of spectral dimension $p$, the heat trace has the small-time asymptotic expansion
 
 $$
-\operatorname{Tr}\bigl(e^{-tD^{2}}\bigr)\sim\sum_{k}a_{k}\,t^{-(p-k)/2}\qquad(t\to0^{+}),
+\operatorname{Tr}\bigl(\exp(-tD^{2})\bigr)\sim\sum_{k}a_{k}\,t^{-(p-k)/2}\qquad(t\to0^{+}),
 $$
 
 with locally computable coefficients, and the **Weyl law** for the counting function $N(\lambda)=\#\{n:|\lambda_n|\leq\lambda\}$ is $N(\lambda)\sim C\lambda^{p}$.
@@ -187,7 +187,7 @@ A spectral triple $(A,H,D)$ is a represented $*$-algebra with a self-adjoint ope
 
 A real structure is an antilinear $J$ with signs $J^{2}=\varepsilon$, $JD=\varepsilon'DJ$ and $J\gamma=\varepsilon''\gamma J$, the order-zero and order-one conditions, and a KO-dimension that is periodic of period eight; for a spin manifold of dimension $m$ the KO-dimension is $m\bmod8$. By Connes' reconstruction theorem a commutative spectral triple satisfying the axioms is exactly a closed spin manifold with its spinor geometry, so the noncommutative theory generalises the classical one.
 
-The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}(\gamma a_0[D,a_1]\cdots[D,a_n]e^{-D^{2}})$; its pairing with $K_0(A)$ is the index of the compressed operator $eDe$, and the Connes–Moscovici local index formula computes the character as a sum of residues at the points of the dimension spectrum. The spectral dimension is the growth exponent of the spectrum of $D$, the heat trace has the asymptotic expansion $\operatorname{Tr}(e^{-tD^{2}})\sim\sum_ka_kt^{-(p-k)/2}$, and in the commutative case the leading coefficient is the volume. Finite-dimensional examples include the two-point space, where the distance is the inverse of the off-diagonal entry of $D$, and the almost commutative geometries $A_M\otimes A_F$, $D=D_M\otimes1+\gamma_M\otimes D_F$.
+The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\dots,a_n)=\operatorname{Tr}(\gamma a_0[D,a_1]\cdots[D,a_n]\exp(-D^{2}))$; its pairing with $K_0(A)$ is the index of the compressed operator $eDe$, and the Connes–Moscovici local index formula computes the character as a sum of residues at the points of the dimension spectrum. The spectral dimension is the growth exponent of the spectrum of $D$, the heat trace has the asymptotic expansion $\operatorname{Tr}(\exp(-tD^{2}))\sim\sum_ka_kt^{-(p-k)/2}$, and in the commutative case the leading coefficient is the volume. Finite-dimensional examples include the two-point space, where the distance is the inverse of the off-diagonal entry of $D$, and the almost commutative geometries $A_M\otimes A_F$, $D=D_M\otimes1+\gamma_M\otimes D_F$.
 
 ## Summary of Notation
 
@@ -209,7 +209,7 @@ The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\do
 | $eDe$ | Compression of $D$ by a projection; Fredholm operator |
 | $\Sigma$ | Dimension spectrum; poles of the zeta functions |
 | $p$ | Spectral dimension; growth exponent of the eigenvalues of $|D|$ |
-| $\operatorname{Tr}(e^{-tD^{2}})\sim\sum_ka_kt^{-(p-k)/2}$ | Heat trace asymptotics |
+| $\operatorname{Tr}(\exp(-tD^{2}))\sim\sum_ka_kt^{-(p-k)/2}$ | Heat trace asymptotics |
 | $N(\lambda)\sim C\lambda^{p}$ | Weyl law |
 | $A_M\otimes A_F$, $D=D_M\otimes1+\gamma_M\otimes D_F$ | Almost commutative geometry |
 

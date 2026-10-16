@@ -50,7 +50,7 @@ with the action of $\Gamma$ on the cohomology semilinear over $K$; the invariant
 **Theorem (the descent spectral sequence).** Let $G$ act on $X$ with $\mathcal{F}$ equivariant and let the action be **free** on a $G$-invariant open cover, so that the quotient exists and the cover descends. Then there is a spectral sequence
 
 $$
-E_2^{p,q}=H^p(G,H^q(X,\mathcal{F}))\;\Longrightarrow\;H^{p+q}(X/G,\mathcal{F}^{G}),
+E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\;\Longrightarrow\;H^{p+q}(X/G,\mathcal{F}^{G}),
 $$
 
 the **descent spectral sequence**; its edge maps in low degree give the exact sequence
@@ -63,7 +63,7 @@ which describes the cohomology of the descended sheaf in terms of the invariants
 
 *Proof.* The spectral sequence is the Cartan–Leray spectral sequence of the quotient map, whose construction is *Spectral Sequences* and *Group Cohomology*: the double complex is the one of the equivariant Čech complex of a $G$-invariant cover, one differential being the Čech coboundary of *The Coboundary Operator* and the other the group differential, and the two spectral sequences of the double complex carry the two filtrations. The low-degree exact sequence is the standard exact sequence of the edge maps of a first-quadrant spectral sequence.
 
-**Proposition (the involution on the pages).** For $G=\mathbb{Z}/2$ the descent spectral sequence carries the involution $\theta$ of the cohomology on the $E_2$ page, $E_2^{p,q}=H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$ with the involution induced by the action on the coefficients and on the group, and the involution commutes with the differentials and converges to the involution induced by $\theta$ on $H^*(X/G,\mathcal{F}^{G})$; the fixed part of the abutment is computed from the fixed parts of the pages. A class of the abutment is invariant under the descended involution exactly when its representatives are invariant on the pages, the degeneration hypothesis of *The Involution on the Coboundary* being understood.
+**Proposition (the involution on the pages).** For $G=\mathbb{Z}/2$ the descent spectral sequence carries the involution $\theta$ of the cohomology on the $E_2$ page, $E_2^{n,m}=H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$ with the involution induced by the action on the coefficients and on the group, and the involution commutes with the differentials and converges to the involution induced by $\theta$ on $H^*(X/G,\mathcal{F}^{G})$; the fixed part of the abutment is computed from the fixed parts of the pages. A class of the abutment is invariant under the descended involution exactly when its representatives are invariant on the pages, the degeneration hypothesis of *The Involution on the Coboundary* being understood.
 
 *Proof.* The involution of the sheaf acts on the equivariant Čech complex and commutes with both differentials, so it induces an involution on the pages of the spectral sequence by *The Involution on the Coboundary*; the identification of the limit involution is the naturality of the edge maps, and the fixed part of the abutment is the limit of the fixed parts when the sequence degenerates.
 
@@ -101,7 +101,7 @@ For $G=\mathbb{Z}/2$, the $E_2$ page of the descent spectral sequence is $H^p(\m
 
 A descent datum on a sheaf — an action of a group $G$, an involution, a Galois action — acts on the sheaf cohomology, functorially and compatibly with the cup product, so that the fixed part is a module over the invariant cohomology ring. The fixed part of the cohomology is the cohomology of the descended sheaf, $H^*(X/G,\mathcal{F}^{G})\cong H^*(X,\mathcal{F})^{G}$, by the transfer in the finite case and by the descent of the equivariant sheaves in general; in the Galois case the action is semilinear over $K$ and $H^*(X,\mathcal{F}^{\Gamma})\cong H^*(X_K,\mathcal{F})^{\Gamma}$, with the real case $H^*(X_{\mathbb{C}},\mathbb{C})^{\Gamma}=H^*(X,\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}$ as the model.
 
-The passage from the invariants of the cohomology to the cohomology of the descended object is computed by the descent spectral sequence $E_2^{p,q}=H^p(G,H^q(X,\mathcal{F}))\Longrightarrow H^{p+q}(X/G,\mathcal{F}^{G})$, whose edge maps give the cohomological obstructions to descending a class; for an involution the sequence carries on each page the involution induced by the action, and the fixed part of the abutment is the limit of the fixed parts. An involution of the cohomology that commutes with the descent and is semilinear over the involution of the coefficients descends to an involution of the cohomology of the descended sheaf, and this descent of the involution is the last statement of the category: the element involution, the operator adjoint and the cohomological action meet in the invariants, and all three are computed by the same descent.
+The passage from the invariants of the cohomology to the cohomology of the descended object is computed by the descent spectral sequence $E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\Longrightarrow H^{p+q}(X/G,\mathcal{F}^{G})$, whose edge maps give the cohomological obstructions to descending a class; for an involution the sequence carries on each page the involution induced by the action, and the fixed part of the abutment is the limit of the fixed parts. An involution of the cohomology that commutes with the descent and is semilinear over the involution of the coefficients descends to an involution of the cohomology of the descended sheaf, and this descent of the involution is the last statement of the category: the element involution, the operator adjoint and the cohomological action meet in the invariants, and all three are computed by the same descent.
 
 ## Summary of Notation
 
@@ -112,7 +112,7 @@ The passage from the invariants of the cohomology to the cohomology of the desce
 | $H^*(X,\mathcal{F})^{G}$, $H^*(X,\mathcal{F})^{\theta}$ | fixed part of the cohomology; invariant cohomology |
 | $H^*(X/G,\mathcal{F}^{G})\cong H^*(X,\mathcal{F})^{G}$ | descent isomorphism; fixed part $=$ cohomology of the descended sheaf |
 | $H^*(X,\mathcal{F}^{\Gamma})\cong H^*(X_K,\mathcal{F})^{\Gamma}$ | Galois form; semilinear action over $K$ |
-| $E_2^{p,q}=H^p(G,H^q(X,\mathcal{F}))\Longrightarrow H^{p+q}(X/G,\mathcal{F}^{G})$ | descent spectral sequence |
+| $E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\Longrightarrow H^{p+q}(X/G,\mathcal{F}^{G})$ | descent spectral sequence |
 | $H^1(G,H^0)\to H^1(X/G,\mathcal{F}^{G})\to H^0(G,H^1)$ | low-degree edge sequence; the obstruction to descending a class |
 | $H^*(X_{\mathbb{C}},\mathbb{C})^{\Gamma}=H^*(X,\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}$ | the real case of the Galois invariants |
 | $\theta(\lambda\alpha)=\sigma(\lambda)\theta(\alpha)$ | semilinear involution; descends to $\theta^{\Gamma}$ on the invariants |

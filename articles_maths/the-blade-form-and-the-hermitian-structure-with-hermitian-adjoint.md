@@ -13,7 +13,7 @@ This article treats the three forms as scalar forms on the algebra, their diagon
 
 ### Definition
 
-**Definition.** Let $(e_1,\dots,e_n)$ be an orthogonal basis of the quadratic space $(V,q)$, with $e_i^{2} = q(e_i) \in A$, and let $e_I = e_{i_1}\cdots e_{i_k}$ for $I = \{i_1 < \dots < i_k\}$ be the corresponding blades. The **blade form** of the algebra is
+**Definition.** Let $(e_1,\dots,e_n)$ be an orthogonal basis of the quadratic space $(V,\mathfrak{Q})$, with $e_i^{2} = \mathfrak{Q}(e_i) \in A$, and let $e_I = e_{i_1}\cdots e_{i_k}$ for $I = \{i_1 < \dots < i_k\}$ be the corresponding blades. The **blade form** of the algebra is
 
 $$
 \langle x,y\rangle = \mathrm{Sc}\bigl(x^{r}y\bigr),
@@ -49,7 +49,7 @@ a scalar, so $\langle e_I,e_I\rangle = \prod_{i\in I}e_i^{2}$; and for $I \neq J
 
 ### Positive Definiteness and the Euclidean Structure
 
-**Proposition.** Let $A = \mathbb{R}$. The blade form is positive definite exactly when the quadratic form is positive definite. Then the blades form an orthonormal basis of $\mathrm{Cl}(V,q)$, the grade projections are orthogonal, and
+**Proposition.** Let $A = \mathbb{R}$. The blade form is positive definite exactly when the quadratic form is positive definite. Then the blades form an orthonormal basis of $\mathrm{Cl}(V,\mathfrak{Q})$, the grade projections are orthogonal, and
 
 $$
 \langle x,x\rangle = \sum_I a_I^{2} > 0 \quad \text{for } x \neq 0 .
@@ -64,7 +64,7 @@ $$
 **Proposition.** Let $m_x$ denote left multiplication by $x$ and $\operatorname{Tr}$ its trace on the algebra. Then
 
 $$
-\operatorname{Tr}(m_z) = \dim_A \mathrm{Cl}(V,q)\cdot \mathrm{Sc}(z) = 2^{n}\,\mathrm{Sc}(z),
+\operatorname{Tr}(m_z) = \dim_A \mathrm{Cl}(V,\mathfrak{Q})\cdot \mathrm{Sc}(z) = 2^{n}\,\mathrm{Sc}(z),
 $$
 
 and consequently the **trace form** satisfies
@@ -75,7 +75,7 @@ $$
 
 **Proof.** In the blade basis, left multiplication by $e_I$ sends $e_J$ to $\pm e_{I\triangle J}$, a blade of degree $|I|+|J|-2|I\cap J|$; this is $e_J$ again only when $I = \emptyset$. Hence $\operatorname{Tr}(m_{e_I}) = 0$ for $I \neq \emptyset$ and $\operatorname{Tr}(m_1) = 2^{n}$, and the statement follows by linearity.
 
-**Corollary.** $T$ is symmetric, $T(x,y) = T(y,x)$, because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$, and it is associative in the sense $T(xy,z) = T(x,yz)$, because $m_{(xy)z} = m_x m_y m_z$ has the same trace as $m_{x(yz)}$. So $(\mathrm{Cl}(V,q), T)$ is a **symmetric Frobenius algebra**, and $T$ is non-degenerate exactly when the algebra is semisimple, which holds for a non-degenerate form over a field of characteristic not two.
+**Corollary.** $T$ is symmetric, $T(x,y) = T(y,x)$, because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$, and it is associative in the sense $T(xy,z) = T(x,yz)$, because $m_{(xy)z} = m_x m_y m_z$ has the same trace as $m_{x(yz)}$. So $(\mathrm{Cl}(V,\mathfrak{Q}), T)$ is a **symmetric Frobenius algebra**, and $T$ is non-degenerate exactly when the algebra is semisimple, which holds for a non-degenerate form over a field of characteristic not two.
 
 **Remark (the dual basis).** The blade form identifies the algebra with its dual, and the dual basis of the blades is $\check e_I = \bigl(\prod_{i\in I}e_i^{2}\bigr)^{-1}e_I$; this is the duality used in *The Volume Element, Duality and the Hodge Star*, and it is the reason the trace form is the pairing that pairs the algebra with its dual.
 

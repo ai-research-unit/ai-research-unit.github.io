@@ -41,7 +41,7 @@ A connection is a rule of parallel transport, given locally by a connection form
 | the connection form in a frame $\omega = (\omega^i_{\ j})$ | $\nabla = d+\omega$, matrix-valued in the frame | *Fibre Bundles, Connections and Curvature* |
 | the change of frame $\omega' = g^{-1}\omega g + g^{-1}dg$ | the transformation of the connection, the gauge transformation rule | *Fibre Bundles, Connections and Curvature* |
 | a connection form on a principal bundle $\omega \in \Omega^1(P;\mathrm{G})$ | $\omega(A^{\#}) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$ | *Fibre Bundles, Connections and Curvature* |
-| the horizontal subspace $H_pP = \ker\omega_p$ | the complement to the vertical, defining the transport | *Fibre Bundles, Connections and Curvature* |
+| the horizontal subspace $H_pP = \ker\omega_n$ | the complement to the vertical, defining the transport | *Fibre Bundles, Connections and Curvature* |
 | the curvature $R = d\omega + \omega\wedge\omega$ | the $\operatorname{End}(E)$-valued $2$-form measuring noncommutation | *Fibre Bundles, Connections and Curvature* |
 | the curvature of a principal connection $\Omega = d\omega + \frac12[\omega,\omega]$ | the $\mathrm{G}$-valued curvature form | *Fibre Bundles, Connections and Curvature* |
 | the Bianchi identity $d^\nabla R = 0$ | the differential condition the curvature satisfies | *Fibre Bundles, Connections and Curvature* |
@@ -66,8 +66,8 @@ The invariant polynomials of the curvature are closed and their de Rham classes 
 | the Pontryagin classes $p_i(E)$ | the real classes, $p_i(E) = (-1)^ic_{2i}(E\otimes\mathbb{C})$ | *Characteristic Classes* |
 | the Chern roots and the splitting principle | the formal factorisation $c(E) = \prod_i(1+x_i)$ | *Characteristic Classes* |
 | the Chern character $\operatorname{ch}(E)$ | the rational class with $K^0(B)\otimes\mathbb{Q} \cong H^{\mathrm{ev}}(B;\mathbb{Q})$ | *Characteristic Classes* |
-| the relations $p_i \equiv w_{2i}^2$ and $e \equiv w_n \pmod 2$ | the compatibility of the integral and $\mathbb{Z}/2$ classes | *Characteristic Classes* |
-| the Hirzebruch $L$-polynomial $L_k(p_1,\ldots,p_k)$ | the multiplicative polynomial $\sum_kL_k = \prod_j\frac{x_j}{\tanh x_j}$ | *Characteristic Classes* |
+| the relations $n_i \equiv w_{2i}^2$ and $e \equiv w_n \pmod 2$ | the compatibility of the integral and $\mathbb{Z}/2$ classes | *Characteristic Classes* |
+| the Hirzebruch $L$-polynomial $L_k(n_1,\ldots,n_k)$ | the multiplicative polynomial $\sum_kL_k = \prod_j\frac{x_j}{\tanh x_j}$ | *Characteristic Classes* |
 | the Todd class | the multiplicative class of the index theorem for the Dolbeault complex | *The Atiyah–Singer Index Theorem and K-Theory* |
 | the $\hat A$-genus | the multiplicative class of the Dirac operator | *Spin Geometry*; *The Atiyah–Singer Index Theorem and K-Theory* |
 
@@ -132,7 +132,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\pi : E \to B$, $g_{\alpha\beta}$, $P\times_GF$ | Fibre bundle, transition functions, associated bundle |
 | $TM$, $T^*M$, $\Gamma(E)$, $K_M$ | Tangent and cotangent bundles, sections, canonical bundle |
 | $\nabla$, $\omega$, $R$, $\Omega$ | Connection, connection form, curvature, curvature form |
-| $c_i$, $w_i$, $p_i$, $e(E)$ | Chern, Stiefel–Whitney, Pontryagin and Euler classes |
+| $c_i$, $w_i$, $n_i$, $e(E)$ | Chern, Stiefel–Whitney, Pontryagin and Euler classes |
 | $\operatorname{ch}$, $L_k$, $\hat A$, Todd | Chern character, $L$-polynomial, $\hat A$-genus, Todd class |
 | $BO(n)$, $BU(n)$, $K^0(B)$ | Classifying spaces and K-theory |
 | $\langle\kappa(TM),[M]\rangle$ | Characteristic number |

@@ -71,36 +71,36 @@ The sign in (3) is the entire difference between the two interpretations, and it
 
 ### The Generalized Div-Curl System
 
-Let $w = u + iv$ be a biquaternion-valued function on $\Omega \times (0,\infty)$, split into its real and imaginary quaternionic parts, and each of those into scalar and vector parts:
+Let $w = g + iv$ be a biquaternion-valued function on $\Omega \times (0,\infty)$, split into its real and imaginary quaternionic parts, and each of those into scalar and vector parts:
 
 $$
-w = u + iv = (u_0 + \vec{u}) + i(v_0 + \vec{v}), \qquad u_0, v_0 \in \mathbb{C}, \quad \vec{u}, \vec{v} \in \mathbb{C}^3.
+w = g + iv = (g_0 + \vec q) + i(b_0 + \vec{b}), \qquad g_0, b_0 \in \mathbb{C}, \quad \vec q, \vec{b} \in \mathbb{C}^3.
 $$
 
 The source's Proposition 4 states that, for a continuously differentiable $w$, the equation $(D \pm i\partial_t)w = 0$ holds if and only if
 
 $$
--\mathrm{div}\,\vec{u} = \pm\partial_t v_0, \qquad
-\mathrm{grad}\,u_0 + \mathrm{rot}\,\vec{u} = \pm\partial_t \vec{v}, \qquad
--\mathrm{div}\,\vec{v} = \mp\partial_t u_0, \qquad
-\mathrm{grad}\,v_0 + \mathrm{rot}\,\vec{v} = \mp\partial_t \vec{u},
+-\mathrm{div}\,\vec q = \pm\partial_t b_0, \qquad
+\mathrm{grad}\,g_0 + \mathrm{rot}\,\vec q = \pm\partial_t \vec{b}, \qquad
+-\mathrm{div}\,\vec{b} = \mp\partial_t g_0, \qquad
+\mathrm{grad}\,b_0 + \mathrm{rot}\,\vec{b} = \mp\partial_t \vec q,
 \tag{4}
 $$
 
 where $\mathrm{rot}$ is the source's $\mathrm{curl}$ in the corpus's notation. The verification is two steps. First, the action of $D$ on a quaternion-valued function is the scalar-vector split
 
 $$
-Du = -\mathrm{div}\,\vec{u} + \mathrm{grad}\,u_0 + \mathrm{rot}\,\vec{u},
+Dg = -\mathrm{div}\,\vec q + \mathrm{grad}\,g_0 + \mathrm{rot}\,\vec q,
 \tag{5}
 $$
 
-which is the spatial part of the corpus's $\tilde{\nabla}\tilde{F}$ formula (*Biquaternion Regular Functions*, *The System of Regularity Equations*). Second, expanding $(D \pm i\partial_t)(u + iv)$ gives
+which is the spatial part of the corpus's $\tilde{\nabla}\tilde{F}$ formula (*Biquaternion Regular Functions*, *The System of Regularity Equations*). Second, expanding $(D \pm i\partial_t)(g + iv)$ gives
 
 $$
-(D \pm i\partial_t)(u+iv) = \bigl(Du \mp \partial_t v\bigr) + i\bigl(Dv \pm \partial_t u\bigr),
+(D \pm i\partial_t)(g+iv) = \bigl(Dg \mp \partial_t b\bigr) + i\bigl(Dv \pm \partial_t g\bigr),
 $$
 
-so the real and imaginary quaternionic parts vanish separately, $Du = \pm\partial_t v$ and $Dv = \mp\partial_t u$, and (4) is exactly their four scalar-vector components.
+so the real and imaginary quaternionic parts vanish separately, $Dg = \pm\partial_t b$ and $Dv = \mp\partial_t g$, and (4) is exactly their four scalar-vector components.
 
 ### Cauchy–Riemann-Type Coupling of the Real and Imaginary Parts
 
@@ -108,27 +108,27 @@ The system (4) is the source's interpretation of the kernel as a **Cauchy–Riem
 
 ### The Harmonic-Conjugate Construction
 
-The construction that pairs the two halves is the source's Propositions 5 and 7. If $u$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial_t^2)u = 0$, then
+The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial_t^2)g = 0$, then
 
 $$
-v(x,t) := \int_0^t Du(x,s)\,ds - T_\Omega[\partial_t u](x,0) + \mathrm{grad}\,\phi(x)
+b(x,t) := \int_0^t Dg(x,s)\,ds - T_\Omega[\partial_t g](x,0) + \mathrm{grad}\,\phi(x)
 \tag{6}
 $$
 
-makes $u + iv$ an element of $\ker(D + i\partial_t)$ and $u - iv$ an element of $\ker(D - i\partial_t)$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\phi$ any time-independent harmonic function. The proof is the telescoping computation
+makes $g + iv$ an element of $\ker(D + i\partial_t)$ and $g - iv$ an element of $\ker(D - i\partial_t)$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\phi$ any time-independent harmonic function. The proof is the telescoping computation
 
 $$
-Dv = -\int_0^t \Delta u(x,s)\,ds - \partial_t u(x,0) = -\bigl(\partial_t u(x,t) - \partial_t u(x,0)\bigr) - \partial_t u(x,0) = -\partial_t u(x,t),
+Dv = -\int_0^t \Delta g(x,s)\,ds - \partial_t g(x,0) = -\bigl(\partial_t g(x,t) - \partial_t g(x,0)\bigr) - \partial_t g(x,0) = -\partial_t g(x,t),
 $$
 
-using $\Delta u = \partial_t^2 u$ in the first step. When $u$ is a **scalar** solution $u_0$, the construction specialises to the purely vectorial complement
+using $\Delta g = \partial_t^2 g$ in the first step. When $g$ is a **scalar** solution $g_0$, the construction specialises to the purely vectorial complement
 
 $$
-U[u_0](x,t) := i\int_0^t \mathrm{grad}\,u_0(x,s)\,ds - i\,T_\Omega[\partial_t u_0](x,0),
+\mathcal{V}[g_0](x,t) := i\int_0^t \mathrm{grad}\,g_0(x,s)\,ds - i\,T_\Omega[\partial_t g_0](x,0),
 \tag{7}
 $$
 
-and $u_0 \pm U[u_0]$ lies in the kernel of $D \pm i\partial_t$. The two worked examples of the source were checked: $u(x,t) = x + t$ gives $Du = -3$ and $v = -3t + \tfrac{1}{3}x + \mathrm{grad}\,\phi$; $u_0 = x_1^2 + x_2^2 + x_3^2 + 3t^2$ gives $U[u_0] = 2itx$. The relation between the two branches is the one the source prints: the sign in $u \pm iv$ is correlated with the sign in $D \pm i\partial_t$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Du = \partial_t v$, $Dv = -\partial_t u$.
+and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial_t$. The two worked examples of the source were checked: $g(x,t) = x + t$ gives $Dg = -3$ and $b = -3t + \tfrac{1}{3}x + \mathrm{grad}\,\phi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3t^2$ gives $\mathcal{V}[g_0] = 2itx$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial_t$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial_t b$, $Dv = -\partial_t g$.
 
 ## The Quaternionic Exponential and the Fourier Characterisation
 
@@ -156,13 +156,13 @@ $$
 \tag{9}
 $$
 
-for $(k,t) \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(\Phi_\pm) = 0$ for $t < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(v) = \cos|v| + (v/|v|)\sin|v|$ for any pure vector $v$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
+for $(k,t) \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(\Phi_\pm) = 0$ for $t < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
 
 $$
 \bigl|\exp(\mp 2\pi k t)\bigr| = 1 \qquad \text{for every } (k,t),
 $$
 
-with reason $\exp(\mp 2\pi k t) = \exp\bigl(\mp 2\pi|k|t\,\hat{k}\bigr)$ for the unit vector $\hat{k} = k/|k|$. It is a **phase**, a rotation in the plane spanned by $e_0$ and $k$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial_t G = \mp 2\pi k G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
+with reason $\exp(\mp 2\pi k t) = \exp\bigl(\mp 2\pi|k|t\,\hat{g_k}\bigr)$ for the unit vector $\hat{g_k} = k/|k|$. It is a **phase**, a rotation in the plane spanned by $e_0$ and $k$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial_t G = \mp 2\pi k G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
 
 ## The Parabolic Teodorescu Transform and the Right Inverse
 
@@ -248,10 +248,10 @@ $$
 (D - i\partial_t) T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] = -4\pi(\rho - i\vec{\jmath}),
 $$
 
-so the transform is a particular solution of (13). It carries a scalar part $u_0 = \mathrm{Sc}\,T_{\mathcal{C},-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $u_0$ solves the wave equation, so by (7) the combination $u_0 - U[u_0]$ lies in the kernel of $D - i\partial_t$. Subtracting it cancels the scalar part and leaves
+so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,T_{\mathcal{C},-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial_t$. Subtracting it cancels the scalar part and leaves
 
 $$
-\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + U[u_0],
+\vec{\varphi} = \mathrm{Vec}\,T_{\mathcal{C},-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0],
 \tag{15}
 $$
 
@@ -266,7 +266,7 @@ T_{\mathcal{C},\pm,\lambda}[w](x,t) := \int_0^t\int_{\mathbb{R}^3} \exp\bigl(2\p
 \tag{16}
 $$
 
-with the completion rescaling $u_0 \pm \tfrac{1}{\lambda}U[u_0] \in \ker(D \pm i\lambda\partial_t)$ whenever $u_0$ solves $(-\Delta + \lambda^2\partial_t^2)u_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
+with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial_t)$ whenever $g_0$ solves $(-\Delta + \lambda^2\partial_t^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
 
 $$
 \mathrm{div}\,\vec{E} = \frac{\rho}{\epsilon}, \qquad
@@ -282,13 +282,13 @@ reduced to a single equation of the form $(D - \tfrac{i}{c}\partial_t)\Phi = -\P
 
 
 
-**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial_t)\Phi_\pm = 0$ for $x \neq 0$, $t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $\Phi_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $u_0 - U[u_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $u_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
+**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial_t)\Phi_\pm = 0$ for $x \neq 0$, $t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $\Phi_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial_t\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 
 **What the source does not do.** It does not solve a boundary-value problem: the domain is fixed, the transform is taken by zero extension, and the right inverse is global. It does not treat an inhomogeneous or chiral medium: the homogeneous medium enters only through the single constant $\lambda = \sqrt{\epsilon\mu}$, so the dispersive and magnetoelectric content of *Electromagnetism in Media — The Local Complex Structure at Work* is untouched. It does not quantise, and it makes no claim about the **physical interpretation** of the parabolic operators beyond their use as a computational route. Its stated aim is analytical efficiency, and its result should be read as a method, not as a physical model.
 
 ## Summary
 
-The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = (D - i\partial_t)(D + i\partial_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial_{ict} = -i\partial_t$. The kernel of $D \pm i\partial_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial_t)T_{\mathcal{C},\pm}[\mp iw] = w$ follows from the symbol computation $\partial_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's A-field, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\tilde{R}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $u_0 - U[u_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
+The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partial_t)(D - i\partial_t) = (D - i\partial_t)(D + i\partial_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial_{ict} = -i\partial_t$. The kernel of $D \pm i\partial_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial_t)T_{\mathcal{C},\pm}[\mp iw] = w$ follows from the symbol computation $\partial_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's A-field, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\tilde{R}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
 
 ## Summary of Notation
 
@@ -302,9 +302,9 @@ The source's wave-operator factorisation $-\Delta + \partial_t^2 = (D + i\partia
 | $D \pm i\partial_t$ | The parabolic Dirac operators of the source; $D - i\partial_t = \tilde{\nabla}$ and $D + i\partial_t = -\tilde{\nabla}^{\natural}$ at $c = 1$ |
 | $\Delta = \partial_x^2 + \partial_y^2 + \partial_z^2$ | Three-dimensional Laplacian; $D^2 = -\Delta e_0$ |
 | $\nabla, \mathrm{div}, \mathrm{rot}$ | Gradient, divergence, curl; $\mathrm{rot}$ is the source's $\mathrm{curl}$ |
-| $w = u + iv = (u_0 + \vec{u}) + i(v_0 + \vec{v})$ | Biquaternion-valued function, split into real and imaginary quaternion parts, each scalar plus vector |
+| $w = g + iv = (g_0 + \vec q) + i(b_0 + \vec{b})$ | Biquaternion-valued function, split into real and imaginary quaternion parts, each scalar plus vector |
 | $T_\Omega$ | Teodorescu transform, the right inverse of $D$ on $\Omega$ |
-| $U[u_0]$ | Purely vectorial complement (7) of a scalar wave solution |
+| $\mathcal{V}[g_0]$ | Purely vectorial complement (7) of a scalar wave solution |
 | $\mathcal{F}$ | Fourier transform in the space variables at fixed $t$ |
 | $k$ | Frequency three-vector, read as the pure quaternion $e_1k_1 + e_2k_2 + e_3k_3$ |
 | $\Phi_\pm$ | The source's kernel, $\mathcal{F}(\Phi_\pm)(k,t) = \exp(\mp 2\pi kt)$ |

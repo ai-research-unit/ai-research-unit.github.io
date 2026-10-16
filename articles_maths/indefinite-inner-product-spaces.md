@@ -34,25 +34,25 @@ $$
 
 ## Inertia and the Signature
 
-**Definition.** A vector is **positive**, **negative** or **neutral** according as $[x,x] > 0$, $[x,x] < 0$ or $[x,x] = 0$; a subspace is **positive definite**, **negative definite** or **neutral** when every nonzero vector in it is positive, negative or neutral. The **rank of positivity** $p$ and the **rank of negativity** $q$ are the maximal dimensions of a positive definite and of a negative definite subspace, and $(p,q)$ is the **signature**.
+**Definition.** A vector is **positive**, **negative** or **neutral** according as $[x,x] > 0$, $[x,x] < 0$ or $[x,x] = 0$; a subspace is **positive definite**, **negative definite** or **neutral** when every nonzero vector in it is positive, negative or neutral. The **rank of positivity** $n$ and the **rank of negativity** $m$ are the maximal dimensions of a positive definite and of a negative definite subspace, and $(n,m)$ is the **signature**.
 
-**Theorem (Sylvester's law of inertia).** In finite dimension the signature is independent of the space and of the basis: if $V = W_{+}\oplus W_{-}$ with $W_{+}$ positive definite and $W_{-}$ negative definite and orthogonal, then $p = \dim W_{+}$ and $q = \dim W_{-}$ for every such decomposition. Equivalently, there is a basis in which the Gram matrix is the diagonal matrix with $p$ entries $+1$ and $q$ entries $-1$, and the pair $(p,q)$ is an invariant.
+**Theorem (Sylvester's law of inertia).** In finite dimension the signature is independent of the space and of the basis: if $V = W_{+}\oplus W_{-}$ with $W_{+}$ positive definite and $W_{-}$ negative definite and orthogonal, then $n = \dim W_{+}$ and $m = \dim W_{-}$ for every such decomposition. Equivalently, there is a basis in which the Gram matrix is the diagonal matrix with $n$ entries $+1$ and $m$ entries $-1$, and the pair $(n,m)$ is an invariant.
 
 **Proof.** The finite-dimensional argument of *Quadratic Forms and Polarisation* and *Hermitian Forms*: a maximal positive definite subspace has its dimension bounded by the sign of the form on a complement, and two such subspaces have the same dimension by counting the neutral vectors of a difference.
 
-**Definition.** The **inertia index** is the triple $(p,q,z)$ with $z = \dim \mathrm{rad}(V)$; for a non-degenerate form $z = 0$ and the inertia index is the signature.
+**Definition.** The **inertia index** is the triple $(n,m,z)$ with $z = \dim \mathrm{rad}(V)$; for a non-degenerate form $z = 0$ and the inertia index is the signature.
 
-**Proposition.** $p + q + z = \dim V$, and the form is positive definite exactly when $q = 0$, negative definite exactly when $p = 0$, definite when $pq = 0$, and indefinite otherwise.
+**Proposition.** $n+m+z = \dim V$, and the form is positive definite exactly when $m = 0$, negative definite exactly when $n = 0$, definite when $pq = 0$, and indefinite otherwise.
 
 **Proof.** The sum is the statement that a maximal positive definite and a maximal negative definite subspace are orthogonal and their orthogonal sum meets the radical only at zero, which is the last part of Sylvester's theorem.
 
 ## Classification over $\mathbb{R}$ and $\mathbb{C}$
 
-**Theorem (classification over $\mathbb{R}$).** A non-degenerate symmetric bilinear form on a finite-dimensional real space is determined up to congruence by its signature $(p,q)$; equivalently, two forms are congruent exactly when they have the same signature. The orthogonal group of the form is $O(p,q)$, and the definite cases are $O(n)$ and $O(n)$ for the two signs.
+**Theorem (classification over $\mathbb{R}$).** A non-degenerate symmetric bilinear form on a finite-dimensional real space is determined up to congruence by its signature $(n,m)$; equivalently, two forms are congruent exactly when they have the same signature. The orthogonal group of the form is $O(n,m)$, and the definite cases are $O(n)$ and $O(n)$ for the two signs.
 
 **Proof.** Sylvester's law gives the normal form $\mathrm{diag}(1,\ldots,1,-1,\ldots,-1)$, and two normal forms with the same signature are congruent by a permutation of the basis.
 
-**Theorem (classification over $\mathbb{C}$).** A non-degenerate Hermitian form on a finite-dimensional complex space is determined up to congruence by its **signature** $(p,q)$, and the isometry group is the unitary group $U(p,q)$.
+**Theorem (classification over $\mathbb{C}$).** A non-degenerate Hermitian form on a finite-dimensional complex space is determined up to congruence by its **signature** $(n,m)$, and the isometry group is the unitary group $U(n,m)$.
 
 **Proof.** For a Hermitian form over $\mathbb{C}$ the scalar square $[\lambda x,\lambda x] = |\lambda|^{2}[x,x]$ is real and its sign is unchanged by the scaling, so the sign of a diagonal entry is an invariant and the normal form $\mathrm{diag}(1,\ldots,1,-1,\ldots,-1)$ cannot be altered beyond a permutation; the argument is the one over $\mathbb{R}$ with $|\lambda|^{2}$ in place of $\lambda^{2}$.
 
@@ -60,11 +60,11 @@ $$
 
 ## Positive, Negative and Neutral Subspaces
 
-**Proposition.** A subspace $W$ is positive definite exactly when $[x,x] > 0$ for every nonzero $x \in W$; equivalently, the restricted form is positive definite. The maximal positive definite subspaces have dimension $p$ and the maximal negative definite subspaces have dimension $q$; the orthogonal complement of a maximal positive definite subspace is negative semidefinite, and every vector decomposes uniquely as its component in that subspace plus a component orthogonal to it.
+**Proposition.** A subspace $W$ is positive definite exactly when $[x,x] > 0$ for every nonzero $x \in W$; equivalently, the restricted form is positive definite. The maximal positive definite subspaces have dimension $n$ and the maximal negative definite subspaces have dimension $m$; the orthogonal complement of a maximal positive definite subspace is negative semidefinite, and every vector decomposes uniquely as its component in that subspace plus a component orthogonal to it.
 
-**Proof.** The characterisation is the definition and the dimension statement is Sylvester's theorem. For the rest, let $W$ be a maximal positive definite subspace and $v\in W^{\perp}$: if $[v,v] > 0$ then $W\oplus Fv$ is an orthogonal sum of two definite subspaces and hence positive definite of dimension $p+1$, contradicting maximality, so $[v,v]\leq 0$ and $W^{\perp}$ is negative semidefinite. Conversely, since $W$ is definite the map $w'\mapsto[\cdot,w']$ is an isomorphism $W\to W^{*}$, so every $v$ has a unique decomposition $v = w + v_{\perp}$ with $w\in W$ and $v_{\perp}\perp W$; the scalar square is additive, $[v,v] = [w,w] + [v_{\perp},v_{\perp}]$, so a negative $v$ has $[v_{\perp},v_{\perp}]\leq[v,v] < 0$.
+**Proof.** The characterisation is the definition and the dimension statement is Sylvester's theorem. For the rest, let $W$ be a maximal positive definite subspace and $v\in W^{\perp}$: if $[v,v] > 0$ then $W\oplus Fv$ is an orthogonal sum of two definite subspaces and hence positive definite of dimension $n+1$, contradicting maximality, so $[v,v]\leq 0$ and $W^{\perp}$ is negative semidefinite. Conversely, since $W$ is definite the map $w'\mapsto[\cdot,w']$ is an isomorphism $W\to W^{*}$, so every $v$ has a unique decomposition $v = w + v_{\perp}$ with $w\in W$ and $v_{\perp}\perp W$; the scalar square is additive, $[v,v] = [w,w] + [v_{\perp},v_{\perp}]$, so a negative $v$ has $[v_{\perp},v_{\perp}]\leq[v,v] < 0$.
 
-**Remark (neutral vectors and the light cone).** The set of neutral vectors is the **null cone** of the form, and through every neutral vector there is a one-dimensional maximal neutral subspace; in signature $(p,q)$ the maximal neutral subspaces have dimension $\min(p,q)$. The language of the null cone is differential-geometric and is not used here; only its linear-algebraic part, the maximal neutral subspace, belongs to this article.
+**Remark (neutral vectors and the light cone).** The set of neutral vectors is the **null cone** of the form, and through every neutral vector there is a one-dimensional maximal neutral subspace; in signature $(n,m)$ the maximal neutral subspaces have dimension $\min(n,m)$. The language of the null cone is differential-geometric and is not used here; only its linear-algebraic part, the maximal neutral subspace, belongs to this article.
 
 ## The Fundamental Decomposition
 
@@ -76,7 +76,7 @@ $$
 
 with $V_{+}$ positive definite and $V_{-}$ negative definite.
 
-**Theorem (existence and non-uniqueness).** Every indefinite inner product space of finite dimension has a fundamental decomposition, with $\dim V_{+} = p$ and $\dim V_{-} = q$; and if both $p$ and $q$ are nonzero the decomposition is not unique, the space admitting as many as the positive definite subspaces of dimension $p$.
+**Theorem (existence and non-uniqueness).** Every indefinite inner product space of finite dimension has a fundamental decomposition, with $\dim V_{+} = n$ and $\dim V_{-} = m$; and if both $n$ and $m$ are nonzero the decomposition is not unique, the space admitting as many as the positive definite subspaces of dimension $n$.
 
 **Proof.** Take a maximal positive definite subspace $V_{+}$ and let $V_{-} = V_{+}^{\perp}$; since $V_{+}$ is maximal and the form is non-degenerate, $V_{-}$ is negative definite and $V = V_{+}\oplus V_{-}$. For the non-uniqueness, the graph $M_T = \{v_{+} + Tv_{+} : v_{+} \in V_{+}\}$ of a linear map $T : V_{+}\to V_{-}$ with $[v_{+},v_{+}] + [Tv_{+},Tv_{+}] > 0$ for $v_{+}\neq0$, that is $|[Tv_{+},Tv_{+}]| < [v_{+},v_{+}]$ is again positive definite and maximal, and different $T$ give different decompositions.
 
@@ -100,7 +100,7 @@ is a positive definite inner product on $V$, and the indefinite form is recovere
 
 **Proof.** Decompose $x = x_{+}+x_{-}$ and $y = y_{+}+y_{-}$ with $x_{\pm},y_{\pm}\in V_{\pm}$; the orthogonality of $V_{+}$ and $V_{-}$ kills the mixed terms and $\langle x,y\rangle = [Jx,y] = [x_{+},y_{+}] - [x_{-},y_{-}]$, a sum of two definite forms of the same sign and hence positive definite. For the recovery, $\langle Jx,y\rangle = [J^{2}x,y] = [x,y]$ because $J^{2} = \mathrm{id}$.
 
-**Remark (the non-uniqueness of $J$).** The operator $J$ depends on the chosen fundamental decomposition and is not unique when both $p$ and $q$ are nonzero; all the choices are conjugate by the isometries of the indefinite form. The one thing that is unique is the pair of ranks, and therefore the induced positive definite inner products all have the same Hilbert-space completion. The full theory of $J$, its order structure and its role as the bridge, is *The Fundamental Symmetry*.
+**Remark (the non-uniqueness of $J$).** The operator $J$ depends on the chosen fundamental decomposition and is not unique when both $n$ and $m$ are nonzero; all the choices are conjugate by the isometries of the indefinite form. The one thing that is unique is the pair of ranks, and therefore the induced positive definite inner products all have the same Hilbert-space completion. The full theory of $J$, its order structure and its role as the bridge, is *The Fundamental Symmetry*.
 
 ## Worked Cases
 
@@ -118,7 +118,7 @@ On $\mathbb{R}^{3}$ with $[x,y] = x^{1}y^{2}+x^{2}y^{1} - x^{3}y^{3}$ the Gram m
 
 ## Summary
 
-An **indefinite inner product space** is a vector space with a non-degenerate Hermitian form that is neither positive nor negative definite; its Gram matrix is Hermitian, and congruence is the change of basis. The **radical** is the set orthogonal to everything, non-degeneracy is its vanishing, and the failure of $V = W\oplus W^{\perp}$ is the hallmark of the indefinite case. **Sylvester's law of inertia** fixes the signature $(p,q)$, the numbers of positive and negative squares, and the signature classifies the form over $\mathbb{R}$ and over $\mathbb{C}$ alike; a **symmetric bilinear** form over $\mathbb{C}$, by contrast, has only its rank as an invariant, because a bilinear scaling squares the scalar. Vectors are positive, negative or neutral, and the maximal neutral subspaces have dimension $\min(p,q)$. Every space admits a **fundamental decomposition** $V = V_{+}\oplus V_{-}$ into a positive definite and a negative definite part, orthogonal, with $\dim V_{\pm} = p, q$, and the decomposition is not unique when both ranks are nonzero. Each decomposition produces the **fundamental symmetry** $J$, involutive and self-adjoint for $[\,,\,]$, and $\langle x,y\rangle = [Jx,y]$ is a positive definite inner product; so $J$ is the bridge between the indefinite and the definite theories. The complete case is *Krein Spaces*, the finite rank of negativity *Pontryagin Spaces*, and $J$ itself *The Fundamental Symmetry*; the definite forms and the inertia law are *Bilinear Forms*, *Quadratic Forms and Polarisation* and *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
+An **indefinite inner product space** is a vector space with a non-degenerate Hermitian form that is neither positive nor negative definite; its Gram matrix is Hermitian, and congruence is the change of basis. The **radical** is the set orthogonal to everything, non-degeneracy is its vanishing, and the failure of $V = W\oplus W^{\perp}$ is the hallmark of the indefinite case. **Sylvester's law of inertia** fixes the signature $(n,m)$, the numbers of positive and negative squares, and the signature classifies the form over $\mathbb{R}$ and over $\mathbb{C}$ alike; a **symmetric bilinear** form over $\mathbb{C}$, by contrast, has only its rank as an invariant, because a bilinear scaling squares the scalar. Vectors are positive, negative or neutral, and the maximal neutral subspaces have dimension $\min(n,m)$. Every space admits a **fundamental decomposition** $V = V_{+}\oplus V_{-}$ into a positive definite and a negative definite part, orthogonal, with $\dim V_{\pm} = n, m$, and the decomposition is not unique when both ranks are nonzero. Each decomposition produces the **fundamental symmetry** $J$, involutive and self-adjoint for $[\,,\,]$, and $\langle x,y\rangle = [Jx,y]$ is a positive definite inner product; so $J$ is the bridge between the indefinite and the definite theories. The complete case is *Krein Spaces*, the finite rank of negativity *Pontryagin Spaces*, and $J$ itself *The Fundamental Symmetry*; the definite forms and the inertia law are *Bilinear Forms*, *Quadratic Forms and Polarisation* and *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
 ## Summary of Notation
 
@@ -129,10 +129,10 @@ An **indefinite inner product space** is a vector space with a non-degenerate He
 | $G$, $P^{\dagger}GP$ | Gram matrix; congruence |
 | $\mathrm{rad}(V)$ | Radical of the form |
 | $W^{\perp}$, $W\cap W^{\perp}$ | Orthogonal complement; the test for non-degeneracy of $W$ |
-| $(p,q)$, $z$ | Signature and the dimension of the radical |
+| $(n,m)$, $z$ | Signature and the dimension of the radical |
 | $V = V_{+}\oplus V_{-}$ | Fundamental decomposition |
 | $J$, $\langle x,y\rangle = [Jx,y]$ | Fundamental symmetry and the definite inner product |
-| $O(p,q)$ | Isometry group of the real form of signature $(p,q)$ |
+| $O(n,m)$ | Isometry group of the real form of signature $(n,m)$ |
 
 ## Further Reading
 

@@ -49,7 +49,7 @@ Every metric space $(X,d)$ embeds isometrically as a dense subspace of a complet
 | $\hat X$ | the completion of a metric space, unique up to an isometry fixing $X$ | *Metric, Uniform and Complete Spaces* |
 | the Banach space completion | the completion of a normed space, a Banach space | *Normed and Banach Spaces* |
 | the Hilbert space completion | the completion of an inner product space, a Hilbert space | *Banach and Hilbert Spaces* |
-| the $I$-adic completion $\hat R$ | the completion of a ring for the $I$-adic topology, an inverse limit of quotients | *Topological Rings and Fields* |
+| the $I$-adic completion $\widehat{R}$ | the completion of a ring for the $I$-adic topology, an inverse limit of quotients | *Topological Rings and Fields* |
 
 Completeness is not a topological property, and the standard witness is the interval: $(0,1)$ and $\mathbb{R}$ are homeomorphic, the first is not complete for its usual metric and the second is. A metrisable space admits a complete metric exactly when it is completely metrisable, that is, a $G_\delta$ in its completion, and this is the topological form of the property that the completion detects. The completion is idempotent, and it is an isometry-invariant functor on the category of metric spaces with uniformly continuous maps.
 

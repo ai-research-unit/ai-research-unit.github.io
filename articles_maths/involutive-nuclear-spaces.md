@@ -34,7 +34,7 @@ $$
 (E \otimes F)^{-} = (E_{+} \otimes F_{-}) \oplus (E_{-} \otimes F_{+}) ,
 $$
 
-so the fixed part of the product involution is the direct sum of the products of like signs and the negated part the direct sum of the products of opposite signs; in terms of the types $(p, q)$ and $(r, s)$ of $T$ and $S$ the product has type $(pr + qs,\, ps + qr)$.
+so the fixed part of the product involution is the direct sum of the products of like signs and the negated part the direct sum of the products of opposite signs; in terms of the types $(n,m)$ and $(r, s)$ of $T$ and $S$ the product has type $(pr + qs,\, ps + qr)$.
 
 **Proof.** On a decomposable tensor $x \otimes y$ the involution acts by $Tx \otimes Sy$; with $x = x_{+} + x_{-}$ and $y = y_{+} + y_{-}$ this is $x_{+}\otimes y_{+} + x_{-}\otimes y_{-}$ in the fixed part and $-(x_{+}\otimes y_{-} + x_{-}\otimes y_{+})$ in the negated part, and the four general products span the tensor product. The type formula is the dimension count $pr + qs$ for the fixed part and $ps + qr$ for the negated part.
 

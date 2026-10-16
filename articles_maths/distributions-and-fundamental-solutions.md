@@ -7,7 +7,7 @@ A function that is locally integrable acts on a test function by integration, an
 
 The theory is the analytic content of the dual of a space of smooth functions, and its two structural themes are differentiation and convolution. Differentiation is transposition and therefore always available; convolution is the operation that turns a fundamental solution into a solution, and its existence for a given operator is the question the second half of the article answers. A **fundamental solution** of a linear differential operator $P$ is a distribution $E$ with $PE=\delta$, and the equation $Pu=f$ is then solved by $u=E*f$ whenever the convolution is defined; for an operator with variable coefficients the best that can be expected in general is a **parametrix**, a distribution $E$ with $PE=I-R$ for a smoothing remainder $R$, and ellipticity is the condition that produces one.
 
-Throughout, $\Omega \subseteq \mathbb{R}^n$ is open, $\alpha=(\alpha_1,\dots,\alpha_n) \in \mathbb{N}^n$ is a multi-index with $|\alpha|=\sum_i\alpha_i$ and $\partial^\alpha=\partial_1^{\alpha_1}\cdots\partial_n^{\alpha_n}$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. The notation for the Fréchet derivative and for linear differential operators is that fixed in the companion article *Differential Calculus on Normed Spaces*; the topological dual and the duality pairing are those of *Duality Theory* and *Locally Convex Spaces*, and the inductive-limit topology of the test-function space is that of *Locally Convex Spaces*. The Fourier transform on $\mathbb{R}^n$, with the constants used below, is the subject of *Fourier Analysis on Euclidean Spaces*, earlier in this Part; only the formulas and their properties are used here. The Bessel-potential spaces $H^s_p$ are those of *Interpolation Theory*, and the weak-derivative Sobolev spaces, together with the elliptic boundary-value theory that follows from the parametrix, belong to Part III. The systematic calculus of symbols and of pseudodifferential operators is deferred, and so is the wavefront-set refinement of the multiplication problem; the distributional setting for the analysis of an algebra-valued function is used in the category of the algebras of this Part, where the first-order operator of that theory is assembled.
+Throughout, $\Omega \subseteq \mathbb{R}^n$ is open, $\alpha=(\alpha_1,\dots,\alpha_n) \in \mathbb{N}^n$ is a multi-index with $|\alpha|=\sum_i\alpha_i$ and $\partial^\alpha=\partial_1^{\alpha_1}\cdots\partial_n^{\alpha_n}$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. The notation for the Fréchet derivative and for linear differential operators is that fixed in the companion article *Differential Calculus on Normed Spaces*; the topological dual and the duality pairing are those of *Duality Theory* and *Locally Convex Spaces*, and the inductive-limit topology of the test-function space is that of *Locally Convex Spaces*. The Fourier transform on $\mathbb{R}^n$, with the constants used below, is the subject of *Fourier Analysis on Euclidean Spaces*, earlier in this Part; only the formulas and their properties are used here. The Bessel-potential spaces $H^{s}_{n}$ are those of *Interpolation Theory*, and the weak-derivative Sobolev spaces, together with the elliptic boundary-value theory that follows from the parametrix, belong to Part III. The systematic calculus of symbols and of pseudodifferential operators is deferred, and so is the wavefront-set refinement of the multiplication problem; the distributional setting for the analysis of an algebra-valued function is used in the category of the algebras of this Part, where the first-order operator of that theory is assembled.
 
 No physics is invoked.
 
@@ -45,11 +45,11 @@ $$
 
 a Fréchet space in these seminorms. The inclusions $\mathcal D(\Omega) \subseteq \mathcal S(\mathbb{R}^n) \subseteq \mathcal E(\mathbb{R}^n)$ are continuous, for $\Omega=\mathbb{R}^n$.
 
-**Proposition (mollifiers).** There is $\rho \in \mathcal D(\mathbb{R}^n)$ with $\rho \ge 0$, $\operatorname{supp}\rho \subseteq \{|x|\le1\}$ and $\int\rho=1$. For $\varepsilon>0$ put $\rho_\varepsilon(x)=\varepsilon^{-n}\rho(x/\varepsilon)$. Then for $f \in L^p(\mathbb{R}^n)$, $1\le p<\infty$, the convolutions $f*\rho_\varepsilon$ are smooth, $\|f*\rho_\varepsilon\|_p\le\|f\|_p$, and $f*\rho_\varepsilon \to f$ in $L^p$; for $f$ uniformly continuous and bounded the convergence is uniform; and for $f \in L^1_{\mathrm{loc}}$ the convergence is in $L^1_{\mathrm{loc}}$.
+**Proposition (mollifiers).** There is $\rho \in \mathcal D(\mathbb{R}^n)$ with $\rho \ge 0$, $\operatorname{supp}\rho \subseteq \{|x|\le1\}$ and $\int\rho=1$. For $\varepsilon>0$ put $\rho_\varepsilon(x)=\varepsilon^{-n}\rho(x/\varepsilon)$. Then for $f \in L^{n}(\mathbb{R}^n)$, $1\le p<\infty$, the convolutions $f*\rho_\varepsilon$ are smooth, $\|f*\rho_\varepsilon\|_p\le\|f\|_p$, and $f*\rho_\varepsilon \to f$ in $L^{n}$; for $f$ uniformly continuous and bounded the convergence is uniform; and for $f \in L^1_{\mathrm{loc}}$ the convergence is in $L^1_{\mathrm{loc}}$.
 
-*Proof.* The function $\rho(x)=c\exp(-1/(1-|x|^2))$ for $|x|<1$ and $0$ otherwise, with $c$ chosen so that $\int\rho=1$, is the standard bump and lies in $\mathcal D$. Minkowski's integral inequality gives the norm bound and the continuity of translation in $L^p$ gives the convergence; the uniform case is uniform continuity, and the local case follows by testing on compact sets.
+*Proof.* The function $\rho(x)=c\exp(-1/(1-|x|^2))$ for $|x|<1$ and $0$ otherwise, with $c$ chosen so that $\int\rho=1$, is the standard bump and lies in $\mathcal D$. Minkowski's integral inequality gives the norm bound and the continuity of translation in $L^{n}$ gives the convergence; the uniform case is uniform continuity, and the local case follows by testing on compact sets.
 
-**Corollary (density).** $C_c^\infty(\Omega)$ is dense in $L^p(\Omega)$ for $1\le p<\infty$, dense in $C_0(\Omega)$ in the supremum norm, and $\mathcal D(\mathbb{R}^n)$ is dense in $\mathcal S(\mathbb{R}^n)$.
+**Corollary (density).** $C_c^\infty(\Omega)$ is dense in $L^{n}(\Omega)$ for $1\le p<\infty$, dense in $C_0(\Omega)$ in the supremum norm, and $\mathcal D(\mathbb{R}^n)$ is dense in $\mathcal S(\mathbb{R}^n)$.
 
 ## Distributions
 
@@ -150,15 +150,15 @@ The obstruction is repaired not by weakening the criterion but by changing the o
 **Definition.** The **Fourier transform** of $f \in \mathcal S(\mathbb{R}^n)$ is
 
 $$
-\hat f(\xi)=\mathcal Ff(\xi)=\int_{\mathbb{R}^n}f(x)e^{-ix\cdot\xi}\,dx,
+(\mathcal F f)(\xi)=\mathcal Ff(\xi)=\int_{\mathbb{R}^n}f(x)\exp(-ix\cdot\xi)\,dx,
 \qquad
-\mathcal F^{-1}g(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}g(\xi)e^{ix\cdot\xi}\,d\xi .
+\mathcal F^{-1}g(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}g(\xi)\exp(ix\cdot\xi)\,d\xi .
 $$
 
-**Theorem.** $\mathcal F$ maps $\mathcal S(\mathbb{R}^n)$ isomorphically onto itself, with $\mathcal F^{-1}$ the inverse, $\|\hat f\|_2=(2\pi)^{n/2}\|f\|_2$, and the identities
+**Theorem.** $\mathcal F$ maps $\mathcal S(\mathbb{R}^n)$ isomorphically onto itself, with $\mathcal F^{-1}$ the inverse, $\|\mathcal F f\|_2=(2\pi)^{n/2}\|f\|_2$, and the identities
 
 $$
-\widehat{\partial_jf}(\xi)=i\xi_j\hat f(\xi), \qquad \widehat{x_jf}(\xi)=i\partial_j\hat f(\xi), \qquad \widehat{(f*g)}=\hat f\hat g .
+\widehat{\partial_jf}(\xi)=i\xi_j(\mathcal F f)(\xi), \qquad \widehat{x_jf}(\xi)=i\partial_j(\mathcal F f)(\xi), \qquad \widehat{(f*g)}=\mathcal F f\mathcal F g .
 $$
 
 *Proof.* These are the standard properties: differentiation under the integral sign for the first, integration by parts for the second and the convolution theorem by Fubini; inversion follows from the Fourier inversion theorem, and the $L^2$ identity is Plancherel's theorem. Their proofs, with the normalisation used here, belong to *Fourier Analysis on Euclidean Spaces*.
@@ -174,18 +174,18 @@ are strict.
 **Definition.** The **Fourier transform** of $u \in \mathcal S'(\mathbb{R}^n)$ is defined by transposition,
 
 $$
-\langle\hat u,\varphi\rangle=\langle u,\hat\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^n),
+\langle\mathcal F u,\varphi\rangle=\langle u,\\mathcal F\\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^n),
 $$
 
 and is again tempered. The transform is a linear isomorphism of $\mathcal S'$ with itself, and it intertwines differentiation with multiplication:
 
 $$
-\widehat{\partial^\alpha u}=i^{|\alpha|}\xi^\alpha\hat u, \qquad \widehat{x^\alpha u}=i^{|\alpha|}\partial^\alpha\hat u, \qquad \widehat{u*v}=\hat u\,\hat v
+\widehat{\partial^\alpha u}=i^{|\alpha|}\xi^\alpha\mathcal F u, \qquad \widehat{x^\alpha u}=i^{|\alpha|}\partial^\alpha\mathcal F u, \qquad \widehat{u*v}=\mathcal F u\,\mathcal F v
 $$
 
 for $u \in \mathcal S'$ and $v \in \mathcal E'$, the convolution being defined in the next section.
 
-**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\hat\varphi\rangle=\hat\varphi(0)=\int\varphi$; the transform of a Gaussian $e^{-|x|^2/2}$ is $(2\pi)^{n/2}e^{-|\xi|^2/2}$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
+**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\\mathcal F\\varphi\rangle=\\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\xi|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
 
 ## Convolution
 
@@ -216,10 +216,10 @@ If $u=\delta_a$ then $u*\varphi=\tau_a\varphi$, where $\tau_a\varphi(x)=\varphi(
 **Definition.** Let $u,v \in \mathcal D'(\mathbb{R}^n)$ and suppose one of them has compact support. Then $u*v$ is the distribution
 
 $$
-\langle u*v,\varphi\rangle=\bigl\langle u_x,\langle v_y,\varphi(x+y)\rangle\bigr\rangle, \qquad \varphi \in \mathcal D(\mathbb{R}^n),
+\langle u*v,\varphi\rangle=\bigl\langle \partial_x u,\langle \partial_y v,\varphi(x+y)\rangle\bigr\rangle, \qquad \varphi \in \mathcal D(\mathbb{R}^n),
 $$
 
-the pairing being rigorous because the compact support makes $\langle v_y,\varphi(x+y)\rangle$ a test function of $x$. When neither factor has compact support the convolution may still be defined if the supports are suitably bounded, but it is not defined in general.
+the pairing being rigorous because the compact support makes $\langle \partial_y v,\varphi(x+y)\rangle$ a test function of $x$. When neither factor has compact support the convolution may still be defined if the supports are suitably bounded, but it is not defined in general.
 
 **Theorem.** The convolution is bilinear, commutative and associative whenever the supports permit, continuous in the weak-$*$ topology, and satisfies
 
@@ -227,7 +227,7 @@ $$
 \delta*u=u, \qquad \delta_a*u=\tau_au, \qquad (\partial^\alpha\delta)*u=\partial^\alpha u, \qquad (\partial^\alpha u)*v=\partial^\alpha(u*v),
 $$
 
-and $\operatorname{supp}(u*v) \subseteq \overline{\operatorname{supp}u+\operatorname{supp}v}$. The space $\mathcal E'(\mathbb{R}^n)$ of compactly supported distributions is a commutative algebra under convolution, with identity $\delta$; the space $L^1(\mathbb{R}^n)$ is a subalgebra, and the Fourier transform converts convolution into multiplication, $\widehat{u*v}=\hat u\hat v$ for $u \in \mathcal S'$ and $v \in \mathcal E'$.
+and $\operatorname{supp}(u*v) \subseteq \overline{\operatorname{supp}u+\operatorname{supp}v}$. The space $\mathcal E'(\mathbb{R}^n)$ of compactly supported distributions is a commutative algebra under convolution, with identity $\delta$; the space $L^1(\mathbb{R}^n)$ is a subalgebra, and the Fourier transform converts convolution into multiplication, $\widehat{u*v}=\mathcal F u\mathcal F v$ for $u \in \mathcal S'$ and $v \in \mathcal E'$.
 
 *Proof.* Bilinearity and continuity follow from the definition and the continuity of the pairings; the associativity, when the supports permit, is Fubini for the iterated pairing. The remaining identities are verified directly on test functions, and the Fourier statement is the convolution theorem transposed.
 
@@ -253,7 +253,7 @@ A **parametrix** of $P$ near $x_0$ is a distribution $E$ with $PE=\delta_{x_0}-R
 
 **Theorem (Ehrenpreis–Malgrange).** Every nonzero linear differential operator with constant coefficients on $\mathbb{R}^n$ has a fundamental solution.
 
-*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\xi))$ as a tempered distribution even though $1/P(\xi)$ may fail to be locally integrable near the real zeros of the polynomial $P(\xi)$. One writes $1/P(\xi)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\xi+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\xi)\hat E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below.
+*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\xi))$ as a tempered distribution even though $1/P(\xi)$ may fail to be locally integrable near the real zeros of the polynomial $P(\xi)$. One writes $1/P(\xi)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\xi+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\xi)\mathcal F E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below.
 
 ### The Laplacian and the Heat Operator
 
@@ -268,10 +268,10 @@ and it satisfies $-\Delta E=\delta$. For $n\ge3$ one has $\Delta|x|^{2-n}=0$ awa
 **Example (heat operator).** On $\mathbb{R}^n \times \mathbb{R}$ the **heat kernel**
 
 $$
-E(x,t)=\begin{cases}(4\pi t)^{-n/2}e^{-|x|^2/(4t)}, & t>0,\\ 0, & t\le0,\end{cases}
+E(x,t)=\begin{cases}(4\pi t)^{-n/2}\exp(-|x|^2/(4t)), & t>0,\\ 0, & t\le0,\end{cases}
 $$
 
-satisfies $(\partial_t-\Delta)E=\delta$; it is smooth away from the orig, its integral over $x$ equals $1$ for every $t>0$ (verified by the Gaussian integral, whose value is $\pi^{n/2}$ in $n$ dimensions after the change of variable), and it tends to $\delta$ as $t \downarrow 0$, so that $E$ is the fundamental solution of the heat operator. The solution of the Cauchy problem $u_t-\Delta u=0$, $u(\cdot,0)=u_0$, is $u=E(t)*u_0$ where the convolution is in the space variables, and the equation is the model of the parabolic theory.
+satisfies $(\partial_t-\Delta)E=\delta$; it is smooth away from the orig, its integral over $x$ equals $1$ for every $t>0$ (verified by the Gaussian integral, whose value is $\pi^{n/2}$ in $n$ dimensions after the change of variable), and it tends to $\delta$ as $t \downarrow 0$, so that $E$ is the fundamental solution of the heat operator. The solution of the Cauchy problem $\partial_t u-\Delta u=0$, $u(\cdot,0)=u_0$, is $u=E(t)*u_0$ where the convolution is in the space variables, and the equation is the model of the parabolic theory.
 
 **Example (wave operator).** On $\mathbb{R}^{1+d}$ with coordinates $(t,x)$, the operator $\Box=\partial_t^2-\Delta_x$ has a fundamental solution supported in the cone $\{(t,x):|x|\le t\}$, the characteristic cone of the quadratic form $\mathrm{diag}(1,-1,\dots,-1)$, given in each dimension by an explicit formula: $\frac12H(t-|x|)$ for $d=1$, $\frac{1}{2\pi}(t^2-|x|^2)^{-1/2}H(t-|x|)$ for $d=2$, and $\frac{1}{4\pi t}\delta(t-|x|)$ for $d=3$. The support property is finite propagation speed, and the formulas are those of the wave-equation article of the differential-equations extension; they are quoted here as the standard fundamental solutions.
 
@@ -299,7 +299,7 @@ $$
 \int_\Omega f\,\partial^\alpha\varphi=(-1)^{|\alpha|}\int_\Omega g\varphi \qquad \text{for every } \varphi \in \mathcal D(\Omega).
 $$
 
-**Theorem.** The weak derivative, when it exists, is unique; it agrees with the classical derivative wherever the latter is continuous; and the Sobolev space $W^{k,p}(\Omega)$ of functions whose weak derivatives of order at most $k$ lie in $L^p$ is a Banach space under $\|f\|_{W^{k,p}}=(\sum_{|\alpha|\le k}\|\partial^\alpha f\|_p^p)^{1/p}$. The identification of $W^{k,p}$ with the Bessel-potential space $H^k_p$ for $1<p<\infty$ and the embedding theorems are the content.
+**Theorem.** The weak derivative, when it exists, is unique; it agrees with the classical derivative wherever the latter is continuous; and the Sobolev space $W^{k,n}(\Omega)$ of functions whose weak derivatives of order at most $k$ lie in $L^{n}$ is a Banach space under $\|f\|_{W^{k,n}}=(\sum_{|\alpha|\le k}\|\partial^\alpha f\|_p^p)^{1/p}$. The identification of $W^{k,n}$ with the Bessel-potential space $H^k_p$ for $1<p<\infty$ and the embedding theorems are the content.
 
 This is the first of the two passages that the theory of distributions makes possible. The second is the one used by the analysis of an algebra-valued function: when the ground algebra is no longer a field, the first-order operator $D=\sum_ie_i\partial_i$ assembled from a frame of the algebra is a linear differential operator to which the definitions of this article apply verbatim, so the notions of weak solution, of fundamental solution and of regularity by parametrix are available there as here. The class of functions annihilated by $D$, its Cauchy integral formula and the failure of the classical theorems are treated, in the category of the algebras of this Part, and the operator itself is not covered here.
 
@@ -329,10 +329,10 @@ The Fourier transform is an isomorphism of the Schwartz space and, by transposit
 | $\operatorname{supp}u$ | support of a distribution |
 | $\check\varphi$, $\tau_a\varphi$ | reflection and translation of a test function |
 | $u*\varphi$, $u*v$ | convolution |
-| $\hat u=\mathcal Fu$ | Fourier transform of a distribution |
+| $\mathcal F u=\mathcal Fu$ | Fourier transform of a distribution |
 | $P(x,D)$, $p_m(x,\xi)$ | differential operator and principal symbol |
 | $E$, $R$ | fundamental solution or parametrix, and smoothing remainder |
-| $W^{k,p}$, $H^s_p$ | Sobolev and Bessel-potential spaces |
+| $W^{k,n}$, $H^{s}_{n}$ | Sobolev and Bessel-potential spaces |
 | $\rho_\varepsilon$ | mollifier |
 
 

@@ -45,7 +45,7 @@ $$
 with the convention that $k_j$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$), the general solution on the interval $j$ is
 
 $$
-\phi_j(x) = A_j\,e^{\,ik_j x} + B_j\,e^{-ik_j x}.
+\phi_j(x) = A_j\,\exp(\,ik_j x) + B_j\,\exp(-ik_j x).
 $$
 
 A potential that is piecewise constant is therefore solved by matching the coefficients across each jump, and the whole problem is a linear algebra problem for the coefficient vectors $(A_j,B_j)$.
@@ -68,16 +68,16 @@ $$
 For a superposition of a right- and a left-moving exponential,
 
 $$
-\phi(x) = A\,e^{\,ikx} + B\,e^{-ikx},
+\phi(x) = A\,\exp(\,ikx) + B\,\exp(-ikx),
 $$
 
 the current is constant despite the interference between the two terms. One computes
 
 $$
-\phi^*\phi' = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,e^{-2ikx} + AB^*\,e^{2ikx}\right),
+\phi^*\phi' = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,\exp(-2ikx) + AB^*\,\exp(2ikx)\right),
 $$
 
-and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*Be^{-2ikx}$), so it contributes nothing to $\mathrm{Im}(\phi^*\phi')$:
+and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}(\phi^*\phi')$:
 
 $$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
@@ -94,8 +94,8 @@ Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|
 $$
 \phi(x) \longrightarrow
 \begin{cases}
-A\,e^{\,ikx} + B\,e^{-ikx}, & x\to-\infty,\\[4pt]
-C\,e^{\,ikx} + D\,e^{-ikx}, & x\to+\infty.
+A\,\exp(\,ikx) + B\,\exp(-ikx), & x\to-\infty,\\[4pt]
+C\,\exp(\,ikx) + D\,\exp(-ikx), & x\to+\infty.
 \end{cases}
 $$
 
@@ -158,7 +158,7 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\phi'$ at the origin, with the ansatz $\phi = e^{ik_1x}+re^{-ik_1x}$ on the left and $\phi = te^{ik_2x}$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\phi'$ at the origin, with the ansatz $\phi = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\phi = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
@@ -187,7 +187,7 @@ $$
 The coefficients are those of a sudden change of impedance; the vanishing of $T$ when $k_2\to0$ is the statement that the wave cannot enter a classically forbidden region at threshold. For $E<V_0$ there is no transmitted wave vector; $r$ has unit modulus, $R=1$, and the solution on the right is the evanescent wave
 
 $$
-\phi(x) = t\,e^{-\kappa x},
+\phi(x) = t\,\exp(-\kappa x),
 \qquad
 \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar},
 $$
@@ -201,9 +201,9 @@ Let $V(x)=V_0$ on $0<x<a$ and zero elsewhere, with $E<V_0$. The solution is osci
 $$
 \phi(x) =
 \begin{cases}
-e^{ikx}+re^{-ikx}, & x<0,\\
-A\,e^{\kappa x}+B\,e^{-\kappa x}, & 0<x<a,\\
-t\,e^{ikx}, & x>a,
+\exp(ikx)+r\exp(-ikx), & x<0,\\
+A\,\exp(\kappa x)+B\,\exp(-\kappa x), & 0<x<a,\\
+t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
 \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar}.
@@ -212,7 +212,7 @@ $$
 Matching $\phi$ and $\phi'$ at $0$ and $a$ gives, after eliminating the interior coefficients,
 
 $$
-t = \frac{4ik\kappa\,e^{-ika}}{(k+i\kappa)^2 e^{-\kappa a} - (k-i\kappa)^2 e^{+\kappa a}},
+t = \frac{4ik\kappa\,\exp(-ika)}{(k+i\kappa)^2 \exp(-\kappa a) - (k-i\kappa)^2 \exp(+\kappa a)},
 $$
 
 and therefore
@@ -231,10 +231,10 @@ $$
 
 which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_2a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which the well supports an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+mV_0a^2/2\hbar^2]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
 
-For a thick barrier, $e^{\kappa a}\gg1$, the exact formula reduces to the exponential law
+For a thick barrier, $\exp(\kappa a)\gg1$, the exact formula reduces to the exponential law
 
 $$
-T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;e^{-2\kappa a},
+T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;\exp(-2\kappa a),
 $$
 
 whose exponent $2\kappa a = \frac{2}{\hbar}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+mV_0a^2/2\hbar^2]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $\kappa a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $m=\hbar=1$.
@@ -249,7 +249,7 @@ $$
 \phi'(0^+)-\phi'(0^-) = \frac{2m\lambda}{\hbar^2}\,\phi(0),
 $$
 
-the second obtained by integrating the equation across the origin. For $E>0$, with $\phi = e^{ikx}+re^{-ikx}$ for $x<0$ and $\phi = te^{ikx}$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2m\lambda}{\hbar^2}t$, so with the dimensionless coupling
+the second obtained by integrating the equation across the origin. For $E>0$, with $\phi = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\phi = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2m\lambda}{\hbar^2}t$, so with the dimensionless coupling
 
 $$
 \beta = \frac{m\lambda}{\hbar^2 k},
@@ -275,7 +275,7 @@ E_b = -\frac{m\lambda^2}{2\hbar^2} = -\frac{\hbar^2\kappa_b^2}{2m},
 \kappa_b = \frac{m|\lambda|}{\hbar^2},
 $$
 
-whose wave function $e^{-\kappa_b|x|}$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $k = i\kappa_b$; it is the pole that the transmission amplitude acquires on the negative energy axis.
+whose wave function $\exp(-\kappa_b|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $k = i\kappa_b$; it is the pole that the transmission amplitude acquires on the negative energy axis.
 
 ### The square well and resonances
 
@@ -306,7 +306,7 @@ $$
 so that the coefficients on the far side are obtained by multiplying by the inverse of this step matrix. Across a region of length $a$ with wave vector $q$, the free propagation matrix is
 
 $$
-P(a) = \begin{pmatrix} e^{\,iqa} & 0 \\ 0 & e^{-iqa} \end{pmatrix}.
+P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \\ 0 & \exp(-iqa) \end{pmatrix}.
 $$
 
 A potential built from $n$ piecewise-constant regions therefore has a **transfer matrix** $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.
@@ -315,7 +315,7 @@ A potential built from $n$ piecewise-constant regions therefore has a **transfer
 
 The value of the transfer matrix is that a composite potential is a matrix product: the transfer matrix of a sequence of regions is the ordered product of the step matrices (inverted, as above) and the propagation matrices, taken from left to right. This is why a potential built from many weak barriers can be solved by multiplying two-by-two matrices rather than by matching many boundary conditions at once.
 
-A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=Ae^{ikx}+Be^{-ikx}$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A'\\B'\end{pmatrix}$, is obtained from the continuity and jump conditions and is
+A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A'\\B'\end{pmatrix}$, is obtained from the continuity and jump conditions and is
 
 $$
 M_\delta(\beta) =
@@ -423,9 +423,9 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial_x^2 + V(x))e_0\,\psi = E\psi$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\psi = \phi\chi$ with $\chi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, which for a superposition $Ae^{ikx}+Be^{-ikx}$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
-The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}e^{-2\kappa a}$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
+The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
 The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a unitary element $\tilde S\tilde S^{*} = e_0$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 

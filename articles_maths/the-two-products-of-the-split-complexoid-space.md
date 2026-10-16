@@ -4,9 +4,9 @@
 
 This article defines the **two products** carried by the split-complex space — the **general plain bilinear product** $AC$ and the **general plain sesquilinear product** $A\overline{C}$ — reads them on the coordinates, states the two structures they define, and isolates the one point that tells this pair of products from the pair carried by the complex field. The first is the multiplication of the algebra and makes $\mathbb{D}$ a commutative ring; the second is the product with the second argument conjugated and makes $\mathbb{D}$ a **sesqualgebra** over the algebra with involution $(\mathbb{D},\bar{\cdot})$. Two operations and two structures are the whole operational content of the split-complex space.
 
-The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are *The Sesquilinear Product of the Split-Complex Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complex Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
+The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $A=a+ja'$; the conjugate is $\bar A=a-ja'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with $A=A_+\Pi_1+A_-\Pi_2$ and $A_\pm=a\pm a'$. The Hermitian conjugation coincides with the bar. In this article $A=a+ja'$ and $C=c+jc'$ name elements, and the letters $B$, $H$, $N$ are kept for the forms and norms of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $A=a+ja'$; the conjugate is $\bar A=a-ja'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with $A=A_+\Pi_1+A_-\Pi_2$ and $A_\pm=a\pm a'$. The Hermitian conjugation coincides with the bar. In this article $A=a+ja'$ and $C=c+jc'$ name elements, and the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$ are kept for the forms and norms of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
 
 ## The Two Products
 
@@ -42,7 +42,7 @@ So the two products differ by the conjugate-linearity in the second argument, an
 
 **Proof.** Commutativity is the symmetry of the coordinate formulas, $ac+a'c'=ca+c'a$ and $ac'+a'c=ca'+c'a$; associativity is the associativity of the polynomial algebra $\mathbb{R}[x]/(x^2-1)$, or equally the identity $A(CD)=(AC)D$ checked on the three coordinates; and $1\cdot A=A\cdot 1=A$. The ring is the algebra, by definition of the multiplication of $\mathbb{D}$.
 
-The product $AC$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $B(A,C)=AC$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose algebraic norm is the first algebraic norm $B(A)=A^2$.
+The product $AC$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $\langle A,C\rangle=AC$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the first algebraic norm $\langle A\rangle=A^2$.
 
 **Proposition (the properties of $AC$).**
 
@@ -76,7 +76,7 @@ $$
 
 so the two associators differ by $-2j$ and associativity fails.
 
-The structure is therefore not the ring but a **sesqualgebra**: a module over an algebra with involution, with a conjugate-bilinear product. The product is conjugate-commutative and right-unital; the plain exchange of its two arguments gives $C\bar A=\overline{A\bar C}$, the conjugate of the value, and its associator is developed in *The Sesquilinear Product of the Split-Complex Space*, below this article in this category. The exchange of the arguments and the rest of the relations between the two products are collected in *Relations and Comparison Between the Two Products of the Split-Complex Space*, below this article in this category.
+The structure is therefore not the ring but a **sesqualgebra**: a module over an algebra with involution, with a conjugate-bilinear product. The product is conjugate-commutative and right-unital; the plain exchange of its two arguments gives $C\bar A=\overline{A\bar C}$, the conjugate of the value, and its associator is developed in *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The exchange of the arguments and the rest of the relations between the two products are collected in *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, below this article in this category.
 
 **Proposition (the properties of $A\overline{C}$).**
 
@@ -91,7 +91,7 @@ The structure is therefore not the ring but a **sesqualgebra**: a module over an
 | right unit | yes | $A\overline{1}=A$ |
 | alternative, flexible, power-associative | no | the same associator |
 
-The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, below this article in this category; as a form the product is the general plain sesquilinear form $H(A,C)=A\overline{C}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose algebraic norm is the second algebraic norm $H(A)=A\overline{A}=N(A)=a^2-a'^2$.
+The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category; as a form the product is the general plain sesquilinear form $\langle A,C\rangle_{*}=A\overline{C}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the second algebraic norm $\langle A\rangle_{*}=A\overline{A}=\langle A\rangle_{\natural}=a^2-a'^2$.
 
 ## The Two Products on the Idempotent Coordinates
 
@@ -120,7 +120,7 @@ The two products define the two structures carried by $\mathbb{D}$.
 | $AC$ | commutative ring, and algebra over $\mathbb{R}$ | yes | yes | two-sided |
 | $A\overline{C}$ | sesqualgebra over $(\mathbb{D},\bar{\cdot})$ | conjugate-commutative | no | right only |
 
-The first is the **algebra** $\mathbb{D}$, the split-complex numbers with their multiplication, and its classes of element — units, zero divisors, idempotents, ideals — are the subject of the Algebra group. The second is the **sesqualgebra**, the product with the second argument conjugated, and its defect, measured by the associator, is the subject of *The Sesquilinear Product of the Split-Complex Space*, below this article in this category. The two structures are the two objects the whole operational vocabulary of the chapter describes, and no third structure occurs.
+The first is the **algebra** $\mathbb{D}$, the split-complex numbers with their multiplication, and its classes of element — units, zero divisors, idempotents, ideals — are the subject of the Algebra group. The second is the **sesqualgebra**, the product with the second argument conjugated, and its defect, measured by the associator, is the subject of *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The two structures are the two objects the whole operational vocabulary of the chapter describes, and no third structure occurs.
 
 ## The Point That Separates the Split Case from the Complex One
 
@@ -146,8 +146,8 @@ The product $AC$ makes $\mathbb{D}$ a commutative, associative ring with two-sid
 | $AC-A\overline{C}=2c'(a'+aj)$ | the difference of the two products |
 | $AC\leftrightarrow(A_+C_+,A_-C_-)$ | the ring product in idempotent coordinates |
 | $A\overline{C}\leftrightarrow(A_+C_-,A_-C_+)$ | the sesquilinear product in idempotent coordinates |
-| $B(A,C)=AC$, $H(A,C)=A\overline{C}$ | the two products as the two forms |
-| $B(A)=A^2$, $H(A)=N(A)=A\overline{A}$ | their algebraic norms, the two algebraic norms |
+| $\langle A,C\rangle=AC$, $\langle A,C\rangle_{*}=A\overline{C}$ | the two products as the two forms |
+| $\langle A\rangle=A^2$, $\langle A\rangle_{*}=\langle A\rangle_{\natural}=A\overline{A}$ | their algebraic norms, the two algebraic norms |
 
 ## Further Reading
 

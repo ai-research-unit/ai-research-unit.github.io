@@ -167,7 +167,7 @@ Two consequences follow from the table alone. First, no subspace other than the 
 
 ## The Complex Structure and the Remarkable Subspaces
 
-The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *Biquaternions as a Vector Space over $\mathbb{C}$*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
+The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *The Biquaternioid as a Vector Space over $\mathbb{C}$*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
 
 $$
 J(A_1) = A_2, \qquad J(A_2) = A_1, \qquad J(B_1) = B_2, \qquad J(B_2) = B_1.
@@ -208,6 +208,6 @@ The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate bl
 
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces themselves, one to a section
 - *Decompositions Along the Remarkable Subspaces* (`articles_maths/decompositions-along-the-remarkable-subspaces.md`), for the three decompositions and the projection formulas
-- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
+- *The Biquaternioid as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for what the remarkable subspaces give when the product is brought in, which is not part of this article

@@ -8,7 +8,7 @@ Three claims organize the discussion. First, the spinor representation is the de
 
 The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(j,j')$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.
 
-Notation is that of the read-list companions. The quaternion basis is $e_0=1,e_1,e_2,e_3$, with $e_k^2=-e_0$ and $e_1e_2=e_3$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$, and the biquaternion norm is the determinant, $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+Notation is that of the read-list companions. The quaternion basis is $e_0=1,e_1,e_2,e_3$, with $e_k^2=-e_0$ and $e_1e_2=e_3$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Spinor Representation and Its Carrier
 
@@ -41,14 +41,14 @@ $$
 
 so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde{U}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\hat u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde{U}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
 
 $$
 h(\tilde{U}\psi,\tilde{U}\phi)=\psi^{\dagger}\tilde{U}^{*}\tilde{U}\,\phi,
-\qquad \tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\hat u\neq e_0 .
+\qquad \tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\vec u\neq e_0 .
 $$
 
-For example, on a boost along $e_3$ the operator $\tilde{U}^{*}\tilde{U}$ is $\mathrm{diag}(e^{\psi},e^{-\psi})$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
+For example, on a boost along $e_3$ the operator $\tilde{U}^{*}\tilde{U}$ is $\mathrm{diag}(\exp(\psi),\exp(-\psi))$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
 
 ## The Two Fundamental Representations Are the Two Chiralities
 
@@ -95,7 +95,7 @@ $$
 \qquad \tilde{Q}\in\mathbb{B},
 $$
 
-and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $u\otimes\bar{v}\mapsto \tilde{Q}=u\,v^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(uv^{\dagger}+vu^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
+and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\psi\otimes\bar{\chi}\mapsto \tilde{Q}=\psi\,\chi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\psi\chi^{\dagger}+\chi\psi^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
 
 
 $$
@@ -135,7 +135,7 @@ V_{j'} \cong \operatorname{Sym}^{2j'}(\bar{S}),
 (j,j')\cong \operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S}),
 $$
 
-with the **diagonal** action of the group on the tensor product, $v\mapsto\mathsf{M}_2(\tilde{U})v$ on each factor of $S$ and $w\mapsto\overline{\mathsf{M}_2(\tilde{U})}w$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j')$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
+with the **diagonal** action of the group on the tensor product, $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ on each factor of $S$ and $\chi\mapsto\overline{\mathsf{M}_2(\tilde{U})}\chi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j')$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
 
 | Representation | $\dim_{\mathbb{C}}$ | Object | Carrier |
 |---|---|---|---|
@@ -223,7 +223,7 @@ The higher representations are $(j,j')=V_j\boxtimes V_{j'}$, $\dim=(2j+1)(2j'+1)
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and scalar subspaces |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix isomorphism, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
 | $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ | Primitive idempotent; $\mathbb{B}\tilde\Pi_+\cong S$ |
 | $S=\mathbb{C}^2$ | Spinor module, the defining representation $(\tfrac12,0)$ |
 | $\bar{S}$ | Conjugate spinor module, the right-handed chirality $(0,\tfrac12)$ |

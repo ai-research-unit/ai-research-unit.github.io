@@ -7,7 +7,7 @@ The Kepler problem is the motion of a particle in the inverse-square force $F(r)
 Three results are derived. The **orbit** is a conic section with the force centre at a focus, with the semi-latus rectum $p = L^2/(m\kappa)$ and the eccentricity determined by the energy. **Kepler's three laws** follow: the ellipse with the focus at the centre, the areal law, and the harmonic relation $T^2 \propto a^3$. And the **Runge–Lenz vector**,
 
 $$
-\vec A = \vec p\times\vec L - m\kappa\,\hat r ,
+\vec A = \vec p\times\vec L - m\kappa\,\vec u_r ,
 $$
 
 is conserved, a fact special to the inverse-square law; it fixes the orientation of the orbit and makes the hodograph a circle. The vector $\vec A$ is introduced here and its symmetry algebra is developed in the companion article of this subcategory on the classical Coulomb problem.
@@ -20,7 +20,7 @@ $$
 \vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b,
 $$
 
-so that the angular momentum is $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$, the vector part of the quaternion product. The radial unit vector is $\hat r = \vec r/|\vec r|$ with $|\vec r| = \sqrt{N(\vec r)}$. The symbol $\kappa$ denotes the coupling of the attractive inverse-square force; for gravity $\kappa = GMm$.
+so that the angular momentum is $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$, the vector part of the quaternion product. The radial unit vector is $\vec u_r = \vec r/|\vec r|$ with $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$. The symbol $\kappa$ denotes the coupling of the attractive inverse-square force; for gravity $\kappa = GMm$.
 
 ## The Kepler Potential
 
@@ -29,7 +29,7 @@ so that the angular momentum is $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\
 The Kepler problem is a central force with the power-law potential
 
 $$
-V(r) = -\frac{\kappa}{r}, \qquad \vec F = -\nabla V = -\frac{\kappa}{r^2}\,\hat r .
+V(r) = -\frac{\kappa}{r}, \qquad \vec F = -\nabla V = -\frac{\kappa}{r^2}\,\vec u_r .
 $$
 
 The potential is a central scalar, $\tilde{\Phi} = V(r)e_0 \in \mathbb{M}_+$, and the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, so the angular momentum is conserved by the mechanism of the central-scalar limit. The parameter $\kappa > 0$ for attraction; the same mathematics with $\kappa < 0$ describes repulsion, and the general conic classification below covers both signs through the energy.
@@ -149,7 +149,7 @@ Numerically, for the dimensionless choice $m = \kappa = 1$ and the orbit with $E
 The **Runge–Lenz vector** is
 
 $$
-\vec A = \vec p\times\vec L - m\kappa\,\hat r .
+\vec A = \vec p\times\vec L - m\kappa\,\vec u_r .
 $$
 
 It is a real vector with the dimensions of angular momentum, it is orthogonal to $\vec L$,
@@ -158,14 +158,14 @@ $$
 \vec A\cdot\vec L = 0 ,
 $$
 
-because $\vec p\times\vec L$ is perpendicular to $\vec L$ and $\hat r$ is perpendicular to $\vec L$, and it is conserved for the inverse-square force. The conservation is a three-line computation. Since $\dot{\vec L} = 0$ and $\dot{\vec p} = -\kappa\hat r/r^2$,
+because $\vec p\times\vec L$ is perpendicular to $\vec L$ and $\vec u_r$ is perpendicular to $\vec L$, and it is conserved for the inverse-square force. The conservation is a three-line computation. Since $\dot{\vec L} = 0$ and $\dot{\vec p} = -\kappa\vec u_r/r^2$,
 
 $$
-\frac{d}{dt}\left(\vec p\times\vec L\right) = \dot{\vec p}\times\vec L = -\frac{\kappa}{r^2}\,\hat r\times\vec L
-= m\kappa\left(\frac{\vec v}{r} - \frac{\dot r}{r^2}\vec r\right) = m\kappa\,\frac{d\hat r}{dt} ,
+\frac{d}{dt}\left(\vec p\times\vec L\right) = \dot{\vec p}\times\vec L = -\frac{\kappa}{r^2}\,\vec u_r\times\vec L
+= m\kappa\left(\frac{\vec v}{r} - \frac{\dot r}{r^2}\vec r\right) = m\kappa\,\frac{d\vec u_r}{dt} ,
 $$
 
-where the vector triple product was expanded with $\hat r\times(\vec r\times\vec v) = \dot r\,\vec r - r\vec v$ using $\hat r\cdot\vec v = \dot r$. The second term of $\vec A$ differentiates to the same quantity, so the two cancel and
+where the vector triple product was expanded with $\vec u_r\times(\vec r\times\vec v) = \dot r\,\vec r - r\vec v$ using $\vec u_r\cdot\vec v = \dot r$. The second term of $\vec A$ differentiates to the same quantity, so the two cancel and
 
 $$
 \frac{d\vec A}{dt} = 0 .
@@ -175,13 +175,13 @@ The cancellation uses the inverse-square form of the force and fails for a gener
 
 ### Direction and Magnitude
 
-The vector $\vec A$ points along the apsidal line. At perihelion the velocity is perpendicular to the radius and $\vec p\times\vec L = pL\,\hat r_{\min}$ with $\hat r_{\min}$ the direction of closest approach, while the second term is $-m\kappa\hat r_{\min}$; the two are parallel there, and $\vec A$ lies along the perihelion direction. Its magnitude follows from the identity
+The vector $\vec A$ points along the apsidal line. At perihelion the velocity is perpendicular to the radius and $\vec p\times\vec L = pL\,\vec u_r_{\min}$ with $\vec u_r_{\min}$ the direction of closest approach, while the second term is $-m\kappa\vec u_r_{\min}$; the two are parallel there, and $\vec A$ lies along the perihelion direction. Its magnitude follows from the identity
 
 $$
 |\vec A|^2 = m^2\kappa^2 + 2mEL^2 ,
 $$
 
-obtained by squaring $\vec p\times\vec L = \vec A + m\kappa\hat r$ and using $p^2 = 2m(E + \kappa/r)$. Comparing with the energy–eccentricity relation gives
+obtained by squaring $\vec p\times\vec L = \vec A + m\kappa\vec u_r$ and using $p^2 = 2m(E + \kappa/r)$. Comparing with the energy–eccentricity relation gives
 
 $$
 |\vec A| = m\kappa\,e ,
@@ -194,10 +194,10 @@ so the (dimensionless) eccentricity is the magnitude of a conserved vector. The 
 The conservation of $\vec A$ has a striking kinematic consequence. Rearranging the definition,
 
 $$
-\vec p\times\vec L = \vec A + m\kappa\,\hat r .
+\vec p\times\vec L = \vec A + m\kappa\,\vec u_r .
 $$
 
-Since $\vec p$ lies in the orbital plane and is perpendicular to $\vec L$, the vector $\vec p\times\vec L$ is obtained from $\vec p$ by a fixed rotation and a scaling by $L$. The equation therefore says that $\vec p$ is a fixed vector plus a vector whose magnitude is constant and whose direction is $\hat r$. Hence **the momentum vector traces a circle** as the particle moves: the hodograph of the Kepler motion is a circle of radius $m\kappa/L$ centred at the vector $(\hat L\times\vec A)/L$, which is $\vec A/L$ turned through a right angle about $\vec L$, so that the centre lies at distance $m\kappa e/L$ from the origin in the direction perpendicular to $\vec A$. Numerically, for the orbit above, the momentum points lie on a circle of radius $1.111111 = m\kappa/L$ centred at $(0, -0.211111)$, with a radial spread of $2\times10^{-9}$ over five thousand sampled points. The hodograph circle is the momentum-space image of the conic, and its radius is independent of the eccentricity: it depends on $L$ alone.
+Since $\vec p$ lies in the orbital plane and is perpendicular to $\vec L$, the vector $\vec p\times\vec L$ is obtained from $\vec p$ by a fixed rotation and a scaling by $L$. The equation therefore says that $\vec p$ is a fixed vector plus a vector whose magnitude is constant and whose direction is $\vec u_r$. Hence **the momentum vector traces a circle** as the particle moves: the hodograph of the Kepler motion is a circle of radius $m\kappa/L$ centred at the vector $(L\times\vec A)/L$, which is $\vec A/L$ turned through a right angle about $\vec L$, so that the centre lies at distance $m\kappa e/L$ from the origin in the direction perpendicular to $\vec A$. Numerically, for the orbit above, the momentum points lie on a circle of radius $1.111111 = m\kappa/L$ centred at $(0, -0.211111)$, with a radial spread of $2\times10^{-9}$ over five thousand sampled points. The hodograph circle is the momentum-space image of the conic, and its radius is independent of the eccentricity: it depends on $L$ alone.
 
 ## Closed Orbits and Bertrand's Theorem
 
@@ -213,7 +213,7 @@ The two exceptional potentials are also the two whose bound spectra are degenera
 
 The Kepler problem uses the algebra in three places, and they are precise.
 
-**The force is a central material vector.** The force is $-\kappa\hat r/r^2$, a real element of the three-space; it commutes with the position, and the commuting is the criterion for angular momentum conservation. The inverse-square radial dependence is a scalar function of the invariant length $r = \sqrt{N(\vec r)}$, and the potential $-\kappa/re_0$ is a central scalar.
+**The force is a central material vector.** The force is $-\kappa\vec u_r/r^2$, a real element of the three-space; it commutes with the position, and the commuting is the criterion for angular momentum conservation. The inverse-square radial dependence is a scalar function of the invariant length $r = \sqrt{\langle \vec r\rangle_{\natural}}$, and the potential $-\kappa/re_0$ is a central scalar.
 
 **The angular momentum is a product.** The vector part of the quaternion product $\vec r\vec p$ is $\vec L$, and the conservation law is the vanishing of the commutator $[\vec r,\vec F]$. The algebra's product supplies the cross product and the dot product in one operation.
 
@@ -221,13 +221,13 @@ The Kepler problem uses the algebra in three places, and they are precise.
 
 ### What the Algebra Does Not Contain
 
-The Runge–Lenz vector is the place where the algebra stops. Its second term is $-m\kappa\,\vec r/|\vec r|$, and the reciprocal length $|\vec r|^{-1}$ is not a polynomial function of the components of $\vec r$; the vector $\hat r$ is a **unit** vector, a normalized quantity, and normalization is a nonlinear operation that the finite-dimensional algebra does not implement. The first term, $\vec p\times\vec L$, is a cubic expression in the components of $\vec r$ and $\vec p$; it is not an element of the algebra either, because $\vec p$ and $\vec L$ are separate vectors of the configuration and their product is not the same operation as the algebra's product of two fixed elements.
+The Runge–Lenz vector is the place where the algebra stops. Its second term is $-m\kappa\,\vec r/|\vec r|$, and the reciprocal length $|\vec r|^{-1}$ is not a polynomial function of the components of $\vec r$; the vector $\vec u_r$ is a **unit** vector, a normalized quantity, and normalization is a nonlinear operation that the finite-dimensional algebra does not implement. The first term, $\vec p\times\vec L$, is a cubic expression in the components of $\vec r$ and $\vec p$; it is not an element of the algebra either, because $\vec p$ and $\vec L$ are separate vectors of the configuration and their product is not the same operation as the algebra's product of two fixed elements.
 
 The correct location of $\vec A$ is the **phase space** of the particle, the six-dimensional space of pairs $(\vec r, \vec p)$, on which functions such as $|\vec r|$ and $\vec r\times\vec p$ make sense. The biquaternion algebra is finite-dimensional, $\mathbb{B} \cong M_2(\mathbb{C})$, and it supplies the three real directions in which the vectors live and the rotation group that acts on them; it does not supply the phase space. The hidden symmetry of the Kepler problem is a symmetry of that phase space, and the algebra does not carry it. The companion article on the Coulomb problem makes this structural limitation the centre of its treatment and gives the symmetry algebra explicitly.
 
 ## Summary
 
-The classical Kepler problem in biquaternionic form is the motion of a real vector $\vec r$ in the material sector under the central scalar potential $V(r) = -\kappa/r$. The force $-\kappa\hat r/r^2$ is a real vector commuting with the position, so the angular momentum $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ is conserved and the motion is planar.
+The classical Kepler problem in biquaternionic form is the motion of a real vector $\vec r$ in the material sector under the central scalar potential $V(r) = -\kappa/r$. The force $-\kappa\vec u_r/r^2$ is a real vector commuting with the position, so the angular momentum $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ is conserved and the motion is planar.
 
 Binet's equation becomes linear,
 
@@ -254,10 +254,10 @@ verified numerically to five decimal places for a representative bound orbit.
 The Runge–Lenz vector
 
 $$
-\vec A = \vec p\times\vec L - m\kappa\hat r, \qquad \vec A\cdot\vec L = 0, \qquad |\vec A| = m\kappa e,
+\vec A = \vec p\times\vec L - m\kappa\vec u_r, \qquad \vec A\cdot\vec L = 0, \qquad |\vec A| = m\kappa e,
 $$
 
-is conserved, points along the perihelion direction, and makes the momentum hodograph a circle of radius $m\kappa/L$. The algebra contains the central force, the product form of $\vec L$, and the central-scalar energy; it does not contain $\vec A$, because $\hat r$ requires a normalization and the phase space on which $\vec A$ lives is not a module over the finite-dimensional algebra. The hidden symmetry that $\vec A$ generates is the subject of the companion article on the classical Coulomb problem.
+is conserved, points along the perihelion direction, and makes the momentum hodograph a circle of radius $m\kappa/L$. The algebra contains the central force, the product form of $\vec L$, and the central-scalar energy; it does not contain $\vec A$, because $\vec u_r$ requires a normalization and the phase space on which $\vec A$ lives is not a module over the finite-dimensional algebra. The hidden symmetry that $\vec A$ generates is the subject of the companion article on the classical Coulomb problem.
 
 ## Summary of Notation
 
@@ -271,7 +271,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | $\kappa$ | Inverse-square coupling; $\kappa = GMm$ for gravity |
 | $V(r) = -\kappa/r$ | Kepler potential; central scalar $\tilde{\Phi} = V(r)e_0$ |
 | $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ | Angular momentum; vector part of $\vec r\vec p$ |
-| $r, \theta$; $\hat r = \vec r/|\vec r|$ | Polar coordinates; radial unit vector |
+| $r, \theta$; $\vec u_r = \vec r/|\vec r|$ | Polar coordinates; radial unit vector |
 | $h = L/m$ | Areal constant |
 | $V_{\text{eff}} = -\kappa/r + L^2/(2mr^2)$ | Effective potential |
 | $u = 1/r$ | Binet variable |
@@ -281,7 +281,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | $r = p/(1 + e\cos(\theta-\theta_0))$ | Conic orbit |
 | $a = -\kappa/(2E)$, $b = \sqrt{L^2a/(m\kappa)}$ | Semi-major and semi-minor axes |
 | $T = 2\pi\sqrt{ma^3/\kappa}$ | Kepler's third law |
-| $\vec A = \vec p\times\vec L - m\kappa\hat r$ | Runge–Lenz vector; $|\vec A| = m\kappa e$ |
+| $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector; $|\vec A| = m\kappa e$ |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
 | $|\vec p\times\vec L| = L|\vec p|$ | Hodograph identity |
 

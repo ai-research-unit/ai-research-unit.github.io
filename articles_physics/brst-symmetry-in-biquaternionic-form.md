@@ -151,7 +151,7 @@ The chain is worth stating in full, because it is the framework's contribution t
 1. The gauge algebra is a Lie algebra realized by the commutator on a subspace of $\mathbb{B}$.
 2. The structure constants satisfy the Jacobi identity because the product of $\mathbb{B}$ is associative.
 3. The Jacobi identity is what makes the non-abelian BRST transformation nilpotent.
-4. Nilpotency is what makes the physical-state condition $Q|\mathrm{phys}\rangle=0$ consistent and the physical subspace positive.
+4. Nilpotency is what makes the physical-state condition $\mathcal{Q}|\mathrm{phys}\rangle=0$ consistent and the physical subspace positive.
 
 Therefore, to the extent that the gauge algebra is realized inside the biquaternion algebra, the nilpotency of the BRST operator — and with it the consistency of the gauge-fixed quantization — is inherited from the associativity of the algebra rather than imposed. This is a genuine algebraic statement, and it is the sharpest thing the framework says about BRST symmetry. What it does not do is select which gauge algebra is realized, or fix the gauge parameter; those remain inputs.
 
@@ -217,25 +217,25 @@ so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ m
 
 ### The BRST Charge
 
-Because the transformation is a symmetry of the action, it has a conserved charge by Noether's theorem: the **BRST charge** $Q$, a Grassmann-odd operator with
+Because the transformation is a symmetry of the action, it has a conserved charge by Noether's theorem: the **BRST charge** $\mathcal{Q}$, a Grassmann-odd operator with
 
 $$
-Q^2 = 0,
+\mathcal{Q}^2 = 0,
 \qquad
-s\tilde{Q} = [iQ,\tilde{Q}]_\pm ,
+s\tilde{Q} = [i\mathcal{Q},\tilde{Q}]_\pm ,
 $$
 
-the bracket being a commutator for even $\tilde{Q}$ and an anticommutator for odd $\tilde{Q}$. The nilpotency $Q^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the gauge transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
+the bracket being a commutator for even $\tilde{Q}$ and an anticommutator for odd $\tilde{Q}$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the gauge transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
 
 ### Physical States
 
 The physical subspace is defined by
 
 $$
-\mathcal{H}_{\mathrm{phys}} = \frac{\ker Q}{\mathrm{im}\,Q}\Big|_{\mathrm{gh}=0},
+\mathcal{H}_{\mathrm{phys}} = \frac{\ker \mathcal{Q}}{\mathrm{im}\,\mathcal{Q}}\Big|_{\mathrm{gh}=0},
 $$
 
-the cohomology of the BRST charge at ghost number zero. Equivalently, physical states satisfy $Q|\mathrm{phys}\rangle=0$, with two such states identified if they differ by $Q|\chi\rangle$. This is a sharper characterization than the Gupta–Bleuler subsidiary condition: it states that the unphysical content is exactly the image of a nilpotent operator, so that it decouples from every physical amplitude, and it makes the positivity of the physical norm a theorem rather than a prescription, provided the cohomology is positive.
+the cohomology of the BRST charge at ghost number zero. Equivalently, physical states satisfy $\mathcal{Q}|\mathrm{phys}\rangle=0$, with two such states identified if they differ by $\mathcal{Q}|\chi\rangle$. This is a sharper characterization than the Gupta–Bleuler subsidiary condition: it states that the unphysical content is exactly the image of a nilpotent operator, so that it decouples from every physical amplitude, and it makes the positivity of the physical norm a theorem rather than a prescription, provided the cohomology is positive.
 
 The two transverse polarizations of the massless vector field are the ghost-number-zero cohomology of the abelian BRST charge: the timelike and longitudinal components of $\tilde{A}$, together with the ghost and antighost, form the **quartet** of the Kugo–Ojima mechanism, a set of four states in two zero-norm pairs whose members are removed by the cohomology and which never appear in the physical subspace. In the biquaternion language the quartet is the non-transverse part of the material sector $\mathbb{M}_-$ together with the odd envelope directions of the ghost pair: the algebra supplies the material quartet, and the envelope supplies the odd pair. The physical subspace is two-dimensional at each momentum, in agreement with the count reached by the Gupta–Bleuler route and by the constraint analysis.
 
@@ -255,7 +255,7 @@ The Proca field of the preceding article has no gauge freedom, and the BRST cons
 
 1. **A biquaternionic Grassmann envelope.** The odd coordinates are adjoined externally. Is there a natural $\mathbb{Z}_2$-graded extension of $\mathbb{B}$ — a superalgebra of which $\mathbb{B}$ is the even part — in which the BRST doublet is an element rather than an adjunction, and does the associativity argument survive?
 
-2. **The BRST charge as an algebraic object.** The charge $Q$ is an operator on the Fock space and not an element of $\mathbb{B}$. Is there a finite-dimensional object — a derivation, a supertrace, a cocycle — built from $\mathbb{B}$ that computes the cohomology without passing through the mode algebra, in the way the adjoint action computes the spin without passing through a tensor?
+2. **The BRST charge as an algebraic object.** The charge $\mathcal{Q}$ is an operator on the Fock space and not an element of $\mathbb{B}$. Is there a finite-dimensional object — a derivation, a supertrace, a cocycle — built from $\mathbb{B}$ that computes the cohomology without passing through the mode algebra, in the way the adjoint action computes the spin without passing through a tensor?
 
 3. **Which gauge algebras are realized.** The Jacobi identity holds for any gauge algebra realized by a commutator inside $\mathbb{B}$, but the algebras so realized are constrained by the finite dimension of the algebra. Is the constraint physical — does it select a subclass of gauge groups — or is it an artifact of using a single copy of the algebra?
 
@@ -267,7 +267,7 @@ The Proca field of the preceding article has no gauge freedom, and the BRST cons
 
 ## Summary
 
-The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ with $\Psi=\bar{c}(\partial_\mu A^\mu+\tfrac{\xi}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker Q/\mathrm{im}\,Q$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
+The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ with $\Psi=\bar{c}(\partial_\mu A^\mu+\tfrac{\xi}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
 
 In the biquaternion framework two things are added to the standard transcription. The first is the natural realization of the gauge algebra inside the algebra: the generators lie in the informational sector $\mathbb{M}_+$, the gauge field in the material sector $\mathbb{M}_-$, and the structure constants are those of the commutator. The second, and the substantive one, is the origin of nilpotency. The Jacobi identity that makes the non-abelian BRST transformation nilpotent is a consequence of the associativity of quaternion multiplication, so that $s^2=0$ is inherited from associativity and not postulated. The nilpotency was verified explicitly on the Grassmann envelope with $\mathrm{SU}(2)$ structure constants and random gauge fields, and the Jacobi combination was verified to vanish.
 
@@ -292,8 +292,8 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
 | $\Psi=\bar{c}^a(\partial_\mu A^{a\mu}+\tfrac{\xi}{2}B^a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ |
 | $\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
-| $Q$, $Q^2=0$, $s\tilde{Q}=[iQ,\tilde{Q}]_\pm$ | BRST charge |
-| $\mathcal{H}_{\mathrm{phys}}=\ker Q/\mathrm{im}\,Q\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |
+| $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}=[i\mathcal{Q},\tilde{Q}]_\pm$ | BRST charge |
+| $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |
 | Kugo–Ojima quartet | $(A_0,A_3,c,\bar{c})$ zero-norm pairs removed by the cohomology |
 
 ## Further Reading

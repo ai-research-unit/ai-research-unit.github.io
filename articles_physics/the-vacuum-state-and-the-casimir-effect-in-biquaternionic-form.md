@@ -34,19 +34,19 @@ The Fock space of a field is the direct sum of the symmetric or antisymmetric te
 $$
 \mathcal{F}=\bigoplus_{n\ge0}\Big(\mathcal{H}_1^{\otimes n}\Big)_{\pm},\qquad |0\rangle\ \text{spans the } n=0 \text{ term},
 $$
-annihilated by every annihilation operator, $\hat a_r|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(\hat a_0-\hat a_3)$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.
+annihilated by every annihilation operator, $a^{\mathrm{fop}}_r|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.
 
 The question that is specific to the framework is: **is the vacuum state an object of $\mathbb{B}$?** The answer has a positive part and a negative part, and they apply to different things.
 
 **The one-mode vacuum is native.** For a single fermionic mode the algebra contains the whole ladder, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* establishes. With
 $$
-\hat\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
-\hat\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
-\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0,
+\vec\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
+\vec\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
+\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0,
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\hat\Upsilon_2\hat\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\vec\Upsilon_2\vec\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
 $$
 so the **vacuum projector** is the complementary idempotent
 $$
@@ -66,15 +66,15 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-\hat A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\Big(\hat a_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,e^{-ik\cdot x}
-+\hat a_r^{\dagger}(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,e^{+ik\cdot x}\Big),
+A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
+\Big(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
++a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[\hat a_r(\vec k),\hat a_s^{\dagger}(\vec k')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k'),
+\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k'),
 $$
 with $\zeta=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!\hat H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,\hat a_r^{\dagger}(\vec k)\hat a_r(\vec k),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,a^{\mathrm{fop}\dagger}_r(\vec k)a^{\mathrm{fop}}_r(\vec k),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
@@ -95,7 +95,7 @@ E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.
 
-**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the **centre** $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=e^{-i\tilde Ht/\hbar}$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.
+**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the **centre** $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht/\hbar)$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.
 
 This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A **constant** central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the *variation* of a central scalar observable, and that is all the Casimir effect requires.
 
@@ -178,8 +178,8 @@ The second route uses the heat kernel rather than the mode sum directly, and it 
 **The heat kernel.** For the Dirichlet-type problem the heat kernel per unit area is
 $$
 K(t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
-e^{-t(\vec k_\perp^{2}+(\pi n/a)^{2})}
-=\frac{1}{4\pi t}\sum_{n=1}^{\infty}e^{-(\pi n/a)^{2}t},
+\exp(-t(\vec k_\perp^{2}+(\pi n/a)^{2}))
+=\frac{1}{4\pi t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}t),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
 $$
@@ -187,12 +187,12 @@ K_\infty(t)=\frac{1}{4\pi t}\cdot\frac{a}{2\sqrt{\pi t}}=\frac{a}{8\pi^{3/2}t^{3
 $$
 The **Jacobi modular relation** for the theta function,
 $$
-\sum_{n=-\infty}^{\infty}e^{-\alpha n^{2}}=\sqrt{\frac{\pi}{\alpha}}\sum_{m=-\infty}^{\infty}e^{-\pi^{2}m^{2}/\alpha},
+\sum_{n=-\infty}^{\infty}\exp(-\alpha n^{2})=\sqrt{\frac{\pi}{\alpha}}\sum_{m=-\infty}^{\infty}\exp(-\pi^{2}m^{2}/\alpha),
 $$
 with $\alpha=\pi^{2}t/a^{2}$, gives the exact difference
 $$
 K(t)-K_\infty(t)=-\frac{1}{8\pi t}
-+\frac{a}{4\pi^{3/2}t^{3/2}}\sum_{m=1}^{\infty}e^{-a^{2}m^{2}/t}.
++\frac{a}{4\pi^{3/2}t^{3/2}}\sum_{m=1}^{\infty}\exp(-a^{2}m^{2}/t).
 $$
 The first term is $a$-independent: it is a constant energy, contributes nothing to the force, and is the vestige of the surface divergence. The second term is the **Casimir part**: it is exponentially small as $t\to0$, so its zeta integral converges without any subtraction, and it vanishes as $a\to\infty$, which is what a Casimir energy must do. Its appearance from a modular transformation is the precise sense in which the finite part comes from the "winding" of the free modes around the compact direction of size $a$, not from the divergent mode count.
 
@@ -202,7 +202,7 @@ $$
 $$
 and with the Casimir part of the exact heat-kernel difference the $t$-integral is elementary,
 $$
-\int_{0}^{\infty}t^{-3}\,e^{-a^{2}m^{2}/t}\,dt=\frac{1}{a^{4}m^{4}} .
+\int_{0}^{\infty}t^{-3}\,\exp(-a^{2}m^{2}/t)\,dt=\frac{1}{a^{4}m^{4}} .
 $$
 Therefore
 $$
@@ -230,7 +230,7 @@ $$
 
 **From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
 
-**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $N(\tilde{Q})=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat k$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
+**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
 
 The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.
 
@@ -268,7 +268,7 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 | Vacuum expectation values (one mode) | Native | $\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=ie_3$ |
 | Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde H$; commutes |
-| Two physical transverse polarisations | Native | $\hat k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
+| Two physical transverse polarisations | Native | $\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
 | Indefinite metric $\zeta=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{M}_-$ |
 | Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\zeta_r=2$; two transverse polarisations |
 | Photon Fock vacuum | Imported | no bosonic ladder in $\mathbb{B}$ |
@@ -332,14 +332,14 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre of the algebra; home of the zero-point scalar |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
-| $\hat\Upsilon_1,\hat\Upsilon_2$ | One-mode ladder, $\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0$ |
+| $\vec\Upsilon_1,\vec\Upsilon_2$ | One-mode ladder, $\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0$ |
 | $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | One-mode number operator (idempotent) |
 | $\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_0+ie_3)$ | One-mode vacuum projector (idempotent in $\mathbb{M}_+$) |
 | $(-1)^F=ie_3$ | Fermion parity (single mode) |
 | $\vert 0\rangle$ | Field vacuum, degree-zero term of the Fock space |
-| $\hat a_r,\hat a_r^\dagger$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
-| $\zeta=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $N(\tilde{Q})=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$ |
-| $\hat k$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$ |
+| $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
+| $\zeta=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$ |
+| $\vec u_k$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$ |
 | $a$, $A$ | Plate separation and area |
 | $a,n,k_3=\pi n/a$ | Plate separation; mode index; quantized longitudinal wavevector |
 | $\vec k_\perp$ | Continuous transverse wavevector |

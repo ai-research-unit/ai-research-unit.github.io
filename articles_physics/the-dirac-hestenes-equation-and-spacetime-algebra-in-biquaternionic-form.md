@@ -67,7 +67,7 @@ with $\nabla = \gamma^\mu\partial_\mu$, a fixed spin plane $I\sigma_3$, and the 
 The matrix Dirac equation,
 
 $$
-\hat\gamma^\mu\left(i\partial_\mu - eA_\mu\right)|\psi\rangle = m|\psi\rangle ,
+\gamma^\mu\left(i\partial_\mu - eA_\mu\right)|\psi\rangle = m|\psi\rangle ,
 $$
 
 is recovered from the STA equation by mapping the spinor's upper and lower components to the even multivector through $\psi = \psi_U + \psi_L\sigma_3$, and by representing the algebra's elements by the Dirac matrices. The geometric pseudoscalar $I$ becomes the matrix $i$; the fixed vector $\gamma_0$ becomes the Dirac matrix $\gamma^0$; and the right multiplication by $I\sigma_3$ becomes the chirality structure of the matrix equation. The two formulations are exactly equivalent, and the STA version has the advantage that every object in it — the spin density, the current, the rotation — has a geometric meaning.
@@ -79,7 +79,7 @@ is recovered from the STA equation by mapping the spinor's upper and lower compo
 Hestenes decomposes a general Dirac spinor as
 
 $$
-\psi = R\left(\rho e^{i\beta}\right)^{1/2},
+\psi = R\left(\rho \exp(i\beta)\right)^{1/2},
 $$
 
 where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
@@ -103,7 +103,7 @@ equivalently $J = \psi\gamma_0\tilde\psi$ in the rotor normalisation. It is a fu
 The STA Dirac equation is invariant under
 
 $$
-\psi \;\mapsto\; \psi\,e^{\alpha(x)\,I\sigma_3},
+\psi \;\mapsto\; \psi\,\exp(\alpha(x)\,I\sigma_3),
 \qquad
 eA \;\mapsto\; eA - \nabla\alpha(x) ,
 $$
@@ -115,11 +115,11 @@ a **right** multiplication by the phase rotor, accompanied by the gauge transfor
 The parity, charge-conjugation and time-reversal transformations act on the STA spinor as
 
 $$
-P^{\mathrm{fop}}:\;\psi \mapsto \gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_0,
+P:\;\psi \mapsto \gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_0,
 \qquad
-C^{\mathrm{fop}}:\;\psi \mapsto \psi\sigma_1,
+C:\;\psi \mapsto \psi\sigma_1,
 \qquad
-T^{\mathrm{fop}}:\;\psi \mapsto I\gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_1 .
+T:\;\psi \mapsto I\gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_1 .
 $$
 
 Charge conjugation is the simplest: a right multiplication by the fixed bivector $\sigma_1$. Each transform is an involution built from fixed Clifford elements, and each is visibly a conjugation or a fixed sandwich — the same class of operations the framework's conjugation articles use.
@@ -174,7 +174,7 @@ the sign in the second identification being the convention of the $\gamma$-order
 The STA formulation is one of three equivalent real rewritings of Dirac theory that the series now records. The third is the **space Clifford formulation** of Daviau, which writes the equation for a general element $\varphi$ of the Pauli algebra $\mathcal P\cong M_2(\mathbb C)$ as
 
 $$
-\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi ,
+\nabla\varphi\,i\sigma_1 = m\varphi^{*}+ϙA\varphi ,
 $$
 
 with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$, and the algebra acting on the spinor from both sides. The three formulations are related by the sign of the mass, a cyclic relabelling of the space directions, and the star; and the star is the corpus's **complex conjugation** $\bar{\cdot}$ under the identification of the Pauli algebra with $\mathbb B$. In particular the Dirac–Hestenes equation is Parra's option $\{2\}$ and the Daviau equation is Parra's option $\{1\}$, two of the four inequivalent sign conventions of one equation, permuted by the discrete group $\Gamma_{1,3}/\Gamma^+_{1,3}$. The details, the dictionary and the equivalence are in the two companion articles.
@@ -185,7 +185,7 @@ with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\
 
 2. **The right action.** If the physical Dirac field is the STA spinor, then the framework's equation must be rewritten to act on the right for the mass and phase terms. What, algebraically, distinguishes the left from the right action here, and does the framework's sector split select one?
 
-3. **The rotor decomposition.** Hestenes' $\psi = R(\rho e^{i\beta})^{1/2}$ singles out a rotor and a density as the physical content. Does the framework's field admit the same decomposition, and does its norm $N(\tilde Q)$ play the role of the density $\rho$?
+3. **The rotor decomposition.** Hestenes' $\psi = R(\rho \exp(i\beta))^{1/2}$ singles out a rotor and a density as the physical content. Does the framework's field admit the same decomposition, and does its norm $\langle\tilde Q\rangle_{\natural}$ play the role of the density $\rho$?
 
 4. **Charge conjugation as $\sigma_1$.** In STA, $C$ is a right multiplication by a fixed bivector. The framework's conjugation articles build charge conjugation from the real structure $\flat$. Are the two the same operation in different normalisations?
 
@@ -195,7 +195,7 @@ with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\
 
 ## Summary
 
-Spacetime algebra is the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb R)$ of Minkowski space, and the Dirac–Hestenes equation $\nabla\psi I\sigma_3 - eA\psi = m\psi\gamma_0$ is the Dirac equation rewritten in it as a single real equation for an even multivector spinor. The spinor has eight real components; it decomposes as $\psi = R(\rho e^{i\beta})^{1/2}$ into a Lorentz rotor, a density and an angle; and the current is the geometric vector $J^\mu = \bar\psi\gamma^\mu\psi$. The matrix theory is recovered by mapping the even multivector to the spinor components and the pseudoscalar to $i$.
+Spacetime algebra is the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb R)$ of Minkowski space, and the Dirac–Hestenes equation $\nabla\psi I\sigma_3 - eA\psi = m\psi\gamma_0$ is the Dirac equation rewritten in it as a single real equation for an even multivector spinor. The spinor has eight real components; it decomposes as $\psi = R(\rho \exp(i\beta))^{1/2}$ into a Lorentz rotor, a density and an angle; and the current is the geometric vector $J^\mu = \bar\psi\gamma^\mu\psi$. The matrix theory is recovered by mapping the even multivector to the spinor components and the pseudoscalar to $i$.
 
 The correspondence with the biquaternion framework is the closest in this series and is exact at the level of the algebra: the even subalgebra of $\mathrm{Cl}_{1,3}$ is the biquaternion algebra $\mathbb C\otimes_\mathbb R\mathbb H$, so the Dirac–Hestenes spinor *is* a biquaternion with the framework's eight real components; and the STA pseudoscalar $I$, which commutes with all even elements and squares to $-1$, *is* the framework's central unit $i$. The equation's two characteristic features — the **right** action on the spinor by $I\sigma_3$ and the **Clifford-odd** $\gamma_0$ in the mass and the current — are exactly the structures the framework's companion articles flag as subtle, the left-versus-right matter representation and the odd element the current requires. The Dirac–Hestenes equation is an equivalent rewriting and carries no new prediction, but it is the standard formulation in which the framework's open structural questions are already answered in the language of the full spacetime algebra.
 
@@ -208,7 +208,7 @@ The correspondence with the biquaternion framework is the closest in this series
 | $\sigma_k = \gamma_k\gamma_0$ | STA Pauli bivectors |
 | $\nabla = \gamma^\mu\partial_\mu$ | Spacetime vector derivative |
 | $\psi$ | Dirac–Hestenes spinor, an even multivector |
-| $\psi = R(\rho e^{i\beta})^{1/2}$ | Rotor, density and angle decomposition |
+| $\psi = R(\rho \exp(i\beta))^{1/2}$ | Rotor, density and angle decomposition |
 | $I\sigma_3$ | Fixed spin plane appearing on the right of the equation |
 | $\gamma_0$ | Fixed timelike, Clifford-odd vector; mass and adjoint |
 | $J^\mu = \bar\psi\gamma^\mu\psi$ | Dirac current, $\bar\psi=\psi^\dagger\gamma_0$ |

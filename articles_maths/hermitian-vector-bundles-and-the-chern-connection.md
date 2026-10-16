@@ -78,7 +78,7 @@ $$
 
 ### The Holomorphic Structure and the Dolbeault Operator
 
-Suppose now that the base $M$ carries an almost complex structure, so that the complexified cotangent bundle splits and the forms acquire a **type decomposition**; the almost complex structure, its integrability and the type decomposition of the forms are *Hermitian Geometry and Almost Complex Structures* in Part IV, and the notation of the $(p,q)$-forms is used here with that reference.
+Suppose now that the base $M$ carries an almost complex structure, so that the complexified cotangent bundle splits and the forms acquire a **type decomposition**; the almost complex structure, its integrability and the type decomposition of the forms are *Hermitian Geometry and Almost Complex Structures* in Part IV, and the notation of the $(n,m)$-forms is used here with that reference.
 
 **Definition.** A **holomorphic structure** on a complex vector bundle $E$ over an almost complex manifold $(M,J)$ is a first-order differential operator
 
@@ -138,7 +138,7 @@ $$
 
 **Corollary.** On a holomorphic line bundle, the curvature is $\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h$ with $h$ the metric in a holomorphic frame; the form $\frac{i}{2\pi}\Theta$ is real and closed, so it defines a real cohomology class, the first Chern class of the Hermitian line bundle, and the computation of the Chern classes from this curvature is the next article of the group.
 
-**Example.** Let $M = \mathbb{C}$ with the standard complex structure and let $E$ be the trivial line bundle with the metric $h(z) = e^{-\lvert z\rvert^2}$. In the holomorphic frame the Chern connection form is $\omega = h^{-1}\partial h = -\bar z\,dz$, the curvature is $\Theta = \bar\partial(-\bar z\,dz) = dz\wedge d\bar z$, and the first Chern form is $\frac{i}{2\pi}dz\wedge d\bar z$, the area form of the plane carried by the bundle metric; the curvature measures the failure of the metric to be the constant one, and it is the local model of the Fubini–Study connection.
+**Example.** Let $M = \mathbb{C}$ with the standard complex structure and let $E$ be the trivial line bundle with the metric $h(z) = \exp(-\lvert z\rvert^2)$. In the holomorphic frame the Chern connection form is $\omega = h^{-1}\partial h = -\bar z\,dz$, the curvature is $\Theta = \bar\partial(-\bar z\,dz) = dz\wedge d\bar z$, and the first Chern form is $\frac{i}{2\pi}dz\wedge d\bar z$, the area form of the plane carried by the bundle metric; the curvature measures the failure of the metric to be the constant one, and it is the local model of the Fubini–Study connection.
 
 ## Summary
 
@@ -160,7 +160,7 @@ A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, 
 | $dH = \omega^*H + H\omega$ | Metric compatibility in a frame; $\omega^*=\bar\omega^{\,T}$ |
 | $\mathfrak{u}(E,h)$, $\theta^*=-\theta$ | The affine space of metric connections; anti-Hermitian difference |
 | $\bar\partial_E$, $\bar\partial_E^2=0$ | Holomorphic structure and its integrability |
-| $(p,q)$-forms, $\Omega^{0,1}(M;E)$ | Type decomposition; forward reference to Part IV |
+| $(n,m)$-forms, $\Omega^{0,1}(M;E)$ | Type decomposition; forward reference to Part IV |
 | Chern connection | The unique $\nabla$ with $\nabla^{0,1}=\bar\partial_E$ and $\nabla$ metric-compatible |
 | $\omega = H^{-1}\partial H$ | Chern connection form in a holomorphic frame; type $(1,0)$ |
 | $\Theta = d\omega+\omega\wedge\omega = \bar\partial(H^{-1}\partial H)$ | Curvature of the Chern connection; type $(1,1)$, skew-Hermitian |

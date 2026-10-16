@@ -87,7 +87,7 @@ and the inverse is componentwise, $A^{-1} = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$.
 
 **Proof.** The element $A$ is a unit iff $\varphi(A) = (A_+,A_-)$ is a unit of $\mathbb{R}\oplus\mathbb{R}$, and a pair is a unit iff both of its coordinates are nonzero.
 
-The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $A_+$ and $A_-$. The norm, the criterion $N(A) \neq 0$ and the components are *Split-Complex Norm and Invertibility*, where the group of units is treated as a Lie group.
+The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $A_+$ and $A_-$. The norm, the criterion $\langle A\rangle_{\natural} \neq 0$ and the components are *Split-Complex Norm and Invertibility*, where the group of units is treated as a Lie group.
 
 ## Reduced, Not a Field
 
@@ -138,10 +138,10 @@ $$
 the matrix of multiplication by $A = a+ja'$ in the basis $\{1,j\}$: the first column is the coordinates of $A \cdot 1 = A$ and the second those of $A \cdot j = a'+ja$. These are the matrices of **hyperbolic type**, symmetric with equal diagonal entries, and their determinant and trace are
 
 $$
-\det\mathsf{M}_2(A) = a^2 - a'^2 = N(A), \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a ,
+\det\mathsf{M}_2(A) = a^2 - a'^2 = \langle A\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a ,
 $$
 
-the determinant and the trace of the regular element, the determinant being the norm $N(A)$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
+the determinant and the trace of the regular element, the determinant being the norm $\langle A\rangle_{\natural}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
 
 **Proposition (degeneracy).** The image $\mathsf{M}_2(\mathbb{D})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:
 
@@ -153,7 +153,7 @@ $$
 
 **Corollary.** The matrix model $\mathsf{M}_2$ is the algebra $\mathbb{R}\oplus\mathbb{R}$ in disguise: it is the diagonal subalgebra of $M_2(\mathbb{R})$, its centre is itself, and the image carries no idempotent other than the four diagonal projections and no nilpotent other than $0$.
 
-The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{D}$, obtained by regarding the algebra as a two-dimensional complex-like space, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are *The Matrix Element Representations of the Split-Complex Numbers*, and the element reading of the regular matrix is *Split-Complex Regular Element Representation*.
+The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{D}$, obtained by regarding the algebra as a two-dimensional complex-like space, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are *The Matrix Element Representations of the Split-Complexoid*, and the element reading of the regular matrix is *Split-Complex Regular Element Representation*.
 
 ## Summary
 
@@ -175,7 +175,7 @@ The consequences for the classes of element are that the positively defined clas
 | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ | The two idempotent lines, the only nontrivial ideals |
 | $\mathbb{D}^\times = \{A_+ \neq 0, A_- \neq 0\}$ | Group of units, $\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 | $\mathcal{N} = \{A_+A_- = 0\}$ | Null cone, the set of nonzero non-units |
-| $\mathsf{M}_2(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ | Regular matrix of $A$, of determinant $N(A)$ and trace $2a$ |
+| $\mathsf{M}_2(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ | Regular matrix of $A$, of determinant $\langle A\rangle_{\natural}$ and trace $2a$ |
 | $\dim_\mathbb{R}\mathbb{D} = 2$ | Dimension of the algebra over its base |
 
 ## Further Reading

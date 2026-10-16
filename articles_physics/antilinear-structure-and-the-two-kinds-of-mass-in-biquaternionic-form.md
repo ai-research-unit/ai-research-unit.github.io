@@ -119,7 +119,7 @@ $$
 \mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}\mathcal{C}\psi_L + \text{h.c.}\big).
 $$
 
-The first pairs $\psi_L$ with $\psi_R$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\psi\mapsto e^{i\alpha}\psi$. The second pairs $\psi_L$ with $\psi_L^{c}$ and is **antilinear**; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
+The first pairs $\psi_L$ with $\psi_R$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\psi\mapsto \exp(i\alpha)\psi$. The second pairs $\psi_L$ with $\psi_L^{c}$ and is **antilinear**; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
 
 | | Dirac mass | Majorana mass |
 |---|---|---|
@@ -190,7 +190,7 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 | level | object | space | what it is |
 |---|---|---|---|
 | 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{M}_-$; the **shape** of a charge-conjugation pairing |
-| 2, the Clifford algebra | $\bar{A}=\Pi A^{*}\Pi^{-1}$ | $\mathrm{Cl}_{p,q}$ | the charge-conjugation **pseudoautomorphism**; $\Pi$ is odd and lies outside $\mathbb{B}$ |
+| 2, the Clifford algebra | $\bar{A}=\Pi A^{*}\Pi^{-1}$ | $\mathrm{Cl}_{n,m}$ | the charge-conjugation **pseudoautomorphism**; $\Pi$ is odd and lies outside $\mathbb{B}$ |
 | 3, the module | $C[\psi]=i\gamma^{2}\psi^{*}$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation |
 | 4, the module real structure | $\bar{\cdot}$ | $\Delta\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{H}_{\mathbb{B}}$ |
 
@@ -210,17 +210,17 @@ $$
 
 a double cover of $SO(1,3)\times U(1)$: the spin group extended by a central circle. It is **not** the complexification of $\mathrm{Spin}(1,3)$ — that is the larger $\mathrm{Spin}(1,3)_{\mathbb{C}}$, of real dimension twelve — and the looser name is sometimes used for it; the definition above is the one used here. $W_3$ is the integral class obstructing its existence, and the group is available exactly when $w_2$ is the mod $2$ reduction of an integral class. The Clifford action of $\mathrm{Cl}_{1,3}$ on the Dirac module is projective, realising a Lorentz transformation $\Lambda$ by $\pm S(\Lambda)$; that is why the acting group is the double cover $\mathrm{Spin}(1,3)$, and $\mathrm{Spin}^c$ is the central extension that adds the circle. The extra factor is **central** in $\mathrm{Spin}^c$, and it acts on the Dirac module by the same scalar on both chiral halves.
 
-**The framework's central $U(1)$ is that factor.** The gauge principle article localizes the unitary part of the centre — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = e^{i\theta}e_0$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iq/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $U(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $U(1)$.
+**The framework's central $U(1)$ is that factor.** The gauge principle article localizes the unitary part of the centre — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = \exp(i\theta)e_0$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iϙ/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $U(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $U(1)$.
 
-**Which spinors can carry it.** A spinor can be rotated by the central phase and remain a spinor of its own type only when its defining condition survives the rotation. The Dirac module imposes no condition, and $\psi\mapsto e^{i\alpha}\psi$ is a symmetry of the free equation, so the Dirac spinor — with linearly independent left and right components — carries the $U(1)$ and is charged. The Majorana spinor is the fixed-point set of the module's antilinear real structure, $\psi = \mathcal{C}\bar{\psi}^{T}$, and $\mathcal{C}$ is conjugate-linear, so
+**Which spinors can carry it.** A spinor can be rotated by the central phase and remain a spinor of its own type only when its defining condition survives the rotation. The Dirac module imposes no condition, and $\psi\mapsto \exp(i\alpha)\psi$ is a symmetry of the free equation, so the Dirac spinor — with linearly independent left and right components — carries the $U(1)$ and is charged. The Majorana spinor is the fixed-point set of the module's antilinear real structure, $\psi = \mathcal{C}\bar{\psi}^{T}$, and $\mathcal{C}$ is conjugate-linear, so
 
 $$
 \psi = \mathcal{C}\bar{\psi}^{T}
 \quad\Longrightarrow\quad
-e^{i\alpha}\psi = e^{-i\alpha}\,\mathcal{C}\bar{\psi}^{T}.
+\exp(i\alpha)\psi = \exp(-i\alpha)\,\mathcal{C}\bar{\psi}^{T}.
 $$
 
-The condition is preserved only for $e^{2i\alpha} = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana spinor is **blind to the central $U(1)$** — electrically neutral. The **ELKO** spinor, a Lounesto class-$5$ spinor, is neutral for the same reason: it too is fixed by an antilinear condition. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
+The condition is preserved only for $\exp(2i\alpha) = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana spinor is **blind to the central $U(1)$** — electrically neutral. The **ELKO** spinor, a Lounesto class-$5$ spinor, is neutral for the same reason: it too is fixed by an antilinear condition. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
 
 It matters for the previous section *which* of the article's two real structures does the work. It is the **module's** $\mathcal{C}$ — the fixed-point condition that halves the field — and not the algebra's $\flat$. The distinction between them is thus not bookkeeping; it decides which spinors can carry a charge. The minimal-coupling article reaches the same obstruction from the other side, finding that a mass term pairing the field with its conjugate would retain only $\lambda = \pm 1$ of the phase.
 
@@ -238,10 +238,10 @@ $$
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
-Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0e^{i\theta}$ and $\tilde{k} = ik_0e_0 + e_1k_1 + e_2k_2 + e_3k_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $e^{+i\theta}$ and $e^{-i\theta}$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
+Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0\exp(i\theta)$ and $\tilde{k} = ik_0e_0 + e_1k_1 + e_2k_2 + e_3k_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
 
 $$
-\tilde{\Psi} = \tilde{\Psi}_0\,e^{i\theta} + \tilde{\Psi}_1\,e^{-i\theta},
+\tilde{\Psi} = \tilde{\Psi}_0\,\exp(i\theta) + \tilde{\Psi}_1\,\exp(-i\theta),
 $$
 
 and the equation becomes a linear system for the pair $(\tilde{\Psi}_0,\tilde{\Psi}_1)$. Its solvability depends on $\tilde{k}$, and the dependence is the whole story.
@@ -249,8 +249,8 @@ and the equation becomes a linear system for the pair $(\tilde{\Psi}_0,\tilde{\P
 Since $\flat$ is antilinear and $i^\flat = -i$, the conjugation acts on the two modes by
 
 $$
-\tilde{\nabla}\tilde{\Psi} = i\tilde{k}\tilde{\Psi}_0e^{i\theta} - i\tilde{k}\tilde{\Psi}_1e^{-i\theta}, \qquad
-\tilde{\Psi}^\flat = -\tilde{\Psi}_0^{*} e^{-i\theta} - \tilde{\Psi}_1^{*} e^{i\theta} ,
+\tilde{\nabla}\tilde{\Psi} = i\tilde{k}\tilde{\Psi}_0\exp(i\theta) - i\tilde{k}\tilde{\Psi}_1\exp(-i\theta), \qquad
+\tilde{\Psi}^\flat = -\tilde{\Psi}_0^{*} \exp(-i\theta) - \tilde{\Psi}_1^{*} \exp(i\theta) ,
 $$
 
 and matching exponentials gives the two matrix equations

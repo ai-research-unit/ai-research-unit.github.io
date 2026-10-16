@@ -100,7 +100,7 @@ $$
 \vec S=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\,\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*});
 $$
 
-the mass terms cancel between the time derivative of $\mu^2|\phi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\phi=\phi_0e^{i(\vec k\cdot\vec x-\omega t)}$ one has $\vec S=2\omega\vec k|\phi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
+the mass terms cancel between the time derivative of $\mu^2|\phi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\phi=\phi_0\exp(i(\vec k\cdot\vec x-\omega t))$ one has $\vec S=2\omega\vec k|\phi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
 
 $$
 P_\nu=\frac{1}{c}\int T_{0\nu}\,d^3x
@@ -129,7 +129,7 @@ $$
 \boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right].\;}
 $$
 
-The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]=c^{-2}|\dot\phi|^2+|\nabla\phi|^2$ is where the $ict$ convention does its quiet work: the time coefficient of the gradient is $\partial_{ict}\phi=-ic^{-1}\dot\phi$, so $|\partial_{ict}\phi|^2=c^{-2}|\dot\phi|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial_{ict}^2+\Delta$; a reader who computes $|\partial_{ict}\phi|^2$ as $-\frac{1}{c^2}|\dot\phi|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde X^{*}\tilde X$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is *this* form, not the holomorphic norm $N(\tilde X) = \langle\tilde X,\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
+The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]=c^{-2}|\dot\phi|^2+|\nabla\phi|^2$ is where the $ict$ convention does its quiet work: the time coefficient of the gradient is $\partial_{ict}\phi=-ic^{-1}\dot\phi$, so $|\partial_{ict}\phi|^2=c^{-2}|\dot\phi|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial_{ict}^2+\Delta$; a reader who computes $|\partial_{ict}\phi|^2$ as $-\frac{1}{c^2}|\dot\phi|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde X^{*}\tilde X$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is *this* form, not the holomorphic norm $\langle\tilde X\rangle_{\natural} = \langle\tilde X,\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
 
 
 ### The Energy–Momentum Biquaternion
@@ -228,7 +228,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\tilde W=\mathcal{H}e_0+\frac{i}{c}\vec S\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
 | $p^\mu=\partial\mathcal{L}/\partial(\partial_\mu\phi)=\partial^\mu\phi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
 | $H_{DW}=p^\mu\partial_\mu\phi-\mathcal{L}=\frac12p^\mu p_\mu+\frac12\mu^2\phi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading

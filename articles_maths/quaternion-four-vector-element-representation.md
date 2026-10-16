@@ -9,14 +9,14 @@ The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebr
 
 The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.
 
-Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
+Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
 
 ## The Coordinate Vector
 
 **Definition.** The **coordinate map** sends $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ to the quadruple
 
 $$
-\varphi(\tilde q) = (q_0,q_1,q_2,q_3)\in F^4 .
+\varphi(\tilde q) = (q_0,q_1,q_2,q_3)\in F^4.
 $$
 
 **Theorem.** The map $\varphi$ is an isomorphism of $F$-vector spaces, and the basis $(e_0,e_1,e_2,e_3)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.
@@ -55,7 +55,7 @@ $$
 \begin{aligned}
 (p\tilde q)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
 (p\tilde q)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
-(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
+(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0.
 \end{aligned}
 $$
 
@@ -74,7 +74,7 @@ $$
 $$
 \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
 \varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q] .
+\varphi(-\tilde q) = -[\tilde q].
 $$
 
 *Proof.* Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.
@@ -105,12 +105,12 @@ is the orthogonal decomposition, in the algebra and in coordinates, into the two
 **Theorem.** The quaternion norm in coordinates is the sum of the four squares of the coordinates,
 
 $$
-N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
+\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
 $$
 
 and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\tilde{q}^{\natural}) = [p]^{T}[\tilde q]$.
 
-*Proof.* $\tilde q\tilde{q}^{\natural} = (q_0+\vec q)(q_0-\vec q) = q_0^2-\vec q^2 = q_0^2+N(\vec q) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.
+*Proof.* $\tilde q\tilde{q}^{\natural} = (q_0+\vec q)(q_0-\vec q) = q_0^2-\vec q^2 = q_0^2+\langle \vec q\rangle_{\natural} = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.
 
 **Corollary.** Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the quaternion norm are all positive.
 
@@ -139,7 +139,7 @@ The quaternion case is the real case, and its four positive signs are the whole 
 | $\operatorname{diag}(1,-1,-1,-1)$ | Matrix of quaternion conjugation |
 | $\operatorname{diag}(-1,1,1,1)$ | Matrix of vector conjugation |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar axis and vector hyperplane in coordinates |
-| $N(\tilde q) = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$ | Quaternion norm, four positive signs |
+| $\langle\tilde q\rangle_{\natural} = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$ | Quaternion norm, four positive signs |
 | $\vec p\times\vec q$ | Cross product in the vector coordinates |
 
 ## Further Reading

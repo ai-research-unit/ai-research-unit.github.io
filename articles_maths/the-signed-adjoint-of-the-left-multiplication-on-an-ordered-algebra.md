@@ -113,7 +113,7 @@ Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grad
 
 ### The Clifford Algebra
 
-Let $A = \mathrm{Cl}(V,q)$ with the parity grading and let $e$ be a vector with $e^2 = -1$, an odd reflection element. The signed left multiplication $L^{\alpha}_e$ is an involution, its adjoint is $L^{\alpha}_{\alpha(e^{*})} = L^{\alpha}_{-e^{*}}$, and the reflection $\tau_e = L^{\alpha}_eR_e$ has the adjoint $\tau_{\alpha(e^{*})}$ of *The Signed Adjoint of the Reflection on an Ordered Algebra*. The Clifford case is the geometric instance of the one-sided adjoint formula.
+Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and let $e$ be a vector with $e^2 = -1$, an odd reflection element. The signed left multiplication $L^{\alpha}_e$ is an involution, its adjoint is $L^{\alpha}_{\alpha(e^{*})} = L^{\alpha}_{-e^{*}}$, and the reflection $\tau_e = L^{\alpha}_eR_e$ has the adjoint $\tau_{\alpha(e^{*})}$ of *The Signed Adjoint of the Reflection on an Ordered Algebra*. The Clifford case is the geometric instance of the one-sided adjoint formula.
 
 ## Summary
 

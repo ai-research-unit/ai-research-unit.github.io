@@ -33,7 +33,7 @@ and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characte
 
 **Definition.** For a character $\chi$ modulo $q$ the **Gauss sum** is
 $$
-\tau(\chi) = \sum_{a=1}^{q}\chi(a)\,e^{2\pi i a/q}.
+\tau(\chi) = \sum_{a=1}^{q}\chi(a)\,\exp(2\pi i a/q).
 $$
 **Theorem (properties of the Gauss sum).** Let $\chi$ be primitive modulo $q$. Then
 
@@ -43,9 +43,9 @@ $$
 
 **(c)** $\overline{\tau(\chi)} = \chi(-1)\,\tau(\bar\chi)$, and consequently $\tau(\chi) = \chi(-1)\,\overline{\tau(\bar\chi)}$.
 
-**Proof sketch.** For (a), compute $\lvert\tau(\chi)\rvert^2 = \sum_{a,b}\chi(a)\bar\chi(b)e^{2\pi i(a-b)/q}$ and substitute $a = bu$ for $u$ ranging over the units, using the primitivity to replace the sum over units by a sum over all residues in the resulting Ramanujan sum; the result is $\sum_{u}\chi(u)\sum_{c}e^{2\pi i uc/q} = q$. The identity (b) follows from (a) and the computation of $\tau(\chi)^2$ for the primitive case, and (c) is the substitution $a\mapsto a^{-1}$ in the defining sum.
+**Proof sketch.** For (a), compute $\lvert\tau(\chi)\rvert^2 = \sum_{a,b}\chi(a)\bar\chi(b)\exp(2\pi i(a-b)/q)$ and substitute $a = bu$ for $u$ ranging over the units, using the primitivity to replace the sum over units by a sum over all residues in the resulting Ramanujan sum; the result is $\sum_{u}\chi(u)\sum_{c}\exp(2\pi i uc/q) = q$. The identity (b) follows from (a) and the computation of $\tau(\chi)^2$ for the primitive case, and (c) is the substitution $a\mapsto a^{-1}$ in the defining sum.
 
-**Example.** For the nontrivial character modulo $3$, with $\chi(1)=1$ and $\chi(2)=-1$, the Gauss sum is $\tau = e^{2\pi i/3} - e^{4\pi i/3} = i\sqrt3$, of absolute value $\sqrt3 = \sqrt q$; the associated root number of the next section is $\tau/(i\sqrt3) = 1$. For the character modulo $4$ with $\chi(-1)=-1$, the Gauss sum is $\tau = e^{2\pi i/4} - e^{6\pi i/4} = 2i$, of absolute value $2 = \sqrt4$.
+**Example.** For the nontrivial character modulo $3$, with $\chi(1)=1$ and $\chi(2)=-1$, the Gauss sum is $\tau = \exp(2\pi i/3) - \exp(4\pi i/3) = i\sqrt3$, of absolute value $\sqrt3 = \sqrt q$; the associated root number of the next section is $\tau/(i\sqrt3) = 1$. For the character modulo $4$ with $\chi(-1)=-1$, the Gauss sum is $\tau = \exp(2\pi i/4) - \exp(6\pi i/4) = 2i$, of absolute value $2 = \sqrt4$.
 
 ## Dirichlet $L$-Functions
 
@@ -73,7 +73,7 @@ $$
 $$
 For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\zeta$.
 
-**Proof sketch (theta and Gauss sums).** One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)e^{-\pi n^2t/q}$, with the variant $\sum_n n\,\chi(n)e^{-\pi n^2t/q}$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of *Adelic Analysis*: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation.
+**Proof sketch (theta and Gauss sums).** One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)\exp(-\pi n^2t/q)$, with the variant $\sum_n n\,\chi(n)\exp(-\pi n^2t/q)$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of *Adelic Analysis*: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation.
 
 **Corollary (the zeros of a Dirichlet $L$-function).** A Dirichlet $L$-function with $\chi\neq\chi_0$ has no zero in $\Re s>1$, by the Euler product, and no zero at $s=1$, by the nonvanishing theorem below; its trivial zeros are the poles of the Gamma factor of its completed function, at $s=-1,-3,-5,\dots$ when $\chi$ is odd and at $s=0,-2,-4,\dots$ when $\chi$ is even, the point $s=0$ being a zero for every even character except the principal character modulo $1$, for which $L(0,\chi_0) = \zeta(0) = -\tfrac12$; hence all its nontrivial zeros lie in the critical strip $0\le\Re s\le1$. The analogue of the Riemann hypothesis asserts that they all satisfy $\Re s = \tfrac12$, and the generalised Riemann hypothesis is the statement for all the Dirichlet $L$-functions at once, treated.
 
@@ -93,7 +93,7 @@ so that the Dirichlet coefficients of $F$ are nonnegative and $F$ is not identic
 
 **Definition.** The **generalised Bernoulli numbers** of a primitive character $\chi$ modulo $q$ are defined by
 $$
-\sum_{a=1}^{q}\chi(a)\frac{t\,e^{at}}{e^{qt}-1} = \sum_{n\geq0}B_{n,\chi}\frac{t^n}{n!}.
+\sum_{a=1}^{q}\chi(a)\frac{t\,\exp(at)}{\exp(qt)-1} = \sum_{n\geq0}B_{n,\chi}\frac{t^n}{n!}.
 $$
 **Theorem (values at nonpositive integers).** For a primitive character $\chi$ modulo $q$ and every $n\geq1$,
 $$
@@ -149,7 +149,7 @@ so the Dedekind zeta function of the extension is the product of the Artin $L$-f
 
 ## Summary
 
-A Dirichlet character modulo $q$ is a character of the finite abelian group $(\mathbb{Z}/q\mathbb{Z})^\times$, extended by $0$ off the units; the characters satisfy the orthogonality relations, and the Gauss sum $\tau(\chi) = \sum_a\chi(a)e^{2\pi ia/q}$ of a primitive character has absolute value $\sqrt q$ and satisfies $\tau(\chi)\tau(\bar\chi) = \chi(-1)q$. The Dirichlet $L$-function $L(s,\chi) = \sum_n\chi(n)n^{-s}$ has an Euler product over the primes, converges absolutely for $\Re s>1$, converges conditionally for $\Re s>0$ when $\chi$ is nonprincipal, and is entire in that case; its completion $\Lambda(s,\chi) = (q/\pi)^{(s+a)/2}\Gamma((s+a)/2)L(s,\chi)$, with $a = 0$ or $1$ according to the parity of $\chi$, satisfies the functional equation $\Lambda(s,\chi) = \epsilon_\chi\Lambda(1-s,\bar\chi)$ with the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$ of absolute value $1$. The values at the nonpositive integers are the generalised Bernoulli numbers, $L(1-n,\chi) = -B_{n,\chi}/n$, and the value at $1$ for a quadratic character is the class number formula.
+A Dirichlet character modulo $q$ is a character of the finite abelian group $(\mathbb{Z}/q\mathbb{Z})^\times$, extended by $0$ off the units; the characters satisfy the orthogonality relations, and the Gauss sum $\tau(\chi) = \sum_a\chi(a)\exp(2\pi ia/q)$ of a primitive character has absolute value $\sqrt q$ and satisfies $\tau(\chi)\tau(\bar\chi) = \chi(-1)q$. The Dirichlet $L$-function $L(s,\chi) = \sum_n\chi(n)n^{-s}$ has an Euler product over the primes, converges absolutely for $\Re s>1$, converges conditionally for $\Re s>0$ when $\chi$ is nonprincipal, and is entire in that case; its completion $\Lambda(s,\chi) = (q/\pi)^{(s+a)/2}\Gamma((s+a)/2)L(s,\chi)$, with $a = 0$ or $1$ according to the parity of $\chi$, satisfies the functional equation $\Lambda(s,\chi) = \epsilon_\chi\Lambda(1-s,\bar\chi)$ with the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$ of absolute value $1$. The values at the nonpositive integers are the generalised Bernoulli numbers, $L(1-n,\chi) = -B_{n,\chi}/n$, and the value at $1$ for a quadratic character is the class number formula.
 
 The nonvanishing $L(1,\chi)\neq0$ for nonprincipal $\chi$ is the analytic input of Dirichlet's theorem on primes in arithmetic progressions, and it is proved by a positivity argument on the product of zeta and $L$-functions. The general theory organises the examples — Dirichlet, Dedekind, Hecke and Artin $L$-functions and their automorphic analogues — by the data of an Euler product of a given degree, a functional equation with a conductor, spectral parameters and a root number, and by the Ramanujan bound; the Dedekind zeta function of a Galois extension factors as the product of the Artin $L$-functions of the irreducible representations of its group, the Hecke $L$-functions are the zeta integrals of the Hecke characters of the adeles and their functional equations are Tate's, and the Artin conjecture that the nontrivial Artin $L$-functions are entire is open beyond the low-dimensional and solvable cases.
 
@@ -162,7 +162,7 @@ The nonvanishing $L(1,\chi)\neq0$ for nonprincipal $\chi$ is the analytic input 
 | $\varphi(q)$ | Euler's totient, order of $(\mathbb{Z}/q\mathbb{Z})^\times$ |
 | $f$, conductor | Least modulus from which $\chi$ is induced; $\chi$ primitive if $f=q$ |
 | even, odd | $\chi(-1)=1$, $\chi(-1)=-1$ |
-| $\tau(\chi)$ | Gauss sum $\sum_{a=1}^q\chi(a)e^{2\pi ia/q}$ |
+| $\tau(\chi)$ | Gauss sum $\sum_{a=1}^q\chi(a)\exp(2\pi ia/q)$ |
 | $L(s,\chi)$ | Dirichlet $L$-function, its Euler product over $p$ |
 | $a$ | $0$ for even $\chi$, $1$ for odd $\chi$ |
 | $\Lambda(s,\chi)$ | Completed $L$-function, $(q/\pi)^{(s+a)/2}\Gamma((s+a)/2)L(s,\chi)$ |

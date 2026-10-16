@@ -76,10 +76,10 @@ $$
 where $\hat A(TM)$ is the $\hat A$-class of the tangent bundle, the genus with the first terms
 
 $$
-\hat A=1-\frac{p_1}{24}+\frac{7p_1^{2}-4p_2}{5760}-\cdots
+\hat A=1-\frac{n_1}{24}+\frac{7p_1^{2}-4p_2}{5760}-\cdots
 $$
 
-in the Pontryagin classes $p_i$ of $TM$. In particular $\hat A[M]$ is an integer for a closed spin manifold.
+in the Pontryagin classes $n_i$ of $TM$. In particular $\hat A[M]$ is an integer for a closed spin manifold.
 
 **Proof sketch.** A harmonic spinor solves $D\psi=0$, and the self-adjointness identifies the kernel of $D$ with the direct sum $\ker D^{+}\oplus\ker D^{-}$, so the index is the difference of the two chiral kernel dimensions; the identification of the index with $\int_M\hat A(TM)$ is the Atiyah–Singer theorem for the spin symbol, whose symbol class is the Bott class with Chern character the $\hat A$-class. The general theorem and its heat-kernel proof are in *The Atiyah–Singer Index Theorem and K-Theory*; the integrality of the $\hat A$-genus on a spin manifold is the Borel–Hirzebruch integrality theorem, and in dimension four it yields Rökhlin's theorem, that the signature of a closed spin four-manifold is divisible by $16$.
 
@@ -118,7 +118,7 @@ using the self-adjointness of the connection Laplacian; if $D\psi=0$ and $\opera
 
 **Example (a $K3$ surface).** The $K3$ surface is spin with $\hat A[K3]=2$, so the index of its operator is $2$, the difference of the two chiral kernel dimensions; by the vanishing theorem the surface admits no positive scalar curvature metric. The value $\hat A[K3]=2$ is the standard nonvanishing example and the obstruction that separates the simply connected spin four-manifolds from those admitting positive scalar curvature.
 
-**Example (the complex projective plane).** The manifold $\mathbb{CP}^{2}$ is not spin, since $w_{2}\neq0$; the spin operator is therefore not defined on it, and its place is taken by the $\operatorname{Spin}^{c}$ operator, whose spinor bundle exists with a determinant line bundle and whose index is $\int_{M}e^{c_{1}(L)/2}\hat A(TM)$. In the Kähler case the $\operatorname{Spin}^{c}$ index is the holomorphic Euler characteristic and the formula is the Riemann–Roch–Hirzebruch theorem; the example shows that the spin condition is a genuine restriction and that the theory extends to the non-spin case by twisting.
+**Example (the complex projective plane).** The manifold $\mathbb{CP}^{2}$ is not spin, since $w_{2}\neq0$; the spin operator is therefore not defined on it, and its place is taken by the $\operatorname{Spin}^{c}$ operator, whose spinor bundle exists with a determinant line bundle and whose index is $\int_{M}\exp(c_{1}(L)/2)\hat A(TM)$. In the Kähler case the $\operatorname{Spin}^{c}$ index is the holomorphic Euler characteristic and the formula is the Riemann–Roch–Hirzebruch theorem; the example shows that the spin condition is a genuine restriction and that the theory extends to the non-spin case by twisting.
 
 ## Summary
 
@@ -137,7 +137,7 @@ A **spin structure** on an oriented Riemannian manifold is a two-fold cover of t
 | $\sigma_D(\xi)=i\,c(\xi)$ | Principal symbol |
 | $D^2=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ | Lichnerowicz formula |
 | $\operatorname{scal}$ | Scalar curvature |
-| $\hat A(TM)=1-p_1/24+\cdots$ | $\hat A$-class; $\operatorname{ind}D^{+}=\int_M\hat A(TM)$ |
+| $\hat A(TM)=1-n_1/24+\cdots$ | $\hat A$-class; $\operatorname{ind}D^{+}=\int_M\hat A(TM)$ |
 | $\operatorname{ind}D_E^{+}=\int_M\hat A\operatorname{ch}(E)$ | Twisted index formula |
 | $\operatorname{scal}>0\Rightarrow\hat A[M]=0$ | Lichnerowicz vanishing; $16\mid\sigma$ in dimension four (Rökhlin) |
 

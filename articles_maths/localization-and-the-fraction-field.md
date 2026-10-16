@@ -207,7 +207,7 @@ The fraction field of $\mathbb{Z}_{(p)}$ is $\mathbb{Q}$ because $\mathbb{Z}_{(p
 
 ### The Total Ring of Fractions
 
-For a general commutative ring the same construction with $S$ the set of *nonzero* non-zero-divisors is available, and it is written $\operatorname{Frac}(R)$ or $Q(R)$ and called the **total ring of fractions**. It is not a field unless every nonzero element of $R$ is a non-zero-divisor.
+For a general commutative ring the same construction with $S$ the set of *nonzero* non-zero-divisors is available, and it is written $\operatorname{Frac}(R)$ or $\operatorname{Quot}(R)$ and called the **total ring of fractions**. It is not a field unless every nonzero element of $R$ is a non-zero-divisor.
 
 **Proposition.** Let $S$ be the set of nonzero non-zero-divisors of $R$. Then $\iota : R \to S^{-1}R$ is injective, and $S^{-1}R$ is a ring in which every non-zero-divisor is a unit.
 
@@ -324,7 +324,7 @@ The ideals of $S^{-1}R$ are in bijection with the saturated ideals of $R$, those
 | $\mathrm{P}R_\mathrm{P}$ | Maximal ideal of the local ring $R_\mathrm{P}$ |
 | $\mathbb{Z}_{(p)}$ | $p$-local integers $\{a/b \in \mathbb{Q} : p \nmid b\}$, a localization of $\mathbb{Z}$ |
 | $\operatorname{Frac}(R)$ | Fraction field of an integral domain $R$, and total ring of fractions of a general $R$ |
-| $Q(R)$ | Alternative notation for the total ring of fractions; the multiplicative set inverted is the set of nonzero non-zero-divisors |
+| $\operatorname{Quot}(R)$ | Alternative notation for the total ring of fractions; the multiplicative set inverted is the set of nonzero non-zero-divisors |
 | $F(x)$ | Rational function field $\operatorname{Frac}(F[x])$ |
 | $F((x))$ | Laurent series field $\operatorname{Frac}(F[[x]])$ |
 | $R \setminus R^\times$ | Set of non-units; an ideal exactly when $R$ is local |

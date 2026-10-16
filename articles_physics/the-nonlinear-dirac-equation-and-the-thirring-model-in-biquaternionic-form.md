@@ -104,7 +104,7 @@ The table is the article's organising object. The Soler and NJL models act in th
 
 ### The interaction is bosonic, so the central phase passes through it
 
-A quartic product of two bilinears is even in the fermion field, so it is invariant under the central phase $\tilde\Psi \mapsto e^{i\alpha}\tilde\Psi$ and carries fermion number zero. In the framework's terms it is built from the algebra's **central scalar invariants**, and it therefore does not disturb the exact vector $U(1)$ the companion articles emphasise: the symmetry the mass breaks is the axial one, and the phase symmetry survives even a strong self-interaction. This is why a self-interaction can generate a mass dynamically without conflicting with the conservation of fermion number, which is the whole content of the NJL mechanism.
+A quartic product of two bilinears is even in the fermion field, so it is invariant under the central phase $\tilde\Psi \mapsto \exp(i\alpha)\tilde\Psi$ and carries fermion number zero. In the framework's terms it is built from the algebra's **central scalar invariants**, and it therefore does not disturb the exact vector $U(1)$ the companion articles emphasise: the symmetry the mass breaks is the axial one, and the phase symmetry survives even a strong self-interaction. This is why a self-interaction can generate a mass dynamically without conflicting with the conservation of fermion number, which is the whole content of the NJL mechanism.
 
 ### The three channels in the framework's sectors
 

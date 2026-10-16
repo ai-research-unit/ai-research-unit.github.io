@@ -16,12 +16,12 @@ A single element of a matrix algebra is at once a **point** and an **operator**.
 
 The biquaternion algebra inherits this doubling, and the series uses it constantly:
 
-- A **rotor** $\tilde{U}$ with $N(\tilde{U}) = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
+- A **rotor** $\tilde{U}$ with $\langle\tilde{U}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
 - A **generator** $\gamma^\mu$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module.
 
 For the rotors the doubling is familiar and the two interpretations are both two-sided or both one-sided. For the generators it is not, and the reason is the grading. The even elements act on the spinor module *preserving* its two chiral halves, because they commute with the chirality operator; the odd elements act *exchanging* them, because they anticommute with it. So an even element and an odd element, both points of the same algebra and both operators on the same module, do qualitatively different things. The remainder of this article is the elaboration of that sentence.
 
-The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde{U}$ even with $N(\tilde{U}) = 1$, the rotor conjugation
+The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde{U}$ even with $\langle\tilde{U}\rangle_{\natural} = 1$, the rotor conjugation
 
 $$
 \tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}
@@ -96,7 +96,7 @@ $$
 
 the identity together with the spacelike bivectors, which generate the spatial rotations.
 
-The decisive consequence concerns the **metric**. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
+The decisive consequence concerns the **metric**. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
 
 $$
 N \text{ on } (e_0, ie_1, ie_2, ie_3) = \mathrm{diag}(+1,-1,-1,-1) = g,
@@ -110,7 +110,7 @@ The Clifford metric of the generators is not an independent convention laid on t
 The same fact appears in the vector square. For $w = x_0e_0 + ix_1e_1 + ix_2e_2 + ix_3e_3 \in \mathbb{M}_+$,
 
 $$
-\left(x_\mu\gamma^\mu\right)^2 = N(w)\,I_4 = \left(x_0^2 - x_1^2 - x_2^2 - x_3^2\right)I_4 ,
+\left(x_\mu\gamma^\mu\right)^2 = \langle w\rangle_{\natural}\,I_4 = \left(x_0^2 - x_1^2 - x_2^2 - x_3^2\right)I_4 ,
 $$
 
 with no relative sign between the Clifford square and the biquaternion norm. The absence of that sign is the signature $g$ showing through.
@@ -152,7 +152,7 @@ With the grading in hand, the two spaces can be described, and they are not of t
 **The rotations.** The rotors are the unit-norm biquaternions,
 
 $$
-SL(2,\mathbb{C}) = \{\tilde{U}\in\mathbb{B} : N(\tilde{U}) = 1\},
+SL(2,\mathbb{C}) = \{\tilde{U}\in\mathbb{B} : \langle\tilde{U}\rangle_{\natural} = 1\},
 $$
 
 a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $e_k$ and $ie_k$ under $\mathsf{M}_4$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
@@ -161,18 +161,18 @@ Two subfamilies are worth separating, because the series uses them differently:
 
 | subfamily | condition | biquaternion form | character |
 |---|---|---|---|
-| spatial rotations | $\tilde{U}$ real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{e}_{jk}$ | group $SU(2)$ |
-| pure boosts | $\tilde{U}$ Hermitian, $\tilde{U}^{*} = \tilde{U}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$ | symmetric submanifold, not a group |
+| spatial rotations | $\tilde{U}$ real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{jk}$ | group $SU(2)$ |
+| pure boosts | $\tilde{U}$ Hermitian, $\tilde{U}^{*} = \tilde{U}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | symmetric submanifold, not a group |
 
-The boosts do not close under multiplication — the product of two non-collinear boosts is a boost plus a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\hat u$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\hat{e}_{jk}$.
+The boosts do not close under multiplication — the product of two non-collinear boosts is a boost plus a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\vec u_{jk}$.
 
 **The reflections.** A reflection is an odd element of unit norm, and its data is its **normal**, a unit vector $u$. Writing the vectors as $\gamma^0\mathsf{M}_4(w)$ with $w\in\mathbb{M}_+$, the unit vectors are
 
 $$
-u = \gamma^0\mathsf{M}_4(w), \qquad w\in\mathbb{M}_+, \quad N(w) = \pm 1 ,
+u = \gamma^0\mathsf{M}_4(w), \qquad w\in\mathbb{M}_+, \quad \langle w\rangle_{\natural} = \pm 1 ,
 $$
 
-the timelike normals for $N(w) = +1$ and the spacelike ones for $N(w) = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\mathsf{M}_4(e_0)$: its normal is the identity $e_0$ of $\mathbb{B}$.
+the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\mathsf{M}_4(e_0)$: its normal is the identity $e_0$ of $\mathbb{B}$.
 
 The reflections do **not** form a group, and this is the sharp difference from the rotations. Multiplying two reflections gives an even element — a rotation — so the set of reflections is a single coset of the rotation group, not closed under multiplication. Its dimension is $3$, the dimension of the unit quadric, against the $6$ of the rotations. The two together form the Pin group,
 
@@ -351,7 +351,7 @@ The claims of this article, in order.
 | $\mathrm{rev}(\mathsf{M}_4(\tilde{Q})) = \mathsf{M}_4(\tilde{Q}^{\natural})$ | Clifford reversal is quaternion conjugation |
 | $\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\mathsf{M}_4(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
 | $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$ | Conjugation by the frame is complex conjugation |
-| $\tilde{U}$, $N(\tilde{U}) = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
+| $\tilde{U}$, $\langle\tilde{U}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
 | $\tilde{Q}' = \tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; $\mathsf{M}_4(\mathbb{M}_+)$ = identity + timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; $\mathsf{M}_4(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations) |

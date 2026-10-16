@@ -17,7 +17,7 @@ $$
 
 for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermitian** form and $\varepsilon = -1$ a **skew-Hermitian** or **symplectic** form.
 
-**Remark (the Clifford forms).** For $R = \mathrm{Cl}(V,q)$ the definition is exactly the structure of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.
+**Remark (the Clifford forms).** For $R = \mathrm{Cl}(V,\mathfrak{Q})$ the definition is exactly the structure of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*: with $c = {}^{\dagger}$ and $\varepsilon = 1$ one gets $h_{\dagger}(x,y) = x^{\dagger}y$; with $c = \bar\cdot$ one gets $h_{\bar\cdot}(x,y) = \bar xy$; with $c = {}^{r}$ one gets $h_r(x,y) = x^{r}y$. The three forms satisfy their own Hermitian conditions and are therefore $\varepsilon$-Hermitian forms over the algebra with the respective involution.
 
 **Definition.** The **radical** of a Hermitian form is $M^{\perp} = \{x : h(x,y) = 0 \ \forall y\}$, and the form is **non-degenerate** if $M^{\perp} = 0$ and **nonsingular** if moreover the induced map $M \to M^{*}$ is an isomorphism; over a division ring, or over a field, the two conditions coincide. The **discriminant** is the class of $\det H$ in the appropriate quotient of the units, and the **unitary group** is $\mathrm{U}(h) = \{s : h(sx,sy) = h(x,y)\}$.
 
@@ -36,9 +36,9 @@ for all $x, y \in M$ and $a, b \in R$. The case $\varepsilon = 1$ is a **Hermiti
 **Proposition.** Each of the three Clifford forms has a class in the Witt group of its own involution,
 
 $$
-[h_{\dagger}] \in W^{1}\bigl(\mathrm{Cl}(V,q), {}^{\dagger}\bigr), \qquad
-[h_{\bar\cdot}] \in W^{1}\bigl(\mathrm{Cl}(V,q), \bar\cdot\bigr), \qquad
-[h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,q), {}^{r}\bigr),
+[h_{\dagger}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr), \qquad
+[h_{\bar\cdot}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), \bar\cdot\bigr), \qquad
+[h_{r}] \in W^{1}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{r}\bigr),
 $$
 
 over a field of characteristic not two, since each is non-degenerate by *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint* and nonsingularity follows from non-degeneracy over the algebra when the algebra is a product of matrix algebras over a field.
@@ -53,7 +53,7 @@ over a field of characteristic not two, since each is non-degenerate by *Hermiti
 
 $$
 s \in U \ \Longrightarrow \ [h_{\dagger}(s\,\cdot\,, s\,\cdot\,)] = [h_{\dagger}], \qquad
-s \in \mathrm{Pin}(V,q) \ \Longrightarrow \ [h_{\bar\cdot}(s\,\cdot\,,s\,\cdot\,)] = [h_{\bar\cdot}] ,
+s \in \mathrm{Pin}(V,\mathfrak{Q}) \ \Longrightarrow \ [h_{\bar\cdot}(s\,\cdot\,,s\,\cdot\,)] = [h_{\bar\cdot}] ,
 $$
 
 and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is not merely non-degenerate: it is **fixed as a Witt class** by the whole unitary slice and the whole Pin group, and the orbits of the Clifford groups in the Witt group are trivial on the unit form.
@@ -64,12 +64,12 @@ and similarly for $h_r$ with the group $\{s : s^{r}s = 1\}$. So the unit form is
 
 ## The Unitary Witt Group of a Clifford Algebra
 
-**Definition.** The **unitary Witt group of a Clifford algebra** with respect to an involution $\sigma$ of the base is the even Witt group $W^{\varepsilon}(\mathrm{Cl}(V,q), {}^{\dagger})$ of the algebra with the dagger; its elements are the Witt classes of nonsingular $\varepsilon$-Hermitian forms over $\mathrm{Cl}(V,q)$ with respect to the dagger.
+**Definition.** The **unitary Witt group of a Clifford algebra** with respect to an involution $\sigma$ of the base is the even Witt group $W^{\varepsilon}(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger})$ of the algebra with the dagger; its elements are the Witt classes of nonsingular $\varepsilon$-Hermitian forms over $\mathrm{Cl}(V,\mathfrak{Q})$ with respect to the dagger.
 
-**Proposition.** The map which sends a Hermitian form over the base to the form on the same module regarded over the Clifford algebra, $g \mapsto g\otimes_{\!A}\mathrm{Cl}(V,q)$ with the diagonal involution, induces a homomorphism of Witt groups
+**Proposition.** The map which sends a Hermitian form over the base to the form on the same module regarded over the Clifford algebra, $g \mapsto g\otimes_{\!A}\mathrm{Cl}(V,\mathfrak{Q})$ with the diagonal involution, induces a homomorphism of Witt groups
 
 $$
-W^{\varepsilon}(A,\sigma) \longrightarrow W^{\varepsilon}\bigl(\mathrm{Cl}(V,q), {}^{\dagger}\bigr),
+W^{\varepsilon}(A,\sigma) \longrightarrow W^{\varepsilon}\bigl(\mathrm{Cl}(V,\mathfrak{Q}), {}^{\dagger}\bigr),
 $$
 
 the **Clifford invariant** or **unitary Clifford map**, and its image is the subgroup of forms that are the scalar extension of a form over the base.
@@ -84,7 +84,7 @@ the **Clifford invariant** or **unitary Clifford map**, and its image is the sub
 
 ## Summary
 
-Over a ring with an anti-involution $c$ the correct forms are the **$\varepsilon$-Hermitian forms** $h(xa,yb) = c(a)h(x,y)b$, $h(y,x) = \varepsilon c(h(x,y))$, and the correct groups are the even Witt group $W^{\varepsilon}(R,c)$ and the Grothendieck–Witt group $GW^{\varepsilon}(R,c)$, obtained from the monoid of nonsingular forms by dividing out the metabolic forms; the classical extension and cancellation theorems of Dieudonné hold over a division ring with the usual characteristic-two exceptions. The three forms of a Clifford algebra — $h_{\dagger}(x,y) = x^{\dagger}y$, $h_{\bar\cdot}(x,y) = \bar xy$ and $h_r(x,y) = x^{r}y$ — are Hermitian over the algebra with respect to their own involutions and are non-degenerate, hence represent classes in the three Witt groups; the **unit form** $h_c(x,y) = c(x)y$ has the identity matrix, discriminant $1$, and its Witt class is fixed by the isometry group, so the unitary slice and Pin act trivially on the class. The **unitary Witt group of a Clifford algebra** is $W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$, and the scalar extension homomorphism $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$ is the Clifford invariant of the unitary theory; its cokernel contains the forms genuinely over the algebra, whose obstruction is measured by the Wall group rather than by the discriminant alone. Over $\mathbb{R}$ with the identity involution the form $h_{\dagger}$ is positive definite, so its class is the positive generator and the Clifford Hermitian form is Witt-trivial, the invariant being the signature.
+Over a ring with an anti-involution $c$ the correct forms are the **$\varepsilon$-Hermitian forms** $h(xa,yb) = c(a)h(x,y)b$, $h(y,x) = \varepsilon c(h(x,y))$, and the correct groups are the even Witt group $W^{\varepsilon}(R,c)$ and the Grothendieck–Witt group $GW^{\varepsilon}(R,c)$, obtained from the monoid of nonsingular forms by dividing out the metabolic forms; the classical extension and cancellation theorems of Dieudonné hold over a division ring with the usual characteristic-two exceptions. The three forms of a Clifford algebra — $h_{\dagger}(x,y) = x^{\dagger}y$, $h_{\bar\cdot}(x,y) = \bar xy$ and $h_r(x,y) = x^{r}y$ — are Hermitian over the algebra with respect to their own involutions and are non-degenerate, hence represent classes in the three Witt groups; the **unit form** $h_c(x,y) = c(x)y$ has the identity matrix, discriminant $1$, and its Witt class is fixed by the isometry group, so the unitary slice and Pin act trivially on the class. The **unitary Witt group of a Clifford algebra** is $W^{\varepsilon}(\mathrm{Cl}(V,\mathfrak{Q}),{}^{\dagger})$, and the scalar extension homomorphism $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,\mathfrak{Q}),{}^{\dagger})$ is the Clifford invariant of the unitary theory; its cokernel contains the forms genuinely over the algebra, whose obstruction is measured by the Wall group rather than by the discriminant alone. Over $\mathbb{R}$ with the identity involution the form $h_{\dagger}$ is positive definite, so its class is the positive generator and the Clifford Hermitian form is Witt-trivial, the invariant being the signature.
 
 ## Summary of Notation
 
@@ -97,8 +97,8 @@ Over a ring with an anti-involution $c$ the correct forms are the **$\varepsilon
 | $W^{\varepsilon}(R,c)$, $GW^{\varepsilon}(R,c)$ | Witt and Grothendieck–Witt groups |
 | $[h]$ | Witt class of a form |
 | $h_c(x,y) = c(x)y$ | Unit form of the algebra |
-| $W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$ | Unitary Witt group of the Clifford algebra |
-| Clifford map | Scalar extension $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,q),{}^{\dagger})$ |
+| $W^{\varepsilon}(\mathrm{Cl}(V,\mathfrak{Q}),{}^{\dagger})$ | Unitary Witt group of the Clifford algebra |
+| Clifford map | Scalar extension $W^{\varepsilon}(A,\sigma) \to W^{\varepsilon}(\mathrm{Cl}(V,\mathfrak{Q}),{}^{\dagger})$ |
 
 ## Further Reading
 

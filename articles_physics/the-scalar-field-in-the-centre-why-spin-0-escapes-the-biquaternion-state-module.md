@@ -40,15 +40,15 @@ $$
 with $\sigma_k$ the Pauli matrices. A **primitive idempotent** is an element $\tilde{P}$ with $\tilde{P}^2=\tilde{P}$ that cannot be written as a sum of two nonzero orthogonal idempotents. The idempotents of the form
 
 $$
-\tilde\Pi(\hat u)=\tfrac{1}{2}\left(e_0+i\hat u\right),
+\tilde\Pi(\vec u)=\tfrac{1}{2}\left(e_0+i\vec u\right),
 \qquad
-\hat u=u_1e_1+u_2e_2+u_3e_3,\quad u_1^2+u_2^2+u_3^2=1,\quad u_k\in\mathbb{R},
+\vec u=u_1e_1+u_2e_2+u_3e_3,\quad u_1^2+u_2^2+u_3^2=1,\quad u_k\in\mathbb{R},
 $$
 
 are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the interpretation of the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*. The **minimal left ideal**
 
 $$
-\mathbb{B}\tilde\Pi(\hat u)=\{\tilde{Q}\tilde\Pi(\hat u) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2
+\mathbb{B}\tilde\Pi(\vec u)=\{\tilde{Q}\tilde\Pi(\vec u) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2
 $$
 
 is the **state module** of the framework. Its elements are the spinors $\tilde{\psi}$, characterized by $\tilde{\psi}\tilde{P}=\tilde{\psi}$.
@@ -73,7 +73,7 @@ $$
 
 and the representation so obtained is the defining two-dimensional representation of $SL(2,\mathbb{C})$, the **spin-$\tfrac{1}{2}$** representation. The representation-theoretic content of the module is the content of $S=\mathbb{C}^2$ as a module over $M_2(\mathbb{C})$; its restriction to the rotation subgroup can be read off from the Lie algebra action.
 
-The rotation subgroup is $SU(2)=SL(2,\mathbb{C})\cap U(2)$, whose elements are the unit real quaternions, $\tilde{u}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ with $\hat u_{\mathrm r}$ a unit pure real quaternion. Its Lie algebra is spanned by the generators
+The rotation subgroup is $SU(2)=SL(2,\mathbb{C})\cap U(2)$, whose elements are the unit real quaternions, $\tilde{u}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ a unit pure real quaternion. Its Lie algebra is spanned by the generators
 
 $$
 J_k=\tfrac{i}{2}e_k,
@@ -98,15 +98,15 @@ Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **s
 
 ### The Module Is Not Rotationally Invariant
 
-There is a second way to see the same content, and it is the one that makes the contrast with the scalar sharp. The idempotent $\tilde\Pi(\hat u)$ is built from a **direction** $\hat u$, and a rotation moves that direction. Conjugating by a unit real quaternion $\tilde{u}$,
+There is a second way to see the same content, and it is the one that makes the contrast with the scalar sharp. The idempotent $\tilde\Pi(\vec u)$ is built from a **direction** $\vec u$, and a rotation moves that direction. Conjugating by a unit real quaternion $\tilde{u}$,
 
 $$
-\tilde{u}\,\tilde\Pi(\hat u)\,\tilde{u}^{*}
-=\tfrac{1}{2}\left(e_0+i\,\tilde{u}\hat u\tilde{u}^{*}\right)
-=\tilde\Pi(\hat u'),
+\tilde{u}\,\tilde\Pi(\vec u)\,\tilde{u}^{*}
+=\tfrac{1}{2}\left(e_0+i\,\tilde{u}\vec u\tilde{u}^{*}\right)
+=\tilde\Pi(\vec u'),
 $$
 
-where $\hat u'=\tilde{u}\hat u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\hat u$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\hat u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\hat u')$ with $\hat u'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
+where $\vec u'=\tilde{u}\vec u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\vec u$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\vec u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\vec u')$ with $\vec u'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
 
 A scalar field is exactly the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.
 
@@ -269,14 +269,14 @@ $$
 the phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\vec k\cdot\vec x-\omega t$, a real central element, and the positive-frequency solution is
 
 $$
-\tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}\,e_0
-=\phi_0\,e^{\,i(\vec k\cdot\vec x-\omega t)}\,e_0 .
+\tilde{\Phi}=\phi_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))\,e_0
+=\phi_0\,\exp(\,i(\vec k\cdot\vec x-\omega t))\,e_0 .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
 
 $$
-N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\vec k^2=-\frac{m^2c^2}{\hbar^2}
+\langle\tilde{K}\rangle_{\natural}=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\vec k^2=-\frac{m^2c^2}{\hbar^2}
 \quad\Longleftrightarrow\quad
 \omega^2=c^2\vec k^2+\frac{m^2c^4}{\hbar^2} ,
 $$
@@ -316,7 +316,7 @@ $$
 is invariant because $\tilde{U}^{T}\epsilon\,\tilde{U}=\epsilon$, which holds since $\det\tilde{U}=1$. The **mixed pairing** of a spinor with one in the conjugate module,
 
 $$
-b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
+\mathfrak{b}(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
 \qquad
 \tilde{\psi}\mapsto\tilde{U}\tilde{\psi},
 \qquad
@@ -333,7 +333,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 2. **The boost transformation of a scalar.** A scalar field transforms trivially under the whole Lorentz group, but the framework's conjugation action is the four-vector action and has no nonzero invariant under boosts. Whether the scalar's transformation law should be regarded as an independent assignment — the argument transformation with no algebraic factor — or as the restriction of some algebraic action, is not resolved here. The present article takes the first interpretation, which is the standard one and is consistent with the centre being invariant under rotations.
 
-3. **The general idempotent and the state axis.** The idempotents $\tilde\Pi(\hat u)=\tfrac{1}{2}(e_0+i\hat u)$ with $\hat u$ a real unit pure quaternion are the Hermitian idempotents, and their axes fill the two-sphere. The non-Hermitian idempotents built from the non-central roots of $-1$ define other minimal left ideals. Whether those ideals carry a different representation content, or the same defining representation under a different complex structure, bears on the sense in which "spin $\tfrac{1}{2}$" is unique; the companion article on the spinor module addresses the ideal model but not this classification.
+3. **The general idempotent and the state axis.** The idempotents $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_0+i\vec u)$ with $\vec u$ a real unit pure quaternion are the Hermitian idempotents, and their axes fill the two-sphere. The non-Hermitian idempotents built from the non-central roots of $-1$ define other minimal left ideals. Whether those ideals carry a different representation content, or the same defining representation under a different complex structure, bears on the sense in which "spin $\tfrac{1}{2}$" is unique; the companion article on the spinor module addresses the ideal model but not this classification.
 
 4. **The relation to the informational interpretation.** The centre is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational interpretation of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.
 
@@ -343,7 +343,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 ## Summary
 
-A scalar field carries the trivial representation of the Lorentz group, and the biquaternion framework must therefore be asked where a trivial-representation field can live. The framework's state module is the minimal left ideal $\mathbb{B}\tilde\Pi(\hat u)\cong\mathbb{C}^2$, and it carries the defining two-dimensional, spin-$\tfrac{1}{2}$ representation of $SL(2,\mathbb{C})$: the left action of the rotation generators $J_k=\tfrac{i}{2}e_k$ on the module has Casimir $\tfrac{3}{4}e_0$. Its primitive idempotent is built from a spatial axis, and rotations move that axis around the two-sphere, so the module is not rotationally invariant.
+A scalar field carries the trivial representation of the Lorentz group, and the biquaternion framework must therefore be asked where a trivial-representation field can live. The framework's state module is the minimal left ideal $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, and it carries the defining two-dimensional, spin-$\tfrac{1}{2}$ representation of $SL(2,\mathbb{C})$: the left action of the rotation generators $J_k=\tfrac{i}{2}e_k$ on the module has Casimir $\tfrac{3}{4}e_0$. Its primitive idempotent is built from a spatial axis, and rotations move that axis around the two-sphere, so the module is not rotationally invariant.
 
 The unique rotationally invariant subspace of $\mathbb{B}$ is the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$, obtained as the centralizer of the quaternion units: $[e_j,\tilde{Q}]=0$ for $j=1,2,3$ forces $\tilde{Q}=Q_0e_0$. The centre is a subalgebra isomorphic to $\mathbb{C}$ and is not a left ideal; it meets the state module only at zero. This gives three equivalent reasons why spin $0$ escapes the state module. The algebra $M_2(\mathbb{C})$ is simple and has only one simple module, $\mathbb{C}^2$, so there is no one-dimensional module for the trivial representation. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial representation appears in the tensor square — in $S\otimes\bar{S}=\mathbb{C}\oplus\mathbb{C}^3$ under the rotation subgroup, and in the symplectic channel of $S\otimes S$ and the mixed left-right pairing under the full Lorentz group — not as a submodule of either factor, so a scalar is a bilinear in the module rather than an element of it.
 
@@ -360,20 +360,20 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{M}_-,\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
-| $\tilde\Pi(\hat u)=\tfrac{1}{2}(e_0+i\hat u)$ | Primitive Hermitian idempotent, $\hat u$ a unit pure real quaternion |
+| $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_0+i\vec u)$ | Primitive Hermitian idempotent, $\vec u$ a unit pure real quaternion |
 | $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\tilde{\psi}$ | Spinor, an element of the state module |
 | $J_k=\tfrac{i}{2}e_k$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_0$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{Q}=ict\,e_0+\vec x$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, central and scalar |
 | $\tilde{\Phi}=\phi e_0$ | Scalar (spin-$0$) field, valued in the centre |
 | $\sigma=\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
 | $\varepsilon(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{T}\epsilon\tilde{\chi}$ | Symplectic pairing; Lorentz scalar of two same-chirality spinors |
-| $b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
+| $\mathfrak{b}(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

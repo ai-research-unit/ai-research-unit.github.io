@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \vec P ,
 $$
 
-the second of the four general products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
+the second of the four general products of the biquaternion algebra $\mathbb{B}$, whose rule is *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product* and whose algebra is *Introduction to the General Quaternionic Algebra*. The product is $\mathbb{C}$-bilinear and has $e_0$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 
@@ -73,7 +73,7 @@ so the two sides are $-e_0$ and $e_0$ and the identity fails. The **third-power*
 
 **Corollary.** The product is not alternative, and the alternative product of two factors with a third is not controlled by the associator; the identities available in an alternative algebra, and with them a calculus of powers of a single element, are not available here. The product is also not flexible, so the elementary manipulation $(\tilde P\star\tilde Q)\star\tilde P = \tilde P\star(\tilde Q\star\tilde P)$ cannot be used, and the left and the right multiplication operators of the next-but-one article do not commute with one another.
 
-**Remark.** Both witnesses are read off the coordinates alone. In the flexibility witness the scalar parts of the two sides are $-1$ and $+1$; in the third-power witness they are $0$ and $0$, and it is the coefficient of $e_3$ that changes sign. The mechanism is the same in both cases: the square $\tilde Q\star\tilde Q = N(\tilde Q)e_0$ is central, so the lefthand reading of a square multiplies it by the scalar part of the element, whereas the righthand reading passes the element through ${}^{\natural}$ and negates its vector part; the two readings differ as soon as the element is not central.
+**Remark.** Both witnesses are read off the coordinates alone. In the flexibility witness the scalar parts of the two sides are $-1$ and $+1$; in the third-power witness they are $0$ and $0$, and it is the coefficient of $e_3$ that changes sign. The mechanism is the same in both cases: the square $\tilde Q\star\tilde Q = \langle\tilde Q\rangle_{\natural}e_0$ is central, so the lefthand reading of a square multiplies it by the scalar part of the element, whereas the righthand reading passes the element through ${}^{\natural}$ and negates its vector part; the two readings differ as soon as the element is not central.
 
 ## The Ternary Product
 

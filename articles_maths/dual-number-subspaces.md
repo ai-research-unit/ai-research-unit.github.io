@@ -11,7 +11,7 @@ $$
 A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $\langle A\rangle = A\bar A = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are
 
 $$
 R_{\mathbb{D}'} = R\cdot 1 = \{A : \bar A = A\}, \qquad \varepsilon R_{\mathbb{D}'} = \varepsilon R = \{A : \bar A = -A\}.
@@ -74,7 +74,7 @@ $$
 (a, a')(b, b') = (a b,\; a b' + a' b),
 $$
 
-the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, a') \mapsto (a, -a')$, and the norm is $N(a, a') = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.
+the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, a') \mapsto (a, -a')$, and the norm is $\langle a, a'\rangle = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.
 
 ## The Intersections
 
@@ -129,16 +129,16 @@ So $E$ has $\ker E = \varepsilon R_{\mathbb{D}'}$ and $\operatorname{im}E = \var
 The norm is additive on the direct sum and depends only on the first summand:
 
 $$
-N(a + \varepsilon a') = N(a) + N(\varepsilon a') = a^2 + 0 = a^2.
+\langle a + \varepsilon a'\rangle = \langle a\rangle + \langle \varepsilon a'\rangle = a^2 + 0 = a^2.
 $$
 
 On the two submodules,
 
 $$
-N(R_{\mathbb{D}'}) \subseteq R_{\mathbb{D}'}, \qquad N(\varepsilon R_{\mathbb{D}'}) = 0.
+\langle R_{\mathbb{D}'}\rangle \subseteq R_{\mathbb{D}'}, \qquad \langle \varepsilon R_{\mathbb{D}'}\rangle = 0.
 $$
 
-So the norm restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $N$.
+So the norm restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $\langle\cdot\rangle$.
 
 ### The Product and the Bracket
 
@@ -166,7 +166,7 @@ $1 \in R_{\mathbb{D}'}$ and $\varepsilon \in \varepsilon R_{\mathbb{D}'}$ are li
 
 ### A Mixed Element and Its Blocks
 
-For $A = -4 + \varepsilon$ the blocks are $\operatorname{Re}(A) = -4$ and $\operatorname{Inf}(A)\varepsilon = \varepsilon$; the norm is $N(A) = (-4)^2 = 16$, read from the real block alone.
+For $A = -4 + \varepsilon$ the blocks are $\operatorname{Re}(A) = -4$ and $\operatorname{Inf}(A)\varepsilon = \varepsilon$; the norm is $\langle A\rangle = (-4)^2 = 16$, read from the real block alone.
 
 ## The Analytic Coordinates
 
@@ -434,7 +434,7 @@ The differential operators of the dual algebra act on the two submodules $R_{\ma
 | $R_{\mathbb{D}'} = R\cdot 1$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
 | $\varepsilon R_{\mathbb{D}'} = \varepsilon R$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, equal to $\varepsilon R_{\mathbb{D}'}$ and to the first-order neighbourhood |
-| $N(A) = a^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{D}'}$, radical $\mathrm{M}$ |
+| $\langle A\rangle = a^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{D}'}$, radical $\mathrm{M}$ |
 | $E = \varepsilon\cdot$ | Nilpotent operator, $\ker E = \operatorname{im}E = \varepsilon R_{\mathbb{D}'}$ |
 | $A = a + \varepsilon a'$ | The dual variable, in the algebraic and the analytic reading alike, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ |
 | $\pi(A) = a$ | Augmentation, kernel $\mathrm{M}$ |

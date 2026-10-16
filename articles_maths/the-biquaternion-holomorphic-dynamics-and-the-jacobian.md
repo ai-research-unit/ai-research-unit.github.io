@@ -18,7 +18,7 @@ $$
 dF|_{\tilde Q}:\tilde P\longmapsto\tilde Q\tilde P+\tilde P\tilde Q ,
 $$
 
-whose determinant, in the coordinates of the model, is $4\,N(\tilde Q)\,(2Q_0)^2$.
+whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q\rangle_{\natural}\,(2Q_0)^2$.
 
 **Proof.** The general plain bilinear product is complex-bilinear and the map is a polynomial in it; the derivative is the product rule, and the determinant is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*, where the matrix model gives the explicit form $I\otimes M+M^{\mathsf{T}}\otimes I$ and the determinant $\det(M)\operatorname{tr}(M)^2\cdot4$.
 
@@ -76,7 +76,7 @@ $$
 
 the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed point is attracting exactly when $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
-**Proof.** Insert $\tilde Q^2=2Q_0\tilde Q-N(\tilde Q)e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\vec Q,\vec Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
+**Proof.** Insert $\tilde Q^2=2Q_0\tilde Q-\langle\tilde Q\rangle_{\natural}e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\vec Q,\vec Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
 **Corollary (the neutral fixed points).** The non-scalar fixed points have $2Q_0=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\mathsf{M}_2(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.
 
@@ -88,14 +88,14 @@ the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed p
 
 ## Summary
 
-The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $N(\tilde Q)Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\mathsf{M}_2(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
+The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $\langle\tilde Q\rangle_{\natural}Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\mathsf{M}_2(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ | the complex derivative |
-| $\det dF=4N(\tilde Q)(2Q_0)^2$ | the Jacobian determinant |
+| $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_0)^2$ | the Jacobian determinant |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set |
 | $\mathcal{F}_{\tilde C}$, $\mathcal{J}_{\tilde C}$ | the Fatou set and the dynamical Julia set |
 | $\mathcal K_{\tilde C}$, $J_{\tilde C}=\partial\mathcal K_{\tilde C}$ | the filled Julia set and the set-theoretic Julia set |

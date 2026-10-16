@@ -176,7 +176,7 @@ The Proca equation equates the first to $\mu^2A_0$ and the second to $\mu^2\vec 
 Write a plane-wave potential
 
 $$
-\tilde{A} = \tilde{A}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}, \qquad
+\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})), \qquad
 \tilde{A}_0 = A_0e_0 + \vec a, \qquad
 \tilde{K} = i\frac{\omega}{c}\,e_0 + \vec k,
 $$
@@ -184,7 +184,7 @@ $$
 where $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot\vec x - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_0$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde{K}^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})} = \left(\frac{\omega^2}{c^2} - \vec k^2\right)e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})},
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
@@ -240,7 +240,7 @@ the combination $\tilde{A}+\tilde{\nabla}\chi$ is invariant, so the mass term is
 
 ## The Massive Field Strength and the Self-Dual Split
 
-The companion article of this subcategory shows that the field-strength biquaternion lies in the complex three-dimensional vector part of the algebra and that the Hodge dual acts on it as $\star\tilde{F} = -i\tilde{F}$; the field-strength biquaternion of a real field carries the self-dual coordinate $\vec V = \vec E+ic\vec B$, on which the dual is $-i$, and the anti-self-dual coordinate is the conjugate combination $\vec V^* = \vec E-ic\vec B$, on which it is $+i$. That statement is a property of the vector part and holds for the Proca field as much as for the Maxwell field: the massive field strength is still a pure vector of the algebra, and the split is still available.
+The companion article of this subcategory shows that the field-strength biquaternion lies in the complex three-dimensional vector part of the algebra and that the Hodge dual acts on it as $\star\tilde{F} = -i\tilde{F}$; the field-strength biquaternion of a real field carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which the dual is $-i$, and the anti-self-dual coordinate is the conjugate combination $\vec N^* = \vec E-ic\vec B$, on which it is $+i$. That statement is a property of the vector part and holds for the Proca field as much as for the Maxwell field: the massive field strength is still a pure vector of the algebra, and the split is still available.
 
 What the mass changes is not the split but the equation that the field strength satisfies. In the Maxwell case the source-free equation $\tilde{\nabla}\tilde{F}=0$ makes the field strength harmonic, and the two helicities are the two halves. In the Proca case the equation is
 
@@ -334,7 +334,7 @@ with $\tilde{A}\in\mathbb{M}_-$ and $\tilde{F}\in\mathrm{Vect}(\mathbb{B})$. Unl
 
 The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the **Lorenz condition** $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{A}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.
 
-The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it is the self-dual coordinate $\vec V=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.
+The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it is the self-dual coordinate $\vec N=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.
 
 ## Summary of Notation
 
@@ -355,7 +355,7 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\vec a$, $A_0$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading

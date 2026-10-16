@@ -13,15 +13,15 @@ The article assumes *Geodesic Reflection as an Operator* for the reflection, the
 
 ### The Reflection and the Form
 
-**Definition.** Let $(V,q)$ be a quadratic space over a field of characteristic not two with the polar form $B$, and let $a \in V$ with $q(a) \neq 0$; the **reflection** in the hyperplane $a^\perp$ is
+**Definition.** Let $(V,\mathfrak{Q})$ be a quadratic space over a field of characteristic not two with the polar form $B$, and let $a \in V$ with $\mathfrak{Q}(a) \neq 0$; the **reflection** in the hyperplane $a^\perp$ is
 
 $$
-\rho_a(x) = x - 2\,\frac{B(x,a)}{q(a)}\,a ,
+\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a ,
 $$
 
 the geodesic reflection of *Geodesic Reflection as an Operator*; in the Clifford algebra it is the signed conjugation $\rho_a(x) = -a\,x\,a^{-1}$, and it is the reflection element $a$ that carries the geometry.
 
-**Theorem.** The geodesic reflection preserves the quadratic form, $q(\rho_a x) = q(x)$, so it is an isometry of the form; it is an involution, $\rho_a^2 = \mathrm{id}$; consequently it is **self-adjoint** and **unitary** with respect to the pairing of the form,
+**Theorem.** The geodesic reflection preserves the quadratic form, $\mathfrak{Q}(\rho_a x) = \mathfrak{Q}(x)$, so it is an isometry of the form; it is an involution, $\rho_a^2 = \mathrm{id}$; consequently it is **self-adjoint** and **unitary** with respect to the pairing of the form,
 
 $$
 \rho_a^{\dagger} = \rho_a^{-1} = \rho_a , \qquad \rho_a^{\dagger}\rho_a = \mathrm{id} ,
@@ -29,7 +29,7 @@ $$
 
 and the self-adjointness is the statement that a reflection is its own adjoint, which holds for every reflection of a nondegenerate form.
 
-**Proof.** The preservation is the computation $q(\rho_a x) = q(x)$ of the reflection; the square is the identity because the reflection formula applied twice returns $x$, and the two facts give the adjoint: $h(\rho_a x, y) = h(\rho_a x, \rho_a \rho_a y) = h(x, \rho_a y)$ using the preservation with the substitution $y = \rho_a \rho_a y$, so $\rho_a^{\dagger} = \rho_a$; the unitarity is the combination of the self-adjointness and the involution. The statement is in *Geodesic Reflection as an Operator* and *The Adjoint under a Hermitian Pairing*.
+**Proof.** The preservation is the computation $\mathfrak{Q}(\rho_a x) = \mathfrak{Q}(x)$ of the reflection; the square is the identity because the reflection formula applied twice returns $x$, and the two facts give the adjoint: $h(\rho_a x, y) = h(\rho_a x, \rho_a \rho_a y) = h(x, \rho_a y)$ using the preservation with the substitution $y = \rho_a \rho_a y$, so $\rho_a^{\dagger} = \rho_a$; the unitarity is the combination of the self-adjointness and the involution. The statement is in *Geodesic Reflection as an Operator* and *The Adjoint under a Hermitian Pairing*.
 
 **Corollary.** The self-adjointness of the geodesic reflection is exactly the self-adjointness of the reflection as an element: the reflection element $a$ satisfies $a^{*} = a$ for the adjoint induced by the form (the reflection preserves the pairing), and the reflection operator is self-adjoint for the trace pairing of the endomorphism algebra in the sense of the next sections. The two statements — the geometric and the algebraic — are the same fact read on the space and on the algebra.
 
@@ -87,7 +87,7 @@ $$
 
 ## The Geodesic Instances
 
-**Example (the Euclidean and the spherical reflection).** In the Euclidean space the reflection in the hyperplane $a^\perp$ has the reflection element $a$ of positive square, $q(a) > 0$; the reflection is self-adjoint for the Euclidean form, the signed inner sandwich of the reflection is the identity for the sign it defines, and the general sign gives the unitary sandwich of the theorem. On the sphere the reflection in a great sphere is the restriction of the Euclidean reflection, and the same statements hold with the ambient form.
+**Example (the Euclidean and the spherical reflection).** In the Euclidean space the reflection in the hyperplane $a^\perp$ has the reflection element $a$ of positive square, $\mathfrak{Q}(a) > 0$; the reflection is self-adjoint for the Euclidean form, the signed inner sandwich of the reflection is the identity for the sign it defines, and the general sign gives the unitary sandwich of the theorem. On the sphere the reflection in a great sphere is the restriction of the Euclidean reflection, and the same statements hold with the ambient form.
 
 **Example (the hyperbolic reflection).** In the hyperboloid model the reflection in the geodesic hyperplane with the spacelike normal $a$ has $B(a,a) > 0$ and the reflection element $a$ of positive square for the spacelike form; the reflection is self-adjoint for the form of signature $(n,1)$, the signed adjoint is the self-adjoint signed sandwich, and the reflection in a geodesic of the hyperbolic plane is the inversion of the Möbius model, whose sign is the orientation reversal of *Geodesic Reflection as an Operator*. The self-adjointness for the ambient form is the statement that the hyperbolic reflection preserves the form, and the signed adjoint records the sign of the orientation.
 
@@ -95,23 +95,23 @@ $$
 
 ## The Degenerate Case
 
-**Definition.** The **degenerate case** of the geodesic reflection is the case in which the normal is **isotropic**, $q(a) = 0$, or the characteristic is two; in the first case the reflection element $a$ has no inverse in the Clifford algebra, the formula $\rho_a(x) = -axa^{-1}$ loses its meaning, and the reflection is not defined as a signed conjugation; in the second case the reflection is unipotent, the decomposition $V = V_+ \oplus V_-$ with a sign does not exist, and the grade involution collapses to the identity.
+**Definition.** The **degenerate case** of the geodesic reflection is the case in which the normal is **isotropic**, $\mathfrak{Q}(a) = 0$, or the characteristic is two; in the first case the reflection element $a$ has no inverse in the Clifford algebra, the formula $\rho_a(x) = -axa^{-1}$ loses its meaning, and the reflection is not defined as a signed conjugation; in the second case the reflection is unipotent, the decomposition $V = V_+ \oplus V_-$ with a sign does not exist, and the grade involution collapses to the identity.
 
 **Theorem.** When the normal is isotropic the geodesic reflection of the form fails to exist, the signed adjoint of the reflection is undefined, and the self-adjointness cannot be asserted; when the characteristic is two the reflection is unipotent with $(\rho_a - \mathrm{id})^2 = 0$, the sign of the decomposition disappears, and the signed adjoint of the reflection is the ordinary adjoint, so the distinction between the signed and the unsigned statements vanishes.
 
-**Proof.** For $q(a) = 0$ the inverse $a^{-1} = a/q(a)$ does not exist and the Clifford sandwich is undefined; in characteristic two the reflection formula is $\rho_a(x) = x - B(x,a)a$ with $B(a,a) = q(a) \neq 0$ but the two eigenspaces $\pm1$ coalesce into the unipotent form, and the grade involution of the associated structure is the identity. The statement is the degenerate-case analysis of *The Signed Adjoint of the Reflection on a Linear Space*, *Clifford Algebras* and *Degenerate Clifford Algebras and the Radical*.
+**Proof.** For $\mathfrak{Q}(a) = 0$ the inverse $a^{-1} = a/\mathfrak{Q}(a)$ does not exist and the Clifford sandwich is undefined; in characteristic two the reflection formula is $\rho_a(x) = x - B(x,a)a$ with $B(a,a) = \mathfrak{Q}(a) \neq 0$ but the two eigenspaces $\pm1$ coalesce into the unipotent form, and the grade involution of the associated structure is the identity. The statement is the degenerate-case analysis of *The Signed Adjoint of the Reflection on a Linear Space*, *Clifford Algebras* and *Degenerate Clifford Algebras and the Radical*.
 
 **Remark (the boundary of the article).** The self-adjointness of the geodesic reflection is a statement of the nondegenerate case, and its failure in the degenerate case is the exact boundary of the signed structure: the reflection needs the inverse of its element and the form needs the nondegeneracy for the adjoint to exist. The article marks the two failures and leaves the degenerate theory to *Degenerate Clifford Algebras and the Radical* and to the indefinite geometry of the quadratic forms.
 
 ## Summary
 
-The geodesic reflection $\rho_a(x) = x - 2B(x,a)a/q(a)$ preserves the form, is an involution, and is therefore **self-adjoint and unitary** for the form, $\rho_a^{\dagger} = \rho_a^{-1} = \rho_a$; the reflection is the signed sandwich $\Theta^{\alpha_a}_{a,a^{-1}}$ with the grade involution it defines, and that signed inner sandwich is the identity, so the reflection is self-adjoint for its own sign. For a general grade involution $\alpha$ the signed adjoint of the reflection is $\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)^2 = \mathrm{id}$, which holds in particular when the reflection commutes with the sign. The Euclidean, the spherical and the hyperbolic reflections are the geodesic instances, self-adjoint for their ambient forms and carrying the sign of the orientation reversal. In the degenerate case the isotropic normal $q(a) = 0$ makes the reflection element non-invertible and the signed adjoint undefined, and in characteristic two the reflection is unipotent and the sign collapses; these are the two boundaries of the self-adjointness of the geodesic reflection.
+The geodesic reflection $\rho_a(x) = x - 2B(x,a)a/\mathfrak{Q}(a)$ preserves the form, is an involution, and is therefore **self-adjoint and unitary** for the form, $\rho_a^{\dagger} = \rho_a^{-1} = \rho_a$; the reflection is the signed sandwich $\Theta^{\alpha_a}_{a,a^{-1}}$ with the grade involution it defines, and that signed inner sandwich is the identity, so the reflection is self-adjoint for its own sign. For a general grade involution $\alpha$ the signed adjoint of the reflection is $\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)^2 = \mathrm{id}$, which holds in particular when the reflection commutes with the sign. The Euclidean, the spherical and the hyperbolic reflections are the geodesic instances, self-adjoint for their ambient forms and carrying the sign of the orientation reversal. In the degenerate case the isotropic normal $\mathfrak{Q}(a) = 0$ makes the reflection element non-invertible and the signed adjoint undefined, and in characteristic two the reflection is unipotent and the sign collapses; these are the two boundaries of the self-adjointness of the geodesic reflection.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\rho_a(x) = x - 2B(x,a)a/q(a)$ | Geodesic reflection with the reflection element $a$ |
+| $\rho_a(x) = x - 2B(x,a)a/\mathfrak{Q}(a)$ | Geodesic reflection with the reflection element $a$ |
 | $\rho_a = -a(\cdot)a^{-1}$ | Signed conjugation form of the reflection |
 | $\rho_a^{\dagger} = \rho_a^{-1} = \rho_a$ | Self-adjointness and unitarity for the form |
 | $r$, $r^2 = \mathrm{id}$ | Reflection of the space |
@@ -120,7 +120,7 @@ The geodesic reflection $\rho_a(x) = x - 2B(x,a)a/q(a)$ preserves the form, is a
 | $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$ | Self-adjointness of the reflection |
 | $(\Theta^{\alpha}_{r,r^{-1}})^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$ | Signed adjoint for a general sign |
 | $\alpha(r)^2 = \mathrm{id}$ | Self-adjointness criterion |
-| $q(a) = 0$ | Isotropic normal, the degenerate case |
+| $\mathfrak{Q}(a) = 0$ | Isotropic normal, the degenerate case |
 
 ## Further Reading
 

@@ -18,7 +18,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $N(ict\,e_0+\vec x)=-c^2t^2+|\vec x|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
+the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $\langle ict\,e_0+\vec x\rangle_{\natural}=-c^2t^2+|\vec x|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
 
 ## The Conformal Group and Its Generators
 
@@ -75,29 +75,29 @@ The fifteen-parameter group did not enter physics as the conformal group. In 190
 
 The conformal group is the group that preserves null directions, and in this framework "null" is already algebraic. A displacement $\tilde{Q}\in\mathbb{M}_-$ is null exactly when
 $$
-N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=0,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=0,
 $$
 and the nonzero null elements are exactly the zero divisors of $\mathbb{B}$. The light cone of Minkowski space is therefore the **zero-divisor cone** of the algebra, whose geometry is the subject of the companion article on the null quadric and projective geometry; here only its invariance is needed. The algebra contains the *object* that the conformal group preserves, even though, as the later sections show, it does not contain the group.
 
-The four families of generators act on the zero set of $N$ as follows; each statement is an elementary consequence of the multiplicativity of the biquaternion norm, and each was checked on explicit elements.
+The four families of generators act on the zero set of $\langle\cdot\rangle_{\natural}$ as follows; each statement is an elementary consequence of the multiplicativity of the biquaternion norm, and each was checked on explicit elements.
 
-- **Lorentz.** Rotor conjugation preserves $N$ **pointwise**,
+- **Lorentz.** Rotor conjugation preserves $\langle\cdot\rangle_{\natural}$ **pointwise**,
 $$
-N(\tilde{U}\tilde{Q}\tilde{U}^{*})=N(\tilde{U})\,N(\tilde{Q})\,N(\tilde{U}^{*})=N(\tilde{Q}),
+\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}=\langle\tilde{U}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{U}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural},
 $$
-since $N(\tilde{U})=e_0$ and the biquaternion norm is central. These are the isometries: the conformal transformations that leave $N$ unchanged rather than scaling it. The dilations and the special conformal transformations do not.
+since $\langle\tilde{U}\rangle_{\natural}=e_0$ and the biquaternion norm is central. These are the isometries: the conformal transformations that leave $\langle\cdot\rangle_{\natural}$ unchanged rather than scaling it. The dilations and the special conformal transformations do not.
 
 - **Dilation.** The dilation $\tilde{Q}\mapsto\lambda\tilde{Q}$ scales the form, $N\mapsto\lambda^2N$. It preserves the zero set and changes the scale, which is exactly the conformal condition with constant factor.
 
-- **Translation.** A shift does not preserve $N$ pointwise, but it preserves the interval between two points,
+- **Translation.** A shift does not preserve $\langle\cdot\rangle_{\natural}$ pointwise, but it preserves the interval between two points,
 $$
-N\bigl((\tilde{Q}+\tilde{A})-(\tilde{Y}+\tilde{A})\bigr)=N(\tilde{Q}-\tilde{Y}),
+N\bigl((\tilde{Q}+\tilde{A})-(\tilde{Y}+\tilde{A})\bigr)=\langle\tilde{Q}-\tilde{Y}\rangle_{\natural},
 $$
 so it maps null displacements to null displacements. This is the parent article's observation that the interval survives translation.
 
-- **Inversion.** The inversion defined in the next section but one satisfies $N(I(\tilde{Q}))=1/N(\tilde{Q})$. It preserves the zero set, where it is defined, and inverts the scale.
+- **Inversion.** The inversion defined in the next section but one satisfies $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$. It preserves the zero set, where it is defined, and inverts the scale.
 
-So all four families preserve the null cone, and the invariant object of the conformal group is native to the algebra: it is the zero set of $N$. Two qualifications belong here rather than at the end. The inversion is undefined where $N(\tilde{Q})=0$, that is, on the light cone of the origin; the conformal group is only globally defined on the conformal compactification, and on $\mathbb{M}_-$ its transformations are partly defined rational maps. This article works with those rational maps and does not construct the compactification. And the invariance of the cone is a statement about the *object*: it does not by itself produce a group action inside $\mathbb{B}$, which is the substance of the strain.
+So all four families preserve the null cone, and the invariant object of the conformal group is native to the algebra: it is the zero set of $\langle\cdot\rangle_{\natural}$. Two qualifications belong here rather than at the end. The inversion is undefined where $\langle\tilde{Q}\rangle_{\natural}=0$, that is, on the light cone of the origin; the conformal group is only globally defined on the conformal compactification, and on $\mathbb{M}_-$ its transformations are partly defined rational maps. This article works with those rational maps and does not construct the compactification. And the invariance of the cone is a statement about the *object*: it does not by itself produce a group action inside $\mathbb{B}$, which is the substance of the strain.
 
 ## Dilations and the Non-Unit Biquaternion
 
@@ -112,7 +112,7 @@ $$
 $$
 and this displays both what the algebra provides and what it withholds. Three points, each recomputed on explicit elements.
 
-**The generator is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_0$ has biquaternion norm $N(\tilde{G})=\lambda\,e_0\ne e_0$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $N$; the dilation scales $N$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
+**The generator is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_0$ has biquaternion norm $\langle\tilde{G}\rangle_{\natural}=\lambda\,e_0\ne e_0$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
 
 **The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Y})$ is not $(\lambda\tilde{Q})(\lambda\tilde{Y})$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
 
@@ -122,23 +122,23 @@ and this displays both what the algebra provides and what it withholds. Three po
 
 The special conformal transformations are the part of the conformal group that is nonlinear on spacetime, and they are generated by the inversion.
 
-**Inversion.** For $\tilde{Q}\in\mathbb{M}_-$ with $N(\tilde{Q})\ne0$, define
+**Inversion.** For $\tilde{Q}\in\mathbb{M}_-$ with $\langle\tilde{Q}\rangle_{\natural}\ne0$, define
 $$
-I(\tilde{Q})=\frac{\tilde{Q}}{N(\tilde{Q})}.
+I(\tilde{Q})=\frac{\tilde{Q}}{\langle\tilde{Q}\rangle_{\natural}}.
 $$
 This is the four-vector form of $x^\mu\mapsto x^\mu/x^2$, and it is algebraic: it is the quaternion conjugate followed by the algebra inverse,
 $$
 I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1},
 $$
-because $N(\tilde{Q}^{\natural})=N(\tilde{Q})$ (the biquaternion norm is central, so $\tilde{Q}^{\natural}\tilde{Q}=\tilde{Q}\tilde{Q}^{\natural}$) and therefore $(\tilde{Q}^{\natural})^{-1}=\overline{\tilde{Q}^{\natural}}/N(\tilde{Q}^{\natural})=\tilde{Q}/N(\tilde{Q})$. Two properties follow and were verified: $I^2=\mathrm{id}$ where defined, and
+because $\langle\tilde{Q}^{\natural}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ (the biquaternion norm is central, so $\tilde{Q}^{\natural}\tilde{Q}=\tilde{Q}\tilde{Q}^{\natural}$) and therefore $(\tilde{Q}^{\natural})^{-1}=\overline{\tilde{Q}^{\natural}}/\langle\tilde{Q}^{\natural}\rangle_{\natural}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$. Two properties follow and were verified: $I^2=\mathrm{id}$ where defined, and
 $$
-N\bigl(I(\tilde{Q})\bigr)=\frac{1}{N(\tilde{Q})},
+N\bigl(I(\tilde{Q})\bigr)=\frac{1}{\langle\tilde{Q}\rangle_{\natural}},
 $$
 so $I$ maps the null cone to itself and is a conformal map with the reciprocal scale factor. Unlike the Lorentz, dilation and translation parts, the inversion is not built from the algebra's multiplication and addition alone: it uses the inverse, that is, division by the biquaternion norm.
 
 There is a small but real distinction to record. The algebra's own inverse is
 $$
-\tilde{Q}^{-1}=\frac{\tilde{Q}^{\natural}}{N(\tilde{Q})},
+\tilde{Q}^{-1}=\frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}},
 $$
 which differs from $I$ by the spatial reflection $\vec x\mapsto-\vec x$, that is, by quaternion conjugation on $\mathbb{M}_-$:
 $$
@@ -150,14 +150,14 @@ The map $P$ is an improper Lorentz transformation, so it is already in the confo
 **Special conformal transformations.** A translation sandwiched between two inversions is a special conformal transformation:
 $$
 \tilde{Q}'=I\bigl(I(\tilde{Q})+\tilde{A}\bigr)
-=\frac{\tilde{Q}+\tilde{A}\,N(\tilde{Q})}{1+2B(\tilde{Q},\tilde{A})+N(\tilde{A})N(\tilde{Q})},
+=\frac{\tilde{Q}+\tilde{A}\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde{A}\rangle+\langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
 \qquad \tilde{A}\in\mathbb{M}_-,
 $$
 where
 $$
-B(\tilde{P},\tilde{Q})=\tfrac12\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_\mu P_\mu Q_\mu
+\langle\tilde{P},\tilde{Q}\rangle=\tfrac12\bigl(\langle\tilde{P}+\tilde{Q}\rangle_{\natural}-\langle\tilde{P}\rangle_{\natural}-\langle\tilde{Q}\rangle_{\natural}\bigr)=\sum_\mu P_\mu Q_\mu
 $$
-is the polar form of $N$ — the complex bilinear dot product, which on $\mathbb{M}_-$ is the Minkowski inner product. In components, with $x^2=N(\tilde{Q})$ and $a\cdot x=B(\tilde{Q},\tilde{A})$, this is the standard
+is the polar form of $\langle\cdot\rangle_{\natural}$ — the complex bilinear dot product, which on $\mathbb{M}_-$ is the Minkowski inner product. In components, with $x^2=\langle\tilde{Q}\rangle_{\natural}$ and $a\cdot x=\langle\tilde{Q},\tilde{A}\rangle$, this is the standard
 $$
 x'^\mu=\frac{x^\mu+a^\mu x^2}{1+2a\cdot x+a^2x^2}.
 $$
@@ -177,7 +177,7 @@ The obstructions that keep the conformal group out of the algebra can now be col
 
 **Dimension.** The biquaternion algebra has real dimension $8$, and its unit-norm subgroup $SL(2,\mathbb{C})$ — the group that acts as the Lorentz group — has real dimension $6$. The conformal group has dimension $15$. No faithful assignment of unit-norm biquaternions to conformal elements exists, for the same counting reason that blocks the translations in the Poincaré article. In Lie-algebra terms, $\mathrm{SO}(2,4)$ is fifteen-dimensional and cannot embed as a subalgebra of $\mathbb{B}$ under the commutator bracket, which is eight-dimensional. No arrangement of the existing algebra closes the gap.
 
-**Linearity.** The natural self-action of the algebra is the linear map $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; it preserves $N$ pointwise, hence produces isometries only, never dilations, and its group is six-dimensional. For a rotation this map is conjugation by a unit real quaternion and is an inner automorphism; for a boost it is the twisted map $\tilde{B}\tilde{Q}\tilde{B}$ (since $\tilde{B}^{*}=\tilde{B}$), which is linear but not multiplicative and so is not an algebra automorphism at all. Either way it is linear in $\tilde{Q}$, and the special conformal transformations are not. Classifying the fifteen generators by how they can be realized:
+**Linearity.** The natural self-action of the algebra is the linear map $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; it preserves $\langle\cdot\rangle_{\natural}$ pointwise, hence produces isometries only, never dilations, and its group is six-dimensional. For a rotation this map is conjugation by a unit real quaternion and is an inner automorphism; for a boost it is the twisted map $\tilde{B}\tilde{Q}\tilde{B}$ (since $\tilde{B}^{*}=\tilde{B}$), which is linear but not multiplicative and so is not an algebra automorphism at all. Either way it is linear in $\tilde{Q}$, and the special conformal transformations are not. Classifying the fifteen generators by how they can be realized:
 
 - the six Lorentz generators are elements of $\mathbb{B}$;
 - the dilation is a non-unit element and a non-inner, nonzero-trace linear map;
@@ -186,17 +186,17 @@ The obstructions that keep the conformal group out of the algebra can now be col
 
 **The size of the linearly realized part.** The conformal transformations that act linearly or affinely on $\mathbb{M}_-$ are exactly the similarities $x^\mu\mapsto\lambda\Lambda^\mu{}_\nu x^\nu+a^\mu$, whose group — Lorentz (6) plus dilation (1) plus translations (4) — has dimension $11$. The remaining four generators, the special conformal ones, are precisely the nonlinear part. The algebra supplies all eleven: the Lorentz factor by multiplication of rotors, the dilation by a non-unit scaling, the translations by addition. The last four it reaches only through the nonlinear inversion. That is the sharp form of the boundary.
 
-**The second sector.** The Lorentz action extends to the whole algebra: $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a linear map of $\mathbb{B}$ that restricts to rotor conjugation on $\mathbb{M}_-$ and preserves $\mathbb{M}_+$ as well (the conjugate of a Hermitian element is Hermitian). Conformal operations behave less uniformly. The inversion does preserve each sector separately: $N$ is real on $\mathbb{M}_+$ and on $\mathbb{M}_-$, so the scalar factor $\tilde{Q}/N(\tilde{Q})$ keeps the Hermitian or anti-Hermitian character. But the translations are $\mathbb{M}_-$-valued and the special conformal transformations are anchored there, so the full conformal group has no canonical action on the informational sector $\mathbb{M}_+$. Whether $\mathbb{M}_+$ is meant to be conformally invariant, and with what weight, is not determined by the algebra. This is a gap, not a result, and it is left visible.
+**The second sector.** The Lorentz action extends to the whole algebra: $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a linear map of $\mathbb{B}$ that restricts to rotor conjugation on $\mathbb{M}_-$ and preserves $\mathbb{M}_+$ as well (the conjugate of a Hermitian element is Hermitian). Conformal operations behave less uniformly. The inversion does preserve each sector separately: $\langle\cdot\rangle_{\natural}$ is real on $\mathbb{M}_+$ and on $\mathbb{M}_-$, so the scalar factor $\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$ keeps the Hermitian or anti-Hermitian character. But the translations are $\mathbb{M}_-$-valued and the special conformal transformations are anchored there, so the full conformal group has no canonical action on the informational sector $\mathbb{M}_+$. Whether $\mathbb{M}_+$ is meant to be conformally invariant, and with what weight, is not determined by the algebra. This is a gap, not a result, and it is left visible.
 
 ## Two Larger Homes in the Literature
 
 The conformal group is a standard object, and its standard algebraic homes are larger than $\mathbb{B}$. Two are worth naming, because they locate exactly what the biquaternion algebra would have to acquire.
 
-**Vahlen matrices.** The Ahlfors–Vahlen construction realizes the conformal group of $\mathbb{R}^{p,q}$ by $2\times2$ matrices
+**Vahlen matrices.** The Ahlfors–Vahlen construction realizes the conformal group of $\\mathbb{R}^{n,m}$ by $2\times2$ matrices
 $$
 \begin{pmatrix} a & b\\ c & d\end{pmatrix}
 $$
-whose entries lie in the Clifford algebra $\mathrm{Cl}_{p,q}$, are products of vectors, and satisfy the conformality conditions that make the fractional action
+whose entries lie in the Clifford algebra $\mathrm{Cl}_{n,m}$, are products of vectors, and satisfy the conformality conditions that make the fractional action
 $$
 \tilde{Q}\;\longmapsto\;(aX+b)(cX+d)^{-1}
 $$
@@ -206,15 +206,15 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 
 **The Clifford-group interpretation, and dilations without a Weyl field.** The six-dimensional embedding is sometimes stated as its own result: the conformal group of four-dimensional spacetime *emerges as a subgroup of the Clifford group* [Castro and Pavšič, "Clifford Algebra of Spacetime and the Conformal Group," Int. J. Theor. Phys. **42** (2003) 1693, arXiv:hep-th/0203194]. The standard part is the realization of the fifteen generators in the Clifford algebra of spacetime: with $e_a = (\gamma_\mu, \gamma_5, 1)$ the six-tuplet, $L_{ab} = -\tfrac{i}{4}[e_a,e_b]$ gives the Lorentz generators $M_{\mu\nu}$, the dilation $D = L_{65}$, the translations $P_\mu = L_{5\mu}+L_{6\mu}$, and the special conformal generators, so the whole conformal algebra is spanned by commutators of $1$, $\gamma_\mu$ and $\gamma_5$ — the same $\mathrm{Cl}_{2,4}$ statement as above, and the authors' own comment is that this "might look mathematically trivial". What the reference adds is where that six-dimensional space sits: it is the subspace of the Clifford space spanned by the scalar unit, the four vector generators and the pseudoscalar unit, with metric signature $(+,-,-,-,-,+)$ and coordinates $(\eta^\mu,\eta^5,\eta^6)$ replacing $(x^\mu,\tilde\sigma,\sigma)$, so that the conformal group acts *linearly* there and on the cone $\eta^a\eta_a = 0$ reproduces the conformal transformations of Minkowski space. The remaining polyvector coordinates — the bivectors $x^{\mu\nu}$ and the pseudovectors $\tilde{x}^\mu$ — lie outside that subspace and take no part. The same passage adds, and this is **speculative**, a **physical interpretation** of the dilations: the authors argue that extended objects in this arena change size "in the absence of forces and the Weyl gauge field of dilations", moving dilationally *because of inertia* rather than because a compensating gauge field has been introduced, citing Pavšič's own earlier work. That is a proposal about why scale changes occur, not a derivation, and it is recorded here as the programme's claim, not as a result of the algebra.
 
-**Twistors.** A third realization uses the same vector space as the algebra but a different structure. The double cover $SU(2,2)$ of the conformal group acts linearly on twistor space $T=S\oplus\bar{S}\cong\mathbb{C}^4$. As complex vector spaces, $T$ and $\mathbb{B}$ are both $\mathbb{C}^4$; but the form that $SU(2,2)$ preserves is a **Hermitian** form of signature $(2,2)$, whereas the biquaternion norm $N$ is a complex **symmetric bilinear** form. The spaces agree; the forms do not. This is the precise sense in which the conformal group, when it acts on the same four-dimensional vector space, enters as the **unitary** group of a form and not as the **unit** group of a norm — a different kind of group from the one the framework uses. The companion article on twistors develops this in full, with the incidence relation and the Klein correspondence; the point here is only that the twistor realization does not place the conformal group inside $\mathbb{B}$, it places it on $\mathbb{B}$ read as a new module with a new form.
+**Twistors.** A third realization uses the same vector space as the algebra but a different structure. The double cover $SU(2,2)$ of the conformal group acts linearly on twistor space $T=S\oplus\bar{S}\cong\mathbb{C}^4$. As complex vector spaces, $T$ and $\mathbb{B}$ are both $\mathbb{C}^4$; but the form that $SU(2,2)$ preserves is a **Hermitian** form of signature $(2,2)$, whereas the biquaternion norm $\langle\cdot\rangle_{\natural}$ is a complex **symmetric bilinear** form. The spaces agree; the forms do not. This is the precise sense in which the conformal group, when it acts on the same four-dimensional vector space, enters as the **unitary** group of a form and not as the **unit** group of a norm — a different kind of group from the one the framework uses. The companion article on twistors develops this in full, with the incidence relation and the Klein correspondence; the point here is only that the twistor realization does not place the conformal group inside $\mathbb{B}$, it places it on $\mathbb{B}$ read as a new module with a new form.
 
 ## Summary
 
 The conformal group of Minkowski space is the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the six Lorentz generators $M_{\mu\nu}$, the four translations $P_\mu$, the single dilation $D$, and the four special conformal generators $\mathcal{K}_\mu$. Its brackets were recomputed here on explicit test functions: $[D,P_\mu]=-P_\mu$, $[D,\mathcal{K}_\mu]=\mathcal{K}_\mu$, $[P_\mu,\mathcal{K}_\nu]=2(\eta_{\mu\nu}D-M_{\mu\nu})$, with the translations and special conformal generators abelian and the Lorentz part the companion article's.
 
-The biquaternion algebra carries the conformal **structure** but not the conformal **group**. What it carries: the null cone, which is the zero-divisor cone $\{N=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/N(\tilde{Q})$, with $I^2=\mathrm{id}$ and $N(I(\tilde{Q}))=1/N(\tilde{Q})$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_0$; and the special conformal transformation is the composition $I\circ T_{\tilde{A}}\circ I$, with the explicit form
+The biquaternion algebra carries the conformal **structure** but not the conformal **group**. What it carries: the null cone, which is the zero-divisor cone $\{N=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_0$; and the special conformal transformation is the composition $I\circ T_{\tilde{A}}\circ I$, with the explicit form
 $$
-\tilde{Q}'=\frac{\tilde{Q}+\tilde{A}\,N(\tilde{Q})}{1+2B(\tilde{Q},\tilde{A})+N(\tilde{A})N(\tilde{Q})},
+\tilde{Q}'=\frac{\tilde{Q}+\tilde{A}\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde{A}\rangle+\langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
 $$
 which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.
 
@@ -229,14 +229,14 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $i$ | Scalar imaginary, $i^2=-1$, commuting with $e_k$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and scalar subspaces |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; its zero set is the null cone |
-| $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$ | Polar form of $N$; Minkowski inner product on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; its zero set is the null cone |
+| $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_\mu Q_\mu$ | Polar form of $\langle\cdot\rangle_{\natural}$; Minkowski inner product on $\mathbb{M}_-$ |
 | $\tilde{U}$, $J_k=e_k$, $K_k=ie_k$ | Lorentz rotor and its rotation/boost generators (in $\mathbb{B}$) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation (four-vector action) |
 | $SL(2,\mathbb{C})\cong\{N=e_0\}$ | Unit-norm biquaternions, Lorentz double cover, real dimension $6$ |
 | $M_{\mu\nu}$, $P_\mu$, $D$, $\mathcal{K}_\mu$ | Conformal generators: Lorentz (6), translations (4), dilation (1), special conformal (4) |
-| $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/N(\tilde{Q})$ | Inversion; $I^2=\mathrm{id}$, $N(I(\tilde{Q}))=1/N(\tilde{Q})$ |
-| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=P(I(\tilde{Q}))$ | Algebra inverse = inversion followed by parity |
+| $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$ | Inversion; $I^2=\mathrm{id}$, $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$ |
+| $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=P(I(\tilde{Q}))$ | Algebra inverse = inversion followed by parity |
 | $I\circ T_{\tilde{A}}\circ I$ | Special conformal transformation |
 | $SO^+(2,4)$, $SU(2,2)$ | Conformal group (dim $15$) and its double cover |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^+_{1,3}\oplus\mathrm{Cl}^-_{1,3}$, $\mathbb{B}=\mathrm{Cl}^+_{1,3}$ | Clifford algebra of Minkowski space, real dimension $16$ |

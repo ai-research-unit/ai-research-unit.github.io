@@ -13,69 +13,69 @@ complement of the group and its topological boundary.
 
 The boundary deserves an article of its own because it is drawn by a form the product does not
 carry. The plain product has one algebraic norm of its own, the general plain bilinear form
-$B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, and $B$ decides nothing about invertibility (*Norm
+$\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, and $\langle\cdot,\cdot\rangle$ decides nothing about invertibility (*Norm
 and Invertibility in the Biquaternion Algebra*, §*The Absence of a Criterion from the Algebraic
-Norm*). The boundary is drawn instead by the **general quaternionic bilinear algebraic norm** $N$,
-also the **reduced norm**, $N(\tilde Q)=\sum_\mu Q_\mu^{2}$, the norm that the quaternionic
+Norm*). The boundary is drawn instead by the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
+also the **reduced norm**, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, the norm that the quaternionic
 structure of the space carries; that form is **multiplicative**, and its multiplicativity is exactly
 the reason its non-vanishing set is closed under the product and under inversion, hence a group. The
 two statements of the article are the pair of these facts: **the units of the plain product are the
-elements of non-vanishing norm $N$, and their complement is a group for the plain product and for no
+elements of non-vanishing norm $\langle\cdot\rangle_{\natural}$, and their complement is a group for the plain product and for no
 other of the twelve structures.**
 
 **Placement and boundaries.** The article closes the *Specific Theory* of the biquaternion algebra,
 after *The Specificities of the Biquaternion Algebra*. It states the invertibility criterion of the
 plain product that *Norm and Invertibility in the Biquaternion Algebra* declines to read from the
 product's own algebraic norm, and it cites *Zero Divisors in the Algebraic Structures over the
-Biquaternion $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
+Biquaternioid $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
 products. The topology of the group — the polar decomposition, the retractions onto the compact
 subgroups, the homotopy groups and the universal cover — is proved in *The Biquaternion Unit Group
 as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*; the ambient topology of
 the cone is *The Topology of the Zero-Divisor Cone*; the distribution of the units over the
 remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The
 Algebraic Norm on the Remarkable Subspaces*; the invertibility of the symmetrised product is *Norm
-and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
+and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. None of those is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$
 with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$; a general element is $\tilde
 Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the
 coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The product is the general plain bilinear product $\tilde
-P\tilde Q$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $N$,
+P\tilde Q$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
 the reduced norm, is
 
 $$
-N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
 $$
 
-the scalar of the central square $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$. It is one of the four
-algebraic norms of the space (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*), and
-the whole article turns on its not being the algebraic norm of the plain product: $B$ is the
-diagonal of the plain bilinear form, $N$ is the general quaternionic one, and the two are different
+the scalar of the central square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_0$. It is one of the four
+algebraic norms of the space (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*), and
+the whole article turns on its not being the algebraic norm of the plain product: $\langle\cdot\rangle$ is the
+diagonal of the plain bilinear form, $\langle\cdot,\cdot\rangle_{\natural}$ is the general quaternionic one, and the two are different
 forms with different vanishing sets. The generic norm $\mathrm{Norm}$ of *Conventions in
 Mathematics*, §*The form convention and the norm convention*, is instantiated in this article by the
-general quaternionic bilinear algebraic norm $N$ (*The 4 Algebraic Norms over the Biquaternion
-$\mathbb{C}$ Space*): every statement below names its norm, and the norm it names is $N$.
+general quaternionic bilinear algebraic norm $\langle\cdot\rangle_{\natural}$ (*The 4 Algebraic Norms over the Biquaternion
+$\mathbb{C}$ Space*): every statement below names its norm, and the norm it names is $\langle\cdot\rangle_{\natural}$.
 
 ## The Partition of the Algebra
 
-**Definition (the zero-divisor cone).** The vanishing set of the norm $N$,
+**Definition (the zero-divisor cone).** The vanishing set of the norm $\langle\cdot\rangle_{\natural}$,
 
 $$
-\mathcal{C}=\{\tilde Q\in\mathbb{B}:N(\tilde Q)=0\},
+\mathcal{C}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\},
 $$
 
 is the **zero-divisor cone**. It is a complex cone with apex at the origin, of complex dimension
 three and real dimension six, and the zero-divisor set of the four general products is the punctured
 cone $\mathcal{C}\setminus\{0\}$ (*Zero Divisors of the Biquaternion Algebra*; *Zero Divisors in
-the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*).
 
 **Theorem (the invertibility criterion of the plain product).** An element $\tilde Q$ of
-$\mathbb{B}$ is invertible in the plain product exactly when $N(\tilde Q)\neq0$, and its inverse is
+$\mathbb{B}$ is invertible in the plain product exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is
 then
 
 $$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)} .
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
 $$
 
 *Proof.* The natural conjugation is an anti-automorphism, $\tilde P^{\natural}\tilde
@@ -86,11 +86,11 @@ $$
 \tilde Q\tilde Q^{\natural}=Q_0^{2}e_0-\vec Q^{2},
 $$
 
-whose vector part vanishes and whose scalar part is $Q_0^{2}+\sum_k Q_k^{2}=N(\tilde Q)$, because
+whose vector part vanishes and whose scalar part is $Q_0^{2}+\sum_k Q_k^{2}=\langle\tilde Q\rangle_{\natural}$, because
 the vector part of the algebra squares to $\vec Q^{2}=-\sum_kQ_k^{2}e_0$. Hence $\tilde Q\tilde
-Q^{\natural}=N(\tilde Q)e_0$, and the same computation in the other order gives $\tilde
-Q^{\natural}\tilde Q=N(\tilde Q)e_0$. If $N(\tilde Q)\neq0$ the displayed element is a two-sided
-inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$ then $\tilde Q^{\natural}\neq0$ and $\tilde Q\tilde
+Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_0$, and the same computation in the other order gives $\tilde
+Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_0$. If $\langle\tilde Q\rangle_{\natural}\neq0$ the displayed element is a two-sided
+inverse. If $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$ then $\tilde Q^{\natural}\neq0$ and $\tilde Q\tilde
 Q^{\natural}=0$, so $\tilde Q$ is a zero divisor and cannot be invertible; and the origin is not
 invertible. Verified by recomputation on $100$ random elements, the two products $\tilde Q\tilde
 Q^{-1}$ and $\tilde Q^{-1}\tilde Q$ returning $e_0$ with error below $10^{-9}$.
@@ -99,7 +99,7 @@ Q^{-1}$ and $\tilde Q^{-1}\tilde Q$ returning $e_0$ with error below $10^{-9}$.
 
 $$
 \mathbb{B}=\mathbb{B}^\times\uplus\mathcal{C},\qquad
-\mathbb{B}^\times=\{\tilde Q\in\mathbb{B}:N(\tilde Q)\neq0\},
+\mathbb{B}^\times=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\},
 $$
 
 of its **group of units** and its **zero-divisor cone**. The cone is exactly the complement of the
@@ -129,7 +129,7 @@ $\mathbb{B}^\times\cup\{0\}$.
 The partition gives the three-way classification of the elements of the algebra by their behaviour
 in the plain product.
 
-| condition on $N(\tilde Q)$ | condition on $\tilde Q$ | class |
+| condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | class |
 | --- | --- | --- |
 | $\neq0$ | (automatically $\neq0$) | a unit; an element of the group $\mathbb{B}^\times$ |
 | $=0$ | $\tilde Q=0$ | the origin; neither a unit nor a zero divisor |
@@ -145,10 +145,10 @@ the cone, in the group, and in no zero-divisor set.
 
 ## Multiplicativity Makes the Complement a Group
 
-**Theorem (the norm $N$ is multiplicative).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
+**Theorem (the norm $\langle\cdot\rangle_{\natural}$ is multiplicative).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
 
 $$
-N(\tilde P\tilde Q)=N(\tilde P)\,N(\tilde Q).
+\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural}.
 $$
 
 *Proof.* The natural conjugation reverts the order, so
@@ -156,34 +156,34 @@ $$
 $$
 (\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}
 =\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}
-=\tilde P\,N(\tilde Q)e_0\,\tilde P^{\natural}
-=N(\tilde Q)\tilde P\tilde P^{\natural}
-=N(\tilde P)N(\tilde Q)e_0,
+=\tilde P\,\langle\tilde Q\rangle_{\natural}e_0\,\tilde P^{\natural}
+=\langle\tilde Q\rangle_{\natural}\tilde P\tilde P^{\natural}
+=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_0,
 $$
 
-the scalar $N(\tilde Q)$ being central. Verified by recomputation on $100$ random pairs, error below
+the scalar $\langle\tilde Q\rangle_{\natural}$ being central. Verified by recomputation on $100$ random pairs, error below
 $10^{-9}$.
 
 **Corollary (the cone is absorbing and the units are closed).** The cone is closed under the product
-in the strong sense that a cone factor forces a cone product: if $N(\tilde P)=0$ then $N(\tilde
-P\tilde Q)=N(\tilde Q\tilde P)=0$ for every $\tilde Q$. The group of units is closed under the
+in the strong sense that a cone factor forces a cone product: if $\langle\tilde P\rangle_{\natural}=0$ then $\langle\tilde
+P\tilde Q\rangle_{\natural}=\langle\tilde Q\tilde P\rangle_{\natural}=0$ for every $\tilde Q$. The group of units is closed under the
 product, and with it the inverse formula is closed under inversion.
 
 *Proof.* Multiply the multiplicativity by zero in the two orders; closure under multiplication
 follows from the non-vanishing of the two factors, and closure under inversion from $\tilde
-Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$.
+Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 
-**Theorem (the norm $N$ is a homomorphism of the group onto $\mathbb{C}^\times$).** The
+**Theorem (the norm $\langle\cdot\rangle_{\natural}$ is a homomorphism of the group onto $\mathbb{C}^\times$).** The
 multiplicative norm restricts to a surjective homomorphism of groups
 
 $$
-N:\mathbb{B}^\times\longrightarrow\mathbb{C}^\times,\qquad \tilde Q\longmapsto N(\tilde Q),
+N:\mathbb{B}^\times\longrightarrow\mathbb{C}^\times,\qquad \tilde Q\longmapsto \langle\tilde Q\rangle_{\natural},
 $$
 
-whose kernel is the **norm-one group** $\mathbb{B}^\times_1=\{\tilde Q:N(\tilde Q)=1\}$.
+whose kernel is the **norm-one group** $\mathbb{B}^\times_1=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\}$.
 
 *Proof.* Multiplicativity makes the restriction a homomorphism into the nonzero complex numbers; it
-is surjective because the centre gives $N(Ae_0)=A^{2}$ and every nonzero complex number is a square,
+is surjective because the centre gives $\langle Ae_0\rangle_{\natural}=A^{2}$ and every nonzero complex number is a square,
 the map being two-to-one on the central line; the kernel is the preimage of $1$, a normal subgroup.
 The identification of the norm-one group with $SL_2(\mathbb{C})$ and the two-to-one covering
 $\mathbb{C}^\times e_0\times\mathbb{B}^\times_1\to\mathbb{B}^\times$ of kernel $\{\pm e_0\}$ are
@@ -191,14 +191,14 @@ $\mathbb{C}^\times e_0\times\mathbb{B}^\times_1\to\mathbb{B}^\times$ of kernel $
 
 **Remark (why the complement is a group here and nowhere else).** The two closure properties are
 exactly what a set of the form $\{\text{form}\neq0\}$ needs in order to be a group, and both are
-read from multiplicativity. The norm $N$ supplies them, so its non-vanishing set is the group of
-units of the plain product. The algebraic norm of the plain product, $B$, supplies neither, and its
+read from multiplicativity. The norm $\langle\cdot\rangle_{\natural}$ supplies them, so its non-vanishing set is the group of
+units of the plain product. The algebraic norm of the plain product, $\langle\cdot\rangle$, supplies neither, and its
 non-vanishing set is not closed under the product: the elements $\tilde P=e_0-\tfrac13e_1$ and
-$\tilde Q=e_0+2e_1$ have $B(\tilde P)=\tfrac89$ and $B(\tilde Q)=-3$, both nonzero, while $B(\tilde
-P\tilde Q)=0$. The non-vanishing set of $B$ therefore carries no group, although it is closed under
+$\tilde Q=e_0+2e_1$ have $\langle\tilde P\rangle=\tfrac89$ and $\langle\tilde Q\rangle=-3$, both nonzero, while $\langle\tilde
+P\tilde Q\rangle=0$. The non-vanishing set of $\langle\cdot\rangle$ therefore carries no group, although it is closed under
 the inverse formula; **a group of units needs a multiplicative norm, and the multiplicative norm of
-the space is not the norm of the plain product.** Verified by recomputation: $B(\tilde P)=\tfrac89$,
-$B(\tilde Q)=-3$, $B(\tilde P\tilde Q)$ below $10^{-15}$.
+the space is not the norm of the plain product.** Verified by recomputation: $\langle\tilde P\rangle=\tfrac89$,
+$\langle\tilde Q\rangle=-3$, $\langle\tilde P\tilde Q\rangle$ below $10^{-15}$.
 
 ## The Boundary Is the Cone of the Norm and Not the Cone of the Product
 
@@ -206,7 +206,7 @@ The algebraic norm of the plain product is the general plain bilinear form read 
 arguments,
 
 $$
-B(\tilde Q)=\mathrm{Sc}\bigl(\tilde Q\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{2}=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},
+\langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{2}=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},
 $$
 
 of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$; it is not multiplicative, its vanishing
@@ -218,16 +218,16 @@ and the difference is the boundary of the group.
 both directions,
 
 $$
-B(\tilde Q)=0\ \not\Longrightarrow\ \tilde Q\notin\mathbb{B}^\times,
+\langle\tilde Q\rangle=0\ \not\Longrightarrow\ \tilde Q\notin\mathbb{B}^\times,
 \qquad
-B(\tilde Q)\neq0\ \not\Longrightarrow\ \tilde Q\in\mathbb{B}^\times,
+\langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\in\mathbb{B}^\times,
 $$
 
-with the witnesses $\tilde Q=e_0+e_1$, a unit of vanishing $B$, and $\tilde Q=e_0+ie_1$, a zero
-divisor of non-vanishing $B$.
+with the witnesses $\tilde Q=e_0+e_1$, a unit of vanishing $\langle\cdot\rangle$, and $\tilde Q=e_0+ie_1$, a zero
+divisor of non-vanishing $\langle\cdot\rangle$.
 
-*Proof.* $(e_0+e_1)(e_0-e_1)=2e_0$, so $e_0+e_1$ is invertible, while $B(e_0+e_1)=1-1=0$. And
-$(e_0+ie_1)(e_0-ie_1)=0$, so $e_0+ie_1$ is a zero divisor, while $B(e_0+ie_1)=1-i^{2}=2$.
+*Proof.* $(e_0+e_1)(e_0-e_1)=2e_0$, so $e_0+e_1$ is invertible, while $\langle e_0+e_1\rangle=1-1=0$. And
+$(e_0+ie_1)(e_0-ie_1)=0$, so $e_0+ie_1$ is a zero divisor, while $\langle e_0+ie_1\rangle=1-i^{2}=2$.
 
 **Corollary (the boundary of the group).** The boundary of the group of units is the zero-divisor
 cone $\mathcal{C}=\{N=0\}$, and not the vanishing set $\{B=0\}$ of the product's own algebraic norm.
@@ -241,13 +241,13 @@ neither contains the other.
 
 | form | vanishing set | real dimension | multiplicative | decides the units |
 | --- | --- | --- | --- | --- |
-| $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the zero-divisor cone $\mathcal{C}$ | $6$ | yes | yes: $\mathbb{B}^\times=\{N\neq0\}$ |
-| $B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the complex cone of $B$ | $6$ | no | no, by the two witnesses |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the zero-divisor cone $\mathcal{C}$ | $6$ | yes | yes: $\mathbb{B}^\times=\{N\neq0\}$ |
+| $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the complex cone of $\langle\cdot\rangle$ | $6$ | no | no, by the two witnesses |
 
 **Remark (what the boundary is made of).** The group of units of the plain product is therefore
 bounded by the zero set of a form that the product does not carry in its own right: the plain
-product is the multiplication, its algebraic norm is $B$, and the criterion is furnished by the
-general quaternionic bilinear algebraic norm $N$, which belongs to the quaternionic structure of the
+product is the multiplication, its algebraic norm is $\langle\cdot\rangle$, and the criterion is furnished by the
+general quaternionic bilinear algebraic norm $\langle\cdot\rangle_{\natural}$, which belongs to the quaternionic structure of the
 space. **The units of the plain product are read from the norm of a different product.** This is the
 geometric content of the absence recorded in *Norm and Invertibility in the Biquaternion Algebra*,
 and the reason the statement is stated here: the article that owns the product does not own the form
@@ -285,7 +285,7 @@ Group*, §*The Topology of the Group*, and *The Unitary Group of the Biquaternio
 
 **The group in the matrix model (cited).** Under $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the
 group is $\mathbb{B}^\times\cong GL_2(\mathbb{C})$ and the norm is the determinant,
-$\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, so the norm-one group is $\mathbb{B}^\times_1\cong
+$\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, so the norm-one group is $\mathbb{B}^\times_1\cong
 SL_2(\mathbb{C})$, and the norm is the determinant homomorphism
 $GL_2(\mathbb{C})\to\mathbb{C}^\times$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of
 Biquaternions*; §*The Determinant and the Matrix Model* of *The Biquaternion Unit Group as a
@@ -325,7 +325,7 @@ four general products and the symmetrised plain product are collected first.
 
 | structure | unit | invertible elements | a group |
 | --- | --- | --- | --- |
-| the algebra | $e_0$, two-sided; associative | the units of the definition: $\{N\neq0\}$, with $\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$ | **yes** |
+| the algebra | $e_0$, two-sided; associative | the units of the definition: $\{N\neq0\}$, with $\tilde P^{-1}=\tilde P^{\natural}/\langle\tilde P\rangle_{\natural}$ | **yes** |
 | $\mathrm{SPA}$ | $e_0$, two-sided; not associative | the elements of non-vanishing norm, with the Jordan inverse | no |
 | $\mathrm{GQA}$ | $e_0$, left alone; not associative | not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde P^{-1})^{\natural}$ | no |
 | $\mathrm{GPS}$ | $e_0$, right alone; not associative | not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde P^{-1})^{*}$ | no |
@@ -338,7 +338,7 @@ element $e_0$ and make no appeal to a unit of the product.
 
 **Theorem (the inverse equations of the four general products).** For each of the four general
 products, and for a nonzero element $\tilde P$, the two equations $\tilde P\star\tilde X=e_0$ and
-$\tilde X\star\tilde P=e_0$ have a solution exactly when $N(\tilde P)\neq0$, the solutions being
+$\tilde X\star\tilde P=e_0$ have a solution exactly when $\langle\tilde P\rangle_{\natural}\neq0$, the solutions being
 those of the table above. The cone is therefore the complement of the elements solvable on both
 sides of the inverse equations, for each of the four products at once.
 
@@ -347,7 +347,7 @@ conjugation and the coefficient conjugation revert the product, $(\tilde P\tilde
 Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, so that $\tilde P^{\natural}(\tilde
 P^{-1})^{\natural}=(\tilde P^{-1}\tilde P)^{\natural}=e_0$ and likewise with the coefficient
 conjugation. Conversely, the matrix model turns the equations into matrix equations with an
-invertible right factor, so the multiplication by $\tilde P$ is invertible and $N(\tilde P)\neq0$.
+invertible right factor, so the multiplication by $\tilde P$ is invertible and $\langle\tilde P\rangle_{\natural}\neq0$.
 The statement is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$
 Space*, §*The One-Sided Inverse Equations*, and the verification is by recomputation on $100$ random
 off-cone elements for each of the three non-unital products.
@@ -362,11 +362,11 @@ a two-sided identity and no group can be read; $\mathrm{GQS}$ has no unit at all
 
 **The symmetrised plain algebra: the same set and no group.** The symmetrised product
 $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ has $e_0$ as a two-sided unit, and its invertible
-elements are again the elements of non-vanishing norm: for $N(\tilde P)\neq0$ the two-sided solution
+elements are again the elements of non-vanishing norm: for $\langle\tilde P\rangle_{\natural}\neq0$ the two-sided solution
 is the **Jordan inverse**
 
 $$
-\tilde P^{\bullet}=\frac{2P_0e_0-\tilde P}{N(\tilde P)},
+\tilde P^{\bullet}=\frac{2P_0e_0-\tilde P}{\langle\tilde P\rangle_{\natural}},
 \qquad
 \tilde P\bullet\tilde P^{\bullet}=\tilde P^{\bullet}\bullet\tilde P=e_0,
 $$
@@ -415,17 +415,17 @@ not the only structure with invertible elements, it is the only structure where 
 
 ## Summary
 
-The biquaternion algebra has the group of units $\mathbb{B}^\times=\{N(\tilde Q)\neq0\}$ for the
-multiplicative norm $N(\tilde Q)=\sum_\mu Q_\mu^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$, with
-the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$; the zero-divisor cone
+The biquaternion algebra has the group of units $\mathbb{B}^\times=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ for the
+multiplicative norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$, with
+the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$; the zero-divisor cone
 $\mathcal{C}=\{N=0\}$ is exactly its complement, so that the algebra is the disjoint union
 $\mathbb{B}=\mathbb{B}^\times\uplus\mathcal{C}$, the zero-divisor set is the punctured cone, and the
 complement of the zero-divisor set is the group together with the origin. The boundary of the group
-is the cone of the norm $N$ of the general quaternionic bilinear form and not the cone of the
-**plain product's own** algebraic norm $B=\sum_\mu\varepsilon_\mu Q_\mu^{2}$: the element $e_0+e_1$
-is a unit with $B=0$ and the element $e_0+ie_1$ is a zero divisor with $B=2$, so $B$ decides
-nothing, while $N$ is multiplicative, $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, which makes the
-cone absorbing, the units closed under the product and the inverse, and $N$ a surjective
+is the cone of the norm $\langle\cdot\rangle_{\natural}$ of the general quaternionic bilinear form and not the cone of the
+**plain product's own** algebraic norm $\langle\cdot\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$: the element $e_0+e_1$
+is a unit with $\langle\cdot\rangle=0$ and the element $e_0+ie_1$ is a zero divisor with $\langle\cdot\rangle=2$, so $\langle\cdot\rangle$ decides
+nothing, while $\langle\cdot\rangle_{\natural}$ is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, which makes the
+cone absorbing, the units closed under the product and the inverse, and $\langle\cdot\rangle_{\natural}$ a surjective
 homomorphism $\mathbb{B}^\times\to\mathbb{C}^\times$ with kernel the norm-one group. The group is
 open, dense and connected, of real dimension eight, of the homotopy type $S^{1}\times S^{3}$ with
 $\pi_1\cong\mathbb{Z}$, with the cone of real codimension two as its boundary; on the centre and the
@@ -443,51 +443,41 @@ element at all.
 
 | Symbol | Meaning |
 | --- | --- |
-| $N(\tilde Q)=\sum_\mu Q_\mu^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | the general quaternionic bilinear algebraic norm, the reduced norm; multiplicative; the criterion of invertibility |
-| $\mathcal{C}=\{\tilde Q:N(\tilde Q)=0\}$ | the zero-divisor cone; the complement of the group of units; real dimension $6$; real codimension $2$ |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | the general quaternionic bilinear algebraic norm, the reduced norm; multiplicative; the criterion of invertibility |
+| $\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the complement of the group of units; real dimension $6$; real codimension $2$ |
 | $\mathcal{C}\setminus\{0\}$ | the zero-divisor set of the four general products |
 | $\mathbb{B}^\times=\{N\neq0\}$ | the group of units of the plain product; the complement of the cone |
 | $\mathbb{B}\setminus(\mathcal{C}\setminus\{0\})=\mathbb{B}^\times\cup\{0\}$ | the complement of the zero-divisor set: the group together with the origin |
-| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the inverse of an element of the group |
-| $e_0+e_1$; $e_0+ie_1$ | the unit with $B=0$; the zero divisor with $B=2$ |
-| $B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the algebraic norm of the plain product; not multiplicative; not the criterion |
+| $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse of an element of the group |
+| $e_0+e_1$; $e_0+ie_1$ | the unit with $\langle\cdot\rangle=0$; the zero divisor with $\langle\cdot\rangle=2$ |
+| $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the algebraic norm of the plain product; not multiplicative; not the criterion |
 | $N:\mathbb{B}^\times\to\mathbb{C}^\times$ | the norm as a homomorphism; kernel the norm-one group $\mathbb{B}^\times_1$ |
-| $(2P_0e_0-\tilde P)/N(\tilde P)$ | the Jordan inverse of the symmetrised plain product |
+| $(2P_0e_0-\tilde P)/\langle\tilde P\rangle_{\natural}$ | the Jordan inverse of the symmetrised plain product |
 | $e_1\bullet e_2=0$ | the witness that the invertible elements of the symmetrised product form no group |
 
 ## Further Reading
 
-- *Norm and Invertibility in the General Quaternionic Algebra*
-  (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm
+- *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm
   of the plain product, its non-multiplicativity and the absence of a criterion, and for the
   distribution of the invertible elements over the remarkable subspaces.
-- *Zero Divisors of the Biquaternion Algebra*
-  (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the criterion of the plain
   product, the two families of the cone and the three-way classification.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`),
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`),
   for the cone as the zero-divisor set of the four general products and the one-sided inverse
   equations.
-- *The Biquaternion Unit Group as a Topological Group*
-  (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the group
+- *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the group
   $\mathbb{B}^\times\cong GL_2(\mathbb{C})$, the norm-one group $\mathbb{B}^\times_1\cong
   SL_2(\mathbb{C})$, the determinant sequence, the covering and the homotopy type.
-- *The Unitary Group of the Biquaternion Algebra*
-  (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the polar decomposition,
+- *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the polar decomposition,
   the retractions onto the compact subgroups and the homotopy groups.
-- *The Topology of the Zero-Divisor Cone*
-  (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the cone as the boundary of the
+- *The Topology of the Zero-Divisor Cone* (`articles_maths/the-topology-of-the-zero-divisor-cone.md`), for the cone as the boundary of the
   group of units.
-- *Norm and Invertibility in the Symmetric Plain Algebra*
-  (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-algebra.md`), for the invertibility
+- *Norm and Invertibility in the Symmetric Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-algebra.md`), for the invertibility
   of the symmetrised product.
-- *The Specificities of the Biquaternion Algebra*
-  (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the left alternativity
+- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the left alternativity
   that the associativity of the plain product supplies and the isolation of the block.
-- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve
+- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve
   structures, their units and their images.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the unit, the
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the unit, the
   inverse, the zero divisor and the annihilator stated once for a general product.
 

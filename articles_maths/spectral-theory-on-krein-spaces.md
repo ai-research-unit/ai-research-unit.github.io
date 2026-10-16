@@ -12,7 +12,7 @@ The indefinite adjoint, $J$-self-adjointness and the $J$-positive cone are *J-Se
 
 ## The Spectrum of a J-Self-Adjoint Operator
 
-**Definition.** The **spectrum** $\sigma(T)$ is the complement of the set of $\lambda$ with $\lambda - T$ boundedly invertible; the **point spectrum** $\sigma_{p}(T)$ is the set of eigenvalues, and the **root subspace** at $\lambda$ is $\bigcup_{n}\ker(\lambda - T)^{n}$.
+**Definition.** The **spectrum** $\sigma(T)$ is the complement of the set of $\lambda$ with $\lambda - T$ boundedly invertible; the **point spectrum** $\sigma_{n}(T)$ is the set of eigenvalues, and the **root subspace** at $\lambda$ is $\bigcup_{n}\ker(\lambda - T)^{n}$.
 
 **Proposition (resolvent identity).** If $T$ is $J$-self-adjoint then $\lambda - T$ is $J$-self-adjoint exactly for real $\lambda$, and $(\lambda - T)^{-1}$ is $J$-self-adjoint at every point of the resolvent that is real; at non-real $\lambda$ the resolvent is $J$-self-adjoint with parameter $\bar\lambda$.
 
@@ -21,7 +21,7 @@ The indefinite adjoint, $J$-self-adjointness and the $J$-positive cone are *J-Se
 **Theorem (conjugate symmetry).** The spectrum and the point spectrum of a $J$-self-adjoint operator are symmetric with respect to the real axis:
 
 $$
-\lambda\in\sigma(T) \iff \bar\lambda\in\sigma(T) , \qquad \lambda\in\sigma_{p}(T) \iff \bar\lambda\in\sigma_{p}(T) ,
+\lambda\in\sigma(T) \iff \bar\lambda\in\sigma(T) , \qquad \lambda\in\sigma_{n}(T) \iff \bar\lambda\in\sigma_{n}(T) ,
 $$
 
 with equality of algebraic multiplicities, and the root subspace at $\bar\lambda$ is the $J$-orthogonal complement of the root subspace at $\lambda$ for the appropriate invariant pairing.
@@ -86,7 +86,7 @@ The spectrum of a bounded **$J$-self-adjoint** operator on a Krein space is **sy
 
 | Symbol | Meaning |
 |---|---|
-| $\sigma(T)$, $\sigma_{p}(T)$ | Spectrum and point spectrum |
+| $\sigma(T)$, $\sigma_{n}(T)$ | Spectrum and point spectrum |
 | $\bar T = JTJ^{-1}$ | Similarity to the complex conjugate |
 | $\lambda\in\sigma(T)\iff\bar\lambda\in\sigma(T)$ | Conjugate symmetry |
 | Positive, negative, neutral type | Sign of $[x,x]$ on eigenvectors |

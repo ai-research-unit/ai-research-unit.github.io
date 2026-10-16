@@ -61,7 +61,7 @@ $$
 
 the assignment $f \mapsto f(a)$ is an isometric $*$-homomorphism from $C(\sigma(a))$ onto $C^*(a,1)$, and it is the **continuous functional calculus**. The calculus is developed in *The Functional Calculus of a Self-Adjoint Element*.
 
-**Proof.** Compose the inverse of the Gelfand transform with the pullback by $f$; the spectral mapping is $\sigma(f(a)) = \hat f(\sigma(a)) = f(\sigma(a))$ under the identification of the theorem.
+**Proof.** Compose the inverse of the Gelfand transform with the pullback by $f$; the spectral mapping is $\sigma(f(a)) = (\mathcal F f)(\sigma(a)) = f(\sigma(a))$ under the identification of the theorem.
 
 ## Consequences and Examples
 

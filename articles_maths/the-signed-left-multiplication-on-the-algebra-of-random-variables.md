@@ -108,7 +108,7 @@ and the unitary signed left multiplications are parametrised by the unimodular r
 
 **Example (the swap on two atoms).** Let $\Omega=\{\omega_-,\omega_+\}$ with the uniform probability and $\alpha(x_-,x_+)=(x_+,x_-)$. The signed left multiplication by $a=(a_-,a_+)$ is $T^\alpha_a(x_-,x_+)=a\,\alpha(x)=(a_-x_+,a_+x_-)$; it is self-adjoint exactly when $a_-=a_+$, that is when $a$ is even, and unitary exactly when $|a_\pm|=1$. The self-adjoint unitary members are $a=(z,z)$ with $|z|=1$, a circle.
 
-**Example (the circle reflection).** Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure, $\alpha(x)(\theta)=x(-\theta)$. For $a(\theta)=e^{2\pi i\theta}$ one has $\alpha(a)(\theta)=e^{-2\pi i\theta}=a(\theta)^*$, so $a$ is $\alpha$-Hermitian and $T^\alpha_a$ is self-adjoint and unitary; it is the operator $x\mapsto e^{2\pi i\theta}x(-\theta)$, an involution of the circle.
+**Example (the circle reflection).** Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure, $\alpha(x)(\theta)=x(-\theta)$. For $a(\theta)=\exp(2\pi i\theta)$ one has $\alpha(a)(\theta)=\exp(-2\pi i\theta)=a(\theta)^*$, so $a$ is $\alpha$-Hermitian and $T^\alpha_a$ is self-adjoint and unitary; it is the operator $x\mapsto \exp(2\pi i\theta)x(-\theta)$, an involution of the circle.
 
 **Example (the trivial grading).** For $\alpha=\mathrm{id}$ one has $T^\alpha_a=L_a$, the adjoint is $L_{a^*}$, self-adjointness is $a$ real, and unitarity is $|a|=1$; this is the boundary at which the signed left multiplication is the unsigned one.
 

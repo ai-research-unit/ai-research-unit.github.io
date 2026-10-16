@@ -11,29 +11,29 @@ $$
 $$
 with $\vec B = \mu\vec H$ and the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector
 $$
-\vec V = \vec E + ic\,\vec B,
-\qquad \tilde F = i\sqrt{\epsilon}\,\vec V;
+\vec N = \vec E + ic\,\vec B,
+\qquad \tilde F = i\sqrt{\epsilon}\,\vec N;
 $$
 the invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; the energy density and Poynting vector
 $$
 W = \tfrac12\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad \vec S = \vec E\times\vec H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_0 + \tfrac{2i}{c}\vec S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ (and $\vec u$) denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_0 + \tfrac{2i}{c}\vec S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
 
-**What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec V\mapsto e^{-i\theta}\vec V$, hence $\tilde F\mapsto e^{-i\theta}\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $e^{-2i\theta}$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph contains a notation defect: the object paired with $\vec V$ is the complex conjugate $\vec V^*$, not the quaternion conjugate $\bar{\vec V}$. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
+**What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec N\mapsto \exp(-i\theta)\vec N$, hence $\tilde F\mapsto \exp(-i\theta)\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $\exp(-2i\theta)$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph contains a notation defect: the object paired with $\vec N$ is the complex conjugate $\vec N^*$, not the quaternion conjugate $\bar{\vec N}$. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
 **The result.** Duality is the central phase
 $$
-\boxed{\;\vec V \mapsto e^{-i\theta}\,\vec V,
-\qquad \tilde F \mapsto e^{-i\theta}\,\tilde F,
-\qquad N(\tilde F)\mapsto e^{-2i\theta}N(\tilde F),\;}
+\boxed{\;\vec N \mapsto \exp(-i\theta)\,\vec N,
+\qquad \tilde F \mapsto \exp(-i\theta)\,\tilde F,
+\qquad \langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural},\;}
 $$
-it preserves $W$ and $\vec S$, rotates $(I_1,2cI_2)$ by $2\theta$, is a symmetry of the source-free equations and, with magnetic sources admitted, of the sourced equations as well. The exercise also records two defects in the parent: the ambiguous use of $\bar{\vec V}$ where $\vec V^*$ is meant, and the missing biquaternion Lorentz transformation law of $\tilde F$, whose obvious candidate fails for a boost.
+it preserves $W$ and $\vec S$, rotates $(I_1,2cI_2)$ by $2\theta$, is a symmetry of the source-free equations and, with magnetic sources admitted, of the sourced equations as well. The exercise also records two defects in the parent: the ambiguous use of $\bar{\vec N}$ where $\vec N^*$ is meant, and the missing biquaternion Lorentz transformation law of $\tilde F$, whose obvious candidate fails for a boost.
 
 ## Problem 1: The Duality Rotation as a Phase
 
-**Statement.** (a) State the electric–magnetic duality transformation of the real fields and show that it is a rotation in the planes spanned by $\vec E$ and $c\vec B$. (b) Derive the induced action on the Riemann–Silberstein vector $\vec V = \vec E + ic\vec B$. (c) Derive the induced action on the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec V$, keeping the medium factors explicit. (d) Verify that the transformed field satisfies the same physical reality condition as the original, namely that it can be written as $i\sqrt{\epsilon}\vec E' - \sqrt{\mu}\vec H'$ with real $\vec E'$ and $\vec H'$.
+**Statement.** (a) State the electric–magnetic duality transformation of the real fields and show that it is a rotation in the planes spanned by $\vec E$ and $c\vec B$. (b) Derive the induced action on the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$. (c) Derive the induced action on the field-strength biquaternion $\tilde F = i\sqrt{\epsilon}\,\vec N$, keeping the medium factors explicit. (d) Verify that the transformed field satisfies the same physical reality condition as the original, namely that it can be written as $i\sqrt{\epsilon}\vec E' - \sqrt{\mu}\vec H'$ with real $\vec E'$ and $\vec H'$.
 
 **Solution (a).** For a real angle $\theta$, the duality rotation is
 $$
@@ -54,21 +54,21 @@ $$
 $$
 is the classical electric–magnetic duality.
 
-**Solution (b).** Substituting the transformation into $\vec V' = \vec E' + ic\vec B'$,
+**Solution (b).** Substituting the transformation into $\vec N' = \vec E' + ic\vec B'$,
 $$
-\vec V'
+\vec N'
 = \left(\vec E\cos\theta + c\,\vec B\sin\theta\right)
 + ic\left(\vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta\right)
 = (\cos\theta - i\sin\theta)\left(\vec E + ic\vec B\right)
-= e^{-i\theta}\,\vec V .
+= \exp(-i\theta)\,\vec N .
 $$
 The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $ict$; it is central, so it commutes with the quaternion units.
 
-**Solution (c).** The field-strength biquaternion is $\tilde F = i\sqrt{\epsilon}\vec V$, so part (b) gives immediately
+**Solution (c).** The field-strength biquaternion is $\tilde F = i\sqrt{\epsilon}\vec N$, so part (b) gives immediately
 $$
-\tilde F' = i\sqrt{\epsilon}\,\vec V' = e^{-i\theta}\,i\sqrt{\epsilon}\,\vec V = e^{-i\theta}\,\tilde F .
+\tilde F' = i\sqrt{\epsilon}\,\vec N' = \exp(-i\theta)\,i\sqrt{\epsilon}\,\vec N = \exp(-i\theta)\,\tilde F .
 $$
-It is worth seeing that this does not depend on the abbreviation $\tilde F = i\sqrt{\epsilon}\vec V$. Directly, with $\vec H' = \vec B'/\mu$,
+It is worth seeing that this does not depend on the abbreviation $\tilde F = i\sqrt{\epsilon}\vec N$. Directly, with $\vec H' = \vec B'/\mu$,
 $$
 \tilde F' = i\sqrt{\epsilon}\left(\vec E\cos\theta + c\vec B\sin\theta\right)
 - \sqrt{\mu}\left(\frac{\vec B}{\mu}\cos\theta - \frac{\vec E}{c\mu}\sin\theta\right).
@@ -77,7 +77,7 @@ Using $\sqrt{\epsilon}\,c = 1/\sqrt{\mu}$ and $\sqrt{\mu}/(c\mu) = \sqrt{\epsilo
 $$
 \tilde F' = i\sqrt{\epsilon}\,\vec E(\cos\theta - i\sin\theta)
 - \frac{1}{\sqrt{\mu}}\,\vec B(\cos\theta - i\sin\theta)
-= e^{-i\theta}\,\tilde F .
+= \exp(-i\theta)\,\tilde F .
 $$
 The medium factors are essential to the clean phase form: the real duality rotation mixes $\vec E$ with $c\vec B$, while $\tilde F$ stores the electric field with a factor $i\sqrt{\epsilon}$ and the magnetic field with a factor $-\sqrt{\mu}$.
 
@@ -91,19 +91,19 @@ are real. Moreover
 $$
 \tilde F' = i\sqrt{\epsilon}\,\vec E' - \sqrt{\mu}\,\vec H'
 $$
-by construction, so the transformed object is again a physical field strength of the same form. The duality rotation therefore maps the physical (real-field) subspace to itself. Multiplication by the phase $e^{-i\theta}$ is invertible, with inverse $\theta\mapsto-\theta$; the transformation is a one-parameter group.
+by construction, so the transformed object is again a physical field strength of the same form. The duality rotation therefore maps the physical (real-field) subspace to itself. Multiplication by the phase $\exp(-i\theta)$ is invertible, with inverse $\theta\mapsto-\theta$; the transformation is a one-parameter group.
 
 ## Problem 2: Duality and the Quadratic Objects
 
-**Statement.** (a) Compute $\vec V\cdot\vec V$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^{*}$, equivalently the energy density $W$ and the Poynting vector $\vec S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\vec E$ and $\vec B$, and a free plane wave (a null field).
+**Statement.** (a) Compute $\vec N\cdot\vec N$ in terms of the invariants and derive the transformation of $I_1$ and $I_2$ under duality. (b) Derive the transformation of the biquaternion norm $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ and identify the combination of invariants that duality leaves fixed. (c) Show that the Hermitian form $\tilde F\tilde F^{*}$, equivalently the energy density $W$ and the Poynting vector $\vec S$, is invariant. (d) Check all of this on two explicit fields: a generic field with nonzero $\vec E$ and $\vec B$, and a free plane wave (a null field).
 
 **Solution (a).** Expanding the complex dot product,
 $$
-\vec V\cdot\vec V = \left(\vec E + ic\vec B\right)\cdot\left(\vec E + ic\vec B\right)
+\vec N\cdot\vec N = \left(\vec E + ic\vec B\right)\cdot\left(\vec E + ic\vec B\right)
 = \vec E^2 - c^2\vec B^2 + 2ic\,\vec E\cdot\vec B
 = I_1 + 2ic\,I_2 .
 $$
-Under $\vec V\mapsto e^{-i\theta}\vec V$ the bilinear form acquires the factor $e^{-2i\theta}$, so with $\vec V'\cdot\vec V' = I_1' + 2icI_2'$,
+Under $\vec N\mapsto \exp(-i\theta)\vec N$ the bilinear form acquires the factor $\exp(-2i\theta)$, so with $\vec N'\cdot\vec N' = I_1' + 2icI_2'$,
 $$
 I_1' = I_1\cos 2\theta + 2cI_2\sin 2\theta,
 \qquad
@@ -111,29 +111,29 @@ I_1' = I_1\cos 2\theta + 2cI_2\sin 2\theta,
 $$
 The pair $(I_1,2cI_2)$ rotates by the doubled angle $2\theta$. Consequently
 $$
-I'^2_1 + 4c^2I'^2_2 = I_1^2 + 4c^2I_2^2 = \left|\vec V\cdot\vec V\right|^2
-= \frac{1}{\epsilon^2}\left|N(\tilde F)\right|^2 .
+I'^2_1 + 4c^2I'^2_2 = I_1^2 + 4c^2I_2^2 = \left|\vec N\cdot\vec N\right|^2
+= \frac{1}{\epsilon^2}\left|\langle\tilde F\rangle_{\natural}\right|^2 .
 $$
 
-**Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\vec V$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
+**Solution (b).** Since $\tilde F = i\sqrt{\epsilon}\vec N$ and $\tilde F^{\natural} = -\tilde F$ for a pure vector,
 $$
-N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = \vec F\cdot\vec F = \left(i\sqrt{\epsilon}\right)^2\vec V\cdot\vec V
+\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = \vec F\cdot\vec F = \left(i\sqrt{\epsilon}\right)^2\vec N\cdot\vec N
 = -\epsilon\left(I_1 + 2ic\,I_2\right).
 $$
-Under $\tilde F\mapsto e^{-i\theta}\tilde F$, and because the central scalar $e^{-i\theta}$ is fixed by quaternion conjugation,
+Under $\tilde F\mapsto \exp(-i\theta)\tilde F$, and because the central scalar $\exp(-i\theta)$ is fixed by quaternion conjugation,
 $$
-N(\tilde F) \mapsto e^{-2i\theta}\,N(\tilde F),
+\langle\tilde F\rangle_{\natural} \mapsto \exp(-2i\theta)\,\langle\tilde F\rangle_{\natural},
 $$
 which reproduces the rotation of $(I_1,2cI_2)$ obtained in part (a). The quantity $I_1^2 + 4c^2I_2^2$ is invariant under duality as well as under Lorentz transformations; each of $I_1$ and $I_2$ is separately Lorentz invariant, but duality mixes them, so only this combination is invariant under both.
 
 **Solution (c).** From the parent article, $\tilde F\tilde F^{*} = 2W e_0 + \frac{2i}{c}\vec S$. Under duality,
 $$
 \tilde F\tilde F^{*} \mapsto
-\left(e^{-i\theta}\tilde F\right)\left(e^{-i\theta}\tilde F\right)^\dagger
-= e^{-i\theta}\tilde F\,\tilde F^{*} e^{i\theta}
+\left(\exp(-i\theta)\tilde F\right)\left(\exp(-i\theta)\tilde F\right)^\dagger
+= \exp(-i\theta)\tilde F\,\tilde F^{*} \exp(i\theta)
 = \tilde F\tilde F^{*},
 $$
-because the phase is central and $\left(e^{-i\theta}\tilde F\right)^\dagger = e^{i\theta}\tilde F^{*}$. Hence both $W$ and $\vec S$ are invariant. Directly, the real duality rotation is an orthogonal rotation of $(\vec E,c\vec B)$, so
+because the phase is central and $\left(\exp(-i\theta)\tilde F\right)^\dagger = \exp(i\theta)\tilde F^{*}$. Hence both $W$ and $\vec S$ are invariant. Directly, the real duality rotation is an orthogonal rotation of $(\vec E,c\vec B)$, so
 $$
 \vec E'^2 + c^2\vec B'^2 = \vec E^2 + c^2\vec B^2,
 \qquad
@@ -162,25 +162,25 @@ Directly, $I_1' = \vec E'^2 - \vec B'^2 = \frac{25}{2} - \frac{25}{2} = 0$ and $
 
 *Null plane wave.* Take a plane wave in the medium,
 $$
-\vec E = E_0\cos(kz-\omega t)\,\hat x,
+\vec E = E_0\cos(kz-\omega t)\,\vec u_x,
 \qquad
-\vec B = \frac{E_0}{c}\cos(kz-\omega t)\,\hat y,
+\vec B = \frac{E_0}{c}\cos(kz-\omega t)\,\vec u_y,
 \qquad
 k = \frac{\omega}{c}.
 $$
-It has $I_1 = \vec E^2 - c^2\vec B^2 = 0$ and $I_2 = \vec E\cdot\vec B = 0$, so $N(\tilde F)=0$: it is a null field, and the pair $(I_1,2cI_2)$ is the zero pair, which any rotation fixes. The Riemann–Silberstein vector is
+It has $I_1 = \vec E^2 - c^2\vec B^2 = 0$ and $I_2 = \vec E\cdot\vec B = 0$, so $\langle\tilde F\rangle_{\natural}=0$: it is a null field, and the pair $(I_1,2cI_2)$ is the zero pair, which any rotation fixes. The Riemann–Silberstein vector is
 $$
-\vec V = E_0\cos(kz-\omega t)\left(\hat x + i\hat y\right),
+\vec N = E_0\cos(kz-\omega t)\left(\vec u_x + i\vec u_y\right),
 $$
 and duality gives
 $$
-\vec V' = e^{-i\theta}\vec V,
+\vec N' = \exp(-i\theta)\vec N,
 \qquad
-\vec E' = E_0\cos(kz-\omega t)\left(\cos\theta\,\hat x + \sin\theta\,\hat y\right),
+\vec E' = E_0\cos(kz-\omega t)\left(\cos\theta\,\vec u_x + \sin\theta\,\vec u_y\right),
 \qquad
-\vec B' = \frac{E_0}{c}\cos(kz-\omega t)\left(\cos\theta\,\hat y - \sin\theta\,\hat x\right).
+\vec B' = \frac{E_0}{c}\cos(kz-\omega t)\left(\cos\theta\,\vec u_y - \sin\theta\,\vec u_x\right).
 $$
-The wave remains a null plane wave with the same $W$ and the same $\vec S = cW\hat z$; the duality rotation simply rotates the direction of linear polarization. This is the second case that was not used to suggest the general invariant formula, and it agrees with it.
+The wave remains a null plane wave with the same $W$ and the same $\vec S = cW\vec u_z$; the duality rotation simply rotates the direction of linear polarization. This is the second case that was not used to suggest the general invariant formula, and it agrees with it.
 
 ## Problem 3: Duality as a Symmetry, With and Without Sources
 
@@ -209,56 +209,56 @@ $$
 = c^{-2}\partial_t\vec E\cos\theta + \frac{1}{c}\partial_t\vec B\sin\theta
 = c^{-2}\partial_t\vec E' .
 $$
-The divergence equations are preserved because the rotation is orthogonal and $\mathrm{div}$ is linear. So duality is a one-parameter symmetry of the source-free system. (It is also a symmetry of the Riemann–Silberstein equation $i\partial_t\vec V = c\,\mathrm{rot}\,\vec V$ and of $\mathrm{div}\,\vec V = 0$, since the phase is constant.)
+The divergence equations are preserved because the rotation is orthogonal and $\mathrm{div}$ is linear. So duality is a one-parameter symmetry of the source-free system. (It is also a symmetry of the Riemann–Silberstein equation $i\partial_t\vec N = c\,\mathrm{rot}\,\vec N$ and of $\mathrm{div}\,\vec N = 0$, since the phase is constant.)
 
 **One normalization point**, because it is easy to misread this as a vacuum-only statement. The rotation above carries the factor $c$ of the medium in the second term, which is the same as rescaling the magnetic field by the medium impedance, $c\vec B = Z\vec H$ with $Z = \sqrt{\mu/\epsilon}$. If instead one uses the *vacuum* normalization $\vec E\mapsto\vec E\cos\theta + \vec H\sin\theta$, with no factor $Z$, the computation above fails unless $Z = 1$, that is, unless the medium is **impedance matched**, $\epsilon = \mu$ in the units used. Both halves were checked by recomputation on random plane waves of a homogeneous medium ($\epsilon,\mu$ logarithmically uniform over three decades, arbitrary propagation direction and polarization, arbitrary angle): the impedance-rescaled rotation preserves all four equations ($3.6\times10^{-15}$), the unrescaled one does not ($1.7\times10^{1}$) and is exact again at $\epsilon = \mu$ ($3.6\times10^{-15}$). The rescaling is therefore part of the statement of the symmetry and not a free choice of units. It is also why $\vec E\leftrightarrow\vec H$ with $\epsilon\leftrightarrow\mu$ is the medium's *exact* substitution symmetry below: that discrete operation restores $Z$, whereas the continuous rotation must carry it from the outset.
 
-**Solution (b).** The source-free biquaternion equation is $\tilde\nabla\tilde F = 0$. Because $e^{-i\theta}$ is a constant central scalar, it commutes with $\tilde\nabla$ and with every biquaternion, so
+**Solution (b).** The source-free biquaternion equation is $\tilde\nabla\tilde F = 0$. Because $\exp(-i\theta)$ is a constant central scalar, it commutes with $\tilde\nabla$ and with every biquaternion, so
 $$
-\tilde\nabla\left(e^{-i\theta}\tilde F\right) = e^{-i\theta}\,\tilde\nabla\tilde F = 0 .
+\tilde\nabla\left(\exp(-i\theta)\tilde F\right) = \exp(-i\theta)\,\tilde\nabla\tilde F = 0 .
 $$
-The duality rotation is thus an internal $U(1)$ symmetry generated by the scalar imaginary $i$, not a spacetime symmetry. It cannot be absorbed into a Lorentz transformation: a Lorentz transformation preserves $N(\tilde F)$ exactly, whereas duality multiplies it by $e^{-2i\theta}$. This is the biquaternion form of the statement that duality is not a Lorentz transformation.
+The duality rotation is thus an internal $U(1)$ symmetry generated by the scalar imaginary $i$, not a spacetime symmetry. It cannot be absorbed into a Lorentz transformation: a Lorentz transformation preserves $\langle\tilde F\rangle_{\natural}$ exactly, whereas duality multiplies it by $\exp(-2i\theta)$. This is the biquaternion form of the statement that duality is not a Lorentz transformation.
 
 **Solution (c).** With sources, the equation is $\tilde\nabla\tilde F = -\tilde R$, where the electric source is
 $$
 \tilde R = \frac{i\rho}{\sqrt{\epsilon}}\,e_0 + \sqrt{\mu}\,\vec J \in \mathbb M_- .
 $$
-If $\tilde F\mapsto e^{-i\theta}\tilde F$ is to solve the sourced equation, the source must transform as $\tilde R\mapsto e^{-i\theta}\tilde R$, since
+If $\tilde F\mapsto \exp(-i\theta)\tilde F$ is to solve the sourced equation, the source must transform as $\tilde R\mapsto \exp(-i\theta)\tilde R$, since
 $$
-\tilde\nabla\left(e^{-i\theta}\tilde F\right) = -e^{-i\theta}\tilde R .
+\tilde\nabla\left(\exp(-i\theta)\tilde F\right) = -\exp(-i\theta)\tilde R .
 $$
-For $\theta\neq 0$ the transformed source is no longer purely electric: writing $e^{-i\theta}\tilde R = (\cos\theta - i\sin\theta)\tilde R$, its scalar part acquires a real piece and its vector part an imaginary piece. This is exactly the form of the magnetic contribution to the combined source introduced below, $i\tilde R_m = -\frac{\rho_m}{\sqrt{\mu}} + i\sqrt{\epsilon}\,\vec J_m$: a real scalar part is a magnetic charge density and an imaginary vector part is a magnetic current. Thus duality is not a symmetry of the electric-only sourced equations, and its completion requires magnetic charge. With a magnetic source $\tilde R_m = i\rho_m/\sqrt{\mu}\,e_0 + \sqrt{\epsilon}\,\vec J_m$ and the combined source $\tilde{\mathcal R} = \tilde R + i\tilde R_m$, the equation $\tilde\nabla\tilde F = -\tilde{\mathcal R}$ is duality covariant, and at $\theta = \pi/2$ the rotation exchanges electric and magnetic charge. This is developed in the companion article *The Magnetic Monopole in Biquaternionic Form*; the point here is only that the parent's statement — duality is a symmetry of the source-free equations and fails with electric sources — is correct, and that its failure is the appearance of magnetic charge, not an inconsistency.
+For $\theta\neq 0$ the transformed source is no longer purely electric: writing $\exp(-i\theta)\tilde R = (\cos\theta - i\sin\theta)\tilde R$, its scalar part acquires a real piece and its vector part an imaginary piece. This is exactly the form of the magnetic contribution to the combined source introduced below, $i\tilde R_m = -\frac{\rho_m}{\sqrt{\mu}} + i\sqrt{\epsilon}\,\vec J_m$: a real scalar part is a magnetic charge density and an imaginary vector part is a magnetic current. Thus duality is not a symmetry of the electric-only sourced equations, and its completion requires magnetic charge. With a magnetic source $\tilde R_m = i\rho_m/\sqrt{\mu}\,e_0 + \sqrt{\epsilon}\,\vec J_m$ and the combined source $\tilde{\mathcal R} = \tilde R + i\tilde R_m$, the equation $\tilde\nabla\tilde F = -\tilde{\mathcal R}$ is duality covariant, and at $\theta = \pi/2$ the rotation exchanges electric and magnetic charge. This is developed in the companion article *The Magnetic Monopole in Biquaternionic Form*; the point here is only that the parent's statement — duality is a symmetry of the source-free equations and fails with electric sources — is correct, and that its failure is the appearance of magnetic charge, not an inconsistency.
 
-The **elementary substitution symmetry** is the real-angle ancestor of this rotation. The classical Maxwell equations can be paired by the interchange of the electric and magnetic fields together with the interchange of the permittivity and the permeability, and the pairing fails for one reason only: the absence of magnetic charges and currents. The duality rotation is the continuous form of that interchange — under $\vec V\mapsto e^{-i\theta}\vec V$ the electric field rotates into $c\vec B$ and back — and at $\theta = \pi/2$ it becomes the exact substitution that the sources forbid. Removing the conditions $\rho_m = 0$ and $\vec J_m = 0$ is therefore not an embellishment but the minimal completion that makes the symmetry exact: with the combined source above the rotation is a symmetry of the *sourced* equation, and in Alexeyeva's A-field, $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde F$, the two source halves assemble into one complex current $\vec j$ of the single equation $-c^{-1}\partial_t\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \vec j$. The substitution symmetry and the duality rotation are thus one statement, the first discrete and the second continuous.
+The **elementary substitution symmetry** is the real-angle ancestor of this rotation. The classical Maxwell equations can be paired by the interchange of the electric and magnetic fields together with the interchange of the permittivity and the permeability, and the pairing fails for one reason only: the absence of magnetic charges and currents. The duality rotation is the continuous form of that interchange — under $\vec N\mapsto \exp(-i\theta)\vec N$ the electric field rotates into $c\vec B$ and back — and at $\theta = \pi/2$ it becomes the exact substitution that the sources forbid. Removing the conditions $\rho_m = 0$ and $\vec J_m = 0$ is therefore not an embellishment but the minimal completion that makes the symmetry exact: with the combined source above the rotation is a symmetry of the *sourced* equation, and in Alexeyeva's A-field, $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde F$, the two source halves assemble into one complex current $\vec j$ of the single equation $-c^{-1}\partial_t\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \vec j$. The substitution symmetry and the duality rotation are thus one statement, the first discrete and the second continuous.
 
 ## Problem 4: The Conjugate of the Riemann–Silberstein Vector, and a Notation Defect
 
-**Statement.** (a) Under duality $\vec V\mapsto e^{-i\theta}\vec V$, derive the transformation of the complex conjugate $\vec V^* = \vec E - ic\vec B$ and of the quaternion conjugate $\bar{\vec V}$. (b) The parent writes that "$\vec V$ and $\bar{\vec V}$ split the six real field components into two independent complex three-vectors" and that "$\bar{\vec V}\mapsto e^{+i\theta}\bar{\vec V}$". Test these statements against the conjugations declared in the parent's own conventions. (c) Show that $\vec V$ alone already carries the six real components of the field.
+**Statement.** (a) Under duality $\vec N\mapsto \exp(-i\theta)\vec N$, derive the transformation of the complex conjugate $\vec N^* = \vec E - ic\vec B$ and of the quaternion conjugate $\bar{\vec N}$. (b) The parent writes that "$\vec N$ and $\bar{\vec N}$ split the six real field components into two independent complex three-vectors" and that "$\bar{\vec N}\mapsto \exp(+i\theta)\bar{\vec N}$". Test these statements against the conjugations declared in the parent's own conventions. (c) Show that $\vec N$ alone already carries the six real components of the field.
 
-**Solution (a).** Complex conjugation of $\vec V' = e^{-i\theta}\vec V$ reverses the phase:
+**Solution (a).** Complex conjugation of $\vec N' = \exp(-i\theta)\vec N$ reverses the phase:
 $$
-\vec V'^* = \left(e^{-i\theta}\vec V\right)^* = e^{+i\theta}\,\vec V^* .
+\vec N'^* = \left(\exp(-i\theta)\vec N\right)^* = \exp(+i\theta)\,\vec N^* .
 $$
-The field-strength biquaternion is a pure vector, and quaternion conjugation of a pure vector negates it: $\bar{\vec V} = -\vec V$. Hence
+The field-strength biquaternion is a pure vector, and quaternion conjugation of a pure vector negates it: $\bar{\vec N} = -\vec N$. Hence
 $$
-\overline{\vec V'} = -\vec V' = -e^{-i\theta}\vec V = e^{-i\theta}\left(-\vec V\right) = e^{-i\theta}\,\bar{\vec V},
+\overline{\vec N'} = -\vec N' = -\exp(-i\theta)\vec N = \exp(-i\theta)\left(-\vec N\right) = \exp(-i\theta)\,\bar{\vec N},
 $$
-so the quaternion conjugate transforms with $e^{-i\theta}$, not with $e^{+i\theta}$.
+so the quaternion conjugate transforms with $\exp(-i\theta)$, not with $\exp(+i\theta)$.
 
-**Solution (b).** In the parent's conventions the symbol ${}^{\natural}$ is the quaternion conjugate and $\bar{\cdot}$ is the complex conjugate. Part (a) shows that the object whose duality image is $e^{+i\theta}$ times itself is the complex conjugate $\vec V^*$, not the quaternion conjugate $\bar{\vec V}$. As written, the parent's first displayed equation,
+**Solution (b).** In the parent's conventions the symbol ${}^{\natural}$ is the quaternion conjugate and $\bar{\cdot}$ is the complex conjugate. Part (a) shows that the object whose duality image is $\exp(+i\theta)$ times itself is the complex conjugate $\vec N^*$, not the quaternion conjugate $\bar{\vec N}$. As written, the parent's first displayed equation,
 $$
-\vec V \mapsto e^{-i\theta}\vec V,
-\qquad \bar{\vec V} \mapsto e^{+i\theta}\bar{\vec V},
+\vec N \mapsto \exp(-i\theta)\vec N,
+\qquad \bar{\vec N} \mapsto \exp(+i\theta)\bar{\vec N},
 $$
-is therefore inconsistent with its own declared notation: with $\bar{\vec V} = -\vec V$, the second transformation assigns to $-\vec V$ the value $-e^{+i\theta}\vec V$, whereas the first transformation and linearity assign to $-\vec V$ the value $-e^{-i\theta}\vec V$; the two agree only when the phase is trivial. The intended object is $\vec V^* = \vec E - ic\vec B$. This is a notational defect in the parent, not a defect of the physics of duality, and it is recorded here because a reader following the declared conventions cannot reproduce the displayed equation.
+is therefore inconsistent with its own declared notation: with $\bar{\vec N} = -\vec N$, the second transformation assigns to $-\vec N$ the value $-\exp(+i\theta)\vec N$, whereas the first transformation and linearity assign to $-\vec N$ the value $-\exp(-i\theta)\vec N$; the two agree only when the phase is trivial. The intended object is $\vec N^* = \vec E - ic\vec B$. This is a notational defect in the parent, not a defect of the physics of duality, and it is recorded here because a reader following the declared conventions cannot reproduce the displayed equation.
 
-The companion defect is the phrase "two independent complex three-vectors". A complex three-vector has three complex components, that is six real components, and it already carries the whole field: $\vec V = \vec E + ic\vec B$ is equivalent to the six real numbers $(\vec E,\vec B)$. The complex conjugate $\vec V^*$ is determined by $\vec V$ and adds no new data; for real fields $\vec V$ and $\vec V^*$ are not independent. The correct statement is that the complexified field space decomposes into the self-dual and anti-self-dual pieces, which are complex conjugates of one another, and on the real slice they are conjugate, not independent. The parent's "$\vec V$ and $\bar{\vec V}$" should be read as $\vec V$ and its complex conjugate, with the reality condition imposed.
+The companion defect is the phrase "two independent complex three-vectors". A complex three-vector has three complex components, that is six real components, and it already carries the whole field: $\vec N = \vec E + ic\vec B$ is equivalent to the six real numbers $(\vec E,\vec B)$. The complex conjugate $\vec N^*$ is determined by $\vec N$ and adds no new data; for real fields $\vec N$ and $\vec N^*$ are not independent. The correct statement is that the complexified field space decomposes into the self-dual and anti-self-dual pieces, which are complex conjugates of one another, and on the real slice they are conjugate, not independent. The parent's "$\vec N$ and $\bar{\vec N}$" should be read as $\vec N$ and its complex conjugate, with the reality condition imposed.
 
 **Solution (c).** Let $\vec E = (E_1,E_2,E_3)$ and $\vec B = (B_1,B_2,B_3)$ be real. Then
 $$
-\vec V = (E_1 + icB_1)\,e_1 + (E_2 + icB_2)\,e_2 + (E_3 + icB_3)\,e_3,
+\vec N = (E_1 + icB_1)\,e_1 + (E_2 + icB_2)\,e_2 + (E_3 + icB_3)\,e_3,
 $$
-whose three complex components are the six real components of $(\vec E,c\vec B)$. No information is lost and no second independent complex three-vector is needed. This is consistent with the fact that the parent defines $\tilde F = i\sqrt{\epsilon}\vec V$ to be the entire field strength: if a second independent complex three-vector were required, $\tilde F$ would not carry the full field.
+whose three complex components are the six real components of $(\vec E,c\vec B)$. No information is lost and no second independent complex three-vector is needed. This is consistent with the fact that the parent defines $\tilde F = i\sqrt{\epsilon}\vec N$ to be the entire field strength: if a second independent complex three-vector were required, $\tilde F$ would not carry the full field.
 
 ## Problem 5: The Lorentz Transformation of the Field Strength — a Gap in the Parent
 
@@ -272,7 +272,7 @@ The natural candidate for the field strength is the same conjugation,
 $$
 \tilde F \mapsto \tilde U\,\tilde F\,\tilde U^{*} .
 $$
-For a pure spatial rotation the rotor is a real quaternion, $\tilde U = \cos(\varphi/2) + \sin(\varphi/2)\,\hat u$, with $\tilde U^{*} = \tilde U^{-1}$. Take $\hat u = e_3$ and a field with $\vec E = E_0 e_1$, $\vec B = 0$, so $\tilde F = i\sqrt{\epsilon}E_0 e_1$. The standard rotation gives $\vec E' = E_0(\cos\varphi\,e_1 + \sin\varphi\,e_2)$, $\vec B'=0$, and indeed
+For a pure spatial rotation the rotor is a real quaternion, $\tilde U = \cos(\varphi/2) + \sin(\varphi/2)\,\vec u$, with $\tilde U^{*} = \tilde U^{-1}$. Take $\vec u = e_3$ and a field with $\vec E = E_0 e_1$, $\vec B = 0$, so $\tilde F = i\sqrt{\epsilon}E_0 e_1$. The standard rotation gives $\vec E' = E_0(\cos\varphi\,e_1 + \sin\varphi\,e_2)$, $\vec B'=0$, and indeed
 $$
 \tilde U\,e_1\,\tilde U^{*} = \cos\varphi\,e_1 + \sin\varphi\,e_2 ,
 $$
@@ -285,18 +285,18 @@ On a pure rotation the candidate works.
 **Solution (b).** Take now the pure boost along $e_3$ with the parent's boost biquaternion
 $$
 \tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,e_3,
-\qquad \tanh\psi = \frac{u}{c},
+\qquad \tanh\psi = \frac{v_b}{c},
 $$
 which is Hermitian, $\tilde U^{*} = \tilde U$. For simplicity set $\epsilon = \mu = 1$, so $c = 1$ and $\vec H = \vec B$, and take the same transverse electric field $\vec E = E_0 e_1$, $\vec B = 0$, so $\tilde F = iE_0 e_1$. The standard boost formulas of the parent give
 $$
-\vec E' = \gamma\left(\vec E + \vec u\times\vec B\right) - \frac{\gamma-1}{u^2}\left(\vec u\cdot\vec E\right)\vec u
+\vec E' = \gamma\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b
 = \cosh\psi\,E_0\,e_1,
 $$
 $$
-\vec B' = \gamma\left(\vec B - \frac{1}{c^2}\vec u\times\vec E\right) - \frac{\gamma-1}{u^2}\left(\vec u\cdot\vec B\right)\vec u
+\vec B' = \gamma\left(\vec B - \frac{1}{c^2}\vec v_b\times\vec E\right) - \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b
 = -\sinh\psi\,E_0\,e_2,
 $$
-using $\gamma = \cosh\psi$ and $\gamma u = \sinh\psi$, so
+using $\gamma = \cosh\psi$ and $\gamma v_b = \sinh\psi$, so
 $$
 \tilde F' = i\cosh\psi\,E_0\,e_1 + \sinh\psi\,E_0\,e_2 .
 $$
@@ -334,13 +334,13 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 1. **The general Lorentz law of $\tilde F$.** Determine the biquaternion map that reproduces the standard transformation of $\vec E$ and $\vec B$ for a general rotor (a boost composed with a rotation). Show whether it can be written as $\tilde F\mapsto T\!\left(\tilde U\,T^{-1}(\tilde F)\,\tilde U^{*}\right)$ for a fixed invertible linear map $T$ on $\mathrm{Vect}(\mathbb B)$, and identify $T$ if it exists. The exercise above shows only that $T$ is not the identity and that no single adjoint ordering works with the parents' rotors.
 
-2. **Duality and the gauge $U(1)$.** The gauge principle article identifies the centre of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $e^{-i\theta}$ of that same $U(1)$. Is the duality symmetry the same $U(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
+2. **Duality and the gauge $U(1)$.** The gauge principle article identifies the centre of $\mathbb B$ as $\mathbb C_{\mathbb B}$ and its unitary part as the abelian gauge group of the biquaternionic Maxwell field. The duality rotation here is multiplication by an element $\exp(-i\theta)$ of that same $U(1)$. Is the duality symmetry the same $U(1)$, a different one, or the same group acting on a different representation? The parent does not ask this; the answer is not obvious, because duality acts on the field strength and the gauge phase on the potential.
 
 3. **Duality and the energy–momentum tensor.** Using the construction of the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, show that $T^{\mu\nu}$ is invariant under duality, and explain why this is consistent with the invariance of $W$ and $\vec S$ but does not follow from it component by component.
 
 4. **Duality and the invariant classification.** Show that duality preserves the type of the field (null, electric, magnetic, generic) determined by $(I_1,I_2)$ in the parent's classification, and compute the orbit of the generic magnitudes $(E_0,B_0)$ under the doubled-angle rotation. Identify the duality angle that maps a purely electric field to a purely magnetic one, and the angle that leaves a given non-null field's type but reverses the sign of $I_1$.
 
-5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $e^{-i\theta}$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $ict$ gradient — are related in the complexified setting.
+5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $\exp(-i\theta)$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $ict$ gradient — are related in the complexified setting.
 
 6. **Duality and a deformed arena.** Everything above is a symmetry of Maxwell's equations in a linear *medium*, that is, in a commutative arena with a linear constitutive relation. Show that the rotation is not a symmetry when the coordinates cease to commute. The companion article *Maxwell's Theory on Non-Commutative Spaces and Quaternions* records exactly this for a fixed antisymmetric background $\vec\theta$: the potentials keep their form, but the dual transformation is broken by the $\vec\theta$-terms, and the breaking vanishes when $\vec\theta\to0$. Since the rotation is linear in the fields and the deformed equations are not, two questions follow. Is broken duality a *diagnostic* of the non-linearity, and could a non-linear theory retain the symmetry? The corpus's answer matters because it currently uses duality as a test of the arena and not of the dynamics.
 
@@ -352,11 +352,11 @@ $$
 \qquad
 \vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta,
 $$
-which is exactly $\vec V\mapsto e^{-i\theta}\vec V$ and, because $\tilde F = i\sqrt{\epsilon}\vec V$, exactly $\tilde F\mapsto e^{-i\theta}\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $U(1)$ symmetry and not a Lorentz transformation.
+which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i\sqrt{\epsilon}\vec N$, exactly $\tilde F\mapsto \exp(-i\theta)\tilde F$. The phase is the scalar imaginary $i$; it is central, so the rotation is an internal $U(1)$ symmetry and not a Lorentz transformation.
 
-Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\vec S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $N(\tilde F)\mapsto e^{-2i\theta}N(\tilde F)$, so the pair $(I_1,2cI_2)$ rotates by $2\theta$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla\tilde F = 0$; with electric sources alone it is not a symmetry, and its sourced completion requires magnetic charge, which is rotated into electric charge at $\theta = \pi/2$. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\vec E$ and $\vec H$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact and yields the A-field $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde F$, in which the two source halves combine into one complex current.
+Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\vec S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $\langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural}$, so the pair $(I_1,2cI_2)$ rotates by $2\theta$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla\tilde F = 0$; with electric sources alone it is not a symmetry, and its sourced completion requires magnetic charge, which is rotated into electric charge at $\theta = \pi/2$. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\vec E$ and $\vec H$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact and yields the A-field $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde F$, in which the two source halves combine into one complex current.
 
-Two defects in the parent are recorded. First, the parent's equation $\bar{\vec V}\mapsto e^{+i\theta}\bar{\vec V}$ uses the symbol $\bar{\vec V}$ for the complex conjugate, although the parent declares ${}^{\natural}$ to be quaternion conjugation; with that declaration $\bar{\vec V} = -\vec V$ and the displayed transformation is inconsistent. The object transforming as $e^{+i\theta}$ is $\vec V^* = \vec E - ic\vec B$, and $\vec V$ alone already carries the six real field components, so $\vec V$ and $\vec V^*$ are not independent. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde U\tilde F\tilde U^{*}$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\psi$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde U^{-1}\tilde F\tilde U$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
+Two defects in the parent are recorded. First, the parent's equation $\bar{\vec N}\mapsto \exp(+i\theta)\bar{\vec N}$ uses the symbol $\bar{\vec N}$ for the complex conjugate, although the parent declares ${}^{\natural}$ to be quaternion conjugation; with that declaration $\bar{\vec N} = -\vec N$ and the displayed transformation is inconsistent. The object transforming as $\exp(+i\theta)$ is $\vec N^* = \vec E - ic\vec B$, and $\vec N$ alone already carries the six real field components, so $\vec N$ and $\vec N^*$ are not independent. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde U\tilde F\tilde U^{*}$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\psi$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde U^{-1}\tilde F\tilde U$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
 
 ## Summary of Notation
 
@@ -373,10 +373,10 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\vec 
 | $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Permittivity, permeability, medium speed of light, vacuum speed of light |
-| $\vec V = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde F = i\sqrt{\epsilon}\vec V$ |
-| $\vec V^* = \vec E - ic\vec B$ | Complex conjugate of $\vec V$ |
+| $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde F = i\sqrt{\epsilon}\vec N$ |
+| $\vec N^* = \vec E - ic\vec B$ | Complex conjugate of $\vec N$ |
 | $\theta$ | Duality angle |
-| $N(\tilde F) = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
+| $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Lorentz invariants (scalar, pseudoscalar) |
 | $W = \tfrac12(\epsilon\vec E^2 + \mu\vec H^2)$, $\vec S = \vec E\times\vec H$ | Energy density, Poynting vector |
 | $\tilde F\tilde F^{*} = 2We_0 + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{M}_+$) |

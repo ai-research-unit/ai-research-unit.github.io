@@ -9,16 +9,16 @@ Two facts from the algebra organize the whole account, and they are worth statin
 **The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_0 + \vec x \in \mathbb{M}_-$, with $\vec x = x e_1 + y e_2 + z e_3$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = (ic\,dt)^2 + d\vec x^2 = -c^2dt^2 + d\vec x^2 .
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\,d\overline{\tilde{Q}} = (ic\,dt)^2 + d\vec x^2 = -c^2dt^2 + d\vec x^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article *Conventions in the Biquaternion Universe*, and no metric is introduced here beyond them.
 
-**The three causal types are the three signs of the biquaternion norm.** A displacement is timelike, null or spacelike according to whether $N$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*.
+**The three causal types are the three signs of the biquaternion norm.** A displacement is timelike, null or spacelike according to whether $\langle\cdot\rangle_{\natural}$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
 The article is organized as follows. The next section fixes the worldline and the proper time from the biquaternion norm. The third introduces the four-velocity and the rapidity. The fourth gives the four-momentum and the mass shell. The fifth treats composition of velocities. The sixth derives the free action and its equation of motion. The seventh takes the non-relativistic limit. The closing sections separate what the algebra supplies from what is transcribed, collect the open questions, and record the summary, the notation and the external literature.
 
-**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \varepsilon_{jkl}e_l$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the complex scalar line, the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities, as in the neighbouring articles. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Worldline and the Biquaternion Norm
 
@@ -37,19 +37,19 @@ $$
 whose biquaternion norm is
 
 $$
-N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = -c^2dt^2 + d\vec x^2 .
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\,d\overline{\tilde{Q}} = -c^2dt^2 + d\vec x^2 .
 $$
 
-Off the null set, $N(d\tilde{Q})$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
+Off the null set, $\langle d\tilde{Q}\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
 
 $$
-\boxed{\; c^2\,d\tau^2 = -\,N(d\tilde{Q}) = c^2dt^2 - d\vec x^2 \;}
+\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde{Q}\rangle_{\natural} = c^2dt^2 - d\vec x^2 \;}
 \qquad\Longrightarrow\qquad
 d\tau = dt\sqrt{1 - \frac{\vec v^2}{c^2}},
 \qquad \vec v = \frac{d\vec x}{dt} .
 $$
 
-The definition is real precisely when the worldline is timelike, $N(d\tilde{Q}) < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:
+The definition is real precisely when the worldline is timelike, $\langle d\tilde{Q}\rangle_{\natural} < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:
 
 $$
 \text{timelike: } N<0,
@@ -59,16 +59,16 @@ $$
 \text{spacelike: } N>0 .
 $$
 
-Two structural remarks. First, $d\tau$ is real and positive for a future-directed timelike curve, and it is a scalar under the rotor conjugation that implements the Lorentz group (the companion article *The Lorentz Transformation as a Biquaternionic Rotation*), because $N$ is preserved by that action; this is what makes it a usable parameter. Second, the definition is invariant under reparametrization, so a worldline carries a canonical affine parameter up to an additive constant, and it is by $d\tau$ that the four-velocity is normalized below.
+Two structural remarks. First, $d\tau$ is real and positive for a future-directed timelike curve, and it is a scalar under the rotor conjugation that implements the Lorentz group (the companion article *The Lorentz Transformation as a Biquaternionic Rotation*), because $\langle\cdot\rangle_{\natural}$ is preserved by that action; this is what makes it a usable parameter. Second, the definition is invariant under reparametrization, so a worldline carries a canonical affine parameter up to an additive constant, and it is by $d\tau$ that the four-velocity is normalized below.
 
-The curve is **causal** if $N(d\tilde{Q}) \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The curve is **causal** if $\langle d\tilde{Q}\rangle_{\natural} \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Four-Velocity and the Rapidity
 
 The **four-velocity** is the tangent with respect to proper time,
 
 $$
-\tilde{U} = \frac{d\tilde{Q}}{d\tau}
+\tilde{V} = \frac{d\tilde{Q}}{d\tau}
 = \frac{dt}{d\tau}\left(ic\,e_0 + \frac{d\vec x}{dt}\right)
 = \gamma\left(ic\,e_0 + \vec v\right),
 \qquad
@@ -78,18 +78,18 @@ $$
 It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_0$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:
 
 $$
-N(\tilde{U}) = \tilde{U}\,\overline{\tilde{U}}
+\langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\overline{\tilde{V}}
 = \gamma^2\left[(ic)^2 + \vec v^2\right]
 = \gamma^2\left(-c^2 + \vec v^2\right)
 = -c^2\gamma^2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
 $$
 
-The four-velocity is therefore a **unit timelike vector**: its tip runs over the future sheet of the hyperboloid $N(\tilde{U}) = -c^2$ inside $\mathbb{M}_-$.
+The four-velocity is therefore a **unit timelike vector**: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$ inside $\mathbb{M}_-$.
 
 The relation between the four-velocity and the ordinary velocity is worth reading as a statement about the algebra rather than about motion. The two real data $\gamma$ and $\vec v$ combine into one element of $\mathbb{M}_-$; the constraint $N = -c^2$ removes one real degree of freedom, leaving the three components of $\vec v$ as the independent data, exactly as it must. The time component is then not independent: it is fixed by the three-velocity through
 
 $$
-\mathrm{Sc}(\tilde{U}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
+\mathrm{Sc}(\tilde{V}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$
 
 It is convenient to parametrize the hyperboloid by the **rapidity** $\psi$, defined by
@@ -105,11 +105,11 @@ $$
 so that
 
 $$
-\tilde{U} = \cosh\psi\,(ic\,e_0) + \sinh\psi\,(c\,\hat u)
-= ic\cosh\psi\,e_0 + c\sinh\psi\,\hat u,
+\tilde{V} = \cosh\psi\,(ic\,e_0) + \sinh\psi\,(c\,\vec u)
+= ic\cosh\psi\,e_0 + c\sinh\psi\,\vec u,
 $$
 
-with $\hat u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $N(\tilde{U}) = -c^2$ reads $c^2(-\cosh^2\psi + \sinh^2\psi) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
+with $\vec u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ reads $c^2(-\cosh^2\psi + \sinh^2\psi) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
 
 $$
 \psi_{\mathrm{tot}} = \psi_1 + \psi_2,
@@ -124,7 +124,7 @@ which is the standard velocity-addition law and is reproduced by the rotor compo
 The **four-momentum** of a particle of rest mass $m$ is the four-velocity scaled by the mass,
 
 $$
-\tilde{P} = m\tilde{U} = \gamma m\left(ic\,e_0 + \vec v\right)
+\tilde{P} = m\tilde{V} = \gamma m\left(ic\,e_0 + \vec v\right)
 = i\,\frac{E}{c}\,e_0 + \vec p,
 \qquad
 E = \gamma mc^2,
@@ -135,23 +135,23 @@ $$
 so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{M}_-$. Its biquaternion norm is the **mass-shell relation**:
 
 $$
-\boxed{\; N(\tilde{P}) = \tilde{P}\,\overline{\tilde{P}} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
+\boxed{\; \langle\tilde{P}\rangle_{\natural} = \tilde{P}\,\overline{\tilde{P}} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
 \qquad\Longleftrightarrow\qquad
 E^2 = \vec p^2c^2 + m^2c^4 .
 $$
 
-This is one of the few places in the framework where an equation of physics is *identical* to an algebraic statement about the biquaternion norm: the mass shell is the level set $N(\tilde{P}) = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the biquaternion norm of the four-momentum; the massless case is where the biquaternion norm vanishes, which is the zero-divisor cone.
+This is one of the few places in the framework where an equation of physics is *identical* to an algebraic statement about the biquaternion norm: the mass shell is the level set $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, and the dispersion relation is its coordinate form. The rest mass is, up to the factor $-c^2$, the biquaternion norm of the four-momentum; the massless case is where the biquaternion norm vanishes, which is the zero-divisor cone.
 
 The geometric content is worth drawing out. In the four real coordinates $(E/c, p_x, p_y, p_z)$ the relation $E^2 = \vec p^2c^2 + m^2c^4$ is a two-sheeted hyperboloid, and only the future sheet $E \geq mc^2$ is the particle's. The four-momentum is future-directed and timelike:
 
 $$
-N(\tilde{P}) = -m^2c^2 < 0
+\langle\tilde{P}\rangle_{\natural} = -m^2c^2 < 0
 \qquad (m > 0),
 $$
 
-and the invariant $N(\tilde{P})$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $ict$ convention.
+and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $ict$ convention.
 
-Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $N(\tilde{P}) = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
+Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
 
 $$
 E = \gamma mc^2 = mc^2 + \tfrac12 m\vec v^2 + O(\vec v^4/c^2),
@@ -171,15 +171,15 @@ $$
 \tilde{\Lambda}\overline{\tilde{\Lambda}} = e_0,
 $$
 
-with $\tilde{\Lambda}$ a unit-norm biquaternion. Since the action is linear and preserves $N$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
+with $\tilde{\Lambda}$ a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
 
 $$
-\tilde{\Lambda}(\psi,\hat u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u,
+\tilde{\Lambda}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
 \tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{*} ,
 $$
 
-with $\psi$ the rapidity and $\hat u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{U}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{U}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ carries the four-velocity $\gamma(ic\,e_0+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\hat u$ to the rest four-velocity $ic\,e_0$.
+with $\psi$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ carries the four-velocity $\gamma(ic\,e_0+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\vec u$ to the rest four-velocity $ic\,e_0$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\psi_1$ and the second $\psi_2$ along the same direction, the product is the boost of rapidity $\psi_1+\psi_2$, and the composed velocity is
 
@@ -187,17 +187,17 @@ $$
 v_{\mathrm{tot}} = c\tanh(\psi_1+\psi_2) = \frac{v_1+v_2}{1+v_1v_2/c^2},
 $$
 
-which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\psi$ along $\hat u$ acts on the rest four-velocity as
+which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\psi$ along $\vec u$ acts on the rest four-velocity as
 
 $$
 \tilde{\Lambda}\,\bigl(ic\,e_0\bigr)\,\tilde{\Lambda}^{*}
 = ic\,e_0\,\tilde{\Lambda}^2
-= ic\left(\cosh\psi\,e_0 + i\sinh\psi\,\hat u\right)
-= ic\cosh\psi\,e_0 - c\sinh\psi\,\hat u
+= ic\left(\cosh\psi\,e_0 + i\sinh\psi\,\vec u\right)
+= ic\cosh\psi\,e_0 - c\sinh\psi\,\vec u
 = \gamma\left(ic\,e_0 - \vec v\right),
 $$
 
-using that $ic\,e_0$ is central, that $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a pure boost, and that $\tilde{\Lambda}^2 = \cosh\psi + i\sinh\psi\,\hat u$. The quaternion-conjugate rotor $\tilde{\Lambda}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat u$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_0+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
+using that $ic\,e_0$ is central, that $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a pure boost, and that $\tilde{\Lambda}^2 = \cosh\psi + i\sinh\psi\,\vec u$. The quaternion-conjugate rotor $\tilde{\Lambda}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_0+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
 
 For **non-collinear** boosts the rotors do not commute, and their product is not a pure boost: it is a boost together with a rotation. The rotation is the Thomas–Wigner rotation, and it is the group-theoretic statement that the boosts do not form a subgroup. It is not needed for the free particle's kinematics, and it is treated in its own right in the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; here it is enough to record that the free four-velocity composes by rotor multiplication, and that the composition is associative while the velocity addition it induces is not.
 
@@ -207,7 +207,7 @@ The action of a free relativistic particle is the invariant length of its worldl
 
 $$
 S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
-= -mc\int\sqrt{-N(d\tilde{Q})}
+= -mc\int\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}
 = -mc^2\int\frac{dt}{\gamma} .
 $$
 
@@ -231,7 +231,7 @@ $$
 \frac{d}{dt}\frac{\partial L}{\partial\vec v} - \frac{\partial L}{\partial\vec x} = \frac{d\vec p}{dt} = 0 ,
 $$
 
-so the free four-momentum $\tilde{P} = m\tilde{U}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
+so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
 
 $$
 \frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde{Q}}{d\tau^2} = 0 ,
@@ -239,14 +239,14 @@ $$
 
 the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article *Noether's Theorem in Biquaternionic Form* derives the charge from the translation invariance of this action.
 
-The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $N(d\tilde{Q})$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde{Q}\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Non-Relativistic Limit
 
 Expanding the four-velocity and the energy in powers of $\vec v^2/c^2$ recovers the non-relativistic description as the leading term of the algebra. The spatial part of the four-velocity is
 
 $$
-\tilde{U} = \gamma\left(ic\,e_0 + \vec v\right)
+\tilde{V} = \gamma\left(ic\,e_0 + \vec v\right)
 = ic\,e_0 + \vec v + O(\vec v^3/c^2),
 $$
 
@@ -276,14 +276,14 @@ $$
 so that
 
 $$
-N(\tilde{P}) = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 + O(v^4/c^2).
+\langle\tilde{P}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 + O(v^4/c^2).
 $$
 
 The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\vec v^2$ in $E$ and the momentum $\vec p = m\vec v$ are the two halves of the same invariant. The biquaternion norm does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* draws from the momentum-space side.
 
 ## What the Algebra Supplies and What It Transcribes
 
-**Supplied by the algebra.** The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $N$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $N(\tilde{U}) = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $N(\tilde{P}) = -m^2c^2$ is a level set of the algebra's own form.
+**Supplied by the algebra.** The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.
 
 **Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
@@ -297,7 +297,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 3. **The many-particle problem.** The four-velocity and four-momentum here are those of a single particle. The proper-time normalization does not sum across particles with different Lorentz factors; the multi-particle conservation statement requires the coordinate-time form of the companion article *Exercise: Four-Momentum Conservation in a Collision*, and a clean biquaternion many-body kinematics is not developed here.
 
-4. **Rest mass as a norm.** The identity $N(\tilde{P}) = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
+4. **Rest mass as a norm.** The identity $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
 
 5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{M}_-$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{M}_+$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and it is outside the scope of a classical kinematic account.
 
@@ -318,28 +318,28 @@ The relativistic particle is a timelike worldline in the material sector $\mathb
 $$
 \tilde{Q}(\tau) = ic\,t\,e_0 + \vec x,
 \qquad
-d\tau^2 = -\frac{1}{c^2}N(d\tilde{Q}) = dt^2 - \frac{d\vec x^2}{c^2},
+d\tau^2 = -\frac{1}{c^2}\langle d\tilde{Q}\rangle_{\natural} = dt^2 - \frac{d\vec x^2}{c^2},
 $$
 
 along which the four-velocity
 
 $$
-\tilde{U} = \frac{d\tilde{Q}}{d\tau} = \gamma\left(ic\,e_0 + \vec v\right),
+\tilde{V} = \frac{d\tilde{Q}}{d\tau} = \gamma\left(ic\,e_0 + \vec v\right),
 \qquad
 \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}},
 $$
 
-satisfies the unit-norm condition $N(\tilde{U}) = -c^2$. The four-momentum
+satisfies the unit-norm condition $\langle\tilde{V}\rangle_{\natural} = -c^2$. The four-momentum
 
 $$
-\tilde{P} = m\tilde{U} = i\,\frac{E}{c}\,e_0 + \vec p,
+\tilde{P} = m\tilde{V} = i\,\frac{E}{c}\,e_0 + \vec p,
 \qquad
 E = \gamma mc^2,
 \quad
 \vec p = \gamma m\vec v,
 $$
 
-satisfies the mass-shell relation $N(\tilde{P}) = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{U} = ic\cosh\psi\,e_0 + c\sinh\psi\,\hat u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
+satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{V} = ic\cosh\psi\,e_0 + c\sinh\psi\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
 S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
@@ -348,7 +348,7 @@ S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,d\overline{\tilde{Q}}}
 L(\vec v) = -\frac{mc^2}{\gamma},
 $$
 
-whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{U} = ic\,e_0 + \vec v$, $E = mc^2 + \vec p^2/2m$ and $N(\tilde{P}) = -m^2c^2 + O(v^4/c^2)$.
+whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{V} = ic\,e_0 + \vec v$, $E = mc^2 + \vec p^2/2m$ and $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 + O(v^4/c^2)$.
 
 The interval is the biquaternion norm, the mass shell is its level set, the causal trichotomy is its sign, and the frame transformation is a rotor conjugation; the rest is standard relativistic mechanics transcribed into the algebra.
 
@@ -361,16 +361,16 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (centre) |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*},\ {}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\tilde{Q} = ict\,e_0 + \vec x$ | Four-position, in $\mathbb{M}_-$ |
-| $d\tau^2 = -N(d\tilde{Q})/c^2$ | Proper time |
-| $\tilde{U} = \gamma(ic\,e_0 + \vec v)$, $N(\tilde{U}) = -c^2$ | Four-velocity, unit timelike |
+| $d\tau^2 = -\langle d\tilde{Q}\rangle_{\natural}/c^2$ | Proper time |
+| $\tilde{V} = \gamma(ic\,e_0 + \vec v)$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $\psi$, $v = c\tanh\psi$, $\gamma=\cosh\psi$ | Rapidity |
-| $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \vec p$ | Four-momentum |
+| $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$ | Four-momentum |
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
-| $N(\tilde{P}) = -m^2c^2$ | Mass-shell relation |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Boost rotor, in $\mathbb{M}_+$ |
+| $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Boost rotor, in $\mathbb{M}_+$ |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $S = -mc\int\sqrt{-d\tilde{Q}\,d\tilde{Q}^{\natural}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

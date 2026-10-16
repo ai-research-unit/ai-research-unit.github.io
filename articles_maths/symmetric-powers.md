@@ -54,10 +54,10 @@ $$
 \pi_n : M^n \longrightarrow \operatorname{Sym}^n M
 $$
 
-such that for every $R$-module $P$ and every symmetric multilinear map $f : M^n \to P$ there is a unique $R$-linear map $\tilde{f} : \operatorname{Sym}^n M \to P$ with
+such that for every $R$-module $P$ and every symmetric multilinear map $f : M^n \to P$ there is a unique $R$-linear map $f^{\mathrm{lin}} : \operatorname{Sym}^n M \to P$ with
 
 $$
-\tilde{f} \circ \pi_n = f .
+f^{\mathrm{lin}} \circ \pi_n = f .
 $$
 
 The map $\pi_n$ is the **defining map**, and the element $\pi_n(x_1, \ldots, x_n)$ is written $x_1 \cdots x_n$; it is a class modulo the submodule $J_n$ of relations constructed in the next section, not a tensor, and the notation with the product sign keeps the two apart. The universal property says that the symmetric powers corepresent symmetric multilinear maps:
@@ -110,7 +110,7 @@ Equivalently, $J_n$ is spanned by the images of the operators $\sigma - 1$, $\si
 
 *Proof.* Write $Q = M^{\otimes n}/J_n$ and let $q : M^{\otimes n} \to Q$ be the quotient map. The composite $\pi = q \circ \otimes^n$ is symmetric multilinear: it is multilinear because $\otimes^n$ is and $q$ is linear, and it is symmetric because $q$ kills every $J_n$, so $q(x_1 \otimes \cdots \otimes x_n) = q(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$.
 
-Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $\tilde f : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.
+Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $f^{\mathrm{lin}} : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.
 
 Thus the symmetric power is exactly the **module of coinvariants** of the permutation action,
 
@@ -161,12 +161,12 @@ and the natural map $(M^{\otimes n})^{S_n} \to \operatorname{Sym}^n M$ is an iso
 Assume now that $M$ is **free** of finite rank $d$ with basis $e_1, \ldots, e_d$. For a multi-index $a = (a_1, \ldots, a_d)$ with $a_i \geq 0$ and $|a| = a_1 + \cdots + a_d = n$, write
 
 $$
-e^a = e_1^{a_1} e_2^{a_2} \cdots e_d^{a_d} = \pi_n(\underbrace{e_1, \ldots, e_1}_{a_1}, \ldots, \underbrace{e_d, \ldots, e_d}_{a_d}) \in \operatorname{Sym}^n M.
+\exp(a) = e_1^{a_1} e_2^{a_2} \cdots e_d^{a_d} = \pi_n(\underbrace{e_1, \ldots, e_1}_{a_1}, \ldots, \underbrace{e_d, \ldots, e_d}_{a_d}) \in \operatorname{Sym}^n M.
 $$
 
-**Theorem.** If $M$ is free with basis $e_1, \ldots, e_d$, then $\operatorname{Sym}^n M$ is free with basis $\{e^a : |a| = n\}$.
+**Theorem.** If $M$ is free with basis $e_1, \ldots, e_d$, then $\operatorname{Sym}^n M$ is free with basis $\{\exp(a) : |a| = n\}$.
 
-*Proof.* The elements $e^a$ span. Indeed every elementary tensor $x_1 \otimes \cdots \otimes x_n$ is a sum of elementary tensors in the basis elements, and $\pi_n$ is multilinear, so its image is a sum of terms $e^a$; the images of the elementary tensors span the quotient, hence the $e^a$ span.
+*Proof.* The elements $\exp(a)$ span. Indeed every elementary tensor $x_1 \otimes \cdots \otimes x_n$ is a sum of elementary tensors in the basis elements, and $\pi_n$ is multilinear, so its image is a sum of terms $\exp(a)$; the images of the elementary tensors span the quotient, hence the $\exp(a)$ span.
 
 For independence, let $P_n = R[x_1, \ldots, x_d]_n$ be the degree-$n$ part of the polynomial algebra, a free module with basis the monomials $x^a$, $|a| = n$. The map
 
@@ -174,7 +174,7 @@ $$
 M^n \longrightarrow P_n, \qquad (u_1, \ldots, u_n) \longmapsto \prod_{j=1}^{n} \Bigl(\sum_{i=1}^{d} u_{j,i}  x_i\Bigr),
 $$
 
-where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{Sym}^n M \to P_n$ with $\Phi(e^a) = x^a$. In the other direction let $\psi : P_n \to \operatorname{Sym}^n M$ be the unique $R$-linear map on the basis with $\psi(x^a) = e^a$. Then $\Phi\psi = \operatorname{id}_{P_n}$ because it fixes the basis, and $\psi\Phi(e^a) = \psi(x^a) = e^a$ for every $a$, so $\psi\Phi = \operatorname{id}_{\operatorname{Sym}^n M}$ because the $e^a$ span. Hence $\Phi$ is an isomorphism and the $e^a$ are a basis.
+where $u_j = \sum_i u_{j,i} e_i$, is symmetric multilinear, so by the universal property it induces an $R$-linear map $\Phi : \operatorname{Sym}^n M \to P_n$ with $\Phi(\exp(a)) = x^a$. In the other direction let $\psi : P_n \to \operatorname{Sym}^n M$ be the unique $R$-linear map on the basis with $\psi(x^a) = \exp(a)$. Then $\Phi\psi = \operatorname{id}_{P_n}$ because it fixes the basis, and $\psi\Phi(\exp(a)) = \psi(x^a) = \exp(a)$ for every $a$, so $\psi\Phi = \operatorname{id}_{\operatorname{Sym}^n M}$ because the $\exp(a)$ span. Hence $\Phi$ is an isomorphism and the $\exp(a)$ are a basis.
 
 Equivalently, the map $R[x_1, \ldots, x_d] \to \operatorname{Sym}(R^d)$ sending $x_i \mapsto e_i$ is an isomorphism of graded algebras; this identification is developed.
 
@@ -204,10 +204,10 @@ The entries are the binomial coefficients $\binom{n+d-1}{d-1}$, the **multiset c
 When $M$ is free, an element of $\operatorname{Sym}^n M$ has a coordinate description. Fix a basis and write $x_j = \sum_i x_{j,i} e_i$ for $j = 1, \ldots, n$. Expanding the product and grouping the terms by the multiplicities of the basis elements,
 
 $$
-x_1 \cdots x_n = \sum_{|a| = n} \Bigl(\sum_{\substack{(i_1, \ldots, i_n) \in \{1, \ldots, d\}^n \\ \#\{j : i_j = i\} = a_i}} \ \prod_{j=1}^{n} x_{j,i_j}\Bigr) e^a .
+x_1 \cdots x_n = \sum_{|a| = n} \Bigl(\sum_{\substack{(i_1, \ldots, i_n) \in \{1, \ldots, d\}^n \\ \#\{j : i_j = i\} = a_i}} \ \prod_{j=1}^{n} x_{j,i_j}\Bigr) \exp(a) .
 $$
 
-The inner sum runs over the ordered $n$-tuples of basis indices with multiplicity vector $a$; such a tuple is determined by choosing, for each $i$, the $a_i$ positions carrying the index $i$, so there are $\binom{n}{a} = n!/\prod_i a_i!$ of them. This is the coordinate form of the monomial basis, and it is the reason symmetric powers are often called **polynomial modules**: the element $x_1 \cdots x_n$ is the degree-$n$ polynomial form in the $n$ vectors, and $e^a$ is the monomial $\prod_i y_i^{a_i}$ in the dual coordinates.
+The inner sum runs over the ordered $n$-tuples of basis indices with multiplicity vector $a$; such a tuple is determined by choosing, for each $i$, the $a_i$ positions carrying the index $i$, so there are $\binom{n}{a} = n!/\prod_i a_i!$ of them. This is the coordinate form of the monomial basis, and it is the reason symmetric powers are often called **polynomial modules**: the element $x_1 \cdots x_n$ is the degree-$n$ polynomial form in the $n$ vectors, and $\exp(a)$ is the monomial $\prod_i y_i^{a_i}$ in the dual coordinates.
 
 **Example.** For $d = 2$, $n = 2$, and $M = R^2$ with basis $e_1, e_2$, a basis of $\operatorname{Sym}^2 M$ is $e_1^2, e_1 e_2, e_2^2$, and $(c e_1 + d e_2)^2 = c^2 e_1^2 + 2cd\, e_1 e_2 + d^2 e_2^2$, matching the binomial expansion.
 
@@ -227,7 +227,7 @@ $$
 \operatorname{Sym}^n u : \operatorname{Sym}^n M \to \operatorname{Sym}^n N, \qquad x_1 \cdots x_n \mapsto u(x_1) \cdots u(x_n).
 $$
 
-This assignment is functorial: $\operatorname{Sym}^n(\operatorname{id}_M) = \operatorname{id}_{\operatorname{Sym}^n M}$ and $\operatorname{Sym}^n(v \circ u) = \operatorname{Sym}^n v \circ \operatorname{Sym}^n u$, both by uniqueness. So $\operatorname{Sym}^n$ is a functor from $R$-modules to $R$-modules. For $n \geq 2$ it is not additive: it does not send $M \oplus N$ to $\operatorname{Sym}^n M \oplus \operatorname{Sym}^n N$ but to the tensor-product decomposition of the next theorem, and it does not preserve sums of maps either, since for $M = N = R$ with $u = v = \operatorname{id}_R$ the map $\operatorname{Sym}^2(u+v)$ is multiplication by $4$ on $\operatorname{Sym}^2 R \cong R$ while $\operatorname{Sym}^2 u + \operatorname{Sym}^2 v$ is multiplication by $2$. Nor is it left or right exact in general. On free modules of finite rank it is given on bases by the rule $e^a \mapsto u(e_1)^{a_1} \cdots u(e_d)^{a_d}$.
+This assignment is functorial: $\operatorname{Sym}^n(\operatorname{id}_M) = \operatorname{id}_{\operatorname{Sym}^n M}$ and $\operatorname{Sym}^n(v \circ u) = \operatorname{Sym}^n v \circ \operatorname{Sym}^n u$, both by uniqueness. So $\operatorname{Sym}^n$ is a functor from $R$-modules to $R$-modules. For $n \geq 2$ it is not additive: it does not send $M \oplus N$ to $\operatorname{Sym}^n M \oplus \operatorname{Sym}^n N$ but to the tensor-product decomposition of the next theorem, and it does not preserve sums of maps either, since for $M = N = R$ with $u = v = \operatorname{id}_R$ the map $\operatorname{Sym}^2(u+v)$ is multiplication by $4$ on $\operatorname{Sym}^2 R \cong R$ while $\operatorname{Sym}^2 u + \operatorname{Sym}^2 v$ is multiplication by $2$. Nor is it left or right exact in general. On free modules of finite rank it is given on bases by the rule $\exp(a) \mapsto u(e_1)^{a_1} \cdots u(e_d)^{a_d}$.
 
 ### Direct Sums and the Symmetric Binomial Theorem
 
@@ -267,7 +267,7 @@ the degree-$n$ part of the polynomial algebra in $d$ variables, and the product 
 
 Over a general commutative ring a module need not be free, and then $\operatorname{Sym}^n M$ need not be free; it need not have a basis and need not have a well-defined rank. The quotient construction of the theorem above nevertheless applies verbatim, and all the structural statements — the universal property, functoriality, the direct-sum decomposition — remain valid. What is lost is the dimension formula, which is a statement about free modules.
 
-**Example.** Let $R = \mathbb{Z}$ and $M = \mathbb{Z}/m\mathbb{Z}$, with $e$ the image of $1$. Tensoring the presentation $\mathbb{Z} \xrightarrow{m} \mathbb{Z} \to \mathbb{Z}/m\mathbb{Z} \to 0$ with itself gives $M^{\otimes 2} \cong \mathbb{Z}/m\mathbb{Z}$, generated by $e \otimes e$; the swap fixes $e\otimes e$ and therefore acts as the identity on this cyclic module, so $J_2 = 0$ and $\operatorname{Sym}^2(\mathbb{Z}/m\mathbb{Z}) \cong \mathbb{Z}/m\mathbb{Z}$. In general $\operatorname{Sym}^n(\mathbb{Z}/m\mathbb{Z}) \cong \mathbb{Z}/m\mathbb{Z}$ for $n \geq 1$, since every permutation fixes $e^{\otimes n}$.
+**Example.** Let $R = \mathbb{Z}$ and $M = \mathbb{Z}/m\mathbb{Z}$, with $e$ the image of $1$. Tensoring the presentation $\mathbb{Z} \xrightarrow{m} \mathbb{Z} \to \mathbb{Z}/m\mathbb{Z} \to 0$ with itself gives $M^{\otimes 2} \cong \mathbb{Z}/m\mathbb{Z}$, generated by $e \otimes e$; the swap fixes $e\otimes e$ and therefore acts as the identity on this cyclic module, so $J_2 = 0$ and $\operatorname{Sym}^2(\mathbb{Z}/m\mathbb{Z}) \cong \mathbb{Z}/m\mathbb{Z}$. In general $\operatorname{Sym}^n(\mathbb{Z}/m\mathbb{Z}) \cong \mathbb{Z}/m\mathbb{Z}$ for $n \geq 1$, since every permutation fixes $\exp(\otimes n)$.
 
 ### The Canonical Maps
 
@@ -286,7 +286,7 @@ $$
 \operatorname{Hom}_R(\operatorname{Sym}^n M, P) \cong \operatorname{SymMult}_R(M^n; P).
 $$
 
-It is unique up to a unique isomorphism, with $\operatorname{Sym}^0 M = R$ and $\operatorname{Sym}^1 M = M$. It is constructed as the quotient of the tensor power by the submodule generated by the differences $x_1 \otimes \cdots \otimes x_n - x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)}$, that is, as the module of **coinvariants** of the permutation action of $S_n$ on $M^{\otimes n}$. It agrees with the module of **invariants** (the symmetric tensors) precisely when $n!$ is invertible in $R$, via the symmetrisation operator $\frac{1}{n!}\sum_\sigma \sigma$; when $n!$ fails to be invertible the two differ, and the characteristic-2 example $M = \mathbb{F}_2^2$, $n = 2$ exhibits the failure. The symmetric powers form a functor, and they convert direct sums into tensor products by the symmetric binomial theorem. If $M$ is free of rank $d$ then $\operatorname{Sym}^n M$ is free of rank $\binom{n+d-1}{d-1}$ with monomial basis $e^a$, $|a| = n$; over a general ring this basis may not exist.
+It is unique up to a unique isomorphism, with $\operatorname{Sym}^0 M = R$ and $\operatorname{Sym}^1 M = M$. It is constructed as the quotient of the tensor power by the submodule generated by the differences $x_1 \otimes \cdots \otimes x_n - x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)}$, that is, as the module of **coinvariants** of the permutation action of $S_n$ on $M^{\otimes n}$. It agrees with the module of **invariants** (the symmetric tensors) precisely when $n!$ is invertible in $R$, via the symmetrisation operator $\frac{1}{n!}\sum_\sigma \sigma$; when $n!$ fails to be invertible the two differ, and the characteristic-2 example $M = \mathbb{F}_2^2$, $n = 2$ exhibits the failure. The symmetric powers form a functor, and they convert direct sums into tensor products by the symmetric binomial theorem. If $M$ is free of rank $d$ then $\operatorname{Sym}^n M$ is free of rank $\binom{n+d-1}{d-1}$ with monomial basis $\exp(a)$, $|a| = n$; over a general ring this basis may not exist.
 
 ## Summary of Notation
 
@@ -303,7 +303,7 @@ It is unique up to a unique isomorphism, with $\operatorname{Sym}^0 M = R$ and $
 | $(M^{\otimes n})^{S_n}$ | Symmetric tensors, the invariant submodule |
 | $(M^{\otimes n})_{S_n}$ | Coinvariants, isomorphic to $\operatorname{Sym}^n M$ |
 | $s_n = \frac{1}{n!}\sum_{\sigma \in S_n} \sigma$ | Symmetrisation operator, defined when $n!$ is invertible |
-| $e^a = e_1^{a_1} \cdots e_d^{a_d}$ | Monomial basis of $\operatorname{Sym}^n M$ for $M$ free |
+| $\exp(a) = e_1^{a_1} \cdots e_d^{a_d}$ | Monomial basis of $\operatorname{Sym}^n M$ for $M$ free |
 | $\operatorname{Sym}^n u$ | Induced map on symmetric powers |
 | $\operatorname{SymMult}_R(M^n; P)$ | Symmetric $n$-multilinear maps $M^n \to P$ |
 | $\operatorname{Sym}(M)$ | Symmetric algebra, $\bigoplus_{n\geq 0}\operatorname{Sym}^n M$ |

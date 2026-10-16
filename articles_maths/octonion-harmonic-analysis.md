@@ -16,8 +16,8 @@ The article is the octonion member of the harmonic analysis slots of this Part a
 **Definition.** For $f\in L^1(\mathbb{R}^8,\mathbb{O})$ the **Fourier transform** is
 
 $$
-\hat f(\xi) = \int_{\mathbb{R}^8}f(o)\,e^{-i\langle \xi,o\rangle}\,do , \qquad
-f(o) = \frac{1}{(2\pi)^8}\int_{\mathbb{R}^8}\hat f(\xi)\,e^{i\langle \xi,o\rangle}\,d\xi ,
+(\mathcal F f)(\xi) = \int_{\mathbb{R}^8}f(o)\,\exp(-i\langle \xi,o\rangle)\,do , \qquad
+f(o) = \frac{1}{(2\pi)^8}\int_{\mathbb{R}^8}(\mathcal F f)(\xi)\,\exp(i\langle \xi,o\rangle)\,d\xi ,
 $$
 
 the second display being the inversion formula, and the **convolution** of $f,g\in L^1$ is
@@ -26,24 +26,24 @@ $$
 (f*g)(o) = \int_{\mathbb{R}^8}f(o-p)\,g(p)\,dp .
 $$
 
-**Proposition.** The transform is well defined for $f\in L^1$, is $\mathbb{R}$-linear, and is $\mathbb{C}$-linear if $f$ is taken with values in the complexified algebra $\mathbb{O}_{\mathbb{C}}$; it commutes with multiplication by a constant on the left, $\widehat{af} = a\hat f$, and on the right, $\widehat{fa} = \hat f a$, for constant $a\in\mathbb{O}$; it preserves the Schwartz class and extends to an isometry of $L^2$ up to the constant $(2\pi)^{-4}$, so that the Plancherel identity
+**Proposition.** The transform is well defined for $f\in L^1$, is $\mathbb{R}$-linear, and is $\mathbb{C}$-linear if $f$ is taken with values in the complexified algebra $\mathbb{O}_{\mathbb{C}}$; it commutes with multiplication by a constant on the left, $\widehat{af} = a\mathcal F f$, and on the right, $\widehat{fa} = \mathcal F f a$, for constant $a\in\mathbb{O}$; it preserves the Schwartz class and extends to an isometry of $L^2$ up to the constant $(2\pi)^{-4}$, so that the Plancherel identity
 
 $$
-\int_{\mathbb{R}^8}\lvert f\rvert^2do = \frac{1}{(2\pi)^8}\int_{\mathbb{R}^8}\lvert\hat f\rvert^2d\xi
+\int_{\mathbb{R}^8}\lvert f\rvert^2do = \frac{1}{(2\pi)^8}\int_{\mathbb{R}^8}\lvert\mathcal F f\rvert^2d\xi
 $$
 
-holds, and the Parseval form $\int f g^{\natural}\,do = (2\pi)^{-8}\int\hat f\overline{\hat g}\,d\xi$.
+holds, and the Parseval form $\int f g^{\natural}\,do = (2\pi)^{-8}\int\mathcal F f\overline{\mathcal F g}\,d\xi$.
 
-*Proof.* The phase $e^{-i\langle\xi,o\rangle}$ is a scalar, hence central, so it may be placed anywhere in a product; the transform is therefore the componentwise complex Fourier transform of the eight components, and the classical theory applies to each of them. Linearity is componentwise, and the isometry is the classical Plancherel theorem in dimension eight.
+*Proof.* The phase $\exp(-i\langle\xi,o\rangle)$ is a scalar, hence central, so it may be placed anywhere in a product; the transform is therefore the componentwise complex Fourier transform of the eight components, and the classical theory applies to each of them. Linearity is componentwise, and the isometry is the classical Plancherel theorem in dimension eight.
 
-The one structural point is the centrality of the phase: because $e^{-i\langle\xi,o\rangle}$ is a scalar, the transform does not disturb the order of the octonion factors of a function, and this is the reason why the theory below survives the failure of associativity while the product formulae do not.
+The one structural point is the centrality of the phase: because $\exp(-i\langle\xi,o\rangle)$ is a scalar, the transform does not disturb the order of the octonion factors of a function, and this is the reason why the theory below survives the failure of associativity while the product formulae do not.
 
 ### The Convolution Theorem
 
 **Theorem.** For $f,g\in L^1(\mathbb{R}^8,\mathbb{O})$ the convolution is defined almost everywhere, is associative as a product of **functions** (the bracketing of the integral is that of the definition), and satisfies the convolution theorem
 
 $$
-\widehat{f*g}(\xi) = \hat f(\xi)\,\hat g(\xi) , \qquad \xi\in\mathbb{R}^8 ,
+\widehat{f*g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi) , \qquad \xi\in\mathbb{R}^8 ,
 $$
 
 with the octonion product on the right; consequently $\widehat{f*g} = \widehat{g*f}$ only when the transforms commute, and the identity of the two transforms corresponds to the identity of the algebraic product of the transforms.
@@ -51,17 +51,17 @@ with the octonion product on the right; consequently $\widehat{f*g} = \widehat{g
 *Proof.* Both sides are absolutely convergent. Substituting $r = o-p$ in the integral and using the centrality of the phase,
 
 $$
-\widehat{f*g}(\xi) = \int\int f(r)\,g(p)\,e^{-i\langle\xi,r+p\rangle}\,dp\,dr
-= \left(\int f(r)e^{-i\langle\xi,r\rangle}dr\right)\left(\int g(p)e^{-i\langle\xi,p\rangle}dp\right),
+\widehat{f*g}(\xi) = \int\int f(r)\,g(p)\,\exp(-i\langle\xi,r+p\rangle)\,dp\,dr
+= \left(\int f(r)\exp(-i\langle\xi,r\rangle)dr\right)\left(\int g(p)\exp(-i\langle\xi,p\rangle)dp\right),
 $$
 
 the step being legitimate because the phase is scalar and the two integrals are limits of finite sums of octonions, which multiply bilinearly. No associativity is used: the product on the right involves only the two limits.
 
 The convolution theorem therefore holds with no modification, and this is not an accident: the convolution is a sum of products in which the two factors enter in a fixed order, the order of the integrand $f(o-p)g(p)$, and the scalar phase factorises. What fails is the dual statement:
 
-**Theorem (failure of the product theorem).** For $f,g\in L^1\cap L^2$ there is no formula expressing $\widehat{fg}$ through $\hat f$ and $\hat g$ alone, and the classical identity $\widehat{fg} = (2\pi)^{-8}\,\hat f*\hat g$ fails in general.
+**Theorem (failure of the product theorem).** For $f,g\in L^1\cap L^2$ there is no formula expressing $\widehat{fg}$ through $\mathcal F f$ and $\mathcal F g$ alone, and the classical identity $\widehat{fg} = (2\pi)^{-8}\,\mathcal F f*\mathcal F g$ fails in general.
 
-*Proof.* The classical proof of the product theorem for the Fourier transform is the convolution theorem applied twice, or a direct computation which for the transform of the product would require the interchange of the roles of $o$ and $\xi$ with the product $f(o)g(o)$; in the octonionic case the direct computation produces terms in which the scalar phase is interleaved with the product $f(o)g(o)$, and the correction terms are exactly the associator corrections of the product rule of *Octonion Analysis*: the difference between $\widehat{fg}$ and $(2\pi)^{-8}\hat f*\hat g$ is a sum of integrals of associators and does not vanish identically.
+*Proof.* The classical proof of the product theorem for the Fourier transform is the convolution theorem applied twice, or a direct computation which for the transform of the product would require the interchange of the roles of $o$ and $\xi$ with the product $f(o)g(o)$; in the octonionic case the direct computation produces terms in which the scalar phase is interleaved with the product $f(o)g(o)$, and the correction terms are exactly the associator corrections of the product rule of *Octonion Analysis*: the difference between $\widehat{fg}$ and $(2\pi)^{-8}\mathcal F f*\mathcal F g$ is a sum of integrals of associators and does not vanish identically.
 
 The asymmetry between the convolution theorem and the failure of the product theorem is the harmonic-analytic face of the whole non-associative theory: the transform is well behaved on the **linear** structure (sums, convolution, multiplication by constants) and fails on the **multiplicative** structure, precisely where the Leibniz rule of the differential calculus also fails.
 
@@ -70,7 +70,7 @@ The asymmetry between the convolution theorem and the failure of the product the
 **Theorem.** Let $\mathcal{F}$ denote the transform in the **unitary** normalisation,
 
 $$
-(\mathcal{F}f)(\xi) = \frac{1}{(2\pi)^4}\int_{\mathbb{R}^8}f(o)e^{-i\langle\xi,o\rangle}do ,
+(\mathcal{F}f)(\xi) = \frac{1}{(2\pi)^4}\int_{\mathbb{R}^8}f(o)\exp(-i\langle\xi,o\rangle)do ,
 $$
 
 so that $\mathcal{F}$ is an isometry of $L^2$. Then for $f$ of Schwartz class
@@ -83,7 +83,7 @@ and equality is attained exactly for the functions $f(o) = c\exp(-\alpha\lvert o
 
 *Proof.* Both integrals are sums of the eight componentwise integrals, and the classical Heisenberg inequality in $n$ variables, with the unitary normalisation, gives the constant $n^2/4$; here $n = 8$, so $n^2/4 = 16$. The extremals are the Gaussians with a constant octonion factor, which satisfy the componentwise equality conditions.
 
-**Proposition.** The group of automorphisms $G_2 = \operatorname{Aut}(\mathbb{O})$ acts on functions by $(g\cdot f)(o) = g(f(g^{-1}o))$, and this action commutes with the Fourier transform: $\widehat{g\cdot f} = g\cdot\hat f$. Consequently the transform is equivariant for the action of the rotations of $G_2\subset SO(7)$ on the imaginary part and is diagonal on the isotypical components of the representation of $G_2$ on functions.
+**Proposition.** The group of automorphisms $G_2 = \operatorname{Aut}(\mathbb{O})$ acts on functions by $(g\cdot f)(o) = g(f(g^{-1}o))$, and this action commutes with the Fourier transform: $\widehat{g\cdot f} = g\cdot\mathcal F f$. Consequently the transform is equivariant for the action of the rotations of $G_2\subset SO(7)$ on the imaginary part and is diagonal on the isotypical components of the representation of $G_2$ on functions.
 
 *Proof.* The multiplication is $G_2$-invariant and the norm is too, so $g\in G_2$ preserves the inner product $\langle\xi,o\rangle$ used in the phase; the transform therefore intertwines the action. The equivariance statement is the standard commutation of a symmetry of the Euclidean structure with the Fourier transform.
 
@@ -133,7 +133,7 @@ where $J_3$ is the Bessel function of the first kind of order $3 = \frac{n}{2}-1
 
 *Proof.* The transform commutes with the rotations of $\operatorname{Im}\mathbb{O}$ by the equivariance proposition, and those rotations are transitive on the spheres of the imaginary part; the axial symmetry is therefore preserved, and the transform is determined by its values on the positive imaginary axis. For the radial case the classical formula in $n$ dimensions is $\widehat{f_0}(\xi) = (2\pi)^{n/2}\rho^{-(n/2-1)}\int_0^{\infty}w(r)J_{n/2-1}(\rho r)r^{n/2}dr$ with $\rho = \lvert\xi\rvert$; with $n = 8$ this is the display. The details are the standard theory of the Hankel transform.
 
-**Corollary.** The kernel $E$ is axial, with profiles $u = o_0\lvert o\rvert^{-8}$ and $v = -\lvert\vec o\rvert\lvert o\rvert^{-8}$; its transform is axial and, since $E$ is homogeneous of degree $-7$ and the transform of a homogeneous function of degree $\lambda$ in dimension $n$ is homogeneous of degree $-\lambda-n$, the transform $\hat E$ is homogeneous of degree $-15$ away from the origin. The axial class is closed under the Fourier transform, since the transform preserves the rotational symmetry of the imaginary part.
+**Corollary.** The kernel $E$ is axial, with profiles $u = o_0\lvert o\rvert^{-8}$ and $v = -\lvert\vec o\rvert\lvert o\rvert^{-8}$; its transform is axial and, since $E$ is homogeneous of degree $-7$ and the transform of a homogeneous function of degree $\lambda$ in dimension $n$ is homogeneous of degree $-\lambda-n$, the transform $\mathcal F E$ is homogeneous of degree $-15$ away from the origin. The axial class is closed under the Fourier transform, since the transform preserves the rotational symmetry of the imaginary part.
 
 The axial class is the maximal class of functions on which the octonionic harmonic analysis reduces to a classical transform of one variable, and the reason is the transitivity of $SO(7)$ on the imaginary spheres, a transitivity which the group of automorphisms $G_2$ shares: the octonionic symmetry group is a subgroup of $SO(7)$ acting transitively on $S^6$, and it is $G_2$ that preserves the multiplication among all the rotations.
 
@@ -152,7 +152,7 @@ The same list read in the opposite direction is a description of what the octoni
 
 ## Summary
 
-For $f\in L^1(\mathbb{R}^8,\mathbb{O})$ the Fourier transform $\hat f(\xi) = \int f(o)e^{-i\langle\xi,o\rangle}do$, with the adjoined central scalar unit $i$, is the componentwise classical transform and satisfies the inversion formula, the Plancherel and Parseval identities, and the uncertainty relation; it commutes with multiplication by constants on either side, and it commutes with the action of $G_2$. The convolution theorem $\widehat{f*g} = \hat f\hat g$ holds unchanged, because the convolution fixes the order of its two factors and the phase is scalar; the product theorem fails, and the failure is measured by integrals of associators, exactly as the Leibniz rule fails in the differential calculus.
+For $f\in L^1(\mathbb{R}^8,\mathbb{O})$ the Fourier transform $(\mathcal F f)(\xi) = \int f(o)\exp(-i\langle\xi,o\rangle)do$, with the adjoined central scalar unit $i$, is the componentwise classical transform and satisfies the inversion formula, the Plancherel and Parseval identities, and the uncertainty relation; it commutes with multiplication by constants on either side, and it commutes with the action of $G_2$. The convolution theorem $\widehat{f*g} = \mathcal F f\mathcal F g$ holds unchanged, because the convolution fixes the order of its two factors and the phase is scalar; the product theorem fails, and the failure is measured by integrals of associators, exactly as the Leibniz rule fails in the differential calculus.
 
 The spherical layer consists of the orthogonal decomposition $L^2(S^7) = \bigoplus_k\mathcal{H}_k$ of the harmonic polynomials, of eigenvalue $-k(k+6)$ for the spherical Laplacian, and of the monogenic subspaces $\mathcal{P}_k\subset\mathcal{H}_k$, whose real dimensions agree with the associative count $8\bigl[\binom{k+7}{7}-\binom{k+5}{7}\bigr]$-type while their module structure does not exist, because the monogenic functions are not a module over the octonions. The Cauchy kernel realises the Taylor expansion, and the finite-energy monogenic functions form a real Hilbert space with a unitary $G_2$-action. On the axial class the transform reduces to the eight-dimensional Hankel transform with the Bessel function $J_3$, so that the largest class of octonionic functions on which the harmonic analysis is a one-variable theory is the class of functions of $o_0$ and $\lvert\vec o\rvert$.
 
@@ -162,7 +162,7 @@ The spherical layer consists of the orthogonal decomposition $L^2(S^7) = \bigopl
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra and basis, $e_k^2 = -e_0$ for $k\geq1$ |
 | $\mathbb{O}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$ | Complexified octonions, central adjoined unit $i$ |
-| $\hat f(\xi) = \int f(o)e^{-i\langle\xi,o\rangle}do$ | Fourier transform with scalar phase |
+| $(\mathcal F f)(\xi) = \int f(o)\exp(-i\langle\xi,o\rangle)do$ | Fourier transform with scalar phase |
 | $(f*g)(o) = \int f(o-p)g(p)dp$ | Convolution, octonion product of the factors |
 | $\mathcal{H}_k$, $\mathcal{P}_k$ | Harmonic and monogenic homogeneous polynomials of degree $k$ |
 | $L^2(S^7)$, $-k(k+6)$ | Sphere functions; eigenvalue of the spherical Laplacian |

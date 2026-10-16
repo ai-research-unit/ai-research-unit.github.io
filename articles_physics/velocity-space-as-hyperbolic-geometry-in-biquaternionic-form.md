@@ -4,35 +4,35 @@
 
 A Lorentz boost is fixed by a velocity, so the set of boosts is the set of velocities; and that set is not a vector space. It has a boundary, the light cone, which no boost reaches; the composition of two boosts is not the parallelogram rule; and a closed path of boosts need not return the spin, the residue being the Wigner rotation. These three facts are one fact, and the fact is geometric: the velocity space of a massive particle is a **hyperbolic three-space of curvature $-1/c^2$**. In it the rapidity is the geodesic distance from rest, the light cone is the boundary at infinity, the velocity-addition law is the trigonometry of geodesic triangles, and the Wigner rotation is the curvature of the boost connection, with an angle equal to the hyperbolic area the loop encloses.
 
-The framework already carries the manifold. The four-velocity is a unit timelike element of the material sector, so its tip runs over the future sheet of the quadric $N(\tilde{V}) = -c^2$ in $\mathbb{M}_-$; the boost manifold is the symmetric space $\mathcal{B}\cong SL(2,\mathbb{C})/SU(2)\cong\mathbb{H}^3$; and the rapidity is the additive coordinate on each line through the rest point. What the framework does not carry is the **metric** of that manifold, its distance function, its trigonometry, and the identification of the velocity-addition law with its geometry. Those are the subject of this article, and they are supplied in the algebra's own coordinates.
+The framework already carries the manifold. The four-velocity is a unit timelike element of the material sector, so its tip runs over the future sheet of the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$; the boost manifold is the symmetric space $\mathcal{B}\cong SL(2,\mathbb{C})/SU(2)\cong\mathbb{H}^3$; and the rapidity is the additive coordinate on each line through the rest point. What the framework does not carry is the **metric** of that manifold, its distance function, its trigonometry, and the identification of the velocity-addition law with its geometry. Those are the subject of this article, and they are supplied in the algebra's own coordinates.
 
 The construction is the hyperbolic geometry of the velocity hyperboloid, in the form given by Varićak and Sommerfeld and developed in the modern literature by Ungar and by Rhodes and Semon; the immediate source for the account followed here is Barrett's conference paper on Minkowski space-time and hyperbolic geometry, and the monograph that develops the same material at length, whose statements have been re-derived in the framework's conventions and checked numerically. The claim it rests on is old and is Borel's, quoted as the epigraph of the monograph: *the principle of relativity corresponds to the hypothesis that the kinematic space is a space of constant negative curvature, and the value of the radius of curvature is the speed of light*. Two things beyond the classical account are the framework's own. First, the **boundary at infinity is the zero-divisor cone**, so the ideal points of the geometry are exactly the lightlike elements, the ones the algebra cannot invert; the cross-ratio that defines the metric is built from them. Second, the **holonomy of a closed boost path is the hyperbolic area of the loop's rapidity triangle**, which turns the numerical drift recorded in the companion article on the Wigner rotation into an exact identity with a computable correction.
 
 The findings are stated in advance.
 
-1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $N(\tilde{V}) = -c^2$ in $\mathbb{M}_-$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\hat u+i\cosh(\rho/c)\,e_0)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
+1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_0)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
 2. **The metric is the Beltrami–Klein metric** in the velocity coordinates, $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, and the distance between two velocities is the relative rapidity: $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$.
 3. **The addition of velocities is hyperbolic trigonometry.** The relative-velocity formula is the hyperbolic law of cosines in velocity space, and the composition law of two boosts is its spherical counterpart, the two being exchanged by $c\mapsto ic$ — the Sommerfeld spherical representation.
 4. **The Wigner rotation is the curvature of the boost connection.** Its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term, and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$.
 5. **The light cone is the boundary at infinity.** It is at infinite geodesic distance from every velocity while the velocity itself is bounded by $c$: the rapidity is unbounded where the velocity is bounded, and that is the geometric statement that no finite number of boosts reaches $c$.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$. The material coordinate is $\tilde{Q} = ict\,e_0+\vec x$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$, so that $N(d\tilde{Q}) = -c^2dt^2+d\vec x^2$. The four-velocity is
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$. The material coordinate is $\tilde{Q} = ict\,e_0+\vec x$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$, so that $\langle d\tilde{Q}\rangle_{\natural} = -c^2dt^2+d\vec x^2$. The four-velocity is
 $$
-\tilde{V} = \gamma(ic\,e_0+\vec v),\qquad N(\tilde{V}) = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
+\tilde{V} = \gamma(ic\,e_0+\vec v),\qquad \langle\tilde{V}\rangle_{\natural} = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
 $$
 and the boost rotor is
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0+i\sinh\frac{\psi}{2}\,\hat u = e^{(\psi/2)\,i\hat u},
-\qquad N(\tilde{\Lambda}) = 1,\qquad \tanh\psi = \frac{u}{c},
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0+i\sinh\frac{\psi}{2}\,\vec u = \exp((\psi/2)\,i\vec u),
+\qquad \langle\tilde{\Lambda}\rangle_{\natural} = 1,\qquad \tanh\psi = \frac{v_b}{c},
 $$
 Hermitian and of unit norm. Throughout, $c$ is the speed of light in the medium, $\vec v$ a particle velocity, $\rho$ the geodesic distance in velocity space and $\psi = \rho/c$ the rapidity.
 
 The companion articles supply the pieces:
 
-- *The Relativistic Particle in Biquaternionic Form*, for the four-velocity, the rapidity and the statement that the four-velocity tip is the hyperboloid $N(\tilde{V}) = -c^2$.
+- *The Relativistic Particle in Biquaternionic Form*, for the four-velocity, the rapidity and the statement that the four-velocity tip is the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the boost manifold $\mathcal{B}\cong\mathbb{H}^3$, its contractibility and the non-closure of the boosts.
 - *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner rotation, the closed-loop holonomy and the numerical angles reproduced below.
-- *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the cone $N(\tilde{Q}) = 0$ and its two families.
+- *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the cone $\langle\tilde{Q}\rangle_{\natural} = 0$ and its two families.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and the square-root relation between the rotor and the four-velocity.
 - Maths article *Hyperbolic Geometry*, for the hyperboloid model, the Weierstrass coordinates and the Cayley–Klein metric, whose pure-geometry statements are used here without re-derivation.
 
@@ -40,7 +40,7 @@ The companion articles supply the pieces:
 
 ### The four-velocity hyperboloid
 
-The four-velocity is a unit timelike element: $N(\tilde{V}) = -c^2$, identically in $\vec v$, so as the three components of $\vec v$ range over the open ball $|\vec v|<c$ the tip of $\tilde{V}$ runs over a three-dimensional quadric in the real four-space $\mathbb{M}_-$. Written in the real coordinates $(\gamma c, \gamma\vec v)$ the quadric is
+The four-velocity is a unit timelike element: $\langle\tilde{V}\rangle_{\natural} = -c^2$, identically in $\vec v$, so as the three components of $\vec v$ range over the open ball $|\vec v|<c$ the tip of $\tilde{V}$ runs over a three-dimensional quadric in the real four-space $\mathbb{M}_-$. Written in the real coordinates $(\gamma c, \gamma\vec v)$ the quadric is
 $$
 (\gamma c)^2-\gamma^2\vec v^2 = c^2\gamma^2\Bigl(1-\frac{\vec v^2}{c^2}\Bigr) = c^2 ,
 $$
@@ -54,17 +54,17 @@ The restriction of the ambient form to this quadric is Riemannian, and this is w
 
 ### Weierstrass coordinates and the rapidity as distance
 
-The quadric may be parametrised by the polar coordinates of the geometry itself. Let $\rho\ge0$ be the distance from the vertex along the sheet and let $\hat u$ be the direction; the **Weierstrass coordinates** of the point are
+The quadric may be parametrised by the polar coordinates of the geometry itself. Let $\rho\ge0$ be the distance from the vertex along the sheet and let $\vec u$ be the direction; the **Weierstrass coordinates** of the point are
 $$
-\tilde{V} = c\Bigl(\sinh\frac{\rho}{c}\,\hat u+i\cosh\frac{\rho}{c}\,e_0\Bigr),
+\tilde{V} = c\Bigl(\sinh\frac{\rho}{c}\,\vec u+i\cosh\frac{\rho}{c}\,e_0\Bigr),
 $$
 and the normalisation is an identity,
 $$
 c^2\Bigl(-\cosh^2\frac{\rho}{c}+\sinh^2\frac{\rho}{c}\Bigr) = -c^2 ,
 $$
-so the pair $(\rho,\hat u)$ does parametrise the sheet. Comparing with $\tilde{V} = \gamma(ic\,e_0+\vec v)$ gives the dictionary
+so the pair $(\rho,\vec u)$ does parametrise the sheet. Comparing with $\tilde{V} = \gamma(ic\,e_0+\vec v)$ gives the dictionary
 $$
-\gamma = \cosh\frac{\rho}{c},\qquad \vec v = c\tanh\frac{\rho}{c}\,\hat u,\qquad \rho = c\,\mathrm{artanh}\frac{v}{c} = c\psi ,
+\gamma = \cosh\frac{\rho}{c},\qquad \vec v = c\tanh\frac{\rho}{c}\,\vec u,\qquad \rho = c\,\mathrm{artanh}\frac{v}{c} = c\psi ,
 $$
 which is the *hyperbolic velocity* of the classical account: it is what the ordinary velocity becomes when the additive variable is used, and it reduces to $v$ for $v\ll c$.
 
@@ -74,9 +74,9 @@ ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\;d\Omega^2 ,
 $$
 where $d\Omega^2$ is the round metric of the unit sphere on the direction.
 
-**Proof.** With $\hat u$ a unit vector, $\hat u\cdot d\hat u = 0$ and $|d\hat u|^2 = d\Omega^2$. Differentiating, $d(c\sinh(\rho/c)\,\hat u) = \cosh(\rho/c)\,\hat u\,d\rho+c\sinh(\rho/c)\,d\hat u$ and $d(c\cosh(\rho/c)) = \sinh(\rho/c)\,d\rho$, whence
+**Proof.** With $\vec u$ a unit vector, $\vec u\cdot d\vec u = 0$ and $|d\vec u|^2 = d\Omega^2$. Differentiating, $d(c\sinh(\rho/c)\,\vec u) = \cosh(\rho/c)\,\vec u\,d\rho+c\sinh(\rho/c)\,d\vec u$ and $d(c\cosh(\rho/c)) = \sinh(\rho/c)\,d\rho$, whence
 $$
--ds^2 = N(d\tilde{V}) = -\sinh^2\frac{\rho}{c}\,d\rho^2+\cosh^2\frac{\rho}{c}\,d\rho^2+c^2\sinh^2\frac{\rho}{c}\,|d\hat u|^2 ,
+-ds^2 = \langle d\tilde{V}\rangle_{\natural} = -\sinh^2\frac{\rho}{c}\,d\rho^2+\cosh^2\frac{\rho}{c}\,d\rho^2+c^2\sinh^2\frac{\rho}{c}\,|d\vec u|^2 ,
 $$
 which is the stated metric.
 
@@ -88,7 +88,7 @@ so a small ball is Euclidean with a positive fourth-order correction; for the sp
 
 ### The metric in the velocity coordinates
 
-The sheet is usually described not by $(\rho,\hat u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\hat u$ into the metric gives
+The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
 $$
 ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2} .
 $$
@@ -107,7 +107,7 @@ $$
 $$
 and $d = c\,\mathrm{artanh}(v_{\mathrm{rel}}/c)$, where $v_{\mathrm{rel}}$ is the speed of $\vec v_2$ in the rest frame of $\vec v_1$.
 
-**Proof.** The first equality is the Beltrami–Klein disc formula of the maths article *Hyperbolic Geometry*; the second is the identity $\gamma = \cosh(\rho/c)$ and $\vec v = c\tanh(\rho/c)\hat u$, which turns the numerator into the hyperbolic cosine rule and the two roots into $\cosh$'s. For the third, the four-velocity of $\vec v_1$ is $\tilde{V}_1 = \gamma_1(ic\,e_0+\vec v_1)$; the speed of $\vec v_2$ in the frame of $\vec v_1$ is $\vec v_{\mathrm{rel}}$, with $\gamma_{\mathrm{rel}} = \gamma_2\gamma_1(1-\vec v_1\cdot\vec v_2/c^2)$, which is the second expression again.
+**Proof.** The first equality is the Beltrami–Klein disc formula of the maths article *Hyperbolic Geometry*; the second is the identity $\gamma = \cosh(\rho/c)$ and $\vec v = c\tanh(\rho/c)\vec u$, which turns the numerator into the hyperbolic cosine rule and the two roots into $\cosh$'s. For the third, the four-velocity of $\vec v_1$ is $\tilde{V}_1 = \gamma_1(ic\,e_0+\vec v_1)$; the speed of $\vec v_2$ in the frame of $\vec v_1$ is $\vec v_{\mathrm{rel}}$, with $\gamma_{\mathrm{rel}} = \gamma_2\gamma_1(1-\vec v_1\cdot\vec v_2/c^2)$, which is the second expression again.
 
 The right-hand side is $\ge1$ by the reversed Cauchy inequality, with equality exactly when the two velocities coincide, so the expression is a distance. The cross-ratio form is the same quantity: for the two points of the ball and the two points $a,b$ in which the chord through them meets the boundary $|\vec v| = c$, ordered $a,\vec v_1,\vec v_2,b$,
 $$
@@ -127,7 +127,7 @@ v_{\mathrm{rel}} = \frac{\sqrt{(\vec v_1-\vec v_2)^2-\tfrac{1}{c^2}(\vec v_1\tim
 $$
 Read as a statement of geometry rather than of kinematics, this is the **hyperbolic law of cosines** of the geodesic triangle whose vertices are the rest point and the two velocity points, with the angle $\theta$ at the rest point. The third side of that triangle is the distance between the two velocities; the formula is the law of cosines written for it; and the law holds because the space in which the triangle is drawn has constant curvature $-1/c^2$. The three vertices are the rest frame and the two particles' frames, and the side lengths are the three rapidities — a triangle in velocity space is the picture of the relative motion of three frames.
 
-**Numerical check.** For $\vec v_1 = 0.6c\,\hat x$ and $\vec v_2 = 0.8c\,\hat y$, the proposition gives $\cosh(d/c) = 1.25\times1.6667 = 2.08333$ and $d = 1.36379c$, whence $v_{\mathrm{rel}} = c\tanh 1.36379 = 0.87727c$; the direct velocity-subtraction formula gives the same to machine precision.
+**Numerical check.** For $\vec v_1 = 0.6c\,\vec u_x$ and $\vec v_2 = 0.8c\,\vec u_y$, the proposition gives $\cosh(d/c) = 1.25\times1.6667 = 2.08333$ and $d = 1.36379c$, whence $v_{\mathrm{rel}} = c\tanh 1.36379 = 0.87727c$; the direct velocity-subtraction formula gives the same to machine precision.
 
 ## The Addition of Velocities Is Hyperbolic Trigonometry
 
@@ -139,11 +139,11 @@ $$
 $$
 which is Einstein's addition law, and the statement that the additive variable is the *arc length* in velocity space and not the velocity is the statement that the composition is not vector addition: a vector space would give $\vec v_{\mathrm{tot}} = \vec v_1+\vec v_2$, and the geodesic parametrised by arc length gives the formula above instead. The bound $v<c$ is the statement that the geodesic does not reach the boundary in finite arc length.
 
-**The algebraic form of the collinear law.** In the algebra the same law is a single product. The proper velocity $u=\gamma(e_0+\beta\hat v)$ is a unimodular paravector, and the composition is $u_{\mathrm{tot}}=u_2u_1$, whose scalar part is the product of the two Lorentz factors and whose vector part is the composed velocity; the two displayed formulas are the two parts of that product. The product form, with the paravector interpretation, the four-velocity relation and the boost rule, is *Paravectors and the Geometry of Spacetime*; it is what makes the collinear composition a multiplication rather than a trigonometric computation.
+**The algebraic form of the collinear law.** In the algebra the same law is a single product. The proper velocity $\tilde v=\gamma(e_0+\beta\vec u_v)$ is a unimodular paravector, and the composition is $\tilde v_{\mathrm{tot}}=\tilde v_2\tilde v_1$, whose scalar part is the product of the two Lorentz factors and whose vector part is the composed velocity; the two displayed formulas are the two parts of that product. The product form, with the paravector interpretation, the four-velocity relation and the boost rule, is *Paravectors and the Geometry of Spacetime*; it is what makes the collinear composition a multiplication rather than a trigonometric computation.
 
 ### The composition law and the spherical representation
 
-For two boosts along different directions the composition is not a single boost, and the composed *frame* has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\hat u_1$ and the second rapidity $b$ along $\hat u_2$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
+For two boosts along different directions the composition is not a single boost, and the composed *frame* has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\vec u_1$ and the second rapidity $b$ along $\vec u_2$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
 $$
 \cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b ,
 $$
@@ -159,7 +159,7 @@ Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(
 
 A boost is a point of velocity space, and a path of boosts is a path in it; the statement that a closed path of boosts need not be a closed path of frames is the statement that the connection has curvature, and the Wigner rotation is its holonomy. The holonomy has a closed geometric value.
 
-**Proposition.** Let $\tilde{\Lambda}_1$ have rapidity $a$ along $\hat u_1$ and $\tilde{\Lambda}_2$ rapidity $b$ along $\hat u_2$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$. Then, in rapidity units,
+**Proposition.** Let $\tilde{\Lambda}_1$ have rapidity $a$ along $\vec u_1$ and $\tilde{\Lambda}_2$ rapidity $b$ along $\vec u_2$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$. Then, in rapidity units,
 $$
 \alpha = \pi-(A+B+C) ,
 $$
@@ -204,19 +204,19 @@ The metric coefficient $\sinh^2(\rho/c)$ makes the circumference of the circle o
 
 ### The zero divisors are the ideal points
 
-The absolute of velocity space is the light cone, and in the algebra the light cone is the zero-divisor cone $N(\tilde{Q}) = 0$: the boundary points are exactly the elements the biquaternion algebra cannot invert. This is the interpretation the algebra adds to the classical account. The cross-ratio that defines the Cayley–Klein distance is built from the two boundary points of the chord, so the distance between two velocities is a cross-ratio taken against **zero divisors**; and the two ends of each chord are the two null directions of the two-plane through the origin that carries the chord, so the metric of velocity space is the measure of the velocity circle against the algebra's singular elements. That the ideal points are the singular elements is the algebraic form of the statement that the boundary of the geometry is the boundary of the algebra's invertibility, which is the thesis of the companion article on the zero-divisor cone.
+The absolute of velocity space is the light cone, and in the algebra the light cone is the zero-divisor cone $\langle\tilde{Q}\rangle_{\natural} = 0$: the boundary points are exactly the elements the biquaternion algebra cannot invert. This is the interpretation the algebra adds to the classical account. The cross-ratio that defines the Cayley–Klein distance is built from the two boundary points of the chord, so the distance between two velocities is a cross-ratio taken against **zero divisors**; and the two ends of each chord are the two null directions of the two-plane through the origin that carries the chord, so the metric of velocity space is the measure of the velocity circle against the algebra's singular elements. That the ideal points are the singular elements is the algebraic form of the statement that the boundary of the geometry is the boundary of the algebra's invertibility, which is the thesis of the companion article on the zero-divisor cone.
 
 ## The Two Sectors
 
 The geometry belongs to the material sector, and its curvature is measured in the informational one, which is worth separating.
 
-The velocity hyperboloid is a quadric in $\mathbb{M}_-$, the material sector, where the four-velocities live; the distance $d$ between two velocities is a material quantity, computed from the biquaternion norm $N$ of two elements of $\mathbb{M}_-$. The boost rotor is Hermitian, an element of $\mathbb{M}_+$; the holonomy is unitary, an element of the rotation group inside $\mathbb{M}_-^{0}$; and the angle $\alpha$ is read off the trace of the unitary part, which is a statement about the informational sector's operator algebra. So the curvature of the boost connection is the one place in the relativity series where a geometric quantity of the material sector — an area — is literally equal to an operator-theoretic quantity of the informational sector — a rotation angle. The equality is the content of the statement that the two sectors are the two signatures of the same form, and the Gauss–Bonnet theorem is the bridge between them.
+The velocity hyperboloid is a quadric in $\mathbb{M}_-$, the material sector, where the four-velocities live; the distance $d$ between two velocities is a material quantity, computed from the biquaternion norm $\langle\cdot\rangle_{\natural}$ of two elements of $\mathbb{M}_-$. The boost rotor is Hermitian, an element of $\mathbb{M}_+$; the holonomy is unitary, an element of the rotation group inside $\mathbb{M}_-^{0}$; and the angle $\alpha$ is read off the trace of the unitary part, which is a statement about the informational sector's operator algebra. So the curvature of the boost connection is the one place in the relativity series where a geometric quantity of the material sector — an area — is literally equal to an operator-theoretic quantity of the informational sector — a rotation angle. The equality is the content of the statement that the two sectors are the two signatures of the same form, and the Gauss–Bonnet theorem is the bridge between them.
 
 For a spin the area statement has the operational interpretation of the companion article: a transverse loop of boosts imprints on the spin a rotation of angle equal to the area, and the entropy it can imprint is $h((1+\cos\alpha)/2)$, so the hyperbolic area is a bound on the information a closed path of frame changes can carry to the spin.
 
 ## What the Framework Supplies and What It Transcribes
 
-**What the framework supplies.** The velocity space is not imported: it is the quadric $N(\tilde{V}) = -c^2$ in the material sector, and the metric on it is computed from the biquaternion norm in the algebra's own coordinates, with the Weierstrass parametrisation the algebra's parametrisation of the quadric. The boundary at infinity is the zero-divisor cone, which the algebra carries as the set of non-invertible elements, so the boundary of the geometry and the boundary of invertibility are the same set. The holonomy is the unitary part of the polar decomposition of a product of rotors, computed with the rotor conjugation and the trace, and the statement that its angle is the hyperbolic area is a statement about the algebra's own multiplication. And the $c\mapsto ic$ interchange of the spherical and hyperbolic representations is, in the algebra, the interchange of the two real directions of the trace-free subalgebra — the compact rotation directions and the hyperbolic boost directions — which is a single algebraic fact rather than a formal substitution.
+**What the framework supplies.** The velocity space is not imported: it is the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in the material sector, and the metric on it is computed from the biquaternion norm in the algebra's own coordinates, with the Weierstrass parametrisation the algebra's parametrisation of the quadric. The boundary at infinity is the zero-divisor cone, which the algebra carries as the set of non-invertible elements, so the boundary of the geometry and the boundary of invertibility are the same set. The holonomy is the unitary part of the polar decomposition of a product of rotors, computed with the rotor conjugation and the trace, and the statement that its angle is the hyperbolic area is a statement about the algebra's own multiplication. And the $c\mapsto ic$ interchange of the spherical and hyperbolic representations is, in the algebra, the interchange of the two real directions of the trace-free subalgebra — the compact rotation directions and the hyperbolic boost directions — which is a single algebraic fact rather than a formal substitution.
 
 **What it transcribes.** The metric of velocity space, the Cayley–Klein distance, the velocity-addition law as hyperbolic trigonometry, and the identification of the Wigner rotation with the curvature of the boost connection are all classical: they are Varićak's and Sommerfeld's hyperbolic interpretation of relativity, developed in the modern literature as the hyperbolic geometry of velocity space and as the gyrogroup formalism. The framework does not derive them; it re-expresses them in one algebra, and it supplies the sector interpretation of the boundary and the exact area statement, which the classical account gives only in the rate form.
 
@@ -226,7 +226,7 @@ For a spin the area statement has the operational interpretation of the companio
 
 ## Summary
 
-The velocity space of a massive particle is a hyperbolic three-space of curvature $-1/c^2$. Its carrying manifold is the quadric $N(\tilde{V}) = -c^2$ in the material sector, the future sheet of the mass-shell hyperboloid; parametrised in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\hat u+i\cosh(\rho/c)e_0)$, the geodesic distance $\rho$ is $c$ times the rapidity and the metric is $ds^2 = d\rho^2+c^2\sinh^2(\rho/c)d\Omega^2$. In the velocity coordinates the metric is the Beltrami–Klein metric $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, the geodesics are the straight chords of the ball $|\vec v|<c$, and the distance between two velocities is the relative rapidity, $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$, equivalently the Cayley–Klein cross-ratio against the two lightlike ends of the chord.
+The velocity space of a massive particle is a hyperbolic three-space of curvature $-1/c^2$. Its carrying manifold is the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in the material sector, the future sheet of the mass-shell hyperboloid; parametrised in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\vec u+i\cosh(\rho/c)e_0)$, the geodesic distance $\rho$ is $c$ times the rapidity and the metric is $ds^2 = d\rho^2+c^2\sinh^2(\rho/c)d\Omega^2$. In the velocity coordinates the metric is the Beltrami–Klein metric $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, the geodesics are the straight chords of the ball $|\vec v|<c$, and the distance between two velocities is the relative rapidity, $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$, equivalently the Cayley–Klein cross-ratio against the two lightlike ends of the chord.
 
 The composition of two boosts is the trigonometry of geodesic triangles. The rapidity is additive on a line and Einstein's addition law is the geodesic parametrisation; the relative-velocity formula is the hyperbolic law of cosines for the triangle of the three frames; and the composition law of two boosts of rapidities $a,b$ at an angle $\theta$ is the spherical-type relation $\cosh\rho = \cosh a\cosh b+\cos\theta\sinh a\sinh b$, the two laws being exchanged by $c\mapsto ic$, the Sommerfeld representation on a sphere of imaginary radius. The Wigner rotation of the product is the holonomy of the boost connection, and its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$, which reproduces the drift recorded in the companion article on the Wigner rotation. The light cone is the boundary at infinity — the absolute of the Cayley–Klein model — at infinite geodesic distance from every velocity while the velocity is bounded by $c$, and in the algebra it is the zero-divisor cone, so the ideal points of the geometry are the elements the algebra cannot invert. The area statement is the one place where a geometric quantity of the material sector equals an operator quantity of the informational sector, because the curvature of the boost connection is an area and the holonomy is a rotation angle.
 
@@ -234,10 +234,10 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{V} = \gamma(ic\,e_0+\vec v)$ | Four-velocity, $N(\tilde{V}) = -c^2$, future sheet of the hyperboloid in $\mathbb{M}_-$ |
+| $\tilde{V} = \gamma(ic\,e_0+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$, future sheet of the hyperboloid in $\mathbb{M}_-$ |
 | $\rho$ | Geodesic distance in velocity space from rest; $\rho = c\,\mathrm{artanh}(v/c)$ |
 | $\psi = \rho/c$ | Rapidity; additive along a line |
-| $\tilde{V} = c(\sinh\frac{\rho}{c}\hat u+i\cosh\frac{\rho}{c}e_0)$ | Weierstrass coordinates of the velocity hyperboloid |
+| $\tilde{V} = c(\sinh\frac{\rho}{c}\vec u+i\cosh\frac{\rho}{c}e_0)$ | Weierstrass coordinates of the velocity hyperboloid |
 | $ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\,d\Omega^2$ | Metric of velocity space, curvature $-1/c^2$ |
 | $ds^2 = c^2\frac{(c^2-\vec v^2)\lvert d\vec v\rvert^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2}$ | The same metric in the velocity (Beltrami–Klein) coordinates |
 | $\cosh\frac{d}{c} = \gamma_1\gamma_2(1-\frac{\vec v_1\cdot\vec v_2}{c^2})$ | Distance between two velocities = relative rapidity |
@@ -248,7 +248,7 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 | $c\mapsto ic$ | Sommerfeld interchange of the hyperbolic and spherical representations |
 | $\alpha = \pi-(A+B+C) = A_{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
 | $\alpha = \frac{ab}{2}-\frac{ab(a^2+b^2)}{24}+\cdots$ | Small-loop expansion; the Euclidean area is the leading term |
-| $\lvert\vec v\rvert = c$, $N(\tilde{Q}) = 0$ | Boundary at infinity = light cone = zero-divisor cone |
+| $\lvert\vec v\rvert = c$, $\langle\tilde{Q}\rangle_{\natural} = 0$ | Boundary at infinity = light cone = zero-divisor cone |
 
 ## Further Reading
 

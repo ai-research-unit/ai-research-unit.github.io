@@ -19,7 +19,7 @@ $$
 \mathbb{H}^n = \{x \in \mathbb{R}^{n,1} : B(x,x) = -1,\ x_0 > 0\}
 $$
 
-with the form $B$ of signature $(n,1)$ restricted to the tangent spaces, as the Poincaré ball with the metric $4\,|dx|^2/(1 - |x|^2)^2$, and as the upper half-space with the metric $|dx|^2/x_n^2$. The **operators** of the hyperbolic space are its isometries, and they form the group $\operatorname{Isom}(\mathbb{H}^n)$.
+with the form $\langle\cdot,\cdot\rangle$ of signature $(n,1)$ restricted to the tangent spaces, as the Poincaré ball with the metric $4\,|dx|^2/(1 - |x|^2)^2$, and as the upper half-space with the metric $|dx|^2/x_n^2$. The **operators** of the hyperbolic space are its isometries, and they form the group $\operatorname{Isom}(\mathbb{H}^n)$.
 
 **Theorem.** The isometry group of the hyperboloid model is
 
@@ -27,7 +27,7 @@ $$
 \operatorname{Isom}(\mathbb{H}^n) \cong O(n,1) ,
 $$
 
-the group of the linear maps preserving the form $B$, and the orientation-preserving subgroup is $SO^+(n,1)$, the connected component of the identity, which acts transitively on $\mathbb{H}^n$ and has the stabiliser of a point conjugate to $O(n)$; consequently
+the group of the linear maps preserving the form $\langle\cdot,\cdot\rangle$, and the orientation-preserving subgroup is $SO^+(n,1)$, the connected component of the identity, which acts transitively on $\mathbb{H}^n$ and has the stabiliser of a point conjugate to $O(n)$; consequently
 
 $$
 \mathbb{H}^n \cong SO^+(n,1)/SO(n)
@@ -113,7 +113,7 @@ so the reversal conjugates the flow to its inverse. The article calls the flow t
 
 **Proof.** The relation $\sigma\phi_t = \phi_{-t}\sigma$ is the equality of the geodesic with the reversed velocity traversed backwards, which is the same geodesic traversed forwards, $\gamma_{x,-v}(t) = \gamma_{x,v}(-t)$; the fixed points of $\sigma$ are the pairs with $v = -v$, that is, $v = 0$, which are not in the unit tangent bundle, so the reversal has no fixed point. The statement is elementary and is recorded in *Hyperbolic Geometry*.
 
-**Remark (the geodesic symmetries and the flow).** The geodesic symmetry at a point $p$ reverses every geodesic through $p$, so it satisfies $s_p\circ\phi_t = \phi_{-t}\circ s_p$ on the geodesics through $p$, and it is the pointwise form of the reversal on the flow lines through $p$; the signed flow and the geodesic symmetries are the one-sided and the two-sided forms of the same reversal. This is the reason the geodesic flow is the distinguished one-sided operator of the hyperbolic space.
+**Remark (the geodesic symmetries and the flow).** The geodesic symmetry at a point $n$ reverses every geodesic through $n$, so it satisfies $s_n\circ\phi_t = \phi_{-t}\circ s_n$ on the geodesics through $n$, and it is the pointwise form of the reversal on the flow lines through $n$; the signed flow and the geodesic symmetries are the one-sided and the two-sided forms of the same reversal. This is the reason the geodesic flow is the distinguished one-sided operator of the hyperbolic space.
 
 ## The Quotients and the Forward Reference
 

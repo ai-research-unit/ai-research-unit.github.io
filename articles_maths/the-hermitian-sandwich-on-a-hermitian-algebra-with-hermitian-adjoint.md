@@ -19,13 +19,13 @@ This article treats the operator itself: its domain, its linearity in the argume
 
 ### Definition and Domain
 
-**Definition.** Let $A$ be a commutative ring with involution $\sigma$, let $q$ be a quadratic form on a free $A$-module $V$, and let $\mathrm{Cl}(V,q)$ be its Clifford algebra. The **Hermitian sandwich** of an element $x \in \mathrm{Cl}(V,q)$ is the map
+**Definition.** Let $A$ be a commutative ring with involution $\sigma$, let $q$ be a quadratic form on a free $A$-module $V$, and let $\mathrm{Cl}(V,\mathfrak{Q})$ be its Clifford algebra. The **Hermitian sandwich** of an element $x \in \mathrm{Cl}(V,\mathfrak{Q})$ is the map
 
 $$
-\Theta_x : \mathrm{Cl}(V,q) \longrightarrow \mathrm{Cl}(V,q), \qquad \Theta_x(y) = x\,y\,x^{\dagger}, \qquad x^{\dagger} = \sigma(\alpha(x^{r})).
+\Theta_x : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad \Theta_x(y) = x\,y\,x^{\dagger}, \qquad x^{\dagger} = \sigma(\alpha(x^{r})).
 $$
 
-The operator is defined for **every** $x \in \mathrm{Cl}(V,q)$. No invertibility is required, and no assumption is made on $x$ beyond that it is an element of the algebra.
+The operator is defined for **every** $x \in \mathrm{Cl}(V,\mathfrak{Q})$. No invertibility is required, and no assumption is made on $x$ beyond that it is an element of the algebra.
 
 In terms of the left and the right multiplications the definition reads
 
@@ -89,7 +89,7 @@ $$
 \Theta_{xz}(y) = xz\,y\,(xz)^{\dagger} = xz\,y\,z^{\dagger}x^{\dagger} = x\,(z\,y\,z^{\dagger})\,x^{\dagger} = \Theta_x\bigl(\Theta_z(y)\bigr).
 $$
 
-**Corollary.** The assignment $x \mapsto \Theta_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,q)$ to the monoid of $A$-linear endomorphisms of $\mathrm{Cl}(V,q)$, with $\Theta_1 = \mathrm{id}$. For invertible $x$ the operator $\Theta_x$ is invertible, with inverse $\Theta_{x^{-1}}$; for non-invertible $x$ it may still be invertible as an endomorphism, but it is not for $x = 0$.
+**Corollary.** The assignment $x \mapsto \Theta_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the monoid of $A$-linear endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$, with $\Theta_1 = \mathrm{id}$. For invertible $x$ the operator $\Theta_x$ is invertible, with inverse $\Theta_{x^{-1}}$; for non-invertible $x$ it may still be invertible as an endomorphism, but it is not for $x = 0$.
 
 ### The Parity
 
@@ -125,7 +125,7 @@ The inner conjugation is the only member that fixes the unit identically; the si
 
 ### The Corrected Identities
 
-**Theorem.** Let $x$ be an element of the Clifford group $\Gamma(V,q)$, with Clifford norm $N(x) = x\,x^{\natural} = x^{\natural}\,x$, a scalar of $A$. Then
+**Theorem.** Let $x$ be an element of the Clifford group $\Gamma(V,\mathfrak{Q})$, with Clifford norm $N(x) = x\,x^{\natural} = x^{\natural}\,x$, a scalar of $A$. Then
 
 $$
 x^{\dagger} = \sigma\bigl(N(x)\bigr)\,\sigma(x)^{-1},
@@ -162,7 +162,7 @@ The corrected formula returns $3\cdot \frac{1}{3}(2 + ie) = 2 + ie = x^{\dagger}
 **Definition.** The **unitary slice** of the algebra is
 
 $$
-U = \{\, x \in \mathrm{Cl}(V,q) : x^{\dagger}x = 1 \,\}.
+U = \{\, x \in \mathrm{Cl}(V,\mathfrak{Q}) : x^{\dagger}x = 1 \,\}.
 $$
 
 **Proposition.** $U$ is a subgroup of the group of units. It contains $1$; if $x \in U$ then $x$ is invertible with $x^{-1} = x^{\dagger}$, and $x^{\dagger} \in U$; if $x, y \in U$ then
@@ -184,24 +184,24 @@ This is the sense in which the Hermitian sandwich is the inverse sandwich of *Th
 **Proposition (the case of the identity involution).** When $\sigma = \mathrm{id}$ the dagger is Clifford conjugation, $x^{\dagger} = x^{\natural}$, and
 
 $$
-U = \{\, x : N(x) = 1 \,\} = \mathrm{Pin}(V,q).
+U = \{\, x : N(x) = 1 \,\} = \mathrm{Pin}(V,\mathfrak{Q}).
 $$
 
 **Proof.** If $x^{\natural}\,x = 1$ then $N(x) = x\,x^{\natural} = x\,(x^{\natural}\,x)\,x^{-1} = 1$. Conversely if $x\,x^{\natural} = 1$ then $x^{\natural} = x^{-1}$, so $x^{\natural}\,x = 1$. Hence $U = \{x : N(x) = 1\}$, the definition of the Pin group.
 
 ## Preservation of the Quadratic Space
 
-**Proposition.** Let $x \in \Gamma(V,q)$. Then $\Theta_x$ maps the vector space $V$ to itself, and
+**Proposition.** Let $x \in \Gamma(V,\mathfrak{Q})$. Then $\Theta_x$ maps the vector space $V$ to itself, and
 
 $$
 \Theta_x\big|_{V} = \sigma\bigl(N(x)\bigr)\cdot\chi(x),
 $$
 
-where $\chi(x) \in \mathrm{O}(V,q)$ is the twisted conjugation $v \mapsto \pm\,x\,v\,x^{-1}$. Consequently $\Theta_x$ is an isometry of $V$ exactly when $\sigma(N(x))^{2} = 1$, and otherwise it is a similarity of ratio $\sigma(N(x))^{2}$.
+where $\chi(x) \in \mathrm{O}(V,\mathfrak{Q})$ is the twisted conjugation $v \mapsto \pm\,x\,v\,x^{-1}$. Consequently $\Theta_x$ is an isometry of $V$ exactly when $\sigma(N(x))^{2} = 1$, and otherwise it is a similarity of ratio $\sigma(N(x))^{2}$.
 
 **Proof.** On $\Gamma$ the map $v \mapsto x\,v\,\alpha(x)^{-1}$ lands in $V$ and preserves $q$, by the definition of the Clifford group, and for homogeneous $x$ it differs from $v \mapsto x\,v\,x^{-1}$ by the sign $\alpha(x)x^{-1} = \pm 1$; the identity of the theorem then gives the displayed form. A scalar $\lambda$ multiplies $q$ by $\lambda^{2}$.
 
-**Corollary.** The Hermitian sandwich produces no isometry of $V$ beyond the orthogonal group. Every isometry it yields is the inner conjugation of a $\Gamma$-element, up to a global sign, and those generate $\mathrm{O}(V,q)$ already. What the Hermitian member adds is not new isometries but the wider domain, the action of the coefficient involution, and the positivity of the next article.
+**Corollary.** The Hermitian sandwich produces no isometry of $V$ beyond the orthogonal group. Every isometry it yields is the inner conjugation of a $\Gamma$-element, up to a global sign, and those generate $\mathrm{O}(V,\mathfrak{Q})$ already. What the Hermitian member adds is not new isometries but the wider domain, the action of the coefficient involution, and the positivity of the next article.
 
 **Remark (the degenerate case).** For $x \notin \Gamma$ the operator need not map $V$ to $V$; the element $x = 2 + e_2$ of the algebra with $e_2^{2} = -1$ has $\Theta_x(e_2) \notin V$. The general statement of the theorem is therefore confined to the Clifford group.
 
@@ -209,7 +209,7 @@ where $\chi(x) \in \mathrm{O}(V,q)$ is the twisted conjugation $v \mapsto \pm\,x
 
 ### An Odd Element with Complex Coefficients
 
-Let $A = \mathbb{C}$ with complex conjugation, let $V = \mathbb{C}$ with $e^{2} = -1$, so that $\mathrm{Cl}(V,q)$ has basis $1, e$, and let $x = 2 + ie$. Then
+Let $A = \mathbb{C}$ with complex conjugation, let $V = \mathbb{C}$ with $e^{2} = -1$, so that $\mathrm{Cl}(V,\mathfrak{Q})$ has basis $1, e$, and let $x = 2 + ie$. Then
 
 $$
 x^{\natural} = \alpha(2 + ie) = 2 - ie, \qquad x^{\dagger} = \sigma(x^{\natural}) = 2 + ie, \qquad N(x) = x\,x^{\natural} = 3 .
@@ -237,7 +237,7 @@ $$
 \Theta_x(e_1) = 13e_1 - 12e_2, \qquad \Theta_x(e_2) = -12e_1 + 13e_2,
 $$
 
-so that $q(\Theta_x(e_1)) = 13^{2} - 12^{2} = 25 = (-5)^{2}q(e_1)$: the operator scales both quadratic forms by the factor $25$ and preserves neither, exactly as the proposition requires of a similarity whose scalar is not a sign. The same computation with $x = e_1$, where $N(e_1) = -1$ and $\sigma(N)^{2} = 1$, gives $\Theta_{e_1}(e_1) = -e_1$ and $\Theta_{e_1}(e_2) = e_2$, an honest isometry of the quadratic space.
+so that $\mathfrak{Q}(\Theta_x(e_1)) = 13^{2} - 12^{2} = 25 = (-5)^{2}q(e_1)$: the operator scales both quadratic forms by the factor $25$ and preserves neither, exactly as the proposition requires of a similarity whose scalar is not a sign. The same computation with $x = e_1$, where $N(e_1) = -1$ and $\sigma(N)^{2} = 1$, gives $\Theta_{e_1}(e_1) = -e_1$ and $\Theta_{e_1}(e_2) = e_2$, an honest isometry of the quadratic space.
 
 ## Summary
 
@@ -249,14 +249,14 @@ $$
 
 the member whose right factor is the dagger and which therefore needs an involution $\sigma$ of the base, introduced in *Hermitian Algebras*. It is defined for **every** element of the algebra, invertible or not, because the dagger is. It is $A$-linear in its argument $y$, and in its parameter it obeys $\Theta_{ax} = a\sigma(a)\Theta_x$; it is **not** $\sigma$-semilinear in the argument, and the earlier claim to that effect is corrected, with the counterexample $\Theta_x(i) = 5i-4e$ over $\mathbb{C}$. It is multiplicative, $\Theta_{xz} = \Theta_x \circ \Theta_z$, so $x \mapsto \Theta_x$ is a monoid homomorphism into the endomorphisms, which is the structural gain over the inverse sandwiches: the operators are defined on all of the algebra, and the invertibility migrates to the unitary slice. For homogeneous $x$ the operator preserves the parity, and for even $x$ it preserves the degree. Its value at the unit is $\Theta_x(1) = x\,x^{\dagger}$.
 
-On the Clifford group the identities are $x^{\dagger} = \sigma(N(x))\,\sigma(x)^{-1}$ and $\Theta_x = \sigma(N(x))\,x(\cdot)\sigma(x)^{-1}$; the simpler $x^{\dagger} = \sigma(N(x))x^{-1}$ and $\Theta_x = \sigma(N(x))\mathrm{Ad}^{\alpha}_x$ hold only for $\sigma$-real $x$, and the failure for a non-$\sigma$-real homogeneous element is worked out. On the **unitary slice** $U = \{x : x^{\dagger}x = 1\}$, which is a group and equals $\mathrm{Pin}(V,q)$ when $\sigma = \mathrm{id}$, the dagger is the inverse and the Hermitian sandwich is exactly the inner conjugation, so the two theories meet there. On the Clifford group the operator maps $V$ to $V$ as $\sigma(N(x))$ times a twisted conjugation, so it is an isometry of the quadratic space precisely when $\sigma(N(x))^{2} = 1$, and it gives no isometries of $V$ beyond the orthogonal group.
+On the Clifford group the identities are $x^{\dagger} = \sigma(N(x))\,\sigma(x)^{-1}$ and $\Theta_x = \sigma(N(x))\,x(\cdot)\sigma(x)^{-1}$; the simpler $x^{\dagger} = \sigma(N(x))x^{-1}$ and $\Theta_x = \sigma(N(x))\mathrm{Ad}^{\alpha}_x$ hold only for $\sigma$-real $x$, and the failure for a non-$\sigma$-real homogeneous element is worked out. On the **unitary slice** $U = \{x : x^{\dagger}x = 1\}$, which is a group and equals $\mathrm{Pin}(V,\mathfrak{Q})$ when $\sigma = \mathrm{id}$, the dagger is the inverse and the Hermitian sandwich is exactly the inner conjugation, so the two theories meet there. On the Clifford group the operator maps $V$ to $V$ as $\sigma(N(x))$ times a twisted conjugation, so it is an isometry of the quadratic space precisely when $\sigma(N(x))^{2} = 1$, and it gives no isometries of $V$ beyond the orthogonal group.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $A$, $\sigma$ | Commutative base ring with involution |
-| $\mathrm{Cl}(V,q)$ | Clifford algebra of the quadratic space $(V,q)$ |
+| $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of the quadratic space $(V,\mathfrak{Q})$ |
 | $x^{r}$ | Reversion |
 | $\alpha$ | Grade involution |
 | $x^{\natural} = \alpha(x^{r})$ | Clifford conjugation |
@@ -264,7 +264,7 @@ On the Clifford group the identities are $x^{\dagger} = \sigma(N(x))\,\sigma(x)^
 | $\Theta_x(y) = x\,y\,x^{\dagger}$ | Hermitian sandwich |
 | $L_x$, $R_x$ | Left and right multiplication by $x$ |
 | $\Theta_{ax} = a\sigma(a)\Theta_x$ | Parameter rule, $a$ central |
-| $\Gamma(V,q)$, $N(x) = x x^{\natural}$ | Clifford group and Clifford norm |
+| $\Gamma(V,\mathfrak{Q})$, $N(x) = x x^{\natural}$ | Clifford group and Clifford norm |
 | $\mathrm{Ad}_x(y) = x\,y\,x^{-1}$ | Inner conjugation |
 | $\mathrm{Ad}^{\alpha}_x(y) = \alpha(x)\,y\,x^{-1}$ | Signed inner conjugation |
 | $U = \{x : x^{\dagger}x = 1\}$ | Unitary slice |

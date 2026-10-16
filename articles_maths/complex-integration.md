@@ -9,7 +9,7 @@ The complex case is the model case of hypercomplex integration. Because $\mathbb
 
 No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.
 
-For notation, complex numbers are written $A = a + i a'$ with $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$, and modulus $|A| = \sqrt{a^2+a'^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial_{\bar A} = \tfrac12(\partial_a + i \partial_{a'})$, and a function is holomorphic exactly when $\partial_{\bar A} f = 0$. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $A_0$ is written $C(A_0, r)$ and is always positively oriented unless the opposite is stated.
+For notation, complex numbers are written $A = a + i a'$ with $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$, and modulus $|A| = \sqrt{a^2+a'^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial_{\bar A} = \tfrac12(\partial_a + i \partial_{a'})$, and a function is holomorphic exactly when $\partial_{\bar A} f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $A_0$ is written $C(A_0, r)$ and is always positively oriented unless the opposite is stated.
 
 ## The Complex Integral
 
@@ -28,10 +28,10 @@ finite because $\gamma'$ is piecewise continuous on a compact interval. The corr
 **Example.** For $A_0 \in \mathbb{C}$ and $r > 0$ the positively oriented circle
 
 $$
-\gamma(t) = A_0 + r e^{it}, \qquad t \in [0, 2\pi],
+\gamma(t) = A_0 + r \exp(it), \qquad t \in [0, 2\pi],
 $$
 
-is a contour, with $\gamma'(t) = i r e^{it}$ and $L(\gamma) = 2\pi r$.
+is a contour, with $\gamma'(t) = i r \exp(it)$ and $L(\gamma) = 2\pi r$.
 
 ### Construction from the Riemann Sum
 
@@ -128,7 +128,7 @@ $$
 for every closed path that does not pass through the origin. The excluded case $n = -1$ is the fundamental one:
 
 $$
-\oint_{|A| = r} \frac{dA}{A} = \int_0^{2\pi} \frac{ire^{it}}{re^{it}} \, dt = 2\pi i \neq 0 .
+\oint_{|A| = r} \frac{dA}{A} = \int_0^{2\pi} \frac{ir\exp(it)}{r\exp(it)} \, dt = 2\pi i \neq 0 .
 $$
 
 So $1/A$ admits no primitive on $\mathbb{C}^\times$, and the value $2\pi i$ is the source of the entire residue theory.
@@ -157,11 +157,11 @@ $$
 
 The integrand $(B-A)^{-2}$ has the primitive $-(B-A)^{-1}$ in the variable $B$ on $\mathbb{C} \setminus \{A\}$, so $h'(A) = 0$ and $h$ is locally constant. Put $\Phi(A) = \exp h(A)$; then $\Phi'(A) = h'(A) \Phi(A) = 0$, so $\Phi$ is constant, and as $|A| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(A) \to 0$ and $\Phi(A) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(A) \in 2\pi i \mathbb{Z}$ for every $A$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
 
-**Example.** For the positively oriented circle $\gamma(t) = A_0 + re^{it}$ one has $\operatorname{Ind}(\gamma, A_0) = 1$ and $\operatorname{Ind}(\gamma, A) = 0$ for $|A - A_0| > r$. For the same circle traversed $m$ times the index is $m$.
+**Example.** For the positively oriented circle $\gamma(t) = A_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, A_0) = 1$ and $\operatorname{Ind}(\gamma, A) = 0$ for $|A - A_0| > r$. For the same circle traversed $m$ times the index is $m$.
 
-**Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $U$ and let $H : [0,1] \times [a,b] \to U$ be continuous with $H(s, \cdot)$ closed and piecewise $C^1$ for every $s$, $H(0, \cdot) = \gamma_0$ and $H(1, \cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, A_0) = \operatorname{Ind}(\gamma_1, A_0)$ for every $A_0 \notin U$.
+**Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $U$ and let $H : [0,1] \times [a,b] \to U$ be continuous with $\langle s,\cdot\rangle_{*}$ closed and piecewise $C^1$ for every $s$, $\langle0,\cdot\rangle_{*} = \gamma_0$ and $\langle1,\cdot\rangle_{*} = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, A_0) = \operatorname{Ind}(\gamma_1, A_0)$ for every $A_0 \notin U$.
 
-**Proof.** For a closed path $\gamma$ avoiding $A_0$ one may write $\gamma(t) - A_0 = r(t) e^{i\Theta(t)}$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, A_0)$. Since $A_0 \notin U$, the map $H - A_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\tilde\Theta$ on the whole rectangle, with $H(s,t) - A_0 = \rho(s,t) e^{i \tilde\Theta(s,t)}$ and $\rho > 0$. Then $s \mapsto \tilde\Theta(s, b) - \tilde\Theta(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s, \cdot), A_0)$.
+**Proof.** For a closed path $\gamma$ avoiding $A_0$ one may write $\gamma(t) - A_0 = r(t) \exp(i\Theta(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, A_0)$. Since $A_0 \notin U$, the map $H - A_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta^{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - A_0 = \rho(s,t) \exp(i \Theta^{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta^{\mathrm{lift}}(s, b) - \Theta^{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(\langle s,\cdot\rangle_{*}, A_0)$.
 
 The winding number therefore depends only on the homotopy class of the path in $U$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.
 
@@ -312,10 +312,10 @@ $$
 **Theorem (mean value property).** If $f$ is holomorphic on a neighbourhood of $\overline{B}(A_0, r)$, then
 
 $$
-f(A_0) = \frac{1}{2\pi} \int_0^{2\pi} f(A_0 + re^{i\theta}) \, d\theta .
+f(A_0) = \frac{1}{2\pi} \int_0^{2\pi} f(A_0 + r\exp(i\theta)) \, d\theta .
 $$
 
-**Proof.** In the Cauchy integral formula on $C(A_0, r)$, parametrise $B = A_0 + re^{i\theta}$, so $dB = ire^{i\theta} d\theta$ and $B - A_0 = re^{i\theta}$; the factors cancel and the formula becomes the displayed average.
+**Proof.** In the Cauchy integral formula on $C(A_0, r)$, parametrise $B = A_0 + r\exp(i\theta)$, so $dB = ir\exp(i\theta) d\theta$ and $B - A_0 = r\exp(i\theta)$; the factors cancel and the formula becomes the displayed average.
 
 **Theorem (maximum modulus).** If $f$ is holomorphic on a domain $U$ and $|f|$ attains a maximum at a point of $U$, then $f$ is constant on $U$.
 
@@ -439,7 +439,7 @@ is the number of zeros of $f_t$ inside $\gamma$ by the argument principle, and i
 
 ### Evaluation of Definite Integrals
 
-**Integrals of trigonometric functions.** For an integral $\int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta$ with $R$ rational, set $A = e^{i\theta}$, so that
+**Integrals of trigonometric functions.** For an integral $\int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta$ with $R$ rational, set $A = \exp(i\theta)$, so that
 
 $$
 \cos\theta = \frac{A + A^{-1}}{2}, \qquad \sin\theta = \frac{A - A^{-1}}{2i}, \qquad d\theta = \frac{dA}{iA} .
@@ -463,15 +463,15 @@ $$
 
 **Example.** For $\int_{-\infty}^{\infty} \frac{da}{1 + a^2}$ the only pole in the upper half-plane is $A = i$, with residue $\frac{1}{2i}$, so the integral is $2\pi i \cdot \frac{1}{2i} = \pi$.
 
-**Integrals with trigonometric kernels.** For $\int_{-\infty}^{\infty} f(b) e^{iab} \, db$ with $a > 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by **Jordan's lemma**: if $f$ is continuous on the arc $\{Re^{i\theta} : 0 \le \theta \le \pi\}$ and $|f(Re^{i\theta})| \le m_R$ with $m_R \to 0$, then
+**Integrals with trigonometric kernels.** For $\int_{-\infty}^{\infty} f(b) \exp(iab) \, db$ with $a > 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by **Jordan's lemma**: if $f$ is continuous on the arc $\{R\exp(i\theta) : 0 \le \theta \le \pi\}$ and $|f(R\exp(i\theta))| \le m_R$ with $m_R \to 0$, then
 
 $$
-\left| \int_0^{\pi} f(Re^{i\theta}) e^{iaRe^{i\theta}} i R e^{i\theta} \, d\theta \right| \le \frac{\pi m_R}{a},
+\left| \int_0^{\pi} f(R\exp(i\theta)) \exp(iaR\exp(i\theta)) i R \exp(i\theta) \, d\theta \right| \le \frac{\pi m_R}{a},
 $$
 
 which tends to $0$.
 
-**Example.** For $\int_{-\infty}^{\infty} \frac{e^{ib}}{1+b^2} db$ the pole in the upper half-plane is $A = i$ with residue $\frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$, so the integral is $\pi/e$. Taking real parts gives
+**Example.** For $\int_{-\infty}^{\infty} \frac{\exp(ib)}{1+b^2} db$ the pole in the upper half-plane is $A = i$ with residue $\frac{\exp(i \cdot i)}{2i} = \frac{\exp(-1)}{2i}$, so the integral is $\pi/e$. Taking real parts gives
 
 $$
 \int_{-\infty}^{\infty} \frac{\cos b}{1 + b^2} \, db = \frac{\pi}{e} .

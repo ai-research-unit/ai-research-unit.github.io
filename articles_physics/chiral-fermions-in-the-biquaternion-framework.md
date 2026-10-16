@@ -6,7 +6,7 @@ A **chiral fermion** is a fermion whose left- and right-handed components carry 
 
 This article asks what the biquaternion framework, in the notation of the companion articles, supplies for that structure. The presentation is organized around one question — *can the framework distinguish the two chiralities in a gauge interaction?* — and the answer is split, at the outset, into the three categories the corpus uses.
 
-- **Established, and recomputed below.** The biquaternion Dirac field decomposes into two chiral halves; the chirality operator $\gamma_5$ is an involution, $\gamma_5^2=I_4$, and the projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ are well defined and Lorentz invariant, and are idempotent, orthogonal and complete; the Dirac mass bilinear is chirality-odd and vanishes on a field of definite chirality. On the Dirac module a *chiral* abelian gauge symmetry with independent charges $q_L,q_R$ is consistent: the covariant derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Q$, $Q=q_LP_L+q_RP_R$, is gauge covariant for arbitrary charges, with curvature $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Q$. The mass bilinear is gauge invariant if and only if $q_L=q_R$: a chiral fermion cannot carry a bare Dirac mass.
+- **Established, and recomputed below.** The biquaternion Dirac field decomposes into two chiral halves; the chirality operator $\gamma_5$ is an involution, $\gamma_5^2=I_4$, and the projectors $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ are well defined and Lorentz invariant, and are idempotent, orthogonal and complete; the Dirac mass bilinear is chirality-odd and vanishes on a field of definite chirality. On the Dirac module a *chiral* abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the covariant derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$, $Ϙ=ϙ_LP_L+ϙ_RP_R$, is gauge covariant for arbitrary charges, with curvature $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.
 - **Established from the read list, and sharpened here.** The gauge group of the biquaternionic abelian gauge principle is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a **scalar** on the algebra $M_2(\mathbb{C})$. A gauge group drawn from the centre therefore assigns every component the same charge: it is vector-like and cannot be chiral. Chirality requires a gauge action that is not scalar, hence non-central — the structure whose algebraic status the gauge article leaves open.
 - **Gap, left visible.** Whether the algebra's real structure $\flat=-{}^{*}$ carries a physical Majorana-type pairing, or whether its conjugate equation is the real-form expression of an ordinary Dirac mass, is not settled here. The parent's own mass term is the linear chiral pair, through which the continuous central phase passes and which preserves the vector $U(1)$; the antilinear fermion-number-breaking pairing is the separate equation built on $\flat$. This is the read-list gauge article's open question, and the companion on the neutrino and Majorana fermions is where it belongs. It is recorded here only for its consequence: the framework's vector-like gauge structure and the real structure's antilinear pairing do not naturally meet.
 
@@ -97,20 +97,20 @@ The read-list articles record that the embedding of the projectors in $\mathbb{B
 
 ## Chiral Gauge Symmetry on the Dirac Module
 
-The gauge principle of the read list localizes a **central** phase: $\lambda=e^{iq\Gamma(\tilde{Q})/\hbar}$, with $q$ a single coupling, and it produces a covariant derivative $D=\tilde{\nabla}+\tfrac{iq}{\hbar}\tilde{A}$. A single coupling acts on the whole Dirac field; to make the gauge action *chiral* we must let the two halves carry independent charges. On the module this is elementary, and we write it out because the selection rule below is read off from it.
+The gauge principle of the read list localizes a **central** phase: $\lambda=\exp(iϙ\Gamma(\tilde{Q})/\hbar)$, with $ϙ$ a single coupling, and it produces a covariant derivative $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$. A single coupling acts on the whole Dirac field; to make the gauge action *chiral* we must let the two halves carry independent charges. On the module this is elementary, and we write it out because the selection rule below is read off from it.
 
-Introduce a real scalar gauge function $\Gamma(\tilde{Q})$ and two real charges $q_L, q_R$, and set
+Introduce a real scalar gauge function $\Gamma(\tilde{Q})$ and two real charges $ϙ_L, ϙ_R$, and set
 
 $$
-Q \;=\; q_L P_L + q_R P_R \;=\; \begin{pmatrix} q_L I_2 & 0\\ 0 & q_R I_2\end{pmatrix},
+Ϙ \;=\; ϙ_L P_L + ϙ_R P_R \;=\; \begin{pmatrix} ϙ_L I_2 & 0\\ 0 & ϙ_R I_2\end{pmatrix},
 \qquad
-\Lambda(\tilde{Q}) \;=\; \exp\!\left(\frac{i}{\hbar}\,\Gamma(\tilde{Q})\,Q\right) \;=\; \begin{pmatrix} e^{iq_L\Gamma/\hbar}I_2 & 0\\ 0 & e^{iq_R\Gamma/\hbar}I_2\end{pmatrix}.
+\Lambda(\tilde{Q}) \;=\; \exp\!\left(\frac{i}{\hbar}\,\Gamma(\tilde{Q})\,Ϙ\right) \;=\; \begin{pmatrix} \exp(iq_L\Gamma/\hbar)I_2 & 0\\ 0 & \exp(iq_R\Gamma/\hbar)I_2\end{pmatrix}.
 $$
 
 The gauge transformation is $\Psi\mapsto\Lambda\Psi$, and the connection transforms as $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, exactly as in the abelian gauge principle. The covariant derivative is the module operator
 
 $$
-D_\mu \;=\; \partial_\mu + \frac{i}{\hbar}\,A_\mu\,Q ,
+D_\mu \;=\; \partial_\mu + \frac{i}{\hbar}\,A_\mu\,Ϙ ,
 \qquad\text{so that}\qquad
 D_\mu'(\Lambda\Psi) \;=\; \Lambda\,D_\mu\Psi
 $$
@@ -120,30 +120,30 @@ for the derivative $D'$ built from $A_\mu'=A_\mu-\partial_\mu\Gamma$. The covari
 $$
 \begin{aligned}
 D_\mu'(\Lambda\Psi)
-&= \partial_\mu(\Lambda\Psi) + \frac{i}{\hbar}A_\mu' Q\,\Lambda\Psi
-= \frac{i}{\hbar}(\partial_\mu\Gamma)Q\,\Lambda\Psi + \Lambda\,\partial_\mu\Psi + \frac{i}{\hbar}(A_\mu-\partial_\mu\Gamma)Q\,\Lambda\Psi \\
-&= \Lambda\,\partial_\mu\Psi + \frac{i}{\hbar}A_\mu Q\,\Lambda\Psi
+&= \partial_\mu(\Lambda\Psi) + \frac{i}{\hbar}A_\mu' Ϙ\,\Lambda\Psi
+= \frac{i}{\hbar}(\partial_\mu\Gamma)Ϙ\,\Lambda\Psi + \Lambda\,\partial_\mu\Psi + \frac{i}{\hbar}(A_\mu-\partial_\mu\Gamma)Ϙ\,\Lambda\Psi \\
+&= \Lambda\,\partial_\mu\Psi + \frac{i}{\hbar}A_\mu Ϙ\,\Lambda\Psi
 = \Lambda\,D_\mu\Psi,
 \end{aligned}
 $$
 
-where the second step uses $\Lambda$ diagonal with constant $Q$, so that $\partial_\mu\Lambda=\tfrac{i}{\hbar}(\partial_\mu\Gamma)Q\Lambda$ and $Q$ commutes with $\Lambda$. This holds for **arbitrary** $q_L,q_R$. The curvature is likewise weighted by the charge operator,
+where the second step uses $\Lambda$ diagonal with constant $Ϙ$, so that $\partial_\mu\Lambda=\tfrac{i}{\hbar}(\partial_\mu\Gamma)Ϙ\Lambda$ and $Ϙ$ commutes with $\Lambda$. This holds for **arbitrary** $ϙ_L,ϙ_R$. The curvature is likewise weighted by the charge operator,
 
 $$
-[D_\mu,D_\nu] \;=\; \frac{i}{\hbar}\,F_{\mu\nu}\,Q, \qquad F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu ,
+[D_\mu,D_\nu] \;=\; \frac{i}{\hbar}\,F_{\mu\nu}\,Ϙ, \qquad F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu ,
 $$
 
-which is the abelian curvature of the one connection $A_\mu$, distributed between the two chiralities by $Q$.
+which is the abelian curvature of the one connection $A_\mu$, distributed between the two chiralities by $Ϙ$.
 
 Two structural remarks belong here, because they distinguish this construction from the framework's own gauge principle.
 
-1. **The chiral connection is a module operator, not a biquaternion.** The object $A_\mu Q$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $\gamma_5=P_R-P_L$ gives $Q=\tfrac{q_L+q_R}{2}I_4+\tfrac{q_R-q_L}{2}\gamma_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to $\gamma_5$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not an element of $\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iq}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.
-2. **The abelian chiral connection is genuinely scalar in the curvature.** Since $Q$ is constant, the components commute in the abelian case, and the curvature is the ordinary $F_{\mu\nu}$; the chirality enters only through the charge weighting. A non-abelian chiral connection would additionally require $Q$ to be replaced by generators that do not commute, which is the gap treated in the next section.
+1. **The chiral connection is a module operator, not a biquaternion.** The object $A_\mu Ϙ$ acts on the Dirac module $\Delta$; it is not a single element of $\mathbb{B}$ multiplying the field from the left. Writing $I_4=P_L+P_R$ and $\gamma_5=P_R-P_L$ gives $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}I_4+\tfrac{ϙ_R-ϙ_L}{2}\gamma_5$: the first term is central and lies in $\mathbb{B}$, the second is the chiral part and is proportional to $\gamma_5$, which is a central idempotent combination of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, not an element of $\mathbb{B}$. So the chiral gauge structure does not fit the form $\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms.
+2. **The abelian chiral connection is genuinely scalar in the curvature.** Since $Ϙ$ is constant, the components commute in the abelian case, and the curvature is the ordinary $F_{\mu\nu}$; the chirality enters only through the charge weighting. A non-abelian chiral connection would additionally require $Ϙ$ to be replaced by generators that do not commute, which is the gap treated in the next section.
 
 **The mass selection rule.** The scalar Dirac bilinear of the preceding section is the Lorentz-invariant pairing of the two halves available to a mass term. Under the chiral gauge transformation,
 
 $$
-\psi_L \longmapsto e^{iq_L\Gamma/\hbar}\psi_L, \qquad \psi_R \longmapsto e^{iq_R\Gamma/\hbar}\psi_R,
+\psi_L \longmapsto \exp(iq_L\Gamma/\hbar)\psi_L, \qquad \psi_R \longmapsto \exp(iq_R\Gamma/\hbar)\psi_R,
 $$
 
 so that the coefficient of $\psi_L^{\dagger}\psi_R$ acquires a position-dependent phase while its conjugate acquires the inverse phase. Since $\bar{\Psi}\Psi$ is real and equals $2\,\mathrm{Re}(\psi_L^{\dagger}\psi_R)$,
@@ -151,16 +151,16 @@ so that the coefficient of $\psi_L^{\dagger}\psi_R$ acquires a position-dependen
 $$
 \bar{\Psi}\Psi
 \;\longmapsto\;
-2\,\mathrm{Re}\!\left(e^{\frac{i}{\hbar}(q_R-q_L)\Gamma}\,\psi_L^{\dagger}\psi_R\right),
+2\,\mathrm{Re}\!\left(\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)\,\psi_L^{\dagger}\psi_R\right),
 $$
 
 which is position dependent unless the phase is unity. The bilinear is gauge invariant for all gauge functions $\Gamma$ **if and only if**
 
 $$
-q_R = q_L .
+ϙ_R = ϙ_L .
 $$
 
-This is the **mass selection rule**: a bare Dirac mass is compatible with the gauge symmetry exactly when the two chiralities carry the same charge, i.e. exactly when the fermion is vector-like. A genuinely chiral fermion, $q_R\neq q_L$, has no gauge-invariant bare mass; its mass must wait for a field carrying the compensating charge $q_L-q_R$ (the mass bilinear acquires the phase $e^{i(q_R-q_L)\Gamma/\hbar}$), which is what the Higgs mechanism supplies. The rule was checked on both branches: it holds for all $\Gamma$ when $q_L=q_R$ (the vector-like case, including $q_L=q_R=0$), and it fails for the chiral case $q_L\neq q_R$, including the axial assignment $q_R=-q_L$. In particular the rule is not merely "some charge is preserved": an axial $U(1)$, which carries opposite charges on the two halves and is the natural first guess for a chiral symmetry, does not preserve the mass either.
+This is the **mass selection rule**: a bare Dirac mass is compatible with the gauge symmetry exactly when the two chiralities carry the same charge, i.e. exactly when the fermion is vector-like. A genuinely chiral fermion, $ϙ_R\neq ϙ_L$, has no gauge-invariant bare mass; its mass must wait for a field carrying the compensating charge $ϙ_L-ϙ_R$ (the mass bilinear acquires the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$), which is what the Higgs mechanism supplies. The rule was checked on both branches: it holds for all $\Gamma$ when $ϙ_L=ϙ_R$ (the vector-like case, including $ϙ_L=ϙ_R=0$), and it fails for the chiral case $ϙ_L\neq ϙ_R$, including the axial assignment $ϙ_R=-ϙ_L$. In particular the rule is not merely "some charge is preserved": an axial $U(1)$, which carries opposite charges on the two halves and is the natural first guess for a chiral symmetry, does not preserve the mass either.
 
 **No opposite-chirality partner.** A field of definite chirality has $\bar{\Psi}\Psi=0$ identically, so even before the gauge symmetry is imposed there is nothing for the mass to multiply. The two statements — the bilinear vanishes on a chiral state, and it is not gauge invariant when the charges differ — are the algebraic form of the single physical fact that a chiral fermion is massless in the unbroken phase.
 
@@ -169,20 +169,20 @@ This is the **mass selection rule**: a bare Dirac mass is compatible with the ga
 The gauge group of the biquaternionic abelian gauge principle is not chosen; it is the **unitary part of the centre** of the algebra,
 
 $$
-\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,\,ie_0\}, \qquad U(1) = \{e^{i\theta} : \theta\in\mathbb{R}\} \subset \mathbb{C}_{\mathbb{B}}.
+\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,\,ie_0\}, \qquad U(1) = \{\exp(i\theta) : \theta\in\mathbb{R}\} \subset \mathbb{C}_{\mathbb{B}}.
 $$
 
 A central element commutes with every biquaternion, and this is what makes the construction abelian. It also fixes the way the group can act on matter. On the matrix algebra $M_2(\mathbb{C})$, left multiplication by a central element $\lambda$ is multiplication by a **scalar**,
 
 $$
-M \;\longmapsto\; \lambda M, \qquad \lambda = e^{i\theta},
+M \;\longmapsto\; \lambda M, \qquad \lambda = \exp(i\theta),
 $$
 
 so that every entry, and in particular every column of $M$, acquires the same factor. The two columns are the regular module's two copies of $S$. A gauge group drawn from the centre therefore acts by a scalar on the matter module: it assigns every component the **same** charge. Such a group cannot distinguish $\psi_L$ from $\psi_R$, and it cannot be the source of a chiral gauge interaction. The abelian sector of the framework is **vector-like**.
 
-The converse statement is the useful one. A *chiral* gauge action has $q_L\neq q_R$; by the argument above it cannot be central, and a non-central gauge group is not supplied by the biquaternionic gauge principle, whose group is the centre. (The abelian chiral structure of the preceding section acts on the module, not by an element of $\mathbb{B}$ — structural remark 1.) The centre supplies a canonical abelian gauge group and nothing chiral; chirality requires a non-central, module-realised action whose algebraic status the read-list gauge article leaves open. There the gap is that $\mathbb{B}\cong M_2(\mathbb{C})$ has commutator algebra $\mathrm{GL}(2,\mathbb{C})$, not a compact simple algebra, so that a reality and tracelessness condition must select a compact gauge algebra before a Yang–Mills structure can be claimed. The present article inherits that gap and sharpens its meaning: **without those conditions the framework has no chiral gauge group at all, because the only gauge group it supplies canonically is the scalar centre.**
+The converse statement is the useful one. A *chiral* gauge action has $ϙ_L\neq ϙ_R$; by the argument above it cannot be central, and a non-central gauge group is not supplied by the biquaternionic gauge principle, whose group is the centre. (The abelian chiral structure of the preceding section acts on the module, not by an element of $\mathbb{B}$ — structural remark 1.) The centre supplies a canonical abelian gauge group and nothing chiral; chirality requires a non-central, module-realised action whose algebraic status the read-list gauge article leaves open. There the gap is that $\mathbb{B}\cong M_2(\mathbb{C})$ has commutator algebra $\mathrm{GL}(2,\mathbb{C})$, not a compact simple algebra, so that a reality and tracelessness condition must select a compact gauge algebra before a Yang–Mills structure can be claimed. The present article inherits that gap and sharpens its meaning: **without those conditions the framework has no chiral gauge group at all, because the only gauge group it supplies canonically is the scalar centre.**
 
-**A qualification about the two interpretations of the phase.** The argument above is robust in one direction: a gauge group *drawn from the centre* is scalar and hence vector-like on the algebra. But the corpus does not settle how the biquaternion field is identified with the Dirac module, and the qualification is worth stating rather than hiding. The left regular module is $S\oplus S$, whose two columns both carry the defining representation; the Dirac module is $S\oplus\bar{S}$, whose second factor carries the conjugate action. The passage between them is the real structure, complex conjugation, and under the Lorentz action the conjugate factor transforms by $\mathsf{M}_2(\tilde{U}^{*})$. Applied to a central phase $\lambda=e^{i\theta}$ this assignment would give $e^{i\theta}$ on the left-handed half and $\mathsf{M}_2(\lambda^{*})=e^{-i\theta}$ on the right-handed half — an **axial**, not vector-like, action. Which interpretation is the physical one is the same unsettled question as the embedding of the projectors (the "two-$i$" point), and the present article does not decide it. What is decided is the implication: the centre cannot supply *independent* left and right charges, whichever interpretation of the phase is adopted — under the vector-like interpretation the two charges are equal, and under the axial interpretation they are locked to the single ratio $q_R=-q_L$ — so the centre is chiral only in that locked ratio and cannot be the source of a general chiral gauge group. (The centre is a complex line, one-dimensional over $\mathbb{C}$, not over $\mathbb{R}$.) The non-central gap is therefore a prerequisite for a general chiral gauge sector under either interpretation.
+**A qualification about the two interpretations of the phase.** The argument above is robust in one direction: a gauge group *drawn from the centre* is scalar and hence vector-like on the algebra. But the corpus does not settle how the biquaternion field is identified with the Dirac module, and the qualification is worth stating rather than hiding. The left regular module is $S\oplus S$, whose two columns both carry the defining representation; the Dirac module is $S\oplus\bar{S}$, whose second factor carries the conjugate action. The passage between them is the real structure, complex conjugation, and under the Lorentz action the conjugate factor transforms by $\mathsf{M}_2(\tilde{U}^{*})$. Applied to a central phase $\lambda=\exp(i\theta)$ this assignment would give $\exp(i\theta)$ on the left-handed half and $\mathsf{M}_2(\lambda^{*})=\exp(-i\theta)$ on the right-handed half — an **axial**, not vector-like, action. Which interpretation is the physical one is the same unsettled question as the embedding of the projectors (the "two-$i$" point), and the present article does not decide it. What is decided is the implication: the centre cannot supply *independent* left and right charges, whichever interpretation of the phase is adopted — under the vector-like interpretation the two charges are equal, and under the axial interpretation they are locked to the single ratio $ϙ_R=-ϙ_L$ — so the centre is chiral only in that locked ratio and cannot be the source of a general chiral gauge group. (The centre is a complex line, one-dimensional over $\mathbb{C}$, not over $\mathbb{R}$.) The non-central gap is therefore a prerequisite for a general chiral gauge sector under either interpretation.
 
 ## The Mass Term and the Real Structure
 
@@ -235,20 +235,20 @@ The chiral projectors act on the module; the sector projectors act on the algebr
 - *The two-chiral structure and its projectors.* The spinor module decomposes into $S\oplus\bar{S}$; $\gamma_5$ (with $\gamma_5^2=I_4$) and $P_{L,R}$ are exact and Lorentz invariant, and the projectors are idempotent, orthogonal and complete. The algebra of the projectors has been checked, including the commutation with the even (Lorentz) generators that survives the mass term.
 - *The chirality-oddness of the mass.* The Dirac bilinear is odd under $\gamma_5$ and vanishes on a definite-chirality state; the parent's mass term is the linear off-diagonal chiral pair, while the algebra's real structure $\flat$ is the order-reversing conjugation that exchanges the chiral ideals. This is established.
 
-- *The chiral gauge covariant derivative on the module.* For independent charges $q_L,q_R$ the derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Q$ is covariant with $Q=q_LP_L+q_RP_R$, and its curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Q$. This is the standard chiral abelian gauge structure, expressed on the biquaternion spinor module.
-- *The mass selection rule.* A bare Dirac mass is gauge invariant iff $q_L=q_R$; a chiral fermion is massless in the unbroken phase. This is established by direct computation and is the algebraic content of the Standard Model's need for a Higgs field.
+- *The chiral gauge covariant derivative on the module.* For independent charges $ϙ_L,ϙ_R$ the derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ is covariant with $Ϙ=ϙ_LP_L+ϙ_RP_R$, and its curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. This is the standard chiral abelian gauge structure, expressed on the biquaternion spinor module.
+- *The mass selection rule.* A bare Dirac mass is gauge invariant iff $ϙ_L=ϙ_R$; a chiral fermion is massless in the unbroken phase. This is established by direct computation and is the algebraic content of the Standard Model's need for a Higgs field.
 - *The vector-like character of the centre.* The only canonically available abelian gauge group is the scalar centre, which cannot be chiral.
 
 **What it only transcribes.**
 
-- *The global-to-local gauge argument itself.* The localization of a phase and the appearance of a connection are the read-list gauge principle's; the chiral variation above is that argument run with a charge operator $Q$ instead of a scalar charge $q$.
+- *The global-to-local gauge argument itself.* The localization of a phase and the appearance of a connection are the read-list gauge principle's; the chiral variation above is that argument run with a charge operator $Ϙ$ instead of a scalar charge $ϙ$.
 - *The Higgs requirement.* That a chiral fermion needs a compensating scalar field is read off the selection rule; the mechanism by which the scalar acquires its expectation value is the subject of the planned companion on the Higgs mechanism, and is not derived here.
 - *The Weyl/Dirac split.* The two-component equations of the massless limit, and the helicity–chirality locking, are worked in the exercise articles of the read list; this article uses them and does not re-derive them.
 
 **What it does not supply.**
 
 - *A chiral gauge group.* The centre is scalar and vector-like; a non-central gauge structure, and with it the reality and compactness conditions that would select a compact gauge algebra, are not derived. This is the principal gap.
-- *The value of the charges.* $q_L$ and $q_R$ are parameters, exactly as $q$ is in the abelian gauge principle; the algebra does not fix them.
+- *The value of the charges.* $ϙ_L$ and $ϙ_R$ are parameters, exactly as $ϙ$ is in the abelian gauge principle; the algebra does not fix them.
 - *The resolution of the real structure's pairing.* The parent's mass term is the linear chiral pair and conserves fermion number; whether the separate antilinear pairing built on $\flat$ is Majorana-type or a real-form Dirac mass is open, and is the pivot on which the framework's chiral sector turns.
 
 - *Anomaly cancellation.* A chiral gauge theory with independent left and right charges must satisfy consistency conditions on the spectrum; no biquaternion formulation of the anomaly is attempted here. The planned companion on instantons and solitons is the natural place for it.
@@ -258,7 +258,7 @@ The chiral projectors act on the module; the sector projectors act on the algebr
 
 1. **Can the framework host a chiral gauge group?** The centre supplies only a scalar, vector-like abelian group. Chirality requires a non-central action, hence a gauge group beyond the scalar centre; the read-list gauge article's reality and tracelessness conditions are the prerequisite, and whether they admit a compact simple algebra in $\mathbb{B}\cong M_2(\mathbb{C})$ is not settled.
 
-2. **Which interpretation of the phase is physical?** The centre acts as a scalar on the algebra (vector-like) but would act as $e^{i\theta}$ on $S$ and $e^{-i\theta}$ on $\bar{S}$ under the Lorentz-conjugate assignment (axial). The identification of the biquaternion field with $\Delta$ — the real-structure or "two-$i$" question — decides between them. This article does not.
+2. **Which interpretation of the phase is physical?** The centre acts as a scalar on the algebra (vector-like) but would act as $\exp(i\theta)$ on $S$ and $\exp(-i\theta)$ on $\bar{S}$ under the Lorentz-conjugate assignment (axial). The identification of the biquaternion field with $\Delta$ — the real-structure or "two-$i$" question — decides between them. This article does not.
 
 3. **Is the real structure's pairing Majorana-type or a real-form Dirac mass?** The parent's mass term is the linear chiral pair, through which the continuous central phase passes, so the framework's fermion number is conserved by it. The separate antilinear pairing built on $\flat$ is carried by the parent Dirac article's open question 1 and by the neutrino article; it was the gauge article's open question 5, which now records the axial symmetry as the live item and keeps the pairing alongside it as a re-attribution. Its answer determines whether that pairing is physical and whether the vector-like interpretation of the centre is the correct one.
 
@@ -284,7 +284,7 @@ $$
 
 are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $\gamma_5$ anticommutes with the generators and commutes with every even element. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
 
-A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Q=q_LP_L+q_RP_R$, the covariant derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Q$ satisfies $D_\mu'(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $q_L,q_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Q$. But under the gauge transformation $\bar{\Psi}\Psi$ acquires the position-dependent phase $e^{\frac{i}{\hbar}(q_R-q_L)\Gamma}$, so it is gauge invariant **iff $q_L=q_R$**: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar.
+A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Ϙ=ϙ_LP_L+ϙ_RP_R$, the covariant derivative $D_\mu=\partial_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ satisfies $D_\mu'(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $ϙ_L,ϙ_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. But under the gauge transformation $\bar{\Psi}\Psi$ acquires the position-dependent phase $\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$, so it is gauge invariant **iff $ϙ_L=ϙ_R$**: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar.
 
 The framework's *own* abelian gauge group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore **vector-like** and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $U(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, $\partial_\mu j_5^\mu=2im\bar{\psi}\gamma_5\psi$ (which vanishes only at $m=0$). The algebra's anti-linear object is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: a coupling built on it pairs the field with its conjugate, is not invariant under the continuous central phase, and has the signature of a conjugate-pairing (Majorana-type) term. The real structure is order-reversing and exchanges the two chiral ideals; whether its pairing is the intended physical reading is left open below.
 
@@ -309,13 +309,13 @@ Two gaps are left visible. First, without a non-central gauge structure the fram
 | $P_L = \tfrac12(I_4-\gamma_5),\ P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac mass bilinear (chirality-odd) |
 | $\gamma^\mu$ | Generators, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
-| $q_L, q_R$ | Left and right charges (parameters) |
-| $Q = q_LP_L+q_RP_R$ | Chiral charge operator |
-| $\Lambda = \exp(\tfrac{i}{\hbar}\Gamma Q)$ | Chiral gauge transformation |
-| $D_\mu = \partial_\mu+\tfrac{i}{\hbar}A_\mu Q$ | Chiral covariant derivative |
+| $ϙ_L, ϙ_R$ | Left and right charges (parameters) |
+| $Ϙ = ϙ_LP_L+ϙ_RP_R$ | Chiral charge operator |
+| $\Lambda = \exp(\tfrac{i}{\hbar}\Gamma Ϙ)$ | Chiral gauge transformation |
+| $D_\mu = \partial_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ | Chiral covariant derivative |
 | $A_\mu' = A_\mu-\partial_\mu\Gamma$ | Transformation of the abelian connection |
 | $F_{\mu\nu} = \partial_\mu A_\nu-\partial_\nu A_\mu$ | Abelian curvature |
-| $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Q$ | Chiral curvature identity |
+| $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$ | Chiral curvature identity |
 | $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugation; the algebra's real structure ($\mathbb{C}$-antilinear, order-reversing) |
 | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ | Complexification; the two chiral summands |
 | $\tilde\Pi_+=\tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Primitive idempotents (Peirce, not chirality) |

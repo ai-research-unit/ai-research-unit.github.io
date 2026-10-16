@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace.
 
@@ -19,7 +19,7 @@ $$
 =\bigl[P_0Q_0+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q},
 $$
 the product of the natural conjugate of the first factor with the conjugate of the second
-(*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*). It is the block with
+(*Introduction to the General Quaternionic Sesqualgebra*). It is the block with
 **both** involution signs, and its zero divisors are the elements of the cone $C(\tilde P)=0$
 (*Zero Divisors of the General Quaternionic Sesqualgebra*, above this article in this category).
 The block is the meeting point of the two general families: the cone and the plane of the general
@@ -62,8 +62,8 @@ Algebra*.
 
 **Theorem (the left annihilator and the plain annihilator).** For every $\tilde Q$,
 $$
-A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in K(\tilde Q^{\natural})\bigr\}=K(\tilde Q^{\natural})^{*},
-\qquad K(\tilde Q^{\natural})=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\},
+A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in \langle\tilde Q^{\natural}\rangle_{\natural*}\bigr\}=\langle\tilde Q^{\natural}\rangle_{\natural*}^{*},
+\qquad \langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\},
 $$
 the image under the involution of the plain annihilator of $\tilde Q^{\natural}$. For a nonzero
 element of the cone the left annihilator is of complex dimension two, and off the cone it is
@@ -159,16 +159,16 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquimultiplication, the operation $\mathrm{GQS}$, the product with both involution signs |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, distinct on the cone |
-| $K(\tilde Q^{\natural})=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\}$ | the plain left annihilator of $\tilde Q^{\natural}$, whose star is the left annihilator of the block |
-| $K(\tilde Q^{\natural})^{*}$ | the left annihilator of the block, the star of the plain annihilator |
+| $\langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\}$ | the plain left annihilator of $\tilde Q^{\natural}$, whose star is the left annihilator of the block |
+| $\langle\tilde Q^{\natural}\rangle_{\natural*}^{*}$ | the left annihilator of the block, the star of the plain annihilator |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the criterion of the cone |
 | the two complex planes on the cone | the two annihilators of a nonzero zero divisor, distinct |
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the operation and its table.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- *Introduction to the General Quaternionic Sesqualgebra* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the operation and its table.
 - *Zero Divisors of the General Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.md`), above this article in this category, for the criterion and the two families.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the parent, for the cone $C(\tilde P)=0$.
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the parent, for the cone $C(\tilde P)=0$.
 - *Annihilators of the General Plain Sesqualgebra* (`articles_maths/annihilators-of-the-general-plain-sesqualgebra.md`), the sibling whose single star identifies the two sides.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), the sibling whose single natural conjugation identifies the two sides.

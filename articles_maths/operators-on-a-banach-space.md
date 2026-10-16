@@ -78,7 +78,7 @@ $$
 
 *Proof.* The module axioms are those of the action of maps on a set, the continuity is the bound $\|Tx\|\le\|T\|\|x\|$, and the correspondence between invariant subspaces and submodules is the definition of invariance. The problem is stated as a question, not solved here.
 
-**Example (the shift and the Volterra operator).** On $\ell^p$, $1\le p<\infty$, the unilateral shift $Se_n=e_{n+1}$ is an isometry with $\sigma(S)=\{|\lambda|\le1\}$; the Volterra operator $Vf(x)=\int_0^xf$ on $C[0,1]$ or $L^p[0,1]$ is compact and quasinilpotent, $\sigma(V)=\{0\}$ and $\|V^n\|=1/n!$, so $r(V)=0$; and on $C(K)$ the multiplication operator $M_gf=gf$ by a continuous $g$ has spectrum the range $g(K)$, realising the spectral radius formula as the sup norm of $g$.
+**Example (the shift and the Volterra operator).** On $\ell^{n}$, $1\le p<\infty$, the unilateral shift $Se_n=e_{n+1}$ is an isometry with $\sigma(S)=\{|\lambda|\le1\}$; the Volterra operator $Vf(x)=\int_0^xf$ on $C[0,1]$ or $L^{n}[0,1]$ is compact and quasinilpotent, $\sigma(V)=\{0\}$ and $\|V^n\|=1/n!$, so $r(V)=0$; and on $C(K)$ the multiplication operator $M_gf=gf$ by a continuous $g$ has spectrum the range $g(K)$, realising the spectral radius formula as the sup norm of $g$.
 
 ## Summary
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The two general products of the quaternion space are defined independently in *The Two General Products of the Quaternion $\mathbb{R}$ Space*, each on the coordinates of the two elements of a pair:
+The two general products of the quaternion space are defined independently in *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, each on the coordinates of the two elements of a pair:
 
 $$
 \tilde p\tilde q , \qquad \tilde p^{\natural}\tilde q .
@@ -10,9 +10,9 @@ $$
 
 This article collects the identities that link the two. The two rules are not unrelated: they are read on one and the same pair, the second differing from the first only by the conjugation of the first factor, and every link below is a consequence of that single distinction. The **exchange relation** moves the conjugation from one factor to the other and reads the quaternionic product of one order as the conjugate of the plain product of the other; the plain product is recovered from the quaternionic one and conversely by the separation of the scalar part of the first factor; the **agreement** of the two products is the annihilation of the second factor by the vector part of the first, so that they agree on the real axis and disagree everywhere else; and the scalar parts of the two are symmetric and differ by twice the dot product of the vector parts.
 
-The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the article preceding this one, and the conjugation from *The Group of Involutions of the Quaternions*. It uses the separation identities of that article for the reading of one product through the other. The property table is *Comparison Between the Two General Products*, below this article in this category; the symmetric and antisymmetric halves are *The 6 Products of the Quaternion Real Space*, below this article in this category.
+The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, the article preceding this one, and the conjugation from *The Group of Involutions of the Quaternioid*. It uses the separation identities of that article for the reading of one product through the other. The property table is *Comparison Between the Two General Products*, below this article in this category; the symmetric and antisymmetric halves are *The 6 Products of the Quaternioid Real Space*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product of the vector parts and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in *The Two General Products of the Quaternion $\mathbb{R}$ Space*.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product of the vector parts and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in *The Two General Products of the Quaternioid $\mathbb{R}$ Space*.
 
 ## The Exchange Relation
 
@@ -56,7 +56,7 @@ $$
 \tilde p\tilde q=2p_0\,\tilde q-\tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural}\tilde q=2p_0\,\tilde q-\tilde p\tilde q .
 $$
 
-*Proof.* The separation identities are those of *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the article preceding this one; solving the two linear relations for $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ gives the two readings.
+*Proof.* The separation identities are those of *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, the article preceding this one; solving the two linear relations for $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ gives the two readings.
 
 The reading is the algebraic form of the relation $\tilde p^{\natural}=2p_0e_0-\tilde p$: the conjugate of the first factor is the reflection of the first factor in the scalar axis, and the two products differ by twice the reflection of $\tilde p$ across that axis, applied to $\tilde q$. A computation in the quaternionic product is turned into a computation in the plain one by replacing $\tilde p$ with $\tilde p^{\natural}$ and keeping the second factor, and conversely.
 
@@ -72,7 +72,7 @@ $$
 \mathrm{Sc}\bigl(\tilde p\tilde q\bigr)+\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=2p_0q_0 , \qquad \mathrm{Sc}\bigl(\tilde p\tilde q\bigr)-\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=-2(\vec p,\vec q) .
 $$
 
-Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, read on the pair.
+Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, below this article in this category, read on the pair.
 
 ## The Annihilation Identity
 
@@ -92,7 +92,7 @@ So the two products **agree on the real axis** — on every pair whose first fac
 
 **Corollary (the products on the units).** On the pairs of units the two products agree exactly when the first factor is $e_0$: for every unit $\tilde q$ one has $e_0\tilde q=e_0^{\natural}\tilde q=\tilde q$, while for a first factor $e_k$ with $k\neq0$ the two values are $e_k\tilde q$ and $e_k^{\natural}\tilde q=-e_k\tilde q$, which are opposite and therefore distinct, the second factor being a unit and $e_k$ nonzero.
 
-*Proof.* The annihilation identity requires $\vec p\tilde q=0$; on the pairs of units both factors are nonzero and invertible, so it is equivalent to $\vec p=0$, that is to $\tilde p$ real, which among the units leaves only $\tilde p=e_0$. The two values on a pair with first factor $e_k$, $k\neq0$, are read from the two multiplication tables of *The Two General Products of the Quaternion $\mathbb{R}$ Space*, that of the plain product and that of the quaternionic product.
+*Proof.* The annihilation identity requires $\vec p\tilde q=0$; on the pairs of units both factors are nonzero and invertible, so it is equivalent to $\vec p=0$, that is to $\tilde p$ real, which among the units leaves only $\tilde p=e_0$. The two values on a pair with first factor $e_k$, $k\neq0$, are read from the two multiplication tables of *The Two General Products of the Quaternioid $\mathbb{R}$ Space*, that of the plain product and that of the quaternionic product.
 
 ## Summary
 

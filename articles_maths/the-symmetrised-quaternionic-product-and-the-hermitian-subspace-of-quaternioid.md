@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The **symmetrised quaternionic product** is the commutative companion of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra of Quaternions*:
+The **symmetrised quaternionic product** is the commutative companion of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra*:
 
 $$
 \tilde p \bullet \tilde q = \tfrac12\bigl(\tilde p \star \tilde q + \tilde q \star \tilde p\bigr) .
 $$
 
-It is the multiplication of the symmetric quaternionic algebra of the chapter, and this article does **not** develop that block: the commutative scalar-valued algebra, its zero divisors, its specificities and its matrix models are the articles of *Quaternions as a Symmetric Quaternionic Algebra (SQA) over $\mathbb{R}$*, all below this article in this category, and the introduction of the block is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, below this article in this category.
+It is the symmetrisation of the general quaternionic product, and the commutative scalar-valued rule it defines is not a structure of this category: this article collects what the category keeps of it, the hermitian subspace and the trace form, and cites nothing further.
 
 The reading is short because of one property: the symmetrisation of the quaternionic product is not only commutative but **central-valued**, its value being a real multiple of $e_0$. The symmetrised product is therefore the quaternion form of the space, the Euclidean inner product of $\mathbb{R}^4$, read as a product. It has no unit, it is not associative, and it fails the Jordan identity; and the two subspaces that the conjugation singles out — the scalar line and the vector subspace — are its two natural blocks, because over $\mathbb{R}$ there is **one** nontrivial involution and not two, so there are two eigenspaces and not four.
 
@@ -26,7 +26,7 @@ The product is $\mathbb{R}$-bilinear, commutative, and its values lie in the sca
 
 *Proof.* The two summands are $\tilde p^{\natural}\tilde q$ and $\tilde q^{\natural}\tilde p$, of vector parts $p_0\vec q - q_0\vec p - \vec p \times \vec q$ and $q_0\vec p - p_0\vec q - \vec q \times \vec p$; the cross products are opposite by antisymmetry and cancel in the half-sum, the two copies of $p_0\vec q - q_0\vec p$ cancel too, and the scalar parts add to $2\beta(\tilde p,\tilde q)$.
 
-**Corollary (the quaternion form).** The symmetrised product is the quaternion form of the space read as a product: $\beta$ is the symmetric bilinear form whose diagonal is the quaternionic bilinear algebraic norm, $\beta(\tilde p,\tilde p) = N(\tilde p)$ (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*). It is positive definite and non-degenerate.
+**Corollary (the quaternion form).** The symmetrised product is the quaternion form of the space read as a product: $\beta$ is the symmetric bilinear form whose diagonal is the quaternionic bilinear algebraic norm, $\beta(\tilde p,\tilde p) = \langle\tilde p\rangle_{\natural}$ (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*). It is positive definite and non-degenerate.
 
 **Proposition (no unit, not associative, not Jordan).** The symmetrised product has no unit: $e_0 \bullet \tilde q = q_0e_0$, which differs from $\tilde q$ as soon as the vector part is nonzero. It is not associative: at $(\tilde p,\tilde q,\tilde r) = (e_1,e_1,e_0)$ the two readings are $(\tilde p \bullet \tilde q) \bullet \tilde r = e_0 \bullet e_0 = e_0$ and $\tilde p \bullet (\tilde q \bullet \tilde r) = e_1 \bullet 0 = 0$. It fails the Jordan identity; at $x = y = e_1$ the two sides of
 
@@ -36,7 +36,7 @@ $$
 
 are $(e_1 \bullet e_1) \bullet e_0 = e_0 \bullet e_0 = e_0$ on the left and $e_1 \bullet (e_1 \bullet e_0) = e_1 \bullet 0 = 0$ on the right.
 
-*Proof.* The unit statement is the definition of the product at $e_0$. In the associativity example $e_1 \bullet e_1 = N(e_1)e_0 = e_0$ and $e_1 \bullet e_0 = \beta(e_1,e_0)e_0 = 0$. The Jordan computation uses again $e_1^{\bullet 2} = e_0$, so the left side is $e_0 \bullet e_0 = e_0$ and the right side is $e_1 \bullet 0 = 0$. The failure of the Jordan identity forbids every Jordan-theoretic statement for the symmetrisation, and it is the failure that the ternary product of the preceding article linearises (*The Associator and the Ternary Product of the Quaternionic Product*).
+*Proof.* The unit statement is the definition of the product at $e_0$. In the associativity example $e_1 \bullet e_1 = \langle e_1\rangle_{\natural}e_0 = e_0$ and $e_1 \bullet e_0 = \beta(e_1,e_0)e_0 = 0$. The Jordan computation uses again $e_1^{\bullet 2} = e_0$, so the left side is $e_0 \bullet e_0 = e_0$ and the right side is $e_1 \bullet 0 = 0$. The failure of the Jordan identity forbids every Jordan-theoretic statement for the symmetrisation, and it is the failure that the ternary product of the preceding article linearises (*The Associator and the Ternary Product of the Quaternionic Product*).
 
 ## The Hermitian Subspace
 
@@ -60,11 +60,11 @@ Over $\mathbb{R}$ the scalar sector has **no** nontrivial involution — the bar
 
 ## Positivity on the Hermitian Subspace
 
-**Theorem (positivity).** The symmetrised product is positive definite: $\tilde p \bullet \tilde p = N(\tilde p)e_0$, which is a non-negative multiple of $e_0$ vanishing only at $\tilde p = 0$. On the Hermitian subspace it reads $\tilde p \bullet \tilde q = p_0q_0e_0$, positive definite there; on the anti-Hermitian subspace it reads $\tilde p \bullet \tilde q = (\vec p \cdot \vec q)e_0$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.
+**Theorem (positivity).** The symmetrised product is positive definite: $\tilde p \bullet \tilde p = \langle\tilde p\rangle_{\natural}e_0$, which is a non-negative multiple of $e_0$ vanishing only at $\tilde p = 0$. On the Hermitian subspace it reads $\tilde p \bullet \tilde q = p_0q_0e_0$, positive definite there; on the anti-Hermitian subspace it reads $\tilde p \bullet \tilde q = (\vec p \cdot \vec q)e_0$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.
 
 *Proof.* On the scalar line $\vec p = \vec q = 0$, so $\beta = p_0q_0$; on the vector subspace $p_0 = q_0 = 0$, so $\beta = \vec p \cdot \vec q$; the mixed value has $p_0 = 0$ or $q_0 = 0$ together with the corresponding vector part zero, so it vanishes.
 
-Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$ vanishes exactly on the pairs with $\beta(\tilde p,\tilde q) = 0$, and those pairs are abundant, $e_1 \bullet e_2 = 0$ for two orthogonal pure elements and $e_0 \bullet e_1 = 0$ for a scalar and a vector. What definiteness removes is the zero divisor **against itself**: $\tilde p \bullet \tilde p = N(\tilde p)e_0$ never vanishes for $\tilde p \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (*The Specificities of the General Quaternionic Algebra*, above this article in this category).
+Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$ vanishes exactly on the pairs with $\beta(\tilde p,\tilde q) = 0$, and those pairs are abundant, $e_1 \bullet e_2 = 0$ for two orthogonal pure elements and $e_0 \bullet e_1 = 0$ for a scalar and a vector. What definiteness removes is the zero divisor **against itself**: $\tilde p \bullet \tilde p = \langle\tilde p\rangle_{\natural}e_0$ never vanishes for $\tilde p \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (*The Specificities of the General Quaternionic Algebra*, above this article in this category).
 
 ## Summary
 
@@ -78,7 +78,7 @@ The symmetrised quaternionic product $\tilde p \bullet \tilde q = \tfrac12(\tild
 | $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | the quaternion form, the central coefficient |
 | $\mathbb{M}_+ = \{\tilde p : \tilde p^{\natural} = \tilde p\}$ | the Hermitian subspace, the scalar line $\mathbb{R}e_0$ |
 | $\mathbb{M}_- = \{\tilde p : \tilde p^{\natural} = -\tilde p\}$ | the anti-Hermitian subspace, the vector subspace |
-| $N(\tilde p) = \beta(\tilde p,\tilde p)$ | the quaternionic bilinear algebraic norm |
+| $\langle\tilde p\rangle_{\natural} = \beta(\tilde p,\tilde p)$ | the quaternionic bilinear algebraic norm |
 | $x^{\bullet 2} = x \bullet x$ | the square in the symmetrised product |
 
 ## Further Reading

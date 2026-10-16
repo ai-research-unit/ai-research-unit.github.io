@@ -6,14 +6,14 @@ A minimal left ideal of a Clifford algebra is a simple module, and the algebra a
 
 Two facts organise the article. First, of the two one-sided families only the left family preserves a left ideal, so the spin representation is intrinsically one-sided: a right multiplication by a rotor does not keep the ideal fixed, and the dual representation requires a minimal right ideal instead. Second, the ideal being simple, the action on it is irreducible and its commutant is a division algebra, so the spin representation has no invariant subspaces and its structure is that of a simple module over a division algebra.
 
-The algebra and the minimal left ideals are *Left Multiplication and the Clifford Module Structure* and *Spinors as Minimal Left Ideals with Inner Conjugation*; the operator calculus of the left and the right multiplications is *One-Sided Operators on a Clifford Algebra*; the spinor module and its dimension, the chiral splitting and the complex spin representation are *Spin Representations and Clifford Modules with Inner Conjugation*; the spin group and the double cover are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *The Two-Sided Operators and the Spin Group*. Those constructions are quoted, not repeated; what this article adds is the description of the representation as the one-sided action on a minimal left ideal, with its irreducibility and its commutant. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate, and the algebra is semisimple.
+The algebra and the minimal left ideals are *Left Multiplication and the Clifford Module Structure* and *Spinors as Minimal Left Ideals with Inner Conjugation*; the operator calculus of the left and the right multiplications is *One-Sided Operators on a Clifford Algebra*; the spinor module and its dimension, the chiral splitting and the complex spin representation are *Spin Representations and Clifford Modules with Inner Conjugation*; the spin group and the double cover are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and *The Two-Sided Operators and the Spin Group*. Those constructions are quoted, not repeated; what this article adds is the description of the representation as the one-sided action on a minimal left ideal, with its irreducibility and its commutant. The base is a field $F$ of characteristic not $2$, $m$ is non-degenerate, and the algebra is semisimple.
 
 ## The One-Sided Action on a Left Ideal
 
-**Definition.** Let $I = \mathrm{Cl}(V,q)\pi$ be a minimal left ideal. The **one-sided action** of the algebra on $I$ is the restriction of the left multiplication,
+**Definition.** Let $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ be a minimal left ideal. The **one-sided action** of the algebra on $I$ is the restriction of the left multiplication,
 
 $$
-\rho_I : \mathrm{Cl}(V,q) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I .
+\rho_I : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I .
 $$
 
 It is the module action of the regular module on its submodule $I$, and it is an algebra homomorphism.
@@ -33,20 +33,20 @@ It is the module action of the regular module on its submodule $I$, and it is an
 **Definition.** The **spin representation** attached to the module $I$ is the restriction of the one-sided action to the spin group,
 
 $$
-\rho : \mathrm{Spin}(V,q) \longrightarrow GL_F(I), \qquad \rho(x) = \rho_I(x)\big|_{\mathrm{Spin}(V,q)} .
+\rho : \mathrm{Spin}(V,\mathfrak{Q}) \longrightarrow GL_F(I), \qquad \rho(x) = \rho_I(x)\big|_{\mathrm{Spin}(V,\mathfrak{Q})} .
 $$
 
 **Theorem (irreducibility).** Let $I$ be a minimal left ideal. Then the action $\rho_I$ of the algebra on $I$ is irreducible: $I$ has no proper nonzero submodule, and every nonzero element of $I$ is a cyclic vector. Equivalently, the only $F$-linear maps $T : I \to I$ with $T(x\psi) = xT(\psi)$ for every $x$ and $\psi$ are the multiplications by elements of the division ring $D = \mathrm{End}_{\mathrm{Cl}}(I)$, so the commutant is a division algebra and
 
 $$
-\rho_I\bigl(\mathrm{Cl}(V,q)\bigr) = \mathrm{End}_D(I)
+\rho_I\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) = \mathrm{End}_D(I)
 $$
 
 whenever the algebra is simple.
 
 **Proof.** A submodule of the left ideal $I$ is a left ideal contained in $I$, and minimality leaves only $0$ and $I$; a nonzero $\psi \in I$ generates $\mathrm{Cl}\psi = I$. For the commutant, a $T$ commuting with the action is an endomorphism of the simple module, so Schur's lemma makes $D = \mathrm{End}_{\mathrm{Cl}}(I)$ a division ring; the density statement is the double centraliser theorem applied to the simple algebra.
 
-**Theorem (the kernel on the group).** The representation $\rho$ satisfies $\rho(-1) = -\mathrm{id}_I \neq \mathrm{id}_I$, so $-1$ is **not** in the kernel. When the Clifford algebra is simple the action of the algebra on the irreducible module is faithful, so an element of the spin group acting as the identity on $I$ is the identity of the algebra, and the kernel of $\rho$ is trivial. When the algebra is a product $A \times A$, the irreducible module of one factor is annihilated by the other and the kernel is the nontrivial subgroup $\mathrm{Spin}(V,q) \cap (\{1\}\times A)$. In both cases $\rho$ does not descend to $SO(V,q)$: the element $-1$ is in the kernel of the projection $\mathrm{Spin} \to SO$ but acts as $-\mathrm{id}_I$ on the module.
+**Theorem (the kernel on the group).** The representation $\rho$ satisfies $\rho(-1) = -\mathrm{id}_I \neq \mathrm{id}_I$, so $-1$ is **not** in the kernel. When the Clifford algebra is simple the action of the algebra on the irreducible module is faithful, so an element of the spin group acting as the identity on $I$ is the identity of the algebra, and the kernel of $\rho$ is trivial. When the algebra is a product $A \times A$, the irreducible module of one factor is annihilated by the other and the kernel is the nontrivial subgroup $\mathrm{Spin}(V,\mathfrak{Q}) \cap (\{1\}\times A)$. In both cases $\rho$ does not descend to $SO(V,\mathfrak{Q})$: the element $-1$ is in the kernel of the projection $\mathrm{Spin} \to SO$ but acts as $-\mathrm{id}_I$ on the module.
 
 **Proof.** The element $-1$ is the scalar $-1$ of the algebra and $I \neq 0$, so it acts as $-\mathrm{id}_I$. In the simple case the action of the algebra on its irreducible module is faithful, so the kernel on the spin group is trivial. The product case and the half-spin kernels are computed in *Spin Representations and Clifford Modules with Inner Conjugation*.
 
@@ -76,13 +76,13 @@ In $\mathrm{Cl}_{0,2}(\mathbb{R})\cong\mathbb{H}$ with $R = e_1e_2$ and $I$ a mi
 
 ## Summary
 
-On a minimal left ideal $I = \mathrm{Cl}(V,q)\pi$ the **one-sided action** $\rho_I(x)\psi = x\psi$ is the module action of the algebra, and it is the left family alone: a right multiplication does not preserve a left ideal, so nothing two-sided acts on the spinors. The action is **irreducible**, because $I$ is a simple module; its commutant is the division algebra $D = \mathrm{End}_{\mathrm{Cl}}(I)$ and, over a simple algebra, the action exhausts $\mathrm{End}_D(I)$. The **spin representation** is the restriction of this action to $\mathrm{Spin}(V,q)$; it satisfies $\rho(-1) = -\mathrm{id}_I$, its kernel is trivial over a simple algebra and is the other factor over a product algebra, and it therefore does not descend to $SO(V,q)$ – the element $-1$ is invisible to $SO$ but acts as $-\mathrm{id}_I$ on the spinors. The action on the vectors by the sandwich is a different representation, on a different space, and the one-sided action is the correct one for spinors because only left multiplication stays in the ideal. The construction of the ideals, their dimension, the chirality and the concrete models are *Spinors as Minimal Left Ideals with Inner Conjugation* and *Spin Representations and Clifford Modules with Inner Conjugation*.
+On a minimal left ideal $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ the **one-sided action** $\rho_I(x)\psi = x\psi$ is the module action of the algebra, and it is the left family alone: a right multiplication does not preserve a left ideal, so nothing two-sided acts on the spinors. The action is **irreducible**, because $I$ is a simple module; its commutant is the division algebra $D = \mathrm{End}_{\mathrm{Cl}}(I)$ and, over a simple algebra, the action exhausts $\mathrm{End}_D(I)$. The **spin representation** is the restriction of this action to $\mathrm{Spin}(V,\mathfrak{Q})$; it satisfies $\rho(-1) = -\mathrm{id}_I$, its kernel is trivial over a simple algebra and is the other factor over a product algebra, and it therefore does not descend to $SO(V,\mathfrak{Q})$ – the element $-1$ is invisible to $SO$ but acts as $-\mathrm{id}_I$ on the spinors. The action on the vectors by the sandwich is a different representation, on a different space, and the one-sided action is the correct one for spinors because only left multiplication stays in the ideal. The construction of the ideals, their dimension, the chirality and the concrete models are *Spinors as Minimal Left Ideals with Inner Conjugation* and *Spin Representations and Clifford Modules with Inner Conjugation*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $I = \mathrm{Cl}(V,q)\pi$ | Minimal left ideal, the spinor space |
+| $I = \mathrm{Cl}(V,\mathfrak{Q})\pi$ | Minimal left ideal, the spinor space |
 | $\rho_I(x)$ | One-sided action, the left multiplication restricted to $I$ |
 | $R_y(\psi) = \psi y$ | Right multiplication, which does not preserve $I$ |
 | $\rho = \rho_I\big|_{\mathrm{Spin}}$ | Spin representation |

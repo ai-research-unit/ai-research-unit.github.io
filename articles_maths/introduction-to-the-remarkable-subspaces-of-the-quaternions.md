@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ carries two distinguished real subspaces and no more: the **scalar subspace**, the line of real quaternions, and the **vector subspace**, the three-dimensional space of pure quaternions. The element, the basis and the product are those of *Quaternion Algebra*; the real vector space reading is *The Quaternions as a Vector Space over $\mathbb{R}$*, and the involutions are *The Group of Involutions of the Quaternions*.
+The quaternion algebra $\mathbb{H}$ carries two distinguished real subspaces and no more: the **scalar subspace**, the line of real quaternions, and the **vector subspace**, the three-dimensional space of pure quaternions. The element, the basis and the product are those of *Quaternion Algebra*; the real vector space reading is *Quaternion Algebra*, and the involutions are *Quaternion Involutions and Projections*.
 
 Here there is no central unit and the quaternion norm is definite, so the lattice has two subspaces and the norm is positive. The point of the article is exactly this contrast, and it is stated at the end rather than left to the reader.
 
-The article owns the two subspaces one by one: the defining condition, the coordinate condition, the basis, the dimension, the role, and the two closures. It owns no product theory, no form and no topology; the norm is quoted from *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the invertibility criterion from *Norm and Invertibility in the Quaternion Algebra*, below this article in this category.
+The article owns the two subspaces one by one: the defining condition, the coordinate condition, the basis, the dimension, the role, and the two closures. It owns no product theory, no form and no topology; the norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, below this article in this category.
 
 ## The Natural Sign and the Two Subspaces
 
@@ -28,7 +28,7 @@ Its projection is the scalar part $\mathrm{Sc}(\tilde q)=\tfrac12(\tilde q+\tild
 
 **Role.** The scalar subspace is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{R}$; it is the **centre** of the algebra, since it commutes with every element and every central element is scalar; and it is closed under inversion, the inverse of a nonzero scalar being the scalar $1/s$. It is the unique copy of the field in $\mathbb{H}$ up to the choice of a real unit, and it is the base of the algebra as a free module, the whole of $\mathbb{H}$ being a free module of rank four over it.
 
-**Norm.** On $\mathbb{R}_{\mathbb{H}}$ the quaternion norm is the square, $N(s)=s^2$, and it is positive definite on the line; the nonzero scalars are exactly the units of the line.
+**Norm.** On $\mathbb{R}_{\mathbb{H}}$ the quaternion norm is the square, $\langle s\rangle_{\natural}=s^2$, and it is positive definite on the line; the nonzero scalars are exactly the units of the line.
 
 ## The Vector Subspace
 
@@ -48,23 +48,23 @@ $$
 $$
 with $\langle\vec p,\vec q\rangle=\sum_kp_kq_k$ the inner product and $\vec p\times\vec q$ the cross product; the scalar part vanishes exactly when $\vec p$ and $\vec q$ are orthogonal. The symmetric and antisymmetric parts are
 $$
-\vec p\vec q+\vec q\vec p=-2\langle\vec p,\vec q\rangle , \qquad \vec p\vec q-\vec q\vec p=2(\vec p\times\vec q),
+\vec p\vec q+\vec q\vec p=-2\langle\vec p,\vec q\rangle, \qquad \vec p\vec q-\vec q\vec p=2(\vec p\times\vec q),
 $$
-so the cross product is recovered by $\vec p\times\vec q=\tfrac12(\vec p\vec q-\vec q\vec p)$. The subspace is closed under inversion — for pure nonzero $\vec q$ the inverse is $-\vec q/N(\vec q)$, again pure — but the square $\vec q^2=-N(\vec q)$ leaves the subspace. The vector subspace is the derived part of the algebra: the products of its elements generate $\mathbb{H}$, and under the commutator bracket it is the Lie algebra $\mathfrak{su}(2)$ of the group of unit quaternions.
+so the cross product is recovered by $\vec p\times\vec q=\tfrac12(\vec p\vec q-\vec q\vec p)$. The subspace is closed under inversion — for pure nonzero $\vec q$ the inverse is $-\vec q/\langle \vec q\rangle_{\natural}$, again pure — but the square $\vec q^2=-\langle \vec q\rangle_{\natural}$ leaves the subspace. The vector subspace is the derived part of the algebra: the products of its elements generate $\mathbb{H}$, and under the commutator bracket it is the Lie algebra $\mathfrak{su}(2)$ of the group of unit quaternions.
 
-**Norm.** On $\mathrm{Vect}(\mathbb{H})$ the quaternion norm is the square of the Euclidean norm, $N(\vec q)=|\vec q|^2=\langle\vec q,\vec q\rangle$, and it is positive definite on the three-space. Its unit sphere is the sphere of roots of $-1$: $N(\vec q)=1$ is $\vec q^2=-1$, the sphere of unit imaginary quaternions that carry the inner involutions of *The Group of Involutions of the Quaternions*.
+**Norm.** On $\mathrm{Vect}(\mathbb{H})$ the quaternion norm is the square of the Euclidean norm, $\langle \vec q\rangle_{\natural}=|\vec q|^2=\langle\vec q,\vec q\rangle$, and it is positive definite on the three-space. Its unit sphere is the sphere of roots of $-1$: $\langle \vec q\rangle_{\natural}=1$ is $\vec q^2=-1$, the sphere of unit imaginary quaternions that carry the inner involutions of *Quaternion Involutions and Projections*.
 
 Together with the decomposition $\tilde q=\mathrm{Sc}(\tilde q)+\vec q$ the two restrictions give the orthogonal sum
 $$
-N(\tilde q)=N(\mathrm{Sc}(\tilde q))+N(\vec q)=q_0^2+|\vec q|^2,
+\langle\tilde q\rangle_{\natural}=\langle\mathrm{Sc}(\tilde q)\rangle_{\natural}+\langle \vec q\rangle_{\natural}=q_0^2+|\vec q|^2,
 $$
-the two subspaces being orthogonal for the associated inner product; this is *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category: every nonzero element of either subspace is a unit, the scalar line and the vector space both meeting the singular set only at zero.
+the two subspaces being orthogonal for the associated inner product; this is *Norm and Invertibility in the Quaternion Algebra*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category: every nonzero element of either subspace is a unit, the scalar line and the vector space both meeting the singular set only at zero.
 
 ## The Two-Subspace Lattice and the Absence of the Full Lattice
 
 **Proposition.** In the quaternion algebra the distinguished real subspaces are exactly two, the scalar line and the vector space, and they are supplementary,
 $$
-\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H}) , \qquad \mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0 , \qquad 1+3=4 .
+\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H}), \qquad \mathbb{R}_{\mathbb{H}}\cap\mathrm{Vect}(\mathbb{H})=0, \qquad 1+3=4.
 $$
 Every other subspace distinguished by the involutions is $0$, $\mathbb{H}$, or one of these two.
 
@@ -76,7 +76,7 @@ The additive decomposition carried by the two subspaces, and the polar decomposi
 
 ## Summary
 
-The quaternion algebra has two remarkable real subspaces. The scalar line $\mathbb{R}_{\mathbb{H}}$ is the fixed space of the natural sign, of dimension one, a subalgebra and the centre, closed under inversion, on which the norm is the square. The vector space $\mathrm{Vect}(\mathbb{H})$ is the anti-fixed space, of dimension three, not a subalgebra, with product $\vec p\vec q=-\langle\vec p,\vec q\rangle+\vec p\times\vec q$; it is closed under inversion, its square is the negative norm, and its unit sphere is the sphere of roots of $-1$. The two are supplementary and orthogonal for the norm, and $N(\tilde q)=q_0^2+|\vec q|^2$.
+The quaternion algebra has two remarkable real subspaces. The scalar line $\mathbb{R}_{\mathbb{H}}$ is the fixed space of the natural sign, of dimension one, a subalgebra and the centre, closed under inversion, on which the norm is the square. The vector space $\mathrm{Vect}(\mathbb{H})$ is the anti-fixed space, of dimension three, not a subalgebra, with product $\vec p\vec q=-\langle\vec p,\vec q\rangle+\vec p\times\vec q$; it is closed under inversion, its square is the negative norm, and its unit sphere is the sphere of roots of $-1$. The two are supplementary and orthogonal for the norm, and $\langle\tilde q\rangle_{\natural}=q_0^2+|\vec q|^2$.
 
 ## Summary of Notation
 
@@ -88,11 +88,9 @@ The quaternion algebra has two remarkable real subspaces. The scalar line $\math
 | $\vec q=\tfrac12(\tilde q-\tilde q^{\natural})$ | the vector-part projection |
 | $\langle\vec p,\vec q\rangle$ | the inner product $\sum_kp_kq_k$ on $\mathrm{Vect}(\mathbb{H})$ |
 | $\vec p\times\vec q=\tfrac12(\vec p\vec q-\vec q\vec p)$ | the cross product on $\mathrm{Vect}(\mathbb{H})$ |
-| $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+\lvert\vec q\rvert^2$ | the quaternion norm, the orthogonal sum of its restrictions |
+| $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+\lvert\vec q\rvert^2$ | the quaternion norm, the orthogonal sum of its restrictions |
 
 ## Further Reading
 
 - *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element, the basis and the product.
-- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), for the natural sign and the inner involutions that move the two subspaces.
 - *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the scalar–vector, the axis and the twist decompositions.
-- *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternioid-r-space.md`), below this article in this category, for the algebraic norms $\tilde q^2$ and $\tilde q\tilde q^{\natural}$.

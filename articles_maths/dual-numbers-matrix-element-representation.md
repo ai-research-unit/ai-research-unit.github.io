@@ -11,7 +11,7 @@ $$
 A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $\langle A\rangle = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
 
 ## The Representation
 
@@ -110,12 +110,12 @@ which is again upper-triangular Toeplitz; the unit is $I$; and $E^2 = 0$.
 **Theorem.** For $A = a + \varepsilon a',$
 
 $$
-\operatorname{tr}\mathsf{M}_2(A) = 2a, \qquad \det\mathsf{M}_2(A) = a^2 = N(A), \qquad \chi_{\mathsf{M}_2(A)}(\lambda) = (\lambda - a)^2.
+\operatorname{tr}\mathsf{M}_2(A) = 2a, \qquad \det\mathsf{M}_2(A) = a^2 = \langle A\rangle, \qquad \chi_{\mathsf{M}_2(A)}(\lambda) = (\lambda - a)^2.
 $$
 
 **Proof.** The trace is the sum of the diagonal entries $a + a = 2a$; the determinant is $a^2 - 0 = a^2$; the characteristic polynomial is the product of the diagonal entries of $\lambda I - \mathsf{M}_2(A)$, namely $(\lambda - a)^2$, the matrix being triangular.
 
-**Corollary.** The determinant is the norm and is multiplicative, $\det\mathsf{M}_2(AB) = \det\mathsf{M}_2(A)\det\mathsf{M}_2(B)$, which is the multiplicativity of $N$ read in the matrix algebra; the trace is twice the real part.
+**Corollary.** The determinant is the norm and is multiplicative, $\det\mathsf{M}_2(AB) = \det\mathsf{M}_2(A)\det\mathsf{M}_2(B)$, which is the multiplicativity of $\langle\cdot\rangle$ read in the matrix algebra; the trace is twice the real part.
 
 **Corollary.** The eigenvalues of $\mathsf{M}_2(A)$ are both equal to $a$, the real part. The matrix is diagonalizable only when $a' = 0$, in which case it is the scalar matrix $aI$; otherwise it is a nondiagonalizable Jordan block.
 
@@ -215,7 +215,7 @@ $$
 \mathsf{M}_2(A)\mathsf{M}_2(B) = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 4 & 5 \\ 0 & 4 \end{pmatrix} = \begin{pmatrix} 8 & 22 \\ 0 & 8 \end{pmatrix} = \mathsf{M}_2(AB),
 $$
 
-matching $AB = 8 + 22\varepsilon$; moreover $\det\mathsf{M}_2(A) = 4 = N(A)$ and $\det\mathsf{M}_2(AB) = 64 = N(A)N(B)$.
+matching $AB = 8 + 22\varepsilon$; moreover $\det\mathsf{M}_2(A) = 4 = \langle A\rangle$ and $\det\mathsf{M}_2(AB) = 64 = \langle A\rangle\langle B\rangle$.
 
 **Example (the shear subgroup).** For $s \in R$ the image of $1 + s\varepsilon$ is the unipotent matrix
 
@@ -233,7 +233,7 @@ $$
 \mathsf{M}_2(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}, \qquad \mathsf{M}_2(AB) = \mathsf{M}_2(A)\mathsf{M}_2(B), \qquad \ker\mathsf{M}_2 = 0,
 $$
 
-identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular Toeplitz matrices, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ with $E^2 = 0$. The trace is $2a$, twice the real part; the determinant is $a^2 = N(A)$, the degenerate norm; and the characteristic polynomial is $(\lambda - a)^2$, exhibiting the single repeated eigenvalue equal to the real part. The distinguished submodules map to the scalar matrices $R\,I$ and the strictly upper-triangular matrices $R\,E$; dual conjugation is the inner involution by $J = \operatorname{diag}(1,-1)$; and the maximal ideal is the nilpotent line $R\,E$. The regular representation of the companion articles is the transpose convention, with the infinitesimal part in the lower-left corner. the shear subgroup is $I + R\,E$, with $\mathsf{M}_2(1 + s\varepsilon)\mathsf{M}_2(1 + t\varepsilon) = \mathsf{M}_2(1 + (s+t)\varepsilon)$; the algebra automorphisms $\varphi_c$ are realised by conjugation with the diagonal matrices $\operatorname{diag}(c, 1)$; and the polar form is recovered from the trace and the determinant by $B(A, B) = \tfrac{1}{2}(\operatorname{tr}\mathsf{M}_2(A)\operatorname{tr}\mathsf{M}_2(B) - \operatorname{tr}(\mathsf{M}_2(A)\mathsf{M}_2(B)))$. Compared with the complex algebra, $\mathbb{C}$ has a faithful $2\times2$ real representation with determinant the non-degenerate form $a^2 + b^2$, while the dual algebra has a faithful $2\times2$ representation over $R$ with determinant the degenerate form $a^2$.
+identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular Toeplitz matrices, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ with $E^2 = 0$. The trace is $2a$, twice the real part; the determinant is $a^2 = \langle A\rangle$, the degenerate norm; and the characteristic polynomial is $(\lambda - a)^2$, exhibiting the single repeated eigenvalue equal to the real part. The distinguished submodules map to the scalar matrices $R\,I$ and the strictly upper-triangular matrices $R\,E$; dual conjugation is the inner involution by $J = \operatorname{diag}(1,-1)$; and the maximal ideal is the nilpotent line $R\,E$. The regular representation of the companion articles is the transpose convention, with the infinitesimal part in the lower-left corner. the shear subgroup is $I + R\,E$, with $\mathsf{M}_2(1 + s\varepsilon)\mathsf{M}_2(1 + t\varepsilon) = \mathsf{M}_2(1 + (s+t)\varepsilon)$; the algebra automorphisms $\varphi_c$ are realised by conjugation with the diagonal matrices $\operatorname{diag}(c, 1)$; and the polar form is recovered from the trace and the determinant by $\langle A, B\rangle = \tfrac{1}{2}(\operatorname{tr}\mathsf{M}_2(A)\operatorname{tr}\mathsf{M}_2(B) - \operatorname{tr}(\mathsf{M}_2(A)\mathsf{M}_2(B)))$. Compared with the complex algebra, $\mathbb{C}$ has a faithful $2\times2$ real representation with determinant the non-degenerate form $a^2 + b^2$, while the dual algebra has a faithful $2\times2$ representation over $R$ with determinant the degenerate form $a^2$.
 
 ## Summary of Notation
 
@@ -244,7 +244,7 @@ identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular 
 | $A = a + \varepsilon a'$ | General dual number |
 | $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
 | $\bar{A} = a - \varepsilon a'$ | Dual conjugation |
-| $N(A) = a^2$ | Norm, equal to $\det\mathsf{M}_2(A)$ |
+| $\langle A\rangle = a^2$ | Norm, equal to $\det\mathsf{M}_2(A)$ |
 | $\mathsf{M}_2(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}$ | Faithful matrix representation |
 | $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = \mathsf{M}_2(\varepsilon)$ | Nilpotent Jordan block, $E^2 = 0$ |
 | $J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ | Involution realizing dual conjugation |

@@ -46,7 +46,7 @@ $$
 \Phi(t,s)=\sum_{n\ge0}\ \int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)\,dt_1\cdots dt_n,
 $$
 
-with the $n=0$ term the identity, and $\|\Phi(t,s)\|\le e^{\int_s^t\|A(u)\|\,du}$.
+with the $n=0$ term the identity, and $\|\Phi(t,s)\|\le \exp(\int_s^t\|A(u)\|\,du)$.
 
 *Proof.* The integral equation $u(t)=x+\int_s^tA(u)u(u)\,du$ is solved by the Volterra iteration $u_0=x$, $u_{n+1}(t)=x+\int_s^tA(u)u_n(u)\,du$, whose $n$-th increment is the displayed $n$-fold integral; the estimate $\|u_{n+1}-u_n\|\le\frac{1}{(n+1)!}\bigl(\int_s^t\|A\|\bigr)^{n+1}\|x\|$ makes the series converge uniformly to the unique solution, and the norm bound follows by summing.
 
@@ -92,7 +92,7 @@ $$
 
 the cocycle law becomes the **semigroup law** $T(0)=I$ and $T(t+s)=T(t)T(s)$ for $s,t\ge0$; the family $\{T(t)\}_{t\ge0}$ is a **one-parameter semigroup** on $X$.
 
-**Theorem (generation, quoted).** A strongly continuous semigroup $\{T(t)\}$ has a closed densely defined **generator** $A=\lim_{t\to0^+}\frac{1}{t}(T(t)-I)$, the map $t\mapsto T(t)x$ is differentiable with derivative $T(t)Ax$ for $x\in D(A)$, and the semigroup is recovered from the resolvent by the Laplace transform $R(\lambda,A)=\int_0^\infty e^{-\lambda t}T(t)\,dt$ for $\operatorname{Re}\lambda>\omega_0$. The semigroup is a contraction semigroup exactly when $A$ is closed, densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$, by the **Hille–Yosida theorem**; the dissipative form of the same criterion is the **Lumer–Phillips theorem**.
+**Theorem (generation, quoted).** A strongly continuous semigroup $\{T(t)\}$ has a closed densely defined **generator** $A=\lim_{t\to0^+}\frac{1}{t}(T(t)-I)$, the map $t\mapsto T(t)x$ is differentiable with derivative $T(t)Ax$ for $x\in D(A)$, and the semigroup is recovered from the resolvent by the Laplace transform $R(\lambda,A)=\int_0^\infty \exp(-\lambda t)T(t)\,dt$ for $\operatorname{Re}\lambda>\omega_0$. The semigroup is a contraction semigroup exactly when $A$ is closed, densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$, by the **Hille–Yosida theorem**; the dissipative form of the same criterion is the **Lumer–Phillips theorem**.
 
 *Proof.* Quoted as standard from *Semigroups and Evolution Equations*, where the generation theorems, the resolvent identity and the spectral mapping theorem are proved; the statement is repeated here only to fix the correspondence between the generator of the semigroup and the coefficient operator of the autonomous equation.
 
@@ -126,15 +126,15 @@ $$
 
 the values of the evolution operator at later periods are the powers of the monodromy, $\Phi(nT,0)=M^n$, and $\Phi(t+nT,s+nT)=\Phi(t,s)$.
 
-**Theorem (Floquet–Lyapunov).** Let $A(t)$ be $T$-periodic and let $M$ be its monodromy. Then there is a $T$-periodic family $P(t)\in B(X)$ with $P(0)=I$ and a bounded operator $B$ with $e^{TB}=M$ such that
+**Theorem (Floquet–Lyapunov).** Let $A(t)$ be $T$-periodic and let $M$ be its monodromy. Then there is a $T$-periodic family $P(t)\in B(X)$ with $P(0)=I$ and a bounded operator $B$ with $\exp(TB)=M$ such that
 
 $$
-\Phi(t,0)=P(t)e^{tB}, \qquad \Phi(t,s)=P(t)e^{(t-s)B}P(s)^{-1}.
+\Phi(t,0)=P(t)\exp(tB), \qquad \Phi(t,s)=P(t)\exp((t-s)B)P(s)^{-1}.
 $$
 
-The eigenvalues of $M$ are the **Floquet multipliers** and the numbers $\lambda$ with $e^{T\lambda}\in\sigma(M)$ the **Floquet exponents**; the zero solution of the equation is exponentially stable exactly when every Floquet multiplier lies inside the unit circle, and unstable when one lies outside.
+The eigenvalues of $M$ are the **Floquet multipliers** and the numbers $\lambda$ with $\exp(T\lambda)\in\sigma(M)$ the **Floquet exponents**; the zero solution of the equation is exponentially stable exactly when every Floquet multiplier lies inside the unit circle, and unstable when one lies outside.
 
-*Proof.* One defines $P(t)=\Phi(t,0)e^{-tB}$, where $B$ is a logarithm of $M$; then $P(t+T)=\Phi(t+T,0)e^{-tB}e^{-TB}=\Phi(t,0)Me^{-TB}e^{-tB}=P(t)$ by the periodicity of the equation and the choice $e^{TB}=M$, so $P$ is $T$-periodic and $P(0)=I$. The stability statement is the spectral radius formula for the powers of the monodromy, $M^n=\Phi(nT,0)$.
+*Proof.* One defines $P(t)=\Phi(t,0)\exp(-tB)$, where $B$ is a logarithm of $M$; then $P(t+T)=\Phi(t+T,0)\exp(-tB)\exp(-TB)=\Phi(t,0)M\exp(-TB)\exp(-tB)=P(t)$ by the periodicity of the equation and the choice $\exp(TB)=M$, so $P$ is $T$-periodic and $P(0)=I$. The stability statement is the spectral radius formula for the powers of the monodromy, $M^n=\Phi(nT,0)$.
 
 **Remark (the link with the return map).** For a periodic orbit of a flow the monodromy of the variational equation over one period and the derivative of the **Poincaré return map** on a transverse section carry the same stability information: the multipliers of the return map are the Floquet multipliers other than the trivial multiplier $1$ of the flow direction. The return map and its operator theory are *The Poincaré Map*, later in this category; the derivative of the return map at a periodic orbit belongs to *Smooth Dynamical Systems*, and no new proof is offered here.
 
@@ -144,7 +144,7 @@ $$
 \Phi(\pi,0)=\sum_{n\ge0}\frac{\pi^n}{n!}J^n=\begin{pmatrix}\cos\pi&-\sin\pi\\ \sin\pi&\cos\pi\end{pmatrix}=-I
 $$
 
-converges to the monodromy; truncating at $n=1,2,3,5,8,12,17$ gives the maximal entry errors $3.14$, $3.14$, $2.94$, $1.12$, $7.52\times10^{-2}$, $4.45\times10^{-4}$, $1.35\times10^{-7}$ against $-I$, the factorial decay of the series. The Floquet exponent is $i$, and the two multipliers are both $-1=e^{i\pi}$, so the monodromy is at the boundary of the unit disc and the stability is neutral.
+converges to the monodromy; truncating at $n=1,2,3,5,8,12,17$ gives the maximal entry errors $3.14$, $3.14$, $2.94$, $1.12$, $7.52\times10^{-2}$, $4.45\times10^{-4}$, $1.35\times10^{-7}$ against $-I$, the factorial decay of the series. The Floquet exponent is $i$, and the two multipliers are both $-1=\exp(i\pi)$, so the monodromy is at the boundary of the unit disc and the stability is neutral.
 
 ## The Evolution Operator as a Cocycle
 
@@ -164,7 +164,7 @@ The evolution operator is therefore the common form of three theories at once: t
 
 ## Summary
 
-The **evolution operator** of a dynamical system is a two-parameter family $\Phi(t,s)\subset B(X)$ with $\Phi(s,s)=I$ and the **cocycle law** $\Phi(t,s)=\Phi(t,r)\Phi(r,s)$ for $s\le r\le t$; it is the solution operator of a non-autonomous linear equation $\dot u=A(t)u$, in which case the law is the uniqueness of the initial value problem, and it is given by the norm-convergent **Peano series** $\Phi(t,s)=\sum_n\int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)$ when $A(\cdot)$ is continuous and bounded, with $\|\Phi(t,s)\|\le e^{\int_s^t\|A\|}$ and the exponential formula in the commuting case. The **variational equation** along an orbit of a flow has the derivative $D\varphi_t(x)$ as its evolution operator, and the chain rule is the cocycle law: $\Phi(t,s)=D\varphi_{t-s}(\varphi_s(x))$; for a diffeomorphism the family is $\Phi(n,m)=DT^{n-m}(T^mx)$, and its growth rates are the Lyapunov exponents. In the **autonomous** case $\Phi(t,s)=T(t-s)$ for a one-parameter semigroup $T(t)$ with generator $A$, recovered from the resolvent as the Laplace transform; the generation theorems — Hille–Yosida, Feller–Miyadera–Phillips, Lumer–Phillips — are quoted from *Semigroups and Evolution Equations*, and the Cauchy problem has the unique mild solution $u(t)=\Phi(t,s)x$. For **$T$-periodic** coefficients the **monodromy operator** is $M=\Phi(T,0)$ and the **Floquet–Lyapunov** factorisation is $\Phi(t,0)=P(t)e^{tB}$ with $P$ $T$-periodic and $e^{TB}=M$; the eigenvalues of $M$ are the Floquet multipliers and decide the exponential stability, with the trivial multiplier $1$ of the flow direction corresponding to the derivative of the return map of *The Poincaré Map*. The family is a **cocycle over the time translation**, and over a measure-preserving parameter flow it is a linear cocycle whose exponents are given by the multiplicative ergodic theorem of *Random Dynamical Systems*; the adjoint and the time-reversing involution are not used here and belong to the `- * Operator Theory` group of this category.
+The **evolution operator** of a dynamical system is a two-parameter family $\Phi(t,s)\subset B(X)$ with $\Phi(s,s)=I$ and the **cocycle law** $\Phi(t,s)=\Phi(t,r)\Phi(r,s)$ for $s\le r\le t$; it is the solution operator of a non-autonomous linear equation $\dot u=A(t)u$, in which case the law is the uniqueness of the initial value problem, and it is given by the norm-convergent **Peano series** $\Phi(t,s)=\sum_n\int_{s\le t_1\le\cdots\le t_n\le t}A(t_1)\cdots A(t_n)$ when $A(\cdot)$ is continuous and bounded, with $\|\Phi(t,s)\|\le \exp(\int_s^t\|A\|)$ and the exponential formula in the commuting case. The **variational equation** along an orbit of a flow has the derivative $D\varphi_t(x)$ as its evolution operator, and the chain rule is the cocycle law: $\Phi(t,s)=D\varphi_{t-s}(\varphi_s(x))$; for a diffeomorphism the family is $\Phi(n,m)=DT^{n-m}(T^mx)$, and its growth rates are the Lyapunov exponents. In the **autonomous** case $\Phi(t,s)=T(t-s)$ for a one-parameter semigroup $T(t)$ with generator $A$, recovered from the resolvent as the Laplace transform; the generation theorems — Hille–Yosida, Feller–Miyadera–Phillips, Lumer–Phillips — are quoted from *Semigroups and Evolution Equations*, and the Cauchy problem has the unique mild solution $u(t)=\Phi(t,s)x$. For **$T$-periodic** coefficients the **monodromy operator** is $M=\Phi(T,0)$ and the **Floquet–Lyapunov** factorisation is $\Phi(t,0)=P(t)\exp(tB)$ with $P$ $T$-periodic and $\exp(TB)=M$; the eigenvalues of $M$ are the Floquet multipliers and decide the exponential stability, with the trivial multiplier $1$ of the flow direction corresponding to the derivative of the return map of *The Poincaré Map*. The family is a **cocycle over the time translation**, and over a measure-preserving parameter flow it is a linear cocycle whose exponents are given by the multiplicative ergodic theorem of *Random Dynamical Systems*; the adjoint and the time-reversing involution are not used here and belong to the `- * Operator Theory` group of this category.
 
 ## Summary of Notation
 

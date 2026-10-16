@@ -8,7 +8,7 @@ The zero divisors and their classification are *Zero Divisors of the Biquaternio
 
 The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
-**Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ N(\tilde Q)=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ the quadratic family in the general plain bilinear product.
+**Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ the quadratic family in the general plain bilinear product.
 
 ## The Two Kinds of Zero Divisor
 
@@ -20,14 +20,14 @@ $$
 
 and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line $\mathbb{C}\tilde Q$. In particular the cone is closed under squaring.
 
-**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_0\tilde Q+N(\tilde Q)e_0=0$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $N(\tilde Q^2)=N(\tilde Q)^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_0\in\mathbb{C}$.
+**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_0\tilde Q+\langle\tilde Q\rangle_{\natural}e_0=0$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $\langle\tilde Q^2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_0\in\mathbb{C}$.
 
 **Theorem (the two kinds).** Every $\tilde Q\in\mathscr{Z}$ is exactly one of the following.
 
 1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_0=0$. These are the pure vectors with $(\vec Q,\vec Q)=0$.
 2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_0=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
 
-**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2N(\tilde\Pi)=0$ and is non-zero.
+**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi\rangle_{\natural}=0$ and is non-zero.
 
 **Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
@@ -65,7 +65,7 @@ $$
 \{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z} .
 $$
 
-**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi))=1$ and $\mathsf{M}_2(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of units, hence smooth of complex dimension two, and it is contained in the cone by $N(\tilde\Pi)=0$ for an idempotent.
+**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi))=1$ and $\mathsf{M}_2(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of units, hence smooth of complex dimension two, and it is contained in the cone by $\langle\tilde\Pi\rangle_{\natural}=0$ for an idempotent.
 
 **Corollary (the singular Julia set is not small).** $\Sigma_0$ contains a complex surface, so it is not a curve and not a countable set; in particular no statement that the singular part is negligible for the dimension can be true without qualification.
 
@@ -92,8 +92,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde 
 
 | symbol | meaning |
 |---|---|
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the biquaternion norm |
-| $\mathscr{Z}=\{N(\tilde Q)=0,\ \tilde Q\neq0\}$ | the zero-divisor cone |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
+| $\mathscr{Z}=\{\langle\tilde Q\rangle_{\natural}=0,\ \tilde Q\neq0\}$ | the zero-divisor cone |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$ | the vector part, the pure subspace |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde C}$ |
 | $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
@@ -104,7 +104,7 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde 
 ## Further Reading
 
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the classification of the zero divisors and their rank-one form.
-- *Idempotents of the Biquaternion Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
+- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
 - *The Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md`), for the critical set and the corollary on the parameter zero.
 - *The Escape Radius and the Green's Function for the Biquaternions* (`articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md`), for the failure of the escape radius and the conditional Green's function.
 - *The Hausdorff Dimension of the Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.md`), for the dimension of the singular part.

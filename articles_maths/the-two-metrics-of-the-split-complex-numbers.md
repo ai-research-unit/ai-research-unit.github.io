@@ -2,28 +2,28 @@
 
 ## Introduction
 
-The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $B$, and the **indefinite metric** from the realification of the Hermitian form $H$, whose diagonal is the norm $N(A)=a^{2}-a'^{2}$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
+The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $\langle\cdot,\cdot\rangle$, and the **indefinite metric** from the realification of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal is the norm $\langle A\rangle_{\natural}=a^{2}-a'^{2}$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the indefinite one is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, nor the two algebraic norms $B(A)=A^{2}$ and $H(A)=A\bar A=N(A)$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion, the group of units and the modulus $\rho$ are *Split-Complex Norm and Invertibility*, where the polarisation $g$ of the norm and the Euclidean form $\langle\cdot,\cdot\rangle$ are also defined; the topology is *Split-Complex Topology*. The hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form are *Hyperbolic Rotations*, below this article in this category. The group preserving the form, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category; the null quadric and its projectivity are *Split-Complex Null Quadric and Projective Geometry*, below this article in this category. The realification rule is *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, nor the two algebraic norms $\langle A\rangle=A^{2}$ and $\langle A\rangle_{*}=A\bar A=\langle A\rangle_{\natural}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion, the group of units and the modulus $\rho$ are *Split-Complex Norm and Invertibility*, where the polarisation $g$ of the norm and the Euclidean form $\langle\cdot,\cdot\rangle$ are also defined; the topology is *Split-Complex Topology*. The hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form are *Hyperbolic Rotations*, below this article in this category. The group preserving the form, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category; the null quadric and its projectivity are *Split-Complex Null Quadric and Projective Geometry*, below this article in this category. The realification rule is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
-**The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{D}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $B=AC$ realifies to the definite Euclidean metric, and the **Hermitian** form $H=A\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $N$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
+**The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{D}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $\langle\cdot,\cdot\rangle=AC$ realifies to the definite Euclidean metric, and the **Hermitian** form $\langle\cdot,\cdot\rangle_{*}=A\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $\langle\cdot\rangle_{\natural}$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $A=a+ja'$ and $C=c+jc'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ja'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (*Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are reserved for the forms: $B(A,C)=AC$ is the general plain bilinear form and $H(A,C)=A\bar C$ the general plain sesquilinear or Hermitian form (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the second element of the worked pair, $1-2j$, is written $C$ here.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $A=a+ja'$ and $C=c+jc'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ja'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (*Conventions in Mathematics*). The letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for the forms: $\langle A,C\rangle=AC$ is the general plain bilinear form and $\langle A,C\rangle_{*}=A\bar C$ the general plain sesquilinear or Hermitian form (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). Elements are therefore written $A$ and $C$ and never $\langle\cdot,\cdot\rangle$; the second element of the worked pair, $1-2j$, is written $C$ here.
 
 ## The Two Forms and Their Realifications
 
 The two forms of the split-complex space are
 
 $$
-B(A,C)=AC, \qquad H(A,C)=A\bar C,
+\langle A,C\rangle=AC, \qquad \langle A,C\rangle_{*}=A\bar C,
 $$
 
-the first the multiplication of the commutative ring, symmetric, and the second the derived operation of the algebra with its involution $j\mapsto-j$, conjugate-symmetric; both are $\mathbb{D}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{D}$ (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*). Their diagonals are the two algebraic norms,
+the first the multiplication of the commutative ring, symmetric, and the second the derived operation of the algebra with its involution $j\mapsto-j$, conjugate-symmetric; both are $\mathbb{D}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{D}$ (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). Their diagonals are the two algebraic norms,
 
 $$
-B(A,A)=A^{2}, \qquad H(A,A)=A\bar A=a^{2}-a'^{2}=N(A),
+\langle A,A\rangle=A^{2}, \qquad \langle A,A\rangle_{*}=A\bar A=a^{2}-a'^{2}=\langle A\rangle_{\natural},
 $$
 
 the first $\mathbb{D}$-valued and anisotropic, vanishing only at the origin, the second real and indefinite, vanishing on the two null lines.
@@ -31,7 +31,7 @@ the first $\mathbb{D}$-valued and anisotropic, vanishing only at the origin, the
 Both forms are $\mathbb{D}$-valued, and a real function is obtained from each by **realification**, the scalar part in the real basis $1$, $j$. With $A=a+ja'$ and $C=c+jc'$,
 
 $$
-\operatorname{Re}B(A,C)=ac+a'c', \qquad \operatorname{Re}H(A,C)=ac-a'c'.
+\operatorname{Re}\langle A,C\rangle=ac+a'c', \qquad \operatorname{Re}\langle A,C\rangle_{*}=ac-a'c'.
 $$
 
 **Proposition (the two realified Gram matrices).** The realified forms have the Gram matrices
@@ -42,18 +42,18 @@ $$
 
 of signatures $(2,0)$ and $(1,1)$.
 
-*Proof.* The four values on the basis are $\operatorname{Re}B(1,1)=\operatorname{Re}B(j,j)=1$ and $\operatorname{Re}B(1,j)=0$, the last because $j^{2}=+1$ contributes no scalar part to $1\cdot j$; and $\operatorname{Re}H(1,1)=1$, $\operatorname{Re}H(j,j)=-1$, $\operatorname{Re}H(1,j)=0$, because $H(j,j)=j\bar j=-1$ and $H(1,j)=1\cdot\bar j=-j$ has scalar part zero. The two matrices are diagonal, and the signs of their diagonals give the signatures.
+*Proof.* The four values on the basis are $\operatorname{Re}\langle 1,1\rangle=\operatorname{Re}\langle j,j\rangle=1$ and $\operatorname{Re}\langle 1,j\rangle=0$, the last because $j^{2}=+1$ contributes no scalar part to $1\cdot j$; and $\operatorname{Re}\langle 1,1\rangle_{*}=1$, $\operatorname{Re}\langle j,j\rangle_{*}=-1$, $\operatorname{Re}\langle 1,j\rangle_{*}=0$, because $\langle j,j\rangle_{*}=j\bar j=-1$ and $\langle 1,j\rangle_{*}=1\cdot\bar j=-j$ has scalar part zero. The two matrices are diagonal, and the signs of their diagonals give the signatures.
 
-The realified $B$ is positive definite: it is the ordinary inner product of the plane, $\operatorname{Re}B(A,C)=ac+a'c'=\langle A,C\rangle$ in the notation of *Split-Complex Norm and Invertibility*. The realified $H$ is indefinite: it is the polarisation of the norm, $\operatorname{Re}H(A,C)=ac-a'c'=g(A,C)$, positive on the real direction $1$ and negative on the split imaginary direction $j$.
+The realified $\langle\cdot,\cdot\rangle$ is positive definite: it is the ordinary inner product of the plane, $\operatorname{Re}\langle A,C\rangle=ac+a'c'=\langle A,C\rangle$ in the notation of *Split-Complex Norm and Invertibility*. The realified $\langle\cdot\rangle_{*}$ is indefinite: it is the polarisation of the norm, $\operatorname{Re}\langle A,C\rangle_{*}=ac-a'c'=g(A,C)$, positive on the real direction $1$ and negative on the split imaginary direction $j$.
 
-**Remark (the sign of the square of the structure decides the swap).** The realification carries the sign of the square of the structure that doubles the coordinate. When that structure squares to $-\mathrm{id}$, the two real blocks of a symmetric bilinear form carry opposite signs and the realified form is indefinite; this is the complex case, where $J^{2}=-\mathrm{id}$ and $B$ realifies to the signature $(1,1)$. Here $J^{2}=+\mathrm{id}$ and the two blocks carry the same sign, so $B$ realifies to $(2,0)$, and the indefinite realification is instead that of the Hermitian form $H$, whose diagonal $N$ carries the split sign. **This is the passage on which the present article and its complex counterpart are mirror images: the same two forms realify to the same two signatures, $(1,1)$ and $(2,0)$, but attached to the other form.**
+**Remark (the sign of the square of the structure decides the swap).** The realification carries the sign of the square of the structure that doubles the coordinate. When that structure squares to $-\mathrm{id}$, the two real blocks of a symmetric bilinear form carry opposite signs and the realified form is indefinite; this is the complex case, where $J^{2}=-\mathrm{id}$ and $\langle\cdot,\cdot\rangle$ realifies to the signature $(1,1)$. Here $J^{2}=+\mathrm{id}$ and the two blocks carry the same sign, so $\langle\cdot,\cdot\rangle$ realifies to $(2,0)$, and the indefinite realification is instead that of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal $\langle\cdot,\cdot\rangle_{\natural}$ carries the split sign. **This is the passage on which the present article and its complex counterpart are mirror images: the same two forms realify to the same two signatures, $(1,1)$ and $(2,0)$, but attached to the other form.**
 
 ## The Euclidean Metric
 
 **Definition.** The **Euclidean metric** of the split-complex space is the quadratic function
 
 $$
-d_{B}^{2}(A,C)=\operatorname{Re}B(A-C,A-C)=(a-c)^{2}+(a'-c')^{2}.
+d_{B}^{2}(A,C)=\operatorname{Re}\langle A-C,A-C\rangle=(a-c)^{2}+(a'-c')^{2}.
 $$
 
 It is the diagonal of the realified bilinear form read on the difference $A-C$, and it is the square of the Euclidean norm of the difference, $\lVert A-C\rVert_{E}^{2}$ (*Split-Complex Norm and Invertibility*).
@@ -70,13 +70,13 @@ The level sets are the circles: $d_{B}(A,C)=r$ is the Euclidean circle of radius
 
 ## The Indefinite Metric
 
-**Definition.** The **indefinite metric** of the split-complex space is the quadratic function induced by the realified Hermitian form $H$,
+**Definition.** The **indefinite metric** of the split-complex space is the quadratic function induced by the realified Hermitian form $\langle\cdot,\cdot\rangle_{*}$,
 
 $$
-d_{H}^{2}(A,C)=\operatorname{Re}H(A-C,A-C)=N(A-C)=(a-c)^{2}-(a'-c')^{2}.
+d_{H}^{2}(A,C)=\operatorname{Re}\langle A-C,A-C\rangle_{*}=\langle A-C\rangle_{\natural}=(a-c)^{2}-(a'-c')^{2}.
 $$
 
-It is the diagonal of the realified form read on the difference $A-C$, and it is the norm $N$ of the difference (*Split-Complex Norm and Invertibility*).
+It is the diagonal of the realified form read on the difference $A-C$, and it is the norm $\langle\cdot\rangle_{\natural}$ of the difference (*Split-Complex Norm and Invertibility*).
 
 **Proposition (indefiniteness).** The indefinite metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its signature is $(1,1)$; it is positive on the real direction and negative on the split imaginary one. It is therefore not a distance.
 
@@ -104,7 +104,7 @@ $$
 t\longmapsto\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix},
 $$
 
-which fixes the form and preserves its null pair as a set while moving it. The group has four components, and the $\mathbb{D}$-linear maps among its elements are the multiplications $A\mapsto uA$ with $N(u)=1$; the classification, the four components and the parametrisation are *Hyperbolic Rotations*, below this article in this category, and the group itself, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
+which fixes the form and preserves its null pair as a set while moving it. The group has four components, and the $\mathbb{D}$-linear maps among its elements are the multiplications $A\mapsto uA$ with $\langle u\rangle_{\natural}=1$; the classification, the four components and the parametrisation are *Hyperbolic Rotations*, below this article in this category, and the group itself, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
 
 ## The Two Metrics Compared
 
@@ -123,10 +123,10 @@ So each metric recovers one of the two squared coordinates from the pair, and th
 **Proposition (the forms are exchanged by conjugation in a slot).** For all $A,C$,
 
 $$
-\operatorname{Re}B(A,\bar C)=\operatorname{Re}H(A,C), \qquad \operatorname{Re}H(A,\bar C)=\operatorname{Re}B(A,C).
+\operatorname{Re}\langle A,\bar C\rangle=\operatorname{Re}\langle A,C\rangle_{*}, \qquad \operatorname{Re}\langle A,\bar C\rangle_{*}=\operatorname{Re}\langle A,C\rangle.
 $$
 
-*Proof.* $\operatorname{Re}B(A,\bar C)=\operatorname{Re}(A\bar C)=\operatorname{Re}H(A,C)$, and $\operatorname{Re}H(A,\bar C)=\operatorname{Re}(A\bar{\bar C})=\operatorname{Re}(AC)=\operatorname{Re}B(A,C)$, since $\bar{\bar C}=C$.
+*Proof.* $\operatorname{Re}\langle A,\bar C\rangle=\operatorname{Re}(A\bar C)=\operatorname{Re}\langle A,C\rangle_{*}$, and $\operatorname{Re}\langle A,\bar C\rangle_{*}=\operatorname{Re}(A\bar{\bar C})=\operatorname{Re}(AC)=\operatorname{Re}\langle A,C\rangle$, since $\bar{\bar C}=C$.
 
 The two metrics are therefore the two readings of the two forms related by conjugation of the second argument.
 
@@ -136,17 +136,17 @@ $$
 d_{B}^{2}(JA,JC)=d_{B}^{2}(A,C), \qquad d_{H}^{2}(JA,JC)=-d_{H}^{2}(A,C).
 $$
 
-*Proof.* In coordinates $J(a,a')=(a',a)$, since $j(a+ja')=a'+ja$; substituting gives $(a-c)^{2}+(a'-c')^{2}$ unchanged and $(a-c)^{2}-(a'-c')^{2}$ negated. Equivalently, the structure preserves the realified bilinear form and reverses the realified Hermitian form, the two-dimensional instance of the rule recorded in *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
+*Proof.* In coordinates $J(a,a')=(a',a)$, since $j(a+ja')=a'+ja$; substituting gives $(a-c)^{2}+(a'-c')^{2}$ unchanged and $(a-c)^{2}-(a'-c')^{2}$ negated. Equivalently, the structure preserves the realified bilinear form and reverses the realified Hermitian form, the two-dimensional instance of the rule recorded in *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 So multiplication by $j$ is a map preserving the Euclidean metric and reversing the sign of the indefinite one. The split complex structure is thus the operator that distinguishes the two metrics on the one space, exactly as the complex structure does on $\mathbb{C}$.
 
 **Proposition (the two groups meet only in the centre).** The $\mathbb{D}$-linear maps preserving both realified forms are the two multiplications $\pm\mathrm{id}$.
 
-*Proof.* A $\mathbb{D}$-linear map is $A\mapsto uA$. It preserves $\operatorname{Re}B$ exactly when $u^{2}=1$, since $\operatorname{Re}B(uA,uC)=\operatorname{Re}(u^{2}AC)$ and testing the two arguments $1$ and $j$ gives $p^{2}+q^{2}=1$ and $pq=0$ for $u=p+jq$. It preserves $\operatorname{Re}H$ exactly when $N(u)=1$, since $\operatorname{Re}H(uA,uC)=N(u)\operatorname{Re}H(A,C)$. Both conditions hold exactly for $u=\pm1$, because $\pm j$ satisfies the first and not the second.
+*Proof.* A $\mathbb{D}$-linear map is $A\mapsto uA$. It preserves $\operatorname{Re}B$ exactly when $u^{2}=1$, since $\operatorname{Re}\langle uA,uC\rangle=\operatorname{Re}(u^{2}AC)$ and testing the two arguments $1$ and $j$ gives $p^{2}+q^{2}=1$ and $pq=0$ for $u=p+jq$. It preserves $\operatorname{Re}H$ exactly when $\langle u\rangle_{\natural}=1$, since $\operatorname{Re}\langle uA,uC\rangle_{*}=\langle u\rangle_{\natural}\operatorname{Re}\langle A,C\rangle_{*}$. Both conditions hold exactly for $u=\pm1$, because $\pm j$ satisfies the first and not the second.
 
 So the definite group and the indefinite group of $\mathbb{D}$-linear maps share only the central pair: the Euclidean metric keeps the four elements $\{\pm1,\pm j\}$ and the indefinite metric keeps the hyperbola, and the two families meet only in $\{\pm1\}$. On $\mathbb{C}$ the two families are the circle and the pair $\{\pm1\}$; here they are the four-element group $\{\pm1,\pm j\}$ and the hyperbola, and the swap of their shapes is again the split sign.
 
-**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $B$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{D}$ the plain form realifies to $\operatorname{Re}B(A,C)=ac+a'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
+**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $\langle\cdot,\cdot\rangle$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{D}$ the plain form realifies to $\operatorname{Re}\langle A,C\rangle=ac+a'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 **Remark (the realified signatures).** **The split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**: the definite slot is occupied by the bilinear form.
 
@@ -170,9 +170,9 @@ for every real $t$; the same holds on the line of direction $1-j$. On those diff
 
 ## Summary
 
-The one split-complex plane carries two real quadratic functions, one from each of the two forms, and the split sign decides which. The general plain bilinear form $B(A,C)=AC$ realifies to the Euclidean metric $d_{B}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the Euclidean norm of the difference. The general plain Hermitian form $H(A,C)=A\bar C$ realifies to the indefinite metric $d_{H}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}=N(A-C)$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, the zero-divisor directions of the ring, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps has the hyperbolic rotations as identity component and four components in all.
+The one split-complex plane carries two real quadratic functions, one from each of the two forms, and the split sign decides which. The general plain bilinear form $\langle A,C\rangle=AC$ realifies to the Euclidean metric $d_{B}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the Euclidean norm of the difference. The general plain Hermitian form $\langle A,C\rangle_{*}=A\bar C$ realifies to the indefinite metric $d_{H}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}=\langle A-C\rangle_{\natural}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, the zero-divisor directions of the ring, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps has the hyperbolic rotations as identity component and four components in all.
 
-The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{H}^{2}=2(a'-c')^{2}$ and $d_{B}^{2}+d_{H}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\operatorname{Re}B(A,\bar C)=\operatorname{Re}H(A,C)$, and multiplication by $j$ preserves the Euclidean metric and reverses the indefinite one. The definite slot is on the bilinear form rather than the Hermitian one, and this exchange of the slots is the split sign $J^{2}=+\mathrm{id}$.
+The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{H}^{2}=2(a'-c')^{2}$ and $d_{B}^{2}+d_{H}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\operatorname{Re}\langle A,\bar C\rangle=\operatorname{Re}\langle A,C\rangle_{*}$, and multiplication by $j$ preserves the Euclidean metric and reverses the indefinite one. The definite slot is on the bilinear form rather than the Hermitian one, and this exchange of the slots is the split sign $J^{2}=+\mathrm{id}$.
 
 ## Summary of Notation
 
@@ -180,12 +180,12 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 |---|---|
 | $A=a+ja'$, $C=c+jc'$ | two elements of $\mathbb{D}$, with $a,a',c,c'\in\mathbb{R}$ |
 | $\bar A=a-ja'$ | the conjugation, the involution $j\mapsto-j$ |
-| $B(A,C)=AC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{D}$; diagonal $B(A)=A^{2}$, anisotropic |
-| $H(A,C)=A\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{D}$; diagonal $H(A)=N(A)=a^{2}-a'^{2}$, indefinite |
-| $\operatorname{Re}B(A,C)=ac+a'c'$ | the realified bilinear form, the Euclidean form $\langle A,C\rangle$; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
-| $\operatorname{Re}H(A,C)=ac-a'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
+| $\langle A,C\rangle=AC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{D}$; diagonal $\langle A\rangle=A^{2}$, anisotropic |
+| $\langle A,C\rangle_{*}=A\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{D}$; diagonal $\langle A\rangle_{*}=\langle A\rangle_{\natural}=a^{2}-a'^{2}$, indefinite |
+| $\operatorname{Re}\langle A,C\rangle=ac+a'c'$ | the realified bilinear form, the Euclidean form $\langle A,C\rangle$; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
+| $\operatorname{Re}\langle A,C\rangle_{*}=ac-a'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
 | $d_{B}^{2}(A,C)=\lVert A-C\rVert_{E}^{2}$ | Euclidean metric; positive definite; level sets the circles |
-| $d_{H}^{2}(A,C)=N(A-C)$ | indefinite metric; signature $(1,1)$; level sets the hyperbolas |
+| $d_{H}^{2}(A,C)=\langle A-C\rangle_{\natural}$ | indefinite metric; signature $(1,1)$; level sets the hyperbolas |
 | $a-c=\pm(a'-c')$ | the null pair of lines of the indefinite metric |
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}B$; the group $O(2)$ |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}H$ |
@@ -194,14 +194,14 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Split-Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
-- *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-split-complexoid.md`), for the realification rules that give the signatures $(2,0)$ and $(1,1)$ and the sign of the structure.
+- *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
+- *The Realification and the Effect of the Change of Scalars on the Split-Complexoid* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-split-complexoid.md`), for the realification rules that give the signatures $(2,0)$ and $(1,1)$ and the sign of the structure.
 - *Split-Complex Norm and Invertibility* (`articles_maths/split-complex-norm-and-invertibility.md`), for the norm, its polarisation $g$, the Euclidean form, the modulus and the group of units.
 - *Split-Complex Topology* (`articles_maths/split-complex-topology.md`), for the Euclidean plane, its contractibility and the null cone as a removed pair of lines.
 - *Hyperbolic Rotations* (`articles_maths/hyperbolic-rotations.md`), for the hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form.
 - *The Versors and the Orthogonal Group of the Split-Complex Numbers* (`articles_maths/the-versors-and-the-orthogonal-group-of-the-split-complex-numbers.md`), for the group preserving the indefinite form, its algebraic name and its cover.
 - *Split-Complex Null Quadric and Projective Geometry* (`articles_maths/split-complex-null-quadric-and-projective-geometry.md`), for the null cone of the indefinite metric read projectively.
-- *Split-Complex Subspaces* (`articles_maths/split-complexoid-subspaces.md`), for the real and split imaginary subspaces on which the indefinite metric is definite of opposite signs.
+- *Split-Complexoid Subspaces* (`articles_maths/split-complexoid-subspaces.md`), for the real and split imaginary subspaces on which the indefinite metric is definite of opposite signs.
 - *The Two Metrics of the Complex Numbers* (`articles_maths/the-two-metrics-of-the-complex-numbers.md`), for the mirror image of the present pair, where the definite slot is on the Hermitian form.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

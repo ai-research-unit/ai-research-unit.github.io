@@ -19,7 +19,7 @@ $$
 
 The **extended mapping class group** $\mathrm{Mod}^{\pm}(S)$ is defined by omitting the orientation condition, and it contains $\mathrm{Mod}(S)$ as a subgroup of index two. For a closed surface the group depends only on the topological type; for a surface with punctures the homeomorphisms are required to fix the punctures setwise, and for a surface with boundary they fix the boundary pointwise. The **pure mapping class group** fixes the punctures individually.
 
-**Definition.** Let $a\subseteq S$ be a simple closed curve and let $N(a)$ be a closed annular neighbourhood with a chosen identification with $S^1\times I$. The **Dehn twist** $T_a$ is the class of the homeomorphism that is the identity outside $N(a)$ and that sends $(e^{i\theta},t)\mapsto(e^{i(\theta+2\pi t)},t)$ on the annulus. It depends only on the isotopy class of $a$, and it is an element of infinite order whose action on the curve complex has positive translation length.
+**Definition.** Let $a\subseteq S$ be a simple closed curve and let $N(a)$ be a closed annular neighbourhood with a chosen identification with $S^1\times I$. The **Dehn twist** $T_a$ is the class of the homeomorphism that is the identity outside $N(a)$ and that sends $(\exp(i\theta),t)\mapsto(\exp(i(\theta+2\pi t)),t)$ on the annulus. It depends only on the isotopy class of $a$, and it is an element of infinite order whose action on the curve complex has positive translation length.
 
 **Proposition (the action on homology and the symplectic representation).** Let $S$ be closed of genus $g$. The action on $H_1(S;\mathbb{Z}) = \mathbb{Z}^{2g}$ preserves the intersection form and gives a surjection
 

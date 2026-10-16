@@ -236,7 +236,7 @@ $$
 **Theorem (Lévy's constant).** For almost every $b$ the denominators of the convergents grow exponentially:
 
 $$
-\lim_{n\to\infty} q_n^{1/n} = e^{\pi^2/(12\log 2)} = 3.2758229187\dots .
+\lim_{n\to\infty} q_n^{1/n} = \exp(\pi^2/(12\log 2)) = 3.2758229187\dots .
 $$
 
 **Proof.** Both statements are the ergodic theorem applied to the functions $\log a_1$ and $\log q_1$, whose almost-everywhere constancy is the ergodicity of the Gauss map; the evaluation of the integrals gives the constants. The results are Khinchin's and Lévy's and are in the references.

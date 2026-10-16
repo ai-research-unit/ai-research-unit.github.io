@@ -250,7 +250,7 @@ A field $F$ is **real closed** if it is not algebraically closed but $F(\sqrt{-1
 
 ## 19. Function Fields and $p$-adic Fields
 
-**Function fields.** The **field of rational functions** over $F$ is $F(x) = \operatorname{Frac}(F[x])$, with elements $p(x)/q(x)$ for $p, q \in F[x]$, $q \neq 0$. It is transcendental and infinite-dimensional over $F$, and $F(x_1, \ldots, x_n)$ has transcendence degree $n$; a finitely generated extension of transcendence degree $1$ is an **algebraic function field**. The field $F(x)$ is never algebraically closed: if $x = (p/q)^2$ with coprime $p, q$, then $xq^2 = p^2$, impossible by comparing degrees.
+**Function fields.** The **field of rational functions** over $F$ is $F(x) = \operatorname{Frac}(F[x])$, with elements $p(x)/\mathfrak{Q}(x)$ for $p, q \in F[x]$, $q \neq 0$. It is transcendental and infinite-dimensional over $F$, and $F(x_1, \ldots, x_n)$ has transcendence degree $n$; a finitely generated extension of transcendence degree $1$ is an **algebraic function field**. The field $F(x)$ is never algebraically closed: if $x = (p/q)^2$ with coprime $p, q$, then $xq^2 = p^2$, impossible by comparing degrees.
 
 **$p$-adic fields.** For prime $p$, the **$p$-adic absolute value** is $|a/b|_p = p^{-v_p(a/b)}$, where $v_p$ is the exponent of $p$; it is non-Archimedean, and its completion is the field $\mathbb{Q}_p$ of **$p$-adic numbers**.
 

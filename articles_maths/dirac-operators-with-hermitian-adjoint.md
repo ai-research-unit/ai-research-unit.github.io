@@ -13,7 +13,7 @@ The Clifford action and the adjoint are *The Adjoint of the One-Sided Action wit
 
 ### Definition
 
-**Definition.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,q)$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial_1,\dots,\partial_m$ be first-order operators on $S$ with formal adjoints $\partial_j^{*} = -\partial_j$. The **Dirac operator** is
+**Definition.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial_1,\dots,\partial_m$ be first-order operators on $S$ with formal adjoints $\partial_j^{*} = -\partial_j$. The **Dirac operator** is
 
 $$
 D = \sum_{j=1}^{m} \rho(e_j)\,\partial_j ,
@@ -65,7 +65,7 @@ and the two summands are orthogonal and $D$-invariant.
 
 ## The Finite-Dimensional Model
 
-**Setting.** Take $S = \mathrm{Cl}(V,q)$ with the regular form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$, and drop the derivative: the operator is the **Dirac element**
+**Setting.** Take $S = \mathrm{Cl}(V,\mathfrak{Q})$ with the regular form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$, and drop the derivative: the operator is the **Dirac element**
 
 $$
 D_{\mathrm{alg}} = \sum_{j} L_{e_j} ,
@@ -76,11 +76,11 @@ the sum of the left multiplications by an orthonormal frame. This is the flat, m
 **Theorem.** The Dirac element is skew-adjoint, and its square is the Clifford Laplacian:
 
 $$
-D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(\sum_j q(e_j)\Bigr)\mathrm{id}, \qquad
-(D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j q(e_j)\Bigr)(x,y).
+D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)\mathrm{id}, \qquad
+(D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)(x,y).
 $$
 
-**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j} + L_{e_j}L_{e_i} = L_{e_ie_j + e_je_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{q(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
+**Proof.** $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j} + L_{e_j}L_{e_i} = L_{e_ie_j + e_je_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.
 
 **Corollary (explicit spectrum and positivity).** In the negative definite case, where the dagger is positive, $\sum_jq(e_j) = -m$ and
 

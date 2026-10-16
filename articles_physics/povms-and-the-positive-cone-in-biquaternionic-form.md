@@ -7,7 +7,7 @@ The most general measurement that quantum physics admits is not a projective mea
 The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_0e_0 + i\vec a$ with $a_0\in\mathbb{R}$, $\vec a\in\mathbb{R}^3$, positivity of the operator is
 
 $$
-\tilde{E}\geq0 \quad\Longleftrightarrow\quad N(\tilde{E}) = a_0^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_0\geq0
+\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_0^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_0\geq0
 \quad\Longleftrightarrow\quad a_0\geq|\vec a| ,
 $$
 
@@ -28,10 +28,10 @@ $$
 and the biquaternion norm is
 
 $$
-N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2 = \det M(\tilde{H}),
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2 = \det M(\tilde{H}),
 $$
 
-a real scalar. The two conditions $N(\tilde{H})\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\vec h|$, so the set of positive elements is the future light cone of the biquaternion norm:
+a real scalar. The two conditions $\langle\tilde{H}\rangle_{\natural}\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\vec h|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
 C_+ = \bigl\{h_0e_0 + i\vec h\in\mathbb{M}_+ : h_0 \geq |\vec h|\bigr\} .
@@ -59,13 +59,13 @@ $$
 C_+^{*} = \bigl\{\tilde{H} : \mathrm{Tr}(\tilde{H}\tilde{E})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
 $$
 
-and it coincides with $C_+$. To see this, if $h_0\geq|\vec h|$ then $h_0a_0+\vec h\cdot\vec a\geq h_0a_0-|\vec h|\,|\vec a|\geq0$ for every $a_0\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_0<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\hat h$ and $a_0 = \lambda$; then $h_0a_0+\vec h\cdot\vec a = \lambda(h_0-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the trace pairing.**
+and it coincides with $C_+$. To see this, if $h_0\geq|\vec h|$ then $h_0a_0+\vec h\cdot\vec a\geq h_0a_0-|\vec h|\,|\vec a|\geq0$ for every $a_0\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_0<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_0 = \lambda$; then $h_0a_0+\vec h\cdot\vec a = \lambda(h_0-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the trace pairing.**
 
 The self-duality is what makes the trace pairing the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_1(\hat u) = \tfrac12(e_0+i\hat u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_1(\vec u) = \tfrac12(e_0+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{\rho}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -159,19 +159,19 @@ This is **Naimark's dilation theorem**, the measurement analogue of Stinespring'
 
 ### The trine POVM
 
-Let $\hat u_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\hat u_k = 0$ and $\sum_k\tilde\Pi_1(\hat u_k) = \tfrac32 e_0$. Define
+Let $\vec u_k$, $k=1,2,3$, be three unit vectors in the equatorial plane at $120^\circ$ from one another, so that $\sum_k\vec u_k = 0$ and $\sum_k\tilde\Pi_1(\vec u_k) = \tfrac32 e_0$. Define
 
 $$
-\tilde{E}_k = \tfrac{2}{3}\,\tilde\Pi_1(\hat u_k), \qquad k=1,2,3 .
+\tilde{E}_k = \tfrac{2}{3}\,\tilde\Pi_1(\vec u_k), \qquad k=1,2,3 .
 $$
 
 Each $\tilde{E}_k$ is an effect — its coefficients are $a_0 = \tfrac13$ and $|\vec a| = \tfrac13$, on the boundary of the interval — and they resolve the identity:
 
 $$
-\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde\Pi_1(\hat u_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
+\sum_{k=1}^{3}\tilde{E}_k = \tfrac{2}{3}\sum_{k=1}^{3}\tilde\Pi_1(\vec u_k) = \tfrac{2}{3}\cdot\tfrac{3}{2}e_0 = e_0 .
 $$
 
-The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde\Pi_1(\hat u_k)$, the probability of correctly identifying the state is
+The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{\rho}_k = \tilde\Pi_1(\vec u_k)$, the probability of correctly identifying the state is
 
 $$
 P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}(\tilde{\rho}_k\tilde{E}_k)
@@ -198,7 +198,7 @@ P_{\mathrm{succ}} = \tfrac12\mathrm{Tr}(\tilde{\rho}_0\tilde{E}_0) + \tfrac12\ma
 = \tfrac12(1-c)+\tfrac12(1-c) = 1-c ,
 $$
 
-which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{E}_? = \frac{2c}{1+c}\tilde\Pi(\hat{m})$ for a suitable direction $\hat{m}$ — is the effect that makes the resolution complete.
+which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination is thus possible exactly with a non-projective measurement, and its failure probability is the overlap. In the algebra the construction uses three effects, each of them a scaled idempotent of rank one and therefore on the boundary of the cone: the two conclusive outcomes are the idempotents orthogonal to the state they exclude, and the inconclusive outcome — the scaled idempotent $\tilde{E}_? = \frac{2c}{1+c}\tilde\Pi(\vec u_m)$ for a suitable direction $\vec u_m$ — is the effect that makes the resolution complete.
 
 ## The Positive Cone and the Meaning of a Measurement
 
@@ -245,7 +245,7 @@ The general measurement is a convex decomposition of the identity into effects t
 A general measurement of a qubit is a resolution of the identity into positive elements of the Hermitian subspace. The positive cone of $\mathbb{M}_+$ is the future light cone of the biquaternion norm:
 
 $$
-\tilde{E} = a_0e_0+i\vec a\geq0 \quad\Longleftrightarrow\quad a_0\geq|\vec a| \quad\Longleftrightarrow\quad N(\tilde{E}) = a_0^2-|\vec a|^2\geq0,\ a_0\geq0,
+\tilde{E} = a_0e_0+i\vec a\geq0 \quad\Longleftrightarrow\quad a_0\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_0^2-|\vec a|^2\geq0,\ a_0\geq0,
 $$
 
 and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\vec h\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_0$, characterized by $|\vec a|\leq\min(a_0,1-a_0)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_0$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{\rho}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the trace pairing on the effect body.
@@ -258,8 +258,8 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $C_+ = \{h_0e_0+i\vec h: h_0\ge|\vec h|\}$ | Positive cone (future light cone of $N$) |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $C_+ = \{h_0e_0+i\vec h: h_0\ge|\vec h|\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
 | $C_+^{*} = C_+$ | Self-duality under the trace pairing |
 | $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\vec h\cdot\vec a)$ | Trace pairing |
 | $0\le\tilde{E}\le e_0$ | Effect (operator interval) |
@@ -270,7 +270,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y$ | Kraus form of an effect |
 | $\tilde{\rho}_y = \tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
-| $\tilde{E}_k = \tfrac23\tilde\Pi_1(\hat u_k)$ | Trine POVM |
+| $\tilde{E}_k = \tfrac23\tilde\Pi_1(\vec u_k)$ | Trine POVM |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading

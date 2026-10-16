@@ -122,7 +122,7 @@ The statements above are finite and were recomputed in the two-component and fou
 
 **The opposite sign.** For $\mathcal T^2=+1$ no degeneracy is enforced. With a random real symmetric $H$ on $\mathbb{C}^4$ — which is invariant under conjugation, the $\mathcal T^2=+1$ case — the spectrum is $\{-3.01553,-1.70328,0.12807,2.44612\}$, four distinct levels with minimum gap $1.31225$. The contrast is the theorem: the degeneracy is a consequence of the sign, not of the symmetry alone.
 
-**The antisymmetric form.** The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\hat u\cdot\boldsymbol\sigma/2)$, the identity
+**The antisymmetric form.** The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\vec u\cdot\boldsymbol\sigma/2)$, the identity
 
 $$
 U^{\mathsf T}\varepsilon\,U=\varepsilon

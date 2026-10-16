@@ -54,7 +54,7 @@ The last point is the decisive one: the hole theory is a correct but redundant b
 The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as
 
 $$
-\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,u^{(r)}(\vec p)e^{-ip\cdot x} + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)e^{+ip\cdot x}\right],
+\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right],
 $$
 
 in which the **annihilation** operator multiplies the positive-frequency spinors and the **creation** operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.
@@ -155,7 +155,7 @@ The biquaternion framework is naturally on this second side. Its mass shell has 
 |---|---|
 | $E=\pm\sqrt{\vec p^2+m^2}$ | Two branches of the Dirac dispersion |
 | $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Particle and antiparticle annihilation operators |
-| $u^{(r)}$, $v^{(r)}$ | Positive- and negative-frequency spinors |
+| $w^{(r)}$, $v^{(r)}$ | Positive- and negative-frequency spinors |
 | $|0\rangle$, $a^{\mathrm{fop}}|0\rangle=b^{\mathrm{fop}}|0\rangle=0$ | Fock vacuum; no sea |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $e$ | Positive unit of charge; the electron carries $-e$ |

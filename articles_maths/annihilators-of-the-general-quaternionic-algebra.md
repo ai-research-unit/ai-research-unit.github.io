@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace.
 
@@ -53,7 +53,7 @@ L_{\tilde P}\tilde X=\tilde P\star\tilde X=\tilde P^{\natural}\tilde X,\qquad
 R_{\tilde P}\tilde X=\tilde X\star\tilde P=\tilde X^{\natural}\tilde P,
 $$
 a multiplication by the natural conjugate. The block is the sibling of the **general plain
-algebra**, whose annihilators are *Annihilators of the General Plain Algebra*, and the two share
+algebra**, whose annihilators are *Annihilators of the Biquaternion Algebra*, and the two share
 the cone and its plane but differ in the coincidence of the two sides.
 
 ## The Two Annihilators Coincide
@@ -106,7 +106,7 @@ $\tilde P$ are
 case the operator is invertible and the annihilator is $\{0\}$. When $C(\tilde P)=0$ the
 determinant vanishes; the multiplication by the nonzero $\tilde P^{\natural}$ in the plain algebra
 is then of rank two, because the plain algebra is the matrix algebra $M_2(\mathbb{C})$ and a
-nonzero element of the cone is a matrix of rank one (*Zero Divisors of the General Plain Algebra*),
+nonzero element of the cone is a matrix of rank one (*Zero Divisors of the Biquaternion Algebra*),
 whence the kernel is of complex dimension two. The origin gives the zero operator.
 
 ## The Annihilator of an Element
@@ -193,9 +193,9 @@ one of the three with both properties.
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the operation, its table and its anti-automorphism.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the operation, its table and its anti-automorphism.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), above this article in this category, for the criterion, the two families and the comparison with the other general products.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the plain algebra, the cone and the rank-one matrix reading.
-- *Annihilators of the General Plain Algebra* (`articles_maths/annihilators-of-the-biquaternion-algebra.md`), the sibling block, whose two annihilators of an element are distinct.
-- *Annihilators of the Symmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-symmetric-quaternionic-algebra.md`), the block whose annihilator is a hyperplane for every nonzero element.
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the plain algebra, the cone and the rank-one matrix reading.
+- *Annihilators of the Biquaternion Algebra* (`articles_maths/annihilators-of-the-biquaternion-algebra.md`), the sibling block, whose two annihilators of an element are distinct.
+- *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), the block whose annihilator is a hyperplane for every nonzero element.

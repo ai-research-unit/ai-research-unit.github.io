@@ -41,7 +41,7 @@ algebraic and topological object, with the adjoint that the module form supplies
 ### Definition
 
 **Definition.** Let $A=\mathrm{Cl}_{0,m}$ be the Clifford algebra of a real vector space with basis
-$e_1,\dots,e_m$ and quadratic form $q(\sum_ix_ie_i)=-\sum_ix_i^2$, so that
+$e_1,\dots,e_m$ and quadratic form $\mathfrak{Q}(\sum_ix_ie_i)=-\sum_ix_i^2$, so that
 
 $$
 e_ie_j+e_je_i=-2\delta_{ij} ,

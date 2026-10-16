@@ -131,7 +131,7 @@ $$
 2\cos(2\pi/k) \in \mathbb{Z}, \qquad \text{hence } k \in \{1, 2, 3, 4, 6\}.
 $$
 
-**Proof.** Choose a basis of the lattice $T_\Gamma$ and write $A$ as a matrix with integer entries; the trace of an integer matrix is an integer, and the eigenvalues of the orthogonal transformation $A$ on the invariant plane of the rotation are $e^{\pm 2\pi i/k}$, so $\operatorname{tr} A = 1 + 2\cos(2\pi/k)$ in dimension three and $2\cos(2\pi/k)$ in dimension two; in either case $2\cos(2\pi/k)$ is an integer. Since $-2 \leq 2\cos(2\pi/k) \leq 2$, the integer is one of $-2, -1, 0, 1, 2$, giving $k \in \{2, 3, 4, 6\}$ and, adding $k = 1$, the five possibilities.
+**Proof.** Choose a basis of the lattice $T_\Gamma$ and write $A$ as a matrix with integer entries; the trace of an integer matrix is an integer, and the eigenvalues of the orthogonal transformation $A$ on the invariant plane of the rotation are $\exp(\pm 2\pi i/k)$, so $\operatorname{tr} A = 1 + 2\cos(2\pi/k)$ in dimension three and $2\cos(2\pi/k)$ in dimension two; in either case $2\cos(2\pi/k)$ is an integer. Since $-2 \leq 2\cos(2\pi/k) \leq 2$, the integer is one of $-2, -1, 0, 1, 2$, giving $k \in \{2, 3, 4, 6\}$ and, adding $k = 1$, the five possibilities.
 
 **Corollary.** A fivefold, sevenfold or higher rotation cannot preserve a lattice; the only rotational symmetries of a periodic plane figure or of a crystal in three dimensions have orders $2$, $3$, $4$ and $6$.
 

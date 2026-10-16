@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.
 
-No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split Complex Analysis*, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
+No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
 Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are
 
@@ -15,7 +15,7 @@ $$
 A_+ = a + a', \qquad A_- = a - a', \qquad A = A_+ \Pi_1 + A_- \Pi_2,
 $$
 
-and $N(A) = A_+ A_-$.
+and $\langle A\rangle_{\natural} = A_+ A_-$.
 
 ## The Split-Complex Integral
 
@@ -34,7 +34,7 @@ finite because $\gamma'$ is piecewise continuous on a compact interval.
 **Example.** For $A_0 \in \mathbb{D}$ and $r > 0$, the curve
 
 $$
-\gamma(t) = A_0 + r e^{jt} = A_0 + r(\cosh t + j \sinh t), \qquad t \in \mathbb{R},
+\gamma(t) = A_0 + r \exp(jt) = A_0 + r(\cosh t + j \sinh t), \qquad t \in \mathbb{R},
 $$
 
 is a hyperbola and is not closed, because the split complex exponential is injective and $\cosh$ and $\sinh$ are not periodic. The closed curves along which integrals are taken are the ordinary Euclidean circles $\gamma(t) = A_0 + r(\cos t + j \sin t)$, of length $2\pi r$.
@@ -97,7 +97,7 @@ $$
 
 and $4aa'bb' \leq 4\lvert aa'\rvert \lvert bb'\rvert \leq (a^2 + a'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|AB\|_E^2 \leq 2\|A\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert a\rvert = \lvert a'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $aa'bb' > 0$, that is, if and only if $A$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
 
-**Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $N$, used below.
+**Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{\natural}$, used below.
 
 ### The Idempotent Decomposition of the Integral
 
@@ -159,7 +159,7 @@ So the split Cauchy–Riemann operator factors the wave operator, not the Laplac
 2. $\partial_{\bar A} f = 0$, that is $D f = 0$.
 3. $f_+$ is independent of $A_-$ and $f_-$ is independent of $A_+$.
 
-**Proof.** The equivalence of (1) and (2) is the split Cauchy–Riemann equations of *Split Complex Analysis*. For (2) and (3), apply the factorised operator: for $f = f_+\Pi_1 + f_-\Pi_2$,
+**Proof.** The equivalence of (1) and (2) is the split Cauchy–Riemann equations of *Split-Complex Analysis*. For (2) and (3), apply the factorised operator: for $f = f_+\Pi_1 + f_-\Pi_2$,
 
 $$
 \partial_{\bar A} f = (\Pi_2\partial_+ + \Pi_1\partial_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial_+ f_-)\,\Pi_2 + (\partial_- f_+)\,\Pi_1,
@@ -249,10 +249,10 @@ The Cauchy–Goursat theorem is the vanishing half of the Cauchy theory. The oth
 **Proposition.** Let $A_0 \in \mathbb{D}$. The element $\zeta - A_0$ is a unit if and only if $\zeta$ lies off the **null cone** through $A_0$, that is, off the union of the two lines $\zeta_+ = A_{0+}$ and $\zeta_- = A_{0-}$. For $\zeta - A_0$ a unit,
 
 $$
-(\zeta - A_0)^{-1} = \frac{\overline{\zeta - A_0}}{N(\zeta - A_0)} = \frac{\Pi_1}{\zeta_+ - A_{0+}} + \frac{\Pi_2}{\zeta_- - A_{0-}}.
+(\zeta - A_0)^{-1} = \frac{\overline{\zeta - A_0}}{\langle \zeta - A_0\rangle_{\natural}} = \frac{\Pi_1}{\zeta_+ - A_{0+}} + \frac{\Pi_2}{\zeta_- - A_{0-}}.
 $$
 
-**Proof.** The inverse formula $B^{-1} = \bar B / N(B)$ is valid whenever $N(B) \neq 0$, and $N(\zeta - A_0) = (\zeta_+ - A_{0+})(\zeta_- - A_{0-})$, which vanishes exactly on the two stated lines.
+**Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{\natural}$ is valid whenever $\langle B\rangle_{\natural} \neq 0$, and $\langle \zeta - A_0\rangle_{\natural} = (\zeta_+ - A_{0+})(\zeta_- - A_{0-})$, which vanishes exactly on the two stated lines.
 
 **Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}$: there is no constant $c \in \mathbb{D}$ such that
 
@@ -449,7 +449,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
 | $\bar A = a - ja'$ | Split complex conjugate |
-| $N(A) = A\bar A = a^2 - a'^2$ | Norm, signature $(1,1)$ |
+| $\langle A\rangle_{\natural} = A\bar A = a^2 - a'^2$ | Norm, signature $(1,1)$ |
 | $\{N = 0\}$ | Null cone, the zero-divisor set |
 | $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean modulus |
 | $\Pi_1 = \tfrac12(1+j), \ \Pi_2 = \tfrac12(1-j)$ | Idempotents, $\Pi_{1,2}^2 = \Pi_{1,2}$, $\Pi_1\Pi_2 = 0$ |

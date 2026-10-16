@@ -87,7 +87,7 @@ $$
 W(q,\alpha_1)=\int^{q}\sqrt{2m\alpha_1-m^2\omega^2s^2}\,ds ,
 $$
 
-so that $p=W_q=\sqrt{2m\alpha_1-m^2\omega^2q^2}$; the constant $\alpha_1$ is the energy, and the quadrature $\partial W/\partial\alpha_1=\beta_1$ is
+so that $p=\partial_q W=\sqrt{2m\alpha_1-m^2\omega^2q^2}$; the constant $\alpha_1$ is the energy, and the quadrature $\partial W/\partial\alpha_1=\beta_1$ is
 
 $$
 \frac{1}{\omega}\arcsin\frac{q\omega}{\sqrt{2\alpha_1/m}}=t+\beta_1 ,

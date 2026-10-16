@@ -29,13 +29,13 @@ Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_
 Let a charge distribution of density $\rho(\vec x')$ be confined to a bounded region. Its **quadrupole tensor** is
 
 $$
-Q_{ij} = \int \rho(\vec x')\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' .
+\Theta_{ij} = \int \rho(\vec x')\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' .
 $$
 
-It is symmetric, $Q_{ij} = Q_{ji}$, and traceless, $Q_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ would contribute a monopole-like $r^{-1}$ tail and is already accounted for by the total charge. The five independent components are the representation $D^{(2)}$ of the rotation group, and it is useful to write them in the symmetric-traceless form the definition suggests:
+It is symmetric, $\Theta_{ij} = \Theta_{ji}$, and traceless, $\Theta_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ would contribute a monopole-like $r^{-1}$ tail and is already accounted for by the total charge. The five independent components are the representation $D^{(2)}$ of the rotation group, and it is useful to write them in the symmetric-traceless form the definition suggests:
 
 $$
-Q_{ij} \in \operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
+\Theta_{ij} \in \operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
 \qquad
 \dim_{\mathbb{C}} \operatorname{Sym}^2_0(D^{(1)}) = 5 .
 $$
@@ -43,10 +43,10 @@ $$
 The quadrupole contributes to the potential of the source at the order $r^{-3}$,
 
 $$
-\Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\left[\frac{q}{r} + \frac{\vec p\cdot\hat u}{r^2} + \frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j + \ldots\right],
+\Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\left[\frac{ϙ}{r} + \frac{\vec p\cdot\vec u}{r^2} + \frac{1}{2r^3}\Theta_{ij}\vec u_i\vec u_j + \ldots\right],
 $$
 
-with $\hat u = \vec x/r$, $q$ the total charge and $\vec p = \int\rho\,\vec x'\,d^3x'$ the dipole moment. The term displayed is the exact quadrupole term of the Cartesian expansion, and it is a solid harmonic of degree two: it is $r'^{\,2}P_2(\cos\gamma)$ continued to the field point.
+with $\vec u = \vec x/r$, $ϙ$ the total charge and $\vec p = \int\rho\,\vec x'\,d^3x'$ the dipole moment. The term displayed is the exact quadrupole term of the Cartesian expansion, and it is a solid harmonic of degree two: it is $r'^{\,2}P_2(\cos\gamma)$ continued to the field point.
 
 ### Why the Moment Is Not an Algebra Element
 
@@ -59,7 +59,7 @@ $$
 the centre being the trivial representation and the vector part the vector representation. The reason is a dimension count: a four-dimensional complex space decomposes into representations of dimensions $1, 3, 5, \ldots$, and the only partitions of $4$ are $4 = 1 + 3$ and $4 = 1 + 1 + 1 + 1$. A $D^{(2)}$ alone would already require dimension five. More than that, the algebra cannot *reach* the quadrupole by multiplication either: the quaternion product of two vectors,
 
 $$
-\vec u\vec v = -\vec u\cdot\vec v + \vec u\times\vec v ,
+\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v ,
 $$
 
 projects the Clebsch–Gordan sum $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part, which is precisely what a quadrupole is.
@@ -80,18 +80,18 @@ $$
 
 with $\tilde{J} = ic\rho\,e_0 + \vec J\in\mathbb{M}_-$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.
 
-For a source with a single frequency $\omega$, the current is $\vec J(\vec x',t) = \vec J(\vec x')e^{-i\omega t}$, and in the far zone $r = |\vec x|\to\infty$ the retarded integral reduces to
+For a source with a single frequency $\omega$, the current is $\vec J(\vec x',t) = \vec J(\vec x')\exp(-i\omega t)$, and in the far zone $r = |\vec x|\to\infty$ the retarded integral reduces to
 
 $$
-\vec A(\vec x,t) = \frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\vec F(\hat u) ,
+\vec A(\vec x,t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega t))}{r}\,\vec F(\vec u) ,
 \qquad
-\vec F(\hat u) = \int \vec J(\vec x')\,e^{-ik\hat u\cdot\vec x'}\,d^3x' ,
+\vec F(\vec u) = \int \vec J(\vec x')\,\exp(-ik\vec u\cdot\vec x')\,d^3x' ,
 $$
 
-with the wavenumber $k = \omega/c$ and $\hat u = \vec x/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\hat u)$, and the multipole expansion is the expansion of the phase factor in powers of $k\hat u\cdot\vec x'$:
+with the wavenumber $k = \omega/c$ and $\vec u = \vec x/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\vec u)$, and the multipole expansion is the expansion of the phase factor in powers of $k\vec u\cdot\vec x'$:
 
 $$
-\vec F(\hat u) = \int\vec J - ik\int(\hat u\cdot\vec x')\vec J - \frac{k^2}{2}\int(\hat u\cdot\vec x')^2\vec J + \ldots
+\vec F(\vec u) = \int\vec J - ik\int(\vec u\cdot\vec x')\vec J - \frac{k^2}{2}\int(\vec u\cdot\vec x')^2\vec J + \ldots
 $$
 
 Each successive term adds one order of $kr'$ and one unit of angular momentum. The four-vector potential $\tilde{A}$ and the field-strength biquaternion $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ inherit this expansion term by term.
@@ -123,19 +123,19 @@ $$
 are the second moment of the charge and the magnetic dipole moment. The first identity follows from $\int\partial_k'(x_i'x_j'J_k)\,d^3x' = 0$, which gives $\int(x_i'J_j + x_j'J_i) = -i\omega\int x_i'x_j'\rho$, and the second is the definition of $\vec m$. Hence
 
 $$
-\int(\hat u\cdot\vec x')\vec J\,d^3x' = -\hat u\times\vec m - \frac{i\omega}{2}\,\vec D(\hat u) ,
+\int(\vec u\cdot\vec x')\vec J\,d^3x' = -\vec u\times\vec m - \frac{i\omega}{2}\,\vec D(\vec u) ,
 \qquad
-[\vec D(\hat u)]_i = D_{ij}n_j .
+[\vec D(\vec u)]_i = D_{ij}n_j .
 $$
 
-The antisymmetric part is the **magnetic dipole**; the symmetric part is the **electric quadrupole**. Writing the traceless quadrupole as $Q_{ij} = 3D_{ij} - r'^{\,2}\delta_{ij}\int\rho$ and dropping the trace, which is radial and radiates nothing, the two contributions to the radiation vector at first order are
+The antisymmetric part is the **magnetic dipole**; the symmetric part is the **electric quadrupole**. Writing the traceless quadrupole as $\Theta_{ij} = 3D_{ij} - r'^{\,2}\delta_{ij}\int\rho$ and dropping the trace, which is radial and radiates nothing, the two contributions to the radiation vector at first order are
 
 $$
-\vec F_{M1}(\hat u) = ik\,\hat u\times\vec m ,
+\vec F_{M1}(\vec u) = ik\,\vec u\times\vec m ,
 \qquad
-\vec F_{E2}(\hat u) = -\frac{k\omega}{6}\,\vec Q(\hat u) ,
+\vec F_{E2}(\vec u) = -\frac{k\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
 \qquad
-[\vec Q(\hat u)]_i = Q_{ij}n_j .
+[\vec{\mathcal{Q}}(\vec u)]_i = \Theta_{ij}n_j .
 $$
 
 The electric quadrupole and the magnetic dipole appear together at the same order in $k$, and this pairing is the reason the quadrupole is a relativistic subject. A boost that converts an electric dipole into a magnetic dipole converts an electric quadrupole into a magnetic quadrupole, so that the electric and magnetic types of a given order are tied together by the boost even though they enter the radiation vector at different orders.
@@ -144,7 +144,7 @@ The electric quadrupole and the magnetic dipole appear together at the same orde
 
 ### The Lab-Frame Moment of a Moving Source
 
-Consider a source that is static in its rest frame $S'$, with charge density $\rho'(\vec x')$ and quadrupole tensor $Q'_{ij}$, and let it move with velocity $\vec v$ in the lab frame $S$. At a fixed lab time, the lab density is the rest density contracted along the motion and scaled by the time-dilation factor,
+Consider a source that is static in its rest frame $S'$, with charge density $\rho'(\vec x')$ and quadrupole tensor $\mathcal{Q}'_{ij}$, and let it move with velocity $\vec v$ in the lab frame $S$. At a fixed lab time, the lab density is the rest density contracted along the motion and scaled by the time-dilation factor,
 
 $$
 \rho(\vec x) = \gamma\,\rho'\!\left(\gamma\,\vec x_\parallel,\ \vec x_\perp\right) ,
@@ -159,43 +159,43 @@ where $\vec x_\parallel$ and $\vec x_\perp$ are the components of $\vec x$ along
 The lab-frame quadrupole is the same functional of the lab density,
 
 $$
-Q_{ij} = \int\rho(\vec x)\left(3x_ix_j - r^2\delta_{ij}\right)d^3x ,
+\Theta_{ij} = \int\rho(\vec x)\left(3x_ix_j - r^2\delta_{ij}\right)d^3x ,
 $$
 
 and it is automatically traceless. For a boost along the $z$-axis it evaluates, in terms of the rest-frame second moments $D'_{ij} = \int\rho'x_i'x_j'\,d^3x'$, to
 
 $$
-Q_{xx} = 2D'_{xx} - D'_{yy} - \frac{D'_{zz}}{\gamma^2} ,
+\Theta_{xx} = 2D'_{xx} - D'_{yy} - \frac{D'_{zz}}{\gamma^2} ,
 \qquad
-Q_{yy} = 2D'_{yy} - D'_{xx} - \frac{D'_{zz}}{\gamma^2} ,
+\Theta_{yy} = 2D'_{yy} - D'_{xx} - \frac{D'_{zz}}{\gamma^2} ,
 \qquad
-Q_{zz} = \frac{2D'_{zz}}{\gamma^2} - D'_{xx} - D'_{yy} ,
+\Theta_{zz} = \frac{2D'_{zz}}{\gamma^2} - D'_{xx} - D'_{yy} ,
 $$
 
 $$
-Q_{xy} = 3D'_{xy} ,
+\Theta_{xy} = 3D'_{xy} ,
 \qquad
-Q_{xz} = \frac{3D'_{xz}}{\gamma} ,
+\Theta_{xz} = \frac{3D'_{xz}}{\gamma} ,
 \qquad
-Q_{yz} = \frac{3D'_{yz}}{\gamma} .
+\Theta_{yz} = \frac{3D'_{yz}}{\gamma} .
 $$
 
 The trace vanishes identically, as it must. The transformation is a linear map on the symmetric traceless tensors, and it is not a rotation: it rescales the longitudinal direction by $\gamma^{-1}$, which is exactly the statement that the moment is not a four-vector.
 
 ### The Lorentz-Contraction Quadrupole
 
-The transformation has a consequence worth isolating. A rest-frame **sphere** has $D'_{ij} = \tfrac{1}{3}T'\delta_{ij}$ with $T' = \int\rho'r'^{\,2}d^3x'$, and therefore $Q'_{ij} = 0$: it is a pure monopole. Under the boost it acquires
+The transformation has a consequence worth isolating. A rest-frame **sphere** has $D'_{ij} = \tfrac{1}{3}T'\delta_{ij}$ with $T' = \int\rho'r'^{\,2}d^3x'$, and therefore $\mathcal{Q}'_{ij} = 0$: it is a pure monopole. Under the boost it acquires
 
 $$
-Q_{zz} = -\frac{2\beta^2}{3}\,T' ,
+\Theta_{zz} = -\frac{2\beta^2}{3}\,T' ,
 \qquad
-Q_{xx} = Q_{yy} = +\frac{\beta^2}{3}\,T' ,
+\Theta_{xx} = \Theta_{yy} = +\frac{\beta^2}{3}\,T' ,
 $$
 
 an oblate quadrupole proportional to the square of the speed and to the source's mean-square radius. The result is purely kinematic and follows from the contraction of the slice on which the moment is measured; it is the tensor expression of the fact that a moving sphere is seen as an oblate spheroid. For a general rest-frame quadrupole the two effects add, and the longitudinal component reads
 
 $$
-Q_{zz} = \frac{2+\gamma^2}{3\gamma^2}\,Q'_{zz} - \frac{2\beta^2}{3}\,T' ,
+\Theta_{zz} = \frac{2+\gamma^2}{3\gamma^2}\,\mathcal{Q}'_{zz} - \frac{2\beta^2}{3}\,T' ,
 $$
 
 a boosted piece plus a contraction piece. The second piece is the reason the trace $T'$ of the rest-frame second moment enters a formula for the quadrupole: it is not a multipole moment but the source's size, and the contraction converts size into quadrupole.
@@ -237,44 +237,44 @@ In the near zone the quadrupole field is the gradient of the quadrupole potentia
 $$
 \vec E_{quad}(\vec x) = -\vec\nabla\Phi_{quad} ,
 \qquad
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j .
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\Theta_{ij}\vec u_i\vec u_j .
 $$
 
 This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting flux integrates to zero over a large sphere. It is the static, or quasi-static, quadrupole field, the relativistic correction to the near field of a slowly moving source.
 
 ### The Electric Quadrupole Radiation
 
-In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat u)$, and $\vec B = ik\,\hat u\times\vec A$ in the radiation zone, one obtains
+In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec{\mathcal{Q}}(\vec u)$, and $\vec B = ik\,\vec u\times\vec A$ in the radiation zone, one obtains
 
 $$
-\vec B_{E2}(\vec x,t) = -\frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\frac{ik^2\omega}{6}\,\hat u\times\vec Q(\hat u) .
+\vec B_{E2}(\vec x,t) = -\frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega t))}{r}\,\frac{ik^2\omega}{6}\,\vec u\times\vec{\mathcal{Q}}(\vec u) .
 $$
 
-The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec Q(\hat u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\hat u$:
+The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec{\mathcal{Q}}(\vec u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\vec u$:
 
 $$
-\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\,\left|\hat u\times\vec Q(\hat u)\right|^2 .
+\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\,\left|\vec u\times\vec{\mathcal{Q}}(\vec u)\right|^2 .
 $$
 
-The angular integral of the numerator is a fixed multiple of the invariant $Q_{ij}Q_{ij}$,
+The angular integral of the numerator is a fixed multiple of the invariant $\Theta_{ij}\Theta_{ij}$,
 
 $$
-\oint\left|\hat u\times\vec Q(\hat u)\right|^2d\Omega = \frac{4\pi}{5}\,Q_{ij}Q_{ij} ,
+\oint\left|\vec u\times\vec{\mathcal{Q}}(\vec u)\right|^2d\Omega = \frac{4\pi}{5}\,\Theta_{ij}\Theta_{ij} ,
 $$
 
-a consequence of the tracelessness of $Q$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{kl}+\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})$. The total radiated power is therefore
+a consequence of the tracelessness of $\mathcal{Q}$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{kl}+\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})$. The total radiated power is therefore
 
 $$
-P_{E2} = \frac{\mu_0\,\omega^6}{1440\,\pi\,c^3}\,Q_{ij}Q_{ij}
+P_{E2} = \frac{\mu_0\,\omega^6}{1440\,\pi\,c^3}\,\Theta_{ij}\Theta_{ij}
 = \frac{1}{4\pi\epsilon_0}\,\frac{1}{180\,c^5}\,\langle \dddot{Q}_{ij}\dddot{Q}_{ij}\rangle ,
 $$
 
-where the second form is the standard one, and the two agree because a harmonic quadrupole $Q_{ij}\cos\omega t$ has $\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle = \tfrac{1}{2}\omega^6Q_{ij}Q_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
+where the second form is the standard one, and the two agree because a harmonic quadrupole $\Theta_{ij}\cos\omega t$ has $\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle = \tfrac{1}{2}\omega^6\Theta_{ij}\Theta_{ij}$. This is the standard long-wavelength electric-quadrupole result, reconstructed here from the radiation vector; the sixth power of the frequency is the reason each successive multipole is harder to excite.
 
-For an axisymmetric source, $Q_{ij} = \mathrm{diag}(-\tfrac{1}{2}q,-\tfrac{1}{2}q,q)$ with $q = Q_{zz}$, the angular distribution is the degree-two pattern
+For an axisymmetric source, $\Theta_{ij} = \mathrm{diag}(-\tfrac{1}{2}ϙ,-\tfrac{1}{2}ϙ,ϙ)$ with $ϙ = \Theta_{zz}$, the angular distribution is the degree-two pattern
 
 $$
-\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\cdot\frac{9}{4}\,q^2\sin^2\!\theta\cos^2\!\theta ,
+\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\cdot\frac{9}{4}\,ϙ^2\sin^2\!\theta\cos^2\!\theta ,
 $$
 
 proportional to $\sin^2 2\theta$, with the nulls on the axis and in the equatorial plane and maxima at $\theta = \pi/4$ and $3\pi/4$. The pattern is the field-space image of the corresponding solid harmonic.
@@ -320,16 +320,16 @@ The electric and magnetic quadrupole **fields** are the two summands. For a stat
 The **self-dual decomposition** combines the two halves into the two chiralities,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec V ,
+\tilde{F} = i\sqrt{\epsilon}\,\vec N ,
 \qquad
-\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec V^* ,
+\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^* ,
 \qquad
-\vec V = \vec E+ic\vec B ,
+\vec N = \vec E+ic\vec B ,
 \qquad
-\vec V^* = \vec E-ic\vec B ,
+\vec N^* = \vec E-ic\vec B ,
 $$
 
-with $\vec V$ the self-dual and $\vec V^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H = i\sqrt{\epsilon}\,\vec V^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
+with $\vec N$ the self-dual and $\vec N^*$ the anti-self-dual combination; for the real field the dagger produces the second from the first, since $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H = i\sqrt{\epsilon}\,\vec N^*$. The self-dual half transforms independently under the Lorentz group, in one of its two complex three-dimensional representations; this is the object that a boost rotates as a whole, and the two chiral halves it defines are the two helicities of the radiation. The decomposition of the full multipole series along these two halves is the general problem of higher multipoles.
 
 ### The Radiation Field as a Zero Divisor
 
@@ -340,7 +340,7 @@ I_1 = \vec E^2 - c^2\vec B^2 = 0 ,
 \qquad
 I_2 = \vec E\cdot\vec B = 0 ,
 \qquad
-N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = 0 .
+\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = 0 .
 $$
 
 The field-strength biquaternion of a radiation field is therefore a **zero divisor** of $\mathbb{B}$: the quadrupole radiation field, like every radiation field, is null. The near-zone quadrupole field is not, and the transition between the two is the transition from the non-null field of a bound source to the null field of its radiation.
@@ -349,27 +349,27 @@ The field-strength biquaternion of a radiation field is therefore a **zero divis
 
 The relativistic quadrupole is the first multipole above the dipole, and it differs from the dipole in every way that a boost can reveal.
 
-Its tensor is symmetric and traceless, $Q_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x'$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
+Its tensor is symmetric and traceless, $\Theta_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x'$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
 
 $$
-Q_{xx} = 2D'_{xx}-D'_{yy}-\frac{D'_{zz}}{\gamma^2} ,
+\Theta_{xx} = 2D'_{xx}-D'_{yy}-\frac{D'_{zz}}{\gamma^2} ,
 \quad
-Q_{zz} = \frac{2D'_{zz}}{\gamma^2}-D'_{xx}-D'_{yy} ,
+\Theta_{zz} = \frac{2D'_{zz}}{\gamma^2}-D'_{xx}-D'_{yy} ,
 \quad
-Q_{xy} = 3D'_{xy} ,
+\Theta_{xy} = 3D'_{xy} ,
 \quad
-Q_{xz} = \frac{3D'_{xz}}{\gamma} ,
+\Theta_{xz} = \frac{3D'_{xz}}{\gamma} ,
 $$
 
-with $Q_{yy}$ following from the trace condition. A rest-frame sphere acquires the oblate contraction quadrupole $Q_{zz} = -\tfrac{2}{3}\beta^2T'$, $Q_{xx} = Q_{yy} = +\tfrac{1}{3}\beta^2T'$, proportional to the mean-square radius $T' = \int\rho'r'^{\,2}d^3x'$.
+with $\Theta_{yy}$ following from the trace condition. A rest-frame sphere acquires the oblate contraction quadrupole $\Theta_{zz} = -\tfrac{2}{3}\beta^2T'$, $\Theta_{xx} = \Theta_{yy} = +\tfrac{1}{3}\beta^2T'$, proportional to the mean-square radius $T' = \int\rho'r'^{\,2}d^3x'$.
 
-In the radiation problem the electric quadrupole appears at first order in $k$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat u)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
+In the radiation problem the electric quadrupole appears at first order in $k$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{k\omega}{6}\vec{\mathcal{Q}}(\vec u)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
 
 $$
-\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\omega^6}{1152\pi^2c^3}\left|\hat u\times\vec Q(\hat u)\right|^2 ,
+\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\omega^6}{1152\pi^2c^3}\left|\vec u\times\vec{\mathcal{Q}}(\vec u)\right|^2 ,
 $$
 
-and the total power is $P_{E2} = \tfrac{\mu_0\omega^6}{1440\pi c^3}Q_{ij}Q_{ij} = \tfrac{1}{4\pi\epsilon_0}\tfrac{1}{180c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$, the standard result, scaling as the sixth power of the frequency.
+and the total power is $P_{E2} = \tfrac{\mu_0\omega^6}{1440\pi c^3}\Theta_{ij}\Theta_{ij} = \tfrac{1}{4\pi\epsilon_0}\tfrac{1}{180c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$, the standard result, scaling as the sixth power of the frequency.
 
 The quadrupole moment is not an algebra element: it is a rank-two tensor, outside the algebra's rotation content $\mathbb{B} = D^{(0)}\oplus D^{(1)}$. The field it produces is nonetheless a biquaternion-valued function; the value is spin one and the angular content lives in the function space, so the finite algebra carries the field at each point while the function space carries the multipole order. Relativistically the electric quadrupole and the magnetic quadrupole mix under boosts: a boost mixes the electric and magnetic fields, that is, the Hermitian and anti-Hermitian halves of $\tilde{F}$, and — for a separate reason, the failure of parity conservation — it rotates the two quadrupole types into one another, while the two chiral halves of the self-dual combination, the two helicities, are left alone. Finally, a quadrupole radiation field is null, so its field-strength biquaternion is a zero divisor.
 
@@ -386,24 +386,24 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\phi/c\,e_0+\vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
-| $\vec V = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec V$ |
-| $\vec V^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec V^*$ for the real field |
+| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |
+| $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ for the real field |
 | $\rho$, $\vec J$ | Charge and current densities |
-| $q$, $\vec p$, $\vec m$ | Monopole, dipole and magnetic dipole moments |
+| $ϙ$, $\vec p$, $\vec m$ | Monopole, dipole and magnetic dipole moments |
 | $D_{ij} = \int\rho\,x_ix_j\,d^3x$ | Second moment of the charge |
-| $Q_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x$ | Quadrupole tensor (symmetric traceless) |
+| $\Theta_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x$ | Quadrupole tensor (symmetric traceless) |
 | $T' = \int\rho'\,r'^{\,2}d^3x'$ | Trace of the rest-frame second moment |
-| $\vec D(\hat u)$, $\vec Q(\hat u)$ | $D_{ij}n_j$, $Q_{ij}n_j$ |
+| $\vec D(\vec u)$, $\vec{\mathcal{Q}}(\vec u)$ | $D_{ij}n_j$, $\Theta_{ij}n_j$ |
 | $\Phi_{quad}$ | Quadrupole potential |
-| $\vec F(\hat u) = \int\vec J\,e^{-ik\hat u\cdot\vec x'}d^3x'$ | Radiation vector |
+| $\vec F(\vec u) = \int\vec J\,\exp(-ik\vec u\cdot\vec x')d^3x'$ | Radiation vector |
 | $E_l$, $M_l$ | Electric and magnetic multipoles of order $l$ |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ |
 | $k = \omega/c$ | Wavenumber |
-| $\hat u = \vec x/r$ | Unit radial vector |
+| $\vec u = \vec x/r$ | Unit radial vector |
 | $\gamma$, $\beta = |\vec v|/c$ | Lorentz factor and speed ratio |
 | $\tilde{U}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B,-\vec E/c)$ |
-| $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; vanishes for a radiation field |
+| $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; vanishes for a radiation field |
 
 ## Further Reading
 

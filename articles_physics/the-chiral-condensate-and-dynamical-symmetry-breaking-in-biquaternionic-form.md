@@ -12,7 +12,7 @@ $$
 
 This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input, and it is stated at the outset in the corpus's three categories.
 
-- **Established, and recomputed below.** The massless biquaternion equation $\tilde{\nabla}\tilde{\Psi}=0$ carries the axial symmetry $\tilde{\Psi}\mapsto e^{i\alpha\gamma_5}\tilde{\Psi}$, and the massive linear chiral pair breaks it: the vector central phase $e^{i\alpha}$ passes through the mass, the axial phase does not, and the axial current obeys $\partial_\mu j_5^\mu = 2im\bar{\psi}\gamma_5\psi$. A condensate $\langle\bar{\Psi}\Psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
+- **Established, and recomputed below.** The massless biquaternion equation $\tilde{\nabla}\tilde{\Psi}=0$ carries the axial symmetry $\tilde{\Psi}\mapsto \exp(i\alpha\gamma_5)\tilde{\Psi}$, and the massive linear chiral pair breaks it: the vector central phase $\exp(i\alpha)$ passes through the mass, the axial phase does not, and the axial current obeys $\partial_\mu j_5^\mu = 2im\bar{\psi}\gamma_5\psi$. A condensate $\langle\bar{\Psi}\Psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
 - **Established, and recomputed below.** The bilinear $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ is chirality-odd, Lorentz-invariant and parity-even; its vacuum expectation is a **central** (scalar) element of $\mathbb{B}$, it is the identity of the two kinds of mass, and it is what the framework's off-diagonal mass coupling is a coefficient of. The counting of broken generators, $N_f^2-1$ for $N_f$ massless flavours, is the standard one and is reproduced.
 - **Standard, transcribed.** The Nambu–Jona-Lasinio gap equation, the critical coupling $G_c$, the mean-field condensate, and the Goldstone counting are textbook. They are stated here in the framework's notation because they are what a dynamical condensate is, and the article verifies the one numerical relation it quotes.
 - **Gap, left visible.** The framework has **no colour group and no strong gauge dynamics**: the compact gauge algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension four, every $\mathbb{B}$-module has even complex dimension, and $SU(3)$ is absent. A QCD-like condensate therefore cannot be *derived* in the framework. The framework supplies the algebraic identity of the condensate with the coefficient of its linear chiral pair; the scale, and the interaction that produces it, are empirical input.
@@ -42,15 +42,15 @@ The framework results used here are those of the companion articles:
 **The massless equation and its two phases.** The massless biquaternion Dirac equation is $\tilde{\nabla}\tilde{\Psi}=0$, whose spinor-module representative is $i\gamma^\mu\partial_\mu\psi=0$. Two one-parameter phase symmetries act on it. The **vector** (central) phase
 
 $$
-V:\ \psi\ \longmapsto\ e^{i\alpha}\psi ,
+V:\ \psi\ \longmapsto\ \exp(i\alpha)\psi ,
 $$
 
-is multiplication by the central element $e^{i\alpha}\in\mathbb{C}_{\mathbb{B}}$; it rotates the two chiralities together. The **axial** phase
+is multiplication by the central element $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$; it rotates the two chiralities together. The **axial** phase
 
 $$
-A:\ \psi\ \longmapsto\ e^{i\alpha\gamma_5}\psi ,
+A:\ \psi\ \longmapsto\ \exp(i\alpha\gamma_5)\psi ,
 \qquad\text{equivalently}\qquad
-\psi_L\longmapsto e^{-i\alpha}\psi_L ,\quad \psi_R\longmapsto e^{+i\alpha}\psi_R ,
+\psi_L\longmapsto \exp(-i\alpha)\psi_L ,\quad \psi_R\longmapsto \exp(+i\alpha)\psi_R ,
 $$
 
 rotates them oppositely. In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two.
@@ -69,12 +69,12 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L , \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-whose module representative is $(i\gamma^\mu\partial_\mu-m)\psi=0$. The two phase transformations act on the mass term as follows. Under the **vector** phase both chiralities acquire the same factor, so the two sides of the first equation acquire $e^{i\alpha}$ and $e^{i\alpha}$: the equation is invariant. Under the **axial** phase the left side acquires $e^{-i\alpha}$ and the right side $e^{+i\alpha}$, and the equation is *not* invariant unless $m=0$. The algebraic statement is exact:
+whose module representative is $(i\gamma^\mu\partial_\mu-m)\psi=0$. The two phase transformations act on the mass term as follows. Under the **vector** phase both chiralities acquire the same factor, so the two sides of the first equation acquire $\exp(i\alpha)$ and $\exp(i\alpha)$: the equation is invariant. Under the **axial** phase the left side acquires $\exp(-i\alpha)$ and the right side $\exp(+i\alpha)$, and the equation is *not* invariant unless $m=0$. The algebraic statement is exact:
 
 $$
-V:\ e^{i\alpha}\ \text{central, passes through } m \ \Longrightarrow\ \text{conserved};
+V:\ \exp(i\alpha)\ \text{central, passes through } m \ \Longrightarrow\ \text{conserved};
 \qquad
-A:\ e^{i\alpha\gamma_5}\ \text{does not} \ \Longrightarrow\ \text{broken by } m .
+A:\ \exp(i\alpha\gamma_5)\ \text{does not} \ \Longrightarrow\ \text{broken by } m .
 $$
 
 This is the framework form of the standard fact that a Dirac mass breaks the axial symmetry while preserving the vector one. It is also the statement recorded in the companion articles on Noether's theorem and on chiral fermions, and it fixes what a condensate can do: a nonzero vacuum value of a chirality-odd bilinear will break $U(1)_A$ and nothing else at this level.
@@ -117,7 +117,7 @@ $$
 A:\ \bar{\Psi}\Psi\ \longmapsto\ \cos(2\alpha)\,\bar{\Psi}\Psi+\sin(2\alpha)\,i\bar{\Psi}\gamma_5\Psi ,
 $$
 
-using $e^{2i\alpha\gamma_5}=\cos(2\alpha)+i\sin(2\alpha)\gamma_5$ and $\gamma_5^2=I_4$. The scalar bilinear therefore rotates into the pseudoscalar bilinear $i\bar{\Psi}\gamma_5\Psi$: the pair $(\bar{\Psi}\Psi,\,i\bar{\Psi}\gamma_5\Psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should.
+using $\exp(2i\alpha\gamma_5)=\cos(2\alpha)+i\sin(2\alpha)\gamma_5$ and $\gamma_5^2=I_4$. The scalar bilinear therefore rotates into the pseudoscalar bilinear $i\bar{\Psi}\gamma_5\Psi$: the pair $(\bar{\Psi}\Psi,\,i\bar{\Psi}\gamma_5\Psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should.
 
 **The order parameter.** A **chiral condensate** is a nonzero vacuum expectation value
 

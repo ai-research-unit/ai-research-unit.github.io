@@ -9,7 +9,7 @@ An **anomaly** is a symmetry of a classical action that does not survive quantis
 
 This article treats both in the biquaternion framework. The framework's contribution is structural and is stated at the outset.
 
-- **Established, and recomputed below.** The axial anomaly is the failure of the chiral rotation $\tilde{\Psi}\mapsto e^{i\alpha\gamma_5}\tilde{\Psi}$ to be a symmetry of the measure. Its density is built from $\gamma_5$, which the Clifford isomorphism identifies with the volume element, $\gamma_5=i\omega$, and it is proportional to the **second invariant** $I_2=\vec E\cdot\vec B$ of the biquaternion field — the topological density computed in the companion article on instantons. The anomaly is therefore not foreign to the framework: its density is one of the framework's two field invariants.
+- **Established, and recomputed below.** The axial anomaly is the failure of the chiral rotation $\tilde{\Psi}\mapsto \exp(i\alpha\gamma_5)\tilde{\Psi}$ to be a symmetry of the measure. Its density is built from $\gamma_5$, which the Clifford isomorphism identifies with the volume element, $\gamma_5=i\omega$, and it is proportional to the **second invariant** $I_2=\vec E\cdot\vec B$ of the biquaternion field — the topological density computed in the companion article on instantons. The anomaly is therefore not foreign to the framework: its density is one of the framework's two field invariants.
 - **Established, and recomputed below.** The anomaly coefficient of a gauge theory is the symmetrised trace $\mathrm{Tr}\,[T^a\{T^b,T^c\}]$ over the left-handed Weyl fermions. The framework's **own** gauge structure — the central $U(1)$ and the $\mathrm{SU}(2)$ inside $\mathbb{M}_-$ — is anomaly-free: the central phase is vector-like, so its cubic trace cancels identically, and $\mathrm{SU}(2)$ has no cubic Casimir, so its triangle coefficient vanishes identically. The framework cannot be inconsistent by a gauge anomaly of the algebra's own gauge fields.
 - **Standard, transcribed.** The anomaly cancellation conditions of the Standard Model's chiral spectrum — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour conditions — are standard, and the article verifies all of them generation by generation. They constrain the hypercharges and the colour assignments; they do not constrain the **number** of generations.
 - **Gap, left visible.** The framework has no chiral gauge group of its own — the central phase is vector-like and the $\mathrm{SU}(2)$ acts vector-like on the algebra's module — so it cannot *derive* the Standard Model's chiral spectrum from which the cancellation conditions are read. It transcribes the conditions and hosts their solution; it does not select it.
@@ -24,7 +24,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. For the abelian anomaly we use the field strength $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, the totally antisymmetric symbol with $\epsilon^{0123}=+1$, and the components $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; for the non-abelian factor we use $\mathcal{A}_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$, with $\kappa=q/\hbar$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the symbols $SU(3)$, $SU(2)_L$, $U(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
+with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. For the abelian anomaly we use the field strength $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, the totally antisymmetric symbol with $\epsilon^{0123}=+1$, and the components $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; for the non-abelian factor we use $\mathcal{A}_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$, with $\kappa=ϙ/\hbar$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the symbols $SU(3)$, $SU(2)_L$, $U(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
 The framework results used here are those of the companion articles:
 
@@ -104,10 +104,10 @@ $$
 
 The same conclusion holds for every $SU(2)$ representation: each is real or pseudoreal, the cubic invariant does not exist, and the triangle coefficient vanishes. The step that makes this useful is the sign rule: because a left-handed doublet and a right-handed doublet contribute with opposite signs, and because each is separately anomalous only through a coefficient that is already zero, **$SU(2)$ is anomaly-free whatever its fermion content.** This is a property of the group, not of the model.
 
-**The abelian factor and the trace pairing.** For the central $U(1)$ the coefficient is the cubic charge sum. The framework's own central phase, however, acts as a **scalar** on the algebra and its module: multiplication by $e^{i\theta}$ multiplies every component of the module by the same factor, so the left- and right-handed spectra carry the *same* charge $q$. The left-handed and right-handed contributions to $\sum Y^3$ therefore have equal magnitude and opposite sign,
+**The abelian factor and the trace pairing.** For the central $U(1)$ the coefficient is the cubic charge sum. The framework's own central phase, however, acts as a **scalar** on the algebra and its module: multiplication by $\exp(i\theta)$ multiplies every component of the module by the same factor, so the left- and right-handed spectra carry the *same* charge $ϙ$. The left-handed and right-handed contributions to $\sum Y^3$ therefore have equal magnitude and opposite sign,
 
 $$
-\sum_{\text{L}} q^3 - \sum_{\text{R}} q^3 = 0 ,
+\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0 ,
 $$
 
 identically, for every module and every charge. This is the algebraic statement that the framework's abelian gauge factor is **vector-like**, and it is the reason that factor cannot be weak hypercharge: hypercharge is chiral, with independent left and right charges, and it is precisely the independent left and right charges that make the cubic sum a condition rather than a tautology. The companion articles on chiral fermions and on the Standard Model agenda make the same point.
@@ -128,7 +128,7 @@ $$
 
 while $SU(3)_c^3$ vanishes automatically because the colour sector is vector-like, and the mixed $SU(3)_c\,SU(2)_L$ conditions vanish automatically because no fermion carries both a nontrivial colour and a nontrivial weak-triplet index. All four are standard.
 
-**The spectrum.** One generation, with hypercharge $Y=Q-T_3$:
+**The spectrum.** One generation, with hypercharge $Y=Ϙ-T_3$:
 
 | field | $SU(3)_c$ | $SU(2)_L$ | $Y$ | chirality |
 |---|---|---|---|---|
@@ -151,7 +151,7 @@ The arithmetic is instructive in one respect: the cubic sum does **not** vanish 
 
 **What the conditions constrain, and what they do not.** Anomaly cancellation constrains the hypercharges, the colours, and the weak representations. It does **not** constrain the number of generations: each generation contributes the sums above independently, so $N_g$ copies contribute $N_g$ times zero. It also does not fix the values uniquely — the conditions are four equations on the several charges, and their solution is the one-generation spectrum only together with other input. The framework's position is the constraint itself: it can state and verify the conditions, and it cannot select the spectrum. The companion article on the number of generations takes up the counting.
 
-**A consistency remark on the module.** The conditions are statements about a **chiral** assignment of charges to the module $\Delta=S\oplus\bar{S}$ with independent left and right charges. The framework's own centre does not supply such an assignment; a chiral abelian symmetry can be *written* on the module, $Q=q_LP_L+q_RP_R$, and it is gauge covariant and anomaly-constrained (the companion article on chiral fermions derives the mass selection rule $q_L=q_R$), but it is not generated by the algebra. The Standard Model's hypercharge is therefore an input on the module, and the cancellation is verified on it rather than derived from it.
+**A consistency remark on the module.** The conditions are statements about a **chiral** assignment of charges to the module $\Delta=S\oplus\bar{S}$ with independent left and right charges. The framework's own centre does not supply such an assignment; a chiral abelian symmetry can be *written* on the module, $Ϙ=ϙ_LP_L+ϙ_RP_R$, and it is gauge covariant and anomaly-constrained (the companion article on chiral fermions derives the mass selection rule $ϙ_L=ϙ_R$), but it is not generated by the algebra. The Standard Model's hypercharge is therefore an input on the module, and the cancellation is verified on it rather than derived from it.
 
 **A sterile fermion is unconstrained.** A right-handed neutrino, carrying $Y=0$ and no colour or weak charge, contributes zero to every one of the four sums. Anomaly cancellation therefore gives **no information** about the existence or the number of sterile fermions, and a gauge-singlet Majorana mass for such a field is not forbidden by any anomaly condition. This is the fermion-sector statement that makes the see-saw mechanism of the companion article possible at all: the heavy state whose mass suppresses the light neutrino mass carries no gauge quantum numbers, and the spectrum that cancels the anomalies is silent about it.
 
@@ -161,7 +161,7 @@ The arithmetic is instructive in one respect: the cubic sum does **not** vanish 
 
 Two statements, both exact, close the loop between the algebra and the consistency condition.
 
-- **The central $U(1)$ is vector-like and therefore anomaly-free.** The centre $\mathbb{C}_{\mathbb{B}}$ acts as a scalar; every component of every module carries the same charge, the left and right spectra coincide, and $\sum_L q^3-\sum_R q^3=0$ identically. The framework's abelian factor cannot produce a gauge anomaly.
+- **The central $U(1)$ is vector-like and therefore anomaly-free.** The centre $\mathbb{C}_{\mathbb{B}}$ acts as a scalar; every component of every module carries the same charge, the left and right spectra coincide, and $\sum_L ϙ^3-\sum_R ϙ^3=0$ identically. The framework's abelian factor cannot produce a gauge anomaly.
 - **The $\mathrm{SU}(2)$ inside $\mathbb{M}_-$ is anomaly-free identically.** Its triangle coefficient vanishes for every representation by the computation above, and the sign rule makes the statement independent of the fermion content. The framework's non-abelian factor cannot produce a gauge anomaly either.
 
 The consequence is worth stating plainly: **the biquaternion framework's own gauge fields pass the anomaly consistency test automatically.** A gauge anomaly is a failure mode the framework does not have. What the framework also does not have is a **chiral** gauge group — a factor assigning independent left and right charges — and it is exactly the chiral factors that make anomaly cancellation a nontrivial condition. So the framework is anomaly-free for the simple reason that it is not chiral where it is gauged, and the Standard Model's nontrivial cancellation lives in the part of its group that the framework does not generate.
@@ -279,7 +279,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $A^{abc}=\mathrm{Tr}[T^a\{T^b,T^c\}]$ | Triangle anomaly coefficient |
 | $\sum_L-\sum_R$ | Left-handed minus right-handed anomaly sum |
 | $T^a=\tfrac12\sigma^a$ | $SU(2)$ generators; $T^a\{T^b,T^c\}=\tfrac14\delta^{bc}\sigma^a$ |
-| $Y=Q-T_3$ | Hypercharge convention |
+| $Y=Ϙ-T_3$ | Hypercharge convention |
 | $SU(3)_c\times SU(2)_L\times U(1)_Y$ | Standard-model gauge group (standard notation, not framework objects) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

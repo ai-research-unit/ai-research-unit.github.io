@@ -28,7 +28,7 @@ $$
 \qquad
 T_a=\tfrac12 e_a ,\ \ [T_a,T_b]=\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
-with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, the coupling $\kappa=q/\hbar$, the covariant derivative $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=UF_{\mu\nu}U^{-1}$ for a unit real quaternion $U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
+with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, the coupling $\kappa=ϙ/\hbar$, the covariant derivative $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
 
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the gauge-fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
@@ -49,11 +49,11 @@ S_{\mathrm{YM}}[\mathcal{A}]=\int d^4x\left(-\tfrac12\mathrm{Tr}\left(F_{\mu\nu}
 \qquad
 F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu] .
 $$
-The trace is the matrix trace on the $\mathrm{SU}(2)$ factor, taken in the defining two-dimensional representation; the combination is invariant because $F'_{\mu\nu}=UF_{\mu\nu}U^{-1}$ and the trace is cyclic. Under a local gauge transformation $U(\tilde{Q})$, the connection shifts by an inhomogeneous term,
+The trace is the matrix trace on the $\mathrm{SU}(2)$ factor, taken in the defining two-dimensional representation; the combination is invariant because $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ and the trace is cyclic. Under a local gauge transformation $\tilde U(\tilde{Q})$, the connection shifts by an inhomogeneous term,
 $$
-\mathcal{A}'_\mu=U\mathcal{A}_\mu U^{-1}+\frac{i}{\kappa}(\partial_\mu U)U^{-1},
+\mathcal{A}'_\mu=\tilde U\mathcal{A}_\mu \tilde U^{-1}+\frac{i}{\kappa}(\partial_\mu \tilde U)\tilde U^{-1},
 $$
-and the action is unchanged, $S_{\mathrm{YM}}[\mathcal{A}^U]=S_{\mathrm{YM}}[\mathcal{A}]$. The same holds for the full Yang–Mills action including a matter sector, provided the matter fields transform in the representation the covariant derivative presupposes.
+and the action is unchanged, $S_{\mathrm{YM}}[\mathcal{A}^\tilde U]=S_{\mathrm{YM}}[\mathcal{A}]$. The same holds for the full Yang–Mills action including a matter sector, provided the matter fields transform in the representation the covariant derivative presupposes.
 
 ### The Orbit and the Infinite Factor
 
@@ -61,10 +61,10 @@ The integration variable is an $\mathrm{SU}(2)$-valued one-form, and the measure
 $$
 \mathcal{D}\mathcal{A}=\prod_{\mu=0}^{3}\prod_{a=1}^{3}\mathcal{D}\mathcal{A}_\mu^a ,
 $$
-written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu U)U^{-1}$ with $(D_\mu U)=\partial_\mu U+i\kappa[\mathcal{A}_\mu,U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^U$. The integrand $e^{iS_{\mathrm{YM}}}$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
+written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu \tilde U)\tilde U^{-1}$ with $(D_\mu \tilde U)=\partial_\mu \tilde U+i\kappa[\mathcal{A}_\mu,\tilde U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^\tilde U$. The integrand $\exp(iS_{\mathrm{YM}})$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
 $$
-Z=\int\mathcal{D}\mathcal{A}\,e^{iS_{\mathrm{YM}}[\mathcal{A}]}
-=\mathrm{Vol}(\mathcal{G})\int_{\text{orbits}}\mathcal{D}\mathcal{A}_{\text{rep}}\,e^{iS_{\mathrm{YM}}[\mathcal{A}]},
+Z=\int\mathcal{D}\mathcal{A}\,\exp(iS_{\mathrm{YM}}[\mathcal{A}])
+=\mathrm{Vol}(\mathcal{G})\int_{\text{orbits}}\mathcal{D}\mathcal{A}_{\text{rep}}\,\exp(iS_{\mathrm{YM}}[\mathcal{A}]),
 $$
 with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge transformations. The factor is an artifact of the parameterization and must be removed; the Faddeev–Popov construction removes it, and in the non-abelian case it does so at the cost of the determinant and the ghosts.
 
@@ -72,17 +72,17 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge trans
 
 ### Inserting Unity
 
-Let $G^a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^U$ denote the gauge transform of $\mathcal{A}$ by $U$. The Faddeev–Popov identity is
+Let $G^a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^\tilde U$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
 $$
-1=\Delta[\mathcal{A}]\int\mathcal{D}U\;\delta\!\left(G[\mathcal{A}^U]\right),
+1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^\tilde U]\right),
 $$
 which defines the determinant $\Delta[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
 $$
-\Delta[\mathcal{A}^U]=\Delta[\mathcal{A}],
+\Delta[\mathcal{A}^\tilde U]=\Delta[\mathcal{A}],
 $$
-because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
+because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
 $$
-Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)e^{iS_{\mathrm{YM}}[\mathcal{A}]},
+Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(iS_{\mathrm{YM}}[\mathcal{A}]),
 $$
 in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.
 
@@ -129,7 +129,7 @@ In the framework this identity is not an independent axiom. The structure consta
 
 The determinant that the gauge-fixing identity produces can be written as a functional integral over anticommuting fields, by the finite-dimensional identity
 $$
-\det M=\int\prod_a d\bar c_a\,dc_a\;e^{-\bar c_a M^{ab}c_b},
+\det M=\int\prod_a d\bar c_a\,dc_a\;\exp(-\bar c_a M^{ab}c_b),
 $$
 with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\partial_\mu D^{\mu\,ab})$, it gives
 $$
@@ -163,7 +163,7 @@ S_{\mathrm{gf}}=-\frac{1}{2\xi}\int d^4x\,\left(\partial_\mu\mathcal{A}^{a\mu}\r
 $$
 where $\xi$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B^a$ of the BRST companion, whose equation of motion is $B^a=-\xi^{-1}\partial_\mu\mathcal{A}^{a\mu}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
 $$
-Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;e^{iS},
+Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(iS),
 $$
 is the Yang–Mills path integral of the framework.
 
@@ -188,7 +188,7 @@ so that physical amplitudes are gauge-parameter independent. This is the content
 
 ### What the Non-Abelian Theory Adds
 
-Two additions are specific to the non-abelian case. The first is that the external current of the gauge field is itself charged, $J'_\nu=UJ_\nu U^{-1}$, and is covariantly conserved, $D_\nu J^\nu=0$, so the identity $p_\nu j^\nu=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial_\nu J^\nu=-i\kappa[\mathcal{A}_\nu,J^\nu]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields. The second addition is that the propagator is not the whole of the quadratic theory: the gauge-fixed action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–gauge coupling $i\kappa f^{abc}\bar c_a\partial_\mu(\mathcal{A}^{b\mu}c^c)$. The one-loop two-point function therefore receives, in addition to the gauge-field loop, the ghost loop and the gauge-field tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
+Two additions are specific to the non-abelian case. The first is that the external current of the gauge field is itself charged, $J'_\nu=\tilde UJ_\nu \tilde U^{-1}$, and is covariantly conserved, $D_\nu J^\nu=0$, so the identity $p_\nu j^\nu=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial_\nu J^\nu=-i\kappa[\mathcal{A}_\nu,J^\nu]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields. The second addition is that the propagator is not the whole of the quadratic theory: the gauge-fixed action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–gauge coupling $i\kappa f^{abc}\bar c_a\partial_\mu(\mathcal{A}^{b\mu}c^c)$. The one-loop two-point function therefore receives, in addition to the gauge-field loop, the ghost loop and the gauge-field tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
 $$
 \beta_\kappa=-\frac{\kappa^3}{16\pi^2}b_0 ,
 \qquad
@@ -200,7 +200,7 @@ with $C_2(G)=N=2$ the adjoint quadratic Casimir of $SU(2)$; the coefficient is p
 
 The classical equation of the companion article is $D_\mu F^{\mu\nu}=J^\nu$, with $D_\nu J^\nu=0$. Inside the path integral it becomes an expectation value, and the derivation is the Schwinger–Dyson argument. For any functional $\mathcal{O}[\mathcal{A}]$ of the connection,
 $$
-0=\int\mathcal{D}\mathcal{A}\,\frac{\delta}{\delta\mathcal{A}_\mu^a(x)}\Big(\mathcal{O}[\mathcal{A}]\,e^{iS}\Big),
+0=\int\mathcal{D}\mathcal{A}\,\frac{\delta}{\delta\mathcal{A}_\mu^a(x)}\Big(\mathcal{O}[\mathcal{A}]\,\exp(iS)\Big),
 $$
 because the integral of a total derivative in field space vanishes. Performing the derivative,
 $$
@@ -225,13 +225,13 @@ where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\fr
 - **The equation holds inside correlators, up to contact terms.** The classical equation is the statement that the integrand of the path integral is stationary; the quantum statement is that the expectation value of the variation vanishes, and additional operators inserted at the same point produce the contact terms. This is general and standard, not special to the gauge field.
 - **The gauge-invariance content is in the identities, not in the equation.** Gauge invariance of the action does not survive gauge fixing as invariance of $S$; it survives as the Slavnov–Taylor identities relating Green functions, which are the quantum transcription of the statement that physical amplitudes are independent of the gauge parameter and that longitudinal gauge fields decouple from physical states. The equation of motion and the identities together replace the classical equation $D_\mu F^{\mu\nu}=J^\nu$.
 
-What the algebra adds here is an interpretation rather than a formula. The covariant divergence that the quantum equation averages is built from the commutator $[\mathcal{A}_\mu,F^{\mu\nu}]$, and the commutator is the adjoint action of the material sector on itself; the current, being the covariant divergence of the curvature, transforms in the adjoint too, $J'_\nu=UJ_\nu U^{-1}$; and the source is therefore a spin-one object of the material sector, exactly as the curvature is. The quantum equation is the stationarity of a functional whose internal index is the spin-one index of the adjoint action.
+What the algebra adds here is an interpretation rather than a formula. The covariant divergence that the quantum equation averages is built from the commutator $[\mathcal{A}_\mu,F^{\mu\nu}]$, and the commutator is the adjoint action of the material sector on itself; the current, being the covariant divergence of the curvature, transforms in the adjoint too, $J'_\nu=\tilde UJ_\nu \tilde U^{-1}$; and the source is therefore a spin-one object of the material sector, exactly as the curvature is. The quantum equation is the stationarity of a functional whose internal index is the spin-one index of the adjoint action.
 
 ## Gauge Slicing and the Gribov Ambiguity
 
 The Faddeev–Popov identity presupposes that the gauge condition $G=0$ intersects each orbit exactly once: the insertion of unity is an identity for each orbit, and the argument that the determinant cancels the volume requires the set of solutions to be a single point per orbit. In the abelian theory on a topologically trivial background this holds for the Lorenz gauge, and the determinant is field-independent. In the non-abelian theory it fails, and the failure is structural.
 
-The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^U]=0$, that is $\partial_\mu\mathcal{A}^{U\mu}=0$, has more than one solution $U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
+The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^\tilde U]=0$, that is $\partial_\mu\mathcal{A}^{\tilde U\mu}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M^{ab}=-\partial\cdot D^{ab}$ is the Hessian of the gauge-fixing functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo gauge transformations is not covered by a single gauge slice: a continuous global gauge-fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
 
 Two consequences follow, and both are properties of the non-abelian path integral as such.
 
@@ -246,11 +246,11 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 **Imported, and left visible.** The Faddeev–Popov trick itself and the insertion of unity; the representation of a determinant by a fermionic Gaussian integral; the gauge-fixing condition and the gauge parameter; the Nakanishi–Lautrup field; the Slavnov–Taylor identities and the standard renormalization of the coupling; the one-loop beta coefficient; the Gribov ambiguity and Singer's obstruction; and the non-perturbative construction of confinement. The algebra supplies the carrier and the structure constants; the analytic apparatus of the path integral is standard.
 
-**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\xi$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial_\mu U)U^{-1}$ is Hermitian in the spatial directions and anti-Hermitian in the $ict$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the time direction and obstructed in the space directions, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
+**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\xi$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial_\mu \tilde U)\tilde U^{-1}$ is Hermitian in the spatial directions and anti-Hermitian in the $ict$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the time direction and obstructed in the space directions, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
 
 ## Summary
 
-The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}U\,\delta(G[\mathcal{A}^U])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
+The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^\tilde U])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
 $$
 \Delta[\mathcal{A}]=\det\big(-\partial_\mu D^{\mu\,ab}\big),
 \qquad
@@ -286,13 +286,13 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ | Compact gauge algebra |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $f^{abc}=2\varepsilon^{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
-| $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, $\kappa=q/\hbar$ | Connection and coupling |
+| $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Connection and coupling |
 | $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
 | $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\tfrac12\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_\mu^a$ | Measure on $\mathrm{SU}(2)$-valued configurations |
 | $G^a[\mathcal{A}]=\partial_\mu\mathcal{A}^{a\mu}-\omega^a$ | Lorenz gauge-fixing condition |
-| $1=\Delta[\mathcal{A}]\int\mathcal{D}U\,\delta(G[\mathcal{A}^U])$ | Faddeev–Popov identity |
+| $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^\tilde U])$ | Faddeev–Popov identity |
 | $M^{ab}=-\partial_\mu D^{\mu\,ab}$ | Faddeev–Popov operator (field-dependent) |
 | $D_\mu{}^{ab}=\partial_\mu\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ | Covariant derivative in the adjoint representation |
 | $c^a,\bar c_a$ | Faddeev–Popov ghost and antighost, Grassmann-odd |

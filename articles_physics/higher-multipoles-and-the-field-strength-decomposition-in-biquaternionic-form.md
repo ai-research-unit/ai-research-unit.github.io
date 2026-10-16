@@ -42,7 +42,7 @@ $$
 each $D^{(l)}$ appearing once. The coefficients of the expansion are the **multipole moments**, functionals of the source:
 
 $$
-q_{lm} = \int \rho(\vec x')\,r'^{\,l}\,Y_l^{m*}(\hat x')\,d^3x' ,
+\mathcal{Q}_{lm} = \int \rho(\vec x')\,r'^{\,l}\,Y_l^{m*}(\vec u_x')\,d^3x' ,
 $$
 
 the electric moments, together with the magnetic moments built from the current. The potential of the source at a field point outside it is a sum of two radial behaviours for each $l$: the irregular solution, which is the near-zone multipole field of the source, and the outgoing spherical wave, which is its radiation. The angular order $l$ is common to both; the multipole order is a property of the angular map, and the near-to-far transition is a property of the radial function. This is the standard multipole expansion and is transcribed rather than re-derived.
@@ -50,12 +50,12 @@ the electric moments, together with the magnetic moments built from the current.
 For radiation the cleanest bookkeeping is through the **radiation vector** of the electromagnetic series,
 
 $$
-\vec F(\hat u) = \int \vec J(\vec x')\,e^{-ik\hat u\cdot\vec x'}\,d^3x' ,
+\vec F(\vec u) = \int \vec J(\vec x')\,\exp(-ik\vec u\cdot\vec x')\,d^3x' ,
 \qquad
 k = \frac{\omega}{c} ,
 $$
 
-whose expansion in powers of $k\hat u\cdot\vec x'$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
+whose expansion in powers of $k\vec u\cdot\vec x'$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
 
 $$
 k^0:\ E_1 ,
@@ -76,12 +76,12 @@ The pairing is worth holding on to: at each order in $k$ the field carries an el
 On the sphere the two transverse families that carry the radiation are the **vector spherical harmonics**
 
 $$
-\vec Q_{lm} = \frac{1}{\sqrt{l(l+1)}}\,\vec L\,Y_{lm} ,
+\vec Y_{lm} = \frac{1}{\sqrt{l(l+1)}}\,\vec L\,Y_{lm} ,
 \qquad
 \vec L = -i\,\vec r\times\vec\nabla ,
 $$
 
-which are tangential, $\vec Q_{lm}\cdot\hat r = 0$, together with their rotated partners $\hat r\times\vec Q_{lm}$ and the radial family $\hat rY_{lm}$. Any vector field on the sphere decomposes into these three families; the radiation field is transverse, so its radial family is absent, and it is a sum of the two tangential families. One family is the **electric** $l$-pole and the other the **magnetic** $l$-pole. In the common convention the magnetic $l$-pole has its magnetic field along $\vec Q_{lm}$ and its electric field along $\hat r\times\vec Q_{lm}$, and the electric $l$-pole interchanges the two. The two families carry opposite parity: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$. This is standard vector-harmonic analysis, and it is cited as standard.
+which are tangential, $\vec Y_{lm}\cdot\vec u_r = 0$, together with their rotated partners $\vec u_r\times\vec Y_{lm}$ and the radial family $\vec u_rY_{lm}$. Any vector field on the sphere decomposes into these three families; the radiation field is transverse, so its radial family is absent, and it is a sum of the two tangential families. One family is the **electric** $l$-pole and the other the **magnetic** $l$-pole. In the common convention the magnetic $l$-pole has its magnetic field along $\vec Y_{lm}$ and its electric field along $\vec u_r\times\vec Y_{lm}$, and the electric $l$-pole interchanges the two. The two families carry opposite parity: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$. This is standard vector-harmonic analysis, and it is cited as standard.
 
 ### The Multipole Fields and Their Angular Momentum
 
@@ -144,28 +144,28 @@ $$
 the two combinations of opposite chirality are built from the **Riemann–Silberstein vector** and its conjugate,
 
 $$
-\vec V = \vec E + ic\,\vec B ,
+\vec N = \vec E + ic\,\vec B ,
 \qquad
-\vec V^* = \vec E - ic\,\vec B ,
+\vec N^* = \vec E - ic\,\vec B ,
 $$
 
 on which the dual acts by a phase,
 
 $$
-\star\vec V = -i\,\vec V ,
+\star\vec N = -i\,\vec N ,
 \qquad
-\star\vec V^* = +i\,\vec V^* .
+\star\vec N^* = +i\,\vec N^* .
 $$
 
-The self-dual combination $F + i\star F$ corresponds to $2\vec V$ and the anti-self-dual combination $F - i\star F$ corresponds to $2\vec V^*$. For the real physical field the two chiralities are the field strength and its dagger,
+The self-dual combination $F + i\star F$ corresponds to $2\vec N$ and the anti-self-dual combination $F - i\star F$ corresponds to $2\vec N^*$. For the real physical field the two chiralities are the field strength and its dagger,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\vec V ,
+\tilde{F} = i\sqrt{\epsilon}\,\vec N ,
 \qquad
-\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec V^* ,
+\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^* ,
 $$
 
-so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = -\tilde{F}^* = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ together with $\sqrt{\mu}\,\vec H = \sqrt{\epsilon}\,c\,\vec B$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec V^* = \overline{\vec V}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
+so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = -\tilde{F}^* = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ together with $\sqrt{\mu}\,\vec H = \sqrt{\epsilon}\,c\,\vec B$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
 
 ### The Relation of the Two Decompositions
 
@@ -174,20 +174,20 @@ The two decompositions are different, and it is their difference that organises 
 - The **Hermitian** split is a decomposition over the **real** field space: it separates the two real three-dimensional subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, it is rotation-covariant, and it is not boost-covariant.
 - The **self-dual** split is a decomposition over the **complexified** field space: it separates the two complex three-dimensional eigenspaces of $\star$, it is boost-covariant (in fact Lorentz-covariant), and it is not the same splitting as the first.
 
-The two ways of cutting the same six dimensions are related by the definition $\vec V = \vec E + ic\vec B$, so that the electric and magnetic fields are recovered as
+The two ways of cutting the same six dimensions are related by the definition $\vec N = \vec E + ic\vec B$, so that the electric and magnetic fields are recovered as
 
 $$
-\vec E = \frac{\vec V + \vec V^*}{2} = \frac{\vec V + \overline{\vec V}}{2} ,
+\vec E = \frac{\vec N + \vec N^*}{2} = \frac{\vec N + \overline{\vec N}}{2} ,
 \qquad
-\vec B = \frac{\vec V - \vec V^*}{2ic} = \frac{\vec V - \overline{\vec V}}{2ic}
+\vec B = \frac{\vec N - \vec N^*}{2ic} = \frac{\vec N - \overline{\vec N}}{2ic}
 $$
 
 for a real field. Each decomposition is a covariant splitting in its own category — rotations for the first, Lorentz transformations for the second — and the multipole series is expressed most economically in the second.
 
-The invariants sit naturally in the self-dual vector. The two field invariants are the real and imaginary parts of $\vec V\cdot\vec V$,
+The invariants sit naturally in the self-dual vector. The two field invariants are the real and imaginary parts of $\vec N\cdot\vec N$,
 
 $$
-\vec V\cdot\vec V = \left(\vec E^2 - c^2\vec B^2\right) + 2ic\,\vec E\cdot\vec B = I_1 + 2ic\,I_2 ,
+\vec N\cdot\vec N = \left(\vec E^2 - c^2\vec B^2\right) + 2ic\,\vec E\cdot\vec B = I_1 + 2ic\,I_2 ,
 $$
 
 and the biquaternion norm of the field-strength biquaternion vanishes exactly when the Riemann–Silberstein vector is null, which is the condition for a radiation field.
@@ -210,23 +210,23 @@ A four-dimensional rotation module cannot contain a $D^{(l)}$ with $l\ge2$: the 
 
 At each order $l\ge1$ the field carries two multiplet types, an electric one and a magnetic one, and the two decompositions of $\tilde{F}$ relate to them in different ways.
 
-**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\vec Q_{lm}$ and the electric family $\hat r\times\vec Q_{lm}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^{*}) = i\sqrt{\epsilon}\vec E$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^{*}) = -\sqrt{\mu}\vec H$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\vec B = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\vec E = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
+**The multipole types and the Hermitian decomposition.** The electric and magnetic multipole types are distinguished by **parity**: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$, and in the vector-spherical-harmonic basis the magnetic family is $\vec Y_{lm}$ and the electric family $\vec u_r\times\vec Y_{lm}$. This is *not* the Hermitian split of the field strength. The Hermitian split separates the electric **field** from the magnetic **field**, $\tfrac{1}{2}(\tilde{F}+\tilde{F}^{*}) = i\sqrt{\epsilon}\vec E$ and $\tfrac{1}{2}(\tilde{F}-\tilde{F}^{*}) = -\sqrt{\mu}\vec H$, and a radiating multipole of either type has both an electric and a magnetic field. The two distinctions coincide only in the static limit: a static charge distribution has $\vec B = 0$, so its multipole fields are purely Hermitian, and a stationary current has $\vec E = 0$, so its multipole fields are purely anti-Hermitian. In that limit, and only there, the electric multipoles $E_l$ are Hermitian fields and the magnetic multipoles $M_l$ anti-Hermitian ones.
 
 **The multipole types and the self-dual decomposition.** In the radiation field the two chiral halves are the two **helicities**. For each order $l$ the self-dual part carries one circular polarisation and the anti-self-dual part the other, and the electric and magnetic multiplet types are the parity-even and parity-odd combinations of the two helicity amplitudes, related to them by the same linear transformation that relates linear to circular polarisation. The reason is that parity exchanges the two chiral halves. Spatial inversion acts on the fields by $\vec E\mapsto-\vec E$ and $\vec B\mapsto\vec B$, so on the Riemann–Silberstein vector it acts as
 
 $$
-\vec V\ \longmapsto\ -\vec V^* ,
+\vec N\ \longmapsto\ -\vec N^* ,
 $$
 
 and therefore
 
 $$
-\vec V+\vec V^*\ \longmapsto\ -\left(\vec V+\vec V^*\right) ,
+\vec N+\vec N^*\ \longmapsto\ -\left(\vec N+\vec N^*\right) ,
 \qquad
-\vec V-\vec V^*\ \longmapsto\ +\left(\vec V-\vec V^*\right) .
+\vec N-\vec N^*\ \longmapsto\ +\left(\vec N-\vec N^*\right) .
 $$
 
-A single chirality is therefore exchanged with the other and has no definite parity, and only a combination of the two has one. Those combinations are the electric and magnetic multipole types: the electric $l$-pole has parity $(-1)^l$ and the magnetic $l$-pole parity $(-1)^{l+1}$, so the correspondence between the two combinations and the two types is fixed only together with the order, the angular part contributing a factor $(-1)^l$ on top of the vector character computed above. The pointwise combinations $\vec V\pm\vec V^*$ are the parity eigenstates of the **field components** — the polar $\vec E$ and the axial $\vec B$ — and this is not the same as the electric/magnetic multipole distinction, for the same reason as before: a static electric quadrupole has $\vec B = 0$, so it lies entirely in one pointwise combination, yet its multipole type is a single parity class of order two. The self-dual split is the Lorentz-covariant one; the electric and magnetic types are not separately covariant, because a boost does not preserve parity and therefore rotates the two types into one another while leaving the two helicities alone.
+A single chirality is therefore exchanged with the other and has no definite parity, and only a combination of the two has one. Those combinations are the electric and magnetic multipole types: the electric $l$-pole has parity $(-1)^l$ and the magnetic $l$-pole parity $(-1)^{l+1}$, so the correspondence between the two combinations and the two types is fixed only together with the order, the angular part contributing a factor $(-1)^l$ on top of the vector character computed above. The pointwise combinations $\vec N\pm\vec N^*$ are the parity eigenstates of the **field components** — the polar $\vec E$ and the axial $\vec B$ — and this is not the same as the electric/magnetic multipole distinction, for the same reason as before: a static electric quadrupole has $\vec B = 0$, so it lies entirely in one pointwise combination, yet its multipole type is a single parity class of order two. The self-dual split is the Lorentz-covariant one; the electric and magnetic types are not separately covariant, because a boost does not preserve parity and therefore rotates the two types into one another while leaving the two helicities alone.
 
 **Compatibility with the function space.** The two decompositions act on the value algebra — into its two real sectors, and into its two complex chiral eigenspaces — while the order $l$ labels the angular content in a fixed frame. The two are of different kinds, and one of them is frame-dependent. The rotation subgroup preserves the order and acts on the electric and magnetic multiplets of an order independently; a boost does not preserve the order, because it transforms the argument of the field as well as its value, so a pure $l$-pole of one frame carries other orders in another. The two decompositions of the value thus act within the angular decomposition of a given frame, and the covariant statement is carried by the field strength and its chiral halves rather than by the tower.
 
@@ -235,20 +235,20 @@ A single chirality is therefore exchanged with the other and has no definite par
 For radiation the two decompositions meet a third property. In the far zone the field is transverse and balanced, $\vec E\cdot\vec B = 0$ and $\vec E^2 = c^2\vec B^2$, so both invariants vanish and
 
 $$
-\vec V\cdot\vec V = 0 ,
+\vec N\cdot\vec N = 0 ,
 \qquad
-N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural} = 0 .
+\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = 0 .
 $$
 
 The field-strength biquaternion of a radiation field is a **zero divisor**: a radiation field is null, whether it is an electric or a magnetic multipole, and the null property is shared by the whole far-zone tower.
 
-A further simplification occurs for definite helicity. With the corpus's $e^{-i\omega t}$ convention, for which a positive-frequency plane wave has $\vec B = \hat u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
+A further simplification occurs for definite helicity. With the corpus's $\exp(-i\omega t)$ convention, for which a positive-frequency plane wave has $\vec B = \vec u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
 
 $$
-\vec V^* = \vec E - ic\,\vec B = 0 ,
+\vec N^* = \vec E - ic\,\vec B = 0 ,
 $$
 
-and the field is purely self-dual; the opposite helicity gives $\vec V = 0$ and a purely anti-self-dual field. A circularly polarised $l$-pole of definite helicity therefore sits entirely in one chiral half, described by a single null complex vector. The helicity is the $\star$-eigenvalue, and the two chiral halves of the field strength are the two helicities of the radiation.
+and the field is purely self-dual; the opposite helicity gives $\vec N = 0$ and a purely anti-self-dual field. A circularly polarised $l$-pole of definite helicity therefore sits entirely in one chiral half, described by a single null complex vector. The helicity is the $\star$-eigenvalue, and the two chiral halves of the field strength are the two helicities of the radiation.
 
 ## Covariance of the Decomposition
 
@@ -263,14 +263,14 @@ $$
 and the two chiralities transform independently. In terms of the Riemann–Silberstein vector, the boost is a complex rotation
 
 $$
-\vec V' = \Lambda\,\vec V ,
+\vec N' = \Lambda\,\vec N ,
 \qquad
-\vec V^{*\prime} = \Lambda^{*}\,\vec V^* ,
+\vec N^{*\prime} = \Lambda^{*}\,\vec N^* ,
 \qquad
 \Lambda \in SO(3,\mathbb{C}) ,
 $$
 
-with $\Lambda$ a complex orthogonal matrix of unit determinant, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$. The matrices for the two chiralities are complex conjugates of one another, so on the complexified field space the two halves rotate independently and do not mix; this is the statement that the self-dual and anti-self-dual combinations transform in the two complex three-dimensional representations of the Lorentz group, the two chiralities. The verification is direct: a boost of a vector with $\vec V^* = 0$ keeps $\vec V^{*\prime} = 0$, and a boost of a vector with $\vec V = 0$ keeps $\vec V' = 0$, so each eigenspace of $\star$ is preserved.
+with $\Lambda$ a complex orthogonal matrix of unit determinant, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$. The matrices for the two chiralities are complex conjugates of one another, so on the complexified field space the two halves rotate independently and do not mix; this is the statement that the self-dual and anti-self-dual combinations transform in the two complex three-dimensional representations of the Lorentz group, the two chiralities. The verification is direct: a boost of a vector with $\vec N^* = 0$ keeps $\vec N^{*\prime} = 0$, and a boost of a vector with $\vec N = 0$ keeps $\vec N' = 0$, so each eigenspace of $\star$ is preserved.
 
 The Hermitian decomposition, by contrast, is not preserved. A boost with velocity $\vec v$ gives
 
@@ -292,7 +292,7 @@ $$
 \vec m = \frac{1}{2}\int\vec x'\times\vec J\,d^3x' = \frac{1}{2}\,\vec p\times\vec v ,
 $$
 
-the magnetic dipole generated from the electric dipole by the motion. For the quadrupole the same structure holds: a translating electric quadrupole carries a magnetic quadrupole moment. With a rest-frame planar quadrupole built from charges $+q$ at $(\pm a,0,0)$ and $-q$ at $(0,\pm a,0)$, whose only non-vanishing second moments are $D'_{xx} = 2qa^2$ and $D'_{yy} = -2qa^2$, the boost leaves $D_{xx}$ and $D_{yy}$ unchanged — they are transverse to a boost along $z$ — while the magnetic quadrupole built from the traceless part of $\int\rho\,x_i(\vec x\times\vec v)_j$ acquires a non-vanishing component proportional to $(D_{xx}-D_{yy})v$, and therefore to the electric quadrupole moment times the velocity. The electric quadrupole and the magnetic quadrupole are tied together by the boost, exactly as the electric and magnetic dipoles are.
+the magnetic dipole generated from the electric dipole by the motion. For the quadrupole the same structure holds: a translating electric quadrupole carries a magnetic quadrupole moment. With a rest-frame planar quadrupole built from charges $+ϙ$ at $(\pm a,0,0)$ and $-ϙ$ at $(0,\pm a,0)$, whose only non-vanishing second moments are $D'_{xx} = 2qa^2$ and $D'_{yy} = -2qa^2$, the boost leaves $D_{xx}$ and $D_{yy}$ unchanged — they are transverse to a boost along $z$ — while the magnetic quadrupole built from the traceless part of $\int\rho\,x_i(\vec x\times\vec v)_j$ acquires a non-vanishing component proportional to $(D_{xx}-D_{yy})v$, and therefore to the electric quadrupole moment times the velocity. The electric quadrupole and the magnetic quadrupole are tied together by the boost, exactly as the electric and magnetic dipoles are.
 
 At the level of the field the mixing of the two multipole types is a consequence of the boost's mixing of the electric and magnetic **fields**, that is, of the non-invariance of the Hermitian split. This is consistent with the parity bookkeeping: the electric multipole type is parity-even or parity-odd according to $l$, the magnetic type has the opposite parity, and a boost does not preserve parity. The covariant packaging of the moments is the standard covariant multipole tensor, and on the field side the covariant object is the self-dual field strength; in both cases the electric and magnetic labels are frame-dependent.
 
@@ -317,7 +317,7 @@ What survives is the algebra of the value. The field-strength biquaternion, its 
 Two different pairings of electric and magnetic multiplets appear in the subject, and it is important not to conflate them.
 
 - The **covariant pairing** combines the electric and magnetic moments of a given rank into the covariant multipole tensor of that rank, so that neither is separately Lorentz-covariant; a boost rotates the two types into one another. This pairing is a statement about the **source moments**, which are frame-dependent.
-- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $e^{-ik\hat u\cdot\vec x'}$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
+- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $\exp(-ik\vec u\cdot\vec x')$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
 
 Both are standard, and they answer different questions. The first says that the electric and magnetic moments of an order are not separately covariant; the second says which multipoles dominate at a given order in the long-wavelength expansion. The quadrupole illustrates both: it is paired with the magnetic quadrupole by covariance, and with the magnetic dipole by the order counting.
 
@@ -334,24 +334,24 @@ The dipole is the first order with two multiplet types. In a static or stationar
 $$
 \vec F_{E1} = -i\omega\,\vec p ,
 \qquad
-\vec F_{M1} = ik\,\hat u\times\vec m ,
+\vec F_{M1} = ik\,\vec u\times\vec m ,
 $$
 
 and the far fields are the transverse dipole patterns. The two moments combine into the antisymmetric rank-two tensor whose time–space entries are the electric dipole components and whose space–space entries are the magnetic ones; it is this six-component object, not the electric or the magnetic dipole separately, that transforms in a representation of the Lorentz group. A boost rotates $\vec p$ into $\vec m$ within this block, and the electric and magnetic dipole labels are frame-dependent.
 
 ### $l = 2$: The Electric and Magnetic Quadrupoles
 
-The quadrupole is the first order whose moment is not an algebra element. Its electric part is the symmetric traceless tensor $Q_{ij}$, five components, and its magnetic part a rank-two structure built from the current, the magnetic quadrupole moment $M_{ij}$, also five components; they are the two $D^{(2)}$ multiplets of the order, of opposite parity. In the radiation vector the electric quadrupole appears at order $k$ with the magnetic dipole,
+The quadrupole is the first order whose moment is not an algebra element. Its electric part is the symmetric traceless tensor $\mathcal{Q}_{ij}$, five components, and its magnetic part a rank-two structure built from the current, the magnetic quadrupole moment $M_{ij}$, also five components; they are the two $D^{(2)}$ multiplets of the order, of opposite parity. In the radiation vector the electric quadrupole appears at order $k$ with the magnetic dipole,
 
 $$
-\vec F_{E2} = -\frac{k\omega}{6}\,\vec Q(\hat u) ,
+\vec F_{E2} = -\frac{k\omega}{6}\,\vec{\mathcal{Q}}(\vec u) ,
 \qquad
-[\vec Q(\hat u)]_i = Q_{ij}n_j ,
+[\vec{\mathcal{Q}}(\vec u)]_i = \mathcal{Q}_{ij}n_j ,
 $$
 
 and the magnetic quadrupole appears at the next order with the electric octupole. Both quadrupole types radiate with power $\propto\omega^6$, both have the degree-two angular pattern, and they have opposite parity, $(-1)^2 = +1$ for the electric and $(-1)^3 = -1$ for the magnetic. In the radiation field the two types are the parity-even and parity-odd combinations of the two helicity amplitudes of the order, and a boost rotates them into one another while preserving the helicities.
 
-The quadrupole is also where the algebra's limitation becomes explicit. The moment $Q_{ij}$ is a tensor over the vector part, not an element of $\mathbb{B}$, and the value algebra contains no $D^{(2)}$. The field it produces is nonetheless a biquaternion-valued function whose angular content is degree two; the order lives in the function space, the value in the algebra.
+The quadrupole is also where the algebra's limitation becomes explicit. The moment $\mathcal{Q}_{ij}$ is a tensor over the vector part, not an element of $\mathbb{B}$, and the value algebra contains no $D^{(2)}$. The field it produces is nonetheless a biquaternion-valued function whose angular content is degree two; the order lives in the function space, the value in the algebra.
 
 ### The Pattern for General $l$
 
@@ -361,7 +361,7 @@ The pattern of the lowest orders is the pattern for all of them.
 - The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicity amplitudes; a boost rotates the two types into one another and preserves the helicities. Their covariant packaging is the covariant multipole tensor, and the self-dual field strength is the corresponding covariant object on the field side. The order $l$ itself is a rest-frame label, not a Lorentz invariant.
 - In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{M}_\pm$; in radiation each type has both parts.
 - In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$, and both radiate with power $\propto\omega^{2l+2}$.
-- For radiation the field is null, $N(\tilde{F}) = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
+- For radiation the field is null, $\langle\tilde{F}\rangle_{\natural} = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
 
 The tower grows without bound in the function space, while the value algebra stays four-dimensional, and the two decompositions of the value — Hermitian and self-dual — act on each order of the tower in the way described: the first separates the two fields, the second separates the two helicities.
 
@@ -377,9 +377,9 @@ $$
 \tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_- ,
 $$
 
-and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec V = \vec E+ic\vec B$ with $\star\vec V = -i\vec V$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec V$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec V^*$ with $\vec V^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
+and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
 
-Under a boost, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec V' = \Lambda\vec V$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec V^{*\prime} = \Lambda^{*}\vec V^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $k^l$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $N(\tilde{F}) = 0$.
+Under a boost, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec N' = \Lambda\vec N$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec N^{*\prime} = \Lambda^{*}\vec N^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $k^l$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $\langle\tilde{F}\rangle_{\natural} = 0$.
 
 The multipole series and the two decompositions act on different spaces. The decompositions split the value algebra — into its two real sectors and its two chiral halves — and they are the covariant statements; the order $l$ labels the angular decomposition in a fixed frame, and only the rotation subgroup preserves it. A boost mixes the electric and magnetic types, because it mixes the fields and does not preserve parity, and it also changes the angular decomposition, because it transforms the argument of the field. The multipole order is a rest-frame label, and the covariant packaging of the moments is the covariant multipole tensor.
 
@@ -396,23 +396,23 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |
-| $\vec V = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |
-| $\vec V^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\vec V^* = \overline{\vec V}$ for a real field |
+| $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |
+| $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\vec N^* = \overline{\vec N}$ for a real field |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B,-\vec E/c)$, $\star^2 = -1$ |
-| $I_1, I_2$ | Field invariants, $\vec V\cdot\vec V = I_1+2icI_2$ |
-| $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; $N(\tilde{F}) = 0$ for a radiation field |
+| $I_1, I_2$ | Field invariants, $\vec N\cdot\vec N = I_1+2icI_2$ |
+| $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; $\langle\tilde{F}\rangle_{\natural} = 0$ for a radiation field |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $E_l$, $M_l$ | Electric and magnetic multiplets of order $l$ |
-| $q_{lm}$ | Electric multipole moment of the source |
-| $\vec Q_{lm} = \vec LY_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
-| $\hat r\times\vec Q_{lm}$ | Electric family of vector spherical harmonics |
-| $\vec F(\hat u) = \int\vec J\,e^{-ik\hat u\cdot\vec x'}d^3x'$ | Radiation vector |
+| $\mathcal{Q}_{lm}$ | Electric multipole moment of the source |
+| $\vec Y_{lm} = \vec LY_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
+| $\vec u_r\times\vec Y_{lm}$ | Electric family of vector spherical harmonics |
+| $\vec F(\vec u) = \int\vec J\,\exp(-ik\vec u\cdot\vec x')d^3x'$ | Radiation vector |
 | $k = \omega/c$ | Wavenumber |
 | $\vec p$, $\vec m$ | Electric and magnetic dipole moments |
-| $Q_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |
+| $\mathcal{Q}_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |
 | $\tilde{U}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
-| $\Lambda\in SO(3,\mathbb{C})$ | Complex rotation of the self-dual vector, $\vec V' = \Lambda\vec V$ |
+| $\Lambda\in SO(3,\mathbb{C})$ | Complex rotation of the self-dual vector, $\vec N' = \Lambda\vec N$ |
 
 ## Further Reading
 

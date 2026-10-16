@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*.
+The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra*.
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
@@ -54,9 +54,9 @@ $$
 
 **Theorem (injectivity).** The map $\tilde p\mapsto L^{\bullet}_{\tilde p}$ is injective: $L^{\bullet}_{\tilde p}=0$ if and only if $\tilde p=0$.
 
-*Proof.* If $L^{\bullet}_{\tilde p}=0$ then $\tilde p\bullet\tilde q=0$ for every $\tilde q$, so $\tilde p$ is annihilated with everything; but a nonzero element annihilates only the plane of *Zero Divisors of the Symmetric Plain Algebra* when it is pure and nothing when it is non-pure, so $\tilde p=0$.
+*Proof.* If $L^{\bullet}_{\tilde p}=0$ then $\tilde p\bullet\tilde q=0$ for every $\tilde q$, so $\tilde p$ is annihilated with everything; but a nonzero element annihilates only the plane of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* when it is pure and nothing when it is non-pure, so $\tilde p=0$.
 
-**Corollary.** The kernel of $L^{\bullet}_{\tilde p}$ is $\{0\}$ for a non-pure $\tilde p$ and the two-dimensional plane of *Zero Divisors of the Symmetric Plain Algebra* for a nonzero pure $\tilde p$; the operator is singular exactly at the zero divisors, with $\det L^{\bullet}_{\tilde p}=p_0^2N(\tilde p)$.
+**Corollary.** The kernel of $L^{\bullet}_{\tilde p}$ is $\{0\}$ for a non-pure $\tilde p$ and the two-dimensional plane of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* for a nonzero pure $\tilde p$; the operator is singular exactly at the zero divisors, with $\det L^{\bullet}_{\tilde p}=p_0^2\langle\tilde p\rangle_{\natural}$.
 
 ## The Jordan Relation
 
@@ -95,7 +95,7 @@ of real dimension $16$; the span of the products of length at most two is alread
 
 *Proof.* The identity is $L^{\bullet}_{e_0}$; the four generators together with their products of length one span a $13$-dimensional space, and adjoining the products of length two completes it to $16$, by the computation of the block's operator span. Since $\mathrm{alg}$ contains the identity and is the whole of $M_4(\mathbb{R})$, it is irreducible.
 
-**Corollary (the commutant).** The commutant of the family is the scalar operators, $\{L^{\bullet}_{\tilde p}\}'=\mathbb{R}\cdot\mathrm{id}$; the block is a **multiplication algebra** whose multiplications generate every linear map of the space, as the plain left and right multiplications do in *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*.
+**Corollary (the commutant).** The commutant of the family is the scalar operators, $\{L^{\bullet}_{\tilde p}\}'=\mathbb{R}\cdot\mathrm{id}$; the block is a **multiplication algebra** whose multiplications generate every linear map of the space, as the plain left and right multiplications do in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
 **Remark (the contrast with the plain algebra).** In the plain algebra the left and the right multiplications generate the two-sided multiplications but not all of $\mathrm{End}(\mathbb{H})$; the block, being commutative, has a single family and its products fill the whole matrix algebra. This is the specific-theory form of the coincidence $L^{\bullet}=R^{\bullet}$.
 
@@ -142,9 +142,9 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\t
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Algebra of Quaternions*, for the product.
-- *Zero Divisors of the Symmetric Plain Algebra*, for the kernel and the determinant of the operator.
+- *Introduction to the Symmetric Plain Algebra*, for the product.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, for the kernel and the determinant of the operator.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the invariance and the skewness.
-- *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, for the plain operators against which the fullness is read.
+- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the plain operators against which the fullness is read.
 - *Jordan Algebras*, for the operator form of the Jordan identity and the derivations of a Jordan algebra.
 - *The Two General Products of an Algebra with Involution*, for the degree-two Common Theory specialised here.

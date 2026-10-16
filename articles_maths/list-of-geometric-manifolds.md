@@ -19,14 +19,14 @@ The model manifolds are the complete simply connected manifolds of constant curv
 | $S^n$ | $n$ | $+1$ | compact, simply connected; $\chi = 1 + (-1)^n$ | *Spherical Geometry* |
 | $\mathbf{H}^n$ | $n$ | $-1$ | contractible; infinite volume | *Hyperbolic Geometry* |
 | $\mathbb{RP}^n$ | $n$ | $+1$ | $\pi_1 = \mathbb{Z}/2$; non-orientable for even $n$ | *Smooth Manifolds and Differential Geometry*; *Projective Geometry* |
-| $\mathbb{CP}^n$ | $2n$ | positive | $h^{p,p} = 1$; $\chi = n+1$ | *Kähler Geometry* |
+| $\mathbb{CP}^n$ | $2n$ | positive | $h^{n,n} = 1$; $\chi = n+1$ | *Kähler Geometry* |
 | $\mathbb{HP}^n$ | $4n$ | positive | quaternionic Kähler; $\chi = n+1$ | *Quaternionic Geometry* |
 | the $n$-torus $T^n$ | $n$ | $0$ | $\pi_1 = \mathbb{Z}^n$; $\chi = 0$ | *Smooth Manifolds and Differential Geometry*; *Symmetry, Point and Crystallographic Groups* |
 | the Klein bottle | $2$ | $0$ | non-orientable; $\chi = 0$ | *Symmetry, Point and Crystallographic Groups* |
 | a spherical space form $S^n/\Gamma$ | $n$ | $+1$ | $\pi_1 = \Gamma$ finite; $\chi = \lvert\Gamma\rvert^{-1}\chi(S^n)$ | *Spherical Geometry*, §Spherical Space Forms |
 | a hyperbolic space form $\mathbf{H}^n/\Gamma$ | $n$ | $-1$ | $\pi_1 = \Gamma$; rigidity in dimension $\geq 3$ | *Hyperbolic Geometry*, §Hyperbolic Space Forms and the Trichotomy |
 | a compact flat manifold | $n$ | $0$ | torsion-free crystallographic fundamental group | *Symmetry, Point and Crystallographic Groups* |
-| the lens space $L(p,q)$ | $3$ | $+1$ | $\pi_1 = \mathbb{Z}/p$; linking form $q^*/p$ | *Lens Spaces* |
+| the lens space $L(n,m)$ | $3$ | $+1$ | $\pi_1 = \mathbb{Z}/n$; linking form $m^*/n$ | *Lens Spaces* |
 | a nilmanifold $N/\Gamma$ | varies | — | lattice quotient of a nilpotent group; left-invariant metric | *Lattices in Lie Groups* |
 
 The model spaces are the three of constant curvature together with the complex and quaternionic projective spaces; the space forms are their quotients, and the space-form theorem makes the constant-curvature cases exhaustive. The compact flat manifolds are the quotients by the torsion-free crystallographic groups, of which there are two in dimension two and ten in dimension three.
@@ -73,7 +73,7 @@ The manifolds with a reduced holonomy carry the richest invariants of the list, 
 | Manifold | Dimension | Holonomy | Invariants | Introduced in |
 |---|---|---|---|---|
 | a complex manifold | $2n$ | $GL(n,\mathbb{C})$ | complex structure $J$; Dolbeault cohomology | *Kähler Geometry* |
-| a Kähler manifold | $2n$ | $U(n)$ | Hodge numbers $h^{p,q}$; Kähler form $\Omega$ | *Kähler Geometry* |
+| a Kähler manifold | $2n$ | $U(n)$ | Hodge numbers $h^{n,m}$; Kähler form $\Omega$ | *Kähler Geometry* |
 | a Calabi–Yau manifold | $2n$ | $SU(n)$ | $c_1 = 0$; holomorphic volume form | *Calabi–Yau Manifolds* |
 | a hyperkähler manifold | $4n$ | $Sp(n)$ | three Kähler forms; Ricci-flat | *Hyperkähler Geometry* |
 | a quaternionic Kähler manifold | $4n$ | $Sp(n)\cdot Sp(1)$ | Einstein; twistor space | *Quaternionic Geometry* |
@@ -127,8 +127,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{R}^n$, $S^n$, $\mathbf{H}^n$, $T^n$, $\mathbb{RP}^n$, $\mathbb{CP}^n$, $\mathbb{HP}^n$ | Euclidean space, sphere, hyperbolic space, torus, projective spaces |
 | $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $N/\Gamma$ | Spherical, hyperbolic and nilmanifold quotients |
-| $L(p,q)$ | Lens space |
-| $\chi$, $b_i$, $h^{p,q}$ | Euler characteristic, Betti numbers, Hodge numbers |
+| $L(n,m)$ | Lens space |
+| $\chi$, $b_i$, $h^{n,m}$ | Euler characteristic, Betti numbers, Hodge numbers |
 | $\Theta_n$, $bP_{n+1}$ | Group of homotopy spheres; boundary of the parallelizable case |
 | $U(n)$, $SU(n)$, $Sp(n)$, $Sp(n)\cdot Sp(1)$, $G_2$, $\mathrm{Spin}(7)$ | Holonomy groups |
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{C})$ | Grassmannian and flag manifold |

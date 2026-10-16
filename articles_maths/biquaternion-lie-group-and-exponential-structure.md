@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential map is the bridge between the group and the Lie algebra *The 12 Products of the Biquaternion Complex Space*. This article reads the Lie-group structure: the exponential and its parametrisation of the group, the cases of the exponential, the group law, the failure of surjectivity, and the real forms and subgroups the group carries.
+The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential map is the bridge between the group and the Lie algebra *The 12 Products of the Biquaternioid Complex Space*. This article reads the Lie-group structure: the exponential and its parametrisation of the group, the cases of the exponential, the group law, the failure of surjectivity, and the real forms and subgroups the group carries.
 
 The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Unit Group as a Topological Group*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k e_k$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k e_k$.
 
 ---
 
@@ -15,20 +15,20 @@ The exponential itself — its series, its closed form, the logarithm and the po
 The **unit quaternions** are the elements of $\mathbb{H}_{\mathbb{B}}$ of norm $1$:
 
 $$
-S^3 = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : N(\tilde q) = 1\},
+S^3 = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \langle\tilde q\rangle_{\natural} = 1\},
 $$
 
-a compact, connected, simply connected real Lie group of real dimension $3$. Every such $\tilde q$ is $\cos\theta\, e_0 + \sin\theta\, \hat u$ with $\hat u$ a real unit vector part, the quaternion exponential.
+a compact, connected, simply connected real Lie group of real dimension $3$. Every such $\tilde q$ is $\cos\theta\, e_0 + \sin\theta\, \vec u$ with $\vec u$ a real unit vector part, the quaternion exponential.
 
-Complexifying the coefficients turns $N(\tilde q) = 1$ into the same equation over $\mathbb{C}$, giving the **unit-norm subgroup**
+Complexifying the coefficients turns $\langle\tilde q\rangle_{\natural} = 1$ into the same equation over $\mathbb{C}$, giving the **unit-norm subgroup**
 
 $$
-\mathbb{B}^\times_1 = \{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) = 1\},
+\mathbb{B}^\times_1 = \{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} = 1\},
 $$
 
 whose elements need not be real quaternions.
 
-**Dimension.** The level set $N = 1$ has complex dimension $3$ and real dimension $6$, the biquaternion norm being a submersion wherever $N(\tilde{Q}) \neq 0$. The group $\mathbb{B}^\times_1$ is connected, simply connected, and non-compact, and it is the **complexification of the unit quaternions**: the trace-free subalgebra satisfies $\mathrm{B}_0 = \mathrm{K} \otimes_{\mathbb{R}} \mathbb{C}$ for the compact subalgebra $\mathrm{K}$ below, and $\mathbb{B}^\times_1$ complexifies the compact group $S^3$. Its centre is
+**Dimension.** The level set $N = 1$ has complex dimension $3$ and real dimension $6$, the biquaternion norm being a submersion wherever $\langle\tilde{Q}\rangle_{\natural} \neq 0$. The group $\mathbb{B}^\times_1$ is connected, simply connected, and non-compact, and it is the **complexification of the unit quaternions**: the trace-free subalgebra satisfies $\mathrm{B}_0 = \mathrm{K} \otimes_{\mathbb{R}} \mathbb{C}$ for the compact subalgebra $\mathrm{K}$ below, and $\mathbb{B}^\times_1$ complexifies the compact group $S^3$. Its centre is
 
 $$
 Z(\mathbb{B}^\times_1) = \{\pm e_0\} \cong \mathbb{Z}/2.
@@ -38,7 +38,7 @@ $$
 
 The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (complex dimension $4$, real dimension $8$); $\mathbb{B}^\times_1$, the unit-norm elements (complex dimension $3$, real dimension $6$); the unit quaternions $S^3$ (real dimension $3$); and the centre $\mathbb{C}^\times e_0$ of nonzero scalars (complex dimension $1$, real dimension $2$).
 
-$S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra the compact subalgebra $\mathrm{K}$ of *The 12 Products of the Biquaternion Complex Space*, §*The Trace-Free Subalgebra*. The centre $\{\pm e_0\}$ is discrete, so the quotient $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$.
+$S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra the compact subalgebra $\mathrm{K}$ of *The 12 Products of the Biquaternioid Complex Space*, §*The Trace-Free Subalgebra*. The centre $\{\pm e_0\}$ is discrete, so the quotient $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$.
 
 ## The Unitary Subgroup and the Defining Module
 
@@ -98,16 +98,16 @@ $$
 
 with the eight independent parameters $\alpha,\beta,\delta_1,\delta_2$ and the four angles in the two unit vectors. Suppressing the imaginary units gives the same formula for $\mathrm{SL}(3,\mathbb{R})$ when all parameters are real, and for $\mathrm{SL}(3,\mathbb{C})$ when they are complex.
 
-**Theorem (Euler-angles forms).** With unit vectors $\vec a,\vec b,\vec c,\vec d,\vec u,\vec v,\vec w$ and real angles,
+**Theorem (Euler-angles forms).** With unit vectors $\vec a,\vec b,\vec c,\vec d,\vec m,\vec n,\vec w$ and real angles,
 
 $$
-U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
+\tilde U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
 \odot\exp\bigl(iD\{\beta,\gamma,-\beta-\gamma\}\bigr)
 \odot\exp\bigl(\tfrac{\delta}{2}b\bigr)[\,]\exp\bigl(-\tfrac{\delta}{2}b\bigr),
 $$
 
 $$
-U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
+\tilde U_{\mathrm{SU}(4)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\beta}{2}b\bigr)
 \odot\exp\bigl(iD\{\gamma,\delta,\epsilon\}\bigr)
 \odot\exp\bigl(\tfrac{\psi}{2}c\bigr)[\,]\exp\bigl(-\tfrac{\eta}{2}d\bigr),
 $$
@@ -115,18 +115,18 @@ $$
 and, in the degenerate case in which the outer unit vectors coincide, an $\mathrm{SU}(2)$ element,
 
 $$
-U_{\mathrm{SU}(2)}=\exp\bigl(\tfrac{\alpha}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}w\bigr)
-\odot\exp\Bigl(\tfrac{i\beta}{2}\bigl(u[\,]u-v[\,]v\bigr)\Bigr)
+\tilde U_{\mathrm{SU}(2)}=\exp\bigl(\tfrac{\alpha}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}w\bigr)
+\odot\exp\Bigl(\tfrac{i\beta}{2}\bigl(\vec u_{\mathrm a}[\,]\vec u_{\mathrm a}-\vec u_{\mathrm b}[\,]\vec u_{\mathrm b}\bigr)\Bigr)
 \odot\exp\bigl(\tfrac{\gamma}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\gamma}{2}w\bigr).
 $$
 
-Each **outer** factor is a conjugation of the argument by a single unit vector, $e^{\theta}[\,]e^{-\theta}$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\vec a$ and $\vec b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs **different** vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.
+Each **outer** factor is a conjugation of the argument by a single unit vector, $\exp(\theta)[\,]\exp(-\theta)$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\vec a$ and $\vec b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs **different** vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.
 
 **Remark (the inverse).** The inverse of any of these elements is obtained by reversing the order of the factors and changing the signs of the exponents, and it equals the biconjugate of the function,
 $$G^{-1}=G^{+\approx}=G^{\dagger},$$
 the source's rule, which is the statement of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*: for an operator that fixes $e_0$ and preserves the span of $e_1,e_2,e_3$ — as every element here does — the conjugation by the Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of the scalar form is invisible, and association followed by conjugation of the coefficients is the Hermitian adjoint. For a general linear function the two involutions differ, and the corpus keeps them apart.
 
-**Remark (the elements are block-diagonal).** Every element above fixes $e_0$ and preserves the span of $e_1,e_2,e_3$: in the coordinate order $(e_1,e_2,e_3,e_0)$ its matrix is $\operatorname{diag}(U_3,1)$ with $U_3\in\mathrm{SU}(3)$ the $3\times3$ block. This is the structural reason the enlargement is needed and the ceiling is honest: the octet acts on a three-dimensional **complex** space, whereas the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert, so the eight generators have no home in $\mathbb{B}$ itself.
+**Remark (the elements are block-diagonal).** Every element above fixes $e_0$ and preserves the span of $e_1,e_2,e_3$: in the coordinate order $(e_1,e_2,e_3,e_0)$ its matrix is $\operatorname{diag}(\tilde U_3,1)$ with $\tilde U_3\in\mathrm{SU}(3)$ the $3\times3$ block. This is the structural reason the enlargement is needed and the ceiling is honest: the octet acts on a three-dimensional **complex** space, whereas the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert, so the eight generators have no home in $\mathbb{B}$ itself.
 
 **Remark (where the method ends).** The construction does not generalise directly to $n>4$: the diagonal and antisymmetric functions have bounded room, and the source records that the quaternion expression of the general diagonal-less symmetric matrix of the required size becomes cumbersome and loses its use, which is the same observation as the *Limit of the Method* remark of the enveloping-algebra article. The endpoint is the pair $3,4$, which is also the endpoint of the physics programme's need.
 
@@ -134,12 +134,12 @@ the source's rule, which is the statement of *The Four Adjoints of the Two Algeb
 
 The exponential of the full unit group is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
 
-**The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\hat u = \exp(\theta\hat u)$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
+**The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\vec u = \exp(\theta\vec u)$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
 
 **The full group: not surjective.** The exponential $\exp : \mathrm{B}_0 \to \mathbb{B}^\times_1$ is **not** surjective: $\mathbb{B}^\times_1$ is not exponential. The element of $\mathbb{B}^\times_1$ with scalar part $-1$ and non-semi-simple behaviour, corresponding to the non-diagonalizable norm-one element with the repeated eigenvalue $-1$, is
 
 $$
-\tilde{Q} = -e_0 + \frac{i}{2}e_1 - \frac{1}{2}e_2, \qquad N(\tilde{Q}) = 1 + \left(\frac{i}{2}\right)^2 + \left(-\frac{1}{2}\right)^2 = 1.
+\tilde{Q} = -e_0 + \frac{i}{2}e_1 - \frac{1}{2}e_2, \qquad \langle\tilde{Q}\rangle_{\natural} = 1 + \left(\frac{i}{2}\right)^2 + \left(-\frac{1}{2}\right)^2 = 1.
 $$
 
 Its scalar part is $Q_0 = -1$ and its vector part has $B = 0$, so the element is non-semi-simple with the repeated eigenvalue $-1$. If $\tilde{Q} = \exp(\tilde{R})$ with $\tilde{R} \in \mathrm{B}_0$, then $R_0 = 0$, and $\tilde{R} = \mu e_0 + \tilde\Upsilon$ with $\tilde\Upsilon$ nilpotent (§*The nilpotent convention* of *Conventions in Mathematics*) and $e^\mu = -1$, hence $\mu \in i\pi(2\mathbb{Z}+1)$ and $\mathrm{Tr}(\tilde{R}) = 2\mu \neq 0$, a contradiction. The same obstruction makes $\exp$ non-surjective on the real group $SL(2,\mathbb{R})$.
@@ -152,17 +152,17 @@ The group of units is an open subset of $\mathbb{B}$, hence a smooth real manifo
 
 ## The Correspondence with the Lie Algebra
 
-The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_0$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (*The 12 Products of the Biquaternion Complex Space*). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(\tilde A)\exp(\tilde C)$ against $\exp(\tilde A+\tilde C)$ of *Biquaternion Elementary Functions* is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_0$ to $\mathbb{C}^\times e_0$.
+The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_0$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (*The 12 Products of the Biquaternioid Complex Space*). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(\tilde A)\exp(\tilde C)$ against $\exp(\tilde A+\tilde C)$ of *Biquaternion Elementary Functions* is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_0$ to $\mathbb{C}^\times e_0$.
 
 ## Summary
 
-The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:N(\tilde q)=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_0\}$.
+The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_0\}$.
 
 The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_0$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_0$ to the centre.
 
 Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 
-The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_0$ and acts on the vector part, so the matrix is $\operatorname{diag}(U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
+The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_0$ and acts on the vector part, so the matrix is $\operatorname{diag}(\tilde U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ The larger unitary groups are reached by enlarging the carrier and not the algeb
 |---|---|
 | $\mathbb{B}^\times$ | Group of units; real Lie group of real dimension $8$ |
 | $\exp$ | Exponential map; closed form in *Biquaternion Elementary Functions* |
-| $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:N(\tilde q)=1\}$ | Unit quaternions; compact subgroup of real dimension $3$ |
+| $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:\langle\tilde q\rangle_{\natural}=1\}$ | Unit quaternions; compact subgroup of real dimension $3$ |
 | $\mathbb{B}^\times_1=\{N=1\}$ | Norm-one group; complexification of $S^3$; real dimension $6$ |
 | $\{\pm e_0\}$ | Centre of $\mathbb{B}^\times_1$; the quotient is a Lie group of real dimension $6$ |
 | $\mathrm{B}_0$ | Lie algebra of $\mathbb{B}^\times_1$; trace-free part |

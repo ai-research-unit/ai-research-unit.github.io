@@ -7,7 +7,7 @@ The theory of differential equations becomes richer when the order of differenti
 
 The building blocks are three. First, the **fractional integral** $I^\alpha$ of order $\alpha>0$, a convolution of the function with the power kernel $t^{\alpha-1}/\Gamma(\alpha)$, which is defined whenever the function is locally integrable and which satisfies the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Second, the **fractional derivatives**, of which two are in use: the Riemann–Liouville derivative $D^\alpha$, defined by differentiating the fractional integral, and the Caputo derivative ${}^C D^\alpha$, defined by fractionally integrating the ordinary derivative. The two differ by the contribution of the initial values and are suited to different problems; the Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary ones. Third, the **Mittag-Leffler function** $E_\alpha$, which is to the fractional equations what the exponential is to the ordinary ones: $y(t) = y_0E_\alpha(\lambda t^\alpha)$ solves $D^\alpha y = \lambda y$.
 
-The article proceeds from the fractional integral and the two derivatives, through their composition laws and their Laplace transforms, to the Mittag-Leffler function and its asymptotic behaviour, and then to the three levels of the theory. For the fractional ordinary equation $D^\alpha y = f(t,y)$ the Cauchy problem is equivalent to a weakly singular Volterra integral equation, and the Picard iteration of *Ordinary Differential Equations* applies with the contraction factor $LT^\alpha/\Gamma(\alpha+1)$ on a short interval, giving existence and uniqueness; the linear equation is solved by the Mittag-Leffler function, whose algebraic large-time decay is the characteristic feature of the sub-exponential regime $0<\alpha<1$. For the fractional partial equation ${}^C D_t^\alpha u = \Delta u$ the solution is a fractional diffusion, given in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, whose mean square displacement grows as $t^\alpha$ rather than as $t$ and whose transition density is not Gaussian. For the operator theory, the fractional powers of an operator are defined by a Bochner integral against the resolution of the identity or against a semigroup, and this connects the subject to the semigroups and evolution equations of this Part, where the generation theory of the operators $e^{-tA}$ is developed. The whole theory is developed over $\mathbb{R}$ or $\mathbb{R}^n$; the target space is a Banach space $X$ over $\mathbb{K}$, and the integrals are those of *Measure Theory and Integration*.
+The article proceeds from the fractional integral and the two derivatives, through their composition laws and their Laplace transforms, to the Mittag-Leffler function and its asymptotic behaviour, and then to the three levels of the theory. For the fractional ordinary equation $D^\alpha y = f(t,y)$ the Cauchy problem is equivalent to a weakly singular Volterra integral equation, and the Picard iteration of *Ordinary Differential Equations* applies with the contraction factor $LT^\alpha/\Gamma(\alpha+1)$ on a short interval, giving existence and uniqueness; the linear equation is solved by the Mittag-Leffler function, whose algebraic large-time decay is the characteristic feature of the sub-exponential regime $0<\alpha<1$. For the fractional partial equation ${}^C D_t^\alpha u = \Delta u$ the solution is a fractional diffusion, given in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, whose mean square displacement grows as $t^\alpha$ rather than as $t$ and whose transition density is not Gaussian. For the operator theory, the fractional powers of an operator are defined by a Bochner integral against the resolution of the identity or against a semigroup, and this connects the subject to the semigroups and evolution equations of this Part, where the generation theory of the operators $\exp(-tA)$ is developed. The whole theory is developed over $\mathbb{R}$ or $\mathbb{R}^n$; the target space is a Banach space $X$ over $\mathbb{K}$, and the integrals are those of *Measure Theory and Integration*.
 
 ## Fractional Integrals and Derivatives
 
@@ -97,18 +97,18 @@ $$
 E_{\alpha,\beta}(z) = \sum_{k=0}^{\infty}\frac{z^k}{\Gamma(\alpha k+\beta)} ,
 $$
 
-and $E_\alpha = E_{\alpha,1}$. Thus $E_1(z) = e^z$, $E_2(z) = \cosh\sqrt z$ for the even variable, and $E_{1,2}(z) = (e^z-1)/z$.
+and $E_\alpha = E_{\alpha,1}$. Thus $E_1(z) = \exp(z)$, $E_2(z) = \cosh\sqrt z$ for the even variable, and $E_{1,2}(z) = (\exp(z)-1)/z$.
 
 **Theorem (Laplace transform).** For $\alpha>0$, $\beta>0$, $\lambda \in \mathbb{C}$ and $t>0$,
 
 $$
-\int_0^\infty e^{-st}\,t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)\,dt = \frac{s^{-\beta}}{1-\lambda s^{-\alpha}}, \qquad \operatorname{Re}s > |\lambda|^{1/\alpha} .
+\int_0^\infty \exp(-st)\,t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)\,dt = \frac{s^{-\beta}}{1-\lambda s^{-\alpha}}, \qquad \operatorname{Re}s > |\lambda|^{1/\alpha} .
 $$
 
-*Proof.* Integrating term by term and using $\int_0^\infty e^{-st}t^{\gamma-1}dt = \Gamma(\gamma)s^{-\gamma}$,
+*Proof.* Integrating term by term and using $\int_0^\infty \exp(-st)t^{\gamma-1}dt = \Gamma(\gamma)s^{-\gamma}$,
 
 $$
-\int_0^\infty e^{-st}t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)dt = \sum_{k\ge0}\frac{\lambda^k}{\Gamma(\alpha k+\beta)}\cdot\frac{\Gamma(\alpha k+\beta)}{s^{\alpha k+\beta}} = \sum_{k\ge0}\lambda^ks^{-\alpha k-\beta} ,
+\int_0^\infty \exp(-st)t^{\beta-1}E_{\alpha,\beta}(\lambda t^\alpha)dt = \sum_{k\ge0}\frac{\lambda^k}{\Gamma(\alpha k+\beta)}\cdot\frac{\Gamma(\alpha k+\beta)}{s^{\alpha k+\beta}} = \sum_{k\ge0}\lambda^ks^{-\alpha k-\beta} ,
 $$
 
 which is the displayed geometric series, absolutely convergent for $|s|>|\lambda|^{1/\alpha}$.
@@ -121,7 +121,7 @@ $$
 
 so the function decays algebraically and not exponentially; for $1<\alpha<2$ the decay is algebraic with an oscillation. Near $t=0$, $E_\alpha(-\lambda t^\alpha) = 1 - \frac{\lambda t^\alpha}{\Gamma(\alpha+1)} + O(t^{2\alpha})$.
 
-*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{e^{\zeta}\zeta^{\alpha-1}}{\zeta^\alpha+z}d\zeta$ and the residue at the pole $\zeta$ with $\zeta^\alpha = -z$; the pole contributes $t^{-\alpha}$.
+*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{\exp(\zeta)\zeta^{\alpha-1}}{\zeta^\alpha+z}d\zeta$ and the residue at the pole $\zeta$ with $\zeta^\alpha = -z$; the pole contributes $t^{-\alpha}$.
 
 The algebraic decay is the quantitative content of anomalous relaxation: a fractional relaxation equation relaxes to equilibrium as a power of the time rather than exponentially, and the fractional order $\alpha$ is the exponent.
 
@@ -173,9 +173,9 @@ $$
 
 and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda y = t^{\beta-1}g(t)$ is given by the convolution of the Mittag-Leffler kernel with the forcing term.
 
-*Proof.* The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\hat y(s) - s^{\alpha-1}y_0$, gives $\hat y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$.
+*Proof.* The Laplace transform of the equation, using $\mathcal L\{{}^C D_0^\alpha y\}(s) = s^\alpha\mathcal L y(s) - s^{\alpha-1}y_0$, gives $\mathcal L y(s) = \frac{s^{\alpha-1}y_0}{s^\alpha-\lambda} = \frac{y_0s^{-1}}{1-\lambda s^{-\alpha}}$; the inverse transform by the previous theorem with $\beta=1$ is $y_0E_\alpha(\lambda t^\alpha)$.
 
-**Example (stretched and algebraic relaxation).** For $0<\alpha<1$ and $\lambda>0$ the solution of ${}^C D_0^\alpha y = -\lambda y$ is $y = y_0E_\alpha(-\lambda t^\alpha)$, which begins at $1$, decays initially like $1 - \lambda t^\alpha/\Gamma(\alpha+1)$, and at large time decays like $y_0/(\lambda\Gamma(1-\alpha))\,t^{-\alpha}$; for $\alpha=1$ it is the exponential $e^{-\lambda t}$. The limiting cases are exact: as $\alpha\to1$ the Mittag-Leffler function tends to the exponential, and the algebraic tail disappears.
+**Example (stretched and algebraic relaxation).** For $0<\alpha<1$ and $\lambda>0$ the solution of ${}^C D_0^\alpha y = -\lambda y$ is $y = y_0E_\alpha(-\lambda t^\alpha)$, which begins at $1$, decays initially like $1 - \lambda t^\alpha/\Gamma(\alpha+1)$, and at large time decays like $y_0/(\lambda\Gamma(1-\alpha))\,t^{-\alpha}$; for $\alpha=1$ it is the exponential $\exp(-\lambda t)$. The limiting cases are exact: as $\alpha\to1$ the Mittag-Leffler function tends to the exponential, and the algebraic tail disappears.
 
 ## Fractional Partial Differential Equations
 
@@ -190,16 +190,16 @@ on $\mathbb{R}^n\times(0,\infty)$; for $\alpha=1$ it is the heat equation of the
 **Theorem (solution by the Fourier transform).** For $f$ bounded and continuous, the solution is
 
 $$
-\hat u(\xi,t) = E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)\hat f(\xi),
+\mathcal F u(\xi,t) = E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)(\mathcal F f)(\xi),
 $$
 
 so that $u(\cdot,t) = f * K_t^{(\alpha)}$ with the **fractional heat kernel**
 
 $$
-K_t^{(\alpha)}(x) = \frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}e^{ix\cdot\xi}E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)d\xi .
+K_t^{(\alpha)}(x) = \frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\exp(ix\cdot\xi)E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)d\xi .
 $$
 
-*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\hat u = -|\xi|^2\hat u$ with $\hat u(\xi,0)=\hat f(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.
+*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\mathcal F u = -|\xi|^2\mathcal F u$ with $\mathcal F u(\xi,0)=(\mathcal F f)(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.
 
 **Theorem (subdiffusive scaling).** The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,
 
@@ -229,15 +229,15 @@ $$
 
 the integral converging in the operator norm, and the positive fractional power $A^\alpha$ is the inverse of $A^{-\alpha}$ on its domain.
 
-**Theorem (properties).** The family $A^{-\alpha}$ is a strongly continuous semigroup-like family, $A^{-\alpha}A^{-\beta} = A^{-(\alpha+\beta)}$ for $\alpha,\beta>0$, and $A^{-\alpha}$ is injective with dense range; if $A$ generates a bounded strongly continuous semigroup $e^{-tA}$, then
+**Theorem (properties).** The family $A^{-\alpha}$ is a strongly continuous semigroup-like family, $A^{-\alpha}A^{-\beta} = A^{-(\alpha+\beta)}$ for $\alpha,\beta>0$, and $A^{-\alpha}$ is injective with dense range; if $A$ generates a bounded strongly continuous semigroup $\exp(-tA)$, then
 
 $$
-A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}e^{-tA}\,dt ,
+A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}\exp(-tA)\,dt ,
 $$
 
 the Bochner integral converging in the operator norm.
 
-*Proof.* The semigroup law for the first formula follows from the resolvent identity and the fact that the Laplace transform of the product of two power kernels is the power kernel of the sum, evaluated at the resolvent; the second formula follows from the first by the standard representation of the resolvent as the Laplace transform of the semigroup, $\int_0^\infty e^{-\lambda t}e^{-tA}dt = (\lambda I+A)^{-1}$, and the beta integral.
+*Proof.* The semigroup law for the first formula follows from the resolvent identity and the fact that the Laplace transform of the product of two power kernels is the power kernel of the sum, evaluated at the resolvent; the second formula follows from the first by the standard representation of the resolvent as the Laplace transform of the semigroup, $\int_0^\infty \exp(-\lambda t)\exp(-tA)dt = (\lambda I+A)^{-1}$, and the beta integral.
 
 The two formulas coincide on their common domain and give the fractional power in terms of a semigroup that is assumed to exist; the generation theory that decides when it does — the Hille–Yosida and Lumer–Phillips theorems, and the analytic semigroup setting in which $A^\alpha$ is defined for complex $\alpha$ — is the content of the article of this Part on semigroups and evolution equations. What belongs to this article is the scalar theory of the fractional integral and derivative and the way it is used to write the fractional equations as Volterra equations; the operator-valued theory is the functional-analytic continuation of the same formulas.
 
@@ -247,7 +247,7 @@ The two formulas coincide on their common domain and give the fractional power i
 
 The fractional integral $I_a^\alpha f(t) = \frac{1}{\Gamma(\alpha)}\int_a^t(t-s)^{\alpha-1}f(s)ds$ is defined for every $\alpha>0$ and obeys the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Differentiating it gives the Riemann–Liouville derivative $D_a^\alpha = D^nI^{n-\alpha}$, and fractionally integrating the ordinary derivative gives the Caputo derivative ${}^C D_a^\alpha = I^{n-\alpha}D^n$ with $n=\lceil\alpha\rceil$; the two agree on functions whose first $n$ derivatives vanish at $a$ and differ in general by a polynomial, and both reduce to $f^{(n)}$ when $\alpha=n$ is an integer. The Caputo derivative is the one whose initial conditions are ordinary values, and $D_a^\alpha$ annihilates constants while the Riemann–Liouville derivative does not. The Grünwald–Letnikov finite-difference formula gives an equivalent, manifestly nonlocal definition.
 
-The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\beta)$ is the special function of the subject; its Laplace transform is $s^{-\beta}/(1-\lambda s^{-\alpha})$, and for $0<\alpha<1$ it decays algebraically, $E_\alpha(-\lambda t^\alpha)\sim t^{-\alpha}/(\lambda\Gamma(1-\alpha))$, rather than exponentially. The Cauchy problem ${}^C D_0^\alpha y = f(t,y)$ with $n$ initial values is equivalent to a weakly singular Volterra integral equation, and Picard iteration gives existence and uniqueness on an interval whose length is governed by the factor $LT^\alpha/\Gamma(\alpha+1)$; the linear equation ${}^C D_0^\alpha y = \lambda y$ has the solution $y_0E_\alpha(\lambda t^\alpha)$. The time-fractional diffusion equation ${}^C D_t^\alpha u = \Delta u$ is solved in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, its kernel is self-similar with the scaling $t^{\alpha/2}$ and heavy tails, and its mean square displacement grows as $t^\alpha$, which is subdiffusion. Fractional powers of a closed sectorial operator are defined by a Bochner integral against the resolvent, or equivalently against a bounded semigroup, $A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}e^{-tA}dt$; the generation theory behind that formula belongs to the semigroups and evolution equations of this Part.
+The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\beta)$ is the special function of the subject; its Laplace transform is $s^{-\beta}/(1-\lambda s^{-\alpha})$, and for $0<\alpha<1$ it decays algebraically, $E_\alpha(-\lambda t^\alpha)\sim t^{-\alpha}/(\lambda\Gamma(1-\alpha))$, rather than exponentially. The Cauchy problem ${}^C D_0^\alpha y = f(t,y)$ with $n$ initial values is equivalent to a weakly singular Volterra integral equation, and Picard iteration gives existence and uniqueness on an interval whose length is governed by the factor $LT^\alpha/\Gamma(\alpha+1)$; the linear equation ${}^C D_0^\alpha y = \lambda y$ has the solution $y_0E_\alpha(\lambda t^\alpha)$. The time-fractional diffusion equation ${}^C D_t^\alpha u = \Delta u$ is solved in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, its kernel is self-similar with the scaling $t^{\alpha/2}$ and heavy tails, and its mean square displacement grows as $t^\alpha$, which is subdiffusion. Fractional powers of a closed sectorial operator are defined by a Bochner integral against the resolvent, or equivalently against a bounded semigroup, $A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}\exp(-tA)dt$; the generation theory behind that formula belongs to the semigroups and evolution equations of this Part.
 
 ## Summary of Notation
 

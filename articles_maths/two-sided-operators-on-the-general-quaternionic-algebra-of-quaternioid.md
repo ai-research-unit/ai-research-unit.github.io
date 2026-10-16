@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The **two-sided operators** of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra of Quaternions* are the products of a left and a right multiplication, with the left one carrying the conjugation of the product and the right one the plain product of the block:
+The **two-sided operators** of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra* are the products of a left and a right multiplication, with the left one carrying the conjugation of the product and the right one the plain product of the block:
 
 $$
 T_{\tilde a,\tilde b}(\tilde q) = \tilde a \star \tilde q \cdot \tilde b = \tilde a^{\natural}\tilde q\,\tilde b = L_{\tilde a^{\natural}}R_{\tilde b} .
 $$
 
-They are the elementary sandwiches of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the sandwiches span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde a^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra of Quaternions*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
+They are the elementary sandwiches of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the sandwiches span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde a^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The elements are $\tilde p = \sum_\mu p_\mu e_\mu$ with the conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the product is $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$; the two forms of the space are the plain form $\mathrm B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$ and the quaternionic form $N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$ of signature $(4,0)$; a right multiplication is the plain one, $R_{\tilde b}(\tilde q) = \tilde q\tilde b$.
+**Conventions.** The elements are $\tilde p = \sum_\mu p_\mu e_\mu$ with the conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the product is $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$; the two forms of the space are the plain form $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$ and the quaternionic form $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$ of signature $(4,0)$; a right multiplication is the plain one, $R_{\tilde b}(\tilde q) = \tilde q\tilde b$.
 
 ## The Family
 
@@ -66,29 +66,29 @@ $$
 
 Each form of the space defines a transpose on the operators, and the two transposes of a sandwich are other sandwiches with the parameters conjugated and swapped.
 
-**Theorem (the transpose for the plain form).** With respect to the plain form $\mathrm B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q)$, the transpose of a two-sided operator is
+**Theorem (the transpose for the plain form).** With respect to the plain form $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$, the transpose of a two-sided operator is
 
 $$
 T_{\tilde a,\tilde b}^{\sim} = T_{\tilde b^{\natural},\tilde a^{\natural}} = L_{\tilde b}R_{\tilde a^{\natural}} .
 $$
 
-*Proof.* The transpose is characterised by $\mathrm B(T\tilde p,\tilde q) = \mathrm B(\tilde p,T^{\sim}\tilde q)$. For $T = T_{\tilde a,\tilde b}$,
+*Proof.* The transpose is characterised by $\langle T\tilde p,\tilde q\rangle = \langle\tilde p,T^{\sim}\tilde q\rangle$. For $T = T_{\tilde a,\tilde b}$,
 $$
 \mathrm B\bigl(T\tilde p,\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde p\tilde b\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde p\,\tilde b\tilde q\tilde a^{\natural}\bigr) ,
 $$
-by the cyclic invariance of the scalar part, and the last is $\mathrm B(\tilde p, \tilde b\tilde q\tilde a^{\natural}) = \mathrm B(\tilde p, T_{\tilde b^{\natural},\tilde a^{\natural}}\tilde q)$, since $(\tilde b^{\natural})^{\natural}\tilde q\tilde a^{\natural} = \tilde b\tilde q\tilde a^{\natural}$.
+by the cyclic invariance of the scalar part, and the last is $\langle\tilde p,\tilde b\tilde q\tilde a^{\natural}\rangle = \langle\tilde p,T_{\tilde b^{\natural},\tilde a^{\natural}}\tilde q\rangle$, since $(\tilde b^{\natural})^{\natural}\tilde q\tilde a^{\natural} = \tilde b\tilde q\tilde a^{\natural}$.
 
-**Theorem (the transpose for the quaternionic form).** With respect to the quaternionic form $N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is
+**Theorem (the transpose for the quaternionic form).** With respect to the quaternionic form $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is
 
 $$
 T_{\tilde a,\tilde b}^{\dagger} = T_{\tilde a^{\natural},\tilde b^{\natural}} .
 $$
 
-*Proof.* The characterisation is $N(T\tilde p,\tilde q) = N(\tilde p,T^{\dagger}\tilde q)$, and
+*Proof.* The characterisation is $\langle T\tilde p,\tilde q\rangle_{\natural} = \langle\tilde p,T^{\dagger}\tilde q\rangle_{\natural}$, and
 $$
 N\bigl(T\tilde p,\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde p\tilde b\tilde q^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde p\,\tilde b\tilde q^{\natural}\tilde a^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde p\,(\tilde a\tilde q\tilde b^{\natural})^{\natural}\bigr) ,
 $$
-using that $(\tilde a\tilde q\tilde b^{\natural})^{\natural} = \tilde b\tilde q^{\natural}\tilde a^{\natural}$; the last is $N(\tilde p, \tilde a\tilde q\tilde b^{\natural}) = N(\tilde p, T_{\tilde a^{\natural},\tilde b^{\natural}}\tilde q)$, since $(\tilde a^{\natural})^{\natural}\tilde q\tilde b^{\natural} = \tilde a\tilde q\tilde b^{\natural}$.
+using that $(\tilde a\tilde q\tilde b^{\natural})^{\natural} = \tilde b\tilde q^{\natural}\tilde a^{\natural}$; the last is $\langle\tilde p,\tilde a\tilde q\tilde b^{\natural}\rangle_{\natural} = \langle\tilde p,T_{\tilde a^{\natural},\tilde b^{\natural}}\tilde q\rangle_{\natural}$, since $(\tilde a^{\natural})^{\natural}\tilde q\tilde b^{\natural} = \tilde a\tilde q\tilde b^{\natural}$.
 
 **Corollary (the two transposes and the comparison).** The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde a,\tilde b} = T_{\tilde b^{\natural},\tilde a^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$. For a nonzero sandwich, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,
 
@@ -135,11 +135,11 @@ The two-sided operators of the quaternionic product are $T_{\tilde a,\tilde b}(\
 | $\mathcal T$ | the family of two-sided operators, spanning $\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
 | $T_{\tilde a,\tilde b}T_{\tilde c,\tilde d} = T_{\tilde c\tilde a,\tilde d\tilde b}$ | the composition law, both parameters reversed |
 | $T^{\sim}_{\tilde a,\tilde b} = T_{\tilde b^{\natural},\tilde a^{\natural}}$ | the transpose for the plain form $\mathrm B$ |
-| $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$ | the transpose for the quaternionic form $N$ |
+| $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$ | the transpose for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $T^{\sim}_{\tilde a,\tilde b} = T^{\dagger}_{\tilde a,\tilde b} \iff \tilde b \in \mathbb{R}\tilde a$ | the two transposes coincide on proportional parameters |
 | $T_{\tilde a,\tilde b} = T^{\sim}_{\tilde a,\tilde b} \iff \tilde b \in \mathbb{R}\tilde a^{\natural}$ | the plain self-transpose parameters |
-| $\mathrm B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q)$ | the plain form, of signature $(1,3)$ |
-| $N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ | the quaternionic form, of signature $(4,0)$ |
+| $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$ | the plain form, of signature $(1,3)$ |
+| $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ | the quaternionic form, of signature $(4,0)$ |
 
 ## Further Reading
 

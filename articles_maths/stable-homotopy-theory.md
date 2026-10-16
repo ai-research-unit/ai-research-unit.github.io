@@ -15,7 +15,7 @@ Throughout, spectra are written $E$, their homotopy groups $\pi_k E$, and the su
 
 ### Definitions
 
-**Definition.** A **prespectrum** is a sequence of pointed topological spaces $E_n$ for $n \geq 0$ together with pointed maps $\sigma_n : \Sigma E_n \to E_{n+1}$, the **structure maps**. A **spectrum** is a prespectrum whose adjoints $\tilde\sigma_n : E_n \to \Omega E_{n+1}$ are homeomorphisms. A **CW spectrum** is a spectrum whose spaces are CW complexes and whose structure maps are cellular inclusions; the **homotopy groups** are
+**Definition.** A **prespectrum** is a sequence of pointed topological spaces $E_n$ for $n \geq 0$ together with pointed maps $\sigma_n : \Sigma E_n \to E_{n+1}$, the **structure maps**. A **spectrum** is a prespectrum whose adjoints $\sigma_n^{\mathrm{ad}} : E_n \to \Omega E_{n+1}$ are homeomorphisms. A **CW spectrum** is a spectrum whose spaces are CW complexes and whose structure maps are cellular inclusions; the **homotopy groups** are
 
 $$
 \pi_k(E) = \operatorname{colim}_n\ \pi_{k+n}(E_n), \qquad \text{the colimit along } \pi_{k+n}(E_n) \xrightarrow{\ \cong\ } \pi_{k+n}(\Omega E_{n+1}) \to \pi_{k+n+1}(E_{n+1}).
@@ -75,7 +75,7 @@ naturally in $X$; and every spectrum defines a reduced cohomology theory by this
 
 *Proof sketch.* The representing objects are the values of the theory on spheres, $E_n = $ a space representing $E^n(S^0)$ in the appropriate sense, and the structure maps come from the suspension isomorphisms; the argument is the classical Brown representability theorem applied to the homotopy functor on CW complexes.
 
-**Example.** The spectrum $\mathbb{S}$ represents stable cohomotopy, $\tilde{\mathbb{S}}^k(X) \cong \operatorname{colim}_n[\Sigma^nX, S^{k+n}]$; the Eilenberg–MacLane spectrum $H\pi$ represents ordinary cohomology $H^{k,\mathrm{red}}(X;\pi)$; the spectrum $MU$ represents complex cobordism, with $\pi_*MU$ the Lazard ring of formal group laws, and $KO$, $KU$ represent real and complex topological $K$-theory.
+**Example.** The spectrum $\mathbb{S}$ represents stable cohomotopy, $\mathbb{S}^{k}_{\mathrm{red}}(X) \cong \operatorname{colim}_n[\Sigma^nX, S^{k+n}]$; the Eilenberg–MacLane spectrum $H\pi$ represents ordinary cohomology $H^{k,\mathrm{red}}(X;\pi)$; the spectrum $MU$ represents complex cobordism, with $\pi_*MU$ the Lazard ring of formal group laws, and $KO$, $KU$ represent real and complex topological $K$-theory.
 
 **Remark.** The unity of the subject is the consequence of this theorem: homology and cohomology theories *are* spectra, the natural transformations between them are stable maps, and the cohomology operations are elements of $E^*(E)$. Ordinary cohomology is the case $\pi = \mathbb{Z}$, and every generalised theory is obtained from ordinary cohomology by a sequence of extensions, which is the content of the Atiyah–Hirzebruch spectral sequence below.
 
@@ -126,14 +126,14 @@ in agreement with the table above; the classes $h_0h_1$, $h_1^2$, $h_1h_2$, $h_2
 **Theorem (Atiyah–Hirzebruch).** Let $E$ be a spectrum representing a reduced cohomology theory, let $X$ be a CW complex, and write $E_* = \pi_*E$ for the coefficient ring. There is a first quadrant spectral sequence
 
 $$
-E^2_{p,q} = H_p\bigl(X; E_q\bigr) \Longrightarrow E_{p+q}(X),
+E^2_{n,m} = H_p\bigl(X; E_q\bigr) \Longrightarrow E_{p+q}(X),
 $$
 
-the **Atiyah–Hirzebruch spectral sequence**, with differentials $d^r : E^r_{p,q} \to E^r_{p-r,q+r-1}$; dually in cohomology, $E_2^{p,q} = H^p(X;E^{-q}) \Rightarrow E^{p+q}(X)$. It is natural in $X$ and in the spectrum $E$, and it is multiplicative when $E$ is a ring spectrum.
+the **Atiyah–Hirzebruch spectral sequence**, with differentials $d^r : E^r_{n,m} \to E^r_{p-r,q+r-1}$; dually in cohomology, $E_2^{n,m} = H^p(X;E^{-q}) \Rightarrow E^{p+q}(X)$. It is natural in $X$ and in the spectrum $E$, and it is multiplicative when $E$ is a ring spectrum.
 
-*Proof sketch.* Filter the CW spectrum $E\wedge \Sigma^\infty X$ by the skeleta of $X$; the associated graded pieces are the smash products of $E$ with the quotients $X^{(p)}/X^{(p-1)}$, which are wedges of spheres, so the $E^1$ page is the cellular chains of $X$ with coefficients in $E_*$; hence $E^2_{p,q} = H_p(X;E_q)$ and convergence is to the homotopy of the total spectrum.
+*Proof sketch.* Filter the CW spectrum $E\wedge \Sigma^\infty X$ by the skeleta of $X$; the associated graded pieces are the smash products of $E$ with the quotients $X^{(p)}/X^{(p-1)}$, which are wedges of spheres, so the $E^1$ page is the cellular chains of $X$ with coefficients in $E_*$; hence $E^2_{n,m} = H_p(X;E_q)$ and convergence is to the homotopy of the total spectrum.
 
-**Example.** For $E = H\mathbb{Z}$ and $R$ coefficients the spectral sequence has $E^2_{p,q} = H_p(X;\mathbb{Z})$ concentrated in $q = 0$ and collapses, recovering ordinary homology. For $E = KU$ the coefficient ring is $\mathbb{Z}[u^{\pm1}]$ with $|u| = 2$, so the $E^2$ page is ordinary homology with a degree-two coefficient; the differentials $d^3$ are the integral Steenrod operations, and the **Bott periodicity** makes the $E^\infty$ page the associated graded of $K^*$-theory.
+**Example.** For $E = H\mathbb{Z}$ and $R$ coefficients the spectral sequence has $E^2_{n,m} = H_p(X;\mathbb{Z})$ concentrated in $q = 0$ and collapses, recovering ordinary homology. For $E = KU$ the coefficient ring is $\mathbb{Z}[u^{\pm1}]$ with $|u| = 2$, so the $E^2$ page is ordinary homology with a degree-two coefficient; the differentials $d^3$ are the integral Steenrod operations, and the **Bott periodicity** makes the $E^\infty$ page the associated graded of $K^*$-theory.
 
 **Example (the Chern character and $K$-theory of spheres).** For complex topological $K$-theory, the Atiyah–Hirzebruch spectral sequence for $X = S^{2n}$ has two nonzero rows and two nonzero columns and collapses; it gives $KU^0(S^{2n}) \cong \mathbb{Z}$ and $KU^1(S^{2n}) = 0$, with $KU^0(S^{2n})$ generated by the $n$-th power of the Bott class. This is the computation underlying **Bott periodicity**, and it is the model for the $K$-theory computations of the operator-algebraic kind treated by another article of this Part.
 
@@ -190,7 +190,7 @@ Brown representability identifies reduced cohomology theories with spectra, so o
 | $\mathcal{A}_p$, $Sq^i$, $\mathcal{P}^i$, $\beta$ | Steenrod algebra, squares, powers, Bockstein |
 | Adams SS | $E_2^{s,t} = \operatorname{Ext}^{s,t}_{\mathcal{A}_p}(\mathbb{F}_p,H^*(E;\mathbb{F}_p)) \Rightarrow \pi_{t-s}(E)\otimes\mathbb{Z}_p$ |
 | $h_i \in \operatorname{Ext}^{1,2^i}_{\mathcal{A}_2}$ | Adams $E_2$ generators; $d_2(h_i) = h_{i-1}^2h_{i-2}$ |
-| Atiyah–Hirzebruch SS | $E^2_{p,q} = H_p(X;E_q) \Rightarrow E_{p+q}(X)$ |
+| Atiyah–Hirzebruch SS | $E^2_{n,m} = H_p(X;E_q) \Rightarrow E_{p+q}(X)$ |
 | $MU$, $KU$, $KO$ | Complex cobordism; complex and real topological $K$-theory |
 | $K(n)$ | Morava $K$-theory of height $n$; $K(n)_* = \mathbb{F}_p[v_n^{\pm1}]$ |
 | Type $n$ | $K(n)_*(X)\neq0$ and $K(m)_*(X) = 0$ for $m>n$, $X$ finite |

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Descent recovers a variety over $k$ from its base change to $L$, and the reverse motion — passing from an $L$-variety to a $k$-variety that records the whole $L$-structure — is the **Weil restriction of scalars**. It is the right adjoint of the base-change functor, and the form it carries is the **trace form** of the extension, $q(x,y) = \operatorname{Tr}_{L/k}(xy)$, which is nondegenerate exactly when the extension is separable and is invariant under the Galois group; its multiplicative companion is the **norm**, $N_{L/k}(\alpha) = \det(m_\alpha)$, the invariant that governs the descent of the multiplicative group. This article fixes the Weil restriction, its adjunction, the trace and the norm, the trace form as an invariant bilinear form, and the restriction of the multiplicative group as a torus, and it is the second article of the `- * Theory` group.
+Descent recovers a variety over $k$ from its base change to $L$, and the reverse motion — passing from an $L$-variety to a $k$-variety that records the whole $L$-structure — is the **Weil restriction of scalars**. It is the right adjoint of the base-change functor, and the form it carries is the **trace form** of the extension, $\mathfrak{Q}(x,y) = \operatorname{Tr}_{L/k}(xy)$, which is nondegenerate exactly when the extension is separable and is invariant under the Galois group; its multiplicative companion is the **norm**, $N_{L/k}(\alpha) = \det(m_\alpha)$, the invariant that governs the descent of the multiplicative group. This article fixes the Weil restriction, its adjunction, the trace and the norm, the trace form as an invariant bilinear form, and the restriction of the multiplicative group as a torus, and it is the second article of the `- * Theory` group.
 
 The article reads the real structure of *Real Structures on Varieties and Galois Descent* through the invariant form and the invariant norm. Its neighbours are *Real Algebraic Varieties* and *Real Structures on a Curve*, later in this group, which use the trace form and the norm for the real points and the classification; the involution on the cohomology, which uses the invariance of the form to pair the cohomology with itself, is *The Galois Action on the Cohomology*. The trace and the norm of an extension are Part I's field theory, and they are recalled here in their algebraic form as the trace and the determinant of the multiplication operator, keeping the article self-contained; the bilinear and quadratic forms are those of the written *Bilinear Forms* and *Quadratic Forms and Polarisation* of this Part, and the field trace and norm of the written *Algebraic Number Theory* are the arithmetic instance. The word **trace form** is used here for the form of a field extension, and it is distinct from the trace form of an algebra with an involution, which is that of the written *Hilbert Algebras*.
 
@@ -104,21 +104,21 @@ and in particular the trace and the norm take values in $k$ and are invariant un
 
 **Definition.** The **trace form** of the extension $L/k$ is the symmetric $k$-bilinear form
 $$
-q : L\times L\longrightarrow k, \qquad q(x,y) = \operatorname{Tr}_{L/k}(xy).
+q : L\times L\longrightarrow k, \qquad \mathfrak{Q}(x,y) = \operatorname{Tr}_{L/k}(xy).
 $$
 Its polar quadratic form is $\alpha\mapsto\operatorname{Tr}_{L/k}(\alpha^2)$, and its discriminant is the determinant of the Gram matrix in a $k$-basis of $L$.
 
 **Theorem (nondegeneracy and invariance).** The trace form is nondegenerate exactly when $L/k$ is separable, and when $L/k$ is Galois it is invariant under the action,
 $$
-q(\sigma x,\sigma y) = q(x,y) \qquad (\sigma\in G),
+\mathfrak{Q}(\sigma x,\sigma y) = \mathfrak{Q}(x,y) \qquad (\sigma\in G),
 $$
-so that the Galois group preserves the trace form. The multiplication operator $m_\alpha$ is self-adjoint with respect to $q$, $q(\alpha x,y) = q(x,\alpha y)$.
+so that the Galois group preserves the trace form. The multiplication operator $m_\alpha$ is self-adjoint with respect to $q$, $\mathfrak{Q}(\alpha x,y) = \mathfrak{Q}(x,\alpha y)$.
 
 *Proof.* Since $G$ is the group of the $k$-embeddings of $L$ into an algebraic closure, the Gram matrix in a $k$-basis $(b_i)$ of $L$ is
 $$
 M_{ij} = \operatorname{Tr}_{L/k}(b_ib_j) = \sum_{\sigma\in G}b_i^{(\sigma)}b_j^{(\sigma)} = (B^{t}B)_{ij},
 $$
-where $B = (b_i^{(\sigma)})$ is the matrix of the conjugates. Hence $\det M = \det(B)^2$, and $\det B\neq0$ exactly when the conjugates are linearly independent over the closure, which is exactly the separability of $L/k$ by the theorem of the primitive element and the linear independence of the distinct embeddings. So the form is nondegenerate if and only if the extension is separable, and the discriminant $\det M$ is a square in $k$. Invariance is $\operatorname{Tr}(\sigma x\,\sigma y) = \operatorname{Tr}(\sigma(xy)) = \operatorname{Tr}(xy)$, the trace taking values in $k$. The self-adjointness is the commutativity of $L$: $q(\alpha x,y) = \operatorname{Tr}(\alpha xy) = \operatorname{Tr}(x\alpha y) = q(x,\alpha y)$.
+where $B = (b_i^{(\sigma)})$ is the matrix of the conjugates. Hence $\det M = \det(B)^2$, and $\det B\neq0$ exactly when the conjugates are linearly independent over the closure, which is exactly the separability of $L/k$ by the theorem of the primitive element and the linear independence of the distinct embeddings. So the form is nondegenerate if and only if the extension is separable, and the discriminant $\det M$ is a square in $k$. Invariance is $\operatorname{Tr}(\sigma x\,\sigma y) = \operatorname{Tr}(\sigma(xy)) = \operatorname{Tr}(xy)$, the trace taking values in $k$. The self-adjointness is the commutativity of $L$: $\mathfrak{Q}(\alpha x,y) = \operatorname{Tr}(\alpha xy) = \operatorname{Tr}(x\alpha y) = \mathfrak{Q}(x,\alpha y)$.
 
 **Theorem (the norm and the trace of a product of conjugates, and transitivity).** For a tower $M/L/k$ one has
 $$
@@ -142,7 +142,7 @@ corresponding to the augmentation $\mathbb{Z}[G]\to\mathbb{Z}$ on the cocharacte
 
 *Proof.* The functor of points is $T(R) = (R\otimes_kL)^\times$; on a $k$-algebra $R$ this is the unit group of $R\otimes_kL$, whose character group is $\mathbb{Z}$ by the rank-one units and whose cocharacter group is the free abelian group on the idempotents of $L\otimes_kL$, identified with $\mathbb{Z}[G]$ by the Chinese remainder theorem. The norm is the determinant of multiplication on $R\otimes_kL$ and is the product of the permutation of the idempotents without fixed points, which is the augmentation; the kernel is the norm-one torus by definition. The dimension of a torus is the rank of its cocharacter lattice, here $n$.
 
-**Example ($\mathbb{C}/\mathbb{R}$ and the norm-one group).** For $L = \mathbb{C}$, $k = \mathbb{R}$ the norm torus is the anisotropic torus of dimension two whose $\mathbb{R}$-points are $\mathbb{C}^\times$, and the norm-one torus has $\mathbb{R}$-points the group $N^{-1}(1) = \{z : z\bar z = 1\}$. On $\mathbb{C}\cong\mathbb{R}^2$ the bilinear trace form is $q(z,w) = 2\,\mathrm{Re}(zw)$, of signature $(1,1)$ in the basis $1,i$, while the associated Hermitian form $h(z,w) = q(z,\bar w) = 2\,\mathrm{Re}(z\bar w)$ is positive definite; the Galois group acts by the conjugation, which preserves both forms. This torus is the formal model of the real structure on the multiplicative group; the restriction of the additive group is $\mathbb{G}_{a,\mathbb{R}}^2$ with the same trace form.
+**Example ($\mathbb{C}/\mathbb{R}$ and the norm-one group).** For $L = \mathbb{C}$, $k = \mathbb{R}$ the norm torus is the anisotropic torus of dimension two whose $\mathbb{R}$-points are $\mathbb{C}^\times$, and the norm-one torus has $\mathbb{R}$-points the group $N^{-1}(1) = \{z : z\bar z = 1\}$. On $\mathbb{C}\cong\mathbb{R}^2$ the bilinear trace form is $\mathfrak{Q}(z,w) = 2\,\mathrm{Re}(zw)$, of signature $(1,1)$ in the basis $1,i$, while the associated Hermitian form $h(z,w) = \mathfrak{Q}(z,\bar w) = 2\,\mathrm{Re}(z\bar w)$ is positive definite; the Galois group acts by the conjugation, which preserves both forms. This torus is the formal model of the real structure on the multiplicative group; the restriction of the additive group is $\mathbb{G}_{a,\mathbb{R}}^2$ with the same trace form.
 
 **Example ($\mathbb{Q}(\sqrt d)/\mathbb{Q}$).** For $L = \mathbb{Q}(\sqrt d)$ with $d$ square-free, the conjugate is $\sqrt d\mapsto-\sqrt d$ and
 $$
@@ -156,7 +156,7 @@ The **Weil restriction of scalars** $R_{L/k}$ sends an $L$-variety $X$ to the $k
 $$
 \operatorname{Hom}_k(T,R_{L/k}X)\cong\operatorname{Hom}_L(T\times_kL,X),
 $$
-so it preserves limits and its points are the points of $X$ over $L$, and its own base change is the product of the conjugates, $(R_{L/k}X)\times_kL\cong\prod_{\sigma\in G}{}^\sigma X$. The **trace** and the **norm** of the extension are the trace and the determinant of the multiplication operator, $\operatorname{Tr}_{L/k}(\alpha) = \operatorname{tr}(m_\alpha)$ and $N_{L/k}(\alpha) = \det(m_\alpha)$; for a Galois extension they are the sum and the product of the conjugates, they take values in $k$, they are $G$-invariant, and they are the elementary symmetric functions of the eigenvalues of multiplication. The **trace form** $q(x,y) = \operatorname{Tr}_{L/k}(xy)$ is symmetric and is nondegenerate exactly when $L/k$ is separable; it is invariant under the Galois group, so the group preserves the form, and every multiplication is self-adjoint for it. The **norm torus** $R_{L/k}\mathbb{G}_m$ is an $n$-dimensional torus with cocharacter lattice $\mathbb{Z}[G]$ and the norm as its augmentation character, and its kernel is the norm-one torus, the invariant that classifies the forms of the multiplicative group.
+so it preserves limits and its points are the points of $X$ over $L$, and its own base change is the product of the conjugates, $(R_{L/k}X)\times_kL\cong\prod_{\sigma\in G}{}^\sigma X$. The **trace** and the **norm** of the extension are the trace and the determinant of the multiplication operator, $\operatorname{Tr}_{L/k}(\alpha) = \operatorname{tr}(m_\alpha)$ and $N_{L/k}(\alpha) = \det(m_\alpha)$; for a Galois extension they are the sum and the product of the conjugates, they take values in $k$, they are $G$-invariant, and they are the elementary symmetric functions of the eigenvalues of multiplication. The **trace form** $\mathfrak{Q}(x,y) = \operatorname{Tr}_{L/k}(xy)$ is symmetric and is nondegenerate exactly when $L/k$ is separable; it is invariant under the Galois group, so the group preserves the form, and every multiplication is self-adjoint for it. The **norm torus** $R_{L/k}\mathbb{G}_m$ is an $n$-dimensional torus with cocharacter lattice $\mathbb{Z}[G]$ and the norm as its augmentation character, and its kernel is the norm-one torus, the invariant that classifies the forms of the multiplicative group.
 
 ## Summary of Notation
 
@@ -170,9 +170,9 @@ so it preserves limits and its points are the points of $X$ over $L$, and its ow
 | $\operatorname{Tr}_{L/k}(\alpha)=\operatorname{tr}(m_\alpha)=\sum_\sigma\sigma(\alpha)$ | the trace |
 | $N_{L/k}(\alpha)=\det(m_\alpha)=\prod_\sigma\sigma(\alpha)$ | the norm, multiplicative $L^\times\to k^\times$ |
 | $\operatorname{Tr}(\lambda)=n\lambda$, $N(\lambda)=\lambda^n$ | the trace and the norm on the base field |
-| $q(x,y)=\operatorname{Tr}_{L/k}(xy)$ | the trace form; nondegenerate iff separable |
-| $q(\sigma x,\sigma y)=q(x,y)$ | invariance under the Galois group |
-| $q(\alpha x,y)=q(x,\alpha y)$ | multiplication is self-adjoint for the trace form |
+| $\mathfrak{Q}(x,y)=\operatorname{Tr}_{L/k}(xy)$ | the trace form; nondegenerate iff separable |
+| $\mathfrak{Q}(\sigma x,\sigma y)=\mathfrak{Q}(x,y)$ | invariance under the Galois group |
+| $\mathfrak{Q}(\alpha x,y)=\mathfrak{Q}(x,\alpha y)$ | multiplication is self-adjoint for the trace form |
 | $\operatorname{Tr}_{M/k}=\operatorname{Tr}_{L/k}\circ\operatorname{Tr}_{M/L}$, $N_{M/k}=N_{L/k}\circ N_{M/L}$ | transitivity in a tower |
 | $T=R_{L/k}\mathbb{G}_m$ | the norm torus; $\dim T=n$ |
 | $X^*(T)=\mathbb{Z}$, $X_*(T)=\mathbb{Z}[G]$ | characters and cocharacters of the norm torus |

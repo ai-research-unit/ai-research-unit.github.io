@@ -146,7 +146,7 @@ $$
 $$
 a biquaternion state of the Bloch ball with
 $$
-\vec r_A=\cos(2\theta)\,\hat u_3,
+\vec r_A=\cos(2\theta)\,\vec u_3,
 \qquad
 |\vec r_A|=\big|\cos(2\theta)\big|,
 \qquad

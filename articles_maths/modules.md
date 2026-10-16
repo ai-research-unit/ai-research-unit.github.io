@@ -152,7 +152,7 @@ $$
 (m+m')\otimes n=m\otimes n+m'\otimes n, \quad m\otimes(n+n')=m\otimes n+m\otimes n', \quad (rm)\otimes n=m\otimes(rn)=r(m\otimes n),
 $$
 
-that is, it is the quotient of the free module on $M \times N$ by these relations. Its **universal property** is that every bilinear $b$ factors uniquely as $\tilde{b} \circ \otimes$ for an $R$-linear map $\tilde{b}:M \otimes_R N \to P$ with $\tilde{b}(m \otimes n)=b(m,n)$. Elements are finite sums $\sum_i m_i \otimes n_i$, and not every element is an elementary tensor.
+that is, it is the quotient of the free module on $M \times N$ by these relations. Its **universal property** is that every bilinear $b$ factors uniquely as $b^{\mathrm{lin}} \circ \otimes$ for an $R$-linear map $b^{\mathrm{lin}}:M \otimes_R N \to P$ with $b^{\mathrm{lin}}(m \otimes n)=b(m,n)$. Elements are finite sums $\sum_i m_i \otimes n_i$, and not every element is an elementary tensor.
 
 **Properties.** $R \otimes_R M \cong M$; $M \otimes_R N \cong N \otimes_R M$; $(M \otimes_R N)\otimes_R P \cong M \otimes_R (N \otimes_R P)$; $\bigl(\bigoplus_i M_i\bigr)\otimes_R N \cong \bigoplus_i (M_i \otimes_R N)$, and $M \otimes_R 0=0$; the tensor product of finitely generated modules is finitely generated. There is a natural **tensor–hom adjunction** $\operatorname{Hom}_R(M \otimes_R N,P) \cong \operatorname{Hom}_R\bigl(M,\operatorname{Hom}_R(N,P)\bigr)$.
 

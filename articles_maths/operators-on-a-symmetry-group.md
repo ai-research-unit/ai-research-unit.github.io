@@ -13,7 +13,7 @@ The article has six sections: the space, the form and the symmetry group; the ac
 
 ### The Chosen Form and Its Isometries
 
-Let $X$ be a set with a chosen distance $d$, or a finite-dimensional space $V$ over a field of characteristic not $2$ with a chosen non-degenerate quadratic form $Q$ and its polar form $B$. A **symmetry of $X$** is a bijection preserving the chosen structure: a distance-preserving bijection when $X$ is metric, or a linear isomorphism $T$ with $Q(Tv) = Q(v)$ when $X = V$ is a quadratic space. The symmetries of the chosen form form a group under composition, the **isometry group** $\operatorname{Isom}(X)$ of the chosen structure; for a quadratic space it is the orthogonal group $\operatorname{O}(V, Q)$, a subgroup of the general linear group, and the reflections generate it, by the theorem of Cartan–Dieudonné. These are the objects of *Isometries and Orthogonal Transformations* and of *The Rotation Group and Orientation*, and are cited rather than restated.
+Let $X$ be a set with a chosen distance $d$, or a finite-dimensional space $V$ over a field of characteristic not $2$ with a chosen non-degenerate quadratic form $\mathfrak{Q}$ and its polar form $B$. A **symmetry of $X$** is a bijection preserving the chosen structure: a distance-preserving bijection when $X$ is metric, or a linear isomorphism $T$ with $\mathfrak{Q}(Tv) = \mathfrak{Q}(v)$ when $X = V$ is a quadratic space. The symmetries of the chosen form form a group under composition, the **isometry group** $\operatorname{Isom}(X)$ of the chosen structure; for a quadratic space it is the orthogonal group $\operatorname{O}(V, \mathfrak{Q})$, a subgroup of the general linear group, and the reflections generate it, by the theorem of Cartan–Dieudonné. These are the objects of *Isometries and Orthogonal Transformations* and of *The Rotation Group and Orientation*, and are cited rather than restated.
 
 ### The Symmetry Group
 
@@ -62,7 +62,7 @@ $$
 \mathcal{F}(X)^G = \{f : f(a \cdot x) = f(x)\ \text{for all } a \in G,\ x \in X\},
 $$
 
-the **fixed space** of the representation, and the functions invariant under the isometry group of a form are the invariants of the form: on a quadratic space $\operatorname{O}(V,Q)$-invariant polynomials are the polynomials in $Q$, by the first fundamental theorem of invariant theory, so the invariant functions of a quadratic space are exactly the functions of $Q$.
+the **fixed space** of the representation, and the functions invariant under the isometry group of a form are the invariants of the form: on a quadratic space $\operatorname{O}(V,\mathfrak{Q})$-invariant polynomials are the polynomials in $Q$, by the first fundamental theorem of invariant theory, so the invariant functions of a quadratic space are exactly the functions of $Q$.
 
 **Proposition.** The fixed space $\mathcal{F}(X)^G$ is the common kernel of the operators $\pi(a) - \mathrm{id}$, and it is a subalgebra of $\mathcal{F}(X)$ when $G$ is effective and $\mathcal{F}$ is closed under products.
 
@@ -167,11 +167,11 @@ The sandwiches are the two-sided operators of the layer, the one-sided operators
 
 ## Worked Cases
 
-**Example (the circle and its rotations).** Let $X = S^1$ with the Euclidean form and $G = SO(2) = \{R(\theta)\}$. The action on $L^2(S^1)$ has the Fourier characters $f_m(x) = e^{imx}$ as eigenfunctions, $L_{R(\theta)}f_m = e^{-im\theta}f_m$, so the action operators are diagonal in the character basis and the commutant of the action on each isotypic component is the scalars. The subgroups of $SO(2)$ are the cyclic and the dense subgroups, and the commutant of a dense one is trivial, which is the operator form of the fact that a dense subgroup has no invariant functions but the constants.
+**Example (the circle and its rotations).** Let $X = S^1$ with the Euclidean form and $G = SO(2) = \{R(\theta)\}$. The action on $L^2(S^1)$ has the Fourier characters $f_m(x) = \exp(imx)$ as eigenfunctions, $L_{R(\theta)}f_m = \exp(-im\theta)f_m$, so the action operators are diagonal in the character basis and the commutant of the action on each isotypic component is the scalars. The subgroups of $SO(2)$ are the cyclic and the dense subgroups, and the commutant of a dense one is trivial, which is the operator form of the fact that a dense subgroup has no invariant functions but the constants.
 
 **Example (the finite symmetry group of a polygon).** Let $X$ be the regular $n$-gon and $G = D_n$ its dihedral symmetry group of order $2n$, *Symmetry, Point and Crystallographic Groups*. The action on the $n$ vertices is the standard permutation action, and the equivariant operators are the $D_n$-stable linear maps of the vertex space: the circulant matrices commuting with the rotation form the cyclic algebra, and the reflection reduces the commutant to the symmetric circulants. The orbit–stabiliser count gives the invariant functions of the vertex set, one dimension for each orbit of the group on the vertex set.
 
-**Example (the Euclidean group and its translations).** Let $X = \mathbb{R}^n$ and $G = E(n) = \mathbb{R}^n \rtimes O(n)$, the Euclidean isometry group of *Symmetry, Point and Crystallographic Groups*. A translation $T_b$ has the single action operator with $L_{T_b}f(x) = f(x-b)$, and the translations alone form the abelian normal subgroup; the sandwich by two translations is a single translation, $\Psi_{T_b,T_c} = L_{T_{-(b+c)}}$, so the layer of the translation subgroup is the commutative algebra generated by the shift operators, whose characters are the exponentials $e^{i\langle\xi,x\rangle}$.
+**Example (the Euclidean group and its translations).** Let $X = \mathbb{R}^n$ and $G = E(n) = \mathbb{R}^n \rtimes O(n)$, the Euclidean isometry group of *Symmetry, Point and Crystallographic Groups*. A translation $T_b$ has the single action operator with $L_{T_b}f(x) = f(x-b)$, and the translations alone form the abelian normal subgroup; the sandwich by two translations is a single translation, $\Psi_{T_b,T_c} = L_{T_{-(b+c)}}$, so the layer of the translation subgroup is the commutative algebra generated by the shift operators, whose characters are the exponentials $\exp(i\langle\xi,x\rangle)$.
 
 ## Summary
 

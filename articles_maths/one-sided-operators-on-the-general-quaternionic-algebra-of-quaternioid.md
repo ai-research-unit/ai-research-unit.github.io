@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The bracket of the block is the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra of Quaternions*, and it is built from two **plain** operations, the left and the right multiplication of the quaternion algebra:
+The bracket of the block is the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra*, and it is built from two **plain** operations, the left and the right multiplication of the quaternion algebra:
 
 $$
 L_{\tilde a}(\tilde x) = \tilde a\tilde x , \qquad R_{\tilde b}(\tilde x) = \tilde x\tilde b .
 $$
 
-These two families are the one-sided operators of the block. They are the two copies of the algebra inside the operator algebra, the first an isomorphic copy and the second an anti-isomorphic one; they commute, and every two-sided operator is a product of one of each (*Two-Sided Operators on the General Quaternionic Algebra of Quaternions*, above this article in this category). The quaternionic product itself enters through the forms: the quaternionic bilinear form $N$ of signature $(4,0)$ supplies one adjoint and the plain form $\mathrm B$ of signature $(1,3)$ the other, and the two adjoints are the two faces of the block (*The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category). This article gives the two families, their composition laws and their commutation, the two adjoints, the self-adjoint and the skew sectors for the quaternionic form, and the one-sided operators that are automorphisms of the form; the pin and spin construction that the automorphisms generate is *The Pin and Spin Groups of the General Quaternionic Algebra of Quaternions*, below this article in this category.
+These two families are the one-sided operators of the block. They are the two copies of the algebra inside the operator algebra, the first an isomorphic copy and the second an anti-isomorphic one; they commute, and every two-sided operator is a product of one of each (*Two-Sided Operators on the General Quaternionic Algebra*, above this article in this category). The quaternionic product itself enters through the forms: the quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(4,0)$ supplies one adjoint and the plain form $\mathrm B$ of signature $(1,3)$ the other, and the two adjoints are the two faces of the block (*The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category). This article gives the two families, their composition laws and their commutation, the two adjoints, the self-adjoint and the skew sectors for the quaternionic form, and the one-sided operators that are automorphisms of the form; the pin and spin construction that the automorphisms generate is *The Pin and Spin Groups of the General Quaternionic Algebra*, below this article in this category.
 
 **A word on the two left multiplications.** The left multiplication *of the quaternionic product* is the plain left multiplication by the conjugate, $L^{(\star)}_{\tilde a} = L_{\tilde a^{\natural}}$, and its composition law and monoid are the object of *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category. Here the subject is the two plain families $L$ and $R$ themselves, which are the ones that carry the adjoints and the sectors.
 
-**Conventions.** $\tilde p = \sum_\mu p_\mu e_\mu$, the conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, the quaternionic form is $N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$ of signature $(4,0)$, and the plain form is $\mathrm B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$; the adjoints are written ${}^{N}$ and ${}^{\sim}$.
+**Conventions.** $\tilde p = \sum_\mu p_\mu e_\mu$, the conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, the quaternionic form is $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$ of signature $(4,0)$, and the plain form is $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$; the adjoints are written ${}^{N}$ and ${}^{\sim}$.
 
 ## The Two Multiplications
 
@@ -54,7 +54,7 @@ $$
 
 The plain adjoint therefore exchanges the two families and is the identity on their intersection.
 
-*Proof.* $\mathrm B(L_{\tilde a}\tilde p,\tilde q) = \mathrm{Sc}(\tilde a\tilde p\tilde q) = \mathrm{Sc}(\tilde p\tilde q\tilde a) = \mathrm B(\tilde p, R_{\tilde a}\tilde q)$ by the cyclic invariance of the scalar part, which is the association of the two factors; the second identity is the mirror computation.
+*Proof.* $\langle L_{\tilde a}\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde a\tilde p\tilde q) = \mathrm{Sc}(\tilde p\tilde q\tilde a) = \langle\tilde p,R_{\tilde a}\tilde q\rangle$ by the cyclic invariance of the scalar part, which is the association of the two factors; the second identity is the mirror computation.
 
 **Corollary (the association).** The plain adjoint is an anti-isomorphism $\mathcal L \to \mathcal R$ of operator spaces, reading the left multiplication by $\tilde a$ as the right multiplication by $\tilde a$; it is the operator-level form of the exchange of the two factors of a product, and it is the identity on the scalars. A one-sided operator is self-adjoint for $\mathrm B$ exactly when its parameter is central, that is on the scalar line of operators.
 
@@ -62,7 +62,7 @@ The plain adjoint therefore exchanges the two families and is the identity on th
 
 ## The Adjoints for the Quaternionic Form
 
-**Theorem (the quaternionic adjoints).** With respect to the quaternionic form $N$,
+**Theorem (the quaternionic adjoints).** With respect to the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$,
 
 $$
 L_{\tilde a}^{N} = L_{\tilde a^{\natural}} , \qquad R_{\tilde b}^{N} = R_{\tilde b^{\natural}} .
@@ -70,7 +70,7 @@ $$
 
 The quaternionic adjoint therefore **keeps each family in place** and conjugates the parameter, and it is the identity on the scalars.
 
-*Proof.* $N(L_{\tilde a}\tilde p,\tilde q) = \mathrm{Sc}(\tilde a\tilde p\tilde q^{\natural}) = \mathrm{Sc}(\tilde p\,\tilde q^{\natural}\tilde a) = \mathrm{Sc}(\tilde p\,(\tilde a^{\natural}\tilde q)^{\natural}) = N(\tilde p, L_{\tilde a^{\natural}}\tilde q)$, since ${}^{\natural}$ is an anti-automorphism; the right case is the same computation with the factors in the other order.
+*Proof.* $\langle L_{\tilde a}\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde a\tilde p\tilde q^{\natural}) = \mathrm{Sc}(\tilde p\,\tilde q^{\natural}\tilde a) = \mathrm{Sc}(\tilde p\,(\tilde a^{\natural}\tilde q)^{\natural}) = \langle\tilde p,L_{\tilde a^{\natural}}\tilde q\rangle_{\natural}$, since ${}^{\natural}$ is an anti-automorphism; the right case is the same computation with the factors in the other order.
 
 **Corollary (the two adjoints compared).** The plain adjoint exchanges the families and does not conjugate; the quaternionic adjoint conjugates and does not exchange. The two adjoints agree exactly on the scalar parameters, where conjugation and exchange are both the identity.
 
@@ -78,7 +78,7 @@ The quaternionic adjoint therefore **keeps each family in place** and conjugates
 
 ## The Self-Adjoint and Skew Sectors
 
-**Theorem (the sectors for the quaternionic form).** The left multiplication $L_{\tilde a}$ is $N$-self-adjoint exactly when $\tilde a$ is Hermitian, that is on the scalar line $S$; it is $N$-skew-adjoint exactly when $\tilde a$ is anti-Hermitian, that is on the vector subspace $V$. The two sectors are therefore the two eigenspaces of the conjugation, of real dimensions one and three, and the two half-sums give the splitting of the one-sided operators into their symmetric and their alternating parts.
+**Theorem (the sectors for the quaternionic form).** The left multiplication $L_{\tilde a}$ is $\langle\cdot,\cdot\rangle_{\natural}$-self-adjoint exactly when $\tilde a$ is Hermitian, that is on the scalar line $S$; it is $N$-skew-adjoint exactly when $\tilde a$ is anti-Hermitian, that is on the vector subspace $V$. The two sectors are therefore the two eigenspaces of the conjugation, of real dimensions one and three, and the two half-sums give the splitting of the one-sided operators into their symmetric and their alternating parts.
 
 *Proof.* By injectivity, $L_{\tilde a^{\natural}} = L_{\tilde a}$ is $\tilde a^{\natural} = \tilde a$, the fixed subspace of the conjugation, which is the scalar line; $L_{\tilde a^{\natural}} = -L_{\tilde a} = L_{-\tilde a}$ is $\tilde a^{\natural} = -\tilde a$, the negated subspace, which is the vector subspace.
 
@@ -90,15 +90,15 @@ The quaternionic adjoint therefore **keeps each family in place** and conjugates
 
 **Definition.** A one-sided operator is an **automorphism of the form** when it is a bijection preserving it.
 
-**Theorem (the automorphisms of the quaternionic form).** $L_{\tilde a}$ preserves $N$ exactly when $N(\tilde a) = 1$, and so does $R_{\tilde a}$; the one-sided automorphisms of the quaternionic form are the multiplications by an element of the unit shell, a three-dimensional family.
+**Theorem (the automorphisms of the quaternionic form).** $L_{\tilde a}$ preserves $\langle\cdot,\cdot\rangle_{\natural}$ exactly when $\langle\tilde a\rangle_{\natural} = 1$, and so does $R_{\tilde a}$; the one-sided automorphisms of the quaternionic form are the multiplications by an element of the unit shell, a three-dimensional family.
 
-*Proof.* By multiplicativity, $N(L_{\tilde a}\tilde x) = N(\tilde a)N(\tilde x)$, so preservation for all $\tilde x$ is $N(\tilde a) = 1$; the right case is identical. The shell $N = 1$ is the unit sphere of $\mathbb{H} \cong \mathbb{R}^4$, of real dimension three.
+*Proof.* By multiplicativity, $\langle L_{\tilde a}\tilde x\rangle_{\natural} = \langle\tilde a\rangle_{\natural}\langle\tilde x\rangle_{\natural}$, so preservation for all $\tilde x$ is $\langle\tilde a\rangle_{\natural} = 1$; the right case is identical. The shell $N = 1$ is the unit sphere of $\mathbb{H} \cong \mathbb{R}^4$, of real dimension three.
 
 **Theorem (the automorphisms of the plain form).** $L_{\tilde a}$ preserves $\mathrm B$ exactly when $\tilde a = \pm e_0$; the one-sided automorphisms of the plain form are $\pm\mathrm{id}$ alone.
 
 *Proof.* The preservation condition is $L_{\tilde a}^{\sim}L_{\tilde a} = \mathrm{id}$, that is $R_{\tilde a}L_{\tilde a} = \mathrm{id}$, that is $\tilde a\tilde x\tilde a = \tilde x$ for all $\tilde x$. At $\tilde x = e_0$ this gives $\tilde a^2 = e_0$; substituting back gives $\tilde a\tilde x = \tilde x\tilde a$ for all $\tilde x$, so $\tilde a$ is central, and a central element with square $e_0$ is $\pm e_0$.
 
-**Corollary (the two families of automorphisms).** The one-sided automorphisms of the quaternionic form are the unit shell, of real dimension three, and they are the pin group of the block (*The Pin and Spin Groups of the General Quaternionic Algebra of Quaternions*, below this article in this category); the one-sided automorphisms of the plain form are only $\pm\mathrm{id}$. The definiteness of the quaternionic form is again the reason: its automorphisms are read off the norm, while the plain form detects only its own square roots of the identity.
+**Corollary (the two families of automorphisms).** The one-sided automorphisms of the quaternionic form are the unit shell, of real dimension three, and they are the pin group of the block (*The Pin and Spin Groups of the General Quaternionic Algebra*, below this article in this category); the one-sided automorphisms of the plain form are only $\pm\mathrm{id}$. The definiteness of the quaternionic form is again the reason: its automorphisms are read off the norm, while the plain form detects only its own square roots of the identity.
 
 ## Summary
 
@@ -112,9 +112,9 @@ The one-sided operators of the block are the plain left and right multiplication
 | $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}^{\mathrm{opp}}$ |
 | $L_{\tilde a}L_{\tilde c} = L_{\tilde a\tilde c}$, $R_{\tilde b}R_{\tilde d} = R_{\tilde d\tilde b}$ | the composition laws, direct on the left and reversed on the right |
 | $L_{\tilde a}^{\sim} = R_{\tilde a}$, $R_{\tilde b}^{\sim} = L_{\tilde b}$ | the adjoints for the plain form $\mathrm B$ |
-| $L_{\tilde a}^{N} = L_{\tilde a^{\natural}}$, $R_{\tilde b}^{N} = R_{\tilde b^{\natural}}$ | the adjoints for the quaternionic form $N$ |
-| $S$, $V$ | the self-adjoint and the skew parameter sectors for $N$ |
-| $N(\tilde a) = 1$ | the one-sided automorphisms of the quaternionic form |
+| $L_{\tilde a}^{N} = L_{\tilde a^{\natural}}$, $R_{\tilde b}^{N} = R_{\tilde b^{\natural}}$ | the adjoints for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |
+| $S$, $V$ | the self-adjoint and the skew parameter sectors for $\langle\cdot,\cdot\rangle_{\natural}$ |
+| $\langle\tilde a\rangle_{\natural} = 1$ | the one-sided automorphisms of the quaternionic form |
 
 ## Further Reading
 

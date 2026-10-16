@@ -91,7 +91,7 @@ extended to the conformal sphere by $i(0) = \infty$ and $i(\infty) = 0$; it is a
 
 ### The Clifford Formula
 
-**Definition.** Let $(V,q)$ be a quadratic space with polar form $B$ and let $a \in V$ with $q(a) \neq 0$. In the Clifford algebra $\mathrm{Cl}(V,q)$ the **reflection in the hyperplane** $a^\perp$ is the signed conjugation by the vector $a$,
+**Definition.** Let $(V,\mathfrak{Q})$ be a quadratic space with polar form $B$ and let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the **reflection in the hyperplane** $a^\perp$ is the signed conjugation by the vector $a$,
 
 $$
 \rho_a(x) = -\,a\,x\,a^{-1} = a\,\alpha(x)\,a^{-1},
@@ -102,22 +102,22 @@ where $\alpha$ is the grade involution, which acts on the vectors by $x \mapsto 
 **Theorem.** For every vector $x \in V$ the signed conjugation of the definition is the reflection
 
 $$
-\rho_a(x) = x - 2\,\frac{B(x,a)}{q(a)}\,a ,
+\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a ,
 $$
 
 so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\Theta^{\alpha}_{a,a^{-1}}$ of *The Signed Sandwich on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
 
-**Proof.** In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/q(a) - x$, since $a^{-1} = a/q(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/q(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.
+**Proof.** In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/\mathfrak{Q}(a) - x$, since $a^{-1} = a/\mathfrak{Q}(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/\mathfrak{Q}(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.
 
 **Corollary (the Cartan–Dieudonné theorem).** Every orthogonal transformation of a nondegenerate quadratic space is the product of at most $\dim V$ reflections,
 
 $$
-O(V,q) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V ,
+O(V,\mathfrak{Q}) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V ,
 $$
 
 and the number of the factors is the dimension of the space of the vectors moved by $T$; the orientation-preserving transformations are the products of an even number of reflections.
 
-**Proof.** The classical theorem is proved by induction on the dimension: if $T$ moves a vector $v$ then the composition $\rho_{T(v)-v}\circ T$ fixes $v$, reduces to the hyperplane $v^\perp$ and the induction applies; the parity statement follows because each reflection has determinant $-1$. The statement and the proof are in *Clifford Algebras* and *The Signed Adjoint of the Reflection on a Linear Space*.
+**Proof.** The classical theorem is proved by induction on the dimension: if $T$ moves a vector $b$ then the composition $\rho_{T(b)-b}\circ T$ fixes $b$, reduces to the hyperplane $b^\perp$ and the induction applies; the parity statement follows because each reflection has determinant $-1$. The statement and the proof are in *Clifford Algebras* and *The Signed Adjoint of the Reflection on a Linear Space*.
 
 **Remark (the sign and the two sides).** The reflection is the signed two-sided operator with the two parameters $a$ and $a^{-1}$, and the sign is the grade involution; the two-sided form records that the reflection is the conjugation, while a general isometry of the geometry is a product of these signed operators. The sign is what distinguishes the reflection in the hyperplane from the two-sided operator $x \mapsto axa^{-1}$ without the twist, which is a rotation-like map rather than a reflection, and it is the reason the reflection is placed in the signed two-sided slot of the category.
 

@@ -23,7 +23,7 @@ for $T \in B(X, Y)$ and $S \in B(Y, Z)$. Consequently $B(X)$ is a normed algebra
 
 **Proposition (the norm is not multiplicative in general).** A bounded operator $T$ satisfies $\lVert Tx\rVert = \lVert x\rVert$ for all $x$ exactly when $\lVert T\rVert = 1$ and $T$ is an isometry; the norm of a product can be strictly smaller than the product of the norms, $\lVert ST\rVert < \lVert S\rVert\lVert T\rVert$, and it can be zero for nonzero factors. The algebra $B(X)$ is commutative exactly when $X$ has dimension at most one.
 
-**Proof.** If $T$ is an isometry then $\lVert T\rVert = 1$ and the two quantities agree; the strict inequality is exhibited by two non-overlapping rank-one operators on $\ell^{2}$, whose product is $0$, and the commutativity statement by the shifts $L, R$ of $\ell^{p}$ with $LR = \mathrm{id}$, $RL \neq \mathrm{id}$.
+**Proof.** If $T$ is an isometry then $\lVert T\rVert = 1$ and the two quantities agree; the strict inequality is exhibited by two non-overlapping rank-one operators on $\ell^{2}$, whose product is $0$, and the commutativity statement by the shifts $L, R$ of $\ell^{n}$ with $LR = \mathrm{id}$, $RL \neq \mathrm{id}$.
 
 ## Completeness and the Neumann Series
 
@@ -67,11 +67,11 @@ $$
 
 **Example (the matrix algebra).** For $X = \mathbb{K}^{n}$ the algebra $B(X)$ is the matrix algebra $M_{n}(\mathbb{K})$, the operator norm is the spectral norm $\lVert A\rVert = \sigma_{1}(A)$ of *Topological Tensor Products*, and the Neumann series is the classical expansion $(\mathrm{id} - A)^{-1} = \sum_{n}A^{n}$ for a matrix with spectral norm below one; the group of invertibles is open and dense.
 
-**Example (the diagonal algebra).** On $\ell^{p}$ the diagonal operators $D_{\varphi}$ with $\varphi \in \ell^{\infty}$ form a closed commutative subalgebra of $B(\ell^{p})$ isometric to $\ell^{\infty}$, with $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$ and $D_{\varphi}D_{\psi} = D_{\varphi\psi}$; the subalgebra is isomorphic to the $C(K)$ multiplication operators of the compact case.
+**Example (the diagonal algebra).** On $\ell^{n}$ the diagonal operators $D_{\varphi}$ with $\varphi \in \ell^{\infty}$ form a closed commutative subalgebra of $B(\ell^{n})$ isometric to $\ell^{\infty}$, with $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$ and $D_{\varphi}D_{\psi} = D_{\varphi\psi}$; the subalgebra is isomorphic to the $C(K)$ multiplication operators of the compact case.
 
 **Example (the multiplication operators).** On $C(K)$ for a compact Hausdorff space $K$ the operators $M_{f}(g) = fg$ form a commutative subalgebra of $B(C(K))$ isometric to $C(K)$, and $\lVert M_{f}\rVert = \lVert f\rVert_{\infty}$; the subalgebra is closed because convergence in the operator norm is uniform convergence of the multipliers.
 
-**Example (the operators that attain their norm).** The identity attains its norm $1$ at every unit vector, and the right shift on $\ell^{p}$ attains its norm $1$ at every unit vector; the diagonal operator $D_{\varphi}$ with $\varphi_{k} = 1 - 1/k$ has norm $1$, the supremum of $\lvert \varphi_{k}\rvert$ over $k$, and does not attain it at any unit vector, only in the limit. The operator norm is a supremum in general, not a maximum.
+**Example (the operators that attain their norm).** The identity attains its norm $1$ at every unit vector, and the right shift on $\ell^{n}$ attains its norm $1$ at every unit vector; the diagonal operator $D_{\varphi}$ with $\varphi_{k} = 1 - 1/k$ has norm $1$, the supremum of $\lvert \varphi_{k}\rvert$ over $k$, and does not attain it at any unit vector, only in the limit. The operator norm is a supremum in general, not a maximum.
 
 ## Summary
 

@@ -49,7 +49,7 @@ the integral being the Bochner integral of a continuous $Y$-valued function; the
 
 (ii) The map $F:L^2(\Omega)\to\mathbb{R}$, $F(u)=\int_\Omega\bigl(\frac12|\nabla u|^2+g(u)\bigr)dx$ with $g \in C^1$, the model functional of a quasilinear problem, has $F'(u)h=\int_\Omega(\nabla u\cdot\nabla h+g'(u)h)\,dx$, and the critical-point equation $F'(u)=0$ is the weak form of $-\Delta u+g'(u)=0$, whose theory belongs.
 
-(iii) The **Nemytskii operator** $u\mapsto g(\cdot,u(\cdot))$ is continuous and bounded from $L^p(\Omega)$ to $L^q(\Omega)$ when $g$ is continuous and satisfies the growth condition $|g(x,s)|\le C(1+|s|^{p/q})$, and its composition with the compact embedding is compact; it is the archetype of the nonlinear operators that couple the calculus with the function spaces.
+(iii) The **Nemytskii operator** $u\mapsto g(\cdot,u(\cdot))$ is continuous and bounded from $L^{n}(\Omega)$ to $L^{m}(\Omega)$ when $g$ is continuous and satisfies the growth condition $|g(x,s)|\le C(1+|s|^{p/q})$, and its composition with the compact embedding is compact; it is the archetype of the nonlinear operators that couple the calculus with the function spaces.
 
 ## The Inverse and Implicit Function Theorems
 
@@ -187,7 +187,7 @@ $$
 
 for every finite cycle, and then the function is recovered from $A$ by the formula $f(x)=\sup\bigl(\langle a_0,x\rangle+\sum_{j}\langle x_j^*,x_{j+1}-x_j\rangle\bigr)$ over the finite chains in the graph of $A$. The inclusion $0 \in Ax$ is the abstract form of a variational inequality, whose solvability theory follows from the surjectivity theorem above.
 
-**Example (the p-Laplacian).** On $W^{1,p}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong to *Partial Differential Equations*.
+**Example (the p-Laplacian).** On $W^{1,n}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong to *Partial Differential Equations*.
 
 ## Variational Methods
 

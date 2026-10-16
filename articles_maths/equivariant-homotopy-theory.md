@@ -88,7 +88,7 @@ the ordinary homotopy group of the fixed set based at $x$; a $G$-map $f$ induces
 
 ### Equivariant Fibrations
 
-**Definition.** A $G$-map $p : E \to B$ is an **equivariant Hurewicz fibration** (a **$G$-fibration**) when it has the equivariant homotopy lifting property for every $G$-space: for every $G$-map $f : Z \to E$ and every equivariant homotopy $H : Z\times I\to B$ starting at $p\circ f$, there is an equivariant lift $\tilde H : Z\times I\to E$ starting at $f$ and covering $H$. The **$G$-cofibration** is the dual notion with the extension property.
+**Definition.** A $G$-map $p : E \to B$ is an **equivariant Hurewicz fibration** (a **$G$-fibration**) when it has the equivariant homotopy lifting property for every $G$-space: for every $G$-map $f : Z \to E$ and every equivariant homotopy $H : Z\times I\to B$ starting at $p\circ f$, there is an equivariant lift $H^{\mathrm{lift}} : Z\times I\to E$ starting at $f$ and covering $H$. The **$G$-cofibration** is the dual notion with the extension property.
 
 **Theorem.** An equivariant fibration is an ordinary fibration on the underlying spaces and, by restriction, a fibration $E^H\to B^H$ on every fixed set; the $G$-fibrations are stable under pullback and composition, the $G$-cofibrations are stable under pushout and composition, and a $G$-fibration between $G$-CW complexes has a long exact sequence of equivariant homotopy groups
 

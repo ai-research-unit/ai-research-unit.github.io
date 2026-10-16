@@ -76,8 +76,8 @@ or $SU(2)\times U(1)$ if the determinant phase is separated, the two being local
 
 - **Unitaries of the defining module.** $\mathbb B\cong M_2(\mathbb C)$ acts on the defining module $S\cong\mathbb C^2$, and the unitaries of this action are $U(2)$.
 - **Automorphisms.** The $\mathbb C$-algebra automorphisms of $\mathbb B\cong M_2(\mathbb C)$ are $PGL(2,\mathbb C)=PSL(2,\mathbb C)$, whose maximal compact subgroup is $PU(2)=SO(3)=SU(2)/\mathbb Z_2$; over $\mathbb R$ the Galois conjugation of $i$ is an additional outer automorphism, and the compact part remains the same. The automorphism group of the imaginary quaternions is $SO(3)=SU(2)/\mathbb Z_2$.
-- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ act as left and right quaternion multiplication, $SU(2)_L\times SU(2)_R/\mathbb Z_2=SO(4)$; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a gauge group.
-- **Stabilisers.** The stabiliser of a unit pure-imaginary element $\hat u$, which is the unbroken $U(1)$ of the monopole article, is a maximal torus of $SU(2)$; the pattern of unbroken subgroups is the pattern of $SU(2)$, with a one-dimensional maximal torus.
+- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ act as left and right quaternion multiplication, $SU(2)_L\times SU(2)_R/\mathbb Z_2=SO(4)$; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a gauge group.
+- **Stabilisers.** The stabiliser of a unit pure-imaginary element $\vec u$, which is the unbroken $U(1)$ of the monopole article, is a maximal torus of $SU(2)$; the pattern of unbroken subgroups is the pattern of $SU(2)$, with a one-dimensional maximal torus.
 
 Four constructions, one ceiling.
 

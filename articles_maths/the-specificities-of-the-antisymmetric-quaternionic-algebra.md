@@ -8,7 +8,7 @@ $$
 =P_0\vec Q-Q_0\vec P-\vec P\times\vec Q
 $$
 is alternating, vector valued and without a unit, and it fails the Jacobi identity
-(*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*, *The Jacobi Failure
+(*Introduction to the Antisymmetric Quaternionic Algebra*, *The Jacobi Failure
 and the Associator Defect of the Antisymmetric Quaternionic Algebra*). As an element-theoretic
 object the block is poor: every element is a nilpotent, the origin is the only idempotent, there
 is no root of $-1$ or of $+1$, and there is no unit and no inverse. As an **operator-theoretic**
@@ -32,7 +32,7 @@ is realised by the multiplication by a single element, the element being the uni
 algebra, which is not a unit of the block. The criterion is stated as the identity
 $L_{e_0}=P_{\mathrm{Vect}}$, it is proved equivalent to the projector classification
 $L_{\tilde X}^{2}=L_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, and it isolates the block among the
-twelve structures. The model is *The Specificities of the General Plain Algebra*, which states
+twelve structures. The model is *The Specificities of the Biquaternion Algebra*, which states
 left alternativity as its criterion; the twinned articles are *The Specificities of the General
 Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*.
 
@@ -146,7 +146,7 @@ splitting, when it exists, is carried by an idempotent, a family, or not at all.
 
 The criterion of the block is the projector classification of §*The Projector Classification*: the only projectors are the zero operator and the projection onto the vector subspace, the latter at the unit $e_0$, and the splitting of §*The Splitting Realised by One Element* is carried by the multiplication of that one element.
 
-**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
 
 *Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde X=e_0$ reads $\tilde E\star e_0=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_0e_0=0$, none compatible with the value $\vec X$ at a pure $\tilde X$; in APA and AQS the value at $e_0$ vanishes identically and the pure values are the cross products $\vec E\times\vec X$ and $\vec E\times\overline{\vec X}$, which lie in the orthogonal plane of $\vec E$; and in APS the value at $e_0$, which is $\vec E$, forces $\tilde E=E_0e_0$, after which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. Inside the block the element is unique: at $\tilde X=e_0$ the equation gives $-\vec E=0$, so $\vec E=0$, and at a pure $\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
 
@@ -225,14 +225,14 @@ no Peirce calculus.
 | $L_{\tilde X}^{2}=L_{\tilde X}$ | the projector equation; its solutions are $0$ and $e_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the image of $L_{e_0}$ and of the block, a left ideal |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre, the kernel of $L_{e_0}$ |
-| GPA … AQS | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| GPA … AQS | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of left alternativity, the model of the family
+- *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of left alternativity, the model of the family
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the first border case, where the projectors are indexed by the plain idempotents
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the second border case, the hyperplane of rank-one projections onto the centre
-- *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its image, the one-sided action of the unit and the absence of a unit
+- *Introduction to the Antisymmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its image, the one-sided action of the unit and the absence of a unit
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the operators $L_{\tilde A}$, their matrices, their ranks and the elements for which the rank drops
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the form whose radical is the image of the projection
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the twelve operations and their two alternating rows
+- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the twelve operations and their two alternating rows

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A pseudo-Riemannian metric is a smooth field of nondegenerate symmetric bilinear forms of a fixed signature $(p, q)$, positive definite on a $p$-dimensional subspace and negative definite on a complementary $q$-dimensional one at each point. When $q = 0$ this is a Riemannian metric and the geometry of *Riemannian Geometry*; when $p = 1$ and $q = n - 1$, or dually $q = 1$, it is a **Lorentzian** metric, and the pair $(M, g)$ is a Lorentzian manifold. The single change — nondegeneracy in place of positive definiteness — alters the theory in two places and leaves it intact everywhere else. It leaves intact the whole of the connection theory: the nondegeneracy of $g$ is exactly what the Koszul formula needs, so the Levi-Civita connection exists and is unique, the curvature tensor has the same symmetries, and the same Bianchi identities hold. It alters the metric theory, because a nondegenerate form of indefinite signature is not an inner product and defines no distance: the square $g(v, v)$ may be positive, negative or zero for a nonzero $v$, so there are three kinds of tangent vector and three kinds of curve, and the length of a curve may be imaginary or zero.
+A pseudo-Riemannian metric is a smooth field of nondegenerate symmetric bilinear forms of a fixed signature $(n,m)$, positive definite on a $N$-dimensional subspace and negative definite on a complementary $m$-dimensional one at each point. When $m = 0$ this is a Riemannian metric and the geometry of *Riemannian Geometry*; when $n = 1$ and $m = n - 1$, or dually $m = 1$, it is a **Lorentzian** metric, and the pair $(M, g)$ is a Lorentzian manifold. The single change — nondegeneracy in place of positive definiteness — alters the theory in two places and leaves it intact everywhere else. It leaves intact the whole of the connection theory: the nondegeneracy of $g$ is exactly what the Koszul formula needs, so the Levi-Civita connection exists and is unique, the curvature tensor has the same symmetries, and the same Bianchi identities hold. It alters the metric theory, because a nondegenerate form of indefinite signature is not an inner product and defines no distance: the square $g(v, v)$ may be positive, negative or zero for a nonzero $v$, so there are three kinds of tangent vector and three kinds of curve, and the length of a curve may be imaginary or zero.
 
 This article develops the theory of pseudo-Riemannian manifolds with an emphasis on the Lorentzian case, which is the richest and in which the new phenomena are all visible. It defines the signature and proves the invariance of the signature; defines the causal character of vectors and curves, the time-orientability and the causal relations, the cone structure and the model flat space; develops the Levi-Civita connection, geodesics, parallel transport and the exponential map, which carry over without change; treats the vanishing of the distance and the Lorentzian length and distance function that replace it; develops the curvature, in which the sectional curvature of a degenerate plane is undefined and the Ricci and scalar curvatures retain their meaning; classifies the complete simply connected pseudo-Riemannian manifolds of constant curvature into the three families of the flat, the sphere-like and the hyperboloid-like models; treats the quadric model spaces and the Lorentzian space forms; and closes with the isometric embedding theorem for indefinite metrics.
 
@@ -13,19 +13,19 @@ The article is the indefinite analogue of *Riemannian Geometry* and assumes *Smo
 
 ### Metrics of Indefinite Signature
 
-**Definition.** Let $V$ be a real vector space of finite dimension $n$. A symmetric bilinear form $g$ on $V$ is **nondegenerate** if the map $v \mapsto g(v, \cdot\,)$ is an isomorphism $V \to V^*$; its **signature** is the pair $(p, q)$ where $p$ is the dimension of a maximal subspace on which $g$ is positive definite and $q$ that of a maximal subspace on which it is negative definite. **Sylvester's law of inertia** states that $p$ and $q$ are well defined, depend only on $g$, and satisfy $p + q = n$ when $g$ is nondegenerate; the form is an inner product exactly when $q = 0$ or $p = 0$.
+**Definition.** Let $V$ be a real vector space of finite dimension $N$. A symmetric bilinear form $g$ on $V$ is **nondegenerate** if the map $v \mapsto g(v, \cdot\,)$ is an isomorphism $V \to V^*$; its **signature** is the pair $(n,m)$ where $n$ is the dimension of a maximal subspace on which $g$ is positive definite and $m$ that of a maximal subspace on which it is negative definite. **Sylvester's law of inertia** states that $n$ and $m$ are well defined, depend only on $g$, and satisfy $n+m=N$ when $g$ is nondegenerate; the form is an inner product exactly when $m = 0$ or $n = 0$.
 
-**Definition.** A **pseudo-Riemannian metric** of signature $(p, q)$ on a smooth manifold $M$ is a smooth section $g$ of $S^2T^*M$ such that $g_p$ is nondegenerate of signature $(p, q)$ at every $p$. A **pseudo-Riemannian manifold** is a pair $(M, g)$; it is **Lorentzian** if the signature is $(1, n-1)$ or, by the sign convention that does not change the geometry, $(n-1, 1)$. This article writes $g$ with signature $(p, q)$ and states the signature each time, and writes $\eta_{p,q}$ for the flat model below.
+**Definition.** A **pseudo-Riemannian metric** of signature $(n,m)$ on a smooth manifold $M$ is a smooth section $g$ of $S^2T^*M$ such that $g_n$ is nondegenerate of signature $(n,m)$ at every $n$. A **pseudo-Riemannian manifold** is a pair $(M, g)$; it is **Lorentzian** if the signature is $(1, n-1)$ or, by the sign convention that does not change the geometry, $(n-1, 1)$. This article writes $g$ with signature $(n,m)$ and states the signature each time, and writes $\eta_{n,m}$ for the flat model below.
 
 **Remark.** Positive definiteness and nondegeneracy are different conditions. The form $dx^2 - dy^2$ on $\mathbb{R}^2$ is nondegenerate of signature $(1,1)$ but vanishes on the two diagonal lines, so it is not an inner product and no norm is defined from it. The form $dx^2$ on $\mathbb{R}^2$ is positive semidefinite and degenerate; degeneracy is a separate failure, and it is the one that destroys the Koszul formula. A pseudo-Riemannian metric has neither failure.
 
-**Theorem.** A smooth manifold carries a pseudo-Riemannian metric of signature $(p, q)$ if and only if its tangent bundle admits a subbundle of rank $p$ on which a Riemannian metric exists, equivalently if and only if the structure group of $TM$ reduces to $O(p, q)$. In the Lorentzian case, a closed connected manifold carries a Lorentzian metric if and only if its Euler characteristic vanishes.
+**Theorem.** A smooth manifold carries a pseudo-Riemannian metric of signature $(n,m)$ if and only if its tangent bundle admits a subbundle of rank $n$ on which a Riemannian metric exists, equivalently if and only if the structure group of $TM$ reduces to $O(n,m)$. In the Lorentzian case, a closed connected manifold carries a Lorentzian metric if and only if its Euler characteristic vanishes.
 
 **Proof sketch.** Given such a subbundle, choose a Riemannian metric $h$ and put $g = h|_{E} \oplus (-h)|_{E^\perp}$ on the decomposition $TM = E \oplus E^\perp$; the converse is the definition. For the Lorentzian statement, a Lorentzian metric produces a timelike, hence nowhere-zero, vector field, and a closed manifold admits a nowhere-zero vector field exactly when its Euler characteristic vanishes, by the Poincaré–Hopf theorem; conversely a nowhere-zero vector field $X$ gives the splitting $TM = \mathbb{R}X \oplus X^\perp$ and one defines $g = -h|_{X} \oplus h|_{X^\perp}$ for a Riemannian $h$. The Poincaré–Hopf theorem is a consequence of the degree theory of *Differential Topology*, applied to the zero set of a generic vector field.
 
 ### Causal Character of Vectors and Curves
 
-**Definition.** Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is **spacelike** if $g(v, v) > 0$, **timelike** if $g(v, v) < 0$, and **null** (or **lightlike**) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the **null cone** (or **light cone**); it is a cone, and it is the zero set of the quadratic form $q(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $p$ form two open convex cones, and $p$ is **time-orientable** at $p$ if one of them is designated the future.
+**Definition.** Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is **spacelike** if $g(v, v) > 0$, **timelike** if $g(v, v) < 0$, and **null** (or **lightlike**) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the **null cone** (or **light cone**); it is a cone, and it is the zero set of the quadratic form $\mathfrak{Q}(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $n$ form two open convex cones, and $n$ is **time-orientable** at $n$ if one of them is designated the future.
 
 **Definition.** A nonzero vector field $X$ on a Lorentzian manifold $(M, g)$ is **timelike** if $g(X, X) < 0$ everywhere; the manifold is **time-orientable** if it admits a timelike vector field, and a **time orientation** is the choice of such a field up to multiplication by a positive function. A curve $\gamma$ is **timelike**, **null** or **spacelike** according to the character of its velocity $\gamma'(t)$, and it is **causal** if it is timelike or null everywhere.
 
@@ -35,13 +35,13 @@ The article is the indefinite analogue of *Riemannian Geometry* and assumes *Smo
 
 ### The Flat Model
 
-**Definition.** The **flat pseudo-Riemannian space** of signature $(p, q)$ is $\mathbb{R}^{p,q} = (\mathbb{R}^{p+q}, \eta_{p,q})$ with
+**Definition.** The **flat pseudo-Riemannian space** of signature $(n,m)$ is $\mathbb{R}^{n,m} = (\mathbb{R}^{n+m}, \eta_{n,m})$ with
 
 $$
-\eta_{p,q} = \sum_{i=1}^{p} dx_i^2 - \sum_{j=1}^{q} dy_j^2 ,
+\eta_{n,m} = \sum_{i=1}^{n} dx_i^2 - \sum_{j=1}^{m} dy_j^2 ,
 $$
 
-the standard form of signature $(p, q)$; its isometry group is the pseudo-orthogonal group $O(p, q)$, which acts transitively, and the model is the flat simply connected pseudo-Riemannian manifold of that signature.
+the standard form of signature $(n,m)$; its isometry group is the pseudo-orthogonal group $O(n,m)$, which acts transitively, and the model is the flat simply connected pseudo-Riemannian manifold of that signature.
 
 **Example (the Minkowski plane).** In signature $(1,1)$ the null cone at the origin consists of the two lines $x = \pm y$; there are two timelike cones, given by $|x| > |y|$ with $x > 0$ and with $x < 0$, and the form takes opposite signs on them. In the plane the causal structure is a partial order after a time orientation is chosen: $(t_1, x_1) \leq (t_2, x_2)$ if $t_2 - t_1 \geq |x_2 - x_1|$.
 
@@ -54,10 +54,10 @@ $$
 and the **Lorentzian distance** is
 
 $$
-d_g(p, q) = \sup\{ L_g(\gamma) : \gamma \text{ causal from } p \text{ to } q \},
+d_g(n,m) = \sup\{ L_g(\gamma) : \gamma \text{ causal from } n \text{ to } m \},
 $$
 
-with value $0$ if no causal curve joins the two points. It is not a metric: it is not symmetric, it satisfies a reverse triangle inequality $d_g(p, r) \geq d_g(p, q) + d_g(q, r)$ along causal chains, and it vanishes on many pairs of distinct points.
+with value $0$ if no causal curve joins the two points. It is not a metric: it is not symmetric, it satisfies a reverse triangle inequality $d_g(n, r) \geq d_g(n,m) + d_g(m, r)$ along causal chains, and it vanishes on many pairs of distinct points.
 
 ## The Levi-Civita Connection in the Indefinite Case
 
@@ -113,19 +113,19 @@ for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sig
 
 ### The Causal Relations
 
-**Definition.** Let $(M, g)$ be a time-oriented Lorentzian manifold and $p, q \in M$. Then $p$ **causally precedes** $q$, written $p \preceq q$, if there is a causal curve from $p$ to $q$; $p$ **chronologically precedes** $q$, written $p \ll q$, if there is a timelike curve from $p$ to $q$; and $p$ and $q$ are **causally related** if one precedes the other. The relation $\preceq$ is reflexive and transitive; it is a partial order when the manifold contains no closed causal curve, in which case the manifold is **causal**.
+**Definition.** Let $(M, g)$ be a time-oriented Lorentzian manifold and $n, m \in M$. Then $n$ **causally precedes** $m$, written $n \preceq m$, if there is a causal curve from $n$ to $m$; $n$ **chronologically precedes** $m$, written $n \ll m$, if there is a timelike curve from $n$ to $m$; and $n$ and $m$ are **causally related** if one precedes the other. The relation $\preceq$ is reflexive and transitive; it is a partial order when the manifold contains no closed causal curve, in which case the manifold is **causal**.
 
-**Definition.** The **chronological future** of $p$ is $I^+(p) = \{q : p \ll q\}$ and the **causal future** is $J^+(p) = \{q : p \preceq q\}$; the corresponding pasts are $I^-(p)$ and $J^-(p)$. The futures are open and the causal futures are closed when the metric is sufficiently regular; a **Cauchy surface** is a closed acausal set met exactly once by every inextendible causal curve.
+**Definition.** The **chronological future** of $n$ is $I^+(n) = \{m : n \ll m\}$ and the **causal future** is $J^+(n) = \{m : n \preceq m\}$; the corresponding pasts are $I^-(n)$ and $J^-(n)$. The futures are open and the causal futures are closed when the metric is sufficiently regular; a **Cauchy surface** is a closed acausal set met exactly once by every inextendible causal curve.
 
-**Definition.** A Lorentzian manifold is **globally hyperbolic** if it admits a Cauchy surface, equivalently if it is causal and the sets $J^+(p) \cap J^-(q)$ are compact for all $p, q$. A globally hyperbolic manifold is isometric to a product $\mathbb{R} \times \Sigma$ with a metric of the form $-N^2dt^2 + g_t$ on the slices, where $N$ and $g_t$ vary with $t$; this is the splitting theorem, and its proof uses the limit arguments and the differential equations of Part III.
+**Definition.** A Lorentzian manifold is **globally hyperbolic** if it admits a Cauchy surface, equivalently if it is causal and the sets $J^+(n) \cap J^-(m)$ are compact for all $n, m$. A globally hyperbolic manifold is isometric to a product $\mathbb{R} \times \Sigma$ with a metric of the form $-N^2dt^2 + g_t$ on the slices, where $N$ and $g_t$ vary with $t$; this is the splitting theorem, and its proof uses the limit arguments and the differential equations of Part III.
 
-**Example (the flat case).** In $\mathbb{R}^{1,n-1}$ the causal future of a point is the closed solid cone with apex at the point, the chronological future is its interior, the set $J^+(p) \cap J^-(q)$ is compact when $p \ll q$, and every spacelike hyperplane $t = \mathrm{const}$ is a Cauchy surface; the flat space is globally hyperbolic. In a flat torus obtained from $\mathbb{R}^{1,1}$ by a translation, there are closed timelike curves, and the space is not causal.
+**Example (the flat case).** In $\mathbb{R}^{1,n-1}$ the causal future of a point is the closed solid cone with apex at the point, the chronological future is its interior, the set $J^+(n) \cap J^-(m)$ is compact when $n \ll m$, and every spacelike hyperplane $t = \mathrm{const}$ is a Cauchy surface; the flat space is globally hyperbolic. In a flat torus obtained from $\mathbb{R}^{1,1}$ by a translation, there are closed timelike curves, and the space is not causal.
 
 ### The Metric Cone and the Absence of a Distance
 
-**Remark (why the distance fails).** A nondegenerate indefinite form is not the square of a norm, and the triangle inequality fails for the Lorentzian length. The Lorentzian distance $d_g$ is not symmetric, $d_g(p, q) \neq d_g(q, p)$ in general, it takes the value $0$ on causally unrelated pairs and on pairs joined only by null curves, and it satisfies the reverse triangle inequality on causal chains. It is a **time separation** rather than a metric, and the topology of a Lorentzian manifold is not recovered from it: two points on a null geodesic at positive separation have Lorentzian distance zero, so they cannot be separated by the function. The Riemannian distance function is replaced by the causal relations, and the topology is recovered instead from the chronological futures $I^\pm(p)$, which form a base for the manifold topology.
+**Remark (why the distance fails).** A nondegenerate indefinite form is not the square of a norm, and the triangle inequality fails for the Lorentzian length. The Lorentzian distance $d_g$ is not symmetric, $d_g(n,m) \neq d_g(m,n)$ in general, it takes the value $0$ on causally unrelated pairs and on pairs joined only by null curves, and it satisfies the reverse triangle inequality on causal chains. It is a **time separation** rather than a metric, and the topology of a Lorentzian manifold is not recovered from it: two points on a null geodesic at positive separation have Lorentzian distance zero, so they cannot be separated by the function. The Riemannian distance function is replaced by the causal relations, and the topology is recovered instead from the chronological futures $I^\pm(n)$, which form a base for the manifold topology.
 
-**Proposition.** The sets $I^+(p)$ and $I^-(p)$ are open, and the map $p \mapsto I^+(p)$ is a homeomorphism onto its image in the hyperspace of open sets; consequently the causal structure determines the topology of a Lorentzian manifold.
+**Proposition.** The sets $I^+(n)$ and $I^-(n)$ are open, and the map $n \mapsto I^+(n)$ is a homeomorphism onto its image in the hyperspace of open sets; consequently the causal structure determines the topology of a Lorentzian manifold.
 
 **Proof sketch.** The chronological future is open because the timelike condition is open and the flow of a timelike field moves backwards in time; the second statement follows by taking the intersections of the futures with a small sphere and identifying the point as the unique one whose future has the given germ.
 
@@ -135,23 +135,23 @@ for a basis $v, w$ of $\sigma$; the number is independent of the basis. If $\sig
 
 **Definition.** A pseudo-Riemannian manifold is a **space form** of curvature $k$ if it is complete, simply connected and of constant sectional curvature $k$ on every nondegenerate two-plane.
 
-**Theorem (classification).** For a fixed signature $(p, q)$ with $p + q = n \geq 2$ and a real number $k$, the complete simply connected pseudo-Riemannian manifolds of signature $(p, q)$ and constant sectional curvature $k$ are, up to isometry and scaling, exactly the following:
+**Theorem (classification).** For a fixed signature $(n,m)$ with $n+m=N\geq 2$ and a real number $k$, the complete simply connected pseudo-Riemannian manifolds of signature $(n,m)$ and constant sectional curvature $k$ are, up to isometry and scaling, exactly the following:
 
-**(a)** $k = 0$: the flat space $\mathbb{R}^{p,q}$;
+**(a)** $k = 0$: the flat space $\mathbb{R}^{n,m}$;
 
-**(b)** $k > 0$: the pseudo-sphere $S^{p,q}$ of curvature $k$, the quadric of unit spacelike vectors in $\mathbb{R}^{p+1,q}$ with the induced metric;
+**(b)** $k > 0$: the pseudo-sphere $S^{n,m}$ of curvature $k$, the quadric of unit spacelike vectors in $\mathbb{R}^{n+1,m}$ with the induced metric;
 
-**(c)** $k < 0$: the pseudo-hyperboloid $H^{p,q}$ of curvature $k$, the quadric of unit timelike vectors in $\mathbb{R}^{p,q+1}$ with the induced metric.
+**(c)** $k < 0$: the pseudo-hyperboloid $H^{n,m}$ of curvature $k$, the quadric of unit timelike vectors in $\mathbb{R}^{n,m+1}$ with the induced metric.
 
-In each case the isometry group is the orthogonal group of the ambient form — $O(p+1, q)$ for the pseudo-sphere and $O(p, q+1)$ for the pseudo-hyperboloid — or a subgroup of it, acting transitively, and the manifold is a homogeneous space.
+In each case the isometry group is the orthogonal group of the ambient form — $O(p+1, q)$ for the pseudo-sphere and $O(n, m+1)$ for the pseudo-hyperboloid — or a subgroup of it, acting transitively, and the manifold is a homogeneous space.
 
-**Proof sketch.** The quadrics are nondegenerate because the normal vector is non-null at every point of the quadric, so the induced metric is nondegenerate; the orthogonal group of the ambient form acts transitively by isometries, and the stabiliser of a point is $O(p, q)$, giving a homogeneous space. The curvature is computed from the second fundamental form and the Gauss equation, and it is the constant $k$; conversely, Cartan's theorem for indefinite metrics, proved as in the Riemannian case, identifies a complete simply connected constant-curvature manifold with the model.
+**Proof sketch.** The quadrics are nondegenerate because the normal vector is non-null at every point of the quadric, so the induced metric is nondegenerate; the orthogonal group of the ambient form acts transitively by isometries, and the stabiliser of a point is $O(n,m)$, giving a homogeneous space. The curvature is computed from the second fundamental form and the Gauss equation, and it is the constant $k$; conversely, Cartan's theorem for indefinite metrics, proved as in the Riemannian case, identifies a complete simply connected constant-curvature manifold with the model.
 
 | Family | Model | Ambient form | Isometry group | Stabiliser |
 |---|---|---|---|---|
-| Flat | $\mathbb{R}^{p,q}$ | $\eta_{p,q}$ | $\mathbb{R}^{p,q} \rtimes O(p,q)$ | $O(p,q)$ |
-| Sphere-like | $S^{p,q}$ | $\eta_{p+1,q}$ | $O(p+1,q)$ | $O(p,q)$ |
-| Hyperboloid-like | $H^{p,q}$ | $\eta_{p,q+1}$ | $O(p,q+1)$ | $O(p,q)$ |
+| Flat | $\mathbb{R}^{n,m}$ | $\eta_{n,m}$ | $\mathbb{R}^{n,m} \rtimes O(n,m)$ | $O(n,m)$ |
+| Sphere-like | $S^{n,m}$ | $\eta_{n+1,m}$ | $O(p+1,q)$ | $O(n,m)$ |
+| Hyperboloid-like | $H^{n,m}$ | $\eta_{n,m+1}$ | $O(n,m+1)$ | $O(n,m)$ |
 
 ### The Lorentzian Space Forms
 
@@ -159,11 +159,11 @@ In each case the isometry group is the orthogonal group of the ambient form — 
 
 **Example (the two-dimensional Lorentzian space forms).** In signature $(1,1)$ the sphere-like model $S^{1,1}$ is the quadric $\langle x, x\rangle = 1$ of unit spacelike vectors in $\mathbb{R}^{2,1}$, a one-sheeted hyperboloid of revolution with the induced Lorentzian metric of constant positive curvature; the hyperboloid-like model $H^{1,1}$ is the quadric $\langle x, x\rangle = -1$ of unit timelike vectors in $\mathbb{R}^{1,2}$, a one-sheeted hyperboloid of revolution with the induced Lorentzian metric of constant negative curvature. Each is homogeneous under the appropriate pseudo-orthogonal group — $O(2,1)$ for the first and $O(1,2)$ for the second — and each is the Lorentzian analogue of the round sphere and of the hyperbolic plane.
 
-**Remark (the anti-isometry and the sign conventions).** The signature $(p, q)$ and the signature $(q, p)$ describe the same geometry with the overall sign of $g$ reversed, since $-g$ has the same connection, the same geodesics and the curvature tensor of $-R$; the pair $(K, S)$ changes sign while the causal cones are exchanged. The corpus fixes the Lorentzian signature to be $(1, n-1)$ and states it at each use.
+**Remark (the anti-isometry and the sign conventions).** The signature $(n,m)$ and the signature $(m,n)$ describe the same geometry with the overall sign of $g$ reversed, since $-g$ has the same connection, the same geodesics and the curvature tensor of $-R$; the pair $(K, S)$ changes sign while the causal cones are exchanged. The corpus fixes the Lorentzian signature to be $(1, n-1)$ and states it at each use.
 
 ## The Isometric Embedding Theorem
 
-**Theorem (Nash, indefinite case).** Every pseudo-Riemannian manifold of signature $(p, q)$ and dimension $n$ admits an isometric embedding into the flat pseudo-Riemannian space $\mathbb{R}^{p', q'}$ for some $p' \geq p$, $q' \geq q$ with $p' + q'$ finite, and the embedding may be taken proper; consequently every pseudo-Riemannian metric is the pullback of a flat metric along an embedding.
+**Theorem (Nash, indefinite case).** Every pseudo-Riemannian manifold of signature $(n,m)$ and dimension $N$ admits an isometric embedding into the flat pseudo-Riemannian space $\mathbb{R}^{n', m'}$ for some $n' \geq n$, $m' \geq m$ with $n' + m'$ finite, and the embedding may be taken proper; consequently every pseudo-Riemannian metric is the pullback of a flat metric along an embedding.
 
 **Proof sketch.** The proof follows the Nash iteration for Riemannian embeddings, with the metric replaced by its nondegenerate indefinite version; the crucial point is that the formal solution of the isometric embedding equation has a solution depending on the same data, and the quadratic correction step uses the fact that the flat space has enough dimensions to absorb the error. The iteration is an analytic construction using the implicit function theorem and the convergence of a sequence, and it belongs to Part III; the theorem is quoted here as standard.
 
@@ -171,36 +171,36 @@ In each case the isometry group is the orthogonal group of the ambient form — 
 
 ## Summary
 
-A pseudo-Riemannian metric is a smooth field of nondegenerate symmetric bilinear forms of fixed signature $(p, q)$; the signature is invariant by Sylvester's law of inertia, and a Lorentzian metric is one of signature $(1, n-1)$. Nondegeneracy in place of positive definiteness is enough for the entire connection theory: the Levi-Civita connection exists and is unique by the Koszul formula, parallel transport is an isometry, geodesics and the exponential map are defined by the same equations, normal coordinates have the same form, and the curvature tensor satisfies the same symmetries and Bianchi identities.
+A pseudo-Riemannian metric is a smooth field of nondegenerate symmetric bilinear forms of fixed signature $(n,m)$; the signature is invariant by Sylvester's law of inertia, and a Lorentzian metric is one of signature $(1, n-1)$. Nondegeneracy in place of positive definiteness is enough for the entire connection theory: the Levi-Civita connection exists and is unique by the Koszul formula, parallel transport is an isometry, geodesics and the exponential map are defined by the same equations, normal coordinates have the same form, and the curvature tensor satisfies the same symmetries and Bianchi identities.
 
 The indefinite metric defines no norm, hence no distance. A nonzero tangent vector is spacelike, timelike or null according to the sign of $g(v, v)$; the null vectors form the light cone; the causal relations $\preceq$ and $\ll$ replace the metric as the structure of the space, and they determine the topology, though not through a distance function. A time-oriented Lorentzian manifold is causal when it contains no closed causal curve, and globally hyperbolic when it has a Cauchy surface; a globally hyperbolic manifold splits as a product with a lapse function. The Lorentzian length is the integral of the square root of the absolute value of $g(\gamma', \gamma')$, and the Lorentzian distance is a supremum over causal curves, with a reverse triangle inequality and many vanishing values.
 
-The sectional curvature is defined only on nondegenerate two-planes, so it no longer determines the curvature tensor and it is unbounded near the null cone; the Ricci and scalar curvatures retain their meaning as traces, and the Einstein tensor satisfies the contracted Bianchi identity. The complete simply connected pseudo-Riemannian manifolds of constant curvature fall into three families — the flat space $\mathbb{R}^{p,q}$, the pseudo-sphere $S^{p,q}$ and the pseudo-hyperboloid $H^{p,q}$ — each homogeneous under a pseudo-orthogonal group; in Lorentzian signature they are the flat space, the Lorentzian sphere and the Lorentzian hyperboloid. Finally, every pseudo-Riemannian manifold embeds isometrically into a flat pseudo-Riemannian space by the indefinite Nash theorem, which places the metric theory of every signature on the same footing as the Riemannian case.
+The sectional curvature is defined only on nondegenerate two-planes, so it no longer determines the curvature tensor and it is unbounded near the null cone; the Ricci and scalar curvatures retain their meaning as traces, and the Einstein tensor satisfies the contracted Bianchi identity. The complete simply connected pseudo-Riemannian manifolds of constant curvature fall into three families — the flat space $\mathbb{R}^{n,m}$, the pseudo-sphere $S^{n,m}$ and the pseudo-hyperboloid $H^{n,m}$ — each homogeneous under a pseudo-orthogonal group; in Lorentzian signature they are the flat space, the Lorentzian sphere and the Lorentzian hyperboloid. Finally, every pseudo-Riemannian manifold embeds isometrically into a flat pseudo-Riemannian space by the indefinite Nash theorem, which places the metric theory of every signature on the same footing as the Riemannian case.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $(p, q)$ | Signature of a nondegenerate symmetric bilinear form; $p$ positive, $q$ negative directions |
-| $g$ (signature $(p,q)$) | Pseudo-Riemannian metric; the signature is stated at each use |
-| $\eta_{p,q} = \sum_{i=1}^p dx_i^2 - \sum_{j=1}^q dy_j^2$ | Flat metric of signature $(p,q)$ |
-| $\mathbb{R}^{p,q}$ | Flat pseudo-Riemannian space $(\mathbb{R}^{p+q}, \eta_{p,q})$ |
+| $(n,m)$ | Signature of a nondegenerate symmetric bilinear form; $n$ positive, $m$ negative directions |
+| $g$ (signature $(n,m)$) | Pseudo-Riemannian metric; the signature is stated at each use |
+| $\eta_{n,m} = \sum_{i=1}^n dx_i^2 - \sum_{j=1}^m dy_j^2$ | Flat metric of signature $(n,m)$ |
+| $\mathbb{R}^{n,m}$ | Flat pseudo-Riemannian space $(\mathbb{R}^{n+m}, \eta_{n,m})$ |
 | Spacelike, timelike, null | $g(v,v) > 0$, $< 0$, $= 0$ for $v \neq 0$ |
 | Null cone, light cone | $\{v : g(v,v) = 0\}$ in a tangent space |
 | Time-orientable | Admits a timelike vector field; the choice is a time orientation |
-| $p \preceq q$, $p \ll q$ | Causal and chronological precedence |
-| $I^\pm(p)$, $J^\pm(p)$ | Chronological and causal future and past |
+| $n \preceq m$, $n \ll m$ | Causal and chronological precedence |
+| $I^\pm(n)$, $J^\pm(n)$ | Chronological and causal future and past |
 | Causality, global hyperbolicity | No closed causal curve; existence of a Cauchy surface |
 | Cauchy surface | Closed acausal set met once by every inextendible causal curve |
 | $L_g(\gamma) = \int\sqrt{|g(\gamma',\gamma')|}\,dt$ | Lorentzian length of a causal curve |
-| $d_g(p,q) = \sup_\gamma L_g(\gamma)$ | Lorentzian distance; not a metric, reverse triangle inequality |
+| $d_g(n,m) = \sup_\gamma L_g(\gamma)$ | Lorentzian distance; not a metric, reverse triangle inequality |
 | $\nabla$, $\Gamma^k_{ij}$, $\theta^i_{\ j}$, $\mathcal{R}$ | Levi-Civita connection, Christoffel symbols, connection form, curvature $2$-form |
 | $R(X,Y,Z,W)$ | Curvature tensor with the standard symmetries and Bianchi identities |
 | $K(\sigma)$ | Sectional curvature of a nondegenerate two-plane $\sigma$; undefined on degenerate planes |
 | $\operatorname{Ric}$, $S$, $G = \operatorname{Ric}-\frac12Sg$ | Ricci tensor, scalar curvature, Einstein tensor |
 | $\operatorname{Isom}(M,g)$, Killing field | Isometry group and its Lie algebra of Killing fields |
-| $S^{p,q}$, $H^{p,q}$ | Sphere-like and hyperboloid-like quadrics of constant curvature |
-| $O(p,q)$ | Pseudo-orthogonal group of $\eta_{p,q}$; the isometry group of $\mathbb{R}^{p,q}$ is $\mathbb{R}^{p,q}\rtimes O(p,q)$ |
+| $S^{n,m}$, $H^{n,m}$ | Sphere-like and hyperboloid-like quadrics of constant curvature |
+| $O(n,m)$ | Pseudo-orthogonal group of $\eta_{n,m}$; the isometry group of $\mathbb{R}^{n,m}$ is $\mathbb{R}^{n,m}\rtimes O(n,m)$ |
 | Nash embedding | Every pseudo-Riemannian manifold embeds isometrically in a flat one |
 
 

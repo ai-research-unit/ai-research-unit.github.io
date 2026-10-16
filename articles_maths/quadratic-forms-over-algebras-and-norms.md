@@ -14,32 +14,32 @@ This article develops quadratic forms with values in an algebra, the projective 
 Let $F$ be a field of characteristic not $2$, and let $A$ be a commutative $F$-algebra. A **quadratic form with values in $A$** on an $F$-space $V$ is a function $Q : V \to A$ such that
 
 $$
-Q(\lambda x) = \lambda^2 Q(x), \qquad Q(x + y) - Q(x) - Q(y) = \text{a symmetric bilinear form in } x, y,
+\mathfrak{Q}(\lambda x) = \lambda^2 \mathfrak{Q}(x), \qquad \mathfrak{Q}(x + y) - \mathfrak{Q}(x) - \mathfrak{Q}(y) = \text{a symmetric bilinear form in } x, y,
 $$
 
 the second condition expressed by saying that the **polar form**
 
 $$
-B_Q(x, y) = \tfrac{1}{2}\bigl(Q(x + y) - Q(x) - Q(y)\bigr)
+B_Q(x, y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x + y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr)
 $$
 
 is $A$-valued and bilinear. This is the definition of *Quadratic Forms and Polarisation* with $A$ in place of the field, and every formal identity carries over because the only operations used are addition, multiplication by scalars and halving.
 
-**Definition.** The $A$-valued form $Q$ is **non-degenerate** if the induced map $V \to \operatorname{Hom}_F(V, A)$, $x \mapsto B_Q(x, -)$, is injective, and **strongly non-degenerate** if it is an isomorphism.
+**Definition.** The $A$-valued form $\mathfrak{Q}$ is **non-degenerate** if the induced map $V \to \operatorname{Hom}_F(V, A)$, $x \mapsto B_Q(x, -)$, is injective, and **strongly non-degenerate** if it is an isomorphism.
 
 Strong non-degeneracy is unavailable for $\dim_F A > 1$: the target $\operatorname{Hom}_F(V, A)$ has $F$-dimension $(\dim_F V)(\dim_F A)$, so no map $V \to \operatorname{Hom}_F(V, A)$ with $\dim_F A > 1$ is an isomorphism, and the two conditions agree only for $\dim_F A = 1$. The notion the applications require is non-degeneracy after extension of scalars: $Q$ is **non-degenerate over $A$** when $x \mapsto B_Q(x, -)$ has trivial kernel and the $A$-bilinear form $B_Q \otimes_F A$ on $V \otimes_F A$ is non-degenerate in the sense of *Bilinear Forms*. For the norms of *Hermitian Forms over Algebras and Norms* the polar form is $B_N(x, y) = \tfrac{1}{2}\operatorname{Trd}(x y^{\natural})$, so the condition is the non-degeneracy of the reduced trace pairing. The zeros of a norm carry the multiplicative structure: $N(x) = 0$ for some $x \neq 0$ exactly when $x$ is a zero divisor, so that for a composition algebra the norm is isotropic exactly when the algebra is not a division algebra.
 
 ### The Quadric
 
-Assume $F$ is a field and $A$ is finite-dimensional over $F$, of dimension $m$ as an $F$-space, with a basis $\alpha_1, \ldots, \alpha_m$. Writing $Q(x) = \sum_k Q_k(x)\alpha_k$ expresses $Q$ by $m$ scalar-valued quadratic forms $Q_k$ on $V$. The **quadric** of $Q$ is the projective variety
+Assume $F$ is a field and $A$ is finite-dimensional over $F$, of dimension $m$ as an $F$-space, with a basis $\alpha_1, \ldots, \alpha_m$. Writing $\mathfrak{Q}(x) = \sum_k Q_k(x)\alpha_k$ expresses $Q$ by $m$ scalar-valued quadratic forms $Q_k$ on $V$. The **quadric** of $Q$ is the projective variety
 
 $$
-\mathcal{Q}(Q) = \{[x] \in \mathbb{P}(V) : Q(x) = 0\},
+\mathcal{Q}(Q) = \{[x] \in \mathbb{P}(V) : \mathfrak{Q}(x) = 0\},
 $$
 
-the common zero set of the $m$ scalar forms $Q_k$, whose dimension over an algebraically closed field is determined by the codimension of the vanishing locus. Over an algebraically closed field $Q(x) = 0$ alone defines a hypersurface when $m = 1$; for larger $m$ the quadric is the intersection of the $m$ hypersurfaces and can be of substantial codimension.
+the common zero set of the $m$ scalar forms $Q_k$, whose dimension over an algebraically closed field is determined by the codimension of the vanishing locus. Over an algebraically closed field $\mathfrak{Q}(x) = 0$ alone defines a hypersurface when $m = 1$; for larger $m$ the quadric is the intersection of the $m$ hypersurfaces and can be of substantial codimension.
 
-**Example.** For $A = \mathbb{C}$ and $Q(z) = z^2$ on $V = \mathbb{C}$ viewed as an $\mathbb{R}$-space, the real and imaginary parts are $\operatorname{Re} z^2 = x^2 - y^2$ and $\operatorname{Im} z^2 = 2xy$; their only common zero is $z = 0$, so the common zero set in $V$ is $\{0\}$ and the quadric $\mathcal{Q}(Q) \subseteq \mathbb{P}^1$ is empty.
+**Example.** For $A = \mathbb{C}$ and $\mathfrak{Q}(z) = z^2$ on $V = \mathbb{C}$ viewed as an $\mathbb{R}$-space, the real and imaginary parts are $\operatorname{Re} z^2 = x^2 - y^2$ and $\operatorname{Im} z^2 = 2xy$; their only common zero is $z = 0$, so the common zero set in $V$ is $\{0\}$ and the quadric $\mathcal{Q}(Q) \subseteq \mathbb{P}^1$ is empty.
 
 ### Restriction of Scalars
 
@@ -110,10 +110,10 @@ Over $\mathbb{R}$ the norm $x_0^2 + x_1^2 + x_2^2 + x_3^2$ is anisotropic and it
 Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_0, e_1, e_2, e_3$ over $\mathbb{C}$, the conventions. The **norm** is
 
 $$
-N(\tilde Q) = \tilde Q \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
+\langle\tilde Q\rangle_{\natural} = \tilde Q \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
 $$
 
-a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\tilde Q)N(\tilde R)$.
+a $\mathbb{C}$-valued form that is multiplicative, $\langle\tilde Q \tilde R\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}\langle\tilde R\rangle_{\natural}$.
 
 **Proposition.** The norm of $\mathbb{B}$ is the reduced norm of the central simple algebra $\mathbb{B}$ of degree $2$; equivalently, under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ it is the determinant.
 
@@ -125,7 +125,7 @@ a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\ti
 
 **Proof.** An element of a finite-dimensional algebra over a field is invertible if and only if its reduced norm is nonzero, as in *Hermitian Forms over Algebras and Norms*; the reduced norm here is the determinant, which vanishes exactly on the singular matrices. A nonzero singular $2 \times 2$ matrix has rank one.
 
-**Remark.** The split nature of $\mathbb{B}$ is visible in the norm: writing $\tilde Q = P + iQ$ with $P, Q$ in the real quaternion subspace, one has $N(\tilde Q) = N(P) - N(Q) + 2i\,B_N(P, Q)$ with $B_N$ the polar form of the real quaternion norm, and a positive and a negative contribution both occur, so the form is indefinite. The split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, in which the central unit has square $+1$, behave differently: their norm $\sum_\mu Q_\mu^2$ with $Q_\mu \in \mathbb{D}$ has positive definite real part and is anisotropic, so it does not detect the zero divisors; those are detected instead by the vanishing of an idempotent component.
+**Remark.** The split nature of $\mathbb{B}$ is visible in the norm: writing $\tilde Q = P + iQ$ with $P, Q$ in the real quaternion subspace, one has $\langle\tilde Q\rangle_{\natural} = N(P) - N(Q) + 2i\,B_N(P, Q)$ with $B_N$ the polar form of the real quaternion norm, and a positive and a negative contribution both occur, so the form is indefinite. The split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, in which the central unit has square $+1$, behave differently: their norm $\sum_\mu Q_\mu^2$ with $Q_\mu \in \mathbb{D}$ has positive definite real part and is anisotropic, so it does not detect the zero divisors; those are detected instead by the vanishing of an idempotent component.
 
 ## The Cayley–Dickson Doubling
 
@@ -288,7 +288,7 @@ where $z = (x_1 + x_2e_1 + x_3e_2 + x_4e_3)(y_1 + y_2e_1 + y_3e_2 + y_4e_3)$ is 
 
 ## Summary
 
-A **quadratic form with values in a commutative algebra** $A$ is a function $Q : V \to A$ that is homogeneous of degree two and whose polar form $B_Q(x, y) = \tfrac{1}{2}(Q(x+y) - Q(x) - Q(y))$ is $A$-bilinear. Expanding in a basis of $A$ produces scalar forms whose common zero locus is the **quadric** $\mathcal{Q}(Q) \subseteq \mathbb{P}(V)$.
+A **quadratic form with values in a commutative algebra** $A$ is a function $Q : V \to A$ that is homogeneous of degree two and whose polar form $B_Q(x, y) = \tfrac{1}{2}(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y))$ is $A$-bilinear. Expanding in a basis of $A$ produces scalar forms whose common zero locus is the **quadric** $\mathcal{Q}(Q) \subseteq \mathbb{P}(V)$.
 
 The **norm** $N(x) = x x^{\natural}$ of an algebra with involution is the central example. For a quadratic field extension $K = F(\sqrt d)$ it is $a^2 - db^2$, anisotropic exactly when $K$ is a field; for a separable extension of degree $n > 2$ it is a form of degree $n$, hence not quadratic. For the complex numbers it is $x^2 + y^2$, positive definite and anisotropic over $\mathbb{R}$ and isotropic over $\mathbb{C}$. For the quaternions it is $x_0^2 + x_1^2 + x_2^2 + x_3^2$, positive definite and multiplicative, making $\mathbb{H}$ a division algebra; over $\mathbb{C}$ the quaternion algebra splits and this form becomes the determinant on $M_2(\mathbb{C})$, whose nonzero zeros are the rank-one matrices and whose quadric is the Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1$. For the biquaternions the norm is $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, the reduced norm, equal to the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$; it is isotropic and its nonzero zeros are the zero divisors. The norms of the quadratic extension and of the quaternions give the complex and quaternion composition laws $N(xy) = N(x)N(y)$, hence the two-square and four-square identities, and **Hurwitz's theorem** states that a composition algebra has dimension $1, 2, 4$ or $8$, the four anisotropic real cases being $\mathbb{R}, \mathbb{C}, \mathbb{H}$ and the octonions.
 
@@ -305,7 +305,7 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu d^{\natu
 | $V$ | Finite-dimensional $F$-space |
 | $Q$, $B_Q$ | $A$-valued quadratic form and its polar form |
 | non-degenerate over $A$ | $x \mapsto B_Q(x, -)$ injective and $B_Q \otimes_F A$ non-degenerate |
-| $\mathcal{Q}(Q)$ | Quadric $\{[x] : Q(x) = 0\}$ |
+| $\mathcal{Q}(Q)$ | Quadric $\{[x] : \mathfrak{Q}(x) = 0\}$ |
 | $\mathbb{P}(V)$ | Projective space of lines in $V$ |
 | $N$, $N_{K/F}$ | Norm; field norm |
 | $K = F(\sqrt d)$ | Separable quadratic extension |

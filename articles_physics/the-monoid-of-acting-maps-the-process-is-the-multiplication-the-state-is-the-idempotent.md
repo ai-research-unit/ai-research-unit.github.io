@@ -54,16 +54,16 @@ $$
 (\mathcal{L},\,\circ,\;L_{e_0})
 $$
 
-is a **monoid**: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}}$ is invertible **iff** $\tilde{Q}$ is a unit, that is iff $N(\tilde{Q})\neq0$, in which case $L_{\tilde{Q}}^{-1} = L_{\tilde{Q}^{-1}}$ with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$; if $N(\tilde{Q}) = 0$ the element is a zero divisor and $L_{\tilde{Q}}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and **the zero divisors are the non-invertible maps**.
+is a **monoid**: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}}$ is invertible **iff** $\tilde{Q}$ is a unit, that is iff $\langle\tilde{Q}\rangle_{\natural}\neq0$, in which case $L_{\tilde{Q}}^{-1} = L_{\tilde{Q}^{-1}}$ with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$; if $\langle\tilde{Q}\rangle_{\natural} = 0$ the element is a zero divisor and $L_{\tilde{Q}}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and **the zero divisors are the non-invertible maps**.
 
 Two features of the monoid are read physically and are stated here before the interpretation. The first is that the monoid is **oriented**. Since the product does not commute, $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$ in general, so the composition of the maps remembers the order of the operations; the element is an **ordered** operation and not a magnitude, and the same two operations composed in the two orders give two different maps. This is the map-level form of the corpus's statement that the material composition is oriented and cannot measure. The second is that the monoid has a **zero**: the zero element of the algebra gives the zero map, $L_0 = 0$, and it is absorbing, $L_{\tilde{Q}}\circ L_0 = L_0$. A monoid with a zero and with non-invertible elements is exactly the shape of a set of **processes** that can be composed and that can fail to be reversed, and this is the shape the interpretation uses.
 
 ## Units and Zero Divisors: the Boundary of the Monoid
 
-The invertibility of the maps cuts the algebra into two classes, and the cut is the light cone. An element is a **unit** iff $N(\tilde{Q})\neq0$, that is off the null cone; and it is a **zero divisor** iff it is null, on the cone. In the monoid this is the boundary between the invertible maps and the non-invertible ones:
+The invertibility of the maps cuts the algebra into two classes, and the cut is the light cone. An element is a **unit** iff $\langle\tilde{Q}\rangle_{\natural}\neq0$, that is off the null cone; and it is a **zero divisor** iff it is null, on the cone. In the monoid this is the boundary between the invertible maps and the non-invertible ones:
 
 $$
-\underbrace{N(\tilde{Q})\neq0}_{\text{units, invertible maps}} \qquad\big|\qquad \underbrace{N(\tilde{Q})=0}_{\text{zero divisors, non-invertible maps}} ,
+\underbrace{\langle\tilde{Q}\rangle_{\natural}\neq0}_{\text{units, invertible maps}} \qquad\big|\qquad \underbrace{\langle\tilde{Q}\rangle_{\natural}=0}_{\text{zero divisors, non-invertible maps}} ,
 $$
 
 and the boundary is the light cone $N = 0$, the locus the corpus reads as the causal boundary. A process off the cone can be undone by its inverse map; a process on the cone cannot, because the map has a kernel. The article records the identification: **the group of units of the monoid is the off-cone part of the algebra, and the cone is the set of processes that cannot be reversed.**
@@ -92,7 +92,7 @@ $$
 \tilde{P}^2 = \tilde{P} \quad\Longleftrightarrow\quad L_{\tilde{P}}\circ L_{\tilde{P}} = L_{\tilde{P}},
 $$
 
-since $L_{\tilde{P}}^2 = L_{\tilde{P}^2}$ and the representation is injective. So the dictionary has both entries on the same footing: **idempotent elements are idempotent maps**, and a projection of the framework is at once an element and the map it generates. The corpus fixes where they live. There is no nonzero idempotent in the material sector $\mathbb{M}_-$; the **projectors** lie in the informational sector $\mathbb{M}_+$, while a general idempotent of the algebra need not be Hermitian and need not lie in either sector; and the **minimal** idempotents are the rank-one projectors, $\tilde{\Pi}\tilde{Q}\tilde{\Pi} = \mathrm{Tr}(\tilde{\Pi}\tilde{Q})\,\tilde{\Pi} = 2\,\mathrm{Sc}(\tilde{\Pi}\tilde{Q})\,\tilde{\Pi}$, whose images are the single Hermitian lines the corpus reads as pure states and as the vacua of single modes. A minimal idempotent gives a **rank-one** map, the algebraic shape of a measurement outcome, and its element is **null**, $N(\tilde{\Pi}) = 0$, so the states sit on the light cone.
+since $L_{\tilde{P}}^2 = L_{\tilde{P}^2}$ and the representation is injective. So the dictionary has both entries on the same footing: **idempotent elements are idempotent maps**, and a projection of the framework is at once an element and the map it generates. The corpus fixes where they live. There is no nonzero idempotent in the material sector $\mathbb{M}_-$; the **projectors** lie in the informational sector $\mathbb{M}_+$, while a general idempotent of the algebra need not be Hermitian and need not lie in either sector; and the **minimal** idempotents are the rank-one projectors, $\tilde{\Pi}\tilde{Q}\tilde{\Pi} = \mathrm{Tr}(\tilde{\Pi}\tilde{Q})\,\tilde{\Pi} = 2\,\mathrm{Sc}(\tilde{\Pi}\tilde{Q})\,\tilde{\Pi}$, whose images are the single Hermitian lines the corpus reads as pure states and as the vacua of single modes. A minimal idempotent gives a **rank-one** map, the algebraic shape of a measurement outcome, and its element is **null**, $\langle\tilde{\Pi}\rangle_{\natural} = 0$, so the states sit on the light cone.
 
 ## The Reading: the Process Is the Map, the State Is the Idempotent
 
@@ -104,7 +104,7 @@ Read physically, the interpretation is the framework's **process–state split**
 
 - The interpretation does **not** add an operator algebra structure to the states. The monoid of maps is not a $C^{*}$-algebra, the idempotents are not given a trace rule by it, and the states remain the projectors of the framework; the trace and the positivity are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 - It does **not** claim that an element *is* an operator in the quantum sense. The left multiplication is a $\mathbb{C}$-linear map of the algebra, and the interpretation identifies the **process** with that map; whether the map is a quantum channel is a further question, and the completely positive form is read in the $2\times2$ article and not owned here.
-- It does **not** claim that a non-invertible map is automatically a measurement. The zero divisors give kernels; a measurement needs a projection onto a state, which is the idempotent side, and the passage from one to the other is the collapse and not the mere vanishing of $N$.
+- It does **not** claim that a non-invertible map is automatically a measurement. The zero divisors give kernels; a measurement needs a projection onto a state, which is the idempotent side, and the passage from one to the other is the collapse and not the mere vanishing of $\langle\cdot\rangle_{\natural}$.
 - It does **not** turn the associativity of the monoid into a physical statement about time ordering. That the composition of the maps is associative is a theorem about composition, true for any algebra; what is read physically is the **order** encoded in $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$, not the associativity.
 
 **Open question — which composition is the physical one.** The monoid composes by $L_{\tilde{P}}\circ L_{\tilde{Q}}=L_{\tilde{P}\tilde{Q}}$, and the corresponding physical statement is that a process followed by a process is their product in that order. Associativity is order-blind, so the composition alone does not fix the order, and the order-sensitive object of the same row is the commutator, its antisymmetric half. **Which of the three — the associative product, its reverse, or the bracket — is the physical composition is open.**
@@ -136,15 +136,15 @@ The sandwich of the two matrix articles is the composition of a left action with
 | $\mathsf{M}_4, \mathsf{M}_4^{R}$ | the regular matrices of the $4\times4$ article |
 | $\mathsf{M}_2$, $M = \mathsf{M}_2(\tilde{Q})$ | the matrix image and its matrix |
 | $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$ | the sandwich as a composition of a left and a right action |
-| $N(\tilde{Q})$ | the biquaternion norm; $N\neq0$ units, $N=0$ zero divisors |
-| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | the inverse of a unit |
+| $\langle\tilde{Q}\rangle_{\natural}$ | the biquaternion norm; $N\neq0$ units, $N=0$ zero divisors |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | the inverse of a unit |
 | $\tilde{P}^2=\tilde{P}$ | an idempotent; a projector when $\tilde{P}^{*}=\tilde{P}$, the states lying among the projectors of $\mathbb{M}_+$ |
 
 ## Further Reading
 
 - *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions* — the sandwich as the congruence $X\mapsto M X M^{\dagger}$, the completely positive form, and the rank-one collapse.
 - *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions* — the sandwich as $L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$ and the regular matrices.
-- *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* and *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *Ideals and Peirce Decomposition of the General Plain Algebra* — the idempotents, the minimal idempotents and the rank-one projections.
+- *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ and the light cone.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *Ideals and Peirce Decomposition of the Biquaternion Algebra* — the idempotents, the minimal idempotents and the rank-one projections.
 - *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* — the order of the material composition and the absence of a projection in $\mathbb{M}_-$.
 - *Decoherence as Idempotent Projection* — the framework's interpretation of the collapse as an idempotent.

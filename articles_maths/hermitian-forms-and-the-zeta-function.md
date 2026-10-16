@@ -11,7 +11,7 @@ The explicit formula of Weil turns the statement that the zeros of the zeta func
 
 **Definition.** Let $\mathcal{T}$ be the space of test functions of *Positivity and the Explicit Formula*, with the involution $h^*(x)=\overline{h(-x)}$. The **Weil form** is
 $$
-Q(h_1,h_2)=W(h_1*h_2^*)=\overline{Q(h_2,h_1)},\qquad Q(h)=Q(h,h)=W(h*h^*),
+\mathfrak{Q}(h_1,h_2)=W(h_1*h_2^*)=\overline{\mathfrak{Q}(h_2,h_1)},\qquad \mathfrak{Q}(h)=\mathfrak{Q}(h,h)=W(h*h^*),
 $$
 where $W$ is the Weil distribution; the associated **quadratic form** is $h\mapsto W(h*h^*)$.
 
@@ -27,7 +27,7 @@ namely the zeros form $\sum_\rho\widehat{h_1}(\rho)\overline{\widehat{h_2}(\rho)
 
 **Theorem (positive definiteness and the zeros).** The zeros form $Q_{\text{zeros}}$ is positive semidefinite for every $L$-function, since $Q_{\text{zeros}}(h)=\sum_\rho|\widehat h(\rho)|^2$; the pole form is negative semidefinite on the test functions vanishing at $1$ and $0$; and the archimedean form is not of a fixed sign. The Riemann hypothesis for $L(f,\cdot)$ is equivalent to
 $$
-Q(h)=W(h*h^*)\ge0 \quad\text{for all } h\in\mathcal{T}.
+\mathfrak{Q}(h)=W(h*h^*)\ge0 \quad\text{for all } h\in\mathcal{T}.
 $$
 
 **Proof.** The zeros form is a sum of squares of the values of $\widehat h$ at the zeros, by definition; the pole form is a difference of two squares; the archimedean form is a quadratic form with the kernel $\gamma_\infty'/\gamma_\infty$, whose sign changes with the archimedean parameters. The equivalence is the positivity criterion of *Positivity and the Explicit Formula*.
@@ -58,9 +58,9 @@ on $L^2(0,1)$.
 
 ## Worked Examples
 
-**Example (the pole form and the prime number theorem).** For a test function $h$ whose Fourier transform vanishes on the zeros up to a large height, the explicit formula gives $Q(h)\approx-\widehat h(1)^2-\widehat h(0)^2+\text{(arch)}$; the nonnegativity of this expression is the source of the prime number theorem, and its failure for a hypothetical off-line zero is the source of the error term.
+**Example (the pole form and the prime number theorem).** For a test function $h$ whose Fourier transform vanishes on the zeros up to a large height, the explicit formula gives $\mathfrak{Q}(h)\approx-\widehat h(1)^2-\widehat h(0)^2+\text{(arch)}$; the nonnegativity of this expression is the source of the prime number theorem, and its failure for a hypothetical off-line zero is the source of the error term.
 
-**Example (a test function concentrated at a zero).** If $\rho=\beta+it$ is a zero with $\beta\ne1/2$, a test function with $\widehat h$ concentrated near $\rho$ and of $L^2$-norm $1$ makes the zeros form of order $|\widehat h(\rho)|^2$ dominate the pole and archimedean forms, giving $Q(h)<0$; this is the quantitative form of the criterion.
+**Example (a test function concentrated at a zero).** If $\rho=\beta+it$ is a zero with $\beta\ne1/2$, a test function with $\widehat h$ concentrated near $\rho$ and of $L^2$-norm $1$ makes the zeros form of order $|\widehat h(\rho)|^2$ dominate the pole and archimedean forms, giving $\mathfrak{Q}(h)<0$; this is the quantitative form of the criterion.
 
 **Example (the form on $\mathcal{T}_0$).** On the test functions with $\widehat h(1)=\widehat h(0)=0$ the pole form vanishes and $Q=Q_{\text{zeros}}+Q_{\text{arch}}$; the positivity is then a competition between the zeros and the archimedean factor, which is the form used in the numerical verifications.
 
@@ -70,7 +70,7 @@ The Hermitian-form criterion fails in four degenerate configurations. First, the
 
 ## Summary
 
-The Weil form $Q(h_1,h_2)=W(h_1*h_2^*)$ is a Hermitian form on the test functions, equal to the sum of the zeros form $\sum_\rho\widehat{h_1}(\rho)\overline{\widehat{h_2}(\rho)}$, the pole form $-\widehat{h_1}(1)\overline{\widehat{h_2}(1)}-\widehat{h_1}(0)\overline{\widehat{h_2}(0)}$ and the archimedean form. The Riemann hypothesis for $L(f,\cdot)$ is equivalent to the positive semidefiniteness of $Q$, which is the finite-dimensional shadow of the existence of a Hilbert–Pólya self-adjoint operator whose spectrum is the imaginary parts of the zeros; the Nyman–Beurling criterion is the same statement in the coordinates of the Beurling kernel on $L^2(0,1)$. The degenerate cases are the indefiniteness of the archimedean form, the restriction of the test space, the packaging of the trivial zeros and the non-constructive nature of the Hilbert–Pólya operator.
+The Weil form $\mathfrak{Q}(h_1,h_2)=W(h_1*h_2^*)$ is a Hermitian form on the test functions, equal to the sum of the zeros form $\sum_\rho\widehat{h_1}(\rho)\overline{\widehat{h_2}(\rho)}$, the pole form $-\widehat{h_1}(1)\overline{\widehat{h_2}(1)}-\widehat{h_1}(0)\overline{\widehat{h_2}(0)}$ and the archimedean form. The Riemann hypothesis for $L(f,\cdot)$ is equivalent to the positive semidefiniteness of $Q$, which is the finite-dimensional shadow of the existence of a Hilbert–Pólya self-adjoint operator whose spectrum is the imaginary parts of the zeros; the Nyman–Beurling criterion is the same statement in the coordinates of the Beurling kernel on $L^2(0,1)$. The degenerate cases are the indefiniteness of the archimedean form, the restriction of the test space, the packaging of the trivial zeros and the non-constructive nature of the Hilbert–Pólya operator.
 
 ## Summary of Notation
 
@@ -78,9 +78,9 @@ The Weil form $Q(h_1,h_2)=W(h_1*h_2^*)$ is a Hermitian form on the test function
 |---|---|
 | $\mathcal{T}$ | Space of test functions |
 | $h^*(x)=\overline{h(-x)}$ | Involution on $\mathcal{T}$ |
-| $Q(h_1,h_2)=W(h_1*h_2^*)$ | Weil Hermitian form |
+| $\mathfrak{Q}(h_1,h_2)=W(h_1*h_2^*)$ | Weil Hermitian form |
 | $Q_{\text{zeros}},Q_{\text{pole}},Q_{\text{arch}}$ | The three pieces |
-| $Q(h)\ge0$ | Positivity criterion for RH |
+| $\mathfrak{Q}(h)\ge0$ | Positivity criterion for RH |
 | $H$ | Hilbert–Pólya operator |
 | $\rho_\theta$ | Nyman–Beurling generator |
 | $K(x,y)$ | Beurling kernel |

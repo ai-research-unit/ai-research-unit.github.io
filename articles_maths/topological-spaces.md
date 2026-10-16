@@ -146,7 +146,7 @@ The restriction "all but finitely many" is essential and is the difference betwe
 
 **Proof.** If $f$ is continuous, so is $f \circ q$. Conversely, if $f \circ q$ is continuous and $W \subseteq Z$ is open, then $q^{-1}(f^{-1}(W)) = (f \circ q)^{-1}(W)$ is open in $X$, so $f^{-1}(W)$ is open in $Y$ by definition of the quotient topology.
 
-**Example (circle).** Let $X = [0, 1]$ and let $q$ identify $0$ with $1$, that is, $Y = X/{\sim}$ with $0 \sim 1$. Then $Y \cong S^1 = \{z \in \mathbb{C} : |z| = 1\}$ by $t \mapsto e^{2\pi i t}$, and the quotient topology is the usual one.
+**Example (circle).** Let $X = [0, 1]$ and let $q$ identify $0$ with $1$, that is, $Y = X/{\sim}$ with $0 \sim 1$. Then $Y \cong S^1 = \{z \in \mathbb{C} : |z| = 1\}$ by $t \mapsto \exp(2\pi i t)$, and the quotient topology is the usual one.
 
 **Example (torus and projective spaces).** The $n$-torus is $T^n = \mathbb{R}^n/\mathbb{Z}^n$, where $\mathbb{Z}^n$ acts by translation; the real projective space is $\mathbb{R}P^n = S^n/{\pm 1}$, and the complex projective space is $\mathbb{C}P^n = S^{2n+1}/S^1$ with $S^1$ acting by scalar multiplication. Each is a quotient by a group action, and the quotient map is open in every case; the quotient is Hausdorff here because it is metrisable, not because the quotient map is open — a surjective open map of a Hausdorff space can have a non-Hausdorff target.
 

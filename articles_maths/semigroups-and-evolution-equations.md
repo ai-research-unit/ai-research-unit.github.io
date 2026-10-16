@@ -25,10 +25,10 @@ $$
 T(0)=I, \qquad T(s+t)=T(s)T(t) \quad (s,t\ge0).
 $$
 
-It is **strongly continuous** (or a $C_0$ semigroup) if $\lim_{t\to0^+}T(t)x=x$ for every $x\in X$; it is **uniformly continuous** if the limit holds in the operator norm, in which case $T(t)=e^{tA}$ for a bounded $A$. The **growth bound** is
+It is **strongly continuous** (or a $C_0$ semigroup) if $\lim_{t\to0^+}T(t)x=x$ for every $x\in X$; it is **uniformly continuous** if the limit holds in the operator norm, in which case $T(t)=\exp(tA)$ for a bounded $A$. The **growth bound** is
 
 $$
-\omega_0 = \inf\Bigl\{\omega\in\mathbb{R} : \sup_{t\ge0}e^{-\omega t}\|T(t)\|<\infty\Bigr\} ,
+\omega_0 = \inf\Bigl\{\omega\in\mathbb{R} : \sup_{t\ge0}\exp(-\omega t)\|T(t)\|<\infty\Bigr\} ,
 $$
 
 and the semigroup is a **contraction semigroup** if $\|T(t)\|\le1$ for all $t\ge0$, and is **bounded** if $\sup_{t\ge0}\|T(t)\|<\infty$.
@@ -36,14 +36,14 @@ and the semigroup is a **contraction semigroup** if $\|T(t)\|\le1$ for all $t\ge
 **Theorem (elementary properties).** For a strongly continuous semigroup the map $t\mapsto T(t)x$ is continuous on $[0,\infty)$ for every $x$, the operators $T(t)$ are uniformly bounded on every compact interval $[0,T]$, and there are constants $M\ge1$ and $\omega\in\mathbb{R}$ with
 
 $$
-\|T(t)\|\le Me^{\omega t}, \qquad t\ge0 ;
+\|T(t)\|\le M\exp(\omega t), \qquad t\ge0 ;
 $$
 
-hence $\omega_0<\infty$ and $\|T(t)\|\le M_\varepsilon e^{(\omega_0+\varepsilon)t}$ for every $\varepsilon>0$.
+hence $\omega_0<\infty$ and $\|T(t)\|\le M_\varepsilon \exp((\omega_0+\varepsilon)t)$ for every $\varepsilon>0$.
 
 *Proof.* The strong continuity at $0$ and the semigroup law give continuity on $[0,T]$; the uniform boundedness principle applied to the family $\{T(t): 0\le t\le1\}$ gives a bound there, and the semigroup law extends it to all $t$ with an exponential factor, by writing $t = n+r$ with $n\in\mathbb{N}$ and $r\in[0,1)$ and using $\|T(t)\|\le\|T(1)\|^n\|T(r)\|$.
 
-**Example (translation and multiplication semigroups).** On $X=L^p(\mathbb{R})$ the family $(T(t)f)(x)=f(x+t)$ is a contraction semigroup; on $X=L^p(\Omega,\mu)$ the family $(T(t)f)(x)=e^{tm(x)}f(x)$ is a semigroup whenever $m$ is measurable and essentially bounded above, and it is strongly continuous for the relevant classes of $m$. On $X=\mathbb{C}^n$ with a matrix $A$, $T(t)=e^{tA}$ is a uniformly continuous semigroup, and the general finite-dimensional case is the linear system of the article on ordinary differential equations.
+**Example (translation and multiplication semigroups).** On $X=L^{n}(\mathbb{R})$ the family $(T(t)f)(x)=f(x+t)$ is a contraction semigroup; on $X=L^{n}(\Omega,\mu)$ the family $(T(t)f)(x)=\exp(tm(x))f(x)$ is a semigroup whenever $m$ is measurable and essentially bounded above, and it is strongly continuous for the relevant classes of $m$. On $X=\mathbb{C}^n$ with a matrix $A$, $T(t)=\exp(tA)$ is a uniformly continuous semigroup, and the general finite-dimensional case is the linear system of the article on ordinary differential equations.
 
 ### The Generator
 
@@ -62,12 +62,12 @@ $$
 **Theorem (the resolvent as the Laplace transform).** For every $\lambda$ with $\mathrm{Re}\,\lambda>\omega_0$ the operator $\lambda I-A$ is invertible and
 
 $$
-R(\lambda,A)x = \int_0^\infty e^{-\lambda t}T(t)x\,dt ,
+R(\lambda,A)x = \int_0^\infty \exp(-\lambda t)T(t)x\,dt ,
 $$
 
 the integral converging absolutely in norm; consequently $\|R(\lambda,A)\|\le \frac{M}{\mathrm{Re}\,\lambda-\omega}$ for $\mathrm{Re}\,\lambda>\omega_0$ and suitable $M,\omega$, and the resolvent identity $R(\lambda,A)-R(\mu,A) = (\mu-\lambda)R(\lambda,A)R(\mu,A)$ holds.
 
-*Proof.* For $x\in X$ the integral converges because $\|T(t)x\|\le Me^{\omega t}\|x\|$. Applying $\lambda I-A$ to the integral gives, after differentiating under the integral for $x\in D(A)$, $(\lambda I-A)\int_0^\infty e^{-\lambda t}T(t)x\,dt = x$; the same computation for the other composition with $A$ gives the inverse, and the density of $D(A)$ passes the result to all $x$. The resolvent identity is the algebraic identity for the inverse of $\lambda I-A$ and $\mu I-A$, verified by multiplying by $(\lambda I-A)(\mu I-A)$.
+*Proof.* For $x\in X$ the integral converges because $\|T(t)x\|\le M\exp(\omega t)\|x\|$. Applying $\lambda I-A$ to the integral gives, after differentiating under the integral for $x\in D(A)$, $(\lambda I-A)\int_0^\infty \exp(-\lambda t)T(t)x\,dt = x$; the same computation for the other composition with $A$ gives the inverse, and the density of $D(A)$ passes the result to all $x$. The resolvent identity is the algebraic identity for the inverse of $\lambda I-A$ and $\mu I-A$, verified by multiplying by $(\lambda I-A)(\mu I-A)$.
 
 ## Generation Theorems
 
@@ -82,9 +82,9 @@ $$
 \|R(\lambda,A)\| \le \frac1\lambda \qquad (\lambda>0).
 $$
 
-*Proof.* Quoted as standard. For the necessity, the Laplace representation of the resolvent gives $\|R(\lambda,A)\|\le\int_0^\infty e^{-\lambda t}dt=1/\lambda$ for a contraction semigroup; closedness and density are the properties of the generator above. For the sufficiency, the **Yosida approximation** $A_\lambda = \lambda A R(\lambda,A) = \lambda^2R(\lambda,A)-\lambda I$ is a bounded operator generating the uniformly continuous semigroup $e^{tA_\lambda}$, and the bound $\|e^{tA_\lambda}\|\le1$ follows from the resolvent bound; one shows that $e^{tA_\lambda}x$ converges as $\lambda\to\infty$, uniformly on compact intervals, and defines $T(t)x$ as the limit. The limit is a strongly continuous contraction semigroup whose generator extends $A$, and since the resolvent determines the generator, its generator is $A$.
+*Proof.* Quoted as standard. For the necessity, the Laplace representation of the resolvent gives $\|R(\lambda,A)\|\le\int_0^\infty \exp(-\lambda t)dt=1/\lambda$ for a contraction semigroup; closedness and density are the properties of the generator above. For the sufficiency, the **Yosida approximation** $A_\lambda = \lambda A R(\lambda,A) = \lambda^2R(\lambda,A)-\lambda I$ is a bounded operator generating the uniformly continuous semigroup $\exp(tA_\lambda)$, and the bound $\|\exp(tA_\lambda)\|\le1$ follows from the resolvent bound; one shows that $\exp(tA_\lambda)x$ converges as $\lambda\to\infty$, uniformly on compact intervals, and defines $T(t)x$ as the limit. The limit is a strongly continuous contraction semigroup whose generator extends $A$, and since the resolvent determines the generator, its generator is $A$.
 
-**Theorem (Feller–Miyadera–Phillips).** $A$ generates a strongly continuous semigroup with $\|T(t)\|\le Me^{\omega t}$ if and only if $A$ is closed and densely defined and
+**Theorem (Feller–Miyadera–Phillips).** $A$ generates a strongly continuous semigroup with $\|T(t)\|\le M\exp(\omega t)$ if and only if $A$ is closed and densely defined and
 
 $$
 \bigl\|R(\lambda,A)^n\bigr\| \le \frac{M}{(\lambda-\omega)^n} \qquad (\lambda>\omega,\ n=1,2,\dots).
@@ -92,7 +92,7 @@ $$
 
 *Proof.* Quoted as standard. The condition is the resolvent estimate of the Hille–Yosida theorem with a growth factor and a power; the proofs of necessity and sufficiency follow the same lines as above, with the norm bound replaced by its powers and the Yosida approximation adjusted by the exponential weight.
 
-**Remark (the role of the powers).** The estimate for $n=1$ states that the resolvent decays at least as fast as the resolvent of a contraction; the estimate for all $n$ is strictly stronger and is what the Yosida approximation needs, because the power appears when the exponential $e^{tA_\lambda}$ is expanded. The theorem in this form is the sharp generation criterion for semigroups of a prescribed exponential type, and the Hille–Yosida theorem is its contraction case $M=1$, $\omega=0$.
+**Remark (the role of the powers).** The estimate for $n=1$ states that the resolvent decays at least as fast as the resolvent of a contraction; the estimate for all $n$ is strictly stronger and is what the Yosida approximation needs, because the power appears when the exponential $\exp(tA_\lambda)$ is expanded. The theorem in this form is the sharp generation criterion for semigroups of a prescribed exponential type, and the Hille–Yosida theorem is its contraction case $M=1$, $\omega=0$.
 
 ### Dissipative Operators and the Lumer–Phillips Theorem
 
@@ -138,20 +138,20 @@ A **classical solution** is a $C^1$ function $u:[0,\infty)\to X$ with $u(t)\in D
 
 **Theorem (generation by a sectorial operator).** A sectorial operator generates an analytic semigroup, and the operators $A^kT(t)$ are bounded with $\|A^kT(t)\|\le C_kt^{-k}$ for $t>0$; consequently $T(t)X\subseteq\bigcap_kD(A^k)$ for $t>0$, and the mild solution of the abstract Cauchy problem is smooth for $t>0$ whatever the initial datum.
 
-*Proof.* Quoted as standard. The semigroup is defined by the **Dunford integral** $T(t)=\frac{1}{2\pi i}\int_\Gamma e^{\lambda t}R(\lambda,A)d\lambda$ over a contour $\Gamma$ enclosing the sector to the right, the estimate on the resolvent making the integral converge; the analyticity and the estimates on $A^kT(t)$ follow from moving the contour and differentiating under the integral, and the smoothing is the resulting gain of one derivative per power.
+*Proof.* Quoted as standard. The semigroup is defined by the **Dunford integral** $T(t)=\frac{1}{2\pi i}\int_\Gamma \exp(\lambda t)R(\lambda,A)d\lambda$ over a contour $\Gamma$ enclosing the sector to the right, the estimate on the resolvent making the integral converge; the analyticity and the estimates on $A^kT(t)$ follow from moving the contour and differentiating under the integral, and the smoothing is the resulting gain of one derivative per power.
 
 **Example (the heat semigroup).** On $X=L^2(\mathbb{R}^n)$ let $A=\Delta$ with domain $H^2(\mathbb{R}^n)$. The operator is self-adjoint and negative, $\langle\Delta u,u\rangle=-\|\nabla u\|^2\le0$, so it is dissipative with the correct range by elliptic solvability; it generates the **heat semigroup**
 
 $$
-(T(t)f)(x) = (G_t*f)(x), \qquad G_t(x) = (4\pi t)^{-n/2}e^{-|x|^2/(4t)},
+(T(t)f)(x) = (G_t*f)(x), \qquad G_t(x) = (4\pi t)^{-n/2}\exp(-|x|^2/(4t)),
 $$
 
-a contraction semigroup, analytic of angle $\pi/2$, with the $L^1\to L^\infty$ smoothing bound $\|T(t)f\|_\infty\le(4\pi t)^{-n/2}\|f\|_1$ for $f\in L^1\cap L^2$, which is the regularising property of the heat equation. The explicit kernel $G_t$ is the fundamental solution, and the spectral representation of $A$ by the Fourier transform gives $T(t) = \mathcal{F}^{-1}e^{-t|\xi|^2}\mathcal{F}$.
+a contraction semigroup, analytic of angle $\pi/2$, with the $L^1\to L^\infty$ smoothing bound $\|T(t)f\|_\infty\le(4\pi t)^{-n/2}\|f\|_1$ for $f\in L^1\cap L^2$, which is the regularising property of the heat equation. The explicit kernel $G_t$ is the fundamental solution, and the spectral representation of $A$ by the Fourier transform gives $T(t) = \mathcal{F}^{-1}\exp(-t|\xi|^2)\mathcal{F}$.
 
-**Example (the wave group).** The wave equation $u_{tt}=\Delta u$ on $\mathbb{R}^n$ can be written as a first-order system for $U=(u,u_t)$:
+**Example (the wave group).** The wave equation $\partial_t^2 u=\Delta u$ on $\mathbb{R}^n$ can be written as a first-order system for $U=(u,\partial_t u)$:
 
 $$
-\frac{d}{dt}\begin{pmatrix}u\\ u_t\end{pmatrix} = \mathcal{A}\begin{pmatrix}u\\ u_t\end{pmatrix}, \qquad \mathcal{A} = \begin{pmatrix}0 & I\\ \Delta & 0\end{pmatrix},
+\frac{d}{dt}\begin{pmatrix}u\\ \partial_t u\end{pmatrix} = \mathcal{A}\begin{pmatrix}u\\ \partial_t u\end{pmatrix}, \qquad \mathcal{A} = \begin{pmatrix}0 & I\\ \Delta & 0\end{pmatrix},
 $$
 
 on the energy space $H^1\times L^2$ with the inner product $\langle(u,v),(u',v')\rangle = \langle\nabla u,\nabla u'\rangle+\langle v,v'\rangle$. With respect to this inner product $\mathcal{A}$ is skew-adjoint, so it generates a unitary group by Stone's theorem below and the energy is constant along the flow. The group is not analytic: the solutions propagate with finite speed and do not smooth, in contrast with the heat semigroup; the contrast is the semigroup-theoretic form of the distinction between the parabolic and hyperbolic types of the earlier article.
@@ -164,19 +164,19 @@ $$
 U(0)=I, \quad U(s+t)=U(s)U(t), \quad U(t)^*=U(t)^{-1}=\overline{U(-t)} ,
 $$
 
-if and only if there is a densely defined self-adjoint operator $A$ with $U(t)=e^{itA}$; the operator $A$ is the generator, $A=-i\,U'(0)$, and it is unique.
+if and only if there is a densely defined self-adjoint operator $A$ with $U(t)=\exp(itA)$; the operator $A$ is the generator, $A=-i\,U'(0)$, and it is unique.
 
-*Proof.* Quoted as standard. For the necessity, the generator $A=-iU'(0)$ is defined on the elements where the derivative exists; unitarity gives $\langle Ax,y\rangle=\langle x,Ay\rangle$ on $D(A)$, so $A$ is symmetric, and the range condition of the Lumer–Phillips theorem for the operator $iA$ (which is dissipative when $A$ is self-adjoint with the appropriate sign) makes it self-adjoint; the group is then recovered from $A$ by the spectral theorem. Conversely, for a self-adjoint $A$ with spectral measure $E$, the operator $e^{itA}=\int e^{it\lambda}dE(\lambda)$ is unitary, the map $t\mapsto e^{itA}$ is strongly continuous, and the group law holds.
+*Proof.* Quoted as standard. For the necessity, the generator $A=-iU'(0)$ is defined on the elements where the derivative exists; unitarity gives $\langle Ax,y\rangle=\langle x,Ay\rangle$ on $D(A)$, so $A$ is symmetric, and the range condition of the Lumer–Phillips theorem for the operator $iA$ (which is dissipative when $A$ is self-adjoint with the appropriate sign) makes it self-adjoint; the group is then recovered from $A$ by the spectral theorem. Conversely, for a self-adjoint $A$ with spectral measure $E$, the operator $\exp(itA)=\int \exp(it\lambda)dE(\lambda)$ is unitary, the map $t\mapsto \exp(itA)$ is strongly continuous, and the group law holds.
 
 **Corollary (spectral form of a unitary group).** With $A=\int\lambda\,dE(\lambda)$ the spectral theorem for a self-adjoint operator, the group is
 
 $$
-U(t) = \int_{\mathbb{R}}e^{it\lambda}\,dE(\lambda),
+U(t) = \int_{\mathbb{R}}\exp(it\lambda)\,dE(\lambda),
 $$
 
-and $U(t)$ preserves each spectral subspace $E(B)H$; equivalently, $\sigma(U(t)) = \overline{e^{it\sigma(A)}}$ and the spectral measure of $U(t)$ is the push-forward of $E$ under $\lambda\mapsto e^{it\lambda}$.
+and $U(t)$ preserves each spectral subspace $E(B)H$; equivalently, $\sigma(U(t)) = \overline{\exp(it\sigma(A))}$ and the spectral measure of $U(t)$ is the push-forward of $E$ under $\lambda\mapsto \exp(it\lambda)$.
 
-*Proof.* The functional calculus for a self-adjoint operator, as in *Unbounded Operators and Spectral Measures*; the formula is the definition of the calculus applied to the bounded function $e^{it\lambda}$, and the statement about the spectra follows from the mapping properties of the calculus.
+*Proof.* The functional calculus for a self-adjoint operator, as in *Unbounded Operators and Spectral Measures*; the formula is the definition of the calculus applied to the bounded function $\exp(it\lambda)$, and the statement about the spectra follows from the mapping properties of the calculus.
 
 **Remark (recovering a symmetry group from its generator).** The corollary is the mechanism by which a one-parameter symmetry group is recovered from its infinitesimal generator, and the mechanism is that of the preceding articles in a different guise: Noether's theorem produces a conserved quantity from a generator, and Stone's theorem produces the group from the generator. In the differential-geometric setting the generator is a vector field and the group is its flow; in the Hilbert-space setting the generator is a self-adjoint operator and the group is unitary, and the spectral measure is the additional structure that the Hilbert space supplies.
 
@@ -184,30 +184,30 @@ and $U(t)$ preserves each spectral subspace $E(B)H$; equivalently, $\sigma(U(t))
 
 The generation theorems construct the semigroup from its generator. The **Lie–Trotter product formula** constructs it from the semigroups of the pieces, and it is the analytic statement underneath the time-slicing of the path integral.
 
-**Theorem (Lie–Trotter).** Let $A$ and $B$ generate strongly continuous contraction semigroups $\{e^{tA}\}$ and $\{e^{tB}\}$ on a Banach space. Then the closure of $A+B$ on $D(A)\cap D(B)$ generates a contraction semigroup, and for every $t\ge0$
+**Theorem (Lie–Trotter).** Let $A$ and $B$ generate strongly continuous contraction semigroups $\{\exp(tA)\}$ and $\{\exp(tB)\}$ on a Banach space. Then the closure of $A+B$ on $D(A)\cap D(B)$ generates a contraction semigroup, and for every $t\ge0$
 $$
-e^{t\,\overline{A+B}}
-=\operatorname*{s-lim}_{n\to\infty}\Big(e^{\frac{t}{n}A}\,e^{\frac{t}{n}B}\Big)^{n},
+\exp(t\,\overline{A+B})
+=\operatorname*{s-lim}_{n\to\infty}\Big(\exp(\frac{t}{n}A)\,\exp(\frac{t}{n}B)\Big)^{n},
 $$
 the limit being strong and uniform on compact time intervals.
 
-*Proof.* Quoted as standard (Trotter, 1959). The formula is proved from the **Chernoff product formula**, which states that if $F:[0,\infty)\to B(X)$ satisfies $F(0)=I$, $\|F(s)^{m}\|\le Me^{\omega ms}$, and $F'(0)=A$ densely, then $\operatorname*{s-lim}_{n\to\infty}F(t/n)^{n}=e^{tA}$; the choice $F(s)=e^{sA}e^{sB}$ has $F(0)=I$ and $F'(0)=A+B$ on $D(A)\cap D(B)$, and the bound holds because each factor is a contraction semigroup.
+*Proof.* Quoted as standard (Trotter, 1959). The formula is proved from the **Chernoff product formula**, which states that if $F:[0,\infty)\to B(X)$ satisfies $F(0)=I$, $\|F(s)^{m}\|\le M\exp(\omega ms)$, and $F'(0)=A$ densely, then $\operatorname*{s-lim}_{n\to\infty}F(t/n)^{n}=\exp(tA)$; the choice $F(s)=\exp(sA)\exp(sB)$ has $F(0)=I$ and $F'(0)=A+B$ on $D(A)\cap D(B)$, and the bound holds because each factor is a contraction semigroup.
 
 **Why the sum's generator is not written directly.** The formula matters because the generator of the sum is exactly the object that is hard to describe. The operator $A+B$ on $D(A)\cap D(B)$ need not be closed, and the intersection may be too small to determine a generator; the content of the theorem is that the closure is a generator and that the semigroup is the limit of the interleaved products. In the self-adjoint case the operator-theoretic condition becomes the familiar one: if $A$ and $B$ are self-adjoint and $A+B$ is essentially self-adjoint on a common core — for instance if one is form-bounded by the other with relative bound less than one — then
 $$
-e^{it\,\overline{A+B}}=\operatorname*{s-lim}_{n\to\infty}\Big(e^{\frac{it}{n}A}\,e^{\frac{it}{n}B}\Big)^{n},
+\exp(it\,\overline{A+B})=\operatorname*{s-lim}_{n\to\infty}\Big(\exp(\frac{it}{n}A)\,\exp(\frac{it}{n}B)\Big)^{n},
 $$
 which recovers the unitary group of a sum of self-adjoint operators (Schrödinger operators with a potential) from the groups of the free part and the potential.
 
 **The exponential formula.** A companion produces the semigroup from the generator alone, as the limit of the resolvent iteration
 $$
-e^{tA}=\operatorname*{s-lim}_{n\to\infty}\Big(I-\tfrac{t}{n}A\Big)^{-n},
+\exp(tA)=\operatorname*{s-lim}_{n\to\infty}\Big(I-\tfrac{t}{n}A\Big)^{-n},
 $$
 the **implicit-Euler** or Yosida approximation, valid for every generator of a contraction semigroup. It is the discrete form of the resolvent identity, and it is the reason the Hille–Yosida theorem's resolvent estimates are enough to reconstruct the semigroup.
 
 **The order of the approximation, and a check.** The plain product is first-order accurate, its error $O(1/n)$, while the symmetric **Strang splitting**
 $$
-\Big(e^{\frac{t}{2n}A}\,e^{\frac{t}{n}B}\,e^{\frac{t}{2n}A}\Big)^{n}
+\Big(\exp(\frac{t}{2n}A)\,\exp(\frac{t}{n}B)\,\exp(\frac{t}{2n}A)\Big)^{n}
 $$
 is second-order, its error $O(1/n^{2})$. The two orders were checked numerically on the non-commuting Hermitian matrices
 $$
@@ -217,30 +217,30 @@ B=\begin{pmatrix}-0.2&0.5&0.1\\0.5&0.9&0\\0.1&0&-0.4\end{pmatrix},
 \qquad
 \max\lvert[A,B]\rvert=1.07,
 $$
-at $t=1$: doubling $n$ from $10$ to $640$ halved the plain-product error at every step (from the matrix maximum-norm $1.30\times10^{-1}$ to $1.95\times10^{-3}$) and quartered the Strang error (from $4.05\times10^{-3}$ to $9.89\times10^{-7}$), confirming the orders $1$ and $2$ and that the convergence is to $e^{t(A+B)}$.
+at $t=1$: doubling $n$ from $10$ to $640$ halved the plain-product error at every step (from the matrix maximum-norm $1.30\times10^{-1}$ to $1.95\times10^{-3}$) and quartered the Strang error (from $4.05\times10^{-3}$ to $9.89\times10^{-7}$), confirming the orders $1$ and $2$ and that the convergence is to $\exp(t(A+B))$.
 
 **The path-integral reading, and the framework's position.** The formula is the functional-analytic content of Feynman's time slicing. With $H=H_0+V$ a Hamiltonian, the identity
 $$
-e^{-iHt}=\operatorname*{s-lim}_{n\to\infty}\Big(e^{-iH_0t/n}\,e^{-iVt/n}\Big)^{n}
+\exp(-iHt)=\operatorname*{s-lim}_{n\to\infty}\Big(\exp(-iH_0t/n)\,\exp(-iVt/n)\Big)^{n}
 $$
-writes the full propagator as a limit of products of the free propagator and the potential's exponential, and inserting a resolution of the identity between consecutive factors turns each product into an integral over an intermediate position. The result is the sum over piecewise-linear paths of *The Schrödinger Path Integral in Biquaternionic Form*, and the short-time kernel of *The Path Integral in Biquaternionic Form* is the matrix element of the factor $e^{-iH_0\varepsilon/\hbar}e^{-iV\varepsilon/\hbar}$. The analytic hypotheses of this section — the strong limit, the compact-time uniformity, the core condition on $A+B$ — are the precise sense in which that derivation holds; the physics Part uses the formula and this section supplies its statement. There is **no biquaternion content** here: the result is a theorem about operators on a Banach space, independent of the coefficient algebra of the fields, and the framework's phase enters only through the identification of the generator with the Hamiltonian and of $i$ with the central imaginary, which is the subject of the articles already cited.
+writes the full propagator as a limit of products of the free propagator and the potential's exponential, and inserting a resolution of the identity between consecutive factors turns each product into an integral over an intermediate position. The result is the sum over piecewise-linear paths of *The Schrödinger Path Integral in Biquaternionic Form*, and the short-time kernel of *The Path Integral in Biquaternionic Form* is the matrix element of the factor $\exp(-iH_0\varepsilon/\hbar)\exp(-iV\varepsilon/\hbar)$. The analytic hypotheses of this section — the strong limit, the compact-time uniformity, the core condition on $A+B$ — are the precise sense in which that derivation holds; the physics Part uses the formula and this section supplies its statement. There is **no biquaternion content** here: the result is a theorem about operators on a Banach space, independent of the coefficient algebra of the fields, and the framework's phase enters only through the identification of the generator with the Hamiltonian and of $i$ with the central imaginary, which is the subject of the articles already cited.
 
 ## Spectral Mapping and Asymptotics
 
 **Theorem (spectral inclusion).** Let $A$ generate a strongly continuous semigroup $\{T(t)\}$. Then
 
 $$
-e^{t\sigma(A)}\subseteq\sigma(T(t)) \qquad (t\ge0),
+\exp(t\sigma(A))\subseteq\sigma(T(t)) \qquad (t\ge0),
 $$
 
-and for the point spectrum the inclusion $\{e^{t\lambda} : \lambda\in\sigma_p(A)\}\subseteq\sigma_p(T(t))$ holds, with eigenvector preserved.
+and for the point spectrum the inclusion $\{\exp(t\lambda) : \lambda\in\sigma_p(A)\}\subseteq\sigma_p(T(t))$ holds, with eigenvector preserved.
 
-*Proof.* If $\lambda\in\rho(A)$ then routine algebra using the commutation of $T(t)$ with $R(\lambda,A)$ exhibits an inverse for $e^{t\lambda}I-T(t)$, giving the spectral inclusion; the eigenvector statement follows from the differentiability of $t\mapsto T(t)x$ for $x$ an eigenvector. The reverse implication requires additional hypotheses, as below.
+*Proof.* If $\lambda\in\rho(A)$ then routine algebra using the commutation of $T(t)$ with $R(\lambda,A)$ exhibits an inverse for $\exp(t\lambda)I-T(t)$, giving the spectral inclusion; the eigenvector statement follows from the differentiability of $t\mapsto T(t)x$ for $x$ an eigenvector. The reverse implication requires additional hypotheses, as below.
 
 **Theorem (spectral mapping for analytic semigroups).** If the semigroup is eventually norm-continuous — in particular if it is analytic, or if it is uniformly continuous — then
 
 $$
-\sigma(T(t))\setminus\{0\} = e^{t\sigma(A)} \qquad (t>0).
+\sigma(T(t))\setminus\{0\} = \exp(t\sigma(A)) \qquad (t>0).
 $$
 
 *Proof.* Quoted as standard. The reverse inclusion is proved by the argument principle applied to the resolvent along the boundary of a large sector, the norm-continuity providing the decay needed to close the contour; the analytic case is the typical application.
@@ -248,7 +248,7 @@ $$
 **Theorem (uniform exponential stability).** For a strongly continuous semigroup $\{T(t)\}$ on a Banach space, if the spectrum of the generator lies in the open left half-plane and is bounded away from the imaginary axis, and if the semigroup is eventually norm-continuous, then
 
 $$
-\|T(t)\|\le Me^{-\varepsilon t}
+\|T(t)\|\le M\exp(-\varepsilon t)
 $$
 
 for some $\varepsilon>0$ and all $t\ge0$; conversely, if the semigroup decays exponentially then $\sup_{\lambda\in\sigma(A)}\operatorname{Re}\lambda<0$.
@@ -259,7 +259,7 @@ for some $\varepsilon>0$ and all $t\ge0$; conversely, if the semigroup decays ex
 
 ## Summary
 
-A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, with the semigroup law and continuity at $0$; it is bounded by $Me^{\omega t}$ and its infinitesimal generator $A$, defined as the derivative at $0$, is closed and densely defined, commutes with the semigroup, and has resolvent given by the Laplace transform $R(\lambda,A)=\int_0^\infty e^{-\lambda t}T(t)dt$. The Hille–Yosida theorem states that $A$ generates a contraction semigroup exactly when $A$ is closed and densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$; the Feller–Miyadera–Phillips theorem replaces the bound by $\|R(\lambda,A)^n\|\le M/(\lambda-\omega)^n$, and the Lumer–Phillips theorem replaces the resolvent condition by the dissipativity of $A$ together with a single range condition. The abstract Cauchy problem $u'=Au$, $u(0)=x$ has the unique mild solution $u=T(\cdot)x$ for every $x$, and it has a classical solution exactly when $x$ lies in the domain; sectorial operators generate analytic semigroups that smooth the solution for positive time. The example of the smoothing is the heat semigroup generated by the Laplacian with Gaussian kernel, and the contrasting example is the wave group, generated by a skew-adjoint operator on the energy space and preserving the energy without smoothing. Stone's theorem identifies the strongly continuous unitary groups with the operators $e^{itA}$ for self-adjoint $A$, with the spectral representation $U(t)=\int e^{it\lambda}dE(\lambda)$, and relates the symmetry group to its generator; the Lie–Trotter product formula constructs the semigroup of a sum from the semigroups of the summands, $e^{t\,\overline{A+B}}=\operatorname*{s-lim}_{n}(e^{tA/n}e^{tB/n})^n$, with error $O(1/n)$ and $O(1/n^{2})$ for the symmetric Strang splitting, and the exponential formula $e^{tA}=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ recovers the semigroup from the resolvent iteration; the spectral mapping theorem gives $e^{t\sigma(A)}\subseteq\sigma(T(t))$, with equality for eventually norm-continuous semigroups, under which hypothesis a spectral condition in the left half-plane is equivalent to uniform exponential decay.
+A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, with the semigroup law and continuity at $0$; it is bounded by $M\exp(\omega t)$ and its infinitesimal generator $A$, defined as the derivative at $0$, is closed and densely defined, commutes with the semigroup, and has resolvent given by the Laplace transform $R(\lambda,A)=\int_0^\infty \exp(-\lambda t)T(t)dt$. The Hille–Yosida theorem states that $A$ generates a contraction semigroup exactly when $A$ is closed and densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$; the Feller–Miyadera–Phillips theorem replaces the bound by $\|R(\lambda,A)^n\|\le M/(\lambda-\omega)^n$, and the Lumer–Phillips theorem replaces the resolvent condition by the dissipativity of $A$ together with a single range condition. The abstract Cauchy problem $u'=Au$, $u(0)=x$ has the unique mild solution $u=T(\cdot)x$ for every $x$, and it has a classical solution exactly when $x$ lies in the domain; sectorial operators generate analytic semigroups that smooth the solution for positive time. The example of the smoothing is the heat semigroup generated by the Laplacian with Gaussian kernel, and the contrasting example is the wave group, generated by a skew-adjoint operator on the energy space and preserving the energy without smoothing. Stone's theorem identifies the strongly continuous unitary groups with the operators $\exp(itA)$ for self-adjoint $A$, with the spectral representation $U(t)=\int \exp(it\lambda)dE(\lambda)$, and relates the symmetry group to its generator; the Lie–Trotter product formula constructs the semigroup of a sum from the semigroups of the summands, $\exp(t\,\overline{A+B})=\operatorname*{s-lim}_{n}(\exp(tA/n)\exp(tB/n))^n$, with error $O(1/n)$ and $O(1/n^{2})$ for the symmetric Strang splitting, and the exponential formula $\exp(tA)=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ recovers the semigroup from the resolvent iteration; the spectral mapping theorem gives $\exp(t\sigma(A))\subseteq\sigma(T(t))$, with equality for eventually norm-continuous semigroups, under which hypothesis a spectral condition in the left half-plane is equivalent to uniform exponential decay.
 
 ## Summary of Notation
 
@@ -267,7 +267,7 @@ A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, w
 |---|---|
 | $T(t)$, $\{T(t)\}_{t\ge0}$ | Strongly continuous one-parameter semigroup |
 | $X$, $B(X)$, $X^*$ | Banach space, bounded operators, dual |
-| $\omega_0$, $M$, $\omega$ | Growth bound and constants with $\|T(t)\|\le Me^{\omega t}$ |
+| $\omega_0$, $M$, $\omega$ | Growth bound and constants with $\|T(t)\|\le M\exp(\omega t)$ |
 | $A$, $D(A)$ | Infinitesimal generator and its domain |
 | $R(\lambda,A)$ | Resolvent $(\lambda I-A)^{-1}$ |
 | $J(x)$ | Duality map of $X$ |
@@ -275,12 +275,12 @@ A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, w
 | abstract Cauchy problem | $u'=Au$, $u(0)=x$; classical and mild solutions |
 | $\Delta$, $G_t$ | Laplacian and the Gaussian heat kernel |
 | $\mathcal{A}$ | First-order matrix operator of the wave equation |
-| $U(t)$, $A$ | Unitary group and its self-adjoint generator, $U(t)=e^{itA}$ |
+| $U(t)$, $A$ | Unitary group and its self-adjoint generator, $U(t)=\exp(itA)$ |
 | $E(\lambda)$ | Spectral measure of a self-adjoint operator |
 | $\sigma(A)$, $\sigma(T(t))$ | Spectra of the generator and of the semigroup |
-| $e^{t\,\overline{A+B}}=\operatorname*{s-lim}_{n}(e^{tA/n}e^{tB/n})^{n}$ | Lie–Trotter product formula |
-| $(e^{tA/2n}e^{tB/n}e^{tA/2n})^{n}$ | Strang splitting; error $O(1/n^{2})$ |
-| $e^{tA}=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ | Exponential (implicit-Euler, Yosida) formula |
+| $\exp(t\,\overline{A+B})=\operatorname*{s-lim}_{n}(\exp(tA/n)\exp(tB/n))^{n}$ | Lie–Trotter product formula |
+| $(\exp(tA/2n)\exp(tB/n)\exp(tA/2n))^{n}$ | Strang splitting; error $O(1/n^{2})$ |
+| $\exp(tA)=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ | Exponential (implicit-Euler, Yosida) formula |
 
 ## Further Reading
 

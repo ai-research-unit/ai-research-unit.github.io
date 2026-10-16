@@ -134,13 +134,13 @@ $$
 \Delta_S f = -k(k + n - 2)\, f .
 $$
 
-*Proof.* In polar coordinates the Euclidean Laplacian is $\Delta = \partial_r^2 + \frac{n-1}{r}\partial_r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial_r^2 f = k(k-1)r^{k-2}\tilde f$ and $\frac{n-1}{r}\partial_r f = (n-1)k r^{k-2}\tilde f$, where $\tilde f = f|_{S^{n-1}}$. Hence
+*Proof.* In polar coordinates the Euclidean Laplacian is $\Delta = \partial_r^2 + \frac{n-1}{r}\partial_r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial_r^2 f = k(k-1)r^{k-2}f^{\mathrm{res}}$ and $\frac{n-1}{r}\partial_r f = (n-1)k r^{k-2}f^{\mathrm{res}}$, where $f^{\mathrm{res}} = f|_{S^{n-1}}$. Hence
 
 $$
-0 = \Delta f = r^{k-2}\Bigl(k(k-1) + (n-1)k\Bigr)\tilde f + r^{k-2}\Delta_S \tilde f ,
+0 = \Delta f = r^{k-2}\Bigl(k(k-1) + (n-1)k\Bigr)f^{\mathrm{res}} + r^{k-2}\Delta_S f^{\mathrm{res}} ,
 $$
 
-and $\Delta_S\tilde f = -k(k-1) - (n-1)k\,\tilde f = -k(k+n-2)\tilde f$.
+and $\Delta_Sf^{\mathrm{res}} = -k(k-1) - (n-1)k\,f^{\mathrm{res}} = -k(k+n-2)f^{\mathrm{res}}$.
 
 **Example.** For $n = 3$ the eigenvalue is $-k(k+1)$, so the spherical harmonics of degrees $0, 1, 2$ have eigenvalues $0, -2, -6$. The polynomial $f = x^2 - y^2$ restricts to the sphere as $\sin^2\theta\cos2\varphi$, and a direct computation of $\Delta_{S^2}$ gives $\Delta_{S^2} f = -6f$, in agreement with the theorem.
 

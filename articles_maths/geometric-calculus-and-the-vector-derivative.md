@@ -28,7 +28,7 @@ and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial
 **Example (the derivative of the position vector).** Let $x=\sum_ix^ie_i$, so that $\partial_i x=e_i$. Then
 
 $$
-\partial x=\sum_ie^i\partial_ix=\sum_ie^ie_i=n,
+\partial x=\sum_i\exp(i)\partial_ix=\sum_i\exp(i)e_i=n,
 $$
 
 the dimension of the space; the derivative of the position vector is the dimension, which is the Clifford form of the statement that the divergence of the position field is the dimension.
@@ -113,7 +113,7 @@ $$
 
 in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.
 
-**Proof.** $\partial^2=\bigl(\sum_ie^i\partial_i\bigr)\bigl(\sum_je^j\partial_j\bigr)=\sum_{i,j}e^ie^j\partial_i\partial_j=\sum_i\partial_i^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+e^je^i=2B(e^i,e^j)=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^ie^i\partial_i^2=\partial_i^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
+**Proof.** $\partial^2=\bigl(\sum_i\exp(i)\partial_i\bigr)\bigl(\sum_j\exp(j)\partial_j\bigr)=\sum_{i,j}e^ie^j\partial_i\partial_j=\sum_i\partial_i^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\partial_i^2=\partial_i^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
 
 **Remark.** The converse fails: a harmonic function need not be monogenic, exactly as a harmonic function of two variables need not be holomorphic. The monogenic functions form a much smaller class, and the theory of that class, with the Cauchy integral formula, the Fischer decomposition and the function theory of the Clifford algebras, is the subject of *Clifford Analysis* and of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, where the results are developed.
 
@@ -169,7 +169,7 @@ with $F$ a bivector-valued field and $J$ a vector-valued current encodes the fou
 
 ## Summary
 
-The **vector derivative** is the operator $\partial=\sum_ie^i\partial_{x^i}$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial_i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
+The **vector derivative** is the operator $\partial=\sum_i\exp(i)\partial_{x^i}$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial_i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
 
 The **fundamental theorem of geometric calculus** is
 
@@ -184,7 +184,7 @@ the integral of the derivative of a multivector-valued function over a region eq
 | Symbol | Meaning |
 |---|---|
 | $e^i$, $B(e^i,e_j)=\delta^i_j$ | Reciprocal basis |
-| $\partial F=\sum_ie^i\partial_iF$ | Vector derivative, acting on the right |
+| $\partial F=\sum_i\exp(i)\partial_iF$ | Vector derivative, acting on the right |
 | $F\partial$ | Derivative from the right |
 | $\partial x=n$ | Derivative of the position vector |
 | $\partial\cdot F$, $\partial\wedge F$ | Divergence and curl of a vector field |

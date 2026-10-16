@@ -75,7 +75,7 @@ On $M_n(\mathbb{C})$ with $h(X,Y) = \tau(XY^{*})$ the adjoint is given by the da
 
 ### The Orthogonal Case
 
-At the trivial base involution and $* = \mathrm{id}$ the formula reads $T^{\mathrm{t}}T = 1$ and the group is the orthogonal group of the symmetric form, $\operatorname{O}(A,q)$, with determinant-one part $\operatorname{SO}(A,q)$ of *The Orthogonal Lie Algebra*.
+At the trivial base involution and $* = \mathrm{id}$ the formula reads $T^{\mathrm{t}}T = 1$ and the group is the orthogonal group of the symmetric form, $\operatorname{O}(A,\mathfrak{Q})$, with determinant-one part $\operatorname{SO}(A,\mathfrak{Q})$ of *The Orthogonal Lie Algebra*.
 
 ### The Biquaternion Slice
 
@@ -99,7 +99,7 @@ On $\mathbb{B}$ with the dagger of *Hermitian Algebras*, the unitary slice $U = 
 | $T^{*}$ | the adjoint of $T$ for $h$ |
 | $L_u$ | the left multiplication by $u$ |
 | $U(A)$ | the unitary slice $\{u : u^{*}u = uu^{*} = 1\}$ |
-| $\operatorname{O}(A,q)$, $\operatorname{SO}(A,q)$ | the orthogonal group and its determinant-one part |
+| $\operatorname{O}(A,\mathfrak{Q})$, $\operatorname{SO}(A,\mathfrak{Q})$ | the orthogonal group and its determinant-one part |
 
 ## Further Reading
 

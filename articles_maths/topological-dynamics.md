@@ -29,7 +29,7 @@ For a flow $\varphi:\mathbb{R}\times X\to X$, that is, a continuous action of th
 
 *Proof.* The closures $\overline{\{T^nx:n\ge N\}}$ form a decreasing sequence of nonempty compact sets, so their intersection is nonempty and compact; the pointwise description of the limit is immediate from the definition, and the invariance follows from the continuity of $T$ applied to a convergent subsequence.
 
-**Example (the elementary systems).** (i) For the rotation $R_\theta(z)=e^{2\pi i\theta}z$ of the circle $S^1$, the orbit of $z$ is dense if $\theta$ is irrational, and finite if $\theta$ is rational; in the irrational case $\omega(z)=X$ for every $z$, and in the rational case $\omega(z)$ is the cycle through $z$.
+**Example (the elementary systems).** (i) For the rotation $R_\theta(z)=\exp(2\pi i\theta)z$ of the circle $S^1$, the orbit of $z$ is dense if $\theta$ is irrational, and finite if $\theta$ is rational; in the irrational case $\omega(z)=X$ for every $z$, and in the rational case $\omega(z)$ is the cycle through $z$.
 
 (ii) For the shift $\sigma$ on the sequence space, a point is recurrent exactly when each of its blocks recurs infinitely often in the appropriate direction; the periodic points and the points of the minimal subshifts are recurrent, an eventually constant sequence is not, its orbit converging to the fixed point $0^\infty$, and the limit sets are the closed invariant subsets of the shift.
 

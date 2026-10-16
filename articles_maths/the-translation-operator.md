@@ -18,10 +18,10 @@ characters, and the diagonalisation by the Fourier operator. It is the article i
 translations and the algebra it generates are placed among the operators of the corpus.
 
 The prerequisites are *Measure Theory and Integration* for the translation invariance of Lebesgue measure,
-the $L^p$ spaces and the continuity of translation, *Fourier Analysis on Euclidean Spaces* for the
+the $L^{n}$ spaces and the continuity of translation, *Fourier Analysis on Euclidean Spaces* for the
 characters, the transform and its commutation with translation, *Convolution Operators*, the previous
 article of this group, for the translation-invariant operators and the multiplier correspondence, and
-*Modes of Convergence* for convergence in $L^p$. The unitary and spectral vocabulary — unitary operator,
+*Modes of Convergence* for convergence in $L^{n}$. The unitary and spectral vocabulary — unitary operator,
 spectrum, Stone's theorem, one-parameter group — is quoted from *Banach and Hilbert Spaces*, later in this
 Part, and from *Semigroups and Evolution Equations*, later in this Part, where the one-parameter groups and
 their generators are developed; the concrete facts are proved here, and nothing structural is assumed
@@ -57,7 +57,7 @@ from $h^{-1}x$ at some point $x$ is moved differently by the two.
 
 ### Isometry and Unitarity
 
-**Theorem.** On $L^p(\mathbb R^n)$, $1\leq p\leq\infty$, the translation is an isometry,
+**Theorem.** On $L^{n}(\mathbb R^n)$, $1\leq p\leq\infty$, the translation is an isometry,
 $\lVert\tau_yf\rVert_p=\lVert f\rVert_p$, by the translation invariance of Lebesgue measure; on
 $L^2(\mathbb R^n)$ it is a unitary operator, $\tau_y^\dagger\tau_y=\tau_y\tau_y^\dagger=\mathrm{id}$, with
 $\tau_y^\dagger=\tau_{-y}=\tau_y^{-1}$ and $\langle\tau_yf,\tau_yg\rangle=\langle f,g\rangle$.
@@ -73,13 +73,13 @@ integers, the finite groups, the circle — are used in this article and its com
 
 ### Continuity in the Group Variable
 
-**Theorem (strong continuity).** For $1\leq p<\infty$ and $f\in L^p(\mathbb R^n)$ the map
-$y\mapsto\tau_yf$ is continuous from $\mathbb R^n$ to $L^p(\mathbb R^n)$; that is,
+**Theorem (strong continuity).** For $1\leq p<\infty$ and $f\in L^{n}(\mathbb R^n)$ the map
+$y\mapsto\tau_yf$ is continuous from $\mathbb R^n$ to $L^{n}(\mathbb R^n)$; that is,
 $\lVert\tau_yf-f\rVert_p\to0$ as $y\to0$, and the map is uniformly continuous in the sense that
 $\lVert\tau_yf-\tau_{y'}f\rVert_p=\lVert\tau_{y-y'}f-f\rVert_p$ depends on $y-y'$ only. For
 $p=\infty$ with the supremum norm the statement is false.
 
-**Proof.** The continuity of translation in $L^p$ for $1\leq p<\infty$ is proved by approximating $f$ by a
+**Proof.** The continuity of translation in $L^{n}$ for $1\leq p<\infty$ is proved by approximating $f$ by a
 continuous compactly supported function, for which the statement is uniform continuity, and using the
 density; the translation-invariance of the norm gives the difference form. For $p=\infty$ the indicator of a
 half-line is moved by the translation by an amount bounded away from $0$ in the supremum norm, so the
@@ -101,7 +101,7 @@ Stone's theorem and not by the norm-convergent exponential of a bounded generato
 the Schwartz class by $A_jf=-\partial_jf$. Then $A_j$ is the infinitesimal generator of the one-parameter
 unitary group $t\mapsto\tau_{te_j}$:
 $$
-\tau_{te_j}=e^{tA_j},\qquad
+\tau_{te_j}=\exp(tA_j),\qquad
 A_jf=\lim_{t\to0}\frac{\tau_{te_j}f-f}{t}=-\partial_jf ,
 $$
 the limit being in $L^2$. The operator $A_j$ is closed, densely defined, and skew-adjoint,
@@ -127,8 +127,8 @@ of $A_j$.
 ### The Characters as Eigenfunctions
 
 **Definition.** A **character** of $G$ is a continuous homomorphism $\chi:G\to\mathbb T$ into the circle
-group; on $\mathbb R^n$ the characters are $e_\xi(x)=e^{2\pi ix\cdot\xi}$ for $\xi\in\mathbb R^n$, and on
-the circle they are $e_m(x)=e^{2\pi imx}$ for $m\in\mathbb Z$.
+group; on $\mathbb R^n$ the characters are $e_\xi(x)=\exp(2\pi ix\cdot\xi)$ for $\xi\in\mathbb R^n$, and on
+the circle they are $e_m(x)=\exp(2\pi imx)$ for $m\in\mathbb Z$.
 
 **Proposition.** Every character is an eigenfunction of every translation, with
 $$
@@ -148,9 +148,9 @@ finite group $G$ the translation $\tau_g$ has the characters as a basis of eigen
 the $\lvert G\rvert$-th roots of unity; on $\ell^2(\mathbb Z)$ the shift $S=\tau_1$ has spectrum $\mathbb T$
 and no eigenvalues.
 
-**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $\chi_y(\xi)=e^{-2\pi iy\cdot\xi}$
+**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $\chi_y(\xi)=\exp(-2\pi iy\cdot\xi)$
 by *The Fourier Operator* of this group; the spectrum of a multiplication operator $M_m$ on $L^2$ is the
-essential range of $m$, and for $y\neq0$ the function $\xi\mapsto e^{-2\pi iy\cdot\xi}$ sweeps the circle,
+essential range of $m$, and for $y\neq0$ the function $\xi\mapsto \exp(-2\pi iy\cdot\xi)$ sweeps the circle,
 so the essential range is $\mathbb T$. An eigenvalue would require $\chi_y$ to be constant on a set of positive
 measure, which it is not. On a finite group the characters form an orthonormal basis and the eigenvalues are
 $\overline{\chi(g)}$, roots of unity; on $\ell^2(\mathbb Z)$ the shift equation $Sf=\lambda f$ gives
@@ -181,7 +181,7 @@ algebra.
 $$
 (T_kf)(x)=\int_{\mathbb R^n}k(y)\,(\tau_yf)(x)\,dy ,
 $$
-the integral converging in $L^p$ for $f\in L^p$ and $1\leq p<\infty$. The closed algebra generated by the
+the integral converging in $L^{n}$ for $f\in L^{n}$ and $1\leq p<\infty$. The closed algebra generated by the
 translations in the strong operator topology is the algebra of translation-invariant operators.
 
 **Proof.** The identity is the definition of the convolution in the two-variable form, and the convergence
@@ -193,7 +193,7 @@ that are transforms of measures.
 
 The definitions of this article use only the group operation and an invariant measure. On a locally compact
 group $G$ with left Haar measure $\mu$, the left translation $(\tau_gf)(x)=f(g^{-1}x)$ is an isometry of
-$L^p(G,\mu)$ for every $p$ and a unitary of $L^2(G,\mu)$, and $g\mapsto\tau_g$ is strongly continuous, by
+$L^{n}(G,\mu)$ for every $p$ and a unitary of $L^2(G,\mu)$, and $g\mapsto\tau_g$ is strongly continuous, by
 the left invariance of the Haar measure; the convolution $(f*h)(x)=\int f(y)h(y^{-1}x)\,d\mu(y)$ is the
 superposition of the translations, and the operators commuting with the representation form its
 **commutant**, whose study — the group von Neumann algebra, the unitary representations and their
@@ -205,8 +205,8 @@ articles of this corpus use.
 ## Summary
 
 The translation $\tau_g$ on a function space, $(\tau_gf)(x)=f(g^{-1}x)$, is a representation of the group:
-$\tau_g\tau_h=\tau_{gh}$, $\tau_e=\mathrm{id}$. On $L^p$ of a group with invariant measure it is an
-isometry, and on $L^2$ a unitary; on $L^p(\mathbb R^n)$, $1\leq p<\infty$, it is strongly continuous in the
+$\tau_g\tau_h=\tau_{gh}$, $\tau_e=\mathrm{id}$. On $L^{n}$ of a group with invariant measure it is an
+isometry, and on $L^2$ a unitary; on $L^{n}(\mathbb R^n)$, $1\leq p<\infty$, it is strongly continuous in the
 group variable but not continuous in the operator norm, $\lVert\tau_y-\mathrm{id}\rVert=\sqrt2$ for
 $y\neq0$. Its
 infinitesimal generator on the one-parameter subgroup $t\mapsto\tau_{te_j}$ is the skew-adjoint operator
@@ -224,7 +224,7 @@ instance belongs to the group-theoretic category of this Part.
 |---|---|
 | $\tau_g$ | Translation, $(\tau_gf)(x)=f(g^{-1}x)$; $\tau_yf(x)=f(x-y)$ on $\mathbb R^n$ |
 | $\tau_y^\dagger=\tau_{-y}$ | Adjoint of a translation, a unitary on $L^2$ |
-| $e_\xi$, $e_m$ | Characters $e^{2\pi ix\cdot\xi}$, $e^{2\pi imx}$ |
+| $e_\xi$, $e_m$ | Characters $\exp(2\pi ix\cdot\xi)$, $\exp(2\pi imx)$ |
 | $S$ | Shift on $\ell^2(\mathbb Z)$, $S=\tau_1$ |
 | $A_j=-\partial_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, skew-adjoint |
 | $\Delta_h=\tau_{-h}-\mathrm{id}$ | Forward difference, the discrete generator |
@@ -240,5 +240,5 @@ instance belongs to the group-theoretic category of this Part.
   Press, 1980), for strongly continuous unitary groups, Stone's theorem and the generator.
 - Elias M. Stein and Guido Weiss, *Introduction to Fourier Analysis on Euclidean Spaces* (Princeton
   University Press, 1971), for translation, the continuity of translation and the multiplier operators.
-- Kôsaku Yosida, *Functional Analysis* (6th ed., Springer, 1980), for the translation group on $L^p$ and
+- Kôsaku Yosida, *Functional Analysis* (6th ed., Springer, 1980), for the translation group on $L^{n}$ and
   the semigroup generated by differentiation.

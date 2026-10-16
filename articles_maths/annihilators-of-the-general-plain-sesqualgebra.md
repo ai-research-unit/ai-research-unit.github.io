@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace.
 
@@ -27,7 +27,7 @@ article owns that reading, the operator with its rank, and the shape of the anni
 remarkable subspaces; the zero-divisor set and its comparison with the parent and the four general
 products are the cited article's.
 
-**The results.** The left and the right multiplications of the block, $L_{\tilde P}\tilde X=\tilde P\tilde X^{*}$ and $R_{\tilde P}\tilde X=\tilde X\tilde P^{*}$, are conjugate-linear, and the two annihilators coincide, $A_\star(\tilde Q)=B_\star(\tilde Q)=K(\tilde Q)^{*}$, the conjugate of the plain annihilator $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone every annihilator is $\{0\}$ and the operator has complex rank four; on the cone each is a complex plane of complex dimension two and the operator has complex rank two. The block is the one of the general products for which the two annihilators are equal rather than merely two.
+**The results.** The left and the right multiplications of the block, $L_{\tilde P}\tilde X=\tilde P\tilde X^{*}$ and $R_{\tilde P}\tilde X=\tilde X\tilde P^{*}$, are conjugate-linear, and the two annihilators coincide, $A_\star(\tilde Q)=B_\star(\tilde Q)=\langle\tilde Q\rangle_{\natural*}^{*}$, the conjugate of the plain annihilator $\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone every annihilator is $\{0\}$ and the operator has complex rank four; on the cone each is a complex plane of complex dimension two and the operator has complex rank two. The block is the one of the general products for which the two annihilators are equal rather than merely two.
 
 ## The Annihilator of a Product
 
@@ -56,20 +56,20 @@ Plain Algebra*.
 
 ## The Two Annihilators Coincide
 
-**The two annihilators are equal and are the conjugate of the plain annihilator, $B_\star(\tilde Q)=A_\star(\tilde Q)=K(\tilde Q)^{*}$ with $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$: off the cone both are $\{0\}$ and the element is a unit of the plain product, and on the cone each is a complex plane of complex dimension two.**
+**The two annihilators are equal and are the conjugate of the plain annihilator, $B_\star(\tilde Q)=A_\star(\tilde Q)=\langle\tilde Q\rangle_{\natural*}^{*}$ with $\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$: off the cone both are $\{0\}$ and the element is a unit of the plain product, and on the cone each is a complex plane of complex dimension two.**
 
 **Theorem (the two annihilators are equal, and they are the conjugate of the plain annihilator).**
 For every $\tilde Q$,
 $$
-B_\star(\tilde Q)=A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in K(\tilde Q)\bigr\}=K(\tilde Q)^{*},
-\qquad K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\},
+B_\star(\tilde Q)=A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in \langle\tilde Q\rangle_{\natural*}\bigr\}=\langle\tilde Q\rangle_{\natural*}^{*},
+\qquad \langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\},
 $$
-where $K(\tilde Q)$ is the plain left annihilator of $\tilde Q$ and $K(\tilde Q)^{*}$ is its image
+where $\langle\tilde Q\rangle_{\natural*}$ is the plain left annihilator of $\tilde Q$ and $\langle\tilde Q\rangle_{\natural*}^{*}$ is its image
 under the involution. For a nonzero zero divisor the two annihilators are equal and of complex
 dimension two; for a unit of the plain product both are $\{0\}$.
 
 *Proof.* The right annihilator is
-$B_\star(\tilde Q)=\{\tilde X:\tilde Q\tilde X^{*}=0\}=\{\tilde X:\tilde X^{*}\in K(\tilde Q)\}=K(\tilde Q)^{*}$,
+$B_\star(\tilde Q)=\{\tilde X:\tilde Q\tilde X^{*}=0\}=\{\tilde X:\tilde X^{*}\in \langle\tilde Q\rangle_{\natural*}\}=\langle\tilde Q\rangle_{\natural*}^{*}$,
 the star being a bijection. For the left annihilator, $\tilde X\star\tilde Q=0$ reads
 $\tilde X\tilde Q^{*}=0$, and applying the anti-automorphism ${}^{*}$ gives
 $\tilde Q\tilde X^{*}=0$, with the converse by the same argument because ${}^{*}$ is a bijection;
@@ -141,7 +141,7 @@ the right annihilator being the kernels of the left and the right multiplication
 sesquimultiplication $\tilde P\star\tilde X=\tilde P\tilde X^{*}$ carries the conjugate linear star
 in the slot, and the conjugate-alternation identifies the two sides: the two annihilators of an
 element are equal and are the conjugate of the plain annihilator
-$K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone both annihilators vanish and the
+$\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone both annihilators vanish and the
 element is a unit of the plain product; on the cone each is a complex plane. The block is the plain
 parent with the star added, and the star is exactly what turns the two distinct planes of the
 parent into one plane.
@@ -152,16 +152,16 @@ parent into one plane.
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the general plain sesquimultiplication, the operation $\mathrm{GPS}$, the plain product with the star in the second slot |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator, equal by the conjugate-alternation |
-| $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$ | the plain left annihilator, the parent's object |
-| $K(\tilde Q)^{*}$ | the common annihilator of the block, the conjugate of the plain annihilator |
+| $\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$ | the plain left annihilator, the parent's object |
+| $\langle\tilde Q\rangle_{\natural*}^{*}$ | the common annihilator of the block, the conjugate of the plain annihilator |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the criterion of the cone |
 | the complex plane on the cone | the annihilator of a nonzero zero divisor, of dimension two |
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the operation and its table.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the operation and its table.
 - *Zero Divisors of the General Plain Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md`), above this article in this category, for the criterion and the two families.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the parent, whose two annihilators are distinct.
-- *Annihilators of the General Plain Algebra* (`articles_maths/annihilators-of-the-biquaternion-algebra.md`), the parent's annihilators, the two distinct planes.
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), the parent, whose two annihilators are distinct.
+- *Annihilators of the Biquaternion Algebra* (`articles_maths/annihilators-of-the-biquaternion-algebra.md`), the parent's annihilators, the two distinct planes.
 - *Annihilators of the General Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.md`), the sibling whose two sides are distinct again.

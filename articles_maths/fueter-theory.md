@@ -120,7 +120,7 @@ using $\int_{\partial B(q,r)}dS=2\pi^2r^3$.
 The construction that connects complex analysis to the quaternionic theory is not the substitution of a quaternion for the complex variable; it is the radial extension of a holomorphic function followed by the Laplacian. Write a point of $\mathbb{H}$ as $q=q_0+\vec q$ with $r=|\vec q|$, and for a function $g(x,y)$ of two real variables define its **axial extension**
 
 $$
-\tilde g(q) = g(q_0,r) .
+g^{\mathrm{ax}}(q) = g(q_0,r) .
 $$
 
 This extension is constant on every sphere $\{q_0\}\times S^2_{r}$ about the real axis, and it is well defined away from the axis $\vec q=0$ together with the derivatives that occur below.
@@ -128,20 +128,20 @@ This extension is constant on every sphere $\{q_0\}\times S^2_{r}$ about the rea
 **Theorem (Fueter).** Let $f=u+iv$ be holomorphic on a domain $\Omega\subseteq\mathbb{C}$, and define
 
 $$
-\tilde f(q) = u(q_0,r) + \frac{\vec q}{r}\,v(q_0,r) , \qquad |\vec q| = r .
+f^{\mathrm{ax}}(q) = u(q_0,r) + \frac{\vec q}{r}\,v(q_0,r) , \qquad |\vec q| = r .
 $$
 
 Then the function
 
 $$
-F(q) = \Delta\tilde f(q)
+F(q) = \Deltaf^{\mathrm{ax}}(q)
 $$
 
-is left and right regular at every point where $\tilde f$ is defined and $r\neq0$. For $f(z)=z^n$ the resulting function is regular and homogeneous of degree $n-2$; in particular $f(z)=1$ and $f(z)=z$ give $F=0$, and the construction is an isomorphism from the holomorphic functions onto the axial regular functions modulo the two lowest degrees.
+is left and right regular at every point where $f^{\mathrm{ax}}$ is defined and $r\neq0$. For $f(z)=z^n$ the resulting function is regular and homogeneous of degree $n-2$; in particular $f(z)=1$ and $f(z)=z$ give $F=0$, and the construction is an isomorphism from the holomorphic functions onto the axial regular functions modulo the two lowest degrees.
 
 *Proof.* Quoted as standard (Fueter 1935; see also the treatments of Sudbery and of Colombo–Sabadini–Struppa). The verification is a computation in the axial coordinates of the next section: writing a regular function in the form $A(q_0,r)+\vec qB(q_0,r)$ leads to the pair of equations $A_0=3B+rB_r$, $B_0=-A_r/r$, and the Cauchy–Riemann equations for $f=u+iv$ together with the radial form of the Laplacian show that $A,B$ built from $u,v$ by $\Delta$ satisfy this pair.
 
-**Example (the verification in low degree).** For $f(z)=z^2$ one has $u=q_0^2-r^2$, $v=2q_0r$, so $\tilde f=q_0^2-r^2+2q_0\vec q$ and, using $\Delta(q_0^2-r^2)=2-6=-4$ in $\mathbb{R}^4$ and $\Delta(2q_0q_i)=0$ for each $i$, the function $F=-4$ is a nonzero constant, hence regular. For $f(z)=z^3$ one has $u=q_0^3-3q_0r^2$, $v=3q_0^2r-r^3$, hence $\tilde f=q_0^3-3q_0r^2+\vec q(3q_0^2-r^2)$; now $\Delta(q_0^3-3q_0r^2)=6q_0-18q_0=-12q_0$ and, componentwise, $\Delta(q_i(3q_0^2-r^2))=-4q_i$, so
+**Example (the verification in low degree).** For $f(z)=z^2$ one has $u=q_0^2-r^2$, $v=2q_0r$, so $f^{\mathrm{ax}}=q_0^2-r^2+2q_0\vec q$ and, using $\Delta(q_0^2-r^2)=2-6=-4$ in $\mathbb{R}^4$ and $\Delta(2q_0q_i)=0$ for each $i$, the function $F=-4$ is a nonzero constant, hence regular. For $f(z)=z^3$ one has $u=q_0^3-3q_0r^2$, $v=3q_0^2r-r^3$, hence $f^{\mathrm{ax}}=q_0^3-3q_0r^2+\vec q(3q_0^2-r^2)$; now $\Delta(q_0^3-3q_0r^2)=6q_0-18q_0=-12q_0$ and, componentwise, $\Delta(q_i(3q_0^2-r^2))=-4q_i$, so
 
 $$
 F = -12q_0-4\vec q ,
@@ -149,7 +149,7 @@ $$
 
 which is regular of degree $1$: indeed $F=A+\vec qB$ with $A=-12q_0$, $B=-4$, and the axial equations give $-12=-12$ and $0=0$. The two examples exhibit the degree shift by two and the vanishing on the constants and the identity.
 
-**Remark (why the Laplacian is necessary).** The axial extension $\tilde f$ itself is not regular in general: for $f(z)=z^3$, $\bar\partial\tilde f=(A_0-3B-rB_r)+(B_0+A_r/r)\vec q$ with $A=q_0^3-3q_0r^2$, $B=3q_0^2-r^2$, and neither bracket vanishes. The theorem says that the obstruction is exactly the one removed by the Laplacian. This is the structural difference between the complex and the quaternionic theory: holomorphic functions of one variable correspond not to regular functions but to regular functions after a second-order operator has been applied, and the correspondence loses the two lowest homogeneities.
+**Remark (why the Laplacian is necessary).** The axial extension $f^{\mathrm{ax}}$ itself is not regular in general: for $f(z)=z^3$, $\bar\partialf^{\mathrm{ax}}=(A_0-3B-rB_r)+(B_0+A_r/r)\vec q$ with $A=q_0^3-3q_0r^2$, $B=3q_0^2-r^2$, and neither bracket vanishes. The theorem says that the obstruction is exactly the one removed by the Laplacian. This is the structural difference between the complex and the quaternionic theory: holomorphic functions of one variable correspond not to regular functions but to regular functions after a second-order operator has been applied, and the correspondence loses the two lowest homogeneities.
 
 **Remark (the symmetry behind the construction).** The orthogonal group $SO(3)$ acts on the imaginary part of $q$ and fixes the real part; it acts on the regular functions by $f\mapsto f\circ T^{-1}$, $T\in SO(3)$, and the axial functions are exactly the fixed points of this action. Fueter's theorem is therefore the statement that the invariant part of the quaternionic theory is a copy of complex analysis, while the full theory is the orbit of that invariant part under the rotation group. The rotation group itself, the spin cover and the quaternionic description of rotations are Part II's, and the symmetry statement above is the analytic form of the same structure.
 
@@ -193,7 +193,7 @@ $$
 \phi_0 = \psi_r+\frac{2\psi}{r} , \qquad \psi_0 = -\phi_r ,
 $$
 
-the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\zeta=q_0+ir$ produces one through $F=\Delta\tilde f$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
+the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\zeta=q_0+ir$ produces one through $F=\Deltaf^{\mathrm{ax}}$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
 
 *Proof.* Substituting $A=\phi$, $B=\psi/r$ into $A_0=3B+rB_r$ gives $\phi_0=3\psi/r+r(\psi_r/r-\psi/r^2)=\psi_r+2\psi/r$, and substituting into $B_0=-A_r/r$ gives $\psi_0/r-\psi/r^2\cdot0=-\phi_r/r$, that is $\psi_0=-\phi_r$. For the worked example $F=-12q_0-4\vec q$ one has $\phi=-12q_0$, $\psi=-4r$, and the pair reads $-12=-4-8$ and $0=0$.
 
@@ -229,7 +229,7 @@ of the Fueter variables $z_0=q_0$, $z_i=q_0e_i-q_i$ $(i=1,2,3)$, taken over the 
 
 ## Summary
 
-The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3$ and its conjugate $\partial$ factor the Laplacian of $\mathbb{R}^4$, $\bar\partial\partial=\partial\bar\partial=\Delta$, and are elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ and inverse $\bar\sigma(\xi)/|\xi|^2$. A function is left regular when $\bar\partial f=0$; the left regular functions form a real vector space and a right $\mathbb{H}$-module, conjugation exchanges left and right regularity, and every regular function is real-analytic with harmonic components, so the mean value property, the maximum principle, Liouville's theorem and the identity theorem hold. The linear regular functions are the Fueter variables $z_i=q_0e_i-q_i$, spanning a space of real dimension $12$. The fundamental solution is the Cauchy–Fueter kernel $E(q)=\frac{1}{2\pi^2}q^{\natural}|q|^{-4}$, and it yields the Cauchy–Fueter formula $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}(p-q)^{\natural}|p-q|^{-4}\nu_B(p)f(p)dS(p)$, the Cauchy–Fueter–Pompeiu formula for non-regular functions, the Cauchy estimates on balls and the jump and projection statements of the general theory. **Fueter's theorem** constructs regular functions from holomorphic ones: the axial extension $\tilde f=u(q_0,r)+\frac{\vec q}{r}v(q_0,r)$ of a holomorphic $f=u+iv$ is not regular, but its Laplacian $F=\Delta\tilde f$ is, the construction shifting homogeneity by two and killing the constants and the identity. The axial regular functions $A(q_0,r)+\vec qB(q_0,r)$ are exactly those solving the pair $A_0=3B+rB_r$, $B_0=-A_r/r$, which is a Cauchy–Riemann system in the reduced variables $(q_0,r)$, and every regular function on a ball has a Taylor expansion in the homogeneous monogenic pieces $\mathcal{M}_k$, whose standard bases are the Fueter polynomials $V_\lambda$ and whose coefficients are computed by the Cauchy–Fueter formula. The class is rigid but not an algebra: products of regular functions need not be regular. The general operator theory is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*; the slice description and the biquaternionic, split-biquaternionic and other value algebras are Part V.
+The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3$ and its conjugate $\partial$ factor the Laplacian of $\mathbb{R}^4$, $\bar\partial\partial=\partial\bar\partial=\Delta$, and are elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ and inverse $\bar\sigma(\xi)/|\xi|^2$. A function is left regular when $\bar\partial f=0$; the left regular functions form a real vector space and a right $\mathbb{H}$-module, conjugation exchanges left and right regularity, and every regular function is real-analytic with harmonic components, so the mean value property, the maximum principle, Liouville's theorem and the identity theorem hold. The linear regular functions are the Fueter variables $z_i=q_0e_i-q_i$, spanning a space of real dimension $12$. The fundamental solution is the Cauchy–Fueter kernel $E(q)=\frac{1}{2\pi^2}q^{\natural}|q|^{-4}$, and it yields the Cauchy–Fueter formula $f(q)=\frac{1}{2\pi^2}\int_{\partial\Omega}(p-q)^{\natural}|p-q|^{-4}\nu_B(p)f(p)dS(p)$, the Cauchy–Fueter–Pompeiu formula for non-regular functions, the Cauchy estimates on balls and the jump and projection statements of the general theory. **Fueter's theorem** constructs regular functions from holomorphic ones: the axial extension $f^{\mathrm{ax}}=u(q_0,r)+\frac{\vec q}{r}v(q_0,r)$ of a holomorphic $f=u+iv$ is not regular, but its Laplacian $F=\Deltaf^{\mathrm{ax}}$ is, the construction shifting homogeneity by two and killing the constants and the identity. The axial regular functions $A(q_0,r)+\vec qB(q_0,r)$ are exactly those solving the pair $A_0=3B+rB_r$, $B_0=-A_r/r$, which is a Cauchy–Riemann system in the reduced variables $(q_0,r)$, and every regular function on a ball has a Taylor expansion in the homogeneous monogenic pieces $\mathcal{M}_k$, whose standard bases are the Fueter polynomials $V_\lambda$ and whose coefficients are computed by the Cauchy–Fueter formula. The class is rigid but not an algebra: products of regular functions need not be regular. The general operator theory is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*; the slice description and the biquaternionic, split-biquaternionic and other value algebras are Part V.
 
 ## Summary of Notation
 
@@ -245,8 +245,8 @@ The Fueter operator $\bar\partial=\partial_0+e_1\partial_1+e_2\partial_2+e_3\par
 | $z_i=q_0e_i-q_i$ | Fueter variables |
 | $E(q)=\frac{1}{2\pi^2}q^{\natural}|q|^{-4}$ | Cauchy–Fueter kernel; $\bar\partial E=\delta_0$ |
 | $\nu_B=\sum_\alpha\nu_\alpha e_\alpha$ | Conormal element |
-| $\tilde f$ | Axial (radial) extension of $f$ |
-| $F=\Delta\tilde f$ | Fueter construction |
+| $f^{\mathrm{ax}}$ | Axial (radial) extension of $f$ |
+| $F=\Deltaf^{\mathrm{ax}}$ | Fueter construction |
 | $A(q_0,r)+\vec qB(q_0,r)$ | Axial form of a regular function |
 | $r=|\vec q|$, $\zeta=q_0+ir$ | Radial coordinate and reduced complex variable |
 | $V_\lambda$ | Fueter polynomials; $\mathcal{M}_k$ homogeneous regular polynomials |

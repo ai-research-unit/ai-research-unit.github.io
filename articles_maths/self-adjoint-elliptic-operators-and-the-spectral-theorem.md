@@ -84,13 +84,13 @@ $$
 
 and the same leading term holds for the Neumann condition and for any self-adjoint elliptic realisation of the Laplacian.
 
-*Proof.* The proof is the **heat-kernel method**. The trace of the heat semigroup is $\operatorname{tr}e^{t\Delta}=\sum_ne^{-\lambda_nt}$ for $t>0$, and the heat kernel of the Dirichlet problem satisfies $K(t,x,x)\sim(4\pi t)^{-n/2}$ as $t\downarrow0$ uniformly on compact subsets of $\Omega$ by *Distributions and Fundamental Solutions*; integrating over $\Omega$,
+*Proof.* The proof is the **heat-kernel method**. The trace of the heat semigroup is $\operatorname{tr}\exp(t\Delta)=\sum_n\exp(-\lambda_nt)$ for $t>0$, and the heat kernel of the Dirichlet problem satisfies $K(t,x,x)\sim(4\pi t)^{-n/2}$ as $t\downarrow0$ uniformly on compact subsets of $\Omega$ by *Distributions and Fundamental Solutions*; integrating over $\Omega$,
 
 $$
-\sum_{n\ge1}e^{-\lambda_nt} = \int_\Omega K(t,x,x)\,dx \sim \frac{|\Omega|}{(4\pi t)^{n/2}} \qquad (t\downarrow0) .
+\sum_{n\ge1}\exp(-\lambda_nt) = \int_\Omega K(t,x,x)\,dx \sim \frac{|\Omega|}{(4\pi t)^{n/2}} \qquad (t\downarrow0) .
 $$
 
-The two sides of the asymptotics are related by Karamata's Tauberian theorem for the Laplace transform: if the $\lambda_n$ increase and $\sum_ne^{-\lambda_nt}\sim Ct^{-\alpha}$ as $t\downarrow0$, then $N(\lambda)\sim\frac{C}{\Gamma(\alpha+1)}\lambda^\alpha$. Here $\alpha=n/2$ and $C=|\Omega|(4\pi)^{-n/2}$, so
+The two sides of the asymptotics are related by Karamata's Tauberian theorem for the Laplace transform: if the $\lambda_n$ increase and $\sum_n\exp(-\lambda_nt)\sim Ct^{-\alpha}$ as $t\downarrow0$, then $N(\lambda)\sim\frac{C}{\Gamma(\alpha+1)}\lambda^\alpha$. Here $\alpha=n/2$ and $C=|\Omega|(4\pi)^{-n/2}$, so
 
 $$
 N(\lambda) \sim \frac{|\Omega|}{(4\pi)^{n/2}\,\Gamma(n/2+1)}\,\lambda^{n/2} = \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} ,

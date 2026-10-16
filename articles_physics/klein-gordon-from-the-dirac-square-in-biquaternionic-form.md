@@ -94,7 +94,7 @@ $$
 
 Three features of this reduction deserve to be named, because they are what the algebra contributes and not merely what it transcribes.
 
-First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\tilde{\nabla}^{\natural}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\tilde{\nabla}^{\natural}$ is the concrete form of that anticommutator. The square is the biquaternion norm $N(\tilde{\nabla}) = \tilde{\nabla}\tilde{\nabla}^{\natural}$, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
+First, the reduction uses the **two different gradients**. It is the passage from $\tilde{\nabla}$ to $\tilde{\nabla}^{\natural}$ — from the operator to its quaternion conjugate — that produces a central scalar. This is the algebraic content of the matrix statement that a square root must be paired with its conjugate to square to a scalar: $\not\partial$ alone squares to $g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$, and it is the anticommutator that makes the result central; in the algebra the pairing $\tilde{\nabla},\tilde{\nabla}^{\natural}$ is the concrete form of that anticommutator. The square is the biquaternion norm $\langle\tilde{\nabla}\rangle_{\natural} = \tilde{\nabla}\tilde{\nabla}^{\natural}$, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion — the observation the Klein–Gordon article makes about its own operator.
 
 Second, the reduction eliminates **both** members of the pair at once. It is not that one chiral half obeys Klein–Gordon and the other does not; the off-diagonal mass couples them so that squaring forces each half onto the same second-order shell. This is the biquaternion interpretation of the matrix statement that the mass term is off-diagonal: a diagonal mass term would square to a diagonal mass term, but the off-diagonal form is what makes the cross terms cancel between the two members and leaves the single central operator $\Box$.
 
@@ -226,7 +226,7 @@ $$
 The biquaternion norm of the wave biquaternion is
 
 $$
-N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
+\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box - \mu^2)\tilde{\Psi} = 0$ is the mass-shell condition
@@ -239,7 +239,7 @@ $$
 
 which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$ and $\mu = mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - \mu^2$ vanishes on the same shell on which the biquaternion norm equals $-\mu^2$.
 
-The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $e^{\mp i(Et-\vec p\cdot\vec x)}$. A **spinor-valued** field obeying the same second-order equation has one such pair for each of its four components, hence an eight-dimensional complex solution space at fixed $\vec p$, since $(\Box - \mu^2)$ acts on components without mixing them. The first-order Dirac equation selects a **four**-dimensional subspace of it: the two positive-frequency spinors $u^{(r)}(\vec p)e^{-i(Et-\vec p\cdot\vec x)}$ and the two negative-frequency spinors $v^{(r)}(\vec p)e^{+i(Et-\vec p\cdot\vec x)}$, with $r = 1,2$. Every one of the four is annihilated by $\Box - \mu^2$ — this was checked componentwise on a superposition of two plane waves — but the converse fails: a general second-order solution is a sum of **eight** independent modes with arbitrary coefficients, and the four linear relations $(\not\partial - m)\psi = 0$ cut that space down to the four-dimensional first-order solution space. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
+The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Et-\vec p\cdot\vec x))$. A **spinor-valued** field obeying the same second-order equation has one such pair for each of its four components, hence an eight-dimensional complex solution space at fixed $\vec p$, since $(\Box - \mu^2)$ acts on components without mixing them. The first-order Dirac equation selects a **four**-dimensional subspace of it: the two positive-frequency spinors $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot\vec x))$ and the two negative-frequency spinors $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot\vec x))$, with $r = 1,2$. Every one of the four is annihilated by $\Box - \mu^2$ — this was checked componentwise on a superposition of two plane waves — but the converse fails: a general second-order solution is a sum of **eight** independent modes with arbitrary coefficients, and the four linear relations $(\not\partial - m)\psi = 0$ cut that space down to the four-dimensional first-order solution space. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
 The same count can be read off the algebra. The square is the diagonal operator $(\Box - \mu^2)$ acting on the two chiral blocks, and it annihilates each block independently; the first-order pair is the off-diagonal operator that locks the two blocks together through the mass. The square forgets the lock, and the lost information is exactly the four linear relations that the lock imposes.
 
@@ -267,7 +267,7 @@ The transfer from the first-order pair to the second-order equation can now be a
 
 There is a final structural remark. The passage from the pair to the square is the passage from a **graded** object to its diagonal. The first-order pair is off-diagonal in the chirality grading — the mass maps $L$ to $R$ and back — while the square is diagonal, $(\Box - m^2)$ acting on each chirality separately. The grading is what the square erases, and it is the same grading that the supersymmetric structure of the first-order operator exploits, which the companion article on supersymmetric quantum physics develops. The Klein–Gordon equation is the bosonic shadow of the fermionic square root; it is the diagonal of a matrix whose off-diagonal entries are the Dirac operator and its conjugate.
 
-The identities below were checked by direct computation on explicit $4\times4$ matrices in the Dirac representation. The anticommutator $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ held to $0$; the identity $(\gamma^\mu k_\mu)^2 = g^{\mu\nu}k_\mu k_\nu I_4$ held to $2\times10^{-15}$ over random four-momenta; the spinors $u^{(r)},v^{(r)}$ satisfied $(\not p - m)u = 0$ and $(\not p + m)v = 0$ to $10^{-15}$; and the superposition $a\,u^{(1)}(\vec p)e^{-i(Et-\vec p\cdot\vec x)} + b\,u^{(2)}(\vec k)e^{-i(E't-\vec k\cdot\vec x)}$, with $a,b$ complex, was annihilated by $i\not\partial - m$ to $2\times10^{-15}$ and satisfied $(\Box - m^2)\psi = 0$ to $3\times10^{-15}$. The identity tested was the operator identity, on a superposition of two distinct momenta, not on a single plane wave.
+The identities below were checked by direct computation on explicit $4\times4$ matrices in the Dirac representation. The anticommutator $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ held to $0$; the identity $(\gamma^\mu k_\mu)^2 = g^{\mu\nu}k_\mu k_\nu I_4$ held to $2\times10^{-15}$ over random four-momenta; the spinors $w^{(r)},v^{(r)}$ satisfied $(\not p - m)w = 0$ and $(\not p + m)v = 0$ to $10^{-15}$; and the superposition $a\,w^{(1)}(\vec p)\exp(-i(Et-\vec p\cdot\vec x)) + b\,w^{(2)}(\vec k)\exp(-i(E't-\vec k\cdot\vec x))$, with $a,b$ complex, was annihilated by $i\not\partial - m$ to $2\times10^{-15}$ and satisfied $(\Box - m^2)\psi = 0$ to $3\times10^{-15}$. The identity tested was the operator identity, on a superposition of two distinct momenta, not on a single plane wave.
 
 ## Summary
 
@@ -289,7 +289,7 @@ The square carries the mass shell $\tilde{K}\tilde{K}^{\natural} = -\mu^2$, henc
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde{K} = i\omega/c\,e_0 + \vec k$, $\tilde{Q} = ict\,e_0 + \vec x$ | Four-wavevector and four-position |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |
 | $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ | Dirac matrices and Clifford metric |
@@ -304,7 +304,7 @@ The square carries the mass shell $\tilde{K}\tilde{K}^{\natural} = -\mu^2$, henc
 | $(\not\partial)^2 = g^{\mu\nu}\partial_\mu\partial_\nu = -\Box$ | Square of the slash |
 | $(i\not\partial + m)(i\not\partial - m) = \Box - m^2$ | The Dirac square (matrix form) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Linear, chirality-off-diagonal mass pair |
-| $u^{(r)}(\vec p)$, $v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
+| $w^{(r)}(\vec p)$, $v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
 | $E^2 = \vec p^2c^2 + m^2c^4$ | Dispersion relation |
 
 ## Further Reading

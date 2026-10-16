@@ -5,7 +5,7 @@
 The escape-time algorithm of the quaternion quadratic family needs two analytic inputs: a radius beyond which every orbit is known to diverge, and a function that measures how fast it diverges. The radius is $R(c)=1+|c|$, and the function is the **Green's function**
 
 $$
-G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n| , \qquad \tilde q_n = f_c^{\,n}(\tilde q) .
+G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n|, \qquad \tilde q_n = f_c^{\,n}(\tilde q).
 $$
 
 The limit exists off the filled Julia set, it is positive there and zero on $K_c$, it satisfies $G_c \circ f_c = 2G_c$, and it grows like $\log|\tilde q|$ at infinity. Its exponential is the modulus of the Böttcher coordinate, and on each invariant complex plane the whole construction reduces to the classical complex one.
@@ -14,14 +14,14 @@ The article also records an honest limitation. The menu asks for a potential "ha
 
 The escape lemma, the filled Julia set and the quadratic map are from *The Quaternion Quadratic Map and Its Julia Sets*; the complex Green's function, the Böttcher coordinate and the conjugacy to the squaring map are from *The Escape Radius and the Green's Function* and *The Julia Sets of a Complex Polynomial*; the quaternion norm and its multiplicativity are from *Quaternion Norm and Invertibility*; the potential theory is Part III's, in *Potential Theory*; and the dimension is *The Dimension of the Quaternion Julia Sets*'s. No physics is invoked.
 
-Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $N(\tilde q)=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{N(\tilde q)}$, and $R(c)=1+|c|$.
+Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, and $R(c)=1+|c|$.
 
 ## The Escape Radius
 
 **Theorem (the radius).** Let $c \in \mathbb{H}$ and $R(c)=1+|c|$. If $|\tilde q_n| \geq R(c)$ for some $n$ then $|\tilde q_k| \to \infty$; consequently the filled Julia set is
 
 $$
-K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\} ,
+K_c = \{\tilde q \in \mathbb{H} : |\tilde q_n| \leq R(c)\ \text{for every}\ n \geq 0\},
 $$
 
 and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until either $R(c)$ is exceeded or a prescribed bound on the number of steps is reached.
@@ -35,7 +35,7 @@ and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until
 **Definition.** For $\tilde q$ with unbounded orbit the **Green's function** is
 
 $$
-G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n| ,
+G_c(\tilde q) = \lim_{n\to\infty} \frac{1}{2^n}\log|\tilde q_n|,
 $$
 
 and for $\tilde q \in K_c$ one sets $G_c(\tilde q)=0$.
@@ -43,18 +43,18 @@ and for $\tilde q \in K_c$ one sets $G_c(\tilde q)=0$.
 **Theorem (existence and the explicit series).** For every $\tilde q$ with unbounded orbit the limit exists, and for $|\tilde q|>R(c)$ it equals the absolutely convergent series
 
 $$
-G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{N(\tilde q_k^2+c)}{N(\tilde q_k)^2} .
+G_c(\tilde q) = \log|\tilde q| + \frac12\sum_{k=0}^{\infty} \frac{1}{2^{k+1}}\log \frac{\langle\tilde q_k^2+c\rangle_{\natural}}{\langle\tilde q_k\rangle_{\natural}^2}.
 $$
 
 The function $G_c$ is continuous, nonnegative, vanishes exactly on $K_c$, and satisfies $G_c(\tilde q)=\log|\tilde q|+O(|\tilde q|^{-2})$ as $|\tilde q|\to\infty$.
 
-*Proof.* Multiplicativity of the norm and the identity $\tilde q_{k+1}=\tilde q_k^2(1+c\tilde q_k^{-2})$ give, with $T_k=N(\tilde q_k^2+c)/N(\tilde q_k)^2$,
+*Proof.* Multiplicativity of the norm and the identity $\tilde q_{k+1}=\tilde q_k^2(1+c\tilde q_k^{-2})$ give, with $T_k=\langle\tilde q_k^2+c\rangle_{\natural}/\langle\tilde q_k\rangle_{\natural}^2$,
 
 $$
-|\tilde q_{k+1}| = |\tilde q_k|^2\sqrt{T_k} , \qquad \frac{\log|\tilde q_{k+1}|}{2^{k+1}} = \frac{\log|\tilde q_k|}{2^k} + \frac{1}{2^{k+1}}\cdot\frac12\log T_k ,
+|\tilde q_{k+1}| = |\tilde q_k|^2\sqrt{T_k}, \qquad \frac{\log|\tilde q_{k+1}|}{2^{k+1}} = \frac{\log|\tilde q_k|}{2^k} + \frac{1}{2^{k+1}}\cdot\frac12\log T_k,
 $$
 
-and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tilde q| + \frac12\sum_{k=0}^{n-1}2^{-(k+1)}\log T_k$. For an escaping orbit $|\tilde q_k|\to\infty$ and $T_k \to 1$, and the terms decay geometrically because $|\tilde q_k|$ grows doubly exponentially along the escape; the series converges absolutely and uniformly on each compact subset of the escaping region, giving existence and continuity. The value is nonnegative because each partial sum is the logarithm of a modulus; it vanishes exactly when the orbit is bounded, by the escape lemma; and the size of the first term, $(2\tilde q^2\cdot c+N(c))/N(\tilde q)^2=O(|\tilde q|^{-2})$, with rapidly smaller successors, gives the asymptotic.
+and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tilde q| + \frac12\sum_{k=0}^{n-1}2^{-(k+1)}\log T_k$. For an escaping orbit $|\tilde q_k|\to\infty$ and $T_k \to 1$, and the terms decay geometrically because $|\tilde q_k|$ grows doubly exponentially along the escape; the series converges absolutely and uniformly on each compact subset of the escaping region, giving existence and continuity. The value is nonnegative because each partial sum is the logarithm of a modulus; it vanishes exactly when the orbit is bounded, by the escape lemma; and the size of the first term, $(2\tilde q^2\cdot c+\langle c\rangle_{\natural})/\langle\tilde q\rangle_{\natural}^2=O(|\tilde q|^{-2})$, with rapidly smaller successors, gives the asymptotic.
 
 **Proposition (the functional equation).** For every $\tilde q$ with unbounded orbit, $G_c(f_c(\tilde q))=2G_c(\tilde q)$, and $G_c$ is the unique continuous function on the escaping set that is zero on $\partial K_c$ and satisfies this equation with $G_c(\tilde q)/\log|\tilde q| \to 1$.
 
@@ -81,7 +81,7 @@ and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tild
 **Remark (the failure of harmonicity in four dimensions).** The menu's phrase "harmonic off the filled Julia set" is a two-dimensional statement, and it is not true in $\mathbb{H}$. The simplest counterexample is $c=0$: then $f_0(\tilde q)=\tilde q^2$ and $G_0(\tilde q)=\log|\tilde q|$ on the escaping set, whose Euclidean Laplacian is
 
 $$
-\Delta \log|\tilde q| = \frac{2}{|\tilde q|^2} \neq 0 ,
+\Delta \log|\tilde q| = \frac{2}{|\tilde q|^2} \neq 0,
 $$
 
 since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|^{-2}$ and $\log|\tilde q|$ is the $c=0$ limit of the logarithmic potentials. So $G_c$ is *not* harmonic in $\mathbb{H}$ for any $c$, and the article states it. What remains true, and is the reason the potential is useful, is the **subharmonicity**.
@@ -89,7 +89,7 @@ since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|
 **Proposition (subharmonicity, quoted).** The function $G_c$ is subharmonic on the escaping set of $\mathbb{H}=\mathbb{R}^4$ with respect to the Euclidean Laplacian: for every ball $B(\tilde q,r)$ contained in the escaping set,
 
 $$
-G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c .
+G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c.
 $$
 
 ## Worked Example
@@ -114,7 +114,7 @@ The escape radius of the quaternion quadratic family is $R(c)=1+|c|$, certified 
 | $\tilde q_n=f_c^{\,n}(\tilde q)$ | The orbit |
 | $G_c(\tilde q)=\lim_n 2^{-n}\log\lvert\tilde q_n\rvert$ | The Green's function, Escaping set |
 | $B_c=\exp G_c$ | The Böttcher function, modulus of the coordinate |
-| $T_k=N(\tilde q_k^2+c)/N(\tilde q_k)^2$ | The ratio whose logarithm appears in the series |
+| $T_k=\langle\tilde q_k^2+c\rangle_{\natural}/\langle\tilde q_k\rangle_{\natural}^2$ | The ratio whose logarithm appears in the series |
 | $\Delta$ | Euclidean Laplacian of $\mathbb{H}=\mathbb{R}^4$ |
 | $\mathbb{C}_\nu$ | An invariant complex plane |
 

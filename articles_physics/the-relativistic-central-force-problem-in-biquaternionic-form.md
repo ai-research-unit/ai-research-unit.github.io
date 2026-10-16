@@ -28,7 +28,7 @@ The companion article *The Central Scalar Field: Classical Dynamics in the Biqua
 $$
 \vec a\vec b=-\vec a\cdot\vec b\,e_0+\vec a\times\vec b, \qquad [\vec a,\vec b]=2\,\vec a\times\vec b,
 $$
-so that the angular momentum is $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$, and its magnitude is $L=|\vec L|=\sqrt{N(\vec L)}$. The four-position is $\tilde{Q}=ict\,e_0+\vec x\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_0+\vec p$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-q_1q_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
+so that the angular momentum is $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$, and its magnitude is $L=|\vec L|=\sqrt{\langle \vec L\rangle_{\natural}}$. The four-position is $\tilde{Q}=ict\,e_0+\vec x\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_0+\vec p$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-ϙ_1ϙ_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
 
 ## The Relativistic Central Force
 
@@ -67,10 +67,10 @@ the **relativistic mass**, which is a function of the event through $V(r)$. In t
 The force is the real vector
 
 $$
-\vec F=F(r)\,\hat r, \qquad F(r)=-\frac{dV}{dr},
+\vec F=F(r)\,\vec u_r, \qquad F(r)=-\frac{dV}{dr},
 $$
 
-with $\hat r=\vec r/|\vec r|$ and $F$ the outward radial component. Because $\vec F$ is parallel to $\vec r$,
+with $\vec u_r=\vec r/|\vec r|$ and $F$ the outward radial component. Because $\vec F$ is parallel to $\vec r$,
 
 $$
 \vec F\parallel\vec r \quad\Longleftrightarrow\quad [\vec r,\vec F]=0 \quad\Longleftrightarrow\quad \vec F\vec r\ \text{central},
@@ -86,7 +86,7 @@ with the proper time or the coordinate time giving the same vanishing because th
 
 ### The Mass-Shell Relation and the Radial Momentum
 
-The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_0+\vec p$ and the biquaternion norm $N(\tilde{P})=\tilde{P}\tilde{P}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
+The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_0+\vec p$ and the biquaternion norm $\langle\tilde{P}\rangle_{\natural}=\tilde{P}\tilde{P}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
 
 $$
 (E-V)^2=\vec p^2c^2+m^2c^4 .
@@ -290,11 +290,11 @@ which is one sixth of the general-relativistic perihelion advance $6\pi GM/(c^2a
 
 ## The Hidden Symmetry and What Becomes of the Runge–Lenz Vector
 
-The non-relativistic inverse-square problem conserves, besides $\vec L$, the Runge–Lenz vector $\vec A=\vec p\times\vec L-m\kappa\hat r$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathrm{SO}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
+The non-relativistic inverse-square problem conserves, besides $\vec L$, the Runge–Lenz vector $\vec A=\vec p\times\vec L-m\kappa\vec u_r$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathrm{SO}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
 
 The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem retains the same number of constants of motion as any planar central-force problem — the energy, the angular momentum and the orientation of the orbit — but the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
-A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\hat r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\hat\varphi/r^2$ from the force and a term $\alpha\,\dot{\hat r}=\alpha L\,\hat\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
+A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_\varphi/r^2$ from the force and a term $\alpha\,\dot{\vec u_r}=\alpha L\,\vec u_\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 
 What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\varphi)$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
 
@@ -302,7 +302,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 ### What the Algebra Supplies
 
-**The central force is a commuting material vector.** The force is $F(r)\hat r$, a real element of the three-space commuting with the position, $[\vec r,\vec F]=0$. The centrality is an algebraic identity, not a symmetry assumption, and it is what makes $\vec L=\tfrac12[\vec r,\vec p]$ conserved.
+**The central force is a commuting material vector.** The force is $F(r)\vec u_r$, a real element of the three-space commuting with the position, $[\vec r,\vec F]=0$. The centrality is an algebraic identity, not a symmetry assumption, and it is what makes $\vec L=\tfrac12[\vec r,\vec p]$ conserved.
 
 **The angular momentum is a product.** The vector part of $\vec r\vec p$ is $\vec L$, and the algebra's single multiplication supplies the dot and cross products together.
 
@@ -312,7 +312,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 **The phase space.** The orbit is a curve determined by $(E,L)$ and an orientation; the phase space of the particle is not a module over the finite-dimensional algebra, exactly as in the non-relativistic companion articles.
 
-**The reciprocal length.** The turning-point analysis, the eccentricity and the precession all use $u=1/r$ and $\hat r=\vec r/|\vec r|$. Normalization is a nonlinear operation that the finite algebra does not implement, and the orbit equation is an equation for the reciprocal radius, not for an element of the algebra.
+**The reciprocal length.** The turning-point analysis, the eccentricity and the precession all use $u=1/r$ and $\vec u_r=\vec r/|\vec r|$. Normalization is a nonlinear operation that the finite algebra does not implement, and the orbit equation is an equation for the reciprocal radius, not for an element of the algebra.
 
 **The deformation parameter's dynamics.** The algebra contains $\kappa$ and $L$ and therefore the combination $\kappa^2/(c^2L^2)$, but it does not by itself fix the value of $\kappa$ or prefer the inverse-square law. The field-theoretic origin of $\kappa$ is the subject of the companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, and the value remains a parameter of the theory.
 
@@ -332,7 +332,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 ## Summary
 
-The relativistic central-force problem in biquaternionic form is the motion of a material-sector vector under a force $F(r)\hat r$ parallel to the position. The energy $E=\gamma mc^2+V(r)$ and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ are conserved, the motion is planar, and the orbit satisfies the relativistic Binet equation
+The relativistic central-force problem in biquaternionic form is the motion of a material-sector vector under a force $F(r)\vec u_r$ parallel to the position. The energy $E=\gamma mc^2+V(r)$ and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ are conserved, the motion is planar, and the orbit satisfies the relativistic Binet equation
 
 $$
 \frac{d^2u}{d\theta^2}+u=-\frac{(E-V)F(1/u)}{c^2L^2u^2}=-\frac{m_{\text{rel}}F(1/u)}{L^2u^2},

@@ -30,16 +30,16 @@ Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{
 | $k[x]/(x^n)$ | $x$, with $x^n = 0$ | $n$ | *Examples of Rings and Fields* |
 | $\mathbb{F}_2[C_2]$ | $x + 1$, with $(x+1)^2 = 0$ | $2$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the strictly upper triangular $N = E_{12}$ | $2$ | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | the pure zero divisors satisfying $\tilde{Q}^2 = 0$ | $2$ | *Zero Divisors of the General Plain Algebra* |
+| $\mathbb{B}$, the biquaternions | the pure zero divisors satisfying $\tilde{Q}^2 = 0$ | $2$ | *Zero Divisors of the Biquaternion Algebra* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $6$, with $6^2 = 0$ | $2$ | *Modular Arithmetic and the Ring of Residues* |
 
-The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *Zero Divisors of the General Plain Algebra*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*).
+The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *Zero Divisors of the Biquaternion Algebra*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*).
 
 ## The Idempotent Zero Divisors
 
 | Ring | The nontrivial idempotents | The decomposition they induce | Introduced in |
 |---|---|---|---|
-| $\mathbb{D}$, the split-complex numbers | $e_{\pm} = \tfrac{1}{2}(1 \pm j)$ | $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
+| $\mathbb{D}$, the split-complex numbers | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | the images of $(1,0)$ and $(0,1)$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
 | $R \times S$ | $(1,0)$ and $(0,1)$ | the ring is the product by construction | *Examples of Rings and Fields* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\pi_1$, $\pi_2$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
@@ -67,7 +67,7 @@ The torsion case is where the three kinds of zero divisor separate most cleanly:
 | Ring | Nilpotents | Idempotent zero divisors | Introduced in |
 |---|---|---|---|
 | $M_2(\mathbb{R})$ | yes: the nilpotent matrices with $N^2 = 0$ | yes: $E_{11}$, $E_{22}$ | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *Zero Divisors of the General Plain Algebra* |
+| $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *Zero Divisors of the Biquaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | no nonzero nilpotents | yes: $\pi_1$, $\pi_2$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{H}$ | none | none | *Quaternion Algebra* |
 | the upper triangular matrices | yes: the strictly upper triangular matrices | yes: the diagonal idempotents | *Matrix Algebras* |
@@ -101,7 +101,7 @@ A ring is reduced when it has no nonzero nilpotent, equivalently when its nilrad
 
 ## Summary
 
-This article has listed the rings of the corpus with zero divisors and with nilpotents, separating the three kinds. The nilpotents are $\varepsilon$ in the dual numbers, $2$ in $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/8\mathbb{Z}$, $p$ in $\mathbb{Z}/p^n\mathbb{Z}$, $x$ in $K[x]/(x^n)$, $x+1$ in $\mathbb{F}_2[C_2]$, the nilpotent and strictly upper triangular matrices in $M_2(\mathbb{R})$, and the pure zero divisors of the biquaternions; the idempotent zero divisors are $e_{\pm}$ in the split-complex numbers and the split-biquaternions, the images of $(1,0)$ and $(0,1)$ in $\mathbb{Z}/6\mathbb{Z}$ and in every product ring, the matrix units in $M_2(\mathbb{R})$, the elements of a Boolean ring, and the idempotents of $\mathbb{Q}[C_3]$; and the torsion case separates $\mathbb{Z}/6\mathbb{Z}$, which is reduced, from $\mathbb{Z}/4\mathbb{Z}$, which is not. The reduced rings, the domains and the fields close the list as the objects with no nilpotent and, in the last two cases, no zero divisor at all.
+This article has listed the rings of the corpus with zero divisors and with nilpotents, separating the three kinds. The nilpotents are $\varepsilon$ in the dual numbers, $2$ in $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/8\mathbb{Z}$, $p$ in $\mathbb{Z}/p^n\mathbb{Z}$, $x$ in $K[x]/(x^n)$, $x+1$ in $\mathbb{F}_2[C_2]$, the nilpotent and strictly upper triangular matrices in $M_2(\mathbb{R})$, and the pure zero divisors of the biquaternions; the idempotent zero divisors are $\Pi_{1,2}$ in the split-complex numbers and $\tilde\Pi_{1,2}$ in the split-biquaternions, the images of $(1,0)$ and $(0,1)$ in $\mathbb{Z}/6\mathbb{Z}$ and in every product ring, the matrix units in $M_2(\mathbb{R})$, the elements of a Boolean ring, and the idempotents of $\mathbb{Q}[C_3]$; and the torsion case separates $\mathbb{Z}/6\mathbb{Z}$, which is reduced, from $\mathbb{Z}/4\mathbb{Z}$, which is not. The reduced rings, the domains and the fields close the list as the objects with no nilpotent and, in the last two cases, no zero divisor at all.
 
 ## Summary of Notation
 
@@ -111,7 +111,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{Z}/n\mathbb{Z}$ | The residue ring; $\mathbb{Z}/6\mathbb{Z}$ reduced, $\mathbb{Z}/4\mathbb{Z}$ not |
 | $\varepsilon$ | The nilpotent generator of the dual numbers, $\varepsilon^2 = 0$ |
-| $e_{\pm} = \tfrac{1}{2}(1 \pm j)$ | The idempotents of the split-complex numbers and the split-biquaternions |
+| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{D}$, $\tilde\Pi_{1,2}$ in $\mathbb{H}_{\mathbb{D}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $E_{11}$, $E_{22}$, $E_{12}$ | Matrix units; $E_{12}$ is nilpotent |
 | $\mathbb{D}$, $\mathbb{D}'$ | Split-complex numbers, dual numbers |
 | $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | Biquaternions with nilpotents, split-biquaternions without |

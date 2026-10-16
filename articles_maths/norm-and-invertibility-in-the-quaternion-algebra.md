@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_0 = 1, e_1, e_2, e_3$ and the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$, so that $e_1e_2 = e_3$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the **quaternion norm** $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of units.
+The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_0 = 1, e_1, e_2, e_3$ and the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$, so that $e_1e_2 = e_3$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the **quaternion norm** $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of units.
 
 The companion article *Quaternion Algebra* fixes the basis, the conjugation, the multiplication table and the scalar–vector decomposition, and they are used here without restatement. The companion article *Ideals and Simplicity of the Quaternion Algebra*, below this article in this category treats the absence of proper one- and two-sided ideals and the central-simplicity statement; this article owns the quaternion norm, the multiplicativity, the invertibility criterion and the unit group, and it refers to that article for the ideal-theoretic consequences. A reader who wants the full structure of the algebra should read the three together: the algebra supplies the multiplication, this article supplies the quaternion norm and the division property, and the ideals article supplies the consequences of division for the ideal structure.
 
@@ -23,12 +23,12 @@ with **scalar part** $\mathrm{Sc}(\tilde q) = q_0$ and **vector part** $\vec q =
 **Definition.** The **quaternion norm** of $\tilde q$ is
 
 $$
-N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$
 
 The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\vec q - \vec qq_0 + \vec q\times(-\vec q) = 0$, and the scalar calculation is the sum of squares.
 
-**Proposition.** $N(\tilde q)$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $b(p,\tilde q) = \mathrm{Sc}(p\tilde{q}^{\natural})$.
+**Proposition.** $\langle\tilde q\rangle_{\natural}$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $\mathfrak{b}(p,\tilde q) = \mathrm{Sc}(p\tilde{q}^{\natural})$.
 
 *Proof.* The scalar part of $\tilde q\tilde{q}^{\natural}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\mathrm{Sc}(p\tilde{q}^{\natural})$, as the polar form of a sum of squares.
 
@@ -37,38 +37,38 @@ The equality of the two products is checked from the multiplication table: the v
 **Theorem.** The quaternion norm is multiplicative:
 
 $$
-N(p\tilde q) = N(p)\,N(\tilde q), \qquad p, \tilde q \in \mathbb{H}.
+\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\,\langle\tilde q\rangle_{\natural}, \qquad p, \tilde q \in \mathbb{H}.
 $$
 
-*Proof.* Using $(p\tilde q)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ is central,
+*Proof.* Using $(p\tilde q)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is central,
 
 $$
-N(p\tilde q) = (p\tilde q)(p\tilde q)^{\natural} = p\tilde q\,\tilde q^{\natural}\,p^{\natural} = p\,N(\tilde q)\,p^{\natural} = N(\tilde q)\,p p^{\natural} = N(p)N(\tilde q) .
+\langle p\tilde q\rangle_{\natural} = (p\tilde q)(p\tilde q)^{\natural} = p\tilde q\,\tilde q^{\natural}\,p^{\natural} = p\,\langle\tilde q\rangle_{\natural}\,p^{\natural} = \langle\tilde q\rangle_{\natural}\,p p^{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}.
 $$
 
 Multiplicativity is the single feature that makes the quaternion norm the algebraic centre of gravity of the subject. It holds over any commutative base in which the computation makes sense, and in particular over any field.
 
-**Corollary.** If $N(p) = 0$ then $N(p\tilde q) = N(\tilde q p) = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $N(u) = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.
+**Corollary.** If $\langle p\rangle_{\natural} = 0$ then $\langle p\tilde q\rangle_{\natural} = \langle\tilde q p\rangle_{\natural} = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $\langle u\rangle_{\natural} = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.
 
 ### Positive Definiteness and the Real Case
 
-**Theorem.** Over $F = \mathbb{R}$ the quaternion norm is positive definite: $N(\tilde q) \geq 0$ for every $\tilde q$, and $N(\tilde q) = 0$ if and only if $\tilde q = 0$.
+**Theorem.** Over $F = \mathbb{R}$ the quaternion norm is positive definite: $\langle\tilde q\rangle_{\natural} \geq 0$ for every $\tilde q$, and $\langle\tilde q\rangle_{\natural} = 0$ if and only if $\tilde q = 0$.
 
-*Proof.* $N(\tilde q) = \sum_\mu q_\mu^2$ is a sum of squares of real numbers, hence non-negative, and it vanishes only when every $q_\mu$ vanishes.
+*Proof.* $\langle\tilde q\rangle_{\natural} = \sum_\mu q_\mu^2$ is a sum of squares of real numbers, hence non-negative, and it vanishes only when every $q_\mu$ vanishes.
 
-**Definition.** Over $\mathbb{R}$ the **modulus** of $\tilde q$ is $|\tilde q| = \sqrt{N(\tilde q)}$, a non-negative real number, zero only at $\tilde q = 0$, and the modulus is multiplicative,
+**Definition.** Over $\mathbb{R}$ the **modulus** of $\tilde q$ is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$, a non-negative real number, zero only at $\tilde q = 0$, and the modulus is multiplicative,
 
 $$
 |p\tilde q| = |p|\,|\tilde q|,
 $$
 
-because $N$ is multiplicative by the theorem above and $N$ is non-negative on $\mathbb{R}$. The modulus is the value of the quaternion norm under the real square root; its metric properties on $\mathbb{H}\cong\mathbb{R}^4$ are owned by *Quaternion Topology*, below this article in this category, and the algebra uses it only through the multiplicativity just displayed and the polar split of the units below.
+because $\langle\cdot\rangle_{\natural}$ is multiplicative by the theorem above and $\langle\cdot\rangle_{\natural}$ is non-negative on $\mathbb{R}$. The modulus is the value of the quaternion norm under the real square root; its metric properties on $\mathbb{H}\cong\mathbb{R}^4$ are owned by *Quaternion Topology*, below this article in this category, and the algebra uses it only through the multiplicativity just displayed and the polar split of the units below.
 
 ### The Quaternion Norm and the Conjugate
 
-**Proposition.** The quaternion norm is invariant under conjugation, $N(\tilde{q}^{\natural}) = N(\tilde q)$, and it is the **reduced norm** of $\mathbb{H}$ viewed as a central simple algebra of degree two over the base field.
+**Proposition.** The quaternion norm is invariant under conjugation, $\langle\tilde{q}^{\natural}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$, and it is the **reduced norm** of $\mathbb{H}$ viewed as a central simple algebra of degree two over the base field.
 
-*Proof.* $N(\tilde{q}^{\natural}) = \tilde{q}^{\natural} \tilde q = N(\tilde q)$. For a central simple algebra over a field the corresponding form is the reduced norm; for a quaternion algebra the reduced norm is the quaternion norm above, and the identification is the classical one, quoted here as standard.
+*Proof.* $\langle\tilde{q}^{\natural}\rangle_{\natural} = \tilde{q}^{\natural} \tilde q = \langle\tilde q\rangle_{\natural}$. For a central simple algebra over a field the corresponding form is the reduced norm; for a quaternion algebra the reduced norm is the quaternion norm above, and the identification is the classical one, quoted here as standard.
 
 ## The Inner Product
 
@@ -77,14 +77,14 @@ because $N$ is multiplicative by the theorem above and $N$ is non-negative on $\
 **Definition.** The **inner product** of two quaternions is
 
 $$
-\langle p, \tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} p_\mu q_\mu ,
+\langle p, \tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} p_\mu q_\mu,
 $$
 
 a symmetric bilinear form on the real vector space $\mathbb{H}$. The one-variable expression $\tilde q\tilde{q}^{\natural}$ is the **Hermitian form**; in the quaternion case, the coefficients being real, it coincides with the quaternion norm, as in *Quaternion Algebra*.
 
 **Proposition.** The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle p, \tilde q\rangle = \mathrm{Sc}(p^{\natural} \tilde q)$, and it is invariant under left and under right multiplication by a unit quaternion.
 
-*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = N(\tilde q)$. For a unit $u$, $\langle up, u\tilde q\rangle = \mathrm{Sc}(up(u\tilde q)^{\natural}) = \mathrm{Sc}(u\,p\tilde{q}^{\natural}\,u^{\natural}) = \mathrm{Sc}(p\tilde{q}^{\natural})$ because conjugation by a unit preserves the scalar part, as in *Quaternion Rotations and Reflections*, below this article in this category; the right case is the same computation.
+*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = \langle\tilde q\rangle_{\natural}$. For a unit $u$, $\langle up, u\tilde q\rangle = \mathrm{Sc}(up(u\tilde q)^{\natural}) = \mathrm{Sc}(u\,p\tilde{q}^{\natural}\,u^{\natural}) = \mathrm{Sc}(p\tilde{q}^{\natural})$ because conjugation by a unit preserves the scalar part, as in *Quaternion Rotations and Reflections*, below this article in this category; the right case is the same computation.
 
 ### The Group of Linear Maps Preserving the Form
 
@@ -92,13 +92,13 @@ In the basis $e_0,e_1,e_2,e_3$ the Gram matrix of the inner product is the ident
 
 ### Relation Between the Quaternion Norm and the Inner Product
 
-**Proposition.** The quaternion norm is the diagonal of the inner product, $N(\tilde q) = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the quaternion norm by polarisation,
+**Proposition.** The quaternion norm is the diagonal of the inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the quaternion norm by polarisation,
 
 $$
-\langle p, \tilde q\rangle = \tfrac{1}{2}\bigl(N(p+\tilde q) - N(p) - N(\tilde q)\bigr).
+\langle p, \tilde q\rangle = \tfrac{1}{2}\bigl(\langle p+\tilde q\rangle_{\natural} - \langle p\rangle_{\natural} - \langle\tilde q\rangle_{\natural}\bigr).
 $$
 
-The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the inner product. The multiplicativity of $N$ is an extra property, not shared by a general positive definite form.
+The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the inner product. The multiplicativity of $\langle\cdot,\cdot\rangle_{\natural}$ is an extra property, not shared by a general positive definite form.
 
 ## Invertibility
 
@@ -112,29 +112,29 @@ The two forms are therefore the same datum: a positive definite quadratic form o
 
 ### Left and Right Inverses
 
-**Theorem.** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q$ has a left inverse; $\tilde q$ has a right inverse; $\tilde q$ has a two-sided inverse; $N(\tilde q)\neq 0$.
+**Theorem.** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q$ has a left inverse; $\tilde q$ has a right inverse; $\tilde q$ has a two-sided inverse; $\langle\tilde q\rangle_{\natural}\neq 0$.
 
-*Proof.* If $p\tilde q = 1$ for some $p$, then $N(p)N(\tilde q) = N(p\tilde q) = 1$, so $N(\tilde q)\neq 0$ in the base field; conversely if $N(\tilde q)\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is a two-sided inverse by the inverse formula below. The right case is symmetric.
+*Proof.* If $p\tilde q = 1$ for some $p$, then $\langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural} = \langle p\tilde q\rangle_{\natural} = 1$, so $\langle\tilde q\rangle_{\natural}\neq 0$ in the base field; conversely if $\langle\tilde q\rangle_{\natural}\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ is a two-sided inverse by the inverse formula below. The right case is symmetric.
 
 Thus, over a field of characteristic not $2$, the three notions coincide, and an element is a unit exactly when its quaternion norm does not vanish.
 
 ### Criterion for Invertibility
 
-**Theorem.** A quaternion $\tilde q$ is invertible if and only if $\tilde q\neq 0$ over $F = \mathbb{R}$; more generally, $\tilde q$ is invertible if and only if $N(\tilde q)\neq 0$, and over a field of characteristic not $2$ the vanishing of $N$ away from $0$ is exactly what it means for the algebra to fail to be a division algebra.
+**Theorem.** A quaternion $\tilde q$ is invertible if and only if $\tilde q\neq 0$ over $F = \mathbb{R}$; more generally, $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural}\neq 0$, and over a field of characteristic not $2$ the vanishing of $\langle\cdot\rangle_{\natural}$ away from $0$ is exactly what it means for the algebra to fail to be a division algebra.
 
-*Proof.* Over $\mathbb{R}$ the quaternion norm is positive definite, so $N(\tilde q) = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is a unit.
+*Proof.* Over $\mathbb{R}$ the quaternion norm is positive definite, so $\langle\tilde q\rangle_{\natural} = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is a unit.
 
 ### The Inverse Formula
 
-**Theorem.** If $N(\tilde q)\neq 0$ then
+**Theorem.** If $\langle\tilde q\rangle_{\natural}\neq 0$ then
 
 $$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}}.
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}}.
 $$
 
-*Proof.* $(\tilde q)(\tilde{q}^{\natural}/N(\tilde q)) = (\tilde q\tilde{q}^{\natural})/N(\tilde q) = N(\tilde q)/N(\tilde q) = 1$, and $(\tilde{q}^{\natural}/N(\tilde q))(\tilde q) = (\tilde{q}^{\natural} \tilde q)/N(\tilde q) = 1$ because $\tilde{q}^{\natural} \tilde q = N(\tilde q)$ is central.
+*Proof.* $(\tilde q)(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = (\tilde q\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}/\langle\tilde q\rangle_{\natural} = 1$, and $(\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural})(\tilde q) = (\tilde{q}^{\natural} \tilde q)/\langle\tilde q\rangle_{\natural} = 1$ because $\tilde{q}^{\natural} \tilde q = \langle\tilde q\rangle_{\natural}$ is central.
 
-For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/N(\vec q)$, so the imaginary line is closed under inversion up to the real scale.
+For a unit quaternion $\langle\tilde q\rangle_{\natural} = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/\langle \vec q\rangle_{\natural}$, so the imaginary line is closed under inversion up to the real scale.
 
 ## The Group of Units
 
@@ -143,12 +143,12 @@ For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = 
 **Definition.** The **group of units** of $\mathbb{H}$ is
 
 $$
-\mathbb{H}^{\times} = \{\tilde q\in\mathbb{H} : N(\tilde q)\neq 0\}.
+\mathbb{H}^{\times} = \{\tilde q\in\mathbb{H} : \langle\tilde q\rangle_{\natural}\neq 0\}.
 $$
 
-**Proposition.** $\mathbb{H}^{\times}$ is a group under multiplication, it is the complement of the set $\{\tilde q : N(\tilde q) = 0\}$, and over $\mathbb{R}$ it is $\mathbb{H}\setminus\{0\}$.
+**Proposition.** $\mathbb{H}^{\times}$ is a group under multiplication, it is the complement of the set $\{\tilde q : \langle\tilde q\rangle_{\natural} = 0\}$, and over $\mathbb{R}$ it is $\mathbb{H}\setminus\{0\}$.
 
-*Proof.* Closure and inverses are the multiplicativity of $N$ and the inverse formula; the complement description is the criterion for invertibility. Over $\mathbb{R}$ the vanishing set of $N$ is $\{0\}$ by positive definiteness.
+*Proof.* Closure and inverses are the multiplicativity of $\langle\cdot\rangle_{\natural}$ and the inverse formula; the complement description is the criterion for invertibility. Over $\mathbb{R}$ the vanishing set of $\langle\cdot\rangle_{\natural}$ is $\{0\}$ by positive definiteness.
 
 ### Basic Properties
 
@@ -158,9 +158,9 @@ $$
 
 ### The Inverse Map
 
-**Proposition.** The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(p\tilde q)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/N(\tilde q)$, and it coincides with conjugation on the unit sphere $N(\tilde q) = 1$.
+**Proposition.** The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(p\tilde q)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/\langle\tilde q\rangle_{\natural}$, and it coincides with conjugation on the unit sphere $\langle\tilde q\rangle_{\natural} = 1$.
 
-*Proof.* $(p\tilde q)(\tilde q^{-1}p^{-1}) = p(\tilde q\tilde q^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ then exhibits the composite.
+*Proof.* $(p\tilde q)(\tilde q^{-1}p^{-1}) = p(\tilde q\tilde q^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ then exhibits the composite.
 
 ### The Polar Split of the Units
 
@@ -170,9 +170,9 @@ $$
 \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|},
 $$
 
-where $\mathbb{H}^1 = \{\tilde q : N(\tilde q) = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by *The Quaternion Unit Group as a Topological Group*, below this article in this category.
+where $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 
-*Proof.* The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, and it is a homomorphism because the modulus is multiplicative and positive. Every positive real is central, so the two factors commute and the product is direct. The identification $\mathbb{H}^1 = \{\tilde q : N(\tilde q) = 1\}$ is the definition.
+*Proof.* The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, and it is a homomorphism because the modulus is multiplicative and positive. Every positive real is central, so the two factors commute and the product is direct. The identification $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the definition.
 
 Thus every unit is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the units into the multiplicative group $\mathbb{R}_{>0}$ and the norm-one shell $\mathbb{H}^1$.
 
@@ -182,9 +182,9 @@ Thus every unit is the product of a positive scale and a unit quaternion, and th
 
 **Theorem.** Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $p\tilde q = 0$ implies $p = 0$ or $\tilde q = 0$.
 
-*Proof.* Take norms: $N(p\tilde q) = N(p)N(\tilde q)$ and $N(p\tilde q) = 0$, so $N(p)N(\tilde q) = 0$ in the field $\mathbb{R}$, hence $N(p) = 0$ or $N(\tilde q) = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.
+*Proof.* Take norms: $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$ and $\langle p\tilde q\rangle_{\natural} = 0$, so $\langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural} = 0$ in the field $\mathbb{R}$, hence $\langle p\rangle_{\natural} = 0$ or $\langle\tilde q\rangle_{\natural} = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.
 
-The same argument shows that over any field in which the quaternion norm is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $N(\tilde q) = 0$ for some $\tilde q\neq 0$, then $\tilde{q}^{\natural}$ is a non-zero element annihilating $\tilde q$.
+The same argument shows that over any field in which the quaternion norm is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $\langle\tilde q\rangle_{\natural} = 0$ for some $\tilde q\neq 0$, then $\tilde{q}^{\natural}$ is a non-zero element annihilating $\tilde q$.
 
 ## The Three-Way Classification
 
@@ -194,8 +194,8 @@ The three are mutually exclusive and, over the complex field, exhaust the algebr
 
 | Class | Condition | Status in $\mathbb{H}$ |
 |---|---|---|
-| invertible | $N(\tilde q)\neq 0$ | non-empty; every $\tilde q\neq 0$ |
-| zero divisor, non-zero | $\tilde q\neq 0$ and $N(\tilde q) = 0$ | empty |
+| invertible | $\langle\tilde q\rangle_{\natural}\neq 0$ | non-empty; every $\tilde q\neq 0$ |
+| zero divisor, non-zero | $\tilde q\neq 0$ and $\langle\tilde q\rangle_{\natural} = 0$ | empty |
 | zero | $\tilde q = 0$ | a single element |
 
 *Proof.* The classes are defined by the mutually exclusive conditions $N\neq 0$, $N = 0$ with $\tilde q\neq 0$, and $\tilde q = 0$. The middle class is empty by positive definiteness, and the first class is the whole punctured algebra.
@@ -208,9 +208,9 @@ The division property is the reason the quaternion algebra stands at the head of
 
 ## Summary
 
-The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(p\tilde q) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $N(\tilde q)$.
+The quaternion algebra carries the multiplicative quadratic form $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $\langle\tilde q\rangle_{\natural}$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $\langle\tilde q\rangle_{\natural}$.
 
-Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
+Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
 
 ## Summary of Notation
 
@@ -221,13 +221,13 @@ Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly wh
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q$ | Quaternion norm |
-| $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Modulus over $\mathbb{R}$ |
-| $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$ | Inner product, $N(\tilde q) = \langle \tilde q,\tilde q\rangle$ |
-| $\tilde q\tilde{q}^{\natural}$ | Hermitian form, coinciding with $N(\tilde q)$ |
-| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | Inverse formula |
-| $\mathbb{H}^{\times} = \{\tilde q : N(\tilde q)\neq 0\}$ | Group of units |
-| $\mathbb{H}^1 = \{\tilde q : N(\tilde q) = 1\}$ | Unit quaternions, the norm-one shell |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q$ | Quaternion norm |
+| $\lvert \tilde q\rvert = \sqrt{\langle\tilde q\rangle_{\natural}}$ | Modulus over $\mathbb{R}$ |
+| $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$ | Inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q,\tilde q\rangle$ |
+| $\tilde q\tilde{q}^{\natural}$ | Hermitian form, coinciding with $\langle\tilde q\rangle_{\natural}$ |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | Inverse formula |
+| $\mathbb{H}^{\times} = \{\tilde q : \langle\tilde q\rangle_{\natural}\neq 0\}$ | Group of units |
+| $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ | Unit quaternions, the norm-one shell |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times \mathbb{H}^1$ | Polar split of the units |
 
 ## Further Reading

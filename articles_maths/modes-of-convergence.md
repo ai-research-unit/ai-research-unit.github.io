@@ -5,9 +5,9 @@
 
 A limit in analysis is only as precise as the notion of convergence that carries it, and on a space of functions there is not one such notion but several. A sequence of functions can converge at every point, or uniformly, or off a null set, or in a mean; these are different conditions, ordered by implication in a definite way, and every theorem of analysis is stated with respect to one of them. This article fixes the vocabulary. It names the modes of convergence that the whole of Part III uses, defines each of them, relates them by the implications that hold and by the counterexamples that show the remaining implications false, and states the theorems that govern the interchange of a limit with an integral, a derivative and an infinite sum.
 
-The article is a contract as much as a piece of mathematics. The names **pointwise**, **uniform**, **locally uniform**, **almost everywhere**, **almost uniform**, **in measure**, **in $L^p$**, **weak** and **weak-$\ast$** are fixed here, with the notation collected in the table at the end, and the other articles of this category use them in exactly this sense. Where two modes are commonly given the same name — convergence in measure is called convergence in probability on a space of total mass one, and weak convergence of measures is called weak-$\ast$ convergence of the corresponding functionals — the distinction is recorded and the name used by this corpus is the first of the two.
+The article is a contract as much as a piece of mathematics. The names **pointwise**, **uniform**, **locally uniform**, **almost everywhere**, **almost uniform**, **in measure**, **in $L^{n}$**, **weak** and **weak-$\ast$** are fixed here, with the notation collected in the table at the end, and the other articles of this category use them in exactly this sense. Where two modes are commonly given the same name — convergence in measure is called convergence in probability on a space of total mass one, and weak convergence of measures is called weak-$\ast$ convergence of the corresponding functionals — the distinction is recorded and the name used by this corpus is the first of the two.
 
-The prerequisites are the measure theory of *Measure Theory and Integration* — measurable functions, the integral, the convergence theorems, the $L^p$ spaces, and the notions of almost everywhere and of the product measure — together with the topological background of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Nets, Filters and Convergence*, and the functional-analytic background of *Normed and Banach Spaces*, *Locally Convex Spaces* and *Duality Theory*. Set-theoretic and algebraic vocabulary is used in the sense of Part I. The article deliberately contains no arithmetic: the modes are introduced over a general measure space and a general normed space, and their arithmetic instances — the convergence of Dirichlet series, of $p$-adic sequences, of modular $q$-expansions — belong to the articles of this Part that develop those subjects. The theory of convergence in probability and almost sure convergence belongs to *Measure-Theoretic Probability*. No physics is invoked.
+The prerequisites are the measure theory of *Measure Theory and Integration* — measurable functions, the integral, the convergence theorems, the $L^{n}$ spaces, and the notions of almost everywhere and of the product measure — together with the topological background of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Nets, Filters and Convergence*, and the functional-analytic background of *Normed and Banach Spaces*, *Locally Convex Spaces* and *Duality Theory*. Set-theoretic and algebraic vocabulary is used in the sense of Part I. The article deliberately contains no arithmetic: the modes are introduced over a general measure space and a general normed space, and their arithmetic instances — the convergence of Dirichlet series, of $p$-adic sequences, of modular $q$-expansions — belong to the articles of this Part that develop those subjects. The theory of convergence in probability and almost sure convergence belongs to *Measure-Theoretic Probability*. No physics is invoked.
 
 ## Convergence in a Topological and a Uniform Space
 
@@ -155,29 +155,29 @@ The exact relation is therefore: a.e. convergence and convergence in measure do 
 
 **Example (convergence in measure without a dominating function).** On $([0,1], \lambda)$ let $g_n = n\,\mathbf{1}_{(0,1/n)}$. Then $g_n \to 0$ in measure and in fact a.e., but $\int g_n = 1$ for all $n$, so no domination by an integrable function can hold and the conclusion of the dominated convergence theorem fails. Convergence in measure controls the size of the set where the functions are large, not the size of the values.
 
-## Convergence in $L^p$
+## Convergence in $L^{n}$
 
 ### Definition and Completeness
 
-Let $1 \leq p \leq \infty$ and let $L^p(\mu)$ be the Lebesgue space of *Measure Theory and Integration*, a Banach space for the norm $\|f\|_p = (\int \|f\|^p \, d\mu)^{1/p}$ when $p < \infty$, and $\|f\|_\infty$ the essential supremum when $p = \infty$.
+Let $1 \leq p \leq \infty$ and let $L^{n}(\mu)$ be the Lebesgue space of *Measure Theory and Integration*, a Banach space for the norm $\|f\|_p = (\int \|f\|^p \, d\mu)^{1/p}$ when $p < \infty$, and $\|f\|_\infty$ the essential supremum when $p = \infty$.
 
-**Definition.** $f_n \to f$ **in $L^p$**, written $f_n \xrightarrow{L^p} f$, if $\|f_n - f\|_p \to 0$.
+**Definition.** $f_n \to f$ **in $L^{n}$**, written $f_n \xrightarrow{L^{n} f$, if $\|f_n - f\|_p \to 0$.
 
-Convergence in $L^p$ is convergence in the metric of the norm, and it is a mode of convergence of the functions themselves, not of their values: the functions are identified when they agree a.e., and both the hypothesis and the conclusion are insensitive to null sets.
+Convergence in $L^{n}$ is convergence in the metric of the norm, and it is a mode of convergence of the functions themselves, not of their values: the functions are identified when they agree a.e., and both the hypothesis and the conclusion are insensitive to null sets.
 
-**Theorem (Riesz–Fischer).** $L^p(\mu)$ is complete for every $1 \leq p \leq \infty$.
+**Theorem (Riesz–Fischer).** $L^{n}(\mu)$ is complete for every $1 \leq p \leq \infty$.
 
-**Theorem (relations with the other modes).** Let $f_n, f \in L^p(\mu)$.
+**Theorem (relations with the other modes).** Let $f_n, f \in L^{n}(\mu)$.
 
-**(a)** Convergence in $L^p$ implies convergence in measure, for every $p < \infty$, by Chebyshev's inequality $\mu(\{\|f_n - f\| > \epsilon\}) \leq \epsilon^{-p} \|f_n - f\|_p^p$, with no hypothesis on the measure.
+**(a)** Convergence in $L^{n}$ implies convergence in measure, for every $p < \infty$, by Chebyshev's inequality $\mu(\{\|f_n - f\| > \epsilon\}) \leq \epsilon^{-p} \|f_n - f\|_p^p$, with no hypothesis on the measure.
 
-**(b)** Convergence in measure does not imply convergence in $L^p$, by the sequence $g_n = n^{1/p}\mathbf{1}_{(0,1/n)}$, which converges to $0$ a.e. and in measure and has $\|g_n\|_p = 1$.
+**(b)** Convergence in measure does not imply convergence in $L^{n}$, by the sequence $g_n = n^{1/p}\mathbf{1}_{(0,1/n)}$, which converges to $0$ a.e. and in measure and has $\|g_n\|_p = 1$.
 
-**(c)** Convergence in $L^p$ does not imply convergence a.e.; the sliding dyadic intervals of the previous section converge to $0$ in $L^p$ for every finite $p$ and converge at no point of $[0,1)$.
+**(c)** Convergence in $L^{n}$ does not imply convergence a.e.; the sliding dyadic intervals of the previous section converge to $0$ in $L^{n}$ for every finite $p$ and converge at no point of $[0,1)$.
 
-**(d)** Convergence a.e. does not imply convergence in $L^p$, by the same sequence $g_n$.
+**(d)** Convergence a.e. does not imply convergence in $L^{n}$, by the same sequence $g_n$.
 
-**(e)** If $\mu(X) < \infty$ and $q \geq p$ then $L^q(\mu) \subseteq L^p(\mu)$ and convergence in $L^q$ implies convergence in $L^p$; the inclusion reverses for a counting measure on a countable set.
+**(e)** If $\mu(X) < \infty$ and $q \geq p$ then $L^{m}(\mu) \subseteq L^{n}(\mu)$ and convergence in $L^{m}$ implies convergence in $L^{n}$; the inclusion reverses for a counting measure on a countable set.
 
 The three counterexamples are the standard ones and should be read as a single table of failures, given in the closing section.
 
@@ -293,30 +293,30 @@ The modes fixed by this article, with their notation, are the following.
 | Almost everywhere | $f_n \to f$ $\mu$-a.e. | pointwise off a $\mu$-null set |
 | Almost uniform | $f_n \rightrightarrows f$ off $E$, $\mu(E) < \epsilon$ | Egorov's conclusion |
 | In measure | $f_n \xrightarrow{\mu} f$ | $\mu(\{\|f_n - f\| > \epsilon\}) \to 0$ |
-| In $L^p$ | $f_n \xrightarrow{L^p} f$ | $\|f_n - f\|_p \to 0$ |
+| In $L^{n}$ | $f_n \xrightarrow{L^{n} f$ | $\|f_n - f\|_p \to 0$ |
 | Weak | $f_n \rightharpoonup f$ | $\varphi(f_n) \to \varphi(f)$ for all $\varphi \in X'$ |
 | Weak-$\ast$ | $f_n \xrightarrow{w^*} f$ | $f_n(x) \to f(x)$ for all $x \in X$, the $f_n$ lying in $X'$ |
 | Weakly (of measures) | $\mu_n \to \mu$ | $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$, $\varphi \in C_0(X)$ |
 
 The implication scheme is the following; every arrow is an implication, and every omitted arrow is false in general.
 
-| Hypothesis $\backslash$ Conclusion | pointwise | a.e. | in measure | $L^p$ |
+| Hypothesis $\backslash$ Conclusion | pointwise | a.e. | in measure | $L^{n}$ |
 |---|---|---|---|---|
 | uniform | yes | yes | yes, $\mu$ finite | yes on finite measure |
 | locally uniform | yes | yes | on compacta | on compacta |
 | almost everywhere | no | — | yes, $\mu$ finite | no |
 | in measure | no | subsequence | — | no |
-| in $L^p$ | no | no | yes | — |
+| in $L^{n}$ | no | no | yes | — |
 
-The three failures that account for the gaps are: the sequence $n\mathbf{1}_{(0,1/n)}$ (in measure and a.e., not in $L^1$, no domination); the sliding dyadic intervals (in $L^p$ and in measure, a.e. along no full sequence); and the sequence $x^n$ on $[0,1]$ (pointwise, not uniform). Uniform convergence is the only mode that survives every operation of elementary analysis without a supplementary hypothesis of integrability or of compactness.
+The three failures that account for the gaps are: the sequence $n\mathbf{1}_{(0,1/n)}$ (in measure and a.e., not in $L^1$, no domination); the sliding dyadic intervals (in $L^{n}$ and in measure, a.e. along no full sequence); and the sequence $x^n$ on $[0,1]$ (pointwise, not uniform). Uniform convergence is the only mode that survives every operation of elementary analysis without a supplementary hypothesis of integrability or of compactness.
 
 ## Summary
 
-Convergence in analysis is carried by several inequivalent modes, and this article fixes them for the whole of Part III. On a function space they are pointwise convergence, uniform convergence and uniform convergence on compacta; in measure theory they are convergence almost everywhere, almost uniformly, in measure and in $L^p$; in the normed and locally convex setting they are weak and weak-$\ast$ convergence, and for measures they are weak and vague convergence.
+Convergence in analysis is carried by several inequivalent modes, and this article fixes them for the whole of Part III. On a function space they are pointwise convergence, uniform convergence and uniform convergence on compacta; in measure theory they are convergence almost everywhere, almost uniformly, in measure and in $L^{n}$; in the normed and locally convex setting they are weak and weak-$\ast$ convergence, and for measures they are weak and vague convergence.
 
 Uniform convergence is convergence in the supremum norm: it is characterised by the uniform Cauchy criterion, it turns the bounded functions on a complete space into a Banach space, and it is the mode that preserves continuity. Pointwise convergence is convergence in the product topology and preserves no continuity and no integral. Dini's theorem upgrades a monotone pointwise convergence on a compact space to uniform convergence, and the Weierstrass $M$-test upgrades an absolutely summable family to a uniformly convergent series.
 
-On a measure space, convergence a.e. is pointwise convergence off a null set — a strictly weaker condition than pointwise convergence — and it neither implies nor is implied by convergence in measure; on a finite measure space it implies convergence in measure and is equivalent to almost uniform convergence by Egorov's theorem, while convergence in measure implies a.e. convergence along a subsequence by Riesz's theorem. Convergence in $L^p$ implies convergence in measure, is implied by it together with uniform integrability, and is controlled by the Vitali theorem; the dominated convergence theorem is its principal special case. In a normed space weak convergence is convergence of the values under every bounded functional, boundedness and lower semicontinuity of the norm accompany it, and weak-$\ast$ convergence on a dual space is governed by the Banach–Alaoglu theorem. For measures, weak convergence is the weak-$\ast$ convergence of the associated functionals on $C_0(X)$, and the portmanteau theorem gives its equivalent forms.
+On a measure space, convergence a.e. is pointwise convergence off a null set — a strictly weaker condition than pointwise convergence — and it neither implies nor is implied by convergence in measure; on a finite measure space it implies convergence in measure and is equivalent to almost uniform convergence by Egorov's theorem, while convergence in measure implies a.e. convergence along a subsequence by Riesz's theorem. Convergence in $L^{n}$ implies convergence in measure, is implied by it together with uniform integrability, and is controlled by the Vitali theorem; the dominated convergence theorem is its principal special case. In a normed space weak convergence is convergence of the values under every bounded functional, boundedness and lower semicontinuity of the norm accompany it, and weak-$\ast$ convergence on a dual space is governed by the Banach–Alaoglu theorem. For measures, weak convergence is the weak-$\ast$ convergence of the associated functionals on $C_0(X)$, and the portmanteau theorem gives its equivalent forms.
 
 Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fatou and dominated convergence theorems for the integral, the uniform convergence of the derivatives for the derivative, and the Weierstrass test for an infinite sum. The counterexamples of this article mark the boundary of each.
 
@@ -333,7 +333,7 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | $f_n \to f$ $\mu$-a.e. | Convergence almost everywhere |
 | $f_n \xrightarrow{\mu} f$ | Convergence in measure |
 | $d_\mu$ | Metric for convergence in measure |
-| $f_n \xrightarrow{L^p} f$, $\|f\|_p$ | Convergence in $L^p$, $L^p$ norm |
+| $f_n \xrightarrow{L^{n} f$, $\|f\|_p$ | Convergence in $L^{n}$, $L^{n}$ norm |
 | uniform integrability | $\lim_{c \to \infty} \sup_f \int_{\{|f| > c\}} \lvert f \rvert \, d\mu = 0$ |
 | $X'$ | Dual space of a normed space |
 | $x_n \rightharpoonup x$, $\sigma(X, X')$ | Weak convergence and weak topology |
@@ -341,7 +341,7 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | $\mu_n \to \mu$ | Weak convergence of measures, $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ |
 | $M(X)$, $C_0(X)$, $C_c(X)$ | Finite Radon measures, functions vanishing at infinity, compact support |
 | $\mathbf{1}_A$ | Indicator of a set |
-| $L^p(\mu)$ | Lebesgue space |
+| $L^{n}(\mu)$ | Lebesgue space |
 
 
 
@@ -354,7 +354,7 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 ## Further Reading
 
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed. (McGraw-Hill, 1976), for uniform convergence, Dini's theorem and the interchange of limit and derivative.
-- Walter Rudin, *Real and Complex Analysis*, 3rd ed. (McGraw-Hill, 1987), for the measure-theoretic modes, Egorov's theorem and the $L^p$ theory.
+- Walter Rudin, *Real and Complex Analysis*, 3rd ed. (McGraw-Hill, 1987), for the measure-theoretic modes, Egorov's theorem and the $L^{n}$ theory.
 - Paul R. Halmos, *Measure Theory* (Van Nostrand, 1950; reprinted Springer, 1974), for convergence in measure and uniform integrability.
 - Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd ed. (Wiley, 1999), for the modes of convergence collected with their counterexamples and for the weak topologies.
 - Nelson Dunford and Jacob T. Schwartz, *Linear Operators, Part I* (Interscience, 1958), for weak and weak-$\ast$ convergence, Banach–Alaoglu and the uniform boundedness principle.

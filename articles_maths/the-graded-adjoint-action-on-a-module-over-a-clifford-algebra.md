@@ -11,11 +11,11 @@ $$
 
 the Koszul sign $(-1)^{\lvert x\rvert\lvert f\rvert}$ being forced by the module axiom. This article defines the graded dual, constructs the adjoint action, proves that the sign rule is exactly what makes it a graded action, and treats the **coadjoint action** — the adjoint action on the dual of the algebra itself — as the worked case, where the invariant standard form identifies the coadjoint module with the algebra and reduces the coadjoint action to the adjoint action of the conjugated parameter. The article completes the group: it is the module-level form of the adjoints of the one-sided and two-sided operators treated in the preceding entries.
 
-**The boundaries.** The graded action, the sign rule and the graded bracket are *The Graded Action on a Module over a Graded Algebra*; the modules over the Clifford algebra and the chirality grading are *Modules over a Clifford Algebra* and *Clifford Modules*; the algebra and its grading are *Clifford Algebras*; the invariant standard form and the adjoint $L_a^*=L_{\hat a}$ are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the sandwich adjoint is *The Signed Adjoint Sandwich on a Clifford Algebra*. The analytic adjoint of an operator on a Hilbert space belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $A=\mathrm{Cl}(V,q)$ with the parity grading, and modules are finite-dimensional.
+**The boundaries.** The graded action, the sign rule and the graded bracket are *The Graded Action on a Module over a Graded Algebra*; the modules over the Clifford algebra and the chirality grading are *Modules over a Clifford Algebra* and *Clifford Modules*; the algebra and its grading are *Clifford Algebras*; the invariant standard form and the adjoint $L_a^*=L_{\hat a}$ are *The Adjoint of the Left Multiplication on a Clifford Algebra*; the sandwich adjoint is *The Signed Adjoint Sandwich on a Clifford Algebra*. The analytic adjoint of an operator on a Hilbert space belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $A=\mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading, and modules are finite-dimensional.
 
 ## Graded Clifford Modules and the Graded Dual
 
-**Definition.** A **graded Clifford module** is a module $M$ over $A=\mathrm{Cl}(V,q)$ with a decomposition $M=M^0\oplus M^1$ such that $A^iM^j\subseteq M^{i+j}$; an element of $M^i$ is homogeneous of degree $i$, written $\lvert m\rvert=i$. The **chirality grading** of the spinor module in even dimension, $S=S^+\oplus S^-$, is the fundamental example.
+**Definition.** A **graded Clifford module** is a module $M$ over $A=\mathrm{Cl}(V,\mathfrak{Q})$ with a decomposition $M=M^0\oplus M^1$ such that $A^iM^j\subseteq M^{i+j}$; an element of $M^i$ is homogeneous of degree $i$, written $\lvert m\rvert=i$. The **chirality grading** of the spinor module in even dimension, $S=S^+\oplus S^-$, is the fundamental example.
 
 **Definition.** The **graded dual** $M^{\vee}$ is the graded vector space with $(M^{\vee})^i=(M^i)^{*}$ for each $i$; a functional in $(M^i)^{*}$ has degree $i$.
 
@@ -92,7 +92,7 @@ the module-level form of the adjoint formula $L_a^*=L_{\hat a}$ of the operator 
 
 ### The Algebra as a Module over Itself
 
-For $M=A$ with the left regular action, the graded dual is $A^\vee$ and the adjoint action is the coadjoint action; with the standard form the module is identified with the algebra and the action is $\mathrm{ad}_{\alpha(\hat a)}$, as displayed. The action of a vector $u$ is the adjoint action $\mathrm{ad}_u$ up to the sign of the parity, since $\alpha(\hat u)=u$.
+For $M=A$ with the left regular action, the graded dual is $A^\vee$ and the adjoint action is the coadjoint action; with the standard form the module is identified with the algebra and the action is $\mathrm{ad}_{\alpha(\hat a)}$, as displayed. The action of a vector $u$ is the adjoint action $\mathrm{ad}_u$ up to the sign of the parity, since $\alpha(\vec u)=u$.
 
 ### The Spinor Module
 

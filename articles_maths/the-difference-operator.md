@@ -17,7 +17,7 @@ whose solvability is read from the multiplier. It is the discrete counterpart of
 preceding it, and the analysis counterpart of the algebraic calculus of special sequences.
 
 The prerequisites are *The Translation Operator*, the previous article of this group, for the shift $\tau_h$
-and the representation of the group, *Measure Theory and Integration* for the sequence spaces $\ell^p$ and
+and the representation of the group, *Measure Theory and Integration* for the sequence spaces $\ell^{n}$ and
 the summable series, *Fourier Analysis on Euclidean Spaces* for the Fourier series and the periodic
 transform in the form used here, and *Modes of Convergence* for the convergence of series. The Fourier
 series of a sequence and the character theory of $\mathbb Z$ are used as they are available in the
@@ -153,12 +153,12 @@ $$
 $$
 so the eigenfunctions of the difference operator on the functions on $\mathbb Z$ are the geometric
 sequences, with eigenvalues $r-1$; the fixed points of the difference are the constant sequences, $r=1$. For
-the step-$h$ operator on $\mathbb R$ the exponential $e_\xi(x)=e^{2\pi i\xi x}$ satisfies
+the step-$h$ operator on $\mathbb R$ the exponential $e_\xi(x)=\exp(2\pi i\xi x)$ satisfies
 $$
-\Delta_he_\xi=(e^{2\pi i\xi h}-1)e_\xi .
+\Delta_he_\xi=(\exp(2\pi i\xi h)-1)e_\xi .
 $$
 
-**Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $e^{2\pi i\xi(x+h)}-e^{2\pi i\xi x}=(e^{2\pi i\xi h}-1)e^{2\pi i\xi x}$.
+**Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $\exp(2\pi i\xi(x+h))-\exp(2\pi i\xi x)=(\exp(2\pi i\xi h)-1)\exp(2\pi i\xi x)$.
 
 The theorem says that the characters of the group are the eigenfunctions of the difference operator, exactly
 as they were the eigenfunctions of the translation; the difference is that the eigenvalue is now
@@ -190,24 +190,24 @@ formula with the remainder controlled by the growth of the function.
 ### The Multiplier of the Difference
 
 **Theorem.** On $\ell^2(\mathbb Z)$ the difference $\Delta=\tau_{-1}-\mathrm{id}$ is bounded with
-$\lVert\Delta\rVert=2$, and under the Fourier series $\hat a(\theta)=\sum_na_ne^{-2\pi in\theta}$ it becomes
-multiplication by $e^{2\pi i\theta}-1$:
+$\lVert\Delta\rVert=2$, and under the Fourier series $\mathcal F a(\theta)=\sum_na_n\exp(-2\pi in\theta)$ it becomes
+multiplication by $\exp(2\pi i\theta)-1$:
 $$
-\widehat{\Delta a}(\theta)=(e^{2\pi i\theta}-1)\,\hat a(\theta).
+\widehat{\Delta a}(\theta)=(\exp(2\pi i\theta)-1)\,\mathcal F a(\theta).
 $$
-Its spectrum is the circle $\{e^{2\pi i\theta}-1:\theta\in\mathbb T\}$, the circle of centre $-1$ and
+Its spectrum is the circle $\{\exp(2\pi i\theta)-1:\theta\in\mathbb T\}$, the circle of centre $-1$ and
 radius $1$, and $\Delta$ has no eigenvalues on $\ell^2(\mathbb Z)$.
 
 **Proof.** Boundedness and the norm $2$ are immediate from
 $\lVert\Delta a\rVert_2\leq2\lVert a\rVert_2$ with equality for the alternating sequence and from the fact
 that $\tau_{-1}$ is unitary. The multiplier identity is the transform of the shift identity
-$\widehat{\tau_{-1}a}(\theta)=e^{2\pi i\theta}\hat a(\theta)$ together with linearity. The spectrum of a
+$\widehat{\tau_{-1}a}(\theta)=\exp(2\pi i\theta)\mathcal F a(\theta)$ together with linearity. The spectrum of a
 multiplication operator by a continuous function on $L^2(\mathbb T)$ is its range, here the circle of
-centre $-1$; an eigenvalue would require $e^{2\pi i\theta}-1$ to be constant on a set of positive measure,
+centre $-1$; an eigenvalue would require $\exp(2\pi i\theta)-1$ to be constant on a set of positive measure,
 which it is not.
 
 The same computation gives the operator $\mathrm{id}-\lambda^{-1}\Delta$ the multiplier
-$1-\lambda^{-1}(e^{2\pi i\theta}-1)$, and a difference equation is solved exactly when this multiplier can be
+$1-\lambda^{-1}(\exp(2\pi i\theta)-1)$, and a difference equation is solved exactly when this multiplier can be
 inverted.
 
 ### Difference Equations
@@ -219,15 +219,15 @@ $$
 equivalently $P(\tau_{-1})u=g$ with $P(z)=\sum_jc_jz^j$, the **characteristic polynomial** of the equation;
 the equation is **homogeneous** when $g=0$.
 
-**Theorem (solution by the transfer function).** If $P(e^{2\pi i\theta})\neq0$ for every $\theta$, then
+**Theorem (solution by the transfer function).** If $P(\exp(2\pi i\theta))\neq0$ for every $\theta$, then
 $P(\tau_{-1})$ is invertible on $\ell^2(\mathbb Z)$, the unique solution is the convolution operator with
-multiplier $1/P(e^{2\pi i\theta})$, and it is the convolution with the sequence whose Fourier series is that
+multiplier $1/P(\exp(2\pi i\theta))$, and it is the convolution with the sequence whose Fourier series is that
 function. The homogeneous solutions are the geometric sequences $r^n$ for the roots $r$ of $P$, with
 multiplicity handled by the sequences $n^kr^n$; the equation is thus solved by the roots of its
 characteristic polynomial, exactly as a linear differential equation with constant coefficients is solved
 by its exponential solutions.
 
-**Proof.** $P(\tau_{-1})$ is a convolution operator with symbol $P(e^{2\pi i\theta})$, and a multiplier with
+**Proof.** $P(\tau_{-1})$ is a convolution operator with symbol $P(\exp(2\pi i\theta))$, and a multiplier with
 symbol bounded away from $0$ is invertible with inverse the multiplier $1/P$; the homogeneous solutions are
 computed by the eigenvalue equation $\Delta(r^n)=(r-1)r^n$ and its iterates.
 
@@ -235,8 +235,8 @@ computed by the eigenvalue equation $\Delta(r^n)=(r-1)r^n$ and its iterates.
 $\delta_0=1$ and $\delta_n=0$ otherwise, a solution is $E_n=\mathbf 1_{\{n\geq1\}}$: indeed
 $E_{n+1}-E_n=1$ for $n=0$ and $0$ for $n\neq0$. This $E$ is the discrete fundamental solution, or Green's
 function, of the difference operator, and the general solution of $\Delta u=g$ is $u=E*g$, the discrete
-convolution. The symbol of $\Delta$ is $e^{2\pi i\theta}-1$, which vanishes at $\theta=0$, and this is why
-$\Delta$ is not invertible on $\ell^2$: the equation $\Delta u=g$ requires the zero mean, $\hat g(0)=0$, and
+convolution. The symbol of $\Delta$ is $\exp(2\pi i\theta)-1$, which vanishes at $\theta=0$, and this is why
+$\Delta$ is not invertible on $\ell^2$: the equation $\Delta u=g$ requires the zero mean, $(\mathcal F g)(0)=0$, and
 then only a decay condition makes $u$ square-summable, so the inverse is unbounded.
 
 ## The Continuous and Higher-Dimensional Cases
@@ -256,8 +256,8 @@ governs the Laplacian. These operators and the difference schemes built from the
 
 **Example (the periodic case).** On a finite cyclic group of order $N$ the difference operator is the
 circulant matrix with $-1$ on the diagonal and $1$ on the super- and sub-diagonal, with the periodic
-boundary condition in the corner. Its eigenvectors are the discrete characters $k\mapsto e^{2\pi ikn/N}$
-and its eigenvalues are $e^{2\pi in/N}-1$, the discrete version of the transform diagonalisation.
+boundary condition in the corner. Its eigenvectors are the discrete characters $k\mapsto \exp(2\pi ikn/N)$
+and its eigenvalues are $\exp(2\pi in/N)-1$, the discrete version of the transform diagonalisation.
 
 ## Summary
 
@@ -267,9 +267,9 @@ $\Delta^ma_n=\sum_j(-1)^{m-j}\binom mj a_{n+j}$, the Leibniz rule holds, and $\D
 the second difference giving the second derivative. Its inverse is the summation $\Sigma$, characterised by
 $\Delta\Sigma=\mathrm{id}$ and $\Sigma\Delta a=a-a_0$, with summation by parts as the discrete integration
 by parts and Abel's and Dirichlet's tests as its consequences. The eigenfunctions are the characters, with
-$\Delta(r^n)=(r-1)r^n$ and $\Delta_he_\xi=(e^{2\pi i\xi h}-1)e_\xi$, and the Newton expansion recovers a
+$\Delta(r^n)=(r-1)r^n$ and $\Delta_he_\xi=(\exp(2\pi i\xi h)-1)e_\xi$, and the Newton expansion recovers a
 sequence from its differences. Under the Fourier series the difference is multiplication by
-$e^{2\pi i\theta}-1$, so its spectrum is the circle of centre $-1$ and radius $1$ and it has no eigenvalues
+$\exp(2\pi i\theta)-1$, so its spectrum is the circle of centre $-1$ and radius $1$ and it has no eigenvalues
 on $\ell^2(\mathbb Z)$; constant-coefficient difference equations are solved by the transfer function and
 the roots of the characteristic polynomial, and the discrete Laplacian on the lattice is the difference
 operator whose continuous limit is the Laplacian.
@@ -283,7 +283,7 @@ operator whose continuous limit is the Laplacian.
 | $\delta_h$ | Central difference, $\delta_ha(x)=a(x+h/2)-a(x-h/2)$ |
 | $\Delta^m$ | Iterated difference, $\sum_j(-1)^{m-j}\binom mj a_{n+j}$ |
 | $\Sigma$ | Indefinite sum, $(\Sigma a)_n=\sum_{k<n}a_k$ |
-| $r^n$, $e_\xi$ | Eigenfunctions of the difference, eigenvalues $r-1$, $e^{2\pi i\xi h}-1$ |
+| $r^n$, $e_\xi$ | Eigenfunctions of the difference, eigenvalues $r-1$, $\exp(2\pi i\xi h)-1$ |
 | $P(z)$ | Characteristic polynomial of a difference equation |
 | $E=\mathbf 1_{\geq1}$ | Fundamental solution of $\Delta E=\delta$ |
 | $L_h$ | Discrete Laplacian, the lattice second difference |

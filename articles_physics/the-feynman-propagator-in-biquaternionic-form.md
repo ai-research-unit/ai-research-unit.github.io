@@ -24,24 +24,24 @@ The quantized field of the companion article is
 
 $$
 \psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
-+b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
+\sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
++b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
 with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by $\gamma^0$. The mode operators obey
 
 $$
-\{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec q)\}
-=\{b_r^{\mathrm{fop}}(\vec p),b_s^{\mathrm{fop}\dagger}(\vec q)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
+\{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec k)\}
+=\{b_r^{\mathrm{fop}}(\vec p),b_s^{\mathrm{fop}\dagger}(\vec k)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
 $$
 
 with all other anticommutators vanishing. The parent article's spinors satisfy
 
 $$
-\bar u^{(r)}u^{(s)}=2m\,\delta^{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},
+\bar w^{(r)}w^{(s)}=2m\,\delta^{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},
 \qquad
-\sum_{r=1}^2 u^{(r)}\bar u^{(r)}=\not p+m,\qquad
+\sum_{r=1}^2 w^{(r)}\bar w^{(r)}=\not p+m,\qquad
 \sum_{r=1}^2 v^{(r)}\bar v^{(r)}=\not p-m .
 $$
 
@@ -49,14 +49,14 @@ Contracting the mode operators against the vacuum gives the two elementary two-p
 
 $$
 W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p+m\big)\,e^{-ip\cdot(x-y)},
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p+m\big)\,\exp(-ip\cdot(x-y)),
 $$
 
 in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
 W_-(x-y)\;=\;\langle 0|\,\bar{\psi^{\mathrm{fop}}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p-m\big)\,e^{+ip\cdot(x-y)},
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p-m\big)\,\exp(+ip\cdot(x-y)),
 $$
 
 in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
@@ -75,7 +75,7 @@ The two $\theta$ functions can be represented by a single four-dimensional integ
 
 $$
 S_F(x-y)\;=\;i\int\!\frac{d^4p}{(2\pi)^4}\;
-e^{-ip\cdot(x-y)}\;\frac{\not p+m}{p^2-m^2+i\epsilon},
+\exp(-ip\cdot(x-y))\;\frac{\not p+m}{p^2-m^2+i\epsilon},
 \qquad \epsilon\to0^+ .
 $$
 
@@ -90,7 +90,7 @@ p^0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
 =\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2).
 $$
 
-The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $e^{-ip^0(x^0-y^0)}$ then selects one pole or the other:
+The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $\exp(-ip^0(x^0-y^0))$ then selects one pole or the other:
 
 - for $x^0-y^0>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}$;
 - for $x^0-y^0<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}$.
@@ -113,7 +113,7 @@ $$
 
 and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x^0-y^0>0$ and $-W_-$ for $x^0-y^0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
 
-**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\not p-m)u^{(r)}=0$ and $(\not p+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\not p-m)(\not p+m)=(p^2-m^2)I_4$, which uses $\not p^{\,2}=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
+**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\not p-m)w^{(r)}=0$ and $(\not p+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\not p-m)(\not p+m)=(p^2-m^2)I_4$, which uses $\not p^{\,2}=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -201,7 +201,7 @@ The honest summary of the algebra's role is the one we gave in the introduction.
 The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$. Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,e^{-ip\cdot(x-y)}\frac{\not p+m}{p^2-m^2+i\epsilon}.
+S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\not p+m}{p^2-m^2+i\epsilon}.
 $$
 
 The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
@@ -232,8 +232,8 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict$ gradient |
 | $p^\mu=(E,\vec p)$, $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
-| $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
-| $\bar u u=2m$, $\bar v v=-2m$, $\sum_r u\bar u=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
+| $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
+| $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
 | $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
 | $\tilde{k}=iE\,e_0+\vec p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |

@@ -137,35 +137,35 @@ $$
 
 using $\partial_0 z^n = nz^{n-1}$, $\partial_1z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$.
 
-**Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\zeta \in \mathbb{C}^m$ the symbol element $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ and its conjugate $\tilde\sigma(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$ satisfy
+**Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\zeta \in \mathbb{C}^m$ the symbol element $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ and its conjugate $\sigma^{\mathrm{refl}}(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$ satisfy
 
 $$
-\sigma(\zeta)\,\tilde\sigma(\zeta) = \sum_\alpha\zeta_\alpha^2,
+\sigma(\zeta)\,\sigma^{\mathrm{refl}}(\zeta) = \sum_\alpha\zeta_\alpha^2,
 $$
 
-the complex scalars being central in $A_\mathbb{C} = A\otimes_\mathbb{R}\mathbb{C}$ and therefore commuting with the $B_k$. If $\zeta \neq 0$ is isotropic, $\sum_\alpha\zeta_\alpha^2 = 0$, then $\sigma(\zeta)$ and $\tilde\sigma(\zeta)$ are both nonzero — separating real and imaginary parts reduces $\sigma(\zeta) = 0$ to $\zeta = 0$ by the symbol computation — so $\sigma(\zeta)$ is a zero divisor of $A_\mathbb{C}$, and
+the complex scalars being central in $A_\mathbb{C} = A\otimes_\mathbb{R}\mathbb{C}$ and therefore commuting with the $B_k$. If $\zeta \neq 0$ is isotropic, $\sum_\alpha\zeta_\alpha^2 = 0$, then $\sigma(\zeta)$ and $\sigma^{\mathrm{refl}}(\zeta)$ are both nonzero — separating real and imaginary parts reduces $\sigma(\zeta) = 0$ to $\zeta = 0$ by the symbol computation — so $\sigma(\zeta)$ is a zero divisor of $A_\mathbb{C}$, and
 
 $$
-x \longmapsto e^{\langle\zeta,x\rangle}\,\tilde\sigma(\zeta)
+x \longmapsto \exp(\langle\zeta,x\rangle)\,\sigma^{\mathrm{refl}}(\zeta)
 $$
 
 is a $D$-regular $A_\mathbb{C}$-valued function that does not vanish at the origin. Its real and imaginary parts are real $D$-regular functions, at least one of them nonzero, since $D$ has real coefficients and $A \cap iA = 0$ in $A_\mathbb{C}$. For $m = 2$ the covectors $\zeta(\lambda) = \lambda(i,1)$, $\lambda \in \mathbb{R}$, are isotropic and $\sigma(\zeta(\lambda)) = \lambda(i+B_1)$ annihilates $v+iB_1v$ for every $v \in A$, so the real part
 
 $$
-x \longmapsto e^{\lambda x_1}\bigl(\cos(\lambda x_0)\,v - \sin(\lambda x_0)\,B_1v\bigr)
+x \longmapsto \exp(\lambda x_1)\bigl(\cos(\lambda x_0)\,v - \sin(\lambda x_0)\,B_1v\bigr)
 $$
 
 is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly independent functions. The isotropic family $\zeta(\theta) = (i,\cos\theta,\sin\theta,0,\dots,0)$ is the higher-dimensional analogue of this family.
 
 **Remark.** The last statement is the qualitative reason the theory is rich: ellipticity together with the Cauchy formula makes the solution space large, while non-commutativity prevents it from being an algebra. The particular dimensions and bases of the solution spaces are properties of the individual systems.
 
-**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{D}$ with $D = \partial_0 + j\partial_1$ one has $\sigma(\xi)\tilde\sigma(\xi) = \xi_0^2 - \xi_1^2$, which vanishes on the two real lines $\xi_0 = \pm\xi_1$, so no component need be harmonic. In the characteristic coordinates $\xi_\pm = x_0 \pm x_1$ one has $D = 2(\pi_1\partial_+ + \pi_2\partial_-)$, so a left regular function has the form $f = f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $\partial_0^2u = \tfrac12(f_+'' + f_-'') = \partial_1^2u$. Accordingly:
+**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{D}$ with $D = \partial_0 + j\partial_1$ one has $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2 - \xi_1^2$, which vanishes on the two real lines $\xi_0 = \pm\xi_1$, so no component need be harmonic. In the characteristic coordinates $\xi_\pm = x_0 \pm x_1$ one has $D = 2(\pi_1\partial_+ + \pi_2\partial_-)$, so a left regular function has the form $f = f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $\partial_0^2u = \tfrac12(f_+'' + f_-'') = \partial_1^2u$. Accordingly:
 
-- **Liouville fails.** The bounded non-constant function $e^{-(x_0 - jx_1)^2}$ is left regular on all of $\mathbb{D}$.
-- **The maximum principle fails.** Its Euclidean norm satisfies $\|e^{-(x_0-jx_1)^2}\| \leq 1 = \|f(0)\|$, so the maximum is attained at the interior point $0$.
+- **Liouville fails.** The bounded non-constant function $\exp(-(x_0 - jx_1)^2)$ is left regular on all of $\mathbb{D}$.
+- **The maximum principle fails.** Its Euclidean norm satisfies $\|\exp(-(x_0-jx_1)^2)\| \leq 1 = \|f(0)\|$, so the maximum is attained at the interior point $0$.
 - **The mean value property fails.** The regular function $x \mapsto \xi_-^2\pi_1$ has value $0$ at the centre of $B(0,r)$, while its average over the ball is $\frac{1}{\pi r^2}\int_{B(0,r)}(x_0-x_1)^2\,dx = \tfrac{r^2}{2} \neq 0$.
 
-For $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$ the symbol satisfies $\sigma(\xi)\tilde\sigma(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0v = -u'$, the components satisfy the transport equations $\partial_0u = 0$ and $\partial_0v = -\partial_1u$, and the bounded non-constant regular function $1 + \varepsilon e^{-x_1^2}$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
+For $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$ the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0v = -u'$, the components satisfy the transport equations $\partial_0u = 0$ and $\partial_0v = -\partial_1u$, and the bounded non-constant regular function $1 + \varepsilon \exp(-x_1^2)$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
 
 ## The Fischer and Stokes Decompositions
 
@@ -295,7 +295,7 @@ The classification of admissible operators up to this equivalence, and the deter
 
 The **generalised Cauchy–Riemann operator** $D = \partial_0 + \sum_k B_k\partial_k$ has principal symbol equal to left multiplication by $\sigma(\xi) = \xi_0 + \sum_k B_k\xi_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\xi$, with inverse $(\xi_0 - \sum_k B_k\xi_k)/|\xi|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
 
-Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{D}$ and $\mathbb{D}'$, whose symbols vanish on the real space, the regular functions are $f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ and $u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0 v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $e^{-(x_0-jx_1)^2}$ on $\mathbb{D}$ and by $1 + \varepsilon e^{-x_1^2}$ on $\mathbb{D}'$.
+Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{D}$ and $\mathbb{D}'$, whose symbols vanish on the real space, the regular functions are $f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ and $u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0 v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_0-jx_1)^2)$ on $\mathbb{D}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{D}'$.
 
 The integral representation is the divergence theorem for $D$ written in divergence form: the **Cauchy–Pompeiu formula** represents an arbitrary $C^1$ function on a bounded domain with smooth boundary by the boundary integral of the Cauchy kernel against the conormal element plus a volume integral of $Df$, and the **Cauchy integral formula** is the case $Df = 0$, in which the volume term drops. Its hypotheses are those the divergence theorem needs — a bounded domain with smooth boundary, $f$ of class $C^1$ on the closure, a global fundamental solution of the conjugate operator, which exists because $D$ is elliptic — and not the simple connectedness and holomorphy of the classical statement.
 
@@ -311,7 +311,7 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $D = \partial_0 + \sum_k B_k\partial_k$ | Generalised Cauchy–Riemann operator |
 | $\bar D = \partial_0 - \sum_k B_k\partial_k$ | Conjugate operator |
 | $\sigma(\xi) = \sum_\alpha B_\alpha\xi_\alpha$ | Principal symbol |
-| $\tilde\sigma(\xi) = \xi_0 - \sum_k B_k\xi_k$ | Reflected symbol, $\sigma\tilde\sigma = \sum_\alpha\xi_\alpha^2$ |
+| $\sigma^{\mathrm{refl}}(\xi) = \xi_0 - \sum_k B_k\xi_k$ | Reflected symbol, $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\xi_\alpha^2$ |
 | $|\xi|^2 = \sum_\alpha \xi_\alpha^2$ | Euclidean squared norm of the covector |
 | $c^\varepsilon_{\gamma\delta}$ | Structure constants of $A$ |
 | $Df = 0$ | Left regularity |

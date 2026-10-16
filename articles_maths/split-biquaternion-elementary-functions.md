@@ -17,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -56,10 +56,10 @@ $$
 where $\exp(\tilde{Q}_\pm)$ is the ordinary quaternion exponential of the component $\tilde{Q}_\pm \in \mathbb{H}$. The quaternion exponential is
 
 $$
-\exp(\tilde{Q}_\pm) = e^{q_0^\pm} \left(\cos|\vec Q_\pm| + \frac{\sin|\vec Q_\pm|}{|\vec Q_\pm|} \vec Q_\pm\right),
+\exp(\tilde{Q}_\pm) = \exp(q_0^\pm) \left(\cos|\vec Q_\pm| + \frac{\sin|\vec Q_\pm|}{|\vec Q_\pm|} \vec Q_\pm\right),
 $$
 
-where $\tilde{Q}_\pm = q_0^\pm + \vec Q_\pm$ is the scalar-vector decomposition of the component, and $|\vec Q_\pm|$ is the ordinary quaternion modulus of the vector part. When the vector part vanishes, the formula reduces to $\exp(\tilde{Q}_\pm) = e^{q_0^\pm}$.
+where $\tilde{Q}_\pm = q_0^\pm + \vec Q_\pm$ is the scalar-vector decomposition of the component, and $|\vec Q_\pm|$ is the ordinary quaternion modulus of the vector part. When the vector part vanishes, the formula reduces to $\exp(\tilde{Q}_\pm) = \exp(q_0^\pm)$.
 
 So the exponential of a split biquaternion is the pair of the quaternion exponentials of its two idempotent components:
 
@@ -74,15 +74,15 @@ This is the cleanest form of the exponential, and it is the reason the split biq
 The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_0 e_0 + \vec Q$ with $Q_0 \in \mathbb{D}$ and $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The scalar part commutes with everything, so
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \exp(\vec Q),
+\exp(\tilde{Q}) = \exp(Q_0) \exp(\vec Q),
 $$
 
-where $e^{Q_0}$ is the split complex exponential and $\exp(\vec Q)$ is the exponential of the vector part.
+where $\exp(Q_0)$ is the split complex exponential and $\exp(\vec Q)$ is the exponential of the vector part.
 
 The split complex exponential is
 
 $$
-e^{Q_0} = e^{q_0}(\cosh q'_0 + j \sinh q'_0), \qquad Q_0 = q_0 + j q'_0.
+\exp(Q_0) = \exp(q_0)(\cosh q'_0 + j \sinh q'_0), \qquad Q_0 = q_0 + j q'_0.
 $$
 
 The exponential of the vector part depends on the split complex norm
@@ -278,13 +278,13 @@ $$
 So the elementary functions reduce to the ordinary real elementary functions applied to the two real scalars:
 
 $$
-\exp(Q_0 e_0) = e^{q_0 + q'_0} \tilde\Pi_1 + e^{q_0 - q'_0} \tilde\Pi_2.
+\exp(Q_0 e_0) = \exp(q_0 + q'_0) \tilde\Pi_1 + \exp(q_0 - q'_0) \tilde\Pi_2.
 $$
 
 In the standard basis, this is
 
 $$
-\exp(Q_0 e_0) = e^{q_0}(\cosh q'_0 + j \sinh q'_0),
+\exp(Q_0 e_0) = \exp(q_0)(\cosh q'_0 + j \sinh q'_0),
 $$
 
 which is the split complex exponential.
@@ -305,7 +305,7 @@ This is the same situation as in the biquaternion case, and it is the fundamenta
 
 | Function | Idempotent form | Standard form |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\vec Q)$ |
+| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ | $\exp(Q_0)(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\vec Q)$ |
 | $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) \tilde\Pi_1 + \sin(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
 | $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) \tilde\Pi_1 + \cos(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
 | $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) \tilde\Pi_1 + \sinh(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
@@ -321,11 +321,11 @@ The idempotent form is the primary one, because it reduces the elementary functi
 |---|---|---|
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Primary decomposition | Quaternion decomposition | Idempotent decomposition |
-| Exponential | $e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat u)$ with $\theta$ complex | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ |
+| Exponential | $\exp(Q_0)(\cos\theta \, e_0 + \sin\theta \, \vec u)$ with $\theta$ complex | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ |
 | Trigonometric functions | Defined via the scalar imaginary $i$ | Defined by the same power series, or componentwise by the quaternion trigonometric functions (no central scalar imaginary exists) |
 | Hyperbolic functions | Defined via the exponential | Defined via the exponential, or via $j$ |
-| Logarithm | $Q_0 e_0 + \theta \hat u$ with $\theta$ complex | $\log(\tilde{Q}_+) \tilde\Pi_1 + \log(\tilde{Q}_-) \tilde\Pi_2$ |
-| Power function | $e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat u)$ | $\tilde{Q}_+^{\alpha_+} \tilde\Pi_1 + \tilde{Q}_-^{\alpha_-} \tilde\Pi_2$ |
+| Logarithm | $Q_0 e_0 + \theta \vec u$ with $\theta$ complex | $\log(\tilde{Q}_+) \tilde\Pi_1 + \log(\tilde{Q}_-) \tilde\Pi_2$ |
+| Power function | $\exp(\alpha Q_0)(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \vec u)$ | $\tilde{Q}_+^{\alpha_+} \tilde\Pi_1 + \tilde{Q}_-^{\alpha_-} \tilde\Pi_2$ |
 | Angle | Complex | Real (in each component) |
 | Modulus | Complex scalar | Pair of real moduli |
 
@@ -335,7 +335,7 @@ The key differences are:
 
 2. **The angles are real.** In the biquaternion case, the angle in the exponential is a complex number. In the split biquaternion case, the angles in the idempotent components are real numbers.
 
-3. **The split complex unit produces hyperbolic functions, not trigonometric.** In the biquaternion case, the scalar imaginary $i$ produces trigonometric functions via the identity $e^{i\theta} = \cos\theta + i\sin\theta$. In the split biquaternion case, the split complex unit $j$ produces hyperbolic functions via the identity $e^{j\theta} = \cosh\theta + j\sinh\theta$.
+3. **The split complex unit produces hyperbolic functions, not trigonometric.** In the biquaternion case, the scalar imaginary $i$ produces trigonometric functions via the identity $\exp(i\theta) = \cos\theta + i\sin\theta$. In the split biquaternion case, the split complex unit $j$ produces hyperbolic functions via the identity $\exp(j\theta) = \cosh\theta + j\sinh\theta$.
 
 4. **The logarithm and power function are simpler.** In the biquaternion case, the logarithm and power function involve the complex angle and the roots of $-1$. In the split biquaternion case, they reduce to the quaternion logarithm and power function in each component.
 
@@ -378,7 +378,7 @@ and similarly for the trigonometric and hyperbolic functions.
 The exponential can also be computed directly from the scalar-vector decomposition:
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \vec Q\right),
+\exp(\tilde{Q}) = \exp(Q_0) \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \vec Q\right),
 $$
 
 where $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\theta^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\theta^2$ alike, and a negative real $\theta^2$ cannot occur.
@@ -398,7 +398,7 @@ The elementary functions of several split biquaternion variables are largely ope
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components, real quaternions |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\exp, \log$ | Split biquaternion exponential and logarithm |
 | $\sin, \cos, \sinh, \cosh$ | Trigonometric and hyperbolic functions |
 | $\tilde{Q}^\alpha$ | Split biquaternion power function |

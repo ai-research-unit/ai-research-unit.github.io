@@ -2,20 +2,20 @@
 
 ## Introduction
 
-The two forms of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, the plain form $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ and the quaternion form $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, are read here on the two **remarkable subspaces** of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{p_0e_0\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec p\}$, the fixed and the anti-fixed space of the quaternion conjugation. The two subspaces are orthogonal for both forms, so the restrictions are the two summands of the two forms, and the two forms are definite on each summand with **opposite signs for the plain form** and with the **same sign for the quaternion form**.
+The two forms of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ and the quaternion form $\langle\tilde p,\tilde q\rangle_{\natural}=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, are read here on the two **remarkable subspaces** of the quaternion space, the scalar line $\mathbb{R}_{\mathbb{H}}=\{p_0e_0\}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})=\{\vec p\}$, the fixed and the anti-fixed space of the quaternion conjugation. The two subspaces are orthogonal for both forms, so the restrictions are the two summands of the two forms, and the two forms are definite on each summand with **opposite signs for the plain form** and with the **same sign for the quaternion form**.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ names an element, the scalar line has the natural basis $e_0$ and the vector subspace the natural basis $e_1,e_2,e_3$, and $(\vec p,\vec q)$ is the dot product of the vector parts. The plain form is $B(\tilde p,\tilde q)=p_0q_0-(\vec p,\vec q)$ and the quaternion form is $N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ names an element, the scalar line has the natural basis $e_0$ and the vector subspace the natural basis $e_1,e_2,e_3$, and $(\vec p,\vec q)$ is the dot product of the vector parts. The plain form is $\langle\tilde p,\tilde q\rangle=p_0q_0-(\vec p,\vec q)$ and the quaternion form is $\langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+(\vec p,\vec q)$.
 
 ## The Restriction Matrices
 
 **Proposition (the restrictions).** The two subspaces are orthogonal for both forms, and the restrictions have the matrices
 
-| subspace | basis | $B$ | $N$ |
+| subspace | basis | $\langle\cdot,\cdot\rangle$ | $\langle\cdot,\cdot\rangle_{\natural}$ |
 |---|---|---|---|
 | $\mathbb{R}_{\mathbb{H}}$ | $e_0$ | $[1]$ | $[1]$ |
 | $\operatorname{Vect}(\mathbb{H})$ | $e_1,e_2,e_3$ | $-I_3$ | $I_3$ |
 
-*Proof.* On the scalar line, $B(p_0e_0,q_0e_0)=p_0q_0$ and $N(p_0e_0,q_0e_0)=p_0q_0$, the vector parts being zero, so both restrictions are the ordinary product of the two scalars, of matrix $[1]$. On the vector subspace, $B(\vec p,\vec q)=-(\vec p,\vec q)$ and $N(\vec p,\vec q)=+(\vec p,\vec q)$, the scalar parts being zero, so the matrices are $-I_3$ and $I_3$. For the orthogonality, take $\tilde p=p_0e_0$ and $\vec q$ a vector; then $B(p_0e_0,\vec q)=p_0\cdot0-(\mathbf 0,\vec q)=0$ and $N(p_0e_0,\vec q)=0$, so the scalar line is orthogonal to the vector subspace for both forms.
+*Proof.* On the scalar line, $\langle p_0e_0,q_0e_0\rangle=p_0q_0$ and $\langle p_0e_0,q_0e_0\rangle_{\natural}=p_0q_0$, the vector parts being zero, so both restrictions are the ordinary product of the two scalars, of matrix $[1]$. On the vector subspace, $\langle \vec p,\vec q\rangle=-(\vec p,\vec q)$ and $\langle \vec p,\vec q\rangle_{\natural}=+(\vec p,\vec q)$, the scalar parts being zero, so the matrices are $-I_3$ and $I_3$. For the orthogonality, take $\tilde p=p_0e_0$ and $\vec q$ a vector; then $\langle p_0e_0,\vec q\rangle=p_0\cdot0-(\mathbf 0,\vec q)=0$ and $\langle p_0e_0,\vec q\rangle_{\natural}=0$, so the scalar line is orthogonal to the vector subspace for both forms.
 
 So the two forms are the orthogonal sums of their two restrictions,
 
@@ -23,15 +23,15 @@ $$
 B=B|_{\mathbb{R}_{\mathbb{H}}}\perp B|_{\operatorname{Vect}(\mathbb{H})} , \qquad N=N|_{\mathbb{R}_{\mathbb{H}}}\perp N|_{\operatorname{Vect}(\mathbb{H})} ,
 $$
 
-and the **signature** of each restriction is read off the matrices: $B$ has signature $(1,0)$ on the scalar line and $(0,3)$ on the vector subspace, of opposite signs, and their sum is the signature $(1,3)$ of $B$ on the whole space; $N$ has signature $(1,0)$ on the scalar line and $(3,0)$ on the vector subspace, of the same sign, and their sum is the signature $(4,0)$ of $N$ on the whole space. The plain form is **definite on each subspace with opposite signs**, the scalar line positive and the vector subspace negative; the quaternion form is **definite on each with the same sign**, the two subspaces positive.
+and the **signature** of each restriction is read off the matrices: $\langle\cdot,\cdot\rangle$ has signature $(1,0)$ on the scalar line and $(0,3)$ on the vector subspace, of opposite signs, and their sum is the signature $(1,3)$ of $\langle\cdot,\cdot\rangle$ on the whole space; $\langle\cdot,\cdot\rangle_{\natural}$ has signature $(1,0)$ on the scalar line and $(3,0)$ on the vector subspace, of the same sign, and their sum is the signature $(4,0)$ of $\langle\cdot,\cdot\rangle_{\natural}$ on the whole space. The plain form is **definite on each subspace with opposite signs**, the scalar line positive and the vector subspace negative; the quaternion form is **definite on each with the same sign**, the two subspaces positive.
 
 ## The Isotropic Elements and the Anisotropy
 
-**Proposition (the isotropic elements).** The quaternion form is anisotropic on each subspace and on the whole space: $N(\tilde p,\tilde p)>0$ for every nonzero $\tilde p$. The plain form is definite on each subspace — positive on the scalar line, negative on the vector subspace — so neither subspace contains an isotropic element; on the whole space it is indefinite, with the isotropic elements $p_0^2=\lvert\vec p\rvert^2$, whose isotropic lines are the lines $\mathbb{R}(e_0+\hat u)$ with $(\hat u,\hat u)=1$, and no such line lies inside a subspace.
+**Proposition (the isotropic elements).** The quaternion form is anisotropic on each subspace and on the whole space: $\langle\tilde p,\tilde p\rangle_{\natural}>0$ for every nonzero $\tilde p$. The plain form is definite on each subspace — positive on the scalar line, negative on the vector subspace — so neither subspace contains an isotropic element; on the whole space it is indefinite, with the isotropic elements $p_0^2=\lvert\vec p\rvert^2$, whose isotropic lines are the lines $\mathbb{R}(e_0+\vec u)$ with $(\vec u,\vec u)=1$, and no such line lies inside a subspace.
 
-*Proof.* On the scalar line $N(p_0e_0,p_0e_0)=p_0^2>0$ for $p_0\neq0$; on the vector subspace $N(\vec p,\vec p)=\lvert\vec p\rvert^2>0$ for $\vec p\neq0$; and both summands positive make the whole form positive definite. For $B$, $B(p_0e_0,p_0e_0)=p_0^2>0$ on the scalar line and $B(\vec p,\vec p)=-\lvert\vec p\rvert^2<0$ on the vector subspace, so each is definite with its own sign and carries no isotropic element; on the whole space $B(\tilde p,\tilde p)=p_0^2-\lvert\vec p\rvert^2$ vanishes exactly when $p_0=\pm\lvert\vec p\rvert$, which mixes the two subspaces, so no isotropic element has only a scalar part or only a vector part.
+*Proof.* On the scalar line $\langle p_0e_0,p_0e_0\rangle_{\natural}=p_0^2>0$ for $p_0\neq0$; on the vector subspace $\langle \vec p,\vec p\rangle_{\natural}=\lvert\vec p\rvert^2>0$ for $\vec p\neq0$; and both summands positive make the whole form positive definite. For $\langle\cdot,\cdot\rangle$, $\langle p_0e_0,p_0e_0\rangle=p_0^2>0$ on the scalar line and $\langle \vec p,\vec p\rangle=-\lvert\vec p\rvert^2<0$ on the vector subspace, so each is definite with its own sign and carries no isotropic element; on the whole space $\langle\tilde p,\tilde p\rangle=p_0^2-\lvert\vec p\rvert^2$ vanishes exactly when $p_0=\pm\lvert\vec p\rvert$, which mixes the two subspaces, so no isotropic element has only a scalar part or only a vector part.
 
-So the plain form is the form of the two subspaces with a **sign reversal**: it is positive on the scalar line and negative on the vector subspace, and its isotropic elements are the nonzero elements of the **isotropic cone**, of real dimension three, obtained by balancing the scalar and the vector parts. The quaternion form has **no isotropic element at all**, on either subspace or on their sum. The isotropic cone of the plain form is that of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, the article preceding this one, and the fact that the isotropic elements are not contained in a single subspace is the statement that the two subspaces, definite one way each, carry no null direction.
+So the plain form is the form of the two subspaces with a **sign reversal**: it is positive on the scalar line and negative on the vector subspace, and its isotropic elements are the nonzero elements of the **isotropic cone**, of real dimension three, obtained by balancing the scalar and the vector parts. The quaternion form has **no isotropic element at all**, on either subspace or on their sum. The isotropic cone of the plain form is that of *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, the article preceding this one, and the fact that the isotropic elements are not contained in a single subspace is the statement that the two subspaces, definite one way each, carry no null direction.
 
 ## Summary
 
@@ -49,7 +49,7 @@ The quaternion form is anisotropic on each subspace and on the whole space. The 
 | $N|_{\operatorname{Vect}}=+I_3$, signature $(3,0)$ | the quaternion form on the vectors |
 | $\mathbb{R}_{\mathbb{H}}\perp\operatorname{Vect}(\mathbb{H})$ | the orthogonal splitting for both forms |
 | $p_0^2=\lvert\vec p\rvert^2$ | the isotropic elements of the plain form, mixing the two subspaces |
-| $N(\tilde p,\tilde p)>0$ for $\tilde p\neq0$ | the anisotropy of the quaternion form |
+| $\langle\tilde p,\tilde p\rangle_{\natural}>0$ for $\tilde p\neq0$ | the anisotropy of the quaternion form |
 
 ## Further Reading
 

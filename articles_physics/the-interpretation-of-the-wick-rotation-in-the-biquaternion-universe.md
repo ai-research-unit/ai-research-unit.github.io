@@ -25,7 +25,7 @@ $$
 All four coefficients are **real**. The quadratic form
 
 $$
-N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2
 $$
 
 has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.
@@ -39,7 +39,7 @@ $$
 The first coefficient is **imaginary**, the three remaining coefficients are **real**. The quadratic form
 
 $$
-N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2
 $$
 
 has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
@@ -53,7 +53,7 @@ $$
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2
+\langle\tilde{Q}\rangle_{\natural} = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{M}_-$.
@@ -103,13 +103,13 @@ obtained by relabeling the imaginary coefficient $ict$ as a real coefficient $c\
 The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral
 
 $$
-Z = \int \mathcal{D}\phi\; e^{iS[\phi]/\hbar}
+Z = \int \mathcal{D}\phi\; \exp(iS[\phi]/\hbar)
 $$
 
 has an oscillating integrand, and it is not absolutely convergent. After the Wick rotation, the path integral becomes
 
 $$
-Z_E = \int \mathcal{D}\phi\; e^{-S_E[\phi]/\hbar},
+Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
 $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial_t^2/c^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
@@ -126,7 +126,7 @@ $$
 \Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta.
 $$
 
-The oscillating phase $e^{iS}$ becomes the decaying exponential $e^{-S_E}$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.
+The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.
 
 So the Wick rotation is a **trick** in the strict sense: it is a change of variable that is useful for some problems and not for others, and it does not correspond to a physical transformation. Its biquaternion content is that the material sector $\mathbb{M}_-$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are two four-dimensional subspaces of the same algebra, related by relabeling the imaginary first coefficient as a real one.
 
@@ -149,7 +149,7 @@ The transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ therefore replaces
 
 ## Why the Transfer Sometimes Fails
 
-The same transfer also destroys part of the structure of the original problem. The Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering of events, the phase $e^{iS/\hbar}$ with its specific oscillation — is not preserved by the transfer to $\mathbb{H}_{\mathbb{B}}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears (there are no zero divisors on $\mathbb{H}_{\mathbb{B}}$).
+The same transfer also destroys part of the structure of the original problem. The Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering of events, the phase $\exp(iS/\hbar)$ with its specific oscillation — is not preserved by the transfer to $\mathbb{H}_{\mathbb{B}}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears (there are no zero divisors on $\mathbb{H}_{\mathbb{B}}$).
 
 When the physics of the problem depends on this Lorentzian structure, the transfer is fatal. The transferred problem is then not equivalent to the original one; it is a different problem, with a different physical content. This is the reason the Wick rotation sometimes fails: not because the calculation is technically difficult, but because the transfer changes the physics.
 

@@ -9,9 +9,9 @@ $$
 L_{\tilde A}(\tilde Y)=\tilde A\tilde Y,\qquad R_{\tilde B}(\tilde Y)=\tilde Y\tilde B .
 $$
 
-Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; and the form that supplies the adjoints is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, so that a general element is $\tilde A=\sum_\mu A_\mu e_\mu$ with $A_\mu\in\mathbb{C}$. The natural conjugation is $\tilde A^{\natural}=A_0e_0-A_1e_1-A_2e_2-A_3e_3$; the norm is $N(\tilde A)=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, with adjoint written ${}^{N}$; the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ and its adjoint is written ${}^{*}$. An operator is a $\mathbb{C}$-linear map of $\mathbb{B}$ to itself.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, so that a general element is $\tilde A=\sum_\mu A_\mu e_\mu$ with $A_\mu\in\mathbb{C}$. The natural conjugation is $\tilde A^{\natural}=A_0e_0-A_1e_1-A_2e_2-A_3e_3$; the norm is $\langle\tilde A\rangle_{\natural}=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, with adjoint written ${}^{N}$; the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ and its adjoint is written ${}^{*}$. An operator is a $\mathbb{C}$-linear map of $\mathbb{B}$ to itself.
 
 ## The Two Multiplications
 
@@ -57,22 +57,22 @@ $$
 
 so it is multiplicative up to the scalar $\tilde B\tilde A$ exactly when $\tilde B\tilde A$ is central, and strictly multiplicative exactly when $\tilde B\tilde A=e_0$; up to scalar multiples, the products that are multiplicative in this sense are exactly the twisted two-sided operators.
 
-*Proof.* The left side is $\tilde A\tilde Y\tilde B\tilde A\tilde Z\tilde B=\tilde A\tilde Y(\tilde B\tilde A)\tilde Z\tilde B$, which is $L_{\tilde A}R_{\tilde B}$ applied to $\tilde Y(\tilde B\tilde A)\tilde Z$; when $\tilde B\tilde A=\mu e_0$ is scalar it may be moved out, giving $L(\tilde Y)L(\tilde Z)=\mu L(\tilde Y\tilde Z)$, and the strict case is $\mu=1$. Conversely, for units $\tilde A,\tilde B$ the identity for all $\tilde Y,\tilde Z$ forces the factor $\tilde B\tilde A$ to be scalar. With $\tilde B\tilde A=\mu e_0$ and $\tilde A$ a unit, $\tilde B=\mu\tilde A^{-1}=\mu\tilde A^{\natural}/N(\tilde A)$, proportional to $\tilde A^{\natural}$.
+*Proof.* The left side is $\tilde A\tilde Y\tilde B\tilde A\tilde Z\tilde B=\tilde A\tilde Y(\tilde B\tilde A)\tilde Z\tilde B$, which is $L_{\tilde A}R_{\tilde B}$ applied to $\tilde Y(\tilde B\tilde A)\tilde Z$; when $\tilde B\tilde A=\mu e_0$ is scalar it may be moved out, giving $L(\tilde Y)L(\tilde Z)=\mu L(\tilde Y\tilde Z)$, and the strict case is $\mu=1$. Conversely, for units $\tilde A,\tilde B$ the identity for all $\tilde Y,\tilde Z$ forces the factor $\tilde B\tilde A$ to be scalar. With $\tilde B\tilde A=\mu e_0$ and $\tilde A$ a unit, $\tilde B=\mu\tilde A^{-1}=\mu\tilde A^{\natural}/\langle\tilde A\rangle_{\natural}$, proportional to $\tilde A^{\natural}$.
 
 **Proposition (the sign, and the factorisation).** For every element,
 
 $$
-\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}=N(\tilde A)\,\mathrm{Ad}_{\tilde A}\quad(\tilde A\text{ a unit}),\qquad
-\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=N(\tilde A)\,\Theta_{\tilde A}(\tilde Y\tilde Z),
+\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}=\langle\tilde A\rangle_{\natural}\,\mathrm{Ad}_{\tilde A}\quad(\tilde A\text{ a unit}),\qquad
+\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=\langle\tilde A\rangle_{\natural}\,\Theta_{\tilde A}(\tilde Y\tilde Z),
 $$
 
-and $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$. The right factor is the inverse right multiplication up to the norm, $R_{\tilde A^{\natural}}=N(\tilde A)R_{\tilde A^{-1}}$ on a unit, so it is the left factor $L_{\tilde A}$ that carries the conjugation, and the norm scalar that appears in the multiplication law is the price of that choice.
+and $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$. The right factor is the inverse right multiplication up to the norm, $R_{\tilde A^{\natural}}=\langle\tilde A\rangle_{\natural}R_{\tilde A^{-1}}$ on a unit, so it is the left factor $L_{\tilde A}$ that carries the conjugation, and the norm scalar that appears in the multiplication law is the price of that choice.
 
-*Proof.* Each identity is the corresponding identity of *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions*, read in the one-sided notation; the factorisation $R_{\tilde A^{\natural}}=N(\tilde A)R_{\tilde A^{-1}}$ is $\tilde A^{\natural}=N(\tilde A)\tilde A^{-1}$ for a unit.
+*Proof.* Each identity is the corresponding identity of *Two-Sided Operators on the General Quaternionic Algebra*, read in the one-sided notation; the factorisation $R_{\tilde A^{\natural}}=\langle\tilde A\rangle_{\natural}R_{\tilde A^{-1}}$ is $\tilde A^{\natural}=\langle\tilde A\rangle_{\natural}\tilde A^{-1}$ for a unit.
 
 **Remark (why the left factor carries the sign).** A one-sided operator does not act on the vector subspace: no left multiplication and no right multiplication carries $\mathbb{C}\{e_1,e_2,e_3\}$ into itself except the scalar ones, so the sign cannot be detected one-sidedly. It is the product of the two factors that acts on the vector subspace as a form-preserving map, and the sign sits in the left factor as the reflection of the parameter.
 
-**Remark (the two normalisations of the sign).** The general two-sided family $\Phi^{\theta,c}_x(y)=\theta(x)y\,c(x)$ of *Two-Sided Operators on a Clifford Algebra* has five members, and the name "signed inner conjugation" is used in the corpus for two of them: the member $\theta=\alpha$, $c=(\ )^{-1}$, which is $\alpha(\tilde A)\tilde Y\tilde A^{-1}=\varepsilon_{\tilde A}\mathrm{Ad}_{\tilde A}$ with the parity sign $\varepsilon$, and the member $\theta=\mathrm{id}$, $c={}^{\natural}$, the conjugation sandwich $\tilde A\tilde Y\tilde A^{\natural}=N(\tilde A)\mathrm{Ad}_{\tilde A}$, which is the operator of this article. They coincide exactly on the homogeneous parameters with $N(\tilde A)=\varepsilon_{\tilde A}$. The one-sided factors below are those of the second normalisation, the one whose right factor is $R_{\tilde A^{\natural}}=N(\tilde A)R_{\tilde A^{-1}}$; the factors of the first differ by the same scalar and are the ones used in *Biquaternion Versors and the Orthogonal Group*.
+**Remark (the two normalisations of the sign).** The general two-sided family $\Phi^{\theta,c}_x(y)=\theta(x)y\,c(x)$ of *Two-Sided Operators on a Clifford Algebra* has five members, and the name "signed inner conjugation" is used in the corpus for two of them: the member $\theta=\alpha$, $c=(\ )^{-1}$, which is $\alpha(\tilde A)\tilde Y\tilde A^{-1}=\varepsilon_{\tilde A}\mathrm{Ad}_{\tilde A}$ with the parity sign $\varepsilon$, and the member $\theta=\mathrm{id}$, $c={}^{\natural}$, the conjugation sandwich $\tilde A\tilde Y\tilde A^{\natural}=\langle\tilde A\rangle_{\natural}\mathrm{Ad}_{\tilde A}$, which is the operator of this article. They coincide exactly on the homogeneous parameters with $\langle\tilde A\rangle_{\natural}=\varepsilon_{\tilde A}$. The one-sided factors below are those of the second normalisation, the one whose right factor is $R_{\tilde A^{\natural}}=\langle\tilde A\rangle_{\natural}R_{\tilde A^{-1}}$; the factors of the first differ by the same scalar and are the ones used in *Biquaternion Versors and the Orthogonal Group*.
 
 ## The Adjoints for the Bilinear Form
 
@@ -85,9 +85,9 @@ $$
 
 *Proof.* $\langle L_{\tilde A}\tilde X,\tilde Y\rangle_{\natural}=\mathrm{Sc}(\tilde A\tilde X\tilde Y^{\natural})$, and by the cyclicity of the scalar part this equals $\mathrm{Sc}(\tilde X\tilde Y^{\natural}\tilde A)=\mathrm{Sc}(\tilde X(\tilde A^{\natural}\tilde Y)^{\natural})=\langle\tilde X,L_{\tilde A^{\natural}}\tilde Y\rangle_{\natural}$, since ${}^{\natural}$ is an anti-automorphism; the right case is the same computation with the factors in the other order.
 
-**Corollary (the self-adjoint, the skew-adjoint and the congruent multiplications).** The left multiplication $L_{\tilde A}$ is $N$-self-adjoint exactly for $\tilde A$ central, $N$-skew-adjoint exactly for $\tilde A$ pure, and an automorphism of the form exactly for $N(\tilde A)=1$; for the right multiplication the same three criteria hold with $\tilde B$ in place of $\tilde A$.
+**Corollary (the self-adjoint, the skew-adjoint and the congruent multiplications).** The left multiplication $L_{\tilde A}$ is $N$-self-adjoint exactly for $\tilde A$ central, $N$-skew-adjoint exactly for $\tilde A$ pure, and an automorphism of the form exactly for $\langle\tilde A\rangle_{\natural}=1$; for the right multiplication the same three criteria hold with $\tilde B$ in place of $\tilde A$.
 
-*Proof.* By the injectivity of the parameter map, $L_{\tilde A^{\natural}}=L_{\tilde A}$ is $\tilde A^{\natural}=\tilde A$, that is $\tilde A$ central; $L_{\tilde A^{\natural}}=-L_{\tilde A}=L_{-\tilde A}$ is $\tilde A^{\natural}=-\tilde A$, that is $\tilde A$ pure; and the preservation condition is read from the norm of the image, $N(L_{\tilde A}\tilde X)=N(\tilde A)N(\tilde X)$, which is $1$ for all $\tilde X$ exactly when $N(\tilde A)=1$.
+*Proof.* By the injectivity of the parameter map, $L_{\tilde A^{\natural}}=L_{\tilde A}$ is $\tilde A^{\natural}=\tilde A$, that is $\tilde A$ central; $L_{\tilde A^{\natural}}=-L_{\tilde A}=L_{-\tilde A}$ is $\tilde A^{\natural}=-\tilde A$, that is $\tilde A$ pure; and the preservation condition is read from the norm of the image, $\langle L_{\tilde A}\tilde X\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde X\rangle_{\natural}$, which is $1$ for all $\tilde X$ exactly when $\langle\tilde A\rangle_{\natural}=1$.
 
 **Remark (the two sectors are populated here).** Both the self-adjoint and the skew-adjoint sector are non-empty for the one-sided operators, the centre $\mathbb{C}_{\mathbb{B}}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$: the sign character of the algebra splits the parameters, and the two sectors are its two eigenspaces. The contrast with the two-sided operator, where the skew-adjoint sector collapses, is one more sign that the two-sided operator is the twisted object and the one-sided ones are not.
 
@@ -96,17 +96,17 @@ $$
 **Proposition (the conformal factor and the determinant).** For all $\tilde A,\tilde X$,
 
 $$
-N\bigl(L_{\tilde A}\tilde X\bigr)=N(\tilde A)\,N(\tilde X),\qquad
-N\bigl(R_{\tilde A}\tilde X\bigr)=N(\tilde A)\,N(\tilde X),
+N\bigl(L_{\tilde A}\tilde X\bigr)=\langle\tilde A\rangle_{\natural}\,\langle\tilde X\rangle_{\natural},\qquad
+N\bigl(R_{\tilde A}\tilde X\bigr)=\langle\tilde A\rangle_{\natural}\,\langle\tilde X\rangle_{\natural},
 $$
 
 so that each multiplication scales the form by the norm of its parameter; in the coefficient basis,
 
 $$
-\det L_{\tilde A}=\det R_{\tilde A}=N(\tilde A)^{2}.
+\det L_{\tilde A}=\det R_{\tilde A}=\langle\tilde A\rangle_{\natural}^{2}.
 $$
 
-*Proof.* $N(\tilde A\tilde X)=N(\tilde A)N(\tilde X)$ is the multiplicativity of the norm, and the right case is the same with the factors interchanged. For the determinant, the matrix realisation $\mathsf{M}_2$ of the algebra sends $L_{\tilde A}$ to the map $B\mapsto\mathsf{M}_2(\tilde A)B$ on $M_2(\mathbb{C})$, which is $\mathsf{M}_2(\tilde A)\otimes I_2$; the determinant of a Kronecker product is $\det(\mathsf{M}_2(\tilde A))^{2}\det(I_2)^{2}=\det(\mathsf{M}_2(\tilde A))^{2}=N(\tilde A)^{2}$, since $\det\mathsf{M}_2(\tilde A)=N(\tilde A)$.
+*Proof.* $\langle\tilde A\tilde X\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde X\rangle_{\natural}$ is the multiplicativity of the norm, and the right case is the same with the factors interchanged. For the determinant, the matrix realisation $\mathsf{M}_2$ of the algebra sends $L_{\tilde A}$ to the map $B\mapsto\mathsf{M}_2(\tilde A)B$ on $M_2(\mathbb{C})$, which is $\mathsf{M}_2(\tilde A)\otimes I_2$; the determinant of a Kronecker product is $\det(\mathsf{M}_2(\tilde A))^{2}\det(I_2)^{2}=\det(\mathsf{M}_2(\tilde A))^{2}=\langle\tilde A\rangle_{\natural}^{2}$, since $\det\mathsf{M}_2(\tilde A)=\langle\tilde A\rangle_{\natural}$.
 
 **Corollary (the form-preserving multiplications).** The multiplications that preserve the form are exactly those by an element of norm one, and their group is the norm-one slice of $\mathbb{B}^\times$; the multiplications by an element of norm $-1$ reverse the sign of the form.
 
@@ -117,9 +117,9 @@ $$
 \mathsf{M}_2\bigl(R_{\tilde A}\tilde X\bigr)=\mathsf{M}_2(\tilde X)\,\mathsf{M}_2(\tilde A),
 $$
 
-so that $L_{\tilde A}$ is the left factor and $R_{\tilde A}$ the right factor of the regular representation: each is the Kronecker product of $\mathsf{M}_2(\tilde A)$ with the identity $I_2$, the left one carrying $\mathsf{M}_2(\tilde A)$ itself and the right one carrying its transpose, the transpose entering because the two factors of a Kronecker product act on the two sides of the matrix. Independently of which slot the identity occupies, $\mathsf{M}_2(\tilde A)$ acts on the left factor for $L_{\tilde A}$ and $\mathsf{M}_2(\tilde A)^{\mathsf T}$ on the right factor for $R_{\tilde A}$, so the two determinants are $\det\mathsf{M}_2(\tilde A)^{2}=N(\tilde A)^{2}$ each and the two traces are $2\,\mathrm{tr}\,\mathsf{M}_2(\tilde A)=4A_0$ each; the two commute for every pair of parameters, which is the associativity of the algebra read in the regular representation.
+so that $L_{\tilde A}$ is the left factor and $R_{\tilde A}$ the right factor of the regular representation: each is the Kronecker product of $\mathsf{M}_2(\tilde A)$ with the identity $I_2$, the left one carrying $\mathsf{M}_2(\tilde A)$ itself and the right one carrying its transpose, the transpose entering because the two factors of a Kronecker product act on the two sides of the matrix. Independently of which slot the identity occupies, $\mathsf{M}_2(\tilde A)$ acts on the left factor for $L_{\tilde A}$ and $\mathsf{M}_2(\tilde A)^{\mathsf T}$ on the right factor for $R_{\tilde A}$, so the two determinants are $\det\mathsf{M}_2(\tilde A)^{2}=\langle\tilde A\rangle_{\natural}^{2}$ each and the two traces are $2\,\mathrm{tr}\,\mathsf{M}_2(\tilde A)=4A_0$ each; the two commute for every pair of parameters, which is the associativity of the algebra read in the regular representation.
 
-*Proof.* The multiplication map $B\mapsto\mathsf{M}_2(\tilde A)B$ on $M_2(\mathbb{C})\cong\mathbb{C}^{4}$ is a Kronecker product of $\mathsf{M}_2(\tilde A)$ with $I_2$, of determinant $\det\mathsf{M}_2(\tilde A)^{2}=N(\tilde A)^{2}$ by the multiplicativity of the determinant of a Kronecker product, and $B\mapsto B\mathsf{M}_2(\tilde A)$ is the same product with $\mathsf{M}_2(\tilde A)$ replaced by its transpose, of the same determinant because the determinant is invariant under transposition. The trace of either product is $\mathrm{tr}\,\mathsf{M}_2(\tilde A)\cdot\mathrm{tr}\,I_2=2A_0\cdot2=4A_0$ because $\mathrm{tr}\,\mathsf{M}_2(\tilde A)=2A_0$; the commutation is the mixed-product rule for Kronecker products, $(A\otimes I_2)(I_2\otimes A^{\mathsf T})=(I_2\otimes A^{\mathsf T})(A\otimes I_2)$.
+*Proof.* The multiplication map $B\mapsto\mathsf{M}_2(\tilde A)B$ on $M_2(\mathbb{C})\cong\mathbb{C}^{4}$ is a Kronecker product of $\mathsf{M}_2(\tilde A)$ with $I_2$, of determinant $\det\mathsf{M}_2(\tilde A)^{2}=\langle\tilde A\rangle_{\natural}^{2}$ by the multiplicativity of the determinant of a Kronecker product, and $B\mapsto B\mathsf{M}_2(\tilde A)$ is the same product with $\mathsf{M}_2(\tilde A)$ replaced by its transpose, of the same determinant because the determinant is invariant under transposition. The trace of either product is $\mathrm{tr}\,\mathsf{M}_2(\tilde A)\cdot\mathrm{tr}\,I_2=2A_0\cdot2=4A_0$ because $\mathrm{tr}\,\mathsf{M}_2(\tilde A)=2A_0$; the commutation is the mixed-product rule for Kronecker products, $(A\otimes I_2)(I_2\otimes A^{\mathsf T})=(I_2\otimes A^{\mathsf T})(A\otimes I_2)$.
 
 ## The Hermitian Layer
 
@@ -132,15 +132,15 @@ $$
 
 *Proof.* $\langle L_{\tilde A}\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde A\tilde X\tilde Y^{*})$ and $\langle\tilde X,L_{\tilde A^{*}}\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X(\tilde A^{*}\tilde Y)^{*})=\mathrm{Sc}(\tilde X\tilde Y^{*}\tilde A)$; the two agree by the cyclicity of the scalar part, since $(\tilde A^{*}\tilde Y)^{*}=\tilde Y^{*}\tilde A$.
 
-**Corollary (the sectors for the dagger).** For the Hermitian form, $L_{\tilde A}$ is self-adjoint exactly for $\tilde A\in\mathbb{M}_+$, skew-adjoint exactly for $\tilde A\in\mathbb{M}_-$, and unitary exactly on the slice $a^{*}a=e_0$; the two sectors are the two halves of the Hermitian splitting, and the dagger layer is where the pair of sectors is symmetric (*One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
+**Corollary (the sectors for the dagger).** For the Hermitian form, $L_{\tilde A}$ is self-adjoint exactly for $\tilde A\in\mathbb{M}_+$, skew-adjoint exactly for $\tilde A\in\mathbb{M}_-$, and unitary exactly on the slice $a^{*}a=e_0$; the two sectors are the two halves of the Hermitian splitting, and the dagger layer is where the pair of sectors is symmetric (*One-Sided Operators on the General Plain Sesqualgebra*).
 
 ## Worked Examples
 
 **A scalar parameter.** For $\tilde A=\lambda e_0$ the multiplications are scalars, $L_{\tilde A}=R_{\tilde A}=\lambda\,\mathrm{id}$; they are self-adjoint for every $\lambda$, since a scalar parameter is central, and a form-preserving map exactly for $\lambda^{2}=1$, that is $\lambda=\pm1$.
 
-**A vector parameter.** For $\tilde R=e_1$, $N(\tilde R)=1$ and $\tilde R^{\natural}=-e_1$, so $L_{\tilde R}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde R}$ has the same two properties, and $L_{\tilde R}R_{\tilde R}=\Theta_{\tilde R}$ is the reflection-like operator of the two-sided layer.
+**A vector parameter.** For $\tilde R=e_1$, $\langle\tilde R\rangle_{\natural}=1$ and $\tilde R^{\natural}=-e_1$, so $L_{\tilde R}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde R}$ has the same two properties, and $L_{\tilde R}R_{\tilde R}=\Theta_{\tilde R}$ is the reflection-like operator of the two-sided layer.
 
-**A null parameter.** For $\tilde A=e_1+ie_2$, $N(\tilde A)=0$: both multiplications are nonzero, neither is invertible, and both collapse the form, $N(L_{\tilde A}\tilde X)=0$ for every $\tilde X$.
+**A null parameter.** For $\tilde A=e_1+ie_2$, $\langle\tilde A\rangle_{\natural}=0$: both multiplications are nonzero, neither is invertible, and both collapse the form, $\langle L_{\tilde A}\tilde X\rangle_{\natural}=0$ for every $\tilde X$.
 
 **A unit of norm one.** For $\tilde A=(e_0+e_1)/\sqrt2$ the multiplications are automorphisms of the form, and the two-sided product $L_{\tilde A}R_{\tilde A^{\natural}}$ is an inner automorphism.
 
@@ -157,13 +157,13 @@ The one-sided operators of the biquaternion algebra are the left and right multi
 | $\{T:TL_{\tilde A}=L_{\tilde A}T\}=\{R_{\tilde B}\}$ | The commutant; the double centraliser |
 | $(L_{\tilde A})^{N}=L_{\tilde A^{\natural}}$, $(R_{\tilde B})^{N}=R_{\tilde B^{\natural}}$ | The adjoints for the general quaternionic bilinear form |
 | $(L_{\tilde A})^{*}=L_{\tilde A^{*}}$, $(R_{\tilde B})^{*}=R_{\tilde B^{*}}$ | The adjoints for the Hermitian form |
-| $N(L_{\tilde A}\tilde X)=N(\tilde A)N(\tilde X)$, $\det L_{\tilde A}=N(\tilde A)^{2}$ | The conformal factor and the determinant |
+| $\langle L_{\tilde A}\tilde X\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde X\rangle_{\natural}$, $\det L_{\tilde A}=\langle\tilde A\rangle_{\natural}^{2}$ | The conformal factor and the determinant |
 | $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$ | The twisted two-sided product |
 | $\tilde B\tilde A$ central; $=e_0$ | $L_{\tilde A}R_{\tilde B}$ multiplicative up to the scalar $\tilde B\tilde A$; strictly multiplicative for $\tilde B\tilde A=e_0$ |
 
 ## Further Reading
 
-- *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the product of the two factors
-- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the dagger layer
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the general quaternionic bilinear form and its Gram matrix
+- *Two-Sided Operators on the General Quaternionic Algebra* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the product of the two factors
+- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the dagger layer
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the general quaternionic bilinear form and its Gram matrix
 - *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* (`articles_maths/one-sided-operators-on-a-clifford-algebra-with-signed-inner-conjugation.md`), for the general theory

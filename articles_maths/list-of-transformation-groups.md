@@ -35,7 +35,7 @@ Each family is the transformation group of a space with a definite structure, an
 | Family | The structure preserved | Introduced in |
 |---|---|---|
 | the linear groups $GL(V)$, $SL(V)$ | the linear structure of a vector space | *The General Linear Group*; *List of Linear Geometric Groups* |
-| the classical groups $O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$ | a quadratic, Hermitian or symplectic form | *Matrix Groups and Classical Groups*; *List of Classical Geometric Groups* |
+| the classical groups $O(V,\mathfrak{Q})$, $U(V,h)$, $Sp(V,\omega)$ | a quadratic, Hermitian or symplectic form | *Matrix Groups and Classical Groups*; *List of Classical Geometric Groups* |
 | the projective groups $PGL(V)$, $PSL(V)$, $PO$, $PSU$, $PSp$ | the incidence structure of a projective space; the quotients by the centre | *Projective Geometry*; *List of Projective Geometric Groups* |
 | the affine group $\operatorname{Aff}(n) = \mathbb{R}^n \rtimes GL(n)$ | the affine structure; the automorphism group of affine space | *Affine Spaces and Translations*; *List of Affine and Euclidean Groups* |
 | the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$ | the Euclidean distance and its isometries | *Euclidean Geometry*; *List of Affine and Euclidean Groups*; *List of Isometry and Symmetry Groups* |
@@ -99,7 +99,7 @@ Objects that a reader may expect in a list of transformation groups, and does no
 
 | Object | Why it is not listed | Introduced in |
 |---|---|---|
-| $O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$ as groups | they are defined by a form, so they are introduced among the classical geometric groups and are listed there | *List of Classical Geometric Groups* |
+| $O(V,\mathfrak{Q})$, $U(V,h)$, $Sp(V,\omega)$ as groups | they are defined by a form, so they are introduced among the classical geometric groups and are listed there | *List of Classical Geometric Groups* |
 | the spin and pin groups | they are constructed from the Clifford algebra and are listed with it | *List of Clifford Algebras and Spin Groups* |
 | the infinite-dimensional Lie groups | recorded with Hilbert's fifth problem; they are transformation groups without a finite dimension | *Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory* |
 | the absolute Galois group | it acts on the algebraic closure; it is not the transformation group of a finite-dimensional geometry | *Galois Cohomology*; *List of Automorphism Groups* |
@@ -122,7 +122,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$, $\operatorname{Out}(G)$ | the automorphism, inner and outer groups of a group |
 | $E(n)$, $\operatorname{Aff}(n)$, $\operatorname{Sim}(n)$ | the Euclidean, affine and similarity groups |
 | $GL(V)$, $SL(V)$, $PGL(V)$, $PSL(V)$ | the linear and projective linear groups |
-| $O(V,Q)$, $U(V,h)$, $Sp(V,\omega)$ | the classical groups of a quadratic, Hermitian and symplectic form |
+| $O(V,\mathfrak{Q})$, $U(V,h)$, $Sp(V,\omega)$ | the classical groups of a quadratic, Hermitian and symplectic form |
 | $\operatorname{Möb}(n)$, $\operatorname{Conf}(M)$ | the Möbius group and the conformal group |
 | $\operatorname{Isom}(X)$, $\operatorname{Diff}(M)$, $\operatorname{Homeo}(X)$ | the isometry, diffeomorphism and homeomorphism groups |
 | $\operatorname{Mod}(S)$, $\operatorname{Bir}(X)$ | the mapping class group and the birational group |

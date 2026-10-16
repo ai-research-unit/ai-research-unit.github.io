@@ -88,13 +88,13 @@ the theorem below shows that they contain nothing wilder than a positive measure
 **Definition.** A positive measure $\mu$ on $\mathbb R^n$ is **tempered** if
 $\int_{\mathbb R^n}(1+\lvert\xi\rvert)^{-N}d\mu(\xi)<\infty$ for some $N$; equivalently, if it is the
 Fourier transform of a tempered distribution, i.e. if the function
-$\hat\mu(x)=\int e^{-2\pi ix\cdot\xi}d\mu(\xi)$ is a tempered distribution.
+$\hat\mu(x)=\int \exp(-2\pi ix\cdot\xi)d\mu(\xi)$ is a tempered distribution.
 
 **Theorem (Bochner–Schwartz).** A distribution $T\in\mathcal D'(\mathbb R^n)$ is positive definite if and
 only if there is a unique positive tempered measure $\mu$ with $T=\hat\mu$; that is,
 $$
-\langle T,\varphi\rangle=\int_{\mathbb R^n}\hat\varphi(\xi)\,d\mu(\xi)
-=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)e^{-2\pi ix\cdot\xi}dx\Bigr)d\mu(\xi) .
+\langle T,\varphi\rangle=\int_{\mathbb R^n}\\mathcal F\\varphi(\xi)\,d\mu(\xi)
+=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)\exp(-2\pi ix\cdot\xi)dx\Bigr)d\mu(\xi) .
 $$
 Equivalently, the Fourier transform is a bijection between the positive definite distributions and the
 positive tempered measures, and it carries the positive definite distributions onto a cone which is the
@@ -105,9 +105,9 @@ image of the positive cone of the measures.
 **Proof sketch.** Suppose first that $T=\hat\mu$ with $\mu\geq0$ tempered. Then for
 $\varphi\in C_c^\infty$,
 $$
-\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\hat\varphi(\xi)\rvert^2\,d\mu(\xi)\geq0 ,
+\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\\mathcal F\\varphi(\xi)\rvert^2\,d\mu(\xi)\geq0 ,
 $$
-because $\widehat{\varphi*\varphi^{*}}=\lvert\hat\varphi\rvert^2$ by the convolution and involution
+because $\widehat{\varphi*\varphi^{*}}=\lvert\\mathcal F\\varphi\rvert^2$ by the convolution and involution
 identities of the Fourier article; so $T$ is positive definite. Conversely let $T$ be positive definite, and
 let $\rho_\epsilon(x)=\epsilon^{-n}\rho(x/\epsilon)$ be a nonnegative even approximate identity with
 $\rho\in C_c^\infty$ real and even, so that $\rho_\epsilon^{*}=\rho_\epsilon$ and
@@ -154,7 +154,7 @@ finite (Bochner's theorem in the function case).
 
 **Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq
 C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
-$\int\hat\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
+$\int\\mathcal F\\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
 the finite-measure case is Bochner's theorem for bounded continuous functions.
 
 ### Examples
@@ -169,9 +169,9 @@ The pair is the extreme case of Bochner–Schwartz: the distribution transform o
 Dirac mass and conversely.
 
 **Example (positive definite functions).** A positive measure $\mu$ with a density gives the positive
-definite function $\hat\mu$; for the Gaussian density $\sqrt t\,e^{-\pi t\lvert\xi\rvert^2}$ this is the
-positive definite function $e^{-\pi\lvert x\rvert^2/t}$, and for the measure $\frac12(\delta_\xi+\delta_{-\xi})$
-it is the cosine $\cos(2\pi x\cdot\xi)$. Every character $e^{2\pi ix\cdot\xi}$ is positive definite with
+definite function $\hat\mu$; for the Gaussian density $\sqrt t\,\exp(-\pi t\lvert\xi\rvert^2)$ this is the
+positive definite function $\exp(-\pi\lvert x\rvert^2/t)$, and for the measure $\frac12(\delta_\xi+\delta_{-\xi})$
+it is the cosine $\cos(2\pi x\cdot\xi)$. Every character $\exp(2\pi ix\cdot\xi)$ is positive definite with
 spectral measure $\delta_\xi$, and every finite positive combination of characters with coefficients is
 positive definite, with the corresponding discrete measure.
 
@@ -206,7 +206,7 @@ function is exactly the case of a finite measure.
 | $T^{*}(\varphi)=\overline{T(\varphi^{*})}$ | Adjoint involution on distributions |
 | $\bar T$, value-conjugation | $\bar T(\varphi)=\overline{T(\bar\varphi)}$, distinct from $T^{*}$ |
 | $\langle T,\varphi*\varphi^{*}\rangle\geq0$ | Positive definiteness of a distribution |
-| $\hat\mu(x)=\int e^{-2\pi ix\cdot\xi}d\mu(\xi)$ | Transform of a measure |
+| $\hat\mu(x)=\int \exp(-2\pi ix\cdot\xi)d\mu(\xi)$ | Transform of a measure |
 | $\mu$ tempered | $\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for some $N$ |
 | $T=\hat\mu$ | Bochner–Schwartz representation |
 

@@ -53,7 +53,7 @@ $$
 so that the electroweak group acts on the left and the hypercharge acts on the right,
 
 $$
-H \;\longmapsto\; e^{\,i\alpha^a T^a_L}\,H\,e^{\,i\beta T_3^{R}} ,
+H \;\longmapsto\; \exp(\,i\alpha^a T^a_L)\,H\,\exp(\,i\beta T_3^{R}) ,
 \qquad
 T^a_L = \frac{\tau^a}{2},\quad T_3^R = \frac{\tau^3}{2} .
 $$
@@ -267,12 +267,12 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $\cos^2\theta_W = g^2/(g^2+g'^2)$ | Weak mixing angle (standard) |
 | $\rho = M_W^2/(M_Z^2\cos^2\theta_W)$ | $\rho$ parameter |
 | $\rho = \frac{\sum_i v_i^2[T_i(T_i+1)-T_{3i}^2]}{\sum_i 2v_i^2T_{3i}^2}$ | General multiplet formula |
-| $g, g'$ | Weak and hypercharge couplings (standard notation; framework couplings are $\kappa$ and $q$) |
+| $g, g'$ | Weak and hypercharge couplings (standard notation; framework couplings are $\kappa$ and $ϙ$) |
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading

@@ -10,7 +10,7 @@ The article treats the sandwich and its bound, the multiplication constant of th
 
 ## The Sandwich and its Bound
 
-**Definition.** The **sandwich** of $x,y$ is the two-sided operator $T_{x,y}(z)=xzy$, and the family of the sandwiches is $\mathcal{T}=\{T_{x,y} : x,y\in\mathrm{Cl}(V,q)\}$.
+**Definition.** The **sandwich** of $x,y$ is the two-sided operator $T_{x,y}(z)=xzy$, and the family of the sandwiches is $\mathcal{T}=\{T_{x,y} : x,y\in\mathrm{Cl}(V,\mathfrak{Q})\}$.
 
 **Proposition (the algebra of the family).** $T_{x,y}=L_{x}R_{y}=R_{y}L_{x}$ and $T_{x,y}T_{u,v}=T_{xu,vy}$; hence $\mathcal{T}$ is closed under composition and is the image of the bilinear map $T:\mathrm{Cl}\times\mathrm{Cl}\to\mathcal{B}(\mathrm{Cl})$, $(x,y)\mapsto T_{x,y}$, whose image contains the one-sided multiplications, $L_{x}=T_{x,1}$ and $R_{y}=T_{1,y}$.
 
@@ -48,7 +48,7 @@ so that $\lVert T\rVert\le1$ exactly when the norm is submultiplicative, while $
 
 **Definition.** The **inner conjugation** of a unit $x$ is the sandwich $\operatorname{Int}_{x}=T_{x,x^{-1}}$, so that $\operatorname{Int}_{x}(y)=xyx^{-1}$.
 
-**Theorem (the group of inner automorphisms).** Let $x$ range over the group of units $\mathrm{Cl}(V,q)^{\times}$. Then $\operatorname{Int}_{x}$ is an algebra automorphism, $\operatorname{Int}_{x}\operatorname{Int}_{z}=\operatorname{Int}_{xz}$, the map $x\mapsto\operatorname{Int}_{x}$ is a homomorphism of $\mathrm{Cl}^{\times}$ onto the group of inner automorphisms with kernel the centre $Z^{\times}$, and it is **continuous** on the group of units, which is a topological group; consequently the group of inner automorphisms is a topological group, isomorphic to $\mathrm{Cl}^{\times}/Z^{\times}$.
+**Theorem (the group of inner automorphisms).** Let $x$ range over the group of units $\mathrm{Cl}(V,\mathfrak{Q})^{\times}$. Then $\operatorname{Int}_{x}$ is an algebra automorphism, $\operatorname{Int}_{x}\operatorname{Int}_{z}=\operatorname{Int}_{xz}$, the map $x\mapsto\operatorname{Int}_{x}$ is a homomorphism of $\mathrm{Cl}^{\times}$ onto the group of inner automorphisms with kernel the centre $Z^{\times}$, and it is **continuous** on the group of units, which is a topological group; consequently the group of inner automorphisms is a topological group, isomorphic to $\mathrm{Cl}^{\times}/Z^{\times}$.
 
 *Proof.* The multiplicativity of the conjugation and its invertibility are the defining properties of an inner automorphism, and the kernel is the set of units whose conjugation is the identity, that is the centre. Inversion is continuous in a topological group by definition, and the product is separately continuous, so $(x,y)\mapsto xyx^{-1}$ is continuous in each variable and hence on the group of units; the quotient by the closed central subgroup carries the quotient topology.
 
@@ -88,7 +88,7 @@ The **inner conjugation** $\operatorname{Int}_{x}=T_{x,x^{-1}}$ is an algebra au
 | $\operatorname{Int}_{x}=T_{x,x^{-1}}$ | the inner conjugation, an algebra automorphism |
 | $x\mapsto\operatorname{Int}_{x}$, kernel $Z^{\times}$ | the group of inner automorphisms as a topological group |
 | $\chi_{x}=T_{x,\alpha(x)^{-1}}$ | the signed inner conjugation, $v\mapsto xv\alpha(x)^{-1}$ |
-| $\ker\chi=F^{\times}$, image $\mathrm{O}(V,q)$ | the covering of the orthogonal group |
+| $\ker\chi=F^{\times}$, image $\mathrm{O}(V,\mathfrak{Q})$ | the covering of the orthogonal group |
 
 ## Further Reading
 

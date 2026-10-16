@@ -15,9 +15,9 @@ The subject is the meeting point of two theories already in the corpus: the knot
 
 **Definition.** A knot $K\subseteq S^3$ is **$n$-periodic** if there is an action of $\mathbb{Z}/n$ on $S^3$ by homeomorphisms preserving $K$ whose fixed set contains a circle **axis** $A$ disjoint from $K$, and such that the action on $S^3\setminus A$ has no other fixed points. The quotient of $S^3\setminus A$ by the action is again a three-sphere (the quotient of the solid torus is a solid torus), and the image of $K$ in the quotient is the **quotient knot** $\bar K$, which is a knot in $S^3$; the pair $(K,\bar K)$ with the integer $n$ is the **periodic knot datum**.
 
-**Proposition (Smith theory constraints).** The fixed set of a nontrivial action of $\mathbb{Z}/p$ with $p$ prime on $S^3$ is a mod $p$ homology sphere of dimension at most three; for $p$ odd the fixed set is a circle, for $p = 2$ it is a circle, a two-sphere or two points. Consequently the periodic knot datum with axis a circle exists for every $n$, and the fixed set of the action generating the period is exactly the axis when the period is odd.
+**Proposition (Smith theory constraints).** The fixed set of a nontrivial action of $\mathbb{Z}/n$ with $n$ prime on $S^3$ is a mod $n$ homology sphere of dimension at most three; for $n$ odd the fixed set is a circle, for $n = 2$ it is a circle, a two-sphere or two points. Consequently the periodic knot datum with axis a circle exists for every $n$, and the fixed set of the action generating the period is exactly the axis when the period is odd.
 
-**Proof.** The statement is the Smith theory of *Periodic Maps and the Smith Theory*: the fixed set of a $\mathbb{Z}/p$ action on a mod $p$ homology sphere is a mod $p$ homology sphere, and on $S^3$ the possibilities for $p$ odd reduce to a circle because a two-dimensional mod $p$ homology sphere fixed set would separate and force a contradiction with the complementary free action; the case $p=2$ adds the two-sphere of a reflection and the two-point fixed set. The construction of the periodic data for the axis case is the periodic map fixing the axis.
+**Proof.** The statement is the Smith theory of *Periodic Maps and the Smith Theory*: the fixed set of a $\mathbb{Z}/n$ action on a mod $n$ homology sphere is a mod $n$ homology sphere, and on $S^3$ the possibilities for $n$ odd reduce to a circle because a two-dimensional mod $n$ homology sphere fixed set would separate and force a contradiction with the complementary free action; the case $n=2$ adds the two-sphere of a reflection and the two-point fixed set. The construction of the periodic data for the axis case is the periodic map fixing the axis.
 
 **Remark (the cases and the terminology).** The case in which the fixed set is a circle disjoint from $K$ is the **cyclic** or **classical periodic** case treated here. The case in which the fixed set meets $K$, or is a two-sphere, gives the **strongly invertible** and the **amphichiral** symmetries of *Amphichiral Knots and the Orientation-Reversing Involution* and *Knot Theory*; the general treatment of the symmetries of a knot, including the periodic ones with the axis meeting the knot, is *Knot Theory* and *Low-Dimensional Topology*.
 
@@ -91,7 +91,7 @@ where $g$ is the Seifert genus, and more generally the equivariant minimal genus
 
 ## Examples
 
-**Example (the torus knots are periodic).** The torus knot $T(p,q)$ is invariant under the periodic map of $S^3$ about the core of the torus with period $p$ (and with period $q$), with the axis disjoint from the knot near the core; the quotient knot is the torus knot $T(1,q)$, that is, the unknot, and more generally the quotient of the $p$-periodic structure is the unknot with the axis winding $q$ times. The genus of $T(p,q)$ is $(p-1)(q-1)/2$, and the equivariant genus inequality is an equality for these knots; the example is the standard one for the periodicity of a knot.
+**Example (the torus knots are periodic).** The torus knot $T(n,m)$ is invariant under the periodic map of $S^3$ about the core of the torus with period $n$ (and with period $m$), with the axis disjoint from the knot near the core; the quotient knot is the torus knot $T(1,m)$, that is, the unknot, and more generally the quotient of the $n$-periodic structure is the unknot with the axis winding $m$ times. The genus of $T(n,m)$ is $(n-1)(m-1)/2$, and the equivariant genus inequality is an equality for these knots; the example is the standard one for the periodicity of a knot.
 
 **Example (the trefoil is $3$-periodic).** The trefoil $T(2,3)$ is $3$-periodic with the quotient knot the unknot; its Alexander polynomial $\Delta(t) = t-1+t^{-1}$ satisfies the Murasugi congruence for $n=3$, and the periodic structure is visible in the standard diagram with three-fold symmetry. The trefoil is also $2$-periodic in the strongly invertible sense, with the axis meeting the knot; the two structures are different and illustrate the dependence of the periodicity on the fixed set.
 
@@ -117,7 +117,7 @@ A knot is $n$-periodic when a cyclic group of order $n$ acts on the three-sphere
 | $\sigma(K,\zeta)$ | the equivariant signature; $\sigma(K,-1)$ is the ordinary signature |
 | $g(K)\geq n\,g(\bar K)$ | the equivariant genus inequality |
 | $\Sigma_2(S^3,K)$, $\Sigma_n(S^3,K)$ | the double and the $n$-fold cyclic branched covers |
-| $T(p,q)$ | the torus knot, $p$- and $q$-periodic with unknot quotient |
+| $T(n,m)$ | the torus knot, $n$- and $m$-periodic with unknot quotient |
 
 ## Further Reading
 

@@ -21,7 +21,7 @@ $$
 
 from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomorphisms. It is neither full nor faithful, and the failure is exactly the content of the correspondence: distinct group homomorphisms can induce the same linear map, and not every linear map descends.
 
-**Example.** The groups $\mathbb{R}$ and $U(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $U(1)$ is compact. The covering homomorphism $\mathbb{R} \to U(1)$, $t \mapsto e^{2\pi i t}$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.
+**Example.** The groups $\mathbb{R}$ and $U(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $U(1)$ is compact. The covering homomorphism $\mathbb{R} \to U(1)$, $t \mapsto \exp(2\pi i t)$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.
 
 **Example.** The covering $SU(2) \to SO(3)$ of degree $2$ induces an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$ between the Lie algebras, and the two groups are not isomorphic; $SO(3)$ has fundamental group $\mathbb{Z}/2$, while $SU(2)$ is simply connected.
 
@@ -59,17 +59,17 @@ is a bijection.
 
 **(a)** Every finite-dimensional Lie algebra over $\mathbb{K}$ is the Lie algebra of a simply connected Lie group, unique up to isomorphism.
 
-**(b)** If $G$ is a connected Lie group with Lie algebra $\mathrm{G}$, there is a simply connected Lie group $\tilde{G}$ and a covering homomorphism $\pi : \tilde{G} \to G$ with discrete central kernel $D = \ker\pi$, and
+**(b)** If $G$ is a connected Lie group with Lie algebra $\mathrm{G}$, there is a simply connected Lie group $G^{\mathrm{cov}}$ and a covering homomorphism $\pi : G^{\mathrm{cov}} \to G$ with discrete central kernel $D = \ker\pi$, and
 
 $$
-G \cong \tilde{G}/D, \qquad D \cong \pi_1(G).
+G \cong G^{\mathrm{cov}}/D, \qquad D \cong \pi_1(G).
 $$
 
-**(c)** The connected Lie groups with Lie algebra $\mathrm{G}$ are exactly the quotients $\tilde{G}/D$ by discrete central subgroups $D \subseteq Z(\tilde{G})$, and two such quotients are isomorphic exactly when the corresponding subgroups are equal under an automorphism of $\tilde{G}$.
+**(c)** The connected Lie groups with Lie algebra $\mathrm{G}$ are exactly the quotients $G^{\mathrm{cov}}/D$ by discrete central subgroups $D \subseteq Z(G^{\mathrm{cov}})$, and two such quotients are isomorphic exactly when the corresponding subgroups are equal under an automorphism of $G^{\mathrm{cov}}$.
 
 Part (a) is **Lie's third theorem**, and part (b) is the statement that the universal cover of a connected Lie group exists and is a Lie group with the same Lie algebra.
 
-**Proof sketch.** For (b), the universal cover of the manifold $G$ inherits a group structure from the group structure of $G$: the multiplication lifts uniquely because the covering is a local diffeomorphism and the relevant rectangle is simply connected. The kernel of the covering is the fundamental group of $G$, and it is central: the map $\tilde{G} \to \tilde{G}$, $g \mapsto gdg^{-1}$, has discrete image and connected domain, so it is constant, equal to $d$. For (a), one builds the group by exponentiating the Lie algebra, for instance as the set of formal products of one-parameter subgroups modulo the relations imposed by the Campbell–Baker–Hausdorff product; the result is a simply connected Lie group with the given algebra.
+**Proof sketch.** For (b), the universal cover of the manifold $G$ inherits a group structure from the group structure of $G$: the multiplication lifts uniquely because the covering is a local diffeomorphism and the relevant rectangle is simply connected. The kernel of the covering is the fundamental group of $G$, and it is central: the map $G^{\mathrm{cov}} \to G^{\mathrm{cov}}$, $g \mapsto gdg^{-1}$, has discrete image and connected domain, so it is constant, equal to $d$. For (a), one builds the group by exponentiating the Lie algebra, for instance as the set of formal products of one-parameter subgroups modulo the relations imposed by the Campbell–Baker–Hausdorff product; the result is a simply connected Lie group with the given algebra.
 
 **Corollary.** For a connected Lie group $G$ the kernel $D$ of the universal cover is central, so $\pi_1(G)$ is abelian, and the connected Lie groups with a given algebra form a partially ordered set under the quotient relation, with the simply connected group at the top. The order is not a lattice: the intersection of two discrete central subgroups of the universal cover is again discrete and central, but the subgroup they generate need not be discrete, so the two subgroups need not have a join.
 
@@ -97,9 +97,9 @@ where the closures are taken in $H$; if the image is closed the closure is redun
 
 ### Simply Connected Groups and the Classification of Lie Groups
 
-**Corollary.** Let $\mathrm{G}$ be a finite-dimensional real Lie algebra and $\tilde{G}$ its simply connected group. Then the connected Lie groups with Lie algebra $\mathrm{G}$ are classified by the discrete central subgroups $D \subseteq Z(\tilde{G})$ up to automorphisms of $\tilde{G}$. In particular:
+**Corollary.** Let $\mathrm{G}$ be a finite-dimensional real Lie algebra and $G^{\mathrm{cov}}$ its simply connected group. Then the connected Lie groups with Lie algebra $\mathrm{G}$ are classified by the discrete central subgroups $D \subseteq Z(G^{\mathrm{cov}})$ up to automorphisms of $G^{\mathrm{cov}}$. In particular:
 
-- if $Z(\tilde{G})$ is discrete, the classification is by subgroups of a finitely generated abelian group;
+- if $Z(G^{\mathrm{cov}})$ is discrete, the classification is by subgroups of a finitely generated abelian group;
 - a connected Lie group has discrete centre if and only if $\operatorname{Ad}$ has discrete kernel, which holds for $\mathrm{G}$ semisimple.
 
 ## The Adjoint Representation
@@ -123,7 +123,7 @@ $$
 and by the composition rule
 
 $$
-\operatorname{Ad}(\exp X) = e^{\operatorname{ad}_X} = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G}).
+\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_{k \geq 0} \frac{(\operatorname{ad}_X)^k}{k!} \in GL(\mathrm{G}).
 $$
 
 **Proof.** The map $\operatorname{Ad}$ is a homomorphism because $c_{gh} = c_g \circ c_h$ and the differential is functorial. To identify $d(\operatorname{Ad})_e$, differentiate the identity $\operatorname{Ad}(g)v = \frac{d}{dt}\big|_{t=0} g\exp(tv)g^{-1}$ at $g = \exp(tx)$: the derivative of $g\exp(tv)g^{-1}$ with respect to $s$ at $s = 0$, with $g = \exp(sx)$, is $[x, v]$, so $d(\operatorname{Ad})_e(x) = \operatorname{ad}_x$. The composition rule is the naturality of the exponential applied to the homomorphism $\operatorname{Ad} : G \to GL(\mathrm{G})$, whose Lie algebra is $\mathrm{GL}(\mathrm{G})$: $\operatorname{Ad}(\exp x) = \exp(\operatorname{ad}_x)$, and the exponential in $GL(\mathrm{G})$ is the matrix exponential of the endomorphism $\operatorname{ad}_x$.
@@ -170,15 +170,15 @@ the centre of the Lie algebra.
 
 ### The Semisimple Case
 
-**Theorem.** Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over $\mathbb{K}$ and let $\tilde{G}$ be its simply connected group. Then:
+**Theorem.** Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over $\mathbb{K}$ and let $G^{\mathrm{cov}}$ be its simply connected group. Then:
 
 **(a)** $\mathrm{Z}(\mathrm{G}) = 0$ and $\ker(\operatorname{Ad}) = Z(G)$ is discrete for every connected $G$ with Lie algebra $\mathrm{G}$;
 
-**(b)** $\operatorname{Ad}(\tilde{G}) = \operatorname{Aut}(\mathrm{G})_0$, the identity component of the automorphism group of $\mathrm{G}$;
+**(b)** $\operatorname{Ad}(G^{\mathrm{cov}}) = \operatorname{Aut}(\mathrm{G})_0$, the identity component of the automorphism group of $\mathrm{G}$;
 
-**(c)** the quotient $\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(\tilde{G})$ is finite, and it embeds into the group of automorphisms of the Dynkin diagram of $\mathrm{G}$; for $\mathrm{G}$ simple the embedding is an isomorphism, so $\operatorname{Out}(\mathrm{G})$ is the diagram automorphism group: trivial for $A_1$, $B_n$, $C_n$, $E_7$, $E_8$, $F_4$, $G_2$; of order $2$ for $A_n$ with $n \geq 2$, $D_n$ with $n \geq 5$, and $E_6$; and the symmetric group $S_3$ of order $6$ for $D_4$.
+**(c)** the quotient $\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(G^{\mathrm{cov}})$ is finite, and it embeds into the group of automorphisms of the Dynkin diagram of $\mathrm{G}$; for $\mathrm{G}$ simple the embedding is an isomorphism, so $\operatorname{Out}(\mathrm{G})$ is the diagram automorphism group: trivial for $A_1$, $B_n$, $C_n$, $E_7$, $E_8$, $F_4$, $G_2$; of order $2$ for $A_n$ with $n \geq 2$, $D_n$ with $n \geq 5$, and $E_6$; and the symmetric group $S_3$ of order $6$ for $D_4$.
 
-**Proof sketch.** Part (a) is the vanishing of the centre of a semisimple algebra, so $\operatorname{Ad}$ is injective on $\tilde{G}$, and a Lie group homomorphism with injective differential is a local diffeomorphism, giving discreteness of the kernel. For (b), the Lie algebra of $\operatorname{Aut}(\mathrm{G})$ is $\operatorname{Der}(\mathrm{G})$, which equals $\operatorname{ad}(\mathrm{G}) = \operatorname{Lie}(\operatorname{Ad}(\tilde{G}))$ because every derivation of a semisimple algebra is inner; two connected subgroups of a Lie group with equal Lie algebras coincide, so $\operatorname{Ad}(\tilde{G}) = \operatorname{Aut}(\mathrm{G})_0$. For (c), an automorphism of $\mathrm{G}$ permutes the simple roots and preserves the Cartan matrix, hence induces an automorphism of the Dynkin diagram; the kernel of the resulting map to the diagram automorphisms is the identity component, and the diagram automorphisms of the listed types are the classical outer automorphisms.
+**Proof sketch.** Part (a) is the vanishing of the centre of a semisimple algebra, so $\operatorname{Ad}$ is injective on $G^{\mathrm{cov}}$, and a Lie group homomorphism with injective differential is a local diffeomorphism, giving discreteness of the kernel. For (b), the Lie algebra of $\operatorname{Aut}(\mathrm{G})$ is $\operatorname{Der}(\mathrm{G})$, which equals $\operatorname{ad}(\mathrm{G}) = \operatorname{Lie}(\operatorname{Ad}(G^{\mathrm{cov}}))$ because every derivation of a semisimple algebra is inner; two connected subgroups of a Lie group with equal Lie algebras coincide, so $\operatorname{Ad}(G^{\mathrm{cov}}) = \operatorname{Aut}(\mathrm{G})_0$. For (c), an automorphism of $\mathrm{G}$ permutes the simple roots and preserves the Cartan matrix, hence induces an automorphism of the Dynkin diagram; the kernel of the resulting map to the diagram automorphisms is the identity component, and the diagram automorphisms of the listed types are the classical outer automorphisms.
 
 ## The Automorphism Group
 
@@ -186,15 +186,15 @@ the centre of the Lie algebra.
 
 **Definition.** The **automorphism group** $\operatorname{Aut}(\mathrm{G})$ is the group of Lie algebra automorphisms of $\mathrm{G}$; the **adjoint group** is $\operatorname{Ad}(G) = \operatorname{Int}(\mathrm{G})$, the image of a connected $G$ with Lie algebra $\mathrm{G}$.
 
-**Theorem.** $\operatorname{Aut}(\mathrm{G})$ is a Lie group with Lie algebra $\operatorname{Der}(\mathrm{G})$, the derivations of $\mathrm{G}$ under the commutator. Its identity component is $\operatorname{Aut}(\mathrm{G})_0 = \operatorname{Ad}(\tilde{G})$, and
+**Theorem.** $\operatorname{Aut}(\mathrm{G})$ is a Lie group with Lie algebra $\operatorname{Der}(\mathrm{G})$, the derivations of $\mathrm{G}$ under the commutator. Its identity component is $\operatorname{Aut}(\mathrm{G})_0 = \operatorname{Ad}(G^{\mathrm{cov}})$, and
 
 $$
-\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(\tilde{G})
+\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(G^{\mathrm{cov}})
 $$
 
 is the finite group of outer automorphisms in the semisimple case.
 
-**Proof sketch.** The automorphism group is a closed subgroup of $GL(\mathrm{G})$ and hence a Lie group by the closed subgroup theorem; differentiating the identity $\varphi([x,y]) = [\varphi x, \varphi y]$ at $\varphi = \mathrm{id}$ gives the derivation condition, so the Lie algebra is $\operatorname{Der}(\mathrm{G})$. The identity component statement follows because $\operatorname{Ad}(\tilde{G})$ and $\operatorname{Aut}(\mathrm{G})_0$ are connected subgroups with the same Lie algebra, by the inner-derivation theorem.
+**Proof sketch.** The automorphism group is a closed subgroup of $GL(\mathrm{G})$ and hence a Lie group by the closed subgroup theorem; differentiating the identity $\varphi([x,y]) = [\varphi x, \varphi y]$ at $\varphi = \mathrm{id}$ gives the derivation condition, so the Lie algebra is $\operatorname{Der}(\mathrm{G})$. The identity component statement follows because $\operatorname{Ad}(G^{\mathrm{cov}})$ and $\operatorname{Aut}(\mathrm{G})_0$ are connected subgroups with the same Lie algebra, by the inner-derivation theorem.
 
 ### The Adjoint Representation in Coordinates
 
@@ -210,11 +210,11 @@ so the weights of the adjoint representation are the roots $\alpha, 0, -\alpha$,
 
 ## Coverings and the Lattice of Connected Subgroups
 
-**Theorem.** Let $G$ be a connected Lie group with Lie algebra $\mathrm{G}$ and universal cover $\pi : \tilde{G} \to G$. Then:
+**Theorem.** Let $G$ be a connected Lie group with Lie algebra $\mathrm{G}$ and universal cover $\pi : G^{\mathrm{cov}} \to G$. Then:
 
-**(a)** $D = \ker\pi$ is a discrete central subgroup of $\tilde{G}$ isomorphic to $\pi_1(G)$;
+**(a)** $D = \ker\pi$ is a discrete central subgroup of $G^{\mathrm{cov}}$ isomorphic to $\pi_1(G)$;
 
-**(b)** every connected Lie group with Lie algebra $\mathrm{G}$ is a quotient of $\tilde{G}$ by a discrete central subgroup, and the covering homomorphisms between them correspond to inclusions of the subgroups;
+**(b)** every connected Lie group with Lie algebra $\mathrm{G}$ is a quotient of $G^{\mathrm{cov}}$ by a discrete central subgroup, and the covering homomorphisms between them correspond to inclusions of the subgroups;
 
 **(c)** if $G$ is simply connected and $H$ is any Lie group with Lie algebra $\mathrm{H}$, then $\operatorname{Hom}(G, H)$ is in bijection with $\operatorname{Hom}(\mathrm{G}, \mathrm{H})$; in particular, when $\mathrm{H} = \mathrm{G}$, the isomorphisms $G \to H$ correspond to the automorphisms of $\mathrm{G}$, and the image of a homomorphism with invertible differential is a connected subgroup with the same algebra.
 
@@ -226,9 +226,9 @@ so the weights of the adjoint representation are the roots $\alpha, 0, -\alpha$,
 
 The functor $\operatorname{Lie}$ from Lie groups to Lie algebras is neither full nor faithful; it preserves exactly the local structure, and a homomorphism is a local isomorphism precisely when it induces an isomorphism of Lie algebras. For a simply connected source $G$ the map $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$, so the simply connected Lie groups and the finite-dimensional Lie algebras form equivalent categories, and Lie's third theorem says that every finite-dimensional real Lie algebra occurs.
 
-Every connected Lie group $G$ with algebra $\mathrm{G}$ is a quotient $\tilde{G}/D$ of its simply connected cover by a discrete central subgroup $D \cong \pi_1(G)$, so the connected groups with a given algebra are classified by those subgroups, and the fundamental group of $G$ is abelian. Lie subalgebras correspond to connected immersed subgroups, ideals to normal connected subgroups, and quotients of algebras to quotients of groups; closed subgroups of a Lie group are embedded Lie subgroups by the closed subgroup theorem.
+Every connected Lie group $G$ with algebra $\mathrm{G}$ is a quotient $G^{\mathrm{cov}}/D$ of its simply connected cover by a discrete central subgroup $D \cong \pi_1(G)$, so the connected groups with a given algebra are classified by those subgroups, and the fundamental group of $G$ is abelian. Lie subalgebras correspond to connected immersed subgroups, ideals to normal connected subgroups, and quotients of algebras to quotients of groups; closed subgroups of a Lie group are embedded Lie subgroups by the closed subgroup theorem.
 
-The adjoint representation $\operatorname{Ad} : G \to GL(\mathrm{G})$ is a group homomorphism with $d(\operatorname{Ad})_e = \operatorname{ad}$ and $\operatorname{Ad}(\exp X) = e^{\operatorname{ad}_X} = \sum_k (\operatorname{ad}_X)^k/k!$; it preserves the Killing form, its kernel is the centre $Z(G)$ for connected $G$, and its image is the adjoint group. For a semisimple algebra the kernel is discrete, the identity component of the automorphism group is the adjoint group because every derivation is inner, and the outer automorphism group is finite, acting through the automorphisms of the Dynkin diagram.
+The adjoint representation $\operatorname{Ad} : G \to GL(\mathrm{G})$ is a group homomorphism with $d(\operatorname{Ad})_e = \operatorname{ad}$ and $\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X) = \sum_k (\operatorname{ad}_X)^k/k!$; it preserves the Killing form, its kernel is the centre $Z(G)$ for connected $G$, and its image is the adjoint group. For a semisimple algebra the kernel is discrete, the identity component of the automorphism group is the adjoint group because every derivation is inner, and the outer automorphism group is finite, acting through the automorphisms of the Dynkin diagram.
 
 ## Summary of Notation
 
@@ -241,20 +241,20 @@ The adjoint representation $\operatorname{Ad} : G \to GL(\mathrm{G})$ is a group
 | $\operatorname{Hom}(G,H)$, $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | Lie group and Lie algebra homomorphisms; $\varphi \mapsto d\varphi_e$ is a bijection between them |
 | $\operatorname{Lie} : \mathbf{LieGrp} \to \mathbf{LieAlg}$ | The Lie functor; neither full nor faithful |
 | $\varphi : G \to H$ local isomorphism | $d\varphi_e$ invertible; then $\varphi$ is a covering for connected $G, H$ |
-| $\tilde{G}, \pi : \tilde{G} \to G$ | Simply connected cover; $\ker\pi \cong \pi_1(G)$, discrete and central |
-| $G \cong \tilde{G}/D$ | Classification of connected groups with a given algebra by discrete central $D$ |
+| $G^{\mathrm{cov}}, \pi : G^{\mathrm{cov}} \to G$ | Simply connected cover; $\ker\pi \cong \pi_1(G)$, discrete and central |
+| $G \cong G^{\mathrm{cov}}/D$ | Classification of connected groups with a given algebra by discrete central $D$ |
 | $\mathrm{H} \subseteq \mathrm{G} \longleftrightarrow H \subseteq G$ | Lie subalgebras correspond to connected immersed subgroups |
 | $\mathrm{H}$ an ideal $\iff H$ normal | Then $\operatorname{Lie}(G/H) = \mathrm{G}/\mathrm{H}$ |
 | $c_g(h) = ghg^{-1}$ | Conjugation by $g$ |
 | $\operatorname{Ad}(g) = d(c_g)_e$ | Adjoint representation of $G$ on $\mathrm{G}$ |
 | $\operatorname{ad}_x(y) = [x,y]$ | Adjoint representation of $\mathrm{G}$; $d(\operatorname{Ad})_e = \operatorname{ad}$ |
 | $\mathrm{GL}(\mathrm{G})$ | Endomorphisms of $\mathrm{G}$; the target of $\operatorname{ad}$ |
-| $\operatorname{Ad}(\exp X) = e^{\operatorname{ad}_X}$ | The exponential intertwines $\operatorname{Ad}$ and $\operatorname{ad}$ |
+| $\operatorname{Ad}(\exp X) = \exp(\operatorname{ad}_X)$ | The exponential intertwines $\operatorname{Ad}$ and $\operatorname{ad}$ |
 | $\ker(\operatorname{Ad}) = Z(G)$ | Centre of a connected group |
 | $\operatorname{Lie}(Z(G)) = \mathrm{Z}(\mathrm{G})$ | Centre of the Lie algebra |
 | $\operatorname{Aut}(\mathrm{G})$, $\operatorname{Der}(\mathrm{G})$ | Automorphisms; derivations; $\operatorname{Lie}(\operatorname{Aut}(\mathrm{G})) = \operatorname{Der}(\mathrm{G})$ |
 | $\operatorname{Ad}(G) = \operatorname{Int}(\mathrm{G})$ | Adjoint group; $\operatorname{Aut}(\mathrm{G})_0$ in the semisimple case |
-| $\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(\tilde{G})$ | Finite outer automorphism group; diagram automorphisms |
+| $\operatorname{Out}(\mathrm{G}) = \operatorname{Aut}(\mathrm{G})/\operatorname{Ad}(G^{\mathrm{cov}})$ | Finite outer automorphism group; diagram automorphisms |
 
 ## Further Reading
 

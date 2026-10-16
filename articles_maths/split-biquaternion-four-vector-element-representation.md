@@ -97,7 +97,7 @@ The centre is the set of elements whose vector components vanish; the quaternion
 **Proposition.** In the four-vector description the split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
+\langle\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = \left(\sum_{\mu} (q_\mu^2 + q'^2_\mu)\right) + 2j\left(\sum_\mu q_\mu q'_\mu\right) ,
 $$
 
 with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.
@@ -117,13 +117,13 @@ Both are positive definite; the indefinite form of the algebra is the Hermitian 
 
 ### The Unit Criterion in Coordinates
 
-**Theorem.** A split biquaternion $\tilde{Q}$ is a unit if and only if $N(\tilde{Q})$ is a unit of $\mathbb{D}$, that is, if and only if
+**Theorem.** A split biquaternion $\tilde{Q}$ is a unit if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D}$, that is, if and only if
 
 $$
 \sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0 .
 $$
 
-**Proof.** Under the Peirce decomposition $N(\tilde{Q}) = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.
+**Proof.** Under the Peirce decomposition $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.
 
 The criterion shows directly that the **zero divisors** are the elements whose split-biquaternion norm vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of *Split-Biquaternion Zero Divisors*. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.
 
@@ -143,7 +143,7 @@ The four-vector representation reads a split biquaternion as a column $(Q_0,Q_1,
 | $P_\mu = (QR)_\mu$ | Components of the product, quaternion structure constants |
 | $\bar{\cdot}, {}^{*}, {}^{\dagger}, {}^{\flat}$ | The four conjugations on the column |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Distinguished subspaces as coefficient conditions |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, anisotropic |
+| $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, anisotropic |
 | $\sum_\mu(q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(4,4)$ |
 | $Z_\pm$ | The two four-dimensional zero divisor subspaces |
 

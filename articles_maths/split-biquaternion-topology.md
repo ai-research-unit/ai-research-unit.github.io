@@ -16,10 +16,10 @@ The treatment is purely mathematical. No physics is invoked; "null cone" names t
 The **Euclidean norm** of an element is the positive square root of the real part of its split-biquaternion norm,
 
 $$
-\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,N(\tilde{Q})\right)^{1/2} ,
+\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural}\right)^{1/2} ,
 $$
 
-and it is a genuine norm: it is positive definite because the real part of $N$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.
+and it is a genuine norm: it is positive definite because the real part of $\langle\cdot\rangle_{\natural}$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.
 
 ## The Euclidean Unit Sphere
 
@@ -27,7 +27,7 @@ and it is a genuine norm: it is positive definite because the real part of $N$ i
 
 **Proposition.** The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{H}_{\mathbb{D}}\setminus\{0\}$ onto it.
 
-**Proof.** The equation $\mathrm{Re}\,N(\tilde{Q}) = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.
+**Proof.** The equation $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.
 
 The unit sphere of the Euclidean norm is **not** the norm-one group: the norm-one group is cut out by the split complex norm $N = e_0$, not by its real part, and it has dimension $6$ rather than $7$. The two agree only on the quaternion subspace, where the split complex part of $N$ vanishes; this is the first topological distinction between the split biquaternion and the biquaternion case, where the norm-one slice is the complex quadric in $\mathbb{C}^4$.
 
@@ -39,9 +39,9 @@ $$
 C = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
 $$
 
-**Proposition.** The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $N$ vanishes on no point of $C$ except the origin.
+**Proposition.** The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ vanishes on no point of $C$ except the origin.
 
-**Proof.** The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,N(\tilde{Q}) = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $N$ never vanishes there.
+**Proof.** The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $\langle\cdot\rangle_{\natural}$ never vanishes there.
 
 **Remark.** The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of *Split-Biquaternion Rotations and the Lorentz Group*), but the converse fails: the element $e_1 + je_0$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{D}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.
 
@@ -96,7 +96,7 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ | The algebra as a topological space |
-| $\|\tilde{Q}\| = (\mathrm{Re}\,N(\tilde{Q}))^{1/2}$ | Euclidean norm |
+| $\|\tilde{Q}\| = (\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural})^{1/2}$ | Euclidean norm |
 | $S_{\mathbb{E}} = \{\|\tilde{Q}\| = 1\} \cong S^7$ | Euclidean unit sphere |
 | $g(\tilde{Q}) = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian form of signature $(4,4)$ |
 | $C = \{g = 0\}$ | Null cone, dimension $7$ |

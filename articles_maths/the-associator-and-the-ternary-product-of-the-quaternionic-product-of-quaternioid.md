@@ -8,7 +8,7 @@ $$
 \tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \vec p ,
 $$
 
-the second of the two bilinear products of the quaternion real space, whose rule is *The Two General Products of the Quaternion $\mathbb{R}$ Space* and whose algebra is *Introduction to the General Quaternionic Algebra of Quaternions*. The product is $\mathbb{R}$-bilinear and has $e_0$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
+the second of the two bilinear products of the quaternion real space, whose rule is *The Two General Products of the Quaternioid $\mathbb{R}$ Space* and whose algebra is *Introduction to the General Quaternionic Algebra*. The product is $\mathbb{R}$-bilinear and has $e_0$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
 
 For a bilinear product the defect is the **associator**
 
@@ -73,11 +73,11 @@ $$
 (e_3 \star e_0) \star e_3 = (-e_3) \star e_3 = (-e_3)^{\natural}e_3 = e_3e_3 = -e_0 , \qquad e_3 \star (e_0 \star e_3) = e_3 \star e_3 = e_3^{\natural}e_3 = -e_3^2 = e_0 ,
 $$
 
-so the two sides are $-e_0$ and $e_0$. The **third-power** identity is $(\tilde p \star \tilde p) \star \tilde p = \tilde p \star (\tilde p \star \tilde p)$; at $\tilde p = e_3$ one has $\tilde p \star \tilde p = N(e_3)e_0 = e_0$, so the left side is $e_0 \star e_3 = e_0^{\natural}e_3 = e_3$ while the right side is $e_3 \star e_0 = e_3^{\natural} = -e_3$, and the identity fails. Since flexibility implies third-power associativity and is implied by alternativity, and since power-associativity implies third-power associativity, the failure of the weakest rung denies the stronger ones: the product satisfies none.
+so the two sides are $-e_0$ and $e_0$. The **third-power** identity is $(\tilde p \star \tilde p) \star \tilde p = \tilde p \star (\tilde p \star \tilde p)$; at $\tilde p = e_3$ one has $\tilde p \star \tilde p = \langle e_3\rangle_{\natural}e_0 = e_0$, so the left side is $e_0 \star e_3 = e_0^{\natural}e_3 = e_3$ while the right side is $e_3 \star e_0 = e_3^{\natural} = -e_3$, and the identity fails. Since flexibility implies third-power associativity and is implied by alternativity, and since power-associativity implies third-power associativity, the failure of the weakest rung denies the stronger ones: the product satisfies none.
 
 **Corollary.** The product is not alternative, and the alternative product of two factors with a third is not controlled by the associator; the identities available in an alternative algebra, and with them a calculus of powers of a single element, are not available here. The product is also not flexible, so the manipulation $(\tilde p \star \tilde q) \star \tilde p = \tilde p \star (\tilde q \star \tilde p)$ cannot be used, and the left and the right multiplication operators of the operator articles of the block do not commute with one another.
 
-**Remark.** Both witnesses are read off the coordinates alone, and the mechanism is the same in both: the square $\tilde q \star \tilde q = N(\tilde q)e_0$ is central, so the left-hand reading of a square multiplies it by the scalar part of the element, whereas the right-hand reading passes the element through ${}^{\natural}$ and negates its vector part; the two readings differ as soon as the element is not central.
+**Remark.** Both witnesses are read off the coordinates alone, and the mechanism is the same in both: the square $\tilde q \star \tilde q = \langle\tilde q\rangle_{\natural}e_0$ is central, so the left-hand reading of a square multiplies it by the scalar part of the element, whereas the right-hand reading passes the element through ${}^{\natural}$ and negates its vector part; the two readings differ as soon as the element is not central.
 
 ## The Ternary Product
 

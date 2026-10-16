@@ -5,18 +5,18 @@
 An **involution of a linear space** $V$ over a field $F$ is a map $\theta : V \to V$ of order two that is compatible with the linear structure. Two kinds occur, and they are told apart by what $\theta$ does to the scalars. A **linear involution** is an $F$-linear map of order two, and a **semilinear involution** satisfies
 
 $$
-\theta(\lambda v + \mu w) = \varsigma(\lambda)\theta(v) + \varsigma(\mu)\theta(w)
+\theta(\lambda b + \mu w) = \varsigma(\lambda)\theta(b) + \varsigma(\mu)\theta(w)
 $$
 
 for a field involution $\varsigma$ of $F$. When $\varsigma$ is the identity the two notions coincide, and the case $\varsigma \neq \mathrm{id}$, with $F = \mathbb{C}$ and $\varsigma$ the conjugation, is the one that carries a genuinely new datum.
 
-The linear case is rigid and completely classified, and the classification is the centre of this article. A linear involution splits the space as $V = V_+ \oplus V_-$, the two summands being its fixed space and the set of the elements it negates, and the pair of dimensions $(p, q)$ — the **type** — is a complete invariant: two involutions are conjugate under the general linear group exactly when they have the same type, so there are exactly $n + 1$ kinds of involution on an $n$-dimensional space and no more. The trace is $p - q$ and the determinant $(-1)^q$, the stabiliser of an involution is a product of two general linear groups, and over a finite field of odd order the number of involutions of a given type is an orbit count that reduces to the Gaussian binomials. Every step of this uses the linear structure alone.
+The linear case is rigid and completely classified, and the classification is the centre of this article. A linear involution splits the space as $V = V_+ \oplus V_-$, the two summands being its fixed space and the set of the elements it negates, and the pair of dimensions $(n, m)$ — the **type** — is a complete invariant: two involutions are conjugate under the general linear group exactly when they have the same type, so there are exactly $N + 1$ kinds of involution on an $N$-dimensional space and no more. The trace is $n - m$ and the determinant $(-1)^m$, the stabiliser of an involution is a product of two general linear groups, and over a finite field of odd order the number of involutions of a given type is an orbit count that reduces to the Gaussian binomials. Every step of this uses the linear structure alone.
 
 The rigidity ends at one place, and the place is characteristic two. There $x^2 - 1 = (x - 1)^2$, the two summands merge, and every involution is unipotent: the classification by type is not available, and the involutions are classified instead by a nilpotent operator. The failure is exhibited on the $2 \times 2$ matrices over $\mathbb{F}_2$, where the same matrix has a different conjugacy class than it has over $\mathbb{Q}$.
 
 **Terminology.** In this article the word *involution* means the map of order two, and the article writes **involutive operator** where the operator is what matters. The corpus also meets involutions of a ring, which are anti-automorphisms, and involutions of a group, which are anti-automorphisms or elements of order two. All of them are maps, or elements read as maps, of order two; the linear case is the specialisation in which the map respects the scalars, and the comparison is drawn at the end.
 
-**Layout and boundaries.** The article has six sections: the linear involutions and their two summands, the type and the conjugacy classification, the collapse in characteristic two, the involutions induced on the spaces built from $V$, the semilinear involutions, which are the place where the scalars enter, and the comparison with the ring and group cases. It stays inside the algebra of Part I and uses no form and no distance, and it uses no topology: no norm, no length, no angle, no orthogonality and no completeness. The vocabulary is that of *Modules* and *Vector Spaces* for the objects, *Linear Maps and Matrices* for the dual space, the transpose and the rank, *Eigenvalues and Diagonalisation* for the eigenvalues, the eigenspaces, the characteristic and the minimal polynomial, *The General Linear Group* for the group of automorphisms and its action on the objects built from $V$, *Multilinear Spaces* for the tensor powers and the symmetric and exterior powers, and *Extension of Scalars* for the complexification. Two boundaries are marked rather than crossed. The bilinear, sesquilinear and Hermitian forms, and with them the norm, the trace form and the reduced norm, belong to Part II and to *Hilbert Algebras*, which owns them, so a reader looking for the form that a linear involution preserves is sent there. The algebra-level reading of an involution of $\operatorname{End}_F(V)$, the $\mathbb{Z}/2$-grading and its sign rule of *Superalgebras and Graded Structures*, and the quaternion algebra of *Division Algebras* are each named once, at the point where they would enter, and not used. The companions in the other categories are *Involutive Rings* and *Involutive Groups*. Throughout, $F$ is a field, $V$ is a linear space over $F$ of finite dimension $n$, and the operators are written $T$, $S$ for involutions and $P$ for one with $P^2 = P$.
+**Layout and boundaries.** The article has six sections: the linear involutions and their two summands, the type and the conjugacy classification, the collapse in characteristic two, the involutions induced on the spaces built from $V$, the semilinear involutions, which are the place where the scalars enter, and the comparison with the ring and group cases. It stays inside the algebra of Part I and uses no form and no distance, and it uses no topology: no norm, no length, no angle, no orthogonality and no completeness. The vocabulary is that of *Modules* and *Vector Spaces* for the objects, *Linear Maps and Matrices* for the dual space, the transpose and the rank, *Eigenvalues and Diagonalisation* for the eigenvalues, the eigenspaces, the characteristic and the minimal polynomial, *The General Linear Group* for the group of automorphisms and its action on the objects built from $V$, *Multilinear Spaces* for the tensor powers and the symmetric and exterior powers, and *Extension of Scalars* for the complexification. Two boundaries are marked rather than crossed. The bilinear, sesquilinear and Hermitian forms, and with them the norm, the trace form and the reduced norm, belong to Part II and to *Hilbert Algebras*, which owns them, so a reader looking for the form that a linear involution preserves is sent there. The algebra-level reading of an involution of $\operatorname{End}_F(V)$, the $\mathbb{Z}/2$-grading and its sign rule of *Superalgebras and Graded Structures*, and the quaternion algebra of *Division Algebras* are each named once, at the point where they would enter, and not used. The companions in the other categories are *Involutive Rings* and *Involutive Groups*. Throughout, $F$ is a field, $V$ is a linear space over $F$ of finite dimension $N$, and the operators are written $T$, $S$ for involutions and $P$ for one with $P^2 = P$.
 
 ---
 
@@ -44,23 +44,23 @@ $$
 
 with $T$ acting as $+\mathrm{id}$ on $V_+$ and as $-\mathrm{id}$ on $V_-$. Conversely $T = P_+ - P_-$.
 
-**Proof.** Compute $(2P_+)^2 = (\mathrm{id}+T)^2 = \mathrm{id} + 2T + T^2 = 2(\mathrm{id} + T) = 4P_+$, so $P_+^2 = P_+$ because $2$ is invertible; the same computation with $T$ replaced by $-T$ gives $P_-^2 = P_-$. The sums and products are immediate from the definitions. A vector is fixed by $T$ exactly when $P_+v = v$ and $P_-v = 0$, and negated exactly when $P_-v = v$ and $P_+v = 0$; since $P_+ + P_- = \mathrm{id}$, every vector is the sum of a fixed vector and a negated one, uniquely.
+**Proof.** Compute $(2P_+)^2 = (\mathrm{id}+T)^2 = \mathrm{id} + 2T + T^2 = 2(\mathrm{id} + T) = 4P_+$, so $P_+^2 = P_+$ because $2$ is invertible; the same computation with $T$ replaced by $-T$ gives $P_-^2 = P_-$. The sums and products are immediate from the definitions. A vector is fixed by $T$ exactly when $P_+b = b$ and $P_-b = 0$, and negated exactly when $P_-b = b$ and $P_+b = 0$; since $P_+ + P_- = \mathrm{id}$, every vector is the sum of a fixed vector and a negated one, uniquely.
 
-**Definition.** For a linear involution $T$, the **type** of $T$ is the ordered pair $(p, q)$ with
+**Definition.** For a linear involution $T$, the **type** of $T$ is the ordered pair $(n, m)$ with
 
 $$
-p = \dim_F V_+ = \dim_F \ker(T - \mathrm{id}), \qquad q = \dim_F V_- = \dim_F \ker(T + \mathrm{id}) .
+n = \dim_F V_+ = \dim_F \ker(T - \mathrm{id}), \qquad m = \dim_F V_- = \dim_F \ker(T + \mathrm{id}) .
 $$
 
-**Remark.** The theorem is the statement that a linear involution and an ordered pair of complementary subspaces are the same datum: the involution is determined by which summand it fixes and which it negates, and $p + q = n$. The pair $\{T, -T\}$ corresponds to the **unordered** pair of summands, because $-T$ fixes $V_-$ and negates $V_+$; the involution records which summand is which.
+**Remark.** The theorem is the statement that a linear involution and an ordered pair of complementary subspaces are the same datum: the involution is determined by which summand it fixes and which it negates, and $n + m = \dim V$. The pair $\{T, -T\}$ corresponds to the **unordered** pair of summands, because $-T$ fixes $V_-$ and negates $V_+$; the involution records which summand is which.
 
-**Proposition.** Let $2 \neq 0$. The map $T \mapsto P_- = \tfrac12(\mathrm{id} - T)$ is a bijection from the linear involutions of $V$ onto the operators $P$ with $P^2 = P$, with inverse $P \mapsto \mathrm{id} - 2P$. Under it the involution of type $(p,q)$ corresponds to the operator $P_-$ whose image is $V_-$, of dimension $q$.
+**Proposition.** Let $2 \neq 0$. The map $T \mapsto P_- = \tfrac12(\mathrm{id} - T)$ is a bijection from the linear involutions of $V$ onto the operators $P$ with $P^2 = P$, with inverse $P \mapsto \mathrm{id} - 2P$. Under it the involution of type $(n,m)$ corresponds to the operator $P_-$ whose image is $V_-$, of dimension $m$.
 
-**Proof.** If $P^2 = P$ then $(\mathrm{id}-2P)^2 = \mathrm{id} - 4P + 4P^2 = \mathrm{id}$, and the two constructions are inverse to one another by the formula of the theorem. The image of $P_-$ is $V_-$, of dimension $q$.
+**Proof.** If $P^2 = P$ then $(\mathrm{id}-2P)^2 = \mathrm{id} - 4P + 4P^2 = \mathrm{id}$, and the two constructions are inverse to one another by the formula of the theorem. The image of $P_-$ is $V_-$, of dimension $m$.
 
 ### Examples
 
-**Example (the two extreme types).** The identity has $V_+ = V$ and is of type $(n, 0)$; its negative $-\mathrm{id}$ has $V_- = V$ and is of type $(0, n)$. In a basis that puts the fixed summand first, $T$ has the matrix $\operatorname{diag}(1,\dots,1,-1,\dots,-1)$ with $p$ entries $1$ and $q$ entries $-1$.
+**Example (the two extreme types).** The identity has $V_+ = V$ and is of type $(N, 0)$; its negative $-\mathrm{id}$ has $V_- = V$ and is of type $(0, N)$. In a basis that puts the fixed summand first, $T$ has the matrix $\operatorname{diag}(1,\dots,1,-1,\dots,-1)$ with $n$ entries $1$ and $m$ entries $-1$.
 
 **Example (the swap).** On $V \oplus V$ the swap $\varsigma(x, y) = (y, x)$ is a linear involution of type $(n, n)$: its fixed space is the diagonal $\{(x,x)\}$ and its negated space is the antidiagonal $\{(x,-x)\}$. The type is $(n,n)$, the equal-dimensional one, and the swap shows that the two summands of an involution may have the same dimension and be unrelated to one another otherwise.
 
@@ -72,7 +72,7 @@ $$
 
 both square to the identity matrix. The matrix $T$ has trace $0$ and determinant $-1$; the matrix $S$ has trace $0$ and determinant $-1$ as well. Both are of type $(1,1)$, and they are conjugate, although neither is written in the adapted basis of the theorem. This is the smallest instance of the classification of the next section.
 
-**Example (block diagonal and the product).** If $T$ is an involution of $V$ of type $(p,q)$ and $S$ an involution of $W$ of type $(r,s)$, then $\operatorname{diag}(T, S)$ is an involution of $V \oplus W$ of type $(p+r, q+s)$, because the fixed space of the direct sum is the direct sum of the fixed spaces.
+**Example (block diagonal and the product).** If $T$ is an involution of $V$ of type $(n,m)$ and $S$ an involution of $W$ of type $(r,s)$, then $\operatorname{diag}(T, S)$ is an involution of $V \oplus W$ of type $(n+r, m+s)$, because the fixed space of the direct sum is the direct sum of the fixed spaces.
 
 **Example (involutions from idempotents).** With $2 \neq 0$, the operator $\mathrm{id} - 2P$ is an involution for every $P$ with $P^2 = P$. Taking $P$ of rank $k$ produces an involution of type $(n-k, k)$, so the involutions of every type are visible without any computation over a basis.
 
@@ -82,17 +82,17 @@ both square to the identity matrix. The matrix $T$ has trace $0$ and determinant
 
 ### Trace, Determinant and the Minimal Polynomial
 
-**Proposition.** Let $2 \neq 0$ in $F$ and let $T$ be a linear involution of $V$ of type $(p,q)$, so that $n = p + q$. Then
+**Proposition.** Let $2 \neq 0$ in $F$ and let $T$ be a linear involution of $V$ of type $(n,m)$, so that $n = p + q$. Then
 
 $$
-\operatorname{tr}T = p - q, \qquad \det T = (-1)^q, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p ,
+\operatorname{tr}T = p - q, \qquad \det T = (-1)^m, \qquad \operatorname{rk}(T - \mathrm{id}) = q, \qquad \operatorname{rk}(T + \mathrm{id}) = p ,
 $$
 
-and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisable, and its eigenvalues are $1$ with multiplicity $p$ and $-1$ with multiplicity $q$.
+and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisable, and its eigenvalues are $1$ with multiplicity $n$ and $-1$ with multiplicity $m$.
 
-**Proof.** The trace, the determinant and the ranks are read from the block form $\operatorname{diag}(I_p, -I_q)$ of the theorem above, and they are invariant under conjugation, so no generality is lost. The minimal polynomial divides $x^2 - 1$ because $T^2 - \mathrm{id} = 0$. Since $2 \neq 0$, the polynomial $x^2 - 1 = (x-1)(x+1)$ has the two distinct roots $1$ and $-1$, both in $F$, so the minimal polynomial is a product of distinct linear factors and $T$ is diagonalisable with the stated eigenvalues.
+**Proof.** The trace, the determinant and the ranks are read from the block form $\operatorname{diag}(I_n, -I_m)$ of the theorem above, and they are invariant under conjugation, so no generality is lost. The minimal polynomial divides $x^2 - 1$ because $T^2 - \mathrm{id} = 0$. Since $2 \neq 0$, the polynomial $x^2 - 1 = (x-1)(x+1)$ has the two distinct roots $1$ and $-1$, both in $F$, so the minimal polynomial is a product of distinct linear factors and $T$ is diagonalisable with the stated eigenvalues.
 
-**Corollary.** Since $p + q = n$, the type is determined by the single integer $\operatorname{tr}T = p - q$, which takes the $n + 1$ values $n, n-2, \dots, 2-n, -n$. A linear involution of a space of odd dimension has an odd trace, and one of a space of even dimension has an even trace.
+**Corollary.** Since $n + m = \dim V$, the type is determined by the single integer $\operatorname{tr}T = n - m$, which takes the $\dim V + 1$ values $\dim V, \dim V-2, \dots, 2-\dim V, -\dim V$. A linear involution of a space of odd dimension has an odd trace, and one of a space of even dimension has an even trace.
 
 **Remark.** Two features of the proposition are worth separating. The first is that the eigenvalues lie in the prime field, so an involution of a space over $\mathbb{Q}$, over a finite field of odd order, or over a field of rational functions is diagonalisable over the field itself and no extension is needed. A general operator requires a splitting field; an involution never does. The second is that the diagonalisability is bought with the hypothesis $2 \neq 0$ and nothing else, and it is lost the moment that hypothesis is dropped, which is the subject of the next section.
 
@@ -100,9 +100,9 @@ and the minimal polynomial of $T$ divides $x^2 - 1$. Moreover $T$ is diagonalisa
 
 **Theorem.** Let $2 \neq 0$ in $F$. Two linear involutions of $V$ are conjugate under $\operatorname{GL}(V)$ if and only if they have the same type. Hence $V$ carries exactly $n + 1$ conjugacy classes of linear involutions.
 
-**Proof.** If $S = U T U^{-1}$ with $U \in \operatorname{GL}(V)$, then $S$ fixes $U(V_+)$ and negates $U(V_-)$, and $U$ is injective, so $S$ has the same type as $T$. Conversely, let $T$ and $S$ have the same type $(p,q)$. Choose a basis $v_1, \dots, v_p$ of $V_+$ and $w_1, \dots, w_q$ of $V_-$, and likewise, writing $V'_+ = \ker(S - \mathrm{id})$ and $V'_- = \ker(S + \mathrm{id})$, a basis $v'_1, \dots, v'_p$ of $V'_+$ and $w'_1, \dots, w'_q$ of $V'_-$. The linear map sending $v_i$ to $v'_i$ and $w_j$ to $w'_j$ is an isomorphism $U$ of $V$, and it satisfies $U T = S U$ on the two summands, hence everywhere.
+**Proof.** If $S = U T U^{-1}$ with $U \in \operatorname{GL}(V)$, then $S$ fixes $U(V_+)$ and negates $U(V_-)$, and $U$ is injective, so $S$ has the same type as $T$. Conversely, let $T$ and $S$ have the same type $(n,m)$. Choose a basis $b_1, \dots, b_p$ of $V_+$ and $w_1, \dots, w_q$ of $V_-$, and likewise, writing $V'_+ = \ker(S - \mathrm{id})$ and $V'_- = \ker(S + \mathrm{id})$, a basis $b'_1, \dots, b'_p$ of $V'_+$ and $w'_1, \dots, w'_q$ of $V'_-$. The linear map sending $b_i$ to $b'_i$ and $w_j$ to $w'_j$ is an isomorphism $U$ of $V$, and it satisfies $U T = S U$ on the two summands, hence everywhere.
 
-**Proposition.** Let $2 \neq 0$ and let $T$ be of type $(p,q)$. The stabiliser of $T$ in the conjugation action of $\operatorname{GL}(V)$ is
+**Proposition.** Let $2 \neq 0$ and let $T$ be of type $(n,m)$. The stabiliser of $T$ in the conjugation action of $\operatorname{GL}(V)$ is
 
 an operator commuting with $T$ is exactly one preserving each of the two summands, and conversely; equivalently
 
@@ -116,23 +116,23 @@ $$
 \operatorname{GL}(V) \big/ \bigl( \operatorname{GL}(V_+) \times \operatorname{GL}(V_-) \bigr) .
 $$
 
-**Proof.** If $U$ commutes with $T$ then $U$ preserves the eigenspaces, because $T(Uv) = U(Tv) = Uv$ for $v \in V_+$, so $U(V_+) \subseteq V_+$ and, $U$ being invertible and $V_+$ finite-dimensional, $U(V_+) = V_+$; the same holds for $V_-$. Conversely an operator preserving both summands commutes with $T$, since $T$ acts as a scalar on each. The set of cosets is the orbit by the orbit–stabiliser theorem.
+**Proof.** If $U$ commutes with $T$ then $U$ preserves the eigenspaces, because $T(Uv) = U(Tv) = Uv$ for $b \in V_+$, so $U(V_+) \subseteq V_+$ and, $U$ being invertible and $V_+$ finite-dimensional, $U(V_+) = V_+$; the same holds for $V_-$. Conversely an operator preserving both summands commutes with $T$, since $T$ acts as a scalar on each. The set of cosets is the orbit by the orbit–stabiliser theorem.
 
-**Corollary.** The map $T \mapsto -T$ is a bijection from the involutions of type $(p,q)$ onto those of type $(q,p)$. When $p = q$ it is a bijection of the orbit with itself, and every involution of that type is conjugate to its negative. When $p \neq q$ the two types are distinct orbits and no involution of one is conjugate to an involution of the other.
+**Corollary.** The map $T \mapsto -T$ is a bijection from the involutions of type $(n,m)$ onto those of type $(q,p)$. When $p = q$ it is a bijection of the orbit with itself, and every involution of that type is conjugate to its negative. When $p \neq q$ the two types are distinct orbits and no involution of one is conjugate to an involution of the other.
 
 **Proof.** The negated operator $-T$ fixes $V_-$ and negates $V_+$, so its type is $(q,p)$. If $p=q$ then $T$ and $-T$ have the same type, so they are conjugate by the theorem.
 
 ### Counting over a Finite Field
 
-**Theorem.** Let $F = \mathbb{F}_\ell$ be a finite field of odd order. The number of linear involutions of $V$ of type $(p,q)$ is
+**Theorem.** Let $F = \mathbb{F}_\ell$ be a finite field of odd order. The number of linear involutions of $V$ of type $(n,m)$ is
 
 $$
 \frac{\lvert \operatorname{GL}_n(\mathbb{F}_\ell) \rvert}{\lvert \operatorname{GL}_p(\mathbb{F}_\ell) \rvert \, \lvert \operatorname{GL}_q(\mathbb{F}_\ell) \rvert} \;=\; \binom{n}{p}_\ell \, \ell^{\,pq},
 $$
 
-where $\binom{n}{p}_\ell$ is the Gaussian binomial coefficient, the number of $p$-dimensional subspaces of $\mathbb{F}_\ell^{\,n}$, the coefficient of *Vector Spaces over Finite Fields*.
+where $\binom{n}{p}_\ell$ is the Gaussian binomial coefficient, the number of $n$-dimensional subspaces of $\mathbb{F}_\ell^{\,n}$, the coefficient of *Vector Spaces over Finite Fields*.
 
-**Proof.** The orbit of an involution of type $(p,q)$ is the set of all of them by the theorem on conjugacy, and its stabiliser has order $\lvert \operatorname{GL}_p(\mathbb{F}_\ell) \rvert \lvert \operatorname{GL}_q(\mathbb{F}_\ell) \rvert$ by the proposition. The orbit–stabiliser theorem gives the first formula. For the second, count by the fixed space: a $p$-dimensional subspace $V_+$ can be chosen in $\binom{n}{p}_\ell$ ways, and for a fixed $V_+$ the complementary subspace $V_-$ can be any complement, of which there are $\ell^{pq}$, since the complements of $V_+$ are the graphs of the linear maps $V_+ \to V_-$.
+**Proof.** The orbit of an involution of type $(n,m)$ is the set of all of them by the theorem on conjugacy, and its stabiliser has order $\lvert \operatorname{GL}_p(\mathbb{F}_\ell) \rvert \lvert \operatorname{GL}_q(\mathbb{F}_\ell) \rvert$ by the proposition. The orbit–stabiliser theorem gives the first formula. For the second, count by the fixed space: a $n$-dimensional subspace $V_+$ can be chosen in $\binom{n}{p}_\ell$ ways, and for a fixed $V_+$ the complementary subspace $V_-$ can be any complement, of which there are $\ell^{n}q}$, since the complements of $V_+$ are the graphs of the linear maps $V_+ \to V_-$.
 
 **Example.** For $n = 2$ over $\mathbb{F}_3$ the counts are $1, 12, 1$ for the types $(2,0), (1,1), (0,2)$, and $14$ involutions in all. For $n = 3$ over $\mathbb{F}_3$ they are $1, 117, 117, 1$ for the types $(3,0), (2,1), (1,2), (0,3)$, and $236$ involutions in all. The middle type is the populous one, and the two extreme types are the identity and its negative alone, of type $(n,0)$ and $(0,n)$, each occurring once.
 
@@ -172,7 +172,7 @@ An involution of $V$ propagates to every space built from $V$ by a construction 
 
 ### Direct Sums and Duals
 
-**Proposition.** If $T$ is a linear involution of $V$ of type $(p,q)$ and $S$ one of $W$ of type $(r,s)$, then $T \oplus S$ is an involution of $V \oplus W$ of type $(p+r, q+s)$; in particular the type adds and the trace adds.
+**Proposition.** If $T$ is a linear involution of $V$ of type $(n,m)$ and $S$ one of $W$ of type $(r,s)$, then $T \oplus S$ is an involution of $V \oplus W$ of type $(n+r, m+s)$; in particular the type adds and the trace adds.
 
 **Proposition.** If $T$ is a linear involution of $V$, the dual map $T^* : V^* \to V^*$, $T^*(\varphi) = \varphi \circ T$, is a linear involution of the dual space, and it has the same type as $T$.
 
@@ -180,7 +180,7 @@ An involution of $V$ propagates to every space built from $V$ by a construction 
 
 ### Tensor Products and Powers
 
-**Proposition.** Let $T$ be a linear involution of $V$ of type $(p,q)$ and $S$ one of $W$ of type $(r,s)$. Then $T \otimes S$ is a linear involution of $V \otimes_F W$ of type
+**Proposition.** Let $T$ be a linear involution of $V$ of type $(n,m)$ and $S$ one of $W$ of type $(r,s)$. Then $T \otimes S$ is a linear involution of $V \otimes_F W$ of type
 
 $$
 (p r + q s, \ p s + q r), \qquad \text{and} \qquad \operatorname{tr}(T \otimes S) = (p-q)(r-s) = \operatorname{tr}T \cdot \operatorname{tr}S .
@@ -188,7 +188,7 @@ $$
 
 **Proof.** The tensor product of two operators of order two has order two, since $(T \otimes S)^2 = T^2 \otimes S^2 = \mathrm{id}$. Its fixed space is the direct sum of $V_+ \otimes W_+$ and $V_- \otimes W_-$, and its negated space the direct sum of $V_+ \otimes W_-$ and $V_- \otimes W_+$; the dimensions give the type, and the trace is the difference of the two components of the type.
 
-**Proposition.** Let $T$ be of type $(p,q)$ and $k \geq 1$. On the $k$-fold tensor power $V^{\otimes k}$ the operator $T^{\otimes k}$ is a linear involution of type
+**Proposition.** Let $T$ be of type $(n,m)$ and $k \geq 1$. On the $k$-fold tensor power $V^{\otimes k}$ the operator $T^{\otimes k}$ is a linear involution of type
 
 $$
 \left( \sum_{j \ \mathrm{even}} \binom{k}{j} p^{\,k-j} q^{\,j}, \ \sum_{j \ \mathrm{odd}} \binom{k}{j} p^{\,k-j} q^{\,j} \right), \qquad \text{with} \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^k ,
@@ -200,11 +200,11 @@ $$
 \left( \sum_{j \ \mathrm{even}} \binom{p}{k-j}\binom{q}{j}, \ \sum_{j \ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \right), \qquad \text{with} \qquad \operatorname{tr} = \sum_{j} (-1)^j \binom{p}{k-j}\binom{q}{j},
 $$
 
-where the sums are over the $j$ with $0 \leq j \leq q$ and $0 \leq k-j \leq p$. On the top exterior power $\Lambda^n V$ the induced involution is multiplication by $\det T = (-1)^q$.
+where the sums are over the $j$ with $0 \leq j \leq q$ and $0 \leq k-j \leq p$. On the top exterior power $\Lambda^n V$ the induced involution is multiplication by $\det T = (-1)^m$.
 
 **Proof.** For the tensor power, a basis vector of $V^{\otimes k}$ is a word in $k$ basis vectors, and $T^{\otimes k}$ multiplies it by the product of the corresponding eigenvalues; the product is $1$ exactly when the number $j$ of the negated factors is even, and the number of words with a prescribed $j$ is $\binom{k}{j}p^{k-j}q^{j}$. For the exterior power, the induced operator multiplies a wedge $e_{i_1} \wedge \cdots \wedge e_{i_k}$ of basis vectors by the product of the corresponding eigenvalues, and the number of the wedges with exactly $j$ of the $e_i$ from $V_-$ is $\binom{p}{k-j}\binom{q}{j}$. The trace is the difference of the two components of the type, and the case $k = n$ leaves only the wedge of a basis, multiplied by the product of all the eigenvalues, which is the determinant.
 
-**Remark.** There is no such formula for the symmetric powers with all signs positive. On $S^k V$ the induced eigenvalue is the product of $k$ eigenvalues taken with repetition, so it is $1$ or $-1$ according to the parity of the number of negated factors counted with multiplicity, and the type is not a simple binomial sum; the case $k = 1$ returns $S^1 V = V$ and the involution $T$ itself, of type $(p,q)$, which already shows that no statement of the form "the symmetric power is fixed" can hold. The exterior powers are the well-behaved ones.
+**Remark.** There is no such formula for the symmetric powers with all signs positive. On $S^k V$ the induced eigenvalue is the product of $k$ eigenvalues taken with repetition, so it is $1$ or $-1$ according to the parity of the number of negated factors counted with multiplicity, and the type is not a simple binomial sum; the case $k = 1$ returns $S^1 V = V$ and the involution $T$ itself, of type $(n,m)$, which already shows that no statement of the form "the symmetric power is fixed" can hold. The exterior powers are the well-behaved ones.
 
 ### The Endomorphism Space
 
@@ -214,7 +214,7 @@ $$
 \bigl( p^2 + q^2, \ 2 p q \bigr), \qquad \text{with} \qquad \operatorname{tr}\Phi_T = (p - q)^2 .
 $$
 
-**Proof.** $\Phi_T$ is the conjugation by $T$ and it is linear in $X$ because multiplication is; $\Phi_T^2 = \mathrm{id}$ because $T^2 = \mathrm{id}$. In the basis $E_{ij}$ of the matrix units, $\Phi_T(E_{ij}) = \varepsilon_i \varepsilon_j E_{ij}$, where $\varepsilon_i = 1$ for $i \leq p$ and $\varepsilon_i = -1$ for $i > p$; so $\Phi_T$ is diagonal with eigenvalues $\varepsilon_i\varepsilon_j$, of which $p^2 + q^2$ are $1$, the pairs of equal sign, and $2pq$ are $-1$, the pairs of opposite sign.
+**Proof.** $\Phi_T$ is the conjugation by $T$ and it is linear in $X$ because multiplication is; $\Phi_T^2 = \mathrm{id}$ because $T^2 = \mathrm{id}$. In the basis $E_{ij}$ of the matrix units, $\Phi_T(E_{ij}) = \varepsilon_i \varepsilon_j E_{ij}$, where $\varepsilon_i = 1$ for $i \leq p$ and $\varepsilon_i = -1$ for $i > p$; so $\Phi_T$ is diagonal with eigenvalues $\varepsilon_i\varepsilon_j$, of which $n^2 + m^2$ are $1$, the pairs of equal sign, and $2nm$ are $-1$, the pairs of opposite sign.
 
 **Remark (the boundary).** The space $\operatorname{End}_F(V)$ also carries a multiplication, and $\Phi_T$ is not only a linear involution of that space but an algebra automorphism of it. That reading, together with the transpose, which is an algebra anti-automorphism, and the involutions of a general algebra over a field with an involution, belongs to *Involutive Algebras*, in the *Algebras* category, where the multiplication is available. Here only the linear-space statement is used, and the multiplication of endomorphisms is not.
 
@@ -229,7 +229,7 @@ $$
 **Definition.** Let $\varsigma$ be an involution of the field $F$, that is a field automorphism with $\varsigma^2 = \mathrm{id}$, so that $F$ is a field with an involution in the sense of *Involutive Rings*. A map $\theta : V \to V$ is **$\varsigma$-semilinear** if
 
 $$
-\theta(\lambda v + \mu w) = \varsigma(\lambda)\theta(v) + \varsigma(\mu)\theta(w) \qquad \text{for all } \lambda, \mu \in F, \ v, w \in V ,
+\theta(\lambda b + \mu w) = \varsigma(\lambda)\theta(b) + \varsigma(\mu)\theta(w) \qquad \text{for all } \lambda, \mu \in F, \ b, w \in V ,
 $$
 
 and a **semilinear involution** is such a map with $\theta^2 = \mathrm{id}$. When $\varsigma = \mathrm{id}$ this is exactly a linear involution, and the two notions coincide; when $\varsigma \neq \mathrm{id}$ the map is not linear, and it is not an involution of the underlying linear space.
@@ -248,11 +248,11 @@ $$
 
 as a real direct sum, so that $\dim_\mathbb{R} V^\theta = \dim_\mathbb{C} V$. Such a $\theta$ is called a **real structure** on $V$.
 
-**Proof.** The fixed set is a real subspace, since $\theta$ is additive and $\mathbb{R}$-homogeneous. For $v \in V$ the vectors $\frac12(v + \theta v)$ and $i w$ with $w = -\frac{i}{2}(v - \theta v)$ lie in $V^\theta$: indeed $\theta(w) = \overline{(-i/2)}\,\theta(v - \theta v) = (i/2)(\theta v - v) = w$, using $\theta^2 = \mathrm{id}$. Their sum is $v$, so $V = V^\theta + iV^\theta$. The sum is direct because if $u = i w$ with $u, w \in V^\theta$ then $\theta u = u$ and also $\theta(iw) = -i\theta w = -iw = -u$, so $u = -u$ and $u = 0$. The two spaces are real-isomorphic, so the dimensions agree.
+**Proof.** The fixed set is a real subspace, since $\theta$ is additive and $\mathbb{R}$-homogeneous. For $b \in V$ the vectors $\frac12(b + \theta b)$ and $i w$ with $w = -\frac{i}{2}(b - \theta b)$ lie in $V^\theta$: indeed $\theta(w) = \overline{(-i/2)}\,\theta(b - \theta b) = (i/2)(\theta b - b) = w$, using $\theta^2 = \mathrm{id}$. Their sum is $b$, so $V = V^\theta + iV^\theta$. The sum is direct because if $u = i w$ with $u, w \in V^\theta$ then $\theta u = u$ and also $\theta(iw) = -i\theta w = -iw = -u$, so $u = -u$ and $u = 0$. The two spaces are real-isomorphic, so the dimensions agree.
 
-**Proposition.** Let $V$ be a complex linear space and $\theta$ an antilinear map with $\theta^2 = -\mathrm{id}$. Then $V^\theta = 0$, and for every $v \neq 0$ the vectors $v$ and $\theta v$ are linearly independent over $\mathbb{R}$; consequently $\dim_\mathbb{R} V$ is even and $V$ is a direct sum of two-dimensional real subspaces each stable under $\theta$. Such a $\theta$ is not an involution, its order being four.
+**Proposition.** Let $V$ be a complex linear space and $\theta$ an antilinear map with $\theta^2 = -\mathrm{id}$. Then $V^\theta = 0$, and for every $b \neq 0$ the vectors $b$ and $\theta b$ are linearly independent over $\mathbb{R}$; consequently $\dim_\mathbb{R} V$ is even and $V$ is a direct sum of two-dimensional real subspaces each stable under $\theta$. Such a $\theta$ is not an involution, its order being four.
 
-**Proof.** If $\theta v = v$ then $-v = \theta^2 v = v$, so $v = 0$. If $v$ and $\theta v$ were $\mathbb{R}$-dependent with $v \neq 0$, there would be a real $c$ with $\theta v = c v$; applying $\theta$ would give $-v = \theta^2 v = c\,\theta v = c^2 v$, so $c^2 = -1$, which no real number satisfies because the square of a real number is not negative. Hence $v$ and $\theta v$ span a real plane, and $\theta(\theta v) = -v$, so the plane is $\theta$-stable.
+**Proof.** If $\theta b = b$ then $-b = \theta^2 b = b$, so $b = 0$. If $b$ and $\theta b$ were $\mathbb{R}$-dependent with $b \neq 0$, there would be a real $c$ with $\theta b = c b$; applying $\theta$ would give $-b = \theta^2 b = c\,\theta b = c^2 b$, so $c^2 = -1$, which no real number satisfies because the square of a real number is not negative. Hence $b$ and $\theta b$ span a real plane, and $\theta(\theta b) = -b$, so the plane is $\theta$-stable.
 
 **Example.** On $\mathbb{C}^2$ the map $\theta(z,w) = (\bar z, \bar w)$ has $\theta^2 = \mathrm{id}$ and fixes $\mathbb{R}^2$, a real structure of real dimension two; the map $\theta(z,w) = (-\bar w, \bar z)$ has $\theta^2 = -\mathrm{id}$, has no nonzero fixed vector, and carries every nonzero vector to an $\mathbb{R}$-independent one. The two maps differ only in the sign of the prescribed square, and they are of different kinds.
 
@@ -263,7 +263,7 @@ as a real direct sum, so that $\dim_\mathbb{R} V^\theta = \dim_\mathbb{C} V$. Su
 The general statement of the real structure has a computed instance already in the corpus. For a real linear space $V$ the complexification $V_{\mathbb{C}} = \mathbb{C} \otimes_\mathbb{R} V$ carries the conjugate-linear involution
 
 $$
-\kappa(z \otimes v) = \bar z \otimes v, \qquad (V_{\mathbb{C}})^{\kappa} = 1 \otimes V ,
+\kappa(z \otimes b) = \bar z \otimes b, \qquad (V_{\mathbb{C}})^{\kappa} = 1 \otimes V ,
 $$
 
 and this is a real structure on the complex space $V_{\mathbb{C}}$ whose fixed real subspace is the image of $V$. The construction and its properties are those of *Extension of Scalars*, which computes $\kappa$, its fixed set and the isomorphism $(\operatorname{Res}W)_{\mathbb{C}} \cong W \oplus \overline{W}$; this article supplies the general frame in which that computation sits, namely the two propositions above. The map $\kappa$ is the instance with $V$ real, and the second sign of the previous subsection has no occurrence in that article, because it produces no involution.
@@ -284,20 +284,20 @@ The comparison with the three companion articles is sharp, and it is the reason 
 
 ## Summary
 
-A linear involution of a linear space $V$ over a field $F$ is an $F$-linear map $T$ with $T^2 = \mathrm{id}$; it lies in $\operatorname{GL}(V)$. When $2 \neq 0$ in $F$ the operators $P_\pm = \frac12(\mathrm{id}\pm T)$ are complementary idempotents and $V = V_+ \oplus V_-$, the fixed and the negated summands, so an involution, its fixed and negated subspaces, and an idempotent are three descriptions of one datum; with $p = \dim V_+$ and $q = \dim V_-$, the type $(p,q)$ is a complete conjugacy invariant, there are $n+1$ types, $\operatorname{tr}T = p-q$, $\det T = (-1)^q$, the minimal polynomial divides $x^2-1$, every involution is diagonalisable over $F$ itself, and the stabiliser of $T$ is $\operatorname{GL}(V_+)\times\operatorname{GL}(V_-)$, so the orbit is the corresponding set of cosets. The maps $T$ and $-T$ exchange the two summands and the types $(p,q)$ and $(q,p)$. Over a finite field of odd order the involutions of type $(p,q)$ number $\lvert \operatorname{GL}_n \rvert/(\lvert \operatorname{GL}_p \rvert \lvert \operatorname{GL}_q \rvert)$, which is $\binom{n}{p}_\ell \ell^{pq}$. In characteristic two the identity $x^2-1 = (x-1)^2$ makes every involution unipotent, $T = \mathrm{id} + N$ with $N^2 = 0$, the two summands coincide, the type is not defined, and the classes of the involutions are the classes of the nilpotents of square zero; the swap over $\mathbb{Q}$ and over $\mathbb{F}_2$ shows that the type belongs to the matrix together with the field.
+A linear involution of a linear space $V$ over a field $F$ is an $F$-linear map $T$ with $T^2 = \mathrm{id}$; it lies in $\operatorname{GL}(V)$. When $2 \neq 0$ in $F$ the operators $P_\pm = \frac12(\mathrm{id}\pm T)$ are complementary idempotents and $V = V_+ \oplus V_-$, the fixed and the negated summands, so an involution, its fixed and negated subspaces, and an idempotent are three descriptions of one datum; with $p = \dim V_+$ and $q = \dim V_-$, the type $(n,m)$ is a complete conjugacy invariant, there are $n+1$ types, $\operatorname{tr}T = p-q$, $\det T = (-1)^m$, the minimal polynomial divides $x^2-1$, every involution is diagonalisable over $F$ itself, and the stabiliser of $T$ is $\operatorname{GL}(V_+)\times\operatorname{GL}(V_-)$, so the orbit is the corresponding set of cosets. The maps $T$ and $-T$ exchange the two summands and the types $(n,m)$ and $(q,p)$. Over a finite field of odd order the involutions of type $(n,m)$ number $\lvert \operatorname{GL}_n \rvert/(\lvert \operatorname{GL}_p \rvert \lvert \operatorname{GL}_q \rvert)$, which is $\binom{n}{p}_\ell \ell^{n}q}$. In characteristic two the identity $x^2-1 = (x-1)^2$ makes every involution unipotent, $T = \mathrm{id} + N$ with $N^2 = 0$, the two summands coincide, the type is not defined, and the classes of the involutions are the classes of the nilpotents of square zero; the swap over $\mathbb{Q}$ and over $\mathbb{F}_2$ shows that the type belongs to the matrix together with the field.
 
-An involution propagates to direct sums, with the type adding; to the dual space, with the same type; to tensor products, with type $(pr+qs, ps+qr)$; to the tensor and exterior powers, with the binomial types above; and to $\operatorname{End}_F(V)$ by conjugation, with type $(p^2+q^2, 2pq)$ and trace $(p-q)^2$. A semilinear involution is defined relative to an involution of the field; over $\mathbb{C}$ the antilinear case splits into the sign $\theta^2 = \mathrm{id}$, a real structure with $V = V^\theta \oplus iV^\theta$, and the sign $\theta^2 = -\mathrm{id}$, which is not an involution, has no nonzero fixed vector, and makes the real dimension even; the map $\kappa$ of the complexification is the computed instance of the first sign.
+An involution propagates to direct sums, with the type adding; to the dual space, with the same type; to tensor products, with type $(pr+qs, ps+qr)$; to the tensor and exterior powers, with the binomial types above; and to $\operatorname{End}_F(V)$ by conjugation, with type $(n^2+m^2, 2nm)$ and trace $(n-m)^2$. A semilinear involution is defined relative to an involution of the field; over $\mathbb{C}$ the antilinear case splits into the sign $\theta^2 = \mathrm{id}$, a real structure with $V = V^\theta \oplus iV^\theta$, and the sign $\theta^2 = -\mathrm{id}$, which is not an involution, has no nonzero fixed vector, and makes the real dimension even; the map $\kappa$ of the complexification is the computed instance of the first sign.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $F$ | the field of scalars |
-| $V$ | a linear space over $F$ of finite dimension $n$ |
+| $V$ | a linear space over $F$ of finite dimension $N$ |
 | $T$, $S$ | linear involutions, that is $F$-linear maps with $T^2 = \mathrm{id}$ |
 | $P_+$, $P_-$ | $\frac12(\mathrm{id} \pm T)$, complementary idempotents when $2 \neq 0$ |
 | $V_+$, $V_-$ | the fixed and the negated summands, $\ker(T-\mathrm{id})$ and $\ker(T+\mathrm{id})$ |
-| $(p,q)$ | the type, with $p = \dim V_+$ and $q = \dim V_-$ |
+| $(n,m)$ | the type, with $p = \dim V_+$ and $q = \dim V_-$ |
 | $T^*$ | the dual map $\varphi \mapsto \varphi \circ T$ on $V^*$ |
 | $V^{\otimes k}$, $S^kV$, $\Lambda^kV$ | tensor, symmetric and exterior powers |
 | $\Phi_T$ | conjugation by $T$ on $\operatorname{End}_F(V)$, $X \mapsto TXT$ |

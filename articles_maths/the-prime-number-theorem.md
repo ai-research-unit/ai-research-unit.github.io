@@ -29,7 +29,7 @@ All four statements are equivalent.
 
 **Proof of the equivalence.** This is the theorem on the equivalent forms in *Analytic Number Theory*: $\psi-\theta = \sum_{k\geq2}\theta(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\theta\sim x$ are the same statement; Abel summation converts $\theta(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.
 
-**Remark (what the theorem does not say).** The statement is a one-term asymptotic. It does not say that $\pi(x)-\mathrm{Li}(x)$ is small, that the primes are equidistributed in short intervals without a lower bound on the length, or that the gaps between consecutive primes are small; each of these is a separate problem, and the last is discussed below. The sharper asymptotic $\pi(x) = \mathrm{Li}(x) + O(xe^{-c\sqrt{\log x}})$ proved below is stronger than the theorem and is the form in which the result is used.
+**Remark (what the theorem does not say).** The statement is a one-term asymptotic. It does not say that $\pi(x)-\mathrm{Li}(x)$ is small, that the primes are equidistributed in short intervals without a lower bound on the length, or that the gaps between consecutive primes are small; each of these is a separate problem, and the last is discussed below. The sharper asymptotic $\pi(x) = \mathrm{Li}(x) + O(x\exp(-c\sqrt{\log x}))$ proved below is stronger than the theorem and is the form in which the result is used.
 
 ## Nonvanishing on the Line $\Re s = 1$
 
@@ -43,7 +43,7 @@ All four statements are equivalent.
 
 **Proof.** For $\sigma>1$ the Euler product converges absolutely, so $\zeta(\sigma+it)\neq0$; it remains to treat $\sigma=1$. Write the logarithm of the Euler product,
 $$
-\log\zeta(s) = \sum_p\sum_{k\geq1}\frac{e^{-ik t\log p}}{k p^{k\sigma}} = \sum_{n\geq2}\frac{c_n}{n^{\sigma}}e^{-it\log n},
+\log\zeta(s) = \sum_p\sum_{k\geq1}\frac{\exp(-ik t\log p)}{k p^{k\sigma}} = \sum_{n\geq2}\frac{c_n}{n^{\sigma}}\exp(-it\log n),
 $$
 with $c_n = \Lambda(n)/\log n\geq0$; this is a Dirichlet series with nonnegative coefficients, so its real part is at least the contribution of the constants, and taking the real part of the combination with the weights $3,4,1$ of the inequality gives
 $$
@@ -80,15 +80,15 @@ g(s) = \int_1^\infty A(x)\,x^{-s-1}dx = H(s) + \frac{c}{s-1}
 $$
 for $\Re s>1$, where $c\geq0$ is constant and $H$ extends continuously to the closed half-plane $\Re s\geq1$. Then $A(x) \sim c\,x$ as $x\to\infty$.
 
-**Theorem (Newman's form).** Let $f:[0,\infty)\to\mathbb{C}$ be bounded and locally integrable, and suppose that the Laplace transform $g(s) = \int_0^\infty f(t)e^{-st}dt$, which converges for $\Re s>0$, extends to a continuous function on the closed half-plane $\Re s\geq0$. Then the improper integral $\int_0^\infty f(t)\,dt$ converges, and its value is $g(0)$.
+**Theorem (Newman's form).** Let $f:[0,\infty)\to\mathbb{C}$ be bounded and locally integrable, and suppose that the Laplace transform $g(s) = \int_0^\infty f(t)\exp(-st)dt$, which converges for $\Re s>0$, extends to a continuous function on the closed half-plane $\Re s\geq0$. Then the improper integral $\int_0^\infty f(t)\,dt$ converges, and its value is $g(0)$.
 
-**Proof sketch (Newman).** For $T>0$ put $g_T(s) = \int_0^T f(t)e^{-st}dt$, an entire function. The difference $g(s)-g_T(s)$ is the tail integral, bounded by $\lVert f\rVert_\infty e^{-T\sigma}/\sigma$ for $\sigma>0$. Cauchy's formula applied to $g-g_T$ on the circle with diameter $[-R,R]$ in the plane, evaluated at $s=0$, gives
+**Proof sketch (Newman).** For $T>0$ put $g_T(s) = \int_0^T f(t)\exp(-st)dt$, an entire function. The difference $g(s)-g_T(s)$ is the tail integral, bounded by $\lVert f\rVert_\infty \exp(-T\sigma)/\sigma$ for $\sigma>0$. Cauchy's formula applied to $g-g_T$ on the circle with diameter $[-R,R]$ in the plane, evaluated at $s=0$, gives
 $$
-g(0)-g_T(0) = \frac{1}{2\pi i}\oint\bigl(g(s)-g_T(s)\bigr)e^{sT}\Bigl(1+\frac{s^2}{R^2}\Bigr)\frac{ds}{s} ,
+g(0)-g_T(0) = \frac{1}{2\pi i}\oint\bigl(g(s)-g_T(s)\bigr)\exp(sT)\Bigl(1+\frac{s^2}{R^2}\Bigr)\frac{ds}{s} ,
 $$
-a form chosen so that the factor $e^{sT}(1+s^2/R^2)$ is bounded by $e^{T\sigma}$ on the circle and the integrand is entire; splitting the contour at $\Re s = -1/T$, on the left of which the tail is exponentially small while $g$ is bounded by the hypothesis, and estimating on the right where the difference is controlled, gives $\lvert g(0)-g_T(0)\rvert \to 0$ as $T\to\infty$ after taking $R\to\infty$. Hence $\int_0^Tf\to g(0)$.
+a form chosen so that the factor $\exp(sT)(1+s^2/R^2)$ is bounded by $\exp(T\sigma)$ on the circle and the integrand is entire; splitting the contour at $\Re s = -1/T$, on the left of which the tail is exponentially small while $g$ is bounded by the hypothesis, and estimating on the right where the difference is controlled, gives $\lvert g(0)-g_T(0)\rvert \to 0$ as $T\to\infty$ after taking $R\to\infty$. Hence $\int_0^Tf\to g(0)$.
 
-**Proof sketch (the two forms are the same).** Substituting $x = e^t$ and $A(e^t) = e^t f(t)$ converts the Mellin transform of $A$ into the Laplace transform of $f$ up to the shift $s\mapsto s-1$; the monotonicity of $A$ supplies the boundedness of $f$ needed in Newman's theorem, and the pole $c/(s-1)$ of $g$ becomes a finite limit of $g$ at $s=0$ after subtracting the principal part, which is the continuity hypothesis.
+**Proof sketch (the two forms are the same).** Substituting $x = \exp(t)$ and $A(\exp(t)) = \exp(t) f(t)$ converts the Mellin transform of $A$ into the Laplace transform of $f$ up to the shift $s\mapsto s-1$; the monotonicity of $A$ supplies the boundedness of $f$ needed in Newman's theorem, and the pole $c/(s-1)$ of $g$ becomes a finite limit of $g$ at $s=0$ after subtracting the principal part, which is the continuity hypothesis.
 
 ### The Proof of the Theorem
 
@@ -98,9 +98,9 @@ a form chosen so that the factor $e^{sT}(1+s^2/R^2)$ is bounded by $e^{T\sigma}$
 
 **Corollary (the logarithmic integral form).** There is a constant $c>0$ with
 $$
-\pi(x) = \mathrm{Li}(x) + O\bigl(x\,e^{-c\sqrt{\log x}}\bigr) \qquad (x\to\infty),
+\pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c\sqrt{\log x})\bigr) \qquad (x\to\infty),
 $$
-and the error $O(xe^{-c\sqrt{\log x}})$ is smaller than $x/\log^A x$ for every $A$; consequently $\pi(x) = \mathrm{Li}(x)(1+o(1))$ and in particular $\pi(x)\sim x/\log x$.
+and the error $O(x\exp(-c\sqrt{\log x}))$ is smaller than $x/\log^A x$ for every $A$; consequently $\pi(x) = \mathrm{Li}(x)(1+o(1))$ and in particular $\pi(x)\sim x/\log x$.
 
 **Proof sketch.** Inserting the zero-free region of the next section into the explicit formula of von Mangoldt and estimating the sum over the zeros, and then converting $\psi$ to $\pi$ by the Abel-summation identities.
 
@@ -116,7 +116,7 @@ $$
 
 **Corollary (error terms).** With the region above,
 $$
-\psi(x) = x + O\bigl(x\,e^{-c'\sqrt{\log x}}\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,e^{-c'\sqrt{\log x}}\bigr)
+\psi(x) = x + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr), \qquad \pi(x) = \mathrm{Li}(x) + O\bigl(x\,\exp(-c'\sqrt{\log x})\bigr)
 $$
 for a constant $c'>0$; the zero-free region and the error term are equivalent in the sense that a wider zero-free region gives a smaller error and conversely.
 
@@ -174,7 +174,7 @@ and the right side is $O(x)$, because Mertens' first estimate $\sum_{n\le x}\Lam
 $$
 \pi(x;q,a) \sim \frac{1}{\varphi(q)}\frac{x}{\log x},
 $$
-and more precisely $\pi(x;q,a) = \mathrm{Li}(x)/\varphi(q) + O(xe^{-c\sqrt{\log x}})$ for a constant $c>0$ depending on $q$.
+and more precisely $\pi(x;q,a) = \mathrm{Li}(x)/\varphi(q) + O(x\exp(-c\sqrt{\log x}))$ for a constant $c>0$ depending on $q$.
 
 **Proof sketch.** The proof is the proof of the prime number theorem with $-\zeta'/\zeta$ replaced by the average $\frac1{\varphi(q)}\sum_\chi\bar\chi(a)\bigl(-\frac{L'}{L}(s,\chi)\bigr)$ over the characters modulo $q$; the nonvanishing on the line holds for every $L(s,\chi)$ by the same inequality, and the only genuine difference is that no $L(s,\chi)$ has a pole at $s=1$ except the principal one, which supplies the factor $1/\varphi(q)$. The uniformity in $q$ is the subject of the Siegel–Walfisz and Bombieri–Vinogradov theorems of *Analytic Number Theory*.
 
@@ -188,7 +188,7 @@ $$
 $$
 so the interval $[x,x+x^{\theta}]$ contains about its expected number of primes; under the Riemann hypothesis the same holds for every $\theta>\tfrac12$.
 
-**Theorem (the number of primes and the nth prime).** The theorem gives $\pi(x)\sim x/\log x$ and $p_n\sim n\log n$; the sharper forms are $\pi(x) = \mathrm{Li}(x)+O(xe^{-c\sqrt{\log x}})$ and, with the sharp zero-free region, $p_n = n(\log n + \log\log n - 1 + o(1))$.
+**Theorem (the number of primes and the nth prime).** The theorem gives $\pi(x)\sim x/\log x$ and $p_n\sim n\log n$; the sharper forms are $\pi(x) = \mathrm{Li}(x)+O(x\exp(-c\sqrt{\log x}))$ and, with the sharp zero-free region, $p_n = n(\log n + \log\log n - 1 + o(1))$.
 
 **Proof sketch.** The second display is the inversion of the asymptotic for $\pi$ by the standard expansion of the logarithmic integral and one iteration of the relation $p_n\log p_n\sim n\log n$.
 
@@ -198,7 +198,7 @@ so the interval $[x,x+x^{\theta}]$ contains about its expected number of primes;
 
 The prime number theorem is the statement $\pi(x)\sim x/\log x$, equivalently $\psi(x)\sim x$ for the Chebyshev function $\psi(x) = \sum_{n\leq x}\Lambda(n)$, equivalently $\theta(x)\sim x$ for the sum of $\log p$ over the primes, equivalently $p_n\sim n\log n$ for the $n$-th prime. The proof rests on two theorems, one analytic and one tauberian. The analytic theorem is the nonvanishing $\zeta(\sigma+it)\neq0$ for $\sigma\geq1$, proved by applying the nonnegative trigonometric combination $3+4\cos\theta+\cos2\theta = 2(1+\cos\theta)^2$ to the Dirichlet series $\log\zeta$ with nonnegative coefficients and comparing the pole at $s=1$ with a hypothetical zero; it implies that $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on the closed half-plane. The tauberian theorem, in the Wiener–Ikehara form and in Newman's short form, converts the Mellin transform of a nondecreasing function, with a simple pole of residue $c$ at $s=1$ and continuous remainder on the closed half-plane, into the asymptotic $A(x)\sim cx$; applied to the Mellin transform of $\psi$, which is exactly $-\zeta'/(s\zeta)$, it gives $\psi(x)\sim x$.
 
-The rate is governed by the zeros. The zero-free region of de la Vallée Poussin, $\sigma > 1-c/\log(\lvert t\rvert+2)$, gives $\psi(x) = x + O(xe^{-c'\sqrt{\log x}})$; the Vinogradov–Korobov region gives $x\exp(-c'(\log x)^{3/5}/(\log\log x)^{1/5})$; and the Riemann hypothesis would give the optimal $O(\sqrt x\log^2x)$. The prime number theorem is equivalent to the vanishing of the summatory Möbius function, $\sum_{n\leq x}\mu(n)=o(x)$, and to the nonvanishing of $\zeta$ on the line $\Re s=1$; it was proved by Hadamard and de la Vallée Poussin in 1896 and, without complex analysis, by Erdős and Selberg in 1949, the elementary method supplying the main term but no error term, from the identity $\sum_{p\leq x}(\log p)^2+\sum_{pq\leq x}\log p\log q = 2x\log x+O(x)$. The same proof applies to the arithmetic progressions, giving $\pi(x;q,a)\sim \mathrm{Li}(x)/\varphi(q)$ for fixed $q$, and to a number field, giving the prime ideal theorem $\psi_K(x)\sim x$ from the Dedekind zeta function; in short intervals the theorem is known for intervals of length $x^{0.525}$ and, conditionally, for $x^{1/2+\epsilon}$.
+The rate is governed by the zeros. The zero-free region of de la Vallée Poussin, $\sigma > 1-c/\log(\lvert t\rvert+2)$, gives $\psi(x) = x + O(x\exp(-c'\sqrt{\log x}))$; the Vinogradov–Korobov region gives $x\exp(-c'(\log x)^{3/5}/(\log\log x)^{1/5})$; and the Riemann hypothesis would give the optimal $O(\sqrt x\log^2x)$. The prime number theorem is equivalent to the vanishing of the summatory Möbius function, $\sum_{n\leq x}\mu(n)=o(x)$, and to the nonvanishing of $\zeta$ on the line $\Re s=1$; it was proved by Hadamard and de la Vallée Poussin in 1896 and, without complex analysis, by Erdős and Selberg in 1949, the elementary method supplying the main term but no error term, from the identity $\sum_{p\leq x}(\log p)^2+\sum_{pq\leq x}\log p\log q = 2x\log x+O(x)$. The same proof applies to the arithmetic progressions, giving $\pi(x;q,a)\sim \mathrm{Li}(x)/\varphi(q)$ for fixed $q$, and to a number field, giving the prime ideal theorem $\psi_K(x)\sim x$ from the Dedekind zeta function; in short intervals the theorem is known for intervals of length $x^{0.525}$ and, conditionally, for $x^{1/2+\epsilon}$.
 
 ## Summary of Notation
 

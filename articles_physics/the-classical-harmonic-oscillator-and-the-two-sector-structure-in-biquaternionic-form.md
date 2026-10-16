@@ -43,10 +43,10 @@ $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_0$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
 
-For the present article it is enough to take the motion one-dimensional along a fixed direction $\hat u$, so that
+For the present article it is enough to take the motion one-dimensional along a fixed direction $\vec u$, so that
 
 $$
-\vec x(t) = \xi(t)\,\hat u, \qquad \xi(t) = A\cos(\omega t + \varphi),
+\vec x(t) = \xi(t)\,\vec u, \qquad \xi(t) = A\cos(\omega t + \varphi),
 $$
 
 with amplitude $A$ and phase $\varphi$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
@@ -118,7 +118,7 @@ Two remarks fix the interpretation. First, the assignment of $x$ to the Hermitia
 
 ### Contrast with the Quantum Oscillator
 
-The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $x^{\mathrm{fop}}$ and $p^{\mathrm{fop}}$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[x^{\mathrm{fop}}, p^{\mathrm{fop}}] = i\hbar\,e_0$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_0$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
+The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $x$ and $p$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[x, p] = i\hbar\,e_0$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_0$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
 
 The classical oscillator is different because a classical number is not an operator. The real number $\varpi$ has no Hermiticity of its own; one may place it along $e_0$, along $ie_0$, or anywhere else, and the physically meaningful placement is the one dictated by the complex structure of the amplitude. Placing $x$ along $e_0$ and $\varpi$ along $ie_0$ makes the flow a rotation, and that is the placement used here. The quantum and classical statements agree on the **role of the phase** — it is the sector exchange — and disagree on the carrier of the quadratures, because the operator and the classical number are different kinds of object. The quantum companion puts its side of the contrast sharply: in any representation inside $\mathbb{B}$ each quadrature would be an observable, observables are Hermitian, so both quadratures lie in $\mathbb{M}_+$, and the sectors separate the observable content of the amplitude from its generator content rather than the amplitude's two real degrees of freedom. Nothing in the classical construction contradicts that. A classical real number carries no Hermiticity, and placing $x$ along $e_0$ and $\varpi$ along $ie_0$ is the embedding of $\mathbb{C}$ into the centre under which the flow is a rotation; the constraint that forces both quantum quadratures into one sector is simply absent here, and the placement along the two central directions is available. Neither statement is a deformation of the other; they are about different algebras of observables.
 
@@ -141,10 +141,10 @@ $$
 Its solution is the phase rotation
 
 $$
-\tilde{A}(t) = e^{-i\omega t}\tilde{A}(0), \qquad a(t) = e^{-i\omega t}a(0),
+\tilde{A}(t) = \exp(-i\omega t)\tilde{A}(0), \qquad a(t) = \exp(-i\omega t)a(0),
 $$
 
-so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = x\,e_0 + i\varpi\,e_0$ by $e^{-i\omega t}$ and using the centrality of $i$ gives
+so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = x\,e_0 + i\varpi\,e_0$ by $\exp(-i\omega t)$ and using the centrality of $i$ gives
 
 $$
 x(t) = x_0\cos\omega t + \varpi_0\sin\omega t, \qquad \varpi(t) = \varpi_0\cos\omega t - x_0\sin\omega t ,
@@ -206,12 +206,12 @@ The energy is therefore the **Hermitian form** of the amplitude, and it is posit
 The contrast with the **biquaternion norm** is instructive. The biquaternion norm of the central element is not the squared modulus but the complex square,
 
 $$
-N(\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_0 = \left(x^2 - \varpi^2\right)e_0 + 2ix\varpi\,e_0 ,
+\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_0 = \left(x^2 - \varpi^2\right)e_0 + 2ix\varpi\,e_0 ,
 $$
 
-which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $N$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.
+which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $\langle\cdot\rangle_{\natural}$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.
 
-The two forms coincide only on the real axis: for $\tilde{A} = x\,e_0$, $N(\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = x^2e_0$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
+The two forms coincide only on the real axis: for $\tilde{A} = x\,e_0$, $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = x^2e_0$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.
 
 ## The Flow as a Bracket Derivation
 
@@ -228,7 +228,7 @@ The bracket shows how the sector split interacts with the flow. The energy is a 
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto e^{-i\omega t}a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto \exp(-i\omega t)a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
 
 ## One Oscillator or Two?
 
@@ -254,7 +254,7 @@ $$
 
 so that the two conjugate quadratures occupy the two sectors, along the two real directions of the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$. The assignment of which quadrature occupies which sector is a phase convention; the fact that they occupy different sectors is not.
 
-The equation of motion is $\dot{\tilde{A}} = -i\omega\tilde{A}$, whose solution is the phase rotation $\tilde{A}(t) = e^{-i\omega t}\tilde{A}(0)$. The generator $-i\omega\,e_0$ lies in $\mathbb{M}_-$ along the timelike direction $ie_0$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{M}_+$ quadrature is carried into the $\mathbb{M}_-$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
+The equation of motion is $\dot{\tilde{A}} = -i\omega\tilde{A}$, whose solution is the phase rotation $\tilde{A}(t) = \exp(-i\omega t)\tilde{A}(0)$. The generator $-i\omega\,e_0$ lies in $\mathbb{M}_-$ along the timelike direction $ie_0$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{M}_+$ quadrature is carried into the $\mathbb{M}_-$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
 
 The energy is the Hermitian form,
 
@@ -262,7 +262,7 @@ $$
 E = \frac{1}{2}m\omega^2|a|^2 = \frac{1}{2}m\omega^2\,\mathrm{Sc}\!\left(\tilde{A}\tilde{A}^{*}\right),
 $$
 
-positive definite and bounded below, whereas the biquaternion norm $N(\tilde{A}) = a^2e_0$ is indefinite. The oscillator is one oscillator, not two: its two sectors carry the two quadratures of a single complex amplitude, coupled by the phase rotation, and a genuine two-oscillator structure would require a second complex dimension that the centre does not have.
+positive definite and bounded below, whereas the biquaternion norm $\langle\tilde{A}\rangle_{\natural} = a^2e_0$ is indefinite. The oscillator is one oscillator, not two: its two sectors carry the two quadratures of a single complex amplitude, coupled by the phase rotation, and a genuine two-oscillator structure would require a second complex dimension that the centre does not have.
 
 ## Summary of Notation
 
@@ -284,13 +284,13 @@ positive definite and bounded below, whereas the biquaternion norm $N(\tilde{A})
 | $\tilde{A} = a\,e_0 \in \mathbb{C}_{\mathbb{B}}$ | Central embedding of the amplitude |
 | $\tilde{A}_{\mathbb{M}_\pm} = \tfrac12(\tilde{A} \pm \tilde{A}^{*})$ | Sector components: $x\,e_0$ and $i\varpi\,e_0$ |
 | $\dot{\tilde{A}} = -i\omega\tilde{A}$ | Amplitude equation; generator $-i\omega\,e_0 \in \mathbb{M}_-$ |
-| $e^{-i\omega t}$ | Phase rotation; sector exchange on the centre |
+| $\exp(-i\omega t)$ | Phase rotation; sector exchange on the centre |
 | $E = \tfrac12 m\omega^2|a|^2$ | Energy; the Hermitian form of the amplitude |
 | $\tilde{A}\tilde{A}^{*} = |a|^2e_0$ | Hermitian form (positive definite) |
-| $N(\tilde{A}) = a^2e_0$ | Biquaternion norm (indefinite) |
+| $\langle\tilde{A}\rangle_{\natural} = a^2e_0$ | Biquaternion norm (indefinite) |
 | $J = i|_{\mathbb{C}_{\mathbb{B}}}$ | Complex structure of the phase plane; swaps the two sectors |
 | $\{x, p\} = 1$ | Poisson bracket; bracket conventions of the companion article |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

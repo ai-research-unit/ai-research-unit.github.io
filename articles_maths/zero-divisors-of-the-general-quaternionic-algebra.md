@@ -11,7 +11,7 @@ of the Algebraic Structures*, §*The Zero Divisor and the Annihilator*; the unqu
 divisor" means the zero divisor of the general quaternionic product throughout, and every other
 product is named. The article establishes four things. First, the **criterion**: a nonzero
 $\tilde Q$ is a zero divisor of $\star$ exactly when its algebraic norm vanishes, so the zero
-divisors of the quaternionic product are the nonzero solutions of $N(\tilde Q)=0$. Second, the set
+divisors of the quaternionic product are the nonzero solutions of $\langle\tilde Q\rangle_{\natural}=0$. Second, the set
 is the **zero-divisor cone**, a real cone of dimension six in the eight-dimensional real space that
 is not a subspace, and it is the union of the **pure** and the **non-pure** families of the element
 theory of the algebra. Third, the two **annihilators** of an element, taken with respect to
@@ -21,13 +21,13 @@ annihilators **coincide for every element**, unit or zero divisor alike, because
 conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is
 the one product of the block whose annihilators are not exchanged by the conjugation.
 
-**The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_0=0$ and $(\vec Q,\vec Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_0\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_0\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
+**The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_0=0$ and $(\vec Q,\vec Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_0\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_0\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
 
 **Boundaries.** The zero divisors of the algebra, the two families, the criterion in the plain
-product and the structure of the cone are *Zero Divisors of the General Plain Algebra*; the plain
+product and the structure of the cone are *Zero Divisors of the Biquaternion Algebra*; the plain
 nilpotents are *Nilpotents of the General Plain Algebra*, and the plain idempotents *Idempotents of
 the General Plain Algebra*. The fact that the four general products select one and the same
-zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
+zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
 one-sided equations of this product are *Norm and Invertibility in the General Quaternionic
 Algebra*; the nilpotents of the product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*; and
 the form on the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic
@@ -43,7 +43,7 @@ $$
 
 with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\vec Q$. An element is
 $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, the **algebraic norm** is
-$N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^2$, and
+$\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^2$, and
 $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. An element
 is **pure** when $Q_0=0$ and **non-pure** when $Q_0\neq0$.
 
@@ -57,7 +57,7 @@ element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ an
 nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a **right zero divisor of $\star$** when
 $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; and a **zero
 divisor of $\star$** when it is one or the other. It is a **two-sided zero divisor of $\star$**
-when it is both. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+when it is both. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*, and the origin is not a zero divisor, both factors being
 required to be nonzero.
 
@@ -72,28 +72,28 @@ which are plain-product equations in the conjugated first factor.
 
 ## The Criterion
 
-**A nonzero $\tilde Q$ is a zero divisor of $\star$ if and only if its algebraic norm vanishes, $N(\tilde Q)=\sum_\mu Q_\mu^2=0$.**
+**A nonzero $\tilde Q$ is a zero divisor of $\star$ if and only if its algebraic norm vanishes, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=0$.**
 
 **Theorem (the criterion for the general quaternionic product).** For a nonzero
 $\tilde Q\in\mathbb{B}$, $\tilde Q$ is a zero divisor of $\star$ if and only if
 
 $$
-N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=0 .
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2=0 .
 $$
 
-**Proof.** Suppose $N(\tilde Q)=0$ and $\tilde Q\neq0$. Then
+**Proof.** Suppose $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$. Then
 
 $$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0=0 ,
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_0=0 ,
 $$
 
 so $\tilde R=\tilde Q$ is a nonzero element with $\tilde Q\star\tilde R=0$ and $\tilde Q$ is a left
 zero divisor; the mirror computation with the factors exchanged gives the right statement.
 Conversely, suppose $\tilde Q$ is a zero divisor of $\star$: there is a nonzero $\tilde R$ with
-$\tilde Q\star\tilde R=0$, that is $\tilde Q^{\natural}\tilde R=0$. If $N(\tilde Q)\neq0$ then
+$\tilde Q\star\tilde R=0$, that is $\tilde Q^{\natural}\tilde R=0$. If $\langle\tilde Q\rangle_{\natural}\neq0$ then
 $\tilde Q^{\natural}$ is a unit of the plain product by §*The Criterion* of *Norm and Invertibility
 in the General Quaternionic Algebra*, and multiplying the equation by its inverse gives
-$\tilde R=0$, a contradiction. Hence $N(\tilde Q)=0$.
+$\tilde R=0$, a contradiction. Hence $\langle\tilde Q\rangle_{\natural}=0$.
 
 The criterion is the criterion of the plain product read on this product; the two are the same
 equation because the algebraic norm is the same quadratic form, and the two products are
@@ -102,17 +102,17 @@ conjugated one-sided solution here.
 
 ## The Three-Way Classification
 
-**Every element of $\mathbb{B}$ is exactly one of three: a unit of the plain product with $N(\tilde Q)\neq0$, the zero element, or a zero divisor of $\star$ with $N(\tilde Q)=0$ and $\tilde Q\neq0$.**
+**Every element of $\mathbb{B}$ is exactly one of three: a unit of the plain product with $\langle\tilde Q\rangle_{\natural}\neq0$, the zero element, or a zero divisor of $\star$ with $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$.**
 
 Combining the criterion with the invertibility theory of the algebraic norm, the elements of
 $\mathbb{B}$ are partitioned into three classes, and the classification is the one of *Zero
 Divisors of the General Plain Algebra* with the inverse column read for this product.
 
-| condition on $N(\tilde Q)$ | condition on $\tilde Q$ | conclusion |
+| condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | conclusion |
 |---|---|---|
-| $N(\tilde Q)\neq0$ | none | a unit of the plain product, not a zero divisor of $\star$ |
-| $N(\tilde Q)=0$ | $\tilde Q=0$ | the zero element, not a zero divisor |
-| $N(\tilde Q)=0$ | $\tilde Q\neq0$ | a zero divisor of $\star$ |
+| $\langle\tilde Q\rangle_{\natural}\neq0$ | none | a unit of the plain product, not a zero divisor of $\star$ |
+| $\langle\tilde Q\rangle_{\natural}=0$ | $\tilde Q=0$ | the zero element, not a zero divisor |
+| $\langle\tilde Q\rangle_{\natural}=0$ | $\tilde Q\neq0$ | a zero divisor of $\star$ |
 
 The zero divisors are exactly the nonzero elements on which the algebraic norm vanishes. The
 classification is a classification of the elements by their behaviour under $\star$, and it does
@@ -125,7 +125,7 @@ not describe them under the other products.
 A **division algebra** is an algebra in which every nonzero element is invertible; for a
 finite-dimensional algebra this is equivalent to the absence of zero divisors. The biquaternion
 algebra contains zero divisors, so it is **not** a division algebra. The statement is the one of
-*Zero Divisors of the General Plain Algebra*, and it is independent of the product: the same
+*Zero Divisors of the Biquaternion Algebra*, and it is independent of the product: the same
 elements are the zero divisors of both products, by the criterion above and the coincidence quoted
 below.
 
@@ -134,11 +134,11 @@ below.
 **The zero divisors split into the pure ones, $Q_0=0$ with $(\vec Q,\vec Q)=0$, and the non-pure ones, $Q_0\neq0$ with $(\vec Q,\vec Q)=-Q_0^2$, and the split does not depend on the product.**
 
 The zero divisors split into two families according to the value of the scalar part, and the split
-does not depend on the product, because $N(\tilde Q)=Q_0^2+(\vec Q,\vec Q)$ separates the two
+does not depend on the product, because $\langle\tilde Q\rangle_{\natural}=Q_0^2+(\vec Q,\vec Q)$ separates the two
 cases on the element. A biquaternion is **pure** when $Q_0=0$ and **non-pure** when $Q_0\neq0$; on
 a pure element the criterion is $(\vec Q,\vec Q)=0$, and on a non-pure one it is
 $(\vec Q,\vec Q)=-Q_0^2$, which can be met by the vector part cancelling the scalar
-contribution. The two families are developed in *Zero Divisors of the General Plain Algebra*; in
+contribution. The two families are developed in *Zero Divisors of the Biquaternion Algebra*; in
 this product they are separated not by the square, which vanishes on both, but by the plain square,
 as the two sections below compute.
 
@@ -175,16 +175,16 @@ Algebra*, §*The Bivector Form*.
 
 ## Non-Pure Zero Divisors
 
-**A zero divisor with $Q_0\neq0$ has $N(\tilde Q)=0$ and $\tilde Q\star\tilde Q=0$ while its plain square is the nonzero element $\tilde Q\tilde Q=2Q_0\tilde Q$, and it is a complex multiple $\tilde Q=2Q_0\tilde\Pi$ of a nontrivial plain idempotent.**
+**A zero divisor with $Q_0\neq0$ has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\star\tilde Q=0$ while its plain square is the nonzero element $\tilde Q\tilde Q=2Q_0\tilde Q$, and it is a complex multiple $\tilde Q=2Q_0\tilde\Pi$ of a nontrivial plain idempotent.**
 
 **Proposition (the square of a non-pure element).** Let $\tilde Q=Q_0e_0+\vec Q$ with $Q_0\neq0$
-and $N(\tilde Q)=0$. Then
+and $\langle\tilde Q\rangle_{\natural}=0$. Then
 
 $$
 \tilde Q\star\tilde Q=0 , \qquad \tilde Q\tilde Q=2Q_0\tilde Q\neq0 .
 $$
 
-**Proof.** The quaternionic square is $N(\tilde Q)e_0$ and the algebraic norm vanishes by the
+**Proof.** The quaternionic square is $\langle\tilde Q\rangle_{\natural}e_0$ and the algebraic norm vanishes by the
 criterion. The plain square is $(Q_0^2-(\vec Q,\vec Q))e_0+2Q_0\vec Q$, and the criterion
 $(\vec Q,\vec Q)=-Q_0^2$ turns it into $2Q_0^2e_0+2Q_0\vec Q=2Q_0\tilde Q$, which is
 nonzero because $Q_0\neq0$ and $\tilde Q\neq0$.
@@ -207,11 +207,11 @@ and $Q_0\neq0$; the converse is the statement of *Idempotents of the General Pla
 **Remark (the displacement).** The non-pure zero divisor has vanishing quaternionic square, so it
 is a **nilpotent of the quaternionic product**, while it is the opposite of a nilpotent in the
 plain product: its plain square is the nonzero element $2Q_0\tilde Q$. In particular the Hermitian
-idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$
+idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\vec u$
 satisfy
 
 $$
-\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=N(\tilde\Pi_+(\tilde\Xi))e_0=\tfrac14\bigl(1-(\hat u,\hat u)\bigr)e_0=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
+\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=\langle\tilde\Pi_+(\tilde\Xi)\rangle_{\natural}e_0=\tfrac14\bigl(1-(\vec u,\vec u)\bigr)e_0=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
 $$
 
 so the two products see the same element as an idempotent and as a square-zero element. This
@@ -219,13 +219,13 @@ displacement is the subject of *Square Roots of One and the Idempotents of the G
 
 ## The Zero Divisor Set
 
-**The zero-divisor cone $C=\{\tilde Q\star\tilde Q=0\}=\{N(\tilde Q)=0\}$ is a real cone of real dimension $6$ that is not a subspace and is stable under the product; it is the union of the origin, the pure family and the non-pure family.**
+**The zero-divisor cone $C=\{\tilde Q\star\tilde Q=0\}=\{\langle\tilde Q\rangle_{\natural}=0\}$ is a real cone of real dimension $6$ that is not a subspace and is stable under the product; it is the union of the origin, the pure family and the non-pure family.**
 
 **Definition.** The **zero-divisor cone** of the quaternionic product is the vanishing set of the
 algebraic norm,
 
 $$
-C=\{\tilde Q\in\mathbb{B}:N(\tilde Q)=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\} .
+C=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}=\{\tilde Q:\tilde Q\star\tilde Q=0\} .
 $$
 
 **Proposition (shape).** The set $C$ is a real cone of real dimension $6$ in the real
@@ -233,22 +233,22 @@ eight-dimensional space $\mathbb{B}$, and it is not a real subspace.
 
 **Proof.** With $Q_\mu=q_\mu+iq'_\mu$ the real and the imaginary parts, the equation
 $N=\sum_\mu(q_\mu^2-q'_\mu{}^2)+2i\sum_\mu q_\mu q'_\mu=0$ is one complex equation, hence two real
-equations, and the set is a cone because $N$ is homogeneous of degree two; the two equations are
+equations, and the set is a cone because $\langle\cdot\rangle_{\natural}$ is homogeneous of degree two; the two equations are
 independent off the origin, so the real dimension is $8-2=6$. For the failure of linearity, the
 elements $e_1+ie_2$ and $e_1-ie_2$ have algebraic norm $1-1=0$, while their sum $2e_1$ has
 algebraic norm $4$.
 
 **Corollary.** The cone is a multiplicative set: for every $\tilde P$ and every $\tilde Q$ with
-$N(\tilde Q)=0$,
+$\langle\tilde Q\rangle_{\natural}=0$,
 
 $$
-N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)=0 ,
+\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0 ,
 $$
 
 so the product of a cone point with any element is again in the cone, on either side.
 
 **Proof.** The multiplicativity of the algebraic norm of *Norm and Invertibility in the General
-Quaternionic Algebra*, §*Multiplicativity*, evaluated at $N(\tilde Q)=0$.
+Quaternionic Algebra*, §*Multiplicativity*, evaluated at $\langle\tilde Q\rangle_{\natural}=0$.
 
 **The two families and the cone.** The cone is the union of the two families and of the origin: the
 pure family is the isotropic cone of the vector subspace, of real dimension four, and the non-pure
@@ -267,32 +267,32 @@ General Quaternionic Algebra*, below this article in this category.
 
 ## The Zero Divisors and the Four General Products
 
-**The four general products give four zero-divisor equations but one and the same zero-divisor set, $\{\tilde Q\neq0:N(\tilde Q)=0\}$; what the product changes is the equation and the annihilator, not the set.**
+**The four general products give four zero-divisor equations but one and the same zero-divisor set, $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$; what the product changes is the equation and the annihilator, not the set.**
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*
+The four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*
 give four definitions of a zero divisor, hence four zero-divisor sets. For the biquaternion algebra
 the four sets are one and the same set,
 
 $$
-\{\tilde Q\neq0:N(\tilde Q)=0\} ,
+\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\} ,
 $$
 
-and this is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*,
+and this is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Four General Products Coincide*,
 which this article quotes and does not reprove. What the product changes is the **equation** and
 the **annihilator**: the four left zero-divisor equations are $\tilde Q\tilde R=0$,
 $\tilde Q^{\natural}\tilde R=0$, $\tilde Q\tilde R^{*}=0$ and $\tilde Q^{\natural}\tilde R^{*}=0$,
 four different equations with the same solution set, and the annihilators of one element depend on
 the product, as the coincidence theorem above shows for this one. The one-sided inverse equations
 and their solutions for the four products are the same article's §*The One-Sided Inverse
-Equations*, and the plain reading of the criterion is *Zero Divisors of the General Plain Algebra*.
+Equations*, and the plain reading of the criterion is *Zero Divisors of the Biquaternion Algebra*.
 
 ## The Zero Divisors and the Remarkable Subspaces
 
 **The centre, the quaternion subspace and the anti-quaternion subspace carry no zero divisor; the vector subspace carries the whole pure family as an isotropic cone of real dimension $4$, the two Hermitian subspaces carry the non-pure family in the star-fixed form, and a general non-pure zero divisor lies in neither.**
 
 Since the zero divisors are the nonzero elements of algebraic norm zero, their distribution among
-the remarkable subspaces is the distribution of the zeros of the quadratic form $N$, and the
-signatures are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
+the remarkable subspaces is the distribution of the zeros of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$, and the
+signatures are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 | remarkable subspace | zero divisors |
 |---|---|
@@ -314,7 +314,7 @@ subspace, are the two standard witnesses.
 
 For the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$,
 a nonzero element is a zero divisor exactly when its algebraic norm vanishes,
-$N(\tilde Q)=\sum_\mu Q_\mu^2=0$, and the zero divisors are the nonzero points of the zero-divisor
+$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=0$, and the zero divisors are the nonzero points of the zero-divisor
 cone, a real cone of dimension six that is not a subspace and is stable under the product. The cone
 is the union of the **pure** family, the plain nilpotents $\vec\rho+i\vec\rho'$ with
 $\vec\rho\perp\vec\rho'$ and equal lengths, on which the quaternionic and the plain
@@ -324,7 +324,7 @@ multiple $2Q_0\tilde Q$. The left and the right annihilator of a zero divisor ar
 plane containing the element, and both are $0$ for a unit; the two annihilators **coincide for
 every element**, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of
 order two that turns the one equation into the other. The zero-divisor set is the same set as for
-the plain product, a coincidence of the algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; what
+the plain product, a coincidence of the algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; what
 this product changes is the equation, the cone-shaped square, and the annihilator, which is
 symmetric here where the sesquilinear products make it conjugate-symmetric.
 
@@ -336,24 +336,24 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2=-e_0$ |
 | $\tilde Q=Q_0e_0+\vec Q$ | an element and its scalar–vector split |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm, vanishing exactly on the zero-divisor cone |
+| $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the algebraic norm, vanishing exactly on the zero-divisor cone |
 | $C=\{N=0\}$ | the zero-divisor cone, the square-zero set of the product |
 | pure, non-pure | $Q_0=0$; $Q_0\neq0$ |
-| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\hat u$ |
+| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\vec u$ |
 | $\mathrm{Ann}_\ell(\tilde Q),\mathrm{Ann}_r(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ for $\star$ |
 | $\mathrm{Ann}(\tilde Q)$ | their common value, of complex dimension two for a zero divisor |
 
 ## Further Reading
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for zero divisors and annihilators in a non-associative algebra.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the product-relative definition of the zero divisor and of the annihilator.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Zero Divisor and the Annihilator*, for the product-relative definition of the zero divisor and of the annihilator.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for isotopes and the way a change of product moves the zero divisors.
 - Sterling K. Berberian, *Baer \*-Rings* (Springer, 1972), for annihilators in a ring with an involution and the symmetry that an anti-automorphism imposes on them.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the isotropic vectors of the complex quaternion algebra and the quadratic form $\sum_\mu Q_\mu^2$.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the two families, the criterion in the plain product and the structure of the cone.
+- *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the two families, the criterion in the plain product and the structure of the cone.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm, its multiplicativity and the one-sided equations.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
+- *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the square-zero elements of the product and the index of nilpotency.
 - *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the displacement of the plain idempotents into the nilpotents of the product.
-- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the signatures of the algebraic norm on the six subspaces.
+- *Remarkable Subspaces under the General Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the signatures of the algebraic norm on the six subspaces.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), below this article in this category, the companion article, for the coincident annihilators, the operator and the rank table

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*. This article reads the block on the $4\times4$ **left regular representation** $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_L$, $\mathsf{M}_4(\tilde q)\tilde r=\tilde q\tilde r$, so that the Jordan product becomes the half-sum of the two orders of the regular matrices and the two commuting copies of the algebra become visible.
+The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the block on the $4\times4$ **left regular representation** $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_L$, $\mathsf{M}_4(\tilde q)\tilde r=\tilde q\tilde r$, so that the Jordan product becomes the half-sum of the two orders of the regular matrices and the two commuting copies of the algebra become visible.
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=q_0^2+|\vec q|^2$, the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, and the left and right regular representations $\mathsf{M}_4$, $\mathsf{M}_4'$ are those of *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $\langle\tilde q\rangle_{\natural}=q_0^2+|\vec q|^2$, the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, and the left and right regular representations $\mathsf{M}_4$, $\mathsf{M}_4'$ are those of *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
 ## The Representation
 
@@ -31,12 +31,12 @@ $$
 
 $$
 \operatorname{tr}\mathsf{M}_4(\tilde q)=4q_0=2\,T(\tilde q),\qquad
-\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2 .
+\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2 .
 $$
 
-*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_0\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_0$ and the determinant is $(q_0^2+|\vec q|^2)^2=N(\tilde q)^2$; both are quoted from *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
+*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_0\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_0$ and the determinant is $(q_0^2+|\vec q|^2)^2=\langle\tilde q\rangle_{\natural}^2$; both are quoted from *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
-**Corollary.** The **Jordan inverse** is $\mathsf{M}_4(\tilde q^{-1})=(2q_0\mathrm I-\mathsf{M}_4(\tilde q))/N(\tilde q)$ for $\tilde q\neq0$; the invertibility criterion is $\det\neq0$, and the determinant being a square of the norm, it vanishes only at the origin.
+**Corollary.** The **Jordan inverse** is $\mathsf{M}_4(\tilde q^{-1})=(2q_0\mathrm I-\mathsf{M}_4(\tilde q))/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$; the invertibility criterion is $\det\neq0$, and the determinant being a square of the norm, it vanishes only at the origin.
 
 ## The Trace Form
 
@@ -70,16 +70,16 @@ and the two together generate the **full** matrix algebra, $\mathrm{alg}\{\maths
 |---|---|---|
 | the product | the matrix product $\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)$ | the half-sum (anticommutator) $\tfrac12(\;\cdot\;+\;\cdot\;)$ |
 | the trace | $4q_0$ | $4q_0$ |
-| the determinant | $N(\tilde q)^2$ | $N(\tilde q)^2$ |
+| the determinant | $\langle\tilde q\rangle_{\natural}^2$ | $\langle\tilde q\rangle_{\natural}^2$ |
 | the trace form | $\tfrac14\operatorname{tr}(\;\cdot\;\cdot\;)$, signature $(1,3)$ | the same |
-| the inverse | $\mathsf{M}_4(\tilde q)^{-1}=(2q_0\mathrm I-\mathsf{M}_4(\tilde q))/N(\tilde q)$ | the same formula |
+| the inverse | $\mathsf{M}_4(\tilde q)^{-1}=(2q_0\mathrm I-\mathsf{M}_4(\tilde q))/\langle\tilde q\rangle_{\natural}$ | the same formula |
 | the commuting copy | $\mathsf{M}_4'$ genuinely present | $\mathsf{M}_4'$ invisible to the product |
 
 **Remark (what the change of product changes).** As on the $2\times2$ model, the trace, the determinant, the trace form and the inverse formula are **shared**; the half-sum changes the product, replaces the associative product by the Jordan one, and **collapses the right copy into the left** because the product is commutative. The plain model is *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*; the two models of the block, the $2\times2$ complex and the $4\times4$ real, read the same trace form, the same determinant and the same inverse, differing only in the coefficient that relates the matrix trace to $\tau$.
 
 ## Summary
 
-The left regular representation $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_L$, $\mathsf{M}_4(\tilde q)\tilde r=\tilde q\tilde r$, is multiplicative for the plain product and carries the Jordan product to the half-sum of the two orders of the regular matrices, $\mathsf{M}_4(\tilde p\bullet\tilde q)=\tfrac12(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)+\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde p))$. The trace of the regular matrix is $4q_0=2T(\tilde q)$ and the determinant is $N(\tilde q)^2$, so the Jordan inverse is the normalised $2q_0\mathrm I-\mathsf{M}_4(\tilde q)$ and the invertible elements are the nonzero ones. The trace form is a quarter of the plain matrix trace pairing, $\operatorname{tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4\tau(\tilde p,\tilde q)$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and signature $(1,3)$, the same as on the $2\times2$ model. The left and the right regular representations commute and together generate the full matrix algebra, but the block's product is commutative, so the right copy is invisible to it; the trace, the determinant, the trace form and the inverse formula are shared with the plain algebra on the same model.
+The left regular representation $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mathbb{R})_L$, $\mathsf{M}_4(\tilde q)\tilde r=\tilde q\tilde r$, is multiplicative for the plain product and carries the Jordan product to the half-sum of the two orders of the regular matrices, $\mathsf{M}_4(\tilde p\bullet\tilde q)=\tfrac12(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)+\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde p))$. The trace of the regular matrix is $4q_0=2T(\tilde q)$ and the determinant is $\langle\tilde q\rangle_{\natural}^2$, so the Jordan inverse is the normalised $2q_0\mathrm I-\mathsf{M}_4(\tilde q)$ and the invertible elements are the nonzero ones. The trace form is a quarter of the plain matrix trace pairing, $\operatorname{tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4\tau(\tilde p,\tilde q)$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and signature $(1,3)$, the same as on the $2\times2$ model. The left and the right regular representations commute and together generate the full matrix algebra, but the block's product is commutative, so the right copy is invisible to it; the trace, the determinant, the trace form and the inverse formula are shared with the plain algebra on the same model.
 
 ## Summary of Notation
 
@@ -89,14 +89,14 @@ The left regular representation $\mathsf{M}_4:\mathbb{H}\hookrightarrow M_4(\mat
 | $\mathsf{M}_4'(\tilde q)\tilde r=\tilde r\tilde q$ | the right regular representation, commuting with $\mathsf{M}_4$ |
 | $\mathsf{M}_4(\tilde p\bullet\tilde q)=\tfrac12(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)+\mathsf{M}_4(\tilde q)\mathsf{M}_4(\tilde p))$ | the half-sum |
 | $\operatorname{tr}\mathsf{M}_4(\tilde q)=4q_0$ | the trace |
-| $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$ | the determinant |
+| $\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$ | the determinant |
 | $\operatorname{tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4\tau(\tilde p,\tilde q)$ | the trace form as a quarter trace pairing |
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Algebra of Quaternions*, for the product.
+- *Introduction to the Symmetric Plain Algebra*, for the product.
 - *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, for the regular matrices, the commuting copies and the double centraliser.
 - *The Multiplication Operators of the Symmetric Plain Algebra*, for the fullness of the family generated by the left multiplications.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the trace form.
-- *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the other model of the block.
+- *Introduction to the Symmetric Plain Algebra*, for the other model of the block.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the norm and the inverse.

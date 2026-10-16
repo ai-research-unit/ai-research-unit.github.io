@@ -131,9 +131,9 @@ The abelian and nilpotent rows are classical: the first is the rational-independ
 
 ### The Oppenheim Conjecture
 
-**Theorem (Margulis).** Let $Q$ be an indefinite real quadratic form in $n \geq 3$ variables that is not proportional to a rational form. Then for every $\varepsilon > 0$ there is a nonzero integer vector $m \in \mathbb{Z}^n$ with $|Q(m)| < \varepsilon$.
+**Theorem (Margulis).** Let $Q$ be an indefinite real quadratic form in $n \geq 3$ variables that is not proportional to a rational form. Then for every $\varepsilon > 0$ there is a nonzero integer vector $m \in \mathbb{Z}^n$ with $|\mathfrak{Q}(m)| < \varepsilon$.
 
-The theorem was proved by Margulis in 1989, and Ratner's classification supplies a second proof. The idea of the dynamical proof is to consider the homogeneous space $SL_n(\mathbb{R})/SL_n(\mathbb{Z})$ and the orbit of the form $Q$ under the subgroup $SO(Q)^0 \cong SO(2, n-2)$; the orbit closes off exactly when $Q$ is proportional to a rational form, so the irrationality hypothesis makes the orbit non-closed, and Ratner's topological theorem identifies its closure with the whole space; the values $Q(m)$ are then the distances from the orbit to the integer lattice, and the density of the orbit gives the conclusion. The Oppenheim conjecture is the sharpest classical arithmetic consequence of the classification.
+The theorem was proved by Margulis in 1989, and Ratner's classification supplies a second proof. The idea of the dynamical proof is to consider the homogeneous space $SL_n(\mathbb{R})/SL_n(\mathbb{Z})$ and the orbit of the form $\mathfrak{Q}$ under the subgroup $SO(Q)^0 \cong SO(2, n-2)$; the orbit closes off exactly when $Q$ is proportional to a rational form, so the irrationality hypothesis makes the orbit non-closed, and Ratner's topological theorem identifies its closure with the whole space; the values $\mathfrak{Q}(m)$ are then the distances from the orbit to the integer lattice, and the density of the orbit gives the conclusion. The Oppenheim conjecture is the sharpest classical arithmetic consequence of the classification.
 
 ### Equidistribution of Hecke Points and Arithmetic Applications
 

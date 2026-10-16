@@ -15,7 +15,7 @@ $$
 |\tilde q|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
 $$
 
-This is the **Euclidean norm** of the algebra. The split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ is indefinite and is not a norm in the analytic sense.
+This is the **Euclidean norm** of the algebra. The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ is indefinite and is not a norm in the analytic sense.
 
 **Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q,\tilde p \in \mathbb{H}_{\mathrm{s}}$,
 
@@ -25,11 +25,11 @@ $$
 
 The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{2}$, and it induces the product topology of $\mathbb{R}^4$.
 
-**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q \tilde p|^2 \leq 2\,|\tilde q|^2|\tilde p|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_0p_0 - B(\vec u,\vec v)$ and the vector part $q_0\vec v + p_0\vec u + \tfrac12[\vec u,\vec v]$; equality is attained at $\tilde q = \tilde p = 1 + e_2$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
+**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q \tilde p|^2 \leq 2\,|\tilde q|^2|\tilde p|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_0p_0 - B(\vec q,\vec v)$ and the vector part $q_0\vec v + p_0\vec q + \tfrac12[\vec q,\vec v]$; equality is attained at $\tilde q = \tilde p = 1 + e_2$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
 
 **Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $U$ and the level sets of the split-quaternion norm are closed subsets.
 
-**Proof.** The units are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{\tilde q \neq 0, N(\tilde q)=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $N$ is continuous.
+**Proof.** The units are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{\tilde q \neq 0, \langle\tilde q\rangle_{\natural}=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $\langle\cdot\rangle_{\natural}$ is continuous.
 
 **Corollary (No Multiplicative Norm).** There is no norm on the algebra satisfying $|\tilde q \tilde p| = |\tilde q||\tilde p|$ for all $\tilde q,\tilde p$.
 
@@ -41,7 +41,7 @@ The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{
 
 **Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q,\tilde p) \mapsto \tilde q+\tilde p$, $(\tilde q,\tilde p)\mapsto \tilde q \tilde p$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
 
-**Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q \tilde p - q_0p_0| \leq |\tilde q-q_0||\tilde p| + |q_0||\tilde p-p_0|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-q_0^{-1} = \tilde q^{-1}(q_0-\tilde q)q_0^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $q_0$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $N(\tilde q)$.
+**Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q \tilde p - q_0p_0| \leq |\tilde q-q_0||\tilde p| + |q_0||\tilde p-p_0|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-q_0^{-1} = \tilde q^{-1}(q_0-\tilde q)q_0^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $q_0$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $\langle\tilde q\rangle_{\natural}$.
 
 **Corollary (Coordinate Description).** Continuity, limits and convergence of sequences in the algebra are equivalent to the corresponding statements for the four real coordinates $(q_0,q_1,q_2,q_3)$.
 
@@ -126,12 +126,12 @@ which is the zero divisor set of the algebra in the vector subspace.
 **Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_0 + v$ with $v \in V$, then
 
 $$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{q_0 - v}{q_0^2 - N(v)},
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_0 - v}{q_0^2 - \langle v\rangle_{\natural}},
 $$
 
 which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.
 
-**Proof.** The formula for the inverse is that of *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; the denominator is $N(\tilde q)$, which vanishes exactly on the zero divisor set by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; the unboundedness along the null directions is immediate from the formula, since the numerator does not vanish there.
+**Proof.** The formula for the inverse is that of *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; the denominator is $\langle\tilde q\rangle_{\natural}$, which vanishes exactly on the zero divisor set by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; the unboundedness along the null directions is immediate from the formula, since the numerator does not vanish there.
 
 **Corollary (Removable Singularities Fail).** A function that is continuous on the complement of a point of the null cone and bounded near it need not extend across it, because the zero divisors of $\tilde q$ make the algebraic operations degenerate along the cone.
 
@@ -201,18 +201,18 @@ The quaternion column is the content of *Quaternion Analysis*, and the split-com
 
 The algebra is a normed algebra up to the constant $\sqrt{2}$ in the Euclidean norm, with the product topology of $\mathbb{R}^4$, the units open and the zero divisors closed. Limits and continuity are the coordinatewise notions of the four real coordinates. The naive derivative fails already for $\tilde q \mapsto \tilde q^2$, because the difference quotient involves the conjugate $h\tilde q h^{-1}$, and it fails again near the null cone, where $h$ need not be invertible.
 
-The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/N(\tilde q)$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
+The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $|\tilde q|^2 = q_0^2+q_1^2+q_2^2+q_3^2$ | the Euclidean norm | this article |
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, indefinite, not a norm in the analytic sense | *Split-Quaternion Algebra* |
+| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, indefinite, not a norm in the analytic sense | *Split-Quaternion Algebra* |
 | $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ | the vector operator | this article |
 | $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
 | $q_1^2-q_2^2-q_3^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
-| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
 | power series $\sum q_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |
 | $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |
 

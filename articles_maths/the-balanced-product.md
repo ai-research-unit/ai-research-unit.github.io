@@ -59,7 +59,7 @@ $$
 e_{(m+m',n)}-e_{(m,n)}-e_{(m',n)}, \qquad e_{(m,n+n')}-e_{(m,n)}-e_{(m,n')}, \qquad e_{(mr,n)}-e_{(m,rn)} .
 $$
 
-Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $(m,n) \mapsto m \otimes n$ is balanced and the elementary tensors generate $M \otimes_R N$, because the $e_{(m,n)}$ generate $F$. Given a balanced $f:M \times N \to P$, the universal property of $F$ gives a homomorphism $\tilde f:F \to P$ with $\tilde f(e_{(m,n)})=f(m,n)$; the three displayed relations are killed by the balanced condition, so $\tilde f$ factors through $K$, giving $\bar f$. Uniqueness of $\bar f$ follows because the $m \otimes n$ generate. For uniqueness of $T$, apply the property to the balanced map $\otimes':M \times N \to T'$ to obtain a map $T \to T'$ inverse to the map obtained symmetrically.
+Put $M \otimes_R N=F/K$ and $m \otimes n=e_{(m,n)}+K$. By construction the map $(m,n) \mapsto m \otimes n$ is balanced and the elementary tensors generate $M \otimes_R N$, because the $e_{(m,n)}$ generate $F$. Given a balanced $f:M \times N \to P$, the universal property of $F$ gives a homomorphism $f^{\mathrm{lin}}:F \to P$ with $f^{\mathrm{lin}}(e_{(m,n)})=f(m,n)$; the three displayed relations are killed by the balanced condition, so $f^{\mathrm{lin}}$ factors through $K$, giving $\bar f$. Uniqueness of $\bar f$ follows because the $m \otimes n$ generate. For uniqueness of $T$, apply the property to the balanced map $\otimes':M \times N \to T'$ to obtain a map $T \to T'$ inverse to the map obtained symmetrically.
 
 ### Elementary Tensors
 

@@ -28,7 +28,7 @@ and $\mathcal{Z}$ is the **zero-divisor cone**. The group of units is its comple
 
 The two descriptions agree with the null set of the algebraic norm.
 
-**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; *Zero Divisors of the Biquaternion Algebra*).
+**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; *Zero Divisors of the Biquaternion Algebra*).
 
 **Proposition (elementary properties).** With the Euclidean topology of the ambient space:
 
@@ -70,7 +70,7 @@ The cone is homotopy trivial, like the algebra that surrounds it.
 *Proof.* The straight-line homotopy
 
 $$
-K(s,\tilde Q)=(1-s)\tilde Q,\qquad (s,\tilde Q)\in[0,1]\times\mathcal{N},
+\langle s,\tilde Q\rangle_{\natural*}=(1-s)\tilde Q,\qquad (s,\tilde Q)\in[0,1]\times\mathcal{N},
 $$
 
 maps $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, since scaling by a complex number preserves the equation $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, and it contracts $\mathcal{N}$ to the apex. It is continuous, fixes the apex at every $s$, and carries every element to $0$ at $s=1$.
@@ -119,7 +119,7 @@ $$
 q:L\longrightarrow\mathbb{P}(\mathcal{N}),\qquad \varphi(u,v)\longmapsto([u],[v]),
 $$
 
-is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(e^{i\theta}u_0,e^{-i\theta}v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
+is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(\exp(i\theta)u_0,\exp(-i\theta)v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
 
 **Proposition (homotopy invariants of the link).** The quotient map $S^3\times S^3\to L$ is a principal $S^1$-bundle, and its long exact homotopy sequence, with $\pi_1(S^3\times S^3)=\pi_2(S^3\times S^3)=0$, gives
 
@@ -193,7 +193,7 @@ The three-dimensional spaces above are the pure real slices. The Minkowski slice
 
 ## Summary
 
-- The **singular set** $\mathcal{N}=\mathcal{Z}\cup\{0\}$ of the algebra is the set of non-units together with the origin; it coincides with the null set of the algebraic norm, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is closed, of empty interior, a real algebraic cone with apex $0$ and real dimension $6$; the group of units is its open and dense complement.
+- The **singular set** $\mathcal{N}=\mathcal{Z}\cup\{0\}$ of the algebra is the set of non-units together with the origin; it coincides with the null set of the algebraic norm, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. It is closed, of empty interior, a real algebraic cone with apex $0$ and real dimension $6$; the group of units is its open and dense complement.
 - The cone is **smooth away from its apex**: the algebraic norm is irreducible with gradient vanishing only at the origin, so $0$ is the only singular point and the punctured cone $\mathcal{Z}$ is a smooth complex $3$-manifold.
 - The cone is **contractible**, contracted to the apex by $\tilde Q\mapsto(1-s)\tilde Q$; the ambient contractibility of $\mathbb{B}$ is a separate statement, owned by *The Euclidean Topology of the Biquaternion Algebra*.
 - The **link** $L=\mathcal{N}\cap S^7_E$ is a closed connected real $5$-manifold, an $S^1$-bundle over the projectivised cone $S^2\times S^2$; it is simply connected with $\pi_2(L)\cong\mathbb{Z}$, and it is not $S^5$, so the apex is genuinely singular.

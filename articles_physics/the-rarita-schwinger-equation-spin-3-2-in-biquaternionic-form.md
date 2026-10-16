@@ -178,7 +178,7 @@ up to the index-position conventions that translate $\gamma^\mu$ into the basis,
 
 ### Setting up
 
-Take the field at rest and of positive frequency, so that each component is proportional to $e^{-imt/\hbar}$ in natural units, and the derivative is $\partial_0\to -im$. The Dirac operator becomes
+Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt/\hbar)$ in natural units, and the derivative is $\partial_0\to -im$. The Dirac operator becomes
 
 $$
 i\not\partial - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
@@ -272,7 +272,7 @@ The massive case is also where the known difficulty lives. The constraint analys
 Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 
 $$
-\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})},
+\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
 $$
 
 the Dirac equation on the component requires $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,

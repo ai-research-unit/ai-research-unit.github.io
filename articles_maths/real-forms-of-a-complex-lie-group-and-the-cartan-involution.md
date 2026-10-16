@@ -115,7 +115,7 @@ For $\mathrm{G}_{\mathbb{C}} = \mathrm{sl}_2(\mathbb{C})$ the real forms are $\m
 
 ### The Orthogonal Algebras
 
-For $\mathrm{G}_{\mathbb{C}} = \mathrm{so}(n,\mathbb{C})$ the real forms are $\mathrm{so}(p,q)$ with $p+q = n$, up to the order of the two numbers; the Cartan involution is $\theta(X) = -X^t$ with respect to the standard nondegenerate form of signature $(p,q)$, the fixed algebra is $\mathrm{so}(p)\oplus\mathrm{so}(q)$ and the symmetric space is the Grassmannian of the $p$-planes of definite parity, the geometry of which belongs to Part IV.
+For $\mathrm{G}_{\mathbb{C}} = \mathrm{so}(N,\mathbb{C})$ the real forms are $\mathrm{so}(n,m)$ with $n+m = N$, up to the order of the two numbers; the Cartan involution is $\theta(X) = -X^t$ with respect to the standard nondegenerate form of signature $(n,m)$, the fixed algebra is $\mathrm{so}(n)\oplus\mathrm{so}(m)$ and the symmetric space is the Grassmannian of the $n$-planes of definite parity, the geometry of which belongs to Part IV.
 
 ### The Compact Forms
 

@@ -50,17 +50,17 @@ the invariants of the homology with coefficients in the sign representation; equ
 
 Let $M$ be a closed connected orientable manifold of dimension $n = 2m$, with intersection form
 $$
-Q : H^m(M;\mathbb{Z})\times H^m(M;\mathbb{Z})\to\mathbb{Z}, \qquad Q(x,y) = \bigl\langle x\smile y,[M]\bigr\rangle,
+Q : H^m(M;\mathbb{Z})\times H^m(M;\mathbb{Z})\to\mathbb{Z}, \qquad \mathfrak{Q}(x,y) = \bigl\langle x\smile y,[M]\bigr\rangle,
 $$
 which is nondegenerate and is symmetric or alternating according to the parity of $m$. The involution acts on the middle-dimensional homology and the form is compatible with it in one of the two ways above.
 
 **Theorem (the form is invariant or anti-invariant).** For every $x,y\in H^m(M;\mathbb{Q})$,
 $$
-Q\bigl(T_*x, T_*y\bigr) = \deg(T)\, Q(x,y).
+Q\bigl(T_*x, T_*y\bigr) = \deg(T)\, \mathfrak{Q}(x,y).
 $$
 So an orientation-preserving involution leaves the form invariant and an orientation-reversing involution negates it.
 
-**Proof.** $Q(T_*x,T_*y) = \langle T^{*}(x\smile y),[M]\rangle = \langle x\smile y, T_*[M]\rangle = \deg(T)\langle x\smile y,[M]\rangle$, using the naturality of the evaluation pairing and the definition of the degree.
+**Proof.** $\mathfrak{Q}(T_*x,T_*y) = \langle T^{*}(x\smile y),[M]\rangle = \langle x\smile y, T_*[M]\rangle = \deg(T)\langle x\smile y,[M]\rangle$, using the naturality of the evaluation pairing and the definition of the degree.
 
 **Theorem (the orientation-preserving case: orthogonal splitting).** Let $\deg(T) = +1$ and let $2$ be invertible. Then the fixed and anti-fixed parts are orthogonal for $Q$,
 $$
@@ -72,7 +72,7 @@ Q = Q^{+}\oplus Q^{-}, \qquad \sigma(M) = \sigma(M^{+}) + \sigma(M^{-}),
 $$
 where $\sigma(M^{\pm})$ is the signature of the form restricted to the $\pm$-part.
 
-**Proof.** For $x\in H_m^{+}$ and $y\in H_m^{-}$ one has $Q(x,y) = Q(T_*x,T_*y) = Q(x,-y) = -Q(x,y)$, so $2Q(x,y)=0$ and the orthogonality follows from the invertibility of $2$. Orthogonal summands of a nondegenerate form are nondegenerate on each summand: a class in the radical of $Q^{+}$ pairs trivially with $H_m^{+}$ and, by orthogonality, with $H_m^{-}$ as well, hence with all of $H_m$, and vanishes by the nondegeneracy of $Q$. The signature is additive over an orthogonal direct sum.
+**Proof.** For $x\in H_m^{+}$ and $y\in H_m^{-}$ one has $\mathfrak{Q}(x,y) = \mathfrak{Q}(T_*x,T_*y) = \mathfrak{Q}(x,-y) = -\mathfrak{Q}(x,y)$, so $2Q(x,y)=0$ and the orthogonality follows from the invertibility of $2$. Orthogonal summands of a nondegenerate form are nondegenerate on each summand: a class in the radical of $Q^{+}$ pairs trivially with $H_m^{+}$ and, by orthogonality, with $H_m^{-}$ as well, hence with all of $H_m$, and vanishes by the nondegeneracy of $Q$. The signature is additive over an orthogonal direct sum.
 
 **Theorem (the orientation-reversing case: isotropic duality and vanishing signature).** Let $\deg(T) = -1$ and let $2$ be invertible. Then each part is isotropic for $Q$,
 $$
@@ -84,7 +84,7 @@ Q : H_m^{+}\times H_m^{-}\to\mathbb{Q} \ \text{is nondegenerate}.
 $$
 Consequently the signature of $M$ vanishes, $\sigma(M) = 0$, and the form is the hyperbolic form attached to the pair of dual isotropic subspaces.
 
-**Proof.** For $x,y\in H_m^{+}$ one has $Q(x,y) = Q(T_*x,T_*y) = -Q(x,y)$, since $T_*x = x$ and $T_*y = y$; so $2Q(x,y)=0$ and $Q$ vanishes on $H_m^{+}$, and symmetrically on $H_m^{-}$. If $x\in H_m^{+}$ pairs trivially with all of $H_m^{-}$, then by isotropy it pairs trivially with all of $H_m$, so $x = 0$ by nondegeneracy of $Q$; thus the pairing between the two parts is nondegenerate. The vanishing of the signature also follows directly: an orientation-reversing homeomorphism identifies $M$ with $\overline M$, whence $\sigma(M) = \sigma(\overline M) = -\sigma(M)$.
+**Proof.** For $x,y\in H_m^{+}$ one has $\mathfrak{Q}(x,y) = \mathfrak{Q}(T_*x,T_*y) = -\mathfrak{Q}(x,y)$, since $T_*x = x$ and $T_*y = y$; so $2Q(x,y)=0$ and $Q$ vanishes on $H_m^{+}$, and symmetrically on $H_m^{-}$. If $x\in H_m^{+}$ pairs trivially with all of $H_m^{-}$, then by isotropy it pairs trivially with all of $H_m$, so $x = 0$ by nondegeneracy of $Q$; thus the pairing between the two parts is nondegenerate. The vanishing of the signature also follows directly: an orientation-reversing homeomorphism identifies $M$ with $\overline M$, whence $\sigma(M) = \sigma(\overline M) = -\sigma(M)$.
 
 **Example (complex projective space admits no orientation-reversing involution).** The form on $H^2(\mathbb{CP}^2;\mathbb{Z})$ is $\langle1\rangle$, of signature $1$, so $\mathbb{CP}^2$ admits no orientation-reversing self-homeomorphism: if it did, the signature would vanish. Complex conjugation, the standard candidate, is indeed orientation-preserving, acting by $-1$ on $H^2$ and by $+1$ on $H^4$, so that the form is invariant in the required way.
 
@@ -120,7 +120,7 @@ the second condition saying that the form is invariant under the involution. A f
 
 **Proposition (the intersection form is Hermitian for an orientation-preserving involution).** Let $T$ preserve the orientation and define the sesquilinear form
 $$
-\langle x, y\rangle = Q(x, T_*y), \qquad x,y\in H_m(M;\mathbb{Q}).
+\langle x, y\rangle = \mathfrak{Q}(x, T_*y), \qquad x,y\in H_m(M;\mathbb{Q}).
 $$
 Then $\langle-,-\rangle$ satisfies
 $$
@@ -129,7 +129,7 @@ $$
 $$
 so that it is $\varepsilon$-Hermitian and compatible with the involution up to the degree sign. On the fixed part it agrees with $Q$ and on the anti-fixed part it agrees with $-Q$, because $T_*y = \pm y$ there. The classification of such forms is the subject of *Hermitian Pairings and the Signature*.
 
-**Proof.** (b) is the compatibility of $Q$ with the involution: $\langle T_*x,y\rangle = Q(T_*x,T_*y) = \deg(T)Q(x,y)$ and $\langle x,T_*y\rangle = Q(x,T_*^2y) = Q(x,y)$. For (a), the same compatibility applied to $Q(T_*y,x)$ together with the middle-degree symmetry $Q(u,v) = (-1)^mQ(v,u)$ gives $Q(T_*y,x) = \deg(T)Q(y,T_*x)$ and $Q(T_*y,x) = (-1)^mQ(x,T_*y)$, so that $(-1)^m\langle x,y\rangle = \deg(T)\langle y,x\rangle$. Part (c) is immediate from $T_*y = \pm y$ on the two parts.
+**Proof.** (b) is the compatibility of $Q$ with the involution: $\langle T_*x,y\rangle = \mathfrak{Q}(T_*x,T_*y) = \deg(T)\mathfrak{Q}(x,y)$ and $\langle x,T_*y\rangle = \mathfrak{Q}(x,T_*^2y) = \mathfrak{Q}(x,y)$. For (a), the same compatibility applied to $\mathfrak{Q}(T_*y,x)$ together with the middle-degree symmetry $\mathfrak{Q}(u,v) = (-1)^mQ(v,u)$ gives $\mathfrak{Q}(T_*y,x) = \deg(T)\mathfrak{Q}(y,T_*x)$ and $\mathfrak{Q}(T_*y,x) = (-1)^mQ(x,T_*y)$, so that $(-1)^m\langle x,y\rangle = \deg(T)\langle y,x\rangle$. Part (c) is immediate from $T_*y = \pm y$ on the two parts.
 
 **Remark (the Witt groups and the obstruction).** The classification of the forms that occur is the content of *Hermitian Pairings and the Signature*, where the Witt group of Hermitian forms over a ring with involution and the Wall surgery groups are developed. The module structure here is the geometric input to that classification, and the elementary operations on the form are the ones induced by surgery, as in *The Surgery Operator*.
 
@@ -137,13 +137,13 @@ so that it is $\varepsilon$-Hermitian and compatible with the involution up to t
 
 **Example (the sphere with the reflection and with the antipodal map).** On $S^2$ the reflection in a plane is orientation-reversing with fixed set a circle; the middle-dimensional homology $H_1(S^2) = 0$ carries the zero form, and the theorem is vacuous. On $S^{2m}$ the same holds for $m \geq 1$ because $H_m(S^{2m}) = 0$ for $m\neq 0, 2m$. The first nontrivial case is a four-manifold.
 
-**Example (a free orientation-reversing involution).** On $M = S^2\times S^2$ the involution $T(x,y) = (x,-y)$, with $-y$ the antipode on the second factor, is orientation-reversing (the antipodal map has degree $-1$ on the two-dimensional factor) and free. On $H_2(M;\mathbb{Z})$ with generators $a = [\mathrm{pt}\times S^2]$ and $b = [S^2\times\mathrm{pt}]$ it acts by $-1$ on $a$ and by $+1$ on $b$, so that the anti-fixed part is the line spanned by $a$ and the fixed part the line spanned by $b$; both are isotropic for the form and $Q(a,b) = 1$, so the form places them in perfect duality and the signature vanishes, in agreement with the theorem.
+**Example (a free orientation-reversing involution).** On $M = S^2\times S^2$ the involution $T(x,y) = (x,-y)$, with $-y$ the antipode on the second factor, is orientation-reversing (the antipodal map has degree $-1$ on the two-dimensional factor) and free. On $H_2(M;\mathbb{Z})$ with generators $a = [\mathrm{pt}\times S^2]$ and $b = [S^2\times\mathrm{pt}]$ it acts by $-1$ on $a$ and by $+1$ on $b$, so that the anti-fixed part is the line spanned by $a$ and the fixed part the line spanned by $b$; both are isotropic for the form and $\mathfrak{Q}(a,b) = 1$, so the form places them in perfect duality and the signature vanishes, in agreement with the theorem.
 
-**Example (the swap of the two factors of $S^2\times S^2$).** On $M = S^2\times S^2$ the involution $T(x,y) = (y,x)$ swaps the factors; it is orientation-preserving, with fixed set the diagonal $S^2$. On $H_2(M;\mathbb{Z})\cong\mathbb{Z}^2$ with generators $a = [\mathrm{pt}\times S^2]$ and $b = [S^2\times\mathrm{pt}]$, the form is $Q(a,a) = Q(b,b) = 0$, $Q(a,b) = 1$. The involution exchanges $a$ and $b$, so the fixed part is spanned by $a+b$ and the anti-fixed part by $a-b$; the two parts are orthogonal, of dimensions one and one, and the form restricts to the values $Q(a+b,a+b) = 2$ and $Q(a-b,a-b) = -2$, so the signatures are $+1$ and $-1$ and the total signature of $M$ is $0$, in agreement with the orthogonal splitting theorem.
+**Example (the swap of the two factors of $S^2\times S^2$).** On $M = S^2\times S^2$ the involution $T(x,y) = (y,x)$ swaps the factors; it is orientation-preserving, with fixed set the diagonal $S^2$. On $H_2(M;\mathbb{Z})\cong\mathbb{Z}^2$ with generators $a = [\mathrm{pt}\times S^2]$ and $b = [S^2\times\mathrm{pt}]$, the form is $\mathfrak{Q}(a,a) = \mathfrak{Q}(b,b) = 0$, $\mathfrak{Q}(a,b) = 1$. The involution exchanges $a$ and $b$, so the fixed part is spanned by $a+b$ and the anti-fixed part by $a-b$; the two parts are orthogonal, of dimensions one and one, and the form restricts to the values $\mathfrak{Q}(a+b,a+b) = 2$ and $\mathfrak{Q}(a-b,a-b) = -2$, so the signatures are $+1$ and $-1$ and the total signature of $M$ is $0$, in agreement with the orthogonal splitting theorem.
 
 ## Summary
 
-An involution of a manifold induces an involution of the homology and of the cohomology, the latter a ring automorphism, and the module $H_*(M;k)$ over $k[\mathbb{Z}/2]$ splits into the fixed part and the anti-fixed part; over a ring in which two is invertible, the fixed part is the homology of the quotient and the anti-fixed part is its complement, the sign-isotypic component of the module. On a closed orientable $2m$-manifold the intersection form is multiplied by the degree of the involution: an orientation-preserving involution leaves it invariant, so the two parts are orthogonal and the form restricts nondegenerately to each, and the signature of the manifold is the sum of the signatures of the two parts; an orientation-reversing involution negates the form, so the two parts are isotropic and placed in perfect duality by the form, and the signature of the manifold vanishes. Poincaré duality is an isomorphism of equivariant modules and preserves the parts for an orientation-preserving involution and exchanges them for an orientation-reversing one. The form twisted by the involution, $\langle x,y\rangle = Q(x,T_*y)$, is $\varepsilon$-Hermitian with $\varepsilon = (-1)^m\deg(T)$ and compatible with the involution up to the degree sign; its classification is the algebraic input to the equivariant signature, and the vanishing of the signature under an orientation-reversing involution is its simplest geometric consequence.
+An involution of a manifold induces an involution of the homology and of the cohomology, the latter a ring automorphism, and the module $H_*(M;k)$ over $k[\mathbb{Z}/2]$ splits into the fixed part and the anti-fixed part; over a ring in which two is invertible, the fixed part is the homology of the quotient and the anti-fixed part is its complement, the sign-isotypic component of the module. On a closed orientable $2m$-manifold the intersection form is multiplied by the degree of the involution: an orientation-preserving involution leaves it invariant, so the two parts are orthogonal and the form restricts nondegenerately to each, and the signature of the manifold is the sum of the signatures of the two parts; an orientation-reversing involution negates the form, so the two parts are isotropic and placed in perfect duality by the form, and the signature of the manifold vanishes. Poincaré duality is an isomorphism of equivariant modules and preserves the parts for an orientation-preserving involution and exchanges them for an orientation-reversing one. The form twisted by the involution, $\langle x,y\rangle = \mathfrak{Q}(x,T_*y)$, is $\varepsilon$-Hermitian with $\varepsilon = (-1)^m\deg(T)$ and compatible with the involution up to the degree sign; its classification is the algebraic input to the equivariant signature, and the vanishing of the signature under an orientation-reversing involution is its simplest geometric consequence.
 
 ## Summary of Notation
 
@@ -154,11 +154,11 @@ An involution of a manifold induces an involution of the homology and of the coh
 | $H_*^{-} = \ker(T_*+\mathrm{id})$ | the anti-fixed part; the sign-isotypic component of the module |
 | $P_\pm = \tfrac12(1\pm T_*)$ | the projections onto the two parts |
 | $\deg(T) = \pm1$ | the orientation character; $T_*[M] = \deg(T)[M]$ |
-| $Q(x,y) = \langle x\smile y,[M]\rangle$ | the intersection form of a closed orientable $2m$-manifold |
-| $Q(T_*x,T_*y) = \deg(T)Q(x,y)$ | the compatibility of the form with the involution |
+| $\mathfrak{Q}(x,y) = \langle x\smile y,[M]\rangle$ | the intersection form of a closed orientable $2m$-manifold |
+| $\mathfrak{Q}(T_*x,T_*y) = \deg(T)\mathfrak{Q}(x,y)$ | the compatibility of the form with the involution |
 | $Q = Q^{+}\oplus Q^{-}$, $\sigma(M) = \sigma(M^{+})+\sigma(M^{-})$ | the orientation-preserving case |
-| $Q(H_m^{\pm},H_m^{\pm}) = 0$, $\sigma(M) = 0$ | the orientation-reversing case |
-| $\langle x,y\rangle = Q(x,T_*y)$ | the Hermitian (or anti-Hermitian) form twisted by the involution |
+| $\mathfrak{Q}(H_m^{\pm},H_m^{\pm}) = 0$, $\sigma(M) = 0$ | the orientation-reversing case |
+| $\langle x,y\rangle = \mathfrak{Q}(x,T_*y)$ | the Hermitian (or anti-Hermitian) form twisted by the involution |
 | $k_{\mathrm{sgn}}$ | the coefficient module on which $\mathbb{Z}/2$ acts by $-1$ |
 
 ## Further Reading

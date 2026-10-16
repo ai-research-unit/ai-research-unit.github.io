@@ -89,10 +89,10 @@ In the simply connected case with $n = 2$: if $X$ is simply connected then $h_2 
 **Definition.** A map $p : E \to B$ has the **homotopy lifting property (HLP)** with respect to a space $X$ if, for every commutative square
 
 $$
-X \times \{0\} \xrightarrow{\ \tilde h_0\ } E, \qquad X \times I \xrightarrow{\ h\ } B, \qquad h(\cdot,0) = p \circ \tilde h_0,
+X \times \{0\} \xrightarrow{\ h_0^{\mathrm{lift}}\ } E, \qquad X \times I \xrightarrow{\ h\ } B, \qquad h(\cdot,0) = p \circ h_0^{\mathrm{lift}},
 $$
 
-there is a lift $\tilde h : X \times I \to E$ with $p \circ \tilde h = h$ and $\tilde h(\cdot,0) = \tilde h_0$. A **Serre fibration** is a map with the HLP for all CW complexes $X$; a **Hurewicz fibration** is a map with the HLP for all spaces $X$. The **fibre** over $b \in B$ is $F_b = p^{-1}(b)$. A fibration is a **fibre bundle** when in addition it is locally trivial, in the sense of *Fibre Bundles, Connections and Curvature*.
+there is a lift $h^{\mathrm{lift}} : X \times I \to E$ with $p \circ h^{\mathrm{lift}} = h$ and $h^{\mathrm{lift}}(\cdot,0) = h_0^{\mathrm{lift}}$. A **Serre fibration** is a map with the HLP for all CW complexes $X$; a **Hurewicz fibration** is a map with the HLP for all spaces $X$. The **fibre** over $b \in B$ is $F_b = p^{-1}(b)$. A fibration is a **fibre bundle** when in addition it is locally trivial, in the sense of *Fibre Bundles, Connections and Curvature*.
 
 **Proposition.** A covering map is a Hurewicz fibration with discrete fibres; every fibre bundle over a paracompact base is a Hurewicz fibration.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general quaternionic product of the biquaternion algebra $\mathbb{B}$ is $\tilde P^{\natural}\tilde Q$, the plain product with the first factor read through the quaternion conjugation ${}^{\natural}$; it is $\mathbb{C}$-bilinear, it has $e_0$ as a unit on the left only, and it is the quaternionic one of the four general products the $\mathbb{C}$-space carries (*The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Introduction to the General Quaternionic Algebra of Biquaternions*). A bilinear product over a field in which $2$ is invertible splits canonically into the sum of a symmetric and an antisymmetric part, the splitting induced by the exchange of the two arguments of the product (*The Symmetric and Antisymmetric Parts of an Algebra Product*). The **antisymmetric quaternionic multiplication** is the antisymmetric part of this product,
+The general quaternionic product of the biquaternion algebra $\mathbb{B}$ is $\tilde P^{\natural}\tilde Q$, the plain product with the first factor read through the quaternion conjugation ${}^{\natural}$; it is $\mathbb{C}$-bilinear, it has $e_0$ as a unit on the left only, and it is the quaternionic one of the four general products the $\mathbb{C}$-space carries (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, *Introduction to the General Quaternionic Algebra*). A bilinear product over a field in which $2$ is invertible splits canonically into the sum of a symmetric and an antisymmetric part, the splitting induced by the exchange of the two arguments of the product (*The Symmetric and Antisymmetric Parts of an Algebra Product*). The **antisymmetric quaternionic multiplication** is the antisymmetric part of this product,
 
 $$
 \tilde P \diamond \tilde Q = \tfrac12\bigl(\tilde P^{\natural}\tilde Q - \tilde Q^{\natural}\tilde P\bigr) = P_0\vec Q - Q_0\vec P - \vec P\times\vec Q ,
@@ -23,7 +23,7 @@ roots — is the subject of five companion articles of the Common Theory, and th
 invariant forms, the remarkable subspaces, the operators and the two matrix models are the
 subjects of the articles that follow; none of them is developed here.
 
-The general construction of the two parts of a product is *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the split here is the one instance of it that belongs to the quaternionic row of the catalogue. The two halves reconstruct the parent, $\tilde P^{\natural}\tilde Q = \tilde P\star\tilde Q + \tilde P\diamond\tilde Q$, with the symmetric half the operation of *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*; that article records the same split from its own side, and the two introductions are the two readings of one computation. The algebra, its basis and its conjugation are *Introduction to the General Quaternionic Algebra of Biquaternions* and *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the remarkable subspaces named below are *Introduction to the Remarkable Subspaces*. The article is algebraic throughout: no notion of the analysis or of the geometry of the chapter is used.
+The general construction of the two parts of a product is *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the split here is the one instance of it that belongs to the quaternionic row of the catalogue. The two halves reconstruct the parent, $\tilde P^{\natural}\tilde Q = \tilde P\star\tilde Q + \tilde P\diamond\tilde Q$, with the symmetric half the operation of *Introduction to the Symmetric Quaternionic Algebra*; that article records the same split from its own side, and the two introductions are the two readings of one computation. The algebra, its basis and its conjugation are *Introduction to the General Quaternionic Algebra* and *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the remarkable subspaces named below are *Introduction to the Remarkable Subspaces*. The article is algebraic throughout: no notion of the analysis or of the geometry of the chapter is used.
 
 ## The Operation
 
@@ -50,9 +50,9 @@ $$
 
 In particular the scalar part of the value is zero and the value lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation is $\mathbb{C}$-bilinear, alternating, and its diagonal vanishes.
 
-*Proof.* The value of the parent product is $\tilde P^{\natural}\tilde Q = \bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0 + P_0\vec Q - Q_0\vec P - \vec P\times\vec Q$ (*The 12 Products of the Biquaternion Complex Space*). The reverse product is obtained by exchanging the arguments, and its value is $[Q_0P_0+(\vec Q,\vec P)]e_0 + Q_0\vec P - P_0\vec Q - \vec Q\times\vec P$. The scalar part is symmetric in the pair and cancels in the difference; the vector part is antisymmetric in the pair, because the cross product reverses and the mixed terms exchange with a sign, and half the difference of the two vector parts is $\tfrac12\bigl[2(P_0\vec Q-Q_0\vec P) - 2\,\vec P\times\vec Q\bigr] = P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$, since $\vec Q\times\vec P = -\vec P\times\vec Q$. Bilinearity is inherited from the product term by term with the coefficients in $\mathbb{C}$; alternation is the antisymmetry of the definition, $\tilde Q\diamond\tilde P = -\tilde P\diamond\tilde Q$; and the diagonal vanishes at $\tilde P=\tilde Q$, where the two terms of the definition cancel. Equivalently, the scalar part of the explicit form is zero, so the value never leaves $\mathrm{Vect}(\mathbb{B})$; and at $\tilde P = \tilde Q$ the three terms of the explicit form give $P_0\vec P-P_0\vec P-\vec P\times\vec P = 0$.
+*Proof.* The value of the parent product is $\tilde P^{\natural}\tilde Q = \bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0 + P_0\vec Q - Q_0\vec P - \vec P\times\vec Q$ (*The 12 Products of the Biquaternioid Complex Space*). The reverse product is obtained by exchanging the arguments, and its value is $[Q_0P_0+(\vec Q,\vec P)]e_0 + Q_0\vec P - P_0\vec Q - \vec Q\times\vec P$. The scalar part is symmetric in the pair and cancels in the difference; the vector part is antisymmetric in the pair, because the cross product reverses and the mixed terms exchange with a sign, and half the difference of the two vector parts is $\tfrac12\bigl[2(P_0\vec Q-Q_0\vec P) - 2\,\vec P\times\vec Q\bigr] = P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$, since $\vec Q\times\vec P = -\vec P\times\vec Q$. Bilinearity is inherited from the product term by term with the coefficients in $\mathbb{C}$; alternation is the antisymmetry of the definition, $\tilde Q\diamond\tilde P = -\tilde P\diamond\tilde Q$; and the diagonal vanishes at $\tilde P=\tilde Q$, where the two terms of the definition cancel. Equivalently, the scalar part of the explicit form is zero, so the value never leaves $\mathrm{Vect}(\mathbb{B})$; and at $\tilde P = \tilde Q$ the three terms of the explicit form give $P_0\vec P-P_0\vec P-\vec P\times\vec P = 0$.
 
-**Remark (what the operation omits).** The scalar part of the parent product, the quaternionic form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, is exactly the symmetric half. It carries the two terms that the exchange leaves fixed, the square terms $P_0Q_0$ and the scalar product $(\vec P,\vec Q)$ of the vectors, and the operation of this block is what remains of the parent product once that half is removed. The omission is total: the block never produces a central element, and every value has zero scalar part.
+**Remark (what the operation omits).** The scalar part of the parent product, the quaternionic form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, is exactly the symmetric half. It carries the two terms that the exchange leaves fixed, the square terms $P_0Q_0$ and the scalar product $(\vec P,\vec Q)$ of the vectors, and the operation of this block is what remains of the parent product once that half is removed. The omission is total: the block never produces a central element, and every value has zero scalar part.
 
 **Proposition (the two reconstructing identities).** For all $\tilde P,\tilde Q$,
 
@@ -108,15 +108,15 @@ The sixteen entries are therefore of four kinds: the zero diagonal of four entri
 
 **Proposition (the square vanishes identically).** For every element $\tilde X$,
 $$
-q(\tilde X)=\tilde X\diamond\tilde X=0 ,
+\mathfrak{Q}(\tilde X)=\tilde X\diamond\tilde X=0 ,
 $$
 and the polarisation of the square vanishes as well,
 $$
-\beta(\tilde P,\tilde Q)=\tfrac12\bigl(q(\tilde P+\tilde Q)-q(\tilde P)-q(\tilde Q)\bigr)=0 ,
+\beta(\tilde P,\tilde Q)=\tfrac12\bigl(\mathfrak{Q}(\tilde P+\tilde Q)-\mathfrak{Q}(\tilde P)-\mathfrak{Q}(\tilde Q)\bigr)=0 ,
 \qquad\text{equivalently}\qquad
 \tilde P\diamond\tilde Q+\tilde Q\diamond\tilde P=0 .
 $$
-The operation is an alternating bilinear form, its quadratic form $q$ is the zero form, and it is
+The operation is an alternating bilinear form, its quadratic form $\mathfrak{Q}$ is the zero form, and it is
 not recovered from its square.
 
 *Proof.* The vanishing of the square is the alternation of the proposition on the explicit form,
@@ -128,11 +128,11 @@ equal arguments carry no information about it, and the operation is read from th
 itself and not from its square.
 
 **Remark (the contrast with the symmetric half).** The square of the symmetric half is the
-quaternion form, $\tilde P\star\tilde P=N(\tilde P,\tilde P)e_0$, and its polarisation recovers
-the operation, $2\tilde P\star\tilde Q=2N(\tilde P,\tilde Q)e_0$; the square of the block is
+quaternion form, $\tilde P\star\tilde P=\langle\tilde P,\tilde P\rangle_{\natural}e_0$, and its polarisation recovers
+the operation, $2\tilde P\star\tilde Q=2\langle\tilde P,\tilde Q\rangle_{\natural}e_0$; the square of the block is
 zero and its polarisation is zero, so that half carries its quadratic form and this half carries
 none. The two readings are the two sides of the same split: the parent product's square is the
-central value $N(\tilde P)e_0$, the symmetric half keeps the scalar part and the block keeps the
+central value $\langle\tilde P\rangle_{\natural}e_0$, the symmetric half keeps the scalar part and the block keeps the
 rest, and with the scalar part removed the square is lost.
 
 **Remark (the element theory that follows).** The vanishing square is the single fact on which
@@ -143,9 +143,9 @@ divisor, with itself as the annihilating partner (*Zero Divisors of the Antisymm
 Quaternionic Algebra*); the origin is the only idempotent (*Square Roots of One and the
 Idempotents of the Antisymmetric Quaternionic Algebra*); and the block has no root of $-1$ and no
 root of $+1$, while its roots of $0$ are all the nonzero elements
-(*Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*,
-*Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* and
-*Square Roots of a General Element in the Antisymmetric Quaternionic Algebra*). Each of the five
+(*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
+*Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and
+*Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). Each of the five
 is a reading of the display $\tilde X\diamond\tilde X=0$.
 
 ## The Commutator and the Two Halves
@@ -183,7 +183,7 @@ $$
 \tilde P^{\natural}\tilde Q = \tilde P\star\tilde Q + \tilde P\diamond\tilde Q ,
 $$
 
-with $\mathrm{GQA}$ the parent product, $\mathrm{SQA}$ its symmetric half and $\mathrm{AQA}$ the operation of this block, one of the four antisymmetric parts of the twelve (*The 12 Products of the Biquaternion Complex Space*). The other antisymmetric parts are $\mathrm{APA}$, the cross product of the plain row, and $\mathrm{APS}$ and $\mathrm{AQS}$, the two antisymmetric parts of the sesquilinear rows.
+with $\mathrm{GQA}$ the parent product, $\mathrm{SQA}$ its symmetric half and $\mathrm{AQA}$ the operation of this block, one of the four antisymmetric parts of the twelve (*The 12 Products of the Biquaternioid Complex Space*). The other antisymmetric parts are $\mathrm{APA}$, the cross product of the plain row, and $\mathrm{APS}$ and $\mathrm{AQS}$, the two antisymmetric parts of the sesquilinear rows.
 
 **Remark (what is not shared).** The operation is $\mathbb{C}$-bilinear, alternating and vector valued, and it is not one of the two operations of the catalogue that satisfy the identity of their kind, $\mathrm{APA}$ and $\mathrm{SPA}$. It is not $\mathrm{APA}$, which is the cross product on the vector subspace and which satisfies the Jacobi identity; it is not $\mathrm{AQS}$, which differs from it in the slot and in the class; and it is not $\mathrm{SQA}$, which is its symmetric counterpart and produces central values. On the real part of the space the block does not collapse into the cross product: the mixed terms $P_0\vec Q-Q_0\vec P$ are real there and do not vanish, so the operation remains distinct from $\mathrm{APA}$ and from every other of the twelve.
 
@@ -214,10 +214,10 @@ The antisymmetric quaternionic multiplication is the antisymmetric part of the g
 ## Further Reading
 
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the splitting that produces the operation and for the Lie-admissible algebras
-- *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the other half of the split and the same reconstruction from its own side
-- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the parent product, its left unit and its operators
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the placement of the block among the twelve operations
-- *Norm and Invertibility in the Antisymmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-algebra.md`), *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), *Annihilators of the Antisymmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.md`), *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-algebra.md`) and *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.md`), for the element theory that the vanishing square forces
+- *Introduction to the Symmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the other half of the split and the same reconstruction from its own side
+- *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the parent product, its left unit and its operators
+- *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the placement of the block among the twelve operations
+- *Norm and Invertibility in the Antisymmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-algebra.md`), *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`) and *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the element theory that the vanishing square forces
 - *The Specificities of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-antisymmetric-quaternionic-algebra.md`), for the criterion of the block, the projector class and the comparison of the twelve in one table
 - *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`), for the cyclic sum, its explicit formula and the associator criterion
 - *The Associator and the Ternary Product of the Quaternionic Product* (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the associator of the parent product, the defect of the block

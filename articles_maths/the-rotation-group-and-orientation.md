@@ -42,25 +42,25 @@ The statement is the algebraic reason the orientation sign exists: an orientatio
 Over a general field the order of $\mathbb{R}$ is unavailable, and the two orientations are not distinguished by a sign in $F$. What survives is the **parity** of an automorphism, defined by $\det T = \pm 1$. For an isometry this parity is always defined, because $\det(T)^2 = 1$ for a non-degenerate form; let
 
 $$
-\operatorname{O}^+(V, q) = \{T \in \operatorname{O}(V, q) : \det T = 1\}, \qquad \operatorname{O}^-(V, q) = \{T \in \operatorname{O}(V, q) : \det T = -1\}.
+\operatorname{O}^+(V, \mathfrak{Q}) = \{T \in \operatorname{O}(V, \mathfrak{Q}) : \det T = 1\}, \qquad \operatorname{O}^-(V, \mathfrak{Q}) = \{T \in \operatorname{O}(V, \mathfrak{Q}) : \det T = -1\}.
 $$
 
 Over a field of characteristic not $2$ these are the two cosets of the special orthogonal group, and they have intrinsic meaning as the even and odd reflection lengths by the Cartan–Dieudonné parity of *Isometries and Orthogonal Transformations*. Over $\mathbb{R}$ and for a definite form they are the two connected components of the orthogonal group, and the identification with orientation is the statement that the determinant is positive exactly on the orientation-preserving isometries.
 
 ### The Volume Element of a Form
 
-An orientation of $V$ and a non-degenerate symmetric form $q$ together determine a volume element. If $\mathcal{B} = (e_1, \ldots, e_n)$ is positively oriented and $G$ is the Gram matrix of $B$ in $\mathcal{B}$, then
+An orientation of $V$ and a non-degenerate symmetric form $m$ together determine a volume element. If $\mathcal{B} = (e_1, \ldots, e_n)$ is positively oriented and $G$ is the Gram matrix of $B$ in $\mathcal{B}$, then
 
 $$
-\omega_q = \sqrt{|\det G|}\; e_1 \wedge \cdots \wedge e_n
+\omega_m = \sqrt{|\det G|}\; e_1 \wedge \cdots \wedge e_n
 $$
 
-is independent of the positively oriented basis chosen and changes sign under a change of orientation; it scales by $t^{n/2}$ when $q$ is replaced by $tq$. The construction is the algebraic form of the statement that a positive definite form on an oriented space determines a volume element, up to the choice of a positive scale.
+is independent of the positively oriented basis chosen and changes sign under a change of orientation; it scales by $t^{n/2}$ when $m$ is replaced by $tq$. The construction is the algebraic form of the statement that a positive definite form on an oriented space determines a volume element, up to the choice of a positive scale.
 
 For a non-degenerate form and a general field the algebraic substitute for the volume element is the **discriminant**,
 
 $$
-\Delta(q) = \det G \in F^\times/(F^\times)^2,
+\Delta(m) = \det G \in F^\times/(F^\times)^2,
 $$
 
 which is independent of the basis, as in *Bilinear Forms*. The determinant changes by the square of the change-of-basis determinant, so the discriminant is insensitive to orientation: the two orientations of $V$ give the same discriminant.
@@ -70,24 +70,24 @@ which is independent of the basis, as in *Bilinear Forms*. The determinant chang
 For a form of dimension $n$ the **signed discriminant** is
 
 $$
-d(q) = (-1)^{n(n-1)/2}\,\Delta(q).
+d(m) = (-1)^{n(n-1)/2}\,\Delta(m).
 $$
 
-It differs from the discriminant by the factor $(-1)^{n(n-1)/2}$, which is the sign of the reversal of the $n$ factors in the product $e_1 \cdots e_n$ of a basis; equivalently, in the Clifford algebra of $q$ the square of the volume element is the scalar $d(q)$, as recorded. It is the more convenient invariant for the Witt theory, where it is shown to descend to a homomorphism on the fundamental ideal. Here we record only its behaviour, together with that of $\Delta$, under the two operations of the category:
+It differs from the discriminant by the factor $(-1)^{n(n-1)/2}$, which is the sign of the reversal of the $n$ factors in the product $e_1 \cdots e_n$ of a basis; equivalently, in the Clifford algebra of $m$ the square of the volume element is the scalar $d(m)$, as recorded. It is the more convenient invariant for the Witt theory, where it is shown to descend to a homomorphism on the fundamental ideal. Here we record only its behaviour, together with that of $\Delta$, under the two operations of the category:
 
 $$
-\Delta(q \perp q') = \Delta(q)\,\Delta(q'), \qquad \Delta(\langle a\rangle) = a, \qquad \Delta(cq) = c^{\,n}\,\Delta(q),
+\Delta(m \perp m') = \Delta(m)\,\Delta(m'), \qquad \Delta(\langle a\rangle) = a, \qquad \Delta(cq) = c^{\,n}\,\Delta(m),
 $$
 
 $$
-d(q \perp q') = (-1)^{n_1n_2}\,d(q)\,d(q'), \qquad d(\langle a\rangle) = a, \qquad d(cq) = c^{\,n}\,d(q),
+d(m \perp m') = (-1)^{n_1n_2}\,d(m)\,d(m'), \qquad d(\langle a\rangle) = a, \qquad d(cq) = c^{\,n}\,d(m),
 $$
 
-where $n_1, n_2$ are the dimensions of $q, q'$ and $n = n_1 + n_2$. The sign $(-1)^{n_1n_2}$ in the first relation for $d$ follows from $n(n-1)/2 = n_1(n_1-1)/2 + n_2(n_2-1)/2 + n_1n_2$. The sign in the definition of $d(q)$ is chosen so that $d$ is unchanged by adding a hyperbolic plane $\langle 1, -1\rangle$, whose discriminant is $-1$, whose dimension is $2$, and whose signed discriminant is therefore $(-1)^1(-1) = 1$.
+where $n_1, n_2$ are the dimensions of $m, m'$ and $n = n_1 + n_2$. The sign $(-1)^{n_1n_2}$ in the first relation for $d$ follows from $n(n-1)/2 = n_1(n_1-1)/2 + n_2(n_2-1)/2 + n_1n_2$. The sign in the definition of $d(m)$ is chosen so that $d$ is unchanged by adding a hyperbolic plane $\langle 1, -1\rangle$, whose discriminant is $-1$, whose dimension is $2$, and whose signed discriminant is therefore $(-1)^1(-1) = 1$.
 
 ### Reflections Reverse, Rotations Preserve
 
-**Proposition.** Let $V$ be oriented and let $q$ be non-degenerate. Then the reflections $\tau_v$ are orientation-reversing and every element of $\operatorname{SO}(V, q)$ is orientation-preserving. A product of $k$ reflections is orientation-preserving exactly when $k$ is even.
+**Proposition.** Let $V$ be oriented and let $m$ be non-degenerate. Then the reflections $\tau_v$ are orientation-reversing and every element of $\operatorname{SO}(V, \mathfrak{Q})$ is orientation-preserving. A product of $k$ reflections is orientation-preserving exactly when $k$ is even.
 
 **Proof.** Each reflection has $\det \tau_v = -1$ by *Isometries and Orthogonal Transformations*, and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$. Over $\mathbb{R}$ this determinant is the orientation sign.
 
@@ -97,19 +97,19 @@ The proposition is the bridge between the two descriptions of the special orthog
 
 ### Definition
 
-**Definition.** The **rotation group** of a non-degenerate quadratic space $(V, q)$ is
+**Definition.** The **rotation group** of a non-degenerate quadratic space $(V, \mathfrak{Q})$ is
 
 $$
-\operatorname{SO}(V, q) = \{T \in \operatorname{O}(V, q) : \det T = 1\}.
+\operatorname{SO}(V, \mathfrak{Q}) = \{T \in \operatorname{O}(V, \mathfrak{Q}) : \det T = 1\}.
 $$
 
-It is a normal subgroup of $\operatorname{O}(V, q)$ of index two over a field of characteristic not $2$, and over $\mathbb{R}$ with a definite form it is the connected component of the identity, the kernel of the determinant being the complement of the orientation-reversing component.
+It is a normal subgroup of $\operatorname{O}(V, \mathfrak{Q})$ of index two over a field of characteristic not $2$, and over $\mathbb{R}$ with a definite form it is the connected component of the identity, the kernel of the determinant being the complement of the orientation-reversing component.
 
-**Example (the indefinite real case).** For the form $q(x, y) = x^2 - y^2$ on $\mathbb{R}^2$ the group $\operatorname{O}(1, 1)$ has four components, each homeomorphic to a line, and $\operatorname{SO}(1, 1)$ has two; the determinant does not detect them. The four-component structure of an indefinite orthogonal group is the reason the definite case is the one in which orientation and connected component coincide.
+**Example (the indefinite real case).** For the form $\mathfrak{Q}(x, y) = x^2 - y^2$ on $\mathbb{R}^2$ the group $\operatorname{O}(1, 1)$ has four components, each homeomorphic to a line, and $\operatorname{SO}(1, 1)$ has two; the determinant does not detect them. The four-component structure of an indefinite orthogonal group is the reason the definite case is the one in which orientation and connected component coincide.
 
 ### Rotations and Reflections
 
-By the Cartan–Dieudonné theorem every isometry is a product of reflections, and by the parity statement the elements of $\operatorname{SO}(V, q)$ are exactly the products of an even number of reflections. Two reflections generate a rotation, and the composition rule for two reflections in the plane is the composition rule for angles, developed below. The decomposition is not unique: a rotation of the plane is a product of two reflections in many ways, related by the freedom in choosing the first mirror.
+By the Cartan–Dieudonné theorem every isometry is a product of reflections, and by the parity statement the elements of $\operatorname{SO}(V, \mathfrak{Q})$ are exactly the products of an even number of reflections. Two reflections generate a rotation, and the composition rule for two reflections in the plane is the composition rule for angles, developed below. The decomposition is not unique: a rotation of the plane is a product of two reflections in many ways, related by the freedom in choosing the first mirror.
 
 **Proposition.** Let $\tau_u$ and $\tau_v$ be reflections in non-isotropic vectors $u, v$ that span a non-degenerate plane. Then $\tau_u \tau_v$ acts as the identity on the hyperplane $u^\perp \cap v^\perp$ and is a rotation on the plane $\operatorname{span}\{u, v\}$.
 
@@ -119,10 +119,10 @@ By the Cartan–Dieudonné theorem every isometry is a product of reflections, a
 
 ### The Euclidean Structure
 
-Let $V$ be a finite-dimensional real space with a **positive definite** form $q$, so that $B$ is an inner product. The pair $(V, B)$ is a Euclidean space, and the orthogonal group $\operatorname{O}(V, B)$ is the group of Euclidean isometries fixing the origin, a compact Lie group. The positive definite forms on $V$ are in bijection with the inner products, and each determines a norm
+Let $V$ be a finite-dimensional real space with a **positive definite** form $m$, so that $B$ is an inner product. The pair $(V, B)$ is a Euclidean space, and the orthogonal group $\operatorname{O}(V, B)$ is the group of Euclidean isometries fixing the origin, a compact Lie group. The positive definite forms on $V$ are in bijection with the inner products, and each determines a norm
 
 $$
-\|v\| = \sqrt{q(v)}.
+\|v\| = \sqrt{\mathfrak{Q}(v)}.
 $$
 
 **Theorem (Cauchy–Schwarz).** For all $u, v$ in a Euclidean space,
@@ -133,7 +133,7 @@ $$
 
 with equality if and only if $u$ and $v$ are linearly dependent.
 
-**Proof.** For all real $t$ the form is positive definite, so $q(u + tv) = q(u) + 2tB(u, v) + t^2 q(v)$ is non-negative. If $q(v) \neq 0$, the discriminant of this quadratic in $t$ is $4B(u, v)^2 - 4q(u)q(v) \leq 0$, giving the inequality; equality forces a double root, that is $u + tv = 0$ for some $t$. If $q(v) = 0$ then $v = 0$ and the statement is trivial.
+**Proof.** For all real $t$ the form is positive definite, so $\mathfrak{Q}(u + tv) = \mathfrak{Q}(u) + 2tB(u, v) + t^2 \mathfrak{Q}(v)$ is non-negative. If $\mathfrak{Q}(v) \neq 0$, the discriminant of this quadratic in $t$ is $4B(u, v)^2 - 4q(u)\mathfrak{Q}(v) \leq 0$, giving the inequality; equality forces a double root, that is $u + tv = 0$ for some $t$. If $\mathfrak{Q}(v) = 0$ then $v = 0$ and the statement is trivial.
 
 ### Angles
 
@@ -143,13 +143,13 @@ $$
 \cos\theta = \frac{B(u, v)}{\|u\|\,\|v\|}.
 $$
 
-The number $\theta$ is the **angle** between $u$ and $v$. It satisfies $\theta = 0$ exactly when $u, v$ are positive multiples, $\theta = \pi/2$ exactly when they are orthogonal, and $\theta = \pi$ exactly when they are negative multiples. Rescaling the form, $q \mapsto cq$ with $c > 0$, replaces $B$ by $cB$ and $\|v\|$ by $\sqrt{c}\,\|v\|$, so the quotient is unchanged: the angle depends only on the conformal class of the inner product.
+The number $\theta$ is the **angle** between $u$ and $v$. It satisfies $\theta = 0$ exactly when $u, v$ are positive multiples, $\theta = \pi/2$ exactly when they are orthogonal, and $\theta = \pi$ exactly when they are negative multiples. Rescaling the form, $m \mapsto cq$ with $c > 0$, replaces $B$ by $cB$ and $\|v\|$ by $\sqrt{c}\,\|v\|$, so the quotient is unchanged: the angle depends only on the conformal class of the inner product.
 
-A **rotation** of a Euclidean space is an element of $\operatorname{SO}(V, q)$. Rotations preserve the norm and the angle, so they are the angle-preserving linear maps, and the rotation group is the group of orientation-preserving Euclidean isometries of the space.
+A **rotation** of a Euclidean space is an element of $\operatorname{SO}(V, \mathfrak{Q})$. Rotations preserve the norm and the angle, so they are the angle-preserving linear maps, and the rotation group is the group of orientation-preserving Euclidean isometries of the space.
 
 ### The Plane Case: $SO(2)$
 
-Let $V = \mathbb{R}^2$ with the standard positive definite form $q(x, y) = x^2 + y^2$. Orientation is fixed by the standard basis, and the rotation group consists of the matrices
+Let $V = \mathbb{R}^2$ with the standard positive definite form $\mathfrak{Q}(x, y) = x^2 + y^2$. Orientation is fixed by the standard basis, and the rotation group consists of the matrices
 
 $$
 R(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}, \qquad \theta \in \mathbb{R}.
@@ -201,15 +201,15 @@ so $s$ conjugates the cyclic group to itself, and $H$ is the dihedral group of o
 
 Euler's theorem generalises: a rotation of a definite space of any dimension is a product of planar rotations in mutually orthogonal planes.
 
-**Theorem (normal form of a rotation).** Let $V$ be a finite-dimensional real space with a positive definite form $q$ and let $T \in \operatorname{SO}(V, q)$. Then there is an orthonormal basis of $V$ in which $T$ is the block diagonal matrix
+**Theorem (normal form of a rotation).** Let $V$ be a finite-dimensional real space with a positive definite form $m$ and let $T \in \operatorname{SO}(V, \mathfrak{Q})$. Then there is an orthonormal basis of $V$ in which $T$ is the block diagonal matrix
 
 $$
 T = \operatorname{diag}\bigl(R(\theta_1), \ldots, R(\theta_m), \underbrace{1, \ldots, 1}_{n - 2m}\bigr), \qquad 0 < \theta_1 \leq \cdots \leq \theta_m \leq \pi,
 $$
 
-where $2m = n - \dim\ker(T - \mathrm{id})$ is the number of eigenvalues of $T$, counted with multiplicity, that differ from $1$; equivalently $2m$ is the codimension of the fixed subspace. In particular $T$ fixes pointwise a subspace of dimension $n - 2m$, and the multiset $\{\theta_1, \ldots, \theta_m\}$ is determined by $T$: the angles $\theta_j < \pi$ are read off from the non-real eigenvalues $e^{\pm i\theta_j}$, and $\theta_j = \pi$ corresponds to a pair of eigenvalues $-1$.
+where $2m = n - \dim\ker(T - \mathrm{id})$ is the number of eigenvalues of $T$, counted with multiplicity, that differ from $1$; equivalently $2m$ is the codimension of the fixed subspace. In particular $T$ fixes pointwise a subspace of dimension $n - 2m$, and the multiset $\{\theta_1, \ldots, \theta_m\}$ is determined by $T$: the angles $\theta_j < \pi$ are read off from the non-real eigenvalues $\exp(\pm i\theta_j)$, and $\theta_j = \pi$ corresponds to a pair of eigenvalues $-1$.
 
-**Proof.** Because $T$ preserves $q$, every complex eigenvalue has modulus one: if $Tv = \lambda v$ with $v \neq 0$ then $q(v) = q(Tv) = |\lambda|^2 q(v)$, and $q(v) > 0$ gives $|\lambda| = 1$. The characteristic polynomial is real, so the non-real eigenvalues occur in conjugate pairs $\lambda, \bar\lambda$ with $\lambda \neq \bar\lambda$, and each such pair has $\lambda = \cos\theta + i\sin\theta$ for a unique $\theta \in (0, \pi)$. If $z = u + iv$ is an eigenvector for $\lambda$, then $u, v$ are real, linearly independent vectors of equal norm with $B(u, v) = 0$, and separating real and imaginary parts of $Tz = \lambda z$ gives
+**Proof.** Because $T$ preserves $m$, every complex eigenvalue has modulus one: if $Tv = \lambda v$ with $v \neq 0$ then $\mathfrak{Q}(v) = \mathfrak{Q}(Tv) = |\lambda|^2 \mathfrak{Q}(v)$, and $\mathfrak{Q}(v) > 0$ gives $|\lambda| = 1$. The characteristic polynomial is real, so the non-real eigenvalues occur in conjugate pairs $\lambda, \bar\lambda$ with $\lambda \neq \bar\lambda$, and each such pair has $\lambda = \cos\theta + i\sin\theta$ for a unique $\theta \in (0, \pi)$. If $z = u + iv$ is an eigenvector for $\lambda$, then $u, v$ are real, linearly independent vectors of equal norm with $B(u, v) = 0$, and separating real and imaginary parts of $Tz = \lambda z$ gives
 
 $$
 Tu = (\cos\theta)\,u - (\sin\theta)\,v, \qquad Tv = (\sin\theta)\,u + (\cos\theta)\,v,
@@ -221,13 +221,13 @@ $$
 B(v_\lambda, w_\mu) = B(Tv_\lambda, Tw_\mu) = \lambda\mu\,B(v_\lambda, w_\mu)
 $$
 
-so $B(v_\lambda, w_\mu) = 0$ whenever $\lambda\mu \neq 1$. For two distinct conjugate pairs the eigenvalues are $\lambda = e^{i\theta}$ and $\mu = e^{i\theta'}$ with $\theta \neq \theta'$ in $(0, \pi)$, so $\lambda\bar\mu = e^{i(\theta - \theta')} \neq 1$ and therefore $B(v_\lambda, \bar w_\mu) = 0$; conjugating this real-bilinear relation gives $B(\bar v_\lambda, w_\mu) = 0$ as well, and the two identities together give $B(x, y) = 0$ for every $x$ in the real plane of the pair $\lambda$ and every $y$ in the real plane of the pair $\mu$, since those planes are spanned by the real and imaginary parts of $v_\lambda$ and $w_\mu$. The same argument with $\mu = \pm 1$ shows that the planes are orthogonal to the eigenspaces $V_1$ and $V_{-1}$. The space therefore decomposes as an orthogonal direct sum of the planes $W$ and of the two eigenspaces, and the restriction of the positive definite form to each summand is again positive definite. Choose orthonormal bases: on $V_1$ the map is the identity, on $V_{-1}$ it is minus the identity, and on each plane $W$ it is the planar rotation $R(\theta_j)$. The determinant of $T$ is the product of the determinants of these restrictions, hence equals $(-1)^{k}$ where $k = \dim V_{-1}$; since $\det T = 1$ the number $k$ is even, and pairing the basis vectors of $V_{-1}$ exhibits that eigenspace as a sum of blocks $R(\pi)$. The multiset of angles is read off from the eigenvalues of $T$, which are invariants of $T$.
+so $B(v_\lambda, w_\mu) = 0$ whenever $\lambda\mu \neq 1$. For two distinct conjugate pairs the eigenvalues are $\lambda = \exp(i\theta)$ and $\mu = \exp(i\theta')$ with $\theta \neq \theta'$ in $(0, \pi)$, so $\lambda\bar\mu = \exp(i(\theta - \theta')) \neq 1$ and therefore $B(v_\lambda, \bar w_\mu) = 0$; conjugating this real-bilinear relation gives $B(\bar v_\lambda, w_\mu) = 0$ as well, and the two identities together give $B(x, y) = 0$ for every $x$ in the real plane of the pair $\lambda$ and every $y$ in the real plane of the pair $\mu$, since those planes are spanned by the real and imaginary parts of $v_\lambda$ and $w_\mu$. The same argument with $\mu = \pm 1$ shows that the planes are orthogonal to the eigenspaces $V_1$ and $V_{-1}$. The space therefore decomposes as an orthogonal direct sum of the planes $W$ and of the two eigenspaces, and the restriction of the positive definite form to each summand is again positive definite. Choose orthonormal bases: on $V_1$ the map is the identity, on $V_{-1}$ it is minus the identity, and on each plane $W$ it is the planar rotation $R(\theta_j)$. The determinant of $T$ is the product of the determinants of these restrictions, hence equals $(-1)^{k}$ where $k = \dim V_{-1}$; since $\det T = 1$ the number $k$ is even, and pairing the basis vectors of $V_{-1}$ exhibits that eigenspace as a sum of blocks $R(\pi)$. The multiset of angles is read off from the eigenvalues of $T$, which are invariants of $T$.
 
-**Remark (the change of basis is orthogonal).** The display is a statement about conjugation in $\operatorname{O}(V, q)$ and not in $\operatorname{SO}(V, q)$. The multiset of angles determines the conjugacy class in $\operatorname{O}(V, q)$, but the class in $\operatorname{SO}(V, q)$ can be finer. The sign of a block is part of this finer data: $R(\theta)$ and $R(-\theta)$ have the same angle multiset $\{\theta\}$ and are conjugate in $\operatorname{O}(2)$, by the reflection $\operatorname{diag}(1, -1)$, but not in $\operatorname{SO}(2)$ for $0 < \theta < \pi$, because that group is abelian and the two matrices differ. In dimension four the same phenomenon separates the two isoclinic families, which have the common angle multiset $\{\theta, \theta\}$; that classification is *Four-Dimensional Rotations*.
+**Remark (the change of basis is orthogonal).** The display is a statement about conjugation in $\operatorname{O}(V, \mathfrak{Q})$ and not in $\operatorname{SO}(V, \mathfrak{Q})$. The multiset of angles determines the conjugacy class in $\operatorname{O}(V, \mathfrak{Q})$, but the class in $\operatorname{SO}(V, \mathfrak{Q})$ can be finer. The sign of a block is part of this finer data: $R(\theta)$ and $R(-\theta)$ have the same angle multiset $\{\theta\}$ and are conjugate in $\operatorname{O}(2)$, by the reflection $\operatorname{diag}(1, -1)$, but not in $\operatorname{SO}(2)$ for $0 < \theta < \pi$, because that group is abelian and the two matrices differ. In dimension four the same phenomenon separates the two isoclinic families, which have the common angle multiset $\{\theta, \theta\}$; that classification is *Four-Dimensional Rotations*.
 
-**Corollary.** For a positive definite form the group $\operatorname{SO}(V, q)$ is path-connected, and $\operatorname{O}(V, q)$ has exactly two components, the cosets of $\operatorname{SO}(V, q)$.
+**Corollary.** For a positive definite form the group $\operatorname{SO}(V, \mathfrak{Q})$ is path-connected, and $\operatorname{O}(V, \mathfrak{Q})$ has exactly two components, the cosets of $\operatorname{SO}(V, \mathfrak{Q})$.
 
-**Proof.** Choose an orthonormal basis exhibiting the normal form. If the change of basis has determinant $1$, then $T$ is the displayed matrix. If it has determinant $-1$, replace one basis vector of one of the rotation planes by its negative: this reverses the sign of the corresponding block, changes the determinant of the change of basis to $1$, and leaves the angle multiset unaltered, so $T$ is conjugate in $\operatorname{SO}(V, q)$ to $\operatorname{diag}(R(\pm\theta_1), \ldots, R(\pm\theta_m), 1, \ldots, 1)$ with one sign for each block, the case $m = 0$ being $T = \mathrm{id}$. The path $t \mapsto \operatorname{diag}(R(\pm t\theta_1), \ldots, R(\pm t\theta_m), 1, \ldots, 1)$ for $t \in [0, 1]$ then runs from the identity to $T$ inside $\operatorname{SO}(V, q)$. Hence $\operatorname{SO}(V, q)$ is path-connected, and since a reflection exists for $n \geq 1$ the determinant is surjective onto $\{\pm 1\}$ and $\operatorname{O}(V, q)$ has two components.
+**Proof.** Choose an orthonormal basis exhibiting the normal form. If the change of basis has determinant $1$, then $T$ is the displayed matrix. If it has determinant $-1$, replace one basis vector of one of the rotation planes by its negative: this reverses the sign of the corresponding block, changes the determinant of the change of basis to $1$, and leaves the angle multiset unaltered, so $T$ is conjugate in $\operatorname{SO}(V, \mathfrak{Q})$ to $\operatorname{diag}(R(\pm\theta_1), \ldots, R(\pm\theta_m), 1, \ldots, 1)$ with one sign for each block, the case $m = 0$ being $T = \mathrm{id}$. The path $t \mapsto \operatorname{diag}(R(\pm t\theta_1), \ldots, R(\pm t\theta_m), 1, \ldots, 1)$ for $t \in [0, 1]$ then runs from the identity to $T$ inside $\operatorname{SO}(V, \mathfrak{Q})$. Hence $\operatorname{SO}(V, \mathfrak{Q})$ is path-connected, and since a reflection exists for $n \geq 1$ the determinant is surjective onto $\{\pm 1\}$ and $\operatorname{O}(V, \mathfrak{Q})$ has two components.
 
 **Remark.** In dimension three the theorem reads $m = 1$ and $n - 2m = 1$: a rotation fixes a line pointwise and rotates the orthogonal plane, which is Euler's theorem below. In dimension four the two possibilities $m = 1$ and $m = 2$ occur; the rotations with $m = 2$ have no fixed vector, which is the case mentioned in the next section. The normal form is the definite case of the Cartan decomposition of an orthogonal group, and the indefinite analogue has hyperbolic blocks $H(u)$ in place of the circular blocks $R(\theta)$.
 
@@ -245,7 +245,7 @@ $$
 T^T(T - I) = I - T^T = -(T - I)^T, \qquad \det\bigl(T^T(T - I)\bigr) = \det(T - I) = (-1)^{3}\det(T - I) = -\det(T - I),
 $$
 
-using $\det T = 1$ and $\det T^T = 1$ for the left side and $n = 3$ for the right. Hence $2\det(T - I) = 0$, and since $2 \neq 0$ in $\mathbb{R}$, $\det(T - I) = 0$: there is a nonzero $v$ with $Tv = v$. If $v$ is chosen with $q(v) = 1$, then $T$ preserves $v^\perp$ (as in *Isometries and Orthogonal Transformations*), and the restriction of $T$ to the plane $v^\perp$ is an element of $\operatorname{SO}(2)$, hence a rotation through some angle.
+using $\det T = 1$ and $\det T^T = 1$ for the left side and $n = 3$ for the right. Hence $2\det(T - I) = 0$, and since $2 \neq 0$ in $\mathbb{R}$, $\det(T - I) = 0$: there is a nonzero $v$ with $Tv = v$. If $v$ is chosen with $\mathfrak{Q}(v) = 1$, then $T$ preserves $v^\perp$ (as in *Isometries and Orthogonal Transformations*), and the restriction of $T$ to the plane $v^\perp$ is an element of $\operatorname{SO}(2)$, hence a rotation through some angle.
 
 **Remark.** The argument uses that the dimension is odd; in even dimension a rotation need not have an axis. A rotation of $\mathbb{R}^4$ can be a product of two independent planar rotations with no fixed vector, which is the geometric content of the double-cover phenomena treated with the quaternions in *Quaternion Rotations and Reflections* and classified in *Four-Dimensional Rotations*.
 
@@ -263,15 +263,15 @@ where $\times$ denotes the vector product and $B$ the Euclidean inner product. F
 
 ## Summary
 
-An **orientation** of a finite-dimensional real space is one of the two equivalence classes of ordered bases under positive-determinant change of basis; an automorphism is orientation-preserving when its determinant is positive. Over a general field the intrinsic substitute for the orientation sign is the **parity** $\det T = \pm 1$, which for an isometry of a non-degenerate form is always available: the isometries split into the two cosets $\operatorname{O}^+(V, q)$ and $\operatorname{O}^-(V, q)$ of the rotation group. An orientation together with a non-degenerate form $q$ gives a **volume element** $\sqrt{|\det G|}\,e_1 \wedge \cdots \wedge e_n$, while the algebraic invariant of the form alone is the **discriminant** $\Delta(q) = \det G \in F^\times/(F^\times)^2$ and the **signed discriminant** $d(q) = (-1)^{n(n-1)/2}\Delta(q)$.
+An **orientation** of a finite-dimensional real space is one of the two equivalence classes of ordered bases under positive-determinant change of basis; an automorphism is orientation-preserving when its determinant is positive. Over a general field the intrinsic substitute for the orientation sign is the **parity** $\det T = \pm 1$, which for an isometry of a non-degenerate form is always available: the isometries split into the two cosets $\operatorname{O}^+(V, \mathfrak{Q})$ and $\operatorname{O}^-(V, \mathfrak{Q})$ of the rotation group. An orientation together with a non-degenerate form $m$ gives a **volume element** $\sqrt{|\det G|}\,e_1 \wedge \cdots \wedge e_n$, while the algebraic invariant of the form alone is the **discriminant** $\Delta(m) = \det G \in F^\times/(F^\times)^2$ and the **signed discriminant** $d(m) = (-1)^{n(n-1)/2}\Delta(m)$.
 
-The **rotation group** $\operatorname{SO}(V, q)$ is the kernel of the determinant on $\operatorname{O}(V, q)$; it is normal of index two over a field of characteristic not $2$, and over $\mathbb{R}$ with a definite form it is the identity component. Its elements are exactly the products of an even number of reflections: each reflection reverses orientation and has determinant $-1$, so a product of $k$ reflections is a rotation precisely when $k$ is even. Two reflections generate a rotation acting on the plane spanned by their vectors.
+The **rotation group** $\operatorname{SO}(V, \mathfrak{Q})$ is the kernel of the determinant on $\operatorname{O}(V, \mathfrak{Q})$; it is normal of index two over a field of characteristic not $2$, and over $\mathbb{R}$ with a definite form it is the identity component. Its elements are exactly the products of an even number of reflections: each reflection reverses orientation and has determinant $-1$, so a product of $k$ reflections is a rotation precisely when $k$ is even. Two reflections generate a rotation acting on the plane spanned by their vectors.
 
 In the **definite real case** the form is an inner product, Cauchy–Schwarz bounds the quotient $B(u, v)/(\|u\|\,\|v\|)$ by $1$ in absolute value, and the **angle** $\theta \in [0, \pi]$ is defined by its cosine; rotations are the angle-preserving orientation-preserving isometries. For the plane, $\operatorname{SO}(2)$ is the circle group $\mathbb{R}/2\pi\mathbb{Z}$, abelian and parametrised by $R(\theta)$, and every rotation is a product of two reflections with the angle doubled. For space, **Euler's theorem** says every $T \in \operatorname{SO}(3)$ has an axis, a fixed line on which the rotation acts trivially, and is a rotation through an angle on the orthogonal plane; the axis-angle form is Rodrigues' formula.
 
 Orientation has a coordinate-free form: an orientation is a choice of one of the two components of the determinant line $\Lambda^n V \setminus \{0\}$, and the induced map $\Lambda^n T$ is the multiplication by $\det T$, which measures the parity of an automorphism over any field of characteristic not two.
 
-**Normal form of a rotation.** For a positive definite form every $T \in \operatorname{SO}(V, q)$ is, in a suitable orthonormal basis, a diagonal sequence of planar rotation blocks $R(\theta_1), \ldots, R(\theta_m)$ with $0 < \theta_j \leq \pi$ and $n - 2m$ entries $1$, the angles being determined by $T$; the codimension $2m$ block is the fixed subspace. The change of basis lies in $\operatorname{O}(V, q)$, and the multiset of angles determines the class there; the class in $\operatorname{SO}(V, q)$ can be finer, as $R(\theta)$ and $R(-\theta)$ in the plane and the two isoclinic families in dimension four show. Consequently $\operatorname{SO}(V, q)$ is path-connected and $\operatorname{O}(V, q)$ has exactly two components; in dimension three the normal form is Euler's theorem. The finite subgroups of $\operatorname{SO}(2)$ are the cyclic groups $\langle R(2\pi/m)\rangle$, and every finite subgroup of $\operatorname{O}(2)$ is cyclic or dihedral.
+**Normal form of a rotation.** For a positive definite form every $T \in \operatorname{SO}(V, \mathfrak{Q})$ is, in a suitable orthonormal basis, a diagonal sequence of planar rotation blocks $R(\theta_1), \ldots, R(\theta_m)$ with $0 < \theta_j \leq \pi$ and $n - 2m$ entries $1$, the angles being determined by $T$; the codimension $2m$ block is the fixed subspace. The change of basis lies in $\operatorname{O}(V, \mathfrak{Q})$, and the multiset of angles determines the class there; the class in $\operatorname{SO}(V, \mathfrak{Q})$ can be finer, as $R(\theta)$ and $R(-\theta)$ in the plane and the two isoclinic families in dimension four show. Consequently $\operatorname{SO}(V, \mathfrak{Q})$ is path-connected and $\operatorname{O}(V, \mathfrak{Q})$ has exactly two components; in dimension three the normal form is Euler's theorem. The finite subgroups of $\operatorname{SO}(2)$ are the cyclic groups $\langle R(2\pi/m)\rangle$, and every finite subgroup of $\operatorname{O}(2)$ is cyclic or dihedral.
 
 ## Summary of Notation
 
@@ -279,19 +279,19 @@ Orientation has a coordinate-free form: an orientation is a choice of one of the
 |---|---|
 | $F$ | Field, of characteristic not $2$ unless stated |
 | $V$ | Finite-dimensional $F$-space, or real space in the definite case |
-| $q$ | Non-degenerate quadratic form on $V$ |
-| $B$ | Polar form of $q$, $q(v) = B(v, v)$ |
+| $m$ | Non-degenerate quadratic form on $V$ |
+| $B$ | Polar form of $m$, $\mathfrak{Q}(v) = B(v, v)$ |
 | $G$ | Gram matrix of $B$ in a basis |
 | $\det T$ | Determinant of a linear map |
 | $GL(V)$, $GL^+(V)$ | General linear group, orientation-preserving automorphisms |
-| $\operatorname{O}(V, q)$ | Orthogonal group of $q$ |
-| $\operatorname{O}^\pm(V, q)$ | Cosets of determinant $\pm 1$ |
-| $\operatorname{SO}(V, q)$ | Rotation group, isometries of determinant $+1$ |
+| $\operatorname{O}(V, \mathfrak{Q})$ | Orthogonal group of $m$ |
+| $\operatorname{O}^\pm(V, \mathfrak{Q})$ | Cosets of determinant $\pm 1$ |
+| $\operatorname{SO}(V, \mathfrak{Q})$ | Rotation group, isometries of determinant $+1$ |
 | $\tau_v$ | Reflection in the non-isotropic vector $v$ |
-| $\omega_q$ | Volume element $\sqrt{|\det G|}\,e_1 \wedge \cdots \wedge e_n$ |
-| $\Delta(q)$ | Discriminant $\det G \in F^\times/(F^\times)^2$ |
-| $d(q)$ | Signed discriminant $(-1)^{n(n-1)/2}\Delta(q)$ |
-| $\|v\| = \sqrt{q(v)}$ | Norm in the definite real case |
+| $\omega_m$ | Volume element $\sqrt{|\det G|}\,e_1 \wedge \cdots \wedge e_n$ |
+| $\Delta(m)$ | Discriminant $\det G \in F^\times/(F^\times)^2$ |
+| $d(m)$ | Signed discriminant $(-1)^{n(n-1)/2}\Delta(m)$ |
+| $\|v\| = \sqrt{\mathfrak{Q}(v)}$ | Norm in the definite real case |
 | $\theta$ | Angle between two vectors, or angle of a rotation |
 | $R(\theta)$, $S(\theta)$ | Rotation and reflection matrices of the plane |
 | $H(u)$ | Hyperbolic rotation of the plane $x^2 - y^2$ |

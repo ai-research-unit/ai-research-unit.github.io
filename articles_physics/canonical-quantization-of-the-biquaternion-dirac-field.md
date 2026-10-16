@@ -73,30 +73,30 @@ Written on the spinor module, the Lagrangian and the canonical momentum are the 
 
 ## Equal-Time Anticommutation Relations
 
-Quantization promotes the classical field and its momentum to operators $\hat{\psi}$, $\hat{\pi}$ and imposes equal-time brackets. For the Dirac field the brackets are **anticommutators**:
+Quantization promotes the classical field and its momentum to operators $\psi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}}$ and imposes equal-time brackets. For the Dirac field the brackets are **anticommutators**:
 
 $$
-\{\hat{\psi}_a(\vec x,t),\hat{\psi}_b^\dagger(\vec y,t)\}=\delta_{ab}\,\delta^{(3)}(\vec x-\vec y),
+\{\psi^{\mathrm{fop}}_a(\vec x,t),\psi^{\mathrm{fop}}_b^\dagger(\vec y,t)\}=\delta_{ab}\,\delta^{(3)}(\vec x-\vec y),
 $$
 
 $$
-\{\hat{\psi}_a(\vec x,t),\hat{\psi}_b(\vec y,t)\}=0,\qquad
-\{\hat{\psi}_a^\dagger(\vec x,t),\hat{\psi}_b^\dagger(\vec y,t)\}=0,
+\{\psi^{\mathrm{fop}}_a(\vec x,t),\psi^{\mathrm{fop}}_b(\vec y,t)\}=0,\qquad
+\{\psi^{\mathrm{fop}}_a^\dagger(\vec x,t),\psi^{\mathrm{fop}}_b^\dagger(\vec y,t)\}=0,
 $$
 
-where $a,b$ are spinor indices. In terms of the conjugate momentum $\hat{\pi}=i\hat{\psi}^\dagger$, the first relation reads
+where $a,b$ are spinor indices. In terms of the conjugate momentum $\pi^{\mathrm{fop}}=i\psi^{\mathrm{fop}\dagger}$, the first relation reads
 
 $$
-\{\hat{\psi}_a(\vec x,t),\hat{\pi}_b(\vec y,t)\}=i\,\delta_{ab}\,\delta^{(3)}(\vec x-\vec y),
+\{\psi^{\mathrm{fop}}_a(\vec x,t),\pi^{\mathrm{fop}}_b(\vec y,t)\}=i\,\delta_{ab}\,\delta^{(3)}(\vec x-\vec y),
 $$
 
-which is the fermionic analogue of the canonical relation $[\hat{\phi},\hat{\pi}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
+which is the fermionic analogue of the canonical relation $[\phi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
 
 The choice of anticommutator over commutator is forced, and three reasons can be given at the level of this article. They are stated here because they are operative in the construction; the full spin–statistics theorem is the subject of a planned companion article and is not developed here.
 
-**1. Boundedness of the energy.** As shown in the section on the Hamiltonian, the mode expansion of the energy contains a negative-frequency contribution proportional to $\hat{b}\,\hat{b}^\dagger$. If the modes commuted, $\hat{b}\hat{b}^\dagger=\hat{b}^\dagger\hat{b}+e_0$, and the energy would be $H=\sum_{\vec p,r}E_{\vec p}(\hat{a}^\dagger\hat{a}-\hat{b}^\dagger\hat{b})+\text{const}$, unbounded below: adding antiparticles would lower the energy without limit, and no stable vacuum would exist. If the modes anticommute, $\hat{b}\hat{b}^\dagger=e_0-\hat{b}^\dagger\hat{b}$, and the same expression becomes a positive sum plus a c-number. The anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea.
+**1. Boundedness of the energy.** As shown in the section on the Hamiltonian, the mode expansion of the energy contains a negative-frequency contribution proportional to $b^{\mathrm{fop}}\,b^{\mathrm{fop}\dagger}$. If the modes commuted, $b^{\mathrm{fop}}b^{\mathrm{fop}\dagger}=b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}+e_0$, and the energy would be $H=\sum_{\vec p,r}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})+\text{const}$, unbounded below: adding antiparticles would lower the energy without limit, and no stable vacuum would exist. If the modes anticommute, $b^{\mathrm{fop}}b^{\mathrm{fop}\dagger}=e_0-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}$, and the same expression becomes a positive sum plus a c-number. The anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea.
 
-**2. Microcausality.** For a field of spin $\tfrac12$, the commutator $[\hat{\psi}(x),\bar{\hat{\psi}}(y)]$ does **not** vanish for spacelike separated $x,y$, so quantizing with commutators would correlate measurements in causally disconnected regions. The anticommutator $\{\hat{\psi}(x),\bar{\hat{\psi}}(y)\}$ does vanish there, and it is the quantity that must be local for a fermion field. This is the content of Pauli's 1940 argument: the requirement that the fields commute or anticommute outside the light cone, together with the transformation properties of the spinor representation, selects anticommutation for half-integer spin.
+**2. Microcausality.** For a field of spin $\tfrac12$, the commutator $[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]$ does **not** vanish for spacelike separated $x,y$, so quantizing with commutators would correlate measurements in causally disconnected regions. The anticommutator $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}$ does vanish there, and it is the quantity that must be local for a fermion field. This is the content of Pauli's 1940 argument: the requirement that the fields commute or anticommute outside the light cone, together with the transformation properties of the spinor representation, selects anticommutation for half-integer spin.
 
 **3. Positivity of the inner product.** Quantizing a half-integer-spin field with commutators produces states of negative norm; the anticommutator is what makes the Fock inner product positive-definite. This is the Hilbert-space form of the same obstruction.
 
@@ -104,7 +104,7 @@ The three reasons are aspects of one theorem. We note only that they all point t
 
 ## Field Expansion in the Plane-Wave Solutions
 
-The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the spinors $u^{(r)}(\vec p)e^{-ip\cdot x}$ and the negative-frequency branch spanned by $v^{(r)}(\vec p)e^{+ip\cdot x}$, with $r=1,2$,
+The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the spinors $w^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency branch spanned by $v^{(r)}(\vec p)\exp(+ip\cdot x)$, with $r=1,2$,
 
 $$
 E_{\vec p}=+\sqrt{\vec p^2+m^2},\qquad p\cdot x=E_{\vec p}t-\vec p\cdot\vec x,
@@ -113,33 +113,33 @@ $$
 and with the covariant normalizations and spin sums established there:
 
 $$
-\bar u^{(r)}u^{(s)}=2m\,\delta^{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},\quad u^{(r){}^{*}}u^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\vec p}\,\delta^{rs},
+\bar w^{(r)}w^{(s)}=2m\,\delta^{rs},\quad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},\quad w^{(r){}^{*}}w^{(s)}=v^{(r){}^{*}}v^{(s)}=2E_{\vec p}\,\delta^{rs},
 $$
 
 $$
-\sum_{r=1}^{2}u^{(r)}(\vec p)\bar u^{(r)}(\vec p)=\not p+m,\qquad
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\not p+m,\qquad
 \sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\not p-m .
 $$
 
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
 
 $$
-\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[\hat a_r(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
-+\hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big].
+\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big].
 $$
 
 The field and its adjoint,
 
 $$
-\hat{\psi}^\dagger(y)=\int\!\frac{d^3q}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec q}}}
-\sum_{s=1}^{2}\Big[\hat a_s^\dagger(\vec q)\,u^{(s){}^{*}}(\vec q)\,e^{+iq\cdot y}
-+\hat b_s(\vec q)\,v^{(s){}^{*}}(\vec q)\,e^{-iq\cdot y}\Big],
+\psi^{\mathrm{fop}\dagger}(y)=\int\!\frac{d^3k}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec k}}}
+\sum_{s=1}^{2}\Big[a^{\mathrm{fop}\dagger}_s(\vec k)\,w^{(s){}^{*}}(\vec k)\,\exp(+ik\cdot y)
++b^{\mathrm{fop}}_s(\vec k)\,v^{(s){}^{*}}(\vec k)\,\exp(-ik\cdot y)\Big],
 $$
 
-together define the operator-valued field. The **annihilation** operators $\hat a_r(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $\hat b_r^\dagger(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
+together define the operator-valued field. The **annihilation** operators $a^{\mathrm{fop}}_r(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b^{\mathrm{fop}\dagger}_r(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\psi^{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
 
 $$
 \tilde k\tilde k^{\natural}=-\frac{m^2c^2}{\hbar^2},
@@ -152,46 +152,46 @@ and the polarization equation is the algebraic form of the momentum-space equati
 For the equal-time relations of Section 3 to hold, the mode operators must satisfy
 
 $$
-\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec q),
+\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k),
 $$
 
 $$
-\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec q),
+\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k),
 $$
 
 with **all other anticommutators vanishing**:
 
 $$
-\{\hat a_r(\vec p),\hat a_s(\vec q)\}=0,\qquad
-\{\hat b_r(\vec p),\hat b_s(\vec q)\}=0,\qquad
-\{\hat a_r(\vec p),\hat b_s(\vec q)\}=0,\qquad
-\{\hat a_r(\vec p),\hat b_s^\dagger(\vec q)\}=0 .
+\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}}_s(\vec k)\}=0,\qquad
+\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_s(\vec k)\}=0,\qquad
+\{a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_s(\vec k)\}=0,\qquad
+\{a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec k)\}=0 .
 $$
 
 These are the standard anticommutation relations of the free Dirac field, in the continuum normalization inherited from the parent article's covariant spinors.
 
 ### Consistency with the Equal-Time Relations
 
-It is worth verifying that these relations reproduce $\{\hat\psi_a(\vec x,t),\hat\psi_b^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(\vec x-\vec y)$, because the verification exposes a point of care about the relative phases of the two branches. Inserting the expansions and using the mode algebra gives, at equal times,
+It is worth verifying that these relations reproduce $\{\psi^{\mathrm{fop}}_a(\vec x,t),\psi^{\mathrm{fop}}_b^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(\vec x-\vec y)$, because the verification exposes a point of care about the relative phases of the two branches. Inserting the expansions and using the mode algebra gives, at equal times,
 
 $$
-\{\hat{\psi}_a(\vec x,t),\hat{\psi}_b^\dagger(\vec y,t)\}
+\{\psi^{\mathrm{fop}}_a(\vec x,t),\psi^{\mathrm{fop}}_b^\dagger(\vec y,t)\}
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}
-\Big[\sum_r u^{(r)}_a u^{(r){}^{*}}_b\,e^{+i\vec p\cdot\vec\Delta}
-+\sum_r v^{(r)}_a v^{(r){}^{*}}_b\,e^{-i\vec p\cdot\vec\Delta}\Big],
+\Big[\sum_r w^{(r)}_a w^{(r){}^{*}}_b\,\exp(+i\vec p\cdot\vec\Delta)
++\sum_r v^{(r)}_a v^{(r){}^{*}}_b\,\exp(-i\vec p\cdot\vec\Delta)\Big],
 $$
 
-where $\vec\Delta=\vec x-\vec y$. The two phases are **opposite**: the positive-frequency term carries $e^{+i\vec p\cdot\vec\Delta}$ and the negative-frequency term $e^{-i\vec p\cdot\vec\Delta}$. From the spin sums one obtains the two useful combinations
+where $\vec\Delta=\vec x-\vec y$. The two phases are **opposite**: the positive-frequency term carries $\exp(+i\vec p\cdot\vec\Delta)$ and the negative-frequency term $\exp(-i\vec p\cdot\vec\Delta)$. From the spin sums one obtains the two useful combinations
 
 $$
-\sum_r u^{(r)}u^{(r){}^{*}}=E_{\vec p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p,\qquad
+\sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p,\qquad
 \sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p,
 $$
 
 so that, with $\theta=\vec p\cdot\vec\Delta$,
 
 $$
-\sum_r\Big[u^{(r)}u^{(r){}^{*}}e^{+i\theta}+v^{(r)}v^{(r){}^{*}}e^{-i\theta}\Big]
+\sum_r\Big[w^{(r)}w^{(r){}^{*}}\exp(+i\theta)+v^{(r)}v^{(r){}^{*}}\exp(-i\theta)\Big]
 =E_{\vec p}\cos\theta\,I_4\cdot 2
 +2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p
 +2im\sin\theta\,\gamma^0 .
@@ -204,53 +204,53 @@ The first term is even in $\vec p$ and gives $2E_{\vec p}\delta^{(3)}(\vec\Delta
 The mode algebra generates the Fock space. Define the vacuum $|0\rangle$ by
 
 $$
-\hat a_r(\vec p)|0\rangle=0=\hat b_r(\vec p)|0\rangle \quad\text{for all } r,\ \vec p ,
+a^{\mathrm{fop}}_r(\vec p)|0\rangle=0=b^{\mathrm{fop}}_r(\vec p)|0\rangle \quad\text{for all } r,\ \vec p ,
 $$
 
-and build states by acting with the creation operators. The one-particle states are $\hat a_r^\dagger(\vec p)|0\rangle$ and the one-antiparticle states $\hat b_r^\dagger(\vec p)|0\rangle$. At fixed $\vec p$, the positive-frequency solutions span a two-dimensional complex space, and the full one-particle space is the $L^2$ completion of that solution space; the many-particle space is its **antisymmetric tensor algebra** (exterior algebra), because the mode operators anticommute. In particular,
+and build states by acting with the creation operators. The one-particle states are $a^{\mathrm{fop}\dagger}_r(\vec p)|0\rangle$ and the one-antiparticle states $b^{\mathrm{fop}\dagger}_r(\vec p)|0\rangle$. At fixed $\vec p$, the positive-frequency solutions span a two-dimensional complex space, and the full one-particle space is the $L^2$ completion of that solution space; the many-particle space is its **antisymmetric tensor algebra** (exterior algebra), because the mode operators anticommute. In particular,
 
 $$
-\hat a_r^\dagger(\vec p)\hat a_s^\dagger(\vec q)|0\rangle
-=-\,\hat a_s^\dagger(\vec q)\hat a_r^\dagger(\vec p)|0\rangle,
+a^{\mathrm{fop}\dagger}_r(\vec p)a^{\mathrm{fop}\dagger}_s(\vec k)|0\rangle
+=-\,a^{\mathrm{fop}\dagger}_s(\vec k)a^{\mathrm{fop}\dagger}_r(\vec p)|0\rangle,
 $$
 
 so the two-particle state is antisymmetric, and
 
 $$
-\big(\hat a_r^\dagger(\vec p)\big)^2=0,\qquad \big(\hat b_r^\dagger(\vec p)\big)^2=0,
+\big(a^{\mathrm{fop}\dagger}_r(\vec p)\big)^2=0,\qquad \big(b^{\mathrm{fop}\dagger}_r(\vec p)\big)^2=0,
 $$
 
-which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{\hat a_r(\vec p),\hat a_s(\vec q)\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of the spinor-module solution space — is the subject of a planned companion article; here we need only the mode algebra.
+which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}}_s(\vec k)\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of the spinor-module solution space — is the subject of a planned companion article; here we need only the mode algebra.
 
 ## The Hamiltonian and the Normal-Ordering Constant
 
 The conserved energy of the free Dirac field is
 
 $$
-\hat H=\int d^3x\;\hat{\psi}^\dagger\big(-i\gamma^0\boldsymbol\gamma\cdot\nabla+m\gamma^0\big)\hat{\psi}
-=\int d^3x\;\bar{\hat\psi}\big(-i\boldsymbol\gamma\cdot\nabla+m\big)\hat{\psi},
+H=\int d^3x\;\psi^{\mathrm{fop}\dagger}\big(-i\gamma^0\boldsymbol\gamma\cdot\nabla+m\gamma^0\big)\psi^{\mathrm{fop}}
+=\int d^3x\;\bar{\psi^{\mathrm{fop}}}\big(-i\boldsymbol\gamma\cdot\nabla+m\big)\psi^{\mathrm{fop}},
 $$
 
 the integrand being the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform of the Lagrangian of the preceding section. Substituting the mode expansion and using the parent article's normalizations and orthogonality gives the standard result
 
 $$
-\hat H=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
-\Big(\hat a_r^\dagger(\vec p)\hat a_r(\vec p)
--\hat b_r(\vec p)\hat b_r^\dagger(\vec p)\Big).
+H=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
+\Big(a^{\mathrm{fop}\dagger}_r(\vec p)a^{\mathrm{fop}}_r(\vec p)
+-b^{\mathrm{fop}}_r(\vec p)b^{\mathrm{fop}\dagger}_r(\vec p)\Big).
 $$
 
-The negative sign on the second term is the operator trace of the Dirac sea. Using the anticommutator $\hat b_r(\vec p)\hat b_r^\dagger(\vec p)=e_0-\hat b_r^\dagger(\vec p)\hat b_r(\vec p)$ (more precisely, its continuum form) this becomes
+The negative sign on the second term is the operator trace of the Dirac sea. Using the anticommutator $b^{\mathrm{fop}}_r(\vec p)b^{\mathrm{fop}\dagger}_r(\vec p)=e_0-b^{\mathrm{fop}\dagger}_r(\vec p)b^{\mathrm{fop}}_r(\vec p)$ (more precisely, its continuum form) this becomes
 
 $$
-\hat H=\;:\!\hat H\!:\;+\;E_0,
+H=\;:\!H\!:\;+\;E_0,
 $$
 
 where the **normal-ordered Hamiltonian** is
 
 $$
-:\!\hat H\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
-\Big(\hat a_r^\dagger(\vec p)\hat a_r(\vec p)
-+\hat b_r^\dagger(\vec p)\hat b_r(\vec p)\Big),
+:\!H\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}
+\Big(a^{\mathrm{fop}\dagger}_r(\vec p)a^{\mathrm{fop}}_r(\vec p)
++b^{\mathrm{fop}\dagger}_r(\vec p)b^{\mathrm{fop}}_r(\vec p)\Big),
 $$
 
 manifestly non-negative, and the **normal-ordering constant** is the c-number
@@ -260,20 +260,20 @@ E_0=-\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,(2\pi)^3\delta^{(3)}(\mathbf 0)\,E_{\v
 =-\,2V\!\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}.
 $$
 
-Here $V$ is the volume in which the theory is placed, and $(2\pi)^3\delta^{(3)}(\mathbf 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive half-integer zero-point energy of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!\hat b_r(\vec p)\hat b_r^\dagger(\vec q)\!:=-\hat b_r^\dagger(\vec q)\hat b_r(\vec p)$. With this definition the constant term in $\hat H$ is removed by construction.
+Here $V$ is the volume in which the theory is placed, and $(2\pi)^3\delta^{(3)}(\mathbf 0)=V$ is the standard transcription of the continuum normalization. The constant is negative and quartically divergent, in contrast with the positive half-integer zero-point energy of a scalar field, and it is a c-number: it commutes with everything and does not affect the operator equations of motion. Normal ordering is the convention that removes it. For fermions the normal-ordering prescription moves every creation operator to the left of every annihilation operator and inserts a minus sign for each transposition of two fermion operators; for example $:\!b^{\mathrm{fop}}_r(\vec p)b^{\mathrm{fop}\dagger}_r(\vec k)\!:=-b^{\mathrm{fop}\dagger}_r(\vec k)b^{\mathrm{fop}}_r(\vec p)$. With this definition the constant term in $H$ is removed by construction.
 
 The same mode algebra gives the other conserved charges. The normal-ordered four-momentum is
 
 $$
-:\!\hat P^\mu\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p^\mu
-\Big(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r\Big),\qquad p^\mu=(E_{\vec p},\vec p),
+:\!P^{\mathrm{fop}\mu}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p^\mu
+\Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p^\mu=(E_{\vec p},\vec p),
 $$
 
 and the normal-ordered electric charge, from $j^\mu=\bar\psi\gamma^\mu\psi$ with $j^0=\psi^\dagger\psi$, is
 
 $$
-:\!\hat Q\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
-\Big(\hat a_r^\dagger\hat a_r-\hat b_r^\dagger\hat b_r\Big),
+:\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
+\Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r-b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),
 $$
 
 so that particles and antiparticles carry opposite charge, as they must. All three expressions are the standard ones; their derivation uses only the parent article's spinor relations.
@@ -287,8 +287,8 @@ The anticommutation relations are not a convention; they are selected. The three
 Equivalently, the operator algebra generated by the modes is **$\mathbb{Z}/2$-graded** by fermion parity. Define
 
 $$
-(-1)^F\,\hat a_r(\vec p)\,(-1)^F=-\hat a_r(\vec p),\qquad
-(-1)^F\,\hat b_r(\vec p)\,(-1)^F=-\hat b_r(\vec p),\qquad
+(-1)^F\,a^{\mathrm{fop}}_r(\vec p)\,(-1)^F=-a^{\mathrm{fop}}_r(\vec p),\qquad
+(-1)^F\,b^{\mathrm{fop}}_r(\vec p)\,(-1)^F=-b^{\mathrm{fop}}_r(\vec p),\qquad
 (-1)^F|0\rangle=|0\rangle ,
 $$
 
@@ -298,16 +298,16 @@ This article deliberately stops here. The full **spin–statistics theorem** —
 
 ## Relation to the KMS Thermal Framework
 
-The KMS article characterizes thermal equilibrium by an analytic property of correlation functions. For operators $\hat A,\hat B$ in the algebra and a state $\omega_\beta$ at inverse temperature $\beta=\hbar/(k_BT)$, the thermal correlation function is
+The KMS article characterizes thermal equilibrium by an analytic property of correlation functions. For operators $A,B$ in the algebra and a state $\omega_\beta$ at inverse temperature $\beta=\hbar/(k_BT)$, the thermal correlation function is
 
 $$
-F_{\hat A\hat B}(t)=\omega_\beta\big(\hat A\,\alpha_t(\hat B)\big),
+F_{A B}(t)=\omega_\beta\big(A\,\alpha_t(B)\big),
 $$
 
-with $\alpha_t$ the Heisenberg evolution; the KMS condition states that $F_{\hat A\hat B}(t)$ extends analytically to the strip $0<\mathrm{Im}(t)<\beta$ and satisfies
+with $\alpha_t$ the Heisenberg evolution; the KMS condition states that $F_{A B}(t)$ extends analytically to the strip $0<\mathrm{Im}(t)<\beta$ and satisfies
 
 $$
-F_{\hat A\hat B}(t+i\beta)=F_{\hat B\hat A}(-t)
+F_{A B}(t+i\beta)=F_{B A}(-t)
 $$
 
 on its boundary. The KMS article observes that this boundary relation is the same for bosons and fermions, that the statistics enters instead through the algebra of the operators, and that a fermionic interpretation requires a $\mathbb{Z}/2$ grading together with the rule that fermionic operators anticommute — a rule the biquaternion algebra does not automatically supply.
@@ -315,27 +315,27 @@ on its boundary. The KMS article observes that this boundary relation is the sam
 The quantized Dirac field supplies exactly that rule. The mode algebra of Section 5 is graded by $(-1)^F$, and the fermionic operators anticommute. The KMS condition can therefore be stated for the thermal state
 
 $$
-\omega_\beta(\,\cdot\,)=\frac{1}{Z}\,\mathrm{Tr}\big(e^{-\beta(\hat H-\mu\hat Q)}\,\cdot\,\big)
+\omega_\beta(\,\cdot\,)=\frac{1}{Z}\,\mathrm{Tr}\big(\exp(-\beta(H-\mu Ϙ^{\mathrm{fop}}))\,\cdot\,\big)
 $$
 
-on the Fock space, with $\hat H$ and $\hat Q$ the normal-ordered operators above, $Z$ the partition function, and $\mu$ the chemical potential. The point of contact with the KMS article is sharp and elementary. Take a single mode of energy $E$ and normalize it so that $\{\hat a,\hat a^\dagger\}=e_0$. In the Heisenberg picture $\alpha_t(\hat a)=e^{-iEt}\hat a$ and $\alpha_t(\hat a^\dagger)=e^{+iEt}\hat a^\dagger$, so
+on the Fock space, with $H$ and $Ϙ^{\mathrm{fop}}$ the normal-ordered operators above, $Z$ the partition function, and $\mu$ the chemical potential. The point of contact with the KMS article is sharp and elementary. Take a single mode of energy $E$ and normalize it so that $\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_0$. In the Heisenberg picture $\alpha_t(a^{\mathrm{fop}})=\exp(-iEt)a^{\mathrm{fop}}$ and $\alpha_t(a^{\mathrm{fop}\dagger})=\exp(+iEt)a^{\mathrm{fop}\dagger}$, so
 
 $$
-F_{\hat a\hat a^\dagger}(t)=e^{+iEt}\,\omega_\beta(\hat a\hat a^\dagger),\qquad
-F_{\hat a^\dagger\hat a}(-t)=e^{+iEt}\,\omega_\beta(\hat a^\dagger\hat a).
+F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t)=\exp(+iEt)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}),\qquad
+F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t)=\exp(+iEt)\,\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}).
 $$
 
-The KMS condition $F_{\hat a\hat a^\dagger}(t+i\beta)=F_{\hat a^\dagger\hat a}(-t)$ then gives $e^{-\beta E}\,\omega_\beta(\hat a\hat a^\dagger)=\omega_\beta(\hat a^\dagger\hat a)$. Writing $n=\omega_\beta(\hat a^\dagger\hat a)$ and using the anticommutator in the form $\hat a\hat a^\dagger=e_0-\hat a^\dagger\hat a$ yields $1-n=e^{\beta E}n$, i.e.
+The KMS condition $F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t+i\beta)=F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t)$ then gives $\exp(-\beta E)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger})=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$. Writing $n=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$ and using the anticommutator in the form $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_0-a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ yields $1-n=\exp(\beta E)n$, i.e.
 
 $$
-n=\frac{1}{e^{\beta E}+1},
+n=\frac{1}{\exp(\beta E)+1},
 $$
 
-the **Fermi–Dirac** distribution. The same computation for a bosonic mode, where the relevant relation is the commutator $\hat a\hat a^\dagger=e_0+\hat a^\dagger\hat a$, gives $n=1/(e^{\beta E}-1)$, the Bose–Einstein distribution. This is the cleanest sense in which the statistics is carried by the (anti)commutator and not by the KMS boundary relation, exactly as the KMS article states. In the continuum, the free-field thermal two-point function is
+the **Fermi–Dirac** distribution. The same computation for a bosonic mode, where the relevant relation is the commutator $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_0+a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, gives $n=1/(\exp(\beta E)-1)$, the Bose–Einstein distribution. This is the cleanest sense in which the statistics is carried by the (anti)commutator and not by the KMS boundary relation, exactly as the KMS article states. In the continuum, the free-field thermal two-point function is
 
 $$
-\omega_\beta\big(\hat a_r^\dagger(\vec p)\hat a_s(\vec q)\big)
-=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec q)\,\frac{1}{e^{\beta E_{\vec p}}+1},
+\omega_\beta\big(a^{\mathrm{fop}\dagger}_r(\vec p)a^{\mathrm{fop}}_s(\vec k)\big)
+=(2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k)\,\frac{1}{\exp(\beta E_{\vec p})+1},
 $$
 
 and the time-ordered fermionic correlation functions built from it are **antiperiodic** in imaginary time with period $\beta$, hence periodic with period $2\beta$; the Fourier modes of the compact imaginary-time direction are consequently the fermionic Matsubara frequencies
@@ -356,9 +356,9 @@ Because the question addressed here is itself an open question of the framework,
 
 - The Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$ and the conjugate momentum $\pi=i\psi^\dagger$, together with the second-class constraint $\pi-i\psi^\dagger\approx0$.
 - The equal-time anticommutation relations, imposed and verified, and the three reasons anticommutation rather than commutation is forced.
-- The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\bar u u=2m$, $u^\dagger u=2E$, and the parent's spin sums.
-- The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(\hat a^\dagger)^2=0$.
-- The Hamiltonian $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(\hat a^\dagger\hat a+\hat b^\dagger\hat b)$ after normal ordering, the normal-ordering constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$, and the four-momentum and charge.
+- The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\bar w w=2m$, $w^\dagger w=2E$, and the parent's spin sums.
+- The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(a^{\mathrm{fop}\dagger})^2=0$.
+- The Hamiltonian $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ after normal ordering, the normal-ordering constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$, and the four-momentum and charge.
 - The Fermi–Dirac distribution as the consequence of the KMS condition together with the anticommutator, and the fermionic Matsubara frequencies.
 
 **Open in the biquaternion framework.**
@@ -379,7 +379,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
 
 $$
-\{\hat\psi_a(\vec x,t),\hat\psi_b^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(\vec x-\vec y),
+\{\psi^{\mathrm{fop}}_a(\vec x,t),\psi^{\mathrm{fop}}_b^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(\vec x-\vec y),
 $$
 
 with all other equal-time anticommutators vanishing; anticommutation rather than commutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm, all three being consequences of the spinor character of the field.
@@ -387,13 +387,13 @@ with all other equal-time anticommutators vanishing; anticommutation rather than
 The field expands in the plane-wave solutions established by the parent article,
 
 $$
-\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_r
-\Big[\hat a_r(\vec p)u^{(r)}(\vec p)e^{-ip\cdot x}+\hat b_r^\dagger(\vec p)v^{(r)}(\vec p)e^{+ip\cdot x}\Big],
+\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_r
+\Big[a^{\mathrm{fop}}_r(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x)+b^{\mathrm{fop}\dagger}_r(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x)\Big],
 $$
 
-with the mode anticommutators $\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(\hat a_r^\dagger)^2=0$.
+with the mode anticommutators $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a^{\mathrm{fop}\dagger}_r)^2=0$.
 
-The Hamiltonian is $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$ after normal ordering, with the negative quartically divergent normal-ordering constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ removed. The normal-ordered charge has particles and antiparticles of opposite sign. The mode algebra is $\mathbb{Z}/2$-graded by fermion parity, which is the structure the KMS article identifies as missing; with it, the KMS condition plus the anticommutator yields the Fermi–Dirac distribution and the antiperiodic imaginary-time correlators whose Matsubara frequencies are $(2n+1)\pi/\beta$.
+The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the negative quartically divergent normal-ordering constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ removed. The normal-ordered charge has particles and antiparticles of opposite sign. The mode algebra is $\mathbb{Z}/2$-graded by fermion parity, which is the structure the KMS article identifies as missing; with it, the KMS condition plus the anticommutator yields the Fermi–Dirac distribution and the antiperiodic imaginary-time correlators whose Matsubara frequencies are $(2n+1)\pi/\beta$.
 
 The extension is a transcription of standard canonical quantization onto the parent article's biquaternion plane waves, not a derivation of the quantized structure from the algebra $\mathbb{B}$. The intrinsic $\mathbb{B}$-valued Lagrangian and momentum, the biquaternion Fock space, and the embedding of the grading in $\mathbb{B}$ remain open.
 
@@ -416,17 +416,17 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict$ gradient |
 | $\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial_0\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
-| $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
-| $\bar u u=2m$, $u^\dagger u=2E_{\vec p}$ | Covariant and Hermitian normalizations |
+| $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
+| $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
 | $p^\mu=(E_{\vec p},\vec p)$, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
 | $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
-| $\hat\psi$, $\hat a_r(\vec p)$, $\hat b_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
-| $\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
-| $\hat H$, $:\!\hat H\!:$ | Hamiltonian and its normal-ordered form |
+| $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
+| $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |
+| $H$, $:\!H\!:$ | Hamiltonian and its normal-ordered form |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $(-1)^F$ | Fermion-parity grading |
 | $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_t$ | Inverse temperature, thermal state, Heisenberg evolution |
-| $F_{\hat A\hat B}(t+i\beta)=F_{\hat B\hat A}(-t)$ | KMS condition |
+| $F_{A B}(t+i\beta)=F_{B A}(-t)$ | KMS condition |
 | $K=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 

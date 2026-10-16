@@ -9,7 +9,7 @@ The treatment is purely mathematical. The goal is to define the discrete split-b
 
 The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ commute with everything. So every power-series function of a split biquaternion, including the Fourier kernel, decomposes into two copies of the corresponding quaternion function, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.
 
-Unlike the biquaternion case, the split biquaternion Fourier kernel is **not** defined by the split complex unit $j$, which is the only scalar candidate in the algebra. The unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $e^{j\theta} = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split biquaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.
+Unlike the biquaternion case, the split biquaternion Fourier kernel is **not** defined by the split complex unit $j$, which is the only scalar candidate in the algebra. The unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $\exp(j\theta) = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split biquaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.
 
 Throughout, a split biquaternion is written
 
@@ -17,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -66,7 +66,7 @@ $$
 where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_0$:
 
 $$
-N(W_N(n, u)) = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1.
+\langle W_N(n, u)\rangle_{\natural} = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1.
 $$
 
 In particular, the kernel is always invertible, regardless of the choice of root and the values of $n, u$.
@@ -141,9 +141,9 @@ The two transforms are closely related: the conjugate of the left-kernel transfo
 
 The invertibility of the transform depends on the properties of the kernel and of the signal.
 
-**The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $N(W_N(n, u)) = e_0$, as shown above. So the kernel is always invertible.
+**The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $\langle W_N(n, u)\rangle_{\natural} = e_0$, as shown above. So the kernel is always invertible.
 
-**The signal may have vanishing norm.** A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split biquaternion zero divisors.
+**The signal may have vanishing norm.** A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split biquaternion zero divisors.
 
 **Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
 
@@ -331,7 +331,7 @@ where $*$ on the right is the quaternion convolution. So the split biquaternion 
 
 ### Samples of Vanishing Norm
 
-A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
+A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
 
 In the idempotent basis, a sample $f[n] = f_+[n] \tilde\Pi_1 + f_-[n] \tilde\Pi_2$ has vanishing norm if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.
 
@@ -420,7 +420,7 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |
 | $\hat{f}$ | Discrete split-biquaternion Fourier transform |

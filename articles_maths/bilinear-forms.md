@@ -280,7 +280,7 @@ $$
 B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2, \qquad G = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
 $$
 
-is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name **hyperbolic plane** is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.
+is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name **hyperbolic plane** is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $\mathfrak{Q}(e) = \mathfrak{Q}(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.
 
 ## Isometries
 

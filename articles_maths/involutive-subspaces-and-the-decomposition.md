@@ -6,7 +6,7 @@ An involution of a linear space singles out the subspaces it preserves, and thei
 
 *Involutive Linear Spaces* constructs the decomposition, the type and the projectors, and classifies the involutions by their type; the present article is the companion in the same `*`-theory group and it owns the subspaces: the stable ones, their lattice, and the induced involutions. The involution induced on the dual of a stable subspace and on a quotient through annihilators is *Involutions of the Dual Space*; the graded reading of the same decomposition is *Involutions of a Graded Linear Space*; the pairing-based adjoint, the unitary elements and the operator adjoints are the `*`-operator group. The forms are Part II.
 
-Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, and $T$ is a linear involution of $V$ of type $(p,q)$, so that $V = V_+ \oplus V_-$, $V_+ = \ker(T-\mathrm{id})$ has dimension $p$ and $V_- = \ker(T+\mathrm{id})$ has dimension $q$. No form, no norm and no topology is used.
+Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, and $T$ is a linear involution of $V$ of type $(n,m)$, so that $V = V_+ \oplus V_-$, $V_+ = \ker(T-\mathrm{id})$ has dimension $p$ and $V_- = \ker(T+\mathrm{id})$ has dimension $q$. No form, no norm and no topology is used.
 
 ## Stable Subspaces
 
@@ -54,7 +54,7 @@ $$
 
 ## Summary
 
-For a linear involution $T$ of a finite-dimensional space $V$ of type $(p,q)$, a subspace is stable under $T$ exactly when it is the direct sum of a subspace of $V_+$ and a subspace of $V_-$, and the stable subspaces form a lattice isomorphic to the product of the subspace lattices of the two parts; the restriction of $T$ to a stable subspace has the type given by the two components, and the induced involution on the quotient has the complementary type. The projectors $P_\pm = \tfrac12(\mathrm{id}\pm T)$ are idempotent, sum to the identity, satisfy $P_+P_-=0$ and recover $T = P_+-P_-$, and a subspace is stable exactly when both preserve it. A reflection is an involution of type $(n-1,1)$, determined by its fixed hyperplane together with the negated line, and its stable subspaces are those contained in the hyperplane together with those containing the negated line; the definition uses no form.
+For a linear involution $T$ of a finite-dimensional space $V$ of type $(n,m)$, a subspace is stable under $T$ exactly when it is the direct sum of a subspace of $V_+$ and a subspace of $V_-$, and the stable subspaces form a lattice isomorphic to the product of the subspace lattices of the two parts; the restriction of $T$ to a stable subspace has the type given by the two components, and the induced involution on the quotient has the complementary type. The projectors $P_\pm = \tfrac12(\mathrm{id}\pm T)$ are idempotent, sum to the identity, satisfy $P_+P_-=0$ and recover $T = P_+-P_-$, and a subspace is stable exactly when both preserve it. A reflection is an involution of type $(n-1,1)$, determined by its fixed hyperplane together with the negated line, and its stable subspaces are those contained in the hyperplane together with those containing the negated line; the definition uses no form.
 
 ## Summary of Notation
 
@@ -62,7 +62,7 @@ For a linear involution $T$ of a finite-dimensional space $V$ of type $(p,q)$, a
 |---|---|
 | $F$ | the field of scalars, of characteristic not two |
 | $V$, $n$ | the space and its dimension |
-| $T$ | a linear involution, $T^2=\mathrm{id}_V$, of type $(p,q)$ |
+| $T$ | a linear involution, $T^2=\mathrm{id}_V$, of type $(n,m)$ |
 | $V_+=\ker(T-\mathrm{id})$, $V_-=\ker(T+\mathrm{id})$ | fixed and negated parts |
 | $P_\pm = \tfrac12(\mathrm{id}\pm T)$ | the projectors |
 | $U$ stable | $T(U)\subseteq U$, equivalently $U=(U\cap V_+)\oplus(U\cap V_-)$ |

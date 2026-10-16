@@ -15,16 +15,16 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**, $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$; it vanishes on the centre and its values lie in the vector subspace. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Plain Algebra*.
 - **The absence of a unit.** $e_0$ annihilates the structure, $e_0\star\tilde X=0$, so the structure has no unit and no identity element at all. Owner: *Introduction to the Antisymmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised product. Owner: *Norm and Invertibility in the Antisymmetric Plain Algebra*.
-- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors of the Antisymmetric Plain Algebra*.
-- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators of the Antisymmetric Plain Algebra*.
-- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, *Square Roots of a General Element in the Antisymmetric Plain Algebra*.
+- **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Antisymmetric Plain Algebra*.
 - **The Lie algebra of the structure.** The Jacobi identity holds, the vector subspace with the bracket is the Lie algebra of the material sector, and the bracket is the cross product of the material vectors. Owner: *The Lie Algebra of the Antisymmetric Plain Algebra*.
 - **The Killing form.** The Killing form of the structure, its sign pattern and the compact/non-compact dichotomy it measures. Owner: *The Killing Form of the Antisymmetric Plain Algebra*.
-- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Plain Algebra*, *The Realification of the Antisymmetric Plain Algebra*.
+- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Plain Algebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
 
@@ -32,7 +32,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Representations
 
-- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation*, *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation*.
+- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
 ## Physical Interpretation
 

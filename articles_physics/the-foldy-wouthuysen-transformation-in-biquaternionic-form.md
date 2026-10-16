@@ -14,12 +14,12 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial_\mu - iqA_\mu/\hbar$ of the parent article — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $q$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial_\mu - iqA_\mu/\hbar$ of the parent article — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
 
 $$
 i\hbar\partial_t\psi = H\psi, \qquad
-H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + qA^0,
-\qquad \vec\pi = \vec p - q\vec A,
+H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
+\qquad \vec\pi = \vec p - ϙ\vec A,
 $$
 
 where $\vec p = -i\hbar\vec\nabla$ and we have used $\gamma^0\gamma^0 = I_4$. In the Dirac representation the matrices are
@@ -33,7 +33,7 @@ $$
 and they satisfy $\beta^2 = I_4$, $(\alpha^k)^2 = I_4$, $\{\alpha^j,\alpha^k\} = 2\delta^{jk}I_4$, $\{\alpha^k,\beta\} = 0$. The Hamiltonian splits into an **even** part and an **odd** part,
 
 $$
-H = \beta mc^2 + \underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O} + \underbrace{qA^0}_{\textstyle\mathcal{E}},
+H = \beta mc^2 + \underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O} + \underbrace{ϙA^0}_{\textstyle\mathcal{E}},
 $$
 
 where even and odd are defined by conjugation with $\beta$,
@@ -50,7 +50,7 @@ It is important to say at once which grading this is. The split into even and od
 
 ## The Transformation and Its Generator
 
-Let $U = e^{iS}$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is
+Let $U = \exp(iS)$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is
 
 $$
 H' = UHU^\dagger - i\hbar U\partial_t U^\dagger ,
@@ -120,10 +120,10 @@ where $\gamma^k = \beta\alpha^k$ are the spacelike generators. The kinetic term 
 
 ## The Free Particle in Closed Form
 
-For the free particle the transformation can be written exactly, and the exact form is the cleanest check that the expansion above is right. With $\hat p$ the unit vector along $\vec p$ and
+For the free particle the transformation can be written exactly, and the exact form is the cleanest check that the expansion above is right. With $\vec u_p$ the unit vector along $\vec p$ and
 
 $$
-A = \beta\,\boldsymbol\alpha\cdot\hat p,
+A = \beta\,\boldsymbol\alpha\cdot\vec u_p,
 \qquad
 A^2 = -I_4 ,
 \qquad
@@ -133,29 +133,29 @@ $$
 the unitary
 
 $$
-U = \cos\frac{\theta}{2} + A\sin\frac{\theta}{2} = e^{A\theta/2}
+U = \cos\frac{\theta}{2} + A\sin\frac{\theta}{2} = \exp(A\theta/2)
 $$
 
-brings the Hamiltonian to diagonal form. The verification is short. Since $\beta A = -A\beta$, conjugation by $U = e^{A\theta/2}$ acts as
+brings the Hamiltonian to diagonal form. The verification is short. Since $\beta A = -A\beta$, conjugation by $U = \exp(A\theta/2)$ acts as
 
 $$
-U\beta U^\dagger = \beta e^{-A\theta},
+U\beta U^\dagger = \beta \exp(-A\theta),
 $$
 
-while $A$ commutes with $U$ and is unchanged. Writing $H = \beta mc^2 + c\boldsymbol\alpha\cdot\vec p = \beta mc^2 + cp\beta A$ (using $\boldsymbol\alpha\cdot\hat p = \beta A$, which follows from $\beta A = \beta^2\boldsymbol\alpha\cdot\hat p = \boldsymbol\alpha\cdot\hat p$), one has
+while $A$ commutes with $U$ and is unchanged. Writing $H = \beta mc^2 + c\boldsymbol\alpha\cdot\vec p = \beta mc^2 + cp\beta A$ (using $\boldsymbol\alpha\cdot\vec u_p = \beta A$, which follows from $\beta A = \beta^2\boldsymbol\alpha\cdot\vec u_p = \boldsymbol\alpha\cdot\vec u_p$), one has
 
 $$
 H = \beta\left(mc^2 + cpA\right) = \beta\,E\left(\cos\theta + A\sin\theta\right)
-= \beta E\,e^{A\theta},
+= \beta E\,\exp(A\theta),
 \qquad
 E = \sqrt{\vec p^2c^2 + m^2c^4},
 $$
 
-where $\cos\theta = mc^2/E$, $\sin\theta = cp/E$ and $e^{A\theta} = \cos\theta + A\sin\theta$ because $A^2 = -I_4$. Therefore
+where $\cos\theta = mc^2/E$, $\sin\theta = cp/E$ and $\exp(A\theta) = \cos\theta + A\sin\theta$ because $A^2 = -I_4$. Therefore
 
 $$
-UHU^\dagger = e^{A\theta/2}\,\beta E\,e^{A\theta}\,e^{-A\theta/2}
-= \beta E\,e^{-A\theta/2}e^{A\theta}e^{-A\theta/2} = \beta E ,
+UHU^\dagger = \exp(A\theta/2)\,\beta E\,\exp(A\theta)\,\exp(-A\theta/2)
+= \beta E\,\exp(-A\theta/2)\exp(A\theta)\exp(-A\theta/2) = \beta E ,
 $$
 
 that is, $UHU^\dagger = \beta\sqrt{\vec p^2c^2 + m^2c^4}$ exactly. The upper block is the relativistic energy $+E$, the lower block is $-E$, and the odd part has been removed to all orders. The leading expansion of the closed form reproduces the result of the previous section:
@@ -168,7 +168,7 @@ the $\vec p^4$ term being the first relativistic correction to the kinetic energ
 
 ## The Mean Position Operator
 
-The transformation does more than block-diagonalise the Hamiltonian: it also changes the position operator, and the change is the resolution of the Zitterbewegung paradox. Conjugating $\vec x$ by $U = e^{iS}$ gives
+The transformation does more than block-diagonalise the Hamiltonian: it also changes the position operator, and the change is the resolution of the Zitterbewegung paradox. Conjugating $\vec x$ by $U = \exp(iS)$ gives
 
 $$
 \vec Q = U\,\vec x\,U^\dagger
@@ -194,21 +194,21 @@ The transformation can now be located in the two gradings of the algebra, and th
 
 **The frame basis is where the FW transformation works.** In the Dirac (large/small) basis, $\beta = \mathrm{diag}(I_2,-I_2)$ is diagonal and the mass term $m\beta$ is diagonal; the kinetic term $c\boldsymbol\alpha\cdot\vec\pi$ is the off-diagonal odd piece. The two bases are related by the fixed unitary that exchanges $\beta$ and $\gamma_5$, and the FW transformation is the momentum-dependent completion of that exchange: it rotates the field so that the mass — off-diagonal in chirality — becomes diagonal, while the kinetic term, which was diagonal in chirality, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
-**FW does not separate chirality.** After the transformation the Hamiltonian is block diagonal in the large/small basis, not in the chiral basis. The chirality operator in the transformed basis is momentum-dependent: $\gamma_5^{FW} = U\gamma_5U^\dagger = \gamma_5 e^{-A\theta}$ has upper block $(\boldsymbol\sigma\cdot\hat p)\sin\theta = (\boldsymbol\sigma\cdot\hat p)\,pc/E$ — the helicity for a massless field, reduced by the factor $pc/E$ for a massive one — and off-block part $\cos\theta\,I_2 = (mc^2/E)I_2$, which is the chirality-mixing term and is of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency** — the two signs of $\beta$ — and not left from right. In the algebra, the grading it diagonalises is the frame grading by $\gamma^0$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the chirality grading is a different reflection, and no unitary rotation of the field can diagonalise both simultaneously because $\beta$ and $\gamma_5$ anticommute. The FW basis and the chiral basis are complementary, and the mass is the object that measures their incompatibility.
+**FW does not separate chirality.** After the transformation the Hamiltonian is block diagonal in the large/small basis, not in the chiral basis. The chirality operator in the transformed basis is momentum-dependent: $\gamma_5^{FW} = U\gamma_5U^\dagger = \gamma_5 \exp(-A\theta)$ has upper block $(\boldsymbol\sigma\cdot\vec u_p)\sin\theta = (\boldsymbol\sigma\cdot\vec u_p)\,pc/E$ — the helicity for a massless field, reduced by the factor $pc/E$ for a massive one — and off-block part $\cos\theta\,I_2 = (mc^2/E)I_2$, which is the chirality-mixing term and is of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency** — the two signs of $\beta$ — and not left from right. In the algebra, the grading it diagonalises is the frame grading by $\gamma^0$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the chirality grading is a different reflection, and no unitary rotation of the field can diagonalise both simultaneously because $\beta$ and $\gamma_5$ anticommute. The FW basis and the chiral basis are complementary, and the mass is the object that measures their incompatibility.
 
 **The generator is outside the algebra's rotors.** The biquaternion rotors are the even, unit-norm elements of $\mathbb{B}$; they act on the module and generate the Lorentz group. The FW generator $S_1 = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi$ contains $\beta = \gamma^0$, which is Clifford-odd and does not belong to the even subalgebra $\mathsf{M}_4(\mathbb{B})$. The FW transformation is therefore not one of the algebra's own rotations: it is a transformation in the enlarged Clifford algebra that adjoins the frame $\gamma^0$. The biquaternion content it carries is not a new rotor but the identification of the odd part $O$ with the frame-odd mixing term and of the diagonal mass with the frame-even large term. This is consistent with the reflection article's finding that the frame is required to state chirality and parity: the FW transformation needs the frame for the same reason.
 
 ## The Pauli Limit and the Residual Terms
 
-With an external electromagnetic field, $\vec\pi = \vec p-q\vec A$ and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. To order $1/c^2$ the upper block is the Pauli Hamiltonian
+With an external electromagnetic field, $\vec\pi = \vec p-ϙ\vec A$ and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. To order $1/c^2$ the upper block is the Pauli Hamiltonian
 
 $$
-H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + qA^0 - \frac{q\hbar}{2m}\boldsymbol\sigma\cdot\vec B
-- \frac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
-+ \frac{\hbar^2}{8m^2c^2}\nabla^2(qA^0),
+H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA^0 - \frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
+- \frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
++ \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0),
 $$
 
-whose corrections are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(qA^0) = -\frac{q\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
+whose corrections are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
 
 The lower block is the same Hamiltonian with the sign of the mass reversed, i.e. the negative-energy (antiparticle) sector, and the two blocks are exactly degenerate at this order. The splitting between them, $2mc^2$, is the mass gap that the transformation has made manifest. This is the sense in which the FW transformation "separates particles from antiparticles": not by projecting them apart, which the fields do not allow, but by diagonalising the Hamiltonian so that the gap is explicit and the mixing is small.
 
@@ -219,13 +219,13 @@ The transformation, the generator $S_1$, the leading Hamiltonian $\beta mc^2 + \
 - The **two gradings** are kept distinct. The FW transformation diagonalises the frame grading (large/small, $\beta$); the biquaternion mass pair is the chirality grading (left/right, $\gamma_5$). They anticommute, so the transformation cannot diagonalise both, and the mass is the obstruction.
 - The **mass term** appears in the transformation as the large, frame-even term whose diagonal form is the non-relativistic gap; in the chiral basis the same mass is the off-diagonal coupling of the biquaternion pair. Moving between the two descriptions is the FW transformation.
 - The **residual odd part** is the frame-odd mixing term $O$, and its removal order by order is the statement that positive and negative frequency decouple in the non-relativistic limit.
-- The **exact free form** shows that the separation, for a free field, is exact: $UHU^\dagger = \beta\sqrt{\vec p^2c^2+m^2c^4}$ with $U = \exp\left(\frac{\theta}{2}\beta\boldsymbol\alpha\cdot\hat p\right)$, $\tan\theta = |\vec p|/(mc)$. The expansion used by the non-relativistic reduction is the expansion of this closed form in $|\vec p|/(mc)$.
+- The **exact free form** shows that the separation, for a free field, is exact: $UHU^\dagger = \beta\sqrt{\vec p^2c^2+m^2c^4}$ with $U = \exp\left(\frac{\theta}{2}\beta\boldsymbol\alpha\cdot\vec u_p\right)$, $\tan\theta = |\vec p|/(mc)$. The expansion used by the non-relativistic reduction is the expansion of this closed form in $|\vec p|/(mc)$.
 
 The transformation was constructed here with the large term being the mass. If an external potential dominates, the same algorithm is applied with a different even large term, and the generator changes accordingly; the algebra reads this as a different choice of frame. The choice of frame is the physical input, and the rest is the rotation that aligns the odd part with it.
 
 ## Summary
 
-The Foldy–Wouthuysen transformation is the unitary $U = e^{iS}$ that block-diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency sectors. With $H = \beta mc^2 + O + \mathcal{E}$, $O = c\boldsymbol\alpha\cdot\vec\pi$ odd under conjugation by $\beta = \gamma^0$, the leading generator is
+The Foldy–Wouthuysen transformation is the unitary $U = \exp(iS)$ that block-diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency sectors. With $H = \beta mc^2 + O + \mathcal{E}$, $O = c\boldsymbol\alpha\cdot\vec\pi$ odd under conjugation by $\beta = \gamma^0$, the leading generator is
 
 $$
 S_1 = -\frac{i}{2mc^2}\beta O = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi,
@@ -234,7 +234,7 @@ $$
 and the transformed Hamiltonian through order $v^2/c^2$ is $H' = \beta mc^2 + \mathcal{E} + \beta O^2/(2mc^2)$; in the free case $\mathcal{E} = 0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:
 
 $$
-U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\hat p\,\sin\frac{\theta}{2},
+U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\vec u_p\,\sin\frac{\theta}{2},
 \qquad
 \tan\theta = \frac{|\vec p|}{mc},
 \qquad
@@ -257,7 +257,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $O = c\,\boldsymbol\alpha\cdot\vec\pi$ | Odd (frame-anticommuting) part |
 | $\mathcal{E}$ | Even (frame-commuting) part |
-| $U = e^{iS}$ | Foldy–Wouthuysen unitary |
+| $U = \exp(iS)$ | Foldy–Wouthuysen unitary |
 | $S_1 = -\frac{i}{2mc^2}\beta O$ | Leading FW generator |
 | $H' = UHU^\dagger - i\hbar U\partial_t U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |

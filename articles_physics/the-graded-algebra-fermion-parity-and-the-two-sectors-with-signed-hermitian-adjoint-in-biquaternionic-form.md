@@ -10,13 +10,13 @@ $$
 \Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}.
 $$
 
-The two right factors are different maps. The dagger is the inverse exactly on the unit slice of the real quaternions and differs from it elsewhere by the coefficient-conjugated norm, $x^{*}=\sigma(N(x))\,\sigma(x)^{-1}$, so the inverse reading belongs to the isometries and the adjoint reading to the unitarity. The physics of the two is therefore not the same, and the difference is a norm, that is a scalar, in every case in which the corpus computes.
+The two right factors are different maps. The dagger is the inverse exactly on the unit slice of the real quaternions and differs from it elsewhere by the coefficient-conjugated norm, $x^{*}=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}$, so the inverse reading belongs to the isometries and the adjoint reading to the unitarity. The physics of the two is therefore not the same, and the difference is a norm, that is a scalar, in every case in which the corpus computes.
 
 Three facts organise the Hermitian interpretation. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is the sharpest statement of the article: the sign that separates the signed Hermitian sandwich from the unsigned one is the parity itself, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$, and it is **invisible on the algebra**, because every element of $\mathbb{B}$ is even. On the algebra the signed and the unsigned Hermitian sandwich are the same operator, $\Theta^{\alpha}_x=\Theta_x$ for $x\in\mathbb{B}$; the *signed* of the title is therefore exactly the **fermionic** sector, and the entire physics of the series, computed in $\mathbb{B}$, is the physics of the unsigned member. The third is that the twist is again a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; this interpretation is unchanged from the inverse article, because the twist sits in the **left** factor and the adjoint in the right one: parity on the left and adjointness on the right are independent structures, and the article keeps them apart.
 
 The ambient graded algebra, the two slots, the dictionary $e_1\mapsto\gamma^2\gamma^3$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Other Algebraic Element Representations*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=ie_3$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The inverse-conjugation interpretation is cited and never reused; the graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form*; the abstract algebra of the operator is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; the Hermitian dagger is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, the coefficient conjugation composed with the quaternion conjugation; the norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$; $\sigma$ is the coefficient conjugation, fixing the quaternion units and negating $i$; $\mathrm{Cl}_{1,3}$ is the ambient algebra of the Dirac matrices in the mostly-minus convention, $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$; the twist is the grade involution, $\alpha(x)=\varepsilon_x x$ with $\varepsilon_x=(-1)^{\lvert x\rvert}$; and the two operators are $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$ and $\Theta_x(y)=x\,y\,x^{*}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; the Hermitian dagger is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, the coefficient conjugation composed with the quaternion conjugation; the norm is $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$; $\sigma$ is the coefficient conjugation, fixing the quaternion units and negating $i$; $\mathrm{Cl}_{1,3}$ is the ambient algebra of the Dirac matrices in the mostly-minus convention, $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$; the twist is the grade involution, $\alpha(x)=\varepsilon_x x$ with $\varepsilon_x=(-1)^{\lvert x\rvert}$; and the two operators are $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$ and $\Theta_x(y)=x\,y\,x^{*}$.
 
 ## The Grading of the Ambient Algebra
 
@@ -61,20 +61,20 @@ the informational and the material sector, and the algebra is their direct sum, 
 **Proposition (the dagger and the inverse).** For every invertible $x\in\mathbb{B}$,
 
 $$
-x^{*}=\sigma(N(x))\,\sigma(x)^{-1}.
+x^{*}=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}.
 $$
 
-*Proof.* The norm identity $\bar x=N(x)\,x^{-1}$ of the algebra gives $x^{*}=\sigma(\bar x)=\sigma(N(x))\,\sigma(x)^{-1}$, the coefficient conjugation being an automorphism.
+*Proof.* The norm identity $\bar x=\langle x\rangle_{\natural}\,x^{-1}$ of the algebra gives $x^{*}=\sigma(\bar x)=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}$, the coefficient conjugation being an automorphism.
 
-**Corollary (where the dagger is the inverse).** The dagger equals the inverse exactly when $\sigma(x)=\sigma(N(x))\,x$. In particular, on the unit slice of the real quaternions — real coefficients with $N(x)=1$, the unit quaternions $\mathrm{SU}(2)$ — the two maps coincide, which is the agreement of the dagger with the Clifford conjugation on the real-quaternion slice recorded by *Biquaternion Versors and the Orthogonal Group*. Everywhere else they differ by the coefficient-conjugated norm, and a reader who replaces a dagger by an inverse is computing on that slice whether he says so or not.
+**Corollary (where the dagger is the inverse).** The dagger equals the inverse exactly when $\sigma(x)=\sigma(\langle x\rangle_{\natural})\,x$. In particular, on the unit slice of the real quaternions — real coefficients with $\langle x\rangle_{\natural}=1$, the unit quaternions $\mathrm{SU}(2)$ — the two maps coincide, which is the agreement of the dagger with the Clifford conjugation on the real-quaternion slice recorded by *Biquaternion Versors and the Orthogonal Group*. Everywhere else they differ by the coefficient-conjugated norm, and a reader who replaces a dagger by an inverse is computing on that slice whether he says so or not.
 
 **Remark (the norm factor of the sandwich).** The Hermitian sandwich multiplies the norm by the modulus squared of the parameter,
 
 $$
-N\bigl(x\,y\,x^{*}\bigr)=\lvert N(x)\rvert^{2}\,N(y),
+N\bigl(x\,y\,x^{*}\bigr)=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural},
 $$
 
-so the operator is a similarity of the spinor form of ratio $\lvert N(x)\rvert^{2}$ and an isometry exactly on the unit slice $\lvert N\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert N(x)\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
+so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert N\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
 
 ## The Twist Is the Conjugation by the Pseudoscalar
 
@@ -158,13 +158,13 @@ The odd slot is where the parity sign is visible, and the simplest odd elements 
 
 **Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\gamma^{\mu{}^{*}}=-\gamma^{\mu}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement.
 
-**Proposition (the vector identity).** Let $u,v$ be vectors of the Minkowski space of the envelope, $u^2=q(u)$ and $uv+vu=2B(u,v)$, and let $\rho_u(v)=v-2B(u,v)u/q(u)$ be the reflection. Then
+**Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
 $$
-\Theta^{\alpha}_u(v)=-q(u)\,\rho_u(v).
+\Theta^{\alpha}_a(v)=-q(a)\,\rho_a(v).
 $$
 
-*Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_u(v)=\alpha(u)\,v\,u^{\dagger}=(-u)\,v\,(-u)=u\,v\,u=2B(u,v)\,u-u^{2}v=2B(u,v)u-q(u)v=-q(u)\rho_u(v)$, using $\alpha(u)=-u$ on the odd slot, $u^{\dagger}=-u$ on the vectors, and $u^{2}=q(u)$.
+*Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_a(v)=\alpha(a)\,v\,a^{\dagger}=(-a)\,v\,(-a)=a\,v\,a=2B(a,v)\,a-a^{2}v=2B(a,v)a-q(a)v=-q(a)\rho_a(v)$, using $\alpha(a)=-a$ on the odd slot, $a^{\dagger}=-a$ on the vectors, and $a^{2}=q(a)$.
 
 **Corollary (which reflection each member realises).** The generators of square $-1$ — the spatial ones, $(\gamma^{k})^{2}=-1$ — satisfy $\Theta^{\alpha}_{\gamma^{k}}=\rho_{\gamma^{k}}$ exactly, while the timelike generator satisfies $\Theta^{\alpha}_{\gamma^{0}}=-\rho_{\gamma^{0}}$. The **unsigned** member does the opposite: $\Theta_{\gamma^{0}}=\rho_{\gamma^{0}}$ and $\Theta_{\gamma^{k}}=-\rho_{\gamma^{k}}$. So the reflection in a spatial hyperplane is carried by the signed Hermitian sandwich and the time reflection by the unsigned one, and the parity sign exchanged the two; this is the Hermitian form of the parity word of the next article, where two odd steps compose to a rotation.
 
@@ -200,15 +200,15 @@ The quaternion units are anti-Hermitian, the complex unit is anti-Hermitian, the
 
 ### The Unit Slice and the Two Slices of the Algebra
 
-The slice $U=\{x:x^{*}x=1\}$ of the dagger is a group, and it contains more than the unit quaternions: the unit quaternions (real coefficients with $N=1$), the unit complex scalars of the centre, and the boosts $ie_k$ all satisfy $x^{*}x=1$. Its Lie algebra, by the sector decomposition, is $\mathbb{M}_-$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $U$, and the exponential of $\mathbb{M}_-$ was checked to lie in $U$ on a sample. Since the dagger is the conjugate transpose in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, the slice is the compact unitary group, $U\cong U(2)$. The **inverse** slice is the other one, the group of units of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of units, and the Lorentz group of the corpus is reached by the inverse.
+The slice $\mathcal{U}=\{x:x^{*}x=1\}$ of the dagger is a group, and it contains more than the unit quaternions: the unit quaternions (real coefficients with $N=1$), the unit complex scalars of the centre, and the boosts $ie_k$ all satisfy $x^{*}x=1$. Its Lie algebra, by the sector decomposition, is $\mathbb{M}_-$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, and the exponential of $\mathbb{M}_-$ was checked to lie in $\mathcal{U}$ on a sample. Since the dagger is the conjugate transpose in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, the slice is the compact unitary group, $\mathcal{U}\cong U(2)$. The **inverse** slice is the other one, the group of units of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of units, and the Lorentz group of the corpus is reached by the inverse.
 
 ### The Norm Factor on a Boost
 
-Let $x=ie_1$, a boost, with $N(x)=-1$ and $x^{*}=x$. The dagger is not the inverse here, $x^{-1}=ie_1$ as well since $x^{2}=1$ — the boost of this normalisation is its own inverse — and the sandwich multiplies the norm by $\lvert N(x)\rvert^{2}=1$: the boost is on the unit slice. The unit quaternion $R=e_1$, by contrast, has $N(R)=+1$ and $R^{*}=-e_1=-R=R^{-1}$: on the real-quaternion slice the dagger is the inverse, and the sandwich is the rotor conjugation. The two examples are the two rows of the corpus's dictionary, and the difference between them is exactly the coefficient conjugation $\sigma$, which is the identity on one and not on the other.
+Let $x=ie_1$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$. The dagger is not the inverse here, $x^{-1}=ie_1$ as well since $x^{2}=1$ — the boost of this normalisation is its own inverse — and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}=1$: the boost is on the unit slice. The unit quaternion $R=e_1$, by contrast, has $\langle R\rangle_{\natural}=+1$ and $R^{*}=-e_1=-R=R^{-1}$: on the real-quaternion slice the dagger is the inverse, and the sandwich is the rotor conjugation. The two examples are the two rows of the corpus's dictionary, and the difference between them is exactly the coefficient conjugation $\sigma$, which is the identity on one and not on the other.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-Let $u=\gamma^1$ and $w=\gamma^2$, both odd. Their signed Hermitian sandwiches are the reflections of the previous section, $\Theta^{\alpha}_{\gamma^1}=\rho_{\gamma^1}$ and $\Theta^{\alpha}_{\gamma^2}=\rho_{\gamma^2}$, and their composite is
+The generators $\gamma^1$ and $\gamma^2$ are both odd. Their signed Hermitian sandwiches are the reflections of the previous section, $\Theta^{\alpha}_{\gamma^1}=\rho_{\gamma^1}$ and $\Theta^{\alpha}_{\gamma^2}=\rho_{\gamma^2}$, and their composite is
 
 $$
 \Theta^{\alpha}_{\gamma^1}\circ\Theta^{\alpha}_{\gamma^2}
@@ -222,9 +222,9 @@ an ordinary Hermitian sandwich by the bosonic element $e_3=\gamma^1\gamma^2$: tw
 
 The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The Hermitian interpretation replaces the inverse of the signed inner conjugation by the **Hermitian adjoint**: the signed Hermitian sandwich is $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
 
-The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(N(x))\sigma(x)^{-1}$, so the two coincide exactly on the real-quaternion slice of unit norm and differ elsewhere by the coefficient-conjugated norm, and the sandwich multiplies the norm by $\lvert N(x)\rvert^{2}$, being an isometry exactly on the unit slice. The adjoint slice is a compact group, $\mathbb{B}\cong M_2(\mathbb{C})$ with $U\cong U(2)$, while the inverse slice is the group of units and the route to the Lorentz group.
+The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$, so the two coincide exactly on the real-quaternion slice of unit norm and differ elsewhere by the coefficient-conjugated norm, and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}$, being an isometry exactly on the unit slice. The adjoint slice is a compact group, $\mathbb{B}\cong M_2(\mathbb{C})$ with $\mathcal{U}\cong U(2)$, while the inverse slice is the group of units and the route to the Lorentz group.
 
-The twist $\alpha$ is the conjugation by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$, unchanged from the inverse article because it is the **left** factor; the parity sign is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ and it is **invisible on the algebra**, $\Theta^{\alpha}_x=\Theta_x$ for $x\in\mathbb{B}$, since every element of the algebra is even. The sign is therefore exactly the fermionic sector, and the composition $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\Theta_{xz}$ is ordinary whenever the two parities agree, so two fermionic steps compose to a bosonic one. On the vectors the parity sign is visible: $\Theta^{\alpha}_u=-q(u)\rho_u$, so the spatial reflections are carried by the signed member and the time reflection by the unsigned one, and their exchange is the parity word of the reflection count.
+The twist $\alpha$ is the conjugation by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$, unchanged from the inverse article because it is the **left** factor; the parity sign is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ and it is **invisible on the algebra**, $\Theta^{\alpha}_x=\Theta_x$ for $x\in\mathbb{B}$, since every element of the algebra is even. The sign is therefore exactly the fermionic sector, and the composition $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\Theta_{xz}$ is ordinary whenever the two parities agree, so two fermionic steps compose to a bosonic one. On the vectors the parity sign is visible: $\Theta^{\alpha}_a=-q(a)\rho_a$, so the spatial reflections are carried by the signed member and the time reflection by the unsigned one, and their exchange is the parity word of the reflection count.
 
 ## Summary of Notation
 
@@ -235,13 +235,13 @@ The twist $\alpha$ is the conjugation by the volume element, $\alpha(x)=\Omega x
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |
-| $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | The norm; $x^{*}=\sigma(N(x))\sigma(x)^{-1}$ |
-| $U=\{x:x^{*}x=1\}$ | The unit slice; $U\cong U(2)$ in the matrix model, Lie algebra $\mathbb{M}_-$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
+| $\mathcal{U}=\{x:x^{*}x=1\}$ | The unit slice; $\mathcal{U}\cong U(2)$ in the matrix model, Lie algebra $\mathbb{M}_-$ |
 | $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$ | The twist as a conjugation by the pseudoscalar |
 | $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$ | Signed Hermitian sandwich; $=\Theta_x$ on $\mathbb{B}$ |
 | $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ | Parity sign; invisible on the even algebra |
 | $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\Theta_{xz}$ | Composition; ordinary for equal parities |
-| $\Theta^{\alpha}_u=-q(u)\rho_u$ ($u\in V$) | The reflection read in the Hermitian pairing |
+| $\Theta^{\alpha}_a=-q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
 | $\mathrm{Cl}^1=\mathbb{B}\gamma$, $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
 | $(-1)^F=ie_3\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
 

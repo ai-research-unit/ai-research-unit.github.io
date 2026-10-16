@@ -147,7 +147,7 @@ where $\Delta$ is the area of the polygon, so that the angle sum exceeds the Euc
 
 **(b)** In spherical geometry no line through $P$ fails to meet $\ell$; every pair of geodesics meets in two antipodal points, or in one point in elliptic space.
 
-**(c)** In hyperbolic geometry there are two geodesics through $P$ asymptotic to $\ell$, making the angle of parallelism $\Pi(d) = 2\arctan(e^{-d})$ with the perpendicular, infinitely many lines through $P$ meeting $\ell$ within the cone they bound, and infinitely many not meeting it; the lines not meeting $\ell$ diverge exponentially and are at unbounded distance from it.
+**(c)** In hyperbolic geometry there are two geodesics through $P$ asymptotic to $\ell$, making the angle of parallelism $\Pi(d) = 2\arctan(\exp(-d))$ with the perpendicular, infinitely many lines through $P$ meeting $\ell$ within the cone they bound, and infinitely many not meeting it; the lines not meeting $\ell$ diverge exponentially and are at unbounded distance from it.
 
 **Proof.** Parts (a) and (b) are in *Euclidean Geometry* and *Spherical Geometry*; part (c) is the angle-of-parallelism theorem of *Hyperbolic Geometry*.
 
@@ -199,7 +199,7 @@ The circumference and area of a circle grow as the circular, linear and hyperbol
 | $2\pi r$, $2\pi R\sin(r/R)$, $2\pi R\sinh(r/R)$ | Circumference of a circle in the three geometries |
 | $\operatorname{vol}B(r)$ | Ball volume: polynomial flat, bounded spherical, exponential hyperbolic |
 | $\sum\alpha_i = (n-2)\pi + K\Delta$ | Gauss–Bonnet for a geodesic polygon |
-| $\Pi(d) = 2\arctan(e^{-d})$ | Angle of parallelism; hyperbolic only |
+| $\Pi(d) = 2\arctan(\exp(-d))$ | Angle of parallelism; hyperbolic only |
 | Hilbert's theorem | No complete isometric embedding of $\mathbb{H}^2$ in $\mathbb{R}^3$ |
 
 

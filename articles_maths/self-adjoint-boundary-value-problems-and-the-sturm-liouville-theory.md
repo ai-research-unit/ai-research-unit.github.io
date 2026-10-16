@@ -87,12 +87,12 @@ so $(\lambda-\bar\lambda)\|u\|^2=0$; since $\|u\|\neq0$, $\lambda=\bar\lambda$.
 **Corollary (the eigenspaces and the spectral resolution).** In a self-adjoint problem the eigenspaces belonging to distinct eigenvalues are mutually orthogonal, the eigenfunctions of an eigenvalue may be orthogonalised within the eigenspace, and the eigenvalue equation $Lu=\lambda u$ may be read as the hermitian problem for the form
 
 $$
-a(u,v) = \langle Lu,v\rangle ,
+\mathfrak{a}(u,v) = \langle Lu,v\rangle ,
 $$
 
-which is a Hermitian sesquilinear form on the admissible subspace $\mathcal{A}$, with $a(u,u)=\lambda\|u\|^2$ at an eigenfunction; the form $a$ is the **Hermitian form** of the problem, and its study is the subject of the variational articles below.
+which is a Hermitian sesquilinear form on the admissible subspace $\mathcal{A}$, with $\mathfrak{a}(u,u)=\lambda\|u\|^2$ at an eigenfunction; the form $\mathfrak{a}$ is the **Hermitian form** of the problem, and its study is the subject of the variational articles below.
 
-*Proof.* The orthogonality is the preceding theorem; within an eigenspace the Hermitian form $a$ is a nonzero scalar times the $L^2$ pairing, so the Gram–Schmidt process with respect to it produces an orthonormal basis. That $a$ is Hermitian on admissible pairs is the symmetry: $a(u,v)=\langle Lu,v\rangle=\langle u,Lv\rangle=\overline{a(v,u)}$. The value at an eigenfunction is $\langle\lambda u,u\rangle=\lambda\|u\|^2$.
+*Proof.* The orthogonality is the preceding theorem; within an eigenspace the Hermitian form $\mathfrak{a}$ is a nonzero scalar times the $L^2$ pairing, so the Gram–Schmidt process with respect to it produces an orthonormal basis. That $\mathfrak{a}$ is Hermitian on admissible pairs is the symmetry: $\mathfrak{a}(u,v)=\langle Lu,v\rangle=\langle u,Lv\rangle=\overline{\mathfrak{a}(v,u)}$. The value at an eigenfunction is $\langle\lambda u,u\rangle=\lambda\|u\|^2$.
 
 ## Completeness
 
@@ -128,7 +128,7 @@ a skew-Hermitian form in the four boundary values $u(a),u'(a),u(b),u'(b)$ and th
 
 ## Summary
 
-The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lu)\bar v-\int u\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, skew-Hermitian, $\langle u,v\rangle_\partial=-\overline{\langle v,u\rangle_\partial}$, and determined by the traces of $u$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lu,v\rangle-\langle u,Lv\rangle=\langle u,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|u\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $a(u,v)=\langle Lu,v\rangle$.
+The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lu)\bar v-\int u\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, skew-Hermitian, $\langle u,v\rangle_\partial=-\overline{\langle v,u\rangle_\partial}$, and determined by the traces of $u$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lu,v\rangle-\langle u,Lv\rangle=\langle u,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|u\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $\mathfrak{a}(u,v)=\langle Lu,v\rangle$.
 
 If in addition the Green operator is compact and self-adjoint, the spectral theorem for a compact self-adjoint operator gives a complete orthonormal system of eigenfunctions, the eigenvalues being the reciprocals of its eigenvalues, real, of finite multiplicity and tending to infinity; this is the completeness of the eigenfunction expansion, $f=\sum\langle f,\varphi_n\rangle\varphi_n$. On an interval the boundary form is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$, the separated and periodic conditions are self-adjoint, and the resulting theory is the classical Sturm–Liouville theory: real, simple, increasing eigenvalues and a complete expansion in the weighted space, the periodic case differing only in the multiplicity of the eigenvalues.
 
@@ -141,7 +141,7 @@ If in addition the Green operator is compact and self-adjoint, the spectral theo
 | $\langle u,v\rangle_\partial = \int_{\partial\Omega}P(u,v)\,dS$ | Boundary form |
 | $\gamma u = (\gamma_0u,\dots,\gamma_{m-1}u)$ | Boundary data (traces of the normal derivatives) |
 | $\mathcal{A}$ | Admissible subspace of the boundary condition |
-| $a(u,v)=\langle Lu,v\rangle$ | Hermitian form of the problem |
+| $\mathfrak{a}(u,v)=\langle Lu,v\rangle$ | Hermitian form of the problem |
 | $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
 | $G$ | Compact self-adjoint Green operator |
 

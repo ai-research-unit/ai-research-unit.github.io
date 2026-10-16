@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $U(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
+The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $U(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 **Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_0,e_1,e_2,e_3$; the general plain sesquilinear form has Gram matrix $\mathrm{I}_4$, the general quaternionic bilinear form $\mathrm{I}_4$ and the general quaternionic sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
 
 ## The Three Adjoints of the Operator Algebra
 
-**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* define three adjoints,
+**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* define three adjoints,
 
 $$
 \langle M\tilde{P},\tilde{Q}\rangle=\langle\tilde{P},M^{\mathsf T}\tilde{Q}\rangle,
@@ -41,7 +41,7 @@ $$
 
 of real dimensions $12$, $16$ and $16$; each is closed under the commutator bracket, and the three are the Lie algebras of the isometry groups $O_4(\mathbb{C})$, $U(4)$ and $U(1,3)$ of the three pairings.
 
-**Proof.** The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(p,q)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket, which each is, because $M\mapsto-M^{\mathsf T}$, $M\mapsto-M^{*}$ and $M\mapsto-M^{\dagger}$ satisfy $(MN)^{\sigma}=M^{\sigma}N^{\sigma}$ up to the sign pattern of a Lie algebra involution.
+**Proof.** The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket, which each is, because $M\mapsto-M^{\mathsf T}$, $M\mapsto-M^{*}$ and $M\mapsto-M^{\dagger}$ satisfy $(MN)^{\sigma}=M^{\sigma}N^{\sigma}$ up to the sign pattern of a Lie algebra involution.
 
 ## The Krein Decomposition
 
@@ -135,9 +135,9 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **Theorem (the trace form).** The pairing $(M,N)\mapsto\operatorname{Tr}(MN)$ is a non-degenerate general plain bilinear form on $\mathfrak{g}$, invariant under the three adjoints up to conjugation; restricted to $\mathfrak{u}(1,3)$ the definite form $(M,N)\mapsto\operatorname{Re}\operatorname{Tr}(MN)$ has signature $(6,10)$ on the real vector space of dimension $16$, positive on $\mathfrak{p}_{0}$ and negative on $\mathfrak{k}_{0}$.
 
-**Proof.** The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it invariant under the adjoint action. For $\mathfrak{u}(p,q)$ the trace form is proportional to the Killing form, whose signature is $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; this is the same statement as the Cartan decomposition of the previous section.
+**Proof.** The trace form is non-degenerate on $M_4(\mathbb{C})$, and $\operatorname{Tr}(MN)=\operatorname{Tr}(NM)$ makes it invariant under the adjoint action. For $\mathfrak{u}(n,m)$ the trace form is proportional to the Killing form, whose signature is $(2pq,p^{2}+q^{2})$, which for $p=1,q=3$ is $(6,10)$; this is the same statement as the Cartan decomposition of the previous section.
 
-**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* as its cone of squares.
+**Theorem (the Jordan cone).** The $J$-self-adjoint part $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ is a Jordan algebra under the anticommutator, and it contains the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* as its cone of squares.
 
 **Proof.** The anticommutator of two $J$-self-adjoint operators is $J$-self-adjoint, as shown above, and the Jordan axiom follows from associativity of the product in $\mathfrak{g}$. The cone statement is the definition of $\mathcal{P}_{J}$.
 
@@ -174,9 +174,9 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the three pairings, their isometry groups and their signatures
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the three pairings, their isometry groups and their signatures
 - *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for $U(1,3)$, its maximal compact part and the boosts
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint of the algebra's families
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone inside the Jordan part
+- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint of the algebra's families
+- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone inside the Jordan part
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the complex hyperbolic space as the space of positive lines
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for Cartan involutions, Cartan decompositions and symmetric spaces of non-compact type

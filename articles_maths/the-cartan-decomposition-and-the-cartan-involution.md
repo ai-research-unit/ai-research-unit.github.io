@@ -123,7 +123,7 @@ Let $\mathrm{G} = \mathrm{sl}_2(\mathbb{R})$ with the Cartan involution $\theta(
 
 ### The Orthogonal Algebras
 
-Let $\mathrm{G} = \mathrm{so}(p,q)$ with the involution $\theta(X) = -X^{t}$ for the standard form of signature $(p,q)$. Then $\mathrm{K} = \mathrm{so}(p)\oplus\mathrm{so}(q)$ and $\mathrm{P}$ is the space of the off-diagonal blocks; $\dim\mathrm{K} = \frac{p(p-1)}{2} + \frac{q(q-1)}{2}$ and $\dim\mathrm{P} = pq$, and the symmetric space is the Grassmannian of the $p$-planes of a fixed parity, whose geometry is Part IV.
+Let $\mathrm{G} = \mathrm{so}(n,m)$ with the involution $\theta(X) = -X^{t}$ for the standard form of signature $(n,m)$. Then $\mathrm{K} = \mathrm{so}(n)\oplus\mathrm{so}(m)$ and $\mathrm{P}$ is the space of the off-diagonal blocks; $\dim\mathrm{K} = \frac{p(p-1)}{2} + \frac{q(q-1)}{2}$ and $\dim\mathrm{P} = pq$, and the symmetric space is the Grassmannian of the $p$-planes of a fixed parity, whose geometry is Part IV.
 
 ### The Compact Case
 

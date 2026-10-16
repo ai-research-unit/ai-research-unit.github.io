@@ -5,27 +5,27 @@
 
 The involutions of the universal enveloping algebra $U(\mathrm{G})$ — the extension $\Theta$ of an involution $\theta$ of $\mathrm{G}$, the principal anti-automorphism $\sigma$ with $x\mapsto-x$ and reversed products, and the star $\tau=\Theta\sigma$ — are $K$-linear operators on the infinite-dimensional space $U(\mathrm{G})$, and as operators they have adjoints with respect to a bilinear form on that space. This article, the second of the `- * Operator Theory` group of the category, is the **operator-theoretic reading** of *Involutions of the Universal Enveloping Algebra*: it fixes the class of invariant forms on $U(\mathrm{G})$ for which the adjoint is defined, proves that the extension $\Theta$ of an involution is **self-adjoint** with respect to any $\Theta$-invariant form, computes the adjoint of the principal anti-automorphism and of the star, and relates the self-adjointness to the invariance of the Casimir element of *The Casimir Operator and the Involution*. The enveloping algebra and its involutions are the entry of that name; the adjoint operation on a Hilbert space and the unitary representations belong to the analysis of a later Part and are named only; the form is used algebraically and no norm is formed from it.
 
-The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensional Lie algebra, $U(\mathrm{G})$ its enveloping algebra with the PBW basis of *Universal Enveloping Algebras*; the maps are $\theta,\Theta,\sigma,\tau$ as in *Involutions of the Universal Enveloping Algebra*, and the form is written $b$ with adjoint written ${}^{\dagger}$.
+The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensional Lie algebra, $U(\mathrm{G})$ its enveloping algebra with the PBW basis of *Universal Enveloping Algebras*; the maps are $\theta,\Theta,\sigma,\tau$ as in *Involutions of the Universal Enveloping Algebra*, and the form is written $\mathfrak{b}$ with adjoint written ${}^{\dagger}$.
 
 ## Forms on the Enveloping Algebra
 
-**Definition.** A bilinear form $b$ on $U(\mathrm{G})$ is **invariant** when $b(uv,w)=b(u,vw)$ for all $u,v,w$; it is **symmetric** when $b(u,v)=b(v,u)$; it is **nondegenerate** when $b(u,\cdot)=0$ implies $u=0$. A **PBW form** is the bilinear form for which the PBW monomials form an orthogonal basis with prescribed nonzero weights; a **trace form** attached to a module $M$ is $b(u,v)=\operatorname{tr}(L_uL_v)$ for the operators of left multiplication.
+**Definition.** A bilinear form $\mathfrak{b}$ on $U(\mathrm{G})$ is **invariant** when $\mathfrak{b}(uv,w)=\mathfrak{b}(u,vw)$ for all $u,v,w$; it is **symmetric** when $\mathfrak{b}(u,v)=\mathfrak{b}(v,u)$; it is **nondegenerate** when $\mathfrak{b}(u,\cdot)=0$ implies $u=0$. A **PBW form** is the bilinear form for which the PBW monomials form an orthogonal basis with prescribed nonzero weights; a **trace form** attached to a module $M$ is $\mathfrak{b}(u,v)=\operatorname{tr}(L_uL_v)$ for the operators of left multiplication.
 
 **Proposition.** The trace form attached to a finite-dimensional module is symmetric and invariant; the PBW form is symmetric and nondegenerate. On both forms an operator has an adjoint with respect to the form when it is continuous in the finite-dimensional sense, and on the finite-dimensional quotients of $U(\mathrm{G})$ every operator has an adjoint.
 
 **Proof.** The trace of a product of operators is symmetric and invariant under cyclic permutation; the PBW form is symmetric and nondegenerate by the PBW theorem; the existence of adjoints on finite-dimensional quotients is linear algebra.
 
-**Definition.** Let $b$ be a nondegenerate form. The **adjoint** of a linear operator $T$ is the operator $T^{\dagger}$ with $b(Tu,v)=b(u,T^{\dagger}v)$ for all $u,v$; it exists when the form is nondegenerate and the relevant linear functionals are represented.
+**Definition.** Let $\mathfrak{b}$ be a nondegenerate form. The **adjoint** of a linear operator $T$ is the operator $T^{\dagger}$ with $\mathfrak{b}(Tu,v)=\mathfrak{b}(u,T^{\dagger}v)$ for all $u,v$; it exists when the form is nondegenerate and the relevant linear functionals are represented.
 
 ## Adjoints of the Involutions
 
-**Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension, and let $b$ be a $\Theta$-invariant symmetric form, $b(\Theta u,\Theta v)=b(u,v)$. Then $\Theta$ is self-adjoint:
+**Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension, and let $\mathfrak{b}$ be a $\Theta$-invariant symmetric form, $b(\Theta u,\Theta v)=\mathfrak{b}(u,v)$. Then $\Theta$ is self-adjoint:
 
 $$
 \Theta^{\dagger}=\Theta .
 $$
 
-**Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=b(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=b(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$.
+**Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=\mathfrak{b}(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=\mathfrak{b}(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$.
 
 **Corollary.** With respect to the PBW form and with respect to the trace form of a module on which $\Theta$ acts by an isometry, the extension of any involution is self-adjoint; in particular the extension of the Cartan involution is self-adjoint, and the $\pm1$-eigenspaces of $\Theta$ in $U(\mathrm{G})$, the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$, are the subalgebra and the complement of the induced decomposition.
 
@@ -37,7 +37,7 @@ $$
 
 and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are self-adjoint with respect to a symmetric invariant form.
 
-**Proof.** For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $b$ under the anti-automorphism: $b(\sigma u,\sigma w)=b(u,w)$ when $b$ is compatible with $\sigma$ (the **$\sigma$-invariance** of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint.
+**Proof.** For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $\mathfrak{b}$ under the anti-automorphism: $b(\sigma u,\sigma w)=\mathfrak{b}(u,w)$ when $\mathfrak{b}$ is compatible with $\sigma$ (the **$\sigma$-invariance** of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint.
 
 **Remark.** The self-adjointness is not automatic: it holds exactly for the forms invariant under the operator in question. The PBW form is invariant under $\Theta$ when $\theta$ permutes the PBW monomials of each degree, which holds for the involutions induced by the automorphisms of $\mathrm{G}$ that preserve the chosen basis; for a general invariant form the adjoint of $\Theta$ is $\Theta^{-1}$ conjugated by the form, and $\Theta^{-1}=\Theta$.
 
@@ -59,7 +59,7 @@ and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are sel
 
 ## Worked Case: $U(\mathrm{sl}(2,K))$
 
-Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $b$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\Theta$ of the Cartan involution $\theta(x)=-x^{t}$ permutes the monomials of each degree and preserves $b$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\theta$-symmetric and $\theta$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $b$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\Theta\sigma$ is self-adjoint and fixes the Casimir element $\Omega$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.
+Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $\mathfrak{b}$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\Theta$ of the Cartan involution $\theta(x)=-x^{t}$ permutes the monomials of each degree and preserves $\mathfrak{b}$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\theta$-symmetric and $\theta$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $\mathfrak{b}$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\Theta\sigma$ is self-adjoint and fixes the Casimir element $\Omega$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.
 
 
 ## Summary
@@ -73,8 +73,8 @@ The involutions of $U(\mathrm{G})$ are linear operators, and with respect to a *
 | $K$ | the base field, of characteristic zero |
 | $U(\mathrm{G})$ | the universal enveloping algebra |
 | $\Theta,\sigma,\tau$ | the extension, the principal anti-automorphism, the star |
-| $b$ | a symmetric invariant form |
-| $T^{\dagger}$ | the adjoint of $T$ with respect to $b$ |
+| $\mathfrak{b}$ | a symmetric invariant form |
+| $T^{\dagger}$ | the adjoint of $T$ with respect to $\mathfrak{b}$ |
 | $\Omega$ | the Casimir element |
 
 ## Further Reading

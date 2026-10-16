@@ -8,13 +8,13 @@ The article has one job. It gives the geometry of a **connection with torsion** 
 
 One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime *is* the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of a biquaternionic spinor, so that geometry emerges from matter. That construction is recorded and tested separately, in *Matter Makes Space — An External Construction from Quaternionic Spinors*, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The metric has signature $(+,-,-,-)$, the tetrad is $e^a{}_\mu$, the metric is $g_{\mu\nu} = \eta_{ab}\,e^a{}_\mu e^b{}_\nu$ with $\eta = \mathrm{diag}(+1,-1,-1,-1)$, and index-free geometric statements are written in the text rather than displayed when the index order would carry no information. The biquaternion frame of Route Two is the $\mathbb{M}_-$-valued field $\tilde E_\mu$, with the frame form $\langle \tilde E_\mu, \tilde E_\nu\rangle_{\natural}$ equal to $g_{\mu\nu}$ up to the overall sign that separates the metric of the material sector from the level-3 convention of this article (*Conventions in the Biquaternion Universe*); its components in a fixed basis of $\mathbb{M}_-$ are the tetrad components $e^a{}_\mu$ of the standard formalism, and the two notations are used side by side below. The spin connection one-form is $\omega^{ab}{}_\mu$, equivalently the algebra-valued $\tilde\Gamma_\mu$ of Route Three. The dictionary between the algebra's six generators and the six Lorentz bivectors is that of *The Dirac Algebra and Biquaternions — A Dictionary*, where $\mathsf{M}_2(e_k)$ is a spacelike bivector and $\mathsf{M}_2(ie_k)$ a timelike one. The Dirac bilinears carry the Clifford-odd $\gamma^0$ and the axial $\gamma_5$, as *Conventions in the Biquaternion Universe* and the minimal-coupling articles require.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The metric has signature $(+,-,-,-)$, the tetrad is $\exp(a){}_\mu$, the metric is $g_{\mu\nu} = \eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$ with $\eta = \mathrm{diag}(+1,-1,-1,-1)$, and index-free geometric statements are written in the text rather than displayed when the index order would carry no information. The biquaternion frame of Route Two is the $\mathbb{M}_-$-valued field $\tilde E_\mu$, with the frame form $\langle \tilde E_\mu, \tilde E_\nu\rangle_{\natural}$ equal to $g_{\mu\nu}$ up to the overall sign that separates the metric of the material sector from the level-3 convention of this article (*Conventions in the Biquaternion Universe*); its components in a fixed basis of $\mathbb{M}_-$ are the tetrad components $\exp(a){}_\mu$ of the standard formalism, and the two notations are used side by side below. The spin connection one-form is $\omega^{ab}{}_\mu$, equivalently the algebra-valued $\tilde\Gamma_\mu$ of Route Three. The dictionary between the algebra's six generators and the six Lorentz bivectors is that of *The Dirac Algebra and Biquaternions — A Dictionary*, where $\mathsf{M}_2(e_k)$ is a spacelike bivector and $\mathsf{M}_2(ie_k)$ a timelike one. The Dirac bilinears carry the Clifford-odd $\gamma^0$ and the axial $\gamma_5$, as *Conventions in the Biquaternion Universe* and the minimal-coupling articles require.
 
 ---
 
 ## The Torsion Tensor
 
-An affine connection $\Gamma^\lambda{}_{\mu\nu}$ need not be symmetric in its lower indices. Its antisymmetric part is the **torsion tensor**,
+An affine connection $\Gamma^\lambda{}_{\mu\nu}$ need not be symmetric under the exchange of its two last labels. Its antisymmetric part is the **torsion tensor**,
 
 $$
 T^\lambda{}_{\mu\nu} = \Gamma^\lambda{}_{\mu\nu} - \Gamma^\lambda{}_{\nu\mu} .
@@ -78,16 +78,16 @@ The totally antisymmetric case is the one the corpus meets physically. The spin 
 
 ## The Tetrad Postulate and the Spin Connection
 
-The tetrad $e^a{}_\mu$ relates the coordinate and frame indices, with inverse $e_a{}^\mu$ defined by $e^a{}_\mu e_b{}^\mu = \delta^a{}_b$ and $e^a{}_\mu e_a{}^\nu = \delta_\mu{}^\nu$, and it builds the metric as $g_{\mu\nu} = \eta_{ab}\,e^a{}_\mu e^b{}_\nu$. A connection on the frame bundle is a one-form $\omega^{ab}{}_\mu$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
+The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with inverse $e_a{}^\mu$ defined by $\exp(a){}_\mu e_b{}^\mu = \delta^a{}_b$ and $\exp(a){}_\mu e_a{}^\nu = \delta_\mu{}^\nu$, and it builds the metric as $g_{\mu\nu} = \eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$. A connection on the frame bundle is a one-form $\omega^{ab}{}_\mu$, antisymmetric in $a,b$, and the two connections are tied by the **tetrad postulate**,
 
 $$
-\nabla_\mu e^a{}_\nu = \partial_\mu e^a{}_\nu - \Gamma^\lambda{}_{\mu\nu} e^a{}_\lambda + \omega^a{}_{b\mu} e^b{}_\nu = 0 ,
+\nabla_\mu \exp(a){}_\nu = \partial_\mu \exp(a){}_\nu - \Gamma^\lambda{}_{\mu\nu} \exp(a){}_\lambda + \omega^a{}_{b\mu} \exp(b){}_\nu = 0 ,
 $$
 
 which says that the frame is covariantly constant in both connections at once. Written as a definition of the spin connection from the tetrad and the affine connection, it is
 
 $$
-\omega^a{}_{b\mu} = e^a{}_\lambda \Gamma^\lambda{}_{\mu\nu} e_b{}^\nu + e^a{}_\lambda \partial_\mu e_b{}^\lambda .
+\omega^a{}_{b\mu} = \exp(a){}_\lambda \Gamma^\lambda{}_{\mu\nu} e_b{}^\nu + \exp(a){}_\lambda \partial_\mu e_b{}^\lambda .
 $$
 
 Splitting the affine connection into its metric and contorsion parts splits the spin connection the same way,
@@ -100,12 +100,12 @@ with $\omega^{ab}{}_\mu(e)$ the Levi-Civita spin connection of the tetrad alone 
 
 Two exact statements were checked here, with a two-dimensional tetrad whose components depend on the time coordinate, in exact rational arithmetic.
 
-**The tetrad postulate is satisfiable with a non-flat tetrad.** For $e^a{}_\mu = \delta^a{}_\mu + x^0 M^a{}_\mu$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu e^a{}_\nu = 0$ identically.
+**The tetrad postulate is satisfiable with a non-flat tetrad.** For $\exp(a){}_\mu = \delta^a{}_\mu + x^0 M^a{}_\mu$ with $M$ a constant matrix, the Levi-Civita connection of the induced metric is nonzero, and the spin connection constructed from it makes $\nabla_\mu \exp(a){}_\nu = 0$ identically.
 
 **The Weitzenböck connection is curvature-free and torsionful.** The connection built from the tetrad alone,
 
 $$
-\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu e^a{}_\nu ,
+\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu \exp(a){}_\nu ,
 $$
 
 called the **Weitzenböck connection**, was computed for that tetrad together with its curvature. The curvature came out **exactly zero** in every component and the torsion **exactly $\tfrac{3}{10}$** in its nonzero components. This is the content of the teleparallel sector: a connection can be flat and still have torsion, and the framework's algebra can carry it.
@@ -156,7 +156,7 @@ with $\sigma$ the spin density in the same normalisation as $\Sigma$. Because th
 The Weitzenböck connection of the previous section,
 
 $$
-\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu e^a{}_\nu ,
+\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda\, \partial_\mu \exp(a){}_\nu ,
 $$
 
 defines a geometry whose curvature vanishes identically and whose torsion is nonzero. Its two exact properties, both confirmed above, are worth stating in the general form in which they are used.
@@ -185,7 +185,7 @@ The two open items this article was written against stand as follows. The first 
 
 A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K^\lambda{}_{\mu\nu}$, which is antisymmetric in its last two indices. The torsion is twice the alternating contorsion, $T^\lambda{}_{\mu\nu} = 2K^\lambda{}_{[\mu\nu]}$, and the inverse relation $K_{\lambda\mu\nu} = \tfrac12(T_{\lambda\mu\nu} - T_{\mu\nu\lambda} + T_{\nu\lambda\mu})$ holds in the totally antisymmetric case. The covariant derivative of the metric is $\nabla_\mu g_{\nu\rho} = -(K_{\nu\mu\rho} + K_{\rho\mu\nu})$, which vanishes for every index order exactly when the contorsion is totally antisymmetric; the 24 contorsion components are cut to a four-dimensional solution space, so **metric compatibility is the condition of total antisymmetry**, and this is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
 
-The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda \partial_\mu e^a{}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
+The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma^\lambda{}_{\mu\nu} = e_a{}^\lambda \partial_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
 The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma^{\lambda\mu\nu} = \bar\psi\gamma^{[\lambda}\gamma^\mu\gamma^{\nu]}\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi\gamma_{[\lambda}\gamma_\mu\gamma_{\nu]}\psi = i\epsilon_{\lambda\mu\nu\rho}\bar\psi\gamma_5\gamma^\rho\psi$, and its square is six times the axial current squared, $\Sigma_{\lambda\mu\nu}\Sigma^{\lambda\mu\nu} = 6A_\rho A^\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
@@ -199,8 +199,8 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\left\{{}^{\lambda}{}_{\mu\nu}\right\}$ | Christoffel symbols of $g_{\mu\nu}$ |
 | $T^\lambda{}_{\mu\nu}$ | torsion tensor, $2K^\lambda{}_{[\mu\nu]}$ |
 | $K^\lambda{}_{\mu\nu}$ | contorsion, antisymmetric in the last pair |
-| $e^a{}_\mu$, $e_a{}^\mu$ | tetrad and its inverse |
-| $g_{\mu\nu} = \eta_{ab}e^a{}_\mu e^b{}_\nu$ | metric from the tetrad, $\eta = \mathrm{diag}(+1,-1,-1,-1)$ |
+| $\exp(a){}_\mu$, $e_a{}^\mu$ | tetrad and its inverse |
+| $g_{\mu\nu} = \eta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad, $\eta = \mathrm{diag}(+1,-1,-1,-1)$ |
 | $\omega^{ab}{}_\mu$ | spin connection one-form |
 | $\omega^{ab}{}_\mu(e)$ | its Levi-Civita part |
 | $\tilde\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |

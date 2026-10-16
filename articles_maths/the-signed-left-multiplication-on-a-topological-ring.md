@@ -99,7 +99,7 @@ so the signed left multiplications are the unsigned sandwiches with second param
 
 **Example (the polynomial ring with $f(x)\mapsto f(-x)$).** On $k[x]$ with the grade involution $\alpha(f)(x) = f(-x)$, the signed left multiplication by $a = x$ is $\ell_x(f) = x f(-x)$; the ring is commutative, so $\ell_x = \alpha L_x$ and the signed left multiplication is the sign change followed by the unsigned multiplication; the fixed set of $\ell_x$ is $\{f : x f(-x) = f\}$, a closed subset.
 
-**Example (the Clifford algebra).** In $Cl(V,q)$ with the grade involution, the signed left multiplication by a vector $v$ is $\ell_v(x) = v\alpha(x)$; for $x = v$ it gives $v\alpha(v) = -q(v)$, so $\ell_v$ inverts the vector $v$ up to the scalar $-q(v)$, which is the statement that the vector acts on itself by the signed left multiplication.
+**Example (the Clifford algebra).** In $Cl(V,\mathfrak{Q})$ with the grade involution, the signed left multiplication by a vector $v$ is $\ell_v(x) = v\alpha(x)$; for $x = v$ it gives $v\alpha(v) = -\mathfrak{Q}(v)$, so $\ell_v$ inverts the vector $v$ up to the scalar $-\mathfrak{Q}(v)$, which is the statement that the vector acts on itself by the signed left multiplication.
 
 **Example (the matrix ring).** On $M_n(k)$ with $\alpha(A) = A^{\top}$, the signed left multiplication by $A$ is $\ell_A(X) = AX^{\top}$; it is invertible for invertible $A$ with inverse $\ell_{(A^{\top})^{-1}}$, and the signed left multiplication group is isomorphic to $GL_n(k)$.
 

@@ -18,7 +18,7 @@ $$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
 $$
 
-Particle 1 is measured along a direction $\hat{a}$ that makes an angle $\theta_a$ with the $z$-axis, and particle 2 is measured along a direction $\hat{b}$ that makes an angle $\theta_b$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the **joint probability $p(+,+)$ of both outcomes being spin-up**?
+Particle 1 is measured along a direction $\vec u_a$ that makes an angle $\theta_a$ with the $z$-axis, and particle 2 is measured along a direction $\vec u_b$ that makes an angle $\theta_b$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the **joint probability $p(+,+)$ of both outcomes being spin-up**?
 
 This is the canonical **EPR/Bell** exercise. It illustrates that the two particles are **entangled**: the joint state is not a product state, and the joint probabilities depend on the angle between the two measurement directions.
 
@@ -36,16 +36,16 @@ It is a **maximally entangled** state: it cannot be written as a product $|\psi_
 
 ### Step 2: The measurement operators
 
-The projector onto spin-up along $\hat{a}$ for particle 1 is
+The projector onto spin-up along $\vec u_a$ for particle 1 is
 
 $$
-\tilde\Pi(\hat{a}) = \frac{1}{2}\left(I + \hat{a}\cdot\boldsymbol{\sigma}\right),
+\tilde\Pi(\vec u_a) = \frac{1}{2}\left(I + \vec u_a\cdot\boldsymbol{\sigma}\right),
 $$
 
-and similarly for particle 2 along $\hat{b}$. The joint measurement operator is the tensor product
+and similarly for particle 2 along $\vec u_b$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(I + \hat{a}\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \hat{b}\cdot\boldsymbol{\sigma}_2\right),
+P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(I + \vec u_a\cdot\boldsymbol{\sigma}_1\right)\otimes\left(I + \vec u_b\cdot\boldsymbol{\sigma}_2\right),
 $$
 
 where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.
@@ -55,34 +55,34 @@ where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1,
 The joint probability is the Born rule applied to the two-qubit state:
 
 $$
-p(+,+) = \langle\Psi^-|\,P_{++}(\hat{a},\hat{b})\,|\Psi^-\rangle.
+p(+,+) = \langle\Psi^-|\,P_{++}(\vec u_a,\vec u_b)\,|\Psi^-\rangle.
 $$
 
 Expanding the product,
 
 $$
-p(+,+) = \frac{1}{4}\Bigl[\langle I\rangle + \langle\hat{a}\cdot\boldsymbol{\sigma}_1\rangle + \langle\hat{b}\cdot\boldsymbol{\sigma}_2\rangle + \langle(\hat{a}\cdot\boldsymbol{\sigma}_1)(\hat{b}\cdot\boldsymbol{\sigma}_2)\rangle\Bigr].
+p(+,+) = \frac{1}{4}\Bigl[\langle I\rangle + \langle\vec u_a\cdot\boldsymbol{\sigma}_1\rangle + \langle\vec u_b\cdot\boldsymbol{\sigma}_2\rangle + \langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle\Bigr].
 $$
 
 The four expectation values in the singlet state are:
 
 - $\langle I\rangle = 1$.
-- $\langle\hat{a}\cdot\boldsymbol{\sigma}_1\rangle = \sum_j a_j\langle\sigma_{1j}\rangle = 0$, because the singlet is rotationally invariant and $\langle\sigma_{1j}\rangle = 0$ for all $j$.
-- $\langle\hat{b}\cdot\boldsymbol{\sigma}_2\rangle = 0$, by the same argument.
-- $\langle(\hat{a}\cdot\boldsymbol{\sigma}_1)(\hat{b}\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,k}a_j b_k\langle\sigma_{1j}\sigma_{2k}\rangle = -\sum_j a_j b_j = -\hat{a}\cdot\hat{b}$.
+- $\langle\vec u_a\cdot\boldsymbol{\sigma}_1\rangle = \sum_j a_j\langle\sigma_{1j}\rangle = 0$, because the singlet is rotationally invariant and $\langle\sigma_{1j}\rangle = 0$ for all $j$.
+- $\langle\vec u_b\cdot\boldsymbol{\sigma}_2\rangle = 0$, by the same argument.
+- $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,k}a_j b_k\langle\sigma_{1j}\sigma_{2k}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
 
 The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2k}\rangle = -\delta_{jk}$.
 
 Substituting,
 
 $$
-p(+,+) = \frac{1}{4}\left(1 - \hat{a}\cdot\hat{b}\right).
+p(+,+) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right).
 $$
 
 ### Step 4: The result
 
 $$
-p(+,+) = \frac{1}{4}\left(1 - \hat{a}\cdot\hat{b}\right).
+p(+,+) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right).
 $$
 
 In terms of the angle $\theta$ between the two directions,
@@ -95,7 +95,7 @@ $$
 
 ### Step 1: The state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_0 + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
 
 The singlet state corresponds to the idempotent
 
@@ -128,10 +128,10 @@ $$
 
 ### Step 2: The measurement operators
 
-The single-qubit projector onto spin-up along $\hat{a}$ is the idempotent $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. The joint measurement operator is the tensor product
+The single-qubit projector onto spin-up along $\vec u_a$ is the idempotent $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b}) = \frac{1}{4}\left(e_0 + i\hat{a}\right)\otimes\left(e_0 + i\hat{b}\right).
+P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_0 + i\vec u_a\right)\otimes\left(e_0 + i\vec u_b\right).
 $$
 
 ### Step 3: The probability
@@ -139,33 +139,33 @@ $$
 The joint probability is the trace formula on $\mathbb{B}\otimes\mathbb{B}$:
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\hat{a},\hat{b})\right).
+p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\vec u_a,\vec u_b)\right).
 $$
 
 Computing the product,
 
 $$
-P_{\mathrm{singlet}}\circ P_{++} = \frac{1}{16}\sum_{j=0}^{3}\left[e_j(e_0 + i\hat{a})\right]\otimes\left[e_j(e_0 + i\hat{b})\right].
+P_{\mathrm{singlet}}\circ P_{++} = \frac{1}{16}\sum_{j=0}^{3}\left[e_j(e_0 + i\vec u_a)\right]\otimes\left[e_j(e_0 + i\vec u_b)\right].
 $$
 
 Applying the tensor-product trace,
 
 $$
-p(+,+) = \frac{1}{16}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\hat{a})\right]\cdot\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\hat{b})\right].
+p(+,+) = \frac{1}{16}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\vec u_a)\right]\cdot\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\vec u_b)\right].
 $$
 
-**Term $j = 0$.** $\mathrm{Tr}_\mathbb{B}(e_0 + i\hat{a}) = 2$, and similarly for $\hat{b}$. Contribution: $2\cdot 2 = 4$.
+**Term $j = 0$.** $\mathrm{Tr}_\mathbb{B}(e_0 + i\vec u_a) = 2$, and similarly for $\vec u_b$. Contribution: $2\cdot 2 = 4$.
 
-**Terms $j = 1, 2, 3$.** We have $e_j(e_0 + i\hat{a}) = e_j + ie_j\hat{a}$. The scalar part of $e_j\hat{a}$ is $-\hat{a}_j e_0$, so $\mathrm{Tr}_\mathbb{B}(e_j\hat{a}) = -2\hat{a}_j$ and $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\hat{a}) = -2i\hat{a}_j$. Similarly $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\hat{b}) = -2i\hat{b}_j$. Contribution of term $j$: $(-2i\hat{a}_j)(-2i\hat{b}_j) = -4\hat{a}_j\hat{b}_j$.
+**Terms $j = 1, 2, 3$.** We have $e_j(e_0 + i\vec u_a) = e_j + ie_j\vec u_a$. The scalar part of $e_j\vec u_a$ is $-\vec u_a_j e_0$, so $\mathrm{Tr}_\mathbb{B}(e_j\vec u_a) = -2\vec u_a_j$ and $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\vec u_a) = -2i\vec u_a_j$. Similarly $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\vec u_b) = -2i\vec u_b_j$. Contribution of term $j$: $(-2i\vec u_a_j)(-2i\vec u_b_j) = -4\vec u_a_j\vec u_b_j$.
 
-Summing over $j = 1, 2, 3$: $-4\,\hat{a}\cdot\hat{b}$.
+Summing over $j = 1, 2, 3$: $-4\,\vec u_a\cdot\vec u_b$.
 
-**Total.** $p(+,+) = \frac{1}{16}\left(4 - 4\,\hat{a}\cdot\hat{b}\right) = \frac{1}{4}\left(1 - \hat{a}\cdot\hat{b}\right)$.
+**Total.** $p(+,+) = \frac{1}{16}\left(4 - 4\,\vec u_a\cdot\vec u_b\right) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right)$.
 
 ### Step 4: The result
 
 $$
-p(+,+) = \frac{1}{4}\left(1 - \hat{a}\cdot\hat{b}\right).
+p(+,+) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right).
 $$
 
 In terms of the angle $\theta$ between the two directions,
@@ -178,7 +178,7 @@ $$
 
 Both formulations give the same result, and both give the same limits.
 
-**Case $\hat{a} = \hat{b}$** (both measurements along the same direction, $\theta = 0$). Then
+**Case $\vec u_a = \vec u_b$** (both measurements along the same direction, $\theta = 0$). Then
 
 $$
 p(+,+) = \frac{1}{4}(1 - 1) = 0.
@@ -186,21 +186,21 @@ $$
 
 The two outcomes with the **same sign** have probability $0$, and the two with **different signs** have probability $1/2$ each. Both particles are never found spin-up along the same direction: the singlet has perfectly anti-correlated spins along any common axis.
 
-**Case $\hat{a} = -\hat{b}$** (opposite directions, $\theta = \pi$). Then
+**Case $\vec u_a = -\vec u_b$** (opposite directions, $\theta = \pi$). Then
 
 $$
 p(+,+) = \frac{1}{4}(1 - (-1)) = \frac{1}{2}.
 $$
 
-The two outcomes with the **same sign** have probability $1/2$ each, and the two with **different signs** have probability $0$. This is the **opposite** of the previous case, and it is a direct consequence of the perfect anti-correlation along $\hat{a}$: the outcome "spin-up along $\hat{b}$" for particle 2 coincides with "spin-down along $\hat{a}$", so the two spins are found with the same sign label when measured in their respective directions.
+The two outcomes with the **same sign** have probability $1/2$ each, and the two with **different signs** have probability $0$. This is the **opposite** of the previous case, and it is a direct consequence of the perfect anti-correlation along $\vec u_a$: the outcome "spin-up along $\vec u_b$" for particle 2 coincides with "spin-down along $\vec u_a$", so the two spins are found with the same sign label when measured in their respective directions.
 
-**Case $\hat{a} \perp \hat{b}$** (perpendicular directions, $\theta = \pi/2$). Then
+**Case $\vec u_a \perp \vec u_b$** (perpendicular directions, $\theta = \pi/2$). Then
 
 $$
 p(+,+) = \frac{1}{4}(1 - 0) = \frac{1}{4}.
 $$
 
-All four outcomes are equally likely with probability $1/4$, by the symmetry $\hat{a} \to -\hat{a}$, $\hat{b} \to -\hat{b}$ of the singlet state and the perpendicularity $\hat{a}\cdot\hat{b} = 0$.
+All four outcomes are equally likely with probability $1/4$, by the symmetry $\vec u_a \to -\vec u_a$, $\vec u_b \to -\vec u_b$ of the singlet state and the perpendicularity $\vec u_a\cdot\vec u_b = 0$.
 
 These agree with the physical expectation: the singlet state is perfectly anti-correlated along any direction, and the joint probabilities depend only on the angle between the two measurement directions.
 
@@ -211,14 +211,14 @@ These agree with the physical expectation: the singlet state is perfectly anti-c
 **2. The trace formula generalizes to two qubits.** The joint probability is
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\hat{a},\hat{b})\right),
+p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\vec u_a,\vec u_b)\right),
 $$
 
 the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\hat{a})$ and $\tilde\Pi(\hat{b})$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\hat{a}\cdot\hat{b}$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.
 
-**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\hat{a}\cdot\hat{b}$, which appears in the trace formula through the products $e_k\hat{a}$ and $e_k\hat{b}$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
+**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $e_k\vec u_a$ and $e_k\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
 **5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\Psi^-\rangle\langle\Psi^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{M}_+\otimes\mathbb{M}_+$, with the Born rule given by the tensor-product trace.**
 
@@ -230,7 +230,7 @@ the natural pairing between the joint state and the joint measurement operator. 
 | Physical process | Single measurement | Time evolution | Successive measurements | Entangled measurement |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \hat{a}\cdot\hat{b})$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_a\cdot\vec u_b)$ |
 
 These exercises illustrate four fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), and **entangled measurement** (Exercise: Two Spins in the Singlet State). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$ (and, in Exercise: Two Spins in the Singlet State, their tensor products).
 
@@ -238,7 +238,7 @@ These exercises illustrate four fundamental operations of the quantum formalism:
 
 We have solved a fourth exercise in quantum physics — the joint spin measurement of a singlet state along two arbitrary directions — in two parallel presentations.
 
-In the **standard formulation**, the solution proceeds through the two-qubit state, the tensor-product projector, and the Born rule, giving $p(+,+) = (1/4)(1 - \hat{a}\cdot\hat{b})$.
+In the **standard formulation**, the solution proceeds through the two-qubit state, the tensor-product projector, and the Born rule, giving $p(+,+) = (1/4)(1 - \vec u_a\cdot\vec u_b)$.
 
 In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the tensor-product projector, and the trace formula, giving the same result.
 
@@ -256,8 +256,8 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\Psi^-\rangle$ | Singlet state |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
-| $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$ | Single-qubit projector |
-| $P_{++}(\hat{a},\hat{b}) = \tilde\Pi(\hat{a})\otimes \tilde\Pi(\hat{b})$ | Joint projector |
+| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$ | Single-qubit projector |
+| $P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint projector |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 
 ## Further Reading

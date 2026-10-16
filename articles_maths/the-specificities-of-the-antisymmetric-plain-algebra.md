@@ -6,8 +6,8 @@ Of the twelve algebraic structures that the complex space
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one carries the classical
 theory of a **Lie algebra**: the **antisymmetric plain multiplication**
 $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ of
-*Introduction to the Antisymmetric Plain Algebra of Biquaternions*, the multiplication named
-$\mathrm{APA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Every
+*Introduction to the Antisymmetric Plain Algebra*, the multiplication named
+$\mathrm{APA}$ in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. Every
 structural result of the block belongs to it alone — the centre and the quotient, the derived
 algebra and its identification with $\mathfrak{sl}(2,\mathbb{C})$, the invariant form, the Cartan
 criteria and the Casimir element, the enveloping algebra and the matrix models — and this article
@@ -35,8 +35,8 @@ Antisymmetric Quaternionic Algebra*, and it is stated here only as the boundary 
 
 **Placement.** The article is the closing entry of the *Specific Theory* section of the block, after
 *The Lie Algebra of the Antisymmetric Plain Algebra* and after the six Common Theory articles
-*Introduction to the Antisymmetric Plain Algebra of Biquaternions*, *Norm and Invertibility in the
-Antisymmetric Plain Algebra*, *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of
+*Introduction to the Antisymmetric Plain Algebra*, *Norm and Invertibility in the
+Antisymmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of
 One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the
 Nilpotents of the Antisymmetric Plain Algebra* and *Square Roots of a General Element in the
 Antisymmetric Plain Algebra*, whose results it reads back as consequences of one law. It is
@@ -52,7 +52,7 @@ a generic one, its identity stated at each use. The **left multiplication** of a
 $\tilde X$ is $L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$, and the **adjoint map** is
 $\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$, so that for an
 alternating product $\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X}$. The twelve structures are
-coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the code has
+coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*: the code has
 three letters, the first $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the general product or its
 symmetrisation or antisymmetrisation, the second $\mathrm P$ or $\mathrm Q$ for the plain or the
 quaternionic row, and the third $\mathrm A$ or $\mathrm S$ for the algebra or sesqualgebra class,
@@ -164,7 +164,7 @@ the centre $\mathbb{C}_{\mathbb{B}}$ (*The Lie Algebra of the Antisymmetric Plai
 
 One law separates the block from the other eleven. The block's product is **alternating** and satisfies the **Jacobi identity**; an alternating product with the Jacobi identity is a **Lie product**, and the block is the only Lie product of the twelve.
 
-**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the antisymmetric plain product is the only one all of whose left multiplications are derivations, equivalently the only **Lie product**.
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the antisymmetric plain product is the only one all of whose left multiplications are derivations, equivalently the only **Lie product**.
 
 *Proof.* The twelve are generated from the four general products by twisting a slot with a conjugation or by (anti)symmetrising, and the three operations decide the two clauses. The ten non-alternating structures fail the Leibniz identity directly, because the criterion of the alternating case is unavailable to them; the one other alternating structure, the antisymmetric quaternionic product, is alternating and fails the Jacobi identity, so by §*The Criterion* it fails the Leibniz identity too. The block is alternating by construction and satisfies the Jacobi identity, so it alone meets both clauses.
 
@@ -201,7 +201,7 @@ derivations are the adjoints of the vector subspace, and the outer derivations a
 *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 - **The enveloping algebra and the matrix models.** The universal enveloping algebra of the bracket
 is *The Lie Algebra of the Antisymmetric Plain Algebra*, and the two matrix models are
-*The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*
+*Introduction to the Symmetric Plain Algebra*
 and *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation
 $M_4(\mathbb{C})_L$*, faithful on the derived algebra and with the centre as kernel.
 
@@ -275,7 +275,7 @@ elements.
 | $\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}=\tilde X\wedge\cdot$ | the adjoint of the block's own bracket, the halved adjoint |
 | $L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)$ | the Leibniz identity, the criterion |
 | $\Lambda=-J$ | the Leibniz defect is the negative of the cyclic sum, for an alternating product |
-| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the kernel of the adjoint representation, the centre of the bracket |
 | $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$ | the image of the adjoint representation, the inner derivations |
 
@@ -288,4 +288,4 @@ elements.
 - *The Lie Algebra of the Antisymmetric Plain Algebra* (`articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md`), for the centre, the derived algebra and the enveloping algebra the criterion delivers.
 - *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form, the Cartan criteria and the Casimir element.
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoint maps, the inner and the outer derivations.
-- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve operations and the row table.
+- *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve operations and the row table.

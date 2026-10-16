@@ -39,10 +39,10 @@ $$
 
 and the **row** is its transpose $X^{\mathsf{T}} = (q_0\ q_1\ q_2\ q_3)$.
 
-The row is the **dual** object: the split-quaternion norm $N$ is a non-degenerate quadratic form on $\mathbb{R}^4$, and its polarisation $B(\tilde q, \tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ provides a bilinear pairing that identifies the coefficient space with its dual, sending $\tilde p$ to the linear functional $\tilde q \mapsto B(\tilde q, \tilde p)$. In the coordinate basis this identification is multiplication by the matrix $\operatorname{diag}(1,1,-1,-1)$:
+The row is the **dual** object: the split-quaternion norm $\langle\cdot\rangle_{\natural}$ is a non-degenerate quadratic form on $\mathbb{R}^4$, and its polarisation $\langle\tilde q,\tilde p\rangle = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ provides a bilinear pairing that identifies the coefficient space with its dual, sending $\tilde p$ to the linear functional $\tilde q \mapsto \langle\tilde q,\tilde p\rangle$. In the coordinate basis this identification is multiplication by the matrix $\operatorname{diag}(1,1,-1,-1)$:
 
 $$
-B(\tilde q, \tilde p) = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1).
+\langle\tilde q,\tilde p\rangle = X^{\mathsf{T}} G Y, \qquad G = \operatorname{diag}(1,1,-1,-1).
 $$
 
 So the row is the dual vector paired with the column through $G$, and the two are equals only because the pairing is non-degenerate; when $G$ is replaced by the identity the pairing is the Euclidean one and the dual is the plain transpose.
@@ -70,7 +70,7 @@ $$
 
 **Proof.** Expand the product bilinearly and read each surviving basis product from the table; for instance the $e_1$-coefficient collects $q_0 p_1$ from $1 \cdot e_1$, $p_0 q_1$ from $e_1 \cdot 1$, $-q_2 p_3$ from $e_2 \cdot e_3 = -e_1$, and $p_2 q_3$ from $e_3 \cdot e_2 = e_1$.
 
-The scalar component of the product, $q_0 p_0 - q_1 p_1 + q_2 p_2 + q_3 p_3$, is exactly the bilinear form $B(\tilde q,\tilde p^{\natural})$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is **not** componentwise, and the sign pattern of the scalar component is that of the form $B$ read against the conjugated coordinates.
+The scalar component of the product, $q_0 p_0 - q_1 p_1 + q_2 p_2 + q_3 p_3$, is exactly the bilinear form $\langle\tilde q,\tilde p^{\natural}\rangle$ evaluated against the conjugate; the remaining coefficients are the antisymmetric remainder. In particular the product is **not** componentwise, and the sign pattern of the scalar component is that of the form $\langle\cdot,\cdot\rangle_{\natural}$ read against the conjugated coordinates.
 
 ## The Three Involutions in Coordinates
 
@@ -102,14 +102,14 @@ So the scalar subspace is the first coordinate axis, the vector subspace is the 
 The split-quaternion norm of $\tilde q$ is
 
 $$
-N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
-of **signature $(2,2)$**, with polarisation $B(\tilde q,\tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \mathsf{M}_2(\tilde q)$.
+of **signature $(2,2)$**, with polarisation $\langle\tilde q,\tilde p\rangle = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $\langle\tilde q\rangle_{\natural} = \det \mathsf{M}_2(\tilde q)$.
 
 The restrictions to the distinguished subspaces read off the coordinates:
 
-| subspace | restriction of $N$ | signature |
+| subspace | restriction of $\langle\cdot\rangle_{\natural}$ | signature |
 |---|---|---|
 | $S$ | $q_0^2$ | positive definite |
 | $V$ | $q_1^2 - q_2^2 - q_3^2$ | $(2,1)$ |
@@ -123,12 +123,12 @@ Only the scalar restriction is definite; the others are indefinite, and their nu
 **Theorem.** The four-vector $(q_0,q_1,q_2,q_3)$ is **invertible** if and only if
 
 $$
-N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2 \neq 0,
+\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 \neq 0,
 $$
 
-and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q) = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
+and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural} = \dfrac{q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3}{q_0^2+q_1^2-q_2^2-q_3^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
 
-**Proof.** The identity $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ gives $\tilde q \cdot (\tilde{q}^{\natural}/N(\tilde q)) = 1$ whenever $N(\tilde q) \neq 0$; conversely, if $N(\tilde q) = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
+**Proof.** The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
 
 The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_0^2 + q_1^2 = q_2^2 + q_3^2$; on the vector subspace $q_0 = 0$ this is the light cone $q_1^2 = q_2^2 + q_3^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_0 = \pm q_2$.
 
@@ -138,9 +138,9 @@ The biquaternion article *The Four-Vector Element Representation of Biquaternion
 
 ## Summary
 
-The four-vector realization reads a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ as the quadruple $(q_0,q_1,q_2,q_3) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $B$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
+The four-vector realization reads a split-quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ as the quadruple $(q_0,q_1,q_2,q_3) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $\langle\cdot,\cdot\rangle_{\natural}$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
 
-The product is computed in components by the displayed formula, whose scalar part is $B(\tilde q,\tilde p^{\natural})$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
+The product is computed in components by the displayed formula, whose scalar part is $\langle\tilde q,\tilde p^{\natural}\rangle$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_1,q_2,q_3)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_0$-axis ($S$), $\tilde q^0=0$ ($V$), and the $(q_0,q_2)$-, $(q_0,q_3)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$, restricting to $q_0^2$, $q_1^2-q_2^2-q_3^2$, $q_0^2-q_2^2$ and $q_0^2-q_3^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
 
 ## Summary of Notation
 
@@ -152,11 +152,11 @@ The product is computed in components by the displayed formula, whose scalar par
 | $\tilde q^0 = q_0$, $(\tilde q^1,\tilde q^2,\tilde q^3) = (q_1,q_2,q_3)$ | the scalar and vector components | this article |
 | $X$, $X^{\mathsf{T}}$ | the column and the dual row | this article |
 | $G = \operatorname{diag}(1,1,-1,-1)$ | the matrix of the polarised form in coordinates | this article |
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $B(\tilde q,\tilde p)$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q,\tilde p\rangle$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | ${}^{\natural}, \alpha, \rho$ | the three involutions as sign flips | *Split-Quaternion Subspaces and the Involutions* |
 | $S, V, \mathbb{D}_2, \mathbb{D}_3$ | the distinguished subspaces as coordinate conditions | *Split-Quaternion Relations Between Subspaces* |
-| $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 

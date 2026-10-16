@@ -56,7 +56,7 @@ $$
 \mathcal{P}_T h(x)=\tfrac12 h(x/2)+\tfrac12 h((x+1)/2).
 $$
 
-The operator preserves the constants, so Lebesgue measure is invariant; it is not an isometry and not invertible. Applied to the Bernoulli polynomials $B_n$, defined by $\sum_{n\ge0}B_n(x)t^n/n!=te^{xt}/(e^t-1)$ with $B_1(x)=x-\tfrac12$, one has exactly
+The operator preserves the constants, so Lebesgue measure is invariant; it is not an isometry and not invertible. Applied to the Bernoulli polynomials $B_n$, defined by $\sum_{n\ge0}B_n(x)t^n/n!=t\exp(xt)/(\exp(t)-1)$ with $B_1(x)=x-\tfrac12$, one has exactly
 
 $$
 \mathcal{P}_T B_n=2^{-n}B_n ;
@@ -105,15 +105,15 @@ consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded 
 **Definition.** Let $T$ be a piecewise monotone map and let $\varphi:X\to\mathbb{R}$ be a **potential** (a Hölder function). The **weighted transfer operator** (or **Ruelle operator**) with potential $\varphi$ is
 
 $$
-\mathcal{P}_\varphi h(x)=\sum_{i=1}^{k}e^{\varphi(y_i(x))}\,\frac{h(y_i(x))}{|T'(y_i(x))|},
+\mathcal{P}_\varphi h(x)=\sum_{i=1}^{k}\exp(\varphi(y_i(x)))\,\frac{h(y_i(x))}{|T'(y_i(x))|},
 $$
 
 which reduces to $\mathcal{P}_T$ when $\varphi=-\log|T'|$ on each branch, so that $\mathcal{P}_T=\mathcal{P}_{-\log|T'|}$; the operator with $\varphi=0$ is the **Perron–Frobenius operator of the map read against the measure of maximal entropy**.
 
-**Theorem (the pressure as a spectral radius).** For a topologically mixing piecewise monotone map $T$ and a Hölder potential $\varphi$ the spectral radius of $\mathcal{P}_\varphi$ on the Hölder space is $e^{P(\varphi)}$, where $P(\varphi)$ is the **topological pressure**, the eigenvalue $e^{P(\varphi)}$ is simple, and its eigenvector and its dual eigenfunctional give the **Gibbs state** of $\varphi$: the unique invariant measure $\mu_\varphi$ with
+**Theorem (the pressure as a spectral radius).** For a topologically mixing piecewise monotone map $T$ and a Hölder potential $\varphi$ the spectral radius of $\mathcal{P}_\varphi$ on the Hölder space is $\exp(P(\varphi))$, where $P(\varphi)$ is the **topological pressure**, the eigenvalue $\exp(P(\varphi))$ is simple, and its eigenvector and its dual eigenfunctional give the **Gibbs state** of $\varphi$: the unique invariant measure $\mu_\varphi$ with
 
 $$
-\mu_\varphi(T(A))=\int_Ae^{P(\varphi)-\varphi}\,d\mu_\varphi \qquad \text{locally},
+\mu_\varphi(T(A))=\int_A\exp(P(\varphi)-\varphi)\,d\mu_\varphi \qquad \text{locally},
 $$
 
 and $h_{\mu_\varphi}+\int\varphi\,d\mu_\varphi=P(\varphi)$, the **variational principle**.
@@ -126,7 +126,7 @@ and $h_{\mu_\varphi}+\int\varphi\,d\mu_\varphi=P(\varphi)$, the **variational pr
 
 ## Summary
 
-The **transfer operator** (Perron–Frobenius operator) of a nonsingular map $T$ is the operator $\mathcal{P}_T$ on $L^1(m)$ defined by $\int_A\mathcal{P}_Th\,dm=\int_{T^{-1}A}h\,dm$, equivalently by the pairing $\int\mathcal{P}_Th\cdot g\,dm=\int h\cdot g\circ T\,dm$; it is linear, positive and a contraction, functorial with reversed composition, $\mathcal{P}_{T\circ S}=\mathcal{P}_S\mathcal{P}_T$, and it carries densities to the densities of their pushforwards, so its positive fixed points are the **invariant densities**. For a piecewise monotone map it is the inverse-branch sum $\mathcal{P}_Th(x)=\sum_i h(y_i(x))/|T'(y_i(x))|$; the doubling map gives $\mathcal{P}_Th(x)=\tfrac12h(x/2)+\tfrac12h((x+1)/2)$ with the eigenfunctions $B_n$ and eigenvalues $2^{-n}$ on the Bernoulli polynomials (verified in rational arithmetic for $n\le4$), the tent map gives a uniform invariant density, and the Gauss map gives the Gauss–Kuzmin–Wirsing operator with the Gauss density and the spectral gap of *Dynamics and Number Theory*. The **Perron–Frobenius theorem** makes the spectral radius simple with a positive eigenvector under compactness and mixing; the **Lasota–Yorke inequality** gives the **quasi-compactness** and the spectral gap on a space of functions of bounded variation, which is the exponential decay of correlations and the analytic input of the limit theorems; and the **weighted transfer operator** $\mathcal{P}_\varphi$ has spectral radius $e^{P(\varphi)}$ with the pressure, the Gibbs state and the variational principle, quoted from *Hyperbolic Dynamics and Anosov Systems*. The identification of $\mathcal P_T$ with the adjoint of the Koopman operator and its reversal by a time-reversing involution are in the `- * Operator Theory` group and are not used here.
+The **transfer operator** (Perron–Frobenius operator) of a nonsingular map $T$ is the operator $\mathcal{P}_T$ on $L^1(m)$ defined by $\int_A\mathcal{P}_Th\,dm=\int_{T^{-1}A}h\,dm$, equivalently by the pairing $\int\mathcal{P}_Th\cdot g\,dm=\int h\cdot g\circ T\,dm$; it is linear, positive and a contraction, functorial with reversed composition, $\mathcal{P}_{T\circ S}=\mathcal{P}_S\mathcal{P}_T$, and it carries densities to the densities of their pushforwards, so its positive fixed points are the **invariant densities**. For a piecewise monotone map it is the inverse-branch sum $\mathcal{P}_Th(x)=\sum_i h(y_i(x))/|T'(y_i(x))|$; the doubling map gives $\mathcal{P}_Th(x)=\tfrac12h(x/2)+\tfrac12h((x+1)/2)$ with the eigenfunctions $B_n$ and eigenvalues $2^{-n}$ on the Bernoulli polynomials (verified in rational arithmetic for $n\le4$), the tent map gives a uniform invariant density, and the Gauss map gives the Gauss–Kuzmin–Wirsing operator with the Gauss density and the spectral gap of *Dynamics and Number Theory*. The **Perron–Frobenius theorem** makes the spectral radius simple with a positive eigenvector under compactness and mixing; the **Lasota–Yorke inequality** gives the **quasi-compactness** and the spectral gap on a space of functions of bounded variation, which is the exponential decay of correlations and the analytic input of the limit theorems; and the **weighted transfer operator** $\mathcal{P}_\varphi$ has spectral radius $\exp(P(\varphi))$ with the pressure, the Gibbs state and the variational principle, quoted from *Hyperbolic Dynamics and Anosov Systems*. The identification of $\mathcal P_T$ with the adjoint of the Koopman operator and its reversal by a time-reversing involution are in the `- * Operator Theory` group and are not used here.
 
 ## Summary of Notation
 
@@ -141,7 +141,7 @@ The **transfer operator** (Perron–Frobenius operator) of a nonsingular map $T$
 | $\rho(\mathcal{P})$, $r_{\mathrm{ess}}(\mathcal{P})$ | Spectral and essential spectral radius |
 | $\mathrm{BV}$ | Space of functions of bounded variation |
 | $\varphi$, $\mathcal{P}_\varphi$ | Potential and weighted transfer (Ruelle) operator |
-| $P(\varphi)$ | Topological pressure, $\rho(\mathcal{P}_\varphi)=e^{P(\varphi)}$ |
+| $P(\varphi)$ | Topological pressure, $\rho(\mathcal{P}_\varphi)=\exp(P(\varphi))$ |
 | $\mu_\varphi$ | Gibbs state (equilibrium state) of $\varphi$ |
 
 ## Further Reading

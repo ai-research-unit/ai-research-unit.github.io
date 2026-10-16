@@ -18,7 +18,7 @@ $$
 
 **Proposition.** $B^{*}$ is a non-degenerate reflexive pairing on $V^{*}$ with the same involution $\varsigma$ and the same reflexive sign $\varepsilon$ as $B$; the assignment $\varphi \mapsto x_{\varphi}$ is an isomorphism $V^{*} \to V$ carrying $B^{*}$ to $B$, and it is $\varsigma$-semilinear in the sesquilinear case.
 
-**Proof.** Well-definedness and bilinearity are inherited; non-degeneracy follows because $\varphi \mapsto x_\varphi$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto B(x,\cdot)$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.
+**Proof.** Well-definedness and bilinearity are inherited; non-degeneracy follows because $\varphi \mapsto x_\varphi$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto \langle x,\cdot\rangle$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.
 
 **Lemma (the transpose transported is the adjoint).** For $C \in \operatorname{End}_F(V)$ and $\varphi \in V^{*}$ the representing vector of the transpose is
 

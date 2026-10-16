@@ -21,13 +21,13 @@ $$
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
-\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\hat u} - \psi_{n-\hat u}}{2a}.
+\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
 $$
 
 The naive action is then
 
 $$
-S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\hat u}-\psi_{n-\hat u}}{2a} + m\psi_n\right),
+S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\vec u}-\psi_{n-\vec u}}{2a} + m\psi_n\right),
 $$
 
 which reduces to the continuum action as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
@@ -61,9 +61,9 @@ whose zeros are the local minima about which the species live — eight from the
 The naive action carries a symmetry absent from the continuum: for each of the sixteen sign patterns $\pi_A$ there is a transformation
 
 $$
-\psi_n \;\to\; e^{-in\cdot\pi_A}\,S_A\,\psi_n,
+\psi_n \;\to\; \exp(-in\cdot\pi_A)\,S_A\,\psi_n,
 \qquad
-\bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,e^{in\cdot\pi_A},
+\bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(in\cdot\pi_A),
 \qquad
 S_0 = I,\quad S_\nu = i\gamma_5\gamma_\nu ,
 $$
@@ -74,7 +74,7 @@ with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transform
 
 ### Statement and assumptions
 
-The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Q$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:
+The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Ϙ$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:
 
 - **translational invariance**, so that $F(x,y) = F(x-y)$;
 - **locality**, meaning $F(x-y)$ decays fast enough that its Fourier transform has continuous derivatives;
@@ -154,7 +154,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 
 | Symbol | Meaning |
 |---|---|
-| $a$, $n$, $\hat u$ | Lattice spacing, site index, unit lattice vector |
+| $a$, $n$, $\vec u$ | Lattice spacing, site index, unit lattice vector |
 | $S_F^L$ | Naive lattice fermion action |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
 | $S_\nu = i\gamma_5\gamma_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |

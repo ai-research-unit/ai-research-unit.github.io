@@ -11,7 +11,7 @@ The key structural fact is that the Fourier kernel is a biquaternion exponential
 A root of $-1$ is required because of the **de Moivre formula**: the identity
 
 $$
-e^{\rho\theta} = \cos\theta \, e_0 + \sin\theta \, \rho, \qquad \rho^2 = -e_0,
+\exp(\rho\theta) = \cos\theta \, e_0 + \sin\theta \, \rho, \qquad \rho^2 = -e_0,
 $$
 
 holds for any root $\rho$ of $-1$, as a consequence of the alternating structure of the powers of $\rho$ and the power series of the exponential, cosine, and sine. A Fourier transform analyses a signal into sinusoidal components, and the sinusoids are the real and scalar multiples of the exponential of the root.
@@ -28,7 +28,7 @@ $$
 \tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 **Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
 
@@ -45,22 +45,22 @@ $$
 The **biquaternion Fourier kernel** of length $N$ is the function
 
 $$
-W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right), \qquad n, u \in \{0, 1, \ldots, N-1\}.
+W_N(n, \ell) = \exp\left(-2\pi \rho \frac{n\ell}{N}\right), \qquad n, \ell \in \{0, 1, \ldots, N-1\}.
 $$
 
 Because $\rho^2 = -e_0$, the kernel takes the closed form
 
 $$
-W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_0 - \sin\left(2\pi \frac{nu}{N}\right) \rho,
+W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_0 - \sin\left(2\pi \frac{n\ell}{N}\right) \rho,
 $$
 
-where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit biquaternion in the sense that its biquaternion norm is $e_0$:
+where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi n\ell/N$. The kernel is therefore a unit biquaternion in the sense that its biquaternion norm is $e_0$:
 
 $$
-N(W_N(n, u)) = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1, \qquad N(W_N(n, u)) = e_0.
+\langle W_N(n, \ell)\rangle_{\natural} = \cos^2\left(2\pi \frac{n\ell}{N}\right) + \sin^2\left(2\pi \frac{n\ell}{N}\right) = 1, \qquad \langle W_N(n, \ell)\rangle_{\natural} = e_0.
 $$
 
-In particular, the kernel is always invertible, regardless of the choice of root and the values of $n, u$.
+In particular, the kernel is always invertible, regardless of the choice of root and the values of $n, \ell$.
 
 ### The Condition on the Root
 
@@ -101,31 +101,31 @@ The non-trivial roots exist because the biquaternion algebra is not a division a
 Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{B}$ be a biquaternion-valued sequence. The **discrete biquaternion Fourier transform** of $f$ is the sequence $F : \{0, 1, \ldots, N-1\} \to \mathbb{B}$ defined by
 
 $$
-F[u] = \sum_{n=0}^{N-1} W_N(n, u) f[n], \qquad u \in \{0, 1, \ldots, N-1\},
+F[\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) f[n], \qquad \ell \in \{0, 1, \ldots, N-1\},
 $$
 
-where $W_N(n, u)$ is the kernel defined above. The **inverse transform** is
+where $W_N(n, \ell)$ is the kernel defined above. The **inverse transform** is
 
 $$
-f[n] = \frac{1}{N} \sum_{u=0}^{N-1} W_N(n, u)^{-1} F[u], \qquad n \in \{0, 1, \ldots, N-1\}.
+f[n] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{-1} F[\ell], \qquad n \in \{0, 1, \ldots, N-1\}.
 $$
 
 Since the kernel is a unit biquaternion, its inverse is its quaternion conjugate:
 
 $$
-W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_0 + \sin\left(2\pi \frac{nu}{N}\right) \rho.
+W_N(n, \ell)^{-1} = \overline{W_N(n, \ell)} = \cos\left(2\pi \frac{n\ell}{N}\right) e_0 + \sin\left(2\pi \frac{n\ell}{N}\right) \rho.
 $$
 
 So the inverse transform is
 
 $$
-f[n] = \frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} F[u], \qquad n \in \{0, 1, \ldots, N-1\}.
+f[n] = \frac{1}{N} \sum_{\ell=0}^{N-1} \overline{W_N(n, \ell)} F[\ell], \qquad n \in \{0, 1, \ldots, N-1\}.
 $$
 
 The placement of the kernel on the **left** of $f[n]$ is a choice. An alternative transform has the kernel on the right:
 
 $$
-F[u] = \sum_{n=0}^{N-1} f[n] \, W_N(n, u).
+F[\ell] = \sum_{n=0}^{N-1} f[n] \, W_N(n, \ell).
 $$
 
 The two transforms are closely related: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)
@@ -134,22 +134,22 @@ The two transforms are closely related: the conjugate of the left-kernel transfo
 
 The invertibility of the transform depends on the properties of the kernel and of the signal.
 
-**The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $N(W_N(n, u)) = e_0$, as shown above. So the kernel is always invertible.
+**The kernel has unit norm.** For every $n$ and $\ell$, the kernel $W_N(n, \ell)$ satisfies $\langle W_N(n, \ell)\rangle_{\natural} = e_0$, as shown above. So the kernel is always invertible.
 
-**The signal may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $N(f[n]) = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
+**The signal may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $\langle f[n]\rangle_{\natural} = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
 
 **Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
 
 **Proof.** Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
 
 $$
-\frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} F[u] = \frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} \sum_{m=0}^{N-1} W_N(m, u) f[m] = \frac{1}{N} \sum_{m=0}^{N-1} \left(\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u)\right) f[m].
+\frac{1}{N} \sum_{\ell=0}^{N-1} \overline{W_N(n, \ell)} F[\ell] = \frac{1}{N} \sum_{\ell=0}^{N-1} \overline{W_N(n, \ell)} \sum_{m=0}^{N-1} W_N(m, \ell) f[m] = \frac{1}{N} \sum_{m=0}^{N-1} \left(\sum_{\ell=0}^{N-1} \overline{W_N(n, \ell)} W_N(m, \ell)\right) f[m].
 $$
 
 The inner sum is the standard orthogonality relation:
 
 $$
-\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\sum_{\ell=0}^{N-1} \overline{W_N(n, \ell)} W_N(m, \ell) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
 $$
 
 which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
@@ -163,22 +163,22 @@ For a signal $f$ that takes values in the real quaternion subspace $\mathbb{H}_{
 **Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{B}}$ be a real quaternion-valued signal, and let $F$ be its discrete biquaternion Fourier transform with respect to a root $\rho$. Then
 
 $$
-F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1.
+F[N-\ell] = \overline{F[\ell]}, \qquad \ell = 1, \ldots, N-1.
 $$
 
 **Proof.** The proof uses the reality of $f$, i.e., $\overline{f[n]} = f[n]$ for every $n$, and the identity
 
 $$
-\overline{W_N(n, N-u)} = W_N(n, u),
+\overline{W_N(n, N-\ell)} = W_N(n, \ell),
 $$
 
 which follows from the closed form of the kernel and the parity of the cosine and sine. Then
 
 $$
-F[N-u] = \sum_{n=0}^{N-1} W_N(n, N-u) f[n] = \sum_{n=0}^{N-1} \overline{W_N(n, u)} \overline{f[n]} = \overline{\sum_{n=0}^{N-1} W_N(n, u) f[n]} = \overline{F[u]}.
+F[N-\ell] = \sum_{n=0}^{N-1} W_N(n, N-\ell) f[n] = \sum_{n=0}^{N-1} \overline{W_N(n, \ell)} \overline{f[n]} = \overline{\sum_{n=0}^{N-1} W_N(n, \ell) f[n]} = \overline{F[\ell]}.
 $$
 
-The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-u] = F[u]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum, and it is the reason the standard techniques of real-signal processing extend to the biquaternion setting, provided the signal is real quaternion-valued.
+The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell] = F[\ell]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum, and it is the reason the standard techniques of real-signal processing extend to the biquaternion setting, provided the signal is real quaternion-valued.
 
 ## Factorization into Four Complex Fourier Transforms
 
@@ -204,7 +204,7 @@ $$
 Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\xi = \langle \xi, \vec v \rangle,
 $$
 
-where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, §*The General Plain Bilinear Product $\tilde P\tilde Q$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
+where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, §*The General Plain Bilinear Product $\tilde P\tilde Q$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
 
 ### The Factorization
 
@@ -217,10 +217,10 @@ $$
 and substituting into the transform with the closed form of the kernel,
 
 $$
-F[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_0 - \sin\theta_n \, \rho\right) \left(w[n] e_0 + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi\right),
+F[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_0 - \sin\theta_n \, \rho\right) \left(w[n] e_0 + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi\right),
 $$
 
-where $\theta_n = 2\pi nu/N$.
+where $\theta_n = 2\pi n\ell/N$.
 
 Expanding the product and using the multiplication rules of the basis $\{e_0, \rho, \nu, \xi\}$:
 
@@ -235,36 +235,36 @@ $$
 and collecting terms by basis element, we obtain four sums:
 
 $$
-F[u] = F_0[u] e_0 + F_\rho[u] \rho + F_\nu[u] \nu + F_\xi[u] \xi,
+F[\ell] = F_0[\ell] e_0 + F_\rho[\ell] \rho + F_\nu[\ell] \nu + F_\xi[\ell] \xi,
 $$
 
 where
 
 $$
-F_0[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, w[n] + \sin\theta_n \, Q_\rho[n]\right),
+F_0[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, w[n] + \sin\theta_n \, Q_\rho[n]\right),
 $$
 
 $$
-F_\rho[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\rho[n] - \sin\theta_n \, w[n]\right),
+F_\rho[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\rho[n] - \sin\theta_n \, w[n]\right),
 $$
 
 $$
-F_\nu[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\xi[n]\right),
+F_\nu[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\xi[n]\right),
 $$
 
 $$
-F_\xi[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\xi[n] - \sin\theta_n \, Q_\nu[n]\right).
+F_\xi[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\xi[n] - \sin\theta_n \, Q_\nu[n]\right).
 $$
 
 ### The Complex Fourier Transforms
 
-Each of the four sums is a complex linear combination of the cosine and sine sums with the same argument $\theta_n = 2\pi nu/N$. Using the complex exponential, we can write each sum as a combination of two ordinary complex Fourier transforms:
+Each of the four sums is a complex linear combination of the cosine and sine sums with the same argument $\theta_n = 2\pi n\ell/N$. Using the complex exponential, we can write each sum as a combination of two ordinary complex Fourier transforms:
 
 $$
-F_\bullet[u] = \frac{1}{2}\left(\hat{G}_\bullet^{(+)}[u] + \hat{G}_\bullet^{(-)}[u]\right) + \frac{1}{2i}\left(\hat{G}_\bullet^{(+)}[u] - \hat{G}_\bullet^{(-)}[u]\right),
+F_\bullet[\ell] = \frac{1}{2}\left(\hat{G}_\bullet^{(+)}[\ell] + \hat{G}_\bullet^{(-)}[\ell]\right) + \frac{1}{2i}\left(\hat{G}_\bullet^{(+)}[\ell] - \hat{G}_\bullet^{(-)}[\ell]\right),
 $$
 
-where $\hat{G}_\bullet^{(\pm)}[u]$ are the ordinary complex Fourier transforms of the sequences $G_\bullet^{(\pm)}[n]$ defined by
+where $\hat{G}_\bullet^{(\pm)}[\ell]$ are the ordinary complex Fourier transforms of the sequences $G_\bullet^{(\pm)}[n]$ defined by
 
 $$
 G_\bullet^{(\pm)}[n] = G_\bullet[n] \exp\left(\pm 2\pi i \frac{n}{N}\right),
@@ -276,7 +276,7 @@ Concretely, the factorization is the following algorithm:
 
 1. **Change of basis.** For each $n$, write the sample $f[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$, obtaining four complex coefficients $w[n], Q_\rho[n], Q_\nu[n], Q_\xi[n]$.
 2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex sequences obtained by combining the coefficients as above. The result is four complex spectra.
-3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F[u]$.
+3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F[\ell]$.
 
 The result is a fast algorithm for the discrete biquaternion Fourier transform, using existing complex FFT libraries. The cost is four complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation of the transform, which is $O(N^2)$.
 
@@ -301,13 +301,13 @@ The convolution is **not commutative** in general, because the biquaternion prod
 **Theorem (convolution theorem).** Let $f, g$ be biquaternion-valued sequences with finite support, and let $\mathcal{F}$ denote the discrete biquaternion Fourier transform with the kernel on the left:
 
 $$
-\mathcal{F}[f][u] = \sum_{n=0}^{N-1} W_N(n, u) f[n].
+\mathcal{F}[f][\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) f[n].
 $$
 
 Then
 
 $$
-\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u],
+\mathcal{F}[f * g][\ell] = \mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell],
 $$
 
 where the product on the right is the biquaternion product.
@@ -315,13 +315,13 @@ where the product on the right is the biquaternion product.
 **Proof.** Compute
 
 $$
-\mathcal{F}[f * g][u] = \sum_{n=0}^{N-1} W_N(n, u) \sum_{m=0}^{N-1} f[m] g[n-m] = \sum_{m=0}^{N-1} \sum_{n=0}^{N-1} W_N(n, u) f[m] g[n-m].
+\mathcal{F}[f * g][\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) \sum_{m=0}^{N-1} f[m] g[n-m] = \sum_{m=0}^{N-1} \sum_{n=0}^{N-1} W_N(n, \ell) f[m] g[n-m].
 $$
 
-Change variables $n = m + k$, so that $W_N(n, u) = W_N(m + k, u) = W_N(m, u) W_N(k, u)$ (the kernel is multiplicative in the index because the exponential is). Then
+Change variables $n = m + k$, so that $W_N(n, \ell) = W_N(m + k, \ell) = W_N(m, \ell) W_N(k, \ell)$ (the kernel is multiplicative in the index because the exponential is). Then
 
 $$
-\mathcal{F}[f * g][u] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, u) f[m] W_N(k, u) g[k] = \left(\sum_{m=0}^{N-1} W_N(m, u) f[m]\right) \left(\sum_{k=0}^{N-1} W_N(k, u) g[k]\right) = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u].
+\mathcal{F}[f * g][\ell] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, \ell) f[m] W_N(k, \ell) g[k] = \left(\sum_{m=0}^{N-1} W_N(m, \ell) f[m]\right) \left(\sum_{k=0}^{N-1} W_N(k, \ell) g[k]\right) = \mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell].
 $$
 
 The change of variables and the multiplicativity of the kernel in the index are justified by the closed form of the kernel.
@@ -329,7 +329,7 @@ The change of variables and the multiplicativity of the kernel in the index are 
 **Corollary (right-kernel case).** For the transform with the kernel on the right,
 
 $$
-\mathcal{F}_{\text{right}}[f * g][u] = \mathcal{F}_{\text{right}}[g][u] \cdot \mathcal{F}_{\text{right}}[f][u].
+\mathcal{F}_{\text{right}}[f * g][\ell] = \mathcal{F}_{\text{right}}[g][\ell] \cdot \mathcal{F}_{\text{right}}[f][\ell].
 $$
 
 The order of the factors is reversed, because the kernel is on the other side.
@@ -350,7 +350,7 @@ The non-commutativity is a genuinely biquaternionic feature of the harmonic anal
 
 ### Samples of Vanishing Norm
 
-A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
+A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
 
 More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion $\tilde{R}$ with $f[n] \circ \tilde{R} = 0$ or $\tilde{R} \circ f[n] = 0$. The kernel is invertible, so multiplying $f[n]$ by the kernel gives another zero divisor, and the sum over $n$ may or may not preserve the information of $f[n]$.
 
@@ -367,7 +367,7 @@ The issue can be avoided by restricting the signals to a subspace where the biqu
 
 ### The Open Question
 
-The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, u) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
+The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, \ell) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
 
 ## The Two-Dimensional Transform
 
@@ -376,7 +376,7 @@ The precise condition under which the transform is invertible on a signal with z
 For a biquaternion-valued image $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{B}$, the **two-dimensional discrete biquaternion Fourier transform** is
 
 $$
-F[u, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, u) \, f[m, n] \, W_N(n, v),
+F[\ell, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, \ell) \, f[m, n] \, W_N(n, v),
 $$
 
 where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, respectively. The two kernels can also be placed both on the left, or both on the right, depending on the convention.
@@ -390,7 +390,7 @@ The two-dimensional transform factorizes into four two-dimensional complex trans
 The two-dimensional kernel is **separable**, in the sense that
 
 $$
-W_{M \times N}((m, n), (u, v)) = W_M(m, u) \, W_N(n, v).
+W_{M \times N}((m, n), (\ell, v)) = W_M(m, \ell) \, W_N(n, v).
 $$
 
 This follows from the multiplicativity of the exponential. The separability is what allows the two-dimensional transform to be computed as a sequence of one-dimensional transforms.
@@ -411,7 +411,7 @@ $$
 \mathcal{X}[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$
 
-the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = e^{s}$ turns the sum into $\sum_n f_n e^{-ns}$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = e^{2\pi i u/N}$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
+the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
 
 The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde Q'$-scaling rule would require every sample to commute with $\tilde Q'$. The two conventions are interconverted by the quaternion conjugate. Writing
 
@@ -429,7 +429,7 @@ because quaternion conjugation reverses products and $\overline{\tilde{Q}^{-1}} 
 
 ### The Region of Convergence
 
-Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Norm and Invertibility in the General Quaternionic Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
+Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert \langle\tilde{Q}\rangle_{\natural}\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Norm and Invertibility in the General Quaternionic Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
 
 $$
 r(f_n \tilde{Q}^{-n}) = r(f_n)\,r(\tilde{Q})^{-n}.
@@ -440,7 +440,7 @@ So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has
 **Vanishing of the seminorm is not convergence.** The standard idempotent of *Idempotents of the Biquaternion Algebra* is the one attached to the root $ie_3$ of $+1$: here $(ie_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents.
 
 $$
-\tilde\Pi_+ = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_+^2 = \tilde\Pi_+, \qquad N(\tilde\Pi_+) = 0, \qquad r(\tilde\Pi_+) = 0,
+\tilde\Pi_+ = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_+^2 = \tilde\Pi_+, \qquad \langle\tilde\Pi_+\rangle_{\natural} = 0, \qquad r(\tilde\Pi_+) = 0,
 $$
 
 and its powers are $\tilde\Pi_+^{\,k} = \tilde\Pi_+$ for $k \ge 1$. Multiplicativity of $r$ then gives
@@ -463,10 +463,10 @@ $$
 
 fails there, because $e_0 - \tilde\Pi_+ = \tilde\Pi_-$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, has modulus less than one; the sum is then $(e_0 - \tilde{Q})^{-1}$, as the identity $(e_0 - \tilde{Q})S_K = e_0 - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
 
-**The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = N(\tilde{Q})$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $\tilde{Q}^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (c\tilde{Q}^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(\tilde{Q}) > \sigma_f$ always **contains** the true region and may contain divergent points. For
+**The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = \langle\tilde{Q}\rangle_{\natural}$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $\tilde{Q}^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (c\tilde{Q}^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(\tilde{Q}) > \sigma_f$ always **contains** the true region and may contain divergent points. For
 
 $$
-\tilde{Q} = 3e_0 + ie_1, \qquad N(\tilde{Q}) = 8, \qquad r(\tilde{Q}) = 2\sqrt2 \approx 2.83,
+\tilde{Q} = 3e_0 + ie_1, \qquad \langle\tilde{Q}\rangle_{\natural} = 8, \qquad r(\tilde{Q}) = 2\sqrt2 \approx 2.83,
 $$
 
 the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the region, although $\sum_k (2.5\,\tilde{Q}^{-1})^k$ diverges, its partial sums reaching Euclidean norm $6.8 \times 10^{19}$ at $k = 200$. For an element with real quaternion coordinates the two eigenvalues are conjugate, $r$ is their common modulus, and the two regions coincide, so the correction concerns the biquaternions proper and not the quaternion subspace. In the applications the variable is a complex scalar, where $\tilde{Q}^{-n}$ has norm $\lvert \tilde{Q}\rvert^{-n}$ and the classical theory of the complex Z transform carries over to the coefficients unchanged.
@@ -499,7 +499,7 @@ In the table below the entry $n$ abbreviates the sequence $ne_0$, and the variab
 | $n^2$ | $(\tilde{Q} + \tilde{Q}^2)(\tilde{Q} - e_0)^{-3}$ |
 | $\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $(e_0 - \tilde P\tilde{Q}^{-1})^{-1}$ |
 | $n\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $\tilde P\tilde{Q}^{-1}(e_0 - \tilde P\tilde{Q}^{-1})^{-2}$ |
-| $\dfrac{\tilde Q'^n}{n!}$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ | $e^{\tilde Q'\tilde{Q}^{-1}}$ |
+| $\dfrac{\tilde Q'^n}{n!}$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ | $\exp(\tilde Q'\tilde{Q}^{-1})$ |
 
 ### Recurrence Relations
 
@@ -511,31 +511,31 @@ $$
 
 where the coefficients $p_m$ are biquaternions and the right-hand side $g$ is a known sequence. Transforming both sides with the shifting and linearity rules converts the recurrence into an algebraic equation for $\mathcal{X}[f]$, which is solved in the algebra; the sequence is then read off the table of elementary sequences. It is the discrete analogue of the Laplace-transform solution of a linear differential equation with constant coefficients.
 
-**Example.** Let $u = e_1 + e_2$, so that $u^2 = -2e_0$, and let
+**Example.** Let $\vec Q = e_1 + e_2$, so that $\vec Q^2 = -2e_0$, and let
 
 $$
-f_{n+2} = f_{n+1}(u - e_0) + f_nu, \qquad f_0 = e_0, \qquad f_1 = u .
+f_{n+2} = f_{n+1}(\vec Q - e_0) + f_n\vec Q, \qquad f_0 = e_0, \qquad f_1 = \vec Q .
 $$
 
 Transforming both sides and using the shifting rule, with $\tilde{Q}$ central,
 
 $$
-\tilde{Q}^2\bigl(\mathcal{X}[f] - e_0 - u\tilde{Q}^{-1}\bigr) = \tilde{Q}\bigl(\mathcal{X}[f] - e_0\bigr)(u - e_0) + \mathcal{X}[f]u,
+\tilde{Q}^2\bigl(\mathcal{X}[f] - e_0 - \vec Q\tilde{Q}^{-1}\bigr) = \tilde{Q}\bigl(\mathcal{X}[f] - e_0\bigr)(\vec Q - e_0) + \mathcal{X}[f]\vec Q,
 $$
 
-which, after $e_0u = u$ and $e_0^2 = e_0$, is the linear equation
+which, after $e_0\vec Q = \vec Q$ and $e_0^2 = e_0$, is the linear equation
 
 $$
-\mathcal{X}[f](\tilde{Q})\,(\tilde{Q}^2 + \tilde{Q} - \tilde{Q}u - u) = \tilde{Q}^2 + \tilde{Q} .
+\mathcal{X}[f](\tilde{Q})\,(\tilde{Q}^2 + \tilde{Q} - \tilde{Q}\vec Q - \vec Q) = \tilde{Q}^2 + \tilde{Q} .
 $$
 
-The left factor is the product $(\tilde{Q} + e_0)(\tilde{Q} - u)$ of two commuting factors, and $\tilde{Q}^2 + \tilde{Q} = \tilde{Q}(\tilde{Q} + e_0)$, so
+The left factor is the product $(\tilde{Q} + e_0)(\tilde{Q} - \vec Q)$ of two commuting factors, and $\tilde{Q}^2 + \tilde{Q} = \tilde{Q}(\tilde{Q} + e_0)$, so
 
 $$
-\mathcal{X}[f](\tilde{Q}) = \tilde{Q}(\tilde{Q} - u)^{-1} = (e_0 - u\tilde{Q}^{-1})^{-1}.
+\mathcal{X}[f](\tilde{Q}) = \tilde{Q}(\tilde{Q} - \vec Q)^{-1} = (e_0 - \vec Q\tilde{Q}^{-1})^{-1}.
 $$
 
-By the table this is the transform of the sequence $f_n = u^n$, which satisfies the recurrence because $u^{n+1}(u - e_0) + u^{n+1} = u^{n+2}$, and satisfies the initial values. The solution is
+By the table this is the transform of the sequence $f_n = \vec Q^n$, which satisfies the recurrence because $\vec Q^{n+1}(\vec Q - e_0) + \vec Q^{n+1} = \vec Q^{n+2}$, and satisfies the initial values. The solution is
 
 $$
 f_n = (e_1 + e_2)^n, \qquad n \ge 0 .
@@ -571,7 +571,7 @@ The price is the vanishing-norm phenomenon of the previous section, which the co
 
 ## Summary
 
-The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, u) = \exp(-2\pi \rho nu/N)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
+The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, \ell) = \exp(-2\pi \rho n\ell/N)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
 
 The transform is invertible on signals of non-vanishing norm, and it satisfies the conjugate symmetry for real quaternion signals. It factorizes into four complex Fourier transforms, which gives a fast algorithm using existing complex FFT libraries. The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel.
 
@@ -587,17 +587,17 @@ The infinite-sequence analogue is the **biquaternion Z transform**, $\mathcal{X}
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $f : \{0,\dots,N-1\} \to \mathbb{B}$ | Biquaternion-valued sequence |
-| $F[u]$ | Discrete biquaternion Fourier transform of $f$, defined by $F[u] = \sum_n W_N(n,u)f[n]$ |
-| $W_N(n,u) = \exp(-2\pi\rho nu/N)$ | Discrete Fourier kernel, placed on the left of $f$; $\overline{W_N(n,u)}$ gives the inverse transform |
+| $F[\ell]$ | Discrete biquaternion Fourier transform of $f$, defined by $F[\ell] = \sum_n W_N(n,\ell)f[n]$ |
+| $W_N(n,\ell) = \exp(-2\pi\rho n\ell/N)$ | Discrete Fourier kernel, placed on the left of $f$; $\overline{W_N(n,\ell)}$ gives the inverse transform |
 | $\rho$ | Root of $-1$ in $\mathbb{B}$; the degenerate roots give the complex or quaternion transform, the non-trivial roots a genuinely biquaternionic one |
 | $N$ | Number of samples, in the kernel $W_N$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; not to be confused with the sample count $N$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; not to be confused with the sample count $N$ |
 | $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
-| $e^{\rho\theta} = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
+| $\exp(\rho\theta) = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
 | $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
 | $\mathcal{Y}[f](\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^{-n}f_n$ | The Z transform with the variable on the left; $\overline{\mathcal{X}[f](\tilde{Q})} = \mathcal{Y}[\bar f](\bar{\tilde{Q}})$ |
 | $\tilde{Q} \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
-| $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
+| $r(\tilde{Q}) = \sqrt{\lvert \langle\tilde{Q}\rangle_{\natural}\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
 | $\sigma_f$ | Radius of convergence of the Z transform, the geometric growth rate of $r(f_n)$ |
 
 ## Further Reading

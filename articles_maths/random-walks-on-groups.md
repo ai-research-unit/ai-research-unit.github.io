@@ -112,7 +112,7 @@ $$
 
 The second form is checked at the extreme case $\mu = \delta_e$, where $\widehat\mu(\pi) = I$ for every $\pi$ and the sum computes $\frac{1}{|G|}\sum_\pi d_\pi^2 = 1$, the mass; the density form would compute the density $|G|$ there, and the two differ by the factor $|G| = |K|$ by which the Haar measure of a finite group differs from counting measure.
 
-The theorem is the exact compact analogue of the abelian Fourier description: the dual group is replaced by the set of irreducible representations, the characters by their traces, and the integral by the sum with the dimension weights. It is the reason the mixing of a random walk on a finite group is computed from the character table, and it is the harmonic-analysis mechanism behind the **cutoff phenomenon**: when the Fourier coefficients are small except for a family of representations whose dimensions grow, the convergence to Haar is abrupt, with the transition at the time at which the largest Fourier coefficient reaches $e^{-1}$.
+The theorem is the exact compact analogue of the abelian Fourier description: the dual group is replaced by the set of irreducible representations, the characters by their traces, and the integral by the sum with the dimension weights. It is the reason the mixing of a random walk on a finite group is computed from the character table, and it is the harmonic-analysis mechanism behind the **cutoff phenomenon**: when the Fourier coefficients are small except for a family of representations whose dimensions grow, the convergence to Haar is abrupt, with the transition at the time at which the largest Fourier coefficient reaches $\exp(-1)$.
 
 ### The General Case: Spectral Measures
 
@@ -182,7 +182,7 @@ $$
 \mathcal{H}^\infty(G,\mu) \cong L^\infty(B,\nu),
 $$
 
-sending a bounded harmonic function to its boundary values; the boundary is realised as the space of ergodic components of the tail $\sigma$-algebra of the walk, and the harmonic function is recovered by the **Poisson formula** $f(x) = \int_B \hat f\,d\nu_x$, where $\nu_x$ is the law of the limit of the walk started at $x$. The boundary is trivial — and the Liouville property holds — if and only if the walk is trivial in the sense of a trivial tail $\sigma$-algebra.
+sending a bounded harmonic function to its boundary values; the boundary is realised as the space of ergodic components of the tail $\sigma$-algebra of the walk, and the harmonic function is recovered by the **Poisson formula** $f(x) = \int_B \mathcal F f\,d\nu_x$, where $\nu_x$ is the law of the limit of the walk started at $x$. The boundary is trivial — and the Liouville property holds — if and only if the walk is trivial in the sense of a trivial tail $\sigma$-algebra.
 
 **Theorem (Dynkin; the Liouville property).** Let $G$ be a finitely generated group of polynomial growth and $\mu$ a symmetric non-degenerate probability measure of finite support. Then $G$ has the Liouville property for $\mu$: every bounded $\mu$-harmonic function is constant.
 

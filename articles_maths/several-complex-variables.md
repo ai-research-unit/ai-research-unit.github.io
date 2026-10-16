@@ -13,7 +13,7 @@ $$
 \Delta(a, r) = \{A : \lvert A_j - a_j\rvert < r_j,\ j = 1, \dots, n\},
 $$
 
-the unit ball is $B^n = \{A : \lvert A_1\rvert^2 + \cdots + \lvert A_n\rvert^2 < 1\}$, and the **Wirtinger operators** are $\partial/\partial A_j = \tfrac12(\partial/\partial a_j - i\partial/\partial a'_j)$ and $\partial/\partial \bar A_j = \tfrac12(\partial/\partial a_j + i\partial/\partial a'_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar A_j)\,d\bar A_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^p$ is the sheaf of holomorphic $p$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
+the unit ball is $B^n = \{A : \lvert A_1\rvert^2 + \cdots + \lvert A_n\rvert^2 < 1\}$, and the **Wirtinger operators** are $\partial/\partial A_j = \tfrac12(\partial/\partial a_j - i\partial/\partial a'_j)$ and $\partial/\partial \bar A_j = \tfrac12(\partial/\partial a_j + i\partial/\partial a'_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar A_j)\,d\bar A_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^n$ is the sheaf of holomorphic $n$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
 
 ## Holomorphic Functions of Several Variables
 
@@ -141,31 +141,31 @@ $$
 0 \to \mathcal{O} \to \Omega^0 \xrightarrow{\ \bar\partial\ } \Omega^{0,1} \xrightarrow{\ \bar\partial\ } \Omega^{0,2} \xrightarrow{\ \bar\partial\ } \cdots ,
 $$
 
-where $\Omega^{0,q}$ is the sheaf of $(0,q)$-forms and $\bar\partial$ is the Cauchy–Riemann operator; the complex is exact, so that the kernel of $\bar\partial$ on $\Omega^{0,q}$ is the image of $\bar\partial$ on $\Omega^{0,q-1}$.
+where $\Omega^{0,m}$ is the sheaf of $(0,q)$-forms and $\bar\partial$ is the Cauchy–Riemann operator; the complex is exact, so that the kernel of $\bar\partial$ on $\Omega^{0,m}$ is the image of $\bar\partial$ on $\Omega^{0,m-1}$.
 
-**Theorem (Dolbeault).** For a domain $D \subseteq \mathbb{C}^n$ and $p, q \geq 0$ there is a natural isomorphism
-
-$$
-H^{p,q}_{\bar\partial}(D) \cong H^q(D, \Omega^p),
-$$
-
-where the left-hand side is the cohomology of the Dolbeault complex of $(p,q)$-forms and the right-hand side is the sheaf cohomology of the holomorphic $p$-forms.
-
-**Proof.** The Dolbeault complex is a fine resolution of the sheaf $\Omega^p$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in *Sheaf Cohomology*.
-
-**Theorem (solvability of the $\bar\partial$-equation; Hörmander).** Let $D \subseteq \mathbb{C}^n$ be a pseudoconvex domain and let $f$ be a $\bar\partial$-closed $(0,q)$-form with $q \geq 1$ and square-integrable coefficients. Then there is a $(0,q-1)$-form $u$ with $L^2$ coefficients solving $\bar\partial u = f$, and the solution can be chosen with the estimate
+**Theorem (Dolbeault).** For a domain $D \subseteq \mathbb{C}^n$ and $n, m \geq 0$ there is a natural isomorphism
 
 $$
-\int_D \lvert u\rvert^2 e^{-\varphi}\,dV \leq \int_D \lvert f\rvert^2 e^{-\varphi}\,dV
+H^{n,m}_{\bar\partial}(D) \cong H^q(D, \Omega^n),
 $$
 
-for a suitable plurisubharmonic weight $\varphi$. For $q = 1$ the equation $\bar\partial u = f$ is solvable for every $\bar\partial$-closed $(0,1)$-form, and this is the technical heart of the theory of domains of holomorphy.
+where the left-hand side is the cohomology of the Dolbeault complex of $(n,m)$-forms and the right-hand side is the sheaf cohomology of the holomorphic $n$-forms.
+
+**Proof.** The Dolbeault complex is a fine resolution of the sheaf $\Omega^n$, and the comparison theorem for resolutions by fine sheaves identifies its cohomology with the sheaf cohomology; the construction is in *Sheaf Cohomology*.
+
+**Theorem (solvability of the $\bar\partial$-equation; Hörmander).** Let $D \subseteq \mathbb{C}^n$ be a pseudoconvex domain and let $f$ be a $\bar\partial$-closed $(0,q)$-form with $m \geq 1$ and square-integrable coefficients. Then there is a $(0,m-1)$-form $u$ with $L^2$ coefficients solving $\bar\partial u = f$, and the solution can be chosen with the estimate
+
+$$
+\int_D \lvert u\rvert^2 \exp(-\varphi)\,dV \leq \int_D \lvert f\rvert^2 \exp(-\varphi)\,dV
+$$
+
+for a suitable plurisubharmonic weight $\varphi$. For $m = 1$ the equation $\bar\partial u = f$ is solvable for every $\bar\partial$-closed $(0,1)$-form, and this is the technical heart of the theory of domains of holomorphy.
 
 **Proof.** The theorem is Hörmander's, obtained by the $L^2$ estimates for the $\bar\partial$-Neumann problem and the weighted Hilbert space method; the pseudoconvexity supplies the plurisubharmonic weight. The proof is in the references.
 
-**Corollary.** On a pseudoconvex domain $D$, $H^q(D, \mathcal{O}) = 0$ for every $q \geq 1$. In particular, for $n \geq 2$, if $K \subset D$ is compact and $D \setminus K$ is connected, then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.
+**Corollary.** On a pseudoconvex domain $D$, $H^q(D, \mathcal{O}) = 0$ for every $m \geq 1$. In particular, for $n \geq 2$, if $K \subset D$ is compact and $D \setminus K$ is connected, then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.
 
-**Proof.** The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $q \geq 1$, using $p = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem.
+**Proof.** The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $m \geq 1$, using $n = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem.
 
 ### The Cousin Problems
 
@@ -188,7 +188,7 @@ of the exponential sheaf sequence $0 \to \mathbb{Z} \to \mathcal{O} \xrightarrow
 **Theorem (Cartan's Theorem B).** Let $X$ be a Stein manifold and let $\mathcal{F}$ be a coherent analytic sheaf on $X$. Then
 
 $$
-H^q(X, \mathcal{F}) = 0 \qquad \text{for all } q \geq 1 .
+H^q(X, \mathcal{F}) = 0 \qquad \text{for all } m \geq 1 .
 $$
 
 **Proof.** The theorems are Cartan's, proved from Oka's coherence theorem and the solution of the $\bar\partial$-equation; the sheaf-theoretic proof is in *Sheaf Cohomology*.
@@ -247,7 +247,7 @@ $$
 f = u \cdot w ,
 $$
 
-where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $A_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $q$ and $r$ with $g = qf + r$, where $r$ is a polynomial in $A_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
+where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $A_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $m$ and $r$ with $g = qf + r$, where $r$ is a polynomial in $A_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
 
 **Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $A_n$ with parameters $A'$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = A_n^k$. The details are in the references.
 
@@ -273,7 +273,7 @@ where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of deg
 
 Holomorphic functions of several complex variables are the functions satisfying the Cauchy–Riemann equations $\partial f/\partial\bar A_j = 0$ in each variable; by Hartogs' theorem separate holomorphy implies joint holomorphy, and holomorphic functions are exactly the locally convergent power series, with the Cauchy integral formula taken over polydiscs supplying the coefficients and the Cauchy estimates. The decisive novelty is the Hartogs extension theorem: in $n \geq 2$ variables a function holomorphic on a domain minus a compact set with connected complement extends across the removed set, so there are no isolated singularities and no compact singularities. The natural domains are the domains of holomorphy, equivalently by Cartan–Thullen the holomorphically convex domains, and equivalently by the solution of the Levi problem of Oka, Bremermann and Norguet the pseudoconvex domains, those carrying a plurisubharmonic exhaustion function.
 
-The local and global problems of the theory are governed by the $\bar\partial$-equation and by sheaf cohomology: the Dolbeault isomorphism identifies the cohomology of the $\bar\partial$-complex with the sheaf cohomology of the holomorphic forms, Hörmander's $L^2$ estimates solve $\bar\partial u = f$ on pseudoconvex domains, and Cartan's Theorems A and B give the vanishing $H^q(X,\mathcal{F}) = 0$ for $q \geq 1$ on Stein manifolds, which solves the first Cousin problem and identifies the obstruction to the second with a class in $H^2(X,\mathbb{Z})$ via the exponential sheaf sequence. Stein manifolds are the holomorphically convex manifolds with enough holomorphic functions; they embed properly in some $\mathbb{C}^N$, and on them the Oka principle makes the holomorphic existence problems agree with the topological ones. The one-variable phenomena do not persist: the Riemann mapping theorem fails, as Poincaré's comparison of the ball and the polydisc shows, and Fefferman's boundary extension theorem replaces the flexible conformal theory by a rigid one. The analysis slot of the system $\mathbb{C}$ is thus enlarged from the one-variable theory of *Complex Analysis* to the several-variable theory, in which the Cauchy–Riemann operator, the plurisubharmonic functions and the cohomology of the structure sheaf take over the role of the Cauchy integral and the residue calculus.
+The local and global problems of the theory are governed by the $\bar\partial$-equation and by sheaf cohomology: the Dolbeault isomorphism identifies the cohomology of the $\bar\partial$-complex with the sheaf cohomology of the holomorphic forms, Hörmander's $L^2$ estimates solve $\bar\partial u = f$ on pseudoconvex domains, and Cartan's Theorems A and B give the vanishing $H^q(X,\mathcal{F}) = 0$ for $m \geq 1$ on Stein manifolds, which solves the first Cousin problem and identifies the obstruction to the second with a class in $H^2(X,\mathbb{Z})$ via the exponential sheaf sequence. Stein manifolds are the holomorphically convex manifolds with enough holomorphic functions; they embed properly in some $\mathbb{C}^N$, and on them the Oka principle makes the holomorphic existence problems agree with the topological ones. The one-variable phenomena do not persist: the Riemann mapping theorem fails, as Poincaré's comparison of the ball and the polydisc shows, and Fefferman's boundary extension theorem replaces the flexible conformal theory by a rigid one. The analysis slot of the system $\mathbb{C}$ is thus enlarged from the one-variable theory of *Complex Analysis* to the several-variable theory, in which the Cauchy–Riemann operator, the plurisubharmonic functions and the cohomology of the structure sheaf take over the role of the Cauchy integral and the residue calculus.
 
 ## Summary of Notation
 
@@ -289,10 +289,10 @@ The local and global problems of the theory are governed by the $\bar\partial$-e
 | $\bar\partial$ | Cauchy–Riemann operator $\sum_j (\partial/\partial\bar A_j)\,d\bar A_j$ |
 | $\mathcal{O}$, $\mathcal{O}^*$ | Sheaves of holomorphic and nowhere-vanishing holomorphic functions |
 | $\mathcal{O}_X$ | Structure sheaf of a complex manifold $X$ |
-| $\Omega^p$, $\Omega^{0,q}$ | Sheaves of holomorphic $p$-forms and of $(0,q)$-forms |
+| $\Omega^n$, $\Omega^{0,m}$ | Sheaves of holomorphic $n$-forms and of $(0,q)$-forms |
 | $\hat K_D$ | Holomorphic hull of $K$ in $D$ |
 | $L\varphi$ | Levi form of $\varphi$ |
-| $H^{p,q}_{\bar\partial}(D)$ | Dolbeault cohomology |
+| $H^{n,m}_{\bar\partial}(D)$ | Dolbeault cohomology |
 | $H^q(X, \mathcal{F})$ | Sheaf cohomology |
 | $U_i \cap U_j$, $f_{ij}$ | Cousin data, additive or multiplicative |
 | $\operatorname{PU}(n,1)$ | Automorphism group of the ball |

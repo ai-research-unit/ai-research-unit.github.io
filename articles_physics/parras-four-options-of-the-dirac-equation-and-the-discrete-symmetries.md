@@ -33,26 +33,26 @@ $$
 \begin{pmatrix} E_3 + i\lambda \\ E_1 + iE_2 \\ \alpha + iB_3 \\ -B_2 + iB_1 \end{pmatrix}.
 $$
 
-The four spinors carry the same eight real fields in four different arrangements. With a Clifford basis $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$, and with $\nabla$ the gradient, $A$ the potential, $m$ the mass and $q$ the charge, the four options satisfy the four equations
+The four spinors carry the same eight real fields in four different arrangements. With a Clifford basis $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$, and with $\nabla$ the gradient, $A$ the potential, $m$ the mass and $ϙ$ the charge, the four options satisfy the four equations
 
 $$
 \begin{aligned}
-\{2\} &\quad \nabla\Psi_{\{2\}}e_{21} + qA\Psi_{\{2\}} + m\Psi_{\{2\}}e_0 = 0, && e^+_\uparrow,\\
-\{0\} &\quad -\nabla\Psi_{\{0\}}e_{21} + qA\Psi_{\{0\}} + m\Psi_{\{0\}}e_0 = 0, && e^+_\downarrow,\\
-\{3\} &\quad \nabla\Psi_{\{3\}}e_{21} - qA\Psi_{\{3\}} + m\Psi_{\{3\}}e_0 = 0, && e^-_\uparrow,\\
-\{1\} &\quad -\nabla\Psi_{\{1\}}e_{21} - qA\Psi_{\{1\}} + m\Psi_{\{1\}}e_0 = 0, && e^-_\downarrow.
+\{2\} &\quad \nabla\Psi_{\{2\}}e_{21} + ϙA\Psi_{\{2\}} + m\Psi_{\{2\}}e_0 = 0, && e^+_\uparrow,\\
+\{0\} &\quad -\nabla\Psi_{\{0\}}e_{21} + ϙA\Psi_{\{0\}} + m\Psi_{\{0\}}e_0 = 0, && e^+_\downarrow,\\
+\{3\} &\quad \nabla\Psi_{\{3\}}e_{21} - ϙA\Psi_{\{3\}} + m\Psi_{\{3\}}e_0 = 0, && e^-_\uparrow,\\
+\{1\} &\quad -\nabla\Psi_{\{1\}}e_{21} - ϙA\Psi_{\{1\}} + m\Psi_{\{1\}}e_0 = 0, && e^-_\downarrow.
 \end{aligned}
 $$
 
 The second column is Parra's identification of each equation with a "particle": the sign $\pm$ distinguishes electron from positron and the arrow $\uparrow\downarrow$ distinguishes spin up from spin down. The identification is a choice — one may exchange the two labels within each pair — and the corpus records it as Parra's interpretation rather than as a derivation.
 
-**Proposition (the options are one theory in four sign conventions).** The four equations differ only in the **sign of the gradient term** ($\nabla$ or $-\nabla$) and the **sign of the coupling term** ($+qA$ or $-qA$), while the mass term is the same in all four. Consequently each option is a solution of the Dirac equation in its own conventions: reading the sign of $\nabla$ as defining the orientation of the Clifford basis and the sign of $qA$ as the charge convention, the four options become the same equation.
+**Proposition (the options are one theory in four sign conventions).** The four equations differ only in the **sign of the gradient term** ($\nabla$ or $-\nabla$) and the **sign of the coupling term** ($+ϙA$ or $-ϙA$), while the mass term is the same in all four. Consequently each option is a solution of the Dirac equation in its own conventions: reading the sign of $\nabla$ as defining the orientation of the Clifford basis and the sign of $ϙA$ as the charge convention, the four options become the same equation.
 
 *Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $m\Psi e_0$ is common to all four.
 
-**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation $\nabla\Psi i\sigma_3 - qA\Psi = m\Psi\gamma_0$ of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, upon identifying the bases $e_i$ and $\gamma_\mu$ and the spin bivector $e_{21}$ with $i\sigma_3$; Fauser states this identification. Option $\{1\}$ **is** the Daviau equation $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, upon the passage between the two formulations described there. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural point.
+**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation $\nabla\Psi i\sigma_3 - ϙA\Psi = m\Psi\gamma_0$ of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, upon identifying the bases $e_i$ and $\gamma_\mu$ and the spin bivector $e_{21}$ with $i\sigma_3$; Fauser states this identification. Option $\{1\}$ **is** the Daviau equation $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+ϙA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, upon the passage between the two formulations described there. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural point.
 
-**Remark (the right action is common to all four).** In every option the spin bivector $e_{21}$ and the velocity vector $e_0$ multiply the spinor **on the right**, while the gradient and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
+**Remark (the right action is common to all four).** In every option the spin bivector $e_{21}$ and the velocity vector $e_0$ multiply the spinor **on the right**, while the gradient and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
 
 ## The Discrete Group and the Discrete Symmetries
 
@@ -137,7 +137,7 @@ This places the Parra spinors in the same family as the Daviau spinor and the Di
 
 Fauser draws a structural conclusion from the four options. In the geometric-algebra literature the spinor bundle is often built from the **spin Clifford bundle** of Rodrigues and collaborators, whose typical fibre at a point is a space of idempotents. Fauser submits that this bundle is **too large**: it does not distinguish the four particle types, because idempotents that differ by an even (rotor) transformation give the same class and the rotor group does not see the discrete quotient $D$. What the four options suggest is a smaller bundle, the **spin-particle Clifford bundle**, whose fibre consists of **equivalence classes of idempotents under an even equivalence relation** — the relation by the even part $\Gamma^+_{1,3}$, so that two idempotents are in the same class exactly when the corresponding spinors are of the same Parra type. The commutator relation, and hence the Clifford structure, is invariant under the odd (discrete) transformations of the Clifford–Lipschitz group, so the refinement is well defined.
 
-**Relation to the corpus.** The corpus's own spinor picture is the minimal left ideal $\mathbb B\tilde\Pi_1$ generated by a primitive idempotent, developed in *Spinors as Minimal Left Ideals with Inner Conjugation*, *Ideals and Peirce Decomposition of the General Plain Algebra* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The spin-particle bundle is that picture with the idempotent replaced by its equivalence class **modulo the even group**, and the four Parra types are the four classes that the even relation does not identify. In the corpus's language the refinement is: the minimal left ideals of $\mathbb B$ carry the spinor of the theory, and the discrete quotient $D$ acts on the set of idempotents by the odd reflections, with the four Parra types as the four orbits of an even-equivalence class.
+**Relation to the corpus.** The corpus's own spinor picture is the minimal left ideal $\mathbb B\tilde\Pi_1$ generated by a primitive idempotent, developed in *Spinors as Minimal Left Ideals with Inner Conjugation*, *Ideals and Peirce Decomposition of the Biquaternion Algebra* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The spin-particle bundle is that picture with the idempotent replaced by its equivalence class **modulo the even group**, and the four Parra types are the four classes that the even relation does not identify. In the corpus's language the refinement is: the minimal left ideals of $\mathbb B$ carry the spinor of the theory, and the discrete quotient $D$ acts on the set of idempotents by the odd reflections, with the four Parra types as the four orbits of an even-equivalence class.
 
 *Proof sketch.* Two spinors of the same Parra type are related by an even transformation, so their idempotents are equivalent under the even group and lie in the same class; two spinors of different types are related only by an odd transformation, so their idempotents are inequivalent. The four classes are the four options. The identification of the classes with the options is Fauser's proposal; the corpus records it as a proposal and not as a theorem, since the even equivalence relation is not written out explicitly in the source.
 
@@ -168,7 +168,7 @@ Parra's four options are four inequivalent ways of reading the eight real Dirac 
 | $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
 | $\vec s=-\vec s^{*}$ | The spin vector, $=-iS$ in Parra's notation |
 | $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$ | The Clifford basis; $e_{21}=e_2e_1$ the spin bivector |
-| $\nabla$, $A$, $m$, $q$ | Gradient, potential, mass, charge |
+| $\nabla$, $A$, $m$, $ϙ$ | Gradient, potential, mass, charge |
 | $\Gamma_{1,3}$, $\Gamma^+_{1,3}$ | Clifford–Lipschitz group and its even part |
 | $D=\Gamma_{1,3}/\Gamma^+_{1,3}$ | The discrete quotient; order four |
 | $e^\pm_{\uparrow\downarrow}$ | Parra's particle labels: electron/positron, spin up/down |

@@ -15,27 +15,27 @@ brief is cut to fit it.
 
 **The object.** The reduced biquaternion space is the commutative algebra
 
-$$\mathbb{R}\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C},$$
+$$\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C},$$
 
-with the basis $1, i, e, ie$, the relations $i^{2} = -1$, $e^{2} = +1$, $ei = ie$, and the two idempotents
-$e_{\pm} = \tfrac12(1\pm e)$. An element is $Z = A + Be$ with $A = a + ia'$ and $B = b + ib'$ complex, and
-the idempotent decomposition is $Z = (A+B)\,e_{+} + (A-B)\,e_{-}$. It is the engineering **reduced
+with the basis $1, i, j, ij$, the relations $i^{2} = -1$, $j^{2} = +1$, $ji = ij$, and the two idempotents
+$\Pi_{1,2} = \tfrac12(1\pm j)$. An element is $T = A + Bj$ with $A = a + ia'$ and $B = b + ib'$ complex, and
+the idempotent decomposition is $T = (A+B)\Pi_1 + (A-B)\Pi_2$. It is the engineering **reduced
 biquaternion** algebra, equivalently the **tessarines**, the **double-complex** numbers or the
-**commutative hypercomplex** algebra. The glyph $\mathbb{R}\mathbb{B}$ and the element $Z = A+Be$ are
+**commutative hypercomplex** algebra. The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $T = A+Bj$ are
 fixed in *Conventions in Mathematics*, §*The Elements and their Coefficients*.
 
-**The involutions.** The **bar** conjugates the coefficients, $\overline{A+Be} = \bar A + \bar B e$; the
-**natural sign** ${}^{\natural}$ negates the second slot, $(A+Be)^{\natural} = A - Be$; the **star** is
+**The involutions.** The **bar** conjugates the coefficients, $\overline{A+Bj} = \bar A + \bar B j$; the
+**natural sign** ${}^{\natural}$ negates the second slot, $(A+Bj)^{\natural} = A - Bj$; the **star** is
 their composite, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$; the **flat** is ${}^{\flat} = -{}^{*}$.
 
-**The four general products.** On $Z = A+Be$ and $W = C+De$:
+**The four general products.** On $T = A+Bj$ and $W = C+Dj$:
 
-| product | value | scalar part | $e$-part |
+| product | value | scalar part | $j$-part |
 |---|---|---|---|
-| the general plain bilinear | $ZW$ | $AC+BD$ | $AD+BC$ |
-| the general quaternionic bilinear | $Z^{\natural}W$ | $AC-BD$ | $AD-BC$ |
-| the general plain sesquilinear | $ZW^{*}$ | $A\bar C - B\bar D$ | $B\bar C - A\bar D$ |
-| the general quaternionic sesquilinear | $Z^{\natural}W^{*}$ | $A\bar C + B\bar D$ | $-(A\bar D + B\bar C)$ |
+| the general plain bilinear | $TW$ | $AC+BD$ | $AD+BC$ |
+| the general quaternionic bilinear | $T^{\natural}W$ | $AC-BD$ | $AD-BC$ |
+| the general plain sesquilinear | $TW^{*}$ | $A\bar C - B\bar D$ | $B\bar C - A\bar D$ |
+| the general quaternionic sesquilinear | $T^{\natural}W^{*}$ | $A\bar C + B\bar D$ | $-(A\bar D + B\bar C)$ |
 
 The space is **commutative**, so symmetrisation and antisymmetrisation add nothing to the plain bilinear
 product and the general plain sesquilinear product; there are **four** general products, and the twelve
@@ -56,7 +56,7 @@ that.
 2. Read *Conventions in Mathematics* and *Conventions in the Biquaternion Universe* before writing.
 3. Every article: title line `# __Title__`, then `## Introduction`, thematic `##` sections, closing with
    `## Summary`, `## Summary of Notation`, `## Further Reading`.
-4. Write the `.md` **and** its companion `.context`. When the article is written, **drop the leading `+`**
+4. Write the `.md`. When the article is written, **drop the leading `+`**
    from its entry in `maths.md` (the `+` marks a planned article).
 5. Cite, do not restate: a concept is introduced once, in the article that owns it. State every deferral.
 6. **Verify by recomputation on at most 100 elements** before asserting anything. Scripts are written
@@ -89,10 +89,8 @@ skeleton is
 ## Further Reading
 ```
 
-and its companion `articles_maths/the-four-products-their-forms-and-their-algebraic-norms.context` opens
-with a one-paragraph note and then uses the sections `## Decisions and reasons`, `## Verified`, and
-further notes on boundaries and standing weaknesses. Append to the `.context`: decisions and their
-reasons, verified facts with the sample size, ownership and boundary rules, and standing weaknesses.
+The article carries its decisions and reasons, its verified facts with the sample size, its ownership
+and boundary rules and its standing weaknesses in its own sections.
 
 ## 2. The work — 53 articles, six batches
 
@@ -103,7 +101,7 @@ reasons, verified facts with the sample size, ownership and boundary rules, and 
 
 1. **Reduced Biquaternion Space**
    - slug: `reduced-biquaternion-space`
-   - content: the algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$, the basis $1, i, e, ie$, the defining relations and the two idempotents $\tfrac12(1\pm e)$.
+   - content: the algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$, the basis $1, i, j, ij$, the defining relations and the two idempotents $\tfrac12(1\pm j)$.
 
 2. **Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$**
    - slug: `reduced-biquaternions-as-a-vector-space-over-r-and-c`
@@ -368,16 +366,15 @@ reasons, verified facts with the sample size, ownership and boundary rules, and 
 
 1. Read §0 and §1, *Conventions in Mathematics*, *Conventions in the Biquaternion Universe*, and the two
    or three counterpart Biquaternion articles named in each entry.
-2. Write the articles of the batch in order. For each: write `articles_maths/<slug>.md`, write
-   `articles_maths/<slug>.context`, then drop the leading `+` from that slug's entry in `maths.md`.
+2. Write the articles of the batch in order. For each: write `articles_maths/<slug>.md`, then drop the leading `+` from that slug's entry in `maths.md`.
 3. Verify every quantitative claim by recomputation on at most 100 elements, with the script outside the
-   repository, and record the verification in the `.context`.
+   repository, and report the verification.
 4. When the batch is done, report: the slugs written, the `+` dropped, the verifications run, and any
    contradiction found in a neighbour article, with the patch you applied.
 
 ## 4. Acceptance
 
-A batch is accepted when every article of the batch exists as `.md` and `.context`, follows the template,
+A batch is accepted when every article of the batch exists as `.md`, follows the template,
 carries its `+` dropped in `maths.md`, names the reduced biquaternion object and its involutions exactly
 as in §0, names the four products without acronym and without the dead-slot discussion, and states the
 commutativity, the zero divisors and the absence of division wherever they bear on the result. The menu

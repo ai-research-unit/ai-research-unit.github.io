@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The functional integral is the series' general apparatus for the quantum theory of a field, and its general properties — the sum over field configurations weighted by $e^{iS}$, the generating functional, the effective action — are treated in the subcategory devoted to them and are not repeated here. The present article does one thing: it specializes the functional integral to the **gauge field**. That specialization is not a matter of substituting one field for another, because the gauge field's functional integral is ill-defined as it stands. The action is invariant along gauge orbits, the integrand is constant along those orbits, and the integral therefore contains an infinite factor — the volume of the gauge group — for every orbit. Making the gauge-field path integral finite is the work of the Faddeev–Popov construction, and it is that construction, in the biquaternion framework, that this article develops.
+The functional integral is the series' general apparatus for the quantum theory of a field, and its general properties — the sum over field configurations weighted by $\exp(iS)$, the generating functional, the effective action — are treated in the subcategory devoted to them and are not repeated here. The present article does one thing: it specializes the functional integral to the **gauge field**. That specialization is not a matter of substituting one field for another, because the gauge field's functional integral is ill-defined as it stands. The action is invariant along gauge orbits, the integrand is constant along those orbits, and the integral therefore contains an infinite factor — the volume of the gauge group — for every orbit. Making the gauge-field path integral finite is the work of the Faddeev–Popov construction, and it is that construction, in the biquaternion framework, that this article develops.
 
 The construction has three parts. The first is the insertion of a gauge-fixing condition into the integral, together with a compensating determinant — the Faddeev–Popov determinant — whose value is what makes the insertion an identity. The second is the observation that for an abelian gauge field the determinant is field-independent and can be discarded, while for a non-abelian field it depends on the gauge field and must be represented by ghost fields; the non-abelian case is developed in the companion subcategory on gauge fields, and here only the structure is recorded. The third is the evaluation of the resulting Gaussian integral, which produces the propagator and makes explicit the two facts that matter: the gauge-fixing parameter appears only in the longitudinal part of the propagator, so that it drops out of amplitudes built from conserved currents; and the transverse part is a projector that the biquaternion algebra already supplies.
 
@@ -22,7 +22,7 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 The vacuum amplitude for the free Maxwell field is
 
 $$
-Z = \int\mathcal{D}\tilde{A}\;e^{iS[\tilde{A}]},
+Z = \int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}]),
 \qquad
 S[\tilde{A}] = \int d^4x\left(-\tfrac14F_{\mu\nu}F^{\mu\nu}\right)
 = -\tfrac12\int d^4x\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
@@ -39,9 +39,9 @@ $$
 The integration measure is invariant as well, because the transformation is a shift in field space with unit Jacobian: $\mathcal{D}\tilde{A}^{\Gamma}=\mathcal{D}\tilde{A}$. Therefore the integrand is constant on each gauge orbit, the set of $\tilde{A}$ related to one another by a gauge transformation, and the integral factorizes into an integral over the orbit and an integral along it,
 
 $$
-Z = \left(\int\mathcal{D}\tilde{A}\;e^{iS[\tilde{A}]}\right)
+Z = \left(\int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}])\right)
 = \left(\mathrm{Vol}(\mathcal{G})\right)\times
-\left(\int_{\text{orbits}}\mathcal{D}\tilde{A}_{\text{rep}}\;e^{iS}\right),
+\left(\int_{\text{orbits}}\mathcal{D}\tilde{A}_{\text{rep}}\;\exp(iS)\right),
 $$
 
 with $\mathrm{Vol}(\mathcal{G})$ the volume of the gauge group — an infinite factor, since there is one gauge transformation for every function $\Gamma$. The factor is not physical, but it is present, and the integral as written cannot be normalized or evaluated mode by mode. This is the pathology that gauge fixing removes, and it is worth noting that it is a property of the measure, not of the action: the same action, integrated over a space of fields in which the gauge orbit is represented once, is finite.
@@ -77,7 +77,7 @@ $$
 because the composition of two gauge transformations is a gauge transformation. One may therefore shift the integration variable $\tilde{A}\to\tilde{A}^{\Gamma^{-1}}$ at fixed $\Gamma$, use the invariance of the measure and of $\Delta$ and of $S$, and obtain
 
 $$
-Z = \int\mathcal{D}\tilde{A}\;\Delta[\tilde{A}]\;\delta\!\left(G[\tilde{A}]\right)\;e^{iS[\tilde{A}]},
+Z = \int\mathcal{D}\tilde{A}\;\Delta[\tilde{A}]\;\delta\!\left(G[\tilde{A}]\right)\;\exp(iS[\tilde{A}]),
 $$
 
 in which the gauge-group integral has been absorbed and only the gauge-fixed configurations contribute. This is the content of the construction: the infinite factor has been traded for a delta functional and a determinant, both of which depend on the gauge-fixing condition but neither of which depends on the volume of the gauge group.
@@ -105,7 +105,7 @@ The delta functional is represented by introducing the Nakanishi–Lautrup field
 
 $$
 \delta\!\left(\partial_\mu A^\mu-\omega\right)
-= \int\mathcal{D}B\;e^{i\int d^4x\,B(\partial_\mu A^\mu-\omega)},
+= \int\mathcal{D}B\;\exp(i\int d^4x\,B(\partial_\mu A^\mu-\omega)),
 $$
 
 and the $\omega$-dependence is removed by averaging over $\omega$ with the Gaussian weight
@@ -271,7 +271,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 ## Summary
 
-The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\Delta[\tilde{A}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}\,\Delta[\tilde{A}]\,\delta(G[\tilde{A}])\,e^{iS[\tilde{A}]}$, finite and normalized.
+The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\Delta[\tilde{A}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}\,\Delta[\tilde{A}]\,\delta(G[\tilde{A}])\,\exp(iS[\tilde{A}])$, finite and normalized.
 
 In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{M}_-$, and the gauge transformation is the gradient shift $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{M}_+$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
 

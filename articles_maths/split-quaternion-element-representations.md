@@ -164,7 +164,7 @@ sends a module $M$ to the same space with the action $u \cdot v = [u, v]$ extend
 **Theorem (The Double Cover).** The group of norm-one split-quaternions is
 
 $$
-U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : N(\tilde q) = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
+U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
 $$
 
 and the adjoint action $\tilde q \mapsto (u \mapsto u\tilde q u^{-1})$ on the vector subspace $V$ defines a surjective group homomorphism
@@ -175,7 +175,7 @@ $$
 
 onto the identity component of the Lorentz group of the signature-$(2,1)$ form, with kernel $\{\pm 1\}$; the map is therefore a double cover.
 
-**Proof.** The identification of $U$ with $\mathrm{SL}_2(\mathbb{R})$ is (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*); the adjoint action preserves the form $N$ on $V$ by multiplicativity, and the remaining statements are proved in *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*.
+**Proof.** The identification of $U$ with $\mathrm{SL}_2(\mathbb{R})$ is (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*); the adjoint action preserves the form $\langle\cdot\rangle_{\natural}$ on $V$ by multiplicativity, and the remaining statements are proved in *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*.
 
 **Corollary (Group Representations and Algebra Representations Are Different).** The representations of the group $\mathrm{SL}_2(\mathbb{R})$ and the representations of the algebra $\mathbb{H}_{\mathrm{s}}$ are not the same objects: the algebra has a single finite-dimensional irreducible module, whereas $\mathrm{SL}_2(\mathbb{R})$ has infinite-dimensional irreducible unitary representations and its finite-dimensional representations are the symmetric powers of the standard two-dimensional one. The algebra's module $\mathbb{R}^2$ exponentiates to the standard representation of the group, which is the first member of the group's family and the only member that also carries an algebra action by the preceding theorem.
 

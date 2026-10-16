@@ -33,9 +33,9 @@ $$
 
 *Proof.* Along $t \mapsto u(x(t))$ one has $\frac{d}{dt}u = \sum_i\partial_iu\,\dot x_i = \sum_ia_i\partial_iu = c$ by the equation; the case $c=0$ gives constancy, and the reduction to the prescribed data on a transversal hypersurface is the statement that the map from data to characteristic curve is invertible when the transversality holds.
 
-**Example (a linear transport equation).** For $u_t + b\,u_x = 0$ with $b$ constant, the characteristics are the lines $x = x_0 + bt$, and the solution with datum $u(x,0) = f(x)$ is $u(x,t) = f(x-bt)$: the initial profile is translated at speed $b$. The equation is hyperbolic and the solution exists and is unique for all time, with no smoothing and no decay.
+**Example (a linear transport equation).** For $\partial_t u + b\,\partial_x u = 0$ with $b$ constant, the characteristics are the lines $x = x_0 + bt$, and the solution with datum $u(x,0) = f(x)$ is $u(x,t) = f(x-bt)$: the initial profile is translated at speed $b$. The equation is hyperbolic and the solution exists and is unique for all time, with no smoothing and no decay.
 
-**Example (a conservation law).** For $u_t + u\,u_x = 0$ with datum $u(x,0)=f(x)$, the characteristics are the lines $x = f(x_0)t + x_0$, which cross when $f' < 0$; the classical solution then ceases to exist at the first crossing time $t_* = -1/\inf f'$, and beyond it the equation must be interpreted in a weaker sense. This is the simplest instance of the formation of a singularity in a hyperbolic equation.
+**Example (a conservation law).** For $\partial_t u + u\,\partial_x u = 0$ with datum $u(x,0)=f(x)$, the characteristics are the lines $x = f(x_0)t + x_0$, which cross when $f' < 0$; the classical solution then ceases to exist at the first crossing time $t_* = -1/\inf f'$, and beyond it the equation must be interpreted in a weaker sense. This is the simplest instance of the formation of a singularity in a hyperbolic equation.
 
 **Definition.** A **complete integral** of a first-order equation is a family $u(x;c)$ of solutions depending on $n$ parameters $c$ such that $\det(\partial^2 u/\partial x_i\partial c_j) \neq 0$. The **envelope** of a one-parameter subfamily is obtained by eliminating the parameter between $u = u(x;c)$ and $\partial_cu(x;c)=0$, and it is again a solution; the general solution is assembled from the data and the characteristics, or from complete integrals and their envelopes.
 
@@ -57,7 +57,7 @@ $$
 
 The operator is **elliptic** at $x$ if $\sigma(x,\xi) \neq 0$ for every $\xi \neq 0$; it is **hyperbolic** at $x$ if $\sigma$ is nondegenerate with signature $(1,n-1)$; and it is **parabolic** at $x$ if $\sigma$ is degenerate of rank $n-1$ with the rank drop corresponding to a distinguished direction. For $n=2$ the classification is read from the discriminant.
 
-**Theorem (two-dimensional classification).** Let $a_{11}u_{xx} + 2a_{12}u_{xy} + a_{22}u_{yy} + \cdots = 0$ and put $\Delta = a_{12}^2 - a_{11}a_{22}$. Then the equation is elliptic if $\Delta<0$, parabolic if $\Delta=0$, hyperbolic if $\Delta>0$, and in each case a $C^2$ change of variables brings the principal part to the canonical form
+**Theorem (two-dimensional classification).** Let $a_{11}\partial_x^2 u + 2a_{12}\partial_x\partial_y u + a_{22}\partial_y^2 u + \cdots = 0$ and put $\Delta = a_{12}^2 - a_{11}a_{22}$. Then the equation is elliptic if $\Delta<0$, parabolic if $\Delta=0$, hyperbolic if $\Delta>0$, and in each case a $C^2$ change of variables brings the principal part to the canonical form
 
 $$
 u_{\xi\xi} + u_{\eta\eta}, \qquad u_{\xi\xi}, \qquad u_{\xi\xi} - u_{\eta\eta}
@@ -67,7 +67,7 @@ respectively.
 
 *Proof.* Writing $\xi = \xi(x,y)$ and $\eta=\eta(x,y)$ transforms the coefficients by the chain rule, and the new principal part is the old form evaluated on $(\xi_x,\xi_y)$ and $(\eta_x,\eta_y)$; the equation for the level curves of $\xi,\eta$ is the ordinary differential equation $a_{11}(dy)^2 - 2a_{12}dx\,dy + a_{22}(dx)^2=0$, whose characteristic polynomial has discriminant $\Delta$ and hence two, one or no real families of solutions, giving the hyperbolic, parabolic and elliptic cases. A second change diagonalises the resulting form.
 
-**Remark.** The classification is invariant under a change of independent variables, because the transformation acts on $\xi$ by an invertible linear map and therefore preserves the signature of the symbol. It is a pointwise classification, so an equation can change type across a curve, as the Tricomi equation $y\,u_{xx} + u_{yy} = 0$ does across $y=0$.
+**Remark.** The classification is invariant under a change of independent variables, because the transformation acts on $\xi$ by an invertible linear map and therefore preserves the signature of the symbol. It is a pointwise classification, so an equation can change type across a curve, as the Tricomi equation $y\,\partial_x^2 u + \partial_y^2 u = 0$ does across $y=0$.
 
 ## The Laplace and Poisson Equations
 
@@ -104,13 +104,13 @@ $$
 **Theorem (Green's representation formula).** For $u \in C^2(\overline\Omega)$ and for each $x \in \Omega$, the second Green identity in the form
 
 $$
-u(x) = \int_{\partial\Omega}\Bigl(u(y)\,\frac{\partial\Phi}{\partial\nu_y}(x-y) - \Phi(x-y)\,\frac{\partial u}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta u(y)\,dy
+u(x) = \int_{\partial\Omega}\Bigl(u(y)\,\frac{\partial\Phi}{\partial\n\partial_y u}(x-y) - \Phi(x-y)\,\frac{\partial u}{\partial\nu}(y)\Bigr)dS(y) + \int_\Omega \Phi(x-y)\,\Delta u(y)\,dy
 $$
 
 expresses $u$ in terms of its boundary values, its normal derivative and its Laplacian. If $u$ is harmonic and $H(x,y)$ is the **harmonic corrector** solving the Dirichlet problem $\Delta_yH=0$ with $H(x,y) = \Phi(x-y)$ for $y \in \partial\Omega$, then with the **Green's function** $G(x,y) = \Phi(x-y) - H(x,y)$,
 
 $$
-u(x) = -\int_{\partial\Omega}u(y)\,\frac{\partial G}{\partial\nu_y}(x,y)\,dS(y),
+u(x) = -\int_{\partial\Omega}u(y)\,\frac{\partial G}{\partial\n\partial_y u}(x,y)\,dS(y),
 $$
 
 so a harmonic function is determined by its boundary values alone.
@@ -139,7 +139,7 @@ $$
 K_t(x) = \frac{1}{(4\pi t)^{n/2}}\exp\Bigl(-\frac{|x|^2}{4t}\Bigr),
 $$
 
-and the **heat equation** is $u_t = \Delta u$; the **Cauchy problem** asks for $u \in C^2(\mathbb{R}^n\times(0,\infty)) \cap C(\mathbb{R}^n\times[0,\infty))$ with $u(x,0)=f(x)$.
+and the **heat equation** is $\partial_t u = \Delta u$; the **Cauchy problem** asks for $u \in C^2(\mathbb{R}^n\times(0,\infty)) \cap C(\mathbb{R}^n\times[0,\infty))$ with $u(x,0)=f(x)$.
 
 **Theorem (solution by convolution).** If $f$ is continuous and bounded, then
 
@@ -149,13 +149,13 @@ $$
 
 solves the Cauchy problem, and $\|u(\cdot,t)\|_\infty \le \|f\|_\infty$ with $u(\cdot,t)\to f$ uniformly on compact sets as $t\to0^+$.
 
-*Proof.* The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $u_t = \Delta u$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound.
+*Proof.* The kernel solves $K_t = \Delta K$ by direct differentiation, and differentiating under the integral gives $\partial_t u = \Delta u$; the kernel is positive with total integral one, so it is an approximate identity as $t\to0^+$, giving the stated convergence and the sup bound.
 
 **Theorem (smoothing).** If $f$ is merely bounded and continuous, then $u(\cdot,t)$ is of class $C^\infty$ for every $t>0$, and all its derivatives are bounded on $\mathbb{R}^n\times[\varepsilon,\infty)$ for every $\varepsilon>0$. In particular no singularity of $f$ propagates, and the solution is analytic in $x$ for $t>0$.
 
 *Proof.* The kernel $K_t(x-y)$ is $C^\infty$ in $(x,t)$ for $t>0$, and every derivative is integrable against the bounded $f$, so differentiation under the integral is legitimate.
 
-**Theorem (maximum principle).** If $u$ solves $u_t=\Delta u$ in a bounded cylinder $\Omega\times(0,T)$ and is continuous on its closure, then
+**Theorem (maximum principle).** If $u$ solves $\partial_t u=\Delta u$ in a bounded cylinder $\Omega\times(0,T)$ and is continuous on its closure, then
 
 $$
 \max_{\overline\Omega\times[0,T]}u = \max\Bigl(\max_{\partial\Omega\times[0,T]}u,\ \max_{\overline\Omega\times\{0\}}u\Bigr),
@@ -163,17 +163,17 @@ $$
 
 with the same statement for the minimum; consequently the solution is unique and depends monotonically on its data.
 
-*Proof.* If $u$ attained an interior maximum at $(x_0,t_0)$ with $t_0>0$, then $u_t(x_0,t_0)\ge0$ and $\Delta u(x_0,t_0)\le0$, so $u_t-\Delta u \ge 0$ there; to exclude equality one applies the argument to $u-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions.
+*Proof.* If $u$ attained an interior maximum at $(x_0,t_0)$ with $t_0>0$, then $\partial_t u(x_0,t_0)\ge0$ and $\Delta u(x_0,t_0)\le0$, so $\partial_t u-\Delta u \ge 0$ there; to exclude equality one applies the argument to $u-\varepsilon t$ and lets $\varepsilon\to0$. The uniqueness follows by applying the principle to the difference of two solutions.
 
-**Theorem (irreversibility).** The backward problem $u_t = \Delta u$ for $t<0$ with datum at $t=0$ is not well posed: the solution operator $K_t$ for $t>0$ has no bounded inverse on $L^2(\mathbb{R}^n)$, and its inverse amplifies high frequencies by the factor $e^{|\xi|^2|t|}$.
+**Theorem (irreversibility).** The backward problem $\partial_t u = \Delta u$ for $t<0$ with datum at $t=0$ is not well posed: the solution operator $K_t$ for $t>0$ has no bounded inverse on $L^2(\mathbb{R}^n)$, and its inverse amplifies high frequencies by the factor $\exp(|\xi|^2|t|)$.
 
-*Proof.* The Fourier transform diagonalises the equation, $\hat u(\xi,t) = e^{-|\xi|^2t}\hat f(\xi)$; the multiplier $e^{-|\xi|^2t}$ is bounded for $t>0$ with norm $1$, but for the backward direction the multiplier is $e^{|\xi|^2|t|}$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound.
+*Proof.* The Fourier transform diagonalises the equation, $\mathcal F u(\xi,t) = \exp(-|\xi|^2t)(\mathcal F f)(\xi)$; the multiplier $\exp(-|\xi|^2t)$ is bounded for $t>0$ with norm $1$, but for the backward direction the multiplier is $\exp(|\xi|^2|t|)$, which is unbounded, so arbitrarily small high-frequency data can be amplified beyond any bound.
 
 ## The Wave Equation
 
 ### d'Alembert's Formula and Finite Propagation
 
-**Definition.** The **wave equation** with speed $c>0$ is $u_{tt} = c^2\Delta u$; the Cauchy problem asks for $u(x,0)=f(x)$ and $u_t(x,0)=g(x)$.
+**Definition.** The **wave equation** with speed $c>0$ is $\partial_t^2 u = c^2\Delta u$; the Cauchy problem asks for $u(x,0)=f(x)$ and $\partial_t u(x,0)=g(x)$.
 
 **Theorem (d'Alembert, $n=1$).** The solution of the Cauchy problem on $\mathbb{R}$ with $f \in C^2$ and $g \in C^1$ is
 
@@ -183,12 +183,12 @@ $$
 
 *Proof.* Change to characteristic coordinates $\xi = x-ct$, $\eta = x+ct$, in which the equation becomes $u_{\xi\eta}=0$ with general solution $u = F(\xi)+G(\eta)$; the initial conditions determine $F$ and $G$ and give the displayed formula.
 
-**Theorem (finite propagation speed).** If $u$ solves the wave equation in $\mathbb{R}^n\times(0,\infty)$ and $u$ and $u_t$ vanish on the ball $B(x_0,r)$ at $t=0$, then $u$ vanishes on the cone $\{(x,t) : |x-x_0|\le r-ct,\ 0\le t\le r/c\}$. Consequently the value $u(x,t)$ depends only on the data in the ball $B(x,ct)$.
+**Theorem (finite propagation speed).** If $u$ solves the wave equation in $\mathbb{R}^n\times(0,\infty)$ and $u$ and $\partial_t u$ vanish on the ball $B(x_0,r)$ at $t=0$, then $u$ vanishes on the cone $\{(x,t) : |x-x_0|\le r-ct,\ 0\le t\le r/c\}$. Consequently the value $u(x,t)$ depends only on the data in the ball $B(x,ct)$.
 
 *Proof.* The energy
 
 $$
-E(t) = \frac12\int_{B(x_0,r-ct)}\Bigl(u_t^2 + c^2|\nabla u|^2\Bigr)dx
+E(t) = \frac12\int_{B(x_0,r-ct)}\Bigl(\partial_t u^2 + c^2|\nabla u|^2\Bigr)dx
 $$
 
 satisfies $E'(t) \le 0$, because differentiating in $t$ and applying the divergence theorem gives the flux across the boundary sphere, which is nonpositive by the sign of the cone; since $E(0)=0$ the energy vanishes and the solution is constant on the cone, hence zero.
@@ -209,7 +209,7 @@ a formula involving only the data on the *sphere* of radius $ct$, which is Huyge
 
 **Definition.** A problem consisting of a differential equation together with auxiliary data is **well posed** in the sense of Hadamard if a solution exists, the solution is unique, and the solution depends continuously on the data in a topology fixed in advance. A problem that fails any one of the three is **ill posed**.
 
-**Theorem (Hadamard's example).** The Cauchy problem for the Laplace equation $\Delta u = 0$ in the upper half-plane with $u(x,0)=0$ and $u_y(x,0)=\frac1n\sin(nx)$ has the solution
+**Theorem (Hadamard's example).** The Cauchy problem for the Laplace equation $\Delta u = 0$ in the upper half-plane with $u(x,0)=0$ and $\partial_y u(x,0)=\frac1n\sin(nx)$ has the solution
 
 $$
 u_n(x,y) = \frac{1}{n^2}\sin(nx)\sinh(ny),
@@ -232,16 +232,16 @@ $$
 Then the eigenvalues are positive with $\lambda_k \to \infty$ and the $\varphi_k$ form an orthonormal basis of $L^2(\Omega)$. The solution of the heat equation with datum $f = \sum_kc_k\varphi_k$ is
 
 $$
-u(x,t) = \sum_k c_k e^{-\lambda_kt}\varphi_k(x),
+u(x,t) = \sum_k c_k \exp(-\lambda_kt)\varphi_k(x),
 $$
 
-and the solution of the wave equation with $u(\cdot,0)=f$, $u_t(\cdot,0)=g$ is
+and the solution of the wave equation with $u(\cdot,0)=f$, $\partial_t u(\cdot,0)=g$ is
 
 $$
 u(x,t) = \sum_k\Bigl(c_k\cos(c\sqrt{\lambda_k}\,t) + d_k\,\frac{\sin(c\sqrt{\lambda_k}\,t)}{c\sqrt{\lambda_k}}\Bigr)\varphi_k(x),
 $$
 
-with $d_k$ the coefficients of $g$, and $u_t$ obtained by termwise differentiation.
+with $d_k$ the coefficients of $g$, and $\partial_t u$ obtained by termwise differentiation.
 
 *Proof.* The eigenfunction problem is a Sturm–Liouville problem after separation of variables, and its spectral theory is that of *Ordinary Differential Equations*: the eigenvalues are positive because $-\Delta$ is a positive operator, they tend to infinity by the compactness of the resolvent, and the eigenfunctions are complete. Substituting the series into the equation and using the orthonormality of the $\varphi_k$ decouples the equation into ordinary equations in $t$ for each coefficient, solved by the displayed exponentials and trigonometric functions; the convergence of the series to a classical solution follows from the decay of the coefficients once the data are smooth enough.
 
@@ -251,7 +251,7 @@ with $d_k$ the coefficients of $g$, and $u_t$ obtained by termwise differentiati
 
 A second-order linear partial differential equation is classified at each point by its principal symbol $\sigma(x,\xi) = \sum a_{ij}\xi_i\xi_j$ as elliptic, parabolic or hyperbolic according to the definiteness, degeneracy or hyperbolicity of that quadratic form, and in two variables by the sign of the discriminant $a_{12}^2-a_{11}a_{22}$. A quasilinear first-order equation is solved by the method of characteristics, its solution being constant along the characteristic curves; the characteristics may cross, and the classical solution then ceases to exist.
 
-The Laplace equation is the model elliptic equation. Its solutions are characterised by the mean value property, they obey the maximum principle, so the Dirichlet problem has at most one solution and depends uniformly on its data, and they are represented by the fundamental solution $\Phi$ and the Green function $G$; on a ball the representation is the Poisson kernel. The heat equation is the model parabolic equation: its Cauchy problem is solved by convolution with the heat kernel, its solutions are $C^\infty$ for positive time whatever the regularity of the data, the maximum principle gives uniqueness in a cylinder, and the backward problem is ill posed because the inverse multiplier $e^{|\xi|^2|t|}$ amplifies high frequencies without bound. The wave equation is the model hyperbolic equation: its one-dimensional solution is d'Alembert's formula, its energy is conserved and confined to the cone of influence, so information travels at speed $c$, and in three dimensions the Kirchhoff formula is supported on the sphere, which is Huygens' principle.
+The Laplace equation is the model elliptic equation. Its solutions are characterised by the mean value property, they obey the maximum principle, so the Dirichlet problem has at most one solution and depends uniformly on its data, and they are represented by the fundamental solution $\Phi$ and the Green function $G$; on a ball the representation is the Poisson kernel. The heat equation is the model parabolic equation: its Cauchy problem is solved by convolution with the heat kernel, its solutions are $C^\infty$ for positive time whatever the regularity of the data, the maximum principle gives uniqueness in a cylinder, and the backward problem is ill posed because the inverse multiplier $\exp(|\xi|^2|t|)$ amplifies high frequencies without bound. The wave equation is the model hyperbolic equation: its one-dimensional solution is d'Alembert's formula, its energy is conserved and confined to the cone of influence, so information travels at speed $c$, and in three dimensions the Kirchhoff formula is supported on the sphere, which is Huygens' principle.
 
 Hadamard's notion of a well-posed problem — existence, uniqueness and continuous dependence — separates the types: the Dirichlet problem is well posed for the elliptic equation, the Cauchy problem forward in time for the parabolic equation, and the Cauchy problem for all time for the hyperbolic equation, whereas the Cauchy problem for an elliptic equation is ill posed, as Hadamard's example shows. Separation of variables reduces a boundary-value problem on a product domain to the Sturm–Liouville eigenfunction expansion of the transversal operator, and the resulting series solves the heat and wave equations mode by mode. The three model equations are unified by their fundamental solutions, which are the kernels of the inverse operators, and by the Green functions that incorporate the boundary conditions; the distributional treatment of the fundamental solutions, and the existence theory for data of low regularity, belong to the companion articles *Distributions and Fundamental Solutions* .
 
@@ -267,7 +267,7 @@ Hadamard's notion of a well-posed problem — existence, uniqueness and continuo
 | $\Phi$ | Fundamental solution of the Laplacian |
 | $G(x,y)$, $H(x,y)$ | Green function and harmonic corrector |
 | $P(x,y)$ | Poisson kernel of a ball |
-| $K_t(x)$ | Heat kernel, $(4\pi t)^{-n/2}e^{-|x|^2/4t}$ |
+| $K_t(x)$ | Heat kernel, $(4\pi t)^{-n/2}\exp(-|x|^2/4t)$ |
 | $c$ | Wave speed |
 | $E(t)$ | Energy of a solution of the wave equation |
 | characteristic curves | Integral curves of $\dot x = a(x,u)$ |

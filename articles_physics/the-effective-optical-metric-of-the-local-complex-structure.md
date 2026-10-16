@@ -4,7 +4,7 @@
 
 The local complex structure of the framework identifies the temporal direction with the imaginary scalar generator, $t\mapsto i\,c\,t\,e_0$, with $c$ the local speed of light in the medium. It induces at each point the quadratic form
 $$
-\langled\tilde{Q}\rangle_{\natural}=(ic\,dt)^2+d\vec x^2=-c^2\,dt^2+d\vec x^2,
+\langle d\tilde{Q}\rangle_{\natural}=(ic\,dt)^2+d\vec x^2=-c^2\,dt^2+d\vec x^2,
 $$
 of signature $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The structure leaves one number free, the scale $c=1/\sqrt{\epsilon\mu}$; the null cone of the form has aperture $c$; and the wave operator $\Box=\Delta-c^{-2}\partial_t^2$ has characteristic speed $c$ (*The Local Complex Structure and the Speed of Light*).
 

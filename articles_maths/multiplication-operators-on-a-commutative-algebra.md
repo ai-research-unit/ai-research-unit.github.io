@@ -125,10 +125,10 @@ into the $R$-algebra of functions on the character set with pointwise operations
 **Theorem.** $\Gamma$ is a unital $R$-algebra homomorphism, and under it the multiplication operator $L_a$ becomes multiplication of functions by $\Gamma(a)$:
 
 $$
-\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \hat a\,\hat x ,
+\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x ,
 $$
 
-where $\hat a = \Gamma(a)$.
+where $\mathcal F a = \Gamma(a)$.
 
 *Proof.* For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$.
 
@@ -198,7 +198,7 @@ $$
 
 For a commutative unital $R$-algebra $A$, the **multiplication operators** $L_a(x) = ax$ satisfy $L_{ab} = L_aL_b = L_bL_a$ and $L_{a+b} = L_a + L_b$, so $L : A \to \operatorname{End}_R(A)$ is a faithful $R$-algebra homomorphism; its image is the **regular representation** $L(A)$, a commutative subalgebra isomorphic to $A$. The family is its own centralizer in the operator algebra: every operator commuting with all $L_a$ is a multiplication operator, which is the statement $\operatorname{End}_A(A) \cong A$ for the regular module. A derivation interacts with the family by $[\delta, L_a] = L_{\delta(a)}$.
 
-The **characters** of $A$ are the unital homomorphisms $\chi : A \to R$, and each is a common eigenvector of the family, with $\chi \circ L_a = \chi(a)\chi$. Collecting the eigenvalues gives the **Gelfand transform** $\Gamma(a)(\chi) = \chi(a)$, a unital algebra homomorphism into the algebra of functions on the character set, under which $L_a$ is multiplication of functions by $\hat a$. The transform is injective exactly when the characters separate points, and its kernel is the Jacobson radical. The topological and analytic theory of the transform — the compact character space, the norm, the isometry — needs the distance of Part II and the limit of Part III and is deferred to *Topological Algebras and the Gelfand Transform* and *Banach Algebras*. The trace pairing $T(a,b) = \operatorname{tr}(L_a L_b)$ is symmetric and associative, and every multiplication operator is self-adjoint for it.
+The **characters** of $A$ are the unital homomorphisms $\chi : A \to R$, and each is a common eigenvector of the family, with $\chi \circ L_a = \chi(a)\chi$. Collecting the eigenvalues gives the **Gelfand transform** $\Gamma(a)(\chi) = \chi(a)$, a unital algebra homomorphism into the algebra of functions on the character set, under which $L_a$ is multiplication of functions by $\mathcal F a$. The transform is injective exactly when the characters separate points, and its kernel is the Jacobson radical. The topological and analytic theory of the transform — the compact character space, the norm, the isometry — needs the distance of Part II and the limit of Part III and is deferred to *Topological Algebras and the Gelfand Transform* and *Banach Algebras*. The trace pairing $T(a,b) = \operatorname{tr}(L_a L_b)$ is symmetric and associative, and every multiplication operator is self-adjoint for it.
 
 ## Summary of Notation
 
@@ -212,7 +212,7 @@ The **characters** of $A$ are the unital homomorphisms $\chi : A \to R$, and eac
 | $[\delta, L_a] = L_{\delta(a)}$ | A derivation acts on the parameters |
 | $\mathfrak X(A) = \operatorname{Hom}_{\mathsf{CAlg}_R}(A,R)$ | Character set of $A$ |
 | $\chi$ | A character, $\chi(ab) = \chi(a)\chi(b)$, $\chi(1) = 1$ |
-| $\Gamma$, $\hat a = \Gamma(a)$ | Gelfand transform; the function $\chi \mapsto \chi(a)$ |
+| $\Gamma$, $\mathcal F a = \Gamma(a)$ | Gelfand transform; the function $\chi \mapsto \chi(a)$ |
 | $\ker\Gamma$ | Jacobson radical, the intersection of the maximal ideals |
 | $T(a,b) = \operatorname{tr}(L_aL_b)$ | Trace pairing; symmetric, associative |
 | $\operatorname{tr}(L_a)$ | Regular trace of $a$ |

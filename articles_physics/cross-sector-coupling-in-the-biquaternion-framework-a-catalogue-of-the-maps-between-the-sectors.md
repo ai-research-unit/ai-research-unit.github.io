@@ -1,4 +1,4 @@
-# __Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors__
+# __Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors__
 
 ## Introduction
 
@@ -64,19 +64,18 @@ The square of a material element is its interval, and the interval is a real sca
 **Identity (the square is the interval).** For every $\tilde{Q}$,
 
 $$
-\tilde{Q}^{\natural}\tilde{Q} = N(\tilde{Q})\,e_0,
+\tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_0,
 $$
 
-with $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\vec x$
-with real $t$ and $\vec x$, the value $N(\tilde{Q}) = -c^{2}t^{2}+\vec x^{2}$ is **real**, and the
+with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\vec x$
+with real $t$ and $\vec x$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+\vec x^{2}$ is **real**, and the
 scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.
 
 **Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
 deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not
 informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
-lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The
-Interval as the Square and the Charge of the Material Composition*, and the grid-level pointer by *The Four General Products and Their Physical Readings*.
+lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the grid-level pointer by *The Four General Products and Their Physical Readings*.
 $100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.
 
 ### The Preparation Map
@@ -90,7 +89,7 @@ $$
 \tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\vec x\bigr) = \tfrac12\bigl(ct\,e_0-i\vec x\bigr) \in \mathbb{M}_+,
 $$
 
-with $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac14 N(\tilde{Q})$. On the trace-one slice
+with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{Q}\rangle_{\natural}$. On the trace-one slice
 $ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\vec r)$ with $\vec r = -\vec x$,
 a point of the Bloch ball.
 
@@ -107,11 +106,11 @@ bare vector-space isomorphism.
 The simplest map is the one the central scalar supplies.
 
 **Proposition.** Multiplication by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$ and
-$i\mathbb{M}_- = \mathbb{M}_+$, reverses the sign of the norm, $N(i\tilde{Q}) = -N(\tilde{Q})$, and is a
+$i\mathbb{M}_- = \mathbb{M}_+$, reverses the sign of the norm, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, and is a
 bijection of the algebra.
 
 **Why.** The scalar $i$ is central and anti-Hermitian, $i^{*} = -i$, so $(i\tilde{Q})^{*} = \tilde{Q}^{*}i^{*} = -i\tilde{Q}^{*}$:
-the sign of the adjoint flips and the sector with it. The norm reverses because $N$ is quadratic in the
+the sign of the adjoint flips and the sector with it. The norm reverses because $\langle\cdot\rangle_{\natural}$ is quadratic in the
 coefficients and $i^{2} = -1$.
 
 **Interpretation.** The exchange is a **relational clock**: because the two sectors are the two time
@@ -159,8 +158,8 @@ $ict\cdot h_0$ and $\vec x\cdot i\vec h$, each carrying one factor of $i$.
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of *The Bilinear Product on the Material Sector*. It is a pairing and
 not a map, and it produces no element of either sector. The **imaginary part of the norm** is the same
-phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
-of one element, and that is the interpretation the introduction records for the imaginary part of $N$, owned by
+phenomenon from the other side: the cross terms of $\langle\cdot\rangle_{\natural}$ couple the material and informational parameters
+of one element, and that is the interpretation the introduction records for the imaginary part of $\langle\cdot\rangle_{\natural}$, owned by
 *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## The Couplings of Time and of Thermodynamics
@@ -210,7 +209,7 @@ Biquaternionic Form*.
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
-| imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
+| imaginary part of $\langle\cdot\rangle_{\natural}$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
 | superselection | **non-coupling** | observables preserve each sector | *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* | about observables, not about maps |
@@ -263,7 +262,7 @@ each of its instances owned by an article that proves it.
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$ | Quaternion conjugation, coefficient conjugation, the real structure |
 | $\tilde{Q} = ict\,e_0+\vec x$ | Material element, $t$ and $\vec x$ real |
 | $\tilde{H} = h_0e_0+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
-| $N(\tilde{Q}) = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
 | $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |
 | $\mathrm{Sc}(\tilde{P}\tilde{H})$ | Off-sector scalar pairing, purely imaginary |

@@ -29,11 +29,11 @@ for all $x,y$; equivalently, the measure $\pi(x)p(x,dy)$ on $E\times E$ is symme
 
 **Proposition (the reversed chain).** Let $\pi$ be stationary and define
 $$
-\hat p(x,y)=\frac{\pi(y)\,p(y,x)}{\pi(x)},
+p^{*}(x,y)=\frac{\pi(y)\,p(y,x)}{\pi(x)},
 $$
-with $\hat p(x,y)=0$ or arbitrary on the $\pi$-null set where $\pi(x)=0$. Then $\hat p$ is a Markov kernel and $\pi$ is stationary for it; it is called the **reversed chain** of $p$ with respect to $\pi$. The chain is reversible if and only if $\hat p=p$ as kernels on the support of $\pi$.
+with $p^{*}(x,y)=0$ or arbitrary on the $\pi$-null set where $\pi(x)=0$. Then $p^{*}$ is a Markov kernel and $\pi$ is stationary for it; it is called the **reversed chain** of $p$ with respect to $\pi$. The chain is reversible if and only if $p^{*}=p$ as kernels on the support of $\pi$.
 
-*Proof.* The positivity is clear, and $\sum_y\hat p(x,y)=\sum_y\pi(y)p(y,x)/\pi(x)=(\pi P)(x)/\pi(x)=1$ by the stationarity; the reversed chain's stationarity is the symmetry of the definition, and its equality with $p$ is the detailed balance identity rearranged.
+*Proof.* The positivity is clear, and $\sum_yp^{*}(x,y)=\sum_y\pi(y)p(y,x)/\pi(x)=(\pi P)(x)/\pi(x)=1$ by the stationarity; the reversed chain's stationarity is the symmetry of the definition, and its equality with $p$ is the detailed balance identity rearranged.
 
 ### The reversal of the path space
 
@@ -47,9 +47,9 @@ with $r^2=\mathrm{id}$ and $r\circ\sigma=\sigma^{-1}\circ r$.
 $$
 \mathbb P_\pi\circ r^{-1}=\mathbb P_\pi ,
 $$
-that is, if and only if the law of the chain is invariant under the time reversal. For the reversed chain $\hat p$, the law of the chain running backwards under $p$ is the law of the chain running forwards under $\hat p$.
+that is, if and only if the law of the chain is invariant under the time reversal. For the reversed chain $p^{*}$, the law of the chain running backwards under $p$ is the law of the chain running forwards under $p^{*}$.
 
-*Proof.* The finite-dimensional distributions of $r$-transformed path are the reversed-time distributions of the original chain; the reversed chain $\hat p$ is exactly the chain whose forward distributions are those, as the definition of $\hat p$ shows by induction on the length of the window. The equality of the two laws is therefore the equality of the forward distributions of $p$ and $\hat p$, which is $p=\hat p$.
+*Proof.* The finite-dimensional distributions of $r$-transformed path are the reversed-time distributions of the original chain; the reversed chain $p^{*}$ is exactly the chain whose forward distributions are those, as the definition of $p^{*}$ shows by induction on the length of the window. The equality of the two laws is therefore the equality of the forward distributions of $p$ and $p^{*}$, which is $p=p^{*}$.
 
 ## Self-Adjointness and the Spectrum
 
@@ -62,9 +62,9 @@ $$
 
 *Proof.* The two pairings are $\langle Pf,g\rangle_\pi=\sum_{x,y}\pi(x)p(x,y)f(y)\bar g(x)$ and $\langle f,Pg\rangle_\pi=\sum_{x,y}\pi(x)p(x,y)f(x)\bar g(y)$. They are equal for all $f,g$ exactly when $\pi(y)p(y,x)=\pi(x)p(x,y)$ for all $x,y$, which is detailed balance; the passage between the two displays is a relabelling of the summation.
 
-**Corollary (the adjoint is the reversed chain).** For a general stationary chain, the adjoint $P^*$ on $L^2(\pi)$ is the Markov operator of the reversed chain $\hat p$; the chain is reversible exactly when $P^*=P$. The computation of the adjoint is *The Adjoint of the Markov Operator*, later in this category.
+**Corollary (the adjoint is the reversed chain).** For a general stationary chain, the adjoint $P^{*}$ on $L^2(\pi)$ is the Markov operator of the reversed chain $p^{*}$; the chain is reversible exactly when $P^{*}=P$. The computation of the adjoint is *The Adjoint of the Markov Operator*, later in this category.
 
-*Proof.* The adjoint is characterised by $\langle f,P^*g\rangle_\pi=\langle Pf,g\rangle_\pi$ for all $f,g$, and the kernel $\hat p$ satisfies the resulting identity by the same relabelling as in the theorem.
+*Proof.* The adjoint is characterised by $\langle f,P^{*}g\rangle_\pi=\langle Pf,g\rangle_\pi$ for all $f,g$, and the kernel $p^{*}$ satisfies the resulting identity by the same relabelling as in the theorem.
 
 ### The real spectrum
 
@@ -111,7 +111,7 @@ where $\operatorname{Var}_\pi(f)=\|f-\int f\,d\pi\|_{L^2(\pi)}^2$, and the infim
 
 **Example (the two-state chain).** With $p(0,1)=a$ and $p(1,0)=b$ one has $\pi=(b/(a+b),a/(a+b))$ and $\pi(0)a=\pi(1)b=ab/(a+b)$; the chain is reversible for all $a,b$, its Markov operator on $L^2(\pi)$ is the symmetric matrix with eigenvalues $1$ and $1-a-b$, and the spectral gap is $a+b$.
 
-**Example (a non-reversible cycle).** On $E=\{1,2,3\}$ let $p(i,i+1)=1$ cyclically. The uniform measure is stationary, but $\pi(1)p(1,2)=\frac13$ while $\pi(2)p(2,1)=0$, so the chain is not reversible; the reversed chain runs around the cycle backwards, the Markov operator is the cyclic permutation matrix with the complex eigenvalues $1,e^{\pm2\pi i/3}$, and the spectrum is not real.
+**Example (a non-reversible cycle).** On $E=\{1,2,3\}$ let $p(i,i+1)=1$ cyclically. The uniform measure is stationary, but $\pi(1)p(1,2)=\frac13$ while $\pi(2)p(2,1)=0$, so the chain is not reversible; the reversed chain runs around the cycle backwards, the Markov operator is the cyclic permutation matrix with the complex eigenvalues $1,\exp(\pm2\pi i/3)$, and the spectrum is not real.
 
 **Example (the Ornstein–Uhlenbeck chain).** The diffusion with generator $\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ and invariant law $N(0,\sigma^2/(2\theta))$ is reversible, its generator is self-adjoint on $L^2$ of the normal law, and its spectrum is the arithmetic set $\{-n\theta\}$ of the Hermite operator; the reversibility is the symmetry of the Gaussian kernel.
 
@@ -121,14 +121,14 @@ Reversibility degenerates in four configurations. First, a stationary measure ne
 
 ## Summary
 
-A Markov chain with a stationary measure $\pi$ is reversible when the detailed balance identity $\pi(x)p(x,y)=\pi(y)p(y,x)$ holds, equivalently when the measure $\pi(x)p(x,dy)$ on the product is symmetric, equivalently when the law of the stationary chain is invariant under the time reversal $r$ of the path space, equivalently when the Markov operator is self-adjoint on $L^2(\pi)$. The reversed chain is the kernel $\hat p(x,y)=\pi(y)p(y,x)/\pi(x)$, its forward law is the backward law of the original, and reversibility is $\hat p=p$. On a finite connected reversible chain the spectrum is real, lies in $[-1,1]$, the eigenfunctions are orthogonal, the eigenvalue one is simple, and the spectral gap is given by the variational formula $\gamma=\inf\mathcal{E}(f,f)/\operatorname{Var}_\pi(f)$ of the Dirichlet form $\mathcal{E}(f,g)=\langle(I-P)f,g\rangle_\pi=\frac12\sum\pi(x)p(x,y)(f(x)-f(y))(\overline{g(x)-g(y)})$. The reversible random walks, the birth–death chains and the Gaussian diffusions are the standard examples, and the directed cycle is the standard nonreversible one. The adjoint operator is *The Adjoint of the Markov Operator*, later in this category, and the reversal at the level of the law of a process is the next article.
+A Markov chain with a stationary measure $\pi$ is reversible when the detailed balance identity $\pi(x)p(x,y)=\pi(y)p(y,x)$ holds, equivalently when the measure $\pi(x)p(x,dy)$ on the product is symmetric, equivalently when the law of the stationary chain is invariant under the time reversal $r$ of the path space, equivalently when the Markov operator is self-adjoint on $L^2(\pi)$. The reversed chain is the kernel $p^{*}(x,y)=\pi(y)p(y,x)/\pi(x)$, its forward law is the backward law of the original, and reversibility is $p^{*}=p$. On a finite connected reversible chain the spectrum is real, lies in $[-1,1]$, the eigenfunctions are orthogonal, the eigenvalue one is simple, and the spectral gap is given by the variational formula $\gamma=\inf\mathcal{E}(f,f)/\operatorname{Var}_\pi(f)$ of the Dirichlet form $\mathcal{E}(f,g)=\langle(I-P)f,g\rangle_\pi=\frac12\sum\pi(x)p(x,y)(f(x)-f(y))(\overline{g(x)-g(y)})$. The reversible random walks, the birth–death chains and the Gaussian diffusions are the standard examples, and the directed cycle is the standard nonreversible one. The adjoint operator is *The Adjoint of the Markov Operator*, later in this category, and the reversal at the level of the law of a process is the next article.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\pi(x)p(x,y)=\pi(y)p(y,x)$ | detailed balance |
-| $\hat p(x,y)=\pi(y)p(y,x)/\pi(x)$ | the reversed chain |
+| $p^{*}(x,y)=\pi(y)p(y,x)/\pi(x)$ | the reversed chain |
 | $r$, $(r\omega)_n=\omega_{-n}$ | the time reversal of the path space |
 | $r\sigma=\sigma^{-1}r$ | the reversal intertwines the shift with its inverse |
 | $\langle Pf,g\rangle_\pi=\langle f,Pg\rangle_\pi$ | self-adjointness on $L^2(\pi)$ |

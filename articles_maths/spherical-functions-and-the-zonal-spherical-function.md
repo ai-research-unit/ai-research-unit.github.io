@@ -78,7 +78,7 @@ and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered fro
 **Definition.** The **spherical transform** of $f\in L^1(K\backslash G/K)$ is the function on the spherical spectrum
 
 $$
-\hat f(\omega) = \int_G f(x)\,\omega(x)\,dx = \chi_\omega(f),
+(\mathcal F f)(\omega) = \int_G f(x)\,\omega(x)\,dx = \chi_\omega(f),
 $$
 
 which is the Gelfand transform of the commutative Banach algebra $L^1(K\backslash G/K)$.
@@ -86,7 +86,7 @@ which is the Gelfand transform of the commutative Banach algebra $L^1(K\backslas
 **Theorem (the transform is a `*`-homomorphism).** The spherical transform satisfies
 
 $$
-\widehat{f*h}(\omega) = \hat f(\omega)\,\hat h(\omega), \qquad \widehat{f^*}(\omega) = \overline{\hat f(\omega)} ,
+\widehat{f*h}(\omega) = (\mathcal F f)(\omega)\,(\mathcal F h)(\omega), \qquad \widehat{f^*}(\omega) = \overline{(\mathcal F f)(\omega)} ,
 $$
 
 and it is injective with dense image in $C_0(\Sigma(G,K))$; the spherical functions are the evaluations at the points of the spectrum.
@@ -102,7 +102,7 @@ $$
 with multiplicity one at each point, where $\mu$ is the **spherical Plancherel measure**; the subspace of $K$-fixed vectors is $L^2(\Sigma(G,K),\mu)$ and the spherical transform is the unitary equivalence onto it, with
 
 $$
-\int_G |f(x)|^2\,dx = \int_{\Sigma(G,K)} |\hat f(\omega)|^2\,d\mu(\omega) .
+\int_G |f(x)|^2\,dx = \int_{\Sigma(G,K)} |(\mathcal F f)(\omega)|^2\,d\mu(\omega) .
 $$
 
 **Proof.** For a Gelfand pair with $G$ of type I the left regular representation restricted to the invariant vectors is multiplicity-free, and the decomposition is the spectral decomposition of the commutative algebra acting on the invariant space; the plancherel identity is the statement that the Gelfand transform extends to a unitary from the invariant $L^2$ to the $L^2$ of the spectral measure, which is the general Plancherel theorem of *The Plancherel Theorem* specialised to the multiplicity-free part.
@@ -113,7 +113,7 @@ $$
 
 ## Summary
 
-For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions form a closed subalgebra $L^1(K\backslash G/K)$ of the group algebra, and $(G,K)$ is a **Gelfand pair** exactly when it is commutative; a spherical function is a continuous bi-$K$-invariant $\omega\ne0$ with $\int_K\omega(xky)dk = \omega(x)\omega(y)$, and then $\omega(e)=1$, $\omega(x^{-1})=\overline{\omega(x)}$, $|\omega|\leq1$, and $\omega$ is positive definite. The bounded spherical functions are exactly the characters of the invariant algebra, $\chi_\omega(f) = \int f\omega$, and they form the spherical spectrum $\Sigma(G,K)$; the zonal spherical function $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ of a spherical representation $\pi\in\operatorname{Irr}(G,K)$ with unit $K$-fixed vector $\xi$ is spherical, the map $\pi\mapsto\omega_\pi$ is a bijection $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and $\pi$ is recovered from $\omega_\pi$ by the GNS construction. The spherical transform $f\mapsto\hat f(\omega) = \int f\omega$ is the Gelfand transform of the invariant algebra, multiplicative with $\widehat{f^*} = \overline{\hat f}$, and the invariant $L^2$ space decomposes with multiplicity one as a direct integral of the spherical representations against the spherical Plancherel measure, with the plancherel identity $\int|f|^2 = \int|\hat f|^2d\mu$. The adjoint, the measure on the spherical dual and the Hermitian forms are the neighbouring articles.
+For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions form a closed subalgebra $L^1(K\backslash G/K)$ of the group algebra, and $(G,K)$ is a **Gelfand pair** exactly when it is commutative; a spherical function is a continuous bi-$K$-invariant $\omega\ne0$ with $\int_K\omega(xky)dk = \omega(x)\omega(y)$, and then $\omega(e)=1$, $\omega(x^{-1})=\overline{\omega(x)}$, $|\omega|\leq1$, and $\omega$ is positive definite. The bounded spherical functions are exactly the characters of the invariant algebra, $\chi_\omega(f) = \int f\omega$, and they form the spherical spectrum $\Sigma(G,K)$; the zonal spherical function $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ of a spherical representation $\pi\in\operatorname{Irr}(G,K)$ with unit $K$-fixed vector $\xi$ is spherical, the map $\pi\mapsto\omega_\pi$ is a bijection $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and $\pi$ is recovered from $\omega_\pi$ by the GNS construction. The spherical transform $f\mapsto(\mathcal F f)(\omega) = \int f\omega$ is the Gelfand transform of the invariant algebra, multiplicative with $\widehat{f^*} = \overline{\mathcal F f}$, and the invariant $L^2$ space decomposes with multiplicity one as a direct integral of the spherical representations against the spherical Plancherel measure, with the plancherel identity $\int|f|^2 = \int|\mathcal F f|^2d\mu$. The adjoint, the measure on the spherical dual and the Hermitian forms are the neighbouring articles.
 
 ## Summary of Notation
 
@@ -128,7 +128,7 @@ For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions for
 | $\operatorname{Irr}(G,K)$ | The spherical dual, irreducible $\pi$ with $\mathcal{H}_\pi^K\ne0$ |
 | $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ | The zonal spherical function |
 | $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$ | The correspondence $\pi\mapsto\omega_\pi$ |
-| $\hat f(\omega) = \int_G f\omega\,dx$ | The spherical transform (a Gelfand transform) |
+| $(\mathcal F f)(\omega) = \int_G f\omega\,dx$ | The spherical transform (a Gelfand transform) |
 | $\mu$ | Spherical Plancherel measure on $\Sigma(G,K)$ |
 
 ## Further Reading

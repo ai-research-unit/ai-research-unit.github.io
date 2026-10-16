@@ -7,7 +7,7 @@ The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces 
 
 The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $\langle A\rangle = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.
 
 ## The Two Involutions
 
@@ -155,12 +155,12 @@ So the involution is diagonal on the eigenbasis and the swap on the idempotent b
 
 The restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines:
 
-| line | restricted $N$ | signature | zero divisors on the line |
+| line | restricted $\langle\cdot\rangle$ | signature | zero divisors on the line |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{D}}$ | $N(a) = a^2$ | positive definite | none |
-| $j\mathbb{R}_{\mathbb{D}}$ | $N(j a') = -a'^2$ | negative definite | none |
-| $\mathbb{R}\Pi_1$ | $N(\lambda \Pi_1) = 0$ | zero | all nonzero elements |
-| $\mathbb{R}\Pi_2$ | $N(\lambda \Pi_2) = 0$ | zero | all nonzero elements |
+| $\mathbb{R}_{\mathbb{D}}$ | $\langle a\rangle = a^2$ | positive definite | none |
+| $j\mathbb{R}_{\mathbb{D}}$ | $\langle j a'\rangle = -a'^2$ | negative definite | none |
+| $\mathbb{R}\Pi_1$ | $\langle \lambda \Pi_1\rangle = 0$ | zero | all nonzero elements |
+| $\mathbb{R}\Pi_2$ | $\langle \lambda \Pi_2\rangle = 0$ | zero | all nonzero elements |
 
 The two eigenlines are the definite lines of the form; the two idempotent lines are the isotropic lines. This is the plane-level version of the statement, made in *Split-Complex Zero Divisors*, that the null cone is exactly the union of the two idempotent lines, and of the statement, made in *Split-Complex Norm and Invertibility*, that the null cone meets each eigenspace only at the origin.
 
@@ -174,7 +174,7 @@ $$
 \mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ia'\},
 $$
 
-exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $N(ia') = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
+exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
 
 | feature | $\mathbb{C}$ | $\mathbb{D}$ |
 |---|---|---|
@@ -237,7 +237,7 @@ There is no remarkable-subspace lattice, because there is only one non-trivial i
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two isotropic lines |
 | $A_r = a, A_i = a'$ | Eigenline coordinates |
 | $A_\pm = a\pm a'$ | Idempotent coordinates |
-| $N(A) = a^2-a'^2$ | Norm, zero on the idempotent lines |
+| $\langle A\rangle = a^2-a'^2$ | Norm, zero on the idempotent lines |
 | $\langle\,\cdot\,\rangle$ | Real span of the listed elements |
 
 ## Further Reading

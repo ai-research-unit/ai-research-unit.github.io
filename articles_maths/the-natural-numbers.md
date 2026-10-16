@@ -115,7 +115,7 @@ $$
 
 **Theorem (Euclid).** Every pair $n, m \in \mathbb{N}$ not both zero has a greatest common divisor $d$, and there are integers $u, v$ with $un + vm = d$; the Euclidean algorithm computes $d$ and terminates. In particular $n$ and $m$ are **coprime** exactly when $un + vm = 1$ for some integers $u, v$.
 
-**Proof.** The Euclidean algorithm is the iterated division algorithm applied to $(n,m)$, and termination is by the well-ordering of $\mathbb{N}$, since the remainders strictly decrease. The Bézout identity is the standard back-substitution, and the gcd properties follow from it; the details are in *GCD Domains*.
+**Proof.** The Euclidean algorithm is the iterated division algorithm applied to $(p,q)$, and termination is by the well-ordering of $\mathbb{N}$, since the remainders strictly decrease. The Bézout identity is the standard back-substitution, and the gcd properties follow from it; the details are in *GCD Domains*.
 
 **Theorem (fundamental theorem of arithmetic).** Every natural number $n > 1$ has a factorization $n = p_1 p_2 \cdots p_k$ into primes, unique up to the order of the factors.
 

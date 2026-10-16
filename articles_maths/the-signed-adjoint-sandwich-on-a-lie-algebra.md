@@ -107,9 +107,9 @@ so that the unitary signed sandwiches are exactly the involutive signed sandwich
 
 *Proof.* For a self-adjoint operator the unitary condition $\Sigma^{*}\Sigma = \mathrm{id}$ is $\Sigma^2 = \mathrm{id}$; conversely the unitary condition implies $\Sigma^{*} = \Sigma^{-1}$, which combined with the explicit form separates into the two stated conditions.
 
-**Corollary.** The signed conjugation $\rho_a = e^{\operatorname{ad}_a}\alpha$ is unitary for $H$ for every $a$, and it is self-adjoint exactly when it is an involution, that is when $a+\alpha(a)$ is central; the unitary reflections are the involutive ones.
+**Corollary.** The signed conjugation $\rho_a = \exp(\operatorname{ad}_a)\alpha$ is unitary for $H$ for every $a$, and it is self-adjoint exactly when it is an involution, that is when $a+\alpha(a)$ is central; the unitary reflections are the involutive ones.
 
-*Proof.* The adjoint of the exponential is the exponential of the adjoint, $\rho_a^{*} = \alpha e^{-\operatorname{ad}_a} = \rho_a^{-1}$, so the reflection is unitary; and it is self-adjoint exactly when $\rho_a = \rho_a^{-1}$, that is when its square is the identity. The condition for the involution is that of *Reflections as Signed Two-Sided Operators on a Lie Algebra*.
+*Proof.* The adjoint of the exponential is the exponential of the adjoint, $\rho_a^{*} = \alpha \exp(-\operatorname{ad}_a) = \rho_a^{-1}$, so the reflection is unitary; and it is self-adjoint exactly when $\rho_a = \rho_a^{-1}$, that is when its square is the identity. The condition for the involution is that of *Reflections as Signed Two-Sided Operators on a Lie Algebra*.
 
 ## Relation to the Unsigned Case and the Form
 

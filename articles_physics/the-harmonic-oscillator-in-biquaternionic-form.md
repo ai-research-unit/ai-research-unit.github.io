@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The harmonic oscillator is the simplest quantum system with an infinite spectrum, and its algebra is completely explicit. A single mode is one complex degree of freedom, created and destroyed by operators $\hat a,\hat a^\dagger$ with $[\hat a,\hat a^\dagger]=1$; the Hamiltonian is $\hat H=\hbar\omega(\hat a^\dagger\hat a+\tfrac12)$, and the spectrum is $(n+\tfrac12)\hbar\omega$. The single complex degree of freedom is two real degrees of freedom, the two quadratures; the phase is a $U(1)$, and the quadratic symmetries are the squeezing transformations forming the symplectic group $Sp(2,\mathbb{R})$.
+The harmonic oscillator is the simplest quantum system with an infinite spectrum, and its algebra is completely explicit. A single mode is one complex degree of freedom, created and destroyed by operators $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ with $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=1$; the Hamiltonian is $H=\hbar\omega(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+\tfrac12)$, and the spectrum is $(n+\tfrac12)\hbar\omega$. The single complex degree of freedom is two real degrees of freedom, the two quadratures; the phase is a $U(1)$, and the quadratic symmetries are the squeezing transformations forming the symplectic group $Sp(2,\mathbb{R})$.
 
 The biquaternion framework is built by complexifying the quaternions, $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and the complexification splits the algebra into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$. Because the oscillator's single complex degree of freedom is two real degrees of freedom, and because the framework's central structural device is a complexification with two sectors, there is a natural claim to test rather than assume:
 
@@ -121,9 +121,9 @@ A single mode has an infinite-dimensional state space, and $\mathbb{B}\cong M_2(
 The part that is, is the two-level truncation. Restrict the mode to the span of its two lowest levels, and replace the ladder operators by their finite-dimensional images
 
 $$
-\hat\Upsilon_1=|0\rangle\langle1|=\tfrac12(ie_1-e_2),\qquad
-\hat\Upsilon_2=|1\rangle\langle0|=\tfrac12(ie_1+e_2),\qquad
-\tilde N_{\mathrm{tr}}=\hat\Upsilon_2\hat\Upsilon_1=|1\rangle\langle1|=\tfrac12(e_0-ie_3).
+\vec\Upsilon_1=|0\rangle\langle1|=\tfrac12(ie_1-e_2),\qquad
+\vec\Upsilon_2=|1\rangle\langle0|=\tfrac12(ie_1+e_2),\qquad
+\tilde N_{\mathrm{tr}}=\vec\Upsilon_2\vec\Upsilon_1=|1\rangle\langle1|=\tfrac12(e_0-ie_3).
 $$
 
 These are the ladder operators and the lower-state projector of the parent articles: the truncation is exactly the two-state system, as expected from $\mathbb{B}\cong M_2(\mathbb{C})$.
@@ -131,13 +131,13 @@ These are the ladder operators and the lower-state projector of the parent artic
 The truncation is not faithful to the oscillator, and the failures are diagnostic. The commutator is
 
 $$
-[\hat\Upsilon_1,\hat\Upsilon_2]=\sigma_3=ie_3\neq e_0,
+[\vec\Upsilon_1,\vec\Upsilon_2]=\sigma_3=ie_3\neq e_0,
 $$
 
 so the canonical relation fails by the boundary terms of the truncation. The number operator is an idempotent, not an operator with an integer spectrum. And the squeeze generator,
 
 $$
-\hat\Upsilon_1^{\dagger 2}-\hat\Upsilon_1^2=0,
+\vec\Upsilon_1^{\dagger 2}-\vec\Upsilon_1^2=0,
 $$
 
 vanishes identically, because a two-level truncation cannot represent a two-photon process. So the one operation that most clearly distinguishes an oscillator from a two-state system, squeezing, is invisible in the biquaternion truncation. Whatever "the biquaternion form of the harmonic oscillator" means, it cannot mean two oscillators in the two sectors; at two levels, it cannot mean even one squeezed oscillator.
@@ -147,28 +147,28 @@ vanishes identically, because a two-level truncation cannot represent a two-phot
 If the sectors do not carry two oscillators, they do carry the oscillator's raising and lowering structure in a precise sense. Consider the truncation ladder operators above. Their Hermitian and anti-Hermitian parts are
 
 $$
-\hat\Upsilon_1=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{-\tfrac12 e_2}_{\in\,\mathbb{M}_-},\qquad
-\hat\Upsilon_2=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{+\tfrac12 e_2}_{\in\,\mathbb{M}_-}.
+\vec\Upsilon_1=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{-\tfrac12 e_2}_{\in\,\mathbb{M}_-},\qquad
+\vec\Upsilon_2=\underbrace{\tfrac12 ie_1}_{\in\,\mathbb{M}_+}\;\underbrace{+\tfrac12 e_2}_{\in\,\mathbb{M}_-}.
 $$
 
 Each of these ladder operators is the sum of one $\mathbb{M}_+$ element and one $\mathbb{M}_-$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{M}_-$ part while leaving the $\mathbb{M}_+$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $\tilde a=\tilde{Q}+i\tilde P$ has $\mathbb{M}_+$ part $\tilde{Q}$ and $\mathbb{M}_-$ part $i\tilde P$, and $\tilde a^\dagger=\tilde{Q}-i\tilde P$ differs from $\tilde a$ only in the sign of the $\mathbb{M}_-$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.
 
-Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\hat\Upsilon_1^2=0$ and $N(\hat\Upsilon_1)=\hat\Upsilon_1\tilde a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
+Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\vec\Upsilon_1^2=0$ and $\langle \vec\Upsilon_1\rangle_{\natural}=\vec\Upsilon_1\tilde a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
 
 ## The Phase Is the Sector Exchange
 
-The oscillator's phase, the $U(1)$ that multiplies the amplitude by $e^{-i\theta}$, is generated by the number operator. In the truncation, $[\tilde N_{\mathrm{tr}},\hat\Upsilon_1]=-\hat\Upsilon_1$, so the phase acts as $\hat\Upsilon_1\mapsto e^{-i\theta}\hat\Upsilon_1$. The generator of the phase is $i\tilde N_{\mathrm{tr}}$, which is $i$ times an $\mathbb{M}_+$ element and hence lies in $\mathbb{M}_-$; the global phase is generated by $ie_0$, also in $\mathbb{M}_-$.
+The oscillator's phase, the $U(1)$ that multiplies the amplitude by $\exp(-i\theta)$, is generated by the number operator. In the truncation, $[\tilde N_{\mathrm{tr}},\vec\Upsilon_1]=-\vec\Upsilon_1$, so the phase acts as $\vec\Upsilon_1\mapsto \exp(-i\theta)\vec\Upsilon_1$. The generator of the phase is $i\tilde N_{\mathrm{tr}}$, which is $i$ times an $\mathbb{M}_+$ element and hence lies in $\mathbb{M}_-$; the global phase is generated by $ie_0$, also in $\mathbb{M}_-$.
 
 The phase acts on the two-sector decomposition in a simple way. For $\tilde a=\tilde{Q}+i\tilde P$,
 
 $$
-e^{-i\theta}\tilde a
+\exp(-i\theta)\tilde a
 =(\cos\theta\,\tilde{Q}+\sin\theta\,\tilde P)+i(-\sin\theta\,\tilde{Q}+\cos\theta\,\tilde P),
 $$
 
 so the phase rotates the $\mathbb{M}_+$ quadrature $\tilde{Q}$ into the $\mathbb{M}_-$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and the oscillator's phase is the one-parameter group it generates.
 
-The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=e^{-ih_0t/\hbar}(\cos(|\vec h|t/\hbar)e_0+\sin(|\vec h|t/\hbar)\hat h)$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
+The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=\exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_0+\sin(|\vec h|t/\hbar)\vec u_h)$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
 
 ## Squeezing Is a Boost
 
@@ -180,13 +180,13 @@ $$
 
 Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde\Lambda\tilde{Q}_4\tilde\Lambda^{*}$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde\Lambda\tilde{Q}_4\tilde\Lambda^{*}$; computing the result gives
 
 $$
 ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,
 $$
 
-so the null combinations scale as $ct\pm x\mapsto e^{\mp\psi}(ct\pm x)$. Identifying the oscillator's phase plane with the $(ct,x)$ plane of $\mathbb{M}_-$ by $X\pm P\leftrightarrow ct\pm x$ makes the squeeze a boost, term for term.
+so the null combinations scale as $ct\pm x\mapsto \exp(\mp\psi)(ct\pm x)$. Identifying the oscillator's phase plane with the $(ct,x)$ plane of $\mathbb{M}_-$ by $X\pm P\leftrightarrow ct\pm x$ makes the squeeze a boost, term for term.
 
 At the group level the identification is the standard one: the oscillator's dynamical group $Sp(2,\mathbb{R})$ is isomorphic to $SU(1,1)$, which is the subgroup of $SL(2,\mathbb{C})$ fixing a space-like direction, equivalently the double cover of the $SO(1,2)$ subgroup of the Lorentz group. Its compact $U(1)$ is the phase; its two non-compact directions are the squeezes, realized as boosts. So the framework supplies a Lorentzian interpretation of squeezing: the phase is the compact rotation and the squeezes are the non-compact boosts in the same $su(1,1)$.
 
@@ -230,10 +230,10 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde a,\tilde a^\dagger$ | Ladder operators, elements straddling $\mathbb{M}_+\oplus\mathbb{M}_-$ |
 | $\tilde N=\tilde a^\dagger\tilde a$ | Number operator |
 | $\tilde K_1,\tilde K_2,\tilde K_3$ | Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$ |
-| $\hat\Upsilon_1=\tfrac12(ie_1-e_2)$ | Truncated lowering operator |
+| $\vec\Upsilon_1=\tfrac12(ie_1-e_2)$ | Truncated lowering operator |
 | $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$ | Truncated number operator (idempotent) |
-| $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\,\hat u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
-| $\tilde\Pi(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$ | Idempotent (pure state) |
+| $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
+| $\tilde\Pi(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | Sector exchange by the scalar imaginary |
 

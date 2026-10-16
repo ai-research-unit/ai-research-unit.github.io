@@ -74,7 +74,7 @@ exists and is finite. The function $G$ so defined is the **Green's function of t
 
 **Proof.** (a) is clear from the definition and the escape criterion. (c) follows from $\log^+|f^{n+1}(z)| = \log^+|f^n(f(z))|$ and the definition applied to $f(z)$. (b) and (d): the limit is locally uniform off $K$, and each $\log^+|f^n|/d^n$ is harmonic where $f^n \neq 0$; since $d^{-n}\log|f^n(z)| = \log|z| + O(1/|z|^d)$ for large $z$, the normalisation makes the limit tangent to $\log|z|$.
 
-**Corollary.** The Böttcher coordinate of *The Fatou Components and the Classification of the Dynamics* is $\varphi = \exp(G + iH)$, where $H$ is a harmonic conjugate of $G$ on the basin; it satisfies $\varphi(f(z)) = \varphi(z)^d$ and $\varphi(z) = z + O(1)$ at infinity, and $|\varphi| = e^{G}$. The level curves of $G$ are the **equipotentials** of the basin and the level curves of $H$ are the **external rays**; the rays and their landing are Part IV's.
+**Corollary.** The Böttcher coordinate of *The Fatou Components and the Classification of the Dynamics* is $\varphi = \exp(G + iH)$, where $H$ is a harmonic conjugate of $G$ on the basin; it satisfies $\varphi(f(z)) = \varphi(z)^d$ and $\varphi(z) = z + O(1)$ at infinity, and $|\varphi| = \exp(G)$. The level curves of $G$ are the **equipotentials** of the basin and the level curves of $H$ are the **external rays**; the rays and their landing are Part IV's.
 
 ### The Explicit Series for the Quadratic Family
 
@@ -142,7 +142,7 @@ The Green's function $G(z) = \lim d^{-n}\log^+|f^n(z)|$ exists, is continuous, v
 | $n(c)$ | Escape time of the parameter $c$, from *The Mandelbrot Set and the Quadratic Family* |
 | $G$ | Green's function of the basin of infinity |
 | $\log^+ t$ | $\max(\log t, 0)$ |
-| $\varphi = e^{G+iH}$ | Böttcher coordinate, $\lvert\varphi\rvert = e^{G}$ |
+| $\varphi = \exp(G+iH)$ | Böttcher coordinate, $\lvert\varphi\rvert = \exp(G)$ |
 | equipotential, external ray | Level curve of $G$; level curve of the harmonic conjugate $H$ |
 | $\mu = \Delta G/2\pi$ | Equilibrium measure of $K$, the Brolin measure |
 | capacity | $\exp(\lim(G-\log\lvert z\rvert)) = 1$ for a monic polynomial |

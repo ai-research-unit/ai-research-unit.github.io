@@ -12,11 +12,11 @@ Three claims organise the discussion.
 
 **Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD} \in \mathrm{Sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
 
-**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\Psi_k \mapsto A^{2-k} e^{\,i(2-k)\theta}\,\Psi_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\Psi_{ABCD}k^Ak^Bk^Ck^D$.
+**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\Psi_k \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\Psi_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\Psi_{ABCD}k^Ak^Bk^Ck^D$.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $N(\tilde Q) = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
 
 $$
 \langle \tilde Q, \tilde P\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
@@ -29,7 +29,7 @@ $$
 \mathsf{M}_2(e_0) = I_2, \quad \mathsf{M}_2(e_k) = -i\sigma_k, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
-so that $N(\tilde Q) = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -50,7 +50,7 @@ The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
-The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q)=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the General Plain Algebra*). Restricted to the material sector, $N(\tilde Q) = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
+The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the Biquaternion Algebra*). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
 
 Take the tetrad
 
@@ -74,7 +74,7 @@ $$
 so $l$ and $n$ are real four-vectors — elements of the real material sector $\mathbb{M}_-$ — while $m$ and $\bar m$ are exchanged by complex conjugation. The biquaternion norm vanishes on each leg,
 
 $$
-N(l)=N(n)=N(m)=N(\bar m)=0,
+\langle l\rangle_{\natural}=\langle n\rangle_{\natural}=\langle m\rangle_{\natural}=\langle \bar m\rangle_{\natural}=0,
 $$
 
 and no leg is zero, so **every leg of the null tetrad is a zero divisor of $\mathbb{B}$**. Under $\Phi$ the legs are the matrix units:
@@ -89,28 +89,28 @@ where $E_{ij}$ has $1$ in position $(i,j)$ and $0$ elsewhere. Each image has ran
 Equation (3) is the precise sense in which the null tetrad is native to the algebra. Up to the common factor $\sqrt2\,i$, the Newman–Penrose tetrad **is** the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$. The spinor-module article already names that basis:
 
 $$
-p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad \hat\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \hat\Upsilon_2 = \tfrac12(ie_1+e_2),
+\tilde\Pi_1 = \tfrac12(e_0+ie_3), \quad \tilde\Pi_2 = \tfrac12(e_0-ie_3), \quad \vec\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \vec\Upsilon_2 = \tfrac12(ie_1+e_2),
 $$
 
-with $\mathsf{M}_2(p)=E_{11}$, $\mathsf{M}_2(q)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $p,q$ the primitive orthogonal idempotents: $p^2=p$, $q^2=q$, $pq=qp=0$. Therefore
+with $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_1,\tilde\Pi_2$ the primitive orthogonal idempotents: $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$. Therefore
 
 $$
-l = \sqrt2\,i\,p, \qquad n = \sqrt2\,i\,q, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y .
+l = \sqrt2\,i\,\tilde\Pi_1, \qquad n = \sqrt2\,i\,\tilde\Pi_2, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y .
 \tag{4}
 $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle_{\natural} = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar q = p$ and $p^2=p$,
+The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle_{\natural} = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
 
 $$
-\langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
+\langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
 $$
 
-and because $\bar{\hat\Upsilon_2} = -\hat\Upsilon_2$ and $\hat\Upsilon_1\hat\Upsilon_2 = p$ in the matrix-unit relations,
+and because $\bar{\vec\Upsilon_2} = -\vec\Upsilon_2$ and $\vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_1$ in the matrix-unit relations,
 
 $$
-\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\hat\Upsilon_1\,\bar{\hat\Upsilon_2}) = 2\,\mathrm{Sc}(\hat\Upsilon_1\hat\Upsilon_2) = 2\,\mathrm{Sc}(p) = +1 .
+\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\vec\Upsilon_1\,\bar{\vec\Upsilon_2}) = 2\,\mathrm{Sc}(\vec\Upsilon_1\vec\Upsilon_2) = 2\,\mathrm{Sc}(\tilde\Pi_1) = +1 .
 $$
 
 The mixed products vanish because the off-diagonal units have vanishing scalar part, $\mathrm{Sc}(x)=\mathrm{Sc}(y)=0$, and the relevant products are off-diagonal matrix units. All ten inner products were recomputed from (4); the result is the off-diagonal tetrad metric
@@ -240,20 +240,20 @@ The tetrad is defined up to the six-parameter local Lorentz group, and the five 
 A boost–spin transformation rescales the legs as
 
 $$
-l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto e^{i\theta}m, \qquad \bar m \mapsto e^{-i\theta}\bar m, \qquad A>0,\ \theta\in\mathbb{R},
+l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta)m, \qquad \bar m \mapsto \exp(-i\theta)\bar m, \qquad A>0,\ \theta\in\mathbb{R},
 \tag{11}
 $$
 
-which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}e^{i\theta/2}o$, $\iota\mapsto A^{-1/2}e^{-i\theta/2}\iota$. Substituting (11) into (9), each scalar picks up a monomial:
+which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $\iota\mapsto A^{-1/2}\exp(-i\theta/2)\iota$. Substituting (11) into (9), each scalar picks up a monomial:
 
 $$
-\Psi_k \;\longmapsto\; A^{\,2-k}\,e^{\,i(2-k)\theta}\,\Psi_k, \qquad k=0,\dots,4 .
+\Psi_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\Psi_k, \qquad k=0,\dots,4 .
 \tag{12}
 $$
 
 The exponent $2-k$ is the **boost weight** of $\Psi_k$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.
 
-Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\Psi_k'/\Psi_k$ came out equal to $A^{2-k}e^{i(2-k)\theta}$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\Psi_k$ carries $4-k$ dyad indices of type $o$ and $k$ of type $\iota$, while $o$ and $\iota$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\Psi_k$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
+Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\Psi_k'/\Psi_k$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\Psi_k$ carries $4-k$ dyad indices of type $o$ and $k$ of type $\iota$, while $o$ and $\iota$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\Psi_k$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
 
 The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\Psi_k$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.
 
@@ -308,7 +308,7 @@ The framework does not derive the classification, and it does not need to: the c
 
 The construction separates cleanly into what is native to $\mathbb{B}$ and what is transcribed.
 
-**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $p,q$; the spinor dyad and its symplectic normalization; the inner products (1) and the metric (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{Sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{Sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
+**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_1,\tilde\Pi_2$; the spinor dyad and its symplectic normalization; the inner products (1) and the metric (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{Sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{Sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
 
 **Not native to the algebra.** Three items, in increasing order of severity. First, the **connection**: the spin coefficients exist once a metric-compatible connection is chosen, but the algebra does not select one. The parent article records the same for the frame, and it is the reason the spin coefficients are described here as components of a $\mathbb{B}$-valued 1-form rather than as objects the algebra produces. Second, the **curvature**: the Weyl tensor is a rank-four object outside $\mathbb{B}$, and the five scalars are its components in $\mathrm{Sym}^4 S$. The algebra says what an element of $\mathrm{Sym}^4 S$ is, but nothing in the algebra determines which element a spacetime produces. The gravity articles already record this as open, and it remains open; this article has made the statement of the gap precise by naming the object that is missing. Third, the **dynamics and the global structure**: there are no field equations here, so the algebra cannot say which Petrov types occur, and the construction is pointwise and linear, so it carries no topological or asymptotic information. The peeling behaviour of the scalars along a null direction, for instance, is a statement about a limit and lies outside the algebra.
 
@@ -318,7 +318,7 @@ The construction separates cleanly into what is native to $\mathbb{B}$ and what 
 
 The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of $\mathrm{diag}(-1,+1,+1,+1)$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
 
-The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD}\in\mathrm{Sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\Psi_k\mapsto A^{2-k}e^{i(2-k)\theta}\Psi_k$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{Sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
+The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD}\in\mathrm{Sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\Psi_k\mapsto A^{2-k}\exp(i(2-k)\theta)\Psi_k$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{Sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
 
 The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the connection's home, and the spinor module that carries the Weyl spinor; it does not supply the connection, the Weyl tensor, or the dynamics that would select one. The two-sector decomposition does not organise the Weyl scalars, because $\mathrm{Sym}^4 S$ is five complex dimensional and $\mathbb{B}$ is four. That is a negative structural finding, reported as such rather than closed.
 
@@ -329,14 +329,14 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{B}$ | biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, scalar imaginary $i$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | anti-Hermitian and Hermitian subspaces of $\mathbb{B}$; material and informational sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$ |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
 | $\langle\tilde Q,\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
 | $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,\iota$ | normalized spinor dyad, $\varepsilon(o,\iota)=1$ |
-| $p,q,\hat\Upsilon_1,\hat\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
+| $\tilde\Pi_1,\tilde\Pi_2,\vec\Upsilon_1,\vec\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
 | $E_{ij}$ | matrix with $1$ in position $(i,j)$ |
 | $l,n,m,\bar m$ | null tetrad legs; $l,n$ real, $m,\bar m$ complex |
 | $\eta_{ab}$ | tetrad metric, off-diagonal, (5) |
@@ -355,9 +355,9 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 - *Curved Spacetime and the Biquaternion Framework*, for the frame field and the curvature bivector.
 - *Linearized Gravity in Biquaternionic Form*, for the Weyl tensor and the self-dual and anti-self-dual bivectors recorded there as an open problem.
 - *Gravitational Waves in Biquaternionic Form*, for the null wave vector and the component count $10\to6\to2$ that the null tetrad is used to organise.
-- *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the spinor module $S$, the matrix units $p,q,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
+- *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the spinor module $S$, the matrix units $\tilde\Pi_1,\tilde\Pi_2,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
 - *The Null Quadric and Its Projective Geometry*, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
-- *Zero Divisors of the General Plain Algebra*, for the biquaternion-norm criterion and the classification of zero divisors used throughout.
+- *Zero Divisors of the Biquaternion Algebra*, for the biquaternion-norm criterion and the classification of zero divisors used throughout.
 - *The Spinor-Helicity Formalism and Biquaternions*, for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.
 - *Spinors*, for the two-component spinor conventions.

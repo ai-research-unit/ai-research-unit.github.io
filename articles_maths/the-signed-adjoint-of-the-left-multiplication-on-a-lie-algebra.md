@@ -90,7 +90,7 @@ vanishes identically exactly for the odd parameter; the signed left multiplicati
 
 ### The Inner Involution
 
-**Proposition.** If the involution is inner, $\alpha = e^{\operatorname{ad}_w}$, then the adjoint is $(\ell^{\alpha}_a)^{*} = -\ell^{\alpha}_{\alpha(a)}$ with the parameter transformed by the inner involution, and the parity dichotomy holds with respect to the eigenspaces of the inner involution rather than with respect to the grading.
+**Proposition.** If the involution is inner, $\alpha = \exp(\operatorname{ad}_w)$, then the adjoint is $(\ell^{\alpha}_a)^{*} = -\ell^{\alpha}_{\alpha(a)}$ with the parameter transformed by the inner involution, and the parity dichotomy holds with respect to the eigenspaces of the inner involution rather than with respect to the grading.
 
 *Proof.* The adjoint formula does not use the special form of $\alpha$ beyond its being an isometric involution; the eigenspaces of an inner involution replace the graded parts.
 

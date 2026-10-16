@@ -23,7 +23,7 @@ the ring of power series in $n$ variables whose coefficients tend to $0$; the **
 $$
 \lVert fg \rVert = \lVert f \rVert\,\lVert g \rVert \qquad (f, g \in T_n).
 $$
-Moreover $\tilde{fg} = f^{\mathrm{res}} g^{\mathrm{res}}$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\xi] \to \tilde T_n$ is an isomorphism onto the reduction.
+Moreover $(fg)^{\mathrm{res}} = f^{\mathrm{res}} g^{\mathrm{res}}$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\xi] \to T_n^{\mathrm{res}}$ is an isomorphism onto the reduction.
 
 **Proof.** Submultiplicativity of the Gauss norm is immediate from the ultrametric inequality on the coefficients of a product. For multiplicativity, scale so that $\lVert f \rVert = \lVert g \rVert = 1$; then $f, g$ lie in the subring $T_n^\circ$ of series with coefficients in the valuation ring $K^\circ$, and reduction modulo the maximal ideal gives a ring isomorphism $T_n^\circ/\mathrm{M}T_n^\circ \cong k[\xi_1,\dots,\xi_n]$, since a series with coefficients in $K^\circ$ determines and is determined by its reduction. The reductions $f^{\mathrm{res}}, g^{\mathrm{res}}$ are nonzero, and $k[\xi]$ is a polynomial ring over a field, hence a domain, so $(fg)^{\mathrm{res}} = f^{\mathrm{res}}g^{\mathrm{res}} \neq 0$ and therefore $\lVert fg \rVert = 1 = \lVert f \rVert \lVert g \rVert$. The general case follows by scaling. The statement about the reduction is the same computation.
 
@@ -131,9 +131,9 @@ The Liouville theorem is the sharpest expression of the discrepancy with the com
 
 ## Examples
 
-**Example (the closed unit disc and its reduction).** The closed unit disc over $K$ is the affinoid space $X = \mathrm{Spm}(T_1)$ with $T_1 = K\langle \xi\rangle$. Its reduction is $\tilde T_1 = k[\xi]$, and the reduction map
+**Example (the closed unit disc and its reduction).** The closed unit disc over $K$ is the affinoid space $X = \mathrm{Spm}(T_1)$ with $T_1 = K\langle \xi\rangle$. Its reduction is $T_1^{\mathrm{res}} = k[\xi]$, and the reduction map
 $$
-X \longrightarrow \mathbb{A}^1_k, \qquad x \longmapsto \tilde x = \text{the reduction of the coordinate of } x,
+X \longrightarrow \mathbb{A}^1_k, \qquad x \longmapsto x^{\mathrm{res}} = \text{the reduction of the coordinate of } x,
 $$
 is surjective and has as fibres the residue classes of the disc. A function $f \in T_1$ of norm $1$ that is a unit has reduction $f^{\mathrm{res}}$ a nonzero polynomial, and $f$ attains the value $1$ on the disc by the maximum modulus principle. The disc is connected and its functions are the power series with coefficients tending to $0$.
 

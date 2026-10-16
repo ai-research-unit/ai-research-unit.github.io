@@ -129,7 +129,7 @@ $$
 The Serre spectral sequence of the Borel fibration $X \times_{\mathbb{Z}/2} S^{\infty} \to \mathbb{RP}^{\infty}$ has the second page
 
 $$
-E_{2}^{p,q} = H^{p}(\mathbb{Z}/2; H^{q}(X)) \;\Longrightarrow\; H^{p+q}_{\mathbb{Z}/2}(X),
+E_{2}^{n,m} = H^{n}(\mathbb{Z}/2; H^{m}(X)) \;\Longrightarrow\; H^{n+m}_{\mathbb{Z}/2}(X),
 $$
 
 so that the invariant cohomology is the zeroth column $E_{2}^{0,*}$ of the spectral sequence, while the anti-invariant part contributes to the first column $E_{2}^{1,*}$, where the group cohomology of the group of order two is concentrated in degrees zero and one and is periodic.
@@ -162,7 +162,7 @@ A continuous involution of a space induces an involution $\sigma^{*}$ of its coh
 | $H^{*}(X/\sigma) \cong H^{*}(X)^{\sigma^{*}}$ | The free case, two invertible |
 | $H^{*}_{\mathbb{Z}/2}(X)$ | Equivariant cohomology $H^{*}(X\times_{\mathbb{Z}/2}S^{\infty})$ |
 | $H^{0}(\mathbb{Z}/2;H^{*}(X)) = H^{*}(X)^{\sigma^{*}}$ | The fixed part as degree-zero group cohomology |
-| $E_{2}^{p,q} = H^{p}(\mathbb{Z}/2;H^{q}(X)) \Rightarrow H^{p+q}_{\mathbb{Z}/2}(X)$ | Serre spectral sequence of the Borel fibration |
+| $E_{2}^{n,m} = H^{n}(\mathbb{Z}/2;H^{m}(X)) \Rightarrow H^{n+m}_{\mathbb{Z}/2}(X)$ | Serre spectral sequence of the Borel fibration |
 
 ## Further Reading
 

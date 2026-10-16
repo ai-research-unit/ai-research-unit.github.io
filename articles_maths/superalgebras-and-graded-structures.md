@@ -159,7 +159,7 @@ In each case $\operatorname{str}(XY) = (-1)^{|X||Y|}\operatorname{str}(YX)$, and
 
 **Definition.** Let $\beta$ be a nondegenerate even or odd supersymmetric bilinear form on $V$. The **orthosymplectic Lie superalgebra** $\mathrm{OSP}(\beta)$ is the subalgebra of $\mathrm{GL}(m|n)$ consisting of those $X$ with $\beta(Xv, w) + (-1)^{|X||v|}\beta(v, Xw) = 0$ for all homogeneous $v, w$; with the standard choices it is written $\mathrm{OSP}(m|n)$.
 
-**Remark (classification).** Over $\mathbb{C}$ the finite-dimensional simple Lie superalgebras are classified. They are the classical algebras $\mathrm{SL}(m|n)$, $\mathrm{PSL}(n|n)$, $\mathrm{OSP}(m|n)$ with the natural restrictions on $m, n$, the exceptional superalgebras $D(2,1;\alpha)$, $F(4)$ and $G(3)$, and the four infinite families $W$, $S$, $\tilde S$, $H$ of superalgebras of vector fields, due to Cartan. This classification is due to Kac and is the super analogue of the Killing–Cartan classification of *Root Systems and Classification*; the simple Lie superalgebras are not all semisimple in the ordinary sense, which is the reason the classification is a separate theorem.
+**Remark (classification).** Over $\mathbb{C}$ the finite-dimensional simple Lie superalgebras are classified. They are the classical algebras $\mathrm{SL}(m|n)$, $\mathrm{PSL}(n|n)$, $\mathrm{OSP}(m|n)$ with the natural restrictions on $m, n$, the exceptional superalgebras $D(2,1;\alpha)$, $F(4)$ and $G(3)$, and the four infinite families $W$, $S$, $S^{\mathrm{K}}$, $H$ of superalgebras of vector fields, due to Cartan. This classification is due to Kac and is the super analogue of the Killing–Cartan classification of *Root Systems and Classification*; the simple Lie superalgebras are not all semisimple in the ordinary sense, which is the reason the classification is a separate theorem.
 
 ## Graded-Commutative Superalgebras
 
@@ -199,7 +199,7 @@ for even supermatrices with invertible even diagonal blocks, and it is character
 
 **Proof.** Both sides are rational functions of the entries; by the super analogue of the splitting principle one reduces to supermatrices that are products of block diagonal and block triangular factors, and for those the formula is immediate from the definition and the multiplicativity of the ordinary determinant. The odd entries are nilpotent over a finitely generated supercommutative algebra, so the rational expression is a polynomial in the odd variables and the reduction is legitimate.
 
-**Proposition.** For an even supermatrix $X$ one has $\operatorname{Ber}(e^X) = e^{\operatorname{str}(X)}$, where $\operatorname{str}$ is the supertrace.
+**Proposition.** For an even supermatrix $X$ one has $\operatorname{Ber}(\exp(X)) = \exp(\operatorname{str}(X))$, where $\operatorname{str}$ is the supertrace.
 
 **Proof.** Reduce to the diagonal case by multiplicativity: the relation is multiplicative in $X$ to first order, and both sides have the same derivative at $X = 0$, namely $\operatorname{str}$.
 
@@ -245,7 +245,7 @@ for pairwise disjoint subsets $I, J, L$.
 
 A superalgebra is an algebra graded by $\mathbb{Z}/2$; an associative superalgebra is supercommutative when $ab = (-1)^{|a||b|}ba$, and in that case odd elements square to zero and the even part is commutative. The exterior algebra with its generators placed in odd parity is the universal example and the free supercommutative algebra on an odd module; a $\mathbb{Z}$-grading with the Koszul rule reduces to a supergrading by parity.
 
-A Lie superalgebra is super anticommutative, $[x,y] = -(-1)^{|x||y|}[y,x]$, and satisfies the super Jacobi identity; in parity zero this is an ordinary Lie algebra, and the only structural novelty is that odd elements need not bracket to zero with themselves. The associative superbracket $[a,b] = ab - (-1)^{|a||b|}ba$ makes an associative superalgebra a Lie superalgebra, and the general linear superalgebra $\mathrm{GL}(m|n)$ with its supertrace and the orthosymplectic algebras are the basic examples; the simple Lie superalgebras over $\mathbb{C}$ are classified by Kac. The Grassmann envelope reduces the theory of Lie superalgebras to ordinary Lie algebras, which is the precise sense in which the exterior algebra is universal for the sign rule. The Berezinian is the multiplicative determinant of an even supermatrix, defined on the even part of the general linear supergroup, with $\operatorname{Ber}(e^X) = e^{\operatorname{str}(X)}$.
+A Lie superalgebra is super anticommutative, $[x,y] = -(-1)^{|x||y|}[y,x]$, and satisfies the super Jacobi identity; in parity zero this is an ordinary Lie algebra, and the only structural novelty is that odd elements need not bracket to zero with themselves. The associative superbracket $[a,b] = ab - (-1)^{|a||b|}ba$ makes an associative superalgebra a Lie superalgebra, and the general linear superalgebra $\mathrm{GL}(m|n)$ with its supertrace and the orthosymplectic algebras are the basic examples; the simple Lie superalgebras over $\mathbb{C}$ are classified by Kac. The Grassmann envelope reduces the theory of Lie superalgebras to ordinary Lie algebras, which is the precise sense in which the exterior algebra is universal for the sign rule. The Berezinian is the multiplicative determinant of an even supermatrix, defined on the even part of the general linear supergroup, with $\operatorname{Ber}(\exp(X)) = \exp(\operatorname{str}(X))$.
 
 ## Summary of Notation
 
@@ -266,7 +266,7 @@ A Lie superalgebra is super anticommutative, $[x,y] = -(-1)^{|x||y|}[y,x]$, and 
 | $\operatorname{str}\begin{pmatrix}A&B\\C&D\end{pmatrix} = \operatorname{tr}A - \operatorname{tr}D$ | Supertrace; vanishes on superbrackets |
 | $\mathrm{SL}(m\vert n)$, $\mathrm{PSL}(n\vert n)$, $\mathrm{OSP}(m\vert n)$ | Supertraceless, projective and orthosymplectic subalgebras; $\mathrm{PSL}(n\vert n) = \mathrm{SL}(n\vert n)/\langle I_{2n}\rangle$ |
 | $\operatorname{Ber}(X) = \det(A-BD^{-1}C)\det(D)^{-1}$ | Berezinian of an even supermatrix |
-| $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, $\operatorname{Ber}(e^X) = e^{\operatorname{str}X}$ | Multiplicativity and the trace relation |
+| $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, $\operatorname{Ber}(\exp(X)) = \exp(\operatorname{str}X)$ | Multiplicativity and the trace relation |
 | $\varepsilon(I,J) = (-1)^{\#\{(i,j)\in I\times J : i>j\}}$ | Commutation factor of squarefree monomials |
 | Colour algebra | $\Gamma$-graded algebra with $ab = \varepsilon(\vert a\vert,\vert b\vert)ba$; $\Gamma = \mathbb{Z}/2$ gives superalgebras |
 

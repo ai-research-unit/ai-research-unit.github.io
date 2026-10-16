@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The four general products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
+The four general products of the underlying $\mathbb{C}$-vector space of $\mathbb{B}$ are defined independently in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, each on the coordinates of the two elements of a pair, and each with its scalar–vector form:
 
 $$
 \tilde P\tilde Q , \qquad \tilde P\tilde Q^{*} , \qquad \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural}\tilde Q^{*} .
@@ -10,9 +10,9 @@ $$
 
 This article collects the identities that link the four. They are not four unrelated rules: the first factor is read plain in the first two and through ${}^{\natural}$ in the last two, the second factor plain in the first and the third and through ${}^{*}$ in the second and the fourth, the two choices being made independently. Every link below is a consequence of that single distinction, read on the coordinates: the four scalar parts are related to one another by the two identities that split a factor into its scalar and its vector part; the four vector parts obey the same pair of identities; the left multiplications of the four are the general plain bilinear ones read through the two conjugations, and that reading decides which of them form a monoid. Finally, on the real quaternion subspace, where the complex conjugation is the identity and the star is the natural sign, the four scalar parts collapse onto two, the two sesquilinear ones becoming the two bilinear ones.
 
-Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternion Complex Space*.
+Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternioid Complex Space*.
 
-The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\vec P$ and $\tilde Q=Q_0+\vec Q$ separate the complex scalar part from the complex vector part, $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the conjugations from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\vec P$ and $\tilde Q=Q_0+\vec Q$ separate the complex scalar part from the complex vector part, $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part.
 
 ## The Two Choices, and the Four General Products
 
@@ -167,7 +167,7 @@ $$
 \mathrm{Vec}(\tilde P^{\natural}\tilde Q^{*})=-2P_0\overline{\vec Q}-\mathrm{Vec}(\tilde P\tilde Q^{*}) .
 $$
 
-The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\vec Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\vec Q}$. In full, the four vector parts of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
+The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\vec Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\vec Q}$. In full, the four vector parts of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
 
 | product | vector part | cross term |
 |---|---|---|
@@ -232,7 +232,7 @@ and the fourth restricts to the first. The four scalar parts therefore come in t
 
 ## Summary
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read on one and the same pair $(\tilde P,\tilde Q)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
+The four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are read on one and the same pair $(\tilde P,\tilde Q)$, each with either element replaced by its conjugate, the two choices being independent, and they are pairwise distinct. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
 
 The two conjugations in the slots separate the scalar part of a factor from its vector part,
 
@@ -251,7 +251,7 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q, \tilde P^{\natural}\tilde Q^{*}$ | the four general products, defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* |
+| $\tilde P\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q, \tilde P^{\natural}\tilde Q^{*}$ | the four general products, defined in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* |
 | $\vec P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde P}$, $R_{\tilde P}$ | the left and right multiplications of the general plain bilinear product by $\tilde P$ |
@@ -260,6 +260,6 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four definitions and their scalar–vector forms.
+- *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four definitions and their scalar–vector forms.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table of the four.
-- *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.
+- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.

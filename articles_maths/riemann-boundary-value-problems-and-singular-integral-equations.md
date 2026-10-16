@@ -256,7 +256,7 @@ $$
 governs everything. Write $G=t^\kappa G_0$ with $\operatorname{ind}_\Gamma G_0=0$, so that $\ln G_0$ is single-valued, and let $\Gamma_0$ be the Cauchy transform of $\ln G_0$; then the **canonical function**
 
 $$
-X(z)=\begin{cases}e^{\Gamma_0(z)}, & z\in\Omega^+,\\[2pt] z^{-\kappa}\,e^{\Gamma_0(z)}, & z\in\Omega^-\end{cases}
+X(z)=\begin{cases}\exp(\Gamma_0(z)), & z\in\Omega^+,\\[2pt] z^{-\kappa}\,\exp(\Gamma_0(z)), & z\in\Omega^-\end{cases}
 $$
 
 is sectionally regular, nowhere zero, and satisfies $X^+=GX^-$. It reduces the problem to the trivial jump exactly as the piecewise-constant factor did in the constant case: $\Phi=f/X$ has $\Phi^+-\Phi^-=g/(GX^-)$, so $\Phi=\mathcal{C}\bigl(g/(GX^-)\bigr)+Q$ with $Q$ a polynomial, and $f=X\Phi$.

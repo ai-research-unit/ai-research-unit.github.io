@@ -72,7 +72,7 @@ For a trace the modular group is trivial and the state is KMS at every $\beta$; 
 
 ### The Temperature Parameter
 
-On a type $\mathrm{I}$ factor with the state $\omega(x) = \mathrm{tr}(\rho_{\beta}x)$, $\rho_{\beta} = e^{-\beta h}/Z$, the modular group is $\sigma_t(x) = e^{ith}xe^{-ith}$ and the state is KMS at the given $\beta$ with respect to it: this is the model computation that shows the KMS condition at a general $\beta$ and the modular group of an exponential density matrix.
+On a type $\mathrm{I}$ factor with the state $\omega(x) = \mathrm{tr}(\rho_{\beta}x)$, $\rho_{\beta} = \exp(-\beta h)/Z$, the modular group is $\sigma_t(x) = \exp(ith)x\exp(-ith)$ and the state is KMS at the given $\beta$ with respect to it: this is the model computation that shows the KMS condition at a general $\beta$ and the modular group of an exponential density matrix.
 
 ### A General Modular Group
 

@@ -18,7 +18,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout, the quaternion basis is $e_0=1,e_1,e_2,e_3$, the scalar imaginary is $i$, and a general biquaternion is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_k\in\mathbb{C}$. The quaternion conjugate is $\tilde Q^{\natural}$, the complex conjugate is denoted $\bar{\tilde Q}$, and the Hermitian conjugate is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$.
 
-The equation $\tilde\Xi^2=\tilde Q$ names a product, so the root is relative to it. The plain square $\tilde\Xi\tilde\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\tilde\Xi\tilde\Xi$, the multiplication of the biquaternion algebra, and the other three general products and their root problems are *Comparison Between the Four General Products*.
+The equation $\tilde\Xi^2=\tilde Q$ names a product, so the root is relative to it. The plain square $\tilde\Xi\tilde\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\tilde\Xi\tilde\Xi$, the multiplication of the biquaternion algebra, and the other three general products and their root problems are *Comparison Between the Four General Products*.
 
 ## The Reduction
 

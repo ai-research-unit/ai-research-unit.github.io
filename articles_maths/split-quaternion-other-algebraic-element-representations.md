@@ -60,7 +60,7 @@ The **even subalgebra** $\mathrm{Cl}_{1,1}^+$ has basis $1, f_1 f_2 = e_2 e_1 = 
 
 ### The Split-Quaternion Norm and the Clifford Norm
 
-The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, g : g g^{\natural} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the unit group; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $g g^{\natural}$ be a scalar is automatic here, since $g g^{\natural} = N(g)$ for every $g$, so the whole unit group acts on $V$ and the kernel of the action is the scalar line.
+The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ of signature $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, g : g g^{\natural} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the unit group; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $g g^{\natural}$ be a scalar is automatic here, since $g g^{\natural} = \langle g\rangle_{\natural}$ for every $g$, so the whole unit group acts on $V$ and the kernel of the action is the scalar line.
 
 ## The Clifford Module Structure
 
@@ -125,7 +125,7 @@ As a module over itself the algebra splits as the direct sum of the two minimal 
 | $\alpha, \rho, {}^{\natural}$ | grade involution, reversal, Clifford conjugation | *Split-Quaternion Subspaces and the Involutions* |
 | $\tilde\pi_{1,2} = \tfrac12(1\pm e_2)$ | the two idempotents and the minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | the minimal left ideals | *Split-Quaternion Ideals and Peirce Decomposition* |
-| $N(\tilde q)$ | the split-quaternion norm / Clifford norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural}$ | the split-quaternion norm / Clifford norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\mathsf{M}_2$ | the $2\times2$ real matrix model | *Split-Quaternion Matrix Element Representations* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 

@@ -23,10 +23,10 @@ The symbols are those of the eight polar articles and are defined there; the set
 Every factor of every column is the exponential of an element of its algebra, and the eight columns are the eight readings of one rule. The reference word of the series, the four-factor biquaternion word, reads
 
 $$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr) ,
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) ,
 $$
 
-with the rapidity $\psi \in \mathbb{R}$, $\psi\ge0$, of the boost and its unit axis $\hat u_{\mathrm b} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$), and the rotation angle $\theta \in [0,2\pi]$ of the rotor and its unit axis $\hat u_{\mathrm r} \in \mathcal{A}$; the other seven columns write their word the same way with as many exponentials as they have factors, and the number of the exponentials is the number of factors counted in the table below. For an element $\nu$ of the algebra in view and a real $t \in \mathbb{R}$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
+with the rapidity $\psi \in \mathbb{R}$, $\psi\ge0$, of the boost and its unit axis $\vec u_{\mathrm b} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$), and the rotation angle $\theta \in [0,2\pi]$ of the rotor and its unit axis $\vec u_{\mathrm r} \in \mathcal{A}$; the other seven columns write their word the same way with as many exponentials as they have factors, and the number of the exponentials is the number of factors counted in the table below. For an element $\nu$ of the algebra in view and a real $t \in \mathbb{R}$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
 
 $$
 \exp(\nu t) =
@@ -49,7 +49,7 @@ The following table writes the word of each algebra as a product of exponentials
 | $\mathbb{D}'$ | $A = \exp(\ln\lvert a\rvert)\,\exp(\varepsilon s)$ | the nilpotent root $\varepsilon$, parabolic |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
 | $\mathbb{H}_{\mathrm{s}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta}{2} e_1)\bigr)\cdot(\text{optional } e_2)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{e_2,e_3\}$ and the cosine root $e_1$; the reflection $e_2$ is discrete |
-| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_0$ and $i\hat u_{\mathrm b}$, the cosine roots $i$ and $\hat u_{\mathrm r}$ |
+| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_0$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
 | $\mathbb{H}_{\mathbb{D}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_0$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
 
 The table is the exponential reading of the two parametrisation tables. Three features of it are worth separating.
@@ -69,7 +69,7 @@ The following table compares the polar parametrisation of the eight algebras: th
 | datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|---|---|---|---|---|---|
 | modulus | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\sqrt{\lvert N\rvert}$ | $\rho_\pm=\lvert A\pm A'\rvert$, scale $\lambda=\sqrt{\rho_+\rho_-}$ |
-| unit factor | $\{\pm1\}$ | $U(1)$ | $\{N=\pm1\}$ | $1+\mathrm{M}$ | $Sp(1)$ | $\{N=\pm1\}$ | $U(1)\cdot B_+\cdot Sp(1)$ | $e^{j\tau}\cdot(\mathrm{Sp}(1)\times\mathrm{Sp}(1))$ |
+| unit factor | $\{\pm1\}$ | $U(1)$ | $\{N=\pm1\}$ | $1+\mathrm{M}$ | $Sp(1)$ | $\{N=\pm1\}$ | $U(1)\cdot B_+\cdot Sp(1)$ | $\exp(j\tau)\cdot(\mathrm{Sp}(1)\times\mathrm{Sp}(1))$ |
 | number of factors | $2$ | $2$ | $2$ | $2$ | $2$ | $2$ | $4$ | $2$ |
 | domain | $\mathbb{R}\setminus\{0\}$ | $\mathbb{C}\setminus\{0\}$ | $N\neq0$ | $a\neq0$ | $\mathbb{H}\setminus\{0\}$ | $N\neq0$ | $N\neq0$ | all elements |
 | series | definite | definite | indefinite | indefinite | definite | indefinite | definite | indefinite |
@@ -90,7 +90,7 @@ The following table compares the factor groups of the polar decomposition of the
 |---|---|---|---|---|---|---|---|---|
 | scale | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ |
 | elliptic phase | — | $U(1)$ | — | — | — | — | $U(1)$ | — |
-| hyperbolic phase | — | — | $e^{\phi j}$ | — | — | — | — | $e^{j\tau}$ |
+| hyperbolic phase | — | — | $\exp(\phi j)$ | — | — | — | — | $\exp(j\tau)$ |
 | parabolic phase | — | — | — | $1+\mathrm{M}$ | — | — | — | — |
 | hyperbolic rotation | — | — | — | — | — | yes | yes | — |
 | rotor | $\{\pm1\}$ | — | — | — | $Sp(1)$ | $U(1)$ | $Sp(1)$ | $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ |
@@ -99,16 +99,16 @@ The table shows how the four slots of the family are occupied.
 
 - **The positive scale $\mathbb{R}_{>0}$ is present in every column**, and the factors that carry the compact topology are the phases and the rotors.
 - **In the definite series the rotor is compact**: the discrete sign group $\{\pm1\}$ in $\mathbb{R}$, the circle $U(1)$ in $\mathbb{C}$, and the sphere $Sp(1)=\{\tilde q\in\mathbb{H}:\tilde q\tilde q^{\natural}=1\}$ of unit real quaternions in $\mathbb{H}$.
-- **$\mathbb{B}$ adds a non-compact factor.** Besides its compact central phase $e^{i\alpha}$ and its compact rotor $Sp(1)$, it carries a non-compact **hyperbolic rotation** in the Hermitian subspace $\mathbb{M}_+$ of real dimension three, so that its four factors have dimensions $1+1+3+3=8$ (*Real Polar Element Representation*, §*What the Two Factors Are*; *Complex Polar Element Representation*, §*What the Two Factors Are*; *Quaternion Polar Element Representation*, §*The Modulus and the Unit Factor*; *The Polar Element Representation of Biquaternions*, §*The Scale*).
+- **$\mathbb{B}$ adds a non-compact factor.** Besides its compact central phase $\exp(i\alpha)$ and its compact rotor $Sp(1)$, it carries a non-compact **hyperbolic rotation** in the Hermitian subspace $\mathbb{M}_+$ of real dimension three, so that its four factors have dimensions $1+1+3+3=8$ (*Real Polar Element Representation*, §*What the Two Factors Are*; *Complex Polar Element Representation*, §*What the Two Factors Are*; *Quaternion Polar Element Representation*, §*The Modulus and the Unit Factor*; *The Polar Element Representation of Biquaternions*, §*The Scale*).
 
 The hyperbolic rotation of $\mathbb{B}$ is the one occurrence of a hyperbolic rotation in the definite series, and it is present because the complex norm of $\mathbb{B}$ is indefinite while its Hermitian scalar part is positive definite.
 
 In the indefinite series the unit factor is genuinely non-compact.
 
-- **Split complex.** The unit factor is a hyperbolic $e^{\phi j}$ and there is no elliptic one, because the algebra has no root of $-1$ (*Split-Complex Polar Element Representation*, §*Position and Signature*).
+- **Split complex.** The unit factor is a hyperbolic $\exp(\phi j)$ and there is no elliptic one, because the algebra has no root of $-1$ (*Split-Complex Polar Element Representation*, §*Position and Signature*).
 - **Dual numbers.** The unit factor is the parabolic $1+\mathrm{M}=\{1+s\varepsilon\}$, a shear with a globally defined angle (*Dual-Numbers Polar Element Representation*, §*The Factors and Their Meanings*).
 - **Split quaternions.** The unit factor is a hyperbolic rotation in $\operatorname{span}\{1,e_2,e_3\}$, together with a one-parameter rotor $U(1)$ from the elliptic direction $e_1$ and a discrete reflection component (*Split-Quaternion Polar Element Representation*, §*The Polar Decomposition*).
-- **Split biquaternions.** The unit factor is a rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six in place of a hyperbolic rotation, together with a central hyperbolic phase $e^{j\tau}$, the scale and the phase being the two components of the split complex modulus (*Split-Biquaternion Polar Element Representation*, §*The Factors and Their Meanings*).
+- **Split biquaternions.** The unit factor is a rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six in place of a hyperbolic rotation, together with a central hyperbolic phase $\exp(j\tau)$, the scale and the phase being the two components of the split complex modulus (*Split-Biquaternion Polar Element Representation*, §*The Factors and Their Meanings*).
 
 The split biquaternion column is the only one whose polar data has no hyperbolic rotation, and it is the only column whose decomposition exists on the whole algebra, the rotor alone degenerating on the zero divisors.
 
@@ -120,7 +120,7 @@ The factor groups are
 
 - the positive scale $\mathbb{R}_{>0}$, present in every column;
 - the elliptic phase $U(1)$ of $\mathbb{C}$ and $\mathbb{B}$;
-- the hyperbolic phase $e^{\phi j}$ of $\mathbb{D}$ and $e^{j\tau}$ of $\mathbb{H}_{\mathbb{D}}$;
+- the hyperbolic phase $\exp(\phi j)$ of $\mathbb{D}$ and $\exp(j\tau)$ of $\mathbb{H}_{\mathbb{D}}$;
 - the parabolic phase $1+\mathrm{M}$ of $\mathbb{D}'$;
 - the hyperbolic rotation of $\mathbb{H}_{\mathrm{s}}$ and of $\mathbb{B}$;
 - the rotor, discrete in $\mathbb{R}$, the circle $U(1)$ in $\mathbb{H}_{\mathrm{s}}$, and the sphere $Sp(1)$ or the product $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ in $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$.
@@ -137,7 +137,7 @@ The decompositions fall into the definite series $\mathbb{R}, \mathbb{C}, \mathb
 | $\rho_\pm=\lvert A\pm A'\rvert$ | the two idempotent components of the modulus of $\tilde Q=A+jA'$ |
 | $U(1)$ | the unit circle, the compact elliptic phase of $\mathbb{C}$ and $\mathbb{B}$ |
 | $\mathrm{Sp}(1)=\{\tilde q\in\mathbb{H}:\tilde q\tilde q^{\natural}=1\}$ | the unit real quaternions, the compact rotor of $\mathbb{H}$ and $\mathbb{B}$ |
-| $e^{\phi j},e^{j\tau}$ | the hyperbolic phase of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
+| $\exp(\phi j),\exp(j\tau)$ | the hyperbolic phase of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
 | $1+\mathrm{M}$ | the parabolic phase of $\mathbb{D}'$, $\mathrm{M}=(\varepsilon)$ |
 | $B_+$ | the Hermitian positive subspace of $\mathbb{B}$ carrying the hyperbolic rotation |
 | $U(1)$ | the rotor of $\mathbb{H}_{\mathrm{s}}$ from the elliptic direction $e_1$ |

@@ -6,14 +6,14 @@ When polarized light is passed through a sequence of polarizers, the interferenc
 
 The Poincaré sphere is a level set of the biquaternion norm of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose biquaternion-norm value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **biquaternion-norm cone** of the Hermitian sector, the same cone that the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
 
-1. The coherence biquaternion is $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$ with Stokes parameters $S_0,\vec S$; the biquaternion norm is $N(\tilde\rho)=\frac14(S_0^2-\vec S^2)$.
-2. The fully polarized (pure) states are $N(\tilde\rho)=0$, the cone; after normalisation they are the Poincaré sphere.
+1. The coherence biquaternion is $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$ with Stokes parameters $S_0,\vec S$; the biquaternion norm is $\langle\tilde\rho\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$.
+2. The fully polarized (pure) states are $\langle\tilde\rho\rangle_{\natural}=0$, the cone; after normalisation they are the Poincaré sphere.
 3. Pancharatnam's in-phase criterion defines the natural connection on the ray space; its curvature is $-\frac12d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ times the enclosed solid angle.
 4. The three-polarizer phase is the same statement for a spherical triangle, and Girard's theorem turns it into a sum of angles.
 
 The article is classical optics in the algebra. The "state" of a beam is its classical coherence matrix, the connection lives on the classical ray space, and the interference is classical. The companion article on the Berry phase develops the quantum two-level system, which shares the geometry; here the physics is a light beam, two polarizers, and an interferometer.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\vec u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
 
 The companion articles are:
 - Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the biquaternion-norm cone and its role as a level set.
@@ -50,7 +50,7 @@ $$
 P=\frac{\sqrt{S_1^2+S_2^2+S_3^2}}{S_0},
 $$
 
-$P=1$ for a fully polarized beam and $P=0$ for an unpolarized one. For a fully polarized beam the normalised Stokes vector $\hat u=\vec S/S_0$ is a unit vector, and the map $\vec J\mapsto\hat u$ sends rays to points of the unit sphere: the **Poincaré sphere**. Right and left circular polarizations are the poles, linear polarizations form the equator, and the antipode of a polarization is the orthogonal one.
+$P=1$ for a fully polarized beam and $P=0$ for an unpolarized one. For a fully polarized beam the normalised Stokes vector $\vec u=\vec S/S_0$ is a unit vector, and the map $\vec J\mapsto\vec u$ sends rays to points of the unit sphere: the **Poincaré sphere**. Right and left circular polarizations are the poles, linear polarizations form the equator, and the antipode of a polarization is the orthogonal one.
 
 The quantity $\langle A|B\rangle=\vec J_A^\dagger\vec J_B$ is the overlap of two Jones vectors; its modulus is $\sqrt{S_0^AS_0^B}$ times the cosine of half the angle between the Poincaré points of the two beams, and it sets the visibility of the interference between them.
 
@@ -73,15 +73,15 @@ The factor $i$ on the vector part is what makes the vector part Hermitian: the u
 The biquaternion norm of the coherence biquaternion is
 
 $$
-N(\tilde\rho)=\tilde\rho\tilde\rho^{\natural}
+\langle\tilde\rho\rangle_{\natural}=\tilde\rho\tilde\rho^{\natural}
 =\tfrac14\left(S_0^2-S_1^2-S_2^2-S_3^2\right)
 =\tfrac14\left(S_0^2-\vec S^2\right).
 $$
 
-This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_0+i\vec x\cdot\tilde e$, the biquaternion norm is $N(\tilde{Q})=x_0^2-|\vec x|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
+This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_0+i\vec x\cdot\tilde e$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=x_0^2-|\vec x|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
 
 $$
-P^2=1-\frac{4N(\tilde\rho)}{S_0^2}.
+P^2=1-\frac{4\langle\tilde\rho\rangle_{\natural}}{S_0^2}.
 $$
 
 ### The Cone as the Poincaré Sphere
@@ -89,10 +89,10 @@ $$
 The fully polarized states are $P=1$, that is
 
 $$
-N(\tilde\rho)=0 .
+\langle\tilde\rho\rangle_{\natural}=0 .
 $$
 
-This is the **biquaternion-norm cone** of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one projection satisfies $\tilde\rho^2=\tilde\rho$ and $N(\tilde\rho)=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
+This is the **biquaternion-norm cone** of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one projection satisfies $\tilde\rho^2=\tilde\rho$ and $\langle\tilde\rho\rangle_{\natural}=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is
 
 $$
 S_1^2+S_2^2+S_3^2=1 ,
@@ -110,34 +110,34 @@ for the beam, and the same cone is the Hermitian idempotent sphere of the sector
 
 The two elementary optical elements, the polarizer and the phase shifter, are in the algebra a **projector** and a **rotor**, and the contrast between the two is the content of this section.
 
-**The polarizer.** A polarizer that transmits the polarization $\hat u$ is the rank-one projector of $\mathbb{M}_+$
+**The polarizer.** A polarizer that transmits the polarization $\vec u$ is the rank-one projector of $\mathbb{M}_+$
 
 $$
-\tilde\Pi_{\hat u} = \tfrac12\left(e_0 + i\hat u\right),
+\tilde\Pi_{\vec u} = \tfrac12\left(e_0 + i\vec u\right),
 \qquad
-\tilde\Pi_{\hat u}^2 = \tilde\Pi_{\hat u},
+\tilde\Pi_{\vec u}^2 = \tilde\Pi_{\vec u},
 \qquad
-\tilde\Pi_{\hat u}^{\dagger} = \tilde\Pi_{\hat u},
+\tilde\Pi_{\vec u}^{\dagger} = \tilde\Pi_{\vec u},
 $$
 
 the same element that the wave article identifies as the flagpole of a circular polarization. Its action on the coherence biquaternion is the rank-one projection
 
 $$
-\tilde\rho \;\longmapsto\; \tilde\Pi_{\hat u}\,\tilde\rho\,\tilde\Pi_{\hat u} = \mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat u}\right)\tilde\Pi_{\hat u},
+\tilde\rho \;\longmapsto\; \tilde\Pi_{\vec u}\,\tilde\rho\,\tilde\Pi_{\vec u} = \mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\vec u}\right)\tilde\Pi_{\vec u},
 $$
 
 which holds because a rank-one projector satisfies $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$. The trace is Malus' law,
 
 $$
-\mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat u}\right) = \tfrac12\left(S_0 + \hat u\cdot\vec S\right),
+\mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\vec u}\right) = \tfrac12\left(S_0 + \vec u\cdot\vec S\right),
 $$
 
 so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary projectors,
 
 $$
-\tilde\Pi_{\hat u} + \tilde\Pi_{-\hat u} = e_0,
+\tilde\Pi_{\vec u} + \tilde\Pi_{-\vec u} = e_0,
 \qquad
-\tilde\Pi_{-\hat u}\,\tilde\Pi_{\hat u} = 0 ,
+\tilde\Pi_{-\vec u}\,\tilde\Pi_{\vec u} = 0 ,
 $$
 
 which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the projector onto one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.
@@ -145,10 +145,10 @@ which is the algebraic statement that two orthogonal polarizations are mutually 
 **The phase shifter.** A phase shifter that retards one circular component relative to the other is the rotor
 
 $$
-\tilde U_{\hat u}(\alpha) = e^{\alpha\hat u/2} = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}},
+\tilde U_{\vec u}(\alpha) = \exp(\alpha\vec u/2) = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}},
 $$
 
-acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\hat u}(-\alpha) = \tilde U_{\hat u}^{-1}$. It fixes $S_0$ and the component $\hat u\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\hat u$ by the angle $\alpha$: the phase shifter is a **rotation of the Poincaré sphere**. This is the Faraday effect, with $\hat u$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat u$ the optic axis and $\alpha$ the retardation.
+acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\vec u}(-\alpha) = \tilde U_{\vec u}^{-1}$. It fixes $S_0$ and the component $\vec u\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\vec u$ by the angle $\alpha$: the phase shifter is a **rotation of the Poincaré sphere**. This is the Faraday effect, with $\vec u$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\vec u$ the optic axis and $\alpha$ the retardation.
 
 **Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.
 
@@ -190,10 +190,10 @@ The phase is a property of the closed circuit of polarization states and not of 
 For a smooth family of polarizations, write the two-component amplitude in the circular basis, $(E_R,E_L)$, in the standard form with the Poincaré angles $(\theta,\phi)$ of the state,
 
 $$
-(E_R,E_L)=\left(\cos\tfrac{\theta}{2},\ \sin\tfrac{\theta}{2}\,e^{i\phi}\right),
+(E_R,E_L)=\left(\cos\tfrac{\theta}{2},\ \sin\tfrac{\theta}{2}\,\exp(i\phi)\right),
 $$
 
-normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$. Differentiating,
+normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\vec u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$. Differentiating,
 
 $$
 \langle J|\partial_\theta J\rangle=0,\qquad
@@ -221,7 +221,7 @@ $$
 
 along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed gauge rather than along the horizontal transport.
 
-The residual phase is a property of closed circuits only. If the representatives are changed, $|J_k\rangle\to e^{i\chi_k}|J_k\rangle$, the overlaps change by $e^{i(\chi_{k+1}-\chi_k)}$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is gauge invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is gauge dependent, the loop integral is not.
+The residual phase is a property of closed circuits only. If the representatives are changed, $|J_k\rangle\to \exp(i\chi_k)|J_k\rangle$, the overlaps change by $\exp(i(\chi_{k+1}-\chi_k))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is gauge invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is gauge dependent, the loop integral is not.
 
 ### The Curvature and the Half-Solid-Angle Rule
 
@@ -285,7 +285,7 @@ Three cases of the rule are worth recording. For **three linear polarizers equal
 
 ## The Biquaternion-Norm Reading of the Phase
 
-The geometric phase has an algebraic interpretation in terms of the biquaternion norm. The circuit of polarization states is a circuit on the cone $N(\tilde\rho)=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the biquaternion norm, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
+The geometric phase has an algebraic interpretation in terms of the biquaternion norm. The circuit of polarization states is a circuit on the cone $\langle\tilde\rho\rangle_{\natural}=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the biquaternion norm, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
 
 The analogy with the dynamical case is exact at the level of the geometry. For the classical spin of the companion article the transported object is the vector $\tilde S$, and the holonomy of a circuit is the **full** solid angle $\Omega$. For the optical case the transported object is the **ray** $\vec J$ — the amplitude, not its Stokes vector — and the holonomy is half the solid angle, $-\Omega/2$. The factor of $2$ between the two is the double cover: the amplitude is the spinor whose bilinear is the Stokes vector, and the transport of the spinor is half as fast in phase as the transport of its bilinear. The two articles describe one geometry with two objects, the vector and the spinor, and the ratio of the phases is the ratio of their squares.
 
@@ -296,8 +296,8 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 **Structurally the algebra's.**
 
 1. The coherence matrix is an element of the Hermitian sector $\mathbb{M}_+$; written as a biquaternion, it is $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)$.
-2. The biquaternion norm on $\mathbb{M}_+$ is indefinite, $N(\tilde\rho)=\frac14(S_0^2-\vec S^2)$, and the **degree of polarization** is $P^2=1-4N(\tilde\rho)/S_0^2$.
-3. The fully polarized states are the **biquaternion-norm cone** $N(\tilde\rho)=0$, which after normalisation is the Poincaré sphere; it is simultaneously the Hermitian idempotent sphere of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
+2. The biquaternion norm on $\mathbb{M}_+$ is indefinite, $\langle\tilde\rho\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$, and the **degree of polarization** is $P^2=1-4\langle\tilde\rho\rangle_{\natural}/S_0^2$.
+3. The fully polarized states are the **biquaternion-norm cone** $\langle\tilde\rho\rangle_{\natural}=0$, which after normalisation is the Poincaré sphere; it is simultaneously the Hermitian idempotent sphere of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
 4. The Pancharatnam connection on the cone has curvature $-\frac12\,d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ of the enclosed solid angle, and the three-polarizer rule and Girard's theorem follow.
 5. The half-strength curvature and the half-solid-angle rule are the double-cover factor: the amplitude is the spinor of the Stokes vector, and the dynamical counterpart of the same geometry gives the full solid angle.
 
@@ -305,8 +305,8 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 
 Pancharatnam's phase is the classical optical geometric phase, and in the biquaternion algebra it is the holonomy of the natural connection on the biquaternion-norm cone of the Hermitian sector.
 
-- A beam's polarization is described by its coherence biquaternion $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$, with $N(\tilde\rho)=\frac14(S_0^2-\vec S^2)$ and degree of polarization $P^2=1-4N(\tilde\rho)/S_0^2$.
-- The fully polarized states are the cone $N(\tilde\rho)=0$, which is the Poincaré sphere after normalisation and the Hermitian idempotent sphere of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
+- A beam's polarization is described by its coherence biquaternion $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$, with $\langle\tilde\rho\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ and degree of polarization $P^2=1-4\langle\tilde\rho\rangle_{\natural}/S_0^2$.
+- The fully polarized states are the cone $\langle\tilde\rho\rangle_{\natural}=0$, which is the Poincaré sphere after normalisation and the Hermitian idempotent sphere of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
 - Pancharatnam's in-phase criterion, $\arg\langle A|B\rangle$, defines the connection $\mathcal A=i\langle J|dJ\rangle=-\frac12(1-\cos\theta)d\phi$ on the ray space, in the horizontal gauge of the amplitude written in the circular basis.
 - The curvature is $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\phi=-\frac12\,d\Omega$, so the phase around a circuit is $-\frac12$ of the enclosed solid angle; the three-state rule is $\gamma_{\mathrm{Panch}}=-\arg(\langle A|B\rangle\langle B|C\rangle\langle C|A\rangle)=-\Omega_{ABC}/2$, and Girard's theorem gives $\Omega_{ABC}=\alpha+\beta+\gamma-\pi$.
 - The dynamical counterpart (Hannay's angle) transports the Stokes vector rather than the amplitude and accumulates the full solid angle; the factor $\tfrac12$ is the double cover, the amplitude being the spinor of the Stokes vector.
@@ -321,15 +321,15 @@ The phase is classical: it is measured by the shift of interference fringes of a
 | $S_0,\vec S=(S_1,S_2,S_3)$ | Stokes parameters |
 | $P=\sqrt{\vec S^2}/S_0$ | Degree of polarization |
 | $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$ | Coherence biquaternion |
-| $N(\tilde\rho)=\frac14(S_0^2-\vec S^2)$ | Biquaternion norm; indefinite on $\mathbb{M}_+$ |
-| $N(\tilde\rho)=0$ | Cone: fully polarized states = Poincaré sphere = idempotents |
-| $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |
-| $\vec J(\theta,\phi)=(\cos\frac\theta2,\sin\frac\theta2e^{i\phi})$ | Normalised Jones vector |
+| $\langle\tilde\rho\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ | Biquaternion norm; indefinite on $\mathbb{M}_+$ |
+| $\langle\tilde\rho\rangle_{\natural}=0$ | Cone: fully polarized states = Poincaré sphere = idempotents |
+| $\vec u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |
+| $\vec J(\theta,\phi)=(\cos\frac\theta2,\sin\frac\theta2\exp(i\phi))$ | Normalised Jones vector |
 | $\mathcal A=-\frac12(1-\cos\theta)d\phi$ | Pancharatnam connection |
 | $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\phi$ | Curvature, half the area form |
 | $\gamma_{\mathrm{Panch}}=-\frac12\Omega$ | Pancharatnam phase (half-solid-angle rule) |
 | $\Omega_{ABC}=\alpha+\beta+\gamma-\pi$ | Signed solid angle of a spherical triangle (Girard's theorem) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading
@@ -342,4 +342,4 @@ The phase is classical: it is measured by the shift of interference fringes of a
 - M. Born and E. Wolf, *Principles of Optics* (Cambridge, 1999), for the Stokes parameters, the Poincaré sphere, and the coherence matrix.
 - G. B. Airy, "On the composition and resolution of streams of polarized light from different sources," *Transactions of the Cambridge Philosophical Society* **9** (1852) 399, for the early interference of polarized beams.
 - J. H. Hannay, "Angle variable holonomy in adiabatic excursion of an integrable Hamiltonian," *Journal of Physics A* **18** (1985) 221–230, for the dynamical counterpart of the same geometry.
-- William E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\hat u)$ and the phase shifter as the Stokes-space rotation $e^{i\hat u\alpha/2}$ — the two operations transcribed into the series' conventions in *Polarizers and Phase Shifters as Algebra Elements* above.
+- William E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\vec u)$ and the phase shifter as the Stokes-space rotation $\exp(i\vec u\alpha/2)$ — the two operations transcribed into the series' conventions in *Polarizers and Phase Shifters as Algebra Elements* above.

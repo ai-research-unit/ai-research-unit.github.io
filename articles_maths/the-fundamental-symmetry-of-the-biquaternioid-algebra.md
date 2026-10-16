@@ -10,7 +10,7 @@ $$
 
 with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
-The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
+The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
 **Conventions.** As in the companion articles: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q})_\mu=\varepsilon_\mu Q_\mu$, the dagger acts on the coefficients by $Q_\mu^{*}=\varepsilon_\mu\bar Q_\mu$, and the form is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
 
@@ -65,23 +65,23 @@ of complex dimensions $(1,3)$ and real dimensions $(2,6)$, in agreement with the
 
 ## The Signature and the Two Indices
 
-The general theory attaches three numbers to an indefinite inner product (*Krein Spaces*, *Pontryagin Spaces*): the **positive index** $p$ and the **negative index** $q$, the dimensions of the positive and the negative definite parts of any fundamental decomposition, and the **Pontryagin index**, the smaller of the two. This section reads the three on the general quaternionic sesquilinear form and places the algebra in the general categories.
+The general theory attaches three numbers to an indefinite inner product (*Krein Spaces*, *Pontryagin Spaces*): the **positive index** $n$ and the **negative index** $m$, the dimensions of the positive and the negative definite parts of any fundamental decomposition, and the **Pontryagin index**, the smaller of the two. This section reads the three on the general quaternionic sesquilinear form and places the algebra in the general categories.
 
-**Definition.** Let $p$ and $q$ be the dimensions of the positive and of the negative definite part of a fundamental decomposition of the general quaternionic sesquilinear form. The pair $(p,q)$ is the **signature** of the form, $q$ is the **negative index**, and $\min(p,q)$ is the **Pontryagin index**.
+**Definition.** Let $n$ and $m$ be the dimensions of the positive and of the negative definite part of a fundamental decomposition of the general quaternionic sesquilinear form. The pair $(n,m)$ is the **signature** of the form, $m$ is the **negative index**, and $\min(n,m)$ is the **Pontryagin index**.
 
-**Theorem (the signature and the two indices).** Over $\mathbb{C}$, $(p,q)=(1,3)$, the negative index is $3$ and the Pontryagin index is $1$; over $\mathbb{R}$, $(p,q)=(2,6)$, the negative index is $6$ and the Pontryagin index is $2$. With the general quaternionic sesquilinear form the algebra has finite negative index, denoted $\Pi_{6}$ over $\mathbb{R}$.
+**Theorem (the signature and the two indices).** Over $\mathbb{C}$, $(n,m)=(1,3)$, the negative index is $3$ and the Pontryagin index is $1$; over $\mathbb{R}$, $(n,m)=(2,6)$, the negative index is $6$ and the Pontryagin index is $2$. With the general quaternionic sesquilinear form the algebra has finite negative index, denoted $\Pi_{6}$ over $\mathbb{R}$.
 
 **Proof.** The eigenspace splitting of $J={}^{\natural}$ is a fundamental decomposition whose positive part is the centre $\mathbb{C}_{\mathbb{B}}$ and whose negative part is the vector subspace $\mathbb{V}_{\mathbb{B}}$ (§*The Eigenspaces and the Fundamental Decomposition*), of complex dimensions $1$ and $3$ and therefore of real dimensions $2$ and $6$; the smaller of the two is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; the subscript of $\Pi_{6}$ records the negative index (*Krein Spaces*, *Pontryagin Spaces*).
 
-**Corollary (the Pontryagin index is the positive index).** Because the positive index is the smaller of the two, the Pontryagin index is $p$ itself, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; it is the dimension of the centre and of every maximal positive definite subspace, and its value is unchanged by the two readings of the algebra as a complex and as a real space, since multiplication by $i$ preserves the definite parts.
+**Corollary (the Pontryagin index is the positive index).** Because the positive index is the smaller of the two, the Pontryagin index is $n$ itself, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; it is the dimension of the centre and of every maximal positive definite subspace, and its value is unchanged by the two readings of the algebra as a complex and as a real space, since multiplication by $i$ preserves the definite parts.
 
-**Proof.** The positive part is the centre, of complex dimension $1$ and real dimension $2$, and $1<3$ over $\mathbb{C}$ while $2<6$ over $\mathbb{R}$; the maximal positive definite subspaces all have dimension $p$ (§*The Uniqueness of the Symmetry, and the Others*).
+**Proof.** The positive part is the centre, of complex dimension $1$ and real dimension $2$, and $1<3$ over $\mathbb{C}$ while $2<6$ over $\mathbb{R}$; the maximal positive definite subspaces all have dimension $n$ (§*The Uniqueness of the Symmetry, and the Others*).
 
-**Remark (two indices, two names, and a single subscript).** The **negative index** is the dimension of the negative definite part, $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$; the **Pontryagin index** is the rank of the smaller part, here the positive one, $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. The two are different numbers attached to one signature, and the name $\Pi_{6}$ of the space over $\mathbb{R}$ carries the negative index in its subscript. Read on the abstract data of *Indefinite Inner Product Spaces*, the algebra is the finite-dimensional model of the pair of invariants $(p,q)$, and the operator theory of the next article is the operator theory of that pair.
+**Remark (two indices, two names, and a single subscript).** The **negative index** is the dimension of the negative definite part, $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$; the **Pontryagin index** is the rank of the smaller part, here the positive one, $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. The two are different numbers attached to one signature, and the name $\Pi_{6}$ of the space over $\mathbb{R}$ carries the negative index in its subscript. Read on the abstract data of *Indefinite Inner Product Spaces*, the algebra is the finite-dimensional model of the pair of invariants $(n,m)$, and the operator theory of the next article is the operator theory of that pair.
 
 **Corollary (the sign of the index).** The form is indefinite, $pq=3$ over $\mathbb{C}$ and $pq=12$ over $\mathbb{R}$, and it is neither positive nor negative definite; the two real quaternion slices of signature $(1,3)$ cut the fundamental decomposition across its two parts, so the signature of the whole is not the sum of the slices' signatures.
 
-**Proof.** Indefiniteness is $p,q>0$; the slices $\mathbb{B}_{\mathbb{R}}$ and $i\mathbb{B}_{\mathbb{R}}$ each meet both the centre and the vector subspace nontrivially and each carries signature $(1,3)$ (*The Krein Gram Matrix and the Restrictions of the Form*).
+**Proof.** Indefiniteness is $n,m>0$; the slices $\mathbb{B}_{\mathbb{R}}$ and $i\mathbb{B}_{\mathbb{R}}$ each meet both the centre and the vector subspace nontrivially and each carries signature $(1,3)$ (*The Krein Gram Matrix and the Restrictions of the Form*).
 
 ## The Natural Conjugation as an Anti-Automorphism
 
@@ -157,7 +157,7 @@ $$
 
 **A non-admissible parameter.** $\tilde S=2e_1$: $\langle e_0+2e_1,e_0+2e_1\rangle_{\natural*}=1-4<0$, the line is negative, and no fundamental symmetry with that positive part exists.
 
-**The two indices.** For the algebra, $(p,q)=(2,6)$ over $\mathbb{R}$, so the negative index is $6$ and the Pontryagin index is $2$, written $\Pi_{6}$; over $\mathbb{C}$ the pair is $(1,3)$ and the two indices are $3$ and $1$. The Pontryagin index is the dimension of the positive part, the centre.
+**The two indices.** For the algebra, $(n,m)=(2,6)$ over $\mathbb{R}$, so the negative index is $6$ and the Pontryagin index is $2$, written $\Pi_{6}$; over $\mathbb{C}$ the pair is $(1,3)$ and the two indices are $3$ and $1$. The Pontryagin index is the dimension of the positive part, the centre.
 
 **The same space read over the two fields.** Over $\mathbb{R}$ the space is $\Pi_{6}$ and its Pontryagin index is $2$; read as a complex space it is $\Pi_{3}$ with Pontryagin index $1$. The subscript follows the negative index, and the Pontryagin index follows the positive part.
 
@@ -176,7 +176,7 @@ The **fundamental symmetry** of the general quaternionic sesquilinear form is th
 | ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ | Exchange of the sides |
 | $\ell_{\tilde S}=\mathbb{C}(e_0+\tilde S)$, $\|\tilde S\|_E<1$ | General fundamental symmetry |
 | $T^{\dagger}=JT^{*}J$ | The $J$-adjoint |
-| $(p,q)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The signature; $q$ the negative index, $\min(p,q)$ the Pontryagin index |
+| $(n,m)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The signature; $m$ the negative index, $\min(n,m)$ the Pontryagin index |
 | $\Pi_{6}$ | The negative index over $\mathbb{R}$ is $6$; the Pontryagin index is $2$ |
 | $\{+1,-1\}$, multiplicities $(2,6)$ | The spectrum of $J$ |
 
@@ -184,7 +184,7 @@ The **fundamental symmetry** of the general quaternionic sesquilinear form is th
 
 - *The Fundamental Symmetry* (`articles_maths/the-fundamental-symmetry.md`), for the general theory and the angular operator
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form whose symmetry this is
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the operators the symmetry defines
+- *J-Self-Adjoint and J-Unitary Operators* (`articles_maths/j-self-adjoint-and-j-unitary-operators.md`), for the operators the symmetry defines
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`) and *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the involutions and their fixed spaces
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the two eigenspaces, the centre and the vector subspace, as algebras
 - *Krein Spaces* (`articles_maths/krein-spaces.md`), *Pontryagin Spaces* (`articles_maths/pontryagin-spaces.md`) and *Indefinite Inner Product Spaces* (`articles_maths/indefinite-inner-product-spaces.md`), for the general theory of the fundamental symmetry and the two indices

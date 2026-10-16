@@ -37,7 +37,7 @@ $$
 \int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big) .
 $$
 
-The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the light cone is not the normalisation but the boundary term: if $N(n) = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_i (e_if)n_i$, and only after taking the scalar part does the sum collapse to the single product $fn$.
+The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the light cone is not the normalisation but the boundary term: if $\langle n\rangle_{\natural} = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_i (e_if)n_i$, and only after taking the scalar part does the sum collapse to the single product $fn$.
 
 **Proof.** The four displays are the divergence theorem in the four coordinates, applied to the components of $f$. For the scalar-part form, $\operatorname{Sc}(Df) = \sum_i\operatorname{Sc}(e_i\partial_if)$ and $\int_\Omega\partial_if = \int_{\partial\Omega}fn_i$; since $e_i$ is constant and the scalar part is linear and invariant under cyclic permutations,
 
@@ -45,7 +45,7 @@ $$
 \int_\Omega\operatorname{Sc}(Df) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(e_ifn_i) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(fn_ie_i) = \int_{\partial\Omega}\operatorname{Sc}\Big(f\sum_i n_ie_i\Big) = \int_{\partial\Omega}\operatorname{Sc}(fn),
 $$
 
-because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, so there is a nonzero $\tilde p$ with $n\tilde p = 0$ and $\operatorname{Sc}(\tilde p n) = \operatorname{Sc}(n\tilde p) = 0$; a boundary layer with constant values $\tilde p$ therefore contributes nothing to the boundary term.
+because $\sum_in_ie_i = n$. If $\langle n\rangle_{\natural} = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, so there is a nonzero $\tilde p$ with $n\tilde p = 0$ and $\operatorname{Sc}(\tilde p n) = \operatorname{Sc}(n\tilde p) = 0$; a boundary layer with constant values $\tilde p$ therefore contributes nothing to the boundary term.
 
 ## Integration by Parts and Green's Formulas
 
@@ -220,23 +220,23 @@ for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomog
 
 The singularities of the inverse on the null cone are treated distributionally, exactly as in the theory of the wave operator.
 
-**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/N(\tilde q)$ on the algebra, and the distribution $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
+**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/\langle\tilde q\rangle_{\natural}$ on the algebra, and the distribution $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
 
 $$
-\Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|N(\tilde q)|>\varepsilon}\frac{\varphi(\tilde q)}{N(\tilde q)}\,\mathrm{d}\tilde q ,
+\Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|\langle\tilde q\rangle_{\natural}|>\varepsilon}\frac{\varphi(\tilde q)}{\langle\tilde q\rangle_{\natural}}\,\mathrm{d}\tilde q ,
 $$
 
-and the limit exists because the level sets of $N$ have finite area and the singularity is odd with respect to $\tilde q \mapsto -\tilde q$ after symmetrisation. Off the null cone the reciprocal is an ordinary function and $N(\tilde q)\cdot(1/N(\tilde q)) = 1$ identically, so the difference
+and the limit exists because the level sets of $\langle\cdot\rangle_{\natural}$ have finite area and the singularity is odd with respect to $\tilde q \mapsto -\tilde q$ after symmetrisation. Off the null cone the reciprocal is an ordinary function and $\langle\tilde q\rangle_{\natural}\cdot(1/\langle\tilde q\rangle_{\natural}) = 1$ identically, so the difference
 
 $$
-N(\tilde q)\cdot \mathrm{pv}\frac{1}{N(\tilde q)} \;-\; 1
+\langle\tilde q\rangle_{\natural}\cdot \mathrm{pv}\frac{1}{\langle\tilde q\rangle_{\natural}} \;-\; 1
 $$
 
 is a distribution of degree zero supported on the null cone; in the standard regularisations it is a multiple of $\delta$, with a factor that depends on the normalisation of the cone.
 
-**Proof.** The convergence of the principal value is the homogeneity of $N$ of degree two and the oddness of the integrand about the origin; the support statement follows because the two sides agree off the null cone, and the identification of the correction with a multiple of $\delta$ in the standard regularisations is the computation of *Distributions and Fundamental Solutions*.
+**Proof.** The convergence of the principal value is the homogeneity of $\langle\cdot\rangle_{\natural}$ of degree two and the oddness of the integrand about the origin; the support statement follows because the two sides agree off the null cone, and the identification of the correction with a multiple of $\delta$ in the standard regularisations is the computation of *Distributions and Fundamental Solutions*.
 
-**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\hat E_D = \xi/(2\pi\mathrm{i}N(\xi))$ is displayed; the factor $1/N(\xi)$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
+**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\mathcal F E_D = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$ is displayed; the factor $1/\langle \xi\rangle_{\natural}$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
 
 **Proof.** Combine the displayed transform with the definition of the principal value above.
 

@@ -33,7 +33,7 @@ in which a $(k+1)$-handle is attached to the top of $M\times[0,1]$.
 
 **Remark (the trace has two handle descriptions).** The trace $W$ has two decompositions, and both are used below:
 $$
-W \;\simeq\; M \cup_{\alpha} e^{k+1}, \qquad W \;\simeq\; M' \cup_{\beta} e^{\,n-k},
+W \;\simeq\; M \cup_{\alpha} e^{k+1}, \qquad W \;\simeq\; M' \cup_{\beta} \exp(\,n-k),
 $$
 where $\alpha$ is the **attaching sphere** $\varphi(S^k\times\{0\})$ and $\beta$ the **belt sphere** $\varphi(\{0\}\times S^{n-k-1})$. The first describes the surgery as the addition of a $(k+1)$-cell to $M$, the second as the addition of an $(n-k)$-cell to $M'$.
 
@@ -68,7 +68,7 @@ $$
 $$
 0 \longrightarrow H_{k+1}(M) \longrightarrow H_{k+1}(W) \longrightarrow \mathbb{Z} \xrightarrow{\ \alpha\ } H_k(M) \longrightarrow H_k(W) \longrightarrow 0
 $$
-and gives $H_i(W)\cong H_i(M)$ for $i \leq k-1$ and for $i \geq k+2$, together with $H_k(W)\cong H_k(M)/\langle\alpha\rangle$ and $H_{k+1}(W)$ an extension of the kernel of $\alpha$ by $H_{k+1}(M)$, which is $H_{k+1}(M)$ itself because $\alpha\neq0$. From the description $W\simeq M'\cup_\beta e^{\,n-k}$ the same sequence with the roles exchanged gives $H_i(W)\cong H_i(M')$ for $i \leq n-k-2$ and for $i \geq n-k+1$, and $H_{n-k-1}(W)\cong H_{n-k-1}(M')/\langle\beta\rangle$. Comparing the two descriptions in the overlap $k+1 \leq i \leq n-k-2$, which is nonempty because $2k \leq n-3$, gives (b); degree $k$ lies in the second range because $2k \leq n-3$ implies $k \leq n-k-2$, so $H_k(M')\cong H_k(W)\cong H_k(M)/\langle\alpha\rangle$, which is (a); and the comparison in degree $n-k-1$ gives (c).
+and gives $H_i(W)\cong H_i(M)$ for $i \leq k-1$ and for $i \geq k+2$, together with $H_k(W)\cong H_k(M)/\langle\alpha\rangle$ and $H_{k+1}(W)$ an extension of the kernel of $\alpha$ by $H_{k+1}(M)$, which is $H_{k+1}(M)$ itself because $\alpha\neq0$. From the description $W\simeq M'\cup_\beta \exp(\,n-k)$ the same sequence with the roles exchanged gives $H_i(W)\cong H_i(M')$ for $i \leq n-k-2$ and for $i \geq n-k+1$, and $H_{n-k-1}(W)\cong H_{n-k-1}(M')/\langle\beta\rangle$. Comparing the two descriptions in the overlap $k+1 \leq i \leq n-k-2$, which is nonempty because $2k \leq n-3$, gives (b); degree $k$ lies in the second range because $2k \leq n-3$ implies $k \leq n-k-2$, so $H_k(M')\cong H_k(W)\cong H_k(M)/\langle\alpha\rangle$, which is (a); and the comparison in degree $n-k-1$ gives (c).
 
 **Remark (the vanishing attaching class).** If $\alpha = 0$ the group $H_k$ is unchanged but the surgery creates a free $\mathbb{Z}$ in $H_{k+1}$, and dually in $H_{n-k-1}$: the exact sequence above has $\alpha = 0$, so $H_{k+1}(W)\cong H_{k+1}(M)\oplus\mathbb{Z}$. The simplest instance is the connected sum, for which $k=0$ and the attaching class of two points with opposite signs is zero.
 
@@ -90,7 +90,7 @@ Its inverse operation, an **elementary collapse**, deletes a pair of generators 
 
 **Proof sketch.** The cellular chain complex of $W$ relative to $M$ is $\mathbb{Z}\langle e_{k+1}\rangle$ with $\partial e_{k+1} = c_\alpha$; the inclusion of $M$ and of $M'$ into $W$ are homotopy equivalences in the complementary dimensions by the two handle descriptions, and the chain-level difference between $C_*(M')$ and $C_*(M)$ is exactly the pair of extra generators. The statement is the algebraic form of the handle addition, and it is the reason the surgery obstruction is defined on the chain complex: two manifolds are related by surgery exactly when their (intersection-form-complexes) are related by elementary expansions and collapses.
 
-**Remark (the middle-dimension case).** When the surgery is *in* the middle dimension, $n = 2m$ and $k = m-1$ or $k = m$, the degrees $k$ and $n-k$ coincide or differ by one, and the effect on $H_m$ is no longer an isomorphism plus a quotient: it is an **elementary operation on the intersection form**, adding or subtracting a hyperbolic plane. On $H_m(M;\mathbb{Z})$ with the intersection form $Q$ of *Poincaré Duality*, a middle-dimensional surgery replaces $Q$ by $Q\oplus\langle 1,-1\rangle$ (a hyperbolic plane) up to the identification, and the elementary collapse removes such a summand. This is the precise sense in which the surgery operator acts on the form, and it is the reason the obstruction to surgery in the middle dimension is an invariant of a form and not of a homology group.
+**Remark (the middle-dimension case).** When the surgery is *in* the middle dimension, $n = 2m$ and $k = m-1$ or $k = m$, the degrees $k$ and $n-k$ coincide or differ by one, and the effect on $H_m$ is no longer an isomorphism plus a quotient: it is an **elementary operation on the intersection form**, adding or subtracting a hyperbolic plane. On $H_m(M;\mathbb{Z})$ with the intersection form $\mathfrak{Q}$ of *Poincaré Duality*, a middle-dimensional surgery replaces $Q$ by $Q\oplus\langle 1,-1\rangle$ (a hyperbolic plane) up to the identification, and the elementary collapse removes such a summand. This is the precise sense in which the surgery operator acts on the form, and it is the reason the obstruction to surgery in the middle dimension is an invariant of a form and not of a homology group.
 
 ## The Operator on the Bordism Class
 
@@ -138,7 +138,7 @@ and the obstruction is the **signature** of the middle-dimensional intersection 
 
 **Example (the trace of a surgered sphere).** With $M = S^1\times S^4$, $n = 5$ and $k = 1$, the surgery on the circle $S^1\times\{0\}$ has complement the disc $S^1\times D^4$ and produces $S^5$; the attaching class $\alpha$ generates $H_1(S^1\times S^4)=\mathbb{Z}$ and is killed, the intermediate degree $2$ and the complementary degree $3$ remain zero, and the change is the disappearance of the class of $S^4$: the homology is that of the sphere. The example is the simplest in which the surgery is not a connected sum and the attaching class is nonzero.
 
-**Example (the middle-dimensional obstruction).** Let $n=4$ and $M$ a closed simply connected four-manifold; the intersection form $Q$ on $H_2(M)$ is a unimodular symmetric form. A surgery in the middle dimension is an elementary operation on $Q$, and the obstruction to making $M$ a sphere-like manifold is the signature and the parity of $Q$. The classification of the forms and its manifold-theoretic consequences are *Low-Dimensional Topology* and *Cobordism and Surgery Theory*; the operation itself is the middle-dimensional case of the operator defined here.
+**Example (the middle-dimensional obstruction).** Let $n=4$ and $M$ a closed simply connected four-manifold; the intersection form $\mathfrak{Q}$ on $H_2(M)$ is a unimodular symmetric form. A surgery in the middle dimension is an elementary operation on $Q$, and the obstruction to making $M$ a sphere-like manifold is the signature and the parity of $Q$. The classification of the forms and its manifold-theoretic consequences are *Low-Dimensional Topology* and *Cobordism and Surgery Theory*; the operation itself is the middle-dimensional case of the operator defined here.
 
 ## Summary
 

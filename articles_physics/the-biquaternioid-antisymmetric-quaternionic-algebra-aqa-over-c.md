@@ -15,16 +15,16 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**; it is a bracket, not an associative product. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
 - **The absence of a unit.** The structure has no unit: $e_0$ annihilates it. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised quaternionic product. Owner: *Norm and Invertibility in the Antisymmetric Quaternionic Algebra*.
-- **Zero divisors.** The zero-divisor set of the structure. Owner: *Zero Divisors of the Antisymmetric Quaternionic Algebra*.
-- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators of the Antisymmetric Quaternionic Algebra*.
-- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*, *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra*, *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra*.
+- **Zero divisors.** The zero-divisor set of the structure. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
+- **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Antisymmetric Quaternionic Algebra*.
 - **The Jacobi failure and the associator defect.** The **Jacobi identity fails**; the defect is controlled by the associator of the parent product, and the deviation $D(\tilde A,\tilde B)$ measures it. Owner: *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*.
 - **The invariant bilinear forms.** The structure has **no non-degenerate invariant bilinear form**, so the adjoint has to be imported and then leaves the family; the two surviving pairings, one compact and one Lorentzian. Owner: *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*.
-- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra*, *The Realification of the Antisymmetric Quaternionic Algebra*.
+- **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
 
@@ -32,7 +32,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Representations
 
-- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation*, *The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation*.
+- **The matrix models.** The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Physical Interpretation
 

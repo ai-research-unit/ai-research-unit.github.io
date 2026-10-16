@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Supersymmetric quantum physics, introduced by Edward Witten in 1981, is the simplest realisation of a supersymmetry: a quantum system with a $\mathbb{Z}_2$ grading and a pair of Hermitian-conjugate supercharges $Q$, $Q^\dagger$ whose anticommutator is the Hamiltonian,
+Supersymmetric quantum physics, introduced by Edward Witten in 1981, is the simplest realisation of a supersymmetry: a quantum system with a $\mathbb{Z}_2$ grading and a pair of Hermitian-conjugate supercharges $\mathcal{Q}$, $\mathcal{Q}^\dagger$ whose anticommutator is the Hamiltonian,
 
 $$
-\{Q,Q^\dagger\} = H, \qquad Q^2 = 0, \qquad (Q^\dagger)^2 = 0 .
+\{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0 .
 $$
 
 Its central structural fact is that the Hamiltonian factorises: writing $H = \mathrm{diag}(H_+,H_-)$ in the grading, one has $H_+ = A^\dagger A$ and $H_- = A A^\dagger$ for a first-order operator $A$, so the two graded sectors have **partner** spectra that agree except possibly at zero energy. The partner potentials are $V_\pm = W^2 \mp W'$, where $W$ is the superpotential, and the Witten index $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ counts the imbalance of zero-energy states between the two sectors.
@@ -44,17 +44,17 @@ $$
 The supercharges are the two matrices
 
 $$
-Q = \begin{pmatrix} 0 & 0 \\ A & 0\end{pmatrix},
+\mathcal{Q} = \begin{pmatrix} 0 & 0 \\ A & 0\end{pmatrix},
 \qquad
-Q^\dagger = \begin{pmatrix} 0 & A^\dagger \\ 0 & 0\end{pmatrix},
+\mathcal{Q}^\dagger = \begin{pmatrix} 0 & A^\dagger \\ 0 & 0\end{pmatrix},
 $$
 
 acting on a two-component object whose components are the two graded sectors, and they satisfy
 
 $$
-\{Q,Q^\dagger\} = \begin{pmatrix} A^\dagger A & 0 \\ 0 & A A^\dagger\end{pmatrix} = H,
+\{\mathcal{Q},\mathcal{Q}^\dagger\} = \begin{pmatrix} A^\dagger A & 0 \\ 0 & A A^\dagger\end{pmatrix} = H,
 \qquad
-Q^2 = (Q^\dagger)^2 = 0 .
+\mathcal{Q}^2 = (\mathcal{Q}^\dagger)^2 = 0 .
 $$
 
 The algebra is the simplest supersymmetry algebra: one Hermitian supercharge pair, a $\mathbb{Z}_2$ grading (the operator $(-1)^F = \mathrm{diag}(1,-1)$), and a Hamiltonian that is the anticommutator. The two sectors are conventionally called bosonic and fermionic; in the biquaternion realisation below they are the two chiralities.
@@ -89,7 +89,7 @@ $$
 
 the central scalar d'Alembertian. The first-order pair of operators $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ is therefore a supercharge pair in the sense of the previous section, with the following dictionary.
 
-**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $\tilde\Pi_{L,R} = \frac12(1\pm\gamma_5)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathcal{Q}$ of the next paragraph, which is odd under it.
+**The grading is chirality.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and its two minimal left ideals are the two chiral halves; the chiral projectors $\tilde\Pi_{L,R} = \frac12(1\pm\gamma_5)$ split the module. The gradient $\tilde{\nabla}$ maps one chiral ideal into the other: this is the statement that the mass term is off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. The $\mathbb{Z}_2$ grading of the supersymmetry is the chirality grading, and the supercharge is the biquaternion Dirac operator $\mathcal{D}$ of the next paragraph, which is odd under it.
 
 **The superalgebra is the mass pair.** The massive biquaternionic Dirac equation is the pair
 
@@ -97,23 +97,23 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-which in block form reads $\mathcal{Q}\,\Psi = m\,\Psi$ with
+which in block form reads $\mathcal{D}\,\Psi = m\,\Psi$ with
 
 $$
-\mathcal{Q} = \begin{pmatrix} 0 & \tilde{\nabla}^{\natural} \\ \tilde{\nabla} & 0\end{pmatrix},
+\mathcal{D} = \begin{pmatrix} 0 & \tilde{\nabla}^{\natural} \\ \tilde{\nabla} & 0\end{pmatrix},
 \qquad
 \Psi = (\tilde{\Psi}_R,\tilde{\Psi}_L)^{\mathsf T},
 \qquad
-\mathcal{Q} = Q + Q^\dagger ,
+\mathcal{D} = \mathcal{Q} + \mathcal{Q}^\dagger ,
 $$
 
-where $Q$ and $Q^\dagger$ are the nilpotent pair of the abstract algebra of the previous section, here realised as the two off-diagonal blocks. Applying $\mathcal{Q}$ twice and using $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ gives
+where $\mathcal{Q}$ and $\mathcal{Q}^\dagger$ are the nilpotent pair of the abstract algebra of the previous section, here realised as the two off-diagonal blocks. Applying $\mathcal{D}$ twice and using $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ gives
 
 $$
-\mathcal{Q}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I ,
+\mathcal{D}^2 = \begin{pmatrix} \tilde{\nabla}^{\natural}\tilde{\nabla} & 0 \\ 0 & \tilde{\nabla}\tilde{\nabla}^{\natural}\end{pmatrix} = \Box\,I ,
 $$
 
-which is the anticommutator $\{Q,Q^\dagger\} = \Box\,I$; the square of the Hermitian supercharge is the central Hamiltonian, and the mass is the eigenvalue at which the first-order pair is solved. The distinction between the two objects is worth holding on to: the nilpotent $Q$ is the off-diagonal half, odd under the grading, and $\mathcal{Q}$ is the Hermitian Dirac operator it generates. The supersymmetric Hamiltonian of the free theory is $\Box$, and the two partner Hamiltonians coincide, $H_+ = H_- = \Box$: the free biquaternionic Dirac operator is the case of **unbroken supersymmetry with a balanced spectrum**, and the mass is the parameter that pairs the two chiralities.
+which is the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\} = \Box\,I$; the square of the Hermitian supercharge is the central Hamiltonian, and the mass is the eigenvalue at which the first-order pair is solved. The distinction between the two objects is worth holding on to: the nilpotent $\mathcal{Q}$ is the off-diagonal half, odd under the grading, and $\mathcal{D}$ is the Hermitian Dirac operator it generates. The supersymmetric Hamiltonian of the free theory is $\Box$, and the two partner Hamiltonians coincide, $H_+ = H_- = \Box$: the free biquaternionic Dirac operator is the case of **unbroken supersymmetry with a balanced spectrum**, and the mass is the parameter that pairs the two chiralities.
 
 **The superpotential is the mass.** In the reduced theory of the next section the mass becomes position-dependent, $m \to W(x)$, and then the two partner Hamiltonians split, $H_\pm = -\partial_x^2 + W^2 \mp W'$. The superpotential is the (possibly position-dependent) mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two chiral sectors. This is the biquaternion interpretation of the standard claim that the superpotential is the bosonic "potential" of the supersymmetric system: here the potential is a mass.
 
@@ -194,7 +194,7 @@ The superpotential is thus the coefficient of the mass-like term, the partner sp
 
 The exactly solvable relativistic model of the companion article *The Dirac Oscillator in Biquaternionic Form* is the most explicit realisation of the correspondence in three dimensions, and it makes the zero-mode and index structure concrete.
 
-There the elimination of the lower spinor produced the two conjugate first-order operators — written $Q,Q^\dagger$ in that article, and called $A_\omega,A_\omega^\dagger$ here so as not to collide with the nilpotent supercharge $Q$ of the first section —
+There the elimination of the lower spinor produced the two conjugate first-order operators — written $\mathcal{Q},\mathcal{Q}^\dagger$ in that article, and called $A_\omega,A_\omega^\dagger$ here so as not to collide with the nilpotent supercharge $\mathcal{Q}$ of the first section —
 
 $$
 A_\omega = \boldsymbol\sigma\cdot(\vec p - im\omega\vec r), \qquad
@@ -218,7 +218,7 @@ $$
 
 is the partner-symmetric spectrum of the factorisation, with the aligned branch and the anti-aligned branch being the two graded sectors.
 
-The correspondence also clarifies what is and is not "relativistic" about the supersymmetry. The free biquaternionic Dirac operator has $\mathcal{Q}^2 = \Box\,I$ with $H_+ = H_-$: a perfectly degenerate supersymmetric pair. Adding the non-minimal oscillator term shifts the two partners by the spin–orbit term and produces the zero modes. The mass is what makes the grading physically meaningful, and the oscillator term is what makes the two partners differ.
+The correspondence also clarifies what is and is not "relativistic" about the supersymmetry. The free biquaternionic Dirac operator has $\mathcal{D}^2 = \Box\,I$ with $H_+ = H_-$: a perfectly degenerate supersymmetric pair. Adding the non-minimal oscillator term shifts the two partners by the spin–orbit term and produces the zero modes. The mass is what makes the grading physically meaningful, and the oscillator term is what makes the two partners differ.
 
 ## The Witten Index and the Chiral Zero Modes
 
@@ -234,7 +234,7 @@ counts the imbalance of the chiral zero modes — the right-handed states annihi
 
 In the biquaternion framework the index has a simple interpretation. The chirality grading is the $\mathbb{Z}_2$ of the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$; the supercharge is the Dirac operator, which is odd under it; and the index is the imbalance in the dimensions of the two kernels. The mass is the off-diagonal entry that pairs the sectors, and the index is what survives when the mass is allowed to vary: an invariant of the graded algebra that cannot be removed by a continuous deformation. This is the precise sense in which the biquaternion Dirac operator is a supersymmetric quantum-mechanical system whose index is a topological invariant of the chirality grading.
 
-Two caveats keep the statement in scope. First, the index discussed here is the index of the **single-particle** Dirac operator; the quantised-field index and its anomalies belong to *Biquaternion Quantum Fields*. Second, the correspondence developed here is between the biquaternion Dirac theory and **quantum physics**, not between biquaternions and four-dimensional supersymmetric field theory; the superalgebra $\{Q,Q^\dagger\}=H$ with a single supercharge is the $N=1$ quantum-mechanical algebra, and it is the one the corpus's first-order structure realises.
+Two caveats keep the statement in scope. First, the index discussed here is the index of the **single-particle** Dirac operator; the quantised-field index and its anomalies belong to *Biquaternion Quantum Fields*. Second, the correspondence developed here is between the biquaternion Dirac theory and **quantum physics**, not between biquaternions and four-dimensional supersymmetric field theory; the superalgebra $\{\mathcal{Q},\mathcal{Q}^\dagger\}=H$ with a single supercharge is the $N=1$ quantum-mechanical algebra, and it is the one the corpus's first-order structure realises.
 
 ## Shape Invariance and Exactly Solvable Partners
 
@@ -250,9 +250,9 @@ In the biquaternion framework shape invariance has a direct interpretation. The 
 
 ## Summary
 
-Supersymmetric quantum physics is the algebra $\{Q,Q^\dagger\} = H$, $Q^2 = (Q^\dagger)^2 = 0$, with a $\mathbb{Z}_2$ grading, a pair of partner Hamiltonians $H_+ = A^\dagger A$, $H_- = A A^\dagger$ for $A = d/dx + W$, partner potentials $V_\pm = W^2 \mp W'$, and the Witten index $\Delta = \dim\ker H_+ - \dim\ker H_-$.
+Supersymmetric quantum physics is the algebra $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = (\mathcal{Q}^\dagger)^2 = 0$, with a $\mathbb{Z}_2$ grading, a pair of partner Hamiltonians $H_+ = A^\dagger A$, $H_- = A A^\dagger$ for $A = d/dx + W$, partner potentials $V_\pm = W^2 \mp W'$, and the Witten index $\Delta = \dim\ker H_+ - \dim\ker H_-$.
 
-The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde{\nabla}$ with $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ central; the grading is chirality, the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$; the supercharge is the Hermitian Dirac operator $\mathcal{Q} = Q + Q^\dagger$; the superalgebra is the mass pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; and the square is $\mathcal{Q}^2 = \Box\,I$, so that the free theory has $H_+ = H_- = \Box$ and the mass is the pairing parameter. The superpotential is the (possibly position-dependent) mass.
+The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde{\nabla}$ with $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ central; the grading is chirality, the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$; the supercharge is the Hermitian Dirac operator $\mathcal{D} = \mathcal{Q} + \mathcal{Q}^\dagger$; the superalgebra is the mass pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; and the square is $\mathcal{D}^2 = \Box\,I$, so that the free theory has $H_+ = H_- = \Box$ and the mass is the pairing parameter. The superpotential is the (possibly position-dependent) mass.
 
 The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the Dirac Hamiltonian $H_D = -i\sigma_2\partial_x + \sigma_1 W$ squares to $\mathrm{diag}(-\partial_x^2 + W^2 - W',\, -\partial_x^2 + W^2 + W')$, and its biquaternion form $\tilde{Q} = e_2\partial_x + iWe_1$ squares to the central part $(-\partial_x^2+W^2)e_0$ plus the Hermitian remainder $-W'(ie_3)$, whose two eigenvalues are the partner potentials. Both identities were checked by finite-difference computation on $N = 121$ points of $L = 12$ (step $h\approx0.099$) with the kink superpotential $W = \tanh x$: the matrix identity $H_D^2 = (-D\circ D + W^2)I - \sigma_3[D,W]$, in which $D$ is the central difference and $D\circ D$ its matrix square, held to $7\times10^{-15}$ in the interior, and the operator limit $[D,W]\to W'$, applied to a smooth test function, converged at second order in $h$, as a commutator with a central difference must. The Dirac oscillator is the three-dimensional relativistic realisation: $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ has infinitely many zero modes, the supersymmetry is unbroken, and the infinite degeneracy of its ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the chirality imbalance of the Dirac zero modes, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two eigenvalues of the Hermitian remainder can be mapped into one another by a change of the mass profile.
 
@@ -272,15 +272,15 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |
 | $V_\pm = W^2 \mp W'$ | Partner potentials |
-| $\{Q,Q^\dagger\} = H$, $Q^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
-| $\mathcal{Q} = Q + Q^\dagger = \begin{pmatrix} 0 & \tilde{\nabla}^{\natural} \\ \tilde{\nabla} & 0\end{pmatrix}$ | Biquaternionic (Hermitian) supercharge, $\mathcal{Q}\Psi = m\Psi$ |
-| $\mathcal{Q}^2 = \Box\,I$ | Its square (the anticommutator $\{Q,Q^\dagger\}$) |
+| $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
+| $\mathcal{D} = \mathcal{Q} + \mathcal{Q}^\dagger = \begin{pmatrix} 0 & \tilde{\nabla}^{\natural} \\ \tilde{\nabla} & 0\end{pmatrix}$ | Biquaternionic (Hermitian) supercharge, $\mathcal{D}\Psi = m\Psi$ |
+| $\mathcal{D}^2 = \Box\,I$ | Its square (the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\}$) |
 | $(-1)^F$ | Grading operator |
 | $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
 | $H_D = -i\sigma_2\partial_x + \sigma_1 W$ | 1+1-dimensional Dirac Hamiltonian |
 | $\tilde{Q} = e_2\partial_x + iWe_1$ | Biquaternion supercharge of the reduced 1+1-dimensional theory |
 | $\tilde{Q}^2 = (-\partial_x^2+W^2)e_0 - W'(ie_3)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
-| $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ | Oscillator supercharge (written $Q$ in the companion article) |
+| $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ | Oscillator supercharge (written $\mathcal{Q}$ in the companion article) |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 
 ## Further Reading

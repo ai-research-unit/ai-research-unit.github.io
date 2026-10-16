@@ -8,7 +8,7 @@ The article develops three things. The first is the frame and the interval: the 
 
 The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
 
 ## The Frame
 
@@ -17,7 +17,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 **Definition.** A **frame** on a domain $U\subseteq\mathbb{R}^4$ is a quadruple of nowhere-zero real functions $\imath_0,\imath_1,\imath_2,\imath_3$ on $U$. The **frame elements** are
 
 $$
-\hat\imath_\mu = \imath_\mu e_\mu , \qquad \mu = 0,1,2,3,
+\hat\imath_\mu = \imath_\mu e_\mu, \qquad \mu = 0,1,2,3,
 $$
 
 so that a frame is a basis of $\mathbb{H}$ each of whose elements is a real multiple of the corresponding basis element.
@@ -25,7 +25,7 @@ so that a frame is a basis of $\mathbb{H}$ each of whose elements is a real mult
 The frame is a **scaled** basis and not a rotated one: each frame element lies on the coordinate axis of the algebra, so the products of distinct frame elements keep the form of Hamilton's rules and only the four squares change. This is the class in which the interval of the construction is the diagonal form below, and it is the class used here; the four squares are the data the metric of the construction reads, and they are the free functions
 
 $$
-\hat\imath_0^2 = \imath_0^2, \qquad \hat\imath_k^2 = -\imath_k^2 .
+\hat\imath_0^2 = \imath_0^2, \qquad \hat\imath_k^2 = -\imath_k^2.
 $$
 
 The frame is **constant** when the four functions are constant, and it is **dynamic** otherwise.
@@ -35,7 +35,7 @@ The frame is **constant** when the four functions are constant, and it is **dyna
 **Definition.** A **Riemannian quaternion** in a frame is a quaternion whose coefficients are measured in the frame, with the parity weights $w_\mu$ of the construction:
 
 $$
-A = w_0a_0\hat\imath_0 + w_1a_1\hat\imath_1 + w_2a_2\hat\imath_2 + w_3a_3\hat\imath_3 , \qquad a_\mu\in\mathbb{R},
+A = w_0a_0\hat\imath_0 + w_1a_1\hat\imath_1 + w_2a_2\hat\imath_2 + w_3a_3\hat\imath_3, \qquad a_\mu\in\mathbb{R},
 $$
 
 where $w_0 = 1$ and $w_1 = w_2 = w_3 = \tfrac13$ are the source's weights and $a_0,a_1,a_2,a_3$ are the four coefficient functions. The weights are a normalisation of the components and are part of the definition; with all four weights equal to one, the Riemannian quaternion is an arbitrary quaternion in the frame basis.
@@ -53,7 +53,7 @@ where $w_0 = 1$ and $w_1 = w_2 = w_3 = \tfrac13$ are the source's weights and $a
 **Definition.** The **interval** of an infinitesimal displacement of a Riemannian quaternion is the scalar part of its square,
 
 $$
-\mathrm dA = (\mathrm da_0)\hat\imath_0 + \tfrac13(\mathrm da_1)\hat\imath_1 + \tfrac13(\mathrm da_2)\hat\imath_2 + \tfrac13(\mathrm da_3)\hat\imath_3 ,
+\mathrm dA = (\mathrm da_0)\hat\imath_0 + \tfrac13(\mathrm da_1)\hat\imath_1 + \tfrac13(\mathrm da_2)\hat\imath_2 + \tfrac13(\mathrm da_3)\hat\imath_3,
 $$
 
 and the interval is $\mathrm{Sc}(\mathrm dA^2)$.
@@ -99,13 +99,13 @@ The metric of the frame is the diagonal form $\mathrm{diag}(f,-1/(9f),-1/(9f),-1
 **Definition.** Let the frame and the coefficient functions depend on the four coordinates. The differential of a Riemannian quaternion is computed in the frame by the product rule:
 
 $$
-\mathrm d\bigl(a_\mu\hat\imath_\mu\bigr) = (\mathrm da_\mu)\hat\imath_\mu + a_\mu\,\mathrm d\hat\imath_\mu .
+\mathrm d\bigl(a_\mu\hat\imath_\mu\bigr) = (\mathrm da_\mu)\hat\imath_\mu + a_\mu\,\mathrm d\hat\imath_\mu.
 $$
 
 **Theorem (the split).** The differential of a Riemannian quaternion is the sum of two parts, one from the coefficients and one from the frame:
 
 $$
-\mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}} .
+\mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}}.
 $$
 
 *Proof.* The differential is linear over the sum, so it is the sum of the differentials of the four terms, and each is the product rule displayed. Both parts are real linear combinations of basis elements, hence elements of the algebra.
@@ -115,7 +115,7 @@ $$
 **Proposition (the change of frame).** Let $\hat\jmath_\mu = \lambda_\mu\hat\imath_\mu$ be another frame, with the $\lambda_\mu$ nowhere zero, and let a Riemannian quaternion be written $A = \sum_\mu w_\mu a_\mu\hat\imath_\mu = \sum_\mu w_\mu b_\mu\hat\jmath_\mu$, so that $b_\mu = a_\mu/\lambda_\mu$. Then the differential $\mathrm dA$ is intrinsic, while its two parts change:
 
 $$
-\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu + \sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu = \sum_\mu w_\mu(\mathrm db_\mu)\hat\jmath_\mu + \sum_\mu w_\mu b_\mu\,\mathrm d\hat\jmath_\mu ,
+\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu + \sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu = \sum_\mu w_\mu(\mathrm db_\mu)\hat\jmath_\mu + \sum_\mu w_\mu b_\mu\,\mathrm d\hat\jmath_\mu,
 $$
 
 the equality of the two right-hand members holding because $a_\mu\hat\imath_\mu = b_\mu\hat\jmath_\mu$ term by term, while the coefficient part of the first is not the coefficient part of the second.
@@ -137,7 +137,7 @@ The name *general equivalence principle* is the source's, and its content is thi
 **Theorem.** With $\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu$,
 
 $$
-\mathrm{Vect}(\mathrm dA^2) = 2\bigl(\mathrm da_0\bigr)\sum_{k=1}^{3}w_k(\mathrm da_k)\,\hat\imath_0\hat\imath_k .
+\mathrm{Vect}(\mathrm dA^2) = 2\bigl(\mathrm da_0\bigr)\sum_{k=1}^{3}w_k(\mathrm da_k)\,\hat\imath_0\hat\imath_k.
 $$
 
 With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a temporal frame element with a spatial one are the source's **3-rope**.
@@ -198,7 +198,7 @@ The construction is the second of the two ways presented in the corpus of making
 | $e_0=1,e_1,e_2,e_3$ | Fixed basis, $e_k^2=-e_0$ |
 | $\tilde q = q_0e_0+\vec q$ | Quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
-| $N(\tilde q)=\tilde q\tilde{q}^{\natural}$ | Quaternion norm |
+| $\langle\tilde q\rangle_{\natural}=\tilde q\tilde{q}^{\natural}$ | Quaternion norm |
 | $\imath_0,\imath_1,\imath_2,\imath_3$ | Frame functions on the domain |
 | $\hat\imath_\mu=\imath_\mu e_\mu$ | Frame elements, $\hat\imath_0^2=\imath_0^2$, $\hat\imath_k^2=-\imath_k^2$ |
 | $w_0,w_1,w_2,w_3$ | Parity weights, $1,\tfrac13,\tfrac13,\tfrac13$ |

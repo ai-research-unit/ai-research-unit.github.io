@@ -115,7 +115,7 @@ $$
 \frac1n\log q_n\to\frac{\pi^2}{12\log2}=1.186569\ldots,
 $$
 
-the **Lévy constant**, and in particular the denominators of the convergents grow like $e^{n\pi^2/(12\log2)}$.
+the **Lévy constant**, and in particular the denominators of the convergents grow like $\exp(n\pi^2/(12\log2))$.
 
 *Proof.* The recursion for the denominators gives $\log q_n=\log q_0+\sum_{k=1}^n\log\frac{q_k}{q_{k-1}}$, and the ratios $\frac{q_{k}}{q_{k-1}}=a_k+\frac{q_{k-2}}{q_{k-1}}$ converge to the corresponding function of $T^{k}x$; since $\frac{q_{k-2}}{q_{k-1}}\in(0,1)$, the summand is $\log(a_k+\theta_k)$ and is not $\log a_k$, and the Birkhoff ergodic theorem applied to the natural extension, whose second coordinate carries the backward digits, gives the limit as the mean of $\log(1/T^{k}x)$ along the orbit, that is $\frac1{\log2}\int_0^1\frac{-\log x}{1+x}\,dx$, since the ratios $q_k/q_{k-1}$ and $1/T^kx$ differ by a bounded factor. The value is
 
@@ -131,7 +131,7 @@ $$
 (a_1a_2\cdots a_n)^{1/n}\to K_0=2.6854520010\ldots,
 $$
 
-the **Khinchin constant**. The theorem is the statement that the ergodic average of $\log a_n$ converges, and by the ergodicity of the Gauss measure its value is $\log K_0=\int\log a_1\,d\mu$; the integral is $0.987849\ldots$, obtained by summing the convergent series $\sum_k\log k\,\mu(a_1=k)$ (the partial sum up to $k=2\cdot10^6$ gives $0.987838$, and $e^{0.987838}=2.685422$, in agreement with $K_0=2.6854520\ldots$), and $K_0$ has no known closed form. The statement holds with the same constant for every measure absolutely continuous with respect to the Gauss measure.
+the **Khinchin constant**. The theorem is the statement that the ergodic average of $\log a_n$ converges, and by the ergodicity of the Gauss measure its value is $\log K_0=\int\log a_1\,d\mu$; the integral is $0.987849\ldots$, obtained by summing the convergent series $\sum_k\log k\,\mu(a_1=k)$ (the partial sum up to $k=2\cdot10^6$ gives $0.987838$, and $\exp(0.987838)=2.685422$, in agreement with $K_0=2.6854520\ldots$), and $K_0$ has no known closed form. The statement holds with the same constant for every measure absolutely continuous with respect to the Gauss measure.
 
 **Theorem (central limit theorem; Heinrich).** For Lebesgue-almost every $x$ the normalised sums of the logarithms of the partial quotients satisfy
 

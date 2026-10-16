@@ -57,7 +57,7 @@ so every signed operator of the reflection is self-adjoint, and the reflection i
 
 **Proof.** The existence and self-adjointness are the two propositions; the radical and the signature are *Bilinear Forms* and *Hermitian Geometry and the Unitary Group*.
 
-**Example (the definite case and the Lorentzian case).** For the positive-definite form every nonzero vector is non-isotropic, so every vector defines a reflection, all the signed operators of the reflections are self-adjoint, and the Cartan–Dieudonné theorem generates $U(m)$ by reflections; for an indefinite form of signature $(p,q)$ with $p,q>0$ the isotropic vectors form the isotropic cone, the reflections are defined exactly off the cone, and the reflections generate the unitary group $U(p,q)$ but the isotropic directions have no reflection and the signed adjoint criterion fails along them. This is *Hermitian Geometry and the Unitary Group* and *Isometries and Orthogonal Transformations*.
+**Example (the definite case and the Lorentzian case).** For the positive-definite form every nonzero vector is non-isotropic, so every vector defines a reflection, all the signed operators of the reflections are self-adjoint, and the Cartan–Dieudonné theorem generates $U(m)$ by reflections; for an indefinite form of signature $(n,m)$ with $n,m>0$ the isotropic vectors form the isotropic cone, the reflections are defined exactly off the cone, and the reflections generate the unitary group $U(n,m)$ but the isotropic directions have no reflection and the signed adjoint criterion fails along them. This is *Hermitian Geometry and the Unitary Group* and *Isometries and Orthogonal Transformations*.
 
 ## Summary
 

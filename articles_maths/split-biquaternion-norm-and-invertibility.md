@@ -30,25 +30,25 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quatern
 The **split-biquaternion norm** of a split biquaternion $\tilde{Q}$ is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2,
 $$
 
 where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 
 **Basic properties.**
 
-- $N(\tilde{Q})$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and outside their union it need not be real.
-- $N(\tilde{Q})$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the split-biquaternion norm does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
-- $N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$.
-- $N(\tilde{Q})$ is not invariant under split complex conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})^*$.
-- $N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^{*}) = N(\tilde{Q})^*$.
+- $\langle\tilde{Q}\rangle_{\natural}$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and outside their union it need not be real.
+- $\langle\tilde{Q}\rangle_{\natural}$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the split-biquaternion norm does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
+- $\langle\tilde{Q}\rangle_{\natural}$ is invariant under quaternion conjugation: $\langle\tilde{Q}^{\natural}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$.
+- $\langle\tilde{Q}\rangle_{\natural}$ is not invariant under split complex conjugation: $\langle\bar{\tilde{Q}}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}^*$.
+- $\langle\tilde{Q}\rangle_{\natural}$ is not invariant under Hermitian conjugation: $\langle\tilde{Q}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}^*$.
 
 ### Explicit Form
 
 Writing $Q_\mu = q_\mu + j q'_\mu$ and using $j^2 = +1$,
 
 $$
-N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
+\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
 $$
 
 So the real part of the split-biquaternion norm is the sum of the squares of all eight real components, and the split part is twice the inner product of the real and split parts. This is the **same structure** as in the biquaternion case, with $j$ in place of $i$. The difference is the sign of the square of the extra unit: $j^2 = +1$ versus $i^2 = -1$.
@@ -58,31 +58,31 @@ So the real part of the split-biquaternion norm is the sum of the squares of all
 **Theorem.** The split-biquaternion norm is multiplicative:
 
 $$
-N(\tilde{Q} \bullet \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+\langle\tilde{Q} \bullet \tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural}.
 $$
 
 **Proof.** Compute
 
 $$
-N(\tilde{Q} \bullet \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
+\langle\tilde{Q} \bullet \tilde{R}\rangle_{\natural} = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} \langle\tilde{R}\rangle_{\natural} \tilde{Q}^{\natural}.
 $$
 
-Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So
+Since $\langle\tilde{R}\rangle_{\natural}$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $\langle\tilde{R}\rangle_{\natural}$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So
 
 $$
-\tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
+\tilde{Q} \langle\tilde{R}\rangle_{\natural} \tilde{Q}^{\natural} = \langle\tilde{R}\rangle_{\natural} \tilde{Q} \tilde{Q}^{\natural} = \langle\tilde{R}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}.
 $$
 
-**Corollary.** If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \bullet \tilde{R})$ is invertible in $\mathbb{D}$.
+**Corollary.** If $\langle\tilde{Q}\rangle_{\natural}$ and $\langle\tilde{R}\rangle_{\natural}$ are invertible in $\mathbb{D}$, then $\langle\tilde{Q} \bullet \tilde{R}\rangle_{\natural}$ is invertible in $\mathbb{D}$.
 
-**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \bullet \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
+**Corollary.** If $\langle\tilde{Q}\rangle_{\natural} = 0$ or $\langle\tilde{R}\rangle_{\natural} = 0$, then $\langle\tilde{Q} \bullet \tilde{R}\rangle_{\natural} = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
 
 ### The Split-Biquaternion Norm in the Idempotent Basis
 
 In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
+\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.
@@ -94,42 +94,42 @@ So the split-biquaternion norm of a split biquaternion is the pair of non-negati
 The split-biquaternion norm is the quadratic form of the bilinear pairing obtained by polarisation. For two split biquaternions $\tilde P = \sum_\mu P_\mu e_\mu$ and $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, set
 
 $$
-B(\tilde P, \tilde{Q}) = \sum_{\mu=0}^{3} P_\mu Q_\mu,
+\langle\tilde P,\tilde{Q}\rangle = \sum_{\mu=0}^{3} P_\mu Q_\mu,
 $$
 
-a split complex number, so that $N(\tilde{Q}) = B(\tilde{Q}, \tilde{Q})$. The pairing is symmetric, split-complex-bilinear, and its polarisation is the quadratic form
+a split complex number, so that $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle$. The pairing is symmetric, split-complex-bilinear, and its polarisation is the quadratic form
 
 $$
-N(\tilde P + \tilde{Q}) - N(\tilde P) - N(\tilde{Q}) = 2 B(\tilde P, \tilde{Q}).
+\langle\tilde P + \tilde{Q}\rangle_{\natural} - \langle\tilde P\rangle_{\natural} - \langle\tilde{Q}\rangle_{\natural} = 2 \langle\tilde P,\tilde{Q}\rangle.
 $$
 
-The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $B(\tilde{Q}, \tilde{Q}) = 0$ forces $\tilde{Q} = 0$, since the real part of $N$ is a sum of squares. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
+The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $\langle\tilde{Q},\tilde{Q}\rangle = 0$ forces $\tilde{Q} = 0$, since the real part of $\langle\cdot,\cdot\rangle_{\natural}$ is a sum of squares. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
 
-**Proposition.** The polarisation $B$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
+**Proposition.** The polarisation $\langle\cdot,\cdot\rangle$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
 
 $$
-B(\tilde P, \tilde{Q}) = \tfrac{1}{2}\left(\tilde P \tilde{Q}^{\natural} + \tilde{Q} \tilde{P}^{\natural}\right), \qquad B(e_\mu, e_\nu) = \delta_{\mu\nu}.
+\langle\tilde P,\tilde{Q}\rangle = \tfrac{1}{2}\left(\tilde P \tilde{Q}^{\natural} + \tilde{Q} \tilde{P}^{\natural}\right), \qquad \langle e_\mu, e_\nu\rangle = \delta_{\mu\nu}.
 $$
 
-**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $B(e_\mu, e_\nu) = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $B(e_\mu, e_\mu) = e_0$ is a unit of $\mathbb{D}$.
+**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle = e_0$ is a unit of $\mathbb{D}$.
 
-**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $N$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $B$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
+**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
 
 ### The Real Forms and Their Signatures
 
 Writing $Q_\mu = q_\mu + jq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
 
 $$
-N(\tilde{Q}) = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
+\langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
 $$
 
 **Proposition.** The form $R$ is the Euclidean form, positive definite of signature $(8,0)$; the form $I$ is the polarisation of the pairing of each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The Hermitian scalar form $g(\tilde P, \tilde{Q}) = \mathrm{Sc}(\tilde P \tilde{Q}^{*})$ is also non-degenerate of signature $(4,4)$.
 
 **Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*.
 
-The signatures of $N$ restricted to the four distinguished subspaces are:
+The signatures of $\langle\cdot,\cdot\rangle_{\natural}$ restricted to the four distinguished subspaces are:
 
-| Subspace | Condition | $N$ restricted | Signature |
+| Subspace | Condition | $\langle\cdot\rangle_{\natural}$ restricted | Signature |
 |---|---|---|---|
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_\mu = 0$, $\mu \geq 1$ | $q_0^2 + q'^2_0 + 2jq_0q'_0$ | real part $(2,0)$ |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ | $\sum_\mu q_\mu^2$ | $(4,0)$ |
@@ -196,7 +196,7 @@ Its real part is the real form of signature $(4, 4)$ above, and its split part i
 
 The three quadratic objects are related as follows.
 
-- **Norm:** $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $B$.
+- **Norm:** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $\langle\cdot,\cdot\rangle$.
 - **Hermitian form:** $\tilde{Q} \tilde{Q}^{*}$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
 - **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
 
@@ -219,7 +219,7 @@ It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \ma
 The Euclidean norm is not the square root of the Hermitian form, because the Hermitian form is indefinite. It is also not the modulus of the split-biquaternion norm, because the split-biquaternion norm is split complex and its modulus is
 
 $$
-|N(\tilde{Q})| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
+|\langle\tilde{Q}\rangle_{\natural}| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
 $$
 
 which is not the Euclidean norm squared.
@@ -253,19 +253,19 @@ In a general non-commutative algebra, the notions of left inverse, right inverse
 **Theorem.** A split biquaternion $\tilde{Q}$ is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$:
 
 $$
-N(\tilde{Q}) \in \mathbb{D}^\times.
+\langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times.
 $$
 
-**Proof.** Suppose $N(\tilde{Q})$ is invertible in $\mathbb{D}$. Define
+**Proof.** Suppose $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$. Define
 
 $$
-\tilde{R} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}.
+\tilde{R} = \tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^{-1}.
 $$
 
-This is legitimate because $N(\tilde{Q})$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
+This is legitimate because $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
 
 $$
-\tilde{Q} \bullet \tilde{R} = N(\tilde{Q}) N(\tilde{Q})^{-1} = e_0,
+\tilde{Q} \bullet \tilde{R} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^{-1} = e_0,
 $$
 
 so $\tilde{R}$ is a right inverse, hence also a left inverse.
@@ -273,19 +273,19 @@ so $\tilde{R}$ is a right inverse, hence also a left inverse.
 Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \bullet \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
 
 $$
-N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
+\langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}^{-1}\rangle_{\natural} = \langle e_0\rangle_{\natural} = 1,
 $$
 
-so $N(\tilde{Q})$ is invertible in $\mathbb{D}$, with inverse $N(\tilde{Q}^{-1})$.
+so $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, with inverse $\langle\tilde{Q}^{-1}\rangle_{\natural}$.
 
-**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $N(\tilde{Q}) \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $N(\tilde{Q}) = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
+**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $\langle\tilde{Q}\rangle_{\natural} \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
 
 ### The Inverse Formula
 
-When $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently when $\tilde{Q}$ is invertible, the inverse is
+When $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently when $\tilde{Q}$ is invertible, the inverse is
 
 $$
-\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}.
+\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^{-1}.
 $$
 
 This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q^{\natural}/|\tilde q|^2$ for quaternions.
@@ -295,16 +295,16 @@ This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q
 The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$,
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2.
+\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2.
 $$
 
-Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q})$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
+Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
 
 $$
 N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
 $$
 
-Mere non-vanishing of $N(\tilde{Q})$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
+Mere non-vanishing of $\langle\tilde{Q}\rangle_{\natural}$ would require only one component to be nonzero, and that is not sufficient, as the example $\tilde{Q} = \tilde\Pi_1$ above shows. Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -312,37 +312,37 @@ $$
 
 This is the cleanest form of the invertibility criterion. It is a **linear** condition in the idempotent basis: the element is invertible if and only if neither of its two idempotent components vanishes.
 
-**Comparison with the biquaternion case.** In the biquaternion algebra, the invertibility criterion $N(\tilde{Q}) \neq 0$ is a **quadratic** condition, and the zero divisor set is a complex cone of complex dimension 3 (real dimension 6). In the split biquaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{H}_{\mathbb{D}}$ is semisimple while $\mathbb{B}$ is simple.
+**Comparison with the biquaternion case.** In the biquaternion algebra, the invertibility criterion $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is a **quadratic** condition, and the zero divisor set is a complex cone of complex dimension 3 (real dimension 6). In the split biquaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{H}_{\mathbb{D}}$ is semisimple while $\mathbb{B}$ is simple.
 
 ### The Reduced Norm
 
 The split-biquaternion norm alone does not give an inverse. The formula
 
 $$
-\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}
+\tilde{Q}^{-1} = \tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^{-1}
 $$
 
-requires $N(\tilde{Q})$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$ and $N(\tilde{Q})^{-1}$ does not exist.
+requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{D}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
-
-$$
-N(\tilde{Q})^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
-$$
-
-where $N(\tilde{Q})^* = N_- \tilde\Pi_1 + N_+ \tilde\Pi_2$ is the split complex conjugate of $N(\tilde{Q})$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} N(\tilde{Q})^{-1}$ expresses the inverse through the **reduced norm**
+In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
 
 $$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
+\langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
+$$
+
+where $\langle\tilde{Q}\rangle_{\natural}^* = N_- \tilde\Pi_1 + N_+ \tilde\Pi_2$ is the split complex conjugate of $\langle\tilde{Q}\rangle_{\natural}$. Substituting into $\tilde{Q}^{-1} = \tilde{Q}^{\natural} \langle\tilde{Q}\rangle_{\natural}^{-1}$ expresses the inverse through the **reduced norm**
+
+$$
+\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
 $$
 
 a real quartic, the product of the two ordinary quaternion norms:
 
 $$
-\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
 $$
 
-The identity is forced by multiplicativity of the split-biquaternion norm: $\tilde{Q} \tilde{Q}^{\natural} N(\tilde{Q})^* = N(\tilde{Q}) N(\tilde{Q})^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ exactly when $\Delta(\tilde{Q}) \neq 0$.
+The identity is forced by multiplicativity of the split-biquaternion norm: $\tilde{Q} \tilde{Q}^{\natural} \langle\tilde{Q}\rangle_{\natural}^* = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ exactly when $\Delta(\tilde{Q}) \neq 0$.
 
 The reduced norm gives the invertibility criterion in its sharpest form:
 
@@ -350,14 +350,14 @@ $$
 \tilde{Q} \text{ is invertible} \iff \Delta(\tilde{Q}) \neq 0 \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
 $$
 
-The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $N(\tilde{Q}) \neq 0$ is already the criterion, and the zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = 0$. Here the split-biquaternion norm takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $N(\tilde{Q})$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
+The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is already the criterion, and the zero divisors are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$. Here the split-biquaternion norm takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $\langle\tilde{Q}\rangle_{\natural}$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
 
 ### A Worked Element
 
 For the element $\tilde{Q}$ with $Q_0 = 1 + j$, $Q_1 = 2$, $Q_2 = 1 - j$, $Q_3 = 0$,
 
 $$
-N(\tilde{Q}) = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
+\langle\tilde{Q}\rangle_{\natural} = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
 $$
 
 Since $8 \in \mathbb{D}^\times$, the element is a unit, and
@@ -366,7 +366,7 @@ $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_0, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 e_1 - e_2\big) + \tfrac{j}{8}\big(1 + e_2\big).
 $$
 
-The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde\Pi_1$ one has $N(\tilde\Pi_1) = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $N(\tilde{Q}) = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
+The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde P = \tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $N_{\mathbb{H}}(\tilde{Q}_+) = N_{\mathbb{H}}(\tilde{Q}_-) = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -383,7 +383,7 @@ The criterion is not the naive one $N(\tilde{Q}) \neq 0$. For $\tilde P = \tilde
 The **group of units** of $\mathbb{H}_{\mathbb{D}}$ is the set of invertible elements:
 
 $$
-\mathbb{H}_{\mathbb{D}}^\times = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : N(\tilde{Q}) \in \mathbb{D}^\times\}
+\mathbb{H}_{\mathbb{D}}^\times = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times\}
 = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \text{ and } N_{\mathbb{H}}(\tilde{Q}_-) \neq 0\}.
 $$
 
@@ -421,11 +421,11 @@ The group of units of $\mathbb{D}$ has four connected components, corresponding 
 
 Combining the criterion for invertibility with the definition of the zero element, the elements of $\mathbb{H}_{\mathbb{D}}$ are partitioned into three classes:
 
-| Condition on $N(\tilde{Q})$ | Condition on $\tilde{Q}$ | Conclusion |
+| Condition on $\langle\tilde{Q}\rangle_{\natural}$ | Condition on $\tilde{Q}$ | Conclusion |
 |---|---|---|
-| $N(\tilde{Q}) \in \mathbb{D}^\times$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
-| $N(\tilde{Q}) = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
-| $N(\tilde{Q})$ a nonzero zero divisor of $\mathbb{D}$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
+| $\langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
+| $\langle\tilde{Q}\rangle_{\natural} = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
+| $\langle\tilde{Q}\rangle_{\natural}$ a nonzero zero divisor of $\mathbb{D}$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
 
 The zero divisors are the subject of the article on split biquaternion zero divisors.
 
@@ -452,10 +452,10 @@ $$
 The split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = Q_0^2.
+\langle\tilde{Q}\rangle_{\natural} = Q_0^2.
 $$
 
-Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this vanishes only when $Q_0 = 0$; the element $Q_0 e_0$ is a zero divisor if and only if $Q_0$ is a zero divisor in $\mathbb{D}$, that is a nonzero multiple of $1 \pm j$, which need not be detected by $N$ vanishing. So the split complex subspace contains the zero divisors $Q_0 e_0$ with $Q_0 = t(1 \pm j)$ for $t \neq 0$, inherited from the split complex algebra.
+Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this vanishes only when $Q_0 = 0$; the element $Q_0 e_0$ is a zero divisor if and only if $Q_0$ is a zero divisor in $\mathbb{D}$, that is a nonzero multiple of $1 \pm j$, which need not be detected by $\langle\cdot\rangle_{\natural}$ vanishing. So the split complex subspace contains the zero divisors $Q_0 e_0$ with $Q_0 = t(1 \pm j)$ for $t \neq 0$, inherited from the split complex algebra.
 
 The invertible elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are those with $Q_0$ not a multiple of $1 \pm j$, i.e., with $Q_0$ invertible in $\mathbb{D}$.
 
@@ -470,7 +470,7 @@ $$
 The split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
+\langle\tilde{Q}\rangle_{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$
 
 This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a copy of the division algebra $\mathbb{H}$.
@@ -486,7 +486,7 @@ $$
 With $Q_0 = q_0$ (real) and $Q_k = j q'_k$ (purely split-imaginary), the split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = q_0^2 + (j q'_1)^2 + (j q'_2)^2 + (j q'_3)^2 = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
+\langle\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = q_0^2 + (j q'_1)^2 + (j q'_2)^2 + (j q'_3)^2 = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
 $$
 
 Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$.
@@ -494,7 +494,7 @@ Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 =
 So the split-biquaternion norm on $\mathbb{M}_+$ is
 
 $$
-N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
+\langle\tilde{Q}\rangle_{\natural} = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
 $$
 
 which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_+$ contains no zero divisors and every nonzero element of $\mathbb{M}_+$ is invertible.
@@ -510,7 +510,7 @@ $$
 The split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = (j r_0)^2 + q_1^2 + q_2^2 + q_3^2 = r_0^2 + q_1^2 + q_2^2 + q_3^2,
+\langle\tilde{Q}\rangle_{\natural} = (j r_0)^2 + q_1^2 + q_2^2 + q_3^2 = r_0^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
 which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_-$ contains no zero divisors and every nonzero element of $\mathbb{M}_-$ is invertible.
@@ -526,11 +526,11 @@ Of the four fixed-point subspaces:
 
 ## Summary
 
-The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$.
+The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $\langle\tilde P,\tilde{Q}\rangle = \sum_\mu P_\mu Q_\mu$.
 
 The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -538,7 +538,7 @@ $$
 
 This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
 
-The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
+The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
 
 The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
 
@@ -555,13 +555,13 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\bar{\tilde{Q}}$ | Split complex conjugate |
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polarisation of the split-biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde P,\tilde{Q}\rangle = \sum_\mu P_\mu Q_\mu$ | Polarisation of the split-biquaternion norm |
 | $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$ | Hermitian inner product |
 | $\tilde{Q} \tilde{Q}^{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
+| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
-| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse |
+| $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |

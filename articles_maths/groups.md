@@ -40,7 +40,7 @@ Let $G$ be a group.
 
 **(b)** Inverses are unique: if $a b = b a = e$ and $a c = c a = e$, then $b = e b = (c a) b = c (a b) = c$.
 
-**(c)** $(a^{-1})^{-1} = a$ and $e^{-1} = e$.
+**(c)** $(a^{-1})^{-1} = a$ and $\exp(-1) = e$.
 
 **(d)** $(a b)^{-1} = b^{-1} a^{-1}$, and more generally $(a_1 \cdots a_n)^{-1} = a_n^{-1} \cdots a_1^{-1}$.
 

@@ -97,7 +97,7 @@ $$
 **Theorem (Determinant and Trace).** For every split-quaternion $\tilde q$,
 
 $$
-\det \mathsf{M}_2(\tilde q) = N(\tilde q), \qquad \operatorname{tr} \mathsf{M}_2(\tilde q) = 2 \operatorname{Sc}(\tilde q).
+\det \mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}, \qquad \operatorname{tr} \mathsf{M}_2(\tilde q) = 2 \operatorname{Sc}(\tilde q).
 $$
 
 The determinant of the matrix model is the split-quaternion norm, a quadratic form of signature $(2,2)$, and the trace is twice the scalar part; the restriction of the trace to the vector subspace vanishes, so $\mathsf{M}_2(V)$ is the space of traceless matrices.
@@ -118,7 +118,7 @@ $$
 
 and $\tilde q$ is a unit if and only if $\mathsf{M}_2(\tilde q)$ is invertible, in which case $\mathsf{M}_2(\tilde q^{-1}) = \mathsf{M}_2(\tilde q)^{-1} = \operatorname{adj}\mathsf{M}_2(\tilde q)/\det\mathsf{M}_2(\tilde q)$.
 
-**Proof.** The conjugation is an involution of the algebra, so it preserves the split-quaternion norm: $N(\tilde{q}^{\natural}) = \tilde{q}^{\natural}\tilde q = N(\tilde q)$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\mathsf{M}_2 = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*.
+**Proof.** The conjugation is an involution of the algebra, so it preserves the split-quaternion norm: $\langle\tilde{q}^{\natural}\rangle_{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and the first identity follows from $\det = N$. The second is the adjugate identity of (*Split-Quaternion Algebra*, §*The Conjugation*). The invertibility statement is the equality $\det\mathsf{M}_2 = N$ together with *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*.
 
 ## The Image as a Linear Subspace
 
@@ -202,7 +202,7 @@ The algebra is treated later in Part V, under Split-Biquaternions; nothing of it
 
 The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.
 
-The determinant of the model is the split-quaternion norm $N$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.
+The determinant of the model is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.
 
 The quaternion algebra has no faithful real degree-two representation, because an isomorphism with $M_2(\mathbb{R})$ would contradict its being a division algebra, although its complexification is $M_2(\mathbb{C})$; the eight-dimensional algebra has none either, by the dimension count alone, and its representations belong to the later category.
 
@@ -215,7 +215,7 @@ The quaternion algebra has no faithful real degree-two representation, because a
 | $I, J, K, D$ | the images of $1, e_1, e_2, e_3$ | this article |
 | $\operatorname{Int}_P$ | conjugation by $P$, $M \mapsto PMP^{-1}$ | this article |
 | $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$ | the automorphism group | this article |
-| $\det\mathsf{M}_2(\tilde q) = N(\tilde q)$ | the determinant as norm | this article |
+| $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$ | the determinant as norm | this article |
 | $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2\operatorname{Sc}(\tilde q)$ | the trace as twice the scalar part | this article |
 | $\mathsf{M}_2(\tilde{q}^{\natural}) = \operatorname{adj}\mathsf{M}_2(\tilde q)$ | conjugation as the adjugate | this article |
 | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices, the image of $V$ | this article |

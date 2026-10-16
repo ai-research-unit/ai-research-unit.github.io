@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article treats the multiplicative size of a split-complex number: the **norm** $N(A) = A\bar{A} = a^2-a'^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm; the higher-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
+This article treats the multiplicative size of a split-complex number: the **norm** $\langle A\rangle_{\natural} = A\bar{A} = a^2-a'^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm; the higher-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
 
 The organisation is as follows. The norm is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
 
-The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_{1,2} = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation.
+The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_{1,2} = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|\langle A\rangle_{\natural}|}$ is defined in this article as the positive scale carried by the polar factorisation.
 
 ## The Norm
 
@@ -16,19 +16,19 @@ The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, wit
 The **norm** of a split-complex number $A = a + j a'$ is
 
 $$
-N(A) = A \bar{A} = (a+j a')(a-j a') = a^2 - a'^2.
+\langle A\rangle_{\natural} = A \bar{A} = (a+j a')(a-j a') = a^2 - a'^2.
 $$
 
-It is a **quadratic form** on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: it is homogeneous of degree two, $N(\lambda A) = \lambda^2 N(A)$ for $\lambda \in \mathbb{R}$, and its polarisation is the symmetric bilinear form
+It is a **quadratic form** on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: it is homogeneous of degree two, $\langle \lambda A\rangle_{\natural} = \lambda^2 \langle A\rangle_{\natural}$ for $\lambda \in \mathbb{R}$, and its polarisation is the symmetric bilinear form
 
 $$
-g(A, B) = \frac{1}{2}\big(N(A+B) - N(A) - N(B)\big) = a b - a' b', \qquad A = a+j a', \; B = b+j b',
+g(A, B) = \frac{1}{2}\big(\langle A+B\rangle_{\natural} - \langle A\rangle_{\natural} - \langle B\rangle_{\natural}\big) = a b - a' b', \qquad A = a+j a', \; B = b+j b',
 $$
 
 whose matrix in the basis $\{1, j\}$ is $\operatorname{diag}(1, -1)$ and whose signature is $(1,1)$. In the idempotent coordinates the norm is the product
 
 $$
-N(A) = A_+ A_-,
+\langle A\rangle_{\natural} = A_+ A_-,
 $$
 
 which is the reason the norm vanishes exactly when one idempotent coordinate vanishes.
@@ -38,18 +38,18 @@ which is the reason the norm vanishes exactly when one idempotent coordinate van
 **Theorem.** The norm is multiplicative:
 
 $$
-N(A B) = N(A) N(B), \qquad A, B \in \mathbb{D}.
+\langle A B\rangle_{\natural} = \langle A\rangle_{\natural} \langle B\rangle_{\natural}, \qquad A, B \in \mathbb{D}.
 $$
 
 **Proof.** Write $A = a+j a'$ and $B = b+j b'$. Then $AB = (a b+a' b') + (a b'+a' b)j$, so
 
 $$
-N(AB) = (a b+a' b')^2 - (a b'+a' b)^2 = a^2b^2 + 2aba'b' + a'^2b'^2 - a^2b'^2 - 2aba'b' - a'^2b^2 = (a^2-a'^2)(b^2-b'^2),
+\langle AB\rangle_{\natural} = (a b+a' b')^2 - (a b'+a' b)^2 = a^2b^2 + 2aba'b' + a'^2b'^2 - a^2b'^2 - 2aba'b' - a'^2b^2 = (a^2-a'^2)(b^2-b'^2),
 $$
 
-which is $N(A)N(B)$. Equivalently, in the idempotent basis multiplication is componentwise, so $N(AB) = (A_+B_+)(A_-B_-) = (A_+A_-)(B_+B_-)$.
+which is $\langle A\rangle_{\natural}\langle B\rangle_{\natural}$. Equivalently, in the idempotent basis multiplication is componentwise, so $\langle AB\rangle_{\natural} = (A_+B_+)(A_-B_-) = (A_+A_-)(B_+B_-)$.
 
-The identity $(a^2-a'^2)(b^2-b'^2) = (a b+a' b')^2 - (a b'+a' b)^2$ is the hyperbolic form of the two-dimensional Brahmagupta–Fibonacci identity. Multiplicativity makes $N$ a group homomorphism on the units,
+The identity $(a^2-a'^2)(b^2-b'^2) = (a b+a' b')^2 - (a b'+a' b)^2$ is the hyperbolic form of the two-dimensional Brahmagupta–Fibonacci identity. Multiplicativity makes $\langle\cdot,\cdot\rangle_{\natural}$ a group homomorphism on the units,
 
 $$
 N : \mathbb{D}^\times \longrightarrow \mathbb{R}^\times,
@@ -59,9 +59,9 @@ a fact used repeatedly below.
 
 ### The Norm Is Not Definite
 
-The form $N$ takes both signs and vanishes on a pair of lines. Its sign partitions $\mathbb{D}$ into three regions, which are the three regions of the Lorentzian plane:
+The form $\langle\cdot,\cdot\rangle_{\natural}$ takes both signs and vanishes on a pair of lines. Its sign partitions $\mathbb{D}$ into three regions, which are the three regions of the Lorentzian plane:
 
-| region | condition | sign of $N(A)$ | contains |
+| region | condition | sign of $\langle A\rangle_{\natural}$ | contains |
 |---|---|---|---|
 | spacelike | $\lvert a\rvert > \lvert a'\rvert$ | positive | the two sectors through $\pm 1$ |
 | null | $\lvert a\rvert = \lvert a'\rvert$ | zero | the null cone, the zero-divisor set |
@@ -70,10 +70,10 @@ The form $N$ takes both signs and vanishes on a pair of lines. Its sign partitio
 The **isotropic cone**, or null cone, is
 
 $$
-\mathcal{N} = \{A \in \mathbb{D} : N(A) = 0\} = \{A = a+j a' : a = \pm a'\} = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2,
+\mathcal{N} = \{A \in \mathbb{D} : \langle A\rangle_{\natural} = 0\} = \{A = a+j a' : a = \pm a'\} = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2,
 $$
 
-the union of the two null lines through the origin. Since $N$ is a nonzero quadratic form that vanishes on a nonzero vector, it is not definite, not semidefinite, and not anisotropic; its square root $\sqrt{N}$ is therefore not a norm, and even $|N|^{1/2}$ fails to be a norm because it vanishes on the nonzero elements of $\mathcal{N}$. The form $N$ is therefore indefinite, and neither $N$ nor $|N|^{1/2}$ is a norm on $\mathbb{D}$.
+the union of the two null lines through the origin. Since $\langle\cdot,\cdot\rangle_{\natural}$ is a nonzero quadratic form that vanishes on a nonzero vector, it is not definite, not semidefinite, and not anisotropic; its square root $\sqrt{N}$ is therefore not a norm, and even $|N|^{1/2}$ fails to be a norm because it vanishes on the nonzero elements of $\mathcal{N}$. The form $\langle\cdot,\cdot\rangle_{\natural}$ is therefore indefinite, and neither $\langle\cdot,\cdot\rangle_{\natural}$ nor $|N|^{1/2}$ is a norm on $\mathbb{D}$.
 
 ### The Associated Clifford Algebra
 
@@ -96,7 +96,7 @@ So the split-complex algebra is the even Clifford algebra of its own norm, and t
 **Definition.** The **modulus** of $A$ is
 
 $$
-\rho = \sqrt{|N(A)|} = \sqrt{|a^2-a'^2|}.
+\rho = \sqrt{|\langle A\rangle_{\natural}|} = \sqrt{|a^2-a'^2|}.
 $$
 
 It is a non-negative real, positive exactly on $\mathbb{D}^\times = \mathbb{D}\setminus\mathcal{N}$, and zero exactly on the null cone. In the idempotent coordinates it is the **geometric mean** of the two component moduli,
@@ -105,25 +105,25 @@ $$
 \rho = \sqrt{|A_+ A_-|},
 $$
 
-because $N(A) = A_+A_-$.
+because $\langle A\rangle_{\natural} = A_+A_-$.
 
 The modulus is multiplicative:
 
 $$
-\rho(AB) = \sqrt{|N(AB)|} = \sqrt{|N(A)|\,|N(B)|} = \rho(A)\rho(B).
+\rho(AB) = \sqrt{|\langle AB\rangle_{\natural}|} = \sqrt{|\langle A\rangle_{\natural}|\,|\langle B\rangle_{\natural}|} = \rho(A)\rho(B).
 $$
 
-So $\rho$ is multiplicative and absolutely homogeneous, $\rho(\lambda A)=|\lambda|\rho(A)$ for $\lambda\in\mathbb{R}$; it is positive on $\mathbb{D}^\times$ and vanishes on $\mathcal{N}$. It is **not** subadditive, hence not a norm and not a semi-norm: for $A=1+j$ and $B=1-j$ one has $\rho(A)=\rho(B)=0$ while $\rho(A+B)=\rho(2)=2$. The **two regimes** are the two sign classes:
+So $\rho$ is multiplicative and absolutely homogeneous, $\rho(\lambda A)=|\lambda|\rho(A)$ for $\lambda\in\mathbb{R}$; it is positive on $\mathbb{D}^\times$ and vanishes on $\mathcal{N}$. It is **not** subadditive, hence not a norm and not a semi-norm: for $A=1+j$ and $\langle\cdot\rangle=1-j$ one has $\rho(A)=\rho(B)=0$ while $\rho(A+B)=\rho(2)=2$. The **two regimes** are the two sign classes:
 
 $$
-N(A) > 0 \ (\text{spacelike}), \qquad N(A) < 0 \ (\text{timelike}),
+\langle A\rangle_{\natural} > 0 \ (\text{spacelike}), \qquad \langle A\rangle_{\natural} < 0 \ (\text{timelike}),
 $$
 
 and on each regime the modulus is a genuine scale, while the unit element that accompanies it carries the sign; a single polar factorisation therefore never straddles the two regimes.
 
 ### Worked Verification
 
-The multiplicativity is checked on a general pair, not a single example. For $A = a+j a'$ and $B = b+j b'$ the identity $N(AB)=N(A)N(B)$ was verified above symbolically; numerically, taking $A = 2+3j$ and $B = 1+2j$ gives $AB = 8+7j$, so $N(AB) = 64-49 = 15$, while $N(A) = 4-9 = -5$ and $N(B) = 1-4 = -3$, and $(-5)(-3) = 15$. The modulus is multiplicative: $\rho(AB) = \sqrt{15}$ and $\rho(A)\rho(B) = \sqrt5\sqrt3 = \sqrt{15}$.
+The multiplicativity is checked on a general pair, not a single example. For $A = a+j a'$ and $B = b+j b'$ the identity $\langle AB\rangle_{\natural}=\langle A\rangle_{\natural}\langle B\rangle_{\natural}$ was verified above symbolically; numerically, taking $A = 2+3j$ and $B = 1+2j$ gives $AB = 8+7j$, so $\langle AB\rangle_{\natural} = 64-49 = 15$, while $\langle A\rangle_{\natural} = 4-9 = -5$ and $\langle B\rangle_{\natural} = 1-4 = -3$, and $(-5)(-3) = 15$. The modulus is multiplicative: $\rho(AB) = \sqrt{15}$ and $\rho(A)\rho(B) = \sqrt5\sqrt3 = \sqrt{15}$.
 
 ## The Euclidean Form
 
@@ -151,14 +151,14 @@ $$
 \|A\|_E = \sqrt{\langle A, A\rangle} = \sqrt{a^2+a'^2}.
 $$
 
-It is a genuine norm on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: positive-definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{D}$ into a topological algebra and that underlies the analysis of *Split Complex Analysis*; the modulus $\rho$ is a different object, multiplicative but not subadditive and not positive-definite.
+It is a genuine norm on the real vector space $\mathbb{D} \cong \mathbb{R}^2$: positive-definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{D}$ into a topological algebra and that underlies the analysis of *Split-Complex Analysis*; the modulus $\rho$ is a different object, multiplicative but not subadditive and not positive-definite.
 
 ### Relation Between the Norm and the Euclidean Form
 
 The two forms are related by
 
 $$
-N(A) = a^2 - a'^2 = \langle A, A\rangle - 2a'^2 = \operatorname{Re}(A\bar A), \qquad \|A\|_E^2 = a^2+a'^2 = N(A) + 2a'^2,
+\langle A\rangle_{\natural} = a^2 - a'^2 = \langle A, A\rangle - 2a'^2 = \operatorname{Re}(A\bar A), \qquad \|A\|_E^2 = a^2+a'^2 = \langle A\rangle_{\natural} + 2a'^2,
 $$
 
 and by the idempotent form
@@ -177,7 +177,7 @@ $$
 A\bar B = (a b - a' b') + (a' b - a b')j, \qquad A = a+j a', \; B = b+j b',
 $$
 
-whose real part is $g(A,B) = a b - a' b'$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. Here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle A,B\rangle = a b + a' b'$ of the preceding section, which does not depend on the algebra structure.
+whose real part is $g(A,B) = a b - a' b'$, the polarisation of $\langle\cdot\rangle_{\natural}$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. Here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle A,B\rangle = a b + a' b'$ of the preceding section, which does not depend on the algebra structure.
 
 ## Invertibility
 
@@ -193,27 +193,27 @@ $$
 
 ### Criterion for Invertibility
 
-**Theorem.** An element $A \in \mathbb{D}$ is a unit if and only if $N(A) \neq 0$. Equivalently, the units are exactly the complement of the null cone.
+**Theorem.** An element $A \in \mathbb{D}$ is a unit if and only if $\langle A\rangle_{\natural} \neq 0$. Equivalently, the units are exactly the complement of the null cone.
 
-**Proof.** If $N(A) \neq 0$, then
+**Proof.** If $\langle A\rangle_{\natural} \neq 0$, then
 
 $$
-A \cdot \frac{\bar{A}}{N(A)} = \frac{A\bar{A}}{N(A)} = \frac{N(A)}{N(A)} = 1,
+A \cdot \frac{\bar{A}}{\langle A\rangle_{\natural}} = \frac{A\bar{A}}{\langle A\rangle_{\natural}} = \frac{\langle A\rangle_{\natural}}{\langle A\rangle_{\natural}} = 1,
 $$
 
-so $A$ is a unit with the inverse displayed in the next paragraph. Conversely, if $AB = 1$, then taking norms gives $N(A)N(B) = N(1) = 1$, so $N(A) \neq 0$.
+so $A$ is a unit with the inverse displayed in the next paragraph. Conversely, if $AB = 1$, then taking norms gives $\langle A\rangle_{\natural}\langle B\rangle_{\natural} = \langle 1\rangle_{\natural} = 1$, so $\langle A\rangle_{\natural} \neq 0$.
 
-In idempotent coordinates the criterion reads: $A = A_+\Pi_1 + A_-\Pi_2$ is a unit iff $A_+ \neq 0$ and $A_- \neq 0$, since $N(A) = A_+A_-$. So the non-units are exactly the elements supported on a single idempotent, that is, the nonzero elements of $\mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2$; these are the zero divisors of *Split-Complex Zero Divisors*.
+In idempotent coordinates the criterion reads: $A = A_+\Pi_1 + A_-\Pi_2$ is a unit iff $A_+ \neq 0$ and $A_- \neq 0$, since $\langle A\rangle_{\natural} = A_+A_-$. So the non-units are exactly the elements supported on a single idempotent, that is, the nonzero elements of $\mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2$; these are the zero divisors of *Split-Complex Zero Divisors*.
 
 ### The Inverse Formula
 
 **Proposition.** For a unit $A = a+j a'$,
 
 $$
-A^{-1} = \frac{\bar{A}}{N(A)} = \frac{a - j a'}{a^2-a'^2}.
+A^{-1} = \frac{\bar{A}}{\langle A\rangle_{\natural}} = \frac{a - j a'}{a^2-a'^2}.
 $$
 
-**Proof.** The product $A\bar A = N(A)$ is a nonzero real scalar, so $A(\bar A/N(A)) = 1$; uniqueness of the inverse in a unital associative algebra gives the formula.
+**Proof.** The product $A\bar A = \langle A\rangle_{\natural}$ is a nonzero real scalar, so $A(\bar A/\langle A\rangle_{\natural}) = 1$; uniqueness of the inverse in a unital associative algebra gives the formula.
 
 In idempotent coordinates the inverse is componentwise,
 
@@ -227,7 +227,7 @@ which is the inverse of $A$ under the isomorphism $\mathbb{D} \cong \mathbb{R}\o
 
 ### Basic Properties
 
-The set $\mathbb{D}^\times$ is a group under multiplication: it contains $1$; it is closed under multiplication because $N(AB) = N(A)N(B) \neq 0$ when both factors are units; it is closed under inversion by the formula above; and associativity and commutativity are inherited from the algebra. Since the algebra is commutative, $\mathbb{D}^\times$ is **abelian**.
+The set $\mathbb{D}^\times$ is a group under multiplication: it contains $1$; it is closed under multiplication because $\langle AB\rangle_{\natural} = \langle A\rangle_{\natural}\langle B\rangle_{\natural} \neq 0$ when both factors are units; it is closed under inversion by the formula above; and associativity and commutativity are inherited from the algebra. Since the algebra is commutative, $\mathbb{D}^\times$ is **abelian**.
 
 Under the isomorphism $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ the group of units corresponds to
 
@@ -250,7 +250,7 @@ $$
 
 **Proof.** The map $A \mapsto (A_+, A_-)$ is a homeomorphism of $\mathbb{D}^\times$ onto $\mathbb{R}^\times \times \mathbb{R}^\times$, and $\mathbb{R}^\times$ has two components; a product of two spaces with two components each has four.
 
-The identity component is $\mathbb{D}^\times_0 = \{A : A_+>0, A_->0\} = \{N(A)>0, \operatorname{Re}A>0\}$, the connected component of the identity, and it is isomorphic as a Lie group to $\mathbb{R}^2$; it is the image of the exponential map, treated in *Split-Complex Exponential and Lie Group Structure*.
+The identity component is $\mathbb{D}^\times_0 = \{A : A_+>0, A_->0\} = \{\langle A\rangle_{\natural}>0, \operatorname{Re}A>0\}$, the connected component of the identity, and it is isomorphic as a Lie group to $\mathbb{R}^2$; it is the image of the exponential map, treated in *Split-Complex Exponential and Lie Group Structure*.
 
 ### Non-Compactness
 
@@ -262,13 +262,13 @@ Every element falls into exactly one of the three classes of the norm:
 
 | class | condition | unit? | inverse location |
 |---|---|---|---|
-| spacelike | $N(A) > 0$ | yes | spacelike |
-| null | $N(A) = 0$ | no | — |
-| timelike | $N(A) < 0$ | yes | timelike |
+| spacelike | $\langle A\rangle_{\natural} > 0$ | yes | spacelike |
+| null | $\langle A\rangle_{\natural} = 0$ | no | — |
+| timelike | $\langle A\rangle_{\natural} < 0$ | yes | timelike |
 
-The classification is preserved by multiplication, since $N(AB) = N(A)N(B)$: the product of two spacelike elements is spacelike, and a spacelike times a timelike is timelike. The zero element is null but not a zero divisor; every other null element is a zero divisor, by the criterion above.
+The classification is preserved by multiplication, since $\langle AB\rangle_{\natural} = \langle A\rangle_{\natural}\langle B\rangle_{\natural}$: the product of two spacelike elements is spacelike, and a spacelike times a timelike is timelike. The zero element is null but not a zero divisor; every other null element is a zero divisor, by the criterion above.
 
-**The algebra is not a division algebra.** The nonzero null elements $\Pi_1$ and $\Pi_2$ are zero divisors, $(1+j)(1-j) = 0$; equivalently $N$ vanishes on a nonzero vector. So $\mathbb{D}$ is a commutative ring in which not every nonzero element is invertible, and Frobenius's theorem places it outside the list $\mathbb{R}, \mathbb{C}, \mathbb{H}$ of finite-dimensional associative real division algebras.
+**The algebra is not a division algebra.** The nonzero null elements $\Pi_1$ and $\Pi_2$ are zero divisors, $(1+j)(1-j) = 0$; equivalently $\langle\cdot\rangle_{\natural}$ vanishes on a nonzero vector. So $\mathbb{D}$ is a commutative ring in which not every nonzero element is invertible, and Frobenius's theorem places it outside the list $\mathbb{R}, \mathbb{C}, \mathbb{H}$ of finite-dimensional associative real division algebras.
 
 ## Distribution of the Invertible Elements
 
@@ -276,14 +276,14 @@ The two distinguished one-dimensional subspaces of $\mathbb{D}$ are the eigenspa
 
 ### The Real Subspace $\mathbb{R}_{\mathbb{D}}$
 
-On $\mathbb{R}_{\mathbb{D}}$ the norm is $N(a) = a^2$, positive definite and vanishing only at $a=0$. Every nonzero real number is a spacelike unit, with $N>0$; the units of $\mathbb{R}_{\mathbb{D}}$ are $\mathbb{R}^\times$, the two open rays. There are no zero divisors on $\mathbb{R}_{\mathbb{D}}$.
+On $\mathbb{R}_{\mathbb{D}}$ the norm is $\langle a\rangle_{\natural} = a^2$, positive definite and vanishing only at $a=0$. Every nonzero real number is a spacelike unit, with $N>0$; the units of $\mathbb{R}_{\mathbb{D}}$ are $\mathbb{R}^\times$, the two open rays. There are no zero divisors on $\mathbb{R}_{\mathbb{D}}$.
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{D}}$
 
-On $j\mathbb{R}_{\mathbb{D}}$ the norm is $N(j a') = -a'^2$, negative definite and vanishing only at $a'=0$. Every nonzero element $j a'$ is a timelike unit: $N(j a') = -a'^2$ and $\overline{j a'} = -j a'$, so
+On $j\mathbb{R}_{\mathbb{D}}$ the norm is $\langle j a'\rangle_{\natural} = -a'^2$, negative definite and vanishing only at $a'=0$. Every nonzero element $j a'$ is a timelike unit: $\langle j a'\rangle_{\natural} = -a'^2$ and $\overline{j a'} = -j a'$, so
 
 $$
-(j a')^{-1} = \frac{\overline{j a'}}{N(j a')} = \frac{-j a'}{-a'^2} = \frac{j}{a'},
+(j a')^{-1} = \frac{\overline{j a'}}{\langle j a'\rangle_{\natural}} = \frac{-j a'}{-a'^2} = \frac{j}{a'},
 $$
 
 and indeed $(j a')(j/a') = a'^2 j^2/a'^2 = 1$. There are no zero divisors on $j\mathbb{R}_{\mathbb{D}}$.
@@ -296,11 +296,11 @@ $$
 \mathbb{R}\Pi_1 = \mathbb{R}(1+j), \qquad \mathbb{R}\Pi_2 = \mathbb{R}(1-j),
 $$
 
-on each of which $N$ vanishes identically. These lines are not fixed by the conjugation; it swaps them, $\overline{\Pi_1} = \Pi_2$. They are the two isotropic lines of the form $g$, and their union is the null cone $\mathcal{N}$.
+on each of which $\langle\cdot\rangle_{\natural}$ vanishes identically. These lines are not fixed by the conjugation; it swaps them, $\overline{\Pi_1} = \Pi_2$. They are the two isotropic lines of the form $g$, and their union is the null cone $\mathcal{N}$.
 
 ### Summary of the Distribution
 
-| subspace | dimension | restricted $N$ | invertible elements | zero divisors |
+| subspace | dimension | restricted $\langle\cdot,\cdot\rangle_{\natural}$ | invertible elements | zero divisors |
 |---|---|---|---|---|
 | $\mathbb{R}_{\mathbb{D}}$ | $1$ | $a^2$, positive definite | all nonzero, spacelike | none |
 | $j\mathbb{R}_{\mathbb{D}}$ | $1$ | $-a'^2$, negative definite | all nonzero, timelike | none |
@@ -321,9 +321,9 @@ and an element is a unit exactly when both idempotent coordinates are nonzero. T
 
 ## Summary
 
-The norm of a split-complex number is $N(A) = A\bar{A} = a^2-a'^2$, a non-degenerate quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra. It is not definite: it vanishes on the isotropic cone $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two null lines. Its absolute-value square root $\rho = \sqrt{|N(A)|} = \sqrt{|A_+A_-|}$ is multiplicative and absolutely homogeneous, positive exactly on the units, and it splits the algebra into the two regimes $N>0$ (spacelike) and $N<0$ (timelike).
+The norm of a split-complex number is $\langle A\rangle_{\natural} = A\bar{A} = a^2-a'^2$, a non-degenerate quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra. It is not definite: it vanishes on the isotropic cone $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two null lines. Its absolute-value square root $\rho = \sqrt{|\langle A\rangle_{\natural}|} = \sqrt{|A_+A_-|}$ is multiplicative and absolutely homogeneous, positive exactly on the units, and it splits the algebra into the two regimes $N>0$ (spacelike) and $N<0$ (timelike).
 
-An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \bar A/N(A) = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$. The elements are classified as spacelike, null or timelike by the sign of the norm, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
+An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \bar A/\langle A\rangle_{\natural} = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$. The elements are classified as spacelike, null or timelike by the sign of the norm, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
 
 ## Summary of Notation
 
@@ -332,13 +332,13 @@ An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \
 | $\mathbb{D}$ | Split complex algebra |
 | $A = a + j a'$ | General split complex number |
 | $\bar{A} = a - j a'$ | Split complex conjugate |
-| $N(A) = A\bar{A} = a^2-a'^2$ | Norm, signature $(1,1)$ |
-| $g(A,B) = a b-a' b'$ | Polarisation of $N$, the split bilinear form |
+| $\langle A\rangle_{\natural} = A\bar{A} = a^2-a'^2$ | Norm, signature $(1,1)$ |
+| $g(A,B) = a b-a' b'$ | Polarisation of $\langle\cdot,\cdot\rangle_{\natural}$, the split bilinear form |
 | $\mathrm{Cl}(1,1)\cong M_2(\mathbb{R})$, $\mathrm{Cl}^+(1,1)\cong\mathbb{D}$ | Clifford algebra of the form and its even part |
 | $A_\pm = a\pm a'$ | Idempotent coordinates, $A = A_+\Pi_1 + A_-\Pi_2$ |
 | $\Pi_{1,2} = (1\pm j)/2$ | Idempotents |
 | $\mathcal{N} = \{N=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_{1,2}$ |
-| $\rho = \sqrt{|N(A)|} = \sqrt{|A_+A_-|}$ | Modulus, multiplicative and absolutely homogeneous |
+| $\rho = \sqrt{|\langle A\rangle_{\natural}|} = \sqrt{|A_+A_-|}$ | Modulus, multiplicative and absolutely homogeneous |
 | $\|A\|_E = \sqrt{a^2+a'^2}$ | Euclidean norm |
 | $\langle A,B\rangle = a b+a' b'$ | Euclidean inner product |
 | $A\bar B = (a b-a' b')+(a' b-a b')j$ | Sesquilinear form; its real part is $g$, indefinite |

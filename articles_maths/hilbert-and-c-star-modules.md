@@ -54,7 +54,7 @@ $$
 \langle xa+yb,z\rangle=a^*\langle x,z\rangle+b^*\langle y,z\rangle.
 $$
 
-This follows from axioms 1 and 2 and the involution identity $(a^*b)^*=b^*a$. Setting $z=0$ and $b=0$, then $y=x$ and $a=1$, in axiom 1 gives $\langle x,x\rangle=\langle x,x\rangle\cdot1$, and taking $x=y=0$ and $a=b=0$ in the display above gives $\langle 0,z\rangle=0$. Thus the inner product is sesquilinear over $A$ — conjugate-linear in the first variable, $A$-linear in the second — and compatible with the right action in both variables.
+This follows from axioms 1 and 2 and the involution identity $(a^*b)^*=b^*a$. Setting $z=0$ and $b=0$, then $y=x$ and $a=1$, in axiom 1 gives $\langle x,x\rangle\cdot1$, and taking $x=y=0$ and $a=b=0$ in the display above gives $\langle 0,z\rangle=0$. Thus the inner product is sesquilinear over $A$ — conjugate-linear in the first variable, $A$-linear in the second — and compatible with the right action in both variables.
 
 Two further identities are used repeatedly. For a self-adjoint element the order is compatible with the involution: if $a \geq 0$ then $a^*=a \geq 0$. And $\langle xa,xa\rangle=a^*\langle x,x\rangle a$, by axiom 1 applied in the second variable with $\langle xa,x\rangle=a^*\langle x,x\rangle$, which follows from axiom 2; this is the algebraic content of the compatibility of the form with the right action.
 

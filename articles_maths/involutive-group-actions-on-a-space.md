@@ -51,9 +51,9 @@ define a continuous action of $G\rtimes_\alpha C_2$ on $X$, and conversely every
 
 ## The Induced Involution on the Quotient
 
-**Theorem (descent to the orbit space).** Let $\tau$ be an equivariant involution. Then $\tau$ maps orbits to orbits, $\tau(G\cdot x) = G\cdot\tau(x)$, and it induces a continuous involution $\bar\tau$ of the orbit space $X/G$ with the quotient topology; the quotient map $q : X\to X/G$ is equivariant, $q\tau = \bar\tau q$.
+**Theorem (descent to the orbit space).** Let $\tau$ be an equivariant involution. Then $\tau$ maps orbits to orbits, $\tau(G\cdot x) = G\cdot\tau(x)$, and it induces a continuous involution $\bar\tau$ of the orbit space $X/G$ with the quotient topology; the quotient map $m : X\to X/G$ is equivariant, $m\tau = \bar\tau m$.
 
-**Proof.** Since $\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$ and $\alpha(G) = G$, the image of an orbit under $\tau$ is the orbit of $\tau(x)$. The induced map is well defined, continuous by the universal property of the quotient map, and its square is the identity because $\tau^2 = \mathrm{id}$; equivariance of $q$ is the definition of $\bar\tau$.
+**Proof.** Since $\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$ and $\alpha(G) = G$, the image of an orbit under $\tau$ is the orbit of $\tau(x)$. The induced map is well defined, continuous by the universal property of the quotient map, and its square is the identity because $\tau^2 = \mathrm{id}$; equivariance of $m$ is the definition of $\bar\tau$.
 
 **Theorem (the fixed orbits).** The fixed points of the induced involution are the orbits $G\cdot x$ with $\tau(x) = g\cdot x$ for some $g \in G$. The natural map
 
@@ -79,7 +79,7 @@ $$
 C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G) .
 $$
 
-**Proof.** $\tau^*$ is an algebra involution because $\tau$ is a homeomorphism of order two. A $G$-invariant function $f$ satisfies $(\tau^* f)(g\cdot x) = f(\tau(g\cdot x)) = f(\alpha(g)\cdot\tau(x)) = f(\tau(x))$, so $\tau^*f$ is again $G$-invariant. The identification with $C(X/G)$ is the universal property of the quotient map, and the two involutions correspond because $\bar\tau q = q\tau$.
+**Proof.** $\tau^*$ is an algebra involution because $\tau$ is a homeomorphism of order two. A $G$-invariant function $f$ satisfies $(\tau^* f)(g\cdot x) = f(\tau(g\cdot x)) = f(\alpha(g)\cdot\tau(x)) = f(\tau(x))$, so $\tau^*f$ is again $G$-invariant. The identification with $C(X/G)$ is the universal property of the quotient map, and the two involutions correspond because $\bar\tau m = m\tau$.
 
 **Remark (cohomology, deferred).** The involution $\tau$ acts on the cohomology of $X$ by transport of structure, the action of $G\rtimes_\alpha C_2$ acts on the equivariant cohomology, and the Lefschetz fixed-point theorem relates the fixed set $X^\tau$ to the trace of the induced involution. All of this needs the cohomology of *Algebraic Topology*, later in this part, and the equivariant cohomology of *Equivariant Cohomology*, which is later still; this article states the topological action and its quotient and defers the cohomological statements entirely.
 
@@ -100,7 +100,7 @@ An involutive action is an action of a group $G$ with involution $\sigma$ togeth
 | $G^\alpha = I(\sigma)$ | the fixed subgroup, acting on $X^\tau$ |
 | $G^\sigma = I(\alpha)$ | the inverted set, carrying $X^\tau$ to conjugate fixed sets |
 | $X/G$ | the orbit space with the quotient topology |
-| $\bar\tau$ | the induced involution, $q\tau = \bar\tau q$ |
+| $\bar\tau$ | the induced involution, $m\tau = \bar\tau m$ |
 | $X^\tau/G^\alpha \to (X/G)^{\bar\tau}$ | the injection of fixed orbits, not always onto |
 | $\tau^*f = f\circ\tau$ | the involution on the continuous functions |
 

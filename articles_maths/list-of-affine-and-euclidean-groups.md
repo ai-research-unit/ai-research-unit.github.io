@@ -34,8 +34,8 @@ The Euclidean group is the isometry group of $\mathbb{R}^n$ with its positive de
 | the dimension of $E(n)$ | $n(n+1)/2$: $n$ translations and $n(n-1)/2$ rotations | *Euclidean Geometry* |
 | the special Euclidean group $SE(n) = \mathbb{R}^n \rtimes SO(n)$ | the orientation-preserving isometries; the rigid motions | *Euclidean Geometry*; *The Rotation Group and Orientation* |
 | the linear part $\ell(A,b) = A$ | the homomorphism $E(n) \to O(n)$; every isometry is affine with orthogonal linear part | *Symmetry, Point and Crystallographic Groups*; *Affine Spaces and Translations* |
-| the isometry group of a form of arbitrary signature | $E(\mathbb{A}) = V \rtimes O(V,Q)$ with distance $d(a,b)^2 = Q(a-b)$ | *Affine Spaces and Translations* |
-| the squared distance $d(a,b)^2 = Q(a-b)$ | the quantity an isometry preserves; the Euclidean case is $Q$ positive definite | *Affine Spaces and Translations*; *Metric, Uniform and Complete Spaces* |
+| the isometry group of a form of arbitrary signature | $E(\mathbb{A}) = V \rtimes O(V,\mathfrak{Q})$ with distance $d(a,b)^2 = \mathfrak{Q}(a-b)$ | *Affine Spaces and Translations* |
+| the squared distance $d(a,b)^2 = \mathfrak{Q}(a-b)$ | the quantity an isometry preserves; the Euclidean case is $Q$ positive definite | *Affine Spaces and Translations*; *Metric, Uniform and Complete Spaces* |
 | the classification of the plane isometries | translation, rotation, reflection and glide reflection; those with a fixed point are the rotations and reflections | *Euclidean Geometry* |
 | the isometries of the line | $T_b(x) = x+b$ and $R_b(x) = b-x$; $\operatorname{Isom}(\mathbb{R}) = \mathbb{R} \rtimes \mathbb{Z}/2\mathbb{Z}$ | *Real Line Geometry and Isometries* |
 | the Euclidean group as a topological group | a closed subgroup of the affine group, locally compact, with $O(n)$ a maximal compact subgroup | *Topological Groups*; *Matrix Groups and Classical Groups* |
@@ -49,7 +49,7 @@ The similarity group allows a common positive scale, and its elements together w
 | the similarity group $\operatorname{Sim}(n) = \mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$ | the maps $x \mapsto \lambda Ax + b$ with $\lambda > 0$; the similarities of Euclidean space | *Euclidean Geometry*; *Isometries and Orthogonal Transformations* |
 | the similarities of the line | $\operatorname{Sim}(\mathbb{R}) = \mathbb{R} \rtimes \mathbb{R}^\times$; the dilations $D_a(x) = ax$ | *Real Line Geometry and Isometries* |
 | the dilatation $D_a$ | $x \mapsto ax$; it multiplies every distance by $\lvert a\rvert$ and fixes the origin | *Real Line Geometry and Isometries* |
-| the multiplier of a similarity | $q(Tv) = c\,q(v)$; the similarities of a quadratic form, with multiplier group $\mu$ | *Isometries and Orthogonal Transformations* |
+| the multiplier of a similarity | $\mathfrak{Q}(Tv) = c\,\mathfrak{Q}(v)$; the similarities of a quadratic form, with multiplier group $\mu$ | *Isometries and Orthogonal Transformations* |
 | the translations as generators | the translation subgroup is normal and the quotient is the linear part; every element is a linear part and a translation | *Affine Spaces and Translations* |
 | the reflections as generators | the reflections $\tau_v$ generate the orthogonal group; the equal-norm lemma reduces a product to a single reflection | *Isometries and Orthogonal Transformations* |
 | Cartan–Dieudonné, linear form | every isometry of an $n$-dimensional non-degenerate quadratic space is a product of at most $n$ reflections | *Isometries and Orthogonal Transformations* |
@@ -116,7 +116,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $SE(n) = \mathbb{R}^n \rtimes SO(n)$ | the orientation-preserving Euclidean group |
 | $\operatorname{Sim}(n) = \mathbb{R}^n \rtimes (\mathbb{R}_{>0} \times O(n))$ | the similarity group |
 | $\ell(A,b) = A$ | the linear part of an affine map |
-| $Q$, $d(a,b)^2 = Q(a-b)$ | the quadratic form and the squared distance |
+| $Q$, $d(a,b)^2 = \mathfrak{Q}(a-b)$ | the quadratic form and the squared distance |
 | $T_b$, $R_b$, $D_a$ | translation, reflection and dilation of the line |
 | $\tau_v$ | the reflection in the vector $v$ |
 | $GL(V)$, $O(n)$, $SO(n)$ | the linear, orthogonal and special orthogonal groups |

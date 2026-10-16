@@ -47,7 +47,7 @@ so the spectrum is read off from the extremes of the Rayleigh quotient; in parti
 
 ### Imaginary Spectrum
 
-**Theorem (skew-adjoint operators).** If $K$ is skew-adjoint then $iK$ is self-adjoint, so the eigenvalues of $K$ are **purely imaginary** and the eigenspaces of $K$ are orthogonal; $K$ generates a one-parameter unitary group $\exp(tK)$ whose eigenvalues are $e^{it\lambda}$ on the unit circle. This was checked: on the definite regular module the skew-adjoint operators are the skew-symmetric matrices, so their eigenvalues are the purely imaginary numbers $\pm i\theta$ and the eigenvalues of $iK$ are real.
+**Theorem (skew-adjoint operators).** If $K$ is skew-adjoint then $iK$ is self-adjoint, so the eigenvalues of $K$ are **purely imaginary** and the eigenspaces of $K$ are orthogonal; $K$ generates a one-parameter unitary group $\exp(tK)$ whose eigenvalues are $\exp(it\lambda)$ on the unit circle. This was checked: on the definite regular module the skew-adjoint operators are the skew-symmetric matrices, so their eigenvalues are the purely imaginary numbers $\pm i\theta$ and the eigenvalues of $iK$ are real.
 
 ### Normal Operators and Simultaneous Diagonalisation
 

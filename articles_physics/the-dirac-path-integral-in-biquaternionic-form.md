@@ -17,7 +17,7 @@ The object the path integral must compute is the Feynman propagator for the spin
 $$
 S_F(x-x') = \int\frac{d^4p}{(2\pi)^4}\,
 \frac{i\left(\not p + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
-e^{-ip\cdot(x-x')},
+\exp(-ip\cdot(x-x')),
 $$
 
 the matrix-valued Green's function satisfying
@@ -33,7 +33,7 @@ This is standard relativistic quantum physics (see the Further Reading); the com
 $$
 \Delta_F(x-x') = \int\frac{d^4p}{(2\pi)^4}\,
 \frac{1}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
-e^{-ip\cdot(x-x')},
+\exp(-ip\cdot(x-x')),
 $$
 
 for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. Then, formally,
@@ -57,14 +57,14 @@ which is the denominator of $\Delta_F$. The Dirac propagator is therefore the Kl
 
 $$
 \frac{i}{p^2 - m^2c^2/\hbar^2 + i\epsilon}
-= \int_0^\infty dT\,e^{\,iT\left(p^2 - m^2c^2/\hbar^2 + i\epsilon\right)},
+= \int_0^\infty dT\,\exp(\,iT\left(p^2 - m^2c^2/\hbar^2 + i\epsilon\right)),
 $$
 
-the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x'|e^{\,iT(\Box - m^2c^2/\hbar^2)}|x\rangle$, and that kernel is a sum over worldlines,
+the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x'|\exp(\,iT(\Box - m^2c^2/\hbar^2))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
 G_F(x,x') = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x'}\mathcal{D}x(\tau)\;
-e^{\,iS_0[x]},
+\exp(\,iS_0[x]),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\dot{x}^\mu\dot{x}_\mu - m^2c^2/\hbar^2\right),
 $$
@@ -79,7 +79,7 @@ It is worth evaluating the scalar worldline kernel in the free case, because the
 
 $$
 G_F(x,x') = \int_0^\infty dT\int\frac{d^4p}{(2\pi)^4}\,
-e^{\,iT\left(p^2 - \mu^2 + i\epsilon\right)}\,e^{-ip\cdot(x-x')},
+\exp(\,iT\left(p^2 - \mu^2 + i\epsilon\right))\,\exp(-ip\cdot(x-x')),
 \qquad \mu = \frac{mc}{\hbar},
 $$
 
@@ -121,9 +121,9 @@ $$
 in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The path integral over the odd variables, with the boundary conditions appropriate to the propagator (anti-periodic for the fermionic trace, periodic for the matrix element), is a **spin factor** $\Phi[x]$ multiplying the scalar measure:
 
 $$
-K(x,x') = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,e^{\,iS_0[x]},
+K(x,x') = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
 \qquad
-\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,e^{\,i\int_0^T \frac{i}{2}\psi^\mu\dot\psi_\mu\,d\tau}.
+\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\dot\psi_\mu\,d\tau).
 $$
 
 The spin factor is the path-ordered exponential of the odd kinetic term; expanded, it is a sum of products of pairs $\psi^\mu\psi^\nu$, i.e. of Clifford bivectors, which is why the path integral over $\psi$ produces a Clifford-algebra-valued weight. The complete worldline path integral, with the correct measure and boundary conditions, reproduces the Dirac propagator $S_F$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor $\Phi[x]=\mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int \sigma_{\mu\nu}F^{\mu\nu}\,d\tau\right)$ quoted in the literature (with the sign conventions of the cited works).

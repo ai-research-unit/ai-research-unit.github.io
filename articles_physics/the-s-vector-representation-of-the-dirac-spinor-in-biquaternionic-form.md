@@ -14,7 +14,7 @@ $$
 g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-which is the corpus's **generator metric**, the same object the gamma matrices obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V^\mu g_{\mu\nu}W^\nu$. Indices are raised and lowered with $g$.
+which is the corpus's **generator metric**, the same object the gamma matrices obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V^\mu g_{\mu\nu}W^\nu$.
 
 ## The Trinomial Unit Basis
 
@@ -139,14 +139,14 @@ $$
 (G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad k^\mu c^{\nu\lambda}{}_\mu G_\lambda = G^\nu .
 $$
 
-Its matrix realisation is obtained by writing $(e_\mu)^\nu{}_\lambda = c^{\nu\sigma}{}_\mu\, g_{\sigma\lambda}$. In the coordinate system above, $e_0 = I$ and, with $e_\nu = i\,\hat e_\nu$ for $\nu = 1,2,3$,
+Its matrix realisation is obtained by writing $(e_\mu)^\nu{}_\lambda = c^{\nu\sigma}{}_\mu\, g_{\sigma\lambda}$. In the coordinate system above, $e_0 = I$ and, with $e_\nu = i\,\vec u_{\nu}$ for $\nu = 1,2,3$,
 
 $$
-\hat e_1\hat e_1 = \hat e_2\hat e_2 = \hat e_3\hat e_3 = \hat e_1\hat e_2\hat e_3 = -I,
-\qquad \hat e_1\hat e_2 = -\hat e_2\hat e_1 = \hat e_3 \ \ (\text{cyclic}).
+\vec u_1\vec u_1 = \vec u_2\vec u_2 = \vec u_3\vec u_3 = \vec u_1\vec u_2\vec u_3 = -I,
+\qquad \vec u_1\vec u_2 = -\vec u_2\vec u_1 = \vec u_3 \ \ (\text{cyclic}).
 $$
 
-These are exactly the relations of the biquaternion algebra: $e_k^2 = +e_0$ in the $e$-basis (since $e_\nu = i\hat e_\nu$ and $\hat e_\nu^2 = -I$), and $e_1 e_2 = i e_3$. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
+These are exactly the relations of the biquaternion algebra: $e_k^2 = +e_0$ in the $e$-basis (since $e_\nu = i\vec u_{\nu}$ and $\vec u_{\nu}^2 = -I$), and $e_1 e_2 = i e_3$. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
 
 ## The Semi-Spinors as Real Four-Vectors
 
@@ -156,7 +156,7 @@ $$
 \bar\Psi\Psi = -B^\mu g_{\mu\nu}B^\nu + N^\mu g_{\mu\nu}N^\nu,
 $$
 
-so that $B$ is timelike-positive and $N$ spacelike-negative in the source's sign convention. The passage to the null basis gives a cleaner pair. Define
+so that $B$ is timelike-positive and $\langle\cdot\rangle_{\natural}$ spacelike-negative in the source's sign convention. The passage to the null basis gives a cleaner pair. Define
 
 $$
 R = \tfrac12 G^\mu g_{\mu\nu}\gamma^\nu l, \qquad L = -\tfrac12 G^{*\mu} g_{\mu\nu}\gamma^\nu r,
@@ -318,7 +318,7 @@ c_5^{\mu\rho} g_{\rho\sigma} c_5^{\sigma\nu} = g^{\mu\nu},
 \qquad\text{i.e.}\qquad (c_5)^2 = 1 .
 $$
 
-The $U(1)$ transformation of the spinor, $\Psi \mapsto \Psi e^{i\alpha}$, becomes in the vector representation
+The $U(1)$ transformation of the spinor, $\Psi \mapsto \Psi \exp(i\alpha)$, becomes in the vector representation
 
 $$
 G^\mu \mapsto \bigl(g^{\mu\nu}\cos\alpha + i c_5^{\mu\nu}\sin\alpha\bigr)G_\nu = \bigl(\exp i\alpha c_5\bigr)^{\mu\nu} G_\nu .
@@ -330,7 +330,7 @@ $$
 \bigl(\cos\alpha + i c_5\sin\alpha\bigr)^n = \cos n\alpha + i c_5\sin n\alpha .
 $$
 
-The correspondence is exactly one-to-one in one direction: the *chiral* transformation of the spinor, $\Psi \mapsto e^{ia\gamma_5}\Psi$, becomes the *ordinary* $U(1)$ transformation $G^\mu \mapsto e^{ia}G^\mu$. The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG)$ is invariant under the $U(1)$ transformation but *not* under the chiral transformation, so plane-wave solutions for $\Psi$ and for $G^\mu$ are rotated into one another by this exchange and must be distinguished.
+The correspondence is exactly one-to-one in one direction: the *chiral* transformation of the spinor, $\Psi \mapsto \exp(ia\gamma_5)\Psi$, becomes the *ordinary* $U(1)$ transformation $G^\mu \mapsto \exp(ia)G^\mu$. The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG)$ is invariant under the $U(1)$ transformation but *not* under the chiral transformation, so plane-wave solutions for $\Psi$ and for $G^\mu$ are rotated into one another by this exchange and must be distinguished.
 
 ## The Dual Transformation and the Two Semi-Spinors
 
@@ -344,7 +344,7 @@ leaves the quadratic form $m\bar\Psi\Psi = m(N_\nu N^\nu - B_\nu B^\nu)$, the cu
 
 ## What the Construction Does and Does Not Supply
 
-**It supplies** a genuine, verified linear equivalence between the Dirac spinor and a complex four-vector, with the whole bilinear dictionary, a bosonic form of the Lagrangian, and a self-dual form of the massive equation. Every algebraic identity quoted above — the normed condition, associativity, the unit, the explicit matrices $e_\mu = i\hat e_\mu$, the reflexivity of the semi-spinor decomposition, the bilinear dictionary, the trilinear form, the anti-self-duality of $H^{\mu\nu}$ and the De Moivre theorem — was recomputed on the corpus's convention and holds.
+**It supplies** a genuine, verified linear equivalence between the Dirac spinor and a complex four-vector, with the whole bilinear dictionary, a bosonic form of the Lagrangian, and a self-dual form of the massive equation. Every algebraic identity quoted above — the normed condition, associativity, the unit, the explicit matrices $e_\mu = i\vec u_{\mu}$, the reflexivity of the semi-spinor decomposition, the bilinear dictionary, the trilinear form, the anti-self-duality of $H^{\mu\nu}$ and the De Moivre theorem — was recomputed on the corpus's convention and holds.
 
 **It does not supply** a Lorentz-covariant construction. The neutral elements $j^\mu$ and $k^\mu$ are *extra structure*: they are not determined by the metric, they are the two directions the construction singles out, and the algebra's unit is $k$. The source is explicit that this is a defect of the incomplete algorithm and, in the same breath, a virtue: the algebra $\eta_{\mu\nu}, \check c^{\mu\nu\lambda}$ *does* determine $k$ via $k^\lambda = \tfrac14 g_{\mu\nu}\check c^{\mu\nu\lambda}$, so the preferred frame is not put in by hand in the final form, it is the algebra's own unit. But it is still a preferred frame, and a Lorentz transformation that moves $k$ is not a symmetry of the individual dictionary, only of the equivalence class of dictionaries. The source's own warning applies: the triality map $J$ is *not* a symmetry of the theory; it maps one description of the theory to another description of the same theory.
 
@@ -366,7 +366,7 @@ These questions are open.
 
 ## Summary
 
-A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma^\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma^\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\hat e_\mu$, $\hat e_k^2 = -I$, $\hat e_1\hat e_2 = \hat e_3$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma^\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma^\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_1\vec u_2 = \vec u_3$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G^{\mu\nu} = \tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial_\mu G^\mu - imj_\mu G^{*\mu} = 0$, with the two-form $H^{\mu\nu} = G^*_\lambda\check c^{\lambda\mu\nu}$ anti-self-dual. The $U(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $U(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
@@ -400,7 +400,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 
 ## Further Reading
 
-- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c^{\mu\nu\lambda}$ and the normed condition, the semi-spinor four-vectors $B^\mu, N^\mu$, the s-vector $G^\mu = B^\mu + iN^\mu$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $U(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\hat e_\nu$ are its equations (16)–(18).
+- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c^{\mu\nu\lambda}$ and the normed condition, the semi-spinor four-vectors $B^\mu, N^\mu$, the s-vector $G^\mu = B^\mu + iN^\mu$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $U(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\vec u_{\nu}$ are its equations (16)–(18).
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the restatement of the construction with the fuller cubic form, the braid-group "Dirac's game", the chiral biquaternions $R^\mu, L^\mu$, the anti-self-dual two-form $H^{\mu\nu}$, the chiral form of the equation of motion, and the parent-action duality carried in the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
 - E. Cartan, *Leçons sur la théorie des spineurs* I, II (Hermann, Paris, 1938); English translation by R. Streater, *The Theory of Spinors* (Hermann, Paris, 1966), for the original triality of $\mathrm{Spin}(8)$.
 - C. C. Chevalley, *The Algebraic Theory of Spinors* (Columbia University Press, New York, 1954), for the neutral elements of a spin representation.

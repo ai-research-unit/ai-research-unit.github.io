@@ -105,22 +105,22 @@ The four fixed-point subspaces have a simple characterization in the four-vector
 
 ### The Split-Biquaternion Norm in Four-Vector Form
 
-The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is
+The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is
 
 $$
-N(\tilde{Q}) = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
+\langle\tilde{Q}\rangle_{\natural} = (Q^0)^2 + (Q^1)^2 + (Q^2)^2 + (Q^3)^2,
 $$
 
 a split complex number. Writing $Q^\mu = q^\mu + j q'^\mu$, this expands to
 
 $$
-N(\tilde{Q}) = \sum_{\mu=0}^{3} ((q^\mu)^2 + (q'^\mu)^2) + 2j \sum_{\mu=0}^{3} q^\mu q'^\mu.
+\langle\tilde{Q}\rangle_{\natural} = \sum_{\mu=0}^{3} ((q^\mu)^2 + (q'^\mu)^2) + 2j \sum_{\mu=0}^{3} q^\mu q'^\mu.
 $$
 
 On the anti-Hermitian subspace $\mathbb{M}_-$, the split-biquaternion norm restricts to the real quadratic form
 
 $$
-N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+\langle\tilde{Q}\rangle_{\natural} = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
 which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the **Hermitian** form $\tilde{Q} \tilde{Q}^{*} = \sum_\mu Q^\mu (Q^\mu)^*$, namely $-(q'_0)^2 + q_1^2 + q_2^2 + q_3^2$.
@@ -221,13 +221,13 @@ The split complex conjugation is the map that swaps the two components. This is 
 **Split-Biquaternion norm.** The split-biquaternion norm is
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
+\langle\tilde{Q}\rangle_{\natural} = N_{\mathbb{H}}(\tilde{Q}_+) \tilde\Pi_1 + N_{\mathbb{H}}(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
 where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \tilde{Q}^{\natural}_\pm$ is the ordinary quaternion norm, which is a non-negative real number. In the standard basis, this is
 
 $$
-N(\tilde{Q}) = \frac{N_{\mathbb{H}}(\tilde{Q}_+) + N_{\mathbb{H}}(\tilde{Q}_-)}{2} + j \frac{N_{\mathbb{H}}(\tilde{Q}_+) - N_{\mathbb{H}}(\tilde{Q}_-)}{2}.
+\langle\tilde{Q}\rangle_{\natural} = \frac{N_{\mathbb{H}}(\tilde{Q}_+) + N_{\mathbb{H}}(\tilde{Q}_-)}{2} + j \frac{N_{\mathbb{H}}(\tilde{Q}_+) - N_{\mathbb{H}}(\tilde{Q}_-)}{2}.
 $$
 
 **Invertibility.** The split biquaternion $\tilde{Q}$ is invertible if and only if both idempotent components are nonzero:
@@ -320,7 +320,7 @@ because the generators satisfy $\gamma_k^2 = -1$ exactly as the quaternion units
 
 **Multiplication.** Under the isomorphism the Clifford product corresponds to the split biquaternion product, the generators multiplying as the quaternion units and the volume element commuting with them.
 
-**Split-Biquaternion norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $N(\tilde{Q}) = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\tilde{Q}^{\natural}$.
+**Split-Biquaternion norm.** The Euclidean norm of the Clifford algebra, the sum of squares of the eight real blade coordinates, is the real part $R(\tilde{Q}) = \sum_\mu(q_\mu^2 + q'^2_\mu)$ of the split biquaternion norm. The full norm $\langle\tilde{Q}\rangle_{\natural} = R + jI$ is $\mathbb{D}$-valued and is not the Clifford norm, which is real; it corresponds under the isomorphism to the Clifford product $\tilde{Q}\tilde{Q}^{\natural}$.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -433,7 +433,7 @@ Unlike the biquaternion algebra, the split biquaternion algebra does **not** hav
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components, in $\mathbb{H}$ |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | Split complex, quaternion, Hermitian, anti-Hermitian subspaces |
 | $\rho : A \to \mathrm{End}(V)$ | An algebra representation |
 | $\rho_\pm : \mathbb{H}_{\mathbb{D}} \to \mathrm{End}_{\mathbb{H}}(\mathbb{H} \tilde\Pi_{1,2})$ | Module representation |

@@ -101,7 +101,7 @@ because the inversion is an anti-automorphism; it is unitary when the bi-invaria
 
 **Proposition.** On an abelian group the translations $T_a = S_a$ coincide with the right translations, the reversing symmetry satisfies $C T_a C = T_a$, and the Fourier transform diagonalises the translations: on the character $\chi$ the operator $T_a$ acts by the scalar $\chi(a)^{-1}$, and its adjoint by the conjugate scalar $\chi(a)$,
 $$
-\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f(\chi), \qquad \widehat{T_a^{*} f}(\chi) = \chi(a)\hat f(\chi) = \overline{\chi(a)^{-1}}\,\hat f(\chi),
+\widehat{T_a f}(\chi) = \chi(a)^{-1}(\mathcal F f)(\chi), \qquad \widehat{T_a^{*} f}(\chi) = \chi(a)(\mathcal F f)(\chi) = \overline{\chi(a)^{-1}}\,(\mathcal F f)(\chi),
 $$
 so the inversion involution corresponds to the complex conjugation of the Fourier multiplier.
 
@@ -109,9 +109,9 @@ so the inversion involution corresponds to the complex conjugation of the Fourie
 
 ## Worked Cases
 
-**Example (the line and the plane).** Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $e^{-i a\cdot\xi}$, so the adjoint multiplies by $e^{+ia\cdot\xi}$, the complex conjugate. The example is the original and simplest case.
+**Example (the line and the plane).** Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $\exp(-i a\cdot\xi)$, so the adjoint multiplies by $\exp(+ia\cdot\xi)$, the complex conjugate. The example is the original and simplest case.
 
-**Example (the circle).** Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $e^{2\pi i n x}$ the operator $T_\theta$ acts by $e^{-2\pi in\theta}$, the adjoint by $e^{+2\pi in\theta}$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.
+**Example (the circle).** Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $\exp(2\pi i n x)$ the operator $T_\theta$ acts by $\exp(-2\pi in\theta)$, the adjoint by $\exp(+2\pi in\theta)$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.
 
 **Example (the finite cyclic group).** Let $G = \mathbb{Z}/n$; the translation $T_a$ is the cyclic shift, its adjoint is the shift by $-a$, and the discrete Fourier transform diagonalises the family; the inversion is the reflection of the group, and the adjoint is the conjugate transpose of the circulant matrix of the shift. The example is the finite abelian case, the discrete form of the line.
 
@@ -134,7 +134,7 @@ The left translation $T_a f(x) = f(a^{-1}x)$ has adjoint $T_a^{*} = T_{a^{-1}}$,
 | $T_a^{*} = \tau_{\iota}(T_a)$ | the adjoint realises the inversion |
 | $Cf(x) = f(x^{-1})$ | the reversing symmetry |
 | $C T_a C = S_a$ | the reversing symmetry swaps left and right translations |
-| $\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f$ | the abelian Fourier diagonalisation |
+| $\widehat{T_a f}(\chi) = \chi(a)^{-1}\mathcal F f$ | the abelian Fourier diagonalisation |
 
 ## Further Reading
 

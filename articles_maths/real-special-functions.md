@@ -23,7 +23,7 @@ $$
 \exp(a + b) = \exp(a) \exp(b), \qquad \exp(0) = 1, \qquad \exp'(a) = \exp(a).
 $$
 
-We write $e^a = \exp(a)$ where $e = \exp(1)$.
+We write $\exp(a) = \exp(a)$ where $e = \exp(1)$.
 
 ### The Logarithm
 
@@ -130,7 +130,7 @@ $$
 The **hyperbolic sine** and **hyperbolic cosine** are
 
 $$
-\sinh a = \frac{e^a - e^{-a}}{2}, \qquad \cosh a = \frac{e^a + e^{-a}}{2}.
+\sinh a = \frac{\exp(a) - \exp(-a)}{2}, \qquad \cosh a = \frac{\exp(a) + \exp(-a)}{2}.
 $$
 
 They satisfy
@@ -182,7 +182,7 @@ $$
 The **gamma function** is defined for $a > 0$ by
 
 $$
-\Gamma(a) = \int_0^\infty t^{a-1} e^{-t} \, dt.
+\Gamma(a) = \int_0^\infty t^{a-1} \exp(-t) \, dt.
 $$
 
 It satisfies the **functional equation**
@@ -236,7 +236,7 @@ It is symmetric: $B(a, b) = B(b, a)$.
 The **error function** is defined by
 
 $$
-\operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_0^a e^{-t^2} \, dt.
+\operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_0^a \exp(-t^2) \, dt.
 $$
 
 It is odd, strictly increasing, and satisfies
@@ -248,19 +248,19 @@ $$
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(a) = 1 - \operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_a^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(a) = 1 - \operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_a^\infty \exp(-t^2) \, dt.
 $$
 
 ### The Imaginary Error Function
 
 $$
-\operatorname{erfi}(a) = \frac{2}{\sqrt{\pi}} \int_0^a e^{t^2} \, dt.
+\operatorname{erfi}(a) = \frac{2}{\sqrt{\pi}} \int_0^a \exp(t^2) \, dt.
 $$
 
 ### The Dawson Function
 
 $$
-D(a) = e^{-a^2} \int_0^a e^{t^2} \, dt.
+D(a) = \exp(-a^2) \int_0^a \exp(t^2) \, dt.
 $$
 
 It satisfies the differential equation
@@ -288,13 +288,13 @@ $$
 The **lower incomplete gamma function** is
 
 $$
-\gamma(s, a) = \int_0^a t^{s-1} e^{-t} \, dt, \qquad s > 0, \; a \geq 0.
+\gamma(s, a) = \int_0^a t^{s-1} \exp(-t) \, dt, \qquad s > 0, \; a \geq 0.
 $$
 
 The **upper incomplete gamma function** is
 
 $$
-\Gamma(s, a) = \int_a^\infty t^{s-1} e^{-t} \, dt, \qquad s > 0, \; a \geq 0.
+\Gamma(s, a) = \int_a^\infty t^{s-1} \exp(-t) \, dt, \qquad s > 0, \; a \geq 0.
 $$
 
 They satisfy
@@ -342,7 +342,7 @@ The series converges absolutely for $s > 1$ and diverges for $s \leq 1$.
 For $s > 1$,
 
 $$
-\zeta(s) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{t^{s-1}}{e^t - 1} \, dt.
+\zeta(s) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{t^{s-1}}{\exp(t) - 1} \, dt.
 $$
 
 ### Special Values
@@ -378,7 +378,7 @@ This extends $\zeta$ to $s > 0$.
 The **Bernoulli numbers** $B_n$ are defined by the generating function
 
 $$
-\frac{a}{e^a - 1} = \sum_{n=0}^\infty \frac{B_n}{n!} a^n, \qquad |a| < 2\pi.
+\frac{a}{\exp(a) - 1} = \sum_{n=0}^\infty \frac{B_n}{n!} a^n, \qquad |a| < 2\pi.
 $$
 
 They satisfy $B_0 = 1$, $B_1 = -1/2$, and $B_{2n+1} = 0$ for $n \geq 1$. The first few are
@@ -390,7 +390,7 @@ $$
 ### The Bernoulli Polynomials
 
 $$
-\frac{a e^{t a}}{e^a - 1} = \sum_{n=0}^\infty \frac{B_n(t)}{n!} a^n.
+\frac{a \exp(t a)}{\exp(a) - 1} = \sum_{n=0}^\infty \frac{B_n(t)}{n!} a^n.
 $$
 
 They satisfy $B_n(0) = B_n$ and $B_n(1) = B_n$ for $n \neq 1$.
@@ -400,7 +400,7 @@ They satisfy $B_n(0) = B_n$ and $B_n(1) = B_n$ for $n \neq 1$.
 The **Euler numbers** $E_n$ are defined by
 
 $$
-\frac{2}{e^a + e^{-a}} = \sum_{n=0}^\infty \frac{E_n}{n!} a^n.
+\frac{2}{\exp(a) + \exp(-a)} = \sum_{n=0}^\infty \frac{E_n}{n!} a^n.
 $$
 
 They satisfy $E_{2n+1} = 0$ and
@@ -462,7 +462,7 @@ $$
 The **Hermite polynomials** $H_n(a)$ are defined on $\mathbb{R}$ by
 
 $$
-H_n(a) = (-1)^n e^{a^2} \frac{d^n}{da^n} e^{-a^2}.
+H_n(a) = (-1)^n \exp(a^2) \frac{d^n}{da^n} \exp(-a^2).
 $$
 
 They satisfy the recurrence
@@ -471,10 +471,10 @@ $$
 H_{n+1}(a) = 2a H_n(a) - 2n H_{n-1}(a),
 $$
 
-with $H_0 = 1$ and $H_1 = 2a$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-a^2}$:
+with $H_0 = 1$ and $H_1 = 2a$. They are orthogonal on $\mathbb{R}$ with respect to the weight $\exp(-a^2)$:
 
 $$
-\int_{-\infty}^\infty H_m(a) H_n(a) e^{-a^2} \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
+\int_{-\infty}^\infty H_m(a) H_n(a) \exp(-a^2) \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
 $$
 
 ### Laguerre Polynomials
@@ -482,7 +482,7 @@ $$
 The **Laguerre polynomials** $L_n(a)$ are defined on $[0, \infty)$ by
 
 $$
-L_n(a) = \frac{e^a}{n!} \frac{d^n}{da^n} (a^n e^{-a}).
+L_n(a) = \frac{\exp(a)}{n!} \frac{d^n}{da^n} (a^n \exp(-a)).
 $$
 
 They satisfy the recurrence
@@ -491,10 +491,10 @@ $$
 (n+1) L_{n+1}(a) = (2n+1-a) L_n(a) - n L_{n-1}(a),
 $$
 
-with $L_0 = 1$ and $L_1 = 1 - a$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-a}$:
+with $L_0 = 1$ and $L_1 = 1 - a$. They are orthogonal on $[0, \infty)$ with respect to the weight $\exp(-a)$:
 
 $$
-\int_0^\infty L_m(a) L_n(a) e^{-a} \, da = \delta_{mn}.
+\int_0^\infty L_m(a) L_n(a) \exp(-a) \, da = \delta_{mn}.
 $$
 
 ## The Bessel Functions
@@ -548,7 +548,7 @@ J_\nu(a) \sim \sqrt{\frac{2}{\pi a}} \cos\left(a - \frac{\nu \pi}{2} - \frac{\pi
 $$
 
 $$
-I_\nu(a) \sim \frac{e^a}{\sqrt{2 \pi a}}.
+I_\nu(a) \sim \frac{\exp(a)}{\sqrt{2 \pi a}}.
 $$
 
 ## The Airy Functions
@@ -570,7 +570,7 @@ $$
 The second solution $\operatorname{Bi}(a)$ is defined by
 
 $$
-\operatorname{Bi}(a) = \frac{1}{\pi} \int_0^\infty \left( e^{-t^3/3 + a t} + \sin\left(\frac{t^3}{3} + a t\right) \right) dt.
+\operatorname{Bi}(a) = \frac{1}{\pi} \int_0^\infty \left( \exp(-t^3/3 + a t) + \sin\left(\frac{t^3}{3} + a t\right) \right) dt.
 $$
 
 ### Asymptotics
@@ -578,7 +578,7 @@ $$
 As $a \to +\infty$,
 
 $$
-\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} e^{-2 a^{3/2}/3}.
+\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} \exp(-2 a^{3/2}/3).
 $$
 
 As $a \to -\infty$,
@@ -670,13 +670,13 @@ $$
 The **Lambert W function** is the inverse of
 
 $$
-f(w) = w e^w.
+f(w) = w \exp(w).
 $$
 
 That is, $W(a)$ is the unique real solution of
 
 $$
-W(a) e^{W(a)} = a.
+W(a) \exp(W(a)) = a.
 $$
 
 For $a \geq 0$, there is a unique real solution $W_0(a) \geq 0$. For $-1/e \leq a < 0$, there are two real solutions $W_{-1}(a) \leq -1$ and $W_0(a) \geq -1$.
@@ -689,7 +689,7 @@ $$
 
 ### Applications
 
-The Lambert W function solves equations of the form $a e^d + b d + c = 0$. It appears in combinatorics, in the enumeration of labelled trees, and in the analysis of delay differential equations.
+The Lambert W function solves equations of the form $a \exp(d) + b d + c = 0$. It appears in combinatorics, in the enumeration of labelled trees, and in the analysis of delay differential equations.
 
 ## Summary
 
@@ -697,13 +697,13 @@ The real special functions are the named functions that recur throughout analysi
 
 The elementary functions come first: the exponential, defined by its series, its inverse the logarithm, the trigonometric functions defined by their series, and the hyperbolic functions defined from the exponential. Integral representations then supply the higher functions: the gamma and beta functions with the functional equation, the error function and its relatives, the incomplete gamma and beta functions, and the Riemann zeta function as a Dirichlet series.
 
-The arithmetic families follow, the Bernoulli and Euler numbers defined by generating functions, and then the classical special functions of analysis and mathematical physics: the orthogonal polynomials, the Bessel functions, the Airy function, the Gauss hypergeometric function, the elliptic integrals, and the Lambert $W$ function as the inverse of $w \mapsto we^w$. Each function is defined precisely, and its elementary properties, its differential equation, its recurrence relations and its relations to the others are recorded.
+The arithmetic families follow, the Bernoulli and Euler numbers defined by generating functions, and then the classical special functions of analysis and mathematical physics: the orthogonal polynomials, the Bessel functions, the Airy function, the Gauss hypergeometric function, the elliptic integrals, and the Lambert $W$ function as the inverse of $w \mapsto w\exp(w)$. Each function is defined precisely, and its elementary properties, its differential equation, its recurrence relations and its relations to the others are recorded.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $e^a, \ln a$ | Exponential, logarithm |
+| $\exp(a), \ln a$ | Exponential, logarithm |
 | $\sin a, \cos a, \tan a$ | Trigonometric functions |
 | $\arcsin a, \arccos a, \arctan a$ | Inverse trigonometric functions |
 | $\sinh a, \cosh a, \tanh a$ | Hyperbolic functions |

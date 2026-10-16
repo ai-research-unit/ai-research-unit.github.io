@@ -157,13 +157,13 @@ defined on the domain of functions for which the limit exists uniformly.
 
 **Theorem (Hille–Yosida).** A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative and the range of $\lambda - L$ is dense for some (equivalently every) $\lambda > 0$.
 
-The Hille–Yosida theorem is the functional-analytic characterisation of the generators of Markov semigroups, and it is the bridge from the probabilistic to the analytic description of a Markov process. The semigroup is the collection of transition probabilities; the generator is the local description of the motion; and the resolvent $(\lambda - L)^{-1}$ is the Laplace transform of the semigroup, $(\lambda-L)^{-1}f(x) = \int_0^\infty e^{-\lambda t}P_tf(x)\,dt$.
+The Hille–Yosida theorem is the functional-analytic characterisation of the generators of Markov semigroups, and it is the bridge from the probabilistic to the analytic description of a Markov process. The semigroup is the collection of transition probabilities; the generator is the local description of the motion; and the resolvent $(\lambda - L)^{-1}$ is the Laplace transform of the semigroup, $(\lambda-L)^{-1}f(x) = \int_0^\infty \exp(-\lambda t)P_tf(x)\,dt$.
 
 ### Continuous-Time Markov Chains and the Poisson Process
 
 **Definition.** A **continuous-time Markov chain** on a countable state space is a family $\{X_t\}_{t\geq0}$ with the Markov property in continuous time and transition probabilities $p_t(x,y)$; the **$Q$-matrix** or **generator** has entries $q_{xy} = \lim_{t\to0}(p_t(x,y) - \delta_{xy})/t$ and satisfies $q_{xy} \geq 0$ for $x \neq y$ and $\sum_y q_{xy} = 0$.
 
-**Theorem (Kolmogorov equations).** For a continuous-time Markov chain with generator $Q$, the transition probabilities satisfy the **backward equation** $\partial_t p_t = Qp_t$ and, when the chain is non-explosive, the **forward equation** $\partial_tp_t = p_tQ$; for a finite state space both reduce to $P_t = e^{tQ}$.
+**Theorem (Kolmogorov equations).** For a continuous-time Markov chain with generator $Q$, the transition probabilities satisfy the **backward equation** $\partial_t p_t = Qp_t$ and, when the chain is non-explosive, the **forward equation** $\partial_tp_t = p_tQ$; for a finite state space both reduce to $P_t = \exp(tQ)$.
 
 **Example (the Poisson process).** Let $X_t$ be the number of arrivals by time $t$ with rate $\lambda > 0$: the increments are independent, stationary, with $X_{t+s} - X_s \sim \mathrm{Pois}(\lambda t)$. The Poisson process is the continuous-time Markov chain with $q_{n,n+1} = \lambda$ and $q_{n,n} = -\lambda$, its holding times are independent exponentials of rate $\lambda$, and its generator is the difference operator $(Lf)(n) = \lambda(f(n+1)-f(n))$. The Poisson process is the prototypical point process, and it is the building block of the jump processes and of the Itô integral with respect to a Poisson random measure.
 

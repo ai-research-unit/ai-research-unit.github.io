@@ -19,7 +19,7 @@ $$
 
 The **infinite-dimensional Itô formula** carries the second-order correction of the finite-dimensional theory, with the trace taken over the covariance of the noise; the generator of the Markov process obtained this way is a second-order operator on the function space, and the Kolmogorov equations it defines are the infinite-dimensional analogues of the backward and forward equations of the preceding article. The theory is the meeting point of all three strands of this Part: the functional analysis of the semigroup articles, the deterministic partial differential equations, and the stochastic calculus of the preceding article.
 
-The article develops the cylindrical and $Q$-Wiener processes; the stochastic integral for Hilbert-space-valued integrands and the Hilbert–Schmidt condition; mild, weak and strong solutions; the stochastic convolution and its Gaussian law; the infinite-dimensional Itô formula and the Kolmogorov operators; the well-posedness theory for Lipschitz nonlinearities; the stochastic heat equation and the Ornstein–Uhlenbeck process in infinite dimensions, with their invariant measures; the linear and nonlinear examples, including the stochastic Burgers and Navier–Stokes equations and the Zakai equation; and the singular equations, where the space-time noise is so rough that the nonlinear terms require a renormalisation and the classical solution theory fails.
+The article develops the cylindrical and $\Sigma$-Wiener processes; the stochastic integral for Hilbert-space-valued integrands and the Hilbert–Schmidt condition; mild, weak and strong solutions; the stochastic convolution and its Gaussian law; the infinite-dimensional Itô formula and the Kolmogorov operators; the well-posedness theory for Lipschitz nonlinearities; the stochastic heat equation and the Ornstein–Uhlenbeck process in infinite dimensions, with their invariant measures; the linear and nonlinear examples, including the stochastic Burgers and Navier–Stokes equations and the Zakai equation; and the singular equations, where the space-time noise is so rough that the nonlinear terms require a renormalisation and the classical solution theory fails.
 
 ## Infinite-Dimensional Noise
 
@@ -31,33 +31,33 @@ $$
 W_t = \sum_{k\ge1}\beta_k(t)e_k ,
 $$
 
-which does not converge in $H$; the series converges in every larger Hilbert space $\tilde H\supset H$ for which the inclusion $H\to\tilde H$ is Hilbert–Schmidt.
+which does not converge in $H$; the series converges in every larger Hilbert space $H^{\mathrm{ext}}\supset H$ for which the inclusion $H\toH^{\mathrm{ext}}$ is Hilbert–Schmidt.
 
-**Definition.** Let $Q$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a **trace-class covariance**), and let $(e_k)$ diagonalise $Q$ with eigenvalues $q_k$: $Qe_k=q_ke_k$, $\sum_kq_k<\infty$. A **$Q$-Wiener process** is
+**Definition.** Let $\Sigma$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a **trace-class covariance**), and let $(e_k)$ diagonalise $\Sigma$ with eigenvalues $q_k$: $\Sigma e_k=q_ke_k$, $\sum_kq_k<\infty$. A **$\Sigma$-Wiener process** is
 
 $$
-W^Q_t = \sum_{k\ge1}\sqrt{q_k}\,\beta_k(t)e_k ,
+W^\Sigma_t = \sum_{k\ge1}\sqrt{q_k}\,\beta_k(t)e_k ,
 $$
 
-the series converging almost surely in $H$; it is a Gaussian process with mean zero and covariance $\mathbb{E}\langle W^Q_s,x\rangle\langle W^Q_t,y\rangle = (s\wedge t)\langle Qx,y\rangle$, and it has a version with continuous paths.
+the series converging almost surely in $H$; it is a Gaussian process with mean zero and covariance $\mathbb{E}\langle W^\Sigma_s,x\rangle\langle W^\Sigma_t,y\rangle = (s\wedge t)\langle \Sigma x,y\rangle$, and it has a version with continuous paths.
 
-**Remark (white noise and the diagonal case).** For $Q=I$ the $Q$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a **space-time white noise**, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\xi(t,x)\xi(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.
+**Remark (white noise and the diagonal case).** For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a **space-time white noise**, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\xi(t,x)\xi(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.
 
 ### The Hilbert–Schmidt Integral
 
 **Definition.** Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is **Hilbert–Schmidt** if $\|T\|_{\mathrm{HS}}^2 = \sum_k\|Te_k\|^2<\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.
 
-**Definition.** Let $Q$ be trace class on $U$ with $Q^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(Q^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(Q^{1/2}U,H)}^2ds<\infty$. The **stochastic integral** $\int_0^T\Phi_s\,dW^Q_s$ is defined by approximation from elementary integrands, with the isometry
+**Definition.** Let $\Sigma$ be trace class on $U$ with $\Sigma^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(\Sigma^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2ds<\infty$. The **stochastic integral** $\int_0^T\Phi_s\,dW^\Sigma_s$ is defined by approximation from elementary integrands, with the isometry
 
 $$
-\mathbb{E}\left\|\int_0^T\Phi_s\,dW^Q_s\right\|_H^2 = \mathbb{E}\int_0^T\bigl\|\Phi_sQ^{1/2}\bigr\|_{\mathrm{HS}(U,H)}^2ds ,
+\mathbb{E}\left\|\int_0^T\Phi_s\,dW^\Sigma_s\right\|_H^2 = \mathbb{E}\int_0^T\bigl\|\Phi_s\Sigma^{1/2}\bigr\|_{\mathrm{HS}(U,H)}^2ds ,
 $$
 
-and it is a continuous $H$-valued martingale with $\mathbb{E}\int_0^T\Phi_s\,dW^Q_s=0$.
+and it is a continuous $H$-valued martingale with $\mathbb{E}\int_0^T\Phi_s\,dW^\Sigma_s=0$.
 
-*Proof.* The construction follows the finite-dimensional one: for $\Phi=\sum_i\Phi_i\mathbf{1}_{(t_i,t_{i+1}]}$ with $\Phi_i$ taking finitely many values in $L_2(Q^{1/2}U,H)$ the sum $\sum_i\Phi_i(W^Q_{t_{i+1}}-W^Q_{t_i})$ is well defined, and the isometry is verified from the covariance of the increments; the extension to the general class is by the isometry and the completeness of $L^2(\Omega;H)$.
+*Proof.* The construction follows the finite-dimensional one: for $\Phi=\sum_i\Phi_i\mathbf{1}_{(t_i,t_{i+1}]}$ with $\Phi_i$ taking finitely many values in $L_2(\Sigma^{1/2}U,H)$ the sum $\sum_i\Phi_i(W^\Sigma_{t_{i+1}}-W^\Sigma_{t_i})$ is well defined, and the isometry is verified from the covariance of the increments; the extension to the general class is by the isometry and the completeness of $L^2(\Omega;H)$.
 
-**Proposition (the cylindrical case).** Let $Q=I$ and let $(e_k)$ be an orthonormal basis. For an $L_2(H,H)$-valued integrand $\Phi$, the integral against the cylindrical process is defined by
+**Proposition (the cylindrical case).** Let $\Sigma=I$ and let $(e_k)$ be an orthonormal basis. For an $L_2(H,H)$-valued integrand $\Phi$, the integral against the cylindrical process is defined by
 
 $$
 \int_0^T\Phi_s\,dW_s = \sum_{k\ge1}\int_0^T\Phi_se_k\,d\beta_k(s),
@@ -67,35 +67,35 @@ the series converging in $L^2(\Omega;H)$ exactly when $\mathbb{E}\int_0^T\|\Phi_
 
 ## Stochastic Evolution Equations
 
-**Definition.** Let $A$ be the generator of a strongly continuous semigroup $(S(t))_{t\ge0}$ on $H$, and let $F : H\to H$ and $B : H\to L_2(Q^{1/2}U,H)$ be measurable. The **stochastic evolution equation** is
+**Definition.** Let $A$ be the generator of a strongly continuous semigroup $(S(t))_{t\ge0}$ on $H$, and let $F : H\to H$ and $B : H\to L_2(\Sigma^{1/2}U,H)$ be measurable. The **stochastic evolution equation** is
 
 $$
-dX_t = \bigl(AX_t+F(X_t)\bigr)dt + B(X_t)\,dW^Q_t ,
+dX_t = \bigl(AX_t+F(X_t)\bigr)dt + B(X_t)\,dW^\Sigma_t ,
 $$
 
 and a **mild solution** on $[0,T]$ is a continuous $H$-valued adapted process with
 
 $$
-X_t = S(t)X_0+\int_0^tS(t-s)F(X_s)\,ds+\int_0^tS(t-s)B(X_s)\,dW^Q_s , \qquad t\in[0,T].
+X_t = S(t)X_0+\int_0^tS(t-s)F(X_s)\,ds+\int_0^tS(t-s)B(X_s)\,dW^\Sigma_s , \qquad t\in[0,T].
 $$
 
 A **strong solution** is an $H$-valued process with $X_t\in D(A)$ for almost every $t$ and the integral equation satisfied in the Itô sense, and a **weak solution** is a solution of the associated martingale problem, tested against smooth functions.
 
-**Theorem (the stochastic convolution).** Let $\Phi$ be progressively measurable with $\sup_{t\le T}\mathbb{E}\|\Phi_t\|_{\mathrm{HS}(Q^{1/2}U,H)}^2<\infty$. Then the process
+**Theorem (the stochastic convolution).** Let $\Phi$ be progressively measurable with $\sup_{t\le T}\mathbb{E}\|\Phi_t\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2<\infty$. Then the process
 
 $$
-W_A(t) = \int_0^tS(t-s)\Phi_s\,dW^Q_s , \qquad t\in[0,T],
+W_A(t) = \int_0^tS(t-s)\Phi_s\,dW^\Sigma_s , \qquad t\in[0,T],
 $$
 
 is well defined, has continuous paths in $H$, and in the case of a deterministic $\Phi$ is Gaussian of mean zero with covariance operator
 
 $$
-Q_t = \int_0^tS(t-s)\Phi_sQ\Phi_s^*S(t-s)^*\,ds ;
+\Sigma_t = \int_0^tS(t-s)\Phi_s\Sigma\Phi_s^*S(t-s)^*\,ds ;
 $$
 
-it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}Q_t<\infty$.
+it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}\Sigma_t<\infty$.
 
-*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\|S(t-s)\Phi_sQ^{1/2}\|_{\mathrm{HS}}^2ds=\operatorname{tr}Q_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.
+*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\|S(t-s)\Phi_s\Sigma^{1/2}\|_{\mathrm{HS}}^2ds=\operatorname{tr}\Sigma_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.
 
 **Theorem (existence and uniqueness for Lipschitz coefficients).** Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\|B(x)-B(y)\|_{\mathrm{HS}}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|<\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2<\infty$.
 
@@ -108,60 +108,60 @@ it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname
 **Theorem (Itô's formula in Hilbert space).** Let $X$ be a strong solution of the stochastic evolution equation with $F$ and $B$ bounded on bounded sets, and let $f : [0,T]\times H\to\mathbb{R}$ be $C^1$ in $t$ and twice Fréchet differentiable in $x$, with $\partial_xf$, $\partial_x^2f$ continuous and bounded on bounded sets. Then almost surely, for all $t$,
 
 $$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf+\langle\partial_xf,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)QB(X_s)^*\partial_x^2f\bigr)\Bigr)ds+\int_0^t\langle\partial_xf,B(X_s)\,dW^Q_s\rangle_H .
+f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf+\langle\partial_xf,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)\Sigma B(X_s)^*\partial_x^2f\bigr)\Bigr)ds+\int_0^t\langle\partial_xf,B(X_s)\,dW^\Sigma_s\rangle_H .
 $$
 
-*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial_x^2f\,B e_kQ^{1/2},Be_kQ^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
+*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial_x^2f\,B e_k\Sigma^{1/2},Be_k\Sigma^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
 
 **Definition.** For an $H$-valued diffusion with drift $F$ and noise coefficient $B$, the **Kolmogorov operator** is
 
 $$
-\mathcal{L}f(x) = \langle F(x),\partial_xf(x)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(x)QB(x)^*\partial_x^2f(x)\bigr),
+\mathcal{L}f(x) = \langle F(x),\partial_xf(x)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(x)\Sigma B(x)^*\partial_x^2f(x)\bigr),
 $$
 
-with domain the twice Fréchet differentiable functions with bounded derivatives; the equation $dX_t=AX_tdt+BdW^Q_t$ has the operator $\mathcal{L}$ with $F(x)=Ax$.
+with domain the twice Fréchet differentiable functions with bounded derivatives; the equation $dX_t=AX_tdt+BdW^\Sigma_t$ has the operator $\mathcal{L}$ with $F(x)=Ax$.
 
-**Corollary (backward Kolmogorov equation and the semigroup).** If $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $f$ bounded and continuous, then $u$ solves $\partial_tu=\mathcal{L}u$ in the weak sense, $\mathcal{L}$ is the generator of the transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ on the space of bounded continuous functions, and the semigroup is strongly continuous on the space of functions that are uniformly continuous on bounded sets.
+**Corollary (backward Kolmogorov equation and the semigroup).** If $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $f$ bounded and continuous, then $u$ solves $\partial_t u=\mathcal{L}u$ in the weak sense, $\mathcal{L}$ is the generator of the transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ on the space of bounded continuous functions, and the semigroup is strongly continuous on the space of functions that are uniformly continuous on bounded sets.
 
-*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial_tu=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case.
+*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial_t u=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case.
 
-**Theorem (Wong–Zakai).** Let $W^\varepsilon$ be a smooth approximation of the cylindrical Wiener process, obtained by convolution in time with an approximate identity, and let $X^\varepsilon$ solve the equation driven by $W^\varepsilon$ with the **Stratonovich** interpretation of the noise term. Then $X^\varepsilon\to X$ in probability in $C([0,T];H)$ as $\varepsilon\to0$, where $X$ solves the equation in the Stratonovich sense; if the equation is rewritten in the Itô form, the Itô drift acquires the correction $\frac12\sum_k(\partial_xB)(Be_kQ^{1/2})(Be_kQ^{1/2})$.
+**Theorem (Wong–Zakai).** Let $W^\varepsilon$ be a smooth approximation of the cylindrical Wiener process, obtained by convolution in time with an approximate identity, and let $X^\varepsilon$ solve the equation driven by $W^\varepsilon$ with the **Stratonovich** interpretation of the noise term. Then $X^\varepsilon\to X$ in probability in $C([0,T];H)$ as $\varepsilon\to0$, where $X$ solves the equation in the Stratonovich sense; if the equation is rewritten in the Itô form, the Itô drift acquires the correction $\frac12\sum_k(\partial_xB)(Be_k\Sigma^{1/2})(Be_k\Sigma^{1/2})$.
 
-*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial_xB)BQB^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation.
+*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial_xB)B\Sigma B^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation.
 
 ## The Stochastic Heat Equation and the Ornstein–Uhlenbeck Process
 
 **Example (the stochastic heat equation).** On a bounded interval $\mathcal{O}=(0,1)$ let $A=\Delta$ with Dirichlet boundary conditions, so that $A$ has eigenvalues $-\lambda_n=-n^2\pi^2$ and orthonormal eigenfunctions $\sin(n\pi x)$; consider
 
 $$
-du = \Delta u\,dt+dW^Q_t
+du = \Delta u\,dt+dW^\Sigma_t
 $$
 
-with covariance $Q$ diagonal in the eigenbasis, $Qe_n=q_ne_n$. The intrinsic solution is the stochastic convolution
+with covariance $\Sigma$ diagonal in the eigenbasis, $\Sigma e_n=q_ne_n$. The intrinsic solution is the stochastic convolution
 
 $$
-u(t) = S(t)u_0+\int_0^tS(t-s)\,dW^Q_s , \qquad S(t)e_n = e^{-n^2\pi^2t}e_n ,
+u(t) = S(t)u_0+\int_0^tS(t-s)\,dW^\Sigma_s , \qquad S(t)e_n = \exp(-n^2\pi^2t)e_n ,
 $$
 
 and the Hilbert–Schmidt condition for its square-integrability is
 
 $$
-\sum_{n\ge1}q_n\int_0^t e^{-2n^2\pi^2s}\,ds = \sum_{n\ge1}\frac{q_n\bigl(1-e^{-2n^2\pi^2t}\bigr)}{2n^2\pi^2}<\infty .
+\sum_{n\ge1}q_n\int_0^t \exp(-2n^2\pi^2s)\,ds = \sum_{n\ge1}\frac{q_n\bigl(1-\exp(-2n^2\pi^2t)\bigr)}{2n^2\pi^2}<\infty .
 $$
 
-For $Q=I$ this holds for the interval, where $\sum_nn^{-2}=\pi^2/6$ and the large-time trace is $\sum_n1/(2\pi^2n^2)=1/12$; in two dimensions the same computation gives $\sum_{(n,m)\neq(0,0)}(n^2+m^2)^{-1}$, which diverges logarithmically, so the cylindrical noise is not admissible on a planar domain in $L^2$, and the solution is then distribution-valued and requires the singular theory below. This is the quantitative form of the statement that the space-time white noise is rougher in higher dimension.
+For $\Sigma=I$ this holds for the interval, where $\sum_nn^{-2}=\pi^2/6$ and the large-time trace is $\sum_n1/(2\pi^2n^2)=1/12$; in two dimensions the same computation gives $\sum_{(n,m)\neq(0,0)}(n^2+m^2)^{-1}$, which diverges logarithmically, so the cylindrical noise is not admissible on a planar domain in $L^2$, and the solution is then distribution-valued and requires the singular theory below. This is the quantitative form of the statement that the space-time white noise is rougher in higher dimension.
 
-**Theorem (invariant measure of the linear equation).** Let $A$ generate an exponentially stable semigroup and let $Q$ be trace class. Then the solution of $dX_t = AX_t\,dt+dW^Q_t$ has, for every initial law, a limit law as $t\to\infty$, independent of the initial datum; it is the centred Gaussian measure $\mathcal{N}(0,Q_\infty)$ with covariance operator
+**Theorem (invariant measure of the linear equation).** Let $A$ generate an exponentially stable semigroup and let $\Sigma$ be trace class. Then the solution of $dX_t = AX_t\,dt+dW^\Sigma_t$ has, for every initial law, a limit law as $t\to\infty$, independent of the initial datum; it is the centred Gaussian measure $\mathcal{N}(0,\Sigma_\infty)$ with covariance operator
 
 $$
-Q_\infty = \int_0^\infty S(t)QS(t)^*\,dt ,
+\Sigma_\infty = \int_0^\infty S(t)\Sigma S(t)^*\,dt ,
 $$
 
-which is the unique solution of the Lyapunov equation $AQ_\infty+Q_\infty A^*+Q=0$; the measure is invariant for the transition semigroup, and the process is the infinite-dimensional **Ornstein–Uhlenbeck process**.
+which is the unique solution of the Lyapunov equation $A\Sigma_\infty+\Sigma_\infty A^*+\Sigma=0$; the measure is invariant for the transition semigroup, and the process is the infinite-dimensional **Ornstein–Uhlenbeck process**.
 
-*Proof.* The solution is $X_t=S(t)X_0+\int_0^tS(t-s)dW^Q_s$; the first term tends to $0$ in $L^2(\Omega;H)$ by the exponential stability, and the second is Gaussian with covariance $\int_0^tS(t-s)QS(t-s)^*ds$, which increases to $Q_\infty$ by the trace-class and stability hypotheses. For invariance, if $X_0\sim\mathcal{N}(0,Q_\infty)$ then $X_t$ is Gaussian with covariance $S(t)Q_\infty S(t)^*+\int_0^tS(t-s)QS(t-s)^*ds = Q_\infty$, the identity following from $Q_\infty=\int_0^\infty S(r)QS(r)^*dr$ and the semigroup law; differentiating that identity at $t=0$ gives the Lyapunov equation.
+*Proof.* The solution is $X_t=S(t)X_0+\int_0^tS(t-s)dW^\Sigma_s$; the first term tends to $0$ in $L^2(\Omega;H)$ by the exponential stability, and the second is Gaussian with covariance $\int_0^tS(t-s)\Sigma S(t-s)^*ds$, which increases to $\Sigma_\infty$ by the trace-class and stability hypotheses. For invariance, if $X_0\sim\mathcal{N}(0,\Sigma_\infty)$ then $X_t$ is Gaussian with covariance $S(t)\Sigma_\infty S(t)^*+\int_0^tS(t-s)\Sigma S(t-s)^*ds = \Sigma_\infty$, the identity following from $\Sigma_\infty=\int_0^\infty S(r)\Sigma S(r)^*dr$ and the semigroup law; differentiating that identity at $t=0$ gives the Lyapunov equation.
 
-**Example (the stochastic heat equation continued).** For the interval with $Q=I$ the invariant measure is Gaussian with covariance $Q_\infty$ diagonal in the sine basis with eigenvalues $\frac1{2\lambda_n}$, $\lambda_n=n^2\pi^2$; the invariant measure is thus the law of the Gaussian field with inverse covariance $(-2\Delta)$, formally $\exp\bigl(-\frac12\int|\nabla u|^2dx\bigr)$ up to normalisation, a Gaussian measure supported on $H^{1/2-\varepsilon}(\mathcal{O})$ for every $\varepsilon>0$ and not on $H^{1/2}$. The computation of the eigenvalues follows from the Lyapunov equation in the eigenbasis.
+**Example (the stochastic heat equation continued).** For the interval with $\Sigma=I$ the invariant measure is Gaussian with covariance $\Sigma_\infty$ diagonal in the sine basis with eigenvalues $\frac1{2\lambda_n}$, $\lambda_n=n^2\pi^2$; the invariant measure is thus the law of the Gaussian field with inverse covariance $(-2\Delta)$, formally $\exp\bigl(-\frac12\int|\nabla u|^2dx\bigr)$ up to normalisation, a Gaussian measure supported on $H^{1/2-\varepsilon}(\mathcal{O})$ for every $\varepsilon>0$ and not on $H^{1/2}$. The computation of the eigenvalues follows from the Lyapunov equation in the eigenbasis.
 
 **Remark (the nonlinear case).** A nonlinear equation $du=(\Delta u+f(u))dt+dW$ has a mild solution under a Lipschitz condition on $f$ by the general existence theorem. The invariant measure is no longer Gaussian, and its construction requires a different argument; the natural one is the identification of the measure as the (formal) Gibbs measure $\exp(-H(u))du$ with $H$ the energy of the deterministic equation, made rigorous by a mass-concentration or an integration-by-parts argument. The obstruction is the same as in the deterministic theory: the energy is not defined under the noise in the dimensions in which the noise is too rough.
 
@@ -170,10 +170,10 @@ which is the unique solution of the Lyapunov equation $AQ_\infty+Q_\infty A^*+Q=
 **Example (the stochastic Burgers equation).** On the interval, the equation
 
 $$
-du = \bigl(\nu u_{xx}+\tfrac12\partial_x(u^2)\bigr)dt+dW
+du = \bigl(\nu \partial_x^2 u+\tfrac12\partial_x(u^2)\bigr)dt+dW
 $$
 
-is the stochastic Burgers equation with viscosity $\nu>0$; for $Q=I$ the noise is admissible in one dimension and the Lipschitz-type theory applies after an integration by parts of the nonlinearity, while the limit $\nu\to0$ produces a singular stochastic equation for the potential in which the nonlinearity requires a renormalisation. This is the standard instance in which the smooth theory is available for the regularised equation and fails at the singular limit.
+is the stochastic Burgers equation with viscosity $\nu>0$; for $\Sigma=I$ the noise is admissible in one dimension and the Lipschitz-type theory applies after an integration by parts of the nonlinearity, while the limit $\nu\to0$ produces a singular stochastic equation for the potential in which the nonlinearity requires a renormalisation. This is the standard instance in which the smooth theory is available for the regularised equation and fails at the singular limit.
 
 **Example (the stochastic Navier–Stokes equation).** On a two-dimensional domain, the equation for a divergence-free velocity field,
 
@@ -191,7 +191,7 @@ $$
 
 a linear stochastic partial differential equation whose solution is a measure-valued process; the equation is linear despite the nonlinearity of the underlying filtering problem, and its well-posedness is obtained from the theory above with the noise coefficient $B(\rho)=\rho h$ acquiring the appropriate Hilbert–Schmidt structure. This is the standard bridge between the stochastic partial differential equations and the conditional expectations of the measure-theoretic article.
 
-**Example (the Feynman–Kac representation in infinite dimensions).** The solution of the backward Kolmogorov equation $\partial_tu=\mathcal{L}u$ for the infinite-dimensional Ornstein–Uhlenbeck operator admits the representation $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $X$ the Ornstein–Uhlenbeck process, and the Feynman–Kac formula with a potential holds verbatim in this setting, with the trace term of the Itô formula in place of the finite-dimensional Laplacian. The representation is the infinite-dimensional analogue of the formula of the preceding article.
+**Example (the Feynman–Kac representation in infinite dimensions).** The solution of the backward Kolmogorov equation $\partial_t u=\mathcal{L}u$ for the infinite-dimensional Ornstein–Uhlenbeck operator admits the representation $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $X$ the Ornstein–Uhlenbeck process, and the Feynman–Kac formula with a potential holds verbatim in this setting, with the trace term of the Itô formula in place of the finite-dimensional Laplacian. The representation is the infinite-dimensional analogue of the formula of the preceding article.
 
 ## Singular Equations
 
@@ -201,7 +201,7 @@ a linear stochastic partial differential equation whose solution is a measure-va
 
 ## Summary
 
-A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+F(X_t))dt+B(X_t)dW^Q_t$ in a Hilbert space, driven by a cylindrical or $Q$-Wiener process, with $A$ the generator of a strongly continuous semigroup and the noise coefficient Hilbert–Schmidt relative to the covariance $Q$. The stochastic integral against the $Q$-Wiener process is defined by the isometry $\mathbb{E}\|\int\Phi\,dW^Q\|^2=\mathbb{E}\int\|\Phi Q^{1/2}\|_{\mathrm{HS}}^2ds$, and the solution is the mild solution expressed through the stochastic convolution $W_A(t)=\int_0^tS(t-s)\Phi_s\,dW^Q_s$, which is Gaussian with covariance $\int_0^tS(t-s)\Phi_sQ\Phi_s^*S(t-s)^*ds$ and has continuous paths. Lipschitz coefficients give existence and uniqueness of the mild solution by Picard iteration; the infinite-dimensional Itô formula carries the trace correction $\frac12\operatorname{Tr}(BQB^*\partial^2f)$ and defines the Kolmogorov operator, whose transition semigroup has the expectations as its solutions and whose $L^2$ theory is the infinite-dimensional backward equation; the Wong–Zakai theorem identifies the Stratonovich formulation of the limit of smooth approximations. The stochastic heat equation is the prototype, the Hilbert–Schmidt condition holds for cylindrical noise in one dimension — where the trace converges with large-time value $1/12$ for the Dirichlet interval — and fails logarithmically in two dimensions; the linear equation has the Gaussian invariant measure $\mathcal{N}(0,Q_\infty)$ with $Q_\infty$ solving the Lyapunov equation. The stochastic Burgers, Navier–Stokes and Zakai equations illustrate the range of the theory, and the singular equations of the regularity-structures theory show the limit of the classical methods and the place of renormalisation.
+A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+F(X_t))dt+B(X_t)dW^\Sigma_t$ in a Hilbert space, driven by a cylindrical or $\Sigma$-Wiener process, with $A$ the generator of a strongly continuous semigroup and the noise coefficient Hilbert–Schmidt relative to the covariance $\Sigma$. The stochastic integral against the $\Sigma$-Wiener process is defined by the isometry $\mathbb{E}\|\int\Phi\,dW^\Sigma\|^2=\mathbb{E}\int\|\Phi \Sigma^{1/2}\|_{\mathrm{HS}}^2ds$, and the solution is the mild solution expressed through the stochastic convolution $W_A(t)=\int_0^tS(t-s)\Phi_s\,dW^\Sigma_s$, which is Gaussian with covariance $\int_0^tS(t-s)\Phi_s\Sigma\Phi_s^*S(t-s)^*ds$ and has continuous paths. Lipschitz coefficients give existence and uniqueness of the mild solution by Picard iteration; the infinite-dimensional Itô formula carries the trace correction $\frac12\operatorname{Tr}(B\Sigma B^*\partial^2f)$ and defines the Kolmogorov operator, whose transition semigroup has the expectations as its solutions and whose $L^2$ theory is the infinite-dimensional backward equation; the Wong–Zakai theorem identifies the Stratonovich formulation of the limit of smooth approximations. The stochastic heat equation is the prototype, the Hilbert–Schmidt condition holds for cylindrical noise in one dimension — where the trace converges with large-time value $1/12$ for the Dirichlet interval — and fails logarithmically in two dimensions; the linear equation has the Gaussian invariant measure $\mathcal{N}(0,\Sigma_\infty)$ with $\Sigma_\infty$ solving the Lyapunov equation. The stochastic Burgers, Navier–Stokes and Zakai equations illustrate the range of the theory, and the singular equations of the regularity-structures theory show the limit of the classical methods and the place of renormalisation.
 
 ## Summary of Notation
 
@@ -209,17 +209,17 @@ A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+
 |---|---|
 | $H$, $U$ | Separable Hilbert state and noise spaces |
 | $(e_k)$, $\beta_k$ | Orthonormal basis and independent Brownian motions |
-| $W_t$, $W^Q_t$ | Cylindrical and $Q$-Wiener processes |
-| $Q$, $q_k$ | Trace-class covariance operator and its eigenvalues |
+| $W_t$, $W^\Sigma_t$ | Cylindrical and $\Sigma$-Wiener processes |
+| $\Sigma$, $q_k$ | Trace-class covariance operator and its eigenvalues |
 | $L_2(U,H)$, $\|\cdot\|_{\mathrm{HS}}$ | Hilbert–Schmidt operators and their norm |
 | $S(t)$, $A$ | Semigroup and its generator |
 | $F$, $B$ | Drift nonlinearity and noise coefficient |
-| $dX=(AX+F)dt+B\,dW^Q$ | Stochastic evolution equation |
-| $W_A(t)$ | Stochastic convolution $\int_0^tS(t-s)\Phi_s\,dW^Q_s$ |
-| $Q_t$, $Q_\infty$ | Convolution covariance; invariant covariance |
+| $dX=(AX+F)dt+B\,dW^\Sigma$ | Stochastic evolution equation |
+| $W_A(t)$ | Stochastic convolution $\int_0^tS(t-s)\Phi_s\,dW^\Sigma_s$ |
+| $\Sigma_t$, $\Sigma_\infty$ | Convolution covariance; invariant covariance |
 | $\mathcal{L}$ | Kolmogorov operator with the trace correction |
 | $\xi$ | Space-time white noise |
-| Lyapunov | $AQ_\infty+Q_\infty A^*+Q=0$ |
+| Lyapunov | $A\Sigma_\infty+\Sigma_\infty A^*+\Sigma=0$ |
 
 ## Further Reading
 

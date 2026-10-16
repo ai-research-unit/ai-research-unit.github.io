@@ -19,7 +19,7 @@ $$
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies
 
 $$
-\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2 ,
+\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
 $$
 
 so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the conjugate transpose.
@@ -64,7 +64,7 @@ so the Frobenius norm of the regular matrix is twice the definite norm of the el
 
 **The automorphism group.** The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the unitary group $U(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $U(4)\times U(4)$ modulo the common centre, which is the part that also preserves the algebra structure.
 
-**The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $\tilde{G}=\{\tilde{A}:N(\tilde{A})=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:
+**The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $\tilde{G}=\{\tilde{A}:\langle\tilde{A}\rangle_{\natural}=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:
 
 $$
 \langle\tilde{A}\tilde{Q}\tilde{A}^{*},\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural},\qquad \tilde{A}\in\tilde{G}.
@@ -82,7 +82,7 @@ The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$
 
 **A Hermitian element.** Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde{Q}\rVert_E^2=8$.
 
-**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
+**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
 
 ## The Matrices
 
@@ -105,7 +105,7 @@ A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
 B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
 $$
 
-The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.
+The general element has trace $4Q_0$ and determinant $\langle\tilde Q\rangle_{\natural}^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.
 
 **The product, entry by entry.** A vector unit is anti-Hermitian, so $\mathsf{M}_4(e_2)^{\dagger}=-\mathsf{M}_4(e_2)$, and the product at the pair $e_1,e_2$ is
 
@@ -138,7 +138,7 @@ The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}
 
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the representation and its first properties
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the further reading of the regular representation
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear product on the algebra
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
+- *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear product on the algebra
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
 - *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the companion reading of the group
-- *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), for the restriction theory of the form
+- *Remarkable Subspaces under the General Plain Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), for the restriction theory of the form

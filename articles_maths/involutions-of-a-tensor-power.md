@@ -6,7 +6,7 @@ An involution of a linear space acts on every tensor power, on every symmetric p
 
 *Involutive Linear Spaces* states, among the induced involutions, the type of $T^{\otimes k}$ and of the operator induced on $\Lambda^{k}V$, and warns that the symmetric powers have no such formula; this article is the detailed owner of those statements, adding the flip, the decomposition of the tensor square into its symmetric and alternating parts, and the action of the involution on each. The multilinear spaces, the tensor product and the universal property are *Multilinear Spaces* and *The Balanced Product*; the symmetric and exterior algebras and the sign rule are the symmetric-algebra and the graded categories and are named only as the owners of what is not used here. The forms are Part II.
 
-Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $T$ is a linear involution of $V$ of type $(p,q)$, and $V^{\otimes k}$, $S^{k}V$ and $\Lambda^{k}V$ are the $k$-fold tensor, symmetric and exterior powers of $V$. The flip is $\tau : V\otimes V \to V\otimes V$, $\tau(x\otimes y) = y\otimes x$. No form and no topology is used.
+Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $T$ is a linear involution of $V$ of type $(n,m)$, and $V^{\otimes k}$, $S^{k}V$ and $\Lambda^{k}V$ are the $k$-fold tensor, symmetric and exterior powers of $V$. The flip is $\tau : V\otimes V \to V\otimes V$, $\tau(x\otimes y) = y\otimes x$. No form and no topology is used.
 
 ## The Tensor Power
 
@@ -57,7 +57,7 @@ with $0 \le k-j \le p$ and $0 \le j \le q$; for $k = n$ the operator is multipli
 
 ### The Symmetric Power
 
-**Remark (the symmetric powers have no closed type formula).** On $S^{k}V$ the induced involution multiplies a monomial $x_1\cdots x_k$ by the product of the eigenvalues, which is $\pm1$ according to the parity of the number of factors drawn from $V_-$ **counted with multiplicity**; the type is therefore the multiset count, not a single binomial sum, and it depends on the parities of the multiplicities. The smallest display is $S^{1}V = V$ with the involution $T$ of type $(p,q)$; in particular no statement of the form "the symmetric power is fixed" can hold. The exterior powers are the well-behaved family.
+**Remark (the symmetric powers have no closed type formula).** On $S^{k}V$ the induced involution multiplies a monomial $x_1\cdots x_k$ by the product of the eigenvalues, which is $\pm1$ according to the parity of the number of factors drawn from $V_-$ **counted with multiplicity**; the type is therefore the multiset count, not a single binomial sum, and it depends on the parities of the multiplicities. The smallest display is $S^{1}V = V$ with the involution $T$ of type $(n,m)$; in particular no statement of the form "the symmetric power is fixed" can hold. The exterior powers are the well-behaved family.
 
 **Proof.** The monomials in a basis of eigenvectors with repetition of total degree $k$ form a basis of $S^{k}V$, and the eigenvalue on a monomial is computed as for the tensor power; the count is the number of multisets of size $k$ drawn from the multiset of eigenvalues, which is not a product of binomial coefficients. The case $k=1$ gives back the space $V$ and the operator $T$.
 
@@ -67,7 +67,7 @@ with $0 \le k-j \le p$ and $0 \le j \le q$; for $k = n$ the operator is multipli
 
 ## Summary
 
-A linear involution $T$ of type $(p,q)$ induces on the $k$-fold tensor power the involution $T^{\otimes k}$, of type $(\sum_{j\ \mathrm{even}}\binom{k}{j}p^{k-j}q^{j}, \sum_{j\ \mathrm{odd}}\binom{k}{j}p^{k-j}q^{j})$ and trace $(p-q)^{k}$; on the $k$-th exterior power $\Lambda^{k}T$, of the analogous type with the binomials $\binom{p}{k-j}\binom{q}{j}$ and trace $\sum_j(-1)^j\binom{p}{k-j}\binom{q}{j}$, the top exterior power acting by $\det T = (-1)^{q}$; and on the symmetric power $S^{k}V$ it has no closed type formula, because the count is a multiset count, the case $S^{1}V = V$ displaying the failure. The maps $T^{\otimes k}$ assemble into an algebra automorphism of the tensor algebra of order two. The flip $\tau$ of the tensor square is an involution whose fixed and negated parts are the symmetric and the alternating squares, and $T\otimes T$ commutes with it, so it preserves both parts; the two involutions $S^{2}T$ and $\Lambda^{2}T$ are the restrictions. The sign rule on the flip is *Superalgebras and Graded Structures*.
+A linear involution $T$ of type $(n,m)$ induces on the $k$-fold tensor power the involution $T^{\otimes k}$, of type $(\sum_{j\ \mathrm{even}}\binom{k}{j}p^{k-j}q^{j}, \sum_{j\ \mathrm{odd}}\binom{k}{j}p^{k-j}q^{j})$ and trace $(p-q)^{k}$; on the $k$-th exterior power $\Lambda^{k}T$, of the analogous type with the binomials $\binom{p}{k-j}\binom{q}{j}$ and trace $\sum_j(-1)^j\binom{p}{k-j}\binom{q}{j}$, the top exterior power acting by $\det T = (-1)^{q}$; and on the symmetric power $S^{k}V$ it has no closed type formula, because the count is a multiset count, the case $S^{1}V = V$ displaying the failure. The maps $T^{\otimes k}$ assemble into an algebra automorphism of the tensor algebra of order two. The flip $\tau$ of the tensor square is an involution whose fixed and negated parts are the symmetric and the alternating squares, and $T\otimes T$ commutes with it, so it preserves both parts; the two involutions $S^{2}T$ and $\Lambda^{2}T$ are the restrictions. The sign rule on the flip is *Superalgebras and Graded Structures*.
 
 ## Summary of Notation
 
@@ -75,7 +75,7 @@ A linear involution $T$ of type $(p,q)$ induces on the $k$-fold tensor power the
 |---|---|
 | $F$ | the field of scalars, of characteristic not two |
 | $V$, $n$ | the space and its dimension |
-| $T$ | a linear involution of type $(p,q)$ |
+| $T$ | a linear involution of type $(n,m)$ |
 | $V^{\otimes k}$, $S^{k}V$, $\Lambda^{k}V$ | tensor, symmetric and exterior powers |
 | $T^{\otimes k}$ | the induced involution on $V^{\otimes k}$ |
 | $\Lambda^{k}T$, $S^{k}T$ | the induced involutions on $\Lambda^{k}V$, $S^{k}V$ |

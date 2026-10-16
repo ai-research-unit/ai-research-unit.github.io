@@ -14,7 +14,7 @@ $$
 \qquad
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_- ,
 $$
-of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12e_3$, whose Hermitian partner is $iT_3=\tfrac12ie_3$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=q/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12e_3$, whose Hermitian partner is $iT_3=\tfrac12ie_3$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -104,9 +104,9 @@ which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; 
 
 The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ with $D_\mu=\partial_\mu+i\kappa A_\mu$ and $\langle|\varphi|\rangle=v/\sqrt2$, is
 $$
-M_A=\frac{q v}{\hbar}=\kappa v ,
+M_A=\frac{ϙ v}{\hbar}=\kappa v ,
 $$
-as the Higgs companion derives; the standard $M_W=gv/2$ is the same formula with the effective charge $q=g/2$, because the W couples to the doublet through $T_3=\pm1/2$. The factor of one-half is the isospin of the scalar, not of the W. This distinction is the crux of the third section.
+as the Higgs companion derives; the standard $M_W=gv/2$ is the same formula with the effective charge $ϙ=g/2$, because the W couples to the doublet through $T_3=\pm1/2$. The factor of one-half is the isospin of the scalar, not of the W. This distinction is the crux of the third section.
 
 ### The Z Pole and the Effective Mixing Angle
 
@@ -124,7 +124,7 @@ The charged current interaction is
 $$
 \mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\left(W^+_\mu J^{+\mu}+\mathrm{h.c.}\right),
 \qquad
-J^+_\mu=\sum_{\text{doublets}}\bar\psi_{u}\gamma_\mu P_L\psi_{d},
+J^+_\mu=\sum_{\text{doublets}}\bar\psi_{\mathrm u}\gamma_\mu P_L\psi_{d},
 $$
 with $P_L=\tfrac12(1-\gamma_5)$ the left projector, and the sum running over the lepton and quark doublets with the appropriate quark mixing matrix. The neutral current interaction is
 $$
@@ -211,9 +211,9 @@ A massive vector has three polarizations, and the third — the longitudinal mod
 
 ## The Currents and the Vector-Like Obstruction
 
-The charged current interaction is chiral: the W couples to $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_3^fP_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
+The charged current interaction is chiral: the W couples to $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_3^fP_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article *Chiral Fermions in the Biquaternion Framework* shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.
 
-The electromagnetic current is a different case, and it is reached. The unbroken generator of the electroweak group is $Q=T_3+Y$, its gauge field is the photon, and the coupling is $e=g\sin\theta_W=g'\cos\theta_W$. The abelian gauge principle of the companion articles is the central phase, and the photon is the massless central-material combination. The framework reaches the photon exactly; it reaches the Z as a massive neutral material vector with a mixing angle that is imported; and it reaches the W as a massive charged adjoint excitation with a mass and a chiral coupling that are imported.
+The electromagnetic current is a different case, and it is reached. The unbroken generator of the electroweak group is $Ϙ=T_3+Y$, its gauge field is the photon, and the coupling is $e=g\sin\theta_W=g'\cos\theta_W$. The abelian gauge principle of the companion articles is the central phase, and the photon is the massless central-material combination. The framework reaches the photon exactly; it reaches the Z as a massive neutral material vector with a mixing angle that is imported; and it reaches the W as a massive charged adjoint excitation with a mass and a chiral coupling that are imported.
 
 ## The Gauge Self-Couplings
 
@@ -252,7 +252,7 @@ e=g\sin\theta_W=g'\cos\theta_W ,
 $$
 all hold in the standard theory and were verified as identities with the standard inputs ($v=246.22$ GeV from $G_F$); the measured masses, $M_W=80.377$ GeV and $M_Z=91.1876$ GeV, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.
 
-The charged current is chiral, $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
+The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.
 
 ## Summary of Notation
 
@@ -267,7 +267,7 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$, and th
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ | Compact gauge algebra |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12e_a$ | Commutator and generators |
 | $f^{abc}=2\varepsilon^{abc}$ | Structure constants of the compact factor, in the unnormalized basis $e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
-| $\kappa=q/\hbar$ | Framework gauge coupling |
+| $\kappa=ϙ/\hbar$ | Framework gauge coupling |
 | $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, $iT_3=\tfrac12ie_3$ | Cartan generator of the adjoint action |
 | $W^\pm\leftrightarrow e_1\pm ie_2$, $J_3 W^\pm=\pm W^\pm$ | Charged directions and their eigenvalues |
 | $Z_\mu=\cos\theta_W W^3_\mu-\sin\theta_W B_\mu$, $A_\mu=\sin\theta_W W^3_\mu+\cos\theta_W B_\mu$ | Neutral mixing |
@@ -276,8 +276,8 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$, and th
 | $\rho=M_W^2/(M_Z^2\cos^2\theta_W)=1$ | Tree-level relation for a doublet |
 | $e=g\sin\theta_W=g'\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
-| $M_A=\kappa v=q v/\hbar$ | Framework abelian mass from the central scalar |
-| $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$ | Charged current (chiral) |
+| $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
+| $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$ | Charged current (chiral) |
 | $J_Z^\mu=\sum_f\bar f\gamma^\mu(T_3^fP_L-Q_f\sin^2\theta_W)f$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa f^{abc}(\partial\mathcal{A})\mathcal{A}\mathcal{A}$, $\mathcal{L}_4\sim\kappa^2 f^{abe}f^{cde}\mathcal{A}^4$ | Trilinear and quartic self-couplings |
 | $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12M^2A_\mu A^\mu$ | Proca Lagrangian; $\partial_\mu A^\mu=0$ |
@@ -289,7 +289,7 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_u\gamma^\mu P_L\psi_d$, and th
 
 - S. L. Glashow, "Partial-symmetries of weak interactions," *Nuclear Physics* **22** (1961) 579–588, for the $SU(2)\times U(1)$ gauge structure and the neutral current.
 - S. Weinberg, "A model of leptons," *Physical Review Letters* **19** (1967) 1264–1266, for the electroweak Lagrangian, the mixing and the mass relations.
-- A. Salam, "Weak and electromagnetic interactions," in *Elementary Particle Theory*, ed. N. Svartholm (Almqvist and Wiksell, 1968), for the unified electroweak construction.
+- A. Salam, "Weak and electromagnetic interactions," in *Elementary Particle Theory*, ed. N. Svartholm (Almϙvist and Wiksell, 1968), for the unified electroweak construction.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the electroweak currents, the gauge self-couplings and the radiative corrections.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Higgs mechanism, the W and Z masses, the currents and the vertices.
 - T. W. B. Kibble, "Symmetry breaking in non-Abelian gauge theories," *Physical Review* **155** (1967) 1554–1561, for the non-abelian Higgs mechanism and the would-be Goldstone modes.

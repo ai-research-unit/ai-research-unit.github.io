@@ -74,7 +74,7 @@ and the ray **lands** at the limit $\lim_{t \to 0^+} \gamma_\theta(t)$, where $\
 
 **Proof sketch.** (a) is the theorem of Douady and Hubbard: a rational ray cannot accumulate on a continuum of points of $J$ without crossing the equipotentials, and the landing angle is constrained by the critical orbits; the argument uses the count of the rays in each annulus and the theory of the polynomial-like restrictions. (b) the continuous extension is the Carathéodory criterion of the previous section, and the local connectedness makes the extension onto $J$ a quotient map; the landing angles are finite because the equivalence is semiconjugate to the doubling map. (c) the identity $\varphi(P(z)) = \varphi(z)^d$ says that $P$ sends the ray of angle $\theta$ to the ray of angle $d\theta$, and the landing points respect the identification.
 
-**Example (the ray landings, computed).** For $z \mapsto z^2$ one has $\varphi(z) = z$ and the ray of angle $\theta$ is the radial line, landing at $e^{2\pi i\theta}$. For $z \mapsto z^2 - 2$ the Chebyshev conjugacy $z = w + w^{-1}$ gives $\varphi(z) = w$ for the branch at infinity, so the ray of angle $\theta$ lands at
+**Example (the ray landings, computed).** For $z \mapsto z^2$ one has $\varphi(z) = z$ and the ray of angle $\theta$ is the radial line, landing at $\exp(2\pi i\theta)$. For $z \mapsto z^2 - 2$ the Chebyshev conjugacy $z = w + w^{-1}$ gives $\varphi(z) = w$ for the branch at infinity, so the ray of angle $\theta$ lands at
 
 $$
 z(\theta) = 2\cos(2\pi\theta) .

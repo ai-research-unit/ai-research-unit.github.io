@@ -49,7 +49,7 @@ $$
 \langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)
 $$
 
-is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the **normalised** representation $\tilde\sigma(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces, normalised once and for all; with the type $\tilde\sigma^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$
+is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the **normalised** representation $\sigma^{\mathrm{norm}}(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces, normalised once and for all; with the type $\sigma^{\mathrm{norm}}^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$
 
 $$
 \langle f_1(gh), f_2(gh)\rangle_V = \langle \sigma(h)^{-1}f_1(g), \sigma(h)^{-1}f_2(g)\rangle_V = \langle f_1(g), f_2(g)\rangle_V ,
@@ -63,9 +63,9 @@ $$
 \langle g_0\cdot f_1, g_0\cdot f_2\rangle = \int_{G/H}\langle f_1(g_0^{-1}g), f_2(g_0^{-1}g)\rangle_V\, d\nu(gH) = \int_{G/H}\langle f_1(g), f_2(g)\rangle_V\, d(g_0\cdot\nu)(gH) ,
 $$
 
-so invariance of the inner product is exactly invariance of $\nu$; this is the case $\Delta_G|_H = \Delta_H$ by the criterion of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces. In the general case the Radon–Nikodym factor contributed by the quasi-invariant $\nu$ is compensated by the half-density factor in $\tilde\sigma$, which is the standard computation of the space of half-densities; the two normalisations agree when the criterion holds, since then $\Delta_G|_H = \Delta_H$ and $\tilde\sigma = \sigma$. Changing $\nu$ to an equivalent quasi-invariant measure multiplies the inner product by a positive continuous density and does not change the unitary equivalence class of the induced representation.
+so invariance of the inner product is exactly invariance of $\nu$; this is the case $\Delta_G|_H = \Delta_H$ by the criterion of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces. In the general case the Radon–Nikodym factor contributed by the quasi-invariant $\nu$ is compensated by the half-density factor in $\sigma^{\mathrm{norm}}$, which is the standard computation of the space of half-densities; the two normalisations agree when the criterion holds, since then $\Delta_G|_H = \Delta_H$ and $\sigma^{\mathrm{norm}} = \sigma$. Changing $\nu$ to an equivalent quasi-invariant measure multiplies the inner product by a positive continuous density and does not change the unitary equivalence class of the induced representation.
 
-**Remark.** The previous proof is the one place where the modular functions enter the construction. The standard convention, followed here, is to induce from the normalised representation $\tilde\sigma$, so that the induced inner product is genuinely invariant; the article states the results for $\sigma$ and notes where the normalisation is required. When $\Delta_G|_H = \Delta_H$ — in particular when $G$ is unimodular, and in particular for a compact $H$ — no normalisation is needed and $\sigma$ may be induced as it stands.
+**Remark.** The previous proof is the one place where the modular functions enter the construction. The standard convention, followed here, is to induce from the normalised representation $\sigma^{\mathrm{norm}}$, so that the induced inner product is genuinely invariant; the article states the results for $\sigma$ and notes where the normalisation is required. When $\Delta_G|_H = \Delta_H$ — in particular when $G$ is unimodular, and in particular for a compact $H$ — no normalisation is needed and $\sigma$ may be induced as it stands.
 
 ### The Balanced-Product Realisation
 
@@ -75,7 +75,7 @@ $$
 C_c(G) \otimes_{\mathbb{C}[H]} V
 $$
 
-is the quotient of the tensor product $C_c(G)\otimes_{\mathbb{C}} V$ by the relations $f \otimes \sigma(h)v = (f \cdot h) \otimes v$ for $h \in H$. Left translation of the first factor makes it a left $\mathbb{C}[G]$-module, hence a representation of $G$; when a half-density normalisation is in force it is applied to the second factor, replacing $\sigma$ by $\tilde\sigma$. The result is a representation of $G$, and the module structure $(f\cdot h)(g) = f(gh)$ is the one for which the relations are those of the equivariance condition below.
+is the quotient of the tensor product $C_c(G)\otimes_{\mathbb{C}} V$ by the relations $f \otimes \sigma(h)v = (f \cdot h) \otimes v$ for $h \in H$. Left translation of the first factor makes it a left $\mathbb{C}[G]$-module, hence a representation of $G$; when a half-density normalisation is in force it is applied to the second factor, replacing $\sigma$ by $\sigma^{\mathrm{norm}}$. The result is a representation of $G$, and the module structure $(f\cdot h)(g) = f(gh)$ is the one for which the relations are those of the equivariance condition below.
 
 **Theorem (the two realisations agree).** There is a canonical isomorphism of $\mathbb{C}[G]$-modules between the balanced product and the space
 

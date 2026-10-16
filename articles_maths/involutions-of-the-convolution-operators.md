@@ -14,7 +14,7 @@ anti-automorphism of the convolution algebra; the correspondence $k\mapsto T_k$ 
 the operator. This is the fourth article of the `* Operator` material of this category, and it is the group
 analogue of the adjoint of an integral operator: the kernel of a convolution operator is $k(x-y)$, and the
 conjugate transpose kernel is exactly $k^*(x-y)$. On the Fourier side, where the operator is multiplication
-by the multiplier $\hat k$, the adjoint is multiplication by the conjugate multiplier $\overline{\hat k}$, and
+by the multiplier $\mathcal F k$, the adjoint is multiplication by the conjugate multiplier $\overline{\mathcal F k}$, and
 the operator is unitary exactly when the multiplier has modulus one — the **unitary multipliers**, which are
 the unitary convolution operators and the group they form.
 
@@ -22,7 +22,7 @@ The article is the third of the `* Operator Theory` group of *Foundations of Ana
 are *Convolution Operators*, the second article of the first group of this category, for the convolution
 operator, its multiplier and its boundedness; *The Integral Operator* for the kernel form; *The Fourier
 Operator* for the unitary transform and the Plancherel theorem; *The Fourier Transform and Conjugate
-Symmetry* for the involution on functions and the identity $\widehat{f^*}=\overline{\hat f}$; *Hermitian
+Symmetry* for the involution on functions and the identity $\mathcal F(f^*)=\overline{\mathcal F f}$; *Hermitian
 Measures and Complex Measures* for the Hermitian and positive measures; *The Adjoint of an Integral Operator*,
 the previous article of this group, for the adjoint and the marks; and *Banach and Hilbert Spaces*, later in
 this Part, for the adjoint of a bounded operator and the unitary operators, quoted as established. The
@@ -128,8 +128,8 @@ $T_{k^*}=T_k^\dagger$ itself.
 
 **Example (the Dirac profiles).** The profile $\delta_a$ gives the shift $T_{\delta_a}=L_a$, and
 $\delta_a^*=\delta_{-a}$, so $L_a^\dagger=L_{-a}$, as the translation invariance of the pairing requires.
-The profile $k(x)=\mathbf 1_{[0,\infty)}(x)e^{-x}$ on $\mathbb R$ has the involution
-$k^*(x)=\mathbf 1_{(-\infty,0]}(x)e^{x}$, and $T_k$ is the operator that integrates the exponential weight
+The profile $k(x)=\mathbf 1_{[0,\infty)}(x)\exp(-x)$ on $\mathbb R$ has the involution
+$k^*(x)=\mathbf 1_{(-\infty,0]}(x)\exp(x)$, and $T_k$ is the operator that integrates the exponential weight
 forward, with $T_{k^*}$ integrating it backward.
 
 ## The Fourier Multiplier Form
@@ -138,21 +138,21 @@ forward, with $T_{k^*}$ integrating it backward.
 
 **Theorem.** On the Fourier side the convolution operator is the multiplication operator
 $$
-T_k=\mathcal F^{-1}M_{\hat k}\mathcal F,\qquad (M_{\hat k}h)(\xi)=\hat k(\xi)h(\xi) ,
+T_k=\mathcal F^{-1}M_{\mathcal F k}\mathcal F,\qquad (M_{\mathcal F k}h)(\xi)=(\mathcal F k)(\xi)h(\xi) ,
 $$
 and the adjoint is the multiplication by the conjugate multiplier,
 $$
-T_k^\dagger=\mathcal F^{-1}M_{\overline{\hat k}}\mathcal F,\qquad \widehat{k^*}=\overline{\hat k} ,
+T_k^\dagger=\mathcal F^{-1}M_{\overline{\mathcal F k}}\mathcal F,\qquad \mathcal F(k^*)=\overline{\mathcal F k} ,
 $$
-so that the operator is self-adjoint exactly when $\hat k$ is real, skew-adjoint exactly when $\hat k$ is
+so that the operator is self-adjoint exactly when $\mathcal F k$ is real, skew-adjoint exactly when $\mathcal F k$ is
 purely imaginary, and normal for every $k$.
 
-**Proof.** The convolution theorem gives $\widehat{k*f}=\hat k\hat f$, so $\mathcal F$ intertwines $T_k$
-with the multiplication by $\hat k$; the Fourier transform is unitary by Plancherel, so the adjoint of
-$\mathcal F^{-1}M_{\hat k}\mathcal F$ is $\mathcal F^{-1}M_{\hat k}^\dagger\mathcal F$, and the adjoint of a
+**Proof.** The convolution theorem gives $\mathcal F(k*f)=\mathcal F k\,\mathcal F f$, so $\mathcal F$ intertwines $T_k$
+with the multiplication by $\mathcal F k$; the Fourier transform is unitary by Plancherel, so the adjoint of
+$\mathcal F^{-1}M_{\mathcal F k}\mathcal F$ is $\mathcal F^{-1}M_{\mathcal F k}^\dagger\mathcal F$, and the adjoint of a
 multiplication operator is the multiplication by the conjugate function. The identity
-$\widehat{k^*}=\overline{\hat k}$ is the conjugate-symmetry theorem of *The Fourier Transform and Conjugate
-Symmetry*; the self-adjoint and skew-adjoint cases are the reality and the pure-imaginariness of $\hat k$, and
+$\mathcal F(k^*)=\overline{\mathcal F k}$ is the conjugate-symmetry theorem of *The Fourier Transform and Conjugate
+Symmetry*; the self-adjoint and skew-adjoint cases are the reality and the pure-imaginariness of $\mathcal F k$, and
 normality is automatic for a multiplication operator.
 
 **Example (the Hilbert and Riesz transforms).** The Hilbert transform of *The Fourier Transform and
@@ -164,23 +164,23 @@ unitary after the sign. The examples show both extremities of the multiplier dic
 
 ### The Unitary Multipliers
 
-**Theorem.** Let $k\in L^1(\mathbb R^n)$ with $\hat k\in L^\infty$. Then the convolution operator $T_k$ is
+**Theorem.** Let $k\in L^1(\mathbb R^n)$ with $\mathcal F k\in L^\infty$. Then the convolution operator $T_k$ is
 unitary on $L^2$ if and only if the multiplier is unimodular,
 $$
-T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert\hat k(\xi)\rvert=1\ \text{for almost every }\xi ,
+T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert(\mathcal F k)(\xi)\rvert=1\ \text{for almost every }\xi ,
 $$
 and the unitary convolution operators form a group under composition, the **group of unitary multipliers**;
 under the Fourier transform it is the group of unimodular functions that arise as transforms of profiles.
 
 **Proof.** A multiplication operator $M_m$ is unitary exactly when $\lvert m\rvert=1$ almost everywhere, so
-the statement is the unitarity of $M_{\hat k}$ transported by the unitary $\mathcal F$; the group property is
+the statement is the unitarity of $M_{\mathcal F k}$ transported by the unitary $\mathcal F$; the group property is
 composition and the invariance of unimodularity, and the conjugation identifies it with the group of
 unimodular multipliers. For the finite and discrete instances the same proof applies with the discrete
 Fourier transform, and the group is the unitary group of the finite convolution algebra.
 
 **Example (the discrete and periodic cases).** On $\mathbb Z$ the involution is $k^*(n)=\overline{k(-n)}$
-and the multiplier is the function on the circle $\hat k(\theta)=\sum_nk(n)e^{-in\theta}$; the shift
-$k=\delta_m$ has $\hat k(\theta)=e^{-im\theta}$, of modulus one, and $T_{\delta_m}$ is unitary. On a finite
+and the multiplier is the function on the circle $(\mathcal F k)(\theta)=\sum_nk(n)\exp(-in\theta)$; the shift
+$k=\delta_m$ has $(\mathcal F k)(\theta)=\exp(-im\theta)$, of modulus one, and $T_{\delta_m}$ is unitary. On a finite
 abelian group the same dictionary holds with the discrete Fourier transform, and the unitary multipliers are
 the profiles whose transform has modulus one.
 
@@ -205,10 +205,10 @@ adjoint $T_k^\dagger=T_{k^*}$ with the involution $k^*(x)=\overline{k(-x)}$, whi
 transpose of the kernel $K(x,y)=k(x-y)$; the involution on the profiles is conjugate-linear, involutive, an
 isometric anti-automorphism of the convolution, $(k*l)^*=l^**k^*$, and the correspondence $k\mapsto T_k$
 carries it to the adjoint, being a $\ast$-homomorphism of the convolution algebra into the bounded operators.
-On the Fourier side the operator is multiplication by $\hat k$, the adjoint is multiplication by
-$\overline{\hat k}$ since $\widehat{k^*}=\overline{\hat k}$, and the operator is self-adjoint exactly for
-real $\hat k$, skew-adjoint exactly for purely imaginary $\hat k$ and unitary exactly for unimodular
-$\hat k$; the unitary convolution operators are the **unitary multipliers**, and they form a group under
+On the Fourier side the operator is multiplication by $\mathcal F k$, the adjoint is multiplication by
+$\overline{\mathcal F k}$ since $\mathcal F(k^*)=\overline{\mathcal F k}$, and the operator is self-adjoint exactly for
+real $\mathcal F k$, skew-adjoint exactly for purely imaginary $\mathcal F k$ and unitary exactly for unimodular
+$\mathcal F k$; the unitary convolution operators are the **unitary multipliers**, and they form a group under
 composition, identified by the Fourier transform with the group of unimodular multipliers. The Hilbert
 transform and the Riesz transforms are the skew-adjoint unimodular examples, and the Hermitian measures are
 the self-adjoint measure-profiles. On a non-unimodular group the involution carries the modular function and
@@ -224,8 +224,8 @@ Groups*.
 | $k^*(x)=\overline{k(-x)}$ | Involution of a profile |
 | $K(x,y)=k(x-y)$ | Kernel of the convolution operator |
 | $T_k^\dagger=T_{k^*}$ | Adjoint of the convolution operator |
-| $\widehat{k^*}=\overline{\hat k}$ | Involution on the Fourier side |
-| $\hat k$ real / purely imaginary / unimodular | self-adjoint / skew-adjoint / unitary $T_k$ |
+| $\mathcal F(k^*)=\overline{\mathcal F k}$ | Involution on the Fourier side |
+| $\mathcal F k$ real / purely imaginary / unimodular | self-adjoint / skew-adjoint / unitary $T_k$ |
 | unitary multipliers | The unitary convolution operators under composition |
 | $f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$ | The general-group involution (forward reference) |
 

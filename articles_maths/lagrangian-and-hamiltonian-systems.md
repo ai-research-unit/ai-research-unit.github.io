@@ -99,7 +99,7 @@ the acceleration of the contact point lying along the heading and the heading tu
 
 **Theorem (the energy of a non-holonomic system).** For an autonomous Lagrangian and a constraint that is homogeneous in the velocities, the energy $E=\dot q^j\partial L/\partial\dot q^j-L$ is conserved along the solutions of the Lagrange–d'Alembert equations, even though the system has no stationary-action principle.
 
-*Proof.* Multiply the equation by $\dot q^j$ and sum over $j$: the multiplier term contributes $\lambda_aA^a_j\dot q^j=0$, by the constraint. Hence $\dot q^j\bigl(\frac{d}{dt}L_{\dot q^j}-L_{q^j}\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+L_t$; with $L_t=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent.
+*Proof.* Multiply the equation by $\dot q^j$ and sum over $j$: the multiplier term contributes $\lambda_aA^a_j\dot q^j=0$, by the constraint. Hence $\dot q^j\bigl(\frac{d}{dt}\partial_{\dot q^j}L-\partial_{q^j}L\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+\partial_t L$; with $\partial_t L=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent.
 
 The multiplier structure — an unknown function determined by the constraint rather than eliminated — is the same one that the constrained problem of the calculus of variations exhibits, and it is the finite-dimensional form of the costate of optimal control, where the constraint is a differential equation for the state rather than a velocity relation; the article of this Part on optimal control treats that case, and the same multiplier rule produces the costate there.
 
@@ -162,25 +162,25 @@ $$
 \dot q^i = \frac{\partial H}{\partial p_i}, \qquad \dot p_i = -\frac{\partial H}{\partial q^i} .
 $$
 
-*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $\dot q$; the envelope theorem gives $H_{p_i}=\dot q^i$ and $H_{q^i} = -L_{q^i}$, so that $\dot p_i = \frac{d}{dt}L_{\dot q^i}=L_{q^i}=-H_{q^i}$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,\dot q)$ to $(q,p)$ a diffeomorphism.
+*Proof.* The Legendre transform of the calculus of variations, computed for the case in which $L$ is convex in $\dot q$; the envelope theorem gives $\partial_{p_i}H=\dot q^i$ and $\partial_{q^i}H = -\partial_{q^i}L$, so that $\dot p_i = \frac{d}{dt}\partial_{\dot q^i}L=\partial_{q^i}L=-\partial_{q^i}H$ along a solution. The invertibility of $\mathbb{F}L$ makes the change of variables from $(q,\dot q)$ to $(q,p)$ a diffeomorphism.
 
 **Remark (the modified Hamilton principle).** Hamilton's equations follow from a variational principle in which the coordinates and the momenta are varied independently. For the **modified Lagrangian**
 
 $$
-\tilde L(q,p,\dot q,\dot p) = \sum_i p_i\dot q^i - H(q,p,t) ,
+L^{\mathrm{mod}}(q,p,\dot q,\dot p) = \sum_i p_i\dot q^i - H(q,p,t) ,
 $$
 
-the action $\int\tilde L\,dt$ has as its Euler–Lagrange equations the first-order system
+the action $\intL^{\mathrm{mod}}\,dt$ has as its Euler–Lagrange equations the first-order system
 
 $$
-\frac{d}{dt}\frac{\partial\tilde L}{\partial\dot q^i}-\frac{\partial\tilde L}{\partial q^i}=0
-\quad\Longrightarrow\quad \dot p_i=-H_{q^i} ,
+\frac{d}{dt}\frac{\partialL^{\mathrm{mod}}{\partial\dot q^i}-\frac{\partialL^{\mathrm{mod}}{\partial q^i}=0
+\quad\Longrightarrow\quad \dot p_i=-\partial_{q^i}H ,
 \qquad
-\frac{d}{dt}\frac{\partial\tilde L}{\partial\dot p_i}-\frac{\partial\tilde L}{\partial p_i}=0
-\quad\Longrightarrow\quad \dot q^i=H_{p_i} ,
+\frac{d}{dt}\frac{\partialL^{\mathrm{mod}}{\partial\dot p_i}-\frac{\partialL^{\mathrm{mod}}{\partial p_i}=0
+\quad\Longrightarrow\quad \dot q^i=\partial_{p_i}H ,
 $$
 
-because $\partial\tilde L/\partial\dot q^i=p_i$, $\partial\tilde L/\partial q^i=-H_{q^i}$, $\partial\tilde L/\partial\dot p_i=0$ and $\partial\tilde L/\partial p_i=\dot q^i-H_{p_i}$. The principle $\delta\int(\sum_ip_i\dot q^i-H)\,dt=0$, with independent variations of $q$ and $p$, is therefore an equivalent statement of the Hamiltonian equations, and it is the form in which the Hamiltonian formalism is the stationarity of an action. The two equations differ in kind: the variation in $p$ is algebraic in $\dot q$ and reproduces the Legendre transform, $\dot q^i=H_{p_i}$, while the variation in $q$ carries the dynamics. The modified principle is not the Lagrangian principle of the first part of this article, because $\tilde L$ is a function on the enlarged space of $q,p,\dot q$ and is not a Lagrangian on the tangent bundle of $Q$; its independent variation of $p$ is the feature that the ordinary principle does not have.
+because $\partialL^{\mathrm{mod}}/\partial\dot q^i=p_i$, $\partialL^{\mathrm{mod}}/\partial q^i=-\partial_{q^i}H$, $\partialL^{\mathrm{mod}}/\partial\dot p_i=0$ and $\partialL^{\mathrm{mod}}/\partial p_i=\dot q^i-\partial_{p_i}H$. The principle $\delta\int(\sum_ip_i\dot q^i-H)\,dt=0$, with independent variations of $q$ and $p$, is therefore an equivalent statement of the Hamiltonian equations, and it is the form in which the Hamiltonian formalism is the stationarity of an action. The two equations differ in kind: the variation in $p$ is algebraic in $\dot q$ and reproduces the Legendre transform, $\dot q^i=\partial_{p_i}H$, while the variation in $q$ carries the dynamics. The modified principle is not the Lagrangian principle of the first part of this article, because $L^{\mathrm{mod}}$ is a function on the enlarged space of $q,p,\dot q$ and is not a Lagrangian on the tangent bundle of $Q$; its independent variation of $p$ is the feature that the ordinary principle does not have.
 
 **Example (the mechanical Lagrangian).** For a Riemannian metric $g$ on $Q$ and a potential $V : Q\to\mathbb{R}$, the Lagrangian
 
@@ -220,13 +220,13 @@ and the integral curves of $X$ are exactly the velocity lifts of the solutions o
 $$
 \mathcal{L}_X\theta_L = d(\iota_X\theta_L)+\iota_X d\theta_L = d(p_i\dot q^i)+\alpha_i\,dq^i-\dot q^i\,dp_i = p_i\,d\dot q^i+\alpha_i\,dq^i ,
 $$
-the last step using $d(p_i\dot q^i)=\dot q^i\,dp_i+p_i\,d\dot q^i$. Equating coefficients with those of $dL = L_{q^i}dq^i+L_{\dot q^i}d\dot q^i$ gives $p_i=L_{\dot q^i}$, which is the definition of $\theta_L$, and $\alpha_i=L_{q^i}$, that is
+the last step using $d(p_i\dot q^i)=\dot q^i\,dp_i+p_i\,d\dot q^i$. Equating coefficients with those of $dL = \partial_{q^i}L\,dq^i+\partial_{\dot q^i}L\,d\dot q^i$ gives $p_i=\partial_{\dot q^i}L$, which is the definition of $\theta_L$, and $\alpha_i=\partial_{q^i}L$, that is
 $$
 \frac{d}{dt}\Bigl(\frac{\partial L}{\partial\dot q^i}\Bigr)=\frac{\partial L}{\partial q^i}
 $$
-along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alpha_i=L_{q^i}$ is the linear system
+along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alpha_i=\partial_{q^i}L$ is the linear system
 $$
-\sum_j L_{\dot q^i\dot q^j}\,X(\dot q^j) = L_{q^i}-\dot q^jL_{\dot q^i q^j}
+\sum_j \partial_{\dot q^i}\partial_{\dot q^j}L\,X(\dot q^j) = \partial_{q^i}L-\dot q^j\partial_{q^j}\partial_{\dot q^i}L
 $$
 for the accelerations, with the Hessian as coefficient matrix; regularity makes the matrix invertible, so the accelerations, and with them $X$, are unique.
 
@@ -433,7 +433,7 @@ $$
 \frac{\partial\rho}{\partial t}+\{\rho,H\}=0 .
 $$
 
-A distribution of initial conditions is therefore transported by the flow exactly when it satisfies this equation, and its **stationary** solutions, those with $\partial_t\rho=0$, are the densities conserved by the flow. Every function of the Hamiltonian is one, since $\{f(H),H\}=f'(H)\{H,H\}=0$, in particular the Gibbs density $e^{-\beta H}/Z$ of statistical mechanics; the volume form itself is the case $\rho$ constant, and the equation is the differential form of the incompressibility of the flow.
+A distribution of initial conditions is therefore transported by the flow exactly when it satisfies this equation, and its **stationary** solutions, those with $\partial_t\rho=0$, are the densities conserved by the flow. Every function of the Hamiltonian is one, since $\{f(H),H\}=f'(H)\{H,H\}=0$, in particular the Gibbs density $\exp(-\beta H)/Z$ of statistical mechanics; the volume form itself is the case $\rho$ constant, and the equation is the differential form of the incompressibility of the flow.
 
 **Theorem (Noether, Hamiltonian form).** Let a Lie group $G$ act on the symplectic manifold $(M,\omega)$ preserving $\omega$ and the Hamiltonian $H$, with infinitesimal generators $\xi_{\mathrm{G}}$ and a momentum map $J : M\to\mathrm{G}^*$ satisfying $d\langle J,\xi\rangle = \iota_{\xi_M}\omega$. Then $J$ is conserved along the flow of $H$: $\{J_\xi,H\}=0$ for every $\xi\in\mathrm{G}$.
 
@@ -467,11 +467,11 @@ A distribution of initial conditions is therefore transported by the flow exactl
 
 A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,\dot q,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\dot q^i$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\dot q^i-L$ and Hamilton's equations $\dot q=\partial H/\partial p$, $\dot p=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq^i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\theta_L=p_i\,dq^i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\theta_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.
 
-The mechanical origin of the equation is D'Alembert's principle, the statement that the impressed forces and the inertial terms do equal virtual work across every displacement consistent with the constraints; on generalised coordinates it becomes $\frac{d}{dt}T_{\dot q^j}-T_{q^j}=Q_j$, and for conservative forces the Euler–Lagrange equation of $L=T-V$. A constraint of the form $\phi(q,t)=0$ is holonomic and is used by elimination; a velocity constraint $A^a_j(q)\dot q^j=0$ with no integrating factor is non-holonomic, and it is imposed by multipliers in the Lagrange–d'Alembert equations $\frac{d}{dt}L_{\dot q^j}-L_{q^j}=\lambda_aA^a_j$, which are not the stationarity of an action but the transcription of D'Alembert's principle. The energy is still conserved for an autonomous Lagrangian and a velocity-homogeneous constraint, because the multiplier term is annihilated by the constraint; and the multiplier rule is the finite-dimensional form of the costate of optimal control.
+The mechanical origin of the equation is D'Alembert's principle, the statement that the impressed forces and the inertial terms do equal virtual work across every displacement consistent with the constraints; on generalised coordinates it becomes $\frac{d}{dt}\partial_{\dot q^j}T-\partial_{q^j}T=Q_j$, and for conservative forces the Euler–Lagrange equation of $L=T-V$. A constraint of the form $\phi(q,t)=0$ is holonomic and is used by elimination; a velocity constraint $A^a_j(q)\dot q^j=0$ with no integrating factor is non-holonomic, and it is imposed by multipliers in the Lagrange–d'Alembert equations $\frac{d}{dt}\partial_{\dot q^j}L-\partial_{q^j}L=\lambda_aA^a_j$, which are not the stationarity of an action but the transcription of D'Alembert's principle. The energy is still conserved for an autonomous Lagrangian and a velocity-homogeneous constraint, because the multiplier term is annihilated by the constraint; and the multiplier rule is the finite-dimensional form of the costate of optimal control.
 
 A change of phase-space variables preserving the symplectic form is a **canonical transformation**, and it is characterised equally by the preservation of the Poisson bracket, by the canonical brackets $\{Q^i,Q^j\}=\{P_i,P_j\}=0$, $\{Q^i,P_j\}=\delta^i_j$ of the images, by the preservation of the form of Hamilton's equations, and by a symplectic Jacobian. Locally such a transformation is generated by a function of one old and one new coordinate per degree of freedom, in one of the four types $F_1(q,Q)$, $F_2(q,P)$, $F_3(p,Q)$, $F_4(p,P)$ related by Legendre transforms, with $p=F_q$ and $P=-F_Q$ for the first; the identity, the coordinate scaling, the exchange of coordinates and momenta and the quadratic shear of the momenta are the elementary instances. A generating function depending on the time shifts the Hamiltonian by its partial derivative, $K=H+F_t$; requiring the new Hamiltonian to vanish turns this into the Hamilton–Jacobi equation of the calculus of variations, and the action read as a function of the coordinates and the new momenta is then the generating function that trivialises the flow. The canonical transformations form a group whose identity component is generated by the Hamiltonian flows, and the Poisson bracket is its Lie algebra.
 
-Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial_tg$, so the constants of the motion are the functions with $\{g,H\}=0$, and the bracket of two of them is a third by Poisson's theorem: the constants of the motion form the Lie subalgebra that centralises $H$. The Hamiltonian equations are also the Euler–Lagrange equations of the modified Lagrangian $\tilde L=\sum_ip_i\dot q^i-H$, varied in $q$ and in $p$ independently, and they are the flow of the infinitesimal canonical transformation generated by $H$: a generator $\sigma$ displaces every function by $\varepsilon\{\cdot,\sigma\}$, and $\sigma$ is conserved exactly when it leaves $H$ invariant, which is the infinitesimal reciprocity of symmetry and conservation and reproduces the momentum map. The preservation of phase volume has the local form of Liouville's equation $\partial_t\rho+\{\rho,H\}=0$ for a density, whose stationary solutions are the conserved densities, every function of the Hamiltonian among them. In one degree of freedom the level curves of $H$ are the phase portrait, with centres at the definite critical points and saddles at the indefinite ones, and the separatrix through a saddle separates libration from rotation, as the pendulum illustrates.
+Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial_tg$, so the constants of the motion are the functions with $\{g,H\}=0$, and the bracket of two of them is a third by Poisson's theorem: the constants of the motion form the Lie subalgebra that centralises $H$. The Hamiltonian equations are also the Euler–Lagrange equations of the modified Lagrangian $L^{\mathrm{mod}}=\sum_ip_i\dot q^i-H$, varied in $q$ and in $p$ independently, and they are the flow of the infinitesimal canonical transformation generated by $H$: a generator $\sigma$ displaces every function by $\varepsilon\{\cdot,\sigma\}$, and $\sigma$ is conserved exactly when it leaves $H$ invariant, which is the infinitesimal reciprocity of symmetry and conservation and reproduces the momentum map. The preservation of phase volume has the local form of Liouville's equation $\partial_t\rho+\{\rho,H\}=0$ for a density, whose stationary solutions are the conserved densities, every function of the Hamiltonian among them. In one degree of freedom the level curves of $H$ are the phase portrait, with centres at the definite critical points and saddles at the indefinite ones, and the separatrix through a saddle separates libration from rotation, as the pendulum illustrates.
 
 ## Summary of Notation
 
@@ -479,7 +479,7 @@ Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial_tg
 |---|---|
 | $Q$, $TQ$, $T^*Q$ | Configuration space, tangent and cotangent bundles |
 | $L(q,\dot q,t)$ | Lagrangian; $S[q]$ the action |
-| Euler–Lagrange | $\frac{d}{dt}L_{\dot q^i}-L_{q^i}=0$ |
+| Euler–Lagrange | $\frac{d}{dt}\partial_{\dot q^i}L-\partial_{q^i}L=0$ |
 | $p_i$, $\mathbb{F}L$ | Momentum and Legendre transform |
 | cyclic $q^k$ | $\partial L/\partial q^k=0$; $p_k$ conserved |
 | $\theta_L=p_i\,dq^i$ | Canonical momentum one-form of $L$ |
@@ -487,13 +487,13 @@ Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial_tg
 | $\delta q$, $Q_j$ | Virtual displacement and generalised force |
 | $A^a_j$, $\lambda_a$ | Non-holonomic constraint matrix and its multipliers |
 | $H(q,p)$ | Hamiltonian, $\sum p_i\dot q^i-L$ |
-| Hamilton's equations | $\dot q^i=H_{p_i}$, $\dot p_i=-H_{q^i}$ |
+| Hamilton's equations | $\dot q^i=\partial_{p_i}H$, $\dot p_i=-\partial_{q^i}H$ |
 | $(M,\omega)$ | Symplectic manifold, closed nondegenerate $2$-form |
 | $X_H$, $\iota_{X_H}\omega=dH$ | Hamiltonian vector field |
 | $\{f,g\}$ | Poisson bracket, $\omega(X_f,X_g)$ |
 | $\frac{d}{dt}g=\{g,H\}+\partial_tg$ | Evolution of a function along the Hamiltonian flow |
 | Poisson's theorem | The bracket of two constants of motion is a constant of motion |
-| $\tilde L=\sum_ip_i\dot q^i-H$ | Modified Lagrangian of the independent-variation principle |
+| $L^{\mathrm{mod}}=\sum_ip_i\dot q^i-H$ | Modified Lagrangian of the independent-variation principle |
 | $\sigma$, $\delta\eta=\varepsilon\{\eta,\sigma\}$ | Generator of an infinitesimal canonical transformation |
 | $\partial_t\rho+\{\rho,H\}=0$ | Liouville's equation for a density |
 | separatrix | Level curve through a hyperbolic (saddle) equilibrium |

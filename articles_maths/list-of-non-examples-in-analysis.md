@@ -33,7 +33,7 @@ This article lists the non-examples of analysis that the corpus records: the obj
 | Non-example | The positive object it fails to be, and the failure | Introduced in |
 |---|---|---|
 | $f_n = n\mathbf 1_{(0,1/n)}$ | an $L^1$-convergent sequence: it converges to $0$ almost everywhere and in measure, while $\int f_n = 1$ throughout | *Modes of Convergence* |
-| the sliding dyadic intervals on $[0,1]$ | an almost-everywhere convergent sequence: it converges to $0$ in measure and in every $L^p$, and at no point of $[0,1)$ | *Modes of Convergence* |
+| the sliding dyadic intervals on $[0,1]$ | an almost-everywhere convergent sequence: it converges to $0$ in measure and in every $L^{n}$, and at no point of $[0,1)$ | *Modes of Convergence* |
 | $f_n = x^n$ on $[0,1)$ | a uniformly convergent sequence: it converges locally uniformly and not uniformly, the rate depending on the point | *Modes of Convergence* |
 | the unit vectors $e_n$ of $\ell^2$ | a norm-convergent sequence: it converges weakly to $0$ and stays at norm $1$ | *Modes of Convergence* |
 | a bounded pointwise convergent sequence of Riemann integrable functions with a non-integrable limit | a sequence for which limit and Riemann integral interchange: the interchange fails without uniform convergence | *Real Integration* |
@@ -75,7 +75,7 @@ The non-examples are named rather than denoted; the symbols in the tables are co
 | $\exp(-1/x^2)$ | the smooth non-analytic function |
 | $V$ | the Vitali non-measurable set |
 | $\ell^2$, $e_n$ | the sequence space and its unit vectors |
-| $L^p$, a.e. | the Lebesgue space and the almost-everywhere mode |
+| $L^{n}$, a.e. | the Lebesgue space and the almost-everywhere mode |
 
 ## Further Reading
 

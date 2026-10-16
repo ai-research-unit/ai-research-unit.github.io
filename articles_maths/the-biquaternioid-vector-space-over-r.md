@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article treats the biquaternions as a **real vector space**: the same set as *Biquaternions as a Vector Space over $\mathbb{C}$* with the scalars cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$, the complex structure the complex reading rests on, the separation of the real-linear self-maps into the $\mathbb{C}$-linear and the antilinear ones, and the real forms from which the complex reading is recovered by extension of scalars. Restriction of scalars doubles the dimension, from four over $\mathbb{C}$ to eight over $\mathbb{R}$. The elements, the basis, the coordinate systems and the four conjugation formulas are those of the complex article and are cited, not restated: what is added here is the scalar reading itself, the operator that carries the gap between the two readings, and the linear algebra that the doubled dimension makes visible.
+This article treats the biquaternions as a **real vector space**: the same set as *The Biquaternioid as a Vector Space over $\mathbb{C}$* with the scalars cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$, the complex structure the complex reading rests on, the separation of the real-linear self-maps into the $\mathbb{C}$-linear and the antilinear ones, and the real forms from which the complex reading is recovered by extension of scalars. Restriction of scalars doubles the dimension, from four over $\mathbb{C}$ to eight over $\mathbb{R}$. The elements, the basis, the coordinate systems and the four conjugation formulas are those of the complex article and are cited, not restated: what is added here is the scalar reading itself, the operator that carries the gap between the two readings, and the linear algebra that the doubled dimension makes visible.
 
-No form appears in this article: the Hermitian form and the inner product are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The product read over the real scalars is *The Realification of the General Plain Algebra*; the four general products themselves are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
+No form appears in this article: the Hermitian form and the inner product are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The product read over the real scalars is *The Realification and the Effect of the Change of Scalars*; the four general products themselves are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*.
 
 ## The Real Scalars
 
-**Definition.** The **real reading** of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of *Biquaternions as a Vector Space over $\mathbb{C}$*, §*The Coordinate Systems*, on the real basis
+**Definition.** The **real reading** of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, §*The Coordinate Systems*, on the real basis
 
 $$
 e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3 .
@@ -44,7 +44,7 @@ $$
 
 ### Linear and Antilinear Maps
 
-The four conjugations of *Biquaternions as a Vector Space over $\mathbb{C}$*, §*Conjugations*, are all real-linear, and the proposition separates them into two classes: ${}^{\natural}$ commutes with $J$ and is $\mathbb{C}$-linear, while $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$ anticommute with $J$ and are antilinear. The line between the two kinds of map is thus the commutation with one operator.
+The four conjugations of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, §*Conjugations*, are all real-linear, and the proposition separates them into two classes: ${}^{\natural}$ commutes with $J$ and is $\mathbb{C}$-linear, while $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$ anticommute with $J$ and are antilinear. The line between the two kinds of map is thus the commutation with one operator.
 
 The real reading sees more linear maps than the complex one:
 
@@ -64,13 +64,13 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 **Example.** The elements with real coefficients, spanned by $e_0, e_1, e_2, e_3$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.
 
-**Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification of the General Plain Algebra*.
+**Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification and the Effect of the Change of Scalars*.
 
 **Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *Introduction to the Remarkable Subspaces*, and the action of the central imaginary unit upon them is *Comparison of the Remarkable Subspaces*.
 
 ### What the View Adds
 
-The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the General Plain Algebra of Quaternions* and *Modules over the General Plain Algebra of Biquaternions*.
+The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the Quaternion Algebra* and *Modules over the Biquaternion Algebra*.
 
 ## Summary
 
@@ -80,7 +80,7 @@ The gap between the two readings is one operator: the multiplication $J : \tilde
 
 A real form is a real subspace $V$ of dimension four meeting $JV$ only at zero; then $\mathbb{B} = V \oplus JV$ and $\mathbb{C}\otimes_\mathbb{R}V \cong \mathbb{B}$, so the complex reading is recovered from $V$ by extension of scalars, the choice of $V$ being data beyond the real reading. The remarkable subspaces are real; the centre and the vector subspace are the only two closed under $J$, and the other four are real forms exchanged in pairs.
 
-The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged. The product as the multiplication of an algebra over $\mathbb{R}$ is *The Realification of the General Plain Algebra*; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *The Realification of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*.
+The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged. The product as the multiplication of an algebra over $\mathbb{R}$ is *The Realification and the Effect of the Change of Scalars*; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *The Realification and the Effect of the Change of Scalars* and *Modules over the Biquaternion Algebra*.
 
 ## Summary of Notation
 

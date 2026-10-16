@@ -79,9 +79,9 @@ and the fixed and negated subspaces of $\theta'$ are the annihilators of $X^{-}$
 
 ## Examples
 
-**Example (the sequence spaces).** On $\ell^{p}$, $1 \leq p \leq \infty$, and on $c_{0}$ the coordinatewise conjugation is an antilinear isometric involution, so each is an involutive Banach space with $\lVert\theta\rVert = 1$; the fixed subspace is the corresponding real sequence space, itself a Banach space over $\mathbb{R}$, and the dual of $\ell^{p}$ with the transposed involution is $\ell^{q}$ with the coordinatewise conjugation.
+**Example (the sequence spaces).** On $\ell^{n}$, $1 \leq p \leq \infty$, and on $c_{0}$ the coordinatewise conjugation is an antilinear isometric involution, so each is an involutive Banach space with $\lVert\theta\rVert = 1$; the fixed subspace is the corresponding real sequence space, itself a Banach space over $\mathbb{R}$, and the dual of $\ell^{n}$ with the transposed involution is $\ell^{m}$ with the coordinatewise conjugation.
 
-**Example (the function spaces).** On $C(K)$ for a compact Hausdorff $K$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real Banach space $C(K,\mathbb{R})$; on $L^{p}(\mu)$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real space $L^{p}(\mu,\mathbb{R})$, the completions of the corresponding finitely supported spaces.
+**Example (the function spaces).** On $C(K)$ for a compact Hausdorff $K$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real Banach space $C(K,\mathbb{R})$; on $L^{n}(\mu)$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real space $L^{n}(\mu,\mathbb{R})$, the completions of the corresponding finitely supported spaces.
 
 **Example (the completion of an involutive space).** On $\mathbb{C}[x]$ with the $(x)$-adic topology the involution $\varphi_{0}(f)(x) = f(-x)$ is continuous with fixed subspace the even polynomials; its extension to the completion $\mathbb{C}[[x]]$ has fixed subspace the even power series, the closure of the even polynomials, and the extension adds limits and no new fixed element.
 

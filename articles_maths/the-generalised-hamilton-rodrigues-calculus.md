@@ -13,7 +13,7 @@ Four boundaries are held.
 
 No physics is invoked.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; a quaternion is $\tilde q = \sum_\mu q_\mu e_\mu$, its conjugate is $\tilde{q}^{\natural} = q_0-\vec q$, its quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$, its modulus is $|\tilde q| = \sqrt{N(\tilde q)}$, and $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = \sum_k q_ke_k$ are the scalar and vector parts. The conjugates of the units are $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. For $f$ on an open $\Omega\subseteq\mathbb{H}$ the four **partial derivatives** are $\partial_\mu f = \frac{d}{dt}\big|_{t=0}f(\tilde q+te_\mu)$, each quaternion valued, and $f$ is differentiable when they exist and are continuous, the algebra being identified with $\mathbb{R}^4$. The involutions about the axes are $\iota_0 = \mathrm{id}$ and $\iota_k(\tilde q) = e_k\tilde q e_k^{-1}$, with $\iota_j\iota_m = \iota_{j\oplus m}$ and $\iota_k(e_\mu) = \sigma_{k\mu}e_\mu$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; a quaternion is $\tilde q = \sum_\mu q_\mu e_\mu$, its conjugate is $\tilde{q}^{\natural} = q_0-\vec q$, its quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$, its modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$, and $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = \sum_k q_ke_k$ are the scalar and vector parts. The conjugates of the units are $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. For $f$ on an open $\Omega\subseteq\mathbb{H}$ the four **partial derivatives** are $\partial_\mu f = \frac{d}{dt}\big|_{t=0}f(\tilde q+te_\mu)$, each quaternion valued, and $f$ is differentiable when they exist and are continuous, the algebra being identified with $\mathbb{R}^4$. The involutions about the axes are $\iota_0 = \mathrm{id}$ and $\iota_k(\tilde q) = e_k\tilde q e_k^{-1}$, with $\iota_j\iota_m = \iota_{j\oplus m}$ and $\iota_k(e_\mu) = \sigma_{k\mu}e_\mu$.
 
 ## What the Classical Notions Give
 
@@ -40,13 +40,13 @@ An optimisation of a quaternion-valued function of a quaternion variable needs t
 **Definition.** For a differentiable $f : \Omega\to\mathbb{H}$ the **derivative with respect to the conjugate** and the **derivative with respect to the variable** are
 
 $$
-\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14\sum_{\mu=0}^{3}e_\mu\,\partial_\mu f , \qquad \frac{\partial f}{\partial\tilde q} = \frac14\sum_{\mu=0}^{3}e_\mu^{\natural}\,\partial_\mu f .
+\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14\sum_{\mu=0}^{3}e_\mu\,\partial_\mu f, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\sum_{\mu=0}^{3}e_\mu^{\natural}\,\partial_\mu f.
 $$
 
 The names are names of operators and not limits: there is no difference quotient, and each derivative is a fixed real-linear combination of the four partial derivatives. The two are related by
 
 $$
-\frac{\partial f}{\partial\tilde q} = (\ \frac{\partial \bar f}{\partial\bar{\tilde{q}}}\ )^{\natural} ,
+\frac{\partial f}{\partial\tilde q} = (\ \frac{\partial \bar f}{\partial\bar{\tilde{q}}}\)^{\natural},
 $$
 
 since $\partial_\mu\bar f = \overline{\partial_\mu f}$ and $e_\mu^{\natural} = \overline{e_\mu}$.
@@ -58,7 +58,7 @@ since $\partial_\mu\bar f = \overline{\partial_\mu f}$ and $e_\mu^{\natural} = \
 **Theorem.** With $D = \sum_\mu e_\mu\partial_\mu$ the Fueter operator and $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ its conjugate,
 
 $$
-\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df , \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df .
+\frac{\partial f}{\partial\bar{\tilde{q}}} = \frac14 Df, \qquad \frac{\partial f}{\partial\tilde q} = \frac14\bar Df.
 $$
 
 Consequently $f$ is left-regular if and only if $\partial f/\partial\bar{\tilde{q}} = 0$, and $f$ is right-regular if and only if the left derivative defined below vanishes, $\frac14\sum_\mu\partial_\mu f\,e_\mu = 0$.
@@ -72,7 +72,7 @@ Consequently $f$ is left-regular if and only if $\partial f/\partial\bar{\tilde{
 **Definition.** For $j = 0,1,2,3$ the **augmented derivatives** are
 
 $$
-\frac{\partial f}{\partial\bar{\tilde{q}_j}} = \frac14\sum_{\mu=0}^{3}\iota_j(e_\mu)\,\partial_\mu f ,
+\frac{\partial f}{\partial\bar{\tilde{q}_j}} = \frac14\sum_{\mu=0}^{3}\iota_j(e_\mu)\,\partial_\mu f,
 $$
 
 with $\iota_0 = \mathrm{id}$, so that the case $j = 0$ is $\partial f/\partial\bar{\tilde{q}}$. In coordinates $\iota_j(e_\mu) = \sigma_{j\mu}e_\mu$ and the definition reads $\frac14\sum_\mu\sigma_{j\mu}e_\mu\partial_\mu f$.
@@ -80,7 +80,7 @@ with $\iota_0 = \mathrm{id}$, so that the case $j = 0$ is $\partial f/\partial\b
 **Proposition.** The augmented derivative is the conjugate derivative of $f$ read in the involuted variable,
 
 $$
-\frac{\partial f}{\partial\bar{\tilde{q}_j}}(\tilde q) = \frac{\partial(f\circ\iota_j)}{\partial\bar{\tilde{q}}}\bigl(\iota_j\tilde q\bigr) , \qquad j = 0,1,2,3 .
+\frac{\partial f}{\partial\bar{\tilde{q}_j}}(\tilde q) = \frac{\partial(f\circ\iota_j)}{\partial\bar{\tilde{q}}}\bigl(\iota_j\tilde q\bigr), \qquad j = 0,1,2,3.
 $$
 
 *Proof.* The map $\iota_j$ is linear with $\iota_j^{-1} = \iota_j$ and replaces the direction $e_\mu$ by the direction $\iota_j(e_\mu) = \sigma_{j\mu}e_\mu$; by the chain rule for a linear change of variable, the conjugate derivative of $f\circ\iota_j$ at the point $\iota_j\tilde q$ is the combination $\frac14\sum_\mu\sigma_{j\mu}e_\mu\partial_\mu f$ of the partials of $f$ at $\tilde q$, which is the definition.
@@ -88,7 +88,7 @@ $$
 **Example.** The four augmented derivatives of the square are
 
 $$
-\frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_1}} = \tilde q-q_1e_1 , \qquad \frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_2}} = \tilde q-q_2e_2 , \qquad \frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_3}} = \tilde q-q_3e_3 ,
+\frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_1}} = \tilde q-q_1e_1, \qquad \frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_2}} = \tilde q-q_2e_2, \qquad \frac{\partial \tilde q^2}{\partial\bar{\tilde{q}_3}} = \tilde q-q_3e_3,
 $$
 
 while $\frac{\partial \tilde q^2}{\partial\bar{\tilde{q}}} = -\mathrm{Sc}(\tilde q)$. The computation is direct from $\partial_\mu(\tilde q^2) = e_\mu\tilde q+\tilde qe_\mu$, and it shows the pattern: the involution $j$ removes the $e_j$-component from the value, and the case $j = 0$ is different in kind, because the identity is not one of the three rotations but the sum of the other three and the conjugate.
@@ -112,7 +112,7 @@ fails.
 **Definition.** The **left derivative** is
 
 $$
-\frac{\partial^{\mathrm{L}}f}{\partial\bar{\tilde{q}}} = \frac14\sum_{\mu=0}^{3}\partial_\mu f\,e_\mu ,
+\frac{\partial^{\mathrm{L}}f}{\partial\bar{\tilde{q}}} = \frac14\sum_{\mu=0}^{3}\partial_\mu f\,e_\mu,
 $$
 
 with the imaginary units on the right of the partials.
@@ -127,12 +127,12 @@ with the imaginary units on the right of the partials.
 |---|---|---|
 | $\tilde q$ | $1$ | $-\tfrac12$ |
 | $\tilde{q}^{\natural}$ | $-\tfrac12$ | $1$ |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | $\tfrac12\tilde{q}^{\natural}$ | $\tfrac12\tilde q$ |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | $\tfrac12\tilde{q}^{\natural}$ | $\tfrac12\tilde q$ |
 | $\lvert\tilde q\rvert$ | $\dfrac{\tilde{q}^{\natural}}{4\lvert\tilde q\rvert}$ | $\dfrac{\tilde q}{4\lvert\tilde q\rvert}$ |
 | $\tilde q^2$ | $\tilde q+\mathrm{Sc}(\tilde q)$ | $-\mathrm{Sc}(\tilde q)$ |
-| $\dfrac{\tilde{q}^{\natural}}{N(\tilde q)^2}$ | not identically zero | $0$ |
+| $\dfrac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}^2}$ | not identically zero | $0$ |
 
-*Proof.* The first two rows are the sums $\sum_\mu e_\mu e_\mu = \sum_\mu e_\mu^{\natural} e_\mu^{\natural} = -2$ and $\sum_\mu e_\mu e_\mu^{\natural} = \sum_\mu e_\mu^{\natural} e_\mu = 4$, applied to $\partial_\mu\tilde q = e_\mu$ and $\partial_\mu\tilde{q}^{\natural} = e_\mu^{\natural}$. For the norm and the modulus the partials $\partial_\mu N = 2q_\mu$ and $\partial_\mu|\tilde q| = q_\mu/|\tilde q|$ are real, so the combination $\frac14\sum_\mu e_\mu\partial_\mu$ of a real-valued function is the vector of its gradient, and the two displayed values follow by reading the gradient as the quaternion $\sum_\mu(\partial_\mu f)e_\mu$. For the square one uses $\partial_\mu(\tilde q^2) = e_\mu\tilde q+\tilde qe_\mu$ together with $\sum_\mu e_\mu\tilde qe_\mu = -2\tilde{q}^{\natural}$ and $\sum_\mu e_\mu^{\natural}\tilde qe_\mu = 4\mathrm{Sc}(\tilde q)$, the second of these because $e_k^{\natural}\tilde qe_k = \iota_k\tilde q$ and $\tilde q+\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q = \tilde q+2\tilde{q}^{\natural}+\tilde q$. For the last row, the function is the Cauchy kernel $E$ of *Quaternion Integration*, which is left-regular, so its conjugate derivative vanishes by the Fueter reading and its other derivative does not, by the relation between the two derivatives applied to $\bar E = \tilde q/N(\tilde q)^2$, whose conjugate derivative is not zero either.
+*Proof.* The first two rows are the sums $\sum_\mu e_\mu e_\mu = \sum_\mu e_\mu^{\natural} e_\mu^{\natural} = -2$ and $\sum_\mu e_\mu e_\mu^{\natural} = \sum_\mu e_\mu^{\natural} e_\mu = 4$, applied to $\partial_\mu\tilde q = e_\mu$ and $\partial_\mu\tilde{q}^{\natural} = e_\mu^{\natural}$. For the norm and the modulus the partials $\partial_\mu N = 2q_\mu$ and $\partial_\mu|\tilde q| = q_\mu/|\tilde q|$ are real, so the combination $\frac14\sum_\mu e_\mu\partial_\mu$ of a real-valued function is the vector of its gradient, and the two displayed values follow by reading the gradient as the quaternion $\sum_\mu(\partial_\mu f)e_\mu$. For the square one uses $\partial_\mu(\tilde q^2) = e_\mu\tilde q+\tilde qe_\mu$ together with $\sum_\mu e_\mu\tilde qe_\mu = -2\tilde{q}^{\natural}$ and $\sum_\mu e_\mu^{\natural}\tilde qe_\mu = 4\mathrm{Sc}(\tilde q)$, the second of these because $e_k^{\natural}\tilde qe_k = \iota_k\tilde q$ and $\tilde q+\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q = \tilde q+2\tilde{q}^{\natural}+\tilde q$. For the last row, the function is the Cauchy kernel $E$ of *Quaternion Integration*, which is left-regular, so its conjugate derivative vanishes by the Fueter reading and its other derivative does not, by the relation between the two derivatives applied to $\bar E = \tilde q/\langle\tilde q\rangle_{\natural}^2$, whose conjugate derivative is not zero either.
 
 The three functions $N$, $|\tilde q|$ and $E$ are the ones that appear as a cost and as a kernel; the two rows $\tilde q$ and $\tilde{q}^{\natural}$ are the ones that show the failure of the naive rules, the conjugate derivative of the identity being $-\frac12$ rather than $0$.
 
@@ -143,7 +143,7 @@ The three functions $N$, $|\tilde q|$ and $E$ are the ones that appear as a cost
 **Proposition.** Let $\nu\in\mathbb{H}$, $\nu\neq0$, and let $f$ be differentiable. Then
 
 $$
-\frac{\partial(\nu f)}{\partial\bar{\tilde{q}}}(\tilde q) = \nu\,\frac{\partial f_\star}{\partial \tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{\nu^{-1}}\tilde q} , \qquad f_\star(\tilde q_\star) = f(\tilde q) ,
+\frac{\partial(\nu f)}{\partial\bar{\tilde{q}}}(\tilde q) = \nu\,\frac{\partial f_\star}{\partial \tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{\nu^{-1}}\tilde q}, \qquad f_\star(\tilde q_\star) = f(\tilde q),
 $$
 
 the derivative of $f$ being taken in the variable $\tilde q_\star = \iota_{\nu^{-1}}\tilde q$ obtained from $\tilde q$ by the inner automorphism determined by $\nu$. When $\nu$ is real, $\iota_{\nu^{-1}} = \mathrm{id}$ and the rule is the naive one, $\frac{\partial(\nu f)}{\partial\bar{\tilde{q}}} = \nu\frac{\partial f}{\partial\bar{\tilde{q}}}$; when $\nu$ is purely imaginary the change of variable is the involution about the axis of $\nu$, and the naive rule fails.
@@ -159,7 +159,7 @@ the derivative of $f$ being taken in the variable $\tilde q_\star = \iota_{\nu^{
 **Theorem.** Let $f,p$ be differentiable with $f(\tilde q)\neq0$. Then
 
 $$
-\frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q} ,
+\frac{\partial(fp)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac{\partial f}{\partial\bar{\tilde{q}}}(\tilde q)\,p(\tilde q)+f(\tilde q)\,\frac{\partial p_\star}{\partial\tilde q_\star^*}\Big|_{\tilde q_\star = \iota_{f(\tilde q)^{-1}}\tilde q},
 $$
 
 where $p_\star(\tilde q_\star) = p(\tilde q)$.
@@ -167,7 +167,7 @@ where $p_\star(\tilde q_\star) = p(\tilde q)$.
 *Proof.* The partial derivatives of a product are $\partial_\mu(fp) = (\partial_\mu f)p+f\,\partial_\mu p$, so
 
 $$
-\frac{\partial(fp)}{\partial\bar{\tilde{q}}} = \Bigl(\frac14\sum_\mu e_\mu\partial_\mu f\Bigr)p+\frac14\sum_\mu e_\mu f\,\partial_\mu p ,
+\frac{\partial(fp)}{\partial\bar{\tilde{q}}} = \Bigl(\frac14\sum_\mu e_\mu\partial_\mu f\Bigr)p+\frac14\sum_\mu e_\mu f\,\partial_\mu p,
 $$
 
 the first term being the product of the derivative of $f$ with $p$. In the second term the constant $f(\tilde q)$ is carried out of the sum on the left and the remaining combination $\frac14\sum_\mu e_\mu\partial_\mu p$ is the conjugate derivative of $p$ read in the variable moved by $\iota_{f(\tilde q)^{-1}}$, by the same argument as for the constant multiples.
@@ -181,7 +181,7 @@ the first term being the product of the derivative of $f$ with $p$. In the secon
 **Theorem.** Let $p$ be differentiable and let $g$ be differentiable on a neighbourhood of $p(\Omega)$, with $p_\nu$ the $e_\nu$-component of $p$. Then
 
 $$
-\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu=0}^{3}e_\mu\,(\partial_\nu g)\bigl(p(\tilde q)\bigr)\,\partial_\mu p_\nu(\tilde q) .
+\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}}(\tilde q) = \frac14\sum_{\mu,\nu=0}^{3}e_\mu\,(\partial_\nu g)\bigl(p(\tilde q)\bigr)\,\partial_\mu p_\nu(\tilde q).
 $$
 
 *Proof.* The chain rule of *Differential Calculus on Normed Spaces* gives $\partial_\mu(g\circ p)(\tilde q) = \sum_\nu(\partial_\nu g)(p(\tilde q))\,\partial_\mu p_\nu(\tilde q)$, the derivative of $g$ at $p(\tilde q)$ being applied to the vector $\partial_\mu p$, whose coordinates in the basis are $\partial_\mu p_\nu$. Multiplying by $e_\mu$ and summing over $\mu$ with the factor $\frac14$ is the definition.
@@ -189,7 +189,7 @@ $$
 **Corollary (a real-valued inner function).** If $p$ is real valued and $g : \mathbb{R}\to\mathbb{R}$ is differentiable, then $g\circ p$ is real valued and
 
 $$
-\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}} = \frac{\partial p}{\partial\bar{\tilde{q}}}\,g'(p) .
+\frac{\partial(g\circ p)}{\partial\bar{\tilde{q}}} = \frac{\partial p}{\partial\bar{\tilde{q}}}\,g'(p).
 $$
 
 *Proof.* For a real-valued $p$ the only non-vanishing coordinate is $p_0$, so the chain rule collapses to $\frac14\sum_\mu e_\mu(\partial_0g)(p)\partial_\mu p$, and $(\partial_0g)(p) = g'(p)$ is a real scalar, which commutes with the units and may be moved to the right.
@@ -203,7 +203,7 @@ $$
 **Proposition.** For real-valued $J$ the conjugate derivative is a quarter of the gradient, $\frac{\partial J}{\partial\bar{\tilde{q}}} = \frac14\nabla J$ with $\nabla J = \sum_\mu(\partial_\mu J)e_\mu$ read as a quaternion, and
 
 $$
-J'(\tilde q;r) = \bigl\langle r,\nabla J(\tilde q)\bigr\rangle = 4\,\Bigl\langle r,\frac{\partial J}{\partial\bar{\tilde{q}}}\Bigr\rangle .
+J'(\tilde q;r) = \bigl\langle r,\nabla J(\tilde q)\bigr\rangle = 4\,\Bigl\langle r,\frac{\partial J}{\partial\bar{\tilde{q}}}\Bigr\rangle.
 $$
 
 Consequently $\frac{\partial J}{\partial\bar{\tilde{q}}}$ points along the direction of steepest ascent, the rate there being $|\nabla J(\tilde q)|$, and $-\frac{\partial J}{\partial\bar{\tilde{q}}}$ is a descent direction for $J$.

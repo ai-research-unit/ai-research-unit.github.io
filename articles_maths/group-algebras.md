@@ -110,7 +110,7 @@ Thus the group algebra of a nontrivial finite group always has zero divisors, an
 *Proof (first part, standard).* Given a submodule $W \subseteq V$ of a $k[G]$-module, choose any $k$-linear projection $p : V \to W$ and average it over $G$:
 
 $$
-\tilde p(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
+p^{\mathrm{avg}}(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
 $$
 
 which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand.

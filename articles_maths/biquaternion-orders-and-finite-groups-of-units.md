@@ -125,7 +125,7 @@ is a rotation of determinant $+1$ of the real slice and depends on $v$ only up t
 
 ## The McKay Correspondence
 
-The five families of finite subgroups of $Sp(1)$ are the five families of simply laced Dynkin diagrams: the cyclic groups give the types $\tilde A$, the binary dihedral groups the types $\tilde D$, and the three binary polyhedral groups the exceptional types,
+The five families of finite subgroups of $Sp(1)$ are the five families of simply laced Dynkin diagrams: the cyclic groups give the types $A^{(1)}$, the binary dihedral groups the types $D^{(1)}$, and the three binary polyhedral groups the exceptional types,
 $$
 2T \leftrightarrow E_6^{(1)},\qquad 2O \leftrightarrow E_7^{(1)},\qquad 2I \leftrightarrow E_8^{(1)} .
 $$
@@ -133,7 +133,7 @@ This is the **McKay correspondence**, and its content is that the Platonic solid
 
 ## The Integral Biquaternions
 
-The integral biquaternions are the order $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}'$, the biquaternions with Gaussian-integer coordinates. Its group of units is **infinite**, and the reason is the nilpotent directions. A pure biquaternion $P$ with $N(P)=0$ satisfies $P^2=-N(P)e_0=0$, so it is nilpotent, and for such a $P$ the element $e_0+P$ is a unit with inverse $e_0-P$ and powers
+The integral biquaternions are the order $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}'$, the biquaternions with Gaussian-integer coordinates. Its group of units is **infinite**, and the reason is the nilpotent directions. A pure biquaternion $P$ with $\langle P\rangle_{\natural}=0$ satisfies $P^2=-\langle P\rangle_{\natural}e_0=0$, so it is nilpotent, and for such a $P$ the element $e_0+P$ is a unit with inverse $e_0-P$ and powers
 $$
 (e_0+P)^n=e_0+nP ,
 $$

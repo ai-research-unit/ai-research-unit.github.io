@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(a) = e^a$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.
+The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(a) = \exp(a)$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.
 
 The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathrm{GL}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.
 
@@ -64,7 +64,7 @@ $$
 Since $|a^n/n!| \leq |a|^n/n!$, the series converges absolutely for every real $a$; the exponential is thus defined on all of $\mathbb{R}$. Its closed form is the classical one,
 
 $$
-\exp(a) = e^{a}, \qquad e = \exp(1) = \sum_{n\ge0} \frac{1}{n!} .
+\exp(a) = \exp(a), \qquad e = \exp(1) = \sum_{n\ge0} \frac{1}{n!} .
 $$
 
 **Basic properties.** The exponential never vanishes, so it takes values in $\mathbb{R}^\times$:
@@ -76,7 +76,7 @@ $$
 Its norm is positive and satisfies
 
 $$
-N(\exp a) = e^{2a} = \exp(2a),
+N(\exp a) = \exp(2a) = \exp(2a),
 $$
 
 the square of the exponential itself. The differential at the origin is the identity, $d\exp_0 = \operatorname{id}$, so $\exp$ is a local diffeomorphism near $0$ and supplies exponential coordinates near the identity; as the kernel computation below shows, it is in fact a global homeomorphism onto its image.
@@ -103,7 +103,7 @@ $$
 \exp(\mathbb{R}) = \mathbb{R}_{>0}, \qquad \exp : (\mathbb{R}, +) \longrightarrow (\mathbb{R}_{>0}, \cdot) \ \text{is an isomorphism of Lie groups.}
 $$
 
-**Proof.** The exponential is a strictly increasing continuous function with $\lim_{a\to-\infty}e^a = 0$ and $\lim_{a\to+\infty}e^a = +\infty$, so its image is exactly $(0,\infty)$ and it is injective. It is a group homomorphism by the group law, and a bijective homomorphism of groups is an isomorphism; it is smooth with smooth inverse $\ln$, so it is an isomorphism of Lie groups.
+**Proof.** The exponential is a strictly increasing continuous function with $\lim_{a\to-\infty}\exp(a) = 0$ and $\lim_{a\to+\infty}\exp(a) = +\infty$, so its image is exactly $(0,\infty)$ and it is injective. It is a group homomorphism by the group law, and a bijective homomorphism of groups is an isomorphism; it is smooth with smooth inverse $\ln$, so it is an isomorphism of Lie groups.
 
 The inverse is the **natural logarithm**, the unique map
 
@@ -111,7 +111,7 @@ $$
 \ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \exp(\ln r) = r, \qquad \ln(\exp a) = a,
 $$
 
-which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $e^a > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex exponential reaches its whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
+which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $\exp(a) > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex exponential reaches its whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
 
 **Theorem (the kernel).** For $a \in \mathbb{R}$ one has $\exp(a) = 1$ if and only if $a = 0$; hence
 
@@ -119,7 +119,7 @@ $$
 \ker\exp = \{0\}.
 $$
 
-**Proof.** $e^a = 1$ with $a \neq 0$ is impossible, since $e^a > 1$ for $a > 0$ and $0 < e^a < 1$ for $a < 0$.
+**Proof.** $\exp(a) = 1$ with $a \neq 0$ is impossible, since $\exp(a) > 1$ for $a > 0$ and $0 < \exp(a) < 1$ for $a < 0$.
 
 The kernel is trivial, so the exponential is injective and the real logarithm has no ambiguity. The complex kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The real kernel is the smallest possible, the trivial subgroup, and every positive real has exactly one real logarithm.
 
@@ -140,7 +140,7 @@ and $\gamma_X$ determines $X$ through its derivative at $t = 0$. Every one-param
 **The scale as the one-parameter group.** The subgroup generated by $X = 1$ is
 
 $$
-\gamma_1(t) = e^{t} \in \mathbb{R}_{>0},
+\gamma_1(t) = \exp(t) \in \mathbb{R}_{>0},
 $$
 
 and this map $\gamma_1 : \mathbb{R} \to \mathbb{R}_{>0}$ is a bijective Lie group homomorphism. Hence
@@ -195,7 +195,7 @@ Every exponential is entire and satisfies a group law; the differences are that 
 
 The commutator bracket of $\mathbb{R}$ vanishes identically, so $\mathbb{R} \cong \mathrm{GL}_1(\mathbb{R})$ is an abelian Lie algebra of real dimension $1$, with the universal enveloping algebra the polynomial algebra on one generator, and it is the Lie algebra both of the additive group $(\mathbb{R},+)$ and of the positive multiplicative group $(\mathbb{R}_{>0},\cdot)$.
 
-The exponential $\exp(a) = \sum a^n/n!$ is entire, never zero, and a group homomorphism, $\exp(a+b) = \exp a \exp b$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^a$, its norm is $N(\exp a) = e^{2a}$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
+The exponential $\exp(a) = \sum a^n/n!$ is entire, never zero, and a group homomorphism, $\exp(a+b) = \exp a \exp b$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $\exp(a)$, its norm is $N(\exp a) = \exp(2a)$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
 
 The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.
 
@@ -207,8 +207,8 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$
 | $[a,b] = ab - ba = 0$ | the commutator bracket, identically zero |
 | $\mathrm{GL}_1(\mathbb{R}) \cong \mathbb{R}$ | the abelian Lie algebra of the $1\times1$ matrices |
 | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units, two components |
-| $\exp(a) = \sum_n a^n/n! = e^a$ | the exponential, entire and a homomorphism |
-| $N(\exp a) = e^{2a}$ | the norm of an exponential |
+| $\exp(a) = \sum_n a^n/n! = \exp(a)$ | the exponential, entire and a homomorphism |
+| $N(\exp a) = \exp(2a)$ | the norm of an exponential |
 | $\exp : (\mathbb{R},+)\to(\mathbb{R}_{>0},\cdot)$ | the isomorphism onto the positive reals |
 | $\ln = \exp^{-1}$ | the natural logarithm |
 | $\ker\exp = \{0\}$ | the kernel, trivial |

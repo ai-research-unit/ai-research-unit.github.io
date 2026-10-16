@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The second one-sided family of a Clifford algebra is the right multiplication $R_x(y) = y\,x$. It is the mirror of the left multiplication, and it is *not* a second representation of the same algebra: because the order of the factors is reversed, the map $x \mapsto R_x$ turns products around and is a representation of the **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{opp}}$, the algebra with the same underlying vector space and the reversed product. This article treats the right family through that algebra.
+The second one-sided family of a Clifford algebra is the right multiplication $R_x(y) = y\,x$. It is the mirror of the left multiplication, and it is *not* a second representation of the same algebra: because the order of the factors is reversed, the map $x \mapsto R_x$ turns products around and is a representation of the **opposite algebra** $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$, the algebra with the same underlying vector space and the reversed product. This article treats the right family through that algebra.
 
 The two families are then read on the same object. The vector space of the Clifford algebra is a bimodule under the left and the right multiplications at once, the two actions commute, and each is the exact commutant of the other – the double centraliser theorem on the regular bimodule. Restricting to one side gives the two regular representations; and since a Clifford algebra is isomorphic to its opposite through reversion, the right family carries nothing that the left family does not, but it carries it with the roles of the modules exchanged, and it is the family that supplies the dual of the spin representation.
 
@@ -10,21 +10,21 @@ The operator calculus – the definitions, the composition laws, the mutual comm
 
 ## The Right Regular Representation
 
-**Definition.** The **right multiplication** by $x \in \mathrm{Cl}(V,q)$ is $R_x(y) = y\,x$. The **right regular representation** is the map $x \mapsto R_x$ into $\mathrm{End}_F(\mathrm{Cl}(V,q))$.
+**Definition.** The **right multiplication** by $x \in \mathrm{Cl}(V,\mathfrak{Q})$ is $R_x(y) = y\,x$. The **right regular representation** is the map $x \mapsto R_x$ into $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$.
 
-**Proposition (anti-multiplicativity).** For all $x, z \in \mathrm{Cl}(V,q)$,
+**Proposition (anti-multiplicativity).** For all $x, z \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 R_x R_z = R_{zx} , \qquad R_1 = \mathrm{id} .
 $$
 
-Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ into $\mathrm{End}_F(\mathrm{Cl}(V,q))$, equivalently an injective anti-homomorphism from $\mathrm{Cl}(V,q)$.
+Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ into $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, equivalently an injective anti-homomorphism from $\mathrm{Cl}(V,\mathfrak{Q})$.
 
 **Proof.** $R_x\bigl(R_z(y)\bigr) = yzx = R_{zx}(y)$; the reversal is exactly the reversed order of composition in the endomorphism ring. Injectivity is $R_x(1) = x$.
 
 **Remark (the asymmetry with the left family).** The left multiplication is multiplicative in the written order, $L_xL_z = L_{xz}$, and the right multiplication is anti-multiplicative. It is this single reversal, and not the presence or absence of an involution, that forces the opposite algebra into the statement of the right family. With an anti-automorphism $c$ the composite $\mathrm{P}^{c}_x(y) = y\,c(x)$ recovers multiplicativity, $\mathrm{P}^{c}_x\mathrm{P}^{c}_z = \mathrm{P}^{c}_{xz}$, because the reversal inside $c$ cancels the reversal of the composition; this is the content of *One-Sided Operators on a Clifford Algebra* and is used below only for reversion and conjugation.
 
-**Proposition (right ideals).** A subspace $J \subseteq \mathrm{Cl}(V,q)$ is a submodule of the right regular module exactly when it is a right ideal, that is when $J\cdot\mathrm{Cl}(V,q) \subseteq J$. Right multiplication by a unit preserves every right ideal, and a minimal right ideal is exactly a simple right module.
+**Proposition (right ideals).** A subspace $J \subseteq \mathrm{Cl}(V,\mathfrak{Q})$ is a submodule of the right regular module exactly when it is a right ideal, that is when $J\cdot\mathrm{Cl}(V,\mathfrak{Q}) \subseteq J$. Right multiplication by a unit preserves every right ideal, and a minimal right ideal is exactly a simple right module.
 
 **Proof.** The two conditions are the definition of a submodule and of a right ideal; for a unit $R$, $JR = J$ because $\mathrm{Cl}R = \mathrm{Cl}$.
 
@@ -32,16 +32,16 @@ Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\m
 
 ## The Opposite Algebra
 
-**Definition.** The **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ has the same underlying vector space and the same $F$-linear structure as $\mathrm{Cl}(V,q)$, with the product reversed: $x \cdot^{\mathrm{opp}} z = z\,x$. It is associative, unital with unit $1$, and $F$-linear.
+**Definition.** The **opposite algebra** $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ has the same underlying vector space and the same $F$-linear structure as $\mathrm{Cl}(V,\mathfrak{Q})$, with the product reversed: $x \cdot^{\mathrm{opp}} z = z\,x$. It is associative, unital with unit $1$, and $F$-linear.
 
-**Proposition (the opposite of a Clifford algebra is a Clifford algebra).** In $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ the generators satisfy $e_i \cdot^{\mathrm{opp}} e_j + e_j \cdot^{\mathrm{opp}} e_i = e_je_i + e_ie_j = 2B(e_i,e_j)$ and $e_i \cdot^{\mathrm{opp}} e_i = e_i^{2} = q(e_i)$, the same relations as in $\mathrm{Cl}(V,q)$. So the identity of $V$ is a Clifford map into $\mathrm{Cl}(V,q)^{\mathrm{opp}}$, it extends to a unital algebra homomorphism $\mathrm{Cl}(V,q) \to \mathrm{Cl}(V,q)^{\mathrm{opp}}$ by the universal property, and that homomorphism is an isomorphism because the two algebras have the same finite dimension.
+**Proposition (the opposite of a Clifford algebra is a Clifford algebra).** In $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ the generators satisfy $e_i \cdot^{\mathrm{opp}} e_j + e_j \cdot^{\mathrm{opp}} e_i = e_je_i + e_ie_j = 2B(e_i,e_j)$ and $e_i \cdot^{\mathrm{opp}} e_i = e_i^{2} = \mathfrak{Q}(e_i)$, the same relations as in $\mathrm{Cl}(V,\mathfrak{Q})$. So the identity of $V$ is a Clifford map into $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$, it extends to a unital algebra homomorphism $\mathrm{Cl}(V,\mathfrak{Q}) \to \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ by the universal property, and that homomorphism is an isomorphism because the two algebras have the same finite dimension.
 
-**Proof.** The relations are displayed; the universal property of the Clifford algebra applies to the linear map $V \hookrightarrow \mathrm{Cl}(V,q)^{\mathrm{opp}}$ because a vector satisfies $v \cdot^{\mathrm{opp}} v = v^{2} = q(v)$. Injectivity of the resulting homomorphism follows from its surjectivity and equal dimensions, or directly because it is an algebra map with $x \neq 0$ having $x\cdot^{\mathrm{opp}}1 \neq 0$.
+**Proof.** The relations are displayed; the universal property of the Clifford algebra applies to the linear map $V \hookrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ because a vector satisfies $v \cdot^{\mathrm{opp}} v = v^{2} = \mathfrak{Q}(v)$. Injectivity of the resulting homomorphism follows from its surjectivity and equal dimensions, or directly because it is an algebra map with $x \neq 0$ having $x\cdot^{\mathrm{opp}}1 \neq 0$.
 
-**Theorem (a Clifford algebra is isomorphic to its opposite).** Let $r$ be the reversion, $r(x_1\cdots x_k) = x_k\cdots x_1$ for vectors $x_i$, extended linearly, and let $\natural$ be the Clifford conjugation, $\natural = \alpha \circ r$ with $\alpha$ the grade involution. Then $r$ and $\natural$ are anti-automorphisms of $\mathrm{Cl}(V,q)$, and each is an isomorphism of algebras
+**Theorem (a Clifford algebra is isomorphic to its opposite).** Let $r$ be the reversion, $r(x_1\cdots x_k) = x_k\cdots x_1$ for vectors $x_i$, extended linearly, and let $\natural$ be the Clifford conjugation, $\natural = \alpha \circ r$ with $\alpha$ the grade involution. Then $r$ and $\natural$ are anti-automorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$, and each is an isomorphism of algebras
 
 $$
-\mathrm{Cl}(V,q) \longrightarrow \mathrm{Cl}(V,q)^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}.
+\mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad x \longmapsto x^{r} \quad \text{or} \quad x \longmapsto x^{\natural}.
 $$
 
 **Proof.** Reversion is $F$-linear, fixes the generators and reverses products, so it is an anti-automorphism; a composition of the automorphism $\alpha$ with the anti-automorphism $r$ is again an anti-automorphism, and both fix $1$. An anti-automorphism is by definition a unital algebra isomorphism onto the opposite algebra. Both are bijective, with inverses of the same kind.
@@ -55,7 +55,7 @@ $$
 **Proposition (the regular bimodule).** The Clifford algebra is a bimodule over itself, with the left action $L$ and the right action $R$; the two actions commute,
 
 $$
-L_a R_b = R_b L_a \qquad \text{for all } a, b \in \mathrm{Cl}(V,q),
+L_a R_b = R_b L_a \qquad \text{for all } a, b \in \mathrm{Cl}(V,\mathfrak{Q}),
 $$
 
 because $L_aR_b(y) = ayb = R_bL_a(y)$.
@@ -65,7 +65,7 @@ because $L_aR_b(y) = ayb = R_bL_a(y)$.
 **Theorem (the commutant of the regular representation).** The algebra of module endomorphisms of the regular left module is the opposite algebra, realised by the right multiplications,
 
 $$
-\mathrm{End}_{\mathrm{Cl}(V,q)}\bigl(\mathrm{Cl}(V,q)\bigr) \cong \mathrm{Cl}(V,q)^{\mathrm{opp}}, \qquad T \longmapsto T(1),
+\mathrm{End}_{\mathrm{Cl}(V,\mathfrak{Q})}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}, \qquad T \longmapsto T(1),
 $$
 
 with inverse $b \mapsto R_b$. Consequently $\{L_a\}' = \{R_b\}$ and $\{R_b\}' = \{L_a\}$, the two families are mutual commutants.
@@ -80,9 +80,9 @@ with inverse $b \mapsto R_b$. Consequently $\{L_a\}' = \{R_b\}$ and $\{R_b\}' = 
 
 ## The Right Spin Action and the Dual Representation
 
-**Definition.** Let $J = \pi'\mathrm{Cl}(V,q)$ be a minimal right ideal, so that $J$ is a simple right module. The **right spin action** is the restriction to $\mathrm{Spin}(V,q)$ of the right action of the algebra, $\psi \mapsto \psi\,x$.
+**Definition.** Let $J = \pi'\mathrm{Cl}(V,\mathfrak{Q})$ be a minimal right ideal, so that $J$ is a simple right module. The **right spin action** is the restriction to $\mathrm{Spin}(V,\mathfrak{Q})$ of the right action of the algebra, $\psi \mapsto \psi\,x$.
 
-**Proposition (the transport by reversion).** Reversion maps a minimal right ideal to a minimal left ideal, $r(J) = \mathrm{Cl}(V,q)\,r(\pi')$, and it intertwines the right action with the left action by the reversed element:
+**Proposition (the transport by reversion).** Reversion maps a minimal right ideal to a minimal left ideal, $r(J) = \mathrm{Cl}(V,\mathfrak{Q})\,r(\pi')$, and it intertwines the right action with the left action by the reversed element:
 
 $$
 r(\psi\,x) = x^{r}\,r(\psi), \qquad \psi \in J .
@@ -110,7 +110,7 @@ For $\mathrm{Cl}_{0,3}(\mathbb{R}) \cong \mathbb{H}\oplus\mathbb{H}$ the volume 
 
 ## Summary
 
-The **right multiplication** $R_x(y) = yx$ is anti-multiplicative, $R_xR_z = R_{zx}$, so $x \mapsto R_x$ is a faithful representation of the **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{opp}}$, and its submodules are the right ideals. The opposite algebra of a Clifford algebra is itself a Clifford algebra of the same dimension, and reversion, or Clifford conjugation, is an explicit isomorphism $\mathrm{Cl} \cong \mathrm{Cl}^{\mathrm{opp}}$; right modules are therefore left modules read through that isomorphism, and the two simple-module counts agree. The Clifford algebra is a bimodule under the left and the right actions, the two commute because they sit on opposite sides, and the double centraliser theorem on the regular module gives $\mathrm{End}_{\mathrm{Cl}}(\mathrm{Cl}) \cong \mathrm{Cl}^{\mathrm{opp}}$ and the mutual commutants $\{L_a\}' = \{R_b\}$, $\{R_b\}' = \{L_a\}$. The centre is exactly the set where the two actions agree, and the enveloping algebra generated by both families is all of $\mathrm{End}_F(\mathrm{Cl})$ precisely in even dimension. On the spinors the left family gives the spin representation and the right family, on a minimal right ideal, gives the same representation transported by reversion, which is its dual direction up to the automorphism $\mathrm{inv}\circ r$; the two halves of the spin representation are this pair. The operator calculus is *One-Sided Operators on a Clifford Algebra*; the left-side module theory is *Left Multiplication and the Clifford Module Structure*.
+The **right multiplication** $R_x(y) = yx$ is anti-multiplicative, $R_xR_z = R_{zx}$, so $x \mapsto R_x$ is a faithful representation of the **opposite algebra** $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$, and its submodules are the right ideals. The opposite algebra of a Clifford algebra is itself a Clifford algebra of the same dimension, and reversion, or Clifford conjugation, is an explicit isomorphism $\mathrm{Cl} \cong \mathrm{Cl}^{\mathrm{opp}}$; right modules are therefore left modules read through that isomorphism, and the two simple-module counts agree. The Clifford algebra is a bimodule under the left and the right actions, the two commute because they sit on opposite sides, and the double centraliser theorem on the regular module gives $\mathrm{End}_{\mathrm{Cl}}(\mathrm{Cl}) \cong \mathrm{Cl}^{\mathrm{opp}}$ and the mutual commutants $\{L_a\}' = \{R_b\}$, $\{R_b\}' = \{L_a\}$. The centre is exactly the set where the two actions agree, and the enveloping algebra generated by both families is all of $\mathrm{End}_F(\mathrm{Cl})$ precisely in even dimension. On the spinors the left family gives the spin representation and the right family, on a minimal right ideal, gives the same representation transported by reversion, which is its dual direction up to the automorphism $\mathrm{inv}\circ r$; the two halves of the spin representation are this pair. The operator calculus is *One-Sided Operators on a Clifford Algebra*; the left-side module theory is *Left Multiplication and the Clifford Module Structure*.
 
 ## Summary of Notation
 
@@ -118,12 +118,12 @@ The **right multiplication** $R_x(y) = yx$ is anti-multiplicative, $R_xR_z = R_{
 |---|---|
 | $R_x(y) = y\,x$ | Right multiplication |
 | $R_xR_z = R_{zx}$ | Anti-multiplicativity |
-| $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ | Opposite algebra, reversed product |
+| $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ | Opposite algebra, reversed product |
 | $r$, $\natural = \alpha\circ r$ | Reversion and Clifford conjugation, anti-automorphisms |
 | ${}_{\mathrm{Cl}}\mathrm{Cl}_{\mathrm{Cl}}$ | The regular bimodule, commuting actions |
 | $\mathrm{End}_{\mathrm{Cl}}(\mathrm{Cl}) \cong \mathrm{Cl}^{\mathrm{opp}}$ | Commutant of the left regular representation |
 | $Z(\mathrm{Cl}) = \{x : L_x = R_x\}$ | Centre |
-| $J = \pi'\mathrm{Cl}(V,q)$ | Minimal right ideal, dual spinor space |
+| $J = \pi'\mathrm{Cl}(V,\mathfrak{Q})$ | Minimal right ideal, dual spinor space |
 | $\psi \mapsto \psi\,x$ | Right spin action, the dual direction |
 
 ## Further Reading

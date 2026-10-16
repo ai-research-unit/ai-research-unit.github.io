@@ -5,7 +5,7 @@
 
 Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves, in the general theory in which no involution of the base is assumed. A **one-sided operator** is a left multiplication $y\mapsto \theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $y\mapsto y\,c(x)$, attached to an anti-automorphism $c$. The one-sided operators are the elementary operators out of which the two-sided family is built, they are the operators that carry the regular representations of the algebra and of its opposite, and their images are the ideals of the algebra, so they are where the module theory of the Clifford algebra begins.
 
-Two facts organise the theory. The first is that the left family and the twisted right family are separately **multiplicative in the same order**, while the plain right multiplication is **anti-multiplicative**: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{opp}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,q)$ is central simple over $F$, and it is a proper subalgebra otherwise.
+Two facts organise the theory. The first is that the left family and the twisted right family are separately **multiplicative in the same order**, while the plain right multiplication is **anti-multiplicative**: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{opp}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,\mathfrak{Q})$ is central simple over $F$, and it is a proper subalgebra otherwise.
 
 The last structural point is the reason two-sided operators exist at all. A left multiplication by a non-scalar never carries the subspace $V$ of vectors into itself, and the only one-sided operators that preserve $V$ are the scalars. Preservation of the quadratic space, which is what turns an operator into a geometric transformation, therefore requires the pairing of a left factor with a right factor, and it is the two-sided operators, not the one-sided ones, that act on $V$ by isometries.
 
@@ -15,7 +15,7 @@ The algebra, the parity grading and the intrinsic anti-involutions are *Clifford
 
 ### Definitions
 
-**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,q)$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,q)$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are the $F$-linear maps
+**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are the $F$-linear maps
 
 $$
 \Lambda^{\theta}_x(y)=\theta(x)\,y, \qquad \qquad \mathrm P^{c}_x(y)=y\,c(x).
@@ -39,7 +39,7 @@ $$
 R_{xz}=R_z\circ R_x ,
 $$
 
-so $x\mapsto R_x$ is a homomorphism from the **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ and an anti-homomorphism from $\mathrm{Cl}(V,q)$.
+so $x\mapsto R_x$ is a homomorphism from the **opposite algebra** $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ and an anti-homomorphism from $\mathrm{Cl}(V,\mathfrak{Q})$.
 
 **Proof.** $R_x(R_z(y))=(y z)x=y(z x)=R_{zx}(y)$.
 
@@ -112,12 +112,12 @@ the left and the right annihilator of $a$.
 **Proposition (images).** The image of a left multiplication is a **right** ideal and the image of a right multiplication is a **left** ideal:
 
 $$
-L_a\bigl(\mathrm{Cl}(V,q)\bigr)=a\cdot\mathrm{Cl}(V,q), \qquad R_a\bigl(\mathrm{Cl}(V,q)\bigr)=\mathrm{Cl}(V,q)\cdot a .
+L_a\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)=a\cdot\mathrm{Cl}(V,\mathfrak{Q}), \qquad R_a\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)=\mathrm{Cl}(V,\mathfrak{Q})\cdot a .
 $$
 
 **Proof.** $L_a(y)=ay$ and $(ay)x=a(yx)$ is again in $a\cdot\mathrm{Cl}$; $R_a(y)=ya$ and $x(ya)=(xy)a$ is again in $\mathrm{Cl}\cdot a$.
 
-**Corollary (the spinor module as an image).** If $\pi$ is a primitive idempotent then $R_\pi$ has image the minimal left ideal $\mathrm{Cl}(V,q)\,\pi$ and $L_\pi$ has image the minimal right ideal $\pi\,\mathrm{Cl}(V,q)$. The spinor module of *Spinors as Minimal Left Ideals with Inner Conjugation* is the image of the one-sided operator $R_\pi$, so the elementary one-sided operators already carry the module theory of the algebra.
+**Corollary (the spinor module as an image).** If $\pi$ is a primitive idempotent then $R_\pi$ has image the minimal left ideal $\mathrm{Cl}(V,\mathfrak{Q})\,\pi$ and $L_\pi$ has image the minimal right ideal $\pi\,\mathrm{Cl}(V,\mathfrak{Q})$. The spinor module of *Spinors as Minimal Left Ideals with Inner Conjugation* is the image of the one-sided operator $R_\pi$, so the elementary one-sided operators already carry the module theory of the algebra.
 
 ## The Algebra Generated by the One-Sided Operators
 
@@ -126,25 +126,25 @@ $$
 **Theorem (double centraliser).** The commutant of the left multiplications is the right multiplications and conversely,
 
 $$
-\{L_a : a\in\mathrm{Cl}(V,q)\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}.
+\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}'=\{\,R_b\}, \qquad \{\,R_b\}'=\{L_a\}.
 $$
 
-**Proof.** An operator $T$ commutes with every $L_a$ exactly when $T(ay)=aT(y)$ for all $a,y$, that is exactly when $T$ is left $\mathrm{Cl}(V,q)$-linear; such a $T$ is determined by its value at $1$, since $T(y)=T(y\cdot1)=y\,T(1)$, so $T=R_{T(1)}$. The second identity is the same statement with the multiplication reversed.
+**Proof.** An operator $T$ commutes with every $L_a$ exactly when $T(ay)=aT(y)$ for all $a,y$, that is exactly when $T$ is left $\mathrm{Cl}(V,\mathfrak{Q})$-linear; such a $T$ is determined by its value at $1$, since $T(y)=T(y\cdot1)=y\,T(1)$, so $T=R_{T(1)}$. The second identity is the same statement with the multiplication reversed.
 
-**Remark.** The theorem is the double centraliser theorem for the regular bimodule, and it is the statement that the left and the right multiplications are each other's commutant. It does not say that they generate all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, and that stronger statement is false in general, as the next proposition shows.
+**Remark.** The theorem is the double centraliser theorem for the regular bimodule, and it is the statement that the left and the right multiplications are each other's commutant. It does not say that they generate all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, and that stronger statement is false in general, as the next proposition shows.
 
 ### The Image of the Enveloping Algebra
 
 **Proposition.** The left and the right multiplications together generate the image of the enveloping algebra under
 
 $$
-\mathrm{Cl}(V,q)\otimes_F\mathrm{Cl}(V,q)^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
+\mathrm{Cl}(V,\mathfrak{Q})\otimes_F\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
 $$
 
-an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,q)$ is **central simple** over $F$; otherwise it is a proper subalgebra.
+an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,\mathfrak{Q})$ is **central simple** over $F$; otherwise it is a proper subalgebra.
 
 
-**Counterexample (the naive double centraliser).** For $\mathrm{Cl}_{0,3}(\mathbb{R})$ one has $\dim\mathrm{Cl}=8$ and $\dim\mathrm{End}_F(\mathrm{Cl})=64$, while the maps $L_aR_b$ span only $32$ dimensions. So the claim that the left and the right multiplications always generate $\mathrm{End}_F(\mathrm{Cl}(V,q))$ is false; the correct statement carries the central-simplicity hypothesis, and the two-sided family spans the same image, being a subfamily of the same maps.
+**Counterexample (the naive double centraliser).** For $\mathrm{Cl}_{0,3}(\mathbb{R})$ one has $\dim\mathrm{Cl}=8$ and $\dim\mathrm{End}_F(\mathrm{Cl})=64$, while the maps $L_aR_b$ span only $32$ dimensions. So the claim that the left and the right multiplications always generate $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ is false; the correct statement carries the central-simplicity hypothesis, and the two-sided family spans the same image, being a subfamily of the same maps.
 
 ## The One-Sided Operators Do Not Preserve the Quadratic Space
 
@@ -157,7 +157,7 @@ $$
 
 **Example.** In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ the left multiplication $L_{e_1}$ sends the vector $e_1$ to the scalar $-1$ and the vector $e_2$ to the bivector $e_1e_2$, and the even left multiplication by $e_1e_2$ sends $e_1$ to $e_2$ but $e_3$ to the trivector $e_1e_2e_3$. So no non-scalar left multiplication preserves $V$.
 
-**Remark.** This is the structural reason for the two-sided family. The signed inner conjugation $\alpha(x)\,y\,x^{-1}$ preserves $V$ for $x$ in the Clifford group $\Gamma(V,q)$, and it does so because the two factors are paired; the individual factors do not preserve $V$, and half of a geometric transformation is not a geometric transformation. The one-sided operators are nevertheless the right objects on the module: on the spinor module the Clifford algebra acts by left multiplication alone, and there the action is one-sided by construction, which is the theme of *The Adjoint of the One-Sided Action with Hermitian Adjoint* and of *Spinors as Minimal Left Ideals with Inner Conjugation*.
+**Remark.** This is the structural reason for the two-sided family. The signed inner conjugation $\alpha(x)\,y\,x^{-1}$ preserves $V$ for $x$ in the Clifford group $\Gamma(V,\mathfrak{Q})$, and it does so because the two factors are paired; the individual factors do not preserve $V$, and half of a geometric transformation is not a geometric transformation. The one-sided operators are nevertheless the right objects on the module: on the spinor module the Clifford algebra acts by left multiplication alone, and there the action is one-sided by construction, which is the theme of *The Adjoint of the One-Sided Action with Hermitian Adjoint* and of *Spinors as Minimal Left Ideals with Inner Conjugation*.
 
 ## Worked Cases
 

@@ -7,7 +7,7 @@ For a locally compact abelian group the Fourier transform is a scalar-valued fun
 
 The article develops that replacement. It begins with the three failures — non-commutativity, the non-group dual, and the wild dual for groups that are not of type I — then develops the operator-valued transform and the coefficient algebra, the direct-integral decomposition of the regular representation, the operator-algebraic picture through the group $\mathrm{C}^*$-algebras and the group von Neumann algebra, the noncommutative form of the Gelfand theory, and the standard examples. The Plancherel theorem, which is the quantitative core of the decomposition, has its own article,and the compact case has *Analysis on Compact Groups* and *The Peter–Weyl Theorem*; the present article is the general frame in which both sit.
 
-The boundaries. The **representation theory** of locally compact groups — unitary representations, irreducibility, intertwiners, induced representations, Mackey theory, the unitary dual as an object, type I groups and the Borel structure of the dual, property (T), weak containment — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups* and *Property (T)*. Their statements are used here as established facts, and the analysis built on them is here. The **Haar measure** is *Locally Compact Groups and Haar Measure*, the **integration theory and the $L^p$ theory** are *Measure Theory and Integration* and *Modes of Convergence*, and the **operator algebras** are *Operator Algebras*, the underlying Banach- and Hilbert-space theory being standard and quoted as it is used and developed. The **convolution algebra**, its involution, its approximate identities and its completions are *The Convolution Algebra $L^1(G)$*, and the **abelian** theory is *Harmonic Analysis on Groups*. The vector-valued integration used throughout is taken as given, and the direct integrals are the standard disintegration of a von Neumann algebra over its centre, treated in *Operator Algebras*. No physics is invoked.
+The boundaries. The **representation theory** of locally compact groups — unitary representations, irreducibility, intertwiners, induced representations, Mackey theory, the unitary dual as an object, type I groups and the Borel structure of the dual, property (T), weak containment — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups* and *Property (T)*. Their statements are used here as established facts, and the analysis built on them is here. The **Haar measure** is *Locally Compact Groups and Haar Measure*, the **integration theory and the $L^{n}$ theory** are *Measure Theory and Integration* and *Modes of Convergence*, and the **operator algebras** are *Operator Algebras*, the underlying Banach- and Hilbert-space theory being standard and quoted as it is used and developed. The **convolution algebra**, its involution, its approximate identities and its completions are *The Convolution Algebra $L^1(G)$*, and the **abelian** theory is *Harmonic Analysis on Groups*. The vector-valued integration used throughout is taken as given, and the direct integrals are the standard disintegration of a von Neumann algebra over its centre, treated in *Operator Algebras*. No physics is invoked.
 
 Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$, modular function $\Delta$ and identity $e$; it is **unimodular** when $\Delta \equiv 1$, and the operator-valued theory is stated for unimodular $G$ except where a statement is explicitly general. The convolution and involution are those of *The Convolution Algebra $L^1(G)$*:
 
@@ -15,7 +15,7 @@ $$
 (f*g)(x) = \int_G f(y)g(y^{-1}x)\,dy , \qquad f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1} .
 $$
 
-The abelian dual is $G^\vee$ and the unitary dual — the set of equivalence classes of irreducible unitary representations — is $\operatorname{Irr}(G)$; for $\pi \in \operatorname{Irr}(G)$ the space is $\mathcal{H}_\pi$, the transform is $\hat f(\pi) = \int_G f(g)\pi(g)\,dg$, and the matrix coefficients are $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$. The reduced and full group $\mathrm{C}^*$-algebras are $C^*_r(G)$ and $C^*(G)$, and the group von Neumann algebra is $L(G) = \lambda(G)''$. The hat is never used for a dual.
+The abelian dual is $G^\vee$ and the unitary dual — the set of equivalence classes of irreducible unitary representations — is $\operatorname{Irr}(G)$; for $\pi \in \operatorname{Irr}(G)$ the space is $\mathcal{H}_\pi$, the transform is $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$, and the matrix coefficients are $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$. The reduced and full group $\mathrm{C}^*$-algebras are $C^*_r(G)$ and $C^*(G)$, and the group von Neumann algebra is $L(G) = \lambda(G)''$. The hat is never used for a dual.
 
 ## The Failure of the Commutative Framework
 
@@ -31,7 +31,7 @@ For $G = S_3$ the Gelfand spectrum is the two-element group $S_3/[S_3,S_3] \cong
 
 For a non-abelian group the unitary dual $\operatorname{Irr}(G)$ carries no group structure: the tensor product of two irreducible representations is generally a direct sum, so the "product" of two classes is set-valued, and there is no Pontryagin-type duality. The dual is a set with a topology — the **Fell topology**, the weakest topology making the matrix coefficients continuous in the appropriate sense — and, for second countable $G$, a Borel structure.
 
-**Definition.** Let $G$ be second countable and locally compact. The **Mackey Borel structure** on $\operatorname{Irr}(G)$ is the smallest $\sigma$-algebra for which all maps $\pi \mapsto \operatorname{Tr}(\hat f(\pi))$, $f \in L^1(G)$, are measurable. The group is **of type I** if this Borel structure is countably separated, equivalently if the equivalence relation of unitary equivalence on $\operatorname{Irr}(G)$ is smooth.
+**Definition.** Let $G$ be second countable and locally compact. The **Mackey Borel structure** on $\operatorname{Irr}(G)$ is the smallest $\sigma$-algebra for which all maps $\pi \mapsto \operatorname{Tr}((\mathcal F f)(\pi))$, $f \in L^1(G)$, are measurable. The group is **of type I** if this Borel structure is countably separated, equivalently if the equivalence relation of unitary equivalence on $\operatorname{Irr}(G)$ is smooth.
 
 The theory of this Borel structure, of the equivalence of type I with the countable separation, and of the examples is *Type I Groups*, and is quoted. What matters here is the consequence: type I is exactly the hypothesis under which the decomposition of the regular representation is indexed by $\operatorname{Irr}(G)$ with a measurable multiplicity function, and hence under which a Plancherel theorem exists.
 
@@ -48,15 +48,15 @@ Type I can fail, and the fundamental example is the free group on two generators
 **Definition.** For $f \in L^1(G)$ and a unitary representation $\pi$ of $G$ on $\mathcal{H}_\pi$, the **Fourier transform** of $f$ at $\pi$ is
 
 $$
-\hat f(\pi) = \int_G f(g)\,\pi(g)\,dg \in B(\mathcal{H}_\pi),
+(\mathcal F f)(\pi) = \int_G f(g)\,\pi(g)\,dg \in B(\mathcal{H}_\pi),
 $$
 
-the integral converging in the norm of $B(\mathcal{H}_\pi)$ because $\|\pi(g)\| = 1$ and $f \in L^1(G)$, with $\|\hat f(\pi)\| \leq \|f\|_1$. For $\pi$ irreducible the operator $\hat f(\pi)$ is the noncommutative "value of the transform" at the point $\pi$ of the dual.
+the integral converging in the norm of $B(\mathcal{H}_\pi)$ because $\|\pi(g)\| = 1$ and $f \in L^1(G)$, with $\|(\mathcal F f)(\pi)\| \leq \|f\|_1$. For $\pi$ irreducible the operator $(\mathcal F f)(\pi)$ is the noncommutative "value of the transform" at the point $\pi$ of the dual.
 
 **Theorem (convolution theorem).** For $f, h \in L^1(G)$ and every unitary representation $\pi$,
 
 $$
-\widehat{f*h}(\pi) = \hat f(\pi)\,\hat h(\pi), \qquad \widehat{f^*}(\pi) = \hat f(\pi)^* .
+\widehat{f*h}(\pi) = (\mathcal F f)(\pi)\,(\mathcal F h)(\pi), \qquad \widehat{f^*}(\pi) = (\mathcal F f)(\pi)^* .
 $$
 
 *Proof.* Same computation as in the abelian and compact cases: substitute $x = yz$ and use left invariance and multiplicativity. The involution statement uses the modular factor in $f^*$ and the unitarity of $\pi$.
@@ -155,9 +155,9 @@ the inclusion being an equality exactly in the amenable case. The Gelfand–Naim
 
 ### The Coefficient Transform as a Noncommutative $L^\infty$
 
-The map $f \mapsto (\hat f(\pi))_\pi$ sends $L^1(G)$ onto a dense subalgebra of the algebra of fields of operators; the closure in the appropriate norm is $C^*(G)$, and the weak closure is $L(G) = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$. Under this correspondence:
+The map $f \mapsto ((\mathcal F f)(\pi))_\pi$ sends $L^1(G)$ onto a dense subalgebra of the algebra of fields of operators; the closure in the appropriate norm is $C^*(G)$, and the weak closure is $L(G) = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$. Under this correspondence:
 
-- $L^1(G)$ corresponds to the integrable operator fields $\int\|\hat f(\pi)\|_1\,d\mu_P(\pi) < \infty$ up to the ambiguity of the transform's kernel;
+- $L^1(G)$ corresponds to the integrable operator fields $\int\|(\mathcal F f)(\pi)\|_1\,d\mu_P(\pi) < \infty$ up to the ambiguity of the transform's kernel;
 - $C^*(G)$ or $C^*_r(G)$ corresponds to the fields vanishing at infinity in the Fell sense;
 - $L(G)$ corresponds to the essentially bounded measurable operator fields, $L^\infty(\operatorname{Irr}(G),\mu_P)$ in the sense of direct integrals;
 - the centre $Z(L(G))$ corresponds to the scalar fields, and $\operatorname{Irr}(G)$ is its spectrum.
@@ -171,10 +171,10 @@ This dictionary is the exact noncommutative analogue of the chain $L^1(G) \subse
 Let $H$ be the three-dimensional Heisenberg group with the multiplication $(x,y,z)(x',y',z') = (x+x', y+y', z+z'+xy')$. It is a connected nilpotent Lie group, hence unimodular and of type I. Its unitary dual consists of the characters of the abelianisation, parametrised by $\mathbb{R}^2$, together with one infinite-dimensional representation $\pi_\lambda$ for each $\lambda \in \mathbb{R}\smallsetminus\{0\}$, the **Schrödinger representation** on $L^2(\mathbb{R})$,
 
 $$
-\pi_\lambda(x,y,z)\xi(t) = e^{2\pi i \lambda(z + ty)}\xi(t+x),
+\pi_\lambda(x,y,z)\xi(t) = \exp(2\pi i \lambda(z + ty))\xi(t+x),
 $$
 
-which by the Stone–von Neumann theorem is the unique irreducible representation with central character $e^{2\pi i\lambda z}$. The Plancherel measure is supported on the infinite-dimensional part , with the Haar measure normalised as in the formula above, has density proportional to $|\lambda|\,d\lambda$; this is the explicit form of the abstract theorem of the previous section, and its derivation is standard.
+which by the Stone–von Neumann theorem is the unique irreducible representation with central character $\exp(2\pi i\lambda z)$. The Plancherel measure is supported on the infinite-dimensional part , with the Haar measure normalised as in the formula above, has density proportional to $|\lambda|\,d\lambda$; this is the explicit form of the abstract theorem of the previous section, and its derivation is standard.
 
 ### $SL_2(\mathbb{R})$
 
@@ -190,7 +190,7 @@ For a semidirect product $G = N \rtimes Q$ with $N$ abelian, the dual is compute
 
 ## Summary
 
-Noncommutative harmonic analysis replaces the dual group of the abelian theory by the unitary dual $\operatorname{Irr}(G)$, the scalar Gelfand transform by the operator-valued transform $\hat f(\pi) = \int_G f(g)\pi(g)\,dg$, which satisfies $\widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi)$ and $\widehat{f^*}(\pi) = \hat f(\pi)^*$, and the decomposition of $L^2(G)$ into characters by a direct integral over the dual with respect to the Plancherel measure. The three failures of the commutative frame are the non-commutativity of $L^1(G)$, the loss of a group structure on the dual — visible already for $S_3$ and $SU(2)$ — and the wildness of the dual for non-type-I groups, exhibited by $F_2$, whose group von Neumann algebra is a type $\mathrm{II}_1$ factor and whose regular representation is not a direct integral of irreducibles. For a unimodular type I group the regular representation is $\lambda \cong \int^\oplus(\pi\otimes\pi^*)d\mu_P(\pi)$, the multiplicity of $\pi$ being $d_\pi = \dim\mathcal{H}_\pi$, and the group von Neumann algebra is $L(G) = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$, a direct integral of type I factors with centre $L^\infty(\operatorname{Irr}(G),\mu_P)$ and trace $\tau(a) = \int\operatorname{Tr}(a(\pi))d\mu_P(\pi)$; this central decomposition is the noncommutative analogue of the Fourier representation, with the abelian and compact cases as the two exactly computable ends. The representational content is organised by the GNS and Godement theorems — the functions of positive type are the diagonal matrix coefficients, which is the noncommutative Bochner theorem — and by the correspondence between nondegenerate $*$-representations of $L^1(G)$ and unitary representations of $G$, which identifies $\operatorname{Irr}(C^*(G))$ with $\operatorname{Irr}(G)$ and makes noncommutative harmonic analysis the spectral theory of the group $\mathrm{C}^*$-algebra. The sharp criterion at the boundary of the theory is Hulanicki's: $G$ is amenable if and only if the trivial representation is weakly contained in the regular representation, with property (T) giving the opposite spectral gap. The standard examples are the Heisenberg group, with its Schrödinger representation and Plancherel density $|\lambda|$; $SL_2(\mathbb{R})$, with principal, complementary and discrete series and Harish-Chandra's Plancherel formula; the compact groups, where the direct integral becomes the Peter–Weyl direct sum; and the semidirect products, where the Mackey machine supplies the fibre structure of the dual.
+Noncommutative harmonic analysis replaces the dual group of the abelian theory by the unitary dual $\operatorname{Irr}(G)$, the scalar Gelfand transform by the operator-valued transform $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$, which satisfies $\widehat{f*h}(\pi) = (\mathcal F f)(\pi)(\mathcal F h)(\pi)$ and $\widehat{f^*}(\pi) = (\mathcal F f)(\pi)^*$, and the decomposition of $L^2(G)$ into characters by a direct integral over the dual with respect to the Plancherel measure. The three failures of the commutative frame are the non-commutativity of $L^1(G)$, the loss of a group structure on the dual — visible already for $S_3$ and $SU(2)$ — and the wildness of the dual for non-type-I groups, exhibited by $F_2$, whose group von Neumann algebra is a type $\mathrm{II}_1$ factor and whose regular representation is not a direct integral of irreducibles. For a unimodular type I group the regular representation is $\lambda \cong \int^\oplus(\pi\otimes\pi^*)d\mu_P(\pi)$, the multiplicity of $\pi$ being $d_\pi = \dim\mathcal{H}_\pi$, and the group von Neumann algebra is $L(G) = \int^\oplus B(\mathcal{H}_\pi)d\mu_P$, a direct integral of type I factors with centre $L^\infty(\operatorname{Irr}(G),\mu_P)$ and trace $\tau(a) = \int\operatorname{Tr}(a(\pi))d\mu_P(\pi)$; this central decomposition is the noncommutative analogue of the Fourier representation, with the abelian and compact cases as the two exactly computable ends. The representational content is organised by the GNS and Godement theorems — the functions of positive type are the diagonal matrix coefficients, which is the noncommutative Bochner theorem — and by the correspondence between nondegenerate $*$-representations of $L^1(G)$ and unitary representations of $G$, which identifies $\operatorname{Irr}(C^*(G))$ with $\operatorname{Irr}(G)$ and makes noncommutative harmonic analysis the spectral theory of the group $\mathrm{C}^*$-algebra. The sharp criterion at the boundary of the theory is Hulanicki's: $G$ is amenable if and only if the trivial representation is weakly contained in the regular representation, with property (T) giving the opposite spectral gap. The standard examples are the Heisenberg group, with its Schrödinger representation and Plancherel density $|\lambda|$; $SL_2(\mathbb{R})$, with principal, complementary and discrete series and Harish-Chandra's Plancherel formula; the compact groups, where the direct integral becomes the Peter–Weyl direct sum; and the semidirect products, where the Mackey machine supplies the fibre structure of the dual.
 
 ## Summary of Notation
 
@@ -199,7 +199,7 @@ Noncommutative harmonic analysis replaces the dual group of the abelian theory b
 | $G$, $dx$, $\Delta$, $e$ | Locally compact group, left Haar measure, modular function, identity |
 | $\operatorname{Irr}(G)$ | Unitary dual, with the Fell topology |
 | $\mathcal{H}_\pi$ | Hilbert space of the representation $\pi$ |
-| $\hat f(\pi) = \int_G f(g)\pi(g)\,dg$ | Operator-valued Fourier transform |
+| $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$ | Operator-valued Fourier transform |
 | $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$ | Matrix coefficients |
 | positive type | $\sum_{i,j}c_i\overline{c_j}\varphi(x_j^{-1}x_i)\geq0$ |
 | $\mu_P$ | Plancherel measure on $\operatorname{Irr}(G)$ |

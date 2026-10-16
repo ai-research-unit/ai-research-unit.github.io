@@ -44,16 +44,16 @@ and it makes $A$ locally m-convex if and only if the family can be replaced by a
 **Lemma (regularisation).** Let $A$ be a unital algebra with $1 \neq 0$, let $p$ be a seminorm on $A$ with $p(1) = 1$ and $p(xy) \leq C\,p(x)p(y)$ for all $x,y$ and some $C \geq 1$. Then
 
 $$
-\tilde p(x) = \sup\{p(xy) : y \in A, \ p(y) \leq 1\}
+p^{\mathrm{sub}}(x) = \sup\{p(xy) : y \in A, \ p(y) \leq 1\}
 $$
 
-is a submultiplicative seminorm with $\ker\tilde p = \ker p$ and
+is a submultiplicative seminorm with $\kerp^{\mathrm{sub}} = \ker p$ and
 
 $$
-p(x) \leq \tilde p(x) \leq C\,p(x) \qquad (x \in A).
+p(x) \leq p^{\mathrm{sub}}(x) \leq C\,p(x) \qquad (x \in A).
 $$
 
-**Proof.** The set over which the supremum is taken is nonempty because $1$ belongs to it, and $\tilde p(x) \leq C p(x)$ because $p(xy) \leq Cp(x)p(y) \leq Cp(x)$ for $p(y) \leq 1$; hence $\tilde p$ is finite. Homogeneity and subadditivity are immediate from those of $p$, and $\tilde p(x) \geq p(x\cdot 1) = p(x)$, so $\ker\tilde p = \ker p$. For submultiplicativity, let $x, z \in A$ and $y$ with $p(y) \leq 1$. Then $p(xzy) \leq \tilde p(x)p(zy)$ by the definition of $\tilde p$ applied to the vector $zy$, since $p(zy)/p(y)$-scaling gives $p(xw) \leq \tilde p(x)p(w)$ for every $w$; and $p(zy) \leq \tilde p(z)p(y) \leq \tilde p(z)$. Hence $p(xzy) \leq \tilde p(x)\tilde p(z)$ and, taking the supremum over $y$, $\tilde p(xz) \leq \tilde p(x)\tilde p(z)$.
+**Proof.** The set over which the supremum is taken is nonempty because $1$ belongs to it, and $p^{\mathrm{sub}}(x) \leq C p(x)$ because $p(xy) \leq Cp(x)p(y) \leq Cp(x)$ for $p(y) \leq 1$; hence $p^{\mathrm{sub}}$ is finite. Homogeneity and subadditivity are immediate from those of $p$, and $p^{\mathrm{sub}}(x) \geq p(x\cdot 1) = p(x)$, so $\kerp^{\mathrm{sub}} = \ker p$. For submultiplicativity, let $x, z \in A$ and $y$ with $p(y) \leq 1$. Then $p(xzy) \leq p^{\mathrm{sub}}(x)p(zy)$ by the definition of $p^{\mathrm{sub}}$ applied to the vector $zy$, since $p(zy)/p(y)$-scaling gives $p(xw) \leq p^{\mathrm{sub}}(x)p(w)$ for every $w$; and $p(zy) \leq p^{\mathrm{sub}}(z)p(y) \leq p^{\mathrm{sub}}(z)$. Hence $p(xzy) \leq p^{\mathrm{sub}}(x)p^{\mathrm{sub}}(z)$ and, taking the supremum over $y$, $p^{\mathrm{sub}}(xz) \leq p^{\mathrm{sub}}(x)p^{\mathrm{sub}}(z)$.
 
 **Remark.** The regularisation shows that a single seminorm whose multiplicativity is measured by a constant can be replaced by an equivalent submultiplicative seminorm, when the algebra is unital and the seminorm is normalised by $p(1) = 1$. For a generating *family* the constants $C_\alpha$ may fail to be absorbable simultaneously, and it is exactly this failure that separates the locally m-convex algebras from the locally convex ones. Whether the topology admits an equivalent submultiplicative family is a separate question, and Arens's algebra below shows that for a Fréchet algebra the answer can be negative.
 
@@ -109,7 +109,7 @@ $$
 \operatorname{Max}(A) = \{\chi : A \to \mathbb{C} \text{ a continuous character}\} ,
 $$
 
-with the weak-star topology of pointwise convergence on $A$. The **Gelfand transform** of $x \in A$ is the function $\hat x(\chi) = \chi(x)$ on $\operatorname{Max}(A)$.
+with the weak-star topology of pointwise convergence on $A$. The **Gelfand transform** of $x \in A$ is the function $\mathcal F x(\chi) = \chi(x)$ on $\operatorname{Max}(A)$.
 
 **Proposition.** Let $A$ be a commutative unital locally m-convex algebra over $\mathbb{C}$ and let $\chi$ be a character of $A$. Then $\chi$ is continuous if and only if $\lvert\chi(x)\rvert \leq p(x)$ for some submultiplicative seminorm $p$ generating the topology. Consequently $\operatorname{Max}(A)$ is a closed subset of the product $\prod_p\{\lambda : \lvert\lambda\rvert \leq 1\}$ of the unit discs indexed by a generating family of submultiplicative seminorms, so $\operatorname{Max}(A)$ is compact when the family is finite, that is, when $A$ is a Banach algebra.
 
@@ -134,12 +134,12 @@ and the **spectral radius** is $r_A(x) = \sup\{\lvert\lambda\rvert : \lambda \in
 **Proposition.** Let $A$ be a commutative unital Banach algebra over $\mathbb{C}$. Then $\operatorname{Max}(A)$ is a nonempty compact Hausdorff space, every character is continuous, $\chi(x) \in \sigma_A(x)$ for every $\chi \in \operatorname{Max}(A)$, and
 
 $$
-\sigma_A(x) = \{\chi(x) : \chi \in \operatorname{Max}(A)\} , \qquad r_A(x) = \lVert\hat x\rVert_\infty = \lim_{n\to\infty}\lVert x^n\rVert^{1/n} .
+\sigma_A(x) = \{\chi(x) : \chi \in \operatorname{Max}(A)\} , \qquad r_A(x) = \lVert\mathcal F x\rVert_\infty = \lim_{n\to\infty}\lVert x^n\rVert^{1/n} .
 $$
 
 **Proof.** This is the Gelfand theory of *Topological Algebras and Banach Algebras*: the characters are the continuous homomorphisms to $\mathbb{C}$, the maximal ideals are their kernels and are closed, the character space is compact in the weak-star topology by Banach–Alaoglu, and the spectral radius formula is the consequence of the convergence of the resolvent series.
 
-**Theorem (Gelfand theory of Fréchet m-algebras).** Let $A$ be a commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$. Then every character is continuous, the Gelfand transform $x \mapsto \hat x$ is a continuous algebra homomorphism of $A$ into $C(\operatorname{Max}(A))$, and
+**Theorem (Gelfand theory of Fréchet m-algebras).** Let $A$ be a commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$. Then every character is continuous, the Gelfand transform $x \mapsto \mathcal F x$ is a continuous algebra homomorphism of $A$ into $C(\operatorname{Max}(A))$, and
 
 $$
 \sigma_A(x) \supseteq \{\chi(x) : \chi \in \operatorname{Max}(A)\}, \qquad r_A(x) \geq \sup_{\chi \in \operatorname{Max}(A)}\lvert\chi(x)\rvert .
@@ -147,7 +147,7 @@ $$
 
 If $A$ is a Banach algebra the inclusions are equalities and the supremum is attained.
 
-**Proof.** Continuity of every character is Michael's theorem. The Gelfand transform is multiplicative and continuous because each $\hat x$ is continuous in the weak-star topology and because a character satisfies $\lvert\chi(x)\rvert \leq p(x)$ for a generating submultiplicative seminorm, whence the transform is bounded by that seminorm. The inclusion $\{\chi(x)\} \subseteq \sigma_A(x)$ holds because a character carries invertible elements to invertible elements of $\mathbb{C}$: if $xy = 1$ then $\chi(x)\chi(y) = 1$, so $\chi(x) \neq 0$ and $x - \chi(x)$ is not invertible. The inequality for the spectral radius follows; the Banach case is the preceding proposition.
+**Proof.** Continuity of every character is Michael's theorem. The Gelfand transform is multiplicative and continuous because each $\mathcal F x$ is continuous in the weak-star topology and because a character satisfies $\lvert\chi(x)\rvert \leq p(x)$ for a generating submultiplicative seminorm, whence the transform is bounded by that seminorm. The inclusion $\{\chi(x)\} \subseteq \sigma_A(x)$ holds because a character carries invertible elements to invertible elements of $\mathbb{C}$: if $xy = 1$ then $\chi(x)\chi(y) = 1$, so $\chi(x) \neq 0$ and $x - \chi(x)$ is not invertible. The inequality for the spectral radius follows; the Banach case is the preceding proposition.
 
 **Example (the spectral radius in a Fréchet algebra).** Let $A = C^\infty[0,1]$ with the topology of uniform convergence of all derivatives — the analytic Fréchet algebra named in *Fréchet Spaces* and developed in Part III. Then $A$ is a commutative unital Fréchet algebra; the evaluations $\chi_t(f) = f(t)$, $t \in [0,1]$, are characters, and $\sigma_A(f)$ is the image $f([0,1])$, because $f - \lambda$ is invertible exactly when it vanishes nowhere and a smooth function that vanishes nowhere has a smooth reciprocal. Hence $r_A(f) = \lVert f\rVert_\infty$. For the element $f(x) = x$ one has $r_A(f) = 1$ and $\lVert f^n\rVert^{1/n} = 1$ for the seminorm of order zero, while the seminorms of higher order control the derivatives rather than the radius; for $f(x) = x^2$ one has $r_A(f) = 1$ while $p_0(f) = 1$ and $p_1(f) = 2$ at the right endpoint.
 
@@ -155,7 +155,7 @@ If $A$ is a Banach algebra the inclusions are equalities and the supremum is att
 
 ### The Holomorphic Functional Calculus
 
-**Theorem (holomorphic functional calculus, standard).** Let $A$ be a commutative unital Banach algebra over $\mathbb{C}$, let $x \in A$ and let $f$ be holomorphic on a neighbourhood of $\sigma_A(x)$. Then there is an element $f(x) \in A$ with $\widehat{f(x)} = f \circ \hat x$ on $\operatorname{Max}(A)$, and the assignment $f \mapsto f(x)$ is a unital algebra homomorphism from the holomorphic functions on that neighbourhood to $A$ that extends the polynomial calculus and satisfies the spectral mapping theorem $\sigma_A(f(x)) = f(\sigma_A(x))$.
+**Theorem (holomorphic functional calculus, standard).** Let $A$ be a commutative unital Banach algebra over $\mathbb{C}$, let $x \in A$ and let $f$ be holomorphic on a neighbourhood of $\sigma_A(x)$. Then there is an element $f(x) \in A$ with $\mathcal F(f(x)) = f \circ \mathcal F x$ on $\operatorname{Max}(A)$, and the assignment $f \mapsto f(x)$ is a unital algebra homomorphism from the holomorphic functions on that neighbourhood to $A$ that extends the polynomial calculus and satisfies the spectral mapping theorem $\sigma_A(f(x)) = f(\sigma_A(x))$.
 
 **Proof.** The element is defined by the classical Cauchy formula of the Banach-algebra theory,
 
@@ -211,15 +211,15 @@ $$
 
 ### Non-Examples
 
-**Example (Arens's algebra, named).** The **Arens algebra** — an algebra whose underlying spaces are the $L^p$ spaces of Part III, defined by the integral, so that the algebra is named here and its analytic structure is developed there — is
+**Example (Arens's algebra, named).** The **Arens algebra** — an algebra whose underlying spaces are the $L^{n}$ spaces of Part III, defined by the integral, so that the algebra is named here and its analytic structure is developed there — is
 
 $$
-L^\omega[0,1] = \bigcap_{p\geq1}L^p[0,1] ,
+L^\omega[0,1] = \bigcap_{p\geq1}L^{n}[0,1] ,
 $$
 
-with the topology generated by the $L^p$-norms $\lVert\cdot\rVert_p$, $p = 1,2,3,\dots$; it is a commutative Fréchet algebra with identity, because the intersection of countably many Banach spaces is a Fréchet space and the multiplication is continuous by Hölder's inequality, $\lVert fg\rVert_p \leq \lVert f\rVert_q\lVert g\rVert_r$ with $1/q + 1/r = 1/p$. Arens showed that its topology cannot be generated by an equivalent family of submultiplicative seminorms: it is a Fréchet algebra which is not locally m-convex. Consequently the Arens–Michael decomposition does not apply to it, and the spectral theory of its elements is not read off from Banach quotients in the way the decomposition prescribes.
+with the topology generated by the $L^{n}$-norms $\lVert\cdot\rVert_p$, $p = 1,2,3,\dots$; it is a commutative Fréchet algebra with identity, because the intersection of countably many Banach spaces is a Fréchet space and the multiplication is continuous by Hölder's inequality, $\lVert fg\rVert_p \leq \lVert f\rVert_q\lVert g\rVert_r$ with $1/q + 1/r = 1/p$. Arens showed that its topology cannot be generated by an equivalent family of submultiplicative seminorms: it is a Fréchet algebra which is not locally m-convex. Consequently the Arens–Michael decomposition does not apply to it, and the spectral theory of its elements is not read off from Banach quotients in the way the decomposition prescribes.
 
-**Example (algebras that are not locally convex).** For $0 < p < 1$ the algebra $L^p[0,1]$, an algebra of Part III with the metric $d(f,g) = \int\lvert f - g\rvert^p$, is a complete metrisable topological algebra with continuous multiplication which is not locally convex, hence not a Fréchet algebra; its only continuous linear functional is zero. This is the boundary of the theory in the other direction from Arens's example: not merely the seminorms but the convexity itself fails.
+**Example (algebras that are not locally convex).** For $0 < p < 1$ the algebra $L^{n}[0,1]$, an algebra of Part III with the metric $d(f,g) = \int\lvert f - g\rvert^p$, is a complete metrisable topological algebra with continuous multiplication which is not locally convex, hence not a Fréchet algebra; its only continuous linear functional is zero. This is the boundary of the theory in the other direction from Arens's example: not merely the seminorms but the convexity itself fails.
 
 **Example (a metrisable locally m-convex algebra that is not complete).** The algebra $\mathbb{C}[X]$ of polynomials with the topology of uniform convergence on compact subsets of $\mathbb{C}$ is a metrisable locally m-convex algebra whose seminorms $p_K(f) = \sup_K\lvert f\rvert$ are submultiplicative; it is not complete, since the exponential series converges locally uniformly to a non-polynomial, and its completion is the Fréchet algebra $\mathcal{O}(\mathbb{C})$ of entire functions. The example separates the metrisable case from the Fréchet case and shows that completeness is not automatic.
 
@@ -247,11 +247,11 @@ satisfy $\bar p_n(\bar x\bar z) \leq \bar p_n(\bar x)\bar p_n(\bar z)$, by appro
 
 ## Summary
 
-A **topological algebra** is an algebra with a topology making the vector operations and the multiplication continuous; the multiplication is continuous if and only if it is continuous at $(0,0)$. A **locally convex algebra** is a topological algebra with a locally convex topology, equivalently one generated by a family of seminorms; it is **locally m-convex** if the family may be taken **submultiplicative**, $p(xy) \leq p(x)p(y)$. A single seminorm with $p(xy) \leq Cp(x)p(y)$ and $p(1) = 1$ is replaced by the equivalent submultiplicative seminorm $\tilde p(x) = \sup\{p(xy) : p(y)\leq1\}$ with $p \leq \tilde p \leq Cp$; for a generating family the constants cannot always be absorbed simultaneously, and that failure separates the two classes.
+A **topological algebra** is an algebra with a topology making the vector operations and the multiplication continuous; the multiplication is continuous if and only if it is continuous at $(0,0)$. A **locally convex algebra** is a topological algebra with a locally convex topology, equivalently one generated by a family of seminorms; it is **locally m-convex** if the family may be taken **submultiplicative**, $p(xy) \leq p(x)p(y)$. A single seminorm with $p(xy) \leq Cp(x)p(y)$ and $p(1) = 1$ is replaced by the equivalent submultiplicative seminorm $p^{\mathrm{sub}}(x) = \sup\{p(xy) : p(y)\leq1\}$ with $p \leq p^{\mathrm{sub}} \leq Cp$; for a generating family the constants cannot always be absorbed simultaneously, and that failure separates the two classes.
 
-For a locally m-convex algebra the kernels of the generating seminorms are ideals, the quotient-completions $A_\alpha = \widehat{A/N_\alpha}$ are **Banach algebras**, and the **Arens–Michael theorem** states that a topological algebra is a complete locally m-convex algebra if and only if it is a projective limit of Banach algebras; in the metrisable case the limit is countable, so a **Fréchet m-algebra** is a projective limit of a sequence of Banach algebras, and the class is closed under closed subalgebras, quotients by closed ideals, products and projective limits. A commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$ is **functionally continuous** by **Michael's theorem**, so every character is continuous; the character space $\operatorname{Max}(A)$ sits in the product of unit discs and is compact when $A$ is a Banach algebra. The **spectrum** $\sigma_A(x)$ and the **spectral radius** $r_A(x)$ satisfy $\chi(x) \in \sigma_A(x)$ for every character, and for a commutative unital Banach algebra $\sigma_A(x) = \{\chi(x)\}$, $r_A(x) = \lVert\hat x\rVert_\infty = \lim_n\lVert x^n\rVert^{1/n}$; in the Fréchet case only the inclusion and the inequality are asserted, and the holomorphic functional calculus of the Banach theory extends to the Fréchet m-convex case by Taylor's theorem.
+For a locally m-convex algebra the kernels of the generating seminorms are ideals, the quotient-completions $A_\alpha = \widehat{A/N_\alpha}$ are **Banach algebras**, and the **Arens–Michael theorem** states that a topological algebra is a complete locally m-convex algebra if and only if it is a projective limit of Banach algebras; in the metrisable case the limit is countable, so a **Fréchet m-algebra** is a projective limit of a sequence of Banach algebras, and the class is closed under closed subalgebras, quotients by closed ideals, products and projective limits. A commutative unital Fréchet locally m-convex algebra over $\mathbb{C}$ is **functionally continuous** by **Michael's theorem**, so every character is continuous; the character space $\operatorname{Max}(A)$ sits in the product of unit discs and is compact when $A$ is a Banach algebra. The **spectrum** $\sigma_A(x)$ and the **spectral radius** $r_A(x)$ satisfy $\chi(x) \in \sigma_A(x)$ for every character, and for a commutative unital Banach algebra $\sigma_A(x) = \{\chi(x)\}$, $r_A(x) = \lVert\mathcal F x\rVert_\infty = \lim_n\lVert x^n\rVert^{1/n}$; in the Fréchet case only the inclusion and the inequality are asserted, and the holomorphic functional calculus of the Banach theory extends to the Fréchet m-convex case by Taylor's theorem.
 
-A **Fréchet algebra** is a complete metrisable locally convex algebra, with topology given by a countable family of seminorms and the metric $d(x,y) = \sum_n2^{-n}\min(1,p_n(x-y))$; the classes are strictly nested: Banach algebras $\subsetneq$ Fréchet m-algebras $\subsetneq$ Fréchet algebras. The standard examples are $C^\infty(U)$, $\mathcal{O}(\Omega)$, the Schwartz space $\mathcal{S}(\mathbb{R}^d)$, the rapidly decreasing sequences $s$, the algebras $C(X)$ with compact convergence, countable products of Banach algebras, the formal power series algebra $K[[X_1,\dots,X_d]]$ with the adic topology, and the disc algebra; the standing counterexamples are **Arens's algebra** $L^\omega[0,1] = \bigcap_{p\geq1}L^p[0,1]$, a commutative Fréchet algebra which is not locally m-convex, the non-locally-convex algebras $L^p[0,1]$ for $p < 1$, and the incomplete metrisable m-convex algebra $\mathbb{C}[X]$ with the compact-open topology, whose completion is $\mathcal{O}(\mathbb{C})$. Quotients of a Fréchet algebra by closed two-sided ideals are Fréchet algebras, and in the m-convex case the quotient seminorms are submultiplicative; the kernel of the Gelfand transform is the intersection of the closed maximal ideals, so semisimplicity is the injectivity of the transform, and for a compact smooth manifold the smooth Gelfand duality identifies the character space of $C^\infty(M)$ with $M$.
+A **Fréchet algebra** is a complete metrisable locally convex algebra, with topology given by a countable family of seminorms and the metric $d(x,y) = \sum_n2^{-n}\min(1,p_n(x-y))$; the classes are strictly nested: Banach algebras $\subsetneq$ Fréchet m-algebras $\subsetneq$ Fréchet algebras. The standard examples are $C^\infty(U)$, $\mathcal{O}(\Omega)$, the Schwartz space $\mathcal{S}(\mathbb{R}^d)$, the rapidly decreasing sequences $s$, the algebras $C(X)$ with compact convergence, countable products of Banach algebras, the formal power series algebra $K[[X_1,\dots,X_d]]$ with the adic topology, and the disc algebra; the standing counterexamples are **Arens's algebra** $L^\omega[0,1] = \bigcap_{p\geq1}L^{n}[0,1]$, a commutative Fréchet algebra which is not locally m-convex, the non-locally-convex algebras $L^{n}[0,1]$ for $p < 1$, and the incomplete metrisable m-convex algebra $\mathbb{C}[X]$ with the compact-open topology, whose completion is $\mathcal{O}(\mathbb{C})$. Quotients of a Fréchet algebra by closed two-sided ideals are Fréchet algebras, and in the m-convex case the quotient seminorms are submultiplicative; the kernel of the Gelfand transform is the intersection of the closed maximal ideals, so semisimplicity is the injectivity of the transform, and for a compact smooth manifold the smooth Gelfand duality identifies the character space of $C^\infty(M)$ with $M$.
 
 ## Summary of Notation
 
@@ -260,11 +260,11 @@ A **Fréchet algebra** is a complete metrisable locally convex algebra, with top
 | $A$ | A topological, locally convex or Fréchet algebra |
 | $A^\times$ | Unit group |
 | $p_\alpha$, $p_n$ | Generating seminorms; submultiplicative if $p(xy)\leq p(x)p(y)$ |
-| $\tilde p$ | Submultiplicative regularisation of a seminorm |
+| $p^{\mathrm{sub}}$ | Submultiplicative regularisation of a seminorm |
 | $N_\alpha = \ker p_\alpha$ | Ideal defined by a submultiplicative seminorm |
 | $A_\alpha = \widehat{A/N_\alpha}$ | Banach quotient algebra |
 | $\varprojlim_\alpha A_\alpha$ | Arens–Michael decomposition |
-| $\chi$, $\operatorname{Max}(A)$, $\hat x$ | Character, character space, Gelfand transform |
+| $\chi$, $\operatorname{Max}(A)$, $\mathcal F x$ | Character, character space, Gelfand transform |
 | $\sigma_A(x)$, $r_A(x)$ | Spectrum and spectral radius |
 | $f(x)$ | Holomorphic functional calculus |
 | $C^\infty(U)$, $\mathcal{O}(\Omega)$, $\mathcal{S}(\mathbb{R}^d)$, $s$ | Standard Fréchet algebras |

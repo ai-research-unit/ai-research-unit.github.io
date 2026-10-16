@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* for the basis and product, *Quaternion Nor
 
 The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
 
 ## The Algebra as a Topological Space
 
@@ -21,13 +21,13 @@ $$
 
 is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.
 
-*Proof.* The quaternion norm is positive definite with four positive signs, $N(\tilde q) = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.
+*Proof.* The quaternion norm is positive definite with four positive signs, $\langle\tilde q\rangle_{\natural} = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.
 
 ## Contractibility
 
 **Theorem.** The quaternion algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{H}) = 0$ for all $n\geq1$.
 
-*Proof.* The straight-line homotopy $H(t,\tilde q) = (1-t)\tilde q$ is continuous, begins at the identity and ends at the constant map $0$, so the identity of $\mathbb{H}$ is null-homotopic; a contractible space has all homotopy groups trivial.
+*Proof.* The straight-line homotopy $\langle t,\tilde q\rangle_{*} = (1-t)\tilde q$ is continuous, begins at the identity and ends at the constant map $0$, so the identity of $\mathbb{H}$ is null-homotopic; a contractible space has all homotopy groups trivial.
 
 **Corollary.** Every vector subspace of $\mathbb{H}$ is contractible as a topological space in its own right, and in particular the scalar subspace $\mathbb{R}_{\mathbb{H}}\cong\mathbb{R}$ and the vector subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ carry no topology beyond that of Euclidean space.
 
@@ -39,7 +39,7 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The unit sphere is a closed, compact, connected three-dimensional manifold, homeomorphic to the standard sphere $S^3\subset\mathbb{R}^4$, and it is a topological group under the inherited multiplication, with $S^3\subseteq\mathbb{H}^{\times}$; its smooth and Lie-group structure is that of *Quaternion Exponential and Lie Group Structure*, where it is identified with $Sp(1)\cong SU(2)$.
 
-*Proof.* The unit sphere is the level set of the continuous function $N$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $N(p\tilde q) = N(p)N(\tilde q)$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
+*Proof.* The unit sphere is the level set of the continuous function $\langle\cdot\rangle_{\natural}$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
 
 ## The Group of Units
 
@@ -112,8 +112,8 @@ The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}\cong\mathbb{R}^4$ | Quaternion algebra as a topological space; contractible |
-| $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Modulus, equal to the Euclidean norm |
-| $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_k q_k^2$ | Definite norm, four positive signs |
+| $\lvert \tilde q\rvert = \sqrt{\langle\tilde q\rangle_{\natural}}$ | Modulus, equal to the Euclidean norm |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_k q_k^2$ | Definite norm, four positive signs |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar and vector subspaces, $\cong\mathbb{R}$ and $\cong\mathbb{R}^3$ |
 | $S^3 = Sp(1) = \{\lvert \tilde q\rvert = 1\}$ | Unit sphere; compact group, $S^3\subseteq\mathbb{H}^{\times}$ |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | Group of units; $\simeq S^3$ |

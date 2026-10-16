@@ -23,7 +23,7 @@ $$
 The scalar part is $Q_0 \in \mathbb{C}$; the vector part is $\vec Q$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is
 
 $$
-N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2.
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2.
 $$
 
 The scalar imaginary is $i$, which commutes with the quaternion units.
@@ -38,13 +38,13 @@ of the value $(\vec Q, \vec Q) = Q_1^2 + Q_2^2 + Q_3^2$ of the complex quadratic
 
 It is a complex number in general and plays the role of the "magnitude" of $\vec Q$. When $B \neq 0$ the vector part can be written
 $$
-\vec Q = B \hat u, \qquad \hat u = \frac{\vec Q}{B},
+\vec Q = B \vec u, \qquad \vec u = \frac{\vec Q}{B},
 $$
-and $\hat u$ is a root of $-1$: since a pure biquaternion squares to $-\left(\vec Q,\vec Q\right)e_0$, we have $\hat u^2 = \vec Q^2/B^2 = -e_0$. The choice of square root is a convention: replacing $B$ by $-B$ replaces the axis $\hat u$ by $-\hat u$, leaving both $\hat u^2$ and $\tilde{Q} = Q_0 e_0 + B\hat u$ unchanged.
+and $\vec u$ is a root of $-1$: since a pure biquaternion squares to $-\left(\vec Q,\vec Q\right)e_0$, we have $\vec u^2 = \vec Q^2/B^2 = -e_0$. The choice of square root is a convention: replacing $B$ by $-B$ replaces the axis $\vec u$ by $-\vec u$, leaving both $\vec u^2$ and $\tilde{Q} = Q_0 e_0 + B\vec u$ unchanged.
 
 The biquaternion norm is
 $$
-N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + B^2,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + B^2,
 $$
 the sum of the square of the scalar part and the square of the complex norm; this is the biquaternion analogue of $|A|^2 = a^2 + b^2$ for $A = a + bi$, with $a$ replaced by $Q_0$ and $b$ by $B$.
 
@@ -71,7 +71,7 @@ The elementary functions of a single biquaternion are tractable because the powe
 
 **Cayley–Hamilton.** Direct computation from the product formula gives $\tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\vec Q - (\vec Q,\vec Q)e_0$, that is
 $$
-\tilde{Q}^2 - 2 Q_0 \tilde{Q} + N(\tilde{Q}) e_0 = 0.
+\tilde{Q}^2 - 2 Q_0 \tilde{Q} + \langle\tilde{Q}\rangle_{\natural} e_0 = 0.
 $$
 Hence every power $\tilde{Q}^n$ with $n \geq 2$ is a $\mathbb{C}$-linear combination of $e_0$ and $\tilde{Q}$, and $\mathbb{C}[\tilde{Q}] = \operatorname{span}_{\mathbb{C}}\{e_0, \tilde{Q}\}$, of dimension two when $B \neq 0$ or $\vec Q \neq 0$, and one (equal to $\mathbb{C}e_0$) when $\vec Q = 0$.
 
@@ -94,35 +94,35 @@ The series converges for every $\tilde{Q} \in \mathbb{B}$, because $\mathbb{B}$ 
 Write $\tilde{Q} = Q_0 e_0 + \vec Q$. The scalar part $Q_0 e_0$ commutes with everything, so by the identity $\exp(A + B) = \exp(A)\exp(B)$ for commuting $A$ and $B$,
 
 $$
-\exp(\tilde{Q}) = \exp(Q_0 e_0) \exp(\vec Q) = e^{Q_0} \exp(\vec Q),
+\exp(\tilde{Q}) = \exp(Q_0 e_0) \exp(\vec Q) = \exp(Q_0) \exp(\vec Q),
 $$
 
-where $e^{Q_0}$ is the ordinary complex exponential. So it suffices to compute the exponential of the vector part $\vec Q$.
+where $\exp(Q_0)$ is the ordinary complex exponential. So it suffices to compute the exponential of the vector part $\vec Q$.
 
 ### The Case $B \neq 0$
 
-If $B \neq 0$, write $\vec Q = B \hat u$ with $\hat u^2 = -e_0$. The powers of $\vec Q$ satisfy
+If $B \neq 0$, write $\vec Q = B \vec u$ with $\vec u^2 = -e_0$. The powers of $\vec Q$ satisfy
 
 $$
-\vec Q^{2m} = (-1)^m B^{2m} e_0, \qquad \vec Q^{2m+1} = (-1)^m B^{2m+1} \hat u.
+\vec Q^{2m} = (-1)^m B^{2m} e_0, \qquad \vec Q^{2m+1} = (-1)^m B^{2m+1} \vec u.
 $$
 
 Separating even and odd powers in the exponential,
 
 $$
-\exp(\vec Q) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m B^{2m}}{(2m)!}\right) e_0 + \left(\sum_{m=0}^{\infty} \frac{(-1)^m B^{2m+1}}{(2m+1)!}\right) \hat u.
+\exp(\vec Q) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m B^{2m}}{(2m)!}\right) e_0 + \left(\sum_{m=0}^{\infty} \frac{(-1)^m B^{2m+1}}{(2m+1)!}\right) \vec u.
 $$
 
 These are the Taylor series of the complex cosine and sine:
 
 $$
-\exp(\vec Q) = \cos B \, e_0 + \sin B \, \hat u.
+\exp(\vec Q) = \cos B \, e_0 + \sin B \, \vec u.
 $$
 
 So
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \bigl(\cos B \, e_0 + \sin B \, \hat u\bigr), \qquad B \neq 0.
+\exp(\tilde{Q}) = \exp(Q_0) \bigl(\cos B \, e_0 + \sin B \, \vec u\bigr), \qquad B \neq 0.
 $$
 
 ### The Case $B = 0$
@@ -142,7 +142,7 @@ $$
 So
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} (e_0 + \vec Q), \qquad B = 0.
+\exp(\tilde{Q}) = \exp(Q_0) (e_0 + \vec Q), \qquad B = 0.
 $$
 
 This is the analogue of the exponential of a nilpotent matrix: $\exp(N) = I + N$.
@@ -152,7 +152,7 @@ This is the analogue of the exponential of a nilpotent matrix: $\exp(N) = I + N$
 If $\vec Q = 0$, the biquaternion is a complex scalar, and both formulas reduce to
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} e_0,
+\exp(\tilde{Q}) = \exp(Q_0) e_0,
 $$
 
 which is the ordinary complex exponential.
@@ -162,31 +162,31 @@ which is the ordinary complex exponential.
 $$
 \exp(\tilde{Q}) =
 \begin{cases}
-e^{Q_0} \bigl(\cos B \, e_0 + \sin B \, \hat u\bigr) & \text{if } B \neq 0, \\[2mm]
-e^{Q_0} (e_0 + \vec Q) & \text{if } B = 0,
+\exp(Q_0) \bigl(\cos B \, e_0 + \sin B \, \vec u\bigr) & \text{if } B \neq 0, \\[2mm]
+\exp(Q_0) (e_0 + \vec Q) & \text{if } B = 0,
 \end{cases}
 $$
 
-where $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ and $\hat u = \vec Q/B$.
+where $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ and $\vec u = \vec Q/B$.
 
 ### Properties
 
 **Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the exponential is not multiplicative.
 
-**Non-vanishing.** The exponential is never zero. In the oscillatory case, $e^{Q_0} \neq 0$ and the factor $\cos B \, e_0 + \sin B \, \hat u$ is invertible: its inverse is $\cos B \, e_0 - \sin B \, \hat u$, as follows from the identity
+**Non-vanishing.** The exponential is never zero. In the oscillatory case, $\exp(Q_0) \neq 0$ and the factor $\cos B \, e_0 + \sin B \, \vec u$ is invertible: its inverse is $\cos B \, e_0 - \sin B \, \vec u$, as follows from the identity
 
 $$
-(\cos B \, e_0 + \sin B \, \hat u)(\cos B \, e_0 - \sin B \, \hat u) = (\cos^2 B + \sin^2 B) e_0 = e_0.
+(\cos B \, e_0 + \sin B \, \vec u)(\cos B \, e_0 - \sin B \, \vec u) = (\cos^2 B + \sin^2 B) e_0 = e_0.
 $$
 
-In the nilpotent case, $e^{Q_0} \neq 0$ and $(e_0 + \vec Q)(e_0 - \vec Q) = e_0 - \vec Q^2 = e_0$.
+In the nilpotent case, $\exp(Q_0) \neq 0$ and $(e_0 + \vec Q)(e_0 - \vec Q) = e_0 - \vec Q^2 = e_0$.
 
 **Derivative in the scalar direction.** The exponential satisfies $\partial_0 \exp(\tilde{Q}) = \exp(\tilde{Q})$, where $\partial_0 = \partial/\partial Q_0$ is the derivative in the scalar direction. This is the reason the exponential is the fundamental solution of the scalar differential operator $\partial_0$.
 
-**Derivative in the vector directions.** The derivatives $\partial_k \exp(\tilde{Q})$ for $k = 1, 2, 3$ are **not** equal to $\exp(\tilde{Q}) e_k$ or $e_k \exp(\tilde{Q})$ in general. The reason is that $\partial_k \tilde{Q} = e_k$ does not commute with $\tilde{Q}$ unless $\tilde{Q}$ lies in the subalgebra generated by $e_0$ and $e_k$. The correct expression is the biquaternion analogue of the matrix identity $\partial e^M = \int_0^1 e^{sM}(\partial M)e^{(1-s)M}\,ds$, namely
+**Derivative in the vector directions.** The derivatives $\partial_k \exp(\tilde{Q})$ for $k = 1, 2, 3$ are **not** equal to $\exp(\tilde{Q}) e_k$ or $e_k \exp(\tilde{Q})$ in general. The reason is that $\partial_k \tilde{Q} = e_k$ does not commute with $\tilde{Q}$ unless $\tilde{Q}$ lies in the subalgebra generated by $e_0$ and $e_k$. The correct expression is the biquaternion analogue of the matrix identity $\partial \exp(M) = \int_0^1 \exp(sM)(\partial M)\exp((1-s)M)\,ds$, namely
 
 $$
-\partial_k \exp(\tilde{Q}) = \int_0^1 e^{s \tilde{Q}} e_k e^{(1-s)\tilde{Q}} \, ds.
+\partial_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) e_k \exp((1-s)\tilde{Q}) \, ds.
 $$
 
 This reduces to $\exp(\tilde{Q}) e_k$ only when $e_k$ commutes with $\tilde{Q}$.
@@ -194,10 +194,10 @@ This reduces to $\exp(\tilde{Q}) e_k$ only when $e_k$ commutes with $\tilde{Q}$.
 **Biquaternion norm.** The biquaternion norm of the exponential is
 
 $$
-N(\exp(\tilde{Q})) = \exp(2 Q_0) = \exp(\mathrm{Tr}(\tilde{Q})),
+\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_0) = \exp(\mathrm{Tr}(\tilde{Q})),
 $$
 
-where $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}\,\tilde{Q} = 2Q_0$ is the trace of the element. The verification is direct: in the oscillatory regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(\cos^2 B + \sin^2 B) = e^{2 Q_0}$; in the nilpotent regime, $N(\exp(\tilde{Q})) = e^{2 Q_0}(1 + 0) = e^{2 Q_0}$.
+where $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}\,\tilde{Q} = 2Q_0$ is the trace of the element. The verification is direct: in the oscillatory regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_0)(\cos^2 B + \sin^2 B) = \exp(2 Q_0)$; in the nilpotent regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_0)(1 + 0) = \exp(2 Q_0)$.
 
 ### Derivative at the Origin
 
@@ -229,7 +229,7 @@ Because $\exp$ is surjective onto the group of units but not injective (§*The L
 
 **Theorem.** For a biquaternion $\tilde{Q}$ one has $\exp(\tilde{Q}) = e_0$ if and only if $\tilde{Q}$ is diagonalizable over $\mathbb{C}$ and every eigenvalue of $\tilde{Q}$ lies in $2\pi i\mathbb{Z}$.
 
-**Proof.** If $\tilde{Q}$ is diagonalizable with eigenvalues $\lambda_1, \lambda_2$, then $\exp(\tilde{Q})$ is diagonalizable with eigenvalues $e^{\lambda_1}, e^{\lambda_2}$, and equals $I$ exactly when $e^{\lambda_1} = e^{\lambda_2} = 1$. Conversely, write $\tilde{Q} = S + N$ with $S$ semisimple and $N$ nilpotent commuting. Then $\exp(\tilde{Q}) = \exp(S)\exp(N)$ is the product of a semisimple and a unipotent factor; if it equals $I$, the unipotent factor is semisimple, hence trivial, so $N = 0$.
+**Proof.** If $\tilde{Q}$ is diagonalizable with eigenvalues $\lambda_1, \lambda_2$, then $\exp(\tilde{Q})$ is diagonalizable with eigenvalues $\exp(\lambda_1), \exp(\lambda_2)$, and equals $I$ exactly when $\exp(\lambda_1) = \exp(\lambda_2) = 1$. Conversely, write $\tilde{Q} = S + N$ with $S$ semisimple and $N$ nilpotent commuting. Then $\exp(\tilde{Q}) = \exp(S)\exp(N)$ is the product of a semisimple and a unipotent factor; if it equals $I$, the unipotent factor is semisimple, hence trivial, so $N = 0$.
 
 **Concrete description.** A biquaternion lies in the kernel exactly when its representing matrix is conjugate to $\mathrm{diag}(2\pi i m, 2\pi i n)$ with $m, n \in \mathbb{Z}$. The kernel is thus an infinite subset of $\mathbb{B}$, not an additive subgroup, since $\exp$ is not a homomorphism. It contains the scalars $2\pi i k\, e_0$ but much more: $\mathrm{diag}(0, 2\pi i)$ also exponentiates to the identity.
 
@@ -241,26 +241,26 @@ $$
 
 the eigenvalues then being $2\pi i(k\pm j)/2$. If $B = 0$ but $\vec Q \neq 0$, the matrix is a nonzero nilpotent, hence not diagonalizable and not in the kernel: $\exp(\vec Q) = e_0 + \vec Q \neq e_0$.
 
-**Example.** The biquaternion $\tilde{Q} = \pi i\, e_0 + \pi\, e_3$ has $Q_0 = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = e^{\pi i}(\cos\pi\, e_0 + \sin\pi\, e_3) = e_0$. Since $N(\tilde{Q}) = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.
+**Example.** The biquaternion $\tilde{Q} = \pi i\, e_0 + \pi\, e_3$ has $Q_0 = \pi i$, $B = \pi$, so $k = j = 1$ and $\exp(\tilde{Q}) = \exp(\pi i)(\cos\pi\, e_0 + \sin\pi\, e_3) = e_0$. Since $\langle\tilde{Q}\rangle_{\natural} = 0$, this kernel element is a zero divisor: the kernel is not contained in the group of units.
 
 **On the phrase "eigenvalues differ by a multiple of $2\pi i$".** The condition implies such a difference, but the difference alone is weaker: $\tilde{Q} = e_0$ has equal eigenvalues yet $\exp(e_0) \neq e_0$. Each eigenvalue must be a multiple of $2\pi i$.
 
 ### The Exponential in the Two Real Directions
 
-Let $\hat u$ be a real unit vector part, so that $\hat u^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\hat u$ and the vector directions $\psi\, i\hat u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *The 12 Products of the Biquaternion Complex Space*.
+Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_0$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\psi\, i\vec u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *The 12 Products of the Biquaternioid Complex Space*.
 
 **The bivector directions.** For real $\theta$,
 
 $$
-\exp(\theta\hat u) = \cos\theta\, e_0 + \sin\theta\, \hat u,
+\exp(\theta\vec u) = \cos\theta\, e_0 + \sin\theta\, \vec u,
 $$
 
-a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\hat u) = e_0$, and at the half-period $\exp(\pi\hat u) = -e_0$.
+a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $N = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_0$, and at the half-period $\exp(\pi\vec u) = -e_0$.
 
-**The vector directions.** With $(i\hat u)^2 = +e_0$ and real parameter $\psi \in \mathbb{R}$,
+**The vector directions.** With $(i\vec u)^2 = +e_0$ and real parameter $\psi \in \mathbb{R}$,
 
 $$
-\exp(\psi\, i\hat u) = \cosh\psi\, e_0 + \sinh\psi\, i\hat u.
+\exp(\psi\, i\vec u) = \cosh\psi\, e_0 + \sinh\psi\, i\vec u.
 $$
 
 This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
@@ -299,28 +299,28 @@ where $i$ is the scalar imaginary. These identities hold because $i$ commutes wi
 
 ### The Case $B \neq 0$
 
-For $\tilde{Q} = Q_0 e_0 + \vec Q$ with $B \neq 0$ and $\hat u = \vec Q/B$, we have
+For $\tilde{Q} = Q_0 e_0 + \vec Q$ with $B \neq 0$ and $\vec u = \vec Q/B$, we have
 
 $$
-\exp(\tilde{Q}) = e^{Q_0}(\cos B \, e_0 + \sin B \, \hat u), \qquad \exp(-\tilde{Q}) = e^{-Q_0}(\cos B \, e_0 - \sin B \, \hat u).
+\exp(\tilde{Q}) = \exp(Q_0)(\cos B \, e_0 + \sin B \, \vec u), \qquad \exp(-\tilde{Q}) = \exp(-Q_0)(\cos B \, e_0 - \sin B \, \vec u).
 $$
 
 Substituting into the formulas for the trigonometric and hyperbolic functions, we obtain
 
 $$
-\sin(\tilde{Q}) = \sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \hat u,
+\sin(\tilde{Q}) = \sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \vec u,
 $$
 
 $$
-\cos(\tilde{Q}) = \cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \hat u,
+\cos(\tilde{Q}) = \cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \vec u,
 $$
 
 $$
-\sinh(\tilde{Q}) = \sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \hat u,
+\sinh(\tilde{Q}) = \sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \vec u,
 $$
 
 $$
-\cosh(\tilde{Q}) = \cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \hat u.
+\cosh(\tilde{Q}) = \cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \vec u.
 $$
 
 ### The Case $B = 0$
@@ -358,7 +358,7 @@ If $\vec Q = 0$, both formulas reduce to the ordinary complex trigonometric and 
 $$
 \sin(\tilde{Q}) =
 \begin{cases}
-\sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \hat u & \text{if } B \neq 0, \\[1mm]
+\sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \vec u & \text{if } B \neq 0, \\[1mm]
 \sin(Q_0) e_0 + \cos(Q_0) \vec Q & \text{if } B = 0,
 \end{cases}
 $$
@@ -366,7 +366,7 @@ $$
 $$
 \cos(\tilde{Q}) =
 \begin{cases}
-\cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \hat u & \text{if } B \neq 0, \\[1mm]
+\cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \vec u & \text{if } B \neq 0, \\[1mm]
 \cos(Q_0) e_0 - \sin(Q_0) \vec Q & \text{if } B = 0,
 \end{cases}
 $$
@@ -374,7 +374,7 @@ $$
 $$
 \sinh(\tilde{Q}) =
 \begin{cases}
-\sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \hat u & \text{if } B \neq 0, \\[1mm]
+\sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \vec u & \text{if } B \neq 0, \\[1mm]
 \sinh(Q_0) e_0 + \cosh(Q_0) \vec Q & \text{if } B = 0,
 \end{cases}
 $$
@@ -382,7 +382,7 @@ $$
 $$
 \cosh(\tilde{Q}) =
 \begin{cases}
-\cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \hat u & \text{if } B \neq 0, \\[1mm]
+\cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \vec u & \text{if } B \neq 0, \\[1mm]
 \cosh(Q_0) e_0 + \sinh(Q_0) \vec Q & \text{if } B = 0.
 \end{cases}
 $$
@@ -397,7 +397,7 @@ $$
 
 holds for every $\tilde{Q} \in \mathbb{B}$.
 
-**Proof.** Write $A = e^{i\tilde{Q}}$ and $B = e^{-i\tilde{Q}}$. Since $i\tilde{Q}$ commutes with $-i\tilde{Q}$, we have $AB = e^{i\tilde{Q}}e^{-i\tilde{Q}} = e^{i\tilde{Q}-i\tilde{Q}} = e_0$. Then
+**Proof.** Write $A = \exp(i\tilde{Q})$ and $B = \exp(-i\tilde{Q})$. Since $i\tilde{Q}$ commutes with $-i\tilde{Q}$, we have $AB = \exp(i\tilde{Q})\exp(-i\tilde{Q}) = \exp(i\tilde{Q}-i\tilde{Q}) = e_0$. Then
 
 $$
 \sin^2(\tilde{Q}) + \cos^2(\tilde{Q})
@@ -426,7 +426,7 @@ $$
 
 holds for every $\tilde{Q} \in \mathbb{B}$.
 
-**Proof.** Write $A = e^{\tilde{Q}}$ and $B = e^{-\tilde{Q}}$. Since $\tilde{Q}$ commutes with $-\tilde{Q}$, we have $AB = e^{\tilde{Q}-\tilde{Q}} = e_0$. Then
+**Proof.** Write $A = \exp(\tilde{Q})$ and $B = \exp(-\tilde{Q})$. Since $\tilde{Q}$ commutes with $-\tilde{Q}$, we have $AB = \exp(\tilde{Q}-\tilde{Q}) = e_0$. Then
 
 $$
 \cosh^2(\tilde{Q}) - \sinh^2(\tilde{Q})
@@ -491,33 +491,33 @@ $$
 \log(\tilde{Q}) = \tilde{L} \iff \exp(\tilde{L}) = \tilde{Q}.
 $$
 
-The exponential is never a zero divisor: from the property $N(\exp(\tilde{L})) = e^{2 L_0}$ for every $\tilde{L}$, the biquaternion norm of $\exp(\tilde{L})$ is always nonzero. So the logarithm can exist only on the group of units $\mathbb{B}^\times = \{N(\tilde{Q}) \neq 0\}$. The following theorem shows that it exists on the whole group of units, and on no larger set.
+The exponential is never a zero divisor: from the property $\langle\exp(\tilde{L})\rangle_{\natural} = \exp(2 L_0)$ for every $\tilde{L}$, the biquaternion norm of $\exp(\tilde{L})$ is always nonzero. So the logarithm can exist only on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. The following theorem shows that it exists on the whole group of units, and on no larger set.
 
 ### Existence of the Logarithm
 
 **Theorem.** Every invertible biquaternion has a logarithm. The domain of the logarithm is exactly the group of units
 
 $$
-\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) \neq 0\}.
+\mathbb{B}^\times = \{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}.
 $$
 
-**Proof.** Let $\tilde{Q}$ be invertible, so $N(\tilde{Q}) \neq 0$. We treat the three cases.
+**Proof.** Let $\tilde{Q}$ be invertible, so $\langle\tilde{Q}\rangle_{\natural} \neq 0$. We treat the three cases.
 
-**Case $B \neq 0$.** Set $R = \sqrt{N(\tilde{Q})}$, a fixed square root, $\hat u = \vec Q/B$, and let $\Theta$ be determined by $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$, so that $Q_0 = R\cos\Theta$ and $B = R\sin\Theta$. Since $N(\tilde{Q}) \neq 0$, we have $R \neq 0$, so the principal branch of $\log R$ is defined. Set
+**Case $B \neq 0$.** Set $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, a fixed square root, $\vec u = \vec Q/B$, and let $\Theta$ be determined by $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$, so that $Q_0 = R\cos\Theta$ and $B = R\sin\Theta$. Since $\langle\tilde{Q}\rangle_{\natural} \neq 0$, we have $R \neq 0$, so the principal branch of $\log R$ is defined. Set
 
 $$
-\tilde{L} = \log R \, e_0 + \Theta \hat u.
+\tilde{L} = \log R \, e_0 + \Theta \vec u.
 $$
 
 Then
 
 $$
-\exp(\tilde{L}) = R(\cos\Theta \, e_0 + \sin\Theta \, \hat u) = Q_0 e_0 + B \hat u = \tilde{Q},
+\exp(\tilde{L}) = R(\cos\Theta \, e_0 + \sin\Theta \, \vec u) = Q_0 e_0 + B \vec u = \tilde{Q},
 $$
 
-using the identity $\exp(\Theta \hat u) = \cos\Theta \, e_0 + \sin\Theta \, \hat u$, which follows from $\hat u^2 = -e_0$.
+using the identity $\exp(\Theta \vec u) = \cos\Theta \, e_0 + \sin\Theta \, \vec u$, which follows from $\vec u^2 = -e_0$.
 
-**Case $B = 0$, $\vec Q \neq 0$.** Then $\vec Q^2 = 0$ and $N(\tilde{Q}) = Q_0^2 \neq 0$, so $Q_0 \neq 0$. Set
+**Case $B = 0$, $\vec Q \neq 0$.** Then $\vec Q^2 = 0$ and $\langle\tilde{Q}\rangle_{\natural} = Q_0^2 \neq 0$, so $Q_0 \neq 0$. Set
 
 $$
 \tilde{L} = \log Q_0 \, e_0 + \vec Q/Q_0.
@@ -535,32 +535,32 @@ $$
 \exp(\tilde{L}) = \exp(\log Q_0 \cdot e_0) \exp(\vec Q/Q_0) = Q_0 (e_0 + \vec Q/Q_0) = Q_0 e_0 + \vec Q = \tilde{Q}.
 $$
 
-**Case $\vec Q = 0$.** Then $\tilde{Q} = Q_0 e_0$ with $Q_0 \neq 0$ (since $N(\tilde{Q}) = Q_0^2 \neq 0$), and $\log \tilde{Q} = \log Q_0 \cdot e_0$, the ordinary complex logarithm.
+**Case $\vec Q = 0$.** Then $\tilde{Q} = Q_0 e_0$ with $Q_0 \neq 0$ (since $\langle\tilde{Q}\rangle_{\natural} = Q_0^2 \neq 0$), and $\log \tilde{Q} = \log Q_0 \cdot e_0$, the ordinary complex logarithm.
 
-**Converse.** If $\tilde{Q}$ has a logarithm, then $\tilde{Q} = \exp(\tilde{L})$ for some $\tilde{L}$, and $N(\tilde{Q}) = N(\exp(\tilde{L})) = e^{2 L_0} \neq 0$. So $\tilde{Q}$ is invertible.
+**Converse.** If $\tilde{Q}$ has a logarithm, then $\tilde{Q} = \exp(\tilde{L})$ for some $\tilde{L}$, and $\langle\tilde{Q}\rangle_{\natural} = \langle\exp(\tilde{L})\rangle_{\natural} = \exp(2 L_0) \neq 0$. So $\tilde{Q}$ is invertible.
 
 ### Summary of the Logarithm
 
 $$
 \log(\tilde{Q}) =
 \begin{cases}
-\log R \, e_0 + \Theta \hat u & \text{if } B \neq 0, \\[2mm]
+\log R \, e_0 + \Theta \vec u & \text{if } B \neq 0, \\[2mm]
 \log Q_0 \, e_0 + \dfrac{\vec Q}{Q_0} & \text{if } B = 0, \; \vec Q \neq 0, \\[2mm]
 \log Q_0 \, e_0 & \text{if } \vec Q = 0,
 \end{cases}
 $$
 
-defined on the group of units $\mathbb{B}^\times = \{N(\tilde{Q}) \neq 0\}$. Here $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$. The branch is determined by the choice of $R$, the choice of $\Theta$, and the choice of branch of the complex logarithm.
+defined on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. Here $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$. The branch is determined by the choice of $R$, the choice of $\Theta$, and the choice of branch of the complex logarithm.
 
 ### Properties
 
-**Multiplicativity.** The logarithm satisfies $\log(\tilde{P} \tilde{Q}) = \log(\tilde{P}) + \log(\tilde{Q})$ whenever $\tilde{P}$ and $\tilde{Q}$ commute. In general the logarithm is not multiplicative, and the converse is not claimed: as for the exponential group law (§*The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$*), a non-commuting pair may satisfy the identity under a compatible choice of branches. The failure is the same as in the quaternion case: when the two axes $\hat u$ and $\hat{m}$ do not commute, the product of the exponentials is not the exponential of the sum.
+**Multiplicativity.** The logarithm satisfies $\log(\tilde{P} \tilde{Q}) = \log(\tilde{P}) + \log(\tilde{Q})$ whenever $\tilde{P}$ and $\tilde{Q}$ commute. In general the logarithm is not multiplicative, and the converse is not claimed: as for the exponential group law (§*The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$*), a non-commuting pair may satisfy the identity under a compatible choice of branches. The failure is the same as in the quaternion case: when the two axes $\vec u$ and $\vec u_{m}$ do not commute, the product of the exponentials is not the exponential of the sum.
 
 **Multivaluedness.** The logarithm is multivalued. The branches are parameterized by the integer shifts of the scalar logarithm and of the angle $\Theta$, that is, by $\log R \mapsto \log R + 2\pi i n$ and $\Theta \mapsto \Theta + 2\pi m$ with $n, m \in \mathbb{Z}$; equivalently, they differ by the elements of the kernel of the exponential.
 
 **Domain.** The logarithm exists exactly on the group of units $\mathbb{B}^\times$. It fails on the zero divisor set $\mathcal{Z}$ and at the zero element $0$.
 
-**Failure at pure nilpotents.** In particular, the logarithm does not exist at any pure nilpotent $\hat{Q} = \vec Q$ with $\vec Q^2 = 0$ and $\vec Q \neq 0$: such an element is a nonzero zero divisor, hence not invertible, whereas every exponential is invertible.
+**Failure at pure nilpotents.** In particular, the logarithm does not exist at any pure nilpotent $\vec Q$ with $\vec Q^2 = 0$ and $\vec Q \neq 0$: such an element is a nonzero zero divisor, hence not invertible, whereas every exponential is invertible.
 
 ## The Power Functions
 
@@ -579,7 +579,7 @@ The power function inherits the multivaluedness of the logarithm: for non-intege
 Using the formula for the logarithm and the exponential, we obtain
 
 $$
-\tilde{Q}^\alpha = R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \hat u\bigr), \qquad B \neq 0,
+\tilde{Q}^\alpha = R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \vec u\bigr), \qquad B \neq 0,
 $$
 
 where $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$.
@@ -603,7 +603,7 @@ If $\vec Q = 0$, the power function reduces to the ordinary complex power.
 $$
 \tilde{Q}^\alpha =
 \begin{cases}
-R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \hat u\bigr) & \text{if } B \neq 0, \\[2mm]
+R^\alpha \bigl(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \vec u\bigr) & \text{if } B \neq 0, \\[2mm]
 Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \vec Q & \text{if } B = 0, \; \vec Q \neq 0,
 \end{cases}
 $$
@@ -621,19 +621,19 @@ defined on $\mathbb{B}^\times$.
 **Consistency with the biquaternion norm.** For a fixed choice of branch, the power function satisfies
 
 $$
-N(\tilde{Q}^\alpha) = N(\tilde{Q})^\alpha.
+\langle\tilde{Q}^\alpha\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}^\alpha.
 $$
 
-**Proof.** In the oscillatory regime, $\tilde{Q}^\alpha = R^\alpha(\cos(\alpha\Theta) e_0 + \sin(\alpha\Theta) \hat u)$, so
+**Proof.** In the oscillatory regime, $\tilde{Q}^\alpha = R^\alpha(\cos(\alpha\Theta) e_0 + \sin(\alpha\Theta) \vec u)$, so
 
 $$
-N(\tilde{Q}^\alpha) = R^{2\alpha}(\cos^2(\alpha\Theta) + \sin^2(\alpha\Theta)) = R^{2\alpha} = (R^2)^\alpha = N(\tilde{Q})^\alpha.
+\langle\tilde{Q}^\alpha\rangle_{\natural} = R^{2\alpha}(\cos^2(\alpha\Theta) + \sin^2(\alpha\Theta)) = R^{2\alpha} = (R^2)^\alpha = \langle\tilde{Q}\rangle_{\natural}^\alpha.
 $$
 
 In the nilpotent regime, $\tilde{Q}^\alpha = Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1}\vec Q$, so
 
 $$
-N(\tilde{Q}^\alpha) = (Q_0^\alpha)^2 + 0 = Q_0^{2\alpha} = N(\tilde{Q})^\alpha.
+\langle\tilde{Q}^\alpha\rangle_{\natural} = (Q_0^\alpha)^2 + 0 = Q_0^{2\alpha} = \langle\tilde{Q}\rangle_{\natural}^\alpha.
 $$
 
 The identity is **branch-dependent**: a consistent choice of branch must be made for $R^\alpha$ and $R^{2\alpha}$ (respectively $Q_0^\alpha$ and $Q_0^{2\alpha}$), since the multivaluedness of the power means that the two sides can differ by a phase if inconsistent branches are chosen. Equivalently, one must use a compatible choice of the complex logarithm on both sides of the identity.
@@ -645,11 +645,11 @@ The identity is **branch-dependent**: a consistent choice of branch must be made
 The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{B}}$, which is the fixed-point set of complex conjugation. For a quaternion $q = q_0 + \vec q$ with real coefficients, the complex norm $B = |\vec q|$ is real and non-negative, and the elementary functions reduce to the ordinary quaternion elementary functions:
 
 $$
-\exp(q) = e^{q_0}(\cos|\vec q| + \sin|\vec q| \, \hat u),
+\exp(q) = \exp(q_0)(\cos|\vec q| + \sin|\vec q| \, \vec u),
 $$
 
 $$
-\log(q) = \log|q| + \arccos(q_0/|q|) \hat u,
+\log(q) = \log|q| + \arccos(q_0/|q|) \vec u,
 $$
 
 and so on, where $|q| = \sqrt{q_0^2 + |\vec q|^2}$ is the quaternion norm. These are the standard formulas of quaternion analysis.
@@ -659,7 +659,7 @@ and so on, where $|q| = \sqrt{q_0^2 + |\vec q|^2}$ is the quaternion norm. These
 The biquaternion algebra contains the complex numbers as the subspace $\mathbb{C}_{\mathbb{B}}$, which is the fixed-point set of quaternion conjugation (the scalar part). For a complex scalar $\tilde{Q} = Q_0 e_0$, the vector part vanishes, and the elementary functions reduce to the ordinary complex elementary functions:
 
 $$
-\exp(Q_0 e_0) = e^{Q_0} e_0, \qquad \log(Q_0 e_0) = \log(Q_0) e_0,
+\exp(Q_0 e_0) = \exp(Q_0) e_0, \qquad \log(Q_0 e_0) = \log(Q_0) e_0,
 $$
 
 and so on. These are the standard formulas of complex analysis.
@@ -682,15 +682,15 @@ This is the fundamental reason the theory of the elementary functions of a biqua
 
 | Function | $B \neq 0$ | $B = 0$ |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $e^{Q_0}(\cos B \, e_0 + \sin B \, \hat u)$ | $e^{Q_0}(e_0 + \vec Q)$ |
-| $\sin(\tilde{Q})$ | $\sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \hat u$ | $\sin(Q_0) e_0 + \cos(Q_0) \vec Q$ |
-| $\cos(\tilde{Q})$ | $\cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \hat u$ | $\cos(Q_0) e_0 - \sin(Q_0) \vec Q$ |
-| $\sinh(\tilde{Q})$ | $\sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \hat u$ | $\sinh(Q_0) e_0 + \cosh(Q_0) \vec Q$ |
-| $\cosh(\tilde{Q})$ | $\cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \hat u$ | $\cosh(Q_0) e_0 + \sinh(Q_0) \vec Q$ |
-| $\log(\tilde{Q})$ | $\log R \, e_0 + \Theta \hat u$ | $\log Q_0 \, e_0 + \vec Q/Q_0$ |
-| $\tilde{Q}^\alpha$ | $R^\alpha(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \hat u)$ | $Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \vec Q$ |
+| $\exp(\tilde{Q})$ | $\exp(Q_0)(\cos B \, e_0 + \sin B \, \vec u)$ | $\exp(Q_0)(e_0 + \vec Q)$ |
+| $\sin(\tilde{Q})$ | $\sin(Q_0) \cosh B \, e_0 + \cos(Q_0) \sinh B \, \vec u$ | $\sin(Q_0) e_0 + \cos(Q_0) \vec Q$ |
+| $\cos(\tilde{Q})$ | $\cos(Q_0) \cosh B \, e_0 - \sin(Q_0) \sinh B \, \vec u$ | $\cos(Q_0) e_0 - \sin(Q_0) \vec Q$ |
+| $\sinh(\tilde{Q})$ | $\sinh(Q_0) \cos B \, e_0 + \cosh(Q_0) \sin B \, \vec u$ | $\sinh(Q_0) e_0 + \cosh(Q_0) \vec Q$ |
+| $\cosh(\tilde{Q})$ | $\cosh(Q_0) \cos B \, e_0 + \sinh(Q_0) \sin B \, \vec u$ | $\cosh(Q_0) e_0 + \sinh(Q_0) \vec Q$ |
+| $\log(\tilde{Q})$ | $\log R \, e_0 + \Theta \vec u$ | $\log Q_0 \, e_0 + \vec Q/Q_0$ |
+| $\tilde{Q}^\alpha$ | $R^\alpha(\cos(\alpha\Theta) \, e_0 + \sin(\alpha\Theta) \, \vec u)$ | $Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \vec Q$ |
 
-In the table, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, $\hat u = \vec Q/B$, $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$. The exponential, the trigonometric functions, and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$. The logarithm and the power function are defined only on the group of units $N(\tilde{Q}) \neq 0$; in the second column, the formulas for the logarithm and the power function assume $Q_0 \neq 0$, which is automatically implied by $N(\tilde{Q}) \neq 0$ when $B = 0$.
+In the table, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, $\vec u = \vec Q/B$, $R = \sqrt{Q_0^2 + B^2}$, $\cos\Theta = Q_0/R$, and $\sin\Theta = B/R$. The exponential, the trigonometric functions, and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$. The logarithm and the power function are defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$; in the second column, the formulas for the logarithm and the power function assume $Q_0 \neq 0$, which is automatically implied by $\langle\tilde{Q}\rangle_{\natural} \neq 0$ when $B = 0$.
 
 ## Open Questions
 
@@ -698,23 +698,23 @@ In the table, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, $\hat u = \vec Q/B$, $R = \sqr
 
 2. **The transition between the two regimes.** As $B \to 0$, the oscillatory formulas degenerate into the nilpotent ones. What is the precise nature of this degeneration? Is there a uniform asymptotic expansion that interpolates between the two regimes?
 
-3. **The complex norm.** What is the geometric or algebraic meaning of the complex norm $B$ when it is not real? The complex norm is a square root of the biquaternion norm, and it is complex for a general biquaternion, but its interpretation is not clear. In particular, $B$ is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.
+3. **The complex norm.** What is the geometric or algebraic meaning of the complex norm $\langle\cdot\rangle$ when it is not real? The complex norm is a square root of the biquaternion norm, and it is complex for a general biquaternion, but its interpretation is not clear. In particular, $\langle\cdot\rangle$ is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.
 
 4. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?
 
 5. **The logarithm at the boundary of the group of units.** The logarithm exists on $\mathbb{B}^\times$ but not on its boundary, which is the zero divisor set $\mathcal{Z}$ together with $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.
 
-6. **The derivative of the exponential in the vector directions.** The formula $\partial_k \exp(\tilde{Q}) = \int_0^1 e^{s \tilde{Q}} e_k e^{(1-s)\tilde{Q}}\,ds$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?
+6. **The derivative of the exponential in the vector directions.** The formula $\partial_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) e_k \exp((1-s)\tilde{Q})\,ds$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?
 
 ## Summary
 
 Every elementary function is defined by applying the scalar power series to $\tilde{Q}$, and all its values lie in the commutative subalgebra $\mathbb{C}[\tilde{Q}]$ generated by $\tilde{Q}$. This is why the standard identities of complex analysis — the Pythagorean identity, the hyperbolic identity, the double-angle formulas, the relation between the exponential and the trigonometric functions — survive the non-commutativity of $\mathbb{B}$ for a single variable; the addition formulas for two independent biquaternions do not, and fail for explicit counterexamples such as $\tilde{P} = e_1$, $\tilde{Q} = e_2$.
 
-The structure of $\mathbb{C}[\tilde{Q}]$ is governed by the discriminant and yields exactly two regimes. In the **oscillatory regime** $B \neq 0$ the subalgebra is $\mathbb{C} \times \mathbb{C}$, the element $\tilde{Q}$ is diagonalizable with eigenvalues $Q_0 \pm iB$, and the closed forms are the oscillatory-hyperbolic expressions of the collected table, built on $\tilde{Q} = Q_0 e_0 + B\hat u$ with $\hat u^2 = -e_0$. In the **nilpotent regime** $B = 0$, $\vec Q \neq 0$, the subalgebra is $\mathbb{C}[\epsilon]/(\epsilon^2)$ with the nilpotent $\epsilon = \vec Q$, and every power series truncates after the linear term: the exponential becomes $e^{Q_0}(e_0 + \vec Q)$, the logarithm becomes $\log Q_0\,e_0 + \vec Q/Q_0$, and the higher functions reduce to their first-order Taylor expansions in $\vec Q$.
+The structure of $\mathbb{C}[\tilde{Q}]$ is governed by the discriminant and yields exactly two regimes. In the **oscillatory regime** $B \neq 0$ the subalgebra is $\mathbb{C} \times \mathbb{C}$, the element $\tilde{Q}$ is diagonalizable with eigenvalues $Q_0 \pm iB$, and the closed forms are the oscillatory-hyperbolic expressions of the collected table, built on $\tilde{Q} = Q_0 e_0 + B\vec u$ with $\vec u^2 = -e_0$. In the **nilpotent regime** $B = 0$, $\vec Q \neq 0$, the subalgebra is $\mathbb{C}[\epsilon]/(\epsilon^2)$ with the nilpotent $\epsilon = \vec Q$, and every power series truncates after the linear term: the exponential becomes $\exp(Q_0)(e_0 + \vec Q)$, the logarithm becomes $\log Q_0\,e_0 + \vec Q/Q_0$, and the higher functions reduce to their first-order Taylor expansions in $\vec Q$.
 
-The exponential is the model of the theory. It is never zero, it satisfies $\exp(\tilde{P}+\tilde{Q}) = \exp(\tilde{P})\exp(\tilde{Q})$ when $\tilde{P}$ and $\tilde{Q}$ commute (the converse can fail, §*The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$*), and the logarithm inverts it on the group of units, using the decomposition $\tilde{Q} = R(\cos\Theta\,e_0 + \sin\Theta\,\hat u)$ with $R = \sqrt{N(\tilde{Q})}$, $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$, from which the power function $\tilde{Q}^{\alpha}$ is obtained. Because the scalar imaginary $i$ commutes with everything, it relates the trigonometric functions to the exponential and the trigonometric to the hyperbolic functions, but only for a single argument in a common plane.
+The exponential is the model of the theory. It is never zero, it satisfies $\exp(\tilde{P}+\tilde{Q}) = \exp(\tilde{P})\exp(\tilde{Q})$ when $\tilde{P}$ and $\tilde{Q}$ commute (the converse can fail, §*The Group Law: $\exp(a)\exp(b)$ versus $\exp(a+b)$*), and the logarithm inverts it on the group of units, using the decomposition $\tilde{Q} = R(\cos\Theta\,e_0 + \sin\Theta\,\vec u)$ with $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$, from which the power function $\tilde{Q}^{\alpha}$ is obtained. Because the scalar imaginary $i$ commutes with everything, it relates the trigonometric functions to the exponential and the trigonometric to the hyperbolic functions, but only for a single argument in a common plane.
 
-The exponential, the trigonometric and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$; the logarithm and the power function are defined only on the group of units $N(\tilde{Q}) \neq 0$, and the logarithm there is many-valued, the ambiguity coming from the multi-valuedness of $\Theta$ and of the scalar logarithm.
+The exponential, the trigonometric and the hyperbolic functions are defined for every $\tilde{Q} \in \mathbb{B}$; the logarithm and the power function are defined only on the group of units $\langle\tilde{Q}\rangle_{\natural} \neq 0$, and the logarithm there is many-valued, the ambiguity coming from the multi-valuedness of $\Theta$ and of the scalar logarithm.
 
 ## Summary of Notation
 
@@ -723,13 +723,13 @@ The exponential, the trigonometric and the hyperbolic functions are defined for 
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\tilde{Q} = Q_0 e_0 + \vec Q$ | Biquaternion; $\vec Q = \sum_k Q_k e_k$ the vector part |
 | $B = \sqrt{Q_1^2+Q_2^2+Q_3^2}$ | Complex norm of the vector part |
-| $\hat u = \vec Q/B$ | Axis of the vector part, $\hat u^2 = -e_0$, defined for $B \neq 0$ |
-| $R = \sqrt{Q_0^2+B^2} = \sqrt{N(\tilde{Q})}$ | Modulus of the logarithm and the power function |
+| $\vec u = \vec Q/B$ | Axis of the vector part, $\vec u^2 = -e_0$, defined for $B \neq 0$ |
+| $R = \sqrt{Q_0^2+B^2} = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | Modulus of the logarithm and the power function |
 | $\Theta$ | Angle of the logarithm and the power function, $\cos\Theta = Q_0/R$, $\sin\Theta = B/R$ |
 | $\mathbb{C}[\tilde{Q}]$ | Commutative subalgebra generated by $\tilde{Q}$; it contains every value $F(\tilde{Q})$ |
 | Oscillatory regime | $B \neq 0$: $\mathbb{C}[\tilde{Q}] \cong \mathbb{C} \times \mathbb{C}$, diagonalizable case |
 | Nilpotent regime | $B = 0$, $\vec Q \neq 0$: $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$, $\epsilon = \vec Q$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $N \neq 0$ is the group of units, the domain of $\log$ and of powers |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $N \neq 0$ is the group of units, the domain of $\log$ and of powers |
 
 ## Further Reading
 

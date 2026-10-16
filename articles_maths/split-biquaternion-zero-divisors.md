@@ -45,7 +45,7 @@ $$
 
 **Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde{R}_- \tilde\Pi_2$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = \tilde\Pi_1 \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$.
 
-**Remark.** The split-biquaternion norm is not the criterion: it is anisotropic, so $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$ (this is proved in *Split-Biquaternion Norm and Invertibility*). The zero divisor condition is **linear** in the idempotent basis.
+**Remark.** The split-biquaternion norm is not the criterion: it is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ (this is proved in *Split-Biquaternion Norm and Invertibility*). The zero divisor condition is **linear** in the idempotent basis.
 
 ### The Criterion in the Idempotent Basis
 
@@ -55,7 +55,7 @@ $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
 $$
 
-This is a **linear** condition in the idempotent basis, in contrast to the quadratic condition $N(\tilde{Q}) = 0$ that characterises the zero divisors of the biquaternion algebra. The two families of the criterion are the two four-dimensional subspaces studied next.
+This is a **linear** condition in the idempotent basis, in contrast to the quadratic condition $\langle\tilde{Q}\rangle_{\natural} = 0$ that characterises the zero divisors of the biquaternion algebra. The two families of the criterion are the two four-dimensional subspaces studied next.
 
 ## The Two Families of Zero Divisors
 
@@ -144,7 +144,7 @@ The analogy is exact:
 | Intersection | $\{0\}$ | $\{0\}$ |
 | Shape | X (two lines) | Two transverse four-spaces |
 
-In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $N(\tilde{Q})$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
+In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
 
 ## Comparison with the Biquaternion Case
 
@@ -304,7 +304,7 @@ The union $Z_+ \cup Z_-$ is a real algebraic variety: it is the union of the two
 
 ### The Set Is Not Defined by the Split-Biquaternion Norm
 
-The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $N$ is anisotropic, so $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $N$. The reason is that $N$ takes values in $\mathbb{D}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_1$ has $N(\tilde{Q}) = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, yet $\tilde{Q}\tilde\Pi_2 = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{H}_{\mathbb{D}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
+The zero divisor set is not detected by the split-biquaternion norm: the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ is anisotropic, so $\langle\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$ and the zero divisor set is not the null set of $\langle\cdot\rangle_{\natural}$. The reason is that $\langle\cdot\rangle_{\natural}$ takes values in $\mathbb{D}$, which is not a field: the element $\tilde{Q} = \tilde\Pi_1$ has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, yet $\tilde{Q}\tilde\Pi_2 = 0$ makes $\tilde{Q}$ a zero divisor of $\mathbb{H}_{\mathbb{D}}$. The defining form of the set, the reduced norm, and the proof of the anisotropy are in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Set Is Not a Quadric
 
@@ -318,9 +318,9 @@ $$
 $$
 The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
 
-The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the **reduced norm**
+The criterion is not the vanishing of the split-biquaternion norm. The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is anisotropic, so it vanishes only at the origin and does not detect the zero divisors; the detecting quantity is the **reduced norm**
 $$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
+\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^* \in \mathbb{R},
 $$
 a real quartic and the product of the two ordinary quaternion norms, whose nonzero zeros are exactly the zero divisors. The split-biquaternion norm, the reduced norm, the invertibility criterion, and the inverse formula are studied in *Split-Biquaternion Norm and Invertibility*.
 
@@ -336,9 +336,9 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
 | $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
+| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
 | $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
 | $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |

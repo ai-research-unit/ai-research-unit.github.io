@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The vector space $\mathbb{B}$ carries the Hermitian form $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the operation of the block has values in the vector subspace, so the form can be applied to the values. This article reads the two pairings that result: the **sesqui-trilinear pairing** $H(\tilde P\diamond\tilde Q,\tilde R)$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and the third, and the **quadratic form** $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ of the value with itself, which is the square of the value read by the form. Around the two it computes the trace form, which vanishes and is checked here and not assumed, the Gram matrix of the block on the basis pairs, which has rank three and a radical of dimension thirteen, and the space of the forms $\beta$ that are invariant under the block in the sense $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$, which is one-complex-dimensional and spanned by the scalar-slot form, so that the invariance of $H$ itself fails.
+The vector space $\mathbb{B}$ carries the Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and the operation of the block has values in the vector subspace, so the form can be applied to the values. This article reads the two pairings that result: the **sesqui-trilinear pairing** $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and the third, and the **quadratic form** $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{*}$ of the value with itself, which is the square of the value read by the form. Around the two it computes the trace form, which vanishes and is checked here and not assumed, the Gram matrix of the block on the basis pairs, which has rank three and a radical of dimension thirteen, and the space of the forms $\beta$ that are invariant under the block in the sense $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$, which is one-complex-dimensional and spanned by the scalar-slot form, so that the invariance of $\langle\cdot,\cdot\rangle_{*}$ itself fails.
 
-Two structural facts organise the reading. The first is the compatibility of the block with the sesquilinear sandwich of the row, $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternions*: the left operator of the block is the **vector part** of the sandwich with second parameter $e_0$, which is the left multiplication of the general plain sesqualgebra, and the sandwich with the two parameters equal is that left multiplication followed by the right multiplication. The second is the positivity: on the values the form $H$ is positive definite, its vanishing is exactly the vanishing of the value, and the set of the values that the form cannot separate is therefore the single value $0$. No length, no distance and no limit enters either reading; the form is algebraic throughout, and the positivity that is used is the positivity of the diagonal $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ on the ordered real part.
+Two structural facts organise the reading. The first is the compatibility of the block with the sesquilinear sandwich of the row, $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternioid*: the left operator of the block is the **vector part** of the sandwich with second parameter $e_0$, which is the left multiplication of the general plain sesqualgebra, and the sandwich with the two parameters equal is that left multiplication followed by the right multiplication. The second is the positivity: on the values the form $\langle\cdot,\cdot\rangle_{*}$ is positive definite, its vanishing is exactly the vanishing of the value, and the set of the values that the form cannot separate is therefore the single value $0$. No length, no distance and no limit enters either reading; the form is algebraic throughout, and the positivity that is used is the positivity of the diagonal $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ on the ordered real part.
 
-The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the product that is split is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $H$, its positivity and its cone are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the sandwich and its operators are *The Sesquilinear Sandwich on the Biquaternions* and *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*; the left multiplication of the row is *The Left and Right Multiplications of the Biquaternion Sesqualgebra*; the trace form and the four pairings of the algebra are *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; and the remarkable subspaces are *Introduction to the Remarkable Subspaces*.
+The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra*; the product that is split is *Introduction to the General Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the form $\langle\cdot,\cdot\rangle_{*}$, its positivity and its cone are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the sandwich and its operators are *The Sesquilinear Sandwich on the Biquaternioid* and *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*; the left multiplication of the row is *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*; the trace form and the four pairings of the algebra are *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; and the remarkable subspaces are *Introduction to the Remarkable Subspaces*.
 
 **Conventions.** As in the two articles above: $\tilde Q=Q_0e_0+\vec Q$, $\overline{\vec Q}$ the coefficientwise conjugate of the vector part, $(\vec P,\overline{\vec R})=\sum_kP_k\overline{R_k}$ the Hermitian pairing of the vector parts, $(\vec P,\vec R)=\sum_kP_kR_k$ the complex bilinear one, and $[\vec P,\vec Q,\vec R]$ the complex trilinear scalar triple product $(\vec P\times\vec Q,\vec R)$.
 
@@ -21,9 +21,9 @@ $$
 
 a map that is additive in each argument, $\mathbb{C}$-linear in $\tilde P$, and conjugate-linear in $\tilde Q$ and in $\tilde R$.
 
-*Proof.* Since the value $\tilde P\diamond\tilde Q$ is pure vector, only the vector part of $\tilde R$ contributes and $H(\tilde P\diamond\tilde Q,\tilde R)=\sum_k(P\diamond Q)_k\overline{R_k}$. Substituting the coordinate rule of the block and distributing the sum gives the three terms: the first is $-P_0\sum_k\overline{Q_k}\overline{R_k}=-P_0(\overline{\vec Q},\overline{\vec R})$, the second is $\overline{Q_0}\sum_kP_k\overline{R_k}=\overline{Q_0}(\vec P,\overline{\vec R})$, and the third is $-\sum_k(\vec P\times\overline{\vec Q})_k\overline{R_k}=-[\vec P,\overline{\vec Q},\overline{\vec R}]$. The parities are the parities of the three scalar rules of the product.
+*Proof.* Since the value $\tilde P\diamond\tilde Q$ is pure vector, only the vector part of $\tilde R$ contributes and $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}=\sum_k(P\diamond Q)_k\overline{R_k}$. Substituting the coordinate rule of the block and distributing the sum gives the three terms: the first is $-P_0\sum_k\overline{Q_k}\overline{R_k}=-P_0(\overline{\vec Q},\overline{\vec R})$, the second is $\overline{Q_0}\sum_kP_k\overline{R_k}=\overline{Q_0}(\vec P,\overline{\vec R})$, and the third is $-\sum_k(\vec P\times\overline{\vec Q})_k\overline{R_k}=-[\vec P,\overline{\vec Q},\overline{\vec R}]$. The parities are the parities of the three scalar rules of the product.
 
-**Corollary (the centre in the third argument drops).** The pairing depends on $\tilde R$ through its vector part alone, $H(\tilde P\diamond\tilde Q,\tilde R)=H(\tilde P\diamond\tilde Q,\mathrm{Vect}(\tilde R))$, since the value is pure vector. In the first argument the centre is active: at $\tilde P=\lambda e_0$ the pairing is $-\lambda(\overline{\vec Q},\overline{\vec R})$, and it vanishes for every $\tilde R$ exactly when $\vec Q=0$, that is when $\tilde Q$ is central.
+**Corollary (the centre in the third argument drops).** The pairing depends on $\tilde R$ through its vector part alone, $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}=\langle\tilde P\diamond\tilde Q,\mathrm{Vect}(\tilde R)\rangle_{*}$, since the value is pure vector. In the first argument the centre is active: at $\tilde P=\lambda e_0$ the pairing is $-\lambda(\overline{\vec Q},\overline{\vec R})$, and it vanishes for every $\tilde R$ exactly when $\vec Q=0$, that is when $\tilde Q$ is central.
 
 **Corollary (the value with itself).** For all biquaternions,
 
@@ -31,11 +31,11 @@ $$
 H\bigl(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\bigr)=\sum_{k=1}^{3}\bigl\lvert(P\diamond Q)_k\bigr\rvert^{2},
 $$
 
-which is a nonnegative real number, equal to zero exactly when $\tilde P\diamond\tilde Q=0$. The form is therefore **positive definite on the values**: the block has no isotropic value off $0$, and the radical of the restriction of $H$ to the image is trivial.
+which is a nonnegative real number, equal to zero exactly when $\tilde P\diamond\tilde Q=0$. The form is therefore **positive definite on the values**: the block has no isotropic value off $0$, and the radical of the restriction of $\langle\cdot,\cdot\rangle_{*}$ to the image is trivial.
 
-*Proof.* The first display is the definition of $H$ on a pure-vector element; the sum of the three squares of the moduli of the components is nonnegative by the positivity of the square of a real number, and vanishes exactly when the three components vanish.
+*Proof.* The first display is the definition of $\langle\cdot,\cdot\rangle_{*}$ on a pure-vector element; the sum of the three squares of the moduli of the components is nonnegative by the positivity of the square of a real number, and vanishes exactly when the three components vanish.
 
-**Remark (the norm of the value is an element).** The quantity $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ is the form at the two equal arguments, an element of the ordered real part and not a length; it is the algebraic square of the value, and it is the same quantity that the positivity theory of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* attaches to the element $\tilde P\diamond\tilde Q$. The multiplicative element norm of the value, $\tilde Q\tilde Q^{*}$ and its $\diamond$-companion, is a different object, and the two are separated as everywhere in the corpus.
+**Remark (the norm of the value is an element).** The quantity $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{*}$ is the form at the two equal arguments, an element of the ordered real part and not a length; it is the algebraic square of the value, and it is the same quantity that the positivity theory of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* attaches to the element $\tilde P\diamond\tilde Q$. The multiplicative element norm of the value, $\tilde Q\tilde Q^{*}$ and its $\diamond$-companion, is a different object, and the two are separated as everywhere in the corpus.
 
 ## The Trace Form
 
@@ -49,7 +49,7 @@ The **trace form** of the block, which is the scalar part of its multiplication,
 
 *Proof.* The coordinate rule gives $\tilde P\diamond\tilde Q=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$, each of whose three terms is a vector part; the scalar part of a vector part is zero.
 
-**Remark (the comparison with the row).** In the symmetric half of the same row the trace form is the whole multiplication, $\mathrm{Sc}(\mathrm{SPS}(\tilde P,\tilde Q))=H(\tilde P,\tilde Q)$, and the rank-one structure of the block follows from it; here the trace form is the zero form, and the block contributes nothing to the scalar part of the algebra. The two halves are the two extreme cases of the general statement of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Symmetrisation and the Antisymmetrisation*, where the symmetric half carries the whole scalar form and the antisymmetric half carries none.
+**Remark (the comparison with the row).** In the symmetric half of the same row the trace form is the whole multiplication, $\mathrm{Sc}(\mathrm{SPS}(\tilde P,\tilde Q))=\langle\tilde P,\tilde Q\rangle_{*}$, and the rank-one structure of the block follows from it; here the trace form is the zero form, and the block contributes nothing to the scalar part of the algebra. The two halves are the two extreme cases of the general statement of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Symmetrisation and the Antisymmetrisation*, where the symmetric half carries the whole scalar form and the antisymmetric half carries none.
 
 ## The Gram Matrix on the Basis Pairs
 
@@ -59,11 +59,11 @@ $$
 G_{(I,J),(K,L)}=H\bigl(e_I\diamond e_J,\;e_K\diamond e_L\bigr),
 $$
 
-whose entries are computed from the basis table of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* and the form. The **radical** of $G$ is the set of the complex combinations of the values $e_I\diamond e_J$ that the form cannot separate from zero.
+whose entries are computed from the basis table of *Introduction to the Antisymmetric Plain Sesqualgebra* and the form. The **radical** of $G$ is the set of the complex combinations of the values $e_I\diamond e_J$ that the form cannot separate from zero.
 
 **Proposition (rank three, radical thirteen).** The sixteen values $e_I\diamond e_J$ span the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three. The Gram matrix therefore has rank three, and its radical has complex dimension thirteen.
 
-*Proof.* The values are the columns and the rows of the basis table: the column of $e_0$ is $-e_J$ and reaches all three vector units, so the span contains $\mathrm{Vect}(\mathbb{B})$, and since every value is a vector part the span is exactly $\mathrm{Vect}(\mathbb{B})$, of dimension three. The Gram matrix of a set of vectors has rank the dimension of their span, by the non-degeneracy of the form $H$; hence rank three and radical dimension $16-3=13$.
+*Proof.* The values are the columns and the rows of the basis table: the column of $e_0$ is $-e_J$ and reaches all three vector units, so the span contains $\mathrm{Vect}(\mathbb{B})$, and since every value is a vector part the span is exactly $\mathrm{Vect}(\mathbb{B})$, of dimension three. The Gram matrix of a set of vectors has rank the dimension of their span, by the non-degeneracy of the form $\langle\cdot,\cdot\rangle_{*}$; hence rank three and radical dimension $16-3=13$.
 
 **Remark (the radical is the span of the dependencies).** The radical is not a subspace of the space but a subspace of the space of the sixteen formal pairs: it is the module of the linear relations among the values, and the single value $0$ is the only element of $\mathrm{Vect}(\mathbb{B})$ that the form cannot separate from zero. The Gram matrix is therefore the form read on the sixteen operations of the basis, and its rank three is the statement that those sixteen operations generate a three-dimensional image and no more.
 
@@ -83,9 +83,9 @@ $$
 \beta(\tilde X,\tilde Y)=X_0\overline{Y_0},
 $$
 
-the form that reads the two scalar parts. On that form the invariance holds **degenerately**: both members vanish identically, because the scalar part of every value of the block is zero. The form $H$ itself is **not** invariant.
+the form that reads the two scalar parts. On that form the invariance holds **degenerately**: both members vanish identically, because the scalar part of every value of the block is zero. The form $\langle\cdot,\cdot\rangle_{*}$ itself is **not** invariant.
 
-*Proof.* Write $\beta(\tilde X,\tilde Y)=\sum_{\mu,\nu}\beta_{\mu\nu}X_\mu\overline{Y_\nu}$ and impose the condition on the triples of the real basis: the resulting linear system in the sixteen complex coefficients $\beta_{\mu\nu}$ has solution space of complex dimension one, spanned by $\beta_{00}=1$ and the other coefficients zero. The members vanish on the solution because $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ and $\mathrm{Sc}(\tilde Q\diamond\tilde R)=0$. For $H$ the witness is the triple $(e_1,e_1,e_0)$: on the left $H(e_1\diamond e_1,e_0)=H(0,e_0)=0$, on the right $-\overline{H(e_1,e_1\diamond e_0)}=-\overline{H(e_1,e_1)}=-1$.
+*Proof.* Write $\beta(\tilde X,\tilde Y)=\sum_{\mu,\nu}\beta_{\mu\nu}X_\mu\overline{Y_\nu}$ and impose the condition on the triples of the real basis: the resulting linear system in the sixteen complex coefficients $\beta_{\mu\nu}$ has solution space of complex dimension one, spanned by $\beta_{00}=1$ and the other coefficients zero. The members vanish on the solution because $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ and $\mathrm{Sc}(\tilde Q\diamond\tilde R)=0$. For $\langle\cdot,\cdot\rangle_{*}$ the witness is the triple $(e_1,e_1,e_0)$: on the left $\langle e_1\diamond e_1,e_0\rangle_{*}=\langle 0,e_0\rangle_{*}=0$, on the right $-\overline{\langle e_1,e_1\diamond e_0\rangle_{*}}=-\overline{\langle e_1,e_1\rangle_{*}}=-1$.
 
 **Remark (the invariance is empty).** The space is not empty, but its invariance carries no information: the block annihilates the scalar slot of every value, so any form that reads only the scalar slot satisfies the condition for free. That is the structural difference from the Lie case $\mathrm{APA}=\vec P\times\vec Q$, whose invariant forms are the multiples of the dot product and carry the Killing form of *The Unitary Lie Algebra*; the block has no Jacobi identity and no such carrier, and the computation above is the substitute that its brief asks for: the invariants are computed, they are one-dimensional, and they are degenerate. The vanishing of the trace form of the preceding section is the same phenomenon read at the two equal arguments of a form.
 
@@ -93,7 +93,7 @@ the form that reads the two scalar parts. On that form the invariance holds **de
 
 ## The Compatibility with the Sandwich
 
-**Definition.** The **sesquilinear sandwich** of *The Sesquilinear Sandwich on the Biquaternions* is the operator
+**Definition.** The **sesquilinear sandwich** of *The Sesquilinear Sandwich on the Biquaternioid* is the operator
 
 $$
 S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*},
@@ -105,21 +105,21 @@ conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parame
 
 $$
 L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_0},\qquad
-S_{\tilde A,e_0}(\tilde R)=\tilde A\tilde R^{*}=L^{\diamond}_{\tilde A}(\tilde R)+H(\tilde A,\tilde R)\,e_0 .
+S_{\tilde A,e_0}(\tilde R)=\tilde A\tilde R^{*}=L^{\diamond}_{\tilde A}(\tilde R)+\langle\tilde A,\tilde R\rangle_{*}\,e_0 .
 $$
 
-*Proof.* $S_{\tilde A,e_0}(\tilde R)=\tilde A\tilde R^{*}e_0^{*}=\tilde A\tilde R^{*}$, the left multiplication of the sesqualgebra by $\tilde A$, and $\tilde A\tilde R^{*}=\mathrm{Sc}(\tilde A\tilde R^{*})e_0+\mathrm{Vect}(\tilde A\tilde R^{*})=H(\tilde A,\tilde R)e_0+L^{\diamond}_{\tilde A}(\tilde R)$.
+*Proof.* $S_{\tilde A,e_0}(\tilde R)=\tilde A\tilde R^{*}e_0^{*}=\tilde A\tilde R^{*}$, the left multiplication of the sesqualgebra by $\tilde A$, and $\tilde A\tilde R^{*}=\mathrm{Sc}(\tilde A\tilde R^{*})e_0+\mathrm{Vect}(\tilde A\tilde R^{*})=\langle\tilde A,\tilde R\rangle_{*}e_0+L^{\diamond}_{\tilde A}(\tilde R)$.
 
 **Corollary (the two-parameter sandwich).** $S_{\tilde Q,\tilde Q}(\tilde R)=\tilde Q\tilde R^{*}\tilde Q^{*}$ is the composite of the left multiplication by $\tilde Q$ with the right multiplication by $\tilde Q^{*}$,
 
 $$
 S_{\tilde Q,\tilde Q}=R_{\tilde Q}\circ S_{\tilde Q,e_0},\qquad
-S_{\tilde Q,\tilde Q}(\tilde R)=L^{\diamond}_{\tilde Q}(\tilde R)\,\tilde Q^{*}+H(\tilde Q,\tilde R)\,\tilde Q^{*},
+S_{\tilde Q,\tilde Q}(\tilde R)=L^{\diamond}_{\tilde Q}(\tilde R)\,\tilde Q^{*}+\langle\tilde Q,\tilde R\rangle_{*}\,\tilde Q^{*},
 $$
 
-so its vector part is the operator of the block followed by the right multiplication by $\tilde Q^{*}$, and its scalar part is the form $H(\tilde Q,\tilde R)$ times $\tilde Q^{*}$.
+so its vector part is the operator of the block followed by the right multiplication by $\tilde Q^{*}$, and its scalar part is the form $\langle\tilde Q,\tilde R\rangle_{*}$ times $\tilde Q^{*}$.
 
-**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde A}$ is conjugate-linear, the sandwich $S_{\tilde A,e_0}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternions* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $H(\tilde A,\cdot)$.
+**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde A}$ is conjugate-linear, the sandwich $S_{\tilde A,e_0}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternioid* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $\langle\tilde A,\cdot\rangle_{*}$.
 
 ## The Pairing, the Norm of the Value and the Quadric
 
@@ -147,32 +147,32 @@ The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}
 - **On the Hermitian and anti-Hermitian subspaces.** Write the arguments of $\mathbb{M}_+$ as $\tilde P=P_0e_0+i\vec p$, $\tilde Q=Q_0e_0+i\vec q$, $\tilde R=R_0e_0+i\vec r$, with $P_0,Q_0,R_0$ real and $\vec p,\vec q,\vec r$ real vectors. Then the pairing is complex,
 
 $$
-H(\tilde P\diamond\tilde Q,\tilde R)=P_0(\vec q,\vec r)+Q_0(\vec p,\vec r)+i\,[\vec p,\vec q,\vec r],
+\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}=P_0(\vec q,\vec r)+Q_0(\vec p,\vec r)+i\,[\vec p,\vec q,\vec r],
 $$
 
 with the two real mixed terms in the real part and the triple product in the imaginary part. On $\mathbb{M}_-$, with the arguments $ip_0e_0+\vec p$, $iq_0e_0+\vec q$, $ir_0e_0+\vec r$, the same computation gives the mirror
 
 $$
-H(\tilde P\diamond\tilde Q,\tilde R)=-[\vec p,\vec q,\vec r]-i\bigl(p_0(\vec q,\vec r)+q_0(\vec p,\vec r)\bigr),
+\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}=-[\vec p,\vec q,\vec r]-i\bigl(p_0(\vec q,\vec r)+q_0(\vec p,\vec r)\bigr),
 $$
 
-so the two halves exchange the two mixed terms and the triple product. In both cases the diagonal $H(\tilde Q\diamond\tilde Q,\tilde Q\diamond\tilde Q)$ is nonnegative on every element and vanishes exactly where the diagonal value vanishes, that is on the quadric $\tilde Q\diamond\tilde Q=0$ of the preceding article.
+so the two halves exchange the two mixed terms and the triple product. In both cases the diagonal $\langle\tilde Q\diamond\tilde Q,\tilde Q\diamond\tilde Q\rangle_{*}$ is nonnegative on every element and vanishes exactly where the diagonal value vanishes, that is on the quadric $\tilde Q\diamond\tilde Q=0$ of the preceding article.
 
-**Remark (the table of the remarkable subspaces).** The restrictions are the pairing read on the remarkable subspaces; because the block is pure vector, the third argument is read through its vector part alone, and every restriction is read on the value through the positive definite form. The restriction that vanishes identically is the one whose third argument is central, and on the other five the diagonal $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ vanishes exactly on the pairs whose value vanishes. The comparison with the same remarkable subspaces read by the other forms of the row is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the subspace-by-subspace reading of the operation itself, distinct from the pairing, is *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions*, below in this block.
+**Remark (the table of the remarkable subspaces).** The restrictions are the pairing read on the remarkable subspaces; because the block is pure vector, the third argument is read through its vector part alone, and every restriction is read on the value through the positive definite form. The restriction that vanishes identically is the one whose third argument is central, and on the other five the diagonal $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{*}$ vanishes exactly on the pairs whose value vanishes. The comparison with the same remarkable subspaces read by the other forms of the row is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the subspace-by-subspace reading of the operation itself, distinct from the pairing, is *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions*, below in this block.
 
 ## Summary
 
-The pairing of the block with the Hermitian form is $H(\tilde P\diamond\tilde Q,\tilde R)=-P_0(\overline{\vec Q},\overline{\vec R})+\overline{Q_0}(\vec P,\overline{\vec R})-[\vec P,\overline{\vec Q},\overline{\vec R}]$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and the third; the block is pure vector, so the centre of the third argument drops, and on the values the form is positive definite, $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=0$ exactly when $\tilde P\diamond\tilde Q=0$. The trace form vanishes identically, checked by computation, and the block contributes nothing to the scalar part of the row; the Gram matrix on the sixteen basis pairs has rank three and radical of dimension thirteen, because the values span the vector subspace. The invariant forms $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ form a one-complex-dimensional space spanned by the scalar-slot form $X_0\overline{Y_0}$, and their invariance is degenerate, both members vanishing with the scalar part of the block; the form $H$ itself is not invariant, with the witness $(e_1,e_1,e_0)$. The block is the vector part of the sesquilinear sandwich with second parameter $e_0$, which is the left multiplication of the row, and the two-parameter sandwich is that left multiplication followed by the right multiplication. On the remarkable subspaces the pairing is read on the value through the positive definite form, the centre of the third argument is dead, and the restriction that vanishes identically is the one whose third argument is central.
+The pairing of the block with the Hermitian form is $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}=-P_0(\overline{\vec Q},\overline{\vec R})+\overline{Q_0}(\vec P,\overline{\vec R})-[\vec P,\overline{\vec Q},\overline{\vec R}]$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second and the third; the block is pure vector, so the centre of the third argument drops, and on the values the form is positive definite, $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{*}=0$ exactly when $\tilde P\diamond\tilde Q=0$. The trace form vanishes identically, checked by computation, and the block contributes nothing to the scalar part of the row; the Gram matrix on the sixteen basis pairs has rank three and radical of dimension thirteen, because the values span the vector subspace. The invariant forms $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ form a one-complex-dimensional space spanned by the scalar-slot form $X_0\overline{Y_0}$, and their invariance is degenerate, both members vanishing with the scalar part of the block; the form $\langle\cdot,\cdot\rangle_{*}$ itself is not invariant, with the witness $(e_1,e_1,e_0)$. The block is the vector part of the sesquilinear sandwich with second parameter $e_0$, which is the left multiplication of the row, and the two-parameter sandwich is that left multiplication followed by the right multiplication. On the remarkable subspaces the pairing is read on the value through the positive definite form, the centre of the third argument is dead, and the restriction that vanishes identically is the one whose third argument is central.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$ | the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* |
-| $H(\tilde P\diamond\tilde Q,\tilde R)$ | the sesqui-trilinear pairing of the block with the form |
-| $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ | the quadratic form of the value, positive definite |
+| $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ | the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* |
+| $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{*}$ | the sesqui-trilinear pairing of the block with the form |
+| $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{*}$ | the quadratic form of the value, positive definite |
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the trace form of the block, identically zero |
-| $G_{(I,J),(K,L)}=H(e_I\diamond e_J,e_K\diamond e_L)$ | the Gram matrix on the basis pairs, rank three |
+| $G_{(I,J),(K,L)}=\langle e_I\diamond e_J,e_K\diamond e_L\rangle_{*}$ | the Gram matrix on the basis pairs, rank three |
 | $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ | the invariance of a form under the block |
 | $X_0\overline{Y_0}$ | the unique invariant form up to a scalar, degenerate |
 | $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*}$ | the sesquilinear sandwich of the row |
@@ -180,11 +180,11 @@ The pairing of the block with the Hermitian form is $H(\tilde P\diamond\tilde Q,
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the operation, the basis table and the trace-form statement
+- *Introduction to the Antisymmetric Plain Sesqualgebra* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the operation, the basis table and the trace-form statement
 - *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md`), for the quadric of the diagonal, which the kernel of this article's pairing contains as the diagonal section
 - *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md`), for the scalar form of the two halves, of which the trace form here is the vanishing extreme
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form $H$, its positivity, its trace and its cone
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`) and *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four forms of the chapter read side by side
-- *The Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-sesquilinear-sandwich-on-the-biquaternioid.md`) and *The Adjoint of the Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternioid.md`), for the sandwich, its multiplication table and its adjoint
-- *The Left and Right Multiplications of the Biquaternion Sesqualgebra* (`articles_maths/the-left-and-right-multiplications-of-the-biquaternioid-sesqualgebra.md`), for the left multiplication of which the operator of the block is the vector part
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form $\langle\cdot,\cdot\rangle_{*}$, its positivity, its trace and its cone
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`) and *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four forms of the chapter read side by side
+- *The Sesquilinear Sandwich on the Biquaternioid* (`articles_maths/the-sesquilinear-sandwich-on-the-biquaternioid.md`) and *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid* (`articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternioid.md`), for the sandwich, its multiplication table and its adjoint
+- *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* (`articles_maths/the-left-and-right-multiplications-of-the-biquaternioid-sesqualgebra.md`), for the left multiplication of which the operator of the block is the vector part
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces and their bases

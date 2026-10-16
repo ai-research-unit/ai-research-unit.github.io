@@ -53,9 +53,9 @@ The hypothesis is strictly weaker than the Archimedean one: over $\mathbb{R}$ th
 $$
 \lVert f \rVert_G = \max_{n \geq 0} \lvert a_n \rvert ,
 $$
-the maximum existing because $a_n \to 0$. If in addition $a_n \in \mathcal{O}$ for all $n$, the **reduction** of $f$ is the formal power series $\tilde{f} = \sum_n \tilde{a}_n x^n \in k[[x]]$, with $\tilde{a}_n$ the image of $a_n$ in $k$.
+the maximum existing because $a_n \to 0$. If in addition $a_n \in \mathcal{O}$ for all $n$, the **reduction** of $f$ is the formal power series $f^{\mathrm{res}} = \sum_n a^{\mathrm{res}}_n x^n \in k[[x]]$, with $a^{\mathrm{res}}_n$ the image of $a_n$ in $k$.
 
-**Proposition.** The Gauss norm is a multiplicative norm on the ring of series convergent on $\overline{B}(0,1)$, and the reduction is a ring homomorphism onto its image, compatible with the Gauss norm in the sense that $\deg \tilde{f}$ is the largest index $n$ with $\lvert a_n \rvert = \lVert f \rVert_G$ when the residue field is infinite, and is the corresponding largest index modulo the possibility of several coefficients of maximal absolute value when the residue field is finite.
+**Proposition.** The Gauss norm is a multiplicative norm on the ring of series convergent on $\overline{B}(0,1)$, and the reduction is a ring homomorphism onto its image, compatible with the Gauss norm in the sense that $\deg f^{\mathrm{res}}$ is the largest index $n$ with $\lvert a_n \rvert = \lVert f \rVert_G$ when the residue field is infinite, and is the corresponding largest index modulo the possibility of several coefficients of maximal absolute value when the residue field is finite.
 
 **Proof.** Multiplicativity is the equality case of the ultrametric inequality applied to the Cauchy product: the coefficient of $x^n$ in a product is a sum, its absolute value is the maximum of the absolute values of the summands provided there is a unique summand of maximal absolute value, and if there are several the residue field records the cancellation. The remaining statements are the definitions.
 
@@ -161,7 +161,7 @@ $$
 $$
 and the supremum on the left is attained: there is $x_0$ with $\lvert x_0 \rvert \leq r$ and $\lvert f(x_0) \rvert = \lVert f \rVert_r$.
 
-**Proof sketch.** The inequality $\lVert f \rVert_r \leq \max_n \lvert a_n \rvert r^n$ is the ultrametric inequality and holds always. For the reverse inequality put $s = \max_n \lvert a_n \rvert r^n$ and let $F$ be the finite set of indices $n$ with $\lvert a_n \rvert r^n = s$, with largest element $N$. The polynomial $P(\xi) = \sum_{n \in F} \tilde{a}_n \xi^n$ over the residue field is nonzero, since $\tilde{a}_N \neq 0$, so it has at most $\deg P$ roots; an infinite residue field therefore contains a $\xi$ with $P(\xi) \neq 0$. At a point $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$ the terms of index in $F$ all have absolute value $s$ and their sum is $a_N x_0^N P(\xi)/\tilde{a}_N$, of absolute value $s$, while every term of index outside $F$ is strictly smaller; the equality case of the ultrametric inequality gives $\lvert f(x_0) \rvert = s$.
+**Proof sketch.** The inequality $\lVert f \rVert_r \leq \max_n \lvert a_n \rvert r^n$ is the ultrametric inequality and holds always. For the reverse inequality put $s = \max_n \lvert a_n \rvert r^n$ and let $F$ be the finite set of indices $n$ with $\lvert a_n \rvert r^n = s$, with largest element $N$. The polynomial $P(\xi) = \sum_{n \in F} a^{\mathrm{res}}_n \xi^n$ over the residue field is nonzero, since $a^{\mathrm{res}}_N \neq 0$, so it has at most $\deg P$ roots; an infinite residue field therefore contains a $\xi$ with $P(\xi) \neq 0$. At a point $x_0$ with $\lvert x_0 \rvert = r$ and reduction $\xi$ the terms of index in $F$ all have absolute value $s$ and their sum is $a_N x_0^N P(\xi)/a^{\mathrm{res}}_N$, of absolute value $s$, while every term of index outside $F$ is strictly smaller; the equality case of the ultrametric inequality gives $\lvert f(x_0) \rvert = s$.
 
 The maximum principle is the replacement for the maximum modulus theorem of complex analysis: no holomorphy is needed, and the maximum is read from the coefficients. The hypothesis on the residue field is essential and not an artefact of the proof: over $\mathbb{Q}_2$ the series $x + x^2$ has Gauss norm $1$ at the radius $1$ but supremum $\tfrac12$ there, the two maximal coefficients cancelling modulo the maximal ideal. What the hypothesis secures is that the finitely many coefficients of maximal absolute value can be prevented from cancelling; over an extension with infinite residue field the identity holds, the Gauss norm being unchanged. The affinoid version, with the spectral seminorm in place of $\lVert \cdot \rVert_r$, is not covered here.
 
@@ -245,7 +245,7 @@ The classical theorems that fail are the intermediate value theorem, whose hypot
 | $\rho_{\exp}$ | Radius of convergence of $\exp$, $\lvert p \rvert^{1/(p-1)}$ |
 | $\lVert f \rVert_G$ | Gauss norm $\max_n \lvert a_n \rvert$ |
 | $\lVert f \rVert_r$ | Supremum of $\lvert f \rvert$ on $\overline{B}(0,r)$ |
-| $\tilde{f}$ | Reduction of an integral series to $k[[x]]$ |
+| $f^{\mathrm{res}}$ | Reduction of an integral series to $k[[x]]$ |
 | $E_p(x)$ | Artin–Hasse exponential |
 | $\mu(n)$ | Möbius function |
 | $B(0,r)$, $\overline{B}(0,r)$ | Open and closed discs |

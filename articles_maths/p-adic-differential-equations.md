@@ -65,7 +65,7 @@ Dwork's lemma is the engine of the proof that the zeta function of a variety ove
 
 **Example (the geometric series).** For $f = (1-x)^{-1} = \sum_{m\geq0}x^m \in \mathcal{O}[[x]]$ one has $f(x)/f(x^p) = (1-x^p)/(1-x) = 1+x+\dots+x^{p-1} \in \mathcal{O}[x]$, so the hypothesis of the lemma holds and the conclusion is the convergence of $f$ on the open unit disc; the coefficients do not decay, since $a_m = 1$ for every $m$, which shows that the substance of the lemma is the integrality of the coefficients rather than their decay.
 
-**Example (the Artin–Hasse exponential).** For the Artin–Hasse exponential $E_p$ of *Non-Archimedean Analysis* the identity $E_p(x)^p = E_p(x^p)\,e^{px}$ follows from the defining exponent $\sum_{k\geq0}x^{p^k}/p^k$ by multiplying it by $p$; it gives $E_p(x)/E_p(x^p) = e^{px}/E_p(x)^{p-1}$, and both factors lie in $\mathcal{O}[[x]]$, the second because a series of $\mathcal{O}[[x]]$ with constant term $1$ is invertible there. Dwork's lemma therefore recovers the convergence of $E_p$ on the open unit disc from an integrality statement rather than from the explicit product formula.
+**Example (the Artin–Hasse exponential).** For the Artin–Hasse exponential $E_p$ of *Non-Archimedean Analysis* the identity $E_p(x)^p = E_p(x^p)\,\exp(px)$ follows from the defining exponent $\sum_{k\geq0}x^{p^k}/p^k$ by multiplying it by $p$; it gives $E_p(x)/E_p(x^p) = \exp(px)/E_p(x)^{p-1}$, and both factors lie in $\mathcal{O}[[x]]$, the second because a series of $\mathcal{O}[[x]]$ with constant term $1$ is invertible there. Dwork's lemma therefore recovers the convergence of $E_p$ on the open unit disc from an integrality statement rather than from the explicit product formula.
 
 ## The Robba Ring
 

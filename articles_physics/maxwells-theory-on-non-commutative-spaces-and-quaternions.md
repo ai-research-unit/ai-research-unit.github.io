@@ -5,7 +5,7 @@
 This article records a short external programme, that of S. I. Kruglov as presented in *Maxwell's Theory on Non-Commutative Spaces and Quaternions* (arXiv:hep-th/0110059, 2001). The arena is different from the corpus's. The coordinates do not commute,
 
 $$
-[\hat x^\mu,\hat x^\nu] = i\theta^{\mu\nu},
+[x^\mu,x^\nu] = i\theta^{\mu\nu},
 $$
 
 with $\theta^{\mu\nu}$ a constant antisymmetric tensor of dimension $(\text{length})^2$, and the product of fields is deformed by the Moyal star product that this commutator induces. Maxwell's theory is then re-derived on that arena and written in what the source calls **spin-tensor (quaternion) form**. Three results follow, and they are the reason the corpus records the paper.
@@ -28,7 +28,7 @@ Third, the source's arithmetic convention is the corpus's, with the imaginary un
 
 ### The commutator, the bound, and the deformation
 
-The coordinates obey $[\hat x^\mu,\hat x^\nu]=i\theta^{\mu\nu}$ with $\theta^{\mu\nu}$ constant and antisymmetric, of dimension $(\text{length})^2$. Momentum commutes with itself and with position in the ordinary way, $[\hat x^\mu,\hat p^\nu]=i\hbar\delta^{\mu\nu}$, and the source parametrises the deformation by a scale,
+The coordinates obey $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ with $\theta^{\mu\nu}$ constant and antisymmetric, of dimension $(\text{length})^2$. Momentum commutes with itself and with position in the ordinary way, $[x^\mu,p^\nu]=i\hbar\delta^{\mu\nu}$, and the source parametrises the deformation by a scale,
 
 $$
 \theta^{\mu\nu} = \frac{1}{\Lambda_{NC}^2}\,\epsilon^{\mu\nu},
@@ -55,12 +55,12 @@ the Weyl–Moyal correspondence. The star product is associative. Two facts abou
 At first order in $\theta$ the Seiberg–Witten expansion gives
 
 $$
-\hat A_\mu = A_\mu - \tfrac12\theta^{\alpha\beta}A_\alpha(\partial_\beta A_\mu + F_{\beta\mu}),
+A_\mu = A_\mu - \tfrac12\theta^{\alpha\beta}A_\alpha(\partial_\beta A_\mu + F_{\beta\mu}),
 \qquad
-\hat F_{\mu\nu} = F_{\mu\nu} + \theta^{\alpha\beta}F_{\mu\alpha}F_{\nu\beta} - \theta^{\alpha\beta}A_\alpha\partial_\beta F_{\mu\nu},
+F_{\mu\nu} = F_{\mu\nu} + \theta^{\alpha\beta}F_{\mu\alpha}F_{\nu\beta} - \theta^{\alpha\beta}A_\alpha\partial_\beta F_{\mu\nu},
 $$
 
-with $e$ absorbed into $\theta^{\alpha\beta}$. The quadratic term of $\hat F_{\mu\nu}$ is the source of every non-linearity below.
+with $e$ absorbed into $\theta^{\alpha\beta}$. The quadratic term of $F_{\mu\nu}$ is the source of every non-linearity below.
 
 ## The Non-Linear Maxwell Equations
 
@@ -71,7 +71,7 @@ The free Maxwell action on the deformed arena is
 $$
 S = -\frac14\int d^4x\, F_{\mu\nu}\star F^{\mu\nu},
 \qquad
-\hat F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu - ie[A_\mu,A_\nu]_M,
+F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu - ie[A_\mu,A_\nu]_M,
 $$
 
 with the Moyal bracket $[A_\mu,A_\nu]_M = A_\mu\star A_\nu - A_\nu\star A_\mu$. Expanding to first order in $\theta$ gives the Lagrangian
@@ -143,14 +143,14 @@ The time derivative in front of the two rotation terms belongs there: it is what
 The striking result is that the **plane electromagnetic wave is still a solution**. With the usual ansatz
 
 $$
-\vec E = \vec E_0\,e^{ik_\mu x^\mu},
+\vec E = \vec E_0\,\exp(ik_\mu x^\mu),
 \qquad
-\vec B = (\hat u\times\vec E_0)\,e^{ik_\mu x^\mu},
+\vec B = (\vec u\times\vec E_0)\,\exp(ik_\mu x^\mu),
 \qquad
-\hat u = \vec k/k_0,
+\vec u = \vec k/k_0,
 $$
 
-the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $e^{2ik_\mu x^\mu}$; the double-frequency phase squares the wave vector, and the vacuum dispersion $k^2=0$ makes the deformed contributions vanish identically, for every $\vec\theta$ (checked for the companion `.context`, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, **"plane wave" does not imply "linear theory"**: non-linearity does not by itself destroy plane-wave propagation, and the corpus's *Exercise: Plane-Wave Propagation in a Medium* is, in this picture, the **linear limit** of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the **speed**. The source cites the result that for propagation **transverse to a background magnetic induction** the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is **very small**, being suppressed by $\vec\theta$.
+the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $\exp(2ik_\mu x^\mu)$; the double-frequency phase squares the wave vector, and the vacuum dispersion $k^2=0$ makes the deformed contributions vanish identically, for every $\vec\theta$ (checked for the companion `.context`, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, **"plane wave" does not imply "linear theory"**: non-linearity does not by itself destroy plane-wave propagation, and the corpus's *Exercise: Plane-Wave Propagation in a Medium* is, in this picture, the **linear limit** of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the **speed**. The source cites the result that for propagation **transverse to a background magnetic induction** the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is **very small**, being suppressed by $\vec\theta$.
 
 The honest interpretation is therefore: the plane-wave solution is exact, and the deviation from $c$ is a computable consequence of a specified deformation, not a new free parameter. The source attributes both the plane-wave observation and the transverse-velocity result to Guralnik, Jackiw, Pi and Polychronakos, and reports them rather than deriving them. The corpus's empirical-agenda standard applies — the effect is real but $\theta$-suppressed, so nothing here is a candidate signature.
 
@@ -164,7 +164,7 @@ $$
 \vec B \mapsto \vec B\cos\alpha - \vec E\sin\alpha,
 $$
 
-equivalently under $\vec V\mapsto e^{-i\alpha}\vec V$ with $\vec V = \vec E + ic\vec B$, and that this is a symmetry of the **polarisation space**, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is
+equivalently under $\vec N\mapsto \exp(-i\alpha)\vec N$ with $\vec N = \vec E + ic\vec B$, and that this is a symmetry of the **polarisation space**, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is
 
 $$
 F'_{\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,
@@ -330,17 +330,17 @@ The corpus's *The Empirical Status of the Biquaternion Framework* lists three ro
 
 ## Summary
 
-Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derives Maxwell's theory on an arena whose coordinates do not commute, $[\hat x^\mu,\hat x^\nu]=i\theta^{\mu\nu}$, using the Moyal star product and writing the result in spin-tensor (quaternion) form. Its content for the corpus is threefold. First, the deformation makes the **vacuum a non-linear medium**: the displacement and magnetic fields acquire the field-quadratic corrections $\vec d$ and $\vec h$, so that the constitutive relations are non-linear, while **plane electromagnetic waves remain exact solutions** — "plane wave" does not imply a linear theory. Second, **duality is broken** by the deformation, which makes duality a diagnostic of the commutative, linear case and gives the corpus the converse of its own duality theorem. Third, the **canonical energy–momentum tensor is conservative but the symmetric one obtained from the metric variation is not**, because the action is not a Lorentz scalar when $\vec\theta$ is fixed, and both tensors have non-zero trace — a **classical trace anomaly** that vanishes for null (plane-wave) fields and at $\vec\theta=0$, and that must not be conflated with the corpus's quantum Weyl anomaly. The quaternion form is a compact notation, not the source of the results; the deformation of the arena is what does the work, and the effects are $\theta$-suppressed.
+Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derives Maxwell's theory on an arena whose coordinates do not commute, $[x^\mu,x^\nu]=i\theta^{\mu\nu}$, using the Moyal star product and writing the result in spin-tensor (quaternion) form. Its content for the corpus is threefold. First, the deformation makes the **vacuum a non-linear medium**: the displacement and magnetic fields acquire the field-quadratic corrections $\vec d$ and $\vec h$, so that the constitutive relations are non-linear, while **plane electromagnetic waves remain exact solutions** — "plane wave" does not imply a linear theory. Second, **duality is broken** by the deformation, which makes duality a diagnostic of the commutative, linear case and gives the corpus the converse of its own duality theorem. Third, the **canonical energy–momentum tensor is conservative but the symmetric one obtained from the metric variation is not**, because the action is not a Lorentz scalar when $\vec\theta$ is fixed, and both tensors have non-zero trace — a **classical trace anomaly** that vanishes for null (plane-wave) fields and at $\vec\theta=0$, and that must not be conflated with the corpus's quantum Weyl anomaly. The quaternion form is a compact notation, not the source of the results; the deformation of the arena is what does the work, and the effects are $\theta$-suppressed.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\hat x^\mu$, $x^\mu$ | Non-commuting coordinate operator and its commutative image |
+| $x^\mu$, $x^\mu$ | Non-commuting coordinate operator and its commutative image |
 | $\theta^{\mu\nu}$ | Constant antisymmetric deformation tensor, dimension $(\text{length})^2$ |
 | $\Lambda_{NC}$, $\epsilon^{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\theta^{\mu\nu}=\epsilon^{\mu\nu}/\Lambda_{NC}^2$ |
 | $\theta_i$ | Three-vector of the deformation, $\theta_i=\tfrac12\epsilon_{ijk}\theta_{jk}$, $\theta_{i4}=0$ |
-| $[\hat x^\mu,\hat x^\nu]=i\theta^{\mu\nu}$ | The defining commutator; the corpus's "$ict$" convention is kept for time |
+| $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ | The defining commutator; the corpus's "$ict$" convention is kept for time |
 | $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\partial'_\nu)$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |

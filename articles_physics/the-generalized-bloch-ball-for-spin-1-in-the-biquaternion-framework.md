@@ -23,16 +23,16 @@ Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices h
 It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_0+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
-N(\tilde H)=h_0^2-|\vec h|^2 ,
+\langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2 ,
 $$
 
-of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $N(\tilde H)\ge0$ with $h_0\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
+of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_0\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
 
 $$
 \tilde\rho=\tfrac{1}{2}\left(e_0+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
 $$
 
-with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $N(\tilde\rho)=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde\rho$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
+with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde\rho\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde\rho$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
 
 Three features of this account are the ones that must be examined for spin $1$:
 
@@ -138,7 +138,7 @@ $$
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
-The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $N(\tilde\rho)=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
+The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde\rho\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
 ### The spin directions and the quadrupole directions
 
@@ -179,7 +179,7 @@ $$
 \quad\text{whenever } |\vec b|\le\tfrac12 ,
 $$
 
-so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\hat u=\lambda_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
+so every such $\rho$ is positive, and it is a state. Sharpness: for the direction $\vec u=\lambda_8$ the traceless part has the spectrum $\tfrac{t}{3}(1,1,-2)$, so
 
 $$
 \rho=\tfrac{1}{3}I+\tfrac{t}{\sqrt3}\lambda_8
@@ -218,38 +218,38 @@ The state space is thus an eight-dimensional convex body whose boundary is the u
 The coherent, or classical, states are the pure states of maximal polarization,
 
 $$
-\langle\vec F\rangle=\hat u,\qquad |\hat u|=1 ,
+\langle\vec F\rangle=\vec u,\qquad |\vec u|=1 ,
 $$
 
-and they are obtained from the highest-weight state by the rotation that carries $\hat u_3$ to $\hat u$. In the three-level system they have a closed form in the algebra. With $M=\hat u\cdot\vec F$ and $P_0=|1,1\rangle\langle1,1|$,
+and they are obtained from the highest-weight state by the rotation that carries $\vec u_3$ to $\vec u$. In the three-level system they have a closed form in the algebra. With $M=\vec u\cdot\vec F$ and $P_0=|1,1\rangle\langle1,1|$,
 
 $$
-\rho_{\mathrm{coh}}(\hat u)=\tfrac{1}{2}\left(M^2+M\right),
+\rho_{\mathrm{coh}}(\vec u)=\tfrac{1}{2}\left(M^2+M\right),
 $$
 
-which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ are $+1,0,-1$ along the $\hat u$ axis, and the numbers $\tfrac12(m^2+m)$, namely $1,0,0$, are the spectral projectors that select $m=+1$.
+which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ are $+1,0,-1$ along the $\vec u$ axis, and the numbers $\tfrac12(m^2+m)$, namely $1,0,0$, are the spectral projectors that select $m=+1$.
 
 The coherent states have three equivalent descriptions, and the equivalence is the content of this subsection:
 
 - they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^{*}$;
 - they are the **symmetrised products of two fundamental idempotents**,
 $$
-  \rho_{\mathrm{coh}}(\hat u)=P_{\mathrm{sym}}\left(\tilde\Pi(\hat u)\otimes \tilde\Pi(\hat u)\right)P_{\mathrm{sym}},
+  \rho_{\mathrm{coh}}(\vec u)=P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}},
 $$
-  with $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
+  with $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
 - they are the image of the degree-two Veronese embedding of the Bloch sphere in $\mathbb{CP}^2$.
 
-The last description fixes the topology: the coherent states form a two-sphere $S^2$ inside the four-dimensional pure-state manifold; the map $\hat u\mapsto\rho_{\mathrm{coh}}(\hat u)$ is one-to-one on the Bloch sphere (the phase of the state vector drops out in the projector), and its image is the degree-two Veronese surface in $\mathbb{CP}^2$. The Bloch vector of a coherent state has $|\vec b|=1$, so the coherent states lie on the pure-state sphere; but not every pure state is coherent, the obstruction being the dimension count $4>2$.
+The last description fixes the topology: the coherent states form a two-sphere $S^2$ inside the four-dimensional pure-state manifold; the map $\vec u\mapsto\rho_{\mathrm{coh}}(\vec u)$ is one-to-one on the Bloch sphere (the phase of the state vector drops out in the projector), and its image is the degree-two Veronese surface in $\mathbb{CP}^2$. The Bloch vector of a coherent state has $|\vec b|=1$, so the coherent states lie on the pure-state sphere; but not every pure state is coherent, the obstruction being the dimension count $4>2$.
 
 ### The polarization ball is a different three-ball
 
-The spin vector $\vec s=\langle\vec F\rangle$ has $|\vec s|\le1$ for every state. The proof is one line: for any unit vector $\hat u$ the operator $\hat u\cdot\vec F$ has eigenvalues $+1,0,-1$, hence $\hat u\cdot\vec F\le I$ and
+The spin vector $\vec s=\langle\vec F\rangle$ has $|\vec s|\le1$ for every state. The proof is one line: for any unit vector $\vec u$ the operator $\vec u\cdot\vec F$ has eigenvalues $+1,0,-1$, hence $\vec u\cdot\vec F\le I$ and
 
 $$
-\vec s\cdot\hat u=\mathrm{Tr}\left(\rho\,\hat u\cdot\vec F\right)\le\mathrm{Tr}(\rho)=1 ,
+\vec s\cdot\vec u=\mathrm{Tr}\left(\rho\,\vec u\cdot\vec F\right)\le\mathrm{Tr}(\rho)=1 ,
 $$
 
-with equality exactly when $\rho$ is supported on the eigenvalue-$+1$ eigenspace of $\hat u\cdot\vec F$, that is, when $\rho=\rho_{\mathrm{coh}}(\hat u)$. Since the map $\rho\mapsto\vec s$ is affine and the state space is convex, its image is convex; it contains the origin (the maximally mixed state) and the whole unit sphere (the coherent states), so it is the closed unit ball $|\vec s|\le1$, and every vector of length less than one is attained by mixing a coherent state with the maximally mixed state.
+with equality exactly when $\rho$ is supported on the eigenvalue-$+1$ eigenspace of $\vec u\cdot\vec F$, that is, when $\rho=\rho_{\mathrm{coh}}(\vec u)$. Since the map $\rho\mapsto\vec s$ is affine and the state space is convex, its image is convex; it contains the origin (the maximally mixed state) and the whole unit sphere (the coherent states), so it is the closed unit ball $|\vec s|\le1$, and every vector of length less than one is attained by mixing a coherent state with the maximally mixed state.
 
 This **polarization ball** is a three-ball, but it is not the state space and not the generalized Bloch ball. It is the shadow of the state space on the three spin directions: many states share a spin vector, and the excluded states of the qubit picture reappear here as the states with the same spin vector but different alignment. The two three-balls of the theory are therefore:
 
@@ -280,7 +280,7 @@ The article established the following.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
 - **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\lambda_1+\lambda_6)$, $F_2=\tfrac{1}{\sqrt2}(\lambda_2+\lambda_7)$, $F_3=\tfrac12\lambda_3+\tfrac{\sqrt3}{2}\lambda_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
 - **The inscribed ball.** Every Hermitian unit-trace $\rho$ with $|\vec b|\le\tfrac12$ is a state, and $\tfrac12$ is sharp, attained along $\lambda_8$; the proof uses $\mu_{\max}\le\sqrt{\tfrac23\mathrm{Tr}(T^2)}=\tfrac23|\vec b|$ for the traceless part, so that the eigenvalues of $\rho$ are bounded below by $\tfrac13-\tfrac23|\vec b|\ge0$ on the ball.
-- **Pure and coherent states.** The pure states have $|\vec b|=1$ and $\det\rho=0$ and form $\mathbb{CP}^2$, of real dimension $4$; the coherent states have a closed form $\rho_{\mathrm{coh}}(\hat u)=\tfrac12(M^2+M)$ with $M=\hat u\cdot\vec F$, satisfy $\langle\vec F\rangle=\hat u$, form an $S^2$, and are the symmetrised products of two fundamental idempotents.
+- **Pure and coherent states.** The pure states have $|\vec b|=1$ and $\det\rho=0$ and form $\mathbb{CP}^2$, of real dimension $4$; the coherent states have a closed form $\rho_{\mathrm{coh}}(\vec u)=\tfrac12(M^2+M)$ with $M=\vec u\cdot\vec F$, satisfy $\langle\vec F\rangle=\vec u$, form an $S^2$, and are the symmetrised products of two fundamental idempotents.
 - **Two three-balls.** The generalized Bloch ball (radius $\tfrac12$, in the eight-dimensional Bloch space) is a set of states; the polarization ball $|\langle\vec F\rangle|\le1$ is its shadow and is not the state space. They coincide only for the qubit.
 - **What is lost.** The qubit picture as a cone slice is not available for spin $1$; the state space is not a ball and positivity is not a quadratic condition. The reason is that a three-level system is not a module of $\mathbb{B}$ but a sector of a tensor square.
 
@@ -290,7 +290,7 @@ The article established the following.
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
-| $N(\tilde H)=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde H\rangle_{\natural}=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde\rho=\tfrac12(e_0+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |
@@ -301,9 +301,9 @@ The article established the following.
 | $\det\rho$ | Cubic invariant; boundary $\det\rho=0$ |
 | $\lvert\vec b\rvert\le\tfrac12$ | Generalized Bloch ball (inscribed) |
 | $\vec s=\langle\vec F\rangle$, $\lvert\vec s\rvert\le1$ | Spin vector; polarization ball |
-| $\rho_{\mathrm{coh}}(\hat u)=\tfrac12(M^2+M)$, $M=\hat u\cdot\vec F$ | Coherent state |
+| $\rho_{\mathrm{coh}}(\vec u)=\tfrac12(M^2+M)$, $M=\vec u\cdot\vec F$ | Coherent state |
 | $\mathbb{CP}^2$ | Manifold of pure states, real dimension $4$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 
 ## Further Reading

@@ -26,7 +26,7 @@ that is, scalar multiples of unit quaternions by phases.
 
 **Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_0$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $U(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $\langle\tilde{A},\tilde{A}\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*), and $\tilde{U}=\zeta\tilde{A}$.
 
-**Corollary (the determinant and the norm coincide).** On $U(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:U(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $N$ realises an isomorphism $U(\mathbb{B})/S^{3}\cong S^{1}$.
+**Corollary (the determinant and the norm coincide).** On $U(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:U(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $U(\mathbb{B})/S^{3}\cong S^{1}$.
 
 **Proof.** $\langle\tilde{U}\tilde{S},\tilde{U}\tilde{S}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{S},\tilde{S}\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_0,e_0\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
 
@@ -131,9 +131,9 @@ $$
 
 is a surjective homomorphism with kernel $U(1)e_0$, so that $U(\mathbb{B})/U(1)\cong PU(2)\cong SO(3)$.
 
-**Proof.** $\Theta_{\tilde{U}}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $N$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde{U}$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $U(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
+**Proof.** $\Theta_{\tilde{U}}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde{U}$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $U(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
 
-**Remark (the two covers).** The unitary group therefore sits between the two classical double covers of the corpus: $S^{3}\to SO(3)$ on the compact slice, and $S^{3}\times S^{3}\to SO(4)$ for the two-sided action (*Biquaternion Rotations and Lorentz Transformations*). Its full conjugation action on $\mathbb{B}$ is the adjoint action of $U(2)$ on $M_2(\mathbb{C})$, whose orbits are the level sets of $\mathrm{Sc}$ and $N$.
+**Remark (the two covers).** The unitary group therefore sits between the two classical double covers of the corpus: $S^{3}\to SO(3)$ on the compact slice, and $S^{3}\times S^{3}\to SO(4)$ for the two-sided action (*Biquaternion Rotations and Lorentz Transformations*). Its full conjugation action on $\mathbb{B}$ is the adjoint action of $U(2)$ on $M_2(\mathbb{C})$, whose orbits are the level sets of $\mathrm{Sc}$ and $\langle\cdot\rangle_{\natural}$.
 
 ## Worked Examples
 
@@ -143,11 +143,11 @@ is a surjective homomorphism with kernel $U(1)e_0$, so that $U(\mathbb{B})/U(1)\
 
 **A null scalar multiple.** $\tilde{Q}=A(e_1+ie_2)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
-**A negative determinant.** $U(2)$ has determinant of modulus one; the slice $SU(2)=\{N=1\}\cap U(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $N$, and the double cover of $SO(3)$.
+**A negative determinant.** $U(2)$ has determinant of modulus one; the slice $SU(2)=\{N=1\}\cap U(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
 
 ## Summary
 
-The **unitary biquaternions** $U(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_0\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $U(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $U(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_0\}$, so $U(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}$ and flag variety $U(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $N$ is the determinant and $U(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $U(\mathbb{B})/U(1)\cong SO(3)$, the compact real form of the Lorentz group.
+The **unitary biquaternions** $U(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_0\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $U(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $U(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_0\}$, so $U(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}$ and flag variety $U(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $U(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $U(\mathbb{B})/U(1)\cong SO(3)$, the compact real form of the Lorentz group.
 
 ## Summary of Notation
 
@@ -162,14 +162,14 @@ The **unitary biquaternions** $U(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_0\}$ are
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $N:U(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $U(\mathbb{B})/S^{3}\cong S^{1}$ |
 | $\Theta_{\tilde{U}}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $U(1)$ | $U(\mathbb{B})/U(1)\cong SO(3)$ |
-| $\widetilde{\mathbb{B}^{\times}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
+| $(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
 
 ## Further Reading
 
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the bilinear-side treatment of the group of units
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the ambient Euclidean structure the retractions use
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form that defines the unitary slice
-- *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternioid-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form that defines the unitary slice
+- *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternioid-algebra-with-hermitian-adjoint.md`), for the Hermitian cone and the positive square root
 - *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the subgroups and the real forms
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd edition (Springer, 2015), for the standard facts about $U(2)$, $SU(2)$ and their quotients
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the double covers of the rotation groups

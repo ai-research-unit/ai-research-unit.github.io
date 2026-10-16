@@ -243,7 +243,7 @@ Consequently, if $n$ is non-characteristic, then $[u] = 0$ and the solution is c
 
 *Proof.* By the jump formula the singular part of $Pu$ is $(\sum_j a_j n_j)[u]\delta_S = \sigma_P(n)[u]\delta_S$. Since $f$ is continuous, its singular part vanishes, and the coefficient of the single layer $\delta_S$ must vanish.
 
-The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $u_t + a\,u_x = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.
+The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $\partial_t u + a\,\partial_x u = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.
 
 ### Second-Order Equations and Transmission
 
@@ -290,9 +290,9 @@ the conormal directions being exactly those in which the delta is singular. This
 
 For functions in a Sobolev space, the trace exists at lower regularity than pointwise restriction. The trace theorem of *Sobolev Spaces and Weak Solutions* states that for a bounded domain $\Omega$ with Lipschitz boundary there is a bounded linear map
 $$
-\operatorname{tr} : W^{1,p}(\Omega) \to L^p(\partial\Omega), \qquad \|\operatorname{tr} u\|_{L^p(\partial\Omega)} \le C\,\|u\|_{W^{1,p}(\Omega)},
+\operatorname{tr} : W^{1,n}(\Omega) \to L^{n}(\partial\Omega), \qquad \|\operatorname{tr} u\|_{L^{n}}(\partial\Omega)} \le C\,\|u\|_{W^{1,n}(\Omega)},
 $$
-agreeing with the restriction for continuous functions, with kernel $W^{1,p}_0(\Omega)$; on $H^s$ with $s > 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.
+agreeing with the restriction for continuous functions, with kernel $W^{1,n}_0(\Omega)$; on $H^s$ with $s > 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.
 
 ### The Distributional Boundary Value
 

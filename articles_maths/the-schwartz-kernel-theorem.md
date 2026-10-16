@@ -83,7 +83,7 @@ For Fréchet spaces, separate continuity of a bilinear form implies joint contin
 
 **Theorem.** Let $E,F$ be Fréchet spaces and $B:E\times F \to \mathbb{K}$ separately continuous and bilinear. Then $B$ is continuous for the product topology.
 
-*Proof (sketch).* The associated linear map $\Phi:E\to F'$, $\Phi(x)=B(x,\cdot)$, has closed graph: if $x_k\to x$ in $E$ and $\Phi(x_k)\to f$ pointwise on $F$, then for each $y$ the continuity in the first variable gives $f(y)=\lim_kB(x_k,y)=B(x,y)$, so $f=\Phi(x)$; the closed graph theorem of *Normed and Banach Spaces* applied to $\Phi$, together with the continuity of the evaluation pairing, gives the joint continuity of $B$. The same conclusion follows from the Banach–Steinhaus theorem applied to the family of continuous functionals $B(x_k,\cdot)$.
+*Proof (sketch).* The associated linear map $\Phi:E\to F'$, $\Phi(x)=\langle x,\cdot\rangle$, has closed graph: if $x_k\to x$ in $E$ and $\Phi(x_k)\to f$ pointwise on $F$, then for each $y$ the continuity in the first variable gives $f(y)=\lim_kB(x_k,y)=B(x,y)$, so $f=\Phi(x)$; the closed graph theorem of *Normed and Banach Spaces* applied to $\Phi$, together with the continuity of the evaluation pairing, gives the joint continuity of $B$. The same conclusion follows from the Banach–Steinhaus theorem applied to the family of continuous functionals $\langle x_k,\cdot\rangle$.
 
 **Corollary.** Every $T \in \mathcal L(\mathcal D(X),\mathcal D'(Y))$ has a bilinear form $B_T$ that is separately continuous, and the joint continuity of $B_T$ on $\mathcal D(X)\times\mathcal D(Y)$ is equivalent to the existence of the kernel, since $(\varphi,\psi)\mapsto\psi\otimes\varphi$ is continuous into $\mathcal D(Y\times X)$: if $B_T(\varphi,\psi)=\langle K,\psi\otimes\varphi\rangle$ it is jointly continuous, and conversely a jointly continuous form extends to the completed projective tensor product. For Fréchet spaces the equivalence of separate and joint continuity is the theorem above; for the LF space $\mathcal D(X)$ it is proved with the kernel theorem below rather than before it.
 
@@ -139,7 +139,7 @@ $$
 \bigl(E\hat\otimes_\pi F\bigr)' \;\cong\; \mathcal B(E,F),
 $$
 
-the isomorphism carrying a continuous linear functional on $E\hat\otimes_\pi F$ to its restriction $B(x,y)=\ell(x\otimes y)$. For Fréchet $E,F$ every separately continuous bilinear form is continuous, so the right-hand side is $\mathcal L(E,F')$ under $B \mapsto (x \mapsto B(x,\cdot))$.
+the isomorphism carrying a continuous linear functional on $E\hat\otimes_\pi F$ to its restriction $B(x,y)=\ell(x\otimes y)$. For Fréchet $E,F$ every separately continuous bilinear form is continuous, so the right-hand side is $\mathcal L(E,F')$ under $B \mapsto (x \mapsto \langle x,\cdot\rangle)$.
 
 *Proof of the kernel theorem.* By the two theorems above,
 
@@ -147,7 +147,7 @@ $$
 \mathcal L(\mathcal D(X),\mathcal D'(Y)) \cong \bigl(\mathcal D(X)\hat\otimes_\pi\mathcal D(Y)\bigr)' \cong \mathcal D'(X\times Y),
 $$
 
-since $\mathcal D(X)\hat\otimes_\pi\mathcal D(Y)\cong\mathcal D(X\times Y)$ and the dual of $\mathcal D(X\times Y)$ is $\mathcal D'(X\times Y)$; writing $\tilde K(x,y)$ for the distribution on $X\times Y$ so obtained and putting $K(y,x)=\tilde K(x,y)$, the interchange of the two factors being the canonical isomorphism $\mathcal D'(X\times Y)\cong\mathcal D'(Y\times X)$, gives the distribution of the theorem, with the variable of $Y$ first and the pairing $\langle K,\psi\otimes\varphi\rangle$. Tracing the isomorphisms gives exactly the formula of the theorem: a functional $\ell$ on $\mathcal D(X)\hat\otimes_\pi\mathcal D(Y)$ restricts to $B(\varphi,\psi)=\ell(\varphi\otimes\psi)$, and the operator is $T\varphi=B(\varphi,\cdot)$; conversely an operator gives a bilinear form and hence a functional, which is the distribution $K$. Uniqueness is the density of the algebraic tensor product in the completed one.
+since $\mathcal D(X)\hat\otimes_\pi\mathcal D(Y)\cong\mathcal D(X\times Y)$ and the dual of $\mathcal D(X\times Y)$ is $\mathcal D'(X\times Y)$; writing $K^{\mathrm{tr}}(x,y)$ for the distribution on $X\times Y$ so obtained and putting $K(y,x)=K^{\mathrm{tr}}(x,y)$, the interchange of the two factors being the canonical isomorphism $\mathcal D'(X\times Y)\cong\mathcal D'(Y\times X)$, gives the distribution of the theorem, with the variable of $Y$ first and the pairing $\langle K,\psi\otimes\varphi\rangle$. Tracing the isomorphisms gives exactly the formula of the theorem: a functional $\ell$ on $\mathcal D(X)\hat\otimes_\pi\mathcal D(Y)$ restricts to $B(\varphi,\psi)=\ell(\varphi\otimes\psi)$, and the operator is $T\varphi=\langle\varphi,\cdot\rangle$; conversely an operator gives a bilinear form and hence a functional, which is the distribution $K$. Uniqueness is the density of the algebraic tensor product in the completed one.
 
 **Remark (where the theorem can fail).** For a pair of Fréchet spaces that are not nuclear the projective and injective tensor products differ, and the completion $E\hat\otimes_\pi F$ need not be identifiable with a space of functions or distributions on a product. The identity operator on $\ell^2$, which is not nuclear, still defines a continuous bilinear form $\langle x,y\rangle$ and hence an element of $(E\hat\otimes_\pi F)'$, but the form does not lie in the algebraic tensor product $\ell^2\otimes\ell^2$ and there is no kernel in $\ell^2\otimes\ell^2$ that represents it; the representation exists only after completion, and the completed object is no longer a space of distributions on $\ell^2\times\ell^2$. Nuclearity is what makes the two completions agree and the representation concrete.
 
@@ -161,7 +161,7 @@ $$
 
 and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L(\mathcal S(\mathbb{R}^m),\mathcal S'(\mathbb{R}^n))$, the product of variables being identified with $\mathbb{R}^{m+n}$ in the order $(y,x)$. Consequently every continuous operator on the Schwartz space represents, and is represented , a tempered distribution in two variables; on the Fourier side, the kernel of $T$ corresponds to the distributional symbol of $T$ under the partial transform, which is the starting point.
 
-**Example.** The operator of multiplication by a smooth function $a \in C^\infty(\mathbb{R}^n)$ on $\mathcal S(\mathbb{R}^n)$ has kernel $K(y,x)=a(y)\delta(x-y)$: indeed $\langle K,\psi\otimes\varphi\rangle=\iint a(y)\delta(x-y)\psi(y)\varphi(x)\,dx\,dy=\int a(y)\varphi(y)\psi(y)\,dy=\langle a\varphi,\psi\rangle$. The kernel is not a function but a distribution concentrated on the diagonal, and this is the simplest instance of a kernel that no classical integral operator possesses.
+**Example.** The operator of multiplication by a smooth function $\mathfrak{a} \in C^\infty(\mathbb{R}^n)$ on $\mathcal S(\mathbb{R}^n)$ has kernel $K(y,x)=\mathfrak{a}(y)\delta(x-y)$: indeed $\langle K,\psi\otimes\varphi\rangle=\iint \mathfrak{a}(y)\delta(x-y)\psi(y)\varphi(x)\,dx\,dy=\int \mathfrak{a}(y)\varphi(y)\psi(y)\,dy=\langle \mathfrak{a}\varphi,\psi\rangle$. The kernel is not a function but a distribution concentrated on the diagonal, and this is the simplest instance of a kernel that no classical integral operator possesses.
 
 ## Kernels of the Standard Operators
 
@@ -175,7 +175,7 @@ and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L
 
 (iii) the translation $T=\tau_a$, $\tau_a\varphi(x)=\varphi(x-a)$, has kernel $\delta(x+a-y)$;
 
-(iv) the operator $T\varphi(x)=a(x)\varphi(x)$ of multiplication by $a \in C^\infty$ has kernel $a(y)\delta(x-y)$.
+(iv) the operator $T\varphi(x)=\mathfrak{a}(x)\varphi(x)$ of multiplication by $\mathfrak{a} \in C^\infty$ has kernel $\mathfrak{a}(y)\delta(x-y)$.
 
 *Proof.* Each is verified by pairing with $\varphi\otimes\psi$ and reducing to the definitions: (i) gives $\langle\delta(x-y),\varphi\otimes\psi\rangle=\int\varphi(x)\psi(x)=\langle\varphi,\psi\rangle$; (ii) gives $(-1)^{|\alpha|}\int\varphi(x)\partial^\alpha\psi(x)=\langle\partial^\alpha\varphi,\psi\rangle$; (iii) and (iv) are direct.
 
@@ -199,19 +199,19 @@ whenever one of the operators has compactly supported kernel, the integral being
 
 ### Pseudodifferential Kernels
 
-**Example (symbols and kernels).** For a symbol $a(x,\xi)$ on $\mathbb{R}^n$ define formally
+**Example (symbols and kernels).** For a symbol $\mathfrak{a}(x,\xi)$ on $\mathbb{R}^n$ define formally
 
 $$
-T\varphi(x)=\frac{1}{(2\pi)^n}\int e^{i(x-y)\cdot\xi}a(x,\xi)\varphi(y)\,dy\,d\xi .
+T\varphi(x)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\varphi(y)\,dy\,d\xi .
 $$
 
-If $a$ is a smooth function of at most polynomial growth in $\xi$, the functional is defined by regularisation and the kernel is
+If $\mathfrak{a}$ is a smooth function of at most polynomial growth in $\xi$, the functional is defined by regularisation and the kernel is
 
 $$
-K(x,y)=\frac{1}{(2\pi)^n}\int e^{i(x-y)\cdot\xi}a(x,\xi)\,d\xi ,
+K(x,y)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,d\xi ,
 $$
 
-a distribution whose singularities lie on the diagonal and whose behaviour off the diagonal records the smoothness of $a$. The class of symbols, the composition formula that computes the kernel of a product of two such operators, and the conditions under which the integral converges are those, where the calculus is developed; the kernel theorem is what permits the operator and the kernel to be treated as the same object throughout.
+a distribution whose singularities lie on the diagonal and whose behaviour off the diagonal records the smoothness of $\mathfrak{a}$. The class of symbols, the composition formula that computes the kernel of a product of two such operators, and the conditions under which the integral converges are those, where the calculus is developed; the kernel theorem is what permits the operator and the kernel to be treated as the same object throughout.
 
 ## The Algebraic Form of the Theorem
 
@@ -245,7 +245,7 @@ For open $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$, the algebrai
 
 The proof is the identification of three dualities: $\mathcal L(\mathcal D(X),\mathcal D'(Y))$ is the space of continuous bilinear forms on $\mathcal D(X)\times\mathcal D(Y)$, the dual of the completed projective tensor product is the space of such forms, and for the nuclear spaces $\mathcal D(X)$, $\mathcal D(Y)$ the completed projective tensor product is $\mathcal D(X\times Y)$. Nuclearity is essential: the two completions coincide, and the representation of an operator by a kernel on the product is concrete. The tempered version holds for $\mathcal S(\mathbb{R}^m)$, $\mathcal S(\mathbb{R}^n)$ and gives $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L(\mathcal S(\mathbb{R}^m),\mathcal S'(\mathbb{R}^n))$, the bridge from operators to symbols.
 
-The standard kernels are the delta of the diagonal for the identity, the derivatives of the delta for the differential operators, $a(x)\delta(x-y)$ for multiplication, the reflected conjugate kernel for the adjoint and the pairing integral for the composition; kernels in $L^2(X\times Y)$ are exactly the Hilbert–Schmidt operators, with the norm equal to the $L^2$ norm of the kernel, and smooth kernels are exactly the smoothing operators, which form a two-sided ideal. Green's functions are the kernels of inverses of differential operators, and the kernels of pseudodifferential operators are the oscillatory integrals $\frac{1}{(2\pi)^n}\int e^{i(x-y)\cdot\xi}a(x,\xi)\,d\xi$. The algebraic form of the theorem identifies $(E\hat\otimes F)'$ with $E'\hat\otimes F'$ and with $\mathcal L(E,F')$ for Fréchet nuclear $E,F$, so that a distribution in $m+n$ variables is the same thing as an operator from the first group of variables to the second; in finite dimension this is the identification of an operator with its matrix.
+The standard kernels are the delta of the diagonal for the identity, the derivatives of the delta for the differential operators, $\mathfrak{a}(x)\delta(x-y)$ for multiplication, the reflected conjugate kernel for the adjoint and the pairing integral for the composition; kernels in $L^2(X\times Y)$ are exactly the Hilbert–Schmidt operators, with the norm equal to the $L^2$ norm of the kernel, and smooth kernels are exactly the smoothing operators, which form a two-sided ideal. Green's functions are the kernels of inverses of differential operators, and the kernels of pseudodifferential operators are the oscillatory integrals $\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,d\xi$. The algebraic form of the theorem identifies $(E\hat\otimes F)'$ with $E'\hat\otimes F'$ and with $\mathcal L(E,F')$ for Fréchet nuclear $E,F$, so that a distribution in $m+n$ variables is the same thing as an operator from the first group of variables to the second; in finite dimension this is the identification of an operator with its matrix.
 
 ## Summary of Notation
 
@@ -264,7 +264,7 @@ The standard kernels are the delta of the diagonal for the identity, the derivat
 | ${}^tT$, $T^*$, $K^*$ | transpose, adjoint and adjoint kernel |
 | $L\circ K$ | composition of kernels |
 | $\|T\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
-| $a(x,\xi)$ | symbol of an operator |
+| $\mathfrak{a}(x,\xi)$ | symbol of an operator |
 | $G(x,y)$ | Green's function |
 
 

@@ -163,7 +163,7 @@ $$
 \mathbb{B}^{\bar{\cdot}} = \mathbb{R}e_0\oplus\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3 \cong \mathbb{H},
 $$
 
-the biquaternions with real coefficients. So the quaternion algebra is a real form of the biquaternion algebra, $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, which is the statement of *The Realification of the General Plain Algebra*; the datum involution ${}^{*}$ restricts to $\natural$ on the form, and $\natural$ is the quaternion conjugation. The base involution of this case is trivial, because $R=\mathbb{R}$; the twist is not in the base but in the coefficient conjugation of the complex object, and the real form is cut by that conjugation and not by $\varsigma$.
+the biquaternions with real coefficients. So the quaternion algebra is a real form of the biquaternion algebra, $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, which is the statement of *The Realification and the Effect of the Change of Scalars*; the datum involution ${}^{*}$ restricts to $\natural$ on the form, and $\natural$ is the quaternion conjugation. The base involution of this case is trivial, because $R=\mathbb{R}$; the twist is not in the base but in the coefficient conjugation of the complex object, and the real form is cut by that conjugation and not by $\varsigma$.
 
 ### The Quaternions
 
@@ -206,4 +206,4 @@ The two involutions, $\varsigma$ on the scalars and $\alpha$ on the object, cut 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the fixed rings and the symmetric elements of an involutive ring.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the fixed subalgebras and the descent in the Jordan setting.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the quaternion algebra, its centre and the biquaternion algebra.
-- The companion articles of this series: *Sesqualgebras*, *Hermitian and Skew-Hermitian Elements*, *The Involutions of a Sesqualgebra*, *Anti-Automorphisms Twisted by the Base Involution*, *Subalgebras and the Involution*, *Real Forms and the Descent of an Algebra*, *Tensor Products of Sesqualgebras* and *The Realification of the General Plain Algebra*.
+- The companion articles of this series: *Sesqualgebras*, *Hermitian and Skew-Hermitian Elements*, *The Involutions of a Sesqualgebra*, *Anti-Automorphisms Twisted by the Base Involution*, *Subalgebras and the Involution*, *Real Forms and the Descent of an Algebra*, *Tensor Products of Sesqualgebras* and *The Realification and the Effect of the Change of Scalars*.

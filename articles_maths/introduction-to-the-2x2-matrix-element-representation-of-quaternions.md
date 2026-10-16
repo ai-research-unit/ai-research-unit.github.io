@@ -23,7 +23,7 @@ and extended by real linearity. On a general element $\tilde q=q_0e_0+q_1e_1+q_2
 $$
 \mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3&-iq_1-q_2\\ -iq_1+q_2&q_0+iq_3\end{pmatrix}
 =\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix},
-\qquad z=q_0-iq_3,\quad w=-q_2-iq_1 .
+\qquad z=q_0-iq_3,\quad w=-q_2-iq_1.
 $$
 
 **Theorem.** The map $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$. Its image is the four-real-dimensional subspace
@@ -38,12 +38,12 @@ $$
 
 **Proposition.** For every $\tilde q$,
 $$
-\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0 , \qquad \det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+q_1^2+q_2^2+q_3^2\ge0 .
+\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0, \qquad \det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_0^2+q_1^2+q_2^2+q_3^2\ge0.
 $$
 
 **Proof.** The trace is the sum of the diagonal entries, $(q_0-iq_3)+(q_0+iq_3)=2q_0$. The determinant is $z\overline z-w(-\overline w)=|z|^2+|w|^2$, and $|z|^2=(q_0-iq_3)(q_0+iq_3)=q_0^2+q_3^2$, $|w|^2=q_1^2+q_2^2$.
 
-The determinant is the quaternion norm, quoted from *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and it is multiplicative, $\det\mathsf{M}_2(\tilde p\tilde q)=\det\mathsf{M}_2(\tilde p)\det\mathsf{M}_2(\tilde q)$; the trace is additive and not multiplicative, and depends on the scalar part alone. The determinant is **non-negative** on the image, vanishing only at $\tilde q=0$: this is the matrix form of the definiteness of the quaternion norm, and it is the first sign that the image is a special subspace of $M_2(\mathbb{C})$.
+The determinant is the quaternion norm, quoted from *Norm and Invertibility in the Quaternion Algebra*, below this article in this category, and it is multiplicative, $\det\mathsf{M}_2(\tilde p\tilde q)=\det\mathsf{M}_2(\tilde p)\det\mathsf{M}_2(\tilde q)$; the trace is additive and not multiplicative, and depends on the scalar part alone. The determinant is **non-negative** on the image, vanishing only at $\tilde q=0$: this is the matrix form of the definiteness of the quaternion norm, and it is the first sign that the image is a special subspace of $M_2(\mathbb{C})$.
 
 ## The Images of the Two Subspaces
 
@@ -71,15 +71,15 @@ The last statement is the article's caution. The scalar imaginary $i$ is part of
 
 **Proposition.** The natural conjugation of $\mathbb{H}$ becomes the conjugate transpose,
 $$
-\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger} , \qquad \dagger=\text{conjugate transpose} .
+\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}, \qquad \dagger=\text{conjugate transpose}.
 $$
 The inner involution $\iota_\nu$ becomes conjugation by the matrix of $\nu$,
 $$
-\mathsf{M}_2(\iota_\nu \tilde q)=\mathsf{M}_2(\nu)\,\mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\nu)^{-1} ,
+\mathsf{M}_2(\iota_\nu \tilde q)=\mathsf{M}_2(\nu)\,\mathsf{M}_2(\tilde q)\,\mathsf{M}_2(\nu)^{-1},
 $$
 and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian, $\mathsf{M}_2(\nu)^{\dagger}=-\mathsf{M}_2(\nu)$, with $\mathsf{M}_2(\nu)^{\dagger}\mathsf{M}_2(\nu)=I_2$, so the inner involutions are conjugations by matrices of the image satisfying that condition. The reflection $\rho_\nu=-\iota_\nu$ is minus the same conjugation.
 
-**Proof.** For the general entry, the conjugate transpose of $\mathsf{M}_2(\tilde q)$ is $\left(\begin{smallmatrix}\overline z&-w\\ \overline w&z\end{smallmatrix}\right)$, which is $\mathsf{M}_2(q_0-\vec q)$ read from the pattern with $z'=\overline z$, $w'=-w$; this is $\mathsf{M}_2(\tilde q^{\natural})$. The inner statement is the multiplicativity. For a unit imaginary $\nu$, $\mathsf{M}_2(\nu)^{\dagger}=\mathsf{M}_2(\nu^{\natural})=\mathsf{M}_2(-\nu)=-\mathsf{M}_2(\nu)$ and $\det\mathsf{M}_2(\nu)=N(\nu)=1$.
+**Proof.** For the general entry, the conjugate transpose of $\mathsf{M}_2(\tilde q)$ is $\left(\begin{smallmatrix}\overline z&-w\\ \overline w&z\end{smallmatrix}\right)$, which is $\mathsf{M}_2(q_0-\vec q)$ read from the pattern with $z'=\overline z$, $w'=-w$; this is $\mathsf{M}_2(\tilde q^{\natural})$. The inner statement is the multiplicativity. For a unit imaginary $\nu$, $\mathsf{M}_2(\nu)^{\dagger}=\mathsf{M}_2(\nu^{\natural})=\mathsf{M}_2(-\nu)=-\mathsf{M}_2(\nu)$ and $\det\mathsf{M}_2(\nu)=\langle \nu\rangle_{\natural}=1$.
 
 Thus the natural sign is involutive and anti-multiplicative in the matrix algebra too — the conjugate transpose satisfies $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$ — while the matrix **transpose** alone realizes the composition of ${}^{\natural}$ with an inner involution, and the entrywise conjugation $\overline M$ realizes another.
 
@@ -95,7 +95,7 @@ The quaternion algebra embeds in $M_2(\mathbb{C})$ by $e_0\mapsto I$, $e_k\mapst
 | $\mathsf{M}_2(\tilde q)=\left(\begin{smallmatrix}z&w\\-\overline w&\overline z\end{smallmatrix}\right)$ | the image, $z=q_0-iq_3$, $w=-q_2-iq_1$ |
 | $\sigma(M)=\epsilon\overline M\epsilon^{-1}$ | the anti-linear involution whose fixed space is the image |
 | $\epsilon=i\sigma_2$ | $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ |
-| $\operatorname{Tr}=2q_0,\ \det=N(\tilde q)$ | the trace and the determinant of the image |
+| $\operatorname{Tr}=2q_0,\ \det=\langle\tilde q\rangle_{\natural}$ | the trace and the determinant of the image |
 | $\dagger$ | the conjugate transpose, the image of ${}^{\natural}$ |
 
 ## Further Reading

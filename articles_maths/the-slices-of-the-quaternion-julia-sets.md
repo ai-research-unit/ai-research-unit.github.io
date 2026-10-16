@@ -6,13 +6,13 @@ A four-dimensional set is studied through its sections by the two-dimensional su
 
 The quadratic map, the critical point, the filled Julia set and the complex planes are from *The Quaternion Quadratic Map and Its Julia Sets*; the parametrisation of the locus and the reduction $\kappa$ are from *The Quaternion Mandelbrot Set*; the complex Julia set and its computation are from *The Julia Sets of a Complex Polynomial*; the rotations and the orthogonal group are from *Quaternion Rotations and Reflections* and *Quaternion Automorphisms and Derivations*; and the dimensions and the coverings used below are from *Fractal Geometry*. The escape radius and the Green's function on a slice are the subject of *The Escape Radius and the Green's Function for Quaternions*, and the dimension of the slices and of the hulls is that of *The Dimension of the Quaternion Julia Sets*. No physics is invoked.
 
-Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ for $\nu \in S^2=\{\nu\in\operatorname{Im}\mathbb{H}:N(\nu)=1\}$, and $\kappa(c)=c_0+i|\vec c|$ is the reduction of the parameter to the complex plane. The plane of the parameter $c$ is $\mathbb{C}_c=\operatorname{span}\{e_0,c\}$.
+Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ for $\nu \in S^2=\{\nu\in\operatorname{Im}\mathbb{H}:\langle \nu\rangle_{\natural}=1\}$, and $\kappa(c)=c_0+i|\vec c|$ is the reduction of the parameter to the complex plane. The plane of the parameter $c$ is $\mathbb{C}_c=\operatorname{span}\{e_0,c\}$.
 
 ## The Complex Planes Through the Origin
 
-**Proposition (the family of planes).** The assignment $\nu \mapsto \mathbb{C}_\nu$ is a bijection from $S^2$ onto the set of two-dimensional subalgebras of $\mathbb{H}$ that contain $e_0$, and it is equivariant for the orthogonal action: $\operatorname{Ad}_u(\mathbb{C}_\nu)=\mathbb{C}_{\operatorname{Ad}_u\nu}$ for $u \in S^3$, with $\operatorname{Ad}_u$ acting on $S^2$ by the rotation group. Every quaternion lies in at least one plane, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat u_{\mathrm d}}$ with $\hat u_{\mathrm d}=\vec q/|\vec q|$.
+**Proposition (the family of planes).** The assignment $\nu \mapsto \mathbb{C}_\nu$ is a bijection from $S^2$ onto the set of two-dimensional subalgebras of $\mathbb{H}$ that contain $e_0$, and it is equivariant for the orthogonal action: $\operatorname{Ad}_u(\mathbb{C}_\nu)=\mathbb{C}_{\operatorname{Ad}_u\nu}$ for $u \in S^3$, with $\operatorname{Ad}_u$ acting on $S^2$ by the rotation group. Every quaternion lies in at least one plane, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\vec u_{\mathrm d}}$ with $\vec u_{\mathrm d}=\vec q/|\vec q|$.
 
-*Proof.* Each $\mathbb{C}_\nu$ is a two-dimensional real subalgebra and is a copy of $\mathbb{C}$ with $\nu$ as a square root of $-e_0$; conversely a two-dimensional subalgebra containing $e_0$ is spanned by $e_0$ and an element $\hat\xi$ with $\hat\xi^2=-e_0$, and the elements with square $-e_0$ are exactly the unit imaginary quaternions, which form $S^2$ by *Quaternion Roots of Minus One*. The equivariance is the fact that an automorphism carries the plane of an axis to the plane of the image of the axis. The last statement is proved in *The Quaternion Quadratic Map and Its Julia Sets*.
+*Proof.* Each $\mathbb{C}_\nu$ is a two-dimensional real subalgebra and is a copy of $\mathbb{C}$ with $\nu$ as a square root of $-e_0$; conversely a two-dimensional subalgebra containing $e_0$ is spanned by $e_0$ and an element $\vec\xi$ with $\vec\xi^2=-e_0$, and the elements with square $-e_0$ are exactly the unit imaginary quaternions, which form $S^2$ by *Quaternion Roots of Minus One*. The equivariance is the fact that an automorphism carries the plane of an axis to the plane of the image of the axis. The last statement is proved in *The Quaternion Quadratic Map and Its Julia Sets*.
 
 **Definition.** A **slice of the Julia set** $J_c$ is an intersection $J_c \cap \mathbb{C}_\nu$. The slice is **invariant** if $\mathbb{C}_\nu$ is $\mathbb{C}_c$, the plane of the parameter.
 
@@ -21,7 +21,7 @@ Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ for $\nu \in S^2=\{\
 **Theorem (the invariant slice is the complex Julia set).** Let $c \notin \mathbb{R}$ and let $\mathbb{C}_c=\operatorname{span}\{e_0,c\}$ be the plane of the parameter, with the identification $\varphi_c : \mathbb{C}_c \to \mathbb{C}$ sending $c$ to $\kappa(c)=c_0+i|\vec c|$; when $c \in \mathbb{R}$ take $\mathbb{C}_c=\mathbb{R}$ and $\varphi_c(c)=c$. Then $\mathbb{C}_c$ is invariant under $f_c$, and
 
 $$
-J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr) , \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr),
+J_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(J^{\mathbb{C}}_{\kappa(c)}\bigr), \qquad K_c \cap \mathbb{C}_c = \varphi_c^{-1}\bigl(K^{\mathbb{C}}_{\kappa(c)}\bigr),
 $$
 
 where $J^{\mathbb{C}}_{\kappa}$ and $K^{\mathbb{C}}_{\kappa}$ are the Julia set and the filled Julia set of $z \mapsto z^2+\kappa$. In particular **the slice of the parameter is an honest complex Julia set**.
@@ -35,7 +35,7 @@ where $J^{\mathbb{C}}_{\kappa}$ and $K^{\mathbb{C}}_{\kappa}$ are the Julia set 
 **Theorem (one slice suffices for a real parameter).** Let $c \in \mathbb{R}$ and let $\nu \in S^2$. Then
 
 $$
-K_c = \operatorname{Ad}_{S^3}\bigl(K_c\cap\mathbb{C}_\nu\bigr) , \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c\cap\mathbb{C}_\nu\bigr) ,
+K_c = \operatorname{Ad}_{S^3}\bigl(K_c\cap\mathbb{C}_\nu\bigr), \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c\cap\mathbb{C}_\nu\bigr),
 $$
 
 and for every axis $\nu$ the slice is the same complex Julia set under the identification $\mathbb{C}_\nu \to \mathbb{C}$, $\nu \mapsto i$. Thus **for a real parameter the set is recovered from one slice, and the slices for different axes are congruent**.
@@ -45,7 +45,7 @@ and for every axis $\nu$ the slice is the same complex Julia set under the ident
 **Corollary (the profile).** For a real parameter $c$, define the **profile** $\sigma_c \subset \mathbb{R}^2$ by $\sigma_c=\{(q_0,|\vec q|) : \tilde q \in J_c\}$, a subset of the closed half-plane. Then $\sigma_c$ determines $J_c$ by
 
 $$
-J_c = \{\tilde q \in \mathbb{H} : (q_0,|\vec q|) \in \sigma_c\} ,
+J_c = \{\tilde q \in \mathbb{H} : (q_0,|\vec q|) \in \sigma_c\},
 $$
 
 and $\sigma_c$ is the image of the complex Julia set $J^{\mathbb{C}}_c \subset \mathbb{C}$ under $z=x+iy \mapsto (x,|y|)$. The set is the union of the spheres of radius $|\vec q|$ centred at $q_0e_0$ over the points of the profile; **every picture of $J_c$ for a real parameter is the revolution about the real axis of a picture of the complex Julia set.**
@@ -57,7 +57,7 @@ and $\sigma_c$ is the image of the complex Julia set $J^{\mathbb{C}}_c \subset \
 **Definition.** The **reduction** of a quaternion $\tilde q$ to the plane of the parameter $c$ is
 
 $$
-\rho_c(\tilde q) = q_0 + |\vec q|\,\hat c \quad (\vec c\neq0,\ \vec q\neq0), \qquad \rho_c(\tilde q) = q_0+|\vec q|\,e_1 \quad (\vec c=0), \qquad \rho_c(q_0)=q_0 ,
+\rho_c(\tilde q) = q_0 + |\vec q|\,\hat c \quad (\vec c\neq0,\ \vec q\neq0), \qquad \rho_c(\tilde q) = q_0+|\vec q|\,e_1 \quad (\vec c=0), \qquad \rho_c(q_0)=q_0,
 $$
 
 the unique point of $\mathbb{C}_c$ (with $\mathbb{C}_0$ interpreted as the plane $\mathbb{C}_{e_1}$) with the same scalar part and the same modulus of the vector part as $\tilde q$; it is the representative of the orbit of $\tilde q$ under the rotation group that can lie in the plane of the parameter, and it is the point of the plane whose rotational hull contains $\tilde q$.
@@ -69,7 +69,7 @@ the unique point of $\mathbb{C}_c$ (with $\mathbb{C}_0$ interpreted as the plane
 **Remark (why the invariant slice is still the right object).** The failure above does not weaken the invariant slice: it is the only slice that is computable by the complex theory, it carries the critical orbit, and it is the slice whose dimension is compared with the dimension of the whole set in *The Dimension of the Quaternion Julia Sets*. What fails is only the hope that the other slices are rotations of it. **The correct general statement is equivariance and not a hull:**
 
 $$
-J_{\operatorname{Ad}_u(c)} = \operatorname{Ad}_u(J_c) , \qquad K_{\operatorname{Ad}_u(c)} = \operatorname{Ad}_u(K_c) ,
+J_{\operatorname{Ad}_u(c)} = \operatorname{Ad}_u(J_c), \qquad K_{\operatorname{Ad}_u(c)} = \operatorname{Ad}_u(K_c),
 $$
 
 from *The Quaternion Quadratic Map and Its Julia Sets*; the whole family over the orbit $SO(3)c$ is one dynamical object read in rotating frames, and a statement about the slices of one member is a statement about the corresponding planes of the whole orbit. The reduction $\rho_c$ intertwines the dynamics for a real parameter, where it generates the symmetry; for a general non-real parameter it does not, and the purely imaginary parameter $c=\tfrac12 e_2$ exhibits the failure; whether it also occurs for a non-real parameter with a nonzero scalar part was not decided by the numerical search recorded in the companion file.
@@ -79,7 +79,7 @@ from *The Quaternion Quadratic Map and Its Julia Sets*; the whole family over th
 **Theorem (the slices determine the set).** For every parameter $c$,
 
 $$
-J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr) , \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr) .
+J_c = \bigcup_{\nu \in S^2} \bigl(J_c \cap \mathbb{C}_\nu\bigr), \qquad K_c = \bigcup_{\nu \in S^2} \bigl(K_c \cap \mathbb{C}_\nu\bigr).
 $$
 
 *Proof.* Every quaternion lies in at least one plane $\mathbb{C}_\nu$ by the first proposition of the article, and the union is therefore the whole set; the reverse inclusion is trivial.
@@ -117,7 +117,7 @@ The slices of a quaternion Julia set are its intersections with the complex plan
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ | Complex plane of the axis $\nu$, $\nu\in S^2$, $\cong\mathbb{C}$ |
-| $\hat u_{\mathrm d}=\vec q/\lvert\vec q\rvert$ | The unit pure quaternion of the vector part; the exact axis $\mathbb{C}_{\hat u_{\mathrm d}}$ |
+| $\vec u_{\mathrm d}=\vec q/\lvert\vec q\rvert$ | The unit pure quaternion of the vector part; the exact axis $\mathbb{C}_{\vec u_{\mathrm d}}$ |
 | $\mathbb{C}_c$ | The plane of the parameter, the invariant slice |
 | $\kappa(c)=c_0+i\lvert\vec c\rvert$ | The complex parameter of the invariant slice |
 | $\varphi_c$ | The isomorphism $\mathbb{C}_c\to\mathbb{C}$, $e_0\mapsto1$, $c\mapsto\kappa(c)$ |

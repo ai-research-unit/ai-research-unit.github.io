@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The complex space carries two products: the field product $AC$ and the sesquilinear product $A\bar C$. The first is *Complex Algebra* and its relation to the second is *The Two Products of the Complex Space*; this article is the second product alone, as an algebraic structure. It is the complex instance of the general plain sesqualgebra, and on the commutative base the plain setting is the only one.
+The complex space carries two products: the field product $AC$ and the sesquilinear product $A\bar C$. The first is *Complex Algebra* and its relation to the second is *The Two Products of the Complexoid Space*; this article is the second product alone, as an algebraic structure. It is the complex instance of the general plain sesqualgebra, and on the commutative base the plain setting is the only one.
 
-The product is not associative, and the article's subject is exactly how it fails to be: the associator, the ternary product it defines, the two one-sided multiplications and the monoid they generate, the sandwich, and the commutator with its symmetrisation. It does not treat the product as a form: the Hermitian form $H(A,C)=A\bar C$ is *The Hermitian Form and the Positivity of the Complex Algebra*, below this article in this category, and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complex Space*. It does not treat the invertibility or the norm of the field, which are *Complex Norm and Invertibility*.
+The product is not associative, and the article's subject is exactly how it fails to be: the associator, the ternary product it defines, the two one-sided multiplications and the monoid they generate, the sandwich, and the commutator with its symmetrisation. It does not treat the product as a form: the Hermitian form $\langle A,C\rangle_{*}=A\bar C$ is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category, and the two algebraic norms are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*. It does not treat the invertibility or the norm of the field, which are *Complex Norm and Invertibility*.
 
 **Interpretation and notation.** The element is $A=a+ia'$, a second element is $C=c+ic'$; the base involution is the bar $\bar A=a-ia'$ and ${}^{*}=\bar{\cdot}$. The sesquilinear product is written
 
@@ -12,11 +12,11 @@ $$
 A\star C= A\bar C,
 $$
 
-the star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The element letters are $A$, $B$, $C$; the letters $B$, $N$, $H$, $K$ name the four forms of the corpus, and only $H$ appears in this article, in the adjoint of the sandwich. The single overlap, the letter $B$, is resolved by the slot: it is the middle element of the associator and of the ternary product, and it is the bilinear form only where a form is in play, which in this article is nowhere. The sandwich parameters are $P$ and $Q$.
+the star being reserved for the involution and never written as an operator symbol; the plain product is juxtaposition. The element letters are $A$, $\langle\cdot\rangle$, $C$; the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ name the four forms of the corpus, and only $\langle\cdot,\cdot\rangle_{*}$ appears in this article, in the adjoint of the sandwich. The single overlap, the letter $\langle\cdot,\cdot\rangle$, is resolved by the slot: it is the middle element of the associator and of the ternary product, and it is the bilinear form only where a form is in play, which in this article is nowhere. The sandwich parameters are $P$ and $Q$.
 
 ## The Product and Its Class
 
-**Definition.** The **sesquilinear product** of the complex space is $A\star C=A\bar C$. It is the general plain sesquilinear product of *The Two Products of the Complex Space*.
+**Definition.** The **sesquilinear product** of the complex space is $A\star C=A\bar C$. It is the general plain sesquilinear product of *The Two Products of the Complexoid Space*.
 
 **Proposition (parities).** The product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second: for complex $\lambda$,
 
@@ -56,11 +56,11 @@ $$
 [A,B,C]= A\bar B\,(\bar C-C).
 $$
 
-**Proof.** $(A\star B)\star C=(A\bar B)\star C=(A\bar B)\bar C=A\bar B\bar C$, and $A\star(B\star C)=A\star(B\bar C)=A\overline{B\bar C}=A\bar B C$; the difference is $A\bar B(\bar C-C)$.
+**Proof.** $(A\star B)\star C=(A\bar B)\star C=(A\bar B)\bar C=A\bar B\bar C$, and $A\star(B\star C)=A\star(B\bar C)=A\overline{B\bar C}=A\bar B C$; the difference is $A\bar \langle \bar C-C\rangle$.
 
 **Corollary (the associator is confined to the anti-self-adjoint part).** The associator vanishes for all $A,B$ exactly when $C$ is self-adjoint, $C=\bar C$. It is therefore a failure carried by the anti-self-adjoint part of the third slot alone, and it vanishes on the whole real subspace.
 
-**Proof.** $A\bar B(\bar C-C)=0$ for all $A,B$ iff $\bar C-C=0$, since $\mathbb{C}$ has no zero divisor.
+**Proof.** $A\bar \langle \bar C-C\rangle=0$ for all $A,B$ iff $\bar C-C=0$, since $\mathbb{C}$ has no zero divisor.
 
 **Remark (the conjugate-commutative law and the associator).** The law $A\star C=\overline{C\star A}$ relocates a conjugation across the product, and read on the associator it says that the associator is Hermitian-symmetric in its three slots,
 
@@ -68,7 +68,7 @@ $$
 [A,B,C]=\overline{[\bar A,\bar B,\bar C]} .
 $$
 
-The verification is one line from the formula: $\overline{[\bar A,\bar B,\bar C]}=\overline{\bar A B(C-\bar C)}=A\bar B(\bar C-C)=[A,B,C]$. The defect is therefore conjugate-symmetric in the three slots, and it is non-zero exactly on the anti-self-adjoint part of the third; the conjugate-commutative law relocates the conjugation rather than removing the defect. The sesquilinear product is at this point at its sharpest difference from the field product, which has no associator at all. The general theory of the associator of a sesqualgebra is *The Sesquilinear Associator and the Ternary Product*.
+The verification is one line from the formula: $\overline{[\bar A,\bar B,\bar C]}=\overline{\bar A \langle C-\bar C\rangle}=A\bar \langle \bar C-C\rangle=[A,B,C]$. The defect is therefore conjugate-symmetric in the three slots, and it is non-zero exactly on the anti-self-adjoint part of the third; the conjugate-commutative law relocates the conjugation rather than removing the defect. The sesquilinear product is at this point at its sharpest difference from the field product, which has no associator at all. The general theory of the associator of a sesqualgebra is *The Sesquilinear Associator and the Ternary Product*.
 
 **Definition.** The **ternary product** of the sesquilinear structure is
 
@@ -144,13 +144,13 @@ $$
 
 **Proof.** $R_{Q}L_{P}(X)=(P\bar X)\bar Q=P\bar X\bar Q$, and $T_{P,\bar Q}(\bar X)=P\bar X\bar Q$.
 
-**Theorem (the adjoint with respect to $H$).** Let the adjoint ${}^{\dagger}$ be taken with respect to the Hermitian form $H(X,Y)=X\bar Y$, in the convention $H(TX,Y)=\overline{H(X,T^{\dagger}Y)}$ for a conjugate-linear $T$ and $H(TX,Y)=H(X,T^{\dagger}Y)$ for a linear $T$. Then
+**Theorem (the adjoint with respect to $\langle\cdot,\cdot\rangle_{*}$).** Let the adjoint ${}^{\dagger}$ be taken with respect to the Hermitian form $\langle X,Y\rangle_{*}=X\bar Y$, in the convention $\langle TX,Y\rangle_{*}=\overline{\langle X,T^{\dagger}Y\rangle_{*}}$ for a conjugate-linear $T$ and $\langle TX,Y\rangle_{*}=\langle X,T^{\dagger}Y\rangle_{*}$ for a linear $T$. Then
 
 $$
 S_{P,Q}^{\dagger}=S_{\bar Q,\bar P}, \qquad L_{A}^{\dagger}=L_{A}, \qquad R_{A}^{\dagger}=L^{\mathrm{alg}}_{A}.
 $$
 
-**Proof.** For the sandwich, $S_{\bar Q,\bar P}(Y)=\bar Q\bar Y P$, so $H(X,S_{\bar Q,\bar P}Y)=X\overline{\bar Q\bar Y P}=XQY\bar P$ and $\overline{H(X,S_{\bar Q,\bar P}Y)}=\bar X\bar Q\bar Y P$, while $H(S_{P,Q}X,Y)=P\bar X\bar Q\bar Y$; the two agree by the commutativity of the plain product. For $L_{A}$, $H(L_{A}X,Y)=A\bar X\bar Y$ and $\overline{H(X,L_{A}Y)}=\overline{X\overline{A\bar Y}}=\bar X A\bar Y$; the two agree. For $R_{A}$, $H(R_{A}X,Y)=X\bar A\bar Y$ and $H(X,L^{\mathrm{alg}}_{A}Y)=X\overline{AY}=X\bar A\bar Y$. The adjoint of the involution itself is ${}^{*}$, since $H(\bar X,Y)=\bar X\bar Y=\overline{H(X,\bar Y)}$.
+**Proof.** For the sandwich, $S_{\bar Q,\bar P}(Y)=\bar Q\bar Y P$, so $\langle X,S_{\bar Q,\bar P}Y\rangle_{*}=X\overline{\bar Q\bar Y P}=XQY\bar P$ and $\overline{\langle X,S_{\bar Q,\bar P}Y\rangle_{*}}=\bar X\bar Q\bar Y P$, while $\langle S_{P,Q}X,Y\rangle_{*}=P\bar X\bar Q\bar Y$; the two agree by the commutativity of the plain product. For $L_{A}$, $\langle L_{A}X,Y\rangle_{*}=A\bar X\bar Y$ and $\overline{\langle X,L_{A}Y\rangle_{*}}=\overline{X\overline{A\bar Y}}=\bar X A\bar Y$; the two agree. For $R_{A}$, $\langle R_{A}X,Y\rangle_{*}=X\bar A\bar Y$ and $H(X,L^{\mathrm{alg}}_{A}Y)=X\overline{AY}=X\bar A\bar Y$. The adjoint of the involution itself is ${}^{*}$, since $\langle \bar X,Y\rangle_{*}=\bar X\bar Y=\overline{\langle X,\bar Y\rangle_{*}}$.
 
 **Remark (the operator form of the sandwich).** The sandwich is the general two-sided operator of the sesquilinear structure; it contains the two one-sided families at $P=1$ and $Q=1$, $S_{1,Q}=R_{Q}\circ{}^{*}$ and $S_{P,1}=L_{P}$, and it contains the involution at $P=Q=1$, $S_{1,1}={}^{*}$. The general operator and the two families are *The Sesquilinear Sandwich Operator*; the complex instance is the present computation collapsed to one dimension.
 
@@ -190,11 +190,11 @@ $$
 
 and the parenthesis is $ac'd-a'cd+cd'a-c'da+da'c-d'ac=0$, the six terms cancelling in pairs. The centre is the kernel of the area form, which is $\{0\}$ because $\omega$ is non-degenerate.
 
-**Remark (why the identity holds, and what collapses).** The identity is not an accident of $\mathbb{C}$ and not a coincidence of the computation. On a **two-dimensional** real space every antisymmetric bilinear bracket satisfies it, whatever its values: a contributing triple must repeat an argument, and the two resulting terms are opposite. The failure of the Jacobi identity is a phenomenon of dimension at least three, and the complex space is too small to exhibit it. What collapses on $\mathbb{C}$ is the antisymmetric layer and not the commutator: the algebra is commutative, so the class-preserving antisymmetrisation $\tfrac12(A\bar C-\bar C A)$ vanishes identically. What plays the role of a failed identity here is the **associator** of the binary product, $[A,B,C]=A\bar B(\bar C-C)$; the ternary product repairs it. The symmetrised product does not collapse: it is the real part of $H$ and survives as the symmetric half of the sesquilinear split.
+**Remark (why the identity holds, and what collapses).** The identity is not an accident of $\mathbb{C}$ and not a coincidence of the computation. On a **two-dimensional** real space every antisymmetric bilinear bracket satisfies it, whatever its values: a contributing triple must repeat an argument, and the two resulting terms are opposite. The failure of the Jacobi identity is a phenomenon of dimension at least three, and the complex space is too small to exhibit it. What collapses on $\mathbb{C}$ is the antisymmetric layer and not the commutator: the algebra is commutative, so the class-preserving antisymmetrisation $\tfrac12(A\bar C-\bar C A)$ vanishes identically. What plays the role of a failed identity here is the **associator** of the binary product, $[A,B,C]=A\bar \langle \bar C-C\rangle$; the ternary product repairs it. The symmetrised product does not collapse: it is the real part of $\langle\cdot,\cdot\rangle_{*}$ and survives as the symmetric half of the sesquilinear split.
 
 ## Summary
 
-The sesquilinear product $A\star C=A\bar C$ is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it has the right unit $1$ and no left unit; it is neither associative nor commutative, and it is conjugate-commutative, $A\star C=\overline{C\star A}$. Its associator is $[A,B,C]=A\bar B(\bar C-C)$, nonzero but confined to the anti-self-adjoint part of the third slot; its ternary product $\{A,B,C\}=A\bar B C$ is symmetric in the outer slots, Hermitian-symmetric and satisfies the Jordan triple identity, which makes the structure a $J^{*}$-algebra. The left multiplications are conjugate-linear and do not close under composition, their composite being the ordinary left multiplication $L^{\mathrm{alg}}_{A\bar B}$; the right multiplications are linear and close in the forward order, so that $A\mapsto R_{A}$ is an isomorphism of the multiplicative monoid of the field onto the right family. The sandwich $S_{P,Q}=R_{Q}\circ L_{P}$ has adjoint $S_{P,Q}^{\dagger}=S_{\bar Q,\bar P}$ with respect to the Hermitian form; the one-sided adjoints are $L_{A}^{\dagger}=L_{A}$ and $R_{A}^{\dagger}=L^{\mathrm{alg}}_{A}$. The commutator $[A,C]=2i\operatorname{Im}(A\bar C)$ is purely imaginary and alternating, and the Jacobi identity holds on it; the symmetrised product $A\odot C=2\operatorname{Re}(A\bar C)$ is the real part of the form. The product read as a form is *The Hermitian Form and the Positivity of the Complex Algebra*, below this article in this category.
+The sesquilinear product $A\star C=A\bar C$ is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it has the right unit $1$ and no left unit; it is neither associative nor commutative, and it is conjugate-commutative, $A\star C=\overline{C\star A}$. Its associator is $[A,B,C]=A\bar \langle \bar C-C\rangle$, nonzero but confined to the anti-self-adjoint part of the third slot; its ternary product $\{A,B,C\}=A\bar B C$ is symmetric in the outer slots, Hermitian-symmetric and satisfies the Jordan triple identity, which makes the structure a $J^{*}$-algebra. The left multiplications are conjugate-linear and do not close under composition, their composite being the ordinary left multiplication $L^{\mathrm{alg}}_{A\bar B}$; the right multiplications are linear and close in the forward order, so that $A\mapsto R_{A}$ is an isomorphism of the multiplicative monoid of the field onto the right family. The sandwich $S_{P,Q}=R_{Q}\circ L_{P}$ has adjoint $S_{P,Q}^{\dagger}=S_{\bar Q,\bar P}$ with respect to the Hermitian form; the one-sided adjoints are $L_{A}^{\dagger}=L_{A}$ and $R_{A}^{\dagger}=L^{\mathrm{alg}}_{A}$. The commutator $[A,C]=2i\operatorname{Im}(A\bar C)$ is purely imaginary and alternating, and the Jacobi identity holds on it; the symmetrised product $A\odot C=2\operatorname{Re}(A\bar C)$ is the real part of the form. The product read as a form is *The Hermitian Form and the Positivity of the Complexoid Algebra*, below this article in this category.
 
 ## Summary of Notation
 
@@ -210,7 +210,7 @@ The sesquilinear product $A\star C=A\bar C$ is $\mathbb{C}$-linear in the first 
 | $[A,B,C]$ | the associator, $(A\star B)\star C-A\star(B\star C)$ |
 | $[A,C]$ | the commutator, $A\bar C-C\bar A=2i\operatorname{Im}(A\bar C)$ |
 | $A\odot C$ | the symmetrised product, $A\bar C+C\bar A=2\operatorname{Re}(A\bar C)$ |
-| ${}^{\dagger}$ | the adjoint with respect to $H$, written on operators and never on elements |
+| ${}^{\dagger}$ | the adjoint with respect to $\langle\cdot,\cdot\rangle_{*}$, written on operators and never on elements |
 
 ## Further Reading
 

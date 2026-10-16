@@ -14,13 +14,13 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The complex plane $\mathbb{C}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi} A)}, \qquad \xi \in \mathbb{C}.
+\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{C}.
 $$
 
 Equivalently, writing $\xi = b + i b'$ and $A = a + i a'$,
 
 $$
-\chi_\xi(A) = e^{2\pi i (b a + b' a')}.
+\chi_\xi(A) = \exp(2\pi i (b a + b' a')).
 $$
 
 The dual group $\hat{\mathbb{C}}$ is isomorphic to $\mathbb{C}$ itself, and the pairing is
@@ -36,13 +36,13 @@ So complex harmonic analysis is, at the level of the additive group, the same as
 The multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ is also a locally compact abelian group, isomorphic to $\mathbb{R}_{>0} \times \mathbb{S}^1$ via the polar decomposition
 
 $$
-A = r e^{i\theta}, \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
+A = r \exp(i\theta), \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
 $$
 
 Its characters are
 
 $$
-\chi_{\tau, n}(A) = r^{i \tau} e^{i n \theta}, \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
+\chi_{\tau, n}(A) = r^{i \tau} \exp(i n \theta), \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
 $$
 
 This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C}$, which is the Mellin transform in disguise.
@@ -54,36 +54,36 @@ This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C
 The **Fourier transform** of $f \in L^1(\mathbb{C})$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{C}} f(A) e^{-2\pi i \operatorname{Re}(\bar{\xi} A)} \, dA,
+(\mathcal F f)(\xi) = \int_{\mathbb{C}} f(A) \exp(-2\pi i \operatorname{Re}(\bar{\xi} A)) \, dA,
 $$
 
 where $dA$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $A = a + i a'$ and $\xi = b + i b'$,
 
 $$
-\hat{f}(b, b') = \int_{\mathbb{R}^2} f(a, a') e^{-2\pi i (b a + b' a')} \, da \, da'.
+(\mathcal F f)(b, b') = \int_{\mathbb{R}^2} f(a, a') \exp(-2\pi i (b a + b' a')) \, da \, da'.
 $$
 
 This is the ordinary two-dimensional Fourier transform. The complex notation is a convenience; the content is the same.
 
 ### Basic Properties
 
-**Linearity.** $\widehat{af + bg} = a \hat{f} + b \hat{g}$.
+**Linearity.** $\widehat{af + bg} = a \mathcal F f + b \mathcal F g$.
 
-**Translation.** If $f_B(A) = f(A - B)$, then $\hat{f}_B(\xi) = e^{-2\pi i \operatorname{Re}(\bar{\xi} B)} \hat{f}(\xi)$.
+**Translation.** If $f_B(A) = f(A - B)$, then $\mathcal F f_B(\xi) = \exp(-2\pi i \operatorname{Re}(\bar{\xi} B)) (\mathcal F f)(\xi)$.
 
-**Modulation.** If $f_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi} A)} f(A)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.
+**Modulation.** If $f_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)) f(A)$, then $\mathcal F f_\xi(\eta) = (\mathcal F f)(\eta - \xi)$.
 
 **Scaling.** If $f_\lambda(A) = f(\lambda A)$ for $\lambda \in \mathbb{C}^\times$, then
 
 $$
-\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \hat{f}\left(\frac{\xi}{\bar{\lambda}}\right),
+\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \mathcal F f\left(\frac{\xi}{\bar{\lambda}}\right),
 $$
 
 where $\xi/\bar{\lambda}$ is complex division.
 
-**Rotation.** If $f_\theta(A) = f(e^{i\theta} A)$, then $\hat{f}_\theta(\xi) = \hat{f}(e^{i\theta} \xi)$. The Fourier transform commutes with rotations.
+**Rotation.** If $f_\theta(A) = f(\exp(i\theta) A)$, then $\mathcal F f_\theta(\xi) = (\mathcal F f)(\exp(i\theta) \xi)$. The Fourier transform commutes with rotations.
 
-**Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.
+**Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
 
 ### The Plancherel Theorem
 
@@ -96,17 +96,17 @@ $$
 with
 
 $$
-\|\hat{f}\|_2 = \|f\|_2, \qquad \langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle.
+\|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
 $$
 
 This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.
 
 ### The Inversion Theorem
 
-**Theorem.** If $f \in L^1(\mathbb{C})$ and $\hat{f} \in L^1(\mathbb{C})$, then
+**Theorem.** If $f \in L^1(\mathbb{C})$ and $\mathcal F f \in L^1(\mathbb{C})$, then
 
 $$
-f(A) = \int_{\mathbb{C}} \hat{f}(\xi) e^{2\pi i \operatorname{Re}(\bar{\xi} A)} \, d\xi
+f(A) = \int_{\mathbb{C}} (\mathcal F f)(\xi) \exp(2\pi i \operatorname{Re}(\bar{\xi} A)) \, d\xi
 $$
 
 for almost every $A$.
@@ -129,7 +129,7 @@ whenever the integral converges. This is the convolution on the additive group $
 
 **Associativity.** $(f * g) * h = f * (g * h)$.
 
-**Young's inequality.** If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
+**Young's inequality.** If $1/n + 1/m = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
 
 $$
 \|f * g\|_r \leq \|f\|_p \|g\|_q.
@@ -138,7 +138,7 @@ $$
 **Convolution theorem.** If $f, g \in L^1(\mathbb{C})$, then
 
 $$
-\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi).
 $$
 
 The convolution is the additive convolution. There is also a **multiplicative convolution** on $\mathbb{C}^\times$, defined by
@@ -156,13 +156,13 @@ whose Fourier transform is the Mellin transform.
 A holomorphic function $F : \mathbb{C} \to \mathbb{C}$ is of **exponential type** if there exist constants $A, B > 0$ such that
 
 $$
-|F(A)| \leq A e^{B |A|}, \qquad A \in \mathbb{C}.
+|F(A)| \leq A \exp(B |A|), \qquad A \in \mathbb{C}.
 $$
 
 The **indicator function** of $F$ is
 
 $$
-h_F(\theta) = \limsup_{r \to \infty} \frac{\log |F(r e^{i\theta})|}{r}.
+h_F(\theta) = \limsup_{r \to \infty} \frac{\log |F(r \exp(i\theta))|}{r}.
 $$
 
 ### The Paley–Wiener Theorem
@@ -172,7 +172,7 @@ $$
 - compactly supported $L^2$ functions on $\mathbb{R}$, and
 - entire functions of exponential type whose restriction to $\mathbb{R}$ is in $L^2$.
 
-More precisely, if $f \in L^2(\mathbb{R})$ is supported in $[-B, B]$, then $\hat{f}$ extends to an entire function of exponential type at most $2\pi B$, and conversely.
+More precisely, if $f \in L^2(\mathbb{R})$ is supported in $[-B, B]$, then $\mathcal F f$ extends to an entire function of exponential type at most $2\pi B$, and conversely.
 
 **Complex version.** The same theorem holds with $\mathbb{R}$ replaced by $\mathbb{C}$ and compact support replaced by support in a compact subset of $\mathbb{C}$. The Fourier transform of a compactly supported function on $\mathbb{C}$ is an entire function of exponential type on $\mathbb{C}$.
 
@@ -208,7 +208,7 @@ where $\partial = \partial/\partial A$.
 The Fourier transform diagonalizes the Laplacian:
 
 $$
-\widehat{\Delta f}(\xi) = -4 \pi^2 |\xi|^2 \hat{f}(\xi).
+\widehat{\Delta f}(\xi) = -4 \pi^2 |\xi|^2 (\mathcal F f)(\xi).
 $$
 
 This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns differentiation into multiplication by the symbol $-4\pi^2 |\xi|^2$.
@@ -216,7 +216,7 @@ This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns
 The Cauchy–Riemann operator has symbol
 
 $$
-\widehat{\bar{\partial} f}(\xi) = \pi i \xi \hat{f}(\xi),
+\widehat{\bar{\partial} f}(\xi) = \pi i \xi (\mathcal F f)(\xi),
 $$
 
 where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the set $\bar{\xi} = 0$, which is the origin. This is the reason the Cauchy–Riemann operator is elliptic: its symbol vanishes only at the origin.
@@ -266,7 +266,7 @@ in the sense of distributions. This is the starting point of the theory of the *
 The **Hardy space** $H^p(D)$ on the unit disk $D = \{A : |A| < 1\}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r e^{i\theta})|^p \, d\theta \right)^{1/p} < \infty
+\|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
 $$
 
 for $1 \leq p < \infty$, and
@@ -277,7 +277,7 @@ $$
 
 for $p = \infty$.
 
-**Theorem (Fatou).** Every $f \in H^p$ has a boundary value $f(e^{i\theta})$ for almost every $\theta$, and the boundary function is in $L^p(\mathbb{T})$.
+**Theorem (Fatou).** Every $f \in H^p$ has a boundary value $f(\exp(i\theta))$ for almost every $\theta$, and the boundary function is in $L^{n}(\mathbb{T})$.
 
 **Theorem (F. and M. Riesz).** If $f \in H^1$ and its boundary function is real-valued, then $f$ is constant.
 
@@ -309,7 +309,7 @@ $$
 K(A, B) = \frac{1}{\pi (1 - A \bar{B})^2}.
 $$
 
-It is the natural setting for the study of holomorphic functions with controlled $L^p$ growth on the disk.
+It is the natural setting for the study of holomorphic functions with controlled $L^{n}$ growth on the disk.
 
 ### The Bloch Space
 
@@ -335,13 +335,13 @@ whenever the integral converges. For $f \in L^1((0, \infty), a^{\sigma-1} da)$, 
 
 ### Relation to the Fourier Transform
 
-Under the change of variables $a = e^t$, the Mellin transform becomes the Fourier transform:
+Under the change of variables $a = \exp(t)$, the Mellin transform becomes the Fourier transform:
 
 $$
-\mathcal{M} f(\sigma + i\tau) = \int_{-\infty}^\infty e^{(\sigma + i\tau) t} f(e^t) \, dt = \hat{g}(-\tau/2\pi),
+\mathcal{M} f(\sigma + i\tau) = \int_{-\infty}^\infty \exp((\sigma + i\tau) t) f(\exp(t)) \, dt = (\mathcal F g)(-\tau/2\pi),
 $$
 
-where $g(t) = e^{\sigma t} f(e^t)$. So the Mellin transform is the Fourier transform in logarithmic coordinates.
+where $g(t) = \exp(\sigma t) f(\exp(t))$. So the Mellin transform is the Fourier transform in logarithmic coordinates.
 
 ### The Mellin Convolution
 
@@ -386,7 +386,7 @@ where the integral is over the line with normal direction $(\cos\theta, \sin\the
 **Theorem (Fourier Slice).** The one-dimensional Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:
 
 $$
-\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
+\widehat{Rf(\theta, \cdot)}(\sigma) = (\mathcal F f)(\sigma \cos\theta, \sigma \sin\theta).
 $$
 
 **Proof.** Write the definition of the Radon transform, take the Fourier transform in $t$, and change variables.
@@ -398,7 +398,7 @@ The Fourier slice theorem is the mathematical basis of computed tomography: it s
 **Theorem.** For suitable $f$,
 
 $$
-f(a, b) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{2\pi i \sigma (a \cos\theta + b \sin\theta)} \, d\sigma \, d\theta.
+f(a, b) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(2\pi i \sigma (a \cos\theta + b \sin\theta)) \, d\sigma \, d\theta.
 $$
 
 The factor $|\sigma|$ is the **ramp filter**, and it is the source of the high-frequency amplification in tomography.
@@ -445,7 +445,7 @@ The complex wavelet transform is used in image processing, where it provides bot
 
 ## Summary
 
-Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi}A)}$ are the exponentials from which the transform is built.
+Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi}A))$ are the exponentials from which the transform is built.
 
 The Fourier transform on $\mathbb{C}$ is the transform on that group, written in the complex variable, and convolution is the group convolution on $\mathbb{R}^2$. The Paley–Wiener theorem relates the decay of the transform to the holomorphic extension of the function. The article then takes up the interaction of the transform with holomorphy: the Cauchy–Riemann operator and the Laplacian, the Hardy spaces of holomorphic functions on the disc, and the theorems describing how harmonic analysis restricts to the holomorphic category.
 
@@ -458,8 +458,8 @@ The last three sections extend the transform beyond the group setting: the Melli
 | $\mathbb{C}$ | Complex plane |
 | $A = a + i a'$ | Generic complex number |
 | $\xi = b + i b'$ | Frequency variable |
-| $\chi_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi} A)}$ | Character of $\mathbb{C}$ |
-| $\hat{f}$ | Fourier transform |
+| $\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A))$ | Character of $\mathbb{C}$ |
+| $\mathcal F f$ | Fourier transform |
 | $f * g$ | Additive convolution |
 | $f \star g$ | Multiplicative (Mellin) convolution |
 | $\bar{\partial} = \partial/\partial \bar{A}$ | Cauchy–Riemann operator |

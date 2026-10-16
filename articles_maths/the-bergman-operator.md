@@ -94,7 +94,7 @@ $$
 
 **Proof.** The conjugation statement is that $U_F$ preserves the subspace $A^2(\Omega)$ and hence the projection onto it; the metric statement is that $\partial\bar\partial\log K(z,z)$ transforms by the modulus of the holomorphic factor, which is a holomorphic reparametrisation of the Kähler potential. The automorphism group and the metric are *Hermitian Symmetric Spaces and the Bergman Metric*.
 
-**Example (unit disc invariance check).** For $F(z) = e^{i\theta}z$ one has $\det F' = e^{i\theta}$ and $K_{\mathbb{D}}(F(z),F(w)) = K_{\mathbb{D}}(z,w)$, so the transformation law reads $K_{\mathbb{D}}(z,w) = e^{i\theta}K_{\mathbb{D}}(z,w)e^{-i\theta}$, an identity; for the disc automorphism $F(z) = \tfrac{z-a}{1-\bar a z}$ the same computation reproduces $K_{\mathbb{D}}$ and shows the invariance of the hyperbolic metric.
+**Example (unit disc invariance check).** For $F(z) = \exp(i\theta)z$ one has $\det F' = \exp(i\theta)$ and $K_{\mathbb{D}}(F(z),F(w)) = K_{\mathbb{D}}(z,w)$, so the transformation law reads $K_{\mathbb{D}}(z,w) = \exp(i\theta)K_{\mathbb{D}}(z,w)\exp(-i\theta)$, an identity; for the disc automorphism $F(z) = \tfrac{z-a}{1-\bar a z}$ the same computation reproduces $K_{\mathbb{D}}$ and shows the invariance of the hyperbolic metric.
 
 ## Summary
 

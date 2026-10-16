@@ -54,7 +54,7 @@ The classical geometries are the standard instances of the principle, each with 
 | Möbius geometry | the Möbius group $\operatorname{Möb}(n) = O(n+1,1)/\{\pm 1\}$ | *Möbius and Lie Sphere Geometry* |
 | symplectic geometry | the symplectic group $Sp(2n,\mathbb{R})$, preserving the form $\omega$ | *Symplectic Geometry*; *The Unitary and Symplectic Groups* |
 | the linear classical geometry | the general linear group $GL(n,\mathbb{K})$ and its special, orthogonal, unitary and symplectic subgroups | *Matrix Groups and Classical Groups* |
-| the geometry of a quadratic form | the orthogonal group $O(V,Q)$, the invariants of the form | *Isometries and Orthogonal Transformations* |
+| the geometry of a quadratic form | the orthogonal group $O(V,\mathfrak{Q})$, the invariants of the form | *Isometries and Orthogonal Transformations* |
 
 The instances are ordered by the size of the group: the general linear group gives the largest geometry and fewest invariants, the Euclidean and hyperbolic groups the metric geometries with distance and angle, the conformal group the angle alone, and the symplectic group a single alternating form. Each group is the automorphism group of the corresponding structure, so each geometry is the invariant theory of that group, which is the content of the principle.
 
@@ -117,7 +117,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $O(n+1)$, $O(n,1)$, $O(n+1,1)$ | Spherical, hyperbolic and conformal groups |
 | $\operatorname{Möb}(n) = O(n+1,1)/\{\pm 1\}$ | Möbius group |
 | $Sp(2n,\mathbb{R})$, $\omega$ | Symplectic group and symplectic form |
-| $O(V,Q)$ | Orthogonal group of a quadratic form |
+| $O(V,\mathfrak{Q})$ | Orthogonal group of a quadratic form |
 | $\operatorname{Aff}(n)$ | The affine group, $GL(n)\ltimes\mathbb{R}^n$ |
 | $\operatorname{Spin}(n)$ | The spin group, the double cover of $SO(n)$ |
 

@@ -11,10 +11,10 @@ This article lists the orthogonal polynomials the corpus introduces. An orthogon
 |---|---|---|
 | Legendre polynomials $P_n$ | weight $1$ on $[-1,1]$; $(n+1)P_{n+1} = (2n+1)xP_n - nP_{n-1}$; $(1-x^2)y'' - 2xy' + n(n+1)y = 0$ | *Real Special Functions*; *Ordinary Differential Equations* |
 | Chebyshev polynomials of the first kind $T_n$ | weight $(1-x^2)^{-1/2}$ on $[-1,1]$; $T_{n+1} = 2xT_n - T_{n-1}$; $(1-x^2)y'' - xy' + n^2y = 0$ | *Real Special Functions*; *Complex Special Functions* |
-| Hermite polynomials $H_n$ | weight $e^{-x^2}$ on $\mathbb R$; $H_{n+1} = 2xH_n - 2nH_{n-1}$; $y'' - 2xy' + 2ny = 0$ | *Real Special Functions*; *Fourier Analysis on Euclidean Spaces* |
-| Laguerre polynomials $L_n$ | weight $e^{-x}$ on $[0,\infty)$; $(n+1)L_{n+1} = (2n+1-x)L_n - nL_{n-1}$; $xy'' + (1-x)y' + ny = 0$ | *Real Special Functions*; *Complex Special Functions* |
+| Hermite polynomials $H_n$ | weight $\exp(-x^2)$ on $\mathbb R$; $H_{n+1} = 2xH_n - 2nH_{n-1}$; $y'' - 2xy' + 2ny = 0$ | *Real Special Functions*; *Fourier Analysis on Euclidean Spaces* |
+| Laguerre polynomials $L_n$ | weight $\exp(-x)$ on $[0,\infty)$; $(n+1)L_{n+1} = (2n+1-x)L_n - nL_{n-1}$; $xy'' + (1-x)y' + ny = 0$ | *Real Special Functions*; *Complex Special Functions* |
 | the complex forms of the four families | the same weights and recurrences, with the orthogonality on the corresponding contour or curve | *Complex Special Functions* |
-| the Hermite functions | $H_n(x)e^{-x^2/2}$; the eigenfunctions of the Fourier transform with eigenvalues $(-i)^n$ | *Fourier Analysis on Euclidean Spaces* |
+| the Hermite functions | $H_n(x)\exp(-x^2/2)$; the eigenfunctions of the Fourier transform with eigenvalues $(-i)^n$ | *Fourier Analysis on Euclidean Spaces* |
 | the Hermite expansion | the completion of the Hermite functions in $L^2(\mathbb R)$; the basis in which the Fourier transform is diagonal | *Fréchet Spaces* |
 
 ## The Generalised Families

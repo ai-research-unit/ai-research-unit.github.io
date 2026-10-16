@@ -73,7 +73,7 @@ for every $a \in A$; the direct sum of the representations $\pi_\omega$ over all
 
 **Theorem (commutative Gelfand–Naimark).** Every commutative $\mathrm{C}^*$-algebra $A$ is isometrically $*$-isomorphic to $C_0(X)$ for a locally compact Hausdorff space $X$, namely the space of characters of $A$ with the weak-$*$ topology; if $A$ has an identity, $X$ is compact and $A \cong C(X)$.
 
-*Proof (sketch).* The characters form a locally compact space $X$ in the weak-$*$ topology, and the Gelfand transform $\hat a(\chi) = \chi(a)$ is a $*$-homomorphism $A \to C_0(X)$; for a $\mathrm{C}^*$-algebra the Gelfand transform is isometric, because $\|\hat a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = \|a^*a\| = \|a\|^2$ by the $\mathrm{C}^*$-identity, and it is surjective by the Stone–Weierstrass theorem.
+*Proof (sketch).* The characters form a locally compact space $X$ in the weak-$*$ topology, and the Gelfand transform $\mathcal F a(\chi) = \chi(a)$ is a $*$-homomorphism $A \to C_0(X)$; for a $\mathrm{C}^*$-algebra the Gelfand transform is isometric, because $\|\mathcal F a\|_\infty^2 = \|\widehat{a^*a}\|_\infty = \|a^*a\| = \|a\|^2$ by the $\mathrm{C}^*$-identity, and it is surjective by the Stone–Weierstrass theorem.
 
 **Corollary (the norm is determined algebraically).** A $\mathrm{C}^*$-algebra carries at most one norm making it a $\mathrm{C}^*$-algebra, and every $*$-homomorphism from a $\mathrm{C}^*$-algebra to a $\mathrm{C}^*$-algebra is norm-decreasing, hence continuous.
 
@@ -266,7 +266,7 @@ A state with this property is called a **KMS state** (at $\beta = 1$); for a par
 **Corollary (the modular generator).** The logarithm $\log\Delta_\omega$ is an unbounded self-adjoint operator, and the modular flow is the conjugation by the unitary group it generates:
 
 $$
-\varsigma_t^\omega(a) = e^{it\log\Delta_\omega}\,a\,e^{-it\log\Delta_\omega}.
+\varsigma_t^\omega(a) = \exp(it\log\Delta_\omega)\,a\,\exp(-it\log\Delta_\omega).
 $$
 
 The operator $\log\Delta_\omega$ is the **modular generator** of $\omega$, and the pair $(\mathcal{M}, \varsigma^\omega)$ is the **non-commutative flow of weights** of $\mathcal{M}$.

@@ -99,13 +99,13 @@ Started on $1^n 1^m$ with the head at the left end, the machine scans the first 
 
 An equivalent formalism defines the computable functions from the natural numbers by closure conditions.
 
-**Definition.** The **primitive recursive functions** are the least class of functions $\mathbb{N}^k \to \mathbb{N}$ containing the constant functions, the successor $S(n) = n+1$ and the projections $\pi_i^k(x_1,\ldots,x_k) = x_i$, and closed under **composition** $h(\vec x) = f(g_1(\vec x), \ldots, g_m(\vec x))$ and **primitive recursion**
+**Definition.** The **primitive recursive functions** are the least class of functions $\mathbb{N}^k \to \mathbb{N}$ containing the constant functions, the successor $S(n) = n+1$ and the projections $\pi_i^k(x_1,\ldots,x_k) = x_i$, and closed under **composition** $h(x_1,\dots,x_k) = f(g_1(x_1,\dots,x_k), \ldots, g_m(x_1,\dots,x_k))$ and **primitive recursion**
 
 $$
-h(\vec x, 0) = f(\vec x), \qquad h(\vec x, n+1) = g(\vec x, n, h(\vec x, n)).
+h(x_1,\dots,x_k, 0) = f(x_1,\dots,x_k), \qquad h(x_1,\dots,x_k, n+1) = g(x_1,\dots,x_k, n, h(x_1,\dots,x_k, n)).
 $$
 
-The **recursive** (or **$\mu$-recursive**, or **partial recursive**) functions are obtained by adding the **minimisation** operator: if $g(\vec x, y)$ is recursive then so is the function $f(\vec x) = \mu y\,[g(\vec x,y) = 0]$, the least $y$ with $g(\vec x, y) = 0$, undefined if there is none. A function is **total recursive** if it is recursive and defined everywhere.
+The **recursive** (or **$\mu$-recursive**, or **partial recursive**) functions are obtained by adding the **minimisation** operator: if $g(x_1,\dots,x_k, y)$ is recursive then so is the function $f(x_1,\dots,x_k) = \mu y\,[g(x_1,\dots,x_k,y) = 0]$, the least $y$ with $g(x_1,\dots,x_k, y) = 0$, undefined if there is none. A function is **total recursive** if it is recursive and defined everywhere.
 
 **Theorem.** A partial function $\mathbb{N}^k \dashrightarrow \mathbb{N}$ is Turing-computable if and only if it is recursive.
 
@@ -164,10 +164,10 @@ The argument is the diagonal argument in the setting of computations: the machin
 
 ### Arithmetisation of Syntax
 
-The incompleteness theorems concern formal systems that can express elementary arithmetic. Let **Peano arithmetic** (PA) be the theory in the language $\{0, 1, +, \cdot, <\}$ with the usual axioms for the successor, addition, multiplication and order, together with the induction schema: for every formula $\varphi(x, \vec y)$,
+The incompleteness theorems concern formal systems that can express elementary arithmetic. Let **Peano arithmetic** (PA) be the theory in the language $\{0, 1, +, \cdot, <\}$ with the usual axioms for the successor, addition, multiplication and order, together with the induction schema: for every formula $\varphi(x, y_1,\dots,y_k)$,
 
 $$
-\varphi(0,\vec y) \wedge \forall x\,(\varphi(x,\vec y) \to \varphi(x+1,\vec y)) \to \forall x\,\varphi(x,\vec y).
+\varphi(0,y_1,\dots,y_k) \wedge \forall x\,(\varphi(x,y_1,\dots,y_k) \to \varphi(x+1,y_1,\dots,y_k)) \to \forall x\,\varphi(x,y_1,\dots,y_k).
 $$
 
 The theory PA is recursively axiomatised, since the induction schema is a decidable set of axioms, and it expresses the arithmetic of $\mathbb{N}$.

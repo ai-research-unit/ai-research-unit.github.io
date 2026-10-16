@@ -27,22 +27,22 @@ with the covariant derivative $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ ac
 
 The division between what is established and what is interpretation is kept explicit.
 
-- **Established, and recomputed below.** The curvature identity $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; the Yang–Mills equation $D_\mu F^{\mu\nu} = J^\nu$ with the commutator term $i\kappa[\mathcal{A}_\mu,F^{\mu\nu}]$; the covariant conservation $D_\mu J^\mu = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J'_\nu = U J_\nu U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
+- **Established, and recomputed below.** The curvature identity $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; the Yang–Mills equation $D_\mu F^{\mu\nu} = J^\nu$ with the commutator term $i\kappa[\mathcal{A}_\mu,F^{\mu\nu}]$; the covariant conservation $D_\mu J^\mu = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J'_\nu = \tilde U J_\nu \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
 - **Interpretation.** Reading $D_\mu F^{\mu\nu}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.
 - **Gaps and defects, left visible.** The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\nabla\!\cdot\!(\sum_\nu F^{\mu\nu}e_\nu)$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. On the material sector, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b] = 2\varepsilon_{abc}e_c$, and normalized generators $T_a = \tfrac12 e_a$ with $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The gauge group is $SU(2)$, the unit real quaternions, $U^{-1} = \bar U = U^\dagger$. The connection and field strength of the non-abelian sector are $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ with $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$, and $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa = q/\hbar$ the coupling. The covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$, acting on a matter field by left multiplication. Indices run $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict}$; in the $ict$ convention $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index, so the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction and we may write $F^{\mu\nu}$ and $F_{\mu\nu}$ interchangeably. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; where the Yang–Mills density is written, the trace is the **matrix trace** on the $\mathrm{SU}(2)$ factor, which is a different operation. No gauge is fixed.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. On the material sector, $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $[e_a,e_b] = 2\varepsilon_{abc}e_c$, and normalized generators $T_a = \tfrac12 e_a$ with $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The gauge group is $SU(2)$, the unit real quaternions, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$. The connection and field strength of the non-abelian sector are $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ with $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$, and $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa = ϙ/\hbar$ the coupling. The covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$, acting on a matter field by left multiplication. Indices run $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict}$; in the $ict$ convention $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index, so the coordinate sum $\sum_\mu$ is the Lorentz-invariant contraction and we may write $F^{\mu\nu}$ and $F_{\mu\nu}$ interchangeably. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; where the Yang–Mills density is written, the trace is the **matrix trace** on the $\mathrm{SU}(2)$ factor, which is a different operation. No gauge is fixed.
 
 ## The Non-Abelian Curvature and the Adjoint Covariant Derivative
 
 The constructions of this article are those of its two parents, and they are recalled here only far enough to fix the conventions the field equation uses.
 
-The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,
+The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_\mu$, and the covariant derivative is $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Under a local gauge transformation $\tilde U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,
 
 $$
-\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1},
+\mathcal{A}'_\mu = \tilde U\mathcal{A}_\mu \tilde U^{-1} + \frac{i}{\kappa}(\partial_\mu \tilde U)\tilde U^{-1},
 \qquad
-F'_{\mu\nu} = U F_{\mu\nu} U^{-1},
+F'_{\mu\nu} = \tilde U F_{\mu\nu} \tilde U^{-1},
 $$
 
 and $F_{\mu\nu}$ is *not* gauge invariant: it is an algebra element rotated by the group. The covariance of the first-order operator is what forces the inhomogeneous term in the first law.
@@ -81,7 +81,7 @@ $$
 \qquad \bar{e}_0 = e_0,\; \bar{e}_k = -e_k .
 $$
 
-It collects the six independent curvature components against the quaternion-basis products $\bar{e}_\mu e_\nu$. What this object does and does not inherit under a gauge transformation is treated in its own section below; the reader should not assume that the componentwise transformation law $F_{\mu\nu}\mapsto UF_{\mu\nu}U^{-1}$ promotes to a single conjugation of $\mathcal{F}$.
+It collects the six independent curvature components against the quaternion-basis products $\bar{e}_\mu e_\nu$. What this object does and does not inherit under a gauge transformation is treated in its own section below; the reader should not assume that the componentwise transformation law $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$ promotes to a single conjugation of $\mathcal{F}$.
 
 ## The Yang–Mills Equation
 
@@ -104,13 +104,13 @@ is the Yang–Mills equation, and the two terms of its expansion are the whole o
 
 The two slots of the index structure are fixed. The derivative that acts is the one whose index is contracted, and it must be the same index that labels the connection inside the commutator; and the curvature is contracted in its first index by that derivative. Writing $[\mathcal{A}_\nu,F^{\mu\nu}]$ (connection index equal to the free index), or $[\mathcal{A}_\mu,F^{\nu\mu}]$ (curvature contracted in its second index), or reversing the sign of the commutator term, each destroys the conservation law derived in the next section. This was checked directly on a generic non-commuting connection: the correct placement gives $D_\nu(D_\mu F^{\mu\nu}) = 0$ to $3\times10^{-15}$, while the three alternatives and the ordinary divergence give residuals of order $10$ — order unity on the same field. The reader who is unsure of a sign convention should repeat that one computation rather than consult memory.
 
-**Gauge covariance.** The equation is covariant without any gauge being chosen. With $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D'_\mu(U\Psi) = U D_\mu\Psi$, so the current transforms in the adjoint,
+**Gauge covariance.** The equation is covariant without any gauge being chosen. With $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D'_\mu(\tilde U\Psi) = \tilde U D_\mu\Psi$, so the current transforms in the adjoint,
 
 $$
-J'^\nu = U J^\nu U^{-1},
+J'^\nu = \tilde U J^\nu \tilde U^{-1},
 $$
 
-and $D'_\mu F'^{\mu\nu} = U(D_\mu F^{\mu\nu})U^{-1}$. The equation $D_\mu F^{\mu\nu} = J^\nu$ therefore holds in one gauge if and only if it holds in every gauge; no condition such as $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\mathcal{A}}) = 0$, and no other gauge-fixing surface, is imposed or available. This point is worth stating because the framework's canonical-quantisation article records that it *cannot* fix the gauge; the Yang–Mills equation inherits that situation rather than relieving it. The adjoint transformation of the source was verified numerically on a generic connection with a generic (constant) group rotation; the covariance for a general local $U$ follows from the transformation laws above and was not separately rechecked.
+and $D'_\mu F'^{\mu\nu} = \tilde U(D_\mu F^{\mu\nu})\tilde U^{-1}$. The equation $D_\mu F^{\mu\nu} = J^\nu$ therefore holds in one gauge if and only if it holds in every gauge; no condition such as $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\mathcal{A}}) = 0$, and no other gauge-fixing surface, is imposed or available. This point is worth stating because the framework's canonical-quantisation article records that it *cannot* fix the gauge; the Yang–Mills equation inherits that situation rather than relieving it. The adjoint transformation of the source was verified numerically on a generic connection with a generic (constant) group rotation; the covariance for a general local $\tilde U$ follows from the transformation laws above and was not separately rechecked.
 
 **Biquaternionic form.** Pack the four components of the current into a biquaternion in the quaternion basis,
 
@@ -208,7 +208,7 @@ $$
 D_\nu J^\nu = \partial_\nu J^\nu + i\kappa\,[\mathcal{A}_\nu,J^\nu] = \partial_\nu J^\nu = 0,
 $$
 
-because $[\mathcal{A}_\nu,J^\nu] = a_\nu[g,g]J^\nu = 0$; the current is **ordinarily** conserved, and it is invariant under the abelian gauge transformations that preserve the commuting generator set, $J'^\nu = U J^\nu U^{-1} = J^\nu$ (in the centre case every central $U$ qualifies, since $U$ is central; on a single spatial generator, the qualifying $U$ are those of the abelian subgroup generated by $g$).
+because $[\mathcal{A}_\nu,J^\nu] = a_\nu[g,g]J^\nu = 0$; the current is **ordinarily** conserved, and it is invariant under the abelian gauge transformations that preserve the commuting generator set, $J'^\nu = \tilde U J^\nu \tilde U^{-1} = J^\nu$ (in the centre case every central $\tilde U$ qualifies, since $\tilde U$ is central; on a single spatial generator, the qualifying $\tilde U$ are those of the abelian subgroup generated by $g$).
 
 Nothing here cancels. Every non-abelian term vanishes because the abelian connection commutes — with itself, with the curvature it generates, and with the current — not because two nonzero contributions are arranged to cancel. This is the precise sense in which the abelian case is the degenerate one, and it is why agreement on a commuting generator set is a consistency check on normalisation and signs but *not* evidence for the non-abelian statement: every non-abelian identity above was checked on the full non-commuting $\mathrm{SU}(2)$ connection, where the commutators are nonzero, and the abelian reduction was checked separately.
 
@@ -230,13 +230,13 @@ The relation between the two halves is worth stating without overclaim. The fiel
 
 The framework's compact form of the abelian equations, $\tilde{\nabla}\tilde{F} = -\tilde{R}$, is a genuine one-line equation. For the non-abelian system the analogous packaging is more delicate, and this article records the limits of what the packaging delivers rather than presenting a formula that would not survive a recheck.
 
-The curvature biquaternion is defined, as in the parent, by $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$. Its *components* transform in the adjoint, $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$, so $\mathcal{F}$ inherits the componentwise adjoint law
+The curvature biquaternion is defined, as in the parent, by $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$. Its *components* transform in the adjoint, $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$, so $\mathcal{F}$ inherits the componentwise adjoint law
 
 $$
-\mathcal{F}' = \tfrac12\sum_{\mu\nu}\bigl(UF_{\mu\nu}U^{-1}\bigr)\bar{e}_\mu e_\nu .
+\mathcal{F}' = \tfrac12\sum_{\mu\nu}\bigl(\tilde UF_{\mu\nu}\tilde U^{-1}\bigr)\bar{e}_\mu e_\nu .
 $$
 
-This is **not** the single algebra conjugation $U\mathcal{F}U^{-1}$, because $U^{-1}$ does not pass through the basis product $\bar{e}_\mu e_\nu$. The two agree only when the group element $U$ commutes with the basis product $\bar{e}_\mu e_\nu$, i.e. in the centre case. This was verified: with a generic constant unitary $U$, $\mathcal{F}' = \tfrac12\sum(UF_{\mu\nu}U^{-1})\bar{e}_\mu e_\nu$ holds to machine precision, while $\mathcal{F}' = U\mathcal{F}U^{-1}$ fails by order unity. The componentwise law is what makes the current transform as $J'_\nu = UJ_\nu U^{-1}$ and what keeps the field equation covariant; the packaged law is simply not available.
+This is **not** the single algebra conjugation $\tilde U\mathcal{F}\tilde U^{-1}$, because $\tilde U^{-1}$ does not pass through the basis product $\bar{e}_\mu e_\nu$. The two agree only when the group element $\tilde U$ commutes with the basis product $\bar{e}_\mu e_\nu$, i.e. in the centre case. This was verified: with a generic constant unitary $\tilde U$, $\mathcal{F}' = \tfrac12\sum(\tilde UF_{\mu\nu}\tilde U^{-1})\bar{e}_\mu e_\nu$ holds to machine precision, while $\mathcal{F}' = \tilde U\mathcal{F}\tilde U^{-1}$ fails by order unity. The componentwise law is what makes the current transform as $J'_\nu = \tilde UJ_\nu \tilde U^{-1}$ and what keeps the field equation covariant; the packaged law is simply not available.
 
 Two consequences follow, and both are stated as findings rather than repairs.
 
@@ -277,11 +277,11 @@ $$
 so each component of $B$ solves a Klein–Gordon–Fock-type equation whose mass is the norm $(\vec F,\vec F)$ of the coefficient, plus one first-order directional term. *The Klein–Gordon Equation in Biquaternionic Form* treats that operator and the sense in which the vector coefficient makes it factor into first-order operators, which is the point of contrast with its scalar-coefficient case. The inhomogeneous equation is solved by convolution with the fundamental solution
 
 $$
-\psi(\tau,\vec x) = \frac{e^{i(\vec F,\vec x)}}{4\pi|\vec x|}\left((1-a)\,\delta(\tau-|\vec x|) + a\,\delta(\tau+|\vec x|)\right) + \psi^0(\tau,\vec x),
+\psi(\tau,\vec x) = \frac{\exp(i(\vec F,\vec x))}{4\pi|\vec x|}\left((1-a)\,\delta(\tau-|\vec x|) + a\,\delta(\tau+|\vec x|)\right) + \psi^0(\tau,\vec x),
 \qquad a \in \mathbb{C},
 $$
 
-with $\psi^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $e^{i(\vec F,\vec x)}$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\psi * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\xi + \vec F, \vec\xi + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
+with $\psi^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i(\vec F,\vec x))$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\psi * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\xi + \vec F, \vec\xi + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
 
 **The characteristic surface, by case.** The homogeneous equation $\nabla^+ B + \vec F\circ B = 0$ has plane-wave solutions supported on
 
@@ -293,33 +293,33 @@ with $(\cdot,\cdot)$ the complex-bilinear pairing. Writing $\vec F = -E - iH$ wi
 
 | Coefficient | Surface $S$ | Interpretation |
 |---|---|---|
-| real, $\vec F = -E$ | cone in $\mathbb{R}^4$ with vertex $(\omega,\vec\xi) = (0,E)$ | the coefficient shifts the vertex of the light cone; the kernel carries the phase weight $e^{-i(E,\vec x)}$, a drift of the wave vector, not a curvature |
-| imaginary, $\vec F = -iH$ | the plane $(\vec\xi,H) = 0$ with the disc $\|\vec\xi\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $e^{-(H,\vec x)}$, an exponential growth or decay along $H$ |
+| real, $\vec F = -E$ | cone in $\mathbb{R}^4$ with vertex $(\omega,\vec\xi) = (0,E)$ | the coefficient shifts the vertex of the light cone; the kernel carries the phase weight $\exp(-i(E,\vec x))$, a drift of the wave vector, not a curvature |
+| imaginary, $\vec F = -iH$ | the plane $(\vec\xi,H) = 0$ with the disc $\|\vec\xi\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $\exp(-(H,\vec x))$, an exponential growth or decay along $H$ |
 | complex, $\vec F = -E - iH$ | the plane through $\vec\xi^* = E$ perpendicular to $H$, with the disc $\|\vec\xi - E\| < \|H\|$ removed | both effects at once, on a cone translated by $E$ |
 
-The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\xi - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(\vec x)e^{-i\omega\tau}$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and gives the stationary surface
+The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\xi - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(\vec x)\exp(-i\omega\tau)$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and gives the stationary surface
 
 $$
 S^{\omega} = \left\{\vec\xi : (\vec\xi + i\vec F, \vec\xi + i\vec F) = \omega^2\right\},
 $$
 
-with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\vec F = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\vec F$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \hat e_E\sqrt{\omega^2 + \|E\|^2}$ with $\hat e_E \perp E$, whose invariants are recorded in the twistor article.
+with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\vec F = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\vec F$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \vec u_E\sqrt{\omega^2 + \|E\|^2}$ with $\vec u_E \perp E$, whose invariants are recorded in the twistor article.
 
 **The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\vec F$ the compensated operator satisfies the exact identity
 
 $$
-\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(e^{-(\vec F,\vec x)}\varphi\right)
-= e^{-(\vec F,\vec x)}\left(\Delta + \omega^2\right)\varphi ,
+\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,\vec x))\varphi\right)
+= \exp(-(\vec F,\vec x))\left(\Delta + \omega^2\right)\varphi ,
 $$
 
 and it holds for the **upper** sign alone: checked on random complex coefficients and random smooth amplitudes, the residual is $1.6\times10^{-6}$ at a finite-difference step of $3\times10^{-4}$ for the upper sign and $O(50)$ for the lower. The directional term is therefore not obstinate — it is removed by the weight — and the complex amplitude of the stationary solution solves the ordinary Helmholtz equation. The kernel is the Helmholtz Green function times that weight,
 
 $$
-\psi_\omega(\vec x) = -\,\frac{e^{-(\vec F,\vec x)}}{4\pi\|\vec x\|}\left(a\,e^{i\omega\|\vec x\|} + (1-a)\,e^{-i\omega\|\vec x\|}\right),
+\psi_\omega(\vec x) = -\,\frac{\exp(-(\vec F,\vec x))}{4\pi\|\vec x\|}\left(a\,\exp(i\omega\|\vec x\|) + (1-a)\,\exp(-i\omega\|\vec x\|)\right),
 \qquad a \in \mathbb{C},
 $$
 
-the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\nabla^{\mp}_{\omega} - \vec F)(\psi_\omega * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\psi_\omega$ with the sign its own Helmholtz formula $\chi = -\frac{1}{4\pi\|\vec x\|}(ae^{i\omega\|\vec x\|} + (1-a)e^{-i\omega\|\vec x\|})$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta + \omega^2)\chi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
+the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\nabla^{\mp}_{\omega} - \vec F)(\psi_\omega * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\psi_\omega$ with the sign its own Helmholtz formula $\chi = -\frac{1}{4\pi\|\vec x\|}(a\exp(i\omega\|\vec x\|) + (1-a)\exp(-i\omega\|\vec x\|))$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta + \omega^2)\chi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
 
 ## Open Questions
 
@@ -358,7 +358,7 @@ with $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$ and $F_{\mu\nu} = \partial_
 
 In the abelian limit — a commuting generator set, whether the centre $\mathbb{C}_{\mathbb{B}}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F^{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J^\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\partial_\mu F^{\mu\nu} = J^\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.
 
-The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J'_\nu = UJ_\nu U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.
+The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J'_\nu = \tilde UJ_\nu \tilde U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.
 
 A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\nabla^\pm B + F\circ B = G$ with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\vec F,\vec F)$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.
 
@@ -378,13 +378,13 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
 | $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
-| $U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $U^{-1} = \bar U = U^\dagger$ |
+| $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$ |
 | $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |
-| $\kappa = q/\hbar$ | Coupling |
+| $\kappa = ϙ/\hbar$ | Coupling |
 | $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, $D = \tilde{\nabla} + i\kappa\mathcal{A}$ | Covariant derivative (left multiplication on matter) |
-| $\mathcal{A}'_\mu = U\mathcal{A}_\mu U^{-1} + \frac{i}{\kappa}(\partial_\mu U)U^{-1}$ | Adjoint gauge transformation of the connection |
+| $\mathcal{A}'_\mu = \tilde U\mathcal{A}_\mu \tilde U^{-1} + \frac{i}{\kappa}(\partial_\mu \tilde U)\tilde U^{-1}$ | Adjoint gauge transformation of the connection |
 | $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
-| $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$ | Adjoint transformation of the curvature (not invariant) |
+| $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature (not invariant) |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as commutator of covariant derivatives |
 | $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative; $[D_\lambda,\tilde{Q}] = D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$ | Bianchi identity (homogeneous half) |
@@ -392,7 +392,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $D_\mu F^{\mu\nu} = J^\nu$ | Yang–Mills equation |
 | $D_\nu J^\nu = 0$ | Covariant conservation of the current |
 | $\partial_\nu J^\nu = -i\kappa[\mathcal{A}_\nu,J^\nu]$ | Failure of ordinary conservation |
-| $J'_\nu = UJ_\nu U^{-1}$ | Adjoint transformation of the source |
+| $J'_\nu = \tilde UJ_\nu \tilde U^{-1}$ | Adjoint transformation of the source |
 | $\mathcal{J} = \sum_\nu J_\nu e_\nu$ | Source biquaternion |
 | $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ | Biquaternionic form of the field equation |
 | $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Curvature biquaternion (componentwise adjoint law) |
@@ -404,7 +404,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\nabla^\pm = \partial_\tau \pm i\nabla$, $\Box_A = \partial_\tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
 | $\psi$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
 | $\nabla^\pm_\omega = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
-| $\psi_\omega$, $\chi$ | Stationary fundamental solution (Helmholtz kernel times the weight $e^{-(\vec F,\vec x)}$); the source's Helmholtz Green function |
+| $\psi_\omega$, $\chi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,\vec x))$); the source's Helmholtz Green function |
 | $T_\omega$ | Solution of the homogeneous stationary equation |
 
 ## Further Reading

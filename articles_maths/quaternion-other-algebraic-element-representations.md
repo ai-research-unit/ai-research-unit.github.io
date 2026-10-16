@@ -9,14 +9,14 @@ The article depends on *Quaternion Algebra* for the basis and the relations, on 
 
 The corpus's default base is a commutative ring with identity; the Clifford identifications are stated over $\mathbb{R}$, and the module statements hold over any base in which the relevant subalgebra is defined.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural}$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
 
 ## The Spinor Representation
 
 **Definition.** The **spinor representation** of the quaternion algebra is the action of $\mathbb{H}$ on the two-component complex vectors $\mathbb{C}^2$ by the matrix realization $\iota$ of *Quaternion 2x2 Matrix Element Representation*:
 
 $$
-\tilde q\cdot v = \iota(\tilde q)\,v, \qquad v\in\mathbb{C}^2 .
+\tilde q\cdot v = \iota(\tilde q)\,v, \qquad v\in\mathbb{C}^2.
 $$
 
 **Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional unitary representation of $Sp(1)\cong SU(2)$.

@@ -113,7 +113,7 @@ Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grad
 
 ### The Clifford Algebra
 
-Let $A = \mathrm{Cl}(V,q)$ with the parity grading and its positive grade involution. A vector $e$ with $e^{2} = -1$ is an odd reflection element and $\tau_e$ is a reflection of the algebra restricting to a reflection of $V$; the adjoint of $\tau_e$ is $\tau_{\alpha(e^{*})} = \tau_{-e^{*}}$, the reflection realised by the twist of the adjoint vector, and the pair $e$, $-e$ realises the same reflection modulo the sign. The Clifford case is the geometric instance in which the adjoint of the reflection is the reflection of the adjoint.
+Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and its positive grade involution. A vector $e$ with $e^{2} = -1$ is an odd reflection element and $\tau_e$ is a reflection of the algebra restricting to a reflection of $V$; the adjoint of $\tau_e$ is $\tau_{\alpha(e^{*})} = \tau_{-e^{*}}$, the reflection realised by the twist of the adjoint vector, and the pair $e$, $-e$ realises the same reflection modulo the sign. The Clifford case is the geometric instance in which the adjoint of the reflection is the reflection of the adjoint.
 
 ## Summary
 

@@ -6,7 +6,7 @@ The biquaternion algebra is a Clifford algebra in two separate senses, and the s
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *The Null Quadric and Its Projective Geometry*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra* is used without proof: $N(\tilde{Q})\neq0$ if and only if $\tilde{Q}$ is invertible, and $N(\tilde{Q})=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra* is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
 
@@ -26,7 +26,7 @@ Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *Introduction to th
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\vec u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$

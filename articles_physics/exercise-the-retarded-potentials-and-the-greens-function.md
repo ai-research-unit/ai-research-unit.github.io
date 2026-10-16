@@ -56,7 +56,7 @@ $$
 \qquad\text{so}\qquad
 \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2 .
 $$
-The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $e^{i(\vec k\cdot\vec x - \omega t)}$, the operator has symbol
+The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot\vec x - \omega t))$, the operator has symbol
 $$
 \Box \;\longmapsto\; -k^2 + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - k^2 .
 $$
@@ -146,19 +146,19 @@ $$
 $$
 This is the Jacobian the exercise warns about: the factor $c/(2R)$ is what turns the invariant coefficient $1/(2\pi c)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi c}\delta(t-R/c)$, or as $\frac{1}{2\pi R}\delta(t-R/c)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $u'$ term does not cancel, except for the middle form, whose $u'$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,e^{i(\vec k\cdot\vec x-\omega t)}$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)\tilde{G} = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k\cdot\vec x-\omega t))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)\tilde{G} = -1$ gives
 $$
 \tilde{G}(\vec k,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
 \qquad
 G(\vec x,t) = \int\frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,
-\frac{c^2\,e^{i(\vec k\cdot\vec x-\omega t)}}{c^2 k^2 - \omega^2},
+\frac{c^2\,\exp(i(\vec k\cdot\vec x-\omega t))}{c^2 k^2 - \omega^2},
 $$
 where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $t>0$ (and in the upper half-plane, with no poles, for $t<0$) gives
 $$
-\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,e^{-i\omega t}}{c^2 k^2 - \omega^2}
+\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\omega t)}{c^2 k^2 - \omega^2}
 = \frac{c}{k}\,\sin(ckt)\,\Theta(t).
 $$
-The angular integral of $e^{i\vec k\cdot\vec x}$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
+The angular integral of $\exp(i\vec k\cdot\vec x)$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
 $$
 G_{\mathrm{ret}}(\vec x,t)
 = \frac{c}{2\pi^2 R}\int_0^\infty \sin(kR)\,\sin(ckt)\,dk
@@ -171,7 +171,7 @@ using $\int_0^\infty \sin(kR)\sin(ckt)\,dk = \frac{\pi}{2c}\bigl[\delta(t - R/c)
 
 **Statement.** (a) Exhibit the advanced kernel $G_{\mathrm{adv}}$ and show that it satisfies the same defining equation $\Box G = -\delta^{(4)}$. (b) Show that the difference $G_{\mathrm{ret}} - G_{\mathrm{adv}}$ solves the homogeneous wave equation, so the defining equation alone does not select the retarded kernel. (c) State the boundary condition that selects the retarded kernel for radiation problems and the boundary condition that selects the advanced one, and identify the contour prescription that implements each.
 
-**Solution. (a) The advanced kernel.** The computation of Problem 2(a) used only $g = t - R/c$. With $g_+ = t + R/c$ one has $\nabla g_+ = +\hat R/c$, so $(\nabla g_+)^2 = 1/c^2$ and the bracket $2\nabla(1/R)\cdot\nabla g_+ + (1/R)\Delta g_+$ has the opposite sign of $\nabla g_+$ relative to $\nabla(1/R)$ but is again zero, because $\nabla(1/R)$ is parallel to $\hat R$ while the two terms of the bracket are equal and opposite. Hence the same argument gives
+**Solution. (a) The advanced kernel.** The computation of Problem 2(a) used only $g = t - R/c$. With $g_+ = t + R/c$ one has $\nabla g_+ = +\vec u_R/c$, so $(\nabla g_+)^2 = 1/c^2$ and the bracket $2\nabla(1/R)\cdot\nabla g_+ + (1/R)\Delta g_+$ has the opposite sign of $\nabla g_+$ relative to $\nabla(1/R)$ but is again zero, because $\nabla(1/R)$ is parallel to $\vec u_R$ while the two terms of the bracket are equal and opposite. Hence the same argument gives
 $$
 G_{\mathrm{adv}}(\vec x,t) = \frac{1}{4\pi R}\,\delta\!\left(t + \frac{R}{c}\right),
 \qquad
@@ -215,7 +215,7 @@ $$
 $$
 where $\rho_{\mathrm{ret}} = \rho(\vec y, t - R/c)$ and $\vec J_{\mathrm{ret}} = \vec J(\vec y, t - R/c)$. These are the standard retarded potentials, obtained here from a single biquaternionic convolution rather than from four component equations.
 
-A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |\vec x-\vec r_q(s)|/c - t$ has $h'(s) = 1 - \hat R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
+A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |\vec x-\vec r_q(s)|/c - t$ has $h'(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
 
 **(c) The Lorenz gauge is automatic.** Write the gauge scalar
 $$
@@ -244,21 +244,21 @@ The kernel that was $\frac{\delta(t-R/c)}{4\pi R}$ becomes the Newton kernel $\f
 $$
 \Delta\phi = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(\vec x-\vec y)\,d^3y = -\frac{\rho(\vec x)}{\epsilon},
 $$
-and likewise $\Delta\vec A = -\mu\vec J(\vec x)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde{R}'$, which is the static limit of $\Box\tilde{A} = -\mu\tilde{R}'$. For a point charge at the origin, $\rho = q\,\delta^{(3)}(\vec y)$, so
+and likewise $\Delta\vec A = -\mu\vec J(\vec x)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde{R}'$, which is the static limit of $\Box\tilde{A} = -\mu\tilde{R}'$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
-\phi = \frac{q}{4\pi\epsilon R},
+\phi = \frac{ϙ}{4\pi\epsilon R},
 \qquad
-\vec E = -\nabla\phi = \frac{q\,\hat R}{4\pi\epsilon R^2},
+\vec E = -\nabla\phi = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
 \qquad
-\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iq\,\hat R}{4\pi\sqrt{\epsilon}\,R^2},
+\tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2},
 $$
-which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\hat R/R^2$,
+which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\vec u_R/R^2$,
 $$
 \vec B = \nabla\times\vec A
 = \frac{\mu}{4\pi}\int \nabla\frac{1}{R}\times\vec J(\vec y)\,d^3y
-= \frac{\mu}{4\pi}\int \frac{\vec J(\vec y)\times\hat R}{R^2}\,d^3y,
+= \frac{\mu}{4\pi}\int \frac{\vec J(\vec y)\times\vec u_R}{R^2}\,d^3y,
 $$
-the Biot–Savart law (the sign is the standard one, with $\hat R$ pointing from the source to the field point). These are the exercise's independent checks: the retarded potentials, constructed from the light-cone kernel, reduce on time-independent sources to the two classical static solutions, which were known before the construction and were not used to build it.
+the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing from the source to the field point). These are the exercise's independent checks: the retarded potentials, constructed from the light-cone kernel, reduce on time-independent sources to the two classical static solutions, which were known before the construction and were not used to build it.
 
 ## Where the Parent Leaves a Gap
 
@@ -276,7 +276,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 ## Further Problems
 
-1. **The worldline Jacobian.** Specialize the retarded convolution to a point charge on a worldline, localize the remaining integral, and derive the Liénard–Wiechert denominator $1 - \hat R\cdot\vec\beta$. This is the second Jacobian discussed in Problem 4(b), and it is the construction of the companion radiation article; the point of listing it here is to separate it cleanly from the light-cone Jacobian of Problem 2.
+1. **The worldline Jacobian.** Specialize the retarded convolution to a point charge on a worldline, localize the remaining integral, and derive the Liénard–Wiechert denominator $1 - \vec u_R\cdot\vec\beta$. This is the second Jacobian discussed in Problem 4(b), and it is the construction of the companion radiation article; the point of listing it here is to separate it cleanly from the light-cone Jacobian of Problem 2.
 
 2. **The causal (Feynman) combination.** Determine the linear combination of $G_{\mathrm{ret}}$ and $G_{\mathrm{adv}}$ that is time-ordered, and identify its position-space support. The result is neither the retarded nor the advanced kernel but a combination of both with a principal-value part; the contour prescription (one pole on each side) and its interpretation are treated in the Feynman-propagator article.
 
@@ -334,7 +334,7 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 | $R = |\vec x-\vec y|$ | Retarded separation (spatial) |
 | $t - R/c$ | Retarded time |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
-| $\hat R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |
+| $\vec u_R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 
 ## Further Reading

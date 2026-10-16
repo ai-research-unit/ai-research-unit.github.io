@@ -91,11 +91,11 @@ and every eigenvector of $T$ has a definite parity; the reversing symmetry there
 
 **Theorem (the reversible process).** Let $\{X_n\}$ be a stationary process, $U_r$ the reversal operator, $U_rf=f\circ r$, and $P$ its transition or Markov operator with the stationary measure $\pi$. Then
 $$
-U_r\,P\,U_r=\hat P ,
+U_r\,P\,U_r=P^{\mathrm{rev}} ,
 $$
 the transition operator of the reversed process, and the process is reversible exactly when $U_rPU_r=P$, that is exactly when $P$ is reversible with respect to $U_r$ and self-adjoint for the $\pi$-form. In that case the spectrum of $P$ refines into the even and the odd parts under the reversal, and the eigenfunctions have definite parity.
 
-*Proof.* The conjugation by $U_r$ reverses the direction of the transitions, giving $\hat P$, by *The Involution on the Operator Algebra of a Process* and *The Adjoint of the Markov Operator*, earlier in this category; the self-adjointness $P^*=P$ in the reversible case is the theorem of *The Adjoint of the Markov Operator*; combining, $U_rPU_r=\hat P=P$ and $P$ commutes with the unitary involution $U_r$, so the refinement theorem applies with $J=U_r$.
+*Proof.* The conjugation by $U_r$ reverses the direction of the transitions, giving $P^{\mathrm{rev}}$, by *The Involution on the Operator Algebra of a Process* and *The Adjoint of the Markov Operator*, earlier in this category; the self-adjointness $P^*=P$ in the reversible case is the theorem of *The Adjoint of the Markov Operator*; combining, $U_rPU_r=P^{\mathrm{rev}}=P$ and $P$ commutes with the unitary involution $U_r$, so the refinement theorem applies with $J=U_r$.
 
 ## Worked Examples
 
@@ -105,7 +105,7 @@ the transition operator of the reversed process, and the process is reversible e
 
 **Example (the complex symmetric operator).** The operator $T$ represented in a basis by a complex symmetric matrix is reversible with respect to the conjugation $J$ given by the complex conjugation in that basis; its spectrum is conjugate-symmetric and the non-real eigenvalues occur in conjugate pairs, with the eigenvectors paired by $J$. The example is the original class of the reversible operators and the source of the conjugate-pair reflection.
 
-**Example (the non-reversible operator).** For the directed cycle the conjugation by $U_r$ sends the transition operator to $\hat P\ne P$, so the operator is not reversible; its spectrum is not conjugate-symmetric as a whole, being the cyclic shift with the eigenvalues on the unit circle, and no parity refinement occurs. The example shows that the reversibility is a genuine restriction and not a property of every contraction.
+**Example (the non-reversible operator).** For the directed cycle the conjugation by $U_r$ sends the transition operator to $P^{\mathrm{rev}}\ne P$, so the operator is not reversible; its spectrum is not conjugate-symmetric as a whole, being the cyclic shift with the eigenvalues on the unit circle, and no parity refinement occurs. The example shows that the reversibility is a genuine restriction and not a property of every contraction.
 
 ## Failure of the Degenerate Cases
 
@@ -113,7 +113,7 @@ The reversibility degenerates in four configurations. First, a reversible operat
 
 ## Summary
 
-A reversing symmetry is an involution $J$ of the Hilbert space, unitary or anti-unitary, and an operator is reversible with respect to it when $T^*=JTJ$; the unitary case gives the parity decomposition $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$ and the projections $\frac12(I\pm J)$, the anti-unitary case gives the complex symmetric operators, and in both cases the spectrum of a reversible operator is conjugate-symmetric, $\operatorname{spec}(T)=\overline{\operatorname{spec}(T)}$. A self-adjoint operator is reversible exactly when it commutes with $J$, and then it is block-diagonal in the parity decomposition, its spectrum is the union of the spectra of the two blocks, and every eigenvector has a definite parity; this is the refinement of the spectrum by the reversing symmetry. For a stationary process the conjugation by the reversal $U_r$ sends the transition operator to the reversed one, $U_rPU_r=\hat P$, and the process is reversible exactly when $P$ is self-adjoint and commutes with $U_r$, in which case the spectrum of the chain refines into the even and the odd modes. The adjoint is *The Adjoint of the Markov Operator*, earlier in this category, the reversal in the operator algebra is *The Involution on the Operator Algebra of a Process*, earlier in this category, and the indefinite-form theory of the $J$-self-adjoint operators is *J-Self-Adjoint and J-Unitary Operators*, written.
+A reversing symmetry is an involution $J$ of the Hilbert space, unitary or anti-unitary, and an operator is reversible with respect to it when $T^*=JTJ$; the unitary case gives the parity decomposition $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$ and the projections $\frac12(I\pm J)$, the anti-unitary case gives the complex symmetric operators, and in both cases the spectrum of a reversible operator is conjugate-symmetric, $\operatorname{spec}(T)=\overline{\operatorname{spec}(T)}$. A self-adjoint operator is reversible exactly when it commutes with $J$, and then it is block-diagonal in the parity decomposition, its spectrum is the union of the spectra of the two blocks, and every eigenvector has a definite parity; this is the refinement of the spectrum by the reversing symmetry. For a stationary process the conjugation by the reversal $U_r$ sends the transition operator to the reversed one, $U_rPU_r=P^{\mathrm{rev}}$, and the process is reversible exactly when $P$ is self-adjoint and commutes with $U_r$, in which case the spectrum of the chain refines into the even and the odd modes. The adjoint is *The Adjoint of the Markov Operator*, earlier in this category, the reversal in the operator algebra is *The Involution on the Operator Algebra of a Process*, earlier in this category, and the indefinite-form theory of the $J$-self-adjoint operators is *J-Self-Adjoint and J-Unitary Operators*, written.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ A reversing symmetry is an involution $J$ of the Hilbert space, unitary or anti-
 | $TJ=JT$ | reversibility of a self-adjoint operator |
 | $T=T_+\oplus T_-$ | the block refinement |
 | $\operatorname{spec}(T)=\operatorname{spec}(T_+)\cup\operatorname{spec}(T_-)$ | the refined spectrum |
-| $U_rPU_r=\hat P$ | the reversal of the transition operator |
+| $U_rPU_r=P^{\mathrm{rev}}$ | the reversal of the transition operator |
 
 ## Further Reading
 

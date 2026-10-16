@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Higgs mechanism is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. The scalar acquires a vacuum expectation value $\langle|\varphi|\rangle = v/\sqrt{2}$; the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization; and the gauge field acquires the mass $M_A = qv/\hbar$. The two events are one event, and the degree-of-freedom count records it: the symmetric phase has $2$ real scalar degrees of freedom and $2$ transverse gauge polarizations, the broken phase has $1$ real scalar and $3$ gauge polarizations, and $2+2 = 1+3$.
+The Higgs mechanism is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. The scalar acquires a vacuum expectation value $\langle|\varphi|\rangle = v/\sqrt{2}$; the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization; and the gauge field acquires the mass $M_A = ϙv/\hbar$. The two events are one event, and the degree-of-freedom count records it: the symmetric phase has $2$ real scalar degrees of freedom and $2$ transverse gauge polarizations, the broken phase has $1$ real scalar and $3$ gauge polarizations, and $2+2 = 1+3$.
 
 This article reads that mechanism information-theoretically. The word the title uses is **erasure**, and the article's central claim is that the word is exact in one sense and misleading in another, with the distinction being the whole content.
 
@@ -13,7 +13,7 @@ The reason the two statements do not contradict each other is the subject of the
 
 The article proceeds as follows. The symmetric phase is set up with its circle of degenerate vacua, and the informational status of the phase is fixed. The erasure is then shown to be the elimination of a gauge direction, with the invariant content of the vacuum isolated. The relocation of the information into the longitudinal mode and the mass is then derived, with the mass coefficient recomputed on a generic connection. The symmetry-breaking map is read as a channel — unitary on the full degrees of freedom and many-to-one only on the gauge-invariant ones — and compared with the loss of confinement and with the redundancy of the gauge orbit. The vacuum is then read as a stable record, in the structure of einselection, and the Landauer comparison is drawn. A ledger separates the framework's own construction from the imports.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \vec A\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = q/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the **complex central field** $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}U_\mu^*V_\nu$ with
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, and central scalar imaginary $i$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \vec A\in\mathbb{M}_-$; it transforms as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$; the coupling is $\kappa = ϙ/\hbar$ with $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The scalar is the **complex central field** $\tilde{\Phi} = \varphi\,e_0$, $\varphi\in\mathbb{C}$. The amplitude symbol $\varphi$ is kept distinct from the connection's scalar potential $\phi$. The scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged. The $ict$ coordinates are $x_\mu = (ict,x,y,z)$, so $\partial_0 = \partial_{ict} = -i\partial_t/c$, and the Lorentz-invariant contraction of two four-vectors is $g^{\mu\nu}X_\mu^*Y_\nu$ with
 
 $$
 g = \mathrm{diag}(-1,+1,+1,+1)
@@ -38,10 +38,10 @@ $$
 |\varphi| = \frac{v}{\sqrt{2}} .
 $$
 
-Every point of the circle minimizes $V$, and no point is preferred by the action, which is invariant under the central phase $\varphi\mapsto e^{i\alpha}\varphi$. The vacuum is therefore a member of a **degenerate family** parametrized by the phase. Writing
+Every point of the circle minimizes $V$, and no point is preferred by the action, which is invariant under the central phase $\varphi\mapsto \exp(i\alpha)\varphi$. The vacuum is therefore a member of a **degenerate family** parametrized by the phase. Writing
 
 $$
-\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)e^{\,i\theta(\tilde{Q})/v},
+\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\exp(\,i\theta(\tilde{Q})/v),
 $$
 
 with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\theta$ the angular fluctuation, with no potential term at all.
@@ -52,9 +52,9 @@ Considered as a classical label, the phase is a continuum: the vacuum family is 
 
 Two facts of the framework make the actual situation different, and they are the reason the title's word needs the qualification this section supplies.
 
-**The phase is not an observable.** The action is invariant under $\varphi\mapsto e^{i\alpha}\varphi$, and the action of the central phase on a state of the informational sector is trivial. The framework's sharpest statement of this is the one made in the gauge-orbit companion: a central phase acts on $\tilde{\rho}\in\mathbb{M}_+$ by $\tilde{\rho}\mapsto\lambda\tilde{\rho}\lambda^\dagger = |\lambda|^2\tilde{\rho} = \tilde{\rho}$, so it is not merely that no measurement distinguishes the phases — no Hermitian observable is conjugate to the phase at all. The phase is a **non-variable** of the informational sector.
+**The phase is not an observable.** The action is invariant under $\varphi\mapsto \exp(i\alpha)\varphi$, and the action of the central phase on a state of the informational sector is trivial. The framework's sharpest statement of this is the one made in the gauge-orbit companion: a central phase acts on $\tilde{\rho}\in\mathbb{M}_+$ by $\tilde{\rho}\mapsto\lambda\tilde{\rho}\lambda^\dagger = |\lambda|^2\tilde{\rho} = \tilde{\rho}$, so it is not merely that no measurement distinguishes the phases — no Hermitian observable is conjugate to the phase at all. The phase is a **non-variable** of the informational sector.
 
-**The gauge-invariant content of the vacuum is a single number.** Because $\varphi$ is central, the product $\tilde{\Phi}\tilde{\Phi}^{*} = |\varphi|^2 e_0$ is the entire gauge-invariant content of the vacuum, and it is independent of the phase. This was checked for the generic complex value $\varphi = 0.8 - 0.35i$ under phase rotations $e^{i\alpha}$ for $\alpha = 0.3, 1.7, -2.2$: $\tilde{\Phi}\tilde{\Phi}^{*}$ was unchanged to within $3\times10^{-16}$ in every case. The circle of vacua collapses, for every observable, to the single number $|\varphi| = v/\sqrt{2}$.
+**The gauge-invariant content of the vacuum is a single number.** Because $\varphi$ is central, the product $\tilde{\Phi}\tilde{\Phi}^{*} = |\varphi|^2 e_0$ is the entire gauge-invariant content of the vacuum, and it is independent of the phase. This was checked for the generic complex value $\varphi = 0.8 - 0.35i$ under phase rotations $\exp(i\alpha)$ for $\alpha = 0.3, 1.7, -2.2$: $\tilde{\Phi}\tilde{\Phi}^{*}$ was unchanged to within $3\times10^{-16}$ in every case. The circle of vacua collapses, for every observable, to the single number $|\varphi| = v/\sqrt{2}$.
 
 The two facts together give the article's first accounting. The phase direction carries no physical information, so the erasure of the phase from the observable description erases nothing physical. What the vacuum does carry — the magnitude $v$ — is untouched. The word "erasure" is therefore correct about the description and incorrect about the physics, and the remainder of the article locates the physics that is relocated rather than erased.
 
@@ -64,7 +64,7 @@ The information-theoretic interpretation of the erasure is sharpened by the curv
 
 ### The Hessian at the Minimum
 
-Write the scalar in the two real fields, $\varphi = \frac{1}{\sqrt{2}}(v+h)e^{i\theta/v}$, so that
+Write the scalar in the two real fields, $\varphi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)$, so that
 
 $$
 \varphi^*\varphi = \tfrac{1}{2}(v+h)^2,
@@ -106,13 +106,13 @@ The important point for the erasure interpretation is that the flat direction is
 The elimination of the phase is an explicit gauge transformation. With the parametrization above, choose
 
 $$
-\Gamma(\tilde{Q}) = -\,\frac{\hbar}{qv}\,\theta(\tilde{Q}),
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙv}\,\theta(\tilde{Q}),
 $$
 
-so that the covariant phase factor is $e^{iq\Gamma/\hbar} = e^{-i\theta/v}$ and
+so that the covariant phase factor is $\exp(iϙ\Gamma/\hbar) = \exp(-i\theta/v)$ and
 
 $$
-\varphi \;\longmapsto\; e^{iq\Gamma/\hbar}\varphi = \tfrac{1}{\sqrt{2}}(v+h)e^{i\theta/v}e^{-i\theta/v} = \tfrac{1}{\sqrt{2}}(v+h),
+\varphi \;\longmapsto\; \exp(iϙ\Gamma/\hbar)\varphi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)\exp(-i\theta/v) = \tfrac{1}{\sqrt{2}}(v+h),
 $$
 
 real. This is the **unitary gauge** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\theta$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
@@ -122,13 +122,13 @@ real. This is the **unitary gauge** of the abelian model. In it the scalar is a 
 The same gauge transformation shifts the connection,
 
 $$
-A_\mu' = A_\mu - \partial_\mu\Gamma = A_\mu + \frac{\hbar}{qv}\,\partial_\mu\theta ,
+A_\mu' = A_\mu - \partial_\mu\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial_\mu\theta ,
 $$
 
 so that the combination
 
 $$
-\mathcal{A}_\mu := A_\mu + \frac{\hbar}{qv}\,\partial_\mu\theta
+\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial_\mu\theta
 $$
 
 is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\theta$ and the modification of $A_\mu$ are the same operation seen from the two ends.
@@ -153,26 +153,26 @@ The balance $2+2 = 1+3$ is the conservation statement. One scalar mode ceased to
 The physical content of the relocation is the mass, and its derivation is the derivation of a record. At the constant vacuum $\varphi = v/\sqrt{2}$ — that is, in the unitary gauge of the previous section, in which $\mathcal{A}_\mu = A_\mu$ — the ordinary derivative vanishes and the covariant derivative is proportional to the connection,
 
 $$
-D_\mu\varphi\Big|_{\mathrm{vac}} = \frac{iq}{\hbar}A_\mu\frac{v}{\sqrt{2}},
+D_\mu\varphi\Big|_{\mathrm{vac}} = \frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}},
 $$
 
 so the gauge-invariant kinetic term becomes a quadratic form in the connection,
 
 $$
 -\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\mathrm{vac}}
-= -\,\frac{q^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu
-= -\,\frac{q^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
+= -\,\frac{ϙ^2v^2}{2\hbar^2}\,g^{\mu\nu}A_\mu^*A_\nu
+= -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$
 
 the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $g^{\mu\nu}A_\mu^*A_\nu = A_0^2+\vec A^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ gives the mass
 
 $$
-M_A^2 = \frac{q^2v^2}{\hbar^2},
+M_A^2 = \frac{ϙ^2v^2}{\hbar^2},
 \qquad
-M_A = \frac{qv}{\hbar}.
+M_A = \frac{ϙv}{\hbar}.
 $$
 
-This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
+This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = ϙ/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = ϙ^2v^2/\hbar^2$, with $ϙv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
 
 The informational interpretation is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
 
@@ -180,7 +180,7 @@ The informational interpretation is that the mass is the **record** of the break
 
 ### Unitary on the Full Degrees of Freedom
 
-On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta$ is implemented by a unitary (the central phase $e^{iq\Gamma/\hbar}$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
+On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta$ is implemented by a unitary (the central phase $\exp(iϙ\Gamma/\hbar)$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
 
 $$
 S\bigl(U\tilde{\rho}\,U^\dagger \,\big\|\, U\tilde{\sigma}\,U^\dagger\bigr) = S(\tilde{\rho}\|\tilde{\sigma}),
@@ -225,7 +225,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 ## What the Framework Supplies and Does Not Supply
 
-**Supplied by the algebra, and recomputed here.** The complex central scalar $\tilde{\Phi} = \varphi e_0$ with its single gauge-invariant combination $\varphi^*\varphi$, checked to be invariant under phase rotations; the degenerate circle of vacua and the unitary-gauge elimination of the phase by a gauge transformation, which is the redundancy the mechanism spends; the identification of the phase as the coordinate along that orbit, so that the relocation of the Goldstone mode into the longitudinal polarization is a relocation of a gauge direction; the Proca mass with $M_A^2 = q^2v^2/\hbar^2$, recomputed on a generic connection and a generic parameter set; and the invariance of the relative entropy under the unitary re-encoding, checked on generic states. The informational reading — erasure of a gauge coordinate, conservation of the physical content, the mass as the record — is the article's interpretation, and it is the framework's own because the phase is central.
+**Supplied by the algebra, and recomputed here.** The complex central scalar $\tilde{\Phi} = \varphi e_0$ with its single gauge-invariant combination $\varphi^*\varphi$, checked to be invariant under phase rotations; the degenerate circle of vacua and the unitary-gauge elimination of the phase by a gauge transformation, which is the redundancy the mechanism spends; the identification of the phase as the coordinate along that orbit, so that the relocation of the Goldstone mode into the longitudinal polarization is a relocation of a gauge direction; the Proca mass with $M_A^2 = ϙ^2v^2/\hbar^2$, recomputed on a generic connection and a generic parameter set; and the invariance of the relative entropy under the unitary re-encoding, checked on generic states. The informational reading — erasure of a gauge coordinate, conservation of the physical content, the mass as the record — is the article's interpretation, and it is the framework's own because the phase is central.
 
 **Transcribed from standard physics.** The Higgs mechanism itself; the Goldstone theorem, the count of would-be Goldstone bosons, and the degree-of-freedom balance $2+2 = 1+3$; the unitary gauge; the Proca mass form; the identification of the longitudinal polarization; and Landauer's principle. The physics companion derives the mechanism; this article reads it.
 
@@ -245,7 +245,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 ## Open Questions
 
-1. **An information-theoretic mass formula.** The mass is the record of the erasure. Is there a framework-internal functional — an entropy, or a relative entropy between the symmetric and broken descriptions — whose extremization or whose value yields $M_A^2 = q^2v^2/\hbar^2$? No such functional is known.
+1. **An information-theoretic mass formula.** The mass is the record of the erasure. Is there a framework-internal functional — an entropy, or a relative entropy between the symmetric and broken descriptions — whose extremization or whose value yields $M_A^2 = ϙ^2v^2/\hbar^2$? No such functional is known.
 
 2. **The count as a channel invariant.** The balance $2+2 = 1+3$ is a conservation of the count of local degrees of freedom. Is it the statement that, for a natural channel modelling the map, the input and the output carry the same information about the physical degrees of freedom, and if so, which channel? No such channel is identified here.
 
@@ -259,11 +259,11 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 ## Summary
 
-The Higgs mechanism hides a gauge symmetry in the vacuum, gives the gauge field the mass $M_A = qv/\hbar$, and absorbs the would-be Goldstone mode as the longitudinal polarization. Read information-theoretically, it is an **erasure** of a redundant label and a **relocation** of physical content, not a loss.
+The Higgs mechanism hides a gauge symmetry in the vacuum, gives the gauge field the mass $M_A = ϙv/\hbar$, and absorbs the would-be Goldstone mode as the longitudinal polarization. Read information-theoretically, it is an **erasure** of a redundant label and a **relocation** of physical content, not a loss.
 
-The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\varphi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\varphi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\hbar/qv)\partial_\mu\theta$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
+The erased object is the phase of the scalar. It is a coordinate on the circle of degenerate vacua, $|\varphi| = v/\sqrt{2}$, but it is a **gauge** coordinate: the central phase acts trivially on the informational sector, so no Hermitian observable is conjugate to it, and the gauge-invariant content of the vacuum is the single number $|\varphi| = v/\sqrt{2}$, checked to be independent of the phase. A gauge transformation removes the phase from the scalar and shifts the connection by a gradient, and the combination $A_\mu + (\hbar/ϙv)\partial_\mu\theta$ is what the mass term depends on. The erasure of the phase and the shift of the connection are one operation, which is why the mechanism is best described as *using* the gauge redundancy rather than suffering it.
 
-The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 = q^2v^2/\hbar^2$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is unitary and information-preserving; on the gauge-invariant observables it is many-to-one, with the fibre being the gauge orbit — whose information content is zero. The erasure is the quotient map, and its kernel is a gauge orbit.
+The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 = ϙ^2v^2/\hbar^2$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is unitary and information-preserving; on the gauge-invariant observables it is many-to-one, with the fibre being the gauge orbit — whose information content is zero. The erasure is the quotient map, and its kernel is a gauge orbit.
 
 This distinguishes the mechanism from the two neighbours. Unlike confinement, which removes partonic labels from the asymptotic algebra with no record surviving, the Higgs mechanism leaves a gauge-invariant record, the mass, and conserves the total count. Unlike a bare gauge orbit, which has no physical consequence, the exploitation of the orbit generates the mass. The vacuum is then a stable record in the structure of einselection — the radial variable massive and observable, the phase a gauge coordinate — and the erasure costs no heat, in contrast with Landauer's principle, precisely because the object erased is a gauge coordinate rather than a bit of record. The mechanism's own construction is standard and is imported; the informational interpretation is the framework's, and it rests on the framework's central scalar.
 
@@ -283,11 +283,11 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $h,\ \theta$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
-| $D_\mu = \partial_\mu + i\kappa A_\mu$, $\kappa = q/\hbar$ | Covariant derivative and coupling |
+| $D_\mu = \partial_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
 | $g = \mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict$-coordinate metric for contractions |
-| $\Gamma = -(\hbar/qv)\theta$ | Gauge function of the unitary gauge |
-| $\mathcal{A}_\mu = A_\mu + (\hbar/qv)\partial_\mu\theta$ | Gauge-invariant combination carrying the mass |
-| $M_A^2 = q^2v^2/\hbar^2$, $M_A = qv/\hbar$ | Gauge-field (Proca) mass; the record |
+| $\Gamma = -(\hbar/ϙv)\theta$ | Gauge function of the unitary gauge |
+| $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial_\mu\theta$ | Gauge-invariant combination carrying the mass |
+| $M_A^2 = ϙ^2v^2/\hbar^2$, $M_A = ϙv/\hbar$ | Gauge-field (Proca) mass; the record |
 | $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; invariant under the re-encoding |
@@ -296,7 +296,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace pairing; $\mathrm{Tr}(e_0) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 
 ## Further Reading
 

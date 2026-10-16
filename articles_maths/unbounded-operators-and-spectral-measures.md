@@ -82,10 +82,10 @@ and their dimensions $n_+=\dim N_+$ and $n_-=\dim N_-$ are the **deficiency indi
 **Example.** (i) For $D_0=-i\,d/dx$ on $(0,\infty)$: the adjoint is $D=-i\,d/dx$ on $H^1(0,\infty)$, and
 
 $$
-\ker(D-i)=\mathbb{C}e^{-x}, \qquad \ker(D+i)=0,
+\ker(D-i)=\mathbb{C}\exp(-x), \qquad \ker(D+i)=0,
 $$
 
-since $-ig'=ig$ gives $g=Ce^{-x} \in L^2$ while $-ig'=-ig$ gives $g=Ce^{x}\notin L^2$. Hence $(n_+,n_-)=(1,0)$, the indices are unequal, and no self-adjoint extension exists.
+since $-ig'=ig$ gives $g=C\exp(-x) \in L^2$ while $-ig'=-ig$ gives $g=C\exp(x)\notin L^2$. Hence $(n_+,n_-)=(1,0)$, the indices are unequal, and no self-adjoint extension exists.
 
 (ii) For $A=-\dfrac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$, whose adjoint is $A^*=-\dfrac{d^2}{dx^2}$ on $H^2(0,\infty)$: the equations $-u''=iu$ and $-u''=-iu$ have, in each case, exactly one solution in $L^2(0,\infty)$ (the root of $r^2=\mp i$ with negative real part), so $(n_+,n_-)=(1,1)$. The symmetric operator admits self-adjoint extensions, and they are described next.
 
@@ -184,7 +184,7 @@ with Borel measures $\mu_n$ that decrease in the sense of absolute continuity, $
 
 **Definition.** A vector $x \in H$ is **cyclic** for $A$ if the span of $\{A^nx:n\ge0\}$ is dense in $H$. The operator has **simple spectrum** if it has a cyclic vector, and then the family $\{\mu_n\}$ above reduces to a single measure.
 
-**Example.** The multiplication operator $Q$ on $L^2(\mathbb{R})$ has simple spectrum: the Gaussian $g(\lambda)=e^{-\lambda^2/2}$ is a cyclic vector, because the Hermite functions, which are the products of $g$ with the Hermite polynomials, form an orthonormal basis, so the span of $\{Q^ng:n\ge0\}$ is dense. Its spectral measure is multiplication by the indicator, $E(B)f=\mathbf 1_Bf$. The differentiation operator $D=-i\,d/dx$ is unitarily equivalent to $Q$ by the Fourier transform, so it also has simple spectrum, and the unitary equivalence is the model instance of the classification by multiplicity. The multiplication operator on $L^2([0,1])$ by the variable has cyclic vector the constant function $1$, by the Weierstrass approximation theorem.
+**Example.** The multiplication operator $Q$ on $L^2(\mathbb{R})$ has simple spectrum: the Gaussian $g(\lambda)=\exp(-\lambda^2/2)$ is a cyclic vector, because the Hermite functions, which are the products of $g$ with the Hermite polynomials, form an orthonormal basis, so the span of $\{Q^ng:n\ge0\}$ is dense. Its spectral measure is multiplication by the indicator, $E(B)f=\mathbf 1_Bf$. The differentiation operator $D=-i\,d/dx$ is unitarily equivalent to $Q$ by the Fourier transform, so it also has simple spectrum, and the unitary equivalence is the model instance of the classification by multiplicity. The multiplication operator on $L^2([0,1])$ by the variable has cyclic vector the constant function $1$, by the Weierstrass approximation theorem.
 
 ## The Functional Calculus and Polar Decomposition
 
@@ -214,29 +214,29 @@ $$
 D(A)=\Bigl\{x \in H:\lim_{t \to 0}\frac{U(t)x-x}{t} \text{ exists}\Bigr\}, \qquad Ax=\frac1i\lim_{t \to 0}\frac{U(t)x-x}{t} .
 $$
 
-**Theorem (Stone).** The generator of a strongly continuous one-parameter unitary group is self-adjoint, and it is the unique self-adjoint $A$ with $U(t)=e^{itA}$ for all $t$. Conversely, for every self-adjoint $A$ the formula $U(t)=\int e^{it\lambda}\,dE(\lambda)$, with $E$ the spectral measure of $A$, defines a strongly continuous one-parameter unitary group with generator $A$.
+**Theorem (Stone).** The generator of a strongly continuous one-parameter unitary group is self-adjoint, and it is the unique self-adjoint $A$ with $U(t)=\exp(itA)$ for all $t$. Conversely, for every self-adjoint $A$ the formula $U(t)=\int \exp(it\lambda)\,dE(\lambda)$, with $E$ the spectral measure of $A$, defines a strongly continuous one-parameter unitary group with generator $A$.
 
 *Proof (sketch).* For the direct part one first takes the limit in the weak topology, obtaining a symmetric operator $A$; unitarity gives $\|U(t)x\|=\|x\|$ and hence $\operatorname{Re}\langle Ax,x\rangle=0$ for $x \in D(A)$, so the operator is symmetric. For $y \in H$ the vectors
 
 $$
-x_+=\int_0^\infty e^{-t}U(t)y\,dt, \qquad x_-=\int_0^\infty e^{-t}U(-t)y\,dt
+x_+=\int_0^\infty \exp(-t)U(t)y\,dt, \qquad x_-=\int_0^\infty \exp(-t)U(-t)y\,dt
 $$
 
-are defined by strong integrals and satisfy $(A+i)x_+=iy$ and $(A-i)x_-=-iy$, as one checks by differentiating $e^{s}\int_s^\infty e^{-u}U(u)y\,du$ and $e^{-s}\int_{-\infty}^s e^{u}U(u)y\,du$ at $s=0$. Hence $A\pm i$ have range all of $H$, and $A$ is self-adjoint by the basic criterion. The converse is the functional calculus: the multiplicativity $e^{is\lambda}e^{it\lambda}=e^{i(s+t)\lambda}$ holds under the measure, so the group law holds, and the strong continuity follows from dominated convergence.
+are defined by strong integrals and satisfy $(A+i)x_+=iy$ and $(A-i)x_-=-iy$, as one checks by differentiating $\exp(s)\int_s^\infty \exp(-u)U(u)y\,du$ and $\exp(-s)\int_{-\infty}^s \exp(u)U(u)y\,du$ at $s=0$. Hence $A\pm i$ have range all of $H$, and $A$ is self-adjoint by the basic criterion. The converse is the functional calculus: the multiplicativity $\exp(is\lambda)\exp(it\lambda)=\exp(i(s+t)\lambda)$ holds under the measure, so the group law holds, and the strong continuity follows from dominated convergence.
 
 **Corollary (dynamics).** Stone's theorem is the analytic form of a continuous dynamical system: a flow $t \mapsto T_t$ of measure-preserving transformations of a space corresponds to the unitary group $U(t)f=f\circ T_t$ on $L^2$, and its generator is the self-adjoint operator of differentiation along the flow; the spectral properties of the generator are the frequencies of the system. The correspondence between flows and their generators, the mean ergodic theorem and the mixing properties expressed in the spectrum are the subject,and *Probability and Ergodic Theory*; the case of the geodesic flow is treated.
 
 ### Stone's Theorem and the Spectral Multiplicity
 
-**Example (multiplication and differentiation).** On $L^2(\mathbb{R})$ the group $(U(t)f)(x)=f(x+t)$ is strongly continuous and unitary, and its generator is $D=-i\,d/dx$: for $f \in H^1$, $(U(t)f-f)/t \to f'$ in $L^2$, so $A=(1/i)f'=-if'=D$. Thus $U(t)=e^{itD}=e^{t\,d/dx}$ is the translation group, the spectral measure of $D$ is the one carried by the Fourier transform, and the group is the direct integral of the characters $e^{it\xi}$.
+**Example (multiplication and differentiation).** On $L^2(\mathbb{R})$ the group $(U(t)f)(x)=f(x+t)$ is strongly continuous and unitary, and its generator is $D=-i\,d/dx$: for $f \in H^1$, $(U(t)f-f)/t \to f'$ in $L^2$, so $A=(1/i)f'=-if'=D$. Thus $U(t)=\exp(itD)=\exp(t\,d/dx)$ is the translation group, the spectral measure of $D$ is the one carried by the Fourier transform, and the group is the direct integral of the characters $\exp(it\xi)$.
 
-**Example (the Laplacian).** The heat semigroup $e^{t\Delta}$, $t\ge0$, and the wave group $e^{it\sqrt{-\Delta}}$, $t \in \mathbb{R}$, are defined by the functional calculus of the self-adjoint operator $-\Delta$: the first through the bounded functions $e^{-t\lambda}$ and the second through the functions $e^{\pm it\sqrt{\lambda}}$, on the spectrum $[0,\infty)$ of $-\Delta$. The wave group is unitary and strongly continuous, its generator on an appropriate domain is $\sqrt{-\Delta}$, and the spectral measure of $-\Delta$ gives the spectral resolution of the wave propagator. The unitary group of a self-adjoint operator, and the one-parameter groups generated by functions of it, are the link between the spectral theorem and the differential equations of this Part.
+**Example (the Laplacian).** The heat semigroup $\exp(t\Delta)$, $t\ge0$, and the wave group $\exp(it\sqrt{-\Delta})$, $t \in \mathbb{R}$, are defined by the functional calculus of the self-adjoint operator $-\Delta$: the first through the bounded functions $\exp(-t\lambda)$ and the second through the functions $\exp(\pm it\sqrt{\lambda})$, on the spectrum $[0,\infty)$ of $-\Delta$. The wave group is unitary and strongly continuous, its generator on an appropriate domain is $\sqrt{-\Delta}$, and the spectral measure of $-\Delta$ gives the spectral resolution of the wave propagator. The unitary group of a self-adjoint operator, and the one-parameter groups generated by functions of it, are the link between the spectral theorem and the differential equations of this Part.
 
 ## Summary
 
 A linear operator on a Hilbert space is a linear map on a dense domain; it is closed when its graph is closed, and a closed everywhere-defined operator is bounded. Its adjoint is defined on the vectors $y$ for which $x\mapsto\langle Ax,y\rangle$ is continuous, and $A$ is symmetric when $A \subseteq A^*$, self-adjoint when $A=A^*$ with equal domains, and essentially self-adjoint when its closure is self-adjoint. The same formula can be symmetric and not self-adjoint: $-i\,d/dx$ on $C_c^\infty(\mathbb{R})$ is essentially self-adjoint, on $C_c^\infty(0,\infty)$ it has unequal deficiency indices and no self-adjoint extension, and $-\frac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$ has deficiency indices $(1,1)$ and a circle of self-adjoint extensions, parametrised by the boundary condition $u'(0)=\theta u(0)$.
 
-The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: $A$ is self-adjoint exactly when $n_+=n_-=0$, and von Neumann's theorem parametrises the self-adjoint extensions of a closed symmetric operator with $n_+=n_-$ by the unitary maps $N_+\to N_-$, the Cayley transform converting the analytic condition into the extension of an isometry to a unitary. The spectral theorem represents every self-adjoint $A$ as $A=\int\lambda\,dE(\lambda)$ with a unique projection-valued measure $E$ on $\mathbb{R}$ supported on $\sigma(A)$, and the same measure yields the Borel functional calculus $f(A)=\int f\,dE$, a $*$-homomorphism whose restriction to $C(\sigma(A))$ is isometric and whose spectral projections generate the von Neumann algebra of $A$. The operator is classified up to unitary equivalence by the multiplicity function of $E$, and the multiplication model realises it as a direct sum of multiplications by the variable. From the calculus comes the polar decomposition $A=U|A|$ of a closed operator, with $|A|=(A^*A)^{1/2}$. Finally Stone's theorem identifies the strongly continuous one-parameter unitary groups with the self-adjoint operators: the generator of $U(t)$ is self-adjoint and $U(t)=e^{itA}$, and the theorem supplies the analytic form of a continuous dynamical system.
+The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: $A$ is self-adjoint exactly when $n_+=n_-=0$, and von Neumann's theorem parametrises the self-adjoint extensions of a closed symmetric operator with $n_+=n_-$ by the unitary maps $N_+\to N_-$, the Cayley transform converting the analytic condition into the extension of an isometry to a unitary. The spectral theorem represents every self-adjoint $A$ as $A=\int\lambda\,dE(\lambda)$ with a unique projection-valued measure $E$ on $\mathbb{R}$ supported on $\sigma(A)$, and the same measure yields the Borel functional calculus $f(A)=\int f\,dE$, a $*$-homomorphism whose restriction to $C(\sigma(A))$ is isometric and whose spectral projections generate the von Neumann algebra of $A$. The operator is classified up to unitary equivalence by the multiplicity function of $E$, and the multiplication model realises it as a direct sum of multiplications by the variable. From the calculus comes the polar decomposition $A=U|A|$ of a closed operator, with $|A|=(A^*A)^{1/2}$. Finally Stone's theorem identifies the strongly continuous one-parameter unitary groups with the self-adjoint operators: the generator of $U(t)$ is self-adjoint and $U(t)=\exp(itA)$, and the theorem supplies the analytic form of a continuous dynamical system.
 
 ## Summary of Notation
 
@@ -257,7 +257,7 @@ The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: 
 | $Q$, $D=-i\,d/dx$ | multiplication by $x$ and differentiation |
 | $\mu_n$, multiplicity | classification data of a self-adjoint operator |
 | $|A|=(A^*A)^{1/2}$, $A=U|A|$ | modulus and polar decomposition |
-| $U(t)$, $e^{itA}$ | strongly continuous one-parameter unitary group |
+| $U(t)$, $\exp(itA)$ | strongly continuous one-parameter unitary group |
 | $-\Delta$, $H_0^1$, $H^2$ | Laplacian and its Sobolev domains |
 | $\theta$ | boundary parameter of the half-line Laplacian |
 

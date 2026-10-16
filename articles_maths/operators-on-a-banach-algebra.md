@@ -143,7 +143,7 @@ Hence the exponential carries the bounded derivations into the automorphism grou
 
 **Proof.** The series converges absolutely because $\lVert D^n\rVert \leq \lVert D\rVert^n$ and $\sum\lVert D\rVert^n/n!$ is finite; $B(A)$ is complete. That $\exp D$ is multiplicative is the Leibniz rule reorganized: $D^n(ab) = \sum_{i=0}^{n} \binom{n}{i} D^i(a)D^{n-i}(b)$, which is the binomial theorem for the derivation, and summing against $1/n!$ gives $(\exp D)(ab) = (\exp Da)(\exp Db)$. The identity $\exp(D)\exp(-D) = \mathrm{id}$ is the Cauchy product and $\exp(0) = \mathrm{id}$.
 
-**Example (the matrix algebra).** On $A = M_n(\mathbb{K})$ every derivation is inner, $D = \operatorname{ad}_X$ for some $X$, and the exponential of $\operatorname{ad}_X$ is the inner automorphism $Y \mapsto e^{X}Ye^{-X}$, whose inverse is conjugation by $e^{-X}$; the derivation $\operatorname{ad}_X$ is the operator $Y \mapsto XY - YX$ of commutator with $X$.
+**Example (the matrix algebra).** On $A = M_n(\mathbb{K})$ every derivation is inner, $D = \operatorname{ad}_X$ for some $X$, and the exponential of $\operatorname{ad}_X$ is the inner automorphism $Y \mapsto \exp(X)Y\exp(-X)$, whose inverse is conjugation by $\exp(-X)$; the derivation $\operatorname{ad}_X$ is the operator $Y \mapsto XY - YX$ of commutator with $X$.
 
 ## Automatic Continuity
 

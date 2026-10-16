@@ -23,9 +23,9 @@ Throughout, $G$ is a connected Lie group with Lie algebra $\mathrm{G}$, $K$ a ma
 
 The action is transitive, which is the sense in which the space is homogeneous, and the stabiliser of the coset $g\Gamma$ is the conjugate $g\Gamma g^{-1}$. When $G$ is a Lie group and $\Gamma$ is discrete, $G/\Gamma$ is a smooth manifold of dimension $\dim G$ with a smooth free action of $G$, and every orbit is dense in a component of the quotient by the closure of $\Gamma$.
 
-**Theorem (invariant measure).** Let $G$ be unimodular — for instance a connected nilpotent or semisimple Lie group — with Haar measure $dg$, and let $\Gamma$ be a lattice. Then there is a unique (up to scale) $G$-invariant Radon measure $\mu$ on $G/\Gamma$, obtained by integrating over a fundamental domain: $\int_{G/\Gamma} f \, d\mu = \int_{G} \tilde f(g)\, dg$ for a $\Gamma$-invariant lift $\tilde f$ of $f$.
+**Theorem (invariant measure).** Let $G$ be unimodular — for instance a connected nilpotent or semisimple Lie group — with Haar measure $dg$, and let $\Gamma$ be a lattice. Then there is a unique (up to scale) $G$-invariant Radon measure $\mu$ on $G/\Gamma$, obtained by integrating over a fundamental domain: $\int_{G/\Gamma} f \, d\mu = \int_{G} f^{\mathrm{lift}}(g)\, dg$ for a $\Gamma$-invariant lift $f^{\mathrm{lift}}$ of $f$.
 
-*Proof.* The function $g \mapsto \sum_{\gamma \in \Gamma}\tilde f(g\gamma)$ is left $\Gamma$-invariant and converges for $\tilde f$ of compact support because $\Gamma$ is discrete; the invariance of $dg$ under left translations gives the left invariance of the resulting functional, and the uniqueness of the Haar measure gives its uniqueness. The finiteness $\mu(G/\Gamma) = \operatorname{vol}(G/\Gamma) < \infty$ is the definition of a lattice.
+*Proof.* The function $g \mapsto \sum_{\gamma \in \Gamma}f^{\mathrm{lift}}(g\gamma)$ is left $\Gamma$-invariant and converges for $f^{\mathrm{lift}}$ of compact support because $\Gamma$ is discrete; the invariance of $dg$ under left translations gives the left invariance of the resulting functional, and the uniqueness of the Haar measure gives its uniqueness. The finiteness $\mu(G/\Gamma) = \operatorname{vol}(G/\Gamma) < \infty$ is the definition of a lattice.
 
 The **covolume** $\operatorname{vol}(G/\Gamma)$ is the common value; for a cocompact lattice the quotient is compact and the volume finite, and for an arithmetic lattice the volume can be computed by the formula of Weil. The existence of lattices is a theorem of Borel for semisimple groups: every connected semisimple Lie group without compact factors contains both uniform and non-uniform lattices.
 
@@ -56,14 +56,14 @@ transitively and by isometries, and the map $g \mapsto g \cdot i$ identifies $\m
 **Definition.** In $G = PSL_2(\mathbb{R})$ the **diagonal (geodesic) subgroup** and the **horocycle subgroup** are
 
 $$
-A = \left\{ a_s = \begin{pmatrix} e^{s/2} & 0 \\ 0 & e^{-s/2} \end{pmatrix} : s \in \mathbb{R} \right\}, \qquad
+A = \left\{ a_s = \begin{pmatrix} \exp(s/2) & 0 \\ 0 & \exp(-s/2) \end{pmatrix} : s \in \mathbb{R} \right\}, \qquad
 U = \left\{ u_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix} : t \in \mathbb{R} \right\}.
 $$
 
 The **geodesic flow** on $G/\Gamma$ is the action of $A$, and the **horocycle flow** is the action of $U$. The two are linked by the commutation relation
 
 $$
-a_s u_t a_s^{-1} = \begin{pmatrix} 1 & e^{s}t \\ 0 & 1 \end{pmatrix} = u_{e^{s}t},
+a_s u_t a_s^{-1} = \begin{pmatrix} 1 & \exp(s)t \\ 0 & 1 \end{pmatrix} = u_{\exp(s)t},
 $$
 
 which is the contraction relation of the Mautner phenomenon.
@@ -150,7 +150,7 @@ $$
 
 for every $f \in C_c(G/\Gamma)$. In particular the horocycle flow is uniquely ergodic.
 
-The theorem is the prototype of all equidistribution results of the subject, and it is the statement that the time average along every horocycle equals the space average; it holds for every point $x$, not merely almost every one, which is the sense of unique ergodicity. The proof uses the commutation relation $a_s u_t a_s^{-1} = u_{e^s t}$ to rescale the horocycle, together with the ergodicity of the geodesic flow; the two flows are two sides of the same ergodic theorem.
+The theorem is the prototype of all equidistribution results of the subject, and it is the statement that the time average along every horocycle equals the space average; it holds for every point $x$, not merely almost every one, which is the sense of unique ergodicity. The proof uses the commutation relation $a_s u_t a_s^{-1} = u_{\exp(s) t}$ to rescale the horocycle, together with the ergodicity of the geodesic flow; the two flows are two sides of the same ergodic theorem.
 
 **Corollary (equidistribution of horocycles over closed geodesics).** If $x$ is a point whose geodesic returns to a neighbourhood of itself — a periodic point of the geodesic flow — then the horocycle through $x$ equidistributes, and the equidistribution is uniform over the set of points with the same period.
 
@@ -166,7 +166,7 @@ This last statement is the geometric form of Duke's theorem on the equidistribut
 
 A homogeneous space $G/\Gamma$ is the quotient of a Lie group by a discrete subgroup, acted on by left translations; when $\Gamma$ is a lattice, $G/\Gamma$ carries a finite invariant measure, unique up to scale, and a fundamental domain computes it. The standard examples are the torus $\mathbb{R}^n/\mathbb{Z}^n$, the unit tangent bundle of a hyperbolic surface, the modular surface $SL_2(\mathbb{Z})\backslash\mathbb{H}$, the higher-rank quotients $SL_n(\mathbb{Z})\backslash SL_n(\mathbb{R})$, and the nilmanifolds $N/\Gamma$ of nilpotent groups.
 
-On $G/\Gamma$ for $G = SL_2(\mathbb{R})$ the geodesic flow is the action of the diagonal subgroup $A$ and the horocycle flow the action of the upper unipotent subgroup $U$, and the commutation relation $a_su_ta_s^{-1}=u_{e^st}$ exposes the contraction that the Mautner phenomenon needs: the geodesic flow is ergodic because the horocycle flow is, and it is mixing by Howe–Moore. Unipotent flows on semisimple quotients are ergodic by Dani's theorem, and on nilmanifolds by the rational-independence criterion in the abelianisation; the orbit closures on a nilmanifold are finite unions of orbits of larger subgroups, the theorem of Green, Parry and Auslander.
+On $G/\Gamma$ for $G = SL_2(\mathbb{R})$ the geodesic flow is the action of the diagonal subgroup $A$ and the horocycle flow the action of the upper unipotent subgroup $U$, and the commutation relation $a_su_ta_s^{-1}=u_{\exp(s)t}$ exposes the contraction that the Mautner phenomenon needs: the geodesic flow is ergodic because the horocycle flow is, and it is mixing by Howe–Moore. Unipotent flows on semisimple quotients are ergodic by Dani's theorem, and on nilmanifolds by the rational-independence criterion in the abelianisation; the orbit closures on a nilmanifold are finite unions of orbits of larger subgroups, the theorem of Green, Parry and Auslander.
 
 In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamber flow is ergodic and mixing by Moore and Howe–Moore, and the dynamics is rigid: Mostow rigidity says that an isomorphism of the flows is algebraic, so there is no measurable deformation of an irreducible lattice in rank at least two. The equidistribution of horocycles is Furstenberg's theorem, holding for every orbit, and it is the prototype of the general equidistribution of unipotent orbits that is the subject of Ratner's theorems. The nilpotent case is the model throughout: the abelian base supplies the rational-independence criterion, the commutators supply the corrections, and the flow is uniquely ergodic exactly when it is minimal.
 
@@ -180,9 +180,9 @@ In higher rank the diagonal subgroup is a chamber $\mathbb{R}^r$, the Weyl chamb
 | $\mu$, $\operatorname{vol}(G/\Gamma)$ | $G$-invariant measure and covolume |
 | $K$ | Maximal compact subgroup; $G/K$ the symmetric space |
 | $\mathbb{H}$, $PSL_2(\mathbb{R})$ | Upper half-plane and its isometry group |
-| $A$, $a_s$ | Diagonal (geodesic) subgroup, $\operatorname{diag}(e^{s/2},e^{-s/2})$ |
+| $A$, $a_s$ | Diagonal (geodesic) subgroup, $\operatorname{diag}(\exp(s/2),\exp(-s/2))$ |
 | $U$, $u_t$ | Upper unipotent (horocycle) subgroup, $\begin{pmatrix}1&t\\0&1\end{pmatrix}$ |
-| $a_su_ta_s^{-1}=u_{e^st}$ | Commutation relation; the contraction of the Mautner phenomenon |
+| $a_su_ta_s^{-1}=u_{\exp(s)t}$ | Commutation relation; the contraction of the Mautner phenomenon |
 | unipotent | $\operatorname{Ad}(g)-I$ nilpotent; one-parameter flow with polynomial $\operatorname{Ad}(u_t)-I$ |
 | semisimple | $\operatorname{Ad}(g)$ diagonalisable over $\mathbb{C}$ |
 | $N$, $\mathrm{N}$, $[\mathrm{N},\mathrm{N}]$ | Nilpotent group, its Lie algebra, the abelianisation |

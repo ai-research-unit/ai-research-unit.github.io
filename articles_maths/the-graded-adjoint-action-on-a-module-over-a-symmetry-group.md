@@ -35,9 +35,9 @@ makes $\operatorname{End}(M)$ a graded Lie algebra, the **sign** $(-1)^{\lvert T
 
 ### The Geometric Modules
 
-**Example (the exterior algebra).** Let $V$ be a quadratic space and $M = \Lambda V = \bigoplus_k\Lambda^k V$ with the grading by parity of degree; the orthogonal group acts by $g\cdot(v_1\wedge\cdots\wedge v_k) = (gv_1)\wedge\cdots\wedge(gv_k)$, a graded action with $G_0 = SO(V,q)$ acting on each part and $G_1$ (an odd isometry, an element of $O(V,q)$ of determinant $-1$) exchanging them. The module is the basic geometric graded module.
+**Example (the exterior algebra).** Let $V$ be a quadratic space and $M = \Lambda V = \bigoplus_k\Lambda^k V$ with the grading by parity of degree; the orthogonal group acts by $g\cdot(v_1\wedge\cdots\wedge v_k) = (gv_1)\wedge\cdots\wedge(gv_k)$, a graded action with $G_0 = SO(V,\mathfrak{Q})$ acting on each part and $G_1$ (an odd isometry, an element of $O(V,\mathfrak{Q})$ of determinant $-1$) exchanging them. The module is the basic geometric graded module.
 
-**Example (the Clifford module).** Let $S$ be a Clifford module of a quadratic space; the pin group acts by Clifford multiplication, and an odd element of the group acts by a parity-reversing operator, so $S$ is a graded module over $\mathrm{Pin}(V,q)$; this is *Pin Representations and Clifford Modules with Signed Inner Conjugation*.
+**Example (the Clifford module).** Let $S$ be a Clifford module of a quadratic space; the pin group acts by Clifford multiplication, and an odd element of the group acts by a parity-reversing operator, so $S$ is a graded module over $\mathrm{Pin}(V,\mathfrak{Q})$; this is *Pin Representations and Clifford Modules with Signed Inner Conjugation*.
 
 ## The Graded Form and the Adjoint
 
@@ -99,7 +99,7 @@ with respect to $\langle S, T\rangle = \operatorname{str}(S^{*}T)$. For an odd e
 
 **Example (the exterior algebra of a quadratic space).** Let $M = \Lambda V$ with the grading by degree parity and the graded form induced by the quadratic form on $V$ and the determinant pairing on the top degree; the orthogonal group acts by graded isometries, the adjoint action on $\operatorname{End}(\Lambda V)$ is the conjugation with the Koszul sign, and the adjoint of the exterior multiplication by a vector is the interior multiplication, with the sign rule $(\epsilon_v)^{*} = \iota_v$ up to sign. The example is the standard graded module of the geometry.
 
-**Example (the Clifford module).** Let $M = S$ be a Clifford module and $G = \mathrm{Pin}(V,q)$; an even element acts by a parity-preserving operator and an odd element by a parity-reversing one, the graded form is the Clifford inner product, and the adjoint of the Clifford multiplication by a vector $u$ is the multiplication by $u^{*}$, with the sign rule carrying the reality condition of *The Signed Adjoint of the Left Multiplication on a Symmetry Group*.
+**Example (the Clifford module).** Let $M = S$ be a Clifford module and $G = \mathrm{Pin}(V,\mathfrak{Q})$; an even element acts by a parity-preserving operator and an odd element by a parity-reversing one, the graded form is the Clifford inner product, and the adjoint of the Clifford multiplication by a vector $a$ is the multiplication by $a^{*}$, with the sign rule carrying the reality condition of *The Signed Adjoint of the Left Multiplication on a Symmetry Group*.
 
 **Example (the supersymmetric module).** Let $M = M_0\oplus M_1$ with $\dim M_0 = \dim M_1$ and the graded form the pairing of the two parts; the adjoint action of the group is the graded conjugation, its adjoint is the conjugation by the inverse, and the supertrace vanishes on the odd part, $\operatorname{str}(T) = 0$ for $T$ odd. The example shows the supertrace and the sign rule in the simplest supersymmetric case.
 

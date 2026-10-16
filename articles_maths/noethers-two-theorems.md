@@ -92,10 +92,10 @@ and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial_\mu(F^\mu -
 **The conserved charge.** If the current falls off fast enough at spatial infinity, the **Noether charge**
 
 $$
-Q = \int j^0\,d^{m-1}x
+Ϙ = \int j^0\,d^{m-1}x
 $$
 
-is constant in time, because $\frac{d}{dt}Q = \int\partial_0j^0\,d^{m-1}x = -\int\partial_kj^k\,d^{m-1}x$ vanishes as a boundary term.
+is constant in time, because $\frac{d}{dt}Ϙ = \int\partial_0j^0\,d^{m-1}x = -\int\partial_kj^k\,d^{m-1}x$ vanishes as a boundary term.
 
 ### Worked Examples of the First Theorem
 
@@ -314,7 +314,7 @@ Both theorems follow from one identity, $\delta L = E_i\delta u^i + \partial_\mu
 | $a^{i\mu_1\cdots\mu_k}$ | Coefficient of the $k$-th derivative of $\varepsilon$, $k\le r$ |
 | $q$ | Number of arbitrary functions of a second-kind symmetry |
 | $j^\mu$, $j^\mu_a$ | Noether currents |
-| $Q=\int j^0\,d^{m-1}x$ | Noether charge |
+| $Ϙ=\int j^0\,d^{m-1}x$ | Noether charge |
 | $T^\mu{}_\nu = L^\mu_i\partial_\nu u^i - \delta^\mu_\nu L$ | Canonical energy–momentum tensor |
 | First kind | Rigid symmetry, constant parameters |
 | Second kind | Local symmetry, arbitrary functions |

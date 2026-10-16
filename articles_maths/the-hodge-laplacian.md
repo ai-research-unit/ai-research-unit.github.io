@@ -54,7 +54,7 @@ $$
 
 **Proof.** The self-adjointness is the adjointness of $d$ and $d^{*}$ together with the self-adjointness of each term $dd^{*}$ and $d^{*}d$; the quadratic form is the expanded product, and it is a sum of two norms, vanishing exactly when both vanish.
 
-**Theorem (ellipticity and discreteness).** The Laplacian is elliptic, of order two, with principal symbol $\sigma_\Delta(\xi)=|\xi|^2\mathrm{id}$; on a closed manifold its spectrum is discrete, real and nonnegative, it accumulates only at infinity, and the heat semigroup $e^{-t\Delta}$ is a smoothing operator for $t>0$. Consequently $\mathcal{H}^{k}(M)$ is finite-dimensional and $\Omega^{k}(M)=\mathcal{H}^{k}\oplus\Delta\Omega^{k}$.
+**Theorem (ellipticity and discreteness).** The Laplacian is elliptic, of order two, with principal symbol $\sigma_\Delta(\xi)=|\xi|^2\mathrm{id}$; on a closed manifold its spectrum is discrete, real and nonnegative, it accumulates only at infinity, and the heat semigroup $\exp(-t\Delta)$ is a smoothing operator for $t>0$. Consequently $\mathcal{H}^{k}(M)$ is finite-dimensional and $\Omega^{k}(M)=\mathcal{H}^{k}\oplus\Delta\Omega^{k}$.
 
 **Proof.** The symbol is the squared length of the covector, hence invertible for $\xi\neq0$; the spectral theory of a self-adjoint elliptic operator on a closed manifold gives the rest, and the smoothness of the heat kernel is the standard parabolic regularity.
 

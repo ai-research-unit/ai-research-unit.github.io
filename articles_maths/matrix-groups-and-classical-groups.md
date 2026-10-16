@@ -250,7 +250,7 @@ The double covers above are the first of a family of low-dimensional coincidence
 
 | Isomorphism | Dimensions | Reason |
 |---|---|---|
-| $SO(2) \cong U(1) = S^1$ | $1$ | the rotation matrices are $e^{i\theta}$ |
+| $SO(2) \cong U(1) = S^1$ | $1$ | the rotation matrices are $\exp(i\theta)$ |
 | $SU(2) \cong Sp(1) \cong \mathbb{H}^1 \cong S^3$ | $3$ | the representation $\rho$ |
 | $SO(3) \cong SU(2)/\{\pm I\} = PSU(2)$ | $3$ | conjugation by unit quaternions |
 | $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ | $6$ | the two-sided action |

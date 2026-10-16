@@ -5,23 +5,23 @@
 
 A Clifford algebra is a ring as well as a vector space, and the two ways in which it can act on itself — from the left and from the right — give two families of operators with opposite multiplicativity. For $a$ in the algebra the **left multiplication** is $L_a : x\mapsto ax$ and the **right multiplication** is $R_a : x\mapsto xa$; the left family is an isomorphism of the algebra onto its image, the right family is an anti-isomorphism, and together the two families generate the algebra of all endomorphisms of the underlying vector space. The pair is the algebraic frame of every Clifford module: the spin representation is the left action on a minimal left ideal, the opposite algebra is carried by the right action, and the commutant of the left family is the right family in the cases where the algebra is central simple.
 
-The article treats the pair as the geometric-algebraic object of the category. The quadratic form enters through the relations $uv+vu=2B(u,v)$ and $u^2=q(u)$, so the two families are the operators that the chosen form defines on the algebra; the grading enters through the multiplicativity of the parity, $|L_a|=|R_a|=|a|$; and the module structure enters through the bimodule $\mathrm{Cl}(V,q)$ with the left action on one side and the right action on the other. The one-sided calculus — the kernels, the images, the commutant and the enveloping algebra — is the subject of *One-Sided Operators on a Clifford Algebra*, and its properties are quoted rather than repeated; what this article adds is the reading of the two families as the bimodule structure of the algebra, together with the double-commutant theorem that identifies the two families as mutual commutants.
+The article treats the pair as the geometric-algebraic object of the category. The quadratic form enters through the relations $uv+vu=2B(u,v)$ and $u^2=\mathfrak{Q}(u)$, so the two families are the operators that the chosen form defines on the algebra; the grading enters through the multiplicativity of the parity, $|L_a|=|R_a|=|a|$; and the module structure enters through the bimodule $\mathrm{Cl}(V,\mathfrak{Q})$ with the left action on one side and the right action on the other. The one-sided calculus — the kernels, the images, the commutant and the enveloping algebra — is the subject of *One-Sided Operators on a Clifford Algebra*, and its properties are quoted rather than repeated; what this article adds is the reading of the two families as the bimodule structure of the algebra, together with the double-commutant theorem that identifies the two families as mutual commutants.
 
-**The boundaries.** The algebra, its grading, its centre and its Wedderburn form are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the module theory of the regular module and the minimal left ideals is *Left Multiplication and the Clifford Module Structure*; the operator calculus of the two families is *One-Sided Operators on a Clifford Algebra*; its signed and twisting variants are *The Graded Multiplication Operators* and *The Signed Left Multiplication on a Clifford Algebra* of this category. The adjoints of the two families for the form of the category are *The Adjoint of the Left Multiplication on a Clifford Algebra*, written in the next group. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form on a finite-dimensional space $V$ with polar form $B$, and $q(u)=B(u,u)$, $uv+vu=2B(u,v)$.
+**The boundaries.** The algebra, its grading, its centre and its Wedderburn form are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the module theory of the regular module and the minimal left ideals is *Left Multiplication and the Clifford Module Structure*; the operator calculus of the two families is *One-Sided Operators on a Clifford Algebra*; its signed and twisting variants are *The Graded Multiplication Operators* and *The Signed Left Multiplication on a Clifford Algebra* of this category. The adjoints of the two families for the form of the category are *The Adjoint of the Left Multiplication on a Clifford Algebra*, written in the next group. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form on a finite-dimensional space $V$ with polar form $B$, and $\mathfrak{Q}(u)=B(u,u)$, $uv+vu=2B(u,v)$.
 
 ## The Two Families
 
 ### Definition and Multiplicativity
 
-**Definition.** For $a\in\mathrm{Cl}(V,q)$ the **left multiplication** and the **right multiplication** are the $F$-linear operators
+**Definition.** For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the **left multiplication** and the **right multiplication** are the $F$-linear operators
 
 $$
-L_a : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \quad L_a(x) = a\,x ,
+L_a : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \quad L_a(x) = a\,x ,
 \qquad
-R_a : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \quad R_a(x) = x\,a .
+R_a : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \quad R_a(x) = x\,a .
 $$
 
-The regular module is the vector space $\mathrm{Cl}(V,q)$ with the left action $L$, and the left regular representation is the map $\rho(a)=L_a$.
+The regular module is the vector space $\mathrm{Cl}(V,\mathfrak{Q})$ with the left action $L$, and the left regular representation is the map $\rho(a)=L_a$.
 
 **Proposition (the two multiplicativities).** For all $a,c$, $L_aL_c=L_{ac}$ and $R_aR_c=R_{ca}$; the left family is multiplicative in the written order and the right family is anti-multiplicative. Both families are faithful, $L_a=0$ or $R_a=0$ only for $a=0$, and the two familes commute elementwise,
 
@@ -37,18 +37,18 @@ $$
 
 ### The Two Families Together
 
-**Definition.** The **regular bimodule** is the vector space $\mathrm{Cl}(V,q)$ with the left action of $L$ and the right action of $R$; it is a bimodule over the algebra, and the two actions commute.
+**Definition.** The **regular bimodule** is the vector space $\mathrm{Cl}(V,\mathfrak{Q})$ with the left action of $L$ and the right action of $R$; it is a bimodule over the algebra, and the two actions commute.
 
-**Proposition (generation).** The algebra generated by the left and the right multiplications is the whole algebra of $F$-linear endomorphisms of $\mathrm{Cl}(V,q)$,
+**Proposition (generation).** The algebra generated by the left and the right multiplications is the whole algebra of $F$-linear endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
-\langle L_a, R_b : a,b\in\mathrm{Cl}(V,q)\rangle = \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr) ,
+\langle L_a, R_b : a,b\in\mathrm{Cl}(V,\mathfrak{Q})\rangle = \mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr) ,
 $$
 
 a subalgebra of dimension $(\dim\mathrm{Cl})^2$; equivalently, the map
 
 $$
-\mathrm{Cl}(V,q)\otimes_F \mathrm{Cl}(V,q)^{\mathrm{opp}} \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\longmapsto L_aR_b ,
+\mathrm{Cl}(V,\mathfrak{Q})\otimes_F \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr), \qquad a\otimes b\longmapsto L_aR_b ,
 $$
 
 is an isomorphism of $F$-algebras.
@@ -61,12 +61,12 @@ is an isomorphism of $F$-algebras.
 
 ### The Commutant of One Family
 
-**Given.** The left family generates a subalgebra isomorphic to $\mathrm{Cl}(V,q)$; its commutant in $\mathrm{End}_F(\mathrm{Cl})$ is the set of operators commuting with every $L_a$, and similarly on the right.
+**Given.** The left family generates a subalgebra isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})$; its commutant in $\mathrm{End}_F(\mathrm{Cl})$ is the set of operators commuting with every $L_a$, and similarly on the right.
 
 **Proposition.** The commutant of the left family contains the right family, $R_bL_a=L_aR_b$, and
 
 $$
-\{L_a : a\in\mathrm{Cl}(V,q)\}' \supseteq \{R_b : b\in\mathrm{Cl}(V,q)\} .
+\{L_a : a\in\mathrm{Cl}(V,\mathfrak{Q})\}' \supseteq \{R_b : b\in\mathrm{Cl}(V,\mathfrak{Q})\} .
 $$
 
 When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusion is proper for $\dim V$ odd over a base where the centre splits.
@@ -85,7 +85,7 @@ When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusio
 
 ## The Form and the Operators
 
-**Remark (where the form enters).** The two families are defined for any associative algebra, but their relation to the quadratic form is in the Clifford relations: the operators $L_u$ and $R_u$ for a vector $u$ satisfy $L_uL_v+L_vL_u=2B(u,v)\operatorname{id}$ and $R_uR_v+R_vR_u=2B(u,v)\operatorname{id}$, so each family is a representation of the Clifford algebra of $(V,q)$ on the algebra itself. The form is therefore what makes the two families Clifford representations rather than arbitrary ring actions, and the reflection and rotation structure of the category is carried by the products $L_aR_b$, not by either family alone.
+**Remark (where the form enters).** The two families are defined for any associative algebra, but their relation to the quadratic form is in the Clifford relations: the operators $L_u$ and $R_u$ for a vector $u$ satisfy $L_uL_v+L_vL_u=2B(u,v)\operatorname{id}$ and $R_uR_v+R_vR_u=2B(u,v)\operatorname{id}$, so each family is a representation of the Clifford algebra of $(V,\mathfrak{Q})$ on the algebra itself. The form is therefore what makes the two families Clifford representations rather than arbitrary ring actions, and the reflection and rotation structure of the category is carried by the products $L_aR_b$, not by either family alone.
 
 **Remark (the pairing with the adjoint).** The two families are adjoint to one another for the trace form of the algebra: for the bilinear form $\langle x,y\rangle=\operatorname{Sc}(xy)$ or the form $\operatorname{Tr}(L_aR_b)$ induced by the regular representation, the adjoint of $L_a$ is $R_{a^*}$ and the adjoint of $R_b$ is $L_{b^*}$ in the conventions of *The Adjoint of the Left Multiplication on a Clifford Algebra*, written in the next group; the derivation of the adjoint pairs is not repeated here.
 
@@ -93,15 +93,15 @@ When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusio
 
 ### The Quaternions
 
-For $V$ of dimension two with $q$ negative definite, $\mathrm{Cl}(V,q)\cong\mathbb{H}$ with basis $1,e_1,e_2,e_1e_2$; the left multiplications by $e_1,e_2,e_1e_2$ are the three complex structures of the quaternionic left action, and the right multiplications are the three corresponding structures of the opposite action. The two families commute up to the sign of the quaternionic conjugation, and together they generate the whole $16$-dimensional endomorphism algebra of $\mathbb{H}$ as a real space, which is the isomorphism above for $k=1$, $D=\mathbb{H}$.
+For $V$ of dimension two with $q$ negative definite, $\mathrm{Cl}(V,\mathfrak{Q})\cong\mathbb{H}$ with basis $1,e_1,e_2,e_1e_2$; the left multiplications by $e_1,e_2,e_1e_2$ are the three complex structures of the quaternionic left action, and the right multiplications are the three corresponding structures of the opposite action. The two families commute up to the sign of the quaternionic conjugation, and together they generate the whole $16$-dimensional endomorphism algebra of $\mathbb{H}$ as a real space, which is the isomorphism above for $k=1$, $D=\mathbb{H}$.
 
 ### The Split Plane
 
-For $V$ of dimension two with the split form $e_1^2=1$, $e_2^2=-1$, $\mathrm{Cl}(V,q)\cong M_2(\mathbb{R})$; the regular module is $\mathbb{R}^2\oplus\mathbb{R}^2$, the left multiplications are the matrix multiplications and the right multiplications by the transposed matrices, and the commutant of the left family is the right family because the algebra is central simple. This is the smallest case in which the double-commutant theorem is visible in matrices.
+For $V$ of dimension two with the split form $e_1^2=1$, $e_2^2=-1$, $\mathrm{Cl}(V,\mathfrak{Q})\cong M_2(\mathbb{R})$; the regular module is $\mathbb{R}^2\oplus\mathbb{R}^2$, the left multiplications are the matrix multiplications and the right multiplications by the transposed matrices, and the commutant of the left family is the right family because the algebra is central simple. This is the smallest case in which the double-commutant theorem is visible in matrices.
 
 ### An Odd Case
 
-For $V$ of dimension three with $q$ negative definite, $\mathrm{Cl}(V,q)\cong\mathbb{H}\oplus\mathbb{H}$ and the centre is $\mathbb{R}\oplus\mathbb{R}\omega$ with $\omega=e_1e_2e_3$; the central idempotents $\frac12(1\pm\omega)$ commute with both families, so the commutant of the left family is strictly larger than the right family, and the two families do not exhaust the endomorphism algebra. The excess is exactly the two projections onto the two simple summands of the algebra.
+For $V$ of dimension three with $q$ negative definite, $\mathrm{Cl}(V,\mathfrak{Q})\cong\mathbb{H}\oplus\mathbb{H}$ and the centre is $\mathbb{R}\oplus\mathbb{R}\omega$ with $\omega=e_1e_2e_3$; the central idempotents $\frac12(1\pm\omega)$ commute with both families, so the commutant of the left family is strictly larger than the right family, and the two families do not exhaust the endomorphism algebra. The excess is exactly the two projections onto the two simple summands of the algebra.
 
 ## Summary
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An algebra acts on itself in two ways at once: from the left, $\tilde R\mapsto \tilde Q\tilde R$, and from the right, $\tilde R\mapsto \tilde R\tilde P$. The corpus studies the two families of operators in *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* for the definite form, and in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra* for the indefinite general plain form, and it uses their commuting product in *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
+An algebra acts on itself in two ways at once: from the left, $\tilde R\mapsto \tilde Q\tilde R$, and from the right, $\tilde R\mapsto \tilde R\tilde P$. The corpus studies the two families of operators in *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra* for the definite form, and in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra* for the indefinite general plain form, and it uses their commuting product in *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
 
 $$
 \mathbb B^{\mathrm e} = \mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}},
@@ -22,7 +22,7 @@ $$
 
 so that the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts the linear operators. The second is the reading that follows: the left multiplications $L_{\tilde Q}=\tilde Q\otimes\mathbb 1^{\mathrm{opp}}$ and the right multiplications $R_{\tilde P}=\mathbb 1\otimes \tilde P^{\mathrm{opp}}$ are **two commuting copies of $\mathbb B$ and $\mathbb B^{\mathrm{opp}}$ inside one endomorphism algebra**, of the same algebraic type, and the biquaternion algebra is a **bi-module** over the pair. The corpus's recorded question of which of the two actions is the physical matter representation then has a precise algebraic location: the question is not about the existence of one action or the other, since both are present and of the same type, but about which factor of the enveloping algebra a given physical degree of freedom uses.
 
-The article is pure algebra. The one-sided and two-sided operators are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; the general operator theory of an algebra is *The Operators on an Algebra*, whose left and right multiplications and whose double centraliser are the starting point here; the modules and the standard bi-module $_{\mathbb B}S_{\mathbb C}$ are *Modules over the Biquaternion Algebra*; and the spectral consequences of the Kronecker-product form of the two actions are *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+The article is pure algebra. The one-sided and two-sided operators are *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the general operator theory of an algebra is *The Operators on an Algebra*, whose left and right multiplications and whose double centraliser are the starting point here; the modules and the standard bi-module $_{\mathbb B}S_{\mathbb C}$ are *Modules over the Biquaternion Algebra*; and the spectral consequences of the Kronecker-product form of the two actions are *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## The Two Regular Representations
 
@@ -128,7 +128,7 @@ $$
 E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
 $$
 
-where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \hat\Upsilon_1, \hat\Upsilon_2, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
+where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \vec\Upsilon_1, \vec\Upsilon_2, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
 
 $$
 \bigl(E_{ik}\mathbb{B}^{\mathrm e}E_{jl}\bigr)\bigl(E_{i'k'}\mathbb{B}^{\mathrm e}E_{j'l'}\bigr) \subseteq \delta_{ji'}\delta_{lk'}\, E_{ik}\mathbb{B}^{\mathrm e}E_{j'l'} ,
@@ -307,12 +307,12 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 | ${}_{\mathbb B}\mathbb B_{\mathbb B}$ | The regular bi-module; a left $\mathbb B^{\mathrm e}$-module |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{opp}}$ |
 | $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | The four idempotents of $\mathbb B^{\mathrm e}$, cutting it into sixteen corners |
-| $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\hat\Upsilon_1,\hat\Upsilon_2,\tilde\Pi_2$ |
+| $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\vec\Upsilon_1,\vec\Upsilon_2,\tilde\Pi_2$ |
 
 ## Further Reading
 
 - A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, §2–4, for the Conway operators $e_n[\,]e_m$, the composition and association rules, the functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays (10′)–(13′), the rule $G^{-1}=G^{+\approx}=G^{\dagger}$ for the group elements, and the remark that the quaternion method loses power from three to four dimensions.
 - A. W. Conway, "Quaternions and matrices," *Proceedings of the Royal Irish Academy* **A 50** (1945) 98–130, and J. L. Synge, "Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies* **A 21** (1972), for the Conway operator calculus in its original form.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §1–2, for the enveloping algebra $P^{\mathrm e}\cong P\otimes P^{\mathrm T}$, the sandwich action, the statement that the left and right actions are of the same type, and the caution on the iso-spin reading.
-- The companion articles of this series: *The Operators on an Algebra*, *Modules over the Biquaternion Algebra*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
+- The companion articles of this series: *The Operators on an Algebra*, *Modules over the Biquaternion Algebra*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, *One-Sided Operators on the General Plain Sesqualgebra*, *Two-Sided Operators on the General Plain Sesqualgebra*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
 - The physics articles that use the reading: *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.

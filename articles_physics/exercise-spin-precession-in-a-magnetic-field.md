@@ -15,7 +15,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 A spin-$\tfrac{1}{2}$ particle is prepared in the **spin-up state along the $x$-axis**, and is then placed in a uniform magnetic field
 
 $$
-\vec B = B_0\,\hat{z}
+\vec B = B_0\,\vec u_z
 $$
 
 pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the **expectation value of the spin along the $x$-axis** as a function of time?
@@ -34,7 +34,7 @@ $$
 
 ### Step 2: The Hamiltonian
 
-The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\hat{z}$ is
+The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\vec u_z$ is
 
 $$
 H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
@@ -53,13 +53,13 @@ is the **Larmor frequency** and $S_z = \frac{\hbar}{2}\sigma_3$.
 The evolution operator is
 
 $$
-U(t) = e^{-iHt/\hbar} = e^{\,i\omega_L t\,\sigma_3/2} = \begin{pmatrix} e^{\,i\omega_L t/2} & 0 \\ 0 & e^{-i\omega_L t/2} \end{pmatrix}.
+U(t) = \exp(-iHt/\hbar) = \exp(\,i\omega_L t\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L t/2) & 0 \\ 0 & \exp(-i\omega_L t/2) \end{pmatrix}.
 $$
 
 The evolved state is
 
 $$
-|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} e^{\,i\omega_L t/2} \\ e^{-i\omega_L t/2} \end{pmatrix}.
+|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t/2) \\ \exp(-i\omega_L t/2) \end{pmatrix}.
 $$
 
 ### Step 4: The expectation value
@@ -73,7 +73,7 @@ $$
 Computing the matrix element,
 
 $$
-\langle\psi(t)|\sigma_1|\psi(t)\rangle = \frac{1}{2}\left(e^{-i\omega_L t/2} \cdot e^{-i\omega_L t/2} + e^{\,i\omega_L t/2} \cdot e^{\,i\omega_L t/2}\right) = \frac{1}{2}\left(e^{-i\omega_L t} + e^{\,i\omega_L t}\right) = \cos(\omega_L t).
+\langle\psi(t)|\sigma_1|\psi(t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L t/2) \cdot \exp(-i\omega_L t/2) + \exp(\,i\omega_L t/2) \cdot \exp(\,i\omega_L t/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L t) + \exp(\,i\omega_L t)\right) = \cos(\omega_L t).
 $$
 
 Therefore
@@ -89,10 +89,10 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
 
 $$
-P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+P(\vec u_m) = \tfrac{1}{2}\left(e_0 + i\vec u_m\right),
 $$
 
-where $\hat{m}$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\hat{m} = e_1$, giving
+where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = e_1$, giving
 
 $$
 P_x = \tfrac{1}{2}\left(e_0 + i e_1\right).
@@ -185,7 +185,7 @@ $$
 
 the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.
 
-**6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = e^{-iHt/\hbar}$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
+**6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = \exp(-iHt/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
 
 ## Comparison with Exercise: Measuring Spin Along an Arbitrary Direction
 
@@ -226,7 +226,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Evolution biquaternion |
 | $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$ | Evolved state |
 | $\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}(\tilde{\rho}(t)\tilde{S}_x)$ | Expectation value |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 

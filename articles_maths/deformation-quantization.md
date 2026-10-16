@@ -163,7 +163,7 @@ $$
 
 which is the formal form of the canonical commutation relation. The algebra $(k[x_1,x_2],*)$ is the Weyl algebra in its completed form, and it is the basic example in which the star product can be written by a closed formula.
 
-*Proof of associativity (sketch).* Writing $f*g = m\circ e^{\frac h2\omega(\partial,\partial')}(f\otimes g)$ with $m$ the multiplication, associativity follows from the fact that the exponential of a constant-coefficient bidifferential operator is the exponential of a derivation of the tensor algebra, and exponentials of commuting derivations compose by addition of their exponents.
+*Proof of associativity (sketch).* Writing $f*g = m\circ \exp(\frac h2\omega(\partial,\partial'))(f\otimes g)$ with $m$ the multiplication, associativity follows from the fact that the exponential of a constant-coefficient bidifferential operator is the exponential of a derivation of the tensor algebra, and exponentials of commuting derivations compose by addition of their exponents.
 
 **Example (quantum plane as a quantisation).** For $A = k[x,y]$ with the Poisson bracket $\{y,x\} = xy$, the algebra $k_q[x,y]$ with $yx = qxy$ and $q = 1 + h$ is a star product to first order: the antisymmetrisation of $C_1$ is $\{y,x\} = xy$. The two deformations of $k[x,y]$ — the Moyal deformation by a constant bracket and the $q$-commuting deformation by $\{y,x\} = xy$ — are inequivalent as deformations, because their first-order terms are inequivalent Poisson structures. This is the standard illustration that the first-order term, and not the deformed algebra alone, is the invariant that the deformation quantisation records.
 

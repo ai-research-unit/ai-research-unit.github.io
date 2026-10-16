@@ -153,7 +153,7 @@ with $\Psi$ the $A$-valued form of *Hermitian Forms on a Sesqualgebra*, and cons
 
 **Proposition.** Let $\varsigma = \mathrm{id}$. Then the form is $R$-bilinear and symmetric, $\varsigma(h(x,y)) = h(x,y)$, the Hermitian condition is the symmetry, and the four kinds of the diagonal are the classical four kinds of a symmetric bilinear form; the order that the form defines is the order of *Positive Definite Forms and the Order*, and the cone of the positive semi-definite forms is the classical cone of the positive semi-definite symmetric bilinear forms.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the second slot rule is the first and the form is $R$-bilinear; the Hermitian condition $h(y,x) = \varsigma(h(x,y)) = h(x,y)$ is the symmetry; the diagonal is the associated quadratic form $q(x) = h(x,x)$, and its sign is the definiteness of the symmetric form in the sense of *Bilinear Forms*.
+*Proof.* With $\varsigma = \mathrm{id}$ the second slot rule is the first and the form is $R$-bilinear; the Hermitian condition $h(y,x) = \varsigma(h(x,y)) = h(x,y)$ is the symmetry; the diagonal is the associated quadratic form $\mathfrak{Q}(x) = h(x,x)$, and its sign is the definiteness of the symmetric form in the sense of *Bilinear Forms*.
 
 **Remark.** The comparison locates what the twist adds: over the trivial base involution positivity is the positivity of a quadratic form, and the bilinear layer's three kinds of form, of which *Bilinear Forms* treats the symmetric one, are the three fixed points of the dictionary of *The Sesquilinear Form and the Conjugation*. The companion in the bilinear layer, where the conjugation is kept and the form is the one attached to the dagger, is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, whose positive cone is the cone of the elements $x^{\dagger}x$ of a Clifford algebra.
 
@@ -187,7 +187,7 @@ $$
 h(Q,Q) = \mathrm{Sc}(Q^{*}Q) = \sum_{\mu=0}^{3} \lvert Q_{\mu}\rvert^{2} ,
 $$
 
-the sum of the modulus squares of the coordinates, positive definite by *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$.
+the sum of the modulus squares of the coordinates, positive definite by *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$.
 
 ### The Split Algebra
 

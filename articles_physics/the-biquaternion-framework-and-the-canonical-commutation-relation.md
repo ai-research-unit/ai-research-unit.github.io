@@ -23,11 +23,11 @@ The canonical commutation relation is not a statement about quantumness. It is a
 
 **The relation.** For self-adjoint $Q$ and $P$ on a Hilbert space $\mathcal{H}$, the relation and its bounded form are
 $$
-[Q,P]=i\hbar\,I,\qquad e^{i\alpha Q}e^{i\beta P}=e^{-i\hbar\alpha\beta}e^{i\beta P}e^{i\alpha Q}.
+[Q,P]=i\hbar\,I,\qquad \exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q).
 $$
 The second is the Weyl form, and it is the version that avoids the domain problems of the unbounded operators in the first.
 
-**Why a continuum is required.** The translation identity $e^{iaP}Qe^{-iaP}=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x'\rangle=\delta(x-x')$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
+**Why a continuum is required.** The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x'\rangle=\delta(x-x')$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
 
 **Why the carrier must be infinite-dimensional.** The trace of a commutator of finite-dimensional matrices vanishes by cyclicity, while $\mathrm{Tr}(i\hbar\,I)=i\hbar\dim\mathcal{H}\neq0$. So no finite-dimensional matrices satisfy the relation, at any dimension. The Stone–von Neumann theorem adds the classification: the irreducible representation with a fixed central character is unique up to unitary equivalence, and it is the Schrödinger representation on $L^2(\mathbb{R})$.
 
@@ -109,7 +109,7 @@ If position and momentum enter the framework, they enter as a transform and not 
 
 A finite carrier does carry a commutation relation with a phase in place of the scalar, and it is important to say what that relation is and is not.
 
-**The pair.** On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=e^{2\pi i/N}$ and let $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
+**The pair.** On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
 $$
 XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX .
 $$
@@ -200,11 +200,11 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $\tilde{Q}=h_0e_0+i\vec h\cdot\mathbf{e}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\vec h\cdot\vec k$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
-| $e^{i\alpha Q}e^{i\beta P}=e^{-i\hbar\alpha\beta}e^{i\beta P}e^{i\alpha Q}$ | Weyl form of the relation |
+| $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x'\rangle=\delta(x-x')$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
 | $\tilde{S}_k=\tfrac{\hbar}{2}ie_k$ | Spin (rotation) generators in $\mathbb{M}_+$ |
 | $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ | Angular-momentum bracket |
-| $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=e^{2\pi i/N}$ | Clock of the finite Weyl pair |
+| $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=\exp(2\pi i/N)$ | Clock of the finite Weyl pair |
 | $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ | Shift of the finite Weyl pair |
 | $XZ=\omega ZX$ | Weyl (clock-and-shift) relation; phase in place of $i\hbar$ |
 | $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ | Matrix model of $\mathbb{B}$ |

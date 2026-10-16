@@ -7,7 +7,7 @@ This article develops Fueter theory in the split-quaternion setting: the **Fuete
 
 The article owns the Fueter theory of the category. It relies on *Split-Quaternion Regular Functions* for the Cauchy–Riemann operator and its factorization, on *Split-Quaternion Roots of Minus One* for the imaginary units, and on the power-series material developed in *Split-Quaternion Analysis* and *Split-Quaternion Elementary Functions*. It is compared throughout with the biquaternion counterpart *Fueter Theory for Biquaternions* and with the quaternion theory. No physics is invoked, and the first-order operator is called the **Cauchy–Riemann operator**, not the Dirac operator.
 
-**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$; the vector part is $\vec v = q_1 e_1+q_2 e_2+q_3 e_3 \in V$ with $N(\vec v) = q_1^2-q_2^2-q_3^2$. Partial derivatives are $\partial_{q_0},\partial_{q_1},\partial_{q_2},\partial_{q_3}$.
+**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$; the vector part is $\vec v = q_1 e_1+q_2 e_2+q_3 e_3 \in V$ with $\langle \vec v\rangle_{\natural} = q_1^2-q_2^2-q_3^2$. Partial derivatives are $\partial_{q_0},\partial_{q_1},\partial_{q_2},\partial_{q_3}$.
 
 ## The Fueter Operator in the Split Signature
 
@@ -39,7 +39,7 @@ Thus the Fueter operator is a square root not of the Laplacian but of a wave ope
 
 ### Relation to the Cauchy–Riemann Operator
 
-On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_0 + \xi_1e_1+\xi_2e_2+\xi_3e_3$ satisfies $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}_{\mathrm{s}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
+On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_0 + \xi_1e_1+\xi_2e_2+\xi_3e_3$ satisfies $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_0$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}_{\mathrm{s}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
 
 ## Fueter-Regular Functions
 
@@ -70,12 +70,12 @@ with the divergence, gradient and curl taken for the indefinite form $N|_V$. Lef
 **Theorem.** The imaginary units of $\mathbb{H}_{\mathrm{s}}$ are the elements of the vector subspace
 
 $$
-\{ I \in V : I^2 = -1 \} = \{ I \in V : N(I) = 1 \} = \{ q_1 e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1 \},
+\{ I \in V : I^2 = -1 \} = \{ I \in V : \langle I\rangle_{\natural} = 1 \} = \{ q_1 e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1 \},
 $$
 
 a **two-sheeted hyperboloid** of dimension $2$ in $V$, with the two sheets distinguished by the sign of the coefficient $q_1$. Each imaginary unit spans a slice $\mathbb{C}_I \cong \mathbb{C}$, and two slices $\mathbb{C}_I$, $\mathbb{C}_J$ coincide when $I = \pm J$ and otherwise meet only in $\mathbb{R}$.
 
-**Proof.** $I \in V$ satisfies $I^2 = -N(I)$ (the vector part squares to minus its split-quaternion norm), so $I^2 = -1$ iff $N(I) = 1$, which is the displayed hyperboloid, two-sheeted because $q_1^2 = 1+q_2^2+q_3^2\geq1$; the slice intersection statement is linear algebra.
+**Proof.** $I \in V$ satisfies $I^2 = -\langle I\rangle_{\natural}$ (the vector part squares to minus its split-quaternion norm), so $I^2 = -1$ iff $\langle I\rangle_{\natural} = 1$, which is the displayed hyperboloid, two-sheeted because $q_1^2 = 1+q_2^2+q_3^2\geq1$; the slice intersection statement is linear algebra.
 
 This is the first departure from the quaternion theory, where the imaginary units form the two-sphere $S^2$. Here there is no compact imaginary sphere: the imaginary units are unbounded and split into two sheets, so an "imaginary direction" must be selected one root at a time, as in the biquaternion case but for a different reason.
 
@@ -95,35 +95,35 @@ This slice statement is exact and requires no modification for the split signatu
 
 ### Axial Coordinates and the Obstruction by the Zero Divisors
 
-For an element $\tilde q = q_0+\vec v$ with $N(\vec v) > 0$, the **axial coordinates** are
+For an element $\tilde q = q_0+\vec v$ with $\langle \vec v\rangle_{\natural} > 0$, the **axial coordinates** are
 
 $$
-\rho = \sqrt{N(\vec v)} > 0, \qquad \hat u = \vec v/\rho, \qquad \hat u^2 = -1,
+\rho = \sqrt{\langle \vec v\rangle_{\natural}} > 0, \qquad \vec u = \vec v/\rho, \qquad \vec u^2 = -1,
 $$
 
-so that $\hat u$ is an imaginary unit and $\tilde q$ lies on the slice $\mathbb{C}_{\hat u}$. On this region an **axially symmetric** function has the representation
+so that $\vec u$ is an imaginary unit and $\tilde q$ lies on the slice $\mathbb{C}_{\vec u}$. On this region an **axially symmetric** function has the representation
 
 $$
-F(\tilde q) = A(q_0,\rho) + \hat u\,B(q_0,\rho),
+F(\tilde q) = A(q_0,\rho) + \vec u\,B(q_0,\rho),
 $$
 
-with **axial coefficients** $A, B$ that depend on the direction only through $\hat u$. This is the exact analogue of the quaternion axial representation, and it is available precisely where $N(\vec v) > 0$.
+with **axial coefficients** $A, B$ that depend on the direction only through $\vec u$. This is the exact analogue of the quaternion axial representation, and it is available precisely where $\langle \vec v\rangle_{\natural} > 0$.
 
-**Theorem (the obstruction).** The axial representation is defined only on the timelike region $N(\vec v) > 0$. On the null cone $N(\vec v) = 0$ the axial direction is a zero divisor and no imaginary unit is defined; on the spacelike region $N(\vec v) < 0$ the normalised direction satisfies $\hat u^2 = +1$, a root of $+1$, so the axial coefficient system is hyperbolic rather than complex. The region is the disjoint union of the timelike region $N(\vec v)>0$, on which the axial complex structure exists, the null cone $\mathcal{N}$, on which it degenerates, and the spacelike region $N(\vec v)<0$, on which it is replaced by a split-complex structure.
+**Theorem (the obstruction).** The axial representation is defined only on the timelike region $\langle \vec v\rangle_{\natural} > 0$. On the null cone $\langle \vec v\rangle_{\natural} = 0$ the axial direction is a zero divisor and no imaginary unit is defined; on the spacelike region $\langle \vec v\rangle_{\natural} < 0$ the normalised direction satisfies $\vec u^2 = +1$, a root of $+1$, so the axial coefficient system is hyperbolic rather than complex. The region is the disjoint union of the timelike region $\langle \vec v\rangle_{\natural}>0$, on which the axial complex structure exists, the null cone $\mathcal{N}$, on which it degenerates, and the spacelike region $\langle \vec v\rangle_{\natural}<0$, on which it is replaced by a split-complex structure.
 
-**Proof.** $\hat u^2 = -N(\vec v)/\rho^2 = -\operatorname{sgn}N(\vec v)$, so $\hat u^2 = -1$ on the timelike region, $\hat u^2 = +1$ on the spacelike region, and $\hat u$ is undefined on the null cone.
+**Proof.** $\vec u^2 = -\langle \vec v\rangle_{\natural}/\rho^2 = -\operatorname{sgn}\langle \vec v\rangle_{\natural}$, so $\vec u^2 = -1$ on the timelike region, $\vec u^2 = +1$ on the spacelike region, and $\vec u$ is undefined on the null cone.
 
 Thus the axial and slice approach is available on the whole timelike region and on a slice-by-slice basis, but it cannot be extended across the null cone, exactly as in the indefinite biquaternion case; and here, unlike the biquaternion case, there is no definite half to fall back on.
 
 ### Why the Definite Fueter Construction Does Not Transfer
 
-The classical Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4\tilde f_0$, the Laplacian applied to the axial extension, and its proof uses the radial identity $\sum_{j,k}(\partial_{v_k}\hat u_j)e_ke_j = -2/\rho$ on the sphere of imaginary units. In the split signature the level sets of $N(\vec v)$ in the timelike region are **two-sheeted hyperboloids**, not spheres, and the corresponding identity acquires a vector part:
+The classical Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4f^{\mathrm{ax}}_0$, the Laplacian applied to the axial extension, and its proof uses the radial identity $\sum_{j,k}(\partial_{v_k}\vec u_j)e_ke_j = -2/\rho$ on the sphere of imaginary units. In the split signature the level sets of $\langle \vec v\rangle_{\natural}$ in the timelike region are **two-sheeted hyperboloids**, not spheres, and the corresponding identity acquires a vector part:
 
 $$
-\sum_{j,k}(\partial_{v_k}\hat u_j)\,e_k e_j = \frac{1}{\rho}\sum_k e_k^2 - \frac{1}{\rho^3}\sum_{j,k} g_{kk} v_j v_k\, e_k e_j, \qquad \sum_k e_k^2 = 1,
+\sum_{j,k}(\partial_{v_k}\vec u_j)\,e_k e_j = \frac{1}{\rho}\sum_k e_k^2 - \frac{1}{\rho^3}\sum_{j,k} g_{kk} v_j v_k\, e_k e_j, \qquad \sum_k e_k^2 = 1,
 $$
 
-and the second sum is not a scalar multiple of $\hat u$ but has the nonzero vector part $2v_1(-v_3e_2+v_2e_3)$ together with the Euclidean scalar part $-|\vec v|_E^2$. Hence the definite Fueter construction, with $\Box$ in place of $\Delta_4$, does **not** in general produce regular functions, and there is no direct radial/spherical version of Fueter's theorem in the split signature.
+and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vector part $2v_1(-v_3e_2+v_2e_3)$ together with the Euclidean scalar part $-|\vec v|_E^2$. Hence the definite Fueter construction, with $\Box$ in place of $\Delta_4$, does **not** in general produce regular functions, and there is no direct radial/spherical version of Fueter's theorem in the split signature.
 
 **Remark.** What remains is the slice construction of the previous subsection, which is exact and local to each slice, and the general Clifford-algebraic theory of monogenic functions on $\mathrm{Cl}_{2,2}$, which is signature-independent for the Fischer decomposition below. The axial radial construction is the part that fails, and its failure is measured by the vector part displayed above.
 
@@ -143,7 +143,7 @@ $$
 
 so every Fueter-regular function on a ball has a normally convergent expansion in monogenic homogeneous polynomials, the analogue of the Taylor series of complex analysis.
 
-**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $N$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split signature.
+**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $\langle\cdot\rangle_{\natural}$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split signature.
 
 ## Relation to the Quaternion and Biquaternion Fueter Theories
 
@@ -153,7 +153,7 @@ The split-quaternion theory is the case in which **every** direction is of that 
 
 ## Summary
 
-The Fueter operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate satisfy $\nabla\bar\nabla = \bar\nabla\nabla = \Box e_0$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$; the Fueter operator is the Cauchy–Riemann operator of $\mathrm{Cl}_{2,2}$, non-elliptic, with the null cone as its characteristic set. Fueter-regular functions are the solutions of $\nabla F = 0$, equivalently of the split Cauchy–Riemann–Fueter system, and every such function is $\Box$-harmonic. The imaginary units are the two-sheeted hyperboloid $\{N(I)=1\}$ in $V$, not a sphere; on any slice $\mathbb{C}_I$ the operator reduces to the classical Cauchy–Riemann operator $\partial_{q_0} + I\partial_\rho$, so holomorphic functions of the slice variable are regular. The axial representation $F = A + \hat uB$ is available exactly on the timelike region $N(\vec v)>0$, degenerates on the null cone, and is replaced by a hyperbolic structure on the spacelike region; and the radial Fueter construction does not transfer, because the level sets of $N(\vec v)$ are hyperboloids rather than spheres and the radial identity acquires the vector part $2v_1(-v_3e_2+v_2e_3)$. Right-coefficient series are slice-regular on $\|\tilde q\|_E < R$, the coordinate $\tilde q$ is slice-regular but not regular, and the Fischer decomposition $\mathcal{P}_k = \bigoplus_j \tilde q^j\mathcal{M}_{k-j}$ gives the monogenic Taylor expansion. The split-quaternion theory is the fully indefinite member of the family: the slice and Fischer parts survive, and the radial, spherical and Fueter–Sce parts do not.
+The Fueter operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate satisfy $\nabla\bar\nabla = \bar\nabla\nabla = \Box e_0$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$; the Fueter operator is the Cauchy–Riemann operator of $\mathrm{Cl}_{2,2}$, non-elliptic, with the null cone as its characteristic set. Fueter-regular functions are the solutions of $\nabla F = 0$, equivalently of the split Cauchy–Riemann–Fueter system, and every such function is $\Box$-harmonic. The imaginary units are the two-sheeted hyperboloid $\{\langle I\rangle_{\natural}=1\}$ in $V$, not a sphere; on any slice $\mathbb{C}_I$ the operator reduces to the classical Cauchy–Riemann operator $\partial_{q_0} + I\partial_\rho$, so holomorphic functions of the slice variable are regular. The axial representation $F = A + \vec uB$ is available exactly on the timelike region $\langle \vec v\rangle_{\natural}>0$, degenerates on the null cone, and is replaced by a hyperbolic structure on the spacelike region; and the radial Fueter construction does not transfer, because the level sets of $\langle \vec v\rangle_{\natural}$ are hyperboloids rather than spheres and the radial identity acquires the vector part $2v_1(-v_3e_2+v_2e_3)$. Right-coefficient series are slice-regular on $\|\tilde q\|_E < R$, the coordinate $\tilde q$ is slice-regular but not regular, and the Fischer decomposition $\mathcal{P}_k = \bigoplus_j \tilde q^j\mathcal{M}_{k-j}$ gives the monogenic Taylor expansion. The split-quaternion theory is the fully indefinite member of the family: the slice and Fischer parts survive, and the radial, spherical and Fueter–Sce parts do not.
 
 ## Summary of Notation
 
@@ -164,12 +164,12 @@ The Fueter operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate sati
 | $\vec D = \sum_k e_k\partial_k$ | the vector-derivative part | this article |
 | $\Box = \partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ | the ultrahyperbolic operator, signature $(2,2)$ | this article |
 | $\nabla F = 0$ | left-Fueter-regular (monogenic); $F\nabla=0$ right-regular | this article |
-| $I$, $\{N(I)=1\}$ | an imaginary unit, and the two-sheeted hyperboloid of imaginary units | *Split-Quaternion Roots of Minus One* |
+| $I$, $\{\langle I\rangle_{\natural}=1\}$ | an imaginary unit, and the two-sheeted hyperboloid of imaginary units | *Split-Quaternion Roots of Minus One* |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | a slice, a copy of the complex plane | this article |
-| $\rho = \sqrt{N(\vec v)}$, $\hat u = \vec v/\rho$ | axial radius and direction, on the timelike region $N(\vec v)>0$ | this article |
-| $A, B$ | axial coefficients, $F = A(q_0,\rho) + \hat uB(q_0,\rho)$ | this article |
+| $\rho = \sqrt{\langle \vec v\rangle_{\natural}}$, $\vec u = \vec v/\rho$ | axial radius and direction, on the timelike region $\langle \vec v\rangle_{\natural}>0$ | this article |
+| $A, B$ | axial coefficients, $F = A(q_0,\rho) + \vec uB(q_0,\rho)$ | this article |
 | $\mathcal{P}_k, \mathcal{M}_k$ | homogeneous and monogenic homogeneous polynomials | this article |
-| $N(\tilde q)=q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural}=q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 
 ## Further Reading

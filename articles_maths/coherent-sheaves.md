@@ -64,7 +64,7 @@ $$
 U\mapsto H^i(f^{-1}U,\mathcal{F}), \qquad R^if_*\mathcal{F} = \mathcal{O}_Y\text{-module associated with } \bigl(U\mapsto H^i(f^{-1}U,\mathcal{F})\bigr),
 $$
 
-and they are quasi-coherent when $\mathcal{F}$ is, for $f$ quasicompact and quasiseparated; the Leray spectral sequence $E_2^{p,q} = H^p(Y,R^qf_*\mathcal{F})\Rightarrow H^{p+q}(X,\mathcal{F})$ is that of *Derived Functors and Sheaf Cohomology*.
+and they are quasi-coherent when $\mathcal{F}$ is, for $f$ quasicompact and quasiseparated; the Leray spectral sequence $E_2^{n,m} = H^p(Y,R^qf_*\mathcal{F})\Rightarrow H^{p+q}(X,\mathcal{F})$ is that of *Derived Functors and Sheaf Cohomology*.
 
 **Theorem (the Čech computation on a separated scheme).** Let $X$ be a separated scheme, $\mathcal{U} = \{U_i\}$ an affine open cover and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then the Čech complex
 
@@ -106,7 +106,7 @@ both of which exist because the categories have enough injectives, as in Part I'
 **Theorem (the local-to-global spectral sequence).** For $\mathcal{O}_X$-modules $\mathcal{F},\mathcal{G}$ with $\mathcal{F}$ of finite type over a locally Noetherian $X$ there is a convergent spectral sequence
 
 $$
-E_2^{p,q} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G}),
+E_2^{n,m} = H^p\bigl(X,\mathcal{E}xt^q_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})\bigr)\Longrightarrow\operatorname{Ext}^{p+q}_{\mathcal{O}_X}(\mathcal{F},\mathcal{G}),
 $$
 
 natural in both variables. In particular there is an exact sequence

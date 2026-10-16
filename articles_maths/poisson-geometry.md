@@ -110,7 +110,7 @@ obtained by substituting $\{x^a, x^b\} = \pi^{ab}$ and using the Leibniz rule in
 **Example (the affine structure on the plane).** On $\mathbb{R}^2$ with coordinates $x, y$ put
 
 $$
-\{f, g\} = x\,(f_x g_y - f_y g_x), \qquad \pi = x\,\partial_x\wedge\partial_y .
+\{f, g\} = x\,(\partial_x f\,\partial_y g - \partial_y f\,\partial_x g), \qquad \pi = x\,\partial_x\wedge\partial_y .
 $$
 
 The Jacobi identity holds, and for a structural reason: on a surface every trivector field vanishes, since $\Lambda^3TM = 0$ in dimension two, so $[\pi,\pi]=0$ for every bivector and every bivector on a surface is Poisson. Here the bracket is also the Lie–Poisson structure of the two-dimensional nonabelian Lie algebra, whose Jacobi identity is the Jacobi identity of that Lie algebra: on the linear coordinates $\{x,y\} = x$. The rank is two away from the line $x = 0$ and zero on it, the symplectic leaves are the two open half-planes $x>0$, $x<0$ and the individual points of the line $x=0$, and there is no nonconstant Casimir: a Casimir would be constant on each leaf, hence locally constant on the dense open set $x\neq0$, hence locally constant on $M$. This is the simplest example of a Poisson structure that is symplectic off a singular locus.

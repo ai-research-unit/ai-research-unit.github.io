@@ -20,7 +20,7 @@ Subspace $\mathbb{M}_+$ as the Informational Sector*.
 The answer is the mirror of the material one. The scalar part
 
 $$
-B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q) = p_0q_0 + \vec p'\!\cdot\!\vec q'
+\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q) = p_0q_0 + \vec p'\!\cdot\!\vec q'
 $$
 
 is **positive definite** on the sector, of signature $(4,0)$: in the informational coordinates it is the
@@ -36,13 +36,11 @@ space**, the set of the pure states.
 **Placement and boundaries.** This article is the informational-sector companion of *The Bilinear Product on the Biquaternion Space*, in the biquaternion-algebra group, and the second of the two sector companions, the first being *The Bilinear Product on the Material Sector*. Here the same product is read on $\mathbb{M}_+$ alone: the sector sign on the
 informational side, the sector structure of an informational composite, the square as a map into the
 sector, the idempotents and the purity boundary, and the units of the sector. The symmetrised product and
-the Jordan identity are *The Symmetrised Material Composition and the Jordan Identity* and *Observables
-as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*; the invertibility
-criterion, the group of units and the cone are the mathematics of *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and the level data of *Norm and Invertibility in the General Quaternionic Algebra*; the idempotents and the Peirce decomposition are *Idempotents of the General Plain
-Algebra* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the operators and the
+the Jordan identity are *The Specificities of the Symmetric Plain Algebra* and *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; the invertibility
+criterion, the group of units and the cone are the mathematics of *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and the level data of *Norm and Invertibility in the General Quaternionic Algebra*; the idempotents and the Peirce decomposition are *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the operators and the
 sandwich are *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the exchange
 of the two sectors is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time* and the
-maps between them *Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between
+maps between them *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between
 the Sectors*. None of those is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
@@ -55,8 +53,8 @@ $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$, with the real basis $\{e_0,i
 material sector is the anti-Hermitian half, $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, with the
 real basis $\{ie_0,e_1,e_2,e_3\}$, and the two are exchanged by the central $i$, $i\mathbb{M}_+=\mathbb{M}_-$.
 The identity is $e_0\in\mathbb{M}_+$, the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, and the zero-divisor cone
-of the general plain bilinear product is $\mathcal{C}=\{N(\tilde Q)=0\}$ with
-$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
+of the general plain bilinear product is $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ with
+$\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 
 ## The Informational Sector and Its Coordinates
 
@@ -77,9 +75,9 @@ Two forms carry the geometry of the sector, and they are the restrictions of the
 row:
 
 $$
-B(\tilde P,\tilde Q)=p_0q_0+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
+\langle\tilde P,\tilde Q\rangle=p_0q_0+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
 \qquad
-N(\tilde P,\tilde Q)=p_0q_0-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
+\langle\tilde P,\tilde Q\rangle_{\natural}=p_0q_0-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
 $$
 
 The first is the **sector sign** of this article, the scalar part of the general plain bilinear product, definite and
@@ -87,13 +85,13 @@ without cone; the second is the **interval**, the general quaternionic bilinear 
 zero set is the zero-divisor cone. The two differ by twice the coefficient square of the vector part,
 
 $$
-B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q) - 2\,\vec Q\!\cdot\!\vec Q,
+\langle\tilde P,\tilde Q\rangle_{\natural} - 2\,\vec Q\!\cdot\!\vec Q,
 \qquad \vec Q\!\cdot\!\vec Q = Q_1^{2}+Q_2^{2}+Q_3^{2},
 $$
 
 which on the sector is $-2|\vec q'|^{2}$ and therefore of one sign; the two forms agree only on the
-scalar line. Keeping $B$ and $N$ apart is the whole of the article: $B$ carries the sign of the sector
-and $N$ carries the metric, and on $\mathbb{M}_+$ the sign is positive and the metric is Lorentzian.
+scalar line. Keeping $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ apart is the whole of the article: $\langle\cdot,\cdot\rangle$ carries the sign of the sector
+and $\langle\cdot,\cdot\rangle_{\natural}$ carries the metric, and on $\mathbb{M}_+$ the sign is positive and the metric is Lorentzian.
 
 ## The Product of Two Informational Operations
 
@@ -133,43 +131,42 @@ falling outside the sector).
 the half that leaves**: the commutator is material and the anticommutator informational, so
 **the commutative part of a composite of two observational operations is an informational operation and
 its order dependence is a material one**. The sector is a **special Jordan algebra** under the
-symmetrised product, which is the algebraic content of *Observables as a Jordan Algebra: the Symmetric
-Plain Product and the Classical Composition*, and the commutator that leaves the sector is the
+symmetrised product, which is the algebraic content of *Square Roots of One and the Idempotents: the Hermitian Observables and the States*, and the commutator that leaves the sector is the
 generator of the internal action, which is *Observables, Gauge Generators and the Chirality of the
 Internal Action*.
 
 ## The Scalar Part Is the Sector Sign on the Informational Side
 
-The form $B$ is positive on an informational **element** and negative on a material one, that is at the
+The form $\langle\cdot,\cdot\rangle$ is positive on an informational **element** and negative on a material one, that is at the
 two equal arguments, and that is the fact this article is built on. On the informational basis
-$\{e_0,ie_1,ie_2,ie_3\}$ the diagonal entries are $B(e_0,e_0)=+1$ and $B(ie_k,ie_k)=+1$ with all cross
+$\{e_0,ie_1,ie_2,ie_3\}$ the diagonal entries are $\langle e_0,e_0\rangle=+1$ and $\langle ie_k,ie_k\rangle=+1$ with all cross
 terms zero, so
 
 $$
-B\big|_{\mathbb{M}_+} = +\mathrm{I}_4 \ \text{ of signature }(4,0),
+\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+} = +\mathrm{I}_4 \ \text{ of signature }(4,0),
 \qquad
-B\big|_{\mathbb{M}_-} = -\mathrm{I}_4 \ \text{ of signature }(0,4).
+\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-} = -\mathrm{I}_4 \ \text{ of signature }(0,4).
 $$
 
-The pair of signs is the **sector sign**: $B$ says which sector an element belongs to, and it says it by
-the sign of a number and nothing else. On the informational coordinates the same statement is that $B$ is
+The pair of signs is the **sector sign**: $\langle\cdot,\cdot\rangle$ says which sector an element belongs to, and it says it by
+the sign of a number and nothing else. On the informational coordinates the same statement is that $\langle\cdot,\cdot\rangle$ is
 the **Euclidean inner product** of the informational coordinate, whereas the interval is Lorentzian in the
 same coordinate. The informational sector therefore carries **two metrics of opposite type on the same
 four directions**: a Riemannian one, the sector sign, and a Lorentzian one, the interval. The first is
 what the general plain bilinear product measures; the second is the metric, and it belongs to the companion
 quaternionic block and to *Norm and Invertibility in the General Quaternionic Algebra*, and it is cited here, never re-proved.
 
-**Remark (verified).** On the sector bases $B$ restricts to $\pm\mathrm{I}_4$ with all cross terms $0$;
-$B(\tilde Q,\tilde Q)$ is real and strictly positive on $100$ random $\mathbb{M}_+$ elements and real and
+**Remark (verified).** On the sector bases $\langle\cdot,\cdot\rangle$ restricts to $\pm\mathrm{I}_4$ with all cross terms $0$;
+$\langle\tilde Q,\tilde Q\rangle$ is real and strictly positive on $100$ random $\mathbb{M}_+$ elements and real and
 strictly negative on $100$ random $\mathbb{M}_-$ elements.
 
-**Proposed interpretation, labelled as such.** Read on the informational coordinate, $B$ is the
+**Proposed interpretation, labelled as such.** Read on the informational coordinate, $\langle\cdot,\cdot\rangle$ is the
 **length-squared of an informational configuration**: a positive-definite quantity, additive over
 orthogonal directions, and the natural norm of the sector's own space. The interval on the same
 directions is indefinite, so the sector carries a definite geometry and an indefinite one at once, and
 which one a process sees depends on the product it uses. The positive definite one is the geometry of the
 probability and the indefinite one the geometry of the metric; the two are the same four directions read
-twice, and the difference between them is the coefficient square of the vector part, $B-N=2|\vec q'|^{2}$.
+twice, and the difference between them is the coefficient square of the vector part, $\langle\tilde Q,\tilde Q\rangle-\langle\tilde Q,\tilde Q\rangle_{\natural}=2|\vec q'|^{2}$.
 
 ## The Square: the Sector that Receives
 
@@ -189,11 +186,11 @@ absent. A square can therefore never witness the failure of closure, and the inf
 **closed under squaring** while the material sector is not: the square is a map
 $\mathbb{M}_+\to\mathbb{M}_+$ that extends to $\mathbb{M}_-\to\mathbb{M}_+$ and has no value in
 $\mathbb{M}_-$ on a nonzero element of either sector. The scalar part of the square is the sector sign,
-$\mathrm{Sc}(\tilde Q^{2})=B(\tilde Q,\tilde Q)$, real and of the sign of the sector: positive on
+$\mathrm{Sc}(\tilde Q^{2})=\langle\tilde Q,\tilde Q\rangle$, real and of the sign of the sector: positive on
 $\mathbb{M}_+$, negative on $\mathbb{M}_-$.
 
 **Remark (verified).** For $100$ random elements of each sector the square is Hermitian; the scalar part
-of the square coincides with $B(\tilde Q,\tilde Q)$ to machine precision and is of the sector's sign on
+of the square coincides with $\langle\tilde Q,\tilde Q\rangle$ to machine precision and is of the sector's sign on
 all of them, positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
 
 **Proposed interpretation, labelled as such.** The square is the **passage from displacement to
@@ -211,23 +208,22 @@ idempotent equation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tild
 whence $\tilde\Pi=0$. Every nonzero projection is therefore Hermitian, and the family is
 
 $$
-\tilde\Pi_1(\hat u) = \tfrac12\bigl(e_0+i\hat u\bigr),
+\tilde\Pi_1(\vec u) = \tfrac12\bigl(e_0+i\vec u\bigr),
 \qquad
-\hat u\in\mathbb{R}^{3},\quad \lvert\hat u\rvert=1,
+\vec u\in\mathbb{R}^{3},\quad \lvert\vec u\rvert=1,
 $$
 
 the **pure states** of the corpus, indexed by the unit sphere and forming the Bloch sphere. The material
 sector owns no projection, so the reference state of a material field comes from here — a **state** and
 not a material background, which is the companion article's reading and is not repeated. The family is the
-corpus's idempotent set (*Idempotents in the Biquaternioid Structures over $\mathbb{C}$*), and its
+corpus's idempotent set (*Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$*), and its
 parametrisation is the corpus's bijection between the roots of $-e_0$ and the states: a pure state is a pure
-root of $+e_0$, built from a root of $-e_0$ by the central $i$ (*Square Roots of Minus One, Zero and Plus
-One in the Biquaternioid Structures over $\mathbb{C}$*).
+root of $+e_0$, built from a root of $-e_0$ by the central $i$ (*Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$*).
 
 The idempotent sits **on the zero-divisor cone**. Its interval vanishes,
 
 $$
-N(\tilde\Pi,\tilde\Pi) = \tfrac14\bigl(1-\lvert\hat u\rvert^{2}\bigr) = 0,
+\langle\tilde\Pi,\tilde\Pi\rangle_{\natural} = \tfrac14\bigl(1-\lvert\vec u\rvert^{2}\bigr) = 0,
 $$
 
 so a pure state is a zero divisor of the general plain bilinear product: it is not invertible, it is annihilated by a
@@ -239,7 +235,7 @@ and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*). Inside th
 faces: a cone element with $q_0\neq0$ is a multiple of a pure state,
 $\tilde Q=2q_0\tilde\Pi_1(\vec q'/q_0)$, whereas the **nilpotents**, the pure isotropic elements of real
 dimension four, meet $\mathbb{M}_+$ at the origin alone, the square of an informational element having
-strictly positive scalar part (*Nilpotents in the Biquaternioid Structures over $\mathbb{C}$*). For
+strictly positive scalar part (*Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$*). For
 the general element of the unit-trace slice,
 
 $$
@@ -249,21 +245,21 @@ $$
 the two forms read the Bloch vector as
 
 $$
-N(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\langle\tilde\rho,\tilde\rho\rangle_{\natural} = \tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 \qquad
-B(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
+\langle\tilde\rho,\tilde\rho\rangle = \tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 \qquad
 \mathrm{Tr}(\tilde\rho^{2}) = \tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 $$
 
 so the **cone of the norm is the purity boundary of the Bloch ball**: a state is pure exactly when
-$\lvert\vec r\rvert=1$, exactly when $N=0$, exactly when it is a zero divisor; a mixed state is
-interior, $N>0$, and is a unit. The purity is carried by the difference of the two forms,
-$B-N=\lvert\vec r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
-$B-N=\frac12$, and maximally mixed when they coincide, $B-N=0$.
+$\lvert\vec r\rvert=1$, exactly when $\langle\tilde Q\rangle_{\natural}=0$, exactly when it is a zero divisor; a mixed state is
+interior, $\langle\tilde Q\rangle_{\natural}>0$, and is a unit. The purity is carried by the difference of the two forms,
+$\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\lvert\vec r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
+$\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac12$, and maximally mixed when they coincide, $\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=0$.
 
-**Remark (verified).** $N=\frac14(1-\lvert\vec r\rvert^{2})$ and $B=\frac14(1+\lvert\vec r\rvert^{2})$
-on $100$ random unit-trace elements; the Hermitian idempotents satisfy $N=0$ and $B=\frac12$ to machine
+**Remark (verified).** $\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ and $\langle\tilde\rho,\tilde\rho\rangle=\frac14(1+\lvert\vec r\rvert^{2})$
+on $100$ random unit-trace elements; the Hermitian idempotents satisfy $\langle\tilde Q\rangle_{\natural}=0$ and $\langle\tilde\Pi,\tilde\Pi\rangle=\frac12$ to machine
 precision, and $\mathrm{Tr}(\tilde\rho^{2})$ equals $\frac12(1+\lvert\vec r\rvert^{2})$.
 
 **Proposed interpretation, labelled as such.** The same algebraic cone has **two physical roles on the
@@ -277,12 +273,12 @@ norm, both are non-invertible, and neither propagates a proper time of its own.
 ## The Units and the Cone on the Informational Sector
 
 The invertibility of the general plain bilinear product is decided by the norm and not by the sector sign: an element
-is a **unit** exactly when $N(\tilde Q)\neq0$, its inverse is $\tilde Q^{\natural}/N(\tilde Q)$, and the
+is a **unit** exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, its inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and the
 zero-divisor cone is the complement of the group of units. On the informational sector the criterion is
 the interval in the informational coordinate,
 
 $$
-N(\tilde Q)=q_0^{2}-\lvert\vec q'\rvert^{2}\neq 0,
+\langle\tilde Q\rangle_{\natural}=q_0^{2}-\lvert\vec q'\rvert^{2}\neq 0,
 $$
 
 so the units of the sector are the off-cone informational elements, the two open families
@@ -309,8 +305,8 @@ $$
 The two scalar forms and the norm give
 
 $$
-B(\tilde P,\tilde P)=+10,\quad B(\tilde Q,\tilde Q)=+2,\quad
-B(\tilde P,\tilde Q)=+3,\quad N(\tilde P,\tilde P)=+8,\quad N(\tilde Q,\tilde Q)=0,
+\langle\tilde P,\tilde P\rangle=+10,\quad \langle\tilde Q,\tilde Q\rangle=+2,\quad
+\langle\tilde P,\tilde Q\rangle=+3,\quad \langle\tilde P,\tilde P\rangle_{\natural}=+8,\quad \langle\tilde Q,\tilde Q\rangle_{\natural}=0,
 $$
 
 so $\tilde P$ is a unit of the sector and $\tilde Q$ is a zero divisor on the cone. The squares are
@@ -330,7 +326,7 @@ $$
 \tilde P\tilde Q=3e_0+ie_1+3ie_2-e_3,
 $$
 
-whose scalar part is $B(\tilde P,\tilde Q)=+3$ and whose vector part carries both an imaginary and a real
+whose scalar part is $\langle\tilde P,\tilde Q\rangle=+3$ and whose vector part carries both an imaginary and a real
 piece, the real piece $-e_3$ being the order dependence. The pair does not commute, and the split of the
 composite displays the rule:
 
@@ -353,20 +349,18 @@ of the composite doubled, the algebraic form of an expectation value.
 The article states the restriction to the informational sector of the product and its scalar form, and the
 boundary of what it must declare is the boundary of the sector.
 
-- **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
+- **$\langle\cdot,\cdot\rangle$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
   causal structure. The metric is the interval, of signature $(1,3)$ on $\mathbb{M}_+$.
-- **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-  level data of the general quaternionic bilinear form, owned by *The Interval as the Square and the Charge of the Material Composition*;
+- **$\langle\cdot,\cdot\rangle$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
+  level data of the general quaternionic bilinear form, owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*;
   the worked case shows the two forms giving different numbers on the same element.
 - **The informational sector is not closed under the product.** A composite of two informational
   elements is informational exactly when the two commute and material exactly when they anticommute; the
-  sector is not an algebra, and the anticommutator is the Jordan product of *The Symmetrised Material
-  Composition and the Jordan Identity*, not the product itself.
+  sector is not an algebra, and the anticommutator is the Jordan product of *The Bilinear Product on the Material Sector*, not the product itself.
 - **The square is not the product.** A square of an element of either sector is informational, so the
   closure of the sector under squaring is not a closure under composition and must not be read as one.
 - **The reverse map is not read here.** The square of an element of either sector lands in $\mathbb{M}_+$;
-  the roots of a given element are classified by *Square Roots of a General Element in the Algebraic Structures of
-  Biquaternions over $\mathbb{C}$* and are not read here.
+  the roots of a given element are classified by *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and are not read here.
 - **The cone is not a mass shell here.** The same cone that carries the mass shell on $\mathbb{M}_-$ is
   the purity boundary of the state space on $\mathbb{M}_+$, and the identification of a state with a
   lightlike direction is a reading of the norm and not an identification of the two sectors.
@@ -379,18 +373,18 @@ neither is re-derived here.
 
 ## The Ledger
 
-**Proved.** The informational sector is fixed by the dagger, hence $B$ restricts to $+\mathrm{I}_4$ of
+**Proved.** The informational sector is fixed by the dagger, hence $\langle\cdot,\cdot\rangle$ restricts to $+\mathrm{I}_4$ of
 signature $(4,0)$ on $\mathbb{M}_+$ and to $-\mathrm{I}_4$ of signature $(0,4)$ on $\mathbb{M}_-$; the
 product of two informational elements splits into an informational anticommutator and a material
 commutator and is informational exactly when the two commute; the square of an element of either sector
 is informational, with scalar part equal to the sector sign; the sector contains the nonzero idempotents
-of the algebra and they form the unit sphere $\tilde\Pi_1(\hat u)$, all of them on the
+of the algebra and they form the unit sphere $\tilde\Pi_1(\vec u)$, all of them on the
 zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\vec r\rvert^{2})$ and the
 sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so the cone is the purity boundary and the mixed
 states are the interior units; the inverse of an informational unit is informational, and the norm
 restricts to a homomorphism $\mathbb{B}^{\times}\to\mathbb{C}^{\times}$.
 
-**Interpretations.** That $B$ carries the **sector sign**, positive on the informational side; that the
+**Interpretations.** That $\langle\cdot,\cdot\rangle$ carries the **sector sign**, positive on the informational side; that the
 informational sector carries a **Riemannian** geometry (the sector sign) and a **Lorentzian** one (the
 interval) on the same directions; that the general plain bilinear product is the **composition of informational
 operations** and is closed on the commutative pairs alone; that the order-dependent half of a composite
@@ -421,10 +415,10 @@ the Sector Exchange as Relational Time*), and the product is the one operation t
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
 $\tilde Q=(ct')e_0+i\vec x'$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
 full theory on the whole algebra is *The Bilinear Product on the Biquaternion Space*. Its scalar part
-$B=p_0q_0+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
+$\langle\tilde P,\tilde Q\rangle=p_0q_0+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
 positive definite on $\mathbb{M}_+$ with signature $(4,0)$ and negative definite on $\mathbb{M}_-$ with
-signature $(0,4)$: opposite definite signs on the two sectors, so $B$ carries the **sector sign**. Being
-definite, $B$ has no cone and cannot be the metric; the metric is the interval, the general quaternionic
+signature $(0,4)$: opposite definite signs on the two sectors, so $\langle\cdot,\cdot\rangle$ carries the **sector sign**. Being
+definite, $\langle\cdot,\cdot\rangle$ has no cone and cannot be the metric; the metric is the interval, the general quaternionic
 bilinear form, of signature $(1,3)$ on the informational sector, and the two differ by twice the
 coefficient square of the vector part. The composition of two informational operations is informational
 exactly when the two commute, its material part being the commutator and its order-independent part the
@@ -435,7 +429,7 @@ the zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert
 the sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so on this side of the algebra the cone is the
 **purity boundary of the state space**: pure states are the zero divisors, mixed states the interior
 units, and the purity is the difference of the two metrics. The reversibility of the general plain bilinear product is
-carried by the norm $N$ and not by $B$. The distinctions are labelled throughout: what is proved is the
+carried by the norm $\langle\tilde Q\rangle_{\natural}$ and not by $\langle\cdot,\cdot\rangle$. The distinctions are labelled throughout: what is proved is the
 algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 
 ## Summary of Notation
@@ -450,17 +444,17 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
 | $\tilde Q=q_0e_0+i\vec q'=(ct')e_0+i\vec x'$ | An informational element; real time, imaginary space |
 | $\tilde P\tilde Q$ | General plain bilinear product ($\mathrm{GPA}$); associative, unital, non-commutative |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=p_0q_0+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
-| $B-N=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
+| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=p_0q_0+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
+| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
+| $\langle\tilde Q,\tilde Q\rangle-\langle\tilde Q,\tilde Q\rangle_{\natural}=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde Q^{2}\in\mathbb{M}_+$ | The square is informational for an element of either sector |
-| $\tilde\Pi_1(\hat u)=\tfrac12(e_0+i\hat u)$ | The nonzero idempotents; the Bloch sphere; on the cone |
+| $\tilde\Pi_1(\vec u)=\tfrac12(e_0+i\vec u)$ | The nonzero idempotents; the Bloch sphere; on the cone |
 | $\tilde\rho=\tfrac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
-| $N(\tilde\rho,\tilde\rho)=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
-| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units; zero-divisor cone |
+| $\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
+| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | Group of units; zero-divisor cone |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace; $\mathrm{Tr}(\tilde\rho\tilde Q)$ an expectation value |
-| $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
+| $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading
 
@@ -472,19 +466,18 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
   2000), for the state space, the Bloch ball and the purity of a state.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the role of
   the indefinite metric and its separation from the positive probability form.
-- Companion article *The Bilinear Product on the Biquaternion Space*, for the product and the form $B$ on
+- Companion article *The Bilinear Product on the Biquaternion Space*, for the product and the form $\langle\cdot,\cdot\rangle$ on
   the whole algebra and the restriction table over the remarkable subspaces.
 - Companion article *The Bilinear Product on the Material Sector*, for the mirror reading on
   $\mathbb{M}_-$.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sector,
   its coordinate dictionary and its operator identification.
-- Companion article *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical
-  Composition*, for the symmetrised product and the closure of the observables.
+- Companion article *Square Roots of One and the Idempotents: the Hermitian Observables and the States*, for the symmetrised product and the closure of the observables.
 - Mathematics article *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*
   (`articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.md`),
   for the group of units, the multiplicativity of the norm and the cone as the boundary of invertibility.
-- Mathematics article *Idempotents of the General Plain Algebra*
-  (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the classification of the
+- Mathematics article *Square Roots of One and the Idempotents of the Biquaternion Algebra*
+  (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the classification of the
   idempotents and the projections.
 - Companion article *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$*, for the cone
   as the zero-divisor set of the plain product.

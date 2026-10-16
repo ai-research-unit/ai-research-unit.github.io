@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In three or more spatial dimensions the exchange of two identical particles is described by the symmetric group: exchanging them twice returns the wavefunction to itself, and the only possibilities are the two one-dimensional representations, bosons and fermions. In two spatial dimensions this conclusion fails, because the worldlines of two particles can wind around one another without colliding, and the topology of the configuration space is that of the **braid group** rather than the symmetric group. The braid group admits one-dimensional representations labelled by a continuous angle, and particles whose exchange produces a phase $e^{i\theta}$ for arbitrary $\theta$ are **anyons**. This article develops the anyon and the braid statistics in the biquaternion framework, the last case of the higher-spin subcategory: the one that lies outside the integer-or-half-integer classification that the preceding articles used.
+In three or more spatial dimensions the exchange of two identical particles is described by the symmetric group: exchanging them twice returns the wavefunction to itself, and the only possibilities are the two one-dimensional representations, bosons and fermions. In two spatial dimensions this conclusion fails, because the worldlines of two particles can wind around one another without colliding, and the topology of the configuration space is that of the **braid group** rather than the symmetric group. The braid group admits one-dimensional representations labelled by a continuous angle, and particles whose exchange produces a phase $\exp(i\theta)$ for arbitrary $\theta$ are **anyons**. This article develops the anyon and the braid statistics in the biquaternion framework, the last case of the higher-spin subcategory: the one that lies outside the integer-or-half-integer classification that the preceding articles used.
 
 The framework's natural entry is the one supplied by the Wilson-loop construction of this series. A braiding phase is a **holonomy**: the phase acquired when one particle's worldline is carried around another's is the trace of the holonomy of a connection along a closed curve, and in three dimensions those curves can link, so that the holonomy couples the two worldlines through the topological invariant that counts the linking. The anyon is the case in which the connection whose holonomy is taken is not the electromagnetic connection but a topological one — a Chern–Simons connection — and the framework's interpretation of the Wilson loop as the scalar part of a holonomy of a material connection over an informational realization applies directly. What is new in $2+1$ dimensions is that the group element that the holonomy produces need not lie in the centre and need not have finite order: it can be any phase, and in the non-abelian case any unitary matrix.
 
@@ -11,7 +11,7 @@ The article is organized as follows. The braid group and its difference from the
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian connection and its representation structure.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the four-dimensional theorem whose two cases the anyon interpolates.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $e^{i\theta}$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
 
 ## The Braid Group and the Failure of the Permutation Group
 
@@ -35,7 +35,7 @@ so that the braid group is larger than the permutation group and its representat
 
 ### Representations: Abelian and Non-Abelian Anyons
 
-The one-dimensional unitary representations of $B_n$ are labelled by a single angle: $\sigma_i\mapsto e^{i\theta}$ for any real $\theta$, since the braid relations involve only products of the generators and any scalar commutes. The three familiar cases are $\theta=0$ (bosons), $\theta=\pi$ (fermions), and any other $\theta$ (anyons). The higher-dimensional unitary representations give **non-abelian anyons**: the exchange is a unitary matrix rather than a phase, the matrices do not commute, and the state of a collection of such particles is a vector in a representation space rather than a single amplitude.
+The one-dimensional unitary representations of $B_n$ are labelled by a single angle: $\sigma_i\mapsto \exp(i\theta)$ for any real $\theta$, since the braid relations involve only products of the generators and any scalar commutes. The three familiar cases are $\theta=0$ (bosons), $\theta=\pi$ (fermions), and any other $\theta$ (anyons). The higher-dimensional unitary representations give **non-abelian anyons**: the exchange is a unitary matrix rather than a phase, the matrices do not commute, and the state of a collection of such particles is a vector in a representation space rather than a single amplitude.
 
 The three statements about the representations were verified. The permutation matrices of $S_3$ — the transpositions $(12)$ and $(23)$ — satisfy the braid relation $\sigma_1\sigma_2\sigma_1=\sigma_2\sigma_1\sigma_2$ and also $\sigma_i^2=I$, confirming that the symmetric group is the quotient in which the generators square to the identity. The reduced Burau representation of $B_3$, of dimension two,
 
@@ -45,7 +45,7 @@ $$
 \sigma_2\mapsto\begin{pmatrix}1&0\\ t&-t\end{pmatrix} ,
 $$
 
-satisfies the braid relation for general $t$ — verified at a real and at a complex value of $t$ — but not $\sigma_i^2=I$ unless $t$ takes special values, so that it is a genuine representation of the braid group and not of the symmetric group. And the one-dimensional representation $\sigma_i\mapsto e^{i\theta}$ satisfies the braid relation identically for every $\theta$, which is the algebraic statement that the statistics angle is a free parameter in $2+1$ dimensions.
+satisfies the braid relation for general $t$ — verified at a real and at a complex value of $t$ — but not $\sigma_i^2=I$ unless $t$ takes special values, so that it is a genuine representation of the braid group and not of the symmetric group. And the one-dimensional representation $\sigma_i\mapsto \exp(i\theta)$ satisfies the braid relation identically for every $\theta$, which is the algebraic statement that the statistics angle is a free parameter in $2+1$ dimensions.
 
 ### The Abelianization and the Winding Number
 
@@ -55,7 +55,7 @@ $$
 B_n^{\mathrm{ab}} \cong \mathbb{Z} ,
 $$
 
-with the image of every generator $\sigma_i$ being the same generator of $\mathbb{Z}$. A one-dimensional unitary representation is a homomorphism into an abelian group, hence factors through the abelianization, hence is determined by the image of the single generator, hence is $\sigma_i\mapsto e^{i\theta}$ for some $\theta$: **the abelian anyon's phase is the coordinate on the dual of $\mathbb{Z}$**, that is, on the circle $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$. The integer that labels the abelianization is the total winding of the braid — the number of times the strands wrap, counted with sign — and the phase is its exponential. A non-abelian representation does not factor through the abelianization; it uses the full braid group, and its dimension is the dimension of the representation space. The distinction is therefore not a technicality but the algebraic content of the abelian/non-abelian division: one-dimensional representations see only the winding, and higher-dimensional ones see the braid.
+with the image of every generator $\sigma_i$ being the same generator of $\mathbb{Z}$. A one-dimensional unitary representation is a homomorphism into an abelian group, hence factors through the abelianization, hence is determined by the image of the single generator, hence is $\sigma_i\mapsto \exp(i\theta)$ for some $\theta$: **the abelian anyon's phase is the coordinate on the dual of $\mathbb{Z}$**, that is, on the circle $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$. The integer that labels the abelianization is the total winding of the braid — the number of times the strands wrap, counted with sign — and the phase is its exponential. A non-abelian representation does not factor through the abelianization; it uses the full braid group, and its dimension is the dimension of the representation space. The distinction is therefore not a technicality but the algebraic content of the abelian/non-abelian division: one-dimensional representations see only the winding, and higher-dimensional ones see the braid.
 
 ### The Framework's Reading of the Braid
 
@@ -68,13 +68,13 @@ The braid group is the group of topologically distinct histories of a set of wor
 The simplest model of an anyon is a charge bound to a magnetic flux, a **flux–charge composite**. In $2+1$ dimensions a point flux $\Phi$ and a point charge $e$ can be bound, and the resulting object has the properties of a particle; its statistics is computed from the Aharonov–Bohm effect. When one such composite is carried around another, the charge encircles the flux and the wavefunction acquires the Aharonov–Bohm phase
 
 $$
-e^{i\oint A} = e^{ie\Phi/\hbar} ,
+\exp(i\oint A) = \exp(ie\Phi/\hbar) ,
 $$
 
 the phase of a full loop. An **exchange** of two identical composites is half of a full loop — the two worldlines are swapped, which carries each charge halfway around the other's flux, and the double exchange is the full loop — so that the exchange phase is the square root,
 
 $$
-e^{i\theta} = e^{ie\Phi/2\hbar} ,
+\exp(i\theta) = \exp(ie\Phi/2\hbar) ,
 \qquad
 \theta = \frac{e\Phi}{2\hbar} \pmod{2\pi} .
 $$
@@ -83,19 +83,19 @@ The angle $\theta$ is the statistics angle, and it is continuous because the pro
 
 ### Spin and Statistics in 2+1 Dimensions
 
-The statistics angle and the spin are linked, as they are in $3+1$ dimensions, but the link is weaker. A rotation of a particle by $2\pi$ multiplies its state by $e^{2\pi i s}$, and the exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
+The statistics angle and the spin are linked, as they are in $3+1$ dimensions, but the link is weaker. A rotation of a particle by $2\pi$ multiplies its state by $\exp(2\pi i s)$, and the exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
 
 $$
 \theta = 2\pi s \pmod{2\pi} .
 $$
 
-In $3+1$ dimensions the spin $s$ is an integer or half-integer, so the phase $e^{2\pi is}$ is $\pm1$ and the statistics is bosonic or fermionic; the relation then reproduces the integer-spin/half-integer-spin dichotomy of the spin–statistics theorem. In $2+1$ dimensions the spin of the flux–charge composite need not be an integer or half-integer: the composite carries an angular momentum from the charge–flux field configuration — a fractional value — so that $s$ is continuous and $\theta$ is arbitrary. The composite's spin is the statistics angle measured in units of $2\pi$, $s=\dfrac{\theta}{2\pi}=\dfrac{e\Phi}{4\pi\hbar}$, consistent with the relation above; the precise value depends on the normalization of the bound-state angular momentum and is standard.
+In $3+1$ dimensions the spin $s$ is an integer or half-integer, so the phase $\exp(2\pi is)$ is $\pm1$ and the statistics is bosonic or fermionic; the relation then reproduces the integer-spin/half-integer-spin dichotomy of the spin–statistics theorem. In $2+1$ dimensions the spin of the flux–charge composite need not be an integer or half-integer: the composite carries an angular momentum from the charge–flux field configuration — a fractional value — so that $s$ is continuous and $\theta$ is arbitrary. The composite's spin is the statistics angle measured in units of $2\pi$, $s=\dfrac{\theta}{2\pi}=\dfrac{e\Phi}{4\pi\hbar}$, consistent with the relation above; the precise value depends on the normalization of the bound-state angular momentum and is standard.
 
-The framework's interpretation is that the spin–statistics relation is a $3+1$-dimensional statement. The material sector carries integer spin and the informational sector half-integer spin, and the classification into bosons and fermions follows from the two possibilities for the phase $e^{2\pi is}$. An anyon's spin is neither integer nor half-integer, so the anyon sits **outside the two-sector classification**: its phase $e^{2\pi i s}$ is neither $+1$ nor $-1$, and it cannot be assigned to either sector. The framework's sharp distinction between the sectors is a feature of the four-dimensional Lorentz group and does not survive the reduction to three dimensions, and the anyon is the observable that records the difference.
+The framework's interpretation is that the spin–statistics relation is a $3+1$-dimensional statement. The material sector carries integer spin and the informational sector half-integer spin, and the classification into bosons and fermions follows from the two possibilities for the phase $\exp(2\pi is)$. An anyon's spin is neither integer nor half-integer, so the anyon sits **outside the two-sector classification**: its phase $\exp(2\pi i s)$ is neither $+1$ nor $-1$, and it cannot be assigned to either sector. The framework's sharp distinction between the sectors is a feature of the four-dimensional Lorentz group and does not survive the reduction to three dimensions, and the anyon is the observable that records the difference.
 
 ### The Generalized Spin–Statistics Theorem in 2+1 Dimensions
 
-The relation $\theta=2\pi s$ is the two-dimensional form of the spin–statistics theorem, and it is worth stating how it differs from the four-dimensional theorem. In $3+1$ dimensions the theorem states that a field quantized with commutators must carry integer spin and one quantized with anticommutators half-integer spin, and the proof uses Lorentz invariance, locality, and the positivity of the norm. In $2+1$ dimensions the statement that survives is the equality of the exchange phase with the phase of the rotation by $2\pi$; what does not survive is the quantization of the spin. The reason is group-theoretic: in four dimensions the rotation subgroup in the little group of a massive particle is $\mathrm{SO}(3)$, whose unitary representations have half-integer or integer weights, whereas in three dimensions the effective rotation is a single angle and its representations — labelled by $e^{2\pi is}$ — have an arbitrary real $s$. The theorem is therefore not weakened by a loss of rigour but by a change of the group that enforces it.
+The relation $\theta=2\pi s$ is the two-dimensional form of the spin–statistics theorem, and it is worth stating how it differs from the four-dimensional theorem. In $3+1$ dimensions the theorem states that a field quantized with commutators must carry integer spin and one quantized with anticommutators half-integer spin, and the proof uses Lorentz invariance, locality, and the positivity of the norm. In $2+1$ dimensions the statement that survives is the equality of the exchange phase with the phase of the rotation by $2\pi$; what does not survive is the quantization of the spin. The reason is group-theoretic: in four dimensions the rotation subgroup in the little group of a massive particle is $\mathrm{SO}(3)$, whose unitary representations have half-integer or integer weights, whereas in three dimensions the effective rotation is a single angle and its representations — labelled by $\exp(2\pi is)$ — have an arbitrary real $s$. The theorem is therefore not weakened by a loss of rigour but by a change of the group that enforces it.
 
 The companion article *The Spin–Statistics Theorem in Biquaternionic Form* establishes the four-dimensional version, and its central statement is the dichotomy of the two phase classes. The two-dimensional interpretation of that article's argument is that the dichotomy is exactly what fails: the exchange phase is no longer drawn from a two-element set, because the rotation group no longer supplies a discrete set of weights. This is the group-theoretic content of fractional statistics, and it is the sense in which the anyon's statistics is not a small deformation of Bose or Fermi statistics but the appearance of a new continuum of possibilities.
 
@@ -104,8 +104,8 @@ The companion article *The Spin–Statistics Theorem in Biquaternionic Form* est
 The exchange phase can be read directly from the loop correlator. Two anyons exchanged in the plane trace out two worldlines that form a **half-link**: each worldline is carried halfway around the other, and the double exchange closes the link. The correlator of the two loops is thus the exponential of the linking number, and the exchange phase is its square root,
 
 $$
-\text{exchange:}\quad \exp\left(2\pi i\,\frac{q^2}{k}\,\mathrm{Lk}_{\text{single}}\right)
-= \exp\left(i\pi\,\frac{q^2}{k}\right) ,
+\text{exchange:}\quad \exp\left(2\pi i\,\frac{ϙ^2}{k}\,\mathrm{Lk}_{\text{single}}\right)
+= \exp\left(i\pi\,\frac{ϙ^2}{k}\right) ,
 \qquad
 \mathrm{Lk}_{\text{single}}=\tfrac12\,\mathrm{Lk}_{\text{double}}=\tfrac12 .
 $$
@@ -129,19 +129,19 @@ with $k$ the level. The term is gauge invariant (up to a surface term) and metri
 The correlator of two Wilson loops in the abelian Chern–Simons theory is the exponential of the linking number of the two curves,
 
 $$
-\left\langle W_{q_1}(C_1)\,W_{q_2}(C_2)\right\rangle
-= \exp\left(2\pi i\,\frac{q_1q_2}{k}\,\mathrm{Lk}(C_1,C_2)\right),
+\left\langle W_{ϙ_1}(C_1)\,W_{ϙ_2}(C_2)\right\rangle
+= \exp\left(2\pi i\,\frac{ϙ_1ϙ_2}{k}\,\mathrm{Lk}(C_1,C_2)\right),
 $$
 
-with $q_1,q_2$ the charges of the loops. The statement is the topological content of the theory: the action evaluated on two linked worldlines is proportional to the linking number, and the loop correlator is its exponential. A full loop of one charge around another is thus a phase, and an exchange is half of it, so that the statistics angle of the charge-$q$ anyon is
+with $ϙ_1,ϙ_2$ the charges of the loops. The statement is the topological content of the theory: the action evaluated on two linked worldlines is proportional to the linking number, and the loop correlator is its exponential. A full loop of one charge around another is thus a phase, and an exchange is half of it, so that the statistics angle of the charge-$ϙ$ anyon is
 
 $$
-\theta = \pi\,\frac{q^2}{k} ,
+\theta = \pi\,\frac{ϙ^2}{k} ,
 \qquad
-s = \frac{\theta}{2\pi}=\frac{q^2}{2k} .
+s = \frac{\theta}{2\pi}=\frac{ϙ^2}{2k} .
 $$
 
-For $k=2$ and $q=1$ the angle is $\pi/2$ and the spin is $\tfrac14$: the semion, the simplest anyon, with the statistics of neither a boson nor a fermion and a spin of a quarter. The level $k$ must be an integer for the quantum theory to be consistent on a closed spatial manifold, which is the quantization of the coupling that the flux–charge model lacked; the charge $q$ is an integer in the abelian theory.
+For $k=2$ and $ϙ=1$ the angle is $\pi/2$ and the spin is $\tfrac14$: the semion, the simplest anyon, with the statistics of neither a boson nor a fermion and a spin of a quarter. The level $k$ must be an integer for the quantum theory to be consistent on a closed spatial manifold, which is the quantization of the coupling that the flux–charge model lacked; the charge $ϙ$ is an integer in the abelian theory.
 
 The linking number was verified by direct computation. The Gauss integral
 
@@ -221,7 +221,7 @@ The anyon article closes the subcategory, and it is worth stating how the framew
 
 Three structures carry over unchanged. The braiding phase is a **holonomy**, so the whole machinery of the Wilson-loop construction — the path-ordered exponential, the trace, the invariance of the trace under the adjoint action, the centrality of the abelian holonomy — applies. The non-abelian anyon's representation is the **adjoint holonomy** acting on the informational realization of the group, exactly as for the non-abelian Wilson loop. And the linking number, which is the exponent, is the topological invariant of two closed curves, computed here by the Gauss integral and verified to be $\pm1$ for the Hopf link.
 
-One structure does not carry over. The framework's organizing distinction is the split into the material sector, carrying integer spin, and the informational sector, carrying half-integer spin, with the two possibilities $e^{2\pi is}=\pm1$ for the phase of a rotation by $2\pi$. The anyon's spin $s=q^2/2k$ is neither integer nor half-integer, and its rotation phase is neither $+1$ nor $-1$; the anyon is therefore the case that the two-sector classification does not cover. The framework can describe the anyon's braiding — the phase is the scalar part of a holonomy, and the non-abelian case is a holonomy in a representation — but it cannot place the anyon's spin in either sector, and that is the honest statement of the framework's limit in $2+1$ dimensions. The continuous statistics angle is the parameter that interpolates between the sectors, and the interpolation is not algebraic: it is the statement that the reduction from four dimensions to three removes the quantized axial rotation that the two-sector split relies on.
+One structure does not carry over. The framework's organizing distinction is the split into the material sector, carrying integer spin, and the informational sector, carrying half-integer spin, with the two possibilities $\exp(2\pi is)=\pm1$ for the phase of a rotation by $2\pi$. The anyon's spin $s=ϙ^2/2k$ is neither integer nor half-integer, and its rotation phase is neither $+1$ nor $-1$; the anyon is therefore the case that the two-sector classification does not cover. The framework can describe the anyon's braiding — the phase is the scalar part of a holonomy, and the non-abelian case is a holonomy in a representation — but it cannot place the anyon's spin in either sector, and that is the honest statement of the framework's limit in $2+1$ dimensions. The continuous statistics angle is the parameter that interpolates between the sectors, and the interpolation is not algebraic: it is the statement that the reduction from four dimensions to three removes the quantized axial rotation that the two-sector split relies on.
 
 The relation of the anyon's angle to the vacuum angle is worth recording, with a warning. Both are continuous topological angles: the vacuum angle $\theta_{\mathrm{vac}}$ multiplies a topological density in a four-dimensional gauge theory, and the anyon's angle multiplies a phase assigned to a braid. The two are distinct — the vacuum angle is a property of the theory's sector structure in four dimensions, the statistics angle is a property of the particles in three — and the framework does not identify them. The vacuum angle and the theta vacuum belong to the companion subcategory on generalities, and the analogy is recorded here only to say that it is an analogy.
 
@@ -243,17 +243,17 @@ The relation of the anyon's angle to the vacuum angle is worth recording, with a
 
 4. **Non-abelian anyons and the adjoint action.** The non-abelian anyon's braid matrices act on the tensor product of representation spaces. Does the framework's adjoint action organize these matrices — are the Fibonacci braid matrices expressions of the adjoint action of a special unitary group generated by the algebra?
 
-5. **Anyons and the two-sector mixing.** The exchange phase $e^{i\theta}$ with arbitrary $\theta$ is a continuous interpolation between the bosonic and fermionic phases. Is there a biquaternion object — an element interpolating between a real and an imaginary quaternion — whose continuous parameter is the statistics angle, and does the interpolation pass through the material and informational sectors in a definite order?
+5. **Anyons and the two-sector mixing.** The exchange phase $\exp(i\theta)$ with arbitrary $\theta$ is a continuous interpolation between the bosonic and fermionic phases. Is there a biquaternion object — an element interpolating between a real and an imaginary quaternion — whose continuous parameter is the statistics angle, and does the interpolation pass through the material and informational sectors in a definite order?
 
 6. **Empirical content.** As everywhere, whether any of this yields a prediction distinguishing the framework from standard $2+1$-dimensional physics. The transcription given here does not.
 
 ## Summary
 
-In two spatial dimensions the exchange of identical particles is described by the braid group $B_n$ rather than by the symmetric group $S_n$; the braid generators satisfy $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ and do not square to the identity, and the symmetric group is the quotient in which they do. The one-dimensional unitary representations are $\sigma_i\mapsto e^{i\theta}$ for arbitrary $\theta$, giving anyons; the higher-dimensional representations give non-abelian anyons. These statements were verified: the permutation matrices of $S_3$ satisfy the braid relation and square to the identity; the reduced Burau representation satisfies the braid relation without squaring to the identity; and the one-dimensional representation satisfies it for every angle. The one-dimensional representations factor through the abelianization $B_n^{\mathrm{ab}}\cong\mathbb{Z}$, so that the abelian anyon's phase is the coordinate on $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$; the level-$k$ representations of the $\mathrm{SU}(2)$ type factor through the Temperley–Lieb algebra with $d=2\cos(\pi/(k+2))$, which gives $d=\varphi$ at $k=3$; and the Fibonacci quantum dimension satisfies $d_\tau^2=1+d_\tau$, whose solution $d_\tau=(1+\sqrt5)/2$ was verified to machine precision.
+In two spatial dimensions the exchange of identical particles is described by the braid group $B_n$ rather than by the symmetric group $S_n$; the braid generators satisfy $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ and do not square to the identity, and the symmetric group is the quotient in which they do. The one-dimensional unitary representations are $\sigma_i\mapsto \exp(i\theta)$ for arbitrary $\theta$, giving anyons; the higher-dimensional representations give non-abelian anyons. These statements were verified: the permutation matrices of $S_3$ satisfy the braid relation and square to the identity; the reduced Burau representation satisfies the braid relation without squaring to the identity; and the one-dimensional representation satisfies it for every angle. The one-dimensional representations factor through the abelianization $B_n^{\mathrm{ab}}\cong\mathbb{Z}$, so that the abelian anyon's phase is the coordinate on $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$; the level-$k$ representations of the $\mathrm{SU}(2)$ type factor through the Temperley–Lieb algebra with $d=2\cos(\pi/(k+2))$, which gives $d=\varphi$ at $k=3$; and the Fibonacci quantum dimension satisfies $d_\tau^2=1+d_\tau$, whose solution $d_\tau=(1+\sqrt5)/2$ was verified to machine precision.
 
-The flux–charge composite realizes the anyon, with the exchange phase $e^{i\theta}=e^{ie\Phi/2\hbar}$ derived from the Aharonov–Bohm effect, and the spin–statistics relation $\theta=2\pi s$ ties the angle to a spin that need not be an integer or half-integer. The Chern–Simons theory supplies the field theory of fractional statistics: the loop correlator is the exponential of the linking number, the statistics angle is $\theta=\pi q^2/k$, and the spin is $q^2/2k$, with the semion at $k=2,q=1$ having angle $\pi/2$ and spin $\tfrac14$. The linking number was computed for the Hopf link by the Gauss integral and found to be $\pm1$. The non-abelian case replaces the phase by a matrix, with the fusion rules $a\times b=\sum_c N_{ab}^c c$ and the quantum dimension organizing the state space.
+The flux–charge composite realizes the anyon, with the exchange phase $\exp(i\theta)=\exp(ie\Phi/2\hbar)$ derived from the Aharonov–Bohm effect, and the spin–statistics relation $\theta=2\pi s$ ties the angle to a spin that need not be an integer or half-integer. The Chern–Simons theory supplies the field theory of fractional statistics: the loop correlator is the exponential of the linking number, the statistics angle is $\theta=\pi ϙ^2/k$, and the spin is $ϙ^2/2k$, with the semion at $k=2,ϙ=1$ having angle $\pi/2$ and spin $\tfrac14$. The linking number was computed for the Hopf link by the Gauss integral and found to be $\pm1$. The non-abelian case replaces the phase by a matrix, with the fusion rules $a\times b=\sum_c N_{ab}^c c$ and the quantum dimension organizing the state space.
 
-In the biquaternion framework the braiding phase is a holonomy and the exchange is its trace, so the Wilson-loop constructions apply: the abelian anyon's phase is a central element, the non-abelian anyon's exchange is a holonomy in a representation, and the fusion multiplicities are tensor-product multiplicities. What the framework cannot do is place the anyon's fractional spin in either of its two sectors: the split into integer-spin material and half-integer-spin informational is a four-dimensional classification, and the anyon's spin $q^2/2k$ is neither. The statistics angle is the parameter that interpolates between the sectors, and the framework's limit is that the interpolation is not algebraic. The value of the angle, the quantization of the level, the physical realization of anyons, and the identification of the vacuum angle with the statistics angle are imported; the holonomy and its trace are the framework's.
+In the biquaternion framework the braiding phase is a holonomy and the exchange is its trace, so the Wilson-loop constructions apply: the abelian anyon's phase is a central element, the non-abelian anyon's exchange is a holonomy in a representation, and the fusion multiplicities are tensor-product multiplicities. What the framework cannot do is place the anyon's fractional spin in either of its two sectors: the split into integer-spin material and half-integer-spin informational is a four-dimensional classification, and the anyon's spin $ϙ^2/2k$ is neither. The statistics angle is the parameter that interpolates between the sectors, and the framework's limit is that the interpolation is not algebraic. The value of the angle, the quantization of the level, the physical realization of anyons, and the identification of the vacuum angle with the statistics angle are imported; the holonomy and its trace are the framework's.
 
 ## Summary of Notation
 
@@ -262,17 +262,17 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $B_n$, $\sigma_i$ | Braid group and its elementary generators |
 | $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$, $\sigma_i\sigma_j=\sigma_j\sigma_i$ ($|i-j|\ge2$) | Braid relations |
 | $S_n=B_n/\langle\sigma_i^2=e\rangle$ | Symmetric group as the quotient |
-| $\sigma_i\mapsto e^{i\theta}$ | One-dimensional representation; anyons |
+| $\sigma_i\mapsto \exp(i\theta)$ | One-dimensional representation; anyons |
 | $B_n^{\mathrm{ab}}\cong\mathbb{Z}$ | Abelianization of the braid group; the 1D representations factor through it |
 | $e$ | Charge of the flux–charge composite |
 | $\Phi$ | Magnetic flux of the composite |
-| $e^{i\theta}=e^{ie\Phi/2\hbar}$ | Exchange phase; half the Aharonov–Bohm phase $e^{ie\Phi/\hbar}$ |
+| $\exp(i\theta)=\exp(ie\Phi/2\hbar)$ | Exchange phase; half the Aharonov–Bohm phase $\exp(ie\Phi/\hbar)$ |
 | $\theta=2\pi s$ | Spin–statistics relation in $2+1$ dimensions |
-| $s$ | Spin of the anyon; $s=q^2/2k$ for the Chern–Simons anyon |
+| $s$ | Spin of the anyon; $s=ϙ^2/2k$ for the Chern–Simons anyon |
 | $S_{\mathrm{CS}}=\frac{k}{4\pi}\int\varepsilon^{\mu\nu\rho}A_\mu\partial_\nu A_\rho$ | Abelian Chern–Simons action; level $k$ |
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
-| $\langle W_{q_1}(C_1)W_{q_2}(C_2)\rangle=\exp(2\pi i\frac{q_1q_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
-| $\theta=\pi q^2/k$, $s=q^2/2k$ | Statistics angle and spin of the charge-$q$ anyon at level $k$ |
+| $\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\rangle=\exp(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
+| $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and spin of the charge-$ϙ$ anyon at level $k$ |
 | $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(\vec x_1-\vec x_2)\cdot(d\vec x_1\times d\vec x_2)}{|\vec x_1-\vec x_2|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
 | $a\times b=\sum_c N_{ab}^c c$ | Fusion rules; multiplicities from tensor products |
 | $d_a$ | Quantum dimension |

@@ -122,7 +122,7 @@ $$
 
 and the same computation with the factors in the other order gives $uu^* = 1$. The derivative statement is the expansion $u = (1+k)(1 + k + k^2 + \cdots) = 1 + 2k + O(k^2)$ for nilpotent or small $k$.
 
-The exponential $e^{k}$ is not available in a bare $k$-algebra; the formal series identifies the Lie algebra of the skew elements with the unitary group, as in the theory of the linear groups, and the convergent reading belongs to *Hilbert Algebras* and to Part II.
+The exponential $\exp(k)$ is not available in a bare $k$-algebra; the formal series identifies the Lie algebra of the skew elements with the unitary group, as in the theory of the linear groups, and the convergent reading belongs to *Hilbert Algebras* and to Part II.
 
 ## The Examples
 

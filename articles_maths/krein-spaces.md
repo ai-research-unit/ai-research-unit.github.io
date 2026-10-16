@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **Krein space** is the complete case of an indefinite inner product space: a vector space with an indefinite Hermitian form that admits a fundamental decomposition into a positive part and a negative part, each of which is complete for the norm it carries. The signature $(p,q)$ is then allowed to be infinite – the two parts may be infinite-dimensional – and the completeness supplies the topology in which the whole theory is done.
+A **Krein space** is the complete case of an indefinite inner product space: a vector space with an indefinite Hermitian form that admits a fundamental decomposition into a positive part and a negative part, each of which is complete for the norm it carries. The signature $(n,m)$ is then allowed to be infinite – the two parts may be infinite-dimensional – and the completeness supplies the topology in which the whole theory is done.
 
 The construction has one move. Once a fundamental decomposition is chosen, the indefinite form splits into a positive definite form on the positive part and a negative definite one on the negative part, and summing them with the relative sign removed gives a positive definite inner product on the whole space. The space is complete for this form, so it is a Hilbert space, and the indefinite form is recovered from the Hilbert form by the fundamental symmetry $J$. This is why a Krein space is best described as a Hilbert space with a chosen operator $J$ of square one: the two structures are the same data seen through $J$, and the choice of $J$ is the choice of fundamental decomposition, of which there are many.
 
@@ -30,7 +30,7 @@ is a positive definite inner product on $K$, $K$ is complete for its norm $\|x\|
 
 **Proof.** The sum of two complete positive definite forms on orthogonal summands is a complete positive definite form, so $K$ is complete for $\langle\cdot,\cdot\rangle$; the recovery is $[x,y] = [J^{2}x,y] = \langle Jx,y\rangle$; the involutivity and the self-adjointness of $J$ are those of *Indefinite Inner Product Spaces*.
 
-**Definition.** The **signature** of the Krein space is the pair $(p,q) = (\dim K_{+}, \dim K_{-})$, each entry a cardinal, possibly infinite. The **rank of negativity** is $q$.
+**Definition.** The **signature** of the Krein space is the pair $(n,m) = (\dim K_{+}, \dim K_{-})$, each entry a cardinal, possibly infinite. The **rank of negativity** is $m$.
 
 ## Completeness and the Norm
 
@@ -52,11 +52,11 @@ and the bound is attained on $K_{+}$; on the whole space it is not coercive, sin
 
 ## The Signature
 
-**Theorem (invariance).** The signature $(p,q)$ is independent of the fundamental decomposition: if $K = K_{+}'\oplus K_{-}'$ with $K_{+}'$ positive definite and maximal, then $\dim K_{+}' = p$ and $\dim K_{-}' = q$.
+**Theorem (invariance).** The signature $(n,m)$ is independent of the fundamental decomposition: if $K = K_{+}'\oplus K_{-}'$ with $K_{+}'$ positive definite and maximal, then $\dim K_{+}' = n$ and $\dim K_{-}' = m$.
 
 **Proof.** The finite-dimensional case is Sylvester's law of inertia, *Indefinite Inner Product Spaces*, and the infinite-dimensional case is the same argument with the dimension replaced by the cardinal dimension of a maximal positive definite subspace, using that a positive definite subspace meets $K_{-}'$ only at zero.
 
-**Proposition (the possible signatures).** Any pair of cardinals $(p,q)$ occurs: with $\ell^{2}(\kappa)$ denoting a Hilbert space of Hilbert dimension $\kappa$, the orthogonal sum $\ell^{2}(p)\oplus-\ell^{2}(q)$, the negative part carrying the form with the opposite sign, is a Krein space of signature $(p,q)$.
+**Proposition (the possible signatures).** Any pair of cardinals $(n,m)$ occurs: with $\ell^{2}(\kappa)$ denoting a Hilbert space of Hilbert dimension $\kappa$, the orthogonal sum $\ell^{2}(n)\oplus-\ell^{2}(m)$, the negative part carrying the form with the opposite sign, is a Krein space of signature $(n,m)$.
 
 **Proof.** The two summands are complete; the sum with the relative sign on the second summand is an indefinite Hermitian form; the decomposition of the definition is there by construction.
 
@@ -78,7 +78,7 @@ and the bound is attained on $K_{+}$; on the whole space it is not coercive, sin
 
 ## Distinction from a Hilbert Space
 
-**Proposition (what is lost).** A Krein space that is not a Hilbert space – that is, with $q \neq 0$ – fails each of the following properties of a Hilbert space:
+**Proposition (what is lost).** A Krein space that is not a Hilbert space – that is, with $m \neq 0$ – fails each of the following properties of a Hilbert space:
 
 - the Cauchy–Schwarz inequality: there are $x, y$ with $|[x,y]| > |[x,x]|^{1/2}|[y,y]|^{1/2}$;
 - the positivity of the square: $[x,x]$ may be zero or negative;
@@ -101,7 +101,7 @@ The orthogonal sum of two copies of $\ell^{2}$ with the negative form on the sec
 
 ### A Pontryagin Space as a Krein Space
 
-On $\ell^{2}$ with the form $[x,y] = \sum_{n\geq2}x_{n}\bar y_{n} - x_{1}\bar y_{1}$ the rank of negativity is $q = 1$ and the space is a Krein space $\Pi_{1}$; the induced Hilbert inner product is the standard one, and $J = \mathrm{diag}(-1,1,1,\ldots)$.
+On $\ell^{2}$ with the form $[x,y] = \sum_{n\geq2}x_{n}\bar y_{n} - x_{1}\bar y_{1}$ the rank of negativity is $m = 1$ and the space is a Krein space $\Pi_{1}$; the induced Hilbert inner product is the standard one, and $J = \mathrm{diag}(-1,1,1,\ldots)$.
 
 ### The Finite Case
 
@@ -109,7 +109,7 @@ On $\mathbb{R}^{2}$ with $[x,y] = x^{1}y^{1} - x^{2}y^{2}$ the space is a Krein 
 
 ## Summary
 
-A **Krein space** is a vector space with an indefinite Hermitian form admitting a **fundamental decomposition** $K = K_{+}\oplus K_{-}$ into a positive definite and a negative definite part that are orthogonal and each complete for its own norm. The associated **fundamental symmetry** $J$ has square one and is self-adjoint for the form, and $\langle x,y\rangle = [Jx,y]$ is a positive definite inner product for which $K$ is complete; so a Krein space is a **Hilbert space with a chosen operator** $J$, and $[x,y] = \langle Jx,y\rangle$. The **signature** $(p,q) = (\dim K_{+},\dim K_{-})$ may have infinite entries and is independent of the decomposition; every pair of cardinals occurs, and the **Krein topology** is the Hilbert norm topology, the same for all choices of $J$. The form is continuous and bounded but not coercive, so neutrality, the failure of Cauchy–Schwarz and the failure of the orthogonal decomposition $K = L\oplus L^{\perp}$ are exactly what a Krein space loses against a Hilbert space, and the bounded operator theory conjugated by $J$ is exactly what it keeps. The finite-dimensional theory is *Indefinite Inner Product Spaces*, the finite rank of negativity is *Pontryagin Spaces*, the operator $J$ is *The Fundamental Symmetry*, and the operators are *J-Self-Adjoint and J-Unitary Operators*.
+A **Krein space** is a vector space with an indefinite Hermitian form admitting a **fundamental decomposition** $K = K_{+}\oplus K_{-}$ into a positive definite and a negative definite part that are orthogonal and each complete for its own norm. The associated **fundamental symmetry** $J$ has square one and is self-adjoint for the form, and $\langle x,y\rangle = [Jx,y]$ is a positive definite inner product for which $K$ is complete; so a Krein space is a **Hilbert space with a chosen operator** $J$, and $[x,y] = \langle Jx,y\rangle$. The **signature** $(n,m) = (\dim K_{+},\dim K_{-})$ may have infinite entries and is independent of the decomposition; every pair of cardinals occurs, and the **Krein topology** is the Hilbert norm topology, the same for all choices of $J$. The form is continuous and bounded but not coercive, so neutrality, the failure of Cauchy–Schwarz and the failure of the orthogonal decomposition $K = L\oplus L^{\perp}$ are exactly what a Krein space loses against a Hilbert space, and the bounded operator theory conjugated by $J$ is exactly what it keeps. The finite-dimensional theory is *Indefinite Inner Product Spaces*, the finite rank of negativity is *Pontryagin Spaces*, the operator $J$ is *The Fundamental Symmetry*, and the operators are *J-Self-Adjoint and J-Unitary Operators*.
 
 ## Summary of Notation
 
@@ -119,9 +119,9 @@ A **Krein space** is a vector space with an indefinite Hermitian form admitting 
 | $[\cdot,\cdot]$, $\langle\cdot,\cdot\rangle = [J\cdot,\cdot]$ | Indefinite form and induced inner product |
 | $J$ | Fundamental symmetry, $J^{2} = \mathrm{id}$, $[Jx,y] = [x,Jy]$ |
 | $\|x\|^{2} = \langle x,x\rangle$ | Krein (Hilbert) norm |
-| $(p,q)$ | Signature, entries cardinal, possibly infinite |
-| $q = \mathrm{rank}$ of negativity | Dimension of $K_{-}$ |
-| $\ell^{2}(p)\oplus-\ell^{2}(q)$ | Model of signature $(p,q)$ |
+| $(n,m)$ | Signature, entries cardinal, possibly infinite |
+| $m = \mathrm{rank}$ of negativity | Dimension of $K_{-}$ |
+| $\ell^{2}(n)\oplus-\ell^{2}(m)$ | Model of signature $(n,m)$ |
 | $[x,x] = 0$ | Neutral vector; the failure of Cauchy–Schwarz |
 
 ## Further Reading

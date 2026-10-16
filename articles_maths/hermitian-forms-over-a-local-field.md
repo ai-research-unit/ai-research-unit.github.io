@@ -27,9 +27,9 @@ The conventions are those fixed for the category. $K$ is a local field, $c$ is a
 
 ### Archimedean
 
-**Theorem.** Over $\mathbb{R}$ with $c=\mathrm{id}$ the nondegenerate symmetric forms are classified by the signature $(p,q)$, $p+q=n$; over $\mathbb{C}$ with $c=\mathrm{id}$ the nondegenerate forms are classified by the rank $n$; over $\mathbb{C}$ with $c$ the complex conjugation the nondegenerate Hermitian forms are classified by the signature $(p,q)$.
+**Theorem.** Over $\mathbb{R}$ with $c=\mathrm{id}$ the nondegenerate symmetric forms are classified by the signature $(n,m)$; over $\mathbb{C}$ with $c=\mathrm{id}$ the nondegenerate forms are classified by their rank; over $\mathbb{C}$ with $c$ the complex conjugation the nondegenerate Hermitian forms are classified by the signature $(n,m)$.
 
-**Proof.** Sylvester's law of inertia for the real case; for the complex bilinear case the Gram–Schmidt argument over $\mathbb{C}$ diagonalises the form to $x_1^2+\dots+x_n^2$ with the coefficients absorbed by a square root; for the complex Hermitian case the spectral theorem for Hermitian matrices, in *Spectral Theory*.
+**Proof.** Sylvester's law of inertia for the real case; for the complex bilinear case the Gram–Schmidt argument over $\mathbb{C}$ diagonalises the form to $x_1^2+\dots+x_r^2$ with the coefficients absorbed by a square root; for the complex Hermitian case the spectral theorem for Hermitian matrices, in *Spectral Theory*.
 
 ### Non-Archimedean
 
@@ -47,7 +47,7 @@ The conventions are those fixed for the category. $K$ is a local field, $c$ is a
 
 ## Local Duality
 
-**Theorem.** Let $(K,c)$ be non-Archimedean with residue characteristic not $2$, and let $H$ be a nondegenerate Hermitian form of rank $n$. The bilinear form on $K^n$ associated with $H$ is nondegenerate and defines a duality $K^n\times K^n\to K$; the dual of a lattice is a lattice, and the invariants of the form are the invariants of the duality. In particular the discriminant controls the self-dual lattices and the Hasse invariant controls the existence of an isotropic vector.
+**Theorem.** Let $(K,c)$ be non-Archimedean with residue characteristic not $2$, and let $H$ be a nondegenerate Hermitian form of rank $r$. The bilinear form on $K^r$ associated with $H$ is nondegenerate and defines a duality $K^n\times K^n\to K$; the dual of a lattice is a lattice, and the invariants of the form are the invariants of the duality. In particular the discriminant controls the self-dual lattices and the Hasse invariant controls the existence of an isotropic vector.
 
 **Proof.** The matrix $H$ is invertible, so the form is a perfect pairing; the lattice statements are elementary once the pairing is perfect, and the existence of an isotropic vector over a non-Archimedean local field is decided by the Hasse invariant because the anisotropic residual form has rank at most two. This is the standard local duality of *Quadratic Forms*.
 
@@ -57,7 +57,7 @@ The conventions are those fixed for the category. $K$ is a local field, $c$ is a
 
 **Example ($K=\mathbb{C}$, $c$ the conjugation).** The form $\sum|x_i|^2$ has signature $(n,0)$ and isometry group the unitary group $U(n)$; the form $\sum_{i\le p}|x_i|^2-\sum_{i>p}|x_i|^2$ has signature $(p,n-p)$.
 
-**Example ($K=\mathbb{Q}_p$, $c=\mathrm{id}$).** The forms $\langle1,1,\dots,1\rangle$ of rank $n$ have discriminant $1$ and Hasse invariants varying with $n$ and $p$; the form $\langle1,-1\rangle$ is hyperbolic and represents zero.
+**Example ($K=\mathbb{Q}_p$, $c=\mathrm{id}$).** The forms $\langle1,1,\dots,1\rangle$ of rank $r$ have discriminant $1$ and Hasse invariants varying with $r$ and $p$; the form $\langle1,-1\rangle$ is hyperbolic and represents zero.
 
 **Example (the norm form of $\mathbb{Q}_p(\sqrt{p})$).** The extension is ramified, the norm form has Hasse invariant $-1$, and it is anisotropic of rank $2$; this is the boundary between the hyperbolic and the anisotropic cases.
 
@@ -77,7 +77,7 @@ Over a local field with involution, a Hermitian form is a sesquilinear form equa
 | $K_0$ | Fixed field of $c$ |
 | $h(x,y)=c(h(y,x))$ | Hermitian form |
 | $H^*=H$, $H^*=\overline{H}^{\mathsf T}$ | Matrix condition |
-| $(p,q)$ | Signature (Archimedean) |
+| $(n,m)$ | Signature (Archimedean) |
 | $\operatorname{disc}(H)=\det H\in K_0^\times/N(K^\times)$ | Discriminant |
 | $s(H)\in\{\pm1\}$ | Hasse invariant |
 | $N$ | Norm of a quadratic extension |

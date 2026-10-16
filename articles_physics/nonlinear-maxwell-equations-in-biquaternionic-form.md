@@ -19,17 +19,17 @@ The plan is the algebra first, because the paper's product is not the corpus's a
 The paper uses the scalar–vector form. A biquaternion is a pair
 
 $$
-\mathcal{B} = (s, \vec u), \qquad s \in \mathbb{C}, \quad \vec u \in \mathbb{C}^3,
+\mathcal{B} = (s, \vec q), \qquad s \in \mathbb{C}, \quad \vec q \in \mathbb{C}^3,
 $$
 
 and the product is its equation (14.24),
 
 $$
-\mathcal{B}_1 \mathcal{B}_2 = \bigl(s_1s_2 + \vec u_1 \cdot \vec u_2,\; s_1\vec u_2 + s_2\vec u_1 + i\,\vec u_1 \times \vec u_2\bigr),
+\mathcal{B}_1 \mathcal{B}_2 = \bigl(s_1s_2 + \vec q_1 \cdot \vec q_2,\; s_1\vec q_2 + s_2\vec q_1 + i\,\vec q_1 \times \vec q_2\bigr),
 \tag{14.24}
 $$
 
-with $i$ the central scalar imaginary unit. The paper prints the second term of the vector part as $s_2\vec u_2$; it must be $s_2\vec u_1$. With the printed form the unit $e_0 = (1, \mathbf{0})$ fails to be even a left identity, since $(1,\mathbf{0})(s,\vec u)$ would give $(s,\ (1+s)\vec u)$ instead of $(s,\vec u)$. The correction is forced by the paper's own use of the product everywhere else, and it agrees with the sibling article's equation (1), where the same product is written out and checked.
+with $i$ the central scalar imaginary unit. The paper prints the second term of the vector part as $s_2\vec q_2$; it must be $s_2\vec q_1$. With the printed form the unit $e_0 = (1, \mathbf{0})$ fails to be even a left identity, since $(1,\mathbf{0})(s,\vec q)$ would give $(s,\ (1+s)\vec q)$ instead of $(s,\vec q)$. The correction is forced by the paper's own use of the product everywhere else, and it agrees with the sibling article's equation (1), where the same product is written out and checked.
 
 The basis is fixed by the Appendix, equation (14.27): $e_0 = 1$ and
 
@@ -43,13 +43,13 @@ $$
 e_k^{\text{source}} = i\,e_k^{\text{corpus}},
 $$
 
-which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\vec u_1\cdot\vec u_2 + i\,\vec u_1\times\vec u_2$, with **both** the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*, and the reader is referred there for the worked comparison. Two consequences matter here.
+which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\vec q_1\cdot\vec q_2 + i\,\vec q_1\times\vec q_2$, with **both** the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*, and the reader is referred there for the worked comparison. Two consequences matter here.
 
-**The dictionary.** An element the paper writes as $(s,\vec u)$ is the corpus's element $(s, i\vec u)$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+**The dictionary.** An element the paper writes as $(s,\vec q)$ is the corpus's element $(s, i\vec q)$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
-**The norm.** The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec u^2$, is **indefinite** in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\vec u\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\vec u\rvert^2$, because the vector units square to $-e_0$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.
+**The norm.** The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$, is **indefinite** in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\vec q\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\vec q\rvert^2$, because the vector units square to $-e_0$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.
 
-The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's *Zero Divisors of the General Plain Algebra* and *The Null Cone* treat them, and the null field $F^2 = 0$ of the twisting section is one of them.
+The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's *Zero Divisors of the Biquaternion Algebra* and *The Null Cone* treat them, and the null field $F^2 = 0$ of the twisting section is one of them.
 
 ### The Field, and the Lorentz Action
 
@@ -71,7 +71,7 @@ $$
 
 with $U$ a unitary biquaternion, $U\bar{U} = 1$ in the sense above, and with the overline the quaternion conjugate and the star the complex conjugate. The text extraction of the PDF drops the overlines, as it does in the sibling paper; the two are restored here and the placement was settled by recomputation, not by reading. Of the $64$ ways to place a conjugate or its absence on each of the three equations, exactly four close under a covariant test, and the printed one is among them. The placement matters: the paper's group action preserves the indefinite interval, and the conjugation form $UZU^{-1}$, which a reader coming from the corpus's rotor conjugation might expect, is not even real in this algebra; it was checked and fails on both counts.
 
-Two caveats about the action belong here, both recomputed. First, $Z' = U^{*}ZU$ does preserve $t^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a *parametrization* it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = e^{\theta}$ with $\theta$ complex, is what makes the star do work elsewhere.
+Two caveats about the action belong here, both recomputed. First, $Z' = U^{*}ZU$ does preserve $t^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a *parametrization* it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = \exp(\theta)$ with $\theta$ complex, is what makes the star do work elsewhere.
 
 ### The Biquaternionic Quadratic Form
 
@@ -168,7 +168,7 @@ This is the sharpest statement the corpus can make about the paper, and it is th
 The free directions have a visible consequence.
 
 $$
-F = \vec A\,e^{i(\omega t - \vec k\cdot\vec r)}, \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k \in \mathbb{R}^3,
+F = \vec A\,\exp(i(\omega t - \vec k\cdot\vec r)), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k \in \mathbb{R}^3,
 $$
 
 solves the nonlinear equation for **every** $(\omega, \vec k)$, to $5.3 \times 10^{-15}$, and $99$ of the $100$ samplings were **non-null**, $|\vec k|^2 \ne \omega^2$. This is the constant-background case of the paper's section 9 theorem, which is stated and verified in *Associated Fields* below, and it is a genuine and clean statement: the equation is so weak that a constant-amplitude plane wave of any frequency and direction is a solution. But it is the opposite of a dispersion relation. The paper's section 10 supplies $\omega^2 = k^2$ by a separate argument, from the requirement that the phase speed be the speed of light, and that argument is external to the field equation. A reader who takes the abstract literally will be misled; a reader who takes section 10 will not. The paper's own conclusions read the same fact positively, and consistently: the nonlinear free-field equations admit plane waves with a **longitudinal** component, the criterion being a non-zero regular current, and the paper suggests that this can account for light's angular momentum without a purely transverse wave. That interpretation is the one the computation supports — the amplitude is free, hence not forced transverse — and it is the abstract's promise of a *dispersion relation* that the computation does not support.
@@ -208,7 +208,7 @@ and the printed sum is not zero but twice $\partial_t\nabla\cdot\vec E$, which i
 The paper's section 9 gives the general way to make solutions, and it is the strongest positive result in the paper. Its statement: if $F_0$ is any solution of the **linear** Maxwell system, and $f$ is the phase factor of a plane wave,
 
 $$
-f(t,\vec r) = e^{i(\omega_1 t - \vec k_1\cdot\vec r)},
+f(t,\vec r) = \exp(i(\omega_1 t - \vec k_1\cdot\vec r)),
 \tag{9.1}
 $$
 
@@ -219,7 +219,7 @@ F = F_0\,f(t,\vec r)
 \tag{9.2}
 $$
 
-solves the nonlinear system. The paper calls $F$ the field **associated** with the linear field $F_0$, and notes the more general form $F = F_0e^{i\Phi(t,\vec r)}$ with $\Phi$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,
+solves the nonlinear system. The paper calls $F$ the field **associated** with the linear field $F_0$, and notes the more general form $F = F_0\exp(i\Phi(t,\vec r))$ with $\Phi$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,
 
 $$
 DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial_tf - iF_0\times\nabla f\bigr),
@@ -228,20 +228,20 @@ $$
 
 together with the observation that the equations then reduce to its (9.4), which hold because the quantities $\tfrac12F\cdot F^{*}$, $\tfrac{i}{2}F\times F^{*}$ and $(F_0\vec k_1)F_0^{*} + (F_0^{*}\vec k_1)F_0$ are real. Both steps were checked. The expression (9.3) is exact for a **non-constant** Maxwell $F_0$ as well, to $9.9 \times 10^{-16}$: the terms in $DF_0$ that the product rule would appear to require cancel precisely because $F_0$ is Maxwell. And the conclusion (9.2) was verified at the floating-point floor on three different backgrounds: a static inhomogeneous Maxwell field, with an extra general phase, $1.2 \times 10^{-15}$; and sums of one, two and three Maxwell plane waves, each multiplied by a common extra phase, at worst $4.7 \times 10^{-15}$ over $100$ random samplings each. The theorem is a real one and it was not previously in the corpus.
 
-Its consequence for the solution set is large. Taking $F_0$ constant — a legitimate Maxwell field — gives $F = F_0e^{i\Phi}$, that is, every constant-amplitude plane wave with an arbitrary real frequency and wave vector, which is the result quoted above. Taking $F_0$ to be any Maxwell field and $f = 1$ gives the embedding of the previous section. Between those extremes the theorem supplies a family far wider than either, and it explains why the examples of the later sections — the Coulomb wave, the plane wave, the standing structures of section 14 — are solutions without each needing its own check.
+Its consequence for the solution set is large. Taking $F_0$ constant — a legitimate Maxwell field — gives $F = F_0\exp(i\Phi)$, that is, every constant-amplitude plane wave with an arbitrary real frequency and wave vector, which is the result quoted above. Taking $F_0$ to be any Maxwell field and $f = 1$ gives the embedding of the previous section. Between those extremes the theorem supplies a family far wider than either, and it explains why the examples of the later sections — the Coulomb wave, the plane wave, the standing structures of section 14 — are solutions without each needing its own check.
 
 ### The Central-Symmetric Solution and the Electromagnetic Charge
 
 The paper's section 12 looks for a centrally symmetric solution of the nonlinear system and finds the **Coulomb field with a running phase**,
 
 $$
-F = \frac{\alpha\,\vec r}{r^3}\,e^{i\varphi(t)},
+F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\varphi(t)),
 \tag{12.10}
 $$
 
-where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for **any** phase function, not only a linear one: with $\varphi(t) = \cos(\omega t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,e^{i\varphi}$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial_tf\} = s\,\partial_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\varphi_r = 0$ and $s = \alpha/r^3$. The **phase is therefore left completely free** — the equations fix the spatial profile and the static modulus, never $\varphi(t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.
+where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for **any** phase function, not only a linear one: with $\varphi(t) = \cos(\omega t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\varphi)$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial_tf\} = s\,\partial_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\varphi_r = 0$ and $s = \alpha/r^3$. The **phase is therefore left completely free** — the equations fix the spatial profile and the static modulus, never $\varphi(t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.
 
-The paper also gives the covariant form, its (12.11): $F = F_0e^{i\Phi}$ with $F_0$ the Coulomb field transformed to the frame and $\Phi$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.
+The paper also gives the covariant form, its (12.11): $F = F_0\exp(i\Phi)$ with $F_0$ the Coulomb field transformed to the frame and $\Phi$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.
 
 The paper also derives the charge from the singularity. Applying the gradient to the Coulomb field (12.10) in the rest frame gives its (13.16),
 
@@ -310,7 +310,7 @@ $$
 with $\vec a, \vec b$ fixed real orthonormal vectors in $P$ and $f, \varphi$ scalar functions. Its twist is the paper's (11.4),
 
 $$
-\Omega = 2f\,(\vec bf_x - \vec af_y),
+\Omega = 2f\,(\vec b\,\partial_x f - \vec a\,\partial_y f),
 \tag{11.4}
 $$
 
@@ -319,36 +319,36 @@ $$
 
 Two things here are wrong.
 
-**The printed closed form of the field, (11.3), does not follow from (11.2).** The paper writes "(11.2) … another way as $F = (\vec ae^{i\varphi} + \vec be^{-i\varphi})f$". Substituting (11.2) gives instead
+**The printed closed form of the field, (11.3), does not follow from (11.2).** The paper writes "(11.2) … another way as $F = (\vec a\exp(i\varphi) + \vec b\exp(-i\varphi))f$". Substituting (11.2) gives instead
 
 $$
-F = \vec E + i\vec H = f e^{i\varphi}\,(\vec a - i\vec b),
+F = \vec E + i\vec H = f \exp(i\varphi)\,(\vec a - i\vec b),
 $$
 
-because $\sin\varphi - i\cos\varphi = -ie^{i\varphi}$. The two agree only at $\varphi = \pi/4$; over $100$ random phases the discrepancy was $2.6 \times 10^{0}$ at worst. Worse, the printed expression is **not a null field**: $(\vec ae^{i\varphi} + \vec be^{-i\varphi})^2 = 2f^2\cos 2\varphi \ne 0$ in general, so it contradicts the paper's own requirement $F^2 = 0$ on the same page. The correct closed form, $F = f e^{i\varphi}(\vec a - i\vec b)$, is null identically, and the correction was verified to $0$.
+because $\sin\varphi - i\cos\varphi = -i\exp(i\varphi)$. The two agree only at $\varphi = \pi/4$; over $100$ random phases the discrepancy was $2.6 \times 10^{0}$ at worst. Worse, the printed expression is **not a null field**: $(\vec a\exp(i\varphi) + \vec b\exp(-i\varphi))^2 = 2f^2\cos 2\varphi \ne 0$ in general, so it contradicts the paper's own requirement $F^2 = 0$ on the same page. The correct closed form, $F = f \exp(i\varphi)(\vec a - i\vec b)$, is null identically, and the correction was verified to $0$.
 
 **The dichotomy of linear and nonlinear solutions is false.** The paper states that a normal plane field satisfying the linear Maxwell equations "has no twist: $\Omega = 0$", while the nonlinear equations admit solutions of the form (11.2) with $\Omega \ne 0$, and offers $f = f_1(t\pm z)f_2(x,y)$ as the nonlinear family. Both halves of that contrast fail on the same example. Take
 
 $$
-\vec a = \vec e_1, \quad \vec b = \vec e_2, \quad
-f = f_1(t+z)f_2(x,y) = (1 + t + z)\,e^{x}, \quad \varphi = -y.
+\vec a = e_1, \quad \vec b = e_2, \quad
+f = f_1(t+z)f_2(x,y) = (1 + t + z)\,\exp(x), \quad \varphi = -y.
 $$
 
 This is a flat normal field in the paper's sense: $|\vec E| = |\vec H|$, $\vec E\cdot\vec H = 0$, and $F^2 = 0$ — all three checked to $0$. It is a wave in the paper's own family, $f = f_1(t+z)f_2(x,y)$. And it satisfies **all four Maxwell equations exactly**: the four regular currents (7.3) vanish to $0$ over $100$ random space-time points, so it is precisely the "linear" case of the contrast. Its twist is
 
 $$
-\Omega = (0,\ 2ff_x,\ 0) = \bigl(0,\ 2(1+t+z)e^{2x},\ 0\bigr),
+\Omega = (0,\ 2f\,\partial_x f,\ 0) = \bigl(0,\ 2(1+t+z)\exp(2x),\ 0\bigr),
 $$
 
 verified to $1.4 \times 10^{-14}$ and nonzero wherever $t + z \ne -1$. So a Maxwell field with a twisting energy flow exists, in the family the paper proposes as the nonlinear counterexample, and the section's conclusion — that nonlinearity is what permits a swirling flow — is not established.
 
-**The correct statement.** For the flat normal field (11.2) the four Maxwell equations hold if and only if, in a frame where $P$ is spanned by $\vec a, \vec b$ and $\hat u = \vec a\times\vec b$ is the normal,
+**The correct statement.** For the flat normal field (11.2) the four Maxwell equations hold if and only if, in a frame where $P$ is spanned by $\vec a, \vec b$ and $\vec u = \vec a\times\vec b$ is the normal,
 
 $$
-f_t = f_n, \qquad \varphi_n = 0, \qquad f_a = -f\varphi_b, \qquad f_b = f\varphi_a,
+\partial_t f = \partial_n f, \qquad \partial_n\varphi = 0, \qquad \partial_a f = -f\partial_b\varphi, \qquad \partial_b f = f\partial_a\varphi,
 $$
 
-which in the coordinates of the counterexample ($\vec a = \vec e_1$, $\vec b = \vec e_2$, $\hat u = \vec e_3$) read $f_t = f_z$, $\varphi_z = 0$, $f_x = -f\varphi_y$, $f_y = f\varphi_x$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $f_t \ne f_z$, $4.6 \times 10^{0}$ for $\varphi_z \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec bf_a - \vec af_b)$, in these coordinates $2f(-f_y, f_x, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
+which in the coordinates of the counterexample ($\vec a = e_1$, $\vec b = e_2$, $\vec u = e_3$) read $\partial_t f = \partial_z f$, $\partial_z\varphi = 0$, $\partial_x f = -f\partial_y\varphi$, $\partial_y f = f\,\partial_x\varphi$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $\partial_t f \ne \partial_z f$, $4.6 \times 10^{0}$ for $\partial_z\varphi \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec b\,\partial_a f - \vec a\,\partial_b f)$, in these coordinates $2f(-\partial_y f, \partial_x f, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
 
 The two pairs are independent: one fixes the propagation along the normal, the other is a Cauchy–Riemann pair for $\ln f$ and $\varphi$ in the plane, solvable precisely when $\ln f$ is planar-harmonic. Both can hold at once, which is why a Maxwell field with a twisting flow exists — for instance every field of the paper's own family $f = f_1(t+z)f_2(x,y)$ with $\varphi$ independent of $z$ and $(f_2, \varphi)$ a Cauchy–Riemann pair in the plane. The contrast the paper wanted is therefore not between linear and nonlinear solutions but between *planar-uniform* and *planar-varying* ones, and the corpus has not found a way to keep the paper's interpretation.
 
@@ -360,8 +360,8 @@ No external source was consulted for the mathematics.
 
 | Item | Result |
 |---|---|
-| (14.24) product, with $s_2\vec u_2$ corrected to $s_2\vec u_1$ | Sound; the correction is forced by associativity and matches the sibling article's equation (1) |
-| Basis (14.27), $e_k^2 = +e_0$; dictionary to the corpus's basis | Exact; $e_k^{\text{source}} = ie_k^{\text{corpus}}$, so a source triple $\vec u$ is the corpus triple $i\vec u$ |
+| (14.24) product, with $s_2\vec q_2$ corrected to $s_2\vec q_1$ | Sound; the correction is forced by associativity and matches the sibling article's equation (1) |
+| Basis (14.27), $e_k^2 = +e_0$; dictionary to the corpus's basis | Exact; $e_k^{\text{source}} = ie_k^{\text{corpus}}$, so a source triple $\vec q$ is the corpus triple $i\vec q$ |
 | $Z' = U^{*}ZU$ preserves $t^2 - \lvert\vec r\rvert^2$ | $8.4 \times 10^{-15}$ |
 | $Z' = U^{*}ZU$ as a parametrization composes under multiplication | Fails on the real parameters (boost/rotation); a bookkeeping matter, recorded |
 | (3.1) $\tfrac12F^{*}dZF$ is real-valued | Imaginary part $1.3 \times 10^{-15}$ |
@@ -377,10 +377,10 @@ No external source was consulted for the mathematics.
 | (12.10) Coulomb field with running phase | Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\varphi(t) = \cos(\omega t)$ gives $1.7 \times 10^{-13}$ |
 | (7.6) second line, $\partial_tg_0 - \nabla\cdot\vec I_0 = 0$ | Correct |
 | (7.6) first line, $\partial_te_0 + \nabla\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial_te_0 - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
-| (11.4) $\Omega = 2f(\vec bf_x - \vec af_y)$ | Correct identity, $1.8 \times 10^{-15}$ |
-| Flat normal field: the exact Maxwell conditions | $f_t = f_n$, $\varphi_n = 0$, $f_a = -f\varphi_b$, $f_b = f\varphi_a$; each necessary (a violation gives $2.4$–$5.3$) and jointly sufficient ($0$) |
-| (11.3) $F = (\vec ae^{i\varphi} + \vec be^{-i\varphi})f$ | **Wrong**; (11.2) gives $F = fe^{i\varphi}(\vec a - i\vec b)$, agreeing only at $\varphi = \pi/4$; the printed form is not null |
-| "Maxwell normal plane field has no twist" | **False**; counterexample $f = (1+t+z)e^x$, $\varphi = -y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2ff_x, 0) \ne 0$ |
+| (11.4) $\Omega = 2f(\vec b\,\partial_x f - \vec a\,\partial_y f)$ | Correct identity, $1.8 \times 10^{-15}$ |
+| Flat normal field: the exact Maxwell conditions | $\partial_t f = \partial_n f$, $\partial_n\varphi = 0$, $\partial_a f = -f\partial_b\varphi$, $\partial_b f = f\partial_a\varphi$; each necessary (a violation gives $2.4$–$5.3$) and jointly sufficient ($0$) |
+| (11.3) $F = (\vec a\exp(i\varphi) + \vec b\exp(-i\varphi))f$ | **Wrong**; (11.2) gives $F = f\exp(i\varphi)(\vec a - i\vec b)$, agreeing only at $\varphi = \pi/4$; the printed form is not null |
+| "Maxwell normal plane field has no twist" | **False**; counterexample $f = (1+t+z)\exp(x)$, $\varphi = -y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2f\,\partial_x f, 0) \ne 0$ |
 | The Appendix proofs of the uniqueness statement (3.1) | Not reproduced; the candidate and its covariant behaviour were verified directly, the completeness claim was not |
 
 **The source.** Sergey Y. Kotkovskiy, *Nonlinear Maxwell equations*. The file `2403.00836v1` resolves on arXiv, dated 28 February 2024. The file `2402.0057v2` carries a malformed identifier which on arXiv belongs to an unrelated paper; the text is the same paper, and the two files differ only in the header, the author's spelling and OCR repairs. The paper's units are $c = 1$ with the field quantities differing from the Gaussian convention by a factor of $4\pi$; the corpus's conventions are unchanged and no conversion is proposed.
@@ -395,7 +395,7 @@ The paper's own theorem about its solutions is also correct, and it is the part 
 
 The system is weaker than Maxwell's equations. It is four independent equations for six field components, two directions of the field's time derivative are free at every point, it fixes no dispersion relation, every constant-amplitude plane wave with arbitrary real frequency and wave vector solves it, and it is not closed under addition. The paper's own plane-wave section supplies the missing dispersion relation from outside the field equation, which is where it belongs. The "nonlinear Maxwell equations" are therefore best read as the energy–momentum balance of the field, derived from a conservation principle, and not as a replacement for Maxwell's equations.
 
-Three further defects were found and each was verified: the continuity relation (7.6) carries the wrong sign on its first line; the closed form (11.3) of the flat normal field does not follow from (11.2) and is not a null field; and the central dichotomy of section 11 — that a Maxwell normal plane field has no twist while a nonlinear one may — is falsified by a wave that satisfies all four Maxwell equations exactly and twists. What survives from the twisting section is the identity (11.4) and the exact condition for a flat normal field: $f_t = f_n$, $\varphi_n = 0$, $f_a = -f\varphi_b$ and $f_b = f\varphi_a$, with the twist vanishing if and only if $f$ is constant in the plane.
+Three further defects were found and each was verified: the continuity relation (7.6) carries the wrong sign on its first line; the closed form (11.3) of the flat normal field does not follow from (11.2) and is not a null field; and the central dichotomy of section 11 — that a Maxwell normal plane field has no twist while a nonlinear one may — is falsified by a wave that satisfies all four Maxwell equations exactly and twists. What survives from the twisting section is the identity (11.4) and the exact condition for a flat normal field: $\partial_t f = \partial_n f$, $\partial_n\varphi = 0$, $\partial_a f = -f\partial_b\varphi$ and $\partial_b f = f\partial_a\varphi$, with the twist vanishing if and only if $f$ is constant in the plane.
 
 The corpus keeps the corpus's own formulation. What the paper contributes that the corpus did not have is the derivation route: an interpretation in which the field equations are a *consequence* of an energy–momentum conservation principle rather than a postulate, together with an exact statement of how much that principle alone can deliver.
 
@@ -403,11 +403,11 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 
 | Symbol | Meaning |
 |---|---|
-| $(s, \vec u)$ | Scalar–vector biquaternion, $s \in \mathbb{C}$, $\vec u \in \mathbb{C}^3$ |
+| $(s, \vec q)$ | Scalar–vector biquaternion, $s \in \mathbb{C}$, $\vec q \in \mathbb{C}^3$ |
 | $e_0, e_1, e_2, e_3$ | The paper's units, with $e_k^2 = +e_0$ and $e_je_k = \delta_{jk}e_0 + i\varepsilon_{jkl}e_l$; not the corpus's basis |
-| $e_k^{\text{source}} = ie_k^{\text{corpus}}$ | Dictionary to the corpus's Hamilton basis; a source triple $\vec u$ is the corpus triple $i\vec u$ |
-| $\bar{\mathcal{B}}$, $\mathcal{B}^{*}$ | Quaternion conjugate $(s, -\vec u)$ and complex conjugate $(s^{*}, \vec u^{*})$ |
-| $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec u^2$ | Square modulus, indefinite; "unitary" means $U\bar U = 1$ |
+| $e_k^{\text{source}} = ie_k^{\text{corpus}}$ | Dictionary to the corpus's Hamilton basis; a source triple $\vec q$ is the corpus triple $i\vec q$ |
+| $\bar{\mathcal{B}}$, $\mathcal{B}^{*}$ | Quaternion conjugate $(s, -\vec q)$ and complex conjugate $(s^{*}, \vec q^{*})$ |
+| $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$ | Square modulus, indefinite; "unitary" means $U\bar U = 1$ |
 | $Z = (t, \vec r)$ | Space-time as a real biquaternion; $dZ$ the hypersurface element |
 | $U$, $\bar U$, $U^{*}$ | Unitary biquaternion of the Lorentz action and its two conjugates |
 | $F = \vec E + i\vec H$ | Riemann–Silberstein field, carried as $(0, \vec E + i\vec H)$; the corpus's $\tilde F$ is a different object |
@@ -430,7 +430,7 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 - The corpus's *The Field-Strength Biquaternion and Its Invariants* and *Exercise: Duality Rotation and the Riemann–Silberstein Vector*, for the complex field combination $\vec E + i\vec H$, its invariants and the duality rotation that the paper's complex charge relies on.
 - The corpus's *The Lorentz Force in Biquaternion Form*, for the Lorentz force in the corpus's conventions, against which the paper's derivation from a singularity of the field equation should be read.
 - The corpus's *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, for the basis $e_0, x, y, z$ with $x = ie_1$ whose vector units square to $+e_0$ — the paper's basis under the dictionary above — and for the left and right regular matrix structures that make that basis natural.
-- The corpus's *Conventions in the Biquaternion Universe* and *The Null Cone*, for the indefinite norm $s^2 - \vec u^2$ and the null structure $F^2 = 0$ of the normal field, in the corpus's own conventions.
+- The corpus's *Conventions in the Biquaternion Universe* and *The Null Cone*, for the indefinite norm $s^2 - \vec q^2$ and the null structure $F^2 = 0$ of the normal field, in the corpus's own conventions.
 - L. D. Landau and E. M. Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), and the paper's reference [10], for the standard energy–momentum tensor of the electromagnetic field and the Gaussian convention by a factor of $4\pi$ from which the paper's units differ.
 - A. Sommerfeld, *Electrodynamics* (Academic Press, 1952), cited by the paper for the position that the energy–momentum tensor has the more direct relation to physical reality than the field quantities, which is the motive of the derivation.
 - V. V. Kassandrov and the corpus's *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry*, for a second, independent programme in which a *nonlinear* equation plays the role of the primary field equation and particles are its singularities; the structural resemblance to this paper's section 13 is real and the two programmes are not otherwise related.

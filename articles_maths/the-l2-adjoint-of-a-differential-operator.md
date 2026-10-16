@@ -78,10 +78,10 @@ on a manifold without boundary, up to the closures. On a manifold with boundary 
 
 *Proof.* This is the von Neumann theory of the deficiency indices of a symmetric operator, proved in *Unbounded Operators and Spectral Measures*; the criterion $\ker(T^*\pm i)=0$ for self-adjointness is the special case of the projection onto the eigenspaces of the Cayley transform, whose domain is all of the Hilbert space exactly when the two deficiency indices vanish. The parametrisation of the extensions is the parametrisation of the isometric isomorphisms between the deficiency subspaces, and the boundary conditions of the previous section are the differential-geometric realisation of these extensions.
 
-**Proposition (the variational characterisation of the spectrum).** Let $T$ be self-adjoint and bounded below, with the associated quadratic form $Q(u)=\langle Tu,u\rangle$ on $\mathrm{dom}(T)$. Then the bottom of the spectrum is
+**Proposition (the variational characterisation of the spectrum).** Let $T$ be self-adjoint and bounded below, with the associated quadratic form $\mathfrak{Q}(u)=\langle Tu,u\rangle$ on $\mathrm{dom}(T)$. Then the bottom of the spectrum is
 
 $$
-\inf\sigma(T) = \inf_{u\neq0}\frac{Q(u)}{\lVert u\rVert_{L^2}^2},
+\inf\sigma(T) = \inf_{u\neq0}\frac{\mathfrak{Q}(u)}{\lVert u\rVert_{L^2}^2},
 $$
 
 the **Rayleigh quotient**; if $T$ has compact resolvent, its spectrum is discrete, $\lambda_1\le\lambda_2\le\cdots$, and the eigenvalues are characterised by the min–max principle.
@@ -90,11 +90,11 @@ the **Rayleigh quotient**; if $T$ has compact resolvent, its spectrum is discret
 
 ## The Laplace-Type Operators
 
-**Theorem.** Let $P$ be a second-order differential operator with the formal self-adjointness $P=P^{\dagger}$ and the ellipticity of its principal symbol, and suppose $P$ is bounded below on the compactly supported sections, $Q(u)\ge -c\lVert u\rVert^2$. Then the operator $P$ with the minimal domain is symmetric and bounded below, and it has a unique self-adjoint extension bounded below, the **Friedrichs extension**; its domain is the closure of the minimal domain in the **form norm** $\lVert u\rVert_Q^2=Q(u)+(c+1)\lVert u\rVert^2$, and on a closed manifold the extension is self-adjoint with domain the Sobolev space $H^2(M;E)$ intersected with the boundary conditions.
+**Theorem.** Let $P$ be a second-order differential operator with the formal self-adjointness $P=P^{\dagger}$ and the ellipticity of its principal symbol, and suppose $P$ is bounded below on the compactly supported sections, $\mathfrak{Q}(u)\ge -c\lVert u\rVert^2$. Then the operator $P$ with the minimal domain is symmetric and bounded below, and it has a unique self-adjoint extension bounded below, the **Friedrichs extension**; its domain is the closure of the minimal domain in the **form norm** $\lVert u\rVert_Q^2=\mathfrak{Q}(u)+(c+1)\lVert u\rVert^2$, and on a closed manifold the extension is self-adjoint with domain the Sobolev space $H^2(M;E)$ intersected with the boundary conditions.
 
-*Proof.* The construction of the Friedrichs extension uses the quadratic form: the form $Q$ is closed and bounded below on its domain with the form norm, and the representation theorem for closed forms produces the self-adjoint operator associated with the form; this is the **Friedrichs extension** of *Unbounded Operators and Spectral Measures* and *Pseudodifferential Operators*. The identifications of the domain with the Sobolev space and the boundary conditions follow from elliptic regularity: a distribution in the domain of a self-adjoint elliptic operator is a Sobolev section of the corresponding order.
+*Proof.* The construction of the Friedrichs extension uses the quadratic form: the form $\mathfrak{Q}$ is closed and bounded below on its domain with the form norm, and the representation theorem for closed forms produces the self-adjoint operator associated with the form; this is the **Friedrichs extension** of *Unbounded Operators and Spectral Measures* and *Pseudodifferential Operators*. The identifications of the domain with the Sobolev space and the boundary conditions follow from elliptic regularity: a distribution in the domain of a self-adjoint elliptic operator is a Sobolev section of the corresponding order.
 
-**Example (the Laplace–Beltrami operator).** On a closed Riemannian manifold the Laplace–Beltrami operator $\Delta$ is formally self-adjoint and nonnegative on the compactly supported sections, $Q(\alpha)=\lVert d\alpha\rVert_{L^2}^2\ge0$ on the forms of the operator group, so it is essentially self-adjoint and its self-adjoint closure has a discrete spectrum $0=\lambda_1\le\lambda_2\le\cdots$; the eigenforms of eigenvalue zero are the **harmonic forms**, $\ker\Delta=\ker d\cap\ker\delta$, and this is the Hodge theory of the de Rham complex on a compact manifold, the content of *Differential Forms and Stokes' Theorem* and *Sheaves and the de Rham Complex* in this Part. On a manifold with boundary the same operator with the minimal domain is symmetric but not self-adjoint, and its self-adjoint extensions are the boundary-value problems — the Dirichlet, the Neumann and the mixed conditions — whose deficiency indices are computed from the boundary term.
+**Example (the Laplace–Beltrami operator).** On a closed Riemannian manifold the Laplace–Beltrami operator $\Delta$ is formally self-adjoint and nonnegative on the compactly supported sections, $\mathfrak{Q}(\alpha)=\lVert d\alpha\rVert_{L^2}^2\ge0$ on the forms of the operator group, so it is essentially self-adjoint and its self-adjoint closure has a discrete spectrum $0=\lambda_1\le\lambda_2\le\cdots$; the eigenforms of eigenvalue zero are the **harmonic forms**, $\ker\Delta=\ker d\cap\ker\delta$, and this is the Hodge theory of the de Rham complex on a compact manifold, the content of *Differential Forms and Stokes' Theorem* and *Sheaves and the de Rham Complex* in this Part. On a manifold with boundary the same operator with the minimal domain is symmetric but not self-adjoint, and its self-adjoint extensions are the boundary-value problems — the Dirichlet, the Neumann and the mixed conditions — whose deficiency indices are computed from the boundary term.
 
 **Example (the connection Laplacian).** The connection Laplacian $\nabla^*\nabla$ of *Hermitian Connections and the Adjoint* is formally self-adjoint and nonnegative, with the same theory; on a closed manifold it is self-adjoint with discrete spectrum, and its kernel is the space of parallel sections.
 
@@ -117,7 +117,7 @@ A symmetric operator has $T\subseteq T^*$; it is self-adjoint when the domains a
 | Boundary term of Green's formula | The obstruction to the equality of the formal and global adjoints |
 | Symmetric, self-adjoint, essentially self-adjoint | $T\subseteq T^*$; $T=T^*$; $\bar T=\bar T^*$ |
 | Deficiency indices $n_\pm=\dim\ker(T^*\mp i)$ | Essential self-adjointness iff $n_+=n_-=0$ |
-| $Q(u)=\langle Tu,u\rangle$, Rayleigh quotient | Variational characterisation of the bottom of the spectrum |
+| $\mathfrak{Q}(u)=\langle Tu,u\rangle$, Rayleigh quotient | Variational characterisation of the bottom of the spectrum |
 | Friedrichs extension, form norm | The self-adjoint extension of a bounded-below symmetric operator |
 | $\ker\Delta=\ker d\cap\ker\delta$, Hodge theory | Harmonic forms of a compact Riemannian manifold |
 

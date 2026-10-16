@@ -10,7 +10,7 @@ The one-sided operators and their composition are *One-Sided Operators on a Clif
 
 ## The Signed One-Sided Family
 
-**Definition.** For $a \in \mathrm{Cl}(V,q)$ the **signed left multiplication** and the **signed right multiplication** are
+**Definition.** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$ the **signed left multiplication** and the **signed right multiplication** are
 
 $$
 \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) = L_a\bigl(\alpha(y)\bigr), \qquad \mathrm{P}^{\alpha}_a(y) = y\,\alpha(a) = R_{\alpha(a)}(y).
@@ -42,7 +42,7 @@ So the composite of **two** signed left multiplications is an ordinary left mult
 
 **Proof.** $\mathrm{L}^{\alpha}_aL_c(y) = a\alpha(cy) = a\alpha(c)\alpha(y) = \mathrm{L}^{\alpha}_{a\alpha(c)}(y)$; $L_a\mathrm{L}^{\alpha}_c(y) = ac\alpha(y) = \mathrm{L}^{\alpha}_{ac}(y)$; and composing two of the first kind gives $L_{a\alpha(c)}\alpha\circ\alpha = L_{a\alpha(c)}$.
 
-**Proposition (the right family carries no new operators).** Since $\alpha$ is a bijection, $\{\mathrm{P}^{\alpha}_a : a \in \mathrm{Cl}(V,q)\} = \{R_b : b \in \mathrm{Cl}(V,q)\}$: the signed right multiplications are exactly the ordinary right multiplications, reparametrised by $b = \alpha(a)$. Consequently
+**Proposition (the right family carries no new operators).** Since $\alpha$ is a bijection, $\{\mathrm{P}^{\alpha}_a : a \in \mathrm{Cl}(V,\mathfrak{Q})\} = \{R_b : b \in \mathrm{Cl}(V,\mathfrak{Q})\}$: the signed right multiplications are exactly the ordinary right multiplications, reparametrised by $b = \alpha(a)$. Consequently
 
 $$
 \mathrm{P}^{\alpha}_a \circ \mathrm{P}^{\alpha}_c = \mathrm{P}^{\alpha}_{ca}, \qquad
@@ -62,16 +62,16 @@ and the signed right family is a group, being the ordinary right family. The gen
 
 **Definition.** The **fixed space** of an operator $T$ is $\mathrm{Fix}(T) = \{y : T(y) = y\}$.
 
-**Proposition.** For $a \in \mathrm{Cl}(V,q)$,
+**Proposition.** For $a \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \mathrm{Fix}(\mathrm{L}^{\alpha}_a) = \{\, y : a\,\alpha(y) = y \,\}, \qquad \mathrm{Fix}(\mathrm{P}^{\alpha}_a) = \{\, y : y\,\alpha(a) = y \,\}.
 $$
 
-In particular $\mathrm{Fix}(\mathrm{L}^{\alpha}_1) = \mathrm{Fix}(\alpha) = \mathrm{Cl}^{0}(V,q)$ is the even part, and for a scalar $\lambda$
+In particular $\mathrm{Fix}(\mathrm{L}^{\alpha}_1) = \mathrm{Fix}(\alpha) = \mathrm{Cl}^{0}(V,\mathfrak{Q})$ is the even part, and for a scalar $\lambda$
 
 $$
-\mathrm{Fix}(L_{\lambda}\alpha) = \begin{cases} \mathrm{Cl}^{0}(V,q), & \lambda = 1, \\ \mathrm{Cl}^{1}(V,q), & \lambda = -1, \\ 0, & \lambda \neq \pm1. \end{cases}
+\mathrm{Fix}(L_{\lambda}\alpha) = \begin{cases} \mathrm{Cl}^{0}(V,\mathfrak{Q}), & \lambda = 1, \\ \mathrm{Cl}^{1}(V,\mathfrak{Q}), & \lambda = -1, \\ 0, & \lambda \neq \pm1. \end{cases}
 $$
 
 **Proof.** Write $y = y_0 + y_1$. The equation $\lambda\alpha(y) = y$ is $\lambda y_0 = y_0$ and $-\lambda y_1 = y_1$; the two are satisfied independently, giving the three cases. The general formulae are the definitions.
@@ -88,13 +88,13 @@ $$
 
 **Proof.** $\mathrm{L}^{\alpha}_x\bigl(R_{\alpha(x)^{-1}}(y)\bigr) = x\,\alpha\bigl(y\,\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha\bigl(\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha^{2}(x)^{-1} = x\,\alpha(y)\,x^{-1} = \Sigma_x(y)$, using that $\alpha$ is an automorphism, that $\alpha^{-1} = \alpha$, and that $\alpha^{2} = \mathrm{id}$. The inverse right multiplication of the other convention, $R_{x^{-1}}$, gives only $\varepsilon_x\Sigma_x$, because $\alpha(x)^{-1} = \varepsilon_x x^{-1}$; the two pairings agree exactly on the even part of the unit group, which is the reason the corpus keeps the two families apart.
 
-**Theorem (the reflections).** Let $u \in V$ with $q(u) \neq 0$. Then $\Sigma_u = \mathrm{L}^{\alpha}_u\circ R_{\alpha(u)^{-1}}$ restricted to $V$ is the reflection $\rho_u$, and its fixed vectors in $V$ are the hyperplane $u^{\perp}$:
+**Theorem (the reflections).** Let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. Then $\Sigma_u = \mathrm{L}^{\alpha}_u\circ R_{\alpha(u)^{-1}}$ restricted to $V$ is the reflection $\rho_u$, and its fixed vectors in $V$ are the hyperplane $u^{\perp}$:
 
 $$
 \mathrm{Fix}\bigl(\Sigma_u\big|_V\bigr) = u^{\perp} = \{\, v \in V : B(u,v) = 0 \,\}.
 $$
 
-**Proof.** The reflection statement is the theorem of *The Sandwich with the Signed Product*; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)q(u)^{-1}u = 0$, that is $B(v,u) = 0$.
+**Proof.** The reflection statement is the theorem of *The Sandwich with the Signed Product*; for the fixed space, $\rho_u(v) = v$ exactly when $2B(v,u)\mathfrak{Q}(u)^{-1}u = 0$, that is $B(v,u) = 0$.
 
 **Remark (why one side is not enough).** A signed left multiplication by a vector never preserves $V$, for the same reason an ordinary left multiplication does not: $L_u\alpha(\mathrm{Cl}^{1})$ contains the scalars as well as the vectors, since $\alpha$ flips the parity. Only the pairing with an ordinary right multiplication brings the parity back and produces an operator of $V$. This is the one-sided form of the statement of *One-Sided Operators on a Clifford Algebra* that the scalar is the only one-sided operator preserving the quadratic space.
 
@@ -106,7 +106,7 @@ With $e_j^{2} = -1$ let $\lambda = -1$. Then $L_{-1}\alpha$ is the identity on t
 
 ### A Vector
 
-In the same algebra let $a = e_1$. Write $y = y_0 + y_1$ with $y_0$ even and $y_1$ odd, so that $\alpha(y) = y_0 - y_1$ and the equation $e_1\alpha(y) = y$ reads $e_1y_0 - e_1y_1 = y_0 + y_1$. Comparing the even parts gives $y_1 = e_1y_0$, and the odd parts then give $-e_1y_1 = y_0$, that is $-e_1^{2}y_0 = y_0$, which holds identically. So $\mathrm{Fix}(\mathrm{L}^{\alpha}_{e_1}) = \{y_0 + e_1y_0 : y_0 \in \mathrm{Cl}^{0}(V,q)\}$, a four-dimensional space that is not graded, the graph of the left multiplication by $e_1$ in the even part.
+In the same algebra let $a = e_1$. Write $y = y_0 + y_1$ with $y_0$ even and $y_1$ odd, so that $\alpha(y) = y_0 - y_1$ and the equation $e_1\alpha(y) = y$ reads $e_1y_0 - e_1y_1 = y_0 + y_1$. Comparing the even parts gives $y_1 = e_1y_0$, and the odd parts then give $-e_1y_1 = y_0$, that is $-e_1^{2}y_0 = y_0$, which holds identically. So $\mathrm{Fix}(\mathrm{L}^{\alpha}_{e_1}) = \{y_0 + e_1y_0 : y_0 \in \mathrm{Cl}^{0}(V,\mathfrak{Q})\}$, a four-dimensional space that is not graded, the graph of the left multiplication by $e_1$ in the even part.
 
 ### The Reflection
 

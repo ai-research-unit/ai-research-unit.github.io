@@ -7,7 +7,7 @@ This article studies **regular** (equivalently **monogenic**) split-quaternion-v
 
 The article owns the regularity theory of the category: the operator and its conjugate, the system of regularity equations, the failure of ellipticity, the examples, the harmonicity that survives as a wave equation, and the failure of the complex analogy where the zero divisors intervene. It relies on *Split-Quaternion Analysis* for the differential operators and the Peirce coordinates, on *Split-Quaternion Analysis* for the subalgebra operators, and on the biquaternion counterpart *Biquaternion Regular Functions* for the structural comparison. No physics is invoked; the object called a "Dirac operator" in older literature is here the **Cauchy–Riemann operator**, and that name is used throughout.
 
-**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial_{q_0}, \partial_{q_1}, \partial_{q_2}, \partial_{q_3}$.
+**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial_{q_0}, \partial_{q_1}, \partial_{q_2}, \partial_{q_3}$.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 
@@ -53,12 +53,12 @@ hold. This is the **split-quaternion Cauchy–Riemann system**, four scalar equa
 **Theorem.** The principal symbol of $\nabla$ is $s(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3$, and
 
 $$
-s(\xi)\,s^{\natural}(\xi) = \xi_0^2 + \xi_1^2 - \xi_2^2 - \xi_3^2 = N(\xi) e_0,
+s(\xi)\,s^{\natural}(\xi) = \xi_0^2 + \xi_1^2 - \xi_2^2 - \xi_3^2 = \langle \xi\rangle_{\natural} e_0,
 $$
 
 which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is **not elliptic**: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.
 
-**Proof.** The identity $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $N(\xi)$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.
+**Proof.** The identity $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_0$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $\langle \xi\rangle_{\natural}$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.
 
 **Corollary.** The elliptic tools of the complex theory are unavailable. There is no maximum principle, no mean value property, and no Liouville theorem for regular functions of the full algebra: the equation $\Box F = 0$ admits the plane-wave solutions $F(\tilde q) = f(\tilde q\cdot \xi)$ for every null vector $\xi$, which are bounded and nonconstant on strips and grow without bound in other directions but obey no elliptic constraint.
 
@@ -75,10 +75,10 @@ which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy�
 **The Cauchy kernel and its singularity.** The candidate fundamental solution is
 
 $$
-G(\tilde q) = \frac{\tilde{q}^{\natural}}{N(\tilde q)^2},
+G(\tilde q) = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}^2},
 $$
 
-which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{\mathrm{s}}$ has zero divisors, $N(\tilde q) = 0$ on the whole cone $\mathcal{N}$, so $G$ is singular on a **three-dimensional cone**, not merely at the origin. This is the first and deepest failure of the complex analogy.
+which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{\mathrm{s}}$ has zero divisors, $\langle\tilde q\rangle_{\natural} = 0$ on the whole cone $\mathcal{N}$, so $G$ is singular on a **three-dimensional cone**, not merely at the origin. This is the first and deepest failure of the complex analogy.
 
 ## Harmonicity and the Factorization of the Ultrahyperbolic Operator
 
@@ -98,9 +98,9 @@ Right-regular functions are likewise harmonic, and the factorization $\Box = \na
 
 The complex analogy fails precisely where the zero divisors intervene, and this is the content of the present article.
 
-**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/A$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
+**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/A$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
 
-**Proof.** The singular set of $G$ is $\{N(\tilde q) = 0\}$, which is $\mathcal{N}$, of dimension $3$; a frame around a point of $\mathcal{N}$ is not a compact separating surface but is pierced by the cone.
+**Proof.** The singular set of $G$ is $\{\langle\tilde q\rangle_{\natural} = 0\}$, which is $\mathcal{N}$, of dimension $3$; a frame around a point of $\mathcal{N}$ is not a compact separating surface but is pierced by the cone.
 
 **The Cauchy integral formula fails.** Even when a boundary integral can be written down, the kernel is singular on the part of the null cone inside the domain, so the classical Cauchy integral formula has no direct analogue: there is no simply connected domain whose boundary avoids the characteristic set while containing the singularities of the kernel.
 
@@ -114,7 +114,7 @@ The split-quaternion case is the **fully indefinite** one: the form is indefinit
 
 ## Summary
 
-The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/N(\tilde q)^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
+The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
 
 ## Summary of Notation
 
@@ -128,9 +128,9 @@ The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_
 | $g = \operatorname{diag}(1,1,-1,-1)$ | the Clifford sign matrix | this article |
 | $\mathbb{C} = \mathbb{R}[e_1]$ | the elliptic subalgebra, $A = q_0+q_1 e_1$ | *Split-Quaternion Elementary Functions* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex planes, hyperbolic Cauchy–Riemann operators | *Split-Quaternion Split-Complex Subspaces* |
-| $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
+| $G(\tilde q) = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / characteristic set | *Split-Quaternion Zero Divisors* |
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 

@@ -73,19 +73,19 @@ The jump is a single point and the singular directions fill the fibre.
 
 ### Action of Pseudodifferential Operators
 
-**Theorem (microlocal action).** Let $P=a(x,D)$ be pseudodifferential of order $m$ and let $u \in \mathcal E'$. Then
+**Theorem (microlocal action).** Let $P=\mathfrak{a}(x,D)$ be pseudodifferential of order $m$ and let $u \in \mathcal E'$. Then
 
 $$
 WF(Pu)\subseteq WF(u),
 $$
 
-and the inclusion is locally sharp at the elliptic points of $P$: if $(x_0,\xi_0)\notin WF(Pu)$ and $a$ is elliptic at $(x_0,\xi_0)$, then $(x_0,\xi_0)\notin WF(u)$. In general
+and the inclusion is locally sharp at the elliptic points of $P$: if $(x_0,\xi_0)\notin WF(Pu)$ and $\mathfrak{a}$ is elliptic at $(x_0,\xi_0)$, then $(x_0,\xi_0)\notin WF(u)$. In general
 
 $$
 WF(u)\subseteq WF(Pu)\cup\operatorname{Char}(P), \qquad \operatorname{Char}(P)=\{(x,\xi)\in T^*M\setminus0:\sigma_m(P)(x,\xi)=0\}.
 $$
 
-*Proof.* The first inclusion is the statement that multiplication by a symbol of order $m$ maps the rapidly decreasing class into itself in each conic direction: after localisation the composition with $a$ is a convolution in frequency with a kernel whose Fourier transform decays rapidly off the diagonal, so a rapid decrease in a cone is preserved. For the second, if $a$ is elliptic at $(x_0,\xi_0)$ choose a microlocal parametrix $Q$ with symbol $b \in S^{-m}$ equal to $a^{-1}$ in a conic neighbourhood of $(x_0,\xi_0)$; then $u=Q Pu+(I-QP)u$, the second term is smoothing near $(x_0,\xi_0)$ by the construction of $b$, and $Q$ cannot create a singularity at $(x_0,\xi_0)$ by the first inclusion.
+*Proof.* The first inclusion is the statement that multiplication by a symbol of order $m$ maps the rapidly decreasing class into itself in each conic direction: after localisation the composition with $\mathfrak{a}$ is a convolution in frequency with a kernel whose Fourier transform decays rapidly off the diagonal, so a rapid decrease in a cone is preserved. For the second, if $\mathfrak{a}$ is elliptic at $(x_0,\xi_0)$ choose a microlocal parametrix $Q$ with symbol $\mathfrak{b} \in S^{-m}$ equal to $\mathfrak{a}^{-1}$ in a conic neighbourhood of $(x_0,\xi_0)$; then $u=Q Pu+(I-QP)u$, the second term is smoothing near $(x_0,\xi_0)$ by the construction of $\mathfrak{b}$, and $Q$ cannot create a singularity at $(x_0,\xi_0)$ by the first inclusion.
 
 **Corollary (microlocal elliptic regularity).** If $P$ is elliptic on an open conic set $U \subseteq T^*M\setminus0$ and $Pu \in C^\infty$ microlocally on $U$, in the sense $U\cap WF(Pu)=\varnothing$, then $U\cap WF(u)=\varnothing$. In particular an elliptic operator has $WF(Pu)=WF(u)$, so the wavefront set is a microlocal invariant of the solutions of an elliptic equation.
 
@@ -167,7 +167,7 @@ $$
 
 and $WF(u)\setminus WF(Pu)$ is a union of bicharacteristics: if $(x_0,\xi_0)\in WF(u)\setminus WF(Pu)$ then the whole bicharacteristic through $(x_0,\xi_0)$ lies in $WF(u)\setminus WF(Pu)$. The same statement holds with $WF^s$ in place of $WF$.
 
-*Proof (sketch).* One proves the microlocal regularity at a bicharacteristic from the regularity at a neighbouring point by the **positive commutator** method: construct a pseudodifferential operator $A$ of order $0$ whose symbol is supported in a small cone near the current point of the bicharacteristic and is a monotone function along $H_{p_m}$; the commutator $[P,A]$ has principal symbol $\frac1i\{p_m,a\}$, which has a definite sign by the monotonicity along the flow, while the quadratic form of $P$ contributes a boundary term controlled by the known regularity. The inequality that results is the energy estimate that transports the regularity one step along the bicharacteristic, and iterating along the flow gives the invariance. The full argument is given in the works cited below.
+*Proof (sketch).* One proves the microlocal regularity at a bicharacteristic from the regularity at a neighbouring point by the **positive commutator** method: construct a pseudodifferential operator $A$ of order $0$ whose symbol is supported in a small cone near the current point of the bicharacteristic and is a monotone function along $H_{p_m}$; the commutator $[P,A]$ has principal symbol $\frac1i\{p_m,\mathfrak{a}\}$, which has a definite sign by the monotonicity along the flow, while the quadratic form of $P$ contributes a boundary term controlled by the known regularity. The inequality that results is the energy estimate that transports the regularity one step along the bicharacteristic, and iterating along the flow gives the invariance. The full argument is given in the works cited below.
 
 **Corollary.** If $P$ is real principal type and $Pu$ is smooth, then $u$ is smooth off the characteristic set, by microlocal elliptic regularity, and on the characteristic set the singularities of $u$ are constant along the bicharacteristics; consequently the singular support of $u$ is a union of projections of bicharacteristics, and the singularities cannot be confined to a proper subset of one.
 
@@ -177,7 +177,7 @@ and $WF(u)\setminus WF(Pu)$ is a union of bicharacteristics: if $(x_0,\xi_0)\in 
 
 ## The Analytic Wavefront Set
 
-**Definition.** Replacing rapid decrease by exponential decrease, or equivalently testing holomorphic extendability of the localised Fourier transform, defines the **analytic wavefront set** $WF_a(u)$: $(x_0,\xi_0)\notin WF_a(u)$ if there is a cutoff $\chi$ and a cone $\Gamma$ about $\xi_0$ with $|\widehat{\chi u}(\xi)|\le Ce^{-c|\xi|}$ on $\Gamma$. One has $WF(u)\subseteq WF_a(u)$, the projection of $WF_a(u)$ is the analytic singular support, and $WF_a(u)=\varnothing$ exactly when $u$ is real analytic.
+**Definition.** Replacing rapid decrease by exponential decrease, or equivalently testing holomorphic extendability of the localised Fourier transform, defines the **analytic wavefront set** $WF_a(u)$: $(x_0,\xi_0)\notin WF_a(u)$ if there is a cutoff $\chi$ and a cone $\Gamma$ about $\xi_0$ with $|\widehat{\chi u}(\xi)|\le C\exp(-c|\xi|)$ on $\Gamma$. One has $WF(u)\subseteq WF_a(u)$, the projection of $WF_a(u)$ is the analytic singular support, and $WF_a(u)=\varnothing$ exactly when $u$ is real analytic.
 
 **Theorem (analytic propagation; Sato–Kawai–Kashiwara).** Let $P$ be of real principal type with real analytic coefficients and let $Pu$ be real analytic. Then $WF_a(u)\setminus WF_a(Pu)$ is contained in $\operatorname{Char}(P)$ and is invariant under the bicharacteristic flow of $p_m$; in particular the analytic singularities of a solution of an analytic real principal-type equation propagate along bicharacteristics.
 

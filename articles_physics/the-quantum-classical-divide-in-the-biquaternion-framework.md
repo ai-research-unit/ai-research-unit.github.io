@@ -115,7 +115,7 @@ $$
 P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right),
 $$
 
-and the joint probability is the trace pairing with $\tilde\Pi_A(\hat{a})\otimes \tilde\Pi_B(\hat{b})$. This is the case treated in Exercise: Entanglement Entropy and the Partial Trace and Q6.
+and the joint probability is the trace pairing with $\tilde\Pi_A(a^{\mathrm{fop}})\otimes \tilde\Pi_B(b^{\mathrm{fop}})$. This is the case treated in Exercise: Entanglement Entropy and the Partial Trace and Q6.
 
 ### Subset IIa: Single excitation split by a beam splitter
 

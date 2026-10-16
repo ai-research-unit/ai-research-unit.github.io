@@ -4,7 +4,7 @@
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
-*Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article reads the operation on
+*Introduction to the Antisymmetric Plain Algebra*. This article reads the operation on
 the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ of *Introduction to the $2\times2$ Matrix
 Element Representation $M_2(\mathbb{C})$ of Quaternions*, where the plain product becomes the matrix
 product and the antisymmetrization becomes the **halved commutator**. It gives the matrix of the cross
@@ -23,7 +23,7 @@ nothing new.
 The model itself, its basis images and the multiplicativity are *Introduction to the $2\times2$ Matrix
 Element Representation $M_2(\mathbb{C})$ of Quaternions* and *The General Plain Algebra in the
 $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the bracket and its structure are
-*Introduction to the Antisymmetric Plain Algebra of Quaternions*, *The Lie Algebra of the
+*Introduction to the Antisymmetric Plain Algebra*, *The Lie Algebra of the
 Antisymmetric Plain Algebra* and *The Killing Form of the Antisymmetric Plain Algebra*, below this
 article in this category. The companion article is *The Antisymmetric Plain Algebra in the
 $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
@@ -39,14 +39,14 @@ with $\mathsf{M}_2(e_0)=\mathrm{I}_2$, $\mathsf{M}_2(e_1)=-i\sigma_1$, $\mathsf{
 $\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices; the plain product is the matrix product,
 $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, and the conjugation is
 the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$. The
-**quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
+**quaternion form** is $\langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
+$\langle\tilde p,\tilde q\rangle=p_0q_0-\vec p\cdot\vec q$.
 
 ## The Model
 
 **Proposition.** The map $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism into
 $M_2(\mathbb{C})$, with $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$ and determinant
-$\det\mathsf{M}_2(\tilde q)=q_0^2+|\vec q|^2=N(\tilde q)$, the quaternion norm. The
+$\det\mathsf{M}_2(\tilde q)=q_0^2+|\vec q|^2=\langle\tilde q\rangle_{\natural}$, the quaternion norm. The
 pure elements have trace-free images, and the image of the vector subspace is a three-dimensional real
 subspace of the trace-free matrices.
 
@@ -71,7 +71,7 @@ and half of it is the image of the bracket, the model being real-linear.
 **Remark (the block is the commutator of the model).** The antisymmetric plain algebra is, in this
 model, the halved commutator of the two by two complex matrices; the plain product is the product, the
 symmetric half is the halved anticommutator, and the three are the two products and the bracket of the
-matrix algebra. The model exhibits the split $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ as the identity
+matrix algebra. The model exhibits the split $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ as the identity
 $XY=\tfrac12(XY+YX)+\tfrac12(XY-YX)$.
 
 ## The Image and the Kernel
@@ -124,7 +124,7 @@ $\mathsf{M}_2(e_0)=\mathrm{I}_2$ entering no value.
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0,\qquad
-\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\vec q|^2,
+\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_0^2+|\vec q|^2,
 $$
 
 $$
@@ -135,12 +135,12 @@ $$
 and the images satisfy the normality relation
 
 $$
-\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\,\mathrm{I}_2 .
+\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=\langle\tilde q\rangle_{\natural}\,\mathrm{I}_2 .
 $$
 
 *Proof.* The trace and the determinant are those of the model; the value of the block is pure, so the
 trace vanishes and the determinant is the norm of the pure vector part $|\vec p\times\vec q|^2$.
-The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q\tilde q^{\natural})=N(\tilde q)\mathrm{I}_2$.
+The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q\tilde q^{\natural})=\langle\tilde q\rangle_{\natural}\mathrm{I}_2$.
 
 ## The Trace Form and the Killing Form
 
@@ -152,18 +152,18 @@ $$
 $$
 
 is the Killing form of the block, and on general elements
-$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2B(\tilde p,\tilde q)$ and
-$\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$.
+$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2\langle\tilde p,\tilde q\rangle$ and
+$\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=\langle\tilde p,\tilde q\rangle_{\natural}$.
 
 *Proof.* The model is multiplicative, so
-$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q)=2\mathrm{Sc}(\tilde p\tilde q)=2B(\tilde p,\tilde q)$;
-on pure elements $B=-\vec p\cdot\vec q$ and the trace is $-2\,\vec p\cdot\vec q$, the
+$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q)=2\mathrm{Sc}(\tilde p\tilde q)=2\langle\tilde p,\tilde q\rangle$;
+on pure elements $\langle\cdot,\cdot\rangle=-\vec p\cdot\vec q$ and the trace is $-2\,\vec p\cdot\vec q$, the
 Killing form. For the quaternion form, $\mathsf{M}_2(\tilde q)^{\dagger}=\mathsf{M}_2(\tilde q^{\natural})$
-and $\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2\mathrm{Sc}(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$.
+and $\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2\mathrm{Sc}(\tilde p\tilde q^{\natural})=2\langle\tilde p,\tilde q\rangle_{\natural}$.
 
 **Remark (the two objects of the block in one model).** The model shows the two objects of the block at
 once: the bracket is the commutator and the invariant form is the trace. This is the reason the block
-(*The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* of
+(*Introduction to the Symmetric Plain Algebra* of
 
 ## The Comparison with the Plain Algebra on the Model
 
@@ -173,10 +173,10 @@ once: the bracket is the commutator and the invariant form is the trace. This is
 | the image | the four-dimensional real subspace $\mathsf{M}_2(\mathbb{H})$ | the trace-free part of the image |
 | the kernel of the model | $\{0\}$ | $\{0\}$ |
 | the trace of a value | $2\,\mathrm{Sc}(\tilde p\tilde q)$ | $0$ |
-| the invariant form | $N$, the determinant | $\kappa$, the trace form |
+| the invariant form | $\langle\cdot,\cdot\rangle_{\natural}$, the determinant | $\kappa$, the trace form |
 
 **Remark (the plain algebra on the same model).** The plain algebra is the matrix product on the image
-of the model, of invariant form $N$ read as the determinant, and its multiplicativity is the
+of the model, of invariant form $\langle\cdot,\cdot\rangle_{\natural}$ read as the determinant, and its multiplicativity is the
 multiplicativity of the model. The antisymmetric block is the commutator, of invariant form the trace
 form, and its values are the trace-free matrices. The plain reading is *The General Plain Algebra in
 the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
@@ -188,10 +188,10 @@ $\mathsf{M}_2(\tilde p\times\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}
 the three matrix images $-i\sigma_1,-i\sigma_2,-i\sigma_3$ satisfying the cross-product commutators. The
 image of the block is the three-dimensional real subspace of trace-free matrices of the image,
 identified with $\mathfrak{su}(2)$; the model is faithful, of kernel $\{0\}$. The invariants are
-$\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$, $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$,
+$\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$, $\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}$,
 $\operatorname{Tr}\mathsf{M}_2(\tilde p\times\tilde q)=0$ and
 $\det\mathsf{M}_2(\tilde p\times\tilde q)=|\vec p\times\vec q|^2$, with the normality
-$\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\mathrm{I}_2$. The trace form of the
+$\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=\langle\tilde q\rangle_{\natural}\mathrm{I}_2$. The trace form of the
 model is the Killing form of the block on the derived algebra, and the general trace and the conjugate
 trace read the plain form and the quaternion form. The plain algebra on the same model is the matrix
 product, of the whole matrix algebra as image.
@@ -204,7 +204,7 @@ product, of the whole matrix algebra as image.
 | $\mathsf{M}_2(\tilde p\times\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)]$ | the block as the halved commutator |
 | $\{\operatorname{Tr}=0\}$ | the image of the block, the trace-free part |
 | $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$ | the trace of the model |
-| $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$ | the determinant, the quaternion norm |
+| $\det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}$ | the determinant, the quaternion norm |
 | $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=-2\,\vec p\cdot\vec q$ | the trace form as the Killing form |
 
 ## Further Reading

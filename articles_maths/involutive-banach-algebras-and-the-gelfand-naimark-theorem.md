@@ -37,9 +37,9 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach
 
 **Proof (sketch).** The states of $A$ separate the points, and the GNS construction attaches to each state a cyclic $*$-representation whose vector is cyclic; the direct sum of these representations over the states is a $*$-representation, and it is faithful and isometric because for $a \neq 0$ some state reaches $\lVert a\rVert$ on $a^*a$. The construction of the states and of the GNS representation is *States and Positive Functionals on an Involutive Algebra*; the identification of the norm of the image with that of $A$ uses the $\mathrm{C}^*$-identity and the isometry of the involution.
 
-**Theorem (commutative Gelfand–Naimark).** Let $A$ be a commutative unital $\mathrm{C}^*$-algebra. Then the Gelfand transform $a \mapsto \hat a$ is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, and the assignment $A \mapsto \operatorname{Max}(A)$ is a contravariant equivalence between commutative unital $\mathrm{C}^*$-algebras and compact Hausdorff spaces.
+**Theorem (commutative Gelfand–Naimark).** Let $A$ be a commutative unital $\mathrm{C}^*$-algebra. Then the Gelfand transform $a \mapsto \mathcal F a$ is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, and the assignment $A \mapsto \operatorname{Max}(A)$ is a contravariant equivalence between commutative unital $\mathrm{C}^*$-algebras and compact Hausdorff spaces.
 
-**Proof.** For a character $\chi$ of a $\mathrm{C}^*$-algebra one has $\chi(a^*) = \overline{\chi(a)}$, because $a = h + ik$ with $h,k$ self-adjoint and $\chi(h), \chi(k)$ real; the transform is therefore a $*$-homomorphism. The $\mathrm{C}^*$-identity gives $\lVert\hat a\rVert_\infty^2 = \sup\lvert\chi(a)\rvert^2 = \sup\chi(a^*a) = r(a^*a) = \lVert a\rVert^2$, using the spectral radius formula for the self-adjoint element $a^*a$; hence the transform is isometric, its image is a closed $*$-subalgebra separating points and containing the constants, and it is all of $C(\operatorname{Max}(A))$ by the Stone–Weierstrass theorem. The equivalence is the functoriality of the construction, a unital $*$-homomorphism inducing the continuous map of the spectra by composition.
+**Proof.** For a character $\chi$ of a $\mathrm{C}^*$-algebra one has $\chi(a^*) = \overline{\chi(a)}$, because $a = h + ik$ with $h,k$ self-adjoint and $\chi(h), \chi(k)$ real; the transform is therefore a $*$-homomorphism. The $\mathrm{C}^*$-identity gives $\lVert\mathcal F a\rVert_\infty^2 = \sup\lvert\chi(a)\rvert^2 = \sup\chi(a^*a) = r(a^*a) = \lVert a\rVert^2$, using the spectral radius formula for the self-adjoint element $a^*a$; hence the transform is isometric, its image is a closed $*$-subalgebra separating points and containing the constants, and it is all of $C(\operatorname{Max}(A))$ by the Stone–Weierstrass theorem. The equivalence is the functoriality of the construction, a unital $*$-homomorphism inducing the continuous map of the spectra by composition.
 
 ## The Spectrum and the Involution
 
@@ -91,7 +91,7 @@ An involutive Banach algebra is a Banach algebra with an anti-automorphism $\sig
 | $A^+$, $A^-$ | Self-adjoint (Hermitian) and skew elements |
 | $\varphi$, $*$-homomorphism | $\varphi(a^*) = \varphi(a)^*$ |
 | $\pi : A \to B(H)$ | A $*$-representation |
-| $r(a)$, $\operatorname{Max}(A)$, $\hat a$ | Spectral radius, maximal ideal space, Gelfand transform |
+| $r(a)$, $\operatorname{Max}(A)$, $\mathcal F a$ | Spectral radius, maximal ideal space, Gelfand transform |
 | $\lVert a^*\rVert = \lVert a\rVert$, $\lVert\varphi(a)\rVert \leq \lVert a\rVert$ | Isometry of the involution; contractivity |
 | $\pi_u = \bigoplus_f \pi_f$, $\mathcal{S}(A)$ | The universal representation, over the state space |
 | $A^{**} = \pi_u(A)''$ | The enveloping von Neumann algebra |

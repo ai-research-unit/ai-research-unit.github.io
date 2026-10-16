@@ -9,17 +9,17 @@ The treatment is purely mathematical. No physics is invoked; the projective and 
 
 ## The Null Cone of the Split-Biquaternion Norm
 
-**Theorem.** The split-biquaternion norm $N$ is **anisotropic**: $N(\tilde{Q}) = 0$ if and only if $\tilde{Q} = 0$. Consequently the null cone of $N$ is the single point $\{0\}$.
+**Theorem.** The split-biquaternion norm $\langle\cdot\rangle_{\natural}$ is **anisotropic**: $\langle\tilde{Q}\rangle_{\natural} = 0$ if and only if $\tilde{Q} = 0$. Consequently the null cone of $\langle\cdot\rangle_{\natural}$ is the single point $\{0\}$.
 
-This is established in *Split-Biquaternion Norm and Invertibility*; the reason is that $\mathrm{Re}\,N(\tilde{Q}) = R(\tilde{Q})$ is a sum of squares of the eight real coordinates, vanishing only at the origin.
+This is established in *Split-Biquaternion Norm and Invertibility*; the reason is that $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q})$ is a sum of squares of the eight real coordinates, vanishing only at the origin.
 
-The set of elements that are not units is nevertheless large, and it is cut out by $N$ taking a zero divisor value rather than the value zero. This is the essential difference from the biquaternion case, where the zero divisors are exactly the null cone of an isotropic form over $\mathbb{C}$; here the split-biquaternion norm is anisotropic and the non-invertible elements are described by the vanishing of one split complex component.
+The set of elements that are not units is nevertheless large, and it is cut out by $\langle\cdot\rangle_{\natural}$ taking a zero divisor value rather than the value zero. This is the essential difference from the biquaternion case, where the zero divisors are exactly the null cone of an isotropic form over $\mathbb{C}$; here the split-biquaternion norm is anisotropic and the non-invertible elements are described by the vanishing of one split complex component.
 
 ## The Rank-One Description and the Zero Divisor Locus
 
 **Definition.** An element $\tilde{Q} \neq 0$ is a **zero divisor** if there is a nonzero $\tilde{R}$ with $\tilde{Q}\tilde{R} = 0$ or $\tilde{R}\tilde{Q} = 0$. The **zero divisor locus** is the set $Z \subset \mathbb{H}_{\mathbb{D}}$ of zero divisors together with $0$.
 
-**Theorem.** $\tilde{Q}$ is a zero divisor if and only if $N(\tilde{Q})$ is a zero divisor of $\mathbb{D}$, equivalently if and only if one of the two idempotent components vanishes:
+**Theorem.** $\tilde{Q}$ is a zero divisor if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a zero divisor of $\mathbb{D}$, equivalently if and only if one of the two idempotent components vanishes:
 
 $$
 Z = \mathbb{H} \tilde\Pi_1 \cup \mathbb{H} \tilde\Pi_2 = \{\tilde{Q}_+ = 0\} \cup \{\tilde{Q}_- = 0\} .
@@ -27,7 +27,7 @@ $$
 
 Each of the two sets is a four-dimensional real subspace, and they meet only at the origin.
 
-**Proof.** The split-biquaternion norm is multiplicative and the inverse formula $\tilde{Q}^{-1} = \tilde{Q}^{\natural}N(\tilde{Q})^{-1}$ holds, so $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})$ is a unit of $\mathbb{D}$; the non-units are the elements whose split-biquaternion norm is $0$ or a nonzero zero divisor of $\mathbb{D}$. Since $N(\tilde{Q}) = N_+(\tilde{Q})\tilde\Pi_1 + N_-(\tilde{Q})\tilde\Pi_2$ with $N_\pm(\tilde{Q}) = \sum_\mu (q_\mu\pm q'_\mu)^2$, the split-biquaternion norm is a zero divisor of $\mathbb{D}$ exactly when one of $N_\pm$ vanishes, and a sum of squares vanishes exactly when all its terms do, that is when $\tilde{Q}_\pm = 0$.
+**Proof.** The split-biquaternion norm is multiplicative and the inverse formula $\tilde{Q}^{-1} = \tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$ holds, so $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D}$; the non-units are the elements whose split-biquaternion norm is $0$ or a nonzero zero divisor of $\mathbb{D}$. Since $\langle\tilde{Q}\rangle_{\natural} = N_+(\tilde{Q})\tilde\Pi_1 + N_-(\tilde{Q})\tilde\Pi_2$ with $N_\pm(\tilde{Q}) = \sum_\mu (q_\mu\pm q'_\mu)^2$, the split-biquaternion norm is a zero divisor of $\mathbb{D}$ exactly when one of $N_\pm$ vanishes, and a sum of squares vanishes exactly when all its terms do, that is when $\tilde{Q}_\pm = 0$.
 
 **Definition.** An element is of **rank one** if it generates a minimal left ideal, that is if the left ideal $\mathbb{H}_{\mathbb{D}}\tilde{Q}$ is one of the two minimal left ideals.
 
@@ -42,10 +42,10 @@ The rank-one description here is thus a **single-quaternion** parametrisation, $
 **Definition.** The **projective null quadric** of the algebra is the projectivisation of the null cone of the Hermitian form $g$:
 
 $$
-Q(g) = \left\{ [\tilde{Q}] \in \mathbb{P}(\mathbb{H}_{\mathbb{D}}) : g(\tilde{Q}) = 0 \right\} \subset \mathbb{P}^7 , \qquad g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu) .
+\mathcal{Q}(g) = \left\{ [\tilde{Q}] \in \mathbb{P}(\mathbb{H}_{\mathbb{D}}) : g(\tilde{Q}) = 0 \right\} \subset \mathbb{P}^7 , \qquad g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu) .
 $$
 
-**Theorem.** $Q(g)$ is a smooth non-degenerate quadric of dimension $6$ and of Kleinian signature $(4,4)$. It contains two families of maximal isotropic projective three-spaces, and through each point of $Q(g)$ there passes exactly one member of each family. The two zero divisor ideals project to two skew maximal isotropic three-spaces, and these two lie in the same family.
+**Theorem.** $\mathcal{Q}(g)$ is a smooth non-degenerate quadric of dimension $6$ and of Kleinian signature $(4,4)$. It contains two families of maximal isotropic projective three-spaces, and through each point of $\mathcal{Q}(g)$ there passes exactly one member of each family. The two zero divisor ideals project to two skew maximal isotropic three-spaces, and these two lie in the same family.
 
 **Proof.** The null cone of $g$ is a smooth irreducible hypersurface away from the origin because the gradient of $g$ is nonzero there; projectivising gives a smooth quadric of dimension $6$. The maximal totally isotropic subspaces of a non-degenerate form of signature $(4,4)$ have dimension $4$, so their projectivisations are three-spaces; the two families and the incidence properties are the standard description of the maximal isotropic subspaces of a neutral form. The ideals are totally isotropic of dimension $4$ by *Split-Biquaternion Geometry*, so each projects to a maximal isotropic three-space.
 
@@ -65,7 +65,7 @@ with no incidence between them; the analogue of the rank-one outer product is th
 
 **Proof.** The rank-one elements are parametrised by a single nonzero quaternion $u$, up to a real scalar, giving $\mathbb{P}(\mathbb{H}\tilde\Pi_{1,2}) \cong \mathbb{P}^3$; two such projective points never coincide because the two ideals meet only at the origin, and no projectively invariant two-parameter factorisation exists, because $\mathbb{H}$ is a division algebra and its projective line $\mathbb{P}^1(\mathbb{H}) \cong S^4$ is not the $\mathbb{P}^1$ of the biquaternion spinors.
 
-The Segre-type object that does appear is the biquaternion one transported through the idempotent decomposition: the biquaternion quadric $Q^2 = \mathbb{P}^1\times\mathbb{P}^1$ corresponds, under the Peirce decomposition, to a pair of quaternionic rank-one conditions, each of which is vacuous because $\mathbb{H}$ is a division algebra. In this sense the Segre structure does not degenerate into a different Segre structure; it vanishes, and the smooth quadric $Q(g)$ of the previous section is the genuinely new object.
+The Segre-type object that does appear is the biquaternion one transported through the idempotent decomposition: the biquaternion quadric $Q^2 = \mathbb{P}^1\times\mathbb{P}^1$ corresponds, under the Peirce decomposition, to a pair of quaternionic rank-one conditions, each of which is vacuous because $\mathbb{H}$ is a division algebra. In this sense the Segre structure does not degenerate into a different Segre structure; it vanishes, and the smooth quadric $\mathcal{Q}(g)$ of the previous section is the genuinely new object.
 
 ## The Relation to the Biquaternion Case
 
@@ -81,18 +81,18 @@ On the Lorentzian four-plane $\mathbb{M}_-$ the split-biquaternion norm restrict
 
 ## Summary
 
-The split biquaternion algebra carries the split complex norm $N = \sum_\mu Q_\mu^2$ with polarisation the $\mathbb{D}$-valued dot product $B(\tilde P,\tilde{Q}) = \sum_\mu P_\mu Q_\mu$, orthonormal on the unit basis; these, with the real part $R$ of signature $(8,0)$, the imaginary part $I$ of signature $(4,4)$ and the Hermitian scalar form $g$ of signature $(4,4)$, are established in *Split-Biquaternion Norm and Invertibility*. The split-biquaternion norm is anisotropic, so its null cone is the origin; the non-invertible elements are instead those whose split-biquaternion norm is a zero divisor of $\mathbb{D}$, and they form the union $Z = \mathbb{H}\tilde\Pi_1 \cup \mathbb{H}\tilde\Pi_2$ of the two minimal left ideals, each a four-dimensional subspace, meeting only at the origin. These are exactly the elements of rank one, parametrised by a single quaternion as $\tilde{Q} = u \tilde\Pi_{1,2}$, the degenerate counterpart of the biquaternion outer product $uv^{T}$. The projective null quadric of the Hermitian form is a smooth six-dimensional quadric of Kleinian signature $(4,4)$ in $\mathbb{P}^7$, containing two families of maximal isotropic three-spaces, the ideals projecting to one member of each. The biquaternion Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ does not degenerate into another Segre structure but vanishes, and the projectivised zero divisor locus is the disjoint union $\mathbb{P}^3\sqcup\mathbb{P}^3$. On the Lorentzian four-plane $\mathbb{M}_-$ the two null cones agree, and their projectivised real points form $S^2$ and contain no real line; on a neutral plane the quadric is a torus containing two families of real lines. The projective geometry of the split biquaternion system is thus affine and incidence-theoretic on the Lorentzian slices and disjoint-linear on the zero divisor locus, in contrast to the Segre and spinor geometry of the biquaternion case.
+The split biquaternion algebra carries the split complex norm $N = \sum_\mu Q_\mu^2$ with polarisation the $\mathbb{D}$-valued dot product $\langle\tilde P,\tilde{Q}\rangle = \sum_\mu P_\mu Q_\mu$, orthonormal on the unit basis; these, with the real part $R$ of signature $(8,0)$, the imaginary part $I$ of signature $(4,4)$ and the Hermitian scalar form $g$ of signature $(4,4)$, are established in *Split-Biquaternion Norm and Invertibility*. The split-biquaternion norm is anisotropic, so its null cone is the origin; the non-invertible elements are instead those whose split-biquaternion norm is a zero divisor of $\mathbb{D}$, and they form the union $Z = \mathbb{H}\tilde\Pi_1 \cup \mathbb{H}\tilde\Pi_2$ of the two minimal left ideals, each a four-dimensional subspace, meeting only at the origin. These are exactly the elements of rank one, parametrised by a single quaternion as $\tilde{Q} = u \tilde\Pi_{1,2}$, the degenerate counterpart of the biquaternion outer product $uv^{T}$. The projective null quadric of the Hermitian form is a smooth six-dimensional quadric of Kleinian signature $(4,4)$ in $\mathbb{P}^7$, containing two families of maximal isotropic three-spaces, the ideals projecting to one member of each. The biquaternion Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ does not degenerate into another Segre structure but vanishes, and the projectivised zero divisor locus is the disjoint union $\mathbb{P}^3\sqcup\mathbb{P}^3$. On the Lorentzian four-plane $\mathbb{M}_-$ the two null cones agree, and their projectivised real points form $S^2$ and contain no real line; on a neutral plane the quadric is a torus containing two families of real lines. The projective geometry of the split biquaternion system is thus affine and incidence-theoretic on the Lorentzian slices and disjoint-linear on the zero divisor locus, in contrast to the Segre and spinor geometry of the biquaternion case.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split complex norm |
-| $R(\tilde{Q}), I(\tilde{Q})$ | Real part (Euclidean, $(8,0)$) and imaginary part ($(4,4)$) of $N$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split complex norm |
+| $R(\tilde{Q}), I(\tilde{Q})$ | Real part (Euclidean, $(8,0)$) and imaginary part ($(4,4)$) of $\langle\cdot\rangle_{\natural}$ |
 | $g(\tilde{Q}) = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian scalar form, signature $(4,4)$ |
 | $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus, union of two ideals |
 | $Q_\mu, q_\mu, q'_\mu$ | Split complex coefficient and its two real parts |
-| $Q(g) \subset \mathbb{P}^7$ | Projective null quadric of $g$, dimension $6$ |
+| $\mathcal{Q}(g) \subset \mathbb{P}^7$ | Projective null quadric of $g$, dimension $6$ |
 | $\mathbb{P}^1(\mathbb{H}) \cong S^4$ | The projective line over the quaternion division algebra, the analogue of the biquaternion spinor line |
 | $\mathbb{P}(Z) = \mathbb{P}^3\sqcup\mathbb{P}^3$ | Projectivised zero divisor locus |
 | $\tilde{Q} = u\tilde\Pi_{1,2}$ | Rank-one (zero divisor) parametrisation |
@@ -104,4 +104,4 @@ The split biquaternion algebra carries the split complex norm $N = \sum_\mu Q_\m
 - Igor R. Shafarevich, *Basic Algebraic Geometry 1*, 3rd edition (Springer, 2013), for quadrics, their rulings and the Segre embedding.
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the null cones of the classical forms, their links and their rank-one descriptions.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings*, Grundlehren der mathematischen Wissenschaften 294 (Springer, 1991), for quadratic and Hermitian forms over a ring with zero divisors and the associated Clifford algebras.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for quadrics of signature $(p,q)$, their compact duals and the associated symmetric spaces.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for quadrics of signature $(n,m)$, their compact duals and the associated symmetric spaces.

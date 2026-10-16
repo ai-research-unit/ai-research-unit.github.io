@@ -43,7 +43,7 @@ First, the integer-quotient rule is an **assumption**, not a consequence of the 
 Second, the exhaustiveness claim that comes with the rule does not survive the test. If the rule were complete, the maximally entangled states would be the twelve patterns; but the family
 
 $$
-\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+e^{i\phi}\lvert11\rangle\right)
+\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\phi)\lvert11\rangle\right)
 $$
 
 is maximally entangled for every $\phi$, whereas the twelve patterns fix the relative phase to the discrete set $\{0,\pm\pi/2,\pi\}$. The rule therefore selects a proper subset, not the whole. The computation and the reason are in *The Bell Basis as the Idempotent Basis of B⊗B*, in the section *A Claimed Enumeration of the Maximally Entangled States*; the point for the present article is that the mereological interpretation of the singlet is a language, and that turning it into a selection rule requires a hypothesis that the division relation itself does not supply and that the continuum of maximally entangled states does not confirm.
@@ -63,34 +63,34 @@ This is the maximally mixed state of a qubit, at the centre of the Bloch ball. I
 The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
-E(\hat{a}, \hat{b}) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ\bigl((i\hat{a})\otimes(i\hat{b})\bigr)\right) = -\hat{a}\cdot\hat{b}.
+E(\vec u_a, \vec u_b) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ\bigl((i\vec u_a)\otimes(i\vec u_b)\bigr)\right) = -\vec u_a\cdot\vec u_b.
 $$
 
 This is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation — the trace pairing — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
 
 ### Steering as a conditional idempotent
 
-The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\hat{a}$ and obtains the outcome $+$. The unnormalized post-measurement joint state is
+The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\vec u_a$ and obtains the outcome $+$. The unnormalized post-measurement joint state is
 
 $$
-\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr),
 $$
 
-where $\tilde\Pi(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$. Computing directly, using $\tilde\Pi(\hat{a})\,e_k\,\tilde\Pi(\hat{a}) = \tfrac{1}{2}a_k(\hat{a} - ie_0)$ and $\hat{a} - ie_0 = -2i\tilde\Pi(\hat{a})$, gives
+where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,e_k\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_k(\vec u_a - ie_0)$ and $\vec u_a - ie_0 = -2i\tilde\Pi(\vec u_a)$, gives
 
 $$
-\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\hat{a})\otimes e_0\bigr) = \tfrac{1}{2}\,\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
 $$
 
-where $\tilde\Pi(-\hat{a}) = \tfrac{1}{2}(e_0 - i\hat{a})$. The normalized post-measurement state is therefore the product state
+where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_0 - i\vec u_a)$. The normalized post-measurement state is therefore the product state
 
 $$
-\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a}).
+\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a).
 $$
 
-The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\hat{a})$, and particle 2 is in the pure idempotent $\tilde\Pi(-\hat{a})$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
+The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\vec u_a)$, and particle 2 is in the pure idempotent $\tilde\Pi(-\vec u_a)$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.
 
-This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\hat{a}$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a *conditional* statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.
+This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\vec u_a$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a *conditional* statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.
 
 ### No-signaling as a partial-trace identity
 
@@ -122,7 +122,7 @@ Whether this structural interpretation satisfies a local-realist depends on what
 
 ### 2. Violation of Bell's inequalities
 
-Bell's theorem says that no local hidden-variable model can reproduce the quantum correlations of the singlet. The framework reproduces the standard correlation function $E(\hat{a}, \hat{b}) = -\hat{a}\cdot\hat{b}$ and the standard Tsirelson bound $2\sqrt{2}$ for the CHSH combination. Bell's theorem is untouched.
+Bell's theorem says that no local hidden-variable model can reproduce the quantum correlations of the singlet. The framework reproduces the standard correlation function $E(\vec u_a, \vec u_b) = -\vec u_a\cdot\vec u_b$ and the standard Tsirelson bound $2\sqrt{2}$ for the CHSH combination. Bell's theorem is untouched.
 
 What the framework changes is the *location* of the non-classicality. In the Hilbert-space formalism, the Born rule is a postulate, and the violation of Bell's inequality is a fact about joint probabilities that follows from that postulate. In the biquaternion framework, the Born rule is the trace pairing on $\mathbb{M}_+$, and the correlation function is a bilinear pairing between a state idempotent and a tensor-product observable. The non-classicality is then a fact about the *pairing rule* of the algebra, not about an independent probabilistic postulate.
 
@@ -178,11 +178,11 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **1. The singlet is one algebraic object.** The entangled state is not a pair of systems whose correlation must be explained; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product structure from the start.
 
-**2. The correlation function is a bilinear pairing.** The correlation $E(\hat{a}, \hat{b})$ is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.
+**2. The correlation function is a bilinear pairing.** The correlation $E(\vec u_a, \vec u_b)$ is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.
 
 **3. The reduced state's mixedness is the algebraic trace of entanglement.** The partial trace of the singlet produces $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
-**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $\tilde\Pi(\hat{a})\otimes \tilde\Pi(-\hat{a})$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
+**4. Steering is a factorization of the joint idempotent.** A local projector applied to the singlet produces a product state $\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a)$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.
 
 **5. No-signaling is cyclicity of the trace.** The invariance of the reduced state under local unitaries is the cyclicity of the trace applied to the partial trace.
 
@@ -261,10 +261,10 @@ The honest position is this. The framework makes certain structural features of 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
-| $\tilde\Pi(\pm\hat{a}) = \tfrac{1}{2}(e_0 \pm i\hat{a})$ | Single-qubit idempotents along $\hat{a}$ |
+| $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_0 \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0$ | Reduced state of particle 1 |
-| $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\hat{a})\otimes(i\hat{b})))$ | Correlation function |
+| $E(\vec u_a, \vec u_b) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b)))$ | Correlation function |
 | $\tilde{U}\tilde{U}^{*} = e_0$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |

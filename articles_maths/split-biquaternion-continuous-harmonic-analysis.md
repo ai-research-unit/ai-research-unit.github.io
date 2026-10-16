@@ -15,7 +15,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -56,7 +56,7 @@ $$
 where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit quaternion:
 
 $$
-N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1.
+\langle W(t, \omega)\rangle_{\natural} = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1.
 $$
 
 In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:
@@ -291,10 +291,10 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
+Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
 
 $$
-\mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
+\mathcal{F}[\partial_0 F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
 $$
 
 where the sign depends on the convention for the kernel.
@@ -312,7 +312,7 @@ where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conju
 The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
-\mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
+\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$
 
 The multiplier is a scalar (times $e_0$), and it vanishes on the **null cone**
@@ -321,7 +321,7 @@ $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$
 
-So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the null cone.
+So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone.
 
 ### The Square of the Gradient
 
@@ -349,10 +349,10 @@ The general principle is that the continuous Fourier transform **diagonalizes th
 
 ### The Operators in the Idempotent Basis
 
-In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as
+In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F^{\mathrm{fn}} = F^{\mathrm{fn}}_+ \tilde\Pi_1 + F^{\mathrm{fn}}_- \tilde\Pi_2$ with $F^{\mathrm{fn}}_\pm \in \mathbb{H}$, the gradient acts as
 
 $$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_1 + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_2,
+\tilde{\nabla} F^{\mathrm{fn}} = (\tilde{\nabla} F^{\mathrm{fn}}_+) \tilde\Pi_1 + (\tilde{\nabla} F^{\mathrm{fn}}_-) \tilde\Pi_2,
 $$
 
 where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
@@ -406,7 +406,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 1. **The precise invertibility condition.** Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.
 
-2. **The support of the transform of solutions of $\tilde{\nabla}\tilde{F} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}\tilde{F} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
+2. **The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
 
 3. **The Plancherel theorem for general functions.** Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.
 
@@ -443,7 +443,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
-| $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |
 | $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |

@@ -10,10 +10,10 @@ $$
 \mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right).
 $$
 
-The article's central result is that this functional depends on the state **only through its biquaternion norm**. With $N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_0$, one has $|\vec r| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}$, and therefore
+The article's central result is that this functional depends on the state **only through its biquaternion norm**. With $\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_0$, one has $|\vec r| = \sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}$, and therefore
 
 $$
-\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
+\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}\right),
 $$
 
 where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the biquaternion norm. The functional and the biquaternion norm are thus the same information, read as a number and as a quadratic form.
@@ -22,7 +22,7 @@ Two functionals appear below and must be kept apart, because the whole subject t
 
 The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
-The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\hat r)\tilde{\rho})$, and the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
+The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{\rho})$, and the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_0) = 2$; and the trace formula for a state and an observable is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
@@ -49,17 +49,17 @@ $$
 so that the states form the **Bloch ball**; the pure states are its boundary sphere. A pure state is an idempotent,
 
 $$
-\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}\left(e_0 \pm i\,\hat u\right), \qquad |\hat u| = 1, \qquad \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} ,
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_0 \pm i\,\vec u\right), \qquad |\vec u| = 1, \qquad \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} ,
 $$
 
 and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$.
 
 ### The Biquaternion Norm of a State
 
-The biquaternion norm of the algebra is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
+The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On the state it evaluates to a scalar multiple of the identity:
 
 $$
-N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_0 .
+\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_0 .
 $$
 
 This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{M}_+$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
@@ -91,32 +91,32 @@ so that purity and idempotency are the same condition, and the biquaternion norm
 The entropy functional is built from the algebra's logarithm. The logarithm of a biquaternion is defined as the inverse of the exponential, and the companion article *Biquaternion Elementary Functions* establishes the relevant fact: the logarithm exists exactly on the group of units,
 
 $$
-\mathbb{B}^\times = \left\{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) \neq 0\right\},
+\mathbb{B}^\times = \left\{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} \neq 0\right\},
 $$
 
-and on no larger set. The proof is the polar decomposition $\tilde{Q} = R\exp(\Theta\hat u)$ with $R = \sqrt{N(\tilde{Q})}$, which fails precisely when $N(\tilde{Q}) = 0$.
+and on no larger set. The proof is the polar decomposition $\tilde{Q} = R\exp(\Theta\vec u)$ with $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, which fails precisely when $\langle\tilde{Q}\rangle_{\natural} = 0$.
 
 For the state this condition is transparent. A state in the interior of the Bloch ball has
 
 $$
-N(\tilde{\rho}) = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_0 \neq 0 \qquad (|\vec r| < 1),
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_0 \neq 0 \qquad (|\vec r| < 1),
 $$
 
-so it is a unit and its logarithm exists. A **pure** state has $N(\tilde{\rho}) = 0$: it is a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
+so it is a unit and its logarithm exists. A **pure** state has $\langle\tilde{\rho}\rangle_{\natural} = 0$: it is a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
 
 ### Definition from the Spectral Decomposition
 
-The logarithm of a state is evaluated with the idempotents. Writing $\hat r = \vec r/|\vec r|$ for a state with $\vec r \neq 0$, the spectral decomposition of the state in its own basis is
+The logarithm of a state is evaluated with the idempotents. Writing $\vec u_r = \vec r/|\vec r|$ for a state with $\vec r \neq 0$, the spectral decomposition of the state in its own basis is
 
 $$
-\tilde{\rho} = \lambda_+\, \tilde\Pi_1(\hat r) + \lambda_-\, \tilde\Pi_2(\hat r), \qquad
+\tilde{\rho} = \lambda_+\, \tilde\Pi_1(\vec u_r) + \lambda_-\, \tilde\Pi_2(\vec u_r), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1 \pm |\vec r|\right),
 $$
 
 as one verifies directly from the definitions of the idempotents. The eigenvalues $\lambda_\pm$ are the classical probabilities of the two pointer outcomes in the eigenbasis, they are non-negative for $|\vec r| \le 1$, and they sum to one. The functional calculus of the algebra then gives
 
 $$
-\log\tilde{\rho} = \left(\log\lambda_+\right)\tilde\Pi_1(\hat r) + \left(\log\lambda_-\right)\tilde\Pi_2(\hat r),
+\log\tilde{\rho} = \left(\log\lambda_+\right)\tilde\Pi_1(\vec u_r) + \left(\log\lambda_-\right)\tilde\Pi_2(\vec u_r),
 $$
 
 which is the principal branch on the positive part of $\mathbb{M}_+$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore
@@ -172,30 +172,30 @@ The functional is measured in nats. Multiplying by the Boltzmann constant, $\mat
 
 The biquaternion norm of the state and the entropy of the state are not independent quantities. The biquaternion norm gives $|\vec r|$ directly, and the entropy is a function of $|\vec r|$; composing the two eliminates the Bloch vector and leaves a function of the biquaternion norm alone.
 
-Inverting $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\vec r|^2)e_0$ gives
+Inverting $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_0$ gives
 
 $$
-|\vec r| = \sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})},
+|\vec r| = \sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}},
 $$
 
 and substituting into $\mathcal{S} = h(|\vec r|)$ gives the central identity of the article:
 
 $$
-\boxed{\;\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right).\;}
+\boxed{\;\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}\right).\;}
 $$
 
 The identity says that **the entropy of a state of the informational sector is a function of its biquaternion norm and of nothing else**. The biquaternion norm is the quantitatively meaningful invariant of the algebra; the entropy is a monotone reparametrisation of it. Three consequences are immediate, and they are the reason the identity is worth isolating.
 
-First, the entropy vanishes exactly where the biquaternion norm vanishes. The condition $\mathcal{S}(\tilde{\rho}) = 0$ is $|\vec r| = 1$, which is $N(\tilde{\rho}) = 0$, which is the statement that $\tilde{\rho}$ is a zero divisor. **Zero entropy and the zero-divisor cone are the same locus.** The pure states are the informationless states, and the algebraic reason is that they are the non-invertible ones.
+First, the entropy vanishes exactly where the biquaternion norm vanishes. The condition $\mathcal{S}(\tilde{\rho}) = 0$ is $|\vec r| = 1$, which is $\langle\tilde{\rho}\rangle_{\natural} = 0$, which is the statement that $\tilde{\rho}$ is a zero divisor. **Zero entropy and the zero-divisor cone are the same locus.** The pure states are the informationless states, and the algebraic reason is that they are the non-invertible ones.
 
-Second, the entropy is a strictly increasing function of the biquaternion norm on the positive cone. As the state moves inward from the boundary, $|\vec r|$ falls, $N$ rises from zero to its maximum $\tfrac{1}{4}e_0$ at the centre, and the entropy rises from zero to $\log 2$. Differentiating the boxed identity confirms the direction, $\partial\mathcal{S}/\partial\,\mathrm{Sc}\,N = 2\,\mathrm{artanh}\,|\vec r|/|\vec r| > 0$. The biquaternion norm is therefore a measure of **depth inside the cone**, and the entropy is that depth expressed in information units.
+Second, the entropy is a strictly increasing function of the biquaternion norm on the positive cone. As the state moves inward from the boundary, $|\vec r|$ falls, $\langle\cdot\rangle_{\natural}$ rises from zero to its maximum $\tfrac{1}{4}e_0$ at the centre, and the entropy rises from zero to $\log 2$. Differentiating the boxed identity confirms the direction, $\partial\mathcal{S}/\partial\,\mathrm{Sc}\,N = 2\,\mathrm{artanh}\,|\vec r|/|\vec r| > 0$. The biquaternion norm is therefore a measure of **depth inside the cone**, and the entropy is that depth expressed in information units.
 
 Third, the entropy is invariant under every operation that preserves the biquaternion norm. In particular, it is invariant under the rotor conjugation of a reversible flow, which is the subject of a later section.
 
 The same identity holds for a coarse-grained state, since a coarse-grained state is a state. If $\Phi$ is a coarse-graining and $\tilde{\rho}_\Phi = \Phi(\tilde{\rho})$ is its image, then
 
 $$
-\mathcal{S}(\tilde{\rho}_\Phi) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho}_\Phi)}\right),
+\mathcal{S}(\tilde{\rho}_\Phi) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}_\Phi\rangle_{\natural}}\right),
 $$
 
 so the whole information content of the coarse description is likewise carried by one scalar read from the biquaternion norm. This is what makes the coarse-grained entropy tractable: the second law for the sector reduces to a statement about the biquaternion norm of the image.
@@ -217,19 +217,19 @@ subject to four conditions, each of which has an operational interpretation.
 - **Trace preservation.** $\mathrm{Tr}(\Phi(\tilde{\rho})) = \mathrm{Tr}(\tilde{\rho})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $\Phi^{*}(e_0) = e_0$.
 - **Idempotency and unitality.** $\Phi \circ \Phi = \Phi$ and $\Phi(e_0) = e_0$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.
 
-A linear, completely positive, trace-preserving, idempotent, unital map is a **conditional expectation**: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\hat u)$ is the fully dephasing map
+A linear, completely positive, trace-preserving, idempotent, unital map is a **conditional expectation**: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\vec u)$ is the fully dephasing map
 
 $$
-\Phi_{\hat u}(\tilde{\rho}) = \tilde\Pi_1(\hat u)\,\tilde{\rho}\,\tilde\Pi_1(\hat u) + \tilde\Pi_2(\hat u)\,\tilde{\rho}\,\tilde\Pi_2(\hat u) .
+\Phi_{\vec u}(\tilde{\rho}) = \tilde\Pi_1(\vec u)\,\tilde{\rho}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{\rho}\,\tilde\Pi_2(\vec u) .
 $$
 
 This is the map of the companion article *Decoherence as Idempotent Projection* at $p = 1$. On the Bloch vector it acts by
 
 $$
-\vec r \longmapsto \left(\hat u\cdot\vec r\right)\hat u,
+\vec r \longmapsto \left(\vec u\cdot\vec r\right)\vec u,
 $$
 
-annihilating the component transverse to the axis and retaining the component along it. The image is the **diameter** of the Bloch ball along $\hat u$: the classical bit that the description retains.
+annihilating the component transverse to the axis and retaining the component along it. The image is the **diameter** of the Bloch ball along $\vec u$: the classical bit that the description retains.
 
 ### The Binary Limitation
 
@@ -243,16 +243,16 @@ $$
 \mathcal{S}_{\rm cg}\!\left[\tilde{\rho};\Phi\right] = \mathcal{S}\!\left(\Phi(\tilde{\rho})\right) = -2\,\mathrm{Sc}\!\left(\Phi(\tilde{\rho})\log\Phi(\tilde{\rho})\right).
 $$
 
-For the pointer conditional expectation $\Phi_{\hat u}$, the image is $\tilde{\rho}_{\rm cg} = \tfrac{1}{2}(e_0 + i(\hat u\cdot\vec r)\hat u)$, whose eigenvalues are
+For the pointer conditional expectation $\Phi_{\vec u}$, the image is $\tilde{\rho}_{\rm cg} = \tfrac{1}{2}(e_0 + i(\vec u\cdot\vec r)\vec u)$, whose eigenvalues are
 
 $$
-p_\pm = \tfrac{1}{2}\left(1 \pm \hat u\cdot\vec r\right),
+p_\pm = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$
 
 the classical probabilities of the two pointer outcomes. The coarse-grained entropy is therefore the binary Shannon entropy
 
 $$
-\mathcal{S}_{\rm cg}\!\left[\tilde{\rho};\Phi_{\hat u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\hat u\cdot\vec r|\right).
+\mathcal{S}_{\rm cg}\!\left[\tilde{\rho};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right).
 $$
 
 This is the article's second main formula. It is the entropy of the classical record the coarse description keeps, and it is manifestly a function of the retained component of the Bloch vector alone.
@@ -295,27 +295,27 @@ The restriction to unital maps matters and is worth naming. A trace-preserving c
 
 ### The Dephasing Family and Its Rate
 
-The dephasing channel of the companion article *Decoherence as Idempotent Projection* interpolates between the identity and the coarse-graining. At strength $p \in [0,1]$ along $\hat u$ it acts by
+The dephasing channel of the companion article *Decoherence as Idempotent Projection* interpolates between the identity and the coarse-graining. At strength $p \in [0,1]$ along $\vec u$ it acts by
 
 $$
-\vec r \longmapsto \vec r' = (1-p)\,\vec r + p\left(\hat u\cdot\vec r\right)\hat u,
+\vec r \longmapsto \vec r' = (1-p)\,\vec r + p\left(\vec u\cdot\vec r\right)\vec u,
 $$
 
 so that
 
 $$
-|\vec r'|^2 = \left(\hat u\cdot\vec r\right)^2 + (1-p)^2\left(|\vec r|^2 - \left(\hat u\cdot\vec r\right)^2\right) \le |\vec r|^2 ,
+|\vec r'|^2 = \left(\vec u\cdot\vec r\right)^2 + (1-p)^2\left(|\vec r|^2 - \left(\vec u\cdot\vec r\right)^2\right) \le |\vec r|^2 ,
 $$
 
-with equality only at $p=0$, or for states already on the axis. The entropy therefore increases monotonically with $p$ from $\mathcal{S}(\tilde{\rho})$ to $h(|\hat u\cdot\vec r|)$, and it is maximised over the axis by the choice $\hat u \perp \vec r$, which discards the state entirely and returns $\log 2$.
+with equality only at $p=0$, or for states already on the axis. The entropy therefore increases monotonically with $p$ from $\mathcal{S}(\tilde{\rho})$ to $h(|\vec u\cdot\vec r|)$, and it is maximised over the axis by the choice $\vec u \perp \vec r$, which discards the state entirely and returns $\log 2$.
 
-In continuous time, with the transverse component decaying as $e^{-\Gamma t}$ and the axial component fixed, the Bloch radius is
+In continuous time, with the transverse component decaying as $\exp(-\Gamma t)$ and the axial component fixed, the Bloch radius is
 
 $$
-r(t) = \sqrt{r_\parallel^2 + r_\perp(t)^2}, \qquad r_\perp(t) = e^{-\Gamma t}r_\perp(0),
+r(t) = \sqrt{r_\parallel^2 + r_\perp(t)^2}, \qquad r_\perp(t) = \exp(-\Gamma t)r_\perp(0),
 $$
 
-where $r_\parallel = \hat u\cdot\vec r(0)$ is the fixed axial component and $r_\perp(t)$ is the **instantaneous** transverse component, and the entropy production rate is
+where $r_\parallel = \vec u\cdot\vec r(0)$ is the fixed axial component and $r_\perp(t)$ is the **instantaneous** transverse component, and the entropy production rate is
 
 $$
 \frac{d}{dt}\mathcal{S}\!\left(\tilde{\rho}(t)\right)
@@ -325,7 +325,7 @@ $$
 
 using $h'(r) = -\mathrm{artanh}\,r$ and $\dot{r}(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.
 
-The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\hat u = e_3$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(e_1+e_2)$ with $\hat u = e_3$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
+The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\vec u = e_3$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(e_1+e_2)$ with $\vec u = e_3$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
 
 The rate is positive and it vanishes when the transverse component vanishes. It also vanishes at the maximally mixed state, since there $r_\perp(t) \le r(t) \to 0$ and $\mathrm{artanh}\,r(t) \to 0$ together. It **diverges on the boundary sphere off the pointer axis**, where $\mathrm{artanh}\,r$ blows up while the transverse component stays positive: a state that is nearly pure and nearly orthogonal to the pointer axis has the most information left to lose, and it loses that information fastest. The extremum of the rate over the ball is therefore at purity, not at maximal mixing: the rate is zero at the maximally mixed state and grows without bound as the pure sphere is approached away from the axis, so it is unbounded above over the ball and has no finite maximum.
 
@@ -355,45 +355,45 @@ $$
 
 exceeds the fine-grained value at every instant, but it need not grow with $t$: the rotor can carry the transverse component onto the pointer axis and back, and the coarse-grained entropy then oscillates with no trend. A single application of $\Phi$ raises the entropy once and then leaves it fixed, since $\Phi$ is idempotent. Neither a reversible flow nor a fixed coarse-graining produces a *monotone* increase on its own; what produces one is a **one-parameter family of contractions** applied along the flow. The dephasing semigroup is the canonical example — it is the curve $\Phi_{p(t)}$ from the identity at $t=0$ towards the pointer coarse-graining as $t\to\infty$ — and for it the entropy of the evolving state rises monotonically. Both the flow and the contraction are needed for the inequality to bite, and the second law of the sector is a statement about the pair. This is exactly the classical structure of the Gibbs and Boltzmann entropies, now written with the algebra's own instruments.
 
-The dephasing rate makes the statement quantitative: the fine-grained value $\mathcal{S}(\tilde{\rho}(0))$ is the conserved reference, the evolving state's entropy increases at rate $\Gamma\,(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$, and the total production over an infinite time is $h(|\hat u\cdot\vec r(0)|) - h(|\vec r(0)|)$, the entropy of the retained classical bit less the entropy of the state.
+The dephasing rate makes the statement quantitative: the fine-grained value $\mathcal{S}(\tilde{\rho}(0))$ is the conserved reference, the evolving state's entropy increases at rate $\Gamma\,(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$, and the total production over an infinite time is $h(|\vec u\cdot\vec r(0)|) - h(|\vec r(0)|)$, the entropy of the retained classical bit less the entropy of the state.
 
 ## Preparations, Partitions, and the Least Coarse Description
 
 There is one further relation between the fine and coarse interpretations, and it explains why the fine-grained value is the right reference. A **preparation** of a state is an ensemble of pure states with weights,
 
 $$
-\tilde{\rho} = \sum_a w_a\, \tilde\Pi(\hat u_a), \qquad w_a \ge 0, \quad \sum_a w_a = 1 ,
+\tilde{\rho} = \sum_a w_a\, \tilde\Pi(\vec u_a), \qquad w_a \ge 0, \quad \sum_a w_a = 1 ,
 $$
 
-so that $\vec r = \sum_a w_a \hat u_a$. The Shannon entropy of the preparation is $H(w) = -\sum_a w_a\log w_a$. The standard theorem on ensembles with a common density matrix states that
+so that $\vec r = \sum_a w_a \vec u_a$. The Shannon entropy of the preparation is $H(w) = -\sum_a w_a\log w_a$. The standard theorem on ensembles with a common density matrix states that
 
 $$
 \mathcal{S}(\tilde{\rho}) \le H(w) ,
 $$
 
-with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_{1,2}(\hat r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
+with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_{1,2}(\vec u_r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
 
 The identity is verified on the three-point ensemble
 
 $$
-w = (0.5,\,0.3,\,0.2), \qquad \hat u = (e_1,\,e_2,\,-e_3),
+w = (0.5,\,0.3,\,0.2), \qquad \vec u = (e_1,\,e_2,\,-e_3),
 $$
 
-for which $\vec r = 0.5\,e_1 + 0.3\,e_2 - 0.2\,e_3$, $|\vec r| = 0.6164414$, $\mathcal{S} = 0.4887927$, and the refinement entropy is $H = 1.0296530$, above the invariant value as the theorem requires. Merging the first two members — the pair with no $e_3$ component, which the partition by the sign of the third component places in the positive cell — into a single cell of combined weight $0.8$ replaces the ensemble by the two-cell preparation $\{e_1,e_2\}\mid\{-e_3\}$ with weights $(0.8,\,0.2)$ and states $(\hat u_+,-e_3)$, where $\hat u_+ = (0.5\,e_1+0.3\,e_2)/\sqrt{0.34}$. That ensemble assembles a **different** state, of radius $\sqrt{0.68} = 0.8246211$ and entropy $0.2971592$, and against *its own* invariant value the merged entropy is again the larger, $H = 0.5004024 > 0.2971592$. Merging lowers $H$ — from $1.0296530$ to $0.5004024$ — and moves the assembled state outward, so the two ends of the comparison both change; the bound holds at either level, and what it does not license is reading the merged $H$ against the entropy of the unmerged state.
+for which $\vec r = 0.5\,e_1 + 0.3\,e_2 - 0.2\,e_3$, $|\vec r| = 0.6164414$, $\mathcal{S} = 0.4887927$, and the refinement entropy is $H = 1.0296530$, above the invariant value as the theorem requires. Merging the first two members — the pair with no $e_3$ component, which the partition by the sign of the third component places in the positive cell — into a single cell of combined weight $0.8$ replaces the ensemble by the two-cell preparation $\{e_1,e_2\}\mid\{-e_3\}$ with weights $(0.8,\,0.2)$ and states $(\vec u_+,-e_3)$, where $\vec u_+ = (0.5\,e_1+0.3\,e_2)/\sqrt{0.34}$. That ensemble assembles a **different** state, of radius $\sqrt{0.68} = 0.8246211$ and entropy $0.2971592$, and against *its own* invariant value the merged entropy is again the larger, $H = 0.5004024 > 0.2971592$. Merging lowers $H$ — from $1.0296530$ to $0.5004024$ — and moves the assembled state outward, so the two ends of the comparison both change; the bound holds at either level, and what it does not license is reading the merged $H$ against the entropy of the unmerged state.
 
-The framework's own coarse-grainings sit in this picture as the conditional expectations: the coarsest description of a state along an axis retains the single classical bit $(\hat u\cdot\vec r)$, and its entropy $h(|\hat u\cdot\vec r|)$ is the largest value among the conditional expectations, attained by the axis orthogonal to the state.
+The framework's own coarse-grainings sit in this picture as the conditional expectations: the coarsest description of a state along an axis retains the single classical bit $(\vec u\cdot\vec r)$, and its entropy $h(|\vec u\cdot\vec r|)$ is the largest value among the conditional expectations, attained by the axis orthogonal to the state.
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The entropy functional $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ itself, its evaluation in the spectral decomposition, and its identification with the classical entropy of the two-outcome pointer distribution; the existence of the logarithm on the interior of the Bloch ball and its failure on the pure states; the identity $\mathcal{S} = h(\sqrt{1 - 4\,\mathrm{Sc}\,N})$, which makes the entropy a function of the biquaternion norm and locates the zero-entropy states exactly on the zero-divisor cone; the invariance of the functional under reversible rotor flow; the form of the coarse-grained conditional expectation and its action $\vec r\mapsto(\hat u\cdot\vec r)\hat u$; and the entropy production rate of continuous dephasing. Each of these is an identity of the algebra, checked by expanding in the basis and, where numerical, on an interior superposition rather than a single pure state.
+**Derived from the algebra.** The entropy functional $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ itself, its evaluation in the spectral decomposition, and its identification with the classical entropy of the two-outcome pointer distribution; the existence of the logarithm on the interior of the Bloch ball and its failure on the pure states; the identity $\mathcal{S} = h(\sqrt{1 - 4\,\mathrm{Sc}\,N})$, which makes the entropy a function of the biquaternion norm and locates the zero-entropy states exactly on the zero-divisor cone; the invariance of the functional under reversible rotor flow; the form of the coarse-grained conditional expectation and its action $\vec r\mapsto(\vec u\cdot\vec r)\vec u$; and the entropy production rate of continuous dephasing. Each of these is an identity of the algebra, checked by expanding in the basis and, where numerical, on an interior superposition rather than a single pure state.
 
 **Imported from standard physics and standard mathematics.** The Kadison–Schwarz contraction of unital completely positive maps, and hence the monotonicity of the entropy under a coarse-graining; the classification of conditional expectations onto commutative subalgebras; the minimum-ensemble theorem $\mathcal{S}(\tilde{\rho}) = \min_w H(w)$; and the identification of the dimensionless functional with the physical thermodynamic entropy through the factor $k_B$. None of these is re-derived here; they are transcribed, and they are the same theorems that give the Gibbs and Boltzmann entropies their classical meaning.
 
-**Not supplied.** The framework does not select which coarse-graining is physically realised; the pointer axis $\hat u$ is an input to the conditional expectation, not an output of it, for the reason given in the companion article *Decoherence as Idempotent Projection*. It does not derive a dynamics for the environment, and therefore does not derive the rate $\Gamma$. It does not, on a single qubit, support a partition into more than two cells. And it predicts no departure from the classical entropy accounting it reformulates.
+**Not supplied.** The framework does not select which coarse-graining is physically realised; the pointer axis $\vec u$ is an input to the conditional expectation, not an output of it, for the reason given in the companion article *Decoherence as Idempotent Projection*. It does not derive a dynamics for the environment, and therefore does not derive the rate $\Gamma$. It does not, on a single qubit, support a partition into more than two cells. And it predicts no departure from the classical entropy accounting it reformulates.
 
 ## Summary
 
-A coarse-graining of the informational sector is a conditional expectation $\Phi$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\hat u$, whose action on the Bloch vector is $\vec r\mapsto(\hat u\cdot\vec r)\hat u$.
+A coarse-graining of the informational sector is a conditional expectation $\Phi$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
 
 The **biquaternion entropy functional** is
 
@@ -405,15 +405,15 @@ $$
 
 with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of units, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.
 
-The functional depends on the state only through its biquaternion norm. With $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\vec r|^2)e_0$,
+The functional depends on the state only through its biquaternion norm. With $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_0$,
 
 $$
-\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
+\mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}\right),
 $$
 
 so the entropy vanishes exactly on the null (zero-divisor) cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone. The natural invariant of the algebra and the information content of the state are one quantity in two interpretations.
 
-The **coarse-grained entropy** is the functional evaluated on the image, $\mathcal{S}(\Phi(\tilde{\rho}))$; for the pointer conditional expectation it is the binary Shannon entropy $h(|\hat u\cdot\vec r|)$. Since a unital completely positive map contracts the Bloch ball, $|\vec r_\Phi|\le|\vec r|$, the coarse-grained entropy never falls below the fine-grained one, with equality only for states already in the image. The fine-grained entropy is invariant under reversible rotor flow — the biquaternion form of Liouville's theorem — and the increase appears only when a flow and a coarse-graining are composed. That composition is the second law of the sector.
+The **coarse-grained entropy** is the functional evaluated on the image, $\mathcal{S}(\Phi(\tilde{\rho}))$; for the pointer conditional expectation it is the binary Shannon entropy $h(|\vec u\cdot\vec r|)$. Since a unital completely positive map contracts the Bloch ball, $|\vec r_\Phi|\le|\vec r|$, the coarse-grained entropy never falls below the fine-grained one, with equality only for states already in the image. The fine-grained entropy is invariant under reversible rotor flow — the biquaternion form of Liouville's theorem — and the increase appears only when a flow and a coarse-graining are composed. That composition is the second law of the sector.
 
 The fine-grained value is also the minimum over all preparations of the state, $\mathcal{S}(\tilde{\rho}) = \min_w H(w)$, so it is the least coarse description the state admits and the correct reference for the accounting. The framework supplies the functional, its geometry, and its monotonicity; it does not supply the pointer axis, the environment, or the rate, and it predicts nothing beyond the classical entropy accounting it reformulates.
 
@@ -426,24 +426,24 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State of the informational sector, Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotent (pure state, rank-one projector) |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state, rank-one projector) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Eigenvalues (pointer probabilities) of the state |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$ | Trace |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $N(\tilde{\rho}) = \tfrac{1}{4}(1-|\vec r|^2)e_0$ | Biquaternion norm of a state |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_0$ | Biquaternion norm of a state |
 | $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2-1)e_0$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
-| $\log\tilde{\rho} = (\log\lambda_+)\tilde\Pi_1(\hat r) + (\log\lambda_-)\tilde\Pi_2(\hat r)$ | Logarithm of a state, $|\vec r|<1$ |
+| $\log\tilde{\rho} = (\log\lambda_+)\tilde\Pi_1(\vec u_r) + (\log\lambda_-)\tilde\Pi_2(\vec u_r)$ | Logarithm of a state, $|\vec r|<1$ |
 | $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\vec r|)$ | Biquaternion entropy functional |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy function |
-| $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,N(\tilde{\rho})}\right)$ | Entropy as a function of the biquaternion norm |
+| $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}\right)$ | Entropy as a function of the biquaternion norm |
 | $\Phi$ | Coarse-graining (conditional expectation) |
-| $\Phi_{\hat u}(\tilde{\rho}) = \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2$ | Pointer coarse-graining along $\hat u$ |
-| $\vec r\mapsto(\hat u\cdot\vec r)\hat u$ | Action of the pointer coarse-graining |
+| $\Phi_{\vec u}(\tilde{\rho}) = \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2$ | Pointer coarse-graining along $\vec u$ |
+| $\vec r\mapsto(\vec u\cdot\vec r)\vec u$ | Action of the pointer coarse-graining |
 | $\mathcal{S}_{\rm cg}[\tilde{\rho};\Phi] = \mathcal{S}(\Phi(\tilde{\rho}))$ | Coarse-grained entropy |
-| $\mathcal{S}_{\rm cg} = h(|\hat u\cdot\vec r|)$ | Coarse-grained entropy, pointer basis |
-| $r_\parallel = \hat u\cdot\vec r$, $r_\perp(t) = e^{-\Gamma t}r_\perp(0)$, $r(t)^2 = r_\parallel^2 + r_\perp(t)^2$ | Axial and instantaneous transverse components of the dephasing flow |
-| $\vec r\mapsto(1-p)\vec r + p(\hat u\cdot\vec r)\hat u$ | Dephasing at strength $p\in[0,1]$ |
+| $\mathcal{S}_{\rm cg} = h(|\vec u\cdot\vec r|)$ | Coarse-grained entropy, pointer basis |
+| $r_\parallel = \vec u\cdot\vec r$, $r_\perp(t) = \exp(-\Gamma t)r_\perp(0)$, $r(t)^2 = r_\parallel^2 + r_\perp(t)^2$ | Axial and instantaneous transverse components of the dephasing flow |
+| $\vec r\mapsto(1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing at strength $p\in[0,1]$ |
 | $\dot{\mathcal{S}} = \Gamma (r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
 | $\tilde{U}(t)$, $\tilde{U}\tilde{U}^{*} = e_0$ | Matrix-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |

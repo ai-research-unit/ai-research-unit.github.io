@@ -5,7 +5,7 @@
 
 The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, and the quadratic form they inherit.
 
-The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
+The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $\langle A\rangle = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
 
 ## The Involutions and the Two Decompositions
 
@@ -172,7 +172,7 @@ A_+ = \tfrac{1}{2}(A + \bar{A}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
 A_- = \tfrac{1}{2}(A - \bar{A}) = 4i \in i\mathbb{R}_{\mathbb{C}},
 $$
 
-with $A_+ + A_- = 3 + 4i = A$, and the norm on the pieces is $N(A_+) = 9$ and $N(A_-) = 16$, whose sum $25 = N(A)$ is the norm of $A$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
+with $A_+ + A_- = 3 + 4i = A$, and the norm on the pieces is $\langle A_+\rangle = 9$ and $\langle A_-\rangle = 16$, whose sum $25 = \langle A\rangle$ is the norm of $A$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
 
 **A product that leaves a subspace.** For $A_- = 4i$ and $B_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,
 
@@ -202,7 +202,7 @@ The lattice has two members: the two blocks $\langle 1 \rangle$ and $\langle i \
 | $\mathbb{C}^{\sigma}$, $\mathbb{C}^{-\sigma}$ | fixed and anti-fixed subspaces of an involution $\sigma$ |
 | $\mathbb{R}_{\mathbb{C}}$ | real subspace $\{A : \bar{A} = A\} = \mathbb{R} 1$, real dimension $1$ |
 | $i\mathbb{R}_{\mathbb{C}}$ | imaginary subspace $\{A : \bar{A} = -A\} = \mathbb{R} i$, real dimension $1$ |
-| $N(A) = A\bar{A} = a^2 + a'^2$ | the norm |
+| $\langle A\rangle = A\bar{A} = a^2 + a'^2$ | the norm |
 | $i\,\cdot$ (multiplication by $i$) | exchanges the two subspaces: $\mathbb{R}_{\mathbb{C}} \to i\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}} \to \mathbb{R}_{\mathbb{C}}$ |
 
 ## Further Reading

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde P\tilde Q$, the product being the one of the algebra. That product is the one read throughout this article.
+Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde P\tilde Q$, the product being the one of the algebra. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -18,7 +18,7 @@ $$
 
 is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$. A root carries two idempotents and not one: with $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_0-\tilde\Xi)$, the two are a complete orthogonal pair, $\tilde\Pi_+(\tilde\Xi)+\tilde\Pi_-(\tilde\Xi)=e_0$ and $\tilde\Pi_+(\tilde\Xi)\tilde\Pi_-(\tilde\Xi)=0$, and the root is their difference, $\tilde\Xi=\tilde\Pi_+(\tilde\Xi)-\tilde\Pi_-(\tilde\Xi)$. The reason is a two-line computation: if $\tilde\Xi^2=e_0$ then $\tilde\Pi^2=\tfrac14(e_0+2\tilde\Xi+e_0)=\tilde\Pi$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_0)^2=4\tilde\Pi^2-4\tilde\Pi+e_0=e_0$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
 
-**The results.** The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\hat u$ over the real unit vectors $\hat u$ with $\hat u^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$. Every idempotent of the algebra is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the trivial roots give the trivial idempotents, the family $\pm i\hat u$ gives the Hermitian idempotents, and the non-trivial roots give a four-real-parameter family of idempotents lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_+=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-=\tfrac12(e_0-\tilde\Xi)=e_0-\tilde\Pi_+$, a complete orthogonal pair whose difference is the root; the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the same unordered pair.
+**The results.** The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$. Every idempotent of the algebra is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the trivial roots give the trivial idempotents, the family $\pm i\vec u$ gives the Hermitian idempotents, and the non-trivial roots give a four-real-parameter family of idempotents lying in none of the four four-dimensional remarkable subspaces. Each root carries the two idempotents $\tilde\Pi_+=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-=\tfrac12(e_0-\tilde\Xi)=e_0-\tilde\Pi_+$, a complete orthogonal pair whose difference is the root; the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the same unordered pair.
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, which is *Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Biquaternion Algebra*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decomposition of the Biquaternion Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
@@ -30,11 +30,11 @@ $$
 
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_+$ and $\tilde\Pi_-$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde P$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
 
 ## The Roots of One
 
-**The roots of $+1$ are exactly the two central scalars $\pm e_0$, the two-real-parameter family $\pm i\hat u$ over the real unit vectors $\hat u$ with $\hat u^2=-e_0$, and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions; there are no others.**
+**The roots of $+1$ are exactly the two central scalars $\pm e_0$, the two-real-parameter family $\pm i\vec u$ over the real unit vectors $\vec u$ with $\vec u^2=-e_0$, and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions; there are no others.**
 
 A **root of $+1$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=e_0$, the square being the one of the general plain bilinear product.
 
@@ -88,19 +88,19 @@ $$
 (\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2=-1 .
 $$
 
-Take first the case in which the vector part is the central imaginary times a real vector, $\vec\Xi=i\hat u$ with $\hat u$ a unit real vector. Since $i$ is central and $\hat u^2=-\|\hat u\|^2e_0$ with $\|\hat u\|^2=u_1^2+u_2^2+u_3^2$, one has
+Take first the case in which the vector part is the central imaginary times a real vector, $\vec\Xi=i\vec u$ with $\vec u$ a unit real vector. Since $i$ is central and $\vec u^2=-\|\vec u\|^2e_0$ with $\|\vec u\|^2=u_1^2+u_2^2+u_3^2$, one has
 
 $$
-(i\hat u)^2=i^2\hat u^2=(-1)\bigl(-\|\hat u\|^2e_0\bigr)=\|\hat u\|^2e_0,
+(i\vec u)^2=i^2\vec u^2=(-1)\bigl(-\|\vec u\|^2e_0\bigr)=\|\vec u\|^2e_0,
 $$
 
-so such an element is a root of $+1$ exactly when $\|\hat u\|^2=1$, that is when $\hat u^2=-e_0$. The roots in this case are the elements
+so such an element is a root of $+1$ exactly when $\|\vec u\|^2=1$, that is when $\vec u^2=-e_0$. The roots in this case are the elements
 
 $$
-\tilde\Xi=+i\hat u,\qquad \tilde\Xi=-i\hat u,\qquad \hat u\ \text{a unit real vector with}\ \hat u^2=-e_0,
+\tilde\Xi=+i\vec u,\qquad \tilde\Xi=-i\vec u,\qquad \vec u\ \text{a unit real vector with}\ \vec u^2=-e_0,
 $$
 
-a **two-real-parameter family**: three real coefficients of $\hat u$ carrying the single condition $u_1^2+u_2^2+u_3^2=1$. Its members are the only roots of $+1$ that are pure multiples of a real quaternion, and each is Hermitian, $(\tilde\Xi)^{*}=\tilde\Xi$.
+a **two-real-parameter family**: three real coefficients of $\vec u$ carrying the single condition $u_1^2+u_2^2+u_3^2=1$. Its members are the only roots of $+1$ that are pure multiples of a real quaternion, and each is Hermitian, $(\tilde\Xi)^{*}=\tilde\Xi$.
 
 ### The Non-Trivial Roots
 
@@ -141,10 +141,10 @@ $$
 **The purely imaginary roots.** The two-real-parameter family
 
 $$
-\tilde\Xi=+i\hat u,\qquad \tilde\Xi=-i\hat u,\qquad \hat u=u_1e_1+u_2e_2+u_3e_3,\ u_k\in\mathbb{R},\ u_1^2+u_2^2+u_3^2=1,
+\tilde\Xi=+i\vec u,\qquad \tilde\Xi=-i\vec u,\qquad \vec u=u_1e_1+u_2e_2+u_3e_3,\ u_k\in\mathbb{R},\ u_1^2+u_2^2+u_3^2=1,
 $$
 
-equivalently over the real unit vectors with $\hat u^2=-e_0$; since $i$ is central the family is also written $\tilde\Xi=\pm\hat u i$.
+equivalently over the real unit vectors with $\vec u^2=-e_0$; since $i$ is central the family is also written $\tilde\Xi=\pm\vec u i$.
 
 **The non-trivial roots.** The four-real-parameter family
 
@@ -168,7 +168,7 @@ Each family consists of roots of $+1$.
 
 **Trivial roots.** $(\pm e_0)^2=e_0$.
 
-**Purely imaginary roots.** For $\hat u^2=-e_0$, $(i\hat u)^2=i^2\hat u^2=(-1)(-e_0)=e_0$.
+**Purely imaginary roots.** For $\vec u^2=-e_0$, $(i\vec u)^2=i^2\vec u^2=(-1)(-e_0)=e_0$.
 
 **Non-trivial roots.** Expanding,
 
@@ -202,13 +202,13 @@ $$
 
 and a unit is not a zero divisor. The single element common to the roots of $+1$ and the idempotents is $e_0$: an element that is both a root of $+1$ and an idempotent satisfies $\tilde\Xi^2=e_0$ and $\tilde\Xi^2=\tilde\Xi$, hence $\tilde\Xi=e_0$.
 
-**The roots of minus one.** For this product the central imaginary turns the roots of $+1$ into the roots of $-1$: if $\tilde\Xi^2=e_0$ then $(i\tilde\Xi)^2=i^2\tilde\Xi^2=-e_0$, because $i$ is central, and since $i$ is invertible the map $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection from the roots of $+1$ onto the roots of $-1$. The three families above are carried to the three families of the roots of $-1$: the two central scalars $\pm i$; the family $\pm\hat u$ over the real unit vectors with $\hat u^2=-e_0$; and the family $-\vec\xi'+i\vec\xi$ with the same two real conditions. The mechanism is not universal. It needs a central scalar of square $-1$ that can be moved past the two slots of the product; in a sesquilinear product, where the second slot conjugates, scalar multiplication cannot flip the sign this way, and the roots of $-1$ are then read from the roots of $+1$ by no such map, or are absent altogether. The roots of $-1$ are quoted here and are used nowhere in this article.
+**The roots of minus one.** For this product the central imaginary turns the roots of $+1$ into the roots of $-1$: if $\tilde\Xi^2=e_0$ then $(i\tilde\Xi)^2=i^2\tilde\Xi^2=-e_0$, because $i$ is central, and since $i$ is invertible the map $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection from the roots of $+1$ onto the roots of $-1$. The three families above are carried to the three families of the roots of $-1$: the two central scalars $\pm i$; the family $\pm\vec u$ over the real unit vectors with $\vec u^2=-e_0$; and the family $-\vec\xi'+i\vec\xi$ with the same two real conditions. The mechanism is not universal. It needs a central scalar of square $-1$ that can be moved past the two slots of the product; in a sesquilinear product, where the second slot conjugates, scalar multiplication cannot flip the sign this way, and the roots of $-1$ are then read from the roots of $+1$ by no such map, or are absent altogether. The roots of $-1$ are quoted here and are used nowhere in this article.
 
 ## The Idempotents
 
 **Every idempotent of $\mathbb{B}$ is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; a root carries the two idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_0-\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; and the non-trivial idempotents form a four-real-parameter family.**
 
-The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
+The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
 ### The Definition
 
@@ -226,7 +226,7 @@ $$
 \mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B},
 $$
 
-and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 ### The Two Idempotents of a Root
 
@@ -420,14 +420,14 @@ The inverse of the halving map is $\tilde\Xi=2\tilde\Pi-e_0$, and the root is th
 Substituting the classification of the roots of $+1$ into the halving map gives the families of idempotents.
 
 - For the trivial root $\tilde\Xi=\pm e_0$: $\tilde\Pi=\tfrac12(e_0\pm e_0)$ is $e_0$ or $0$. These are the **trivial idempotents**.
-- For the purely imaginary root $\tilde\Xi=\pm i\hat u$: $\tilde\Pi=\tfrac12 e_0\pm\tfrac12 i\hat u$. Since $i\hat u$ is Hermitian for a real unit vector $\hat u$ with $\hat u^2=-e_0$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is an orthogonal projection, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+- For the purely imaginary root $\tilde\Xi=\pm i\vec u$: $\tilde\Pi=\tfrac12 e_0\pm\tfrac12 i\vec u$. Since $i\vec u$ is Hermitian for a real unit vector $\vec u$ with $\vec u^2=-e_0$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections of the spectral theorem for a Hermitian element, treated in *Biquaternion Spectral Theory*. A Hermitian idempotent is an orthogonal projection, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 - For the non-trivial root $\tilde\Xi=\vec\xi+i\vec\xi'$, with $\vec\xi\neq0$ and the two real conditions of §*The Non-Trivial Roots*: $\tilde\Pi=\tfrac12 e_0+\tfrac12(\vec\xi+i\vec\xi')$. Its vector part $\tfrac12(\vec\xi+i\vec\xi')$ carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 The idempotents inherit the size of the root set. Since the halving map is a bijection and the trivial roots are isolated, the Hermitian idempotents form a two-real-parameter family and the remaining (non-trivial) idempotents form a four-real-parameter family. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Non-Pure Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Zero Divisors of the Biquaternion Algebra*, while the trivial idempotents $0$ and $e_0$ are outside it, $e_0$ being a unit.
 
 ### Idempotents as Projections
 
-**Every idempotent is the member attached to $+1$ of the pair of a root, and its complement the member attached to $-1$; a Hermitian idempotent is an orthogonal projection with respect to the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and it lies in $\mathbb{M}_+$.**
+**Every idempotent is the member attached to $+1$ of the pair of a root, and its complement the member attached to $-1$; a Hermitian idempotent is an orthogonal projection with respect to the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and it lies in $\mathbb{M}_+$.**
 
 Every idempotent is the member attached to $+1$ of the pair of a root: for $\tilde\Pi$ idempotent the element $\tilde\Xi=2\tilde\Pi-e_0$ is a root of $+1$, and $\tilde\Pi_+(\tilde\Xi)=\tilde\Pi$ while $\tilde\Pi_-(\tilde\Xi)=e_0-\tilde\Pi$. The **complement** $e_0-\tilde\Pi$ is therefore the member attached to $-1$ of the same pair, an idempotent orthogonal to $\tilde\Pi$ by §*The Arithmetic of the Pair of Idempotents*, and the direct sum decomposition of the underlying $\mathbb{C}$-module,
 
@@ -437,7 +437,7 @@ $$
 
 is the one read there at a single root. This is the algebraic content of the statement that idempotents correspond to projections: the idempotent is the projection, its complement is the complementary projection, and the algebra splits into the image of one and the image of the other.
 
-A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
+A **Hermitian idempotent**, $\tilde\Pi^{*}=\tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which this article names and does not use; it is the kind occurring in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*}=\overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the members of the second family of §*The Families of Idempotents*, and they lie in $\mathbb{M}_+$.
 
 ### Idempotents and the Non-Pure Zero Divisors
 
@@ -459,13 +459,13 @@ The derivation, from the square relation $\tilde Q^2=2Q_0\tilde Q$ that the non-
 
 ## Summary
 
-The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Biquaternion Algebra*. The square roots of $+1$ in that product are, by the vector–scalar split and the product formula $\tilde\Xi^2=(\Xi_0^2-(\vec\Xi,\vec\Xi))e_0+2\Xi_0\vec\Xi$:
+The general plain bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Biquaternion Algebra*. The square roots of $+1$ in that product are, by the vector–scalar split and the product formula $\tilde\Xi^2=(\Xi_0^2-(\vec\Xi,\vec\Xi))e_0+2\Xi_0\vec\Xi$:
 
 1. **Trivial roots:** $\tilde\Xi=\pm e_0$.
-2. **Purely imaginary roots:** $\tilde\Xi=\pm i\hat u$, where $\hat u$ is a unit real vector with $\hat u^2=-e_0$, a two-real-parameter family.
+2. **Purely imaginary roots:** $\tilde\Xi=\pm i\vec u$, where $\vec u$ is a unit real vector with $\vec u^2=-e_0$, a two-real-parameter family.
 3. **Non-trivial roots:** $\tilde\Xi=\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, a four-real-parameter family.
 
-All roots except the trivial ones are pure. Every root of $+1$ is a unit, with $\tilde\Xi^{-1}=\tilde\Xi$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde\Xi\mapsto i\tilde\Xi$, a bijection that turns the three families into the two central scalars $\pm i$, the pure real family $\pm\hat u$, and the family $-\vec\xi'+i\vec\xi$; the mechanism needs a central scalar of square $-1$ and is not universal.
+All roots except the trivial ones are pure. Every root of $+1$ is a unit, with $\tilde\Xi^{-1}=\tilde\Xi$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde\Xi\mapsto i\tilde\Xi$, a bijection that turns the three families into the two central scalars $\pm i$, the pure real family $\pm\vec u$, and the family $-\vec\xi'+i\vec\xi$; the mechanism needs a central scalar of square $-1$ and is not universal.
 
 The idempotents are the trivial elements $0$ and $e_0$ and the elements $\tilde\Pi=\tfrac12(e_0\pm\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_0-\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)$, a complete orthogonal pair: their sum is $e_0$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_+$ and $-1$ on $\tilde\Pi_-$, so that the pair splits the algebra into the eigenspaces of that multiplication. The halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$, and the class $\{\tilde\Xi,-\tilde\Xi\}$ gives the complementary pair $\{\tilde\Pi_+,\tilde\Pi_-\}$. The three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$ (a two-real-parameter family), and the idempotents lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ is orthogonal, sums to $e_0$, and generates the two minimal left ideals. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B}$, the algebraic form of a projection and its complementary projection, and every non-pure zero divisor is the complex multiple $2Q_0\tilde\Pi$ of a non-trivial idempotent, developed in *Zero Divisors of the Biquaternion Algebra*.
 
@@ -489,7 +489,7 @@ The idempotents are the trivial elements $0$ and $e_0$ and the elements $\tilde\
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition.
 - *Square Roots of a General Element in the Biquaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.md`), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $+1$ here are one case.
 - *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the roots of $0$ and the nilpotents, the second central value.
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the two families of the zero-divisor set, of which the non-trivial idempotents are the non-pure one.

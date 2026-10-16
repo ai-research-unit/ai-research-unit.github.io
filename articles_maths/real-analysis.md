@@ -470,7 +470,7 @@ $$
 **Caution.** A smooth function need not be analytic. The standard example is
 
 $$
-f(a) = \begin{cases} e^{-1/a^2} & a \neq 0, \\ 0 & a = 0. \end{cases}
+f(a) = \begin{cases} \exp(-1/a^2) & a \neq 0, \\ 0 & a = 0. \end{cases}
 $$
 
 All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(a) > 0$ for $a \neq 0$.

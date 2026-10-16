@@ -67,7 +67,7 @@ the stable letter $t$ conjugating one copy of $C$ to the other; when $C = 1$ the
 
 **Theorem (structure theorem of Bass–Serre).** 
 
-**(a)** If a group $G$ acts on a tree $T$ without inversions, then $G$ is the fundamental group of the **quotient graph of groups** $(\Gamma,\mathcal{G}_\bullet)$, where $\Gamma = T/G$, the vertex group at a vertex $v$ of $\Gamma$ is the stabiliser $G_{\tilde v}$ of a lift $\tilde v$, and the edge group at an edge $e$ is the stabiliser $G_{\tilde e}$ of a lift, with the boundary monomorphisms induced by the inclusions $G_{\tilde e}\hookrightarrow G_{\tilde v}$.
+**(a)** If a group $G$ acts on a tree $T$ without inversions, then $G$ is the fundamental group of the **quotient graph of groups** $(\Gamma,\mathcal{G}_\bullet)$, where $\Gamma = T/G$, the vertex group at a vertex $v$ of $\Gamma$ is the stabiliser $G_{v^{\mathrm{lift}}}$ of a lift $v^{\mathrm{lift}}$, and the edge group at an edge $e$ is the stabiliser $G_{e^{\mathrm{lift}}}$ of a lift, with the boundary monomorphisms induced by the inclusions $G_{e^{\mathrm{lift}}}\hookrightarrow G_{v^{\mathrm{lift}}}$.
 
 **(b)** Conversely, if $G$ is the fundamental group of a finite graph of groups $(\Gamma,\mathcal{G}_\bullet)$, then $G$ acts without inversions on the Bass–Serre tree $T$ with quotient $\Gamma$ and with the stated stabilisers.
 
@@ -215,7 +215,7 @@ A finitely generated group has infinitely many ends exactly when it splits nontr
 | $A *_C B$ | Amalgamated free product over $C$ |
 | $A*_C$, $t$ | HNN extension with associated subgroups and stable letter $t$ |
 | Bass–Serre tree $T$ | Tree of cosets of vertex groups; $T/G = \Gamma$ |
-| $G_{\tilde v}, G_{\tilde e}$ | Vertex and edge stabilisers in the tree |
+| $G_{v^{\mathrm{lift}}}, G_{e^{\mathrm{lift}}}$ | Vertex and edge stabilisers in the tree |
 | FA, FA' | Serre's fixed-point properties for actions on trees |
 | $e(G)$ | Number of ends (see *Geometric Group Theory*) |
 | Splitting over $C$ | Amalgam or HNN extension with edge group $C$ and proper edge maps |

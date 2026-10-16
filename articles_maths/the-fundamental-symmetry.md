@@ -58,7 +58,7 @@ are the positive definite and the negative definite parts of a fundamental decom
 
 ## Non-Uniqueness and the Angular Operator
 
-**Theorem (parametrisation of the symmetries).** Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $\tilde Q_{+}$, each of which is the **graph**
+**Theorem (parametrisation of the symmetries).** Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $Q_{+}^{\max}}$, each of which is the **graph**
 $$
 M_T = \{\, x_{+} + Tx_{+} : x_{+}\in V_{+} \,\}
 $$
@@ -68,7 +68,7 @@ $$
 $$
 Distinct $T$ give distinct symmetries, and the correspondence is a bijection.
 
-**Proof.** Let $\tilde Q_{+}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $\tilde Q_{+}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dim\tilde Q_{+} = \dim V_{+}$; so $\tilde Q_{+}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $\tilde Q_{+}$ definite and maximal makes $\tilde J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $\tilde Q_{+}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapsto\tilde J$ is a bijection.
+**Proof.** Let $Q_{+}^{\max}}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $Q_{+}^{\max}}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dimQ_{+}^{\max}} = \dim V_{+}$; so $Q_{+}^{\max}}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $Q_{+}^{\max}}$ definite and maximal makes $J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $Q_{+}^{\max}}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapstoJ$ is a bijection.
 
 **Definition.** The operator $T$ above is the **angular operator** between the two decompositions, and its contraction constant measures the opening between their positive parts: $T = 0$ exactly when the two positive parts coincide.
 
@@ -76,7 +76,7 @@ Distinct $T$ give distinct symmetries, and the correspondence is a bijection.
 
 **Proof.** Let $J'$ be the second symmetry and write $\langle x,x\rangle' = [J'x,x] = \langle JJ'x,x\rangle$. The operator $JJ'$ is bounded and self-adjoint for $\langle\cdot,\cdot\rangle$ and it is invertible, with $(JJ')^{-1} = J'J$ because $J^{2} = J'^{2} = \mathrm{id}$; its spectrum is therefore a compact subset of $(0,\infty)$, so there are constants $0 < c\leq C < \infty$ with $c\|x\|^{2}\leq\langle x,x\rangle'\leq C\|x\|^{2}$, and the two norms are equivalent.
 
-**Remark (the non-uniqueness is genuine and bounded).** When both $p$ and $q$ are nonzero the fundamental symmetries are as many as the graphs $M_T$, so the choice is genuine; but the theorem shows the choice never changes the topology and only rotates the positive part inside its indefinite orthogonal complement, with an angle strictly less than $\pi/2$.
+**Remark (the non-uniqueness is genuine and bounded).** When both $n$ and $m$ are nonzero the fundamental symmetries are as many as the graphs $M_T$, so the choice is genuine; but the theorem shows the choice never changes the topology and only rotates the positive part inside its indefinite orthogonal complement, with an angle strictly less than $\pi/2$.
 
 ## $J$ as the Bridge
 
@@ -88,7 +88,7 @@ Distinct $T$ give distinct symmetries, and the correspondence is a bijection.
 | $[Ax,y] = [x,Ay]$ ($J$-self-adjoint $A$) | $JA$ self-adjoint for $\langle\cdot,\cdot\rangle$ |
 | $[Ax,Ay] = [x,y]$ ($J$-unitary $A$) | $A$ unitary for $\langle\cdot,\cdot\rangle$ |
 | $[Ax,x]\geq0$, $A = A^{\dagger}$ ($J$-positive) | $JA$ positive for $\langle\cdot,\cdot\rangle$ |
-| $V_{+}\perp V_{-}$, signature $(p,q)$ | eigenspaces $\pm1$ of $J$ |
+| $V_{+}\perp V_{-}$, signature $(n,m)$ | eigenspaces $\pm1$ of $J$ |
 
 **Proof.** Each line is one substitution, using $[x,y] = \langle Jx,y\rangle$ and $J^{2} = \mathrm{id}$; the operator lines use that $\langle JAx,y\rangle = [Jx,Ay]$ etc.
 

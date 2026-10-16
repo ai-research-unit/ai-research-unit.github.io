@@ -25,7 +25,7 @@ The automorphism group and the derivation algebra of $\mathbb{B}$ are governed b
 
 **Simplicity.** Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$: the algebra is **simple**. The proof is in *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*, where the ideal structure of the algebra is developed; the lattice is the same over $\mathbb{R}$ and over $\mathbb{C}$, because the condition $\tilde R\tilde T,\tilde T\tilde R\in I$ is field-independent.
 
-**The centre.** The centre of $\mathbb{B}$ is $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, a complex vector space of dimension $1$, the subspace $\mathbb{C}_{\mathbb{B}}$ of *Biquaternions as a Vector Space over $\mathbb{C}$*. Hence $\mathbb{B}$ is **central simple over $\mathbb{C}$** — simple, of dimension $4$, with centre exactly $\mathbb{C}$ — while over $\mathbb{R}$ the same algebra is simple but **not central**, its centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$ being strictly larger than $\mathbb{R}e_0$. Stating that "$\mathbb{B}$ is central simple" without naming the field is false over $\mathbb{R}$, and the sections below respect the distinction.
+**The centre.** The centre of $\mathbb{B}$ is $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, a complex vector space of dimension $1$, the subspace $\mathbb{C}_{\mathbb{B}}$ of *The Biquaternioid as a Vector Space over $\mathbb{C}$*. Hence $\mathbb{B}$ is **central simple over $\mathbb{C}$** — simple, of dimension $4$, with centre exactly $\mathbb{C}$ — while over $\mathbb{R}$ the same algebra is simple but **not central**, its centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$ being strictly larger than $\mathbb{R}e_0$. Stating that "$\mathbb{B}$ is central simple" without naming the field is false over $\mathbb{R}$, and the sections below respect the distinction.
 
 ## Automorphisms over $\mathbb{C}$
 
@@ -62,7 +62,7 @@ $$
 $$
 the complex orthogonal group in three variables. The reason is visible in the action. Conjugation fixes the trace, so the scalar coordinate is preserved and the action falls on the three-dimensional traceless part $\tilde{S}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_0$ as $\tilde{S}\mapsto g\tilde{S}g^{-1}$, which fixes the quadratic form $\det\tilde{S}$; that is the defining representation of $SO(3,\mathbb{C})$. The group is **complex** of complex dimension three, hence of real dimension six, and as a **real** group it is also $SO^+(1,3)$: the two are both $PSL(2,\mathbb{C})$, connected and six-real-dimensional, and are therefore the same real group. So the group that appears here as the abstract automorphism group of the algebra is the restricted Lorentz group. It sits inside the automorphism group of the biquaternion norm, $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ with $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$, as the **diagonal** $\tilde{A}=\tilde{B}=g$; that placement, and the physical construction built on it in the complexified-coordinates setting, are the subject of the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* of the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
-**Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $N(g\tilde{Q}g^{-1})=N(g)N(\tilde{Q})N(g)^{-1}=N(\tilde{Q})$; complex conjugation reverses the sign of the imaginary part, $N(\bar{\tilde{Q}})=N(\tilde{Q})^{*}$, and so preserves $|N|$ without preserving $N$ itself.
+**Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $\langle g\tilde{Q}g^{-1}\rangle_{\natural}=\langle g\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle g\rangle_{\natural}^{-1}=\langle\tilde{Q}\rangle_{\natural}$; complex conjugation reverses the sign of the imaginary part, $\langle\bar{\tilde{Q}}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}^{*}$, and so preserves $|N|$ without preserving $\langle\cdot\rangle_{\natural}$ itself.
 
 **Remark (automorphisms against isometries).** The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.
 
@@ -126,7 +126,7 @@ $$
 
 so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$. For instance $D_1(e_2) = \tfrac{1}{2}(e_1 e_2 - e_2 e_1) = \tfrac{1}{2}(e_3 + e_3) = e_3$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[e_1,e_2]} = \tfrac{1}{4}\mathrm{ad}_{2e_3} = D_3$.
 
-**Derivations and automorphisms.** The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_{\tilde A})(\tilde R) = e^{t\tilde A}\, \tilde R\, e^{-t\tilde A}$ for $\tilde A \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $e^{t\tilde A}$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.
+**Derivations and automorphisms.** The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_{\tilde A})(\tilde R) = \exp(t\tilde A)\, \tilde R\, \exp(-t\tilde A)$ for $\tilde A \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $\exp(t\tilde A)$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.
 
 ## Derivations over $\mathbb{R}$
 
@@ -156,7 +156,7 @@ $$
 \exp(tD)(e_1) = \cos t\, e_1 + \sin t\, e_2,
 $$
 
-as one checks by summing the series. Equivalently, $e^{t e_3/2} = \cos(t/2) + \sin(t/2) e_3$, and conjugation by this unit quaternion rotates the $e_1$-$e_2$ plane, matching $\exp(t D) = \mathrm{Ad}_{e^{t e_3/2}}$.
+as one checks by summing the series. Equivalently, $\exp(t e_3/2) = \cos(t/2) + \sin(t/2) e_3$, and conjugation by this unit quaternion rotates the $e_1$-$e_2$ plane, matching $\exp(t D) = \mathrm{Ad}_{\exp(t e_3/2)}$.
 
 Every element of $\mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$ gives an inner derivation, and $\mathrm{ad}_{\tilde A}$ depends only on $\tilde A$ modulo the centre $\mathbb{C}_{\mathbb{B}}$; for instance $\tilde A = e_1 + i e_2$ gives a derivation that is not a scalar multiple of any $D_k$.
 

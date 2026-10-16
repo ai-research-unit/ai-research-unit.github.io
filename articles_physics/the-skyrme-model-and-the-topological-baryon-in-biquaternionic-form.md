@@ -20,7 +20,7 @@ B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_
 \qquad
 j_\mu = \tilde U^{-1}\partial_\mu\tilde U ,
 $$
-is conserved identically, and its charge is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$. For the hedgehog configuration $\tilde U = \cos F(r)\,e_0 + \sin F(r)\,\hat r$ the charge is
+is conserved identically, and its charge is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$. For the hedgehog configuration $\tilde U = \cos F(r)\,e_0 + \sin F(r)\,\vec u_r$ the charge is
 $$
 B = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}\left[F - \tfrac12\sin 2F\right]_{F(\infty)}^{F(0)},
 $$
@@ -173,9 +173,9 @@ is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the c
 **The hedgehog reduction.** For a configuration of the **hedgehog** form
 
 $$
-\tilde U(\vec x) = \cos F(r)\,e_0 + \sin F(r)\,\hat r ,
+\tilde U(\vec x) = \cos F(r)\,e_0 + \sin F(r)\,\vec u_r ,
 \qquad
-\hat r = \frac{x^a}{r}e_a ,
+\vec u_r = \frac{x^a}{r}e_a ,
 \qquad
 r = |\vec x| ,
 $$
@@ -261,7 +261,7 @@ B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_
 \partial_\mu B^\mu = 0 \text{ identically.}
 $$
 
-For the hedgehog $\tilde U = \cos F\,e_0 + \sin F\,\hat r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
+For the hedgehog $\tilde U = \cos F\,e_0 + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.
 
 The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.
 
@@ -283,7 +283,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $B^\mu = \frac{1}{24\pi^2}\varepsilon^{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
 | $B = \int d^3x\,B^0$ | Winding number; baryon number |
 | $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
-| $\tilde U = \cos F\,e_0 + \sin F\,\hat r$, $\hat r = x^ae_a/r$ | Hedgehog ansatz |
+| $\tilde U = \cos F\,e_0 + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$ | Hedgehog ansatz |
 | $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ | Hedgehog winding density |
 | $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$ | Hedgehog winding number |
 | $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |

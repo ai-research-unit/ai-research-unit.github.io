@@ -47,7 +47,7 @@ $$
 \{\xi_i,\xi_j\} = \sum_kc^k_{ij}\xi_k, \qquad \{f,g\} = \sum_{i,j,k}c^k_{ij}\,\xi_k\,\frac{\partial f}{\partial\xi_i}\frac{\partial g}{\partial\xi_j},
 $$
 
-the second display being the extension of the first by the Leibniz rule. Then $A$ is a Poisson algebra, the **Lie–Poisson** or Kirillov–Kostant–Souriau structure on $\operatorname{Sym}(\mathrm{G})$: the Leibniz rule holds by construction, the alternating property holds because the $c^k_{ij}$ are alternating, and the Jacobi identity for the bracket is a consequence of the Jacobi identity for the structure constants. For the Heisenberg algebra with basis $p,q,z$ and $[p,q] = z$ the bracket $\{F,G\} = \xi_z(\partial_pF\partial_qG-\partial_qF\partial_pG)$ satisfies the Jacobi identity and the Leibniz rule; this was verified by explicit computation of the bracket of monomials, for all triples of the monomials $p,q,z,1$ and for products of them, with the exact rational arithmetic of the coefficients, together with $\{p,q\} = z$ and the alternating property. The Poisson structure depends on the Lie algebra structure only: no form, no dual space and no manifold enters, and the bracket is the algebraic source of the Kac–Moody and the affine structures of *Vertex Algebras*.
+the second display being the extension of the first by the Leibniz rule. Then $A$ is a Poisson algebra, the **Lie–Poisson** or Kirillov–Kostant–Souriau structure on $\operatorname{Sym}(\mathrm{G})$: the Leibniz rule holds by construction, the alternating property holds because the $c^k_{ij}$ are alternating, and the Jacobi identity for the bracket is a consequence of the Jacobi identity for the structure constants. For the Heisenberg algebra with basis $n,m,z$ and $[n,m] = z$ the bracket $\{F,G\} = \xi_z(\partial_pF\partial_qG-\partial_qF\partial_pG)$ satisfies the Jacobi identity and the Leibniz rule; this was verified by explicit computation of the bracket of monomials, for all triples of the monomials $n,m,z,1$ and for products of them, with the exact rational arithmetic of the coefficients, together with $\{n,m\} = z$ and the alternating property. The Poisson structure depends on the Lie algebra structure only: no form, no dual space and no manifold enters, and the bracket is the algebraic source of the Kac–Moody and the affine structures of *Vertex Algebras*.
 
 **Example (the trivial structure).** Every commutative associative algebra is a Poisson algebra with $\{f,g\} = 0$. In particular the Poisson bracket is not symmetric in its arguments: the structures of interest are exactly those in which the bracket is non-trivial, and the Poisson algebras form a full subcategory of the algebras with an additional Lie structure.
 
@@ -59,10 +59,10 @@ the second display being the extension of the first by the Leibniz rule. Then $A
 
 ## Poisson Bivectors and the Schouten–Nijenhuis Bracket
 
-**Definition.** Let $A$ be a commutative $k$-algebra. A **polyderivation** of degree $p$ is a $k$-multilinear map $A^{\times p}\to A$ that is a derivation in each variable; the polyderivations form a graded algebra
+**Definition.** Let $A$ be a commutative $k$-algebra. A **polyderivation** of degree $n$ is a $k$-multilinear map $A^{\times n}\to A$ that is a derivation in each variable; the polyderivations form a graded algebra
 
 $$
-\Lambda^\bullet\operatorname{Der}(A) = \bigoplus_{p\geq0}\Lambda^p_A\operatorname{Der}(A),
+\Lambda^\bullet\operatorname{Der}(A) = \bigoplus_{n\geq0}\Lambda^n_A\operatorname{Der}(A),
 $$
 
 the **alternating** polyderivations, and for $A = k[x_1,\dots,x_n]$ this is the exterior algebra over $A$ on the derivations $\partial_i$, with $\Lambda^0 = A$ and $\Lambda^1 = \operatorname{Der}(A)$.
@@ -70,10 +70,10 @@ the **alternating** polyderivations, and for $A = k[x_1,\dots,x_n]$ this is the 
 **Definition.** The **Schouten–Nijenhuis bracket** on $\Lambda^\bullet\operatorname{Der}(A)$ is the unique graded bracket of degree $-1$
 
 $$
-[\,,\,]_{SN}:\Lambda^p\operatorname{Der}(A)\times\Lambda^q\operatorname{Der}(A)\longrightarrow\Lambda^{p+q-1}\operatorname{Der}(A)
+[\,,\,]_{SN}:\Lambda^n\operatorname{Der}(A)\times\Lambda^m\operatorname{Der}(A)\longrightarrow\Lambda^{n+m-1}\operatorname{Der}(A)
 $$
 
-that is graded antisymmetric, graded derivation in each variable with respect to the exterior product, and that extends the commutator of derivations for $p = q = 1$ and the action on $A$ for $p = 1$, $q = 0$; it satisfies the graded Jacobi identity, so that $\Lambda^\bullet\operatorname{Der}(A)$ is a **Gerstenhaber algebra** in the sense of the next-but-one section.
+that is graded antisymmetric, graded derivation in each variable with respect to the exterior product, and that extends the commutator of derivations for $n = m = 1$ and the action on $A$ for $n = 1$, $m = 0$; it satisfies the graded Jacobi identity, so that $\Lambda^\bullet\operatorname{Der}(A)$ is a **Gerstenhaber algebra** in the sense of the next-but-one section.
 
 **Theorem.** Let $A$ be a commutative $k$-algebra and $\pi\in\Lambda^2\operatorname{Der}(A)$ a bivector. The formula
 
@@ -92,7 +92,7 @@ defines a Poisson bracket on $A$ if and only if $[\pi,\pi]_{SN} = 0$; the bracke
 **Definition.** Let $A$ be a Poisson algebra with bracket defined by the bivector $\pi\in\Lambda^2\operatorname{Der}(A)$. The **Poisson complex** is the complex of graded $k$-modules
 
 $$
-\cdots\longrightarrow\Lambda^{p}\operatorname{Der}(A)\xrightarrow{\ d_\pi\ }\Lambda^{p+1}\operatorname{Der}(A)\longrightarrow\cdots, \qquad d_\pi = [\pi,-\;]_{SN},
+\cdots\longrightarrow\Lambda^{n}\operatorname{Der}(A)\xrightarrow{\ d_\pi\ }\Lambda^{n+1}\operatorname{Der}(A)\longrightarrow\cdots, \qquad d_\pi = [\pi,-\;]_{SN},
 $$
 
 and the **Poisson cohomology** is $H^\bullet_\pi(A) = \ker d_\pi/\operatorname{im}d_\pi$; the differential satisfies $d_\pi^2 = 0$ by the graded Jacobi identity of the Schouten–Nijenhuis bracket and the condition $[\pi,\pi]_{SN} = 0$.
@@ -112,10 +112,10 @@ and the **Poisson cohomology** is $H^\bullet_\pi(A) = \ker d_\pi/\operatorname{i
 
 **Definition.** A **Gerstenhaber algebra** over $k$ is a graded $k$-module $G^\bullet = \bigoplus_{n\geq0}G^n$ with:
 
-1. a **graded-commutative product** $G^p\times G^q\to G^{p+q}$, $ab = (-1)^{pq}ba$, with unit in degree zero;
-2. a **bracket** $[\,,\,]:G^p\times G^q\to G^{p+q-1}$ of degree $-1$ that is graded antisymmetric, $[a,b] = -(-1)^{(p-1)(q-1)}[b,a]$;
-3. the **graded Jacobi identity** $(-1)^{(p-1)(r-1)}[a,[b,c]]+(-1)^{(q-1)(p-1)}[b,[c,a]]+(-1)^{(r-1)(q-1)}[c,[a,b]] = 0$;
-4. the **graded Leibniz rule** $[a,bc] = [a,b]c+(-1)^{(p-1)q}b[a,c]$.
+1. a **graded-commutative product** $G^n\times G^m\to G^{n+m}$, $ab = (-1)^{pq}ba$, with unit in degree zero;
+2. a **bracket** $[\,,\,]:G^n\times G^m\to G^{n+m-1}$ of degree $-1$ that is graded antisymmetric, $[a,b] = -(-1)^{(n-1)(m-1)}[b,a]$;
+3. the **graded Jacobi identity** $(-1)^{(n-1)(r-1)}[a,[b,c]]+(-1)^{(m-1)(n-1)}[b,[c,a]]+(-1)^{(r-1)(m-1)}[c,[a,b]] = 0$;
+4. the **graded Leibniz rule** $[a,bc] = [a,b]c+(-1)^{(n-1)m}b[a,c]$.
 
 A Gerstenhaber algebra of degree zero, that is one concentrated in degrees $0$ and with the bracket on $G^0$, is a Poisson algebra; the shift of degree by one therefore exhibits the Poisson algebras as the degree-zero case and the Gerstenhaber algebras as the general one.
 
@@ -201,7 +201,7 @@ so that the bracket is a Lie bracket in the parametrised sense with the derivati
 
 ## Summary
 
-A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable; a **Gerstenhaber algebra** is the same structure with a graded-commutative product and a bracket of degree $-1$, satisfying the graded Jacobi identity and the graded Leibniz rule, and a Poisson algebra is the degree-zero case. The principal algebraic example of a Poisson structure is the **Lie–Poisson** structure on the symmetric algebra $\operatorname{Sym}(\mathrm{G})$ of a Lie algebra, $\{\xi_i,\xi_j\} = \sum_kc^k_{ij}\xi_k$ extended by the Leibniz rule, whose Jacobi identity and Leibniz rule were verified by explicit computation of the brackets of monomials for the Heisenberg algebra with basis $p,q,z$ and $[p,q] = z$. A Poisson structure on $A$ is a bivector $\pi\in\Lambda^2\operatorname{Der}(A)$ with $[\pi,\pi]_{SN} = 0$ under the **Schouten–Nijenhuis bracket**, the bracket being $\{f,g\} = \pi(df\wedge dg)$ and the condition being the Jacobi identity; the **Poisson cohomology** $H^\bullet_\pi(A)$ of the complex $(\Lambda^\bullet\operatorname{Der}(A),[\,\pi,-\;]_{SN})$ has $H^0$ the Casimirs, $H^1$ the Poisson derivations modulo the Hamiltonian ones, $H^2$ the infinitesimal deformations of the Poisson structure and $H^3$ the obstructions, and it reduces to the Lie algebra cohomology of *Lie Algebra Cohomology* for the linear structures. The **Hochschild cohomology** $HH^\bullet(A,A)$ of an associative algebra is a Gerstenhaber algebra, with the cup product, the **Gerstenhaber bracket** of degree $-1$, and the identification $HH^\bullet(k[x_1,\dots,x_n],k[x_1,\dots,x_n])\cong\Lambda^\bullet\operatorname{Der}(A)$ of the Hochschild–Kostant–Rosenberg theorem, under which the two brackets agree; a formal deformation $a*b = ab+\sum_nt^n\mu_n(a,b)$ has its first-order term a Hochschild two-cocycle, its **semi-classical bracket** $\mu_1(a,b)-\mu_1(b,a)$ a Poisson bracket, and its obstructions in $HH^3$, and the theorem of Kontsevich asserts that every Poisson structure on a polynomial algebra over the real numbers admits a **deformation quantisation**, the algebraic example being the passage from $\operatorname{Sym}(\mathrm{G})$ to $U(\mathrm{G})$. A **Batalin–Vilkovisky algebra** is a Gerstenhaber algebra with an operator $\Delta$ of degree $-1$, $\Delta^2 = 0$, whose failure to be a derivation measures the bracket; the Hochschild cohomology of a Calabi–Yau algebra of *Calabi–Yau Algebras* carries such a structure with the Connes operator as $\Delta$, and the commutative case gives the divergence. Finally, a **Poisson vertex algebra** is the parametrised form of the theory, with the commutative vertex algebra product, the $\lambda$-bracket and the Jacobi identity in the parameter, and it is the general framework referred to by *Vertex Algebras*. The symplectic and Poisson forms of Part II, the Poisson manifolds and the Poisson geometry, and the analytic theory of the star products of Part III, are deferred.
+A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable; a **Gerstenhaber algebra** is the same structure with a graded-commutative product and a bracket of degree $-1$, satisfying the graded Jacobi identity and the graded Leibniz rule, and a Poisson algebra is the degree-zero case. The principal algebraic example of a Poisson structure is the **Lie–Poisson** structure on the symmetric algebra $\operatorname{Sym}(\mathrm{G})$ of a Lie algebra, $\{\xi_i,\xi_j\} = \sum_kc^k_{ij}\xi_k$ extended by the Leibniz rule, whose Jacobi identity and Leibniz rule were verified by explicit computation of the brackets of monomials for the Heisenberg algebra with basis $n,m,z$ and $[n,m] = z$. A Poisson structure on $A$ is a bivector $\pi\in\Lambda^2\operatorname{Der}(A)$ with $[\pi,\pi]_{SN} = 0$ under the **Schouten–Nijenhuis bracket**, the bracket being $\{f,g\} = \pi(df\wedge dg)$ and the condition being the Jacobi identity; the **Poisson cohomology** $H^\bullet_\pi(A)$ of the complex $(\Lambda^\bullet\operatorname{Der}(A),[\,\pi,-\;]_{SN})$ has $H^0$ the Casimirs, $H^1$ the Poisson derivations modulo the Hamiltonian ones, $H^2$ the infinitesimal deformations of the Poisson structure and $H^3$ the obstructions, and it reduces to the Lie algebra cohomology of *Lie Algebra Cohomology* for the linear structures. The **Hochschild cohomology** $HH^\bullet(A,A)$ of an associative algebra is a Gerstenhaber algebra, with the cup product, the **Gerstenhaber bracket** of degree $-1$, and the identification $HH^\bullet(k[x_1,\dots,x_n],k[x_1,\dots,x_n])\cong\Lambda^\bullet\operatorname{Der}(A)$ of the Hochschild–Kostant–Rosenberg theorem, under which the two brackets agree; a formal deformation $a*b = ab+\sum_nt^n\mu_n(a,b)$ has its first-order term a Hochschild two-cocycle, its **semi-classical bracket** $\mu_1(a,b)-\mu_1(b,a)$ a Poisson bracket, and its obstructions in $HH^3$, and the theorem of Kontsevich asserts that every Poisson structure on a polynomial algebra over the real numbers admits a **deformation quantisation**, the algebraic example being the passage from $\operatorname{Sym}(\mathrm{G})$ to $U(\mathrm{G})$. A **Batalin–Vilkovisky algebra** is a Gerstenhaber algebra with an operator $\Delta$ of degree $-1$, $\Delta^2 = 0$, whose failure to be a derivation measures the bracket; the Hochschild cohomology of a Calabi–Yau algebra of *Calabi–Yau Algebras* carries such a structure with the Connes operator as $\Delta$, and the commutative case gives the divergence. Finally, a **Poisson vertex algebra** is the parametrised form of the theory, with the commutative vertex algebra product, the $\lambda$-bracket and the Jacobi identity in the parameter, and it is the general framework referred to by *Vertex Algebras*. The symplectic and Poisson forms of Part II, the Poisson manifolds and the Poisson geometry, and the analytic theory of the star products of Part III, are deferred.
 
 ## Summary of Notation
 

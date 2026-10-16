@@ -4,7 +4,7 @@
 
 The complex space carries two products: the **general plain bilinear product** $AC$, which is the multiplication of the field, and the **general plain sesquilinear product** $A\bar C$, the derived operation of the algebra with its conjugate-linear involution. They are the two products on which the whole `## Complex Numbers` chapter is built.
 
-This article defines the two products, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are *Relations and Comparison Between the Two Products*, below this article in this category; the multiplication of the field is *Complex Algebra*, below this article in this category, which owns it; and the two forms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complex Space*, also below.
+This article defines the two products, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are *Relations and Comparison Between the Two Products*, below this article in this category; the multiplication of the field is *Complex Algebra*, below this article in this category, which owns it; and the two forms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, also below.
 
 The elements are written $A = a + ia'$ and $C = c + ic'$. The **bar** is complex conjugation and the **Hermitian star** coincides with it, $A^{*} = \bar A$.
 

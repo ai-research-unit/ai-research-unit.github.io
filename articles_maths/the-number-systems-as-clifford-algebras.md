@@ -7,7 +7,7 @@ The classical number systems over the real numbers — the complex numbers, the 
 
 This article states that dictionary. The basic algebra of each number system is not repeated here: the complex numbers, the split complex numbers in *Split Complex Algebra*, the dual numbers in *Dual Numbers Algebra*, the quaternions, the split biquaternions, and the biquaternions. What is added here is the identification of each with a Clifford algebra, the reading of its norm from the Clifford form, and the reason the list stops where it does.
 
-The conventions are those of the category. The Clifford algebra $\mathrm{Cl}_{p,q}$ has $p$ generators of square $+1$ and $q$ of square $-1$, so that $\mathrm{Cl}_{0,1}\cong\mathbb{C}$, $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the even subalgebra is written $\mathrm{Cl}^0$; and the low-dimensional identifications are those of *The Low-Dimensional Classification*. The number systems are written $\mathbb{R},\mathbb{C},\mathbb{D},\mathbb{D}',\mathbb{H},\mathbb{H}_{\mathbb{D}},\mathbb{B}$, with $\mathbb{D}$ the split complex numbers (unit $j$, $j^2=+1$), $\mathbb{D}'$ the dual numbers (unit $\varepsilon$, $\varepsilon^2=0$), $\mathbb{H}$ the quaternions (units $e_1,e_2,e_3$, $e_k^2=-1$), $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ the split biquaternions, and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the biquaternions.
+The conventions are those of the category. The Clifford algebra $\mathrm{Cl}_{n,m}$ has $n$ generators of square $+1$ and $m$ of square $-1$, so that $\mathrm{Cl}_{0,1}\cong\mathbb{C}$, $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the even subalgebra is written $\mathrm{Cl}^0$; and the low-dimensional identifications are those of *The Low-Dimensional Classification*. The number systems are written $\mathbb{R},\mathbb{C},\mathbb{D},\mathbb{D}',\mathbb{H},\mathbb{H}_{\mathbb{D}},\mathbb{B}$, with $\mathbb{D}$ the split complex numbers (unit $j$, $j^2=+1$), $\mathbb{D}'$ the dual numbers (unit $\varepsilon$, $\varepsilon^2=0$), $\mathbb{H}$ the quaternions (units $e_1,e_2,e_3$, $e_k^2=-1$), $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ the split biquaternions, and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the biquaternions.
 
 ## The Dictionary
 
@@ -18,13 +18,13 @@ Every such algebra is a Clifford algebra, and the correspondence is given by the
 | number system | Clifford algebra | generating form |
 |---|---|---|
 | $\mathbb{R}$ | $\mathrm{Cl}_{0,0}$ | empty |
-| $\mathbb{C}$ | $\mathrm{Cl}_{0,1}$ | $q=-\mathrm{id}$ on $\mathbb{R}$ |
-| $\mathbb{D}$ | $\mathrm{Cl}_{1,0}$ | $q=+\mathrm{id}$ on $\mathbb{R}$ |
-| $\mathbb{D}'$ | $\mathrm{Cl}(\mathbb{R},0)$ | degenerate, $q=0$ |
-| $\mathbb{H}$ | $\mathrm{Cl}_{0,2}$ | $q=-(\text{quaternion norm})$ on the imaginary part |
-| $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ | $q=-\mathrm{id}$ on $\mathbb{R}^3$ |
+| $\mathbb{C}$ | $\mathrm{Cl}_{0,1}$ | $m=-\mathrm{id}$ on $\mathbb{R}$ |
+| $\mathbb{D}$ | $\mathrm{Cl}_{1,0}$ | $m=+\mathrm{id}$ on $\mathbb{R}$ |
+| $\mathbb{D}'$ | $\mathrm{Cl}(\mathbb{R},0)$ | degenerate, $m=0$ |
+| $\mathbb{H}$ | $\mathrm{Cl}_{0,2}$ | $m=-(\text{quaternion norm})$ on the imaginary part |
+| $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | $\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$ | $m=-\mathrm{id}$ on $\mathbb{R}^3$ |
 | $M_2(\mathbb{R})$ | $\mathrm{Cl}_{2,0}=\mathrm{Cl}_{1,1}$ | $\operatorname{diag}(+1,+1)$ or $\operatorname{diag}(+1,-1)$ |
-| $\mathbb{B}$ | $\mathrm{Cl}_{3,0}=\mathbb{C}\mathrm{l}_2$ | $q=+\mathrm{id}$ on $\mathbb{R}^3$ |
+| $\mathbb{B}$ | $\mathrm{Cl}_{3,0}=\mathbb{C}\mathrm{l}_2$ | $m=+\mathrm{id}$ on $\mathbb{R}^3$ |
 
 The entries are the low-dimensional classification, read from the number-system side. The one-dimensional cases have the two signs of the form; the two-dimensional cases have the three forms of signature $(2,0)$, $(1,1)$ and $(0,2)$, which are $M_2(\mathbb{R})$, $M_2(\mathbb{R})$ and $\mathbb{H}$; and the three-dimensional positive definite case is the complex $2\times2$ matrix algebra, which is the biquaternion algebra.
 
@@ -32,27 +32,27 @@ The entries are the low-dimensional classification, read from the number-system 
 
 **Remark.** The symbol $\mathbb{H}_{\mathbb{D}}$ denotes the tensor product $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, as fixed by the shared conventions of the category. The four-dimensional algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ is also called the split quaternions in the classical literature, since it is the split form of $\mathbb{H}$ in the sense of composition algebras; the two algebras are not isomorphic and the corpus reserves the name $\mathbb{H}_{\mathbb{D}}$, the **split-biquaternions**, for the eight-dimensional one. The dictionary lists both, the four-dimensional algebra under its matrix description and the eight-dimensional one under its tensor-product description.
 
-**Remark.** The form of the Clifford algebra is *not* the norm of the number system; it is the norm with the opposite sign on the generators. For $\mathbb{C}$ the norm is $N(x+ye)=x^2+y^2$, positive definite, while the Clifford form is $q(e)=-1$; for $\mathbb{H}$ the norm is the sum of squares on the coefficients, while $q(e_k)=-1$. The reason is that the Clifford relation is $e^2=q(e)$, whereas the number system has $e^2=-1$ for an imaginary unit, so the two differ by a sign and one writes $q=-N$ on the span of the generators. The dictionary above records the Clifford form, and the norm is recovered as the Clifford form with the sign reversed on the generators and extended multiplicatively.
+**Remark.** The form of the Clifford algebra is *not* the norm of the number system; it is the norm with the opposite sign on the generators. For $\mathbb{C}$ the norm is $N(x+ye)=x^2+y^2$, positive definite, while the Clifford form is $\mathfrak{Q}(e)=-1$; for $\mathbb{H}$ the norm is the sum of squares on the coefficients, while $\mathfrak{Q}(e_k)=-1$. The reason is that the Clifford relation is $e^2=\mathfrak{Q}(e)$, whereas the number system has $e^2=-1$ for an imaginary unit, so the two differ by a sign and one writes $m=-N$ on the span of the generators. The dictionary above records the Clifford form, and the norm is recovered as the Clifford form with the sign reversed on the generators and extended multiplicatively.
 
 ## The One-Dimensional Systems
 
-**The complex numbers.** With one generator $e$ of square $-1$, the algebra is $\mathrm{Cl}_{0,1}=\mathbb{R}[e]/(e^2+1)=\mathbb{C}$. The Clifford form is $q(e)=-1$; the norm is $N(x+ye)=x^2+y^2$, multiplicative, and non-vanishing on nonzero elements, so $\mathbb{C}$ is a division algebra. The conjugation ${}^{\natural}$ is the Clifford conjugation $e^{\natural}=-e$, the norm satisfies $N(z)=z\bar z$, and the units are the nonzero elements.
+**The complex numbers.** With one generator $e$ of square $-1$, the algebra is $\mathrm{Cl}_{0,1}=\mathbb{R}[e]/(e^2+1)=\mathbb{C}$. The Clifford form is $\mathfrak{Q}(e)=-1$; the norm is $N(x+ye)=x^2+y^2$, multiplicative, and non-vanishing on nonzero elements, so $\mathbb{C}$ is a division algebra. The conjugation ${}^{\natural}$ is the Clifford conjugation $\exp(\natural)=-e$, the norm satisfies $N(z)=z\bar z$, and the units are the nonzero elements.
 
-**The split complex numbers.** With one generator $j$ of square $+1$, the algebra is $\mathrm{Cl}_{1,0}=\mathbb{R}[j]/(j^2-1)=\mathbb{D}=\mathbb{R}\times\mathbb{R}$, with the idempotents $\pi_{1,2}=\tfrac12(1\pm j)$. The Clifford form is $q(j)=+1$. The norm $N(x+yj)=x^2-y^2$ is indefinite and vanishes on the isotropic lines $x=\pm y$, so $\mathbb{D}$ is not a division algebra; the zero divisors are the nonzero multiples of the idempotents. The appearance of the zero divisors is thus exactly the statement that the form of the Clifford algebra is indefinite, or equivalently that the algebra is a nontrivial direct product.
+**The split complex numbers.** With one generator $j$ of square $+1$, the algebra is $\mathrm{Cl}_{1,0}=\mathbb{R}[j]/(j^2-1)=\mathbb{D}=\mathbb{R}\times\mathbb{R}$, with the idempotents $\pi_{1,2}=\tfrac12(1\pm j)$. The Clifford form is $\mathfrak{Q}(j)=+1$. The norm $N(x+yj)=x^2-y^2$ is indefinite and vanishes on the isotropic lines $x=\pm y$, so $\mathbb{D}$ is not a division algebra; the zero divisors are the nonzero multiples of the idempotents. The appearance of the zero divisors is thus exactly the statement that the form of the Clifford algebra is indefinite, or equivalently that the algebra is a nontrivial direct product.
 
-**The dual numbers.** The degenerate case is obtained by taking the form $q=0$ on a one-dimensional space. The Clifford algebra $\mathrm{Cl}(\mathbb{R},0)$ is the exterior algebra on the generator, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ with $\varepsilon^2=0$, which is the algebra of dual numbers $\mathbb{D}'$. The radical of the form is the whole space, the algebra is not semisimple, and the "norm" degenerates: $N(a+b\varepsilon)=a^{2}$ vanishes on the line $\mathbb{R}\varepsilon$, so its radical is one-dimensional and the form is not non-degenerate. The dual numbers are therefore the Clifford algebra of a degenerate form, and they are the smallest model of the radical phenomena of the degenerate case: they are not a composition algebra, because the norm is degenerate.
+**The dual numbers.** The degenerate case is obtained by taking the form $m=0$ on a one-dimensional space. The Clifford algebra $\mathrm{Cl}(\mathbb{R},0)$ is the exterior algebra on the generator, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ with $\varepsilon^2=0$, which is the algebra of dual numbers $\mathbb{D}'$. The radical of the form is the whole space, the algebra is not semisimple, and the "norm" degenerates: $N(a+b\varepsilon)=a^{2}$ vanishes on the line $\mathbb{R}\varepsilon$, so its radical is one-dimensional and the form is not non-degenerate. The dual numbers are therefore the Clifford algebra of a degenerate form, and they are the smallest model of the radical phenomena of the degenerate case: they are not a composition algebra, because the norm is degenerate.
 
 **Remark.** The three one-dimensional systems correspond to the three orbits of the pair $(\dim V,q)$ with $\dim V=1$: the form can be negative definite, positive definite, or zero. The classification is thus complete in dimension one, and it is the sharpest illustration of the fact that the Clifford algebra detects the order of the form and not only its rank.
 
 ## The Two-Dimensional Systems
 
-**The quaternions.** With two generators $e_1,e_2$ of square $-1$ and anticommuting, the algebra is $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, with the quaternion units $e_1,e_2,e_3=e_1e_2$ of the category convention; this is the computation of *The Low-Dimensional Classification*. The Clifford form is $q=-\mathrm{id}$ on the imaginary part, the norm is $N=x_0^2+x_1^2+x_2^2+x_3^2$, positive definite and multiplicative, and $\mathbb{H}$ is a division algebra. The Clifford conjugation ${}^{\natural}$ is the quaternion conjugation, and the group of units is $\mathbb{H}^{\times}=\mathbb{R}_{>0}\times Sp(1)$, with $Sp(1)$ the unit quaternions.
+**The quaternions.** With two generators $e_1,e_2$ of square $-1$ and anticommuting, the algebra is $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, with the quaternion units $e_1,e_2,e_3=e_1e_2$ of the category convention; this is the computation of *The Low-Dimensional Classification*. The Clifford form is $m=-\mathrm{id}$ on the imaginary part, the norm is $N=x_0^2+x_1^2+x_2^2+x_3^2$, positive definite and multiplicative, and $\mathbb{H}$ is a division algebra. The Clifford conjugation ${}^{\natural}$ is the quaternion conjugation, and the group of units is $\mathbb{H}^{\times}=\mathbb{R}_{>0}\times Sp(1)$, with $Sp(1)$ the unit quaternions.
 
 **The commutative counter-case.** The hypothesis of anticommutativity in the previous paragraph is not redundant, and dropping it gives an algebra that is not a Clifford algebra at all. Let two generators with square $-1$ commute: the algebra is $\mathbb{R}[i,e]/(i^2+1,\,e^2+1)$, of real dimension four, commutative, and isomorphic to $\mathbb{C}\oplus\mathbb{C}$ through the idempotents $\tfrac12(1\pm ie)$, the reduced biquaternion algebra of *List of Algebras by Dimension*. It is deliberately absent from the dictionary: $\mathrm{Cl}_{0,2} \cong \mathbb{H}$ and this algebra are generated by the same two elements with the same two squares and differ only in the sign of $e_1e_2$. The case is the sharpest instance of the difference between the two tensor products recorded for $\mathbb{H}_{\mathbb{D}}$ above — the Clifford algebra of a pair of forms is the *graded* tensor product, where the generators anticommute, while the ordinary tensor product of the same two algebras is commutative and is not a Clifford algebra at all. Equivalently, the dictionary's map sends anticommutativity to the Clifford relation, and every four-dimensional commutative algebra with the same generators lies outside its image.
 
 **The four-dimensional split quaternions.** With generators $e_1$ of square $+1$ and $e_2$ of square $-1$, the algebra is $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, the split quaternion algebra of the classical literature; it is the split form of $\mathbb{H}$ as a composition algebra and it is not the symbol $\mathbb{H}_{\mathbb{D}}$ of the corpus, which denotes the eight-dimensional $\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$. The Clifford form is $\operatorname{diag}(+1,-1)$, the norm is indefinite of signature $(2,2)$, and the algebra has zero divisors; the idempotents are the elements of rank one in the matrix model. The three two-dimensional forms are thus $M_2(\mathbb{R})$ for the signatures $(+1,-1)$ and $(+1,+1)$ and $\mathbb{H}$ for $(-1,-1)$, and the split quaternion algebra is the $(+1,-1)$ case.
 
-**The matrix algebra.** The signature $(2,0)$ gives $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, so the same algebra arises from two inequivalent forms. This is the two-dimensional instance of the general fact that $\mathrm{Cl}_{p,q}$ depends on the difference of the signatures modulo eight and not on the individual signs; the two forms are real forms of the same complexification and give the same algebra here because the classes $d\equiv2$ and $d\equiv0$ both lie in the real block of the eightfold table, where the algebra is a full matrix algebra over $F$ of the same size.
+**The matrix algebra.** The signature $(2,0)$ gives $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, so the same algebra arises from two inequivalent forms. This is the two-dimensional instance of the general fact that $\mathrm{Cl}_{n,m}$ depends on the difference of the signatures modulo eight and not on the individual signs; the two forms are real forms of the same complexification and give the same algebra here because the classes $d\equiv2$ and $d\equiv0$ both lie in the real block of the eightfold table, where the algebra is a full matrix algebra over $F$ of the same size.
 
 ## The Biquaternion Algebra
 
@@ -62,10 +62,10 @@ The three-dimensional positive definite form gives the algebra that the applicat
 
 **Proof.** The images $ie_k$ square to $(ie_k)^2=i^2e_k^2=(-1)(-1)=+1$ and anticommute, so the assignment extends to an algebra homomorphism; it is injective because the images generate the eight-dimensional algebra, and both sides are eight-dimensional.
 
-Under this identification the quaternion units of the embedded copy are the bivectors of the Clifford algebra, $e_1=-\gamma_2\gamma_3$ and cyclically, and the central scalar imaginary of $\mathbb{B}$ is the volume element, $i\mapsto\gamma_1\gamma_2\gamma_3$. The Clifford form on the generators is $q(\gamma_k)=+1$, while the norm of the biquaternion algebra is the complex-valued form
+Under this identification the quaternion units of the embedded copy are the bivectors of the Clifford algebra, $e_1=-\gamma_2\gamma_3$ and cyclically, and the central scalar imaginary of $\mathbb{B}$ is the volume element, $i\mapsto\gamma_1\gamma_2\gamma_3$. The Clifford form on the generators is $\mathfrak{Q}(\gamma_k)=+1$, while the norm of the biquaternion algebra is the complex-valued form
 
 $$
-N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}=\sum_{\mu=0}^{3}Q_\mu^2,
+\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}=\sum_{\mu=0}^{3}Q_\mu^2,
 $$
 
 with $Q_\mu\in\mathbb{C}$. Writing $Q_\mu=a_\mu+ib_\mu$ this is $N=\sum_\mu(a_\mu^2-b_\mu^2)+2i\sum_\mu a_\mu b_\mu$, so the real part of the norm is a quadratic form of signature $(4,4)$ and the Hermitian form $\tilde Q\tilde{Q}^{*}$ has scalar part the positive definite form $\sum_\mu|Q_\mu|^2$. The biquaternion algebra is thus a system whose norm is complex-valued and indefinite in its real part, and it is not a division algebra; its zero divisors are not covered here.
@@ -143,7 +143,7 @@ $$
 and the norm-one groups are
 
 $$
-\{z\in\mathbb{C}:N(z)=1\}=U(1)=\mathrm{Spin}(2), \qquad \{q\in\mathbb{H}:N(q)=1\}=Sp(1)=\mathrm{Spin}(3).
+\{z\in\mathbb{C}:N(z)=1\}=U(1)=\mathrm{Spin}(2), \qquad \{m\in\mathbb{H}:N(m)=1\}=Sp(1)=\mathrm{Spin}(3).
 $$
 
 **Proof.** The norm is multiplicative, so $N$ is a group homomorphism from the units to $\mathbb{R}^{\times}$ (or to $\mathbb{C}^{\times}$ for $\mathbb{B}$), and its kernel is the norm-one group. The identifications of the kernels with $U(1)$ and $Sp(1)$ are immediate from the explicit forms; the spin-group identifications are those of the previous articles, in which the unit complex numbers double-cover $SO(2)$ and the unit quaternions double-cover $SO(3)$. For $\mathbb{B}$ the norm takes values in $\mathbb{C}$ and is not a division-algebra norm; the unit group is the group of invertible $2\times2$ complex matrices, and its norm-one subgroup is $SL(2,\mathbb{C})$.
@@ -194,7 +194,7 @@ The composition property of the norm — the multiplicativity $N(xy)=N(x)N(y)$ �
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{Cl}_{p,q}$ | Clifford algebra, $p$ generators of square $+1$, $q$ of square $-1$ |
+| $\mathrm{Cl}_{n,m}$ | Clifford algebra, $n$ generators of square $+1$, $m$ of square $-1$ |
 | $\mathrm{Cl}^0$ | Even subalgebra |
 | $\mathbb{C}$ | Complex numbers, $\mathrm{Cl}_{0,1}$ |
 | $\mathbb{D}$ | Split complex numbers, unit $j$, $j^2=+1$, $\mathbb{D}=\mathrm{Cl}_{1,0}$ |
@@ -202,7 +202,7 @@ The composition property of the norm — the multiplicativity $N(xy)=N(x)N(y)$ �
 | $\mathbb{H}$ | Quaternions, units $e_1,e_2,e_3$, $e_k^2=-1$, $\mathbb{H}=\mathrm{Cl}_{0,2}$ |
 | $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternions, $\cong\mathrm{Cl}_{0,3}\cong\mathbb{H}\times\mathbb{H}$, of real dimension eight |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternions, $\cong\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$ |
-| $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Norm of $\mathbb{B}$, complex-valued, signature $(4,4)$ in its real part |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Norm of $\mathbb{B}$, complex-valued, signature $(4,4)$ in its real part |
 | $\tilde Q\tilde{Q}^{*}$ | Hermitian form of $\mathbb{B}$ |
 | $\langle\tilde P,\tilde Q\rangle=\sum_\mu P_{\bar{\mu}}Q_\mu$ | Complex inner product on $\mathbb{B}$ |
 | $\pi_{1,2}=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{D}$ |

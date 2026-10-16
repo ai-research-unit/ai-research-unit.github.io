@@ -6,7 +6,7 @@ The Clifford algebra of an infinite-dimensional quadratic space is filtered by t
 
 The two completions answer two different questions. The **filtration completion** answers the question of convergence of a series whose terms have increasing degree and bounded-degree coefficients, and it is the smallest complete object in which the algebra is dense for the filtration topology of *The Continuous Grade Decomposition and the Filtration*, §*The Completion of the Filtration*; its associated graded algebra is the exterior algebra, unchanged, and it is the home of the infinite sums of *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*. The **norm completion** answers the question of the multiplication: the projective tensor norm of the tensor algebra is submultiplicative, it descends to a seminorm on the Clifford algebra, and the kernel of that seminorm is a two-sided ideal whose quotient is a normed algebra whose completion is a Banach algebra; the choice of norm is the choice of the convergence of the products, and the projective norm is the largest one for which the product is norm-decreasing.
 
-The article owns the completion of the algebra as a topological algebra and no more. The Fock representation, the uniqueness of the vacuum and the C*-completion of the canonical anticommutation relations are *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*; the Euclidean form, the norm of a blade and the Hilbert-space structure are the Hermitian layer, *The Euclidean Form, the Norm and the Completion on a Clifford Algebra*; the operator norms of the one-sided multiplications are the `- Operator Theory` group of this category. The algebraic theory of the filtration is *The Filtration and the Associated Graded Algebra*. Throughout, $F$ is a complete valued field of characteristic $0$, $V$ is a normed space over $F$ with a continuous quadratic form $q$, and $\mathrm{Cl}(V,q)$ is the algebra of *Topological Clifford Algebras*.
+The article owns the completion of the algebra as a topological algebra and no more. The Fock representation, the uniqueness of the vacuum and the C*-completion of the canonical anticommutation relations are *Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation*; the Euclidean form, the norm of a blade and the Hilbert-space structure are the Hermitian layer, *The Euclidean Form, the Norm and the Completion on a Clifford Algebra*; the operator norms of the one-sided multiplications are the `- Operator Theory` group of this category. The algebraic theory of the filtration is *The Filtration and the Associated Graded Algebra*. Throughout, $F$ is a complete valued field of characteristic $0$, $V$ is a normed space over $F$ with a continuous quadratic form $\mathfrak{Q}$, and $\mathrm{Cl}(V,\mathfrak{Q})$ is the algebra of *Topological Clifford Algebras*.
 
 ## The Two Completions
 
@@ -15,7 +15,7 @@ The article owns the completion of the algebra as a topological algebra and no m
 **Definition.** Let $\{N_{k}\}$ be the descending chain of elements of degree at least $k$ of *The Continuous Grade Decomposition and the Filtration*, §*The Descending Filtration and its Topology*. The **filtration completion** is
 
 $$
-\widehat{\mathrm{Cl}}_{\mathrm{filt}} = \varprojlim_{k}\mathrm{Cl}(V,q)/N_{k} ,
+\widehat{\mathrm{Cl}}_{\mathrm{filt}} = \varprojlim_{k}\mathrm{Cl}(V,\mathfrak{Q})/N_{k} ,
 $$
 
 with the inverse-limit topology, the completion of the algebra for the filtration topology.
@@ -44,13 +44,13 @@ the infimum being over all finite representations of $u$ as a sum of elementary 
 
 ### The Normed Completion
 
-**Theorem (the norm completion is a Banach algebra).** Let $\lVert\cdot\rVert_{\mathrm{q}}$ be the quotient seminorm on $\mathrm{Cl}(V,q)$ induced by the projective norm, and let $J=\{x : \lVert x\rVert_{\mathrm{q}}=0\}$. Then $J$ is a closed two-sided ideal, the quotient $\mathrm{Cl}(V,q)/J$ is a normed algebra, and its completion
+**Theorem (the norm completion is a Banach algebra).** Let $\lVert\cdot\rVert_{\mathrm{q}}$ be the quotient seminorm on $\mathrm{Cl}(V,\mathfrak{Q})$ induced by the projective norm, and let $J=\{x : \lVert x\rVert_{\mathrm{q}}=0\}$. Then $J$ is a closed two-sided ideal, the quotient $\mathrm{Cl}(V,\mathfrak{Q})/J$ is a normed algebra, and its completion
 
 $$
 \widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}
 $$
 
-is a Banach algebra containing $\mathrm{Cl}(V,q)/J$ as a dense subalgebra.
+is a Banach algebra containing $\mathrm{Cl}(V,\mathfrak{Q})/J$ as a dense subalgebra.
 
 *Proof.* The quotient seminorm is the infimum of the norms of the representatives, hence submultiplicative because the projective norm is; the set where a seminorm vanishes is a subspace, and it is a two-sided ideal because $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ forces $\lVert xy\rVert=0$ whenever $\lVert x\rVert=0$. The quotient by the kernel of a seminorm is a normed space, and the submultiplicativity descends; the completion of a normed algebra is a Banach algebra, the product extending by continuity and the inequality $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ passing to the limit.
 
@@ -61,7 +61,7 @@ is a Banach algebra containing $\mathrm{Cl}(V,q)/J$ as a dense subalgebra.
 **Theorem (finite dimension).** Let $V$ be finite-dimensional over a complete valued field and $q$ non-degenerate. Then $N_{k}=0$ for $k>n$, the filtration topology is discrete, and both completions are the algebra itself:
 
 $$
-\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,q).
+\widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,\mathfrak{Q}).
 $$
 
 *Proof.* The filtration topology is discrete by *The Continuous Grade Decomposition and the Filtration*, §*The Quotients and the Separation*, so the algebra is complete for it and the inverse limit stabilizes; a finite-dimensional normed space over a complete field is complete, so the norm completion is the algebra itself; and the projective seminorm is a norm in finite dimension, since the projective norm is equivalent to the unique norm of the finite-dimensional tensor powers.
@@ -70,9 +70,9 @@ $$
 
 ## The Universal Property
 
-**Theorem (the universal property of the norm completion).** Let $A$ be a Banach algebra over $F$ and let $\varphi : \mathrm{Cl}(V,q)\to A$ be a continuous algebra homomorphism with $\lVert\varphi(x)\rVert\le C\lVert x\rVert_{\mathrm{q}}$ for some constant $C$ and all $x$. Then $\varphi$ factors uniquely through a continuous algebra homomorphism $\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}\to A$ of norm at most $C$.
+**Theorem (the universal property of the norm completion).** Let $A$ be a Banach algebra over $F$ and let $\varphi : \mathrm{Cl}(V,\mathfrak{Q})\to A$ be a continuous algebra homomorphism with $\lVert\varphi(x)\rVert\le C\lVert x\rVert_{\mathrm{q}}$ for some constant $C$ and all $x$. Then $\varphi$ factors uniquely through a continuous algebra homomorphism $\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}\to A$ of norm at most $C$.
 
-*Proof.* A homomorphism bounded by the seminorm $\lVert\cdot\rVert_{\mathrm{q}}$ kills $J$, hence descends to $\mathrm{Cl}(V,q)/J$; a uniformly continuous map into a complete Hausdorff space extends uniquely by continuity to the completion, and the inequality $\lVert\varphi(x)\rVert\le C\lVert x\rVert$ passes to the limit, bounding the extension. The extension is multiplicative on a dense subalgebra, and a continuous bilinear map is determined by its values on a dense set, so the extension is multiplicative.
+*Proof.* A homomorphism bounded by the seminorm $\lVert\cdot\rVert_{\mathrm{q}}$ kills $J$, hence descends to $\mathrm{Cl}(V,\mathfrak{Q})/J$; a uniformly continuous map into a complete Hausdorff space extends uniquely by continuity to the completion, and the inequality $\lVert\varphi(x)\rVert\le C\lVert x\rVert$ passes to the limit, bounding the extension. The extension is multiplicative on a dense subalgebra, and a continuous bilinear map is determined by its values on a dense set, so the extension is multiplicative.
 
 **Remark (the universal property of the filtration completion).** The filtration completion has the analogous property for the filtration topology: a homomorphism continuous for a filtration topology, that is one bounded on some $N_{k}$ in the sense that $\varphi(N_{k})\subseteq\{a : \lVert a\rVert<1\}$, factors through $\widehat{\mathrm{Cl}}_{\mathrm{filt}}$. The statement is the standard universal property of an inverse limit and is the reason the completion is the right object to receive the series that appear in the applications.
 

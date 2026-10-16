@@ -52,7 +52,7 @@ This article lists the distributions and the generalised functions the corpus in
 | the product of two distributions | defined only when their wave front sets do not meet in a forbidden way; $\delta\cdot\delta$ and $\delta\cdot\mathrm{pv}\frac1x$ are not defined | *Distributions and Fundamental Solutions*; *Microlocal Analysis* |
 | convolution with a test function | $u * \varphi$ is a smooth function, a mollification and approximation of $u$ | *Distributions and Fundamental Solutions* |
 | convolution of two distributions | defined when one has compact support; it is commutative only under that hypothesis | *Distributions and Fundamental Solutions* |
-| the Fourier transform of a tempered distribution | $\langle\hat u,\varphi\rangle = \langle u,\hat\varphi\rangle$; exchanges differentiation and multiplication | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
+| the Fourier transform of a tempered distribution | $\langle\vec u,\varphi\rangle = \langle u,\\mathcal F\\varphi\rangle$; exchanges differentiation and multiplication | *Distributions and Fundamental Solutions*; *Fourier Analysis on Euclidean Spaces* |
 | restriction and pullback | defined under a transversality condition on the wave front set; the trace on a boundary needs it | *Distributions and Fundamental Solutions*; *Microlocal Analysis*; *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the wave front set $\operatorname{WF}(u)$ | the refined singular support: the directions in which $u$ fails to be smooth; the product and the pullback are governed by it | *Microlocal Analysis* |
 | the order and the singular support | the structure theorem: a distribution of finite order is a sum of derivatives of measures | *Distributions and Fundamental Solutions* |
@@ -107,7 +107,7 @@ The objects are named by their standard symbols; the tables use the following.
 | $\langle u,\varphi\rangle$ | the duality pairing |
 | $\delta$, $\delta_a$, $\partial^\alpha\delta$ | the delta distribution, its translate, its derivatives |
 | $H$, $\mathrm{pv}\frac1x$, $\mathrm{pf}\frac1{x^2}$ | Heaviside function, principal value, finite part |
-| $\hat u$ | the Fourier transform of a tempered distribution |
+| $\vec u$ | the Fourier transform of a tempered distribution |
 | $E$, $R$ | a fundamental solution or parametrix, and the smoothing remainder |
 | $\operatorname{WF}(u)$ | the wave front set |
 

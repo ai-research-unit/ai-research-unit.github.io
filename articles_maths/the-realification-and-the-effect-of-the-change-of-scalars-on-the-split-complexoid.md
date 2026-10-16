@@ -4,9 +4,9 @@
 
 The split-complex algebra is one ring and it carries two scalar readings: the reading over itself, in which it is a module of rank one on the ring $\mathbb{D}$, and the reading over $\mathbb{R}$, in which it is a two-dimensional real algebra. The passage from the first to the second is the realification, the same construction that carries an algebra from its complex reading to its real reading, and this article reads that construction on $\mathbb{D}$: the doubling of the dimension, the **split complex structure** $J$, which is the multiplication by $j$ with $J^2=+\mathrm{id}$, the two kinds of real-linear map and the two block shapes they give, the realification of the two forms, and the dictionary of the statements that change and the statements that do not.
 
-The general construction is *The Realification and the Effect of the Change of Scalars*, which owns the definitions of the realification of a vector space, of a linear map and of a form, the criteria $TJ=JT$ and $SJ=-JS$, the two realification rules and the four effects; none of that is reproved here, it is read on $\mathbb{D}$. The forms are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, the article preceding this one, and their reading on the subspaces is *Remarkable Subspaces of the Split-Complex Numbers and the Two Forms*. The complex prototype, the first rung, is *The Realification and the Effect of the Change of Scalars* of the chapter `## Complex Numbers`.
+The general construction is *The Realification and the Effect of the Change of Scalars*, which owns the definitions of the realification of a vector space, of a linear map and of a form, the criteria $TJ=JT$ and $SJ=-JS$, the two realification rules and the four effects; none of that is reproved here, it is read on $\mathbb{D}$. The forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, the article preceding this one, and their reading on the subspaces is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*. The complex prototype, the first rung, is *The Realification and the Effect of the Change of Scalars* of the chapter `## Complex Numbers`.
 
-**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so $B$, $H$ and $N$ name forms and norms only, and the structure is $J$, the multiplication by $j$.
+**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ name forms and norms only, and the structure is $J$, the multiplication by $j$.
 
 ## The Two Scalar Interpretations and the Doubling
 
@@ -74,26 +74,26 @@ $$
 \operatorname{End}_{\mathbb{R}}(\mathbb{D})=\operatorname{End}_{\mathbb{D}}(\mathbb{D})\oplus\operatorname{Ant}_{\mathbb{D}}(\mathbb{D}),
 $$
 
-each summand of real dimension two. The shapes are the split reading of the complex blocks: there the commuting maps had the block $\begin{pmatrix}u&-v\\v&u\end{pmatrix}$ and the anticommuting ones $\begin{pmatrix}u&v\\v&-u\end{pmatrix}$, with real $u,v$; here the same two shapes, read in the eigenbasis, become the algebraic norm and the anti-algebraic norm, because $J$ has real eigenvalues rather than the pair $+i,-i$.
+each summand of real dimension two. The shapes are the split reading of the complex blocks: there the commuting maps had the block $\begin{pmatrix}q_1&-q_2\\q_2&q_1\end{pmatrix}$ and the anticommuting ones $\begin{pmatrix}q_1&q_2\\q_2&-q_1\end{pmatrix}$, with real $q_1,q_2$; here the same two shapes, read in the eigenbasis, become the algebraic norm and the anti-algebraic norm, because $J$ has real eigenvalues rather than the pair $+i,-i$.
 
 **Remark (the Galois twist).** The real-algebra automorphisms of $\mathbb{D}$ are the identity and the bar, and the bar is conjugate-$\mathbb{D}$-linear, since $\overline{jA}=-j\bar A$. The automorphism group is therefore $\mathbb{Z}/2=\{1,\bar{\cdot}\}$, the group of the involution, and it is the conjugate-linear coset of the identity, exactly as the general construction describes the enlargement of the automorphisms by the Galois twist. On the complex field the corresponding twist is the conjugation of $\mathbb{C}$ over $\mathbb{R}$; here it is the conjugation of $\mathbb{D}$, which is the same involution that generates the whole of the remarkable-subspace content of the algebra.
 
 ## The Two Realification Rules and the Two Signatures
 
-The realification of a form is its real part, read on $\mathbb{D}$ as a two-dimensional real space, and the two kinds of form realify by two rules: a form whose structure-action is $-1$ realifies to the **split signature** $(n,n)$, and a form whose structure-action is $+1$ realifies by **doubling its inertia**. The two signs are the ones of the proposition of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*,
+The realification of a form is its real part, read on $\mathbb{D}$ as a two-dimensional real space, and the two kinds of form realify by two rules: a form whose structure-action is $-1$ realifies to the **split signature** $(n,n)$, and a form whose structure-action is $+1$ realifies by **doubling its inertia**. The two signs are the ones of the proposition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*,
 
 $$
-B(JA,JC)=+B(A,C),
+\langle JA,JC\rangle=+\langle A,C\rangle,
 \qquad
-H(JA,JC)=-H(A,C),
+\langle JA,JC\rangle_{*}=-\langle A,C\rangle_{*},
 $$
 
 so on $\mathbb{D}$ **the two forms take the two rules in the order opposite to the complex one**. The bilinear form has the $+1$ action, so it is the Hermitian rule that applies to it, and its realification is the definite form of signature $(2,0)$; the Hermitian form has the $-1$ action, so it is the bilinear rule that applies, and its realification is the indefinite form of signature $(1,1)$. The general corollary, read on the two forms, is
 
 | form | rule on $\mathbb{D}$ | realified signature on $\mathbb{D}$ | realified signature on $\mathbb{C}$ |
 |---|---|---|---|
-| $B(A,C)=AC$ | Hermitian rule, doubling | $(2,0)$, definite | $(1,1)$, indefinite |
-| $H(A,C)=A\overline{C}$ | bilinear rule, split | $(1,1)$, indefinite | $(2,0)$, definite |
+| $\langle A,C\rangle=AC$ | Hermitian rule, doubling | $(2,0)$, definite | $(1,1)$, indefinite |
+| $\langle A,C\rangle_{*}=A\overline{C}$ | bilinear rule, split | $(1,1)$, indefinite | $(2,0)$, definite |
 
 The split sign exchanges the two signatures with respect to the complex prototype: the form that was indefinite there is definite here, and the form that was definite there is indefinite here. This is the local statement of the contrast the whole chapter turns on, and the reason the split complex structure, a product structure of square $+\mathrm{id}$, is the opposite reading of the complex structure of square $-\mathrm{id}$.
 
@@ -107,11 +107,11 @@ The general construction distinguishes a statement **about the ring**, which is 
 | a $\mathbb{D}$-linear map | $T=\lambda\,\mathrm{id}$, $\lambda\in\mathbb{D}$ | commutes with $J$, diagonal shape |
 | a conjugate-$\mathbb{D}$-linear map | $S(A)=\lambda\bar A$ | anticommutes with $J$, anti-diagonal shape |
 | the invariant subspaces of $J$ | the ideals | $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, $\mathbb{D}$ |
-| a bilinear form | $B(A,C)=AC$, rank $1$ | realified signature $(2,0)$ |
-| a Hermitian form | $H(A,C)=A\overline{C}$, rank $1$ | realified signature $(1,1)$ |
+| a bilinear form | $\langle A,C\rangle=AC$, rank $1$ | realified signature $(2,0)$ |
+| a Hermitian form | $\langle A,C\rangle_{*}=A\overline{C}$, rank $1$ | realified signature $(1,1)$ |
 | a subring or an ideal | the two ideals $\mathbb{R}\Pi_{1,2}$ | the same two real lines |
 | the zero divisors, the idempotents | $\Pi_1\Pi_2=0$; $\Pi_{1,2}$ | unchanged (a statement about the ring) |
-| the norm and its sign | $N=a^2-a'^2$, indefinite | unchanged (a statement about the ring) |
+| the norm and its sign | $\langle\cdot\rangle_{\natural}=a^2-a'^2$, indefinite | unchanged (a statement about the ring) |
 
 The two rows that matter are the last two. The zero divisors, the idempotents, the ideals and the sign of the norm are statements about the ring: they are formulated with the product and the elements alone, and they have the same truth value in the two readings. The dimension, the scalar-linearity of a map, the two block shapes and the two realified signatures are statements about the scalars: they change, and the change is the doubling of the dimension and the exchange of the two rules. This is the structural content of the passage, and it is the same content the general construction carries, with the split sign in place of the complex one.
 
@@ -125,7 +125,7 @@ The passage therefore has the same skeleton in the two cases and two different f
 
 The split-complex algebra carries two scalar readings, over the ring $\mathbb{D}$ and over $\mathbb{R}$, and the passage between them doubles the dimension, from rank one over $\mathbb{D}$ to dimension two over $\mathbb{R}$. The structure of the passage is the multiplication by $j$, $J^2=+\mathrm{id}$, a product structure rather than a complex structure: it is diagonalisable over $\mathbb{R}$ with the two eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, it splits the algebra into its two minimal ideals, and its invariant subspaces are the ideals where the complex structure has only the trivial two. The two kinds of real-linear map are the commuting, $\mathbb{D}$-linear maps $\lambda\,\mathrm{id}$ and the anticommuting, conjugate-$\mathbb{D}$-linear maps $\lambda\bar{\cdot}$, of real dimension two each, with the algebraic norm and the anti-algebraic norm block shapes in the eigenbasis, and the Galois twist is the bar.
 
-The two forms realify by the two general rules, taken in the order opposite to the complex one because the structure has square $+\mathrm{id}$: the bilinear form $B$ takes the Hermitian rule and realifies to the definite $(2,0)$, and the Hermitian form $H$ takes the bilinear rule and realifies to the indefinite $(1,1)$. The split sign thus exchanges the two signatures with respect to the complex prototype, and the statements about the ring — the zero divisors, the idempotents, the ideals, the sign of the norm — are the ones the passage leaves unchanged. The whole difference between the split rung and the complex rung is the sign of the square of the structure.
+The two forms realify by the two general rules, taken in the order opposite to the complex one because the structure has square $+\mathrm{id}$: the bilinear form $\langle\cdot,\cdot\rangle$ takes the Hermitian rule and realifies to the definite $(2,0)$, and the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ takes the bilinear rule and realifies to the indefinite $(1,1)$. The split sign thus exchanges the two signatures with respect to the complex prototype, and the statements about the ring — the zero divisors, the idempotents, the ideals, the sign of the norm — are the ones the passage leaves unchanged. The whole difference between the split rung and the complex rung is the sign of the square of the structure.
 
 ## Summary of Notation
 
@@ -136,8 +136,8 @@ The two forms realify by the two general rules, taken in the order opposite to t
 | $\Pi_{1,2}=\tfrac12(1\pm j)$ | the eigenlines of $J$, the two minimal ideals |
 | $\operatorname{End}_{\mathbb{D}}(\mathbb{D})$ | the commuting maps, $T=\lambda\,\mathrm{id}$ |
 | $\operatorname{Ant}_{\mathbb{D}}(\mathbb{D})$ | the anticommuting maps, $S(A)=\lambda\bar A$ |
-| $B$, $H$ | the two forms, of realified signatures $(2,0)$ and $(1,1)$ |
-| $N(A)=a^2-a'^2$ | the norm, a statement about the ring |
+| $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ | the two forms, of realified signatures $(2,0)$ and $(1,1)$ |
+| $\langle A\rangle_{\natural}=a^2-a'^2$ | the norm, a statement about the ring |
 
 ## Further Reading
 

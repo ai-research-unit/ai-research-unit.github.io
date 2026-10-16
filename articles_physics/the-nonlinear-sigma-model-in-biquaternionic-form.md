@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **nonlinear sigma model** is a field theory whose fields take values in a curved target manifold and whose Lagrangian is the kinetic energy of the map from spacetime into that manifold. The simplest instance has target the unit sphere $\mathbb{S}^{N-1}$, with the field a unit vector $\hat u(x)$ and the Lagrangian $\frac12\partial_\mu\hat u\cdot\partial^\mu\hat u$; the general instance has target a coset space $G/H$ and the fields the Goldstone bosons of a symmetry $G$ spontaneously broken to $H$. The nonlinear sigma model is therefore the universal low-energy description of a broken continuous symmetry, and its geometric structure — the target, its invariant metric, and the flat connection carried by the group-valued field — is the content of the construction.
+A **nonlinear sigma model** is a field theory whose fields take values in a curved target manifold and whose Lagrangian is the kinetic energy of the map from spacetime into that manifold. The simplest instance has target the unit sphere $\mathbb{S}^{N-1}$, with the field a unit vector $\vec u(x)$ and the Lagrangian $\frac12\partial_\mu\vec u\cdot\partial^\mu\vec u$; the general instance has target a coset space $G/H$ and the fields the Goldstone bosons of a symmetry $G$ spontaneously broken to $H$. The nonlinear sigma model is therefore the universal low-energy description of a broken continuous symmetry, and its geometric structure — the target, its invariant metric, and the flat connection carried by the group-valued field — is the content of the construction.
 
 This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contributes to the nonlinear sigma model, and answers it in the framework's own terms. The framework's algebra contains two natural compact groups: the **central phase** $U(1)\cong\mathbb{S}^1$ and the **unit real quaternions** $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)\cong\mathbb{S}^3$. Both are group manifolds, both carry a canonical invariant metric given by the algebra's biquaternion norm, and both therefore support a nonlinear sigma model whose target is an object of the algebra rather than an imported manifold. The two targets are the abelian and the non-abelian cases, and they are the ones that the scalar sector of the framework can build.
 
@@ -23,7 +23,7 @@ which was verified numerically to the finite-difference error. The two-derivativ
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the matter representation and the chiral obstruction at the level of the target manifold.
 - Companion article *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the stabilising fourth-order term that turns the three-dimensional model into a soliton theory.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$ for distinct $j,k,l$ in cyclic order, and $i$ is the scalar imaginary, $i^2 = -1$, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Sc}(\tilde{Q}\tilde Y) = \mathrm{Sc}(\tilde Y\tilde{Q})$ for the scalar part. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ and $\Box = \partial_{ict}^2 + \Delta$. The nonlinear field is $\tilde U(\tilde{Q})$, valued in $\mathbb{H}^1_{\mathbb{B}} = \{\tilde U\in\mathbb{H}_{\mathbb{B}} : \tilde U\tilde U^{\natural} = e_0\}$ in the non-abelian case and in the central phase in the abelian case; the Goldstone field is $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$, so that $e^{\tilde\pi/f}$ is unitary. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ carries both indices down, so it is summed over the four coordinate derivatives without a metric factor; the positive kinetic term is obtained with the overall sign exhibited below, and at quadratic order equals $\frac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$. Throughout, $f$ is the decay constant of the broken symmetry, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and the non-abelian gauge and spinor structures are not used.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \varepsilon_{jkl}e_l$ for distinct $j,k,l$ in cyclic order, and $i$ is the scalar imaginary, $i^2 = -1$, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and $\mathrm{Sc}(\tilde{Q}\tilde Y) = \mathrm{Sc}(\tilde Y\tilde{Q})$ for the scalar part. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ and $\Box = \partial_{ict}^2 + \Delta$. The nonlinear field is $\tilde U(\tilde{Q})$, valued in $\mathbb{H}^1_{\mathbb{B}} = \{\tilde U\in\mathbb{H}_{\mathbb{B}} : \tilde U\tilde U^{\natural} = e_0\}$ in the non-abelian case and in the central phase in the abelian case; the Goldstone field is $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$, so that $\exp(\tilde\pi/f)$ is unitary. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ carries both indices down, so it is summed over the four coordinate derivatives without a metric factor; the positive kinetic term is obtained with the overall sign exhibited below, and at quadratic order equals $\frac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$. Throughout, $f$ is the decay constant of the broken symmetry, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and the non-abelian gauge and spinor structures are not used.
 
 ## The Nonlinear Realisation of a Broken Symmetry
 
@@ -70,10 +70,10 @@ $$
 \qquad
 V = \frac{\lambda}{4}\left(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) - v_0^2\right)^2 ,
 \qquad
-u = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) = \frac12\left(\phi_1^2 + \phi_2^2\right),
+\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) = \frac12\left(\phi_1^2 + \phi_2^2\right),
 $$
 
-whose vacuum sits at $\phi_1 = \sqrt2\,v_0$, $\phi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\varphi\rangle|$ is the order parameter in the normalisation $u = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(u - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
+whose vacuum sits at $\phi_1 = \sqrt2\,v_0$, $\phi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\varphi\rangle|$ is the order parameter in the normalisation $\rho = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(\rho - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
 
 $$
 \phi_1 = \sqrt2\,v_0 + h,
@@ -87,7 +87,7 @@ $$
 \mathcal{L}_\text{eff} = \frac12\left[(\partial_t\theta)^2 - (\nabla\theta)^2\right] + \cdots
 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial_\mu\tilde U}\,\partial_\mu\tilde U\right) + \cdots,
 \qquad
-\tilde U = e^{i\theta/f}e_0 ,
+\tilde U = \exp(i\theta/f)e_0 ,
 \qquad
 f = \sqrt2\,v_0 ,
 $$
@@ -200,7 +200,7 @@ and the two statements together are the content of the model: flatness is what d
 
 The other target the framework supplies is the centre.
 
-The central phase group is $U(1) = \{e^{i\alpha}e_0\}$, and its group-valued field is the exponential of a central Goldstone field,
+The central phase group is $U(1) = \{\exp(i\alpha)e_0\}$, and its group-valued field is the exponential of a central Goldstone field,
 
 $$
 \tilde U = \exp\!\left(\frac{i\,\pi}{f}\right)e_0 \in \mathbb{C}_{\mathbb{B}} ,
@@ -297,7 +297,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\tilde\pi = \pi^a e_a \in \mathrm{SU}(2)\subset\mathbb{M}_-$ | Goldstone field (non-abelian) |
 | $\tilde U = \exp(\tilde\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_0$ |
 | $f$ | Decay constant of the broken symmetry |
-| $u = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)$, $V = \frac{\lambda}{4}(u-v_0^2)^2$ | Linear-model invariant and potential |
+| $\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)$, $V = \frac{\lambda}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |
 | $\phi_1 = \sqrt2 v_0 + h$, $\phi_2 = \theta$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
 | $j^R_\mu = \tilde U^{-1}\partial_\mu\tilde U$, $j^L_\mu = \partial_\mu\tilde U\,\tilde U^{-1}$ | Maurer–Cartan currents |
 | $\partial_\mu j_\nu - \partial_\nu j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) of the group-valued field |

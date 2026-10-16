@@ -86,7 +86,7 @@ So the fixed set of the involution is the inverted set of the associated automor
 
 **Remark.** The fixed and inverted sets of the extension are closed in the Hausdorff $\hat G$ and contain the closures of $G^\sigma$ and of $I(\sigma)$; so the inverted set of the extension is a closed subgroup of $\hat G$ containing the closure of $I(\sigma)$, and the completion of an involutive topological group carries the involution. The assignment is functorial for uniformly continuous morphisms, and the completion of the completion is the completion.
 
-**Example.** The completion of $\mathbb{Q}$ with the usual topology is $\mathbb{R}$, and the inversion of $\mathbb{Q}$ extends to the inversion of $\mathbb{R}$; with the $p$-adic topology on $\mathbb{Z}$ the inversion extends to the inversion of $\mathbb{Z}_p$. In both cases the fixed set of the inversion is trivial, a torsion-free group having no element of order two, so the extension adds no fixed point and both extension theorems hold with $G^\sigma = \{e\}$.
+**Example.** The completion of $\mathbb{Q}$ with the usual topology is $\mathbb{R}$, and the inversion of $\mathbb{Q}$ extends to the inversion of $\mathbb{R}$; with the $n$-adic topology on $\mathbb{Z}$ the inversion extends to the inversion of $\mathbb{Z}_n$. In both cases the fixed set of the inversion is trivial, a torsion-free group having no element of order two, so the extension adds no fixed point and both extension theorems hold with $G^\sigma = \{e\}$.
 
 ## Subgroups, Quotients and the Coset Space
 

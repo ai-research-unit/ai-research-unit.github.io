@@ -55,7 +55,7 @@ $$
 
 so that the complement map carries the subspace spanned by the index set $I$ to its orthogonal complement in $V$.
 
-**Proof.** The computation of the theorem exhibits $e_I\omega$ as a scalar multiple of the product of the generators with indices outside $I$, and that scalar is a product of squares $q(e_i)$ and of signs. The indices outside $I$ index a basis of the orthogonal complement of the span of $e_I$. For an orthonormal basis, $q(e_i)=\pm1$, and the scalar is $\pm1$.
+**Proof.** The computation of the theorem exhibits $e_I\omega$ as a scalar multiple of the product of the generators with indices outside $I$, and that scalar is a product of squares $\mathfrak{Q}(e_i)$ and of signs. The indices outside $I$ index a basis of the orthogonal complement of the span of $e_I$. For an orthonormal basis, $\mathfrak{Q}(e_i)=\pm1$, and the scalar is $\pm1$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ with $\omega=e_1e_2e_3$ one has $e_1\omega=e_2e_3$, $e_2\omega=e_3e_1$, $e_3\omega=e_1e_2$, and $e_1e_2\omega=-e_3$, $e_2e_3\omega=-e_1$, $e_3e_1\omega=-e_2$. So the complement of a vector is a bivector on the perpendicular plane and the complement of a bivector is a vector, the two being related by the volume element and the sign.
 
@@ -117,7 +117,7 @@ $$
 a\times b:=\star(a\wedge b)=(a\wedge b)\omega^{-1}
 $$
 
-is a vector, bilinear and alternating in $a$ and $b$, orthogonal to both, of square $q(a)q(b)-B(a,b)^2$, and it satisfies $a\times b=0$ exactly when $a$ and $b$ are linearly dependent.
+is a vector, bilinear and alternating in $a$ and $b$, orthogonal to both, of square $\mathfrak{Q}(a)\mathfrak{Q}(b)-B(a,b)^2$, and it satisfies $a\times b=0$ exactly when $a$ and $b$ are linearly dependent.
 
 **Proof.** The product $a\wedge b$ is a bivector and the star carries it to $\mathrm{Cl}_1$, so the result is a vector; bilinearity and alternation are those of the outer product, and antisymmetry is the graded-commutativity $b\wedge a=-a\wedge b$. For the remaining properties take an orthonormal basis $e_1,e_2,e_3$ with $\omega=e_1e_2e_3$, so that $\omega^{-1}=-\omega$ and the computation of the example below gives $e_i\times e_j=e_k$ for $(i,j,k)$ a cyclic permutation of $(1,2,3)$ and $e_i\times e_i=0$. Writing $a=\sum a_ie_i$ and $b=\sum b_ie_i$, bilinearity gives
 
@@ -125,7 +125,7 @@ $$
 a\times b=(a_2b_3-a_3b_2)e_1+(a_3b_1-a_1b_3)e_2+(a_1b_2-a_2b_1)e_3,
 $$
 
-which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its square, computed from the three coordinates, is the Lagrange identity $q(a)q(b)-B(a,b)^2$.
+which is orthogonal to $a$ and to $b$ and vanishes exactly when the three $2\times2$ minors vanish, that is when $a$ and $b$ are linearly dependent. Its square, computed from the three coordinates, is the Lagrange identity $\mathfrak{Q}(a)\mathfrak{Q}(b)-B(a,b)^2$.
 
 **Example.** In $\mathrm{Cl}_{3,0}$ one has $\omega^2=-1$, hence $\omega^{-1}=-\omega=-e_1e_2e_3$, and
 

@@ -76,7 +76,7 @@ so the graph norm $\|f\|^2+\|Df\|^2$ is equivalent to the $H^1$ norm. A symmetri
 **Theorem (the spectrum of the flat model).** The self-adjoint operator $D$ has spectrum $\mathbb{R}$, purely absolutely continuous, with no eigenvalues; the unitary Fourier transform diagonalises it,
 
 $$
-\widehat{Df}(\xi) = i\,\sigma(\xi)\,\hat f(\xi) , \qquad \sigma(\xi)=\sum_{j=1}^{m}e_j\xi_j ,
+\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi) , \qquad \sigma(\xi)=\sum_{j=1}^{m}e_j\xi_j ,
 $$
 
 and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
@@ -87,7 +87,7 @@ and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
 *Proof.* The spectrum of the torus operator is the union of the spectra of the constant-coefficient operators on the Fourier modes, which are the fibres at integer frequencies; the counting statement is the standard lattice-point count for the ball of radius $\lambda$, with the multiplicity of the Clifford module as a constant.
 
-**Example (the circle).** For $m=1$ and $\mathcal{S}=\mathbb{C}$ with $e_1=i$, the operator is $D=i\,d/d\theta$ and the eigenfunctions are $e^{in\theta}$ with eigenvalues $-n$, so the spectrum is $\mathbb{Z}$ with multiplicity one: $D$ is self-adjoint, its spectrum is discrete, and the resolvent is compact. This is the smallest Dirac operator, and it shows that self-adjointness and nonnegativity are independent: $D^2\ge0$ while $D$ has both signs.
+**Example (the circle).** For $m=1$ and $\mathcal{S}=\mathbb{C}$ with $e_1=i$, the operator is $D=i\,d/d\theta$ and the eigenfunctions are $\exp(in\theta)$ with eigenvalues $-n$, so the spectrum is $\mathbb{Z}$ with multiplicity one: $D$ is self-adjoint, its spectrum is discrete, and the resolvent is compact. This is the smallest Dirac operator, and it shows that self-adjointness and nonnegativity are independent: $D^2\ge0$ while $D$ has both signs.
 
 ### The General Case
 

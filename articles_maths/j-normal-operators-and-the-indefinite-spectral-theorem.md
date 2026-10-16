@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the general quaternionic sesquilinear form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the spectra of the algebra's operators are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
+In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the general quaternionic sesquilinear form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the spectra of the algebra's operators are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
 
 **Conventions.** $\mathbb{B}$ is the biquaternion algebra with its general plain sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ (positive definite, Gram matrix $\mathrm{I}_4$ in the coefficient basis), its general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), and its fundamental symmetry $J={}^{\natural}$. The **Krein adjoint** of a $\mathbb{C}$-linear operator $T$ is $T^{\dagger}=JT^{*}J$, characterised by $\langle\tilde{Q}',T\tilde{Q}\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}',\tilde{Q}\rangle_{\natural*}$, where $T^{*}$ is the adjoint for $\langle\cdot,\cdot\rangle_{*}$. The algebra's operators are $L_{\tilde{Q}}$, $R_{\tilde{Q}}$ and $\Theta_{\tilde{Q}}$, with $(\Theta_{\tilde{Q}})(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$.
 
@@ -74,9 +74,9 @@ $$
 
 with the same multiplicity; in particular an eigenvalue on the unit circle has its conjugate present as well, but the spectrum is in general not contained in the unit circle.
 
-**Proof.** $T$ is $J$-unitary exactly when $T^{*}ET=E$, that is $T^{*}=ET^{-1}E$; so $T^{*}$ is similar to $T^{-1}$, whence the characteristic polynomials of $T^{*}$ and $T^{-1}$ agree, and $\mathrm{spec}(T^{-1})=\{\lambda^{-1}:\lambda\in\mathrm{spec}(T)\}$ while $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$. The last clause is the hyperbolic boost of the next sections, with eigenvalues $e^{\pm t}$.
+**Proof.** $T$ is $J$-unitary exactly when $T^{*}ET=E$, that is $T^{*}=ET^{-1}E$; so $T^{*}$ is similar to $T^{-1}$, whence the characteristic polynomials of $T^{*}$ and $T^{-1}$ agree, and $\mathrm{spec}(T^{-1})=\{\lambda^{-1}:\lambda\in\mathrm{spec}(T)\}$ while $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$. The last clause is the hyperbolic boost of the next sections, with eigenvalues $\exp(\pm t)$.
 
-**Remark (no unit-circle confinement).** The symmetry is inversion, not confinement: the boost $T$ with $e_0\mapsto\cosh t\,e_0+\sinh t\,e_1$, $e_1\mapsto\sinh t\,e_0+\cosh t\,e_1$ and $e_2,e_3$ fixed is $J$-unitary with eigenvalues $e^{t},e^{-t},1,1$, so a $J$-unitary operator leaves the unit circle as soon as it moves the Minkowski slice (*The Krein Isometry Group and Its $J$-Contractions*).
+**Remark (no unit-circle confinement).** The symmetry is inversion, not confinement: the boost $T$ with $e_0\mapsto\cosh t\,e_0+\sinh t\,e_1$, $e_1\mapsto\sinh t\,e_0+\cosh t\,e_1$ and $e_2,e_3$ fixed is $J$-unitary with eigenvalues $\exp(t),\exp(-t),1,1$, so a $J$-unitary operator leaves the unit circle as soon as it moves the Minkowski slice (*The Krein Isometry Group and Its $J$-Contractions*).
 
 ## The Normality of the Algebra's Operators
 
@@ -90,7 +90,7 @@ $$
 
 and in each case the two factors of $T^{\dagger}T$ commute.
 
-**Proof.** $[L_{\tilde{Q}}\tilde{P},\tilde{S}]=\langle R_{\bar{\tilde{Q}}}\tilde{S},\tilde{P}\rangle_{\natural*}$ was computed in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}$, and $\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}=|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.
+**Proof.** $[L_{\tilde{Q}}\tilde{P},\tilde{S}]=\langle R_{\bar{\tilde{Q}}}\tilde{S},\tilde{P}\rangle_{\natural*}$ was computed in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}$, and $\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}=|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.
 
 **Remark (a product of a left and a right multiplication need not be normal).** The composite $L_{\tilde{Q}}R_{\tilde{R}}$ has Krein adjoint $L_{\bar{\tilde{R}}}R_{\bar{\tilde{Q}}}$, and the normality condition is the commutation of the two parameters; it fails for general $\tilde{Q},\tilde{R}$, so the $J$-normal operators are not the whole of the algebra's operator span.
 
@@ -120,7 +120,7 @@ each eigenvalue of multiplicity two.
 
 **A $J$-positive nilpotent.** $T=ES$ with $S=|\tilde{Q}\rangle\langle\tilde{Q}|$ and $\tilde{Q}=e_0+e_1$: $J$-self-adjoint, in the $J$-positive cone, with $T^{2}=0$ and spectrum $\{0\}$; not diagonalisable.
 
-**A $J$-unitary with non-real spectrum.** $L_{e^{i\theta}e_0}$: $J$-unitary with spectrum $\{e^{i\theta}\}$ on the circle, showing that confinement to the circle takes place exactly for the scalar phases.
+**A $J$-unitary with non-real spectrum.** $L_{\exp(i\theta)e_0}$: $J$-unitary with spectrum $\{\exp(i\theta)\}$ on the circle, showing that confinement to the circle takes place exactly for the scalar phases.
 
 ## Summary
 
@@ -141,9 +141,9 @@ A $\mathbb{C}$-linear operator is $J$-normal when it commutes with its Krein adj
 
 ## Further Reading
 
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint and its criteria
+- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint and its criteria
 - *The Indefinite Spectra of the Operators on the Biquaternion Algebra* (`articles_maths/the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra.md`), for the explicit spectra used here
 - *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for the $J$-unitary group $U(1,3)$ and the boosts
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone containing the nilpotent example
+- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone containing the nilpotent example
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the operator algebra the family statements live in
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for indefinite normality, the definite-spectrum criterion and the symmetries of the spectra

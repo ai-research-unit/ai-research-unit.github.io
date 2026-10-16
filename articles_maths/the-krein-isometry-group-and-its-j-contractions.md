@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The isometries of the general quaternionic sesquilinear form make up the **Krein isometry group** $U_{J}(\mathbb{B})$ of the biquaternion algebra, and its shape is the surprise of the indefinite theory: it is not compact, it is not the group $U(2)$ that the two-sided structure of the algebra might suggest, and it contains the Lorentz boosts of the Minkowski slices among its elements. This article determines the group, computes its dimension, identifies its centre and its maximal compact subgroup, lists the Krein isometries inside the algebra's own operator families, describes the spectrum of a Krein isometry and the one-parameter subgroups of boosts, and ends with the $J$-contractions and their defect operators. The group appears in *The Krein Cartan Decomposition of the Operator Algebra* as the fixed group of the Krein-adjoint involution and in *The Krein Level Sets and the Hyperbolic Structure* as the isometry group of the complex hyperbolic ball; the adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
+The isometries of the general quaternionic sesquilinear form make up the **Krein isometry group** $U_{J}(\mathbb{B})$ of the biquaternion algebra, and its shape is the surprise of the indefinite theory: it is not compact, it is not the group $U(2)$ that the two-sided structure of the algebra might suggest, and it contains the Lorentz boosts of the Minkowski slices among its elements. This article determines the group, computes its dimension, identifies its centre and its maximal compact subgroup, lists the Krein isometries inside the algebra's own operator families, describes the spectrum of a Krein isometry and the one-parameter subgroups of boosts, and ends with the $J$-contractions and their defect operators. The group appears in *The Krein Cartan Decomposition of the Operator Algebra* as the fixed group of the Krein-adjoint involution and in *The Krein Level Sets and the Hyperbolic Structure* as the isometry group of the complex hyperbolic ball; the adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 **Conventions.** $\mathbb{B}$ is the biquaternion algebra; $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ is the general plain sesquilinear form (Gram matrix $\mathrm{I}_4$), $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ is the general quaternionic sesquilinear form (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), $J={}^{\natural}$, and the Krein adjoint is $T^{\dagger}=JT^{*}J$. In the coefficient basis a $\mathbb{C}$-linear operator is a matrix $T$ and the general quaternionic sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tilde{Q}^{\mathsf T*}E\tilde{Q}'$, where $T^{\mathsf T*}$ is the conjugate transpose of the matrix or vector.
 
@@ -16,7 +16,7 @@ $$
 
 **Theorem (the group is $U(1,3)$).** In the coefficient basis the Krein isometry group is $U(1,3)$, the group of complex matrices preserving an indefinite general plain sesquilinear form of signature $(1,3)$. It has real dimension $16$, it is non-compact, its centre is the circle $U(1)$ of scalar matrices $c\cdot\mathrm{id}$ with $|c|=1$, and its maximal compact subgroup is $U(1)\times U(3)$, the group preserving the canonical fundamental decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$.
 
-**Proof.** The condition $T^{\mathsf T*}ET=E$ is the defining equation of the isometry group of the form with matrix $E=\mathrm{diag}(1,-1,-1,-1)$, of signature $(1,3)$ over $\mathbb{C}$, so the group is $U(1,3)$; its real dimension is $p^{2}+q^{2}+2pq=(p+q)^{2}=16$ for $p=1,q=3$. A group of this form is non-compact because it contains the boosts of the next sections. A matrix commutes with every $U(1,3)$ exactly when it is scalar, and the scalars that preserve the form are those of modulus $1$, giving the centre. The matrices preserving the two eigenspaces of the form, that is the decomposition $\mathbb{C}^{1}\oplus\mathbb{C}^{3}$, are block diagonal unitary in the two blocks, hence $U(1)\times U(3)$; by Cartan's theorem the fixed group of the Cartan involution is the maximal compact subgroup (*The Krein Cartan Decomposition of the Operator Algebra*).
+**Proof.** The condition $T^{\mathsf T*}ET=E$ is the defining equation of the isometry group of the form with matrix $E=\mathrm{diag}(1,-1,-1,-1)$, of signature $(1,3)$ over $\mathbb{C}$, so the group is $U(1,3)$; its real dimension is $n^{2}+m^{2}+2pq=(n+m)^{2}=16$ for $n=1,m=3$. A group of this form is non-compact because it contains the boosts of the next sections. A matrix commutes with every $U(1,3)$ exactly when it is scalar, and the scalars that preserve the form are those of modulus $1$, giving the centre. The matrices preserving the two eigenspaces of the form, that is the decomposition $\mathbb{C}^{1}\oplus\mathbb{C}^{3}$, are block diagonal unitary in the two blocks, hence $U(1)\times U(3)$; by Cartan's theorem the fixed group of the Cartan involution is the maximal compact subgroup (*The Krein Cartan Decomposition of the Operator Algebra*).
 
 **Theorem (the $J$-unitarity criterion).** A $\mathbb{C}$-linear operator is a Krein isometry if and only if $T^{*}JT=J$, that is $T^{\dagger}T=\mathrm{id}$; equivalently, if and only if $T^{*}=JT^{-1}J$, so that $T$ is invertible with $T^{-1}=T^{\dagger}$.
 
@@ -58,7 +58,7 @@ $$
 
 with the same multiplicity; the eigenvalues on the unit circle are paired by conjugation, and the eigenvalues off the circle occur in inverted pairs. The spectrum need not lie on the unit circle.
 
-**Proof.** $T^{*}=JT^{-1}J$ makes $T^{*}$ similar to $T^{-1}$, so the characteristic polynomials of $T^{*}$ and of $T^{-1}$ agree, and $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ while $\mathrm{spec}(T^{-1})=\{\lambda^{-1}\}$. The boost of the next section has the eigenvalues $e^{\pm t}$.
+**Proof.** $T^{*}=JT^{-1}J$ makes $T^{*}$ similar to $T^{-1}$, so the characteristic polynomials of $T^{*}$ and of $T^{-1}$ agree, and $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ while $\mathrm{spec}(T^{-1})=\{\lambda^{-1}\}$. The boost of the next section has the eigenvalues $\exp(\pm t)$.
 
 **Example.** The diagonal phases $L_{ce_0}$ with $c\in S^{1}$ have the single eigenvalue $c$ of multiplicity four, on the circle; the norm-one sandwiches have the eigenvalues $\lambda_i\bar\lambda_j$ of the conjugating unitary matrix, on the circle as well; the boosts leave the circle.
 
@@ -75,12 +75,12 @@ $$
 **Theorem (the boosts are Krein isometries).** Each $T_{t}$ is a Krein isometry, the assignment $t\mapsto T_{t}$ is a one-parameter subgroup of $U_{J}(\mathbb{B})$, and the spectrum is
 
 $$
-\mathrm{spec}(T_{t})=\{e^{t},e^{-t},1,1\},
+\mathrm{spec}(T_{t})=\{\exp(t),\exp(-t),1,1\},
 $$
 
 so the boosts are the elements of the group whose spectrum is real and off the unit circle. The restriction of $T_{t}$ to the Minkowski slice $\mathbb{H}_{\mathbb{B}}$ is the Lorentz boost of rapidity $t$ along the $e_1$ direction, that is of velocity $\tanh t$.
 
-**Proof.** In the plane spanned by $e_0,e_1$ the form has the matrix $\mathrm{diag}(1,-1)$ and the matrix of $T_{t}$ is $\begin{pmatrix}\cosh t&\sinh t\\ \sinh t&\cosh t\end{pmatrix}$, whose columns have squares $\cosh^{2}t-\sinh^{2}t=1$, $-\cosh^{2}t+\sinh^{2}t=-1$ and scalar product $\cosh t\sinh t-\sinh t\cosh t=0$: the form is preserved, and the two remaining basis vectors are fixed in their own definite lines, so $T_{t}$ is an isometry. Additivity $T_{s}T_{t}=T_{s+t}$ is the addition formula for the hyperbolic functions, so the family is a one-parameter subgroup. The eigenvalues of the plane block are $e^{\pm t}$ and the two fixed directions contribute $1,1$. The fixed direction $e_{1}$ of the Minkowski slice is the boost axis, and the parameter is the rapidity.
+**Proof.** In the plane spanned by $e_0,e_1$ the form has the matrix $\mathrm{diag}(1,-1)$ and the matrix of $T_{t}$ is $\begin{pmatrix}\cosh t&\sinh t\\ \sinh t&\cosh t\end{pmatrix}$, whose columns have squares $\cosh^{2}t-\sinh^{2}t=1$, $-\cosh^{2}t+\sinh^{2}t=-1$ and scalar product $\cosh t\sinh t-\sinh t\cosh t=0$: the form is preserved, and the two remaining basis vectors are fixed in their own definite lines, so $T_{t}$ is an isometry. Additivity $T_{s}T_{t}=T_{s+t}$ is the addition formula for the hyperbolic functions, so the family is a one-parameter subgroup. The eigenvalues of the plane block are $\exp(\pm t)$ and the two fixed directions contribute $1,1$. The fixed direction $e_{1}$ of the Minkowski slice is the boost axis, and the parameter is the rapidity.
 
 **Corollary (the group is non-compact).** The boost family is unbounded in the operator norm as $t\to\infty$, so $U_{J}(\mathbb{B})$ is non-compact; the maximal compact subgroup $U(1)\times U(3)$ is exactly the part that fixes the canonical fundamental decomposition.
 
@@ -92,7 +92,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## The J-Contractions
 
-**Definition.** A $\mathbb{C}$-linear operator is a **$J$-contraction** when $\mathrm{id}-T^{\dagger}T$ is in the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; its **defect operator** is $\mathrm{id}-T^{\dagger}T$, and it is **strict** when the defect is invertible.
+**Definition.** A $\mathbb{C}$-linear operator is a **$J$-contraction** when $\mathrm{id}-T^{\dagger}T$ is in the $J$-positive cone $\mathcal{P}_{J}=J\cdot\{S\ge0\}$ of *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*; its **defect operator** is $\mathrm{id}-T^{\dagger}T$, and it is **strict** when the defect is invertible.
 
 **Theorem (the model $J$-contraction and the invariance).** The Krein-orthogonal projection $\pi_2=\tfrac12(\mathrm{id}-J)$ onto the vector subspace is a $J$-contraction whose defect is the projection $\pi_1=\tfrac12(\mathrm{id}+J)$ onto the centre, a $J$-positive operator; and the set of $J$-contractions is invariant under $T\mapsto U^{\dagger}TU$ for $U$ a Krein isometry. The scalar multiplications are not $J$-contractions unless they are isometries.
 
@@ -110,7 +110,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 **A sandwich.** $\Theta_{e_1}$ with $|\langle e_1,e_1\rangle_{\natural}|=1$: a Krein isometry and an inner automorphism, of spectrum $\{+1,-1\}$.
 
-**A boost.** $T_{t}$ with $t=1$: a Krein isometry of spectrum $\{e,e^{-1},1,1\}$, off the unit circle, realising the Lorentz boost of the Minkowski slice.
+**A boost.** $T_{t}$ with $t=1$: a Krein isometry of spectrum $\{e,\exp(-1),1,1\}$, off the unit circle, realising the Lorentz boost of the Minkowski slice.
 
 **A contraction.** $\pi_2=\tfrac12(\mathrm{id}-J)$, the projection onto the vector subspace: a $J$-contraction with defect $\pi_1$, the projection onto the centre.
 
@@ -118,7 +118,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## Summary
 
-The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $U(1,3)$: real dimension $16$, non-compact, centre the scalar phases $U(1)$, maximal compact subgroup $U(1)\times U(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}}$, $\tilde{Q}\in S^{1}e_0$, and the norm-one sandwiches $\Theta_{\tilde{Q}}$, $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$; together they form the compact subgroup $U(1)\times PU(2)\cong U(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $e^{\pm t},1,1$ and are the one-parameter subgroups realising the Lorentz boosts of the Minkowski slices. The group acts transitively on the isotropic lines, on the positive lines and on the maximal isotropic subspaces. Finally the $J$-contractions, defined by the $J$-positivity of their defect, are invariant under conjugation by the group; their model is the projection onto the vector subspace, whose defect is the projection onto the centre, while a scalar multiplication is a contraction only when it is an isometry.
+The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $U(1,3)$: real dimension $16$, non-compact, centre the scalar phases $U(1)$, maximal compact subgroup $U(1)\times U(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}}$, $\tilde{Q}\in S^{1}e_0$, and the norm-one sandwiches $\Theta_{\tilde{Q}}$, $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|=1$; together they form the compact subgroup $U(1)\times PU(2)\cong U(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $\exp(\pm t),1,1$ and are the one-parameter subgroups realising the Lorentz boosts of the Minkowski slices. The group acts transitively on the isotropic lines, on the positive lines and on the maximal isotropic subspaces. Finally the $J$-contractions, defined by the $J$-positivity of their defect, are invariant under conjugation by the group; their model is the projection onto the vector subspace, whose defect is the projection onto the centre, while a scalar multiplication is a contraction only when it is an isometry.
 
 ## Summary of Notation
 
@@ -130,15 +130,15 @@ The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $U(1,3)
 | $U(1)\times U(3)$ | Its maximal compact subgroup |
 | $U(1)\times PU(2)\cong U(1)\times SO(3)$ | The Krein isometries among the algebra's families |
 | $\lambda\leftrightarrow1/\bar\lambda$ | The symmetry of the spectrum |
-| $T_{t}$, $\mathrm{spec}=\{e^{t},e^{-t},1,1\}$ | The boosts; non-compactness; the Lorentz boosts |
+| $T_{t}$, $\mathrm{spec}=\{\exp(t),\exp(-t),1,1\}$ | The boosts; non-compactness; the Lorentz boosts |
 | $\mathrm{id}-T^{\dagger}T\in\mathcal{P}_{J}$ | $J$-contraction and defect |
 
 ## Further Reading
 
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the criteria in the algebra's families
+- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the criteria in the algebra's families
 - *J-Normal Operators and the Indefinite Spectral Theorem* (`articles_maths/j-normal-operators-and-the-indefinite-spectral-theorem.md`), for normality and the spectral symmetries
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the Lie algebra $\mathfrak{u}(1,3)$ and the maximal compact subalgebra
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the complex hyperbolic ball on which the group acts
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone used in the definition of the contractions
+- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone used in the definition of the contractions
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the Lorentz transformations realised by the boosts
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the unitary group of an indefinite form, its maximal compact part and the contractions

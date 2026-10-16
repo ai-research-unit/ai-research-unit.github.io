@@ -6,12 +6,12 @@
 A Riemannian metric on a manifold $M$ is a family of inner products on the tangent spaces, and the Clifford multiplication is the operator that turns each inner product into an algebra action: on the Clifford bundle $\mathrm{Cl}(TM)$ of the metric, and on any Clifford module $\mathcal{S}$ over it, the multiplication operator
 
 $$
-c(v) : \mathcal{S}\longrightarrow\mathcal{S}, \qquad c(v)^2 = -g(v,v)\operatorname{id},
+c(b) : \mathcal{S}\longrightarrow\mathcal{S}, \qquad c(b)^2 = -g(b,b)\operatorname{id},
 $$
 
-extends the vector $v$ to a skew-adjoint endomorphism of the fibres. This article treats $c$ as an operator: its algebraic relations, its parity for the chirality grading, its kernel and image, its adjoint, and the module structure it defines on the spinor bundle. The operator is the algebraic form of the metric, and the first-order operators of the category — the Cauchy–Riemann, the twistor and the Penrose operators — are all built by composing it with a connection.
+extends the vector $b$ to a skew-adjoint endomorphism of the fibres. This article treats $c$ as an operator: its algebraic relations, its parity for the chirality grading, its kernel and image, its adjoint, and the module structure it defines on the spinor bundle. The operator is the algebraic form of the metric, and the first-order operators of the category — the Cauchy–Riemann, the twistor and the Penrose operators — are all built by composing it with a connection.
 
-The multiplication is determined by the metric and the choice of a Clifford module; it is not a differential operator but a bundle map, and the properties that matter for the differential operators are collected in three groups. The **algebraic relations** are the Clifford relations $c(v)c(w)+c(w)c(v)=-2g(v,w)\operatorname{id}$ and their consequences: $c$ is injective, even and odd parts of the Clifford bundle act by preserving and exchanging the chirality, and the volume element gives the grading. The **metric properties** are the skew-adjointness $c(v)^*=-c(v)$ for the fibre form $h$ and the isometry statement $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$, which say that multiplication by a unit vector is a unitary operator of the fibre. The **splitting properties** are the facts that $c$ is a surjection with kernel $\ker c=\operatorname{im}c^*$ and that $cc^*=n\operatorname{id}$, which are the algebraic input of *The Twistor Operator*.
+The multiplication is determined by the metric and the choice of a Clifford module; it is not a differential operator but a bundle map, and the properties that matter for the differential operators are collected in three groups. The **algebraic relations** are the Clifford relations $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ and their consequences: $c$ is injective, even and odd parts of the Clifford bundle act by preserving and exchanging the chirality, and the volume element gives the grading. The **metric properties** are the skew-adjointness $c(b)^*=-c(b)$ for the fibre form $h$ and the isometry statement $h(c(b)\sigma,c(b)\tau)=g(b,b)h(\sigma,\tau)$, which say that multiplication by a unit vector is a unitary operator of the fibre. The **splitting properties** are the facts that $c$ is a surjection with kernel $\ker c=\operatorname{im}c^*$ and that $cc^*=n\operatorname{id}$, which are the algebraic input of *The Twistor Operator*.
 
 **The boundaries.** The Clifford algebra, its grading, its centre and its classification are Part II's, in *Clifford Algebras* and its companions; the Clifford modules and their structure as representations are *Spin Representations and Clifford Modules with Inner Conjugation*, and the spinor bundle is *Spin Geometry*. The operator calculus on a module — the generated algebra, the commutant, the symbol — is *Operators on a Clifford Module*, and the two pairings and the adjoints are *Adjoints on a Clifford Module*; the pointwise adjoint of the multiplication is *The Adjoint of the Clifford Multiplication*, written in the next group of this category. What this article adds is the reading of the multiplication itself as the metric-dependent operator of the fibre, with its relations, its kernel and its parity in one place. The base is a Riemannian manifold $(M,g)$ of dimension $n$; the indefinite case is only indicated where it changes a statement.
 
@@ -19,23 +19,23 @@ The multiplication is determined by the metric and the choice of a Clifford modu
 
 ### Definition and Relations
 
-**Definition.** Let $\mathcal{S}\to M$ be a Clifford module over the Clifford bundle $\mathrm{Cl}(TM)$ of $(M,g)$, with the module action $c : \mathrm{Cl}(TM)\to\operatorname{End}(\mathcal{S})$. The **Clifford multiplication** by a vector $v\in T_xM$ is the linear map
+**Definition.** Let $\mathcal{S}\to M$ be a Clifford module over the Clifford bundle $\mathrm{Cl}(TM)$ of $(M,g)$, with the module action $c : \mathrm{Cl}(TM)\to\operatorname{End}(\mathcal{S})$. The **Clifford multiplication** by a vector $b\in T_xM$ is the linear map
 
 $$
-c(v) : \mathcal{S}_x\longrightarrow\mathcal{S}_x ,
+c(b) : \mathcal{S}_x\longrightarrow\mathcal{S}_x ,
 $$
 
-and the multiplication operator is the induced bundle map $c : TM\otimes\mathcal{S}\to\mathcal{S}$, $(v,\sigma)\mapsto c(v)\sigma$. It is the restriction to the vectors of the algebra action of the Clifford algebra of the fibre, and it satisfies
+and the multiplication operator is the induced bundle map $c : TM\otimes\mathcal{S}\to\mathcal{S}$, $(b,\sigma)\mapsto c(b)\sigma$. It is the restriction to the vectors of the algebra action of the Clifford algebra of the fibre, and it satisfies
 
 $$
-c(v)c(w)+c(w)c(v) = -2\,g(v,w)\operatorname{id}, \qquad c(v)^2 = -g(v,v)\operatorname{id} .
+c(b)c(w)+c(w)c(b) = -2\,g(b,w)\operatorname{id}, \qquad c(b)^2 = -g(b,b)\operatorname{id} .
 $$
 
-**Proposition.** The map $v\mapsto c(v)$ is injective and linear, so the vectors generate a subspace of $\operatorname{End}(\mathcal{S})$ isomorphic to $TM$; the multiplication by an orthonormal frame $e_1,\dots,e_n$ satisfies $c(e_i)^2=-\operatorname{id}$ and $c(e_i)c(e_j)=-c(e_j)c(e_i)$ for $i\ne j$; and the algebra generated by the $c(e_i)$ is a quotient of the Clifford algebra $\mathrm{Cl}(T_xM,g_x)$, in fact $\mathrm{Cl}(T_xM,g_x)$ itself when the module is faithful.
+**Proposition.** The map $b\mapsto c(b)$ is injective and linear, so the vectors generate a subspace of $\operatorname{End}(\mathcal{S})$ isomorphic to $TM$; the multiplication by an orthonormal frame $e_1,\dots,e_n$ satisfies $c(e_i)^2=-\operatorname{id}$ and $c(e_i)c(e_j)=-c(e_j)c(e_i)$ for $i\ne j$; and the algebra generated by the $c(e_i)$ is a quotient of the Clifford algebra $\mathrm{Cl}(T_xM,g_x)$, in fact $\mathrm{Cl}(T_xM,g_x)$ itself when the module is faithful.
 
-**Proof.** Injectivity: a nonzero vector $v$ has $g(v,v)\ne0$ except in the isotropic case of an indefinite metric, and then $c(v)^2=-g(v,v)\operatorname{id}\ne0$; in the Riemannian case $g(v,v)>0$ for $v\ne0$, so $c(v)\ne0$, and linearity is the definition of the algebra action. The relations are the Clifford relations at the level of the algebra, and the generated algebra is the image of the algebra homomorphism $\mathrm{Cl}(T_xM,g_x)\to\operatorname{End}(\mathcal{S}_x)$ that defines the module, hence a quotient of the Clifford algebra; it is the whole algebra for a faithful module, in particular for the regular module and for the irreducible spinor modules away from the degenerate dimensions.
+**Proof.** Injectivity: a nonzero vector $b$ has $g(b,b)\ne0$ except in the isotropic case of an indefinite metric, and then $c(b)^2=-g(b,b)\operatorname{id}\ne0$; in the Riemannian case $g(b,b)>0$ for $b\ne0$, so $c(b)\ne0$, and linearity is the definition of the algebra action. The relations are the Clifford relations at the level of the algebra, and the generated algebra is the image of the algebra homomorphism $\mathrm{Cl}(T_xM,g_x)\to\operatorname{End}(\mathcal{S}_x)$ that defines the module, hence a quotient of the Clifford algebra; it is the whole algebra for a faithful module, in particular for the regular module and for the irreducible spinor modules away from the degenerate dimensions.
 
-**Remark (the dependence on the metric).** The relation $c(v)^2=-g(v,v)\operatorname{id}$ is the metric: two metrics $g$ and $\hat g$ with the same underlying manifold give different operators, related by the frame change that carries one orthonormal frame to the other. The composition of $c$ with a connection is therefore also metric-dependent, and this is the sense in which every first-order operator of the category reads a chosen distance and not only the topology.
+**Remark (the dependence on the metric).** The relation $c(b)^2=-g(b,b)\operatorname{id}$ is the metric: two metrics $g$ and $\hat g$ with the same underlying manifold give different operators, related by the frame change that carries one orthonormal frame to the other. The composition of $c$ with a connection is therefore also metric-dependent, and this is the sense in which every first-order operator of the category reads a chosen distance and not only the topology.
 
 ### Metric Properties
 
@@ -44,12 +44,12 @@ $$
 **Proposition.** The multiplication is skew-adjoint and it scales the fibre form by the metric,
 
 $$
-c(v)^* = -c(v), \qquad h\bigl(c(v)\sigma,c(v)\tau\bigr) = g(v,v)\,h(\sigma,\tau),
+c(b)^* = -c(b), \qquad h\bigl(c(b)\sigma,c(b)\tau\bigr) = g(b,b)\,h(\sigma,\tau),
 $$
 
-so that $c(v)$ is anti-unitary for the fibre form when $g(v,v)=1$ and $\frac1{\sqrt{g(v,v)}}c(v)$ is unitary. Equivalently, the fibre form is invariant under the action of the Clifford algebra generated by unit vectors, that is under the local action of $\operatorname{Spin}(n)$.
+so that $c(b)$ is anti-unitary for the fibre form when $g(b,b)=1$ and $\frac1{\sqrt{g(b,b)}}c(b)$ is unitary. Equivalently, the fibre form is invariant under the action of the Clifford algebra generated by unit vectors, that is under the local action of $\operatorname{Spin}(n)$.
 
-**Proof.** For a unit vector $e$, $c(e)^2=-\operatorname{id}$ and $c(e)^*=-c(e)$; then $h(c(e)\sigma,c(e)\tau) = -h(c(e)^2\sigma,\tau)=h(\sigma,\tau)$, where the first step uses $c(e)^*=-c(e)$ and the second $c(e)^2=-\operatorname{id}$. The general case is the scalar multiple $v=\sqrt{g(v,v)}e$ with $e$ unit. Skew-adjointness for all vectors, transported through the algebra, is invariance under the generated group.
+**Proof.** For a unit vector $e$, $c(e)^2=-\operatorname{id}$ and $c(e)^*=-c(e)$; then $h(c(e)\sigma,c(e)\tau) = -h(c(e)^2\sigma,\tau)=h(\sigma,\tau)$, where the first step uses $c(e)^*=-c(e)$ and the second $c(e)^2=-\operatorname{id}$. The general case is the scalar multiple $b=\sqrt{g(b,b)}e$ with $e$ unit. Skew-adjointness for all vectors, transported through the algebra, is invariance under the generated group.
 
 **Remark.** The two displayed properties are the reason the multiplication by a unit tangent vector is an isometry of the fibre form: it is a complex structure on the module, one of the operators that a quaternionic or hyperkähler structure on the manifold makes parallel. The relation to the almost complex and quaternionic structures is *Quaternionic Geometry*, and the parallel case is *Hyperkähler Manifolds and the Twistor Space*.
 
@@ -57,15 +57,15 @@ so that $c(v)$ is anti-unitary for the fibre form when $g(v,v)=1$ and $\frac1{\s
 
 **Definition.** The **volume element** of the Clifford bundle is $\omega = c(e_1)\cdots c(e_n)$ for a positively oriented orthonormal frame; it is independent of the frame up to sign, it satisfies $\omega^2=(-1)^{n(n+1)/2}\operatorname{id}$ in the sense $\omega^*\omega=\operatorname{id}$, and for $n$ even it is the **chirality operator**, diagonalisable with eigenvalues $\pm i^{n/2}$ on the complexified module.
 
-**Proposition (parity).** The multiplication is a **graded operator of odd parity**: for every vector $v$, the multiplication $c(v)$ anticommutes with the volume element,
+**Proposition (parity).** The multiplication is a **graded operator of odd parity**: for every vector $b$, the multiplication $c(b)$ anticommutes with the volume element,
 
 $$
-c(v)\,\omega = -\omega\,c(v) \qquad (n \text{ even}),
+c(b)\,\omega = -\omega\,c(b) \qquad (n \text{ even}),
 $$
 
 and therefore exchanges the two chirality eigenspaces of the module. An element of the Clifford bundle acts as an even operator on the chirality grading when it has even degree and as an odd operator when it has odd degree; the multiplication operator is the odd generator of the whole algebra action.
 
-**Proof.** The volume element is a product of an even number of the $c(e_i)$ for $n$ even, and $c(v)$ anticommutes with each frame vector that is orthogonal to $v$ and with its parallel component up to sign; summing, $c(v)\omega+\omega c(v)=0$ because the number $n$ of anticommuting factors is even. The parity statement for general degrees is the multiplicativity of the module action and the $\mathbb{Z}/2$-grading of the Clifford algebra.
+**Proof.** The volume element is a product of an even number of the $c(e_i)$ for $n$ even, and $c(b)$ anticommutes with each frame vector that is orthogonal to $b$ and with its parallel component up to sign; summing, $c(b)\omega+\omega c(b)=0$ because the number $n$ of anticommuting factors is even. The parity statement for general degrees is the multiplicativity of the module action and the $\mathbb{Z}/2$-grading of the Clifford algebra.
 
 **Remark (the odd generator).** The multiplication operator is the odd element that generates the whole action: the even elements of the Clifford bundle act by even operators (they preserve the chirality), and every such operator is a sum of products of an even number of multiplications. This is the operator form of the decomposition of the algebra action into its even and odd parts, and it is what makes the Cauchy–Riemann operator odd when the module is chiral.
 
@@ -101,7 +101,7 @@ so the operator $\pi=\operatorname{id}-\frac1n c^*c$ is the orthogonal projector
 
 **Proof.** Pointwise multiplicativity and associativity are the associativity of the module action in each fibre; the commutant is the endomorphism bundle intertwining the action; the generated operators are the elements of the algebra of differential operators generated by $\Gamma(\mathrm{Cl}(TM))$ and the covariant derivatives, which is *Operators on a Clifford Module*. The enlargement from a module to a bundle changes nothing in the algebra, because every statement is fibrewise.
 
-**Remark (the exterior bundle).** The exterior bundle $\Lambda^\bullet T^*M$ is a Clifford module with $c(v)\alpha = v^{\flat}\wedge\alpha - \iota_v\alpha$; on it the multiplication is the sum of the exterior multiplication and the interior multiplication, the Cauchy–Riemann operator is the operator $d+d^*$ of the de Rham complex, and the chirality is the Hodge star grading. This example shows that the Clifford multiplication is not tied to spinors: it is the operator by which any metric acts on any bundle of forms, and the spinor bundle is the irreducible case.
+**Remark (the exterior bundle).** The exterior bundle $\Lambda^\bullet T^*M$ is a Clifford module with $c(b)\alpha = b^{\flat}\wedge\alpha - \iota_b\alpha$; on it the multiplication is the sum of the exterior multiplication and the interior multiplication, the Cauchy–Riemann operator is the operator $d+d^*$ of the de Rham complex, and the chirality is the Hodge star grading. This example shows that the Clifford multiplication is not tied to spinors: it is the operator by which any metric acts on any bundle of forms, and the spinor bundle is the irreducible case.
 
 ## Worked Cases
 
@@ -119,21 +119,21 @@ On a four-manifold the volume element satisfies $\omega^2=\operatorname{id}$ on 
 
 ## Summary
 
-The **Clifford multiplication** $c(v)\sigma=v\cdot\sigma$ is the operator by which a metric acts on a Clifford module; it satisfies the Clifford relations $c(v)c(w)+c(w)c(v)=-2g(v,w)\operatorname{id}$ and $c(v)^2=-g(v,v)\operatorname{id}$, it is injective as a map from the tangent spaces into the endomorphisms of the fibre, and it is **skew-adjoint** for the fibre form, $c(v)^*=-c(v)$, scaling that form by $g(v,v)$. It is an operator of **odd parity** for the chirality grading, anticommuting with the volume element in even dimension and exchanging the two chiral halves. Its extension to covectors, the **Clifford contraction** $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, is a surjection with adjoint $c^*$ and $cc^*=n\operatorname{id}$, so $\ker c=\operatorname{im}c^*$ and $\pi=\operatorname{id}-\frac1nc^*c$ is the projector onto the kernel. The multiplication makes the sections of a Clifford module a module over the sections of the Clifford bundle, and composing it with a connection yields the Cauchy–Riemann operator; the exterior bundle, with $c(v)=v\wedge-\iota_v$ and the operator $d+d^*$, is the non-spinor example. The pointwise adjoint of the multiplication is *The Adjoint of the Clifford Multiplication*; the operators it generates are *Operators on a Clifford Module* and *The Spinor Operator*.
+The **Clifford multiplication** $c(b)\sigma=b\cdot\sigma$ is the operator by which a metric acts on a Clifford module; it satisfies the Clifford relations $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ and $c(b)^2=-g(b,b)\operatorname{id}$, it is injective as a map from the tangent spaces into the endomorphisms of the fibre, and it is **skew-adjoint** for the fibre form, $c(b)^*=-c(b)$, scaling that form by $g(b,b)$. It is an operator of **odd parity** for the chirality grading, anticommuting with the volume element in even dimension and exchanging the two chiral halves. Its extension to covectors, the **Clifford contraction** $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, is a surjection with adjoint $c^*$ and $cc^*=n\operatorname{id}$, so $\ker c=\operatorname{im}c^*$ and $\pi=\operatorname{id}-\frac1nc^*c$ is the projector onto the kernel. The multiplication makes the sections of a Clifford module a module over the sections of the Clifford bundle, and composing it with a connection yields the Cauchy–Riemann operator; the exterior bundle, with $c(b)=b\wedge-\iota_b$ and the operator $d+d^*$, is the non-spinor example. The pointwise adjoint of the multiplication is *The Adjoint of the Clifford Multiplication*; the operators it generates are *Operators on a Clifford Module* and *The Spinor Operator*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $c(v)$, $c : TM\otimes\mathcal{S}\to\mathcal{S}$ | Clifford multiplication, $c(v)^2=-g(v,v)\operatorname{id}$ |
-| $c(v)c(w)+c(w)c(v)=-2g(v,w)\operatorname{id}$ | Clifford relations |
-| $c(v)^*=-c(v)$ | Skew-adjointness for the fibre form $h$ |
-| $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$ | Isometry of the multiplication up to scale |
+| $c(b)$, $c : TM\otimes\mathcal{S}\to\mathcal{S}$ | Clifford multiplication, $c(b)^2=-g(b,b)\operatorname{id}$ |
+| $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ | Clifford relations |
+| $c(b)^*=-c(b)$ | Skew-adjointness for the fibre form $h$ |
+| $h(c(b)\sigma,c(b)\tau)=g(b,b)h(\sigma,\tau)$ | Isometry of the multiplication up to scale |
 | $\omega=c(e_1)\cdots c(e_n)$ | Volume element; chirality operator for $n$ even |
-| $c(v)\omega=-\omega c(v)$ | Odd parity of the multiplication |
+| $c(b)\omega=-\omega c(b)$ | Odd parity of the multiplication |
 | $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$ |
 | $cc^*=n\operatorname{id}$, $\ker c=\operatorname{im}c^*$ | The trace identity and the decomposition |
-| $\Lambda^\bullet T^*M$, $c(v)=v^{\flat}\wedge-\iota_v$ | The exterior bundle as the canonical non-spinor Clifford module |
+| $\Lambda^\bullet T^*M$, $c(b)=b^{\flat}\wedge-\iota_b$ | The exterior bundle as the canonical non-spinor Clifford module |
 
 ## Further Reading
 

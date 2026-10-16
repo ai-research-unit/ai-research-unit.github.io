@@ -4,7 +4,7 @@ Specification: `PLAN.md` and the `<!-- ... -->` comments in `maths.md` / `physic
 spec, not decoration.
 
 ## Layout
-- `articles_maths/`, `articles_physics/` — one `.md` per article, plus a `.context` (agent notes).
+- `articles_maths/`, `articles_physics/` — one `.md` per article.
   `build.py` renders to HTML; KaTeX 0.16.9 from a CDN in `article_template.html` (no local fonts).
 - `_reserve/` — archive of old working notes and subagent instructions. Not published. Left untouched.
 
@@ -36,7 +36,7 @@ so `\mathrm{G}`, `\mathrm{M}`, `\mathrm{P}`, `\mathrm{H}`, `\mathrm{B}`, `\mathr
   pre-state backup.
 - **Case-load-bearing pairs kept lowercase on purpose**, because both forms occur in the same file and merging
   destroys meaning: `𝔭` prime vs `𝔓` prime above; `𝔡` discriminant vs `𝔇` different; `𝔪` vs `𝔐`. Files:
-  `algebraic-number-theory.md` (d,p), `class-field-theory.md` (p), `global-fields.md` + `.context` (d,p),
+  `algebraic-number-theory.md` (d,p), `class-field-theory.md` (p), `global-fields.md` (d,p),
   `local-fields.md` (d), `simple-and-semisimple-modules.md` (m). Read `\mathrm{P}` prime,
   `\mathrm{d}_{L/K}` discriminant, `\mathrm{D}_{L/K}` different.
 - `\mathbf{}` was NOT usable: it already means vector (`\mathbf{r}` 1624, `\mathbf{v}` 1196, `\mathbf{p}` 1074).
@@ -103,7 +103,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
 - Part VI pass (`maths.md` from line 1819): 312 files, 1934 occurrences, 64 in menu comments, 68 headings.
 - Parts I–V pass + the rename: 80 files, 302 occurrences, 9 in `maths.md` (menu comments).
 - **Renamed** the Topology article **`quadratic-forms-over-algebras-and-norm-forms` → `...-and-norms`**
-  (title *Quadratic Forms over Algebras and Norms*), both `.md` and `.context`, its H1, its `## Norm Forms of
+  (title *Quadratic Forms over Algebras and Norms*), its H1, its `## Norm Forms of
   Field Extensions` → `## Norms of Field Extensions` and the three `## The Norm Form of …` headings, the
   `maths.md` href + label + comment, and ~14 cross-references (including two Part VI octonion articles and
   `biquaternion-hermitian-subspace`, which the Part VI pass had deliberately protected).
@@ -128,7 +128,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   split-biquaternions. Mathematics keeps plain "norm"; physics says "biquaternion norm" (its "norm" is already
   taken by the Euclidean/Hermitian norm — 98 lines use both terms together).
 - **Physics: DONE.** 2484 phrase occurrences across 712 files; 325 rewritten in `articles_physics` + `physics.md`.
-  Five articles renamed (`.md` + `.context`, titles, H1s, hrefs, labels, comments):
+  Five articles renamed (`.md`, titles, H1s, hrefs, labels, comments):
   `von-neumann-entropy-and-the-biquaternion-norm`, `fisher-information-and-the-biquaternion-norm`,
   `the-fubini-study-geometry-and-the-biquaternion-norm`, `the-symplectic-form-and-the-biquaternion-norm-cone`,
   `the-lorentz-group-as-biquaternion-norm-automorphisms`. 12 cross-references updated; 313/313 menu entries
@@ -143,7 +143,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   half-applied corpus in place**, because the rules are not idempotent ("biquaternion norm form" would become
   "biquaternion norm" and eat the verb).
 - **Maths: DONE, both categories.** 47 `biquaternion-*` articles (306 lines) and 34 `split-biquaternion-*`
-  articles (235 lines), `.md` + `.context`. `maths.md` was never touched: its menu labels are the article titles,
+  articles (235 lines), `.md`. `maths.md` was never touched: its menu labels are the article titles,
   *Biquaternion Norm and Invertibility* and *Split-Biquaternion Norm and Invertibility*, already the right form.
   Sentence case is preserved (`## The Norm` → `## The Split-Biquaternion Norm`), and the split compound takes two
   capitals when the replaced word did: `Split-Biquaternion`, never `Split-biquaternion`.
@@ -160,9 +160,9 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   the word "norm".** These must not be touched: the Part I/III boundary rule ("a norm is a distance and a form is
   the distance its norm reads off", "(distance, metric, norm, form, open set, …)"), "the norm was removed from
   the Conventions", "the phrase \"its norm\" was dropped", "norm, the Hermitian form", "the norm article", and
-  the naming notes in `.context` (e.g. "using \"norm\" with no caveat", "The 'quaternion norm' notation row was
+  the naming notes in the articles (e.g. "using \"norm\" with no caveat", "The 'quaternion norm' notation row was
   purged"). Also `the norm on $\mathbb{H}$` is the Euclidean norm on ℍ, and `the norm of the pure biquaternion`
-  is $B$ — both stay plain. Because these live in `.context` as well as in the `.md` changelog tails, verify by
+  is $B$ — both stay plain. Because these live in the `.md` changelog tails, verify by
   comparing meta-phrase *counts* against the backup, not by eyeballing the diff.
 - **Trap specific to the split-biquaternion articles: 13 sentences use "the norm" for a *different* algebra.**
   The split articles constantly contrast with the biquaternion algebra, the quaternions and the split complex
@@ -178,7 +178,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
 - Backups: `/tmp/normform_backup`, `/tmp/normform2_backup`, `/tmp/normform3_backup`, `/tmp/maths_md_pre_normform`,
   `/tmp/maths_bn_backup_articles` + `/tmp/maths_bn_backup_maths.md`, `/tmp/splitbn_backup_articles`.
 
-- **Maths Part VI — Quaternions + Split-Quaternions: DONE (second maths pass).** 85 files (`.md` + `.context`),
+- **Maths Part VI — Quaternions + Split-Quaternions: DONE (second maths pass).** 85 files (`.md`),
   364 lines; `maths.md` untouched. Script `/tmp/qbn.py` (dry run → `/tmp/qfrags.txt`), backup
   `/tmp/am_backup_1015`, then 6 hand-fixes. Scope = every slug under `## Quaternions` and `## Split-Quaternions`.
   - Rules: `the/its/whose/their/own + norm(s)` → `quaternion norm` / `split-quaternion norm`; "the norm of the
@@ -313,7 +313,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
 ## 2026-09-27 (physical readings in the head categories)
 - All 62 articles of *Biquaternion Universe* (10) and *Biquaternion Mathematical Physics* (52) gained a brief
   `## Physical Readings` section before `## Summary` (2-4 sentences each), the clause `physical readings` in their
-  `physics.md` comment, and a `## 2026-09-27 (physical readings)` note in their `.context`. The 62 texts are in
+  `physics.md` comment, and a `## 2026-09-27 (physical readings)` note in their articles. The 62 texts are in
   `/tmp/rc/add_readings.py` + `/tmp/rc/add_readings2.py` (the inserter is idempotent: it skips files that already
   have the section). Full detail in the 2026-09-27 daily log.
 - The pass rests on two reusable readings: the **invariant content** of a change of the local complex structure is
@@ -345,7 +345,7 @@ condition, NOT the definition.
   (involutions, Clifford/spinor operators, the matrix models, the `M_2`/`M_4` idempotent matrices, the 2x2 SPA
   theorem "The Hermitian idempotents have **Hermitian projectors** as their matrices").
 - The three *Specificities* articles (`the-specificities-of-the-biquaternion-algebra`,
-  `-general-quaternionic-algebra`, `-symmetric-quaternionic-algebra`, each with a `.context`) write "projector"
+  `-general-quaternionic-algebra`, `-symmetric-quaternionic-algebra`, each) write "projector"
   for the operator and "idempotent" for the element. The article *The Specificities of the Symmetric Quaternionic
   Algebra* is new (2026-09-27) and settles its row of the GPA comparison table: the projectors are the elements of
   scalar coordinate `X_0 = 1` (an affine hyperplane, complex dimension three) plus the origin, from the single

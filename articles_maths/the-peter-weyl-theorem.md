@@ -7,7 +7,7 @@ The Peter–Weyl theorem is the decomposition theorem of harmonic analysis on a 
 
 The theorem was proved by F. Peter and H. Weyl in 1927 for compact Lie groups; the general compact case was obtained by extending the same argument to arbitrary compact groups through the compactness of the convolution operators. This article states the theorem in its several equivalent forms, gives the analytic proof in the standard sequence of steps, and draws the consequences that the rest of the compact theory uses. It develops the theorem; *Analysis on Compact Groups* develops the analysis built on it, and the two articles divide the material as follows: the orthogonality relations, the inversion and Plancherel formulas, the structure of the dual and the classical examples belong to that article, while the decomposition theorem, its proof, and its structural corollaries — finite-dimensionality, complete reducibility, separation of points, the bound on multiplicities — are here.
 
-The boundaries of the block hold as stated in the two preceding articles. The **representation theory** — unitary representations, irreducibility, Schur's lemma, intertwiners, the unitary dual as an object of Part II, induced representations, Mackey theory, type classification, property (T) — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*. The **Haar measure** is *Locally Compact Groups and Haar Measure*, in this Part. The **general measure theory** — the integral, $L^p$ spaces, Fubini, the Stone–Weierstrass theorem — is *Measure Theory and Integration* and *Modes of Convergence*, in the Foundations slot of this Part, and the **functional analysis** — the spectral theorem for compact self-adjoint operators, Hilbert–Schmidt operators — is standard and is quoted as it is used, its development in this Part belonging to the laterin the Analysis on Linear Spaces slot. The **abelian theory** is *Harmonic Analysis on Groups*, and the **general non-abelian theory** is not developed here.
+The boundaries of the block hold as stated in the two preceding articles. The **representation theory** — unitary representations, irreducibility, Schur's lemma, intertwiners, the unitary dual as an object of Part II, induced representations, Mackey theory, type classification, property (T) — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*. The **Haar measure** is *Locally Compact Groups and Haar Measure*, in this Part. The **general measure theory** — the integral, $L^{n}$ spaces, Fubini, the Stone–Weierstrass theorem — is *Measure Theory and Integration* and *Modes of Convergence*, in the Foundations slot of this Part, and the **functional analysis** — the spectral theorem for compact self-adjoint operators, Hilbert–Schmidt operators — is standard and is quoted as it is used, its development in this Part belonging to the laterin the Analysis on Linear Spaces slot. The **abelian theory** is *Harmonic Analysis on Groups*, and the **general non-abelian theory** is not developed here.
 
 Throughout, $K$ is a compact Hausdorff group with normalised Haar measure $dk$, $\int_K dk = 1$; $\operatorname{Irr}(K)$ is the set of equivalence classes of irreducible unitary representations, $\mathcal{H}_\pi$ the finite-dimensional representation space, $d_\pi = \dim\mathcal{H}_\pi$, $\pi_{ij}(k) = \langle\pi(k)e_j,e_i\rangle$ the matrix coefficients in an orthonormal basis, $\chi_\pi = \operatorname{Tr}\pi$ the character, $\lambda$ and $\rho$ the left and right regular representations on $L^2(K)$, and $A(K)$ the representative-function algebra. The unitary dual is written $\operatorname{Irr}(K)$, not $\widehat{K}$. No physics is invoked.
 
@@ -17,7 +17,7 @@ Throughout, $K$ is a compact Hausdorff group with normalised Haar measure $dk$, 
 
 **Theorem (Peter–Weyl).** Let $K$ be a compact Hausdorff group and let $A(K)$ be the linear span of the matrix coefficients $k \mapsto \langle\pi(k)u,v\rangle$ of all finite-dimensional continuous unitary representations of $K$. Then:
 
-**(a) Density.** $A(K)$ is dense in $C(K)$ in the supremum norm, and dense in $L^p(K)$ for every $1 \leq p < \infty$.
+**(a) Density.** $A(K)$ is dense in $C(K)$ in the supremum norm, and dense in $L^{n}(K)$ for every $1 \leq p < \infty$.
 
 **(b) Orthonormal basis.** For $\pi,\sigma \in \operatorname{Irr}(K)$ and orthonormal bases $(e_i)$ of $\mathcal{H}_\pi$, $(f_l)$ of $\mathcal{H}_\sigma$,
 
@@ -25,10 +25,10 @@ $$
 \int_K \pi_{ij}(k)\,\overline{\sigma_{lm}(k)}\,dk = \frac{1}{d_\pi}\,\delta_{\pi\sigma}\,\delta_{il}\,\delta_{jm} ,
 $$
 
-so the functions $e^\pi_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$. Consequently
+so the functions $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$. Consequently
 
 $$
-L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,e^\pi_{ij}
+L^2(K) = \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigoplus_{i,j=1}^{d_\pi}\ \mathbb{C}\,\exp(\pi)_{ij}
 \;\cong\; \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\ \bigl(\mathcal{H}_\pi \otimes \mathcal{H}_\pi^*\bigr),
 $$
 
@@ -44,15 +44,15 @@ Part (a) is the approximation form, (b) the Fourier-expansion form, (c) Weyl's t
 
 $$
 \mathcal{F} : L^2(K) \longrightarrow \bigoplus_{\pi\in\operatorname{Irr}(K)}^{\oplus}\bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr), \qquad
-f \mapsto \bigl(\hat f(\pi)\bigr)_{\pi\in\operatorname{Irr}(K)},\quad
-\hat f(\pi) = \int_K f(k)\pi(k)\,dk,
+f \mapsto \bigl((\mathcal F f)(\pi)\bigr)_{\pi\in\operatorname{Irr}(K)},\quad
+(\mathcal F f)(\pi) = \int_K f(k)\pi(k)\,dk,
 $$
 
 is a unitary equivalence of Hilbert spaces; this is the polarised form of (b), and it is the compact case of the Plancherel theorem, stated as standard. The finite-dimensional summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ is precisely the space of matrix coefficients of $\pi$, and the transform is the identity between the two descriptions.
 
 ### The Theorem is the Completeness of the Fourier Expansion
 
-For the circle, $A(S^1)$ is the set of trigonometric polynomials and Peter–Weyl is the classical theorem that they are dense in $C(S^1)$ and that $\{e^{2\pi i n\theta}\}_{n\in\mathbb{Z}}$ is an orthonormal basis of $L^2(S^1)$; the density is the Weierstrass approximation theorem for periodic functions, and the completeness is the uniqueness of Fourier series. For a finite group the theorem is the Wedderburn decomposition of the group algebra, $\mathbb{C}[K] \cong \bigoplus_{\pi\in\operatorname{Irr}(K)}\operatorname{End}(\mathcal{H}_\pi)$, with $\sum_\pi d_\pi^2 = |K|$. For a compact group the theorem is the statement that these two facts are one fact, and that the reason is the existence of the invariant probability measure.
+For the circle, $A(S^1)$ is the set of trigonometric polynomials and Peter–Weyl is the classical theorem that they are dense in $C(S^1)$ and that $\{\exp(2\pi i n\theta)\}_{n\in\mathbb{Z}}$ is an orthonormal basis of $L^2(S^1)$; the density is the Weierstrass approximation theorem for periodic functions, and the completeness is the uniqueness of Fourier series. For a finite group the theorem is the Wedderburn decomposition of the group algebra, $\mathbb{C}[K] \cong \bigoplus_{\pi\in\operatorname{Irr}(K)}\operatorname{End}(\mathcal{H}_\pi)$, with $\sum_\pi d_\pi^2 = |K|$. For a compact group the theorem is the statement that these two facts are one fact, and that the reason is the existence of the invariant probability measure.
 
 ## The Analytic Input
 
@@ -114,9 +114,9 @@ Now let $x \neq y$ and suppose $f(x) = f(y)$ for every $f \in A(K)$. Since $A(K)
 
 ### Density and the Orthonormal Basis
 
-**Proof of Peter–Weyl (a) and (b).** By the proposition above, $A(K)$ is a self-adjoint subalgebra of $C(K)$ containing the constants and separating points; the Stone–Weierstrass theorem therefore gives that $A(K)$ is dense in $C(K)$ in the supremum norm, which is (a). The density in $L^p(K)$ follows because $C(K)$ is dense in $L^p(K)$ for $p < \infty$ and the measure is finite.
+**Proof of Peter–Weyl (a) and (b).** By the proposition above, $A(K)$ is a self-adjoint subalgebra of $C(K)$ containing the constants and separating points; the Stone–Weierstrass theorem therefore gives that $A(K)$ is dense in $C(K)$ in the supremum norm, which is (a). The density in $L^{n}(K)$ follows because $C(K)$ is dense in $L^{n}(K)$ for $p < \infty$ and the measure is finite.
 
-For (b), the orthogonality relation is Schur's lemma applied to the operator $\int_K\sigma(k)^{-1}B\pi(k)dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi,\mathcal{H}_\sigma)$: invariance forces the operator to be zero when $\pi \not\cong \sigma$ and a scalar when $\pi = \sigma$, and evaluating the scalar by taking traces gives the constant $d_\pi^{-1}$ from the normalisation $\int_K dk = 1$. Since $A(K)$ is dense in $L^2(K)$ and is the algebraic span of the orthonormal family $\{e^\pi_{ij}\}$, that family is complete, hence an orthonormal basis. The identification of the summand with $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ is the definition of the matrix coefficients of $\pi$ in a basis.
+For (b), the orthogonality relation is Schur's lemma applied to the operator $\int_K\sigma(k)^{-1}B\pi(k)dk$ for $B \in \operatorname{Hom}(\mathcal{H}_\pi,\mathcal{H}_\sigma)$: invariance forces the operator to be zero when $\pi \not\cong \sigma$ and a scalar when $\pi = \sigma$, and evaluating the scalar by taking traces gives the constant $d_\pi^{-1}$ from the normalisation $\int_K dk = 1$. Since $A(K)$ is dense in $L^2(K)$ and is the algebraic span of the orthonormal family $\{\exp(\pi)_{ij}\}$, that family is complete, hence an orthonormal basis. The identification of the summand with $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ is the definition of the matrix coefficients of $\pi$ in a basis.
 
 ### Complete Reducibility
 
@@ -136,9 +136,9 @@ $$
 L^1(K) \;\widehat{\longrightarrow}\; \bigoplus_{\pi\in\operatorname{Irr}(K)} \operatorname{End}(\mathcal{H}_\pi)
 $$
 
-under $f \mapsto (\hat f(\pi))$, the target being the algebraic direct sum of full matrix algebras; equivalently the group von Neumann algebra $L(K) = \lambda(K)''$ is the direct sum $\bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$, a type I von Neumann algebra.
+under $f \mapsto ((\mathcal F f)(\pi))$, the target being the algebraic direct sum of full matrix algebras; equivalently the group von Neumann algebra $L(K) = \lambda(K)''$ is the direct sum $\bigoplus_\pi \operatorname{End}(\mathcal{H}_\pi)$, a type I von Neumann algebra.
 
-**Proof.** The convolution theorem gives the homomorphism; injectivity is the completeness of the coefficient algebra (a function whose transform vanishes is orthogonal to every matrix coefficient); the image of the centre of $L^1(K)$ consists of the scalar operators, and the whole map is onto the algebraic direct sum because the matrix units $e^\pi_{ij}$ have transforms supported on $\mathcal{H}_\pi$. The von Neumann algebra statement is the weak closure of the image, namely the direct sum of the finite-dimensional factors.
+**Proof.** The convolution theorem gives the homomorphism; injectivity is the completeness of the coefficient algebra (a function whose transform vanishes is orthogonal to every matrix coefficient); the image of the centre of $L^1(K)$ consists of the scalar operators, and the whole map is onto the algebraic direct sum because the matrix units $\exp(\pi)_{ij}$ have transforms supported on $\mathcal{H}_\pi$. The von Neumann algebra statement is the weak closure of the image, namely the direct sum of the finite-dimensional factors.
 
 ### Separation of Points and the Gelfand–Raĭkov Property
 
@@ -163,18 +163,18 @@ in $L^2$, with $\|f\|_2^2 = \sum_\pi|\lambda_\pi(f)|^2$. Consequently two class 
 Let $K$ be a compact connected Lie group with Lie algebra $\mathrm{K}$ and $-\Delta$ the Laplace–Beltrami operator of a bi-invariant metric, a positive essentially self-adjoint operator on $L^2(K)$ commuting with both regular representations. By Peter–Weyl, $L^2(K)$ is the Hilbert sum of the finite-dimensional summands $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$, on each of which $-\Delta$ acts as a scalar $\lambda_\pi \geq 0$, the **Casimir eigenvalue** of $\pi$: $-\Delta f = \lambda_\pi f$ for $f$ in the summand of $\pi$. Hence the heat semigroup is
 
 $$
-e^{-t(-\Delta)} f = \sum_{\pi\in\operatorname{Irr}(K)} e^{-\lambda_\pi t}\, \operatorname{pr}_\pi f ,
+\exp(-t(-\Delta)) f = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\, \operatorname{pr}_\pi f ,
 $$
 
 where $\operatorname{pr}_\pi$ is the orthogonal projection onto the coefficient space of $\pi$, and the **heat kernel** is
 
 $$
-p_t(x) = \sum_{\pi\in\operatorname{Irr}(K)} e^{-\lambda_\pi t}\,d_\pi\,\chi_\pi(x) ,
+p_t(x) = \sum_{\pi\in\operatorname{Irr}(K)} \exp(-\lambda_\pi t)\,d_\pi\,\chi_\pi(x) ,
 $$
 
-the convergence for $t > 0$ being absolute and uniform because $\lambda_\pi \to \infty$ and $\chi_\pi$ is bounded by $d_\pi$, with the Weyl asymptotics controlling the growth. This is the analytic form of the same decomposition: the spectral resolution of the Laplacian is the Peter–Weyl expansion, and for $K = SU(2)$ it gives $p_t(t_\theta) = \sum_{j\geq0} e^{-j(j+1)t}(2j+1)\frac{\sin((2j+1)\theta)}{\sin\theta}$, with $-\Delta$ normalised so that the Casimir eigenvalue of $V_j$ is $j(j+1)$.
+the convergence for $t > 0$ being absolute and uniform because $\lambda_\pi \to \infty$ and $\chi_\pi$ is bounded by $d_\pi$, with the Weyl asymptotics controlling the growth. This is the analytic form of the same decomposition: the spectral resolution of the Laplacian is the Peter–Weyl expansion, and for $K = SU(2)$ it gives $p_t(t_\theta) = \sum_{j\geq0} \exp(-j(j+1)t)(2j+1)\frac{\sin((2j+1)\theta)}{\sin\theta}$, with $-\Delta$ normalised so that the Casimir eigenvalue of $V_j$ is $j(j+1)$.
 
-**Example (the circle and $SU(2)$).** For $K = S^1$ the Peter–Weyl basis is $\{e^{2\pi i n\theta}\}_{n\in\mathbb{Z}}$ and the heat kernel is the Jacobi theta function $\sum_{n\in\mathbb{Z}}e^{-4\pi^2n^2t}e^{2\pi in\theta}$. For $K = SU(2)$ the summands are the $V_j$ with $d_j = 2j+1$ and the characters $\chi_j(t_\theta) = \sin((2j+1)\theta)/\sin\theta$, and the summand $V_j\otimes V_j^*$ has dimension $(2j+1)^2$; the two examples are the two ends of the classification of the simply connected compact groups of rank one.
+**Example (the circle and $SU(2)$).** For $K = S^1$ the Peter–Weyl basis is $\{\exp(2\pi i n\theta)\}_{n\in\mathbb{Z}}$ and the heat kernel is the Jacobi theta function $\sum_{n\in\mathbb{Z}}\exp(-4\pi^2n^2t)\exp(2\pi in\theta)$. For $K = SU(2)$ the summands are the $V_j$ with $d_j = 2j+1$ and the characters $\chi_j(t_\theta) = \sin((2j+1)\theta)/\sin\theta$, and the summand $V_j\otimes V_j^*$ has dimension $(2j+1)^2$; the two examples are the two ends of the classification of the simply connected compact groups of rank one.
 
 ## The Abelian Case
 
@@ -186,7 +186,7 @@ the convergence for $t > 0$ being absolute and uniform because $\lambda_\pi \to 
 
 ## Summary
 
-The Peter–Weyl theorem states that for a compact group $K$ the representative-function algebra $A(K)$ is dense in $C(K)$ and in every $L^p(K)$, that the functions $\sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$ so that $L^2(K)\cong\bigoplus_{\pi}(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)$ with the irreducible $\pi$ of dimension $d_\pi$ occurring with multiplicity $d_\pi$, that every unitary representation of $K$ is a Hilbert direct sum of finite-dimensional irreducibles (**Weyl's theorem**), and that the characters form an orthonormal basis of the class functions. The proof is analytic: for $f \in L^2(K)$ the convolution operator $T_f h = f*h$ is Hilbert–Schmidt and hence compact; for a central $f = h*h^{\#}$ it is nonzero compact self-adjoint, and its eigenspaces are finite-dimensional and invariant under both regular representations, so $K$ has a finite-dimensional irreducible constituent; the coefficient space is then a self-adjoint algebra containing the constants, and it separates points because the left regular representation is faithful and the finite-dimensional invariant subspaces are cofinal; Stone–Weierstrass gives density, and Schur's lemma gives orthogonality and completeness. The consequences are the algebraic decomposition $L(K)\cong\bigoplus_\pi\operatorname{End}(\mathcal{H}_\pi)$, the separation of points by finite-dimensional representations and the Gelfand–Raĭkov property for compact groups, the class-function expansion in characters, the diagonalisation of the Laplacian on a compact Lie group and the trace of the heat semigroup, and — in the abelian case — the Fourier series of harmonic analysis on the circle and its dual group.
+The Peter–Weyl theorem states that for a compact group $K$ the representative-function algebra $A(K)$ is dense in $C(K)$ and in every $L^{n}(K)$, that the functions $\sqrt{d_\pi}\,\pi_{ij}$ form an orthonormal basis of $L^2(K)$ so that $L^2(K)\cong\bigoplus_{\pi}(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)$ with the irreducible $\pi$ of dimension $d_\pi$ occurring with multiplicity $d_\pi$, that every unitary representation of $K$ is a Hilbert direct sum of finite-dimensional irreducibles (**Weyl's theorem**), and that the characters form an orthonormal basis of the class functions. The proof is analytic: for $f \in L^2(K)$ the convolution operator $T_f h = f*h$ is Hilbert–Schmidt and hence compact; for a central $f = h*h^{\#}$ it is nonzero compact self-adjoint, and its eigenspaces are finite-dimensional and invariant under both regular representations, so $K$ has a finite-dimensional irreducible constituent; the coefficient space is then a self-adjoint algebra containing the constants, and it separates points because the left regular representation is faithful and the finite-dimensional invariant subspaces are cofinal; Stone–Weierstrass gives density, and Schur's lemma gives orthogonality and completeness. The consequences are the algebraic decomposition $L(K)\cong\bigoplus_\pi\operatorname{End}(\mathcal{H}_\pi)$, the separation of points by finite-dimensional representations and the Gelfand–Raĭkov property for compact groups, the class-function expansion in characters, the diagonalisation of the Laplacian on a compact Lie group and the trace of the heat semigroup, and — in the abelian case — the Fourier series of harmonic analysis on the circle and its dual group.
 
 ## Summary of Notation
 
@@ -202,12 +202,12 @@ The Peter–Weyl theorem states that for a compact group $K$ the representative-
 | $T_f h = f*h$ | Convolution operator with $f$ |
 | $h^{\#}(x) = \overline{h(x^{-1})}$ | The adjoint-producing involution |
 | $A(K)$ | Representative-function algebra, span of matrix coefficients |
-| $e^\pi_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ | Orthonormal basis of $L^2(K)$ |
-| $\hat f(\pi) = \int_K f(k)\pi(k)\,dk$ | Fourier transform |
+| $\exp(\pi)_{ij} = \sqrt{d_\pi}\,\pi_{ij}$ | Orthonormal basis of $L^2(K)$ |
+| $(\mathcal F f)(\pi) = \int_K f(k)\pi(k)\,dk$ | Fourier transform |
 | $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ | Coefficient space of $\pi$, carrying $\pi\boxtimes\bar\pi$ |
 | $\lambda_\pi(f) = \int_K f\overline{\chi_\pi}\,dk$ | Character transform of a class function |
 | $-\Delta$, $\lambda_\pi$ | Laplace operator and Casimir eigenvalue |
-| $p_t(x) = \sum_\pi e^{-\lambda_\pi t}d_\pi\chi_\pi(x)$ | Heat kernel on a compact Lie group |
+| $p_t(x) = \sum_\pi \exp(-\lambda_\pi t)d_\pi\chi_\pi(x)$ | Heat kernel on a compact Lie group |
 
 
 

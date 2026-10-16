@@ -93,7 +93,7 @@ $$
 D = \partial_0 + i\,\partial_1
 $$
 
-annihilates $f = u + iv$ exactly when $u_x = v_y$ and $u_y = -v_x$, the Cauchy–Riemann equations; thus regular functions in the sense below are the holomorphic functions. Its conjugate is $\bar D = \partial_0 - i\partial_1$, and $D\bar D = \bar D D = \Delta$.
+annihilates $f = u + iv$ exactly when $\partial_x u = \partial_y v$ and $\partial_y u = -\partial_x v$, the Cauchy–Riemann equations; thus regular functions in the sense below are the holomorphic functions. Its conjugate is $\bar D = \partial_0 - i\partial_1$, and $D\bar D = \bar D D = \Delta$.
 
 **Example (the quaternions).** For $A = \mathbb{H}$ with basis $1, e_1, e_2, e_3$,
 
@@ -186,9 +186,9 @@ Four features of the algebra obstruct the programme, and they are logically inde
 
 **The dimension.** The symbol $\sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k$ must be invertible for every real $\xi \neq 0$ if the operator is to be elliptic, and the factorisation $D\bar D = \Delta$ requires the Clifford relations. Over a degenerate algebra this fails, and with it the whole elliptic apparatus: the characteristic variety meets the real space, the plane waves are real exponentials rather than oscillatory, and the components of a regular function satisfy a wave or transport equation in place of Laplace's equation.
 
-**Proposition (elliptic and degenerate systems).** Let $A$ have dimension $m$ and let $D = \partial_0 + \sum_{k\geq1}B_k\partial_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\xi)\tilde\sigma(\xi) = |\xi|^2\cdot 1$ and $D$ is elliptic. By contrast:
+**Proposition (elliptic and degenerate systems).** Let $A$ have dimension $m$ and let $D = \partial_0 + \sum_{k\geq1}B_k\partial_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = |\xi|^2\cdot 1$ and $D$ is elliptic. By contrast:
 
-- for $\mathbb{D}$ with $D = \partial_0 + j\partial_1$, the product $\sigma(\xi)\tilde\sigma(\xi) = \xi_0^2 - \xi_1^2$ vanishes on the two real lines $\xi_0 = \pm\xi_1$;
+- for $\mathbb{D}$ with $D = \partial_0 + j\partial_1$, the product $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2 - \xi_1^2$ vanishes on the two real lines $\xi_0 = \pm\xi_1$;
 - for $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$, the same product is $\xi_0^2$ and vanishes on the hyperplane $\xi_0 = 0$.
 
 In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.
@@ -202,10 +202,10 @@ $$
 so $f$ is left regular exactly when $f_+$ is a function of $\xi_-$ alone and $f_-$ is a function of $\xi_+$ alone. The regular functions of $\mathbb{D}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
 
 $$
-f(x_0 + jx_1) = e^{-(x_0 - jx_1)^2} = e^{-(x_0^2+x_1^2)}\bigl(\cosh(2x_0x_1) + j\sinh(2x_0x_1)\bigr)
+f(x_0 + jx_1) = \exp(-(x_0 - jx_1)^2) = \exp(-(x_0^2+x_1^2))\bigl(\cosh(2x_0x_1) + j\sinh(2x_0x_1)\bigr)
 $$
 
-is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_0, x_1)$ with $\partial_0 v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon e^{-x_1^2}$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
+is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_0, x_1)$ with $\partial_0 v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
 
 ## Consequences of Ellipticity
 

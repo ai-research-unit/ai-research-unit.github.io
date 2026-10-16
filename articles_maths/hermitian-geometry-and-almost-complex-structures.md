@@ -118,20 +118,20 @@ An integrable almost complex structure and a complex structure are equivalent da
 **Definition.** Let $(M,J)$ be an almost complex manifold. The complexified exterior algebra decomposes by type:
 
 $$
-\Omega^k(M,\mathbb{C}) = \bigoplus_{p+q=k}\Omega^{p,q}(M), \qquad \Omega^{p,q}(M) = \Gamma\bigl(\Lambda^p(T^{1,0})^*\wedge\Lambda^q(T^{0,1})^*\bigr).
+\Omega^k(M,\mathbb{C}) = \bigoplus_{n+m=k}\Omega^{n,m}(M), \qquad \Omega^{n,m}(M) = \Gamma\bigl(\Lambda^n(T^{1,0})^*\wedge\Lambda^q(T^{0,1})^*\bigr).
 $$
 
-The exterior derivative splits by type as $d = \partial + \bar\partial$ with $\partial : \Omega^{p,q}\to\Omega^{p+1,q}$ and $\bar\partial : \Omega^{p,q}\to\Omega^{p,q+1}$ if and only if $J$ is integrable; in that case $\bar\partial^2 = 0$, and the **Dolbeault cohomology** of $M$ is
+The exterior derivative splits by type as $d = \partial + \bar\partial$ with $\partial : \Omega^{n,m}\to\Omega^{n+1,m}$ and $\bar\partial : \Omega^{n,m}\to\Omega^{n,m+1}$ if and only if $J$ is integrable; in that case $\bar\partial^2 = 0$, and the **Dolbeault cohomology** of $M$ is
 
 $$
-H^{p,q}_{\bar\partial}(M) = \frac{\ker\bigl(\bar\partial : \Omega^{p,q}\to\Omega^{p,q+1}\bigr)}{\mathrm{im}\bigl(\bar\partial : \Omega^{p,q-1}\to\Omega^{p,q}\bigr)} .
+H^{n,m}_{\bar\partial}(M) = \frac{\ker\bigl(\bar\partial : \Omega^{n,m}\to\Omega^{n,m+1}\bigr)}{\mathrm{im}\bigl(\bar\partial : \Omega^{n,m-1}\to\Omega^{n,m}\bigr)} .
 $$
 
 **Proposition.** On a complex manifold, $d = \partial + \bar\partial$, $\partial^2 = \bar\partial^2 = 0$ and $\partial\bar\partial + \bar\partial\partial = 0$. A function is holomorphic exactly when $\bar\partial f = 0$, and the holomorphic $1$-forms are the local sections of $(T^{1,0})^*$ that are $\bar\partial$-closed.
 
 **Proof.** The type decomposition of $d$ follows from the integrability: the $(0,2)$-component of $d$ on functions is measured by $N_J$, and the general statement follows from writing $d$ in holomorphic coordinates. The relations follow from $d^2=0$ and the bidegree.
 
-**Remark.** The Dolbeault complex is a complex of sections of vector bundles, and its cohomology can be computed by the analysis of the $\bar\partial$-operator: on a compact complex manifold the cohomology spaces are finite dimensional and are represented by harmonic forms. That statement is the Hodge theory of the $\bar\partial$-operator, and it requires the theory of elliptic operators, Sobolev spaces and completions, which belong to Part III, where the measure and the limit are available. What is used here is only the algebraic complex and the identification of its degree zero with the holomorphic functions. The topological interpretation of the Dolbeault groups via the de Rham complex and the relation $H^k_{dR}(M,\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}_{\bar\partial}(M)$ for a compact Kähler manifold is treated in *Kähler Geometry*, being written in parallel.
+**Remark.** The Dolbeault complex is a complex of sections of vector bundles, and its cohomology can be computed by the analysis of the $\bar\partial$-operator: on a compact complex manifold the cohomology spaces are finite dimensional and are represented by harmonic forms. That statement is the Hodge theory of the $\bar\partial$-operator, and it requires the theory of elliptic operators, Sobolev spaces and completions, which belong to Part III, where the measure and the limit are available. What is used here is only the algebraic complex and the identification of its degree zero with the holomorphic functions. The topological interpretation of the Dolbeault groups via the de Rham complex and the relation $H^k_{dR}(M,\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}_{\bar\partial}(M)$ for a compact Kähler manifold is treated in *Kähler Geometry*, being written in parallel.
 
 ## Hermitian Metrics and the Fundamental Form
 
@@ -241,7 +241,7 @@ which is a matrix of $(1,1)$-forms.
 
 An almost complex structure is a bundle endomorphism $J$ with $J^2=-\mathrm{id}$; it forces the dimension to be even, complexifies the tangent bundle into the eigenbundles $T^{1,0}\oplus T^{0,1}$ of $\pm i$, and reduces the structure group to $GL(n,\mathbb{C})$. It is integrable — equivalent to a complex structure, that is, to holomorphic charts — exactly when the Nijenhuis tensor $N_J(X,Y) = [JX,JY]-J[X,JY]-J[JX,Y]-[X,Y]$ vanishes; on a surface this is automatic, and the octonionic structure on $S^6$ is the standard counterexample.
 
-On a complex manifold the complexified forms split into types with $d=\partial+\bar\partial$, $\bar\partial^2=0$, and the Dolbeault cohomology $H^{p,q}_{\bar\partial}$ is defined; its finiteness and Hodge theory are deferred to Part III, where the analysis is available. A Hermitian metric is a metric with $g(JX,JY)=g(X,Y)$, equivalently a metric whose structure group reduces to $U(n)$; its fundamental form $\Omega(X,Y)=g(JX,Y)$ is a real $(1,1)$-form, and $g$ is recovered from $\Omega$ and $J$. Hermitian metrics exist on every almost complex manifold, and the Wirtinger inequality makes $\Omega^k/k!$ a calibration for complex submanifolds.
+On a complex manifold the complexified forms split into types with $d=\partial+\bar\partial$, $\bar\partial^2=0$, and the Dolbeault cohomology $H^{n,m}_{\bar\partial}$ is defined; its finiteness and Hodge theory are deferred to Part III, where the analysis is available. A Hermitian metric is a metric with $g(JX,JY)=g(X,Y)$, equivalently a metric whose structure group reduces to $U(n)$; its fundamental form $\Omega(X,Y)=g(JX,Y)$ is a real $(1,1)$-form, and $g$ is recovered from $\Omega$ and $J$. Hermitian metrics exist on every almost complex manifold, and the Wirtinger inequality makes $\Omega^k/k!$ a calibration for complex submanifolds.
 
 Every Hermitian manifold carries a unique Chern connection, the one connection with $\nabla g = 0$, $\nabla J = 0$ and torsion of type $(1,1)$; in a holomorphic frame its connection form is $h^{-1}\partial h$ and its curvature is a matrix of $(1,1)$-forms. The Kähler manifolds are exactly those for which the Chern connection is torsion-free and hence the Levi-Civita connection, equivalently $d\Omega=0$; the general almost Hermitian structures are classified by the Gray–Hervella modules $W_1,\ldots,W_4$, with nearly Kähler, almost Kähler, Hermitian and Kähler as the distinguished cases.
 
@@ -255,7 +255,7 @@ Every Hermitian manifold carries a unique Chern connection, the one connection w
 | $T^{1,0}$, $T^{0,1}$ | Eigenbundles of $J$ on $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$ with eigenvalues $i$, $-i$ |
 | $N_J(X,Y)$ | Nijenhuis tensor; $N_J=0$ is the integrability condition (Newlander–Nijenhuis) |
 | $\partial$, $\bar\partial$ | Type decomposition of $d$ on a complex manifold; $\bar\partial^2=0$ |
-| $H^{p,q}_{\bar\partial}(M)$ | Dolbeault cohomology |
+| $H^{n,m}_{\bar\partial}(M)$ | Dolbeault cohomology |
 | $g$ | Riemannian metric (from *Riemannian Geometry*) |
 | Hermitian metric | $g(JX,JY) = g(X,Y)$; structure group reduces to $U(n)$ |
 | $\Omega(X,Y) = g(JX,Y)$ | Fundamental form; real $(1,1)$-form; $g(X,Y)=\Omega(X,JY)$ |

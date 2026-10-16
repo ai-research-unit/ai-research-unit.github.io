@@ -6,7 +6,7 @@ The degree-2 structure of an algebra with an involution is carried by its **norm
 
 This article computes the norm and its polarisation for the four algebras of the corpus — the field, the quaternion algebra, the matrix algebra and the Clifford algebra — and draws the boundary that the word **norm** needs in this layer. Three facts are the substance. On a quaternion algebra the norm $N(x) = x\bar{x}$ is a multiplicative quadratic form whose polarisation is the trace form: the quaternion algebra is a composition algebra, and the norm form is the classical four-dimensional form of the norm-one group. On a central simple algebra the **reduced norm** plays the same role with the reduced trace; on $M_n$ it is the determinant, and its polarisation is the trace form $\tau(X\operatorname{adj}(Y))$ — a form distinct from the Hermitian form $\tau(XY^{*})$, which is not the polarisation of any multiplicative norm. And on a Clifford algebra the norm $x^{*}x$ is a quadratic form which is multiplicative on the versors of the spin group and fails on the general element from dimension three on, which is the algebraic reason the Clifford norm form is not a composition form.
 
-The algebraic norm is valued in the base; it becomes the topological norm, a distance and a completion, only when it is **selected** so that its values are positive reals, and that selection is the passage to *The Norm Defined by a Form* and to Part II. The bilinear original of the whole article is *Quadratic Forms over Algebras and Norms*. Throughout, $A$ is a finite-dimensional $R$-algebra with a $\varsigma$-semilinear involution $*$, $N(x) = xx^{*}$ is the norm map, and the polarisation of a quadratic form $Q$ is $B(x,y) = \tfrac{1}{2}\bigl(Q(x+y) - Q(x) - Q(y)\bigr)$ with $2$ invertible in the fixed ring.
+The algebraic norm is valued in the base; it becomes the topological norm, a distance and a completion, only when it is **selected** so that its values are positive reals, and that selection is the passage to *The Norm Defined by a Form* and to Part II. The bilinear original of the whole article is *Quadratic Forms over Algebras and Norms*. Throughout, $A$ is a finite-dimensional $R$-algebra with a $\varsigma$-semilinear involution $*$, $N(x) = xx^{*}$ is the norm map, and the polarisation of a quadratic form $\mathfrak{Q}$ is $B(x,y) = \tfrac{1}{2}\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr)$ with $2$ invertible in the fixed ring.
 
 ## The Norm Map and Its Polarisation
 
@@ -20,7 +20,7 @@ $$
 
 **Proof.** Expand $N(x+y) = (x+y)(x^{*}+y^{*}) = xx^{*} + xy^{*} + yx^{*} + yy^{*}$ and subtract $N(x) + N(y)$; the result is $xy^{*} + yx^{*}$, whose $R$-linearity is clear. The functional image $\varphi(xy^{*}+yx^{*})$ is symmetric because the two products are exchanged by the involution and $\varphi$ is $\varsigma$-linear.
 
-**Corollary.** The diagonal of the *form* and the norm map are related by $q(x) = \varphi(x^{*}x)$; for a cyclic functional, in particular for the trace form $\varphi = \tau$, the two products $x^{*}x$ and $xx^{*}$ have the same functional and the diagonal is the functional of the norm, $q(x) = \varphi(N(x))$. A non-cyclic functional sees only $x^{*}x$, and then the trace form $\varphi(xy^{*}+yx^{*})$ of the involution and the trace form $h_{\mathrm{tr}}(x,y) = h(x,y)+h(y,x)$ of *Polarisation and the Hermitian Square* differ.
+**Corollary.** The diagonal of the *form* and the norm map are related by $\mathfrak{Q}(x) = \varphi(x^{*}x)$; for a cyclic functional, in particular for the trace form $\varphi = \tau$, the two products $x^{*}x$ and $xx^{*}$ have the same functional and the diagonal is the functional of the norm, $\mathfrak{Q}(x) = \varphi(N(x))$. A non-cyclic functional sees only $x^{*}x$, and then the trace form $\varphi(xy^{*}+yx^{*})$ of the involution and the trace form $h_{\mathrm{tr}}(x,y) = h(x,y)+h(y,x)$ of *Polarisation and the Hermitian Square* differ.
 
 ## The Quaternion Norm
 
@@ -62,7 +62,7 @@ the reduced trace against the adjugate. It is **not** the Hermitian form $h(x,y)
 
 ## The Norm of a Clifford Algebra
 
-Let $\mathrm{Cl}(V,q)$ carry the dagger of *Hermitian Algebras*, $x^{\dagger} = \sigma(\alpha(x^{r}))$.
+Let $\mathrm{Cl}(V,\mathfrak{Q})$ carry the dagger of *Hermitian Algebras*, $x^{\dagger} = \sigma(\alpha(x^{r}))$.
 
 **Definition.** The **norm** of $x$ is $x^{\dagger}x$ and the **norm form** is its scalar part,
 
@@ -72,9 +72,9 @@ $$
 
 the parity twist of the **blade form** $\operatorname{Sc}(x^{r}y)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, whose blades are orthogonal.
 
-**Proposition.** The norm form is definite exactly in the extreme cases, positive definite when $q$ is **negative** definite, because the dagger inserts the parity sign; and it is **not** multiplicative from dimension three on: $N(x) = N(y) = 1$ but $N(xy) = -3$ for the elements $x = y = 1 + e_{1} + e_{23}$ of $\mathrm{Cl}_{3,0}$.
+**Proposition.** The norm form is definite exactly in the extreme cases, positive definite when $m$ is **negative** definite, because the dagger inserts the parity sign; and it is **not** multiplicative from dimension three on: $N(x) = N(y) = 1$ but $N(xy) = -3$ for the elements $x = y = 1 + e_{1} + e_{23}$ of $\mathrm{Cl}_{3,0}$.
 
-**Proof.** The diagonal is the computation of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, $\operatorname{Sc}(x^{\dagger}y) = \sum_{I}(-1)^{|I|}(\prod_{i\in I}e_{i}^{2})a_{I}b_{I}$; the coefficients $(-1)^{|I|}\prod_{i\in I}e_{i}^{2}$ are $\pm1$, and they are all $+1$ exactly when every $e_{i}^{2} = -1$, that is when $q$ is negative definite. For the failure, in $\mathrm{Cl}_{3,0}$ the element $x = 1 + e_{1} + e_{23}$ has $x^{\dagger}x = 1 - 2e_{123}$, so $N(x) = 1$; squaring, $x^{2} = 1 + 2e_{1} + 2e_{23} + 2e_{123}$, and $N(x^{2}) = 1 - 4 - 4 + 4 = -3$ while $N(x)^{2} = 1$. The multiplicativity holds in dimension two, where the algebra is the quaternion algebra or $\mathsf{M}_2$, and on the versors below.
+**Proof.** The diagonal is the computation of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, $\operatorname{Sc}(x^{\dagger}y) = \sum_{I}(-1)^{|I|}(\prod_{i\in I}e_{i}^{2})a_{I}b_{I}$; the coefficients $(-1)^{|I|}\prod_{i\in I}e_{i}^{2}$ are $\pm1$, and they are all $+1$ exactly when every $e_{i}^{2} = -1$, that is when $m$ is negative definite. For the failure, in $\mathrm{Cl}_{3,0}$ the element $x = 1 + e_{1} + e_{23}$ has $x^{\dagger}x = 1 - 2e_{123}$, so $N(x) = 1$; squaring, $x^{2} = 1 + 2e_{1} + 2e_{23} + 2e_{123}$, and $N(x^{2}) = 1 - 4 - 4 + 4 = -3$ while $N(x)^{2} = 1$. The multiplicativity holds in dimension two, where the algebra is the quaternion algebra or $\mathsf{M}_2$, and on the versors below.
 
 **Corollary.** The Clifford algebra is not a composition algebra in the norm of the dagger; the norm is multiplicative on the **versors**, $N(xy) = N(x)N(y)$ for $x, y$ in the Clifford group, which is the multiplicative structure of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the failure on the general element is the algebraic reason the norm form of a Clifford algebra is a quadratic form *with* a group rather than a composition form.
 
@@ -109,11 +109,11 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 
 ## Summary
 
-- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the form at the two equal arguments is $q(x) = \varphi(x^{*}x)$, which is the functional of the norm, $q(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
+- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the form at the two equal arguments is $\mathfrak{Q}(x) = \varphi(x^{*}x)$, which is the functional of the norm, $\mathfrak{Q}(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
 - The quaternion norm $N(x) = a^{2}-\alpha b^{2}-\beta c^{2}+\alpha\beta d^{2}$ is multiplicative, so the quaternion algebra is a composition algebra; its polarisation is the trace form, and the norm-one group is the compact group of the definite case.
 - The reduced norm of a central simple algebra is multiplicative and its polarisation is the reduced trace against the adjugate; it is in general **not** the Hermitian form of the dagger, as $\mathsf{M}_2$ shows.
 - For an involution of the first kind the reduced norm is invariant, for one of the second kind it is twisted by $\varsigma$.
-- The norm of a Clifford algebra is the blade form, positive definite over a real base with $q$ positive definite, but it is not multiplicative: the multiplications hold on the versors of the Clifford group.
+- The norm of a Clifford algebra is the blade form, positive definite over a real base with $m$ positive definite, but it is not multiplicative: the multiplications hold on the versors of the Clifford group.
 - The **algebraic norm** is a map into the base ring and is Algebra; the **topological norm** is the selection of positive real values and is Part II.
 
 ## Summary of Notation
@@ -122,10 +122,10 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 |---|---|
 | $N(x) = xx^{*}$ | the norm map of the algebra |
 | $\langle x,y\rangle$ | the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$ |
-| $q(x) = \varphi(N(x))$ | the form at the two equal arguments as the functional of the norm |
+| $\mathfrak{Q}(x) = \varphi(N(x))$ | the form at the two equal arguments as the functional of the norm |
 | $\operatorname{Nrd}$, $\operatorname{Trd}$ | the reduced norm and the reduced trace |
 | $\operatorname{adj}$ | the adjugate of a matrix |
-| $\mathrm{Cl}(V,q)$ | the Clifford algebra with the dagger of *Hermitian Algebras* |
+| $\mathrm{Cl}(V,\mathfrak{Q})$ | the Clifford algebra with the dagger of *Hermitian Algebras* |
 | $a_{I}$ | the coefficients of $x$ in the blade basis |
 
 ## Further Reading

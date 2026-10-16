@@ -29,7 +29,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_1, \pi_2, e_0$ | $4$ | *Split-Biquaternion Algebra* |
 | $\mathbb{Q}[C_3]$ | $0, 1$ and the two minimal ones | $4$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the projections | infinitely many | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Ideals and Peirce Decomposition of the General Plain Algebra* |
+| $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
 | a Boolean ring $B$ | every element | $\lvert B \rvert$ | *Von Neumann Regular Rings* |
 
 The dichotomy the table records is between the rings that are connected, with $0$ and $1$ as their only idempotents, and the rings that split. The domains, the fields, the division rings and the local rings are connected; $\mathbb{Z}/n\mathbb{Z}$ has $2^{\omega(n)}$ idempotents, where $\omega(n)$ counts the distinct primes dividing $n$, so $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{Z}/12\mathbb{Z}$ have four; and the Boolean rings have an idempotent for every element. The split-biquaternions and the split-complex numbers have exactly four idempotents each, and $\mathbb{H}$ has two, which is the sharpest contrast between the quaternion family and its split relatives.
@@ -44,7 +44,7 @@ The dichotomy the table records is between the rings that are connected, with $0
 | $\mathbb{H}_{\mathbb{D}}$ | $\pi_1$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\pi_1 \oplus \mathbb{H}\pi_2$ | *Split-Biquaternion Zero Divisors* |
 | $R \times S$ | $(1,0)$ | the product by construction | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
-| $\mathbb{R}[x]/(x^2-1)$ | $e_{\pm}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
+| $\mathbb{R}[x]/(x^2-1)$ | $\Pi_{1,2}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
 | a Boolean ring $B$ | every idempotent $e$ | $B = Be \oplus B(1-e)$ for every $e$, every element being idempotent | *Von Neumann Regular Rings* |
 | a commutative Artinian ring | the primitive idempotents | the product of the local rings $R e_i$ | *Noetherian and Artinian Rings* |
 
@@ -55,13 +55,13 @@ A nontrivial idempotent $e$ satisfies $e(1-e) = 0$, so $R = Re \oplus R(1-e)$ is
 | Object | The orthogonal family | The decomposition | Introduced in |
 |---|---|---|---|
 | a module $M$ over $R$ | a single idempotent $e$ | $M = eM \oplus (1-e)M$ | *Modules* |
-| an algebra $A$ | a single idempotent $e$ | $A = eAe \oplus eA(1-e) \oplus (1-e)Ae \oplus (1-e)A(1-e)$ | *Ideals and Peirce Decomposition of the General Plain Algebra* |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | $p = E_{11}$, $q = E_{22}$ | the four one-dimensional corners | *Ideals and Peirce Decomposition of the General Plain Algebra* |
+| an algebra $A$ | a single idempotent $e$ | $A = eAe \oplus eA(1-e) \oplus (1-e)Ae \oplus (1-e)A(1-e)$ | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
+| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | the four one-dimensional corners | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
 | $M_2(\mathbb{R})$ | $E_{11}, E_{22}$ | the column decomposition of $\mathbb{R}^2$ | *Matrix Algebras* |
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
 | a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus e_i k[G] e_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\hat\Upsilon_1$ and $\hat\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the General Plain Algebra*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
 ## The von Neumann Regular Rings
 
@@ -98,7 +98,7 @@ A ring with $0$ and $1$ as its only idempotents is connected, equivalently indec
 | $\mathbb{O}$, the octonions | not a ring: the multiplication is not associative, so $e^2 = e$ is not defined in the ring sense | *Octonion Algebra* |
 | the zero ring $\{0\}$ | $0 = 1$, and the single element is an idempotent, excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 | $M_2(\mathbb{R})$ as a "split" ring | it is simple, so it has no nontrivial two-sided idempotent splitting, although it has many one-sided idempotents | *Matrix Algebras* |
-| $\mathbb{B}$ as a "split" ring | simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition | *Ideals and Peirce Decomposition of the General Plain Algebra* |
+| $\mathbb{B}$ as a "split" ring | simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
 
 The third and fourth rows record the distinction the list rests on: an idempotent gives a product decomposition only when it is central, and the idempotents of a matrix algebra are not. The split-biquaternions and the split-complex numbers are products because their idempotents are central, while the matrix ring and the biquaternions are simple and their idempotents are not.
 
@@ -113,9 +113,9 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $e$ | An idempotent, $e^2 = e$ |
-| $e_{\pm} = \tfrac{1}{2}(1 \pm j)$ | The idempotents of the split-complex numbers and the split-biquaternions |
+| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{D}$, $\tilde\Pi_{1,2}$ in $\mathbb{H}_{\mathbb{D}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $e_0 = 1$ | The identity, the trivial idempotent |
-| $p = E_{11}$, $q = E_{22}$ | Orthogonal matrix-unit idempotents, $p + q = 1$ |
+| $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $x, y$ | The nilpotent off-diagonal elements of the Peirce corners |
 | $e_i A e_j$ | A Peirce corner of the algebra $A$ |
 | $\omega(n)$ | The number of distinct primes dividing $n$ |

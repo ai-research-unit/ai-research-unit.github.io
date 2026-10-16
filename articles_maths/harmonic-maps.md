@@ -81,7 +81,7 @@ $$
 
 an equation in which the nonlinearity is the second derivative of the constraint $|\phi|^2=1$; for $M=S^2$ it is equivalent to the equation satisfied by the eigenfunctions of the Laplacian, and every nontrivial harmonic map $S^2\to S^n$ is a rational curve in a suitable sense.
 
-**Example (a family of maps into the circle).** For $\phi : S^1\to S^1$ of degree $k$, written $\phi(e^{i\theta}) = e^{ik\theta}$, the energy is $E = \pi k^2$ and the map is harmonic for every $k$, since the geodesic equation on the circle is solved by the constant-speed parametrisations; the example shows that on a curved target there are harmonic maps of arbitrarily large energy, in contrast with the flat case where harmonic maps are rigid.
+**Example (a family of maps into the circle).** For $\phi : S^1\to S^1$ of degree $k$, written $\phi(\exp(i\theta)) = \exp(ik\theta)$, the energy is $E = \pi k^2$ and the map is harmonic for every $k$, since the geodesic equation on the circle is solved by the constant-speed parametrisations; the example shows that on a curved target there are harmonic maps of arbitrarily large energy, in contrast with the flat case where harmonic maps are rigid.
 
 ## Existence: the Harmonic Map Flow
 

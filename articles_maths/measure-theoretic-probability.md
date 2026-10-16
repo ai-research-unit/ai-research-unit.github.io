@@ -7,7 +7,7 @@ Probability theory is measure theory with a normalisation: a probability space i
 
 This article sets up the frame and fixes the notation for the probability articles throughout. It defines the probability space, the random variable, the distribution, the expectation and the moments, records the standard inequalities, describes the modes of convergence of random variables and their relations, introduces the characteristic function as the Fourier transform of a distribution, and states the classical limit theorems in outline, leaving their proofs to the articles that own them. Three boundaries are held.
 
-- The **general measure theory** — measurable spaces, measures, the integral, the monotone and dominated convergence theorems, the $L^p$ spaces, the Radon–Nikodym theorem, Fubini's theorem — is the subject of *Measure Theory and Integration*, and the comparison of the modes of convergence is *Modes of Convergence*; both are written, and this article uses them.
+- The **general measure theory** — measurable spaces, measures, the integral, the monotone and dominated convergence theorems, the $L^{n}$ spaces, the Radon–Nikodym theorem, Fubini's theorem — is the subject of *Measure Theory and Integration*, and the comparison of the modes of convergence is *Modes of Convergence*; both are written, and this article uses them.
 - **Independence and conditional expectation** are not covered here,which develops the product measures, the Borel–Cantelli lemmas, the Kolmogorov zero–one law, the conditional expectation as a projection, and the filtrations. This article defines independence only far enough to state the limit theorems; the proofs of the limit theorems are deferred.
 - The **Fourier transform on $\mathbb{R}^d$** — the Schwartz space, the inversion theorem, the Parseval identity — is *Fourier Analysis on Euclidean Spaces*, written; the characteristic function is the Fourier transform of a probability measure, and the general analytical theory is cited there. The **specific distributions** and their special functions are the subject of the Part V articles on the number systems , where the gamma function and its relatives are developed. No physics is invoked.
 
@@ -51,7 +51,7 @@ The distribution records everything probabilistic about $X$: two random variable
 
 **Definition.** A point $x \in \mathbb{R}$ is an **atom** of $\mu$ if $\mu(\{x\}) > 0$; the measure is **discrete** if it is a countable sum of atoms, **absolutely continuous** with density $f$ if $d\mu = f\,dx$ with $f \geq 0$ measurable and $\int f\,dx = 1$, and **singular** if it is supported on a Lebesgue-null set. By the Lebesgue decomposition theorem of *Measure Theory and Integration* every probability measure on $\mathbb{R}$ decomposes uniquely into an absolutely continuous part, a discrete part and a singular continuous part.
 
-**Example.** The Bernoulli distribution with parameter $p$ is the measure $p\delta_1 + (1-p)\delta_0$ on $\{0,1\}$, discrete with atoms at $0$ and $1$. The binomial distribution $\mathrm{Bin}(n,p)$ is $\sum_{k=0}^{n}\binom{n}{k}p^k(1-p)^{n-k}\delta_k$. The uniform distribution on $[0,1]$ is absolutely continuous with density $\mathbf{1}_{[0,1]}$; the standard normal distribution $N(0,1)$ is absolutely continuous with density $(2\pi)^{-1/2}e^{-x^2/2}$; and the Cantor distribution is singular continuous, with distribution function the Cantor function.
+**Example.** The Bernoulli distribution with parameter $p$ is the measure $p\delta_1 + (1-p)\delta_0$ on $\{0,1\}$, discrete with atoms at $0$ and $1$. The binomial distribution $\mathrm{Bin}(n,p)$ is $\sum_{k=0}^{n}\binom{n}{k}p^k(1-p)^{n-k}\delta_k$. The uniform distribution on $[0,1]$ is absolutely continuous with density $\mathbf{1}_{[0,1]}$; the standard normal distribution $N(0,1)$ is absolutely continuous with density $(2\pi)^{-1/2}\exp(-x^2/2)$; and the Cantor distribution is singular continuous, with distribution function the Cantor function.
 
 ### The Quantile Function and the Universal Model
 
@@ -93,7 +93,7 @@ $$
 \varphi(\mathbb{E}[X]) \leq \mathbb{E}[\varphi(X)];
 $$
 
-for $\varphi(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^p \subseteq L^1$.
+for $\varphi(x) = |x|^p$, $p \geq 1$, this gives $\|X\|_1 \leq \|X\|_p$ and hence $L^{n} \subseteq L^1$.
 
 **Theorem (Markov).** For a nonnegative random variable $X$ and $a > 0$,
 
@@ -109,9 +109,9 @@ $$
 
 The three inequalities are the standard quantitative bounds, and they are proved by elementary manipulations: Jensen by the supporting line of a convex function, Markov by integrating the inequality $a\mathbf{1}_{\{X\geq a\}} \leq X$, and Chebyshev by applying Markov to $(X-\mu)^2$. The Chebyshev inequality is the engine of the weak law of large numbers, and the Markov inequality is the engine of the first-moment bounds.
 
-**Definition.** For $X,Y \in L^2$, the **variance** is $\operatorname{Var}(X) = \mathbb{E}[(X-\mathbb{E}X)^2] = \mathbb{E}[X^2] - (\mathbb{E}X)^2$, the **covariance** is $\operatorname{Cov}(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]$, the **correlation** is $\rho(X,Y) = \operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$, the **moments** are $\mathbb{E}[X^k]$, and the **$L^p$ norm** is $\|X\|_p = (\mathbb{E}[|X|^p])^{1/p}$.
+**Definition.** For $X,Y \in L^2$, the **variance** is $\operatorname{Var}(X) = \mathbb{E}[(X-\mathbb{E}X)^2] = \mathbb{E}[X^2] - (\mathbb{E}X)^2$, the **covariance** is $\operatorname{Cov}(X,Y) = \mathbb{E}[(X-\mathbb{E}X)(Y-\mathbb{E}Y)]$, the **correlation** is $\rho(X,Y) = \operatorname{Cov}(X,Y)/(\sigma_X\sigma_Y)$, the **moments** are $\mathbb{E}[X^k]$, and the **$L^{n}$ norm** is $\|X\|_p = (\mathbb{E}[|X|^p])^{1/p}$.
 
-**Theorem (Hölder, Minkowski, Cauchy–Schwarz).** For $p, q > 1$ with $1/p + 1/q = 1$,
+**Theorem (Hölder, Minkowski, Cauchy–Schwarz).** For $p, q > 1$ with $1/n + 1/m = 1$,
 
 $$
 \mathbb{E}[|XY|] \leq \|X\|_p\|Y\|_q, \qquad \|X + Y\|_p \leq \|X\|_p + \|Y\|_p, \qquad \left|\mathbb{E}[XY]\right| \leq \|X\|_2\|Y\|_2,
@@ -129,10 +129,10 @@ The Cauchy–Schwarz inequality makes $L^2$ an inner product space and is the re
 
 1. $X_n \to X$ **almost surely** ($X_n \to X$ a.s.) if $\mathbb{P}(\lim_n X_n = X) = 1$.
 2. $X_n \to X$ **in probability** ($X_n \xrightarrow{\mathbb{P}} X$) if for every $\varepsilon > 0$, $\mathbb{P}(\|X_n - X\| > \varepsilon) \to 0$.
-3. $X_n \to X$ **in $L^p$** for $p \geq 1$ if $\|X_n - X\|_p \to 0$.
+3. $X_n \to X$ **in $L^{n}$** for $p \geq 1$ if $\|X_n - X\|_p \to 0$.
 4. $X_n \to X$ **in distribution** ($X_n \xrightarrow{d} X$) if $\mathbb{E}[f(X_n)] \to \mathbb{E}[f(X)]$ for every bounded continuous $f$.
 
-**Theorem (the relations).** Convergence almost sure and convergence in $L^p$ each imply convergence in probability, which implies convergence in distribution. None of the implications reverses. If $X_n \xrightarrow{d} X$ and $X$ is a.s. constant, then $X_n \xrightarrow{\mathbb{P}} X$; if $X_n \xrightarrow{\mathbb{P}} X$ then a subsequence converges a.s.; and $X_n \xrightarrow{d} X$ if and only if $X_n \xrightarrow{\mathbb{P}} X$ together with the uniform integrability of an appropriate family, by the theorem of Vitali.
+**Theorem (the relations).** Convergence almost sure and convergence in $L^{n}$ each imply convergence in probability, which implies convergence in distribution. None of the implications reverses. If $X_n \xrightarrow{d} X$ and $X$ is a.s. constant, then $X_n \xrightarrow{\mathbb{P}} X$; if $X_n \xrightarrow{\mathbb{P}} X$ then a subsequence converges a.s.; and $X_n \xrightarrow{d} X$ if and only if $X_n \xrightarrow{\mathbb{P}} X$ together with the uniform integrability of an appropriate family, by the theorem of Vitali.
 
 *Proof.* Almost sure convergence implies convergence in probability by the continuity from above of the measure; convergence in probability implies convergence in distribution by the portmanteau theorem below and the boundedness of $f$; the strictly decreasing chain is witnessed by the standard examples. The remaining statements are the standard measure-theoretic arguments.
 
@@ -155,30 +155,30 @@ Slutsky's theorem is the working form of the continuous mapping principle: it pe
 **Definition.** The **characteristic function** of a random variable $X$ on $\mathbb{R}^d$ is
 
 $$
-\varphi_X(t) = \mathbb{E}\!\left[e^{i\langle t, X\rangle}\right] = \int_{\mathbb{R}^d} e^{i\langle t,x\rangle}\, d\mu_X(x), \qquad t \in \mathbb{R}^d,
+\varphi_X(t) = \mathbb{E}\!\left[\exp(i\langle t, X\rangle)\right] = \int_{\mathbb{R}^d} \exp(i\langle t,x\rangle)\, d\mu_X(x), \qquad t \in \mathbb{R}^d,
 $$
 
 the Fourier transform of the distribution $\mu_X$.
 
 **Theorem (basic properties).** The characteristic function satisfies $\varphi_X(0) = 1$, $|\varphi_X(t)| \leq 1$, $\varphi_X(-t) = \overline{\varphi_X(t)}$, and $\varphi_X$ is uniformly continuous on $\mathbb{R}^d$. It is positive definite in the sense that $\sum_{j,k} c_j\overline{c_k}\varphi_X(t_j - t_k) \geq 0$ for all finite families $t_j \in \mathbb{R}^d$ and $c_j \in \mathbb{C}$; conversely, by Bochner's theorem, every continuous positive definite function with $\varphi(0) = 1$ is the characteristic function of a unique probability measure.
 
-*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|e^{i\langle h,X\rangle} - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j e^{i\langle t_j,X\rangle}\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*.
+*Proof.* The first four properties are immediate from the definition and the dominated convergence theorem; uniform continuity follows from $\left|\varphi(t+h) - \varphi(t)\right| \leq \mathbb{E}\left|\exp(i\langle h,X\rangle) - 1\right|$, whose right-hand side is independent of $t$ and tends to $0$ as $h \to 0$ by dominated convergence. Positive definiteness is the computation $\sum_{j,k}c_j\overline{c_k}\varphi(t_j-t_k) = \mathbb{E}\left|\sum_j c_j \exp(i\langle t_j,X\rangle)\right|^2 \geq 0$. The converse is Bochner's theorem, whose proof is the inversion formula of *Fourier Analysis on Euclidean Spaces*.
 
 **Theorem (uniqueness and inversion).** The characteristic function determines the distribution: if $\varphi_X = \varphi_Y$ then $\mu_X = \mu_Y$. More precisely, if $\varphi$ is integrable then $\mu_X$ has the continuous density
 
 $$
-f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} e^{-i\langle t,x\rangle}\varphi(t)\, dt,
+f(x) = \frac{1}{(2\pi)^d}\int_{\mathbb{R}^d} \exp(-i\langle t,x\rangle)\varphi(t)\, dt,
 $$
 
 and in general the distribution is recovered from the characteristic function by the inversion formula for the Fourier transform of a finite measure.
 
 The uniqueness theorem is the reason the characteristic function is the standard tool for limit theorems: it linearises the operation of passing to a limit of distributions, and it converts the convergence in distribution into the pointwise convergence of functions. The analytic theory behind the inversion formula — the Schwartz space, the Parseval identity and the extension of the Fourier transform to tempered distributions — is the subject of *Fourier Analysis on Euclidean Spaces*.
 
-**Example.** The normal distribution $N(\mu,\sigma^2)$ has characteristic function $\varphi(t) = e^{i\mu t - \sigma^2t^2/2}$; the Poisson distribution with parameter $\lambda$ has $\varphi(t) = e^{\lambda(e^{it}-1)}$ for a variable on $\mathbb{Z}_{\geq0}$; the Cauchy distribution with density $1/(\pi(1+x^2))$ has $\varphi(t) = e^{-|t|}$; and the Bernoulli distribution has $\varphi(t) = 1 - p + pe^{it}$. The last three show that the characteristic function is generally complex-valued and need not be integrable, so the inversion formula must be applied in the distributional sense.
+**Example.** The normal distribution $N(\mu,\sigma^2)$ has characteristic function $\varphi(t) = \exp(i\mu t - \sigma^2t^2/2)$; the Poisson distribution with parameter $\lambda$ has $\varphi(t) = \exp(\lambda(\exp(it)-1))$ for a variable on $\mathbb{Z}_{\geq0}$; the Cauchy distribution with density $1/(\pi(1+x^2))$ has $\varphi(t) = \exp(-|t|)$; and the Bernoulli distribution has $\varphi(t) = 1 - p + p\exp(it)$. The last three show that the characteristic function is generally complex-valued and need not be integrable, so the inversion formula must be applied in the distributional sense.
 
 ### Moment Generating and Cumulants
 
-**Definition.** When $X$ has finite moments of all orders the **moment generating function** is $M_X(t) = \mathbb{E}[e^{tX}]$, defined near $t=0$ when the expectation converges; the **cumulants** $\kappa_n$ are the coefficients in the expansion $\log \varphi_X(t) = \sum_{n\geq1}\kappa_n (it)^n/n!$. The moments are recovered from the derivatives of $\varphi_X$ at $0$: $\mathbb{E}[X^n] = i^{-n}\varphi_X^{(n)}(0)$ when the moment exists.
+**Definition.** When $X$ has finite moments of all orders the **moment generating function** is $M_X(t) = \mathbb{E}[\exp(tX)]$, defined near $t=0$ when the expectation converges; the **cumulants** $\kappa_n$ are the coefficients in the expansion $\log \varphi_X(t) = \sum_{n\geq1}\kappa_n (it)^n/n!$. The moments are recovered from the derivatives of $\varphi_X$ at $0$: $\mathbb{E}[X^n] = i^{-n}\varphi_X^{(n)}(0)$ when the moment exists.
 
 The cumulants are additive for sums of independent random variables, and this is the structural reason they appear in the central limit theorem: the $n$-th cumulant of a sum of independent variables is the sum of the $n$-th cumulants, so the asymptotic distribution of a sum is governed by its first two cumulants. The additivity is a formal consequence of the factorisation $\varphi_{X+Y} = \varphi_X\varphi_Y$ for independent $X,Y$, which is stated in the next section and proved.
 
@@ -214,7 +214,7 @@ $$
 
 the standard normal distribution.
 
-The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\varphi(t/\sqrt n)^n \to e^{-t^2/2}$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.
+The three theorems are the classical limit theorems, and they are the subject, where they are proved, refined and generalised: the weak law follows from Chebyshev when the variance is finite and from the truncation argument of Khinchin in general; the strong law is proved by the maximal inequality of Kolmogorov; and the central limit theorem is proved by the convergence of characteristic functions, via the expansion $\varphi(t/\sqrt n)^n \to \exp(-t^2/2)$ and the continuity theorem of Lévy. The rate of convergence in the central limit theorem is the Berry–Esseen theorem, and the local form is the local limit theorem; both are developed there.
 
 The place of the limit theorems in the present article is structural. The weak law is the statement that the empirical mean is a consistent estimator of the mean; the strong law is the statement that the empirical measure converges to the distribution almost surely, and it is the probabilistic form of the pointwise ergodic theorem; and the central limit theorem is the statement that the fluctuations of the empirical mean around its limit are asymptotically Gaussian, and it is the reason the normal distribution is universal. The passage from the law of large numbers to ergodic theory is the passage from independent sequences to stationary ones, and it is developed.
 
@@ -222,7 +222,7 @@ The place of the limit theorems in the present article is structural. The weak l
 
 A probability space is a measure space of total mass one; a random variable is a measurable function, its distribution is the pushforward $\mu_X = \mathbb{P}\circ X^{-1}$, the distribution function $F_X(x) = \mathbb{P}(X \le x)$ is nondecreasing and right-continuous and determines the measure, and the Lebesgue decomposition splits every distribution into an absolutely continuous, a discrete and a singular continuous part. Every distribution on $\mathbb{R}$ is the image of the uniform distribution under the quantile map $F^{-1}$, which makes $[0,1]$ the universal probability space. Expectation is the integral, computed from the distribution by change of variables, and it satisfies the monotone and dominated convergence theorems; the standard inequalities are Jensen, Markov and Chebyshev, together with Hölder, Minkowski and Cauchy–Schwarz, the last making $L^2$ an inner product space whose geometry underlies the covariance and the conditional expectation.
 
-Convergence of random variables has four modes — almost surely, in probability, in $L^p$ and in distribution — with the implications a.s. and $L^p$ $\Rightarrow$ probability $\Rightarrow$ distribution, none reversible; the portmanteau theorem characterises convergence in distribution by the weak convergence of the laws, and Slutsky's theorem and the continuous mapping principle are the working tools. The characteristic function is the Fourier transform of the distribution: it is uniformly continuous, positive definite, bounded by $1$ and equal to $1$ at the orig, it determines the distribution by the inversion formula and Bochner's theorem, it factorises over independent sums, and its logarithm has additive cumulants. The weak and strong laws of large numbers and the central limit theorem are stated here in their classical form and proved; independence and conditional expectation are constructed, and the ergodic form of the law of large numbers is developed.
+Convergence of random variables has four modes — almost surely, in probability, in $L^{n}$ and in distribution — with the implications a.s. and $L^{n}$ $\Rightarrow$ probability $\Rightarrow$ distribution, none reversible; the portmanteau theorem characterises convergence in distribution by the weak convergence of the laws, and Slutsky's theorem and the continuous mapping principle are the working tools. The characteristic function is the Fourier transform of the distribution: it is uniformly continuous, positive definite, bounded by $1$ and equal to $1$ at the orig, it determines the distribution by the inversion formula and Bochner's theorem, it factorises over independent sums, and its logarithm has additive cumulants. The weak and strong laws of large numbers and the central limit theorem are stated here in their classical form and proved; independence and conditional expectation are constructed, and the ergodic form of the law of large numbers is developed.
 
 ## Summary of Notation
 
@@ -237,11 +237,11 @@ Convergence of random variables has four modes — almost surely, in probability
 | $F^{-1}$ | Quantile function, $F^{-1}(u)=\inf\{x: F(x)\ge u\}$ |
 | $\mathbb{E}[X]$ | Expectation, $\int_\Omega X\,d\mathbb{P}$ |
 | $\operatorname{Var}$, $\operatorname{Cov}$, $\rho$ | Variance, covariance, correlation |
-| $\|X\|_p$ | $L^p$ norm $(\mathbb{E}\|X\|^p)^{1/p}$ |
+| $\|X\|_p$ | $L^{n}$ norm $(\mathbb{E}\|X\|^p)^{1/p}$ |
 | $\mathbf{1}_A$, $\delta_x$ | Indicator of $A$, point mass at $x$ |
-| $X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^p}$, $\xrightarrow{d}$ | The four modes of convergence |
+| $X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^{n}$, $\xrightarrow{d}$ | The four modes of convergence |
 | $\mu_n \to \mu$ weakly | $\int f\,d\mu_n \to \int f\,d\mu$ for bounded continuous $f$ |
-| $\varphi_X(t) = \mathbb{E}[e^{i\langle t,X\rangle}]$ | Characteristic function |
+| $\varphi_X(t) = \mathbb{E}[\exp(i\langle t,X\rangle)]$ | Characteristic function |
 | $M_X$, $\kappa_n$ | Moment generating function, cumulants |
 | $N(\mu,\sigma^2)$, $\mathrm{Bin}(n,p)$, $\mathrm{Pois}(\lambda)$ | Normal, binomial, Poisson distributions |
 | independent | joint law is the product of the marginals |

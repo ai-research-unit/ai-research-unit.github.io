@@ -36,7 +36,7 @@ a bounded self-adjoint operator on $\ell^2(G\xi)$ with the spectral resolution $
 
 **Theorem (the spectral measure and the return probabilities).** The return probability of the simple random walk on the orbital graph is the moment sequence of the Kesten measure, $p_{2n}(\xi,\xi)=\int(\tfrac{|S|-\lambda}{|S|})^{2n}\mu(d\lambda)$, and the measure is the limit of the spectral measures of the level graphs; in particular the level spectra of the previous article converge on average to the Kesten measure of the orbital graph, and for the lamplighter the limit is the atomic measure with the atoms $\cos(m\pi/n)$ of the previous article.
 
-*Proof sketch.* The Cayley–Hamilton/Fourier form of the spectral theorem for a self-adjoint operator on $\ell^2$: the heat kernel $e^{t\Delta}\delta_\xi$ is the image of $\delta_\xi$ under the functional calculus, and its norm at time $t$ is the Fourier transform of $\mu$; the identity $e^{t\Delta}\delta_\xi(\eta)=$ the $(2n)$-th return probability at integer times $t=2n$ is the combinatorial identity of the walk. The convergence of the finite-dimensional spectral measures is the pointed convergence and the monotone class argument of *Random Walks on Groups*.
+*Proof sketch.* The Cayley–Hamilton/Fourier form of the spectral theorem for a self-adjoint operator on $\ell^2$: the heat kernel $\exp(t\Delta)\delta_\xi$ is the image of $\delta_\xi$ under the functional calculus, and its norm at time $t$ is the Fourier transform of $\mu$; the identity $\exp(t\Delta)\delta_\xi(\eta)=$ the $(2n)$-th return probability at integer times $t=2n$ is the combinatorial identity of the walk. The convergence of the finite-dimensional spectral measures is the pointed convergence and the monotone class argument of *Random Walks on Groups*.
 
 ### Recurrence, Transience and Amenability
 
@@ -73,7 +73,7 @@ with the eigenvalues $\{4\}$ at level $0$, $\{1,4\}$ at level $1$ and $\{-2,1,4\
 
 ### The Heat Kernel on the Gasket
 
-**Definition.** Let $\Delta$ be the Laplacian of *The Laplacian on a Self-Similar Set* on the Sierpiński gasket, with the self-similar measure $\mu$ of *The Self-Similar Measure and the Invariant Measure*, and let $p_t(x,y)$ be the heat kernel, the density of the semigroup $e^{t\Delta}$; write $d(x,y)$ for the geodesic distance and $d_f=\log3/\log2$ for the dimension of the gasket.
+**Definition.** Let $\Delta$ be the Laplacian of *The Laplacian on a Self-Similar Set* on the Sierpiński gasket, with the self-similar measure $\mu$ of *The Self-Similar Measure and the Invariant Measure*, and let $p_t(x,y)$ be the heat kernel, the density of the semigroup $\exp(t\Delta)$; write $d(x,y)$ for the geodesic distance and $d_f=\log3/\log2$ for the dimension of the gasket.
 
 **Theorem (the sub-Gaussian estimate).** There are constants $c_1,c_2$ such that
 $$

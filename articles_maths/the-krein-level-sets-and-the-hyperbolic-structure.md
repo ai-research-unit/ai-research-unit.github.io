@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form is indefinite, so its nonzero level sets are neither spheres nor compact: they are hyperboloids, and the geometry they carry is hyperbolic rather than elliptic. This article describes the three sign level sets of the form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ — the positive set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, the negative set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}$ and the null set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ — and the two models of hyperbolic space that the sign sets produce: the **complex hyperbolic space** of positive definite complex lines, which is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ and coincides with the symmetric space $U(1,3)/(U(1)\times U(3))$ of *The Krein Cartan Decomposition of the Operator Algebra*, and the **real hyperbolic space** $H^{3}$ of the Minkowski slice, which is the sheet of the real hyperboloid. The isotropic structure at the boundary is *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the cone of the form is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*.
+The general quaternionic sesquilinear form is indefinite, so its nonzero level sets are neither spheres nor compact: they are hyperboloids, and the geometry they carry is hyperbolic rather than elliptic. This article describes the three sign level sets of the form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ — the positive set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, the negative set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}$ and the null set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ — and the two models of hyperbolic space that the sign sets produce: the **complex hyperbolic space** of positive definite complex lines, which is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ and coincides with the symmetric space $U(1,3)/(U(1)\times U(3))$ of *The Krein Cartan Decomposition of the Operator Algebra*, and the **real hyperbolic space** $H^{3}$ of the Minkowski slice, which is the sheet of the real hyperboloid. The isotropic structure at the boundary is *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the cone of the form is *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*.
 
 **Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the general quaternionic sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general plain sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{*}$.
 
@@ -93,7 +93,7 @@ $$
 P_K=\bigl\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\ge0\bigr\}
 =\bigl\{\tilde{Q}:\|c\|_E\ge\|v\|_E\bigr\},
 $$
-the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*.
+the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*.
 
 **Theorem (the cone, its interior and its boundary).** The Krein cone is the union of the origin, the positive region and the null set; its interior is the positive region $\{\|c\|_E>\|v\|_E\}$, its boundary is the null set, and it contains the whole positive axis and no negative element. On a Minkowski slice its intersection is the full light cone, whose future nappe is the Hermitian cone $P$ of the slice.
 
@@ -103,21 +103,21 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion
 
 ## The Norm Hypersurfaces
 
-**Theorem (the levels of the norm).** For $\lambda\neq0$ the level set $\{N(\tilde Q)=\lambda\}$ of the norm $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$ is a complex hypersurface of $\mathbb{B}=\mathbb{C}^{4}$, of real dimension $6$, invariant under $\tilde Q\mapsto\pm\tilde Q$; the zero set $\{N=0\}$ is a complex cone, the zero-divisor cone of *The Topology of the Zero-Divisor Cone*. The level sets of the general quaternionic sesquilinear form are, by contrast, the real hypersurfaces of real dimension $7$ that this article describes.
+**Theorem (the levels of the norm).** For $\lambda\neq0$ the level set $\{\langle\tilde Q\rangle_{\natural}=\lambda\}$ of the norm $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}$ is a complex hypersurface of $\mathbb{B}=\mathbb{C}^{4}$, of real dimension $6$, invariant under $\tilde Q\mapsto\pm\tilde Q$; the zero set $\{N=0\}$ is a complex cone, the zero-divisor cone of *The Topology of the Zero-Divisor Cone*. The level sets of the general quaternionic sesquilinear form are, by contrast, the real hypersurfaces of real dimension $7$ that this article describes.
 
-**Proof.** $N$ is a complex polynomial of degree two, so a nonzero level is a complex hypersurface and the zero set is a cone; the general quaternionic sesquilinear form is real on the diagonal and its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is not holomorphic, so its levels are real hypersurfaces — the same distinction as in *The Krein Gram Matrix and the Restrictions of the Form*.
+**Proof.** $\langle\cdot,\cdot\rangle_{\natural}$ is a complex polynomial of degree two, so a nonzero level is a complex hypersurface and the zero set is a cone; the general quaternionic sesquilinear form is real on the diagonal and its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is not holomorphic, so its levels are real hypersurfaces — the same distinction as in *The Krein Gram Matrix and the Restrictions of the Form*.
 
-**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the general quaternionic sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is the union of the doubly null lines, treated in *The Isotropic Structure of the General Quaternionic Sesqualgebra* and compared in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*What the Four Forms Separate*.
+**Corollary (the two pairings and the two geometries).** The two pairings of the algebra give two families of level sets: the complex hypersurfaces of the norm, whose geometry is the projective geometry of the zero-divisor cone, and the real hyperboloids of the general quaternionic sesquilinear form, whose geometry is the hyperbolic geometry of the ball. Their intersection is the union of the doubly null lines, treated in *The Isotropic Structure of the General Quaternionic Sesqualgebra* and compared in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, §*What the Four Forms Separate*.
 
 ## The Definite Companion and the Twisted Sphere
 
-**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
 **Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact level set among those compared in *The Krein Level Sets and the Hyperbolic Structure*, §*The Three Level Sets*, and the definite form is complete and positive definite.
 
 **Proof.** In the coefficient basis the definite form is the standard Hermitian form of $\mathbb{C}^{4}$, so its levels are spheres; compactness and completeness are those of the Euclidean norm.
 
-**Theorem (the indefinite levels as a twisted sphere).** The bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$ of *The Fundamental Symmetry of the Biquaternion Algebra* writes the indefinite level set of level $t$ as the set of $\tilde{Q}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$: it is the Euclidean sphere twisted by the involution $J={}^{\natural}$, and it is diffeomorphic to $S^{1}\times\mathbb{R}^{6}$ for $t>0$ and to $S^{5}\times\mathbb{R}^{2}$ for $t<0$, with the null set $t=0$ as their common boundary.
+**Theorem (the indefinite levels as a twisted sphere).** The bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$ of *The Fundamental Symmetry of the Biquaternioid Algebra* writes the indefinite level set of level $t$ as the set of $\tilde{Q}$ with $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$: it is the Euclidean sphere twisted by the involution $J={}^{\natural}$, and it is diffeomorphic to $S^{1}\times\mathbb{R}^{6}$ for $t>0$ and to $S^{5}\times\mathbb{R}^{2}$ for $t<0$, with the null set $t=0$ as their common boundary.
 
 **Proof.** The bridge is the identity of the fundamental-symmetry article, and the three diffeomorphism types are those of §*The Three Level Sets*; the twist by $J$ replaces the positive definite form by the indefinite one, which is the only change from the sphere.
 
@@ -163,7 +163,7 @@ its boundary is the Krein null set.
 
 **A phase orbit.** $e_0$ and $ie_0$: both on the unit positive level set, both positive, the same positive line; the phase circle acts on the level set and the orbit is the fibre of the bundle over $\mathbb{CH}^{3}$.
 
-**A nonzero norm level.** $\{N(\tilde{Q})=1\}$ is a complex hypersurface of real dimension $6$ through the four units $e_0,e_1,e_2,e_3$, each with $N=1$; it is not a real hyperboloid, and its real points include the sphere $\sum_\mu q_\mu^{2}=1$ of the real slice.
+**A nonzero norm level.** $\{\langle\tilde{Q}\rangle_{\natural}=1\}$ is a complex hypersurface of real dimension $6$ through the four units $e_0,e_1,e_2,e_3$, each with $\langle\cdot\rangle_{\natural}=1$; it is not a real hyperboloid, and its real points include the sphere $\sum_\mu q_\mu^{2}=1$ of the real slice.
 
 ## Summary
 
@@ -184,17 +184,17 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 | $S^{1}$ phase and $\mathbb{R}_{>0}$ scaling | The actions on the level sets; the positive level is an $S^{1}$-bundle over $\mathbb{CH}^{3}$ |
 | $ds^{2}$ of §*The Metric of the Ball and Its Geodesics* | The Bergman metric of the ball; complete, constant negative curvature |
 | $P_K=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\ge0\}$ | The Krein cone: origin, positive region, null set |
-| $\{N(\tilde{Q})=\lambda\}$, $\lambda\neq0$ | The norm hypersurfaces; complex, real dimension $6$ |
+| $\{\langle\tilde{Q}\rangle_{\natural}=\lambda\}$, $\lambda\neq0$ | The norm hypersurfaces; complex, real dimension $6$ |
 | $\{\lVert\tilde{Q}\rVert_E=r\}$, $\langle\tilde{Q},J\tilde{Q}\rangle_{*}=t$ | The definite spheres and their $J$-twist |
 
 ## Further Reading
 
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the boundary sphere and the null cone
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the parametrisation of the maximal positive definite subspaces
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the cone and its interior
+- *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the cone and its interior
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the symmetric space $U(1,3)/(U(1)\times U(3))$
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the boosts acting on the Minkowski hyperboloid
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the compact sphere used here for contrast
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the definite companion and its spheres
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their table, their four null sets and their isometry groups
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the definite companion and its spheres
+- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their table, their four null sets and their isometry groups

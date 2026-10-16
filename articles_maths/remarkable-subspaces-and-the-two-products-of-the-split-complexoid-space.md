@@ -4,9 +4,9 @@
 
 The split-complex algebra $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$ carries two products, the **general plain bilinear product** $AC$ and the **general plain sesquilinear product** $A\overline{C}$, and its distinguished subspaces are four real lines: the real line $\mathbb{R}_{\mathbb{D}}$, the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, and the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. This article reads the two products on those four lines, one line to a section, and answers for each the same questions: **is the line closed under the product**, **which of its elements are units**, **which are zero divisors**, and **what role the line plays in the ring**.
 
-The products themselves, their laws and their coordinate forms are *The Two Products of the Split-Complex Space*; the four lines, their bases, their dimensions and their restricted norm are *Split-Complex Subspaces*; the two forms the products carry are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, below this article in this category; and the norm, the criterion of invertibility, the units, the idempotents and the zero divisors of the algebra are *Split-Complex Norm and Invertibility*, *Split-Complex Idempotents and Projections* and *Split-Complex Zero Divisors*, all below this article in this category. None of those is restated here. What the article adds is the reading of the two products on the four lines and nothing else. The twelve structures, read on $\mathbb{D}$ and collapsed to the two, are *The Collapse of the Twelve Structures on the Split-Complex Numbers*, below this article in this category.
+The products themselves, their laws and their coordinate forms are *The Two Products of the Split-Complexoid Space*; the four lines, their bases, their dimensions and their restricted norm are *Split-Complexoid Subspaces*; the two forms the products carry are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, below this article in this category; and the norm, the criterion of invertibility, the units, the idempotents and the zero divisors of the algebra are *Split-Complex Norm and Invertibility*, *Split-Complex Idempotents and Projections* and *Split-Complex Zero Divisors*, all below this article in this category. None of those is restated here. What the article adds is the reading of the two products on the four lines and nothing else.
 
-**The reading fixed here.** In the global convention of *Conventions in Mathematics* the conjugation $j\mapsto-j$ is the **bar**, and the Hermitian conjugation ${}^{*}$ coincides with it. The bar is the unique non-trivial involution of $\mathbb{D}$; the split-complex block also calls it "the involution", and the wording is reconciled once here and not repeated. It fixes $\mathbb{R}_{\mathbb{D}}$, negates $j\mathbb{R}_{\mathbb{D}}$, and exchanges the two idempotent lines. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so that the letters $B$, $H$ and $N$ stay free for the forms, which is the convention of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, below this article in this category. The idempotents are written $\Pi_{1,2}=\tfrac12(1\pm j)$; the menu of this category writes them $e_\pm$, and the two notations name the same pair.
+**The reading fixed here.** In the global convention of *Conventions in Mathematics* the conjugation $j\mapsto-j$ is the **bar**, and the Hermitian conjugation ${}^{*}$ coincides with it. The bar is the unique non-trivial involution of $\mathbb{D}$; the split-complex block also calls it "the involution", and the wording is reconciled once here and not repeated. It fixes $\mathbb{R}_{\mathbb{D}}$, negates $j\mathbb{R}_{\mathbb{D}}$, and exchanges the two idempotent lines. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so that the letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ stay free for the forms, which is the convention of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, below this article in this category. The idempotents are written $\Pi_{1,2}=\tfrac12(1\pm j)$; the menu of this category writes them $e_\pm$, and the two notations name the same pair.
 
 On the coordinates the two products are
 
@@ -16,7 +16,7 @@ AC=(ac+a'c')+(ac'+a'c)j,
 A\overline{C}=(ac-a'c')+(a'c-ac')j,
 $$
 
-so the bilinear product is the multiplication of the ring and the sesquilinear product is its reflection in the second slot, as in *The Two Products of the Split-Complex Space*.
+so the bilinear product is the multiplication of the ring and the sesquilinear product is its reflection in the second slot, as in *The Two Products of the Split-Complexoid Space*.
 
 ## The Closure of the Four Lines
 
@@ -40,7 +40,7 @@ So the two idempotent lines are the two minimal ideals of the ring, and each is 
 
 ## The Units and the Zero Divisors of Each Line
 
-The algebra splits into the units $N\neq0$ and the non-units $N=0$, the latter being the null cone: the origin together with the zero divisors, which are the non-zero elements supported on a single idempotent (*Split-Complex Norm and Invertibility*; *Split-Complex Zero Divisors*, both below this article in this category). Read on the four lines, this classification is what separates the two eigenlines from the two idempotent lines.
+The algebra splits into the units $N\neq0$ and the non-units $\langle\cdot\rangle_{\natural}=0$, the latter being the null cone: the origin together with the zero divisors, which are the non-zero elements supported on a single idempotent (*Split-Complex Norm and Invertibility*; *Split-Complex Zero Divisors*, both below this article in this category). Read on the four lines, this classification is what separates the two eigenlines from the two idempotent lines.
 
 | line | basis | closed under $AC$? | closed under $A\overline{C}$? | units | zero divisors |
 |---|---|---|---|---|---|
@@ -49,9 +49,9 @@ The algebra splits into the units $N\neq0$ and the non-units $N=0$, the latter b
 | $\mathbb{R}\Pi_1$ | $\Pi_1$ | yes | yes | none | all non-zero |
 | $\mathbb{R}\Pi_2$ | $\Pi_2$ | yes | yes | none | all non-zero |
 
-The two eigenlines lie entirely in the set of the units: their norm is $N(a)=a^2$ on $\mathbb{R}_{\mathbb{D}}$ and $N(ja')=-a'^2$ on $j\mathbb{R}_{\mathbb{D}}$, both non-zero away from the origin, so every non-zero element of either line is a unit and no element of either line is a zero divisor. The two idempotent lines lie entirely in the complement: their norm is $N(\lambda\Pi_i)=\lambda^2 N(\Pi_i)=0$, so every non-zero element of either line is a zero divisor and none of them is a unit, while $0$ is neither. The classification of the elements by the vanishing of the norm therefore separates the four lines into two units-lines, which are the two eigenlines, and two zero-divisor-lines, which are the two idempotent lines.
+The two eigenlines lie entirely in the set of the units: their norm is $\langle a\rangle_{\natural}=a^2$ on $\mathbb{R}_{\mathbb{D}}$ and $\langle ja'\rangle_{\natural}=-a'^2$ on $j\mathbb{R}_{\mathbb{D}}$, both non-zero away from the origin, so every non-zero element of either line is a unit and no element of either line is a zero divisor. The two idempotent lines lie entirely in the complement: their norm is $\langle \lambda\Pi_i\rangle_{\natural}=\lambda^2 \langle \Pi_i\rangle_{\natural}=0$, so every non-zero element of either line is a zero divisor and none of them is a unit, while $0$ is neither. The classification of the elements by the vanishing of the norm therefore separates the four lines into two units-lines, which are the two eigenlines, and two zero-divisor-lines, which are the two idempotent lines.
 
-**Remark.** The bilinear product of two elements of $j\mathbb{R}_{\mathbb{D}}$ and the sesquilinear product of two of its elements are both real, and they differ by the sign: $AC=a'c'$ and $A\overline{C}=-a'c'$. So the split imaginary line is carried into the real line by each product, and the two images are mirror images of one another. This is the line-level form of the statement that the two products agree on $\mathbb{R}_{\mathbb{D}}$ and differ by a sign on the anti-fixed direction; the form reading is *Remarkable Subspaces of the Split-Complex Numbers and the Two Forms*, below this article in this category.
+**Remark.** The bilinear product of two elements of $j\mathbb{R}_{\mathbb{D}}$ and the sesquilinear product of two of its elements are both real, and they differ by the sign: $AC=a'c'$ and $A\overline{C}=-a'c'$. So the split imaginary line is carried into the real line by each product, and the two images are mirror images of one another. This is the line-level form of the statement that the two products agree on $\mathbb{R}_{\mathbb{D}}$ and differ by a sign on the anti-fixed direction; the form reading is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*, below this article in this category.
 
 ## Summary
 
@@ -70,7 +70,7 @@ The classification of the elements by the norm separates the lines: every non-ze
 | $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | the fixed and anti-fixed lines of the bar |
 | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ | the two idempotent lines, the two minimal ideals |
 | $AC$, $A\overline{C}$ | the general plain bilinear and sesquilinear products |
-| $N(A)=A\bar{A}=a^2-a'^2$ | the norm, owned by *Split-Complex Norm and Invertibility* |
+| $\langle A\rangle_{\natural}=A\bar{A}=a^2-a'^2$ | the norm, owned by *Split-Complex Norm and Invertibility* |
 
 ## Further Reading
 

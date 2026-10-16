@@ -17,7 +17,7 @@ The article assumes *Hyperbolic Groups* and *Geometric Group Theory* for the hyp
 **Definition (the visual metric).** Fix a base point $o \in X$. For $\xi, \eta \in \partial X$ let $(\xi|\eta) \in (0,\infty]$ be the **Gromov product**, the length of the common initial segment of two rays to $\xi$ and $\eta$; for $\varepsilon > 0$ the **visual metric** is
 
 $$
-d_\varepsilon(\xi,\eta) = e^{-\varepsilon (\xi|\eta)} .
+d_\varepsilon(\xi,\eta) = \exp(-\varepsilon (\xi|\eta)) .
 $$
 
 The distance $d_\varepsilon$ is compatible with the topology, and there is $\varepsilon_0 > 0$, depending on the hyperbolicity constant, such that $d_\varepsilon$ is a metric for $0 < \varepsilon \leq \varepsilon_0$; when $X$ is a tree the space is $0$-hyperbolic and $d_\varepsilon$ is an ultrametric for every $\varepsilon > 0$. The metrics $d_\varepsilon$ for different $\varepsilon$ are Hölder equivalent and are the members of the **conformal gauge** of the boundary.
@@ -29,13 +29,13 @@ The distance $d_\varepsilon$ is compatible with the topology, and there is $\var
 **Definition.** The **Poincaré series** of $G$ at $s \in \mathbb{R}$ is
 
 $$
-\sum_{g \in G} e^{-s\,|g|} ,
+\sum_{g \in G} \exp(-s\,|g|) ,
 $$
 
 and its **critical exponent** is
 
 $$
-\delta = \inf\left\{s > 0 : \sum_{g \in G} e^{-s|g|} < \infty\right\} .
+\delta = \inf\left\{s > 0 : \sum_{g \in G} \exp(-s|g|) < \infty\right\} .
 $$
 
 **Theorem (finiteness and the growth rate).** Let $G$ be a non-elementary hyperbolic group. Then $0 < \delta < \infty$, and $\delta$ equals the **exponential growth rate** of the group:
@@ -74,7 +74,7 @@ $$
 
 so that the product $\varepsilon \cdot \dim_H(\partial X, d_\varepsilon) = \delta$ is independent of the choice of the visual metric within the conformal gauge. In the normalisation $\varepsilon = 1$, when $d_1$ is a metric, the boundary has Hausdorff dimension exactly $\delta$, and this is the equality $\dim_H \partial G = \delta$ of the cocompact case.
 
-**Proof sketch.** The covering number of the boundary at scale $r = e^{-\varepsilon n}$ is the number of the shadow sets at distance $n$ from the base point, which grows like $e^{\delta n}$; the covering dimension is the exponent of the growth, $\delta n / \varepsilon n = \delta/\varepsilon$. The shadow of a geodesic ray at distance $n$ is a ball of the visual metric of radius comparable to $e^{-\varepsilon n}$, and the counting of the shadows is the counting of the elements of $G$ at length $n$. The identity is the dimension formula of the Patterson–Sullivan theory, and the independence of $\varepsilon$ is the invariance of the product under the Hölder equivalence.
+**Proof sketch.** The covering number of the boundary at scale $r = \exp(-\varepsilon n)$ is the number of the shadow sets at distance $n$ from the base point, which grows like $\exp(\delta n)$; the covering dimension is the exponent of the growth, $\delta n / \varepsilon n = \delta/\varepsilon$. The shadow of a geodesic ray at distance $n$ is a ball of the visual metric of radius comparable to $\exp(-\varepsilon n)$, and the counting of the shadows is the counting of the elements of $G$ at length $n$. The identity is the dimension formula of the Patterson–Sullivan theory, and the independence of $\varepsilon$ is the invariance of the product under the Hölder equivalence.
 
 **Theorem (the Patterson–Sullivan measure).** For a non-elementary hyperbolic group there is a Borel probability measure $\mu$ on $\partial G$, the **Patterson–Sullivan measure**, supported on the whole boundary, that is Ahlfors $\delta$-regular in the normalised visual metric:
 
@@ -88,7 +88,7 @@ $$
 \dim_H \partial G = \delta = \dim_H \mu .
 $$
 
-**Proof sketch.** The measure is constructed as the weak limit of the normalised atomic measures $\sum_{g}e^{-s|g|}\delta_g / \sum_g e^{-s|g|}$ as $s \downarrow \delta$, a construction carried out in *Analysis on Groups*; the limit is a conformal measure and its Ahlfors regularity of exponent $\delta$ is the standard statement of the Patterson–Sullivan theory. The dimension of an Ahlfors $\delta$-regular measure is $\delta$ by the mass distribution principle of *Fractal Geometry*, and the Hausdorff dimension of the boundary is at least $\dim_H\mu$; the reverse inequality is the covering estimate above. The equality $\dim_H \partial G = \delta$ is the content of the cocompact case.
+**Proof sketch.** The measure is constructed as the weak limit of the normalised atomic measures $\sum_{g}\exp(-s|g|)\delta_g / \sum_g \exp(-s|g|)$ as $s \downarrow \delta$, a construction carried out in *Analysis on Groups*; the limit is a conformal measure and its Ahlfors regularity of exponent $\delta$ is the standard statement of the Patterson–Sullivan theory. The dimension of an Ahlfors $\delta$-regular measure is $\delta$ by the mass distribution principle of *Fractal Geometry*, and the Hausdorff dimension of the boundary is at least $\dim_H\mu$; the reverse inequality is the covering estimate above. The equality $\dim_H \partial G = \delta$ is the content of the cocompact case.
 
 **Remark (the metric dependence and the conformal dimension).** The number $\dim_H \partial G$ is not an invariant of the group: it depends on the visual metric through the parameter $\varepsilon$, the product $\varepsilon \dim_H$ being the invariant. What is a genuine quasi-isometry invariant is the **conformal dimension**, the infimum of the Hausdorff dimensions of the boundary over the metrics of the conformal gauge,
 
@@ -104,7 +104,7 @@ introduced by Pansu. It is a quasi-isometry invariant of the boundary, and by th
 
 **(a)** The critical exponent is $\delta = \log(2r-1)$.
 
-**(b)** With the visual metric $d(\xi,\eta) = e^{-(\xi|\eta)}$ of the tree, which is an ultrametric, the boundary has Hausdorff dimension
+**(b)** With the visual metric $d(\xi,\eta) = \exp(-(\xi|\eta))$ of the tree, which is an ultrametric, the boundary has Hausdorff dimension
 
 $$
 \dim_H(\partial F_r, d) = \log(2r-1) .
@@ -120,7 +120,7 @@ which is $\log 3/\log 4 = 0.7925\ldots$ for $r = 2$ and $\log 5/\log 6 = 0.8982\
 
 **(d)** The Patterson–Sullivan measure is the Bernoulli measure that gives each of the $2r$ edges at the root the weight $1/(2r)$ and each of the $2r-1$ forward edges elsewhere the weight $1/(2r-1)$; it is Ahlfors $\delta$-regular with $\delta = \log(2r-1)$ in the normalisation (b).
 
-**Proof sketch.** (a) is the count of the reduced words: the spheres have sizes $2r(2r-1)^{n-1}$ and the abscissa of the convergence of the Poincaré series is the logarithm of the branching, $\log(2r-1)$. (b) the covering number at the scale $e^{-n}$ is the number of the level-$n$ cylinders, comparable to $(2r-1)^n$, so the exponent is $\log(2r-1)$. (c) at the scale $(2r)^{-n}$ the covering number is again comparable to $(2r-1)^n$ and the exponent is $\log(2r-1)/\log(2r)$. (d) the weight of a cylinder of a reduced word of length $n$ is $(2r)^{-1}(2r-1)^{-(n-1)}$, which is comparable to $(e^{-n})^{\log(2r-1)}$ in the metric (b), so the measure is Ahlfors regular of exponent $\log(2r-1)$.
+**Proof sketch.** (a) is the count of the reduced words: the spheres have sizes $2r(2r-1)^{n-1}$ and the abscissa of the convergence of the Poincaré series is the logarithm of the branching, $\log(2r-1)$. (b) the covering number at the scale $\exp(-n)$ is the number of the level-$n$ cylinders, comparable to $(2r-1)^n$, so the exponent is $\log(2r-1)$. (c) at the scale $(2r)^{-n}$ the covering number is again comparable to $(2r-1)^n$ and the exponent is $\log(2r-1)/\log(2r)$. (d) the weight of a cylinder of a reduced word of length $n$ is $(2r)^{-1}(2r-1)^{-(n-1)}$, which is comparable to $(\exp(-n))^{\log(2r-1)}$ in the metric (b), so the measure is Ahlfors regular of exponent $\log(2r-1)$.
 
 **Remark (the two normalisations).** The two values of (b) and (c) are the same object measured in two metrics of the conformal gauge: the ratio of the dimensions is the ratio of the parameters $\varepsilon$, and the product $\varepsilon\dim_H = \delta$ is the same. This is the phenomenon of the previous section made explicit, and it is the reason the invariants are the critical exponent and the conformal dimension, and not the unnormalised Hausdorff dimension.
 
@@ -130,7 +130,7 @@ which is $\log 3/\log 4 = 0.7925\ldots$ for $r = 2$ and $\log 5/\log 6 = 0.8982\
 
 ## Summary
 
-A hyperbolic group has a Gromov boundary, a compact metric space under the visual metrics $d_\varepsilon(\xi,\eta) = e^{-\varepsilon(\xi|\eta)}$, which form the conformal gauge, and its Hausdorff dimension is governed by the critical exponent $\delta$ of the Poincaré series. The exponent is finite, positive, equal to the exponential growth rate and hence a quasi-isometry invariant, and the dimension formula is $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$, with the value $\delta$ in the normalisation $\varepsilon = 1$; this is the equality $\dim_H \partial G = \delta$ of the cocompact case. The Patterson–Sullivan measure is the Ahlfors $\delta$-regular probability measure on the boundary, so the boundary and the measure have the same dimension in the normalised metric. For the free group $F_r$ the boundary is a Cantor set and $\delta = \log(2r-1)$, giving the dimension $\log(2r-1)$ in the canonical visual metric and $\log(2r-1)/\log(2r)$ in the metric with child ratio $1/(2r)$; for a surface group the boundary is a circle and the dimension is one; for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere and the dimension is two. The unnormalised dimension is not an invariant; the invariants are the critical exponent and the conformal dimension of Pansu, and by the theorem of Paulin and Bourdon the boundary up to quasi-Möbius determines the group up to quasi-isometry. The group theory is that of *Hyperbolic Groups* and *Geometric Group Theory*, the measure is *Analysis on Groups*', the end spaces are those of *Fractal Trees and Dendrites*, and the dimension is that of *Fractal Geometry*.
+A hyperbolic group has a Gromov boundary, a compact metric space under the visual metrics $d_\varepsilon(\xi,\eta) = \exp(-\varepsilon(\xi|\eta))$, which form the conformal gauge, and its Hausdorff dimension is governed by the critical exponent $\delta$ of the Poincaré series. The exponent is finite, positive, equal to the exponential growth rate and hence a quasi-isometry invariant, and the dimension formula is $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$, with the value $\delta$ in the normalisation $\varepsilon = 1$; this is the equality $\dim_H \partial G = \delta$ of the cocompact case. The Patterson–Sullivan measure is the Ahlfors $\delta$-regular probability measure on the boundary, so the boundary and the measure have the same dimension in the normalised metric. For the free group $F_r$ the boundary is a Cantor set and $\delta = \log(2r-1)$, giving the dimension $\log(2r-1)$ in the canonical visual metric and $\log(2r-1)/\log(2r)$ in the metric with child ratio $1/(2r)$; for a surface group the boundary is a circle and the dimension is one; for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere and the dimension is two. The unnormalised dimension is not an invariant; the invariants are the critical exponent and the conformal dimension of Pansu, and by the theorem of Paulin and Bourdon the boundary up to quasi-Möbius determines the group up to quasi-isometry. The group theory is that of *Hyperbolic Groups* and *Geometric Group Theory*, the measure is *Analysis on Groups*', the end spaces are those of *Fractal Trees and Dendrites*, and the dimension is that of *Fractal Geometry*.
 
 ## Summary of Notation
 
@@ -138,9 +138,9 @@ A hyperbolic group has a Gromov boundary, a compact metric space under the visua
 |---|---|
 | $\partial G$, $\partial X$ | Gromov boundary of the group, of the hyperbolic space |
 | $(\xi\lvert\eta)$, $o$ | Gromov product with respect to the base point; the base point |
-| $d_\varepsilon$, conformal gauge | $e^{-\varepsilon(\xi\lvert\eta)}$; the family of the Hölder-equivalent visual metrics |
+| $d_\varepsilon$, conformal gauge | $\exp(-\varepsilon(\xi\lvert\eta))$; the family of the Hölder-equivalent visual metrics |
 | $\delta$ | Critical exponent of the Poincaré series; exponential growth rate |
-| $\sum_g e^{-s\lvert g\rvert}$ | Poincaré series; its abscissa of convergence is $\delta$ |
+| $\sum_g \exp(-s\lvert g\rvert)$ | Poincaré series; its abscissa of convergence is $\delta$ |
 | $\mu$ | Patterson–Sullivan measure; Ahlfors $\delta$-regular |
 | $\dim_H(\partial G, d_\varepsilon)$ | $\delta/\varepsilon$; equals $\delta$ in the normalisation $\varepsilon=1$ |
 | $\dim_C \partial G$ | Conformal dimension of Pansu; quasi-isometry invariant |

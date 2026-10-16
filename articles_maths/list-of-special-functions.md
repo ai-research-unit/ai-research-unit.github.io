@@ -9,23 +9,23 @@ This article lists the special functions the corpus introduces. A special functi
 
 | Object | The equation it solves | Introduced in |
 |---|---|---|
-| the exponential $e^x$ | $y' = y$, $y(0) = 1$; the sum $\sum x^n/n!$ | *Real Special Functions* |
+| the exponential $\exp(x)$ | $y' = y$, $y(0) = 1$; the sum $\sum x^n/n!$ | *Real Special Functions* |
 | the logarithm $\ln x$ | $y' = 1/x$, $y(1) = 0$; the inverse of the exponential | *Real Special Functions* |
 | the trigonometric functions $\sin$, $\cos$ | $y'' + y = 0$; defined by their power series and the differential system | *Real Special Functions* |
 | the hyperbolic functions $\sinh$, $\cosh$, $\tanh$ | $y'' - y = 0$; the exponential in its even and odd parts | *Real Special Functions* |
 | the inverse trigonometric and inverse hyperbolic functions | the equations $y' = 1/\sqrt{1-x^2}$, $y' = 1/\sqrt{1+x^2}$ | *Real Special Functions* |
 | general powers $a^x$ | $y' = (\ln a) y$; the composition of the exponential and the logarithm | *Real Special Functions* |
 | the complex exponential, logarithm and trigonometric functions | the same equations, with the multi-valuedness of the logarithm on $\mathbb C^\times$ | *Complex Special Functions* |
-| the Lambert $W$ | $W e^W = x$; a functional equation, not a linear differential equation | *Real Special Functions*; *Complex Special Functions* |
+| the Lambert $W$ | $W \exp(W) = x$; a functional equation, not a linear differential equation | *Real Special Functions*; *Complex Special Functions* |
 
 ## The Gamma and Beta Family
 
 | Object | The equation or the functional equation it satisfies | Introduced in |
 |---|---|---|
-| the gamma function $\Gamma$ | $\Gamma(z+1) = z\Gamma(z)$, $\Gamma(1) = 1$; the integral $\int_0^\infty t^{z-1}e^{-t}dt$ | *Real Special Functions*; *Complex Special Functions* |
+| the gamma function $\Gamma$ | $\Gamma(z+1) = z\Gamma(z)$, $\Gamma(1) = 1$; the integral $\int_0^\infty t^{z-1}\exp(-t)dt$ | *Real Special Functions*; *Complex Special Functions* |
 | the beta function $B$ | $B(x,y) = \Gamma(x)\Gamma(y)/\Gamma(x+y)$; the integral over the simplex | *Real Special Functions* |
 | the digamma function $\psi$ | $\psi = \Gamma'/\Gamma$, the logarithmic derivative of the gamma function | *Dual-Numbers Special Functions* |
-| the error function $\operatorname{erf}$ | $\operatorname{erf}' = 2e^{-x^2}/\sqrt\pi$; the incomplete gamma of order $1/2$ | *Real Special Functions*; *Complex Special Functions* |
+| the error function $\operatorname{erf}$ | $\operatorname{erf}' = 2\exp(-x^2)/\sqrt\pi$; the incomplete gamma of order $1/2$ | *Real Special Functions*; *Complex Special Functions* |
 | the complementary and imaginary error functions | the complements and the analytic continuation of $\operatorname{erf}$ | *Real Special Functions* |
 | the Dawson function | $F' + 2xF = 1$; the imaginary error function | *Real Special Functions* |
 | the Fresnel integrals | $C' = \cos(\pi x^2/2)$, $S' = \sin(\pi x^2/2)$ | *Real Special Functions* |
@@ -39,7 +39,7 @@ This article lists the special functions the corpus introduces. A special functi
 | the Riemann zeta function $\zeta$ | the functional equation relating $\zeta(s)$ and $\zeta(1-s)$; the Euler product over the primes | *Zeta Functions*; *Real Special Functions* |
 | the Dirichlet eta function $\eta$ | $\eta(s) = (1-2^{1-s})\zeta(s)$; the alternating series | *Real Special Functions* |
 | a Dirichlet $L$-function | the functional equation of the character, and the Euler product | *Zeta Functions*; *Analytic Number Theory* |
-| the Bernoulli numbers $B_n$ | the generating function $t/(e^t-1) = \sum B_n t^n/n!$ | *Real Special Functions* |
+| the Bernoulli numbers $B_n$ | the generating function $t/(\exp(t)-1) = \sum B_n t^n/n!$ | *Real Special Functions* |
 | the Bernoulli polynomials | $B_n(x+1) - B_n(x) = nx^{n-1}$; the generating function | *Real Special Functions* |
 | the Euler numbers $E_n$ | $\operatorname{sech} t = \sum E_n t^n/n!$; the tangent numbers | *Real Special Functions* |
 | the Möbius and Euler totient functions | the Dirichlet convolution $\mu * 1 = \varepsilon$, and the Dirichlet series | *Combinatorial Functions and Generating Functions* |

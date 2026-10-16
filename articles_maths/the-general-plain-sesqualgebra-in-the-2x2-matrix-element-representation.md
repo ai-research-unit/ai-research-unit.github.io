@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reading group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* reads the algebra through the **general plain sesquilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and through the **sesquilinear product** $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$ that it polarises, whose algebra is *Introduction to the General Plain Sesqualgebra of Biquaternions*. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the left regular representation.
+The reading group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* reads the algebra through the **general plain sesquilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and through the **sesquilinear product** $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$ that it polarises, whose algebra is *Introduction to the General Plain Sesqualgebra*. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the left regular representation.
 
 The Hermitian conjugation is the characteristic operation of the group, and in the model it is the **conjugate transpose**: $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The sesquilinear product is therefore the matrix product with the conjugate transpose of the second factor, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}$, and the general plain sesquilinear form is the **Hilbert–Schmidt pairing** of the matrices. The form is positive definite, so its matrix reading is the one of the five that is definite rather than indefinite, and the Frobenius norm is its carrier.
 
@@ -160,7 +160,7 @@ U=i\sigma_1=\begin{pmatrix}0&i\\i&0\end{pmatrix},\quad \det U=1,\ UU^{\dagger}=I
 $$
 
 $$
-\begin{pmatrix}e^{i\theta}&0\\0&e^{-i\theta}\end{pmatrix}\in SU(2),\qquad\text{and}\qquad
+\begin{pmatrix}\exp(i\theta)&0\\0&\exp(-i\theta)\end{pmatrix}\in SU(2),\qquad\text{and}\qquad
 A\,\sigma_3\,A^{\dagger}=\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}1&0\\1&1\end{pmatrix}=\begin{pmatrix}0&-1\\-1&-1\end{pmatrix},
 $$
 
@@ -238,8 +238,8 @@ The $2\times2$ realization turns the Hermitian conjugation into the conjugate tr
 - Irving Kaplansky, *Rings of Operators* (Benjamin, 1968), for the middle model $XY^{\dagger}Z$, its quadratic representation and the associated triple systems.
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear product on the algebra
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
+- *Introduction to the General Plain Sesqualgebra* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear product on the algebra
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the topology the form induces
 - *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
-- *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), for the restriction theory of the form
+- *Remarkable Subspaces under the General Plain Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md`), for the restriction theory of the form

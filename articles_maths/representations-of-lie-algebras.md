@@ -183,10 +183,10 @@ the sum over $j$ of the same parity as $m+n$ between $|m-n|$ and $m+n$.
 
 ### Characters
 
-**Definition.** Let $\mathbb{Z}[P]$ be the integral group ring of the weight lattice, with basis elements $e^\lambda$ multiplying by $e^\lambda e^\mu = e^{\lambda+\mu}$. The **formal character** of a finite-dimensional $\mathrm{G}$-module $V$ is
+**Definition.** Let $\mathbb{Z}[P]$ be the integral group ring of the weight lattice, with basis elements $\exp(\lambda)$ multiplying by $\exp(\lambda) e^\mu = \exp(\lambda+\mu)$. The **formal character** of a finite-dimensional $\mathrm{G}$-module $V$ is
 
 $$
-\operatorname{ch} V = \sum_{\lambda \in \mathrm{H}^*} m_V(\lambda)\, e^\lambda \in \mathbb{Z}[P],
+\operatorname{ch} V = \sum_{\lambda \in \mathrm{H}^*} m_V(\lambda)\, \exp(\lambda) \in \mathbb{Z}[P],
 $$
 
 a finite sum. The character is additive on direct sums and multiplicative on tensor products: $\operatorname{ch}(V \oplus W) = \operatorname{ch}V + \operatorname{ch}W$ and $\operatorname{ch}(V \otimes W) = \operatorname{ch}V \cdot \operatorname{ch}W$.
@@ -204,13 +204,13 @@ the sum of the fundamental weights; it satisfies $\langle\rho, \alpha_i^\vee\ran
 **Theorem (Weyl character formula).** For every $\lambda \in P^+$,
 
 $$
-\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, e^{w(\lambda + \rho)}}{\sum_{w \in W} (-1)^{\ell(w)}\, e^{w(\rho)}},
+\operatorname{ch} V(\lambda) = \frac{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\lambda + \rho))}{\sum_{w \in W} (-1)^{\ell(w)}\, \exp(w(\rho))},
 $$
 
 where $\ell(w)$ is the length of $w$ in the Weyl group. The denominator is the **Weyl denominator**
 
 $$
-\sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)} = e^{\rho} \prod_{\alpha \in \Phi^+} (1 - e^{-\alpha}) = \prod_{\alpha \in \Phi^+} (e^{\alpha/2} - e^{-\alpha/2}).
+\sum_{w \in W} (-1)^{\ell(w)} \exp(w(\rho)) = \exp(\rho) \prod_{\alpha \in \Phi^+} (1 - \exp(-\alpha)) = \prod_{\alpha \in \Phi^+} (\exp(\alpha/2) - \exp(-\alpha/2)).
 $$
 
 **Proof sketch.** The character of $V(\lambda)$ is the alternating sum over the Weyl group of the characters of the Verma modules, because the weight multiplicities are determined by the $\mathrm{SL}(2)$-strings of the representation: each Weyl-group translate of a weight contributes with the sign of the group element, and the resulting alternating sum telescopes. This is the standard proof; the algebra of $\mathbb{Z}[P]$ with its Weyl-group action is the setting.
@@ -221,7 +221,7 @@ $$
 \dim_K V(\lambda) = \prod_{\alpha \in \Phi^+} \frac{(\lambda + \rho, \alpha)}{(\rho, \alpha)}.
 $$
 
-**Proof.** Evaluate the character formula at the identity by applying the ring homomorphism $e^\lambda \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula.
+**Proof.** Evaluate the character formula at the identity by applying the ring homomorphism $\exp(\lambda) \mapsto 1$ together with the derivatives in the direction of $\rho$; the limit is finite and yields the product formula.
 
 **Example.** For $\mathrm{SL}(2)$ with $\lambda = n\omega$ and positive root $\alpha$, the formula gives
 
@@ -241,7 +241,7 @@ $$
 m_{V(\lambda)}(\mu) = \sum_{w \in W} (-1)^{\ell(w)}\, \mathcal{P}\bigl(w(\lambda + \rho) - (\mu + \rho)\bigr).
 $$
 
-**Proof sketch.** The character formula is rewritten using $\prod_{\alpha>0}(1 - e^{-\alpha})^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula.
+**Proof sketch.** The character formula is rewritten using $\prod_{\alpha>0}(1 - \exp(-\alpha))^{-1} = \sum_{\nu} \mathcal{P}(\nu) e^{\nu}$, the generating function of the partition function; comparing coefficients of $e^\mu$ on both sides gives the formula.
 
 **Corollary.** The weight multiplicities are invariant under the Weyl group: $m_{V(\lambda)}(w\mu) = m_{V(\lambda)}(\mu)$ for all $w \in W$, and a weight $\mu$ of $V(\lambda)$ satisfies $\mu \preceq \lambda$.
 
@@ -320,9 +320,9 @@ The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ 
 | $V(\lambda)$ | Irreducible module of highest weight $\lambda$, $\lambda \in P^+$ |
 | $M(\lambda) = U(\mathrm{G})\otimes_{U(\mathrm{B})}K_\lambda$ | Verma module; $V(\lambda)$ is its irreducible quotient |
 | $V_m \otimes V_n \cong \bigoplus_j V_j$ | Clebsch–Gordan rule for $\mathrm{SL}(2)$ |
-| $\operatorname{ch} V = \sum_\lambda m_V(\lambda)e^\lambda$ | Formal character |
+| $\operatorname{ch} V = \sum_\lambda m_V(\lambda)\exp(\lambda)$ | Formal character |
 | $\rho = \frac12\sum_{\alpha>0}\alpha = \sum_i\omega_i$ | Weyl vector |
-| $\operatorname{ch}V(\lambda) = \dfrac{\sum_w(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\sum_w(-1)^{\ell(w)}e^{w(\rho)}}$ | Weyl character formula |
+| $\operatorname{ch}V(\lambda) = \dfrac{\sum_w(-1)^{\ell(w)}\exp(w(\lambda+\rho))}{\sum_w(-1)^{\ell(w)}\exp(w(\rho))}$ | Weyl character formula |
 | $\dim V(\lambda) = \prod_{\alpha>0}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}$ | Weyl dimension formula |
 | $\mathcal{P}$, $m_{V(\lambda)}(\mu) = \sum_w(-1)^{\ell(w)}\mathcal{P}(w(\lambda+\rho)-(\mu+\rho))$ | Kostant partition function and multiplicity formula |
 | $\Omega = \sum_i x_i x^i$ | Casimir element; central in $U(\mathrm{G})$ |

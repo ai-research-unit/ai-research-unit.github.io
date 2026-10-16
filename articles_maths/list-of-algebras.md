@@ -37,7 +37,7 @@ The associative algebras of the corpus are the field itself, the matrix algebras
 | Quaternions $\mathbb{H}$ | dimension $4$ over $\mathbb{R}$; centre $\mathbb{R}$; no nontrivial ideals; division algebra | *Quaternion Algebra* |
 | Split-complex numbers $\mathbb{D}$ | dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field | *Split-Complex Algebra* |
 | Dual numbers $\mathbb{D}'$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
-| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *Biquaternions as a Vector Space over $\mathbb{C}$* |
+| Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | Central simple algebra | finite-dimensional, centre the field, no nontrivial two-sided ideals | *Central Simple Algebras and the Brauer Group* |
 | Non-example: $\mathbb{D}$ as a field | fails: it has zero divisors $(1-t)(1+t)=0$ | *Split-Complex Algebra* |
 | Non-example: $\mathbb{H}$ as a field | fails: it is a division ring but not commutative | *Quaternion Algebra* |
@@ -55,7 +55,7 @@ An algebra is **simple** when it has no nontrivial two-sided ideals, **semisimpl
 | Brauer group $\operatorname{Br}(F)$ | the central simple algebras modulo matrix algebras, under $\otimes_F$ | *Central Simple Algebras and the Brauer Group* |
 | Division algebra | a simple algebra whose only nonzero elements are units | *Division Algebras* |
 | Non-example: a simple algebra that is not a division algebra | $M_2(\mathbb{R})$ is simple but has zero divisors | *Examples of Algebras* |
-| Non-example: the biquaternions over $\mathbb{R}$ | fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split | *Biquaternions as a Vector Space over $\mathbb{C}$* |
+| Non-example: the biquaternions over $\mathbb{R}$ | fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 
 ## Algebras Defined by Generators and Relations
 
@@ -67,14 +67,14 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 | Free algebra | infinite-dimensional for $\dim V \geq 1$; the non-commutative polynomial algebra | *Tensor Powers and the Free Algebra* |
 | Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra of a Module* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
-| Clifford algebra $\mathrm{Cl}(V,q)$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
+| Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
 | Universal enveloping algebra $U(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
 | Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
 | Clifford algebras in finite dimensions | the real Clifford algebras of dimension $2^n$, with their centre and periodicity | *Clifford Algebras in Finite Dimensions* |
 | Path algebra $kQ$ of a quiver | the algebra with the paths as a basis; finite-dimensional exactly when $Q$ has no oriented cycle | *Quiver Representations and Representation Type* |
 | Non-example: the free algebra as a commutative algebra | fails commutativity: $xy \neq yx$ for the generators | *Tensor Powers and the Free Algebra* |
-| Non-example: $\mathrm{Cl}(V,q)$ for a degenerate form | fails semisimplicity: the radical is a nontrivial nilpotent ideal | *Degenerate Clifford Algebras and the Radical* |
+| Non-example: $\mathrm{Cl}(V,\mathfrak{Q})$ for a degenerate form | fails semisimplicity: the radical is a nontrivial nilpotent ideal | *Degenerate Clifford Algebras and the Radical* |
 
 ## Non-Associative Algebras and the Number Systems
 
@@ -102,7 +102,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | Symbol | Meaning |
 |---|---|
 | $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$ | tensor, symmetric and exterior algebras |
-| $\mathrm{Cl}(V,q)$ | Clifford algebra of a quadratic form |
+| $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of a quadratic form |
 | $U(\mathrm{G})$ | universal enveloping algebra of a Lie algebra |
 | $A_1$ | the Weyl algebra, $yx - xy = 1$ |
 | $M_n(k)$ | matrix algebra |

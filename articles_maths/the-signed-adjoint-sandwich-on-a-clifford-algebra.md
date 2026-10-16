@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The signed sandwich of a Clifford algebra is the operator $\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$ of *The Signed Sandwich on a Clifford Algebra*, the two-sided multiplication twisted by the grade involution; its geometric rôle is to realise the **reflections** of the quadratic space, $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ for a vector $u$ with $q(u)\ne0$. The Clifford algebra carries the **standard form** $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ of *The Adjoint of the Left Multiplication on a Clifford Algebra*, and the article computes the adjoint of the signed sandwich for it,
+The signed sandwich of a Clifford algebra is the operator $\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$ of *The Signed Sandwich on a Clifford Algebra*, the two-sided multiplication twisted by the grade involution; its geometric rôle is to realise the **reflections** of the quadratic space, $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ for a vector $u$ with $\mathfrak{Q}(u)\ne0$. The Clifford algebra carries the **standard form** $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ of *The Adjoint of the Left Multiplication on a Clifford Algebra*, and the article computes the adjoint of the signed sandwich for it,
 
 $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)} ,
@@ -11,7 +11,7 @@ $$
 
 the signed sandwich with the two parameters conjugated and their order kept — the reversal is already inside the conjugation, $\widehat{ab}=\hat b\hat a$. From the adjoint and the composition law comes the **isometry criterion**, that a signed sandwich is an isometry exactly when its two parameters are inverse units, so that the isometric signed sandwiches are precisely the **reflections**; and from an element Hermitian conjugation $^{\dagger}$ comes the **unitarity condition** $u^{\dagger}u=uu^{\dagger}=1$, which makes the signed sandwiches $\Sigma^{\alpha}_{u,u^{\dagger}}$ isometric.
 
-**The boundaries.** The signed sandwich, its composition law and its reading on the quadratic space are *The Signed Sandwich on a Clifford Algebra*, *Two-Sided Operators with the Signed Product* and *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the standard form, the Clifford conjugation $\hat x=\alpha(\tilde x)$ and the adjoints of the one-sided factors are *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the Hermitian conjugation of the elements is *Hermitian Clifford Structures* and *Two-Sided Operators on a Clifford Algebra*. The adjoint of a reflection and of the signed left multiplication are *The Signed Adjoint of the Reflection on a Clifford Algebra* and *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the next two entries of the group, and are not anticipated here. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
+**The boundaries.** The signed sandwich, its composition law and its reading on the quadratic space are *The Signed Sandwich on a Clifford Algebra*, *Two-Sided Operators with the Signed Product* and *Reflections as Signed Two-Sided Operators on a Clifford Algebra*; the standard form, the Clifford conjugation $\hat x=\alpha(\tilde x)$ and the adjoints of the one-sided factors are *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the Hermitian conjugation of the elements is *Hermitian Clifford Structures* and *Two-Sided Operators on a Clifford Algebra*. The adjoint of a reflection and of the signed left multiplication are *The Signed Adjoint of the Reflection on a Clifford Algebra* and *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the next two entries of the group, and are not anticipated here. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
 
 **A convention.** The operator adjoint of the category is written ${}^{*}$, following *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*; the element Hermitian conjugation is written ${}^{\dagger}$, following *Two-Sided Operators on a Clifford Algebra* and *Hermitian Clifford Structures*. The two marks are kept apart throughout.
 
@@ -27,7 +27,7 @@ $$
 
 so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.
 
-**Proof.** The computation is that of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=\tilde x$ and the invariance of the scalar part under $\alpha$. The vector value is $\hat u=\alpha(\tilde u)=-u$.
+**Proof.** The computation is that of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=\tilde x$ and the invariance of the scalar part under $\alpha$. The vector value is $\vec u=\alpha(\tilde u)=-u$.
 
 **Theorem.** The adjoint of the signed sandwich is the signed sandwich by the conjugated parameters,
 
@@ -68,7 +68,7 @@ $$
 
 by the composition law, because the two twists cancel; and $\Sigma_{c,c}=\operatorname{id}$ exactly when $c$ is a central unit, by the injectivity of the two-sided correspondence up to the centre recorded in *The Sandwich on a Clifford Algebra*. Hence $ba$ central; the reverse order gives $ab$ central; in the central-simple case both are the conditions $ba=ab=1$, that is $b=a^{-1}$.
 
-**Corollary.** The graded involution $\alpha=\Sigma^{\alpha}_{1,1}$ is an isometry; every reflection $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ with $q(u)\ne0$ is an isometry by *The Signed Sandwich on a Clifford Algebra*; and the map $a\mapsto\Sigma^{\alpha}_{a,a^{-1}}$ is the reflection correspondence whose injectivity up to the centre is quoted.
+**Corollary.** The graded involution $\alpha=\Sigma^{\alpha}_{1,1}$ is an isometry; every reflection $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ with $\mathfrak{Q}(u)\ne0$ is an isometry by *The Signed Sandwich on a Clifford Algebra*; and the map $a\mapsto\Sigma^{\alpha}_{a,a^{-1}}$ is the reflection correspondence whose injectivity up to the centre is quoted.
 
 ## The Unitarity Condition
 
@@ -94,11 +94,11 @@ For $\mathrm{Cl}\cong\mathbb{H}$ with $e_1^2=e_2^2=-1$, the Clifford conjugation
 
 ### The Negative-Definite Plane
 
-For the negative-definite plane with $e_1^2=e_2^2=-1$, a vector $u$ has $q(u)<0$ and $\hat u=-u$, so $\Sigma^{\alpha}_{u,-u^{-1}}=\rho_u$ is a reflection and an isometry; the criterion $b=a^{-1}$ is verified by the computation $\alpha(u)\alpha(u^{-1})=\alpha(1)=1$ of the proof, and the isometries so obtained generate the rotation group of the plane.
+For the negative-definite plane with $e_1^2=e_2^2=-1$, a vector $u$ has $\mathfrak{Q}(u)<0$ and $\vec u=-u$, so $\Sigma^{\alpha}_{u,-u^{-1}}=\rho_u$ is a reflection and an isometry; the criterion $b=a^{-1}$ is verified by the computation $\alpha(u)\alpha(u^{-1})=\alpha(1)=1$ of the proof, and the isometries so obtained generate the rotation group of the plane.
 
 ### The Split Plane
 
-For the split plane with $e_1^2=1$, $e_2^2=-1$, a null vector $u=e_1+e_2\ne0$ has $q(u)=0$ and is not invertible, so the signed sandwich $\Sigma^{\alpha}_{u,u^{-1}}$ does not exist; the operator $\Sigma^{\alpha}_{u,u}$ is defined, and the next entry of the group, *The Signed Adjoint of the Reflection on a Clifford Algebra*, treats the failure.
+For the split plane with $e_1^2=1$, $e_2^2=-1$, a null vector $u=e_1+e_2\ne0$ has $\mathfrak{Q}(u)=0$ and is not invertible, so the signed sandwich $\Sigma^{\alpha}_{u,u^{-1}}$ does not exist; the operator $\Sigma^{\alpha}_{u,u}$ is defined, and the next entry of the group, *The Signed Adjoint of the Reflection on a Clifford Algebra*, treats the failure.
 
 ## Summary
 

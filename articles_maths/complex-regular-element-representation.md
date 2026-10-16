@@ -155,7 +155,7 @@ the set of real matrices of the shape $aI + a'J$.
 
 **Proposition.** The matrices of the shape $aI + a'J$ are exactly the real $2 \times 2$ matrices commuting with $J$, equivalently the $\mathbb{R}$-linear maps $\mathbb{R}^2 \to \mathbb{R}^2$ that are complex-linear under the identification $\mathbb{R}^2 \cong \mathbb{C}$. They form a field isomorphic to $\mathbb{C}$ under $\mathsf{M}_2$, and the nonzero ones are the **conformal** or **similarity** matrices of the plane: each is the composition of a scaling by $r = \sqrt{N(A)} > 0$ and a rotation by $\theta = \arg A$.
 
-**Proof.** A matrix $M = \begin{pmatrix} p & q \\ s & t \end{pmatrix}$ commutes with $J$ exactly when $s = -q$ and $p = t$, which is the shape $aI+a'J$; this is the condition that it be the real matrix of a $\mathbb{C}$-linear map. The map $\mathsf{M}_2$ is an injective algebra homomorphism by multiplicativity and faithfulness, and its image is therefore a field isomorphic to $\mathbb{C}$. In the polar form $A = re^{i\theta}$ with $r>0$, the matrix factors as
+**Proof.** A matrix $M = \begin{pmatrix} p & q \\ s & t \end{pmatrix}$ commutes with $J$ exactly when $s = -q$ and $p = t$, which is the shape $aI+a'J$; this is the condition that it be the real matrix of a $\mathbb{C}$-linear map. The map $\mathsf{M}_2$ is an injective algebra homomorphism by multiplicativity and faithfulness, and its image is therefore a field isomorphic to $\mathbb{C}$. In the polar form $A = r\exp(i\theta)$ with $r>0$, the matrix factors as
 
 $$
 \mathsf{M}_2(A) = r \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
@@ -167,7 +167,7 @@ The image $M_2(\mathbb{C})$ is the field of conformal matrices, and its group of
 
 ## The Image of the Unit Circle
 
-**Proposition.** The image of the unit circle under $\mathsf{M}_2$ is the rotation group of the plane. For $u = e^{i\theta} \in U(1)$,
+**Proposition.** The image of the unit circle under $\mathsf{M}_2$ is the rotation group of the plane. For $u = \exp(i\theta) \in U(1)$,
 
 $$
 \mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta, \qquad \det R_\theta = \cos^2\theta + \sin^2\theta = 1, \qquad \operatorname{tr} R_\theta = 2\cos\theta,
@@ -175,7 +175,7 @@ $$
 
 and $R_\theta$ is orthogonal, $R_\theta^{\mathsf{T}}R_\theta = I$, with determinant $+1$. The map $u \mapsto \mathsf{M}_2(u)$ is an isomorphism of Lie groups $U(1) \to SO(2)$.
 
-**Proof.** Substituting $A = e^{i\theta}$ into $\mathsf{M}_2(A) = aI+a'J$ with $a = \cos\theta$, $a' = \sin\theta$ gives the display, and orthogonality with determinant $+1$ is immediate from it. The map is a homomorphism by multiplicativity, $\mathsf{M}_2(uv) = \mathsf{M}_2(u)\mathsf{M}_2(v)$, it is injective by faithfulness, and it is surjective because every element of $SO(2)$ is such a matrix for exactly one $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
+**Proof.** Substituting $A = \exp(i\theta)$ into $\mathsf{M}_2(A) = aI+a'J$ with $a = \cos\theta$, $a' = \sin\theta$ gives the display, and orthogonality with determinant $+1$ is immediate from it. The map is a homomorphism by multiplicativity, $\mathsf{M}_2(uv) = \mathsf{M}_2(u)\mathsf{M}_2(v)$, it is injective by faithfulness, and it is surjective because every element of $SO(2)$ is such a matrix for exactly one $\theta \in \mathbb{R}/2\pi\mathbb{Z}$.
 
 The rotation matrix is therefore the matrix form of multiplication by a unit, and the product rule $R_\theta R_\varphi = R_{\theta+\varphi}$ is multiplicativity read on the circle. Because $\mathsf{M}_2(i) = J$, the regular representation carries the exponential of the algebra to the exponential of matrices,
 
@@ -185,7 +185,7 @@ $$
 
 so the skew-symmetric matrices $\theta J$ form the one-dimensional abelian Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ and $\exp : \mathrm{SO}(2) \to SO(2)$ is surjective with kernel $2\pi\mathbb{Z}$. The determinant of a rotation is $N(u) = 1$ and its trace is $2\operatorname{Re} u$, the specialisation of the determinant and trace formulas to the unit circle.
 
-The reflections are the other coset. Since $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$, the transpose realises the involution, and the matrix of the reflection $S_u(A) = u\bar A$ in the basis $\{1, i\}$ is the product $\mathsf{M}_2(u)E$ with $E = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ the matrix of complex conjugation; with $u = e^{2i\alpha}$ it is
+The reflections are the other coset. Since $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$, the transpose realises the involution, and the matrix of the reflection $S_u(A) = u\bar A$ in the basis $\{1, i\}$ is the product $\mathsf{M}_2(u)E$ with $E = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ the matrix of complex conjugation; with $u = \exp(2i\alpha)$ it is
 
 $$
 \mathsf{M}_2(u) E = \begin{pmatrix} \cos 2\alpha & \sin 2\alpha \\ \sin 2\alpha & -\cos 2\alpha \end{pmatrix},
@@ -201,7 +201,7 @@ $$
 \mathsf{M}_2(A) = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix} = aI + a'J, \qquad J^2 = -I .
 $$
 
-It is a faithful $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(A)\mathsf{M}_2(B) = \mathsf{M}_2(AB)$; its transpose is the matrix of the conjugate, $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$; its determinant is the norm and its trace is twice the real part. The image is the field of conformal $2 \times 2$ real matrices, the nonzero elements of which are the orientation-preserving similarities of the plane, and the polar decomposition of $A$ is the decomposition of its matrix into a scalar and a rotation. On the distinguished subspaces the image is the line of scalar matrices for $\mathbb{R}_{\mathbb{C}}$ and the line of skew-symmetric matrices for $i\mathbb{R}_{\mathbb{C}}$, and on the unit circle it is the rotation group: $\mathsf{M}_2$ carries $U(1)$ isomorphically onto $SO(2)$, $u = e^{i\theta}$ to the rotation matrix $R_\theta$, and the reflections $S_u(A) = u\bar A$ to the coset $\mathsf{M}_2(U(1))E$ of $SO(2)$ in $O(2)$.
+It is a faithful $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(A)\mathsf{M}_2(B) = \mathsf{M}_2(AB)$; its transpose is the matrix of the conjugate, $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$; its determinant is the norm and its trace is twice the real part. The image is the field of conformal $2 \times 2$ real matrices, the nonzero elements of which are the orientation-preserving similarities of the plane, and the polar decomposition of $A$ is the decomposition of its matrix into a scalar and a rotation. On the distinguished subspaces the image is the line of scalar matrices for $\mathbb{R}_{\mathbb{C}}$ and the line of skew-symmetric matrices for $i\mathbb{R}_{\mathbb{C}}$, and on the unit circle it is the rotation group: $\mathsf{M}_2$ carries $U(1)$ isomorphically onto $SO(2)$, $u = \exp(i\theta)$ to the rotation matrix $R_\theta$, and the reflections $S_u(A) = u\bar A$ to the coset $\mathsf{M}_2(U(1))E$ of $SO(2)$ in $O(2)$.
 
 Because the algebra is commutative, the right regular representation coincides with the left and the left-right distinction is empty. Because the algebra is a field, the regular module is simple: there is no reduction into two minimal left ideals, no squared determinant and no nontrivial centralizer, and their absence is the commutativity and the divisibility of $\mathbb{C}$.
 
@@ -220,7 +220,7 @@ Because the algebra is commutative, the right regular representation coincides w
 | $M_2(\mathbb{C})$ | the image, the field of conformal matrices $\cong \mathbb{C}$ |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | the distinguished subspaces, imaged as the scalar and the skew-symmetric matrices |
 | $U(1) = \{u : \lvert u\rvert = 1\}$ | the unit circle, imaged as the rotation group |
-| $R_\theta = \mathsf{M}_2(e^{i\theta})$ | the rotation matrix, the image of a unit |
+| $R_\theta = \mathsf{M}_2(\exp(i\theta))$ | the rotation matrix, the image of a unit |
 | $E = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ | the matrix of complex conjugation; the reflections are $\mathsf{M}_2(U(1))E$ |
 | $SO(2)$ | the rotation factor of the conformal group |
 | $S_u(A) = u\bar A$, $u \in U(1)$ | a reflection of the plane, matrix $\mathsf{M}_2(u)E$ |

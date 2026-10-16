@@ -18,7 +18,7 @@ $$
 
 which vanishes exactly when the third factor is real; the ternary product $\{A,C,D\} = A\bar C D$ restores the Jordan triple identity and makes $\mathbb{D}$ an algebraic $J^{*}$-algebra. The right multiplications $R_A$ generate the opposite monoid of the multiplicative monoid of $\mathbb{D}$, while the left ones $L_A$ do not close; the sandwich $A \mapsto BA\bar C$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $A\bar C - C\bar A = 2(a'c - ac')j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $ac - a'c'$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
 
-**Placement.** The article opens the split-complex general-plain-sesqualgebra block, after the general-plain-algebra block; the two products as a family and the collapse to two are *The Two Products of the Split-Complex Space*, and the slot reading of the two products, with the two pairings and the two adjoints they carry, is *Relations and Comparison Between the Two Products of the Split-Complex Space*, above this article in this category. The form theory of the second slot — $H$ as a form on the regular module, the positivity cone, the modules and the Witt group — is *The Hermitian Form and the Cone of the Split-Complex Algebra*, below this article in this category. The multiply-unrelated material is *Split-Complex Algebra*, which owns the plain product, and *Split-Complex Norm and Invertibility*.
+**Placement.** The article opens the split-complex general-plain-sesqualgebra block, after the general-plain-algebra block; the two products as a family and the collapse to two are *The Two Products of the Split-Complexoid Space*, and the slot reading of the two products, with the two pairings and the two adjoints they carry, is *Relations and Comparison Between the Two Products of the Split-Complexoid Space*, above this article in this category. The form theory of the second slot — $\langle\cdot,\cdot\rangle_{*}$ as a form on the regular module, the positivity cone, the modules and the Witt group — is *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category. The multiply-unrelated material is *Split-Complex Algebra*, which owns the plain product, and *Split-Complex Norm and Invertibility*.
 
 **Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $A = a+ja'$, conjugate $\bar A = a-ja'$, idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, idempotent coordinates $A_\pm = a\pm a'$. The product is written with a star, $A \star C = A\bar C$, and never with a bare juxtaposition, which is reserved for the plain product; the conjugation is never written as an operator symbol. The involution of the algebra is the bar, the coefficients being real and the idempotent swap coinciding with it, so the symbol $*$ of the general theory is realised here by the bar alone; the words **linear** and **conjugate-linear** are read over the ring $(\mathbb{D},\bar\cdot)$, in the sense of the two scalar rules below.
 
@@ -33,7 +33,7 @@ $$
 (A,C) \longmapsto A \star C = A\bar C ,
 $$
 
-the general plain sesquilinear product of *The Two Products of the Split-Complex Space*. On the coordinates,
+the general plain sesquilinear product of *The Two Products of the Split-Complexoid Space*. On the coordinates,
 
 $$
 A \star C = (a+ja')(c-jc') = (ac-a'c') + (a'c-ac')j .
@@ -201,27 +201,27 @@ $$
 S_{B,C} \circ S_{D,E} = S_{BD,\,CE} .
 $$
 
-**Proof.** Direct substitution, using the associativity of the plain product and the multiplicativity of the conjugation: $S_{B,C}(S_{D,E}(X)) = B(DX\bar E)\bar C = (BD)X\bar E\bar C = (BD)X\overline{CE} = S_{BD,CE}(X)$.
+**Proof.** Direct substitution, using the associativity of the plain product and the multiplicativity of the conjugation: $S_{B,C}(S_{D,E}(X)) = \langle DX\bar E\rangle\bar C = (BD)X\bar E\bar C = (BD)X\overline{CE} = S_{BD,CE}(X)$.
 
-So the sandwiches form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{D}$ with itself via $(B,C) \mapsto S_{B,C}$; in particular the sandwich $S_{B,C}$ is invertible exactly when both $B$ and $C$ are units, with inverse $S_{B^{-1},C^{-1}}$.
+So the sandwiches form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{D}$ with itself via $(B,C) \mapsto S_{B,C}$; in particular the sandwich $S_{B,C}$ is invertible exactly when both $\langle\cdot\rangle$ and $C$ are units, with inverse $S_{B^{-1},C^{-1}}$.
 
 ## The Hermitian Form and the Adjoints
 
 **Definition.** The **Hermitian form** of the regular module is
 
 $$
-H(A,C) = A \star C = A\bar C .
+\langle A,C\rangle_{*} = A \star C = A\bar C .
 $$
 
-It is conjugate-symmetric, $H(C,A) = \overline{H(A,C)}$, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second. It is the canonical form of *The Hermitian Form and the Cone of the Split-Complex Algebra*, below this article in this category, which owns its Gram matrix, its signature, its positivity cone and its modules; here it is used only as the form that defines the adjoints. Its realified scalar part is
+It is conjugate-symmetric, $\langle C,A\rangle_{*} = \overline{\langle A,C\rangle_{*}}$, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second. It is the canonical form of *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category, which owns its Gram matrix, its signature, its positivity cone and its modules; here it is used only as the form that defines the adjoints. Its realified scalar part is
 
 $$
-\operatorname{Sc} H(A,C) = ac - a'c' ,
+\operatorname{Sc} \langle A,C\rangle_{*} = ac - a'c' ,
 $$
 
 the symmetric bilinear form $g$ that the norm polarises, of signature $(1,1)$.
 
-**Definition (adjoint).** For a $\mathbb{D}$-linear map $T$ the **adjoint** is the $\mathbb{D}$-linear map $T^{*}$ with $H(TX,C) = H(X,T^{*}C)$ for all $X,C$; for a $\bar\cdot$-semilinear map $T$ the adjoint is the $\bar\cdot$-semilinear map $T^{*}$ with $H(TX,C) = \overline{H(X,T^{*}C)}$.
+**Definition (adjoint).** For a $\mathbb{D}$-linear map $T$ the **adjoint** is the $\mathbb{D}$-linear map $T^{*}$ with $\langle TX,C\rangle_{*} = \langle X,T^{*}C\rangle_{*}$ for all $X,C$; for a $\bar\cdot$-semilinear map $T$ the adjoint is the $\bar\cdot$-semilinear map $T^{*}$ with $\langle TX,C\rangle_{*} = \overline{\langle X,T^{*}C\rangle_{*}}$.
 
 **Theorem.** The adjoints of the one-sided multiplications and of the sandwich are
 
@@ -232,9 +232,9 @@ $$
 In particular the ordinary multiplication by a real element is self-adjoint, $M_t^{*} = M_t$ for $t \in \mathbb{R}$; the left multiplication is self-adjoint; and the sandwich is adjoint to the sandwich with the parameters exchanged.
 
 **Proof.** Compute each defining identity.
-- $H(M_B X, C) = (BX)\bar C = BX\bar C$ and $H(X, M_{\bar B} C) = X\overline{\bar B C} = X B\bar C$, equal by commutativity.
-- $H(R_C X, D) = (X\bar C)\bar D = X\bar C\bar D$ and $H(X, M_C D) = X\overline{CD} = X\bar C\bar D$, equal.
-- $H(L_A X, C) = (A\bar X)\bar C = A\bar X\bar C$ and $\overline{H(X, L_A C)} = \overline{X\overline{A\bar C}} = \bar X A\bar C$, equal, so $L_A$ is self-adjoint.
+- $\langle M_B X, C\rangle_{*} = (BX)\bar C = BX\bar C$ and $\langle X, M_{\bar B} C\rangle_{*} = X\overline{\bar B C} = X B\bar C$, equal by commutativity.
+- $\langle R_C X, D\rangle_{*} = (X\bar C)\bar D = X\bar C\bar D$ and $\langle X, M_C D\rangle_{*} = X\overline{CD} = X\bar C\bar D$, equal.
+- $\langle L_A X, C\rangle_{*} = (A\bar X)\bar C = A\bar X\bar C$ and $\overline{\langle X, L_A C\rangle_{*}} = \overline{X\overline{A\bar C}} = \bar X A\bar C$, equal, so $L_A$ is self-adjoint.
 - Since $S_{B,C} = M_B \circ R_C$, its adjoint is $S_{B,C}^{*} = R_C^{*} \circ M_B^{*} = M_C \circ M_{\bar B} = M_{C\bar B}$; and $S_{C,B}(X) = CX\bar B = C\bar B X = M_{C\bar B}(X)$, so the two agree.
 
 **Examples.** Take $B = 1$ and $C = j$: the sandwich is $S_{1,j}(X) = X\bar j = -Xj$, and its adjoint is $S_{j,1}(X) = jX$, as the theorem requires. Take $B = C = \Pi_1$: the sandwich is
@@ -320,7 +320,7 @@ On $\mathbb{D}$ the base involution of the coefficient ring is trivial and the r
 
 The split-complex space carries the sesquilinear product $A \star C = A\bar C$, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second; it is the derived operation of the algebra with its conjugation, and it is neither associative nor two-sidedly unital. The element $1$ is a right unit and not a left one, and there is no two-sided unit. The associator is $[A,C,D] = A\bar C(\bar D-D)$, nonzero exactly when the third factor is not real, with the witness $[j,j,j] = 2j$; the ternary product $\{A,C,D\} = A\bar C D$ restores the Jordan triple identity and makes $\mathbb{D}$ an algebraic $J^{*}$-algebra.
 
-The right multiplications satisfy $R_A \circ R_C = R_{CA}$ and form the opposite monoid of $(\mathbb{D},\cdot)$; the left multiplications satisfy $L_A \circ L_C = M_{A\bar C}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $S_{B,C}(X) = BX\bar C$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $S_{B,C} \circ S_{D,E} = S_{BD,CE}$. With respect to the Hermitian form $H(A,C) = A\bar C$, the adjoints are $M_B^{*} = M_{\bar B}$, $R_C^{*} = M_C$, $L_A^{*} = L_A$ and $S_{B,C}^{*} = S_{C,B}$; the two projections onto the idempotent lines are mutually adjoint.
+The right multiplications satisfy $R_A \circ R_C = R_{CA}$ and form the opposite monoid of $(\mathbb{D},\cdot)$; the left multiplications satisfy $L_A \circ L_C = M_{A\bar C}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $S_{B,C}(X) = BX\bar C$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $S_{B,C} \circ S_{D,E} = S_{BD,CE}$. With respect to the Hermitian form $\langle A,C\rangle_{*} = A\bar C$, the adjoints are $M_B^{*} = M_{\bar B}$, $R_C^{*} = M_C$, $L_A^{*} = L_A$ and $S_{B,C}^{*} = S_{C,B}$; the two projections onto the idempotent lines are mutually adjoint.
 
 The commutator is $A\bar C - C\bar A = 2(a'c-ac')j$, an element of the split imaginary line, and its halves are the scalar form $g(A,C) = ac-a'c'$ and the element $(a'c-ac')j$. The bracket is the two-dimensional non-abelian Lie algebra and its Jacobi identity holds, automatically in two dimensions; the obstruction of the binary product is its associator, and the ternary product removes it. Against the complex case the formulas of the associator, unit and ternary product coincide, while the form is definite there and indefinite here and the commutator lies on the rotation axis there and on the hyperbolic line here.
 
@@ -337,7 +337,7 @@ The commutator is $A\bar C - C\bar A = 2(a'c-ac')j$, an element of the split ima
 | $[A,C,D] = (A\star C)\star D - A\star(C\star D) = A\bar C(\bar D-D)$ | Associator |
 | $\{A,C,D\} = A\bar C D$ | Ternary product, an algebraic $J^{*}$-algebra |
 | $S_{B,C}(X) = BX\bar C = M_B R_C$ | Sesquilinear sandwich |
-| $H(A,C) = A\bar C$ | Hermitian form, used for the adjoints |
+| $\langle A,C\rangle_{*} = A\bar C$ | Hermitian form, used for the adjoints |
 | $M_B^{*} = M_{\bar B}$, $R_C^{*} = M_C$, $L_A^{*} = L_A$, $S_{B,C}^{*} = S_{C,B}$ | Adjoints |
 | $[A,C] = A\bar C - C\bar A = 2(a'c-ac')j$ | Commutator, on the split imaginary line |
 | $g(A,C) = \tfrac12(A\bar C + C\bar A) = ac-a'c'$ | Symmetrisation, the scalar form polarised by the norm |

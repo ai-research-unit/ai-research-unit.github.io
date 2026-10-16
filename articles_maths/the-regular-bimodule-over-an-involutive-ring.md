@@ -78,17 +78,17 @@ is a Hermitian $\sigma$-sesquilinear form with values in $A$, and it is non-dege
 
 ### The associated quadratic form
 
-**Definition.** The **associated quadratic form** of $h$ is $q(x) = h(x,x) = x\sigma(x)$.
+**Definition.** The **associated quadratic form** of $h$ is $\mathfrak{Q}(x) = h(x,x) = x\sigma(x)$.
 
-**Proposition.** $q$ satisfies $q(ax) = a\,q(x)\,\sigma(a)$, and $q$ determines the Hermitian form by the polarisation identity
+**Proposition.** $q$ satisfies $\mathfrak{Q}(ax) = a\,\mathfrak{Q}(x)\,\sigma(a)$, and $q$ determines the Hermitian form by the polarisation identity
 
 $$
-h(x,y) + \sigma\bigl(h(y,x)\bigr) = q(x+y) - q(x) - q(y)
+h(x,y) + \sigma\bigl(h(y,x)\bigr) = \mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)
 $$
 
 whenever $2$ is invertible in $A$; for $A = M_n(F)$ over a field of characteristic not two this is the usual passage between the quadratic and the Hermitian form.
 
-**Proof.** $q(ax) = ax\sigma(ax) = ax\sigma(x)\sigma(a) = aq(x)\sigma(a)$. For the polarisation, expand $q(x+y)$ and use $h(y,x) = \sigma(h(x,y))$, so that $h(x,y)+\sigma(h(y,x)) = 2h(x,y)$; the displayed identity is the expansion. The last statement is the matrix computation with $\sigma$ the transpose or the conjugate transpose.
+**Proof.** $\mathfrak{Q}(ax) = ax\sigma(ax) = ax\sigma(x)\sigma(a) = aq(x)\sigma(a)$. For the polarisation, expand $\mathfrak{Q}(x+y)$ and use $h(y,x) = \sigma(h(x,y))$, so that $h(x,y)+\sigma(h(y,x)) = 2h(x,y)$; the displayed identity is the expansion. The last statement is the matrix computation with $\sigma$ the transpose or the conjugate transpose.
 
 ### The unitary elements are the isometries
 
@@ -120,7 +120,7 @@ The biquaternion algebra $\mathbb{B}$ carries four natural involutions, the comp
 
 ## Summary
 
-For a ring $A$ with an involution $\sigma$ the regular object acquires three structures. The twist of the left regular module is the right regular module up to the comparison $\sigma : ({}_AA)^{\sigma} \to A_A$, which is an isomorphism of right modules; the involution is a bimodule isomorphism of ${}_AA_A$ onto its $\sigma$-swap, $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$, and conversely every bimodule isomorphism of the regular bimodule onto its $\sigma$-swap is $x \mapsto d\sigma(x)$ with $d$ a central unit, the involution itself being the normalised case $d = 1$; over a noncommutative ring the involution must be carried in the target, the plain swap being its commutative case. The regular module carries the canonical Hermitian $\sigma$-sesquilinear form $h(x,y) = x\sigma(y)$ with values in $A$, non-degenerate, with associated quadratic form $q(x) = x\sigma(x)$ and polarisation identity when $2$ is invertible. Its $A$-linear isometries are the right multiplications $R_u$ by the unitary elements $u\sigma(u) = 1$, forming the unitary group $U(A)$, while a left multiplication $L_u$ is an isometry only for a central unitary $u$. The matrix algebra with the conjugate transpose, the group algebra with $g^{*} = g^{-1}$ and the commutative ring with the identity involution are the three worked cases, and the positivity of the form is deferred to Part II.
+For a ring $A$ with an involution $\sigma$ the regular object acquires three structures. The twist of the left regular module is the right regular module up to the comparison $\sigma : ({}_AA)^{\sigma} \to A_A$, which is an isomorphism of right modules; the involution is a bimodule isomorphism of ${}_AA_A$ onto its $\sigma$-swap, $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$, and conversely every bimodule isomorphism of the regular bimodule onto its $\sigma$-swap is $x \mapsto d\sigma(x)$ with $d$ a central unit, the involution itself being the normalised case $d = 1$; over a noncommutative ring the involution must be carried in the target, the plain swap being its commutative case. The regular module carries the canonical Hermitian $\sigma$-sesquilinear form $h(x,y) = x\sigma(y)$ with values in $A$, non-degenerate, with associated quadratic form $\mathfrak{Q}(x) = x\sigma(x)$ and polarisation identity when $2$ is invertible. Its $A$-linear isometries are the right multiplications $R_u$ by the unitary elements $u\sigma(u) = 1$, forming the unitary group $U(A)$, while a left multiplication $L_u$ is an isometry only for a central unitary $u$. The matrix algebra with the conjugate transpose, the group algebra with $g^{*} = g^{-1}$ and the commutative ring with the identity involution are the three worked cases, and the positivity of the form is deferred to Part II.
 
 ## Summary of Notation
 
@@ -136,7 +136,7 @@ For a ring $A$ with an involution $\sigma$ the regular object acquires three str
 | $h(x,y) = x\sigma(y)$ | the canonical Hermitian form on ${}_AA$ |
 | $h(ax,y) = ah(x,y)$, $h(x,ay) = h(x,y)\sigma(a)$ | $\sigma$-sesquilinearity |
 | $h(y,x) = \sigma(h(x,y))$ | Hermitianity |
-| $q(x) = x\sigma(x)$, $q(ax) = aq(x)\sigma(a)$ | the associated quadratic form |
+| $\mathfrak{Q}(x) = x\sigma(x)$, $\mathfrak{Q}(ax) = aq(x)\sigma(a)$ | the associated quadratic form |
 | $U(A) = \{u : u\sigma(u) = 1\}$ | the unitary group |
 | $R_u$ with $u \in U(A)$ | the $A$-linear isometries of $h$ |
 | $L_u$ is an isometry $\iff u$ central unitary | the one-sided distinction |

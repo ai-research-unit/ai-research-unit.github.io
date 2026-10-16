@@ -77,11 +77,10 @@ Two independent copies have an overlap that factorizes:
 
 $$
 \bigl\langle \psi\otimes\psi \,\big|\, \phi\otimes\phi \bigr\rangle
-= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle
-= \langle\psi|\phi\rangle^2 .
+= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle^2 .
 $$
 
-Equating the two evaluations gives $\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **trace pairing of the idempotents**, which is the modulus squared of the inner product,
+Equating the two evaluations gives $\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **trace pairing of the idempotents**, which is the modulus squared of the inner product,
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
@@ -115,7 +114,7 @@ The trace pairing is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = \tfrac12$, s
 
 ### Cloning versus copying
 
-For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\hat u),\tilde\Pi_2(\hat u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
+For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
 
 ## The Obstruction is Linearity
 
@@ -167,7 +166,7 @@ $$
 The two images are orthonormal, so $\tilde{U}$ extends to a unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
 
 $$
-|\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + e^{i\varphi}\sin\tfrac{\theta}{2}\,|1\rangle ,
+|\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$
 
 gives $\langle\psi|\tilde{\rho}_{\text{out},1}|\psi\rangle = 5/6$ for every $\theta$ and $\varphi$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.
@@ -220,7 +219,7 @@ In the framework's terms, all three are the statement that the trace pairing can
 
 ## Open Questions
 
-**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $N(\tilde{A}\tilde{B}) = N(\tilde{A})N(\tilde{B})$, play the role that the squared inner product plays in the unitary argument?
+**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{A}\tilde{B}\rangle_{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{B}\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
 
 **2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 
@@ -267,7 +266,7 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
 | $|\psi(\theta,\varphi)\rangle$ | Test superposition family |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 

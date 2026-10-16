@@ -29,7 +29,7 @@ Equivalently, since $\operatorname{Hom}_R(M,-)$ is left exact, $\operatorname{Ex
 
 **Theorem (balance).** The two computations agree: if $P_\bullet\to M$ is a projective resolution and $N\to I^\bullet$ an injective resolution, then $H^n(\operatorname{Hom}_R(P_\bullet,N))\cong H^n(\operatorname{Hom}_R(M,I^\bullet))$ naturally in $M$ and $N$.
 
-*Proof (in outline).* The double complex with entries $\operatorname{Hom}_R(P_p,I^q)$ has two differentials, one induced by $P_\bullet$ and one by $I^\bullet$, and they anticommute. The two spectral sequences of the double complex have $E_2^{p,q}=0$ for $q\neq0$ in one case and for $p\neq0$ in the other, because $P_p$ is projective and $I^q$ injective; both sequences therefore collapse, and their common abutment computes both sides. The degenerate case of the argument can also be run directly by the comparison theorem, comparing two resolutions of $M$.
+*Proof (in outline).* The double complex with entries $\operatorname{Hom}_R(P_p,I^q)$ has two differentials, one induced by $P_\bullet$ and one by $I^\bullet$, and they anticommute. The two spectral sequences of the double complex have $E_2^{n,m}=0$ for $q\neq0$ in one case and for $p\neq0$ in the other, because $P_p$ is projective and $I^q$ injective; both sequences therefore collapse, and their common abutment computes both sides. The degenerate case of the argument can also be run directly by the comparison theorem, comparing two resolutions of $M$.
 
 The proof is the first place the spectral-sequence machinery is needed; it is carried out, and the balance statement is quoted here.
 

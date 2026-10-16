@@ -71,7 +71,7 @@ which is a group under multiplication, since $N(uv) = N(u)N(v) = 1$ and $N(u^{-1
 
 **Uniqueness.** Suppose $A = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(A) = r'^2$, so $r = r'$ because both are positive, and then $u = A/r = u'$.
 
-The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.
+The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r \exp(i\theta)$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.
 
 ## The Exponential Form
 
@@ -111,16 +111,16 @@ $$
 the trigonometric row, and the polar representation reads
 
 $$
-A = r\,e^{i\theta}, \qquad r = \sqrt{N(A)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
+A = r\,\exp(i\theta), \qquad r = \sqrt{N(A)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
 $$
 
 which is the classical form. The reconstruction is exact:
 
 $$
-A = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r e^{i\theta} - A = O(10^{-16}).
+A = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r \exp(i\theta) - A = O(10^{-16}).
 $$
 
-The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto e^{i\theta}$ is a group homomorphism $\mathbb{R} \to U(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.
+The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto \exp(i\theta)$ is a group homomorphism $\mathbb{R} \to U(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.
 
 ## What the Two Factors Are
 
@@ -139,7 +139,7 @@ The verification is immediate in the basis: $i$ is anti-Hermitian, $\bar{i} = -i
 
 The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{C}$ the scale is the Hermitian slot, and the second occupied slot is the anti-Hermitian one, which carries the unit factor. The remaining two slots are absent, for the following reasons.
 
-**No boost.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $e^{\pm\phi}$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.
+**No boost.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $\exp(\pm\phi)$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.
 
 **The central phase is the rotation.** In $\mathbb{C}$ the algebra is commutative, so *every* element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.
 
@@ -198,8 +198,8 @@ with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_
 | factor | matrix | determinant | isometry type |
 |---|---|---|---|
 | $r$ | $rI$, $r > 0$ | $r^2$ | similarity of ratio $r$ |
-| $e^{i\theta}$ | rotation by $\theta$ | $1$ | orientation-preserving isometry |
-| $A = re^{i\theta}$ | conformal matrix | $r^2$ | similarity: rotation and scaling |
+| $\exp(i\theta)$ | rotation by $\theta$ | $1$ | orientation-preserving isometry |
+| $A = r\exp(i\theta)$ | conformal matrix | $r^2$ | similarity: rotation and scaling |
 
 Every nonzero complex number is a similarity of the plane, oriented and with ratio $r$, and the polar representation is the unique splitting of that similarity into its scaling and its rotation parts. This is the precise sense in which the complex polar representation is the two-dimensional case of the matrix polar decomposition, and it is the matrix reading of the table of positions and signatures of the previous section.
 
@@ -224,14 +224,14 @@ The reconstruction $u = \cos\theta + i\sin\theta$ gives $0.6000000000000001 + 0.
 | $5i$ | $25$ | $5$ | $i$ | $\pi/2$ |
 | $1+i$ | $2$ | $\sqrt{2}$ | $(1+i)/\sqrt{2}$ | $\pi/4$ |
 
-The first two lines are the real numbers, positive and negative: their unit factor is $\pm1$ and their angle is $0$ or $\pi$ on the chosen branch. The third line is a purely imaginary number of modulus five, at the angle $\pi/2$ exactly. The fourth line is the principal diagonal, at the angle $\pi/4$ exactly, and its square is $i$, which is the check $u^2 = e^{i2\theta}$ of the doubling of the angle.
+The first two lines are the real numbers, positive and negative: their unit factor is $\pm1$ and their angle is $0$ or $\pi$ on the chosen branch. The third line is a purely imaginary number of modulus five, at the angle $\pi/2$ exactly. The fourth line is the principal diagonal, at the angle $\pi/4$ exactly, and its square is $i$, which is the check $u^2 = \exp(i2\theta)$ of the doubling of the angle.
 
 ### The Kernel of the Exponential
 
 The unit factor is a point of the circle and the angle is not. Two angles differing by $2\pi$ give the same unit factor:
 
 $$
-e^{i\cdot 0} = 1, \qquad e^{i\cdot 2\pi} = 1 - 2.4\times10^{-16}i,
+\exp(i\cdot 0) = 1, \qquad \exp(i\cdot 2\pi) = 1 - 2.4\times10^{-16}i,
 $$
 
 so the reconstruction from an angle is stable to machine precision and the angle of a given unit factor is a class modulo $2\pi$. The polar representation of a fixed $A$ is unique; a *coordinate system* for the unit factor is not, and every table of angles of the corpus must be read with that quantifier understood.
@@ -240,8 +240,8 @@ so the reconstruction from an angle is stable to machine precision and the angle
 
 | algebra | norm | modulus | unit factor | occupied slots | unit group |
 |---|---|---|---|---|---|
-| $\mathbb{C}$ | $a^2+a'^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | compact, $\mathbb{R}/2\pi\mathbb{Z}$ |
-| $\mathbb{D}$ | $a^2-a'^2$, indefinite | $\sqrt{|N|}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
+| $\mathbb{C}$ | $a^2+a'^2$, definite | $\sqrt{N}$, positive real | $\exp(i\theta)$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | compact, $\mathbb{R}/2\pi\mathbb{Z}$ |
+| $\mathbb{D}$ | $a^2-a'^2$, indefinite | $\sqrt{|N|}$, positive real | $\exp(\phi j)$ or $j\exp(\phi j)$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
 | $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $Sp(1)$ rotor | scale, rotor | compact |
 | $\mathbb{H}_{\mathrm{s}}$ | indefinite, signature $(2,2)$ | $\sqrt{|N|}$ with two regimes | two-component unit group | scale, rotor, boost | non-compact |
 

@@ -16,7 +16,7 @@ The Clifford action and the module form are *Hermitian Modules over a Hermitian 
 **Definition.** Let $S$ be a right/left Clifford module with action $\rho$ and $S'$ one with action $\rho'$. An **intertwiner** (a **Clifford-linear map**) is an $A$-linear map $T : S\to S'$ with
 
 $$
-T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,q).
+T\,\rho(x) = \rho'(x)\,T \qquad \text{for all } x\in\mathrm{Cl}(V,\mathfrak{Q}).
 $$
 
 The intertwiners are the morphisms of the category of Clifford modules; the identity is an intertwiner and a composite of intertwiners is an intertwiner, so the modules and intertwiners form an $A$-linear category.
@@ -39,11 +39,11 @@ so $T^{*}$ intertwines the adjoint action of $\rho'$ with the adjoint action of 
 
 **Theorem (Schur).** If $S$ is irreducible then the commutant $\mathrm{End}_{\mathrm{Cl}}(S)$ is a division algebra; over an algebraically closed field it is the scalars, and over $\mathbb{R}$ it is $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$. Every invariant operator on an irreducible module is invertible or zero, so the group of invertible invariant operators is the group of units of the division algebra. The proof and the full statement are those of *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*.
 
-**Theorem (the commutant of the regular module is the opposite algebra).** On the regular module $S = \mathrm{Cl}(V,q)$ the invariant operators are exactly the **right multiplications** $R_b$, $b\in\mathrm{Cl}(V,q)$, and the map $b\mapsto R_b$ is an algebra anti-isomorphism of $\mathrm{Cl}(V,q)$ onto the commutant; hence the commutant has dimension $2^n$, equal to $\dim\mathrm{Cl}(V,q)$. This was checked for $\mathrm{Cl}_{2,0}(\mathbb{C})$, $\mathrm{Cl}_{0,3}(\mathbb{R})$ and $\mathrm{Cl}_{1,3}(\mathbb{R})$: the centraliser of the left regular representation has dimension $\dim\mathrm{Cl}$ in each case.
+**Theorem (the commutant of the regular module is the opposite algebra).** On the regular module $S = \mathrm{Cl}(V,\mathfrak{Q})$ the invariant operators are exactly the **right multiplications** $R_b$, $b\in\mathrm{Cl}(V,\mathfrak{Q})$, and the map $b\mapsto R_b$ is an algebra anti-isomorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ onto the commutant; hence the commutant has dimension $2^n$, equal to $\dim\mathrm{Cl}(V,\mathfrak{Q})$. This was checked for $\mathrm{Cl}_{2,0}(\mathbb{C})$, $\mathrm{Cl}_{0,3}(\mathbb{R})$ and $\mathrm{Cl}_{1,3}(\mathbb{R})$: the centraliser of the left regular representation has dimension $\dim\mathrm{Cl}$ in each case.
 
 **Proof.** The left regular representation is the action of $\mathrm{Cl}$ on itself by left multiplication, and an operator commuting with it is the right multiplication by $b = T(1)$, since $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$; the map is additive and reverses the order, $R_bR_c = R_{cb}$, and it is injective and of the same dimension as the algebra, hence onto the commutant. The computation of the centraliser confirms the dimension.
 
-**Corollary (the bicommutant).** The operators invariant under all right multiplications are the left multiplications, so the bicommutant of the action is the whole Clifford algebra acting on the regular module: $\mathrm{End}_{\mathrm{Cl}}(S)' = \rho(\mathrm{Cl}(V,q))$. The regular module is **balanced**, and the double centraliser theorem holds in the Clifford setting; on an irreducible module the same computation gives the double commutant as the full endomorphism algebra when the base field is algebraically closed.
+**Corollary (the bicommutant).** The operators invariant under all right multiplications are the left multiplications, so the bicommutant of the action is the whole Clifford algebra acting on the regular module: $\mathrm{End}_{\mathrm{Cl}}(S)' = \rho(\mathrm{Cl}(V,\mathfrak{Q}))$. The regular module is **balanced**, and the double centraliser theorem holds in the Clifford setting; on an irreducible module the same computation gives the double commutant as the full endomorphism algebra when the base field is algebraically closed.
 
 ## The Hermitian Structure on the Commutant
 

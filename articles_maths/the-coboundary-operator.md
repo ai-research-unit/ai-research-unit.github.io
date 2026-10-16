@@ -104,7 +104,7 @@ the right derived functors of global sections applied to the complex, computed b
 **Proposition (the two spectral sequences).** The filtration of the total complex of a bounded below complex by the first and by the second degree gives the two spectral sequences
 
 $$
-{}^{\mathrm{I}}E_1^{p,q}=H^q\bigl(X,\mathcal{F}^p\bigr)\Longrightarrow\mathbb{H}^{p+q}(X,\mathcal{F}^\bullet),\qquad {}^{\mathrm{II}}E_2^{p,q}=H^p\bigl(X,\mathcal{H}^q(\mathcal{F}^\bullet)\bigr)\Longrightarrow\mathbb{H}^{p+q}(X,\mathcal{F}^\bullet),
+{}^{\mathrm{I}}E_1^{n,m}=H^m\bigl(X,\mathcal{F}^n\bigr)\Longrightarrow\mathbb{H}^{n+m}(X,\mathcal{F}^\bullet),\qquad {}^{\mathrm{II}}E_2^{n,m}=H^n\bigl(X,\mathcal{H}^m(\mathcal{F}^\bullet)\bigr)\Longrightarrow\mathbb{H}^{n+m}(X,\mathcal{F}^\bullet),
 $$
 
 whose construction is *Spectral Sequences* and *Derived Functors and Sheaf Cohomology*; they are recorded here because they express the coboundary of a complex of sheaves in terms of the cohomology of its cohomology sheaves, and they are not used further in this article.
@@ -125,7 +125,7 @@ $$
 
 with connecting morphisms $\delta$ natural in the sequence; applying global sections gives the same long exact sequence for the cohomology $H^i(\Gamma(X,-))$ of the complexes.
 
-*Proof.* The proof is the snake lemma applied degreewise to the diagram of the two adjacent coboundaries; the connecting map sends the class of a cocycle $h\in\ker d_{\mathcal{H}}^i$ to the class of $d_{\mathcal{G}}^i(\tilde h)$ for a lift $\tilde h$ of $h$, which is a cocycle in $\mathcal{F}^{i+1}$ because $d^2=0$, and which is well defined modulo coboundaries by exactness of the rows. This is the general homological algebra of *Homological Algebra*, applied to the complexes of sheaves; the instance for the sheaf cohomology of a short exact sequence of a single sheaf is the long exact sequence of *Sheaf Cohomology*.
+*Proof.* The proof is the snake lemma applied degreewise to the diagram of the two adjacent coboundaries; the connecting map sends the class of a cocycle $h\in\ker d_{\mathcal{H}}^i$ to the class of $d_{\mathcal{G}}^i(h^{\mathrm{lift}})$ for a lift $h^{\mathrm{lift}}$ of $h$, which is a cocycle in $\mathcal{F}^{i+1}$ because $d^2=0$, and which is well defined modulo coboundaries by exactness of the rows. This is the general homological algebra of *Homological Algebra*, applied to the complexes of sheaves; the instance for the sheaf cohomology of a short exact sequence of a single sheaf is the long exact sequence of *Sheaf Cohomology*.
 
 **Remark (the coboundary and the connecting map are different operators).** The coboundary $d$ is the differential of the complex and raises the internal degree of the grading; the connecting map $\delta$ is defined only in the presence of a short exact sequence of complexes and shifts the cohomological degree. Both are written with symbols suggesting a boundary, and in the classical complexes of topology the connecting map of the sequence of a pair is the transpose of the coboundary of the quotient complex; the article keeps the two apart, $d$ for the differential and $\delta$ for the connecting map.
 

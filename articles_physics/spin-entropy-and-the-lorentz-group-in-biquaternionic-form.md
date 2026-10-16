@@ -11,9 +11,9 @@ $$
 S(\tilde{\rho}) = h\!\left(\frac{1+|\vec r|}{2}\right),
 \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p).
 $$
-The radius is fixed by the algebra's biquaternion norm, $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)$, so the spin entropy is a function of $N(\tilde{\rho})$ alone and is therefore an **algebraic invariant**: it is the same function of the biquaternion norm for every state, and it can be written
+The radius is fixed by the algebra's biquaternion norm, $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$, so the spin entropy is a function of $\langle\tilde{\rho}\rangle_{\natural}$ alone and is therefore an **algebraic invariant**: it is the same function of the biquaternion norm for every state, and it can be written
 $$
-S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right).
+S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right).
 $$
 This is the article's central structural statement, and the Lorentz group is read through it.
 
@@ -21,14 +21,14 @@ Three further results follow, and they are the content of the article. First, th
 
 The findings are stated in advance.
 
-1. **The entropy is a function of the biquaternion norm alone.** For a state, $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)$ and $S = h((1+\sqrt{1-4N})/2)$; it vanishes on the pure states ($N = 0$) and equals one bit on the maximally mixed state ($N = \tfrac14$).
-2. **The compact subgroup leaves it invariant.** Conjugation by any unitary element preserves $N$ and hence $S$; since $SU(2)$ acts transitively on the spheres of the Bloch ball, the entropy is constant on every $SU(2)$ orbit and is a complete invariant of that orbit.
-3. **The physical Lorentz action leaves it invariant at sharp momentum.** The Wigner rotation is unitary, so $N(\tilde{W}\tilde{\rho}\tilde{W}^{*}) = N(\tilde{\rho})$ and the spin entropy is frame-independent for a momentum eigenstate.
-4. **The non-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\psi\,\hat u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\psi)/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
+1. **The entropy is a function of the biquaternion norm alone.** For a state, $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$ and $S = h((1+\sqrt{1-4N})/2)$; it vanishes on the pure states ($N = 0$) and equals one bit on the maximally mixed state ($N = \tfrac14$).
+2. **The compact subgroup leaves it invariant.** Conjugation by any unitary element preserves $\langle\cdot\rangle_{\natural}$ and hence $S$; since $SU(2)$ acts transitively on the spheres of the Bloch ball, the entropy is constant on every $SU(2)$ orbit and is a complete invariant of that orbit.
+3. **The physical Lorentz action leaves it invariant at sharp momentum.** The Wigner rotation is unitary, so $\langle\tilde{W}\tilde{\rho}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural}$ and the spin entropy is frame-independent for a momentum eigenstate.
+4. **The non-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\psi)/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The state is $\tilde{\rho} = \tfrac12(e_0+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$; the Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The state is $\tilde{\rho} = \tfrac12(e_0+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$; the Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the state space, the Bloch ball, and the little group.
@@ -61,13 +61,13 @@ in bits.
 
 The biquaternion norm evaluates on a state to
 $$
-N(\tilde{\rho}) = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr)e_0 ,
+\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr)e_0 ,
 $$
-because the scalar and vector parts contribute $\tfrac14$ and $\tfrac14\sum_k(ir_k)^2 = -\tfrac14|\vec r|^2$ respectively. Hence $|\vec r| = \sqrt{1-4N(\tilde{\rho})}$ and
+because the scalar and vector parts contribute $\tfrac14$ and $\tfrac14\sum_k(ir_k)^2 = -\tfrac14|\vec r|^2$ respectively. Hence $|\vec r| = \sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}$ and
 $$
-\boxed{\,S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right)\,}
+\boxed{\,S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right)\,}
 $$
-The entropy is a function of the single algebraic invariant $N(\tilde{\rho})$, which ranges over $[0,\tfrac14]$ for states. This is the sense in which the spin entropy is intrinsic to the algebra rather than to a chosen representation: it is computed from the biquaternion norm and the binary entropy, with no reference to a basis, a Hamiltonian, or a frame.
+The entropy is a function of the single algebraic invariant $\langle\tilde{\rho}\rangle_{\natural}$, which ranges over $[0,\tfrac14]$ for states. This is the sense in which the spin entropy is intrinsic to the algebra rather than to a chosen representation: it is computed from the biquaternion norm and the binary entropy, with no reference to a basis, a Hamiltonian, or a frame.
 
 ### The Born weights and the entropy
 
@@ -92,11 +92,11 @@ The entropy is therefore the information content of the framework's own probabil
 
 Let $\tilde{U}\in SU(2)$ be a unitary element and let $\tilde{\rho}$ be a state. The biquaternion norm is multiplicative,
 $$
-N(\tilde{Q}_1\tilde{Q}_2) = N(\tilde{Q}_1)N(\tilde{Q}_2),
+\langle\tilde{Q}_1\tilde{Q}_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde{Q}_2\rangle_{\natural},
 $$
-and $N(\tilde{U}) = N(\tilde{U}^{*}) = 1$, so
+and $\langle\tilde{U}\rangle_{\natural} = \langle\tilde{U}^{*}\rangle_{\natural} = 1$, so
 $$
-N(\tilde{U}\tilde{\rho}\tilde{U}^{*}) = N(\tilde{\rho}) ,
+\langle\tilde{U}\tilde{\rho}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural} ,
 \qquad\text{hence}\qquad
 S(\tilde{U}\tilde{\rho}\tilde{U}^{*}) = S(\tilde{\rho}) .
 $$
@@ -116,7 +116,7 @@ $$
 $$
 Since $\tilde{W}$ is unitary, the previous computation applies verbatim,
 $$
-N(\tilde{W}\tilde{\rho}\tilde{W}^{*}) = N(\tilde{\rho}), \qquad
+\langle\tilde{W}\tilde{\rho}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural}, \qquad
 S(\tilde{W}\tilde{\rho}\tilde{W}^{*}) = S(\tilde{\rho}) ,
 $$
 and the spin entropy of a momentum eigenstate is a **Lorentz invariant**. This is the entropy form of the sharp-momentum theorem of the relativistic-qubit article, and it is exact: a frame change rotates the spin and leaves its entropy alone, because a rotation moves a state along its $SU(2)$ orbit and the entropy is constant on the orbit.
@@ -127,14 +127,14 @@ The congruence of the algebra,
 $$
 \tilde{\rho}\ \longmapsto\ \tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*} ,
 $$
-preserves the **unnormalized** biquaternion norm, again by multiplicativity and $N(\tilde{\Lambda}) = 1$,
+preserves the **unnormalized** biquaternion norm, again by multiplicativity and $\langle\tilde{\Lambda}\rangle_{\natural} = 1$,
 $$
-N(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}) = N(\tilde{\rho}) ,
+\langle\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural} ,
 $$
 but it does not preserve the trace: $\mathrm{Tr}(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}) = \mathrm{Tr}(\tilde{\rho}\tilde{\Lambda}^{*}\tilde{\Lambda}) = 2\,\mathrm{Sc}(\tilde{\rho}\tilde{\Lambda}^{*}\tilde{\Lambda}) \neq 1$. The physical state is the normalized element, and its biquaternion norm acquires a factor,
 $$
 N\!\left(\frac{\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}}{\mathrm{Tr}(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*})}\right)
-= \frac{N(\tilde{\rho})}{\mathrm{Tr}(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*})^2} .
+= \frac{\langle\tilde{\rho}\rangle_{\natural}}{\mathrm{Tr}(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*})^2} .
 $$
 For the maximally mixed state the trace is $\cosh\psi$, and the normalized element has
 $$
@@ -143,7 +143,7 @@ N = \frac{1/4}{\cosh^2\psi}, \qquad
 $$
 so the congruence carries the maximally mixed state to the Bloch vector
 $$
-\vec r = \tanh\psi\,\hat u_{\mathrm b} ,
+\vec r = \tanh\psi\,\vec u_{\mathrm b} ,
 $$
 a state *closer to the pure boundary*, with entropy $h((1+\tanh\psi)/2)$ decreasing as the rapidity grows:
 
@@ -157,7 +157,7 @@ A genuine quantum channel is linear and trace-preserving and cannot rescale the 
 
 When the momentum is uncertain, the boost acts branch by branch on the spin and the physical spin state is the output of the mixed-unitary channel
 $$
-\tilde{\rho}\ \longmapsto\ \sum_i q_i\,\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}, \qquad \tilde{W}_i = \tilde{W}(\tilde{\Lambda},\tilde{U}_i) .
+\tilde{\rho}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}, \qquad \tilde{W}_i = \tilde{W}(\tilde{\Lambda},\tilde{U}_i) .
 $$
 The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is unitary — so the maximally mixed state is invariant and the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
 
@@ -174,20 +174,20 @@ which for $v = 0.5c$ is $h((1+0.866025)/2) = h(0.933013) = 0.354578$. Only in th
 
 ### The general dephasing formula
 
-For an arbitrary initial Bloch vector and a dephasing about the Wigner axis $\hat u_{\mathrm r}$ with damping factor $\cos\alpha$, the channel acts on the Bloch vector by
+For an arbitrary initial Bloch vector and a dephasing about the Wigner axis $\vec u_{\mathrm r}$ with damping factor $\cos\alpha$, the channel acts on the Bloch vector by
 $$
-\vec r\ \longmapsto\ \vec r' = (\vec r\cdot\hat u_{\mathrm r})\,\hat u_{\mathrm r}
-+ \cos\alpha\bigl(\vec r - (\vec r\cdot\hat u_{\mathrm r})\hat u_{\mathrm r}\bigr),
+\vec r\ \longmapsto\ \vec r' = (\vec r\cdot\vec u_{\mathrm r})\,\vec u_{\mathrm r}
++ \cos\alpha\bigl(\vec r - (\vec r\cdot\vec u_{\mathrm r})\vec u_{\mathrm r}\bigr),
 $$
 that is, it leaves the component along the axis untouched and shrinks the transverse component by $\cos\alpha$. Hence
 $$
-|\vec r'|^2 = (\vec r\cdot\hat u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\hat u_{\mathrm r})^2\bigr),
+|\vec r'|^2 = (\vec r\cdot\vec u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\vec u_{\mathrm r})^2\bigr),
 \qquad
 S' = h\!\left(\frac{1+|\vec r'|}{2}\right),
 $$
-and the entropy is unchanged only for $\vec r\parallel\hat u_{\mathrm r}$ or $\alpha = 0$. Some values for the Wigner angle of a rapidity-$1$ boost at transverse momentum, $\alpha = 14.11732^\circ$ and $\cos\alpha = 0.969798$, are
+and the entropy is unchanged only for $\vec r\parallel\vec u_{\mathrm r}$ or $\alpha = 0$. Some values for the Wigner angle of a rapidity-$1$ boost at transverse momentum, $\alpha = 14.11732^\circ$ and $\cos\alpha = 0.969798$, are
 
-| $|\vec r|$ | $\angle(\vec r,\hat u_{\mathrm r})$ | $|\vec r'|$ | $S'$ |
+| $|\vec r|$ | $\angle(\vec r,\vec u_{\mathrm r})$ | $|\vec r'|$ | $S'$ |
 |---:|---:|---:|---:|
 | $1$ | $45^\circ$ | $0.985015$ | $0.063669$ |
 | $1$ | $90^\circ$ | $0.969798$ | $0.112969$ |
@@ -231,10 +231,10 @@ The two cases can be stated together. The little group is a subgroup of the unit
 
 The single most compact statement of the article is that the spin entropy is a function of the algebra's biquaternion norm. For a state,
 $$
-N(\tilde{\rho}) = \tfrac14\bigl(1-|\vec r|^2\bigr), \qquad
-S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right),
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr), \qquad
+S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right),
 $$
-so the entropy is not an independent quantity attached to the state from outside; it is the binary entropy of the algebraic invariant $N$, read on the trace-one slice. The Lorentz group is a group of norm-preserving congruences on the algebra, and its action on the entropy is therefore controlled entirely by what it does to the trace and to the biquaternion norm:
+so the entropy is not an independent quantity attached to the state from outside; it is the binary entropy of the algebraic invariant $\langle\cdot\rangle_{\natural}$, read on the trace-one slice. The Lorentz group is a group of norm-preserving congruences on the algebra, and its action on the entropy is therefore controlled entirely by what it does to the trace and to the biquaternion norm:
 
 - the unitary subgroup preserves the trace as well, so the entropy is invariant;
 - the unit-norm, non-unitary elements preserve the biquaternion norm but not the trace, so the entropy of the *normalized* element changes, and the direction of the change — purity increase — shows that the congruence is not a state transformation;
@@ -246,14 +246,14 @@ This is the whole content of the Lorentz group's action on spin entropy, and it 
 
 The spin state of the qubit is $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$, and its von Neumann entropy is
 $$
-S(\tilde{\rho}) = h\!\left(\frac{1+|\vec r|}{2}\right) = h\!\left(\frac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right),
+S(\tilde{\rho}) = h\!\left(\frac{1+|\vec r|}{2}\right) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right),
 \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
 a function of the algebra's biquaternion norm alone. It vanishes on the pure states, where $N = 0$, and equals one bit on the maximally mixed state, where $N = \tfrac14$.
 
-The entropy is invariant under the compact subgroup, because $N(\tilde{U}\tilde{\rho}\tilde{U}^{*}) = N(\tilde{\rho})$ for every unitary $\tilde{U}$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the unitary Wigner rotation $\tilde{\rho}\mapsto\tilde{W}\tilde{\rho}\tilde{W}^{*}$, and it is not invariant under the non-unitary congruence $\tilde{\rho}\mapsto\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\psi\,\hat u_{\mathrm b}$ with entropy $h((1+\tanh\psi)/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
+The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\tilde{\rho}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural}$ for every unitary $\tilde{U}$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the unitary Wigner rotation $\tilde{\rho}\mapsto\tilde{W}\tilde{\rho}\tilde{W}^{*}$, and it is not invariant under the non-unitary congruence $\tilde{\rho}\mapsto\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ with entropy $h((1+\tanh\psi)/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
 
-At uncertain momentum the boost acts by the unital mixed-unitary channel $\tilde{\rho}\mapsto\sum_iq_i\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
+At uncertain momentum the boost acts by the unital mixed-unitary channel $\tilde{\rho}\mapsto\sum_iw_i\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
 
 For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s)$, and the entropy is a function on the representation space, constant on the little-group orbits: the pair $(m,s)$ names the representation and the entropy names the orbit within it. For a massless particle the little group is $E(2)$, the internal space of a helicity eigenstate is one-dimensional, and the spin entropy is identically zero. The entropy is a relativistic quantity because the massive little group is non-abelian, and it is frame-independent exactly when the momentum is sharp.
 
@@ -262,8 +262,8 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 | Symbol | Meaning |
 |---|---|
 | $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ | Spin state, Bloch vector $\vec r$, $|\vec r|\leq1$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, multiplicative |
-| $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)$ | Biquaternion norm of a state |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, multiplicative |
+| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$ | Biquaternion norm of a state |
 | $h(p) = -p\log_2p-(1-p)\log_2(1-p)$ | Binary entropy |
 | $S(\tilde{\rho}) = h((1+|\vec r|)/2)$ | Spin entropy, in bits |
 | $S = h((1+\sqrt{1-4N})/2)$ | Entropy as a function of the biquaternion norm |
@@ -271,8 +271,8 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 | $\tilde{W}(\tilde{\Lambda},\tilde{U})\in SU(2)$ | Wigner rotation |
 | $\tilde{\rho}\mapsto\tilde{W}\tilde{\rho}\tilde{W}^{*}$ | Physical spin action, entropy-preserving |
 | $\tilde{\rho}\mapsto\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$ | Congruence, trace-changing, not a state map |
-| $\vec r = \tanh\psi\,\hat u_{\mathrm b}$ | Image of the maximally mixed state under the congruence |
-| $\sum_iq_i\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}$ | Channel at uncertain momentum, unital |
+| $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ | Image of the maximally mixed state under the congruence |
+| $\sum_iw_i\tilde{W}_i\tilde{\rho}\tilde{W}_i^{*}$ | Channel at uncertain momentum, unital |
 | $\alpha$ | Wigner angle |
 | $h((1+\cos\alpha)/2)$ | Dephased transverse-spin entropy |
 | $(m,s)$, $P^2$, $-W^2$ | Poincaré Casimir labels |

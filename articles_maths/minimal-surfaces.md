@@ -97,7 +97,7 @@ $$
 u(x_1,x_2) = \frac{1}{a}\log\frac{\cos(ax_1)}{\cos(ax_2)}, \qquad |a|\,|x_1|,\ |a|\,|x_2| < \frac\pi2,
 $$
 
-satisfies the minimal surface equation, as does the surface $e^{x_3} = \cos x_1/\cos x_2$ in $\mathbb{R}^3$. Scherk's first and second surfaces are the classical translation-invariant examples and show that a minimal surface can have a boundary at finite height.
+satisfies the minimal surface equation, as does the surface $\exp(x_3) = \cos x_1/\cos x_2$ in $\mathbb{R}^3$. Scherk's first and second surfaces are the classical translation-invariant examples and show that a minimal surface can have a boundary at finite height.
 
 **Example (Enneper's surface).** The parametrisation
 

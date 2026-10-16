@@ -94,7 +94,7 @@ $$
 
 For an invertible idempotent this is equivalent to $\det(M)M^{\dagger}=M^{2}$, and for an idempotent of norm one to $M^{\dagger}=M^{2}$. The matrix of an idempotent is therefore not a projection in general, nor is the matrix of a projection an idempotent: $\operatorname{diag}(1,\omega)$ satisfies $M^{2}=M^{\dagger}$ but not the idempotent equation, so the adjugate is essential.
 
-**Theorem (the family of idempotents as a unitary orbit).** The nontrivial idempotents of the multiplication are exactly the elements whose matrices are the unitary conjugates of the diagonal matrix $\operatorname{diag}(\omega,\omega^{2})$, where $\omega=e^{2\pi i/3}$:
+**Theorem (the family of idempotents as a unitary orbit).** The nontrivial idempotents of the multiplication are exactly the elements whose matrices are the unitary conjugates of the diagonal matrix $\operatorname{diag}(\omega,\omega^{2})$, where $\omega=\exp(2\pi i/3)$:
 
 $$
 \tilde{\Pi}\longleftrightarrow M=U\operatorname{diag}(\omega,\omega^{2})U^{\dagger},\qquad U\in U(2).
@@ -102,7 +102,7 @@ $$
 
 *Proof.* A norm-one idempotent satisfies $M^{\dagger}=M^{2}$; applying the dagger gives $(M^{\dagger})^{2}=M$, and substituting yields $M^{4}=M$, so $M^{3}=I$ for the invertible $M$. Then $MM^{\dagger}=MM^{2}=M^{3}=I$ and $M^{\dagger}M=I$, so $M$ is unitary of determinant one, and a unitary matrix with $M^{3}=I$ and $\det M=1$ has spectrum $\{1,1\}$ or $\{\omega,\omega^{2}\}$; the first case is $M=I$, the identity $\tilde{\Pi}=e_0$, and the second, by the spectral theorem, is the displayed unitary conjugacy class. Conversely each matrix of the class satisfies $M^{\dagger}=M^{2}$, $M^{3}=I$ and $\det M=1$, hence $\operatorname{adj}(M)M^{\dagger}=\det(M)M^{-1}M^{2}=M$. The trace of $\operatorname{diag}(\omega,\omega^{2})$ is $\omega+\omega^{2}=-1$, so $Q_0=-\tfrac12$; $\operatorname{adj}(M^{\dagger})=\operatorname{adj}(M^{2})=\operatorname{adj}(M)^{2}=M^{-2}=M$ gives $\mathsf{M}_2(\overline{\tilde{\Pi}})=\mathsf{M}_2(\tilde{\Pi})$, so the three vector coordinates are real; and unitarity gives $\sum_\mu|Q_\mu|^{2}=1$, so $|Q_1|^{2}+|Q_2|^{2}+|Q_3|^{2}=\tfrac34$. The class is connected of real dimension two, the family of the idempotents.
 
-**Corollary (the order-three matrices).** The matrix of a nontrivial idempotent satisfies $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$ and $\det M=1$; consequently $\operatorname{Tr}M=-1$ and the characteristic polynomial is $\lambda^{2}+\lambda+1$. The nontrivial idempotents are therefore units, and they are disjoint from the zero divisors: in the model they are unitary matrices of order three, while the zero divisors are the singular matrices, $N(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})=0$. This is the sharpest contrast with the sibling general plain sesquilinear product, where the nontrivial idempotents are the rank-one Hermitian projections and are singular.
+**Corollary (the order-three matrices).** The matrix of a nontrivial idempotent satisfies $M^{3}=I$, $M^{\dagger}=M^{2}=M^{-1}$ and $\det M=1$; consequently $\operatorname{Tr}M=-1$ and the characteristic polynomial is $\lambda^{2}+\lambda+1$. The nontrivial idempotents are therefore units, and they are disjoint from the zero divisors: in the model they are unitary matrices of order three, while the zero divisors are the singular matrices, $\langle\tilde{Q}\rangle_{\natural}=\det \mathsf{M}_2(\tilde{Q})=0$. This is the sharpest contrast with the sibling general plain sesquilinear product, where the nontrivial idempotents are the rank-one Hermitian projections and are singular.
 
 ## The Associator and the Operators in Matrices
 
@@ -154,7 +154,7 @@ the Krein invariant of the element; it is positive on the centre, negative on th
 
 ## Worked Examples
 
-**An isotropic element that is not a zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^2-|i|^2=0$, so the element is isotropic for the Krein form, while $N(\tilde{Q})=1+i^2=0$ as well: the element is a zero divisor of the general quaternionic bilinear form. By contrast the element $\tilde{Q}=e_0+e_1$ has $N(\tilde{Q})=2$ and is still Krein-isotropic, so the two notions are independent.
+**An isotropic element that is not a zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^2-|i|^2=0$, so the element is isotropic for the Krein form, while $\langle\tilde{Q}\rangle_{\natural}=1+i^2=0$ as well: the element is a zero divisor of the general quaternionic bilinear form. By contrast the element $\tilde{Q}=e_0+e_1$ has $\langle\tilde{Q}\rangle_{\natural}=2$ and is still Krein-isotropic, so the two notions are independent.
 
 **A positive and a negative element.** Let $\tilde{P}=2e_0+e_1$ and $\tilde{Q}=e_0+2e_1$. Then $\langle\tilde{P},\tilde{P}\rangle_{\natural*}=4-1=3>0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-4=-3<0$, so the form is indefinite and the two types occur on the axis elements alone.
 
@@ -171,7 +171,7 @@ $$
 \mathsf{M}_2(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-The general element has trace $2Q_0$ and determinant $N(\tilde Q)=\sum_\mu Q_\mu^2$.
+The general element has trace $2Q_0$ and determinant $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$.
 
 **The two conjugations, entry by entry.** On a vector unit the adjugate and the conjugate transpose agree, because the unit is traceless and anti-Hermitian,
 
@@ -242,6 +242,6 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form on the algebra
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the fundamental symmetry $J={}^{\natural}$
+- *The Fundamental Symmetry of the Biquaternioid Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for the fundamental symmetry $J={}^{\natural}$
 - *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
-- *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the restriction theory of the form
+- *Remarkable Subspaces under the General Quaternionic Sesqualgebra* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the restriction theory of the form

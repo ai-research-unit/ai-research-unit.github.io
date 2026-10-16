@@ -162,7 +162,7 @@ $$
 
 so the deviation $\chi=\psi-\psi^{c}$ satisfies the same form of equation as the field itself, and the subspace $\chi=0$ is preserved by the evolution. A field that is self-conjugate at one time stays self-conjugate; the constraint is consistent with the massive equation, not merely imposed on it. This is the point requested of every displayed identity: the consistency is checked by applying the real structure and using the anticommutation of $\mathcal{C}$ with the generators, and it does not hold for a generic conjugate-linear map — it uses the verified identity $K\gamma^{\mu*}K^{-1}=-\gamma^\mu$.
 
-**A massive solution exists.** Nothing in the consistency argument forces $m=0$. The mode functions make that explicit. With $p^\mu=(E,\vec p)$, $E=\sqrt{\vec p^2+m^2}$ and $\not{p}=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$, a positive-frequency Dirac spinor $u(p)$ solves $(\not{p}-m)u=0$, and its charge conjugate $v(p)=u^{c}(p)$ solves $(\not{p}+m)v=0$. The two are both nonzero for $m>0$, and $\bar{u}u$ is nonzero for $m>0$ (the normalisation is the one of the companion quantisation article). The mass-shell condition is $p^2=m^2$, unchanged from the Dirac case. So the Majorana restriction does not trivialise the spectrum: a massive plane wave exists for every $m>0$. What the restriction removes is not the mass but half the degrees of freedom.
+**A massive solution exists.** Nothing in the consistency argument forces $m=0$. The mode functions make that explicit. With $p^\mu=(E,\vec p)$, $E=\sqrt{\vec p^2+m^2}$ and $\not{p}=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$, a positive-frequency Dirac spinor $w(p)$ solves $(\not{p}-m)w=0$, and its charge conjugate $v(p)=w^{c}(p)$ solves $(\not{p}+m)v=0$. The two are both nonzero for $m>0$, and $\bar{w}w$ is nonzero for $m>0$ (the normalisation is the one of the companion quantisation article). The mass-shell condition is $p^2=m^2$, unchanged from the Dirac case. So the Majorana restriction does not trivialise the spectrum: a massive plane wave exists for every $m>0$. What the restriction removes is not the mass but half the degrees of freedom.
 
 **Which bilinears survive, and which vanish.** The physical statements are about the field, whose components anticommute. Writing the four components of the field as Grassmann variables and using $\psi=(\psi_L,-\epsilon\psi_L^{*})^{T}$ together with the Majorana condition, one finds the following, each computed exactly in the block basis.
 
@@ -282,7 +282,7 @@ The reason the neutrino appears in this article at all is that it is the fermion
 
 The Majorana spinor is treated in this article as the carrier of a fermion. It also has a modern **geometric** use, external to the framework, in which a pair of Majorana spinors models a surface in three-dimensional Minkowski space; the use is worth recording because it shows the pair — not a single Weyl spinor — in a role where its real structure is what makes the geometry work.
 
-The setting is the spinfoam boundary of three-dimensional Lorentzian quantum gravity. A boundary triangle is labelled by a holonomy whose group depends on causal character: $SU(2)$ when the triangle and its tetrahedron are space-like, and $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$, and the oscillator's dynamical group — in the two time-like cases. The external paper cited below models the three homogeneous spaces of these groups on spinors of the defining module with the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$:
+The setting is the spinfoam boundary of three-dimensional Lorentzian quantum gravity. A boundary triangle is labelled by a holonomy whose group depends on causal character: $SU(2)$ when the triangle and its tetrahedron are space-like, and $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ — the double cover of $SO(1,2)$, and the oscillator's dynamical group — in the two time-like cases. The external paper cited below models the three homogeneous spaces of these groups on spinors of the defining module with the indefinite pairing $[w|v]=w^{\dagger}\sigma_3v$:
 
 - the sphere $S^2$, from one Weyl spinor, $v^i=\langle z|\sigma^i|z\rangle$;
 - the two-sheeted time-like hyperboloid $H^\pm$, from one Weyl spinor with the indefinite pairing, $v^i=\tfrac12\langle z|\sigma_3\varsigma^i|z\rangle$;
@@ -347,7 +347,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
-| $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing (external geometric usage) |
+| $[w|v]=w^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing (external geometric usage) |
 | $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$ | Majorana-pair bilinear modelling the one-sheeted hyperboloid $H^{sl}$ |
 
 ## Further Reading

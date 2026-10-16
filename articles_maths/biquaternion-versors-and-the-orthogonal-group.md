@@ -6,9 +6,9 @@ The biquaternion algebra is the even part of the Clifford algebra of Minkowski s
 
 This article works the biquaternion case of the Clifford group. It fixes the two slots of the envelope and identifies the odd slot as a copy of the algebra containing the Minkowski space; it reads the grading of the versors by the parity of their length, which is the reflection count; it tabulates the four components of $O(1,3)$ against the operations that reach them; it identifies the volume element with the central scalar imaginary up to sign and shows that it acts on Minkowski space as minus the identity through the inner automorphism while acting as the identity through the sandwich; and it separates the two involutions in play, the Hermitian dagger of the algebra and the Clifford conjugation of the envelope, which agree on the real-quaternion slice and nowhere else.
 
-The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The versor, the rotor and the sandwich action in general are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the volume element and the Clifford dictionary are *Biquaternion Other Algebraic Element Representations*. The sandwich, its kernel, its failure to be an automorphism and the contrast with the inner automorphism are *Biquaternion Rotations and Lorentz Transformations*, which owns the sandwich. The isometries read on the algebra itself, the rotor $\tilde{U}$ and the double covers, are the same article; the reflections of that article are the reflections of the vector subspace $\mathrm{Vect}(\mathbb{B})$, a three-dimensional subspace of the algebra, and the reflections of this article are the Lorentz transformations of Minkowski space, which are different maps on a different carrier. The group of units read against its matrix images is *Biquaternion Objects and Their Matrix Correspondences*.
+The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, the reflection $\rho_\xi(\eta)=-\xi\eta\xi^{-1}$ and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The versor, the rotor and the sandwich action in general are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the volume element and the Clifford dictionary are *Biquaternion Other Algebraic Element Representations*. The sandwich, its kernel, its failure to be an automorphism and the contrast with the inner automorphism are *Biquaternion Rotations and Lorentz Transformations*, which owns the sandwich. The isometries read on the algebra itself, the rotor $\tilde{U}$ and the double covers, are the same article; the reflections of that article are the reflections of the vector subspace $\mathrm{Vect}(\mathbb{B})$, a three-dimensional subspace of the algebra, and the reflections of this article are the Lorentz transformations of Minkowski space, which are different maps on a different carrier. The group of units read against its matrix images is *Biquaternion Objects and Their Matrix Correspondences*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The norm and its polar form are $N(\tilde{Q})=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$ and $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The matrix realisation is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$. A Clifford algebra is written $\mathrm{Cl}_{p,q}$ when $p$ generators square to $+1$ and $q$ to $-1$, in the convention $v^2=q(v)\cdot1$; the real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The products are $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$. The norm and its polar form are $\langle \tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=\tilde{Q}\tilde{Q}^{\natural}$ and $B(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The matrix realisation is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$. A Clifford algebra is written $\mathrm{Cl}_{n,m}$ when $n$ generators square to $+1$ and $m$ to $-1$, in the convention $\eta^2=q(\eta)\cdot1$; the real-quaternion slice $\mathbb{H}_{\mathbb{B}}$ is the set of elements with four real coefficients.
 
 ## The Form and its Isometries
 
@@ -16,7 +16,7 @@ The general theory is cited and not restated. The Clifford group, its norm, the 
 $$
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
 $$
-of real dimension four. On it the biquaternion norm restricts to a quadratic form of signature $(1,3)$: for $\tilde{Q}=te_0+i\vec u$ with $t\in\mathbb{R}$ and $\vec u\in\mathbb{R}^3$ one has $N(\tilde{Q})=t^2-\lvert\vec u\rvert^2$. The anti-Hermitian sector is the mirror,
+of real dimension four. On it the biquaternion norm restricts to a quadratic form of signature $(1,3)$: for $\tilde{Q}=te_0+i\vec u$ with $t\in\mathbb{R}$ and $\vec u\in\mathbb{R}^3$ one has $\langle \tilde{Q}\rangle_{\natural}=t^2-\lvert\vec u\rvert^2$. The anti-Hermitian sector is the mirror,
 $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},
 $$
@@ -30,13 +30,13 @@ and the norm restricts to it with signature $(3,1)$.
 
 **Theorem (the envelope is two copies of the algebra).** Let $V$ be a real four-dimensional space with a form of signature $(1,3)$, let $\mathrm{Cl}(V)$ be its Clifford algebra, of real dimension $16$, and let $\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ be its even and odd parts. Then
 $$
-\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}u,
+\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\xi,
 $$
-for every non-isotropic $u\in V$, and the odd slot $\mathbb{B}u$ is a second copy of the algebra, of real dimension eight, containing the space $V$ itself.
+for every non-isotropic $\xi\in V$, and the odd slot $\mathbb{B}\xi$ is a second copy of the algebra, of real dimension eight, containing the space $V$ itself.
 
-**Proof.** The even part of the Clifford algebra of a four-dimensional space is eight-dimensional, and the identification $\mathrm{Cl}^{+}\cong\mathbb{B}$ is the Clifford structure of the algebra. For the splitting, fix $u\in V$ with $q(u)\neq0$. The element $u$ is odd, so $\mathbb{B}u\subseteq\mathrm{Cl}^{-}$; the map $U\mapsto Uu$ is injective, so $\mathbb{B}u$ is eight-dimensional, and $\mathrm{Cl}^{-}$ is eight-dimensional as well, so $\mathbb{B}u=\mathrm{Cl}^{-}$. The inverse of the map is $Y\mapsto Yu^{-1}$, with $u^{-1}=u/q(u)$. The subspace $V$ is contained in the odd part, and $\mathbb{B}u$ is the odd part, so $V\subseteq\mathbb{B}u$.
+**Proof.** The even part of the Clifford algebra of a four-dimensional space is eight-dimensional, and the identification $\mathrm{Cl}^{+}\cong\mathbb{B}$ is the Clifford structure of the algebra. For the splitting, fix $\xi\in V$ with $q(\xi)\neq0$. The element $\xi$ is odd, so $\mathbb{B}\xi\subseteq\mathrm{Cl}^{-}$; the map $Q\mapsto Q\xi$ is injective, so $\mathbb{B}\xi$ is eight-dimensional, and $\mathrm{Cl}^{-}$ is eight-dimensional as well, so $\mathbb{B}\xi=\mathrm{Cl}^{-}$. The inverse of the map is $Q\mapsto Q\xi^{-1}$, with $\xi^{-1}=\xi/q(\xi)$. The subspace $V$ is contained in the odd part, and $\mathbb{B}\xi$ is the odd part, so $V\subseteq\mathbb{B}\xi$.
 
-**Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the generators as the Dirac matrices of the mostly-minus metric: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}u$ has real dimension $8$ for a unit $u$, the four generators lie in $\mathbb{B}u$, and the two together span the $16$-dimensional envelope.
+**Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the generators as the Dirac matrices of the mostly-minus metric: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}\xi$ has real dimension $8$ for a unit $\xi$, the four generators lie in $\mathbb{B}\xi$, and the two together span the $16$-dimensional envelope.
 
 **Remark (the Minkowski space is odd, and its copy is inside the algebra).** The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Minkowski vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{M}_+$, which carries the form of signature $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{M}_+$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.
 
@@ -44,19 +44,19 @@ for every non-isotropic $u\in V$, and the odd slot $\mathbb{B}u$ is a second cop
 
 ## The Grading of the Versors
 
-**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $U=v_1\cdots v_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $U$ with $\mathrm{Ad}^{\alpha}_{U}(V)\subseteq V$, and the **Clifford norm** is $N_{\mathrm{Cl}}(U)=UU^{\natural}$, the natural sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
+**Definition (cited from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*).** A **versor** is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The **Clifford group** $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the **Clifford norm** is $N_{\mathrm{Cl}}(\tilde U)=\tilde U\tilde U^{\natural}$, the natural sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
 $$
-\mathrm{Pin}=\{U\in\Gamma : N_{\mathrm{Cl}}(U)=\pm1\},\qquad
+\mathrm{Pin}=\{\tilde U\in\Gamma : N_{\mathrm{Cl}}(\tilde U)=\pm1\},\qquad
 \mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+},
 $$
-and the **signed inner conjugation** is $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$, with $\alpha$ the grade involution. On vectors the reflection in the hyperplane orthogonal to a non-isotropic $u$ is
+and the **signed inner conjugation** is $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, with $\alpha$ the grade involution. On vectors the reflection in the hyperplane orthogonal to a non-isotropic $\xi$ is
 $$
-\rho_u(v)=-uvu^{-1}=v-2B(u,v)q(u)^{-1}u .
+\rho_\xi(\eta)=-\xi\eta\xi^{-1}=\eta-2B(\xi,\eta)q(\xi)^{-1}\xi .
 $$
 
 **Theorem (the reflection count is the parity of the length).** A product of an odd number of vectors acts by the signed inner conjugation as an isometry of determinant $-1$; a product of an even number acts as an isometry of determinant $+1$. On the odd slot of the envelope both behaviours occur, and on the algebra, which is the even slot, only the second does.
 
-**Proof.** The reflection $\rho_u$ has determinant $-1$ on a four-dimensional space, and a product of $k$ reflections has determinant $(-1)^k$; Cartan–Dieudonné writes every isometry as such a product, and the signed inner conjugation of the versor $v_1\cdots v_k$ is the composite $\rho_{v_1}\circ\cdots\circ\rho_{v_k}$. The products of even length lie in the even slot, which is the algebra; the products of odd length lie in the odd slot, which is $\mathbb{B}u$ by the theorem above and is not contained in the algebra.
+**Proof.** The reflection $\rho_\xi$ has determinant $-1$ on a four-dimensional space, and a product of $k$ reflections has determinant $(-1)^k$; Cartan–Dieudonné writes every isometry as such a product, and the signed inner conjugation of the versor $\eta_1\cdots\eta_k$ is the composite $\rho_{\eta_1}\circ\cdots\circ\rho_{\eta_k}$. The products of even length lie in the even slot, which is the algebra; the products of odd length lie in the odd slot, which is $\mathbb{B}\xi$ by the theorem above and is not contained in the algebra.
 
 **Remark (verified).** The signed inner conjugation was computed on the matrix model for versors of length one, two, three and four: the odd lengths gave isometries of determinant $-1$ and involutions at length one, and the even lengths gave isometries of determinant $+1$, with both time orientations occurring among them. The sandwich of a unit of the algebra, in contrast, gave determinant $+1$ in every one of the tested cases, and no element of the algebra produced a negative value in four hundred random units; the two facts are one fact, the sandwich being even in both its factors.
 
@@ -67,28 +67,28 @@ $$
 $$
 The only part of the Pin group that is an object of the biquaternion algebra is the spin group, which is its even part.
 
-**Remark (which reflections).** The reflections of this article are the Lorentz reflections, that is the maps $\rho_u$ of the Minkowski space. The reflections of *Biquaternion Rotations and Lorentz Transformations* are the maps $\rho_v(U)=-vUv^{-1}$ for $N(v)=1$ acting on the three-dimensional subspace $\mathrm{Vect}(\mathbb{B})$ of the algebra, where orthogonality and anticommutation coincide; those maps are realised by elements of the algebra, whereas the Lorentz reflections are not, which is the distinction that article records in the sentence that the Lorentz reflections live in the Clifford layer.
+**Remark (which reflections).** The reflections of this article are the Lorentz reflections, that is the maps $\rho_\xi$ of the Minkowski space. The reflections of *Biquaternion Rotations and Lorentz Transformations* are the maps $\rho_\eta(\tilde U)=-\eta\tilde U\eta^{-1}$ for $\langle \eta\rangle_{\natural}=1$ acting on the three-dimensional subspace $\mathrm{Vect}(\mathbb{B})$ of the algebra, where orthogonality and anticommutation coincide; those maps are realised by elements of the algebra, whereas the Lorentz reflections are not, which is the distinction that article records in the sentence that the Lorentz reflections live in the Clifford layer.
 
 ## What the Algebra Reaches on the Hermitian Sector
 
-**Theorem (the sandwich of a unit is proper orthochronous).** Let $\tilde{Q}\in\mathbb{B}$ with $\lvert N(\tilde{Q})\rvert=1$, and let
+**Theorem (the sandwich of a unit is proper orthochronous).** Let $\tilde{Q}\in\mathbb{B}$ with $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$, and let
 $$
-\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{*}
+\mathrm{H}_{\tilde{Q}}(\tilde{Q}')=\tilde{Q}\tilde{Q}'\tilde{Q}^{*}
 $$
 be the dagger sandwich of *Biquaternion Rotations and Lorentz Transformations*. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to $\mathbb{M}_+$ is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a sandwich of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_0\}$.
 
-**Proof.** Under $\mathsf{M}_2$ the sandwich is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert N(\tilde{Q})\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the sandwich because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of *Biquaternion Rotations and Lorentz Transformations*.
+**Proof.** Under $\mathsf{M}_2$ the sandwich is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the sandwich because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of *Biquaternion Rotations and Lorentz Transformations*.
 
-**Remark (the isometry condition is exactly the unit norm).** The sandwich multiplies the norm by $\lvert N(\tilde{Q})\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(N(\tilde{Q}))^{\natural}$ and the norm is multiplicative; so $\lvert N(\tilde{Q})\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $N=1$, which parametrises the same operators because $N(i\tilde{Q})=-N(\tilde{Q})$ and the operator is blind to the scalar imaginary.
+**Remark (the isometry condition is exactly the unit norm).** The sandwich multiplies the norm by $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(\langle \tilde{Q}\rangle_{\natural})^{\natural}$ and the norm is multiplicative; so $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $N=1$, which parametrises the same operators because $\langle i\tilde{Q}\rangle_{\natural}=-\langle \tilde{Q}\rangle_{\natural}$ and the operator is blind to the scalar imaginary.
 
 **Theorem (the four components, and the two discrete operations).** On $\mathbb{M}_+$ the following operations are isometries, and they fall in the four components of $O(1,3)$:
 
 | operation on $\mathbb{M}_+$ | determinant | time orientation | component |
 |---|---|---|---|
-| $U\mapsto \tilde{Q}U\tilde{Q}^{*}$, with $\lvert N(\tilde{Q})\rvert=1$ | $+1$ | $+$ | the identity component $SO^{+}(1,3)$ |
-| $U\mapsto \tilde{Q}U^{\natural}\tilde{Q}^{*}$, the argument quaternion-conjugated | $-1$ | $+$ | the improper orthochronous coset |
-| $U\mapsto -\tilde{Q}U\tilde{Q}^{*}$, the result negated | $+1$ | $-$ | the proper anti-orthochronous coset |
-| $U\mapsto -\tilde{Q}U^{\natural}\tilde{Q}^{*}$, both at once | $-1$ | $-$ | the improper anti-orthochronous coset |
+| $\tilde U\mapsto \tilde{Q}\tilde U\tilde{Q}^{*}$, with $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ | $+1$ | $+$ | the identity component $SO^{+}(1,3)$ |
+| $\tilde U\mapsto \tilde{Q}\tilde U^{\natural}\tilde{Q}^{*}$, the argument quaternion-conjugated | $-1$ | $+$ | the improper orthochronous coset |
+| $\tilde U\mapsto -\tilde{Q}\tilde U\tilde{Q}^{*}$, the result negated | $+1$ | $-$ | the proper anti-orthochronous coset |
+| $\tilde U\mapsto -\tilde{Q}\tilde U^{\natural}\tilde{Q}^{*}$, both at once | $-1$ | $-$ | the improper anti-orthochronous coset |
 
 The two operations beyond the sandwich are quaternion conjugation of the argument and the negation; they are the discrete parity and the product of parity with time reversal, and with the sandwich they generate the whole of $O(1,3)$.
 
@@ -108,13 +108,13 @@ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, and $\Omega$ c
 
 **Theorem (the volume element is minus the identity on Minkowski space).** On the odd slot the signed inner conjugation of the volume element negates every vector,
 $$
-\mathrm{Ad}^{\alpha}_{\Omega}(v)=\Omega v\Omega^{-1}=-v ,
+\mathrm{Ad}^{\alpha}_{\Omega}(\eta)=\Omega \eta\Omega^{-1}=-\eta ,
 $$
 so that $\Omega$ acts on the Minkowski space as $-\mathrm{id}$, the product of parity with time reversal, of determinant $+1$ and anti-orthochronous. On the Hermitian copy of the same space the sandwich of the corresponding element, the central scalar imaginary, is the identity, since $i$ is central and $i^{\dagger}=-i$.
 
-**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega v\Omega^{-1}=-\Omega\Omega^{-1}v=-v$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(U)=iUi^{\dagger}=iU(-i)=-i^2U=U$.
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every vector: moving $\gamma^{j}$ past the monomial $\Omega$, in which it occurs, costs the sign $(-1)^{3}$, so $\gamma^{j}\Omega=-\Omega\gamma^{j}$, and the same for every generator. Hence $\Omega \eta\Omega^{-1}=-\Omega\Omega^{-1}\eta=-\eta$. For the second statement, $i$ commutes with everything, so $\mathrm{H}_{i}(\tilde U)=iUi^{\dagger}=iU(-i)=-i^2\tilde U=\tilde U$.
 
-**Remark (verified).** Both statements were recomputed on the matrix model: the signed inner conjugation of $\Omega$ gave $-v$ on all four generators, and the sandwich of $\mathsf{M}_2(\pm i)=\pm iI$ gave the identity on the Hermitian sector.
+**Remark (verified).** Both statements were recomputed on the matrix model: the signed inner conjugation of $\Omega$ gave $-\eta$ on all four generators, and the sandwich of $\mathsf{M}_2(\pm i)=\pm iI$ gave the identity on the Hermitian sector.
 
 **Remark (what this says about the determinant-one components).** The volume element is an element of the algebra, and it is even, so the anti-orthochronous part of $SO(1,3)$ is reached by an element of the algebra after all; but it is reached by the inner automorphism and not by the sandwich, and the sandwich of the same element is the identity. The algebra's elements therefore supply more of the orthogonal group than the algebra's sandwich does, and the difference is exactly the replacement of the dagger by the inverse.
 
@@ -131,12 +131,12 @@ $$
 
 **Corollary (they agree on the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the sandwich is the inner automorphism scaled by the norm,
 $$
-\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
-\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{-1},
+\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
+\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}')=\tilde{Q}\tilde{Q}'\tilde{Q}^{-1},
 $$
 and off the slice the two differ.
 
-**Proof.** The inverse is $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/N(\tilde{Q})$, so $N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{\natural}$, which is the sandwich for every $\tilde{Q}$ with $\tilde{Q}^{\natural}=\tilde{Q}^{*}$, that is on the real-quaternion slice and only there.
+**Proof.** The inverse is $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle \tilde{Q}\rangle_{\natural}$, so $\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}(\tilde U)=\tilde{Q}\tilde U\tilde{Q}^{\natural}$, which is the sandwich for every $\tilde{Q}$ with $\tilde{Q}^{\natural}=\tilde{Q}^{*}$, that is on the real-quaternion slice and only there.
 
 **Remark (the shear is the coefficient conjugation).** The sandwich and the inner automorphism agree on the real-quaternion slice and differ everywhere else, the difference being the coefficient conjugation of the right factor; the sandwich is the inner automorphism read through the Hermitian dagger rather than through the algebra inverse.
 
@@ -154,7 +154,7 @@ and off the slice the two differ.
 
 ## Summary
 
-The biquaternion algebra is the even part of the Clifford algebra of Minkowski space, and the envelope is two copies of it, $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}u$, the odd copy containing the space on which the orthogonal group acts. The parity of the length of a versor is its reflection count, so the odd versors are the reflections and lie outside the algebra, and the only part of $\mathrm{Pin}(1,3)$ that is an object of the algebra is $\mathrm{Spin}(1,3)=\mathbb{B}^{\times}_1$. The dagger sandwich of a unit of norm one is an isometry of the Hermitian sector of determinant $+1$ and orthochronous, and with quaternion conjugation of the argument and the negation it generates the whole orthogonal group: the four operations give the four components, of determinants $\pm1$ and of the two time orientations. The volume element, which is the central scalar imaginary up to sign, anticommutes with every vector, so it acts on Minkowski space as $-\mathrm{id}$, the product of parity and time reversal, through the inner automorphism, while its sandwich is the identity because the scalar imaginary is central and Hermitian-conjugates to its negative. The dagger of the algebra is the reversion of the Euclidean Clifford structure and not the Clifford conjugation of the Minkowski one; the two differ by the automorphism that conjugates the coefficients, they agree exactly on the real-quaternion slice, and there the sandwich is the inner automorphism scaled by the norm.
+The biquaternion algebra is the even part of the Clifford algebra of Minkowski space, and the envelope is two copies of it, $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\xi$, the odd copy containing the space on which the orthogonal group acts. The parity of the length of a versor is its reflection count, so the odd versors are the reflections and lie outside the algebra, and the only part of $\mathrm{Pin}(1,3)$ that is an object of the algebra is $\mathrm{Spin}(1,3)=\mathbb{B}^{\times}_1$. The dagger sandwich of a unit of norm one is an isometry of the Hermitian sector of determinant $+1$ and orthochronous, and with quaternion conjugation of the argument and the negation it generates the whole orthogonal group: the four operations give the four components, of determinants $\pm1$ and of the two time orientations. The volume element, which is the central scalar imaginary up to sign, anticommutes with every vector, so it acts on Minkowski space as $-\mathrm{id}$, the product of parity and time reversal, through the inner automorphism, while its sandwich is the identity because the scalar imaginary is central and Hermitian-conjugates to its negative. The dagger of the algebra is the reversion of the Euclidean Clifford structure and not the Clifford conjugation of the Minkowski one; the two differ by the automorphism that conjugates the coefficients, they agree exactly on the real-quaternion slice, and there the sandwich is the inner automorphism scaled by the norm.
 
 ## Summary of Notation
 
@@ -162,15 +162,15 @@ The biquaternion algebra is the even part of the Clifford algebra of Minkowski s
 |---|---|
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors, of signatures $(1,3)$ and $(3,1)$; the Hermitian one is the copy of Minkowski space inside the algebra |
 | $V$ | The four-dimensional space of signature $(1,3)$ whose Clifford algebra is the envelope; it is odd, and it lies in the odd slot |
-| $\mathrm{Cl}_{1,3},\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ | The envelope, of real dimension $16$; its even part, the algebra, of real dimension $8$; its odd part, $\mathbb{B}u$, a second copy of the algebra |
-| $u$ | A non-isotropic vector of $V$; the odd slot is $\mathbb{B}u$ and the inverse of $U\mapsto Uu$ is $Y\mapsto Yu^{-1}$ |
-| $\tilde{Q}$ | An element of $\mathbb{B}$; the operator $\mathrm{H}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{*}$ |
-| $\rho_u(v)=-uvu^{-1}$ | The reflection in the hyperplane orthogonal to $u$; a Lorentz transformation, realised by the odd versor $u$ |
-| $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$ | The signed inner conjugation; $\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{-1}$ is the inner automorphism |
-| $\Gamma$, $N_{\mathrm{Cl}}(U)=UU^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{N_{\mathrm{Cl}}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
+| $\mathrm{Cl}_{1,3},\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ | The envelope, of real dimension $16$; its even part, the algebra, of real dimension $8$; its odd part, $\mathbb{B}\xi$, a second copy of the algebra |
+| $\xi$ | A non-isotropic vector of $V$; the odd slot is $\mathbb{B}\xi$ and the inverse of $Q\mapsto Q\xi$ is $Q\mapsto Q\xi^{-1}$ |
+| $\tilde{Q}$ | An element of $\mathbb{B}$; the operator $\mathrm{H}_{\tilde{Q}}(\tilde{Q}')=\tilde{Q}\tilde{Q}'\tilde{Q}^{*}$ |
+| $\rho_\xi(\eta)=-\xi\eta\xi^{-1}$ | The reflection in the hyperplane orthogonal to $\xi$; a Lorentz transformation, realised by the odd versor $\xi$ |
+| $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$ | The signed inner conjugation; $\mathrm{Ad}_{\tilde{Q}}(\tilde{Q}')=\tilde{Q}\tilde{Q}'\tilde{Q}^{-1}$ is the inner automorphism |
+| $\Gamma$, $N_{\mathrm{Cl}}(\tilde U)=\tilde U\tilde U^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{N_{\mathrm{Cl}}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
 | $\Omega=\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$ | The volume element of $\mathrm{Cl}_{1,3}$, $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
 | $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $A\otimes h\mapsto\bar{A}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
-| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}$ |
 | $P,PT$ | Parity, the quaternion conjugation of the argument; the product of parity and time reversal, the negation; neither is a sandwich |
 | $O(1,3),SO^{+}(1,3)$ | The orthogonal group of the form and its identity component; their components are indexed by the determinant and the time orientation |
 

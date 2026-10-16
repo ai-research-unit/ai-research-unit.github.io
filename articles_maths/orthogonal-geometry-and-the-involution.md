@@ -13,16 +13,16 @@ The article assumes *Bilinear Forms* and *Quadratic Forms and Polarisation* of P
 
 ### Definition and the Orthogonal Group
 
-**Definition.** Let $V$ be a vector space over a field $K$ of characteristic not two. A **symmetric bilinear form** is a map $B : V \times V \to K$, bilinear and symmetric, $B(x,y) = B(y,x)$; the associated **quadratic form** is $q(x) = B(x,x)$, and the bilinear form is its **polar form**, recovered from $q$ by the polarisation
+**Definition.** Let $V$ be a vector space over a field $K$ of characteristic not two. A **symmetric bilinear form** is a map $B : V \times V \to K$, bilinear and symmetric, $B(x,y) = B(y,x)$; the associated **quadratic form** is $\mathfrak{Q}(x) = B(x,x)$, and the bilinear form is its **polar form**, recovered from $m$ by the polarisation
 
 $$
-B(x,y) = \tfrac12\bigl(q(x+y) - q(x) - q(y)\bigr) .
+B(x,y) = \tfrac12\bigl(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y)\bigr) .
 $$
 
-The form is **nondegenerate** when the map $V \to V^{*}$, $x \mapsto B(x,\cdot)$, is an isomorphism; the **orthogonal group** is
+The form is **nondegenerate** when the map $V \to V^{*}$, $x \mapsto \langle x,\cdot\rangle$, is an isomorphism; the **orthogonal group** is
 
 $$
-O(V,q) = \{T \in GL(V) : q(Tx) = q(x) \ \text{for all } x\} ,
+O(V,\mathfrak{Q}) = \{T \in GL(V) : \mathfrak{Q}(Tx) = \mathfrak{Q}(x) \ \text{for all } x\} ,
 $$
 
 equivalently the group of the linear maps with $B(Tx,Ty) = B(x,y)$ throughout.
@@ -33,9 +33,9 @@ $$
 \rho_a(x) = x - 2\,\frac{B(x,a)}{B(a,a)}\,a
 $$
 
-in the non-isotropic vectors $a$, by the Cartan–Dieudonné theorem; the determinant is a homomorphism $O(V,q) \to \{\pm 1\}$ whose kernel is the special orthogonal group $SO(V,q)$, and the reflections are the elements of determinant $-1$.
+in the non-isotropic vectors $a$, by the Cartan–Dieudonné theorem; the determinant is a homomorphism $O(V,\mathfrak{Q}) \to \{\pm 1\}$ whose kernel is the special orthogonal group $SO(V,\mathfrak{Q})$, and the reflections are the elements of determinant $-1$.
 
-**Proof.** The isometry condition $q(Tx) = q(x)$ is equivalent to the preservation of the polar form $B$ by the polarisation; a reflection preserves the form by the computation $q(\rho_a(x)) = q(x)$, and it has determinant $-1$; the generation by the reflections is the Cartan–Dieudonné theorem of *Clifford Algebras*, and the determinant statement follows from the parity of the number of the reflections. The statement is in *Quadratic Forms and Polarisation*.
+**Proof.** The isometry condition $\mathfrak{Q}(Tx) = \mathfrak{Q}(x)$ is equivalent to the preservation of the polar form $B$ by the polarisation; a reflection preserves the form by the computation $\mathfrak{Q}(\rho_a(x)) = \mathfrak{Q}(x)$, and it has determinant $-1$; the generation by the reflections is the Cartan–Dieudonné theorem of *Clifford Algebras*, and the determinant statement follows from the parity of the number of the reflections. The statement is in *Quadratic Forms and Polarisation*.
 
 **Definition.** The **Witt index** of a nondegenerate form is the largest dimension of a totally isotropic subspace, a subspace on which the restriction of the form vanishes; the form is **split** or **hyperbolic** when the index is $\lfloor n/2 \rfloor$, **anisotropic** when the index is zero, and every form has the Witt decomposition of *Hermitian Forms and Unitary Geometry* with the trivial involution.
 
@@ -44,20 +44,20 @@ in the non-isotropic vectors $a$, by the Cartan–Dieudonné theorem; the determ
 **Definition.** The **isotropic cone** of the form is the set
 
 $$
-C = \{x \in V : q(x) = 0\} ,
+C = \{x \in V : \mathfrak{Q}(x) = 0\} ,
 $$
 
 a cone with vertex the origin; the **quadric** of the form is its projectivisation
 
 $$
-Q = \{[x] \in \mathbb{P}(V) : q(x) = 0\} ,
+Q = \{[x] \in \mathbb{P}(V) : \mathfrak{Q}(x) = 0\} ,
 $$
 
 and the non-isotropic vectors are the complement of the cone.
 
 **Proposition.** The isotropic cone is a cone, invariant under the scalar multiplications, and it is the common zero set of the quadratic form and its polar; the quadric is nonempty exactly when the form is isotropic, and the form is anisotropic exactly when $Q$ is empty; for a nondegenerate form the quadric is a **hypersurface of degree two** in $\mathbb{P}(V)$, and it is smooth exactly when the form is nondegenerate.
 
-**Proof.** The cone is invariant under the scalars because $q$ is homogeneous of degree two; the quadric is its projectivisation and it is nonempty exactly when the form represents zero; the smoothness of the quadric is the nondegeneracy of the form, since the gradient of $q$ vanishes only at the origin for a nondegenerate form. The statement is the classical one, in *Quadratic Forms and Polarisation* and *Projective Geometry*.
+**Proof.** The cone is invariant under the scalars because $m$ is homogeneous of degree two; the quadric is its projectivisation and it is nonempty exactly when the form represents zero; the smoothness of the quadric is the nondegeneracy of the form, since the gradient of $m$ vanishes only at the origin for a nondegenerate form. The statement is the classical one, in *Quadratic Forms and Polarisation* and *Projective Geometry*.
 
 ## The Polarity
 
@@ -66,7 +66,7 @@ and the non-isotropic vectors are the complement of the cone.
 **Definition.** Let $B$ be a nondegenerate symmetric bilinear form on $V$. The **polarity** is the correlation of the projective space
 
 $$
-\pi : \mathbb{P}(V) \longrightarrow \mathbb{P}(V^{*}), \qquad \pi([x]) = [B(x,\cdot)] ,
+\pi : \mathbb{P}(V) \longrightarrow \mathbb{P}(V^{*}), \qquad \pi([x]) = [\langle x,\cdot\rangle] ,
 $$
 
 sending a point to the hyperplane of the linear forms vanishing on it; under the identification $\mathbb{P}(V^{*}) = \mathbb{P}(V)$ induced by the form it is a map of $\mathbb{P}(V)$ to itself, and the **polar hyperplane** of a point $[x]$ is the hyperplane
@@ -90,14 +90,14 @@ and the **orthogonal complement** satisfies $W^{\perp\perp} = W$ and $\dim W^\pe
 **Definition.** A point $[x]$ is **absolute** for the polarity when it lies in its polar hyperplane,
 
 $$
-[x] \in [x]^\perp \quad \Longleftrightarrow \quad B(x,x) = 0 \quad \Longleftrightarrow \quad q(x) = 0 ,
+[x] \in [x]^\perp \quad \Longleftrightarrow \quad B(x,x) = 0 \quad \Longleftrightarrow \quad \mathfrak{Q}(x) = 0 ,
 $$
 
 so that the absolute points are exactly the points of the quadric $Q$.
 
 **Theorem.** The fixed locus of the polarity in the sense of the absolute points is the quadric $Q$; the polar hyperplane of a point of $Q$ is the tangent hyperplane to the quadric at that point, and for a point outside $Q$ the polar hyperplane meets the quadric in the points of contact of the tangents drawn from the point. The polarity therefore intertwines the geometry of the quadric with the linear algebra of the form: the quadric is the locus of the points lying in their polar hyperplanes, and the tangent hyperplanes are the polar hyperplanes of the points of the quadric.
 
-**Proof.** The absolute condition is $B(x,x) = 0$ by the definition of the polar hyperplane; the tangent hyperplane to the quadric at a smooth point $[x]$ is the kernel of the differential of $q$, which is the linear form $B(x,\cdot)$, so it is the polar hyperplane; the tangents from an outside point touch the quadric at the points of the intersection of the polar hyperplane with the quadric, which is the classical theorem of the polar line. The statement is in *Quadratic Forms and Polarisation* and *Projective Geometry*.
+**Proof.** The absolute condition is $B(x,x) = 0$ by the definition of the polar hyperplane; the tangent hyperplane to the quadric at a smooth point $[x]$ is the kernel of the differential of $m$, which is the linear form $\langle x,\cdot\rangle$, so it is the polar hyperplane; the tangents from an outside point touch the quadric at the points of the intersection of the polar hyperplane with the quadric, which is the classical theorem of the polar line. The statement is in *Quadratic Forms and Polarisation* and *Projective Geometry*.
 
 **Remark (the degenerate case).** When the form is degenerate the polarity is not an involution of the whole space: the radical is contained in every polar hyperplane and the map fails to be injective; the quadric becomes a cone with the vertex the projectivised radical, and the nondegenerate part of the form acts on the quotient. The article keeps the nondegenerate case, and it names the degenerate case as the one in which the involution degenerates to a correlation with a nonempty radical.
 
@@ -105,11 +105,11 @@ so that the absolute points are exactly the points of the quadric $Q$.
 
 ### The Action on the Quadric
 
-**Theorem.** The orthogonal group $O(V,q)$ preserves the quadric and the polarity, and it acts on the projective space by the projectivities induced by its elements; the projectivities so obtained form the **projective orthogonal group** $PO(V,q) = O(V,q)/\{\pm 1\}$ up to the scalars, and the preservation of the quadric by a projectivity is equivalent to the up-to-scalar preservation of the form, as recorded in *Operators on a Projective Space*.
+**Theorem.** The orthogonal group $O(V,\mathfrak{Q})$ preserves the quadric and the polarity, and it acts on the projective space by the projectivities induced by its elements; the projectivities so obtained form the **projective orthogonal group** $PO(V,\mathfrak{Q}) = O(V,\mathfrak{Q})/\{\pm 1\}$ up to the scalars, and the preservation of the quadric by a projectivity is equivalent to the up-to-scalar preservation of the form, as recorded in *Operators on a Projective Space*.
 
-**Proof.** An isometry of the form preserves $q$ and hence the quadric and the polarity; conversely a projectivity preserving the quadric preserves the polarity and the form up to a scalar, which is the statement of the companion article. The quotient by the scalars is the passage to the projective group, and the kernel of the projectivisation is the scalar matrices, which are $\pm 1$ in the orthogonal group. The statement is in *Operators on a Projective Space*.
+**Proof.** An isometry of the form preserves $m$ and hence the quadric and the polarity; conversely a projectivity preserving the quadric preserves the polarity and the form up to a scalar, which is the statement of the companion article. The quotient by the scalars is the passage to the projective group, and the kernel of the projectivisation is the scalar matrices, which are $\pm 1$ in the orthogonal group. The statement is in *Operators on a Projective Space*.
 
-**Corollary (the orbits of the quadric).** The orthogonal group acts transitively on the points of the quadric when the form is isotropic, and the quadric is the homogeneous space $O(V,q)/P$ of the group modulo the stabiliser $P$ of a point; the stabiliser is the subgroup preserving the polar hyperplane of the point, and it is the maximal parabolic of the orthogonal group associated with the isotropic line. The totally isotropic subspaces of each dimension form the orbits of the parabolic stabilisers, and the Witt index is their maximal dimension.
+**Corollary (the orbits of the quadric).** The orthogonal group acts transitively on the points of the quadric when the form is isotropic, and the quadric is the homogeneous space $O(V,\mathfrak{Q})/P$ of the group modulo the stabiliser $P$ of a point; the stabiliser is the subgroup preserving the polar hyperplane of the point, and it is the maximal parabolic of the orthogonal group associated with the isotropic line. The totally isotropic subspaces of each dimension form the orbits of the parabolic stabilisers, and the Witt index is their maximal dimension.
 
 **Proof.** The transitivity on the isotropic points is the Witt extension theorem: two isotropic vectors of the same norm zero are carried to each other by an isometry of the form; the stabiliser of a point is the subgroup preserving it, which preserves its polar hyperplane and acts on it, and the orbit-stabiliser theorem gives the homogeneous space. The statement is in *Hermitian Forms and Unitary Geometry* and *Linear Algebraic Groups*.
 
@@ -123,7 +123,7 @@ so that the absolute points are exactly the points of the quadric $Q$.
 
 ### The Conic and the Quadric Surfaces
 
-**Example (the conic in the plane).** Let $\dim V = 3$ and let $q$ be a nondegenerate form of Witt index $1$ over $\mathbb{R}$ of signature $(2,1)$; the quadric is a smooth conic in $\mathbb{P}^2$, it is nonempty with real points, and the polarity sends a point of the conic to its tangent line. The polar line of an outside point is the chord of contact, the polar line of an inside point is the line with no real intersection, and the polarity restricted to the conic is the correspondence between the points and the tangents.
+**Example (the conic in the plane).** Let $\dim V = 3$ and let $m$ be a nondegenerate form of Witt index $1$ over $\mathbb{R}$ of signature $(2,1)$; the quadric is a smooth conic in $\mathbb{P}^2$, it is nonempty with real points, and the polarity sends a point of the conic to its tangent line. The polar line of an outside point is the chord of contact, the polar line of an inside point is the line with no real intersection, and the polarity restricted to the conic is the correspondence between the points and the tangents.
 
 **Example (the quadric surfaces).** Let $\dim V = 4$; the nondegenerate quadrics in $\mathbb{P}^3$ are the smooth quadric surfaces, and they fall into the two types of the Witt index: the **hyperbolic quadric** of index $2$, which is the doubly ruled surface $\mathbb{P}^1 \times \mathbb{P}^1$ with the two families of the lines on it, and the **elliptic quadric** of index $1$, which carries no line. Over $\mathbb{R}$ the two types correspond to the signatures $(2,2)$ and $(3,1)$ of the form, and the quadric of signature $(2,2)$ is the real doubly ruled quadric of the hyperboloid.
 
@@ -135,22 +135,22 @@ so that the absolute points are exactly the points of the quadric $Q$.
 
 ## Summary
 
-Orthogonal geometry is the geometry of a nondegenerate symmetric bilinear form $B$ and its quadratic form $q$; the orthogonal group $O(V,q)$ is the group of the isometries, generated by the reflections $\rho_a(x) = x - 2B(x,a)a/B(a,a)$, and the isotropic cone $C = \{q = 0\}$ projectivises to the quadric $Q$. The **polarity** $\pi([x]) = [B(x,\cdot)]$ is an inclusion-reversing correlation of order two, with $W^{\perp\perp} = W$ and $\dim W^\perp = \dim V - \dim W$, and its absolute points, those lying in their polar hyperplanes, are exactly the points of the quadric; the polar hyperplane of a point of the quadric is the tangent hyperplane. The orthogonal group preserves the quadric and the polarity and acts as the projective orthogonal group $PO(V,q)$, transitively on the isotropic points and on the totally isotropic subspaces of each dimension, with the Witt index as the maximal dimension and the parabolics as the stabilisers. The conic, the hyperbolic and elliptic quadric surfaces, and the Klein quadric of the lines of $\mathbb{P}^3$ are the standard instances; the degenerate case is the one in which the polarity has a nonempty radical and the quadric becomes a cone.
+Orthogonal geometry is the geometry of a nondegenerate symmetric bilinear form $B$ and its quadratic form $m$; the orthogonal group $O(V,\mathfrak{Q})$ is the group of the isometries, generated by the reflections $\rho_a(x) = x - 2B(x,a)a/B(a,a)$, and the isotropic cone $C = \{m = 0\}$ projectivises to the quadric $Q$. The **polarity** $\pi([x]) = [\langle x,\cdot\rangle]$ is an inclusion-reversing correlation of order two, with $W^{\perp\perp} = W$ and $\dim W^\perp = \dim V - \dim W$, and its absolute points, those lying in their polar hyperplanes, are exactly the points of the quadric; the polar hyperplane of a point of the quadric is the tangent hyperplane. The orthogonal group preserves the quadric and the polarity and acts as the projective orthogonal group $PO(V,\mathfrak{Q})$, transitively on the isotropic points and on the totally isotropic subspaces of each dimension, with the Witt index as the maximal dimension and the parabolics as the stabilisers. The conic, the hyperbolic and elliptic quadric surfaces, and the Klein quadric of the lines of $\mathbb{P}^3$ are the standard instances; the degenerate case is the one in which the polarity has a nonempty radical and the quadric becomes a cone.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $B(x,y)$, $q(x) = B(x,x)$ | Symmetric bilinear form and its quadratic form |
-| $O(V,q)$, $SO(V,q)$ | Orthogonal and special orthogonal groups |
+| $B(x,y)$, $\mathfrak{Q}(x) = B(x,x)$ | Symmetric bilinear form and its quadratic form |
+| $O(V,\mathfrak{Q})$, $SO(V,\mathfrak{Q})$ | Orthogonal and special orthogonal groups |
 | $\rho_a(x) = x - 2B(x,a)a/B(a,a)$ | Reflection in the non-isotropic vector $a$ |
 | Witt index | Largest dimension of a totally isotropic subspace |
-| $C = \{q = 0\}$, $Q = \{[x] : q(x) = 0\}$ | Isotropic cone and quadric |
-| $\pi([x]) = [B(x,\cdot)]$ | Polarity |
+| $C = \{m = 0\}$, $Q = \{[x] : \mathfrak{Q}(x) = 0\}$ | Isotropic cone and quadric |
+| $\pi([x]) = [\langle x,\cdot\rangle]$ | Polarity |
 | $W^\perp$, $W^{\perp\perp} = W$ | Orthogonal complement, an involution of the lattice |
-| absolute point | $[x] \in [x]^\perp$, i.e. $q(x) = 0$ |
+| absolute point | $[x] \in [x]^\perp$, i.e. $\mathfrak{Q}(x) = 0$ |
 | polar hyperplane | The hyperplane $[x]^\perp$ |
-| $PO(V,q) = O(V,q)/\{\pm1\}$ | Projective orthogonal group |
+| $PO(V,\mathfrak{Q}) = O(V,\mathfrak{Q})/\{\pm1\}$ | Projective orthogonal group |
 | Klein quadric | The quadric of the lines of $\mathbb{P}^3$ in $\mathbb{P}^5$ |
 
 ## Further Reading

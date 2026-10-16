@@ -71,28 +71,28 @@ $$
 where $\Phi_j$ denotes the ordinary fundamental matrix of $y'=A(t)y$ on the relevant interval. When $A$ is constant and the jumps occur at equally spaced times $\tau_k = kT$, the one-period product is
 
 $$
-M = e^{A(T-\tau)}\,\bigl(I+B\bigr),
+M = \exp(A(T-\tau))\,\bigl(I+B\bigr),
 $$
 
 the **monodromy matrix**, and the fundamental matrix satisfies $W(t+T) = W(t)M$ for $t$ in the first period.
 
 *Proof.* The formula is the interval method applied to the matrix equation: between impulses the matrix solves the linear equation $W' = AW$, so it equals the ordinary fundamental matrix; across an impulse left multiplication by $I+B_k$ performs the jump. The causality and invertibility are immediate from the formula and from the invertibility of each factor.
 
-**Theorem (Floquet).** If $A$ is $T$-periodic and the jump pattern is $T$-periodic with finitely many jumps per period, then $W(t,t_0) = P(t)e^{(t-t_0)C}$ where $P$ is $T$-periodic and invertible in $t$ and $C$ is constant, $e^{TC}=M$.
+**Theorem (Floquet).** If $A$ is $T$-periodic and the jump pattern is $T$-periodic with finitely many jumps per period, then $W(t,t_0) = P(t)\exp((t-t_0)C)$ where $P$ is $T$-periodic and invertible in $t$ and $C$ is constant, $\exp(TC)=M$.
 
-*Proof.* Since $W(t+T) = W(t)M$ by periodicity, and $M$ is invertible as a product of invertible factors, choose a logarithm $C$ with $e^{TC}=M$ and put $P(t) = W(t)e^{-tC}$; then $P(t+T) = W(t+T)e^{-(t+T)C} = W(t)Me^{-TC}e^{-tC} = W(t)e^{-tC} = P(t)$.
+*Proof.* Since $W(t+T) = W(t)M$ by periodicity, and $M$ is invertible as a product of invertible factors, choose a logarithm $C$ with $\exp(TC)=M$ and put $P(t) = W(t)\exp(-tC)$; then $P(t+T) = W(t+T)\exp(-(t+T)C) = W(t)M\exp(-TC)\exp(-tC) = W(t)\exp(-tC) = P(t)$.
 
 **Corollary (stability).** The linear impulsive periodic system is asymptotically stable if and only if every eigenvalue of the monodromy matrix $M$ has modulus strictly less than $1$; it is stable if and only if the eigenvalues have modulus at most $1$ and those of modulus $1$ are semisimple. The eigenvalues of $M$ are the **Floquet multipliers** and the eigenvalues of $C$ the **Floquet exponents**.
 
-*Proof.* By Floquet's theorem $W(t) = P(t)e^{tC}$ with $P$ bounded and invertible, so the growth of $W(t)$ as $t\to\infty$ is governed by $e^{tC}$, hence by the eigenvalues of $C$; these are $\log\mu/T$ for the eigenvalues $\mu$ of $M$, so $|\mu|<1$ is equivalent to strictly negative real part for the exponents.
+*Proof.* By Floquet's theorem $W(t) = P(t)\exp(tC)$ with $P$ bounded and invertible, so the growth of $W(t)$ as $t\to\infty$ is governed by $\exp(tC)$, hence by the eigenvalues of $C$; these are $\log\mu/T$ for the eigenvalues $\mu$ of $M$, so $|\mu|<1$ is equivalent to strictly negative real part for the exponents.
 
 **Example (an oscillator with a periodic kick).** With $A = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$, a period $T = 2\pi$ and one impulse per period with $B = \alpha I$ at $t = \pi$, the monodromy over one period is the product of two rotation-half matrices and the factor $1+\alpha$:
 
 $$
-M = (1+\alpha)e^{A\pi}e^{A\pi} = (1+\alpha)e^{2\pi A} = (1+\alpha)I,
+M = (1+\alpha)\exp(A\pi)\exp(A\pi) = (1+\alpha)\exp(2\pi A) = (1+\alpha)I,
 $$
 
-since $e^{2\pi A} = I$ for the rotation generator $A$. The multipliers are $1+\alpha$ twice, so the system is asymptotically stable exactly for $-2 < \alpha < 0$. The computation is exact and shows that a kick can stabilise an oscillator that is otherwise neutrally stable, and destabilise it when too strong.
+since $\exp(2\pi A) = I$ for the rotation generator $A$. The multipliers are $1+\alpha$ twice, so the system is asymptotically stable exactly for $-2 < \alpha < 0$. The computation is exact and shows that a kick can stabilise an oscillator that is otherwise neutrally stable, and destabilise it when too strong.
 
 ### Variation of Constants
 
@@ -128,7 +128,7 @@ $$
 V(y(\tau_k^+)) = \|(I+B_k)y(\tau_k^-)\|^2 \le \|I+B_k\|^2\,V(y(\tau_k^-)),
 $$
 
-and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le e^{-2\beta_k}$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.
+and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le \exp(-2\beta_k)$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.
 
 *Proof.* Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost.
 

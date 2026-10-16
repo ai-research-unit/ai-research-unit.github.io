@@ -77,7 +77,7 @@ $$
 
 ### The Clifford Algebra
 
-On a Clifford algebra with the dagger, the adjoint of the left multiplication by a vector $v$ is the left multiplication by $v^{\dagger} = -v$ for the signed dagger; the sandwich by a versor is the rotor action of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the two-sided operators of the Clifford category are built from these identities.
+On a Clifford algebra with the dagger, the adjoint of the left multiplication by a vector $b$ is the left multiplication by $b^{\dagger} = -b$ for the signed dagger; the sandwich by a versor is the rotor action of *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the two-sided operators of the Clifford category are built from these identities.
 
 ### The Biquaternions
 

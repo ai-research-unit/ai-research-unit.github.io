@@ -13,16 +13,16 @@ the ordinary left multiplication applied to the twisted argument. It agrees with
 
 A word of disambiguation begins the account, because the corpus writes two different operators with the adjective signed in front of "left multiplication". In this article the twist is on the **argument**, $\mathrm{L}^{\alpha}_a=L_a\alpha$; in *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* and *The Graded Multiplication Operators* the twist is on the **parameter**, $\Lambda^{\alpha}_x(y)=\alpha(x)y$. The two agree only on the even part, and their purposes differ: the parameter twist belongs to the inner conjugation and the versor theory, the argument twist to the signed product and the reflections. Only the argument twist is treated here.
 
-**The boundaries.** The one-sided calculus, the commutant and the composition of the ordinary families are *One-Sided Operators on a Clifford Algebra*; the signed product, its composition law and its fixed elements are *One-Sided Operators with the Signed Product*, and the two-sided version is *Two-Sided Operators with the Signed Product*; the parameter-twisted family is *The Graded Multiplication Operators*. The signed sandwich formed from the two factors is *The Signed Sandwich on a Clifford Algebra*, and the reflections are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
+**The boundaries.** The one-sided calculus, the commutant and the composition of the ordinary families are *One-Sided Operators on a Clifford Algebra*; the signed product, its composition law and its fixed elements are *One-Sided Operators with the Signed Product*, and the two-sided version is *Two-Sided Operators with the Signed Product*; the parameter-twisted family is *The Graded Multiplication Operators*. The signed sandwich formed from the two factors is *The Signed Sandwich on a Clifford Algebra*, and the reflections are *Reflections as Signed Two-Sided Operators on a Clifford Algebra*. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.
 
 ## The Operator
 
 ### Definition and Elementary Properties
 
-**Definition.** For $a\in\mathrm{Cl}(V,q)$ the **signed left multiplication** is the $F$-linear operator
+**Definition.** For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the **signed left multiplication** is the $F$-linear operator
 
 $$
-\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
+\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
 $$
 
 **Proposition.** The following hold.
@@ -67,13 +67,13 @@ $$
 \mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}} ,
 $$
 
-and for a vector $u$ with $q(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.
+and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.
 
 **Proof.** $(\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}})(y)=x\alpha(y)\alpha(x)^{-1}$, which is the signed sandwich of *The Signed Sandwich on a Clifford Algebra* with parameters $(x,\alpha(x)^{-1})$; for $x=u$ a vector, $\alpha(u)^{-1}=u^{-1}$, and the reflection formula gives $\rho_u$. The last claim is the next proposition.
 
-**Proposition (no one-sided operator preserves the space).** Let $u\in V$ with $q(u)\ne0$. Then $\mathrm{L}^{\alpha}_u$ does not map $V$ into itself: it sends the unit $1$ to $u$ and the vector $u$ to $u\alpha(u)=-q(u)$, a scalar, so the image of the even part of the algebra meets the odd part and vice versa. Consequently no signed left multiplication by a non-scalar element preserves the quadratic space.
+**Proposition (no one-sided operator preserves the space).** Let $u\in V$ with $\mathfrak{Q}(u)\ne0$. Then $\mathrm{L}^{\alpha}_u$ does not map $V$ into itself: it sends the unit $1$ to $u$ and the vector $u$ to $u\alpha(u)=-\mathfrak{Q}(u)$, a scalar, so the image of the even part of the algebra meets the odd part and vice versa. Consequently no signed left multiplication by a non-scalar element preserves the quadratic space.
 
-**Proof.** $\mathrm{L}^{\alpha}_u(1)=u$ and $\mathrm{L}^{\alpha}_u(u)=u\,(-u)=-q(u)\in F$; the two values lie in different parity components, so $\mathrm{L}^{\alpha}_u$ does not preserve the subspace $V$ of the algebra. A one-sided multiplication by $a$ preserves the parity grading only when $a$ is even, and then it does not preserve $V$ either unless $a$ is a scalar.
+**Proof.** $\mathrm{L}^{\alpha}_u(1)=u$ and $\mathrm{L}^{\alpha}_u(u)=u\,(-u)=-\mathfrak{Q}(u)\in F$; the two values lie in different parity components, so $\mathrm{L}^{\alpha}_u$ does not preserve the subspace $V$ of the algebra. A one-sided multiplication by $a$ preserves the parity grading only when $a$ is even, and then it does not preserve $V$ either unless $a$ is a scalar.
 
 **Remark (the geometry of the pairing).** The signed left multiplication is the left half of the signed sandwich, and only the pairing with a right multiplication restores the grading and produces an operator of $V$. This is the one-sided form of the statement that the reflections are two-sided operators, and it is why the geometry of the category is carried by the two-sided family. The parameter-twisted signed left multiplication of *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* has the same one-sided deficiency, and the pairing there is with the inverse right multiplication.
 
@@ -106,7 +106,7 @@ The **signed left multiplication** $\mathrm{L}^{\alpha}_a=L_a\circ\alpha$, $\mat
 | $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$ | Composition law; coset of the left-multiplication group |
 | $\{y : a\alpha(y)=y\}$ | Fixed space; even part, odd part or nothing for a scalar |
 | $\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}}=T^{\alpha}_{x,\alpha(x)^{-1}}$ | Pairing to the signed sandwich |
-| $\mathrm{L}^{\alpha}_u(1)=u$, $\mathrm{L}^{\alpha}_u(u)=-q(u)$ | Failure to preserve $V$ |
+| $\mathrm{L}^{\alpha}_u(1)=u$, $\mathrm{L}^{\alpha}_u(u)=-\mathfrak{Q}(u)$ | Failure to preserve $V$ |
 
 ## Further Reading
 

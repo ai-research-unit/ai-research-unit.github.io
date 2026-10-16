@@ -6,7 +6,7 @@ This article is one of a series of **worked exercises** that illustrate quantum 
 
 The immediately preceding exercise, *Exercise: The Reduced State of an Entangled Subsystem*, introduced the partial trace $\mathrm{Tr}_2$ and computed the reduced state of the singlet. That exercise is about the **state**; it observed, in passing, that the reduced state $\tfrac12 e_0$ has von Neumann entropy $\log 2$. The present exercise is about that number. It poses the computation of the **entanglement entropy** of a general pure two-qubit state, works the solution by two routes — the Schmidt decomposition, and the partial trace in $\mathbb{B}\otimes\mathbb{B}$ — and closes with further problems left to the reader. The reduced state of the singlet is used here only as a limiting case, and its computation is not repeated.
 
-The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{\rho}=\lambda_+\tilde\Pi_1(\hat r)+\lambda_-\tilde\Pi_2(\hat r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
+The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{\rho}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary, $i^2=-1$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, and in particular $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ for idempotent $\tilde{P}$ and Hermitian $\tilde{H}$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$. Throughout, $\log$ denotes the natural logarithm, and
 
@@ -126,7 +126,7 @@ Two immediate consequences, which are part (c) of the exercise:
 - $S=0$ if and only if one Schmidt coefficient vanishes, i.e. $|\psi\rangle$ is a **product state** $|u\rangle|v\rangle$.
 - $S=\log 2$ if and only if $s_1=s_2=1/\sqrt2$, i.e. $|\psi\rangle$ is **maximally entangled**. The four Bell states are the canonical examples, but they are not the only ones: any state of the form $(\tilde{U}\otimes\tilde{V})|\Phi^+\rangle$ with local unitaries is maximally entangled.
 
-The maximally entangled states are therefore a **continuum**, of three real dimensions among the six of the pure-state rays, and no finite catalogue exhausts them. A source that lists twelve patterns of maximally entangled states and claims they are all of them (Obojska, *Journal of Physics Communications* **4** (2020) 055018) is mistaken for exactly this reason: the twelve patterns are a measure-zero subset selected by an extra quotient rule on the amplitudes, and the family $\tfrac{1}{\sqrt2}(|00\rangle+e^{i\phi}|11\rangle)$ is a counterexample for every $\phi$ outside the discrete set the patterns allow. The computation is in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, in the section *A Claimed Enumeration of the Maximally Entangled States*.
+The maximally entangled states are therefore a **continuum**, of three real dimensions among the six of the pure-state rays, and no finite catalogue exhausts them. A source that lists twelve patterns of maximally entangled states and claims they are all of them (Obojska, *Journal of Physics Communications* **4** (2020) 055018) is mistaken for exactly this reason: the twelve patterns are a measure-zero subset selected by an extra quotient rule on the amplitudes, and the family $\tfrac{1}{\sqrt2}(|00\rangle+\exp(i\phi)|11\rangle)$ is a counterexample for every $\phi$ outside the discrete set the patterns allow. The computation is in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, in the section *A Claimed Enumeration of the Maximally Entangled States*.
 
 Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range $s_1^2\in[\tfrac12,1]$ is at $s_1^2=\tfrac12$, with value $\log2$; its minimum is $0$ at the endpoints $s_1^2\in\{0,1\}$. There is no other case for two qubits: the entropy is either $0$, $\log2$, or a value of $h(p)$ strictly between them.
 
@@ -252,9 +252,9 @@ The parent article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational S
 Let $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ be a state with $0<|\vec r|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, both positive, and its spectral decomposition is
 
 $$
-\tilde{\rho}=\lambda_+\,\tilde\Pi_1(\hat r)
-+\lambda_-\,\tilde\Pi_2(\hat r),
-\qquad \hat r=\vec r/|\vec r| .
+\tilde{\rho}=\lambda_+\,\tilde\Pi_1(\vec u_r)
++\lambda_-\,\tilde\Pi_2(\vec u_r),
+\qquad \vec u_r=\vec r/|\vec r| .
 $$
 
 The **principal** logarithm of the parent's elementary-functions article, applied to this element, is the spectral logarithm:
@@ -262,17 +262,17 @@ The **principal** logarithm of the parent's elementary-functions article, applie
 $$
 \log\tilde{\rho}
 =\tfrac12\log(\lambda_+\lambda_-)\,e_0
-+\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\hat r
-=\log\lambda_+\,\tilde\Pi_1(\hat r)
-+\log\lambda_-\,\tilde\Pi_2(\hat r).
++\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\vec u_r
+=\log\lambda_+\,\tilde\Pi_1(\vec u_r)
++\log\lambda_-\,\tilde\Pi_2(\vec u_r).
 $$
 
-The two expressions agree because $\tfrac12(e_0\pm i\hat r)=\tilde\Pi_{1,2}(\hat r)$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
+The two expressions agree because $\tfrac12(e_0\pm i\vec u_r)=\tilde\Pi_{1,2}(\vec u_r)$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
 
 $$
 \tilde{\rho}\log\tilde{\rho}
-=\lambda_+\log\lambda_+\,\tilde\Pi_1(\hat r)
-+\lambda_-\log\lambda_-\,\tilde\Pi_2(\hat r),
+=\lambda_+\log\lambda_+\,\tilde\Pi_1(\vec u_r)
++\lambda_-\log\lambda_-\,\tilde\Pi_2(\vec u_r),
 $$
 
 since the idempotents are orthogonal. Using $\mathrm{Sc}(\tilde\Pi_{1,2})=\tfrac12$,
@@ -297,7 +297,7 @@ Two qualifications belong with the verification, and neither is a defect of the 
 
 **The branch is load-bearing.** The biquaternion logarithm is multivalued. The genuine extra branches — an added $2\pi i n\,e_0$ in the scalar part, or a shift $\Theta\mapsto\Theta+2\pi k$ in the angle — change $\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ by a purely imaginary amount, so what is branch-dependent is the *complex* value of the candidate, not its real part. The candidate must nonetheless be read with the principal branch, the one that agrees with the spectral logarithm, because that is the branch that makes $S$ real and equal to $-\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$.
 
-**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of units $N(\tilde{Q})\neq0$. A pure state $\tilde{\rho}=\tilde\Pi(\hat r)=\tfrac12(e_0+i\hat r)$ is an idempotent and a zero divisor: $N(\tilde{\rho})=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec r|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec r|\to1$, not a value the formula takes. The same is true of the parent's single-qubit entropy formula only in appearance: that formula is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{\rho}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
+**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of units $\langle\tilde{Q}\rangle_{\natural}\neq0$. A pure state $\tilde{\rho}=\tilde\Pi(\vec u_r)=\tfrac12(e_0+i\vec u_r)$ is an idempotent and a zero divisor: $\langle\tilde{\rho}\rangle_{\natural}=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec r|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec r|\to1$, not a value the formula takes. The same is true of the parent's single-qubit entropy formula only in appearance: that formula is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{\rho}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
 
 ## A Case the Partial Trace Does Not Decide
 
@@ -395,7 +395,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces: $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace equals twice the scalar part |
-| $\tilde\Pi(\pm\hat{m})=\tfrac12(e_0\pm i\hat{m})$ | Single-qubit idempotents |
+| $\tilde\Pi(\pm\vec u_m)=\tfrac12(e_0\pm i\vec u_m)$ | Single-qubit idempotents |
 | $P_\epsilon=\tfrac14(e_0\otimes e_0+\sum_k\epsilon_k e_k\otimes e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $P_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
@@ -406,7 +406,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $S(\tilde{\rho})=-\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | von Neumann entropy |
 | $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ | Equivalent form (interior of the Bloch ball) |
 | $\log$ | Natural logarithm (principal branch) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 
 ## Further Reading

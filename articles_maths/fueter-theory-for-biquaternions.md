@@ -13,7 +13,7 @@ The treatment is purely mathematical, and no theorem is asserted beyond its hypo
 On $\mathbb{H}_{\mathbb{B}}$ the **Fueter operator**, also called the **Cauchy–Riemann–Fueter operator**, is the biquaternion-valued first-order operator
 
 $$
-\tilde{\nabla} = \sum_{\mu=0}^{3} e_\mu \partial_\mu, \qquad \tilde{\nabla}\tilde{F} = \sum_{\mu=0}^{3} e_\mu \partial_\mu \tilde{F},
+\tilde{\nabla} = \sum_{\mu=0}^{3} e_\mu \partial_\mu, \qquad \tilde{\nabla}F^{\mathrm{fn}} = \sum_{\mu=0}^{3} e_\mu \partial_\mu F^{\mathrm{fn}},
 $$
 
 acting on the left. Its **conjugate** is obtained by negating the vector part, $e_k \mapsto -e_k$:
@@ -32,7 +32,7 @@ The operator $\tilde{\nabla}$ is exactly the biquaternionic gradient of the arti
 
 ### Relation to the Cauchy–Riemann Operator
 
-The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence the **Cauchy–Riemann operator** of $\mathbb{R}^4$ up to normalization: since $\vec D^2 = -\Delta_3 e_0$, the product $(\partial_0 + \vec D)(\partial_0 - \vec D)$ equals $\partial_0^2 + \Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde{\nabla}$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial_{q_0} + I\partial_\rho$, so $\tilde{\nabla}\tilde{F} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford-algebra language, $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$ and $\mathbb{B}$ its complexification, the even subalgebra of $\mathrm{Cl}_{1,3}$; hence the term **monogenic** for Fueter-regular functions.
+The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence the **Cauchy–Riemann operator** of $\mathbb{R}^4$ up to normalization: since $\vec D^2 = -\Delta_3 e_0$, the product $(\partial_0 + \vec D)(\partial_0 - \vec D)$ equals $\partial_0^2 + \Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde{\nabla}$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial_{q_0} + I\partial_\rho$, so $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford-algebra language, $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$ and $\mathbb{B}$ its complexification, the even subalgebra of $\mathrm{Cl}_{1,3}$; hence the term **monogenic** for Fueter-regular functions.
 
 **The names and the priority.** The operator is named for Rudolf Fueter, whose 1932 paper established the construction developed below. The quaternionic Cauchy–Riemann conditions and the Cauchy integral formula were obtained earlier, however, by Cornelius Lanczos in the fourth chapter of his 1919 doctoral dissertation on the functional-theoretic relations of Maxwell's aether equations, where the quaternionic generalisation of the Cauchy–Riemann equations is formulated and applied to the homogeneous Maxwell equation, and the integral formula now called the **Cauchy–Lanczos–Fueter formula** is given. The earlier work was not continued, and the theory was rediscovered by Moisil and Fueter in 1931–1932. The corpus records the priority as the claim of Lanczos's commentators Gsponer and Hurni, resting on the dissertation itself (*A Brief History of Biquaternions in Physics*); nothing below depends on the attribution.
 
@@ -40,20 +40,20 @@ The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence t
 
 ### Left and Right Regularity
 
-**Definition.** Let $\tilde{F} : \Omega \to \mathbb{B}$ be differentiable on an open set $\Omega \subseteq \mathbb{H}_{\mathbb{B}}$. Then $\tilde{F}$ is **left-regular** if $\tilde{\nabla}\tilde{F} = 0$, and **right-regular** if
+**Definition.** Let $F^{\mathrm{fn}} : \Omega \to \mathbb{B}$ be differentiable on an open set $\Omega \subseteq \mathbb{H}_{\mathbb{B}}$. Then $F^{\mathrm{fn}}$ is **left-regular** if $\tilde{\nabla}F^{\mathrm{fn}} = 0$, and **right-regular** if
 
 $$
-\tilde{F}\tilde{\nabla} = 0, \qquad \tilde{F}\tilde{\nabla} = \sum_{\mu=0}^{3} \partial_\mu \tilde{F}\, e_\mu .
+F^{\mathrm{fn}}\tilde{\nabla} = 0, \qquad F^{\mathrm{fn}}\tilde{\nabla} = \sum_{\mu=0}^{3} \partial_\mu F^{\mathrm{fn}}\, e_\mu .
 $$
 
-The conditions differ in general because $\mathbb{B}$ is not commutative. Left-regular functions form a right $\mathbb{B}$-module ($\tilde{\nabla}(\tilde{F}a) = (\tilde{\nabla}\tilde{F})a = 0$ for constant $a$) and right-regular functions a left module ($(a\tilde{F})\tilde{\nabla} = a(\tilde{F}\tilde{\nabla}) = 0$); neither is two-sided in general.
+The conditions differ in general because $\mathbb{B}$ is not commutative. Left-regular functions form a right $\mathbb{B}$-module ($\tilde{\nabla}(F^{\mathrm{fn}}a) = (\tilde{\nabla}F^{\mathrm{fn}})a = 0$ for constant $a$) and right-regular functions a left module ($(aF^{\mathrm{fn}})\tilde{\nabla} = a(F^{\mathrm{fn}}\tilde{\nabla}) = 0$); neither is two-sided in general.
 
 ### The Componentwise System
 
-Write $\tilde{F} = \sum_\mu F_\mu e_\mu$ and $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$. The scalar-vector decomposition of the article on biquaternion analysis on subspaces gives
+Write $F^{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ and $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$. The scalar-vector decomposition of the article on biquaternion analysis on subspaces gives
 
 $$
-\tilde{\nabla}\tilde{F} = (\partial_0 F_0 - \mathrm{div}\,\vec F) + (\partial_0 \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F),
+\tilde{\nabla}F^{\mathrm{fn}} = (\partial_0 F_0 - \mathrm{div}\,\vec F) + (\partial_0 \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F),
 $$
 
 with $\mathrm{div}\,\vec F = \sum_k \partial_k F_k$, $\mathrm{grad}\,F_0 = \sum_k (\partial_k F_0)e_k$ and $\mathrm{rot}\,\vec F = \sum_{j,k,l} \epsilon_{jkl} (\partial_j F_k)e_l$. Hence left-regularity is
@@ -62,18 +62,18 @@ $$
 \partial_0 F_0 = \mathrm{div}\,\vec F, \qquad \partial_0 \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F,
 $$
 
-while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the **quaternionic Cauchy–Riemann system**: one biquaternion equation, equivalently eight real equations for the eight real components of $\tilde{F}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde{\nabla}\tilde{F} = 0$ shows that $\tilde{F}^{\natural}$ is right-regular for $\tilde{\nabla}^{\natural}$.
+while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the **quaternionic Cauchy–Riemann system**: one biquaternion equation, equivalently eight real equations for the eight real components of $F^{\mathrm{fn}}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde{\nabla}F^{\mathrm{fn}} = 0$ shows that $F^{\mathrm{fn}}^{\natural}$ is right-regular for $\tilde{\nabla}^{\natural}$.
 
 ## Harmonicity and the Mean Value Property
 
-**Proposition.** Every left- or right-regular function is harmonic: $\Delta_4 \tilde{F} = 0$ componentwise.
+**Proposition.** Every left- or right-regular function is harmonic: $\Delta_4 F^{\mathrm{fn}} = 0$ componentwise.
 
-**Proof.** If $\tilde{\nabla}\tilde{F} = 0$, then $\Delta_4 \tilde{F} = \tilde{\nabla}^{\natural}(\tilde{\nabla}\tilde{F}) = 0$; if $\tilde{F}\tilde{\nabla} = 0$, then $\Delta_4 \tilde{F} = (\tilde{F}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$, with the operators acting on the right.
+**Proof.** If $\tilde{\nabla}F^{\mathrm{fn}} = 0$, then $\Delta_4 F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}(\tilde{\nabla}F^{\mathrm{fn}}) = 0$; if $F^{\mathrm{fn}}\tilde{\nabla} = 0$, then $\Delta_4 F^{\mathrm{fn}} = (F^{\mathrm{fn}}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$, with the operators acting on the right.
 
-Consequently every regular function is real-analytic and enjoys the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates (article on biquaternion integration). Since each complex component is harmonic, the **mean value property** holds: for $\tilde{F}$ regular near the closed ball $\bar{B}(\tilde{Q}_0, r)$,
+Consequently every regular function is real-analytic and enjoys the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates (article on biquaternion integration). Since each complex component is harmonic, the **mean value property** holds: for $F^{\mathrm{fn}}$ regular near the closed ball $\bar{B}(\tilde{Q}_0, r)$,
 
 $$
-\tilde{F}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} \tilde{F}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} \tilde{F}\, dS,
+F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{|B(\tilde{Q}_0,r)|}\int_{B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dV = \frac{1}{|\partial B(\tilde{Q}_0,r)|}\int_{\partial B(\tilde{Q}_0,r)} F^{\mathrm{fn}}\, dS,
 $$
 
 with the ordinary measures on $\mathbb{R}^4$; the property follows equally from the Cauchy formula, the proof above showing that it is already a consequence of the factorization.
@@ -141,32 +141,32 @@ The principle is the Dirichlet principle, and it is standard; it is recorded her
 Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(A) = u(a,a') + i\,v(a,a')$ with $A = a + ia'$ and $u, v$ real-valued; then $u, v$ are harmonic and satisfy the Cauchy–Riemann equations $u_a = v_{a'}$, $u_{a'} = -v_a$. The **axial extension** of $f_0$ is
 
 $$
-\tilde{f}_0(\tilde{Q}) = u(q_0, \rho) + \hat u_{\mathrm d}\, v(q_0, \rho), \qquad \hat u_{\mathrm d} = \vec q/\rho,
+f^{\mathrm{ax}}_0(\tilde{Q}) = u(q_0, \rho) + \vec u_{\mathrm d}\, v(q_0, \rho), \qquad \vec u_{\mathrm d} = \vec q/\rho,
 $$
 
-defined for $\rho > 0$ by replacing $a$ by $q_0$, $a'$ by $\rho$, and the complex imaginary unit $i$ by $\hat u_{\mathrm d}$; the replacement is legitimate because $\hat u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity: writing $f_0 = f_{0,1} + i f_{0,2}$ with real-coefficient parts, one sets $\tilde{f}_0 = \tilde{f}_{0,1} + i\,\tilde{f}_{0,2}$.
+defined for $\rho > 0$ by replacing $a$ by $q_0$, $a'$ by $\rho$, and the complex imaginary unit $i$ by $\vec u_{\mathrm d}$; the replacement is legitimate because $\vec u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $f^{\mathrm{ax}}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity: writing $f_0 = f_{0,1} + i f_{0,2}$ with real-coefficient parts, one sets $f^{\mathrm{ax}}_0 = f^{\mathrm{ax}}_{0,1} + i\,f^{\mathrm{ax}}_{0,2}$.
 
 ### Fueter's Theorem
 
-**Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$, with axial extension $\tilde{f}_0$. Then
+**Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$, with axial extension $f^{\mathrm{ax}}_0$. Then
 
 $$
-\tilde{F}(\tilde{Q}) = \Delta_4\, \tilde{f}_0(\tilde{Q}) = \frac{2\,\partial_\rho u(q_0,\rho)}{\rho} + \hat u_{\mathrm d}\left(\frac{2\,\partial_\rho v(q_0,\rho)}{\rho} - \frac{2\,v(q_0,\rho)}{\rho^2}\right)
+F^{\mathrm{fn}}(\tilde{Q}) = \Delta_4\, f^{\mathrm{ax}}_0(\tilde{Q}) = \frac{2\,\partial_\rho u(q_0,\rho)}{\rho} + \vec u_{\mathrm d}\left(\frac{2\,\partial_\rho v(q_0,\rho)}{\rho} - \frac{2\,v(q_0,\rho)}{\rho^2}\right)
 $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-**Proof.** For $g = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$ with central $A, B$, one has $\partial_{q_k}A = (\partial_\rho A)(\hat u_{\mathrm d})_k$, $\sum_k e_k (\hat u_{\mathrm d})_k = \hat u_{\mathrm d}$, and $\sum_{j,k}(\partial_{q_k}(\hat u_{\mathrm d})_j)e_k e_j = (-3 - \hat u_{\mathrm d}^2)/\rho = -2/\rho$, because $\hat u_{\mathrm d}^2 = -1$. These give
+**Proof.** For $g = A(q_0,\rho) + \vec u_{\mathrm d}B(q_0,\rho)$ with central $A, B$, one has $\partial_{q_k}A = (\partial_\rho A)(\vec u_{\mathrm d})_k$, $\sum_k e_k (\vec u_{\mathrm d})_k = \vec u_{\mathrm d}$, and $\sum_{j,k}(\partial_{q_k}(\vec u_{\mathrm d})_j)e_k e_j = (-3 - \vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. These give
 
 $$
-\tilde{\nabla} g = g\tilde{\nabla} = \left(\partial_0 A - \partial_\rho B - \frac{2B}{\rho}\right) + \hat u_{\mathrm d}\,(\partial_0 B + \partial_\rho A),
+\tilde{\nabla} g = g\tilde{\nabla} = \left(\partial_0 A - \partial_\rho B - \frac{2B}{\rho}\right) + \vec u_{\mathrm d}\,(\partial_0 B + \partial_\rho A),
 $$
 
-so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial_0 A = \partial_\rho B + 2B/\rho$ and $\partial_0 B = -\partial_\rho A$. Using the radial form of $\Delta_{\mathbb{R}^3}$, the identity $\Delta_{\mathbb{R}^3}(B\hat u_{\mathrm d}) = \hat u_{\mathrm d}(\Delta_{\mathbb{R}^3}B - 2B/\rho^2)$, and the harmonicity of $u, v$, one gets $\Delta_4 \tilde{f}_0 = P + \hat u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho - v)/\rho^2$; the Cauchy–Riemann equations then give $Q_\rho + 2Q/\rho = \partial_0 P$ and $-P_\rho = \partial_0 Q$, and $P, Q$ extend continuously to $\rho = 0$.
+so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial_0 A = \partial_\rho B + 2B/\rho$ and $\partial_0 B = -\partial_\rho A$. Using the radial form of $\Delta_{\mathbb{R}^3}$, the identity $\Delta_{\mathbb{R}^3}(B\vec u_{\mathrm d}) = \vec u_{\mathrm d}(\Delta_{\mathbb{R}^3}B - 2B/\rho^2)$, and the harmonicity of $u, v$, one gets $\Delta_4 f^{\mathrm{ax}}_0 = P + \vec u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho - v)/\rho^2$; the Cauchy–Riemann equations then give $Q_\rho + 2Q/\rho = \partial_0 P$ and $-P_\rho = \partial_0 Q$, and $P, Q$ extend continuously to $\rho = 0$.
 
 ### The Kernel and Injectivity
 
-**Proposition.** The map $\tau(f_0) = \Delta_4 \tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(A) = a_1A + a_0$ with $a_0, a_1 \in \mathbb{C}$.
+**Proposition.** The map $\tau(f_0) = \Delta_4 f^{\mathrm{ax}}_0$ vanishes if and only if $f_0$ is affine, $f_0(A) = a_1A + a_0$ with $a_0, a_1 \in \mathbb{C}$.
 
 **Proof.** $\tau(f_0) = 0$ iff $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$, $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0 + d$ with $c, d \in \mathbb{R}$, and complex linearity gives all affine functions. Conversely, $\Delta_4$ annihilates constants and linear functions.
 
@@ -180,11 +180,11 @@ An imaginary unit is an element $I$ with $I^2 = -1$. On $\mathbb{H}_{\mathbb{B}}
 
 ### Axially Symmetric Functions and the Harmonic Coefficients
 
-A function is **axially symmetric** if $\tilde{F}(q_0 + \hat u_{\mathrm d}\rho)$ depends on the direction $\hat u_{\mathrm d}$ only through $\hat u_{\mathrm d}$. Such a function has the axial representation $\tilde{F}(\tilde{Q}) = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$, a sum over the two-element basis $\{1,\hat u_{\mathrm d}\}$ of the slice $\mathbb{C}_{\hat u_{\mathrm d}}$; $A$ and $B$ are the **axial coefficients**. For such a function the left- and right-regularity conditions coincide, by the computation in the proof of Fueter's theorem, and reduce to $\partial_0 A = \partial_\rho B + 2B/\rho$ and $\partial_0 B = -\partial_\rho A$. Eliminating $B$ gives $\Delta_4 A = 0$, so the scalar axial coefficient is harmonic, while $\Delta_4 B = 2B/\rho^2$. The Fueter construction realizes this class with $P = 2u_\rho/\rho$, $Q = 2v_\rho/\rho - 2v/\rho^2$, so the axial coefficients come from the harmonic conjugate pair $(u,v)$; conversely, in the classical Fueter correspondence every axially symmetric regular function with central axial coefficients arises this way, uniquely modulo the affine kernel.
+A function is **axially symmetric** if $F^{\mathrm{fn}}(q_0 + \vec u_{\mathrm d}\rho)$ depends on the direction $\vec u_{\mathrm d}$ only through $\vec u_{\mathrm d}$. Such a function has the axial representation $F^{\mathrm{fn}}(\tilde{Q}) = A(q_0,\rho) + \vec u_{\mathrm d}B(q_0,\rho)$, a sum over the two-element basis $\{1,\vec u_{\mathrm d}\}$ of the slice $\mathbb{C}_{\vec u_{\mathrm d}}$; $A$ and $B$ are the **axial coefficients**. For such a function the left- and right-regularity conditions coincide, by the computation in the proof of Fueter's theorem, and reduce to $\partial_0 A = \partial_\rho B + 2B/\rho$ and $\partial_0 B = -\partial_\rho A$. Eliminating $B$ gives $\Delta_4 A = 0$, so the scalar axial coefficient is harmonic, while $\Delta_4 B = 2B/\rho^2$. The Fueter construction realizes this class with $P = 2u_\rho/\rho$, $Q = 2v_\rho/\rho - 2v/\rho^2$, so the axial coefficients come from the harmonic conjugate pair $(u,v)$; conversely, in the classical Fueter correspondence every axially symmetric regular function with central axial coefficients arises this way, uniquely modulo the affine kernel.
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde{f}_0$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $a'$ by the radius). Then $\tilde{F} = \Delta^{(n-1)/2} \tilde{f}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial_0 + \sum_{j=1}^{n} e_j \partial_j$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f^{\mathrm{ax}}_0$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $a'$ by the radius). Then $F^{\mathrm{fn}} = \Delta^{(n-1)/2} f^{\mathrm{ax}}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial_0 + \sum_{j=1}^{n} e_j \partial_j$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
 
 Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **holomorphic** on $D(0,R)$, so its Taylor series converges there; the induced series then converges on $B(0,R)$, since $\Delta_4(\tilde{Q}^n)$ is a homogeneous polynomial of degree $n-2$ with at most polynomial growth in $n$, while $|a_n| r^n = O(1)$ for $r < R$ by Cauchy's estimates. Second, the construction has the **affine kernel** $a_1A + a_0$, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two, $a_0 = a_1 = 0$, equivalently one works modulo affine functions. Third, **parity**: $(n-1)/2$ must be a non-negative integer, so $n$ must be odd, as in the quaternion and biquaternion case $n = 3$.
 
@@ -198,23 +198,23 @@ $$
 
 The Fueter construction is precisely the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.
 
-For real Taylor coefficients, $\tilde{f}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$, and term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n \ge 0} a_n \Delta_4(\tilde{Q}^n)$, which begins at $n = 2$ and converges normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ has degree $n-2$ and at most polynomial growth; term-by-term differentiation is therefore justified. In general, with $\mathcal{P}_k$ the biquaternion-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \tilde{\nabla}P = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde{Q}^j \mathcal{M}_{k-j}$ gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $\tilde{F} = \sum_{k \ge 0} \tilde{F}_k$ with $\tilde{F}_k \in \mathcal{M}_k$, the analogue of the Taylor series of complex analysis.
+For real Taylor coefficients, $f^{\mathrm{ax}}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$, and term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n \ge 0} a_n \Delta_4(\tilde{Q}^n)$, which begins at $n = 2$ and converges normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ has degree $n-2$ and at most polynomial growth; term-by-term differentiation is therefore justified. In general, with $\mathcal{P}_k$ the biquaternion-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \tilde{\nabla}P = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde{Q}^j \mathcal{M}_{k-j}$ gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $F^{\mathrm{fn}} = \sum_{k \ge 0} F^{\mathrm{fn}}_k$ with $F^{\mathrm{fn}}_k \in \mathcal{M}_k$, the analogue of the Taylor series of complex analysis.
 
 ## The Biquaternionic Case
 
-On $\mathbb{H}_{\mathbb{B}}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $\tilde{G}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ satisfies $\tilde{\nabla}\tilde{G} = 0$ off the origin and $\tilde{\nabla}\tilde{G} = -2\pi^2 \delta_0 e_0$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
+On $\mathbb{H}_{\mathbb{B}}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 0$ off the origin and $\tilde{\nabla}G^{\mathrm{fn}} = -2\pi^2 \delta_0 e_0$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
 
-On $i\mathbb{H}_{\mathbb{B}}$ the theory is the same, up to the constant central factor by which the two gradients differ. Every coefficient there is purely imaginary, so the gradient is $\tilde{\nabla}_{i\mathbb{H}} = -i\,\tilde{\nabla}_{\mathbb{H}}$ in the same four coordinates; since $-i$ is an invertible central constant, $\tilde{\nabla}_{i\mathbb{H}}\tilde{F} = 0$ if and only if $\tilde{\nabla}_{\mathbb{H}}\tilde{F} = 0$. The left- and right-regular functions are therefore the same class as on $\mathbb{H}_{\mathbb{B}}$, and the Cauchy kernel is the kernel of $\mathbb{H}_{\mathbb{B}}$ multiplied by $i$. Only the second-order operator changes sign, $\tilde{\nabla}\tilde{\nabla}^{\natural} = -\Delta_4 e_0$; its solutions are again the ordinary harmonic functions, so the harmonicity, the mean value property, and the monogenic Taylor expansion carry over unchanged. In this sense $i\mathbb{H}_{\mathbb{B}}$ adds no new case to Fueter theory: it is the definite counterpart of $\mathbb{H}_{\mathbb{B}}$, as $\mathbb{M}_+$ is the indefinite counterpart of $\mathbb{M}_-$.
+On $i\mathbb{H}_{\mathbb{B}}$ the theory is the same, up to the constant central factor by which the two gradients differ. Every coefficient there is purely imaginary, so the gradient is $\tilde{\nabla}_{i\mathbb{H}} = -i\,\tilde{\nabla}_{\mathbb{H}}$ in the same four coordinates; since $-i$ is an invertible central constant, $\tilde{\nabla}_{i\mathbb{H}}F^{\mathrm{fn}} = 0$ if and only if $\tilde{\nabla}_{\mathbb{H}}F^{\mathrm{fn}} = 0$. The left- and right-regular functions are therefore the same class as on $\mathbb{H}_{\mathbb{B}}$, and the Cauchy kernel is the kernel of $\mathbb{H}_{\mathbb{B}}$ multiplied by $i$. Only the second-order operator changes sign, $\tilde{\nabla}\tilde{\nabla}^{\natural} = -\Delta_4 e_0$; its solutions are again the ordinary harmonic functions, so the harmonicity, the mean value property, and the monogenic Taylor expansion carry over unchanged. In this sense $i\mathbb{H}_{\mathbb{B}}$ adds no new case to Fueter theory: it is the definite counterpart of $\mathbb{H}_{\mathbb{B}}$, as $\mathbb{M}_+$ is the indefinite counterpart of $\mathbb{M}_-$.
 
 On $\mathbb{M}_-$ and $\mathbb{M}_+$ the second-order operator is the wave operator, $\Box_{\mathbb{M}_-} = (-\partial_{q'_0}^2 + \Delta_{\mathbb{R}^3})e_0$ and $\Box_{\mathbb{M}_+} = (\partial_{q_0}^2 - \Delta_{\mathbb{R}^3})e_0$, of signatures $(3,1)$ and $(1,3)$: hyperbolic, hence without elliptic regularity, and the axial coefficients then satisfy a wave-type system rather than a Laplace system. The zero divisors form the **null cone** $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$ on $\mathbb{M}_-$ (and $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ on $\mathbb{M}_+$), exactly where the biquaternion norm vanishes. Its nonzero elements are not invertible, so the pointwise inversion of $\tilde{Q}$ underlying the Cauchy kernel fails there, and the Euclidean kernel is not the fundamental solution of the gradient on these subspaces, as the articles on biquaternion integration and on biquaternion analysis on subspaces record. Domains for the Cauchy theory must avoid the cone, not merely the origin.
 
-On the full algebra $\mathbb{B}$ the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued, and its zero set is the **null quadric**, whose nonzero points are exactly the zero divisors and which has real dimension $6$. Every construction dividing by $\tilde{Q}$, and every kernel built from $\tilde{Q}^{-1}$, is therefore unavailable there. The Fueter operator is also not elliptic over $\mathbb{C}$: its symbol $\sum_\mu e_\mu \xi_\mu$ has norm $\sum_\mu \xi_\mu^2$, vanishing for nonzero complex covectors such as $(1, i, 0, 0)$, so ellipticity holds for real covectors but fails over $\mathbb{C}$ and the second-order operator is not the real Laplacian. Finally, the imaginary units are the larger family of the preceding section, so the slice structure must be built one root at a time. The Fueter theory is therefore developed on the four-dimensional subspaces, principally $\mathbb{H}_{\mathbb{B}}$, and extended to the indefinite subspaces only off the null cone; the full-algebra case remains the open problem noted in the article on biquaternion analysis.
+On the full algebra $\mathbb{B}$ the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued, and its zero set is the **null quadric**, whose nonzero points are exactly the zero divisors and which has real dimension $6$. Every construction dividing by $\tilde{Q}$, and every kernel built from $\tilde{Q}^{-1}$, is therefore unavailable there. The Fueter operator is also not elliptic over $\mathbb{C}$: its symbol $\sum_\mu e_\mu \xi_\mu$ has norm $\sum_\mu \xi_\mu^2$, vanishing for nonzero complex covectors such as $(1, i, 0, 0)$, so ellipticity holds for real covectors but fails over $\mathbb{C}$ and the second-order operator is not the real Laplacian. Finally, the imaginary units are the larger family of the preceding section, so the slice structure must be built one root at a time. The Fueter theory is therefore developed on the four-dimensional subspaces, principally $\mathbb{H}_{\mathbb{B}}$, and extended to the indefinite subspaces only off the null cone; the full-algebra case remains the open problem noted in the article on biquaternion analysis.
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_0$. On the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{H}_{\mathbb{B}}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property. The regularity condition has a variational origin as the Dirichlet principle of the Cauchy–Riemann operator: the Cauchy–Riemann energy and the Dirichlet energy differ by a null Lagrangian and share their Euler–Lagrange system, and the conjugate boundary data of Lanczos's 1919 statement selects the regular representative among the harmonic functions.
+The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_0$. On the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{H}_{\mathbb{B}}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and right-regularity $F^{\mathrm{fn}}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property. The regularity condition has a variational origin as the Dirichlet principle of the Cauchy–Riemann operator: the Cauchy–Riemann energy and the Dirichlet energy differ by a null Lagrangian and share their Euler–Lagrange system, and the conjugate boundary data of Lanczos's 1919 statement selects the regular representative among the harmonic functions.
 
-The Fueter construction sends a holomorphic $f_0$ to the induced function $\tilde{F} = \Delta_4 \tilde{f}_0 = 2u_\rho/\rho + \hat u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two. The Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$, under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. Regular functions have the induced series and the monogenic Taylor expansion, while slice-regular series form the distinct class that the construction converts into regular functions. On $\mathbb{H}_{\mathbb{B}}$ the origin is the only singularity, but on the full algebra the six-dimensional null quadric obstructs inversion, the Fueter operator is not elliptic over $\mathbb{C}$, and the imaginary units are no longer the sphere $S^2$; the full-algebra case remains open.
+The Fueter construction sends a holomorphic $f_0$ to the induced function $F^{\mathrm{fn}} = \Delta_4 f^{\mathrm{ax}}_0 = 2u_\rho/\rho + \vec u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two. The Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$, under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. Regular functions have the induced series and the monogenic Taylor expansion, while slice-regular series form the distinct class that the construction converts into regular functions. On $\mathbb{H}_{\mathbb{B}}$ the origin is the only singularity, but on the full algebra the six-dimensional null quadric obstructs inversion, the Fueter operator is not elliptic over $\mathbb{C}$, and the imaginary units are no longer the sphere $S^2$; the full-algebra case remains open.
 
 ## Summary of Notation
 
@@ -224,17 +224,17 @@ The Fueter construction sends a holomorphic $f_0$ to the induced function $\tild
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, with real coordinates $q_\mu$; the domain of Fueter theory |
 | $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, all coefficients purely imaginary; regularity is the same class as on $\mathbb{H}_{\mathbb{B}}$, with $\Box = -\Delta_4 e_0$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternion; $\tilde{Q} = \sum_\mu q_\mu e_\mu$ on $\mathbb{H}_{\mathbb{B}}$ |
-| $\vec q = \sum_k q_k e_k$, $\rho = \|\vec q\|_E$, $\hat u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, and its direction |
+| $\vec q = \sum_k q_k e_k$, $\rho = \|\vec q\|_E$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, and its direction |
 | $\tilde{\nabla} = \partial_0 + \vec D$, $\vec D = \sum_k e_k \partial_k$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
 | $\tilde{\nabla}^{\natural} = \partial_0 - \vec D$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu \partial_\mu^2$ | Four-dimensional Laplacian; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_0$ |
 | $\partial, \bar{\partial}$ | Planar Cauchy–Riemann operators, $\partial = \partial_a - i\partial_{a'}$, $\bar{\partial} = \partial_a + i\partial_{a'}$ (variational section) |
-| $\tilde{F}$ left-regular | $\tilde{\nabla}\tilde{F} = 0$; monogenic in Clifford language |
-| $\tilde{F}$ right-regular | $\tilde{F}\tilde{\nabla} = 0$ |
+| $F^{\mathrm{fn}}$ left-regular | $\tilde{\nabla}F^{\mathrm{fn}} = 0$; monogenic in Clifford language |
+| $F^{\mathrm{fn}}$ right-regular | $F^{\mathrm{fn}}\tilde{\nabla} = 0$ |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; on $\mathbb{H}_{\mathbb{B}}$ these form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ | Slice, a copy of the complex plane; slice-regular functions live on unions of slices |
-| $A, B$ | Axial coefficients of an axially symmetric function, $\tilde{F} = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$ |
-| $\tilde{f}_0$, $\Delta_4\tilde{f}_0$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced function |
+| $A, B$ | Axial coefficients of an axially symmetric function, $F^{\mathrm{fn}} = A(q_0,\rho) + \vec u_{\mathrm d}B(q_0,\rho)$ |
+| $f^{\mathrm{ax}}_0$, $\Delta_4f^{\mathrm{ax}}_0$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced function |
 | $\mathrm{Cl}_{0,n}$, $\mathrm{Cl}_{1,3}^{+}$ | Clifford algebras; $\mathbb{H}$ is $\mathrm{Cl}_{0,3}^{+}$ and $\mathbb{B}$ is $\mathrm{Cl}_{1,3}^{+}$ |
 
 ## Further Reading

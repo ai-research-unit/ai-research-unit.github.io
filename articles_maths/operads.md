@@ -103,7 +103,7 @@ which is not the solution $1-\sqrt{1-2u}$ of the substitution equation $F=u+\tfr
 
 *Proof.* A tree of the free operad has a root operation of some arity $p$, and the $p$ subtrees hanging from it are themselves trees; grouping by the root gives the functional equation, each vertex contributing its dimension and each arity $p$ vertex attached to $p$ subtrees. For the binary case $G=u+G^2$ is the defining equation of the Catalan numbers, whose explicit form is the standard solution by the quadratic formula and by the Lagrange inversion. The subtrees at a vertex are ordered in this decomposition, so each arity-$p$ vertex contributes $\dim_kM(p)$ and no factor $1/p!$ is present; the components are spanned by planar trees, whose leaves carry the symmetric-group action, and it is the ordinary generating function that the tree decomposition computes.
 
-**Example.** For $\mathcal{A}ss$ the generating function is $\sum_{n\ge0}n!\,t^n/n!=\frac{1}{1-t}$, and for $\mathcal{C}om$ it is $\sum_{n\ge0}t^n/n!=e^t$, reflecting the fact that $\mathcal{A}ss(n)=k[\Sigma_n]$ has dimension $n!$ while $\mathcal{C}om(n)=k$ has dimension $1$.
+**Example.** For $\mathcal{A}ss$ the generating function is $\sum_{n\ge0}n!\,t^n/n!=\frac{1}{1-t}$, and for $\mathcal{C}om$ it is $\sum_{n\ge0}t^n/n!=\exp(t)$, reflecting the fact that $\mathcal{A}ss(n)=k[\Sigma_n]$ has dimension $n!$ while $\mathcal{C}om(n)=k$ has dimension $1$.
 
 ## Bar and Cobar Constructions
 

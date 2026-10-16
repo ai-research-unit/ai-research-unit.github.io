@@ -11,7 +11,7 @@ Throughout, $\tilde q=q_0+\vec Q$ and $\tilde p=p_0+\vec P$ with $q_0,p_0\in\mat
 **Proposition (the square).** For $\tilde p=p_0+\vec P$,
 
 $$
-\tilde p^2=(p_0^2-|\vec P|^2)+2p_0\vec P .
+\tilde p^2=(p_0^2-|\vec P|^2)+2p_0\vec P.
 $$
 
 *Proof.* Expand: $p_0^2+2p_0\vec P+\vec P^2$. The square of a vector is the scalar $\vec P^2=-|\vec P|^2$, because the vector coordinates anticommute in pairs and $e_k^2=-e_0$; the cross terms cancel in pairs.
@@ -19,7 +19,7 @@ $$
 **Corollary.** The equation $\tilde p^2=\tilde q$ is the pair
 
 $$
-2p_0\vec P=\vec Q,\qquad p_0^2-|\vec P|^2=q_0 .
+2p_0\vec P=\vec Q,\qquad p_0^2-|\vec P|^2=q_0.
 $$
 
 The second is the **reduced quadratic** in the unknown $t=p_0^2$; when $\vec Q\neq0$ the first determines $\vec P=\vec Q/(2p_0)$ and the second becomes the quadratic
@@ -47,7 +47,7 @@ $$
 \begin{cases}
 \tilde p=\pm\sqrt{q_0}\,e_0, & q_0>0,\\
 \tilde p=0, & q_0=0,\\
-\tilde p=\vec P\in V,\quad |\vec P|^2=-q_0, & q_0<0 .
+\tilde p=\vec P\in V,\quad |\vec P|^2=-q_0, & q_0<0.
 \end{cases}
 $$
 

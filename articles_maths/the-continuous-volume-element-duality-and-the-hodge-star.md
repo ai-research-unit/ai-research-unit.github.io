@@ -18,15 +18,15 @@ $$
 \omega = e_{1}e_{2}\cdots e_{n}, \qquad \omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_{i}) ,
 $$
 
-the **volume element**, also called the pseudoscalar, as in *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*. It is a unit of the algebra because $\omega^{2}\neq0$ for a non-degenerate form, with $\omega^{-1}=\omega/\omega^{2}$, and it spans the top grade $\mathrm{Cl}_{n}(V,q)$.
+the **volume element**, also called the pseudoscalar, as in *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*. It is a unit of the algebra because $\omega^{2}\neq0$ for a non-degenerate form, with $\omega^{-1}=\omega/\omega^{2}$, and it spans the top grade $\mathrm{Cl}_{n}(V,\mathfrak{Q})$.
 
-**Proposition (the volume element depends continuously on the frame).** Let $\mathrm{Fr}(V)$ be the set of orthogonal frames, a subset of $V^{n}$ carrying the product topology, and let $\Phi : \mathrm{Fr}(V)\to\mathrm{Cl}(V,q)$ be the map $(e_{1},\dots,e_{n})\mapsto e_{1}\cdots e_{n}$. Then $\Phi$ is continuous.
+**Proposition (the volume element depends continuously on the frame).** Let $\mathrm{Fr}(V)$ be the set of orthogonal frames, a subset of $V^{n}$ carrying the product topology, and let $\Phi : \mathrm{Fr}(V)\to\mathrm{Cl}(V,\mathfrak{Q})$ be the map $(e_{1},\dots,e_{n})\mapsto e_{1}\cdots e_{n}$. Then $\Phi$ is continuous.
 
 *Proof.* The product of the algebra is bilinear, and a multilinear map on a finite product of finite-dimensional spaces is continuous; the composite of the $n$-fold product map with the inclusion of the frame is therefore continuous. The set of orthogonal frames is the preimage of the closed set where the polar form vanishes off the diagonal and is nonzero on the diagonal, hence a closed condition intersected with the open condition of linear independence; its exact topology does not matter for the continuity of $\Phi$, which holds on all of $V^{n}$.
 
-**Proposition (the volume elements form an open set).** The set $U$ of volume elements of the algebra, that is, the set of units of the top grade, is open in the one-dimensional space $\mathrm{Cl}_{n}(V,q)$ and equals $\mathrm{Cl}_{n}(V,q)\setminus\{0\}$; over $\mathbb{R}$ it has two connected components, $\{\lambda\omega : \lambda>0\}$ and $\{\lambda\omega : \lambda<0\}$, which are the two orientations of $V$. The assignment $\omega\mapsto\star_{\omega}$, $\star_{\omega}(A)=A\omega^{-1}$, is continuous on $U$.
+**Proposition (the volume elements form an open set).** The set $U$ of volume elements of the algebra, that is, the set of units of the top grade, is open in the one-dimensional space $\mathrm{Cl}_{n}(V,\mathfrak{Q})$ and equals $\mathrm{Cl}_{n}(V,\mathfrak{Q})\setminus\{0\}$; over $\mathbb{R}$ it has two connected components, $\{\lambda\omega : \lambda>0\}$ and $\{\lambda\omega : \lambda<0\}$, which are the two orientations of $V$. The assignment $\omega\mapsto\star_{\omega}$, $\star_{\omega}(A)=A\omega^{-1}$, is continuous on $U$.
 
-*Proof.* The regular representation $x\mapsto L_{x}$ is an injective linear map of the algebra into $\operatorname{End}(\mathrm{Cl}(V,q))$, since $L_{x}=0$ implies $x=L_{x}(1)=0$; the units of the algebra are the preimage of the open set of invertible endomorphisms, hence open, and their intersection with the top grade is $\mathrm{Cl}_{n}\setminus\{0\}$ because every nonzero element of a one-dimensional space is a unit when the ambient algebra is unital and finite-dimensional. The one-dimensional real space minus the origin has two components, and the star is the composite of the continuous inverse and the continuous left multiplication, hence continuous in the pair $(\omega,A)$ and in particular in $\omega$ for fixed $A$.
+*Proof.* The regular representation $x\mapsto L_{x}$ is an injective linear map of the algebra into $\operatorname{End}(\mathrm{Cl}(V,\mathfrak{Q}))$, since $L_{x}=0$ implies $x=L_{x}(1)=0$; the units of the algebra are the preimage of the open set of invertible endomorphisms, hence open, and their intersection with the top grade is $\mathrm{Cl}_{n}\setminus\{0\}$ because every nonzero element of a one-dimensional space is a unit when the ambient algebra is unital and finite-dimensional. The one-dimensional real space minus the origin has two components, and the star is the composite of the continuous inverse and the continuous left multiplication, hence continuous in the pair $(\omega,A)$ and in particular in $\omega$ for fixed $A$.
 
 **Remark (the star changes sign with the orientation).** Reversing the orientation of the frame replaces $\omega$ by $-\omega$ and hence $\star$ by $-\star$; the star is therefore not a function of the form alone but a section of a two-fold covering over the space of orientations, and the sign of the star is exactly the orientation. This is the topological form of the statement of *The Volume Element, Duality and the Hodge Star*, §*The Hodge Star* that the map depends on the orientation.
 
@@ -34,9 +34,9 @@ the **volume element**, also called the pseudoscalar, as in *The Volume Element,
 
 ### The Complement Map
 
-**Definition.** For $A\in\mathrm{Cl}(V,q)$ the **right complement** is $A\omega$ and the **left complement** is $\omega A$, as in *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*.
+**Definition.** For $A\in\mathrm{Cl}(V,\mathfrak{Q})$ the **right complement** is $A\omega$ and the **left complement** is $\omega A$, as in *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*.
 
-**Theorem (the complement map is a homeomorphism).** Let $A$ have grade $k$. Then $A\omega$ and $\omega A$ have grade $n-k$, and the maps $A\mapsto A\omega$ and $A\mapsto\omega A$ are continuous linear isomorphisms $\mathrm{Cl}_{k}(V,q)\to\mathrm{Cl}_{n-k}(V,q)$ whose inverses are continuous.
+**Theorem (the complement map is a homeomorphism).** Let $A$ have grade $k$. Then $A\omega$ and $\omega A$ have grade $n-k$, and the maps $A\mapsto A\omega$ and $A\mapsto\omega A$ are continuous linear isomorphisms $\mathrm{Cl}_{k}(V,\mathfrak{Q})\to\mathrm{Cl}_{n-k}(V,\mathfrak{Q})$ whose inverses are continuous.
 
 *Proof.* The algebraic statement, that multiplication by $\omega$ lowers the grade to its complement and is a bijection, is the theorem of *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*. Continuity: the algebra is finite-dimensional over a topological field, so every linear map on it is continuous, and a linear isomorphism between spaces of the same finite dimension has a linear inverse, which is likewise continuous.
 
@@ -45,12 +45,12 @@ the **volume element**, also called the pseudoscalar, as in *The Volume Element,
 **Definition.** The **duality pairing** of the grades $k$ and $n-k$ is
 
 $$
-\beta_{k} : \mathrm{Cl}_{k}(V,q)\times\mathrm{Cl}_{n-k}(V,q)\to F, \qquad \beta_{k}(x,y)\,\omega = \langle xy\rangle_{n} ,
+\beta_{k} : \mathrm{Cl}_{k}(V,\mathfrak{Q})\times\mathrm{Cl}_{n-k}(V,\mathfrak{Q})\to F, \qquad \beta_{k}(x,y)\,\omega = \langle xy\rangle_{n} ,
 $$
 
 where $\langle\cdot\rangle_{n}$ is the grade projection onto the top grade of *The Continuous Grade Decomposition and the Filtration*, §*The Grade Projections*, and the top grade is identified with $F$ through the chosen volume element; the pairing depends on the choice of $\omega$ by the same sign as the orientation.
 
-**Theorem.** The pairing $\beta_{k}$ is bilinear and continuous, and it is non-degenerate; consequently the induced map $x\mapsto\beta_{k}(x,-)$ is a continuous linear isomorphism $\mathrm{Cl}_{k}(V,q)\to(\mathrm{Cl}_{n-k}(V,q))^{*}$ of the grade onto the dual of its complement.
+**Theorem.** The pairing $\beta_{k}$ is bilinear and continuous, and it is non-degenerate; consequently the induced map $x\mapsto\beta_{k}(x,-)$ is a continuous linear isomorphism $\mathrm{Cl}_{k}(V,\mathfrak{Q})\to(\mathrm{Cl}_{n-k}(V,\mathfrak{Q}))^{*}$ of the grade onto the dual of its complement.
 
 *Proof.* Bilinearity is the bilinearity of the product and the linearity of the grade projection. Continuity is automatic in finite dimension, the pairing being bilinear on a finite product of finite-dimensional spaces. For non-degeneracy, let $x\neq0$ in grade $k$ and choose a basis blade $e_{I}$ with nonzero coefficient in $x$; then $\beta_{k}(e_{I},e_{J})=\pm1$ for $J$ the complementary index set, since $e_{I}e_{J}=\pm\omega$ with a sign that is $\pm1$ for an orthogonal basis, by the computation of *The Volume Element, Duality and the Hodge Star*, §*The Complement Map*. Hence $\beta_{k}(x,e_{J})\neq0$ for that $J$, so $x$ is not annihilated; the same argument on the other side, using $\omega$ central up to sign, shows that a nonzero $y$ in grade $n-k$ is not annihilated either. A bilinear form on finite-dimensional spaces of equal dimension is non-degenerate if and only if the induced map to the dual is injective, hence bijective, and the inverse is linear and therefore continuous.
 
@@ -65,12 +65,12 @@ where $\langle\cdot\rangle_{n}$ is the grade projection onto the top grade of *T
 **Definition.** The **Hodge star** of the volume element $\omega$ is the linear map
 
 $$
-\star : \mathrm{Cl}(V,q)\to\mathrm{Cl}(V,q), \qquad \star A = A\omega^{-1} ,
+\star : \mathrm{Cl}(V,\mathfrak{Q})\to\mathrm{Cl}(V,\mathfrak{Q}), \qquad \star A = A\omega^{-1} ,
 $$
 
 homogeneous of degree $-2k$ on the grade $k$ in the sense that it maps $\mathrm{Cl}_{k}$ to $\mathrm{Cl}_{n-k}$, as in *The Volume Element, Duality and the Hodge Star*, §*The Hodge Star*; it is continuous, being linear on a finite-dimensional space, and it is a homeomorphism with inverse $\star^{-1}$ of the same form for $\omega^{-1}$.
 
-**Theorem (the square).** On the grade $\mathrm{Cl}_{k}(V,q)$ one has $\star\star=(\omega^{2})^{-1}\mathrm{id}$, a scalar; when $\omega^{2}=1$ the star is an involution on the algebra, when $\omega^{2}=-1$ it is a complex structure, and in general it is a scalar multiple of one of the two on each grade.
+**Theorem (the square).** On the grade $\mathrm{Cl}_{k}(V,\mathfrak{Q})$ one has $\star\star=(\omega^{2})^{-1}\mathrm{id}$, a scalar; when $\omega^{2}=1$ the star is an involution on the algebra, when $\omega^{2}=-1$ it is a complex structure, and in general it is a scalar multiple of one of the two on each grade.
 
 *Proof.* The computation $\star\star A=A\omega^{-2}=(\omega^{2})^{-1}A$ is that of *The Volume Element, Duality and the Hodge Star*, §*The Hodge Star*, and the scalar commutes with $A$ because $\omega^{2}$ is central. The two cases are then the definitions of an involution and of a complex structure, and in the remaining cases $(\omega^{2})^{-1}$ is a scalar which is neither $1$ nor $-1$ and the star has square an arbitrary scalar, so no order-two statement is available.
 
@@ -79,14 +79,14 @@ homogeneous of degree $-2k$ on the grade $k$ in the sense that it maps $\mathrm{
 **Theorem (the involutive case).** Let $\omega^{2}=1$, so that $\star$ is an involution. Then the spectral projections $\tfrac12(\mathrm{id}\pm\star)$ are continuous linear maps and
 
 $$
-\mathrm{Cl}_{k}(V,q) = \mathrm{Cl}_{k}^{+}\oplus\mathrm{Cl}_{k}^{-}, \qquad \mathrm{Cl}_{k}^{\pm}=\{x : \star x=\pm x\} ,
+\mathrm{Cl}_{k}(V,\mathfrak{Q}) = \mathrm{Cl}_{k}^{+}\oplus\mathrm{Cl}_{k}^{-}, \qquad \mathrm{Cl}_{k}^{\pm}=\{x : \star x=\pm x\} ,
 $$
 
 is a topological direct sum of the self-dual and the anti-self-dual parts; the two are interchanged by an orientation-reversing isometry and preserved by an orientation-preserving one.
 
 *Proof.* A linear involution on a vector space over a field of characteristic not $2$ is diagonalisable with eigenvalues $\pm1$ and its spectral projections are $\tfrac12(\mathrm{id}\pm\star)$, which are continuous because $\star$ is; a direct sum split by continuous projections is topological, and the eigenspaces are closed. The action of an isometry is the algebraic statement of *The Hodge Star and the Real Structure of the Exterior Algebra*, §*The Real Structure*, transported along the symbol isomorphism, which is continuous.
 
-**Theorem (the complex case).** Let $\omega^{2}=-1$, so that $\star$ is a complex structure. Then the grade $\mathrm{Cl}_{k}(V,q)$ is a topological complex vector space with $i$ acting as $\star$, the action $\mathbb{C}\times\mathrm{Cl}_{k}\to\mathrm{Cl}_{k}$, $(a+ib,x)\mapsto ax+b\star x$, is continuous, the complex dimension is $\tfrac{1}{2}\dim\mathrm{Cl}_{k}$ when the dimension is even, and $\star$ is complex-linear.
+**Theorem (the complex case).** Let $\omega^{2}=-1$, so that $\star$ is a complex structure. Then the grade $\mathrm{Cl}_{k}(V,\mathfrak{Q})$ is a topological complex vector space with $i$ acting as $\star$, the action $\mathbb{C}\times\mathrm{Cl}_{k}\to\mathrm{Cl}_{k}$, $(a+ib,x)\mapsto ax+b\star x$, is continuous, the complex dimension is $\tfrac{1}{2}\dim\mathrm{Cl}_{k}$ when the dimension is even, and $\star$ is complex-linear.
 
 *Proof.* The algebraic statements are *The Hodge Star and the Real Structure of the Exterior Algebra*, §*The Complex Structure*: an operator with square $-1$ defines a module structure over $F[i]$ with $i$ acting as the operator, and the minimal polynomial divides $T^{2}+1$, halving the dimension. The continuity of the scalar action is the continuity of the two operations that define it, the multiplication by the scalar and the operator $\star$.
 
@@ -102,7 +102,7 @@ is a topological direct sum of the self-dual and the anti-self-dual parts; the t
 
 **Proposition.** The cross product is a continuous bilinear map $V\times V\to V$; the induced map $\Lambda^{2}V\to V$ is a homeomorphism; and the scalar triple product $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$ is a continuous trilinear form.
 
-*Proof.* The cross product is bilinear and $V$ is finite-dimensional, so it is continuous; the induced map from the bivectors to the vectors is the star restricted to $\Lambda^{2}$ composed with the identification of bivectors with the vectors of a three-dimensional space, both linear isomorphisms between finite-dimensional spaces, hence homeomorphisms. The triple product is a composite of continuous multilinear maps. The algebraic identities, including the Lagrange identity $q(a\times b)=q(a)q(b)-B(a,b)^{2}$, are those of the Part I article and are polynomial identities, hence continuous.
+*Proof.* The cross product is bilinear and $V$ is finite-dimensional, so it is continuous; the induced map from the bivectors to the vectors is the star restricted to $\Lambda^{2}$ composed with the identification of bivectors with the vectors of a three-dimensional space, both linear isomorphisms between finite-dimensional spaces, hence homeomorphisms. The triple product is a composite of continuous multilinear maps. The algebraic identities, including the Lagrange identity $\mathfrak{Q}(a\times b)=\mathfrak{Q}(a)\mathfrak{Q}(b)-B(a,b)^{2}$, are those of the Part I article and are polynomial identities, hence continuous.
 
 **Remark (the exterior Hodge star is continuous).** The Hodge star of the exterior algebra of *The Hodge Star and the Real Structure of the Exterior Algebra* is the present star read through the symbol isomorphism; since the symbol map is a homeomorphism in finite dimension, by *The Continuous Grade Decomposition and the Filtration*, §*The Symbol Map and the Two Topologies*, every continuity statement proved here transfers to the exterior reading, and conversely. The function-theoretic star of differential forms on a manifold is not this operation and is not read in this corpus at this layer: the exterior derivative, the codifferential and the Laplacian are Analysis, and the Hodge theorem is Geometry.
 
@@ -120,7 +120,7 @@ is a topological direct sum of the self-dual and the anti-self-dual parts; the t
 
 ### The Indefinite Case and the Duality Pairing
 
-**Example ($\mathrm{Cl}_{1,1}$).** Let $V=\mathbb{R}^{2}$ with $q(e_{1})=1$, $q(e_{2})=-1$ and $\omega=e_{1}e_{2}$, of square $+1$. The star is an involution exchanging the two coordinate directions, and the top grade with the scalars; its eigenspaces in the algebra are of dimension two each, and the projections $\tfrac12(\mathrm{id}\pm\star)$ are the two idempotents $\tfrac12(1\pm\omega)$ of the algebra, which are the two primitive idempotents of the matrix algebra $M_{2}(\mathbb{R})$ under the identification $\mathrm{Cl}_{1,1}\cong M_{2}(\mathbb{R})$ of *The Low-Dimensional Classification*. The example is the smallest indefinite case and shows that the sign of $\omega^{2}$, not the definiteness of the form, decides which of the two order-two cases holds.
+**Example ($\mathrm{Cl}_{1,1}$).** Let $V=\mathbb{R}^{2}$ with $\mathfrak{Q}(e_{1})=1$, $\mathfrak{Q}(e_{2})=-1$ and $\omega=e_{1}e_{2}$, of square $+1$. The star is an involution exchanging the two coordinate directions, and the top grade with the scalars; its eigenspaces in the algebra are of dimension two each, and the projections $\tfrac12(\mathrm{id}\pm\star)$ are the two idempotents $\tfrac12(1\pm\omega)$ of the algebra, which are the two primitive idempotents of the matrix algebra $M_{2}(\mathbb{R})$ under the identification $\mathrm{Cl}_{1,1}\cong M_{2}(\mathbb{R})$ of *The Low-Dimensional Classification*. The example is the smallest indefinite case and shows that the sign of $\omega^{2}$, not the definiteness of the form, decides which of the two order-two cases holds.
 
 **Example (the duality in three dimensions).** On $\mathbb{R}^{3}$ with the positive definite form, the pairing $\beta_{1}$ of vectors with bivectors is non-degenerate and the star identifies $\mathrm{Cl}_{1}$ with $\mathrm{Cl}_{2}$; the induced identification of the vectors with their dual is the one that gives the scalar triple product, and the cross product is the composite of the wedge product with the star. All the maps are continuous and finite-dimensional, and the example is the classical one of the duality of three-dimensional space read in the layer.
 
@@ -136,8 +136,8 @@ The **cross product** of three-dimensional space is the star of the outer produc
 
 | symbol | meaning |
 |---|---|
-| $\omega=e_{1}\cdots e_{n}$, $\omega^{2}=(-1)^{n(n-1)/2}\prod q(e_{i})$ | the volume element and its square |
-| $\mathrm{Cl}_{n}(V,q)\setminus\{0\}$ | the volume elements, open, two components over $\mathbb{R}$ |
+| $\omega=e_{1}\cdots e_{n}$, $\omega^{2}=(-1)^{n(n-1)/2}\prod \mathfrak{Q}(e_{i})$ | the volume element and its square |
+| $\mathrm{Cl}_{n}(V,\mathfrak{Q})\setminus\{0\}$ | the volume elements, open, two components over $\mathbb{R}$ |
 | $A\omega$, $\omega A$ | the right and the left complement, homeomorphisms $\mathrm{Cl}_{k}\to\mathrm{Cl}_{n-k}$ |
 | $\beta_{k}(x,y)\omega=\langle xy\rangle_{n}$ | the duality pairing, continuous and non-degenerate |
 | $\star A=A\omega^{-1}$ | the Hodge star, a continuous homeomorphism |

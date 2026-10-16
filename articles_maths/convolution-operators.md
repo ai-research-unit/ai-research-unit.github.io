@@ -17,10 +17,10 @@ which is read off from the profile by Young's inequality when the profile is int
 multiplier by Plancherel when it is not.
 
 The prerequisites are *Measure Theory and Integration* for the convolution of integrable functions, the
-$L^p$ spaces and Hölder's and Minkowski's inequalities, *Fourier Analysis on Euclidean Spaces* for the
-transform $\hat f(\xi)=\int f(x)e^{-2\pi ix\cdot\xi}dx$, the convolution theorem, the Plancherel theorem,
+$L^{n}$ spaces and Hölder's and Minkowski's inequalities, *Fourier Analysis on Euclidean Spaces* for the
+transform $(\mathcal F f)(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$, the convolution theorem, the Plancherel theorem,
 the multiplier theorem of Mihlin and Hörmander, and the Hilbert and Riesz transforms, *Modes of
-Convergence* for convergence in $L^p$, and *The Integral Operator*, the previous article of this group,
+Convergence* for convergence in $L^{n}$, and *The Integral Operator*, the previous article of this group,
 for the kernel form, the Hilbert–Schmidt class and compactness. Nothing beyond the transform on
 $\mathbb R^n$ is assumed; the convolution algebra of a general locally compact abelian group, the measure
 algebra and the characters are the subject of *Harmonic Analysis on Groups*, in the neighbouring category
@@ -64,13 +64,13 @@ operators compose by $T_kT_l=T_{k*l}=T_lT_k$.
 **Proof.** Commutativity and associativity are the change of variable $z=x-y$ and Fubini–Tonelli;
 the norm inequality is Fubini. The composition is the kernel product of *The Integral Operator*,
 $(k*l)(x-y)=\int k(x-z)l(z-y)\,dz$. There is no identity: an identity $\delta$ would satisfy
-$k*\delta=k$, and taking the Fourier transform below would give $\hat k\hat\delta=\hat k$ for every
-$k\in L^1$ with $\hat k\not\equiv0$, so $\hat\delta\equiv1$, which is not the transform of an $L^1$
+$k*\delta=k$, and taking the Fourier transform below would give $\mathcal F k\,\mathcal F\delta=\mathcal F k$ for every
+$k\in L^1$ with $\mathcal F k\not\equiv0$, so $\mathcal F\delta\equiv1$, which is not the transform of an $L^1$
 function; the point mass at $0$ has this property but is not an $L^1$ function.
 
 **Example (approximate identities).** A sequence $\phi_m\in L^1$ with $\int\phi_m=1$, $\lVert\phi_m\rVert_1$
 bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_m\rvert\to0$ for every $\delta>0$ satisfies
-$T_{\phi_m}f=\phi_m*f\to f$ in $L^p$ for $1\leq p<\infty$ and at every Lebesgue point of $f$, by
+$T_{\phi_m}f=\phi_m*f\to f$ in $L^{n}$ for $1\leq p<\infty$ and at every Lebesgue point of $f$, by
 *Fourier Analysis on Euclidean Spaces*; the family is an approximate identity for the algebra, though not
 an identity.
 
@@ -89,7 +89,7 @@ $\lVert a*b\rVert_1\leq\lVert a\rVert_1\lVert b\rVert_1$.
 
 **Example (the circle).** For $k\in L^1(\mathbb T)$ with $\mathbb T=\mathbb R/\mathbb Z$ the operator
 $(T_kf)(x)=\int_{\mathbb T}k(x-y)f(y)\,dy$ acts on $L^2(\mathbb T)$, and its eigenfunctions are the
-characters $e_m(x)=e^{2\pi imx}$ with eigenvalues the Fourier coefficients $\hat k(m)$.
+characters $e_m(x)=\exp(2\pi imx)$ with eigenvalues the Fourier coefficients $(\mathcal F k)(m)$.
 
 The two examples are the cases $G=\mathbb Z$ and $G=\mathbb T$ of the convolution algebra $L^1(G)$ whose
 general theory belongs to *Harmonic Analysis on Groups*, and they are recorded here because every theorem
@@ -103,24 +103,24 @@ whose multiplier is not a function of a continuous variable.
 **Theorem (the convolution theorem).** For $k,f\in L^1(\mathbb R^n)$ the transform of the convolution is
 the product of the transforms,
 $$
-\widehat{(k*f)}(\xi)=\hat k(\xi)\hat f(\xi),
+\mathcal F(k*f)(\xi)=(\mathcal F k)(\xi)(\mathcal F f)(\xi),
 $$
-with the normalisation $\hat f(\xi)=\int f(x)e^{-2\pi ix\cdot\xi}dx$ fixed by *Fourier Analysis on
+with the normalisation $(\mathcal F f)(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$ fixed by *Fourier Analysis on
 Euclidean Spaces*.
 
 **Proof.** By Fubini–Tonelli and the change of variable $z=x-y$, the double integral
-$\iint k(y)f(x-y)e^{-2\pi ix\cdot\xi}dy\,dx$ equals
-$\int k(y)e^{-2\pi iy\cdot\xi}dy\int f(z)e^{-2\pi iz\cdot\xi}dz$, and the two factors are
-$\hat k(\xi)$ and $\hat f(\xi)$.
+$\iint k(y)f(x-y)\exp(-2\pi ix\cdot\xi)dy\,dx$ equals
+$\int k(y)\exp(-2\pi iy\cdot\xi)dy\int f(z)\exp(-2\pi iz\cdot\xi)dz$, and the two factors are
+$(\mathcal F k)(\xi)$ and $(\mathcal F f)(\xi)$.
 
 **Definition.** A **Fourier multiplier** is a function $m\in L^\infty(\mathbb R^n)$, and the
 **multiplier operator** it defines is
 $$
-T_mf=\mathcal F^{-1}(m\hat f),
+T_mf=\mathcal F^{-1}(m\,\mathcal F f),
 $$
 where $\mathcal F$ is the Fourier transform as an operator on $L^2(\mathbb R^n)$ and $\mathcal F^{-1}$ its
 inverse; the function $m$ is the **symbol** of $T_m$. For $k\in L^1$ the convolution theorem says that
-$T_k=T_{\hat k}$ on the intersection $L^1\cap L^2$, and therefore on all of $L^2$: **the multiplier of a
+$T_k=T_{\mathcal F k}$ on the intersection $L^1\cap L^2$, and therefore on all of $L^2$: **the multiplier of a
 convolution operator is the Fourier transform of its profile.**
 
 ### Boundedness on $L^2$
@@ -139,22 +139,22 @@ positive finite measure on which $\lvert m\rvert\geq\lVert m\rVert_\infty-\epsil
 
 **Corollary.** For $k\in L^1(\mathbb R^n)$ the convolution operator is bounded on $L^2$ with
 $$
-\lVert T_k\rVert_{L^2\to L^2}=\lVert\hat k\rVert_\infty\leq\lVert k\rVert_1 ,
+\lVert T_k\rVert_{L^2\to L^2}=\lVert\mathcal F k\rVert_\infty\leq\lVert k\rVert_1 ,
 $$
-the equality being the theorem and the inequality the trivial bound $\lvert\hat k\rvert\leq\lVert k\rVert_1$;
-the inequality is strict unless $\lvert\hat k\rvert=\lVert k\rVert_1$ almost everywhere, and the two
+the equality being the theorem and the inequality the trivial bound $\lvert\mathcal F k\rvert\leq\lVert k\rVert_1$;
+the inequality is strict unless $\lvert\mathcal F k\rvert=\lVert k\rVert_1$ almost everywhere, and the two
 quantities agree for the Poisson kernel of the examples below.
 
-## Boundedness on $L^p$
+## Boundedness on $L^{n}$
 
 ### Young's Inequality
 
-**Theorem (Young).** For $1\leq p,q,r\leq\infty$ with $1+1/r=1/p+1/q$ and $k\in L^p$, $f\in L^q$,
+**Theorem (Young).** For $1\leq p,q,r\leq\infty$ with $1+1/r=1/n + 1/m$ and $k\in L^{n}$, $f\in L^{m}$,
 $$
 \lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q .
 $$
-In particular, for $k\in L^1$ the operator $T_k$ is bounded on every $L^p$, $1\leq p\leq\infty$, with
-$\lVert T_k\rVert_{L^p\to L^p}\leq\lVert k\rVert_1$.
+In particular, for $k\in L^1$ the operator $T_k$ is bounded on every $L^{n}$, $1\leq p\leq\infty$, with
+$\lVert T_k\rVert_{L^{n}}\to L^{n}\leq\lVert k\rVert_1$.
 
 **Proof.** The case $p=1$, $q=r$ is Minkowski's integral inequality applied to
 $\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$; the case $q=1$ is the same by
@@ -162,9 +162,9 @@ commutativity of the convolution; and the general case follows from these two by
 interpolation theorem of *Fourier Analysis on Euclidean Spaces*.
 
 **Corollary (the profile-to-operator map).** The map $k\mapsto T_k$ is an injective algebra homomorphism
-of the commutative Banach algebra $L^1(\mathbb R^n)$ into the algebra of bounded operators on $L^p$, for
-each $p$; it is an isometry onto its image for $p=2$ exactly when $\lvert\hat k\rvert$ is constant, and it
-is injective because $\hat k=0$ forces $k=0$ almost everywhere.
+of the commutative Banach algebra $L^1(\mathbb R^n)$ into the algebra of bounded operators on $L^{n}$, for
+each $p$; it is an isometry onto its image for $p=2$ exactly when $\lvert\mathcal F k\rvert$ is constant, and it
+is injective because $\mathcal F k=0$ forces $k=0$ almost everywhere.
 
 **Proof.** Linearity and multiplicativity are the profile algebra; the injectivity is the injectivity of
 the Fourier transform on $L^1$, which follows from the inversion theorem of *Fourier Analysis on Euclidean
@@ -177,8 +177,8 @@ the following, whose proof is the multiplier theorem of the Fourier article.
 
 **Theorem (Mihlin–Hörmander).** Let $m\in C^k(\mathbb R^n\setminus\{0\})$ with
 $\lvert\partial^\alpha m(\xi)\rvert\leq C_\alpha\lvert\xi\rvert^{-\lvert\alpha\rvert}$ for every
-$\lvert\alpha\rvert\leq k>n/2$. Then $T_m$ is bounded on $L^p(\mathbb R^n)$ for every $1<p<\infty$, with
-$\lVert T_m\rVert_{L^p\to L^p}\leq C_{p,n}\sup_{\lvert\alpha\rvert\leq k}C_\alpha$.
+$\lvert\alpha\rvert\leq k>n/2$. Then $T_m$ is bounded on $L^{n}(\mathbb R^n)$ for every $1<p<\infty$, with
+$\lVert T_m\rVert_{L^{n}}\to L^{n}\leq C_{p,n}\sup_{\lvert\alpha\rvert\leq k}C_\alpha$.
 
 **Proof sketch.** This is proved in *Fourier Analysis on Euclidean Spaces* by decomposing $m$ into pieces
 supported on dyadic annuli and realising each piece as convolution with an $L^1$ function of controlled
@@ -187,7 +187,7 @@ the Hilbert and Riesz transforms show that the endpoint $p=1$ and $p=\infty$ fai
 
 The theorem shows that the convolution theorem is not the only source of multipliers: the Hilbert
 transform has symbol $-i\operatorname{sgn}(\xi)$, which is not the Fourier transform of any $L^1$ function,
-and it is bounded on $L^p$ for $1<p<\infty$ and of weak type $(1,1)$ but not bounded on $L^1$.
+and it is bounded on $L^{n}$ for $1<p<\infty$ and of weak type $(1,1)$ but not bounded on $L^1$.
 
 ### Convolution Operators and Translation Invariance
 
@@ -198,13 +198,13 @@ $\lVert A\rVert=\lVert m\rVert_\infty$. Conversely every $T_m$ is bounded and co
 translation.
 
 **Proof sketch.** Conjugating by the unitary $\mathcal F$, the translations become the multiplications by
-the characters $e_\xi(y)=e^{-2\pi iy\cdot\xi}$, so $\mathcal FAA^{-1}$ commutes with $M_{e_\xi}$ for every
+the characters $e_\xi(y)=\exp(-2\pi iy\cdot\xi)$, so $\mathcal FAA^{-1}$ commutes with $M_{e_\xi}$ for every
 $\xi$. An operator $B$ on $L^2$ of a finite measure space commuting with $M_f$ for every
 $f\in L^\infty$ is itself a multiplication operator: putting $g=B\mathbf 1$, for every bounded $f$ one
 has $Bf=B M_f\mathbf 1=M_fB\mathbf 1=fg$, and the identity extends by density and continuity. The
 characters generate $L^\infty(\mathbb R^n)$ in the strong operator topology — this is the abelian case of
 the duality theory behind the Gelfand transform — so the hypothesis gives such a $B$ with
-$B=M_m$, and $\tilde A=\mathcal F A\mathcal F^{-1}=M_m$ with $m\in L^\infty$. The uniqueness of $m$ and the
+$B=M_m$, and $A^{\wedge}=\mathcal F A\mathcal F^{-1}=M_m$ with $m\in L^\infty$. The uniqueness of $m$ and the
 norm are the preceding theorem, and the converse is the definition. The $\sigma$-finite case is reduced to
 the finite one by exhausting $\mathbb R^n$ with sets of finite measure.
 
@@ -222,17 +222,17 @@ of this Part.
 ## Examples
 
 **Example (the heat semigroup).** The heat kernel of *Fourier Analysis on Euclidean Spaces*,
-$K_t(x)=(4\pi t)^{-n/2}e^{-\lvert x\rvert^2/4t}$, lies in $L^1$ with $\lVert K_t\rVert_1=1$ and has
-transform $\hat K_t(\xi)=e^{-4\pi^2t\lvert\xi\rvert^2}$. The operators $T_{K_t}$ are bounded on every
-$L^p$ with norm at most $1$, act as $T_{K_t}f=K_t*f$, satisfy the semigroup law
-$T_{K_t}T_{K_s}=T_{K_{t+s}}$ and have multipliers $e^{-4\pi^2t\lvert\xi\rvert^2}$; the limit as
+$K_t(x)=(4\pi t)^{-n/2}\exp(-\lvert x\rvert^2/4t)$, lies in $L^1$ with $\lVert K_t\rVert_1=1$ and has
+transform $(\mathcal F K_t)(\xi)=\exp(-4\pi^2t\lvert\xi\rvert^2)$. The operators $T_{K_t}$ are bounded on every
+$L^{n}$ with norm at most $1$, act as $T_{K_t}f=K_t*f$, satisfy the semigroup law
+$T_{K_t}T_{K_s}=T_{K_{t+s}}$ and have multipliers $\exp(-4\pi^2t\lvert\xi\rvert^2)$; the limit as
 $t\downarrow0$ is the identity on the profiles for which the approximation theorem applies, which is why
 the family is an approximate identity and not an identity.
 
 **Example (the Poisson kernel).** On $\mathbb R$ the function $P_t(x)=\frac1\pi\frac{t}{x^2+t^2}$
-satisfies $P_t\in L^1$, $\lVert P_t\rVert_1=1$ and $\hat P_t(\xi)=e^{-2\pi t\lvert\xi\rvert}$; the operators
-satisfy $T_{P_t}T_{P_s}=T_{P_{t+s}}$, so they form a semigroup of contractions on each $L^p$ whose
-multipliers are $e^{-2\pi t\lvert\xi\rvert}$.
+satisfies $P_t\in L^1$, $\lVert P_t\rVert_1=1$ and $(\mathcal F P_t)(\xi)=\exp(-2\pi t\lvert\xi\rvert)$; the operators
+satisfy $T_{P_t}T_{P_s}=T_{P_{t+s}}$, so they form a semigroup of contractions on each $L^{n}$ whose
+multipliers are $\exp(-2\pi t\lvert\xi\rvert)$.
 
 **Example (the Hilbert transform).** The Hilbert transform $H$ of *Fourier Analysis on Euclidean Spaces*
 has kernel $1/(\pi x)$ taken as a principal value and multiplier $-i\operatorname{sgn}(\xi)$. It is
@@ -260,13 +260,13 @@ $L^1(\mathbb R^n)$ under convolution, with $\lVert k*l\rVert_1\leq\lVert k\rVert
 identity and approximate identities; the operators compose as $T_kT_l=T_{k*l}$, and the same definitions
 give the discrete convolution on $\ell^1(\mathbb Z)$ and the periodic convolution on $L^1(\mathbb T)$. The
 Fourier transform carries a convolution operator into multiplication by its multiplier,
-$\widehat{k*f}=\hat k\hat f$, so the multiplier of $T_k$ is $\hat k$; a general multiplier is any
-$m\in L^\infty$, the operator $T_m=\mathcal F^{-1}(m\hat f)$ is bounded on $L^2$ with norm
+$\mathcal F(k*f)=\mathcal F k\,\mathcal F f$, so the multiplier of $T_k$ is $\mathcal F k$; a general multiplier is any
+$m\in L^\infty$, the operator $T_m=\mathcal F^{-1}(m\,\mathcal F f)$ is bounded on $L^2$ with norm
 $\lVert m\rVert_\infty$, and the convolution operators are exactly the bounded operators that commute with
-all translations. On $L^p$ the profile gives boundedness by Young's inequality,
-$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^p\to L^p}\leq
+all translations. On $L^{n}$ the profile gives boundedness by Young's inequality,
+$\lVert k*f\rVert_r\leq\lVert k\rVert_p\lVert f\rVert_q$, in particular $\lVert T_k\rVert_{L^{n}}\to L^{n}\leq
 \lVert k\rVert_1$; multipliers beyond those of $L^1$ profiles — the Hilbert and Riesz transforms among them
-— are covered by the Mihlin–Hörmander theorem, which gives $L^p$ boundedness for a symbol with the
+— are covered by the Mihlin–Hörmander theorem, which gives $L^{n}$ boundedness for a symbol with the
 standard differentiability and size, and fails at the endpoints. Finally, no nonzero convolution operator
 on $L^2(\mathbb R^n)$ is compact, compactness being the property of the kernels that are not translation
 invariant.
@@ -278,11 +278,11 @@ invariant.
 | $k*l$ | Convolution of profiles, $(k*l)(x)=\int k(x-y)l(y)\,dy$ |
 | $T_k$ | Convolution operator $T_kf=k*f$, the integral operator with kernel $k(x-y)$ |
 | $m$ | Fourier multiplier, a bounded function, and the symbol of $T_m$ |
-| $T_m$ | Multiplier operator $T_mf=\mathcal F^{-1}(m\hat f)$ |
-| $\hat f$, $\mathcal F$ | Fourier transform and the unitary operator it defines on $L^2$ |
+| $T_m$ | Multiplier operator $T_mf=\mathcal F^{-1}(m\,\mathcal F f)$ |
+| $\mathcal F f$, $\mathcal F$ | Fourier transform and the unitary operator it defines on $L^2$ |
 | $\tau_y$ | Translation, $(\tau_yf)(x)=f(x-y)$; $T_k\tau_y=\tau_yT_k$ |
 | $\mathbb T$ | The circle $\mathbb R/\mathbb Z$ |
-| $e_\xi$, $e_m$ | Characters, $e_\xi(x)=e^{2\pi ix\cdot\xi}$, $e_m(x)=e^{2\pi imx}$ |
+| $e_\xi$, $e_m$ | Characters, $e_\xi(x)=\exp(2\pi ix\cdot\xi)$, $e_m(x)=\exp(2\pi imx)$ |
 | $K_t$, $P_t$ | Heat kernel and Poisson kernel |
 | $H$ | Hilbert transform, symbol $-i\operatorname{sgn}\xi$ |
 
@@ -299,4 +299,4 @@ invariant.
 - Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis, Vol. I and II* (Springer, 1963, 1970), for
   the convolution of measures and the Fourier–Stieltjes transform.
 - Adriaan C. Zaanen, *Linear Analysis* (North-Holland, 1953), for Young's inequality and the convolution
-  operators on $L^p$.
+  operators on $L^{n}$.

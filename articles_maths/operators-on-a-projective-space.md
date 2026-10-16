@@ -149,7 +149,7 @@ is the complete invariant of the ordered quadruples of distinct points.
 
 ### The Operators Preserving a Quadric
 
-**Definition.** Let $q$ be a quadratic form on $V$ with polar form $B$, both Part II objects named here, and let $Q = \{[v] : q(v) = 0\}$ be its **projective quadric**. An operator preserves the quadric when it carries $Q$ to itself, and the operators preserving the quadric form the **projective orthogonal group** $PO(V,q)$, the image of the orthogonal group $O(V,q)$ in $PGL(V)$.
+**Definition.** Let $q$ be a quadratic form on $V$ with polar form $B$, both Part II objects named here, and let $Q = \{[v] : \mathfrak{Q}(v) = 0\}$ be its **projective quadric**. An operator preserves the quadric when it carries $Q$ to itself, and the operators preserving the quadric form the **projective orthogonal group** $PO(V,\mathfrak{Q})$, the image of the orthogonal group $O(V,\mathfrak{Q})$ in $PGL(V)$.
 
 **Theorem.** An operator $[T]$ preserves the quadric $Q$ if and only if the linear map $T$ preserves the polar form up to a scalar,
 
@@ -161,7 +161,7 @@ for some $\lambda \in K^\times$; consequently the group of the quadric is the qu
 
 **Proof.** A projective transformation preserving $Q$ carries the tangent hyperplane at a point of $Q$ to the tangent hyperplane at the image, and the polarity of the quadric is induced by $B$; the preservation of the polarity is the up-to-scalar preservation of the form, and the converse is immediate. This is the classical statement of *Projective Geometry*, and it is the reason the form-defined groups of this Part are the groups of the quadrics.
 
-**Corollary.** For a nondegenerate form the projective orthogonal group is the quotient of $O(V,q)$ by its centre up to the scalars, of dimension $\frac{n(n+1)}{2}$ as a transformation group, and its subgroup preserving the quadric and the orientation is the projective special orthogonal group; the Hermitian analogue over a field with an involution is *Unitary Geometry over a Field with Involution*, and the polarity so defined is *Orthogonal Geometry and the Involution*.
+**Corollary.** For a nondegenerate form the projective orthogonal group is the quotient of $O(V,\mathfrak{Q})$ by its centre up to the scalars, of dimension $\frac{n(n+1)}{2}$ as a transformation group, and its subgroup preserving the quadric and the orientation is the projective special orthogonal group; the Hermitian analogue over a field with an involution is *Unitary Geometry over a Field with Involution*, and the polarity so defined is *Orthogonal Geometry and the Involution*.
 
 ## Involutions and the Order of an Operator
 
@@ -175,7 +175,7 @@ for some $\lambda \in K^\times$; consequently the group of the quadric is the qu
 
 ## Summary
 
-The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\Theta_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,q)$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.
+The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\Theta_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,\mathfrak{Q})$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.
 
 ## Summary of Notation
 
@@ -192,8 +192,8 @@ The operators of a projective space $\mathbb{P}(V)$ are the collineations, and b
 | $\Theta_{[A],[B]}([T]) = [A][T][B]$ | Two-sided sandwich operator |
 | $[z_1:z_2:z_3:z_4]$ | Cross ratio of four points of the projective line |
 | $PGL(2,K)$ | Operator group of the projective line; fractional linear maps |
-| $Q = \{[v] : q(v)=0\}$ | Projective quadric of a quadratic form $q$ |
-| $PO(V,q)$ | Projective orthogonal group, the operators preserving $Q$ |
+| $Q = \{[v] : \mathfrak{Q}(v)=0\}$ | Projective quadric of a quadratic form $\mathfrak{Q}$ |
+| $PO(V,\mathfrak{Q})$ | Projective orthogonal group, the operators preserving $Q$ |
 | order, involution | Least $k$ with $[T]^k=1$; operator with square the identity |
 
 ## Further Reading

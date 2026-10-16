@@ -15,7 +15,7 @@ Positivity of the involution is assumed in this article. For a Clifford algebra 
 
 **Definition.** Let $A$ be a finite-dimensional $C^{*}$-algebra with involution ${}^{\dagger}$ and let $\Phi : A \to A$ be linear. For $k \ge 1$ let $A\otimes M_k$ carry the involution $(a_{ij})^{\dagger} = (a_{ji}^{\dagger})$ and let $\Phi_k = \Phi\otimes\mathrm{id}_k$ act entrywise. The map $\Phi$ is **positive** if $\Phi(a^{\dagger}a) \in P$ for every $a$, and **completely positive** if $\Phi_k$ is positive for every $k$.
 
-**Theorem (the sandwich is completely positive).** For every $x \in \mathrm{Cl}(V,q)$ the map
+**Theorem (the sandwich is completely positive).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the map
 
 $$
 \Theta_x(y) = x\,y\,x^{\dagger}
@@ -31,7 +31,7 @@ $$
 
 which is positivity in the amplified algebra; the constants $k$ are uniform, so $\Theta_x$ is completely positive.
 
-**Theorem (unitality and automorphisms).** For $x \in \mathrm{Cl}(V,q)$,
+**Theorem (unitality and automorphisms).** For $x \in \mathrm{Cl}(V,\mathfrak{Q})$,
 
 $$
 \Theta_x(1) = x\,x^{\dagger}, \qquad

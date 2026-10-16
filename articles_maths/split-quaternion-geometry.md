@@ -5,25 +5,25 @@
 
 This article describes the geometry carried by the split-quaternion algebra. It separates the two quadratic forms of the system, the signature-$(2,2)$ form on the algebra and its restriction of signature $(2,1)$ to the vector subspace, and describes the geometry each determines: the null quadric with its ruling, and the hyperboloids and the Lorentzian geometry of the vector subspace. It records the isometry groups and the homogeneous descriptions, and compares the situation with the neighbouring systems. The skeleton follows the sibling articles *Quaternion Geometry* and *Split-Biquaternion Geometry*, named only; no result of theirs is used, and the definite case of the first and the signature-$(4,2)$ case of the second share nothing beyond the shape.
 
-The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm $N$ and its idempotents are assumed from *Split-Quaternion Algebra*; the signature of the restricted form and the isotropy are assumed from *Split-Quaternion Norm and Invertibility*, the null cone and its two families of maximal isotropic subspaces from *Split-Quaternion Zero Divisors*, the adjoint action and the Lorentz group from *Split-Quaternion Rotations and the Lorentz Group*, and the hyperbolic-plane model on the split-quaternions from *Split-Quaternions and Hyperbolic Geometry*, which owns the model. The Lorentzian and pseudo-Riemannian geometry of Part II is that of *Pseudo-Riemannian and Lorentzian Geometry*, the hyperboloid model and the hyperbolic isometries are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*, and the projective geometry of the quadric is that of *Projective Geometry*. Nothing physical is invoked.
+The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$ and its idempotents are assumed from *Split-Quaternion Algebra*; the signature of the restricted form and the isotropy are assumed from *Split-Quaternion Norm and Invertibility*, the null cone and its two families of maximal isotropic subspaces from *Split-Quaternion Zero Divisors*, the adjoint action and the Lorentz group from *Split-Quaternion Rotations and the Lorentz Group*, and the hyperbolic-plane model on the split-quaternions from *Split-Quaternions and Hyperbolic Geometry*, which owns the model. The Lorentzian and pseudo-Riemannian geometry of Part II is that of *Pseudo-Riemannian and Lorentzian Geometry*, the hyperboloid model and the hyperbolic isometries are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*, and the projective geometry of the quadric is that of *Projective Geometry*. Nothing physical is invoked.
 
 ## The Two Quadratic Forms and the Geometry Each Determines
 
 **Definition.** The two quadratic forms of the system are
 
 $$
-N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad \langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
 of signature $(2,2)$ on the four-dimensional algebra, and its restriction
 
 $$
-N|_{V} : V \to \mathbb{R}, \quad N(q_1 e_1 + q_2 e_2 + q_3 e_3) = q_1^2 - q_2^2 - q_3^2,
+N|_{V} : V \to \mathbb{R}, \quad \langle q_1 e_1 + q_2 e_2 + q_3 e_3\rangle_{\natural} = q_1^2 - q_2^2 - q_3^2,
 $$
 
 of signature $(2,1)$ on the three-dimensional vector subspace. The two associated geometries are the **projective geometry** of the quadric $N = 0$ in $\mathbb{P}^3$, on the algebra, and the **Lorentzian geometry** of the vector subspace with the form of signature $(2,1)$.
 
-**Theorem (The Two Geometries Are Related by Restriction and by the Ruling).** The vector subspace is the $-1$ eigenspace of the conjugation inside the algebra, and the restriction of $N$ to it is the form of the Lorentzian geometry. The null cone of the restriction is the intersection of the null cone of $N$ with $V$, and the two families of maximal isotropic subspaces of the algebra meet $V$ in the isotropic lines and planes of the restricted form.
+**Theorem (The Two Geometries Are Related by Restriction and by the Ruling).** The vector subspace is the $-1$ eigenspace of the conjugation inside the algebra, and the restriction of $\langle\cdot,\cdot\rangle_{\natural}$ to it is the form of the Lorentzian geometry. The null cone of the restriction is the intersection of the null cone of $\langle\cdot,\cdot\rangle_{\natural}$ with $V$, and the two families of maximal isotropic subspaces of the algebra meet $V$ in the isotropic lines and planes of the restricted form.
 
 **Proof.** The identification of $V$ with the $-1$ eigenspace of the conjugation is (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), and the restriction of the form to $V$ is computed in *Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*. The statements about the cones and the isotropic subspaces are the definitions of *Split-Quaternion Norm and Invertibility*, §*Isotropy*, and *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
@@ -34,7 +34,7 @@ The two geometries are genuinely different, and the geometry of the algebra is n
 **Definition.** The **null quadric** of the algebra is the real projective quadric
 
 $$
-Q = \{[\tilde q] \in \mathbb{P}^3 : N(\tilde q) = 0\} = \{[\tilde q] : \tilde q \neq 0, \ N(\tilde q) = 0\},
+Q = \{[\tilde q] \in \mathbb{P}^3 : \langle\tilde q\rangle_{\natural} = 0\} = \{[\tilde q] : \tilde q \neq 0, \ \langle\tilde q\rangle_{\natural} = 0\},
 $$
 
 that is, the set of isotropic lines of the form.
@@ -59,7 +59,7 @@ The quadric is the projective image of the ruling by maximal isotropic planes, a
 
 **Theorem (The Group Action on the Quadric).** The unit group acts on $Q$ by conjugation, and the action descends to an action of $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, of dimension three, on the torus $Q$; the kernel of the action is the centre $\mathbb{R}^{\times}$ of the unit group.
 
-**Proof.** Conjugation by a unit is an algebra automorphism and preserves $N$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $Q$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
+**Proof.** Conjugation by a unit is an algebra automorphism and preserves $\langle\cdot\rangle_{\natural}$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $Q$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
 
 ## The Unit Hyperboloids and Their Metrics
 
@@ -68,20 +68,20 @@ The level sets of the two forms carry metrics of opposite character.
 **Theorem (The Level Set in the Algebra).** The set
 
 $$
-U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : N(\tilde q) = 1\}
+U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\}
 $$
 
-is a connected smooth three-dimensional submanifold of $\mathbb{R}^4$, equal as a set to the norm-one group $\mathrm{SL}_2(\mathbb{R})$. The polar form $B$ restricts to a pseudo-Riemannian metric of signature $(2,1)$ on it, and the metric is bi-invariant under left and right translations, so that $U$ is a three-dimensional Lorentzian group manifold.
+is a connected smooth three-dimensional submanifold of $\mathbb{R}^4$, equal as a set to the norm-one group $\mathrm{SL}_2(\mathbb{R})$. The polar form $\langle\cdot,\cdot\rangle$ restricts to a pseudo-Riemannian metric of signature $(2,1)$ on it, and the metric is bi-invariant under left and right translations, so that $U$ is a three-dimensional Lorentzian group manifold.
 
-**Proof.** The set is the level set of a regular value of $N$, since the gradient $2\tilde q$ does not vanish on it, so it is a smooth three-dimensional submanifold; it is connected because $\{N>0\}$ is connected by *Split-Quaternion Norm and Invertibility*, §*The Group of Units*, and the map $\tilde q \mapsto \tilde q/\sqrt{N(\tilde q)}$ is a retraction of $\{N>0\}$ onto it. The identification with the norm-one group is the same section. At the identity the tangent space is $V$, on which $B$ has signature $(2,1)$; left translations carry this form to a metric on all of $U$, and the form is invariant under left and right translations because $B$ is associative.
+**Proof.** The set is the level set of a regular value of $\langle\cdot\rangle_{\natural}$, since the gradient $2\tilde q$ does not vanish on it, so it is a smooth three-dimensional submanifold; it is connected because $\{N>0\}$ is connected by *Split-Quaternion Norm and Invertibility*, §*The Group of Units*, and the map $\tilde q \mapsto \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ is a retraction of $\{N>0\}$ onto it. The identification with the norm-one group is the same section. At the identity the tangent space is $V$, on which $\langle\cdot\rangle$ has signature $(2,1)$; left translations carry this form to a metric on all of $U$, and the form is invariant under left and right translations because $\langle\cdot,\cdot\rangle$ is associative.
 
 The quadric $U$ in $\mathbb{R}^{2,2}$ is the three-dimensional Lorentzian space form of signature $(2,1)$, the analogue for this signature of the de Sitter and anti-de Sitter quadrics; the Part II treatment of the space forms is in *Pseudo-Riemannian and Lorentzian Geometry*.
 
 **Theorem (The Level Sets in the Vector Subspace).** In the vector subspace, the level sets of the restricted form are as follows.
 
-1. The set $\{v \in V : N(v) = 1\}$ is a hyperboloid of two sheets. The induced form $B$ is definite on each sheet; hence $-B$ is a Riemannian metric of constant curvature $-1$, and each sheet is a copy of the hyperbolic plane, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser $SO(2)$.
-2. The set $\{v \in V : N(v) = -1\}$ is a one-sheeted hyperboloid, connected. The induced form $B$ is indefinite of signature $(1,1)$ on it, and it is a Lorentzian surface, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser the one-parameter hyperbolic subgroup.
-3. The set $\{v \in V : N(v) = 0\}$ is the light cone, a singular cone on the circle of isotropic lines.
+1. The set $\{v \in V : \langle v\rangle_{\natural} = 1\}$ is a hyperboloid of two sheets. The induced form $\langle\cdot,\cdot\rangle$ is definite on each sheet; hence $-B$ is a Riemannian metric of constant curvature $-1$, and each sheet is a copy of the hyperbolic plane, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser $SO(2)$.
+2. The set $\{v \in V : \langle v\rangle_{\natural} = -1\}$ is a one-sheeted hyperboloid, connected. The induced form $\langle\cdot,\cdot\rangle$ is indefinite of signature $(1,1)$ on it, and it is a Lorentzian surface, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser the one-parameter hyperbolic subgroup.
+3. The set $\{v \in V : \langle v\rangle_{\natural} = 0\}$ is the light cone, a singular cone on the circle of isotropic lines.
 
 **Proof.** *Induced metric.* At $v = e_1$ the tangent space to the level set $\{N=1\}$ is $v^{\perp} = \operatorname{span}\{e_2,e_3\}$, on which $B$ is negative definite; the group acts transitively on the level set by *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, so definiteness holds everywhere and the metric is Riemannian up to sign. At $v = e_2$ the tangent space to the level set $\{N=-1\}$ is $v^{\perp} = \operatorname{span}\{e_1,e_3\}$, on which $B = q'^2_1 - q'^2_3$ is indefinite of signature $(1,1)$, and transitivity again carries the statement everywhere. The curvature and the identification of each sheet with the hyperbolic plane are the hyperboloid model of *Hyperbolic Geometry*; the model built on the split-quaternions is *Split-Quaternions and Hyperbolic Geometry*. *Singularity of the cone.* The gradient of the restricted form vanishes at the origin, and the cone is a cone on its link, which is the circle of isotropic lines. The stabilisers are those computed in *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
 
@@ -91,7 +91,7 @@ The quadric $U$ in $\mathbb{R}^{2,2}$ is the three-dimensional Lorentzian space 
 
 **Theorem (The Isometry Groups).** The isometry group of the restricted form is $O(2,1)$, whose identity component is $\mathrm{SO}^{+}(2,1) \cong \mathrm{PSL}_2(\mathbb{R})$; the isometry group of the full form is $O(2,2)$, of dimension six. The algebra automorphisms form the subgroup $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$, which is strictly smaller than the isometry group of the full form.
 
-**Proof.** The orthogonal groups of the two forms are described in *Isometries and Orthogonal Transformations*, and the identification of the identity component of the first with $\mathrm{PSL}_2(\mathbb{R})$ is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*. The automorphism group is $\mathrm{PGL}_2(\mathbb{R})$ by *Split-Quaternion Automorphisms and Derivations*, and it acts on the algebra preserving $N$, hence is a subgroup of $O(2,2)$; it is not all of it, since $\dim O(2,2) = 6$ and $\dim PGL_2(\mathbb{R}) = 3$.
+**Proof.** The orthogonal groups of the two forms are described in *Isometries and Orthogonal Transformations*, and the identification of the identity component of the first with $\mathrm{PSL}_2(\mathbb{R})$ is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*. The automorphism group is $\mathrm{PGL}_2(\mathbb{R})$ by *Split-Quaternion Automorphisms and Derivations*, and it acts on the algebra preserving $\langle\cdot\rangle_{\natural}$, hence is a subgroup of $O(2,2)$; it is not all of it, since $\dim O(2,2) = 6$ and $\dim PGL_2(\mathbb{R}) = 3$.
 
 **Theorem (The Homogeneous Descriptions).** The level sets are homogeneous spaces of the isometry group:
 
@@ -121,7 +121,7 @@ and the last term is the union of the two nappes of the cone. The trichotomy of 
 
 The geometry of $V$ is three-dimensional Minkowski geometry, and its features are those of Part II.
 
-**Theorem (The Causal Structure and the Hyperbolic Geometry).** The form $N$ on $V$ is indefinite and isotropic, so the vector subspace carries the full causal trichotomy: every nonzero vector is timelike ($N > 0$), lightlike ($N = 0$) or spacelike ($N < 0$), and the lightlike vectors form a cone, which the quaternion case does not have. The hyperboloid model of the hyperbolic plane is the sheet $N = 1$, with the metric $-B$; the isometry group of that metric is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action, and the geodesics of the model are the intersections of the sheet with the planes through the origin.
+**Theorem (The Causal Structure and the Hyperbolic Geometry).** The form $\langle\cdot,\cdot\rangle_{\natural}$ on $V$ is indefinite and isotropic, so the vector subspace carries the full causal trichotomy: every nonzero vector is timelike ($N > 0$), lightlike ($N = 0$) or spacelike ($N < 0$), and the lightlike vectors form a cone, which the quaternion case does not have. The hyperboloid model of the hyperbolic plane is the sheet $N = 1$, with the metric $-B$; the isometry group of that metric is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action, and the geodesics of the model are the intersections of the sheet with the planes through the origin.
 
 **Proof.** The causal trichotomy is the orbit decomposition above; the metric and curvature on the sheet are the theorem on the level sets; the geodesics of a hyperboloid model are the orthogonal intersections with central planes, as treated in *Hyperbolic Geometry*, and the group action is the double cover.
 
@@ -162,7 +162,7 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 
 **Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_0^2 - q_2^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[e_1]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 
-**Proof.** The forms are read from the split-quaternion norm on the corresponding coordinates. In the null basis $n_{\pm} = \tfrac12(1 \pm e_2)$ of the split-complex subalgebra the form $q_0^2 - q_2^2$ becomes a product, $N(p n_+ + q n_-) = pq$, so the null lines are the coordinate axes and the hyperbola is $pq = 1$; hyperbolic rotations are the maps $(p,q)\mapsto(\lambda p, \lambda^{-1} q)$, and the invariant distance is $\log(\lambda)$. The definite case is the standard Euclidean geometry of the plane.
+**Proof.** The forms are read from the split-quaternion norm on the corresponding coordinates. In the null basis $n_{\pm} = \tfrac12(1 \pm e_2)$ of the split-complex subalgebra the form $q_0^2 - q_2^2$ becomes a product, $\langle p n_+ + q n_-\rangle_{\natural} = pq$, so the null lines are the coordinate axes and the hyperbola is $pq = 1$; hyperbolic rotations are the maps $(p,q)\mapsto(\lambda p, \lambda^{-1} q)$, and the invariant distance is $\log(\lambda)$. The definite case is the standard Euclidean geometry of the plane.
 
 ## Comparison with the Neighbouring Systems
 
@@ -180,15 +180,15 @@ The quaternion column is the definite geometry of *Quaternion Geometry*, in whic
 
 ## Summary
 
-The split-quaternion system carries two quadratic forms: the form $N$ of signature $(2,2)$ on the four-dimensional algebra, and its restriction of signature $(2,1)$ to the three-dimensional vector subspace. The first determines the projective null quadric $Q$, a smooth doubly ruled surface homeomorphic to a torus, whose two rulings are the families of maximal isotropic planes; the unit group acts on it through $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The set $\{N=1\}$ in the algebra is the connected Lorentzian three-manifold $U \cong \mathrm{SL}_2(\mathbb{R})$ with a bi-invariant metric of signature $(2,1)$.
+The split-quaternion system carries two quadratic forms: the form $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(2,2)$ on the four-dimensional algebra, and its restriction of signature $(2,1)$ to the three-dimensional vector subspace. The first determines the projective null quadric $Q$, a smooth doubly ruled surface homeomorphic to a torus, whose two rulings are the families of maximal isotropic planes; the unit group acts on it through $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The set $\{N=1\}$ in the algebra is the connected Lorentzian three-manifold $U \cong \mathrm{SL}_2(\mathbb{R})$ with a bi-invariant metric of signature $(2,1)$.
 
-The second form determines the Lorentzian geometry of the vector subspace. The level set $N=1$ is a two-sheeted hyperboloid, each sheet a copy of the hyperbolic plane with the metric $-B$ and the group $\mathrm{SO}^{+}(2,1)$ acting transitively with stabiliser $SO(2)$; the level set $N=-1$ is a connected one-sheeted hyperboloid with an induced Lorentzian metric; and the level set $N=0$ is the light cone, a singular cone on the circle of isotropic lines. The nonzero vectors split into the timelike, lightlike and spacelike classes, so the full causal trichotomy is present, unlike in the quaternion case, where the form is definite and only the sphere occurs. The isometry group of the restricted form is $O(2,1)$ with identity component $\mathrm{PSL}_2(\mathbb{R})$, and the algebra automorphisms form the smaller group $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ inside the six-dimensional isometry group $O(2,2)$ of the full form. The eight-dimensional relative is a later system of Part V, named only.
+The second form determines the Lorentzian geometry of the vector subspace. The level set $\langle\cdot,\cdot\rangle_{\natural}=1$ is a two-sheeted hyperboloid, each sheet a copy of the hyperbolic plane with the metric $-B$ and the group $\mathrm{SO}^{+}(2,1)$ acting transitively with stabiliser $SO(2)$; the level set $\langle\cdot\rangle_{\natural}=-1$ is a connected one-sheeted hyperboloid with an induced Lorentzian metric; and the level set $\langle\cdot\rangle_{\natural}=0$ is the light cone, a singular cone on the circle of isotropic lines. The nonzero vectors split into the timelike, lightlike and spacelike classes, so the full causal trichotomy is present, unlike in the quaternion case, where the form is definite and only the sphere occurs. The isometry group of the restricted form is $O(2,1)$ with identity component $\mathrm{PSL}_2(\mathbb{R})$, and the algebra automorphisms form the smaller group $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ inside the six-dimensional isometry group $O(2,2)$ of the full form. The eight-dimensional relative is a later system of Part V, named only.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the form of signature $(2,2)$ on the algebra | *Split-Quaternion Algebra* |
+| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the form of signature $(2,2)$ on the algebra | *Split-Quaternion Algebra* |
 | $N|_{V} = q_1^2-q_2^2-q_3^2$ | the restricted form of signature $(2,1)$ | *Split-Quaternion Algebra* |
 | $Q \subset \mathbb{P}^3$ | the projective null quadric, the set of isotropic lines | this article |
 | $\mathcal{K}$, $\mathcal{R}$ | the two families of maximal isotropic planes | *Split-Quaternion Zero Divisors* |

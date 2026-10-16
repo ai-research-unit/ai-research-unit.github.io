@@ -75,7 +75,7 @@ The descent is the algebraic reduction of the layer, and the radical is a left i
 
 **Proof.** The extension of a totally isotropic subspace to a maximal one is the finite-dimensional case of the extension theorem; the decomposition is the Witt decomposition, which the hyperbolic-plane reduction constructs pair by pair, and the number of pairs is the index. The details, with the cancellation theorem that makes the index and the anisotropic part invariants, are *Witt's Theorems* and *The Hyperbolic Form and the Witt Index*.
 
-**Corollary.** Over an algebraically closed field $k$ with $\varsigma = \mathrm{id}$ the index of a non-degenerate form of dimension $n$ is $\lfloor n/2\rfloor$: the form is the sum of $\lfloor n/2\rfloor$ hyperbolic planes and, for $n$ odd, one anisotropic line. Over $\mathbb{R}$ the index is $\min(p,q)$ where $(p,q)$ is the signature, and the inertial invariant is *The Indefinite Case and the Signature*.
+**Corollary.** Over an algebraically closed field $k$ with $\varsigma = \mathrm{id}$ the index of a non-degenerate form of dimension $n$ is $\lfloor n/2\rfloor$: the form is the sum of $\lfloor n/2\rfloor$ hyperbolic planes and, for $n$ odd, one anisotropic line. Over $\mathbb{R}$ the index is $\min(n,m)$ where $(n,m)$ is the signature, and the inertial invariant is *The Indefinite Case and the Signature*.
 
 ## Examples
 

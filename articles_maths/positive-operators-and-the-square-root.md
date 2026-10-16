@@ -76,7 +76,7 @@ $$
 T=U|T|,\qquad |T|=(T^*T)^{1/2},
 $$
 
-where $|T|$ is positive, $U$ is a partial isometry from the closure of $\operatorname{ran}|T|$ onto the closure of $\operatorname{ran}T$, and $U$ is uniquely determined by the requirements that $\ker U=\ker|T|$ and $U|T|=T$; when $T$ is invertible, $U$ is unitary. The decomposition is the operator form of $z=|z|e^{i\theta}$.
+where $|T|$ is positive, $U$ is a partial isometry from the closure of $\operatorname{ran}|T|$ onto the closure of $\operatorname{ran}T$, and $U$ is uniquely determined by the requirements that $\ker U=\ker|T|$ and $U|T|=T$; when $T$ is invertible, $U$ is unitary. The decomposition is the operator form of $z=|z|\exp(i\theta)$.
 
 *Proof.* On $\operatorname{ran}|T|$ define $U(|T|x)=Tx$; the identity $\||T|x\|=\|Tx\|$ makes $U$ well defined and isometric, and it extends by continuity to an isometry from the closure of the range of $|T|$ onto the closure of the range of $T$; extending by zero on the orthogonal complement of the range of $|T|$ gives the partial isometry, and the kernel condition fixes the extension. Uniqueness is the density of the range of $|T|$; invertibility of $T$ makes $|T|$ invertible and both ranges all of $H$, so $U$ is unitary.
 

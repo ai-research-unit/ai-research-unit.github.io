@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Four-Vector Element Representation of Biquaternions*.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Four-Vector Element Representation of Biquaternions*.
 
 Two $4\times4$ matrices carry the multiplication of $\mathbb{B}$ in the basis $e_0, e_1, e_2, e_3$. The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $\tilde Q e_m$; the **right regular matrix** $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix whose $m$-th column is the coordinate column of the product $e_m \tilde Q$. Both are complex $4\times4$ matrices, both carry a letter, and neither is the default: the shorter notation $\mathsf{M}_4$ stands for the left one $\mathsf{M}_4^{L}$, and the letter $L$ is kept here so that the two stand on the same footing.
 
-The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_0$ and the determinant $\det\mathsf{M}_4^{L}(\tilde Q)=N(\tilde Q)^2$, and the remarkable subspaces in the regular model are stated below, in §*The Left and the Right Regular Matrices*, §*Remarkable Subspaces in the Regular Model* and §*The Two Models Compared*.
+The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_0$ and the determinant $\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, and the remarkable subspaces in the regular model are stated below, in §*The Left and the Right Regular Matrices*, §*Remarkable Subspaces in the Regular Model* and §*The Two Models Compared*.
 
 The image of the left regular matrix is written $M_4(\mathbb{C})_L$: it is the subspace of $M_4(\mathbb{C})$ of the matrices $\mathsf{M}_4^{L}(\tilde Q)$, of complex dimension $4$ inside the $16$ of $M_4(\mathbb{C})$, and it is the object of this article.
 
@@ -195,14 +195,14 @@ The regular matrix carries the same pairing as the $2\times2$ one, with the trac
 **Theorem (the trace pairing of the regular matrices).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{P})\mathsf{M}_4^{L}(\tilde{Q})\bigr)=2\,B(\tilde P,\tilde Q),\qquad
-B(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{P})\mathsf{M}_4^{L}(\tilde{Q})\bigr),
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{P})\mathsf{M}_4^{L}(\tilde{Q})\bigr)=2\,\langle\tilde P,\tilde Q\rangle,\qquad
+\langle\tilde P,\tilde Q\rangle=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{P})\mathsf{M}_4^{L}(\tilde{Q})\bigr),
 $$
 
 so the plain trace pairing of the regular matrices is twice the general plain bilinear form of the algebra, and on the diagonal
 
 $$
-\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{Q})^2\bigr)=B(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^2,\qquad \varepsilon_0=+1,\ \varepsilon_1=\varepsilon_2=\varepsilon_3=-1 .
+\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4^{L}(\tilde{Q})^2\bigr)=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^2,\qquad \varepsilon_0=+1,\ \varepsilon_1=\varepsilon_2=\varepsilon_3=-1 .
 $$
 
 *Proof.* The representation is a homomorphism, so $\operatorname{Tr}(\mathsf{M}_4^{L}(\tilde P)\mathsf{M}_4^{L}(\tilde Q))=\operatorname{Tr}\mathsf{M}_4^{L}(\tilde P\tilde Q)=4\,\mathrm{Sc}(\tilde P\tilde Q)$; the factor $2$ of the first display and the factor $\tfrac14$ of the second follow. The diagonal is the same identity on the basis, where $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$.
@@ -314,15 +314,15 @@ $$
 so in the basis $\tilde\Pi_+, e_1\tilde\Pi_+$ the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ acts by the first two rows and columns of the displayed matrix, and the same computation on the basis $\tilde\Pi_-, e_1\tilde\Pi_-$ of $\mathbb{B}\tilde\Pi_-$ gives the last two. The trace of the matrix is $4Q_0$ by inspection and the determinant is the product of its two diagonal groups,
 
 $$
-(Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = N(\tilde{Q}),
+(Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = \langle\tilde{Q}\rangle_{\natural},
 $$
 
-each of the two diagonal groups contributing the same factor, so that the determinant of the regular matrix is $N(\tilde{Q})^2$.
+each of the two diagonal groups contributing the same factor, so that the determinant of the regular matrix is $\langle\tilde{Q}\rangle_{\natural}^2$.
 
 **Remark (the characteristic polynomial).** In the adapted basis of the theorem above the regular matrix is diagonal in the two invariant subspaces, so its characteristic polynomial is the square of that of the simple module,
 
 $$
-\chi_{\mathsf{M}_4^{L}(\tilde{Q})}(\lambda) = \bigl( \lambda^2 - 2Q_0\lambda + N(\tilde{Q}) \bigr)^2,
+\chi_{\mathsf{M}_4^{L}(\tilde{Q})}(\lambda) = \bigl( \lambda^2 - 2Q_0\lambda + \langle\tilde{Q}\rangle_{\natural} \bigr)^2,
 $$
 
 which the form of the theorem above gives at once. The eigenvalues themselves, the Cayley–Hamilton identity, the eigenspace dimensions and the doubling of the multiplicities that the square produces are the subject of *Biquaternion Spectral Theory*, later in this chapter, and are cited from there rather than developed here.
@@ -339,7 +339,7 @@ $$
 
 is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.
 
-**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ be in the centralizer and let $\vec u = C\operatorname{col}(e_0)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde{R}$,
+**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ be in the centralizer and let $\vec q_a = C\operatorname{col}(e_0)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde{R}$,
 
 $$
 C\operatorname{col}(\tilde{R}) = C\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \mathsf{M}_4^{L}(\tilde{R})\,C\operatorname{col}(e_0) = \mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{Q}) = \operatorname{col}(\tilde{R}\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{R}),
@@ -360,16 +360,16 @@ $$
 of the eight-dimensional real space underlying $\mathbb{B}$, the left regular matrix becomes an $8 \times 8$ real matrix $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$, with
 
 $$
-\det \mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = |N(\tilde{Q})|^4, \qquad \operatorname{Tr}\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = 8 \operatorname{Re}(Q_0).
+\det \mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = |\langle\tilde{Q}\rangle_{\natural}|^4, \qquad \operatorname{Tr}\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = 8 \operatorname{Re}(Q_0).
 $$
 
-**Proof.** The real matrix is the realification of the complex matrix $\mathsf{M}_4^{L}(\tilde{Q})$, each complex entry being replaced by its real $2\times2$ block. A complex-linear map with eigenvalues $\lambda_1, \ldots, \lambda_4$ has realification with eigenvalues $\lambda_1, \bar\lambda_1, \ldots, \lambda_4, \bar\lambda_4$, so its determinant is $|\lambda_1 \cdots \lambda_4|^2 = |\det \mathsf{M}_4^{L}(\tilde{Q})|^2 = |N(\tilde{Q})^2|^2 = |N(\tilde{Q})|^4$, and its trace is $2\operatorname{Re}(\lambda_1 + \cdots + \lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$.
+**Proof.** The real matrix is the realification of the complex matrix $\mathsf{M}_4^{L}(\tilde{Q})$, each complex entry being replaced by its real $2\times2$ block. A complex-linear map with eigenvalues $\lambda_1, \ldots, \lambda_4$ has realification with eigenvalues $\lambda_1, \bar\lambda_1, \ldots, \lambda_4, \bar\lambda_4$, so its determinant is $|\lambda_1 \cdots \lambda_4|^2 = |\det \mathsf{M}_4^{L}(\tilde{Q})|^2 = |\langle\tilde{Q}\rangle_{\natural}^2|^2 = |\langle\tilde{Q}\rangle_{\natural}|^4$, and its trace is $2\operatorname{Re}(\lambda_1 + \cdots + \lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$.
 
 **Remark (why the dimension doubles).** The real dimension doubles because $\mathbb{B}$ is a complex vector space and is regarded as a real vector space by restriction of scalars: the correspondence $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} \mathbb{C}^4 = \mathbb{R}^8$ replaces each complex coordinate by its real and imaginary parts. The same doubling applies to the module $V$, whose realification $S$ has real dimension $4$, so over $\mathbb{R}$ the left regular matrix is $\mathsf{M}_4^{L,\mathbb{R}} \cong \operatorname{Res}_{\mathbb{C}/\mathbb{R}}(V \oplus V)$, and the decomposition of the complex case survives with each part doubled in size. Restricted to the real subalgebra $\mathbb{H}_{\mathbb{B}}$, and read on $\mathbb{H}_{\mathbb{B}}$ itself, the same construction is the $4 \times 4$ real regular matrix of the quaternions, which is the subject of *Quaternion Element Representations*; complexifying the algebra doubles both its real dimension and the size of the regular matrix.
 
 ## The Sandwich in the Regular Basis
 
-The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* is read here as a single matrix.
+The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra* is read here as a single matrix.
 
 **The sandwich matrix.** Put
 
@@ -414,10 +414,10 @@ the star being the entrywise complex conjugate.
 **Proposition (the real $8 \times 8$ invariants).** Write $\mathsf{H}_{\tilde Q}^{\mathbb{R}}$ for the realification of $\mathsf{H}_{\tilde Q}$ in the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$. Then
 
 $$
-\det\bigl(\mathsf{H}_{\tilde Q}^{\mathbb{R}}\bigr) = |N(\tilde{Q})|^{8}, \qquad \operatorname{Tr}\bigl(\mathsf{H}_{\tilde Q}^{\mathbb{R}}\bigr) = 8\,|Q_0|^{2} .
+\det\bigl(\mathsf{H}_{\tilde Q}^{\mathbb{R}}\bigr) = |\langle\tilde{Q}\rangle_{\natural}|^{8}, \qquad \operatorname{Tr}\bigl(\mathsf{H}_{\tilde Q}^{\mathbb{R}}\bigr) = 8\,|Q_0|^{2} .
 $$
 
-**Proof.** Realification replaces each complex eigenvalue by the pair formed with its conjugate, so the determinant is the squared modulus of the complex determinant and the trace is twice the real part of the complex trace. The sandwich has the four complex eigenvalues $\lambda_i\overline{\lambda_j}$, of product $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert N(\tilde{Q})\rvert^{4}$ and of sum $\lvert\operatorname{tr}\mathsf{M}_4^{L}(\tilde{Q})\rvert^{2} = 4\lvert Q_0\rvert^{2}$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*); the realification therefore gives $(\lvert N\rvert^{4})^{2} = \lvert N\rvert^{8}$ for the determinant and $2\cdot 4\lvert Q_0\rvert^{2} = 8\lvert Q_0\rvert^{2}$ for the trace. The two agree with the real form of the element above to the same exponents: the left regular matrix $\mathsf{M}_4^{L}(\tilde{Q})$ has $\lvert N\rvert^{4}$ and $8\operatorname{Re}Q_0$, the sandwich matrix has $\lvert N\rvert^{8}$ and $8\lvert Q_0\rvert^{2}$, and the second invariant of each is a modulus rather than a real part because the sandwich has lost the phase.
+**Proof.** Realification replaces each complex eigenvalue by the pair formed with its conjugate, so the determinant is the squared modulus of the complex determinant and the trace is twice the real part of the complex trace. The sandwich has the four complex eigenvalues $\lambda_i\overline{\lambda_j}$, of product $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$ and of sum $\lvert\operatorname{tr}\mathsf{M}_4^{L}(\tilde{Q})\rvert^{2} = 4\lvert Q_0\rvert^{2}$ (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*); the realification therefore gives $(\lvert N\rvert^{4})^{2} = \lvert N\rvert^{8}$ for the determinant and $2\cdot 4\lvert Q_0\rvert^{2} = 8\lvert Q_0\rvert^{2}$ for the trace. The two agree with the real form of the element above to the same exponents: the left regular matrix $\mathsf{M}_4^{L}(\tilde{Q})$ has $\lvert N\rvert^{4}$ and $8\operatorname{Re}Q_0$, the sandwich matrix has $\lvert N\rvert^{8}$ and $8\lvert Q_0\rvert^{2}$, and the second invariant of each is a modulus rather than a real part because the sandwich has lost the phase.
 
 ## A Second $4 \times 4$ Realization, and the Multiplicative Map
 
@@ -454,7 +454,7 @@ $$
 cF(\vec A) := \begin{pmatrix} 0 & \vec A^{\mathsf{T}} \\ \vec A & i[\vec A]_\times \end{pmatrix}, \qquad \vec A = (A_1, A_2, A_3),
 $$
 
-with $[\vec u]_\times$ the matrix of $\vec v \mapsto \vec u \times \vec v$; this is the display of the realization above, and it is the same $cF$ that a matrix formulation of Maxwell's equations multiplies into the column $(-\partial_t, \nabla)^{\mathsf{T}}$. In this basis the right regular matrix is **exactly the transpose**,
+with $[\vec q_a]_\times$ the matrix of $\vec v \mapsto \vec q_a \times \vec v$; this is the display of the realization above, and it is the same $cF$ that a matrix formulation of Maxwell's equations multiplies into the column $(-\partial_t, \nabla)^{\mathsf{T}}$. In this basis the right regular matrix is **exactly the transpose**,
 
 $$
 \mathsf{M}'^{R}_4(\tilde{Q}) = \mathsf{M}'_4(\tilde{Q})^{\mathsf{T}} ,
@@ -585,17 +585,17 @@ The symmetric part of a product is the half-sum of its word and of the word with
 **The four forms are four traces.** The four products are four matrix traces, and the four forms of the algebra are read from them:
 
 $$
-\tfrac14\operatorname{Tr}(XY)=B(\tilde P,\tilde Q),\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=N(\tilde P,\tilde Q),\qquad
-\tfrac14\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=K(\tilde P,\tilde Q),
+\tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},\qquad
+\tfrac14\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*},
 $$
 
 the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear form. The factor is $\tfrac14$ where the $2\times2$ model has $\tfrac12$, because the regular trace is four times the scalar part where the $2\times2$ trace is twice it; the two models compute the four forms from the same four words with their own normalisation.
 
 ## Summary
 
-The left regular matrix $\mathsf{M}_4^{L}$ is the Cayley matrix of the left multiplication, with its multiplicativity, its trace $4Q_0$ and its determinant $N(\tilde{Q})^2$. In the regular model the remarkable subspaces are the scalar, the traceless, the real, the purely imaginary, the Hermitian and the anti-Hermitian matrices, and the regular matrix is two copies of the $2\times2$ matrix of the same element, so its trace is twice and its determinant the square of the $2\times2$ ones, $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 2\operatorname{Tr}\mathsf{M}_2(\tilde{Q})$ and $\det\mathsf{M}_4^{L}(\tilde{Q}) = \det\mathsf{M}_2(\tilde{Q})^2$. Its transpose is the left regular matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$.
+The left regular matrix $\mathsf{M}_4^{L}$ is the Cayley matrix of the left multiplication, with its multiplicativity, its trace $4Q_0$ and its determinant $\langle\tilde{Q}\rangle_{\natural}^2$. In the regular model the remarkable subspaces are the scalar, the traceless, the real, the purely imaginary, the Hermitian and the anti-Hermitian matrices, and the regular matrix is two copies of the $2\times2$ matrix of the same element, so its trace is twice and its determinant the square of the $2\times2$ ones, $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 2\operatorname{Tr}\mathsf{M}_2(\tilde{Q})$ and $\det\mathsf{M}_4^{L}(\tilde{Q}) = \det\mathsf{M}_2(\tilde{Q})^2$. Its transpose is the left regular matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$.
 
 The right regular matrix $\mathsf{M}_4^{R}$, whose $m$-th column is the coordinate column of $e_m\tilde Q$, is anti-multiplicative and is the regular representation of the opposite algebra. The naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\mathsf{M}_4^{L} - \mathsf{M}_4^{R}$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, and its $m$-th column is the coordinate column of $[\tilde Q, e_m]$; that is the precise sense in which left and right differ because the algebra is non-commutative.
 
@@ -603,7 +603,7 @@ The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde
 
 A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to the regular one as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural} = \Delta(A) I$ of the algebra into the scalar matrices, $\Delta = A_0^2 - A_1^2 - A_2^2 - A_3^2$, which is a real quadratic map on the real coefficients and which the regular realization does not have, in contrast with the congruence-shaped quadratic map of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its real slice $e_0, ie_1, ie_2, ie_3$ carries the Minkowski form $D = \operatorname{diag}(-1,1,1,1)$, of signature $(1,3)$, for which the three generators are the infinitesimal generators of $O(1,3)$, $M^{\mathsf T} = -DMD$; this is the form of the realization's real slice and must be distinguished from the general quaternionic bilinear form of signature $(4,4)$, which is the form of the eight-dimensional algebra. In that realization the sixteen products $\mathsf{M}_4^{L}(e_i)\mathsf{M}_4^{R}(e_j)$ are the Hermitian outer products $E_iE_j^{\mathsf T}$ and form a basis of $M_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex matrix is a biparavector, $\sum a_{ij}\,\mathsf{M}_4^{L}(e_i)\mathsf{M}_4^{R}(e_j)$.
 
-Read as a pairing, the regular matrix carries the general plain bilinear form with the normalisation of its size: $B(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4^{L}(\tilde P)\mathsf{M}_4^{L}(\tilde Q))$, of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of signature $(4,4)$ on the eight real coordinates, isotropic on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$ — the same cone as in the $2\times2$ model — with automorphism group $O_4(\mathbb{C})$ and the real forms $O(4)$, $O(1,3)$ and $O(4,4)$. The four products are the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and $X^{\mathsf T}Y^{\dagger}$ in the regular matrix and its transpose and dagger, and the four forms are the four quarter-traces $B$, $N$, $H$ and $K$ in those words.
+Read as a pairing, the regular matrix carries the general plain bilinear form with the normalisation of its size: $\langle\tilde P,\tilde Q\rangle=\tfrac14\operatorname{Tr}(\mathsf{M}_4^{L}(\tilde P)\mathsf{M}_4^{L}(\tilde Q))$, of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of signature $(4,4)$ on the eight real coordinates, isotropic on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$ — the same cone as in the $2\times2$ model — with automorphism group $O_4(\mathbb{C})$ and the real forms $O(4)$, $O(1,3)$ and $O(4,4)$. The four products are the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and $X^{\mathsf T}Y^{\dagger}$ in the regular matrix and its transpose and dagger, and the four forms are the four quarter-traces $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ in those words.
 
 ## Summary of Notation
 
@@ -618,7 +618,7 @@ Read as a pairing, the regular matrix carries the general plain bilinear form wi
 | $\mathsf{M}_4^{L}(\tilde{Q})$ | Left regular matrix, whose $m$-th column is $\operatorname{col}(\tilde Q e_m)$; written $\mathsf{M}_4(\tilde{Q})$ in the shorter notation |
 | $\mathsf{M}_4^{R}(\tilde{Q})$ | Right regular matrix, whose $m$-th column is $\operatorname{col}(e_m \tilde Q)$ |
 | $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix of the transposition theorem, $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$, and matrix of the Minkowski form of the second realization, $M^{\mathsf T} = -DMD$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The norm; $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$ |
+| $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | The norm; $\det\mathsf{M}_4^{L}(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^2$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subalgebra; its restriction carries the quaternion regular representation of *Quaternion Element Representations* |
@@ -633,7 +633,7 @@ Read as a pairing, the regular matrix carries the general plain bilinear form wi
 | $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{R}(\tilde{Q}^{*})$ | The sandwich matrix, carrying $\operatorname{col}(\tilde R)$ to $\operatorname{col}(\tilde Q\tilde R\tilde Q^{*})$; closed form $\mathsf{M}_4^{L}(\tilde{Q})D\mathsf{M}_4^{L}(\tilde{Q})^{*}D$, realification with $\det = \lvert N\rvert^{8}$ and trace $8\lvert Q_0\rvert^{2}$ |
 | $\mathsf{M}'_4(A_0, A_1, A_2, A_3)$ | Second $4 \times 4$ realization, on the generators $ie_1, ie_2, ie_3$ with $(ie_1)^2 = (ie_2)^2 = (ie_3)^2 = e_0$ |
 | $K_1, K_2, K_3$ | Coefficient conjugates of $ie_1, ie_2, ie_3$, used in the Hermitian basis of that realization |
-| $B(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form read in the regular model, $X=\mathsf{M}_4^{L}(\tilde P)$, $Y=\mathsf{M}_4^{L}(\tilde Q)$; $\mathrm{E}=-D$; signature $(4,4)$ on the eight real coordinates |
+| $\langle\tilde P,\tilde Q\rangle=\tfrac14\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form read in the regular model, $X=\mathsf{M}_4^{L}(\tilde P)$, $Y=\mathsf{M}_4^{L}(\tilde Q)$; $\mathrm{E}=-D$; signature $(4,4)$ on the eight real coordinates |
 | $\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=N$, $\tfrac14\operatorname{Tr}(XY^{\dagger})=H$, $\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=K$ | the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form as quarter-traces, in the four words of the realization |
 | $O_4(\mathbb{C})$, $O(4)$, $O(1,3)$, $O(4,4)$ | the automorphism group of the trace pairing over $\mathbb{C}$, of complex dimension $6$, and its real forms, with the $O(4,4)$ of the realified form |
 | $m(A) = A A^{\natural} = \Delta(A)I$ | The multiplicative map, $I + \mathbb{B} \to M_4(\mathbb{C})$; $\Delta = A_0^2 - A_1^2 - A_2^2 - A_3^2$, a real matrix for real coefficients, multiplicative |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-To an element $\tilde A$ of the antisymmetric quaternionic sesqualgebra of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* the block attaches the left multiplication
+To an element $\tilde A$ of the antisymmetric quaternionic sesqualgebra of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* the block attaches the left multiplication
 
 $$
 L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\vec A\times\overline{\vec R},
@@ -10,9 +10,9 @@ $$
 
 the map that pairs $\tilde A$ with the second slot of the multiplication. The map is **conjugate-linear** in $\tilde R$, since it is the composition of the coefficient conjugation with a complex-linear map, and this single fact removes the ordinary operator calculus from the block: the left multiplications do not form an associative algebra of operators, the map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear in the parameter (the first slot is the linear one) while the operator itself is conjugate-linear in its argument, and the adjoint with respect to the form of the block is again conjugate-linear. This article reads the operators one by one. The **left multiplication** is described with its matrix in the real basis, its rank, its kernel and its image. The **adjoint** with respect to the Krein form is then computed, in the class of conjugate-linear maps, and it turns out to be the negative of the operator itself. The **derivations** of the block are computed, and they form the direct sum of the endomorphisms of the centre and of the three-dimensional real skew maps of the vector parts; from them the **structure group** of the block, the group of invertible linear maps preserving the multiplication, is read. The **composition** of two left multiplications is finally computed, and with it the conjugate-linear invariants of the block. The reading runs parallel to the operator articles of the two algebras and of the two sesqualgebras, and it is the operator side of the multiplication.
 
-The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
+The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$; a generic element $\tilde Q=Q_0e_0+\vec Q$; the product is $\diamond$ and the form is $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$; a generic element $\tilde Q=Q_0e_0+\vec Q$; the product is $\diamond$ and the form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
 
 ## The Left Multiplication
 
@@ -75,9 +75,9 @@ $$
 L_{\tilde A}^{\dagger}=-L_{\tilde A},
 $$
 
-a conjugate-linear map. Equivalently, $K(\tilde A\diamond\tilde R,\tilde S)=-\overline{K(\tilde R,\tilde A\diamond\tilde S)}$.
+a conjugate-linear map. Equivalently, $\langle\tilde A\diamond\tilde R,\tilde S\rangle_{\natural*}=-\overline{\langle\tilde R,\tilde A\diamond\tilde S\rangle_{\natural*}}$.
 
-*Proof.* The left-hand side is $K(\vec A\times\overline{\vec R},\tilde S)$, which reads $-\,(\vec A\times\overline{\vec R},\overline{\vec S})$; the right-hand side is $-\overline{K(\tilde R,\vec A\times\overline{\vec S})}$, whose inner term reads $(\vec R,\overline{\vec A\times\overline{\vec S}})$, and conjugating gives $(\overline{\vec R},\vec A\times\overline{\vec S})$. The two sides are $-\det[\vec A,\overline{\vec R},\overline{\vec S}]$ and $\det[\overline{\vec R},\vec A,\overline{\vec S}]$, the two sign readings of the same triple product, and they agree.
+*Proof.* The left-hand side is $\langle\vec A\times\overline{\vec R},\tilde S\rangle_{\natural*}$, which reads $-\,(\vec A\times\overline{\vec R},\overline{\vec S})$; the right-hand side is $-\overline{\langle\tilde R,\vec A\times\overline{\vec S}\rangle_{\natural*}}$, whose inner term reads $(\vec R,\overline{\vec A\times\overline{\vec S}})$, and conjugating gives $(\overline{\vec R},\vec A\times\overline{\vec S})$. The two sides are $-\det[\vec A,\overline{\vec R},\overline{\vec S}]$ and $\det[\overline{\vec R},\vec A,\overline{\vec S}]$, the two sign readings of the same triple product, and they agree.
 
 **Remark (the adjoint is conjugate-linear, and this is settled).** The class of the adjoint is forced: a conjugate-linear map has a conjugate-linear adjoint with respect to a form that is conjugate-linear in one slot, and a linear adjoint would not satisfy the defining identity. The block settles the question in the corpus sense: the adjoint is read in the **conjugate-linear** class, and it is again the negative of the operator. An operator equal to the negative of its adjoint is the analogue for the block of a skew operator, and the relation is the operator form of the conjugate-alternation of the multiplication.
 
@@ -148,11 +148,11 @@ and it vanishes exactly when $L_{\tilde A}\tilde R=0$.
 
 *Proof.* The self-pairing of the pure vector $\vec A\times\overline{\vec R}$ under the form, as in *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**Remark (the invariants are conjugate-linear).** The invariant $K(L_{\tilde A}\tilde R,L_{\tilde A}\tilde R)$ is a quadratic form in $\tilde R$ read through the conjugation of the second slot, and it is the operator form of the negative definiteness of the form on the vector subspace. The block carries no invariant of the ordinary polynomial kind, since its second slot is conjugate-linear; the invariants are the conjugate-linear ones, and the operator admits the real structure of the space and no complex polynomial identity beyond the square above.
+**Remark (the invariants are conjugate-linear).** The invariant $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}$ is a quadratic form in $\tilde R$ read through the conjugation of the second slot, and it is the operator form of the negative definiteness of the form on the vector subspace. The block carries no invariant of the ordinary polynomial kind, since its second slot is conjugate-linear; the invariants are the conjugate-linear ones, and the operator admits the real structure of the space and no complex polynomial identity beyond the square above.
 
 ## Summary
 
-The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $K(L_{\tilde A}\tilde R,L_{\tilde A}\tilde R)=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
+The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
 
 ## Summary of Notation
 
@@ -167,13 +167,13 @@ The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is 
 | $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ | the structure group |
 | $L_{\tilde A}^2\tilde R=\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$ | the square of the operator |
 | $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, $L_{\tilde A}L_{\overline{\vec A}}\tilde R=\vec A\times(\vec A\times\vec R)$ | the conjugate operator and the two products |
-| $K(L_{\tilde A}\tilde R,L_{\tilde A}\tilde R)=-|\vec A\times\overline{\vec R}|^{2}$ | the conjugate invariant |
+| $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}$ | the conjugate invariant |
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, for the block.
+- *Introduction to the Antisymmetric Quaternionic Sesqualgebra*, for the block.
 - *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*, for the form the adjoint is taken with respect to.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the conjugate cross product and its cone.
 - *The Krein Gram Matrix and the Restrictions of the Form*, for the form and the vector subspace.
 - *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the general construction of a part.
-- *The Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*, for the same operators in the two matrix models.
+- *Introduction to the Symmetric Quaternionic Sesqualgebra*, for the same operators in the two matrix models.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $N(A) = a^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
+This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $\langle A\rangle = a^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
 
 The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and $\mathbb{D}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
 
@@ -13,7 +13,7 @@ $$
 \pi : \mathbb{D}' \to \mathbb{R}, \qquad \pi(a + \varepsilon a') = a,
 $$
 
-is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{D}' = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $N(A) = A\bar A = a^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
+is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{D}' = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $\langle A\rangle = A\bar A = a^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
 
 These two facts divide the classical Cauchy theory cleanly. The **vanishing** statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is *soft*: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The **reconstruction** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\zeta - A_0)^{-1}$ is defined only where $\zeta - A_0$ is a unit, that is only off the fibre $\pi^{-1}(\pi(A_0))$; no contour of non-zero winding about $A_0$ avoids that fibre.
 
@@ -109,7 +109,7 @@ $$
 \pi^{-1}(a) = a + \mathrm{M} = \{a + \varepsilon a' : a' \in \mathbb{R}\},
 $$
 
-which are the cosets of $\mathrm{M}$ and the straight lines parallel to the nilpotent direction. Every fibre is a copy of $\mathbb{R}$, and the algebra is the disjoint union of its fibres over the points of $\mathbb{R}$. The projection $\pi$ is the algebraic content of the phrase "the real part": the fibre through $A$ is the set of dual numbers indistinguishable from $A$ by the norm, since $N(a + \varepsilon a') = a^2$ is constant on it.
+which are the cosets of $\mathrm{M}$ and the straight lines parallel to the nilpotent direction. Every fibre is a copy of $\mathbb{R}$, and the algebra is the disjoint union of its fibres over the points of $\mathbb{R}$. The projection $\pi$ is the algebraic content of the phrase "the real part": the fibre through $A$ is the set of dual numbers indistinguishable from $A$ by the norm, since $\langle a + \varepsilon a'\rangle = a^2$ is constant on it.
 
 ### Decomposition into Two Real Integrals
 
@@ -540,7 +540,7 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $\mathbb{D}'_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ | Truncated polynomial algebra |
 | $A = a + \varepsilon a'$ | General dual number, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ |
 | $\bar A = a - \varepsilon a'$ | Dual conjugate |
-| $N(A) = A\bar A = a^2$ | Degenerate norm |
+| $\langle A\rangle = A\bar A = a^2$ | Degenerate norm |
 | $\|A\|_E = \sqrt{a^2+a'^2}$ | Euclidean modulus |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathrm{M}^2 = 0$ |
 | $\pi : \mathbb{D}' \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |

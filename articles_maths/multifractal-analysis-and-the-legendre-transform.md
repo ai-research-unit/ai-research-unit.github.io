@@ -149,7 +149,7 @@ The spectrum is supported on $[1,2]$, its maximum $1.584963=\log3/\log2$ at $q=0
 
 **Remark (the transform is a rate function).** The measure $\nu_p$ on the boundary is the product measure of the weights $p_x$, and the level set $K_\alpha$ is, up to the coding, the set of sequences whose **empirical frequency** deviates from $p$ so as to produce the exponent $\alpha$. The logarithmic moment generating function of the empirical frequency is
 $$
-\Lambda(q)=\log\sum_{x\in X}p_x^q e^{q\log(1/r_{\text{size}})},
+\Lambda(q)=\log\sum_{x\in X}p_x^q \exp(q\log(1/r_{\text{size}})),
 $$
 and the growth exponent $\tau$ is its Legendre dual; the multifractal spectrum is the rate function of the large deviations of the empirical frequencies, and the **Cramér** or **Gärtner–Ellis** theorem of *Laws of Large Numbers and the Central Limit Theorem* is the probabilistic form of the Legendre identity. The heuristic is exact for the Bernoulli measures because the empirical frequencies are the means of independent random variables; for the general self-similar measures the corresponding statement is the thermodynamic formalism of *Ergodic Theory*, in which the pressure replaces the logarithm of the moment generating function and the equilibrium state replaces the product measure.
 

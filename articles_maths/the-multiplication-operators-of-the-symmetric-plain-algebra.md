@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. This article reads the **multiplication operators** of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$, and the operator theory they carry: their relation to the operators of the plain product, their composition, their traces, determinants and ranks, their associate with respect to the trace form, the Jordan identity read on them, and the derivations and automorphisms of the block.
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the **multiplication operators** of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$, and the operator theory they carry: their relation to the operators of the plain product, their composition, their traces, determinants and ranks, their associate with respect to the trace form, the Jordan identity read on them, and the derivations and automorphisms of the block.
 
-The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Two-Sided Operators on the General Plain Algebra of Biquaternions* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
+The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Two-Sided Operators on the Biquaternion Algebra* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *Introduction to the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_kQ_ke_k$ and $Q_\mu\in\mathbb{C}$, and $N(\tilde Q)=\sum_\mu Q_\mu^2$ is the generic norm. On the operators, $L_{\tilde A},R_{\tilde A}$ are the left and right multiplications of the **plain** product, $L_{\tilde A}\tilde Q=\tilde A\tilde Q$ and $R_{\tilde A}\tilde Q=\tilde Q\tilde A$, and $L^{\bullet}_{\tilde A},R^{\bullet}_{\tilde A}$ are those of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$. The trace form is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$, and the commutator of two operators is written with brackets, $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}-L^{\bullet}_{\tilde B}L^{\bullet}_{\tilde A}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_kQ_ke_k$ and $Q_\mu\in\mathbb{C}$, and $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the generic norm. On the operators, $L_{\tilde A},R_{\tilde A}$ are the left and right multiplications of the **plain** product, $L_{\tilde A}\tilde Q=\tilde A\tilde Q$ and $R_{\tilde A}\tilde Q=\tilde Q\tilde A$, and $L^{\bullet}_{\tilde A},R^{\bullet}_{\tilde A}$ are those of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$. The trace form is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$, and the commutator of two operators is written with brackets, $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}-L^{\bullet}_{\tilde B}L^{\bullet}_{\tilde A}$.
 
 ## The Multiplication Operators
 
@@ -46,15 +46,15 @@ $$
 
 $$
 \operatorname{Tr}\bigl(L^{\bullet}_{\tilde A}\bigr)=4A_0,\qquad
-\det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_0^2\,N(\tilde A).
+\det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_0^2\,\langle\tilde A\rangle_{\natural}.
 $$
 
-*Proof.* The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde A})+\operatorname{Tr}(R_{\tilde A})\bigr)$, and the two plain operators have trace $4A_0$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde A)$, with $\lambda_1\lambda_2=N(\tilde A)$ and $\lambda_1+\lambda_2=2A_0$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=A_0^2\,N(\tilde A)$.
+*Proof.* The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde A})+\operatorname{Tr}(R_{\tilde A})\bigr)$, and the two plain operators have trace $4A_0$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of *Introduction to the Symmetric Plain Algebra* the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde A)$, with $\lambda_1\lambda_2=\langle\tilde A\rangle_{\natural}$ and $\lambda_1+\lambda_2=2A_0$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=A_0^2\,\langle\tilde A\rangle_{\natural}$.
 
 **Theorem (the rank).** The multiplication operator of the block has rank four exactly when $\tilde A$ has non-zero scalar part and non-zero generic norm,
 
 $$
-\operatorname{rank}L^{\bullet}_{\tilde A}=4\iff A_0\neq0\ \text{and}\ N(\tilde A)\neq0,
+\operatorname{rank}L^{\bullet}_{\tilde A}=4\iff A_0\neq0\ \text{and}\ \langle\tilde A\rangle_{\natural}\neq0,
 $$
 
 and otherwise the rank is
@@ -62,13 +62,13 @@ and otherwise the rank is
 $$
 \operatorname{rank}L^{\bullet}_{\tilde A}=
 \begin{cases}
-3,& A_0\neq0,\ N(\tilde A)=0,\\
+3,& A_0\neq0,\ \langle\tilde A\rangle_{\natural}=0,\\
 2,& A_0=0,\ \tilde A\neq0,\\
 0,& \tilde A=0.
 \end{cases}
 $$
 
-*Proof.* The determinant vanishes exactly when $A_0=0$ or $N(\tilde A)=0$, which gives the first statement and the three remaining rows by exclusion; the three cases are computed on the eigenvalues of $\mathsf{M}_2(\tilde A)$ and of $\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$. On a zero divisor with $A_0\neq0$ the roots of the characteristic polynomial are $0$ and $2A_0$, so the four eigenvalues of the operator are $0,A_0,A_0,2A_0$, all distinct, and the rank is three. On the hyperplane $A_0=0$ the matrix $\mathsf{M}_2(\tilde A)$ is traceless, of eigenvalues $\lambda,-\lambda$; if $N(\tilde A)\neq0$ then $\lambda\neq0$ and the operator has the eigenvalues $\lambda,0,0,-\lambda$, of rank two; if $N(\tilde A)=0$ and $\tilde A\neq0$ then $\mathsf{M}_2(\tilde A)$ is a non-zero nilpotent, conjugate to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, and the operator is nilpotent, of rank two as well. At $\tilde A=0$ the operator vanishes.
+*Proof.* The determinant vanishes exactly when $A_0=0$ or $\langle\tilde A\rangle_{\natural}=0$, which gives the first statement and the three remaining rows by exclusion; the three cases are computed on the eigenvalues of $\mathsf{M}_2(\tilde A)$ and of $\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$. On a zero divisor with $A_0\neq0$ the roots of the characteristic polynomial are $0$ and $2A_0$, so the four eigenvalues of the operator are $0,A_0,A_0,2A_0$, all distinct, and the rank is three. On the hyperplane $A_0=0$ the matrix $\mathsf{M}_2(\tilde A)$ is traceless, of eigenvalues $\lambda,-\lambda$; if $\langle\tilde A\rangle_{\natural}\neq0$ then $\lambda\neq0$ and the operator has the eigenvalues $\lambda,0,0,-\lambda$, of rank two; if $\langle\tilde A\rangle_{\natural}=0$ and $\tilde A\neq0$ then $\mathsf{M}_2(\tilde A)$ is a non-zero nilpotent, conjugate to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, and the operator is nilpotent, of rank two as well. At $\tilde A=0$ the operator vanishes.
 
 **Remark (the kernel on the hyperplane).** For $\tilde A=e_1$, a traceless element of the hyperplane $A_0=0$, the kernel is the plane spanned by $e_2,e_3$, since $e_1\bullet e_2=e_1\bullet e_3=0$; the operator is singular on the whole hyperplane $A_0=0$ and at every zero divisor, and it is invertible exactly on the units of the block with a non-zero scalar part. **The multiplication operator of the block is singular precisely on the union of the zero divisors and the trace-zero hyperplane**, and it is invertible off them.
 
@@ -120,7 +120,7 @@ $$
 $$
 
 
-**Remark (the mark, and the other adjoint).** The form is the **indefinite** general plain bilinear form, so its transpose is the **associate** $\approx$ and not the dagger; the dagger belongs to the positive definite Hermitian form, and with respect to it the operator is adjoint to another operator, $(L^{\bullet}_{\tilde A})^{\dagger}=L^{\bullet}_{\tilde A^{*}}$, which is $L^{\bullet}_{\tilde A}$ exactly when $\tilde A$ is Hermitian. **The multiplication operators are self-associate and not self-adjoint**, and the two marks must not be exchanged; the Hermitian form, its involutions and its adjoints are *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and the Hilbert-algebra series.
+**Remark (the mark, and the other adjoint).** The form is the **indefinite** general plain bilinear form, so its transpose is the **associate** $\approx$ and not the dagger; the dagger belongs to the positive definite Hermitian form, and with respect to it the operator is adjoint to another operator, $(L^{\bullet}_{\tilde A})^{\dagger}=L^{\bullet}_{\tilde A^{*}}$, which is $L^{\bullet}_{\tilde A}$ exactly when $\tilde A$ is Hermitian. **The multiplication operators are self-associate and not self-adjoint**, and the two marks must not be exchanged; the Hermitian form, its involutions and its adjoints are *Two-Sided Operators on the General Plain Sesqualgebra* and the Hilbert-algebra series.
 
 **Remark (the operators are symmetric).** The multiplication operators of the block form a **family of self-associate operators** for the trace form; the family is **not** commutative, because the commutator of two of them is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$ of §*The Derivations*, which vanishes only when the two parameters commute. **Every element of the block acts by a $\tau$-symmetric operator**, and the family is the image of the linear map $\tilde A\mapsto L^{\bullet}_{\tilde A}$ from the algebra into the endomorphisms of the underlying space. The symmetry is the operator form of the associativity of the form, and it holds for the plain operators relative to the same form as well.
 
@@ -199,7 +199,7 @@ $$
 They form a group, the **automorphism group** $\operatorname{Aut}(\mathbb{B},\bullet)$, and every automorphism fixes the unit, $g(e_0)=e_0$, and preserves the generic trace and the generic norm:
 
 $$
-T(g\tilde X)=T(\tilde X),\qquad N(g\tilde X)=N(\tilde X).
+T(g\tilde X)=T(\tilde X),\qquad \langle g\tilde X\rangle_{\natural}=\langle\tilde X\rangle_{\natural}.
 $$
 
 *Proof.* The automorphism group is a group under composition. An automorphism fixes the unit: by surjectivity every $\tilde X$ is $g(\tilde Y)$, so
@@ -208,7 +208,7 @@ $$
 g(e_0)\bullet\tilde X=g(e_0)\bullet g(\tilde Y)=g(e_0\bullet\tilde Y)=g(\tilde Y)=\tilde X,
 $$
 
-and $g(e_0)$ is therefore a two-sided identity of the block; the identity is unique, so $g(e_0)=e_0$. Applying $g$ to the quadratic identity $\tilde X\bullet\tilde X-T(\tilde X)\tilde X+N(\tilde X)e_0=0$ gives the quadratic identity of $g\tilde X$ with the same two coefficients, because $g$ fixes $e_0$ and is linear. The generic trace is half the operator trace, $T(\tilde X)=\tfrac12\operatorname{Tr}(L^{\bullet}_{\tilde X})$, and the generic norm is recovered from the trace and the square, $N(\tilde X)=\tfrac12\bigl(T(\tilde X)^2-T(\tilde X\bullet\tilde X)\bigr)$; both are unchanged by $g$, because $L^{\bullet}_{g\tilde X}=gL^{\bullet}_{\tilde X}g^{-1}$ and $g$ preserves the product, so the traces agree. Hence $T(g\tilde X)=T(\tilde X)$ and $N(g\tilde X)=N(\tilde X)$.
+and $g(e_0)$ is therefore a two-sided identity of the block; the identity is unique, so $g(e_0)=e_0$. Applying $g$ to the quadratic identity $\tilde X\bullet\tilde X-T(\tilde X)\tilde X+\langle\tilde X\rangle_{\natural}e_0=0$ gives the quadratic identity of $g\tilde X$ with the same two coefficients, because $g$ fixes $e_0$ and is linear. The generic trace is half the operator trace, $T(\tilde X)=\tfrac12\operatorname{Tr}(L^{\bullet}_{\tilde X})$, and the generic norm is recovered from the trace and the square, $\langle\tilde X\rangle_{\natural}=\tfrac12\bigl(T(\tilde X)^2-T(\tilde X\bullet\tilde X)\bigr)$; both are unchanged by $g$, because $L^{\bullet}_{g\tilde X}=gL^{\bullet}_{\tilde X}g^{-1}$ and $g$ preserves the product, so the traces agree. Hence $T(g\tilde X)=T(\tilde X)$ and $\langle g\tilde X\rangle_{\natural}=\langle\tilde X\rangle_{\natural}$.
 
 **Theorem.** The **inner automorphisms** are automorphisms: for every unit $\tilde A$ of the block,
 
@@ -266,22 +266,22 @@ It is **not inner**, by the reversal of the antisymmetric part just proved: an i
 **Definition.** The **structure group** of the block is the group of invertible $\mathbb{C}$-linear maps that multiply the generic norm by a fixed scalar:
 
 $$
-\Gamma(\mathbb{B},\bullet)=\bigl\{g\in GL_{\mathbb{C}}(\mathbb{B}):\ \exists\,\nu(g)\in\mathbb{C}^{\times},\ N(g\tilde X)=\nu(g)\,N(\tilde X)\ \text{for all }\tilde X\bigr\}.
+\Gamma(\mathbb{B},\bullet)=\bigl\{g\in GL_{\mathbb{C}}(\mathbb{B}):\ \exists\,\nu(g)\in\mathbb{C}^{\times},\ \langle g\tilde X\rangle_{\natural}=\nu(g)\,\langle\tilde X\rangle_{\natural}\ \text{for all }\tilde X\bigr\}.
 $$
 
 **Proposition.** The structure group contains the automorphism group, with $\nu=1$, and the scalar multiplications, with $\nu(\lambda)=\lambda^2$; it is the group of linear maps that preserve the norm form up to a scalar, and it is strictly larger than the automorphism group.
 
-*Proof.* An automorphism preserves $N$ by the theorem above, so $\operatorname{Aut}\subseteq\Gamma$ with $\nu=1$; a scalar $\lambda$ gives $N(\lambda\tilde X)=\lambda^2N(\tilde X)$. The condition $N(g\tilde X)=\nu(g)N(\tilde X)$ is the condition that $g$ preserve the quadratic form $N$ up to scale, and the group of such linear maps is larger than the automorphism group: the scalar multiplications with $\lambda\neq\pm1$ preserve the form up to scale and are not automorphisms of the product.
+*Proof.* An automorphism preserves $\langle\cdot,\cdot\rangle_{\natural}$ by the theorem above, so $\operatorname{Aut}\subseteq\Gamma$ with $\nu=1$; a scalar $\lambda$ gives $\langle\lambda\tilde X\rangle_{\natural}=\lambda^2\langle\tilde X\rangle_{\natural}$. The condition $\langle g\tilde X\rangle_{\natural}=\nu(g)\langle\tilde X\rangle_{\natural}$ is the condition that $g$ preserve the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$ up to scale, and the group of such linear maps is larger than the automorphism group: the scalar multiplications with $\lambda\neq\pm1$ preserve the form up to scale and are not automorphisms of the product.
 
 **Theorem.** The Lie algebra of the structure group is
 
 $$
-\operatorname{Lie}\Gamma=\bigl\{X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B}):\ b(X\tilde X,\tilde Y)+b(\tilde X,X\tilde Y)=\lambda\,b(\tilde X,\tilde Y)\ \text{for some }\lambda\in\mathbb{C}\bigr\},
+\operatorname{Lie}\Gamma=\bigl\{X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B}):\ b(X\tilde X,\tilde Y)+\mathfrak{b}(\tilde X,X\tilde Y)=\lambda\,\mathfrak{b}(\tilde X,\tilde Y)\ \text{for some }\lambda\in\mathbb{C}\bigr\},
 $$
 
-where $b(\tilde X,\tilde Y)=\tfrac12\bigl(N(\tilde X+\tilde Y)-N(\tilde X)-N(\tilde Y)\bigr)=\sum_\mu X_\mu Y_\mu$ is the polar form of the norm; it has complex dimension seven, the six-dimensional part of the maps skew for $b$ together with the one-dimensional part of the scalars.
+where $\mathfrak{b}(\tilde X,\tilde Y)=\tfrac12\bigl(\langle\tilde X+\tilde Y\rangle_{\natural}-\langle\tilde X\rangle_{\natural}-\langle\tilde Y\rangle_{\natural}\bigr)=\sum_\mu X_\mu Y_\mu$ is the polar form of the norm; it has complex dimension seven, the six-dimensional part of the maps skew for $b$ together with the one-dimensional part of the scalars.
 
-*Proof.* Read the condition over the dual numbers $\mathbb{D}'=\mathbb{C}[\varepsilon]/(\varepsilon^2)$. The map $g=\mathrm{id}+\varepsilon X$ belongs to $\Gamma$ with multiplier $1+\lambda\varepsilon$ exactly when $N((\mathrm{id}+\varepsilon X)\tilde X)=(1+\lambda\varepsilon)N(\tilde X)$ for every $\tilde X$; since $\varepsilon^2=0$ the left side is $N(\tilde X)+2\varepsilon\,b(X\tilde X,\tilde X)$, so the condition is $2b(X\tilde X,\tilde X)=\lambda b(\tilde X,\tilde X)$, whose polarisation in $\tilde X$ is the displayed identity. In the coefficient basis, where the polar form is the identity, the same condition is $X^{\mathsf T}\mathrm{I}_4+\mathrm{I}_4X=\lambda\mathrm{I}_4$, that is
+*Proof.* Read the condition over the dual numbers $\mathbb{D}'=\mathbb{C}[\varepsilon]/(\varepsilon^2)$. The map $g=\mathrm{id}+\varepsilon X$ belongs to $\Gamma$ with multiplier $1+\lambda\varepsilon$ exactly when $\langle(\mathrm{id}+\varepsilon X)\tilde X\rangle_{\natural}=(1+\lambda\varepsilon)\langle\tilde X\rangle_{\natural}$ for every $\tilde X$; since $\varepsilon^2=0$ the left side is $\langle\tilde X\rangle_{\natural}+2\varepsilon\,b(X\tilde X,\tilde X)$, so the condition is $2b(X\tilde X,\tilde X)=\lambda \mathfrak{b}(\tilde X,\tilde X)$, whose polarisation in $\tilde X$ is the displayed identity. In the coefficient basis, where the polar form is the identity, the same condition is $X^{\mathsf T}\mathrm{I}_4+\mathrm{I}_4X=\lambda\mathrm{I}_4$, that is
 
 $$
 X^{\mathsf T}+X=\lambda\mathrm{I}_4,
@@ -293,7 +293,7 @@ whose solutions are the **skew** matrices, of dimension six, and the scalars, of
 
 ## Summary
 
-The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\bullet}_{\tilde A}$, and they coincide because the product is commutative; they are half the sum of the plain operators, $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$, so $L_{\tilde A}+R_{\tilde A}=2L^{\bullet}_{\tilde A}$, with the factor of two. The trace is $4A_0$, the determinant is $A_0^2N(\tilde A)$, and the operator is invertible exactly when $A_0\neq0$ and $N(\tilde A)\neq0$, of rank three on the zero divisors with $A_0\neq0$, of rank two on the non-zero trace-zero elements and of rank zero at the origin. The composition is $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\tfrac14(L_{\tilde A\tilde B}+L_{\tilde A}R_{\tilde B}+R_{\tilde A}L_{\tilde B}+R_{\tilde B\tilde A})$ and does not equal $L^{\bullet}_{\tilde A\bullet\tilde B}$, the witness being $e_1,e_1,e_2$. Every operator is self-associate for the trace form, $\tau(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\tau(\tilde X,L^{\bullet}_{\tilde A}\tilde Y)$, and the Jordan identity reads $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$. The commutator of two operators is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$, and every derivation of the block is inner, so $\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)\cong\mathfrak{sl}(2,\mathbb{C})$ of dimension three. The inner automorphisms are the conjugations by the units, of dimension three with the derivation algebra as Lie algebra, and the natural conjugation is an outer automorphism because it reverses the antisymmetric part; the structure group, the group of linear maps that multiply the norm by a scalar, is the larger group of dimension seven.
+The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\bullet}_{\tilde A}$, and they coincide because the product is commutative; they are half the sum of the plain operators, $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$, so $L_{\tilde A}+R_{\tilde A}=2L^{\bullet}_{\tilde A}$, with the factor of two. The trace is $4A_0$, the determinant is $A_0^2\langle\tilde A\rangle_{\natural}$, and the operator is invertible exactly when $A_0\neq0$ and $\langle\tilde A\rangle_{\natural}\neq0$, of rank three on the zero divisors with $A_0\neq0$, of rank two on the non-zero trace-zero elements and of rank zero at the origin. The composition is $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\tfrac14(L_{\tilde A\tilde B}+L_{\tilde A}R_{\tilde B}+R_{\tilde A}L_{\tilde B}+R_{\tilde B\tilde A})$ and does not equal $L^{\bullet}_{\tilde A\bullet\tilde B}$, the witness being $e_1,e_1,e_2$. Every operator is self-associate for the trace form, $\tau(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\tau(\tilde X,L^{\bullet}_{\tilde A}\tilde Y)$, and the Jordan identity reads $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$. The commutator of two operators is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$, and every derivation of the block is inner, so $\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)\cong\mathfrak{sl}(2,\mathbb{C})$ of dimension three. The inner automorphisms are the conjugations by the units, of dimension three with the derivation algebra as Lie algebra, and the natural conjugation is an outer automorphism because it reverses the antisymmetric part; the structure group, the group of linear maps that multiply the norm by a scalar, is the larger group of dimension seven.
 
 ## Summary of Notation
 
@@ -301,7 +301,7 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\
 |---|---|
 | $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$, $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$ | the multiplication operators of the block |
 | $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ | coincidence of the two and the relation to the plain operators |
-| $\operatorname{Tr}(L^{\bullet}_{\tilde A})=4A_0$, $\det(L^{\bullet}_{\tilde A})=A_0^2N(\tilde A)$ | trace and determinant |
+| $\operatorname{Tr}(L^{\bullet}_{\tilde A})=4A_0$, $\det(L^{\bullet}_{\tilde A})=A_0^2\langle\tilde A\rangle_{\natural}$ | trace and determinant |
 | $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ | self-association for the trace form $\tau$ |
 | $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$ | the Jordan identity on the operators |
 | $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]=\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$ | the inner derivations |
@@ -311,8 +311,8 @@ The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\
 
 ## Further Reading
 
-- *Two-Sided Operators on the General Plain Algebra of Biquaternions* and *One-Sided Operators on the General Plain Algebra of Biquaternions*, for the plain operators whose half-sum is the operator of the block.
+- *Two-Sided Operators on the Biquaternion Algebra* and *One-Sided Operators on the General Plain Algebra of Biquaternions*, for the plain operators whose half-sum is the operator of the block.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the trace form, the invariance and the operator trace.
-- *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*, for the matrices of the operators in the two models.
+- *Introduction to the Symmetric Plain Algebra*, for the matrices of the operators in the two models.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the generic trace and the generic norm preserved by the automorphisms.
-- *The 12 Products of the Biquaternion Complex Space*, for the placement of the block and its Jordan structure.
+- *The 12 Products of the Biquaternioid Complex Space*, for the placement of the block and its Jordan structure.

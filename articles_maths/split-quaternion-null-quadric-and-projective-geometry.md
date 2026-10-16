@@ -3,18 +3,18 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $N(\tilde q) = q_0^2 + q_1^2 - q_2^2 - q_3^2$, of signature $(2,2)$. Its zero set, the **null cone**, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, of signature $(2,2)$. Its zero set, the **null cone**, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.
 
 The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the units, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
 
-**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $N = q_0^2+q_1^2-q_2^2-q_3^2$ and polarisation $B(\tilde q,\tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$, whose matrix in the basis $1, e_1, e_2, e_3$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $B(\tilde q,\tilde p) = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with $N|_V = q_1^2-q_2^2-q_3^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.
+**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $N = q_0^2+q_1^2-q_2^2-q_3^2$ and polarisation $\langle\tilde q,\tilde p\rangle = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$, whose matrix in the basis $1, e_1, e_2, e_3$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $\langle\tilde q,\tilde p\rangle = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with $N|_V = q_1^2-q_2^2-q_3^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.
 
 ## The Null Cone
 
 **Definition.** The **null cone** is the quadric
 
 $$
-\mathcal{N} = \{\, \tilde q \in \mathbb{H}_{\mathrm{s}} : N(\tilde q) = 0 \,\} = \{\, q_0^2 + q_1^2 = q_2^2 + q_3^2 \,\},
+\mathcal{N} = \{\, \tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 0 \,\} = \{\, q_0^2 + q_1^2 = q_2^2 + q_3^2 \,\},
 $$
 
 the union of the origin and the zero divisors.
@@ -27,7 +27,7 @@ Restricted to the vector subspace $V$, where $q_0 = 0$, the null cone meets $V$ 
 
 ## The Two Families of Isotropic Lines
 
-**Definition.** An **isotropic** subspace is a subspace on which $N$ (equivalently $B$) vanishes identically; a **maximal isotropic** subspace is one not properly contained in another.
+**Definition.** An **isotropic** subspace is a subspace on which $\langle\cdot\rangle_{\natural}$ (equivalently $B$) vanishes identically; a **maximal isotropic** subspace is one not properly contained in another.
 
 **Theorem.** The form has Witt index $2$: every maximal isotropic subspace has dimension $2$. The maximal isotropic planes fall into two families
 
@@ -52,7 +52,7 @@ is a member of one family, with both generators null and mutually $B$-orthogonal
 **Theorem.** Under the identification $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, the nonzero null elements are exactly the matrices of rank one:
 
 $$
-\{\, \tilde q \neq 0 : N(\tilde q) = 0 \,\} \longleftrightarrow \{\text{matrices of rank } 1\}.
+\{\, \tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0 \,\} \longleftrightarrow \{\text{matrices of rank } 1\}.
 $$
 
 Every such element is an outer product
@@ -63,7 +63,7 @@ $$
 
 determined by the pair $(u,v)$ up to $(u,v) \mapsto (\lambda u, \lambda^{-1} v)$ with $\lambda \in \mathbb{R}^\times$. Fixing $u$ and varying $v$ traces one of the two families of isotropic lines, and fixing $v$ and varying $u$ traces the other; each family is therefore a projective line, in agreement with *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
-**Proof.** The determinant of the image of $\tilde q$ is $N(\tilde q)$ by *Split-Quaternion Norm and Invertibility*, so $\tilde q$ is null exactly when its image is a singular matrix; a nonzero singular $2\times2$ matrix has rank exactly one, hence is an outer product $uv^{\mathsf{T}}$ of nonzero columns, and the pair $(u,v)$ is determined only up to the stated rescaling. An outer product satisfies $uv^{\mathsf{T}} = \lambda u\,(\lambda^{-1} v)^{\mathsf{T}}$, so the two factors are defined up to this rescaling. Fixing $u$ leaves a one-parameter family of outer products whose span is an isotropic plane, and fixing $v$ leaves the other; the two are exchanged by transposition, so they are the two families of the previous section.
+**Proof.** The determinant of the image of $\tilde q$ is $\langle\tilde q\rangle_{\natural}$ by *Split-Quaternion Norm and Invertibility*, so $\tilde q$ is null exactly when its image is a singular matrix; a nonzero singular $2\times2$ matrix has rank exactly one, hence is an outer product $uv^{\mathsf{T}}$ of nonzero columns, and the pair $(u,v)$ is determined only up to the stated rescaling. An outer product satisfies $uv^{\mathsf{T}} = \lambda u\,(\lambda^{-1} v)^{\mathsf{T}}$, so the two factors are defined up to this rescaling. Fixing $u$ leaves a one-parameter family of outer products whose span is an isotropic plane, and fixing $v$ leaves the other; the two are exchanged by transposition, so they are the two families of the previous section.
 
 ## The Segre Embedding and the Projective Null Quadric
 
@@ -75,13 +75,13 @@ $$
 
 whose image is the smooth quadric surface $\{q_0 q_3 - q_1 q_2 = 0\}$. The two factors of $\mathbb{P}^1\times\mathbb{P}^1$ are the two families of isotropic lines, and $Q \cong \mathbb{P}^1 \times \mathbb{P}^1$.
 
-**Proof.** Over $\mathbb{R}$ the form $N$ of signature $(2,2)$ is linearly equivalent to $q_0q_3 - q_1q_2$: the change of variables
+**Proof.** Over $\mathbb{R}$ the form $\langle\cdot\rangle_{\natural}$ of signature $(2,2)$ is linearly equivalent to $q_0q_3 - q_1q_2$: the change of variables
 
 $$
 q_0 = q_0 + q_1 + q_2 + q_3, \quad q_1 = q_0 - q_1 + q_2 - q_3, \quad q_2 = -q_0 + q_1 + q_2 - q_3, \quad q_3 = q_0 + q_1 - q_2 - q_3
 $$
 
-sends $q_0q_3 - q_1q_2$ to $2(q_0^2+q_1^2-q_2^2-q_3^2)$, a nonzero multiple of $N$, so the two quadrics are projectively equivalent; and the image of the Segre map is exactly $\{q_0q_3 = q_1q_2\}$, a smooth quadric surface with the two rulings given by fixing one of the two factors. The identification of the two rulings with the two families of isotropic lines is the statement of the previous section read projectively.
+sends $q_0q_3 - q_1q_2$ to $2(q_0^2+q_1^2-q_2^2-q_3^2)$, a nonzero multiple of $\langle\cdot\rangle_{\natural}$, so the two quadrics are projectively equivalent; and the image of the Segre map is exactly $\{q_0q_3 = q_1q_2\}$, a smooth quadric surface with the two rulings given by fixing one of the two factors. The identification of the two rulings with the two families of isotropic lines is the statement of the previous section read projectively.
 
 The Segre embedding makes the two families explicit: fixing $[s:t]$ and letting $[u:v]$ vary traces one isomorphism $\mathbb{P}^1 \to Q$ whose image is an isotropic line of one family, and fixing $[u:v]$ and varying $[s:t]$ traces the other family.
 
@@ -107,15 +107,15 @@ The same form determines two geometries, and the two-dimensional isotropic struc
 
 ## Summary
 
-The split-quaternion norm $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ is a form of signature $(2,2)$, with polarisation $B$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$; the conjugation is the antiautomorphism with $\tilde q\tilde{q}^{\natural} = N(\tilde q)$. Its zero set is the null cone, a three-dimensional cone singular at the origin and smooth elsewhere, whose projectivisation $Q \subset \mathbb{P}^3$ is a smooth quadric surface. Under the identification $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ the nonzero null elements are exactly the rank-one matrices, each an outer product $uv^{\mathsf{T}}$ of nonzero columns, determined up to $(\lambda u, \lambda^{-1}v)$. The form has Witt index $2$: the maximal isotropic subspaces are two-dimensional, forming the two families of isotropic planes, each parametrised by a projective line and each becoming a family of isotropic *lines* on $Q$. The quadric is the image of the Segre embedding $\mathbb{P}^1\times\mathbb{P}^1 \to \mathbb{P}^3$, hence $\cong\mathbb{P}^1\times\mathbb{P}^1$, and equivalently it is the doubly ruled surface $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings being the two factors. The group $O(2,2)$ acts on the quadric and permutes the rulings, with the algebra automorphisms $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ as the subgroup fixing the scalar point; the restriction to $V$ gives the Minkowski conic and the Lorentzian geometry of the hyperbolic plane. The projective structure is the real form of the biquaternion quadric, differing only in the reality condition.
+The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ is a form of signature $(2,2)$, with polarisation $\langle\cdot,\cdot\rangle_{\natural}$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$; the conjugation is the antiautomorphism with $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$. Its zero set is the null cone, a three-dimensional cone singular at the origin and smooth elsewhere, whose projectivisation $Q \subset \mathbb{P}^3$ is a smooth quadric surface. Under the identification $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ the nonzero null elements are exactly the rank-one matrices, each an outer product $uv^{\mathsf{T}}$ of nonzero columns, determined up to $(\lambda u, \lambda^{-1}v)$. The form has Witt index $2$: the maximal isotropic subspaces are two-dimensional, forming the two families of isotropic planes, each parametrised by a projective line and each becoming a family of isotropic *lines* on $Q$. The quadric is the image of the Segre embedding $\mathbb{P}^1\times\mathbb{P}^1 \to \mathbb{P}^3$, hence $\cong\mathbb{P}^1\times\mathbb{P}^1$, and equivalently it is the doubly ruled surface $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings being the two factors. The group $O(2,2)$ acts on the quadric and permutes the rulings, with the algebra automorphisms $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ as the subgroup fixing the scalar point; the restriction to $V$ gives the Minkowski conic and the Lorentzian geometry of the hyperbolic plane. The projective structure is the real form of the biquaternion quadric, differing only in the reality condition.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $B(\tilde q,\tilde p)$, $G = \operatorname{diag}(1,1,-1,-1)$ | the polarisation and its matrix | this article |
+| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q,\tilde p\rangle$, $G = \operatorname{diag}(1,1,-1,-1)$ | the polarisation and its matrix | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 | $uv^{\mathsf{T}}$ | the rank-one (outer-product) form of a nonzero null element | this article |
 | $\mathcal{L}, \mathcal{M}$ | the two families of maximal isotropic planes | this article |
