@@ -127,7 +127,7 @@ is a rotation of determinant $+1$ of the real slice and depends on $v$ only up t
 
 The five families of finite subgroups of $Sp(1)$ are the five families of simply laced Dynkin diagrams: the cyclic groups give the types $\tilde A$, the binary dihedral groups the types $\tilde D$, and the three binary polyhedral groups the exceptional types,
 $$
-2T \leftrightarrow \tilde E_6,\qquad 2O \leftrightarrow \tilde E_7,\qquad 2I \leftrightarrow \tilde E_8 .
+2T \leftrightarrow E_6^{(1)},\qquad 2O \leftrightarrow E_7^{(1)},\qquad 2I \leftrightarrow E_8^{(1)} .
 $$
 This is the **McKay correspondence**, and its content is that the Platonic solids, their binary preimages in the unit sphere and the exceptional simple Lie algebras are one subject. The Clifford reading of the algebra that underlies the correspondence is *Biquaternion Other Algebraic Element Representations*.
 
