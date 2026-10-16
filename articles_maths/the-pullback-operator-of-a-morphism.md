@@ -43,7 +43,7 @@ where $f^{-1}$ is the sheaf-theoretic inverse image of *Presheaves and Sheaves* 
 
 **Theorem (right exactness and the local description).** The inverse image $f^*$ is a right exact functor from $\mathcal{O}_Y$-modules to $\mathcal{O}_X$-modules. On an affine chart $f : \operatorname{Spec}B\to\operatorname{Spec}A$ corresponding to $\varphi : A\to B$ it is
 $$
-f^*\widetilde M = \widetilde{\,M\otimes_AB\,},
+f^*M^{\mathrm{sh}}= (M\otimes_A B)^{\mathrm{sh}},
 $$
 the base change of the module $M$ along $\varphi$. It preserves direct sums, cokernels and tensor products, and it does not preserve kernels in general.
 

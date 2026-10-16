@@ -29,9 +29,10 @@ The conventions below are those used throughout the corpus.
 | $\operatorname{Sym}(X), \operatorname{Aut}(X)$ | Symmetric group of a set; automorphism group of a structure |
 | $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | Endomorphisms, derivations, inner and outer automorphisms |
 | $GL, SL, PGL, O, SO, U, SU, Sp$ | The classical groups |
-| $T(V), S(V), \Lambda(V), Cl(V,Q)$ | Tensor, symmetric, exterior and Clifford algebras |
+| $T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$ | Tensor, symmetric, exterior and Clifford algebras |
 | $V^{\otimes n}, S^n V, \Lambda^n V$ | Tensor, symmetric and exterior powers |
-| $\langle v,w\rangle, Q(v), \lVert x\rVert$ | Bilinear form, quadratic form, norm |
+| $\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$ | Bilinear form, quadratic form, norm |
+| $\mathfrak{Q}$ | The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements (§*The Elements and their Coefficients*) |
 | $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
 | $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The conjugations of an algebra with an involution, and the adjoint of an operator; *The Conjugations and the Adjoint* below fixes their meanings |
 | $\tilde\Pi$, $\tilde\pi$, $\Pi$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§*The Idempotent Convention*) |
@@ -142,12 +143,17 @@ The tilde is the mark of the quaternionic factor here, and that reading of the a
 | An affine Dynkin or Coxeter type | $\tilde A_n$ | $A_n^{(1)}$ |
 | The reduced $K$-theory group | $\tilde K^0$ | $K^0_{\mathrm{red}}$ |
 | A lift of a path or a section | $\tilde\gamma$, $\tilde\sigma$ | $\gamma^{\mathrm{lift}}$, $\sigma^{\mathrm{lift}}$ |
-| The reduced $K$-theory group | $\tilde K^0$ | $K^0_{\mathrm{red}}$ |
 | The reduced homology of a space | $\tilde H_n(X)$ | $H^{\mathrm{red}}_n(X)$ |
 | The reduced Euler characteristic | $\tilde\chi(X)$ | $\chi^{\mathrm{red}}(X)$ |
 | A reduced cohomology theory | $\tilde E^k(X)$ | $E^{k,\mathrm{red}}(X)$ |
 | The ordered Čech complex | $\tilde C^p$ | $C^p_{\mathrm{ord}}$ |
-| A lift of a path or a section | $\tilde\gamma$, $\tilde\sigma$ | $\gamma^{\mathrm{lift}}$, $\sigma^{\mathrm{lift}}$ |
+| The extended affine Weyl group | $\widetilde W$ | $W^{\mathrm{ext}}$ |
+| An induced character | $\widetilde\chi$ | $\chi^{\mathrm{ind}}$ |
+| The dual completion of an $L$-function | $\widetilde\Lambda_f$ | $\Lambda^{\mathrm{dual}}_f$ |
+| The residue field of a non-archimedean field | $\tilde K$ | $K^{\mathrm{res}}$ |
+| The linearised sandwich map | $\widetilde T$ | $T^{\otimes}$ |
+| An induced automorphism | $\widetilde T$ | $T^{\mathrm{aut}}$ |
+| The dual Hecke operator | $\widetilde U_p$ | $U_p^{\vee}$ |
 
 **The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
 

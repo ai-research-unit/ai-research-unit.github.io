@@ -164,7 +164,7 @@ The tilde marks the quaternionic factor in this convention, and that reading of 
 | A phasor | $\tilde V$, $\tilde I$ | $\underline{V}$, $\underline{I}$ |
 | The complex permittivity | $\tilde\epsilon$ | $\epsilon_{\mathrm{c}}$ |
 | A momentum-space transform | $\tilde f(k)$ | $f^{\wedge}(k)$ |
-| The conformal or Jordan-frame metric | $\tilde g_{\mu\nu}$ | $g^{\mathrm{J}}_{\mu\nu}$ |
+| The conformal or Jordan-frame metric | $g^{\mathrm{J}}_{\mu\nu}}$ | $g^{\mathrm{J}}_{\mu\nu}$ |
 | An interaction-picture operator | $\tilde A$ | $A_{\mathrm{I}}$ |
 | A running coupling | $\tilde g$, $\tilde m$ | $g(\mu)$, $m(\mu)$ |
 | A string left-mover | $\tilde X(\bar z)$ | $X_L(\bar z)$ |

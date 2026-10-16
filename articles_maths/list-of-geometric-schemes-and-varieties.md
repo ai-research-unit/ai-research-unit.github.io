@@ -60,7 +60,7 @@ The coherent sheaves are the coefficients of the cohomology of a scheme, and the
 |---|---|---|
 | a quasi-coherent sheaf $\mathcal{F}$ | a sheaf of $\mathcal{O}_X$-modules locally associated with a module | *Sheaves in Algebraic Geometry* |
 | a coherent sheaf | a quasi-coherent sheaf of finite type with finitely generated kernels on an affine cover | *Coherent Sheaves* |
-| the equivalence $M \mapsto \widetilde M$ | the equivalence of the modules over $A$ and the quasi-coherent sheaves on $\operatorname{Spec} A$ | *Sheaves in Algebraic Geometry* |
+| the equivalence $M \mapsto M^{\mathrm{sh}}$ | the equivalence of the modules over $A$ and the quasi-coherent sheaves on $\operatorname{Spec} A$ | *Sheaves in Algebraic Geometry* |
 | the twisting sheaf $\mathcal{O}_X(d)$ | the invertible sheaf of the projective space, with $\mathcal{O}(d)\otimes\mathcal{O}(e) \cong \mathcal{O}(d+e)$ | *Sheaves in Algebraic Geometry* |
 | the canonical sheaf $\omega_X = \Lambda^n\Omega^1_{X/k}$ | the top exterior power of the cotangent sheaf | *Sheaves in Algebraic Geometry* |
 | Serre duality | the pairing $\mathcal{F}\leftrightarrow\mathcal{F}^{\vee}\otimes\omega_X$ | *Sheaves in Algebraic Geometry* |

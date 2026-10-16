@@ -7,7 +7,7 @@ A rigid analytic function is a function on a rigid analytic space that is locall
 
 This article develops that function theory. It defines the Tate algebra with its Gauss norm, proves the Gauss lemma (multiplicativity of the norm) and the Weierstrass division and preparation theorems, states the maximum modulus principle, defines affinoid algebras and their spectra, records Tate's acyclicity theorem and the Nullstellensatz, and treats the rigidity phenomena — the identity theorem on connected spaces, the absence of partitions of unity, the sup-norm formula, the non-Archimedean Liouville theorem and Krasner's lemma. It closes with the standard examples: the closed unit disc with its reduction to the affine line over the residue field, the annuli, the unit circle as a Laurent domain, and the punctured disc, whose ring of analytic functions is the Robba ring of *p-adic Differential Equations*.
 
-The prerequisites are *Analytic Functions and Power Series* and *Non-Archimedean Analysis* for convergent series and the ultrametric estimates, *p-adic Analysis* for the unit disc and the Newton polygon, *p-adic Differential Equations* for the Robba ring, *Rings* and *Modules* for Noetherian rings and localisation, and *Rigid Analytic Geometry*, written in parallel, for the spaces and the Grothendieck topology; the comparison with the complex theory is the business of the synthetic study of $\mathbb{C}$, and the Berkovich and adic points of view are in *Berkovich Spaces* and *Adic Spaces*. Throughout, $K$ is a complete non-Archimedean field with absolute value $\lvert \cdot \rvert$, valuation ring $K^\circ$, maximal ideal $K^{\circ\circ}$ and residue field $\tilde K = k$; the field is algebraically closed when a statement needs it, and this is flagged. The unit polydisc is the set of $x = (x_1,\dots,x_n)$ with all $\lvert x_i \rvert \leq 1$, and the Gauss norm of a series is the supremum of the absolute values of its coefficients.
+The prerequisites are *Analytic Functions and Power Series* and *Non-Archimedean Analysis* for convergent series and the ultrametric estimates, *p-adic Analysis* for the unit disc and the Newton polygon, *p-adic Differential Equations* for the Robba ring, *Rings* and *Modules* for Noetherian rings and localisation, and *Rigid Analytic Geometry*, written in parallel, for the spaces and the Grothendieck topology; the comparison with the complex theory is the business of the synthetic study of $\mathbb{C}$, and the Berkovich and adic points of view are in *Berkovich Spaces* and *Adic Spaces*. Throughout, $K$ is a complete non-Archimedean field with absolute value $\lvert \cdot \rvert$, valuation ring $K^\circ$, maximal ideal $K^{\circ\circ}$ and residue field $K^{\mathrm{res}} = k$; the field is algebraically closed when a statement needs it, and this is flagged. The unit polydisc is the set of $x = (x_1,\dots,x_n)$ with all $\lvert x_i \rvert \leq 1$, and the Gauss norm of a series is the supremum of the absolute values of its coefficients.
 
 ## The Tate Algebra
 
@@ -17,21 +17,21 @@ The prerequisites are *Analytic Functions and Power Series* and *Non-Archimedean
 $$
 T_n = K\langle \xi_1, \dots, \xi_n \rangle = \Bigl\{ f = \sum_{\nu \in \mathbb{N}^n} a_\nu \xi^\nu : a_\nu \in K,\ \lvert a_\nu \rvert \to 0 \Bigr\},
 $$
-the ring of power series in $n$ variables whose coefficients tend to $0$; the **Gauss norm** of $f$ is $\lVert f \rVert = \max_\nu \lvert a_\nu \rvert$, the maximum existing because the coefficients tend to $0$. The **reduction** of $f$ is $\tilde f = \sum_{\nu : \lvert a_\nu \rvert = \lVert f \rVert} \bar a_\nu \xi^\nu \in k[\xi_1,\dots,\xi_n]$, the sum over the coefficients of maximal absolute value, taken modulo the maximal ideal.
+the ring of power series in $n$ variables whose coefficients tend to $0$; the **Gauss norm** of $f$ is $\lVert f \rVert = \max_\nu \lvert a_\nu \rvert$, the maximum existing because the coefficients tend to $0$. The **reduction** of $f$ is $f^{\mathrm{res}} = \sum_{\nu : \lvert a_\nu \rvert = \lVert f \rVert} \bar a_\nu \xi^\nu \in k[\xi_1,\dots,\xi_n]$, the sum over the coefficients of maximal absolute value, taken modulo the maximal ideal.
 
 **Theorem (Gauss).** $T_n$, with the Gauss norm, is a $K$-Banach algebra, and the Gauss norm is multiplicative:
 $$
 \lVert fg \rVert = \lVert f \rVert\,\lVert g \rVert \qquad (f, g \in T_n).
 $$
-Moreover $\tilde{fg} = \tilde f \tilde g$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\xi] \to \tilde T_n$ is an isomorphism onto the reduction.
+Moreover $\tilde{fg} = f^{\mathrm{res}} g^{\mathrm{res}}$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\xi] \to \tilde T_n$ is an isomorphism onto the reduction.
 
-**Proof.** Submultiplicativity of the Gauss norm is immediate from the ultrametric inequality on the coefficients of a product. For multiplicativity, scale so that $\lVert f \rVert = \lVert g \rVert = 1$; then $f, g$ lie in the subring $T_n^\circ$ of series with coefficients in the valuation ring $K^\circ$, and reduction modulo the maximal ideal gives a ring isomorphism $T_n^\circ/\mathrm{M}T_n^\circ \cong k[\xi_1,\dots,\xi_n]$, since a series with coefficients in $K^\circ$ determines and is determined by its reduction. The reductions $\tilde f, \tilde g$ are nonzero, and $k[\xi]$ is a polynomial ring over a field, hence a domain, so $\widetilde{fg} = \tilde f\tilde g \neq 0$ and therefore $\lVert fg \rVert = 1 = \lVert f \rVert \lVert g \rVert$. The general case follows by scaling. The statement about the reduction is the same computation.
+**Proof.** Submultiplicativity of the Gauss norm is immediate from the ultrametric inequality on the coefficients of a product. For multiplicativity, scale so that $\lVert f \rVert = \lVert g \rVert = 1$; then $f, g$ lie in the subring $T_n^\circ$ of series with coefficients in the valuation ring $K^\circ$, and reduction modulo the maximal ideal gives a ring isomorphism $T_n^\circ/\mathrm{M}T_n^\circ \cong k[\xi_1,\dots,\xi_n]$, since a series with coefficients in $K^\circ$ determines and is determined by its reduction. The reductions $f^{\mathrm{res}}, g^{\mathrm{res}}$ are nonzero, and $k[\xi]$ is a polynomial ring over a field, hence a domain, so $(fg)^{\mathrm{res}} = f^{\mathrm{res}}g^{\mathrm{res}} \neq 0$ and therefore $\lVert fg \rVert = 1 = \lVert f \rVert \lVert g \rVert$. The general case follows by scaling. The statement about the reduction is the same computation.
 
 The multiplicativity of the Gauss norm is the technical heart of the theory: it is what makes the affinoid algebras behave like rings of functions with a sup norm, and it fails in the Archimedean case, where the analogous norm on the disc algebra is only submultiplicative.
 
 ### Weierstrass Division and Preparation
 
-**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\xi_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\xi_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $\tilde f \in k[\xi]$ has degree $d$ as a polynomial in $\xi_n$ and the coefficient of $\xi_n^d$ in $\tilde f$ is nonzero; the coefficient of $\xi_n^d$ in $f$ is then a unit and the other coefficients of $\xi_n$-degree $> d$ have norm less than $1$.
+**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\xi_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\xi_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $f^{\mathrm{res}} \in k[\xi]$ has degree $d$ as a polynomial in $\xi_n$ and the coefficient of $\xi_n^d$ in $f^{\mathrm{res}}$ is nonzero; the coefficient of $\xi_n^d$ in $f$ is then a unit and the other coefficients of $\xi_n$-degree $> d$ have norm less than $1$.
 
 **Theorem (Weierstrass division).** Let $f \in T_n$ be distinguished of degree $d$ in $\xi_n$, normalised to $\lVert f \rVert = 1$. Then for every $g \in T_n$ there are unique $q \in T_n$ and $r \in T_{n-1}[\xi_n]$ with $\deg_{\xi_n} r < d$ and
 $$
@@ -135,7 +135,7 @@ The Liouville theorem is the sharpest expression of the discrepancy with the com
 $$
 X \longrightarrow \mathbb{A}^1_k, \qquad x \longmapsto \tilde x = \text{the reduction of the coordinate of } x,
 $$
-is surjective and has as fibres the residue classes of the disc. A function $f \in T_1$ of norm $1$ that is a unit has reduction $\tilde f$ a nonzero polynomial, and $f$ attains the value $1$ on the disc by the maximum modulus principle. The disc is connected and its functions are the power series with coefficients tending to $0$.
+is surjective and has as fibres the residue classes of the disc. A function $f \in T_1$ of norm $1$ that is a unit has reduction $f^{\mathrm{res}}$ a nonzero polynomial, and $f$ attains the value $1$ on the disc by the maximum modulus principle. The disc is connected and its functions are the power series with coefficients tending to $0$.
 
 **Example (annuli and the unit circle).** For $0 < r < 1$ the annulus $A(r,1) = \{x : r \leq \lvert x \rvert \leq 1\}$ is the affinoid space of the Laurent domain defined by $\lvert x \rvert \leq 1$ and $\lvert x \rvert \geq r$, with affinoid algebra $K\langle r x^{-1}, x\rangle$, the ring of Laurent series $\sum_{n\in\mathbb{Z}} a_n x^n$ with $\lvert a_n \rvert r^n \to 0$ for $n \to -\infty$ and $\lvert a_n \rvert \to 0$ for $n \to +\infty$. The unit circle $\lvert x \rvert = 1$ is the rational domain defined by $\lvert x \rvert = 1$, with algebra the Laurent algebra $K\langle x, x^{-1}\rangle$. As $r$ decreases to $0$ the algebras $K\langle r x^{-1}, x\rangle$ increase, and no single affinoid algebra among them is the ring of all functions on the punctured disc.
 
@@ -159,10 +159,10 @@ The maximum modulus principle, $\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} 
 |---|---|
 | $K$ | Complete non-Archimedean field |
 | $\bar K$, $\bar K^\circ$ | Completed algebraic closure, its valuation ring |
-| $k = \tilde K$ | Residue field of $K$ |
+| $k = K^{\mathrm{res}}$ | Residue field of $K$ |
 | $T_n = K\langle \xi_1,\dots,\xi_n\rangle$ | Tate algebra in $n$ variables |
 | $\lVert f \rVert$ | Gauss norm, maximum of the coefficient absolute values |
-| $\tilde f$ | Reduction of $f$, a polynomial over $k$ |
+| $f^{\mathrm{res}}$ | Reduction of $f$, a polynomial over $k$ |
 | $K\langle r x^{-1}, x\rangle$ | Affinoid algebra of the annulus $r \leq \lvert x \rvert \leq 1$ |
 | $A$ | A $K$-affinoid algebra, a quotient of $T_n$ |
 | $\mathrm{Spm}(A)$ | Spectrum of maximal ideals, the affinoid space |

@@ -79,19 +79,19 @@ the inner products being those of *Character Theory* taken in the respective gro
 
 ## The Character Formula
 
-**Theorem (the induced character formula).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\widetilde\chi = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$
+**Theorem (the induced character formula).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\chi^{\mathrm{ind}} = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$
 
 $$
-\widetilde\chi(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr),
+\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr),
 $$
 
-the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\widetilde\chi(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\widetilde\chi(1) = [G:H]\chi(1)$.
+the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\chi^{\mathrm{ind}}(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\chi^{\mathrm{ind}}(1) = [G:H]\chi(1)$.
 
 *Proof.* The module $k[G]\otimes_{k[H]}W$ has the $k$-basis $x\otimes w$ with $x\in T$ running over a transversal, and the trace of $g$ on this module is the sum over the $x$ for which $g$ maps the summand $x\otimes W$ to itself; the condition for that is $x^{-1}gx\in H$, and on such a summand the action of $g$ on $x\otimes W$ corresponds to the action of $x^{-1}gx$ on $W$, whose trace is $\chi(x^{-1}gx)$. This gives the second display, and the first follows since each $h\in H$ with $x^{-1}gx\in H$ contributes the same term over the $\lvert H\rvert$ elements of the coset.
 
-**Corollary (permutation characters).** For the trivial module $W = \mathbf{1}_H$ the formula gives the number of fixed points: $\widetilde{\mathbf{1}}(g) = \frac{1}{\lvert H\rvert}\lvert\{x\in G : x^{-1}gx\in H\}\rvert$, the number of left cosets fixed by $g$, and $\widetilde{\mathbf{1}}(g) = \lvert\{x\in T : x^{-1}gx\in H\}\rvert$.
+**Corollary (permutation characters).** For the trivial module $W = \mathbf{1}_H$ the formula gives the number of fixed points: $\mathbf{1}^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\lvert\{x\in G : x^{-1}gx\in H\}\rvert$, the number of left cosets fixed by $g$, and $\mathbf{1}^{\mathrm{ind}}(g) = \lvert\{x\in T : x^{-1}gx\in H\}\rvert$.
 
-**Example (induction from $S_2$ to $S_3$).** Let $G = S_3$, let $H = S_2 = \{e,(12)\}$ be the stabiliser of the point $3$, and let $W$ be the trivial $k[H]$-module. The induced module is the permutation module $k[S_3/S_2]$, of dimension $3$, and the formula gives the values $3$ at the identity, $1$ at each transposition and $0$ at each 3-cycle. Decomposing with the table of *Character Theory*: the multiplicities are $\langle\widetilde{\mathbf{1}},\mathbf{1}\rangle = \frac{1}{6}(3+3\cdot1+2\cdot0) = 1$, $\langle\widetilde{\mathbf{1}},\varepsilon\rangle = \frac{1}{6}(3+3\cdot(-1)+0) = 0$ and $\langle\widetilde{\mathbf{1}},\sigma\rangle = \frac{1}{6}(3\cdot2+3\cdot0+2\cdot0) = 1$, so that
+**Example (induction from $S_2$ to $S_3$).** Let $G = S_3$, let $H = S_2 = \{e,(12)\}$ be the stabiliser of the point $3$, and let $W$ be the trivial $k[H]$-module. The induced module is the permutation module $k[S_3/S_2]$, of dimension $3$, and the formula gives the values $3$ at the identity, $1$ at each transposition and $0$ at each 3-cycle. Decomposing with the table of *Character Theory*: the multiplicities are $\langle\mathbf{1}^{\mathrm{ind}},\mathbf{1}\rangle = \frac{1}{6}(3+3\cdot1+2\cdot0) = 1$, $\langle\mathbf{1}^{\mathrm{ind}},\varepsilon\rangle = \frac{1}{6}(3+3\cdot(-1)+0) = 0$ and $\langle\mathbf{1}^{\mathrm{ind}},\sigma\rangle = \frac{1}{6}(3\cdot2+3\cdot0+2\cdot0) = 1$, so that
 
 $$
 \operatorname{Ind}_{S_2}^{S_3}\mathbf{1}_{S_2} \cong \mathbf{1}\oplus\sigma ,

@@ -31,7 +31,7 @@ $$
 \alpha + n : \mathcal{A}(S) \longrightarrow \mathbb{R}, \qquad x \longmapsto \alpha(x)+n ,
 $$
 
-defines an **affine root**; the affine roots form an affine root system in the sense of *Root Systems and Classification*, with the finite Weyl group $W$ of the root system of $\mathbf{S}$ acting on $\mathcal{A}(S)$ by linear reflections and the **affine Weyl group** $W_{\mathrm{aff}} = W\ltimes \Lambda_r$ acting by affine reflections, where $\Lambda_r$ is the coroot lattice. The normaliser of $S$ in $G$ acts on $\mathcal{A}(S)$ by affine isometries, and the quotient of this action is the **extended affine Weyl group** $\widetilde{W} = W\ltimes\Lambda$ with $\Lambda$ the group of cocharacters modulo the coroot lattice; it is a Coxeter group only in the split case, and in general it is the semidirect product of the affine Weyl group with the group of diagram automorphisms of the Dynkin diagram.
+defines an **affine root**; the affine roots form an affine root system in the sense of *Root Systems and Classification*, with the finite Weyl group $W$ of the root system of $\mathbf{S}$ acting on $\mathcal{A}(S)$ by linear reflections and the **affine Weyl group** $W_{\mathrm{aff}} = W\ltimes \Lambda_r$ acting by affine reflections, where $\Lambda_r$ is the coroot lattice. The normaliser of $S$ in $G$ acts on $\mathcal{A}(S)$ by affine isometries, and the quotient of this action is the **extended affine Weyl group** $W^{\mathrm{ext}} = W\ltimes\Lambda$ with $\Lambda$ the group of cocharacters modulo the coroot lattice; it is a Coxeter group only in the split case, and in general it is the semidirect product of the affine Weyl group with the group of diagram automorphisms of the Dynkin diagram.
 
 ### Facets and Alcoves
 
@@ -59,7 +59,7 @@ where $G = \mathbf{G}(k)$ acts on the first factor by left translation and the e
 
 **Theorem (Bruhat–Tits).** Let $G = \mathbf{G}(k)$ be as above.
 
-**(a)** The building $I(\mathbf{G},k)$ is a thick affine building of type $\widetilde{W}$; its apartments are the conjugates $g\mathcal{A}(S)$ of the standard apartment, each isometric to $\mathcal{A}(S)$; its residues are the spherical buildings of the parahoric subgroups, and its building at infinity is the spherical building of $\mathbf{G}$ over $k$.
+**(a)** The building $I(\mathbf{G},k)$ is a thick affine building of type $W^{\mathrm{ext}}$; its apartments are the conjugates $g\mathcal{A}(S)$ of the standard apartment, each isometric to $\mathcal{A}(S)$; its residues are the spherical buildings of the parahoric subgroups, and its building at infinity is the spherical building of $\mathbf{G}$ over $k$.
 
 **(b)** $G$ acts on $I(\mathbf{G},k)$ by isometries and type-preserving simplicial automorphisms, transitively on the alcoves; the stabiliser of an alcove is an **Iwahori subgroup**, and the stabilisers of the facets are the **parahoric subgroups**.
 
@@ -185,14 +185,14 @@ The stabilisers of the facets are the parahoric subgroups and those of the alcov
 | $\mathbf{S}$, $X_*(S)$, $X^*(S)$ | Maximal $k$-split torus; cocharacters; characters |
 | $\mathcal{A}(S) = X_*(S)\otimes\mathbb{R}$ | Apartment, a Euclidean space of dimension $r$ |
 | $\alpha + n$ | Affine root: the affine function $x\mapsto\alpha(x)+n$ on $\mathcal{A}(S)$ |
-| $W$, $W_{\mathrm{aff}} = W\ltimes\Lambda_r$, $\widetilde W$ | Weyl group; affine Weyl group; extended affine Weyl group |
+| $W$, $W_{\mathrm{aff}} = W\ltimes\Lambda_r$, $W^{\mathrm{ext}}$ | Weyl group; affine Weyl group; extended affine Weyl group |
 | wall, facet, alcove, type | Hyperplane of an affine root; face of an alcove; chamber; type of a facet |
 | $I(\mathbf{G},k)$ | Bruhat–Tits building |
 | $g\mathcal{A}(S)$ | Apartment of the building |
 | Bruhat–Tits metric | Metric glued from the Euclidean metrics of the apartments; $\mathrm{CAT}(0)$ |
 | parahoric subgroup | Stabiliser of a facet of the building |
 | Iwahori subgroup $B$ | Stabiliser of an alcove |
-| Bruhat decomposition for $P$ | $G = \bigsqcup_{w} PwP$, $w$ in the quotient of $\widetilde W$ |
+| Bruhat decomposition for $P$ | $G = \bigsqcup_{w} PwP$, $w$ in the quotient of $W^{\mathrm{ext}}$ |
 | fixed-point theorem | Every bounded subgroup fixes a facet |
 | amalgamation theorem | $G$ is the amalgam of the maximal parahorics along $B$ |
 | $\partial I(\mathbf{G},k)$ | Building at infinity, a spherical building of rank $r$ |

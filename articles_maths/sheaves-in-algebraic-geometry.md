@@ -57,23 +57,23 @@ for a family $f_i$ with $(f_i) = (f)$ in $A_f$, a standard consequence of the ch
 
 **Definition.** An $\mathcal{O}_X$-**module** on a locally ringed space $X$ is a sheaf $\mathcal{F}$ of abelian groups with a multiplication $\mathcal{O}_X(U)\times\mathcal{F}(U)\to\mathcal{F}(U)$ for every open $U$, compatible with restriction and making $\mathcal{F}(U)$ a module over the ring $\mathcal{O}_X(U)$. A morphism of $\mathcal{O}_X$-modules is a morphism of sheaves respecting the multiplication; the category $\mathcal{O}_X\text{-}\mathbf{Mod}$ is abelian by *Presheaves and Sheaves*, and the tensor product $\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{G}$ and the sheaf hom $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{G})$ are defined by sheafification.
 
-**Definition.** Let $X = \operatorname{Spec} A$. For an $A$-module $M$ define the sheaf $\widetilde{M}$ on $X$ by the prescription
+**Definition.** Let $X = \operatorname{Spec} A$. For an $A$-module $M$ define the sheaf $M^{\mathrm{sh}}$ on $X$ by the prescription
 
 $$
-\widetilde M(D(f)) = M_f = M\otimes_A A_f, \qquad f\in A,
+M^{\mathrm{sh}}(D(f)) = M_f = M\otimes_A A_f, \qquad f\in A,
 $$
 
-with the evident restriction maps; the sheaf axioms hold by the same exactness used for the structure sheaf. The construction is functorial in $M$ and exact: the localisation functor $M\mapsto M_f$ is exact, the direct sums and products in the definition commute with the kernels and cokernels of the localisations, and a sequence of $A$-modules is exact if and only if it is exact after localising at every $f$. A sheaf of $\mathcal{O}_X$-modules is **quasi-coherent** if it is isomorphic to some $\widetilde M$, and **coherent** if in addition $M$ is finitely generated — for a Noetherian $A$ this agrees with the usual notion of a coherent sheaf of finite type.
+with the evident restriction maps; the sheaf axioms hold by the same exactness used for the structure sheaf. The construction is functorial in $M$ and exact: the localisation functor $M\mapsto M_f$ is exact, the direct sums and products in the definition commute with the kernels and cokernels of the localisations, and a sequence of $A$-modules is exact if and only if it is exact after localising at every $f$. A sheaf of $\mathcal{O}_X$-modules is **quasi-coherent** if it is isomorphic to some $M^{\mathrm{sh}}$, and **coherent** if in addition $M$ is finitely generated — for a Noetherian $A$ this agrees with the usual notion of a coherent sheaf of finite type.
 
-**Theorem (modules and quasi-coherent sheaves).** For $X = \operatorname{Spec} A$ the functor $M\mapsto\widetilde M$ is an equivalence of categories
+**Theorem (modules and quasi-coherent sheaves).** For $X = \operatorname{Spec} A$ the functor $M\mapstoM^{\mathrm{sh}}$ is an equivalence of categories
 
 $$
-\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapsto\widetilde M, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F}),
+\mathbf{Mod}(A)\ \xrightarrow{\ \sim\ }\ \mathbf{QCoh}(X), \qquad M\mapstoM^{\mathrm{sh}}, \qquad \mathcal{F}\mapsto\Gamma(X,\mathcal{F}),
 $$
 
-with quasi-inverse the global sections functor. The equivalence commutes with kernels, cokernels, images and finite direct sums, with the tensor product, with the sheaf hom, and with the localisation $A\to A_f$ in the sense that $\widetilde M|_{D(f)} = \widetilde{M_f}$ on $\operatorname{Spec} A_f$.
+with quasi-inverse the global sections functor. The equivalence commutes with kernels, cokernels, images and finite direct sums, with the tensor product, with the sheaf hom, and with the localisation $A\to A_f$ in the sense that $M^{\mathrm{sh}}|_{D(f)} = M^{\mathrm{sh}}_f}$ on $\operatorname{Spec} A_f$.
 
-*Proof.* The global sections of $\widetilde M$ recover $M$: $\Gamma(X,\widetilde M)$ is the equaliser of the maps $\prod_i M_{f_i}\to\prod_{i,j}M_{f_if_j}$ for any family generating the unit ideal, and this equaliser is $M$ by the same exactness used above. The functor is fully faithful because a morphism $\widetilde M\to\widetilde N$ is determined by its global sections and every $A$-linear map $M\to N$ induces one; it is essentially surjective by the definition of quasi-coherence. The remaining statements are the commutation of the localisation with the respective operations, which is Part I's *Localization and Completion of Modules*.
+*Proof.* The global sections of $M^{\mathrm{sh}}$ recover $M$: $\Gamma(X,M^{\mathrm{sh}})$ is the equaliser of the maps $\prod_i M_{f_i}\to\prod_{i,j}M_{f_if_j}$ for any family generating the unit ideal, and this equaliser is $M$ by the same exactness used above. The functor is fully faithful because a morphism $M^{\mathrm{sh}}\toN^{\mathrm{sh}}$ is determined by its global sections and every $A$-linear map $M\to N$ induces one; it is essentially surjective by the definition of quasi-coherence. The remaining statements are the commutation of the localisation with the respective operations, which is Part I's *Localization and Completion of Modules*.
 
 **Corollary (exactness of global sections on an affine scheme).** The functor $\Gamma(X,-)$ is exact on quasi-coherent sheaves: if
 
@@ -106,7 +106,7 @@ $$
 the degree-zero part of the localisation $S_f$. The **twisting sheaves** are
 
 $$
-\mathcal{O}_X(d) = \widetilde{S(d)}, \qquad S(d)_m = S_{d+m},
+\mathcal{O}_X(d) = S(d)^{\mathrm{sh}}, \qquad S(d)_m = S_{d+m},
 $$
 
 the sheaf associated with the graded $S$-module with degrees shifted by $d$; they satisfy $\mathcal{O}_X(d)\otimes_{\mathcal{O}_X}\mathcal{O}_X(e)\cong\mathcal{O}_X(d+e)$ and $\mathcal{O}_X(0) = \mathcal{O}_X$. For $S = A[x_0,\ldots,x_n]$ one writes $\mathbb{P}^n_A = \operatorname{Proj} S$; it is covered by the $n+1$ open affines $U_i = D_+(x_i)\cong\operatorname{Spec} A[x_0/x_i,\ldots,\widehat{x_i/x_i},\ldots]$, whose intersections are again affine, $U_{i_0\ldots i_p} = \operatorname{Spec} A[x_{j_0}/x_{i_0},\ldots]$, so the standard cover is a cover by affine schemes with affine intersections.
@@ -217,7 +217,7 @@ is the linear Hilbert polynomial of the projective line. For a smooth projective
 
 ## Summary
 
-An affine scheme is the spectrum of a commutative ring with the Zariski topology and the structure sheaf whose sections over a distinguished open set $D(f)$ are the localisation $A_f$; it is a locally ringed space whose stalks are the local rings $A_{\mathrm{P}}$, and its ringed-space morphisms are contravariantly the ring homomorphisms. The sheaves of modules over the structure sheaf are governed by an equivalence of categories: a module $M$ over $A$ determines a quasi-coherent sheaf $\widetilde M$ with $\widetilde M(D(f)) = M_f$, and every quasi-coherent sheaf arises this way, with the global sections functor as quasi-inverse and with kernels, cokernels, tensor products and sheaf homs corresponding on the two sides. The immediate consequence is the exactness of global sections on an affine scheme and the **affine vanishing theorem**: the higher cohomology of every quasi-coherent sheaf on $\operatorname{Spec} A$ vanishes, so the interest passes to the projective case.
+An affine scheme is the spectrum of a commutative ring with the Zariski topology and the structure sheaf whose sections over a distinguished open set $D(f)$ are the localisation $A_f$; it is a locally ringed space whose stalks are the local rings $A_{\mathrm{P}}$, and its ringed-space morphisms are contravariantly the ring homomorphisms. The sheaves of modules over the structure sheaf are governed by an equivalence of categories: a module $M$ over $A$ determines a quasi-coherent sheaf $M^{\mathrm{sh}}$ with $M^{\mathrm{sh}}(D(f)) = M_f$, and every quasi-coherent sheaf arises this way, with the global sections functor as quasi-inverse and with kernels, cokernels, tensor products and sheaf homs corresponding on the two sides. The immediate consequence is the exactness of global sections on an affine scheme and the **affine vanishing theorem**: the higher cohomology of every quasi-coherent sheaf on $\operatorname{Spec} A$ vanishes, so the interest passes to the projective case.
 
 A projective scheme is built from a graded ring by the same construction with homogeneous ideals, and carries the twisting sheaves $\mathcal{O}(d)$; on projective space the standard cover by the open affines $U_i$ has affine intersections, so the Leray theorem reduces the computation of cohomology to a Čech complex of localisations, and an explicit monomial computation gives $H^0(\mathcal{O}(d)) = S_d$, the vanishing of the intermediate cohomology, and $H^n(\mathcal{O}(d))$ as the dual of $S_{-d-n-1}$; on the projective line the computation is carried out in full and recovers the ranks $d+1$ and $-d-1$. For a coherent sheaf on a projective scheme over a Noetherian ring the cohomology is finitely generated, vanishes above the relative dimension, and vanishes in positive degree after twisting by a large $\mathcal{O}(d)$, so that the Euler characteristic is eventually a polynomial. **Serre duality** identifies $H^i(X,\mathcal{F})$ with the dual of $H^{n-i}(X,\mathcal{F}^{\vee}\otimes\omega_X)$ for a smooth projective $X$ of dimension $n$, with $\omega_X$ the canonical sheaf, and is the algebraic counterpart of Poincaré duality and the curve case of the Riemann–Roch theorem; it is the degreewise shadow of Verdier duality. The differential forms on which the duality depends are the exterior powers of the sheaf of Kähler differentials $\Omega^1_{X/k}$, the quasi-coherent sheaf associated to the module $\Omega^1_{A/k} = I/I^2$ of Part I's *Hochschild Homology*: its fibre at a point is the cotangent space, dual to the tangent space, it is locally free of rank $n$ exactly when $X$ is smooth of relative dimension $n$, and the algebraic de Rham complex it generates computes the algebraic de Rham cohomology. The Zariski topology, finally, is too coarse for the constant sheaf, and the comparison of algebraic with topological cohomology requires the étale and the analytic topologies, while the coherent cohomology, the direct and inverse images, the finiteness theorem for proper morphisms and the deformation-theoretic uses of $H^0$ and $H^1$ pass directly to the algebraic setting and are the foundation of the theory of moduli.
 
@@ -228,7 +228,7 @@ A projective scheme is built from a graded ring by the same construction with ho
 | $\operatorname{Spec} A$ | spectrum of $A$: prime ideals with the Zariski topology |
 | $V(\mathrm{A})$, $D(f)$ | closed set of an ideal; distinguished open, $D(f)\cap D(g) = D(fg)$ |
 | $\mathcal{O}_X$, $\mathcal{O}_X(D(f)) = A_f$ | structure sheaf; stalk $\mathcal{O}_{X,\mathrm{P}} = A_{\mathrm{P}}$ |
-| $\mathbf{Mod}(A)$, $\mathbf{QCoh}(X)$, $\widetilde M$ | modules; quasi-coherent sheaves; the equivalence $M\mapsto\widetilde M$ |
+| $\mathbf{Mod}(A)$, $\mathbf{QCoh}(X)$, $M^{\mathrm{sh}}$ | modules; quasi-coherent sheaves; the equivalence $M\mapstoM^{\mathrm{sh}}$ |
 | coherent | quasi-coherent with finitely generated module; abelian subcategory for Noetherian $A$ |
 | $\operatorname{Proj} S$, $D_+(f)$, $S_{(f)}$ | projective spectrum; homogeneous distinguished open; degree-zero localisation |
 | $\mathcal{O}_X(d)$ | twisting sheaf; $\mathcal{O}(d)\otimes\mathcal{O}(e)\cong\mathcal{O}(d+e)$ |

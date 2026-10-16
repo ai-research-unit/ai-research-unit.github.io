@@ -15,7 +15,7 @@ The conventions are those of the category. The Dirichlet series of an arithmetic
 $$
 \Lambda_f(s)=N^{s/2}\prod_{j=1}^{d}\Gamma(s+\mu_j)\,L(f,s).
 $$
-The **conjugate completion** is $\Lambda_{f^*}$, and the **dual completion** is $\widetilde\Lambda_f(s)=\overline{\Lambda_{f^*}(\bar s)}$.
+The **conjugate completion** is $\Lambda_{f^*}$, and the **dual completion** is $\Lambda^{\mathrm{dual}}_f(s)=\overline{\Lambda_{f^*}(\bar s)}$.
 
 **Proposition.** The completion is meromorphic of finite order, with poles only those of $L(f,\cdot)$; the gamma factors are nonzero, so the completion removes no zeros of $L(f,\cdot)$ except the archimedean ones that are introduced; and the assignment $f\mapsto\Lambda_f$ is linear in $f$ and compatible with the coefficient involution.
 

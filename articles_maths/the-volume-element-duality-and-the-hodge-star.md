@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The top grade of the Clifford algebra of an $n$-dimensional quadratic space is one-dimensional, spanned by the product of the elements of an orthogonal basis, and multiplication by that element is a bijection from each grade to the complementary grade. This article develops that operation. The element itself is the volume element; the map it induces is the **complement map**, a linear isomorphism $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$ that carries a simple $k$-vector on a subspace to a simple $(n-k)$-vector on the orthogonal complement when the subspace is non-degenerate; normalised by the inverse of the volume element it is the **Hodge star**, whose square is a scalar determined by the form. The star gives the cross product of three-dimensional space as the complement of a bivector, and in the biquaternion algebra it is the duality of the pseudoscalar that the physics articles write with the factor $-i$.
+The top grade of the Clifford algebra of an $n$-dimensional quadratic space is one-dimensional, spanned by the product of the elements of an orthogonal basis, and multiplication by that element is a bijection from each grade to the complementary grade. This article develops that operation. The element itself is the volume element; the map it induces is the **complement map**, a linear isomorphism $\mathrm{Cl}_k(V,\mathfrak{Q})\to\mathrm{Cl}_{n-k}(V,\mathfrak{Q})$ that carries a simple $k$-vector on a subspace to a simple $(n-k)$-vector on the orthogonal complement when the subspace is non-degenerate; normalised by the inverse of the volume element it is the **Hodge star**, whose square is a scalar determined by the form. The star gives the cross product of three-dimensional space as the complement of a bivector, and in the biquaternion algebra it is the duality of the pseudoscalar that the physics articles write with the factor $-i$.
 
-The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Number Systems as Clifford Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=q(v)\cdot1$.
+The volume element, its square and its centrality are from *Clifford Algebras in Finite Dimensions*; the grade subspaces, the grade projection and the grade theorem are from *The Geometric Product and the Grade Decomposition*; the biquaternion algebra and its identification with $\mathrm{Cl}_{3,0}$, with the pseudoscalar acting as the central unit $i$, are from *The Number Systems as Clifford Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ non-degenerate on the finite-dimensional space $V$ of dimension $n$ and $B$ its polar form; the convention is $v^2=\mathfrak{Q}(v)\cdot1$.
 
 ## The Complement Map
 
@@ -20,28 +20,28 @@ $$
 be the **volume element**, also called the pseudoscalar. Its square is the scalar
 
 $$
-\omega^2=(-1)^{n(n-1)/2}\,q(e_1)q(e_2)\cdots q(e_n),
+\omega^2=(-1)^{n(n-1)/2}\,\mathfrak{Q}(e_1)\mathfrak{Q}(e_2)\cdots \mathfrak{Q}(e_n),
 $$
 
 and $\omega\neq0$ because $q$ is non-degenerate and the basis is orthogonal; hence $\omega$ is invertible, with $\omega^{-1}=\omega/\omega^2$. The volume element is central when $n$ is odd and is central up to sign when $n$ is even, commuting with the even part and anticommuting with the odd part; those facts are from *Clifford Algebras in Finite Dimensions*.
 
-**Definition.** For $A\in\mathrm{Cl}(V,q)$ the **right complement** is $A\omega$ and the **left complement** is $\omega A$.
+**Definition.** For $A\in\mathrm{Cl}(V,\mathfrak{Q})$ the **right complement** is $A\omega$ and the **left complement** is $\omega A$.
 
-**Theorem.** For $A\in\mathrm{Cl}_k(V,q)$ both complements lie in the complementary grade:
+**Theorem.** For $A\in\mathrm{Cl}_k(V,\mathfrak{Q})$ both complements lie in the complementary grade:
 
 $$
-A\omega\in\mathrm{Cl}_{n-k}(V,q), \qquad \omega A\in\mathrm{Cl}_{n-k}(V,q).
+A\omega\in\mathrm{Cl}_{n-k}(V,\mathfrak{Q}), \qquad \omega A\in\mathrm{Cl}_{n-k}(V,\mathfrak{Q}).
 $$
 
-**Proof.** By bilinearity it suffices to take a monomial $A=e_{i_1}\cdots e_{i_k}$ with increasing indices. The index set of $A$ is contained in the index set of $\omega$, so in the product $A\omega$ every index of $A$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent and replacing each $e^2$ by the scalar $q(e)$ leaves a scalar multiple of the product of the $n-k$ distinct indices outside $A$; that product is an element of $\mathrm{Cl}_{n-k}(V,q)$. The same computation applies to $\omega A$, the repeated indices being the same.
+**Proof.** By bilinearity it suffices to take a monomial $A=e_{i_1}\cdots e_{i_k}$ with increasing indices. The index set of $A$ is contained in the index set of $\omega$, so in the product $A\omega$ every index of $A$ occurs twice and every other index once. Moving the factors so that the repeated indices become adjacent and replacing each $e^2$ by the scalar $\mathfrak{Q}(e)$ leaves a scalar multiple of the product of the $n-k$ distinct indices outside $A$; that product is an element of $\mathrm{Cl}_{n-k}(V,\mathfrak{Q})$. The same computation applies to $\omega A$, the repeated indices being the same.
 
 The proof is the mechanism of the grade theorem of *The Geometric Product and the Grade Decomposition* in the case in which one factor is of top grade: of the grades $n-k,n-k+2,\ldots,n+k$ that the theorem permits, only the first occurs, because the second factor already contains every index.
 
-**Corollary.** Right multiplication by $\omega$ is a bijection $\mathrm{Cl}_k(V,q)\to\mathrm{Cl}_{n-k}(V,q)$, of inverse $A\mapsto A\omega^{-1}$; and left multiplication by $\omega$ is a bijection with the same target and the same inverse.
+**Corollary.** Right multiplication by $\omega$ is a bijection $\mathrm{Cl}_k(V,\mathfrak{Q})\to\mathrm{Cl}_{n-k}(V,\mathfrak{Q})$, of inverse $A\mapsto A\omega^{-1}$; and left multiplication by $\omega$ is a bijection with the same target and the same inverse.
 
-**Proof.** Both maps are linear and their images lie in the stated grade. The map $A\mapsto A\omega$ is injective because $\omega$ is invertible in $\mathrm{Cl}(V,q)$, and both spaces have dimension $\binom{n}{k}=\binom{n}{n-k}$, so injectivity gives bijectivity. The inverse is right multiplication by $\omega^{-1}$, and the case of left multiplication is the same.
+**Proof.** Both maps are linear and their images lie in the stated grade. The map $A\mapsto A\omega$ is injective because $\omega$ is invertible in $\mathrm{Cl}(V,\mathfrak{Q})$, and both spaces have dimension $\binom{n}{k}=\binom{n}{n-k}$, so injectivity gives bijectivity. The inverse is right multiplication by $\omega^{-1}$, and the case of left multiplication is the same.
 
-**Corollary.** For $\omega$ central, that is for $n$ odd, the two complements coincide, $A\omega=\omega A$. For $n$ even they agree up to the sign of the grade, $\omega A=(-1)^kA\omega$ for $A\in\mathrm{Cl}_k(V,q)$.
+**Corollary.** For $\omega$ central, that is for $n$ odd, the two complements coincide, $A\omega=\omega A$. For $n$ even they agree up to the sign of the grade, $\omega A=(-1)^kA\omega$ for $A\in\mathrm{Cl}_k(V,\mathfrak{Q})$.
 
 **Proof.** The volume element commutes with even elements and anticommutes with odd ones, so for $A$ homogeneous of grade $k$ the two products differ by $(-1)^k$.
 
@@ -70,10 +70,10 @@ The complement map acquires a canonical normalisation from the inverse of the vo
 **Definition.** The **Hodge star** is the linear map
 
 $$
-\star A=A\omega^{-1}, \qquad A\in\mathrm{Cl}(V,q).
+\star A=A\omega^{-1}, \qquad A\in\mathrm{Cl}(V,\mathfrak{Q}).
 $$
 
-By the corollary above, $\star$ carries $\mathrm{Cl}_k(V,q)$ isomorphically onto $\mathrm{Cl}_{n-k}(V,q)$. For $n$ odd it coincides with left multiplication by $\omega^{-1}$, and for $n$ even it satisfies $\omega A=(-1)^k A\omega$ for $A$ of grade $k$.
+By the corollary above, $\star$ carries $\mathrm{Cl}_k(V,\mathfrak{Q})$ isomorphically onto $\mathrm{Cl}_{n-k}(V,\mathfrak{Q})$. For $n$ odd it coincides with left multiplication by $\omega^{-1}$, and for $n$ even it satisfies $\omega A=(-1)^k A\omega$ for $A$ of grade $k$.
 
 **Theorem.** The square of the star is the scalar inverse of the square of the volume element:
 
@@ -103,7 +103,7 @@ The square of the star is read off from the square of the volume element, and th
 | $\mathrm{Cl}_{1,3}$ | $4$ | $-1$ | $-1$ | a complex structure on the bivectors |
 
 
-**The star in the plane and in three dimensions.** In $\mathrm{Cl}_{2,0}$ the star sends $1$ to $-e_1e_2$, $e_1$ to $-e_2$, $e_2$ to $e_1$ and $e_1e_2$ to $1$, so that on the vectors it is the quarter turn of the plane and its square is $-1$. In $\mathrm{Cl}_{1,1}$ the same table of signs is read with $\omega^2=+1$ and $\omega^{-1}=\omega$: the star sends $e_1$ to $e_2$ and $e_2$ to $e_1$, so on the plane it is an involution exchanging the two coordinate directions, and it is an anti-isometry rather than an isometry, since $q(\star v)=\varepsilon\,q(v)=-q(v)$ for $\varepsilon=q(e_2)=-1$. The definite and the indefinite planes are thus distinguished by the sign of $\omega^2$, and with it by whether the star preserves or negates the form. In $\mathrm{Cl}_{3,0}$ the star sends $1$ to $-\omega$, $e_1$ to $-e_2e_3$, $e_1e_2$ to $e_3$ and $\omega$ to $1$; on the space of bivectors, of dimension three, it carries a bivector to its dual vector, and on that space its square is $-1$, since $\star^2=(\omega^2)^{-1}=-1$.
+**The star in the plane and in three dimensions.** In $\mathrm{Cl}_{2,0}$ the star sends $1$ to $-e_1e_2$, $e_1$ to $-e_2$, $e_2$ to $e_1$ and $e_1e_2$ to $1$, so that on the vectors it is the quarter turn of the plane and its square is $-1$. In $\mathrm{Cl}_{1,1}$ the same table of signs is read with $\omega^2=+1$ and $\omega^{-1}=\omega$: the star sends $e_1$ to $e_2$ and $e_2$ to $e_1$, so on the plane it is an involution exchanging the two coordinate directions, and it is an anti-isometry rather than an isometry, since $\mathfrak{Q}(\star v)=\varepsilon\,\mathfrak{Q}(v)=-\mathfrak{Q}(v)$ for $\varepsilon=\mathfrak{Q}(e_2)=-1$. The definite and the indefinite planes are thus distinguished by the sign of $\omega^2$, and with it by whether the star preserves or negates the form. In $\mathrm{Cl}_{3,0}$ the star sends $1$ to $-\omega$, $e_1$ to $-e_2e_3$, $e_1e_2$ to $e_3$ and $\omega$ to $1$; on the space of bivectors, of dimension three, it carries a bivector to its dual vector, and on that space its square is $-1$, since $\star^2=(\omega^2)^{-1}=-1$.
 
 **The star in four dimensions.** In $\mathrm{Cl}_{4,0}$ the star preserves the six-dimensional space $\mathrm{Cl}_2$ of bivectors and satisfies $\star^2=+1$ there, so that the bivectors split into the eigenspaces of $\star$ for the eigenvalues $+1$ and $-1$, of dimension three each: the self-dual and the anti-self-dual bivectors. In $\mathrm{Cl}_{1,3}$ the same space carries $\star^2=-1$, so that $\star$ is a complex structure on it, with no real eigenspace and with the two complex eigenspaces corresponding to the two chiral halves of the Lorentz group. The change from $+1$ to $-1$ is the change of the sign of $\omega^2$ between the two signatures.
 
@@ -171,7 +171,7 @@ This is the sign convention of the physics articles, where the dual of a bivecto
 
 The volume element $\omega=e_1e_2\cdots e_n$ of an orthogonal basis has square $\omega^2=(-1)^{n(n-1)/2}\prod_iq(e_i)$, is invertible for a non-degenerate form, and is central for odd $n$ and central up to sign for even $n$. Multiplication by $\omega$ raises or lowers the grade to its complement: for $A$ of grade $k$ both $A\omega$ and $\omega A$ lie in grade $n-k$, so that right and left multiplication by $\omega$ are bijections $\mathrm{Cl}_k\to\mathrm{Cl}_{n-k}$; on a basis blade the operation returns the basis blade of the complementary index set, up to sign, and so carries a subspace to its orthogonal complement. The map depends on the orientation, changing sign when the orientation of the basis is reversed.
 
-Normalised by the inverse volume element, the operation is the Hodge star $\star A=A\omega^{-1}$, of square $\star^2=(\omega^2)^{-1}\operatorname{id}$, which preserves the parity grading for even $n$ and exchanges the two parity parts for odd $n$. The square of the star is $+1$ on the four-dimensional Euclidean space, where the six-dimensional space of bivectors splits into self-dual and anti-self-dual halves of dimension three, and $-1$ on the four-dimensional space of signature $(1,3)$, where it is a complex structure on the same space. In three definite dimensions the star of an outer product of two vectors is their cross product, $a\times b=\star(a\wedge b)$, of square $q(a)q(b)-B(a,b)^2$, and the scalar triple product is $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$. In the biquaternion algebra the star is multiplication by $-i$, the convention of the dual of the physics articles.
+Normalised by the inverse volume element, the operation is the Hodge star $\star A=A\omega^{-1}$, of square $\star^2=(\omega^2)^{-1}\operatorname{id}$, which preserves the parity grading for even $n$ and exchanges the two parity parts for odd $n$. The square of the star is $+1$ on the four-dimensional Euclidean space, where the six-dimensional space of bivectors splits into self-dual and anti-self-dual halves of dimension three, and $-1$ on the four-dimensional space of signature $(1,3)$, where it is a complex structure on the same space. In three definite dimensions the star of an outer product of two vectors is their cross product, $a\times b=\star(a\wedge b)$, of square $\mathfrak{Q}(a)\mathfrak{Q}(b)-B(a,b)^2$, and the scalar triple product is $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$. In the biquaternion algebra the star is multiplication by $-i$, the convention of the dual of the physics articles.
 
 ## Summary of Notation
 
@@ -188,7 +188,7 @@ Normalised by the inverse volume element, the operation is the Hodge star $\star
 | $a\times b=\star(a\wedge b)$ | Cross product in three definite dimensions |
 | $a\cdot(b\times c)=(a\wedge b\wedge c)\omega^{-1}$ | Scalar triple product |
 | $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\omega=i$ | Biquaternion case, $\star A=-iA$ |
-| $\sigma$ | Symbol isomorphism $\Lambda(V)\to\mathrm{Cl}(V,q)$ |
+| $\sigma$ | Symbol isomorphism $\Lambda(V)\to\mathrm{Cl}(V,\mathfrak{Q})$ |
 
 ## Further Reading
 

@@ -57,7 +57,7 @@ and $T_n$ is normal, $T_nT_n^*=T_n^*T_n$. In particular $T_n^*=T_n$ for $\gcd(n,
 $$
 U_p^*=w_N^{-1}\widetilde{U}_p\,w_N ,
 $$
-where $\widetilde U_p$ is the Hecke operator of the dual double coset, and the deviation from self-adjointness is measured by the Atkin–Lehner theory. On the newforms of level $N$ the operator $U_p$ has the eigenvalue $a_p$ with $|a_p|\le2p^{(k-1)/2}$ in the analytic normalisation.
+where $U_p^{\vee}$ is the Hecke operator of the dual double coset, and the deviation from self-adjointness is measured by the Atkin–Lehner theory. On the newforms of level $N$ the operator $U_p$ has the eigenvalue $a_p$ with $|a_p|\le2p^{(k-1)/2}$ in the analytic normalisation.
 
 **Proof.** The double coset of $U_p$ is not symmetric because $p\mid N$; the conjugation by the Fricke involution replaces the coset by its adjoint, which is a different operator. The eigenvalue bound is the Deligne bound, in *Modular Forms*.
 

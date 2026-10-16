@@ -102,7 +102,7 @@ of *Tensor Products of Sesqualgebras*, §*The Tensor Involution*, extended by ad
 
 ### The Universal Property
 
-**Theorem (the universal property on the completion).** Let $A$, $B$ be normed sesqualgebras over $(\mathbb{K},\varsigma)$ and let $G$ be a complete locally convex space. Then every continuous bilinear map $B_0 : A \times B \to G$ factors uniquely through a continuous linear map $\widetilde{B_0} : A \widehat{\otimes}_\pi B \to G$, $B_0(a,b) = \widetilde{B_0}(a \otimes b)$; the correspondence is a linear bijection.
+**Theorem (the universal property on the completion).** Let $A$, $B$ be normed sesqualgebras over $(\mathbb{K},\varsigma)$ and let $G$ be a complete locally convex space. Then every continuous bilinear map $B_0 : A \times B \to G$ factors uniquely through a continuous linear map $B_0^{\mathrm{lin}} : A \widehat{\otimes}_\pi B \to G$, $B_0(a,b) = B_0^{\mathrm{lin}}(a \otimes b)$; the correspondence is a linear bijection.
 
 *Proof.* This is the universal property of *Topological Tensor Products*, §*The Projective Tensor Product*, the extension to the completion being the universal property of completion. For the sesquilinear reading one applies it to $A \times B$ and to $A \times B^{\varsigma}$ according to the slot in which the twist is placed, using $(A \otimes B)^{\varsigma} = A^{\varsigma} \otimes B^{\varsigma}$; the algebraic form of the statement, with the commuting images, is *Tensor Products of Sesqualgebras*, §*The Pairs with Commuting Images*.
 

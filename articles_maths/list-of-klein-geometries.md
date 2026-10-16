@@ -72,7 +72,7 @@ Thurston's geometries are the maximal pairs $(X,G)$ of a simply connected space 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | a model geometry $(X,G)$ | a simply connected Riemannian manifold with a transitive group $G$ maximal among those with compact stabilisers | *Low-Dimensional Topology*, §Geometrisation and the Eight Model Geometries |
-| the eight three-dimensional model geometries | $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\widetilde{SL_2(\mathbb{R})}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | *Low-Dimensional Topology*, §Geometrisation and the Eight Model Geometries |
+| the eight three-dimensional model geometries | $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | *Low-Dimensional Topology*, §Geometrisation and the Eight Model Geometries |
 | a geometric three-manifold | a quotient $X/\Gamma$ by a free properly discontinuous discrete group | *Low-Dimensional Topology* |
 | the geometrisation theorem | every closed three-manifold decomposes into geometric pieces | *Low-Dimensional Topology*; *Ricci Flow* |
 | the Seifert fibred and hyperbolic pieces | the two kinds of piece into which the torus decomposition splits a three-manifold | *Low-Dimensional Topology* |
@@ -124,7 +124,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $O(n+1,1)/\{\pm 1\}$, $PO(n+1,2)$ | Möbius group; Lie sphere group |
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $V_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{K})$ | Grassmannian, Stiefel manifold, flag manifold |
 | $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $L(p,q)$ | Spherical and hyperbolic space forms; lens space |
-| $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\widetilde{SL_2(\mathbb{R})}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | The eight three-dimensional model geometries |
+| $S^3$, $E^3$, $\mathbf{H}^3$, $S^2\times\mathbb{R}$, $\mathbf{H}^2\times\mathbb{R}$, $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, $\mathrm{Nil}$, $\mathrm{Sol}$ | The eight three-dimensional model geometries |
 | $(\mathrm{G},\sigma)$, rank | Symmetric pair and rank of a symmetric space |
 | $\mathbb{Z}$ | The standard number systems of the corpus |
 | $\operatorname{Isom}(M,g)$ | Isometry group of a metric, a Lie group by Myers–Steenrod |

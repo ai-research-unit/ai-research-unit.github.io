@@ -155,7 +155,7 @@ and the unknotting number is $u(T(p,q)) = \frac{(p-1)(q-1)}{2}$. The equality of
 
 **Theorem (JSJ decomposition and the geometrisation of knot complements).** Let $K\subseteq S^3$ be a knot with complement $M_K = S^3\setminus K$, a compact three-manifold with torus boundary. Then $M_K$ has a unique torus decomposition into pieces that are Seifert fibred or hyperbolic. A knot is
 
-**(a)** a **torus knot** if and only if $M_K$ is Seifert fibred, and then $M_K$ carries the $\widetilde{SL_2(\mathbb{R})}$ geometry: equivalently the universal cover of $S^3\setminus T(p,q)$ is $\widetilde{SL_2(\mathbb{R})}$, the universal cover of $SL_2(\mathbb{R})$;
+**(a)** a **torus knot** if and only if $M_K$ is Seifert fibred, and then $M_K$ carries the $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$ geometry: equivalently the universal cover of $S^3\setminus T(p,q)$ is $\mathrm{SL}_2(\mathbb{R})^{\mathrm{cov}}$, the universal cover of $SL_2(\mathbb{R})$;
 
 **(b)** a **satellite** knot if and only if $M_K$ contains an essential torus that is not boundary-parallel;
 

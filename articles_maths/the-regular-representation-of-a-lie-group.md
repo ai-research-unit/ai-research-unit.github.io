@@ -33,7 +33,7 @@ $$
 \mathrm{G} \longrightarrow \operatorname{End}_\mathbb{C}(C^\infty(G)), \qquad X \longmapsto \tilde X ,
 $$
 
-sending $X$ to the left-invariant vector field $\tilde X$ of *Operators on a Lie Group*; it is a representation of the Lie algebra by derivations of $C^\infty(G)$, $[\tilde X, \tilde Y] = \widetilde{[X,Y]}$.
+sending $X$ to the left-invariant vector field $\tilde X$ of *Operators on a Lie Group*; it is a representation of the Lie algebra by derivations of $C^\infty(G)$, $[\tilde X, \tilde Y] = [X,Y]^{\mathrm{lift}}$.
 
 **Theorem (the derived representation is the derivative of the regular representation).** For $X \in \mathrm{G}$ and $f \in C^\infty(G)$,
 

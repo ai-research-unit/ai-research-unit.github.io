@@ -54,7 +54,7 @@ $$
 It is the derivation of $C^\infty(G)$ determined by the left-invariant field of *The Lie Algebra and the Exponential Map*, and the assignment $X \mapsto \tilde X$ is an injective $\mathbb{C}$-linear map $\mathrm{G} \to D_L(G)$ with
 
 $$
-[\tilde X, \tilde Y] = \widetilde{[X,Y]} .
+[\tilde X, \tilde Y] = [X,Y]^{\mathrm{lift}} .
 $$
 
 *Proof.* The field is left-invariant by construction, the bracket identity is the naturality of the commutator of vector fields, and injectivity follows because $\tilde X$ determines $X$ from the coordinate functions at $e$.
