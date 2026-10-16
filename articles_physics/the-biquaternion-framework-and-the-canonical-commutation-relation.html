@@ -68,10 +68,10 @@ is the axiom that ties a quantum theory to a <strong>continuum of configurations
 <p>The canonical commutation relation is not a statement about quantumness. It is a statement about the <strong>shape of the configuration space</strong>, and it is the algebraic fingerprint of a continuum.</p>
 <p><strong>The relation.</strong> For self-adjoint $Q$ and $P$ on a Hilbert space $\mathcal{H}$, the relation and its bounded form are
 $$
-[Q,P]=i\hbar\,I,\qquad e^{i\alpha Q}e^{i\beta P}=e^{-i\hbar\alpha\beta}e^{i\beta P}e^{i\alpha Q}.
+[Q,P]=i\hbar\,I,\qquad \exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q).
 $$
 The second is the Weyl form, and it is the version that avoids the domain problems of the unbounded operators in the first.</p>
-<p><strong>Why a continuum is required.</strong> The translation identity $e^{iaP}Qe^{-iaP}=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x'\rangle=\delta(x-x')$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.</p>
+<p><strong>Why a continuum is required.</strong> The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x'\rangle=\delta(x-x')$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.</p>
 <p><strong>Why the carrier must be infinite-dimensional.</strong> The trace of a commutator of finite-dimensional matrices vanishes by cyclicity, while $\mathrm{Tr}(i\hbar\,I)=i\hbar\dim\mathcal{H}\neq0$. So no finite-dimensional matrices satisfy the relation, at any dimension. The Stone–von Neumann theorem adds the classification: the irreducible representation with a fixed central character is unique up to unitary equivalence, and it is the Schrödinger representation on $L^2(\mathbb{R})$.</p>
 <p>The two facts are one fact. A relation that requires an uncountable set of mutually orthogonal position states requires an infinite-dimensional carrier; and a relation whose scalar right-hand side has a non-vanishing trace cannot live in a finite-dimensional one. <strong>The trace obstruction and the continuum requirement are the same statement</strong>, written once as linear algebra and once as analysis.</p>
 <p>There is a finite criterion hiding in the same place, and it must not be confused with the carrier question. The positivity of the transform of a measure — the Bochner question — is decided at <strong>finitely many frequencies</strong> and is therefore a finite statement, whereas the carrier of a <strong>continuous</strong> transform is a function space and is infinite-dimensional. A finite criterion does not require a finite carrier. This is why the framework's positivity structure is untouched by the representation question, and why that question is a question about space rather than about probability.</p>
@@ -118,7 +118,7 @@ the bracket of internal rotations, verified on the matrix model. The algebra the
 <p><strong>What is root-independent, and what is not.</strong> The assembly is available for every choice of the square root, because the transform is <strong>invertible</strong> for every root: in a root-adapted frame $\{e_0,\rho,\nu,\xi\}$ the kernel is the ordinary complex exponential and the transform is the complex Fourier transform read in that frame, and such a frame exists for every root. Whether the assembly is an <strong>isometry</strong>, hence a unitary equivalence, is a different statement and it is root-dependent. The transform is unitary exactly for the roots with $\rho^{*}=-\rho$ — the scalar imaginary, where the kernel is central and the transform is the complex Fourier transform of each coefficient, and the real roots, where the root-adapted frame is an orthonormal real-quaternion frame — and it is <strong>not</strong> unitary for the genuinely complex roots, where what the factorization preserves is the coefficient norm of the root-adapted frame and not the Euclidean norm $\lVert\cdot\rVert_E$, the two differing because a genuinely complex root is not a Euclidean unit vector. The dichotomy is the same $\rho^{*}=-\rho$ that decides the positivity of the transform of a measure (the mathematics article <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>), and it is not a coincidence: both statements are decided by whether the conjugation they use fixes the root. What is specific to the central clock, which is the clock the framework already uses, is that the transform also <strong>diagonalises the translations</strong>, so that the dual variable is the momentum label. The reading is therefore native at the centre and available by construction elsewhere; off the degenerate roots it is a faithful change of description and not a unitary one.</p>
 <h2 id="the-finite-shadow-is-a-different-relation">The Finite Shadow Is a Different Relation</h2>
 <p>A finite carrier does carry a commutation relation with a phase in place of the scalar, and it is important to say what that relation is and is not.</p>
-<p><strong>The pair.</strong> On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=e^{2\pi i/N}$ and let $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
+<p><strong>The pair.</strong> On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
 $$
 XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX .
 $$
@@ -279,7 +279,7 @@ The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (
 <td>Canonical commutation relation</td>
 </tr>
 <tr>
-<td>$e^{i\alpha Q}e^{i\beta P}=e^{-i\hbar\alpha\beta}e^{i\beta P}e^{i\alpha Q}$</td>
+<td>$\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$</td>
 <td>Weyl form of the relation</td>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (
 <td>Angular-momentum bracket</td>
 </tr>
 <tr>
-<td>$X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=e^{2\pi i/N}$</td>
+<td>$X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=\exp(2\pi i/N)$</td>
 <td>Clock of the finite Weyl pair</td>
 </tr>
 <tr>

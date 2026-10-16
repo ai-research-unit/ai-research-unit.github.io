@@ -58,12 +58,12 @@
 $$</p>
 <p>the ordinary left multiplication applied to the twisted argument. It agrees with $L_a$ on the even part of the algebra and is $-L_a$ there where the argument is odd; it composes according to $L_{a\alpha(c)}$, so two signed left multiplications multiply to an ordinary one; and it is one half of the signed sandwich of <em>The Signed Sandwich on a Clifford Algebra</em>, the other half being an ordinary right multiplication. The article treats this operator, its fixed elements, and the precise sense in which a one-sided operator is half a motion of the quadratic space.</p>
 <p>A word of disambiguation begins the account, because the corpus writes two different operators with the adjective signed in front of "left multiplication". In this article the twist is on the <strong>argument</strong>, $\mathrm{L}^{\alpha}_a=L_a\alpha$; in <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> and <em>The Graded Multiplication Operators</em> the twist is on the <strong>parameter</strong>, $\Lambda^{\alpha}_x(y)=\alpha(x)y$. The two agree only on the even part, and their purposes differ: the parameter twist belongs to the inner conjugation and the versor theory, the argument twist to the signed product and the reflections. Only the argument twist is treated here.</p>
-<p><strong>The boundaries.</strong> The one-sided calculus, the commutant and the composition of the ordinary families are <em>One-Sided Operators on a Clifford Algebra</em>; the signed product, its composition law and its fixed elements are <em>One-Sided Operators with the Signed Product</em>, and the two-sided version is <em>Two-Sided Operators with the Signed Product</em>; the parameter-twisted family is <em>The Graded Multiplication Operators</em>. The signed sandwich formed from the two factors is <em>The Signed Sandwich on a Clifford Algebra</em>, and the reflections are <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
+<p><strong>The boundaries.</strong> The one-sided calculus, the commutant and the composition of the ordinary families are <em>One-Sided Operators on a Clifford Algebra</em>; the signed product, its composition law and its fixed elements are <em>One-Sided Operators with the Signed Product</em>, and the two-sided version is <em>Two-Sided Operators with the Signed Product</em>; the parameter-twisted family is <em>The Graded Multiplication Operators</em>. The signed sandwich formed from the two factors is <em>The Signed Sandwich on a Clifford Algebra</em>, and the reflections are <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $\mathfrak{Q}(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
 <h2 id="the-operator">The Operator</h2>
 <h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
-<p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,q)$ the <strong>signed left multiplication</strong> is the $F$-linear operator</p>
+<p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed left multiplication</strong> is the $F$-linear operator</p>
 <p>$$
-\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
+\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
 $$</p>
 <p><strong>Proposition.</strong> The following hold.</p>
 <p><strong>(a)</strong> $\mathrm{L}^{\alpha}_a = L_a\alpha = \alpha L_{\alpha(a)}$.</p>
@@ -90,10 +90,10 @@ $$</p>
 <p>$$
 \mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}} ,
 $$</p>
-<p>and for a vector $u$ with $q(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.</p>
+<p>and for a vector $u$ with $\mathfrak{Q}(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.</p>
 <p><strong>Proof.</strong> $(\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}})(y)=x\alpha(y)\alpha(x)^{-1}$, which is the signed sandwich of <em>The Signed Sandwich on a Clifford Algebra</em> with parameters $(x,\alpha(x)^{-1})$; for $x=u$ a vector, $\alpha(u)^{-1}=u^{-1}$, and the reflection formula gives $\rho_u$. The last claim is the next proposition.</p>
-<p><strong>Proposition (no one-sided operator preserves the space).</strong> Let $u\in V$ with $q(u)\ne0$. Then $\mathrm{L}^{\alpha}_u$ does not map $V$ into itself: it sends the unit $1$ to $u$ and the vector $u$ to $u\alpha(u)=-q(u)$, a scalar, so the image of the even part of the algebra meets the odd part and vice versa. Consequently no signed left multiplication by a non-scalar element preserves the quadratic space.</p>
-<p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_u(1)=u$ and $\mathrm{L}^{\alpha}_u(u)=u\,(-u)=-q(u)\in F$; the two values lie in different parity components, so $\mathrm{L}^{\alpha}_u$ does not preserve the subspace $V$ of the algebra. A one-sided multiplication by $a$ preserves the parity grading only when $a$ is even, and then it does not preserve $V$ either unless $a$ is a scalar.</p>
+<p><strong>Proposition (no one-sided operator preserves the space).</strong> Let $u\in V$ with $\mathfrak{Q}(u)\ne0$. Then $\mathrm{L}^{\alpha}_u$ does not map $V$ into itself: it sends the unit $1$ to $u$ and the vector $u$ to $u\alpha(u)=-\mathfrak{Q}(u)$, a scalar, so the image of the even part of the algebra meets the odd part and vice versa. Consequently no signed left multiplication by a non-scalar element preserves the quadratic space.</p>
+<p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_u(1)=u$ and $\mathrm{L}^{\alpha}_u(u)=u\,(-u)=-\mathfrak{Q}(u)\in F$; the two values lie in different parity components, so $\mathrm{L}^{\alpha}_u$ does not preserve the subspace $V$ of the algebra. A one-sided multiplication by $a$ preserves the parity grading only when $a$ is even, and then it does not preserve $V$ either unless $a$ is a scalar.</p>
 <p><strong>Remark (the geometry of the pairing).</strong> The signed left multiplication is the left half of the signed sandwich, and only the pairing with a right multiplication restores the grading and produces an operator of $V$. This is the one-sided form of the statement that the reflections are two-sided operators, and it is why the geometry of the category is carried by the two-sided family. The parameter-twisted signed left multiplication of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> has the same one-sided deficiency, and the pairing there is with the inverse right multiplication.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="a-vector-in-the-negative-definite-three-space">A Vector in the Negative-Definite Three-Space</h3>
@@ -142,7 +142,7 @@ $$</p>
 <td>Pairing to the signed sandwich</td>
 </tr>
 <tr>
-<td>$\mathrm{L}^{\alpha}_u(1)=u$, $\mathrm{L}^{\alpha}_u(u)=-q(u)$</td>
+<td>$\mathrm{L}^{\alpha}_u(1)=u$, $\mathrm{L}^{\alpha}_u(u)=-\mathfrak{Q}(u)$</td>
 <td>Failure to preserve $V$</td>
 </tr>
 </tbody>

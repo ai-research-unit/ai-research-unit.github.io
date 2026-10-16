@@ -60,7 +60,7 @@ to first order in the perturbation, where $K_0$ is the modular Hamiltonian of th
 <p>This article asks what the modular Hamiltonian and the first law of entanglement are in the biquaternion framework. The answer is exact, and the exactness is the framework's contribution.</p>
 <ol>
 <li>
-<p><strong>The modular Hamiltonian is a closed-form element of the informational sector.</strong> For a faithful biquaternion state, $K_0=-\log\tilde\rho_0=\tfrac12\log\frac{4}{1-r_0^2}e_0-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\hat r_0\cdot\mathbf e$, so $K_0\in\mathbb{M}_+$. Its expectation in any state is a closed-form real number, computed below.</p>
+<p><strong>The modular Hamiltonian is a closed-form element of the informational sector.</strong> For a faithful biquaternion state, $K_0=-\log\tilde\rho_0=\tfrac12\log\frac{4}{1-r_0^2}e_0-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\vec u_r_0\cdot\mathbf e$, so $K_0\in\mathbb{M}_+$. Its expectation in any state is a closed-form real number, computed below.</p>
 </li>
 <li>
 <p><strong>The first law is the vanishing of a relative entropy to first order, and the framework writes it exactly.</strong> For any two faithful biquaternion states,
@@ -81,25 +81,25 @@ where $\delta S=S(\tilde\rho)-S(\tilde\rho_0)$ and $\delta\langle K_0\rangle=\ma
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_t(\tilde A)=e^{-itK_\sigma}\tilde A e^{itK_\sigma}$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_t(\tilde A)=\exp(-itK_\sigma)\tilde A \exp(itK_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
-a Hermitian element of the algebra, so that $\sigma=e^{-K_\sigma}$ and $\mathrm{Tr}(e^{-K_\sigma})=1$. Three properties are used below.</p>
+a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathrm{Tr}(\exp(-K_\sigma))=1$. Three properties are used below.</p>
 <ul>
 <li><strong>It is the state's logarithm.</strong> $\sigma$ and $K_\sigma$ carry the same information; the entropy is $S(\sigma)=\mathrm{Tr}(\sigma K_\sigma)=\langle K_\sigma\rangle_\sigma$, the state's modular energy.</li>
 <li><strong>It is defined by the state.</strong> Different states have different modular Hamiltonians, and the difference of two modular Hamiltonians is the logarithm of the relative modular operator of the relative-entropy companion article.</li>
 <li><strong>It generates the modular flow.</strong> The commutation relation $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[K_\sigma,\tilde A]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.</li>
 </ul>
 <h3 id="the-modular-hamiltonian-of-a-biquaternion-state">The Modular Hamiltonian of a Biquaternion State</h3>
-<p>Let $\tilde\rho_0=\tfrac12(e_0+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\hat r_0=\vec r_0/r_0$, $\gamma_0=\hat r_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
+<p>Let $\tilde\rho_0=\tfrac12(e_0+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec u_r_0=\vec r_0/r_0$, $\gamma_0=\vec u_r_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
 $$
 K_0=-\log\tilde\rho_0
 =\tfrac12\log\frac{4}{1-r_0^2}\,e_0-i\,b\,\gamma_0
 \ \in\ \mathbb{M}_+ .
 $$
 Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{M}_-$.</p>
-<p>The expectation of $K_0$ in an arbitrary state $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\hat r\cdot\hat r_0$,
+<p>The expectation of $K_0$ in an arbitrary state $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\vec u_r\cdot\vec u_r_0$,
 $$
 \langle K_0\rangle_{\tilde\rho}
 =\mathrm{Tr}\big(\tilde\rho\,K_0\big)
@@ -210,7 +210,7 @@ The exact form of the first law therefore reads
 $$
 \delta S=\delta\langle K_{\tilde\sigma}\rangle+\big\langle K_{\tilde\rho,\tilde\sigma}\big\rangle_{\tilde\rho},
 $$
-so the first law's deficit is exactly the negative of the expectation of the <strong>relative</strong> modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\hat r=\pm\hat r_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\gamma$ of the closed form.</p>
+so the first law's deficit is exactly the negative of the expectation of the <strong>relative</strong> modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec u_r_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\gamma$ of the closed form.</p>
 <h2 id="the-entanglement-hamiltonian-of-a-qubit">The Entanglement Hamiltonian of a Qubit</h2>
 <p>The modular Hamiltonian of a biquaternion state is a concrete two-level operator, and its spectrum is worth recording because it displays the state dependence of the entanglement energy. The eigenvalues of $\tilde\rho_0$ are $\lambda_\pm=\tfrac12(1\pm r_0)$, so the eigenvalues of $K_0=-\log\tilde\rho_0$ are
 $$
@@ -222,7 +222,7 @@ $$
 $$
 The splitting vanishes at the trace state, where the entanglement Hamiltonian is trivial up to a constant, and diverges on the pure boundary, where the state is a zero divisor and $K_0$ ceases to be an algebra element. At the reference state of the previous section, $r_0=0.538516$, the eigenvalues are $\varepsilon_+=0.262329$ and $\varepsilon_-=1.466456$, with splitting $1.204128=2\,b$, all checked against the matrix logarithm. The identity
 $$
-\tilde\rho_0=e^{-K_0}
+\tilde\rho_0=\exp(-K_0)
 $$
 holds exactly, so the state is the thermal state of its own entanglement Hamiltonian at unit modular temperature, and the trace condition $\mathrm{Tr}\,\tilde\rho_0=1$ is the normalisation of that thermal state. The framework's entanglement Hamiltonian is thus an ordinary $\mathbb{M}_+$ element with a two-point spectrum, and the first law relates the entropy of the state to its expectation; the field-theoretic entanglement Hamiltonian of a region is the infinite-dimensional analogue of this object, with continuous spectrum and a geometric generator.</p>
 <h2 id="why-the-law-is-exact-to-first-order">Why the Law Is Exact to First Order</h2>
@@ -233,7 +233,7 @@ holds exactly, so the state is the thermal state of its own entanglement Hamilto
 <h2 id="the-entanglement-hamiltonian-of-a-subsystem">The Entanglement Hamiltonian of a Subsystem</h2>
 <p>The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\Psi$ is the reduced state of a subsystem $A$ of a larger system. Then $K_A=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
 $$
-\sigma_A=\frac{e^{-K_A}}{\mathrm{Tr}\,e^{-K_A}},
+\sigma_A=\frac{\exp(-K_A)}{\mathrm{Tr}\,\exp(-K_A)},
 $$
 so the reduced state is the thermal state of its own entanglement Hamiltonian. In the biquaternion framework the reduced states of the tensor powers $\mathbb{B}^{\otimes n}$ are the partial traces of the strong-subadditivity companion article, and the entanglement Hamiltonian of a subsystem is
 $$
@@ -310,7 +310,7 @@ which follows from $K_0=-\log\tilde\rho_0$ and the definition of relative entrop
 <td>Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\hat r_0\cdot\mathbf e$</td>
+<td>$r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec u_r_0\cdot\mathbf e$</td>
 <td>Reference-state data</td>
 </tr>
 <tr>

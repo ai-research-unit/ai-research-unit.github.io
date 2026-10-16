@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="complex-topology"><strong>Complex Topology</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of <em>Complex Algebra</em> and <em>Complex Subspaces</em>, the norm $N(A) = A\bar{A} = |A|^2$ and the invertibility criterion of <em>Complex Norm and Invertibility</em>, and the Lie-group structure and exponential of <em>Complex Exponential and Lie Group Structure</em>. No physics is invoked and no new result is claimed.</p>
+<p>This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of <em>Complex Algebra</em> and <em>Complexoid Subspaces</em>, the norm $N(A) = A\bar{A} = |A|^2$ and the invertibility criterion of <em>Complex Norm and Invertibility</em>, and the Lie-group structure and exponential of <em>Complex Exponential and Lie Group Structure</em>. No physics is invoked and no new result is claimed.</p>
 <p>The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of units is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the units and their connectedness are the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.</p>
 <p><strong>Conventions.</strong> The basis is $1$, $i$ with $i^2 = -1$; a complex number is $A = a+i a'$ with real coordinates $(a,a')$; the norm is $N(A) = a^2+a'^2$ and the Euclidean norm is $|A| = \sqrt{N(A)} = \sqrt{a^2+a'^2}$; the group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$.</p>
 <h2 id="the-algebra-as-a-topological-space">The Algebra as a Topological Space</h2>
@@ -71,7 +71,7 @@ $$</p>
 <p>$$
 \mathbb{R}_{\mathbb{C}} \cong \mathbb{R}, \qquad i\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}.
 $$</p>
-<p>The two subspaces carry no topology beyond that of the line; the content on the norm of <em>Complex Subspaces</em> lies in the quadratic form restricted to them, not in their topology.</p>
+<p>The two subspaces carry no topology beyond that of the line; the content on the norm of <em>Complexoid Subspaces</em> lies in the quadratic form restricted to them, not in their topology.</p>
 <h2 id="the-unit-circle">The Unit Circle</h2>
 <p><strong>Definition.</strong> The <strong>unit circle</strong> is</p>
 <p>$$
@@ -83,7 +83,7 @@ $$</p>
 $$</p>
 <p>because the norm is positive definite and equals the square of the Euclidean norm. The unit sphere is therefore a <strong>group</strong>:</p>
 <p><strong>Proposition.</strong> $S^1 = U(1)$ is a compact, connected, abelian topological group whose underlying space is a manifold of dimension $1$, isomorphic to $SO(2)$ and to $\mathbb{R}/2\pi\mathbb{Z}$.</p>
-<p><strong>Proof.</strong> It is the kernel of the norm on $\mathbb{C}^\times$, hence a subgroup; it is closed and bounded in $\mathbb{C} \cong \mathbb{R}^2$, hence compact; the parametrisation $t \mapsto e^{it}$ exhibits it as the continuous image of the connected group $\mathbb{R}$ with kernel $2\pi\mathbb{Z}$, so it is connected and isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$; and it acts on the plane by rotations, giving $U(1) \cong SO(2)$.</p>
+<p><strong>Proof.</strong> It is the kernel of the norm on $\mathbb{C}^\times$, hence a subgroup; it is closed and bounded in $\mathbb{C} \cong \mathbb{R}^2$, hence compact; the parametrisation $t \mapsto \exp(it)$ exhibits it as the continuous image of the connected group $\mathbb{R}$ with kernel $2\pi\mathbb{Z}$, so it is connected and isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$; and it acts on the plane by rotations, giving $U(1) \cong SO(2)$.</p>
 <p>The compactness is exactly the multiplicativity of the complex norm together with the definiteness of the form: the unit sphere is a group because $|AB| = |A||B|$ and the definite form makes the level set bounded. This is the base case of the theorem that the unit sphere of a normed division algebra with associative multiplication carries a Lie-group structure; the smooth structure that structure needs is the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>, and only the group and its topology are used here. The cases are $S^0$, $S^1$, $S^3$, the finite list of spheres that carry such a structure, and $S^1$ is the complex member.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p>The <strong>group of units</strong> is</p>
@@ -106,24 +106,24 @@ $$</p>
 <p>with inverse $(r,u) \mapsto ru$. The first factor $\mathbb{R}_{>0}$ is contractible, so the product deformation retracts onto $\{1\} \times S^1 \cong S^1$ by the homotopy $((r,u),t) \mapsto (r^{1-t}, u)$; equivalently the map $\pi$ is a retraction and $H(t,A) = A/|A|^{\,t}$ deforms the identity to $\pi$. The homotopy groups of $S^1$ are $\pi_1 \cong \mathbb{Z}$ and $\pi_n = 0$ for $n \ge 2$, and homotopy equivalences preserve these.</p>
 <p>The generator of $\pi_1(\mathbb{C}^\times)$ is the class of the loop</p>
 <p>$$
-\gamma(t) = e^{2\pi i t}, \qquad t \in [0,1],
+\gamma(t) = \exp(2\pi i t), \qquad t \in [0,1],
 $$</p>
 <p>traversed once round the circle; the integer attached to a closed loop is its <strong>winding number</strong> about the origin, and the identification $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$ is the statement that the winding number classifies loops up to homotopy. This is the topological form of the argument principle of <em>Complex Analysis</em>, and it is why the contour integral $\oint dA/A = 2\pi i$ is the nontrivial residue.</p>
 <h2 id="the-punctured-plane-and-its-fundamental-group">The Punctured Plane and Its Fundamental Group</h2>
 <p>The punctured plane is the group of units, and it is the standard example of a space that is connected but not simply connected.</p>
 <ul>
 <li><strong>Path-connected.</strong> Every $A \neq 0$ joins to the circle by the rescaling $t \mapsto A/|A|^{\,t}$, and any two points of the circle join by an arc; the concatenation is a path from $A$ to $1$ through nonzero elements.</li>
-<li><strong>Not simply connected.</strong> The loop $\gamma(t) = e^{2\pi i t}$ is not null-homotopic, its winding number being $1 \neq 0$; equivalently there is no continuous branch of the argument $\arg : \mathbb{C}^\times \to \mathbb{R}$.</li>
+<li><strong>Not simply connected.</strong> The loop $\gamma(t) = \exp(2\pi i t)$ is not null-homotopic, its winding number being $1 \neq 0$; equivalently there is no continuous branch of the argument $\arg : \mathbb{C}^\times \to \mathbb{R}$.</li>
 <li><strong>Universal cover.</strong> The map</li>
 </ul>
 <p>$$
-p : \mathbb{R} \times \mathbb{R}_{>0} \longrightarrow \mathbb{C}^\times, \qquad p(\theta, r) = r e^{i\theta},
+p : \mathbb{R} \times \mathbb{R}_{>0} \longrightarrow \mathbb{C}^\times, \qquad p(\theta, r) = r \exp(i\theta),
 $$</p>
 <p>is a homeomorphism onto $\mathbb{C}^\times$ after the identification $(\theta + 2\pi, r) \sim (\theta, r)$; equivalently the exponential $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a universal covering map of $\mathbb{C}^\times$, with deck transformation group the kernel $2\pi i\,\mathbb{Z}$ generated by $A \mapsto A + 2\pi i$. The <strong>universal cover</strong> of $\mathbb{C}^\times$ is therefore contractible, being a half-plane product, and the covering is the universal one because $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$ acts freely and transitively on the fibres. This is the logarithmic-coordinate picture of <em>Complex Exponential and Lie Group Structure</em> read topologically.</p>
 <h2 id="the-boundary-of-the-polar-representation">The Boundary of the Polar Representation</h2>
 <p>The polar parametrisation of the group of units,</p>
 <p>$$
-\Phi : \mathbb{R}_{>0} \times \mathbb{R} \longrightarrow \mathbb{C}^\times, \qquad \Phi(r, \theta) = r e^{i\theta},
+\Phi : \mathbb{R}_{>0} \times \mathbb{R} \longrightarrow \mathbb{C}^\times, \qquad \Phi(r, \theta) = r \exp(i\theta),
 $$</p>
 <p>is a surjective local homeomorphism that is not injective: $\Phi(r, \theta) = \Phi(r, \theta + 2\pi k)$ and only these identifications occur. After the quotient by $2\pi\mathbb{Z}$ in the angular variable it descends to a homeomorphism $\mathbb{R}_{>0} \times (\mathbb{R}/2\pi\mathbb{Z}) \to \mathbb{C}^\times$, and its image is all of $\mathbb{C}^\times$.</p>
 <p><strong>There is no boundary of the polar representation in the complex case.</strong> The parametrisation fails to cover exactly the complement $\mathbb{C} \setminus \mathbb{C}^\times = \{0\}$, which is a single point, not a hypersurface, and the circle $S^1$ is compact so the angular variable has no boundary either. The complex case has no boundary set, because the norm is definite and the zero-divisor class is empty; that absence is the mathematical content of the definiteness of $\mathbb{C}$.</p>
@@ -134,7 +134,7 @@ $$</p>
 <p>the <strong>Riemann sphere</strong>, and $\mathbb{C}^\times$ becomes the sphere with two points removed, $\mathbb{C}^\times \cong S^2 \setminus \{0,\infty\}$, a cylinder. The point $\infty$ is the topological completion of the unbounded direction of the plane; it is a single point, not the many-pointed boundary that the indefinite form would produce, and the companion article <em>Complex Analysis</em> develops the function theory on it. The sphere is the best compact model of $\mathbb{C}$; there is no compact model underlying the group structure of $\mathbb{C}^\times$, which is non-compact and only has the circle as its compact core.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex algebra $\mathbb{C} \cong \mathbb{R}^2$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}) = 0$ for all $n \ge 1$; the two distinguished subspaces are contractible copies of the line. The unit circle $S^1 = \{|A| = 1\} = \{N(A) = 1\}$ is a compact, connected, abelian topological group isomorphic to $U(1) \cong SO(2) \cong \mathbb{R}/2\pi\mathbb{Z}$; it is a group because the norm is definite and multiplicative, so that the Euclidean unit sphere and the norm-one level set coincide.</p>
-<p>The group of units is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $A \mapsto A/|A|$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto e^{2\pi i t}$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has <strong>no boundary</strong>, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.</p>
+<p>The group of units is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $A \mapsto A/|A|$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto \exp(2\pi i t)$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has <strong>no boundary</strong>, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -177,7 +177,7 @@ $$</p>
 <td>the fundamental group, the winding number</td>
 </tr>
 <tr>
-<td>$\Phi(r,\theta) = re^{i\theta}$</td>
+<td>$\Phi(r,\theta) = r\exp(i\theta)$</td>
 <td>the polar parametrisation, covering $\mathbb{C}^\times$</td>
 </tr>
 <tr>

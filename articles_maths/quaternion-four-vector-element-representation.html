@@ -55,11 +55,11 @@
 <p>The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications.</p>
 <p>The article is coordinate bookkeeping on the algebra fixed in <em>Quaternion Algebra</em>: the basis $(e_0,e_1,e_2,e_3)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em> and <em>Quaternion 2x2 Matrix Element Representation</em>, and the subspaces in coordinates are from <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em>.</p>
 <p>The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.</p>
-<p>Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
+<p>Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.</p>
 <h2 id="the-coordinate-vector">The Coordinate Vector</h2>
 <p><strong>Definition.</strong> The <strong>coordinate map</strong> sends $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ to the quadruple</p>
 <p>$$
-\varphi(\tilde q) = (q_0,q_1,q_2,q_3)\in F^4 .
+\varphi(\tilde q) = (q_0,q_1,q_2,q_3)\in F^4.
 $$</p>
 <p><strong>Theorem.</strong> The map $\varphi$ is an isomorphism of $F$-vector spaces, and the basis $(e_0,e_1,e_2,e_3)$ is sent to the standard basis $(1,0,0,0),\dots,(0,0,0,1)$. Consequently addition and scalar multiplication are computed coordinatewise.</p>
 <p><em>Proof.</em> The map is the unique $F$-linear map sending each basis element to the corresponding standard basis element; it is bijective by the definition of a basis.</p>
@@ -85,7 +85,7 @@ $$</p>
 \begin{aligned}
 (p\tilde q)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
 (p\tilde q)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
-(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
+(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0.
 \end{aligned}
 $$</p>
 <p><em>Proof.</em> Expanding $(p_0+\vec p)(q_0+\vec q)$ and using $\vec p\vec q = -\langle\vec p,\vec q\rangle+\vec p\times\vec q$ gives the scalar and vector parts; the coordinate formulas are the coordinate form of the inner product and the standard cross product, whose components are $(p_2q_3-p_3q_2,\ p_3q_1-p_1q_3,\ p_1q_2-p_2q_1)$.</p>
@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 \varphi(\tilde{q}^{\natural}) = \operatorname{diag}(1,-1,-1,-1)\,[\tilde q], \qquad
 \varphi(-\tilde{q}^{\natural}) = \operatorname{diag}(-1,1,1,1)\,[\tilde q], \qquad
-\varphi(-\tilde q) = -[\tilde q] .
+\varphi(-\tilde q) = -[\tilde q].
 $$</p>
 <p><em>Proof.</em> Quaternion conjugation negates the three vector coordinates; vector conjugation negates the scalar coordinate; total conjugation is the negation of all four.</p>
 <p><strong>Corollary.</strong> The scalar subspace is the coordinate set $q_1 = q_2 = q_3 = 0$, the vector subspace is the set $q_0 = 0$, and the two are the $\pm1$ eigenspaces of the first two sign matrices. The composition of the three involutions generates the Klein four-group of sign changes described in <em>Worked Examples in the Quaternion Algebra</em>.</p>
@@ -115,10 +115,10 @@ $$</p>
 <h2 id="the-quaternion-norm-in-coordinates">The Quaternion Norm in Coordinates</h2>
 <p><strong>Theorem.</strong> The quaternion norm in coordinates is the sum of the four squares of the coordinates,</p>
 <p>$$
-N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
+\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2+q_2^2+q_3^2 = [\tilde q]^{T}[\tilde q],
 $$</p>
 <p>and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\tilde{q}^{\natural}) = [p]^{T}[\tilde q]$.</p>
-<p><em>Proof.</em> $\tilde q\tilde{q}^{\natural} = (q_0+\vec q)(q_0-\vec q) = q_0^2-\vec q^2 = q_0^2+N(\vec q) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.</p>
+<p><em>Proof.</em> $\tilde q\tilde{q}^{\natural} = (q_0+\vec q)(q_0-\vec q) = q_0^2-\vec q^2 = q_0^2+\langle \vec q\rangle_{\natural} = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.</p>
 <p><strong>Corollary.</strong> Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the quaternion norm are all positive.</p>
 <p><em>Proof.</em> The sum of four squares of real numbers is non-negative and vanishes only at the origin; the remaining statements are the definitions.</p>
 <h2 id="summary">Summary</h2>
@@ -179,7 +179,7 @@ $$</p>
 <td>Scalar axis and vector hyperplane in coordinates</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$</td>
+<td>$\langle\tilde q\rangle_{\natural} = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$</td>
 <td>Quaternion norm, four positive signs</td>
 </tr>
 <tr>

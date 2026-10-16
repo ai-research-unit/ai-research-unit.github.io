@@ -65,10 +65,10 @@ $$</p>
 <p><strong>Proof.</strong> For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$. If $B$ is even then $B(v,w)$ vanishes unless $|v| = |w|$, so the two expressions are equal and $\varepsilon^\# = \varepsilon$; if $B$ is odd then $B(v,w)$ vanishes unless $|v|\neq|w|$, so the two expressions differ by a sign and $\varepsilon^\# = -\varepsilon$. For the parity of the transpose, $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ and also $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w) = \pm B(Tv,\varepsilon w) = \pm B(v,T^\#\varepsilon w)$, which gives the displayed relation.</p>
 <p><strong>Corollary (the sign rule for the transpose).</strong> For a homogeneous operator $T$ and a homogeneous form, the transpose is characterised by the graded symmetry</p>
 <p>$$
-B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w)
+B(Tv,w) = (-1)^{|T|\,m}\,B(v,T^\#w)
 $$</p>
-<p>with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.</p>
-<p><strong>Proof.</strong> The case $q = 0$ is the definition. For $q = 1$ the identity follows from the anti-self-adjointness of $\varepsilon$ by the computation above, and the general homogeneous case follows by linearity.</p>
+<p>with $m = 0$ for an even form and $m = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.</p>
+<p><strong>Proof.</strong> The case $m = 0$ is the definition. For $m = 1$ the identity follows from the anti-self-adjointness of $\varepsilon$ by the computation above, and the general homogeneous case follows by linearity.</p>
 <h2 id="the-adjoint-action-on-the-endomorphisms">The Adjoint Action on the Endomorphisms</h2>
 <p><strong>Definition.</strong> The <strong>adjoint action</strong> of $G$ on the module $\operatorname{End}_k(M)$ is</p>
 <p>$$
@@ -79,7 +79,7 @@ $$</p>
 \varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot(\varepsilon\,T\,\varepsilon) , \qquad\text{equivalently}\qquad \varepsilon\,(g\cdot T)\,\varepsilon = (\alpha(g))\cdot T^{\varepsilon} ,
 $$</p>
 <p>where $T^\varepsilon = \varepsilon T\varepsilon$ is the $\varepsilon$-conjugate of $T$.</p>
-<p><strong>Proof.</strong> $g\cdot(h\cdot T) = \pi(g)\pi(h)T\pi(h)^{-1}\pi(g)^{-1} = \pi(gh)T\pi(gh)^{-1} = (gh)\cdot T$, and $e\cdot T = T$, so it is an action. If $\pi(g)$ has parity $p$ in the sense that $\pi(g)M_j\subseteq M_{j+p}$, then $g\cdot T$ carries $M_j$ to $M_{j+p}\to M_{j+p+|T|}\to M_{j+|T|}$, so its parity is $|T|$; hence the action preserves the grading. For the conjugation identity, the compatibility $\varepsilon\pi(g)\varepsilon = \pi(\alpha(g))$ from the graded action gives $\varepsilon\pi(g)T\pi(g)^{-1}\varepsilon = \pi(\alpha(g))(\varepsilon T\varepsilon)\pi(\alpha(g))^{-1}$, which is the displayed statement.</p>
+<p><strong>Proof.</strong> $g\cdot(h\cdot T) = \pi(g)\pi(h)T\pi(h)^{-1}\pi(g)^{-1} = \pi(gh)T\pi(gh)^{-1} = (gh)\cdot T$, and $e\cdot T = T$, so it is an action. If $\pi(g)$ has parity $n$ in the sense that $\pi(g)M_j\subseteq M_{j+n}$, then $g\cdot T$ carries $M_j$ to $M_{j+n}\to M_{j+n+|T|}\to M_{j+|T|}$, so its parity is $|T|$; hence the action preserves the grading. For the conjugation identity, the compatibility $\varepsilon\pi(g)\varepsilon = \pi(\alpha(g))$ from the graded action gives $\varepsilon\pi(g)T\pi(g)^{-1}\varepsilon = \pi(\alpha(g))(\varepsilon T\varepsilon)\pi(\alpha(g))^{-1}$, which is the displayed statement.</p>
 <p><strong>Corollary (the sign rule of the adjoint action).</strong> For a homogeneous element $g$ of the group algebra and a homogeneous operator $T$,</p>
 <p>$$
 \varepsilon\,(g\cdot T)\,\varepsilon = \alpha(g)\cdot T^{\varepsilon} , \qquad \varepsilon\,(T^{\varepsilon})\,\varepsilon = T ,
@@ -91,7 +91,7 @@ $$</p>
 <p>$$
 (g\cdot T)^\# = g\cdot T^\# ,
 $$</p>
-<p>and the adjoint action preserves the submodule of self-adjoint operators and the submodule of skew-adjoint operators. The parity of the form enters only in the sign rule for the transpose of a homogeneous operator recorded above, $B(Tv,w) = (-1)^{|T|q}B(v,T^\#w)$, and not in the commutation of the transpose with the adjoint action.</p>
+<p>and the adjoint action preserves the submodule of self-adjoint operators and the submodule of skew-adjoint operators. The parity of the form enters only in the sign rule for the transpose of a homogeneous operator recorded above, $B(Tv,w) = (-1)^{|T|m}B(v,T^\#w)$, and not in the commutation of the transpose with the adjoint action.</p>
 <p><strong>Proof.</strong> $(g\cdot T)^\# = (\pi(g)T\pi(g)^{-1})^\# = \pi(g)^{-\#}T^\#\pi(g)^\#$; unitarity gives $\pi(g)^{-\#} = \pi(g)$ and $\pi(g)^\# = \pi(g)^{-1}$, whence the identity. The parity statement follows because the transpose preserves the parity and the adjoint action preserves it too, and the sign rule is the graded symmetry proved in the section on graded forms.</p>
 <p><strong>Corollary (the invariant forms).</strong> The adjoint action restricts to the space of $G$-invariant forms: a form $B$ is invariant exactly when $B(g\cdot T\,v,w) = B(v,g\cdot T\,w)$ for every operator $T$, equivalently when the action is unitary for $B$; the invariant graded forms of even type are the fixed points of the adjoint action on the space of even forms, and those of odd type the fixed points on the space of odd forms.</p>
 <p><strong>Proof.</strong> $B$ is invariant under the action of $g$ when $B(\pi(g)v,\pi(g)w) = B(v,w)$ for all $v,w$, which is unitarity; the equivalence with the condition on all $T$ is the uniqueness of the transpose under a nondegenerate form. The fixed-point description is the definition of the adjoint action on the space of forms.</p>
@@ -104,9 +104,9 @@ $$</p>
 <p><strong>Theorem.</strong> The coadjoint action is a group action, it is compatible with the grading, $(g\cdot\xi)(M_j)\subseteq$ the component paired with $M_j$, and the grading involution acts on the dual by its transpose, which is itself for an even form and its negative for an odd form. The sign rule relating the pairing to the action is</p>
 <p>$$
 \langle g\cdot\xi,\,m\rangle = \bigl\langle \xi,\,\pi(g)^{-1}m\bigr\rangle , \qquad
-\varepsilon(g\cdot\xi) = (-1)^{q}\,\bigl(\alpha(g)\cdot(\varepsilon\xi)\bigr) ,
+\varepsilon(g\cdot\xi) = (-1)^{m}\,\bigl(\alpha(g)\cdot(\varepsilon\xi)\bigr) ,
 $$</p>
-<p>with $q$ the parity of the form.</p>
+<p>with $m$ the parity of the form.</p>
 <p><strong>Proof.</strong> The action property is the contragredience, $\langle g\cdot(h\cdot\xi),m\rangle = \langle\xi,\pi(h)^{-1}\pi(g)^{-1}m\rangle = \langle(gh)\cdot\xi,m\rangle$. The grading statement is that the dual pairing respects the parity, so $(g\cdot\xi)$ evaluated on $M_j$ pairs with $M_j$; the transposition of the grading involution is computed from $\varepsilon^\# = \pm\varepsilon$. The sign rule is the conjugation identity transported to the dual by the transpose.</p>
 <h2 id="continuity">Continuity</h2>
 <p><strong>Theorem (continuity of the adjoint action).</strong> Let $M$ carry the discrete topology and let the adjoint action on $\operatorname{End}_k(M)$ carry the discrete topology. Then the adjoint action is continuous if and only if every stabiliser</p>
@@ -118,7 +118,7 @@ $$</p>
 <p><strong>Corollary (the topological form of the sign rule).</strong> For a continuous action the identities $\varepsilon(g\cdot T)\varepsilon = \alpha(g)\cdot T^\varepsilon$ and $(g\cdot T)^\# = g\cdot T^\#$ hold at every point, and the coadjoint action is continuous whenever the action on $M$ is; the transpose and the grading involution are homeomorphisms of the discrete endomorphism module.</p>
 <p><strong>Proof.</strong> The identities are the algebraic ones, already proved pointwise; continuity of the coadjoint action and of the transposition follows from the discrete topology.</p>
 <h2 id="summary">Summary</h2>
-<p>A graded module over $(G,\alpha)$ with a nondegenerate graded form has a transpose for every operator, the grading involution being self-adjoint for an even form and anti-self-adjoint for an odd form, and the transpose of a homogeneous operator obeys the sign rule $B(Tv,w) = (-1)^{|T|q}B(v,T^\#w)$ with $q$ the parity of the form. The adjoint action $g\cdot T = \pi(g)T\pi(g)^{-1}$ is a group action on the endomorphism module that preserves the parity and is conjugated by the grading involution into the adjoint action of the grade involution, $\varepsilon(g\cdot T)\varepsilon = \alpha(g)\cdot T^\varepsilon$, which is the topological form of the sign rule: the parity is carried by the grade involution and not by the operator. When the action is unitary the adjoint action commutes with the transpose and preserves the self-adjoint and the skew-adjoint operators, and the invariant forms are exactly the fixed points of the induced action on the space of forms; for an odd form the transpose carries the sign of the parity. On the dual module the coadjoint action is the contragredient, compatible with the grading, and the sign rule pairs the action of the group with the inverse action on the dual. With the discrete topology, continuity of the adjoint action is equivalent to the openness of the stabilisers, and the grading involution and the transpose are homeomorphisms; the topological module in the sense of a topological vector space is <em>Topology on Linear Spaces</em> and is not used.</p>
+<p>A graded module over $(G,\alpha)$ with a nondegenerate graded form has a transpose for every operator, the grading involution being self-adjoint for an even form and anti-self-adjoint for an odd form, and the transpose of a homogeneous operator obeys the sign rule $B(Tv,w) = (-1)^{|T|m}B(v,T^\#w)$ with $m$ the parity of the form. The adjoint action $g\cdot T = \pi(g)T\pi(g)^{-1}$ is a group action on the endomorphism module that preserves the parity and is conjugated by the grading involution into the adjoint action of the grade involution, $\varepsilon(g\cdot T)\varepsilon = \alpha(g)\cdot T^\varepsilon$, which is the topological form of the sign rule: the parity is carried by the grade involution and not by the operator. When the action is unitary the adjoint action commutes with the transpose and preserves the self-adjoint and the skew-adjoint operators, and the invariant forms are exactly the fixed points of the induced action on the space of forms; for an odd form the transpose carries the sign of the parity. On the dual module the coadjoint action is the contragredient, compatible with the grading, and the sign rule pairs the action of the group with the inverse action on the dual. With the discrete topology, continuity of the adjoint action is equivalent to the openness of the stabilisers, and the grading involution and the transpose are homeomorphisms; the topological module in the sense of a topological vector space is <em>Topology on Linear Spaces</em> and is not used.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -137,8 +137,8 @@ $$</p>
 <td>the action of $g$ on $M$</td>
 </tr>
 <tr>
-<td>$B$, $q$</td>
-<td>a graded form and its parity, $q = 0$ even, $q = 1$ odd</td>
+<td>$B$, $m$</td>
+<td>a graded form and its parity, $m = 0$ even, $m = 1$ odd</td>
 </tr>
 <tr>
 <td>$T^\#$</td>
@@ -149,7 +149,7 @@ $$</p>
 <td>$\varepsilon$ self-adjoint for even $B$, anti-self-adjoint for odd $B$</td>
 </tr>
 <tr>
-<td>$B(Tv,w) = (-1)^{\lvert T\rvert q}B(v,T^\#w)$</td>
+<td>$B(Tv,w) = (-1)^{\lvert T\rvert m}B(v,T^\#w)$</td>
 <td>the sign rule for the transpose</td>
 </tr>
 <tr>

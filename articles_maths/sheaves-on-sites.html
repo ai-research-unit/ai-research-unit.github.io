@@ -110,7 +110,7 @@ $$
 with the alternating sum of the pullbacks as differential, and the <strong>Čech cohomology</strong> $\check H^p(\mathcal{U},F)$ is the cohomology of this complex; the Čech cohomology of the site is the filtered colimit of $\check H^p(\mathcal{U},F)$ over the coverings $\mathcal{U}$ of the objects.</p>
 <p><strong>Theorem (Čech-to-derived spectral sequence).</strong> For every covering family $\mathcal{U}$ of the terminal object and every sheaf $F$ there is a spectral sequence
 $$
-E_2^{p,q}=\check H^p(\mathcal{U},\underline{H}{}^q(F))\Longrightarrow H^{p+q}(\mathcal{C},J;F),
+E_2^{n,m}=\check H^p(\mathcal{U},\underline{H}{}^q(F))\Longrightarrow H^{p+q}(\mathcal{C},J;F),
 $$
 where $\underline{H}{}^q(F)$ is the presheaf of the local cohomology groups of $F$. In particular, if the covering is acyclic for $F$ in all degrees, the edge maps give isomorphisms $\check H^p(\mathcal{U},F)\cong H^p(\mathcal{C},J;F)$.</p>
 <p><em>Proof (in outline).</em> The Čech complex is the total complex of a double complex whose columns are the complexes computing the local cohomology of $F$ on the pieces of the covering, and the spectral sequence of the double complex of <em>Spectral Sequences</em> has the stated $E_2$ page; the edge maps identify the abutment with the derived functors of the global sections because the Čech resolution of the covering computes the cohomology of the site when the pieces are acyclic.</p>
@@ -119,7 +119,7 @@ where $\underline{H}{}^q(F)$ is the presheaf of the local cohomology groups of $
 <p><strong>Definition.</strong> A <strong>morphism of sites</strong> $f:(\mathcal{C},J)\to(\mathcal{D},K)$ is a functor $f:\mathcal{C}\to\mathcal{D}$ carrying covering sieves of $J$ to covering sieves of $K$, in the sense that the image under $f$ of a covering family generates a covering family. A functor of sites carrying covering sieves to covering sieves induces a geometric morphism $f:\mathbf{Sh}(\mathcal{C},J)\to\mathbf{Sh}(\mathcal{D},K)$ with inverse image $f^*$ the sheafification of the pullback presheaf $H\mapsto H\circ f^{\mathrm{opp}}$ and direct image $f_*$ the restriction $F\mapsto F\circ f$.</p>
 <p><strong>Proposition.</strong> The inverse image $f^*$ is left exact and the direct image $f_*$ is right adjoint to it; $f^*$ preserves the finite limits and the colimits, and the cohomology of a site is contravariant in the site and covariant in the coefficients. For a sheaf $G$ on $(\mathcal{D},K)$ there is a <strong>Leray spectral sequence</strong>
 $$
-E_2^{p,q}=H^p(\mathcal{C},J;\mathbf{R}^qf_*G)\Longrightarrow H^{p+q}(\mathcal{D},K;G),
+E_2^{n,m}=H^p(\mathcal{C},J;\mathbf{R}^qf_*G)\Longrightarrow H^{p+q}(\mathcal{D},K;G),
 $$
 whose edge maps give the functoriality of the global cohomology in the morphism of sites.</p>
 <p><em>Proof.</em> The left exactness of $f^*$ is the definition of a morphism of sites, and the adjunction $f^*\dashv f_*$ is the adjunction between the pullback and the pushforward of presheaves restricted to the sheaves, with the sheafification taken into account. The spectral sequence is the Grothendieck spectral sequence for the composite of the global sections functors, applied to the triangle of functors $\Gamma_{\mathcal{D}}\cong\Gamma_{\mathcal{C}}\circ f_*$.</p>

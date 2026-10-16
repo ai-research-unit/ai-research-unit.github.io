@@ -71,12 +71,12 @@ $$</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="the-series-and-the-closed-form">The Series and the Closed Form</h3>
 <p><strong>Definition.</strong> For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the <strong>exponential</strong> is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.</p>
-<p><strong>Theorem.</strong> $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \vec u$ with $a \in \mathbb{R}$ and $\vec u \in \mathrm{Im}\,\mathbb{H}$,</p>
+<p><strong>Theorem.</strong> $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \vec q$ with $a \in \mathbb{R}$ and $\vec q \in \mathrm{Im}\,\mathbb{H}$,</p>
 <p>$$
-\exp(\tilde q) = e^{a}\left(\cos|\vec u| + \frac{\vec u}{|\vec u|}\sin|\vec u|\right) , \qquad \vec u \neq 0 ,
+\exp(\tilde q) = \exp(a)\left(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\right) , \qquad \vec q \neq 0 ,
 $$</p>
-<p>and $\exp(a) = e^{a}e_0$ for the real case $\vec u = 0$.</p>
-<p><strong>Proof.</strong> The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $\tilde q = a + \vec u$ with $a$ central and $\vec u^2 = -|\vec u|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.</p>
+<p>and $\exp(a) = \exp(a)e_0$ for the real case $\vec q = 0$.</p>
+<p><strong>Proof.</strong> The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $\tilde q = a + \vec q$ with $a$ central and $\vec q^2 = -|\vec q|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.</p>
 <p>So the exponential in the split biquaternion algebra is the pair of quaternion exponentials, one per half, and the closed form follows from the formula above componentwise.</p>
 <h3 id="the-group-law">The Group Law</h3>
 <p><strong>Theorem.</strong> For $a, b \in \mathbb{H}_{\mathbb{D}}$, if $[a,b] = 0$ then $\exp(a)\exp(b) = \exp(a+b)$; conversely, if $\exp(ta)\exp(tb) = \exp(t(a+b))$ for all real $t$, then $[a,b] = 0$. In general $\exp(a)\exp(b) = \exp\left(a + b + \tfrac{1}{2}[a,b] + \cdots\right)$ by the Baker–Campbell–Hausdorff formula, so the commutator is the first obstruction.</p>
@@ -86,8 +86,8 @@ $$</p>
 <p>$$
 \ker\exp = \left\{ (\tilde Q_+, \tilde Q_-) : \exp\tilde Q_+ = \exp\tilde Q_- = 1 \right\} ,
 $$</p>
-<p>where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\hat u$ with $k \in \mathbb{Z}_{>0}$ and $\hat u$ a unit imaginary quaternion.</p>
-<p><strong>Proof.</strong> Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\tilde u$ with $r > 0$ and $\tilde u$ a unit quaternion, and $\tilde u = \cos\theta + \sin\theta\,\hat u$ is $\exp(\theta\hat u)$, so $\exp(\log r + \theta\hat u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec u) = 1$ gives $e^a\cos|\vec u| = 1$ and $e^a\sin|\vec u|\,\hat u = 0$; if $\vec u = 0$ then $e^a = 1$ and $a = 0$, while if $\vec u \neq 0$ then $\sin|\vec u| = 0$ forces $a = 0$ and $|\vec u| \in 2\pi\mathbb{Z}_{>0}$.</p>
+<p>where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\vec u$ with $k \in \mathbb{Z}_{>0}$ and $\vec u$ a unit imaginary quaternion.</p>
+<p><strong>Proof.</strong> Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\tilde u$ with $r > 0$ and $\tilde u$ a unit quaternion, and $\tilde u = \cos\theta + \sin\theta\,\vec u$ is $\exp(\theta\vec u)$, so $\exp(\log r + \theta\vec u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec q) = 1$ gives $\exp(a)\cos|\vec q| = 1$ and $\exp(a)\sin|\vec q|\,\vec u = 0$; if $\vec q = 0$ then $\exp(a) = 1$ and $a = 0$, while if $\vec q \neq 0$ then $\sin|\vec q| = 0$ forces $a = 0$ and $|\vec q| \in 2\pi\mathbb{Z}_{>0}$.</p>
 <p>The kernel is therefore a union of a point and countably many two-spheres in each half, and the exponential fails to be injective in the same manner as the quaternion exponential.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem.</strong> Under the splitting, the group of units is</p>
@@ -98,19 +98,19 @@ $$</p>
 <p><strong>Proof.</strong> An element of a product ring is a unit exactly when both components are units, and $\mathbb{H}^{\times}$ is the set of nonzero quaternions, which by the polar form is $\mathbb{R}_{>0} \times S^3$.</p>
 <p>The unit group is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^3$ is simply connected, it is simply connected; its Lie algebra is $\mathbb{H}_{\mathbb{D}}$ with the commutator bracket, of dimension $8$.</p>
 <h2 id="the-norm-one-group">The Norm-One Group</h2>
-<p><strong>Definition.</strong> The <strong>norm-one group</strong> of the algebra is $G_1 = \{ \tilde{S} \in \mathbb{H}_{\mathbb{D}} : N(\tilde{S}) = e_0 \}$.</p>
+<p><strong>Definition.</strong> The <strong>norm-one group</strong> of the algebra is $G_1 = \{ \tilde{S} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{S}\rangle_{\natural} = e_0 \}$.</p>
 <p><strong>Theorem.</strong> $G_1 = S^3 \times S^3 \cong \mathrm{Spin}(4)$, a compact connected six-dimensional Lie group.</p>
-<p><strong>Proof.</strong> Since $N(\tilde{S}) = N_+(\tilde{S})\tilde\Pi_1 + N_-(\tilde{S})\tilde\Pi_2$ and $N_\pm(\tilde{S}) = |\tilde{S}_\pm|^2$, the condition $N(\tilde{S}) = e_0$ is the pair $|\tilde{S}_+| = |\tilde{S}_-| = 1$, so $G_1$ is the product of two unit spheres, and $S^3\times S^3 \cong \mathrm{Spin}(4)$ is the standard double cover of $SO(4)$.</p>
+<p><strong>Proof.</strong> Since $\langle\tilde{S}\rangle_{\natural} = N_+(\tilde{S})\tilde\Pi_1 + N_-(\tilde{S})\tilde\Pi_2$ and $N_\pm(\tilde{S}) = |\tilde{S}_\pm|^2$, the condition $\langle\tilde{S}\rangle_{\natural} = e_0$ is the pair $|\tilde{S}_+| = |\tilde{S}_-| = 1$, so $G_1$ is the product of two unit spheres, and $S^3\times S^3 \cong \mathrm{Spin}(4)$ is the standard double cover of $SO(4)$.</p>
 <p>The norm-one group is the compact part of the unit group: every unit is a positive real scale in each component times an element of $G_1$.</p>
 <h2 id="the-hyperbolic-and-elliptic-subgroups">The Hyperbolic and Elliptic Subgroups</h2>
 <h3 id="the-elliptic-subgroups">The Elliptic Subgroups</h3>
-<p><strong>Theorem.</strong> Let $\hat u$ be a unit element of $\mathrm{Im}\,\mathbb{H}$, so $\hat u^2 = -e_0$. Then $e^{t\hat u} = \cos t\,e_0 + \sin t\,\hat u$ lies in the norm-one group, and the elements $e^{t\hat u}$ and $e^{t j\hat u}$ generate compact one-parameter subgroups, since $(j\hat u)^2 = -e_0$ as well.</p>
-<p><strong>Proof.</strong> $\hat u^2 = -e_0$ gives the trigonometric form directly; and $(j\hat u)^2 = j^2\hat u^2 = (+1)(-e_0) = -e_0$, so the same form applies to $j\hat u$. Both elements have unit norm.</p>
+<p><strong>Theorem.</strong> Let $\vec u$ be a unit element of $\mathrm{Im}\,\mathbb{H}$, so $\vec u^2 = -e_0$. Then $\exp(t\vec u) = \cos t\,e_0 + \sin t\,\vec u$ lies in the norm-one group, and the elements $\exp(t\vec u)$ and $\exp(t j\vec u)$ generate compact one-parameter subgroups, since $(j\vec u)^2 = -e_0$ as well.</p>
+<p><strong>Proof.</strong> $\vec u^2 = -e_0$ gives the trigonometric form directly; and $(j\vec u)^2 = j^2\vec u^2 = (+1)(-e_0) = -e_0$, so the same form applies to $j\vec u$. Both elements have unit norm.</p>
 <p>The elliptic subgroups are the compact rotations: the group generated is a copy of $SO(2)$ in each case, and the two-sphere of roots of $-e_0$ in $\mathbb{M}_-$, namely the unit imaginary quaternions, parametrises them, as treated in <em>Split-Biquaternion Roots of Minus One</em>.</p>
 <h3 id="the-hyperbolic-subgroups">The Hyperbolic Subgroups</h3>
-<p><strong>Theorem.</strong> The central element $j$ satisfies $j^2 = +e_0$, and $e^{tj} = \cosh t\,e_0 + \sinh t\,j$ is a one-parameter subgroup of the units generated by $j$; any element $\tilde Q$ with $\tilde Q^2 = +e_0$ is one of $\pm e_0, \pm j$.</p>
+<p><strong>Theorem.</strong> The central element $j$ satisfies $j^2 = +e_0$, and $\exp(tj) = \cosh t\,e_0 + \sinh t\,j$ is a one-parameter subgroup of the units generated by $j$; any element $\tilde Q$ with $\tilde Q^2 = +e_0$ is one of $\pm e_0, \pm j$.</p>
 <p><strong>Proof.</strong> The series for $\exp(tj)$ splits into even and odd parts using $j^2 = e_0$. For the second statement, $\tilde Q^2 = e_0$ in the components $\tilde Q_\pm$ gives $\tilde Q_\pm^2 = e_0$ in the quaternion division algebra $\mathbb{H}$, whose solutions are $\tilde Q_\pm = \pm e_0$; hence $\tilde Q$ is one of $(\pm 1, \pm 1)$, that is $\pm e_0$ or $\pm j$.</p>
-<p>The hyperbolic one-parameter subgroups are thus generated by the central element $j$, the compact ones by the imaginary quaternion directions of the two halves together with the Hermitian imaginary directions $j\hat u$. The absence of nilpotent elements means there are no parabolic one-parameter subgroups inside the algebra, as recorded in <em>Split-Biquaternion Rotations and the Lorentz Group</em>.</p>
+<p>The hyperbolic one-parameter subgroups are thus generated by the central element $j$, the compact ones by the imaginary quaternion directions of the two halves together with the Hermitian imaginary directions $j\vec u$. The absence of nilpotent elements means there are no parabolic one-parameter subgroups inside the algebra, as recorded in <em>Split-Biquaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
 <p><strong>Theorem.</strong> Every nonzero $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ has a componentwise polar form</p>
 <p>$$
@@ -122,7 +122,7 @@ $$</p>
 <h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
 <p>In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple with Lie algebra $\mathrm{GL}(2,\mathbb{C})$, its group of units is $GL(2,\mathbb{C})$ of real dimension $8$, and the norm-one slice corresponds to $SL(2,\mathbb{C})$; the exponential is surjective onto $GL(2,\mathbb{C})$ and the compact retract is $U(2)$. In the split biquaternion case the algebra is the reductive Lie algebra $\mathbb{R}^2\oplus\mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$, the group of units is $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the norm-one group is the compact $S^3\times S^3$ rather than a non-compact $SL(2,\mathbb{C})$. The exponential is again surjective onto the units, with a kernel described componentwise. The compact/non-compact split is measured by the two factors: the biquaternion unit group is a complex group of dimension $8$ whose maximal compact subgroup is $U(2)$, while the split biquaternion unit group is the product of two copies of $SU(2)$ times two positive rays, and its maximal compact subgroup is $S^3\times S^3$. The elliptic and hyperbolic one-parameter subgroups both occur, the elliptic from the imaginary directions with square $-e_0$ and the hyperbolic from the central $j$ with square $+e_0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $e^{a}(\cos|\vec u| + \hat u\sin|\vec u|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\hat u$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\hat u$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $\tilde Q^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.</p>
+<p>The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $\exp(a)(\cos|\vec q| + \vec u\sin|\vec q|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\vec u$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\vec u$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $\tilde Q^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -153,11 +153,11 @@ $$</p>
 <td>Exponential map</td>
 </tr>
 <tr>
-<td>$e^{t\hat u} = \cos t + \sin t\,\hat u$</td>
-<td>Elliptic one-parameter subgroup, $\hat u^2 = -e_0$</td>
+<td>$\exp(t\vec u) = \cos t + \sin t\,\vec u$</td>
+<td>Elliptic one-parameter subgroup, $\vec u^2 = -e_0$</td>
 </tr>
 <tr>
-<td>$e^{tj} = \cosh t + \sinh t\,j$</td>
+<td>$\exp(tj) = \cosh t + \sinh t\,j$</td>
 <td>Hyperbolic one-parameter subgroup, $j^2 = +e_0$</td>
 </tr>
 <tr>
@@ -165,16 +165,16 @@ $$</p>
 <td>Group of units, connected, dimension $8$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Split-Biquaternion norm</td>
 </tr>
 <tr>
-<td>$G_1 = \{ \tilde{S} : N(\tilde{S}) = e_0 \} = S^3\times S^3 \cong \mathrm{Spin}(4)$</td>
+<td>$G_1 = \{ \tilde{S} : \langle\tilde{S}\rangle_{\natural} = e_0 \} = S^3\times S^3 \cong \mathrm{Spin}(4)$</td>
 <td>Norm-one group</td>
 </tr>
 <tr>
 <td>$\ker\exp$</td>
-<td>Pairs of quaternions $2\pi k\hat u$</td>
+<td>Pairs of quaternions $2\pi k\vec u$</td>
 </tr>
 <tr>
 <td>$\tilde{Q} = r_+\tilde u_+ \tilde\Pi_1 + r_-\tilde u_- \tilde\Pi_2$</td>

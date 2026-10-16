@@ -55,7 +55,7 @@
 <p>The biquaternion ring $\mathbb{B}$ is one ring and it carries two scalar readings: the complex reading, in which the scalars are $\mathbb{C}$ and the products of the twelve algebraic structures are $\mathbb{C}$-bilinear or $\mathbb{C}$-sesquilinear, and the real reading, in which the scalars are $\mathbb{R}$ and every one of the twelve products is $\mathbb{R}$-bilinear. The passage from the first to the second is a construction, and this article owns that construction and its effect on the objects the corpus builds on the ring.</p>
 <p>The construction has one name in the corpus, <strong>realification</strong>: keep the elements, the addition and the product, take the scalars to be the subfield $\mathbb{R}$ of the centre $\mathbb{C}_{\mathbb{B}}$, and read every object attached to the complex reading — vector space, linear map, form, operator, subalgebra, module — with that smaller field of scalars. It is <strong>restriction of scalars</strong> followed by the forgetting of the complex structure $J$, and the double description is the useful one: restriction of scalars is the bookkeeping of the field, and the forgetting of $J$ is the geometric content.</p>
 <p>Two sibling articles state the theory and are cited and not repeated. This article owns what is left and what is general: the realification of a vector space, of a linear map, of a form and of an operator, the four effects the passage has on a structure, and the reading of the twelve algebraic structures under those effects. Its last section reads the four things specific to the biquaternion instance: the odd real subalgebras, the Galois-twisted automorphisms, the trace form and the real models.</p>
-<p><strong>Boundary.</strong> The products are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> and <em>The 12 Products of the Biquaternion Complex Space</em>; the forms are <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> and <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>; the realified forms, their Gram matrices and their signatures are <strong>The Realification of the Four Forms</strong>, quoted here in the general case and not re-derived; The real reading of the ring itself, with its multiplication table and its admissible bases, is <strong>The Realification of the General Plain Algebra</strong>, the entry of the General Plain Algebra block over $\mathbb{R}$. The general theory of restriction and extension of scalars and of real forms is <em>Change of Rings</em>, <em>Extension of Scalars</em> and <em>Real Forms and the Descent of an Algebra</em>.</p>
+<p><strong>Boundary.</strong> The products are <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> and <em>The 12 Products of the Biquaternioid Complex Space</em>; the forms are <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>; the realified forms, their Gram matrices and their signatures are <strong>The Realification of the Four Forms</strong>, quoted here in the general case and not re-derived; The real reading of the ring itself, with its multiplication table and its admissible bases, is <strong>The Realification and the Effect of the Change of Scalars</strong>, the entry of the General Plain Algebra block over $\mathbb{R}$. The general theory of restriction and extension of scalars and of real forms is <em>Change of Rings</em>, <em>Extension of Scalars</em> and <em>Real Forms and the Descent of an Algebra</em>.</p>
 <h2 id="the-realification-of-a-vector-space">The Realification of a Vector Space</h2>
 <p><strong>Definition (the realification of a complex vector space).</strong> Let $V$ be a vector space over $\mathbb{C}$, of complex dimension $n$. Its <strong>realification</strong> $V_{\mathbb{R}}$ is the same set with the same addition, with the scalars restricted to $\mathbb{R}$. It is written $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} V$, and the construction is <strong>restriction of scalars</strong>.</p>
 <p><strong>Proposition (the dimension doubles).</strong> If $e_1,\dots,e_n$ is a $\mathbb{C}$-basis of $V$, then
@@ -91,7 +91,7 @@ $$
 \operatorname{End}_{\mathbb{R}}(V_{\mathbb{R}})=\operatorname{End}_{\mathbb{C}}(V)\oplus \operatorname{Ant}_{\mathbb{C}}(V),
 $$
 the commuting and the anticommuting endomorphisms, of real dimensions $2n^2$ and $2n^2$ and of complex dimensions $n^2$ and $n^2$.</p>
-<p><em>Proof.</em> Write $T\in\operatorname{End}_{\mathbb{R}}(V_{\mathbb{R}})$ and put $P=\tfrac12(T-JTJ^{-1})$ and $N=\tfrac12(T+JTJ^{-1})$. Then $T=P+N$, and $P J=JP$ while $N J=-JN$, so $P$ is $\mathbb{C}$-linear and $N$ conjugate-linear by the two criteria; the two families are disjoint, since a map that is both satisfies $N=0$. Each family has real dimension $4n^2/2=2n^2$, and the complex dimension of a conjugate-linear family is $n^2$ by the convention of the next proposition.</p>
+<p><em>Proof.</em> Write $T\in\operatorname{End}_{\mathbb{R}}(V_{\mathbb{R}})$ and put $P=\tfrac12(T-JTJ^{-1})$ and $N=\tfrac12(T+JTJ^{-1})$. Then $T=P+N$, and $P J=JP$ while $N J=-JN$, so $P$ is $\mathbb{C}$-linear and $\langle\cdot,\cdot\rangle_{\natural}$ conjugate-linear by the two criteria; the two families are disjoint, since a map that is both satisfies $N=0$. Each family has real dimension $4n^2/2=2n^2$, and the complex dimension of a conjugate-linear family is $n^2$ by the convention of the next proposition.</p>
 <p><strong>Proposition (the matrix form in the real basis).</strong> Let $T$ be $\mathbb{R}$-linear on $V_{\mathbb{R}}$ with real matrix $M$ in the real basis $e_1,\dots,e_n,ie_1,\dots,ie_n$, written in the two blocks of the complex basis and its multiple by $i$. Then</p>
 <ul>
 <li>$T$ is $\mathbb{C}$-linear with complex matrix $A+iB$ if and only if
@@ -113,7 +113,7 @@ $$</p>
 <p><strong>Theorem (the two kinds realify differently).</strong> Let $\Phi$ be nondegenerate on a complex space of dimension $n$.</p>
 <ol>
 <li>If $\Phi$ is a symmetric $\mathbb{C}$-<strong>bilinear</strong> form, then $\Phi_{\mathbb{R}}$ and the form $\operatorname{Im}\Phi$ are two real symmetric bilinear forms, and $\Phi_{\mathbb{R}}$ has signature $(n,n)$ after the identification $\mathbb{R}^{2n}$.</li>
-<li>If $\Phi$ is a <strong>Hermitian</strong> form, $\Phi(P,Q)=\overline{\Phi(Q,P)}$, then $\Phi$ is real-valued at the two equal arguments and its imaginary part is alternating, $\operatorname{Im}\Phi(P,Q)=-\operatorname{Im}\Phi(Q,P)$, which is the companion of the two sesquilinear forms of the corpus and is no part of the realification: the realification is the real part $\Phi_{\mathbb{R}}=\operatorname{Re}\Phi$, a real symmetric bilinear form, and if the complex inertia of $\Phi$ is $(p,q)$ then the signature of $\Phi_{\mathbb{R}}$ is $(2p,2q)$.</li>
+<li>If $\Phi$ is a <strong>Hermitian</strong> form, $\Phi(P,Q)=\overline{\Phi(Q,P)}$, then $\Phi$ is real-valued at the two equal arguments and its imaginary part is alternating, $\operatorname{Im}\Phi(P,Q)=-\operatorname{Im}\Phi(Q,P)$, which is the companion of the two sesquilinear forms of the corpus and is no part of the realification: the realification is the real part $\Phi_{\mathbb{R}}=\operatorname{Re}\Phi$, a real symmetric bilinear form, and if the complex inertia of $\Phi$ is $(n,m)$ then the signature of $\Phi_{\mathbb{R}}$ is $(2p,2q)$.</li>
 </ol>
 <p><em>Proof.</em> (1) A nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so on a suitable $\mathbb{C}$-basis its Gram matrix is $\mathrm{I}_n$. In the real basis $e_1,\dots,e_n,ie_1,\dots,ie_n$ the entries are $\Phi(e_\mu,e_\nu)=\delta_{\mu\nu}$, $\Phi(e_\mu,ie_\nu)=i\delta_{\mu\nu}$, $\Phi(ie_\mu,ie_\nu)=-\delta_{\mu\nu}$; taking real parts gives the block matrix $\operatorname{diag}(\mathrm{I}_n,-\mathrm{I}_n)$, of signature $(n,n)$, and taking imaginary parts gives the second real symmetric bilinear form of the same block structure shifted by $J$. (2) The Hermitian property gives $\Phi(P,P)=\overline{\Phi(P,P)}$, so the algebraic norm is real, and the imaginary part is alternating, $\operatorname{Im}\Phi(P,Q)=-\operatorname{Im}\Phi(Q,P)$; the real part $\operatorname{Re}\Phi$ is a real symmetric bilinear form. A Hermitian form diagonalises with real eigenvalues; writing the algebraic norm as $\sum_\mu\varepsilon_\mu\lvert z_\mu\rvert^2$ and passing to $z_\mu=x_\mu+iy_\mu$ gives $\sum_\mu\varepsilon_\mu(x_\mu^2+y_\mu^2)$, whose signature is $(2p,2q)$.</p>
 <p><strong>Corollary (the four realified signatures).</strong> For the four forms of the corpus the theorem gives</p>
@@ -127,22 +127,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>general plain bilinear $B$</td>
+<td>general plain bilinear $\langle\cdot,\cdot\rangle$</td>
 <td>symmetric bilinear, rank $4$</td>
 <td>$(4,4)$</td>
 </tr>
 <tr>
-<td>general plain sesquilinear (Hermitian) $H$</td>
+<td>general plain sesquilinear (Hermitian) $\langle\cdot,\cdot\rangle_{*}$</td>
 <td>Hermitian, inertia $(4,0)$</td>
 <td>$(8,0)$</td>
 </tr>
 <tr>
-<td>general quaternionic bilinear $N$</td>
+<td>general quaternionic bilinear $\langle\cdot,\cdot\rangle_{\natural}$</td>
 <td>symmetric bilinear, rank $4$</td>
 <td>$(4,4)$</td>
 </tr>
 <tr>
-<td>general quaternionic sesquilinear (Krein) $K$</td>
+<td>general quaternionic sesquilinear (Krein) $\langle\cdot,\cdot\rangle_{\natural*}$</td>
 <td>Hermitian, inertia $(1,3)$</td>
 <td>$(2,6)$</td>
 </tr>
@@ -159,7 +159,7 @@ $$
 $$
 for the two sesquilinear forms.</p>
 <p><em>Proof.</em> For a $\mathbb{C}$-bilinear form, $\Phi(iP,iQ)=i^2\Phi(P,Q)=-\Phi(P,Q)$, and taking real parts gives the first display. For a Hermitian form, $\Phi(iP,iQ)=i\bar i\,\Phi(P,Q)=\Phi(P,Q)$, and the second follows. The sign is the same statement as the block shapes of the two Gram matrices: the bilinear realification has the two blocks $\mathrm{D}$ and $-\mathrm{D}$ while the Hermitian one repeats its block.</p>
-<p><strong>Remark (the two rules and the four signatures).</strong> The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two <strong>bilinear</strong> forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two <strong>Hermitian</strong> forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>Remark (the two rules and the four signatures).</strong> The four signatures of the corpus are not four unrelated computations: they are two rules applied twice. The two <strong>bilinear</strong> forms of the corpus realify to the split signature $(n,n)=(4,4)$, because over $\mathbb{C}$ a symmetric bilinear form has no inertia beyond its rank. The two <strong>Hermitian</strong> forms realify by doubling their complex inertia, $(4,0)\mapsto(8,0)$ and $(1,3)\mapsto(2,6)$. A reader who expects one rule for the four has one rule too many; the two slots of the general product are what decides which rule applies, exactly as in <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
 <h2 id="the-four-effects-on-a-structure">The Four Effects on a Structure</h2>
 <p><strong>Theorem (the dictionary).</strong> Let a structure be built from the ring $\mathbb{B}$ by its operations. Then two statements about it are distinguished. A statement <strong>about the ring</strong> is expressed using the addition, the product, the identity and quantification over the elements of $\mathbb{B}$ alone. A statement <strong>about the scalars</strong> mentions the field of scalars, a dimension over that field, a tensor product over that field, or requires a map to be scalar-linear. A statement about the ring has the same truth value in the two readings; a statement about the scalars may change.</p>
 <p><em>Proof.</em> The change of scalars replaces the structure map $k\to Z(\mathbb{B})$ and leaves the additive group and the product untouched; a statement about the ring is evaluated on that same group and product and so is unchanged, while a statement naming $k$ is evaluated against the structure map and may change.</p>
@@ -196,7 +196,7 @@ for the two sesquilinear forms.</p>
 </tr>
 <tr>
 <td>a Hermitian form</td>
-<td>complex inertia $(p,q)$</td>
+<td>complex inertia $(n,m)$</td>
 <td>one real form, signature $(2p,2q)$</td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ for the two sesquilinear forms.</p>
 <p><em>Proof.</em> The dimension is the doubling of the basis, and the two kinds of linear map are the two criteria of the previous sections. The two rows on forms are the two rules of the realification of a form. The subspace row is the even-dimension restriction of the complex reading, which the real reading does not inherit: a real subspace closed under the product need not be a complex subspace. The last row is the key case of the dictionary: an additive subgroup closed under left multiplication by every element of $\mathbb{B}$ is closed under multiplication by $i$ whenever $i$ lies in $\mathbb{B}$, so every ideal, and with it the idempotents and the zero divisors of a product, is automatically a complex subspace;</p>
 <p><strong>Remark (what the four effects are not).</strong> The four effects are not four independent losses. The first two are one doubling; the third is the appearance of the anticommuting maps; the fourth is the doubling of a degree-two invariant. What looks like a fifth effect, the growth of the automorphism group, is the same appearance of the conjugate-linear maps read on the group of the units.</p>
 <h2 id="the-effect-on-the-twelve-algebraic-structures">The Effect on the Twelve Algebraic Structures</h2>
-<p><strong>Theorem (the twelve over $\mathbb{R}$).</strong> The twelve products of <em>The 12 Products of the Biquaternion Complex Space</em> are defined by the four general products on the complex space. Read over $\mathbb{R}$,</p>
+<p><strong>Theorem (the twelve over $\mathbb{R}$).</strong> The twelve products of <em>The 12 Products of the Biquaternioid Complex Space</em> are defined by the four general products on the complex space. Read over $\mathbb{R}$,</p>
 <ol>
 <li>all twelve are $\mathbb{R}$-bilinear, so all twelve are algebras in the broad sense over $\mathbb{R}$;</li>
 <li>the six of the $A$ family are $\mathbb{C}_{\mathbb{B}}$-linear in the second slot, and the six of the $S$ family are $\mathbb{C}_{\mathbb{B}}$-conjugate-linear in it;</li>
@@ -271,7 +271,7 @@ for the two sesquilinear forms.</p>
 <p><em>Proof.</em> The broad count is the theorem above and the definition of a sesqualgebra over $(\mathbb{C},\varsigma)$, whose two scalar rules are the two slots of the $S$ family. The associative unital count is that only the general plain product of the twelve is associative, by <em>Introduction to the Biquaternion Algebra</em>, §<em>Associativity</em>, and by the collapse theorem of <em>Sesqualgebras</em> for the sesquilinear family — the statement is about the ring and so is the same in the two readings.</p>
 <p><strong>Theorem (the centre carries the distinction, and the products do not merge).</strong> After the realification the six products of the $S$ family are no longer distinguished from the six of the $A$ family by the field $\mathbb{R}$; they are distinguished by the centre $\mathbb{C}_{\mathbb{B}}$, over which the first six are linear and the second six conjugate-linear. The distinction is an object of the reading and not of the product: the product, its table and every ring property are the same before and after.</p>
 <p><em>Proof.</em> The criteria of §<em>The Realification of a Linear Map</em> apply to the second slot, with $V=W=\mathbb{B}$ and with $\mathbb{C}_{\mathbb{B}}$ in place of $\mathbb{C}$. The last clause is the dictionary.</p>
-<p><strong>Remark (the trap of the real part).</strong> A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_0e_0+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of <em>The 12 Products of the Biquaternion Complex Space</em>, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.</p>
+<p><strong>Remark (the trap of the real part).</strong> A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_0e_0+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of <em>The 12 Products of the Biquaternioid Complex Space</em>, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.</p>
 <h2 id="what-is-specific-to-the-biquaternion-instance">What Is Specific to the Biquaternion Instance</h2>
 <p>Four things are specific to the real reading of $\mathbb{B}$.</p>
 <p><strong>The odd real subalgebras.</strong> Over $\mathbb{C}$ a subalgebra of $\mathbb{B}$ is a complex subspace, of even real dimension; over $\mathbb{R}$ there are subalgebras of every dimension up to eight. Among the coordinate subspaces of the real basis the closed spans have real dimensions $1,2,4,8$ with counts $1,7,7,1$, so no closed coordinate span has odd dimension above one — and a subalgebra of odd dimension nevertheless exists:</p>
@@ -286,14 +286,14 @@ $$</p>
 <p>$\kappa(\lambda)=\bar\lambda$ being the Galois conjugation. The real automorphism group is therefore twice the complex one, the extra coset being conjugate-linear: it is the structure that fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, represented by the coefficient conjugation $\bar{\cdot}$. The derivations do not grow, $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ agreeing with $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the reason is the centrality of $i$. The coset is the descent of <em>Real Forms and the Descent of an Algebra</em>.</p>
 <p><strong>The trace form.</strong> The <strong>trace form</strong> of the left regular representation,</p>
 <p>$$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=8\,\operatorname{Re}B(\tilde P,\tilde Q),
+\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=8\,\operatorname{Re}\langle\tilde P,\tilde Q\rangle,
 $$</p>
 <p>is a symmetric bilinear form of signature $(4,4)$ with zero radical, invariant under every automorphism of the algebra. Its normalisation carries the dimension ratio of the dictionary: the complex trace counts $\mathrm{Sc}$ with the factor $4$ and the real trace with the factor $8$, and $\tau$ is the real invariant form of the algebra, the reading of the general plain bilinear form in which the invariance is a one-line statement.</p>
 <p><strong>The real models.</strong> Over $\mathbb{C}$ the algebra is $M_2(\mathbb{C})$ acting on $\mathbb{C}^2$, the complex spinor module. Over $\mathbb{R}$ the same elements act on the realification $\mathbb{R}^4=\mathbb{C}^2_{\mathbb{R}}$ and on the left regular module $\mathbb{R}^8$, the two readings $M_2(\mathbb{C})$ and $\mathsf{M}_4^{L}$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The Clifford reading of the same ring, the even Clifford algebra of the Minkowski form of signature $(1,3)$, is a third real model; it is the subject of <em>Biquaternion Other Algebraic Element Representations</em> and is not developed here.</p>
 <h2 id="summary">Summary</h2>
 <p>The realification keeps the elements, the addition and the product, restricts the scalars to $\mathbb{R}$, and forgets the complex structure $J$; the pair $(V_{\mathbb{R}},J)$ is the complex space again, and nothing else is lost. A $\mathbb{C}$-linear map becomes an $\mathbb{R}$-linear map commuting with $J$, and the passage brings in the conjugate-linear maps, which are the $\mathbb{R}$-linear maps anticommuting with $J$ and have no $\mathbb{C}$-linear reading. A symmetric complex bilinear form realifies to the split signature $(n,n)$ and to a second real form, its imaginary part; a Hermitian form realifies to one real form of doubled inertia. The dimension doubles, the subobjects change shape, the automorphism group grows by the conjugate-linear coset, and the ideals, the idempotents, the zero divisors and every other object read from the ring alone do not move at all.</p>
 <p>Read on the twelve algebraic structures, the passage turns the six $\mathbb{C}$-bilinear products and the six $\mathbb{C}$-sesquilinear ones into twelve $\mathbb{R}$-bilinear products; the sesqualgebra structure disappears with the nontrivial involution of the base field, and the distinction survives as linearity against conjugate-linearity over the centre $\mathbb{C}_{\mathbb{B}}$.</p>
-<p>Four things are specific to the biquaternion instance and are collected at the end. A three-dimensional real subalgebra exists, $\mathbb{R}\{e_0,e_1+ie_2,ie_1-e_2\}$, although no closed coordinate span has odd dimension above one. The real automorphism group is the complex one doubled by the conjugate-linear Galois coset, and the coset is represented by the coefficient conjugation, which fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on $i\mathbb{H}_{\mathbb{B}}$; the derivations do not grow. The trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}B(\tilde P,\tilde Q)$ is a symmetric bilinear form of signature $(4,4)$, of zero radical, invariant under every automorphism. The real models are the complex spinor one, the regular one $\mathsf{M}_4^{L}$ on $\mathbb{R}^8$, and the even Clifford algebra of the Minkowski form of signature $(1,3)$.</p>
+<p>Four things are specific to the biquaternion instance and are collected at the end. A three-dimensional real subalgebra exists, $\mathbb{R}\{e_0,e_1+ie_2,ie_1-e_2\}$, although no closed coordinate span has odd dimension above one. The real automorphism group is the complex one doubled by the conjugate-linear Galois coset, and the coset is represented by the coefficient conjugation, which fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on $i\mathbb{H}_{\mathbb{B}}$; the derivations do not grow. The trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$ is a symmetric bilinear form of signature $(4,4)$, of zero radical, invariant under every automorphism. The real models are the complex spinor one, the regular one $\mathsf{M}_4^{L}$ on $\mathbb{R}^8$, and the even Clifford algebra of the Minkowski form of signature $(1,3)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -333,7 +333,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(2p,2q)$</td>
-<td>the realified signature of a Hermitian form of complex inertia $(p,q)$</td>
+<td>the realified signature of a Hermitian form of complex inertia $(n,m)$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}\otimes_{\mathbb{R}}V_{\mathbb{R}}\cong V\oplus\bar V$</td>
@@ -344,7 +344,7 @@ $$</p>
 <td>the six products linear, and the six conjugate-linear, over the centre $\mathbb{C}_{\mathbb{B}}$</td>
 </tr>
 <tr>
-<td>$\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}B(\tilde P,\tilde Q)$</td>
+<td>$\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$</td>
 <td>the trace form of the left regular representation, symmetric bilinear of signature $(4,4)$, zero radical, invariant under every automorphism</td>
 </tr>
 <tr>
@@ -359,8 +359,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><strong>The Realification of the Four Forms</strong> (<code>articles_maths/the-realification-of-the-four-forms.md</code>), for the general case applied to the four forms of the corpus, the four Gram matrices, the four signatures, the restrictions to the remarkable subspaces and the realified null cones.</li>
-<li><em>The 12 Products of the Biquaternion Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternioid-complex-space.md</code>) and <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the twelve products, their table and their two-slot construction, on which §<em>The Effect on the Twelve Algebraic Structures</em> rests.</li>
+<li><strong>The Realification of the Eight Derived Structures</strong> (<code>articles_maths/the-realification-of-the-eight-derived-structures.md</code>), for the general case applied to the four forms of the corpus, the four Gram matrices, the four signatures, the restrictions to the remarkable subspaces and the realified null cones.</li>
+<li><em>The 12 Products of the Biquaternioid Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternioid-complex-space.md</code>) and <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the twelve products, their table and their two-slot construction, on which §<em>The Effect on the Twelve Algebraic Structures</em> rests.</li>
 <li><em>Change of Rings</em> (<code>articles_maths/change-of-rings.md</code>), <em>Extension of Scalars</em> (<code>articles_maths/extension-of-scalars.md</code>) and <em>Real Forms and the Descent of an Algebra</em> (<code>articles_maths/real-forms-and-the-descent-of-an-algebra.md</code>), for the general theory of the restriction and the extension of scalars and of the real forms.</li>
 </ul>
       </div>

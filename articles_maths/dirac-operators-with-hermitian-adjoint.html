@@ -57,7 +57,7 @@
 <p>The Clifford action and the adjoint are <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the module form and the Hermitian Clifford module are <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em>; the blade form and the positivity of the square are <em>The Blade Form and the Hermitian Structure with Hermitian Adjoint</em> and <em>Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint</em>; the self-adjoint operators and their spectra are <em>Self-Adjoint and Skew Operators with Hermitian Adjoint</em> and <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>; the spinor module, its chirality and the index are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>, <em>Spin Representations and Clifford Modules with Inner Conjugation</em> and <em>Dirac Differential Operators</em>; and the analytic statements are <em>Dirac Differential Operators</em> and <em>Unbounded Operators and Spectral Measures</em>.</p>
 <h2 id="the-dirac-operator-and-the-hermitian-form">The Dirac Operator and the Hermitian Form</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,q)$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial_1,\dots,\partial_m$ be first-order operators on $S$ with formal adjoints $\partial_j^{*} = -\partial_j$. The <strong>Dirac operator</strong> is</p>
+<p><strong>Definition.</strong> Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial_1,\dots,\partial_m$ be first-order operators on $S$ with formal adjoints $\partial_j^{*} = -\partial_j$. The <strong>Dirac operator</strong> is</p>
 <p>$$
 D = \sum_{j=1}^{m} \rho(e_j)\,\partial_j ,
 $$</p>
@@ -87,17 +87,17 @@ $$</p>
 <p><strong>Proof.</strong> For a self-adjoint operator on a Hermitian space, $\overline{\operatorname{im}D} = (\ker D)^{\perp}$, because $s \perp \operatorname{im}D$ iff $(s, Dt) = 0$ for all $t$ iff $(Ds,t) = 0$ for all $t$ iff $Ds = 0$; in finite dimensions the orthogonal complement of the kernel is exactly the image, and both are invariant under $D$ because $D$ commutes with itself and preserves its kernel.</p>
 <p><strong>Corollary (the index is an obstruction of the kernel alone).</strong> If the module carries a chirality grading $\gamma$ with $\gamma^{2} = 1$, $\gamma^{*} = \gamma$, and the operator is odd, $\gamma D = -D\gamma$, then $D$ interchanges the two chiral halves and the <strong>index</strong> $\operatorname{ind}(D^{+}) = \dim\ker D^{+} - \dim\ker D^{-}$ is the supertrace of $\gamma$ over $\ker D$. The computation of this integer from the geometry is the Atiyah–Singer theorem of Part IV; the Hermitian structure is what makes the index a difference of dimensions of positive definite spaces.</p>
 <h2 id="the-finite-dimensional-model">The Finite-Dimensional Model</h2>
-<p><strong>Setting.</strong> Take $S = \mathrm{Cl}(V,q)$ with the regular form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$, and drop the derivative: the operator is the <strong>Dirac element</strong></p>
+<p><strong>Setting.</strong> Take $S = \mathrm{Cl}(V,\mathfrak{Q})$ with the regular form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$, and drop the derivative: the operator is the <strong>Dirac element</strong></p>
 <p>$$
 D_{\mathrm{alg}} = \sum_{j} L_{e_j} ,
 $$</p>
 <p>the sum of the left multiplications by an orthonormal frame. This is the flat, massless model with no derivation, and every quantity is computable.</p>
 <p><strong>Theorem.</strong> The Dirac element is skew-adjoint, and its square is the Clifford Laplacian:</p>
 <p>$$
-D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(\sum_j q(e_j)\Bigr)\mathrm{id}, \qquad
-(D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j q(e_j)\Bigr)(x,y).
+D_{\mathrm{alg}}^{*} = -\,D_{\mathrm{alg}}, \qquad D_{\mathrm{alg}}^{2} = \Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)\mathrm{id}, \qquad
+(D_{\mathrm{alg}}x, D_{\mathrm{alg}}y) = -\Bigl(\sum_j \mathfrak{Q}(e_j)\Bigr)(x,y).
 $$</p>
-<p><strong>Proof.</strong> $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j} + L_{e_j}L_{e_i} = L_{e_ie_j + e_je_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{q(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.</p>
+<p><strong>Proof.</strong> $L_{e_j}^{*} = L_{e_j^{\dagger}} = -L_{e_j}$, so $D_{\mathrm{alg}}^{*} = -\sum_jL_{e_j} = -D_{\mathrm{alg}}$. For the square, the cross terms $L_{e_i}L_{e_j} + L_{e_j}L_{e_i} = L_{e_ie_j + e_je_i}$ vanish for an orthonormal frame of a non-degenerate form, leaving $D_{\mathrm{alg}}^{2} = \sum_jL_{e_j}L_{e_j} = \sum_jL_{\mathfrak{Q}(e_j)} = (\sum_jq(e_j))\mathrm{id}$; the form identity follows from the square and the skew-adjointness.</p>
 <p><strong>Corollary (explicit spectrum and positivity).</strong> In the negative definite case, where the dagger is positive, $\sum_jq(e_j) = -m$ and</p>
 <p>$$
 D_{\mathrm{alg}}^{2} = -m\,\mathrm{id}, \qquad D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = -D_{\mathrm{alg}}^{2} = m\,\mathrm{id} > 0 ,

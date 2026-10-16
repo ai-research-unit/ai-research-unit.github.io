@@ -65,7 +65,7 @@ $$</p>
 <p><strong>Theorem (Maschke, standard).</strong> Let $G$ be a finite group and $k$ a field in which $\lvert G\rvert$ is invertible. Then the group algebra $k[G]$ is semisimple, and every $k[G]$-module is a direct sum of simple modules; the simple $k[G]$-modules are the irreducible representations of $G$.</p>
 <p><em>Proof.</em> If $W\subseteq V$ is a $k[G]$-submodule, choose any $k$-linear projection $\pi:V\to W$ and average it,</p>
 <p>$$
-\tilde\pi(v) = \frac{1}{\lvert G\rvert}\sum_{g\in G}g\,\pi(g^{-1}v),
+\pi^{\mathrm{avg}}(v) = \frac{1}{\lvert G\rvert}\sum_{g\in G}g\,\pi(g^{-1}v),
 $$</p>
 <p>which is $k[G]$-linear because the averaging is invariant under the action, and which is a projection onto $W$; its kernel is a complement. The argument applies to every submodule, so the module is semisimple, and the structure theory of <em>Simple and Semisimple Modules</em> gives the decomposition into simple summands.</p>
 <p><strong>Definition.</strong> The <strong>character</strong> of a finite-dimensional $k[G]$-module $V$ is $\chi_V(g) = \operatorname{tr}(g\mid V)$, and the <strong>degree</strong> of the character is $\chi_V(1) = \dim_kV$. The character of the simple module $L_i$ in a decomposition $k[G] = \bigoplus_iL_i^{m_i}$ is written $\chi_i$, and the characters of the simple modules are the <strong>irreducible characters</strong>; the multiset of the $L_i$ is the <strong>decomposition</strong> of $V$, and $V$ is determined up to isomorphism by its character.</p>

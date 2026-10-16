@@ -68,7 +68,7 @@ $$</p>
 <p>$$
 \alpha + n : \mathcal{A}(S) \longrightarrow \mathbb{R}, \qquad x \longmapsto \alpha(x)+n ,
 $$</p>
-<p>defines an <strong>affine root</strong>; the affine roots form an affine root system in the sense of <em>Root Systems and Classification</em>, with the finite Weyl group $W$ of the root system of $\mathbf{S}$ acting on $\mathcal{A}(S)$ by linear reflections and the <strong>affine Weyl group</strong> $W_{\mathrm{aff}} = W\ltimes \Lambda_r$ acting by affine reflections, where $\Lambda_r$ is the coroot lattice. The normaliser of $S$ in $G$ acts on $\mathcal{A}(S)$ by affine isometries, and the quotient of this action is the <strong>extended affine Weyl group</strong> $\widetilde{W} = W\ltimes\Lambda$ with $\Lambda$ the group of cocharacters modulo the coroot lattice; it is a Coxeter group only in the split case, and in general it is the semidirect product of the affine Weyl group with the group of diagram automorphisms of the Dynkin diagram.</p>
+<p>defines an <strong>affine root</strong>; the affine roots form an affine root system in the sense of <em>Root Systems and Classification</em>, with the finite Weyl group $W$ of the root system of $\mathbf{S}$ acting on $\mathcal{A}(S)$ by linear reflections and the <strong>affine Weyl group</strong> $W_{\mathrm{aff}} = W\ltimes \Lambda_r$ acting by affine reflections, where $\Lambda_r$ is the coroot lattice. The normaliser of $S$ in $G$ acts on $\mathcal{A}(S)$ by affine isometries, and the quotient of this action is the <strong>extended affine Weyl group</strong> $W^{\mathrm{ext}} = W\ltimes\Lambda$ with $\Lambda$ the group of cocharacters modulo the coroot lattice; it is a Coxeter group only in the split case, and in general it is the semidirect product of the affine Weyl group with the group of diagram automorphisms of the Dynkin diagram.</p>
 <h3 id="facets-and-alcoves">Facets and Alcoves</h3>
 <p><strong>Definition.</strong> The <strong>walls</strong> of the apartment are the hyperplanes $\{x : \alpha(x)+n = 0\}$ of the affine roots; the connected components of the complement of the walls are the <strong>alcoves</strong>, and the <strong>facets</strong> are the faces of the alcoves, that is, the connected components of the intersections of the hyperplanes with the complement of the remaining ones. An alcove is an open simplex of dimension $r$, a facet is a simplex of some dimension between $0$ and $r$, and the closure of an alcove is a fundamental domain for the action of the affine Weyl group $W_{\mathrm{aff}}$ on $\mathcal{A}(S)$, with the alcove</p>
 <p>$$
@@ -84,7 +84,7 @@ I(\mathbf{G},k) = \bigl(G \times \mathcal{A}(S)\bigr)\big/\sim ,
 $$</p>
 <p>where $G = \mathbf{G}(k)$ acts on the first factor by left translation and the equivalence relation identifies $(g,x)$ with $(g',x')$ exactly when there is $n \in N_G(S)(k)$ with $x' = nx$ and $g^{-1}g'n$ lying in the subgroup of $G$ fixing $x$ pointwise. The image of $\{g\}\times\mathcal{A}(S)$ is the <strong>apartment</strong> $g\mathcal{A}(S)$; the images of the facets and the alcoves of $\mathcal{A}(S)$ are the facets and the <strong>alcoves</strong> of the building; and $G$ acts on $I(\mathbf{G},k)$ by $g\cdot[h,x] = [gh,x]$. Two points of the building lie in a common apartment, and the building is recovered from any apartment together with the action of $G$, so the construction is independent of $S$ up to a canonical isomorphism.</p>
 <p><strong>Theorem (Bruhat–Tits).</strong> Let $G = \mathbf{G}(k)$ be as above.</p>
-<p><strong>(a)</strong> The building $I(\mathbf{G},k)$ is a thick affine building of type $\widetilde{W}$; its apartments are the conjugates $g\mathcal{A}(S)$ of the standard apartment, each isometric to $\mathcal{A}(S)$; its residues are the spherical buildings of the parahoric subgroups, and its building at infinity is the spherical building of $\mathbf{G}$ over $k$.</p>
+<p><strong>(a)</strong> The building $I(\mathbf{G},k)$ is a thick affine building of type $W^{\mathrm{ext}}$; its apartments are the conjugates $g\mathcal{A}(S)$ of the standard apartment, each isometric to $\mathcal{A}(S)$; its residues are the spherical buildings of the parahoric subgroups, and its building at infinity is the spherical building of $\mathbf{G}$ over $k$.</p>
 <p><strong>(b)</strong> $G$ acts on $I(\mathbf{G},k)$ by isometries and type-preserving simplicial automorphisms, transitively on the alcoves; the stabiliser of an alcove is an <strong>Iwahori subgroup</strong>, and the stabilisers of the facets are the <strong>parahoric subgroups</strong>.</p>
 <p><strong>(c)</strong> The group $G$ acts strongly transitively in the following sense: for every pair consisting of an apartment and an alcove in it, the stabiliser of the alcove acts transitively on the apartments containing it, and the pairs (alcove, apartment) form a single $G$-orbit; consequently $G$ has a Tits system with $B$ an Iwahori subgroup, $N$ the normaliser of $S$, and Weyl group the affine Weyl group, in the split case.</p>
 <p><strong>(d)</strong> The building is a complete metric space with the metric obtained by gluing the Euclidean metrics of the apartments; it is $\mathrm{CAT}(0)$, and the action of $G$ is by isometries with the apartments as flat subspaces of maximal dimension.</p>
@@ -183,7 +183,7 @@ $$</p>
 <td>Affine root: the affine function $x\mapsto\alpha(x)+n$ on $\mathcal{A}(S)$</td>
 </tr>
 <tr>
-<td>$W$, $W_{\mathrm{aff}} = W\ltimes\Lambda_r$, $\widetilde W$</td>
+<td>$W$, $W_{\mathrm{aff}} = W\ltimes\Lambda_r$, $W^{\mathrm{ext}}$</td>
 <td>Weyl group; affine Weyl group; extended affine Weyl group</td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ $$</p>
 </tr>
 <tr>
 <td>Bruhat decomposition for $P$</td>
-<td>$G = \bigsqcup_{w} PwP$, $w$ in the quotient of $\widetilde W$</td>
+<td>$G = \bigsqcup_{w} PwP$, $w$ in the quotient of $W^{\mathrm{ext}}$</td>
 </tr>
 <tr>
 <td>fixed-point theorem</td>

@@ -101,23 +101,23 @@ $$</p>
 <p><strong>Proof.</strong> The two-dimensional case is the intersection of a circle orthogonal to the boundary circle, whose fixed points on the boundary are the two intersection points; the geodesic joining them is fixed pointwise, and the classification of the Möbius involutions by their fixed points is the one of the companion article.</p>
 <h2 id="the-reflection-as-a-signed-two-sided-operator">The Reflection as a Signed Two-Sided Operator</h2>
 <h3 id="the-clifford-formula">The Clifford Formula</h3>
-<p><strong>Definition.</strong> Let $(V,q)$ be a quadratic space with polar form $B$ and let $a \in V$ with $q(a) \neq 0$. In the Clifford algebra $\mathrm{Cl}(V,q)$ the <strong>reflection in the hyperplane</strong> $a^\perp$ is the signed conjugation by the vector $a$,</p>
+<p><strong>Definition.</strong> Let $(V,\mathfrak{Q})$ be a quadratic space with polar form $B$ and let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. In the Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>reflection in the hyperplane</strong> $a^\perp$ is the signed conjugation by the vector $a$,</p>
 <p>$$
 \rho_a(x) = -\,a\,x\,a^{-1} = a\,\alpha(x)\,a^{-1},
 $$</p>
 <p>where $\alpha$ is the grade involution, which acts on the vectors by $x \mapsto -x$ and on the scalars by the identity; the vector $a$ is the <strong>reflection element</strong>, and the sign in the formula is the sign of the odd part of the grading.</p>
 <p><strong>Theorem.</strong> For every vector $x \in V$ the signed conjugation of the definition is the reflection</p>
 <p>$$
-\rho_a(x) = x - 2\,\frac{B(x,a)}{q(a)}\,a ,
+\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a ,
 $$</p>
 <p>so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\Theta^{\alpha}_{a,a^{-1}}$ of <em>The Signed Sandwich on an Ordered Algebra</em>, and it is the operator form of the geodesic reflection in the constant-curvature geometries.</p>
-<p><strong>Proof.</strong> In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/q(a) - x$, since $a^{-1} = a/q(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/q(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.</p>
+<p><strong>Proof.</strong> In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/\mathfrak{Q}(a) - x$, since $a^{-1} = a/\mathfrak{Q}(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/\mathfrak{Q}(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.</p>
 <p><strong>Corollary (the Cartan–Dieudonné theorem).</strong> Every orthogonal transformation of a nondegenerate quadratic space is the product of at most $\dim V$ reflections,</p>
 <p>$$
-O(V,q) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V ,
+O(V,\mathfrak{Q}) \ni T = \rho_{a_1}\circ\cdots\circ\rho_{a_k}, \qquad k \leq \dim V ,
 $$</p>
 <p>and the number of the factors is the dimension of the space of the vectors moved by $T$; the orientation-preserving transformations are the products of an even number of reflections.</p>
-<p><strong>Proof.</strong> The classical theorem is proved by induction on the dimension: if $T$ moves a vector $v$ then the composition $\rho_{T(v)-v}\circ T$ fixes $v$, reduces to the hyperplane $v^\perp$ and the induction applies; the parity statement follows because each reflection has determinant $-1$. The statement and the proof are in <em>Clifford Algebras</em> and <em>The Signed Adjoint of the Reflection on a Linear Space</em>.</p>
+<p><strong>Proof.</strong> The classical theorem is proved by induction on the dimension: if $T$ moves a vector $b$ then the composition $\rho_{T(b)-b}\circ T$ fixes $b$, reduces to the hyperplane $b^\perp$ and the induction applies; the parity statement follows because each reflection has determinant $-1$. The statement and the proof are in <em>Clifford Algebras</em> and <em>The Signed Adjoint of the Reflection on a Linear Space</em>.</p>
 <p><strong>Remark (the sign and the two sides).</strong> The reflection is the signed two-sided operator with the two parameters $a$ and $a^{-1}$, and the sign is the grade involution; the two-sided form records that the reflection is the conjugation, while a general isometry of the geometry is a product of these signed operators. The sign is what distinguishes the reflection in the hyperplane from the two-sided operator $x \mapsto axa^{-1}$ without the twist, which is a rotation-like map rather than a reflection, and it is the reason the reflection is placed in the signed two-sided slot of the category.</p>
 <h2 id="the-symmetry-of-a-geodesic">The Symmetry of a Geodesic</h2>
 <p><strong>Definition.</strong> Let $\gamma \subseteq M$ be a geodesic of a Riemannian manifold. A <strong>symmetry of the geodesic</strong> is an isometry of $M$ that preserves $\gamma$ and reverses its parameter, $f(\gamma(t)) = \gamma(-t)$ after the choice of the origin; the full group of the isometries preserving $\gamma$ contains the translations along $\gamma$, and the symmetries are the coset reversing the parameter.</p>

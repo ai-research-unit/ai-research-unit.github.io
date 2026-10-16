@@ -58,11 +58,11 @@
 <h2 id="self-adjoint-and-skew-elements">Self-Adjoint and Skew Elements</h2>
 <p><strong>Definition.</strong> Let $\sigma$ be an involution of the base $A$ and let ${}^{\dagger}$ be the induced dagger, $x^{\dagger} = \sigma(\alpha(x^{r}))$. An element $x$ is <strong>self-adjoint</strong> or <strong>Hermitian</strong> if $x^{\dagger} = x$, and <strong>skew-adjoint</strong> if $x^{\dagger} = -x$. Write</p>
 <p>$$
-\mathrm{Herm}(V,q) = \{\, x : x^{\dagger} = x \,\}, \qquad \mathrm{Skew}(V,q) = \{\, x : x^{\dagger} = -x \,\}.
+\mathrm{Herm}(V,\mathfrak{Q}) = \{\, x : x^{\dagger} = x \,\}, \qquad \mathrm{Skew}(V,\mathfrak{Q}) = \{\, x : x^{\dagger} = -x \,\}.
 $$</p>
 <p><strong>Proposition.</strong> The dagger is an anti-involution of order two, so $\mathrm{Herm}$ and $\mathrm{Skew}$ are $A^{\sigma}$-submodules; when $2$ is invertible in $A$,</p>
 <p>$$
-\mathrm{Cl}(V,q) = \mathrm{Herm}(V,q) \oplus \mathrm{Skew}(V,q), \qquad x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger}),
+\mathrm{Cl}(V,\mathfrak{Q}) = \mathrm{Herm}(V,\mathfrak{Q}) \oplus \mathrm{Skew}(V,\mathfrak{Q}), \qquad x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger}),
 $$</p>
 <p>and the splitting is exactly the eigen-decomposition of the involution.</p>
 <p><strong>Proof.</strong> $(x^{\dagger})^{\dagger} = x$ gives $\mathrm{Herm} \cap \mathrm{Skew} = 0$, and the displayed formula gives the sum, with the first summand self-adjoint by $\dagger^{2} = \mathrm{id}$ and the second skew.</p>
@@ -73,7 +73,7 @@ $$</p>
 <h3 id="the-set-of-squares">The Set of Squares</h3>
 <p><strong>Definition.</strong> The <strong>Hermitian cone</strong> of the algebra is the image of the squaring map,</p>
 <p>$$
-P = \{\, x^{\dagger}x : x \in \mathrm{Cl}(V,q) \,\} .
+P = \{\, x^{\dagger}x : x \in \mathrm{Cl}(V,\mathfrak{Q}) \,\} .
 $$</p>
 <p>Its elements are self-adjoint, it contains $0$ and $1$, and $P \cap (-P) = 0$ when the involution is positive, as the next paragraph shows. It is not automatic that $P$ is closed under addition; that holds when the algebra is a full matrix algebra with the adjoint involution, which is the case for $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$ and for the complexified algebras, and it is the reason the cone is the one of a $C^{*}$-algebra rather than merely a set of squares.</p>
 <h3 id="positivity-of-the-involution">Positivity of the Involution</h3>
@@ -90,7 +90,7 @@ $$</p>
 <p><strong>Corollary (the $C^{*}$-structure).</strong> When the dagger is positive, $\mathrm{Sc}(x^{\dagger}x)$ is a positive definite quadratic form on the algebra, related to the Euclidean form by the diagonal signature signs; the algebra with the involution is a finite-dimensional $C^{*}$-algebra, a full matrix algebra over $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$ according to the parity of $n$, and $P$ is its cone of positive elements. The completion in infinite dimension carries the canonical anticommutation relations, as in <em>Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</em>.</p>
 <p><strong>Remark (the exchange of sides).</strong> A positive definite quadratic form does not fail to give a cone; it gives the cone of the <strong>other</strong> involution. For $\mathrm{Cl}_{n,0}$ the form $\mathrm{Sc}(x^{r}x)$ is positive definite, and the involution to use is reversion, not the dagger; the two statements are the same statement after $e_i \mapsto ie_i$, which changes the sign of the quadratic form and the sign of the parity. Over a complex base with a conjugation $\sigma$ the dagger is positive exactly when it induces a positive involution of the complexified algebra, which is the ordinary case of a complex Hilbert space.</p>
 <h3 id="the-polar-decomposition">The Polar Decomposition</h3>
-<p><strong>Theorem.</strong> Suppose the dagger is positive and $x \in \mathrm{Cl}(V,q)$ lies in a matrix Clifford algebra of the form $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, or is an invertible element of such an algebra. Then $x$ has a <strong>polar decomposition</strong></p>
+<p><strong>Theorem.</strong> Suppose the dagger is positive and $x \in \mathrm{Cl}(V,\mathfrak{Q})$ lies in a matrix Clifford algebra of the form $\mathrm{Cl}_{0,n}$ over $\mathbb{R}$, or is an invertible element of such an algebra. Then $x$ has a <strong>polar decomposition</strong></p>
 <p>$$
 x = u\,|x|, \qquad |x| = \bigl(x^{\dagger}x\bigr)^{1/2} \in P, \qquad u^{\dagger}u = 1,
 $$</p>
@@ -115,7 +115,7 @@ $$</p>
 [u,v]^{\dagger} = (uv - vu)^{\dagger} = v^{\dagger}u^{\dagger} - u^{\dagger}v^{\dagger} = vu - uv = -[u,v],
 $$</p>
 <p>so $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$; the other two are the same computation with the signs of one or both arguments changed.</p>
-<p><strong>Corollary.</strong> $\mathrm{Skew}(V,q)$ is closed under the bracket and is the Lie algebra of the unitary slice in <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the complement $\mathrm{Herm}(V,q)$ is the tangent space of the symmetric space of the Cartan involution, in the sense of <em>Symmetric Spaces</em>. When the dagger is positive this is the Cartan decomposition of a compact group and the space is a compact symmetric space; the example worked out in the corpus is $\mathrm{Cl}_{0,3}$, where the skew part is the Lie algebra of $\mathrm{Spin}(3)$ and the Hermitian part carries the spin-factor structure of <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>.</p>
+<p><strong>Corollary.</strong> $\mathrm{Skew}(V,\mathfrak{Q})$ is closed under the bracket and is the Lie algebra of the unitary slice in <em>The Unitary Slice and the Compact Real Form with Hermitian Adjoint</em>; the complement $\mathrm{Herm}(V,\mathfrak{Q})$ is the tangent space of the symmetric space of the Cartan involution, in the sense of <em>Symmetric Spaces</em>. When the dagger is positive this is the Cartan decomposition of a compact group and the space is a compact symmetric space; the example worked out in the corpus is $\mathrm{Cl}_{0,3}$, where the skew part is the Lie algebra of $\mathrm{Spin}(3)$ and the Hermitian part carries the spin-factor structure of <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>.</p>
 <p><strong>Remark (the cone and the spin factor).</strong> In the three-dimensional definite case the positive cone of the spin factor is the cone over the sphere of radius $1/2$ generated by the idempotents, and the quadratic form of the spin factor is the restriction of the scalar part of the dagger form. This is the point of contact with the Jordan theory of <em>Jordan Algebras and the Positive Cone</em>, and it is the reason the algebra of the three-dimensional Euclidean space carries both a Clifford and a Jordan structure.</p>
 <h2 id="summary">Summary</h2>
 <p>The dagger makes a Clifford algebra an algebra with involution, with self-adjoint and skew parts and the splitting $\mathrm{Cl} = \mathrm{Herm}\oplus\mathrm{Skew}$ when $2$ is invertible, and with $x^{\dagger}x$ self-adjoint for every $x$. The <strong>Hermitian cone</strong> $P = \{x^{\dagger}x\}$ is the set of squares; the involution is <strong>positive</strong> exactly when the scalar form of the dagger is positive definite, which happens exactly for a negative definite quadratic form, where $\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2}$; a positive definite form instead makes reversion positive and exchanges the two sides by $e_i \mapsto ie_i$. When the involution is positive the algebra is a finite-dimensional $C^{*}$-algebra, $P$ is its positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ in the unitary slice, which is the quaternion polar decomposition when the algebra is $\mathbb{H}$. The <strong>Cartan involution</strong> $\theta(x) = (x^{\dagger})^{-1}$ is an automorphism of order two of the group of units whose fixed set is exactly the unitary slice, and the induced Lie-algebra decomposition is that of a symmetric space: $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$, $[\mathrm{Skew},\mathrm{Herm}] \subseteq \mathrm{Herm}$, $[\mathrm{Herm},\mathrm{Herm}] \subseteq \mathrm{Skew}$, so the skew part is the Lie algebra of the unitary group and the self-adjoint part is the tangent space of the symmetric space.</p>
@@ -133,11 +133,11 @@ $$</p>
 <td>The dagger $\sigma(\alpha(x^{r}))$</td>
 </tr>
 <tr>
-<td>$\mathrm{Herm}(V,q)$</td>
+<td>$\mathrm{Herm}(V,\mathfrak{Q})$</td>
 <td>Self-adjoint elements, $x^{\dagger}=x$</td>
 </tr>
 <tr>
-<td>$\mathrm{Skew}(V,q)$</td>
+<td>$\mathrm{Skew}(V,\mathfrak{Q})$</td>
 <td>Skew-adjoint elements, $x^{\dagger}=-x$</td>
 </tr>
 <tr>

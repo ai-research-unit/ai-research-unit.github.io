@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
-<em>Introduction to the Antisymmetric Plain Algebra of Quaternions</em>. This article reads the operation on
+<em>Introduction to the Antisymmetric Plain Algebra</em>. This article reads the operation on
 the <strong>left regular representation</strong> $M_4(\mathbb{R})_L$ of <em>Introduction to the $4\times4$ Matrix
 Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, where the plain product becomes the matrix
 product and the antisymmetrization becomes the <strong>halved commutator</strong> of the regular matrices. It gives
@@ -77,8 +77,8 @@ Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this
 $e_1^2=e_2^2=e_3^2=-e_0$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
 the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_0,e_1,e_2,e_3)$, and the
 right regular representation is $\mathsf{R}_4$, the matrix of $r\mapsto r\tilde q$. The <strong>quaternion
-form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the <strong>plain form</strong>
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.</p>
+form</strong> is $\langle\tilde p,\tilde q\rangle_{\natural}=p_0q_0+\vec p\cdot\vec q$ and the <strong>plain form</strong>
+$\langle\tilde p,\tilde q\rangle=p_0q_0-\vec p\cdot\vec q$.</p>
 <h2 id="the-left-regular-model">The Left Regular Model</h2>
 <p><strong>Proposition.</strong> The map $\mathsf{M}_4$ is an injective $\mathbb{R}$-algebra homomorphism,</p>
 <p>$$
@@ -86,7 +86,7 @@ $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.</p>
 \mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T},
 $$</p>
 <p>with $\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$ and
-$\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$. On the basis,</p>
+$\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$. On the basis,</p>
 <p>$$
 \mathsf{M}_4(e_0)=\mathrm{I}_4,\qquad
 \mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
@@ -97,7 +97,7 @@ $$</p>
 representation; the transpose is the conjugation because the basis is orthonormal for the norm and the
 conjugation is the adjoint of the left multiplication. The trace is $4q_0$, the diagonal of
 $\mathsf{M}_4(\tilde q)$ being $(q_0,q_0,q_0,q_0)$; the determinant is the fourth power of the
-characteristic scale of the left multiplication, $N(\tilde q)^2$.</p>
+characteristic scale of the left multiplication, $\langle\tilde q\rangle_{\natural}^2$.</p>
 <h2 id="the-commutator-identity">The Commutator Identity</h2>
 <p><strong>Theorem (the bracket is the halved commutator).</strong></p>
 <p>$$
@@ -140,19 +140,19 @@ matrices.</p>
 <p><strong>Remark (the enrichment over the two by two model).</strong> The two by two model carries the left
 representation alone, the right one being its conjugate; the four by four regular model carries both
 copies at once, and the commuting pair is the whole operator algebra of the two-sided multiplications
-of <em>The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure</em>.</p>
+of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>.</p>
 <h2 id="the-trace-form-and-the-invariants">The Trace Form and the Invariants</h2>
 <p><strong>Proposition.</strong> The trace form of the model is the plain form multiplied by four,</p>
 <p>$$
-\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)\bigr)=4B(\tilde p,\tilde q),
+\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)\bigr)=4\langle\tilde p,\tilde q\rangle,
 $$</p>
 <p>which on the derived algebra is twice the Killing form,
 $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=-4\,\vec p\cdot\vec q=2\kappa(\tilde p,\tilde q)$
 for pure $\tilde p,\tilde q$; and the determinant reads the quaternion norm,
-$\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$.</p>
+$\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.</p>
 <p><em>Proof.</em> The model is multiplicative, so
-$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q)=4\mathrm{Sc}(\tilde p\tilde q)=4B(\tilde p,\tilde q)$;
-on pure elements $B=-\vec p\cdot\vec q$, and the Killing form is $-2\,\vec p\cdot\vec q$
+$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q)=4\mathrm{Sc}(\tilde p\tilde q)=4\langle\tilde p,\tilde q\rangle$;
+on pure elements $\langle\cdot,\cdot\rangle=-\vec p\cdot\vec q$, and the Killing form is $-2\,\vec p\cdot\vec q$
 (<em>The Killing Form of the Antisymmetric Plain Algebra</em>, below this article in this category).</p>
 <h2 id="the-comparison-with-the-plain-algebra-on-the-model">The Comparison with the Plain Algebra on the Model</h2>
 <div class="table-scroll"><table>
@@ -233,7 +233,7 @@ four-dimensional regular algebra as image.</p>
 <td>the trace of the model</td>
 </tr>
 <tr>
-<td>$\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$</td>
+<td>$\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$</td>
 <td>the determinant, the square of the norm</td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@ four-dimensional regular algebra as image.</p>
 <td>the commuting regular copies</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4B(\tilde p,\tilde q)$</td>
+<td>$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4\langle\tilde p,\tilde q\rangle$</td>
 <td>the trace form</td>
 </tr>
 </tbody>
@@ -250,9 +250,9 @@ four-dimensional regular algebra as image.</p>
 <ul>
 <li><em>Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, for the model and its basis matrices.</li>
 <li><em>The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, for the plain product on the same model.</li>
-<li><em>The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure</em>, for the two commuting regular copies and the two-sided operators.</li>
+<li><em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, for the two commuting regular copies and the two-sided operators.</li>
 <li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and <em>The Killing Form of the Antisymmetric Plain Algebra</em>, both below this article in this category, for the structure and the form read here on the model.</li>
-<li><em>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this category, for the companion model.</li>
+<li><em>Introduction to the Symmetric Plain Algebra</em>, above this article in this category, for the companion model.</li>
 </ul>
       </div>
     </main>

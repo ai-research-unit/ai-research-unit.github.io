@@ -57,7 +57,7 @@
 <p>$$
 A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
 $$</p>
-<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $N(A) = A\bar A = a^2$, Euclidean norm $\|A\|_E = \sqrt{a^2 + a'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$. To keep the two notions apart, the norm is written $N$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.</p>
+<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\rangle = A\bar A = a^2$, Euclidean norm $\|A\|_E = \sqrt{a^2 + a'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.</p>
 <h2 id="the-dual-plane-as-a-topological-space">The Dual Plane as a Topological Space</h2>
 <h3 id="the-underlying-space">The Underlying Space</h3>
 <p>The map</p>
@@ -68,7 +68,7 @@ $$</p>
 <p><strong>Proposition.</strong> The product is bilinear, hence continuous, so $\mathbb{D}'$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the units, so $(\mathbb{D}')^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.</p>
 <p><strong>Proof.</strong> Bilinearity gives continuity of the product from the continuity of the algebra operations on $\mathbb{R}^2$. The inverse $a + \varepsilon a' \mapsto a^{-1} - a^{-2}\varepsilon a'$ is continuous where $a \neq 0$; $1 + \mathrm{M} = \{a = 1\}$ is closed.</p>
 <h3 id="the-distinction-between-the-two-forms">The Distinction Between the Two Forms</h3>
-<p>The norm $N(A) = a^2$ and the Euclidean form $a^2 + a'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $N$ is continuous, its vanishing does not control the Euclidean size: a sequence with $N(A_n) \to 0$ need not have $A_n \to 0$, because $A_n$ may move along the null line $\mathrm{M}$.</p>
+<p>The norm $\langle A\rangle = a^2$ and the Euclidean form $a^2 + a'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle A_n\rangle \to 0$ need not have $A_n \to 0$, because $A_n$ may move along the null line $\mathrm{M}$.</p>
 <h3 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h3>
 <p><strong>Definition.</strong> The <strong>Euclidean unit sphere</strong> is</p>
 <p>$$
@@ -97,11 +97,11 @@ $$</p>
 <h3 id="the-norm-one-set">The Norm-One Set</h3>
 <p><strong>Definition.</strong> The <strong>norm-one set</strong> is</p>
 <p>$$
-H = \{A \in \mathbb{D}' : N(A) = 1\} = \{a + \varepsilon a' : a = \pm 1\},
+H = \{A \in \mathbb{D}' : \langle A\rangle = 1\} = \{a + \varepsilon a' : a = \pm 1\},
 $$</p>
 <p>the union of the two parallel lines $a = 1$ and $a = -1$.</p>
 <p><strong>Proposition.</strong> $H$ is a closed subset with two contractible components, each homeomorphic to a line; its identity part is $H_0 = 1 + \mathrm{M} = \{a = 1\}$. Hence $H$ has the homotopy type of $S^0$.</p>
-<p><strong>Proof.</strong> $N(A) = a^2 = 1$ gives $a = \pm 1$ with $a'$ free; the two lines are closed and contractible, and the line $a = 1$ is $1 + \mathrm{M}$.</p>
+<p><strong>Proof.</strong> $\langle A\rangle = a^2 = 1$ gives $a = \pm 1$ with $a'$ free; the two lines are closed and contractible, and the line $a = 1$ is $1 + \mathrm{M}$.</p>
 <p>So the norm-one set of the dual numbers is not a circle, as in the complex case, nor a hyperbola with two branches, as in the split-complex case, but a pair of parallel lines; its homotopy type is that of the two-point space.</p>
 <h3 id="the-group-of-units">The Group of Units</h3>
 <p><strong>Theorem.</strong> The group of units is $(\mathbb{D}')^\times = \{a \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{a > 0\}$ and $\{a < 0\}$, each contractible. The homotopy type of $(\mathbb{D}')^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $A \mapsto \operatorname{sgn}(a)$; hence</p>
@@ -125,7 +125,7 @@ $$</p>
 <h3 id="the-null-line">The Null Line</h3>
 <p><strong>Definition.</strong> The <strong>null line</strong> (or isotropic line) is $N^{-1}(0) = \mathrm{M}$, the vanishing locus of the norm; the <strong>zero-divisor set</strong> $\mathcal{Z} = \mathrm{M} \setminus \{0\}$ is the null line punctured at the origin.</p>
 <p><strong>Proposition.</strong> The null line is a closed algebraic cone with apex $0$, and it is the radical of the norm. The zero-divisor set $\mathcal{Z}$ is neither open nor closed; its closure is $\mathrm{M}$ and its complement is dense.</p>
-<p><strong>Proof.</strong> $N(tA) = t^2 N(A)$ makes $N^{-1}(0)$ a cone; $N(A+B) = N(A) + 2B(A,B) + N(B)$ with $B(A,B) = a b$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.</p>
+<p><strong>Proof.</strong> $\langle tA\rangle = t^2 \langle A\rangle$ makes $N^{-1}(0)$ a cone; $\langle A+B\rangle = \langle A\rangle + 2B(A,B) + \langle B\rangle$ with $B(A,B) = a b$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.</p>
 <h3 id="the-link-of-the-null-line">The Link of the Null Line</h3>
 <p><strong>Definition.</strong> The <strong>link</strong> of the null line is</p>
 <p>$$
@@ -195,7 +195,7 @@ $$</p>
 <td>Real and infinitesimal parts</td>
 </tr>
 <tr>
-<td>$N(A) = a^2$</td>
+<td>$\langle A\rangle = a^2$</td>
 <td>Norm</td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@ $$</p>
 <td>Euclidean unit sphere $\cong S^1$</td>
 </tr>
 <tr>
-<td>$H = \{N(A) = 1\}$</td>
+<td>$H = \{\langle A\rangle = 1\}$</td>
 <td>Norm-one set, lines $a = \pm 1$, $\simeq S^0$</td>
 </tr>
 <tr>

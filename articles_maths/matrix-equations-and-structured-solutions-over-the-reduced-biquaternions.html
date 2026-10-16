@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Equations and Structured Solutions over the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matrix-equations-and-structured-solutions-over-the-reduced-biquaternions"><strong>Matrix Equations and Structured Solutions over the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The linear matrix equation over the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is</p>
+<p>$$
+\sum_{l=1}^{r}A_lX_lB_l=E,\qquad A_l\in\mathbb{B}_{\mathrm{r}}^{m\times n_l},\quad B_l\in\mathbb{B}_{\mathrm{r}}^{s_l\times t},\quad E\in\mathbb{B}_{\mathrm{r}}^{m\times t},
+$$</p>
+<p>and the version of it read in the source of this article constrains the unknowns. Each unknown is required to lie in a prescribed set $L_l(n_l,s_l)$ of matrices cut by a set of real-linear conditions on its entries; the source calls such a set an <strong>L-structure</strong>, the name Magnus gave to a finite matrix pattern defined by a linear condition on the vec. The four instances the source develops are the Toeplitz, the symmetric Toeplitz, the Hankel and the circulant matrices over the algebra. The problem is to find the solution of least squares size whose unknowns obey the constraints, of least norm among those, and when the equation is consistent, the constrained solution of least norm.</p>
+<p>The algebra is commutative, and this is what makes the constrained problem linear. The classical vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holds over $\mathbb{B}_{\mathrm{r}}$ unchanged, because the coefficients of the algebra commute, so a linear condition on the entries of an unknown is carried into the coefficient matrix by the Kronecker product: writing the structure as the linear map $\mathrm{vec}(X_l)=\mathsf E_{L_l}\xi_l$ from the list of independent entries to the vec, the equation becomes one linear system over the algebra, $\mathsf C\xi=\mathrm{vec}(E)$. The sibling article <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em> solves every such system: by the idempotent decomposition it is a pair of complex systems with independent complex unknowns, the norm $\langle\cdot\rangle_{\natural*}$ is half the sum of the two squared complex Frobenius norms, and the least-norm least squares solution is the pair of the two complex Moore–Penrose solutions. This article takes that solution as the answer to the structured problem; its own content is the structure, what an L-structure is, how it is encoded, and which structures the four classical patterns produce, together with the two inverse problems the structure serves.</p>
+<p><strong>The results.</strong> An <strong>L-structure</strong> is the set of matrices whose coefficient stack lies in a prescribed real subspace, and a <strong>basis matrix</strong> $M_L$ of the subspace reads the structure as one linear map on the real reading. The four classical L-structures are <strong>of entry type</strong>: each is the $\mathbb{B}_{\mathrm{r}}$-span of a finite family of real zero-one matrices with pairwise disjoint supports, so the structure condition is $\mathrm{vec}(X)=\mathsf E_L\xi_L$ with $\mathsf E_L$ the real matrix whose columns are the vecs of the family, of full column rank. The structured equation becomes the single algebra-valued system $\mathsf C\xi=\mathrm{vec}(E)$, and by the sibling article's reduction the least-norm structured least squares solution is the pair of the two complex Moore–Penrose solutions. The applications are the structured matrix equation $AXB+CYD=E$ with both unknowns structured, and the two inverse problems, the <strong>partial inverse eigenvalue problem</strong> $M\Phi=\Phi\Lambda$, a structured matrix carrying a prescribed part of its spectrum, and its generalized companion $M\Phi=N\Phi\Lambda$, in which both factors are structured and the spectrum is that of the matrix pencil.</p>
+<p><strong>Boundaries.</strong> The idempotent reduction, the form $\langle\cdot,\cdot\rangle_{\natural*}$ as the metric, the adjoint and the Moore–Penrose inverse, the coefficient stack and the real representation are <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>, which owns them; this article cites them rather than restating them. The algebra, the idempotents and the coordinates are <em>Reduced Biquaternion Space</em> and <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>; the algebraic norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the array representation $M_{m\times n}(\mathbb{B}_{\mathrm{r}})\cong M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C})$ and the repeated-block form are <em>Reduced Biquaternion Other Algebraic Element Representations</em>. The Kronecker calculus and the vec identity over a commutative ring are <em>The Hermitian Sylvester Equation</em>, where the Sylvester equation is inverted by it. The inverse eigenvalue problem, its partial form and its least squares treatment are the classical problem of Chu and Golub, and the spectrum of a matrix over the algebra is <em>Reduced Biquaternion Spectral Theory</em>. The Toeplitz <strong>algebra</strong> of operators of <em>Toeplitz Algebras</em> is a different object from the Toeplitz L-structure of finite matrices here, and the two are not identified.</p>
+<p><strong>Conventions.</strong> The element is $T=A+Bj$ with $A=a+ia'$ and $B=b+ib'$, the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, and the idempotent coordinates are $q_1=A+B$ and $q_2=A-B$; the involutions are the bar, the natural sign, the star and the flat of <em>Conventions in Mathematics</em>, and the $K$-adjoint is the bar-transpose. A matrix over $\mathbb{B}_{\mathrm{r}}$ is written $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$ with the four <strong>coefficient matrices</strong> real, and the <strong>coefficient stack</strong> is $C_{M}\in\mathbb{R}^{4m\times n}$ of the sibling article, the four coefficient matrices one above the other; its vec is the real reading of the vec of $M$. The <strong>idempotent components</strong> are the pair $(M^{+},M^{-})$ of complex matrices of the sibling article. The form is $\langle\cdot,\cdot\rangle_{\natural*}$, read entrywise as $K_{\mathrm F}$ with $\lVert M\rVert_{\mathrm F}^{2}=K_{\mathrm F}(M)$; the transpose is written $^{\mathsf T}$, the $K$-adjoint $M^{\dagger}$ and the Moore–Penrose inverse $M_{\mathrm{MP}}$, as in the sibling article. The <strong>L-structure</strong> is always named with its letter, to keep the finite matrix pattern distinct from the real and the complex structures of the algebra. The source writes $\Psi_M$ for the row form and $h(M)$ for the block form of the array representation, $\overrightarrow{\mathrm{vec}}(M)$ for the real reading of the vec, $M_L$ for the basis matrix of an L-structure and $K_T,K_{ST},K_H,K_C$ for the four pattern matrices; the pattern matrices are written $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ here, because $\langle\cdot,\cdot\rangle_{\natural*}$ is the positive definite form of the corpus.</p>
+<h2 id="the-l-structure">The L-Structure</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>An L-structure is a real-linear condition on the entries of a matrix over the algebra, read on the coefficient stack.</strong></p>
+<p><strong>Definition (the reduced biquaternion L-structure).</strong> Let $\Omega$ be a real subspace of $\mathbb{R}^{4ns}$. The <strong>L-structure</strong> cut by $\Omega$ is</p>
+<p>$$
+L(n,s)=\bigl\{X\in\mathbb{B}_{\mathrm{r}}^{n\times s}:\ \mathrm{vec}(C_X)\in\Omega\bigr\},
+$$</p>
+<p>where $C_X$ is the coefficient stack of $X$. A <strong>basis matrix</strong> of the L-structure is a real matrix $M_L$ whose columns are a basis of $\Omega$, so that the structure condition reads</p>
+<p>$$
+\mathrm{vec}(C_X)=M_L\,u_L,\qquad u_L\in\mathbb{R}^{D},\quad D=\dim_{\mathbb{R}}\Omega .
+$$</p>
+<p>The number $D$ is the <strong>real dimension</strong> of the structure and $u_L$ its real coordinate vector.</p>
+<p><strong>Proposition (the structure is a real subspace).</strong> $L(n,s)$ is a real subspace of $\mathbb{B}_{\mathrm{r}}^{n\times s}$ of real dimension $D$.</p>
+<p><em>Proof.</em> The map $X\mapsto\mathrm{vec}(C_X)$ is a real isomorphism from $\mathbb{B}_{\mathrm{r}}^{n\times s}$ onto $\mathbb{R}^{4ns}$, and the preimage of a subspace is a subspace of the same dimension.</p>
+<p>The definition is the source's, with the vec of the matrix read as the vec of its coefficient stack; the two readings differ by a fixed real permutation of the coordinates.</p>
+<h3 id="the-four-classical-l-structures">The Four Classical L-Structures</h3>
+<p><strong>The four L-structures of the source are cut by equalities among the entries, and each is the span of a finite family of real zero-one matrices with coefficients in the algebra.</strong></p>
+<p>For an index $d\in\{-n+1,\dots,n-1\}$ let $J_d$ be the real $n\times n$ matrix of the $d$-th diagonal, $(J_d)_{pq}=1$ if $q-p=d$ and $0$ otherwise; for $m\in\{0,\dots,2n-2\}$ let $R_m$ be the real matrix of the $m$-th reverse diagonal, $(R_m)_{pq}=1$ if $p+q=m$; and for $k\in\{0,\dots,n-1\}$ let $Z_k$ be the cyclic matrix, $(Z_k)_{pq}=1$ if $q-p\equiv k\ (\mathrm{mod}\ n)$. The four structures and their generating families are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>the pattern</th>
+<th>the generating family</th>
+<th>the width $d$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toeplitz</td>
+<td>$X_{pq}$ depends on $q-p$</td>
+<td>$J_{-n+1},\dots,J_{n-1}$</td>
+<td>$2n-1$</td>
+</tr>
+<tr>
+<td>symmetric Toeplitz</td>
+<td>$X_{pq}=X_{qp}$ and Toeplitz</td>
+<td>$J_0$ and $J_k+J_{-k}$, $k=1,\dots,n-1$</td>
+<td>$n$</td>
+</tr>
+<tr>
+<td>Hankel</td>
+<td>$X_{pq}$ depends on $p+q$</td>
+<td>$R_0,\dots,R_{2n-2}$</td>
+<td>$2n-1$</td>
+</tr>
+<tr>
+<td>circulant</td>
+<td>$X_{pq}$ depends on $q-p$ modulo $n$</td>
+<td>$Z_0,\dots,Z_{n-1}$</td>
+<td>$n$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The diagonal structure, with the family of matrix units $E_{pp}$, the triangular structures, with the units above or below the diagonal, and every sequence of equalities among the entries are of the same kind: a finite family of real zero-one matrices. The four families of the table are independent over $\mathbb{R}$, the matrices of each family having pairwise disjoint supports.</p>
+<h3 id="the-structures-of-entry-type">The Structures of Entry Type</h3>
+<p><strong>A structure is of entry type when it is spanned by real zero-one matrices, and then it is a module over the algebra and its condition commutes with the idempotent decomposition.</strong></p>
+<p><strong>Definition.</strong> An L-structure $L(n,s)$ is <strong>of entry type</strong> when it is the $\mathbb{B}_{\mathrm{r}}$-span of a finite family $S_1,\dots,S_d$ of real zero-one matrices of shape $n\times s$,</p>
+<p>$$
+X=\sum_{\lambda=1}^{d}T_\lambda S_\lambda,\qquad T_\lambda\in\mathbb{B}_{\mathrm{r}} .
+$$</p>
+<p>The number $d$ is the <strong>width</strong> of the structure, so that the real dimension is $D=4d$.</p>
+<p><strong>Proposition (the encoding matrix).</strong> For a structure of entry type, the structure condition is</p>
+<p>$$
+\mathrm{vec}(X)=\mathsf E_L\,\xi_L,\qquad \mathsf E_L=\bigl[\mathrm{vec}(S_1),\dots,\mathrm{vec}(S_d)\bigr]\in\mathbb{R}^{ns\times d},\qquad \xi_L=\bigl(T_1,\dots,T_d\bigr)^{\mathsf T}\in\mathbb{B}_{\mathrm{r}}^{d},
+$$</p>
+<p>and on the coefficient stack it is $\mathrm{vec}(C_X)=(I_4\otimes\mathsf E_L)\xi_L^{\mathbb{R}}$, where $\xi_L^{\mathbb{R}}$ is the stack of the four real readings of the $T_\lambda$, so that the basis matrix is $M_L=I_4\otimes\mathsf E_L$ and the real coordinate vector is $u_L=\xi_L^{\mathbb{R}}$; the matrix $\mathsf E_L$ has full column rank when the supports of the $S_\lambda$ are distinct, in particular for the four families of the table.</p>
+<p><em>Proof.</em> The vec of the sum is the sum of the vecs, and $\mathrm{vec}(T_\lambda S_\lambda)=T_\lambda\mathrm{vec}(S_\lambda)$ because $S_\lambda$ has real entries; collecting the coefficients of the $T_\lambda$ gives the display. The coefficient-stack reading repeats the same pattern in each of the four blocks, the four coefficient matrices of $X$ being the four coefficients of each $T_\lambda$ in the same real span. The columns of $\mathsf E_L$ are the vecs of matrices with pairwise disjoint supports, distinct coordinate vectors, and distinct coordinate vectors are independent.</p>
+<p><strong>Proposition (the widths).</strong> The four encodings of the table have the shapes $\mathsf E_T,\mathsf E_H\in\mathbb{R}^{n^{2}\times(2n-1)}$ and $\mathsf E_{ST},\mathsf E_C\in\mathbb{R}^{n^{2}\times n}$, each of full column rank, and the four structures have real dimensions $4(2n-1)$, $4n$, $4(2n-1)$ and $4n$.</p>
+<p><em>Proof.</em> The width is the number of matrices in the generating family, and the real dimension is four times the width by the definition; the ranks are the proposition above.</p>
+<p><strong>Remark (the general L-structure mixes the coefficients).</strong> A general real subspace $\Omega$ need not be spanned by the vecs of real matrices, and the corresponding L-structure then need not be a module over the algebra: the condition may couple the four coefficient matrices of $X$ to one another, and through them the two idempotent components. For a structure of entry type the four coefficient matrices are constrained to the same real pattern, each with its own independent coefficients, so the condition is $\mathbb{B}_{\mathrm{r}}$-linear and commutes with the idempotent decomposition. The four classical structures and the structures of the applications are of entry type, and the source states its results for the general L-structure, its reduction reaching the real system in either case.</p>
+<h2 id="the-structured-equation">The Structured Equation</h2>
+<h3 id="the-algebra-valued-system">The Algebra-Valued System</h3>
+<p><strong>The structure enters the vec identity through the encoding matrix, and the equation in several structured unknowns becomes one linear system over the algebra.</strong></p>
+<p><strong>Theorem (the structured system).</strong> Let $A_l\in\mathbb{B}_{\mathrm{r}}^{m\times n_l}$ and $B_l\in\mathbb{B}_{\mathrm{r}}^{s_l\times t}$ for $l=1,\dots,r$, let $E\in\mathbb{B}_{\mathrm{r}}^{m\times t}$, and let each unknown lie in a structure $L_l(n_l,s_l)$ of entry type with encoding matrix $\mathsf E_{L_l}$ and coordinates $\xi_{L_l}$. Then the equation $\sum_lA_lX_lB_l=E$ is equivalent to the algebra-valued linear system</p>
+<p>$$
+\mathsf C\,\xi=\mathrm{vec}(E),\qquad \mathsf C=\bigl[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots,(B_r^{\mathsf T}\otimes A_r)\mathsf E_{L_r}\bigr],\qquad \xi=\bigl(\xi_{L_1},\dots,\xi_{L_r}\bigr)^{\mathsf T},
+$$</p>
+<p>of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{r}}$, and the coefficient matrix $\mathsf C$ does not depend on the unknown.</p>
+<p><em>Proof.</em> The vec identity applied to each term gives $\mathrm{vec}(A_lX_lB_l)=(B_l^{\mathsf T}\otimes A_l)\mathrm{vec}(X_l)=(B_l^{\mathsf T}\otimes A_l)\mathsf E_{L_l}\xi_{L_l}$, and the sum of the vecs is the vec of the sum.</p>
+<p><strong>Remark (the identity is the classical one).</strong> The identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ is the classical one over a commutative ring, and the algebra, being commutative, carries it with the entries of the Kronecker product read in the algebra; this is the reason no commutation term appears and the reason the structure is a linear condition after the reduction. The source states the same identity on the row form $\Psi_M$ and the block form $h(M)$ of the array representation, where the Kronecker product is written blockwise over the two complex summands; the two forms are the sibling article's array representation, and the source's version is this identity read there.</p>
+<h3 id="the-least-norm-structured-least-squares-solution">The Least-Norm Structured Least Squares Solution</h3>
+<p><strong>The system is a linear system over the algebra, and the sibling article's reduction solves it: the structured least squares solution is the pair of the two complex Moore–Penrose solutions.</strong></p>
+<p><strong>Theorem (the structured solution).</strong> The squared norm of the residual of the structured equation is half the sum of the two squared complex norms of the two components,</p>
+<p>$$
+K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\xi^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\xi^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr),
+$$</p>
+<p>and the least-norm least squares structured solution is</p>
+<p>$$
+\xi^{\pm}=\bigl(\mathsf C^{\pm}\bigr)_{\mathrm{MP}}\mathrm{vec}(E)^{\pm},\qquad X_l=\sum_{\lambda=1}^{d_l}\bigl(\xi_{L_l}\bigr)_{\lambda}S_\lambda,
+$$</p>
+<p>the Moore–Penrose inverses being taken in the complex field; the minimum is half the sum of the two independent complex minima, attained separately.</p>
+<p><em>Proof.</em> The structured system is a linear system $\mathsf C\xi=\mathrm{vec}(E)$ over $\mathbb{B}_{\mathrm{r}}$ with the unknown $\xi$ ranging over the algebra, and the objective is the entrywise norm $K_{\mathrm F}$; the sibling article's least squares theorem applies to it verbatim, its hypotheses being only the algebra and the norm. The two components of $\xi$ are independent because $\xi$ ranges over the whole algebra, and the encoding matrices have real entries, so the structure is invisible to the idempotent decomposition and the two complex problems are the reductions of the same structured system.</p>
+<p><strong>Corollary (consistency and uniqueness).</strong> The structured equation has an exact solution if and only if $\mathsf C^{\pm}_{\mathrm{MP}}\mathrm{vec}(E)^{\pm}=\mathrm{vec}(E)^{\pm}$ for both signs, and the least squares residual is zero exactly then; the structured solution is unique if and only if both complex matrices $\mathsf C^{+}$ and $\mathsf C^{-}$ have full column rank, equivalently if and only if the coefficient stack of $\mathsf C$ has full real column rank.</p>
+<p><em>Proof.</em> The three statements are the sibling article's existence and uniqueness criteria, read on the structured system; the equivalence of the full-rank conditions is its rank proposition.</p>
+<p><strong>Remark (the real reading and the partition formula).</strong> The source writes the same solution in the real reading, as the stacked system $\begin{pmatrix}Q_1\\Q_2\end{pmatrix}x=e$ of the real and the imaginary parts of the two components, and gives the least-norm solution by the partitioned pseudoinverse of the stacked matrix. This is the sibling article's stack of the two components with the classical partition formula of Cline, and it is the numerical form of the solution above rather than a second reduction.</p>
+<p><strong>Remark (the structured solution as a pair, and the zero divisors).</strong> The two complex systems are the two factors of the algebra, and a structured solution is a pair of complex solutions rather than one complex solution; either member of the pair may vanish while the other does not, and the corresponding structured matrix is then a zero divisor. This is the phenomenon the sibling article records for the unstructured problem: the algebra has no division, and a structure of entry type does not remove the phenomenon, because the constraint is imposed on each component alike and neither component is forced to be nonzero.</p>
+<h2 id="the-applications">The Applications</h2>
+<h3 id="the-structured-matrix-equation">The Structured Matrix Equation</h3>
+<p><strong>The equation $AXB+CYD=E$ with two structured unknowns is the case $r=2$ of the system, and the source works it for the Hankel and the symmetric Toeplitz structures.</strong></p>
+<p>The unknowns $X\in L_1(n,s)$ and $Y\in L_2(n,s)$ obey the equation with the four coefficients $A,C\in\mathbb{B}_{\mathrm{r}}^{m\times n}$ and $B,D\in\mathbb{B}_{\mathrm{r}}^{s\times t}$, and the system is that of the theorem with $r=2$, $\mathsf C=[(B^{\mathsf T}\otimes A)\mathsf E_{L_1},(D^{\mathsf T}\otimes C)\mathsf E_{L_2}]$. The source's two instances take the unknowns <strong>complex</strong> Hankel and <strong>real</strong> symmetric Toeplitz; a complex or a real unknown is the sibling article's nested unknown, and its constraint, that the two idempotent components coincide, and in the real case are real, is imposed in addition to the structure. The two reductions compose, the structure being invisible to the idempotent decomposition and the nesting being invisible to the structure.</p>
+<h3 id="the-partial-inverse-eigenvalue-problem">The Partial Inverse Eigenvalue Problem</h3>
+<p><strong>The partial inverse eigenvalue problem prescribes a part of the spectrum and asks for a structured matrix, and it is the structured equation with $A=I_n$ and the right-hand side $\Phi\Lambda$.</strong></p>
+<p><strong>Problem (the PDIEP).</strong> Given $\Lambda=\mathrm{diag}(\lambda_1,\dots,\lambda_k)$ and $\Phi=[v_1,\dots,v_k]$ with $k\le n$, and a structure $L(n,n)$, find $M\in L(n,n)$ with $M\Phi=\Phi\Lambda$; the columns of $\Phi$ are the prescribed eigenvectors and the entries of $\Lambda$ the prescribed eigenvalues.</p>
+<p><strong>Remark (the problem is the structured equation).</strong> With $A=I_n$, $X=M$, $B=\Phi$ and $E=\Phi\Lambda$ the PDIEP is the structured equation $AXB=E$ for $X\in L(n,n)$, and the theorem above returns the least-norm structured least squares solution when the prescribed part of the spectrum is not attainable exactly, and the exact structured solution when it is. The source works the problem for the symmetric Toeplitz and the Hankel structures; the theorem is blind to which structure of entry type is used.</p>
+<h3 id="the-generalized-partial-inverse-eigenvalue-problem">The Generalized Partial Inverse Eigenvalue Problem</h3>
+<p><strong>The generalized problem prescribes the same partial data for a pencil, and it is the structured equation $AXB+CYD=0$ with $A=I_n$ and $C=-I_n$.</strong></p>
+<p><strong>Problem (the generalized PDIEP).</strong> Given $\Lambda$ and $\Phi$ as above and a structure $L(n,n)$, find $M,N\in L(n,n)$ with $M\Phi=N\Phi\Lambda$, so that the columns of $\Phi$ are the prescribed eigenvectors and the entries of $\Lambda$ the prescribed eigenvalues of the pencil $M-\lambda N$.</p>
+<p><strong>Remark (the problem is the two-unknown structured equation).</strong> With $A=I_n$, $B=\Phi$, $C=-I_n$, $D=\Phi\Lambda$ and $E=0$ the generalized problem is the case $r=2$ of the structured system with both unknowns in the same structure, and the theorem returns the pair of structured matrices of least norm; as in the single problem, the exact pencil is recovered when the data are attainable and the least squares pencil otherwise. When $\Lambda$ carries the full spectrum of a structured matrix and $\Phi$ a full set of its eigenvectors, the data determine the matrix inside the structure, and the framework recovers it; this is the check of the last section.</p>
+<h2 id="verification">Verification</h2>
+<p>The following identities were checked by recomputation on random matrices of at most a few dozen entries, the deviations found at the level of the floating-point noise.</p>
+<ul>
+<li>The vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ over $\mathbb{B}_{\mathrm{r}}$, and the multiplicativity $h(MN)=h(M)h(N)$ of the block form.</li>
+<li>The four encodings $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ reproduce their structures, the condition $\mathrm{vec}(X)=\mathsf E_L\xi_L$ holds, and each has full column rank, in each case for $n=3,4,5$.</li>
+<li>The constrained least squares equivalence: for the four classical structures the stacked real system $\begin{pmatrix}Q_1\\ Q_2\end{pmatrix}x=e$ and the direct constrained problem have the same minimiser.</li>
+<li>The structured solution: the solution of the theorem is minimal among random structured perturbations, and the normal equations $\mathsf C^{\dagger}(\mathsf C\xi-\mathrm{vec}(E))=0$ hold elementwise.</li>
+<li>The partition formula of Cline for the pseudoinverse of the stacked matrix, and the Penrose equations $APA=A$ and $PAP=P$.</li>
+<li>The PDIEP: with the full set of eigenpairs of a symmetric Toeplitz matrix the framework recovers the matrix.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A linear matrix equation over the reduced biquaternions whose unknowns lie in prescribed matrix patterns is an unconstrained least squares problem after two linear reductions. <strong>The L-structure</strong> is the first: a set of matrices whose coefficient stack lies in a real subspace, written with a basis matrix $M_L$ as $\mathrm{vec}(C_X)=M_Lu_L$; the four classical structures, Toeplitz, symmetric Toeplitz, Hankel and circulant, are of <strong>entry type</strong>, each the span of a finite family of real zero-one matrices with disjoint supports and pairwise independent, and the structure condition is $\mathrm{vec}(X)=\mathsf E_L\xi_L$ with $\mathsf E_L$ the matrix whose columns are the vecs of the family, of full column rank. <strong>The vec identity</strong> is the second: the algebra is commutative, so $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holds unchanged, and the equation in several structured unknowns becomes the single algebra-valued system $\mathsf C\xi=\mathrm{vec}(E)$ with $\mathsf C$ assembled from the Kronecker products and the encodings. The sibling article's reduction then applies: the system is a pair of complex systems with independent complex unknowns, the norm $\langle\cdot\rangle_{\natural*}$ is half the sum of the two squared complex Frobenius norms, and the least-norm structured least squares solution is the pair of the two complex Moore–Penrose solutions, of minimum half the sum of the two complex minima. The general L-structure of the source need not be spanned by real matrices, and then the condition may couple the four coefficient matrices; the structures of entry type do not, and the four classical patterns and both applications are of that kind. The applications are the structured equation $AXB+CYD=E$ with both unknowns structured, the partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ and the generalized problem $M\Phi=N\Phi\Lambda$, each an instance of the system with a particular choice of the coefficients and the right-hand side, and each solved by the same theorem. The one phenomenon the commutative algebra adds survives the structure: a structured solution is a pair of complex solutions, and either member may vanish, so the solution may be a zero divisor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L(n,s)$, $X\in L(n,s)$</td>
+<td>An L-structure of reduced biquaternion matrices, and a structured matrix</td>
+</tr>
+<tr>
+<td>$\Omega$, $D$</td>
+<td>The real subspace cutting the structure, and its real dimension</td>
+</tr>
+<tr>
+<td>$M_L$, $u_L$</td>
+<td>The basis matrix of the subspace, and its real coordinate vector, $\mathrm{vec}(C_X)=M_Lu_L$</td>
+</tr>
+<tr>
+<td>$S_1,\dots,S_d$, $d$</td>
+<td>The real zero-one generating family of a structure of entry type, and its width</td>
+</tr>
+<tr>
+<td>$\mathsf E_L$, $\xi_L$</td>
+<td>The encoding matrix of a structure of entry type, and the algebra-valued coordinates, $\mathrm{vec}(X)=\mathsf E_L\xi_L$</td>
+</tr>
+<tr>
+<td>$\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$</td>
+<td>The four classical encodings</td>
+</tr>
+<tr>
+<td>$J_d$, $R_m$, $Z_k$</td>
+<td>The matrices of the $d$-th diagonal, the $m$-th reverse diagonal and the cyclic structure</td>
+</tr>
+<tr>
+<td>$C_M$</td>
+<td>The coefficient stack, the four coefficient matrices one above the other</td>
+</tr>
+<tr>
+<td>$M^{+},M^{-}$</td>
+<td>The idempotent components, $M^{\pm}=M_{0}\pm M_{2}+i(M_{1}\pm M_{3})$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{\natural*}$, $K_{\mathrm F}$</td>
+<td>The positive definite form of the algebra, and its entrywise reading</td>
+</tr>
+<tr>
+<td>$^{\mathsf T}$, $M^{\dagger}$, $M_{\mathrm{MP}}$</td>
+<td>The transpose, the $\langle\cdot,\cdot\rangle_{\natural*}$-adjoint and the Moore–Penrose inverse</td>
+</tr>
+<tr>
+<td>$\otimes$, $\mathrm{vec}$</td>
+<td>The Kronecker product, and the vec column by column</td>
+</tr>
+<tr>
+<td>$\mathsf C$, $\xi$</td>
+<td>The coefficient matrix $[(B_1^{\mathsf T}\otimes A_1)\mathsf E_{L_1},\dots]$, and the structure coordinates</td>
+</tr>
+<tr>
+<td>$\Lambda$, $\Phi$</td>
+<td>The prescribed eigenvalues and eigenvectors of the inverse problems</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sk. Safique Ahmad and Neha Bhadala, "L-structure least squares solutions of reduced biquaternion matrix equations with applications", arXiv:2311.06461 [math.NA] (2023), the source of this article, for the L-structure of reduced biquaternion matrices, the four classical structures and their pattern matrices, the reduction of the equation in several structured unknowns, the partitioned pseudoinverse, the complex and the real matrix equation, the PDIEP and the generalized PDIEP, and the numerical examples.</li>
+<li>J. R. Magnus, "L-structured matrices and linear matrix equations", <em>Linear and Multilinear Algebra</em> <strong>14</strong> (1983) 67–88, for the L-structure as a linear condition on the vec of a matrix and its use in linear matrix equations.</li>
+<li>R. E. Cline, "Representations for the generalized inverse of a partitioned matrix", <em>Journal of the Society for Industrial and Applied Mathematics</em> <strong>12</strong> (1964) 588–600, for the partitioned form of the pseudoinverse of a stacked matrix.</li>
+<li>Gene H. Golub and Charles F. Van Loan, <em>Matrix Computations</em>, 4th edition (Johns Hopkins University Press, 2013), for the Kronecker product, the vec identity, the Moore–Penrose inverse and the singular value decomposition.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em>, 2nd edition (Cambridge University Press, 2013), for the transpose and the partitioned inverses.</li>
+<li>Moody T. Chu and Gene H. Golub, <em>Inverse Eigenvalue Problems: Theory, Algorithms, and Applications</em> (Oxford University Press, 2005), for the inverse eigenvalue problem, its partial form and its least squares treatment.</li>
+<li><em>Least Squares and Total Least Squares over the Reduced Biquaternions</em> (<code>articles_maths/least-squares-and-total-least-squares-over-the-reduced-biquaternions.md</code>), for the idempotent reduction, the form $\langle\cdot,\cdot\rangle_{\natural*}$ as the metric, the adjoint and the Moore–Penrose inverse, the three nested unknowns, the coefficient stack and the real representation, existence and uniqueness, the reduction this article cites rather than restates.</li>
+<li><em>Reduced Biquaternion Other Algebraic Element Representations</em> (<code>articles_maths/reduced-biquaternion-other-algebraic-element-representations.md</code>), for the array representation $M\mapsto(M^{+},M^{-})$, the idempotent components and the repeated-block form.</li>
+<li><em>Reduced Biquaternion Space</em> (<code>articles_maths/reduced-biquaternion-space.md</code>), for the algebra, the idempotents and the coordinates.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the form $\langle\cdot,\cdot\rangle_{\natural*}$, its entrywise form $K_{\mathrm F}$ and the Frobenius norm.</li>
+<li><em>The Hermitian Sylvester Equation</em> (<code>articles_maths/the-hermitian-sylvester-equation.md</code>), for the Kronecker inverse and the vec identity over a commutative ring, the Sylvester equation being the model.</li>
+<li><em>Toeplitz Algebras</em> (<code>articles_maths/toeplitz-algebras.md</code>), for the Toeplitz algebra of operators, which is a different object from the Toeplitz L-structure of finite matrices here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

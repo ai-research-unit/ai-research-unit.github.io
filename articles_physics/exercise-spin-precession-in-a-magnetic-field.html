@@ -59,7 +59,7 @@
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
 <p>$$
-\vec B = B_0\,\hat{z}
+\vec B = B_0\,\vec u_z
 $$</p>
 <p>pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the <strong>expectation value of the spin along the $x$-axis</strong> as a function of time?</p>
 <p>This is the classic <strong>Larmor precession</strong> exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.</p>
@@ -70,7 +70,7 @@ $$</p>
 |+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}.
 $$</p>
 <h3 id="step-2-the-hamiltonian">Step 2: The Hamiltonian</h3>
-<p>The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\hat{z}$ is</p>
+<p>The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\vec u_z$ is</p>
 <p>$$
 H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
 $$</p>
@@ -82,11 +82,11 @@ $$</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
-U(t) = e^{-iHt/\hbar} = e^{\,i\omega_L t\,\sigma_3/2} = \begin{pmatrix} e^{\,i\omega_L t/2} & 0 \\ 0 & e^{-i\omega_L t/2} \end{pmatrix}.
+U(t) = \exp(-iHt/\hbar) = \exp(\,i\omega_L t\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L t/2) & 0 \\ 0 & \exp(-i\omega_L t/2) \end{pmatrix}.
 $$</p>
 <p>The evolved state is</p>
 <p>$$
-|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} e^{\,i\omega_L t/2} \\ e^{-i\omega_L t/2} \end{pmatrix}.
+|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t/2) \\ \exp(-i\omega_L t/2) \end{pmatrix}.
 $$</p>
 <h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
 <p>The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\psi(t)\rangle$ is</p>
@@ -95,7 +95,7 @@ $$</p>
 $$</p>
 <p>Computing the matrix element,</p>
 <p>$$
-\langle\psi(t)|\sigma_1|\psi(t)\rangle = \frac{1}{2}\left(e^{-i\omega_L t/2} \cdot e^{-i\omega_L t/2} + e^{\,i\omega_L t/2} \cdot e^{\,i\omega_L t/2}\right) = \frac{1}{2}\left(e^{-i\omega_L t} + e^{\,i\omega_L t}\right) = \cos(\omega_L t).
+\langle\psi(t)|\sigma_1|\psi(t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L t/2) \cdot \exp(-i\omega_L t/2) + \exp(\,i\omega_L t/2) \cdot \exp(\,i\omega_L t/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L t) + \exp(\,i\omega_L t)\right) = \cos(\omega_L t).
 $$</p>
 <p>Therefore</p>
 <p>$$
@@ -105,9 +105,9 @@ $$</p>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
 <p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
 <p>$$
-P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+P(\vec u_m) = \tfrac{1}{2}\left(e_0 + i\vec u_m\right),
 $$</p>
-<p>where $\hat{m}$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\hat{m} = e_1$, giving</p>
+<p>where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = e_1$, giving</p>
 <p>$$
 P_x = \tfrac{1}{2}\left(e_0 + i e_1\right).
 $$</p>
@@ -167,7 +167,7 @@ $$</p>
 \langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
 $$</p>
 <p>the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.</p>
-<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = e^{-iHt/\hbar}$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
+<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = \exp(-iHt/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -273,7 +273,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>

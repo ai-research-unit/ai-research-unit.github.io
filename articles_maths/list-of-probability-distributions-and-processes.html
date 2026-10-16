@@ -65,7 +65,7 @@
 <tbody>
 <tr>
 <td>the Bernoulli distribution $\mathrm{Bern}(p)$</td>
-<td>$p\delta_1+(1-p)\delta_0$ on $\{0,1\}$; mean $p$, variance $p(1-p)$; $\varphi(t)=1-p+pe^{it}$</td>
+<td>$p\delta_1+(1-p)\delta_0$ on $\{0,1\}$; mean $p$, variance $p(1-p)$; $\varphi(t)=1-p+p\exp(it)$</td>
 <td><em>Measure-Theoretic Probability</em></td>
 </tr>
 <tr>
@@ -75,7 +75,7 @@
 </tr>
 <tr>
 <td>the Poisson distribution $\mathrm{Pois}(\lambda)$</td>
-<td>$e^{-\lambda}\sum_k\lambda^k\delta_k/k!$ on $\mathbb Z_{\geq0}$; mean and variance $\lambda$; $\varphi(t)=e^{\lambda(e^{it}-1)}$</td>
+<td>$\exp(-\lambda)\sum_k\lambda^k\delta_k/k!$ on $\mathbb Z_{\geq0}$; mean and variance $\lambda$; $\varphi(t)=\exp(\lambda(\exp(it)-1))$</td>
 <td><em>Measure-Theoretic Probability</em></td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@
 </tr>
 <tr>
 <td>the normal distribution $N(\mu,\sigma^2)$</td>
-<td>density $(2\pi\sigma^2)^{-1/2}e^{-(x-\mu)^2/(2\sigma^2)}$; mean $\mu$, variance $\sigma^2$; $\varphi(t)=e^{i\mu t-\sigma^2t^2/2}$</td>
+<td>density $(2\pi\sigma^2)^{-1/2}\exp(-(x-\mu)^2/(2\sigma^2))$; mean $\mu$, variance $\sigma^2$; $\varphi(t)=\exp(i\mu t-\sigma^2t^2/2)$</td>
 <td><em>Measure-Theoretic Probability</em>; <em>Laws of Large Numbers and the Central Limit Theorem</em></td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td>the Cauchy distribution</td>
-<td>density $1/(\pi(1+x^2))$; no mean and no variance; $\varphi(t)=e^{-\lvert t\rvert}$</td>
+<td>density $1/(\pi(1+x^2))$; no mean and no variance; $\varphi(t)=\exp(-\lvert t\rvert)$</td>
 <td><em>Measure-Theoretic Probability</em>; <em>Laws of Large Numbers and the Central Limit Theorem</em></td>
 </tr>
 <tr>
@@ -132,7 +132,7 @@
 </tr>
 <tr>
 <td>the Gaussian measure on a Banach space</td>
-<td>the cylinder measure of a Gaussian process; its characteristic function is $e^{-\lVert x\rVert^2/2}$</td>
+<td>the cylinder measure of a Gaussian process; its characteristic function is $\exp(-\lVert x\rVert^2/2)$</td>
 <td><em>Stochastic Partial Differential Equations</em></td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@
 <td><em>Measure-Theoretic Probability</em></td>
 </tr>
 <tr>
-<td>the characteristic function $\varphi_X(t)=\mathbb E[e^{itX}]$</td>
+<td>the characteristic function $\varphi_X(t)=\mathbb E[\exp(itX)]$</td>
 <td>the Fourier transform of the law; it determines the law and inverts it</td>
 <td><em>Measure-Theoretic Probability</em>; <em>Laws of Large Numbers and the Central Limit Theorem</em></td>
 </tr>

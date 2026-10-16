@@ -170,19 +170,19 @@ $$
 using $\chi(x_i-x_j)=\chi(x_i)\overline{\chi(x_j)}$. Every positive definite function of a finite abelian
 group is of this form, with $\mu$ a finite measure on the finite set of characters; this is the finite
 instance of Bochner's theorem.</p>
-<p><strong>Example (the Gaussian and the characteristic functions).</strong> On $\mathbb R$ the functions $e^{-\pi tx^2}$
-for $t>0$ are positive definite, with the measure $\mu$ of density $\sqrt t\,e^{-\pi t\xi^2}$ in Bochner's
+<p><strong>Example (the Gaussian and the characteristic functions).</strong> On $\mathbb R$ the functions $\exp(-\pi tx^2)$
+for $t>0$ are positive definite, with the measure $\mu$ of density $\sqrt t\,\exp(-\pi t\xi^2)$ in Bochner's
 theorem below; more generally the characteristic function of any probability measure,
-$\varphi(x)=\int e^{2\pi ix\xi}d\mu(\xi)$ with $\mu\geq0$ and $\mu(\mathbb R)=1$, is positive definite. A
+$\varphi(x)=\int \exp(2\pi ix\xi)d\mu(\xi)$ with $\mu\geq0$ and $\mu(\mathbb R)=1$, is positive definite. A
 function that is not Hermitian is not positive definite: the real cosine
-$\cos(2\pi\xi_0x)=\frac12(e^{2\pi i\xi_0x}+e^{-2\pi i\xi_0x})$ is positive definite, with
-$\mu=\frac12(\delta_{\xi_0}+\delta_{-\xi_0})$, while $\varphi(x)=e^{2\pi i\xi_0x}$ is Hermitian and positive
+$\cos(2\pi\xi_0x)=\frac12(\exp(2\pi i\xi_0x)+\exp(-2\pi i\xi_0x))$ is positive definite, with
+$\mu=\frac12(\delta_{\xi_0}+\delta_{-\xi_0})$, while $\varphi(x)=\exp(2\pi i\xi_0x)$ is Hermitian and positive
 definite because it is a character, and a function such as $\mathrm i\sin(2\pi\xi_0x)$ fails the Hermitian
 condition.</p>
 <p><strong>Example (the point mass).</strong> On a discrete group the function $\varphi=\mathbf 1_{\{0\}}$, equal to $1$ at
 the identity and $0$ elsewhere, is positive definite, with the measure $\mu$ the normalised Haar measure of
 the compact character group; on $\mathbb Z$ this is the constant measure $d\mu=d\theta$ on the circle, and
-$\varphi(n)=\int_0^1e^{2\pi in\theta}d\theta=\delta_{n0}$. This is the positive definite function of the
+$\varphi(n)=\int_0^1\exp(2\pi in\theta)d\theta=\delta_{n0}$. This is the positive definite function of the
 regular representation, and its kernel is the identity kernel $K(x,y)=\mathbf 1_{\{x=y\}}$.</p>
 <h2 id="bochners-theorem">Bochner's Theorem</h2>
 <h3 id="statement">Statement</h3>
@@ -190,15 +190,15 @@ regular representation, and its kernel is the identity kernel $K(x,y)=\mathbf 1_
 definite if and only if there is a unique finite positive measure $\mu$ on $\mathbb R^n$, with
 $\mu(\mathbb R^n)=\varphi(0)$, such that
 $$
-\varphi(x)=\int_{\mathbb R^n}e^{2\pi ix\cdot\xi}\,d\mu(\xi)\qquad\text{for all }x\in\mathbb R^n .
+\varphi(x)=\int_{\mathbb R^n}\exp(2\pi ix\cdot\xi)\,d\mu(\xi)\qquad\text{for all }x\in\mathbb R^n .
 $$
 The measure $\mu$ is a probability measure exactly when $\varphi(0)=1$, and it is the
 <strong>Fourier–Stieltjes transform</strong> (or spectral measure) of $\varphi$; the transform is written with the
-positive exponent $e^{+2\pi ix\cdot\xi}$, so that it is the conjugate of the transform at $x$.</p>
+positive exponent $\exp(+2\pi ix\cdot\xi)$, so that it is the conjugate of the transform at $x$.</p>
 <h3 id="proof-sketch">Proof Sketch</h3>
 <p><strong>Proof sketch.</strong> The easy direction is the computation of the example above: if
-$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$ with $\mu\geq0$, then
-$\sum\bar c_ic_j\varphi(x_i-x_j)=\int\lvert\sum_ic_ie^{2\pi ix_i\cdot\xi}\rvert^2d\mu(\xi)\geq0$, and the
+$\varphi(x)=\int \exp(2\pi ix\cdot\xi)d\mu(\xi)$ with $\mu\geq0$, then
+$\sum\bar c_ic_j\varphi(x_i-x_j)=\int\lvert\sum_ic_i\exp(2\pi ix_i\cdot\xi)\rvert^2d\mu(\xi)\geq0$, and the
 continuity is dominated convergence. For the converse, let $\varphi$ be continuous and positive definite,
 with $\varphi(0)\geq0$, and consider the linear functional defined on the compactly supported continuous
 functions by
@@ -210,10 +210,10 @@ of $C_c(\mathbb R^n)$, by density, and a standard polarisation recovers $L$ from
 $L(\psi*\psi^{*})$. Since $\varphi$ is continuous and dominated by $\varphi(0)$, the functional $L$ is
 bounded by $\varphi(0)\lVert\psi\rVert_1^2$ and extends to a finite positive measure by the Riesz
 representation theorem of <em>Measure Theory and Integration</em> (the duality of $C_c$ and positive functionals).
-The Fourier transform of this measure is then computed from $L$ by inserting $e^{2\pi ix\cdot\cdot}$, which
+The Fourier transform of this measure is then computed from $L$ by inserting $\exp(2\pi ix\cdot\cdot)$, which
 shows
 $$
-\varphi(x)=\int e^{2\pi ix\cdot\xi}\,d\mu(\xi) ;
+\varphi(x)=\int \exp(2\pi ix\cdot\xi)\,d\mu(\xi) ;
 $$
 the uniqueness of $\mu$ is the injectivity of the Fourier–Stieltjes transform on finite measures, from the
 multiplication formula. The details of the duality argument belong to <em>Measure Theory and Integration</em> and
@@ -233,7 +233,7 @@ product of two positive definite functions is positive definite, with the measur
 spectral measures; the conjugate $\bar\varphi$ and the reflection $x\mapsto\varphi(-x)$ are positive
 definite, with the reflected measure.</p>
 <p><strong>Proof.</strong> The mass statement is the value at $0$; the bound is above; the product is
-$\varphi\psi(x)=\iint e^{2\pi ix\cdot(\xi+\eta)}d\mu(\xi)d\nu(\eta)$, which is the transform of the
+$\varphi\psi(x)=\iint \exp(2\pi ix\cdot(\xi+\eta))d\mu(\xi)d\nu(\eta)$, which is the transform of the
 push-forward of $\mu\otimes\nu$ under addition, a positive measure; the conjugation and reflection are the
 adjoint and the inverse of the transform on measures.</p>
 <p><strong>Corollary (Bochner on a group, forward reference).</strong> The same equivalence holds on a locally compact
@@ -282,7 +282,7 @@ $\lvert K(x,y)\rvert^2\leq K(x,x)K(y,y)$. A function $\varphi$ on a group is pos
 translation-invariant kernel $K(x,y)=\varphi(x-y)$ is, and then $\varphi(0)\geq0$,
 $\varphi(-x)=\overline{\varphi(x)}$ and $\lvert\varphi(x)\rvert\leq\varphi(0)$. Bochner's theorem states
 that a continuous positive definite function on $\mathbb R^n$ is exactly the Fourier–Stieltjes transform
-$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$ of a unique finite positive measure of total mass
+$\varphi(x)=\int \exp(2\pi ix\cdot\xi)d\mu(\xi)$ of a unique finite positive measure of total mass
 $\varphi(0)$, and the general locally compact abelian case, together with the Gelfand–Raikov theorem, is
 that of <em>Harmonic Analysis on Groups</em> and of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>.
 Every positive definite kernel is the Gram kernel of a family of vectors in a Hilbert space, the Kolmogorov

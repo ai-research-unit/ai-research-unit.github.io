@@ -147,26 +147,26 @@ $$</p>
 <p>$$
 \psi_\mu(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
 \sum_{r=1}^{4}\left[
-a_r(\vec p)\,u_{\mu,r}(p)\,e^{-ip\cdot x}
-+ b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,e^{+ip\cdot x}
+a_r(\vec p)\,\xi_{\mu,r}(p)\,\exp(-ip\cdot x)
++ b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+ip\cdot x)
 \right] ,
 $$</p>
 <p>with $E_p=\sqrt{\vec p^2+m^2}$, and with the Rarita–Schwinger polarization spinors satisfying</p>
 <p>$$
-\left(\not p-m\right)u_{\mu,r}=0 ,
+\left(\not p-m\right)\xi_{\mu,r}=0 ,
 \qquad
-\gamma^\mu u_{\mu,r}=0 ,
+\gamma^\mu \xi_{\mu,r}=0 ,
 \qquad
-p^\mu u_{\mu,r}=0 ,
+p^\mu \xi_{\mu,r}=0 ,
 \qquad
-\sum_{r=1}^{4}u_{\mu,r}\bar{u}_{\nu,r}
+\sum_{r=1}^{4}\xi_{\mu,r}\bar\xi_{\nu,r}
 = -\left(\not p+m\right)\Pi_{\mu\nu} ,
 $$</p>
 <p>the last being the completeness relation of the four polarizations. The object $\Pi_{\mu\nu}$ is the <strong>transverse</strong> $\gamma$-traceless projector, the on-shell projector onto the intersection of the two constraints, $\{\gamma^\mu\psi_\mu=0,\ p^\mu\psi_\mu=0\}$, of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and $p^\mu P_{\mu\nu}\neq0$, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra</p>
 <p>$$
-\{a_r(\vec p),\,a_s^\dagger(\vec q)\}
-= \{b_r(\vec p),\,b_s^\dagger(\vec q)\}
-= (2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec q) ,
+\{a_r(\vec p),\,a_s^\dagger(\vec k)\}
+= \{b_r(\vec p),\,b_s^\dagger(\vec k)\}
+= (2\pi)^3\,\delta_{rs}\,\delta^{(3)}(\vec p-\vec k) ,
 $$</p>
 <p>with all other anticommutators vanishing, and the Fock space is built by acting on the vacuum with $a_r^\dagger$ and $b_r^\dagger$. The four polarizations $r=1,\dots,4$ are the two helicities $\pm\tfrac32$ and the two helicities $\pm\tfrac12$.</p>
 <p>The biquaternion interpretation of the mode expansion is the same as the Dirac article's, one vector index richer: each polarization spinor is an element of the left ideal, labelled by the internal direction $r$ that the adjoint action supplies; the four internal labels are the four vectors of the spin-$\tfrac32$ representation, that is, the (traceless) product of the spin-$\tfrac12$ label with the material triplet.</p>
@@ -304,11 +304,11 @@ $$</p>
 <td>Canonical momentum and Dirac bracket (second-class constraints, $m\neq0$)</td>
 </tr>
 <tr>
-<td>$\{a_r(\vec p),a_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$</td>
+<td>$\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$</td>
 <td>Fermionic mode algebra</td>
 </tr>
 <tr>
-<td>$u_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$</td>
+<td>$\xi_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$</td>
 <td>Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$</td>
 </tr>
 <tr>
@@ -316,7 +316,7 @@ $$</p>
 <td>Transverse $\gamma$-traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions</td>
 </tr>
 <tr>
-<td>$\sum_r u_{\mu,r}\bar{u}_{\nu,r}=-(\not p+m)\Pi_{\mu\nu}$</td>
+<td>$\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=-(\not p+m)\Pi_{\mu\nu}$</td>
 <td>Completeness relation, carried by the transverse projector</td>
 </tr>
 <tr>

@@ -57,8 +57,8 @@
 <p>$$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 $$</p>
-<p>was shown to have a biquaternion norm $N(\tilde{F}) = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. A null field strength is a <strong>zero divisor</strong> of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.</p>
-<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $q$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
+<p>was shown to have a biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. A null field strength is a <strong>zero divisor</strong> of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.</p>
+<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $ϙ$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
 <p>The article is organized as follows. The first section recalls the retarded solution of the Maxwell article and specializes it to a point charge. The second introduces the retarded null biquaternion and writes the Liénard–Wiechert potentials in biquaternion form, and adds the source's spinor square root and invariant retarded distance. The third computes the field and splits it into a velocity part and an acceleration part. The fourth identifies the acceleration part as the radiation field, and the fifth and sixth extract the radiated power and the angular distribution. A short section treats the radiation-reaction problem, and a closing section records how the two downstream exercises are applications of the construction.</p>
 <p>Two later exercises use this article as their declared foundation: <em>Exercise: The Electromagnetic Field of a Moving Charge</em> and <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>. The construction below is worked out explicitly enough that both are applications of it, R4 being the case of vanishing acceleration and E1 the general case.</p>
 <h2 id="the-retarded-solution-for-a-point-source">The Retarded Solution for a Point Source</h2>
@@ -74,32 +74,32 @@ $$</p>
 <p>$$
 \tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^4Y .
 $$</p>
-<p>We do not re-derive this structure; we only specialize it. For a point charge $q$ on a worldline $\vec r_q(t)$, the source is</p>
+<p>We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(t)$, the source is</p>
 <p>$$
-\rho(\vec y, s) = q\,\delta^3\!\left(\vec y - \vec r_q(s)\right), \qquad
-\vec J(\vec y, s) = q\,\vec v(s)\,\delta^3\!\left(\vec y - \vec r_q(s)\right),
+\rho(\vec y, s) = ϙ\,\delta^3\!\left(\vec y - \vec r_q(s)\right), \qquad
+\vec J(\vec y, s) = ϙ\,\vec v(s)\,\delta^3\!\left(\vec y - \vec r_q(s)\right),
 $$</p>
 <p>and therefore</p>
 <p>$$
-\tilde{R}'(\tilde{Y}) = q\left(ic\,e_0 + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
+\tilde{R}'(\tilde{Y}) = ϙ\left(ic\,e_0 + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$</p>
 <p>Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the <strong>retarded time</strong> $t_r$ defined implicitly by</p>
 <p>$$
 t_r = t - \frac{\left|\vec x - \vec r_q(t_r)\right|}{c}.
 $$</p>
-<p>Writing $h(s) = s + |\vec x - \vec r_q(s)|/c - t$, one has $h'(s) = 1 - \hat R\cdot\vec\beta$, so the delta function contributes the Jacobian</p>
+<p>Writing $h(s) = s + |\vec x - \vec r_q(s)|/c - t$, one has $h'(s) = 1 - \vec u_R\cdot\vec\beta$, so the delta function contributes the Jacobian</p>
 <p>$$
 \delta\!\left(t - \frac{|\vec x - \vec r_q(s)|}{c} - s\right)
-= \frac{1}{1 - \hat R\cdot\vec\beta}\,\delta(s - t_r).
+= \frac{1}{1 - \vec u_R\cdot\vec\beta}\,\delta(s - t_r).
 $$</p>
 <p>Collecting the pieces, the retarded solution is the <strong>Liénard–Wiechert potential</strong></p>
 <p>$$
-\tilde{A} = \frac{\mu q}{4\pi}\,\frac{ic\,e_0 + \vec v(t_r)}{R - \vec R\cdot\vec\beta},
+\tilde{A} = \frac{\mu ϙ}{4\pi}\,\frac{ic\,e_0 + \vec v(t_r)}{R - \vec R\cdot\vec\beta},
 $$</p>
 <p>where from here on all source quantities are understood to be evaluated at the retarded time, and</p>
 <p>$$
 \vec R = \vec x - \vec r_q(t_r), \qquad R = |\vec R|, \qquad
-\hat R = \frac{\vec R}{R}, \qquad \vec\beta = \frac{\vec v(t_r)}{c}.
+\vec u_R = \frac{\vec R}{R}, \qquad \vec\beta = \frac{\vec v(t_r)}{c}.
 $$</p>
 <p>The single retardation of a point charge is thus the only place where the light-cone structure of the theory enters the radiation problem; everything that follows is algebra.</p>
 <h2 id="the-retarded-null-biquaternion">The Retarded Null Biquaternion</h2>
@@ -109,7 +109,7 @@ $$</p>
 $$</p>
 <p>which is an element of the material subspace $\mathbb{M}_-$: its scalar part is imaginary and its vector part real. Its biquaternion norm is</p>
 <p>$$
-N(\tilde{\mathcal{R}}) = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0 .
+\langle\tilde{\mathcal{R}}\rangle_{\natural} = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0 .
 $$</p>
 <p>The retarded separation is therefore a <strong>null</strong> element of $\mathbb{M}_-$ — a point of the light cone, and hence a zero divisor of $\mathbb{B}$. This is the biquaternion expression of the elementary fact that the separation between an emission event and a later observation event on the light cone is null. The whole radiation problem is built on a zero divisor.</p>
 <p>The second is the <strong>four-velocity biquaternion</strong>, written in coordinate form as the coordinate velocity divided by $\gamma$</p>
@@ -120,14 +120,14 @@ $$</p>
 $$</p>
 <p>with biquaternion norms</p>
 <p>$$
-N(\tilde{V}/\gamma) = -c^2 + \vec v^2 = -c^2(1 - \beta^2) = -\frac{c^2}{\gamma^2},
+\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 + \vec v^2 = -c^2(1 - \beta^2) = -\frac{c^2}{\gamma^2},
 \qquad
-N(\tilde{V}) = \gamma^2\,N(\tilde{V}/\gamma) = -c^2 ,
+\langle\tilde{V}\rangle_{\natural} = \gamma^2\,\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 ,
 \qquad \gamma = \frac{1}{\sqrt{1 - \beta^2}} .
 $$</p>
-<p>The four-velocity $\tilde{V}$ carries the standard invariant $N(\tilde{V}) = -c^2$ of the companion article on $\mathbb{M}_-$. The retarded separation and the four-velocity together determine the potential through a single scalar:</p>
+<p>The four-velocity $\tilde{V}$ carries the standard invariant $\langle\tilde{V}\rangle_{\natural} = -c^2$ of the companion article on $\mathbb{M}_-$. The retarded separation and the four-velocity together determine the potential through a single scalar:</p>
 <p>$$
-D \equiv R - \vec R\cdot\vec\beta = R\left(1 - \hat R\cdot\vec\beta\right) = R\kappa, \qquad \kappa \equiv 1 - \hat R\cdot\vec\beta.
+D \equiv R - \vec R\cdot\vec\beta = R\left(1 - \vec u_R\cdot\vec\beta\right) = R\kappa, \qquad \kappa \equiv 1 - \vec u_R\cdot\vec\beta.
 $$</p>
 <p>The scalar part of the biquaternion product $(\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}$ computes directly. Using $\bar{\tilde{\mathcal{R}}} = iR\,e_0 - \vec R$ and the rule that the scalar part of a product of two biquaternions is $A_0B_0 - \vec A\cdot\vec B$,</p>
 <p>$$
@@ -143,66 +143,66 @@ D = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}
 $$</p>
 <p>and the Liénard–Wiechert potential takes the compact biquaternion form</p>
 <p>$$
-\tilde{A} = \frac{\mu q}{4\pi D}\,\tilde{V}/\gamma
-= -\frac{\mu q\,c}{4\pi}\,
+\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma
+= -\frac{\mu ϙ\,c}{4\pi}\,
 \frac{\tilde{V}/\gamma}{\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right)} .
 $$</p>
 <p>This is the central object of the retarded theory. Its scalar part is the scalar potential and its vector part the vector potential:</p>
 <p>$$
 \tilde{A} = \frac{i\phi}{c}\,e_0 + \vec A,
 \qquad
-\phi = \frac{q}{4\pi\epsilon D}, \qquad
-\vec A = \frac{\mu q\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\phi .
+\phi = \frac{ϙ}{4\pi\epsilon D}, \qquad
+\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\phi .
 $$</p>
-<p>The relation $\vec A = (\vec v/c^2)\phi$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{M}_-$</strong>, one null ($\tilde{\mathcal{R}}$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $u\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
+<p>The relation $\vec A = (\vec v/c^2)\phi$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{M}_-$</strong>, one null ($\tilde{\mathcal{R}}$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
 <h2 id="the-spinor-square-root-and-the-invariant-retarded-distance">The Spinor Square Root and the Invariant Retarded Distance</h2>
 <p>Every zero divisor factorises, and the source's spinor treatment of the retarded field is such a factorisation, written in objects that this article has already defined. Three of them are the source's, and it is worth naming each once against the conventions here.</p>
 <p><strong>The invariant retarded distance.</strong> The source's scalar is</p>
 <p>$$
-\xi = -i\,\mathrm{Sc}\!\left(\tilde{u}\,\bar{\tilde{\mathcal{R}}}\right),
+\xi = -i\,\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right),
 \qquad
-\tilde{u} = \frac{\tilde{V}}{ic} = \gamma\left(e_0 - i\vec\beta\right),
+\tilde{v} = \frac{\tilde{V}}{ic} = \gamma\left(e_0 - i\vec\beta\right),
 $$</p>
-<p>where $\tilde{u}$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_0 - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,</p>
+<p>where $\tilde{v}$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_0 - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{u}\,\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right)
 = \gamma\,(iR) - (-i\gamma\vec\beta)\cdot(-\vec R)
 = i\gamma\left(R - \vec R\cdot\vec\beta\right)
 = i\gamma D ,
 $$</p>
 <p>so that</p>
 <p>$$
-\xi = \gamma D = \gamma R\left(1 - \hat R\cdot\vec\beta\right).
+\xi = \gamma D = \gamma R\left(1 - \vec u_R\cdot\vec\beta\right).
 $$</p>
 <p>The source's retarded distance is therefore the article's denominator $D$ multiplied by $\gamma$. Because $\tilde{V} = \gamma\,\tilde{V}/\gamma$, the Liénard–Wiechert potential of the previous section collapses to</p>
 <p>$$
-\tilde{A} = \frac{\mu q}{4\pi D}\,\tilde{V}/\gamma = \frac{\mu q}{4\pi\xi}\,\tilde{V},
+\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V},
 $$</p>
 <p>the four-velocity over the invariant retarded distance, with the factor of $\gamma$ moved rather than removed.</p>
 <p><strong>The spinor square root.</strong> The four-velocity is the square of a bireal spinor,</p>
 <p>$$
 \tilde{V} = ic\,\tilde{B}^2,
 \qquad
-\tilde{B} = \cosh\tfrac{y}{2}\,e_0 - i\sinh\tfrac{y}{2}\,\hat\beta,
+\tilde{B} = \cosh\tfrac{y}{2}\,e_0 - i\sinh\tfrac{y}{2}\,\vec u_\beta,
 \qquad
 \tilde{B}^+ = \tilde{B},
 $$</p>
-<p>with rapidity $y$ fixed by $\cosh y = \gamma$ and $\hat\beta = \vec\beta/|\vec\beta|$. The spinor is bireal — fixed by Hermitian conjugation — and that is exactly what makes $\tilde{B}^2 = \tilde{B}\tilde{B}^+$: the square root of the four-velocity and the spinor decomposition of the four-velocity are the same operation. In these variables the potential reads</p>
+<p>with rapidity $y$ fixed by $\cosh y = \gamma$ and $\vec u_\beta = \vec\beta/|\vec\beta|$. The spinor is bireal — fixed by Hermitian conjugation — and that is exactly what makes $\tilde{B}^2 = \tilde{B}\tilde{B}^+$: the square root of the four-velocity and the spinor decomposition of the four-velocity are the same operation. In these variables the potential reads</p>
 <p>$$
-\tilde{A} = \frac{i\mu q c}{4\pi\xi}\,\tilde{B}^2 ,
+\tilde{A} = \frac{i\mu ϙ c}{4\pi\xi}\,\tilde{B}^2 ,
 $$</p>
 <p>one spinor square and two invariants.</p>
 <p><strong>The retarded separation as a spinor product.</strong> With the primitive idempotent</p>
 <p>$$
-\sigma = \tfrac12\left(e_0 + i\,\hat u\right),
+\sigma = \tfrac12\left(e_0 + i\,\vec u\right),
 \qquad
-\sigma^2 = \sigma, \qquad N(\sigma) = 0,
+\sigma^2 = \sigma, \qquad \langle \sigma\rangle_{\natural} = 0,
 $$</p>
-<p>whose unit vector $\hat u$ is the line of sight in the charge's rest frame, taken from the observation point towards the charge,</p>
+<p>whose unit vector $\vec u$ is the line of sight in the charge's rest frame, taken from the observation point towards the charge,</p>
 <p>$$
 \tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\,\sigma\,\tilde{B}^+ .
 $$</p>
-<p>This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $\tilde{B}$, and its magnitude is the invariant retarded distance $\xi$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\hat u$ stated above, so that the coefficient of the idempotent is $+2i\xi$.</p>
+<p>This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $\tilde{B}$, and its magnitude is the invariant retarded distance $\xi$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\vec u$ stated above, so that the coefficient of the idempotent is $+2i\xi$.</p>
 <p><strong>The four-acceleration.</strong> In the same variables the four-acceleration of the charge is the boost conjugate of its value in the instantaneous rest frame,</p>
 <p>$$
 \frac{d\tilde{V}}{d\tau} = \tilde{B}\,\tilde{a}\,\tilde{B}^+,
@@ -224,16 +224,16 @@ $$</p>
 <p>with the normalization caveat recorded there: the identification of $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:</p>
 <p>$$
 \vec E = \vec E_v + \vec E_a, \qquad
-\vec B = \frac{1}{c}\,\hat R\times\vec E, \qquad
+\vec B = \frac{1}{c}\,\vec u_R\times\vec E, \qquad
 \vec H = \frac{\vec B}{\mu},
 $$</p>
 <p>with</p>
 <p>$$
-\vec E_v = \frac{q}{4\pi\epsilon}\,
-\frac{(1-\beta^2)\left(\hat R - \vec\beta\right)}{\kappa^3 R^2},
+\vec E_v = \frac{ϙ}{4\pi\epsilon}\,
+\frac{(1-\beta^2)\left(\vec u_R - \vec\beta\right)}{\kappa^3 R^2},
 \qquad
-\vec E_a = \frac{q}{4\pi\epsilon c}\,
-\frac{\hat R\times\left[\left(\hat R - \vec\beta\right)\times\dot{\vec\beta}\right]}{\kappa^3 R}.
+\vec E_a = \frac{ϙ}{4\pi\epsilon c}\,
+\frac{\vec u_R\times\left[\left(\vec u_R - \vec\beta\right)\times\dot{\vec\beta}\right]}{\kappa^3 R}.
 $$</p>
 <p>Here the dot denotes the derivative with respect to the <strong>retarded time</strong>,</p>
 <p>$$
@@ -253,29 +253,29 @@ $$</p>
 <p>The field $\tilde{F}_v$ depends only on the position and velocity of the charge at the retarded time, not on its acceleration. It falls as $1/R^2$, exactly as a static field does, and it is the field that is "carried along" by the charge.</p>
 <p>The factor $1-\beta^2 = 1/\gamma^2$ makes $\vec E_v$ a <strong>contracted</strong> Coulomb field: at $\vec\beta = 0$ it reduces to the ordinary Coulomb field</p>
 <p>$$
-\vec E_v \;\xrightarrow{\ \vec\beta=0\ }\; \frac{q}{4\pi\epsilon}\frac{\hat R}{R^2},
+\vec E_v \;\xrightarrow{\ \vec\beta=0\ }\; \frac{ϙ}{4\pi\epsilon}\frac{\vec u_R}{R^2},
 $$</p>
-<p>in agreement with the static solution of the Maxwell article, and in general the $1/\gamma^2$ factor and the replacement $\hat R\to\hat R-\vec\beta$ are precisely the Lorentz contraction of the Coulomb field in the direction of motion. The magnetic field is the accompanying $\hat R\times\vec E_v/c$; the whole structure is the boosted static field of the charge.</p>
-<p>The velocity field is <strong>not</strong> a radiation field, and in the language of the companion article on invariants it is not null. Because $\vec B_v = \hat R\times\vec E_v/c$, the second invariant vanishes identically,</p>
+<p>in agreement with the static solution of the Maxwell article, and in general the $1/\gamma^2$ factor and the replacement $\vec u_R\to\vec u_R-\vec\beta$ are precisely the Lorentz contraction of the Coulomb field in the direction of motion. The magnetic field is the accompanying $\vec u_R\times\vec E_v/c$; the whole structure is the boosted static field of the charge.</p>
+<p>The velocity field is <strong>not</strong> a radiation field, and in the language of the companion article on invariants it is not null. Because $\vec B_v = \vec u_R\times\vec E_v/c$, the second invariant vanishes identically,</p>
 <p>$$
 I_{2,v} = \vec E_v\cdot\vec B_v = 0,
 $$</p>
 <p>while the first is positive:</p>
 <p>$$
 I_{1,v} = \vec E_v^2 - c^2\vec B_v^2
-= (\hat R\cdot\vec E_v)^2
-= \left(\frac{q}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2 R^2}\right)^{\!2} > 0 .
+= (\vec u_R\cdot\vec E_v)^2
+= \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2 R^2}\right)^{\!2} > 0 .
 $$</p>
-<p>The biquaternion norm of $\tilde{F}_v$ is therefore nonzero, $N(\tilde{F}_v) = -\epsilon(I_{1,v} + 2ic\,I_{2,v}) = -\epsilon I_{1,v} \neq 0$, and $\tilde{F}_v$ is not a zero divisor. In the classification of the invariants article it is a field of <strong>electric type</strong>: there is a frame (the rest frame of the charge) in which the magnetic field vanishes and the field is purely electric. This is the algebraic statement that the velocity field is bound to the charge: at any event it can be reduced to a purely electric Coulomb field by passing to the instantaneous rest frame of the charge.</p>
+<p>The biquaternion norm of $\tilde{F}_v$ is therefore nonzero, $\langle\tilde{F}_v\rangle_{\natural} = -\epsilon(I_{1,v} + 2ic\,I_{2,v}) = -\epsilon I_{1,v} \neq 0$, and $\tilde{F}_v$ is not a zero divisor. In the classification of the invariants article it is a field of <strong>electric type</strong>: there is a frame (the rest frame of the charge) in which the magnetic field vanishes and the field is purely electric. This is the algebraic statement that the velocity field is bound to the charge: at any event it can be reduced to a purely electric Coulomb field by passing to the instantaneous rest frame of the charge.</p>
 <p>Two special cases are worth recording, because they are exactly the content of the two downstream exercises. When the charge moves with constant velocity, $\dot{\vec\beta} = 0$ and $\tilde{F} = \tilde{F}_v$ alone: this is the field of a uniformly moving charge, the subject of <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>. The result is the Heaviside ellipsoid field, obtained here either by specialising the Liénard–Wiechert formulas or, equivalently, by applying the boost rotor $\tilde{\Lambda}$ of the Maxwell article to the Coulomb field of the charge at rest. When the charge accelerates but the observation is made in the far zone, the $1/R^2$ velocity field is negligible compared with the $1/R$ acceleration field, and the radiation field alone survives.</p>
 <h2 id="the-acceleration-field-as-the-radiation-field">The Acceleration Field as the Radiation Field</h2>
 <p>The field $\tilde{F}_a$ is different in every structural respect. It is proportional to the acceleration of the charge, it falls as $1/R$ rather than $1/R^2$, and it is <strong>transverse</strong>:</p>
 <p>$$
-\hat R\cdot\vec E_a = 0,
+\vec u_R\cdot\vec E_a = 0,
 $$</p>
 <p>which is immediate from the double cross product in its definition. The magnetic field is perpendicular to both,</p>
 <p>$$
-\vec B_a = \frac{1}{c}\,\hat R\times\vec E_a,
+\vec B_a = \frac{1}{c}\,\vec u_R\times\vec E_a,
 \qquad
 |\vec B_a| = \frac{1}{c}\,|\vec E_a|,
 $$</p>
@@ -287,79 +287,79 @@ I_{2,a} = \vec E_a\cdot\vec B_a = 0 .
 $$</p>
 <p>In the biquaternion framework this is the statement that the biquaternion norm of $\tilde{F}_a$ vanishes:</p>
 <p>$$
-N(\tilde{F}_a) = \tilde{F}_a\tilde{F}^{\natural}_a = -\epsilon\left(I_{1,a} + 2ic\,I_{2,a}\right) = 0 .
+\langle\tilde{F}_a\rangle_{\natural} = \tilde{F}_a\tilde{F}^{\natural}_a = -\epsilon\left(I_{1,a} + 2ic\,I_{2,a}\right) = 0 .
 $$</p>
-<p>A nonzero pure-vector biquaternion with vanishing biquaternion norm is a zero divisor and is nilpotent, since for a pure vector $\tilde{F}_a^2 = -\vec F_a\cdot\vec F_a = -N(\tilde{F}_a)$. Hence</p>
+<p>A nonzero pure-vector biquaternion with vanishing biquaternion norm is a zero divisor and is nilpotent, since for a pure vector $\tilde{F}_a^2 = -\vec F_a\cdot\vec F_a = -\langle\tilde{F}_a\rangle_{\natural}$. Hence</p>
 <p>$$
 \boxed{\ \tilde{F}_a^2 = 0\ }
 $$</p>
 <p>for the acceleration field. The radiation field of an accelerated charge is, algebraically, a <strong>nilpotent element of $\mathbb{B}$</strong>: it is the zero-divisor cone of the algebra, realized pointwise in spacetime. This is the precise sense in which the null-field remark of the invariants article is fulfilled by the radiation of an accelerated charge.</p>
 <p>The same fact is visible in the Riemann–Silberstein description. The complex vector of the acceleration field is</p>
 <p>$$
-\vec V_a = \vec E_a + ic\,\vec B_a = \vec E_a + i\,\hat R\times\vec E_a,
+\vec N_a = \vec E_a + ic\,\vec B_a = \vec E_a + i\,\vec u_R\times\vec E_a,
 $$</p>
-<p>and since $\vec E_a\perp\hat R$,</p>
+<p>and since $\vec E_a\perp\vec u_R$,</p>
 <p>$$
-\vec V_a\cdot\vec V_a
-= \vec E_a^2 - \left|\hat R\times\vec E_a\right|^2 + 2ic\,\vec E_a\cdot\left(\hat R\times\vec E_a\right)
+\vec N_a\cdot\vec N_a
+= \vec E_a^2 - \left|\vec u_R\times\vec E_a\right|^2 + 2ic\,\vec E_a\cdot\left(\vec u_R\times\vec E_a\right)
 = \vec E_a^2 - \vec E_a^2 + 0 = 0 .
 $$</p>
 <p>The Riemann–Silberstein vector of the radiation field is a <strong>null complex vector</strong>. The acceleration field is thus the pointwise realization of every one of the equivalent characterizations of a radiation field collected in the companion article: it is transverse, it is a null field, its biquaternion norm vanishes, its field-strength biquaternion is a zero divisor, and its Riemann–Silberstein vector is null.</p>
-<p>The energy carried by the acceleration field is correspondingly unambiguous. Since $\vec E_a\perp\hat R$, the Poynting vector of the acceleration field is purely radial,</p>
+<p>The energy carried by the acceleration field is correspondingly unambiguous. Since $\vec E_a\perp\vec u_R$, the Poynting vector of the acceleration field is purely radial,</p>
 <p>$$
-\vec S_a = \vec E_a\times\vec H_a = \frac{|\vec E_a|^2}{\mu c}\,\hat R,
+\vec S_a = \vec E_a\times\vec H_a = \frac{|\vec E_a|^2}{\mu c}\,\vec u_R,
 $$</p>
 <p>so the energy flux through a sphere of radius $R$ is $R^2|\vec E_a|^2/(\mu c)$ per unit solid angle, independent of $R$: the energy does not fall off, and it escapes to infinity. The velocity field, by contrast, contributes a flux that falls as $1/R^2$ and so adds nothing to the energy radiated to infinity; the energy it carries is the bound field energy that travels with the charge.</p>
 <h2 id="radiated-power-and-the-relativistic-larmor-formula">Radiated Power and the Relativistic Larmor Formula</h2>
 <p>The power crossing a large sphere per unit solid angle, per unit of the observer's time, is the radial Poynting flux times $R^2$:</p>
 <p>$$
-\frac{dP}{d\Omega} = R^2\,\vec S_a\cdot\hat R
-= \frac{q^2}{16\pi^2\epsilon c}\,
-\frac{\left|\hat R\times\left[\left(\hat R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2}{\kappa^6},
+\frac{dP}{d\Omega} = R^2\,\vec S_a\cdot\vec u_R
+= \frac{ϙ^2}{16\pi^2\epsilon c}\,
+\frac{\left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2}{\kappa^6},
 $$</p>
 <p>with the retarded-time derivative convention fixed above. This is the relativistic generalization of the Larmor angular distribution. Its integral over the sphere gives the total radiated power. Because $\vec\beta$, $\dot{\vec\beta}$ and $\kappa$ are functions of the retarded time, the integral is most transparent in the invariant form: writing $\tilde{V} = d\tilde{Q}_q/d\tau$ for the four-velocity, the radiated power is</p>
 <p>$$
-P = \frac{q^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
-= \frac{q^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right),
+P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}\right),
 $$</p>
 <p>where in the second expression the index contraction uses the Minkowski metric. This is the <strong>relativistic Larmor formula</strong>, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the <strong>biquaternion norm of the four-acceleration biquaternion</strong>. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.</p>
 <p>For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With $\dot{\vec\beta} = d\vec\beta/dt$ taken this time with respect to $t$ (not $t_r$),</p>
 <p>$$
-P = \frac{q^2\gamma^6}{6\pi\epsilon c}\left[\dot{\vec\beta}^2 - \left(\vec\beta\times\dot{\vec\beta}\right)^2\right].
+P = \frac{ϙ^2\gamma^6}{6\pi\epsilon c}\left[\dot{\vec\beta}^2 - \left(\vec\beta\times\dot{\vec\beta}\right)^2\right].
 $$</p>
 <p>Two special cases are standard and useful. For <strong>linear acceleration</strong>, $\dot{\vec\beta}\parallel\vec\beta$ and</p>
 <p>$$
-P_{\text{lin}} = \frac{q^2\gamma^6\dot{\beta}^2}{6\pi\epsilon c},
+P_{\text{lin}} = \frac{ϙ^2\gamma^6\dot{\beta}^2}{6\pi\epsilon c},
 $$</p>
 <p>the well-known $\gamma^6$ enhancement. For <strong>circular motion</strong>, $\dot{\vec\beta}\perp\vec\beta$ and</p>
 <p>$$
-P_{\text{circ}} = \frac{q^2\gamma^4\dot{\beta}^2}{6\pi\epsilon c},
+P_{\text{circ}} = \frac{ϙ^2\gamma^4\dot{\beta}^2}{6\pi\epsilon c},
 $$</p>
 <p>a $\gamma^4$ enhancement, because for the same $|\dot{\vec\beta}|$ the radiated power from transverse acceleration is smaller than that from longitudinal acceleration by a factor of $\gamma^2$. Both follow from the invariant expression; no new physics is introduced by the biquaternion formulation, but the way the power is organized — one biquaternion norm instead of a three-vector combination — is the characteristic simplification of the algebraic language.</p>
 <h2 id="the-angular-distribution">The Angular Distribution</h2>
-<p>The angular distribution inherits the same factor. It is convenient to introduce the angle $\theta$ between $\hat R$ and $\vec\beta$, so that</p>
+<p>The angular distribution inherits the same factor. It is convenient to introduce the angle $\theta$ between $\vec u_R$ and $\vec\beta$, so that</p>
 <p>$$
 \kappa = 1 - \beta\cos\theta ,
 $$</p>
-<p>and an azimuthal angle $\phi$ that measures the orientation of $\hat R$ around the direction of $\vec\beta$.</p>
-<p>For <strong>linear acceleration</strong>, $\dot{\vec\beta}\parallel\vec\beta$, the vector triple product collapses. Since $\vec\beta\times\dot{\vec\beta} = 0$, one has $\left(\hat R-\vec\beta\right)\times\dot{\vec\beta} = \hat R\times\dot{\vec\beta}$ and therefore</p>
+<p>and an azimuthal angle $\phi$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.</p>
+<p>For <strong>linear acceleration</strong>, $\dot{\vec\beta}\parallel\vec\beta$, the vector triple product collapses. Since $\vec\beta\times\dot{\vec\beta} = 0$, one has $\left(\vec u_R-\vec\beta\right)\times\dot{\vec\beta} = \vec u_R\times\dot{\vec\beta}$ and therefore</p>
 <p>$$
-\left|\hat R\times\left[\left(\hat R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2
+\left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2
 = \dot{\beta}^2\sin^2\theta .
 $$</p>
 <p>The distribution is</p>
 <p>$$
-\frac{dP}{d\Omega} = \frac{q^2\dot{\beta}^2\sin^2\theta}{16\pi^2\epsilon c\,\kappa^6},
+\frac{dP}{d\Omega} = \frac{ϙ^2\dot{\beta}^2\sin^2\theta}{16\pi^2\epsilon c\,\kappa^6},
 $$</p>
-<p>which is the non-relativistic dipole pattern $\sin^2\theta$ distorted by the forward-beaming factor $\kappa^{-6}$. There is no radiation along the direction of acceleration ($\theta = 0$) or opposite to it ($\theta = \pi$): the angular distribution vanishes on the two directions collinear with the motion. For $\beta\to 0$ the factor $\kappa^{-6}\to 1$ and the total power reduces to the Larmor value $\frac{q^2\dot{\beta}^2}{6\pi\epsilon c}$.</p>
+<p>which is the non-relativistic dipole pattern $\sin^2\theta$ distorted by the forward-beaming factor $\kappa^{-6}$. There is no radiation along the direction of acceleration ($\theta = 0$) or opposite to it ($\theta = \pi$): the angular distribution vanishes on the two directions collinear with the motion. For $\beta\to 0$ the factor $\kappa^{-6}\to 1$ and the total power reduces to the Larmor value $\frac{ϙ^2\dot{\beta}^2}{6\pi\epsilon c}$.</p>
 <p>For <strong>circular motion</strong>, $\dot{\vec\beta}\perp\vec\beta$. Choosing $\vec\beta$ along the polar axis and $\dot{\vec\beta}$ in the equatorial plane, the same algebra gives</p>
 <p>$$
-\left|\hat R\times\left[\left(\hat R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2
+\left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\dot{\vec\beta}\right]\right|^2
 = \dot{\beta}^2\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right],
 $$</p>
 <p>and hence</p>
 <p>$$
-\frac{dP}{d\Omega} = \frac{q^2\dot{\beta}^2}{16\pi^2\epsilon c\,\kappa^6}
+\frac{dP}{d\Omega} = \frac{ϙ^2\dot{\beta}^2}{16\pi^2\epsilon c\,\kappa^6}
 \left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right].
 $$</p>
 <p>Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $\dot{\vec\beta}$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.</p>
@@ -369,18 +369,18 @@ $$</p>
 <p>A charge that radiates loses energy and momentum, and the loss must appear as a force acting on the charge itself. In the point-particle idealization the standard result is the <strong>Abraham–Lorentz–Dirac</strong> equation,</p>
 <p>$$
 m\frac{du^\mu}{d\tau} = f^\mu_{\text{ext}}
-+ \frac{q^2}{6\pi\epsilon c^3}\left(\frac{d^2u^\mu}{d\tau^2} + \frac{u^\mu}{c^2}\frac{du^\nu}{d\tau}\frac{du_\nu}{d\tau}\right).
++ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2v^\mu}{d\tau^2} + \frac{v^\mu}{c^2}\frac{du^\nu}{d\tau}\frac{du_\nu}{d\tau}\right).
 $$</p>
-<p>The bracketed term is the radiation-reaction four-force. It can be transcribed into the biquaternion objects of this article without change of content. With $\tilde{V}$ the four-velocity biquaternion, $\dot{\tilde{V}} = d\tilde{V}/d\tau$, and using $N(\dot{\tilde{V}}) = -\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}$, the reaction term becomes</p>
+<p>The bracketed term is the radiation-reaction four-force. It can be transcribed into the biquaternion objects of this article without change of content. With $\tilde{V}$ the four-velocity biquaternion, $\dot{\tilde{V}} = d\tilde{V}/d\tau$, and using $\langle\dot{\tilde{V}}\rangle_{\natural} = -\frac{du^\mu}{d\tau}\frac{du_\mu}{d\tau}$, the reaction term becomes</p>
 <p>$$
 \tilde{f}_{\text{rad}}
-= \frac{q^2}{6\pi\epsilon c^3}\left(\ddot{\tilde{V}} - \frac{1}{c^2}N\!\left(\dot{\tilde{V}}\right)\tilde{V}\right),
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\ddot{\tilde{V}} - \frac{1}{c^2}N\!\left(\dot{\tilde{V}}\right)\tilde{V}\right),
 $$</p>
 <p>an element of $\mathbb{M}_-$ whose defining property is that it is <strong>orthogonal to the worldline</strong>:</p>
 <p>$$
 \mathrm{Sc}\!\left(\tilde{f}_{\text{rad}}\tilde{V}^{\natural}\right) = 0 .
 $$</p>
-<p>This orthogonality is the biquaternion form of the statement that the reaction force does no work in the instantaneous rest frame; it follows from $N(\tilde{V}) = -c^2$ being constant, which gives $\mathrm{Sc}(\ddot{\tilde{V}}\tilde{V}^{\natural}) = -N(\dot{\tilde{V}})$.</p>
+<p>This orthogonality is the biquaternion form of the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\langle\tilde{V}\rangle_{\natural} = -c^2$ being constant, which gives $\mathrm{Sc}(\ddot{\tilde{V}}\tilde{V}^{\natural}) = -\langle\dot{\tilde{V}}\rangle_{\natural}$.</p>
 <p>Two caveats should be stated plainly. First, the reformulation does not resolve the well-known pathologies of the equation — the runaway solutions and the pre-acceleration that follow from treating the self-force as a local differential expression. Second, the equation above is a transcription of the standard result into the biquaternion notation; it is not a derivation of the self-force from the biquaternion framework, and the point-charge self-energy divergence is untouched by the change of language. The radiation-reaction problem is thus <strong>represented</strong> cleanly in the framework, but it is not solved by it. A rigorous derivation from Maxwell's theory does exist, however, and it is the subject of the next paragraph.</p>
 <p><strong>A rigorous derivation exists outside the framework.</strong> Whether the point-charge self-force can be derived from Maxwell's theory without adding anything has a positive answer, due to A. Gsponer. The method is to define the retarded potentials, fields and currents as <strong>nonlinear generalized functions</strong> and to carry out every calculation in a <strong>Colombeau algebra</strong> — an algebra in which the product of singular fields is defined, which is indispensable here because the energy–momentum tensor is quadratic in the field and the fields diverge on the worldline. The biquaternion spinor representation of electrodynamics is what makes the four-dimensional integrations exact and closed-form. With those tools the total rate of energy–momentum radiated through a surface enclosing the worldline is shown to be rigorously equal to minus the self-interaction force on the charge,</p>
 <p>$$
@@ -392,12 +392,12 @@ $$</p>
 <p><strong>The point charge is an idealisation, and the classical electron carries more.</strong> Gsponer's own conclusion draws the boundary that his derivation makes precise: the classical electrodynamics of point charges is mathematically an internally consistent theory once potentials, fields and currents are nonlinear generalized functions, but the mathematical point charge — a simple pole of the potential — is an idealisation. A classical point-electron carries, besides its electric charge, an intrinsic magnetic dipole moment and a spin, described by a four-potential that superposes the Coulomb monopole with a dipole term. Gsponer suggests applying the same method to that potential, which would yield an equation of motion generalising Lorentz–Dirac's for a classical electron with magnetic moment and spin. That is precisely the question left open in <em>The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</em>, where the coupling of the spin to the radiation-reaction force is listed as unresolved; the two articles meet here. As elsewhere in the corpus, the internal consistency of the mathematics does not fix the mass, and the algebra does not supply the electron's moment and spin; those are inputs, not consequences.</p>
 <h2 id="relation-to-the-two-exercises">Relation to the Two Exercises</h2>
 <p>The construction above is the declared foundation for two downstream exercises, and it is worth recording explicitly which parts each one uses.</p>
-<p><em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em> is the case of vanishing acceleration. Setting $\dot{\vec\beta} = 0$ in the field formulas of the section "The Field of the Retarded Potential" leaves $\tilde{F} = \tilde{F}_v$; the exercise is then the evaluation of $\vec E_v = \frac{q}{4\pi\epsilon}\frac{(1-\beta^2)(\hat R-\vec\beta)}{\kappa^3R^2}$ and $\vec B_v = \hat R\times\vec E_v/c$, and the identification of the result as the Heaviside ellipsoid field, equivalently as the boost of the Coulomb field. The pieces needed are the Liénard–Wiechert potential of "The Retarded Null Biquaternion" and the velocity field of "The Velocity Field".</p>
+<p><em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em> is the case of vanishing acceleration. Setting $\dot{\vec\beta} = 0$ in the field formulas of the section "The Field of the Retarded Potential" leaves $\tilde{F} = \tilde{F}_v$; the exercise is then the evaluation of $\vec E_v = \frac{ϙ}{4\pi\epsilon}\frac{(1-\beta^2)(\vec u_R-\vec\beta)}{\kappa^3R^2}$ and $\vec B_v = \vec u_R\times\vec E_v/c$, and the identification of the result as the Heaviside ellipsoid field, equivalently as the boost of the Coulomb field. The pieces needed are the Liénard–Wiechert potential of "The Retarded Null Biquaternion" and the velocity field of "The Velocity Field".</p>
 <p><em>Exercise: The Electromagnetic Field of a Moving Charge</em> is the general case. It uses the full Liénard–Wiechert potential, the field split $\tilde{F} = \tilde{F}_v + \tilde{F}_a$ of "The Field of the Retarded Potential", and the two component expressions of "The Velocity Field" and "The Acceleration Field as the Radiation Field". The exercise is then the evaluation of both parts for a specified worldline, and the demonstration that the far-zone field is the radiation field alone.</p>
 <h2 id="summary">Summary</h2>
 <p>The radiation from an accelerated charge is treated in the biquaternion framework by specializing the retarded solution of the biquaternionic Maxwell equation to a point source. The retarded convolution localizes on the worldline and produces the Liénard–Wiechert potential in the compact form</p>
 <p>$$
-\tilde{A} = \frac{\mu q}{4\pi D}\,\tilde{V}/\gamma,
+\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma,
 \qquad
 \tilde{V}/\gamma = ic\,e_0 + \vec v(t_r),
 \qquad
@@ -405,23 +405,23 @@ D = R - \vec R\cdot\vec\beta
 = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right),
 $$</p>
 <p>built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_0 + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_0 + \vec v(t_r)\right)$, both in $\mathbb{M}_-$.</p>
-<p>The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}(\tilde{u}\bar{\tilde{\mathcal{R}}}) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_0 - i\sinh\tfrac{y}{2}\hat\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:</p>
+<p>The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}}) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_0 - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:</p>
 <p>$$
-\tilde{A} = \frac{\mu q}{4\pi\xi}\,\tilde{V} = \frac{i\mu q c}{4\pi\xi}\,\tilde{B}^2,
+\tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,\tilde{B}^2,
 $$</p>
-<p>and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_0 + i\hat u)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$.</p>
-<p>The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\hat R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is <strong>null</strong>:</p>
+<p>and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_0 + i\vec u)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$.</p>
+<p>The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is <strong>null</strong>:</p>
 <p>$$
 I_{1,a} = I_{2,a} = 0,
 \qquad
-N(\tilde{F}_a) = 0,
+\langle\tilde{F}_a\rangle_{\natural} = 0,
 \qquad
 \tilde{F}_a^2 = 0,
 $$</p>
 <p>so that the radiation field is a <strong>zero divisor and a nilpotent element</strong> of $\mathbb{B}$. This is the concrete realization of the null-field characterization anticipated in the companion article on the field-strength invariants.</p>
 <p>The radiated power is the biquaternion norm of the four-acceleration biquaternion,</p>
 <p>$$
-P = \frac{q^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right),
+P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right),
 $$</p>
 <p>the relativistic Larmor formula, with the standard $\gamma^6$ (linear) and $\gamma^4$ (circular) enhancements as special cases. The angular distribution carries the forward-beaming factor $\kappa^{-6}$, which concentrates the radiation into a cone of half-angle of order $1/\gamma$ at high speed. The radiation-reaction force can be transcribed as an element of $\mathbb{M}_-$ orthogonal to the worldline, though the standard pathologies of the point-charge self-force remain. An external derivation of the Lorentz–Dirac equation from Maxwell's theory — in a Colombeau algebra of nonlinear generalized functions, with the biquaternion representation supplying the closed-form integrations — gives the rigorous balance between the radiated energy–momentum rate and the self-interaction force and identifies the correct point-charge self-energy as a $\delta^2$ integral rather than the Coulomb one.</p>
 <p>The construction is explicit enough that the two downstream exercises are direct applications: R4 is the case $\dot{\vec\beta} = 0$, and E1 is the general case.</p>
@@ -475,12 +475,12 @@ $$</p>
 <td>Retarded separation</td>
 </tr>
 <tr>
-<td>$\hat R = \vec R/R$</td>
+<td>$\vec u_R = \vec R/R$</td>
 <td>Unit retarded direction</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal{R}} = iR\,e_0 + \vec R$</td>
-<td>Retarded null biquaternion, $N(\tilde{\mathcal{R}})=0$</td>
+<td>Retarded null biquaternion, $\langle\tilde{\mathcal{R}}\rangle_{\natural}=0$</td>
 </tr>
 <tr>
 <td>$\tilde{V}/\gamma = ic\,e_0 + \vec v(t_r)$</td>
@@ -488,7 +488,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{V} = \gamma\left(ic\,e_0 + \vec v(t_r)\right)$</td>
-<td>Four-velocity biquaternion, $N(\tilde{V}) = -c^2$</td>
+<td>Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$</td>
 </tr>
 <tr>
 <td>$\vec\beta = \vec v(t_r)/c$, $\beta = |\vec\beta|$</td>
@@ -499,7 +499,7 @@ $$</p>
 <td>Lorentz factor</td>
 </tr>
 <tr>
-<td>$\kappa = 1-\hat R\cdot\vec\beta$</td>
+<td>$\kappa = 1-\vec u_R\cdot\vec\beta$</td>
 <td>Retardation factor</td>
 </tr>
 <tr>
@@ -507,20 +507,20 @@ $$</p>
 <td>Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}})$</td>
 </tr>
 <tr>
-<td>$\xi = \gamma D = -i\,\mathrm{Sc}(\tilde{u}\bar{\tilde{\mathcal{R}}})$</td>
+<td>$\xi = \gamma D = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}})$</td>
 <td>Invariant retarded distance (the source's $\xi$)</td>
 </tr>
 <tr>
-<td>$\tilde{u} = \tilde{V}/(ic)$</td>
-<td>Four-velocity at unit biquaternion norm, $\tilde{u} = \gamma(e_0 - i\vec\beta)$</td>
+<td>$\tilde{v} = \tilde{V}/(ic)$</td>
+<td>Four-velocity at unit biquaternion norm, $\tilde{v} = \gamma(e_0 - i\vec\beta)$</td>
 </tr>
 <tr>
 <td>$\tilde{B}$, $\tilde{B}^2 = \tilde{V}/(ic)$, $\tilde{B}^+ = \tilde{B}$</td>
 <td>Bireal spinor square root of the four-velocity</td>
 </tr>
 <tr>
-<td>$\sigma = \tfrac12(e_0 + i\hat u)$</td>
-<td>Primitive idempotent; $\hat u$ the line of sight in the charge's rest frame</td>
+<td>$\sigma = \tfrac12(e_0 + i\vec u)$</td>
+<td>Primitive idempotent; $\vec u$ the line of sight in the charge's rest frame</td>
 </tr>
 <tr>
 <td>$\tilde{a} = a_1e_1 + a_2e_2 + a_3e_3$</td>
@@ -543,7 +543,7 @@ $$</p>
 <td>Field invariants</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -559,7 +559,7 @@ $$</p>
 <td>Medium permittivity, permeability, speed of light</td>
 </tr>
 <tr>
-<td>$q, m$</td>
+<td>$ϙ, m$</td>
 <td>Charge and mass of the radiating particle</td>
 </tr>
 <tr>

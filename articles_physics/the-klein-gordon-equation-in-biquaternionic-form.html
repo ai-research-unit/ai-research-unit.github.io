@@ -145,12 +145,12 @@ $$</p>
 <p>which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\vec F,\vec F)$ — the coefficient's own norm supplies the mass — <strong>plus</strong> the first-order directional term $2i(\vec F,\nabla)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators.</p>
 <p><strong>Fundamental solution.</strong> The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_A$, gives</p>
 <p>$$
-\psi(\tau,\vec x) = \frac{e^{i(\vec F,\vec x)}}{4\pi|\vec x|}\left((1-a)\,\delta(\tau-|\vec x|) + a\,\delta(\tau+|\vec x|)\right) + \psi^0(\tau,\vec x),
+\psi(\tau,\vec x) = \frac{\exp(i(\vec F,\vec x))}{4\pi|\vec x|}\left((1-a)\,\delta(\tau-|\vec x|) + a\,\delta(\tau+|\vec x|)\right) + \psi^0(\tau,\vec x),
 \qquad a \in \mathbb{C},
 $$</p>
-<p>with $\psi^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $e^{i(\vec F,\vec x)}$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\psi * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.</p>
-<p><strong>Why the kernel is simpler than the standard one, and what that does not mean.</strong> The ordinary massive operator $\Box_A + \mu^2$ has Fourier symbol $\omega^2 - |\vec\xi|^2 - \mu^2$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\xi + \vec F, \vec\xi + \vec F) - \omega^2$, the symbol of a <em>product</em> of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $e^{i(\vec F,\vec x)}$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \mu^2$ but $\Box_A + \mu^2$ <em>together with</em> the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.</p>
-<p><strong>Reading the two parts of the coefficient.</strong> Write $\vec F = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $e^{-i(E,\vec x)}$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\vec\xi + \vec F$ — and the imaginary part enters as the exponential $e^{-(H,\vec x)}$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\vec F,\vec F) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in <em>Twistor Theory and Biquaternions</em>, where the same operator generates the algebraic twistors.</p>
+<p>with $\psi^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,\vec x))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\psi * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.</p>
+<p><strong>Why the kernel is simpler than the standard one, and what that does not mean.</strong> The ordinary massive operator $\Box_A + \mu^2$ has Fourier symbol $\omega^2 - |\vec\xi|^2 - \mu^2$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\xi + \vec F, \vec\xi + \vec F) - \omega^2$, the symbol of a <em>product</em> of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,\vec x))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \mu^2$ but $\Box_A + \mu^2$ <em>together with</em> the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.</p>
+<p><strong>Reading the two parts of the coefficient.</strong> Write $\vec F = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $\exp(-i(E,\vec x))$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\vec\xi + \vec F$ — and the imaginary part enters as the exponential $\exp(-(H,\vec x))$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\vec F,\vec F) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in <em>Twistor Theory and Biquaternions</em>, where the same operator generates the algebraic twistors.</p>
 <p><strong>Convention.</strong> Alexeyeva's $\Box_A = \partial^2_\tau - \Delta$, with $\tau$ measured in units of length, is <strong>minus</strong> this article's $\Box = \partial^2_{ict} + \Delta$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.</p>
 <h2 id="plane-waves-and-the-dispersion-relation">Plane Waves and the Dispersion Relation</h2>
 <p>The plane-wave solutions are written with the four-wavevector of the read list,</p>
@@ -165,14 +165,14 @@ $$</p>
 = \left(i\frac{\omega}{c}\right)(ict) + \vec k\cdot\vec x
 = -\omega t + \vec k\cdot\vec x,
 $$</p>
-<p>which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial_t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial_{x_j}\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so</p>
+<p>which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial_t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial_{x_j}\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so</p>
 <p>$$
 \Box\tilde{\Phi} = \left(-\frac{1}{c^2}(-i\omega)^2 + (i\vec k)^2\right)\tilde{\Phi}
 = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\tilde{\Phi}.
 $$</p>
-<p>The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $N(\tilde{K}) = \tilde{K}\tilde{K}^{\natural} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition</p>
+<p>The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition</p>
 <p>$$
-N(\tilde{K}) = -\frac{m^2c^2}{\hbar^2}
+\langle\tilde{K}\rangle_{\natural} = -\frac{m^2c^2}{\hbar^2}
 \qquad\Longleftrightarrow\qquad
 -\frac{\omega^2}{c^2} + \vec k^2 = -\frac{m^2c^2}{\hbar^2},
 $$</p>
@@ -202,7 +202,7 @@ $$</p>
 \partial_t\rho + \nabla\cdot\vec j = 0 .
 $$</p>
 <p>Verifying the equivalence is a one-line computation: $\tilde{\nabla}^{\natural}\tilde{J}$ has scalar part $\partial_{ict}(ic\rho) - \mathrm{Sc}(\vec\nabla\vec j) = \partial_t\rho + \nabla\cdot\vec j$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $\partial_t\rho + \nabla\cdot\vec j$ vanishes to finite-difference accuracy ($\sim10^{-6}$).</p>
-<p>The current is conserved, but its time component $\rho$ is <strong>not positive definite</strong>. For the positive-frequency plane wave $\tilde{\Phi}=N e^{i(\vec k\cdot\vec x-\omega t)}$ with $\omega>0$, direct substitution gives</p>
+<p>The current is conserved, but its time component $\rho$ is <strong>not positive definite</strong>. For the positive-frequency plane wave $\tilde{\Phi}=N \exp(i(\vec k\cdot\vec x-\omega t))$ with $\omega>0$, direct substitution gives</p>
 <p>$$
 \rho = \frac{\hbar\omega}{mc^2}\,|N|^2 > 0 ,
 $$</p>
@@ -230,9 +230,9 @@ $$</p>
 <h2 id="the-non-relativistic-limit">The Non-Relativistic Limit</h2>
 <p>There is a check that the biquaternion Klein–Gordon equation is consistent with the parent article rather than merely alongside it. For the central field, remove the rest energy by the substitution</p>
 <p>$$
-\tilde{\Phi} = e^{-imc^2t/\hbar}\,\tilde{\psi},
+\tilde{\Phi} = \exp(-imc^2t/\hbar)\,\tilde{\psi},
 $$</p>
-<p>with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ and using $\partial_t^2\!\left(e^{-imc^2t/\hbar}\tilde{\psi}\right) = e^{-imc^2t/\hbar}\left(\partial_t^2\tilde{\psi} - 2i\frac{mc^2}{\hbar}\partial_t\tilde{\psi} - \frac{m^2c^4}{\hbar^2}\tilde{\psi}\right)$ gives</p>
+<p>with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ and using $\partial_t^2\!\left(\exp(-imc^2t/\hbar)\tilde{\psi}\right) = \exp(-imc^2t/\hbar)\left(\partial_t^2\tilde{\psi} - 2i\frac{mc^2}{\hbar}\partial_t\tilde{\psi} - \frac{m^2c^4}{\hbar^2}\tilde{\psi}\right)$ gives</p>
 <p>$$
 \frac{1}{c^2}\partial_t^2\tilde{\psi} - \frac{2im}{\hbar}\partial_t\tilde{\psi} - \Delta\tilde{\psi} = 0 ,
 $$</p>
@@ -247,7 +247,7 @@ $$</p>
 <p>Three things are genuinely rearranged rather than renamed.</p>
 <ol>
 <li>
-<p><strong>The wave operator is a biquaternion norm.</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $N(\cdot)$.</p>
+<p><strong>The wave operator is a biquaternion norm.</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$. The equation and its on-shell condition are both statements about $\langle \cdot\rangle_{\natural}$.</p>
 </li>
 <li>
 <p><strong>The current's home is explicit.</strong> The conserved four-current lies in $\mathbb{M}_-$, and conservation is $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the same scalar pairing that appears in the framework's $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ trace formula. The continuity equation is a scalar projection of a stronger biquaternion equation.</p>
@@ -355,7 +355,7 @@ $$</p>
 <td>Four-wavevector biquaternion</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

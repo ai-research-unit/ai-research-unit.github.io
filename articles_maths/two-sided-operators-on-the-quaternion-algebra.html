@@ -69,7 +69,7 @@
 <p><strong>Corollary (the units).</strong> $T_{\tilde a,\tilde b}$ is invertible exactly when $\tilde a\neq0$ and $\tilde b\neq0$, with inverse $T_{\tilde a^{-1},\tilde b^{-1}}$.</p>
 <p><em>Proof.</em> In the product monoid an element $(\tilde a,\tilde b)$ is invertible exactly when both factors are, and the inverse is $(\tilde a^{-1},\tilde b^{-1})$; in the operator monoid the inverse is $T_{\tilde a^{-1},\tilde b^{-1}}$.</p>
 <h2 id="the-adjoint-that-swaps-the-parameters">The Adjoint that Swaps the Parameters</h2>
-<p><strong>Theorem.</strong> With respect to the plain form $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ the transpose of a two-sided operator swaps the parameters:</p>
+<p><strong>Theorem.</strong> With respect to the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ the transpose of a two-sided operator swaps the parameters:</p>
 <p>$$
 T_{\tilde a,\tilde b}^{\sim}=T_{\tilde b,\tilde a}=L_{\tilde b}R_{\tilde a}.
 $$</p>
@@ -77,7 +77,7 @@ $$</p>
 <p><strong>Corollary.</strong> $T_{\tilde a,\tilde b}$ is self-transpose exactly when $\tilde b\in\mathbb{R}\tilde a$ or $\tilde a\in\mathbb{R}\tilde b$.</p>
 <p><em>Proof.</em> $T_{\tilde a,\tilde b}=T_{\tilde b,\tilde a}$ exactly when $\tilde a\tilde q\tilde b=\tilde b\tilde q\tilde a$ for all $\tilde q$, which is the sandwich criterion of <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category.</p>
 <h2 id="the-criterion-of-form-preservation">The Criterion of Form Preservation</h2>
-<p><strong>Theorem.</strong> $T_{\tilde a,\tilde b}$ preserves the plain form, $\mathrm B(T\tilde p,T\tilde q)=\mathrm B(\tilde p,\tilde q)$ for all $\tilde p,\tilde q$, exactly when $\tilde b\tilde a=\pm e_0$.</p>
+<p><strong>Theorem.</strong> $T_{\tilde a,\tilde b}$ preserves the plain form, $\langle T\tilde p,T\tilde q\rangle=\langle\tilde p,\tilde q\rangle$ for all $\tilde p,\tilde q$, exactly when $\tilde b\tilde a=\pm e_0$.</p>
 <p><em>Proof.</em> For $T=T_{\tilde a,\tilde b}$ invertible, preservation of the form is equivalent to $T^{\sim}T=\mathrm{id}$; if $\tilde a=0$ or $\tilde b=0$ then $T=0$, which preserves the form only if the form were zero. Now by the composition law $T^{\sim}T=T_{\tilde b,\tilde a}T_{\tilde a,\tilde b}=T_{\tilde b\tilde a,\tilde b\tilde a}$, and $T_{\tilde c,\tilde d}=\mathrm{id}$ exactly when $\tilde c\tilde q\tilde d=\tilde q$ for all $\tilde q$; at $\tilde q=e_0$ this gives $\tilde c\tilde d=e_0$, so $\tilde d=\tilde c^{-1}$, and substituting gives $\tilde c\tilde q\tilde c^{-1}=\tilde q$ for all $\tilde q$, that is $\tilde c$ central. Hence $\tilde c=\tilde b\tilde a$ is central with $\tilde c^2=e_0$; a central element with $\tilde c^2=e_0$ is $\pm e_0$, so $\tilde b\tilde a=\pm e_0$. Conversely $\tilde b\tilde a=\pm e_0$ makes $\tilde b=\pm\tilde a^{-1}$, and then $T(\tilde q)=\tilde a\tilde q(\pm\tilde a^{-1})=\pm\tilde a\tilde q\tilde a^{-1}$, which preserves the form.</p>
 <p><strong>Corollary.</strong> The form-preserving two-sided operators are the operators $\pm\operatorname{Ad}_{\tilde a}$, where $\operatorname{Ad}_{\tilde a}(\tilde q)=\tilde a\tilde q\tilde a^{-1}$ is the inner automorphism by a unit; on the parameter the criterion reads $\tilde b=\pm\tilde a^{-1}$.</p>
 <p><strong>Corollary.</strong> The sign $+$ operators form the group $\operatorname{Ad}(\mathbb{H}^{\times})\cong\mathbb{H}^{\times}/\mathbb{R}^{\times}$ of inner automorphisms, and the sign $-$ operators are the negatives of these; the transpose on the form-preserving family is the inverse, $\operatorname{Ad}_{\tilde a}^{\sim}=\operatorname{Ad}_{\tilde a}^{-1}=\operatorname{Ad}_{\tilde a^{-1}}$.</p>
@@ -117,7 +117,7 @@ $$</p>
 <td>Inner automorphism $\tilde q\mapsto\tilde a\tilde q\tilde a^{-1}$</td>
 </tr>
 <tr>
-<td>$\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$</td>
+<td>$\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$</td>
 <td>The plain form</td>
 </tr>
 </tbody>

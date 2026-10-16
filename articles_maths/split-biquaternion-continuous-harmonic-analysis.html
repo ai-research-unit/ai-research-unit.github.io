@@ -59,7 +59,7 @@
 <p>$$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
-<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p>The <strong>idempotent components</strong> of $\tilde{Q}$ are the real quaternions</p>
 <p>$$
 \tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
@@ -84,7 +84,7 @@ W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
 $$</p>
 <p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit quaternion:</p>
 <p>$$
-N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1.
+\langle W(t, \omega)\rangle_{\natural} = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = 1.
 $$</p>
 <p>In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:</p>
 <p>$$
@@ -233,9 +233,9 @@ $$</p>
 <h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
 <p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
 <h3 id="the-gradient">The Gradient</h3>
-<p>Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
+<p>Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
 <p>$$
-\mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
+\mathcal{F}[\partial_0 F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
 $$</p>
 <p>where the sign depends on the convention for the kernel.</p>
 <p>If the transform is taken in all four variables, the gradient becomes multiplication by the split biquaternion</p>
@@ -246,13 +246,13 @@ $$</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
 <p>The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
 <p>$$
-\mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
+\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$</p>
 <p>The multiplier is a scalar (times $e_0$), and it vanishes on the <strong>null cone</strong></p>
 <p>$$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$</p>
-<p>So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the null cone.</p>
+<p>So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
 <p>$$
@@ -268,9 +268,9 @@ $$</p>
 <h3 id="the-general-principle">The General Principle</h3>
 <p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a split-biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
 <h3 id="the-operators-in-the-idempotent-basis">The Operators in the Idempotent Basis</h3>
-<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $\tilde{F} = \tilde{F}_+ \tilde\Pi_1 + \tilde{F}_- \tilde\Pi_2$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts as</p>
+<p>In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F^{\mathrm{fn}} = F^{\mathrm{fn}}_+ \tilde\Pi_1 + F^{\mathrm{fn}}_- \tilde\Pi_2$ with $F^{\mathrm{fn}}_\pm \in \mathbb{H}$, the gradient acts as</p>
 <p>$$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) \tilde\Pi_1 + (\tilde{\nabla} \tilde{F}_-) \tilde\Pi_2,
+\tilde{\nabla} F^{\mathrm{fn}} = (\tilde{\nabla} F^{\mathrm{fn}}_+) \tilde\Pi_1 + (\tilde{\nabla} F^{\mathrm{fn}}_-) \tilde\Pi_2,
 $$</p>
 <p>where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.</p>
 <h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
@@ -306,7 +306,7 @@ $$</p>
 <p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.</p>
 </li>
 <li>
-<p><strong>The support of the transform of solutions of $\tilde{\nabla}\tilde{F} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}\tilde{F} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+<p><strong>The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
 </li>
 <li>
 <p><strong>The Plancherel theorem for general functions.</strong> Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.</p>
@@ -365,7 +365,7 @@ $$</p>
 <td>Idempotent components</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$</td>
 <td>Split-Biquaternion norm</td>
 </tr>
 <tr>

@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-signed-left-multiplication-on-a-lie-algebra"><strong>The Signed Left Multiplication on a Lie Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>signed left multiplication</strong> is the one-sided operator $x\mapsto a\,\alpha(x)$, read on a Lie algebra through the bracket: $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, so that $\ell^{\alpha}_a(x) = [a,\alpha(x)]$. It is the infinitesimal generator of the signed conjugation — the derivative at the origin of the family $\rho_{ta} = e^{t\operatorname{ad}_a}\alpha$ — and it is the unsigned left multiplication with the sign $-1$ imposed on the odd part. The article defines the operator, relates it to the unsigned left multiplication and to the signed sandwich, computes its kernel and its fixed set, and records the cases in which it degenerates.</p>
+<p>The <strong>signed left multiplication</strong> is the one-sided operator $x\mapsto a\,\alpha(x)$, read on a Lie algebra through the bracket: $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, so that $\ell^{\alpha}_a(x) = [a,\alpha(x)]$. It is the infinitesimal generator of the signed conjugation — the derivative at the origin of the family $\rho_{ta} = \exp(t\operatorname{ad}_a)\alpha$ — and it is the unsigned left multiplication with the sign $-1$ imposed on the odd part. The article defines the operator, relates it to the unsigned left multiplication and to the signed sandwich, computes its kernel and its fixed set, and records the cases in which it degenerates.</p>
 <p>This article treats the signed left multiplication on a Lie algebra, its relation to the unsigned left multiplication and the elements it fixes. It is the seventh article of the <code>- Operator Theory</code> group of the category; the unsigned left and right multiplications are from <em>Operators on a Lie Group</em>, the signed sandwich is <em>The Signed Sandwich on a Lie Algebra</em> and the reflections are <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>, both above, and the adjoint of the operator is <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em> of the <code>- * Operator Theory</code> group, below in the category.</p>
 <p>The article assumes the Lie algebra and the adjoint representation from <em>The Lie Correspondence and the Adjoint Representation</em>, the exponential and its differential from <em>The Lie Algebra and the Exponential Map</em>, the grade involution and the grading from <em>Graded Lie Algebras and Lie Superalgebras</em>, the centraliser and the centre from <em>Lie Algebras</em>, and the signed sandwich and the signed conjugation from the two preceding articles of this group. The associative one-sided operator $x\mapsto a\alpha(x)$ of <em>The Signed Left Multiplication on an Algebra</em> is cited as the model; the module case is <em>The Graded Action on a Module over a Lie Algebra</em>, below.</p>
 <h2 id="the-definition">The Definition</h2>
@@ -64,13 +64,13 @@ $$</p>
 <p>and the <strong>signed right multiplication</strong> is $r^{\alpha}_b = R_b\circ\alpha$ with $r^{\alpha}_b(x) = [\alpha(x),b]$.</p>
 <p><strong>Proposition.</strong> The signed left multiplication is the derivative at the origin of the family of the signed conjugations,</p>
 <p>$$
-\ell^{\alpha}_a = \frac{d}{dt}\Big|_{t=0}\rho_{ta} = \frac{d}{dt}\Big|_{t=0}e^{t\operatorname{ad}_a}\alpha ,
+\ell^{\alpha}_a = \frac{d}{dt}\Big|_{t=0}\rho_{ta} = \frac{d}{dt}\Big|_{t=0}\exp(t\operatorname{ad}_a)\alpha ,
 $$</p>
 <p>and it is a derivation of the algebra,</p>
 <p>$$
 \ell^{\alpha}_a[x,y] = [\ell^{\alpha}_ax,y] + [x,\ell^{\alpha}_ay] .
 $$</p>
-<p><em>Proof.</em> Differentiate the family at $t = 0$, which gives $\operatorname{ad}_a\alpha$ because the derivative of $e^{t\operatorname{ad}_a}$ is $\operatorname{ad}_a$; the derivation property is the Jacobi identity together with the multiplicativity of $\alpha$.</p>
+<p><em>Proof.</em> Differentiate the family at $t = 0$, which gives $\operatorname{ad}_a\alpha$ because the derivative of $\exp(t\operatorname{ad}_a)$ is $\operatorname{ad}_a$; the derivation property is the Jacobi identity together with the multiplicativity of $\alpha$.</p>
 <h3 id="the-relation-to-the-unsigned-case">The Relation to the Unsigned Case</h3>
 <p><strong>Proposition (the sign on the odd part).</strong> The signed left multiplication is the unsigned left multiplication with the sign $-1$ on the odd part,</p>
 <p>$$
@@ -112,10 +112,10 @@ $$</p>
 <p><em>Proof.</em> From $\Sigma^{\alpha}_{a,b} = L_aR_b\alpha$ and the commutation $\alpha R_b = R_{\alpha(b)}\alpha$ one gets $L_aR_b\alpha = L_a\alpha R_{\alpha(b)} = \ell^{\alpha}_aR_{\alpha(b)}$; the second form is analogous.</p>
 <p><strong>Corollary.</strong> The signed sandwich is the composite of two one-sided signed operators, and the signed conjugation is the exponential of the signed left multiplication,</p>
 <p>$$
-\rho_a = e^{\operatorname{ad}_a}\alpha = \exp(\ell^{\alpha}_a) ,
+\rho_a = \exp(\operatorname{ad}_a)\alpha = \exp(\ell^{\alpha}_a) ,
 $$</p>
-<p>where the exponential is that of the endomorphism algebra and the identity makes sense because the family $t\mapsto e^{t\operatorname{ad}_a}\alpha$ is the one-parameter family with derivative $\ell^{\alpha}_a$ at the origin, in the sense of the left quotient.</p>
-<p><em>Proof.</em> The first statement is the factorisation of the theorem; the second is the integration of the derivative computed above, the family $e^{t\operatorname{ad}_a}\alpha$ having the prescribed derivative at $t = 0$ in the semidirect product of the inner automorphisms with the involution.</p>
+<p>where the exponential is that of the endomorphism algebra and the identity makes sense because the family $t\mapsto \exp(t\operatorname{ad}_a)\alpha$ is the one-parameter family with derivative $\ell^{\alpha}_a$ at the origin, in the sense of the left quotient.</p>
+<p><em>Proof.</em> The first statement is the factorisation of the theorem; the second is the integration of the derivative computed above, the family $\exp(t\operatorname{ad}_a)\alpha$ having the prescribed derivative at $t = 0$ in the semidirect product of the inner automorphisms with the involution.</p>
 <h2 id="the-degenerate-cases">The Degenerate Cases</h2>
 <h3 id="the-identity-involution">The Identity Involution</h3>
 <p><strong>Proposition.</strong> If $\alpha = \mathrm{id}$ then $\ell^{\alpha}_a = L_a = \operatorname{ad}_a$ is the ordinary left multiplication, its kernel is the centraliser $\mathfrak{c}(a)$, and its fixed set is the set of the resonances of $\operatorname{ad}_a$ with the identity; the signed theory coincides with the unsigned one.</p>
@@ -124,12 +124,12 @@ $$</p>
 <p><strong>Proposition.</strong> If $\mathrm{G}$ is abelian then $\ell^{\alpha}_a = 0$ for every $a$; the operator vanishes and both the kernel and the fixed set degenerate — the kernel is the whole algebra and the fixed set is empty for $a\neq0$ and the whole algebra for $a = 0$.</p>
 <p><em>Proof.</em> The bracket is zero in an abelian algebra.</p>
 <h3 id="the-inner-involution">The Inner Involution</h3>
-<p><strong>Proposition.</strong> If the grade involution is inner, $\alpha = e^{\operatorname{ad}_w}$, then</p>
+<p><strong>Proposition.</strong> If the grade involution is inner, $\alpha = \exp(\operatorname{ad}_w)$, then</p>
 <p>$$
-\ell^{\alpha}_a = \operatorname{ad}_a e^{\operatorname{ad}_w} = e^{\operatorname{ad}_w}\operatorname{ad}_{e^{-\operatorname{ad}_w}a} ,
+\ell^{\alpha}_a = \operatorname{ad}_a \exp(\operatorname{ad}_w) = \exp(\operatorname{ad}_w)\operatorname{ad}_{\exp(-\operatorname{ad}_w)a} ,
 $$</p>
 <p>and the signed left multiplication is the unsigned one with the parameter transformed; the one-sided sign therefore produces no new operator, as in the two-sided case.</p>
-<p><em>Proof.</em> Substitute $\alpha = e^{\operatorname{ad}_w}$ and move the exponential past the derivation with the naturality of the adjoint action.</p>
+<p><em>Proof.</em> Substitute $\alpha = \exp(\operatorname{ad}_w)$ and move the exponential past the derivation with the naturality of the adjoint action.</p>
 <h3 id="the-central-parameter">The Central Parameter</h3>
 <p><strong>Proposition.</strong> If $a$ is central then $\ell^{\alpha}_a = 0$, and the kernel is the whole algebra while the fixed set is empty for the nonzero parameter; the signed left multiplication vanishes on the centre, so the operator measures the non-centrality of the parameter.</p>
 <p><em>Proof.</em> A central $a$ has $\operatorname{ad}_a = 0$.</p>
@@ -141,7 +141,7 @@ $$</p>
 <h3 id="the-heisenberg-algebra">The Heisenberg Algebra</h3>
 <p>Let $\mathrm{G}$ be the Heisenberg algebra with $[X,Y] = Z$ central and the grading with $Z$ even and $X,Y$ odd. For $a = X$ the operator $\ell^{\alpha}_X(x) = [X,\alpha(x)]$ sends $Y$ to $[X,-Y] = -Z$ and $Z$ to $[X,Z] = 0$; the kernel contains $Z$ and $X$, and the operator is injective on the odd part generated by $Y$.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>signed left multiplication</strong> on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$; it is the derivative at the origin of the family of the signed conjugations $e^{t\operatorname{ad}_a}\alpha$, it is a derivation, and it is the ordinary left multiplication with the sign $-1$ on the odd part and $+1$ on the even part. It factors through the grade involution as $\ell^{\alpha}_a = \alpha L_{\alpha(a)}$, so the ordinary left multiplication is $\alpha\ell^{\alpha}_a = L_{\alpha(a)}$; its kernel is the centraliser $\mathfrak{c}(\alpha(a))$ and its fixed set is the solution set of $\operatorname{ad}_a\alpha(x) = x$, a coset of the kernel. The signed sandwich is the composite of the signed left multiplication with a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and the signed conjugation is the exponential of the signed left multiplication, $\rho_a = \exp(\ell^{\alpha}_a)$ in the semidirect product of the inner automorphisms with the involution, which is the sense in which the reflections are integrated from the one-sided operator. The construction degenerates when the involution is the identity — the unsigned case — when the algebra is abelian or the parameter is central, and when the involution is inner, in which case the sign produces no new operator.</p>
+<p>The <strong>signed left multiplication</strong> on a Lie algebra is $\ell^{\alpha}_a = \operatorname{ad}_a\circ\alpha$, the operator $x\mapsto[a,\alpha(x)]$; it is the derivative at the origin of the family of the signed conjugations $\exp(t\operatorname{ad}_a)\alpha$, it is a derivation, and it is the ordinary left multiplication with the sign $-1$ on the odd part and $+1$ on the even part. It factors through the grade involution as $\ell^{\alpha}_a = \alpha L_{\alpha(a)}$, so the ordinary left multiplication is $\alpha\ell^{\alpha}_a = L_{\alpha(a)}$; its kernel is the centraliser $\mathfrak{c}(\alpha(a))$ and its fixed set is the solution set of $\operatorname{ad}_a\alpha(x) = x$, a coset of the kernel. The signed sandwich is the composite of the signed left multiplication with a signed right multiplication, $\Sigma^{\alpha}_{a,b} = \ell^{\alpha}_aR_{\alpha(b)}$, and the signed conjugation is the exponential of the signed left multiplication, $\rho_a = \exp(\ell^{\alpha}_a)$ in the semidirect product of the inner automorphisms with the involution, which is the sense in which the reflections are integrated from the one-sided operator. The construction degenerates when the involution is the identity — the unsigned case — when the algebra is abelian or the parameter is central, and when the involution is inner, in which case the sign produces no new operator.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the remarkable-subspace lattice. The involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.</p>
 <p>The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $\langle A\rangle = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.</p>
 <h2 id="the-two-involutions">The Two Involutions</h2>
 <p>The algebra carries two involutions: the split-complex conjugation $\bar{A} = a-ja'$ and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:</p>
 <p>$$
@@ -322,7 +322,7 @@ $$</p>
 <thead>
 <tr>
 <th>line</th>
-<th>restricted $N$</th>
+<th>restricted $\langle\cdot\rangle$</th>
 <th>signature</th>
 <th>zero divisors on the line</th>
 </tr>
@@ -330,25 +330,25 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{R}_{\mathbb{D}}$</td>
-<td>$N(a) = a^2$</td>
+<td>$\langle a\rangle = a^2$</td>
 <td>positive definite</td>
 <td>none</td>
 </tr>
 <tr>
 <td>$j\mathbb{R}_{\mathbb{D}}$</td>
-<td>$N(j a') = -a'^2$</td>
+<td>$\langle j a'\rangle = -a'^2$</td>
 <td>negative definite</td>
 <td>none</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\Pi_1$</td>
-<td>$N(\lambda \Pi_1) = 0$</td>
+<td>$\langle \lambda \Pi_1\rangle = 0$</td>
 <td>zero</td>
 <td>all nonzero elements</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\Pi_2$</td>
-<td>$N(\lambda \Pi_2) = 0$</td>
+<td>$\langle \lambda \Pi_2\rangle = 0$</td>
 <td>zero</td>
 <td>all nonzero elements</td>
 </tr>
@@ -362,7 +362,7 @@ $$</p>
 \qquad
 \mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ia'\},
 $$</p>
-<p>exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $N(ia') = a'^2$, <strong>positive definite</strong>, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.</p>
+<p>exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, <strong>positive definite</strong>, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -476,7 +476,7 @@ $$</p>
 <td>Idempotent coordinates</td>
 </tr>
 <tr>
-<td>$N(A) = a^2-a'^2$</td>
+<td>$\langle A\rangle = a^2-a'^2$</td>
 <td>Norm, zero on the idempotent lines</td>
 </tr>
 <tr>

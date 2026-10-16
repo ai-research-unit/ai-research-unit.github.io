@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>functional integral</strong>, or field integral, is the field-theoretic generalization of the Feynman path integral: instead of summing over the paths of one particle, it sums over all field configurations,
 $$
-Z = \int \mathcal{D}\tilde\Phi\; e^{\,iS[\tilde\Phi]/\hbar},
+Z = \int \mathcal{D}\tilde\Phi\; \exp(\,iS[\tilde\Phi]/\hbar),
 $$
 and its derivatives generate the correlation functions of the theory. The two integrals are not the same object. The path integral sums over the histories of a fixed finite number of degrees of freedom; the functional integral sums over a field, an infinite-dimensional configuration space, and it is the object from which the S-matrix, the generating functional, and the functional determinant are built. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to the functional integral, taking as its point of departure the companion article <em>The Path Integral in Biquaternionic Form</em>, which settles the phase and the Wick rotation for the quantum-mechanical case.</p>
 <p>The contributions divide cleanly, and the division is the content of the article.</p>
@@ -81,12 +81,12 @@ $$
 each factor being a Gaussian integral on the sector's module.</li>
 <li><strong>Established (algebra).</strong> The Gaussian functional integral is evaluated exactly by the algebra's trace pairing and the determinant of $K$ on the module:
 $$
-\int \mathcal{D}\tilde\Phi\; e^{-\frac12\langle \tilde\Phi, K\tilde\Phi\rangle + \langle \tilde J,\tilde\Phi\rangle}
-= \big(\det K\big)^{-1/2}\, e^{\frac12\langle \tilde J, K^{-1}\tilde J\rangle},
+\int \mathcal{D}\tilde\Phi\; \exp(-\frac12\langle \tilde\Phi, K\tilde\Phi\rangle + \langle \tilde J,\tilde\Phi\rangle)
+= \big(\det K\big)^{-1/2}\, \exp(\frac12\langle \tilde J, K^{-1}\tilde J\rangle),
 $$
 where $\langle\cdot,\cdot\rangle$ is built from $\mathrm{Sc}$ and the determinant is taken on the spinor module. The finite-dimensional instance of this formula is verified below with explicit Hermitian matrices, and the dependence of $Z$ on the source reproduces the classical action of the free field up to the factor $\tfrac12$.</li>
 <li><strong>Standard, and transcribed.</strong> The measure $\mathcal{D}\tilde\Phi$, the action functional as a datum, the perturbative expansion in powers of the interaction, and the Grassmann integral for fermions. The algebra supplies none of these; the space of field configurations is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. The gap is stated rather than closed.</li>
-<li><strong>The Euclidean rotation.</strong> As in the companion <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> — the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ — the rotation turns the oscillatory weight $e^{iS}$ into the decaying weight $e^{-S_E}$. This is what makes the Gaussian integral convergent and is the framework's own account of why the Euclidean integral is better behaved.</li>
+<li><strong>The Euclidean rotation.</strong> As in the companion <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> — the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ — the rotation turns the oscillatory weight $\exp(iS)$ into the decaying weight $\exp(-S_E)$. This is what makes the Gaussian integral convergent and is the framework's own account of why the Euclidean integral is better behaved.</li>
 </ul>
 <p>The article proceeds as follows. The next section distinguishes the functional integral from the path integral. A section fixes the field, its two sectors, and the central-scalar action. Two sections evaluate the Gaussian functional integral and verify it in finite dimension. A section exhibits the sector factorization. A section treats the free scalar field explicitly, a section the Euclidean rotation, and a section the measure and the gap. A section separates what is established from what is interpretation, and the article closes with open questions.</p>
 <p><strong>Conventions.</strong> We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The sectors are
@@ -97,13 +97,13 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{Q} = ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\tilde k^{\natural}=-m^2$ for $\tilde k=iEe_0+\vec p$. These are the conventions of <em>Conventions in the Biquaternion Universe</em>, <em>The Feynman Propagator in Biquaternionic Form</em>, and <em>The S-Matrix in Biquaternionic Form</em>.</p>
+the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{Q} = ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\tilde k^{\natural}=-m^2$ for $\tilde k=iEe_0+\vec p$. These are the conventions of <em>Conventions in the Biquaternion Universe</em>, <em>The Feynman Propagator in Biquaternionic Form</em>, and <em>The S-Matrix in Biquaternionic Form</em>.</p>
 <h2 id="the-functional-integral-and-the-path-integral">The Functional Integral and the Path Integral</h2>
 <p>The distinction is worth making precisely, because the two share a notation and not a meaning.</p>
 <p>The <strong>path integral</strong> of <em>The Path Integral in Biquaternionic Form</em> has for its integration variable a map $x:t\mapsto x(t)$ from an interval to space, and its measure $\mathcal{D}x(t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,t_f;x_i,t_i)$ — a function of two points.</p>
 <p>The <strong>functional integral</strong> has for its integration variable a field $\tilde\Phi:x\mapsto\tilde\Phi(x)$, a section of a bundle over spacetime, and its measure $\mathcal{D}\tilde\Phi$ is a limit of measures on the field values at finitely many spacetime points. The number of integration variables is finite at every stage too — a lattice regularization makes this explicit — but the limit is over an infinite-dimensional configuration space, and the result is a number $Z$ or a functional $Z[\tilde J]$.</p>
-<p>Two consequences of the distinction matter for the framework. First, the algebra's contribution to the phase — the central scalar imaginary and the location of the $i\epsilon$ along the $ict$ direction — is inherited unchanged, because the weight of the functional integral is the same $e^{iS/\hbar}$ with the same central $i$. Second, the algebra's contribution to the <em>action</em> is new, because a field is biquaternion-valued and the action must be a scalar; this is the subject of the next section. The gap of the path-integral article — that the space of paths is outside the finite-dimensional algebra — is inherited and enlarged: the space of field configurations is outside it too.</p>
-<p>There is a third kind of object in Dirac's extension of the construction to fields, and it is the one that plays the role the particle kernel plays rather than the role $Z$ or $Z[\tilde J]$ plays. If $S[\tilde\Phi]$ is the integral of the Lagrangian density over a region of spacetime, the quantum analogue of $e^{iS/\hbar}$ is a <strong>generalized transformation function</strong>: a functional of the field values on the <em>boundary</em> of the region, obeying the same composition law as the kernel — split the region in two, multiply the two functionals, and integrate over the field values on the common boundary. Applied repeatedly, the law connects a region with its infinitesimal sub-regions and contains the quantum analogue of the action principle for fields. Unlike the particle kernel of the companion article, it is not in general a transformation between two sets of dynamical variables, and its probability interpretation is correspondingly restricted: the square of its modulus is a relative a priori probability only when the region is bounded by two separate three-dimensional surfaces, each extending to infinity in the space directions and lying entirely outside every light cone with vertex on the other. That condition is the field-theoretic counterpart of the causal ordering that the Feynman propagator's $i\epsilon$ encodes — the amplitude between two configurations is defined when neither surface reaches the other — and it is a restriction on the region and not on the algebra. The object is formal, a limit of the same finite-dimensional integrals as $Z$; it is named here for what it is, a boundary-value functional rather than a number.</p>
+<p>Two consequences of the distinction matter for the framework. First, the algebra's contribution to the phase — the central scalar imaginary and the location of the $i\epsilon$ along the $ict$ direction — is inherited unchanged, because the weight of the functional integral is the same $\exp(iS/\hbar)$ with the same central $i$. Second, the algebra's contribution to the <em>action</em> is new, because a field is biquaternion-valued and the action must be a scalar; this is the subject of the next section. The gap of the path-integral article — that the space of paths is outside the finite-dimensional algebra — is inherited and enlarged: the space of field configurations is outside it too.</p>
+<p>There is a third kind of object in Dirac's extension of the construction to fields, and it is the one that plays the role the particle kernel plays rather than the role $Z$ or $Z[\tilde J]$ plays. If $S[\tilde\Phi]$ is the integral of the Lagrangian density over a region of spacetime, the quantum analogue of $\exp(iS/\hbar)$ is a <strong>generalized transformation function</strong>: a functional of the field values on the <em>boundary</em> of the region, obeying the same composition law as the kernel — split the region in two, multiply the two functionals, and integrate over the field values on the common boundary. Applied repeatedly, the law connects a region with its infinitesimal sub-regions and contains the quantum analogue of the action principle for fields. Unlike the particle kernel of the companion article, it is not in general a transformation between two sets of dynamical variables, and its probability interpretation is correspondingly restricted: the square of its modulus is a relative a priori probability only when the region is bounded by two separate three-dimensional surfaces, each extending to infinity in the space directions and lying entirely outside every light cone with vertex on the other. That condition is the field-theoretic counterpart of the causal ordering that the Feynman propagator's $i\epsilon$ encodes — the amplitude between two configurations is defined when neither surface reaches the other — and it is a restriction on the region and not on the algebra. The object is formal, a limit of the same finite-dimensional integrals as $Z$; it is named here for what it is, a boundary-value functional rather than a number.</p>
 <h2 id="the-field-and-the-central-scalar-action">The Field and the Central-Scalar Action</h2>
 <p>Let the field be a map
 $$
@@ -132,7 +132,7 @@ $$
 where $\tilde K$ is built from the central d'Alembertian and a central mass, and $S_{\mathrm{int}}$ collects interactions. Three properties of this action are the algebra's.</p>
 <ol>
 <li><strong>It is a scalar, obtained by the trace.</strong> The integrand is the real part of a trace, hence a number, and the integral is a number. The trace pairing is exactly the operation that converts the algebra-valued field into an action. This is the field-theoretic counterpart of the propagator article's trace formula.</li>
-<li><strong>It is invariant under the biquaternion-norm isometries.</strong> The quadratic term with $\tilde K$ central is unchanged by left multiplication $\tilde\Phi\mapsto\tilde U\tilde\Phi$ and right multiplication $\tilde\Phi\mapsto\tilde\Phi\tilde V$ by unit real quaternions, $N(\tilde U) = \langle\tilde U,\tilde U\rangle_{\natural}=N(\tilde V)=e_0$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_0$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.</li>
+<li><strong>It is invariant under the biquaternion-norm isometries.</strong> The quadratic term with $\tilde K$ central is unchanged by left multiplication $\tilde\Phi\mapsto\tilde U\tilde\Phi$ and right multiplication $\tilde\Phi\mapsto\tilde\Phi\tilde V$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde V\rangle_{\natural}=e_0$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_0$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.</li>
 <li><strong>It is sector-blind when $\tilde K$ is central.</strong> A central $\tilde K$ commutes with the projections onto $\mathbb{M}_\pm$, so it does not mix the sectors. The consequences are computed in the next two sections.</li>
 </ol>
 <p>The mass term requires a word of care, because the framework's <strong>Dirac</strong> mass is not central. As <em>The Dirac Equation in Biquaternionic Form</em> records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, and it acts as a <em>right</em> multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a <strong>scalar</strong> example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $\tilde K$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs.</p>
@@ -140,18 +140,18 @@ where $\tilde K$ is built from the central d'Alembertian and a central mass, and
 <p>The exact evaluation of the Gaussian functional integral is the backbone of perturbation theory, and in the biquaternion framework it is a finite-dimensional determinant problem per mode.</p>
 <p><strong>Finite-dimensional statement.</strong> Let $\phi\in\mathbb{C}^n$ and let $K$ be an $n\times n$ Hermitian positive-definite matrix. Then
 $$
-\int d^n\phi\; e^{-\frac12 \phi^\dagger K\phi + J^\dagger\phi + \phi^\dagger J}
-= \frac{(2\pi)^n}{\det K}\, e^{\,J^\dagger K^{-1} J}.
+\int d^n\phi\; \exp(-\frac12 \phi^\dagger K\phi + J^\dagger\phi + \phi^\dagger J)
+= \frac{(2\pi)^n}{\det K}\, \exp(\,J^\dagger K^{-1} J).
 $$
-For a real field, $\phi\in\mathbb{R}^n$, the same integral is $(2\pi)^{n/2}(\det K)^{-1/2}e^{\frac12 J^T K^{-1}J}$; the difference of a factor $2$ in the exponent and a factor $2$ in the power of $2\pi$ is the standard real-versus-complex counting, and it is exactly the counting that a biquaternion field's two-complex-dimensional mode supplies. The <strong>free energy</strong> $W[J]=\log Z[J]$ is then
+For a real field, $\phi\in\mathbb{R}^n$, the same integral is $(2\pi)^{n/2}(\det K)^{-1/2}\exp(\frac12 J^T K^{-1}J)$; the difference of a factor $2$ in the exponent and a factor $2$ in the power of $2\pi$ is the standard real-versus-complex counting, and it is exactly the counting that a biquaternion field's two-complex-dimensional mode supplies. The <strong>free energy</strong> $W[J]=\log Z[J]$ is then
 $$
 W[J] - W[0] = \tfrac12\, J^\dagger K^{-1}J ,
 $$
 a Gaussian in the source.</p>
-<p><strong>The biquaternion case.</strong> A field $\tilde\Phi$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\hat u)\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
+<p><strong>The biquaternion case.</strong> A field $\tilde\Phi$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
 $$
-\int \mathcal{D}\tilde\Phi\; e^{-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle + \langle\tilde J,\tilde\Phi\rangle}
-= \big(\det \tilde K\big)^{-1/2}\, e^{\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle},
+\int \mathcal{D}\tilde\Phi\; \exp(-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle + \langle\tilde J,\tilde\Phi\rangle)
+= \big(\det \tilde K\big)^{-1/2}\, \exp(\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle),
 $$
 where $\langle\tilde\Phi,\tilde\Psi\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde\Phi^{*}\tilde\Psi)$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+m^2$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the Lorentzian action's operator $\tilde K=\Box-m^2$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $\tilde K^{-1}$. The determinant is the object that <em>The Functional Determinant in Biquaternionic Form</em> computes; this article records only that the Gaussian integral reduces to it.</p>
 <p><strong>Finite-dimensional verification.</strong> The <strong>real</strong> form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
@@ -175,9 +175,9 @@ $$</p>
 <p><strong>Proof.</strong> It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_0,e_1,e_2,e_3\}$ and $\tilde\phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_0,ie_1,ie_2,ie_3\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
-Z_0[\tilde J] = \int\mathcal{D}\tilde\phi_-\,e^{-\frac12\langle\tilde\phi_-,\tilde K\tilde\phi_-\rangle+\langle\tilde J_-,\tilde\phi_-\rangle}
+Z_0[\tilde J] = \int\mathcal{D}\tilde\phi_-\,\exp(-\frac12\langle\tilde\phi_-,\tilde K\tilde\phi_-\rangle+\langle\tilde J_-,\tilde\phi_-\rangle)
 \times
-\int\mathcal{D}\tilde\phi_+\,e^{-\frac12\langle\tilde\phi_+,\tilde K\tilde\phi_+\rangle+\langle\tilde J_+,\tilde\phi_+\rangle}
+\int\mathcal{D}\tilde\phi_+\,\exp(-\frac12\langle\tilde\phi_+,\tilde K\tilde\phi_+\rangle+\langle\tilde J_+,\tilde\phi_+\rangle)
 = Z_-[J_-]\,Z_+[J_+] .
 $$
 Each factor is a Gaussian integral on one sector's four-real-dimensional space, of the form evaluated above. The free quadratic form is therefore <strong>block diagonal</strong>, and the free integral factorizes into a Gaussian on each sector; the sectors are coupled only through an interaction $S_{\mathrm{int}}$ that is not sector-diagonal. A central kinetic operator cannot couple them; a chirality-off-diagonal Dirac mass can, because it is a right multiplication and so is not central.</p>
@@ -218,7 +218,7 @@ $$
 i.e. the relabeling of the imaginary-time coefficient as a real one, $ic(-i\tau)=c\tau$, as <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> establishes.
 Under this identification the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$ (the biquaternion norm), and the oscillatory weight becomes a decaying one:
 $$
-e^{\,iS[\tilde\Phi]} \;\longrightarrow\; e^{-S_E[\tilde\Phi]},
+\exp(\,iS[\tilde\Phi]) \;\longrightarrow\; \exp(-S_E[\tilde\Phi]),
 \qquad
 S_E[\tilde\Phi] = \int d^4x_E\;\mathrm{Sc}\Big(\tilde\Phi^{\natural}\big(-\Box_E+m^2\big)\tilde\Phi\Big).
 $$
@@ -246,15 +246,15 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 <p><strong>The gap.</strong> The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra <em>does</em> supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.</p>
 <p><strong>Fermionic fields.</strong> For a fermionic field the functional integral is over Grassmann-valued fields, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
-\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;e^{\,\tilde\Psi^{\natural}\big(i\partial\!\!\!/\,-m\big)\tilde\Psi} = \det\big(i\partial\!\!\!/\,-m\big),
+\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;\exp(\,\tilde\Psi^{\natural}\big(i\partial\!\!\!/\,-m\big)\tilde\Psi) = \det\big(i\partial\!\!\!/\,-m\big),
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (algebra).</strong>
 - The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}\tilde K\tilde\Phi)$; the trace pairing is the scalar extraction.
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\phi^{\natural}_-\tilde\phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
-- The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}e^{\frac12\langle J,K^{-1}J\rangle}$ on the module; checked in finite dimension with explicit Hermitian matrices.
-- The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $e^{iS}$ into $e^{-S_E}$.
+- The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module; checked in finite dimension with explicit Hermitian matrices.
+- The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
 - The $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ fixes the null cones and the causal relation on which the causally complete regions are built, and microcausality — the vanishing of the field commutator outside the light cone — is the operator form of Einstein causality; the wedge with $\tilde K_W=2\pi G_1$ is the one fully worked causally complete region.</p>
 <p><strong>Standard, and transcribed.</strong>
 - The definition of the functional integral, the measure, the lattice or mode regularization, the perturbative expansion, the Grassmann integral and its determinant, and the free scalar propagator.
@@ -275,7 +275,7 @@ the cross terms vanishing identically over the sector bases (their real part is 
 $$
 Z_0[\tilde J]=Z_-[J_-]\,Z_+[J_+] ,
 \qquad
-Z_\pm[J_\pm]=\big(\det \tilde K_\pm\big)^{-1/2}e^{\frac12\langle J_\pm,\tilde K_\pm^{-1}J_\pm\rangle}.
+Z_\pm[J_\pm]=\big(\det \tilde K_\pm\big)^{-1/2}\exp(\frac12\langle J_\pm,\tilde K_\pm^{-1}J_\pm\rangle).
 $$
 The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $\tilde K$.</p>
 <p>The <strong>measure</strong>, the <strong>space of field configurations</strong>, and the <strong>interaction</strong> are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a <strong>causally complete region</strong> — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the cone metric, which fixes the causal relation $O''=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde K_W=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.</p>
@@ -333,11 +333,11 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Quadratic biquaternion action; $\tilde K=\Box-m^2$</td>
 </tr>
 <tr>
-<td>$Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle+\langle\tilde J,\tilde\Phi\rangle}$</td>
+<td>$Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle+\langle\tilde J,\tilde\Phi\rangle)$</td>
 <td>Functional integral with source</td>
 </tr>
 <tr>
-<td>$Z_0=(\det\tilde K)^{-1/2}e^{\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle}$</td>
+<td>$Z_0=(\det\tilde K)^{-1/2}\exp(\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle)$</td>
 <td>Gaussian result; $\prod_k(\tilde k\tilde k^{\natural}+m^2)^{-1}$ per mode for the free central operator</td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 </tr>
 <tr>
 <td>$t\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$</td>
-<td>Wick rotation; $e^{iS}\to e^{-S_E}$</td>
+<td>Wick rotation; $\exp(iS)\to \exp(-S_E)$</td>
 </tr>
 <tr>
 <td>$O$, $O'$, $O''=O$</td>
@@ -362,7 +362,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>

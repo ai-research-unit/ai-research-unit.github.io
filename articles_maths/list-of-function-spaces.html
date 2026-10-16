@@ -64,7 +64,7 @@
 </thead>
 <tbody>
 <tr>
-<td>$L^p(\mu)$, $1 \leq p < \infty$</td>
+<td>$L^{n}(\mu)$, $1 \leq p < \infty$</td>
 <td>$\lVert f\rVert_p = \left(\int \lvert f\rvert^p d\mu\right)^{1/p}$; complete by the Riesz–Fischer theorem</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
@@ -79,7 +79,7 @@
 <td><em>Banach and Hilbert Spaces</em></td>
 </tr>
 <tr>
-<td>$\ell^p$, $1 \leq p < \infty$</td>
+<td>$\ell^{n}$, $1 \leq p < \infty$</td>
 <td>$\lVert(x_n)\rVert_p = \left(\sum_n \lvert x_n\rvert^p\right)^{1/p}$; complete</td>
 <td><em>Normed and Banach Spaces</em></td>
 </tr>
@@ -99,7 +99,7 @@
 <td><em>Normed and Banach Spaces</em>; <em>Metric, Uniform and Complete Spaces</em></td>
 </tr>
 <tr>
-<td>$L^p(0,T;V)$, Bochner space</td>
+<td>$L^{n}(0,T;V)$, Bochner space</td>
 <td>$\left(\int_0^T \lVert u(t)\rVert_V^p dt\right)^{1/p}$; complete when $V$ is Banach</td>
 <td><em>Sobolev Spaces and Weak Solutions</em></td>
 </tr>
@@ -159,8 +159,8 @@
 </thead>
 <tbody>
 <tr>
-<td>$W^{k,p}(\Omega)$, $W^{k,p}_0(\Omega)$</td>
-<td>$\lVert f\rVert_{W^{k,p}}^p = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_p^p$; a Banach space, hence complete</td>
+<td>$W^{k,n}(\Omega)$, $W^{k,n}_0(\Omega)$</td>
+<td>$\lVert f\rVert_{W^{k,n}}^p = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_p^p$; a Banach space, hence complete</td>
 <td><em>Sobolev Spaces and Weak Solutions</em></td>
 </tr>
 <tr>
@@ -175,11 +175,11 @@
 </tr>
 <tr>
 <td>$H^s(\mathbb R^n)$, $s \in \mathbb R$</td>
-<td>$\lVert f\rVert_{H^s}^2 = \int(1+\lvert\xi\rvert^2)^s\lvert\hat f(\xi)\rvert^2 d\xi$; complete</td>
+<td>$\lVert f\rVert_{H^s}^2 = \int(1+\lvert\xi\rvert^2)^s\lvert(\mathcal F f)(\xi)\rvert^2 d\xi$; complete</td>
 <td><em>Fourier Analysis on Euclidean Spaces</em></td>
 </tr>
 <tr>
-<td>$H^s_p$, Bessel-potential space</td>
+<td>$H^{s}_{n}$, Bessel-potential space</td>
 <td>$\lVert f\rVert = \lVert(1-\Delta)^{s/2}f\rVert_p$; complete</td>
 <td><em>Interpolation Theory</em></td>
 </tr>
@@ -194,13 +194,13 @@
 <td><em>Besov and Triebel–Lizorkin Spaces</em></td>
 </tr>
 <tr>
-<td>$B^s_{p,q}$, Besov space</td>
-<td>the mixed $\ell^q(L^p)$ norm of the Littlewood–Paley blocks; a quasi-Banach space, complete</td>
+<td>$B^{s}_{n,m}$, Besov space</td>
+<td>the mixed $\ell^{m}(L^{n})$ norm of the Littlewood–Paley blocks; a quasi-Banach space, complete</td>
 <td><em>Besov and Triebel–Lizorkin Spaces</em></td>
 </tr>
 <tr>
-<td>$F^s_{p,q}$, Triebel–Lizorkin space</td>
-<td>the mixed $L^p(\ell^q)$ norm of the Littlewood–Paley blocks; complete</td>
+<td>$F^{s}_{n,m}$, Triebel–Lizorkin space</td>
+<td>the mixed $L^{n}(\ell^{m})$ norm of the Littlewood–Paley blocks; complete</td>
 <td><em>Besov and Triebel–Lizorkin Spaces</em></td>
 </tr>
 <tr>
@@ -209,7 +209,7 @@
 <td><em>Besov and Triebel–Lizorkin Spaces</em></td>
 </tr>
 <tr>
-<td>$L^{p,q}$, Lorentz space</td>
+<td>$L^{n},q}$, Lorentz space</td>
 <td>the norm of the decreasing rearrangement, $\lVert f\rVert = \left(\int_0^\infty (t^{1/p}f^*(t))^q \frac{dt}{t}\right)^{1/q}$; complete</td>
 <td><em>Interpolation Theory</em></td>
 </tr>
@@ -227,7 +227,7 @@
 <tbody>
 <tr>
 <td>$H^p(\mathbb D)$, Hardy space</td>
-<td>$\lVert f\rVert_{H^p} = \sup_{0<r<1}\left(\frac{1}{2\pi}\int_0^{2\pi}\lvert f(re^{i\theta})\rvert^p d\theta\right)^{1/p}$; complete</td>
+<td>$\lVert f\rVert_{H^p} = \sup_{0<r<1}\left(\frac{1}{2\pi}\int_0^{2\pi}\lvert f(r\exp(i\theta))\rvert^p d\theta\right)^{1/p}$; complete</td>
 <td><em>Complex Harmonic Analysis</em></td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@
 </thead>
 <tbody>
 <tr>
-<td>$L^p(\mu)$ with $0 < p < 1$</td>
+<td>$L^{n}(\mu)$ with $0 < p < 1$</td>
 <td>carries a quasi-norm but no norm, and is not locally convex</td>
 <td><em>Locally Convex Spaces</em></td>
 </tr>
@@ -295,7 +295,7 @@
 </tr>
 <tr>
 <td>$c_{00}$, finitely supported sequences</td>
-<td>dense in $\ell^p$, hence normed but not complete</td>
+<td>dense in $\ell^{n}$, hence normed but not complete</td>
 <td><em>Normed and Banach Spaces</em></td>
 </tr>
 <tr>
@@ -316,7 +316,7 @@
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>This list gathers the function spaces of the corpus in four families: the measurable spaces $L^p$ and their discrete counterparts $\ell^p$; the continuous and smooth spaces $C^k$, $C^\infty$ and the holomorphic spaces; the smoothness scales $W^{k,p}$, $H^s$, the Hölder, Besov, Triebel–Lizorkin and Hardy spaces; and the analytic and test-function spaces $H^p$, $A^p$, the Schwartz class and $\mathcal D$. Each row records the norm or the topology the space carries and whether it is complete, and the final table records the spaces for which completeness or normability fails.</p>
+<p>This list gathers the function spaces of the corpus in four families: the measurable spaces $L^{n}$ and their discrete counterparts $\ell^{n}$; the continuous and smooth spaces $C^k$, $C^\infty$ and the holomorphic spaces; the smoothness scales $W^{k,n}$, $H^s$, the Hölder, Besov, Triebel–Lizorkin and Hardy spaces; and the analytic and test-function spaces $H^p$, $A^p$, the Schwartz class and $\mathcal D$. Each row records the norm or the topology the space carries and whether it is complete, and the final table records the spaces for which completeness or normability fails.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <p>The objects of this list are named rather than denoted; the few symbols used in the tables are collected here.</p>
 <div class="table-scroll"><table>
@@ -333,7 +333,7 @@
 </tr>
 <tr>
 <td>$\mu$</td>
-<td>a measure, so that $L^p(\mu)$ is a Lebesgue space</td>
+<td>a measure, so that $L^{n}(\mu)$ is a Lebesgue space</td>
 </tr>
 <tr>
 <td>$\Omega$, $U$</td>
@@ -345,7 +345,7 @@
 </tr>
 <tr>
 <td>$p,q$</td>
-<td>conjugate exponents, $1/p + 1/q = 1$</td>
+<td>conjugate exponents, $1/n + 1/m = 1$</td>
 </tr>
 <tr>
 <td>$k,\alpha,s$</td>

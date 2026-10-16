@@ -123,9 +123,9 @@ $$</p>
 <p>into the $R$-algebra of functions on the character set with pointwise operations.</p>
 <p><strong>Theorem.</strong> $\Gamma$ is a unital $R$-algebra homomorphism, and under it the multiplication operator $L_a$ becomes multiplication of functions by $\Gamma(a)$:</p>
 <p>$$
-\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \hat a\,\hat x ,
+\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \mathcal F a\,\mathcal F x ,
 $$</p>
-<p>where $\hat a = \Gamma(a)$.</p>
+<p>where $\mathcal F a = \Gamma(a)$.</p>
 <p><em>Proof.</em> For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$.</p>
 <p>The kernel of $\Gamma$ is the <strong>Jacobson radical</strong> — the intersection of the maximal ideals, that is, the elements annihilated by every character — and $\Gamma$ is injective exactly when the characters separate points, which is the hypothesis of the triangularisation proposition. For a reduced algebra of finite type over a field the radical vanishes and the transform is injective.</p>
 <p><strong>Remark (what is deferred).</strong> The transform is treated here as an algebraic homomorphism into a ring of functions. Its analytic theory — that when $R = \mathbb{C}$ and $A$ carries a norm the character set becomes a compact space, the transform is an isometry, and it is an isomorphism onto the algebra of continuous functions for a suitable class of algebras — needs the distance of Part II and the limit of Part III. The reader will find it in <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>; nothing of it is used here.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p><strong>Example.</strong> For $A = k^n$ the multiplication operator $L_a$ with $a = (a_1, \dots, a_n)$ is the diagonal matrix $\operatorname{diag}(a_1, \dots, a_n)$, and $T(a,b) = \sum_i a_i b_i$; the trace pairing is the standard bilinear form on $k^n$. For $A = \mathbb D$ above, $T(a+bj, c+dj) = 2(ac+bd)$ by the matrix form of $L$, the factor $2$ being the rank.</p>
 <h2 id="summary">Summary</h2>
 <p>For a commutative unital $R$-algebra $A$, the <strong>multiplication operators</strong> $L_a(x) = ax$ satisfy $L_{ab} = L_aL_b = L_bL_a$ and $L_{a+b} = L_a + L_b$, so $L : A \to \operatorname{End}_R(A)$ is a faithful $R$-algebra homomorphism; its image is the <strong>regular representation</strong> $L(A)$, a commutative subalgebra isomorphic to $A$. The family is its own centralizer in the operator algebra: every operator commuting with all $L_a$ is a multiplication operator, which is the statement $\operatorname{End}_A(A) \cong A$ for the regular module. A derivation interacts with the family by $[\delta, L_a] = L_{\delta(a)}$.</p>
-<p>The <strong>characters</strong> of $A$ are the unital homomorphisms $\chi : A \to R$, and each is a common eigenvector of the family, with $\chi \circ L_a = \chi(a)\chi$. Collecting the eigenvalues gives the <strong>Gelfand transform</strong> $\Gamma(a)(\chi) = \chi(a)$, a unital algebra homomorphism into the algebra of functions on the character set, under which $L_a$ is multiplication of functions by $\hat a$. The transform is injective exactly when the characters separate points, and its kernel is the Jacobson radical. The topological and analytic theory of the transform — the compact character space, the norm, the isometry — needs the distance of Part II and the limit of Part III and is deferred to <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>. The trace pairing $T(a,b) = \operatorname{tr}(L_a L_b)$ is symmetric and associative, and every multiplication operator is self-adjoint for it.</p>
+<p>The <strong>characters</strong> of $A$ are the unital homomorphisms $\chi : A \to R$, and each is a common eigenvector of the family, with $\chi \circ L_a = \chi(a)\chi$. Collecting the eigenvalues gives the <strong>Gelfand transform</strong> $\Gamma(a)(\chi) = \chi(a)$, a unital algebra homomorphism into the algebra of functions on the character set, under which $L_a$ is multiplication of functions by $\mathcal F a$. The transform is injective exactly when the characters separate points, and its kernel is the Jacobson radical. The topological and analytic theory of the transform — the compact character space, the norm, the isometry — needs the distance of Part II and the limit of Part III and is deferred to <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>. The trace pairing $T(a,b) = \operatorname{tr}(L_a L_b)$ is symmetric and associative, and every multiplication operator is self-adjoint for it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -212,7 +212,7 @@ $$</p>
 <td>A character, $\chi(ab) = \chi(a)\chi(b)$, $\chi(1) = 1$</td>
 </tr>
 <tr>
-<td>$\Gamma$, $\hat a = \Gamma(a)$</td>
+<td>$\Gamma$, $\mathcal F a = \Gamma(a)$</td>
 <td>Gelfand transform; the function $\chi \mapsto \chi(a)$</td>
 </tr>
 <tr>

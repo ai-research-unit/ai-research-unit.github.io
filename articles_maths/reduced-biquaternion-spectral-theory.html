@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduced Biquaternion Spectral Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reduced-biquaternion-spectral-theory"><strong>Reduced Biquaternion Spectral Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$ is commutative, associative and unital, and it is <strong>not</strong> a division algebra; both facts simplify the spectral theory and separate it from the two non-commutative members of the family. In this article <strong>spectrum</strong> without qualification means the spectrum of the linear map of left multiplication, computed as a complex spectrum by complexifying that real operator; because the algebra is commutative and the coefficients are complex, the intrinsic spectrum with scalars in $\mathbb{C}$ and the operator spectrum agree, and there is no separate quaternionic spectrum as in the split biquaternion case.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The algebra, its idempotents and the decomposition $T=q_1\Pi_{1}+q_2\Pi_{2}$ are assumed from <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>; the norm and the invertibility criterion from <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>; the elementary functions as needed from <em>Reduced Biquaternion Elementary Functions</em>. Throughout $T=A+Bj$ with $A=a+ia'$, $B=b+ib'$, the idempotent coordinates are $q_1=A+B$ and $q_2=A-B$, and the multiplication is componentwise.</p>
+<h2 id="the-spectrum-of-an-element">The Spectrum of an Element</h2>
+<p><strong>Definition.</strong> The <strong>spectrum</strong> of $T$ is the set of complex $\lambda$ for which $\lambda L_{1}-L_{T}$ is not invertible, $L_{T}$ being the operator of left multiplication on the complex two-dimensional space $\mathbb{B}_{\mathrm{r}}$ with basis $1,j$. The element is <strong>regular</strong> as an element of the algebra when it is a unit, and <strong>singular</strong> otherwise.</p>
+<p><strong>Theorem (the spectrum is the coordinate pair).</strong> The characteristic polynomial of $L_{T}$ is
+$$
+\chi_{T}(\lambda)=\det(\lambda L_{1}-L_{T})=(\lambda-q_1)(\lambda-q_2)=\lambda^{2}-\operatorname{tr}(T)\,\lambda+\det(T),
+$$
+so
+$$
+\sigma(T)=\{q_1,q_2\},
+$$
+with the two values counted with multiplicity, where
+$$
+\operatorname{tr}(T)=q_1+q_2=2A,\qquad \det(T)=\langle T\rangle_{\natural}=q_1q_2=A^{2}-B^{2}
+$$
+are the <strong>reduced trace</strong> and the <strong>reduced determinant</strong>. The element is singular exactly when $0\in\sigma(T)$, that is when $q_1=0$ or $q_2=0$, which is the zero-divisor condition $\langle T\rangle_{\natural}=0$.</p>
+<p><em>Proof.</em> In the basis $1,j$ the matrix of $L_{T}$ is $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$, whose characteristic polynomial is $(\lambda-A)^{2}-B^{2}=(\lambda-A-B)(\lambda-A+B)=(\lambda-q_1)(\lambda-q_2)$; the trace is $2A$ and the determinant $A^{2}-B^{2}=\langle T\rangle_{\natural}=q_1q_2$, and the algebra is commutative, so left and right multiplications coincide.</p>
+<p><strong>Corollary (the diagonal model).</strong> In the idempotent basis $\Pi_{1},\Pi_{2}$ the operator $L_{T}$ is diagonal,
+$$
+L_{T}=\operatorname{diag}(q_1,q_2),
+$$
+so the spectrum is read directly on the two coordinates and no triangular or Jordan structure appears.</p>
+<p><em>Proof.</em> $T\Pi_{1}=q_1\Pi_{1}$ and $T\Pi_{2}=q_2\Pi_{2}$, because the idempotents are orthogonal and $q_1,q_2$ are the two characters.</p>
+<h2 id="left-and-right-eigenvalues">Left and Right Eigenvalues</h2>
+<p><strong>Theorem (the two spectra coincide).</strong> For every $T$, a vector $w$ is a left eigenvector with eigenvalue $\lambda$ if and only if it is a right eigenvector with the same eigenvalue; the left and the right spectra are equal to the spectrum $\sigma(T)$ of the preceding section.</p>
+<p><em>Proof.</em> The algebra is commutative, so $Tw=\lambda w$ and $wT=\lambda w$ are the same equation; and the right spectrum is the spectrum of right multiplication, whose matrix is the transpose of $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$, with the same characteristic polynomial.</p>
+<p><strong>Corollary (no asymmetry).</strong> The asymmetry between the left and the right spectrum of the split biquaternion algebra, and the split between the left spectrum and the S-spectrum there, do not occur: the reduced biquaternion element has one spectrum, the coordinate pair, and it is the same for the left and the right action.</p>
+<p><em>Proof.</em> Commutativity makes the two actions identical, and the conjugate classes that distinguish the quaternionic spectra degenerate to single points in $\mathbb{C}$.</p>
+<h2 id="cayleyhamilton-and-the-trace-and-determinant-functionals">Cayley–Hamilton and the Trace and Determinant Functionals</h2>
+<p><strong>Theorem (the reduced Cayley–Hamilton identity).</strong> Every element satisfies
+$$
+T^{2}-\operatorname{tr}(T)\,T+\det(T)\,1=0,\qquad \operatorname{tr}(T)=2A,\quad \det(T)=\langle T\rangle_{\natural},
+$$
+and the same identity holds for the operator, $L_{T}^{2}-2A\,L_{T}+\langle T\rangle_{\natural}\,L_{1}=0$.</p>
+<p><em>Proof.</em> In the idempotent coordinates the left side is $q_1^{2}-(q_1+q_2)q_1+q_1q_2$ in the first component and $q_2^{2}-(q_1+q_2)q_2+q_1q_2$ in the second, both zero; the operator statement follows by applying the identity to the regular module.</p>
+<p><strong>Theorem (additivity and multiplicativity).</strong> The reduced trace is $\mathbb{C}$-linear and additive, $\operatorname{tr}(T+W)=\operatorname{tr}(T)+\operatorname{tr}(W)$; the reduced determinant is multiplicative, $\det(TW)=\det(T)\det(W)$; and $\det(T)$ vanishes exactly on the zero-divisor set.</p>
+<p><em>Proof.</em> $\operatorname{tr}(T)=2A$ is linear in the complex coordinate $A$; $\det(T)=\langle T\rangle_{\natural}=q_1q_2$ is multiplicative, the coordinates multiplying componentwise; and the vanishing of the product is the unit criterion.</p>
+<p><strong>Corollary (the inverse).</strong> On the complement of the zero-divisor set,
+$$
+T^{-1}=q_1^{-1}\Pi_{1}+q_2^{-1}\Pi_{2}=\frac{A-Bj}{\langle T\rangle_{\natural}},
+$$
+the second expression being the companion formula in the basis $1,j$.</p>
+<p><em>Proof.</em> The coordinate inverse $q_1^{-1}\Pi_{1}+q_2^{-1}\Pi_{2}$ multiplies $T=q_1\Pi_{1}+q_2\Pi_{2}$ to $\Pi_{1}+\Pi_{2}=1$; and $A-Bj=(A-B)\Pi_{1}+(A+B)\Pi_{2}=q_2\Pi_{1}+q_1\Pi_{2}$, whose product with $q_1^{-1}\Pi_{1}+q_2^{-1}\Pi_{2}$ is again $1$.</p>
+<h2 id="similarity-and-the-classification">Similarity and the Classification</h2>
+<p><strong>Definition.</strong> Two elements are <strong>similar</strong>, written $T\sim S$, when $PTP^{-1}=S$ for some unit $P$.</p>
+<p><strong>Theorem (the classification).</strong> $T\sim S$ if and only if $q_{1,T}=q_{1,S}$ and $q_{2,T}=q_{2,S}$, that is if and only if the two elements have the same reduced trace and the same reduced determinant. The similarity classes are therefore the ordered pairs $(q_1,q_2)\in\mathbb{C}^{2}$, and there is no Jordan pathology: every element is diagonal, and the only nilpotent element is $0$.</p>
+<p><em>Proof.</em> A unit $P$ has coordinates $(p,q)$ with $p,q\neq0$ and conjugates $T$ to $(pu p^{-1},qv q^{-1})=(q_1,q_2)$, so similarity does not change the coordinates; conversely, if the coordinates agree, the identity is a conjugating unit. No permutation of the two coordinates is induced by a unit, since the unit group acts diagonally, so the pair is ordered. Finally $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$, which vanishes for some $n$ exactly when $q_1=q_2=0$.</p>
+<p><strong>Corollary (the commutant).</strong> The centraliser of a non-scalar element $T$, that is the set of $W$ with $TW=WT$, is the whole algebra, since the algebra is commutative; and the automorphisms of the algebra act on the coordinates by the idempotent-preserving involutions rather than by an inner action.</p>
+<p><em>Proof.</em> Commutativity makes every element commute with every other; the automorphisms act on the pair $(q_1,q_2)$ by the swaps and conjugations induced by the bar, the natural sign and the star, described in <em>The Two Involutions and the Group of Involutions</em>.</p>
+<h2 id="eigenspaces-and-their-dimensions">Eigenspaces and Their Dimensions</h2>
+<p><strong>Theorem (the eigenspaces).</strong> If $q_1\neq q_2$, the eigenvalue $q_1$ has the one-dimensional eigenspace $\mathbb{C}\Pi_{1}$ and the eigenvalue $q_2$ the one-dimensional eigenspace $\mathbb{C}\Pi_{2}$, each of complex dimension one, and the two span the algebra. If $q_1=q_2$, that is if $B=0$ and $T=A\cdot1$, then $T$ is the scalar $A$, the spectrum is the single value $A$ with multiplicity two, and the eigenspace is the whole algebra.</p>
+<p><em>Proof.</em> $T\Pi_{1}=q_1\Pi_{1}$ and $T\Pi_{2}=q_2\Pi_{2}$, and the two idempotent lines are the coordinate axes; when $q_1=q_2$ the operator $L_{T}$ is the scalar $A$ and every vector is an eigenvector.</p>
+<p><strong>Corollary (the spectral projections).</strong> The spectral projection onto the eigenspace of $q_1$ is $\Pi_{1}$ and onto that of $q_2$ is $\Pi_{2}$, and they are the idempotents of the algebra. The <strong>minimal polynomial</strong> of $T$ is $(\lambda-q_1)(\lambda-q_2)$ when $q_1\neq q_2$ and $\lambda-q_1$ when $q_1=q_2$, that is the product of the distinct linear factors of the characteristic polynomial.</p>
+<p><em>Proof.</em> The projections are the coordinate projections of the Peirce decomposition, and the minimal polynomial is the product of the distinct linear factors of the characteristic polynomial.</p>
+<h2 id="the-resolvent">The Resolvent</h2>
+<p><strong>Definition.</strong> For $\lambda\notin\sigma(T)$ the <strong>resolvent</strong> is $R(\lambda,T)=(\lambda L_{1}-L_{T})^{-1}$, read on the algebra as $(\lambda-T)^{-1}$.</p>
+<p><strong>Theorem (the closed form and the identity).</strong> The resolvent is
+$$
+R(\lambda,T)=\frac{\Pi_{1}}{\lambda-q_1}+\frac{\Pi_{2}}{\lambda-q_2},
+$$
+it is analytic in $\lambda$ on the complement of the two points $q_1,q_2$, and it satisfies the resolvent identity $R(\lambda,T)-R(\mu,T)=(\mu-\lambda)R(\lambda,T)R(\mu,T)$.</p>
+<p><em>Proof.</em> In the idempotent basis the operator is diagonal with diagonal entries $\lambda-q_1$ and $\lambda-q_2$, and the inverse is diagonal with the reciprocal entries; the identity is algebra in the commutative algebra.</p>
+<p><strong>Corollary (the resolvent at infinity).</strong> For large $\lambda$ one has $R(\lambda,T)=\lambda^{-1}1+\lambda^{-2}T+\lambda^{-3}T^{2}+\cdots$, the Neumann series of the algebra, convergent for $|\lambda|>\rho(T)$.</p>
+<p><em>Proof.</em> Expanding $(\lambda-T)^{-1}=\lambda^{-1}(1-T/\lambda)^{-1}$ and summing the geometric series in the finite-dimensional commutative algebra gives the displayed series, which converges for $|\lambda|>\rho(T)$ and sums to the closed form $(\lambda-q_1)^{-1}\Pi_{1}+(\lambda-q_2)^{-1}\Pi_{2}$; the terms satisfy the recurrence $T^{n+1}=\operatorname{tr}(T)T^{n}-\det(T)T^{n-1}$ read from Cayley–Hamilton, so the series is that of the two geometric series in the coordinates.</p>
+<h2 id="the-spectral-radius">The Spectral Radius</h2>
+<p><strong>Definition.</strong> The <strong>spectral radius</strong> of $T$ is $\rho(T)=\max\{|\lambda|:\lambda\in\sigma(T)\}$.</p>
+<p><strong>Theorem (the value and the operator norm).</strong> $\rho(T)=\max(|q_1|,|q_2|)$; it equals the operator norm of $L_{T}$ for the Euclidean norm of the algebra, $\rho(T)=\lVert L_{T}\rVert$; it vanishes exactly at $T=0$; and it is bounded by the two coordinates through
+$$
+\frac{\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2}}{4}\le\rho(T)^{2}\le\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2}.
+$$</p>
+<p><em>Proof.</em> The operator is diagonal with entries $q_1,q_2$, so its norm and its spectral radius are both the maximum of the two moduli; the vanishing of the maximum forces both coordinates to zero, hence $T=0$, the algebra having no non-zero nilpotent. The left inequality compares the maximum with twice the mean and the right compares it with the sum of squares, and $\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2}=2K(T)$.</p>
+<p><strong>Corollary (the Gelfand formula is finite).</strong> Because the powers are $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$ and obey the two-term recurrence $T^{n+2}=\operatorname{tr}(T)\,T^{n+1}-\det(T)\,T^{n}$ of Cayley–Hamilton, the Gelfand limit is the maximum of the two moduli,
+$$
+\rho(T)=\lim_{n}\lVert T^{n}\rVert^{1/n}=\max\bigl(\lvert q_1\rvert,\lvert q_2\rvert\bigr),
+$$
+computed from the two coordinates alone, and there is no nilpotent block.</p>
+<p><em>Proof.</em> Cayley–Hamilton gives the recurrence for the powers, whence the closed form $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$; with $\lVert T^{n}\rVert=\sqrt{\tfrac12(\lvert q_1\rvert^{2n}+\lvert q_2\rvert^{2n})}$ the $n$-th root tends to $\max(\lvert q_1\rvert,\lvert q_2\rvert)$ as $n\to\infty$, the larger of the two powers dominating.</p>
+<h2 id="the-exponential-and-the-logarithm">The Exponential and the Logarithm</h2>
+<p><strong>Theorem (the exponential).</strong> The exponential is componentwise,
+$$
+\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2},
+$$
+it maps the algebra into the unit group, and the reduced determinant is $\det(\exp T)=e^{q_1+q_2}=e^{\operatorname{tr}(T)}$. The exponential is never zero, so every element of the image is a unit; it is not injective, its kernel being the elements with $q_1,q_2\in2\pi i\mathbb{Z}$.</p>
+<p><em>Proof.</em> The exponential of a diagonal operator is diagonal with the exponentials of the entries, and the coordinates are the characters, so $\exp(T)$ has coordinates $e^{q_1},e^{q_2}$; the determinant is the product, $e^{q_1}e^{q_2}=e^{q_1+q_2}$; the kernel is the preimage of $1$, that is $e^{q_1}=e^{q_2}=1$.</p>
+<p><strong>Theorem (the logarithm).</strong> An element $T$ has a logarithm, that is a solution of $\exp S=T$, if and only if it is a unit, and then
+$$
+\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}
+$$
+for a choice of the two complex branches; the solution is determined modulo the kernel, which is $2\pi i\,\mathbb{Z}^{2}$ read in the two coordinates.</p>
+<p><em>Proof.</em> Each coordinate equation $e^{s}=q_1$ has a solution exactly when $q_1\neq0$, and the solutions differ by $2\pi i$; the two coordinates decouple.</p>
+<h2 id="the-relation-to-the-biquaternion-and-split-biquaternion-spectral-theories">The Relation to the Biquaternion and Split-Biquaternion Spectral Theories</h2>
+<p>The biquaternion algebra $\mathbb{B}=M_{2}(\mathbb{C})$ is simple, with a single complex eigenvalue of multiplicity two for a generic element and the S-spectrum to repair the failure of the naive definition. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ has a four-value complex spectrum $\{q_{0}^{+}\pm i|\vec Q_{+}|\}\cup\{q_{0}^{-}\pm i|\vec Q_{-}|\}$ with doubled multiplicities, a quaternionic left spectrum $\{\tilde Q_{+},\tilde Q_{-}\}$ and a right spectrum that is a union of two conjugacy classes. The reduced biquaternion algebra is the commutative case: the spectrum is the two complex coordinates $q_1,q_2$ with multiplicity one, the left and the right spectra coincide, the reduced trace and determinant are $\mathbb{C}$-valued and are the ordinary trace and determinant of the diagonal model, the Cayley–Hamilton identity is the ordinary one, and the resolvent is the pair of one-variable resolvents. What is lost against the quaternion cases is the conjugate-class structure; what is gained is that the two coordinates classify the element completely, with no Jordan blocks and no nilpotents beyond $0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion element $T$ has the spectrum $\sigma(T)=\{q_1,q_2\}$, the pair of its idempotent coordinates, which are the eigenvalues of left multiplication in the basis $1,j$ with matrix $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$. Left and right eigenvalues coincide, because the algebra is commutative, and the intrinsic spectrum over $\mathbb{C}$ is the operator spectrum; there is no quaternionic or S-spectrum. The reduced trace $\operatorname{tr}(T)=2A=q_1+q_2$ is additive and the reduced determinant $\det(T)=\langle T\rangle_{\natural}=q_1q_2$ is multiplicative and vanishes exactly on the zero-divisor set, and Cayley–Hamilton reads $T^{2}-\operatorname{tr}(T)T+\det(T)1=0$, the minimal polynomial having degree at most two. Similarity changes neither coordinate, so the classes are the ordered pairs $(q_1,q_2)$; the eigenspaces are the two idempotent lines when $q_1\neq q_2$ and the whole algebra when $T$ is a scalar; the resolvent is $(\lambda-q_1)^{-1}\Pi_{1}+(\lambda-q_2)^{-1}\Pi_{2}$, analytic off the two points and satisfying the resolvent identity; and the spectral radius is $\max(|q_1|,|q_2|)$, equal to the operator norm of left multiplication and vanishing only at $0$, there being no non-zero nilpotent. The exponential is $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$, its determinant is $e^{\operatorname{tr}(T)}$, and the logarithm exists exactly on the units for a branch choice in each coordinate. Against the biquaternion and split biquaternion theories the finite complex spectrum, the field-valued trace and determinant and the diagonal model replace the S-spectrum, the quaternionic trace and norm functionals and the conjugate-class structure, the whole theory being the pair of the complex one-variable spectral theories of the two coordinates.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{T}$</td>
+<td>Operator of left multiplication by $T$</td>
+</tr>
+<tr>
+<td>$q_1=A+B$, $q_2=A-B$</td>
+<td>Idempotent coordinates, the eigenvalues</td>
+</tr>
+<tr>
+<td>$\sigma(T)=\{q_1,q_2\}$</td>
+<td>Spectrum</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(T)=2A=q_1+q_2$</td>
+<td>Reduced trace</td>
+</tr>
+<tr>
+<td>$\det(T)=\langle T\rangle_{\natural}=q_1q_2=A^{2}-B^{2}$</td>
+<td>Reduced determinant</td>
+</tr>
+<tr>
+<td>$\chi_{T}(\lambda)=\lambda^{2}-\operatorname{tr}(T)\lambda+\det(T)$</td>
+<td>Characteristic polynomial</td>
+</tr>
+<tr>
+<td>$R(\lambda,T)=(\lambda-q_1)^{-1}\Pi_{1}+(\lambda-q_2)^{-1}\Pi_{2}$</td>
+<td>Resolvent</td>
+</tr>
+<tr>
+<td>$\rho(T)=\max(|q_1|,|q_2|)$</td>
+<td>Spectral radius</td>
+</tr>
+<tr>
+<td>$\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$</td>
+<td>Exponential</td>
+</tr>
+<tr>
+<td>$\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}$</td>
+<td>Logarithm on the units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. F. Bonsall and J. Duncan, <em>Complete Normed Algebras</em> (Springer, 1973), for the spectral theory of elements and operators in a commutative Banach algebra.</li>
+<li>W. Rudin, <em>Functional Analysis</em>, 2nd edition (McGraw-Hill, 1991), for the resolvent, the spectral radius and the Gelfand theory.</li>
+<li>G. Baley Price, <em>An Introduction to Multicomplex Spaces and Functions</em> (Marcel Dekker, 1991), for the trace, the norm and the idempotent decomposition of the multicomplex algebra.</li>
+<li>M. Elena Luna-Elizarrarás, Michael Shapiro, Daniele C. Struppa and Adrian Vajiac, <em>Bicomplex Holomorphic Functions</em> (Birkhäuser, 2015), for the holomorphic functional calculus and the spectral properties of the commutative algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace, the determinant and the Cayley–Hamilton theorem in a finite-dimensional algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

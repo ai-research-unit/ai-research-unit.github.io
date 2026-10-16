@@ -52,28 +52,28 @@
       <div class="article-body">
         <h1 id="split-quaternion-zero-divisors"><strong>Split-Quaternion Zero Divisors</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion $N(\tilde q) = 0$ that identifies them with the null cone, exhibits the two families of minimal one-sided ideals into which the zero divisor set splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.</p>
-<p>The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_{1,2}$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from <em>Split-Quaternion Algebra</em>, and the metrical reading of $N$ from <em>Split-Quaternion Norm and Invertibility</em>. The invertibility criterion is assumed from <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from <em>Split-Quaternion Ideals and Peirce Decomposition</em>. Nothing physical is invoked.</p>
+<p>This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion $\langle\tilde q\rangle_{\natural} = 0$ that identifies them with the null cone, exhibits the two families of minimal one-sided ideals into which the zero divisor set splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.</p>
+<p>The split-quaternion algebra, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_{1,2}$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from <em>Split-Quaternion Algebra</em>, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from <em>Split-Quaternion Norm and Invertibility</em>. The invertibility criterion is assumed from <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from <em>Split-Quaternion Ideals and Peirce Decomposition</em>. Nothing physical is invoked.</p>
 <h2 id="definition-and-criterion">Definition and Criterion</h2>
 <p><strong>Definition.</strong> A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a <strong>zero divisor</strong> if there exists a nonzero $\tilde p \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q \tilde p = 0$ or a nonzero $\tilde r \in \mathbb{H}_{\mathrm{s}}$ with $\tilde r\tilde q = 0$. The <strong>zero divisor set</strong> is</p>
 <p>$$
 Z = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \tilde q \neq 0 \text{ and } \tilde q \text{ is a zero divisor}\}.
 $$</p>
-<p><strong>Theorem (The Criterion).</strong> Let $\tilde q$ be nonzero. Then $\tilde q$ is a zero divisor if and only if $N(\tilde q) = 0$. Equivalently, the zero divisor set is the null cone with the origin removed:</p>
+<p><strong>Theorem (The Criterion).</strong> Let $\tilde q$ be nonzero. Then $\tilde q$ is a zero divisor if and only if $\langle\tilde q\rangle_{\natural} = 0$. Equivalently, the zero divisor set is the null cone with the origin removed:</p>
 <p>$$
-Z = \{\tilde q \neq 0 : N(\tilde q) = 0\}.
+Z = \{\tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0\}.
 $$</p>
-<p><strong>Proof.</strong> The criterion is the corollary of the invertibility criterion proved in <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>: a nonzero element is a zero divisor exactly when it is not invertible, and it is invertible exactly when $N(\tilde q) \neq 0$.</p>
+<p><strong>Proof.</strong> The criterion is the corollary of the invertibility criterion proved in <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>: a nonzero element is a zero divisor exactly when it is not invertible, and it is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$.</p>
 <p>The set</p>
 <p>$$
-\mathcal{N} = \{\tilde q : N(\tilde q) = 0\} = Z \cup \{0\}
+\mathcal{N} = \{\tilde q : \langle\tilde q\rangle_{\natural} = 0\} = Z \cup \{0\}
 $$</p>
-<p>is the <strong>null cone</strong> of the product $N$. It is a cone: if $N(\tilde q) = 0$ then $N(\lambda \tilde q) = \lambda^2 N(\tilde q) = 0$ for every real $\lambda$. It has real dimension $3$, the expected dimension of one equation in four real variables. That it is closed, that its only singular point is the origin, and that the complement of $Z$ in $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ is open, dense and of full measure are topological statements and belong to <em>Split-Quaternion Topology</em> and <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>.</p>
+<p>is the <strong>null cone</strong> of the product $\langle\cdot\rangle_{\natural}$. It is a cone: if $\langle\tilde q\rangle_{\natural} = 0$ then $\langle\lambda \tilde q\rangle_{\natural} = \lambda^2 \langle\tilde q\rangle_{\natural} = 0$ for every real $\lambda$. It has real dimension $3$, the expected dimension of one equation in four real variables. That it is closed, that its only singular point is the origin, and that the complement of $Z$ in $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ is open, dense and of full measure are topological statements and belong to <em>Split-Quaternion Topology</em> and <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>.</p>
 <p>That the zero divisor set is connected is a topological statement and belongs to <em>Split-Quaternion Topology</em>. What is used here is the algebraic parametrisation of <em>Split-Quaternion Norm and Invertibility</em>, §<em>Isotropy</em>: every zero divisor $\tilde q$ is a positive multiple of a vector $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$.</p>
 <h2 id="the-annihilator-of-a-zero-divisor">The Annihilator of a Zero Divisor</h2>
 <p>The zero divisors are exactly the elements with a nonzero annihilator: $\tilde q \neq 0$ is a zero divisor if and only if $\{\tilde a : \tilde a\tilde q = 0\}$ or $\{\tilde a : \tilde q\tilde a = 0\}$ is nonzero.</p>
 <p><strong>Theorem (The Left Annihilator Is a Minimal Left Ideal).</strong> Let $\tilde q \neq 0$ be a zero divisor. Then the left annihilator $P_{\tilde q} = \{\tilde a : \tilde a\tilde q = 0\}$ is a two-dimensional minimal left ideal, and the right annihilator is a two-dimensional minimal right ideal. Consequently the zero divisor set is the union of the nonzero elements of the minimal one-sided ideals, with the origin removed.</p>
-<p><strong>Proof.</strong> The left annihilator is a left ideal, since $\tilde a\tilde q = 0$ implies $\tilde b\tilde a\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = N(\tilde q)$, and $N(\tilde q) = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde a = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by <em>Split-Quaternion Ideals and Peirce Decomposition</em>; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde a\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.</p>
+<p><strong>Proof.</strong> The left annihilator is a left ideal, since $\tilde a\tilde q = 0$ implies $\tilde b\tilde a\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and $\langle\tilde q\rangle_{\natural} = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde a = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by <em>Split-Quaternion Ideals and Peirce Decomposition</em>; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde a\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.</p>
 <h2 id="the-two-families">The Two Families</h2>
 <p><strong>Definition.</strong> For a zero-divisor line $L = \mathbb{R}\tilde q$, the <strong>left annihilator</strong> and the <strong>right annihilator</strong> are</p>
 <p>$$
@@ -95,12 +95,12 @@ $$</p>
 \tau(e_1) = -e_1, \qquad \tau(e_2) = e_2, \qquad \tau(e_3) = e_3
 $$</p>
 <p>extends to an involutive algebra anti-automorphism that preserves $N$ and interchanges the two families: $\tau(\mathcal{K}_L) \in \mathcal{R}$ and $\tau(\mathcal{R}_L) \in \mathcal{K}$ for every zero-divisor line $L$.</p>
-<p><strong>Proof.</strong> As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $N(\tau(\tilde q)) = q_0^2 + q_1^2 - q_2^2 - q_3^2 = N(\tilde q)$ for $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$, so $\tau$ preserves $N$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.</p>
+<p><strong>Proof.</strong> As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $\langle\tau(\tilde q)\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 = \langle\tilde q\rangle_{\natural}$ for $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$, so $\tau$ preserves $N$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.</p>
 <h2 id="nonzero-nilpotents">Nonzero Nilpotents</h2>
 <p><strong>Definition.</strong> A nonzero element $\tilde q$ is <strong>nilpotent</strong> if $\tilde q^2 = 0$; a nilpotent of the quaternion layer carries the symbol $\tilde\nu$ (§<em>The nilpotent convention</em> of <em>Conventions in Mathematics</em>).</p>
 <p><strong>Theorem (The Nilpotents).</strong> A nonzero element $\tilde q$ is nilpotent if and only if</p>
 <p>$$
-\tilde q \in V \quad \text{and} \quad N(\tilde q) = 0,
+\tilde q \in V \quad \text{and} \quad \langle\tilde q\rangle_{\natural} = 0,
 $$</p>
 <p>that is, if and only if $\tilde q$ is a nonzero vector of the vector subspace lying on the level set $N = 0$, $q_1^2 = q_2^2 + q_3^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular</p>
 <p>$$
@@ -109,9 +109,9 @@ $$</p>
 <p>Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.</p>
 <p><strong>Proof.</strong> Write $\tilde q = q_0 + \vec v$ with $q_0 \in S$ and $\vec v \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is</p>
 <p>$$
-\tilde q^2 = q_0^2 + 2q_0\vec v + \vec v^2 = q_0^2 + 2q_0\vec v - N(\vec v),
+\tilde q^2 = q_0^2 + 2q_0\vec v + \vec v^2 = q_0^2 + 2q_0\vec v - \langle \vec v\rangle_{\natural},
 $$</p>
-<p>where $\vec v^2 = -N(\vec v)$ is the identity for pure vectors recorded in (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_0\vec v = 0$, so $q_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $q_0^2 = 0$, so $q_0 = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_0 = 0$ and $\tilde q = \vec v \in V$. Then $\tilde q^2 = -N(\tilde q)$, so $\tilde q^2 = 0$ exactly when $N(\tilde q) = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $N(\tilde q)^2 = N(\tilde q^2) = 0$, hence $N(\tilde q) = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $N(1+e_2) = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper.</p>
+<p>where $\vec v^2 = -\langle \vec v\rangle_{\natural}$ is the identity for pure vectors recorded in (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_0\vec v = 0$, so $q_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $q_0^2 = 0$, so $q_0 = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_0 = 0$ and $\tilde q = \vec v \in V$. Then $\tilde q^2 = -\langle\tilde q\rangle_{\natural}$, so $\tilde q^2 = 0$ exactly when $\langle\tilde q\rangle_{\natural} = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $\langle\tilde q\rangle_{\natural}^2 = \langle\tilde q^2\rangle_{\natural} = 0$, hence $\langle\tilde q\rangle_{\natural} = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $\langle 1+e_2\rangle_{\natural} = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper.</p>
 <p>The nilpotent set is the level set $N = 0$ in $V$; by <em>Split-Quaternion Norm and Invertibility</em>, §<em>Isotropy</em>, its lines are the curve $\mathbb{R}(e_1 + \cos\theta\, e_2 + \sin\theta\, e_3)$.</p>
 <h3 id="the-contrast-with-the-division-algebras">The Contrast with the Division Algebras</h3>
 <p>The existence of nilpotents is the sharpest structural contrast the category has.</p>
@@ -167,7 +167,7 @@ $$</p>
 <p><strong>The splitting.</strong> The zero divisor set is the union of the planes of the two families of <em>The Two Families</em>. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a further two-dimensional set of points of the zero divisor set lying outside that subcone.</p>
 <p><strong>Measure.</strong> That the zero divisor set is closed, that it has measure zero in $\mathbb{R}^4$, and that the units are open and dense are topological and measure-theoretic statements and belong to <em>Split-Quaternion Topology</em>; what is used here is only that the zero divisor set is the vanishing set of the single polynomial $N$.</p>
 <h2 id="summary">Summary</h2>
-<p>A nonzero split-quaternion is a zero divisor exactly when $N(\tilde q) = 0$, that is, when $\tilde q\tilde{q}^{\natural} = 0$, and the zero divisor set is the null cone with the origin removed, the union of the minimal one-sided ideals with the origin removed.</p>
+<p>A nonzero split-quaternion is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$, that is, when $\tilde q\tilde{q}^{\natural} = 0$, and the zero divisor set is the null cone with the origin removed, the union of the minimal one-sided ideals with the origin removed.</p>
 <p>The zero divisor set splits into the two families of minimal one-sided ideals, each parametrised by the projective line; each ideal is two-dimensional and minimal, and the two families are the two rulings of the projective zero set. Every zero-divisor line lies in exactly one member of each family, the two families are exchanged by the anti-automorphism $\tau$, and the four minimal ideals of the algebra are members of the families.</p>
 <p>The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on the level set $N = 0$, and $(e_1 + e_3)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -182,12 +182,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$Z$</td>
-<td>the zero divisor set $\{\tilde q \neq 0 : N(\tilde q) = 0\}$</td>
+<td>the zero divisor set $\{\tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0\}$</td>
 <td>this article</td>
 </tr>
 <tr>
 <td>$\mathcal{N}$</td>
-<td>the null cone $\{\tilde q : N(\tilde q) = 0\}$</td>
+<td>the null cone $\{\tilde q : \langle\tilde q\rangle_{\natural} = 0\}$</td>
 <td>this article</td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@ $$</p>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$</td>
 <td>the central product, formed algebraically; the metrical reading is in <em>Split-Quaternion Norm and Invertibility</em></td>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>

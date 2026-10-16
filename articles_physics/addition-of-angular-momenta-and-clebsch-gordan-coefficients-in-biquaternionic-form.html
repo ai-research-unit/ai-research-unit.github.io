@@ -96,13 +96,13 @@ $$</p>
 $$</p>
 <p>and they are <strong>nilpotent and null in the biquaternion norm</strong>,</p>
 <p>$$
-\tilde S_\pm^2=0,\qquad N(\tilde S_\pm)=\tilde S_\pm\tilde S^{\natural}_\pm=0 ,
+\tilde S_\pm^2=0,\qquad \langle\tilde S_\pm\rangle_{\natural}=\tilde S_\pm\tilde S^{\natural}_\pm=0 ,
 $$</p>
 <p>so the raising and lowering operators of the fundamental module are zero divisors of $\mathbb{B}$. The Casimir is the central element</p>
 <p>$$
 \tilde S^2=\tfrac{3\hbar^2}{4}e_0 ,
 $$</p>
-<p>the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$, on which $\hat u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.</p>
+<p>the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$, on which $\vec u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.</p>
 <p>The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.</p>
 <h2 id="coupling-two-independent-systems">Coupling Two Independent Systems</h2>
 <p>Two independent systems are placed on the two factors of the tensor-product algebra</p>
@@ -134,11 +134,11 @@ $$</p>
 $$</p>
 <p>so that $\mathrm{Tr}(e_0\otimes e_0)=4$. A product state is represented by the idempotent</p>
 <p>$$
-P_{\hat m}\otimes P_{\hat u}
-=\tfrac14\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat u_le_l-\hat m_k\hat u_l\,e_k\otimes e_l\right),
+P_{\vec u_m}\otimes P_{\vec u}
+=\tfrac14\left(e_0\otimes e_0+i\vec u_{m,k}e_k\otimes e_0+i e_0\otimes\vec u_le_l-\vec u_{m,k}\vec u_l\,e_k\otimes e_l\right),
 $$</p>
-<p>which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\hat z)\otimes \tilde\Pi(\pm\hat z)$.</p>
-<p>One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article <em>Modules over the General Plain Algebra of Biquaternions</em> records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.</p>
+<p>which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\vec u_z)\otimes \tilde\Pi(\pm\vec u_z)$.</p>
+<p>One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article <em>Modules over the Biquaternion Algebra</em> records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.</p>
 <h2 id="the-clebschgordan-series">The Clebsch–Gordan Series</h2>
 <p>Let $V_j$ denote the rotation multiplet of spin $j$, $j\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2j+1$: the representation carried by $|j,m\rangle$ with $m=-j,\dots,j$, and the irreducible module of highest weight $2j$ in the labelling of the companion article <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>. For the polynomial representations of the rotation group the decomposition of a tensor product — the <strong>Clebsch–Gordan series</strong> — is</p>
 <p>$$
@@ -268,7 +268,7 @@ $$</p>
 $$</p>
 <p>which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product unitary $\tilde U_1\otimes\tilde U_2$ are the tensor products of the rows of $\tilde U_1$ and of $\tilde U_2$, hence product vectors in every row. No product unitary can have the singlet among its rows, so $U\neq\tilde U_1\otimes\tilde U_2$. Equivalently, the projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.</p>
 <p>Second, the local transformations form a proper subgroup. The elements $\tilde U_1\otimes\tilde U_2$ with $\tilde U_a\in\mathbb{B}$ unitary constitute $U(2)\times U(2)$, of real dimension $8$, inside the $U(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.</p>
-<p>The transformation is not unique as a matrix. Only the coupled <em>projectors</em> are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $e^{i\alpha}e_0$, and the relative phases of a multiplet are a convention.</p>
+<p>The transformation is not unique as a matrix. Only the coupled <em>projectors</em> are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_0$, and the relative phases of a multiplet are a convention.</p>
 <h2 id="the-coupling-of-two-triplets">The Coupling of Two Triplets</h2>
 <p>The second case the framework supports explicitly is $1\otimes1$, where each factor is itself a composite of two fundamental modules. The coupled states therefore live in the four-fold tensor power of the spinor module, on which $\mathbb{B}^{\otimes4}$ acts; equivalently, in the tensor product of the two symmetric squares of the two-qubit subalgebras. The coupled states in the product basis $|m_1\rangle|m_2\rangle$, $m_a\in\{1,0,-1\}$, are</p>
 <p>$$
@@ -315,7 +315,7 @@ $$</p>
 \langle 1,1;1,0|1,1\rangle=+\tfrac{1}{\sqrt2},\qquad
 \langle 1,1;1,-1|0,0\rangle=+\tfrac{1}{\sqrt3},
 $$</p>
-<p>and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $e^{i\alpha}e_0$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.</p>
+<p>and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\alpha)e_0$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.</p>
 <p>Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $j_1=j_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.</p>
 <h2 id="what-is-algebraic-and-what-is-imported">What Is Algebraic and What Is Imported</h2>
 <p>It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.</p>

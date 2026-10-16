@@ -91,7 +91,7 @@ $$</p>
 <p><strong>Theorem.</strong> Every nonzero complex number $A$ has exactly one polar representation.</p>
 <p><strong>Existence.</strong> Put $r = \sqrt{N(A)}$ and $u = A/r$. Since $N(A) > 0$, the number $r$ is a positive real, and $N(u) = N(A)/r^2 = 1$ because $N(\lambda A) = \lambda^2N(A)$ for real $\lambda$. Hence $A = ru$ with $r > 0$ and $N(u) = 1$.</p>
 <p><strong>Uniqueness.</strong> Suppose $A = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(A) = r'^2$, so $r = r'$ because both are positive, and then $u = A/r = u'$.</p>
-<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
+<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r \exp(i\theta)$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <h3 id="the-word-as-exponentials">The Word as Exponentials</h3>
 <p>The word $A = r\,u$ is the product of two exponentials, the scale and the unit factor:</p>
@@ -177,13 +177,13 @@ u = \exp(i\theta) = \cos\theta\,1 + i\sin\theta, \qquad \theta \in \mathbb{R},
 $$</p>
 <p>the trigonometric row, and the polar representation reads</p>
 <p>$$
-A = r\,e^{i\theta}, \qquad r = \sqrt{N(A)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
+A = r\,\exp(i\theta), \qquad r = \sqrt{N(A)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
 $$</p>
 <p>which is the classical form. The reconstruction is exact:</p>
 <p>$$
-A = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r e^{i\theta} - A = O(10^{-16}).
+A = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r \exp(i\theta) - A = O(10^{-16}).
 $$</p>
-<p>The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto e^{i\theta}$ is a group homomorphism $\mathbb{R} \to U(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.</p>
+<p>The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto \exp(i\theta)$ is a group homomorphism $\mathbb{R} \to U(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.</p>
 <h2 id="what-the-two-factors-are">What the Two Factors Are</h2>
 <h3 id="position-and-signature">Position and Signature</h3>
 <p>Two independent dichotomies classify the directions of an algebra of the family. The first is <strong>position</strong>: with respect to the conjugation, a direction is <em>Hermitian</em> if $\bar{\nu} = \nu$ and <em>anti-Hermitian</em> if $\bar{\nu} = -\nu$. The second is <strong>signature</strong>: the sign of $\nu^2$. The two dichotomies are independent, and the unit factor of an algebra is the exponential of a direction that is Hermitian or anti-Hermitian and has signature $-1$, $0$ or $+1$. In $\mathbb{C}$ the two factors are the following.</p>
@@ -220,7 +220,7 @@ $$</p>
 <p>The verification is immediate in the basis: $i$ is anti-Hermitian, $\bar{i} = -i$, and $i^2 = -1$, so the unit direction of the circle has position anti-Hermitian and signature $-1$; the real axis is the Hermitian part, and its unit direction $1$ has signature $+1$. The two rows of the table therefore exhaust the algebra: the Hermitian axis is the scale, the anti-Hermitian axis is the circle, and there is nothing else.</p>
 <h3 id="the-two-slots-and-the-two-absent-ones">The Two Slots and the Two Absent Ones</h3>
 <p>The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{C}$ the scale is the Hermitian slot, and the second occupied slot is the anti-Hermitian one, which carries the unit factor. The remaining two slots are absent, for the following reasons.</p>
-<p><strong>No boost.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $e^{\pm\phi}$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.</p>
+<p><strong>No boost.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $\exp(\pm\phi)$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.</p>
 <p><strong>The central phase is the rotation.</strong> In $\mathbb{C}$ the algebra is commutative, so <em>every</em> element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.</p>
 <h3 id="no-boundary">No Boundary</h3>
 <p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $A \neq 0$ then $N(A) > 0$, so $r > 0$ and $u = A/r$ is defined; there is no element with $N(A) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
@@ -271,13 +271,13 @@ $$</p>
 <td>similarity of ratio $r$</td>
 </tr>
 <tr>
-<td>$e^{i\theta}$</td>
+<td>$\exp(i\theta)$</td>
 <td>rotation by $\theta$</td>
 <td>$1$</td>
 <td>orientation-preserving isometry</td>
 </tr>
 <tr>
-<td>$A = re^{i\theta}$</td>
+<td>$A = r\exp(i\theta)$</td>
 <td>conformal matrix</td>
 <td>$r^2$</td>
 <td>similarity: rotation and scaling</td>
@@ -334,11 +334,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first two lines are the real numbers, positive and negative: their unit factor is $\pm1$ and their angle is $0$ or $\pi$ on the chosen branch. The third line is a purely imaginary number of modulus five, at the angle $\pi/2$ exactly. The fourth line is the principal diagonal, at the angle $\pi/4$ exactly, and its square is $i$, which is the check $u^2 = e^{i2\theta}$ of the doubling of the angle.</p>
+<p>The first two lines are the real numbers, positive and negative: their unit factor is $\pm1$ and their angle is $0$ or $\pi$ on the chosen branch. The third line is a purely imaginary number of modulus five, at the angle $\pi/2$ exactly. The fourth line is the principal diagonal, at the angle $\pi/4$ exactly, and its square is $i$, which is the check $u^2 = \exp(i2\theta)$ of the doubling of the angle.</p>
 <h3 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h3>
 <p>The unit factor is a point of the circle and the angle is not. Two angles differing by $2\pi$ give the same unit factor:</p>
 <p>$$
-e^{i\cdot 0} = 1, \qquad e^{i\cdot 2\pi} = 1 - 2.4\times10^{-16}i,
+\exp(i\cdot 0) = 1, \qquad \exp(i\cdot 2\pi) = 1 - 2.4\times10^{-16}i,
 $$</p>
 <p>so the reconstruction from an angle is stable to machine precision and the angle of a given unit factor is a class modulo $2\pi$. The polar representation of a fixed $A$ is unique; a <em>coordinate system</em> for the unit factor is not, and every table of angles of the corpus must be read with that quantifier understood.</p>
 <h2 id="comparison-with-the-other-members-of-the-series">Comparison with the Other Members of the Series</h2>
@@ -358,7 +358,7 @@ $$</p>
 <td>$\mathbb{C}$</td>
 <td>$a^2+a'^2$, definite</td>
 <td>$\sqrt{N}$, positive real</td>
-<td>$e^{i\theta}$, $\theta$ mod $2\pi$</td>
+<td>$\exp(i\theta)$, $\theta$ mod $2\pi$</td>
 <td>scale, circle (rotation and central phase together)</td>
 <td>compact, $\mathbb{R}/2\pi\mathbb{Z}$</td>
 </tr>
@@ -366,7 +366,7 @@ $$</p>
 <td>$\mathbb{D}$</td>
 <td>$a^2-a'^2$, indefinite</td>
 <td>$\sqrt{|N|}$, positive real</td>
-<td>$e^{\phi j}$ or $je^{\phi j}$</td>
+<td>$\exp(\phi j)$ or $j\exp(\phi j)$</td>
 <td>scale, hyperbola (rotation and boost together)</td>
 <td>four components, non-compact</td>
 </tr>

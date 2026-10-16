@@ -56,7 +56,7 @@
 <p>The article is the Bloch-type companion of <em>Quaternion Regular Functions</em>, which owns the reduced-quaternion operator, the Riesz system, the hypercomplex derivative, the hyperholomorphic constants and the spherical monogenics used here without proof. The classical theory is <em>Complex Harmonic Analysis</em> for the Bloch space and the one-variable background, and the comparison with the conformal case is made throughout. The Bloch theorem and the Bloch constant are the only objects claimed here: the estimates of the hypercomplex derivative and of its primitive are the ones proved by the source, restated in this corpus's notation and conventions.</p>
 <p>Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_0+q_1e_1+q_2e_2$ ranges over $\mathbb{R}^3$; $D = \partial_0+e_1\partial_1+e_2\partial_2$ and $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is <strong>monogenic</strong> when $Df = 0$, and its <strong>hypercomplex derivative</strong> is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the <strong>maximum modulus function</strong> is</p>
 <p>$$
-\mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)| .
+\mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)|.
 $$</p>
 <p>The space of monogenic functions on $B_r$ is written $\mathcal{R}^+(B_r;\mathcal{A})$, and the homogeneous monogenic polynomials of degree $n$ form a space $\mathcal{R}^+(B_r;\mathcal{A};n)$ of dimension $2n+3$.</p>
 <h2 id="the-classical-theorem-and-its-constant">The Classical Theorem and Its Constant</h2>
@@ -143,7 +143,7 @@ g(\rho) = \frac{\rho}{2}-8\sqrt3\;\frac{\rho^3\,r\left(4\rho^2+9r^2-11\rho r\rig
 $$</p>
 <p><strong>Lemma (the maximum of $g$).</strong> The function $g$ has exactly one maximum on $(0,r)$, located at $\rho_{\max}>\tfrac{r}{30}$, and</p>
 <p>$$
-g(\rho_{\max}) > g\!\left(\frac{r}{30}\right) = \left(\frac{1}{60}-\frac{62192}{20511149}\sqrt3\right)r .
+g(\rho_{\max}) > g\!\left(\frac{r}{30}\right) = \left(\frac{1}{60}-\frac{62192}{20511149}\sqrt3\right)r.
 $$</p>
 <p><em>Proof.</em> The derivative is positive at $r/30$ and negative at $r/20$,</p>
 <p>$$
@@ -159,15 +159,15 @@ $$</p>
 <p>The local statement is the normalised form of the computation, and it is the step where the auxiliary function enters.</p>
 <p><strong>Lemma (local normalisation).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$ and suppose that for some $a\in B_r$,</p>
 <p>$$
-\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right) \leq 2\left|(\tfrac12\bar D)f(a)\right| .
+\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right) \leq 2\left|(\tfrac12\bar D)f(a)\right|.
 $$</p>
 <p>Then the image of $f$ contains a ball of radius</p>
 <p>$$
-R = \left(\frac{1}{60}-\frac{62192}{20511149}\sqrt3\right)r\left|(\tfrac12\bar D)f(a)\right| .
+R = \left(\frac{1}{60}-\frac{62192}{20511149}\sqrt3\right)r\left|(\tfrac12\bar D)f(a)\right|.
 $$</p>
 <p><em>Proof.</em> After the translation that sends $f(a)$ to $0$, the combined estimate bounds $|\mathcal{P}_r\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(a)\}|$ by $4\sqrt3\,\rho^3r(4\rho^2+9r^2-11\rho r)/(r-\rho)^5$ times $\mathcal{M}((\tfrac12\bar D)f,r)$, and on $|\tilde q| = \rho$ the reverse triangle inequality gives</p>
 <p>$$
-|f(\tilde q)-f(a)| \geq \frac{\rho}{2}\left|(\tfrac12\bar D)f(a)\right| - \left|\mathcal{P}_r\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(a)\}\right| .
+|f(\tilde q)-f(a)| \geq \frac{\rho}{2}\left|(\tfrac12\bar D)f(a)\right| - \left|\mathcal{P}_r\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(a)\}\right|.
 $$</p>
 <p>Inserting the hypothesis $\mathcal{M}\leq 2|(\tfrac12\bar D)f(a)|$ multiplies the second term by $2$, and the resulting lower bound is exactly $g(\rho)|(\tfrac12\bar D)f(a)|$; the maximum lemma then gives the asserted radius at $|\tilde q| = r/30$.</p>
 <h2 id="the-global-statement">The Global Statement</h2>
@@ -179,7 +179,7 @@ $$</p>
 <p><em>Proof.</em> Assign to $f$ the continuous function $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)$ on the closed ball; it attains its maximum at a point $q\in B_r$. With $t = \tfrac12(1-|q|)$ one has $\mathcal{M}(|(\tfrac12\bar D)f|(1-|\tilde q|),r) = 2t\,|(\tfrac12\bar D)f(q)|$ and $B_t(q)\subseteq B_r$, and $1-|\tilde q|\geq t$ on $B_t(q)$. From $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)\leq 2t|(\tfrac12\bar D)f(q)|$ it follows that $|(\tfrac12\bar D)f(\tilde q)|\leq 2|(\tfrac12\bar D)f(q)|$ on $B_t(q)$, so the local lemma applies on the ball $B_t(q)$ and gives balls of radius $(1/60-62192\sqrt3/20511149)\,t\,|(\tfrac12\bar D)f(q)|$. Substituting the value of $t$ halves the local constant, producing the factor $1/120$ and the coefficient $31096 = 62192/2$ of $\sqrt3$.</p>
 <p><strong>Theorem (Bloch's theorem for monogenic functions).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$ with $\left|(\tfrac12\bar D)f(0)\right| = 1$. Then the image of $f$ contains balls of radius</p>
 <p>$$
-R = \frac{1}{120}-\frac{31096}{20511149}\sqrt3 .
+R = \frac{1}{120}-\frac{31096}{20511149}\sqrt3.
 $$</p>
 <p>The radius does not depend on $f$, which is the content of the theorem: among all monogenic functions of the ball with unit hypercomplex derivative at the origin, the size of the largest ball universally contained in the image is bounded below by an absolute number.</p>
 <h2 id="the-value-of-the-constant">The Value of the Constant</h2>
@@ -193,12 +193,12 @@ $$</p>
 <h3 id="the-asserted-bound">The asserted bound</h3>
 <p>The source states the theorem with the conclusion that the radius exceeds $1/150$, and states the local lemma with the companion conclusion that the local constant exceeds $1/75$. Both inequalities are false for the constants as written:</p>
 <p>$$
-0.0057074\ldots < \frac{1}{150} = 0.0066666\ldots, \qquad 0.0114149\ldots < \frac{1}{75} = 0.0133333\ldots .
+0.0057074\ldots < \frac{1}{150} = 0.0066666\ldots, \qquad 0.0114149\ldots < \frac{1}{75} = 0.0133333\ldots.
 $$</p>
 <p>The gap is not marginal and it is the same in both, so it is a single arithmetic slip repeated at the two statements rather than a substantive error: the derivation of the constants themselves is correct, and the constants are internally consistent, with $g(r/30)$ equal to the rational-and-radical expression exactly. The safe inequalities, verified directly, are</p>
 <p>$$
 \frac{1}{120}-\frac{31096}{20511149}\sqrt3 > \frac{1}{180} = 0.0055555\ldots, \qquad
-\frac{1}{60}-\frac{62192}{20511149}\sqrt3 > \frac{1}{90} = 0.0111111\ldots .
+\frac{1}{60}-\frac{62192}{20511149}\sqrt3 > \frac{1}{90} = 0.0111111\ldots.
 $$</p>
 <p>The theorem therefore stands with the constant it produces; only the announced bound $1/150$ has to be replaced by $1/180$. The published version of the paper may carry different constants, and if it does, its numbers need the same check.</p>
 <h2 id="comparison-with-the-classical-theory">Comparison with the Classical Theory</h2>

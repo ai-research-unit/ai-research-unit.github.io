@@ -57,7 +57,7 @@
 <p>This article treats the three forms as scalar forms on the algebra, their diagonalization by the blades, their definiteness in the two definite cases, the trace form and the Frobenius structure, and the adjoints of left and right multiplication with respect to them. The metric layer that the Euclidean form induces — the completion, the boundedness of the multiplication operators and Cauchy–Schwarz — is in <em>The Euclidean Form, the Norm and the Completion on a Clifford Algebra</em> (Part II). The algebra-valued forms are <em>Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint</em>; the operator on the algebra is <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>; the operator on a Clifford module, where the same form appears on the spinor side, is <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em> and <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; and the completion in infinite dimension, together with the canonical anticommutation relations, is <em>Infinite-Dimensional Clifford Algebras and CAR with Inner Conjugation</em>.</p>
 <h2 id="the-blade-form">The Blade Form</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> Let $(e_1,\dots,e_n)$ be an orthogonal basis of the quadratic space $(V,q)$, with $e_i^{2} = q(e_i) \in A$, and let $e_I = e_{i_1}\cdots e_{i_k}$ for $I = \{i_1 < \dots < i_k\}$ be the corresponding blades. The <strong>blade form</strong> of the algebra is</p>
+<p><strong>Definition.</strong> Let $(e_1,\dots,e_n)$ be an orthogonal basis of the quadratic space $(V,\mathfrak{Q})$, with $e_i^{2} = \mathfrak{Q}(e_i) \in A$, and let $e_I = e_{i_1}\cdots e_{i_k}$ for $I = \{i_1 < \dots < i_k\}$ be the corresponding blades. The <strong>blade form</strong> of the algebra is</p>
 <p>$$
 \langle x,y\rangle = \mathrm{Sc}\bigl(x^{r}y\bigr),
 $$</p>
@@ -79,7 +79,7 @@ $$</p>
 <p>a scalar, so $\langle e_I,e_I\rangle = \prod_{i\in I}e_i^{2}$; and for $I \neq J$ the product $e_Ie_J$ is a blade of positive degree, whose scalar part vanishes.</p>
 <p><strong>Corollary (non-degeneracy).</strong> The blade form is non-degenerate exactly when every $\prod_{i\in I}e_i^{2}$ is invertible, which for a form on a free module over a field means exactly that $q$ is non-degenerate. For a degenerate form the radical of the blade form is the even part of the radical of $q$ in the sense of <em>Degenerate Clifford Algebras and the Radical</em>.</p>
 <h3 id="positive-definiteness-and-the-euclidean-structure">Positive Definiteness and the Euclidean Structure</h3>
-<p><strong>Proposition.</strong> Let $A = \mathbb{R}$. The blade form is positive definite exactly when the quadratic form is positive definite. Then the blades form an orthonormal basis of $\mathrm{Cl}(V,q)$, the grade projections are orthogonal, and</p>
+<p><strong>Proposition.</strong> Let $A = \mathbb{R}$. The blade form is positive definite exactly when the quadratic form is positive definite. Then the blades form an orthonormal basis of $\mathrm{Cl}(V,\mathfrak{Q})$, the grade projections are orthogonal, and</p>
 <p>$$
 \langle x,x\rangle = \sum_I a_I^{2} > 0 \quad \text{for } x \neq 0 .
 $$</p>
@@ -88,14 +88,14 @@ $$</p>
 <h3 id="the-trace-form-and-the-frobenius-structure">The Trace Form and the Frobenius Structure</h3>
 <p><strong>Proposition.</strong> Let $m_x$ denote left multiplication by $x$ and $\operatorname{Tr}$ its trace on the algebra. Then</p>
 <p>$$
-\operatorname{Tr}(m_z) = \dim_A \mathrm{Cl}(V,q)\cdot \mathrm{Sc}(z) = 2^{n}\,\mathrm{Sc}(z),
+\operatorname{Tr}(m_z) = \dim_A \mathrm{Cl}(V,\mathfrak{Q})\cdot \mathrm{Sc}(z) = 2^{n}\,\mathrm{Sc}(z),
 $$</p>
 <p>and consequently the <strong>trace form</strong> satisfies</p>
 <p>$$
 T(x,y) = \operatorname{Tr}(m_{xy}) = 2^{n}\,\mathrm{Sc}(xy) = 2^{n}\,\langle x^{r},y\rangle .
 $$</p>
 <p><strong>Proof.</strong> In the blade basis, left multiplication by $e_I$ sends $e_J$ to $\pm e_{I\triangle J}$, a blade of degree $|I|+|J|-2|I\cap J|$; this is $e_J$ again only when $I = \emptyset$. Hence $\operatorname{Tr}(m_{e_I}) = 0$ for $I \neq \emptyset$ and $\operatorname{Tr}(m_1) = 2^{n}$, and the statement follows by linearity.</p>
-<p><strong>Corollary.</strong> $T$ is symmetric, $T(x,y) = T(y,x)$, because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$, and it is associative in the sense $T(xy,z) = T(x,yz)$, because $m_{(xy)z} = m_x m_y m_z$ has the same trace as $m_{x(yz)}$. So $(\mathrm{Cl}(V,q), T)$ is a <strong>symmetric Frobenius algebra</strong>, and $T$ is non-degenerate exactly when the algebra is semisimple, which holds for a non-degenerate form over a field of characteristic not two.</p>
+<p><strong>Corollary.</strong> $T$ is symmetric, $T(x,y) = T(y,x)$, because $\operatorname{Tr}(m_{xy}) = \operatorname{Tr}(m_y m_x) = \operatorname{Tr}(m_{yx})$, and it is associative in the sense $T(xy,z) = T(x,yz)$, because $m_{(xy)z} = m_x m_y m_z$ has the same trace as $m_{x(yz)}$. So $(\mathrm{Cl}(V,\mathfrak{Q}), T)$ is a <strong>symmetric Frobenius algebra</strong>, and $T$ is non-degenerate exactly when the algebra is semisimple, which holds for a non-degenerate form over a field of characteristic not two.</p>
 <p><strong>Remark (the dual basis).</strong> The blade form identifies the algebra with its dual, and the dual basis of the blades is $\check e_I = \bigl(\prod_{i\in I}e_i^{2}\bigr)^{-1}e_I$; this is the duality used in <em>The Volume Element, Duality and the Hodge Star</em>, and it is the reason the trace form is the pairing that pairs the algebra with its dual.</p>
 <h2 id="the-two-signatures">The Two Signatures</h2>
 <h3 id="reversion-against-clifford-conjugation">Reversion against Clifford Conjugation</h3>

@@ -103,7 +103,7 @@ $$</p>
 <p>where $\Phi^v$ is the flow of $X^v$.</p>
 <p><strong>Proof.</strong> The flow of a vector field is locally defined and unique; the left-invariant field is complete because its flow at time $s$ composed with the flow at time $t$ is the flow at time $s+t$ by the group property of left translations, so the local flow extends to all of $\mathbb{R}$. This gives a one-parameter group of diffeomorphisms, and $\gamma_v(t) = \Phi^v_t(e)$ satisfies $\gamma_v(s + t) = \gamma_v(s)\gamma_v(t)$ and $\gamma_v'(0) = X^v_e = v$. Uniqueness is the uniqueness of solutions of the ordinary differential equation $\gamma' = X^v \circ \gamma$ with $\gamma(0) = e$.</p>
 <p><strong>Corollary.</strong> One-parameter subgroups of $G$ are in bijection with the vectors of $\mathrm{G}$.</p>
-<p><strong>Example.</strong> For $G = GL_n(\mathbb{K})$ and a matrix $A$, the one-parameter subgroup with velocity $A$ is $\gamma_A(t) = e^{tA}$, where $e^{tA}$ is the matrix exponential. This is verified in the next section.</p>
+<p><strong>Example.</strong> For $G = GL_n(\mathbb{K})$ and a matrix $A$, the one-parameter subgroup with velocity $A$ is $\gamma_A(t) = \exp(tA)$, where $\exp(tA)$ is the matrix exponential. This is verified in the next section.</p>
 <h2 id="the-exponential-map">The Exponential Map</h2>
 <h3 id="definition-via-the-flow">Definition via the Flow</h3>
 <p><strong>Definition.</strong> The <strong>exponential map</strong> of $G$ is</p>
@@ -130,14 +130,14 @@ $$</p>
 \exp(A) = \sum_{k=0}^{\infty} \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3!} + \cdots,
 $$</p>
 <p>and the series converges absolutely for every $A$.</p>
-<p><strong>Proof.</strong> The series converges because its norm is bounded by $e^{\|A\|}$; differentiating it term by term gives $\frac{d}{dt}e^{tA} = A e^{tA}$, so $t \mapsto e^{tA}$ is a one-parameter subgroup of $GL_n$ with velocity $A$; by uniqueness it is $\gamma_A(t)$, and evaluating at $t = 1$ gives the claim. For $G$ a subgroup, the curve $e^{tA}$ lies in $G$ for $A \in \mathrm{G}$ because $G$ is a Lie subgroup with that Lie algebra, so the exponential of $G$ agrees with the matrix exponential.</p>
+<p><strong>Proof.</strong> The series converges because its norm is bounded by $\exp(\|A\|)$; differentiating it term by term gives $\frac{d}{dt}\exp(tA) = A \exp(tA)$, so $t \mapsto \exp(tA)$ is a one-parameter subgroup of $GL_n$ with velocity $A$; by uniqueness it is $\gamma_A(t)$, and evaluating at $t = 1$ gives the claim. For $G$ a subgroup, the curve $\exp(tA)$ lies in $G$ for $A \in \mathrm{G}$ because $G$ is a Lie subgroup with that Lie algebra, so the exponential of $G$ agrees with the matrix exponential.</p>
 <p><strong>Proposition (properties of the matrix exponential).</strong> For matrices $A, B$:</p>
-<p><strong>(a)</strong> $e^{A+B} = e^A e^B$ if $AB = BA$;</p>
-<p><strong>(b)</strong> $e^{A}$ is invertible, $(e^A)^{-1} = e^{-A}$, and $\det(e^A) = e^{\operatorname{tr}(A)}$;</p>
-<p><strong>(c)</strong> $A e^{A} = e^{A} A$;</p>
-<p><strong>(d)</strong> $e^{BAB^{-1}} = B e^A B^{-1}$ for invertible $B$.</p>
-<p><strong>Proof.</strong> (a) The binomial theorem applies to commuting $A, B$ and gives the product series. (b) The inverse is $e^{-A}$ from (a) with $B = -A$. For the determinant, reduce to the triangular case: over $\mathbb{C}$ every matrix is conjugate to an upper triangular matrix; for upper triangular $T$ with diagonal entries $t_i$ the matrix $e^T$ is upper triangular with diagonal $e^{t_i}$, so $\det e^T = \prod_i e^{t_i} = e^{\sum_i t_i} = e^{\operatorname{tr}T}$; conjugating by (d) and extending from $\mathbb{C}$ to $\mathbb{K}$ gives the general case. (c) is immediate from the series. (d) is $(BAB^{-1})^k = B A^k B^{-1}$.</p>
-<p><strong>Example.</strong> For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $e^A = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of skew matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.</p>
+<p><strong>(a)</strong> $\exp(A+B) = \exp(A) \exp(B)$ if $AB = BA$;</p>
+<p><strong>(b)</strong> $\exp(A)$ is invertible, $(\exp(A))^{-1} = \exp(-A)$, and $\det(\exp(A)) = \exp(\operatorname{tr}(A))$;</p>
+<p><strong>(c)</strong> $A \exp(A) = \exp(A) A$;</p>
+<p><strong>(d)</strong> $\exp(BAB^{-1}) = B \exp(A) B^{-1}$ for invertible $B$.</p>
+<p><strong>Proof.</strong> (a) The binomial theorem applies to commuting $A, B$ and gives the product series. (b) The inverse is $\exp(-A)$ from (a) with $B = -A$. For the determinant, reduce to the triangular case: over $\mathbb{C}$ every matrix is conjugate to an upper triangular matrix; for upper triangular $T$ with diagonal entries $t_i$ the matrix $e^T$ is upper triangular with diagonal $\exp(t_i)$, so $\det e^T = \prod_i \exp(t_i) = \exp(\sum_i t_i) = \exp(\operatorname{tr}T)$; conjugating by (d) and extending from $\mathbb{C}$ to $\mathbb{K}$ gives the general case. (c) is immediate from the series. (d) is $(BAB^{-1})^k = B A^k B^{-1}$.</p>
+<p><strong>Example.</strong> For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $\exp(A) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of skew matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.</p>
 <h3 id="local-diffeomorphism">Local Diffeomorphism</h3>
 <p><strong>Theorem (inverse function theorem for the exponential).</strong> The exponential map is a local diffeomorphism at the origin of $\mathrm{G}$: there is an open neighbourhood $U$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_U : U \to V$ is a diffeomorphism.</p>
 <p><strong>Proof.</strong> The differential $d(\exp)_0$ is the identity by the corollary above, hence invertible; the inverse function theorem for smooth manifolds gives a neighbourhood on which $\exp$ is a diffeomorphism onto its image.</p>
@@ -156,18 +156,18 @@ $$</p>
 <h3 id="the-formula-for-math216">The Formula for $d\exp$</h3>
 <p><strong>Theorem.</strong> Identify $T_v\mathrm{G}$ with $\mathrm{G}$ for every $v$, and $T_{\exp(v)}G$ with $\mathrm{G}$ by left translation. Then the differential of the exponential is the operator</p>
 <p>$$
-d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - e^{-\operatorname{ad}_v}}{\operatorname{ad}_v},
+d(\exp)_v = \sum_{k=0}^{\infty} \frac{(-1)^k}{(k+1)!}\, (\operatorname{ad}_v)^k = \frac{1 - \exp(-\operatorname{ad}_v)}{\operatorname{ad}_v},
 $$</p>
-<p>the series being the entire function $\frac{1-e^{-z}}{z}$ applied to the endomorphism $\operatorname{ad}_v$.</p>
+<p>the series being the entire function $\frac{1-\exp(-z)}{z}$ applied to the endomorphism $\operatorname{ad}_v$.</p>
 <p><strong>Proof sketch.</strong> Differentiate the identity $\exp(v + s w) = \exp(v)\exp(sW(s))$ for a curve $W$ in $\mathrm{G}$ with $W(0) = 0$; the derivative at $s = 0$ is $d(\exp)_v(w) = \sum_{k \geq 0}\frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k(w)$, obtained by expanding the Campbell–Baker–Hausdorff series. The expansion is the standard computation, and its coefficients are the Bernoulli-like numbers $\frac{(-1)^k}{(k+1)!}$.</p>
 <h3 id="the-cases-of-injectivity-and-singularity">The Cases of Injectivity and Singularity</h3>
 <p><strong>Corollary.</strong> $d(\exp)_v$ is invertible exactly when $\operatorname{ad}_v$ has no eigenvalue in $2\pi i\mathbb{Z} \setminus \{0\}$. In particular $d(\exp)_0 = \mathrm{id}$, $d(\exp)_v$ is invertible for small $\|v\|$, and by the inverse function theorem the exponential map is a local diffeomorphism at $v$ exactly when $d(\exp)_v$ is invertible.</p>
-<p><strong>Proof.</strong> The operator is $f(\operatorname{ad}_v)$ with $f(z) = (1-e^{-z})/z$, whose zeros are the nonzero multiples of $2\pi i$; a polynomial-like function of a diagonalisable endomorphism is invertible exactly when it is nonzero on the spectrum.</p>
+<p><strong>Proof.</strong> The operator is $f(\operatorname{ad}_v)$ with $f(z) = (1-\exp(-z))/z$, whose zeros are the nonzero multiples of $2\pi i$; a polynomial-like function of a diagonalisable endomorphism is invertible exactly when it is nonzero on the spectrum.</p>
 <p><strong>Example.</strong> For a matrix $A$ with eigenvalues $a_j$, the eigenvalues of $\operatorname{ad}_A$ on $\mathrm{GL}(n)$ are the differences $a_i - a_j$, and $d(\exp)_A$ is singular exactly when some $a_i - a_j$ is a nonzero multiple of $2\pi i$. This is the reason the exponential fails to be a local diffeomorphism at matrices whose eigenvalues differ by $2\pi i\,\mathbb{Z}$.</p>
 <h3 id="the-relation-to-the-invariant-volume">The Relation to the Invariant Volume</h3>
 <p><strong>Remark.</strong> The determinant of $d(\exp)_v$ can be written in terms of the roots of $\mathrm{G}$: if $\mathrm{G} = \bigoplus_\alpha \mathrm{G}_\alpha$ with respect to a Cartan subalgebra and $v$ is regular in a Cartan subalgebra $\mathrm{H}$, then</p>
 <p>$$
-\det\bigl(d(\exp)_v\bigr) = \prod_{\alpha \in \Phi} \frac{1 - e^{-\alpha(v)}}{\alpha(v)},
+\det\bigl(d(\exp)_v\bigr) = \prod_{\alpha \in \Phi} \frac{1 - \exp(-\alpha(v))}{\alpha(v)},
 $$</p>
 <p>the product over the roots, and this is the Jacobian of the exponential in exponential coordinates. It vanishes precisely where some $\alpha(v) \in 2\pi i\mathbb{Z}\setminus\{0\}$, in agreement with the corollary above. The description of the exponential in terms of a maximal torus and the roots is the starting point of the Weyl integration formula, and the local structure is not covered here.</p>
 <h2 id="the-campbellbakerhausdorff-formula">The Campbell–Baker–Hausdorff Formula</h2>
@@ -187,7 +187,7 @@ $$</p>
 X \cdot Y = Z(X, Y) = X + Y + \tfrac{1}{2}[X, Y] + \cdots
 $$</p>
 <p>defined near the origin of $\mathrm{G}$ is a local Lie group law with the property that $\exp$ is a local isomorphism from $(\mathrm{G}, \cdot)$ to $G$. In particular the germ of the group law of $G$ at the identity is recovered from the Lie bracket.</p>
-<p><strong>Corollary.</strong> If $[X, Y] = 0$ then $Z(X, Y) = X + Y$, so $\exp(X + Y) = \exp(X)\exp(Y)$; this recovers the abelian case and the matrix identity $e^{A+B} = e^A e^B$ for commuting matrices.</p>
+<p><strong>Corollary.</strong> If $[X, Y] = 0$ then $Z(X, Y) = X + Y$, so $\exp(X + Y) = \exp(X)\exp(Y)$; this recovers the abelian case and the matrix identity $\exp(A+B) = \exp(A) \exp(B)$ for commuting matrices.</p>
 <p><strong>Corollary.</strong> For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is <em>The Lie Correspondence and the Adjoint Representation</em>.</p>
 <h3 id="exponential-coordinates">Exponential Coordinates</h3>
 <p><strong>Definition.</strong> <strong>Exponential coordinates</strong> on a neighbourhood of the identity are the coordinates obtained by composing $\exp^{-1}$ with a linear identification $\mathrm{G} \cong \mathbb{K}^n$.</p>
@@ -213,7 +213,7 @@ $$</p>
 <p><strong>Remark.</strong> The group $S^3$ is the simplest nonabelian compact example in which the exponential is surjective but not injective, and it exhibits the two global failures side by side. The Lie algebra is $\operatorname{Im}\mathbb{H}$ with the bracket $[u, w] = uw - wu$, which is the compact real form of the algebra of type $A_1$ of <em>Root Systems and Classification</em>; the quaternionic exponential is the restriction of the matrix exponential under the identification of $S^3$ with $SU(2)$.</p>
 <h2 id="summary">Summary</h2>
 <p>For a Lie group $G$ the tangent space at the identity, identified with the space of left-invariant vector fields by evaluation at $e$, carries the bracket of vector fields and becomes the Lie algebra $\mathrm{G} = \operatorname{Lie}(G)$; the construction is functorial, and the differential at the identity of a Lie group homomorphism is a homomorphism of Lie algebras. One-parameter subgroups are in bijection with the vectors of $\mathrm{G}$: the subgroup with velocity $v$ is the flow of the left-invariant field extending $v$.</p>
-<p>The exponential map $\exp : \mathrm{G} \to G$ sends $v$ to the time-one value of that flow; it is smooth, satisfies $\exp((s+t)v) = \exp(sv)\exp(tv)$, is natural with respect to homomorphisms, and has $d(\exp)_0 = \mathrm{id}_{\mathrm{G}}$, so it is a local diffeomorphism at $0$ by the inverse function theorem. For a matrix group it is the ordinary exponential series, with $\det(e^A) = e^{\operatorname{tr}A}$ and $e^{A+B} = e^A e^B$ for commuting $A, B$. The differential in general is $d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k$, invertible exactly when $\operatorname{ad}_v$ has no nonzero eigenvalue in $2\pi i\mathbb{Z}$. The exponential is neither injective nor surjective in general, but for connected nilpotent or connected compact groups it is surjective. The Campbell–Baker–Hausdorff formula writes $\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial whose first terms are $X + Y + \frac12[X,Y] + \cdots$, so the germ of the group law is determined by the bracket.</p>
+<p>The exponential map $\exp : \mathrm{G} \to G$ sends $v$ to the time-one value of that flow; it is smooth, satisfies $\exp((s+t)v) = \exp(sv)\exp(tv)$, is natural with respect to homomorphisms, and has $d(\exp)_0 = \mathrm{id}_{\mathrm{G}}$, so it is a local diffeomorphism at $0$ by the inverse function theorem. For a matrix group it is the ordinary exponential series, with $\det(\exp(A)) = \exp(\operatorname{tr}A)$ and $\exp(A+B) = \exp(A) \exp(B)$ for commuting $A, B$. The differential in general is $d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k$, invertible exactly when $\operatorname{ad}_v$ has no nonzero eigenvalue in $2\pi i\mathbb{Z}$. The exponential is neither injective nor surjective in general, but for connected nilpotent or connected compact groups it is surjective. The Campbell–Baker–Hausdorff formula writes $\exp(X)\exp(Y) = \exp(Z(X,Y))$ with $Z$ a Lie polynomial whose first terms are $X + Y + \frac12[X,Y] + \cdots$, so the germ of the group law is determined by the bracket.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -268,11 +268,11 @@ $$</p>
 <td>Functional properties of $\exp$</td>
 </tr>
 <tr>
-<td>$e^A = \sum_k A^k/k!$</td>
+<td>$\exp(A) = \sum_k A^k/k!$</td>
 <td>Matrix exponential; agrees with $\exp$ for matrix groups</td>
 </tr>
 <tr>
-<td>$\det(e^A) = e^{\operatorname{tr}A}$</td>
+<td>$\det(\exp(A)) = \exp(\operatorname{tr}A)$</td>
 <td>Determinant of a matrix exponential</td>
 </tr>
 <tr>
@@ -280,7 +280,7 @@ $$</p>
 <td>$\exp$ is a local diffeomorphism at $0$</td>
 </tr>
 <tr>
-<td>$d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k = \frac{1-e^{-\operatorname{ad}_v}}{\operatorname{ad}_v}$</td>
+<td>$d(\exp)_v = \sum_k \frac{(-1)^k}{(k+1)!}(\operatorname{ad}_v)^k = \frac{1-\exp(-\operatorname{ad}_v)}{\operatorname{ad}_v}$</td>
 <td>Differential of $\exp$</td>
 </tr>
 <tr>

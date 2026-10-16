@@ -64,7 +64,7 @@ $$</p>
 <p>$$
 \exp(a + b) = \exp(a) \exp(b), \qquad \exp(0) = 1, \qquad \exp'(a) = \exp(a).
 $$</p>
-<p>We write $e^a = \exp(a)$ where $e = \exp(1)$.</p>
+<p>We write $\exp(a) = \exp(a)$ where $e = \exp(1)$.</p>
 <h3 id="the-logarithm">The Logarithm</h3>
 <p>The <strong>natural logarithm</strong> is the inverse of the exponential:</p>
 <p>$$
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>hyperbolic sine</strong> and <strong>hyperbolic cosine</strong> are</p>
 <p>$$
-\sinh a = \frac{e^a - e^{-a}}{2}, \qquad \cosh a = \frac{e^a + e^{-a}}{2}.
+\sinh a = \frac{\exp(a) - \exp(-a)}{2}, \qquad \cosh a = \frac{\exp(a) + \exp(-a)}{2}.
 $$</p>
 <p>They satisfy</p>
 <p>$$
@@ -169,7 +169,7 @@ $$</p>
 <h3 id="the-gamma-function">The Gamma Function</h3>
 <p>The <strong>gamma function</strong> is defined for $a > 0$ by</p>
 <p>$$
-\Gamma(a) = \int_0^\infty t^{a-1} e^{-t} \, dt.
+\Gamma(a) = \int_0^\infty t^{a-1} \exp(-t) \, dt.
 $$</p>
 <p>It satisfies the <strong>functional equation</strong></p>
 <p>$$
@@ -203,7 +203,7 @@ $$</p>
 <h3 id="the-error-function">The Error Function</h3>
 <p>The <strong>error function</strong> is defined by</p>
 <p>$$
-\operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_0^a e^{-t^2} \, dt.
+\operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_0^a \exp(-t^2) \, dt.
 $$</p>
 <p>It is odd, strictly increasing, and satisfies</p>
 <p>$$
@@ -211,15 +211,15 @@ $$</p>
 $$</p>
 <h3 id="the-complementary-error-function">The Complementary Error Function</h3>
 <p>$$
-\operatorname{erfc}(a) = 1 - \operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_a^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(a) = 1 - \operatorname{erf}(a) = \frac{2}{\sqrt{\pi}} \int_a^\infty \exp(-t^2) \, dt.
 $$</p>
 <h3 id="the-imaginary-error-function">The Imaginary Error Function</h3>
 <p>$$
-\operatorname{erfi}(a) = \frac{2}{\sqrt{\pi}} \int_0^a e^{t^2} \, dt.
+\operatorname{erfi}(a) = \frac{2}{\sqrt{\pi}} \int_0^a \exp(t^2) \, dt.
 $$</p>
 <h3 id="the-dawson-function">The Dawson Function</h3>
 <p>$$
-D(a) = e^{-a^2} \int_0^a e^{t^2} \, dt.
+D(a) = \exp(-a^2) \int_0^a \exp(t^2) \, dt.
 $$</p>
 <p>It satisfies the differential equation</p>
 <p>$$
@@ -237,11 +237,11 @@ $$</p>
 <h3 id="the-incomplete-gamma-function">The Incomplete Gamma Function</h3>
 <p>The <strong>lower incomplete gamma function</strong> is</p>
 <p>$$
-\gamma(s, a) = \int_0^a t^{s-1} e^{-t} \, dt, \qquad s > 0, \; a \geq 0.
+\gamma(s, a) = \int_0^a t^{s-1} \exp(-t) \, dt, \qquad s > 0, \; a \geq 0.
 $$</p>
 <p>The <strong>upper incomplete gamma function</strong> is</p>
 <p>$$
-\Gamma(s, a) = \int_a^\infty t^{s-1} e^{-t} \, dt, \qquad s > 0, \; a \geq 0.
+\Gamma(s, a) = \int_a^\infty t^{s-1} \exp(-t) \, dt, \qquad s > 0, \; a \geq 0.
 $$</p>
 <p>They satisfy</p>
 <p>$$
@@ -271,7 +271,7 @@ $$</p>
 <h3 id="integral-representation">Integral Representation</h3>
 <p>For $s > 1$,</p>
 <p>$$
-\zeta(s) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{t^{s-1}}{e^t - 1} \, dt.
+\zeta(s) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{t^{s-1}}{\exp(t) - 1} \, dt.
 $$</p>
 <h3 id="special-values">Special Values</h3>
 <p>$$
@@ -293,7 +293,7 @@ $$</p>
 <h3 id="the-bernoulli-numbers">The Bernoulli Numbers</h3>
 <p>The <strong>Bernoulli numbers</strong> $B_n$ are defined by the generating function</p>
 <p>$$
-\frac{a}{e^a - 1} = \sum_{n=0}^\infty \frac{B_n}{n!} a^n, \qquad |a| < 2\pi.
+\frac{a}{\exp(a) - 1} = \sum_{n=0}^\infty \frac{B_n}{n!} a^n, \qquad |a| < 2\pi.
 $$</p>
 <p>They satisfy $B_0 = 1$, $B_1 = -1/2$, and $B_{2n+1} = 0$ for $n \geq 1$. The first few are</p>
 <p>$$
@@ -301,13 +301,13 @@ B_0 = 1, \quad B_1 = -\frac{1}{2}, \quad B_2 = \frac{1}{6}, \quad B_4 = -\frac{1
 $$</p>
 <h3 id="the-bernoulli-polynomials">The Bernoulli Polynomials</h3>
 <p>$$
-\frac{a e^{t a}}{e^a - 1} = \sum_{n=0}^\infty \frac{B_n(t)}{n!} a^n.
+\frac{a \exp(t a)}{\exp(a) - 1} = \sum_{n=0}^\infty \frac{B_n(t)}{n!} a^n.
 $$</p>
 <p>They satisfy $B_n(0) = B_n$ and $B_n(1) = B_n$ for $n \neq 1$.</p>
 <h3 id="the-euler-numbers">The Euler Numbers</h3>
 <p>The <strong>Euler numbers</strong> $E_n$ are defined by</p>
 <p>$$
-\frac{2}{e^a + e^{-a}} = \sum_{n=0}^\infty \frac{E_n}{n!} a^n.
+\frac{2}{\exp(a) + \exp(-a)} = \sum_{n=0}^\infty \frac{E_n}{n!} a^n.
 $$</p>
 <p>They satisfy $E_{2n+1} = 0$ and</p>
 <p>$$
@@ -347,28 +347,28 @@ $$</p>
 <h3 id="hermite-polynomials">Hermite Polynomials</h3>
 <p>The <strong>Hermite polynomials</strong> $H_n(a)$ are defined on $\mathbb{R}$ by</p>
 <p>$$
-H_n(a) = (-1)^n e^{a^2} \frac{d^n}{da^n} e^{-a^2}.
+H_n(a) = (-1)^n \exp(a^2) \frac{d^n}{da^n} \exp(-a^2).
 $$</p>
 <p>They satisfy the recurrence</p>
 <p>$$
 H_{n+1}(a) = 2a H_n(a) - 2n H_{n-1}(a),
 $$</p>
-<p>with $H_0 = 1$ and $H_1 = 2a$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-a^2}$:</p>
+<p>with $H_0 = 1$ and $H_1 = 2a$. They are orthogonal on $\mathbb{R}$ with respect to the weight $\exp(-a^2)$:</p>
 <p>$$
-\int_{-\infty}^\infty H_m(a) H_n(a) e^{-a^2} \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
+\int_{-\infty}^\infty H_m(a) H_n(a) \exp(-a^2) \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
 $$</p>
 <h3 id="laguerre-polynomials">Laguerre Polynomials</h3>
 <p>The <strong>Laguerre polynomials</strong> $L_n(a)$ are defined on $[0, \infty)$ by</p>
 <p>$$
-L_n(a) = \frac{e^a}{n!} \frac{d^n}{da^n} (a^n e^{-a}).
+L_n(a) = \frac{\exp(a)}{n!} \frac{d^n}{da^n} (a^n \exp(-a)).
 $$</p>
 <p>They satisfy the recurrence</p>
 <p>$$
 (n+1) L_{n+1}(a) = (2n+1-a) L_n(a) - n L_{n-1}(a),
 $$</p>
-<p>with $L_0 = 1$ and $L_1 = 1 - a$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-a}$:</p>
+<p>with $L_0 = 1$ and $L_1 = 1 - a$. They are orthogonal on $[0, \infty)$ with respect to the weight $\exp(-a)$:</p>
 <p>$$
-\int_0^\infty L_m(a) L_n(a) e^{-a} \, da = \delta_{mn}.
+\int_0^\infty L_m(a) L_n(a) \exp(-a) \, da = \delta_{mn}.
 $$</p>
 <h2 id="the-bessel-functions">The Bessel Functions</h2>
 <h3 id="definition_4">Definition</h3>
@@ -402,7 +402,7 @@ $$</p>
 J_\nu(a) \sim \sqrt{\frac{2}{\pi a}} \cos\left(a - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
 $$</p>
 <p>$$
-I_\nu(a) \sim \frac{e^a}{\sqrt{2 \pi a}}.
+I_\nu(a) \sim \frac{\exp(a)}{\sqrt{2 \pi a}}.
 $$</p>
 <h2 id="the-airy-functions">The Airy Functions</h2>
 <h3 id="definition_5">Definition</h3>
@@ -416,12 +416,12 @@ w'' - a w = 0.
 $$</p>
 <p>The second solution $\operatorname{Bi}(a)$ is defined by</p>
 <p>$$
-\operatorname{Bi}(a) = \frac{1}{\pi} \int_0^\infty \left( e^{-t^3/3 + a t} + \sin\left(\frac{t^3}{3} + a t\right) \right) dt.
+\operatorname{Bi}(a) = \frac{1}{\pi} \int_0^\infty \left( \exp(-t^3/3 + a t) + \sin\left(\frac{t^3}{3} + a t\right) \right) dt.
 $$</p>
 <h3 id="asymptotics_1">Asymptotics</h3>
 <p>As $a \to +\infty$,</p>
 <p>$$
-\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} e^{-2 a^{3/2}/3}.
+\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} \exp(-2 a^{3/2}/3).
 $$</p>
 <p>As $a \to -\infty$,</p>
 <p>$$
@@ -481,11 +481,11 @@ $$</p>
 <h3 id="definition_8">Definition</h3>
 <p>The <strong>Lambert W function</strong> is the inverse of</p>
 <p>$$
-f(w) = w e^w.
+f(w) = w \exp(w).
 $$</p>
 <p>That is, $W(a)$ is the unique real solution of</p>
 <p>$$
-W(a) e^{W(a)} = a.
+W(a) \exp(W(a)) = a.
 $$</p>
 <p>For $a \geq 0$, there is a unique real solution $W_0(a) \geq 0$. For $-1/e \leq a < 0$, there are two real solutions $W_{-1}(a) \leq -1$ and $W_0(a) \geq -1$.</p>
 <h3 id="derivative">Derivative</h3>
@@ -493,11 +493,11 @@ $$</p>
 W'(a) = \frac{W(a)}{a(1 + W(a))}, \qquad a \neq 0, \; a \neq -1/e.
 $$</p>
 <h3 id="applications">Applications</h3>
-<p>The Lambert W function solves equations of the form $a e^d + b d + c = 0$. It appears in combinatorics, in the enumeration of labelled trees, and in the analysis of delay differential equations.</p>
+<p>The Lambert W function solves equations of the form $a \exp(d) + b d + c = 0$. It appears in combinatorics, in the enumeration of labelled trees, and in the analysis of delay differential equations.</p>
 <h2 id="summary">Summary</h2>
 <p>The real special functions are the named functions that recur throughout analysis and in differential equations, and they are the base case from which the special functions of every other system of the corpus are obtained.</p>
 <p>The elementary functions come first: the exponential, defined by its series, its inverse the logarithm, the trigonometric functions defined by their series, and the hyperbolic functions defined from the exponential. Integral representations then supply the higher functions: the gamma and beta functions with the functional equation, the error function and its relatives, the incomplete gamma and beta functions, and the Riemann zeta function as a Dirichlet series.</p>
-<p>The arithmetic families follow, the Bernoulli and Euler numbers defined by generating functions, and then the classical special functions of analysis and mathematical physics: the orthogonal polynomials, the Bessel functions, the Airy function, the Gauss hypergeometric function, the elliptic integrals, and the Lambert $W$ function as the inverse of $w \mapsto we^w$. Each function is defined precisely, and its elementary properties, its differential equation, its recurrence relations and its relations to the others are recorded.</p>
+<p>The arithmetic families follow, the Bernoulli and Euler numbers defined by generating functions, and then the classical special functions of analysis and mathematical physics: the orthogonal polynomials, the Bessel functions, the Airy function, the Gauss hypergeometric function, the elliptic integrals, and the Lambert $W$ function as the inverse of $w \mapsto w\exp(w)$. Each function is defined precisely, and its elementary properties, its differential equation, its recurrence relations and its relations to the others are recorded.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -508,7 +508,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$e^a, \ln a$</td>
+<td>$\exp(a), \ln a$</td>
 <td>Exponential, logarithm</td>
 </tr>
 <tr>

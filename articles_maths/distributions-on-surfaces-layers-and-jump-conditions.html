@@ -229,7 +229,7 @@ $$
 $$
 Consequently, if $n$ is non-characteristic, then $[u] = 0$ and the solution is continuous across $S$; if $n$ is characteristic, then $[u]$ lies in the kernel of $\sigma_P(n)$ and the jump is admissible.</p>
 <p><em>Proof.</em> By the jump formula the singular part of $Pu$ is $(\sum_j a_j n_j)[u]\delta_S = \sigma_P(n)[u]\delta_S$. Since $f$ is continuous, its singular part vanishes, and the coefficient of the single layer $\delta_S$ must vanish.</p>
-<p>The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $u_t + a\,u_x = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.</p>
+<p>The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $\partial_t u + a\,\partial_x u = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.</p>
 <h3 id="second-order-equations-and-transmission">Second-Order Equations and Transmission</h3>
 <p><strong>Theorem (second-order jump condition).</strong> Let $P = \sum_{j,k} a_{jk}\partial_j\partial_k + \sum_j b_j\partial_j + c$ be of second order with $a_{jk} = a_{kj}$ and let $u$ be piecewise smooth with $Pu = f$, the source $f$ being continuous across $S$. Then
 $$
@@ -263,9 +263,9 @@ the conormal directions being exactly those in which the delta is singular. This
 <h3 id="the-trace-of-a-sobolev-function">The Trace of a Sobolev Function</h3>
 <p>For functions in a Sobolev space, the trace exists at lower regularity than pointwise restriction. The trace theorem of <em>Sobolev Spaces and Weak Solutions</em> states that for a bounded domain $\Omega$ with Lipschitz boundary there is a bounded linear map
 $$
-\operatorname{tr} : W^{1,p}(\Omega) \to L^p(\partial\Omega), \qquad \|\operatorname{tr} u\|_{L^p(\partial\Omega)} \le C\,\|u\|_{W^{1,p}(\Omega)},
+\operatorname{tr} : W^{1,n}(\Omega) \to L^{n}(\partial\Omega), \qquad \|\operatorname{tr} u\|_{L^{n}}(\partial\Omega)} \le C\,\|u\|_{W^{1,n}(\Omega)},
 $$
-agreeing with the restriction for continuous functions, with kernel $W^{1,p}_0(\Omega)$; on $H^s$ with $s > 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.</p>
+agreeing with the restriction for continuous functions, with kernel $W^{1,n}_0(\Omega)$; on $H^s$ with $s > 1/2$ the trace is defined and the threshold $s = 1/2$ is sharp. The traces $u^{\pm}$ used in the jump formula are of this kind when the two sides are Sobolev domains: they exist, they are functions on $S$, and the jump formula is then an identity between distributions for every pair of functions whose one-sided traces exist.</p>
 <h3 id="the-distributional-boundary-value">The Distributional Boundary Value</h3>
 <p>The simplest instance of a trace is the boundary value of a holomorphic function, and it is the one-dimensional model of the whole construction. For $f$ holomorphic on a neighbourhood of the real axis cut along it, the two limits $f^{\pm}(x) = \lim_{\varepsilon\to+0} f(x \pm i\varepsilon)$ are distributions on $\mathbb{R}$, the pair $(f^{+}, f^{-})$ is a piecewise smooth function across the line, and the Sokhotski–Plemelj formula
 $$

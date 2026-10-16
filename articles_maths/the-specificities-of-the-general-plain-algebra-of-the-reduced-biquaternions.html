@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Specificities of the General Plain Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions"><strong>The Specificities of the General Plain Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Of the eight algebraic structures that the reduced biquaternion complex space carries, exactly one makes it an associative unital algebra over $\mathbb{C}$: the <strong>general plain product</strong> $TW$, the multiplication of <em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>. Every unital result of this block belongs to it — the ideal theory and the Peirce decomposition of <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, the unit group of <em>The Group of Units of the General Plain Algebra of the Reduced Biquaternions</em>, the forms of <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>, the multiplication operators of <em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em>, the matrix model of <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> — and this article states the exact reason, in one identity, and then reads the theory that the identity unlocks.</p>
+<p>The reason is <strong>left alternativity</strong>, the law $X(XY)=(XX)Y$ at every pair; it is equivalent to the operator identity $L_{X}L_{X}=L_{XX}$, and it is the threshold at which the operator calculus of the block begins. It is strictly weaker than associativity, so it is the sharp statement, and it is the criterion that separates the plain product from the other seven. The reduced biquaternion case has one property the biquaternion case does not: the multiplication is <strong>commutative</strong>, so left alternativity and right alternativity coincide and the criterion is simply associativity. What the criterion opens, together with the commutativity, is the block's own subject matter: the <strong>central idempotents</strong> that split the algebra into the direct product of two fields, the two minimal ideals they carry, the vanishing off-diagonal of the Peirce decomposition, the reduced and semisimple structure, and the regular representation of the multiplication operators.</p>
+<p><strong>Placement.</strong> The article closes the <em>Specific Theory</em> section of the general plain algebra, after <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, whose results it reads back as consequences of one identity. It uses the four general products and the four symmetrised and antisymmetrised structures of <em>The Four Products, Their Forms and Their Algebraic Norms</em> and the identities of <em>Relations Between the Four General Products</em> and <em>Comparison Between the Four General Products</em>, all of the shared Algebra of this category.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ has basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$, and the two idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$. A general element is $T=A+Bj$ with $A,B\in\mathbb{C}$, and its <strong>idempotent coordinates</strong> are $q_1=A+B$ and $q_2=A-B$, with $T=q_1\Pi_{1}+q_2\Pi_{2}$. The <strong>plain product</strong> is written as juxtaposition $TW$; a product written $\circ$ is a generic one, and its identity is stated at each use. The <strong>left multiplication</strong> of a product $\circ$ by $X$ is the map $L^{\circ}_{X}:Y\mapsto X\circ Y$, and the superscript is dropped for the plain product. The subscript is the element, never the operator: $L_{X}L_{Y}$ is the composite $L_{X}\circ L_{Y}$. An <strong>idempotent</strong> of the algebra is an element equal to its own square, and a <strong>projector</strong> is an idempotent operator; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of the criterion below is exactly that correspondence for the plain product.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Definition (left alternativity).</strong> A product $\circ$ on the complex space is <strong>left-alternative</strong> when
+$$
+X\circ(X\circ Y)=(X\circ X)\circ Y\qquad\text{for all }X,Y .
+$$</p>
+<p><strong>Theorem (the criterion).</strong> For a product $\circ$ the operator identity
+$$
+L^{\circ}_{X}\circ L^{\circ}_{X}=L^{\circ}_{X\circ X}\qquad\text{for every }X
+$$
+holds exactly when $\circ$ is left-alternative.</p>
+<p><em>Proof.</em> Evaluate both sides at $Y$: the left side is $X\circ(X\circ Y)$ and the right side is $(X\circ X)\circ Y$. The two operators agree for all $X,Y$ exactly when the two elements agree for all $X,Y$, which is the definition of left alternativity.</p>
+<p><strong>Corollary (idempotents and square-zero elements).</strong> In a left-alternative structure every idempotent gives a <strong>projector</strong>, $L_{\Pi}^{2}=L_{\Pi}$, and every square-zero element gives a <strong>square-zero operator</strong>, $L_{\Upsilon}^{2}=0$.</p>
+<p><em>Proof.</em> By the theorem $L_{\Pi}^{2}=L_{\Pi\circ\Pi}=L_{\Pi}$ and $L_{\Upsilon}^{2}=L_{\Upsilon\circ\Upsilon}=L_{0}=0$.</p>
+<p><strong>Remark (commutativity collapses the two laws).</strong> The mirror statement with the right multiplications characterizes right alternativity, and a product is associative exactly when the two laws hold together. For the plain product the commutativity gives $R_{X}=L_{X}$ at every element, so the two laws are the same statement; the criterion is therefore simply associativity here, and no one-sided distinction survives. This is the first specificity of the reduced biquaternion algebra against the biquaternion algebra, whose plain product is associative but not commutative.</p>
+<h2 id="the-associative-interpretation">The Associative Interpretation</h2>
+<p>The block is the one structure where the full associative theory is available. This section states that theory in the block's own terms; each item is owned by an article of the block and cited.</p>
+<h3 id="the-algebra-and-its-idempotents">The Algebra and Its Idempotents</h3>
+<p>The plain product is associative, commutative, unital with unit $1$, and $\mathbb{C}$-bilinear, so $\mathbb{B}_{\mathrm{r}}$ is a commutative associative unital $\mathbb{C}$-algebra. It is the <strong>direct product of two copies of $\mathbb{C}$</strong>,
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2},\qquad \Pi_{1}^{2}=\Pi_{1},\quad \Pi_{2}^{2}=\Pi_{2},\quad \Pi_{1}\Pi_{2}=0,\quad \Pi_{1}+\Pi_{2}=1,
+$$
+the two idempotents being <strong>central</strong> because the algebra is commutative. The isomorphism is the idempotent coordinate map $T\mapsto(q_1,q_2)$, which is an algebra isomorphism $(\mathbb{B}_{\mathrm{r}},\cdot)\to\mathbb{C}\times\mathbb{C}$:
+$$
+(TW)=q_{1,T}q_{1,W}\,\Pi_{1}+q_{2,T}q_{2,W}\,\Pi_{2}.
+$$
+The scalar line $\mathbb{C}\cdot 1$ is the <strong>diagonal</strong> $\{(q_1,q_1)\}$, not the centre — the ring centre of a commutative algebra is the whole algebra — and the two idempotent lines are the two coordinate factors.</p>
+<h3 id="the-ideals-and-the-peirce-decomposition">The Ideals and the Peirce Decomposition</h3>
+<p>Because the algebra is a direct product of two fields it is <strong>semisimple and not simple</strong>: its only ideals are
+$$
+0,\qquad \mathbb{C}\Pi_{1},\qquad \mathbb{C}\Pi_{2},\qquad \mathbb{B}_{\mathrm{r}},
+$$
+the two middle ones <strong>minimal</strong>, and because the algebra is commutative the left, the right and the two-sided ideals coincide. Each minimal ideal is generated by its idempotent, $\mathbb{C}\Pi_{i}=\mathbb{B}_{\mathrm{r}}\Pi_{i}$, and the ideal lattice is the two-element chain completed by the two incomparable middle terms. The ideal theory and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p>For a nontrivial idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the <strong>Peirce decomposition</strong> is
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{11}\oplus\mathbb{B}_{12}\oplus\mathbb{B}_{21}\oplus\mathbb{B}_{22},\qquad
+\mathbb{B}_{ij}=\{X:\Pi_{i}X\Pi_{j}=X\},
+$$
+and here it is <strong>diagonal</strong>: because the idempotents are central and orthogonal,
+$$
+\mathbb{B}_{12}=\Pi_{1}\mathbb{B}_{\mathrm{r}}\Pi_{2}=\mathbb{B}_{\mathrm{r}}\Pi_{1}\Pi_{2}=0,\qquad \mathbb{B}_{21}=0,
+$$
+so the decomposition reduces to the direct product $\mathbb{B}_{11}\oplus\mathbb{B}_{22}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$. This is the sharp contrast with the biquaternion Peirce theory, whose off-diagonal spaces are the one-dimensional matrix-unit spaces $E_{12},E_{21}$ of $M_2(\mathbb{C})$; the reduced biquaternion has no off-diagonal because its idempotents are central.</p>
+<h3 id="the-module-theory-and-the-enveloping-algebra">The Module Theory and the Enveloping Algebra</h3>
+<p>Because $\mathbb{B}_{\mathrm{r}}$ is associative and unital, its left modules are its representations, so the ideal theory and the module theory are one subject. The algebra is a direct product of two fields, hence <strong>semisimple and Morita-trivial</strong>: every module is semisimple, the simple modules are the two coordinate lines $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$ with their two characters, and every finitely generated module is a direct sum of copies of these two. The <strong>enveloping operator algebra</strong> is generated by the left and the right multiplications, and because the algebra is commutative every sandwich operator is a left multiplication, $L_{X}R_{Y}=L_{XY}$, so the image of $\mathbb{B}_{\mathrm{r}}^{\mathrm e}$ in $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$ is the two-dimensional space $\{L_{X}:X\in\mathbb{B}_{\mathrm{r}}\}$ and not the whole of $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})\cong M_{2}(\mathbb{C})$. The multiplication operators and the bi-module structure are <em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<h2 id="what-the-criterion-delivers">What the Criterion Delivers</h2>
+<p>The criterion of §<em>The Criterion</em> is the exact statement of why the theory above is available in the block. Four consequences, each a theorem of the block.</p>
+<ul>
+<li><strong>The projector calculus.</strong> Every idempotent gives a projector, so every idempotent splits the space as $\mathbb{B}_{\mathrm{r}}=\mathrm{im}\,L_{\Pi}\oplus\ker L_{\Pi}$; because the product is commutative and associative, the image is the principal ideal $\mathbb{B}_{\mathrm{r}}\Pi$, the kernel is the annihilator $\mathrm{ann}(\Pi)$, and the two are the two lines of the other idempotent. In a structure without the criterion an idempotent still gives a fixed set of $L_{\Pi}$, but not a complement.</li>
+<li><strong>The square-zero operators vanish.</strong> The multiplication has no nonzero square-zero element — it is reduced, by <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra of the Reduced Biquaternions</em> — so the flag construction of the nilpotents is empty here. The elements whose operators are square-zero are exactly the elements whose square is $0$, namely $0$ alone.</li>
+<li><strong>The central splitting.</strong> Because $\Pi_{1}$ and $\Pi_{2}$ are central idempotents, the projector $L_{\Pi_{i}}$ is an <strong>algebra</strong> projection: the image $\mathbb{C}\Pi_{i}$ is a subalgebra, and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ is a decomposition of algebras, not only of vector spaces. The decomposition is an algebra decomposition exactly for the plain product; for the other three general products the idempotent coordinates do not multiply componentwise, and the split is not compatible with the product.</li>
+<li><strong>The module theory.</strong> Because the algebra is associative and unital and commutative, the left modules are the representations, the two simple modules are the two coordinate characters, and the algebra is Morita-trivial; none of this survives the loss of the criterion.</li>
+</ul>
+<h2 id="the-isolation-among-the-eight">The Isolation among the Eight</h2>
+<p>One law separates the block from the other seven, and this section names it and the boundary.</p>
+<p><strong>Theorem (the isolation).</strong> Of the eight structures — the four general products and the four structures obtained from the two quaternionic bilinear products by symmetrisation and antisymmetrisation, all of <em>The Four Products, Their Forms and Their Algebraic Norms</em> — the general plain product is the only one that is left-alternative, equivalently the only one whose multiplication operators satisfy $L^{\circ}_{X}L^{\circ}_{X}=L^{\circ}_{X\circ X}$ at every element, and the only one that is associative and unital.</p>
+<p><em>Proof.</em> The four general products are the general plain bilinear product $TW$, the general quaternionic bilinear product $T^{\natural}W$, the general plain sesquilinear product $TW^{*}$ and the general quaternionic sesquilinear product $T^{\natural}W^{*}$. The plain product is associative by the associativity of $\mathbb{C}$, with $1$ as two-sided unit. The other three fail the criterion, each with a witness on the two idempotent lines. For the general quaternionic bilinear product take $X=\Pi_{1}$ and $Y=\Pi_{2}$: on the one hand $X^{\natural}(X^{\natural}Y)=\Pi_{2}\,(\Pi_{2}\Pi_{2})=\Pi_{2}$, and on the other $(X^{\natural}X)^{\natural}Y$, whose inner factor is $X^{\natural}X=\Pi_{2}\Pi_{1}=0$, is $0$; the two sides differ, so the criterion fails. For the general plain sesquilinear product the second slot is read through the conjugate-linear star, so the criterion would equate a linear with a conjugate-linear operator and cannot hold at a nonzero element; for the general quaternionic sesquilinear product both slots carry a conjugation and the failure combines. The four symmetrised and antisymmetrised structures inherit the failure: the symmetric ones are commutative but not associative, the antisymmetric ones are neither, and none of the four is left-alternative. The plain product alone keeps the law.</p>
+<p>The isolation is about the <strong>theorem</strong> and not about isolated elements, and the distinction is the exact boundary of the claim. Single elements of the other structures do produce projectors — the plain idempotents act as projectors in some of the products — but no other structure carries the law, hence the class of its well-behaved elements is not a theory.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>structure</th>
+<th>associative</th>
+<th>unital</th>
+<th>commutative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain</td>
+<td>the general plain bilinear product $TW$</td>
+<td><strong>yes</strong></td>
+<td><strong>yes</strong>, unit $1$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>first slot ${}^{\natural}$</td>
+<td>the general quaternionic bilinear product $T^{\natural}W$</td>
+<td>no</td>
+<td>no ($X^{\natural}1=X^{\natural}$)</td>
+<td>no, symmetric up to ${}^{\natural}$: $W^{\natural}T=(T^{\natural}W)^{\natural}$</td>
+</tr>
+<tr>
+<td>second slot ${}^{*}$</td>
+<td>the general plain sesquilinear product $TW^{*}$</td>
+<td>no</td>
+<td>no ($1X^{*}=X^{*}$)</td>
+<td>no, symmetric up to ${}^{*}$: $WT^{*}=(TW^{*})^{*}$</td>
+</tr>
+<tr>
+<td>both slots</td>
+<td>the general quaternionic sesquilinear product $T^{\natural}W^{*}$</td>
+<td>no</td>
+<td>no</td>
+<td>no, symmetric up to $\bar{\cdot}$: $W^{\natural}T^{*}=\overline{T^{\natural}W^{*}}$</td>
+</tr>
+<tr>
+<td>symmetric parts</td>
+<td>of $T^{\natural}W$ and $T^{\natural}W^{*}$</td>
+<td>no</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>antisymmetric parts</td>
+<td>of $T^{\natural}W$ and $T^{\natural}W^{*}$</td>
+<td>no</td>
+<td>no</td>
+<td>no (alternating)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-boundary-of-the-criterion">The Boundary of the Criterion</h2>
+<p>The one structure that comes closest is the <strong>general quaternionic sesquilinear product</strong>, the boundary of the criterion. It is symmetric <strong>up to the bar</strong>, $W^{\natural}T^{*}=\overline{T^{\natural}W^{*}}$, and its diagonal form is the layer's definite form $\langle\cdot\rangle_{\natural*}$ of <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>; but it is not associative, so it does not share the criterion. Its multiplication operator is the plain $L_{X^{\natural}}$ composed with the star of the second slot,
+$$
+L_{X}=L_{X^{\natural}}\ \text{composed with the star of the second slot},
+$$
+so it inherits the projector calculus of the plain product for the elements fixed by the star, while it fails the criterion at the elements the star moves. The general quaternionic sesquilinear product and the criteria it does and does not satisfy are <em>The Specificities of the General Quaternionic Sesqualgebra</em>, and it is named here only to locate the boundary: the plain product is the criterion, the general quaternionic sesquilinear product is the nearest structure to it, and the remaining six are further. The symmetric halves are the other neighbours on the commutative side, but they carry no unit and no associativity at all, so the sesquilinear product, whose definite form and projector calculus survive on a large slice, is the closest of the seven.</p>
+<h2 id="summary">Summary</h2>
+<p>Of the eight structures on $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, the general plain product $TW$ is the only associative unital one, and the exact threshold of its theory is <strong>left alternativity</strong>, $X(XY)=(XX)Y$ at every pair, equivalently $L_{X}L_{X}=L_{XX}$ at every element. Because the multiplication is commutative the right law coincides with the left one and the criterion is simply associativity. From the single identity, together with the commutativity, follow the projector calculus of the idempotents, the <strong>central splitting</strong> $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ into a direct product of two fields, the vanishing off-diagonal $\mathbb{B}_{12}=\mathbb{B}_{21}=0$ of the Peirce decomposition, the reduced and semisimple structure with its four ideals $0,\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2},\mathbb{B}_{\mathrm{r}}$, and the module theory with its two simple modules. The enveloping operator algebra acts through the left multiplications alone, so its image is the two-dimensional space $\{L_{X}\}$, not the whole endomorphism algebra. The criterion holds in the plain product and in no other of the eight: the general quaternionic product fails through the natural sign in its first slot, the two sesquilinear products through the conjugate-linearity of the star, and the four halves inherit the failures of their parents. The isolation is a statement about the law and not about isolated elements, and the general quaternionic sesquilinear product is the boundary case, the symmetric-up-to-the-bar but non-associative neighbour.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$TW$</td>
+<td>the general plain product, the block's multiplication</td>
+</tr>
+<tr>
+<td>$L_{X}:Y\mapsto XY$</td>
+<td>the left multiplication of the plain product</td>
+</tr>
+<tr>
+<td>$X(XY)=(XX)Y$</td>
+<td>left alternativity, the criterion</td>
+</tr>
+<tr>
+<td>$L_{X}L_{X}=L_{XX}$</td>
+<td>the operator identity, equivalent to the criterion</td>
+</tr>
+<tr>
+<td>$q_1=A+B,\ q_2=A-B$</td>
+<td>the idempotent coordinates, with $TW=q_{1,T}q_{1,W}\Pi_{1}+q_{2,T}q_{2,W}\Pi_{2}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$</td>
+<td>the central algebra splitting</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{ij}=\{X:\Pi_{i}X\Pi_{j}=X\}$</td>
+<td>the Peirce spaces, with $\mathbb{B}_{12}=\mathbb{B}_{21}=0$</td>
+</tr>
+<tr>
+<td>$\mathrm{ann}(\Pi)$</td>
+<td>the annihilator of an idempotent, the other coordinate line</td>
+</tr>
+<tr>
+<td>$\{L_{X}:X\in\mathbb{B}_{\mathrm{r}}\}$</td>
+<td>the image of the enveloping operator algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the corner subalgebras of a finite-dimensional associative algebra.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for left alternativity and the alternative laws.</li>
+<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the ideal lattice and the Peirce decomposition.</li>
+<li><em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the operators and the bi-module structure.</li>
+<li><em>The Group of Units of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the unit group and its boundary.</li>
+<li><em>The Specificities of the Biquaternion Algebra</em> (<code>articles_maths/the-specificities-of-the-biquaternion-algebra.md</code>), for the non-commutative companion and the same criterion.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the eight structures and the isolation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

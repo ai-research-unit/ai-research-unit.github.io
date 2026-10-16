@@ -65,9 +65,9 @@ form. This article develops the operator itself, with no hypothesis beyond the i
 $L^2$ inner product: the algebra its kernels carry, its boundedness on $L^2$ under the three hypotheses
 that supply it, the Hilbert–Schmidt case in which the kernel is square-integrable, and the compactness
 that the square-integrable case yields.</p>
-<p>The prerequisites are <em>Measure Theory and Integration</em> for the Lebesgue integral, the $L^p$ spaces, the
+<p>The prerequisites are <em>Measure Theory and Integration</em> for the Lebesgue integral, the $L^{n}$ spaces, the
 Cauchy–Schwarz and Hölder inequalities and the Fubini–Tonelli theorem, and <em>Modes of Convergence</em> for
-convergence in $L^p$. The $L^2$ inner product is the one of that article, $\langle f,g\rangle=\int f\bar g$,
+convergence in $L^{n}$. The $L^2$ inner product is the one of that article, $\langle f,g\rangle=\int f\bar g$,
 linear in the first argument and conjugate-linear in the second. Nothing here uses the general theory of
 operators on a Hilbert space beyond the inner product and Cauchy–Schwarz: the boundedness, the
 Hilbert–Schmidt norm and the compactness are all proved concretely from the integral. The operator norm,
@@ -187,8 +187,8 @@ $$
 \qquad
 \int_XK(x,y)\,d\mu(x)\leq C\ \text{for almost every }y .
 $$
-Then $T_K$ maps $L^p(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
-$\lVert T_K\rVert_{L^p\to L^p}\leq C$.</p>
+Then $T_K$ maps $L^{n}(\mu)$ boundedly into itself for every $1\leq p\leq\infty$, with
+$\lVert T_K\rVert_{L^{n}}\to L^{n}\leq C$.</p>
 <p><strong>Proof.</strong> The case $p=1$ is Fubini and the case $p=\infty$ is the first hypothesis. For $1<p<\infty$ put
 $q=p/(p-1)$ and write $K\lvert f\rvert=K^{1/q}\cdot K^{1/p}\lvert f\rvert$; Hölder gives
 $$
@@ -204,7 +204,7 @@ $$
 since $p/q+1=p$.</p>
 <p><strong>Remark.</strong> The test also holds with two weights: if $p_0,q_0>0$ are measurable and
 $\int_XK(x,y)q_0(y)\,dy\leq Cp_0(x)$, $\int_XK(x,y)p_0(x)\,dx\leq Cq_0(y)$ almost everywhere, then $T_K$ is
-bounded on the weighted space $L^p(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
+bounded on the weighted space $L^{n}(p_0^p\,d\mu)$ with the same constant. The unweighted statement is the
 one used in this corpus, and the weighted one is recorded because the kernel of a Riemann–Liouville
 fractional integral satisfies it.</p>
 <h3 id="kernels-in-math121-and-the-young-bound">Kernels in $L^1$ and the Young Bound</h3>
@@ -321,9 +321,9 @@ compose by $(K\star L)(x,y)=\int K(x,z)L(z,y)\,dz$, the product is associative a
 $T_KT_L=T_{K\star L}$; the finite-dimensional instance is matrix multiplication, and a kernel of the form
 $k(x-y)$ gives a convolution operator.</p>
 <p>The operator is bounded on $L^2$ with $\lVert T_K\rVert\leq\lVert K\rVert_{L^2(X\times Y)}$ whenever the
-kernel is square-integrable, by Cauchy–Schwarz and Tonelli; it is bounded on every $L^p$ with
+kernel is square-integrable, by Cauchy–Schwarz and Tonelli; it is bounded on every $L^{n}$ with
 $\lVert T_K\rVert\leq C$ whenever a nonnegative kernel has row and column integrals bounded by $C$, by the
-Schur test; and it is bounded on every $L^p$ with $\lVert T_K\rVert\leq\lVert k\rVert_1$ when the kernel is
+Schur test; and it is bounded on every $L^{n}$ with $\lVert T_K\rVert\leq\lVert k\rVert_1$ when the kernel is
 translation invariant with an integrable profile, by Young's inequality. The Hilbert–Schmidt operators are
 the square-integrable kernels, with norm $\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_2$ dominating the
 operator norm, basis-independent and multiplicative under composition; they are the ideal of the bounded
@@ -393,7 +393,7 @@ to the Fredholm alternative.</p>
 <li>Israel Gohberg, Seymour Goldberg and Marinus A. Kaashoek, <em>Classes of Linear Operators, Vol. I</em>
   (Birkhäuser, 1990), for the algebra of kernels and the Schatten classes.</li>
 <li>Adriaan C. Zaanen, <em>Linear Analysis</em> (North-Holland, 1953), for the Schur test and the boundedness of
-  integral operators on $L^p$.</li>
+  integral operators on $L^{n}$.</li>
 <li>Gerald B. Folland, <em>Real Analysis: Modern Techniques and Their Applications</em> (2nd ed., Wiley, 1999), for
   the integral operator with a square-integrable kernel as an example in Hilbert space.</li>
 </ul>

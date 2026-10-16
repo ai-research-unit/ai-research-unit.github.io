@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the General Plain Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions"><strong>Introduction to the General Plain Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article reads the reduced biquaternion space with its <strong>multiplication</strong> and fixes it as an <strong>algebra</strong>: the definition of the product, the data the algebra carries, the axioms it satisfies and the plan of the block of articles that study it. The multiplication is the general plain bilinear product $TW$ of <em>The Four Products, Their Forms and Their Algebraic Norms</em>, read as the product of the algebra and not as one of four products side by side; the other three general products are not associative and are not the product of the algebra.</p>
+<p>The general plain algebra is the <strong>associative</strong> case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is <strong>not</strong> a field and <strong>not</strong> a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle T\rangle_{\natural}=A^{2}-B^{2}$, which is the algebraic norm of the quaternionic bilinear product and the determinant of the multiplication (<em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>).</p>
+<p><strong>The results.</strong> The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of <em>Reduced Biquaternion Space</em>. Its unit is $1$, its inverse is $T^{-1}=\langle T\rangle_{\natural}^{-1}(A-Bj)$ when $\langle T\rangle_{\natural}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, and its multiplication is componentwise in the idempotent coordinates.</p>
+<p><strong>Boundaries.</strong> The space and its two scalar systems are <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>, above this article in this category; the involutions are <em>The Two Involutions and the Group of Involutions</em>; the four products and their forms and norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>. The algebraic norm of the multiplication and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>, below this article; the zero divisors are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>; the annihilators are <em>Annihilators of the General Plain Algebra of the Reduced Biquaternions</em>; the roots of one and the idempotents are <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>; and the roots of zero and the nilpotents are <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra of the Reduced Biquaternions</em>. The element representations, the multiplication operators, the remarkable subspaces, the topology, the analysis, the geometry and the fractals are the later blocks of the category, listed in §<em>The Plan of the Block</em>.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>The general plain algebra of the reduced biquaternions is the reduced biquaternion space with its multiplication, and its product is the general plain bilinear product.</strong></p>
+<p><strong>Definition.</strong> The <strong>general plain algebra of the reduced biquaternions</strong> is the set $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the addition of the space and the <strong>multiplication</strong>
+$$
+(A+Bj)(C+Dj)=(AC+BD)+(AD+BC)j,
+$$
+extended to the whole space by bilinearity. The product is written by juxtaposition, $TW$.</p>
+<p>The definition is the definition of the algebra of <em>Reduced Biquaternion Space</em>; the product here is read as <strong>the</strong> product and not as one of the four general products, and the article fixes it as the algebra product. The general plain bilinear product is its coordinate table; the general quaternionic bilinear product, the general plain sesquilinear product and the general quaternionic sesquilinear product are the other three, and none of them is associative (<em>The Four Products, Their Forms and Their Algebraic Norms</em>, §<em>The Comparison of the Four Products</em>).</p>
+<h3 id="the-data">The Data</h3>
+<p><strong>The algebra is determined by four pieces of data: the space, the product, the unit and the scalar system.</strong></p>
+<p><strong>The data of the general plain algebra</strong> are:</p>
+<ul>
+<li>the <strong>space</strong>, the real four-dimensional vector space on $1,i,j,ij$, equivalently the complex two-dimensional space on $1,j$;</li>
+<li>the <strong>product</strong>, the bilinear multiplication $(A+Bj)(C+Dj)=(AC+BD)+(AD+BC)j$;</li>
+<li>the <strong>unit</strong>, the element $1$, two-sided and unique;</li>
+<li>the <strong>scalar system</strong>, the field $\mathbb{R}$ with the compatible complex scalar action of $\mathbb{C}$.</li>
+</ul>
+<p>The data determine the algebra, since a bilinear product on a basis determines the product everywhere. The element, its coordinates and its two parts are §<em>The Element</em>; the axioms the data satisfy are §<em>The Algebra Axioms</em>.</p>
+<h3 id="the-product-and-its-unit">The Product and Its Unit</h3>
+<p><strong>The product is commutative, associative and unital, and the unit is $1$.</strong></p>
+<p><strong>Theorem (the algebra axioms).</strong> For all $T,W,V$ and all $\lambda\in\mathbb{R}$ the multiplication satisfies
+$$
+(TW)V=T(WV),\qquad TW=WT,\qquad 1T=T1=T,\qquad \lambda(TW)=(\lambda T)W=T(\lambda W),
+$$
+and it is distributive over the addition.</p>
+<p><em>Proof.</em> The product is the product of the algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, which is associative, commutative and unital, and bilinear over $\mathbb{R}$ (<em>Reduced Biquaternion Space</em>). The distributivity is the bilinearity.</p>
+<p>The algebra is therefore an <strong>associative commutative unital $\mathbb{R}$-algebra</strong>, and with the complex scalar action it is also a <strong>$\mathbb{C}$-algebra</strong>. It is the same algebra as the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$.</p>
+<h2 id="the-element">The Element</h2>
+<p><strong>A general element is $T=A+Bj$, with a scalar part $A$ and a vector part $Bj$, and its idempotent coordinates $A+B$ and $A-B$ are the pair that carries the product.</strong></p>
+<p><strong>Definition.</strong> The <strong>scalar part</strong> of $T=A+Bj$ is $A$, the <strong>vector part</strong> is $Bj$, and the <strong>idempotent coordinates</strong> are $A+B$ and $A-B$,
+$$
+T=(A+B)\Pi_{1}+(A-B)\Pi_{2},\qquad \Pi_{1,2}=\tfrac12(1\pm j).
+$$</p>
+<p><strong>Proposition (the multiplication in the idempotent coordinates).</strong> For $T=(q_1,q_2)$ and $W=(q_1',q_2')$ in the idempotent coordinates $q_1=A+B$, $q_2=A-B$,
+$$
+TW=(q_1q_1',\;q_2q_2'),
+$$
+the product being componentwise.</p>
+<p><em>Proof.</em> The idempotents are orthogonal, $\Pi_{1}\Pi_{2}=0$, and idempotent, $\Pi_{i}^{2}=\Pi_{i}$ (<em>Reduced Biquaternion Space</em>); expanding $(q_1\Pi_{1}+q_2\Pi_{2})(q_1'\Pi_{1}+q_2'\Pi_{2})$ kills the crossed terms and gives $q_1q_1'\Pi_{1}+q_2q_2'\Pi_{2}$.</p>
+<p>The proposition is the reason every question about the algebra splits into two questions about the complex numbers, and it is used in every article of the block.</p>
+<h2 id="the-algebra-axioms">The Algebra Axioms</h2>
+<h3 id="associativity">Associativity</h3>
+<p><strong>The product is associative: $T(WV)=(TW)V$, and a triple of elements has a single product.</strong></p>
+<p><em>Proof.</em> In the idempotent coordinates the product is $(q_1q_1',q_2q_2')$, and the complex multiplication is associative in each coordinate, so $((q_1q_1')q_1'',(q_2q_2')q_2'')$ agrees in the two groupings; the associativity of the complex multiplication is the one fact used.</p>
+<h3 id="commutativity">Commutativity</h3>
+<p><strong>The product is commutative: $TW=WT$, and the algebra is not the quaternion algebra.</strong></p>
+<p><em>Proof.</em> The idempotent coordinates of $TW$ are $(q_1q_1',q_2q_2')$ and those of $WT$ are $(q_1'q_1,q_2'q_2)$, equal because the complex multiplication is commutative. In the real basis the commutativity is $ji=ij$, which is the third defining relation of <em>Reduced Biquaternion Space</em>; the product is therefore not the quaternion product, and the algebra is not $\mathbb{H}$ or $\mathbb{B}$.</p>
+<h3 id="the-unit-and-the-inverse">The Unit and the Inverse</h3>
+<p><strong>The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle T\rangle_{\natural}=A^{2}-B^{2}$ is nonzero, with the inverse $T^{-1}=\langle T\rangle_{\natural}^{-1}(A-Bj)$.</strong></p>
+<p><em>Proof.</em> The unit is $1=1+0j$, and $1\,T=T\,1=T$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle T\rangle_{\natural}\neq0$ and the inverse are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, §<em>The Multiplicative Norm</em>, and the full treatment is <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>, below this article. In the idempotent coordinates the inverse of $(q_1,q_2)$ is $(q_1^{-1},q_2^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle T\rangle_{\natural}=q_1q_2\neq0$.</p>
+<h3 id="the-absence-of-division">The Absence of Division</h3>
+<p><strong>The algebra is not a field and not a division algebra: it has zero divisors, and the invertible elements form a proper subset of the nonzero elements.</strong></p>
+<p><em>Proof.</em> The idempotents are orthogonal and nonzero, $\Pi_{1}\Pi_{2}=0$, so $\Pi_{1}$ and $\Pi_{2}$ are zero divisors (<em>Reduced Biquaternion Space</em>); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of units is a proper subset of $\mathbb{B}_{\mathrm{r}}\setminus\{0\}$.</p>
+<p>The zero divisors, their two families and their geometry are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>, below this article; their annihilators are <em>Annihilators of the General Plain Algebra of the Reduced Biquaternions</em>. The <strong>absence of division</strong> is stated here because it bears on every statement of an inverse: an element must be tested against $\langle T\rangle_{\natural}\neq0$ before it is inverted.</p>
+<h2 id="the-structure">The Structure</h2>
+<p><strong>The algebra is the direct product of two copies of $\mathbb{C}$, and its maximal ideals are the two idempotent lines.</strong></p>
+<p><strong>Theorem (the structure).</strong> The component map $\varphi(T)=(A+B,A-B)$ is an isomorphism of $\mathbb{C}$-algebras
+$$
+\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}\cong\mathbb{C}\oplus\mathbb{C},
+$$
+and the ring is a direct product of two fields; it is not simple, its maximal ideals are the two idempotent lines $\mathbb{C}\Pi_{2}$ and $\mathbb{C}\Pi_{1}$ read as kernels of the two projections, and its only idempotents are $0,1,\Pi_{1},\Pi_{2}$.</p>
+<p><em>Proof.</em> The isomorphism is <em>Reduced Biquaternion Space</em>, §<em>The Isomorphism with the Direct Product</em>; a direct product of two fields has exactly two maximal ideals, the kernels of the two projections, which are $\mathbb{C}\Pi_{2}$ and $\mathbb{C}\Pi_{1}$. The idempotents of a direct product of two fields are the four pairs of $0$ and $1$, which correspond to $0,1,\Pi_{1},\Pi_{2}$; the computation is <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>, below this article.</p>
+<h2 id="the-plan-of-the-block">The Plan of the Block</h2>
+<p><strong>The general plain algebra is studied in thirteen articles, and the plan is the list below.</strong></p>
+<p>The block of the general plain algebra is the thirteen articles below, in the order the category follows, and its articles are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Introduction to the General Plain Algebra</em> (this article)</td>
+<td>the definition, the data and the plan</td>
+</tr>
+<tr>
+<td><em>Norm and Invertibility in the General Plain Algebra</em></td>
+<td>the algebraic norm, the invertibility criterion and the group of units</td>
+</tr>
+<tr>
+<td><em>Zero Divisors of the General Plain Algebra</em></td>
+<td>the null cone and its structure</td>
+</tr>
+<tr>
+<td><em>Annihilators of the General Plain Algebra</em></td>
+<td>the annihilators of an element and the two-sided annihilator of the structure</td>
+</tr>
+<tr>
+<td><em>Square Roots of One and the Idempotents</em></td>
+<td>the roots of $1$, the idempotents and the projections they carry</td>
+</tr>
+<tr>
+<td><em>Square Roots of Zero and the Nilpotents</em></td>
+<td>the roots of $0$ and the nilpotents, product by product</td>
+</tr>
+<tr>
+<td><em>Square Roots of a General Element</em></td>
+<td>the square roots of a general element</td>
+</tr>
+<tr>
+<td><em>The Specificities of the General Plain Algebra</em></td>
+<td>the specificities of the algebra</td>
+</tr>
+<tr>
+<td><em>Ideals and Peirce Decomposition</em></td>
+<td>the ideals and the Peirce decomposition</td>
+</tr>
+<tr>
+<td><em>The Group of Units of the General Plain Algebra</em></td>
+<td>the structure of the group of units</td>
+</tr>
+<tr>
+<td><em>The Forms of the General Plain Algebra</em></td>
+<td>the forms of the algebra</td>
+</tr>
+<tr>
+<td><em>The Multiplication Operators of the General Plain Algebra</em></td>
+<td>the left and the right multiplication maps</td>
+</tr>
+<tr>
+<td><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation</em></td>
+<td>the $2\times2$ matrix model</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the plan of the block and not a set of definitions: each row is defined in its own article, and the order of the rows is the order the category follows. The articles of the later blocks — the remarkable subspaces, the representations and operators, the topology, the analysis, the geometry and the fractals — are listed in the menu of the category and are not part of this block.</p>
+<h2 id="summary">Summary</h2>
+<p>The general plain algebra of the reduced biquaternions is the space $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the multiplication
+$$
+(A+Bj)(C+Dj)=(AC+BD)+(AD+BC)j,
+$$
+the general plain bilinear product read as the product of the algebra. Its data are the space, the product, the unit and the scalar system; it is an associative, commutative, unital $\mathbb{R}$-algebra and $\mathbb{C}$-algebra, with unit $1$ and with the multiplication in the idempotent coordinates componentwise, $TW=(q_1q_1',q_2q_2')$ for $T=(A+B,A-B)$ and $W=(C+D,C-D)$.</p>
+<p>An element is $T=A+Bj$ with scalar part $A$ and vector part $Bj$; its inverse exists exactly when the reduced norm $\langle T\rangle_{\natural}=A^{2}-B^{2}$ is nonzero, and it is $T^{-1}=\langle T\rangle_{\natural}^{-1}(A-Bj)$. The algebra is the direct product $\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ of two copies of $\mathbb{C}$, its maximal ideals are the two idempotent lines, its only idempotents are $0,1,\Pi_{1},\Pi_{2}$, and it <strong>has zero divisors and is not a field and not a division algebra</strong>. The block of the general plain algebra is the thirteen articles of §<em>The Plan of the Block</em>, of which this article is the first.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$TW$</td>
+<td>the multiplication, the general plain bilinear product</td>
+</tr>
+<tr>
+<td>$T=A+Bj$</td>
+<td>a general element, $A=a+ia'$, $B=b+ib'$</td>
+</tr>
+<tr>
+<td>$A$, $Bj$</td>
+<td>the scalar part and the vector part</td>
+</tr>
+<tr>
+<td>$A+B$, $A-B$</td>
+<td>the idempotent coordinates of $T=(A+B)\Pi_{1}+(A-B)\Pi_{2}$</td>
+</tr>
+<tr>
+<td>$\Pi_{1,2}=\tfrac12(1\pm j)$</td>
+<td>the two idempotents</td>
+</tr>
+<tr>
+<td>$\langle T\rangle_{\natural}=A^{2}-B^{2}$</td>
+<td>the reduced norm and the invertibility criterion</td>
+</tr>
+<tr>
+<td>$T^{-1}=\langle T\rangle_{\natural}^{-1}(A-Bj)$</td>
+<td>the inverse</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$</td>
+<td>the structure of the algebra as a direct product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Reduced Biquaternion Space</em> (<code>articles_maths/reduced-biquaternion-space.md</code>), above this article in this category, for the multiplication table, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), above this article, for the four general products and the norms they carry.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.</li>
+<li><em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article, for the null cone and its structure.</li>
+<li><em>Introduction to the Biquaternion Algebra</em> (<code>articles_maths/introduction-to-the-biquaternion-algebra.md</code>), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.</li>
+<li><em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the definitions of the unit, the inverse and the group of units used in the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

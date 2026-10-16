@@ -54,19 +54,19 @@
 <h2 id="introduction">Introduction</h2>
 <p>A complex manifold $(M,J)$ carries a chosen form — a Hermitian metric $g$ — and an operator on it is a linear operator on the spaces of functions, of vector fields and of forms that the complex structure and the metric allow. The structure that is intrinsic to $J$ alone is the <strong>type</strong>: the complexified tangent space splits as $T_{\mathbb C}M = T^{1,0}\oplus T^{0,1}$ into the $+i$ and $-i$ eigenvectors of $J$, and every operator is read by the types it raises and lowers. A $\mathbb{C}$-linear operator is <strong>holomorphic</strong> when it commutes with $J$ and <strong>antiholomorphic</strong> when it anticommutes with $J$, that is when it is conjugate-linear; on functions these are the Cauchy–Riemann operators $\partial$ and $\bar\partial$, and on forms the exterior derivative splits as $d = \partial + \bar\partial$, which is the integrability of $J$ seen at the level of operators. The operator layer of the category is the algebra these operators generate, together with the complex structure $J$ itself, and the metric $g$ enters only where an operator is measured against it: the formal adjoints, the codifferential and the Laplacian, which the later articles of the category develop.</p>
 <p>The article has four sections: the type decomposition and the operators that respect it; the Cauchy–Riemann operators and the Dolbeault complex; the holomorphic vector fields and the operators commuting with $J$; and the metric and the operators it defines. The complex manifold, the almost complex structure, the type decomposition, the Nijenhuis tensor and the integrability theorem are <em>Hermitian Geometry and Almost Complex Structures</em>, and the Hermitian metric, the fundamental form and the Chern connection are the same article and <em>Kähler Geometry</em>; none of that is re-derived. The differential forms, the exterior derivative and the de Rham complex are <em>Differential Forms</em> and <em>The Exterior Derivative</em>; the Riemannian metric, the Levi-Civita connection and the curvature are <em>Riemannian Geometry</em>. The Kähler form read as an operator on the exterior algebra is <em>The Kähler Form Operator</em>, the curvature operator is <em>The Curvature Operator of a Complex Manifold</em>, and the Bergman operator is <em>The Bergman Operator</em>, the companion articles. The Hodge theory of the Dolbeault complex and the elliptic-operator finiteness are Part III, where the measure and the limit are available, and no integration is used here.</p>
-<p>Throughout, $M$ is a complex manifold of complex dimension $n$ with complex structure $J$, $T_{\mathbb C}M = T^{1,0}M\oplus T^{0,1}M$ is its complexified tangent bundle, $g$ is a Hermitian metric, $\Omega(X,Y) = g(JX,Y)$ is the fundamental form, $\Omega^{p,q}(M)$ is the space of forms of type $(p,q)$, and the operators $\partial$, $\bar\partial$, $d$ act on the exterior algebra of $M$. A local holomorphic frame is written $(\partial_{z^1},\dots,\partial_{z^n})$ with the conjugate frame $(\partial_{\bar z^1},\dots,\partial_{\bar z^n})$.</p>
+<p>Throughout, $M$ is a complex manifold of complex dimension $n$ with complex structure $J$, $T_{\mathbb C}M = T^{1,0}M\oplus T^{0,1}M$ is its complexified tangent bundle, $g$ is a Hermitian metric, $\Omega(X,Y) = g(JX,Y)$ is the fundamental form, $\Omega^{n,m}(M)$ is the space of forms of type $(n,m)$, and the operators $\partial$, $\bar\partial$, $d$ act on the exterior algebra of $M$. A local holomorphic frame is written $(\partial_{z^1},\dots,\partial_{z^n})$ with the conjugate frame $(\partial_{\bar z^1},\dots,\partial_{\bar z^n})$.</p>
 <h2 id="the-type-decomposition-and-the-operators-that-respect-it">The Type Decomposition and the Operators that Respect It</h2>
 <p><strong>Definition.</strong> On the complexified tangent space the complex structure has the two eigenvalues $\pm i$, and the eigenspaces
 $$
 T^{1,0}M = \ker(J - i\,\mathrm{id}), \qquad T^{0,1}M = \ker(J + i\,\mathrm{id}),
 $$
-are the <strong>holomorphic</strong> and <strong>antiholomorphic</strong> tangent spaces; $T_{\mathbb C}M = T^{1,0}M\oplus T^{0,1}M$ and the two are conjugate, $\overline{T^{1,0}M} = T^{0,1}M$. The <strong>type</strong> of a $k$-form is the pair $(p,q)$ with $p+q = k$ giving its degrees in the two parts; the space of such forms is $\Omega^{p,q}(M)$, and $\Omega^k(M)\otimes\mathbb{C} = \bigoplus_{p+q=k}\Omega^{p,q}(M)$.</p>
+are the <strong>holomorphic</strong> and <strong>antiholomorphic</strong> tangent spaces; $T_{\mathbb C}M = T^{1,0}M\oplus T^{0,1}M$ and the two are conjugate, $\overline{T^{1,0}M} = T^{0,1}M$. The <strong>type</strong> of a $k$-form is the pair $(n,m)$ with $n+m = k$ giving its degrees in the two parts; the space of such forms is $\Omega^{n,m}(M)$, and $\Omega^k(M)\otimes\mathbb{C} = \bigoplus_{n+m=k}\Omega^{n,m}(M)$.</p>
 <p><strong>Definition.</strong> A $\mathbb{C}$-linear operator $D$ on the complexified forms is <strong>of type $(r,s)$</strong> when it raises the holomorphic degree by $r$ and the antiholomorphic degree by $s$,
 $$
-D\bigl(\Omega^{p,q}(M)\bigr) \subseteq \Omega^{p+r,q+s}(M);
+D\bigl(\Omega^{n,m}(M)\bigr) \subseteq \Omega^{n+r,m+s}(M);
 $$
 it is <strong>holomorphic</strong> when it is of type $(1,0)$, that is when it commutes with $J$ on the underlying tangent directions, and <strong>antiholomorphic</strong> when it is of type $(0,1)$. An operator is <strong>$J$-linear</strong> when it commutes with $J$ and <strong>$J$-antilinear</strong> when it anticommutes with it; over the complexified space the two are the type $(1,0)$ and the type $(0,1)$ cases.</p>
-<p><strong>Proposition (the type is preserved by the structure).</strong> A holomorphic local map $F : M\to N$ of complex manifolds pulls forms back by type, $F^{*}\Omega^{p,q}(N)\subseteq\Omega^{p,q}(M)$, and the Lie bracket of two holomorphic vector fields is holomorphic; the type decomposition is thus intrinsic to the complex structure and independent of the metric.</p>
+<p><strong>Proposition (the type is preserved by the structure).</strong> A holomorphic local map $F : M\to N$ of complex manifolds pulls forms back by type, $F^{*}\Omega^{n,m}(N)\subseteq\Omega^{n,m}(M)$, and the Lie bracket of two holomorphic vector fields is holomorphic; the type decomposition is thus intrinsic to the complex structure and independent of the metric.</p>
 <p><strong>Proof.</strong> The pullback acts on the two eigenspaces of $J$ through the differential, and $dF\circ J = J'\circ dF$ preserves the splitting; the bracket statement is the integrability of the almost complex structure, <em>Hermitian Geometry and Almost Complex Structures</em>, where the Nijenhuis tensor of a complex manifold vanishes. No metric is used.</p>
 <p><strong>Remark (the metric is not used for the type).</strong> The type decomposition, the Cauchy–Riemann operators and the holomorphic vector fields of the next sections depend only on $J$. The chosen Hermitian metric $g$ enters when an operator is to be adjointed, when lengths are to be measured, or when the two parts of the Laplacian are to be compared; the sections below mark where.</p>
 <h2 id="the-cauchyriemann-operators-and-the-dolbeault-complex">The Cauchy–Riemann Operators and the Dolbeault Complex</h2>
@@ -77,7 +77,7 @@ $$
 so that $d = \partial + \bar\partial$; a function is <strong>holomorphic</strong> when $\bar\partial f = 0$ and <strong>antiholomorphic</strong> when $\partial f = 0$.</p>
 <p><strong>Proposition (the decomposition of $d$).</strong> On a complex manifold the exterior derivative splits by type,
 $$
-d = \partial + \bar\partial, \qquad \partial : \Omega^{p,q}\to\Omega^{p+1,q}, \qquad \bar\partial : \Omega^{p,q}\to\Omega^{p,q+1},
+d = \partial + \bar\partial, \qquad \partial : \Omega^{n,m}\to\Omega^{n+1,m}, \qquad \bar\partial : \Omega^{n,m}\to\Omega^{n,m+1},
 $$
 and the two components satisfy
 $$
@@ -86,9 +86,9 @@ $$</p>
 <p><strong>Proof.</strong> The decomposition of $d$ by type is the statement that the ideal generated by the $(1,0)$-forms and the ideal generated by the $(0,1)$-forms are each $d$-stable, which holds exactly on a complex manifold, equivalently $N_J = 0$, by <em>Hermitian Geometry and Almost Complex Structures</em>. From $0 = d^2 = \partial^2 + (\partial\bar\partial+\bar\partial\partial) + \bar\partial^2$ and the type of each summand, each component vanishes separately.</p>
 <p><strong>Definition.</strong> The <strong>Dolbeault complex</strong> is the complex
 $$
-0 \longrightarrow \Omega^{p,0} \xrightarrow{\ \bar\partial\ } \Omega^{p,1} \xrightarrow{\ \bar\partial\ } \Omega^{p,2} \xrightarrow{\ \bar\partial\ } \cdots ,
+0 \longrightarrow \Omega^{n,0} \xrightarrow{\ \bar\partial\ } \Omega^{n,1} \xrightarrow{\ \bar\partial\ } \Omega^{n,2} \xrightarrow{\ \bar\partial\ } \cdots ,
 $$
-with cohomology the <strong>Dolbeault groups</strong> $H^{p,q}_{\bar\partial}(M) = \ker\bar\partial/\operatorname{im}\bar\partial$ on $\Omega^{p,q}$; the conjugate complex, formed with $\partial$, gives $H^{q,p}(M)$ under complex conjugation of forms.</p>
+with cohomology the <strong>Dolbeault groups</strong> $H^{n,m}_{\bar\partial}(M) = \ker\bar\partial/\operatorname{im}\bar\partial$ on $\Omega^{n,m}$; the conjugate complex, formed with $\partial$, gives $H^{m,n}(M)$ under complex conjugation of forms.</p>
 <p><strong>Remark.</strong> The operators $\partial$ and $\bar\partial$ are conjugate to one another, $\overline{\bar\partial \alpha} = \partial\bar\alpha$, so the two complexes carry the same information and the antiholomorphic operators are the complex conjugates of the holomorphic ones. The comparison of the two Laplacians,
 $$
 \Delta_{\bar\partial} = \bar\partial\bar\partial^{*} + \bar\partial^{*}\bar\partial , \qquad \Delta_{\partial} = \partial\partial^{*} + \partial^{*}\partial ,
@@ -133,15 +133,15 @@ for compactly supported forms, $dV$ the volume form of $g$.</p>
 <td>Hermitian metric and fundamental form</td>
 </tr>
 <tr>
-<td>$\Omega^{p,q}(M)$</td>
-<td>forms of type $(p,q)$</td>
+<td>$\Omega^{n,m}(M)$</td>
+<td>forms of type $(n,m)$</td>
 </tr>
 <tr>
 <td>$\partial$, $\bar\partial$</td>
 <td>Cauchy–Riemann operators, the type $(1,0)$ and $(0,1)$ parts of $d$</td>
 </tr>
 <tr>
-<td>$H^{p,q}_{\bar\partial}(M)$</td>
+<td>$H^{n,m}_{\bar\partial}(M)$</td>
 <td>Dolbeault cohomology of the $\bar\partial$-complex</td>
 </tr>
 <tr>

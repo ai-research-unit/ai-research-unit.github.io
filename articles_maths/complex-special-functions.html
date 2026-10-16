@@ -66,11 +66,11 @@ $$</p>
 $$</p>
 <p>For $A = a + i a'$ with $a, a' \in \mathbb{R}$,</p>
 <p>$$
-\exp(A) = e^a (\cos a' + i \sin a').
+\exp(A) = \exp(a) (\cos a' + i \sin a').
 $$</p>
 <p>This is <strong>Euler's formula</strong>, and it is the bridge between the exponential and the trigonometric functions. In particular, for $a' = \theta$,</p>
 <p>$$
-e^{i\theta} = \cos\theta + i \sin\theta.
+\exp(i\theta) = \cos\theta + i \sin\theta.
 $$</p>
 <p>The exponential is $2\pi i$-periodic: $\exp(A + 2\pi i) = \exp(A)$.</p>
 <h3 id="the-complex-logarithm">The Complex Logarithm</h3>
@@ -93,7 +93,7 @@ $$</p>
 <h3 id="trigonometric-functions">Trigonometric Functions</h3>
 <p>The <strong>complex sine</strong> and <strong>cosine</strong> are defined by</p>
 <p>$$
-\sin A = \frac{e^{iA} - e^{-iA}}{2i}, \qquad \cos A = \frac{e^{iA} + e^{-iA}}{2}.
+\sin A = \frac{\exp(iA) - \exp(-iA)}{2i}, \qquad \cos A = \frac{\exp(iA) + \exp(-iA)}{2}.
 $$</p>
 <p>Both are entire. They satisfy</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 <h3 id="hyperbolic-functions">Hyperbolic Functions</h3>
 <p>The <strong>complex hyperbolic sine</strong> and <strong>cosine</strong> are defined by</p>
 <p>$$
-\sinh A = \frac{e^A - e^{-A}}{2}, \qquad \cosh A = \frac{e^A + e^{-A}}{2}.
+\sinh A = \frac{\exp(A) - \exp(-A)}{2}, \qquad \cosh A = \frac{\exp(A) + \exp(-A)}{2}.
 $$</p>
 <p>Both are entire, and they satisfy</p>
 <p>$$
@@ -154,7 +154,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>The <strong>gamma function</strong> is defined for $\operatorname{Re} A > 0$ by</p>
 <p>$$
-\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt.
+\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt.
 $$</p>
 <p>The integral converges absolutely for $\operatorname{Re} A > 0$ and defines a holomorphic function on that half-plane.</p>
 <h3 id="analytic-continuation">Analytic Continuation</h3>
@@ -169,7 +169,7 @@ $$</p>
 <p>The extended function has no zeros. It satisfies $\Gamma(n + 1) = n!$ for non-negative integers $n$.</p>
 <h3 id="the-weierstrass-product">The Weierstrass Product</h3>
 <p>$$
-\frac{1}{\Gamma(A)} = A e^{\gamma A} \prod_{n=1}^\infty \left( 1 + \frac{A}{n} \right) e^{-A/n},
+\frac{1}{\Gamma(A)} = A \exp(\gamma A) \prod_{n=1}^\infty \left( 1 + \frac{A}{n} \right) \exp(-A/n),
 $$</p>
 <p>where $\gamma$ is the Euler–Mascheroni constant. This product converges uniformly on compact subsets of $\mathbb{C}$ and shows that $1/\Gamma$ is entire with zeros at $A = 0, -1, -2, \dots$.</p>
 <h3 id="reflection-and-duplication">Reflection and Duplication</h3>
@@ -194,7 +194,7 @@ $$</p>
 <h3 id="stirlings-formula">Stirling's Formula</h3>
 <p>As $|A| \to \infty$ with $|\arg A| < \pi$,</p>
 <p>$$
-\Gamma(A) \sim \sqrt{2\pi} \, A^{A - 1/2} e^{-A}.
+\Gamma(A) \sim \sqrt{2\pi} \, A^{A - 1/2} \exp(-A).
 $$</p>
 <p>This is the asymptotic expansion of the gamma function, and it is the source of most estimates involving factorials and binomial coefficients.</p>
 <h2 id="the-riemann-zeta-function">The Riemann Zeta Function</h2>
@@ -231,11 +231,11 @@ $$</p>
 <h3 id="the-incomplete-gamma-function">The Incomplete Gamma Function</h3>
 <p>The <strong>lower incomplete gamma function</strong> is</p>
 <p>$$
-\gamma(s, A) = \int_0^A t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0.
+\gamma(s, A) = \int_0^A t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s > 0.
 $$</p>
 <p>The <strong>upper incomplete gamma function</strong> is</p>
 <p>$$
-\Gamma(s, A) = \int_A^\infty t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0,
+\Gamma(s, A) = \int_A^\infty t^{s-1} \exp(-t) \, dt, \qquad \operatorname{Re} s > 0,
 $$</p>
 <p>where the integral is along a ray from $A$ to infinity avoiding the negative real axis. They satisfy</p>
 <p>$$
@@ -260,21 +260,21 @@ $$</p>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>error function</strong> is defined by</p>
 <p>$$
-\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt.
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A \exp(-t^2) \, dt.
 $$</p>
 <p>The integral is along any path from $0$ to $A$. The integrand is entire, so $\operatorname{erf}$ is entire. It is odd, and it satisfies</p>
 <p>$$
-\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2}.
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} \exp(-A^2).
 $$</p>
 <h3 id="the-complementary-error-function">The Complementary Error Function</h3>
 <p>$$
-\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty \exp(-t^2) \, dt.
 $$</p>
 <p>The integral is along a ray from $A$ to infinity avoiding the essential singularity at infinity.</p>
 <h3 id="asymptotics">Asymptotics</h3>
 <p>As $|A| \to \infty$ with $|\arg A| < 3\pi/4$,</p>
 <p>$$
-\operatorname{erfc}(A) \sim \frac{e^{-A^2}}{\sqrt{\pi} A}.
+\operatorname{erfc}(A) \sim \frac{\exp(-A^2)}{\sqrt{\pi} A}.
 $$</p>
 <p>This asymptotic expansion is used in the theory of the heat equation and in probability.</p>
 <h2 id="the-orthogonal-polynomials">The Orthogonal Polynomials</h2>
@@ -311,28 +311,28 @@ $$</p>
 <h3 id="hermite-polynomials">Hermite Polynomials</h3>
 <p>The <strong>Hermite polynomials</strong> $H_n(A)$ are defined by</p>
 <p>$$
-H_n(A) = (-1)^n e^{A^2} \frac{d^n}{dA^n} e^{-A^2}.
+H_n(A) = (-1)^n \exp(A^2) \frac{d^n}{dA^n} \exp(-A^2).
 $$</p>
 <p>They satisfy the recurrence</p>
 <p>$$
 H_{n+1}(A) = 2A H_n(A) - 2n H_{n-1}(A),
 $$</p>
-<p>with $H_0 = 1$ and $H_1 = 2A$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-a^2}$:</p>
+<p>with $H_0 = 1$ and $H_1 = 2A$. They are orthogonal on $\mathbb{R}$ with respect to the weight $\exp(-a^2)$:</p>
 <p>$$
-\int_{-\infty}^\infty H_m(a) H_n(a) e^{-a^2} \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
+\int_{-\infty}^\infty H_m(a) H_n(a) \exp(-a^2) \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
 $$</p>
 <h3 id="laguerre-polynomials">Laguerre Polynomials</h3>
 <p>The <strong>Laguerre polynomials</strong> $L_n(A)$ are defined by</p>
 <p>$$
-L_n(A) = \frac{e^A}{n!} \frac{d^n}{dA^n} (A^n e^{-A}).
+L_n(A) = \frac{\exp(A)}{n!} \frac{d^n}{dA^n} (A^n \exp(-A)).
 $$</p>
 <p>They satisfy the recurrence</p>
 <p>$$
 (n+1) L_{n+1}(A) = (2n+1-A) L_n(A) - n L_{n-1}(A),
 $$</p>
-<p>with $L_0 = 1$ and $L_1 = 1 - A$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-a}$:</p>
+<p>with $L_0 = 1$ and $L_1 = 1 - A$. They are orthogonal on $[0, \infty)$ with respect to the weight $\exp(-a)$:</p>
 <p>$$
-\int_0^\infty L_m(a) L_n(a) e^{-a} \, da = \delta_{mn}.
+\int_0^\infty L_m(a) L_n(a) \exp(-a) \, da = \delta_{mn}.
 $$</p>
 <h2 id="the-bessel-functions">The Bessel Functions</h2>
 <h3 id="definition_3">Definition</h3>
@@ -361,7 +361,7 @@ $$</p>
 <h3 id="integral-representations">Integral Representations</h3>
 <p>For $\operatorname{Re} \nu > -1/2$,</p>
 <p>$$
-J_\nu(A) = \frac{1}{\sqrt{\pi} \, \Gamma(\nu + 1/2)} \left( \frac{A}{2} \right)^\nu \int_{-1}^1 (1 - t^2)^{\nu - 1/2} e^{iAt} \, dt.
+J_\nu(A) = \frac{1}{\sqrt{\pi} \, \Gamma(\nu + 1/2)} \left( \frac{A}{2} \right)^\nu \int_{-1}^1 (1 - t^2)^{\nu - 1/2} \exp(iAt) \, dt.
 $$</p>
 <p>This representation is the source of most asymptotic estimates.</p>
 <h3 id="asymptotics_1">Asymptotics</h3>
@@ -370,7 +370,7 @@ $$</p>
 J_\nu(A) \sim \sqrt{\frac{2}{\pi A}} \cos\left(A - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
 $$</p>
 <p>$$
-I_\nu(A) \sim \frac{e^A}{\sqrt{2 \pi A}}, \qquad |\arg A| < \frac{\pi}{2}.
+I_\nu(A) \sim \frac{\exp(A)}{\sqrt{2 \pi A}}, \qquad |\arg A| < \frac{\pi}{2}.
 $$</p>
 <h2 id="the-airy-functions">The Airy Functions</h2>
 <h3 id="definition_4">Definition</h3>
@@ -387,7 +387,7 @@ $$</p>
 <h3 id="asymptotics_2">Asymptotics</h3>
 <p>As $|A| \to \infty$ with $|\arg A| < \pi$,</p>
 <p>$$
-\operatorname{Ai}(A) \sim \frac{1}{2 \sqrt{\pi} A^{1/4}} e^{-2 A^{3/2}/3}.
+\operatorname{Ai}(A) \sim \frac{1}{2 \sqrt{\pi} A^{1/4}} \exp(-2 A^{3/2}/3).
 $$</p>
 <p>As $|A| \to \infty$ with $|\arg(-A)| < 2\pi/3$,</p>
 <p>$$
@@ -458,11 +458,11 @@ $$</p>
 <h3 id="definition_6">Definition</h3>
 <p>The <strong>Lambert W function</strong> is the multivalued inverse of</p>
 <p>$$
-f(B) = B e^B.
+f(B) = B \exp(B).
 $$</p>
 <p>That is, $W(A)$ is any solution of</p>
 <p>$$
-W(A) e^{W(A)} = A.
+W(A) \exp(W(A)) = A.
 $$</p>
 <p>The function has infinitely many branches $W_k(A)$ for $k \in \mathbb{Z}$, with branch points at $A = 0$ and $A = -1/e$.</p>
 <h3 id="derivative">Derivative</h3>
@@ -470,11 +470,11 @@ $$</p>
 W'(A) = \frac{W(A)}{A(1 + W(A))}, \qquad A \neq 0, \; A \neq -1/e.
 $$</p>
 <h3 id="applications">Applications</h3>
-<p>The Lambert W function solves equations of the form $a e^A + b A + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $c^c = a$, where $c = e^{W(\ln a)}$.</p>
+<p>The Lambert W function solves equations of the form $a \exp(A) + b A + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $c^c = a$, where $c = \exp(W(\ln a))$.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse and is the first function of the article whose domain is more than the plane.</p>
-<p>Integral representations supply the next family: the gamma function as $\Gamma(A) = \int_0^\infty t^{A-1}e^{-t}\,dt$ for $\operatorname{Re} A > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.</p>
-<p>The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;A)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $B \mapsto Be^B$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.</p>
+<p>Integral representations supply the next family: the gamma function as $\Gamma(A) = \int_0^\infty t^{A-1}\exp(-t)\,dt$ for $\operatorname{Re} A > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.</p>
+<p>The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;A)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $B \mapsto B\exp(B)$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -489,7 +489,7 @@ $$</p>
 <td>Complex variable</td>
 </tr>
 <tr>
-<td>$e^A, \log A$</td>
+<td>$\exp(A), \log A$</td>
 <td>Complex exponential, logarithm</td>
 </tr>
 <tr>

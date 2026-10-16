@@ -53,11 +53,11 @@
         <h1 id="introduction-to-biquaternion-element-representations"><strong>Introduction to Biquaternion Element Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles its representation theory. The algebra is simple and semisimple, it has a single simple module up to isomorphism, and every representation is a direct sum of copies of it. This article introduces the representations of $\mathbb{B}$: the dictionary between representations and modules, the classification by a single dimension, Schur's lemma and the intertwiners, the defining and the half-spin representations, the tensor products and their Clebsch–Gordan rule, the real representations and the descent to the real form, and the representations of the group of units. It is the entry of the biquaternion chapter that the other representation articles presuppose.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of <em>Modules over the Biquaternion Algebra</em>, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written</p>
+<p>The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of <em>Modules over the Biquaternion Algebra</em>, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of <em>The Biquaternioid as a Vector Space over $\mathbb{C}$</em>: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written</p>
 <p>$$
 \tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu,\qquad Q_\mu\in\mathbb{C}.
 $$</p>
-<p>The norm is $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}$ and the group of units is $\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\}$; both are the subject of <em>Norm and Invertibility in the General Quaternionic Algebra</em> and are cited here rather than restated. The matrix models are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, and the group-theoretic representation theory — the defining representation of the Lorentz group, the half-spin representations and the Clebsch–Gordan rule — is <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+<p>The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$ and the group of units is $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$; both are the subject of <em>Norm and Invertibility in the General Quaternionic Algebra</em> and are cited here rather than restated. The matrix models are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, and the group-theoretic representation theory — the defining representation of the Lorentz group, the half-spin representations and the Clebsch–Gordan rule — is <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
 <h2 id="the-algebra-and-its-ground-fields">The Algebra and Its Ground Fields</h2>
 <p>The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is complex dimension four with basis $\{e_0,e_1,e_2,e_3\}$, and it is a <strong>central simple</strong> $\mathbb{C}$-algebra:</p>
 <p>$$
@@ -141,11 +141,11 @@ $$</p>
 <h2 id="the-group-of-units-and-its-representations">The Group of Units and Its Representations</h2>
 <p><strong>Theorem.</strong> The group of units of $\mathbb{B}$ is the complement of the zero divisors,</p>
 <p>$$
-\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\}\cong GL_2(\mathbb{C}),
+\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\cong GL_2(\mathbb{C}),
 $$</p>
 <p>a complex Lie group of dimension four over $\mathbb{C}$, equivalently eight over $\mathbb{R}$, non-compact. Under the norm and the dagger it splits as</p>
 <p>$$
-\mathbb{B}^{\times}\cong\frac{SL_2(\mathbb{C})\times\mathbb{C}^{\times}}{\{\pm1\}},\qquad SL_2(\mathbb{C})=\{\tilde Q:N(\tilde Q)=1\},
+\mathbb{B}^{\times}\cong\frac{SL_2(\mathbb{C})\times\mathbb{C}^{\times}}{\{\pm1\}},\qquad SL_2(\mathbb{C})=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\},
 $$</p>
 <p>with maximal compact subgroup $U(2)$.</p>
 <p><em>Proof.</em> An element is a unit in $M_2(\mathbb{C})$ exactly when its determinant is nonzero, and the determinant is the norm; the splitting is that of $GL_2(\mathbb{C})$ into its unimodular part and the scalar matrices, whose intersection is $\{\pm I\}$. The norm-one group is $SL_2(\mathbb{C})$ and the compact part is $U(2)$; the matrix groups are <em>The Unitary Group of the Biquaternion Algebra</em> and <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
@@ -229,7 +229,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$</td>
-<td>Group of units, $N(\tilde Q)\neq0$</td>
+<td>Group of units, $\langle\tilde Q\rangle_{\natural}\neq0$</td>
 </tr>
 <tr>
 <td>$SL_2(\mathbb{C})$</td>

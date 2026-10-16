@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A modular form is a holomorphic function on the upper half-plane which is almost invariant under the action of a discrete subgroup of the Möbius transformations, the discrepancy between the value at $z$ and the value at the image of $z$ being a prescribed power of the derivative of the transformation. The invariance is by a factor of automorphy rather than exact, and that factor is what makes the theory non-trivial: it produces finite-dimensional spaces of functions, a ring structure in favourable cases, a Fourier expansion with integral coefficients for arithmetic subgroups, and — through the Hecke operators — Dirichlet series with Euler products and functional equations. Modular forms are thus at once analytic objects, carrying growth conditions and an inner product; algebraic ones, forming graded rings with algebraic Fourier coefficients; and arithmetic ones, parametrising elliptic curves and encoding Galois representations.</p>
 <p>This article develops the classical theory over $\mathbb{Q}$: the modular group and its congruence subgroups, the spaces $M_k(\Gamma)$ and $S_k(\Gamma)$ and their dimension, the structure theorem for the level-one ring with the discriminant and $j$-invariant, the Hecke operators with the theory of newforms and the Petersson inner product, the $L$-function of a modular form with its Euler product and functional equation, theta series and the half-integral weight case, modular curves with the Eichler–Shimura isomorphism, and the modularity theorem with its arithmetic consequences. The analytic input — the Fourier expansion, the growth of the coefficients, the convergence of the Eisenstein series, the theta transformation law — rests on the previous articles: the power series of <em>Analytic Functions and Power Series</em>, the vocabulary of <em>Modes of Convergence</em>, the integration on the upper half-plane of <em>Measure Theory and Integration</em>, and the theta functional equation of <em>Zeta Functions</em>. The arithmetic of the elliptic curves that the modularity theorem attaches to weight-two forms is that of <em>Elliptic Curves</em>; the class-field content of the $j$-invariant is that of <em>Galois Theory</em> and <em>Algebraic Number Theory</em>; and the arithmetic of the complex numbers used in the multiplier systems of half-integral weight is deferred to the synthetic study <em>Galois Theory of $\mathbb{C}/\mathbb{R}$</em>. The adelic re-reading of the whole theory, and the general linear group case, belong to <em>Automorphic Forms</em>, in the neighbouring category of this Part and written in parallel; the seam is fixed at the end of this article. The zeros of the $L$-functions of modular forms are treated in <em>The Riemann Hypothesis</em>, written above.</p>
-<p>Throughout, $\mathbb{H} = \{z\in\mathbb{C} : \operatorname{Im}z>0\}$ is the upper half-plane, $\Gamma$ a subgroup of finite index of $SL_2(\mathbb{Z})$ inside $SL_2(\mathbb{R})$, and $q = e^{2\pi iz}$; the notation $\Gamma(1) = SL_2(\mathbb{Z})$ is used for the full group and $\bar\Gamma$ for its image in $PSL_2(\mathbb{Z})$. Weights $k$ are integers, positive unless stated. The identity matrix is $I$, the standard generators of $\Gamma(1)$ are
+<p>Throughout, $\mathbb{H} = \{z\in\mathbb{C} : \operatorname{Im}z>0\}$ is the upper half-plane, $\Gamma$ a subgroup of finite index of $SL_2(\mathbb{Z})$ inside $SL_2(\mathbb{R})$, and $q = \exp(2\pi iz)$; the notation $\Gamma(1) = SL_2(\mathbb{Z})$ is used for the full group and $\bar\Gamma$ for its image in $PSL_2(\mathbb{Z})$. Weights $k$ are integers, positive unless stated. The identity matrix is $I$, the standard generators of $\Gamma(1)$ are
 $$
 S = \begin{pmatrix}0&-1\\1&0\end{pmatrix}, \qquad T = \begin{pmatrix}1&1\\0&1\end{pmatrix},
 $$
@@ -82,8 +82,8 @@ with the convention that the boundary arcs are assigned to one of the two adjace
 <p><strong>Theorem.</strong> $\mathcal{F}$ is a fundamental domain for $\bar\Gamma(1)$: every orbit meets $\mathcal{F}$, and no two interior points of $\mathcal{F}$ are equivalent. The quotient $\bar\Gamma(1)\backslash\mathbb{H}$ is homeomorphic to a sphere with one point removed, and it is compactified by adjoining the cusp $\infty$.</p>
 <p><strong>Proof sketch.</strong> For each $z$, the orbit contains a point of maximal imaginary part, among which one of minimal $\lvert\operatorname{Re}\rvert$ is in $\mathcal{F}$; two interior points of $\mathcal{F}$ cannot be equivalent, because a Möbius transformation with $c\neq0$ decreases the imaginary part of an interior point and one with $c=0$ shifts the real part by an integer. The quotient is topologically a disc with the point $\infty$ adjoined.</p>
 <p><strong>Definition.</strong> A point $z\in\mathbb{H}$ is <strong>elliptic</strong> for $\Gamma$ if some $\gamma\neq\pm I$ in $\Gamma$ fixes it; the order of the stabiliser is the <strong>order</strong> of the point. The <strong>cusps</strong> of $\Gamma$ are the orbits of $\Gamma$ on $\mathbb{P}^1(\mathbb{Q}) = \mathbb{Q}\cup\{\infty\}$, and $\mathbb{H}^* = \mathbb{H}\cup\mathbb{P}^1(\mathbb{Q})$.</p>
-<p><strong>Proposition.</strong> The elliptic points of $\bar\Gamma(1)$ are $i$, of order $2$, and $\rho = e^{2\pi i/3}$, of order $3$; the group has exactly one cusp, namely $\infty$. The stabiliser of $\infty$ in $\Gamma(1)$ is generated by $T$ and $-I$.</p>
-<p><strong>Proof.</strong> Elliptic points correspond to the fixed points of conjugates of the elements of finite order, which are the conjugates of $S$ (order $2$, fixed point $i$) and of $ST$ (order $3$, fixed point $\rho = e^{2\pi i/3}$); the transitivity of the action identifies the fixed points of the conjugates. The cusps are the rational boundary points, and the action of $\Gamma(1)$ on them is transitive.</p>
+<p><strong>Proposition.</strong> The elliptic points of $\bar\Gamma(1)$ are $i$, of order $2$, and $\rho = \exp(2\pi i/3)$, of order $3$; the group has exactly one cusp, namely $\infty$. The stabiliser of $\infty$ in $\Gamma(1)$ is generated by $T$ and $-I$.</p>
+<p><strong>Proof.</strong> Elliptic points correspond to the fixed points of conjugates of the elements of finite order, which are the conjugates of $S$ (order $2$, fixed point $i$) and of $ST$ (order $3$, fixed point $\rho = \exp(2\pi i/3)$); the transitivity of the action identifies the fixed points of the conjugates. The cusps are the rational boundary points, and the action of $\Gamma(1)$ on them is transitive.</p>
 <h3 id="congruence-subgroups">Congruence Subgroups</h3>
 <p><strong>Definition.</strong> For $N\geq1$ the <strong>principal congruence subgroup</strong> is
 $$
@@ -137,7 +137,7 @@ $$
 <h3 id="the-fourier-expansion-and-examples">The Fourier Expansion and Examples</h3>
 <p><strong>Definition.</strong> The <strong>Fourier expansion</strong> (or $q$-expansion) of a modular form for $\Gamma$ at the cusp $\infty$ is
 $$
-f(z) = \sum_{n\geq0} a_n q^n, \qquad q = e^{2\pi iz},
+f(z) = \sum_{n\geq0} a_n q^n, \qquad q = \exp(2\pi iz),
 $$
 valid for $\operatorname{Im}z$ large, the sum being finite in negative powers by the holomorphy at the cusp; a <strong>normalised</strong> form has $a_1 = 1$.</p>
 <p><strong>Definition.</strong> For even $k\geq4$ the <strong>Eisenstein series</strong> of weight $k$ for $\Gamma(1)$ is
@@ -250,11 +250,11 @@ $$
 so that the modular transformation law $f\bigl(i/(Ny)\bigr) = \varepsilon\,(i\sqrt{N}y)^kf(iy)$ — the $(-1/(Nz))$-invariance of the Fricke involution $W_N$ — turns the reflection $y\mapsto1/(Ny)$ into the reflection $s\mapsto k-s$. The Euler product is the eigenvalue relations of the Hecke operators.</p>
 <p><strong>Remark (the zeros and the generalised hypothesis).</strong> The zeros of $L(f,s)$ in the critical strip are conjectured to satisfy $\Re s = k/2$; this is the generalised Riemann hypothesis for a modular form, treated in <em>The Riemann Hypothesis</em> as one instance of the grand generalised hypothesis, where the completed function above is an $L$-function in the sense of <em>L-Functions</em> with conductor $N$, degree $2$ and spectral parameter $k/2$. The analytic properties established here — the Euler product, the continuation and the functional equation — are exactly the axioms of that article, so that the entire analytic theory of $L$-functions applies to the modular case.</p>
 <h2 id="theta-series-and-the-half-integral-weight-theory">Theta Series and the Half-Integral Weight Theory</h2>
-<p><strong>Definition.</strong> For a positive definite quadratic form $Q$ on $\mathbb{Z}^n$ the <strong>theta series</strong> is
+<p><strong>Definition.</strong> For a positive definite quadratic form $\mathfrak{Q}$ on $\mathbb{Z}^n$ the <strong>theta series</strong> is
 $$
-\theta_Q(z) = \sum_{x\in\mathbb{Z}^n}q^{Q(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : Q(x) = m\},
+\theta_Q(z) = \sum_{x\in\mathbb{Z}^n}q^{\mathfrak{Q}(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : \mathfrak{Q}(x) = m\},
 $$
-and for the standard form $Q(x) = x^2$ the series is $\theta(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.</p>
+and for the standard form $\mathfrak{Q}(x) = x^2$ the series is $\theta(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.</p>
 <p><strong>Theorem.</strong> If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\theta_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\theta\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\theta^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
 $$
 \theta(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
@@ -295,7 +295,7 @@ unramified outside $N$ and $\lambda$, such that the characteristic polynomial of
 <tbody>
 <tr>
 <td>$\mathbb{H}$, $q$</td>
-<td>Upper half-plane; $q = e^{2\pi iz}$</td>
+<td>Upper half-plane; $q = \exp(2\pi iz)$</td>
 </tr>
 <tr>
 <td>$\Gamma(1)$, $\bar\Gamma(1)$</td>
@@ -307,7 +307,7 @@ unramified outside $N$ and $\lambda$, such that the characteristic polynomial of
 </tr>
 <tr>
 <td>$\mathcal{F}$, $i$, $\rho$</td>
-<td>Fundamental domain; elliptic points $i$ and $e^{2\pi i/3}$</td>
+<td>Fundamental domain; elliptic points $i$ and $\exp(2\pi i/3)$</td>
 </tr>
 <tr>
 <td>$\Gamma(N)$, $\Gamma_0(N)$, $\Gamma_1(N)$</td>

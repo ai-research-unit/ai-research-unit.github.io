@@ -68,9 +68,9 @@ $$</p>
 <p>The algebra, the dagger and the involution of the base are <em>Hermitian Algebras</em>; the general two one-sided families, their composition laws, their mutual commutants and the adjoint theorem are <em>One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint</em>; the two-sided operator and its parameter rule are <em>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em>; the module consequences are <em>Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</em>; the ideal-theoretic consequences are <em>Spinors as Minimal Left Ideals with Signed Hermitian Adjoint</em>. Nothing owned by those entries is re-derived.</p>
 <p><strong>Conventions.</strong> $A$ is a commutative ring with involution $\sigma$, $V$ is free of finite rank with a non-degenerate $q$, $x^{\dagger}=\sigma(\alpha(x^{r}))$, $\varepsilon_x=(-1)^{|x|}$, $U=\{x:x^{\dagger}x=1\}$. The forms are on the regular module: $(x,y)=\mathrm{Sc}(x^{\dagger}y)$ for the dagger, and the adjoint of an operator is written ${}^{*}$.</p>
 <h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
-<p><strong>Definition.</strong> For $x\in\mathrm{Cl}(V,q)$ the <strong>signed left multiplication</strong> by $x$ is the $A$-linear map</p>
+<p><strong>Definition.</strong> For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed left multiplication</strong> by $x$ is the $A$-linear map</p>
 <p>$$
-\Lambda^{\alpha}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad \Lambda^{\alpha}_x(y)=\alpha(x)\,y .
+\Lambda^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Lambda^{\alpha}_x(y)=\alpha(x)\,y .
 $$</p>
 <p>It is the left one-sided operator $\Lambda^{\theta}_x$ of the general theory with $\theta=\alpha$, and it is defined for every $x$, invertibility not being required.</p>
 <p><strong>Proposition (the sign, and the conjugate form).</strong> Let $x$ be homogeneous of degree $k$ and $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x x$. Then</p>
@@ -92,9 +92,9 @@ $$</p>
 <p><em>Proof.</em> The identity $(\Lambda^{\theta}_x)^{*}=\Lambda^{\theta}_{x^{\dagger}}$ is the adjoint theorem of the general one-sided theory with $\theta=\alpha$.</p>
 <p><strong>Remark (the sign is invisible to the left factor alone).</strong> $\Lambda^{\alpha}_x=\varepsilon_xL_x$ and $\varepsilon_x$ is a central unit, so every intrinsic property of the operator as a one-sided operator — its kernel, its image, its rank, its self-adjointness up to sign — is shared with the plain left multiplication $L_x$. The sign becomes visible only when the left factor is paired with the right one, that is, in the two-sided operator.</p>
 <h2 id="the-dagger-right-multiplication">The Dagger Right Multiplication</h2>
-<p><strong>Definition.</strong> For $x\in\mathrm{Cl}(V,q)$ the <strong>dagger right multiplication</strong> is</p>
+<p><strong>Definition.</strong> For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the <strong>dagger right multiplication</strong> is</p>
 <p>$$
-R_{x^{\dagger}}:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad R_{x^{\dagger}}(y)=y\,x^{\dagger}.
+R_{x^{\dagger}}:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad R_{x^{\dagger}}(y)=y\,x^{\dagger}.
 $$</p>
 <p>It is the right one-sided operator $\mathrm P^{c}_x$ of the general theory with $c={}^{\dagger}$, defined for every $x$ because the dagger is, and it is the Hermitian counterpart of the inverse right multiplication $R_{x^{-1}}$.</p>
 <p><strong>Proposition (composition, order preserved; semilinearity).</strong> For all $x,z$,</p>
@@ -121,25 +121,25 @@ $$</p>
 \Theta^{\alpha}_x=\varepsilon_x\,\Theta_x,\qquad \Lambda^{\alpha}_x=\varepsilon_x\,L_x,
 $$</p>
 <p>with the same $\varepsilon_x$. The right factor is common to the signed and the unsigned pairing, so the entire sign bookkeeping of the two-sided operator is carried by the left one-sided operator, exactly as in the inverse formulation.</p>
-<p><strong>Corollary (the reflection).</strong> For a vector $u$ with $q(u)\neq0$ the pairing gives</p>
+<p><strong>Corollary (the reflection).</strong> For a vector $u$ with $\mathfrak{Q}(u)\neq0$ the pairing gives</p>
 <p>$$
-\Lambda^{\alpha}_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta^{\alpha}_u(v)=-q(u)\,\rho_u(v),
+\Lambda^{\alpha}_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\,\rho_u(v),
 \qquad
-L_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta_u(v)=q(u)\,\rho_u(v),
+L_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta_u(v)=\mathfrak{Q}(u)\,\rho_u(v),
 $$</p>
-<p>for $v\in V$; on the unitary slice, where $q(u)=-1$, the signed pairing gives $\rho_u$ and the unsigned pairing gives $-\rho_u$. So a reflection is produced by the pair, and the sign that selects $\rho_u$ over $-\rho_u$ is the one carried by $\Lambda^{\alpha}_u$.</p>
+<p>for $v\in V$; on the unitary slice, where $\mathfrak{Q}(u)=-1$, the signed pairing gives $\rho_u$ and the unsigned pairing gives $-\rho_u$. So a reflection is produced by the pair, and the sign that selects $\rho_u$ over $-\rho_u$ is the one carried by $\Lambda^{\alpha}_u$.</p>
 <p><em>Proof.</em> $R_{u^{\dagger}}(v)=v\,u^{\dagger}=-v\,\sigma(u)$ and $\Lambda^{\alpha}_u$ multiplies by $\alpha(u)=-u$; the result is $u\,v\,\sigma(u)$, which is the vector formula of the two-sided article. The slice statement is the corollary of the reflection proposition there.</p>
 <p><strong>Remark (why no one-sided operator acts on the quadratic space).</strong> The only left multiplications with $L_x(V)\subseteq V$ are the scalars, by the general one-sided theory, and the same holds on the right; so no one-sided operator, signed or not, acts on the quadratic space, and the sign has no one-sided manifestation there. The reflection appears only in the pairing, and on the module the sign appears instead in the parity of the operator, which is the next article.</p>
 <h2 id="kernels-images-and-the-involution">Kernels, Images and the Involution</h2>
 <p><strong>Proposition.</strong> The kernel and the image of the signed left multiplication are those of the ordinary one,</p>
 <p>$$
 \ker\Lambda^{\alpha}_x=\ell(\alpha(x))=\ell(x),\qquad
-\Lambda^{\alpha}_x\bigl(\mathrm{Cl}(V,q)\bigr)=x\cdot\mathrm{Cl}(V,q),
+\Lambda^{\alpha}_x\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)=x\cdot\mathrm{Cl}(V,\mathfrak{Q}),
 $$</p>
 <p>the left annihilator and the right ideal generated by $x$. For the dagger right multiplication,</p>
 <p>$$
 \ker R_{x^{\dagger}}=r(x^{\dagger})=\ell(x^{\dagger}),\qquad
-R_{x^{\dagger}}\bigl(\mathrm{Cl}(V,q)\bigr)=\mathrm{Cl}\cdot x^{\dagger},
+R_{x^{\dagger}}\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)=\mathrm{Cl}\cdot x^{\dagger},
 $$</p>
 <p>the right annihilator of $x^{\dagger}$, that is the left annihilator of $x^{\dagger}$ in the commutative sense of the antipode, and the left ideal generated by $x^{\dagger}$.</p>
 <p><em>Proof.</em> $\alpha(x)=\varepsilon_xx$ with $\varepsilon_x$ a unit, so $\alpha(x)y=0$ exactly when $xy=0$ and the image is the right ideal $x\cdot\mathrm{Cl}$; the right statements are the general ones with $c={}^{\dagger}$.</p>
@@ -206,7 +206,7 @@ $$</p>
 <td>Adjoints for $\mathrm{Sc}(x^{\dagger}y)$</td>
 </tr>
 <tr>
-<td>$\Theta^{\alpha}_u(v)=-q(u)\rho_u(v)$</td>
+<td>$\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\rho_u(v)$</td>
 <td>The reflection read in the pairing</td>
 </tr>
 </tbody>

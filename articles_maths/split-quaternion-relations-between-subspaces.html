@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The four distinguished subspaces of $\mathbb{H}_{\mathrm{s}}$ — the scalar line $S$, the vector subspace $V$ and the two split-complex planes $\mathbb{D}_2, \mathbb{D}_3$ — are defined by different conditions, but they are not independent: they contain one another, they intersect, they sum to subspaces of $\mathbb{H}_{\mathrm{s}}$, and they are cut out of the four real coordinates by the involutions. This article collects those relations in one place, after the individual articles <em>Split-Quaternion Scalar and Vector Subspaces</em> and <em>Split-Quaternion Split-Complex Subspaces</em>, and before the structural article <em>Split-Quaternion Involution Lattice</em>, which treats the involutions themselves.</p>
 <p>Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Subspaces and the Involutions</em>, and $N$, $B$ are the split-quaternion norm and its polarisation.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation ${}^{\natural}$, the principal involution $\alpha$ and the reversal $\rho$ are as in <em>Split-Quaternion Subspaces and the Involutions</em>, and $\langle\cdot\rangle_{\natural}$, $B$ are the split-quaternion norm and its polarisation.</p>
 <h2 id="the-three-decompositions">The Three Decompositions</h2>
 <p>Two of the three involutions split $\mathbb{H}_{\mathrm{s}}$ into distinguished subspaces, and the third splits it into two further subspaces:</p>
 <div class="table-scroll"><table>
@@ -135,7 +135,7 @@
 </tr>
 </tbody>
 </table></div>
-<p>Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $N$; all four are non-degenerate, the first definite and the other three indefinite.</p>
+<p>Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $\langle\cdot\rangle_{\natural}$; all four are non-degenerate, the first definite and the other three indefinite.</p>
 <h2 id="the-four-coordinate-blocks">The Four Coordinate Blocks</h2>
 <p>The four real coordinates of a split-quaternion are $(q_0,q_1,q_2,q_3)$ in the basis $1, e_1, e_2, e_3$. They group into four one-dimensional <strong>coordinate blocks</strong>,</p>
 <p>$$
@@ -292,9 +292,9 @@ $$</p>
 <h3 id="the-vector-subspace">The Vector Subspace</h3>
 <p>The product of two vectors is not a vector: it splits as</p>
 <p>$$
-\vec u\vec v = -B(\vec u,\vec v)\cdot 1 + \tfrac{1}{2}[\vec u,\vec v],
+\vec q\vec v = -B(\vec q,\vec v)\cdot 1 + \tfrac{1}{2}[\vec q,\vec v],
 $$</p>
-<p>with scalar part $-B(\vec u,\vec v) \in S$ and the remainder $\tfrac{1}{2}[\vec u,\vec v] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,</p>
+<p>with scalar part $-B(\vec q,\vec v) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec v] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,</p>
 <p>$$
 [e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,
 $$</p>
@@ -395,7 +395,7 @@ $$</p>
 <td><em>Split-Quaternion Subspaces and the Involutions</em></td>
 </tr>
 <tr>
-<td>$B$, $N$</td>
+<td>$B$, $\langle\cdot\rangle_{\natural}$</td>
 <td>the polarised form and the split-quaternion norm</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>

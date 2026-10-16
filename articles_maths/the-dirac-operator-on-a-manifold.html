@@ -95,9 +95,9 @@ $$</p>
 $$</p>
 <p>where $\hat A(TM)$ is the $\hat A$-class of the tangent bundle, the genus with the first terms</p>
 <p>$$
-\hat A=1-\frac{p_1}{24}+\frac{7p_1^{2}-4p_2}{5760}-\cdots
+\hat A=1-\frac{n_1}{24}+\frac{7p_1^{2}-4p_2}{5760}-\cdots
 $$</p>
-<p>in the Pontryagin classes $p_i$ of $TM$. In particular $\hat A[M]$ is an integer for a closed spin manifold.</p>
+<p>in the Pontryagin classes $n_i$ of $TM$. In particular $\hat A[M]$ is an integer for a closed spin manifold.</p>
 <p><strong>Proof sketch.</strong> A harmonic spinor solves $D\psi=0$, and the self-adjointness identifies the kernel of $D$ with the direct sum $\ker D^{+}\oplus\ker D^{-}$, so the index is the difference of the two chiral kernel dimensions; the identification of the index with $\int_M\hat A(TM)$ is the Atiyah–Singer theorem for the spin symbol, whose symbol class is the Bott class with Chern character the $\hat A$-class. The general theorem and its heat-kernel proof are in <em>The Atiyah–Singer Index Theorem and K-Theory</em>; the integrality of the $\hat A$-genus on a spin manifold is the Borel–Hirzebruch integrality theorem, and in dimension four it yields Rökhlin's theorem, that the signature of a closed spin four-manifold is divisible by $16$.</p>
 <p><strong>Corollary (the twisted operator).</strong> For the operator twisted by a Hermitian vector bundle $E$ with connection, $D_E:\Gamma(\mathcal{S}\otimes E)\to\Gamma(\mathcal{S}\otimes E)$, the index of the positive half is</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 <p><strong>Example (the spheres).</strong> The sphere $S^{n}$ with the round metric is spin, and its $\hat A$-genus vanishes: the tangent bundle is stably trivial, $TS^{n}\oplus\mathbb{R}\cong\mathbb{R}^{n+1}$, so all Pontryagin classes vanish, and in particular $\hat A[S^{4}]=0$. The round sphere has constant positive scalar curvature, so the vanishing theorem applies and the operator has no harmonic spinor; the spectrum of the operator on $S^{n}$ is symmetric and its eigenvalues are computed from the spin representations, the eigenspinors being the spinor spherical harmonics.</p>
 <p><strong>Example (the flat torus).</strong> The torus $T^{n}$ is spin and flat; the scalar curvature vanishes, the Lichnerowicz formula reduces to $D^{2}=\nabla^{*}\nabla$, and the harmonic spinors are the parallel spinors, of dimension the dimension of the spin representation. The twisted operator on the torus gives the theta-function computations of the index, and the example is the flat case against which the curved index theorem is checked.</p>
 <p><strong>Example (a $K3$ surface).</strong> The $K3$ surface is spin with $\hat A[K3]=2$, so the index of its operator is $2$, the difference of the two chiral kernel dimensions; by the vanishing theorem the surface admits no positive scalar curvature metric. The value $\hat A[K3]=2$ is the standard nonvanishing example and the obstruction that separates the simply connected spin four-manifolds from those admitting positive scalar curvature.</p>
-<p><strong>Example (the complex projective plane).</strong> The manifold $\mathbb{CP}^{2}$ is not spin, since $w_{2}\neq0$; the spin operator is therefore not defined on it, and its place is taken by the $\operatorname{Spin}^{c}$ operator, whose spinor bundle exists with a determinant line bundle and whose index is $\int_{M}e^{c_{1}(L)/2}\hat A(TM)$. In the Kähler case the $\operatorname{Spin}^{c}$ index is the holomorphic Euler characteristic and the formula is the Riemann–Roch–Hirzebruch theorem; the example shows that the spin condition is a genuine restriction and that the theory extends to the non-spin case by twisting.</p>
+<p><strong>Example (the complex projective plane).</strong> The manifold $\mathbb{CP}^{2}$ is not spin, since $w_{2}\neq0$; the spin operator is therefore not defined on it, and its place is taken by the $\operatorname{Spin}^{c}$ operator, whose spinor bundle exists with a determinant line bundle and whose index is $\int_{M}\exp(c_{1}(L)/2)\hat A(TM)$. In the Kähler case the $\operatorname{Spin}^{c}$ index is the holomorphic Euler characteristic and the formula is the Riemann–Roch–Hirzebruch theorem; the example shows that the spin condition is a genuine restriction and that the theory extends to the non-spin case by twisting.</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>spin structure</strong> on an oriented Riemannian manifold is a two-fold cover of the frame bundle by a $\mathrm{Spin}(n)$-bundle, existing exactly when $w_{2}(TM)=0$, and it carries the <strong>spinor bundle</strong> $\mathcal{S}$ with its Clifford multiplication $c$, $c(v)^{2}=-|v|^{2}$, its metric spin connection and, in even dimensions, its chirality splitting $\mathcal{S}=\mathcal{S}^{+}\oplus\mathcal{S}^{-}$. The <strong>Cauchy–Riemann operator</strong> $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, classically the <strong>Dirac operator</strong>, is formally self-adjoint and elliptic with symbol $i\,c(\xi)$, and it exchanges the half-spinor bundles. The <strong>Lichnerowicz formula</strong> $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ expresses the square through the connection Laplacian and the scalar curvature, and it gives the <strong>vanishing theorem</strong>: a closed spin manifold of strictly positive scalar curvature has no harmonic spinor and vanishing $\hat A$-genus. The index of the positive half is the <strong>$\hat A$-genus</strong>, $\operatorname{ind}D^{+}=\int_M\hat A(TM)$, an integer for a closed spin manifold; the twisted version pairs $\hat A$ with the Chern character of the twisting bundle; and in dimension four the integrality gives Rökhlin's divisibility $16\mid\sigma$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -169,7 +169,7 @@ $$</p>
 <td>Scalar curvature</td>
 </tr>
 <tr>
-<td>$\hat A(TM)=1-p_1/24+\cdots$</td>
+<td>$\hat A(TM)=1-n_1/24+\cdots$</td>
 <td>$\hat A$-class; $\operatorname{ind}D^{+}=\int_M\hat A(TM)$</td>
 </tr>
 <tr>

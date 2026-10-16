@@ -63,39 +63,39 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>norm</strong> of a dual number $A = a + \varepsilon a'$ is</p>
 <p>$$
-N(A) = A\bar A = (a + \varepsilon a')(a - \varepsilon a') = a^2.
+\langle A\rangle = A\bar A = (a + \varepsilon a')(a - \varepsilon a') = a^2.
 $$</p>
 <p>It is an element of $R$, and it takes its value in the real submodule $R_{\mathbb{D}'}$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Proposition.</strong> Let $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$.</p>
 <ul>
-<li><strong>Dependence on the real part alone.</strong> $N(A) = a^2$ does not involve the infinitesimal part $a'$; equivalently, $N(A + \eta) = N(A)$ for every $\eta \in \mathrm{M}$.</li>
-<li><strong>Invariance under dual conjugation.</strong> $N(\bar A) = N(A)$, since $(-a')^2 = a'^2$ plays no role and the real part is unchanged.</li>
-<li><strong>Sign.</strong> Over an ordered ring $R$ the value $a^2$ is non-negative, and $N(A) = 0$ if and only if $a = 0$.</li>
-<li><strong>Vanishing locus.</strong> Over a field, $N(A) = 0$ if and only if $A \in \mathrm{M} = (\varepsilon)$.</li>
+<li><strong>Dependence on the real part alone.</strong> $\langle A\rangle = a^2$ does not involve the infinitesimal part $a'$; equivalently, $\langle A + \eta\rangle = \langle A\rangle$ for every $\eta \in \mathrm{M}$.</li>
+<li><strong>Invariance under dual conjugation.</strong> $\langle \bar A\rangle = \langle A\rangle$, since $(-a')^2 = a'^2$ plays no role and the real part is unchanged.</li>
+<li><strong>Sign.</strong> Over an ordered ring $R$ the value $a^2$ is non-negative, and $\langle A\rangle = 0$ if and only if $a = 0$.</li>
+<li><strong>Vanishing locus.</strong> Over a field, $\langle A\rangle = 0$ if and only if $A \in \mathrm{M} = (\varepsilon)$.</li>
 </ul>
-<p><strong>Proof.</strong> The first two are immediate from $N(A) = a^2$. For the third, $a^2 \ge 0$ in an ordered ring and $a^2 = 0$ forces $a = 0$ in a domain. For the fourth, $a^2 = 0$ with $a$ in a field gives $a = 0$, that is $A = \varepsilon a' \in \mathrm{M}$.</p>
+<p><strong>Proof.</strong> The first two are immediate from $\langle A\rangle = a^2$. For the third, $a^2 \ge 0$ in an ordered ring and $a^2 = 0$ forces $a = 0$ in a domain. For the fourth, $a^2 = 0$ with $a$ in a field gives $a = 0$, that is $A = \varepsilon a' \in \mathrm{M}$.</p>
 <p>The norm is <strong>degenerate</strong>: it is a quadratic form of rank one on the two-dimensional free module $\mathbb{D}'_R$, and its radical is the line $\mathrm{M} = \varepsilon R_{\mathbb{D}'}$. Degeneracy in this article always means that the associated bilinear form has nonzero radical, and the radical is the maximal ideal.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm is multiplicative:</p>
 <p>$$
-N(AB) = N(A)\,N(B).
+\langle AB\rangle = \langle A\rangle\,\langle B\rangle.
 $$</p>
 <p><strong>Proof.</strong> With $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$ one has $AB = a b + (a b' + a' b)\varepsilon$, so</p>
 <p>$$
-N(AB) = (a b)^2 = a^2b^2 = N(A)N(B).
+\langle AB\rangle = (a b)^2 = a^2b^2 = \langle A\rangle\langle B\rangle.
 $$</p>
 <p>The identity $(a b)^2 = a^2b^2$ holds in every commutative ring.</p>
-<p><strong>Corollary.</strong> If $N(A) \neq 0$ and $N(B) \neq 0$, then $N(AB) \neq 0$.</p>
-<p><strong>Corollary.</strong> If $N(A) = 0$ or $N(B) = 0$, then $N(AB) = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathrm{M}$ is a two-sided ideal.</p>
+<p><strong>Corollary.</strong> If $\langle A\rangle \neq 0$ and $\langle B\rangle \neq 0$, then $\langle AB\rangle \neq 0$.</p>
+<p><strong>Corollary.</strong> If $\langle A\rangle = 0$ or $\langle B\rangle = 0$, then $\langle AB\rangle = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathrm{M}$ is a two-sided ideal.</p>
 <p><strong>Remark.</strong> Multiplicativity is the reason for the name, and it survives the degeneracy: the norm is a <em>ring homomorphism</em> from $\mathbb{D}'_R$ to the multiplicative monoid of $R$, whose kernel is the maximal ideal. It is the degenerate analogue of the modulus of a complex number.</p>
 <h3 id="the-norm-as-a-degenerate-form">The Norm as a Degenerate Form</h3>
 <p>The word <em>norm</em> is used here only in a qualified sense, and it is worth recording which of the usual axioms survive.</p>
 <ul>
-<li>The <strong>sign axiom</strong> holds: $N(-A) = N(A)$ over any commutative ring.</li>
-<li>The <strong>triangle inequality</strong> has no content: $N$ takes values in $R$, which carries no order in general, and even over $\mathbb{R}$ the value $N(A)$ is a square, not a length.</li>
-<li>The <strong>scaling axiom</strong> holds in its quadratic form, $N(\lambda A) = \lambda^2 N(A)$ for $\lambda \in R$, and this is the only homogeneity the form has.</li>
-<li>The <strong>non-degeneracy axiom fails</strong>: $N(A) = 0$ for every nonzero $A \in \mathrm{M}$.</li>
+<li>The <strong>sign axiom</strong> holds: $\langle -A\rangle = \langle A\rangle$ over any commutative ring.</li>
+<li>The <strong>triangle inequality</strong> has no content: $\langle A\rangle$ takes values in $R$, which carries no order in general, and even over $\mathbb{R}$ the value $\langle A\rangle$ is a square, not a length.</li>
+<li>The <strong>scaling axiom</strong> holds in its quadratic form, $\langle \lambda A\rangle = \lambda^2 \langle A\rangle$ for $\lambda \in R$, and this is the only homogeneity the form has.</li>
+<li>The <strong>non-degeneracy axiom fails</strong>: $\langle A\rangle = 0$ for every nonzero $A \in \mathrm{M}$.</li>
 </ul>
 <p>So the norm is a degenerate multiplicative quadratic form, homogeneous of degree two, whose vanishing locus is the maximal ideal. It fails to be a norm in the analytic sense, and the Euclidean form of the next section supplies that analytic quantity.</p>
 <h3 id="the-reduction-of-the-scale-to-math72">The Reduction of the Scale to $|a|$</h3>
@@ -105,11 +105,11 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The function</p>
 <p>$$
-r(A) = |a| = \sqrt{|N(A)|}
+r(A) = |a| = \sqrt{|\langle A\rangle|}
 $$</p>
 <p>is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(A(1 + t\varepsilon)) = r(A)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.</p>
-<p><strong>Proof.</strong> Multiplicativity is $N(AB) = N(A)N(B)$ together with $r = \sqrt{|N|}$, and continuity is the continuity of $a \mapsto |a|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $A(1 + t\varepsilon) = a + (a' + ta)\varepsilon$ has the same real part $a$, so $r(A(1 + t\varepsilon)) = |a| = r(A)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = a^{-1}a'$; the shear invariance gives $r(a + \varepsilon a') = r(a)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
-<p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{|N|}$, and it is the only scale fixed by the shear, the square root being the square root of a square.</p>
+<p><strong>Proof.</strong> Multiplicativity is $\langle AB\rangle = \langle A\rangle\langle B\rangle$ together with $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and continuity is the continuity of $a \mapsto |a|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $A(1 + t\varepsilon) = a + (a' + ta)\varepsilon$ has the same real part $a$, so $r(A(1 + t\varepsilon)) = |a| = r(A)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = a^{-1}a'$; the shear invariance gives $r(a + \varepsilon a') = r(a)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
+<p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and it is the only scale fixed by the shear, the square root being the square root of a square.</p>
 <p><strong>Remark (the shear condition is needed).</strong> Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function</p>
 <p>$$
 \rho_c(a + \varepsilon a') = |a|\,\exp\!\Bigl(c\,\frac{a'}{a}\Bigr)
@@ -118,14 +118,14 @@ $$</p>
 <h3 id="the-norm-from-the-two-components">The Norm from the Two Components</h3>
 <p>Writing $A = A_r + A_i\varepsilon$ with $A_r = a$ and $A_i = a'$ in $R$, the norm depends on the two components only through the first:</p>
 <p>$$
-N(A) = A_r^2.
+\langle A\rangle = A_r^2.
 $$</p>
 <p>The Euclidean form of the next section is the sum of squares of the two components, and the contrast between the two is the whole content of the degeneracy.</p>
 <h2 id="the-euclidean-form">The Euclidean Form</h2>
 <h3 id="definition_1">Definition</h3>
 <p><strong>Definition.</strong> The <strong>Euclidean form</strong> of a dual number is the real quadratic form</p>
 <p>$$
-q(A) = a^2 + a'^2,
+\mathfrak{Q}(A) = a^2 + a'^2,
 $$</p>
 <p>the <strong>Euclidean inner product</strong> of two dual numbers $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$ is</p>
 <p>$$
@@ -137,20 +137,20 @@ $$</p>
 $$</p>
 <p>Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{D}' \cong \mathbb{R}^2$ in dual coordinates.</p>
 <h3 id="properties">Properties</h3>
-<p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle A, A \rangle = q(A)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
+<p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle A, A \rangle = \mathfrak{Q}(A)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
 <p>$$
-q(AB) = (a b)^2 + (a b' + a' b)^2, \qquad q(A)q(B) = (a^2 + a'^2)(b^2 + b'^2),
+\mathfrak{Q}(AB) = (a b)^2 + (a b' + a' b)^2, \qquad \mathfrak{Q}(A)\mathfrak{Q}(B) = (a^2 + a'^2)(b^2 + b'^2),
 $$</p>
 <p>and the two agree only when $a b' + a' b = \pm(a b - a' b')$, which is not an identity.</p>
-<p><strong>Proof.</strong> Substituting the components of $AB$ gives the first expression; it is not the product of the two squares, as the example $A = B = 1 + \varepsilon$ shows: $q(AB) = q(1 + 2\varepsilon) = 5$ while $q(A)q(B) = 2 \cdot 2 = 4$.</p>
+<p><strong>Proof.</strong> Substituting the components of $AB$ gives the first expression; it is not the product of the two squares, as the example $A = B = 1 + \varepsilon$ shows: $\mathfrak{Q}(AB) = \mathfrak{Q}(1 + 2\varepsilon) = 5$ while $\mathfrak{Q}(A)\mathfrak{Q}(B) = 2 \cdot 2 = 4$.</p>
 <h3 id="relation-between-the-norm-and-the-euclidean-form">Relation Between the Norm and the Euclidean Form</h3>
 <p>The two forms are distinct and play different roles.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th></th>
-<th>Norm $N$</th>
-<th>Euclidean form $q$</th>
+<th>Norm $\langle\cdot\rangle$</th>
+<th>Euclidean form $\mathfrak{Q}$</th>
 </tr>
 </thead>
 <tbody>
@@ -185,7 +185,7 @@ $$</p>
 <p>$$
 A\bar B = (a + \varepsilon a')(b - \varepsilon b') = a b + (a' b - a b')\varepsilon, \qquad \operatorname{Re}(A\bar B) = a b,
 $$</p>
-<p>which is the polarisation of the degenerate norm $N$ and not of the Euclidean form. The distinction between $a b$ and $a b + a' b'$ is the distinction between the multiplicative and the topological structures on the plane.</p>
+<p>which is the polarisation of the degenerate norm $\langle\cdot\rangle$ and not of the Euclidean form. The distinction between $a b$ and $a b + a' b'$ is the distinction between the multiplicative and the topological structures on the plane.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
 <p><strong>Definition.</strong> A dual number $A$ is <strong>invertible</strong> if there exists $B$ with $AB = BA = 1$. The element $B$, if it exists, is the <strong>inverse</strong> of $A$ and is denoted $A^{-1}$.</p>
@@ -195,10 +195,10 @@ $$</p>
 <ol>
 <li>$A$ is invertible.</li>
 <li>$a$ is a unit of $R$.</li>
-<li>$N(A) = a^2$ is a unit of $R$.</li>
+<li>$\langle A\rangle = a^2$ is a unit of $R$.</li>
 <li>The residue class of $A$ in the quotient ring $\mathbb{D}'_R/\mathrm{M} \cong R$ is a unit of $R$.</li>
 </ol>
-<p>Over a field, the criterion reads: $A$ is invertible if and only if $a \neq 0$, that is, if and only if $N(A) \neq 0$.</p>
+<p>Over a field, the criterion reads: $A$ is invertible if and only if $a \neq 0$, that is, if and only if $\langle A\rangle \neq 0$.</p>
 <p><strong>Proof.</strong> If $a \in R^\times$, set $B = a^{-1} - a^{-2}\varepsilon a'$. Then</p>
 <p>$$
 AB = (a + \varepsilon a')(a^{-1} - a^{-2}\varepsilon a') = a a^{-1} + \bigl(-a^{-1}a' + a' a^{-1}\bigr)\varepsilon = 1,
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 A^{-1} = \frac{1}{a} - \frac{a'}{a^2}\,\varepsilon.
 $$</p>
-<p>This is the degeneration of the complex formula $A^{-1} = \bar A/|A|^2$: the conjugate is $\bar A = a - \varepsilon a'$ and the "modulus squared" is $N(A) = a^2$, so $\bar A/N(A) = (a - \varepsilon a')/a^2$, which is the inverse above.</p>
+<p>This is the degeneration of the complex formula $A^{-1} = \bar A/|A|^2$: the conjugate is $\bar A = a - \varepsilon a'$ and the "modulus squared" is $\langle A\rangle = a^2$, so $\bar A/\langle A\rangle = (a - \varepsilon a')/a^2$, which is the inverse above.</p>
 <p><strong>Corollary.</strong> If $A$ is invertible then so is $\bar A$, and $\overline{A^{-1}} = (\bar A)^{-1}$.</p>
 <p><strong>Proof.</strong> Direct from the formula.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
@@ -243,33 +243,33 @@ $$</p>
 $$</p>
 <p>is split by $a \mapsto a$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
 <h3 id="the-norm-one-group">The Norm-One Group</h3>
-<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{A \in \mathbb{D}'_{\mathbb{R}} : N(A) = 1\}$.</p>
+<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{A \in \mathbb{D}'_{\mathbb{R}} : \langle A\rangle = 1\}$.</p>
 <p><strong>Proposition.</strong> $H = \{a + \varepsilon a' : a = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
-<p><strong>Proof.</strong> $N(a + \varepsilon a') = a^2 = 1$ gives $a = \pm 1$ and leaves $a'$ free; the line $a = 1$ is $1 + \mathrm{M}$, the component through the identity.</p>
+<p><strong>Proof.</strong> $\langle a + \varepsilon a'\rangle = a^2 = 1$ gives $a = \pm 1$ and leaves $a'$ free; the line $a = 1$ is $1 + \mathrm{M}$, the component through the identity.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
 <h3 id="the-table">The Table</h3>
 <p>Over a field $k$, combining the criterion for invertibility with the vanishing of the norm, the elements of $\mathbb{D}'_k$ fall into exactly three classes.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Condition on $N(A)$</th>
+<th>Condition on $\langle A\rangle$</th>
 <th>Condition on $A$</th>
 <th>Conclusion</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$N(A) \neq 0$</td>
+<td>$\langle A\rangle \neq 0$</td>
 <td>(automatically $A \neq 0$)</td>
 <td>$A$ is invertible</td>
 </tr>
 <tr>
-<td>$N(A) = 0$</td>
+<td>$\langle A\rangle = 0$</td>
 <td>$A = 0$</td>
 <td>$A$ is the zero element</td>
 </tr>
 <tr>
-<td>$N(A) = 0$</td>
+<td>$\langle A\rangle = 0$</td>
 <td>$A \neq 0$</td>
 <td>$A$ is a zero divisor</td>
 </tr>
@@ -282,9 +282,9 @@ $$</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>The two distinguished submodules of $\mathbb{D}'_R$ behave oppositely with respect to invertibility.</p>
 <h3 id="the-real-submodule">The Real Submodule</h3>
-<p>An element of $R_{\mathbb{D}'}$ is $A = a$ with $a' = 0$, and $N(A) = a^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
+<p>An element of $R_{\mathbb{D}'}$ is $A = a$ with $a' = 0$, and $\langle A\rangle = a^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
-<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $A = \varepsilon a'$ with $a = 0$, and $N(A) = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
+<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $A = \varepsilon a'$ with $a = 0$, and $\langle A\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Over a field $k$ the distribution is as follows, the units being read off from $R^\times = k^\times$ and the zero-divisor column from the criterion of <em>Dual-Numbers Zero Divisors</em>.</p>
 <div class="table-scroll"><table>
@@ -292,7 +292,7 @@ $$</p>
 <tr>
 <th>Submodule</th>
 <th>Elements</th>
-<th>$N$</th>
+<th>$\langle\cdot\rangle$</th>
 <th>Units</th>
 <th>Zero divisors</th>
 </tr>
@@ -320,7 +320,7 @@ $$</p>
 <p>$$
 \mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad A = a + \varepsilon a',
 $$</p>
-<p>the norm reads $N(A) = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
+<p>the norm reads $\langle A\rangle = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <p>The three norms of the family are</p>
 <p>$$
@@ -334,8 +334,8 @@ $$</p>
 </ul>
 <p>The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm $N(A) = A\bar A = a^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $a^2 + a'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(A) = |a| = \sqrt{|N(A)|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |a|\exp(c\,a'/a)$.</p>
-<p>A dual number $A = a + \varepsilon a'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $N(A) \neq 0$. The inverse is $A^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
+<p>The norm $\langle A\rangle = A\bar A = a^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $a^2 + a'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(A) = |a| = \sqrt{|\langle A\rangle|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |a|\exp(c\,a'/a)$.</p>
+<p>A dual number $A = a + \varepsilon a'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $\langle A\rangle \neq 0$. The inverse is $A^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -374,11 +374,11 @@ $$</p>
 <td>Dual conjugation</td>
 </tr>
 <tr>
-<td>$N(A) = A\bar A = a^2$</td>
+<td>$\langle A\rangle = A\bar A = a^2$</td>
 <td>Norm, degenerate, radical $\mathrm{M}$</td>
 </tr>
 <tr>
-<td>$q(A) = a^2 + a'^2$</td>
+<td>$\mathfrak{Q}(A) = a^2 + a'^2$</td>
 <td>Euclidean form</td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ $$</p>
 <td>Euclidean norm</td>
 </tr>
 <tr>
-<td>$r(A) = |a| = \sqrt{|N(A)|}$</td>
+<td>$r(A) = |a| = \sqrt{|\langle A\rangle|}$</td>
 <td>Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant</td>
 </tr>
 <tr>
@@ -399,7 +399,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$</td>
-<td>Maximal ideal, kernel of $N$</td>
+<td>Maximal ideal, kernel of $\langle\cdot\rangle$</td>
 </tr>
 <tr>
 <td>$R_{\mathbb{D}'}$</td>
@@ -418,7 +418,7 @@ $$</p>
 <td>Unit-group isomorphism, $\Theta(a,s) = a(1 + s\varepsilon)$</td>
 </tr>
 <tr>
-<td>$H = \{A : N(A) = 1\}$</td>
+<td>$H = \{A : \langle A\rangle = 1\}$</td>
 <td>Norm-one group, lines $a = \pm 1$</td>
 </tr>
 </tbody>

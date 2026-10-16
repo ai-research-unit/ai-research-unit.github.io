@@ -82,10 +82,10 @@ $$</p>
 $$</p>
 <p>This is the standard <strong>mostly-minus</strong> convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a <em>separate</em> object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 + d\vec x^2$, i.e.</p>
 <p>$$
-N(d\tilde{Q}) = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\vec x^2 = -c^2\,dt^2 + d\vec x^2 ,
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\vec x^2 = -c^2\,dt^2 + d\vec x^2 ,
 $$</p>
 <p>with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion <em>Conventions in the Biquaternion Universe</em>; $g$ is the level-3 metric of the generators.</p>
-<p>The four generators, with the metric above, span a real Clifford algebra of dimension $16$, denoted $\mathrm{Cl}_{1,3}(\mathbb{R})$. In the standard mathematical convention $\mathrm{Cl}_{p,q}$ carries $p$ generators squaring to $+1$ and $q$ squaring to $-1$, so the label $(1,3)$ records one generator squaring to $+1$ and three to $-1$; the name is the standard one, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$, and no relabelling warning is needed.</p>
+<p>The four generators, with the metric above, span a real Clifford algebra of dimension $16$, denoted $\mathrm{Cl}_{1,3}(\mathbb{R})$. In the standard mathematical convention $\mathrm{Cl}_{n,m}$ carries $n$ generators squaring to $+1$ and $m$ squaring to $-1$, so the label $(1,3)$ records one generator squaring to $+1$ and three to $-1$; the name is the standard one, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$, and no relabelling warning is needed.</p>
 <p><strong>A convention note, checked against the parent article.</strong> The parent <em>The Dirac Equation in Biquaternionic Form</em> declares the Clifford metric as $g^{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$, so $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$; its <strong>explicit</strong> matrices, the Dirac representation $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & \sigma^k\\ -\sigma^k & 0\end{smallmatrix}\bigr)$ and the block construction $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_0\\ e_0 & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & ie_k\\ -ie_k & 0\end{smallmatrix}\bigr)$, satisfy exactly that anticommutation, and the explicit matrices used in this article, displayed below, are identical to the parent's block construction. The $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ belongs to the gradient and not to the generators; the even subalgebra is the same for either sign of $g$ (verified below), so no dictionary entry depends on which sign is chosen.</p>
 <h3 id="the-two-real-clifford-algebras-and-their-matrix-algebras">The two real Clifford algebras and their matrix algebras</h3>
 <p>The two signs of the metric are not equivalent as real algebras, and this is a structural fact the dictionary records even though only one of them is now in use. The algebra of the mostly-minus generators — one generator squaring to $+1$ and three to $-1$, which is this article's $\mathrm{Cl}_{1,3}$ and the convention of the corpus — is isomorphic to the quaternion matrix algebra</p>
@@ -392,7 +392,7 @@ $$</p>
 <p>$$
 (x_0\gamma^0 + \cdots + x_3\gamma^3)^2 = \bigl(+x_0^2 - x_1^2 - x_2^2 - x_3^2\bigr)I_4,
 $$</p>
-<p>verified symbolically in the representation. This is the Clifford form of the metric $g(x,x)$. The biquaternion $w$ in the frame identity has biquaternion norm $N(w) = x_0^2 - x_1^2 - x_2^2 - x_3^2$, the signature of $\mathbb{M}_+$; it <strong>agrees</strong> with the Clifford form term by term, so there is no relative sign between the square of an odd vector and the norm of the biquaternion that represents it. That agreement is what the mostly-minus convention buys: with the opposite sign of the generators the two forms differ by an overall minus, and the odd part of the dictionary has to record that sign separately.</p>
+<p>verified symbolically in the representation. This is the Clifford form of the metric $g(x,x)$. The biquaternion $w$ in the frame identity has biquaternion norm $\langle w\rangle_{\natural} = x_0^2 - x_1^2 - x_2^2 - x_3^2$, the signature of $\mathbb{M}_+$; it <strong>agrees</strong> with the Clifford form term by term, so there is no relative sign between the square of an odd vector and the norm of the biquaternion that represents it. That agreement is what the mostly-minus convention buys: with the opposite sign of the generators the two forms differ by an overall minus, and the odd part of the dictionary has to record that sign separately.</p>
 <h2 id="the-four-real-subspaces">The Four Real Subspaces</h2>
 <p>The four natural real subspaces of $\mathbb{B}$ are the fixed-point sets of the conjugations, and each has a simple image under the dictionary. The identifications below were checked by confirming that each generating basis vector of the subspace lies in the stated Clifford span, and conversely.</p>
 <div class="table-scroll"><table>
@@ -432,7 +432,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The pattern is clean: the real-quaternion subspace is the identity together with the <strong>spacelike</strong> bivectors, its multiple by $i$ is minus the pseudoscalar together with the <strong>timelike</strong> bivectors, and the two Hermitian sectors are obtained by taking the scalar part from one of these and the vector part from the other. The informational subspace $\mathbb{M}_+$ is the identity plus the timelike bivectors; the material subspace $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors. The single minus in the table is the sign of $\mathsf{M}_4(i)$, and it appears exactly wherever $i$ itself appears; it is not a separate sign pattern. Multiplication by the pseudoscalar — that is, by $i$ — exchanges the two sectors, which is the Clifford form of the identity $i\mathbb{M}_+ = \mathbb{M}_-$.</p>
-<p>Two consequences follow immediately and are worth recording. First, the timelike bivectors, which are the Lorentz boosts, carry the purely imaginary vector part of $\mathbb{M}_+$: the boost generators live in the informational sector, as stated in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. Second, the two sectors carry the mirror biquaternion norms: on the basis $\{ie_0, e_1, e_2, e_3\}$ of $\mathbb{M}_-$ the form $N$ is negative in the first direction and positive in the other three, while on the basis $\{e_0, ie_1, ie_2, ie_3\}$ of $\mathbb{M}_+$ it is positive in the first direction and negative in the other three. Since quaternion conjugation fixes $i$, one has $N(i\tilde{Q}) = -N(\tilde{Q})$, so the interchange $i\mathbb{M}_+ = \mathbb{M}_-$ reverses the sign of the biquaternion norm. The two sectors are thus mirror images, and the Clifford images reflect this: the identity becomes the pseudoscalar, which has the opposite square.</p>
+<p>Two consequences follow immediately and are worth recording. First, the timelike bivectors, which are the Lorentz boosts, carry the purely imaginary vector part of $\mathbb{M}_+$: the boost generators live in the informational sector, as stated in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. Second, the two sectors carry the mirror biquaternion norms: on the basis $\{ie_0, e_1, e_2, e_3\}$ of $\mathbb{M}_-$ the form $\langle\cdot\rangle_{\natural}$ is negative in the first direction and positive in the other three, while on the basis $\{e_0, ie_1, ie_2, ie_3\}$ of $\mathbb{M}_+$ it is positive in the first direction and negative in the other three. Since quaternion conjugation fixes $i$, one has $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so the interchange $i\mathbb{M}_+ = \mathbb{M}_-$ reverses the sign of the biquaternion norm. The two sectors are thus mirror images, and the Clifford images reflect this: the identity becomes the pseudoscalar, which has the opposite square.</p>
 <h2 id="gamma-five-and-the-chirality-projectors">Gamma-Five and the Chirality Projectors</h2>
 <h3 id="the-chirality-operator">The chirality operator</h3>
 <p>The chirality operator of the Dirac algebra is</p>
@@ -492,17 +492,17 @@ $$</p>
 $$</p>
 <p>checked on the eight real basis elements, whose images under ${}^{\natural}$ carry precisely the signs $+$ on $e_0, i$ and $-$ on $e_k, ie_k$ that reversal carries on $I_4, \omega$ and the bivectors.</p>
 <h3 id="the-biquaternion-norm">The biquaternion norm</h3>
-<p>The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$. Its Clifford image is the product with the reversal,</p>
+<p>The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. Its Clifford image is the product with the reversal,</p>
 <p>$$
 \mathsf{M}_4(\tilde{Q})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr) = \mathsf{M}_4\bigl(\tilde{Q}\tilde{Q}^{\natural}\bigr),
 $$</p>
 <p>which is central. When the biquaternion norm is <strong>real</strong> — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,</p>
 <p>$$
-\mathsf{M}_4(\tilde{Q})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr) = N(\tilde{Q})\,I_4, \qquad \tilde{Q} \in \mathbb{M}_- \text{ or } \mathbb{M}_+,
+\mathsf{M}_4(\tilde{Q})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr) = \langle\tilde{Q}\rangle_{\natural}\,I_4, \qquad \tilde{Q} \in \mathbb{M}_- \text{ or } \mathbb{M}_+,
 $$</p>
 <p>verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_0 + v_1e_1 + v_2e_2 + v_3e_3 \in \mathbb{M}_-$,</p>
 <p>$$
-N(\tilde{V}) = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \vec x^2,
+\langle\tilde{V}\rangle_{\natural} = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \vec x^2,
 $$</p>
 <p>which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.</p>
 <h3 id="the-matrix-representation-and-the-trace">The matrix representation and the trace</h3>
@@ -518,11 +518,11 @@ $$</p>
 <h2 id="two-ways-the-algebra-carries-physics-multiplication-and-conjugation">Two Ways the Algebra Carries Physics: Multiplication and Conjugation</h2>
 <p>The dictionary so far has mapped objects; it is worth stating the two ways an element of $\mathbb{B}$ is <em>used</em>, because they are not interchangeable, and the difference is the source of the framework's most persistent obstruction.</p>
 <p><strong>One element, two interpretations.</strong> Because $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, the algebra is the endomorphism algebra of its own unique simple module, $\mathbb{B} = \mathrm{End}(S)$ with $S$ of complex dimension two. Every element is therefore at once an <strong>object</strong> of the algebra and a <strong>linear operator</strong> on $S$. The two mechanisms are those two interpretations.</p>
-<p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.</p>
+<p><strong>Mechanism one: multiplication, on the module.</strong> A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, <em>every</em> complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = \exp(i\theta)$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.</p>
 <p><strong>Mechanism two: conjugation, on the algebra.</strong> A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation</p>
 <p>$$
 \tilde{Q} \;\mapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*},
-\qquad \tilde U\in\mathbb{B},\quad N(\tilde U)=1,
+\qquad \tilde U\in\mathbb{B},\quad \langle\tilde U\rangle_{\natural}=1,
 $$</p>
 <p>not by multiplication. This mechanism carries the integer-spin sector: the four-vector, the gauge potential, the field strength, the four-current, and the rotors themselves as points of $SL(2,\mathbb{C})$.</p>
 <p><strong>Why the two cannot be merged.</strong> The vector carrier $\mathbb{M}_-$ is only a <strong>real</strong> vector space: multiplication by $i$ maps it to the other sector, $i\mathbb{M}_- = \mathbb{M}_+$ (O16 of the catalogue). A $\mathbb{B}$-module, by contrast, is complex-linear, $i$ acting as its complex structure. So $\mathbb{M}_-$ is not a $\mathbb{B}$-module, and a four-vector cannot be carried by multiplication. The two mechanisms are separated by the real-versus-complex distinction, and that distinction is forced by the algebra rather than chosen.</p>
@@ -682,7 +682,7 @@ $$</p>
 <td>Clifford reversal anti-automorphism</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>

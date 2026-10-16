@@ -150,7 +150,7 @@ $$
 F_{AB}(t+i) = \omega\big(\sigma_{-t}(B)\,A\big) = F_{BA}(-t),
 $$
 the last equality by the invariance of $\omega$ under the modular flow.</p>
-<p>The normalization $\beta=1$ is a choice of scale for the modular parameter. The parent article's inverse temperature is recovered by rescaling, $t\mapsto t/\beta$ in the flow, and its boundary relation $F_{AB}(t+i\beta)=F_{BA}(-t)$ is the same statement at width $\beta$ rather than width $1$. The parent's <strong>modular Hamiltonian</strong> is the generator of this flow: writing $K=-\log\rho$, the finite-dimensional flow below is $\sigma_t(A)=e^{-itK}Ae^{itK}$, so that
+<p>The normalization $\beta=1$ is a choice of scale for the modular parameter. The parent article's inverse temperature is recovered by rescaling, $t\mapsto t/\beta$ in the flow, and its boundary relation $F_{AB}(t+i\beta)=F_{BA}(-t)$ is the same statement at width $\beta$ rather than width $1$. The parent's <strong>modular Hamiltonian</strong> is the generator of this flow: writing $K=-\log\rho$, the finite-dimensional flow below is $\sigma_t(A)=\exp(-itK)A\exp(itK)$, so that
 $$
 \frac{d}{dt}\sigma_t(A)\Big|_{t=0} = -i[K,A],
 $$
@@ -202,9 +202,9 @@ which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by 
 $$
 \tilde K := -\log\tilde\rho \ \in\mathbb{M}_+,
 $$
-one has $\tilde\rho^{it}=e^{-it\tilde K}$ and
+one has $\tilde\rho^{it}=\exp(-it\tilde K)$ and
 $$
-\sigma_t(\tilde{A})=e^{-it\tilde K}\tilde{A}\,e^{it\tilde K}, \qquad \frac{d}{dt}\sigma_t(\tilde{A})\Big|_{t=0}=-i[\tilde K,\tilde{A}].
+\sigma_t(\tilde{A})=\exp(-it\tilde K)\tilde{A}\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{A})\Big|_{t=0}=-i[\tilde K,\tilde{A}].
 $$</p>
 <h3 id="the-identities-verified">The Identities, Verified</h3>
 <p>The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde{B}\mapsto\tilde{B}\tilde{C}$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
@@ -217,14 +217,14 @@ Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
 \tilde K=-\log\tilde\rho=a_0e_0+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
-\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\hat r,
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.</p>
 <p>A second, physical case ties the construction to the parent article and to <em>The Partition Function in Biquaternionic Form</em>. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.746494,0.253506)$ in the $e_3$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
 $$
 \tilde K=-\log\tilde\rho=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_0,
 $$
-with $Z=1+e^{-\beta\omega}=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_0$ and with that article's partition function.</p>
+with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_0$ and with that article's partition function.</p>
 <h2 id="the-biquaternion-candidate-for-math219">The Biquaternion Candidate for $S$</h2>
 <p>The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
@@ -240,7 +240,7 @@ for which
 $$
 \Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_t=\mathrm{id} :
 $$
-the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde\rho=e^{-\beta\tilde H}/\mathrm{Tr}(e^{-\beta\tilde H})$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde\rho$ generates the flow; but the algebra itself does not select one. <strong>This is a gap, and it is left visible:</strong> the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.</p>
+the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde\rho=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde\rho$ generates the flow; but the algebra itself does not select one. <strong>This is a gap, and it is left visible:</strong> the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.</p>
 <h2 id="the-type-of-the-algebra-and-inner-versus-outer-modular-flow">The Type of the Algebra and Inner Versus Outer Modular Flow</h2>
 <p>The finite-dimensional algebra is a factor of <strong>type I$_2$</strong>: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde\rho^{it}$ inside $\mathbb{B}$,
 $$
@@ -268,7 +268,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 </tr>
 <tr>
 <td>discrete subgroup generated by $x>0$</td>
-<td>III$_\lambda$, $\lambda=e^{-2\pi/x}$</td>
+<td>III$_\lambda$, $\lambda=\exp(-2\pi/x)$</td>
 <td>inner exactly on the subgroup</td>
 </tr>
 <tr>

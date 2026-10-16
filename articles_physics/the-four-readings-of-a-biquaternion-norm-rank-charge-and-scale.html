@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-four-readings-of-a-biquaternion-norm-rank-charge-and-scale"><strong>The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra is read four ways in the corpus, and the four are read off one element. The biquaternion norm $N$
+<p>The algebra is read four ways in the corpus, and the four are read off one element. The biquaternion norm $\langle\cdot\rangle_{\natural}$
 is the interval and carries the mass shell: of the four, this is the one the word <strong>mass</strong> names. The rank of
 the Hermitian square is the count of polarisations, and it reads only whether the mass vanishes, never how
 much. The compact part of the algebra is what makes the internal charge discrete: this is the internal charge
@@ -72,12 +72,12 @@ $e_k^2=-e_0$; the material sector $\mathbb{M}_-$ with the four-position
 $\tilde{Q}=ict\,e_0+\vec x$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
 matrix model $\mathsf{M}_2$.</p>
 <h2 id="the-four-readings-one-at-a-time">The Four Readings, One at a Time</h2>
-<p><strong>The norm.</strong> $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
+<p><strong>The norm.</strong> $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
 $-c^2t^2+\vec x^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
 hyperboloid and the light cone is $N=0$. The interpretation is <strong>value</strong>: which level set the element lies on.</p>
 <p><strong>The rank.</strong> The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when
-$N(\tilde{Q})\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the <strong>count of
+$\langle\tilde{Q}\rangle_{\natural}\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the <strong>count of
 polarisations</strong>: two for the massive type and one for the massless type. The interpretation is <strong>count</strong>: how many
 independent rank-one terms the square needs.</p>
 <p><strong>The charge.</strong> The unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is compact, and the
@@ -89,10 +89,10 @@ elements and the cone is its complement, so no null element is in the slice and 
 one of these labels.</p>
 <p><strong>The scale.</strong> The polar representation writes an element as a polar factor times a phase and a unit
 element, and the modulus $r$ is the polar scale. The norm is reversed by the central imaginary,
-$N(i\tilde{Q})=-N(\tilde{Q})$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
+$\langle i\tilde{Q}\rangle_{\natural}=-\langle\tilde{Q}\rangle_{\natural}$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
 the mass, the scale is the <strong>unit</strong>: a change of $r$ is a change of the unit of length, and the conformal
 rescaling acts on it. The interpretation is <strong>unit</strong>: how the element scales, not what level set it lies on. The
-polar representation is stated only for $N(\tilde{Q})\neq0$, so the cone is the boundary of its domain and not a
+polar representation is stated only for $\langle\tilde{Q}\rangle_{\natural}\neq0$, so the cone is the boundary of its domain and not a
 locus it detects.</p>
 <h2 id="where-the-norm-and-the-rank-agree">Where the Norm and the Rank Agree</h2>
 <p>Two of the four readings agree on one locus, and they agree exactly: <strong>the norm vanishes on the
@@ -104,13 +104,13 @@ together, and the agreement is a statement about that pair, not about the four. 
 calling the norm and the rank two readings of one word: on the massless locus they are two descriptions of one
 element, and the dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated
 twice.</p>
-<p>$N(\tilde{Q})=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is at most one, with rank zero only at
+<p>$\langle\tilde{Q}\rangle_{\natural}=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is at most one, with rank zero only at
 $\tilde{Q}=0$; off the cone the rank is two. The two directions were recomputed on $100$ of $100$ random
 non-null elements each way, and every constructed nonzero null element has rank one.</p>
 <p>Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
 on the material sector those are the spacelike and the timelike regions, so <strong>rank two does not say which
 sign</strong>, and the mass label "massive" covers both the timelike and the spacelike elements. The corpus's own
-caution is <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>, §<em>No Ghosts, No Tachyons</em>: no element of the
+caution is <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>: no element of the
 algebra has a negative sesquilinear norm, and the spacelike elements lie outside the state cone rather than
 inside it, so the rank-two spacelike elements are massive in the rank sense and are not states in the
 probability sense.</p>
@@ -142,7 +142,7 @@ algebra and not a legitimate state.</p>
 <tbody>
 <tr>
 <td>norm</td>
-<td>$N(\tilde{Q})=\sum_\mu Q_\mu^2$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>the value and its sign; the mass shell as a level set</td>
 <td>is the mass: $N=-m^2c^2$ on shell</td>
 <td>detects no polarisation count and no label</td>
@@ -152,7 +152,7 @@ algebra and not a legitimate state.</p>
 <td>$\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$</td>
 <td>the count of polarisations, two or one</td>
 <td>whether $m$ vanishes, never its value</td>
-<td>does not fix the sign of $N$</td>
+<td>does not fix the sign of $\langle\cdot\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>charge</td>
@@ -206,7 +206,7 @@ the framework's mass meets its choice of units, which is the subject of <em>Acti
 of the Biquaternion Universe</em>.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The algebra is read four ways, all off one element: the norm $N$ (a value and its level set, and the one
+<p>The algebra is read four ways, all off one element: the norm $\langle\cdot\rangle_{\natural}$ (a value and its level set, and the one
 reading the word mass names), the rank of the Hermitian square (a count of polarisations, reading only whether
 the mass vanishes), the compact-slice label (a discrete internal charge, not a mass) and the polar scale $r$
 (a unit of length, the unit the mass is measured in). The norm and the rank agree on the zero-divisor cone and
@@ -225,7 +225,7 @@ left out, and the Dirac and Majorana pair is placed at the equation level, outsi
 </thead>
 <tbody>
 <tr>
-<td>$N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>the biquaternion norm, the interval, the value and its level set</td>
 </tr>
 <tr>

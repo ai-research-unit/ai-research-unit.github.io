@@ -59,30 +59,30 @@ $$</p>
 <p>the direct translation to $\mathbb{H}$ of the complex quadratic family $z \mapsto z^2+c$. The translation is forced by the algebra and by nothing else: the quaternion product is associative and unital, so the square $\tilde q^2$ is unambiguous and $\tilde q \mapsto \tilde q^2+c$ is a quadratic polynomial with coefficients in $\mathbb{H}$. It is not commutative and not complex-analytic, and the two failures are the whole subject: the map has a critical point and a four-dimensional phase space, yet the critical orbit is planar, and every invariant complex plane through the origin carries a copy of the ordinary complex quadratic map. Those two facts make the four-dimensional object computable from a two-dimensional one, and they are proved here.</p>
 <p>This article defines the map, the filled Julia set and the Julia set, proves the bounded–escaping dichotomy and the escape lemma that makes it effective, determines the symmetry group of the family and of a single member, and identifies the invariant complex planes. It is the first article of the quaternion fractal thread and it fixes the objects the rest of the thread uses.</p>
 <p>The quaternion algebra, its conjugation and its basis are from <em>Quaternion Algebra</em>; the quaternion norm, its multiplicativity and the modulus are from <em>Quaternion Norm and Invertibility</em>; the inner automorphisms and the rotation group of the vector subspace are from <em>Quaternion Automorphisms and Derivations</em> and <em>Quaternion Rotations and Reflections</em>; the complex quadratic family and its Julia set are from <em>The Julia Sets of a Complex Polynomial</em>; and the dimensions and the coverings used below are from <em>Fractal Geometry</em>, which owns them. The escape radius and the Green's function are the subject of <em>The Escape Radius and the Green's Function for Quaternions</em>; the connectedness locus of the family, that of <em>The Quaternion Mandelbrot Set</em>; the theorem that a Julia set is recovered from a slice, that of <em>The Slices of the Quaternion Julia Sets</em>; and the dimension, that of <em>The Dimension of the Quaternion Julia Sets</em>. Nothing of the general theory of the Fatou set and of the Julia set is rebuilt here: it is Part IV's, in <em>The Geometry of the Julia Sets</em>. No physics is invoked.</p>
-<p>Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with $q_\mu \in \mathbb{R}$, $e_0=1$ and $e_1^2=e_2^2=e_3^2=-e_0$; the conjugate is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+q_1^2+q_2^2+q_3^2$, and the modulus is $|\tilde q|=\sqrt{N(\tilde q)}$. The scalar part is $\operatorname{Sc}\tilde q=q_0$ and the vector part is $\operatorname{Vect}\tilde q=\vec q=q_1e_1+q_2e_2+q_3e_3$. The unit sphere of the algebra is $S^3=\{\tilde q:N(\tilde q)=1\}$, and the sphere of the imaginary units is $S^2=\{\nu \in \operatorname{Im}\mathbb{H} : N(\nu)=1\}$.</p>
+<p>Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with $q_\mu \in \mathbb{R}$, $e_0=1$ and $e_1^2=e_2^2=e_3^2=-e_0$; the conjugate is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+q_1^2+q_2^2+q_3^2$, and the modulus is $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$. The scalar part is $\operatorname{Sc}\tilde q=q_0$ and the vector part is $\operatorname{Vect}\tilde q=\vec q=q_1e_1+q_2e_2+q_3e_3$. The unit sphere of the algebra is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, and the sphere of the imaginary units is $S^2=\{\nu \in \operatorname{Im}\mathbb{H} : \langle \nu\rangle_{\natural}=1\}$.</p>
 <h2 id="the-quadratic-map">The Quadratic Map</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>quaternion quadratic map</strong> of the parameter $c \in \mathbb{H}$ is</p>
 <p>$$
-f_c : \mathbb{H} \to \mathbb{H}, \qquad f_c(\tilde q) = \tilde q^2 + c .
+f_c : \mathbb{H} \to \mathbb{H}, \qquad f_c(\tilde q) = \tilde q^2 + c.
 $$</p>
 <p>Its $n$-th iterate is written $f_c^{\,n}$, with $f_c^{\,0}=\mathrm{id}$, and the <strong>orbit</strong> of $\tilde q$ is the sequence $\tilde q_n = f_c^{\,n}(\tilde q)$.</p>
 <p>Because the quaternion product is associative, the iterates satisfy $f_c^{\,m}\circ f_c^{\,n}=f_c^{\,m+n}$ and the orbit is a genuine dynamical system. The map is a <strong>quadratic polynomial</strong> in the coordinates: expanding $\tilde q^2 = q_0^2-|\vec q|^2+2q_0\vec q$, its four coordinate functions are quadratic forms, so $f_c$ is a polynomial map $\mathbb{R}^4 \to \mathbb{R}^4$ of degree two with the linear part and the constant term prescribed by $c$.</p>
 <h3 id="the-critical-point">The Critical Point</h3>
 <p><strong>Proposition.</strong> The real-linear map $\mathrm{d}(f_c)_{\tilde q} : \mathbb{H} \to \mathbb{H}$ is the sum of the left and right multiplications,</p>
 <p>$$
-\mathrm{d}(f_c)_{\tilde q}\,\tilde h = \tilde q\tilde h + \tilde h\tilde q ,
+\mathrm{d}(f_c)_{\tilde q}\,\tilde h = \tilde q\tilde h + \tilde h\tilde q,
 $$</p>
 <p>and its determinant, in the real coordinates $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, is</p>
 <p>$$
-\det \mathrm{d}(f_c)_{\tilde q} = 16\,q_0^2\,N(\tilde q) = 16\,q_0^2\,|\tilde q|^2 .
+\det \mathrm{d}(f_c)_{\tilde q} = 16\,q_0^2\,\langle\tilde q\rangle_{\natural} = 16\,q_0^2\,|\tilde q|^2.
 $$</p>
 <p>Hence the differential is invertible exactly for $q_0\neq0$, and it is singular on the hyperplane $\{q_0=0\}$ of the pure vectors, a three-dimensional set; the point $0$ is one of the critical points but not the only one. Here the algebra is identified with $\mathbb{R}^4$ and the differential is taken in the real sense; no complex structure is used.</p>
-<p><em>Proof.</em> The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde h$ is $\tilde q\tilde h+\tilde h\tilde q$, and the constant $c$ contributes nothing. The map is the sum $L_{\tilde q}+R_{\tilde q}$ of the left and the right multiplication, and passing through the matrix model $M_2(\mathbb{C})$ the sum $L_{\tilde q}+R_{\tilde q}$ acts on a matrix $X=\mathsf{M}_2(\tilde h)$ by $X\mapsto \mathsf{M}_2(\tilde q)X+X\mathsf{M}_2(\tilde q)$, whose eigenvalues are the four sums $\mu_i+\mu_j$ of the two eigenvalues $\mu_{1,2}=q_0\pm i|\vec q|$ of $\mathsf{M}_2(\tilde q)$; the product of the four sums is $4\mu_1\mu_2(\mu_1+\mu_2)^2=4N(\tilde q)(2q_0)^2$, the displayed determinant. It vanishes exactly when $q_0=0$, since $N(\tilde q)=|\tilde q|^2=0$ forces $\tilde q=0$.</p>
+<p><em>Proof.</em> The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde h$ is $\tilde q\tilde h+\tilde h\tilde q$, and the constant $c$ contributes nothing. The map is the sum $L_{\tilde q}+R_{\tilde q}$ of the left and the right multiplication, and passing through the matrix model $M_2(\mathbb{C})$ the sum $L_{\tilde q}+R_{\tilde q}$ acts on a matrix $X=\mathsf{M}_2(\tilde h)$ by $X\mapsto \mathsf{M}_2(\tilde q)X+X\mathsf{M}_2(\tilde q)$, whose eigenvalues are the four sums $\mu_i+\mu_j$ of the two eigenvalues $\mu_{1,2}=q_0\pm i|\vec q|$ of $\mathsf{M}_2(\tilde q)$; the product of the four sums is $4\mu_1\mu_2(\mu_1+\mu_2)^2=4\langle\tilde q\rangle_{\natural}(2q_0)^2$, the displayed determinant. It vanishes exactly when $q_0=0$, since $\langle\tilde q\rangle_{\natural}=|\tilde q|^2=0$ forces $\tilde q=0$.</p>
 <p><strong>Remark (the critical set is larger than the point $0$).</strong> The singular set is the hyperplane of the pure vectors, not a point, and the escape theory below is unaffected because it uses only the multiplicativity of the norm. What the connectedness theory uses is the orbit of the <em>single</em> point $0$: the point $0$ lies in the plane $\mathbb{R}[c]$ of the parameter, on which $f_c$ restricts to the complex quadratic map $z\mapsto z^2+\kappa(c)$, and it is the critical point of that planar restriction. The orbit of $0$ is therefore the critical orbit of the invariant complex slice, and it is the orbit that governs the locus.</p>
 <p><strong>Definition.</strong> The <strong>critical orbit</strong> of the parameter $c$ is the orbit of the point $0$,</p>
 <p>$$
-0, \quad c, \quad c^2+c, \quad (c^2+c)^2+c, \quad \ldots ,
+0, \quad c, \quad c^2+c, \quad (c^2+c)^2+c, \quad \ldots,
 $$</p>
 <p>the orbit of the critical point of the invariant complex slice $\mathbb{R}[c]$.</p>
 <p>The critical orbit is the simplest orbit of the family and, by the critical slice theorem of the next article, the one that decides the connectedness locus.</p>
@@ -91,22 +91,22 @@ $$</p>
 <p><strong>Lemma (escape).</strong> Let $c \in \mathbb{H}$ and put $R(c)=1+|c|$. If $|\tilde q_n| \geq R(c)$ for some $n$, then $|\tilde q_k| \to \infty$ as $k \to \infty$.</p>
 <p><em>Proof.</em> The quaternion norm is multiplicative, so $|\tilde q^2|=|\tilde q|^2$; the triangle inequality gives</p>
 <p>$$
-|\tilde q_{n+1}| = |\tilde q_n^2+c| \geq |\tilde q_n|^2 - |c| .
+|\tilde q_{n+1}| = |\tilde q_n^2+c| \geq |\tilde q_n|^2 - |c|.
 $$</p>
 <p>If $|\tilde q_n| \geq 1+|c|$ then $|\tilde q_{n+1}| \geq |\tilde q_n|^2-|c| > |\tilde q_n| \geq R(c)$, so by induction the moduli are strictly increasing from the index $n$ on. Writing $t_n=|\tilde q_n|$, the function $t \mapsto t^2-t-|c|$ is increasing for $t \geq 1/2$, and therefore for every $k \geq n$</p>
 <p>$$
-t_{k+1} \geq t_k^2-|c| = t_k + \bigl(t_k^2-t_k-|c|\bigr) \geq t_k + \bigl(R(c)^2-R(c)-|c|\bigr) = t_k + |c|^2 ,
+t_{k+1} \geq t_k^2-|c| = t_k + \bigl(t_k^2-t_k-|c|\bigr) \geq t_k + \bigl(R(c)^2-R(c)-|c|\bigr) = t_k + |c|^2,
 $$</p>
 <p>using $R(c)^2-R(c)-|c|=(1+|c|)^2-(1+|c|)-|c|=|c|^2$; the moduli grow at least linearly and $t_k \to \infty$. When $c=0$ the same computation gives $t_{k+1}=t_k^2$ and $t_k \geq 1$ diverges.</p>
 <p><strong>Remark.</strong> The lemma is the whole of the escape theory that the definite case needs. It uses only the multiplicativity of the norm and the triangle inequality, and it is the reason the quaternion quadratic map is computable: a point that leaves the closed ball of radius $R(c)$ is known to escape, and the ball is where all the work is done. The sharper radius and the potential are in <em>The Escape Radius and the Green's Function for Quaternions</em>.</p>
 <h3 id="the-filled-julia-set-and-the-julia-set">The Filled Julia Set and the Julia Set</h3>
 <p><strong>Definition.</strong> The <strong>filled Julia set</strong> of the parameter $c$ is</p>
 <p>$$
-K_c = \{\tilde q \in \mathbb{H} : \text{the orbit } \tilde q_n \text{ is bounded}\} ,
+K_c = \{\tilde q \in \mathbb{H} : \text{the orbit } \tilde q_n \text{ is bounded}\},
 $$</p>
 <p>and the <strong>Julia set</strong> is its topological boundary,</p>
 <p>$$
-J_c = \partial K_c .
+J_c = \partial K_c.
 $$</p>
 <p><strong>Proposition.</strong> $K_c$ is closed and bounded, hence compact and nonempty for every $c$; it is forward-invariant, and it contains the critical orbit exactly when the critical orbit is bounded. The Julia set $J_c=\partial K_c$ is nonempty and compact.</p>
 <p><em>Proof.</em> $K_c$ is the complement of the escape set, which is open because $f_c$ is continuous and the sequence of moduli depends continuously on the initial point; and $K_c$ is contained in the closed ball of radius $R(c)$ by the escape lemma. For nonemptiness, the fixed-point equation $f_c(\tilde q)=\tilde q$ is $\tilde q^2-\tilde q+c=0$, which becomes $p^2=d$ with $p=\tilde q-\tfrac12 e_0$ and $d=\tfrac14 e_0-c$; every quaternion $d$ has a square root, and for $d\ne0$ the explicit root is</p>
@@ -120,7 +120,7 @@ $$</p>
 <p>The <strong>inner automorphisms</strong> of $\mathbb{H}$ are the maps $\operatorname{Ad}_u(\tilde q)=u\tilde q u^{-1}$ for $u \in \mathbb{H}^{\times}$; they are the whole automorphism group of the algebra over $\mathbb{R}$, and they act on the vector subspace by the rotation group of $S^2$, so that $\operatorname{Ad}_u=\operatorname{Ad}_{u/|u|}$ depends only on the class of $u$ in $S^3/\{\pm1\}\cong SO(3)$.</p>
 <p><strong>Proposition (equivariance).</strong> For every unit quaternion $u$ and every parameter $c$,</p>
 <p>$$
-f_{\operatorname{Ad}_u(c)} \circ \operatorname{Ad}_u = \operatorname{Ad}_u \circ f_c .
+f_{\operatorname{Ad}_u(c)} \circ \operatorname{Ad}_u = \operatorname{Ad}_u \circ f_c.
 $$</p>
 <p>Consequently $K_{\operatorname{Ad}_u(c)}=\operatorname{Ad}_u(K_c)$ and $J_{\operatorname{Ad}_u(c)}=\operatorname{Ad}_u(J_c)$.</p>
 <p><em>Proof.</em> An automorphism of an associative algebra preserves products, so $\operatorname{Ad}_u(\tilde q^2)=(\operatorname{Ad}_u\tilde q)^2$; adding $\operatorname{Ad}_u(c)$ gives the identity. The inner automorphism $\operatorname{Ad}_u$ is a real-linear isometry of $\mathbb{H}$ with the Euclidean norm, so it carries bounded orbits to bounded orbits and commutes with the boundary.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-stabiliser-and-the-real-parameters">The Stabiliser and the Real Parameters</h3>
 <p><strong>Definition.</strong> The <strong>symmetry group</strong> of a single member $f_c$ is the stabiliser of $c$ in the automorphism group,</p>
 <p>$$
-G_c = \{u \in S^3 : \operatorname{Ad}_u(c)=c\} /\{\pm1\} \leq SO(3) .
+G_c = \{u \in S^3 : \operatorname{Ad}_u(c)=c\} /\{\pm1\} \leq SO(3).
 $$</p>
 <p><strong>Proposition (stabiliser).</strong> If $c \in \mathbb{R}$ then $G_c=SO(3)$; if $\vec c \neq 0$ then $G_c$ is the circle of rotations about the axis $\mathbb{R}\vec c$, isomorphic to $SO(2)$.</p>
 <p><em>Proof.</em> An inner automorphism fixes $c$ exactly when $u$ commutes with $c$. The centraliser of a real number is the whole algebra, giving $SO(3)$. If $\vec c\neq0$ then $c$ generates, with $e_0$, a two-dimensional subalgebra whose commutant is the two-dimensional plane spanned by $e_0$ and $\vec c$; the unit quaternions in that commutant form the circle $\{u=\cos t + (\vec c/|\vec c|)\sin t\}$, whose image in $SO(3)$ is the circle of rotations about the axis $\vec c$.</p>
@@ -142,18 +142,18 @@ $$</p>
 <h3 id="the-complex-planes-through-the-origin">The Complex Planes Through the Origin</h3>
 <p><strong>Definition.</strong> For a unit imaginary quaternion $\nu \in S^2$, the <strong>complex plane of the axis $\nu$</strong> is</p>
 <p>$$
-\mathbb{C}_\nu = \operatorname{span}\{e_0,\nu\} = \{a+b\nu : a,b \in \mathbb{R}\} .
+\mathbb{C}_\nu = \operatorname{span}\{e_0,\nu\} = \{a+b\nu : a,b \in \mathbb{R}\}.
 $$</p>
-<p><strong>Proposition.</strong> For each $\nu \in S^2$ the plane $\mathbb{C}_\nu$ is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and the planes are permuted transitively by the automorphism group; every quaternion lies in at least one of them, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat u_{\mathrm d}}$ with $\hat u_{\mathrm d}=\vec q/|\vec q|$.</p>
+<p><strong>Proposition.</strong> For each $\nu \in S^2$ the plane $\mathbb{C}_\nu$ is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and the planes are permuted transitively by the automorphism group; every quaternion lies in at least one of them, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\vec u_{\mathrm d}}$ with $\vec u_{\mathrm d}=\vec q/|\vec q|$.</p>
 <p><em>Proof.</em> Since $\nu^2=-e_0$, the span of $e_0$ and $\nu$ is closed under multiplication and is a two-dimensional real division algebra, hence isomorphic to $\mathbb{C}$ by the Frobenius classification quoted in <em>Quaternion Algebra</em>. The automorphism $\operatorname{Ad}_u$ carries $\nu$ to the rotation of $\nu$ by $u$; the group $SO(3)$ acts transitively on $S^2$, hence on the planes. A quaternion $a+\vec q$ with $\vec q\ne0$ lies in $\mathbb{C}_\nu$ exactly when $\vec q \in \mathbb{R}\nu$, so the axis is determined; a real quaternion lies in every plane.</p>
 <h3 id="the-slice-invariant-under-the-map">The Slice Invariant Under the Map</h3>
 <p><strong>Proposition (the parameter's plane).</strong> Put $\mathbb{C}_c=\operatorname{span}\{e_0,c\}$ if $c \notin \mathbb{R}$, and $\mathbb{C}_c=\mathbb{R}$ if $c \in \mathbb{R}$. Then $\mathbb{C}_c$ is a subalgebra and $f_c(\mathbb{C}_c) \subseteq \mathbb{C}_c$. In particular the whole critical orbit lies in $\mathbb{C}_c$.</p>
-<p><em>Proof.</em> The span of $e_0$ and $c$ is closed under multiplication because $c^2=2c_0c-N(c)e_0$ by <em>Quaternion Norm and Invertibility</em>, and $c$ lies in it; if $\tilde q \in \mathbb{C}_c$ then $\tilde q^2 \in \mathbb{C}_c$ and adding $c$ keeps the point in $\mathbb{C}_c$. The critical orbit starts at $0 \in \mathbb{C}_c$ and $f_c(0)=c \in \mathbb{C}_c$, so it stays there.</p>
+<p><em>Proof.</em> The span of $e_0$ and $c$ is closed under multiplication because $c^2=2c_0c-\langle c\rangle_{\natural}e_0$ by <em>Quaternion Norm and Invertibility</em>, and $c$ lies in it; if $\tilde q \in \mathbb{C}_c$ then $\tilde q^2 \in \mathbb{C}_c$ and adding $c$ keeps the point in $\mathbb{C}_c$. The critical orbit starts at $0 \in \mathbb{C}_c$ and $f_c(0)=c \in \mathbb{C}_c$, so it stays there.</p>
 <p><strong>Remark (the slice discipline).</strong> The plane $\mathbb{C}_c$ is the unique slice that contains the critical orbit; every other choice of plane cuts the four-dimensional set in a different way, and a statement about a slice is a statement about that slice and not about the algebra. <strong>Every picture of a quaternion Julia set below the article is a picture of a slice, and the slice is named with the picture.</strong> The recovery of the whole set from one slice is the theorem of <em>The Slices of the Quaternion Julia Sets</em>.</p>
 <h3 id="the-rotational-hull-of-a-real-parameter">The Rotational Hull of a Real Parameter</h3>
 <p><strong>Theorem (the hull of a real parameter).</strong> Let $c \in \mathbb{R}$ and let $\nu \in S^2$. Then</p>
 <p>$$
-K_c = \operatorname{Ad}_{S^3}\bigl(K_c \cap \mathbb{C}_\nu\bigr) , \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c \cap \mathbb{C}_\nu\bigr) ,
+K_c = \operatorname{Ad}_{S^3}\bigl(K_c \cap \mathbb{C}_\nu\bigr), \qquad J_c = \operatorname{Ad}_{S^3}\bigl(J_c \cap \mathbb{C}_\nu\bigr),
 $$</p>
 <p>and the intersection $K_c \cap \mathbb{C}_\nu$ is the filled Julia set of the complex quadratic map $z \mapsto z^2+c$ under the isomorphism $\mathbb{C}_\nu \cong \mathbb{C}$ that sends $\nu$ to $i$. Thus <strong>for a real parameter the quaternion Julia set is the rotational hull of the ordinary complex Julia set</strong>.</p>
 <p><em>Proof.</em> By the corollary above, $K_c$ is invariant under every inner automorphism. Every quaternion $a+\vec q$ with $\vec q\ne0$ equals $\operatorname{Ad}_u(a+|\vec q|\nu)$ for some $u \in S^3$, since $SO(3)$ is transitive on the sphere of radius $|\vec q|$ in the vector subspace; a real quaternion is fixed, and it lies in $\mathbb{C}_\nu$. Hence $K_c \subseteq \operatorname{Ad}_{S^3}(K_c\cap\mathbb{C}_\nu)$, and the reverse inclusion is the invariance. The same argument applies to $J_c=\partial K_c$ because an automorphism is a homeomorphism. Finally, on $\mathbb{C}_\nu$ the map $a+b\nu \mapsto a+bi$ is an algebra isomorphism onto $\mathbb{C}$, and $f_c$ restricts to $z \mapsto z^2+c$; the orbit stays in the slice by the proposition, and the intersection is exactly the filled Julia set of that complex map. The Julia set is its boundary in each case.</p>
@@ -163,7 +163,7 @@ $$</p>
 <p><strong>(a) A real parameter, $c=-1$.</strong> The critical orbit is $0 \mapsto -1 \mapsto 0 \mapsto -1 \mapsto \cdots$, a two-cycle, so $c=-1$ lies in the connectedness locus and the critical orbit is bounded. The point $\tilde q = e_0+e_1$ has orbit $e_0+e_1 \mapsto -e_0+2e_1 \mapsto -4e_0-4e_1 \mapsto -e_0+32e_1 \mapsto \ldots$, so $e_0+e_1$ escapes and is not in the filled Julia set.</p>
 <p><strong>(b) A purely imaginary parameter, $c=e_1$.</strong> The critical orbit is</p>
 <p>$$
-0 \mapsto e_1 \mapsto -e_0+e_1 \mapsto -e_1 \mapsto -e_0+e_1 \mapsto \cdots ,
+0 \mapsto e_1 \mapsto -e_0+e_1 \mapsto -e_1 \mapsto -e_0+e_1 \mapsto \cdots,
 $$</p>
 <p>so it enters the two-cycle $\{-e_0+e_1,-e_1\}$ and $c=e_1$ lies in the connectedness locus. The plane $\mathbb{C}_{e_1}=\operatorname{span}\{e_0,e_1\}$ is invariant, and the critical orbit is the complex orbit of $z \mapsto z^2+i$.</p>
 <p><strong>(c) A parameter outside the locus, $c=e_0$.</strong> The critical orbit is $0 \mapsto e_0 \mapsto 2e_0 \mapsto 5e_0 \mapsto 26e_0 \mapsto \ldots$, which escapes: $c=1$ is not in the quaternion Mandelbrot set, and the escape begins at the second iterate.</p>
@@ -185,7 +185,7 @@ $$</p>
 <td>A quaternion, scalar part $q_0$, vector part $\vec q$</td>
 </tr>
 <tr>
-<td>$\tilde q^{\natural}$, $N(\tilde q)$, $\lvert\tilde q\rvert$</td>
+<td>$\tilde q^{\natural}$, $\langle\tilde q\rangle_{\natural}$, $\lvert\tilde q\rvert$</td>
 <td>Conjugate; norm $q_0^2+q_1^2+q_2^2+q_3^2$; modulus $\sqrt N$</td>
 </tr>
 <tr>
@@ -217,8 +217,8 @@ $$</p>
 <td>Unit quaternions; unit imaginary quaternions</td>
 </tr>
 <tr>
-<td>$\hat u_{\mathrm d}=\vec q/\lvert\vec q\rvert$</td>
-<td>The unit pure quaternion of the vector part; exact axis of the plane $\mathbb{C}_{\hat u_{\mathrm d}}$</td>
+<td>$\vec u_{\mathrm d}=\vec q/\lvert\vec q\rvert$</td>
+<td>The unit pure quaternion of the vector part; exact axis of the plane $\mathbb{C}_{\vec u_{\mathrm d}}$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$</td>

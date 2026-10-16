@@ -60,12 +60,12 @@
 $$</p>
 <p>for every finite family $x_1,\dots,x_n\in G$ and scalars $c_1,\dots,c_n\in\mathbb{C}$. A unitary representation is a continuous homomorphism $\pi : G\to\mathcal{U}(\mathcal{H})$ into the unitary operators of a Hilbert space $\mathcal{H}$; its <strong>matrix coefficients</strong> are the functions $x\mapsto\langle\pi(x)\xi,\eta\rangle$.</p>
 <h2 id="the-positive-definite-functions">The Positive Definite Functions</h2>
-<p><strong>Theorem (elementary properties).</strong> A continuous $\phi$ is positive definite if and only if the function $\tilde\phi(x) = \overline{\phi(x^{-1})}$ is, and then</p>
+<p><strong>Theorem (elementary properties).</strong> A continuous $\phi$ is positive definite if and only if the function $\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$ is, and then</p>
 <p>$$
 \phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0 ;
 $$</p>
 <p>if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.</p>
-<p><strong>Proof.</strong> The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\tilde\phi$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.</p>
+<p><strong>Proof.</strong> The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\phi^{\mathrm{refl}}$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses.</p>
 <p><strong>Proposition (the functional on the algebra).</strong> A bounded continuous $\phi$ is positive definite if and only if the functional</p>
 <p>$$
 \omega_\phi(f) = \int_G f(x)\,\phi(x)\,dx
@@ -76,7 +76,7 @@ $$</p>
 $$</p>
 <p>is positive semidefinite on $C_c(G)$.</p>
 <p><strong>Proof.</strong> The sesquilinear form on step functions $f = \sum c_i\delta_{x_i}$ reduces to the defining double sum, so positive definiteness is precisely its positive semidefiniteness on $C_c(G)$; the equivalence with the positivity of $\omega_\phi$ is the standard computation relating the two expressions by Fubini and the definition of $f^*\!*f$, and is in the references.</p>
-<p><strong>Corollary (the cone and its closure).</strong> The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\tilde\phi$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the <strong>states</strong> of the group.</p>
+<p><strong>Corollary (the cone and its closure).</strong> The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\phi^{\mathrm{refl}}$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the <strong>states</strong> of the group.</p>
 <p><strong>Proof.</strong> Convexity is the linearity of the defining sum in $\phi$; closure under pointwise limits is the closedness of the non-negative reals. Closure under products follows from the representation-theoretic description below via the tensor product, and the normalisation is the statement $\|\phi\|_\infty = \phi(e)$.</p>
 <h2 id="the-gns-construction-for-a-positive-definite-function">The GNS Construction for a Positive Definite Function</h2>
 <p><strong>Theorem (every positive definite function is a matrix coefficient).</strong> Let $\phi\gg0$ and let $N = \{f\in C_c(G) : \langle Sf,Sf\rangle_\phi = 0\}$. Then the quotient $\mathcal{H}_\phi = C_c(G)/N$ completes to a Hilbert space on which there is a unique unitary representation $\pi_\phi$ with</p>
@@ -125,7 +125,7 @@ $$</p>
 <td>The defining inequality</td>
 </tr>
 <tr>
-<td>$\tilde\phi(x) = \overline{\phi(x^{-1})}$</td>
+<td>$\phi^{\mathrm{refl}}(x) = \overline{\phi(x^{-1})}$</td>
 <td>The involuted function, positive definite with $\phi$</td>
 </tr>
 <tr>

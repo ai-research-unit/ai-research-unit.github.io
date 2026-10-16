@@ -76,7 +76,7 @@ $$</p>
 $$</p>
 <p>Because $\varepsilon^2 = 0$, the series truncates at the first order in the infinitesimal part. For $A = a + \varepsilon a'$,</p>
 <p>$$
-\exp(A) = e^a + e^a a' \varepsilon = e^a (1 + a' \varepsilon).
+\exp(A) = \exp(a) + \exp(a) a' \varepsilon = \exp(a) (1 + a' \varepsilon).
 $$</p>
 <p>So the dual exponential is the ordinary real exponential applied to the real part, multiplied by the factor $1 + \varepsilon a'$ in the infinitesimal part.</p>
 <h3 id="properties">Properties</h3>
@@ -86,17 +86,17 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> The first identity follows from the truncated series and the addition formula for the real exponential:</p>
 <p>$$
-\exp(a + \varepsilon a') \exp(b + \varepsilon b') = e^a (1 + \varepsilon a') \cdot e^b (1 + \varepsilon b') = e^{a+b} (1 + (a' + b')\varepsilon) = \exp((a + b) + \varepsilon(a' + b')).
+\exp(a + \varepsilon a') \exp(b + \varepsilon b') = \exp(a) (1 + \varepsilon a') \cdot \exp(b) (1 + \varepsilon b') = \exp(a+b) (1 + (a' + b')\varepsilon) = \exp((a + b) + \varepsilon(a' + b')).
 $$</p>
 <p>The second is immediate. The third follows from term-by-term differentiation of the series, or from the structure theorem applied to the real part.</p>
 <h3 id="the-dual-euler-formula">The Dual Euler Formula</h3>
 <p>The dual analogue of Euler's formula is</p>
 <p>$$
-e^{\varepsilon a'} = 1 + \varepsilon a'.
+\exp(\varepsilon a') = 1 + \varepsilon a'.
 $$</p>
 <p>This is the truncation of the exponential series at first order in $\varepsilon$, and it is the algebraic content of the infinitesimal translation: adding $\varepsilon a'$ to the exponent multiplies the exponential by $1 + \varepsilon a'$, which is an infinitesimal perturbation of the identity.</p>
 <h3 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h3>
-<p>The dual exponential is injective on the real part and affine in the infinitesimal part. Its kernel is empty, because $e^a \neq 0$ for all real $a$. So the exponential has no zeros, and it is invertible everywhere.</p>
+<p>The dual exponential is injective on the real part and affine in the infinitesimal part. Its kernel is empty, because $\exp(a) \neq 0$ for all real $a$. So the exponential has no zeros, and it is invertible everywhere.</p>
 <h2 id="the-dual-logarithm">The Dual Logarithm</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>dual logarithm</strong> is the inverse of the dual exponential. It is defined for $A = a + \varepsilon a'$ with $a > 0$ by</p>
@@ -144,7 +144,7 @@ $$</p>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>dual sine</strong> and <strong>cosine</strong> are defined by</p>
 <p>$$
-\sin(A) = \frac{e^{i A} - e^{-i A}}{2i}, \qquad \cos(A) = \frac{e^{i A} + e^{-i A}}{2},
+\sin(A) = \frac{\exp(i A) - \exp(-i A)}{2i}, \qquad \cos(A) = \frac{\exp(i A) + \exp(-i A)}{2},
 $$</p>
 <p>where $i$ is the ordinary complex imaginary unit and the exponential is the complex exponential. Since $A = a + \varepsilon a'$ is a dual number, the argument $iA$ is a complex number with a dual infinitesimal part, and the functions are defined by the ordinary complex trigonometric functions applied to the real part, with an infinitesimal correction.</p>
 <p>Explicitly, for $A = a + \varepsilon a'$,</p>
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="definition_4">Definition</h3>
 <p>The <strong>dual hyperbolic sine</strong> and <strong>cosine</strong> are defined by</p>
 <p>$$
-\sinh(A) = \frac{e^A - e^{-A}}{2}, \qquad \cosh(A) = \frac{e^A + e^{-A}}{2},
+\sinh(A) = \frac{\exp(A) - \exp(-A)}{2}, \qquad \cosh(A) = \frac{\exp(A) + \exp(-A)}{2},
 $$</p>
 <p>where the exponential is the dual exponential. For $A = a + \varepsilon a'$,</p>
 <p>$$
@@ -198,9 +198,9 @@ $$</p>
 <h3 id="definition_5">Definition</h3>
 <p>The <strong>dual gamma function</strong> is defined for $A$ with positive real part by</p>
 <p>$$
-\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt,
+\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt,
 $$</p>
-<p>where the integral is along the positive real axis, $t^{A-1}$ is the dual power, and $e^{-t}$ is the dual exponential. For $A = a + \varepsilon a'$ with $a > 0$,</p>
+<p>where the integral is along the positive real axis, $t^{A-1}$ is the dual power, and $\exp(-t)$ is the dual exponential. For $A = a + \varepsilon a'$ with $a > 0$,</p>
 <p>$$
 \Gamma(A) = \Gamma(a) + a' \Gamma'(a) \varepsilon = \Gamma(a) + a' \Gamma(a) \psi(a) \varepsilon,
 $$</p>
@@ -240,16 +240,16 @@ $$</p>
 <h3 id="definition_7">Definition</h3>
 <p>The <strong>dual error function</strong> is defined by</p>
 <p>$$
-\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt,
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A \exp(-t^2) \, dt,
 $$</p>
 <p>where the integral is along a path from $0$ to $A$ and the exponential is the dual exponential. For $A = a + \varepsilon a'$,</p>
 <p>$$
-\operatorname{erf}(A) = \operatorname{erf}(a) + \frac{2}{\sqrt{\pi}} e^{-a^2} a' \varepsilon.
+\operatorname{erf}(A) = \operatorname{erf}(a) + \frac{2}{\sqrt{\pi}} \exp(-a^2) a' \varepsilon.
 $$</p>
 <p>So the dual error function is the ordinary real error function applied to the real part, with an infinitesimal correction given by the Gaussian.</p>
 <h3 id="properties_6">Properties</h3>
 <p>$$
-\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2},
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} \exp(-A^2),
 $$</p>
 <p>$$
 \lim_{A \to \infty} \operatorname{erf}(A) = 1, \qquad \lim_{A \to -\infty} \operatorname{erf}(A) = -1,
@@ -257,11 +257,11 @@ $$</p>
 <p>where the limits are taken along the real axis.</p>
 <h3 id="the-complementary-error-function">The Complementary Error Function</h3>
 <p>$$
-\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty \exp(-t^2) \, dt.
 $$</p>
 <p>For $A = a + \varepsilon a'$,</p>
 <p>$$
-\operatorname{erfc}(A) = \operatorname{erfc}(a) - \frac{2}{\sqrt{\pi}} e^{-a^2} a' \varepsilon.
+\operatorname{erfc}(A) = \operatorname{erfc}(a) - \frac{2}{\sqrt{\pi}} \exp(-a^2) a' \varepsilon.
 $$</p>
 <h2 id="the-dual-airy-function">The Dual Airy Function</h2>
 <h3 id="definition_8">Definition</h3>
@@ -282,7 +282,7 @@ $$</p>
 <h3 id="asymptotics">Asymptotics</h3>
 <p>For $a \to +\infty$,</p>
 <p>$$
-\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} e^{-2 a^{3/2}/3}.
+\operatorname{Ai}(a) \sim \frac{1}{2 \sqrt{\pi} a^{1/4}} \exp(-2 a^{3/2}/3).
 $$</p>
 <p>For $a \to -\infty$,</p>
 <p>$$
@@ -337,9 +337,9 @@ $$</p>
 <h3 id="definition_11">Definition</h3>
 <p>The <strong>dual Lambert W function</strong> is the inverse of</p>
 <p>$$
-f(B) = B e^B,
+f(B) = B \exp(B),
 $$</p>
-<p>where the exponential is the dual exponential. For $A = a + \varepsilon a'$, the equation $W(A) e^{W(A)} = A$ has a unique solution of the form</p>
+<p>where the exponential is the dual exponential. For $A = a + \varepsilon a'$, the equation $W(A) \exp(W(A)) = A$ has a unique solution of the form</p>
 <p>$$
 W(A) = W(a) + a' \frac{W(a)}{a(1 + W(a))} \varepsilon,
 $$</p>
@@ -353,16 +353,16 @@ $$</p>
 <p>The dual Lambert W function has two real branches, corresponding to the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function. On the region where $a > -1/e$, the principal branch is defined, and it is dual differentiable.</p>
 <h2 id="the-structure-principle">The Structure Principle</h2>
 <p>The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.</p>
-<p><strong>Theorem (Structure Principle).</strong> Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $A = a + \varepsilon a'$ with $a \in I$,</p>
+<p><strong>Theorem (Structure Principle).</strong> Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F^{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $A = a + \varepsilon a'$ with $a \in I$,</p>
 <p>$$
-\tilde{F}(A) = F(a) + a' F'(a) \varepsilon.
+F^{\mathrm{ext}}(A) = F(a) + a' F'(a) \varepsilon.
 $$</p>
-<p><strong>Proof.</strong> The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(a) + (a' u'(a) + c(a))\varepsilon$. Evaluating at $a' = 0$ gives $u(a) = F(a)$, hence $u'(a) = F'(a)$. The coefficient of $a'$ in the infinitesimal part is therefore $F'(a)$, and the term $c(a)$ is the value of the infinitesimal part at $a' = 0$, which is zero because the extension reduces to the real function $F$ when $a' = 0$.</p>
+<p><strong>Proof.</strong> The extension $F^{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(a) + (a' u'(a) + c(a))\varepsilon$. Evaluating at $a' = 0$ gives $u(a) = F(a)$, hence $u'(a) = F'(a)$. The coefficient of $a'$ in the infinitesimal part is therefore $F'(a)$, and the term $c(a)$ is the value of the infinitesimal part at $a' = 0$, which is zero because the extension reduces to the real function $F$ when $a' = 0$.</p>
 <p>This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.</p>
 <h2 id="summary">Summary</h2>
 <p>The dual special functions are the named functions of dual numbers analysis. All of them are governed by one structural fact: a dual differentiable function is determined by its values on the real axis together with its derivative, so the infinitesimal part of each function below is fixed by the derivative of the corresponding real function.</p>
 <p>The exponential is defined by its series, which truncates at the first order in $\varepsilon$; the dual logarithm is its inverse and is the ordinary logarithm together with a term in the infinitesimal direction; the dual power function is defined by $A^B = \exp(B\log A)$; and the trigonometric and hyperbolic functions are built from the dual exponential as in the real case.</p>
-<p>Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $B \mapsto Be^B$.</p>
+<p>Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $B \mapsto B\exp(B)$.</p>
 <p>The section on the structure principle states what organises all of the definitions: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -386,7 +386,7 @@ $$</p>
 <td>General dual number, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$</td>
 </tr>
 <tr>
-<td>$e^A, \log A$</td>
+<td>$\exp(A), \log A$</td>
 <td>Dual exponential, logarithm</td>
 </tr>
 <tr>

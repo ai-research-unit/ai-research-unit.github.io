@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the General Plain Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions"><strong>Annihilators of the General Plain Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article reads the <strong>annihilators</strong> of the multiplication. For an element $T$ the annihilator is
+$$
+\operatorname{Ann}(T)=\{W:TW=0\},
+$$
+the set of elements the multiplication by $T$ kills. The result is a <strong>dichotomy</strong>: the annihilator of a <strong>unit</strong> is $\{0\}$, and the annihilator of a <strong>zero divisor</strong> is a whole idempotent line,
+$$
+\operatorname{Ann}(2A\Pi_{1})=\mathbb{C}\Pi_{2},\qquad \operatorname{Ann}(2A\Pi_{2})=\mathbb{C}\Pi_{1}\qquad(A\neq0),
+$$
+the <strong>other</strong> line, of real dimension two. The annihilator of $0$ is the whole algebra. Because the algebra is commutative, the left and the right annihilators coincide, and the annihilator of an element is a two-sided ideal; the two maximal ideals $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$ are the annihilators of each other.</p>
+<p>The article also reads the <strong>two-sided annihilator of the structure</strong>, the set of elements that annihilate the algebra, and records that it is $\{0\}$ because the algebra is unital. The two results are different: the annihilators of the elements are the two lines, and the annihilator of the algebra is trivial.</p>
+<p><strong>The results.</strong> The left and the right annihilators of an element coincide, since the multiplication is commutative, and they are an ideal. The annihilator of a unit is $\{0\}$; the annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the whole algebra is $\{0\}$. The map $T\mapsto\operatorname{Ann}(T)$ takes the units and $0$ to the two trivial ideals and the two lines to each other, so the set of annihilators of the elements is the set of the four ideals of the algebra.</p>
+<p><strong>Boundaries.</strong> The zero divisors, the two lines and the maximal ideals are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>, above this article in this category. The criterion of invertibility is <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>, above this article. The idempotents and the projections are <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>, below this article, and the Peirce decomposition into the ideals the idempotents carry is <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, below this article in this category. The annihilators as ideals in the biquaternion layer, with the one-sided annihilators of a non-commutative algebra, are <em>Annihilators of the Biquaternion Algebra</em>.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<h3 id="left-and-right-they-coincide">Left and Right, They Coincide</h3>
+<p><strong>The left and the right annihilators of an element are equal, because the multiplication is commutative.</strong></p>
+<p><strong>Definition.</strong> For $T\in\mathbb{B}_{\mathrm{r}}$,
+$$
+\operatorname{Ann}(T)=\{W:TW=0\}
+$$
+is the <strong>annihilator</strong> of $T$. Since the multiplication is commutative (<em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>), the left annihilator $\{W:WT=0\}$ and the right annihilator $\{W:TW=0\}$ are the same set, so the word needs no side.</p>
+<p><strong>Proposition.</strong> The annihilator of an element is a two-sided ideal of the algebra.</p>
+<p><em>Proof.</em> If $TW=0$ and $TV=0$ then $T(W+V)=0$; if $TW=0$ and $V$ is any element then $T(VW)=(TV)W=(VT)W=V(TW)=0$, using the associativity and the commutativity. Hence $\operatorname{Ann}(T)$ is closed under addition and under multiplication by an arbitrary element, that is an ideal.</p>
+<h3 id="the-annihilator-of-a-unit">The Annihilator of a Unit</h3>
+<p><strong>The annihilator of a unit is $\{0\}$.</strong></p>
+<p><strong>Theorem.</strong> If $\langle T\rangle_{\natural}\neq0$ then $\operatorname{Ann}(T)=\{0\}$.</p>
+<p><em>Proof.</em> If $TW=0$ then multiplying by $T^{-1}$ gives $W=T^{-1}(TW)=0$, and the inverse exists by <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>. So no nonzero element is annihilated by a unit.</p>
+<h3 id="the-annihilator-of-a-zero-divisor">The Annihilator of a Zero Divisor</h3>
+<p><strong>The annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two.</strong></p>
+<p><strong>Theorem (the annihilator of a line).</strong> For $A\in\mathbb{C}^{\times}$,
+$$
+\operatorname{Ann}(2A\Pi_{1})=\mathbb{C}\Pi_{2},\qquad \operatorname{Ann}(2A\Pi_{2})=\mathbb{C}\Pi_{1}.
+$$</p>
+<p><em>Proof.</em> Write $W=C+Dj$ and read it in the idempotent coordinates $W=(C+D)\Pi_{1}+(C-D)\Pi_{2}$. Then $(2A\Pi_{1})W=2A(C+D)\Pi_{1}$, because $\Pi_{1}^{2}=\Pi_{1}$ and $\Pi_{1}\Pi_{2}=0$ (<em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>), and this is zero iff $C+D=0$, since $A\neq0$ and a complex number has no zero divisors. The condition $C+D=0$ is $W=C-Cj=C(1-j)=2C\Pi_{2}$ with $C\in\mathbb{C}$, that is $W\in\mathbb{C}\Pi_{2}$. The same computation on the other line.</p>
+<p><strong>Corollary (the two lines annihilate each other).</strong> The two maximal ideals are the annihilators of each other,
+$$
+\operatorname{Ann}(\mathbb{C}\Pi_{1})=\mathbb{C}\Pi_{2},\qquad \operatorname{Ann}(\mathbb{C}\Pi_{2})=\mathbb{C}\Pi_{1},
+$$
+and each is a complex line of real dimension two.</p>
+<p><em>Proof.</em> The annihilator of a set is the intersection of the annihilators of its elements; every nonzero element of the line has the same annihilator, the other line, and the element $0$ of the line has the whole algebra, so the intersection is the other line.</p>
+<h3 id="the-annihilators-of-zero-and-of-the-subsets">The Annihilators of Zero and of the Subsets</h3>
+<p><strong>The annihilator of $0$ is the whole algebra, and the annihilator of the set of all zero divisors is $\{0\}$.</strong></p>
+<p><strong>Theorem.</strong> $\operatorname{Ann}(0)=\mathbb{B}_{\mathrm{r}}$, and $\operatorname{Ann}(\mathcal{N}\cup\{0\})=\{0\}$, where $\mathcal{N}$ is the null cone.</p>
+<p><em>Proof.</em> $0\cdot W=0$ for every $W$, so the annihilator of $0$ is the whole algebra. If $W$ annihilates every zero divisor, then in particular $W\Pi_{1}=0$ and $W\Pi_{2}=0$; expanding $W=C\Pi_{1}+D\Pi_{2}$ gives $C=D=0$, so $W=0$.</p>
+<h2 id="the-two-sided-annihilator-of-the-structure">The Two-Sided Annihilator of the Structure</h2>
+<p><strong>The two-sided annihilator of the algebra is $\{0\}$, because the algebra is unital.</strong></p>
+<p><strong>Definition.</strong> The <strong>two-sided annihilator of the structure</strong> is
+$$
+\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{W:TW=0\ \text{for all }T\in\mathbb{B}_{\mathrm{r}}\}.
+$$</p>
+<p><strong>Theorem (the structure's annihilator is trivial).</strong> $\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{0\}$.</p>
+<p><em>Proof.</em> Take $T=1$, the unit: $1\cdot W=W$, so $W$ in the annihilator satisfies $W=0$. Conversely $0$ is annihilated by everything. The triviality is exactly the existence of a two-sided unit (<em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>), and it is the reason the interesting annihilators of this article are the per-element ones and not the structure's.</p>
+<p><strong>Remark (the two readings of the words).</strong> The phrase <em>the two-sided annihilator of the structure</em> has been read here as the annihilator of the ring; its value is $\{0\}$. The phrase <em>the annihilator of the structure</em> can also be read as the annihilator of the set of zero divisors, and that value is also $\{0\}$; and it can be read as the set of common annihilators of the two maximal ideals, which is $\mathbb{C}\Pi_{1}\cap\mathbb{C}\Pi_{2}=\{0\}$ as well. All three readings agree, and the single nonzero fact of the section is that the annihilators of the elements are the two lines while the annihilators of the structures are trivial.</p>
+<h2 id="the-lattice-of-annihilators">The Lattice of Annihilators</h2>
+<p><strong>The annihilators of the elements are the four ideals of the algebra, and the correspondence is the one of the table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element $T$</th>
+<th>$\operatorname{Ann}(T)$</th>
+<th>real dimension of $\operatorname{Ann}(T)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit, $\langle T\rangle_{\natural}\neq0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$2A\Pi_{1}$, $A\neq0$</td>
+<td>$\mathbb{C}\Pi_{2}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$2A\Pi_{2}$, $A\neq0$</td>
+<td>$\mathbb{C}\Pi_{1}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the four ideals).</strong> The set $\{\operatorname{Ann}(T):T\in\mathbb{B}_{\mathrm{r}}\}$ is $\{0,\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2},\mathbb{B}_{\mathrm{r}}\}$, which is the set of all ideals of the algebra, and it is <strong>ordered by inclusion</strong> as the two chains $\{0\}\subset\mathbb{C}\Pi_{1}\subset\mathbb{B}_{\mathrm{r}}$ and $\{0\}\subset\mathbb{C}\Pi_{2}\subset\mathbb{B}_{\mathrm{r}}$, which share their two ends.</p>
+<p><em>Proof.</em> The table is read from the three theorems above. The ideals of the algebra are the four displayed (<em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>, §<em>The Maximal Ideals</em>). The two lines are incomparable and both contain $\{0\}$ and are contained in $\mathbb{B}_{\mathrm{r}}$.</p>
+<p><strong>Corollary (the annihilator of the annihilator).</strong> $\operatorname{Ann}(\operatorname{Ann}(T))=T$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}_{\mathrm{r}}$, that of $2A\Pi_{1}$ is $\mathbb{C}\Pi_{1}$, that of $2A\Pi_{2}$ is $\mathbb{C}\Pi_{2}$, and that of $0$ is $\{0\}$.</p>
+<p><em>Proof.</em> $\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{0\}$ and $\operatorname{Ann}(\{0\})=\mathbb{B}_{\mathrm{r}}$ by the definition; and $\operatorname{Ann}(\mathbb{C}\Pi_{2})=\mathbb{C}\Pi_{1}$ and $\operatorname{Ann}(\mathbb{C}\Pi_{1})=\mathbb{C}\Pi_{2}$ are the corollary above. Reading the table twice reproduces the two lines.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element is $\operatorname{Ann}(T)=\{W:TW=0\}$; the multiplication is commutative, so the left and the right annihilators coincide and the annihilator of an element is a two-sided ideal. The annihilator of a <strong>unit</strong> is $\{0\}$; the annihilator of a nonzero element of one <strong>idempotent line</strong> is the <strong>other</strong> line,
+$$
+\operatorname{Ann}(2A\Pi_{1})=\mathbb{C}\Pi_{2},\qquad \operatorname{Ann}(2A\Pi_{2})=\mathbb{C}\Pi_{1}\qquad(A\neq0),
+$$
+a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the set of all zero divisors is $\{0\}$. The two maximal ideals $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$ are the annihilators of each other.</p>
+<p>The <strong>two-sided annihilator of the structure</strong> is trivial,
+$$
+\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{W:TW=0\ \text{for all }T\}=\{0\},
+$$
+because the algebra is unital; and the three readings of the phrase — the annihilator of the ring, the annihilator of the set of zero divisors and the common annihilator of the maximal ideals — all give $\{0\}$. The set of annihilators of the elements is the set of the four ideals of the algebra, $\{0,\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2},\mathbb{B}_{\mathrm{r}}\}$, ordered by inclusion with the two lines incomparable; and the double annihilator returns the line, the algebra or the zero ideal according to the table.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Ann}(T)=\{W:TW=0\}$</td>
+<td>the annihilator of an element, the left and the right coinciding</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(2A\Pi_{1})=\mathbb{C}\Pi_{2}$</td>
+<td>the annihilator of a nonzero element of the first line</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(2A\Pi_{2})=\mathbb{C}\Pi_{1}$</td>
+<td>the annihilator of a nonzero element of the second line</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(0)=\mathbb{B}_{\mathrm{r}}$</td>
+<td>the annihilator of zero</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}(\mathbb{B}_{\mathrm{r}})=\{0\}$</td>
+<td>the two-sided annihilator of the structure</td>
+</tr>
+<tr>
+<td>$\{0,\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2},\mathbb{B}_{\mathrm{r}}\}$</td>
+<td>the four ideals, the values of the annihilator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), above this article in this category, for the two lines and the maximal ideals.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), above this article, for the criterion of invertibility and the group of units.</li>
+<li><em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article, for the idempotents and the projections.</li>
+<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article in this category, for the ideals the idempotents carry.</li>
+<li><em>Annihilators of the Biquaternion Algebra</em> (<code>articles_maths/annihilators-of-the-biquaternion-algebra.md</code>), the non-commutative counterpart, where the left and the right annihilators need not coincide.</li>
+<li><em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the definition of an ideal and of an annihilator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topology and Metric for Each of the Operations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topology-and-metric-for-each-of-the-operations"><strong>Topology and Metric for Each of the Operations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Each of the four general products of the reduced biquaternion algebra carries a scalar-part form, and each form gives a real quantity on the space, the <strong>modulus of the form at the difference of two elements</strong>. This article collects the four quantities and asks, for each, whether it is a metric. Only the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ gives a genuine metric, $d(T,W)=\sqrt{\langle T-W\rangle_{\natural*}}$; the other three give <strong>degenerate or indefinite</strong> quantities, which vanish on non-zero differences or violate the triangle inequality, and the failures are exactly the sets the algebra is known for: the zero divisors, the isotropic sets of the bilinear forms and the null set of the indefinite form. The four products, however, are all continuous and all induce the <strong>same</strong> topology, the Euclidean one: the products differ in their metric-like quantities, not in their topology. The multiplication is <strong>commutative</strong>, <strong>has zero divisors</strong> and is <strong>not a division algebra</strong>, and the three degenerate quantities are the metrical shadow of the zero divisors.</p>
+<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $T=A+Bj$ with $A=a+ia'$, $\langle\cdot\rangle=b+ib'$; the idempotent coordinates are $q_1=A+B$, $q_2=A-B$. The four products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*}$ are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, and the forms are <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>. The element glyph is $T$, without a tilde.</p>
+<p><strong>Boundaries.</strong> The topology and the Euclidean norm are <em>Topology in the Space of Reduced Biquaternions</em>; the metric properties of the Euclidean space and the unit group are <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em>; the zero divisors are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>; the analysis built on the metric is <em>Reduced Biquaternion Analysis</em>. The biquaternion counterpart is <em>Topology and Metric for Each of the Operations</em> of the biquaternion category.</p>
+<h2 id="the-four-candidate-metrical-quantities">The Four Candidate Metrical Quantities</h2>
+<p><strong>For each product, take the modulus of the form at the difference of two elements.</strong></p>
+<p><strong>Definition.</strong> For a product with scalar-part form $F$, define
+$$
+\delta_{F}(T,W)=\bigl\lvert F(T-W,\,T-W)\bigr\rvert^{1/2}=\bigl\lvert F(T-W)\bigr\rvert^{1/2},
+$$
+where $F(X)$ is the algebraic norm of the form. The four quantities are $\delta_{B}$, $\delta_{N}$, $\delta_{H}$ and $\delta_{K}$.</p>
+<p><strong>Theorem (the four quantities).</strong> Each $\delta_{F}$ is real, non-negative, symmetric, $\delta_{F}(T,T)=0$, and homogeneous in the sense $\delta_{F}(\lambda T,\lambda W)=\lvert\lambda\rvert\delta_{F}(T,W)$ for real $\lambda$; the four differ in whether they are positive definite and in whether they satisfy the triangle inequality.</p>
+<p><em>Proof.</em> The algebraic norms are $\langle\cdot\rangle=A^{2}+B^{2}$, $\langle\cdot\rangle_{\natural}=A^{2}-B^{2}$, $\langle\cdot\rangle_{*}=\lvert A\rvert^{2}-\lvert B\rvert^{2}$ and $\langle\cdot\rangle_{\natural*}=\lvert A\rvert^{2}+\lvert B\rvert^{2}$; their moduli are real and non-negative, vanish at $T=W$ because the form vanishes at the zero difference, are symmetric because the two bilinear forms are symmetric and the two sesquilinear forms are Hermitian, and are homogeneous of degree two in the difference, whence the square root is homogeneous of degree one.</p>
+<h2 id="the-euclidean-metric">The Euclidean Metric</h2>
+<p><strong>The quantity of $\langle\cdot\rangle_{\natural*}$ is the Euclidean metric.</strong></p>
+<p><strong>Theorem (the metric).</strong> $\delta_{K}(T,W)=\lVert T-W\rVert$ is a metric on $\mathbb{B}_{\mathrm{r}}$: positive definite, symmetric, and satisfying the triangle inequality; it is the metric of <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em>, complete and compatible with the Euclidean topology.</p>
+<p><em>Proof.</em> $\langle\cdot\rangle_{\natural*}$ is positive definite, so $\langle X\rangle_{\natural*}>0$ for $X\neq0$ and $\langle X\rangle_{\natural*}=0$ exactly for $X=0$, which gives the positive definiteness of $\delta_{K}$; symmetry and the triangle inequality are those of the Euclidean norm of the coordinate quadruple, by the second theorem of the next section.</p>
+<h2 id="the-degenerate-and-indefinite-quantities">The Degenerate and Indefinite Quantities</h2>
+<p><strong>The quantities of $\langle\cdot\rangle$, $\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}$ are not metrics, each failing in its own way.</strong></p>
+<p><strong>Theorem (the failures).</strong> $\delta_{B}$, $\delta_{H}$ and $\delta_{N}$ are not metrics: each vanishes at a pair of distinct elements, and each violates the triangle inequality.</p>
+<ul>
+<li>$\delta_{N}$ vanishes exactly when $T-W$ is a zero divisor or zero, that is on the set $\{N=0\}$, the union of the two idempotent lines;</li>
+<li>$\delta_{B}$ vanishes exactly when $T-W$ lies in the isotropic set $\{B=0\}$, a real two-dimensional cone in the space;</li>
+<li>$\delta_{H}$ vanishes exactly when $T-W$ lies in the null set $\{H=0\}$, an indefinite quadric cone.</li>
+</ul>
+<p><em>Proof.</em> The vanishing of $\delta_{F}(T,W)$ with $T\neq W$ is the vanishing of $F(T-W)$ at a non-zero element, which is precisely the isotropic set of the form $F$; the sets are those computed in <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>, and $\langle\cdot,\cdot\rangle_{\natural}$ vanishes exactly on the zero divisors of <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p><strong>Theorem (the failure of the triangle inequality).</strong> Each of the three quantities violates the triangle inequality, with a witness on its own null set.</p>
+<p><em>Proof.</em> Take $U=0$. For $\delta_{B}$: with $T=1+ij$ and $W=1-ij$ one has $\langle T\rangle=A^{2}+B^{2}=1+i^{2}=0$ and $\langle W\rangle=0$, while $T-W=2ij$ has $\langle 2ij\rangle=0+(2i)^{2}=-4$, so $\delta_{B}(T,W)=2$ while $\delta_{B}(T,0)+\delta_{B}(0,W)=0+0=0$, and the triangle inequality fails. For $\delta_{H}$: with $T=1+j$ and $W=1-j$ one has $\langle T\rangle_{*}=1-1=0$ and $\langle W\rangle_{*}=0$, while $T-W=2j$ has $\langle 2j\rangle_{*}=0-4=-4$, so $\delta_{H}(T,W)=2>0+0$. For $\delta_{N}$: with $T=1+j$ and $W=1-j$ one has $q_1=2,q_2=0$ for $T$ and $q_1=0,q_2=2$ for $W$, so $\langle T\rangle_{\natural}=\langle W\rangle_{\natural}=0$, while $T-W=2j$ has $\langle 2j\rangle_{\natural}=0-(2)^{2}=-4$, so $\delta_{N}(T,W)=2>0+0$.</p>
+<p><strong>Corollary (the failure is exactly the zero divisors and the isotropic sets).</strong> The three quantities fail as metrics precisely on the sets where their forms vanish, and those sets are non-trivial: the zero-divisor set for $\langle\cdot,\cdot\rangle_{\natural}$, the isotropic cone for $\langle\cdot,\cdot\rangle$ and the null quadric for $\langle\cdot,\cdot\rangle_{*}$. The Euclidean quantity $\langle\cdot,\cdot\rangle_{\natural*}$ has no such set, its form being positive definite, and it is the only one of the four that is a metric.</p>
+<p><em>Proof.</em> A non-negative symmetric homogeneous function vanishing at distinct points or failing the triangle inequality is not a metric; the failures are exhibited on the null sets, and $\langle\cdot\rangle_{\natural*}$ has no null set other than the origin.</p>
+<h2 id="the-isometries-of-each-quantity">The Isometries of Each Quantity</h2>
+<p><strong>The three conjugations preserve all four quantities.</strong></p>
+<p><strong>Theorem.</strong> The bar, the natural sign and the star preserve each of the four algebraic norms in modulus,
+$$
+\lvert F(\bar T)\rvert=\lvert F(T^{\natural})\rvert=\lvert F(T^{*})\rvert=\lvert F(T)\rvert
+$$
+for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{r}}$ for each of the four quantities, and the three form a Klein four-group of isometries.</p>
+<p><em>Proof.</em> The natural sign negates the second complex coordinate, which leaves $A^{2}+B^{2}$, $A^{2}-B^{2}$, $\lvert A\rvert^{2}-\lvert B\rvert^{2}$ and $\lvert A\rvert^{2}+\lvert B\rvert^{2}$ unchanged; the bar conjugates both coordinates, which conjugates the complex-valued $\langle T\rangle$ and $\langle T\rangle_{\natural}$ and leaves the real-valued $\langle T\rangle_{*}$ and $\langle T\rangle_{\natural*}$ unchanged; the star is the composite, and the modulus is invariant under conjugation. The group is that of <em>The Two Involutions and the Group of Involutions</em>.</p>
+<h2 id="the-level-sets-of-each-product">The Level Sets of Each Product</h2>
+<p><strong>Each product has a unit set, the level set of its norm at the central value.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>the level set</th>
+<th>shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>$\langle T\rangle=1$, that is $a^{2}-a'^{2}+b^{2}-b'^{2}+2i(aa'+bb')=1$</td>
+<td>a complex quadric of real dimension two</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$</td>
+<td>$\langle T\rangle_{\natural}=1$, that is $q_1q_2=1$</td>
+<td>a real hyperboloid, the unit set of the invertibility criterion</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{*}$</td>
+<td>$\langle T\rangle_{*}=1$, that is $a^{2}+a'^{2}-b^{2}-b'^{2}=1$</td>
+<td>a one-sheeted hyperboloid of signature $(2,2)$</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural*}$</td>
+<td>$\langle T\rangle_{\natural*}=1$, that is $a^{2}+a'^{2}+b^{2}+b'^{2}=1$</td>
+<td>the Euclidean sphere $S^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the unit sets).</strong> The level sets are the unit sets of the four products relative to their norms, by the unitary convention; the level set of $\langle\cdot\rangle_{\natural*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\natural}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.</p>
+<p><em>Proof.</em> Each level set is the norm-one set of its form, as <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>, records; the shapes are those of <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>, and the compactness of the sphere is the positive definiteness of $\langle\cdot\rangle_{\natural*}$.</p>
+<h2 id="the-four-topologies">The Four Topologies</h2>
+<p><strong>The four products induce one and the same topology, the Euclidean one, and differ only in the metrical quantity.</strong></p>
+<p><strong>Theorem.</strong> For each of the four products the operation $W\mapsto X\circ W$ by a unit $X$ is a homeomorphism, and the topology attached to the product is the Euclidean topology; hence the four products share the topology of <em>Topology in the Space of Reduced Biquaternions</em>.</p>
+<p><em>Proof.</em> The topology of a finite-dimensional real vector space is unique, and each product is continuous for it; a continuous bijection with continuous inverse is a homeomorphism, the inverse being the multiplication by $X^{-1}$. The metrical quantities differ, as the table records, but the open sets do not.</p>
+<p><strong>Corollary (the topology does not see the product).</strong> A topological property of the space — compactness, connectedness, the openness of the unit group, the closedness of the zero-divisor set — is the same for all four products; only the metric-like quantity, and with it the notion of length and of angle, is attached to the product. The four products share the topology and the four conjugations, and they are separated by their forms and their metrics.</p>
+<p><em>Proof.</em> The listed properties depend only on the topology, which is common; the metric-like quantities are attached each to its form, and they differ by the failures of §<em>The Degenerate and Indefinite Quantities</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>Each of the four general products of the reduced biquaternion algebra carries a metrical quantity $\delta_{F}(T,W)=\lvert F(T-W)\rvert^{1/2}$, and the table of what each is worth is the content of the article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>form</th>
+<th>quantity</th>
+<th>metric?</th>
+<th>unit set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$TW$</td>
+<td>$\langle\cdot,\cdot\rangle=A^{2}+B^{2}$</td>
+<td>$\lvert \langle T-W\rangle\rvert^{1/2}$</td>
+<td>no, degenerate</td>
+<td>complex quadric $\langle\cdot\rangle=1$</td>
+</tr>
+<tr>
+<td>$T^{\natural}W$</td>
+<td>$\langle\cdot\rangle_{\natural}=A^{2}-B^{2}$</td>
+<td>$\lvert \langle T-W\rangle_{\natural}\rvert^{1/2}$</td>
+<td>no, degenerate</td>
+<td>hyperboloid $q_1q_2=1$</td>
+</tr>
+<tr>
+<td>$TW^{*}$</td>
+<td>$\langle\cdot\rangle_{*}=\lvert A\rvert^{2}-\lvert B\rvert^{2}$</td>
+<td>$\lvert \langle T-W\rangle_{*}\rvert^{1/2}$</td>
+<td>no, indefinite</td>
+<td>hyperboloid $\langle\cdot\rangle_{*}=1$</td>
+</tr>
+<tr>
+<td>$T^{\natural}W^{*}$</td>
+<td>$\langle\cdot\rangle_{\natural*}=\lvert A\rvert^{2}+\lvert B\rvert^{2}$</td>
+<td>$\sqrt{\langle T-W\rangle_{\natural*}}$</td>
+<td><strong>yes</strong></td>
+<td>sphere $S^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Only $\langle\cdot\rangle_{\natural*}$ gives a metric, the Euclidean one, positive definite and complete; the other three vanish on non-zero differences or fail the triangle inequality, on the zero-divisor set, the isotropic cone and the null quadric respectively. The three conjugations preserve all four quantities in modulus, forming a Klein group of isometries, and the four products induce the same Euclidean topology: they are separated by their forms and their metric-like quantities, not by their topology. The multiplication is <strong>commutative</strong>, <strong>has zero divisors</strong> and is <strong>not a division algebra</strong>, and the degenerate quantities are the metrical shadow of the zero divisors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta_{F}(T,W)=\lvert F(T-W)\rvert^{1/2}$</td>
+<td>the metrical quantity of the form $F$</td>
+</tr>
+<tr>
+<td>$d(T,W)=\sqrt{\langle T-W\rangle_{\natural*}}$</td>
+<td>the Euclidean metric, the only genuine one</td>
+</tr>
+<tr>
+<td>$\{B=0\}$</td>
+<td>the isotropic set of the plain bilinear form</td>
+</tr>
+<tr>
+<td>$\{H=0\}$</td>
+<td>the null quadric of the indefinite form</td>
+</tr>
+<tr>
+<td>$\{N=0\}$</td>
+<td>the zero-divisor set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Topology in the Space of Reduced Biquaternions</em> (<code>articles_maths/topology-in-the-space-of-reduced-biquaternions.md</code>), for the norm and the topology.</li>
+<li><em>The Euclidean Topology of the Reduced Biquaternion Algebra</em> (<code>articles_maths/the-euclidean-topology-of-the-reduced-biquaternion-algebra.md</code>), for the Euclidean metric and the unit group.</li>
+<li><em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the four forms and their isotropic sets.</li>
+<li><em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the zero-divisor set.</li>
+<li><em>Reduced Biquaternion Analysis</em> (<code>articles_maths/reduced-biquaternion-analysis.md</code>), for the analysis built on the Euclidean metric.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

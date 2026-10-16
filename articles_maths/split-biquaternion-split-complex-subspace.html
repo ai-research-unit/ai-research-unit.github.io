@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries four linear involutions, and each of them splits $\mathbb{H}_{\mathbb{D}}$ into a fixed space and an anti-fixed space. Four of the resulting spaces — the split complex subspace, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace — are the distinguished real subspaces of the algebra and are the subject of the four single-subspace articles. This article treats the smallest of them, the <strong>split complex subspace</strong> $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, on its own: its definition, its basis, its algebra structure, the restriction of the split-biquaternion norm to it, its idempotents and zero divisors, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are <em>Split-Biquaternion Quaternion Subspace</em>, <em>Split-Biquaternion Hermitian Subspace</em> and <em>Split-Biquaternion Anti-Hermitian Subspace</em>; their relations with one another are collected in <em>Split-Biquaternion Relations Between Subspaces</em>, and the involutions themselves in <em>Split-Biquaternion Involution Lattice</em>.</p>
 <p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{D}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.</p>
-<p>Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.</p>
+<p>Throughout, elements are written $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>split complex subspace</strong> is the fixed space of quaternion conjugation,</p>
 <p>$$
@@ -121,19 +121,19 @@ $$</p>
 <h2 id="the-split-biquaternion-norm">The Split-Biquaternion Norm</h2>
 <p><strong>Proposition.</strong> On the split complex subspace the split-biquaternion norm is the square of the coefficient,</p>
 <p>$$
-N(\tilde{Q}) = Q_0^2, \qquad \tilde{Q} = Q_0 e_0.
+\langle\tilde{Q}\rangle_{\natural} = Q_0^2, \qquad \tilde{Q} = Q_0 e_0.
 $$</p>
-<p><strong>Proof.</strong> $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_0^2 e_0$, read as the split complex scalar $Q_0^2$.</p>
-<p>Two features are worth isolating. First, $N$ takes <strong>split complex</strong> values on the subspace: writing $Q_0 = q_0 + j q'_0$, one has $Q_0^2 = (q_0^2 + q'^2_0) + 2 j q_0 q'_0$, real on the lines $q'_0 = 0$ and $q_0 = 0$ separately but not in general. Second, the real restriction in the basis $e_0, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_0 q'_0$ on the split-imaginary part, so the associated quadratic form is <strong>not</strong> definite: this is the form $N$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_0 = a \tilde\Pi_{1,2}$.</p>
+<p><strong>Proof.</strong> $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_0^2 e_0$, read as the split complex scalar $Q_0^2$.</p>
+<p>Two features are worth isolating. First, $\langle\cdot\rangle_{\natural}$ takes <strong>split complex</strong> values on the subspace: writing $Q_0 = q_0 + j q'_0$, one has $Q_0^2 = (q_0^2 + q'^2_0) + 2 j q_0 q'_0$, real on the lines $q'_0 = 0$ and $q_0 = 0$ separately but not in general. Second, the real restriction in the basis $e_0, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_0 q'_0$ on the split-imaginary part, so the associated quadratic form is <strong>not</strong> definite: this is the form $\langle\cdot\rangle_{\natural}$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_0 = a \tilde\Pi_{1,2}$.</p>
 <h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q} = Q_0 e_0$, the following are equivalent:</p>
 <ol>
 <li>$\tilde{Q}$ is a unit of $\mathbb{H}_{\mathbb{D}}$;</li>
-<li>$N(\tilde{Q}) = Q_0^2$ is a unit of $\mathbb{D}$;</li>
+<li>$\langle\tilde{Q}\rangle_{\natural} = Q_0^2$ is a unit of $\mathbb{D}$;</li>
 <li>$Q_0$ is a unit of $\mathbb{D}$, that is $Q_0 = q_0 + j q'_0$ with $q_0^2 \neq q'^2_0$.</li>
 </ol>
 <p>The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{\bar{Q_0}}{Q_0 \bar{Q_0}} e_0 = \dfrac{q_0 - j q'_0}{q_0^2 - q'^2_0} e_0$.</p>
-<p><strong>Proof.</strong> $N(Q_0 e_0) = Q_0^2$ is a unit of $\mathbb{D}$ exactly when $Q_0$ is, since $\mathbb{D}$ is commutative; a split complex number is a unit precisely when its real form norm $q_0^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{D}$.</p>
+<p><strong>Proof.</strong> $\langle Q_0 e_0\rangle_{\natural} = Q_0^2$ is a unit of $\mathbb{D}$ exactly when $Q_0$ is, since $\mathbb{D}$ is commutative; a split complex number is a unit precisely when its real form norm $q_0^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{D}$.</p>
 <p><strong>Corollary.</strong> The zero divisors of the split complex subspace are exactly the nonzero elements of the two <strong>light lines</strong></p>
 <p>$$
 \mathbb{R} \tilde\Pi_1 \cup \mathbb{R} \tilde\Pi_2, \qquad \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \quad \tilde\Pi_2 = \tfrac{1}{2}(1 - j),
@@ -227,17 +227,17 @@ $$</p>
 $$</p>
 <p>The image of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The split-biquaternion norm has the matching description</p>
 <p>$$
-N(Q_0 e_0) = (Q_0^+)^2 \tilde\Pi_1 + (Q_0^-)^2 \tilde\Pi_2,
+\langle Q_0 e_0\rangle_{\natural} = (Q_0^+)^2 \tilde\Pi_1 + (Q_0^-)^2 \tilde\Pi_2,
 $$</p>
 <p>the pair of squares of the two real scalars. The two light lines are the loci $Q_0^- = 0$ and $Q_0^+ = 0$, so the split-biquaternion norm degenerates on the coordinate axes of the pair, exactly as the two-dimensional split complex plane requires.</p>
 <h2 id="the-analysis-on-the-split-complex-subspace">The Analysis on the Split Complex Subspace</h2>
-<p>The centre is a copy of the split complex algebra $\mathbb{D}$, so the function theory it carries is the one-variable split complex analysis of <em>Split Complex Analysis</em>. A differentiable function of the centre variable $A = q_0 + jq'_0$, written $f = u + jv$, satisfies the Cauchy–Riemann pair</p>
+<p>The centre is a copy of the split complex algebra $\mathbb{D}$, so the function theory it carries is the one-variable split complex analysis of <em>Split-Complex Analysis</em>. A differentiable function of the centre variable $A = q_0 + jq'_0$, written $f = u + jv$, satisfies the Cauchy–Riemann pair</p>
 <p>$$
 \partial_{q_0}u = \partial_{q'_0}v, \qquad \partial_{q'_0}u = \partial_{q_0}v,
 $$</p>
 <p>and the twice differentiable functions that are harmonic in the split complex sense solve the wave equation $\partial_{q_0}^2 f - \partial_{q'_0}^2 f = 0$ rather than the Laplace equation. Embedded in $\mathbb{H}_{\mathbb{D}}$, the centre inherits the restriction of the ambient Cauchy–Riemann operator of <em>Split-Biquaternion Analysis</em>, and on the centre that operator is the split complex Cauchy–Riemann operator above. The absence of an elliptic harmonic theory on the centre is the analytic expression of the indefiniteness of its split-biquaternion norm: the restricted form is $q_0^2 - q'^2_0$, of signature $(1,1)$, and its isotropic directions are the two null lines of the zero divisors.</p>
 <h2 id="the-geometry-of-the-split-complex-subspace">The Geometry of the Split Complex Subspace</h2>
-<p>As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_0^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $A\mapsto e^{\theta j}A$ of $\mathbb{D}$, the identity component of the group of units of $\mathbb{D}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the positive definite form $q_0^2 + q'^2_0$ of signature $(2,0)$, so the centre is a definite slice of an indefinite ambient algebra.</p>
+<p>As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_0^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $A\mapsto \exp(\theta j)A$ of $\mathbb{D}$, the identity component of the group of units of $\mathbb{D}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the positive definite form $q_0^2 + q'^2_0$ of signature $(2,0)$, so the centre is a definite slice of an indefinite ambient algebra.</p>
 <h2 id="summary">Summary</h2>
 <p>The split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_0 e_0$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_0, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is <strong>not</strong> a field: the split-biquaternion norm restricts to $N = Q_0^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The units are the elements with $Q_0$ a unit of $\mathbb{D}$, that is $Q_0 = q_0 + j q'_0$ with $q_0^2 \neq q'^2_0$, and the inverse is $Q_0^{-1} e_0 = (q_0 - j q'_0)/(q_0^2 - q'^2_0)\, e_0$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -286,7 +286,7 @@ $$</p>
 <td>The four conjugations</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>Split-Biquaternion norm, restricting to $Q_0^2$</td>
 </tr>
 <tr>

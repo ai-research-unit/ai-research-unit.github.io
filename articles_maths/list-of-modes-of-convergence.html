@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="list-of-modes-of-convergence"><strong>List of Modes of Convergence</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article lists the modes of convergence the corpus uses. A mode of convergence is a prescription of what it means for a sequence to approach a limit — at every point, uniformly, off a null set, in a mean, in duality — and a row below names one mode, records the setting in which it is defined and its relation of implication to the modes above and below it, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The modes are grouped by the layer that introduces them: convergence in a topological and a uniform space, the pointwise and uniform modes of function theory, the measure-theoretic modes of almost everywhere and in measure, convergence in the $L^p$ norms, and the weak and weak-$\ast$ modes of functional analysis. Beside them stand the non-examples that separate them — a pointwise convergence that is not uniform, an in-measure convergence with no pointwise limit, a weakly convergent sequence that does not converge in norm — recorded as rows whose property cells name the failure, so that the article records examples and non-examples side by side.</p>
+<p>This article lists the modes of convergence the corpus uses. A mode of convergence is a prescription of what it means for a sequence to approach a limit — at every point, uniformly, off a null set, in a mean, in duality — and a row below names one mode, records the setting in which it is defined and its relation of implication to the modes above and below it, and points to the article that introduces it. Every row points to an article; this article introduces nothing and proves nothing. The modes are grouped by the layer that introduces them: convergence in a topological and a uniform space, the pointwise and uniform modes of function theory, the measure-theoretic modes of almost everywhere and in measure, convergence in the $L^{n}$ norms, and the weak and weak-$\ast$ modes of functional analysis. Beside them stand the non-examples that separate them — a pointwise convergence that is not uniform, an in-measure convergence with no pointwise limit, a weakly convergent sequence that does not converge in norm — recorded as rows whose property cells name the failure, so that the article records examples and non-examples side by side.</p>
 <h2 id="convergence-in-a-topological-and-a-uniform-space">Convergence in a Topological and a Uniform Space</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -174,7 +174,7 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="convergence-in-math13">Convergence in $L^p$</h2>
+<h2 id="convergence-in-math13">Convergence in $L^{n}$</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -185,7 +185,7 @@
 </thead>
 <tbody>
 <tr>
-<td>convergence in $L^p$, $1 \leq p < \infty$</td>
+<td>convergence in $L^{n}$, $1 \leq p < \infty$</td>
 <td>$\lVert f_n - f\rVert_p \to 0$; implies convergence in measure, by Chebyshev</td>
 <td><em>Modes of Convergence</em>; <em>Measure Theory and Integration</em></td>
 </tr>
@@ -210,8 +210,8 @@
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 <tr>
-<td>inclusion of $L^q$ in $L^p$, $q \geq p$</td>
-<td>a finite measure space; then $L^q \subseteq L^p$ and $L^q$ convergence implies $L^p$ convergence</td>
+<td>inclusion of $L^{m}$ in $L^{n}$, $q \geq p$</td>
+<td>a finite measure space; then $L^{m} \subseteq L^{n}$ and $L^{m}$ convergence implies $L^{n}$ convergence</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 </tbody>
@@ -290,7 +290,7 @@
 </tr>
 <tr>
 <td>the dyadic sliding intervals on $[0,1]$</td>
-<td>convergence in measure (and in every $L^p$, $p<\infty$) does not imply convergence at any point</td>
+<td>convergence in measure (and in every $L^{n}$, $p<\infty$) does not imply convergence at any point</td>
 <td><em>Modes of Convergence</em></td>
 </tr>
 <tr>
@@ -321,7 +321,7 @@
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>This list gathers the modes of convergence of the corpus: convergence in a topological and a uniform space, pointwise, uniform and locally uniform convergence, convergence almost everywhere, almost uniformly, in measure and in probability, convergence in the $L^p$ norms with uniform integrability, and weak and weak-$\ast$ convergence together with the weak convergence of measures. The implication structure is that uniform convergence implies locally uniform, which implies pointwise; that a.e. convergence and convergence in measure are linked by Egorov and Riesz; that $L^p$ convergence implies convergence in measure but not a.e.; and that norm convergence implies weak, which implies weak-$\ast$ on a dual. The inseparable cases are recorded in the closing table.</p>
+<p>This list gathers the modes of convergence of the corpus: convergence in a topological and a uniform space, pointwise, uniform and locally uniform convergence, convergence almost everywhere, almost uniformly, in measure and in probability, convergence in the $L^{n}$ norms with uniform integrability, and weak and weak-$\ast$ convergence together with the weak convergence of measures. The implication structure is that uniform convergence implies locally uniform, which implies pointwise; that a.e. convergence and convergence in measure are linked by Egorov and Riesz; that $L^{n}$ convergence implies convergence in measure but not a.e.; and that norm convergence implies weak, which implies weak-$\ast$ on a dual. The inseparable cases are recorded in the closing table.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <p>The objects are named rather than denoted; the symbols used in the tables are collected here.</p>
 <div class="table-scroll"><table>
@@ -349,8 +349,8 @@
 <td>convergence in measure</td>
 </tr>
 <tr>
-<td>$f_n \xrightarrow{L^p} f$</td>
-<td>convergence in the $L^p$ norm</td>
+<td>$f_n \xrightarrow{L^{n} f$</td>
+<td>convergence in the $L^{n}$ norm</td>
 </tr>
 <tr>
 <td>$x_n \rightharpoonup x$, $f_n \overset{\ast}{\rightharpoonup} f$</td>

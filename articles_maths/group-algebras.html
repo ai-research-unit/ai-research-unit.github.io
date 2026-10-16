@@ -115,7 +115,7 @@ $$</p>
 <p><strong>Theorem (Maschke, standard).</strong> If $G$ is finite and $\operatorname{char} k$ does not divide $|G|$, then $k[G]$ is semisimple. If $\operatorname{char} k$ divides $|G|$, then $k[G]$ is not semisimple and its radical contains the element $\sum_{g\in G} g$, which satisfies $g\bigl(\sum_h h\bigr) = \sum_h h$ for all $g$ and squares to $|G|\sum_h h = 0$.</p>
 <p><em>Proof (first part, standard).</em> Given a submodule $W \subseteq V$ of a $k[G]$-module, choose any $k$-linear projection $p : V \to W$ and average it over $G$:</p>
 <p>$$
-\tilde p(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
+p^{\mathrm{avg}}(v) = \frac{1}{|G|}\sum_{g\in G} g\,p(g^{-1}v),
 $$</p>
 <p>which is $k[G]$-linear because the averaging is invariant under $G$, and which is still a projection onto $W$; hence every submodule is a direct summand.</p>
 <p><strong>Example (characteristic two).</strong> Let $k = \mathbb{F}_2$ and $G = \mathbb{Z}/2 = \{1_G, g\}$. Then $\operatorname{char} k = 2$ divides $|G| = 2$, and</p>

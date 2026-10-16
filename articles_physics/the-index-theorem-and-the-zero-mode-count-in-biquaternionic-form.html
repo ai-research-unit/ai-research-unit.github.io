@@ -57,10 +57,10 @@
 <ul>
 <li><strong>The operator is the framework's.</strong> The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and <em>The Dirac Equation in Biquaternionic Form</em> and <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> fix it. The index is a property of that operator.</li>
 <li><strong>The counting is by the topological density, which the framework already has.</strong> The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\vec E\cdot\vec B$. This was established in <em>Instantons and Solitons in Biquaternionic Form</em> and is not repeated here.</li>
-<li><strong>The trace is the matrix trace, and the framework's biquaternion norm does not supply it.</strong> The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a <em>single</em> algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.</li>
+<li><strong>The trace is the matrix trace, and the framework's biquaternion norm does not supply it.</strong> The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a <em>single</em> algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.</li>
 </ul>
 <p>The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.</p>
-<p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ with generators $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Q=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in <em>Instantons and Solitons in Biquaternionic Form</em>.</p>
+<p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ with generators $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Ϙ=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in <em>Instantons and Solitons in Biquaternionic Form</em>.</p>
 <ul>
 <li>Companion article <em>The Dirac Equation in Biquaternionic Form</em>, for the operator whose index is taken.</li>
 <li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the module and its chirality.</li>
@@ -89,15 +89,15 @@ $$</p>
 <h2 id="the-atiyahsinger-theorem">The Atiyah–Singer Theorem</h2>
 <p>For a closed even-dimensional spin manifold $M$ and a twisted Dirac operator, the index is the integral of a characteristic class,</p>
 <p>$$
-\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \hat A(TM) ,
+\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \mathrm{A}(TM) ,
 $$</p>
-<p>where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\hat A(TM)$ is the $\hat A$-genus of the tangent bundle. This is the Atiyah–Singer index theorem; it is standard and is transcribed here, not derived. Its power in the gauge-theoretic setting is that the right-hand side is purely topological: it depends on the bundle data and not on the shape of the connection.</p>
-<p>On the flat four-dimensional slice that the framework uses, the tangent bundle is trivial and its $\hat A$-genus is $1$ to all orders that contribute: $\hat A=1-\frac{p_1}{24}+\cdots$ requires the Pontryagin class of a curved manifold, which is absent. The index is therefore the degree-four part of the Chern character alone. With the trace in the representation $R$ and the standard normalisation, the degree-four part is proportional to $\mathrm{Tr}_R(F\wedge F)$, so that</p>
+<p>where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\mathrm{A}(TM)$ is the A-roof genus of the tangent bundle. This is the Atiyah–Singer index theorem; it is standard and is transcribed here, not derived. Its power in the gauge-theoretic setting is that the right-hand side is purely topological: it depends on the bundle data and not on the shape of the connection.</p>
+<p>On the flat four-dimensional slice that the framework uses, the tangent bundle is trivial and its A-roof genus is $1$ to all orders that contribute: $\mathrm{A}=1-\frac{p_1}{24}+\cdots$ requires the Pontryagin class of a curved manifold, which is absent. The index is therefore the degree-four part of the Chern character alone. With the trace in the representation $R$ and the standard normalisation, the degree-four part is proportional to $\mathrm{Tr}_R(F\wedge F)$, so that</p>
 <p>$$
 \mathrm{ind}\,\slashed{D}_R \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}_R\bigl(F\wedge F\bigr)
-\;=\; 2\,T(R)\,Q ,
+\;=\; 2\,T(R)\,Ϙ ,
 $$</p>
-<p>where $T(R)$ is the Dynkin index of the representation, normalised so that the defining representation of $SU(2)$ has $T=\tfrac12$, and $Q$ is the integer topological charge of the companion article. The two statements to read from this formula are that the index is proportional to the topological charge, and that its constant of proportionality is a representation-theoretic number.</p>
+<p>where $T(R)$ is the Dynkin index of the representation, normalised so that the defining representation of $SU(2)$ has $T=\tfrac12$, and $Ϙ$ is the integer topological charge of the companion article. The two statements to read from this formula are that the index is proportional to the topological charge, and that its constant of proportionality is a representation-theoretic number.</p>
 <p><strong>The Dynkin index.</strong> For $SU(2)$ the two representations that occur inside the framework are the defining module of dimension two and the adjoint representation of dimension three, and their indices are fixed by the Casimir relation $T(R)=\dim R\,C_2(R)/\dim G$ with $\dim G=3$:</p>
 <p>$$
 T(\text{defining})=\frac{2\cdot\tfrac34}{3}=\frac12 ,
@@ -106,11 +106,11 @@ T(\text{adjoint})=\frac{3\cdot 2}{3}=2 .
 $$</p>
 <p>Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{abc}T_c$ that define $\mathrm{SU}(2)\subset\mathbb M_-$ in <em>Non-Abelian Gauge Fields in Biquaternionic Form</em>, so the group theory here is the framework's group theory. The index formula then reads</p>
 <p>$$
-\mathrm{ind}\,\slashed{D}_{\text{defining}}=Q ,
+\mathrm{ind}\,\slashed{D}_{\text{defining}}=Ϙ ,
 \qquad
-\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4Q .
+\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4Ϙ .
 $$</p>
-<p>For a self-dual configuration of charge $Q=k>0$, the index is exhausted by positive-chirality modes, $n_+=k$ and $n_-=0$ in the defining representation, and $n_+=4k$ and $n_-=0$ in the adjoint. A single BPST instanton therefore supports one fermion zero mode in the doublet and four in the triplet.</p>
+<p>For a self-dual configuration of charge $Ϙ=k>0$, the index is exhausted by positive-chirality modes, $n_+=k$ and $n_-=0$ in the defining representation, and $n_+=4k$ and $n_-=0$ in the adjoint. A single BPST instanton therefore supports one fermion zero mode in the doublet and four in the triplet.</p>
 <p><strong>The abelian specialisation.</strong> For the Hopf bundle over the two-sphere, the same theorem reduces to the two-dimensional statement</p>
 <p>$$
 \mathrm{ind}\,\slashed{D}_n \;=\; \frac{1}{2\pi}\int_{S^2}F \;=\; n ,
@@ -118,7 +118,7 @@ $$</p>
 <p>the Chern number of the bundle, which the previous article computed to be one for the minimal monopole. The number of zero modes of the Dirac operator coupled to a monopole of charge $n$ is $|n|$, with the sign of $n$ giving the chirality. The two-sphere case is the simplest instance of the same counting: index equals topological charge, and the charge is a winding number of the algebra's group.</p>
 <p><strong>Boundary corrections.</strong> On a manifold with boundary the index acquires a boundary contribution, and the theorem is replaced by the Atiyah–Patodi–Singer form</p>
 <p>$$
-\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge\hat A(TM) - \frac{h+\eta(0)}{2},
+\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge\mathrm{A}(TM) - \frac{h+\eta(0)}{2},
 $$</p>
 <p>where $h$ is the dimension of the space of boundary zero modes and $\eta(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em>, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.</p>
 <h2 id="the-density-the-charge-and-the-total-derivative">The Density, the Charge, and the Total Derivative</h2>
@@ -130,7 +130,7 @@ $$</p>
 $$</p>
 <p>so that</p>
 <p>$$
-Q=\frac{1}{8\pi^2}\oint_{\partial\mathbb R^4}\Omega_{\mathrm{CS}} ,
+Ϙ=\frac{1}{8\pi^2}\oint_{\partial\mathbb R^4}\Omega_{\mathrm{CS}} ,
 $$</p>
 <p>a surface integral over the three-sphere at infinity. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. In the abelian case the density collapses to the framework's second invariant,</p>
 <p>$$
@@ -146,17 +146,17 @@ $$</p>
 <h2 id="a-worked-case-the-abelian-index-and-the-monopole-zero-modes">A Worked Case: the Abelian Index and the Monopole Zero Modes</h2>
 <p>The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $U(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> is the case $n=1$. The twisted Dirac index is</p>
 <p>$$
-\mathrm{ind}\,\slashed{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\hat A(TS^2)=\int_{S^2}c_1(L)=n ,
+\mathrm{ind}\,\slashed{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
 $$</p>
-<p>since the $\hat A$-genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a magnetic monopole binds one fermion mode per unit magnetic charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.</p>
+<p>since the A-roof genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a magnetic monopole binds one fermion mode per unit magnetic charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.</p>
 <p>The zero modes can be exhibited explicitly, and they are the framework's monopole harmonics. In the $U(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections</p>
 <p>$$
-\psi_n^{(m)}=f_n^{(m)}(\theta)\,e^{im\phi},
+\psi_n^{(m)}=f_n^{(m)}(\theta)\,\exp(im\phi),
 \qquad
 m=0,1,\dots,n-1 ,
 $$</p>
 <p>in the case $n>0$, whose covariant constancy follows from the curvature being proportional to the area form. There are exactly $n$ of them, matching the index, and for $n=1$ the single mode is the constant section allowed in the patch where the connection is regular. The counting is standard — it is the degeneracy of the lowest Landau level of a charge-$n$ particle on the sphere — and the framework's contribution is the identification of the bundle and its connection with the Hopf data already computed. The key structural point is that the abelian index is written entirely in the framework's own objects: the bundle is the Hopf bundle, the charge is $c_1$, and the field is the charged biquaternionic spinor.</p>
-<h2 id="the-index-and-the-instanton-moduli-math93-adjoint-modes">The Index and the Instanton Moduli: $4k$ Adjoint Modes</h2>
+<h2 id="the-index-and-the-instanton-moduli-math90-adjoint-modes">The Index and the Instanton Moduli: $4k$ Adjoint Modes</h2>
 <p>The index of the adjoint Dirac operator has a second interpretation that ties this article to the instanton data. For a self-dual background of charge $k$ in the adjoint representation,</p>
 <p>$$
 n_+=4k ,
@@ -174,8 +174,8 @@ $$</p>
 <p>What the framework does not supply is the <em>invariant</em> expression of the non-abelian index density. The density $\mathrm{Tr}(F\wedge F)$ requires the matrix trace over the gauge factor and the wedge of two algebra-valued two-forms, and the framework's biquaternion norm cannot produce it. The biquaternion norm pairs a single algebra element with its conjugate through the quaternion product and returns one scalar; it has one algebra slot. The index density needs two. This is the same rank-two limitation that the companion article found for the topological density and that the energy–momentum-tensor article found for the stress tensor: the framework's quadratic invariant is rank-two and single-slot, while the non-abelian index density is traced over a second algebra factor. The consequence is precise: the framework can write the index density in components with the matrix trace, and it can identify its integral as the topological charge, but the density is not an object of the biquaternion-norm invariant calculus. The zero-mode count is expressible; the invariant whose integral computes it, in the non-abelian case, is not one of the framework's invariants.</p>
 <p>A second place where the count is imported is the fermion itself. The index theorem counts zero modes of a Dirac operator, and the operator presupposes a spinor field, a Clifford structure and the chirality grading; those are supplied by <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and <em>Chiral Fermions in the Biquaternion Framework</em>, and the physical identification of the counted modes with fermionic states is standard quantum field theory. The relevant anomaly statement — that the divergence of the axial current is proportional to the same density — belongs to the spin-half programme of the corpus and is not derived here; the index theorem is its Euclidean, elliptic counterpart, and the two are related by the standard argument.</p>
 <h2 id="summary">Summary</h2>
-<p>The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\mathrm{ch}(E)\wedge\hat A(TM)$. On the flat four-dimensional slice the $\hat A$-genus is trivial and the index is $2T(R)Q$, where $Q$ is the instanton charge of <em>Instantons and Solitons in Biquaternionic Form</em> and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, giving a single zero mode in the defining module and four in the adjoint for a unit self-dual instanton, $n_+=k$ and $n_+=4k$ respectively. The abelian specialisation on the two-sphere gives index equal to the monopole charge, which is the Chern number one of the Hopf bundle.</p>
-<p>The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\vec E\cdot\vec B$. The operator, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the $\hat A$-genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.</p>
+<p>The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\mathrm{ch}(E)\wedge\mathrm{A}(TM)$. On the flat four-dimensional slice the A-roof genus is trivial and the index is $2T(R)Ϙ$, where $Ϙ$ is the instanton charge of <em>Instantons and Solitons in Biquaternionic Form</em> and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, giving a single zero mode in the defining module and four in the adjoint for a unit self-dual instanton, $n_+=k$ and $n_+=4k$ respectively. The abelian specialisation on the two-sphere gives index equal to the monopole charge, which is the Chern number one of the Hopf bundle.</p>
+<p>The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\vec E\cdot\vec B$. The operator, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the A-roof genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -230,8 +230,8 @@ $$</p>
 <td>Index of the Dirac operator</td>
 </tr>
 <tr>
-<td>$\mathrm{ch}(E_R)\wedge\hat A(TM)$</td>
-<td>Index density; $\hat A=1$ on the flat slice</td>
+<td>$\mathrm{ch}(E_R)\wedge\mathrm{A}(TM)$</td>
+<td>Index density; $\mathrm{A}=1$ on the flat slice</td>
 </tr>
 <tr>
 <td>$T(R)$</td>
@@ -258,8 +258,8 @@ $$</p>
 <td>Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$</td>
 </tr>
 <tr>
-<td>$Q=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$</td>
-<td>Topological (instanton) charge, $Q\in\mathbb Z$</td>
+<td>$Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$</td>
+<td>Topological (instanton) charge, $Ϙ\in\mathbb Z$</td>
 </tr>
 <tr>
 <td>$\Omega_{\mathrm{CS}}$</td>
@@ -274,7 +274,7 @@ $$</p>
 <td>Framework's second invariant; index density in the abelian case</td>
 </tr>
 <tr>
-<td>$N(\tilde F)=\tilde F\tilde F^{\natural}$</td>
+<td>$\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$</td>
 <td>Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$</td>
 </tr>
 </tbody>
@@ -285,7 +285,7 @@ $$</p>
 <li>Michael F. Atiyah, Vijay K. Patodi and Isadore M. Singer, "Spectral asymmetry and Riemannian geometry I", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> 77 (1975) 43–69, for the index theorem with boundary and the eta invariant.</li>
 <li>Michael F. Atiyah, Nigel J. Hitchin and Isadore M. Singer, "Self-duality in four-dimensional Riemannian geometry", <em>Proceedings of the Royal Society A</em> 362 (1978) 425–461, for the instanton zero modes and the dimension formula.</li>
 <li>Thomas Eguchi, Peter B. Gilkey and Andrew J. Hanson, "Gravitation, gauge theories and differential geometry", <em>Physics Reports</em> 66 (1980) 213–393, for the index density, the Chern character and the eta invariant in a physics setting.</li>
-<li>Arthur L. Besse, <em>Einstein Manifolds</em> (Springer, 1987), for the $\hat A$-genus and the differential-geometric background.</li>
+<li>Arthur L. Besse, <em>Einstein Manifolds</em> (Springer, 1987), for the A-roof genus and the differential-geometric background.</li>
 <li>Michael F. Atiyah, <em>Geometry of Yang–Mills Fields</em> (Accademia Nazionale dei Lincei, 1979), for the index theorem in the gauge-theoretic form used here.</li>
 <li>Roman Jackiw and Claudio Rebbi, "Solitons with fermion number $1/2$", <em>Physical Review D</em> 13 (1976) 3398–3409, for the fermion number of the instanton zero modes.</li>
 <li>Gerard 't Hooft, "Symmetry breaking through Bell–Jackiw anomalies", <em>Physical Review Letters</em> 37 (1976) 8–11, for the anomalous divergence and the zero-mode count.</li>

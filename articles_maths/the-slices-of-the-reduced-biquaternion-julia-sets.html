@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Slices of the Reduced Biquaternion Julia Sets — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-slices-of-the-reduced-biquaternion-julia-sets"><strong>The Slices of the Reduced Biquaternion Julia Sets</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $T=q_1\Pi_{1}+q_2\Pi_{2}$ in the two central idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(T)=T^{2}+C$ whose filled Julia set is the product</p>
+<p>$$
+\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr),
+$$</p>
+<p>read in the idempotent coordinates, with $C=c_{1}\Pi_{1}+c_{2}\Pi_{2}$ and with the complex filled Julia sets of the two parameters. The article computes the slices of the reduced biquaternion fractal.</p>
+<p>The result is that every slice is exact, because the fractal is a product and the slices of a product are the products of the slices of the factors with the constraint read on each coordinate separately. There is no new phenomenon: a complex line slice of the fractal is either the whole of a complex filled Julia set or empty, the diagonal slice is the intersection of the two complex filled Julia sets, the real slice is the intersection of the first complex filled Julia set with the conjugate of the second, a one-real-dimensional affine slice is the intersection of two affine line slices of the two complex sets, and everything is computed from the two complex pictures without any twistor-like ambiguity. This is the sharp gain over the non-commutative companion, where only the idempotent plane gives an exact slice and the general slice is not computable from complex data.</p>
+<p>The article owns the notion of a slice for the algebra, the product rule, the complex slices and their degeneracy, the diagonal and the real slices, the affine one-real-dimensional slices, the slices at the parameter zero and the slices of the connectedness locus. The fractal and its product structure are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the global decomposition is <em>The Idempotent Decomposition and the Split Fractal</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the connectedness locus is <em>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the real subspace and the involution that defines it are <em>Reduced Biquaternion Space</em> and <em>The Two Involutions and the Group of Involutions</em>. The companion, where only the idempotent slice is exact, is <em>The Slices of the Biquaternion Julia Sets</em>.</p>
+<p><strong>Conventions.</strong> The coordinates are $(q_1,q_2)\in\mathbb{C}^{2}$, identified with the algebra by $T=q_1\Pi_{1}+q_2\Pi_{2}$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a <strong>slice</strong> is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.</p>
+<h2 id="the-notion-of-a-slice-and-the-product-rule">The Notion of a Slice and the Product Rule</h2>
+<p><strong>Definition (the slices used).</strong> The slices of this article are the following subsets of the algebra, each written in the idempotent coordinates:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slice</th>
+<th>condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>complex line</td>
+<td>$q_2=q_2_{0}$ or $q_1=q_1_{0}$ with the other coordinate free</td>
+</tr>
+<tr>
+<td>affine real line</td>
+<td>$(q_1,q_2)=(q_1_{0},q_2_{0})+t(a,b)$ with $t\in\mathbb{R}$ and $a,b\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>diagonal</td>
+<td>$q_1=q_2$</td>
+</tr>
+<tr>
+<td>real</td>
+<td>$q_2=\bar q_1$</td>
+</tr>
+<tr>
+<td>central-parameter line</td>
+<td>$c_{1}=c_{2}$ in the parameter algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the product rule).</strong> If a set of the algebra is the product $S=K_{1}\times K_{2}$ of a subset of the first coordinate and a subset of the second, and if $\Sigma$ is a slice, then</p>
+<p>$$
+\Sigma\cap S=\bigl\{\sigma\in\Sigma:\pi_{1}(\sigma)\in K_{1}\text{ and }\pi_{2}(\sigma)\in K_{2}\bigr\},
+$$</p>
+<p>so that the slice is obtained by intersecting the slice with the two coordinate conditions separately.</p>
+<p><strong>Proof.</strong> The membership $T\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.</p>
+<p><strong>Corollary (slices of the filled Julia set).</strong> For the quadratic family every slice of $\mathcal{K}_{C}$ is computed from the two complex filled Julia sets $K_{c_{1}}$ and $K_{c_{2}}$ by the rule above; for the Julia set one uses the two descriptions $\mathcal{J}_{C}=(J_{c_{1}}\times K_{c_{2}})\cup(K_{c_{1}}\times J_{c_{2}})$ and takes the union of the two slice computations.</p>
+<p><strong>Proof.</strong> The product description of the filled set and the union description of the Julia set are those of <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>, and the product rule applies to each product.</p>
+<h2 id="the-complex-slices-and-their-degeneracy">The Complex Slices and Their Degeneracy</h2>
+<p><strong>Proposition (complex line slices are all or nothing).</strong> For a complex line slice at a fixed coordinate,</p>
+<p>$$
+\{q_2=q_2_{0}\}\cap\mathcal{K}_{C}=
+\begin{cases}
+K_{c_{1}}, & q_2_{0}\in K_{c_{2}},\\[2pt]
+\varnothing, & q_2_{0}\notin K_{c_{2}},
+\end{cases}
+\qquad
+\{q_1=q_1_{0}\}\cap\mathcal{K}_{C}=
+\begin{cases}
+K_{c_{2}}, & q_1_{0}\in K_{c_{1}},\\[2pt]
+\varnothing, & q_1_{0}\notin K_{c_{1}}.
+\end{cases}
+$$</p>
+<p><strong>Proof.</strong> The complex line is the product of the free coordinate and the single point, and the product rule gives the product of the free complex filled Julia set with the set that is the fixed point when it belongs to the corresponding filled Julia set and empty otherwise.</p>
+<p><strong>Remark (why the complex slices are degenerate).</strong> The slice is degenerate because it is complex and the fractal is a product of complex sets: intersecting a product with a complex line does not cut a real curve out of the fractal, it selects one full complex factor or none. Real one-dimensional slices are the informative ones, and they are the affine real line slices, the diagonal and the real slice below.</p>
+<h2 id="the-diagonal-slice">The Diagonal Slice</h2>
+<p><strong>Theorem (the diagonal slice).</strong> The diagonal slice of the filled Julia set is the intersection of the two complex filled Julia sets,</p>
+<p>$$
+\{q_1=q_2\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}},
+$$</p>
+<p>and the diagonal slice of the Julia set is the corresponding part of the boundary. In particular, for a central parameter $C=c\cdot1$ the diagonal slice of $\mathcal{K}_{C}$ is the complex filled Julia set $K_{c}$.</p>
+<p><strong>Proof.</strong> Along the diagonal $q_1=q_2=\zeta$ and the membership in the product is the conjunction of $\zeta\in K_{c_{1}}$ and $\zeta\in K_{c_{2}}$; for a central parameter the two sets coincide.</p>
+<p><strong>Remark (the diagonal and the exchange symmetry).</strong> The diagonal slice is the fixed set of the exchange of the two idempotent coordinates, which is the natural sign restricted to the coordinate level; it is the slice the algebra reads most directly, and for a central parameter it reproduces the complex fractal itself, so the central reduced biquaternion fractal contains the complex fractal as its diagonal slice.</p>
+<h2 id="the-real-slice">The Real Slice</h2>
+<p><strong>Theorem (the real slice).</strong> The slice on the plane $\mathbb{R}\{1,ij\}$ of the elements fixed by the star, which in the idempotent coordinates is $q_2=\bar q_1$, is</p>
+<p>$$
+\{q_2=\bar q_1\}\cap\mathcal{K}_{C}=\{(\zeta,\bar\zeta):\zeta\in K_{c_{1}}\cap\overline{K_{c_{2}}}\}\cong K_{c_{1}}\cap\overline{K_{c_{2}}}.
+$$</p>
+<p>In particular, if the two parameters are conjugate, $c_{2}=\bar c_{1}$, then $K_{c_{2}}=\overline{K_{c_{1}}}$ and the real slice is the complex filled Julia set $K_{c_{1}}$ itself.</p>
+<p><strong>Proof.</strong> The plane $\mathbb{R}\{1,ij\}$ consists of the elements with $A$ real and $B$ purely imaginary, and $q_1=A+B$, $q_2=A-B$ give $q_2=\bar q_1$ there (while the coefficient-real plane $\{A,B\in\mathbb{R}\}$ is $\mathbb{R}\{1,j\}$, where $q_1$ and $q_2$ are real and equal only when $B=0$); the product rule then requires $\zeta\in K_{c_{1}}$ and $\bar\zeta\in K_{c_{2}}$, which is the displayed set; the conjugate of $K_{c}$ is $K_{\bar c}$ because the complex quadratic map commutes with the conjugation.</p>
+<p><strong>Corollary (the real slice of the Julia set).</strong> On the real subspace the Julia set slice is the boundary of $K_{c_{1}}\cap\overline{K_{c_{2}}}$, of real dimension at most one, and for the conjugate parameters it is the complex Julia set $J_{c_{1}}$, of real dimension one.</p>
+<p><strong>Proof.</strong> The real slice is identified with a subset of the complex plane by $\zeta\mapsto(\zeta,\bar\zeta)$, and a subset of the plane has boundary of real dimension at most one; for conjugate parameters the slice is the full complex filled Julia set.</p>
+<h2 id="the-affine-one-real-dimensional-slices">The Affine One-Real-Dimensional Slices</h2>
+<p><strong>Theorem (the affine slice is the intersection of two complex line slices).</strong> Let the slice be the affine real line</p>
+<p>$$
+\Sigma=\{(q_1,q_2)=(q_1_{0},q_2_{0})+t(a,b):t\in\mathbb{R}\},\qquad a,b\in\mathbb{C}.
+$$</p>
+<p>Then its intersection with the filled Julia set is</p>
+<p>$$
+\Sigma\cap\mathcal{K}_{C}=\bigl\{t\in\mathbb{R}:q_1_{0}+ta\in K_{c_{1}}\ \text{and}\ q_2_{0}+tb\in K_{c_{2}}\bigr\},
+$$</p>
+<p>the intersection of the affine line slice of $K_{c_{1}}$ with the affine line slice of $K_{c_{2}}$, the second reparametrised by the same real parameter.</p>
+<p><strong>Proof.</strong> The product rule applied to the parametrised line gives the two coordinate conditions for the same $t$.</p>
+<p><strong>Corollary (the visible pictures).</strong> Every real two-dimensional picture of the fractal obtained by drawing a real plane through the origin is the intersection of two complex pictures, one for each coordinate, reparametrised by the same parameter; the picture is the more informative the less the two parametrisations are aligned.</p>
+<p><strong>Proof.</strong> The statement is the theorem specialised to a real two-dimensional parametrisation, which is a family of affine real lines; each line gives the intersection of two complex line slices.</p>
+<h2 id="the-slices-at-the-parameter-zero">The Slices at the Parameter Zero</h2>
+<p><strong>Proposition (the parameter zero).</strong> At $C=0$ the two complex filled Julia sets are the closed unit discs, $\mathcal{K}_{0}$ is the closed unit bidisc, and</p>
+<p>$$
+\{q_1=q_2\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},\qquad
+\{q_2=\bar q_1\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},
+$$</p>
+<p>both slices being unit discs; every affine real line slice is an interval, the intersection of the two intervals cut out by the two discs; and the Julia set slices are the corresponding circles.</p>
+<p><strong>Proof.</strong> The complex filled Julia set of the parameter zero is the closed unit disc, so the products give the bidisc and the slices give the discs and the intersections of discs with lines, which are intervals.</p>
+<p><strong>Remark (the singular slices).</strong> The slice of the Julia set with the zero-divisor cone $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$ is the singular slice, of dimension one at the parameter zero and at most two in general; at the parameter zero it is the union of the two circles $\{0\}\times S^{1}$ and $S^{1}\times\{0\}$ cut out by the two coordinate discs, in agreement with <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>. The zero divisors therefore enter the slice theory only through this thin singular slice, the algebra being commutative and having no division but being the product of two fields.</p>
+<h2 id="the-slices-of-the-connectedness-locus">The Slices of the Connectedness Locus</h2>
+<p><strong>Theorem (the slices of the locus).</strong> The connectedness locus of the reduced biquaternion quadratic family is the product $\mathcal{M}\times\mathcal{M}$ of the complex Mandelbrot set with itself, and its slices are:</p>
+<p>$$
+\{c_{1}=c_{2}\}\cap(\mathcal{M}\times\mathcal{M})\cong\mathcal{M},
+$$</p>
+<p>the central-parameter line, which is the Mandelbrot set; the conjugate line $\{c_{2}=\bar c_{1}\}$, which is again $\mathcal{M}$; and a translated line $\{c_{2}=c_{1}+\mu\}$, which is the intersection $\mathcal{M}\cap(\mathcal{M}-\mu)$ of the Mandelbrot set with its translate.</p>
+<p><strong>Proof.</strong> The filled Julia set $\mathcal{K}_{C}$ is connected exactly when both complex filled Julia sets are connected, which is the product statement; intersecting a product with a complex affine line gives the two conditions on the same parameter, which for the three displayed lines give the three displayed sets, the last because $c_{1}\in\mathcal{M}$ and $c_{1}+\mu\in\mathcal{M}$ means $c_{1}\in\mathcal{M}\cap(\mathcal{M}-\mu)$.</p>
+<p><strong>Remark (the informative slices).</strong> As for the fractal, the complex line slices of the connectedness locus are degenerate, being empty or a translate of the Mandelbrot set, and the informative slices are the real two-dimensional ones, of which the translated line $\{c_{2}=c_{1}+\mu\}$ is the model: its slices are the intersections of the Mandelbrot set with its translates, exactly as in the complex theory.</p>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p><strong>Remark (the exact slices).</strong> In the reduced biquaternion algebra every slice of the fractal is computed from the two complex filled Julia sets, because the fractal is exactly a product and the imaginary part of the quaternion product, which couples the coordinates in the non-commutative case, is absent. In the biquaternion algebra only the idempotent plane gives an exact slice, the general slice is governed by the coupling term and its complex structure is not reducible to one complex variable per coordinate, and the computation of the slices is the harder problem of <em>The Slices of the Biquaternion Julia Sets</em>. The reduced case is the case in which the slice problem has no obstruction.</p>
+<h2 id="summary">Summary</h2>
+<p>The filled Julia set of the reduced biquaternion quadratic map is the product $K_{c_{1}}\times K_{c_{2}}$ of the two complex filled Julia sets in the idempotent coordinates, so the product rule makes every slice exact: a complex line slice is either the whole of the free complex filled Julia set or empty, the diagonal slice is the intersection $K_{c_{1}}\cap K_{c_{2}}$ and for a central parameter reproduces the complex fractal, the real slice is the intersection $K_{c_{1}}\cap\overline{K_{c_{2}}}$ and for conjugate parameters is the complex filled Julia set itself, an affine real line slice is the intersection of the two affine line slices of the two complex sets with the same real parameter, and the slices at the parameter zero are discs, intervals and circles computed from the unit disc. The connectedness locus is the product of the Mandelbrot set with itself, its central and conjugate lines are copies of the Mandelbrot set, and its translated lines are the intersections of the Mandelbrot set with its translates. Every slice is computed from complex data, with no coupling between the coordinates beyond the identity of the parameter, which is the sharp contrast with the non-commutative companion where only the idempotent slice is exact.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(q_1,q_2)$</td>
+<td>the idempotent coordinates, $T=q_1\Pi_{1}+q_2\Pi_{2}$</td>
+</tr>
+<tr>
+<td>$\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$</td>
+<td>the filled Julia set as a product</td>
+</tr>
+<tr>
+<td>product rule</td>
+<td>$\Sigma\cap(K_{1}\times K_{2})$ read coordinatewise</td>
+</tr>
+<tr>
+<td>$\{q_2=q_2_{0}\}$</td>
+<td>a complex line slice, empty or a full complex filled set</td>
+</tr>
+<tr>
+<td>$\{q_1=q_2\}$</td>
+<td>the diagonal slice, $\cong K_{c_{1}}\cap K_{c_{2}}$</td>
+</tr>
+<tr>
+<td>$\{q_2=\bar q_1\}$</td>
+<td>the real slice, $\cong K_{c_{1}}\cap\overline{K_{c_{2}}}$</td>
+</tr>
+<tr>
+<td>$(q_1_{0},q_2_{0})+t(a,b)$</td>
+<td>an affine real line slice, two complex line slices for the same $t$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}\times\mathcal{M}$</td>
+<td>the connectedness locus, the product of two Mandelbrot sets</td>
+</tr>
+<tr>
+<td>$\{c_{2}=c_{1}+\mu\}$</td>
+<td>a translated parameter line, $\mathcal{M}\cap(\mathcal{M}-\mu)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em> (<code>articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md</code>), above this article, for the map and the product fractal.</li>
+<li><em>The Idempotent Decomposition and the Split Fractal</em> (<code>articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.md</code>), above this article, for the global decomposition behind the product rule.</li>
+<li><em>Reduced Biquaternion Space</em> (<code>articles_maths/reduced-biquaternion-space.md</code>), above this article, for the coordinates and the real subspace.</li>
+<li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), above this article, for the exchange of the two idempotent coordinates.</li>
+<li><em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em> (<code>articles_maths/the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.md</code>), below this article, for the dimension of the slices and of the fractal.</li>
+<li><em>The Slices of the Biquaternion Julia Sets</em> (<code>articles_maths/the-slices-of-the-biquaternion-julia-sets.md</code>), for the companion in which only the idempotent slice is exact.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

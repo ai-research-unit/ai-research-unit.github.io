@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four-Vector Element Representation of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-vector-element-representation-of-the-reduced-biquaternions"><strong>The Four-Vector Element Representation of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>four-vector element representation</strong> reads the reduced biquaternion $T=A+Bj$ as a quadruple of real numbers, $T=(a,a',b,b')$, and at the same time as a pair of complex numbers, $T=(A,B)$, with $A=a+ia'$ and $\langle\cdot\rangle=b+ib'$. The vector part is one-dimensional in the complex reading and two-dimensional in the real one, so the reading is a real quadruple and a complex pair of the same element. This article writes the two, the multiplication in each, the four conjugations in coordinates, the remarkable subspaces as coordinate planes, and the four algebraic norms as formulas on the quadruple. The multiplication is <strong>commutative</strong>, which makes the row reading of the element equal to the column one, and it <strong>has zero divisors</strong>, which the unit criterion records.</p>
+<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the generic element is $T=A+Bj$ with $A=a+ia'$ and $\langle\cdot\rangle=b+ib'$. The idempotent coordinates are $q_1=A+B$ and $q_2=A-B$, and $T=q_1\Pi_{1}+q_2\Pi_{2}$ with $\Pi_{1,2}=\tfrac12(1\pm j)$. The multiplication is the general plain product, the only associative and commutative one of the four; the four products and the forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*}$ are <em>The Four Products, Their Forms and Their Algebraic Norms</em>. The element glyph is $T$, without a tilde.</p>
+<p><strong>Boundaries.</strong> The basis and the two scalar systems are <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>; the multiplication table in the abstract is <em>Reduced Biquaternion Space</em>; the involutions and their fixed spaces are <em>The Two Involutions and the Group of Involutions</em>; the subspaces read as coordinate planes are <em>Introduction to the Remarkable Subspaces of the Reduced Biquaternions</em>; the four algebraic norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>The Forms of the General Plain Algebra of the Reduced Biquaternions</em>. The other element representations are <em>Introduction to Reduced Biquaternion Element Representations</em>, <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>, <em>Reduced Biquaternion Other Algebraic Element Representations</em> and <em>Reduced Biquaternions Polar Element Representation</em>. The biquaternion counterpart is <em>The Four-Vector Element Representation of Biquaternions</em>.</p>
+<h2 id="the-coefficient-space">The Coefficient Space</h2>
+<p><strong>The element is a real quadruple on the real basis and a complex pair on the complex basis, the two readings carrying the same four real coordinates.</strong></p>
+<p><strong>Definition.</strong> The <strong>real four-vector</strong> of $T=A+Bj$ is the quadruple $(a,a',b,b')$ of <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>, read on the real basis in the order
+$$
+T=a\cdot 1+a'\cdot i+b\cdot j+b'\cdot ij ,
+$$
+and the <strong>complex pair</strong> is $(A,B)$, read on the complex basis $1,j$ over the scalar field $\mathbb{C}$,
+$$
+T=A\cdot 1+B\cdot j,\qquad A=a+ia',\quad B=b+ib'.
+$$</p>
+<p><strong>Proposition (the two readings carry the same data).</strong> The map $T\mapsto(a,a',b,b')$ is an isomorphism of real vector spaces onto $\mathbb{R}^{4}$, and the map $T\mapsto(A,B)$ is an isomorphism of complex vector spaces onto $\mathbb{C}^{2}$; the two are the same map read through $A=a+ia'$ and $\langle\cdot\rangle=b+ib'$, so the real quadruple and the complex pair are two alphabets of one set of four real coordinates.</p>
+<p><em>Proof.</em> The four basis elements are linearly independent over $\mathbb{R}$ and every element is a real linear combination of them, which is the first isomorphism; the two elements $1,j$ are linearly independent over $\mathbb{C}$ and every element is a complex combination, which is the second. The passage $A=a+ia'$, $\langle\cdot\rangle=b+ib'$ rewrites the two complex coordinates as the four real ones and back, with no loss.</p>
+<h3 id="real-and-imaginary-parts-of-the-coordinates">Real and Imaginary Parts of the Coordinates</h3>
+<p><strong>Each complex coordinate splits into a real part and an imaginary part, and the prime marks the second.</strong></p>
+<p>The real part of $A$ is $a$ and its imaginary part is $a'$; the real part of $\langle\cdot\rangle$ is $b$ and its imaginary part is $b'$. The two parts share the letter of the coordinate, the imaginary part carrying the prime, by <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>. The reader must not confuse the prime of a coefficient with a derivative: no function is being differentiated in this article. The element is written either as $T=a+ia'+bj+ib'j$ or as $T=A+Bj$, and the choice of alphabet is a choice of the representation, not of the element.</p>
+<h2 id="the-column-and-the-row">The Column and the Row</h2>
+<p><strong>The element is a column and a row, and because the multiplication is commutative the row reading is the column reading.</strong></p>
+<p><strong>Definition.</strong> The <strong>column</strong> of $T$ is the complex vector $\binom{A}{B}$ on the basis $1,j$, and the real column is $\bigl(a,a',b,b'\bigr)^{\mathsf T}$ on the basis $1,i,j,ij$. The <strong>row</strong> is the transposed quadruple. The left multiplication by $T$ acts on the column, $W\mapsto TW$, and the right multiplication acts on the row, $W\mapsto WT$.</p>
+<p><strong>Proposition (the row equals the column).</strong> The matrix of the left multiplication $L_{T}$ and the matrix of the right multiplication $R_{T}$ on the complex basis $1,j$ coincide, both being
+$$
+L_{T}=R_{T}=\begin{pmatrix}A&B\\ B&A\end{pmatrix},
+$$
+so that $TW=WT$ in the representation is the commutativity of the multiplication read as the equality of the two operators.</p>
+<p><em>Proof.</em> On the basis, $L_{T}(1)=T=A+Bj$ and $L_{T}(j)=Tj=B+Aj$, giving the columns $\binom{A}{B}$ and $\binom{B}{A}$, hence the displayed matrix; and $R_{T}(1)=T$, $R_{T}(j)=jT=B+Aj$ give the same two columns, so $R_{T}=L_{T}$. The equality $L_{T}=R_{T}$ is the statement that every element commutes with $T$, which is the commutativity of the algebra; in the non-commutative companion the two matrices differ.</p>
+<h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
+<p><strong>The multiplication is a real $4\times4$ matrix on the quadruple and a complex $2\times2$ matrix on the pair, and the two are the real and complex forms of the same operator.</strong></p>
+<p><strong>Theorem (the real four-vector matrix).</strong> For $T=a+ia'+bj+ib'j$, the left multiplication $W\mapsto TW$ on the real basis $1,i,j,ij$ has the matrix
+$$
+L_{T}=\begin{pmatrix}
+a&-a'&b&-b'\\
+a'&a&b'&b\\
+b&-b'&a&-a'\\
+b'&b&a'&a
+\end{pmatrix}
+=\begin{pmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{pmatrix},
+\qquad
+\tilde A=\begin{pmatrix}a&-a'\\ a'&a\end{pmatrix},\quad \tilde B=\begin{pmatrix}b&-b'\\ b'&b\end{pmatrix},
+$$
+where $\tilde A$ and $\tilde B$ are the real $2\times2$ matrices of the multiplication by the complex numbers $A$ and $\langle\cdot\rangle$.</p>
+<p><em>Proof.</em> Apply $L_{T}$ to the four basis elements and read the coefficients. On $1$: $T=a\cdot1+a'\cdot i+b\cdot j+b'\cdot ij$ gives the first column. On $i$: $iT=iA+iBj=(ia-a')+(ib-b')j=-a'\cdot1+a\cdot i-b'\cdot j+b\cdot ij$, the second column; on $j$: $jT=Aj+B=b\cdot1+b'\cdot i+a\cdot j+a'\cdot ij$, the third column; on $ij$: $ijT=iAj+iB=(ia-a')j+(ib-b')=-b'\cdot1+b\cdot i-a'\cdot j+a\cdot ij$, the fourth. The block form is read off the display: the two diagonal blocks are both $\tilde A$ and the two off-diagonal blocks both $\tilde B$, because the two coordinates $A$ and $\langle\cdot\rangle$ play the symmetric roles in the product $TW=(AC+BD)+(AD+BC)j$.</p>
+<p><strong>Corollary (the trace and the determinant).</strong> The real matrix has trace $4a=2\operatorname{Re}(q_1+q_2)$ and determinant
+$$
+\det L_{T}=\bigl|A^{2}-B^{2}\bigr|^{2}=\lvert \langle T\rangle_{\natural}\rvert^{2}=\lvert q_1\rvert^{2}\lvert q_2\rvert^{2},
+$$
+so the element is a unit exactly when the real matrix of its multiplication is invertible, and the zero divisors are exactly the non-zero elements whose matrix is singular. The complex matrix $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$ has trace $2A$ and determinant $\langle T\rangle_{\natural}=q_1q_2$.</p>
+<p><em>Proof.</em> The trace is the sum of the four diagonal entries $a+a+a+a$. The determinant of $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ with commuting blocks $\tilde A,\tilde B$ is $\det(\tilde A^{2}-\tilde B^{2})=\det(\tilde A+\tilde B)\det(\tilde A-\tilde B)$; and $\det(\tilde A+\tilde B)=\lvert A+B\rvert^{2}=\lvert q_1\rvert^{2}$, $\det(\tilde A-\tilde B)=\lvert A-B\rvert^{2}=\lvert q_2\rvert^{2}$, giving the display. The complex matrix has the two real $2\times2$ blocks combined into the complex entries $A,B$, whence trace $2A$ and determinant $A^{2}-B^{2}=\langle T\rangle_{\natural}=q_1q_2$. The unit and zero-divisor readings are the criterion $\langle T\rangle_{\natural}\neq0$ of <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p><strong>Corollary (multiplicativity).</strong> The four-vector matrices multiply, $L_{T}L_{W}=L_{TW}$, so the map $T\mapsto L_{T}$ is a faithful representation of the algebra by real $4\times4$ matrices with the block structure $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$; the map $T\mapsto\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$ is the same representation over $\mathbb{C}$.</p>
+<p><em>Proof.</em> $L_{T}L_{W}=L_{TW}$ is the associativity of the multiplication, and the injectivity is the theorem of <em>Introduction to Reduced Biquaternion Element Representations</em>.</p>
+<h3 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h3>
+<p><strong>The products of the four basis elements are the table below.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$1$</th>
+<th>$i$</th>
+<th>$j$</th>
+<th>$ij$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$i$</td>
+<td>$j$</td>
+<td>$ij$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$i$</td>
+<td>$-1$</td>
+<td>$ij$</td>
+<td>$-j$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$j$</td>
+<td>$ij$</td>
+<td>$+1$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$ij$</td>
+<td>$ij$</td>
+<td>$-j$</td>
+<td>$i$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the table).</strong> The table is symmetric, the multiplication being commutative, and its diagonal is $1,-1,+1,-1$, the three entries past the corner being $i^{2}=-1$, $j^{2}=+1$ and $(ij)^{2}=-1$, the two products $i\cdot j=ij$ and $i\cdot ij=-j$ following from $j^{2}=+1$ and $i^{2}=-1$.</p>
+<p><em>Proof.</em> Each entry is the product of two basis elements computed from the relations; the symmetry is the commutativity $ji=ij$ and the equalities read in the table, and the three diagonal entries are the displayed squares.</p>
+<h2 id="the-conjugations-in-coordinates">The Conjugations in Coordinates</h2>
+<p><strong>The three conjugations act on the quadruple by independent sign flips, and the flat is the negative of the star.</strong></p>
+<p><strong>Theorem (the coordinates of the conjugations).</strong> For $T=a+ia'+bj+ib'j$,
+$$
+\bar{T}=a-ia'+bj-ib'j=(a,-a',b,-b'),
+$$
+$$
+T^{\natural}=a+ia'-bj-ib'j=(a,a',-b,-b'),
+$$
+$$
+T^{*}=a-ia'-bj+ib'j=(a,-a',-b,b'),
+$$
+and $T^{\flat}=-T^{*}=(-a,a',b,-b')$.</p>
+<p><em>Proof.</em> The bar conjugates the two complex coordinates, $A\mapsto\bar A=a-ia'$ and $B\mapsto\bar B=b-ib'$; the natural sign sends $A+Bj$ to $A-Bj$, that is negates $\langle\cdot\rangle$; the star is the composite $\bar{\cdot}\circ{}^{\natural}$, conjugating $A$ and negating $\langle\cdot\rangle$; the flat is the negative of the star. Reading on the basis gives the quadruples.</p>
+<p><strong>Corollary (the three flips).</strong> The bar flips the second and the fourth coordinates, the natural sign the third and the fourth, and the star the second and the third; the three flips are the three ways of choosing a pair of the three non-scalar coordinates, and their product is the identity on the scalar coordinate. This is the coordinate form of the Klein group of <em>The Two Involutions and the Group of Involutions</em>.</p>
+<p><em>Proof.</em> Read the three displays: the first coordinate $a$ is fixed by all three, and each of the three remaining coordinates is negated by exactly two of the three maps, the pairs being those displayed.</p>
+<h2 id="the-remarkable-subspaces">The Remarkable Subspaces</h2>
+<p><strong>The coordinate planes of the four-vector representation are the remarkable subspaces.</strong></p>
+<p>The fixed and anti-fixed spaces of the three conjugations are the coordinate planes of the real basis: the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$ and its companion $\mathbb{C}j=\mathbb{R}\{j,ij\}$ of the natural sign, the planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ of the bar, and the planes $\mathbb{R}\{1,ij\}$ and $\mathbb{R}\{i,j\}$ of the star. Their defining equations, bases, dimensions and closure under the multiplication are the tables of <em>Introduction to the Remarkable Subspaces of the Reduced Biquaternions</em>, <em>Decompositions Along the Remarkable Subspaces</em> and <em>Comparison of the Remarkable Subspaces</em>, and the four lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$ and $\mathbb{R}ij$ are the <strong>atoms</strong> of the quadruple, the common eigenlines of the two involutions.</p>
+<h2 id="the-algebraic-norms-in-coordinates">The Algebraic Norms in Coordinates</h2>
+<p><strong>The four algebraic norms are the four quadratic forms of the quadruple below.</strong></p>
+<p><strong>Theorem (the norms on the quadruple).</strong> For $T=A+Bj=a+ia'+bj+ib'j$,
+$$
+\langle T\rangle=A^{2}+B^{2}=\bigl(a^{2}-a'^{2}+b^{2}-b'^{2}\bigr)+2i\bigl(aa'+bb'\bigr),
+$$
+$$
+\langle T\rangle_{\natural}=A^{2}-B^{2}=\bigl(a^{2}-a'^{2}-b^{2}+b'^{2}\bigr)+2i\bigl(aa'-bb'\bigr),
+$$
+$$
+\langle T\rangle_{*}=\lvert A\rvert^{2}-\lvert B\rvert^{2}=a^{2}+a'^{2}-b^{2}-b'^{2},
+$$
+$$
+\langle T\rangle_{\natural*}=\lvert A\rvert^{2}+\lvert B\rvert^{2}=a^{2}+a'^{2}+b^{2}+b'^{2}.
+$$</p>
+<p><em>Proof.</em> Expand $A^{2}=(a+ia')^{2}=a^{2}-a'^{2}+2iaa'$ and $B^{2}=(b+ib')^{2}=b^{2}-b'^{2}+2ibb'$; their sum is $\langle T\rangle$ and their difference is $\langle T\rangle_{\natural}$. The two sesquilinear norms are the sums of the squared real coordinates with the signs of the two complex coordinates, $\langle\cdot\rangle_{*}$ subtracting the $\langle\cdot\rangle$-block and $\langle\cdot\rangle_{\natural*}$ adding it.</p>
+<p><strong>Corollary (the multiplicative one).</strong> Only $\langle\cdot\rangle_{\natural}$ is multiplicative, $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$, and its vanishing set is the set of zero divisors; the two coordinates $q_1=A+B$ and $q_2=A-B$ give the factored form
+$$
+\langle T\rangle_{\natural}=q_1q_2,\qquad \lvert q_1\rvert^{2}=(a+b)^{2}+(a'+b')^{2},\qquad \lvert q_2\rvert^{2}=(a-b)^{2}+(a'-b')^{2}.
+$$
+The complex-valued $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ are the bilinear pair, the real-valued $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ the sesquilinear pair; $\langle\cdot\rangle_{\natural*}$ is the sum of the four squared coordinates, and $\langle\cdot\rangle_{*}$ is the same sum with the last two negated. The metrical reading of $\langle\cdot\rangle_{\natural*}$ — its square root as the Euclidean norm and the metric it defines — belongs to <em>Topology and Metric for Each of the Operations</em> and <em>The Euclidean Topology of the Reduced Biquaternion Algebra</em>, and is not taken here.</p>
+<p><em>Proof.</em> The multiplicativity $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$ is <em>The Four Products, Their Forms and Their Algebraic Norms</em>; $\langle T\rangle_{\natural}=A^{2}-B^{2}=(A+B)(A-B)=q_1q_2$; and the two moduli are the sums of the two squared coordinates of $q_1$ and of $q_2$. The vanishing of $\langle\cdot\rangle_{\natural}$ with $T\neq0$ is the zero-divisor condition of <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<h3 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h3>
+<p><strong>The element is a unit exactly when both idempotent coordinates are non-zero, and the two conditions are read on the quadruple.</strong></p>
+<p><strong>Theorem (the unit criterion).</strong> $T$ is a unit if and only if $\langle T\rangle_{\natural}=q_1q_2\neq0$, equivalently
+$$
+(a+b,a'+b')\neq(0,0)\quad\text{and}\quad(a-b,a'-b')\neq(0,0),
+$$
+that is $\lvert q_1\rvert^{2}\neq0$ and $\lvert q_2\rvert^{2}\neq0$; the two failure conditions are the two idempotent lines, $\lvert q_1\rvert^{2}=0$ and $\lvert q_2\rvert^{2}=0$, whose union is the zero-divisor set. The inverse in coordinates is
+$$
+T^{-1}=\frac{A-Bj}{\langle T\rangle_{\natural}}=q_1^{-1}\Pi_{1}+q_2^{-1}\Pi_{2},
+$$
+with $q_1^{-1}$ and $q_2^{-1}$ the complex inverses.</p>
+<p><em>Proof.</em> The criterion $q_1q_2\neq0$ is that of <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>; the two factors are $q_1=A+B=(a+b)+i(a'+b')$ and $q_2=A-B=(a-b)+i(a'-b')$, whose moduli are the displayed sums of two squares, and a complex number vanishes exactly when its two real coordinates do. The inverse is the idempotent inverse of <em>The Group of Units of the General Plain Algebra of the Reduced Biquaternions</em>, read in the two coordinates.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion element is a real quadruple $T=(a,a',b,b')$ on the basis $1,i,j,ij$ and a complex pair $T=(A,B)$ on the basis $1,j$, with $A=a+ia'$ and $\langle\cdot\rangle=b+ib'$. The left multiplication is the real $4\times4$ matrix with the $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ block structure and the complex $2\times2$ matrix $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$; the <strong>multiplication is commutative</strong>, so the row and the column readings coincide, and the trace and determinant are $4a$ and $\lvert \langle T\rangle_{\natural}\rvert^{2}$ in the real model, $2A$ and $\langle T\rangle_{\natural}$ in the complex one. The basis table is symmetric, with the squares $-1,+1,-1$ on the diagonal. The bar flips the second and fourth coordinates, the natural sign the third and fourth, and the star the second and third. The remarkable subspaces are the coordinate planes, and the four algebraic norms on the quadruple are $\langle\cdot\rangle=\bigl(a^{2}-a'^{2}+b^{2}-b'^{2}\bigr)+2i(aa'+bb')$, $\langle\cdot\rangle_{\natural}=\bigl(a^{2}-a'^{2}-b^{2}+b'^{2}\bigr)+2i(aa'-bb')$, $\langle\cdot\rangle_{*}=a^{2}+a'^{2}-b^{2}-b'^{2}$ and $\langle\cdot\rangle_{\natural*}=a^{2}+a'^{2}+b^{2}+b'^{2}$. The element is a unit exactly when both idempotent coordinates $q_1=A+B$ and $q_2=A-B$ are non-zero; the multiplication <strong>has zero divisors</strong>, the two idempotent lines, and is <strong>not a division algebra</strong>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(a,a',b,b')$</td>
+<td>the real four-vector of $T$ on the basis $1,i,j,ij$</td>
+</tr>
+<tr>
+<td>$(A,B)$</td>
+<td>the complex pair of $T$ on the basis $1,j$, $A=a+ia'$, $\langle\cdot\rangle=b+ib'$</td>
+</tr>
+<tr>
+<td>$\tilde A,\tilde B$</td>
+<td>the real $2\times2$ matrices of the multiplication by $A$ and by $\langle\cdot\rangle$</td>
+</tr>
+<tr>
+<td>$L_{T}=\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$</td>
+<td>the matrix of the multiplication, complex form</td>
+</tr>
+<tr>
+<td>$q_1=A+B$, $q_2=A-B$</td>
+<td>the idempotent coordinates</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>the four algebraic norms on the quadruple</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em> (<code>articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md</code>), for the two scalar systems and the two coordinate readings.</li>
+<li><em>Reduced Biquaternion Space</em> (<code>articles_maths/reduced-biquaternion-space.md</code>), for the multiplication table in the abstract.</li>
+<li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), for the conjugations and their fixed spaces.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the four products and the norms.</li>
+<li><em>Introduction to the Remarkable Subspaces of the Reduced Biquaternions</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md</code>), for the coordinate planes.</li>
+<li><em>The Four-Vector Element Representation of Biquaternions</em> (<code>articles_maths/the-four-vector-element-representation-of-biquaternions.md</code>), for the non-commutative companion, where the row and the column differ.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

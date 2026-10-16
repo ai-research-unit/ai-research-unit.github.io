@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decompositions Along the Remarkable Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="decompositions-along-the-remarkable-subspaces"><strong>Decompositions Along the Remarkable Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The remarkable subspaces of <em>Introduction to the Remarkable Subspaces</em> organise the reduced biquaternion space in three ways, and this article writes the three decompositions and compares them. The first is the <strong>block decomposition along the two involutions</strong>: the bar and the natural sign are two commuting involutions, so the real four-dimensional space splits into the <strong>four common eigenspaces</strong>, each a real line, and each labelled by the pair of its eigenvalues under the two involutions. The second is the <strong>decomposition along a single involution</strong>, the <strong>halving</strong> of the space into the fixed and the anti-fixed space of that involution; there are three halvings, those of the bar, the natural sign and the star, and each is a grouping of the four blocks two by two. The third is the <strong>decomposition along the idempotents</strong>, the splitting $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ by the two eigenlines of the multiplication by $j$, and it is the only one of the three that is a decomposition of the <strong>algebra</strong> and not only of the space.</p>
+<p><strong>The results.</strong> The four blocks are the four real lines
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{R}\ \oplus\ \mathbb{R}i\ \oplus\ \mathbb{R}j\ \oplus\ \mathbb{R}ij,
+$$
+the common eigenspaces of the bar and the natural sign, the first two being also the eigenspaces of the star with the signs $+$ and $-$. The three halvings are
+$$
+\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{r}},
+$$
+the decompositions of the natural sign, the bar and the star; each is the grouping of the four blocks two by two according to the sign of the involution, and each is a <strong>$\mathbb{Z}_{2}$-grading</strong> of the algebra but not a decomposition of it into two subalgebras, because the homogeneous spaces of degree one are not closed under the product. The idempotent decomposition
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}
+$$
+is of the other kind: it is the product of the two minimal ideals, it is the unique algebra direct-product decomposition, and its two summands are the two simple modules of <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>. The two kinds differ in what is closed: in a grading only the products of the same parity are constrained, while in a direct product each summand is a subalgebra and the mixed products vanish.</p>
+<p><strong>Boundaries.</strong> The subspaces and their characters are <em>Introduction to the Remarkable Subspaces</em>, above this article in this category; the involutions are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>; the idempotents are <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>; and the ideals and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>. The subspaces at a glance, with the closure of each under the product, are <em>Comparison of the Remarkable Subspaces</em>, below this article. The biquaternion counterparts are <em>Decompositions Along the Remarkable Subspaces</em> of the biquaternion category and <em>The Specificities of the Biquaternion Algebra</em>, §<em>The $\mathbb{Z}_{2}$-Grading</em>.</p>
+<h2 id="the-block-decomposition-along-the-two-involutions">The Block Decomposition Along the Two Involutions</h2>
+<h3 id="the-two-involutions-and-their-common-eigenspaces">The Two Involutions and Their Common Eigenspaces</h3>
+<p><strong>The bar and the natural sign commute and are both of square one, so they diagonalise simultaneously, and the common eigenlines are four.</strong></p>
+<p><strong>Theorem (simultaneous diagonalisation).</strong> The bar $\bar{\cdot}$ and the natural sign ${}^{\natural}$ commute, ${}^{\natural}\bar{\cdot}=\bar{\cdot}{}^{\natural}$, and each has square one; hence the real space decomposes into the four <strong>common eigenspaces</strong>
+$$
+\mathbb{B}_{\mathrm{r}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
+\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{T:\bar T=\varepsilon_{1}T,\ T^{\natural}=\varepsilon_{2}T\},
+$$
+each of real dimension one.</p>
+<p><em>Proof.</em> The two involutions commute because ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is an involution (<em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>), and two commuting involutions are simultaneously diagonalisable over $\mathbb{R}$; each is $\pm1$ on each common eigenline, and the four eigenvalues give the four spaces. Because the two involutions act on the four basis elements by $\pm$ signs and no two basis elements carry the same sign pair, each common eigenspace is one of the four basis lines and has dimension one.</p>
+<h3 id="the-four-blocks">The Four Blocks</h3>
+<p><strong>The four blocks are the four real coordinate lines, and the star reads them with the signs $+,-,-,+$.</strong></p>
+<p><strong>Theorem (the blocks).</strong> The four blocks are
+$$
+\mathbb{B}_{(+,-)}=\mathbb{R}j,\qquad \mathbb{B}_{(-,+)}=\mathbb{R}i,\qquad \mathbb{B}_{(-,-)}=\mathbb{R}ij,\qquad \mathbb{B}_{(+,+)}=\mathbb{R},
+$$
+and the star acts on them with the eigenvalue $\varepsilon_{3}=\varepsilon_{1}\varepsilon_{2}$, so $\mathbb{R}$ and $\mathbb{R}ij$ are star-fixed and $\mathbb{R}i$ and $\mathbb{R}j$ star-negated.</p>
+<p><em>Proof.</em> The characters of the four lines of <em>Introduction to the Remarkable Subspaces</em> give the labels: $\mathbb{R}$ is $(+,+)$, $\mathbb{R}i$ is $(-,+)$, $\mathbb{R}j$ is $(+,-)$ and $\mathbb{R}ij$ is $(-,-)$. The star eigenvalue is $\varepsilon_{1}\varepsilon_{2}$ because ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.</p>
+<p><strong>Corollary (the block decomposition is the finest).</strong> The block decomposition is the common refinement of the three halvings: each halving groups the four blocks two by two, and the three halvings are the three pairings
+$$
+\{++\,,\,{-+}\}\ \text{and}\ \{+-,\,--\},\qquad \{++\,,\,+-\}\ \text{and}\ \{-,+,\,--\},\qquad \{++\,,\,--\}\ \text{and}\ \{+-,-\+\},
+$$
+for the natural sign, the bar and the star respectively.</p>
+<h2 id="the-decomposition-along-each-involution">The Decomposition Along Each Involution</h2>
+<h3 id="the-three-halvings">The Three Halvings</h3>
+<p><strong>Each involution halves the space, and the three halvings are the three complementary pairs of coordinate planes.</strong></p>
+<p><strong>Theorem (the halvings).</strong> The three involutions give the three decompositions
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\},
+$$
+of the natural sign, the bar and the star, each into a fixed plane and an anti-fixed plane of real dimension two.</p>
+<p><em>Proof.</em> This is the computation of the fixed and anti-fixed spaces of <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>, regrouped by the blocks: the natural sign groups the blocks with $\varepsilon_{2}=+$ and those with $\varepsilon_{2}=-$, the bar groups by $\varepsilon_{1}$, and the star, whose eigenvalue is $\varepsilon_{1}\varepsilon_{2}$, groups by that product.</p>
+<h3 id="each-halving-is-a-grading">Each Halving Is a Grading</h3>
+<p><strong>Each halving is a $\mathbb{Z}_{2}$-grading of the algebra, and none is a decomposition into two subalgebras.</strong></p>
+<p><strong>Theorem (the gradings).</strong> For each involution $\sigma$ let $\mathbb{B}_{+}$ be the fixed plane and $\mathbb{B}_{-}$ the anti-fixed plane. Then
+$$
+\mathbb{B}_{+}\mathbb{B}_{+}\subseteq\mathbb{B}_{+},\qquad \mathbb{B}_{+}\mathbb{B}_{-}\subseteq\mathbb{B}_{-},\qquad \mathbb{B}_{-}\mathbb{B}_{-}\subseteq\mathbb{B}_{+},
+$$
+so the halving is a $\mathbb{Z}_{2}$-grading; the anti-fixed plane is not closed under the product, so the halving is not a decomposition into two subalgebras.</p>
+<p><em>Proof.</em> Each plane is the span of two coordinate lines, and the product of two basis elements is, up to sign, a basis element whose character under $\sigma$ is the product of the two characters; the three inclusions are the three products of signs. For the non-closure it is enough to exhibit one anti-fixed product leaving the plane: for the natural sign, $(j)^{2}=1\in\mathbb{C}=\mathbb{B}_{+}$ with $j\in\mathbb{C}j=\mathbb{B}_{-}$; for the bar, $(i)^{2}=-1\in\mathbb{R}\{1,j\}=\mathbb{B}_{+}$ with $i\in\mathbb{R}\{i,ij\}$; for the star, $(i)^{2}=-1\in\mathbb{R}\{1,ij\}$ with $i\in\mathbb{R}\{i,j\}$. In each case $\mathbb{B}_{-}$ is not closed.</p>
+<p><strong>Corollary (the gradings are the same three).</strong> The $\mathbb{Z}_{2}$-grading of the natural sign is the grading $\mathbb{C}\oplus\mathbb{C}j$ of <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, §<em>The Decomposition as a Grading</em>; the gradings of the bar and of the star are the other two, and the three are the three ways of writing the block decomposition as two groups of two blocks.</p>
+<h2 id="the-decomposition-along-the-idempotents">The Decomposition Along the Idempotents</h2>
+<p><strong>The idempotent decomposition is the splitting into the two eigenlines of the multiplication by $j$, and unlike the halvings it is a decomposition of the algebra.</strong></p>
+<p><strong>Theorem (the idempotent decomposition).</strong> With $\Pi_{1,2}=\tfrac12(1\pm j)$,
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2},\qquad \Pi_{1}+\Pi_{2}=1,\qquad \Pi_{1}\Pi_{2}=0,\qquad \Pi_{1}^{2}=\Pi_{1},\ \Pi_{2}^{2}=\Pi_{2},
+$$
+and the two summands are the two minimal ideals, the images of the two Peirce projections of the family $\{\Pi_{1},\Pi_{2}\}$.</p>
+<p><em>Proof.</em> The idempotents and their orthogonality and completeness are <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>; the two lines are the minimal ideals and the Peirce images by <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p><strong>Corollary (the diagonal and the coordinate planes).</strong> The idempotent decomposition is the opposite of the block decomposition in a precise sense: the idempotent lines are the <strong>diagonal</strong> planes spanned by $\tfrac12(1+j)$ and $\tfrac12(i+ij)$ and by $\tfrac12(1-j)$ and $\tfrac12(i-ij)$, while the four blocks are the coordinate lines. The idempotent lines are therefore disjoint from the four blocks except at the origin, and the two decompositions are in general position.</p>
+<h2 id="the-two-kinds-of-decomposition">The Two Kinds of Decomposition</h2>
+<p><strong>The three halvings are gradings and the idempotent decomposition is a direct product; the distinction is what is closed.</strong></p>
+<p><strong>Theorem (the two kinds).</strong></p>
+<ol>
+<li>A <strong>direct product</strong> decomposition $\mathbb{B}_{\mathrm{r}}=\mathrm A\oplus\mathrm B$ has each summand a subalgebra, $\mathrm A^{2}\subseteq\mathrm A$, $\mathrm B^{2}\subseteq\mathrm B$, and the mixed product zero, $\mathrm A\mathrm B=0$; equivalently the projections are <strong>algebra</strong> homomorphisms.</li>
+<li>A <strong>grading</strong> $\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{+}\oplus\mathbb{B}_{-}$ has only the three parity inclusions of §<em>Each Halving Is a Grading</em>; the projections are not algebra homomorphisms, and the mixed product is not zero.</li>
+</ol>
+<p>The idempotent decomposition is a direct product; the three halvings are gradings and not direct products.</p>
+<p><em>Proof.</em> For the idempotent decomposition the summands are $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$, closed under the product, with $\mathbb{C}\Pi_{1}\cdot\mathbb{C}\Pi_{2}=\mathbb{C}\Pi_{1}\Pi_{2}=0$; the projections are $T\mapsto\Pi_{i}T$, which satisfy $\Pi_{i}(TW)=(\Pi_{i}T)(\Pi_{i}W)$ because $\Pi_{i}^{2}=\Pi_{i}$ and $\Pi_{1}\Pi_{2}=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §<em>Each Halving Is a Grading</em> and the mixed product is the anti-fixed plane, which is nonzero.</p>
+<p><strong>Corollary (why the idempotents are central).</strong> The two projections of the idempotent decomposition are the algebra homomorphisms $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_{i}$ and the decomposition is the one of the direct product $\mathbb{C}\times\mathbb{C}$; the halving projections are only linear. The central idempotents are exactly the ones for which the split is a decomposition of the algebra, and this is the content of <em>The Specificities of the General Plain Algebra of the Reduced Biquaternions</em>, §<em>The Associative Interpretation</em>.</p>
+<h2 id="the-projections-and-the-changes-of-basis">The Projections and the Changes of Basis</h2>
+<p><strong>The projections of the three halvings and of the block decomposition are the averaging formulas, and the change from the real basis to the idempotent basis is the matrix of the two idempotents.</strong></p>
+<p><strong>Theorem (the projections).</strong> The projections onto the planes of the halvings and the blocks are
+$$
+P_{\mathbb{C}}=\tfrac12(\mathrm{id}+{}^{\natural}),\qquad P_{\mathbb{C}j}=\tfrac12(\mathrm{id}-{}^{\natural}),
+$$
+$$
+P_{\mathbb{R}\{1,j\}}=\tfrac12(\mathrm{id}+\bar{\cdot}),\qquad P_{\mathbb{R}\{i,ij\}}=\tfrac12(\mathrm{id}-\bar{\cdot}),
+$$
+$$
+P_{\mathbb{R}\{1,ij\}}=\tfrac12(\mathrm{id}+{}^{*}),\qquad P_{\mathbb{R}\{i,j\}}=\tfrac12(\mathrm{id}-{}^{*}),
+$$
+and the block projections are the four products
+$$
+P_{(\varepsilon_{1},\varepsilon_{2})}=\tfrac14(\mathrm{id}+\varepsilon_{1}\bar{\cdot})\circ(\mathrm{id}+\varepsilon_{2}{}^{\natural}).
+$$</p>
+<p><em>Proof.</em> This is the projection formula of <em>Introduction to the Remarkable Subspaces</em>, §<em>The Fixed and Anti-Fixed Space of an Involution</em>, and the block projections are the products of the two commuting eigenspace projections for the pair $(\varepsilon_{1},\varepsilon_{2})$.</p>
+<p><strong>Theorem (the change of basis).</strong> The real basis $\{1,i,j,ij\}$ and the real basis $\{\Pi_{1},i\Pi_{1},\Pi_{2},i\Pi_{2}\}$ are related by
+$$
+\Pi_{1}=\tfrac12+\tfrac12 j,\quad i\Pi_{1}=\tfrac12 i+\tfrac12 ij,\quad \Pi_{2}=\tfrac12-\tfrac12 j,\quad i\Pi_{2}=\tfrac12 i-\tfrac12 ij,
+$$
+a real change of basis of determinant $\tfrac14$, so the idempotent decomposition and the block decomposition are two bases of the same real space and the change between them is invertible.</p>
+<p><em>Proof.</em> The displays are the definitions and the multiplication by $i$; the determinant is computed from the matrix whose rows are the four coordinate quadruples, $\tfrac12(1,0,1,0)$, $\tfrac12(0,1,0,1)$, $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$, which has determinant $\tfrac14$.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>A generic element in the two decompositions.</strong> For $T=2+i+3j+4ij$ the four blocks carry the coordinates $2,1,3,4$, and the three halvings read
+$$
+P_{\mathbb{C}}T=2+i,\quad P_{\mathbb{C}j}T=3j+4ij,\qquad P_{\mathbb{R}\{1,j\}}T=2+3j,\quad P_{\mathbb{R}\{i,ij\}}T=i+4ij,
+$$
+$$
+P_{\mathbb{R}\{1,ij\}}T=2+4ij,\quad P_{\mathbb{R}\{i,j\}}T=i+3j,
+$$
+while the idempotent decomposition reads
+$$
+q_1=A+B=(2+i)+(3+4i)=5+5i,\qquad q_2=A-B=(2+i)-(3+4i)=-1-3i,
+$$
+so $T=(5+5i)\Pi_{1}+(-1-3i)\Pi_{2}$. The element is a unit because $q_1$ and $q_2$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion space decomposes in three ways along its remarkable subspaces. The bar and the natural sign are commuting involutions, and their <strong>block decomposition</strong> splits the real space into the four common eigenlines $\mathbb{R}\oplus\mathbb{R}i\oplus\mathbb{R}j\oplus\mathbb{R}ij$, labelled by the two signs $(\varepsilon_{\bar{}},\varepsilon_{\natural})$ with the star reading the product sign. Each involution gives a <strong>halving</strong> into its fixed and anti-fixed plane — the natural sign giving $\mathbb{C}\oplus\mathbb{C}j$, the bar giving $\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$ and the star giving $\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}$ — and each halving is the grouping of the four blocks two by two. The <strong>idempotent decomposition</strong> splits the algebra into the two eigenlines of the multiplication by $j$, $\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, and it is a decomposition of the algebra and not only of the space. The distinction is what is closed under the product: each halving is a $\mathbb{Z}_{2}$-grading, with the anti-fixed plane not a subalgebra, whereas the idempotent decomposition is a direct product, with each summand a minimal ideal and the mixed product zero, and its two projections are the algebra homomorphisms onto the two factors of $\mathbb{C}\times\mathbb{C}$. The projections of the halvings and of the blocks are the averaging formulas built on the involutions, $\tfrac12(\mathrm{id}\pm\sigma)$ and $\tfrac14(\mathrm{id}\pm\bar{\cdot})(\mathrm{id}\pm{}^{\natural})$, and the change between the real basis and the idempotent basis is the invertible real matrix of the two idempotents.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}$</td>
+<td>a block, the common eigenspace of $(\bar{\cdot},{}^{\natural})$ with those signs</td>
+</tr>
+<tr>
+<td>$\mathbb{R},\mathbb{R}i,\mathbb{R}j,\mathbb{R}ij$</td>
+<td>the four blocks</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\oplus\mathbb{C}j$</td>
+<td>the halving of the natural sign, the grading</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$</td>
+<td>the halving of the bar</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}$</td>
+<td>the halving of the star</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$</td>
+<td>the idempotent decomposition, a direct product of ideals</td>
+</tr>
+<tr>
+<td>$P_{(\varepsilon_{1},\varepsilon_{2})}=\tfrac14(\mathrm{id}+\varepsilon_{1}\bar{\cdot})(\mathrm{id}+\varepsilon_{2}{}^{\natural})$</td>
+<td>the block projection</td>
+</tr>
+<tr>
+<td>$\{1,i,j,ij\}\leftrightarrow\{\Pi_{1},i\Pi_{1},\Pi_{2},i\Pi_{2}\}$</td>
+<td>the change of basis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md</code>), for the spaces and their characters.</li>
+<li><em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), for the involutions, their commutativity and their fixed spaces.</li>
+<li><em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the idempotents and the two lines.</li>
+<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the Peirce decomposition and the $\mathbb{Z}_{2}$-grading.</li>
+<li><em>Comparison of the Remarkable Subspaces</em> (<code>articles_maths/comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.md</code>), for the spaces at a glance and their closure.</li>
+<li><em>Decompositions Along the Remarkable Subspaces</em> (<code>articles_maths/decompositions-along-the-remarkable-subspaces.md</code>), for the non-commutative companion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

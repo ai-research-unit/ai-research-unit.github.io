@@ -61,13 +61,13 @@
 <li>The Fourier transform of a quaternion-valued function or sequence is <em>Quaternion Harmonic Analysis</em>, where the transform theory lives; the spectral theory of a second-order stationary process in the commutative case is <em>Harmonic Analysis on Groups</em>. Neither is used here.</li>
 </ul>
 <p>No physics is invoked.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$; a quaternion is $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ with $\mathrm{Sc}(\tilde q) = q_0$, conjugate $\tilde{q}^{\natural}$, quaternion norm $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$, modulus $|\tilde q|$, and inner product $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde{q}^{\natural}) = \sum_\mu p_\mu q_\mu$. The $e_\mu$-component of $\tilde q$ is written $q_\mu$, so that $\tilde q = \sum_\mu q_\mu e_\mu$. A quaternion-valued random variable is written in lower case with a tilde, $\tilde p,\tilde q$, so that the glyph identifies the ambient algebra, and its expectation $\mathbb{E}[\tilde q] = \sum_\mu\mathbb{E}[q_\mu]e_\mu$ is componentwise. For matrices, ${}^{\mathsf T}$ is the transpose and ${}^{\mathsf H}$ the conjugate transpose, $\bar A^{\mathsf T}$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$; a quaternion is $\tilde q = \sum_{\mu=0}^{3}q_\mu e_\mu$ with $\mathrm{Sc}(\tilde q) = q_0$, conjugate $\tilde{q}^{\natural}$, quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$, modulus $|\tilde q|$, and inner product $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde{q}^{\natural}) = \sum_\mu p_\mu q_\mu$. The $e_\mu$-component of $\tilde q$ is written $q_\mu$, so that $\tilde q = \sum_\mu q_\mu e_\mu$. A quaternion-valued random variable is written in lower case with a tilde, $\tilde p,\tilde q$, so that the glyph identifies the ambient algebra, and its expectation $\mathbb{E}[\tilde q] = \sum_\mu\mathbb{E}[q_\mu]e_\mu$ is componentwise. For matrices, ${}^{\mathsf T}$ is the transpose and ${}^{\mathsf H}$ the conjugate transpose, $\bar A^{\mathsf T}$.</p>
 <h2 id="the-involutions-about-the-axes">The Involutions about the Axes</h2>
 <h3 id="the-three-maps">The Three Maps</h3>
-<p>The inner automorphism determined by a unit $u$, $\iota_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\iota_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_0+\vec u$ one has $u^2 = u_0^2-N(\vec u)+2u_0\vec u$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\iota_0 = \mathrm{id}$ for the identity.</p>
+<p>The inner automorphism determined by a unit $u$, $\iota_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\iota_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_0+\vec q_a$ one has $u^2 = u_0^2-\langle \vec q_a\rangle_{\natural}+2u_0\vec q_a$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\iota_0 = \mathrm{id}$ for the identity.</p>
 <p><strong>Definition.</strong> For $k = 1,2,3$ the <strong>involution about the axis $e_k$</strong> is</p>
 <p>$$
-\iota_k(\tilde q) = e_k\,\tilde q\,e_k^{-1} = e_k\tilde q e_k , \qquad e_k^{-1} = -e_k ,
+\iota_k(\tilde q) = e_k\,\tilde q\,e_k^{-1} = e_k\tilde q e_k, \qquad e_k^{-1} = -e_k,
 $$</p>
 <p>and $\iota_0$ is the identity. A map $\iota$ with $\iota^2 = \mathrm{id}$ is an <strong>involution</strong>.</p>
 <p><strong>Proposition.</strong> Each $\iota_k$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$ with $\iota_k^2 = \mathrm{id}$; it fixes the scalar part and the $e_k$-axis, and it negates the two remaining axes. Its fixed subspace is $\{q_0e_0+q_ke_k\}$, of dimension $2$, and its anti-fixed subspace is $\{q_le_l+q_me_m\}$ for $(k,l,m)$ cyclic, also of dimension $2$.</p>
@@ -117,25 +117,25 @@ $$</p>
 </table></div>
 <p><strong>Proposition.</strong> The rows of $\sigma$ are pairwise orthogonal, and so are its columns:</p>
 <p>$$
-\sum_{j=0}^{3}\sigma_{j\mu}\sigma_{j\nu} = 4\delta_{\mu\nu} , \qquad \sum_{\mu=0}^{3}\sigma_{j\mu}\sigma_{m\mu} = 4\delta_{jm} .
+\sum_{j=0}^{3}\sigma_{j\mu}\sigma_{j\nu} = 4\delta_{\mu\nu}, \qquad \sum_{\mu=0}^{3}\sigma_{j\mu}\sigma_{m\mu} = 4\delta_{jm}.
 $$</p>
 <p><em>Proof.</em> Both are read from the table. Each column has either four entries $+1$, when $\mu = 0$, or two entries $+1$ and two $-1$; two distinct columns agree in exactly two rows and differ in the other two, so the scalar product of two distinct columns is $0$, and the scalar product of a column with itself is $4$. The rows are the columns, the matrix being symmetric.</p>
 <p><strong>Remark.</strong> A matrix with entries $\pm1$ whose distinct rows are orthogonal is a <strong>Hadamard matrix</strong>; $\sigma$ is the smallest of order greater than two, and the orthogonality above is the reason the augmented description inverts as cleanly as it does.</p>
 <h3 id="the-involution-group">The Involution Group</h3>
 <p><strong>Proposition.</strong> The four maps form a group under composition, isomorphic to $\mathbb{Z}/2\times\mathbb{Z}/2$:</p>
 <p>$$
-\iota_j\iota_m = \iota_{j\oplus m} , \qquad \iota_0\iota_j = \iota_j , \qquad \iota_j^2 = \iota_0 ,
+\iota_j\iota_m = \iota_{j\oplus m}, \qquad \iota_0\iota_j = \iota_j, \qquad \iota_j^2 = \iota_0,
 $$</p>
 <p>where $\oplus$ is the bitwise exclusive-or on the labels read in binary, so that $1\oplus2 = 3$, $2\oplus3 = 1$ and $3\oplus1 = 2$. In particular the four commute.</p>
 <p><em>Proof.</em> On a basis element $e_\mu$ the composition multiplies the two signs, $\sigma_{j\mu}\sigma_{m\mu}$, and the product of two rows of the sign matrix is a row again, with the label $\oplus$; the four rows are the characters of the Klein group.</p>
 <h3 id="recovering-the-coordinates">Recovering the Coordinates</h3>
 <p><strong>Proposition.</strong> Every quaternion is recovered from its four involuted forms,</p>
 <p>$$
-q_\mu = \frac14\,e_\mu^{-1}\sum_{j=0}^{3}\sigma_{j\mu}\,\iota_j\tilde q , \qquad \mu = 0,1,2,3 ,
+q_\mu = \frac14\,e_\mu^{-1}\sum_{j=0}^{3}\sigma_{j\mu}\,\iota_j\tilde q, \qquad \mu = 0,1,2,3,
 $$</p>
 <p>and in particular</p>
 <p>$$
-\tilde{q}^{\natural} = \tfrac12\bigl(\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q-\tilde q\bigr) .
+\tilde{q}^{\natural} = \tfrac12\bigl(\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q-\tilde q\bigr).
 $$</p>
 <p><em>Proof.</em> For the first, expand $\iota_j\tilde q = \sum_\nu\sigma_{j\nu}q_\nu e_\nu$ and use the column orthogonality; the inner sum becomes $4q_\mu e_\mu$. For the second, the sign pattern $\frac12(\sigma_{1\mu}+\sigma_{2\mu}+\sigma_{3\mu}-\sigma_{0\mu})$ equals $+1$ for $\mu = 0$ and $-1$ for $\mu = 1,2,3$, which is the sign pattern of quaternion conjugation.</p>
 <p>The second identity is the reason the involutions may be read as four views of one quaternion: the conjugate, which is the only one of them that reverses products, is a fixed integer combination of the linear ones.</p>
@@ -147,17 +147,17 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>augmented vector</strong> of $\tilde q$ is the quaternion four-vector</p>
 <p>$$
-q^{a} = \begin{pmatrix}\tilde q\\ \iota_1\tilde q\\ \iota_2\tilde q\\ \iota_3\tilde q\end{pmatrix} .
+q^{a} = \begin{pmatrix}\tilde q\\ \iota_1\tilde q\\ \iota_2\tilde q\\ \iota_3\tilde q\end{pmatrix}.
 $$</p>
 <p>It has four quaternion components, equivalently sixteen real components; the pairing of the four real components of $\tilde q$ with the four involutions is what the next proposition makes explicit.</p>
 <h3 id="the-basis-matrix">The Basis Matrix</h3>
 <p><strong>Proposition.</strong> Let $A$ be the $4\times4$ matrix with quaternion entries $A_{j\mu} = \sigma_{j\mu}e_\mu$, that is</p>
 <p>$$
-A = \begin{pmatrix} e_0 & e_1 & e_2 & e_3 \\ e_0 & e_1 & -e_2 & -e_3 \\ e_0 & -e_1 & e_2 & -e_3 \\ e_0 & -e_1 & -e_2 & e_3 \end{pmatrix} .
+A = \begin{pmatrix} e_0 & e_1 & e_2 & e_3 \\ e_0 & e_1 & -e_2 & -e_3 \\ e_0 & -e_1 & e_2 & -e_3 \\ e_0 & -e_1 & -e_2 & e_3 \end{pmatrix}.
 $$</p>
 <p>Then</p>
 <p>$$
-q^{a} = A\begin{pmatrix}q_0\\ q_1\\ q_2\\ q_3\end{pmatrix} , \qquad A^{\mathsf H}A = 4I_4 , \qquad A^{-1} = \tfrac14 A^{\mathsf H} ,
+q^{a} = A\begin{pmatrix}q_0\\ q_1\\ q_2\\ q_3\end{pmatrix}, \qquad A^{\mathsf H}A = 4I_4, \qquad A^{-1} = \tfrac14 A^{\mathsf H},
 $$</p>
 <p>so that $(q_0,q_1,q_2,q_3)^{\mathsf T} = \frac14 A^{\mathsf H}q^{a}$.</p>
 <p><em>Proof.</em> The product $A(q_0,\dots,q_3)^{\mathsf T}$ has $j$-th entry $\sum_\mu\sigma_{j\mu}q_\mu e_\mu = \iota_j\tilde q$, which is the definition. For the second, $(A^{\mathsf H}A)_{\mu\nu} = \sum_j\overline{A_{j\mu}}A_{j\nu} = \sum_j\sigma_{j\mu}\sigma_{j\nu}e_\mu^{\natural} e_\nu$; the sum vanishes unless $\mu = \nu$, by the column orthogonality, and when $\mu = \nu$ it is $4e_\mu^{\natural} e_\mu = 4e_0$. Multiplying $A^{\mathsf H}A = 4I_4$ on the left by $\frac14A^{\mathsf H}$ turns the second factor into the identity and gives the inverse.</p>
@@ -165,32 +165,32 @@ $$</p>
 <h3 id="what-the-augmentation-adds-and-what-it-does-not">What the Augmentation Adds and What It Does Not</h3>
 <p><strong>Proposition.</strong> For every $j$ and every $\mu$, the $e_\mu$-component of $\iota_j\tilde q$ is $\sigma_{j\mu}$ times the $e_\mu$-component of $\tilde q$. Consequently the real spans coincide,</p>
 <p>$$
-\operatorname{span}_{\mathbb{R}}\{\tilde q,\iota_1\tilde q,\iota_2\tilde q,\iota_3\tilde q\} = \operatorname{span}_{\mathbb{R}}\{q_0,q_1,q_2,q_3\} ,
+\operatorname{span}_{\mathbb{R}}\{\tilde q,\iota_1\tilde q,\iota_2\tilde q,\iota_3\tilde q\} = \operatorname{span}_{\mathbb{R}}\{q_0,q_1,q_2,q_3\},
 $$</p>
 <p>and both have dimension $4$.</p>
 <p><em>Proof.</em> The component statement is $\iota_j(\tilde q)_\mu = \sigma_{j\mu}q_\mu$, read from the sign matrix, so each side of the displayed equality lies in the other; the dimension is four because the identity contributes the four components $q_\mu$ themselves.</p>
 <p><strong>Remark.</strong> The augmentation changes no information: a widely linear expression $\sum_j a_j^{\mathsf T}\iota_j\tilde q$ with quaternion coefficients and a real-linear expression in the four real components are the same class of maps, and the augmented notation is a bookkeeping in which quaternion multiplication acts on the coefficients. What the augmentation adds is not variables but symmetry: the four involuted forms are permuted among themselves by the involutions, so the class of widely linear expressions is closed under them, which the four real components are not.</p>
 <h2 id="quaternion-random-variables">Quaternion Random Variables</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> A <strong>quaternion-valued random variable</strong> on a probability space is a map $\tilde q : \Omega\to\mathbb{H}$ whose four components $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ are real measurable functions, the algebra being identified with $\mathbb{R}^4$ through the basis. The variable is <strong>centred</strong> when $\mathbb{E}[\tilde q] = 0$ and <strong>square-integrable</strong> when $\mathbb{E}[N(\tilde q)] = \sum_\mu\mathbb{E}[q_\mu^2]<\infty$. Two such variables are <strong>jointly Gaussian</strong> when their eight real components are jointly Gaussian in the real sense.</p>
+<p><strong>Definition.</strong> A <strong>quaternion-valued random variable</strong> on a probability space is a map $\tilde q : \Omega\to\mathbb{H}$ whose four components $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ are real measurable functions, the algebra being identified with $\mathbb{R}^4$ through the basis. The variable is <strong>centred</strong> when $\mathbb{E}[\tilde q] = 0$ and <strong>square-integrable</strong> when $\mathbb{E}[\langle\tilde q\rangle_{\natural}] = \sum_\mu\mathbb{E}[q_\mu^2]<\infty$. Two such variables are <strong>jointly Gaussian</strong> when their eight real components are jointly Gaussian in the real sense.</p>
 <p>The identification with $\mathbb{R}^4$ carries the probability theory of <em>Measure-Theoretic Probability</em> over without change: a quaternion-valued random variable is a real random vector of length four, and its distribution is a Borel measure on $\mathbb{H}$.</p>
 <h3 id="the-second-order-forms">The Second-Order Forms</h3>
 <p><strong>Definition.</strong> For centred square-integrable quaternion-valued random variables $\tilde p,\tilde q$, the four <strong>involuted covariances</strong> and the <strong>pseudo-covariance</strong> are</p>
 <p>$$
-R_k(\tilde p,\tilde q) = \mathbb{E}\bigl[\tilde p\,(\iota_k\tilde q)^{\natural}\bigr] , \quad k = 0,1,2,3 , \qquad P(\tilde p,\tilde q) = \mathbb{E}[\tilde p\tilde q] .
+R_k(\tilde p,\tilde q) = \mathbb{E}\bigl[\tilde p\,(\iota_k\tilde q)^{\natural}\bigr], \quad k = 0,1,2,3, \qquad P(\tilde p,\tilde q) = \mathbb{E}[\tilde p\tilde q].
 $$</p>
 <p>$R_0(\tilde p,\tilde q) = \mathbb{E}[\tilde p\tilde q^{\natural}]$ is the <strong>quaternion covariance</strong>, $R_k(\tilde p,\tilde q)$ for $k\neq0$ is the <strong>$\iota_k$-covariance</strong>, and $P$ is the <strong>pseudo-covariance</strong>; the values at $\tilde p = \tilde q$ are the corresponding variances.</p>
 <p>For the identity involution the definition returns the quaternion covariance of <em>Measure-Theoretic Probability</em>; the three further forms are the same construction with $\tilde q$ replaced by one of its involuted forms.</p>
 <p><strong>Proposition (symmetry).</strong> For every $k$,</p>
 <p>$$
-R_k(\tilde q,\tilde p) = (\iota_k\bigl(R_k(\tilde p,\tilde q)\bigr))^{\natural} .
+R_k(\tilde q,\tilde p) = (\iota_k\bigl(R_k(\tilde p,\tilde q)\bigr))^{\natural}.
 $$</p>
 <p>For $k = 0$ this is the Hermitian symmetry $R_0(\tilde q,\tilde p) = (R_0(\tilde p,\tilde q))^{\natural}$ of the quaternion covariance. The pseudo-covariance has no such symmetry; $\mathbb{E}[\tilde q\tilde p]$ is in general neither $\mathbb{E}[\tilde p\tilde q]$ nor its conjugate.</p>
 <p><em>Proof.</em> For fixed values, $\iota_k(\tilde p\,(\iota_k\tilde q)^{\natural}) = \iota_k\tilde p\cdot\tilde q^{\natural}$, because $\iota_k$ is an algebra automorphism and $\iota_k\iota_k = \mathrm{id}$; conjugating that gives $\tilde q\,(\iota_k\tilde p)^{\natural}$, and taking expectations is the identity. For the pseudo-covariance, $\mathbb{E}[\tilde p\tilde q]$ and $\mathbb{E}[\tilde q\tilde p]$ are sums of the two orders of the same products, which differ by commutators that need not vanish.</p>
 <h3 id="the-five-term-relation">The Five-Term Relation</h3>
 <p><strong>Theorem.</strong> The pseudo-covariance is determined by the four involuted covariances,</p>
 <p>$$
-P(\tilde p,\tilde q) = \tfrac12\bigl(R_1+R_2+R_3-R_0\bigr)(\tilde p,\tilde q) .
+P(\tilde p,\tilde q) = \tfrac12\bigl(R_1+R_2+R_3-R_0\bigr)(\tilde p,\tilde q).
 $$</p>
 <p><em>Proof.</em> By the recovery of the conjugate, $\frac12(\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q-\tilde q) = \tilde q^{\natural}$; conjugation is additive and real-linear, so the second factor of the right-hand side is $(\tilde q^{\natural})^{\natural} = \tilde q$.</p>
 <p><strong>Corollary (four suffice).</strong> Any four of the five forms determine the fifth; the five together carry $20-4 = 16$ independent real numbers, which is the number of real second-order forms of four components.</p>
@@ -234,14 +234,14 @@ $$</p>
 <h3 id="the-definition_1">The Definition</h3>
 <p><strong>Definition.</strong> A quaternion-valued sequence $(\tilde q_n)_{n\in\mathbb{Z}}$ of centred square-integrable random variables is <strong>second-order stationary</strong> when each of the five forms $R_k(\tilde q_n,\tilde q_{n-\ell})$ and $P(\tilde q_n,\tilde q_{n-\ell})$ depends only on the lag $\ell$ and not on $n$. The common values</p>
 <p>$$
-R_k(\ell) = \mathbb{E}\bigl[\tilde q_n\,(\iota_k\tilde q_{n-\ell})^{\natural}\bigr] , \qquad P(\ell) = \mathbb{E}\bigl[\tilde q_n\tilde q_{n-\ell}\bigr] ,
+R_k(\ell) = \mathbb{E}\bigl[\tilde q_n\,(\iota_k\tilde q_{n-\ell})^{\natural}\bigr], \qquad P(\ell) = \mathbb{E}\bigl[\tilde q_n\tilde q_{n-\ell}\bigr],
 $$</p>
 <p>are the five <strong>descriptor sequences</strong> of the sequence: the <strong>autocorrelation</strong> $R_0$, the three <strong>involuted autocorrelations</strong> $R_1,R_2,R_3$, and the <strong>pseudo-autocorrelation</strong> $P$.</p>
 <p>The existence of second-order stationary processes indexed by $\mathbb{Z}$ is the stationarity of <em>Markov Chains and Processes</em>, and the convergence of the sample averages $\frac1N\sum_n\tilde q_n(\iota_k\tilde q_{n-\ell})^{\natural}$ to the descriptors is the Birkhoff theorem of <em>Ergodic Theory</em>. The five-term relation holds at every lag.</p>
 <h3 id="symmetry-in-the-lag">Symmetry in the Lag</h3>
 <p><strong>Proposition.</strong> For every $k$ and every $\ell$,</p>
 <p>$$
-R_k(-\ell) = \overline{\iota_k R_k(\ell)} , \qquad N\bigl(R_k(-\ell)\bigr) = N\bigl(R_k(\ell)\bigr) , \qquad |R_k(-\ell)| = |R_k(\ell)| .
+R_k(-\ell) = \overline{\iota_k R_k(\ell)}, \qquad N\bigl(R_k(-\ell)\bigr) = N\bigl(R_k(\ell)\bigr), \qquad |R_k(-\ell)| = |R_k(\ell)|.
 $$</p>
 <p>In particular $R_0(-\ell) = \overline{R_0(\ell)}$, and for $k\neq0$ the value at the zero lag satisfies $R_k(0) = \overline{\iota_kR_k(0)}$, so its $e_k$-component vanishes.</p>
 <p><em>Proof.</em> The first identity is the symmetry of the previous section applied to the pair $(\tilde q_n,\tilde q_{n+\ell})$, with stationarity. The involution and the conjugation are orthogonal maps of $\mathbb{H}\cong\mathbb{R}^4$, so they preserve both $N$ and $|\cdot|$, which gives the next two. The vanishing of the $e_k$-component is the fixed-space statement of the first identity, since $\tilde q\mapsto\overline{\iota_k\tilde q}$ fixes exactly the quaternions with $q_k = 0$.</p>
@@ -251,7 +251,7 @@ $$</p>
 <h3 id="the-descriptor-matrices">The Descriptor Matrices</h3>
 <p><strong>Definition.</strong> For a second-order stationary sequence and $L\geq0$, the <strong>descriptor matrices</strong> are the $(L+1)\times(L+1)$ quaternion matrices with entries $(R_k)_{nm} = R_k(n-m)$ and $(R_P)_{nm} = P(n-m)$ for $0\leq n,m\leq L$.</p>
 <p><strong>Proposition.</strong> Each $R_k$ is a Toeplitz matrix, constant on its diagonals; $R_0$ is Hermitian, $R_0 = R_0^{\mathsf H}$; each $R_k$ with $k\neq0$ satisfies $R_k = \iota_k(R_k^{\mathsf H})$, the involution being applied entrywise; and the pseudo matrix is not symmetric, $R_P^{\mathsf T}\neq R_P$ in general.</p>
-<p><em>Proof.</em> The Toeplitz property is the dependence on $n-m$ alone. For $R_0$, the entries $(n,m)$ and $(m,n)$ are $R_0(n-m)$ and $\overline{R_0(n-m)}$ by the lag symmetry, so the matrix is Hermitian. For $R_k$, the same computation carries the involution along, giving $R_k = \iota_k(R_k^{\mathsf H})$. For the pseudo matrix, $R_P^{\mathsf T}$ has entries $P(m-n)$ where $R_P$ has $P(n-m)$; these differ whenever the pseudo-autocorrelation is not symmetric, which is the general case by the previous remark.</p>
+<p><em>Proof.</em> The Toeplitz property is the dependence on $n-m$ alone. For $R_0$, the entries $(p,q)$ and $(m,n)$ are $R_0(n-m)$ and $\overline{R_0(n-m)}$ by the lag symmetry, so the matrix is Hermitian. For $R_k$, the same computation carries the involution along, giving $R_k = \iota_k(R_k^{\mathsf H})$. For the pseudo matrix, $R_P^{\mathsf T}$ has entries $P(m-n)$ where $R_P$ has $P(n-m)$; these differ whenever the pseudo-autocorrelation is not symmetric, which is the general case by the previous remark.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -263,7 +263,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$R_0$</td>
-<td>$R_0(0) = \mathbb{E}[N(\tilde q_n)]$, real and non-negative</td>
+<td>$R_0(0) = \mathbb{E}[\langle\tilde q_n\rangle_{\natural}]$, real and non-negative</td>
 <td>Hermitian, $R_0 = R_0^{\mathsf H}$</td>
 </tr>
 <tr>
@@ -283,33 +283,33 @@ $$</p>
 <h3 id="the-sixteen-real-forms">The Sixteen Real Forms</h3>
 <p><strong>Definition.</strong> For a second-order stationary sequence with real components $q_0,q_1,q_2,q_3$, the <strong>real autocorrelations</strong> are</p>
 <p>$$
-r_{\mu\nu}(\ell) = \mathbb{E}\bigl[q_\mu(n)\,q_\nu(n-\ell)\bigr] , \qquad \mu,\nu\in\{0,1,2,3\} .
+r_{\mu\nu}(\ell) = \mathbb{E}\bigl[q_\mu(n)\,q_\nu(n-\ell)\bigr], \qquad \mu,\nu\in\{0,1,2,3\}.
 $$</p>
 <p>There are sixteen of them at each lag, and the symmetry $r_{\nu\mu}(\ell) = r_{\mu\nu}(-\ell)$ relates the two signs of the lag; the complete second-order information of the sequence is the sixteen functions.</p>
 <p><strong>Definition.</strong> For $\tilde p,\tilde q\in\mathbb{H}$ put $B_j = \tilde p\,(\iota_j\tilde q)^{\natural}$, and write $B_{j,\mu}$ for the $e_\mu$-component of $B_j$, $j,\mu\in\{0,1,2,3\}$.</p>
 <h3 id="the-diagonal-duality">The Diagonal Duality</h3>
 <p><strong>Theorem.</strong> For every $\mu$,</p>
 <p>$$
-p_\mu q_\mu = \frac14\sum_{j=0}^{3}\sigma_{j\mu}\,B_{j,0} .
+p_\mu q_\mu = \frac14\sum_{j=0}^{3}\sigma_{j\mu}\,B_{j,0}.
 $$</p>
 <p><em>Proof.</em> By the coordinate form of the involutions, $B_{j,0} = \mathrm{Sc}\bigl(\tilde p\,(\iota_j\tilde q)^{\natural}\bigr) = \sum_\nu\sigma_{j\nu}p_\nu q_\nu$. Summing over $j$ with the weights $\sigma_{j\mu}$ and using the row orthogonality leaves $4p_\mu q_\mu$ and nothing else.</p>
 <p>The four diagonal real forms are therefore the inverse sign transform of the scalar parts of the four quaternion forms, and the transform is its own inverse up to the factor $4$: it is the Hadamard transform of order four attached to the sign matrix.</p>
 <h3 id="the-off-diagonal-duality">The Off-Diagonal Duality</h3>
 <p><strong>Theorem.</strong> Let $k\in\{1,2,3\}$ and let $(k,l,m)$ be cyclic. Then</p>
 <p>$$
-\frac14\sum_{j=0}^{3}B_{j,k} = q_0p_k , \qquad \frac14\sum_{j=0}^{3}\sigma_{jk}B_{j,k} = -p_0q_k ,
+\frac14\sum_{j=0}^{3}B_{j,k} = q_0p_k, \qquad \frac14\sum_{j=0}^{3}\sigma_{jk}B_{j,k} = -p_0q_k,
 $$</p>
 <p>$$
-\frac14\sum_{j=0}^{3}\sigma_{jl}B_{j,k} = p_mq_l , \qquad \frac14\sum_{j=0}^{3}\sigma_{jm}B_{j,k} = -p_lq_m .
+\frac14\sum_{j=0}^{3}\sigma_{jl}B_{j,k} = p_mq_l, \qquad \frac14\sum_{j=0}^{3}\sigma_{jm}B_{j,k} = -p_lq_m.
 $$</p>
 <p>Together with the diagonal theorem, these formulas express each of the sixteen products $p_\mu q_\nu$ as $\pm\frac14$ times a signed sum of the four entries $B_{0,\kappa},B_{1,\kappa},B_{2,\kappa},B_{3,\kappa}$ for a single $\kappa$.</p>
 <p><em>Proof.</em> By the product rule of <em>Quaternion Algebra</em>, the product with the conjugate is</p>
 <p>$$
-\tilde q\tilde p^{\natural} = (q_0p_0+\vec q\cdot\vec p)+(p_0\vec q-q_0\vec p-\vec q\times\vec p) ,
+\tilde q\tilde p^{\natural} = (q_0p_0+\vec q\cdot\vec p)+(p_0\vec q-q_0\vec p-\vec q\times\vec p),
 $$</p>
 <p>so the $e_k$-component of $\tilde q\tilde p^{\natural}$ is $p_0q_k-q_0p_k-(\vec q\times\vec p)_k$. Taking $\tilde q = \tilde p$ and $\tilde p = \iota_j\tilde q$, whose components are $q_0$ and $\sigma_{j\nu}q_\nu$, gives</p>
 <p>$$
-B_{j,k} = q_0p_k-p_0\sigma_{jk}q_k-p_l\sigma_{jm}q_m+p_m\sigma_{jl}q_l ,
+B_{j,k} = q_0p_k-p_0\sigma_{jk}q_k-p_l\sigma_{jm}q_m+p_m\sigma_{jl}q_l,
 $$</p>
 <p>with $(k,l,m)$ cyclic, since $(\vec q\times\vec p)_k = q_lp_m-q_mp_l$.</p>
 <h3 id="consequences">Consequences</h3>
@@ -318,17 +318,17 @@ $$</p>
 <p><strong>Remark.</strong> The duality is not a coincidence of dimension four: it states that the four involutions are an orthogonal basis of the real-linear functionals of the pair generated by the quaternion product, so that the sixteen forms $B_{j,\kappa}$ and the sixteen forms $p_\mu q_\nu$ are two bases of the same space of real bilinear forms, related by a Hadamard transform in each variable. Four of the five quaternion forms carry sixteen real numbers, which is the count of the real forms, and the two theorems show the matching is exact.</p>
 <h2 id="widely-linear-estimation">Widely Linear Estimation</h2>
 <h3 id="the-two-classes">The Two Classes</h3>
-<p>Let $\tilde p$ and the regressor $\tilde q = (\tilde q_1,\dots,\tilde q_m)^{\mathsf T}$ be centred, square-integrable and jointly Gaussian, and let the estimator be chosen by minimising $\mathbb{E}[N(\tilde p-\hat{\tilde p})]$. Two classes are natural. The <strong>linear</strong> class consists of the estimators $\hat{\tilde p} = a^{\mathsf T}\tilde q$ with $a\in\mathbb{H}^m$; the <strong>widely linear</strong> class consists of</p>
+<p>Let $\tilde p$ and the regressor $\tilde q = (\tilde q_1,\dots,\tilde q_m)^{\mathsf T}$ be centred, square-integrable and jointly Gaussian, and let the estimator be chosen by minimising $\mathbb{E}[\langle\tilde p-\hat{\tilde p}\rangle_{\natural}]$. Two classes are natural. The <strong>linear</strong> class consists of the estimators $\hat{\tilde p} = a^{\mathsf T}\tilde q$ with $a\in\mathbb{H}^m$; the <strong>widely linear</strong> class consists of</p>
 <p>$$
-\hat{\tilde p} = \sum_{j=0}^{3}a_j^{\mathsf T}\,\iota_j\tilde q = a^{a\mathsf T}q^{a} , \qquad a^{a} = (a_0,a_1,a_2,a_3)^{\mathsf T} ,
+\hat{\tilde p} = \sum_{j=0}^{3}a_j^{\mathsf T}\,\iota_j\tilde q = a^{a\mathsf T}q^{a}, \qquad a^{a} = (a_0,a_1,a_2,a_3)^{\mathsf T},
 $$</p>
 <p>which is linear in the augmented regressor; the linear class is the case $a_1 = a_2 = a_3 = 0$. By the span proposition the widely linear class is exactly the class of real-linear functions of the $4m$ real components of the regressor, so no estimator is lost by the restriction to quaternion coefficients, and the gain of the class over the linear one is the gain of the involution frames.</p>
 <h3 id="the-conditional-expectation">The Conditional Expectation</h3>
 <p><strong>Theorem.</strong> Let $\tilde p$ and $\tilde q$ be centred and jointly Gaussian. Then the conditional expectation is widely linear,</p>
 <p>$$
-\mathbb{E}[\tilde p\,|\,\tilde q] = g^{\mathsf T}\tilde q+h^{\mathsf T}\iota_1\tilde q+u^{\mathsf T}\iota_2\tilde q+v^{\mathsf T}\iota_3\tilde q ,
+\mathbb{E}[\tilde p\,|\,\tilde q] = g^{\mathsf T}\tilde q+h^{\mathsf T}\iota_1\tilde q+u^{\mathsf T}\iota_2\tilde q+v^{\mathsf T}\iota_3\tilde q,
 $$</p>
-<p>with constant quaternion coefficient vectors, and it minimises $\mathbb{E}[N(\tilde p-\hat{\tilde p})]$ over the widely linear class.</p>
+<p>with constant quaternion coefficient vectors, and it minimises $\mathbb{E}[\langle\tilde p-\hat{\tilde p}\rangle_{\natural}]$ over the widely linear class.</p>
 <p><em>Proof.</em> Conditioning on $\tilde q$ is conditioning on the $\sigma$-algebra generated by its $4m$ real components; for jointly Gaussian vectors the conditional expectation of one coordinate is an affine function of the conditioning coordinates, and it is linear here because the variables are centred. The conditional expectation of a square-integrable variable is the $L^2$ projection onto the subspace of measurable functions of that algebra, by <em>Independence and Conditional Expectation</em>. That subspace contains the regressors and hence, being closed under real-linear combinations, contains their real span, which is the widely linear class by the span proposition; the projection therefore lies in the class and is its minimiser.</p>
 <h3 id="the-coefficient-matrix">The Coefficient Matrix</h3>
 <p><strong>Proposition.</strong> Let $\hat{\tilde p} = \sum_j a_j^{\mathsf T}\iota_j\tilde q$ be widely linear. Then the augmented estimator is $p^{a} = Mq^{a}$, where the $4\times4$ block matrix $M$ has entries $M_{jm} = \iota_j(a_{j\oplus m})$, the four rows being the involutions of the first row in the order permuted by $\oplus$. For the linear subclass the matrix is diagonal, $M = \operatorname{diag}(a_0,\iota_1a_0,\iota_2a_0,\iota_3a_0)$.</p>
@@ -337,11 +337,11 @@ $$</p>
 <h3 id="least-squares">Least Squares</h3>
 <p><strong>Theorem.</strong> Among the widely linear estimators of $\tilde p$ from $\tilde q$ there is a unique mean-square minimiser, and it is characterised by the orthogonality conditions</p>
 <p>$$
-\mathbb{E}\bigl[(\tilde p-\hat{\tilde p})\,(\iota_j\tilde q_k)^{\natural}\bigr] = 0 , \qquad j\in\{0,1,2,3\} , \quad k\in\{1,\dots,m\} .
+\mathbb{E}\bigl[(\tilde p-\hat{\tilde p})\,(\iota_j\tilde q_k)^{\natural}\bigr] = 0, \qquad j\in\{0,1,2,3\}, \quad k\in\{1,\dots,m\}.
 $$</p>
 <p>The matrix of the resulting normal equations is built from the descriptors, the inner product of two augmented regressors being</p>
 <p>$$
-\bigl\langle \iota_j\tilde q_k,\iota_n\tilde q_p\bigr\rangle = \mathrm{Sc}\bigl(R_{j\oplus n}(\tilde q_k,\tilde q_p)\bigr) ,
+\bigl\langle \iota_j\tilde q_k,\iota_n\tilde q_p\bigr\rangle = \mathrm{Sc}\bigl(R_{j\oplus n}(\tilde q_k,\tilde q_p)\bigr),
 $$</p>
 <p>and the right-hand side is built in the same way from the crossed forms of $\tilde p$ and $\tilde q$.</p>
 <p><em>Proof.</em> The mean square error is the square of the norm for the inner product $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q^{\natural})$, which makes the square-integrable quaternion-valued random variables a real Hilbert space; the projection theorem gives existence, uniqueness and the orthogonality characterisation. For the inner product identity, $\iota_j\tilde q_k\,(\iota_n\tilde q_p)^{\natural} = \iota_j\bigl(\tilde q_k(\iota_{j\oplus n}\tilde q_p)^{\natural}\bigr)$, which follows from $\iota_j\tilde q^{\natural} = (\iota_j\tilde q)^{\natural}$ and $\iota_j\iota_j = \mathrm{id}$; taking scalar parts removes the involution from the front.</p>
@@ -349,26 +349,26 @@ $$</p>
 <h3 id="the-sequence">The Sequence</h3>
 <p>Take the three-sample quaternion sequence</p>
 <p>$$
-\tilde q_0 = -1-10e_1+e_2-e_3 , \qquad \tilde q_1 = -2-4e_1-6e_2+3e_3 , \qquad \tilde q_2 = -4-5e_1+3e_2+e_3 ,
+\tilde q_0 = -1-10e_1+e_2-e_3, \qquad \tilde q_1 = -2-4e_1-6e_2+3e_3, \qquad \tilde q_2 = -4-5e_1+3e_2+e_3,
 $$</p>
 <p>and let each descriptor be the sample average $\frac13\sum_n$ over the pairs of indices at the required separation, the lag convention being $R_k(\ell) = \frac13\sum_n\tilde q_n(\iota_k\tilde q_{n-\ell})^{\natural}$, so that $R_k(\ell)$ compares the value at $n$ with the value at $n-\ell$.</p>
 <h3 id="the-five-descriptor-sequences">The Five Descriptor Sequences</h3>
 <p>At the zero lag,</p>
 <p>$$
-R_0(0) = 73 , \qquad R_1(0) = 35+4e_2-\tfrac{20}{3}e_3 , \qquad R_2(0) = -\tfrac{85}{3}+\tfrac{44}{3}e_1-\tfrac{16}{3}e_3 ,
+R_0(0) = 73, \qquad R_1(0) = 35+4e_2-\tfrac{20}{3}e_3, \qquad R_2(0) = -\tfrac{85}{3}+\tfrac{44}{3}e_1-\tfrac{16}{3}e_3,
 $$</p>
 <p>$$
-R_3(0) = -\tfrac{155}{3}+36e_1-\tfrac{16}{3}e_2 , \qquad P(0) = -59+\tfrac{76}{3}e_1-\tfrac23e_2-6e_3 ,
+R_3(0) = -\tfrac{155}{3}+36e_1-\tfrac{16}{3}e_2, \qquad P(0) = -59+\tfrac{76}{3}e_1-\tfrac23e_2-6e_3,
 $$</p>
 <p>and at the first two lags,</p>
 <p>$$
-R_0(1) = \tfrac{46}{3}-\tfrac{40}{3}e_1+\tfrac13e_2+9e_3 , \qquad R_0(2) = \tfrac{56}{3}-\tfrac{31}{3}e_1+\tfrac{16}{3}e_2-10e_3 ,
+R_0(1) = \tfrac{46}{3}-\tfrac{40}{3}e_1+\tfrac13e_2+9e_3, \qquad R_0(2) = \tfrac{56}{3}-\tfrac{31}{3}e_1+\tfrac{16}{3}e_2-10e_3,
 $$</p>
 <p>$$
-R_1(1) = \tfrac{94}{3}-\tfrac43e_1+\tfrac{67}{3}e_2+\tfrac{59}{3}e_3 , \qquad R_2(1) = -\tfrac{74}{3}+\tfrac{62}{3}e_1-15e_2-\tfrac{89}{3}e_3 ,
+R_1(1) = \tfrac{94}{3}-\tfrac43e_1+\tfrac{67}{3}e_2+\tfrac{59}{3}e_3, \qquad R_2(1) = -\tfrac{74}{3}+\tfrac{62}{3}e_1-15e_2-\tfrac{89}{3}e_3,
 $$</p>
 <p>$$
-R_3(1) = -\tfrac{26}{3}+\tfrac{38}{3}e_1-\tfrac{23}{3}e_2-\tfrac{17}{3}e_3 , \qquad P(1) = -\tfrac{26}{3}+\tfrac{68}{3}e_1-\tfrac13e_2-\tfrac{37}{3}e_3 .
+R_3(1) = -\tfrac{26}{3}+\tfrac{38}{3}e_1-\tfrac{23}{3}e_2-\tfrac{17}{3}e_3, \qquad P(1) = -\tfrac{26}{3}+\tfrac{68}{3}e_1-\tfrac13e_2-\tfrac{37}{3}e_3.
 $$</p>
 <p>The values at the negative lags are the involutions of the conjugates of these, and the checks below use them.</p>
 <h3 id="the-symmetries-and-their-failures">The Symmetries and Their Failures</h3>

@@ -56,10 +56,10 @@
 <p>This article fixes the graded operators. The <strong>signed multiplication operators</strong> are the multiplication operators twisted by the grade involution: the left multiplication by $\alpha(x) = (-1)^{|x|}x$ instead of by $x$, and likewise on the right. They are not new operators – each is the conjugate of an ordinary multiplication by the parity operator $\Gamma(y) = \alpha(y)$, and this is the precise sense in which the sign is a twist of the grading rather than a second structure. The sign rule of the graded commutator then explains why the signed member of the two-sided family is the one that sees the odd part, which is the reason the group of this article exists.</p>
 <p>The Clifford algebra, its grading and its three intrinsic involutions are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the grading and the reason the signed member is not a second structure are <em>The Grading of the Clifford Algebra with Signed Inner Conjugation</em>; the one-sided operators and their composition are <em>One-Sided Operators on a Clifford Algebra</em>; the signed inner conjugation itself is <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>. Those are cited; this article adds the parity of an operator, the twisting by the grade involution, the graded commutator, and the super-structure that organises them. The base is a field $F$ of characteristic not $2$ and $q$ is non-degenerate.</p>
 <h2 id="the-grading-and-the-parity-of-an-operator">The Grading and the Parity of an Operator</h2>
-<p><strong>Definition.</strong> The <strong>grading</strong> of the Clifford algebra is the decomposition $\mathrm{Cl}(V,q) = \mathrm{Cl}^{0}(V,q)\oplus\mathrm{Cl}^{1}(V,q)$ into the spans of the products of an even and of an odd number of vectors; it satisfies $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$, so the algebra is a $\mathbb{Z}/2$-graded algebra. The <strong>grade involution</strong> is the automorphism $\alpha$ with $\alpha(y) = (-1)^{i}y$ on $\mathrm{Cl}^{i}$; it is the parity operator of the graded algebra.</p>
-<p><strong>Definition.</strong> A linear operator $T$ on the graded vector space $\mathrm{Cl}(V,q)$ is <strong>even</strong> when $T(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i}$ and <strong>odd</strong> when $T(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i+1}$; it is <strong>graded</strong>, or homogeneous of parity $|T|$, when it is one of the two. The <strong>graded commutator</strong> of two homogeneous operators is</p>
+<p><strong>Definition.</strong> The <strong>grading</strong> of the Clifford algebra is the decomposition $\mathrm{Cl}(V,\mathfrak{Q}) = \mathrm{Cl}^{0}(V,\mathfrak{Q})\oplus\mathrm{Cl}^{1}(V,\mathfrak{Q})$ into the spans of the products of an even and of an odd number of vectors; it satisfies $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$, so the algebra is a $\mathbb{Z}/2$-graded algebra. The <strong>grade involution</strong> is the automorphism $\alpha$ with $\alpha(y) = (-1)^{i}y$ on $\mathrm{Cl}^{i}$; it is the parity operator of the graded algebra.</p>
+<p><strong>Definition.</strong> A linear operator $T$ on the graded vector space $\mathrm{Cl}(V,\mathfrak{Q})$ is <strong>even</strong> when $T(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i}$ and <strong>odd</strong> when $T(\mathrm{Cl}^{i}) \subseteq \mathrm{Cl}^{i+1}$; it is <strong>graded</strong>, or homogeneous of parity $|T|$, when it is one of the two. The <strong>graded commutator</strong> of two homogeneous operators is</p>
 <p>$$
-[T, U\} = TU - (-1)^{|T||U|}UT .
+[T, Q\} = TQ - (-1)^{|T||Q|}QT .
 $$</p>
 <p><strong>Proposition.</strong> For a homogeneous element $x$ the left multiplication $L_x$ and the right multiplication $R_x$ are homogeneous operators of parity $|x|$:</p>
 <p>$$
@@ -71,7 +71,7 @@ $$</p>
 [L_x, R_y\} = \bigl(1 - (-1)^{|x||y|}\bigr)L_{xy} , \qquad [L_x, L_y\} = L_{xy - (-1)^{|x||y|}yx} , \qquad [R_x, R_y\} = R_{yx - (-1)^{|x||y|}xy} .
 $$</p>
 <p>In particular the left and the right families commute as ordinary operators, $L_xR_y = R_yL_x = L_{xy}$; their graded commutator $[L_x,R_y\}$ vanishes when a factor is even and equals $2L_{xy}$ when both elements are odd; and the graded commutator $[L_x,L_y\}$ vanishes exactly when $xy = (-1)^{|x||y|}yx$, which holds for two orthogonal vectors but not for two general even elements, the even part of a Clifford algebra being a Clifford algebra in its own right.</p>
-<p><strong>Proof.</strong> $L_xL_y = L_{xy}$ and $R_xR_y = R_{yx}$ are the multiplicativity of the left family and the anti-multiplicativity of the right family; $L_xR_y = R_yL_x = L_{xy}$ because both operators send $z$ to $xzy$. Substituting into $[T,U\} = TU - (-1)^{|T||U|}UT$ gives the three displays, the factor $1 - (-1)^{|x||y|}$ being zero unless $|x| = |y| = 1$, when it is $2$; and $L_{xy - (-1)^{|x||y|}yx} = 0$ is equivalent to $xy = (-1)^{|x||y|}yx$ because the left family is faithful, $L_z(1) = z$. The Clifford algebra is graded commutative exactly when that relation holds for all homogeneous pairs, which is the degenerate case named below.</p>
+<p><strong>Proof.</strong> $L_xL_y = L_{xy}$ and $R_xR_y = R_{yx}$ are the multiplicativity of the left family and the anti-multiplicativity of the right family; $L_xR_y = R_yL_x = L_{xy}$ because both operators send $z$ to $xzy$. Substituting into $[T,Q\} = TQ - (-1)^{|T||Q|}QT$ gives the three displays, the factor $1 - (-1)^{|x||y|}$ being zero unless $|x| = |y| = 1$, when it is $2$; and $L_{xy - (-1)^{|x||y|}yx} = 0$ is equivalent to $xy = (-1)^{|x||y|}yx$ because the left family is faithful, $L_z(1) = z$. The Clifford algebra is graded commutative exactly when that relation holds for all homogeneous pairs, which is the degenerate case named below.</p>
 <p><strong>Corollary (the sign rule for the signed family).</strong> For homogeneous $x$ and $y$ the signed families satisfy</p>
 <p>$$
 [\Lambda^{\alpha}_x, \Lambda^{\alpha}_y\} = \varepsilon_x\varepsilon_y\,[L_x, L_y\} , \qquad [\Lambda^{\alpha}_x, \mathrm{P}^{\alpha}_y\} = \varepsilon_x\varepsilon_y\,[L_x, R_y\} ,
@@ -80,7 +80,7 @@ $$</p>
 <p><strong>Proof.</strong> $\Lambda^{\alpha}_x = \varepsilon_xL_x$ and $\mathrm{P}^{\alpha}_y = \varepsilon_yR_y$ with $\varepsilon_x, \varepsilon_y$ real scalars of modulus one, and $|\Lambda^{\alpha}_x| = |x|$, $|\mathrm{P}^{\alpha}_y| = |y|$, so the rescaled operators have the same parities and the graded commutator is bilinear.</p>
 <p><strong>Remark (the ordinary bracket against the graded bracket).</strong> The two families commute as operators, so the ordinary bracket $[L_x,R_y] = 0$ carries no information; the graded bracket is zero when a factor is even and is $2L_{xy}$ for two odd factors, so it is the bracket that detects the parity. This is the reason the statements of the signed family are stated with the graded bracket and not with the ordinary one.</p>
 <h2 id="the-signed-multiplication-operators">The Signed Multiplication Operators</h2>
-<p><strong>Definition.</strong> For $x \in \mathrm{Cl}(V,q)$ the <strong>signed left multiplication</strong> and the <strong>signed right multiplication</strong> are</p>
+<p><strong>Definition.</strong> For $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed left multiplication</strong> and the <strong>signed right multiplication</strong> are</p>
 <p>$$
 \Lambda^{\alpha}_x(y) = \alpha(x)\,y, \qquad \mathrm{P}^{\alpha}_x(y) = y\,\alpha(x) .
 $$</p>
@@ -97,13 +97,13 @@ $$</p>
 $$</p>
 <p>so the signed left family is multiplicative in the written order, exactly like the ordinary left family, and the signed right family is anti-multiplicative, exactly like the ordinary right family; the twisting does not change the order.</p>
 <p><strong>Proof.</strong> Both identities are the computation $\Gamma L_x\Gamma\,\Gamma L_z\Gamma = \Gamma L_{xz}\Gamma$ and the right-handed analogue.</p>
-<p><strong>Remark (why the signed left multiplication is the useful one).</strong> The signed left multiplication by a vector $u$ is $\Lambda^{\alpha}_u(y) = -uy$, and its composition with the inverse of the other factor produces the reflection. Heuristically the sign flips the direction of an odd factor and turns the conjugation into a reflection; the precise statement is the reflection formula of <em>Two-Sided Operators with the Signed Product</em> and <em>The Sandwich with the Signed Product</em>.</p>
+<p><strong>Remark (why the signed left multiplication is the useful one).</strong> The signed left multiplication by a vector $a$ is $\Lambda^{\alpha}_a(y) = -uy$, and its composition with the inverse of the other factor produces the reflection. Heuristically the sign flips the direction of an odd factor and turns the conjugation into a reflection; the precise statement is the reflection formula of <em>Two-Sided Operators with the Signed Product</em> and <em>The Sandwich with the Signed Product</em>.</p>
 <h2 id="the-super-structure">The Super-Structure</h2>
 <p><strong>Definition.</strong> A <strong>superalgebra</strong> is an associative algebra with a $\mathbb{Z}/2$-grading for which the product is graded; it is <strong>graded commutative</strong> when $xy = (-1)^{|x||y|}yx$ for homogeneous elements. A Clifford algebra is a superalgebra, and it is graded commutative only in the degenerate cases, its even part being a Clifford algebra in its own right.</p>
-<p><strong>Definition.</strong> The <strong>super-commutant</strong> of a set of homogeneous operators $\mathcal{S}$ is the set of homogeneous operators $T$ with $[T, U\} = 0$ for every $U \in \mathcal{S}$. The <strong>supercentre</strong> of the algebra is the super-commutant of the multiplication operators inside the algebra.</p>
-<p><strong>Proposition.</strong> The supercentre of the Clifford algebra is the centre, $Z(\mathrm{Cl}(V,q))$, and the super-commutant of the left multiplications is</p>
+<p><strong>Definition.</strong> The <strong>super-commutant</strong> of a set of homogeneous operators $\mathcal{S}$ is the set of homogeneous operators $T$ with $[T, Q\} = 0$ for every $Q \in \mathcal{S}$. The <strong>supercentre</strong> of the algebra is the super-commutant of the multiplication operators inside the algebra.</p>
+<p><strong>Proposition.</strong> The supercentre of the Clifford algebra is the centre, $Z(\mathrm{Cl}(V,\mathfrak{Q}))$, and the super-commutant of the left multiplications is</p>
 <p>$$
-\{L_x : x \in \mathrm{Cl}(V,q)\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,q) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,q) \,\},
+\{L_x : x \in \mathrm{Cl}(V,\mathfrak{Q})\}^{\mathrm{s}} = \{\, R_y : y \in \mathrm{Cl}^{0}(V,\mathfrak{Q}) \,\} \oplus \{\, \Gamma R_y : y \in \mathrm{Cl}^{1}(V,\mathfrak{Q}) \,\},
 $$</p>
 <p>the even part of the super-commutant being the right multiplications and the odd part their conjugates by the parity operator.</p>
 <p><strong>Proof.</strong> The graded centre of a graded algebra is the set of homogeneous elements super-commuting with every element, and for a Clifford algebra it coincides with the centre. For the operator statement, let $T$ be homogeneous and super-commute with every $L_x$. If $T$ is even then $[T,L_x\} = [T,L_x]$ for all $x$, so $T$ lies in the ordinary commutant $\{L_x\}' = \{R_y\}$ of <em>One-Sided Operators on a Clifford Algebra</em>. If $T$ is odd, write $T = \Gamma S$; the condition $TL_x = (-1)^{|x|}L_xT$ becomes, after substituting $\Gamma L_{\alpha(x)} = L_x\Gamma$ and $L_{\alpha(x)} = (-1)^{|x|}L_x$, the condition $SL_x = L_xS$ for every $x$, so $S \in \{R_y\}$ and $T = \Gamma R_y$; the parity of $\Gamma R_y$ is that of $y$, which forces $y$ odd.</p>
@@ -129,7 +129,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathrm{Cl}^{i}(V,q)$</td>
+<td>$\mathrm{Cl}^{i}(V,\mathfrak{Q})$</td>
 <td>Even and odd parts, $i = 0, 1$</td>
 </tr>
 <tr>
@@ -145,7 +145,7 @@ $$</p>
 <td>Signed multiplication operators</td>
 </tr>
 <tr>
-<td>$[T,U\} = TU - (-1)^{|T||U|}UT$</td>
+<td>$[T,Q\} = TQ - (-1)^{|T||Q|}QT$</td>
 <td>Graded commutator</td>
 </tr>
 <tr>

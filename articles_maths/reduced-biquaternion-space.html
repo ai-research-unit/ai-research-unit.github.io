@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduced Biquaternion Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reduced-biquaternion-space"><strong>Reduced Biquaternion Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra is the commutative algebra
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+$$
+of dimension four over $\mathbb{R}$ and two over $\mathbb{C}$. This article fixes the <strong>space</strong>: the basis, the defining relations, the two idempotents and the isomorphism with the direct product of two copies of the complex field. It is the entry point of the category, and every later article reads its elements in the notation fixed here.</p>
+<p>The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $T=A+Bj$ are fixed in <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>: a reduced biquaternion is written with an upper-case letter and <strong>no tilde</strong>, with two complex coordinates, because its algebra has no quaternionic factor. The algebra is also the <strong>tessarines</strong> of Cockle, the <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra of the engineering literature; it is the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, and the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is its quaternionic companion.</p>
+<p>Three warnings are stated at once and repeated wherever they bear on a result. The algebra is <strong>commutative and associative</strong>, so it is not a matrix algebra and not a quaternion algebra; it <strong>has zero divisors</strong>, so it is not a field and not a division algebra, and an element is invertible exactly when a single complex number, its reduced norm, is nonzero; and the <strong>algebraic norm is an element of the algebra</strong>, while the <strong>topological norm is a positive real</strong>. The two are different objects and are never conflated (<em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>).</p>
+<p><strong>Boundaries.</strong> The space as a real and as a complex vector space, the change of scalars and the realification are <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>, below this article in this category. The involutions, their fixed and anti-fixed spaces and the group they generate are <em>The Two Involutions and the Group of Involutions</em>, below this article. The four general products and the forms and algebraic norms they carry are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, below this article; the multiplication read as an algebra is <em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>. The conjugations, the idempotents and the roots are named here only as far as the space requires.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<h3 id="the-basis-and-the-defining-relations">The Basis and the Defining Relations</h3>
+<p><strong>The algebra is generated by two commuting square roots, one of $-1$ and one of $+1$: the central imaginary $i$ with $i^{2}=-1$ and the hyperbolic unit $j$ with $j^{2}=+1$.</strong></p>
+<p><strong>Definition.</strong> The <strong>reduced biquaternion algebra</strong> is the commutative unital $\mathbb{R}$-algebra with basis $1,i,j,ij$ and multiplication determined by</p>
+<p>$$
+i^{2}=-1,\qquad j^{2}=+1,\qquad ji=ij,
+$$</p>
+<p>the product being extended to the whole space by bilinearity and associativity.</p>
+<p>The two relations fix the product of every pair of basis elements, and the third, $ji=ij$, is what makes the algebra commutative. The element $ij$ is the second square root of $-1$: $(ij)^{2}=i^{2}j^{2}=(-1)(+1)=-1$. The algebra is therefore generated by two elements, $i$ and $j$, and every element is a real combination of $1,i,j,ij$.</p>
+<h3 id="the-multiplication-table">The Multiplication Table</h3>
+<p><strong>The sixteen products of the basis close on the basis up to sign, and the table is the one below.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$1$</th>
+<th>$i$</th>
+<th>$j$</th>
+<th>$ij$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$i$</td>
+<td>$j$</td>
+<td>$ij$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$i$</td>
+<td>$-1$</td>
+<td>$ij$</td>
+<td>$-j$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>$j$</td>
+<td>$ij$</td>
+<td>$1$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$ij$</td>
+<td>$ij$</td>
+<td>$-j$</td>
+<td>$i$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The table is the rule $i^{2}=-1$, $j^{2}=1$, $ij=ji$ read pair by pair: $i\cdot ij=i^{2}j=-j$; $j\cdot ij=ij^{2}=i$; $ij\cdot ij=(ij)(ij)=i^{2}j^{2}=-1$. The identity row and the identity column are the first, and every entry is $\pm1$ or $\pm$ a basis unit.</p>
+<p>The table is <strong>symmetric</strong>, because the product is commutative, in contrast with the quaternion table; and it is <strong>not</strong> the table of a group of order four, because the basis is not closed, $i^{2}=-1$ and $(ij)^{2}=-1$ falling outside it although $1$ and $j$ square back into it. The four elements $\pm1,\pm j$ close under the product and form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$; the two elements $\pm ij$ do not extend it.</p>
+<h3 id="the-two-complex-readings">The Two Complex Readings</h3>
+<p><strong>The same space is a two-dimensional complex vector space on the basis $1,j$, and its elements are pairs of complex numbers; the two readings are the reason the algebra carries two commuting conjugations.</strong></p>
+<p><strong>Definition.</strong> A <strong>general element</strong> is</p>
+<p>$$
+T=A+Bj,\qquad A=a+ia',\qquad B=b+ib',
+$$</p>
+<p>with $A,B\in\mathbb{C}$ and $a,a',b,b'\in\mathbb{R}$. The complex number $A$ is the <strong>scalar part</strong>, the element $Bj$ the <strong>vector part</strong>, and the quadruple $(a,a',b,b')$ is the real coordinate reading of <em>The Four-Vector Element Representation of the Reduced Biquaternions</em>. The basis of the complex reading is $1,j$; the basis of the real reading is $1,i,j,ij$.</p>
+<p>The two readings are the two bases of the same set, and the change between them is <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>. The complex reading is the one the four products use, because the two coordinates $A$ and $B$ are the two slots of every product.</p>
+<h2 id="the-idempotent-decomposition">The Idempotent Decomposition</h2>
+<p><strong>The algebra contains two complementary idempotents, and every element is the sum of one element of the first idempotent line and one of the second, which is the reason the algebra is a direct product of two complex fields.</strong></p>
+<p><strong>Definition.</strong> The <strong>idempotents</strong> of the reduced biquaternion algebra are</p>
+<p>$$
+\Pi_{1}=\tfrac12(1+j),\qquad \Pi_{2}=\tfrac12(1-j).
+$$</p>
+<p><strong>Theorem (the two idempotents are complementary and orthogonal).</strong> The elements $\Pi_1,\Pi_2$ satisfy</p>
+<p>$$
+\Pi_{1}^{2}=\Pi_{1},\qquad \Pi_{2}^{2}=\Pi_{2},\qquad \Pi_{1}\Pi_{2}=0,\qquad \Pi_{1}+\Pi_{2}=1 .
+$$</p>
+<p><em>Proof.</em> $\Pi_{1}^{2}=\tfrac14(1+j)^{2}=\tfrac14(1+2j+j^{2})=\tfrac14(2+2j)=\Pi_{1}$, and the same for $\Pi_{2}$; $\Pi_{1}\Pi_{2}=\tfrac14(1+j)(1-j)=\tfrac14(1-j^{2})=0$; and the sum is $\tfrac12\bigl((1+j)+(1-j)\bigr)=1$.</p>
+<p><strong>Theorem (the idempotent decomposition).</strong> Every element $T=A+Bj$ is</p>
+<p>$$
+T=(A+B)\Pi_{1}+(A-B)\Pi_{2},
+$$</p>
+<p>and the two coefficients $A+B$ and $A-B$ are the <strong>idempotent coordinates</strong> of $T$.</p>
+<p><em>Proof.</em> Expand the right side, using $\Pi_{1}+\Pi_{2}=1$ and $\Pi_{1}-\Pi_{2}=j$:
+$(A+B)\Pi_{1}+(A-B)\Pi_{2}=A(\Pi_{1}+\Pi_{2})+B(\Pi_{1}-\Pi_{2})=A+Bj$.</p>
+<p>The decomposition is an <strong>algebra</strong> decomposition and not merely a linear one: because the idempotents are orthogonal, the product is componentwise in the two coordinates,</p>
+<p>$$
+T W=\bigl[(A+B)(C+D)\bigr]\Pi_{1}+\bigl[(A-B)(C-D)\bigr]\Pi_{2},
+$$</p>
+<p>so the product is carried by two independent copies of the complex multiplication. That is the whole content of the isomorphism of the next section, and the reason every quadratic question about the algebra splits into two complex questions.</p>
+<h2 id="the-isomorphism-with-the-direct-product">The Isomorphism with the Direct Product</h2>
+<p><strong>The algebra is isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by the component map $T\mapsto(A+B,A-B)$; the isomorphism is the reason there are zero divisors, no division and two maximal ideals.</strong></p>
+<p><strong>Theorem (the component map).</strong> The map</p>
+<p>$$
+\varphi:\mathbb{B}_{\mathrm{r}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
+\varphi(A+Bj)=(A+B,\;A-B),
+$$</p>
+<p>is an isomorphism of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, and its inverse is
+$\varphi^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.</p>
+<p><em>Proof.</em> The map is $\mathbb{C}$-linear and bijective, since $A=\tfrac12(u+v)$ and $B=\tfrac12(u-v)$; and it is multiplicative by the componentwise product displayed in the previous section, $\varphi(TW)=\varphi(T)\varphi(W)$. The identity $1$ maps to $(1,1)$. Hence it is an isomorphism.</p>
+<p><strong>Corollary (the algebra is a direct product of two fields).</strong> The reduced biquaternion algebra is the direct product of the fields $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$,</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2},
+$$</p>
+<p>each factor being a field isomorphic to $\mathbb{C}$, and the two projections are the idempotent coordinates.</p>
+<p><em>Proof.</em> The component map sends $\mathbb{C}\Pi_{1}$ to $\mathbb{C}\oplus\{0\}$ and $\mathbb{C}\Pi_{2}$ to $\{0\}\oplus\mathbb{C}$; a direct product of two fields is what a componentwise multiplication on a product of two fields is, and each factor is a copy of $\mathbb{C}$.</p>
+<p><strong>Corollary (zero divisors, and the absence of division).</strong> The algebra has <strong>zero divisors</strong>: every nonzero element of one idempotent line annihilates every element of the other,</p>
+<p>$$
+\Pi_{1}\Pi_{2}=0,\qquad\text{so}\qquad (A\Pi_{1})(B\Pi_{2})=0\quad\text{for all }A,B\in\mathbb{C}.
+$$</p>
+<p>An element $T$ is a <strong>unit</strong> exactly when both idempotent coordinates are nonzero, $A+B\neq0$ and $A-B\neq0$; otherwise it is a zero divisor. The algebra is therefore not a field and not a division algebra, and the set of zero divisors is the union of the two idempotent lines with the origin removed.</p>
+<p><em>Proof.</em> The product of an element of $\mathbb{C}\Pi_{1}$ and an element of $\mathbb{C}\Pi_{2}$ vanishes because $\Pi_{1}\Pi_{2}=0$. An element is a unit exactly when both components $A+B$ and $A-B$ are units of $\mathbb{C}$, that is both are nonzero; the inverse is then $\varphi^{-1}\bigl((A+B)^{-1},(A-B)^{-1}\bigr)$. The zero divisors, their geometry and their families are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>, below this article in this category; the criterion and the group of units are <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p>The two conditions $A+B=0$ and $A-B=0$ are the two equations $A=-B$ and $A=B$, each defining a <strong>complex line</strong> through the origin, namely $\mathbb{C}\Pi_{2}$ and $\mathbb{C}\Pi_{1}$. The zero-divisor set is the union of these two punctured lines, a complex-algebraic curve of two components; because it is a union of two planes and not the zero set of an irreducible cone, the algebra is not a division algebra and its <strong>null cone is degenerate</strong>. The reduced norm that reads the zero divisors is $A^{2}-B^{2}=(A+B)(A-B)$, the product of the two components; it is <em>Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<h2 id="the-position-among-the-hypercomplex-algebras">The Position Among the Hypercomplex Algebras</h2>
+<p><strong>The reduced biquaternion algebra is the complexification of the split-complex numbers and the complex companion of the split-biquaternion algebra; it is the only one of the four layers with no quaternionic factor and two commuting conjugations.</strong></p>
+<p>The space stands in a family, and the comparisons are read from <em>Conventions in Mathematics</em>.</p>
+<ul>
+<li>The <strong>split-complex numbers</strong> $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ are the same algebra over the reals, $\mathbb{D}=\{a+bj\}$ with $j^{2}=1$; the reduced biquaternion algebra is their complexification, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, obtained by letting the real coefficients $a,a'$ become complex.</li>
+<li>The <strong>biquaternions</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ replace the hyperbolic unit $j$ by three quaternion units, so the space is four-dimensional over $\mathbb{C}$ and <strong>non-commutative</strong>; the reduced biquaternion algebra is the commutative two-parameter system obtained when the three quaternion units collapse to the single hyperbolic unit $j$.</li>
+<li>The <strong>split-biquaternions</strong> $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ replace the complex coefficients by split-complex ones, so the space is four-dimensional over $\mathbb{D}$; the reduced biquaternion algebra is its commutative companion, with $\mathbb{H}$ replaced by $\mathbb{C}$.</li>
+</ul>
+<p>The algebra is associative and commutative throughout; it is <strong>not</strong> the algebra of a division structure, because of the two idempotent lines, and it is <strong>not</strong> the algebra of a quadratic space with a unique conjugation, because it carries two commuting conjugations, the bar and the natural sign (<em>The Two Involutions and the Group of Involutions</em>).</p>
+<h3 id="the-names">The Names</h3>
+<p>The algebra appears in three literatures under three names, and the corpus writes the first.</p>
+<ul>
+<li>The <strong>reduced biquaternion</strong> algebra is the name of the engineering literature after Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding (2004), where it carries the idempotent decomposition and a ring-valued norm used in a signal transform; the corpus records this source in <em>Conventions in Mathematics</em>, §<em>Sources</em>.</li>
+<li>The <strong>tessarines</strong> are the historical name of James Cockle (1849), who introduced the commutative four-dimensional system $\{1,i,j,ij\}$ with $j^{2}=+1$; the same source is recorded in <em>Conventions in Mathematics</em>.</li>
+<li>The <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra are the names current in the algebra and analysis literature, both recording the two-complex-coordinate reading $T=A+Bj$.</li>
+</ul>
+<p>The three names denote one set with one product, and the corpus uses the first for the layer and writes the elements $T=A+Bj$.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion algebra is
+$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+$$
+the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $T=A+Bj$ with $A=a+ia'$ and $B=b+ib'$, its scalar part $A$ and its vector part $Bj$; the glyph $\mathbb{B}_{\mathrm{r}}$ and the element $T=A+Bj$ are those of <em>Conventions in Mathematics</em>. The algebra contains the two complementary idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$, with $\Pi_{1}^{2}=\Pi_{1}$, $\Pi_{2}^{2}=\Pi_{2}$, $\Pi_{1}\Pi_{2}=0$ and $\Pi_{1}+\Pi_{2}=1$, and every element is $T=(A+B)\Pi_{1}+(A-B)\Pi_{2}$.</p>
+<p>The <strong>component map</strong> $\varphi(T)=(A+B,A-B)$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is <strong>commutative and associative</strong>, it <strong>has zero divisors</strong> — every element of $\mathbb{C}\Pi_{1}$ annihilates every element of $\mathbb{C}\Pi_{2}$ — and it is <strong>not a field and not a division algebra</strong>: an element is a unit exactly when both idempotent coordinates $A+B$ and $A-B$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $A^{2}-B^{2}=(A+B)(A-B)$.</p>
+<p>The algebra is the complexification of the split-complex numbers $\mathbb{D}$ and the commutative companion of the split-biquaternions $\mathbb{H}_{\mathbb{D}}$; it is the <strong>tessarines</strong> of Cockle and the <strong>double-complex</strong> or <strong>commutative hypercomplex</strong> algebra of the modern literature. The algebraic norm of a product (an element of the algebra) and the topological norm (a positive real) are distinct objects, and the warning is repeated in every article where it bears.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$</td>
+<td>the reduced biquaternion algebra, equivalently the tessarines or the double-complex numbers</td>
+</tr>
+<tr>
+<td>$1,i,j,ij$</td>
+<td>the basis, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$</td>
+</tr>
+<tr>
+<td>$ij$</td>
+<td>the second square root of $-1$, $(ij)^{2}=-1$</td>
+</tr>
+<tr>
+<td>$T=A+Bj$</td>
+<td>a general element, with $A=a+ia'$ and $B=b+ib'$ complex</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>the scalar part of $T$; $Bj$ the vector part</td>
+</tr>
+<tr>
+<td>$a,a',b,b'$</td>
+<td>the four real coordinates of $T$</td>
+</tr>
+<tr>
+<td>$\Pi_{1,2}=\tfrac12(1\pm j)$</td>
+<td>the two complementary idempotents</td>
+</tr>
+<tr>
+<td>$A+B$, $A-B$</td>
+<td>the idempotent coordinates of $T=(A+B)\Pi_{1}+(A-B)\Pi_{2}$</td>
+</tr>
+<tr>
+<td>$\varphi(T)=(A+B,A-B)$</td>
+<td>the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2}$</td>
+<td>the two idempotent lines, the components of the direct product</td>
+</tr>
+<tr>
+<td>$A^{2}-B^{2}=(A+B)(A-B)$</td>
+<td>the reduced norm, the criterion of invertibility</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the split-biquaternions, the quaternionic companion</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the split-complex numbers, the real companion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Conventions in Mathematics</em> (<code>articles_maths/conventions-in-mathematics.md</code>), §<em>The Elements and their Coefficients</em>, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $T=A+Bj$ and the idempotents $\Pi_{1,2}$.</li>
+<li><em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em> (<code>articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md</code>), below this article in this category, for the two readings of the space and the change of scalars.</li>
+<li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), below this article, for the bar, the natural sign, the star and the flat.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), below this article, for the four general products and the forms and norms they carry.</li>
+<li><em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article, for the multiplication read as an algebra.</li>
+<li><em>Split-Complex Algebra</em> (<code>articles_maths/split-complex-algebra.md</code>), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.</li>
+<li><em>Introduction to the Biquaternion Algebra</em> (<code>articles_maths/introduction-to-the-biquaternion-algebra.md</code>), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.</li>
+<li><em>Split-Biquaternion Algebra</em> (<code>articles_maths/split-biquaternion-algebra.md</code>), for the split complex companion $\mathbb{H}_{\mathbb{D}}$.</li>
+<li><em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md</code>), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.</li>
+<li>James Cockle, "On a new imaginary in algebra", <em>Philosophical Magazine</em> <strong>34</strong> (1849) 37–47, for the tessarines.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022, for the reduced biquaternion algebra of the engineering literature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

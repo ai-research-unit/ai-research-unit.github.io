@@ -55,7 +55,7 @@
 <p>A complex measure is a countable additive set function with complex values, and the theory of the integral
 associates with it its total variation $|\mu|$, a positive measure, and the <strong>polar decomposition</strong>
 $\mu=h\,|\mu|$ with $\lvert h\rvert=1$ almost everywhere, which is the measure-theoretic counterpart of the
-polar form $z=\lvert z\rvert e^{i\theta}$ of a complex number. The operation of complex conjugation acts on
+polar form $z=\lvert z\rvert \exp(i\theta)$ of a complex number. The operation of complex conjugation acts on
 the measures by conjugating their values,
 $$
 \bar\mu(A)=\overline{\mu(A)},
@@ -175,7 +175,7 @@ real and imaginary densities.</p>
 <h3 id="the-transform-and-its-involution-property">The Transform and Its Involution Property</h3>
 <p><strong>Definition.</strong> For a finite complex measure $\mu$ on $\mathbb R^n$ the <strong>Fourier–Stieltjes transform</strong> is
 $$
-\hat\mu(\xi)=\int_{\mathbb R^n}e^{-2\pi ix\cdot\xi}\,d\mu(x),
+\hat\mu(\xi)=\int_{\mathbb R^n}\exp(-2\pi ix\cdot\xi)\,d\mu(x),
 $$
 with the normalisation of <em>Fourier Analysis on Euclidean Spaces</em>; it is a bounded uniformly continuous
 function of $\xi$, with $\lVert\hat\mu\rVert_\infty\leq\lVert\mu\rVert$, and it determines $\mu$ uniquely.</p>
@@ -186,21 +186,21 @@ $$
 Consequently $\mu$ is Hermitian if and only if its transform is a Hermitian function,
 $\hat\mu(-\xi)=\overline{\hat\mu(\xi)}$, and $\mu$ is anti-Hermitian if and only if $\hat\mu$ is odd, with
 $\hat\mu(-\xi)=-\overline{\hat\mu(\xi)}$.</p>
-<p><strong>Proof.</strong> $\widehat{\bar\mu}(\xi)=\int e^{-2\pi ix\cdot\xi}d\bar\mu(x)
-=\overline{\int e^{2\pi ix\cdot\xi}d\mu(x)}=\overline{\hat\mu(-\xi)}$ by the conjugation of the integral and
+<p><strong>Proof.</strong> $\widehat{\bar\mu}(\xi)=\int \exp(-2\pi ix\cdot\xi)d\bar\mu(x)
+=\overline{\int \exp(2\pi ix\cdot\xi)d\mu(x)}=\overline{\hat\mu(-\xi)}$ by the conjugation of the integral and
 the sign change $x\mapsto-x$. The Hermitian condition $\hat\mu=\widehat{\bar\mu}$ is then the stated
 symmetry.</p>
 <h3 id="positive-definite-functions-and-the-cone-of-positive-measures">Positive Definite Functions and the Cone of Positive Measures</h3>
 <p><strong>Theorem (Bochner, recast).</strong> A continuous function $\varphi$ on $\mathbb R^n$ is positive definite if and
 only if $\varphi(x)=\hat\mu(-x)$ for a unique finite <strong>positive</strong> measure $\mu$, equivalently
-$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$; the Hermitian measures are exactly the measures whose
+$\varphi(x)=\int \exp(2\pi ix\cdot\xi)d\mu(\xi)$; the Hermitian measures are exactly the measures whose
 transforms satisfy the Hermitian symmetry, and the positive measures among them are exactly the transforms
 of the positive definite functions.</p>
 <p><strong>Proof.</strong> This is Bochner's theorem of <em>Positive Definite Functions and Hermitian Kernels</em>, the previous
 article of this group, with the transform of the present Article; the statement that a positive measure
 gives a positive definite function is the computation
 $$
-\sum_{i,j}\overline{c_i}c_j\hat\mu(x_j-x_i)=\int\Bigl\lvert\sum_ic_ie^{-2\pi ix_i\cdot\xi}\Bigr\rvert^2d\mu(\xi)\geq0 ,
+\sum_{i,j}\overline{c_i}c_j\hat\mu(x_j-x_i)=\int\Bigl\lvert\sum_ic_i\exp(-2\pi ix_i\cdot\xi)\Bigr\rvert^2d\mu(\xi)\geq0 ,
 $$
 and the converse is the theorem quoted.</p>
 <p>Thus the positive definite functions are the transforms of the positive cone in the Hermitian measures, and
@@ -281,7 +281,7 @@ space whose positive cone is closed, convex and spanned by the positive measures
 <td>Polar decomposition, $\lvert h\rvert=1$ a.e.</td>
 </tr>
 <tr>
-<td>$\hat\mu(\xi)=\int e^{-2\pi ix\cdot\xi}d\mu(x)$</td>
+<td>$\hat\mu(\xi)=\int \exp(-2\pi ix\cdot\xi)d\mu(x)$</td>
 <td>Fourier–Stieltjes transform</td>
 </tr>
 <tr>

@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>and the inverse is componentwise, $A^{-1} = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$.</p>
 <p><strong>Proof.</strong> The element $A$ is a unit iff $\varphi(A) = (A_+,A_-)$ is a unit of $\mathbb{R}\oplus\mathbb{R}$, and a pair is a unit iff both of its coordinates are nonzero.</p>
-<p>The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $A_+$ and $A_-$. The norm, the criterion $N(A) \neq 0$ and the components are <em>Split-Complex Norm and Invertibility</em>, where the group of units is treated as a Lie group.</p>
+<p>The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{D}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $A_+$ and $A_-$. The norm, the criterion $\langle A\rangle_{\natural} \neq 0$ and the components are <em>Split-Complex Norm and Invertibility</em>, where the group of units is treated as a Lie group.</p>
 <h2 id="reduced-not-a-field">Reduced, Not a Field</h2>
 <p>Two multiplicative properties sit side by side and pull in opposite directions: $\mathbb{D}$ has no nonzero nilpotent, and yet not every nonzero element is a unit.</p>
 <p><strong>Theorem (reduced).</strong> The only nilpotent of $\mathbb{D}$ is $0$; equivalently, the nilradical vanishes.</p>
@@ -134,16 +134,16 @@ $$</p>
 $$</p>
 <p>the matrix of multiplication by $A = a+ja'$ in the basis $\{1,j\}$: the first column is the coordinates of $A \cdot 1 = A$ and the second those of $A \cdot j = a'+ja$. These are the matrices of <strong>hyperbolic type</strong>, symmetric with equal diagonal entries, and their determinant and trace are</p>
 <p>$$
-\det\mathsf{M}_2(A) = a^2 - a'^2 = N(A), \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a ,
+\det\mathsf{M}_2(A) = a^2 - a'^2 = \langle A\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a ,
 $$</p>
-<p>the determinant and the trace of the regular element, the determinant being the norm $N(A)$ of <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>.</p>
+<p>the determinant and the trace of the regular element, the determinant being the norm $\langle A\rangle_{\natural}$ of <em>The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space</em>.</p>
 <p><strong>Proposition (degeneracy).</strong> The image $\mathsf{M}_2(\mathbb{D})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:</p>
 <p>$$
 \mathsf{M}_2(A) \;\sim\; \begin{pmatrix} A_+ & 0 \\ 0 & A_- \end{pmatrix}, \qquad A_\pm = a\pm a' .
 $$</p>
 <p><strong>Proof.</strong> The image is commutative because $\mathbb{D}$ is, and an $\mathbb{R}$-linear map $\mathsf{M}_2(B)$ commuting with every $\mathsf{M}_2(A)$ commutes in particular with $\mathsf{M}_2(j) = \left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$ and with $\mathsf{M}_2(1) = I$, which forces $B$ to have the same shape, so the commutant is the image. The conjugating basis is the idempotent basis $\{\Pi_1,\Pi_2\}$: in it the matrices are diagonal with entries $A_\pm$, since $A\Pi_1 = A_+\Pi_1$ and $A\Pi_2 = A_-\Pi_2$.</p>
 <p><strong>Corollary.</strong> The matrix model $\mathsf{M}_2$ is the algebra $\mathbb{R}\oplus\mathbb{R}$ in disguise: it is the diagonal subalgebra of $M_2(\mathbb{R})$, its centre is itself, and the image carries no idempotent other than the four diagonal projections and no nilpotent other than $0$.</p>
-<p>The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{D}$, obtained by regarding the algebra as a two-dimensional complex-like space, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are <em>The Matrix Element Representations of the Split-Complex Numbers</em>, and the element reading of the regular matrix is <em>Split-Complex Regular Element Representation</em>.</p>
+<p>The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{D}$, obtained by regarding the algebra as a two-dimensional complex-like space, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are <em>The Matrix Element Representations of the Split-Complexoid</em>, and the element reading of the regular matrix is <em>Split-Complex Regular Element Representation</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is the two-dimensional commutative associative unital $\mathbb{R}$-algebra generated by an element of square $+1$. Its defining polynomial splits, and by the Chinese remainder theorem it is the product of two copies of its base, $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, the isomorphism being $A\mapsto(A_+,A_-)$ with $A_\pm = a\pm a'$.</p>
 <p>Four properties single it out. It is <strong>reduced</strong>: $0$ is its only nilpotent. It is <strong>not a field</strong>: its nonzero non-units are its zero divisors, the null cone $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$. It has exactly <strong>two nontrivial idempotents</strong> $\Pi_{1,2}$, central, orthogonal and complete, which a field cannot have. And it is <strong>semisimple and not simple</strong>: its only two-sided ideals are $\{0\}$, the two lines $\mathbb{R}\Pi_{1,2}$ and $\mathbb{D}$, and its radical vanishes.</p>
@@ -191,7 +191,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(A) = \begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$</td>
-<td>Regular matrix of $A$, of determinant $N(A)$ and trace $2a$</td>
+<td>Regular matrix of $A$, of determinant $\langle A\rangle_{\natural}$ and trace $2a$</td>
 </tr>
 <tr>
 <td>$\dim_\mathbb{R}\mathbb{D} = 2$</td>

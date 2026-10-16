@@ -56,11 +56,11 @@
 <p>The base is a commutative ring $R$ in which $2$ is invertible. The isometry group of the form, the reflections and the special orthogonal group are algebraic objects of <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>; their geometry, once a definite form is chosen, is <em>Isometries and Orthogonal Transformations</em> and <em>The Rotation Group and Orientation</em> in Part IV. The exterior power $\Lambda^2 V$ and its universal property are taken from <em>The Exterior Algebra</em> and <em>Exterior Powers</em>; the general theory of Lie algebras, of the commutator bracket and of Cartan subalgebras is assumed from <em>Lie Algebras: A General Introduction</em> and <em>Lie Groups</em>, and is cited rather than rebuilt. The matrix groups belong to category 04; here the Lie algebra is the Lie-theoretic shadow of the isometry group, and the corresponding matrix groups are treated in <em>The Unitary and Symplectic Groups</em>.</p>
 <h2 id="the-lie-algebra-of-skew-transformations">The Lie Algebra of Skew Transformations</h2>
 <h3 id="definition">Definition</h3>
-<p>Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $q$ and polar form $B$. An $F$-linear map $A : V \to V$ is <strong>skew</strong> with respect to $B$ if</p>
+<p>Let $V$ be a finite-dimensional space over a field $F$ of characteristic not $2$, with non-degenerate quadratic form $\mathfrak{Q}$ and polar form $B$. An $F$-linear map $A : V \to V$ is <strong>skew</strong> with respect to $B$ if</p>
 <p>$$
 B(Au, v) + B(u, Av) = 0 \qquad (u, v \in V).
 $$</p>
-<p>The set of skew maps is written $\mathrm{SO}(V, q)$, and its elements are the <strong>infinitesimal isometries</strong> of $q$.</p>
+<p>The set of skew maps is written $\mathrm{SO}(V, \mathfrak{Q})$, and its elements are the <strong>infinitesimal isometries</strong> of $q$.</p>
 <p><strong>Proposition.</strong> Let $G$ be the Gram matrix of $B$ in a basis. Then $A$ is skew if and only if its matrix $M$ in that basis satisfies</p>
 <p>$$
 M^T G + G M = 0.
@@ -76,7 +76,7 @@ L_3 = \begin{pmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}.
 $$</p>
 <p>These are the infinitesimal rotations about the three coordinate axes.</p>
 <h3 id="the-bracket">The Bracket</h3>
-<p><strong>Proposition.</strong> The space $\mathrm{SO}(V, q)$ is closed under the commutator $[A, C] = AC - CA$, and with this bracket it is a Lie algebra over $F$, a Lie subalgebra of $\mathrm{GL}(V)$.</p>
+<p><strong>Proposition.</strong> The space $\mathrm{SO}(V, \mathfrak{Q})$ is closed under the commutator $[A, C] = AC - CA$, and with this bracket it is a Lie algebra over $F$, a Lie subalgebra of $\mathrm{GL}(V)$.</p>
 <p><strong>Proof.</strong> If $A$ and $C$ are skew, then for all $u, v$,</p>
 <p>$$
 B([A, C]u, v) = B(ACu, v) - B(CAu, v) = -B(Cu, Av) + B(Au, Cv) = B(u, CAv) - B(u, ACv) = -B(u, [A, C]v),
@@ -133,19 +133,19 @@ $$</p>
 <p>using that $I + A$ and $(I - A)^{-1}$ commute because both are polynomials in $A$. The Cayley transform is a birational map from the skew maps to the rotations that do not have $1$ as an eigenvalue; it is the rational counterpart of the exponential map of Part III.</p>
 <h2 id="structure-and-rank">Structure and Rank</h2>
 <h3 id="a-cartan-subalgebra">A Cartan Subalgebra</h3>
-<p>Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, q)$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators</p>
+<p>Assume $F = \mathbb{R}$ and $q$ definite, so that $\mathrm{SO}(V, \mathfrak{Q})$ is the definite orthogonal Lie algebra. Choose an orthonormal basis and pair the coordinates $(e_1, e_2), (e_3, e_4), \ldots$; let $\mathrm{H}$ be the space spanned by the block generators</p>
 <p>$$
 H_k = \varphi(e_{2k-1} \wedge e_{2k}),
 $$</p>
 <p>each of which rotates the corresponding coordinate plane and annihilates the rest. Then $\mathrm{H}$ is a <strong>Cartan subalgebra</strong>: it is abelian, and it is maximal among the abelian subalgebras consisting of semisimple elements. Its dimension is</p>
 <p>$$
-\operatorname{rank}\mathrm{SO}(V, q) = \left\lfloor \frac{n}{2} \right\rfloor,
+\operatorname{rank}\mathrm{SO}(V, \mathfrak{Q}) = \left\lfloor \frac{n}{2} \right\rfloor,
 $$</p>
-<p>which is also the dimension of a maximal torus of $\operatorname{SO}(V, q)$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a one-parameter maximal torus, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two independent one-parameter groups of planar rotations.</p>
+<p>which is also the dimension of a maximal torus of $\operatorname{SO}(V, \mathfrak{Q})$. Concretely, a maximal torus consists of the block-diagonal matrices with $\lfloor n/2 \rfloor$ rotation blocks, so $\operatorname{SO}(2)$ is its own maximal torus, $\operatorname{SO}(3)$ has a one-parameter maximal torus, and $\operatorname{SO}(4)$ has a two-dimensional torus, the product of two independent one-parameter groups of planar rotations.</p>
 <h3 id="the-split-and-definite-forms">The Split and Definite Forms</h3>
-<p>Over $\mathbb{R}$ the isomorphism class of $\mathrm{SO}(V, q)$ depends on the signature, not only on the dimension, because the Gram matrix can be brought to the form $\operatorname{diag}(1^p, (-1)^r)$ by Sylvester's law. Writing</p>
+<p>Over $\mathbb{R}$ the isomorphism class of $\mathrm{SO}(V, \mathfrak{Q})$ depends on the signature, not only on the dimension, because the Gram matrix can be brought to the form $\operatorname{diag}(1^p, (-1)^r)$ by Sylvester's law. Writing</p>
 <p>$$
-\mathrm{SO}(p, r) = \mathrm{SO}(V, q), \qquad q \cong p\langle 1\rangle \perp r\langle -1\rangle,
+\mathrm{SO}(p, r) = \mathrm{SO}(V, \mathfrak{Q}), \qquad q \cong p\langle 1\rangle \perp r\langle -1\rangle,
 $$</p>
 <p>the complexifications of all the $\mathrm{SO}(p, r)$ with $p + r = n$ are isomorphic to $\mathrm{SO}(n, \mathbb{C})$; over $\mathbb{R}$ they are the different real forms, of which the definite form $\mathrm{SO}(n) = \mathrm{SO}(n, 0)$ and the split form $\mathrm{SO}(m, m)$ or $\mathrm{SO}(m+1, m)$ are the extremes. The common complex dimension is $\binom{n}{2}$ and the common rank is $\lfloor n/2\rfloor$.</p>
 <h2 id="the-killing-form">The Killing Form</h2>
@@ -206,7 +206,7 @@ $$</p>
 <p><strong>Remark (the bracket relations).</strong> The first relation is the bracket of the rotational generators. For the last, using $K_i = iB_i - iA_i$ and $J_i = A_i + B_i$ gives $[K_i, K_j] = -[A_i,A_j] - [B_i,B_j] + [A_i,B_j] + [B_i,A_j] = -\sum\epsilon_{ijk}A_k - \sum\epsilon_{ijk}B_k = -\sum\epsilon_{ijk}J_k$, which is the stated sign; the middle relation likewise gives $\sum\epsilon_{ijk}K_k$.</p>
 <p><strong>Remark.</strong> The case $n = 4$ is the smallest in which the orthogonal Lie algebra has more than one isomorphism type over $\mathbb{R}$: $\mathrm{SO}(4) \cong \mathrm{SU}(2) \oplus \mathrm{SU}(2)$ is the definite form, while $\mathrm{SO}(3, 1)$ is an indefinite form with the same complexification. This is the Lie-theoretic form of the double-cover phenomena that the Clifford layer of the category describes.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>orthogonal Lie algebra</strong> $\mathrm{SO}(V, q)$ of a non-degenerate quadratic space is the space of <strong>skew</strong> maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.</p>
+<p>The <strong>orthogonal Lie algebra</strong> $\mathrm{SO}(V, \mathfrak{Q})$ of a non-degenerate quadratic space is the space of <strong>skew</strong> maps $A$ with $B(Au, v) + B(u, Av) = 0$, equivalently $M^T G + GM = 0$ in a basis, and it is a Lie subalgebra of $\mathrm{GL}(V)$ under the commutator. It is free of rank $\binom{n}{2}$ when $V$ is free of rank $n$ and $B$ is non-degenerate; for $q = 0$ it degenerates to $\mathrm{GL}(V)$, so non-degeneracy is essential.</p>
 <p>For any symmetric $B$ the formula $\varphi(u \wedge v)(x) = B(v, x)u - B(u, x)v$ gives a linear map $\Lambda^2 V \to \mathrm{SO}(V, B)$ which is an isomorphism when $B$ is non-degenerate. Transporting the commutator makes the <strong>bivectors</strong> $\Lambda^2 V$ a Lie algebra isomorphic to $\mathrm{SO}(V, B)$; the bracket of bivectors is their commutator as endomorphisms, and in dimension three it is the vector product.</p>
 <p>The <strong>Cayley transform</strong> $C(A) = (I + A)(I - A)^{-1}$ is the rational passage from the skew maps to the rotations that avoid the eigenvalue $1$; the exponential map, which needs the series and its convergence, is Part III's. The algebra has dimension $\binom{n}{2}$ and rank $\lfloor n/2\rfloor$, a Cartan subalgebra being spanned by the block generators of the coordinate planes; the <strong>split and definite forms</strong> $\mathrm{SO}(p, r)$ have a common complexification $\mathrm{SO}(n, \mathbb{C})$ and differ as real forms. In low dimensions $\mathrm{SO}(2)$ is one-dimensional abelian, $\mathrm{SO}(3) \cong \mathbb{R}^3$ with the vector product as bracket, and $\mathrm{SO}(3, 1) \cong \mathrm{SO}(1, 3) \cong \mathrm{SL}(2, \mathbb{C})$ as real Lie algebras, the two signatures being the same up to the order of the signs.</p>
 <p>The <strong>Killing form</strong> $\kappa(X, Y) = \operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ and the trace form $\beta(X, Y) = \operatorname{tr}(XY)$ are symmetric and invariant under the adjoint action. For the standard form on $F^n$ with $n \geq 3$ the two are proportional,</p>
@@ -237,7 +237,7 @@ $$</p>
 </tr>
 <tr>
 <td>$q$, $B$</td>
-<td>Quadratic form and its polar form, $q(v) = B(v, v)$</td>
+<td>Quadratic form and its polar form, $\mathfrak{Q}(v) = B(v, v)$</td>
 </tr>
 <tr>
 <td>$G$</td>
@@ -256,7 +256,7 @@ $$</p>
 <td>Lie algebra of all endomorphisms</td>
 </tr>
 <tr>
-<td>$\mathrm{SO}(V, q)$</td>
+<td>$\mathrm{SO}(V, \mathfrak{Q})$</td>
 <td>Orthogonal Lie algebra of skew maps</td>
 </tr>
 <tr>
@@ -316,7 +316,7 @@ $$</p>
 <td>Cartan subalgebra</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}\mathrm{SO}(V, q)$</td>
+<td>$\operatorname{rank}\mathrm{SO}(V, \mathfrak{Q})$</td>
 <td>$\lfloor n/2\rfloor$, dimension of a maximal torus</td>
 </tr>
 <tr>

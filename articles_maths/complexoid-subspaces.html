@@ -53,7 +53,7 @@
         <h1 id="complexoid-subspaces"><strong>Complexoid Subspaces</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, and the quadratic form they inherit.</p>
-<p>The algebra and its conventions are those of the companion article <em>Complex Algebra</em>: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors. The two involutions are treated in the article <em>Complex Automorphisms and Derivations</em>, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.</p>
+<p>The algebra and its conventions are those of the companion article <em>Complex Algebra</em>: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $\langle A\rangle = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors. The two involutions are treated in the article <em>Complex Automorphisms and Derivations</em>, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.</p>
 <h2 id="the-involutions-and-the-two-decompositions">The Involutions and the Two Decompositions</h2>
 <p><strong>Definition.</strong> An <strong>involution</strong> of $\mathbb{C}$ is an $\mathbb{R}$-linear map $\sigma : \mathbb{C} \to \mathbb{C}$ with $\sigma^2 = \operatorname{id}$. Its <strong>fixed subspace</strong> and <strong>anti-fixed subspace</strong> are</p>
 <p>$$
@@ -271,7 +271,7 @@ $$</p>
 A_+ = \tfrac{1}{2}(A + \bar{A}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
 A_- = \tfrac{1}{2}(A - \bar{A}) = 4i \in i\mathbb{R}_{\mathbb{C}},
 $$</p>
-<p>with $A_+ + A_- = 3 + 4i = A$, and the norm on the pieces is $N(A_+) = 9$ and $N(A_-) = 16$, whose sum $25 = N(A)$ is the norm of $A$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.</p>
+<p>with $A_+ + A_- = 3 + 4i = A$, and the norm on the pieces is $\langle A_+\rangle = 9$ and $\langle A_-\rangle = 16$, whose sum $25 = \langle A\rangle$ is the norm of $A$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.</p>
 <p><strong>A product that leaves a subspace.</strong> For $A_- = 4i$ and $B_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,</p>
 <p>$$
 A_- B_- = (4i)(5i) = 20\, i^2 = -20 \in \mathbb{R}_{\mathbb{C}},
@@ -316,7 +316,7 @@ $$</p>
 <td>imaginary subspace $\{A : \bar{A} = -A\} = \mathbb{R} i$, real dimension $1$</td>
 </tr>
 <tr>
-<td>$N(A) = A\bar{A} = a^2 + a'^2$</td>
+<td>$\langle A\rangle = A\bar{A} = a^2 + a'^2$</td>
 <td>the norm</td>
 </tr>
 <tr>

@@ -174,8 +174,8 @@ $$</p>
 <h3 id="the-sign-factor-as-an-exponential">The Sign Factor as an Exponential</h3>
 <p>The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.</p>
 <ul>
-<li><strong>The identity component.</strong> The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = e^{\theta} > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.</li>
-<li><strong>The nontrivial component.</strong> The negative root $\nu = -1$ gives $\exp(-\theta) = e^{-\theta} > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore <strong>not</strong> in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.</li>
+<li><strong>The identity component.</strong> The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = \exp(\theta) > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.</li>
+<li><strong>The nontrivial component.</strong> The negative root $\nu = -1$ gives $\exp(-\theta) = \exp(-\theta) > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore <strong>not</strong> in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.</li>
 </ul>
 <p>The exponential of the real algebra is thus the positive ray alone, and the sign factor is not produced by it. The correct statement of the exponential form is therefore</p>
 <p>$$
@@ -222,7 +222,7 @@ $$</p>
 <p>The verification is immediate in the basis: $1$ is fixed and $1^2 = +e_0$, so the scale direction has position fixed and signature $+1$; the sign direction is the same element $1$ up to the two signs, and it is fixed as well. Both rows of the table are therefore in the fixed subspace, and the anti-fixed subspace contributes nothing. Unlike the complex case, where the second factor is the anti-fixed imaginary direction, here both factors have the same position and the same signature; they differ in the sign and in whether they carry a continuous parameter.</p>
 <h3 id="the-two-slots-and-the-two-absent-ones">The Two Slots and the Two Absent Ones</h3>
 <p>The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{R}$ the scale is the continuous fixed slot, and the second occupied slot is the compact slot, which in $\mathbb{R}$ is discrete and carries the sign. The remaining two slots are absent, for the following reasons.</p>
-<p><strong>No boost, and no continuous rotor or phase.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_0$ <strong>off</strong> the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_0$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_0$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $e^{\pm\phi}$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The unit group contains exactly one continuous one-parameter subgroup, the scale.</p>
+<p><strong>No boost, and no continuous rotor or phase.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_0$ <strong>off</strong> the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_0$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_0$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $\exp(\pm\phi)$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The unit group contains exactly one continuous one-parameter subgroup, the scale.</p>
 <p><strong>The sign is the whole compact part.</strong> In the complex algebra the second factor is the connected circle $U(1)$, and the group of units is connected. Here the second factor is the disconnected group $O(1) = \{\pm1\}$, and it is the component group of $\mathbb{R}^\times$. The two-dimensional definite case is the first in which the second factor is connected, and the passage from $O(1)$ to $U(1)$ is the first place the family acquires a nontrivial continuous compact factor.</p>
 <h3 id="no-boundary">No Boundary</h3>
 <p>The polar representation of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $a \neq 0$ then $N(a) > 0$, so $r > 0$ and $\sigma = a/r$ is defined; there is no element with $N(a) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
@@ -353,7 +353,7 @@ $$</p>
 <h3 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h3>
 <p>The exponential of the real algebra is injective,</p>
 <p>$$
-e^{t_1} = e^{t_2} \iff t_1 = t_2,
+\exp(t_1) = \exp(t_2) \iff t_1 = t_2,
 $$</p>
 <p>so its kernel is $\{0\}$ and the continuous coordinate of a positive element is unique. The non-uniqueness that the complex and higher cases exhibit is absent here: the only ambiguity is the sign, which is a discrete choice and not a kernel element. In this sense the real algebra is the one member of the family whose continuous exponential coordinate is canonical.</p>
 <h2 id="comparison-with-the-other-members-of-the-series">Comparison with the Other Members of the Series</h2>
@@ -381,7 +381,7 @@ $$</p>
 <td>$\mathbb{C}$</td>
 <td>$u^2+v^2$, definite</td>
 <td>$\sqrt{N}$, positive real</td>
-<td>$e^{i\theta}$, $\theta$ mod $2\pi$</td>
+<td>$\exp(i\theta)$, $\theta$ mod $2\pi$</td>
 <td>scale, circle (rotation and central phase together)</td>
 <td>connected, $\mathbb{R}_{>0}\times U(1)$</td>
 </tr>
@@ -389,7 +389,7 @@ $$</p>
 <td>$\mathbb{D}$</td>
 <td>$u^2-v^2$, indefinite</td>
 <td>$\sqrt{\lvert N\rvert}$, positive real</td>
-<td>$e^{\phi j}$ or $je^{\phi j}$</td>
+<td>$\exp(\phi j)$ or $j\exp(\phi j)$</td>
 <td>scale, hyperbola (rotation and boost together)</td>
 <td>four components, non-compact</td>
 </tr>

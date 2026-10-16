@@ -74,7 +74,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>principal $G$-bundle</strong> is a fibre bundle $\pi : P \to B$ with a free and transitive right action of $G$ on each fibre, such that the action is smooth and $B = P/G$. Its transition functions are elements of $G$, and a <strong>section</strong> of a principal bundle over an open set is a local trivialisation.</p>
 <p><strong>Definition.</strong> Let $P \to B$ be a principal $G$-bundle and let $F$ be a manifold with a left $G$-action. The <strong>associated bundle</strong> is</p>
 <p>$$
-P \times_G F = (P \times F)/G, \qquad (p \cdot g, v) \sim (p, g \cdot v),
+P \times_G F = (P \times F)/G, \qquad (n \cdot g, v) \sim (n, g \cdot v),
 $$</p>
 <p>a fibre bundle over $B$ with fibre $F$. Every vector bundle of rank $k$ with structure group $G \subseteq GL_k$ is associated to a principal $G$-bundle, the <strong>frame bundle</strong> of the vector bundle.</p>
 <p><strong>Example.</strong> The <strong>tangent bundle</strong> $TM \to M$ is a vector bundle of rank $n = \dim M$, with fibre the tangent space and structure group $GL_n(\mathbb{R})$; its principal frame bundle $GL(M)$ has fibre $GL_n(\mathbb{R})$, and a point of $GL(M)$ over $x$ is a linear frame in $T_xM$. The <strong>cotangent bundle</strong> $T^*M$ is the dual vector bundle, and $\Lambda^kT^*M$ is the bundle of forms of <em>Differential Forms and Stokes' Theorem</em>. For a Riemannian manifold the <strong>orthonormal frame bundle</strong> is a principal $O(n)$-bundle associated to $TM$.</p>
@@ -114,7 +114,7 @@ $$</p>
 <p>$$
 \omega(A^{\#}) = A \ \text{ for all } A \in \mathrm{G}, \qquad R_g^*\omega = \operatorname{Ad}(g^{-1})\,\omega \ \text{ for all } g \in G.
 $$</p>
-<p>The <strong>horizontal subspace</strong> at $p \in P$ is $H_pP = \ker\omega_p \subseteq T_pP$, and it is complementary to the vertical subspace $T_p(P_{\pi(p)})$.</p>
+<p>The <strong>horizontal subspace</strong> at $n \in P$ is $H_pP = \ker\omega_n \subseteq T_pP$, and it is complementary to the vertical subspace $T_n(P_{\pi(n)})$.</p>
 <p><strong>Proposition.</strong> A connection form exists on every principal bundle, and the horizontal distribution $H = \ker\omega$ is a $G$-invariant distribution complementary to the vertical distribution; a distribution with these properties determines a unique connection form.</p>
 <p><strong>Proof.</strong> Existence: on a local trivialisation $U \times G$ define $\omega = \mathrm{pr}_2^*\theta$, where $\theta$ is the Maurer–Cartan form of $G$; patch the local forms with a partition of unity and correct by the $\operatorname{Ad}$-equivariance to obtain a global form satisfying both conditions. The equivalence with a $G$-invariant complement is the definition of the kernel and the existence of the fundamental vector fields.</p>
 <p><strong>Definition.</strong> Let $s : U \to P$ be a local section, so that $U \times G \to \pi^{-1}(U)$, $(x, g) \mapsto s(x)\cdot g$, is a trivialisation. The <strong>local connection form</strong> is $\omega_s = s^*\omega \in \Omega^1(U; \mathrm{G})$, and for $s' = s \cdot h$ with $h : U \to G$,</p>
@@ -180,7 +180,7 @@ $$</p>
 <p>the <strong>first Chern class</strong> of $L$, independent of the connection. For a connection compatible with a Hermitian structure on $L$ the curvature is $\mathrm{U}(1)$-valued and the form is real, and the class is then the image in real cohomology of an integral class in $H^2(M; \mathbb{Z})$.</p>
 <p><strong>Example (Pontryagin classes).</strong> Let $E \to M$ be a real vector bundle of rank $k$ with a connection of curvature $R$, an $\operatorname{End}E$-valued $2$-form. The invariant polynomials</p>
 <p>$$
-p_j(E) = \left[(-1)^j \operatorname{tr}\!\left(\frac{R}{2\pi}\wedge\cdots\wedge\frac{R}{2\pi}\right)\right] \in H^{4j}_{dR}(M)
+n_j(E) = \left[(-1)^j \operatorname{tr}\!\left(\frac{R}{2\pi}\wedge\cdots\wedge\frac{R}{2\pi}\right)\right] \in H^{4j}_{dR}(M)
 $$</p>
 <p>are the <strong>Pontryagin classes</strong> of $E$, the trace being taken in $\operatorname{End}E$ and the wedge product repeated $2j$ times. They vanish in odd degree, and for a complex bundle the Chern classes $c_j(E)$ are the invariant polynomials obtained from $\det(I + \frac{i}{2\pi}R)$.</p>
 <p><strong>Example (Euler class).</strong> For a real oriented vector bundle of rank $2j$ the Pfaffian of the curvature is an invariant polynomial, and its Chern–Weil form is normalised as $\operatorname{Pf}(R/2\pi)$; its class is the <strong>Euler class</strong> $e(E) \in H^{2j}_{dR}(M)$, the normalisation by $(2\pi)^{-j}$ being the one that makes the class integral. For the tangent bundle of a compact oriented manifold of dimension $2j$,</p>
@@ -254,7 +254,7 @@ $$</p>
 <td>Connection form on a principal bundle</td>
 </tr>
 <tr>
-<td>$H_pP = \ker\omega_p$</td>
+<td>$H_pP = \ker\omega_n$</td>
 <td>Horizontal subspace; $G$-invariant complement to the vertical</td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ $$</p>
 <td>Chern–Weil form and homomorphism</td>
 </tr>
 <tr>
-<td>$c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $p_j(E)$, $e(E)$</td>
+<td>$c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $n_j(E)$, $e(E)$</td>
 <td>First Chern, Pontryagin, and Euler classes</td>
 </tr>
 <tr>

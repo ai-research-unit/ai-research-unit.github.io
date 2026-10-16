@@ -53,15 +53,15 @@
         <h1 id="clifford-modules-and-the-twisted-cauchyriemann-operator"><strong>Clifford Modules and the Twisted Cauchy–Riemann Operator</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A Clifford module is a module over a Clifford algebra, and over a manifold it becomes a bundle of modules twisted by the spinor bundle. On such a twisted module there is a canonical first-order operator, formed by contracting the covariant derivative with Clifford multiplication, which generalises both the Cauchy–Riemann operator of complex analysis and its Clifford-analytic relatives. This article builds the operator, shows that it is elliptic and odd for the natural grading, computes the square — the Weitzenböck formula — and evaluates the index of the resulting elliptic complex.</p>
-<p>The Clifford-module theory used here — modules over $\mathrm{Cl}(V,q)$, the spinor module, the chirality grading and the half-spin modules — is from <em>Spin Representations and Clifford Modules with Inner Conjugation</em>. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is that of <em>Fibre Bundles, Connections and Curvature</em>. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is, and its biquaternion form is; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject, and only the twisted case is treated here.</p>
+<p>The Clifford-module theory used here — modules over $\mathrm{Cl}(V,\mathfrak{Q})$, the spinor module, the chirality grading and the half-spin modules — is from <em>Spin Representations and Clifford Modules with Inner Conjugation</em>. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is that of <em>Fibre Bundles, Connections and Curvature</em>. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is, and its biquaternion form is; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject, and only the twisted case is treated here.</p>
 <h2 id="clifford-modules">Clifford Modules</h2>
-<p><strong>Definition.</strong> Let $(V,q)$ be a quadratic space over $\mathbb{R}$ or $\mathbb{C}$. A <strong>Clifford module</strong> for $\mathrm{Cl}(V,q)$ is a vector space $E$ with an algebra homomorphism $\mathrm{Cl}(V,q)\to\operatorname{End}(E)$, equivalently a linear map $c\colon V\to\operatorname{End}(E)$ with</p>
+<p><strong>Definition.</strong> Let $(V,\mathfrak{Q})$ be a quadratic space over $\mathbb{R}$ or $\mathbb{C}$. A <strong>Clifford module</strong> for $\mathrm{Cl}(V,\mathfrak{Q})$ is a vector space $E$ with an algebra homomorphism $\mathrm{Cl}(V,\mathfrak{Q})\to\operatorname{End}(E)$, equivalently a linear map $c\colon V\to\operatorname{End}(E)$ with</p>
 <p>$$
-c(v)^2=q(v)\,\mathrm{id}_{E}, \qquad c(v)c(w)+c(w)c(v)=2B(v,w)\,\mathrm{id}_{E},
+c(v)^2=\mathfrak{Q}(v)\,\mathrm{id}_{E}, \qquad c(v)c(w)+c(w)c(v)=2B(v,w)\,\mathrm{id}_{E},
 $$</p>
 <p>where $B$ is the polar form.</p>
 <p><strong>Definition.</strong> A <strong>$\mathbb{Z}/2$-graded Clifford module</strong> is a Clifford module $E=E_0\oplus E_1$ such that $c(v)$ is odd, $c(v)E_j\subseteq E_{1-j}$. The <strong>chirality operator</strong> of an even-dimensional module is the Clifford action of the volume element, and its $\pm1$-eigenspaces are the <strong>half-modules</strong> $E_\pm$.</p>
-<p><strong>Theorem (structure of Clifford modules).</strong> Let $(V,q)$ be a non-degenerate real quadratic space of dimension $n$ and let $S$ be its spinor module. If $\mathrm{Cl}(V,q)$ is simple — that is, for $n$ even, and for $n$ odd with $d=p-q\equiv3,7\bmod8$ — every finite-dimensional Clifford module $E$ is a direct sum of copies of the unique irreducible module $S$. If $n$ is odd with $d\equiv1,5\bmod8$, where the algebra is a product of two simple factors, then $E$ is a direct sum of copies of each of the two irreducible modules. In the simple case, in particular in the even case, this reads $E\cong S\otimes W$ for a vector space $W$, with the Clifford action $c(v)=c_S(v)\otimes\mathrm{id}_W$.</p>
+<p><strong>Theorem (structure of Clifford modules).</strong> Let $(V,\mathfrak{Q})$ be a non-degenerate real quadratic space of dimension $n$ and let $S$ be its spinor module. If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple — that is, for $n$ even, and for $n$ odd with $d=n-m\equiv3,7\bmod8$ — every finite-dimensional Clifford module $E$ is a direct sum of copies of the unique irreducible module $S$. If $n$ is odd with $d\equiv1,5\bmod8$, where the algebra is a product of two simple factors, then $E$ is a direct sum of copies of each of the two irreducible modules. In the simple case, in particular in the even case, this reads $E\cong S\otimes W$ for a vector space $W$, with the Clifford action $c(v)=c_S(v)\otimes\mathrm{id}_W$.</p>
 <p><strong>Proof.</strong> The Clifford algebra is central simple over $\mathbb{R}$ for $n$ even, is simple with centre $\mathbb{C}$ for $n$ odd with $d\equiv3,7\bmod8$, and is a product of two simple algebras for $n$ odd with $d\equiv1,5\bmod8$, by the classification of the preceding articles; over a simple algebra every module is a direct sum of copies of the simple module, and over a product of two simple algebras it is a direct sum of copies of the simple module of each factor. The tensor form of the action is the definition of the tensor product action.</p>
 <p><strong>Definition.</strong> The vector space $W$ is the <strong>twisting space</strong>, and $E=S\otimes W$ is the <strong>twisted Clifford module</strong>; a Clifford module is <strong>untwisted</strong> when $W$ is one-dimensional.</p>
 <p><strong>Remark.</strong> The structure theorem is the reason the twisting space is useful: in the simple case, in particular in even dimensions, a general Clifford module is a spinor module tensored with an arbitrary coefficient space, so any statement about Clifford modules reduces to a statement about the spinor module and a coefficient representation; in the odd non-simple case it reduces to two such statements, one for each simple factor. Over a manifold this becomes a statement about a vector bundle $W\to M$ tensored with the spinor bundle, and the operator of this article is the one that acts on the resulting sections.</p>
@@ -128,7 +128,7 @@ $$</p>
 <h2 id="the-index-computation">The Index Computation</h2>
 <p><strong>Theorem (McKean–Singer).</strong> For $t>0$ the index is given by the heat-kernel supertrace</p>
 <p>$$
-\operatorname{ind}(D_+)=\operatorname{Tr}\bigl(e^{-tD_-D_+}\bigr)-\operatorname{Tr}\bigl(e^{-tD_+D_-}\bigr),
+\operatorname{ind}(D_+)=\operatorname{Tr}\bigl(\exp(-tD_-D_+)\bigr)-\operatorname{Tr}\bigl(\exp(-tD_+D_-)\bigr),
 $$</p>
 <p>and the right-hand side is independent of $t$.</p>
 <p><strong>Proof.</strong> The nonzero eigenvalues of $D_-D_+$ and $D_+D_-$ coincide, with the same multiplicities, by the standard argument: if $D_+D_-v=\lambda v$ with $\lambda\neq0$ then $D_-v$ is an eigenvector of $D_-D_+$ with the same eigenvalue, and the map is a bijection between the eigenspaces. The trace difference therefore selects only the eigenvalue $0$; the kernel of $D_-D_+$ is $\ker D_+$ and the kernel of $D_+D_-$ is $\ker D_-$, so the difference is $\dim\ker D_+-\dim\ker D_-$. Since the nonzero spectra agree, the difference is $t$-independent.</p>
@@ -143,7 +143,7 @@ $$</p>
 \operatorname{ind}(D_+)=\int_M\operatorname{ch}(L)=\int_M\bigl(1+c_1(L)\bigr)=k.
 $$</p>
 <p>The index of the twisted operator is therefore the degree of the twisting line bundle; it is an integer, and the theorem produces the integrality rather than assuming it.</p>
-<p><strong>Example (a four-dimensional spin manifold).</strong> Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}p_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}p_1$. Hence</p>
+<p><strong>Example (a four-dimensional spin manifold).</strong> Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}n_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}n_1$. Hence</p>
 <p>$$
 \operatorname{ind}(D_+)=-\frac{1}{24}\int_Mp_1(TM)=-\frac{\sigma(M)}{8},
 $$</p>
@@ -170,8 +170,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathrm{Cl}(V,q)$, $c(v)$</td>
-<td>Clifford algebra and Clifford multiplication, $c(v)^2=q(v)$</td>
+<td>$\mathrm{Cl}(V,\mathfrak{Q})$, $c(v)$</td>
+<td>Clifford algebra and Clifford multiplication, $c(v)^2=\mathfrak{Q}(v)$</td>
 </tr>
 <tr>
 <td>$S$</td>
@@ -222,7 +222,7 @@ $$</p>
 <td>Lichnerowicz formula, untwisted case</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}(e^{-tD_-D_+})-\operatorname{Tr}(e^{-tD_+D_-})$</td>
+<td>$\operatorname{Tr}(\exp(-tD_-D_+))-\operatorname{Tr}(\exp(-tD_+D_-))$</td>
 <td>McKean–Singer supertrace, equal to the index</td>
 </tr>
 <tr>

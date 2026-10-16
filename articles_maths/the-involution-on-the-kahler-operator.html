@@ -60,7 +60,7 @@ the Lefschetz operator, with formal adjoint the contraction $\Lambda = L^{*}$; t
 $$
 \star^{2} = (-1)^{k(2n-k)}\,\mathrm{id} \quad \text{on } \Omega^{k}, \qquad \star L = \Lambda\star , \qquad \star\Lambda = L\star ;
 $$
-the second is the <strong>complex conjugation</strong> of forms, the map $\sigma(\alpha) = \bar\alpha$ exchanging the bidegrees $(p,q)$ and $(q,p)$, a conjugate-linear involution that commutes with $L$ and $\Lambda$ because the Kähler form is real. Their composite $C = \star\sigma$ (the "conjugate Hodge star") is the involution of the Kähler operator proper: it is the conjugation that carries the Lefschetz operator to the contraction,
+the second is the <strong>complex conjugation</strong> of forms, the map $\sigma(\alpha) = \bar\alpha$ exchanging the bidegrees $(n,m)$ and $(m,n)$, a conjugate-linear involution that commutes with $L$ and $\Lambda$ because the Kähler form is real. Their composite $C = \star\sigma$ (the "conjugate Hodge star") is the involution of the Kähler operator proper: it is the conjugation that carries the Lefschetz operator to the contraction,
 $$
 C\,L\,C^{-1} = \Lambda, \qquad C\,\Lambda\,C^{-1} = L,
 $$
@@ -81,7 +81,7 @@ $$
 \star L = \Lambda\star, \qquad \star\Lambda = L\star .
 $$</p>
 <p><strong>Proof.</strong> The identity $\star L = \Lambda\star$ is the classical pairing of exterior multiplication with contraction through the star, with the sign convention of the Hodge star fixed as in <em>The Volume Element, Duality and the Hodge Star</em>; it holds on a Kähler manifold because $\omega$ is parallel and the star is built from the metric and the volume element. Applying $\star^{2}$ to both sides and cancelling the scalar $(-1)^{k(2n-k)}$ gives the second identity. The Hodge star and its properties are <em>The Volume Element, Duality and the Hodge Star</em>, and the Kähler intertwining is <em>The Kähler Form Operator</em>.</p>
-<p><strong>Proposition (the complex conjugation).</strong> The complex conjugation of forms $\sigma(\alpha) = \bar\alpha$ is a conjugate-linear involution of the exterior algebra, $\sigma^{2} = \mathrm{id}$, it exchanges the bidegrees, $\sigma(\Omega^{p,q}) = \Omega^{q,p}$, it is an isometry up to the conjugation of the scalar, $(\sigma\alpha,\sigma\beta) = \overline{(\alpha,\beta)}$, and it commutes with the Kähler operator and the contraction,
+<p><strong>Proposition (the complex conjugation).</strong> The complex conjugation of forms $\sigma(\alpha) = \bar\alpha$ is a conjugate-linear involution of the exterior algebra, $\sigma^{2} = \mathrm{id}$, it exchanges the bidegrees, $\sigma(\Omega^{n,m}) = \Omega^{m,n}$, it is an isometry up to the conjugation of the scalar, $(\sigma\alpha,\sigma\beta) = \overline{(\alpha,\beta)}$, and it commutes with the Kähler operator and the contraction,
 $$
 \sigma L = L\sigma, \qquad \sigma\Lambda = \Lambda\sigma,
 $$
@@ -103,7 +103,7 @@ $$
 $$
 is a positive-definite Hermitian inner product on the complex-valued forms, and it is invariant under the Hodge star and conjugate-invariant under the complex conjugation; the formal adjoints $d^{*}$, $\partial^{*}$, $\bar\partial^{*}$ are the adjoints of $d$, $\partial$, $\bar\partial$ for it.</p>
 <p><strong>Proof.</strong> The wedge with the star of the conjugate is the metric pairing against the volume element, positive definite because the metric is positive; the star is an isometry, and the conjugation is an antiunitary involution by the previous proposition. The formal adjoints are <em>The Codifferential</em> and <em>Hermitian Metrics and the Codifferential</em>.</p>
-<p><strong>Corollary (the symmetry of the Kähler structure).</strong> The map $C = \star\sigma$ is the involution under which the Kähler operator and the contraction are exchanged, and it is self-adjoint for $(\cdot,\cdot)$ up to sign; the Lefschetz decomposition and the Hodge–Riemann form are invariant under $C$, which is why the Kähler cohomology is symmetric in the passage from $L$ to $\Lambda$ and from $(p,q)$ to $(n-p,n-q)$.</p>
+<p><strong>Corollary (the symmetry of the Kähler structure).</strong> The map $C = \star\sigma$ is the involution under which the Kähler operator and the contraction are exchanged, and it is self-adjoint for $(\cdot,\cdot)$ up to sign; the Lefschetz decomposition and the Hodge–Riemann form are invariant under $C$, which is why the Kähler cohomology is symmetric in the passage from $L$ to $\Lambda$ and from $(n,m)$ to $(N-n, N-m)$.</p>
 <p><strong>Proof.</strong> The first assertion is the theorem; the invariance of the decomposition follows from the commutation relations and the definition of primitive forms, and the symmetry of the Hodge–Riemann form is the $\mathfrak{sl}_2$-symmetry. This is <em>The Kähler Form Operator</em>.</p>
 <p><strong>Example (the Riemann surface).</strong> For $n = 1$ the exterior algebra of a Riemann surface has the forms $1, dz, d\bar z, dz\wedge d\bar z$; the star satisfies $\star 1 = dz\wedge d\bar z$ and acts on the $(1,0)$- and $(0,1)$-forms by $\pm i$, and $C = \star\sigma$ exchanges $L$ (multiplication by the area form) with $\Lambda$ (contraction), so the involution is the Poincaré duality of the surface read through the complex conjugation. On $\mathbb{CP}^n$ the same involution exchanges the powers $L^{k}$ and $\Lambda^{k}$ of the Lefschetz and contraction operators, giving the symmetry of the Hodge numbers and the hard Lefschetz theorem.</p>
 <h2 id="summary">Summary</h2>
@@ -139,7 +139,7 @@ is a positive-definite Hermitian inner product on the complex-valued forms, and 
 </tr>
 <tr>
 <td>$\sigma(\alpha)=\bar\alpha$</td>
-<td>the complex conjugation, exchanging $(p,q)$</td>
+<td>the complex conjugation, exchanging $(n,m)$</td>
 </tr>
 <tr>
 <td>$C=\star\sigma$</td>

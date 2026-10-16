@@ -100,24 +100,24 @@ $$</p>
 <h3 id="the-adjoint-of-an-operator">The Adjoint of an Operator</h3>
 <p><strong>Definition.</strong> Let $b : V \times V \to k$ be a $k$-bilinear form, nondegenerate, and let $T \in \operatorname{End}_{k}(V)$. The <strong>adjoint</strong> of $T$ with respect to $b$ is the operator $T^{*}$ with</p>
 <p>$$
-b(Tv, w) = b(v, T^{*}w) \qquad (v, w \in V),
+\mathfrak{b}(Tv, w) = \mathfrak{b}(v, T^{*}w) \qquad (v, w \in V),
 $$</p>
 <p>which exists and is unique because $b$ is nondegenerate. The operator $T$ is <strong>self-adjoint</strong> when $T^{*} = T$, and <strong>skew-adjoint</strong> when $T^{*} = -T$; the involution $T \mapsto T^{*}$ is the <strong>adjoint operation</strong> of the form.</p>
 <p><strong>Theorem.</strong> The adjoint operation is additive and reverses the product,</p>
 <p>$$
 (S + T)^{*} = S^{*} + T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad \mathrm{id}^{*} = \mathrm{id},
 $$</p>
-<p>so it is an anti-automorphism of the algebra of operators. For a form that is $\varepsilon$-symmetric, $b(w,v) = \varepsilon\, b(v,w)$ with $\varepsilon = \pm 1$, the adjoint operation is an involution, $(T^{*})^{*} = T$. The self-adjoint and the skew-adjoint operators are the fixed and the anti-fixed parts of the adjoint operation when two is invertible.</p>
-<p><strong>Proof.</strong> The additivity is linearity of $b$ in the first variable; the reversal of the product is $b(STv,w) = b(Tv, S^{*}w) = b(v, T^{*}S^{*}w)$; the unit is the definition. For the double adjoint, the $\varepsilon$-symmetry gives $b(w,v) = \varepsilon\, b(v,w)$, so $b(T^{*}v,w) = \varepsilon\, b(w,T^{*}v) = \varepsilon\, b(Tw,v) = \varepsilon^{2}\, b(v,Tw) = b(v,Tw)$, using the defining relation $b(Tw,v) = b(w,T^{*}v)$ and the symmetry again; hence $(T^{*})^{*} = T$. The last clause is the eigenspace decomposition of an involution.</p>
+<p>so it is an anti-automorphism of the algebra of operators. For a form that is $\varepsilon$-symmetric, $\mathfrak{b}(w,v) = \varepsilon\, \mathfrak{b}(v,w)$ with $\varepsilon = \pm 1$, the adjoint operation is an involution, $(T^{*})^{*} = T$. The self-adjoint and the skew-adjoint operators are the fixed and the anti-fixed parts of the adjoint operation when two is invertible.</p>
+<p><strong>Proof.</strong> The additivity is linearity of $b$ in the first variable; the reversal of the product is $\mathfrak{b}(STv,w) = \mathfrak{b}(Tv, S^{*}w) = \mathfrak{b}(v, T^{*}S^{*}w)$; the unit is the definition. For the double adjoint, the $\varepsilon$-symmetry gives $\mathfrak{b}(w,v) = \varepsilon\, \mathfrak{b}(v,w)$, so $\mathfrak{b}(T^{*}v,w) = \varepsilon\, \mathfrak{b}(w,T^{*}v) = \varepsilon\, \mathfrak{b}(Tw,v) = \varepsilon^{2}\, \mathfrak{b}(v,Tw) = \mathfrak{b}(v,Tw)$, using the defining relation $\mathfrak{b}(Tw,v) = \mathfrak{b}(w,T^{*}v)$ and the symmetry again; hence $(T^{*})^{*} = T$. The last clause is the eigenspace decomposition of an involution.</p>
 <h3 id="the-involution-and-the-adjoint">The Involution and the Adjoint</h3>
-<p><strong>Theorem.</strong> Let the form $b$ be preserved by the involution, $b(\sigma v, \sigma w) = b(v, w)$ for all $v, w$. Then the conjugation by $\sigma$ commutes with the adjoint operation:</p>
+<p><strong>Theorem.</strong> Let the form $b$ be preserved by the involution, $b(\sigma v, \sigma w) = \mathfrak{b}(v, w)$ for all $v, w$. Then the conjugation by $\sigma$ commutes with the adjoint operation:</p>
 <p>$$
 (\sigma T \sigma)^{*} = \sigma T^{*}\sigma \qquad (T \in \operatorname{End}_{k}(V)).
 $$</p>
 <p>Consequently an equivariant operator has an equivariant adjoint; the commutant of $\sigma$ is closed under the adjoint operation; and the self-adjoint and the skew-adjoint equivariant operators form the fixed and the anti-fixed parts of the adjoint operation on the commutant.</p>
-<p><strong>Proof.</strong> Using $b(\sigma u, \sigma w) = b(u,w)$, that is $b(\sigma u, w) = b(u, \sigma w)$ because $\sigma^{2} = \mathrm{id}$, compute</p>
+<p><strong>Proof.</strong> Using $b(\sigma u, \sigma w) = \mathfrak{b}(u,w)$, that is $b(\sigma u, w) = \mathfrak{b}(u, \sigma w)$ because $\sigma^{2} = \mathrm{id}$, compute</p>
 <p>$$
-b(\sigma T \sigma v, w) = b(T\sigma v, \sigma w) = b(\sigma v, T^{*}\sigma w) = b(v, \sigma T^{*}\sigma w),
+b(\sigma T \sigma v, w) = \mathfrak{b}(T\sigma v, \sigma w) = b(\sigma v, T^{*}\sigma w) = \mathfrak{b}(v, \sigma T^{*}\sigma w),
 $$</p>
 <p>so that $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$. If $T$ is equivariant, $\sigma T\sigma = T$, and the identity gives $T^{*} = \sigma T^{*}\sigma$, that is, $T^{*}$ is equivariant. The last clause is the restriction of the adjoint operation to the commutant, which is well defined by the previous sentence.</p>
 <p><strong>Corollary.</strong> The two involutions of the operator algebra, the conjugation by $\sigma$ and the adjoint operation of an invariant form, commute; the group they generate is the four-element group of the Klein type when both are not the identity, and the operators that are both equivariant and self-adjoint are the common fixed points. An invertible equivariant operator has an equivariant inverse, because $\sigma T = T\sigma$ implies $\sigma T^{-1} = T^{-1}\sigma$; and an equivariant unitary operator satisfies $T^{*}T = TT^{*} = \mathrm{id}$, so on it the two structures agree.</p>

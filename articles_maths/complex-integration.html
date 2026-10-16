@@ -55,7 +55,7 @@
 <p>This article develops integration for functions of one complex variable. It follows the article on complex analysis, which defined the complex plane, its metric, limits, continuity, holomorphy and the Cauchy–Riemann equations, and it takes up the contour integral in the form the rest of the complex theory needs. The aim is to construct the integral from first principles, to state the Cauchy theorem and the Cauchy integral formula with the hypotheses they actually require, and to derive the residue theory and analytic continuation from them.</p>
 <p>The complex case is the model case of hypercomplex integration. Because $\mathbb{C}$ is a field, every non-zero element is invertible, there are no zero divisors, and the algebra is commutative; none of the obstructions that complicate the integration theory of $\mathbb{H}$, of the split complex numbers or of the dual numbers is present. The contour integral of a continuous function along a piecewise continuously differentiable path always exists, the Cauchy theorem holds without qualification on a simply connected domain, and the residue theorem computes the integral exactly. What is specific to $\mathbb{C}$ is that the values of the integral on closed paths are governed by the winding number, an integer-valued homotopy invariant of the path.</p>
 <p>No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.</p>
-<p>For notation, complex numbers are written $A = a + i a'$ with $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$, and modulus $|A| = \sqrt{a^2+a'^2}$, following <em>Complex Analysis</em>. The Cauchy–Riemann operator is $\partial_{\bar A} = \tfrac12(\partial_a + i \partial_{a'})$, and a function is holomorphic exactly when $\partial_{\bar A} f = 0$. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $A_0$ is written $C(A_0, r)$ and is always positively oriented unless the opposite is stated.</p>
+<p>For notation, complex numbers are written $A = a + i a'$ with $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$, and modulus $|A| = \sqrt{a^2+a'^2}$, following <em>Complex Analysis</em>. The Cauchy–Riemann operator is $\partial_{\bar A} = \tfrac12(\partial_a + i \partial_{a'})$, and a function is holomorphic exactly when $\partial_{\bar A} f = 0$. The exponential $\exp(i\theta) = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $A_0$ is written $C(A_0, r)$ and is always positively oriented unless the opposite is stated.</p>
 <h2 id="the-complex-integral">The Complex Integral</h2>
 <h3 id="paths-and-contours">Paths and Contours</h3>
 <p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a, b] \to \mathbb{C}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$; the one-sided derivatives at the junctions may differ. A path is <strong>smooth</strong> if it is $C^1$ on all of $[a, b]$, <strong>closed</strong> if $\gamma(a) = \gamma(b)$, and <strong>simple</strong> if it is injective on $[a, b)$; a simple closed path is also called a <strong>contour</strong>.</p>
@@ -66,9 +66,9 @@ $$</p>
 <p>finite because $\gamma'$ is piecewise continuous on a compact interval. The corresponding element of arclength is $|dA| = |\gamma'(t)| \, dt$.</p>
 <p><strong>Example.</strong> For $A_0 \in \mathbb{C}$ and $r > 0$ the positively oriented circle</p>
 <p>$$
-\gamma(t) = A_0 + r e^{it}, \qquad t \in [0, 2\pi],
+\gamma(t) = A_0 + r \exp(it), \qquad t \in [0, 2\pi],
 $$</p>
-<p>is a contour, with $\gamma'(t) = i r e^{it}$ and $L(\gamma) = 2\pi r$.</p>
+<p>is a contour, with $\gamma'(t) = i r \exp(it)$ and $L(\gamma) = 2\pi r$.</p>
 <h3 id="construction-from-the-riemann-sum">Construction from the Riemann Sum</h3>
 <p>The integral along a path is defined by the limiting procedure that defines the Riemann integral, with the real increment of the variable replaced by the complex increment of the path.</p>
 <p><strong>Definition.</strong> Let $\gamma : [a, b] \to \mathbb{C}$ be piecewise $C^1$ and let $f$ be continuous on $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $A_k = \gamma(t_k)$ and form the <strong>Riemann sum</strong></p>
@@ -128,7 +128,7 @@ $$</p>
 $$</p>
 <p>for every closed path that does not pass through the origin. The excluded case $n = -1$ is the fundamental one:</p>
 <p>$$
-\oint_{|A| = r} \frac{dA}{A} = \int_0^{2\pi} \frac{ire^{it}}{re^{it}} \, dt = 2\pi i \neq 0 .
+\oint_{|A| = r} \frac{dA}{A} = \int_0^{2\pi} \frac{ir\exp(it)}{r\exp(it)} \, dt = 2\pi i \neq 0 .
 $$</p>
 <p>So $1/A$ admits no primitive on $\mathbb{C}^\times$, and the value $2\pi i$ is the source of the entire residue theory.</p>
 <h2 id="the-winding-number">The Winding Number</h2>
@@ -146,9 +146,9 @@ $$</p>
 h'(A) = \oint_\gamma \frac{dB}{(B - A)^2}.
 $$</p>
 <p>The integrand $(B-A)^{-2}$ has the primitive $-(B-A)^{-1}$ in the variable $B$ on $\mathbb{C} \setminus \{A\}$, so $h'(A) = 0$ and $h$ is locally constant. Put $\Phi(A) = \exp h(A)$; then $\Phi'(A) = h'(A) \Phi(A) = 0$, so $\Phi$ is constant, and as $|A| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(A) \to 0$ and $\Phi(A) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(A) \in 2\pi i \mathbb{Z}$ for every $A$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.</p>
-<p><strong>Example.</strong> For the positively oriented circle $\gamma(t) = A_0 + re^{it}$ one has $\operatorname{Ind}(\gamma, A_0) = 1$ and $\operatorname{Ind}(\gamma, A) = 0$ for $|A - A_0| > r$. For the same circle traversed $m$ times the index is $m$.</p>
-<p><strong>Theorem (homotopy invariance).</strong> Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $U$ and let $H : [0,1] \times [a,b] \to U$ be continuous with $H(s, \cdot)$ closed and piecewise $C^1$ for every $s$, $H(0, \cdot) = \gamma_0$ and $H(1, \cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, A_0) = \operatorname{Ind}(\gamma_1, A_0)$ for every $A_0 \notin U$.</p>
-<p><strong>Proof.</strong> For a closed path $\gamma$ avoiding $A_0$ one may write $\gamma(t) - A_0 = r(t) e^{i\Theta(t)}$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, A_0)$. Since $A_0 \notin U$, the map $H - A_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\tilde\Theta$ on the whole rectangle, with $H(s,t) - A_0 = \rho(s,t) e^{i \tilde\Theta(s,t)}$ and $\rho > 0$. Then $s \mapsto \tilde\Theta(s, b) - \tilde\Theta(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s, \cdot), A_0)$.</p>
+<p><strong>Example.</strong> For the positively oriented circle $\gamma(t) = A_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, A_0) = 1$ and $\operatorname{Ind}(\gamma, A) = 0$ for $|A - A_0| > r$. For the same circle traversed $m$ times the index is $m$.</p>
+<p><strong>Theorem (homotopy invariance).</strong> Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $U$ and let $H : [0,1] \times [a,b] \to U$ be continuous with $\langle s,\cdot\rangle_{*}$ closed and piecewise $C^1$ for every $s$, $\langle0,\cdot\rangle_{*} = \gamma_0$ and $\langle1,\cdot\rangle_{*} = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, A_0) = \operatorname{Ind}(\gamma_1, A_0)$ for every $A_0 \notin U$.</p>
+<p><strong>Proof.</strong> For a closed path $\gamma$ avoiding $A_0$ one may write $\gamma(t) - A_0 = r(t) \exp(i\Theta(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, A_0)$. Since $A_0 \notin U$, the map $H - A_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta^{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - A_0 = \rho(s,t) \exp(i \Theta^{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta^{\mathrm{lift}}(s, b) - \Theta^{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(\langle s,\cdot\rangle_{*}, A_0)$.</p>
 <p>The winding number therefore depends only on the homotopy class of the path in $U$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.</p>
 <h2 id="the-cauchy-theorem">The Cauchy Theorem</h2>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
@@ -240,9 +240,9 @@ $$</p>
 <p><strong>Proof.</strong> If $p$ had no root, then $1/p$ would be holomorphic on all of $\mathbb{C}$ and bounded, since $|p(A)| \to \infty$ as $|A| \to \infty$; by Liouville $1/p$ would be constant, hence $p$ constant, a contradiction.</p>
 <p><strong>Theorem (mean value property).</strong> If $f$ is holomorphic on a neighbourhood of $\overline{B}(A_0, r)$, then</p>
 <p>$$
-f(A_0) = \frac{1}{2\pi} \int_0^{2\pi} f(A_0 + re^{i\theta}) \, d\theta .
+f(A_0) = \frac{1}{2\pi} \int_0^{2\pi} f(A_0 + r\exp(i\theta)) \, d\theta .
 $$</p>
-<p><strong>Proof.</strong> In the Cauchy integral formula on $C(A_0, r)$, parametrise $B = A_0 + re^{i\theta}$, so $dB = ire^{i\theta} d\theta$ and $B - A_0 = re^{i\theta}$; the factors cancel and the formula becomes the displayed average.</p>
+<p><strong>Proof.</strong> In the Cauchy integral formula on $C(A_0, r)$, parametrise $B = A_0 + r\exp(i\theta)$, so $dB = ir\exp(i\theta) d\theta$ and $B - A_0 = r\exp(i\theta)$; the factors cancel and the formula becomes the displayed average.</p>
 <p><strong>Theorem (maximum modulus).</strong> If $f$ is holomorphic on a domain $U$ and $|f|$ attains a maximum at a point of $U$, then $f$ is constant on $U$.</p>
 <p><strong>Proof.</strong> Suppose $|f(A_0)| \ge |f(A)|$ for all $A \in U$. The mean value property gives $|f(A_0)| \le \max_{|B - A_0| = r} |f(B)| \le |f(A_0)|$ for every small $r$, so equality holds throughout each circle and $|f|$ is constant near $A_0$. A holomorphic function of constant modulus on a disk is constant, and by the identity theorem $f$ is then constant on $U$.</p>
 <h2 id="the-residue-theorem">The Residue Theorem</h2>
@@ -318,7 +318,7 @@ $$</p>
 <p><strong>Corollary (fundamental theorem of algebra).</strong> A polynomial $p(A) = a_n A^n + \cdots + a_0$ of degree $n \ge 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.</p>
 <p><strong>Proof.</strong> On a circle $|A| = R$ of large radius and $f(A) = a_n A^n$, $g(A) = a_{n-1}A^{n-1} + \cdots + a_0$, one has $|g| < |f|$ once $R$ exceeds $\max(1, |a_{n-1}| + \cdots + |a_0|)/|a_n|$. By Rouché, $p$ has as many zeros inside the circle as $a_n A^n$, namely $n$.</p>
 <h3 id="evaluation-of-definite-integrals">Evaluation of Definite Integrals</h3>
-<p><strong>Integrals of trigonometric functions.</strong> For an integral $\int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta$ with $R$ rational, set $A = e^{i\theta}$, so that</p>
+<p><strong>Integrals of trigonometric functions.</strong> For an integral $\int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta$ with $R$ rational, set $A = \exp(i\theta)$, so that</p>
 <p>$$
 \cos\theta = \frac{A + A^{-1}}{2}, \qquad \sin\theta = \frac{A - A^{-1}}{2i}, \qquad d\theta = \frac{dA}{iA} .
 $$</p>
@@ -333,12 +333,12 @@ $$</p>
 $$</p>
 <p><strong>Integrals over the real line.</strong> For $\int_{-\infty}^{\infty} f(a) \, da$ with $f$ rational, decaying faster than $1/|a|$ and having no poles on the real axis, integrate $f$ over the semicircle of radius $R$ in the upper half-plane closed by the real segment $[-R, R]$. The integral over the arc tends to $0$ as $R \to \infty$, so the real integral equals $2\pi i$ times the sum of the residues in the upper half-plane.</p>
 <p><strong>Example.</strong> For $\int_{-\infty}^{\infty} \frac{da}{1 + a^2}$ the only pole in the upper half-plane is $A = i$, with residue $\frac{1}{2i}$, so the integral is $2\pi i \cdot \frac{1}{2i} = \pi$.</p>
-<p><strong>Integrals with trigonometric kernels.</strong> For $\int_{-\infty}^{\infty} f(b) e^{iab} \, db$ with $a > 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by <strong>Jordan's lemma</strong>: if $f$ is continuous on the arc $\{Re^{i\theta} : 0 \le \theta \le \pi\}$ and $|f(Re^{i\theta})| \le m_R$ with $m_R \to 0$, then</p>
+<p><strong>Integrals with trigonometric kernels.</strong> For $\int_{-\infty}^{\infty} f(b) \exp(iab) \, db$ with $a > 0$ and $f$ rational, decaying at infinity with no real poles, one uses the same contour. The contribution of the arc is controlled by <strong>Jordan's lemma</strong>: if $f$ is continuous on the arc $\{R\exp(i\theta) : 0 \le \theta \le \pi\}$ and $|f(R\exp(i\theta))| \le m_R$ with $m_R \to 0$, then</p>
 <p>$$
-\left| \int_0^{\pi} f(Re^{i\theta}) e^{iaRe^{i\theta}} i R e^{i\theta} \, d\theta \right| \le \frac{\pi m_R}{a},
+\left| \int_0^{\pi} f(R\exp(i\theta)) \exp(iaR\exp(i\theta)) i R \exp(i\theta) \, d\theta \right| \le \frac{\pi m_R}{a},
 $$</p>
 <p>which tends to $0$.</p>
-<p><strong>Example.</strong> For $\int_{-\infty}^{\infty} \frac{e^{ib}}{1+b^2} db$ the pole in the upper half-plane is $A = i$ with residue $\frac{e^{i \cdot i}}{2i} = \frac{e^{-1}}{2i}$, so the integral is $\pi/e$. Taking real parts gives</p>
+<p><strong>Example.</strong> For $\int_{-\infty}^{\infty} \frac{\exp(ib)}{1+b^2} db$ the pole in the upper half-plane is $A = i$ with residue $\frac{\exp(i \cdot i)}{2i} = \frac{\exp(-1)}{2i}$, so the integral is $\pi/e$. Taking real parts gives</p>
 <p>$$
 \int_{-\infty}^{\infty} \frac{\cos b}{1 + b^2} \, db = \frac{\pi}{e} .
 $$</p>

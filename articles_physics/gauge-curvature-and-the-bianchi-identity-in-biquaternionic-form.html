@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form"><strong>Gauge Curvature and the Bianchi Identity in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> recorded the identity $[D_\mu, D_\nu] = \tfrac{iq}{\hbar}F_{\mu\nu}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.</p>
+<p>The companion article <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> recorded the identity $[D_\mu, D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.</p>
 <p>Two structural claims organise it.</p>
 <ul>
 <li><strong>The curvature is the failure of covariant derivatives to commute, and the commutator reduces to the algebra.</strong> The object $[D_\mu,D_\nu]$ is a priori a commutator of first-order differential operators — equivalently, in a matrix representation, a commutator of matrices acting on a module. It is not an element of $\mathbb{B}$; the operators $D_\mu$ are not either. The content is that the commutator is first order with <em>no derivative at all</em>: it is multiplication by the single element $i\kappa F_{\mu\nu}$ of $\mathbb{B}$, whose non-abelian part is the algebra commutator $[\mathcal{A}_\mu,\mathcal{A}_\nu]$. An infinite-dimensional operator commutator localises on the finite-dimensional algebra. That is the reduction.</li>
@@ -68,7 +68,7 @@
 $$
 \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\} \subset \mathbb{M}_-, \qquad [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c,
 $$
-with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = q/\hbar$, the indices are $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict} = -i\partial_t$, so that $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.</p>
+with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{0,1,2,3\}$ with $\partial_0 = \partial_{ict} = -i\partial_t$, so that $\partial_\mu = \partial_{x_\mu}$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.</p>
 <h2 id="the-covariant-derivative-and-the-curvature-it-defines">The Covariant Derivative and the Curvature It Defines</h2>
 <p>Let the connection be a one-form with values in the compact factor of the material sector,
 $$
@@ -79,12 +79,12 @@ with real coefficient functions, and let the covariant derivative act on a matte
 $$
 D_\mu = \partial_\mu + i\kappa\,\mathcal{A}_\mu, \qquad
 D_\mu\Psi = \partial_\mu\Psi + i\kappa\,\mathcal{A}_\mu\Psi ,
-\qquad \kappa = \frac{q}{\hbar}.
+\qquad \kappa = \frac{ϙ}{\hbar}.
 $$
 This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $ict$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
-This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $U(\tilde{Q}) \in SU(2)$ is
+This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
-\mathcal{A}'_\mu = U\,\mathcal{A}_\mu\,U^{-1} + \frac{i}{\kappa}\,(\partial_\mu U)\,U^{-1},
+\mathcal{A}'_\mu = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial_\mu \tilde U)\,\tilde U^{-1},
 $$
 and the curvature is defined, as in the abelian case, by the commutator of covariant derivatives.</p>
 <p><strong>Computation.</strong> The commutator of two components is
@@ -128,9 +128,9 @@ $$
 a genuinely non-abelian curvature, nonzero and non-central. The reduction to a single commutator is exact here; for a position-dependent connection it is not, and the honest statement is the operator-level one: <strong>the operator commutator is multiplication by the single element $i\kappa F_{\mu\nu}$</strong>, while the element $F_{\mu\nu}$ is the sum of a curl and a commutator. This is carried into the open questions as a scope limitation, not hidden.</p>
 <p><strong>The curvature is not gauge invariant.</strong> Under $\mathcal{A}_\mu \mapsto \mathcal{A}'_\mu$ with the transformation law above, direct computation gives the adjoint law
 $$
-F'_{\mu\nu} = U\,F_{\mu\nu}\,U^{-1},
+F'_{\mu\nu} = \tilde U\,F_{\mu\nu}\,\tilde U^{-1},
 $$
-which was verified both for an infinitesimal local $U = e_0 + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\mu\nu})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational trace formula.</p>
+which was verified both for an infinitesimal local $\tilde U = e_0 + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\mu\nu})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational trace formula.</p>
 <h2 id="the-covariant-derivative-on-the-curvature-two-sided-not-one-sided">The Covariant Derivative on the Curvature: Two-Sided, Not One-Sided</h2>
 <p>The curvature carries two gauge indices — in the matrix representation, two matrix indices — and the group acts on them two-sidedly, by conjugation. The same is true of the covariant derivative acting on the curvature: because $F_{\mu\nu}$ is an algebra element in the adjoint representation, and not a matter field in the defining representation, its covariant derivative is not the left multiplication used above.</p>
 <p>For any algebra-valued field $\tilde{Q}$, define
@@ -217,9 +217,9 @@ $$
 [\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]] + [\mathcal{A}_\mu,[\mathcal{A}_\nu,\mathcal{A}_\lambda]] + [\mathcal{A}_\nu,[\mathcal{A}_\lambda,\mathcal{A}_\mu]] = 0 .
 $$</li>
 </ul>
-<p>These three classes were separated and each was verified to vanish on generic connections, with the reconstruction of the full cyclic sum from them checked as well. The algebraic Jacobi identity is the statement, in <em>Lie Algebras: A General Introduction</em>, that makes the adjoint action $\mathrm{ad}_u = [u,\cdot]$ a derivation of the bracket,
+<p>These three classes were separated and each was verified to vanish on generic connections, with the reconstruction of the full cyclic sum from them checked as well. The algebraic Jacobi identity is the statement, in <em>Lie Algebras: A General Introduction</em>, that makes the adjoint action $\mathrm{ad}_{q_1} = [q_1,\cdot]$ a derivation of the bracket,
 $$
-\mathrm{ad}_u[v,w] = [\mathrm{ad}_u v, w] + [v, \mathrm{ad}_u w],
+\mathrm{ad}_{q_1}[q_2,q_3] = [\mathrm{ad}_{q_1}q_2, q_3] + [q_2, \mathrm{ad}_{q_1}q_3],
 $$
 and it is that derivation property — equivalently the Leibniz rule for $D_\lambda$ acting on a bracket — that makes the middle class cancel. It is the genuinely non-abelian ingredient: the abelian case lacks it because it lacks the bracket altogether.</p>
 <p>The two Jacobi identities are not the same statement. The operator identity is associativity of composition and is sufficient, on its own, to turn the curvature identity into the Bianchi identity; the algebra identity is the Lie-algebra axiom that controls the coordinate proof. Both are exact, and both are used, at their own level.</p>
@@ -280,13 +280,13 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ and $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa = q/\hbar$,</p>
+<p>The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$ and $D_\mu = \partial_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa = ϙ/\hbar$,</p>
 <p>$$
 [D_\mu,D_\nu] = i\kappa\,F_{\mu\nu},
 \qquad
 F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu] \in \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
 $$</p>
-<p>and the commutator is zeroth order: it is multiplication by the single algebra element $i\kappa F_{\mu\nu}$. That localisation of an operator commutator onto the finite-dimensional algebra is the content of the reduction, and it was verified exactly on generic non-commuting connections for all index pairs. The curvature is antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, and transforms in the adjoint representation, $F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$.</p>
+<p>and the commutator is zeroth order: it is multiplication by the single algebra element $i\kappa F_{\mu\nu}$. That localisation of an operator commutator onto the finite-dimensional algebra is the content of the reduction, and it was verified exactly on generic non-commuting connections for all index pairs. The curvature is antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, and transforms in the adjoint representation, $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$.</p>
 <p>Because the curvature is adjoint-valued, its covariant derivative is the two-sided commutator $D_\lambda \tilde{Q} = \partial_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$, not the one-sided left multiplication used on a matter field; collapsing the two-sided action to a one-sided one destroys the Bianchi identity. This distinction is separate from, and not to be confused with, the two-sided gravitational connection of the curved-spacetime article.</p>
 <p>The Bianchi identity is</p>
 <p>$$
@@ -340,15 +340,15 @@ $$</p>
 <td>Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$</td>
 </tr>
 <tr>
-<td>$U(\tilde{Q}) \in SU(2)$</td>
-<td>Unit real quaternion, $U^{-1}=\bar U=U^\dagger$</td>
+<td>$\tilde U(\tilde{Q}) \in SU(2)$</td>
+<td>Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$</td>
 </tr>
 <tr>
 <td>$\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$</td>
 <td>Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$</td>
 </tr>
 <tr>
-<td>$\kappa = q/\hbar$</td>
+<td>$\kappa = ϙ/\hbar$</td>
 <td>Coupling</td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ $$</p>
 <td>Curvature as the commutator of covariant derivatives</td>
 </tr>
 <tr>
-<td>$F'_{\mu\nu} = UF_{\mu\nu}U^{-1}$</td>
+<td>$F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$</td>
 <td>Adjoint transformation of the curvature</td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\tfrac{iq}{\hbar}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.</li>
+<li><em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.</li>
 <li><em>Non-Abelian Gauge Fields in Biquaternionic Form</em> — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.</li>
 <li><em>The Gauge Principle in Biquaternionic Form</em> — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.</li>
 <li><em>The Field-Strength Biquaternion and Its Invariants</em> — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.</li>

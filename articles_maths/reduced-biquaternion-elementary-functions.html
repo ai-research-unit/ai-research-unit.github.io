@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduced Biquaternion Elementary Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reduced-biquaternion-elementary-functions"><strong>Reduced Biquaternion Elementary Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the elementary functions of a reduced biquaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions. The key structural fact is the <strong>idempotent decomposition</strong>: the algebra is the direct product of two copies of $\mathbb{C}$, the idempotents $\Pi_{1,2}$ commute with everything, and the multiplication is componentwise, so every elementary function of a reduced biquaternion reduces to the corresponding elementary function of two ordinary complex numbers, one for each idempotent coordinate. Because the algebra is <strong>commutative</strong>, the functional equations that hold for commuting arguments in the quaternion and split biquaternion cases hold here for all arguments. The treatment is purely mathematical.</p>
+<p>Throughout the element is $T=A+Bj$ with $A=a+ia'$, $B=b+ib'$, the idempotent coordinates are $q_1=A+B$, $q_2=A-B$, and $T=q_1\Pi_{1}+q_2\Pi_{2}$ with $\Pi_{1,2}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<p><strong>Definition.</strong> For $T\in\mathbb{B}_{\mathrm{r}}$ the <strong>exponential</strong> is the series
+$$
+\exp T=\sum_{n\ge0}\frac{T^{n}}{n!},
+$$
+which converges for every $T$ because the algebra is finite-dimensional and the series converges in each coordinate.</p>
+<p><strong>Theorem (the reduction and the closed form).</strong> The exponential acts coefficientwise,
+$$
+\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}\bigl(\cosh B+j\sinh B\bigr),
+$$
+and it satisfies the functional equation for <strong>all</strong> arguments,
+$$
+\exp(T+W)=\exp T\;\exp W ,
+$$
+with $\exp 0=1$.</p>
+<p><em>Proof.</em> Using $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$, the series splits into $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$; the second form follows from $q_1=A+B$, $q_2=A-B$ and $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=\tfrac12(e^{q_1}+e^{q_2})+\tfrac12(e^{q_1}-e^{q_2})j=e^{A}\cosh B+e^{A}\sinh B\,j$, because $e^{q_1}+e^{q_2}=e^{A}(e^{B}+e^{-B})$ and $e^{q_1}-e^{q_2}=e^{A}(e^{B}-e^{-B})$. The functional equation holds because the algebra is commutative, so the binomial series reassembles as the Cauchy product of the two exponentials; in the split biquaternion and quaternion cases the same computation fails for non-commuting arguments, the defect being measured by the commutator.</p>
+<p><strong>Corollary (the hyperbolic unit).</strong> The element $j$ has $j^{2}=+1$, so
+$$
+\exp(j\phi)=\cosh\phi+j\sinh\phi,\qquad \phi\in\mathbb{R},
+$$
+the <strong>hyperbolic exponential</strong>, whose image is the hyperbola $H(\exp(j\phi))=\cosh^{2}\phi-\sinh^{2}\phi=1$ in the plane $\mathbb{R}\{1,j\}$, where $H(a+bj)=a^{2}-b^{2}$. The element $i$ has $i^{2}=-1$, so $\exp(i\theta)=\cos\theta+i\sin\theta$, whose image is the circle $K=1$ in the plane $\mathbb{R}\{1,i\}$, where $K(a+bi)=a^{2}+b^{2}$.</p>
+<p><em>Proof.</em> The first identity is the closed form with $A=0$ and $B=\phi$ real, or the Maclaurin series of $\cosh$ and $\sinh$ in the split complex plane; the second is Euler's formula in the complex plane, where $q_1=q_2=i\theta$.</p>
+<h2 id="the-trigonometric-and-hyperbolic-functions">The Trigonometric and Hyperbolic Functions</h2>
+<p><strong>Definition.</strong> For $T\in\mathbb{B}_{\mathrm{r}}$,
+$$
+\cos T=\sum_{n\ge0}\frac{(-1)^{n}T^{2n}}{(2n)!},\qquad
+\sin T=\sum_{n\ge0}\frac{(-1)^{n}T^{2n+1}}{(2n+1)!},
+$$
+and likewise $\cosh T$ and $\sinh T$ without the alternating signs. Equivalently, from the exponential,
+$$
+\cos T=\frac{e^{iT}+e^{-iT}}{2},\quad \sin T=\frac{e^{iT}-e^{-iT}}{2i},\quad
+\cosh T=\frac{e^{T}+e^{-T}}{2},\quad \sinh T=\frac{e^{T}-e^{-T}}{2}.
+$$</p>
+<p><strong>Theorem (the reduction and the identities).</strong> Each function acts coefficientwise,
+$$
+\cos T=\cos q_1\,\Pi_{1}+\cos q_2\,\Pi_{2},\qquad \mathrm{etc.},
+$$
+and the Pythagorean and addition identities hold for all arguments,
+$$
+\cos^{2}T+\sin^{2}T=1,\qquad \cosh^{2}T-\sinh^{2}T=1,\qquad \cos(T+W)=\cos T\cos W-\sin T\sin W .
+$$</p>
+<p><em>Proof.</em> The series split in the idempotent coordinates into the corresponding series of $q_1$ and of $q_2$; the identities hold in each coordinate by the classical complex identities, and since the algebra is commutative the addition formula needs no ordering correction.</p>
+<p><strong>Corollary (the two kinds of rotation).</strong> In the plane $\mathbb{R}\{1,i\}$ the map $T\mapsto e^{i\theta}T$ is the ordinary elliptic rotation by $\theta$; in the plane $\mathbb{R}\{1,j\}$ the map $T\mapsto e^{j\phi}T$ is the hyperbolic rotation by $\phi$, dilating the two halves $q_1,q_2$ reciprocally. This is the elliptic-versus-hyperbolic dichotomy carried by the two directions $i$ and $j$.</p>
+<p><em>Proof.</em> Multiplication by $e^{i\theta}=\cos\theta+i\sin\theta$ is the complex rotation in the first plane; multiplication by $e^{j\phi}=\cosh\phi+j\sinh\phi$ sends $q_1\mapsto e^{\phi}q_1$ and $q_2\mapsto e^{-\phi}q_2$, a reciprocal dilation, which is the hyperbolic rotation of the split complex plane.</p>
+<h2 id="the-logarithm">The Logarithm</h2>
+<p><strong>Definition.</strong> A <strong>logarithm</strong> of $T$ is a solution $S$ of $\exp S=T$.</p>
+<p><strong>Theorem (existence and the reduction).</strong> An element has a logarithm if and only if it is a <strong>unit</strong>, that is $q_1\neq0$ and $q_2\neq0$, and then
+$$
+\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}
+$$
+for a choice of the two complex branches. The principal value is obtained from the principal branch of the complex logarithm in each coordinate; the solution is determined modulo the kernel, which is the lattice $2\pi i\bigl(\mathbb{Z}\Pi_{1}+\mathbb{Z}\Pi_{2}\bigr)$.</p>
+<p><em>Proof.</em> The equation $e^{S}=T$ splits into $e^{s_{1}}=q_1$ and $e^{s_{2}}=q_2$, each solvable exactly for non-zero right-hand side, with solutions differing by $2\pi i$; the two coordinates are independent, and the non-units, having a vanishing coordinate, have no logarithm.</p>
+<p><strong>Corollary (the branch structure).</strong> The logarithm exists on the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ but is not single-valued: it is a covering map onto the algebra, and a single-valued branch exists exactly on a simply connected domain of the unit group avoiding the two coordinate lines.</p>
+<p><em>Proof.</em> The exponential is a local biholomorphism with discrete kernel, so its inverse is multivalued with the stated kernel, and a single-valued branch on a domain exists precisely when the domain is simply connected and avoids the two coordinate axes.</p>
+<h2 id="the-power-functions">The Power Functions</h2>
+<p><strong>Definition.</strong> For a unit $T$ and a complex exponent $s$, the <strong>power</strong> is
+$$
+T^{s}=\exp(s\log T)=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2},
+$$
+for a choice of the logarithms, and for an integer $s=n$ it agrees with the ordinary power $T^{n}$.</p>
+<p><strong>Theorem (the roots).</strong> For a non-zero integer $n$ the equation $S^{n}=T$ has, for each unit $T$, exactly $n^{2}$ solutions, namely
+$$
+S=\Bigl(\eta_{1}\,q_1^{1/n}\Bigr)\Pi_{1}+\Bigl(\eta_{2}\,q_2^{1/n}\Bigr)\Pi_{2},
+$$
+where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity. In particular a unit has four square roots, $\pm q_1^{1/2}\Pi_{1}\pm q_2^{1/2}\Pi_{2}$; a zero divisor has the roots with the corresponding factor absent.</p>
+<p><em>Proof.</em> In each coordinate the equation $s^{n}=q_1$ has the $n$ roots $\eta q_1^{1/n}$, and the two coordinates are independent, giving the product of the two counts; for the square root $n=2$ the roots of unity are $\pm1$ in each coordinate, whence the four sign combinations.</p>
+<p><strong>Corollary (the integer powers are polynomial).</strong> For an integer $n\ge0$, $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$ is a polynomial in $T$, and for $n<0$ it is the inverse power on the units; the map $T\mapsto T^{n}$ is a homomorphism of the multiplicative monoid whose kernel on the unit group is the group of the $n$-th roots of unity in the two coordinates.</p>
+<p><em>Proof.</em> The integer powers are the iterated products, read in the coordinates; the kernel is the set of the $T$ with $q_1^{n}=q_2^{n}=1$.</p>
+<h2 id="relations-to-the-complex-and-split-complex-cases">Relations to the Complex and Split-Complex Cases</h2>
+<p><strong>The complex case.</strong> If the second coefficient vanishes, $T=A$, then $q_1=q_2=A$ and every elementary function reduces to the ordinary complex function, $f(T)=f(A)$: the reduced biquaternion function restricts to the complex function on the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$.</p>
+<p><strong>The split-complex case.</strong> If both coefficients are real, $T=a+bj$ in the split complex algebra $\mathbb{D}=\mathbb{R}\{1,j\}$, then $q_1=a+b$ and $q_2=a-b$ are real and
+$$
+\exp(a+bj)=e^{a}\bigl(\cosh b+j\sinh b\bigr),\qquad \log(a+bj)=\tfrac12\log(a^{2}-b^{2})+\tfrac12 j\log\frac{a+b}{a-b},
+$$
+on the units with $a>|b|$, so that $a\pm b>0$ and the principal logarithms are real; the reduced biquaternion functions restrict to these on the split complex plane.</p>
+<p><em>Proof.</em> On the complex line $B=0$ and $q_1=q_2=A$, so both coordinates carry the same function; on the split complex plane the coefficients are real, $q_1=a+b$ and $q_2=a-b$, and substitution in the two-factor formulas gives the displayed expressions, the sums and differences of the two logarithms reproducing the hyperbolic and the logarithmic forms.</p>
+<h2 id="the-reduction-to-two-complex-factors">The Reduction to Two Complex Factors</h2>
+<p><strong>Theorem (the general reduction principle).</strong> Let $F$ be a function defined on a set of complex numbers by a power series with a non-zero radius of convergence, or by an integral of a holomorphic kernel. Then $F$ extends to the reduced biquaternion algebra by
+$$
+F(T)=F(q_1)\,\Pi_{1}+F(q_2)\,\Pi_{2},
+$$
+and the extension is a homomorphism property for the pointwise operations: it commutes with sums, with products, with the conjugations that preserve the factors, and with the differentiation $\bar\partial$. Every elementary function above is the special case of the principle applied to the corresponding complex function.</p>
+<p><em>Proof.</em> A convergent power series can be evaluated in each coordinate by substitution, and the integral representation is evaluated coefficientwise; the algebraic identities hold in each coordinate and hence in the algebra; the differentiation $\bar\partial$ acts coefficientwise, so it commutes with the extension.</p>
+<h2 id="summary-of-formulas">Summary of Formulas</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Value</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp T$</td>
+<td>$e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}(\cosh B+j\sinh B)$</td>
+<td>all $T$</td>
+</tr>
+<tr>
+<td>$\exp(T+W)$</td>
+<td>$\exp T\exp W$</td>
+<td>all $T,W$, the algebra being commutative</td>
+</tr>
+<tr>
+<td>$\exp(j\phi)$</td>
+<td>$\cosh\phi+j\sinh\phi$</td>
+<td>$\phi\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\exp(i\theta)$</td>
+<td>$\cos\theta+i\sin\theta$</td>
+<td>$\theta\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\cos T,\ \sin T$</td>
+<td>$\cos q_1\,\Pi_{1}+\cos q_2\,\Pi_{2}$, $\sin q_1\,\Pi_{1}+\sin q_2\,\Pi_{2}$</td>
+<td>all $T$</td>
+</tr>
+<tr>
+<td>$\cosh T,\ \sinh T$</td>
+<td>$\cosh q_1\,\Pi_{1}+\cosh q_2\,\Pi_{2}$, $\sinh q_1\,\Pi_{1}+\sinh q_2\,\Pi_{2}$</td>
+<td>all $T$</td>
+</tr>
+<tr>
+<td>$\log T$</td>
+<td>$\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}$</td>
+<td>the units, branch choice</td>
+</tr>
+<tr>
+<td>$T^{s}$</td>
+<td>$q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$</td>
+<td>the units, branch choice</td>
+</tr>
+<tr>
+<td>$S^{n}=T$</td>
+<td>$n^{2}$ solutions $\eta_{1}q_1^{1/n}\Pi_{1}+\eta_{2}q_2^{1/n}\Pi_{2}$</td>
+<td>$T$ a unit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p>The biquaternion algebra $M_{2}(\mathbb{C})$ is simple and non-commutative; its exponential is a matrix exponential, its trigonometric functions are entire but the functional equations fail for non-commuting arguments, and the logarithm requires the matrix logarithm with its own branch structure. The reduced biquaternion algebra replaces the single matrix exponential by the <strong>pair</strong> of complex exponentials of the two idempotent coordinates: the functional equation $\exp(T+W)=\exp T\exp W$ holds for all arguments because the algebra is commutative, the trigonometric functions are the two complex trigonometric functions, the logarithm exists exactly on the units and is the pair of complex logarithms, and the power functions have the $n^{2}$ roots of the two coordinates. The split biquaternion case is the same pair structure with the quaternion exponential in each half; the reduced case is the commutative member in which every elementary function is a pair of complex elementary functions.</p>
+<h2 id="summary">Summary</h2>
+<p>Every elementary function of a reduced biquaternion variable is the pair of the corresponding complex elementary functions of the two idempotent coordinates: the exponential is $\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}(\cosh B+j\sinh B)$, with the functional equation holding for all arguments because the algebra is commutative; the element $i$ generates the elliptic rotation, $\exp(i\theta)=\cos\theta+i\sin\theta$, and the element $j$ the hyperbolic one, $\exp(j\phi)=\cosh\phi+j\sinh\phi$, dilating the two halves reciprocally. The trigonometric and hyperbolic functions are the pairs $\cos q_1\Pi_{1}+\cos q_2\Pi_{2}$ and the like, and the Pythagorean and addition identities hold for all arguments. The logarithm exists exactly on the units, $q_1,q_2\neq0$, and is $\log q_1\Pi_{1}+\log q_2\Pi_{2}$ for a branch choice in each coordinate, the kernel being the lattice $2\pi i(\mathbb{Z}\Pi_{1}+\mathbb{Z}\Pi_{2})$. The power $T^{s}=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$, and the equation $S^{n}=T$ has $n^{2}$ solutions for a unit, in particular four square roots. On the complex line the functions restrict to the complex ones, on the split complex plane to the split complex ones, and the general principle is that every function defined by a power series or a holomorphic integral extends coefficientwise. Against the biquaternion case, where the matrix exponential and the matrix logarithm carry the non-commutative branch structure, the reduced biquaternion elementary functions are the two commutative complex ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T=A+Bj$</td>
+<td>Element, $A=a+ia'$, $B=b+ib'$</td>
+</tr>
+<tr>
+<td>$q_1=A+B$, $q_2=A-B$</td>
+<td>Idempotent coordinates</td>
+</tr>
+<tr>
+<td>$\Pi_{1,2}=\tfrac12(1\pm j)$</td>
+<td>Idempotents</td>
+</tr>
+<tr>
+<td>$\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$</td>
+<td>Exponential</td>
+</tr>
+<tr>
+<td>$e^{j\phi}=\cosh\phi+j\sinh\phi$</td>
+<td>Hyperbolic exponential</td>
+</tr>
+<tr>
+<td>$e^{i\theta}=\cos\theta+i\sin\theta$</td>
+<td>Elliptic exponential</td>
+</tr>
+<tr>
+<td>$\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}$</td>
+<td>Logarithm on the units</td>
+</tr>
+<tr>
+<td>$T^{s}=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$</td>
+<td>Power function</td>
+</tr>
+<tr>
+<td>$\eta_{1},\eta_{2}$</td>
+<td>$n$-th roots of unity of the two coordinates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.</li>
+<li>Lars V. Ahlfors, <em>Complex Analysis</em>, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.</li>
+<li>G. Baley Price, <em>An Introduction to Multicomplex Spaces and Functions</em> (Marcel Dekker, 1991), for the exponential and the elementary functions of the multicomplex algebra.</li>
+<li>M. Elena Luna-Elizarrarás, Michael Shapiro, Daniele C. Struppa and Adrian Vajiac, <em>Bicomplex Holomorphic Functions</em> (Birkhäuser, 2015), for the idempotent reduction of the elementary functions.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the exponential of the hypercomplex algebras and the comparison with the division-algebra cases.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -112,13 +112,13 @@ because the inversion is an anti-automorphism; it is unitary when the bi-invaria
 <h3 id="the-abelian-case">The Abelian Case</h3>
 <p><strong>Proposition.</strong> On an abelian group the translations $T_a = S_a$ coincide with the right translations, the reversing symmetry satisfies $C T_a C = T_a$, and the Fourier transform diagonalises the translations: on the character $\chi$ the operator $T_a$ acts by the scalar $\chi(a)^{-1}$, and its adjoint by the conjugate scalar $\chi(a)$,
 $$
-\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f(\chi), \qquad \widehat{T_a^{*} f}(\chi) = \chi(a)\hat f(\chi) = \overline{\chi(a)^{-1}}\,\hat f(\chi),
+\widehat{T_a f}(\chi) = \chi(a)^{-1}(\mathcal F f)(\chi), \qquad \widehat{T_a^{*} f}(\chi) = \chi(a)(\mathcal F f)(\chi) = \overline{\chi(a)^{-1}}\,(\mathcal F f)(\chi),
 $$
 so the inversion involution corresponds to the complex conjugation of the Fourier multiplier.</p>
 <p><strong>Proof.</strong> On an abelian group the left and right translations coincide by commutativity; the Fourier transform diagonalises the translations by the characters of the dual group, and the adjoint multiplies by the complex conjugate scalar, <em>The Fourier Transform and Conjugate Symmetry</em> and <em>Convolution Operators</em>. The inversion of the group sends the character $\chi$ to its conjugate $\bar\chi$, which is the conjugation of the multiplier.</p>
 <h2 id="worked-cases">Worked Cases</h2>
-<p><strong>Example (the line and the plane).</strong> Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $e^{-i a\cdot\xi}$, so the adjoint multiplies by $e^{+ia\cdot\xi}$, the complex conjugate. The example is the original and simplest case.</p>
-<p><strong>Example (the circle).</strong> Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $e^{2\pi i n x}$ the operator $T_\theta$ acts by $e^{-2\pi in\theta}$, the adjoint by $e^{+2\pi in\theta}$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.</p>
+<p><strong>Example (the line and the plane).</strong> Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $\exp(-i a\cdot\xi)$, so the adjoint multiplies by $\exp(+ia\cdot\xi)$, the complex conjugate. The example is the original and simplest case.</p>
+<p><strong>Example (the circle).</strong> Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $\exp(2\pi i n x)$ the operator $T_\theta$ acts by $\exp(-2\pi in\theta)$, the adjoint by $\exp(+2\pi in\theta)$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.</p>
 <p><strong>Example (the finite cyclic group).</strong> Let $G = \mathbb{Z}/n$; the translation $T_a$ is the cyclic shift, its adjoint is the shift by $-a$, and the discrete Fourier transform diagonalises the family; the inversion is the reflection of the group, and the adjoint is the conjugate transpose of the circulant matrix of the shift. The example is the finite abelian case, the discrete form of the line.</p>
 <p><strong>Example (a nonabelian group).</strong> Let $G$ be nonabelian and $\rho = T$ the left regular representation; the adjoint of $T_a$ is $T_{a^{-1}}$ still, but the inversion $\iota(a) = a^{-1}$ is <strong>not</strong> an automorphism, so the involution of the elements it defines is an anti-automorphism and the two-structures identity is the operator identity $T_a^{*} = \tau_{\iota}(T_a)$ rather than the matching of an automorphism with the adjoint. The reversing symmetry swaps the left and right regular representations, and the nonabelian Fourier analysis is <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>. The example is the boundary the abelian two-structures case does not cross.</p>
 <h2 id="summary">Summary</h2>
@@ -169,7 +169,7 @@ so the inversion involution corresponds to the complex conjugation of the Fourie
 <td>the reversing symmetry swaps left and right translations</td>
 </tr>
 <tr>
-<td>$\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f$</td>
+<td>$\widehat{T_a f}(\chi) = \chi(a)^{-1}\mathcal F f$</td>
 <td>the abelian Fourier diagonalisation</td>
 </tr>
 </tbody>

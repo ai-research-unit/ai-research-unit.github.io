@@ -66,17 +66,17 @@ $$</p>
 $$</p>
 <p>For $A = a + ja'$ with $a, a' \in \mathbb{R}$,</p>
 <p>$$
-\exp(A) = e^a (\cosh a' + j \sinh a').
+\exp(A) = \exp(a) (\cosh a' + j \sinh a').
 $$</p>
 <p>This is the <strong>split Euler formula</strong>, and it is the bridge between the exponential and the hyperbolic functions. In particular, for $a' = \theta$,</p>
 <p>$$
-e^{j\theta} = \cosh\theta + j \sinh\theta.
+\exp(j\theta) = \cosh\theta + j \sinh\theta.
 $$</p>
 <p>The exponential is <strong>not</strong> periodic. Unlike the complex exponential, which is $2\pi i$-periodic, the split complex exponential is injective on the real axis and has no period.</p>
 <h3 id="the-idempotent-form">The Idempotent Form</h3>
 <p>In the idempotent basis, the exponential decomposes as</p>
 <p>$$
-\exp(A) = e^{A_+} \Pi_1 + e^{A_-} \Pi_2, \qquad A_+ = a + a', \quad A_- = a - a'.
+\exp(A) = \exp(A_+) \Pi_1 + \exp(A_-) \Pi_2, \qquad A_+ = a + a', \quad A_- = a - a'.
 $$</p>
 <p>So the split complex exponential is the pair of ordinary real exponentials, one for each idempotent. This is the fundamental structural fact about the exponential, and it is the reason most split complex special functions are pairs of real special functions.</p>
 <h3 id="the-split-complex-logarithm">The Split Complex Logarithm</h3>
@@ -104,7 +104,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>The <strong>split hyperbolic sine</strong> and <strong>cosine</strong> are defined by</p>
 <p>$$
-\sinh A = \frac{e^A - e^{-A}}{2}, \qquad \cosh A = \frac{e^A + e^{-A}}{2}.
+\sinh A = \frac{\exp(A) - \exp(-A)}{2}, \qquad \cosh A = \frac{\exp(A) + \exp(-A)}{2}.
 $$</p>
 <p>They are entire in the split complex sense, and they satisfy</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>split complex gamma function</strong> is defined for $A$ with $A_+ > 0$ and $A_- > 0$ by</p>
 <p>$$
-\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt,
+\Gamma(A) = \int_0^\infty t^{A-1} \exp(-t) \, dt,
 $$</p>
 <p>where the integral is along the positive real axis, and $t^{A-1}$ is the split complex power. In the idempotent basis,</p>
 <p>$$
@@ -169,28 +169,28 @@ $$</p>
 <p>where the sine is the ordinary real sine applied to each idempotent component.</p>
 <h2 id="the-beta-function">The Beta Function</h2>
 <h3 id="definition_2">Definition</h3>
-<p>The <strong>split complex beta function</strong> is defined for $p, q$ with $p_+ > 0$, $p_- > 0$, $q_+ > 0$, $q_- > 0$ by</p>
+<p>The <strong>split complex beta function</strong> is defined for $n, m$ with $n_+ > 0$, $n_- > 0$, $m_+ > 0$, $m_- > 0$ by</p>
 <p>$$
-B(p, q) = \int_0^1 t^{p-1} (1 - t)^{q-1} \, dt.
+B(n, m) = \int_0^1 t^{n-1} (1 - t)^{m-1} \, dt.
 $$</p>
 <p>In the idempotent basis,</p>
 <p>$$
-B(p, q) = B(p_+, q_+) \Pi_1 + B(p_-, q_-) \Pi_2.
+B(n, m) = B(n_+, m_+) \Pi_1 + B(n_-, m_-) \Pi_2.
 $$</p>
 <h3 id="relation-to-the-gamma-function">Relation to the Gamma Function</h3>
 <p>$$
-B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}.
+B(n, m) = \frac{\Gamma(n) \Gamma(m)}{\Gamma(n + m)}.
 $$</p>
 <p>This follows from the same substitution as in the real case, applied to each idempotent component.</p>
 <h3 id="symmetry">Symmetry</h3>
 <p>$$
-B(p, q) = B(q, p).
+B(n, m) = B(m, n).
 $$</p>
 <h2 id="the-error-function">The Error Function</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>split complex error function</strong> is defined by</p>
 <p>$$
-\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt,
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A \exp(-t^2) \, dt,
 $$</p>
 <p>where the integral is along a path from $0$ to $A$ that does not cross the null cone. In the idempotent basis,</p>
 <p>$$
@@ -199,7 +199,7 @@ $$</p>
 <p>So the split complex error function is the pair of ordinary real error functions.</p>
 <h3 id="properties">Properties</h3>
 <p>$$
-\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2},
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} \exp(-A^2),
 $$</p>
 <p>$$
 \lim_{A \to \infty} \operatorname{erf}(A) = 1, \qquad \lim_{A \to -\infty} \operatorname{erf}(A) = -1,
@@ -207,7 +207,7 @@ $$</p>
 <p>where the limits are taken along the real axis.</p>
 <h3 id="the-complementary-error-function">The Complementary Error Function</h3>
 <p>$$
-\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty \exp(-t^2) \, dt.
 $$</p>
 <p>In the idempotent basis, this is the ordinary real complementary error function applied to each component.</p>
 <h2 id="the-airy-functions">The Airy Functions</h2>
@@ -229,7 +229,7 @@ $$</p>
 <h3 id="asymptotics">Asymptotics</h3>
 <p>For $A_+ \to +\infty$,</p>
 <p>$$
-\operatorname{Ai}(A_+) \sim \frac{1}{2 \sqrt{\pi} A_+^{1/4}} e^{-2 A_+^{3/2}/3}.
+\operatorname{Ai}(A_+) \sim \frac{1}{2 \sqrt{\pi} A_+^{1/4}} \exp(-2 A_+^{3/2}/3).
 $$</p>
 <p>For $A_+ \to -\infty$,</p>
 <p>$$
@@ -294,11 +294,11 @@ $$</p>
 <h3 id="definition_7">Definition</h3>
 <p>The <strong>split complex Lambert W function</strong> is the inverse of</p>
 <p>$$
-A \mapsto A e^A.
+A \mapsto A \exp(A).
 $$</p>
 <p>That is, $W(A)$ is any solution of</p>
 <p>$$
-W(A) e^{W(A)} = A.
+W(A) \exp(W(A)) = A.
 $$</p>
 <p>In the idempotent basis,</p>
 <p>$$
@@ -323,7 +323,7 @@ $$</p>
 <p>This theorem is the reason split complex special functions are simpler than complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, because the split complex algebra is a product of two copies of $\mathbb{R}$ and the exponential is injective.</p>
 <h2 id="summary">Summary</h2>
 <p>The split complex special functions are the named functions that arise in split complex analysis, in hyperbolic geometry and in the theory of the wave equation. Each is obtained by carrying the corresponding real or complex definition to the split complex variable by means of the split complex exponential and the algebra operations.</p>
-<p>The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $W \mapsto We^W$.</p>
+<p>The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $W \mapsto W\exp(W)$.</p>
 <p>The section on the idempotent principle states what organises the whole collection: every split complex special function is the pair of ordinary real special functions obtained by evaluating it on the two idempotent components, one for $\Pi_1$ and one for $\Pi_2$, so that each definition is a real definition applied twice.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -347,7 +347,7 @@ $$</p>
 <td>General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$</td>
 </tr>
 <tr>
-<td>$e^A, \log A$</td>
+<td>$\exp(A), \log A$</td>
 <td>Split complex exponential, logarithm</td>
 </tr>
 <tr>
@@ -359,8 +359,8 @@ $$</p>
 <td>Split complex gamma function</td>
 </tr>
 <tr>
-<td>$B(p, q)$</td>
-<td>Split complex beta function; arguments $p, q$</td>
+<td>$B(n, m)$</td>
+<td>Split complex beta function; arguments $n, m$</td>
 </tr>
 <tr>
 <td>$\operatorname{erf}(A), \operatorname{erfc}(A)$</td>

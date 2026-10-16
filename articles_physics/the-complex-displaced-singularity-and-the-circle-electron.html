@@ -59,9 +59,9 @@
 <h3 id="the-coulomb-kernel-and-the-position-of-the-singularity">The Coulomb Kernel and the Position of the Singularity</h3>
 <p>In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,</p>
 <p>$$
-\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\vec x) = \frac{q}{4\pi\epsilon}\,\frac{1}{\|\vec x-\vec r_0\|},
+\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\vec x) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|\vec x-\vec r_0\|},
 $$</p>
-<p>where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\vec x\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\vec x=\vec r_0$, a single point, and it is the kernel $1/\|\vec x-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $q/4\pi\epsilon$ and are set aside below.</p>
+<p>where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\vec x\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\vec x=\vec r_0$, a single point, and it is the kernel $1/\|\vec x-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.</p>
 <p>Lanczos introduces potential and field strength as <strong>complex</strong> quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\zeta)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to</p>
 <p>$$
 \xi = 0, \qquad \eta = 0, \qquad \zeta = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
@@ -117,9 +117,9 @@ $$</p>
 H = \frac{2\pi\varrho}{\varepsilon}\int_0^{2\pi} \frac{\varepsilon+\varrho\,(\cos\varphi+i\sin\varphi)}{\bigl[\varepsilon+2\varrho\,(\cos\varphi+i\sin\varphi)\bigr]^2}\,d\varphi .
 $$</p>
 <h3 id="the-vanishing-of-the-integral">The Vanishing of the Integral</h3>
-<p>The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=e^{i\varphi}$ turns the integral into a contour integral over the unit circle,</p>
+<p>The integral vanishes, and it vanishes for every $\varepsilon$ in the range $0<\varepsilon<2\varrho$ in which it is taken. The reason is elementary and is worth recording because it is the whole content of the self-energy claim. Setting $u=\exp(i\varphi)$ turns the integral into a contour integral over the unit circle,</p>
 <p>$$
-\int_0^{2\pi}\frac{\varepsilon+\varrho e^{i\varphi}}{\bigl[\varepsilon+2\varrho e^{i\varphi}\bigr]^2}\,d\varphi
+\int_0^{2\pi}\frac{\varepsilon+\varrho \exp(i\varphi)}{\bigl[\varepsilon+2\varrho \exp(i\varphi)\bigr]^2}\,d\varphi
 = \frac{1}{i}\oint \frac{\varepsilon+\varrho u}{u\,(\varepsilon+2\varrho u)^2}\,du ,
 $$</p>
 <p>whose integrand has a simple pole at $u=0$ and a double pole at $u=-\varepsilon/2\varrho$. For $\varepsilon<2\varrho$ both lie inside the contour. The residues are $+1/\varepsilon$ at $u=0$ and $-1/\varepsilon$ at $u=-\varepsilon/2\varrho$, and they cancel exactly, so the contour integral, and with it $H$, is zero. The cancellation of the two residues is the exact echo, at the level of the integral, of the cancellation of the electric and mesomagnetic energies at the level of the field: one divergent term and one oppositely divergent term, in the ratio that makes their difference finite, and in fact zero. The result has been recomputed here directly from the formula, by summing the integrand over a hundred equally spaced values of $\varphi$ for several $\varepsilon$ and $\varrho$: the integral is zero to machine precision, at the $10^{-16}$ level, in every case tried.</p>
@@ -155,7 +155,7 @@ $$</p>
 <tr>
 <td>Charge</td>
 <td>arbitrary</td>
-<td>self-quantised, minimal value $|q|=\tfrac14$</td>
+<td>self-quantised, minimal value $|ϙ|=\tfrac14$</td>
 </tr>
 <tr>
 <td>Gravity</td>

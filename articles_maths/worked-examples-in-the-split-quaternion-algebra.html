@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of <em>Split-Quaternion Algebra</em>.</p>
 <p>The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of <em>Split-Quaternion Algebra</em>, <em>Split-Quaternion Idempotents and Projections</em>, <em>Split-Quaternion Zero Divisors</em>, <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
-<p><strong>Conventions.</strong> A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in <em>Split-Quaternion Norm and Invertibility</em>. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.</p>
+<p><strong>Conventions.</strong> A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in <em>Split-Quaternion Norm and Invertibility</em>. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.</p>
 <h2 id="the-basis-products">The Basis Products</h2>
 <p>The multiplication table, whose entry in row $i$ and column $j$ is $e_i e_j$, is</p>
 <div class="table-scroll"><table>
@@ -179,7 +179,7 @@ $$</p>
 $$</p>
 <p>and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover</p>
 <p>$$
-\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad N(\tilde\pi_1) = N(\tilde\pi_2) = 0 .
+\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0 .
 $$</p>
 <p>They are not central, since $e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3)$ while $\tilde\pi_1 e_1 = \tfrac{1}{2}(e_1 - e_3)$.</p>
 <p><strong>Example (the two minimal left ideals).</strong> The reductions $e_2 \tilde\pi_1 = \tilde\pi_1$ and $e_3 \tilde\pi_1 = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_1$ give</p>
@@ -209,16 +209,16 @@ $$</p>
 $$</p>
 <p>a pair in which neither factor is a nilpotent.</p>
 <h2 id="the-unit-criterion-worked">The Unit Criterion Worked</h2>
-<p><strong>Criterion (from <em>Split-Quaternion Norm and Invertibility</em>).</strong> A nonzero $\tilde q$ is invertible if and only if $N(\tilde q) \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$. It is recalled here only to be applied.</p>
-<p><strong>Example (a unit of positive norm).</strong> For $\tilde q = 2 + e_1$, the split-quaternion norm is $N(\tilde q) = 4 + 1 = 5$, and</p>
+<p><strong>Criterion (from <em>Split-Quaternion Norm and Invertibility</em>).</strong> A nonzero $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$. It is recalled here only to be applied.</p>
+<p><strong>Example (a unit of positive norm).</strong> For $\tilde q = 2 + e_1$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = 4 + 1 = 5$, and</p>
 <p>$$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{2 - e_1}{5}, \qquad
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{2 - e_1}{5}, \qquad
 (2 + e_1)\frac{2 - e_1}{5} = \frac{4 - e_1^2}{5} = \frac{5}{5} = 1 .
 $$</p>
-<p><strong>Example (a unit of norm one).</strong> For $\tilde p = 1 + e_1 + e_2$, the split-quaternion norm is $N(\tilde p) = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - e_1 - e_2$; indeed $\tilde p \tilde p^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(\tilde p) = 1$, the element is a unit split-quaternion.</p>
-<p><strong>Example (a unit of negative norm).</strong> For $\tilde r = e_2$, the split-quaternion norm is $N(\tilde r) = -1$, and $\tilde r^{-1} = \bar{\tilde r}/N(\tilde r) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. </p>
-<p><strong>Example (a non-unit).</strong> For $w = 1 + e_3$, the split-quaternion norm is $N(w) = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. </p>
-<p>The four examples realise the three-way classification of <em>Split-Quaternion Norm and Invertibility</em> by the value of $N$: a positive value ($N = 5$ and $N = 1$), a negative value ($N = -1$), and the value zero ($N = 0$, the zero divisors).</p>
+<p><strong>Example (a unit of norm one).</strong> For $\tilde p = 1 + e_1 + e_2$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - e_1 - e_2$; indeed $\tilde p \tilde p^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.</p>
+<p><strong>Example (a unit of negative norm).</strong> For $\tilde r = e_2$, the split-quaternion norm is $\langle\tilde r\rangle_{\natural} = -1$, and $\tilde r^{-1} = \bar{\tilde r}/\langle\tilde r\rangle_{\natural} = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. </p>
+<p><strong>Example (a non-unit).</strong> For $w = 1 + e_3$, the split-quaternion norm is $\langle w\rangle_{\natural} = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. </p>
+<p>The four examples realise the three-way classification of <em>Split-Quaternion Norm and Invertibility</em> by the value of $\langle\cdot\rangle_{\natural}$: a positive value ($N = 5$ and $N = 1$), a negative value ($N = -1$), and the value zero ($N = 0$, the zero divisors).</p>
 <h2 id="the-action-of-the-unit-group">The Action of the Unit Group</h2>
 <p>The action of a unit on the vector subspace by conjugation, the elliptic and hyperbolic one-parameter subgroups it produces, and the classification of the vectors of $V$ by their orbits, use the multiplication table above and nothing else; they are computations of the Geometry group and are carried out in <em>Split-Quaternion Rotations and the Lorentz Group</em>. They are not repeated here, and the multiplication table of §<em>The Basis Products</em> is what they consume.</p>
 <h2 id="summary">Summary</h2>
@@ -260,12 +260,12 @@ $$</p>
 <td><em>Split-Quaternion Idempotents and Projections</em></td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
 <td>the central product, formed and evaluated algebraically</td>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$</td>
+<td>$\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$</td>
 <td>the inverse of a unit</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>

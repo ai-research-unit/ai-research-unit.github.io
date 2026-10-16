@@ -73,7 +73,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$</p>
-<p>the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
+<p>the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
 <h2 id="the-gauge-orbit-as-a-torsor">The Gauge Orbit as a Torsor</h2>
 <p>The set $\mathcal{O}(\tilde{A})$ is the image of the map</p>
 <p>$$
@@ -105,7 +105,7 @@ $$</p>
 \qquad
 \tilde{\Psi}' = \lambda\tilde{\Psi},
 \qquad
-\lambda = e^{i q\Gamma/\hbar}.
+\lambda = \exp(i ϙ\Gamma/\hbar).
 $$</p>
 <p>The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:</p>
 <p>$$
@@ -167,18 +167,18 @@ $$</p>
 <p>The claim that the orbit carries no state information can be made exact with the relative entropy, the basic monotone quantity of the informational sector.</p>
 <p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}$, and let $\omega'$ be the corresponding state in the gauge-transformed background $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
 <p>$$
-\lambda(\tilde{Q}) = e^{iq\Gamma(\tilde{Q})/\hbar}, \qquad
+\lambda(\tilde{Q}) = \exp(iϙ\Gamma(\tilde{Q})/\hbar), \qquad
 \omega' = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
 $$</p>
 <p>Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega'$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{B}$ and their gauge transforms, the relative entropies therefore agree:</p>
 <p>$$
 S(\tilde{\rho}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{B}}) .
 $$</p>
-<p>This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(U\rho U^\dagger\|U\sigma U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.</p>
+<p>This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.</p>
 <p>Three consequences of the invariance spell out the redundancy.</p>
 <p><strong>No information measure can detect the orbit.</strong> Relative entropy is the sharpest distinguishability measure of the theory, and it is constant along the orbit. Whatever else the orbit is, it is not a difference of states.</p>
 <p><strong>The invariance is not confined to the relative entropy.</strong> Every functional of the state that is invariant under unitary conjugation inherits it: the spectrum of $\tilde{\rho}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.</p>
-<p><strong>The abelian orbit is invisible to the informational sector.</strong> This is the framework-specific sharpening. The gauge group is the unitary part of the centre, so $\lambda = e^{i\theta}$ commutes with every element of $\mathbb{B}$. On a state $\tilde{\rho}\in\mathbb{M}_+$ its action is</p>
+<p><strong>The abelian orbit is invisible to the informational sector.</strong> This is the framework-specific sharpening. The gauge group is the unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{\rho}\in\mathbb{M}_+$ its action is</p>
 <p>$$
 \tilde{\rho} \longmapsto \lambda\,\tilde{\rho}\,\lambda^\dagger = |\lambda|^2\tilde{\rho} = \tilde{\rho},
 $$</p>
@@ -188,9 +188,9 @@ $$</p>
 <p>The orbit is locally trivial — a single point can always be gauged away — but not globally, and the global obstruction is the only place the orbit's structure becomes a physical number.</p>
 <p><strong>Local elimination is always possible; global elimination is not.</strong> As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its <strong>holonomy</strong> around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,</p>
 <p>$$
-U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
+\tilde U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 $$</p>
-<p>and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{M}_-$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.</p>
+<p>and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{M}_-$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.</p>
 <p><strong>The holonomy is the orbit's global invariant.</strong> The orbit of a connection is its gauge group; the holonomy is a functional of the connection that is constant on the orbit and is not a local function of the curvature. It is therefore exactly the part of the orbit's information that survives the local triviality. The framework's ordering of the object is clean:</p>
 <ul>
 <li>the connection is a point in the orbit, and has no invariant local value;</li>
@@ -199,7 +199,7 @@ $$</p>
 </ul>
 <p>The information in the gauge orbit is, in this interpretation, the holonomy: the orbit is locally a fibre, and globally it is a fibre bundle whose monodromy is physical. The statement is not that the orbit carries state information; it is that the orbit's <em>topology</em> carries the only gauge-invariant content that is not already in the curvature.</p>
 <h3 id="the-aharonovbohm-reading">The Aharonov–Bohm Reading</h3>
-<p>The clearest demonstration that the orbit carries information the curvature does not is the Aharonov–Bohm phase. Let a loop enclose a region of flux that is confined to a tube the loop does not touch, so that $\tilde{F}$ vanishes at every point of the loop. The curvature along the loop is then zero, and a local interpretation of the field strength would conclude that the loop encloses nothing. The holonomy is nevertheless $U(C) = \exp(i\Phi)$ with $\Phi$ the enclosed flux, because Stokes' theorem equates the loop integral to the flux through any surface it bounds, and the flux is concentrated on the surface rather than on the curve.</p>
+<p>The clearest demonstration that the orbit carries information the curvature does not is the Aharonov–Bohm phase. Let a loop enclose a region of flux that is confined to a tube the loop does not touch, so that $\tilde{F}$ vanishes at every point of the loop. The curvature along the loop is then zero, and a local interpretation of the field strength would conclude that the loop encloses nothing. The holonomy is nevertheless $\tilde U(C) = \exp(i\Phi)$ with $\Phi$ the enclosed flux, because Stokes' theorem equates the loop integral to the flux through any surface it bounds, and the flux is concentrated on the surface rather than on the curve.</p>
 <p>Information-theoretically this is the sharp statement of the article's thesis. The curvature is a local density and is zero on the loop; the connection, evaluated along the loop, is not zero; the loop integral measures the second and not the first. So the redundancy — the fact that the connection is a point in an orbit rather than an invariant — is not an inefficiency of the description. The orbit is the carrier of a genuinely non-local, gauge-invariant phase, and it is the smallest object on which the orbit's structure becomes measurable. The Wilson loop of the companion article is precisely the gauge-invariant trace of this phase, and the Aharonov–Bohm effect is the case in which it is the <em>only</em> thing the loop measures.</p>
 <h2 id="redundancy-and-loss-three-operations-compared">Redundancy and Loss: Three Operations Compared</h2>
 <p>The subcategory treats three operations, and the present article is the one that fixes the meaning of the first. They are worth tabulating before the two companions develop the others, because the information-theoretic vocabulary is shared and the distinctions are easy to blur.</p>
@@ -239,7 +239,7 @@ $$</p>
 </table></div>
 <p>The middle row is the subject of the companion article on confinement, and the bottom row of the companion article on the Higgs mechanism. What the table is meant to make visible is that the three are not variants of one another. Redundancy has an <em>informationally empty</em> fibre — the orbit is what a gauge choice quotients away, and choosing a gauge recovers the configuration. Loss has a fibre that is informationally non-empty — distinct partonic configurations yield the same asymptotic record, and no gauge choice recovers them. Relocation has a gauge orbit as its fibre as well — so the fibre carries no state information either — but the mechanism's action on the orbit leaves a record, the mass, and conserves the count of local degrees of freedom. The biquaternion framework houses all three in the same algebra, and the algebra's sector split is what keeps them distinct.</p>
 <h2 id="gauge-redundancy-and-the-informational-sector">Gauge Redundancy and the Informational Sector</h2>
-<p>The framework's gauge group is not put in by hand: it is the unitary part of the centre, $U(1) = \{e^{i\theta}\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.</p>
+<p>The framework's gauge group is not put in by hand: it is the unitary part of the centre, $U(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.</p>
 <p><strong>The orbit is a material-sector structure.</strong> The connection lies in $\mathbb{M}_-$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{M}_-$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{M}_-$ is a shift by the identity direction.</p>
 <p><strong>The informational sector is blind to the orbit.</strong> As established above, a central phase acts trivially on $\mathbb{M}_+$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational interpretation of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, the gauge orbit is not an unmeasured variable; it is a <strong>non-variable</strong>. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.</p>
 <p><strong>The one place the two sectors meet is the holonomy.</strong> The Wilson loop is the trace of the holonomy — a material connection integrated along a curve and exponentiated into the informational realization of the group — and its gauge invariance is the invariance of the scalar part under the adjoint action. It is the single object in which the orbit's global structure is paired with an informational trace. The interpretation of that pairing is the open question the Wilson-loop article records; here it is enough to note that the pairing is where the redundancy stops being invisible and starts being a physical number.</p>
@@ -266,7 +266,7 @@ $$</p>
 <p><strong>A gauge-fixing principle.</strong> The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?</p>
 </li>
 <li>
-<p><strong>The non-abelian orbit.</strong> For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto U A_\mu U^{-1} + (i/\kappa)(\partial_\mu U)U^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate unitary?</p>
+<p><strong>The non-abelian orbit.</strong> For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde U A_\mu \tilde U^{-1} + (i/\kappa)(\partial_\mu \tilde U)\tilde U^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate unitary?</p>
 </li>
 <li>
 <p><strong>The orbit and the local complex structure.</strong> The framework makes the complex structure local through the speed of light $c = 1/\sqrt{\epsilon\mu}$. Is the gauge orbit — a local shift by a gradient — related to that local complex structure, or are the two local structures independent? No relation is established here.</p>
@@ -283,7 +283,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
-<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = e^{iq\Gamma/\hbar}$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
+<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
 <p>$$
 S(\tilde{\rho}_{\tilde{A}'}\|\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\|\tilde{\sigma}_{\tilde{B}}).
 $$</p>
@@ -339,11 +339,11 @@ $$</p>
 <td>Real scalar gauge function</td>
 </tr>
 <tr>
-<td>$\lambda = e^{iq\Gamma/\hbar}$</td>
+<td>$\lambda = \exp(iϙ\Gamma/\hbar)$</td>
 <td>Local central phase</td>
 </tr>
 <tr>
-<td>$\kappa = q/\hbar$</td>
+<td>$\kappa = ϙ/\hbar$</td>
 <td>Coupling</td>
 </tr>
 <tr>
@@ -371,11 +371,11 @@ $$</p>
 <td>Abelian curvature components</td>
 </tr>
 <tr>
-<td>$U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$</td>
+<td>$\tilde U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$</td>
 <td>Holonomy; global obstruction</td>
 </tr>
 <tr>
-<td>$W(C) = \mathrm{Tr}\,U(C)$</td>
+<td>$W(C) = \mathrm{Tr}\,\tilde U(C)$</td>
 <td>Wilson loop; two-sector bilinear</td>
 </tr>
 <tr>

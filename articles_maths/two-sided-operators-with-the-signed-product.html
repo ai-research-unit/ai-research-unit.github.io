@@ -60,9 +60,9 @@ $$</p>
 <p>Two structural facts organise the article. First, the signed family is closed under composition but with a twisted law, $T^{\alpha}_{a,b}T^{\alpha}_{c,d} = T^{\alpha}_{a\alpha(c),\,\alpha(d)b}$, in which the automorphism enters the parameters; equivalently the composite of two signed operators corresponds to conjugating the middle group element by $\alpha$. Second, the family contains no identity – the identity map is not a signed operator – so it is a <strong>coset</strong> of the group of ordinary two-sided operators rather than a group. The signed family and the ordinary family generate a group together, and the signed operators are exactly the elements of the coset through $\alpha$; this is the precise sense in which "signed" is a position in a group and not a second multiplication.</p>
 <p>The ordinary family and its composition are <em>The Sandwich on a Clifford Algebra</em>; the operators twisted by the grading and the sign rule of the graded commutator are <em>The Graded Multiplication Operators</em>; the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(y) = \alpha(x)yx^{-1}$, whose left factor and not whose argument carries the sign, is <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>; the groups and the reflection formula are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>. Those are cited. This article owns the family $T^{\alpha}_{a,b}$, its composition law, its coset structure and the reflections it realises; the sandwich specialisation $b = a^{-1}$ is <em>The Sandwich with the Signed Product</em>. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate, $\alpha$ is the grade involution and $\varepsilon_v = -1$ for a vector $v$.</p>
 <h2 id="the-signed-product">The Signed Product</h2>
-<p><strong>Definition.</strong> For $a, b \in \mathrm{Cl}(V,q)$ the <strong>signed two-sided operator</strong> is the $F$-linear map</p>
+<p><strong>Definition.</strong> For $a, b \in \mathrm{Cl}(V,\mathfrak{Q})$ the <strong>signed two-sided operator</strong> is the $F$-linear map</p>
 <p>$$
-T^{\alpha}_{a,b} : \mathrm{Cl}(V,q) \longrightarrow \mathrm{Cl}(V,q), \qquad T^{\alpha}_{a,b}(y) = a\,\alpha(y)\,b .
+T^{\alpha}_{a,b} : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad T^{\alpha}_{a,b}(y) = a\,\alpha(y)\,b .
 $$</p>
 <p>It is the sandwich by the pair $(a,b)$ composed with the grade involution on the right.</p>
 <p><strong>Proposition (the relation to the ordinary family).</strong> $T^{\alpha}_{a,b} = T_{a,b}\circ\alpha = \alpha\circ T_{\alpha(a),\alpha(b)}$, and $T^{\alpha}_{1,1} = \alpha$. The map $T_{a,b}\mapsto T_{a,b}\alpha$ is a bijection from the ordinary two-sided operators onto the signed ones, with inverse $S\mapsto S\circ\alpha$.</p>
@@ -94,7 +94,7 @@ $$</p>
 <p><strong>Proof.</strong> The first part is the invertibility of the ordinary sandwich, since $\alpha$ is a bijection. For the inverse, the composition law gives $T^{\alpha}_{a,b}\circ T^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})} = T_{a\alpha(\alpha(a^{-1})),\,\alpha(\alpha(b^{-1}))b} = T_{a a^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$.</p>
 <p><strong>Proposition (the indeterminacy).</strong> For units, $T^{\alpha}_{a,b} = T^{\alpha}_{a',b'}$ if and only if there is a central unit $c$ with $a' = ac$ and $b' = c^{-1}b$; the kernel of the parametrisation is the diagonal of the central units, exactly as for the ordinary family.</p>
 <p><strong>Proof.</strong> Since $\alpha$ is surjective, $a\alpha(y)b = a'\alpha(y)b'$ for all $y$ says $T_{a,b} = T_{a',b'}$, and the indeterminacy of the ordinary family is the statement quoted.</p>
-<p><strong>Theorem (a coset and not a group).</strong> Let $\mathcal{T}$ be the group of invertible ordinary two-sided operators and let $\mathcal{T}^{\alpha} = \{T^{\alpha}_{a,b} : a, b \in \mathrm{Cl}(V,q)^{\times}\}$. Then</p>
+<p><strong>Theorem (a coset and not a group).</strong> Let $\mathcal{T}$ be the group of invertible ordinary two-sided operators and let $\mathcal{T}^{\alpha} = \{T^{\alpha}_{a,b} : a, b \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}\}$. Then</p>
 <p>$$
 \mathcal{T}^{\alpha} = \mathcal{T}\alpha = \{\,g\alpha : g \in \mathcal{T}\,\},
 $$</p>
@@ -102,13 +102,13 @@ $$</p>
 <p><strong>Proof.</strong> The set is $\mathcal{T}\alpha$ by the first proposition. A coset $gH$ of a subgroup satisfies $gH\cdot gH = gHg^{-1}H = H$ and $gH\cdot H = gH = H\cdot gH$; here $H = \mathcal{T}$, $g = \alpha$, and $\alpha\mathcal{T}\alpha = \mathcal{T}$ because conjugating an ordinary sandwich by the automorphism $\alpha$ gives the ordinary sandwich $T_{\alpha(a),\alpha(b)}$. A coset contains the identity exactly when it is the subgroup itself, which here would require $\alpha \in \mathcal{T}$, that is $\alpha(y) = ayb$ for all $y$; at $y = 1$ this gives $ab = 1$, and then $\alpha(y) = aya^{-1}$ with $a$ central, which is the identity and not $\alpha$.</p>
 <p><strong>Remark (the group generated together).</strong> The group $\mathcal{T}\langle\alpha\rangle$ is the subgroup of $\mathrm{GL}_F(\mathrm{Cl})$ generated by the ordinary two-sided operators and the parity operator $\Gamma$. The signed family is its nontrivial coset, and every element is a product of an ordinary operator with $\Gamma$; this is the operator form of the statement that the signed family is a twist of the ordinary one by the grading, made in <em>The Graded Multiplication Operators</em>.</p>
 <h2 id="the-reflections">The Reflections</h2>
-<p><strong>Theorem (the reflections).</strong> Let $u \in V$ with $q(u) \neq 0$. Then the signed sandwich by $(u, u^{-1})$ is the reflection in the hyperplane $u^{\perp}$:</p>
+<p><strong>Theorem (the reflections).</strong> Let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. Then the signed sandwich by $(u, u^{-1})$ is the reflection in the hyperplane $u^{\perp}$:</p>
 <p>$$
 T^{\alpha}_{u,\,u^{-1}}(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v), \qquad v \in V .
 $$</p>
-<p><strong>Proof.</strong> A vector is odd, so $\alpha(v) = -v$ and the operator is $-u\,v\,u^{-1}$. Since $u^{-1} = u\,q(u)^{-1}$ and $uvu = 2B(u,v)u - q(u)v$,</p>
+<p><strong>Proof.</strong> A vector is odd, so $\alpha(v) = -v$ and the operator is $-u\,v\,u^{-1}$. Since $u^{-1} = u\,\mathfrak{Q}(u)^{-1}$ and $uvu = 2B(u,v)u - \mathfrak{Q}(u)v$,</p>
 <p>$$
--u\,v\,u^{-1} = -\bigl(2B(u,v)u - q(u)v\bigr)q(u)^{-1} = v - 2B(v,u)q(u)^{-1}u = \rho_u(v),
+-u\,v\,u^{-1} = -\bigl(2B(u,v)u - \mathfrak{Q}(u)v\bigr)\mathfrak{Q}(u)^{-1} = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u = \rho_u(v),
 $$</p>
 <p>using $B(u,v) = B(v,u)$.</p>
 <p><strong>Corollary (Cartan–Dieudonné).</strong> Every signed sandwich whose parameters are in the Clifford group acts on $V$ as an orthogonal transformation, and the odd ones generate the reflections; a product of signed sandwiches by vectors $u_1, \ldots, u_k$ acts on $V$ as $\rho_{u_1}\cdots\rho_{u_k}$, an orthogonal transformation that is a rotation when $k$ is even and a reflection-times-rotation when $k$ is odd.</p>
@@ -120,13 +120,13 @@ $$</p>
 <p>$$
 T^{\alpha}_{e_1,-e_1}(e_1) = e_1^{3} = -e_1, \qquad T^{\alpha}_{e_1,-e_1}(e_2) = e_1e_2e_1 = -e_1^{2}e_2 = e_2, \qquad T^{\alpha}_{e_1,-e_1}(e_3) = e_3 ,
 $$</p>
-<p>so on the basis the values are $(-e_1, e_2, e_3)$: the reflection $\rho_{e_1}$, since $\rho_{e_1}(e_1) = -e_1$ when $q(e_1) = -1$ and $\rho_{e_1}$ fixes $e_2, e_3$. The ordinary sandwich by $(e_1, -e_1)$ would have returned $(e_1, -e_2, -e_3) = -\rho_{e_1}$.</p>
+<p>so on the basis the values are $(-e_1, e_2, e_3)$: the reflection $\rho_{e_1}$, since $\rho_{e_1}(e_1) = -e_1$ when $\mathfrak{Q}(e_1) = -1$ and $\rho_{e_1}$ fixes $e_2, e_3$. The ordinary sandwich by $(e_1, -e_1)$ would have returned $(e_1, -e_2, -e_3) = -\rho_{e_1}$.</p>
 <h3 id="a-rotation">A Rotation</h3>
 <p>In the same algebra let $x = e_1e_2$, an even unit. Then $T^{\alpha}_{x,x^{-1}}(v) = x\alpha(v)x^{-1} = xvx^{-1}$ for every vector $v$, which is the half-turn $\mathrm{Ad}_x$ of the plane: $(-e_1, -e_2, e_3)$. On the even part the signed and the ordinary sandwiches coincide, since $\alpha$ is the identity there.</p>
 <h3 id="no-identity">No Identity</h3>
 <p>In any Clifford algebra the map $\alpha$ is the signed operator $T^{\alpha}_{1,1}$, and it is not the identity. Composing it with itself returns the identity, which is therefore a product of two signed operators without being one; this is the smallest witness that the signed family is a torsor and not a group.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>signed two-sided operator</strong> $T^{\alpha}_{a,b}(y) = a\alpha(y)b$ is the ordinary sandwich composed with the grade involution on the right, $T^{\alpha}_{a,b} = T_{a,b}\alpha$, and $T^{\alpha}_{1,1} = \alpha$. Its composition with another signed operator is an <strong>ordinary</strong> sandwich, $T^{\alpha}_{a,b}T^{\alpha}_{c,d} = T_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling; its composition with an ordinary operator, in either order, is signed, $T^{\alpha}_{a,b}T_{c,d} = T^{\alpha}_{a\alpha(c),\alpha(d)b}$ and $T_{a,b}T^{\alpha}_{c,d} = T^{\alpha}_{ac,db}$. It is invertible exactly for units, with inverse $T^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}$, and the kernel of the parametrisation is the central units as before; and $T^{\alpha}_{a,b}(1) = ab$. The family is the <strong>coset</strong> $\mathcal{T}\alpha$ of the group of invertible ordinary two-sided operators: it contains inverses, its products with the group lie in the coset, its products with itself lie in the group, and it contains no identity. It is therefore a torsor, not a group, and a composite of an even number of signed operators is ordinary. Its geometry is the point of the construction: for a vector $u$ with $q(u)\neq0$ the signed sandwich by $(u,u^{-1})$ is exactly the reflection $\rho_u$, where the ordinary sandwich gave $-\rho_u$; so the signed family carries the reflections of the quadratic space and, through products, the orthogonal group. The sandwich specialisation, the versor action and the groups are <em>The Sandwich with the Signed Product</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
+<p>The <strong>signed two-sided operator</strong> $T^{\alpha}_{a,b}(y) = a\alpha(y)b$ is the ordinary sandwich composed with the grade involution on the right, $T^{\alpha}_{a,b} = T_{a,b}\alpha$, and $T^{\alpha}_{1,1} = \alpha$. Its composition with another signed operator is an <strong>ordinary</strong> sandwich, $T^{\alpha}_{a,b}T^{\alpha}_{c,d} = T_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling; its composition with an ordinary operator, in either order, is signed, $T^{\alpha}_{a,b}T_{c,d} = T^{\alpha}_{a\alpha(c),\alpha(d)b}$ and $T_{a,b}T^{\alpha}_{c,d} = T^{\alpha}_{ac,db}$. It is invertible exactly for units, with inverse $T^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}$, and the kernel of the parametrisation is the central units as before; and $T^{\alpha}_{a,b}(1) = ab$. The family is the <strong>coset</strong> $\mathcal{T}\alpha$ of the group of invertible ordinary two-sided operators: it contains inverses, its products with the group lie in the coset, its products with itself lie in the group, and it contains no identity. It is therefore a torsor, not a group, and a composite of an even number of signed operators is ordinary. Its geometry is the point of the construction: for a vector $u$ with $\mathfrak{Q}(u)\neq0$ the signed sandwich by $(u,u^{-1})$ is exactly the reflection $\rho_u$, where the ordinary sandwich gave $-\rho_u$; so the signed family carries the reflections of the quadratic space and, through products, the orthogonal group. The sandwich specialisation, the versor action and the groups are <em>The Sandwich with the Signed Product</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -169,7 +169,7 @@ $$</p>
 <td>Reflection by a vector</td>
 </tr>
 <tr>
-<td>$\rho_u(v) = v - 2B(v,u)q(u)^{-1}u$</td>
+<td>$\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$</td>
 <td>Reflection in $u^{\perp}$</td>
 </tr>
 </tbody>

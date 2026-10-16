@@ -62,18 +62,18 @@ $$</p>
 <h2 id="the-coboundary-operator">The Coboundary Operator</h2>
 <p><strong>Definition.</strong> A <strong>complex of sheaves</strong> is a sequence of sheaves and morphisms</p>
 <p>$$
-\cdots\longrightarrow\mathcal{C}^{p-1}\xrightarrow{\ d\ }\mathcal{C}^{p}\xrightarrow{\ d\ }\mathcal{C}^{p+1}\longrightarrow\cdots,\qquad d^2=0,
+\cdots\longrightarrow\mathcal{C}^{n-1}\xrightarrow{\ d\ }\mathcal{C}^{n}\xrightarrow{\ d\ }\mathcal{C}^{n+1}\longrightarrow\cdots,\qquad d^2=0,
 $$</p>
 <p>and its <strong>coboundary operator</strong> is $d$; for the Čech complex of a cover it is the alternating sum of the restriction maps, as in <em>The Coboundary Operator</em> and <em>Čech Cohomology</em>, and for a resolution of a sheaf it is the differential of the resolution.</p>
-<p><strong>Definition.</strong> A <strong>morphism of complexes</strong> $\psi:(\mathcal{C}^{\bullet},d)\to(\mathcal{D}^{\bullet},e)$ is a family of morphisms $\psi^p:\mathcal{C}^p\to\mathcal{D}^p$ with $\psi\circ d=e\circ\psi$; two morphisms are <strong>homotopic</strong> if they differ by $h d+d h$ for a family $h$ of degree $-1$, and homotopic morphisms induce the same map on cohomology.</p>
-<p><strong>Proposition (the cohomology).</strong> The cohomology $H^p(\mathcal{C}^{\bullet})=\ker(d:\mathcal{C}^p\to\mathcal{C}^{p+1})/\operatorname{im}(d:\mathcal{C}^{p-1}\to\mathcal{C}^p)$ is well defined, and a morphism of complexes induces a morphism on the cohomology that depends only on its homotopy class.</p>
+<p><strong>Definition.</strong> A <strong>morphism of complexes</strong> $\psi:(\mathcal{C}^{\bullet},d)\to(\mathcal{D}^{\bullet},e)$ is a family of morphisms $\psi^n:\mathcal{C}^n\to\mathcal{D}^n$ with $\psi\circ d=e\circ\psi$; two morphisms are <strong>homotopic</strong> if they differ by $h d+d h$ for a family $h$ of degree $-1$, and homotopic morphisms induce the same map on cohomology.</p>
+<p><strong>Proposition (the cohomology).</strong> The cohomology $H^n(\mathcal{C}^{\bullet})=\ker(d:\mathcal{C}^n\to\mathcal{C}^{n+1})/\operatorname{im}(d:\mathcal{C}^{n-1}\to\mathcal{C}^n)$ is well defined, and a morphism of complexes induces a morphism on the cohomology that depends only on its homotopy class.</p>
 <h2 id="involutions-of-a-complex">Involutions of a Complex</h2>
 <p><strong>Definition.</strong> An <strong>involution of a complex</strong> $(\mathcal{C}^{\bullet},d)$ is an endomorphism $\theta$ of degree zero with $\theta^2=\mathrm{id}$ and $\theta\,d=\varepsilon\,d\,\theta$ for a sign $\varepsilon=\pm1$; for $\varepsilon=+1$ the involution is <strong>commuting</strong> and is an involution of the complex as a cochain complex, and for $\varepsilon=-1$ it is <strong>anticommuting</strong>. The <strong>fixed subcomplex</strong> is the image of the idempotent $\frac12(\mathrm{id}+\theta)$ when $2$ is invertible, and the <strong>anti-invariant subcomplex</strong> the image of $\frac12(\mathrm{id}-\theta)$.</p>
 <p><strong>Proposition (the subcomplexes).</strong> If $2$ is invertible and $\theta$ is a commuting involution, then $\mathcal{C}^{\bullet}=\mathcal{C}^{\bullet}_+\oplus\mathcal{C}^{\bullet}_-$ is a decomposition into subcomplexes, the fixed and the anti-invariant ones; in the anticommuting case the two idempotents are not morphisms of complexes, and the decomposition is only a decomposition of the underlying graded sheaves.</p>
 <p><em>Proof.</em> The kernels of $\theta-\mathrm{id}$ and $\theta+\mathrm{id}$ are the images of the two idempotents when $2^{-1}$ exists; in the commuting case each is stable under $d$ because $d$ commutes with $\theta$, while in the anticommuting case $d$ exchanges the two because $d\theta=-\theta d$, so neither is a subcomplex.</p>
 <p><strong>Theorem (the induced involution).</strong> Let $\theta$ be an involution of the complex $(\mathcal{C}^{\bullet},d)$, commuting or anticommuting. Then $\theta$ carries cocycles to cocycles and coboundaries to coboundaries, so it induces an endomorphism</p>
 <p>$$
-\theta^*:H^p(\mathcal{C}^{\bullet})\longrightarrow H^p(\mathcal{C}^{\bullet}),\qquad (\theta^*)^2=\mathrm{id},
+\theta^*:H^n(\mathcal{C}^{\bullet})\longrightarrow H^n(\mathcal{C}^{\bullet}),\qquad (\theta^*)^2=\mathrm{id},
 $$</p>
 <p>an involution of the cohomology in the sense of <em>Cohomology with an Involution</em>; in the commuting case $\theta^*$ is induced by an involution of the complex as a cochain complex, and in the anticommuting case it is induced by $\theta$ after the sign is absorbed.</p>
 <p><em>Proof.</em> If $dx=0$ then $d(\theta x)=\varepsilon\theta(dx)=0$, and if $y=dz$ then $\theta y=\varepsilon\,d(\theta z)$; hence $\theta$ preserves both the cocycles and the coboundaries and descends to the cohomology. The square is the identity because $\theta^2=\mathrm{id}$, and the induced map is independent of the choices because a homotopy between two representatives is carried to a homotopy.</p>
@@ -82,15 +82,15 @@ $$</p>
 <h2 id="the-involution-of-the-cech-coboundary">The Involution of the Čech Coboundary</h2>
 <p><strong>Theorem (an involution of a cover).</strong> Let $\theta$ be an involution of the index set of a cover $\mathcal{U}=\{U_i\}$, permuting the opens with $\theta(U_i)=U_{\theta(i)}$ and $\theta^2=\mathrm{id}$, compatible with the inclusion of the overlaps. Then $\theta$ induces an endomorphism of the Čech complex by</p>
 <p>$$
-(\theta\alpha)_{i_0\ldots i_p}=(-1)^{\operatorname{sgn}(\theta,i_0,\ldots,i_p)}\,\theta\bigl(\alpha_{\theta(i_0)\ldots\theta(i_p)}\bigr),
+(\theta\alpha)_{i_0\ldots i_n}=(-1)^{\operatorname{sgn}(\theta,i_0,\ldots,i_n)}\,\theta\bigl(\alpha_{\theta(i_0)\ldots\theta(i_n)}\bigr),
 $$</p>
 <p>and it satisfies $\theta\,\delta=\operatorname{sgn}(\theta)\,\delta\,\theta$, where the sign is the product of the sign of the permutation of the indices and the sign of the involution on the coefficients; in particular the induced map on the Čech cohomology is an involution, and its fixed part is computed on the $\theta$-invariant cochains.</p>
 <p><em>Proof.</em> The Čech coboundary is a sum over the omission of one index; applying $\theta$ permutes the terms and produces the sign of the permutation that reorders the indices, and the alternating convention of <em>Čech Cohomology</em> accounts for the sign displayed. The square of $\theta$ on the cochains is the identity because $\theta^2=\mathrm{id}$ on the indices and on the coefficients; the induced map on the cohomology is an involution by the theorem on the induced involution.</p>
 <p><strong>Example (the group action on the cover).</strong> If a group $G$ acts on $X$ and $\mathcal{U}$ is a $G$-invariant cover, every $g\in G$ induces an endomorphism of the Čech complex as above, the cocycle condition of the action giving the compatibility; the equivariant cohomology of <em>Cohomology with an Involution</em> is computed on the invariant cochains, and the involution is the case of an element of order two.</p>
 <h2 id="the-involution-and-the-spectral-sequence">The Involution and the Spectral Sequence</h2>
-<p><strong>Theorem (the involution on a spectral sequence).</strong> Let $(\mathcal{C}^{p,q},d',d'')$ be a double complex with an involution $\theta$ commuting (or anticommuting) with both differentials, of order two and bidegree zero. Then the spectral sequences of the double complex carry an involution on each page,</p>
+<p><strong>Theorem (the involution on a spectral sequence).</strong> Let $(\mathcal{C}^{n,m},d',d'')$ be a double complex with an involution $\theta$ commuting (or anticommuting) with both differentials, of order two and bidegree zero. Then the spectral sequences of the double complex carry an involution on each page,</p>
 <p>$$
-\theta_r:E_r^{p,q}\longrightarrow E_r^{p,q},\qquad (\theta_r)^2=\mathrm{id},
+\theta_r:E_r^{n,m}\longrightarrow E_r^{n,m},\qquad (\theta_r)^2=\mathrm{id},
 $$</p>
 <p>compatible with the differentials, $\theta_{r+1}\circ d_r=d_r\circ\theta_{r+1}$ on the derived page, and converging to the involution $\theta^*$ on the cohomology of the total complex; hence the fixed part of the abutment is computed from the fixed parts of the pages.</p>
 <p><em>Proof.</em> The involution of the double complex induces an involution of the associated single complex and of its filtration; the filtration is preserved, so the involution acts on the pages of the spectral sequence and commutes with the differentials by the functoriality of the construction of <em>Spectral Sequences</em>. The convergence is that of the double complex, and the identification of the limit involution with $\theta^*$ is the naturality of the edge maps.</p>
@@ -132,15 +132,15 @@ $$</p>
 <td>fixed and anti-invariant subcomplexes, for $\varepsilon=+1$ and $2$ invertible</td>
 </tr>
 <tr>
-<td>$\theta^*:H^p(\mathcal{C}^{\bullet})\to H^p(\mathcal{C}^{\bullet})$</td>
+<td>$\theta^*:H^n(\mathcal{C}^{\bullet})\to H^n(\mathcal{C}^{\bullet})$</td>
 <td>induced involution on the cohomology; $(\theta^*)^2=\mathrm{id}$</td>
 </tr>
 <tr>
-<td>$(\theta\alpha)_{i_0\ldots i_p}=(-1)^{\operatorname{sgn}}\theta(\alpha_{\theta(i_0)\ldots\theta(i_p)})$</td>
+<td>$(\theta\alpha)_{i_0\ldots i_n}=(-1)^{\operatorname{sgn}}\theta(\alpha_{\theta(i_0)\ldots\theta(i_n)})$</td>
 <td>induced involution on the Čech cochains</td>
 </tr>
 <tr>
-<td>$\theta_r:E_r^{p,q}\to E_r^{p,q}$</td>
+<td>$\theta_r:E_r^{n,m}\to E_r^{n,m}$</td>
 <td>involution on the pages of a spectral sequence</td>
 </tr>
 <tr>

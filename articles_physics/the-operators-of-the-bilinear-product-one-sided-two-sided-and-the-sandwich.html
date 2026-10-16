@@ -67,7 +67,7 @@ sandwich read as the operator $\mathrm{H}_{\tilde Q}=L_{\tilde Q}\circ R_{\tilde
 Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em>, and its action on the remarkable subspaces to <em>The
 Sandwich Action in Subspaces</em>. This article states the one thing the composition laws do not: <strong>which form the
 operators are adjoint for, and what that adjoint does</strong>.</p>
-<p>The answer is one sentence. The bilinear form of the block is the scalar part $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$
+<p>The answer is one sentence. The bilinear form of the block is the scalar part $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$
 of the product itself, its associate $F^{\approx}$ is the transpose, and the transpose of a left multiplication is a
 <strong>right</strong> multiplication:</p>
 <p>$$
@@ -87,10 +87,10 @@ $e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+
 $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The adjoint for the plain form is written $F^{\approx}$ and called the <strong>associate</strong>.
 The form is</p>
 <p>$$
-B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,\qquad
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,\qquad
 \mathrm{Gram}=\mathrm{diag}(1,-1,-1,-1),
 $$</p>
-<p>the <strong>sector sign</strong> of the block; the interval is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of
+<p>the <strong>sector sign</strong> of the block; the interval is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of
 signature $(-,+,+,+)$ on the material sector $\mathbb{M}_-$, and it is cited, never re-proved (<em>Norm and Invertibility in the General Quaternionic Algebra</em>). The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, the conjugations are the
 complex $\bar{\cdot}$, the natural ${\natural}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ{\natural}$, and the sandwich
 is the one action form of the framework: the Lorentz action for a unit-norm parameter, the unitary evolution for a
@@ -152,7 +152,7 @@ $$</p>
 <p>the two parameters exchanging their places.</p>
 <p><em>Proof.</em> The identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ for the transpose of a composite, applied to the
 swap theorem of the one-sided operators.</p>
-<p><strong>Read as a physical statement.</strong> The pairing $B$ is the scalar part of the product, and the product reads a parameter
+<p><strong>Read as a physical statement.</strong> The pairing $\langle\cdot,\cdot\rangle$ is the scalar part of the product, and the product reads a parameter
 on the side on which it stands. Transporting an operation across the pairing therefore moves it to the other side and
 reverses the order of a product of two; the plain form cannot tell a left attachment from a right one. This is what
 "the transpose of the left regular representation is the right one" means physically. The three companion blocks do
@@ -215,7 +215,7 @@ self-adjoint too; the sector signs of the two cases are opposite, which is the $
 neither sector, and then the sandwich is <strong>not</strong> self-adjoint for the plain form: a boost is not symmetric for the
 sector sign.</li>
 </ul>
-<p>Two cautions belong here. First, self-adjointness for $B$ is <strong>not</strong> physical hermiticity: the plain form is indefinite,
+<p>Two cautions belong here. First, self-adjointness for $\langle\cdot,\cdot\rangle$ is <strong>not</strong> physical hermiticity: the plain form is indefinite,
 and the observables of the framework are the self-adjoint operators for the Hermitian form of the sesquilinear block,
 which is <em>Observables, Gauge Generators and the Chirality of the Internal Action</em> and not this article. What is proved
 here is a statement about the transpose of the plain form. Second, the skew sector of the two-sided family is trivial,
@@ -224,7 +224,7 @@ of the antisymmetric band, and its operators are read in the antisymmetric block
 <h2 id="the-symmetries-of-the-form-and-of-the-product">The Symmetries of the Form and of the Product</h2>
 <p><strong>Theorem (the one-sided automorphisms of the form).</strong> The left multiplication $L_{\tilde A}$ preserves the plain form,</p>
 <p>$$
-B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=B(\tilde X,\tilde Y)\qquad\text{for all }\tilde X,\tilde Y,
+B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=\langle\tilde X,\tilde Y\rangle\qquad\text{for all }\tilde X,\tilde Y,
 $$</p>
 <p>if and only if $\tilde A=\pm e_0$, that is $L_{\tilde A}=\pm\mathrm{id}$; the same criterion holds on the right.</p>
 <p><em>Proof.</em> Using the swap and the symmetry of the form,</p>
@@ -253,8 +253,8 @@ operator is still multiplicative up to that central scalar:</p>
 =\tilde B\tilde A\,\bigl(L_{\tilde A}R_{\tilde B}\bigr)(\tilde X\tilde Y),
 $$</p>
 <p>and no norm enters the multiplier.</p>
-<p><strong>Read as a physical statement.</strong> The symmetries of the sector sign $B$ are the inner automorphisms of the algebra and
-their negatives, and they are two-sided without exception: a genuine one-sided operation never preserves $B$, so
+<p><strong>Read as a physical statement.</strong> The symmetries of the sector sign $\langle\cdot,\cdot\rangle$ are the inner automorphisms of the algebra and
+their negatives, and they are two-sided without exception: a genuine one-sided operation never preserves $\langle\cdot,\cdot\rangle$, so
 attaching an operation on one side alone changes the sector sign of a pairing. The operators that preserve the
 <strong>composition</strong> are the inner automorphisms $\mathrm{Ad}_{\tilde A}$ themselves, and the two units $\tilde A$ and
 $\tilde A'$ give the same operator exactly when they differ by a central scalar; conjugation is therefore the only
@@ -264,21 +264,21 @@ both the composition and the pairing whenever it is multiplicative, which is the
 criteria are conditions on the <strong>product of the two parameters</strong>, in which no norm and no conjugation appears; the
 quaternionic block carries the correspondingly stronger law,</p>
 <p>$$
-\Theta_{\tilde A}(\tilde X)\Theta_{\tilde A}(\tilde Y)=N(\tilde A)\,\Theta_{\tilde A}(\tilde X\tilde Y)
+\Theta_{\tilde A}(\tilde X)\Theta_{\tilde A}(\tilde Y)=\langle\tilde A\rangle_{\natural}\,\Theta_{\tilde A}(\tilde X\tilde Y)
 \qquad\text{for every parameter,}
 $$</p>
 <p>because there the twist absorbs a norm and here there is no twist to absorb one.</p>
 <h2 id="the-operators-acting-on-the-spinor-space">The Operators Acting on the Spinor Space</h2>
 <p>The operators of the block act on the state space, and the action is the content of the two other articles of this
-group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ be the minimal left ideal of <em>The Spinor Space as a Module of the Biquaternion Algebra</em>, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ and the complement
-$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\hat\Upsilon_1\}$ of <em>The Complementary Space of the Spinor Space in the Biquaternion Algebra</em>.</p>
-<p><strong>Proposition (the left actions are the matrices of the module).</strong> On the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ the
+group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ be the minimal left ideal of <em>The Spinor Space as a Module of the Biquaternion Algebra</em>, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ and the complement
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_1\}$ of <em>The Complementary Space of the Spinor Space in the Biquaternion Algebra</em>.</p>
+<p><strong>Proposition (the left actions are the matrices of the module).</strong> On the basis $(\tilde\Pi_+,\vec\Upsilon_2)$ the
 four left multiplications by the basis elements are the matrix units</p>
 <p>$$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
-L_{\hat\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
-L_{\hat\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+L_{\vec\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\vec\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$</p>
 <p>so $L$ restricted to $S$ is the map $\tilde Q\mapsto\mathsf{M}_2(\tilde Q)$ of the algebra onto $M_2(\mathbb{C})$, and
 every operator on the state space is a left multiplication: $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)$.</p>
@@ -287,8 +287,8 @@ Action</em>, and the identification $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)
 simple module.</p>
 <p><strong>Proposition (the right actions move the state space to its complement).</strong> A right multiplication commutes with every
 left one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; right multiplication by the
-nilpotent $\hat\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
-multiplication by $\hat\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
+nilpotent $\vec\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
+multiplication by $\vec\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
 right actions and can move nothing.</p>
 <p><em>Proof.</em> The commutation is the third composition law, which makes every $R_{\tilde B}$ a module map; the two nilpotent
 carriers are computed on the basis in <em>The Complementary Space of the Spinor Space in the Biquaternion Algebra</em>,
@@ -328,8 +328,8 @@ they coincide exactly when the two right parameters coincide; the kernel of the 
 is the centre, so no ambiguity remains.</p>
 <p><strong>Theorem (both preserve the interval, and they differ on a boost).</strong> Let $\tilde U$ be of unit norm,
 $\tilde U\tilde U^{\natural}=e_0$. Then $\Theta_{\tilde U}$ and $\mathrm{Ad}_{\tilde U}$ both
-preserve the interval $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
-$\mathbb{M}_\pm$; the inner automorphism preserves the plain form $B$ as well, and the sandwich preserves it exactly
+preserve the interval $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
+$\mathbb{M}_\pm$; the inner automorphism preserves the plain form $\langle\cdot,\cdot\rangle$ as well, and the sandwich preserves it exactly
 when $\tilde U^{*}\tilde U=\pm e_0$, a condition the unit-norm boosts fail. A boost is therefore a parameter
 for which the two operators differ <strong>and</strong> for which the sandwich loses the plain form.</p>
 <p><em>Proof.</em> For the interval, with $\tilde U^{\natural}=\tilde U^{-1}$ and
@@ -366,7 +366,7 @@ conjugations of the block are read there.</p>
 <p>Take one material element as a parameter,</p>
 <p>$$
 \tilde Q=ie_0+2e_1\in\mathbb{M}_-,\qquad
-B(\tilde Q,\tilde Q)=-5,\qquad N(\tilde Q,\tilde Q)=+3,\qquad
+\langle\tilde Q,\tilde Q\rangle=-5,\qquad \langle\tilde Q,\tilde Q\rangle_{\natural}=+3,\qquad
 \tilde Q^{2}=-5e_0+4ie_1 .
 $$</p>
 <p>Its conjugate is $-\tilde Q$, so the sandwich is $\Theta_{\tilde Q}=L_{\tilde Q}R_{-\tilde Q}$ and the criterion reads
@@ -377,7 +377,7 @@ sector $\mathbb{M}_-$ is why. On the unit,</p>
 $$</p>
 <p>a combination of the central and the $e_1$ directions, and the value is a material element up to the imaginary unit that
 the transport across the pairing introduces. The same parameter gives the two different invariants of the block at once,
-$B$ negative and $N$ positive, so the case displays the distinction the group is built on: the operator is symmetric
+$\langle\tilde Q,\tilde Q\rangle$ negative and $\langle\tilde Q,\tilde Q\rangle_{\natural}$ positive, so the case displays the distinction the group is built on: the operator is symmetric
 for the sector sign while the parameter is a material four-vector.</p>
 <p>Take next a <strong>boost</strong> parameter,</p>
 <p>$$
@@ -422,15 +422,15 @@ Multiplication, the State Is the Idempotent</em>, and the reading of the multipl
 article.</li>
 <li><strong>The sandwich is not re-read here.</strong> Its action on the remarkable subspaces is <em>The Sandwich Action in Subspaces</em>,
 and its operator form is <em>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em>.</li>
-<li><strong>The physical adjoint is not this adjoint.</strong> Self-adjointness for the plain form $B$ is not hermiticity; the
+<li><strong>The physical adjoint is not this adjoint.</strong> Self-adjointness for the plain form $\langle\cdot,\cdot\rangle$ is not hermiticity; the
 observables and the gauge generators are the self-adjoint and the skew-adjoint operators for the Hermitian form of the
 sesquilinear block, and they are <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>. This
 article's adjoint is a <strong>transpose</strong>, and its fixed points are the central multiplications, not the observables.</li>
 <li><strong>The four adjoints are not compared here.</strong> The comparison, block against block, is the crossing reader <em>The
 Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, which is not one of the twelve; this article
 declares only the plain column.</li>
-<li><strong>The sector sign is not the metric.</strong> $B$ carries the sector sign; the interval, the mass shell and the metric are
-<em>The Interval as the Square and the Charge of the Material Composition</em> and the companion block, and the worked case gives the two values on one element.</li>
+<li><strong>The sector sign is not the metric.</strong> $\langle\cdot,\cdot\rangle$ carries the sector sign; the interval, the mass shell and the metric are
+<em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em> and the companion block, and the worked case gives the two values on one element.</li>
 </ul>
 <p><strong>What the framework does not claim.</strong> The interpretation does not derive the Lorentz transformation, the unitary evolution or
 the measurement update from the operator calculus; it reads the three parametrisations that the corpus already uses. It
@@ -461,7 +461,7 @@ labelled as such.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The operators of the general plain bilinear product read as the two ways of attaching a material operation to an element and as the
 composition on both sides that the framework calls the sandwich. Three further readings follow from the adjoint. The
-adjoint being the swap, the pairing $B$ is read as a relation that does not distinguish left from right, which is the
+adjoint being the swap, the pairing $\langle\cdot,\cdot\rangle$ is read as a relation that does not distinguish left from right, which is the
 operator content of its symmetry; the absence of generators in the block is read as the statement that the general plain bilinear product composes processes but does not infinitesimally generate them, the generation being the bracket of the
 antisymmetric band; and the type criteria being criteria on the product of the two parameters is read as the statement
 that the two-sided operations are <strong>pairs</strong>, not parameters, so only the relative data of the two slots is physical.
@@ -474,8 +474,8 @@ the identity, and the central phase is the one operation the state space cannot 
 and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, and their products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
-$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ of Gram matrix
-$\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $B$ <strong>swaps the two sides</strong>:
+$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ of Gram matrix
+$\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $\langle\cdot,\cdot\rangle$ <strong>swaps the two sides</strong>:
 $(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
 zero, a two-sided one exactly when its two parameters are proportional, and the sandwich
@@ -507,12 +507,12 @@ the naming.</p>
 <td>Quaternion basis, $e_k^{2}=-e_0$, $e_1e_2=e_3$</td>
 </tr>
 <tr>
-<td>$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$</td>
+<td>$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$</td>
 <td>General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$</td>
 </tr>
 <tr>
 <td>$F^{\approx}$</td>
-<td>The associate, or transpose, for $B$</td>
+<td>The associate, or transpose, for $\langle\cdot,\cdot\rangle$</td>
 </tr>
 <tr>
 <td>$L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$</td>
@@ -555,7 +555,7 @@ the naming.</p>
 <td>The sector criterion of the sandwich</td>
 </tr>
 <tr>
-<td>$L_{\tilde A}$ preserves $B\iff\tilde A=\pm e_0$</td>
+<td>$L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde A=\pm e_0$</td>
 <td>One-sided automorphisms of the form</td>
 </tr>
 <tr>
@@ -605,7 +605,7 @@ operators as the decomposable tensors.</li>
 (<code>articles_maths/modules-over-the-biquaternion-algebra.md</code>), for the simple module, its
 endomorphism ring and the decomposition of the left regular module.</li>
 <li>Physics article <em>The Bilinear Product on the Biquaternion Space</em>
-(<code>articles_physics/the-bilinear-product-on-the-biquaternion-space.md</code>), the framing article of this group, for $B$, the
+(<code>articles_physics/the-bilinear-product-on-the-biquaternion-space.md</code>), the framing article of this group, for $\langle\cdot,\cdot\rangle$, the
 sector sign and the boundary of the block.</li>
 <li>Physics article <em>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>
 (<code>articles_physics/the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent.md</code>), for
@@ -628,8 +628,8 @@ for the Hermitian form and not for the plain one.</li>
 <li>Physics article <em>Biquaternion Rotations and Lorentz Transformations</em>
 (<code>articles_physics/biquaternion-rotations-and-lorentz-transformations.md</code>), for the sandwich as the Lorentz action, the
 double cover and the rotor.</li>
-<li>Physics article <em>The Interval as the Square and the Charge of the Material Composition</em> (<code>articles_physics/the-interval-as-the-square-and-the-charge-of-the-material-composition.md</code>), for
-the interval, the mass shell and the metric, which are the quaternionic level data and not $B$.</li>
+<li>Physics article <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em> (<code>articles_physics/the-four-forms-the-four-algebraic-norms-and-the-change-of-scalars.md</code>), for
+the interval, the mass shell and the metric, which are the quaternionic level data and not $\langle\cdot,\cdot\rangle$.</li>
 <li>Physics article <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>
 (<code>articles_physics/the-operators-of-the-twelve-structures-multiplication-adjoint-and-bracket.md</code>), the crossing reader
 of the twelve operator rows, for the comparison of the four adjoints and the division of the twelve rows.</li>

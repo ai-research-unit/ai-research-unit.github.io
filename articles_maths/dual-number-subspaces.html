@@ -57,7 +57,7 @@
 <p>$$
 A = a + \varepsilon a', \qquad a, a' \in R,
 $$</p>
-<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are</p>
+<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $\langle A\rangle = A\bar A = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are</p>
 <p>$$
 R_{\mathbb{D}'} = R\cdot 1 = \{A : \bar A = A\}, \qquad \varepsilon R_{\mathbb{D}'} = \varepsilon R = \{A : \bar A = -A\}.
 $$</p>
@@ -121,7 +121,7 @@ $$</p>
 <p>$$
 (a, a')(b, b') = (a b,\; a b' + a' b),
 $$</p>
-<p>the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, a') \mapsto (a, -a')$, and the norm is $N(a, a') = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.</p>
+<p>the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, a') \mapsto (a, -a')$, and the norm is $\langle a, a'\rangle = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.</p>
 <h2 id="the-intersections">The Intersections</h2>
 <p><strong>Proposition.</strong> $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$; this is the only intersection of distinct positive-dimensional submodules, and it is the intersection of the two eigenspaces of an involution.</p>
 <p><strong>Proof.</strong> An element of the intersection has $a' = 0$ and $a = 0$, hence is $0$.</p>
@@ -152,13 +152,13 @@ $$</p>
 <h3 id="the-norm-on-the-splits">The Norm on the Splits</h3>
 <p>The norm is additive on the direct sum and depends only on the first summand:</p>
 <p>$$
-N(a + \varepsilon a') = N(a) + N(\varepsilon a') = a^2 + 0 = a^2.
+\langle a + \varepsilon a'\rangle = \langle a\rangle + \langle \varepsilon a'\rangle = a^2 + 0 = a^2.
 $$</p>
 <p>On the two submodules,</p>
 <p>$$
-N(R_{\mathbb{D}'}) \subseteq R_{\mathbb{D}'}, \qquad N(\varepsilon R_{\mathbb{D}'}) = 0.
+\langle R_{\mathbb{D}'}\rangle \subseteq R_{\mathbb{D}'}, \qquad \langle \varepsilon R_{\mathbb{D}'}\rangle = 0.
 $$</p>
-<p>So the norm restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $N$.</p>
+<p>So the norm restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $\langle\cdot\rangle$.</p>
 <h3 id="the-product-and-the-bracket">The Product and the Bracket</h3>
 <p>Since $\mathbb{D}'_R$ is commutative, the commutator bracket vanishes: $[A, B] = AB - BA = 0$ for all $A, B$. The product respects the splits in the sense that</p>
 <p>$$
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="a-pair-that-spans-the-algebra">A Pair That Spans the Algebra</h3>
 <p>$1 \in R_{\mathbb{D}'}$ and $\varepsilon \in \varepsilon R_{\mathbb{D}'}$ are linearly independent and span $\mathbb{D}'$.</p>
 <h3 id="a-mixed-element-and-its-blocks">A Mixed Element and Its Blocks</h3>
-<p>For $A = -4 + \varepsilon$ the blocks are $\operatorname{Re}(A) = -4$ and $\operatorname{Inf}(A)\varepsilon = \varepsilon$; the norm is $N(A) = (-4)^2 = 16$, read from the real block alone.</p>
+<p>For $A = -4 + \varepsilon$ the blocks are $\operatorname{Re}(A) = -4$ and $\operatorname{Inf}(A)\varepsilon = \varepsilon$; the norm is $\langle A\rangle = (-4)^2 = 16$, read from the real block alone.</p>
 <h2 id="the-analytic-coordinates">The Analytic Coordinates</h2>
 <p>The remainder of the article reads the two submodules as the carriers of the differential operators, and for that it uses a variable dual number in the corpus coordinates of <em>Dual-Numbers Analysis</em>:</p>
 <p>$$
@@ -408,7 +408,7 @@ $$</p>
 <td>Maximal ideal, equal to $\varepsilon R_{\mathbb{D}'}$ and to the first-order neighbourhood</td>
 </tr>
 <tr>
-<td>$N(A) = a^2$</td>
+<td>$\langle A\rangle = a^2$</td>
 <td>Norm, vanishes on $\varepsilon R_{\mathbb{D}'}$, radical $\mathrm{M}$</td>
 </tr>
 <tr>

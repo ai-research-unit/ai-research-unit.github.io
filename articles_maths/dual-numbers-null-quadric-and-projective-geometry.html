@@ -52,21 +52,21 @@
       <div class="article-body">
         <h1 id="dual-numbers-null-quadric-and-projective-geometry"><strong>Dual-Numbers Null Quadric and Projective Geometry</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The norm $N(a + \varepsilon a') = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in <em>Dual-Numbers Norm and Invertibility</em> and the zero-divisor classification in <em>Dual-Numbers Zero Divisors</em>. This article treats the form geometrically. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.</p>
+<p>The norm $\langle a + \varepsilon a'\rangle = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in <em>Dual-Numbers Norm and Invertibility</em> and the zero-divisor classification in <em>Dual-Numbers Zero Divisors</em>. This article treats the form geometrically. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is</p>
 <p>$$
 A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
 $$</p>
-<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, the norm $N(A) = A\bar A = a^2$ and its polar form $B(A, B) = a b$ (a form and a distance, defined in <em>Dual-Numbers Norm and Invertibility</em>), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in <em>Shears and Parabolic Rotations</em>.</p>
+<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, the norm $\langle A\rangle = A\bar A = a^2$ and its polar form $\langle A, B\rangle = a b$ (a form and a distance, defined in <em>Dual-Numbers Norm and Invertibility</em>), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in <em>Shears and Parabolic Rotations</em>.</p>
 <h2 id="the-degenerate-isotropic-cone">The Degenerate Isotropic Cone</h2>
 <h3 id="the-isotropic-set">The Isotropic Set</h3>
 <p><strong>Definition.</strong> The <strong>isotropic set</strong> of the norm is</p>
 <p>$$
-\mathcal{N} = \{A \in \mathbb{D}' : N(A) = 0\} = \{A : a = 0\} = \mathrm{M},
+\mathcal{N} = \{A \in \mathbb{D}' : \langle A\rangle = 0\} = \{A : a = 0\} = \mathrm{M},
 $$</p>
 <p>the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$.</p>
 <p><strong>Theorem.</strong> $\mathcal{N} = \mathrm{M}$ is a single line through the origin, closed and of real dimension one, and it is a cone with apex $0$; it is the radical of $B$. As a quadratic cone it is a <strong>double line</strong>: the equation $a^2 = 0$ is the square of the linear equation $a = 0$, so the cone is the line $a = 0$ counted twice.</p>
-<p><strong>Proof.</strong> $N(A) = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$.</p>
+<p><strong>Proof.</strong> $\langle A\rangle = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$.</p>
 <h3 id="comparison-with-a-non-degenerate-cone">Comparison with a Non-Degenerate Cone</h3>
 <p>For a non-degenerate binary quadratic form $a^2 - \sigma a'^2$ with $\sigma \neq 0$ the isotropic set is a union of two distinct lines through the origin, the two null directions; for the positive-definite form $a^2 + a'^2$ it is a single point, the origin. The degenerate dual form is the intermediate case: the two null directions of the split-complex form have coalesced into a single line, and because the form is a perfect square, the coalescence is a genuine doubling rather than a loss. The real dimension of the isotropic set is one, whereas for the split-complex form it is also one (a union of two lines is one-dimensional), but the two cases differ in multiplicity: the dual line is met with multiplicity two by every transverse line, the split-complex pair with multiplicity one each.</p>
 <h2 id="the-projective-line">The Projective Line</h2>
@@ -125,7 +125,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Polar form $B$</td>
+<td>Polar form $\langle\cdot,\cdot\rangle$</td>
 <td>non-degenerate</td>
 <td>degenerate, $\operatorname{rad} B = \mathrm{M}$</td>
 </tr>
@@ -165,7 +165,7 @@ $$</p>
 <h3 id="the-geometry-of-the-dual-plane">The Geometry of the Dual Plane</h3>
 <p>Read on the dual plane rather than on the projective line, the picture is the one developed in <em>Shears and Parabolic Rotations</em>: the isotropic line $\mathrm{M}$ is the fixed line of the shear, the shear translates the fibres of the augmentation, and the norm registers none of the displacement because the nilpotent direction lies in the radical. The projective statement—the shear is the parabolic projectivity fixing the doubled isotropic point—is the compact way to say that multiplication by a unit acts on the dual plane as a unipotent map with a single fixed line, the isotropic line.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm $N(a + \varepsilon a') = a^2$ of the dual numbers has the polar form $B(A, B) = a b$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathrm{M}$, a cone with apex $0$ that is the <strong>double line</strong> $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathrm{M}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = a'/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with a non-degenerate form, the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.</p>
+<p>The norm $\langle a + \varepsilon a'\rangle = a^2$ of the dual numbers has the polar form $\langle A, B\rangle = a b$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathrm{M}$, a cone with apex $0$ that is the <strong>double line</strong> $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathrm{M}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = a'/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with a non-degenerate form, the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -188,7 +188,7 @@ $$</p>
 <td>Real and infinitesimal parts</td>
 </tr>
 <tr>
-<td>$N(A) = A\bar A = a^2$</td>
+<td>$\langle A\rangle = A\bar A = a^2$</td>
 <td>Norm, rank one</td>
 </tr>
 <tr>
@@ -197,7 +197,7 @@ $$</p>
 </tr>
 <tr>
 <td>$[B] = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$</td>
-<td>Matrix of the polar form $B$ in the basis $(1,\varepsilon)$</td>
+<td>Matrix of the polar form $\langle\cdot,\cdot\rangle$ in the basis $(1,\varepsilon)$</td>
 </tr>
 <tr>
 <td>$\mathrm{M} = (\varepsilon) = \operatorname{rad}(B)$</td>

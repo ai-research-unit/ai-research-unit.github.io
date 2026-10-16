@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduced Biquaternion Spin Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reduced-biquaternion-spin-geometry"><strong>Reduced Biquaternion Spin Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $T=A+Bj$, idempotent coordinates $(q_1,q_2)=(A+B,A-B)$ and the four algebraic norms $A^{2}+B^{2}$, $A^{2}-B^{2}$, $|A|^{2}-|B|^{2}$ and $|A|^{2}+|B|^{2}$. The algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is what the second of them carries. It is the tensor product of the two smallest Clifford algebras, $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, and it is the even Clifford algebra of the hyperbolic plane for its bilinear form, $\mathbb{B}_{\mathrm{r}}\cong Cl^{+}(\mathbb{C}^{2})$; and it also carries its own four-dimensional definite norm, whose Clifford algebra has a spinor module and a chirality grading. This article reads the second structure: the Clifford algebra of the algebra with its own norm, its spinor module, the two chiral halves, and the operator the Clifford structure puts on the module.</p>
+<p>The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The result is largely negative and exactly so. The algebra is commutative, so it cannot be the even part of the Clifford algebra of a four-dimensional form: that even part is $\mathbb{H}\oplus\mathbb{H}$, non-commutative. The algebra sits inside it as the complex part $\mathbb{C}\oplus\mathbb{C}$, its unitary torus is the part of the spin group it meets, and the spinor module is the complex four-dimensional module of the complexified Clifford algebra, split into two complex two-dimensional chiral halves. The operator that the structure defines, read in the idempotent coordinates, is the pair of the two complex Cauchy–Riemann operators, which is the analytic face of the same decomposition.</p>
+<p>The two Clifford identifications, the tensor product $Cl_{1,0}\otimes Cl_{0,1}$ and the hyperbolic plane, are <em>Reduced Biquaternion Other Algebraic Element Representations</em> and <em>Reduced Biquaternion Versors and the Orthogonal Group</em>; the forms and the norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the two complex analyses of the algebra and their differential operators are <em>Reduced Biquaternion Analysis</em>, <em>Reduced Biquaternion Regular Functions</em> and <em>Fueter Theory for Reduced Biquaternions</em>; the matrix model is <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the unitary torus is <em>The Unitary Group of the Reduced Biquaternion Algebra</em>. The companion is <em>Biquaternion Spin Geometry</em>, where the algebra is the even part of the Clifford algebra of Minkowski space and the spinor module is the one of physics.</p>
+<p><strong>Conventions.</strong> The norm $\langle T\rangle_{\natural*}=|A|^{2}+|B|^{2}$ is the definite form on the real four-space, of signature $(4,0)$; the norm $\langle T\rangle_{*}=|A|^{2}-|B|^{2}$ is the indefinite form of signature $(2,2)$. The Clifford algebra of a real quadratic space $(V,\mathfrak{Q})$ is written $\mathrm{Cl}(V,\mathfrak{Q})$, its even part $\mathrm{Cl}^{+}(V,\mathfrak{Q})$, and the complexification is written with the complex field in place of the real one.</p>
+<h2 id="the-two-clifford-structures-of-the-algebra">The Two Clifford Structures of the Algebra</h2>
+<p><strong>Proposition (the two structures are different).</strong> The tensor product $Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$ is generated by two elements with squares $+1$ and $-1$, so it is four-real-dimensional and is the algebra itself; the Clifford algebra $\mathrm{Cl}(\mathbb{B}_{\mathrm{r}},K)$ of the definite form is generated by four elements with square $+1$, so it is sixteen-real-dimensional. The two are different objects, and the algebra is the first and sits inside the second.</p>
+<p><strong>Proof.</strong> The first is the identification of <em>Reduced Biquaternion Other Algebraic Element Representations</em>, with the generators $f\otimes1\mapsto j$ and $1\otimes e\mapsto i$; the second has the dimension $2^{4}=16$ of the Clifford algebra of a four-dimensional space. The first is the algebra, of dimension four, and it embeds in the second by the map that sends the element to itself as an even Clifford element, a statement made precise in the section below on the even part.</p>
+<h2 id="the-clifford-algebra-of-the-definite-form">The Clifford Algebra of the Definite Form</h2>
+<p><strong>Theorem (the Clifford algebra).</strong> The Clifford algebra of the definite form $\langle\cdot,\cdot\rangle_{\natural*}$ on the real four-space is the Clifford algebra $Cl_{4,0}$, isomorphic to the algebra $M_{2}(\mathbb{H})$ of two-by-two matrices over the quaternions, of real dimension sixteen and centre $\mathbb{R}$; its complexification is $Cl_{4}(\mathbb{C})\cong M_{4}(\mathbb{C})$. The Clifford algebra of the indefinite form $\langle\cdot,\cdot\rangle_{*}$ is $Cl_{2,2}$, of real dimension sixteen, isomorphic to $M_{4}(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The classification of the real Clifford algebras assigns $Cl_{4,0}$ the class of $M_{2}(\mathbb{H})$, both having real dimension sixteen and centre $\mathbb{R}$; the complexification of a real Clifford algebra depends only on the dimension, and in complex dimension four it is $M_{4}(\mathbb{C})$; the form $\langle\cdot,\cdot\rangle_{*}$ has signature $(2,2)$, and $Cl_{2,2}$ is the real algebra $M_{4}(\mathbb{R})$; the two Clifford algebras $Cl_{4,0}\cong M_{2}(\mathbb{H})$ and $Cl_{2,2}\cong M_{4}(\mathbb{R})$ are not isomorphic, having different Brauer classes, and they only become equal after complexification.</p>
+<p><strong>Corollary (the complexified algebra is a full matrix algebra).</strong> Over $\mathbb{C}$ the two forms are equivalent, and the Clifford algebra is $M_{4}(\mathbb{C})$, with a unique irreducible module of complex dimension four.</p>
+<p><strong>Proof.</strong> Over $\mathbb{C}$ every non-degenerate quadratic form of dimension four is equivalent to every other, so the two real forms have the same complexification; a full matrix algebra has a unique irreducible module, of dimension four.</p>
+<h2 id="the-spinor-module-and-its-two-chiral-halves">The Spinor Module and Its Two Chiral Halves</h2>
+<p><strong>Definition (the chirality element, the spinor module).</strong> The <strong>chirality element</strong> of $Cl_{4}(\mathbb{C})$ is the product $\omega=e_{1}e_{2}e_{3}e_{4}$ of the four generators of the complexified algebra; it satisfies $\omega^{2}=1$ because the complex dimension is four, its eigenvalues are $\pm1$, and the <strong>spinor module</strong> of complex dimension four splits into the two <strong>chiral halves</strong></p>
+<p>$$
+S=S_{+}\oplus S_{-},\qquad \dim_{\mathbb{C}}S_{\pm}=2 .
+$$</p>
+<p><strong>Proof.</strong> The chirality element is central in the even part and anticommutes with the odd part; for a complexified Clifford algebra of even dimension the square of $\omega$ is $1$ in the sign convention of the article and its two eigenspaces are of equal dimension, the dimension of the module being halved.</p>
+<p><strong>Proposition (the real form of the module).</strong> Over the reals the spinor module of $Cl_{4,0}\cong M_{2}(\mathbb{H})$ is $\mathbb{H}^{2}$, of real dimension eight, a module over the quaternions; its complexification is the complex module $S$ of dimension four.</p>
+<p><strong>Proof.</strong> A simple module for $M_{2}(\mathbb{H})$ is $\mathbb{H}^{2}$, of real dimension eight, which is the real dimension of the complex module of dimension four; the complexification of $M_{2}(\mathbb{H})$ is $M_{4}(\mathbb{C})$ and the complexification of $\mathbb{H}^{2}$ is $\mathbb{C}^{4}$.</p>
+<p><strong>Remark (the two halves and the two idempotent coordinates).</strong> The algebra's own decomposition is the pair of idempotent coordinates $(q_1,q_2)$, of complex dimension one each, and it is the shadow of the chiral splitting of the spinor module: the two complex coordinates are the two minimal left ideals of the algebra, and the two chiral halves are the two complex two-dimensional summands of the module. They are not the same vector spaces, the algebra being four-real-dimensional and the module eight-real-dimensional, but they are the same decomposition in the sense that both are the two projections of the direct product structure and both are preserved by everything the algebra does.</p>
+<h2 id="the-algebra-inside-the-even-clifford-algebra">The Algebra Inside the Even Clifford Algebra</h2>
+<p><strong>Theorem (the even part and the embedding).</strong> The even part of the Clifford algebra of the definite form is</p>
+<p>$$
+\mathrm{Cl}^{+}_{4,0}\cong\mathbb{H}\oplus\mathbb{H},
+$$</p>
+<p>non-commutative; the algebra embeds in it as the complex part $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\oplus\mathbb{C}\subset\mathbb{H}\oplus\mathbb{H}$, and the embedding carries the multiplication, the unit and the coefficient conjugation.</p>
+<p><strong>Proof.</strong> The even part of $M_{2}(\mathbb{H})$ consists of the matrices that are diagonal in the decomposition of $M_{2}(\mathbb{H})$ into two quaternion rows and columns, which is the direct sum of two copies of $\mathbb{H}$; the subalgebra $\mathbb{C}\oplus\mathbb{C}$ is the sum of the two copies of $\mathbb{C}\subset\mathbb{H}$, and the map is an algebra monomorphism because the multiplication is componentwise in both algebras.</p>
+<p><strong>Corollary (why the algebra is not an even Clifford algebra of the four-dimensional form).</strong> A four-dimensional form has a non-commutative even Clifford algebra, $Cl^{+}_{4,0}\cong\mathbb{H}\oplus\mathbb{H}$; the algebra is commutative, so it is not equal to that even part but only a subalgebra of it. The equality holds one dimension lower: the algebra is the even Clifford algebra of the two-dimensional form of the hyperbolic plane, $Cl^{+}(\mathbb{C}^{2})$, as stated in <em>Reduced Biquaternion Versors and the Orthogonal Group</em>.</p>
+<p><strong>Proof.</strong> The even part of the Clifford algebra of a four-dimensional form is isomorphic to a sum of two copies of the quaternions, which is not commutative; the algebra is commutative; the second statement is the corollary of the article on the versors.</p>
+<h2 id="the-spin-group-and-the-versors-of-the-algebra">The Spin Group and the Versors of the Algebra</h2>
+<p><strong>Theorem (the spin group and its intersection with the algebra).</strong> The spin group of the definite form is $\mathrm{Spin}(4)\cong S^{3}\times S^{3}\subset\mathbb{H}\oplus\mathbb{H}=\mathrm{Cl}^{+}_{4,0}$, the group of pairs of unit quaternions; the intersection of this spin group with the algebra is the unitary torus</p>
+<p>$$
+\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\{q_1\Pi_{1}+q_2\Pi_{2}:|q_1|=|q_2|=1\}\cong\mathbb{T}^{2},
+$$</p>
+<p>which is the unitary group of the algebra and the maximal compact subgroup of its group of units.</p>
+<p><strong>Proof.</strong> The spin group of a definite form is the group of unit versors in the even Clifford algebra, which for $M_{2}(\mathbb{H})$ is the group of pairs of unit quaternions; an element of the algebra is a pair $(\alpha,\beta)\in\mathbb{C}\oplus\mathbb{C}$ and it is a unit quaternion in each factor exactly when $|\alpha|=|\beta|=1$, which is the definition of the unitary torus; the statement that the torus is the unitary group and the maximal compact subgroup is <em>The Unitary Group of the Reduced Biquaternion Algebra</em>.</p>
+<p><strong>Remark (the versors are units).</strong> Every element of the two spin groups above is a unit of the algebra, hence lies outside the zero-divisor cone: an element $q_1\Pi_{1}+q_2\Pi_{2}$ is invertible exactly when both coordinates are nonzero, the algebra being commutative and having no division, so a versor is never a zero divisor. The versor groups are subgroups of the group of units $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, and the unitary torus is their common compact part.</p>
+<p><strong>Remark (the versor group of the bilinear form).</strong> The versors of the bilinear form of the algebra, $\{q_1\Pi_{1}+q_1^{-1}\Pi_{2}\}\cong\mathbb{C}^{\times}$, are the spin group of the hyperbolic plane and not a subgroup of $\mathrm{Spin}(4)$ in the definite sense: they are the spin group $Spin(2,\mathbb{C})$ of the two-dimensional complex form, which is non-compact. The two spin groups therefore meet only in the compact torus, and the two-versor-group picture of <em>Reduced Biquaternion Versors and the Orthogonal Group</em> is the same picture.</p>
+<h2 id="the-dirac-operator-and-the-two-factor-reduction">The Dirac Operator and the Two-Factor Reduction</h2>
+<p><strong>Definition (the operator).</strong> Let $e_{1},e_{2},e_{3},e_{4}$ be an orthonormal basis of the real four-space for the definite form $\langle\cdot,\cdot\rangle_{\natural*}$, and let the spinor module be as above; the <strong>Dirac operator</strong> of the Clifford structure is</p>
+<p>$$
+D=\sum_{j=1}^{4}e_{j}\,\partial_{j},
+$$</p>
+<p>the Clifford multiplication by the basis combined with the partial derivatives, an operator on the spinor module.</p>
+<p><strong>Proposition (the two-factor reduction).</strong> In the idempotent coordinates $(q_1,q_2)$ the four real directions group into the two complex directions, and the Dirac operator acts as the pair of the two complex Cauchy–Riemann operators,</p>
+<p>$$
+D=\bigl(\bar\partial_{q_1},\;\bar\partial_{q_2}\bigr),
+$$</p>
+<p>one on each idempotent coordinate; consequently the solutions of $Df=0$ are exactly the pairs of complex holomorphic functions of the two coordinates.</p>
+<p><strong>Proof.</strong> The idempotent coordinates are complex, of real dimension two each, and on each complex line the Clifford algebra of the definite form of a plane is the complex numbers with the Cauchy–Riemann operator as its Dirac operator; the algebra's differential calculus reduces to the two complex analyses, which is the theorem of <em>Reduced Biquaternion Analysis</em>, and the operator that the two Wirtinger derivatives build is the one of <em>Reduced Biquaternion Regular Functions</em>.</p>
+<p><strong>Remark (the non-ellipticity and what it means).</strong> The reduced operator is not elliptic: it is a pair of one-complex-dimensional operators, and it factors the Euclidean Laplacian only through its two components. This is the analytic form of the commutativity and of the direct-product structure, exactly as the non-commutativity of the biquaternion algebra is the reason its Fueter operator is elliptic and its spin geometry is the one of physics.</p>
+<h2 id="what-the-algebra-does-not-carry">What the Algebra Does Not Carry</h2>
+<p><strong>Remark (the obstructions).</strong> The algebra does not carry a Pin group, whose elements include the odd reflections; it does not carry the full spin group of the four-dimensional form, only its intersection with the complex part, which is the torus; and it does not carry an elliptic Dirac operator, because it is commutative and the Dirac operator of a commutative Clifford algebra is the reduction to the two complex operators. What it does carry is the even Clifford algebra of the hyperbolic plane, the two-component spinor splitting, and the pair of Cauchy–Riemann operators on the two idempotent coordinates. The physical spin geometry, with the Minkowski signature and the elliptic Dirac operator, is the biquaternion geometry of <em>Biquaternion Spin Geometry</em>, and the two meet only in the two-dimensional hyperbolic core and in the torus.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion algebra is a Clifford algebra in two senses. It is the tensor product $Cl_{1,0}\otimes Cl_{0,1}$ of the two smallest real Clifford algebras, and it is the even Clifford algebra $Cl^{+}(\mathbb{C}^{2})$ of the hyperbolic plane, with spin group $\mathbb{C}^{\times}$. Its own definite form $\langle\cdot,\cdot\rangle_{\natural*}$ has Clifford algebra $Cl_{4,0}\cong M_{2}(\mathbb{H})$, of real dimension sixteen, whose complexification is $M_{4}(\mathbb{C})$ with the spinor module of complex dimension four split into two chiral halves of dimension two; its indefinite form $\langle\cdot,\cdot\rangle_{*}$ has Clifford algebra $Cl_{2,2}\cong M_{4}(\mathbb{R})$. The even part of the definite Clifford algebra is $\mathbb{H}\oplus\mathbb{H}$, non-commutative, and the algebra sits inside it as the complex part $\mathbb{C}\oplus\mathbb{C}$; the intersection of $\mathrm{Spin}(4)\cong S^{3}\times S^{3}$ with the algebra is the unitary torus, which is the maximal compact subgroup of the group of units. The Dirac operator of the structure in the idempotent coordinates is the pair of the two complex Cauchy–Riemann operators, one on each coordinate, hence not elliptic; its solutions are the pairs of holomorphic functions of the two coordinates, which is the analytic face of the direct-product decomposition. The algebra carries no Pin group, no full four-dimensional spin group and no elliptic Dirac operator, and the physical spin geometry of the Minkowski signature belongs to the biquaternion companion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Cl_{1,0}\otimes Cl_{0,1}$</td>
+<td>the tensor-product identification of the algebra, four-real-dimensional</td>
+</tr>
+<tr>
+<td>$Cl^{+}(\mathbb{C}^{2})$</td>
+<td>the even Clifford algebra of the hyperbolic plane, isomorphic to the algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}(\mathbb{B}_{\mathrm{r}},K)=Cl_{4,0}\cong M_{2}(\mathbb{H})$</td>
+<td>the Clifford algebra of the definite form</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}(\mathbb{B}_{\mathrm{r}},H)=Cl_{2,2}\cong M_{4}(\mathbb{R})$</td>
+<td>the Clifford algebra of the indefinite form</td>
+</tr>
+<tr>
+<td>$M_{4}(\mathbb{C})$</td>
+<td>the complexified Clifford algebra</td>
+</tr>
+<tr>
+<td>$\omega=e_{1}e_{2}e_{3}e_{4}$</td>
+<td>the chirality element, $\omega^{2}=1$</td>
+</tr>
+<tr>
+<td>$S=S_{+}\oplus S_{-}$</td>
+<td>the spinor module and its two chiral halves, $\dim_{\mathbb{C}}S_{\pm}=2$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{2}$</td>
+<td>the real spinor module of $Cl_{4,0}$, of real dimension eight</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^{+}_{4,0}\cong\mathbb{H}\oplus\mathbb{H}$</td>
+<td>the even part, non-commutative</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\oplus\mathbb{C}=\mathbb{B}_{\mathrm{r}}\subset\mathbb{H}\oplus\mathbb{H}$</td>
+<td>the algebra inside the even part</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(4)\cong S^{3}\times S^{3}$</td>
+<td>the spin group of the definite form</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(4)\cap\mathbb{B}_{\mathrm{r}}=\mathbb{T}^{2}$</td>
+<td>the unitary torus, the intersection</td>
+</tr>
+<tr>
+<td>$D=\sum_{j}e_{j}\partial_{j}=(\bar\partial_{q_1},\bar\partial_{q_2})$</td>
+<td>the Dirac operator and its two-factor reduction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Reduced Biquaternion Other Algebraic Element Representations</em> (<code>articles_maths/reduced-biquaternion-other-algebraic-element-representations.md</code>), for the Clifford identification $Cl_{1,0}\otimes Cl_{0,1}$ and the other presentations.</li>
+<li><em>Reduced Biquaternion Versors and the Orthogonal Group</em> (<code>articles_maths/reduced-biquaternion-versors-and-the-orthogonal-group.md</code>), for the even Clifford algebra of the hyperbolic plane and the versor group.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the definite and the indefinite norms.</li>
+<li><em>Reduced Biquaternion Analysis</em> (<code>articles_maths/reduced-biquaternion-analysis.md</code>), for the reduction of the differential calculus to the two complex analyses.</li>
+<li><em>Reduced Biquaternion Regular Functions</em> (<code>articles_maths/reduced-biquaternion-regular-functions.md</code>), for the two Wirtinger derivatives and the reduced Cauchy–Riemann operator.</li>
+<li><em>Biquaternion Spin Geometry</em> (<code>articles_maths/biquaternion-spin-geometry.md</code>), for the companion in which the algebra is the even part of the Clifford algebra of Minkowski space and the Dirac operator is elliptic.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

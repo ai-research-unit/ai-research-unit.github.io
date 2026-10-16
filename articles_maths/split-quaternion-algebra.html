@@ -53,7 +53,7 @@
         <h1 id="split-quaternion-algebra"><strong>Split-Quaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the split-quaternion algebra as an algebraic structure. It defines the algebra, describes the conjugations and their fixed-point subspaces, the idempotents and the distinguished subspaces, and the Lie algebra structure. It closes with a comparison with the quaternions $\mathbb{H}$ and with the split-biquaternions $\mathbb{H}_{\mathbb{D}}$.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The inner product of the algebra is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy; nothing is measured with it, and the theory of norms, forms and signatures belongs to the Topology group (<em>Split-Quaternion Norm and Invertibility</em>). The quaternion algebra is assumed from <em>Quaternion Algebra</em>; the split-complex algebra and its idempotents from <em>Split-Complex Algebra</em>; the Clifford algebra $\mathrm{Cl}_{p,q}$ and its low-dimensional classification from <em>Clifford Algebras in Finite Dimensions</em> and <em>The Number Systems as Clifford Algebras</em>. The rotations, the Lorentz group and the hyperbolic geometry that the algebra carries are not treated here; they belong to <em>Split-Quaternion Rotations and the Lorentz Group</em>, <em>Split-Quaternion Geometry</em> and <em>Split-Quaternions and Hyperbolic Geometry</em>.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The inner product of the algebra is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy; nothing is measured with it, and the theory of norms, forms and signatures belongs to the Topology group (<em>Split-Quaternion Norm and Invertibility</em>). The quaternion algebra is assumed from <em>Quaternion Algebra</em>; the split-complex algebra and its idempotents from <em>Split-Complex Algebra</em>; the Clifford algebra $\mathrm{Cl}_{n,m}$ and its low-dimensional classification from <em>Clifford Algebras in Finite Dimensions</em> and <em>The Number Systems as Clifford Algebras</em>. The rotations, the Lorentz group and the hyperbolic geometry that the algebra carries are not treated here; they belong to <em>Split-Quaternion Rotations and the Lorentz Group</em>, <em>Split-Quaternion Geometry</em> and <em>Split-Quaternions and Hyperbolic Geometry</em>.</p>
 <h2 id="the-split-quaternion-algebra">The Split-Quaternion Algebra</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>split-quaternion algebra</strong> $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis</p>
@@ -183,14 +183,14 @@ $$</p>
 <h2 id="the-inner-product">The Inner Product</h2>
 <p>The <strong>inner product</strong> of two split-quaternions is the real scalar</p>
 <p>$$
-B(\tilde q, \tilde p) = \operatorname{Sc}(\tilde q\, \tilde{p}^{\natural}) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3,
+\langle\tilde q,\tilde p\rangle = \operatorname{Sc}(\tilde q\, \tilde{p}^{\natural}) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3,
 $$</p>
-<p>for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde p = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3$. It is symmetric and bilinear, and it is <strong>non-degenerate</strong>: if $B(\tilde q, \tilde p) = 0$ for every $\tilde p$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.</p>
+<p>for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde p = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3$. It is symmetric and bilinear, and it is <strong>non-degenerate</strong>: if $\langle\tilde q,\tilde p\rangle = 0$ for every $\tilde p$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.</p>
 <p>Forming the inner product, evaluating it to a scalar and asking when it vanishes is all that is done with it here. Its diagonal value is the product</p>
 <p>$$
-B(\tilde q, \tilde q) = \tilde q \tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+\langle\tilde q,\tilde q\rangle = \tilde q \tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$</p>
-<p>which lies in the centre $S$ and is multiplicative, $(\tilde q \tilde p)((\tilde q \tilde p))^{\natural} = (\tilde q\tilde{q}^{\natural})(\tilde p \tilde{p}^{\natural})$, because $\tilde q\tilde{q}^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $B(\tilde q,\tilde q) = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in <em>Split-Quaternion Zero Divisors</em>. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in <em>Split-Quaternion Norm and Invertibility</em>.</p>
+<p>which lies in the centre $S$ and is multiplicative, $(\tilde q \tilde p)((\tilde q \tilde p))^{\natural} = (\tilde q\tilde{q}^{\natural})(\tilde p \tilde{p}^{\natural})$, because $\tilde q\tilde{q}^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $\langle\tilde q,\tilde q\rangle = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in <em>Split-Quaternion Zero Divisors</em>. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in <em>Split-Quaternion Norm and Invertibility</em>.</p>
 <h2 id="the-idempotents-and-the-split-complex-subspaces">The Idempotents and the Split-Complex Subspaces</h2>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p><strong>Definition.</strong> The two elements</p>
@@ -340,7 +340,7 @@ $$</p>
 <tr>
 <td>idempotents</td>
 <td>non-central only</td>
-<td>central, $e_\pm$</td>
+<td>central, $\tilde\Pi_{1,2}$</td>
 </tr>
 <tr>
 <td>nonzero nilpotents</td>
@@ -417,12 +417,12 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$B(\tilde q,\tilde p) = \operatorname{Sc}(\tilde q \tilde{p}^{\natural}) = q_0p_0+q_1p_1-q_2p_2-q_3p_3$</td>
+<td>$\langle\tilde q,\tilde p\rangle = \operatorname{Sc}(\tilde q \tilde{p}^{\natural}) = q_0p_0+q_1p_1-q_2p_2-q_3p_3$</td>
 <td>the inner product, formed and evaluated algebraically</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
 <td>the split-quaternion norm, named here only by forward reference</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>

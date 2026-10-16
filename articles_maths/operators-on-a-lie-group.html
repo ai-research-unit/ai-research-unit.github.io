@@ -77,22 +77,22 @@ $$</p>
 <h3 id="the-first-order-operators">The First-Order Operators</h3>
 <p><strong>Definition.</strong> For $X \in \mathrm{G}$ the <strong>left-invariant vector field</strong> determined by $X$ is the operator on $C^\infty(G)$</p>
 <p>$$
-\tilde X f = \frac{d}{dt}\Big|_{t=0} f(\exp(-tX)\,x) .
+X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} f(\exp(-tX)\,x) .
 $$</p>
-<p>It is the derivation of $C^\infty(G)$ determined by the left-invariant field of <em>The Lie Algebra and the Exponential Map</em>, and the assignment $X \mapsto \tilde X$ is an injective $\mathbb{C}$-linear map $\mathrm{G} \to D_L(G)$ with</p>
+<p>It is the derivation of $C^\infty(G)$ determined by the left-invariant field of <em>The Lie Algebra and the Exponential Map</em>, and the assignment $X \mapsto X^{\mathrm{lift}}$ is an injective $\mathbb{C}$-linear map $\mathrm{G} \to D_L(G)$ with</p>
 <p>$$
-[\tilde X, \tilde Y] = \widetilde{[X,Y]} .
+[X^{\mathrm{lift}}, Y^{\mathrm{lift}}] = [X,Y]^{\mathrm{lift}} .
 $$</p>
-<p><em>Proof.</em> The field is left-invariant by construction, the bracket identity is the naturality of the commutator of vector fields, and injectivity follows because $\tilde X$ determines $X$ from the coordinate functions at $e$.</p>
+<p><em>Proof.</em> The field is left-invariant by construction, the bracket identity is the naturality of the commutator of vector fields, and injectivity follows because $X^{\mathrm{lift}}$ determines $X$ from the coordinate functions at $e$.</p>
 <h3 id="the-algebra-of-left-invariant-differential-operators">The Algebra of Left-Invariant Differential Operators</h3>
 <p>A <strong>differential operator of order at most $k$</strong> on $G$ is a $\mathbb{C}$-linear operator on $C^\infty(G)$ that in every chart is a polynomial of degree at most $k$ in the coordinate derivations; the differential operators form a filtered algebra $D(G)$ whose associated graded algebra is commutative, and the order is the degree of the top symbol. The theory of the algebra is <em>Differential Operators on a Manifold</em>, and the next theorem is its Lie-theoretic specialisation.</p>
 <p><strong>Theorem (the universal enveloping algebra).</strong> Evaluation at the identity gives an isomorphism of filtered $\mathbb{C}$-algebras</p>
 <p>$$
-U(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ \tilde X_1 \cdots \tilde X_k ,
+U(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}} ,
 $$</p>
 <p>from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $U(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.</p>
-<p><em>Proof.</em> The assignment $X \mapsto \tilde X$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $U(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $\tilde X_i$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $\tilde X_i$ of bounded degree, hence an element of $U(\mathrm{G})$ by PBW.</p>
-<p><strong>Corollary.</strong> $D_L(G)$ is generated as an algebra by the first-order operators $\tilde X$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $U(\mathrm{G})$ and $D_L(G)$ are isomorphic.</p>
+<p><em>Proof.</em> The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $U(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $U(\mathrm{G})$ by PBW.</p>
+<p><strong>Corollary.</strong> $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $U(\mathrm{G})$ and $D_L(G)$ are isomorphic.</p>
 <p><em>Proof.</em> Generation and the filtration are the content of the theorem; the associated graded statement is the Poincaré--Birkhoff--Witt theorem.</p>
 <h2 id="the-bi-invariant-operators">The Bi-Invariant Operators</h2>
 <h3 id="the-adjoint-action-on-the-enveloping-algebra">The Adjoint Action on the Enveloping Algebra</h3>
@@ -146,11 +146,11 @@ $$</p>
 <h3 id="the-additive-group-of-a-vector-space">The Additive Group of a Vector Space</h3>
 <p>Let $G = \mathbb{R}^n$ with the additive structure. The left-invariant vector fields are the constant coefficient derivations $\partial_1, \ldots, \partial_n$, the universal enveloping algebra is the polynomial algebra $\mathbb{C}[\partial_1, \ldots, \partial_n]$, and the left-invariant differential operators are the constant coefficient operators. Convolution is the ordinary convolution of functions, and the distributions supported at the origin are the finite linear combinations of the delta distribution and its derivatives.</p>
 <h3 id="a-torus">A Torus</h3>
-<p>Let $G = T^n = \mathbb{R}^n/\mathbb{Z}^n$. The left-invariant differential operators are the constant coefficient operators in the coordinate derivations, and on the character $e^{2\pi i\,m\cdot x}$, $m \in \mathbb{Z}^n$, the operator $P(\partial)$ acts by the scalar $P(2\pi i m)$. Convolution acts on the Fourier coefficients by multiplication, which is the convolution theorem of <em>Harmonic Analysis on Groups</em>.</p>
+<p>Let $G = T^n = \mathbb{R}^n/\mathbb{Z}^n$. The left-invariant differential operators are the constant coefficient operators in the coordinate derivations, and on the character $\exp(2\pi i\,m\cdot x)$, $m \in \mathbb{Z}^n$, the operator $P(\partial)$ acts by the scalar $P(2\pi i m)$. Convolution acts on the Fourier coefficients by multiplication, which is the convolution theorem of <em>Harmonic Analysis on Groups</em>.</p>
 <h3 id="a-compact-matrix-group">A Compact Matrix Group</h3>
 <p>Let $G$ be a compact connected Lie group, such as $SU(2)$ or $SO(3)$. The bi-invariant operators are the polynomials in the Casimir element, and by <em>Harmonic Analysis on Groups</em> the Peter--Weyl theorem decomposes $C^\infty(G)$ into finite-dimensional irreducible components on each of which the Casimir operator acts by a scalar; the operator layer of $G$ is therefore diagonalised by the representation theory, which is the content of <em>The Casimir Operator of a Lie Group</em> and of <em>Unitary Representations of a Lie Group</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $U(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto \tilde X$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(U(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $U(\mathrm{G})$.</p>
+<p>A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $U(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto X^{\mathrm{lift}}$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(U(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $U(\mathrm{G})$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -181,7 +181,7 @@ $$</p>
 <td>the left- and right-invariant operators</td>
 </tr>
 <tr>
-<td>$\tilde X$</td>
+<td>$X^{\mathrm{lift}}$</td>
 <td>the left-invariant vector field determined by $X$</td>
 </tr>
 <tr>

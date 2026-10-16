@@ -62,7 +62,7 @@
 $$</p>
 <p>and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies</p>
 <p>$$
-\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2 ,
+\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
 $$</p>
 <p>so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the conjugate transpose.</p>
 <h2 id="the-sesquilinear-product-in-the-regular-representation">The Sesquilinear Product in the Regular Representation</h2>
@@ -88,7 +88,7 @@ $$</p>
 <p>so the Frobenius norm of the regular matrix is twice the definite norm of the element, and the Hilbert–Schmidt pairing reads the definite form of the algebra on the matrices.</p>
 <p><strong>The signature and the null set.</strong> The pairing is positive definite: on the sixteen complex coordinates of $M_4(\mathbb{C})$ it has signature $(32,0)$, and its null set is $\{0\}$ alone.</p>
 <p><strong>The automorphism group.</strong> The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the unitary group $U(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $U(4)\times U(4)$ modulo the common centre, which is the part that also preserves the algebra structure.</p>
-<p><strong>The two-sided action and the double cover.</strong> The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $\tilde{G}=\{\tilde{A}:N(\tilde{A})=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:</p>
+<p><strong>The two-sided action and the double cover.</strong> The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $\tilde{G}=\{\tilde{A}:\langle\tilde{A}\rangle_{\natural}=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:</p>
 <p>$$
 \langle\tilde{A}\tilde{Q}\tilde{A}^{*},\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural},\qquad \tilde{A}\in\tilde{G}.
 $$</p>
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>The identity.</strong> Let $\tilde{Q}=e_0$. Then $\mathsf{M}_4(e_0)=I_4$, $\lVert\mathsf{M}_4(e_0)\rVert_F^2=4=4\lVert e_0\rVert_E^2$, and $\tfrac12\operatorname{Tr}(I_4^{\dagger}I_4)=2=2\langle e_0,e_0\rangle_{*}$.</p>
 <p><strong>A Hermitian element.</strong> Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde{Q}\rVert_E^2=8$.</p>
-<p><strong>A zero divisor.</strong> Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.</p>
+<p><strong>A zero divisor.</strong> Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.</p>
 <h2 id="the-matrices">The Matrices</h2>
 <p><strong>The generators.</strong> The regular model is fixed on the basis by four matrices:</p>
 <p>$$
@@ -115,7 +115,7 @@ $$</p>
 A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
 B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
 $$</p>
-<p>The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.</p>
+<p>The general element has trace $4Q_0$ and determinant $\langle\tilde Q\rangle_{\natural}^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.</p>
 <p><strong>The product, entry by entry.</strong> A vector unit is anti-Hermitian, so $\mathsf{M}_4(e_2)^{\dagger}=-\mathsf{M}_4(e_2)$, and the product at the pair $e_1,e_2$ is</p>
 <p>$$
 \mathsf{M}_4(e_1)\mathsf{M}_4(e_2)^{\dagger}=-\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=-\mathsf{M}_4(e_3),
@@ -164,10 +164,10 @@ $$</p>
 <ul>
 <li><em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> (<code>articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md</code>), for the representation and its first properties</li>
 <li><em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> (<code>articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md</code>), for the further reading of the regular representation</li>
-<li><em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra.md</code>), for the sesquilinear product on the algebra</li>
-<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternioid-c-space.md</code>), for the form on the algebra</li>
+<li><em>Introduction to the General Plain Sesqualgebra</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra.md</code>), for the sesquilinear product on the algebra</li>
+<li><em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternioid-c-space.md</code>), for the form on the algebra</li>
 <li><em>The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md</code>), for the companion reading of the group</li>
-<li><em>Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md</code>), for the restriction theory of the form</li>
+<li><em>Remarkable Subspaces under the General Plain Sesqualgebra</em> (<code>articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra.md</code>), for the restriction theory of the form</li>
 </ul>
       </div>
     </main>

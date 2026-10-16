@@ -93,7 +93,7 @@ positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The
 <h2 id="the-connected-generating-functional">The Connected Generating Functional</h2>
 <p>Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J] = \int\mathcal{D}\tilde\Phi\; e^{\,iS[\tilde\Phi]/\hbar + \langle \tilde J,\tilde\Phi\rangle},
+Z[\tilde J] = \int\mathcal{D}\tilde\Phi\; \exp(\,iS[\tilde\Phi]/\hbar + \langle \tilde J,\tilde\Phi\rangle),
 $$
 with $\tilde J$ valued in the module and the pairing as above. The connected functional is
 $$
@@ -231,11 +231,11 @@ the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm
 <h3 id="the-proper-time-form">The Proper-Time Form</h3>
 <p>The determinant is often traded for an integral over a <strong>proper time</strong> $s$, by
 $$
-\frac12\,\mathrm{Tr}\log S''[\tilde\phi] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,e^{-s\,S''[\tilde\phi]},
+\frac12\,\mathrm{Tr}\log S''[\tilde\phi] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,\exp(-s\,S''[\tilde\phi]),
 $$
 which is exact when the integral converges and is defined by regularization otherwise. In the biquaternion framework $S''[\tilde\phi]$ is an operator on the module and the trace is the pairing, so the integrand is a one-loop <strong>heat kernel</strong> on the module,
 $$
-K(s) = \mathrm{Tr}\,e^{-s\,S''[\tilde\phi]} ,
+K(s) = \mathrm{Tr}\,\exp(-s\,S''[\tilde\phi]) ,
 $$
 whose small-$s$ expansion
 $$
@@ -280,7 +280,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 <td>Real bilinear form; positive on $\mathbb{M}_+$, negative on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{iS/\hbar+\langle\tilde J,\tilde\Phi\rangle}$</td>
+<td>$Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(iS/\hbar+\langle\tilde J,\tilde\Phi\rangle)$</td>
 <td>Generating functional</td>
 </tr>
 <tr>

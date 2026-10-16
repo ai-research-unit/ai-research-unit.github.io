@@ -56,13 +56,13 @@
 <p>$$
 x\,y\,x^{-1}\ \longmapsto\ \alpha(x)\,y\,x^{-1},
 $$</p>
-<p>the <strong>signed inner conjugation</strong>. The name records the input that the inner conjugation cannot supply: the grade involution is the sign character of the algebra, equal to $-1$ on the odd part, and it is that minus which makes an odd element reproduce the reflection $\rho_u$ instead of its negative.</p>
+<p>the <strong>signed inner conjugation</strong>. The name records the input that the inner conjugation cannot supply: the grade involution is the sign character of the algebra, equal to $-1$ on the odd part, and it is that minus which makes an odd element reproduce the reflection $\rho_a$ instead of its negative.</p>
 <p>The reason a separate name and a separate article are needed is that the even part of the algebra and the odd part behave differently, and the difference is exactly the sign. On an even element the factors $\alpha(x)$ and $x$ coincide and the signed inner conjugation is the inner conjugation, an algebra automorphism; on an odd element the two differ by $-1$, so the signed inner conjugation is the inner conjugation composed with the sign, a map that is multiplicative only up to that sign, yet still bijective, still preserving the parity grading, and on the space of vectors the one that returns the reflection. The inner conjugation and the signed inner conjugation therefore agree on $\mathrm{Cl}^0$ and differ on $\mathrm{Cl}^1$, and only the signed one has the kernel and the action on $V$ on which the pin and spin groups are built.</p>
-<p>The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. The general two-sided family, its five members, its value at the unit, its parity and its composition law are <em>Two-Sided Operators on a Clifford Algebra</em>, and nothing of that general theory is re-derived here. The restriction to the quadratic space, the Clifford group $\Gamma(V,q)$ and the groups cut out of it by the Clifford norm are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the one-sided factors of the operator are <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, and its role on a module is <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>; and the reason the signed member is not a second independent structure, with the cancellation of two odd signs and the graded decomposition of the algebra, is <em>The Grading of the Clifford Algebra with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.</p>
+<p>The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. The general two-sided family, its five members, its value at the unit, its parity and its composition law are <em>Two-Sided Operators on a Clifford Algebra</em>, and nothing of that general theory is re-derived here. The restriction to the quadratic space, the Clifford group $\Gamma(V,\mathfrak{Q})$ and the groups cut out of it by the Clifford norm are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the one-sided factors of the operator are <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, and its role on a module is <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>; and the reason the signed member is not a second independent structure, with the cancellation of two odd signs and the graded decomposition of the algebra, is <em>The Grading of the Clifford Algebra with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.</p>
 <h2 id="the-operator-and-the-parity-sign">The Operator and the Parity Sign</h2>
-<p><strong>Definition.</strong> Let $x\in\mathrm{Cl}(V,q)^{\times}$ be a unit. The <strong>signed inner conjugation</strong> by $x$ is the $F$-linear map</p>
+<p><strong>Definition.</strong> Let $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be a unit. The <strong>signed inner conjugation</strong> by $x$ is the $F$-linear map</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_x:\mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q),\qquad \mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}.
+\mathrm{Ad}^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}.
 $$</p>
 <p>It is the two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.</p>
 <p><strong>Proposition (the parity sign).</strong> Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then</p>
@@ -77,9 +77,9 @@ $$</p>
 <h2 id="the-automorphism-and-its-sign">The Automorphism and Its Sign</h2>
 <p><strong>Proposition (bijectivity and composition).</strong> The map $\mathrm{Ad}^{\alpha}_x$ is an $F$-linear bijection of the algebra with inverse $\mathrm{Ad}^{\alpha}_{x^{-1}}$, and</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},\qquad x,z\in\mathrm{Cl}(V,q)^{\times}.
+\mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},\qquad x,z\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}.
 $$</p>
-<p>So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the unit group to the group of $F$-linear bijections of $\mathrm{Cl}(V,q)$, with image isomorphic to $\mathrm{Cl}(V,q)^{\times}/F^{\times}$.</p>
+<p>So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the unit group to the group of $F$-linear bijections of $\mathrm{Cl}(V,\mathfrak{Q})$, with image isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/F^{\times}$.</p>
 <p><em>Proof.</em> For the composition, $\mathrm{Ad}^{\alpha}_x\bigl(\mathrm{Ad}^{\alpha}_z(y)\bigr)=\alpha(x)\bigl(\alpha(z)\,y\,z^{-1}\bigr)x^{-1}=\alpha(xz)\,y\,(xz)^{-1}$. Taking $z=x^{-1}$ gives the inverse. The kernel is computed in the next section.</p>
 <p><strong>Proposition (multiplicativity, with the sign).</strong> Let $x$ be homogeneous of degree $k$ and $\varepsilon_x=(-1)^{k}$. Then for all $y,z$,</p>
 <p>$$
@@ -97,7 +97,7 @@ $$</p>
 <p>The inner conjugation and the signed inner conjugation have different kernels, and that difference is the second place where the minus is load-bearing.</p>
 <p><strong>Proposition.</strong> The kernel of the inner conjugation on the unit group is the group of units of the centre,</p>
 <p>$$
-\ker\mathrm{Ad}=\{\,x\in\mathrm{Cl}(V,q)^{\times} : xy=yx\ \text{for all } y\,\}=Z\bigl(\mathrm{Cl}(V,q)\bigr)^{\times},
+\ker\mathrm{Ad}=\{\,x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times} : xy=yx\ \text{for all } y\,\}=Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)^{\times},
 $$</p>
 <p>which is $F^{\times}\cdot1$ when $\dim V$ is even and $F^{\times}\cdot1\cup F^{\times}\omega$ when $\dim V$ is odd, where $\omega$ is the volume element.</p>
 <p><em>Proof.</em> $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is a unit because $\omega^{2}=\pm1$, a nonzero scalar.</p>
@@ -112,16 +112,16 @@ $$</p>
 \mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id}.
 $$</p>
 <p><em>Proof.</em> The volume element is odd and central in odd dimension, so $\mathrm{Ad}_\omega=\mathrm{id}$, and the parity-sign proposition gives $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{Ad}_\omega$.</p>
-<p><strong>Remark (why the exact sequences need the signed form).</strong> The corollary is the sharp statement that the inner conjugation is the wrong operator for the pin group. The element $\omega$ of an odd-dimensional Clifford algebra is a unit of norm $N(\omega)=\omega\bar\omega=\pm1$, so it lies in $\mathrm{Pin}(V,q)$; under $\mathrm{Ad}$ it acts trivially on $V$ and belongs to the kernel of $\mathrm{Pin}\to O(V,q)$, so that kernel is strictly larger than $\{\pm1\}$ and the exact sequence fails. Under $\mathrm{Ad}^{\alpha}$ the same element acts as $-\mathrm{id}$, hence nontrivially, and the kernel is the scalars; intersected with the norm-one condition of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> it is $\{\pm1\}$, which is the double cover. The minus in the left factor is therefore not a convention: it is what makes the kernel of the action on the quadratic space the two elements that the covering group requires.</p>
+<p><strong>Remark (why the exact sequences need the signed form).</strong> The corollary is the sharp statement that the inner conjugation is the wrong operator for the pin group. The element $\omega$ of an odd-dimensional Clifford algebra is a unit of norm $N(\omega)=\omega\bar\omega=\pm1$, so it lies in $\mathrm{Pin}(V,\mathfrak{Q})$; under $\mathrm{Ad}$ it acts trivially on $V$ and belongs to the kernel of $\mathrm{Pin}\to O(V,\mathfrak{Q})$, so that kernel is strictly larger than $\{\pm1\}$ and the exact sequence fails. Under $\mathrm{Ad}^{\alpha}$ the same element acts as $-\mathrm{id}$, hence nontrivially, and the kernel is the scalars; intersected with the norm-one condition of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> it is $\{\pm1\}$, which is the double cover. The minus in the left factor is therefore not a convention: it is what makes the kernel of the action on the quadratic space the two elements that the covering group requires.</p>
 <h2 id="the-action-on-the-quadratic-space">The Action on the Quadratic Space</h2>
-<p><strong>Proposition.</strong> Let $u\in V$ with $q(u)\neq0$ and let $\rho_u(v)=v-2B(v,u)q(u)^{-1}u$ be the reflection in $u^{\perp}$. Then</p>
+<p><strong>Proposition.</strong> Let $a\in V$ with $\mathfrak{Q}(a)\neq0$ and let $\rho_a(v)=v-2B(v,a)\mathfrak{Q}(a)^{-1}a$ be the reflection in $a^{\perp}$. Then</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_u(v)=\rho_u(v),\qquad \mathrm{Ad}_u(v)=-\rho_u(v),\qquad v\in V .
+\mathrm{Ad}^{\alpha}_a(v)=\rho_a(v),\qquad \mathrm{Ad}_a(v)=-\rho_a(v),\qquad v\in V .
 $$</p>
-<p><em>Proof.</em> For a vector $u$ one has $\alpha(u)=-u$, so $\mathrm{Ad}^{\alpha}_u=-u\,v\,u^{-1}$ and $\mathrm{Ad}_u=u\,v\,u^{-1}$; from the fundamental relation, $uvu=2B(u,v)u-q(u)v$, hence $-uvu^{-1}=\rho_u(v)$ and the other equality is its negative.</p>
-<p><strong>Proposition.</strong> For $x\in\mathrm{Cl}(V,q)^{\times}$ the condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ holds exactly when $\mathrm{Ad}_x(V)\subseteq V$, and characterizes the Clifford group $\Gamma(V,q)$; on $\Gamma$ the map $\mathrm{Ad}^{\alpha}$ is a surjection onto $O(V,q)$ with kernel $F^{\times}$, and on an even element it is a rotation while on a vector it is a reflection.</p>
+<p><em>Proof.</em> For a vector $a$ one has $\alpha(a)=-a$, so $\mathrm{Ad}^{\alpha}_a=-a\,v\,a^{-1}$ and $\mathrm{Ad}_a=a\,v\,a^{-1}$; from the fundamental relation, $uvu=2B(a,v)a-\mathfrak{Q}(a)v$, hence $-uvu^{-1}=\rho_a(v)$ and the other equality is its negative.</p>
+<p><strong>Proposition.</strong> For $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the condition $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ holds exactly when $\mathrm{Ad}_x(V)\subseteq V$, and characterizes the Clifford group $\Gamma(V,\mathfrak{Q})$; on $\Gamma$ the map $\mathrm{Ad}^{\alpha}$ is a surjection onto $O(V,\mathfrak{Q})$ with kernel $F^{\times}$, and on an even element it is a rotation while on a vector it is a reflection.</p>
 <p><em>Proof.</em> The two conditions are equivalent because the two maps differ by the central scalar $\varepsilon_x$, which carries $V$ to itself. The rest is the theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, quoted here.</p>
-<p><strong>Remark.</strong> The equivalence of the two conditions shows that the Clifford group does not depend on which member is used to define it; what the member changes is the map, and hence which isometry is attached to which element. With $\mathrm{Ad}$ an odd element $u$ is sent to $-\rho_u$, that is to the reflection composed with $-\mathrm{id}$, and with the rotations of the even part this still fills out $O(V,q)$; with $\mathrm{Ad}^{\alpha}$ the same element is sent to the reflection itself. The two maps agree on the even part and differ by the sign on the odd part, and it is the signed map that matches the classical sandwich formula $v\mapsto-u\,v\,u^{-1}$.</p>
+<p><strong>Remark.</strong> The equivalence of the two conditions shows that the Clifford group does not depend on which member is used to define it; what the member changes is the map, and hence which isometry is attached to which element. With $\mathrm{Ad}$ an odd element $a$ is sent to $-\rho_a$, that is to the reflection composed with $-\mathrm{id}$, and with the rotations of the even part this still fills out $O(V,\mathfrak{Q})$; with $\mathrm{Ad}^{\alpha}$ the same element is sent to the reflection itself. The two maps agree on the even part and differ by the sign on the odd part, and it is the signed map that matches the classical sandwich formula $v\mapsto-a\,v\,a^{-1}$.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-sign-on-the-odd-part">The Sign on the Odd Part</h3>
 <p>In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$, let $x=e_1$. Then $x$ is odd, $\varepsilon_x=-1$, $x^{-1}=-e_1$ and $\alpha(x)=-e_1$, so $\mathrm{Ad}^{\alpha}_{e_1}=-\mathrm{Ad}_{e_1}$ and</p>
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 \mathrm{Ad}_{\omega}=\mathrm{id},\qquad \mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id},\qquad N(\omega)=\omega\bar\omega=\omega^{2}=1 .
 $$</p>
-<p>So $\omega\in\mathrm{Pin}(V,q)$, it is invisible to the inner conjugation, and the signed inner conjugation separates it from the identity. This is the worked form of the corollary above.</p>
+<p>So $\omega\in\mathrm{Pin}(V,\mathfrak{Q})$, it is invisible to the inner conjugation, and the signed inner conjugation separates it from the identity. This is the worked form of the corollary above.</p>
 <h3 id="an-even-element">An Even Element</h3>
 <p>The element $R=e_1e_2$ is even, so the two operators coincide. With $R^{-1}=-e_1e_2$,</p>
 <p>$$
@@ -163,14 +163,14 @@ $$</p>
 $$</p>
 <p>which is the half-turn of the plane $\mathrm{span}(e_1,e_2)$: the rotation carried by the rotor, with no sign to correct.</p>
 <h3 id="a-split-signature">A Split Signature</h3>
-<p>In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not a unit and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $q(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.</p>
+<p>In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not a unit and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $\mathfrak{Q}(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>signed inner conjugation</strong> is the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$, the member of the family of <em>Two-Sided Operators on a Clifford Algebra</em> whose left factor carries the grade involution and whose right factor is the inverse. Its whole behaviour is governed by the parity sign: with $\varepsilon_x=(-1)^{k}$ on the degree-$k$ part,</p>
 <p>$$
 \mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x ,
 $$</p>
 <p>so it is the inner conjugation on the even part and minus the inner conjugation on the odd part. It is an $F$-linear bijection with $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$, it commutes with the grade involution, it preserves the parity grading, and it is an algebra automorphism for even $x$ and a map that is multiplicative only up to the global sign for odd $x$.</p>
-<p>Its kernel is $F^{\times}\cdot1$ in every dimension, strictly smaller than the kernel $Z(\mathrm{Cl})^{\times}$ of the inner conjugation in odd dimension: the central volume element $\omega$ satisfies $\mathrm{Ad}_\omega=\mathrm{id}$ but $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$, and it is a unit of norm $1$. On the quadratic space the signed form is the one that returns the reflection, $\mathrm{Ad}^{\alpha}_u=\rho_u$ while $\mathrm{Ad}_u=-\rho_u$, so an odd element acts on $V$ by the reflection itself and not by its negative. The two members define the same Clifford group, since they differ by a central scalar, but only the signed one gives $\mathrm{Pin}(V,q)\to O(V,q)$ the kernel $\{\pm1\}$ on which the double cover rests.</p>
+<p>Its kernel is $F^{\times}\cdot1$ in every dimension, strictly smaller than the kernel $Z(\mathrm{Cl})^{\times}$ of the inner conjugation in odd dimension: the central volume element $\omega$ satisfies $\mathrm{Ad}_\omega=\mathrm{id}$ but $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$, and it is a unit of norm $1$. On the quadratic space the signed form is the one that returns the reflection, $\mathrm{Ad}^{\alpha}_a=\rho_a$ while $\mathrm{Ad}_a=-\rho_a$, so an odd element acts on $V$ by the reflection itself and not by its negative. The two members define the same Clifford group, since they differ by a central scalar, but only the signed one gives $\mathrm{Pin}(V,\mathfrak{Q})\to O(V,\mathfrak{Q})$ the kernel $\{\pm1\}$ on which the double cover rests.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -221,11 +221,11 @@ $$</p>
 <td>The volume element, odd dimension</td>
 </tr>
 <tr>
-<td>$\mathrm{Ad}^{\alpha}_u=\rho_u$, $\mathrm{Ad}_u=-\rho_u$</td>
-<td>The reflection and its negative on a vector $u$</td>
+<td>$\mathrm{Ad}^{\alpha}_a=\rho_a$, $\mathrm{Ad}_a=-\rho_a$</td>
+<td>The reflection and its negative on a vector $a$</td>
 </tr>
 <tr>
-<td>$\Gamma(V,q)$</td>
+<td>$\Gamma(V,\mathfrak{Q})$</td>
 <td>Clifford group, the units with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$</td>
 </tr>
 </tbody>

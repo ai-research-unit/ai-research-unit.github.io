@@ -56,7 +56,7 @@
 <p>$$
 (C_f u)(x) = \int_G f(g)\,u(g^{-1}\cdot x)\,dg .
 $$</p>
-<p>The operator is $G$-invariant by construction, and on a symmetric space it is diagonalised by a small, geometrically determined family of functions: the <strong>spherical functions</strong> $\phi_\lambda$, the $K$-invariant eigenfunctions of every invariant differential operator of $X$, which are also the matrix coefficients of the spherical representations. The eigenvalues are the values of the <strong>spherical transform</strong> $\hat f(\lambda)$, and the statement that the convolution operator is multiplication by $\hat f$ in the spherical basis is the geometry's form of the convolution theorem.</p>
+<p>The operator is $G$-invariant by construction, and on a symmetric space it is diagonalised by a small, geometrically determined family of functions: the <strong>spherical functions</strong> $\phi_\lambda$, the $K$-invariant eigenfunctions of every invariant differential operator of $X$, which are also the matrix coefficients of the spherical representations. The eigenvalues are the values of the <strong>spherical transform</strong> $(\mathcal F f)(\lambda)$, and the statement that the convolution operator is multiplication by $\mathcal F f$ in the spherical basis is the geometry's form of the convolution theorem.</p>
 <p>This article treats the convolution operator from the side of the symmetric space: the invariant measure the metric supplies, the invariance that makes the operator an invariant operator, the spherical functions as the eigenfunctions, and the spherical transform as the eigenvalue assignment. The harmonic analysis that the operator belongs to is Part III and is cited, not developed: the Haar measure and the convolution algebra are <em>Locally Compact Groups and Haar Measure</em>, <em>The Convolution Algebra $L^1(G)$</em> and <em>Convolution on a Group</em>; the spherical functions and the zonal spherical function are <em>Spherical Functions and the Zonal Spherical Function</em>; the decomposition of the regular representation and the inversion are <em>The Plancherel Theorem</em> and <em>Noncommutative Harmonic Analysis</em>; and the compact case is <em>Analysis on Compact Groups</em> and <em>The Peter–Weyl Theorem</em>. The symmetric space itself, its geodesic symmetry, the symmetric pair and the rank, are <em>Riemannian Symmetric Spaces and the Involution</em> and <em>Transformation Groups</em>, cited and not re-derived.</p>
 <p>The article has five sections: the symmetric space and its invariant measure; the invariant operators; the spherical functions; the spherical transform and the convolution theorem; and the worked cases. Throughout, $G$ is a connected semisimple Lie group with finite centre, $\sigma$ the Cartan involution, $K = G^\sigma$ a maximal compact subgroup, and $X = G/K$ the symmetric space of noncompact type; the compact and Euclidean cases are obtained by the Cartan duality of <em>Riemannian Symmetric Spaces and the Involution</em> and are stated where they differ.</p>
 <h2 id="the-symmetric-space-and-its-invariant-measure">The Symmetric Space and Its Invariant Measure</h2>
@@ -98,7 +98,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> A <strong>spherical function</strong> of the symmetric space $X$ is a $K$-invariant eigenfunction of every operator in $\mathbb{D}(G/K)$ normalised by $\phi(e) = 1$. For $\lambda \in \mathrm A^*_{\mathbb C}$ the <strong>elementary spherical function</strong> is</p>
 <p>$$
-\phi_\lambda(g) = \int_K e^{\langle i\lambda + \rho,\, H(gk)\rangle}\,dk,
+\phi_\lambda(g) = \int_K \exp(\langle i\lambda + \rho,\, H(gk)\rangle)\,dk,
 \qquad g \in G,
 $$</p>
 <p>where $H(g)$ is the $\mathrm A$-component of $g$ in the Cartan decomposition and $\rho$ is the half-sum of the positive restricted roots. The function $\phi_\lambda$ is the <strong>matrix coefficient</strong> $\langle \pi_\lambda(g)v, v\rangle$ of the spherical principal series, $v$ the $K$-fixed unit vector.</p>
@@ -112,32 +112,32 @@ $$</p>
 <h3 id="the-spherical-transform">The Spherical Transform</h3>
 <p><strong>Definition.</strong> The <strong>spherical transform</strong> of a $K$-bi-invariant function $f$ is</p>
 <p>$$
-\hat f(\lambda) = \int_G f(g)\,\phi_{-\lambda}(g)\,dg,
+(\mathcal F f)(\lambda) = \int_G f(g)\,\phi_{-\lambda}(g)\,dg,
 $$</p>
 <p>and the <strong>spherical Plancherel measure</strong> $d\mu(\lambda)$ on the quotient $\mathrm A^*_{\mathbb C}/W$ is the measure with respect to which the transform is an isometry of $L^2(K\backslash G/K)$ onto its image:</p>
 <p>$$
-\int_G \lvert f(g)\rvert^2\,dg = \int_{\mathrm A^*_{\mathbb C}/W} \bigl\lvert \hat f(\lambda)\bigr\rvert^2\,d\mu(\lambda).
+\int_G \lvert f(g)\rvert^2\,dg = \int_{\mathrm A^*_{\mathbb C}/W} \bigl\lvert (\mathcal F f)(\lambda)\bigr\rvert^2\,d\mu(\lambda).
 $$</p>
 <p>The measure is absolutely continuous with the density $\lvert \mathbf c(\lambda)\rvert^{-2}$, where $\mathbf c$ is the Harish-Chandra $\mathbf c$-function, the meromorphic function carrying the asymptotics of the spherical functions; both the transform and the measure are <em>Spherical Functions and the Zonal Spherical Function</em> and <em>The Plancherel Theorem</em>, cited and not re-derived.</p>
 <h3 id="the-convolution-theorem">The Convolution Theorem</h3>
 <p><strong>Theorem (spherical convolution theorem).</strong> Let $f, h$ be $K$-bi-invariant functions in $L^1(G)$. Then the spherical transforms multiply:</p>
 <p>$$
-\widehat{f*h}(\lambda) = \hat f(\lambda)\,\hat h(\lambda) ,
+\widehat{f*h}(\lambda) = (\mathcal F f)(\lambda)\,(\mathcal F h)(\lambda) ,
 $$</p>
-<p>and the convolution operator acts on the elementary spherical functions by the scalar $\hat f$:</p>
+<p>and the convolution operator acts on the elementary spherical functions by the scalar $\mathcal F f$:</p>
 <p>$$
-C_f \phi_\lambda = \hat f(\lambda)\,\phi_\lambda ,
+C_f \phi_\lambda = (\mathcal F f)(\lambda)\,\phi_\lambda ,
 \qquad
 C_f \phi_\lambda(x) = \int_G f(g)\,\phi_\lambda(g^{-1}\cdot x)\,dg .
 $$</p>
-<p>The eigenvalue assignment $\lambda \mapsto \hat f(\lambda)$ is the <strong>spherical symbol</strong> of the convolution operator, and it is a function on the spectral quotient $\mathrm A^*_{\mathbb C}/W$.</p>
+<p>The eigenvalue assignment $\lambda \mapsto (\mathcal F f)(\lambda)$ is the <strong>spherical symbol</strong> of the convolution operator, and it is a function on the spectral quotient $\mathrm A^*_{\mathbb C}/W$.</p>
 <p><strong>Proof.</strong> Insert the functional equation of the spherical functions into the definition of the convolution: $(f*h)(g) = \int f(g_1)h(g_1^{-1}g)dg_1$ gives, after applying $\int_K \cdot\,dk$ and the functional equation $\int_K \phi_\lambda(xky)dk = \phi_\lambda(x)\phi_\lambda(y)$, the product of the two transforms. The operator statement is the same computation read as an operator on the radial functions, and the symbol is the eigenvalue assignment by the previous proposition.</p>
 <p><strong>Corollary.</strong> The convolution operators with $K$-bi-invariant kernels commute with each other and with $\mathbb{D}(G/K)$, and they are simultaneously diagonalised by the spherical functions; the joint spectrum is the image of the convolution algebra under the spherical transform, a closed subalgebra of the bounded continuous functions on the spectral quotient.</p>
 <p><strong>Remark.</strong> The theorem is the geometric form of the convolution theorem of the abelian group $\mathbb{R}^n$, in which the spherical functions are the characters and the spherical transform is the Fourier transform. The new content of the non-abelian case is that the characters are organised by the Weyl group, that the measure is the Harish-Chandra $\mathbf c$-function rather than the Lebesgue measure, and that the spectrum of the Laplacian has a bottom at $\langle\rho,\rho\rangle$ that the flat case does not have.</p>
 <h2 id="worked-cases">Worked Cases</h2>
-<p><strong>Example (Euclidean space).</strong> Let $X = \mathbb{R}^n = E(n)/O(n)$, the flat symmetric space of the Euclidean type. The spherical functions are the characters $e^{i\langle\lambda,x\rangle}$ averaged over $O(n)$,</p>
+<p><strong>Example (Euclidean space).</strong> Let $X = \mathbb{R}^n = E(n)/O(n)$, the flat symmetric space of the Euclidean type. The spherical functions are the characters $\exp(i\langle\lambda,x\rangle)$ averaged over $O(n)$,</p>
 <p>$$
-\phi_\lambda(x) = \int_{O(n)} e^{i\langle\lambda, kx\rangle}\,dk,
+\phi_\lambda(x) = \int_{O(n)} \exp(i\langle\lambda, kx\rangle)\,dk,
 $$</p>
 <p>proportional to the Bessel function $J_{(n-2)/2}(\lvert\lambda\rvert\lvert x\rvert)/(\lvert\lambda\rvert\lvert x\rvert)^{(n-2)/2}$, and the spherical transform is the radial Fourier transform; the convolution operator is the radial part of the ordinary convolution, and its symbol is the Fourier–Bessel transform of the radial kernel. The rank is one and the Weyl group is $\{\pm1\}$, so the spectral quotient is the half-line.</p>
 <p><strong>Example (the hyperbolic plane).</strong> Let $X = \mathbb{H}^2 = SL(2,\mathbb{R})/SO(2)$ of rank one. The restricted root system is of type $A_1$ with multiplicity one, $\rho = \tfrac12$, and the spherical functions are the Legendre functions</p>
@@ -151,7 +151,7 @@ $$</p>
 $$</p>
 <p>with $\theta$ the geodesic distance and $P_k$ the Gegenbauer polynomial; the spectrum is discrete, the parameter $k \geq 0$ an integer, and the convolution operator is the zonal spherical harmonic projection, with eigenvalues the Gegenbauer transform of the kernel. This is the spherical case of <em>Analysis on Compact Groups</em> and <em>The Peter–Weyl Theorem</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>On a symmetric space $X = G/K$ the convolution operator $C_f u(x) = \int_G f(g)u(g^{-1}\cdot x)\,dg$ is the general $G$-invariant integral operator on the space, and it is a homomorphism of the convolution algebra, $C_f C_h = C_{f*h}$. The invariant measure is the geometric density $\delta(H) = \prod_{\alpha\in\Sigma_+}(\sinh\alpha(H))^{m_\alpha}$ in the polar coordinates of the Cartan decomposition, and it is supplied by the metric. The spherical functions $\phi_\lambda(g) = \int_K e^{\langle i\lambda+\rho, H(gk)\rangle}dk$ are the $K$-bi-invariant eigenfunctions of the algebra of invariant differential operators, normalised by $\phi_\lambda(e)=1$, they satisfy the functional equation, and they depend on the parameter only through its Weyl orbit, so the spectral parameter lives in $\mathrm A^*_{\mathbb C}/W$. The spherical transform $\hat f(\lambda) = \int_G f(g)\phi_{-\lambda}(g)dg$ turns convolution into multiplication, $\widehat{f*h} = \hat f\,\hat h$, and diagonalises the convolution operator, $C_f\phi_\lambda = \hat f(\lambda)\phi_\lambda$; the Plancherel measure is the Harish-Chandra density $\lvert\mathbf c(\lambda)\rvert^{-2}$. In the Euclidean case the spherical functions are the radial Bessel functions, in the hyperbolic case the Legendre functions with a spectral bottom at $\rho$, and in the compact case the zonal spherical harmonics with discrete spectrum.</p>
+<p>On a symmetric space $X = G/K$ the convolution operator $C_f u(x) = \int_G f(g)u(g^{-1}\cdot x)\,dg$ is the general $G$-invariant integral operator on the space, and it is a homomorphism of the convolution algebra, $C_f C_h = C_{f*h}$. The invariant measure is the geometric density $\delta(H) = \prod_{\alpha\in\Sigma_+}(\sinh\alpha(H))^{m_\alpha}$ in the polar coordinates of the Cartan decomposition, and it is supplied by the metric. The spherical functions $\phi_\lambda(g) = \int_K \exp(\langle i\lambda+\rho, H(gk)\rangle)dk$ are the $K$-bi-invariant eigenfunctions of the algebra of invariant differential operators, normalised by $\phi_\lambda(e)=1$, they satisfy the functional equation, and they depend on the parameter only through its Weyl orbit, so the spectral parameter lives in $\mathrm A^*_{\mathbb C}/W$. The spherical transform $(\mathcal F f)(\lambda) = \int_G f(g)\phi_{-\lambda}(g)dg$ turns convolution into multiplication, $\widehat{f*h} = \mathcal F f\,\mathcal F h$, and diagonalises the convolution operator, $C_f\phi_\lambda = (\mathcal F f)(\lambda)\phi_\lambda$; the Plancherel measure is the Harish-Chandra density $\lvert\mathbf c(\lambda)\rvert^{-2}$. In the Euclidean case the spherical functions are the radial Bessel functions, in the hyperbolic case the Legendre functions with a spectral bottom at $\rho$, and in the compact case the zonal spherical harmonics with discrete spectrum.</p>
 <p>The harmonic analysis of the spherical functions and of the Plancherel measure is Part III and is cited; the article's content is the operator $C_f$ read off the symmetric space, its invariance, and its symbol. The involution on the elements of the symmetry group and the adjoint of an operator are the later groups of this category.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -199,7 +199,7 @@ $$</p>
 <td>the elementary spherical function; a joint eigenfunction</td>
 </tr>
 <tr>
-<td>$\hat f(\lambda)$</td>
+<td>$(\mathcal F f)(\lambda)$</td>
 <td>the spherical transform; the spherical symbol of $C_f$</td>
 </tr>
 <tr>

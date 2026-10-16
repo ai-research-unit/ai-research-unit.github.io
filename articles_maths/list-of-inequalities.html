@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="list-of-inequalities"><strong>List of Inequalities</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article lists the inequalities the corpus states and uses. An inequality is a relation of order or of size between quantities, and a row below names one inequality, records what it bounds — an inner product by a product of norms, an integral by a product of integrals, a function by its derivative, a solution by its data — and points to the article that proves it. Every row points to an article; this article introduces nothing and proves nothing. The inequalities are grouped by the layer that introduces them: the pointwise inequalities of convexity and order, the integral inequalities of the $L^p$ theory, the inequalities of the Sobolev scale, and the inequalities of geometry and of differential equations. The rows that record a failure — the converse that is false, the exponent that is sharp, the equality case that is the boundary of the inequality — stand beside the inequalities as non-examples.</p>
+<p>This article lists the inequalities the corpus states and uses. An inequality is a relation of order or of size between quantities, and a row below names one inequality, records what it bounds — an inner product by a product of norms, an integral by a product of integrals, a function by its derivative, a solution by its data — and points to the article that proves it. Every row points to an article; this article introduces nothing and proves nothing. The inequalities are grouped by the layer that introduces them: the pointwise inequalities of convexity and order, the integral inequalities of the $L^{n}$ theory, the inequalities of the Sobolev scale, and the inequalities of geometry and of differential equations. The rows that record a failure — the converse that is false, the exponent that is sharp, the equality case that is the boundary of the inequality — stand beside the inequalities as non-examples.</p>
 <h2 id="the-pointwise-inequalities-of-convexity-and-order">The Pointwise Inequalities of Convexity and Order</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -95,7 +95,7 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="the-integral-inequalities-of-the-math12-theory">The Integral Inequalities of the $L^p$ Theory</h2>
+<h2 id="the-integral-inequalities-of-the-math12-theory">The Integral Inequalities of the $L^{n}$ Theory</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -107,32 +107,32 @@
 <tbody>
 <tr>
 <td>Hölder's inequality</td>
-<td>$\int \lvert fg\rvert \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/p+1/q=1$; the fundamental inequality of the $L^p$ spaces</td>
+<td>$\int \lvert fg\rvert \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/n + 1/m=1$; the fundamental inequality of the $L^{n}$ spaces</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 <tr>
 <td>Minkowski's inequality</td>
-<td>$\lVert f+g\rVert_p \leq \lVert f\rVert_p + \lVert g\rVert_p$; the triangle inequality that makes $L^p$ a normed space</td>
+<td>$\lVert f+g\rVert_p \leq \lVert f\rVert_p + \lVert g\rVert_p$; the triangle inequality that makes $L^{n}$ a normed space</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 <tr>
 <td>Young's convolution inequality</td>
-<td>$\lVert f*g\rVert_r \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/p+1/q = 1/r + 1$</td>
+<td>$\lVert f*g\rVert_r \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/n + 1/m = 1/r + 1$</td>
 <td><em>Real Harmonic Analysis</em></td>
 </tr>
 <tr>
 <td>Hausdorff–Young</td>
-<td>$\lVert\hat f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/p + 1/q = 1$</td>
+<td>$\lVert\\mathcal F f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/n + 1/m = 1$</td>
 <td><em>Fourier Analysis on Euclidean Spaces</em></td>
 </tr>
 <tr>
 <td>the Riesz–Thorin interpolation inequality</td>
-<td>$\lVert T\rVert_{L^p\to L^q} \leq \lVert T\rVert_{L^{p_0}\to L^{q_0}}^{1-\theta}\lVert T\rVert_{L^{p_1}\to L^{q_1}}^{\theta}$</td>
+<td>$\lVert T\rVert_{L^{n}}\to L^{m} \leq \lVert T\rVert_{L^{n}}_0}\to L^{m}_0}}^{1-\theta}\lVert T\rVert_{L^{n}}_1}\to L^{m}_1}}^{\theta}$</td>
 <td><em>Interpolation Theory</em>; <em>Fourier Analysis on Euclidean Spaces</em></td>
 </tr>
 <tr>
 <td>Chebyshev's inequality</td>
-<td>$\mu(\lvert f\rvert \geq \lambda) \leq \lambda^{-p}\lVert f\rVert_p^p$; the bridge from $L^p$ convergence to convergence in measure</td>
+<td>$\mu(\lvert f\rvert \geq \lambda) \leq \lambda^{-p}\lVert f\rVert_p^p$; the bridge from $L^{n}$ convergence to convergence in measure</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@
 </tr>
 <tr>
 <td>the Hardy–Littlewood–Sobolev inequality</td>
-<td>the fractional integral $I_\alpha f$ is bounded from $L^p$ to $L^q$ with $1/q = 1/p - \alpha/n$</td>
+<td>the fractional integral $I_\alpha f$ is bounded from $L^{n}$ to $L^{m}$ with $1/q = 1/p - \alpha/n$</td>
 <td><em>Real Harmonic Analysis</em></td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@
 <tbody>
 <tr>
 <td>the Sobolev embedding inequality</td>
-<td>$\lVert f\rVert_{L^{p^*}} \leq C\lVert\nabla f\rVert_{L^p}$ for $p^* = np/(n-p)$, $p < n$</td>
+<td>$\lVert f\rVert_{L^{n}}^*}} \leq C\lVert\nabla f\rVert_{L^{n}}$ for $p^* = np/(n-p)$, $p < n$</td>
 <td><em>Sobolev Spaces and Weak Solutions</em></td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@
 </tr>
 <tr>
 <td>the Besov embedding</td>
-<td>$B^s_{p,q} \hookrightarrow B^{s'}_{p',q'}$ when $s - n/p = s' - n/p'$ and $q \leq q'$</td>
+<td>$B^{s}_{n,m} \hookrightarrow B^{s'}_{p',q'}$ when $s - n/p = s' - n/p'$ and $q \leq q'$</td>
 <td><em>Besov and Triebel–Lizorkin Spaces</em></td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@
 </tr>
 <tr>
 <td>the energy-decay inequality for the heat semigroup</td>
-<td>$\lVert T(t)x\rVert \leq e^{\omega t}\lVert x\rVert$, the semigroup growth bound</td>
+<td>$\lVert T(t)x\rVert \leq \exp(\omega t)\lVert x\rVert$, the semigroup growth bound</td>
 <td><em>Semigroups and Evolution Equations</em></td>
 </tr>
 <tr>
@@ -279,7 +279,7 @@
 <tbody>
 <tr>
 <td>Hölder's inequality outside the conjugate exponents</td>
-<td>fails if $1/p + 1/q \neq 1$; equality holds exactly when $\lvert f\rvert^p$ and $\lvert g\rvert^q$ are proportional</td>
+<td>fails if $1/n + 1/m \neq 1$; equality holds exactly when $\lvert f\rvert^p$ and $\lvert g\rvert^q$ are proportional</td>
 <td><em>Measure Theory and Integration</em></td>
 </tr>
 <tr>
@@ -315,7 +315,7 @@
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>This list gathers the inequalities of the corpus: the pointwise inequalities of convexity — Cauchy–Schwarz, Jensen, Young and the arithmetic–geometric mean — the integral inequalities of the $L^p$ theory, among them Hölder, Minkowski, Hausdorff–Young and the maximal and fractional-integral bounds, the inequalities of the Sobolev scale with the Poincaré, Gagliardo–Nirenberg, Ladyzhenskaya and Nash bounds, and the isoperimetric, Brunn–Minkowski and Bellman–Grönwall inequalities of geometry and of differential equations. The closing table records the sharpness of each and the cases where it fails.</p>
+<p>This list gathers the inequalities of the corpus: the pointwise inequalities of convexity — Cauchy–Schwarz, Jensen, Young and the arithmetic–geometric mean — the integral inequalities of the $L^{n}$ theory, among them Hölder, Minkowski, Hausdorff–Young and the maximal and fractional-integral bounds, the inequalities of the Sobolev scale with the Poincaré, Gagliardo–Nirenberg, Ladyzhenskaya and Nash bounds, and the isoperimetric, Brunn–Minkowski and Bellman–Grönwall inequalities of geometry and of differential equations. The closing table records the sharpness of each and the cases where it fails.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <p>The objects are named rather than denoted; the symbols in the tables are collected here.</p>
 <div class="table-scroll"><table>
@@ -328,11 +328,11 @@
 <tbody>
 <tr>
 <td>$p$, $q$</td>
-<td>conjugate exponents, $1/p + 1/q = 1$</td>
+<td>conjugate exponents, $1/n + 1/m = 1$</td>
 </tr>
 <tr>
 <td>$\lVert f\rVert_p$</td>
-<td>the $L^p$ norm</td>
+<td>the $L^{n}$ norm</td>
 </tr>
 <tr>
 <td>$\nabla f$, $D^j f$</td>

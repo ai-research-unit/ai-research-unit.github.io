@@ -53,8 +53,8 @@
         <h1 id="the-matrix-element-representations-of-the-complexoid"><strong>The Matrix Element Representations of the Complexoid</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The complex algebra sits inside the real matrix algebras in two natural ways: the regular representation, in which a complex number becomes a $2 \times 2$ real matrix, and its doubling, in which it becomes a $4 \times 4$ real matrix. This article reads the two models together: the two matrices, their determinants and traces, the invertible elements and the units of the definite norm, the commutant of each model, and the sense in which the second model adds two dimensions and no new content.</p>
-<p>The element-level treatment of the regular matrix is <em>Complex Regular Element Representation</em> and the coordinate reading is <em>Complex Two-Component Element Representation</em>, both below this article in this category; both are cited here and not repeated, and this article states the matrix facts at the level of the algebra. The two algebraic norms and the two forms are <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, below this article in this category; the definite norm, its multiplicativity, the criterion of invertibility and the group of units are <em>Complex Norm and Invertibility</em>, in <code>### Algebra</code>, also below.</p>
-<p>The elements are written $A = a + ia'$ and $C = c + ic'$, as <em>Conventions in Mathematics</em> fixes; the capital letters $B$, $N$, $H$, $K$ are reserved for the two forms and the two algebraic norms of the companion articles, and no element or subspace constant is written with them, the field of conformal matrices below carrying the calligraphic $\mathcal{K}$ instead. The <strong>bar</strong> is complex conjugation and the star coincides with the bar.</p>
+<p>The element-level treatment of the regular matrix is <em>Complex Regular Element Representation</em> and the coordinate reading is <em>Complex Two-Component Element Representation</em>, both below this article in this category; both are cited here and not repeated, and this article states the matrix facts at the level of the algebra. The two algebraic norms and the two forms are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, below this article in this category; the definite norm, its multiplicativity, the criterion of invertibility and the group of units are <em>Complex Norm and Invertibility</em>, in <code>### Algebra</code>, also below.</p>
+<p>The elements are written $A = a + ia'$ and $C = c + ic'$, as <em>Conventions in Mathematics</em> fixes; the capital letters $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ are reserved for the two forms and the two algebraic norms of the companion articles, and no element or subspace constant is written with them, the field of conformal matrices below carrying the calligraphic $\mathcal{K}$ instead. The <strong>bar</strong> is complex conjugation and the star coincides with the bar.</p>
 <h2 id="the-regular-representation-in-math9">The Regular Representation in $M_2(\mathbb{R})$</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> of $\mathbb{C}$ is the map</p>
 <p>$$
@@ -70,21 +70,21 @@ $$</p>
 <h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
 <p><strong>Proposition.</strong> For $A = a + ia'$,</p>
 <p>$$
-\det \mathsf{M}_2(A) = a^2 + a'^2 = A\bar A = H(A), \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a = A + \bar A .
+\det \mathsf{M}_2(A) = a^2 + a'^2 = A\bar A = \langle A\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(A) = 2a = A + \bar A .
 $$</p>
 <p><strong>Proof.</strong> $\det \mathsf{M}_2(A) = a \cdot a - (-a')(a') = a^2 + a'^2$, and the diagonal entries are both $a$.</p>
-<p>The determinant is the <strong>definite algebraic norm</strong> $H(A) = \lvert A \rvert^2$, and the trace is the <strong>algebra trace</strong>, twice the real part. The two are the invariants of the field extension $\mathbb{C}$ over $\mathbb{R}$, and they move as the two invariants do: the determinant is multiplicative, and the trace is additive on sums,</p>
+<p>The determinant is the <strong>definite algebraic norm</strong> $\langle A\rangle_{*} = \lvert A \rvert^2$, and the trace is the <strong>algebra trace</strong>, twice the real part. The two are the invariants of the field extension $\mathbb{C}$ over $\mathbb{R}$, and they move as the two invariants do: the determinant is multiplicative, and the trace is additive on sums,</p>
 <p>$$
 \det \mathsf{M}_2(AC) = \det \mathsf{M}_2(A)\,\det \mathsf{M}_2(C), \qquad \operatorname{tr}\mathsf{M}_2(A + C) = \operatorname{tr}\mathsf{M}_2(A) + \operatorname{tr}\mathsf{M}_2(C) ,
 $$</p>
-<p>the first statement being $H(AC) = H(A)H(C)$, the multiplicativity of the definite norm. The other algebraic norm, the bilinear diagonal $B(A) = A^2$, is complex and is not a determinant of this real model; it is the diagonal of the bilinear form of <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, below this article in this category, and the model reads that bilinear along the two trace pairings</p>
+<p>the first statement being $\langle AC\rangle_{*} = \langle A\rangle_{*}\langle C\rangle_{*}$, the multiplicativity of the definite norm. The other algebraic norm, the bilinear diagonal $\langle A\rangle = A^2$, is complex and is not a determinant of this real model; it is the diagonal of the bilinear form of <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, below this article in this category, and the model reads that bilinear along the two trace pairings</p>
 <p>$$
 \tfrac{1}{2}\operatorname{tr}\bigl(\mathsf{M}_2(A)\mathsf{M}_2(C)\bigr) = \operatorname{Re}(AC), \qquad
 \tfrac{1}{2}\operatorname{tr}\bigl(\mathsf{M}_2(A)^{\mathsf{T}}\mathsf{M}_2(C)\bigr) = \operatorname{Re}(A\bar C) ,
 $$</p>
-<p>the real parts of the two forms $B$ and $H$. The pair $(\det, \operatorname{tr})$ recovers the matrix, and hence the element up to the sign of $a'$, since $a = \tfrac{1}{2}\operatorname{tr}\mathsf{M}_2(A)$ and $a'^2 = \det\mathsf{M}_2(A) - \tfrac{1}{4}\bigl(\operatorname{tr}\mathsf{M}_2(A)\bigr)^2$.</p>
+<p>the real parts of the two forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$. The pair $(\det, \operatorname{tr})$ recovers the matrix, and hence the element up to the sign of $a'$, since $a = \tfrac{1}{2}\operatorname{tr}\mathsf{M}_2(A)$ and $a'^2 = \det\mathsf{M}_2(A) - \tfrac{1}{4}\bigl(\operatorname{tr}\mathsf{M}_2(A)\bigr)^2$.</p>
 <h2 id="the-invertible-elements-and-the-units-of-the-definite-norm">The Invertible Elements and the Units of the Definite Norm</h2>
-<p><strong>Proposition.</strong> $\mathsf{M}_2(A)$ is invertible exactly when $A \neq 0$, equivalently when $\det \mathsf{M}_2(A) = H(A) \neq 0$; the image is the field of conformal matrices, and the invertible elements are the nonzero ones.</p>
+<p><strong>Proposition.</strong> $\mathsf{M}_2(A)$ is invertible exactly when $A \neq 0$, equivalently when $\det \mathsf{M}_2(A) = \langle A\rangle_{*} \neq 0$; the image is the field of conformal matrices, and the invertible elements are the nonzero ones.</p>
 <p>The criterion is that of <em>Complex Norm and Invertibility</em>, in <code>### Algebra</code> below, read on the matrix: the determinant is the definite norm and it vanishes only at $A = 0$. The invertible conformal matrices are the matrices of the shape $aI + a'J$ with $(a,a') \neq (0,0)$; they form a group under multiplication, the image of the multiplicative group $\mathbb{C}^{\times}$.</p>
 <p><strong>Proposition.</strong> The elements of definite norm one, $\lvert A \rvert^2 = 1$, the unit circle, are mapped onto the group of matrices preserving the definite form,</p>
 <p>$$
@@ -102,7 +102,7 @@ $$</p>
 <p>The same matrix is the image of the scalar matrix $A I_2 \in M_2(\mathbb{C})$ under the identification $M_2(\mathbb{C}) \cong M_4(\mathbb{R})$ that replaces each complex entry by its real $2 \times 2$ matrix in the basis $1, i$.</p>
 <p><strong>Proposition.</strong> $\mathsf{M}_4(A)\mathsf{M}_4(C) = \mathsf{M}_4(AC)$, the map is faithful, and</p>
 <p>$$
-\det \mathsf{M}_4(A) = \bigl(a^2 + a'^2\bigr)^2 = H(A)^2, \qquad \operatorname{tr}\mathsf{M}_4(A) = 4a = 2 \operatorname{tr}\mathsf{M}_2(A) .
+\det \mathsf{M}_4(A) = \bigl(a^2 + a'^2\bigr)^2 = \langle A\rangle_{*}^2, \qquad \operatorname{tr}\mathsf{M}_4(A) = 4a = 2 \operatorname{tr}\mathsf{M}_2(A) .
 $$</p>
 <p><strong>Proof.</strong> Multiplication is block by block and $\mathsf{M}_2(A)\mathsf{M}_2(C) = \mathsf{M}_2(AC)$ on each block; the determinant of a block-diagonal matrix is the product of the block determinants, and the trace is their sum.</p>
 <p>The determinant is the square of the definite norm, and the trace is twice the $2 \times 2$ trace. The square is the product of the norms of the simple modules the matrix model acts on: here the module is the direct sum of two copies of the simple module $\mathbb{C}$, so the determinant is the product of two copies of the norm.</p>
@@ -133,7 +133,7 @@ $$</p>
 <td>$\mathbb{C}$, simple</td>
 <td>$\mathcal{K} \cong \mathbb{C}$</td>
 <td>$\mathcal{K} \cong \mathbb{C}$, dimension $2$</td>
-<td>$a^2 + a'^2 = H(A)$</td>
+<td>$a^2 + a'^2 = \langle A\rangle_{*}$</td>
 <td>$2a$</td>
 </tr>
 <tr>
@@ -141,15 +141,15 @@ $$</p>
 <td>$\mathbb{C} \oplus \mathbb{C}$</td>
 <td>$\operatorname{diag}(\mathcal{K}, \mathcal{K}) \cong \mathbb{C}$</td>
 <td>$M_2(\mathbb{C})$, dimension $8$</td>
-<td>$(a^2 + a'^2)^2 = H(A)^2$</td>
+<td>$(a^2 + a'^2)^2 = \langle A\rangle_{*}^2$</td>
 <td>$4a$</td>
 </tr>
 </tbody>
 </table></div>
 <p>The $4 \times 4$ model is the $2 \times 2$ model doubled: it is the direct sum of two copies of the $2 \times 2$ model, acting on the same simple module twice. It carries the second copy of the simple module, two real dimensions of the same irreducible type, and therefore adds no new content to the algebra, the image remaining the same field $\mathbb{C}$; what changes is only the commutant, which grows from the field to the $2 \times 2$ matrices over it. The determinant is squared and the trace doubled for the same reason, the dimension of the module. In this precise sense the $4 \times 4$ model extends the $2 \times 2$ model by two dimensions that add nothing to the algebra, the image being the same field $\mathbb{C}$ inside a larger matrix algebra.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex algebra has two real matrix models. The regular representation sends $A = a + ia'$ to the Cayley matrix $\mathsf{M}_2(A) = aI + a'J$ in $M_2(\mathbb{R})$, which is multiplicative and faithful; its image is the field of conformal matrices, its determinant is the definite algebraic norm $H(A) = a^2 + a'^2$, and its trace is the algebra trace $2a$. The model is invertible exactly on the nonzero elements, the determinant being $H$, and the units of the definite norm are mapped onto the rotation group, the matrices with $M^{\mathsf{T}} M = I$ and determinant one.</p>
-<p>The doubled model sends $A$ to the block-diagonal matrix $\operatorname{diag}(\mathsf{M}_2(A), \mathsf{M}_2(A))$ in $M_4(\mathbb{R})$, equivalently to the scalar matrix $A I_2$ of $M_2(\mathbb{C}) \cong M_4(\mathbb{R})$. Its determinant is $H(A)^2$, the square of the definite norm, and its trace is $4a$; the doubling comes from the module being the direct sum of two copies of the simple module. The commutant of the $4 \times 4$ model is $M_2(\mathbb{C})$, of real dimension eight, against the commutant of the $2 \times 2$ model, which is $\mathbb{C}$ itself; the growth is the double-centralizer phenomenon on the commutative base.</p>
+<p>The complex algebra has two real matrix models. The regular representation sends $A = a + ia'$ to the Cayley matrix $\mathsf{M}_2(A) = aI + a'J$ in $M_2(\mathbb{R})$, which is multiplicative and faithful; its image is the field of conformal matrices, its determinant is the definite algebraic norm $\langle A\rangle_{*} = a^2 + a'^2$, and its trace is the algebra trace $2a$. The model is invertible exactly on the nonzero elements, the determinant being $\langle\cdot\rangle_{*}$, and the units of the definite norm are mapped onto the rotation group, the matrices with $M^{\mathsf{T}} M = I$ and determinant one.</p>
+<p>The doubled model sends $A$ to the block-diagonal matrix $\operatorname{diag}(\mathsf{M}_2(A), \mathsf{M}_2(A))$ in $M_4(\mathbb{R})$, equivalently to the scalar matrix $A I_2$ of $M_2(\mathbb{C}) \cong M_4(\mathbb{R})$. Its determinant is $\langle A\rangle_{*}^2$, the square of the definite norm, and its trace is $4a$; the doubling comes from the module being the direct sum of two copies of the simple module. The commutant of the $4 \times 4$ model is $M_2(\mathbb{C})$, of real dimension eight, against the commutant of the $2 \times 2$ model, which is $\mathbb{C}$ itself; the growth is the double-centralizer phenomenon on the commutative base.</p>
 <p>The two models differ by two dimensions of module that add nothing to the algebra: the $4 \times 4$ model is the $2 \times 2$ model repeated twice, with the same image $\mathbb{C}$ and only a larger commutant, its determinant squared and its trace doubled by the dimension of the module.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -170,14 +170,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{K}$</td>
-<td>the field of conformal matrices $\{\mathsf{M}_2(A)\} \cong \mathbb{C}$ (a calligraphic $\mathcal{K}$, kept apart from the form $K$)</td>
+<td>the field of conformal matrices $\{\mathsf{M}_2(A)\} \cong \mathbb{C}$ (a calligraphic $\mathcal{K}$, kept apart from the form $\langle\cdot,\cdot\rangle_{\natural*}$)</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$</td>
 <td>the transpose is the bar</td>
 </tr>
 <tr>
-<td>$\det \mathsf{M}_2(A) = H(A) = a^2 + a'^2$</td>
+<td>$\det \mathsf{M}_2(A) = \langle A\rangle_{*} = a^2 + a'^2$</td>
 <td>the determinant is the definite algebraic norm</td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ $$</p>
 <td>the doubled model, on $\mathbb{C} \oplus \mathbb{C}$</td>
 </tr>
 <tr>
-<td>$\det \mathsf{M}_4(A) = H(A)^2$, $\operatorname{tr}\mathsf{M}_4(A) = 4a$</td>
+<td>$\det \mathsf{M}_4(A) = \langle A\rangle_{*}^2$, $\operatorname{tr}\mathsf{M}_4(A) = 4a$</td>
 <td>the invariants of the doubled model</td>
 </tr>
 <tr>

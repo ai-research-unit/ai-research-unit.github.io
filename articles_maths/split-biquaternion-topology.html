@@ -59,21 +59,21 @@
 <p><strong>Proof.</strong> The algebra is a real vector space of dimension $8$; a vector space is contractible, and removing a point from $\mathbb{R}^n$ gives a space homotopy equivalent to $S^{n-1}$, here $S^7$.</p>
 <p>The <strong>Euclidean norm</strong> of an element is the positive square root of the real part of its split-biquaternion norm,</p>
 <p>$$
-\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,N(\tilde{Q})\right)^{1/2} ,
+\|\tilde{Q}\| = \left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^{1/2} = \left(\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural}\right)^{1/2} ,
 $$</p>
-<p>and it is a genuine norm: it is positive definite because the real part of $N$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.</p>
+<p>and it is a genuine norm: it is positive definite because the real part of $\langle\cdot\rangle_{\natural}$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.</p>
 <h2 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h2>
 <p><strong>Definition.</strong> The <strong>unit sphere</strong> of the algebra is $S_{\mathbb{E}} = \{\tilde{Q} : \|\tilde{Q}\| = 1\} \cong S^7$.</p>
 <p><strong>Proposition.</strong> The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{H}_{\mathbb{D}}\setminus\{0\}$ onto it.</p>
-<p><strong>Proof.</strong> The equation $\mathrm{Re}\,N(\tilde{Q}) = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.</p>
+<p><strong>Proof.</strong> The equation $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.</p>
 <p>The unit sphere of the Euclidean norm is <strong>not</strong> the norm-one group: the norm-one group is cut out by the split complex norm $N = e_0$, not by its real part, and it has dimension $6$ rather than $7$. The two agree only on the quaternion subspace, where the split complex part of $N$ vanishes; this is the first topological distinction between the split biquaternion and the biquaternion case, where the norm-one slice is the complex quadric in $\mathbb{C}^4$.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>null cone</strong> of the algebra is the zero set of the Hermitian form of scalar part $g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu)$:</p>
 <p>$$
 C = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
 $$</p>
-<p><strong>Proposition.</strong> The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $N$ vanishes on no point of $C$ except the origin.</p>
-<p><strong>Proof.</strong> The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,N(\tilde{Q}) = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $N$ never vanishes there.</p>
+<p><strong>Proposition.</strong> The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ vanishes on no point of $C$ except the origin.</p>
+<p><strong>Proof.</strong> The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $\langle\cdot\rangle_{\natural}$ never vanishes there.</p>
 <p><strong>Remark.</strong> The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of <em>Split-Biquaternion Rotations and the Lorentz Group</em>), but the converse fails: the element $e_1 + je_0$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{D}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.</p>
 <h2 id="the-link-of-the-null-cone">The Link of the Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>link</strong> of the null cone is its intersection with the Euclidean unit sphere, $L = C \cap S_{\mathbb{E}}$.</p>
@@ -114,7 +114,7 @@ $$</p>
 <td>The algebra as a topological space</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}\| = (\mathrm{Re}\,N(\tilde{Q}))^{1/2}$</td>
+<td>$\|\tilde{Q}\| = (\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural})^{1/2}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>

@@ -55,12 +55,12 @@
 <p>The quaternion algebra is at once an associative algebra, a Lie algebra under the commutator bracket, and the tangent space at the identity of its group of units; the unit sphere is a compact Lie group, and the exponential map connects the three descriptions. This article develops that structure: the Lie algebra of $\mathbb{H}$ and its decomposition into a centre and an orthogonal part, the exponential map and its closed form, the surjectivity of the exponential onto the group of units, the polar split of the units into a positive scale and the unit sphere, the compact subgroup $Sp(1)$ and its parametrisation, and the relation to the rotations and reflections of the geometry slot.</p>
 <p>The article uses <em>Quaternion Algebra</em> and <em>Quaternion Norm and Invertibility</em> for the algebra and the units, <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em> for the decomposition, <em>Quaternion Rotations and Reflections</em> for the orthogonal actions, and <em>Quaternion Automorphisms and Derivations</em> for the derivation algebra, which is the Lie algebra computed here independently. The special functions are in <em>Quaternion Special Functions</em>.</p>
 <p>The corpus's default base is a commutative ring with identity, but the exponential series, the closed form and the Lie group statements require a complete ordered field, so everything below is stated over $\mathbb{R}$; the algebraic identities remain meaningful for complex coefficients and are used in the comparison.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}\cong S^3$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}\cong S^3$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <p><strong>Definition.</strong> The <strong>commutator bracket</strong> on $\mathbb{H}$ is $[\tilde q,\tilde p] = \tilde q\tilde p-\tilde p\tilde q$; the algebra $\mathbb{H}$ with this bracket is the <strong>Lie algebra of the quaternion algebra</strong>.</p>
 <p><strong>Proposition.</strong> The bracket is bilinear, alternating and satisfies the Jacobi identity, so $\mathbb{H}$ is a Lie algebra; the centre of the algebra is the centre of the Lie algebra, and the derived subalgebra is the vector subspace,</p>
 <p>$$
-[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}, \qquad Z(\mathbb{H}) = \mathbb{R}_{\mathbb{H}} .
+[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}, \qquad Z(\mathbb{H}) = \mathbb{R}_{\mathbb{H}}.
 $$</p>
 <p><em>Proof.</em> The bracket of an associative algebra is a Lie bracket, the Jacobi identity being the associativity of multiplication. The commutator of any two quaternions is pure, since $\mathrm{Sc}([\tilde q,\tilde p]) = \mathrm{Sc}(\tilde q\tilde p)-\mathrm{Sc}(\tilde p\tilde q) = 0$, and the pure quaternions are all obtained as commutators, for instance $e_1 = \tfrac12[e_2,e_3]$; hence $[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}$. The centre of the bracket is the set of elements commuting with every quaternion, namely $\mathbb{R}_{\mathbb{H}}$.</p>
 <p><strong>Theorem.</strong> As a Lie algebra the quaternion algebra splits as the direct sum of its centre and a simple ideal,</p>
@@ -77,16 +77,16 @@ $$</p>
 \exp(\tilde q) = \sum_{n=0}^{\infty}\frac{\tilde q^n}{n!},
 $$</p>
 <p>which converges for every $\tilde q$ because the quaternion norm is multiplicative and $\mathbb{H}$ is complete as a finite-dimensional real space.</p>
-<p><strong>Proposition.</strong> For every $\tilde q$ the exponential satisfies $N(\exp(\tilde q)) = e^{2q_0}$, so $\exp(\tilde q)$ is a unit with $|\exp(\tilde q)| = e^{q_0}$; the exponential maps the pure imaginary subspace into the unit sphere.</p>
-<p><em>Proof.</em> By continuity of $\exp$ relative to the rational exponential and the identity $N(\exp(\tilde q)) = \exp(2\mathrm{Sc}\tilde q)$, which holds for rational multiples and extends by continuity; for pure $\tilde q$, $q_0 = 0$ and the quaternion norm is one.</p>
+<p><strong>Proposition.</strong> For every $\tilde q$ the exponential satisfies $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_0)$, so $\exp(\tilde q)$ is a unit with $|\exp(\tilde q)| = \exp(q_0)$; the exponential maps the pure imaginary subspace into the unit sphere.</p>
+<p><em>Proof.</em> By continuity of $\exp$ relative to the rational exponential and the identity $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2\mathrm{Sc}\tilde q)$, which holds for rational multiples and extends by continuity; for pure $\tilde q$, $q_0 = 0$ and the quaternion norm is one.</p>
 <h3 id="closed-form">Closed Form</h3>
 <p><strong>Theorem (closed form).</strong> For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q\neq0$,</p>
 <p>$$
-\exp(\tilde q) = e^{q_0}\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr),
+\exp(\tilde q) = \exp(q_0)\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr),
 $$</p>
-<p>and for $\vec q = 0$ it reduces to the real exponential $\exp(q_0) = e^{q_0}$.</p>
+<p>and for $\vec q = 0$ it reduces to the real exponential $\exp(q_0) = \exp(q_0)$.</p>
 <p><em>Proof.</em> Write $\vec q = \mu\rho$ with $\mu$ a pure unit and $\rho = |\vec q|\geq0$, so $\mu^2 = -1$. Then $(q_0+\mu\rho)^n$ may be expanded, and separating the terms by the parity of $n$ and summing the real exponential gives the displayed expression, exactly as for the complex exponential.</p>
-<p><strong>Corollary.</strong> The exponential commutes with neither addition nor multiplication of quaternions; it satisfies $N(\exp \tilde q) = e^{2\mathrm{Sc}(\tilde q)}$ and maps the imaginary subspace onto the unit sphere, where it is the parametrisation $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ for a pure unit $\mu$.</p>
+<p><strong>Corollary.</strong> The exponential commutes with neither addition nor multiplication of quaternions; it satisfies $\langle\exp \tilde q\rangle_{\natural} = \exp(2\mathrm{Sc}(\tilde q))$ and maps the imaginary subspace onto the unit sphere, where it is the parametrisation $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ for a pure unit $\mu$.</p>
 <p><em>Proof.</em> The failure of additivity and multiplicativity is the non-commutativity of the algebra; the quaternion norm identity is the previous proposition; the pure case is the closed form with $q_0 = 0$.</p>
 <h3 id="surjectivity">Surjectivity</h3>
 <p><strong>Theorem.</strong> The exponential is surjective onto the group of units,</p>
@@ -94,13 +94,13 @@ $$</p>
 \exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\},
 $$</p>
 <p>and it is surjective onto the unit sphere when restricted to the imaginary subspace.</p>
-<p><em>Proof.</em> Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $|\tilde q| > 0$ and $u$ a unit quaternion; writing $u = \cos\theta+\mu\sin\theta$ with $\mu$ a pure unit and $\theta = \arccos(u_0)\in[0,\pi]$ gives $u = \exp(\mu\theta)$ by the closed form, and $|\tilde q| = e^{\ln|\tilde q|}$. Hence $\tilde q = \exp(\ln|\tilde q|+\mu\theta)$. The unit-sphere statement is the case $\ln|\tilde q| = 0$.</p>
+<p><em>Proof.</em> Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $|\tilde q| > 0$ and $u$ a unit quaternion; writing $u = \cos\theta+\mu\sin\theta$ with $\mu$ a pure unit and $\theta = \arccos(u_0)\in[0,\pi]$ gives $u = \exp(\mu\theta)$ by the closed form, and $|\tilde q| = \exp(\ln|\tilde q|)$. Hence $\tilde q = \exp(\ln|\tilde q|+\mu\theta)$. The unit-sphere statement is the case $\ln|\tilde q| = 0$.</p>
 <p><strong>Proposition.</strong> The exponential is not injective; its kernel is the union of the spheres of pure quaternions of radius $2\pi k$ together with the origin,</p>
 <p>$$
 \exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{\vec q\in\operatorname{Im}\mathbb{H} : |\vec q| = 2\pi k\bigr\},
 $$</p>
 <p>and its restriction to the open set $\{\tilde q : |\vec q| < \pi\}$ is a diffeomorphism onto $\mathbb{H}^{\times}\setminus(-\mathbb{R}_{>0})$.</p>
-<p><em>Proof.</em> $\exp(\tilde q) = 1$ forces $e^{q_0} = 1$ and $\sin|\vec q| = 0$ with $\cos|\vec q| = 1$, so $q_0 = 0$ and $|\vec q| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.</p>
+<p><em>Proof.</em> $\exp(\tilde q) = 1$ forces $\exp(q_0) = 1$ and $\sin|\vec q| = 0$ with $\cos|\vec q| = 1$, so $q_0 = 0$ and $|\vec q| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem.</strong> The group of units is the direct product of the positive scalars and the unit sphere,</p>
 <p>$$
@@ -110,24 +110,24 @@ $$</p>
 <p><em>Proof.</em> The polar split is <em>Quaternion Norm and Invertibility</em>; the scale factor is $\exp(q_0)$ with $q_0$ real and the unit factor is $\exp(\vec q)$ up to the periodicity of the pure component, so the two exponential images are the two factors.</p>
 <p><strong>Theorem.</strong> The polar form and the exponential form are the same decomposition: every unit has the parametrisation</p>
 <p>$$
-u = \exp(\mu\theta) = \cos\theta+\mu\sin\theta, \qquad \mu\in\operatorname{Im}\mathbb{H},\quad N(\mu) = 1,\quad \theta\in[0,\pi],
+u = \exp(\mu\theta) = \cos\theta+\mu\sin\theta, \qquad \mu\in\operatorname{Im}\mathbb{H},\quad \langle \mu\rangle_{\natural} = 1,\quad \theta\in[0,\pi],
 $$</p>
 <p>and the map $(\mu,\theta)\mapsto\exp(\mu\theta)$ is a diffeomorphism of the open set $\theta\in(0,\pi)$ onto the unit sphere with the two poles removed.</p>
 <p><em>Proof.</em> The parametrisation is the closed form on the pure subspace, and the failure of injectivity occurs exactly at the poles $u = \pm1$, where the axis $\mu$ is undetermined; away from them the axis and the angle are unique.</p>
 <h2 id="the-compact-subgroup">The Compact Subgroup</h2>
 <p><strong>Theorem.</strong> The unit sphere $Sp(1)$ is a compact connected Lie group of dimension three, diffeomorphic to $S^3$ and isomorphic to $SU(2)$; it is the maximal compact subgroup of $\mathbb{H}^{\times}$, and the group of units is the product of it with the non-compact factor $\mathbb{R}_{>0}$.</p>
-<p><em>Proof.</em> The unit sphere is the set $N(\tilde q) = 1$, a closed bounded subset of $\mathbb{R}^4$, hence compact; multiplication is smooth and the inverse is smooth, so it is a Lie group of dimension three, and its identification with $SU(2)$ is standard. It is the maximal compact subgroup of the product $\mathbb{R}_{>0}\times Sp(1)$ because the line has no non-trivial compact subgroup.</p>
+<p><em>Proof.</em> The unit sphere is the set $\langle\tilde q\rangle_{\natural} = 1$, a closed bounded subset of $\mathbb{R}^4$, hence compact; multiplication is smooth and the inverse is smooth, so it is a Lie group of dimension three, and its identification with $SU(2)$ is standard. It is the maximal compact subgroup of the product $\mathbb{R}_{>0}\times Sp(1)$ because the line has no non-trivial compact subgroup.</p>
 <p><strong>Corollary.</strong> The exponential image of the imaginary subspace is the whole of $Sp(1)$, so $Sp(1)$ is generated by its one-parameter subgroups $\exp(\mathbb{R}\mu)$, one for each pure unit $\mu$; the one-parameter subgroups are the great circles through the identity.</p>
 <p><em>Proof.</em> Surjectivity onto the unit sphere is the theorem above; a one-parameter subgroup is the image of $\mathbb{R}\mu$ under the exponential, which is the circle $t\mapsto\cos t+\mu\sin t$; the geodesic reading of these circles is in <em>Quaternion Rotations and Reflections</em>.</p>
-<p><strong>Remark (versors, hyperbolic versors, and one-parameter groups).</strong> The unit quaternions are Hamilton's versors, and the subgroup $\exp(\mathbb{R}\mu)$ generated by a unit pure $\mu$ is the family of versors of the fixed axis $\mu$; the naming and the arc picture are in <em>Quaternion Rotations and Reflections</em>. A <strong>hyperbolic versor</strong> is the same expression $\exp(tr) = \cosh t + r\sinh t$ with $r^2 = +1$ in place of $r^2 = -1$. It cannot be formed in $\mathbb{H}$, whose only elements of square $+1$ are the scalars $\pm1$, and it requires an algebra of split signature, the split-complex numbers or the split-quaternions of <em>Split-Complex Exponential and Lie Group Structure</em> and <em>Split-Quaternion Exponential and Lie Group Structure</em>. Lie's one-parameter group is the notion that subsumes both: for each $r$ with $r^2 = \pm1$ the map $t\mapsto\exp(tr)$ is a one-parameter subgroup, elliptic for $r^2 = -1$ and hyperbolic for $r^2 = +1$. In the definite case the generator directions $r$ and $-r$ trace the same circle in opposite directions, which is the reversal of direction of the corresponding rotation, while in the indefinite case they give the two branches $e^{tr}$ and $e^{-tr}$ of a hyperbola, and the exponential is injective along each line.</p>
+<p><strong>Remark (versors, hyperbolic versors, and one-parameter groups).</strong> The unit quaternions are Hamilton's versors, and the subgroup $\exp(\mathbb{R}\mu)$ generated by a unit pure $\mu$ is the family of versors of the fixed axis $\mu$; the naming and the arc picture are in <em>Quaternion Rotations and Reflections</em>. A <strong>hyperbolic versor</strong> is the same expression $\exp(tr) = \cosh t + r\sinh t$ with $r^2 = +1$ in place of $r^2 = -1$. It cannot be formed in $\mathbb{H}$, whose only elements of square $+1$ are the scalars $\pm1$, and it requires an algebra of split signature, the split-complex numbers or the split-quaternions of <em>Split-Complex Exponential and Lie Group Structure</em> and <em>Split-Quaternion Exponential and Lie Group Structure</em>. Lie's one-parameter group is the notion that subsumes both: for each $r$ with $r^2 = \pm1$ the map $t\mapsto\exp(tr)$ is a one-parameter subgroup, elliptic for $r^2 = -1$ and hyperbolic for $r^2 = +1$. In the definite case the generator directions $r$ and $-r$ trace the same circle in opposite directions, which is the reversal of direction of the corresponding rotation, while in the indefinite case they give the two branches $\exp(tr)$ and $\exp(-tr)$ of a hyperbola, and the exponential is injective along each line.</p>
 <h2 id="the-exponential-parametrisation">The Exponential Parametrisation</h2>
 <p><strong>Theorem.</strong> Every non-zero quaternion can be written uniquely as</p>
 <p>$$
-\tilde q = e^{\alpha}\exp(\mu\theta), \qquad \alpha\in\mathbb{R}, \quad \mu\in\operatorname{Im}\mathbb{H},\ N(\mu) = 1, \quad \theta\in[0,\pi],
+\tilde q = \exp(\alpha)\exp(\mu\theta), \qquad \alpha\in\mathbb{R}, \quad \mu\in\operatorname{Im}\mathbb{H},\ \langle \mu\rangle_{\natural} = 1, \quad \theta\in[0,\pi],
 $$</p>
 <p>with the further identification $(\mu,\pi)\sim(-\mu,\pi)$ at the negative real axis.</p>
 <p><em>Proof.</em> Take $\alpha = \ln|\tilde q|$ and $\mu\theta$ the axis-angle form of the unit factor; the closed form gives the product, and the uniqueness away from the poles is that of the polar form and of the axis-angle pair.</p>
-<p><strong>Proposition.</strong> In this parametrisation the quaternion norm is $N(\tilde q) = e^{2\alpha}$, the modulus is $|\tilde q| = e^{\alpha}$, and the argument is $\theta$ along the direction $\mu$; the logarithm</p>
+<p><strong>Proposition.</strong> In this parametrisation the quaternion norm is $\langle\tilde q\rangle_{\natural} = \exp(2\alpha)$, the modulus is $|\tilde q| = \exp(\alpha)$, and the argument is $\theta$ along the direction $\mu$; the logarithm</p>
 <p>$$
 \log(\tilde q) = \ln|\tilde q| + \mu\theta
 $$</p>
@@ -136,14 +136,14 @@ $$</p>
 <h2 id="the-adjoint-action-of-the-exponential">The Adjoint Action of the Exponential</h2>
 <p><strong>Theorem.</strong> The adjoint action of the exponential is the conjugation by its value,</p>
 <p>$$
-\exp(t\,\operatorname{ad}_{\mu})(\tilde q) = e^{t\mu}\,\tilde q\,e^{-t\mu} = \operatorname{Ad}_{e^{t\mu}}(\tilde q),
+\exp(t\,\operatorname{ad}_{\mu})(\tilde q) = \exp(t\mu)\,\tilde q\,\exp(-t\mu) = \operatorname{Ad}_{\exp(t\mu)}(\tilde q),
 $$</p>
 <p>for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.</p>
 <p><em>Proof.</em> The identity $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ is the standard Lie-theoretic identity for an inner derivation, here computed from the series.</p>
 <p>The identification of the adjoint action with the rotations of $\operatorname{Im}\mathbb{H}$, the half-angle rule, and the completion of the rotation group to the full orthogonal group by the orientation-reversing maps are the subject of <em>Quaternion Rotations and Reflections</em>; this article supplies the exponential and the adjoint identity that the geometry slot uses.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_0+\vec q) = e^{q_0}(\cos|\vec q|+\frac{\vec q}{|\vec q|}\sin|\vec q|)$, it satisfies $N(\exp \tilde q) = e^{2q_0}$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.</p>
-<p>The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = e^{\alpha}\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{e^{t\mu}}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in <em>Quaternion Rotations and Reflections</em>.</p>
+<p>The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_0+\vec q) = \exp(q_0)(\cos|\vec q|+\frac{\vec q}{|\vec q|}\sin|\vec q|)$, it satisfies $\langle\exp \tilde q\rangle_{\natural} = \exp(2q_0)$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.</p>
+<p>The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = \exp(\alpha)\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{\exp(t\mu)}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in <em>Quaternion Rotations and Reflections</em>.</p>
 <p>The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups are exactly what the definite quaternion norm buys.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -175,7 +175,7 @@ $$</p>
 <td>Exponential map</td>
 </tr>
 <tr>
-<td>$\exp(q_0+\vec q) = e^{q_0}(\cos\lvert\vec q\rvert+\frac{\vec q}{\lvert\vec q\rvert}\sin\lvert\vec q\rvert)$</td>
+<td>$\exp(q_0+\vec q) = \exp(q_0)(\cos\lvert\vec q\rvert+\frac{\vec q}{\lvert\vec q\rvert}\sin\lvert\vec q\rvert)$</td>
 <td>Closed form</td>
 </tr>
 <tr>

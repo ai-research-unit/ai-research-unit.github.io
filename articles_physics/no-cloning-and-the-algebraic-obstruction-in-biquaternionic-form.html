@@ -100,10 +100,9 @@ $$</p>
 <p>Two independent copies have an overlap that factorizes:</p>
 <p>$$
 \bigl\langle \psi\otimes\psi \,\big|\, \phi\otimes\phi \bigr\rangle
-= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle
-= \langle\psi|\phi\rangle^2 .
+= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle^2 .
 $$</p>
-<p>Equating the two evaluations gives $\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the <strong>trace pairing of the idempotents</strong>, which is the modulus squared of the inner product,</p>
+<p>Equating the two evaluations gives $\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the <strong>trace pairing of the idempotents</strong>, which is the modulus squared of the inner product,</p>
 <p>$$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
 = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2}
@@ -127,7 +126,7 @@ $$</p>
 $$</p>
 <p>The trace pairing is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.</p>
 <h3 id="cloning-versus-copying">Cloning versus copying</h3>
-<p>For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\hat u),\tilde\Pi_2(\hat u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.</p>
+<p>For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.</p>
 <h2 id="the-obstruction-is-linearity">The Obstruction is Linearity</h2>
 <p>The unitary argument applies to pure states and to a single input. There is a second form of the obstruction, which applies directly to channels and to mixed states, and which is the reason the theorem survives when the machine is allowed to be noisy.</p>
 <p>A channel is affine on the state space. If a channel $\Phi$ cloned all pure states,</p>
@@ -162,7 +161,7 @@ $$</p>
 $$</p>
 <p>The two images are orthonormal, so $\tilde{U}$ extends to a unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,</p>
 <p>$$
-|\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + e^{i\varphi}\sin\tfrac{\theta}{2}\,|1\rangle ,
+|\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$</p>
 <p>gives $\langle\psi|\tilde{\rho}_{\text{out},1}|\psi\rangle = 5/6$ for every $\theta$ and $\varphi$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.</p>
 <h3 id="comparison-with-measurement-and-preparation">Comparison with measurement and preparation</h3>
@@ -197,7 +196,7 @@ $$</p>
 <li>It does not predict anything new; the theorem and the optimal fidelity are standard quantum information theory.</li>
 </ul>
 <h2 id="open-questions">Open Questions</h2>
-<p><strong>1. The obstruction and the biquaternion norm.</strong> No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $N(\tilde{A}\tilde{B}) = N(\tilde{A})N(\tilde{B})$, play the role that the squared inner product plays in the unitary argument?</p>
+<p><strong>1. The obstruction and the biquaternion norm.</strong> No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{A}\tilde{B}\rangle_{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{B}\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?</p>
 <p><strong>2. Cloning and the two sectors.</strong> The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?</p>
 <p><strong>3. Correlated inputs.</strong> The theorem forbids cloning an unknown state. What is the algebraic characterization of the correlations that a cloning machine can exploit, and does the entanglement of the blank with the input modify the bound?</p>
 <p><strong>4. Many copies.</strong> The asymptotic cloning of $n$ copies to $m>n$ copies approaches perfect cloning as $n\to\infty$, with a rate given by the entropy. Does the biquaternion-norm interpretation of the single-qubit entropy extend to the asymptotic cloning rate?</p>
@@ -278,7 +277,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>

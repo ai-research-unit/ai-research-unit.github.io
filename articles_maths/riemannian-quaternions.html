@@ -55,23 +55,23 @@
 <p>Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_0^2-\vec q\cdot\vec q$. A <strong>Riemannian quaternion</strong> is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.</p>
 <p>The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the <em>general equivalence principle</em>. The third is the <strong>rope</strong>, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.</p>
 <p>The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.</p>
 <h2 id="the-frame">The Frame</h2>
 <h3 id="a-scaled-basis">A Scaled Basis</h3>
 <p><strong>Definition.</strong> A <strong>frame</strong> on a domain $U\subseteq\mathbb{R}^4$ is a quadruple of nowhere-zero real functions $\imath_0,\imath_1,\imath_2,\imath_3$ on $U$. The <strong>frame elements</strong> are</p>
 <p>$$
-\hat\imath_\mu = \imath_\mu e_\mu , \qquad \mu = 0,1,2,3,
+\hat\imath_\mu = \imath_\mu e_\mu, \qquad \mu = 0,1,2,3,
 $$</p>
 <p>so that a frame is a basis of $\mathbb{H}$ each of whose elements is a real multiple of the corresponding basis element.</p>
 <p>The frame is a <strong>scaled</strong> basis and not a rotated one: each frame element lies on the coordinate axis of the algebra, so the products of distinct frame elements keep the form of Hamilton's rules and only the four squares change. This is the class in which the interval of the construction is the diagonal form below, and it is the class used here; the four squares are the data the metric of the construction reads, and they are the free functions</p>
 <p>$$
-\hat\imath_0^2 = \imath_0^2, \qquad \hat\imath_k^2 = -\imath_k^2 .
+\hat\imath_0^2 = \imath_0^2, \qquad \hat\imath_k^2 = -\imath_k^2.
 $$</p>
 <p>The frame is <strong>constant</strong> when the four functions are constant, and it is <strong>dynamic</strong> otherwise.</p>
 <h3 id="the-riemannian-quaternion">The Riemannian Quaternion</h3>
 <p><strong>Definition.</strong> A <strong>Riemannian quaternion</strong> in a frame is a quaternion whose coefficients are measured in the frame, with the parity weights $w_\mu$ of the construction:</p>
 <p>$$
-A = w_0a_0\hat\imath_0 + w_1a_1\hat\imath_1 + w_2a_2\hat\imath_2 + w_3a_3\hat\imath_3 , \qquad a_\mu\in\mathbb{R},
+A = w_0a_0\hat\imath_0 + w_1a_1\hat\imath_1 + w_2a_2\hat\imath_2 + w_3a_3\hat\imath_3, \qquad a_\mu\in\mathbb{R},
 $$</p>
 <p>where $w_0 = 1$ and $w_1 = w_2 = w_3 = \tfrac13$ are the source's weights and $a_0,a_1,a_2,a_3$ are the four coefficient functions. The weights are a normalisation of the components and are part of the definition; with all four weights equal to one, the Riemannian quaternion is an arbitrary quaternion in the frame basis.</p>
 <p><strong>Proposition.</strong> The Riemannian quaternion is an element of $\mathbb{H}$, and in the fixed basis $e_0,e_1,e_2,e_3$ its components are $a_0\imath_0$ and $\tfrac13a_k\imath_k$.</p>
@@ -81,7 +81,7 @@ $$</p>
 <h3 id="the-scalar-part-of-the-square">The Scalar Part of the Square</h3>
 <p><strong>Definition.</strong> The <strong>interval</strong> of an infinitesimal displacement of a Riemannian quaternion is the scalar part of its square,</p>
 <p>$$
-\mathrm dA = (\mathrm da_0)\hat\imath_0 + \tfrac13(\mathrm da_1)\hat\imath_1 + \tfrac13(\mathrm da_2)\hat\imath_2 + \tfrac13(\mathrm da_3)\hat\imath_3 ,
+\mathrm dA = (\mathrm da_0)\hat\imath_0 + \tfrac13(\mathrm da_1)\hat\imath_1 + \tfrac13(\mathrm da_2)\hat\imath_2 + \tfrac13(\mathrm da_3)\hat\imath_3,
 $$</p>
 <p>and the interval is $\mathrm{Sc}(\mathrm dA^2)$.</p>
 <p><strong>Theorem.</strong> The interval is diagonal in the four differentials:</p>
@@ -108,17 +108,17 @@ $$</p>
 <h3 id="differentiation-of-a-coefficient-times-a-frame-element">Differentiation of a Coefficient Times a Frame Element</h3>
 <p><strong>Definition.</strong> Let the frame and the coefficient functions depend on the four coordinates. The differential of a Riemannian quaternion is computed in the frame by the product rule:</p>
 <p>$$
-\mathrm d\bigl(a_\mu\hat\imath_\mu\bigr) = (\mathrm da_\mu)\hat\imath_\mu + a_\mu\,\mathrm d\hat\imath_\mu .
+\mathrm d\bigl(a_\mu\hat\imath_\mu\bigr) = (\mathrm da_\mu)\hat\imath_\mu + a_\mu\,\mathrm d\hat\imath_\mu.
 $$</p>
 <p><strong>Theorem (the split).</strong> The differential of a Riemannian quaternion is the sum of two parts, one from the coefficients and one from the frame:</p>
 <p>$$
-\mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}} .
+\mathrm dA = \underbrace{\sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu}_{\text{coefficient part}} + \underbrace{\sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu}_{\text{frame part}}.
 $$</p>
 <p><em>Proof.</em> The differential is linear over the sum, so it is the sum of the differentials of the four terms, and each is the product rule displayed. Both parts are real linear combinations of basis elements, hence elements of the algebra.</p>
 <h3 id="the-attribution-of-a-change">The Attribution of a Change</h3>
 <p><strong>Proposition (the change of frame).</strong> Let $\hat\jmath_\mu = \lambda_\mu\hat\imath_\mu$ be another frame, with the $\lambda_\mu$ nowhere zero, and let a Riemannian quaternion be written $A = \sum_\mu w_\mu a_\mu\hat\imath_\mu = \sum_\mu w_\mu b_\mu\hat\jmath_\mu$, so that $b_\mu = a_\mu/\lambda_\mu$. Then the differential $\mathrm dA$ is intrinsic, while its two parts change:</p>
 <p>$$
-\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu + \sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu = \sum_\mu w_\mu(\mathrm db_\mu)\hat\jmath_\mu + \sum_\mu w_\mu b_\mu\,\mathrm d\hat\jmath_\mu ,
+\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu + \sum_\mu w_\mu a_\mu\,\mathrm d\hat\imath_\mu = \sum_\mu w_\mu(\mathrm db_\mu)\hat\jmath_\mu + \sum_\mu w_\mu b_\mu\,\mathrm d\hat\jmath_\mu,
 $$</p>
 <p>the equality of the two right-hand members holding because $a_\mu\hat\imath_\mu = b_\mu\hat\jmath_\mu$ term by term, while the coefficient part of the first is not the coefficient part of the second.</p>
 <p><em>Proof.</em> The two frames differ by the nowhere-zero functions $\lambda_\mu$, and the term $w_\mu a_\mu\hat\imath_\mu$ equals $w_\mu b_\mu\hat\jmath_\mu$ by the definition of $b_\mu$. The differential of a term is computed by the product rule in either frame, and the two computations have the same value because they differentiate the same element of $\mathbb{H}$; the two splits differ because the products into which the rule decomposes a term depend on which factor is the coefficient and which is the frame.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>rope</strong> of a displacement of a Riemannian quaternion is the vector part of its square, $\mathrm{Vect}(\mathrm dA^2)$.</p>
 <p><strong>Theorem.</strong> With $\mathrm dA = \sum_\mu w_\mu(\mathrm da_\mu)\hat\imath_\mu$,</p>
 <p>$$
-\mathrm{Vect}(\mathrm dA^2) = 2\bigl(\mathrm da_0\bigr)\sum_{k=1}^{3}w_k(\mathrm da_k)\,\hat\imath_0\hat\imath_k .
+\mathrm{Vect}(\mathrm dA^2) = 2\bigl(\mathrm da_0\bigr)\sum_{k=1}^{3}w_k(\mathrm da_k)\,\hat\imath_0\hat\imath_k.
 $$</p>
 <p>With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a temporal frame element with a spatial one are the source's <strong>3-rope</strong>.</p>
 <p><em>Proof.</em> Write $\mathrm dA = c_0\hat\imath_0+\vec c$ with $\vec c = \sum_k c_k\hat\imath_k$ and $c_k = w_k\mathrm da_k$. Then $\mathrm dA^2 = c_0^2\hat\imath_0^2 + c_0\hat\imath_0\vec c + \vec c c_0\hat\imath_0 + \vec c^2$. The vector part of $\vec c^2$ is zero, because the square of a pure quaternion is a scalar, and the two middle terms are each $c_0\hat\imath_0\vec c$, with $\hat\imath_0$ central; adding them gives the display.</p>
@@ -185,7 +185,7 @@ $$</p>
 <td>Scalar and vector part functionals</td>
 </tr>
 <tr>
-<td>$N(\tilde q)=\tilde q\tilde{q}^{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural}=\tilde q\tilde{q}^{\natural}$</td>
 <td>Quaternion norm</td>
 </tr>
 <tr>

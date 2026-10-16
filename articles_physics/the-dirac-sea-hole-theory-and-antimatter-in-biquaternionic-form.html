@@ -87,7 +87,7 @@
 <h3 id="the-reinterpretation">The reinterpretation</h3>
 <p>The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as</p>
 <p>$$
-\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,u^{(r)}(\vec p)e^{-ip\cdot x} + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)e^{+ip\cdot x}\right],
+\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right],
 $$</p>
 <p>in which the <strong>annihilation</strong> operator multiplies the positive-frequency spinors and the <strong>creation</strong> operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.</p>
 <h3 id="normal-ordering">Normal ordering</h3>
@@ -175,7 +175,7 @@ $$</p>
 <td>Particle and antiparticle annihilation operators</td>
 </tr>
 <tr>
-<td>$u^{(r)}$, $v^{(r)}$</td>
+<td>$w^{(r)}$, $v^{(r)}$</td>
 <td>Positive- and negative-frequency spinors</td>
 </tr>
 <tr>

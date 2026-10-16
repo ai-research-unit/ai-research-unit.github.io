@@ -68,7 +68,7 @@ G_0\,G_0 \subseteq G_0, \qquad G_1\,G_1 \subseteq G_0, \qquad G_0\,G_1 \subseteq
 $$
 The sign element $z$ is even, $z \in G_0$.</p>
 <p><strong>Proof.</strong> The containments are the multiplicativity of the homomorphism and its values; $z^{2}=e$ makes $\varepsilon(z)=e$ because the only element of $\{e,z\}$ of order two is $e$ when $\varepsilon$ is a homomorphism into the two-element group.</p>
-<p><strong>Example (the Clifford realisation).</strong> Let $V$ be a quadratic space over a field of characteristic not $2$ and let $G \leq \Gamma(V,q)$ be a subgroup of the Clifford group, together with the central element $-1$ of the algebra. The grading $\varepsilon(g) = +1$ on the even part and $-1$ on the odd part is a homomorphism, the sign element is $z = -1$, and the grade involution $\alpha(g) = \varepsilon(g) g$ is the restriction to $G$ of the grade involution of the Clifford algebra. This is the case the geometry uses; the abstract definition above is the same structure read without the algebra.</p>
+<p><strong>Example (the Clifford realisation).</strong> Let $V$ be a quadratic space over a field of characteristic not $2$ and let $G \leq \Gamma(V,\mathfrak{Q})$ be a subgroup of the Clifford group, together with the central element $-1$ of the algebra. The grading $\varepsilon(g) = +1$ on the even part and $-1$ on the odd part is a homomorphism, the sign element is $z = -1$, and the grade involution $\alpha(g) = \varepsilon(g) g$ is the restriction to $G$ of the grade involution of the Clifford algebra. This is the case the geometry uses; the abstract definition above is the same structure read without the algebra.</p>
 <h3 id="the-grade-involution">The Grade Involution</h3>
 <p><strong>Definition.</strong> The <strong>grade involution</strong> of the graded group $G$ is the map</p>
 <p>$$
@@ -123,15 +123,15 @@ $$</p>
 <p>which contains the fixed subgroup $G^{\langle\alpha\rangle} = G_0$ when $a$ commutes with the grading; the reversed elements satisfy $\alpha(x) = a^{-1}x^{-1}a$. When $a$ is even the signed inner conjugation is the ordinary inner conjugation and its fixed elements are the centraliser of $a$.</p>
 <p><strong>Proof.</strong> The first identity is the definition rewritten with $a^{-1}$; for even $a$ one has $\alpha(a)=a$ and $a\alpha(x)a^{-1} = axa^{-1}$, whose fixed elements are $\{x : ax = xa\}$. The reversed set is computed the same way after inverting $x$.</p>
 <h3 id="the-reflection">The Reflection</h3>
-<p><strong>Theorem (the reflection).</strong> Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $q(u) \neq 0$. In the pin group $\mathrm{Pin}(V,q) \leq \Gamma(V,q)$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,</p>
+<p><strong>Theorem (the reflection).</strong> Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. In the pin group $\mathrm{Pin}(V,\mathfrak{Q}) \leq \Gamma(V,\mathfrak{Q})$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{q(u)}\,u, \qquad v \in V,
+\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{\mathfrak{Q}(u)}\,u, \qquad v \in V,
 $$</p>
 <p>while the unsigned inner conjugation is its negative, $\mathrm{Ad}_u(v) = -\rho_u(v)$. The signed sandwich is therefore the two-sided operator that realises the reflections, and the unsigned one realises them only up to sign.</p>
-<p><strong>Proof.</strong> For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$ and $\mathrm{Ad}_u(v) = uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - q(u)v$ gives $uvu^{-1} = 2B(u,v)q(u)^{-1}u - v = -\rho_u(v)$, hence $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$. This is <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and is quoted here.</p>
+<p><strong>Proof.</strong> For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$ and $\mathrm{Ad}_u(v) = uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - \mathfrak{Q}(u)v$ gives $uvu^{-1} = 2B(u,v)\mathfrak{Q}(u)^{-1}u - v = -\rho_u(v)$, hence $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$. This is <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and is quoted here.</p>
 <p><strong>Remark.</strong> The signed sandwich generalises the reflection. A product $u_1 \cdots u_k$ of vectors acts by $\mathrm{Ad}^{\alpha}$ as the composite of the reflections $\rho_{u_1}\cdots\rho_{u_k}$, and the sandwich with two independent parameters $a, b$ realises the general composite of a reflection and a rotation in either order; the diagonal with a vector parameter is the single reflection. The presence of the sign element $z$ on the odd coset, and its absence on the even one, is exactly what makes the half-turn of a product of two vectors carry no sign.</p>
 <h2 id="worked-cases">Worked Cases</h2>
-<p><strong>Example (the pin group of the Euclidean plane).</strong> Let $V = \mathbb{R}^2$ with the Euclidean form and $u = e^{i\theta}$ a unit vector, $q(u) = 1$. The reflection $\rho_u$ fixes the line $u^{\perp}$ and negates $u$; the signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is this reflection, and the unsigned $\mathrm{Ad}_u$ is its negative, the half-turn composed with it. For the product $u v$ of two unit vectors, even, the two sandwiches agree and both give the rotation through twice the angle between them.</p>
+<p><strong>Example (the pin group of the Euclidean plane).</strong> Let $V = \mathbb{R}^2$ with the Euclidean form and $u = \exp(i\theta)$ a unit vector, $\mathfrak{Q}(u) = 1$. The reflection $\rho_u$ fixes the line $u^{\perp}$ and negates $u$; the signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is this reflection, and the unsigned $\mathrm{Ad}_u$ is its negative, the half-turn composed with it. For the product $u v$ of two unit vectors, even, the two sandwiches agree and both give the rotation through twice the angle between them.</p>
 <p><strong>Example (the dihedral group).</strong> Let $G = D_n = \langle r, s \mid r^n = s^2 = e,\ srs = r^{-1}\rangle$ with the grading $\varepsilon(r) = e$, $\varepsilon(s) = z$, so that the rotations are even and the reflections odd. Then $\alpha(r^k) = r^k$ and $\alpha(r^k s) = z r^k s$. The signed left multiplication on $D_n$ fixes every rotation and sends each reflection to the reflection times the sign element; the signed sandwich $S^{\alpha}_{s,s}(x) = s\,\alpha(x)\,s$ is the inner conjugation by $s$ on the even part and its negative on the odd part, and it acts on the rotations by $r^k \mapsto r^{-k}$.</p>
 <p><strong>Example (the volume element in odd dimension).</strong> Let $V$ be odd-dimensional over $\mathbb{R}$ with the Euclidean form and let $\omega$ be the volume element of the Clifford algebra, odd and central. In the pin group $\omega$ is a unit of norm one; the unsigned inner conjugation $\mathrm{Ad}_\omega$ is the identity, because $\omega$ is central, while the signed inner conjugation is $\mathrm{Ad}^{\alpha}_\omega = z\,\mathrm{id} = -\mathrm{id}$, because $\alpha(\omega) = -\omega$. The signed sandwich is what makes the central odd element act nontrivially, and this is the reason the pin group is built on the signed operator and not on the unsigned one.</p>
 <h2 id="summary">Summary</h2>
@@ -175,11 +175,11 @@ $$</p>
 <td>the signed inner conjugation, $a\alpha(x)a^{-1}$</td>
 </tr>
 <tr>
-<td>$\rho_u(v) = v - 2B(v,u)q(u)^{-1}u$</td>
+<td>$\rho_u(v) = v - 2B(v,u)\mathfrak{Q}(u)^{-1}u$</td>
 <td>the reflection in $u^{\perp}$</td>
 </tr>
 <tr>
-<td>$\mathrm{Pin}(V,q)$</td>
+<td>$\mathrm{Pin}(V,\mathfrak{Q})$</td>
 <td>the pin group, in which the reflection is realised</td>
 </tr>
 </tbody>

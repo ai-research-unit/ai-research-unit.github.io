@@ -111,26 +111,26 @@ $$</p>
 <h3 id="herglotz-and-bochner">Herglotz and Bochner</h3>
 <p><strong>Theorem (Herglotz).</strong> A function $R:\mathbb Z\to\mathbb{C}$ is the stationary covariance of some process if and only if it is positive definite, and then there is a unique finite positive measure $\mu$ on the circle with
 $$
-R(n)=\int_{\mathbb T}e^{in\lambda}\,d\mu(\lambda),\qquad R(0)=\mu(\mathbb T).
+R(n)=\int_{\mathbb T}\exp(in\lambda)\,d\mu(\lambda),\qquad R(0)=\mu(\mathbb T).
 $$</p>
 <p><strong>Theorem (Bochner).</strong> A continuous function $R:\mathbb R\to\mathbb{C}$ is positive definite if and only if it is the Fourier transform of a unique finite positive measure,
 $$
-R(t)=\int_{\mathbb R}e^{it\lambda}\,d\mu(\lambda),
+R(t)=\int_{\mathbb R}\exp(it\lambda)\,d\mu(\lambda),
 $$
 and the measure is the <strong>spectral measure</strong> of the stationary process.</p>
 <p><em>Proof.</em> The two theorems are the spectral theory of the unitary representation of $\mathbb Z$ and of $\mathbb R$ by the shift, or by the translation; the positive definiteness is precisely the positivity of the spectral measure in the Gelfand–Raikov–Godement construction, and the uniqueness is the uniqueness of the Fourier transform. The proofs are <em>Ergodic Theory</em>, written, for the Herglotz case, and the classical Bochner theorem for the continuous case. The symmetry of the spectral measure under $\lambda\mapsto-\lambda$ and its relation to the reversibility are <em>The Reversibility of a Stationary Process</em>, earlier in this category.</p>
 <p><strong>Corollary (the spectral form of the variance).</strong> For a stationary covariance, $R(0)=\mu(\mathbb R)$ and
 $$
-\operatorname{Var}\Bigl(\sum_ic_iX_{t_i}\Bigr)=\int_{\mathbb R}\Bigl|\sum_ic_ie^{it_i\lambda}\Bigr|^2d\mu(\lambda)\ge0 ,
+\operatorname{Var}\Bigl(\sum_ic_iX_{t_i}\Bigr)=\int_{\mathbb R}\Bigl|\sum_ic_i\exp(it_i\lambda)\Bigr|^2d\mu(\lambda)\ge0 ,
 $$
 a nonnegative trigonometric polynomial integrated against the positive spectral measure.</p>
-<p><em>Proof.</em> The variance of the trigonometric polynomial of the shifts is the squared norm in $L^2(\mu)$ of the symbol $\sum_ic_ie^{it_i\lambda}$ by the Bochner representation.</p>
+<p><em>Proof.</em> The variance of the trigonometric polynomial of the shifts is the squared norm in $L^2(\mu)$ of the symbol $\sum_ic_i\exp(it_i\lambda)$ by the Bochner representation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>Example (the white noise).</strong> The covariance $R(s,t)=\delta_{s,t}$ is Hermitian and positive definite, with the spectral measure the Lebesgue measure of total mass one on the circle; the realization is the family of the orthonormal vectors of a Hilbert space, and the process is the white noise of unit variance. The covariance operator is the identity.</p>
-<p><strong>Example (the Gaussian kernel).</strong> The function $R(t)=e^{-t^2/2}$ on $\mathbb R$ is continuous and positive definite, and its Fourier transform is the standard normal density; the realization is the stationary Gaussian process with that covariance, whose spectral measure is the normal law. This is the Bochner theorem in its smoothest instance.</p>
+<p><strong>Example (the Gaussian kernel).</strong> The function $R(t)=\exp(-t^2/2)$ on $\mathbb R$ is continuous and positive definite, and its Fourier transform is the standard normal density; the realization is the stationary Gaussian process with that covariance, whose spectral measure is the normal law. This is the Bochner theorem in its smoothest instance.</p>
 <p><strong>Example (the Fejér kernel).</strong> The function $R(n)=\bigl(1-|n|/N\bigr)_+$ on $\mathbb Z$, the triangular window of width $N$, is positive definite, its spectral density being the Fejér kernel $\frac{1}{2\pi N}\bigl(\frac{\sin(N\lambda/2)}{\sin(\lambda/2)}\bigr)^2$, the squared modulus of the Dirichlet kernel divided by $N$; the example shows that the positive definiteness is not a decay condition.</p>
 <p><strong>Example (a non-positive-definite function).</strong> The function $R(n)=\mathbf 1_{|n|\le1}$ is Hermitian and bounded but not positive definite: for the indices $-1,0,1$ the matrix $(R(t_i-t_j))$ is $\begin{pmatrix}1&1&0\\1&1&1\\0&1&1\end{pmatrix}$, whose eigenvalues are $1$, $1+\sqrt2$ and $1-\sqrt2<0$. Hence it is not a covariance function, and no stationary process has it as its covariance. The example exhibits the content of the positive definiteness.</p>
-<p><strong>Example (the Ornstein–Uhlenbeck kernel).</strong> The function $R(t)=e^{-\alpha|t|}$ on $\mathbb R$ is continuous and positive definite, with the spectral measure the Cauchy density $\frac{\alpha}{\pi(\alpha^2+\lambda^2)}d\lambda$; the realization is the stationary Ornstein–Uhlenbeck process, whose reversibility and self-adjoint generator are <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category.</p>
+<p><strong>Example (the Ornstein–Uhlenbeck kernel).</strong> The function $R(t)=\exp(-\alpha|t|)$ on $\mathbb R$ is continuous and positive definite, with the spectral measure the Cauchy density $\frac{\alpha}{\pi(\alpha^2+\lambda^2)}d\lambda$; the realization is the stationary Ornstein–Uhlenbeck process, whose reversibility and self-adjoint generator are <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category.</p>
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
 <p>The covariance degenerates in four configurations. First, the Hermitian symmetry alone is not enough: a Hermitian kernel can fail the positive definiteness, as the interval indicator above shows, and the failure is exactly the failure of the Gram matrix to come from vectors. Second, the covariance determines only the second-order structure, and two processes with the same covariance can have different laws; the Gaussian family is where the determination is complete, and outside it the covariance is only a shadow. Third, the realization of an arbitrary positive-definite kernel gives a family on a Hilbert space and not automatically on a standard probability space; the passage to a stochastic process requires measurability and the Kolmogorov extension, which is where the countability or the regularity of the index enters. Fourth, the stationary covariance functions are the positive-definite functions of the group and not all of them are continuous, for a general index group; Bochner's theorem gives the continuous ones and their spectral measures, and the non-continuous ones are handled by the spectral theory of the unitary groups, <em>Ergodic Theory</em>, written, together with <em>Banach and Hilbert Spaces</em>, written.</p>
 <h2 id="summary">Summary</h2>
@@ -169,11 +169,11 @@ a nonnegative trigonometric polynomial integrated against the positive spectral 
 <td>the stationary covariance</td>
 </tr>
 <tr>
-<td>$R(n)=\int_{\mathbb T}e^{in\lambda}d\mu$</td>
+<td>$R(n)=\int_{\mathbb T}\exp(in\lambda)d\mu$</td>
 <td>Herglotz representation</td>
 </tr>
 <tr>
-<td>$R(t)=\int_{\mathbb R}e^{it\lambda}d\mu$</td>
+<td>$R(t)=\int_{\mathbb R}\exp(it\lambda)d\mu$</td>
 <td>Bochner representation</td>
 </tr>
 <tr>

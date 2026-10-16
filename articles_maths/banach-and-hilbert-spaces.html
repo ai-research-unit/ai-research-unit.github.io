@@ -63,7 +63,7 @@
 $$</p>
 <p><strong>Theorem.</strong> For linear $T$ the following are equivalent: $T$ is continuous; $T$ is continuous at $0$; $T$ is bounded; $T$ is uniformly continuous. The set $B(X,Y)$ of bounded linear maps is a normed space under the operator norm, complete when $Y$ is complete, and the operator norm is submultiplicative, $\|ST\| \le \|S\|\,\|T\|$, for composable bounded maps.</p>
 <p>These are the basic facts of the normed theory; they are proved in the companion article <em>Normed and Banach Spaces</em>, which also proves the cornerstones resting on completeness and Baire category: the Hahn–Banach extension theorem, the open mapping theorem, the closed graph theorem and the uniform boundedness principle. This article uses them where the Hilbert-space theory needs them, namely in the construction of orthonormal bases and in the Riesz theorem, and does not re-prove them.</p>
-<p><strong>Example.</strong> For $1 \le p < \infty$, the space $\ell^p$ of sequences $x=(x_1,x_2,\dots)$ with $\sum_i|x_i|^p<\infty$ is a Banach space under $\|x\|_p=(\sum_i|x_i|^p)^{1/p}$. The space $\ell^\infty$ of bounded sequences is a Banach space under $\|x\|_\infty=\sup_i|x_i|$. The space $C(K)$ of continuous functions on a compact Hausdorff space $K$ is a Banach space under the supremum norm. The space $L^p(\mu)$ of $p$-integrable functions modulo null functions is a Banach space under $\|f\|_p=(\int|f|^p\,d\mu)^{1/p}$.</p>
+<p><strong>Example.</strong> For $1 \le p < \infty$, the space $\ell^{n}$ of sequences $x=(x_1,x_2,\dots)$ with $\sum_i|x_i|^p<\infty$ is a Banach space under $\|x\|_p=(\sum_i|x_i|^p)^{1/p}$. The space $\ell^\infty$ of bounded sequences is a Banach space under $\|x\|_\infty=\sup_i|x_i|$. The space $C(K)$ of continuous functions on a compact Hausdorff space $K$ is a Banach space under the supremum norm. The space $L^{n}(\mu)$ of $p$-integrable functions modulo null functions is a Banach space under $\|f\|_p=(\int|f|^p\,d\mu)^{1/p}$.</p>
 <h2 id="inner-product-spaces">Inner Product Spaces</h2>
 <h3 id="definition-and-the-induced-norm">Definition and the Induced Norm</h3>
 <p><strong>Definition.</strong> An <strong>inner product</strong> on a $\mathbb{K}$-vector space $H$ is a map $\langle\cdot,\cdot\rangle:H \times H \to \mathbb{K}$ that is linear in the first argument, conjugate-linear in the second, satisfies $\langle x,y\rangle=\overline{\langle y,x\rangle}$, and is positive definite, $\langle x,x\rangle>0$ for $x \neq 0$. An <strong>inner product space</strong> is a pair $(H,\langle\cdot,\cdot\rangle)$. The induced norm is</p>
@@ -94,7 +94,7 @@ $$</p>
 <p><em>Proof.</em> Expand both squares and add: the cross terms cancel.</p>
 <p><strong>Theorem (Jordan–von Neumann).</strong> A norm $\|\cdot\|$ on a $\mathbb{K}$-vector space arises from an inner product if and only if it satisfies the parallelogram law; the inner product is then given by the polarisation identity.</p>
 <p><em>Proof.</em> Necessity is the proposition. For sufficiency, define $\langle x,y\rangle$ by the polarisation identity and verify additivity and homogeneity; the parallelogram law is exactly the identity needed to prove $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$, and the remaining properties follow from the norm axioms.</p>
-<p>The parallelogram law therefore characterises the inner-product norms among all norms, and this is the source of many non-Hilbert Banach spaces: $\ell^p$ for $p \neq 2$ and $C(K)$ for $K$ with more than one point fail the law, so they carry no inner product inducing their norms.</p>
+<p>The parallelogram law therefore characterises the inner-product norms among all norms, and this is the source of many non-Hilbert Banach spaces: $\ell^{n}$ for $p \neq 2$ and $C(K)$ for $K$ with more than one point fail the law, so they carry no inner product inducing their norms.</p>
 <h2 id="hilbert-spaces">Hilbert Spaces</h2>
 <h3 id="definition-and-examples">Definition and Examples</h3>
 <p><strong>Definition.</strong> A <strong>Hilbert space</strong> is an inner product space that is complete for the induced norm.</p>
@@ -259,7 +259,7 @@ $$</p>
 <td>eigenvalues and eigenvectors of a compact self-adjoint operator</td>
 </tr>
 <tr>
-<td>$C(K)$, $\ell^p$, $L^p$</td>
+<td>$C(K)$, $\ell^{n}$, $L^{n}$</td>
 <td>Banach spaces that are not Hilbert spaces for $p \neq 2$</td>
 </tr>
 </tbody>

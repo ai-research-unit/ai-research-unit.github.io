@@ -63,11 +63,11 @@ S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial_\mu + m\righ
 $$</p>
 <p>Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the <strong>symmetric difference</strong></p>
 <p>$$
-\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\hat u} - \psi_{n-\hat u}}{2a}.
+\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
 $$</p>
 <p>The naive action is then</p>
 <p>$$
-S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\hat u}-\psi_{n-\hat u}}{2a} + m\psi_n\right),
+S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\vec u}-\psi_{n-\vec u}}{2a} + m\psi_n\right),
 $$</p>
 <p>which reduces to the continuum action as $a\to0$. It therefore looks like a theory of a single fermion. It is not.</p>
 <h3 id="the-propagator-and-the-doubler-poles">The propagator and the doubler poles</h3>
@@ -88,16 +88,16 @@ $$</p>
 <h3 id="the-taste-exchange-symmetry">The taste-exchange symmetry</h3>
 <p>The naive action carries a symmetry absent from the continuum: for each of the sixteen sign patterns $\pi_A$ there is a transformation</p>
 <p>$$
-\psi_n \;\to\; e^{-in\cdot\pi_A}\,S_A\,\psi_n,
+\psi_n \;\to\; \exp(-in\cdot\pi_A)\,S_A\,\psi_n,
 \qquad
-\bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,e^{in\cdot\pi_A},
+\bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(in\cdot\pi_A),
 \qquad
 S_0 = I,\quad S_\nu = i\gamma_5\gamma_\nu ,
 $$</p>
 <p>with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transforming shows that this shifts the momentum by $\pi_A$ and flips the signs of a subset of the gamma matrices, $(\gamma_1,\gamma_2,\gamma_3,\gamma_4)\to(\pm\gamma_1,\pm\gamma_2,\pm\gamma_3,\pm\gamma_4)$, which is still a representation of the Dirac algebra. The transformation therefore exchanges the tastes; since it is a symmetry of the action, the tastes are physically indistinguishable. In an interacting theory they cannot even be ignored, because momentum is conserved only modulo $2\pi/a$: two $\pi_0$-taste fermions can scatter through a highly virtual gauge boson into two $\pi_1$-taste fermions.</p>
 <h2 id="the-nielsenninomiya-theorem">The Nielsen–Ninomiya Theorem</h2>
 <h3 id="statement-and-assumptions">Statement and assumptions</h3>
-<p>The <strong>Nielsen–Ninomiya theorem</strong> (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Q$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:</p>
+<p>The <strong>Nielsen–Ninomiya theorem</strong> (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Ϙ$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:</p>
 <ul>
 <li><strong>translational invariance</strong>, so that $F(x,y) = F(x-y)$;</li>
 <li><strong>locality</strong>, meaning $F(x-y)$ decays fast enough that its Fourier transform has continuous derivatives;</li>
@@ -169,7 +169,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$a$, $n$, $\hat u$</td>
+<td>$a$, $n$, $\vec u$</td>
 <td>Lattice spacing, site index, unit lattice vector</td>
 </tr>
 <tr>

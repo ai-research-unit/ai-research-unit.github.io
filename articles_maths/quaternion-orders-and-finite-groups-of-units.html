@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the <strong>orders</strong>. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the unit groups that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their unit groups, the classification of the finite subgroups of the sphere, and the McKay correspondence; the topological group of units of the whole algebra is the article before it, and the finite groups are read here once.</p>
 <p><strong>Boundaries.</strong> The norm and the invertibility criterion are <em>Norm and Invertibility in the Quaternion Algebra</em>, above this article in this category; the group of units of the whole algebra and its topology are <em>The Quaternion Unit Group as a Topological Group</em>, above this article in this category; the unit sphere as a topological group is the same article.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The <strong>quaternion form</strong> is $N(\tilde q)=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The <strong>unit sphere</strong> is $S^3=\{\tilde q:N(\tilde q)=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The <strong>quaternion form</strong> is $\langle\tilde q\rangle_{\natural}=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The <strong>unit sphere</strong> is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.</p>
 <h2 id="the-quaternion-orders">The Quaternion Orders</h2>
 <p><strong>Definition (order).</strong> An <strong>order</strong> of $\mathbb{H}$ is a subring $\mathcal O$ that is a lattice, that is a finitely generated abelian group spanning $\mathbb{H}$ over $\mathbb{R}$, and on which the norm is integral.</p>
 <p><strong>Proposition (the Lipschitz order).</strong> The <strong>Lipschitz order</strong></p>
@@ -78,7 +78,7 @@ $$</p>
 \mathcal H^\times=\{\pm1,\pm i,\pm j,\pm k\}\cup\bigl\{\tfrac12(\pm1\pm i\pm j\pm k)\bigr\}=2T,
 $$</p>
 <p>the binary tetrahedral group of order twenty-four.</p>
-<p><em>Proof.</em> An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/N(\tilde q)$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.</p>
+<p><em>Proof.</em> An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.</p>
 <p><strong>Remark (the unit groups are finite, against the group of units of the algebra).</strong> The group of units of the whole algebra, $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, is infinite and is <em>The Quaternion Unit Group as a Topological Group</em>, above this article in this category; the orders cut it down to the finite groups of the theorem. The two are different objects, and the group of units of the algebra is stated once, there.</p>
 <h2 id="the-finite-subgroups-of-the-unit-sphere">The Finite Subgroups of the Unit Sphere</h2>
 <p><strong>Theorem (the classification).</strong> Every finite subgroup of the unit sphere $S^3=Sp(1)$ is one of</p>
@@ -150,11 +150,11 @@ $$</p>
 <tbody>
 <tr>
 <td>diagram</td>
-<td>$\widetilde A_{n-1}$</td>
-<td>$\widetilde D_{n+2}$</td>
-<td>$\widetilde E_6$</td>
-<td>$\widetilde E_7$</td>
-<td>$\widetilde E_8$</td>
+<td>$A_{{n-1}}^{(1)}$</td>
+<td>$D_{{n+2}}^{(1)}$</td>
+<td>$E_{6}^{(1)}$</td>
+<td>$E_{7}^{(1)}$</td>
+<td>$E_{8}^{(1)}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -191,7 +191,7 @@ $$</p>
 <td>the finite subgroups of $S^3$</td>
 </tr>
 <tr>
-<td>$\widetilde A_{n-1}$, $\widetilde D_{n+2}$, $\widetilde E_6$, $\widetilde E_7$, $\widetilde E_8$</td>
+<td>$A_{{n-1}}^{(1)}$, $D_{{n+2}}^{(1)}$, $E_{6}^{(1)}$, $E_{7}^{(1)}$, $E_{8}^{(1)}$</td>
 <td>the McKay diagrams</td>
 </tr>
 </tbody>

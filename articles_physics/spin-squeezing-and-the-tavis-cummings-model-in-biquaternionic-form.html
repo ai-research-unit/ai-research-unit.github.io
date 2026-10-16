@@ -61,7 +61,7 @@
 <li><strong>Spin squeezing.</strong> The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.</li>
 <li><strong>The algebra's interpretation.</strong> The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>Angular Momentum and Spin in Biquaternionic Form</em>, for the collective spin, the ladder operators and the Dicke states.
 - Companion article <em>Quantum Physics in Biquaternionic Form</em>, for the bosonic mode and its coupling to a two-level system.
@@ -89,9 +89,9 @@ $$</p>
 <h3 id="the-coherent-spin-state">The Coherent Spin State</h3>
 <p>The collective coherent state is the product of $N$ identical spin-1/2 coherent states,</p>
 <p>$$
-|\theta,\phi\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}e^{i\phi}|{-}\rangle_i\right),
+|\theta,\phi\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}\exp(i\phi)|{-}\rangle_i\right),
 $$</p>
-<p>which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec J\rangle = \tfrac{N\hbar}{2}\hat u(\theta,\phi)$, and its transverse variance is isotropic,</p>
+<p>which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec J\rangle = \tfrac{N\hbar}{2}\vec u(\theta,\phi)$, and its transverse variance is isotropic,</p>
 <p>$$
 \langle J_\perp^2\rangle = \frac{N\hbar^2}{4},
 \qquad
@@ -162,7 +162,7 @@ $$</p>
 $$</p>
 <p>which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution</p>
 <p>$$
-|\psi(\chi t)\rangle = e^{-i\chi t\tilde{J}_3^2/\hbar^2}|\theta=\tfrac{\pi}{2},\phi=0\rangle
+|\psi(\chi t)\rangle = \exp(-i\chi t\tilde{J}_3^2/\hbar^2)|\theta=\tfrac{\pi}{2},\phi=0\rangle
 $$</p>
 <p>shears the noise ellipse: the variance in the $y$–$z$ plane develops an off-diagonal covariance, the smaller principal variance drops below $\hbar^2N/4$, and $\xi_R^2$ falls below $1$. The mean spin also decreases, since the twisting rotates different Dicke components at different rates; the competition between the shrinking variance and the shrinking mean spin fixes an optimal twisting time.</p>
 <h3 id="numerical-illustration">Numerical Illustration</h3>
@@ -239,7 +239,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>For $N$ spin-1/2 particles the collective operators $\tilde{J}_\alpha = \sum_i\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ obeying the same $su(2)$ algebra with $j = N/2$. The symmetric states are the Dicke states $|j,m\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\tfrac{\hbar N}{2}\hat u$ and transverse variance $\tfrac{\hbar^2N}{4}$ — the standard quantum limit.</p>
+<p>For $N$ spin-1/2 particles the collective operators $\tilde{J}_\alpha = \sum_i\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ obeying the same $su(2)$ algebra with $j = N/2$. The symmetric states are the Dicke states $|j,m\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\tfrac{\hbar N}{2}\vec u$ and transverse variance $\tfrac{\hbar^2N}{4}$ — the standard quantum limit.</p>
 <p>The <strong>Tavis–Cummings model</strong>,</p>
 <p>$$
 \tilde{H} = \hbar\omega_c\,a^\dagger a + \omega_a\,\tilde{J}_3 + g\left(a^\dagger\tilde{J}_- + a\tilde{J}_+\right),
@@ -301,7 +301,7 @@ $$</p>
 <td>Dicke states</td>
 </tr>
 <tr>
-<td>$\hat u(\theta,\phi)$</td>
+<td>$\vec u(\theta,\phi)$</td>
 <td>Direction of the collective mean spin</td>
 </tr>
 <tr>

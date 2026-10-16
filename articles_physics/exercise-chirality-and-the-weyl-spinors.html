@@ -56,11 +56,11 @@
 <p>The following are assumed, with the notation of the parent article.</p>
 <ul>
 <li>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$, scalar imaginary $i$, and the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ (Hermitian). The subspaces are $\mathbb{M}_-$ (material), $\mathbb{M}_+$ (informational), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$ (the centre).</li>
-<li>The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{u}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{u})$, $\det\mathsf{M}_2(\tilde{Q}) = N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.</li>
+<li>The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{u}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{u})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.</li>
 <li>The <strong>spinor module</strong> $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$. Its ideal realization is $S\cong\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$, the two idempotents associated with the root of $+1$ $ie_3$, $(ie_3)^2 = e_0$; $\tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0$, $\tilde\Pi_++\tilde\Pi_- = e_0$, and basis $\{\tilde\Pi_+,\,y\}$, $y = e_2\tilde\Pi_+ = \tfrac12(ie_1+e_2)$.</li>
 <li>The <strong>two chiral halves</strong>: the left-handed Weyl module $V_1 = (\tfrac12,0)$, carried by $S$ with action $\psi\mapsto g\psi$, $g = \mathsf{M}_2(\tilde{U})$; and the right-handed module $\bar{S} = (0,\tfrac12)$, carried by $\mathbb{C}^2$ with action $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$. Their direct sum is the <strong>Dirac module</strong> $\Delta = S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta = 4$.</li>
 <li>The group $SL(2,\mathbb{C}) = \{\tilde{U} : \tilde{U}\tilde{U}^{\natural} = e_0\}$ of <strong>unit-norm biquaternions</strong>, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde{U}):\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ on $\mathbb{M}_-$.</li>
-<li>The <strong>symplectic form</strong> $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, transforming as $\tilde{Q}\mapsto gXg^{\dagger}$.</li>
+<li>The <strong>symplectic form</strong> $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, transforming as $\tilde{Q}\mapsto gXg^{\dagger}$.</li>
 </ul>
 <p>Seven problems are worked below, one per section.</p>
 <h2 id="problem-1-the-chiral-projectors">Problem 1: The Chiral Projectors</h2>
@@ -93,7 +93,7 @@ S(\tilde{U}) = \begin{pmatrix} g & 0\\ 0 & \mathsf{M}_2(\tilde{U}^{*})\end{pmatr
 $$</p>
 <p>so it commutes with $\gamma_5$ and with each $P_{L,R}$. Chirality is therefore a Lorentz-invariant label: a Lorentz transformation never mixes the two halves.</p>
 <p><strong>Why the halves are not the ideals.</strong> The projectors above are not the Peirce projectors $\tilde\Pi_+,\tilde\Pi_-$. The minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$, and left multiplication by $\tilde{U}$ acts on each by the <em>same</em> defining representation; the chiral projectors instead act on the four-dimensional Dirac module and distinguish $\psi\mapsto g\psi$ from $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$. This distinction is invisible to the simple algebra $\mathbb{B}$ and appears only through the conjugate module — as the parent article stresses.</p>
-<p><strong>A second route to the same two halves.</strong> The source recorded in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em> splits the biquaternion wave function itself, in the light-cone basis, into its <strong>positive and negative signed parts</strong> with respect to the null idempotents $N = \tfrac12(1,\hat u)$ and $\bar N$, and identifies the sign of the signed part with the chirality, $F^+\sim\psi_R$, $F^-\sim\psi_L$. That split is a Peirce split of the wave function, not the projector $\tfrac12(I_4\pm\gamma_5)$ on the Dirac module used in this problem. The two labellings agree only after the correspondence between that chiral algebra and the Weyl system, which that article verifies row by row; the projectors here act on $\Delta = S\oplus\bar S$, whereas the signed parts live in $\mathbb{B}$.</p>
+<p><strong>A second route to the same two halves.</strong> The source recorded in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em> splits the biquaternion wave function itself, in the light-cone basis, into its <strong>positive and negative signed parts</strong> with respect to the null idempotents $N = \tfrac12(1,\vec u)$ and $\bar N$, and identifies the sign of the signed part with the chirality, $F^+\sim\psi_R$, $F^-\sim\psi_L$. That split is a Peirce split of the wave function, not the projector $\tfrac12(I_4\pm\gamma_5)$ on the Dirac module used in this problem. The two labellings agree only after the correspondence between that chiral algebra and the Weyl system, which that article verifies row by row; the projectors here act on $\Delta = S\oplus\bar S$, whereas the signed parts live in $\mathbb{B}$.</p>
 <h2 id="problem-2-the-two-weyl-halves-and-the-mass-term">Problem 2: The Two Weyl Halves and the Mass Term</h2>
 <p>Take the mostly-minus counterpart of the parent's block gamma matrices,</p>
 <p>$$
@@ -125,44 +125,44 @@ $$</p>
 \left(\Box - m^2\right)\psi_L = 0,
 $$</p>
 <p>and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: at $m=0$ the coupling disappears, and each half separately obeys the massive Klein–Gordon equation, $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct$ and the standard metric $(+,-,-,-)$, in which $\partial_{ict}^2 = -\partial_0^2$, and nothing else changes.)</p>
-<p><strong>Mass shell.</strong> For a plane wave $\Psi\propto e^{-ik_0x^0+i\vec k\cdot\vec x}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_0 + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,</p>
+<p><strong>Mass shell.</strong> For a plane wave $\Psi\propto \exp(-ik_0x^0+i\vec k\cdot\vec x)$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_0 + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,</p>
 <p>$$
-N(\tilde{P}) = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,
+\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,
 $$</p>
 <p>i.e. $E^2 = \vec p^2c^2 + m^2c^4$.</p>
 <p><strong>Biquaternion form.</strong> The parent Dirac article writes the massive equation as the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$; the mass term is the off-diagonal coupling between the two chiral halves. Conjugation of the four coefficients, $\tilde{\Psi}\mapsto\tilde{\Psi}^{*}$, is the real-structure operation relating the defining module $S$ to its conjugate $\bar{S}$, and the parent's anti-Hermitian conjugation $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ is that real structure itself, not the mass. The exercise therefore treats the mass term in the explicit Dirac representation, where it is unambiguous.</p>
 <h2 id="problem-3-a-boost-and-a-rotation-of-each-half">Problem 3: A Boost and a Rotation of Each Half</h2>
 <p>Recall the two distinguished unit-norm biquaternions and their images under $\mathsf{M}_2$:</p>
 <p>$$
-\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b}
+\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$</p>
 <p>$$
-\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u_{\mathrm r}
+\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde{u}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat u_{\mathrm r}\cdot\boldsymbol{\sigma}.
+\mathsf{M}_2(\tilde{u}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}.
 $$</p>
-<p>For $\hat u_{\mathrm b} = \hat u_{\mathrm r} = \hat{e}_3$ these are diagonal:</p>
+<p>For $\vec u_{\mathrm b} = \vec u_{\mathrm r} = \vec u_3$ these are diagonal:</p>
 <p>$$
-g_{\text{boost}} = \operatorname{diag}\!\left(e^{\psi/2}, e^{-\psi/2}\right), \qquad
-g_{\text{rot}} = \operatorname{diag}\!\left(e^{-i\theta/2}, e^{i\theta/2}\right).
+g_{\text{boost}} = \operatorname{diag}\!\left(\exp(\psi/2), \exp(-\psi/2)\right), \qquad
+g_{\text{rot}} = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$</p>
 <p>The left-handed spinor transforms by $\psi_L\mapsto g\psi_L$, the right-handed one by $\psi_R\mapsto\mathsf{M}_2(\tilde{U}^{*})\psi_R$.</p>
-<p><strong>Boost.</strong> A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde{U}^{*} = \tilde{U}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$. Hence</p>
+<p><strong>Boost.</strong> A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde{U}^{*} = \tilde{U}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$. Hence</p>
 <p>$$
-\mathsf{M}_2(\tilde{U}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma}
-= \operatorname{diag}\!\left(e^{-\psi/2}, e^{\psi/2}\right) = g_{\text{boost}}^{-1}.
+\mathsf{M}_2(\tilde{U}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma}
+= \operatorname{diag}\!\left(\exp(-\psi/2), \exp(\psi/2)\right) = g_{\text{boost}}^{-1}.
 $$</p>
 <p>So under a boost the two halves transform by <strong>inverse</strong> matrices. With $\psi_L = (\psi_{L1},\psi_{L2})^{T}$ and $\psi_R = (\psi_{R1},\psi_{R2})^{T}$,</p>
 <p>$$
-\psi_L \mapsto \left(e^{\psi/2}\psi_{L1},\; e^{-\psi/2}\psi_{L2}\right)^{T}, \qquad
-\psi_R \mapsto \left(e^{-\psi/2}\psi_{R1},\; e^{\psi/2}\psi_{R2}\right)^{T}.
+\psi_L \mapsto \left(\exp(\psi/2)\psi_{L1},\; \exp(-\psi/2)\psi_{L2}\right)^{T}, \qquad
+\psi_R \mapsto \left(\exp(-\psi/2)\psi_{R1},\; \exp(\psi/2)\psi_{R2}\right)^{T}.
 $$</p>
 <p>The component that is stretched in the left-handed spinor is contracted in the right-handed one. This opposition of the two halves under boosts is the representation-theoretic content of the labels "left" and "right".</p>
 <p><strong>Rotation.</strong> A rotation rotor is a real quaternion, so $\tilde{u}^{*} = \tilde{u}$ and</p>
 <p>$$
-\mathsf{M}_2(\tilde{u}^{*}) = \mathsf{M}_2(\tilde{u}) = g_{\text{rot}} = \operatorname{diag}\!\left(e^{-i\theta/2}, e^{i\theta/2}\right).
+\mathsf{M}_2(\tilde{u}^{*}) = \mathsf{M}_2(\tilde{u}) = g_{\text{rot}} = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$</p>
 <p>Both halves transform by the <strong>same</strong> matrix. This is consistent with $S$ and $\bar{S}$ being non-isomorphic complex $SL(2,\mathbb{C})$-modules: they are isomorphic as $SU(2)$-modules, because the defining representation of $SU(2)$ is self-conjugate (quaternionic). The modules separate only under boosts.</p>
 <p><strong>The exact relation for a general rotor.</strong> For arbitrary $\tilde{U}\in SL(2,\mathbb{C})$, with $g = \mathsf{M}_2(\tilde{U})$ and $\bar{g}$ the entrywise complex conjugate, one has</p>
@@ -185,56 +185,56 @@ g^{T}\epsilon\,g
 = \begin{pmatrix}0&ad-bc\\ -(ad-bc)&0\end{pmatrix}
 = (\det g)\,\epsilon = \epsilon .
 $$</p>
-<p>Therefore $\varepsilon(g\psi,g\phi) = \psi^{T}g^{T}\epsilon g\,\phi = \varepsilon(\psi,\phi)$: the form is invariant. The same computation applies to the right-handed action, because $\det\mathsf{M}_2(\tilde{U}^{*}) = \overline{\det\mathsf{M}_2(\tilde{U})} = 1$ (and indeed $\tilde{U}^{*}\in SL(2,\mathbb{C})$ because $N(\tilde{U}^{*}) = \overline{N(\tilde{U})} = 1$). So $\varepsilon$ is an invariant bilinear form on each chiral half separately.</p>
+<p>Therefore $\varepsilon(g\psi,g\phi) = \psi^{T}g^{T}\epsilon g\,\phi = \varepsilon(\psi,\phi)$: the form is invariant. The same computation applies to the right-handed action, because $\det\mathsf{M}_2(\tilde{U}^{*}) = \overline{\det\mathsf{M}_2(\tilde{U})} = 1$ (and indeed $\tilde{U}^{*}\in SL(2,\mathbb{C})$ because $\langle\tilde{U}^{*}\rangle_{\natural} = \overline{\langle\tilde{U}\rangle_{\natural}} = 1$). So $\varepsilon$ is an invariant bilinear form on each chiral half separately.</p>
 <p><strong>Nondegeneracy and self-duality.</strong> The matrix $\epsilon$ is invertible, so $\varepsilon$ is nondegenerate; equivalently, $\psi = 0$ if $\varepsilon(\psi,\phi) = 0$ for all $\phi$. The map $\psi\mapsto\varepsilon(\psi,\cdot)$ is an isomorphism $S\to S^{*}$ intertwining the two actions, so</p>
 <p>$$
 S^{*}\cong S .
 $$</p>
 <p>This is the self-duality of the defining module. It is <strong>not</strong> self-conjugacy: $\bar{S}\not\cong S$ as complex $SL(2,\mathbb{C})$-modules. The distinction is the parent's warning that "self-duality is not self-conjugacy", and it is why a pair of left-handed spinors has an invariant antisymmetric contraction while a left- and a right-handed spinor need the separate mixed pairing $b$.</p>
-<p><strong>Concrete check.</strong> For a boost along $\hat{e}_3$ and $\psi = (1,0)^{T}$, $\phi = (0,1)^{T}$, one has $\varepsilon(\psi,\phi) = 1$, while $\varepsilon(g\psi,g\phi) = e^{\psi/2}e^{-\psi/2} = 1$. The identity $g^{T}\epsilon g = \epsilon$ was verified numerically for boosts, rotations, and random unit-norm biquaternions, residual $<10^{-12}$.</p>
+<p><strong>Concrete check.</strong> For a boost along $\vec u_3$ and $\psi = (1,0)^{T}$, $\phi = (0,1)^{T}$, one has $\varepsilon(\psi,\phi) = 1$, while $\varepsilon(g\psi,g\phi) = \exp(\psi/2)\exp(-\psi/2) = 1$. The identity $g^{T}\epsilon g = \epsilon$ was verified numerically for boosts, rotations, and random unit-norm biquaternions, residual $<10^{-12}$.</p>
 <h2 id="problem-5-the-spinor-bilinear-and-the-four-vector">Problem 5: The Spinor Bilinear and the Four-Vector</h2>
 <p>The parent article introduces the bilinear</p>
 <p>$$
-\tilde{Q} = u\,v^{\dagger}, \qquad u,v\in S,
+\tilde{Q} = w\,v^{\dagger}, \qquad w,v\in S,
 $$</p>
 <p>and shows that it transforms as $\tilde{Q}\mapsto gXg^{\dagger}$. This is immediate: $(gu)(gv)^{*} = g(uv^{\dagger})g^{*}$.</p>
-<p><strong>Hermiticity and the general four-vector map.</strong> The matrix $\tilde{Q} = uv^{\dagger}$ is Hermitian if and only if $u$ and $v$ are proportional by a real factor; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the <strong>Hermitian part</strong></p>
+<p><strong>Hermiticity and the general four-vector map.</strong> The matrix $\tilde{Q} = uv^{\dagger}$ is Hermitian if and only if $w$ and $v$ are proportional by a real factor; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the <strong>Hermitian part</strong></p>
 <p>$$
-H(u,v) = \tfrac12\left(u\,v^{\dagger} + v\,u^{\dagger}\right) \in \mathbb{M}_+ .
+H(w,v) = \tfrac12\left(w\,v^{\dagger} + v\,w^{\dagger}\right) \in \mathbb{M}_+ .
 $$</p>
-<p>For $v = \pm u$ this reduces to $H = \pm uu^{\dagger}$, and the parent's unsymmetrized $\tilde{Q} = uv^{\dagger}$ is then already Hermitian. In general one must symmetrize. The four-vector associated with the spinor pair is</p>
+<p>For $v = \pm w$ this reduces to $H = \pm uu^{\dagger}$, and the parent's unsymmetrized $\tilde{Q} = uv^{\dagger}$ is then already Hermitian. In general one must symmetrize. The four-vector associated with the spinor pair is</p>
 <p>$$
-V(u,v) = i\,H(u,v) \in \mathbb{M}_- ,
+V(w,v) = i\,H(w,v) \in \mathbb{M}_- ,
 $$</p>
 <p>where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.</p>
 <p><strong>Biquaternion norm.</strong> Write $H = h_0e_0 + i\vec h$. Then $V = ih_0e_0 - \vec h$, and</p>
 <p>$$
-N(V) = N(iH) = -\det\mathsf{M}_2(H) = -h_0^2 + \vec h^2 ,
+\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\det\mathsf{M}_2(H) = -h_0^2 + \vec h^2 ,
 $$</p>
-<p>which is the $(3,1)$ Minkowski form of $\mathbb{M}_-$. Two independent checks: for $u = v$ one has $H = uu^{\dagger}$, which is rank one, so $\det H = 0$ and</p>
+<p>which is the $(3,1)$ Minkowski form of $\mathbb{M}_-$. Two independent checks: for $w = v$ one has $H = uu^{\dagger}$, which is rank one, so $\det H = 0$ and</p>
 <p>$$
-N(V) = 0 .
+\langle V\rangle_{\natural} = 0 .
 $$</p>
 <p>A single spinor therefore determines a <strong>null</strong> four-vector — its flag direction.</p>
-<p><strong>Explicit example.</strong> Take $u = v = (1,0)^{T}$. Then $uu^{\dagger} = \operatorname{diag}(1,0) = \tfrac12(I_2+\sigma_3)$, so</p>
+<p><strong>Explicit example.</strong> Take $w = v = (1,0)^{T}$. Then $uu^{\dagger} = \operatorname{diag}(1,0) = \tfrac12(I_2+\sigma_3)$, so</p>
 <p>$$
 H = \tfrac12 e_0 + \tfrac{i}{2} e_3, \qquad V = iH = \tfrac{i}{2}e_0 - \tfrac12 e_3,
 $$</p>
-<p>with components $(q_0,q_1,q_2,q_3) = (\tfrac12,0,0,-\tfrac12)$ in the basis $\{ie_0,e_1,e_2,e_3\}$ and norm $N(V) = -\tfrac14+\tfrac14 = 0$ (numerical residual $<10^{-15}$). This is the content of the parent's factorization $(\tfrac12,\tfrac12) = (\tfrac12,0)\otimes(0,\tfrac12)$: the four-vector is a bilinear in one left-handed and one right-handed spinor.</p>
+<p>with components $(q_0,q_1,q_2,q_3) = (\tfrac12,0,0,-\tfrac12)$ in the basis $\{ie_0,e_1,e_2,e_3\}$ and norm $\langle V\rangle_{\natural} = -\tfrac14+\tfrac14 = 0$ (numerical residual $<10^{-15}$). This is the content of the parent's factorization $(\tfrac12,\tfrac12) = (\tfrac12,0)\otimes(0,\tfrac12)$: the four-vector is a bilinear in one left-handed and one right-handed spinor.</p>
 <h2 id="problem-6-the-double-cover-on-a-concrete-rotation">Problem 6: The Double Cover on a Concrete Rotation</h2>
-<p>Take a rotation about $\hat u_{\mathrm r} = \hat{e}_3$ by angle $\theta$,</p>
+<p>Take a rotation about $\vec u_{\mathrm r} = \vec u_3$ by angle $\theta$,</p>
 <p>$$
-\tilde{u}(\theta) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{e}_3,
+\tilde{u}(\theta) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\vec u_3,
 \qquad
-\mathsf{M}_2(\tilde{u}(\theta)) = \operatorname{diag}\!\left(e^{-i\theta/2}, e^{i\theta/2}\right).
+\mathsf{M}_2(\tilde{u}(\theta)) = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$</p>
 <p><strong>On the spinor.</strong> At $\theta = 2\pi$,</p>
 <p>$$
-\mathsf{M}_2(\tilde{u}(2\pi)) = \operatorname{diag}\!\left(e^{-i\pi}, e^{i\pi}\right) = \operatorname{diag}(-1,-1) = -I_2 ,
+\mathsf{M}_2(\tilde{u}(2\pi)) = \operatorname{diag}\!\left(\exp(-i\pi), \exp(i\pi)\right) = \operatorname{diag}(-1,-1) = -I_2 ,
 $$</p>
 <p>so every spinor is sent to its negative: $\psi\mapsto-\psi$, which is not the identity. At $\theta = 4\pi$,</p>
 <p>$$
-\mathsf{M}_2(\tilde{u}(4\pi)) = \operatorname{diag}\!\left(e^{-2\pi i}, e^{2\pi i}\right) = I_2 ,
+\mathsf{M}_2(\tilde{u}(4\pi)) = \operatorname{diag}\!\left(\exp(-2\pi i), \exp(2\pi i)\right) = I_2 ,
 $$</p>
 <p>so the spinor returns to itself.</p>
 <p><strong>On the four-vector.</strong> The corresponding four-vector action is rotor conjugation by $\tilde{u}(\theta)$. At $\theta = 2\pi$ the rotor is $\tilde{u}(2\pi) = \cos\pi\,e_0 = -e_0$, and</p>
@@ -251,16 +251,16 @@ $$</p>
 <p>$$
 SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
 $$</p>
-<p>and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\hat u_{\mathrm r} = \hat{e}_3$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.</p>
+<p>and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_3$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.</p>
 <h2 id="problem-7-the-spinor-action-and-rotor-conjugation">Problem 7: The Spinor Action and Rotor Conjugation</h2>
-<p><strong>From one-sided to two-sided.</strong> Let $u,v\in S$ and form $V = V(u,v) = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$. Under the spinor action $u\mapsto gu$, $v\mapsto gv$, the bilinear transforms as</p>
+<p><strong>From one-sided to two-sided.</strong> Let $w,v\in S$ and form $V = V(w,v) = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$. Under the spinor action $w\mapsto gu$, $v\mapsto gv$, the bilinear transforms as</p>
 <p>$$
 V \;\longmapsto\; g\,V\,g^{*} = \mathsf{M}_2\!\left(\tilde{U}\,V\,\tilde{U}^{*}\right),
 $$</p>
 <p>which is exactly the rotor conjugation of the material sector. A single spinor contributes one factor, $\psi\mapsto g\psi$ (linear, one-sided); the four-vector is built from two spinors and therefore carries two factors, $gVg^{\dagger}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a <em>pair</em> of spinors.</p>
 <p><strong>The sign that cancels and the sign that does not.</strong> Replace $\tilde{U}$ by $-\tilde{U}$, i.e. $g$ by $-g$. On four-vectors $(-g)V(-g)^{\dagger} = gVg^{\dagger}$, because the two signs cancel; on spinors $(-g)\psi = -g\psi\neq g\psi$ for every nonzero spinor. Hence $\ker\pi = \{\pm e_0\}$ on $\mathbb{M}_-$ but the kernel of the spinor action is trivial: the spinor representation does not descend to $SO^{+}(1,3)$.</p>
 <p><strong>Composition.</strong> Successive rotors compose by multiplication in both pictures: $\tilde{U}_2(\tilde{U}_1\psi) = (\tilde{U}_2\tilde{U}_1)\psi$ and $\tilde{U}_2(\tilde{U}_1V\tilde{U}_1^{*})\tilde{U}_2^{*} = (\tilde{U}_2\tilde{U}_1)V(\tilde{U}_2\tilde{U}_1)^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.</p>
-<p><strong>The mixed pairing.</strong> Finally, the pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$, is invariant:</p>
+<p><strong>The mixed pairing.</strong> Finally, the pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$, with $\psi\mapsto g\psi$ and $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$, is invariant:</p>
 <p>$$
 b\left(g\psi,\mathsf{M}_2(\tilde{U}^{*})\chi\right)
 = \psi^{\dagger}g^{\dagger}\mathsf{M}_2(\tilde{U}^{*})\chi
@@ -271,14 +271,14 @@ $$</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>The solutions have the expected limits.</p>
 <ul>
-<li><strong>Rapidity limits.</strong> As $\psi\to0$ both halves become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\psi$ the halves diverge exponentially, one component of each growing as $e^{\psi/2}$ and the other decaying as $e^{-\psi/2}$.</li>
-<li><strong>$v = \pm u$ (single spinor):</strong> $H = \pm uu^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $N(V) = -h_0^2+\vec h^2$.</li>
+<li><strong>Rapidity limits.</strong> As $\psi\to0$ both halves become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\psi$ the halves diverge exponentially, one component of each growing as $\exp(\psi/2)$ and the other decaying as $\exp(-\psi/2)$.</li>
+<li><strong>$v = \pm w$ (single spinor):</strong> $H = \pm uu^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_0^2+\vec h^2$.</li>
 <li><strong>$\theta = 2\pi$ versus $4\pi$:</strong> the spinor picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.</li>
 </ul>
 <h2 id="what-the-solutions-illustrate">What the Solutions Illustrate</h2>
 <p><strong>1. The parent's structures are sufficient, once the module is made explicit.</strong> All seven problems use only $S$, its conjugate $\bar{S}$, the realization $\mathsf{M}_2$, and the two pairings. The only extra structure is the chirality operator on the Dirac module, which is external to the simple algebra $\mathbb{B}$.</p>
 <p><strong>2. Chirality is a real-structure notion.</strong> The two halves are invisible to $\mathbb{B}$ as a complex algebra, where both minimal left ideals are copies of $S$; they become visible only through the conjugate module and the complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.</p>
-<p><strong>3. The four-vector is the bilinear shadow of the spinor.</strong> Rotor conjugation on $\mathbb{M}_-$ arises from the one-sided spinor action through the Hermitian bilinear $H(u,v)$; the vector representation is the tensor product of the two chiral halves.</p>
+<p><strong>3. The four-vector is the bilinear shadow of the spinor.</strong> Rotor conjugation on $\mathbb{M}_-$ arises from the one-sided spinor action through the Hermitian bilinear $H(w,v)$; the vector representation is the tensor product of the two chiral halves.</p>
 <p><strong>4. The double cover is a kernel statement.</strong> $\ker\pi = \{\pm e_0\}$ on the four-vectors, but trivial on the spinors; the difference is one factor of $g$ versus two.</p>
 <h2 id="notes-on-the-parent-article">Notes on the Parent Article</h2>
 <p>Three points arose where the parent either leaves a definition to convention or uses a shorthand that is not general. They are recorded here as findings; the choices used above are stated explicitly.</p>
@@ -295,7 +295,7 @@ $$</p>
 </ol>
 <p>A fourth point, the biquaternion (ideal) form of the symplectic pairing, is the parent's open question 3; the exercise uses the matrix-coordinate form throughout, which is the form the parent defines.</p>
 <h2 id="summary">Summary</h2>
-<p>Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$, with $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box-m^2)\psi = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. (3) Under a boost along $\hat{e}_3$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$; in general $\mathsf{M}_2(\tilde{U}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g^{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde{U}V\tilde{U}^{*}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.</p>
+<p>Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$, with $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box-m^2)\psi = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. (3) Under a boost along $\vec u_3$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(\exp(-i\theta/2),\exp(i\theta/2))$; in general $\mathsf{M}_2(\tilde{U}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g^{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde{U}V\tilde{U}^{*}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -326,7 +326,7 @@ $$</p>
 <td>Matrix realization, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$</td>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
@@ -358,11 +358,11 @@ $$</p>
 <td>Left- and right-handed Weyl spinors</td>
 </tr>
 <tr>
-<td>$\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$</td>
+<td>$\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$</td>
 <td>Boost rotor ($\mathbb{M}_+$)</td>
 </tr>
 <tr>
-<td>$\tilde{u} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$</td>
+<td>$\tilde{u} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>Rotation rotor ($\mathbb{H}_{\mathbb{B}}$)</td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ $$</p>
 <td>Invariant symplectic pairing on $S$</td>
 </tr>
 <tr>
-<td>$b(\psi,\chi) = \psi^{\dagger}\chi$</td>
+<td>$\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$</td>
 <td>Invariant pairing $S\times\bar{S}\to\mathbb{C}$</td>
 </tr>
 <tr>

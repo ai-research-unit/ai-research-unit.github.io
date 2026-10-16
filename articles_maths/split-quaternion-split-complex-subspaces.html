@@ -55,7 +55,7 @@
 <p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ contains two copies of the split-complex numbers, namely the planes $\operatorname{span}\{1, e_2\}$ and $\operatorname{span}\{1, e_3\}$. Each is a commutative subalgebra isomorphic to $\mathbb{D} = \mathbb{R}[j]/(j^2 - 1)$, each carries its own pair of idempotents and its own pair of isotropic lines, and together they account for the reduction of the algebra to its split-complex pieces. This article studies them.</p>
 <p>The split-complex subspaces are the split-quaternion analogues of the <strong>centre</strong> of the biquaternion algebra: in $\mathbb{B}$ the commutative, idempotent-bearing subalgebra is the centre $\mathbb{C}$, which is central. In $\mathbb{H}_{\mathrm{s}}$ the commutative, idempotent-bearing subalgebras are <strong>not</strong> central — the centre is only the scalar line $\mathbb{R}\cdot 1$ — so the module structure they give is a twisted one, and the contrast is the point of the article.</p>
 <p>The article gives the two subalgebras, their bases, dimensions and defining conditions; their idempotents, which are exactly the standard idempotents $\tilde\pi_{1,2}$ for the first plane; the zero divisors they carry; the module structure of the algebra over each, with the twisted multiplication; and the comparison with the centre of $\mathbb{B}$. It closes with examples.</p>
-<p><strong>Conventions.</strong> The algebra $\mathbb{H}_{\mathrm{s}}$ has basis $1, e_1, e_2, e_3$ with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and norm $N(q_0 + q_1e_1 + q_2e_2 + q_3e_3) = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar subspace $S$ and the vector subspace $V$ are as in <em>Split-Quaternion Scalar and Vector Subspaces</em>. The split-complex numbers are $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R} \oplus \mathbb{R}$, an algebra over the commutative ring $\mathbb{R}$; their idempotents are $e_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p><strong>Conventions.</strong> The algebra $\mathbb{H}_{\mathrm{s}}$ has basis $1, e_1, e_2, e_3$ with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$, and norm $\langle q_0 + q_1e_1 + q_2e_2 + q_3e_3\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$. The scalar subspace $S$ and the vector subspace $V$ are as in <em>Split-Quaternion Scalar and Vector Subspaces</em>. The split-complex numbers are $\mathbb{D} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R} \oplus \mathbb{R}$, an algebra over the commutative ring $\mathbb{R}$; their idempotents are $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The two <strong>split-complex subspaces</strong> of $\mathbb{H}_{\mathrm{s}}$ are</p>
 <p>$$
@@ -78,7 +78,7 @@ $$</p>
 <p>$$
 \mathbb{D}_3: \quad v_+ = \tfrac{1}{2}(1 + e_3), \quad v_- = \tfrac{1}{2}(1 - e_3).
 $$</p>
-<p>The idempotents $\tilde\pi_{1,2}$ of the first plane are exactly the <strong>standard idempotents</strong> of the algebra, and the companion article <em>Split-Quaternion Idempotents and Projections</em> develops them; the pair $v_\pm$ plays the same role inside $\mathbb{D}_3$. In either plane the two idempotents are orthogonal and complete, $\tilde\pi_1\tilde\pi_2 = v_+v_- = 0$ and $\tilde\pi_1 + \tilde\pi_2 = v_+ + v_- = 1$, and both have norm zero, $N(\tilde\pi_{1,2}) = N(v_\pm) = 0$. Within its own plane each idempotent is central, because the plane is commutative; but it is not central in $\mathbb{H}_{\mathrm{s}}$, since $e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3) \neq \tfrac{1}{2}(e_1 - e_3) = \tilde\pi_1 e_1$.</p>
+<p>The idempotents $\tilde\pi_{1,2}$ of the first plane are exactly the <strong>standard idempotents</strong> of the algebra, and the companion article <em>Split-Quaternion Idempotents and Projections</em> develops them; the pair $v_\pm$ plays the same role inside $\mathbb{D}_3$. In either plane the two idempotents are orthogonal and complete, $\tilde\pi_1\tilde\pi_2 = v_+v_- = 0$ and $\tilde\pi_1 + \tilde\pi_2 = v_+ + v_- = 1$, and both have norm zero, $\langle\tilde\pi_{1,2}\rangle_{\natural} = \langle v_\pm\rangle_{\natural} = 0$. Within its own plane each idempotent is central, because the plane is commutative; but it is not central in $\mathbb{H}_{\mathrm{s}}$, since $e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3) \neq \tfrac{1}{2}(e_1 - e_3) = \tilde\pi_1 e_1$.</p>
 <h3 id="subalgebra-commutativity-ring-structure">Subalgebra, Commutativity, Ring Structure</h3>
 <p>As abstract rings, $\mathbb{D}_2 \cong \mathbb{D}_3 \cong \mathbb{R} \oplus \mathbb{R}$: the map sending $q_0 + q_2 e_2$ to the pair $(q_0 + q_2, q_0 - q_2)$ is a ring isomorphism, inverse to $(r, s) \mapsto \tfrac{1}{2}(r+s) + \tfrac{1}{2}(r-s) e_2$. Hence each split-complex subspace is a product of two copies of the field $\mathbb{R}$; it has exactly two maximal ideals, the kernels of the two projections, which are the spans of the idempotents $\tilde\pi_{1,2}$. Neither subspace is a field, and each has zero divisors.</p>
 <h3 id="multiplication-tables">Multiplication Tables</h3>
@@ -102,7 +102,7 @@ $$</p>
 <h3 id="restriction">Restriction</h3>
 <p>The split-quaternion norm restricts to each plane as the two-dimensional form</p>
 <p>$$
-N(q_0 + q_2 e_2) = q_0^2 - q_2^2, \qquad N(q_0 + q_3 e_3) = q_0^2 - q_3^2,
+\langle q_0 + q_2 e_2\rangle_{\natural} = q_0^2 - q_2^2, \qquad \langle q_0 + q_3 e_3\rangle_{\natural} = q_0^2 - q_3^2,
 $$</p>
 <p>of signature $(1,1)$. Each restriction is the hyperbolic or <strong>Minkowski</strong> form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.</p>
 <h3 id="units-and-zero-divisors">Units and Zero Divisors</h3>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 \mathbb{R}(1 + e_2), \qquad \mathbb{R}(1 - e_2),
 $$</p>
-<p>on which $q_0 = \pm q_2$; every nonzero element of these lines is a zero divisor, and indeed $(1+e_2)(1-e_2) = 0$. The same statements hold in $\mathbb{D}_3$ with the isotropic lines $\mathbb{R}(1\pm e_3)$. The isotropic lines of the two planes, together with the scalar null direction, are the traces of the null cone of $N$ on the planes, and they are described in <em>Split-Quaternion Zero Divisors</em>.</p>
+<p>on which $q_0 = \pm q_2$; every nonzero element of these lines is a zero divisor, and indeed $(1+e_2)(1-e_2) = 0$. The same statements hold in $\mathbb{D}_3$ with the isotropic lines $\mathbb{R}(1\pm e_3)$. The isotropic lines of the two planes, together with the scalar null direction, are the traces of the null cone of $\langle\cdot\rangle_{\natural}$ on the planes, and they are described in <em>Split-Quaternion Zero Divisors</em>.</p>
 <p><strong>Proposition.</strong> The zero divisors of $\mathbb{D}_2$ are exactly the nonzero elements of the two isotropic lines $\mathbb{R}(1 \pm e_2)$, and the zero divisors of $\mathbb{D}_3$ are exactly the nonzero elements of $\mathbb{R}(1 \pm e_3)$.</p>
 <p><strong>Proof.</strong> The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is a unit if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of <em>Split-Quaternion Norm and Invertibility</em>; hence the non-units are exactly the nonzero null elements.</p>
 <h2 id="the-structure-of-the-planes">The Structure of the Planes</h2>
@@ -162,7 +162,7 @@ $$</p>
 <h2 id="comparison-with-the-centre-of-math172">Comparison With the Centre of $\mathbb{B}$</h2>
 <p>The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\mathbb{C} = \operatorname{span}\{1, i\}$ is a field and is central, and $\mathbb{B}$ is a free module of rank $4$ over it. The centre of $\mathbb{H}_{\mathrm{s}}$, by contrast, is only the one-dimensional scalar line $S = \mathbb{R}\cdot 1$, which is a field but too small to make the algebra an algebra over it in a non-trivial way. The subalgebras that bear the split-complex structure, $\mathbb{D}_2$ and $\mathbb{D}_3$, are commutative but <strong>not</strong> central; this is the precise sense in which the split-complex situation is the "non-central analogue" of the centre of $\mathbb{B}$. The centre of $\mathbb{B}$ is a field, so it has no idempotents other than $0$ and $1$; the split-complex planes are products $\mathbb{R} \oplus \mathbb{R}$, so they carry the nontrivial idempotents $\tilde\pi_{1,2}$ and $v_\pm$. The centre of $\mathbb{B}$ is developed in <em>Introduction to the Remarkable Subspaces</em>; the split-complex subalgebras are developed here.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>Example (an idempotent of the first plane).</strong> For $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$ one has $\tilde\pi_1^2 = \tilde\pi_1$, with $e_2 \tilde\pi_1 = \tilde\pi_1$ and $\tilde\pi_2 \tilde\pi_1 = 0$; $N(\tilde\pi_1) = 0$, and $\tilde\pi_1$ is a zero divisor in $\mathbb{D}_2$ with $\tilde\pi_1 \tilde\pi_2 = 0$.</p>
+<p><strong>Example (an idempotent of the first plane).</strong> For $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$ one has $\tilde\pi_1^2 = \tilde\pi_1$, with $e_2 \tilde\pi_1 = \tilde\pi_1$ and $\tilde\pi_2 \tilde\pi_1 = 0$; $\langle\tilde\pi_1\rangle_{\natural} = 0$, and $\tilde\pi_1$ is a zero divisor in $\mathbb{D}_2$ with $\tilde\pi_1 \tilde\pi_2 = 0$.</p>
 <p><strong>Example (a unit of the second plane).</strong> For $\tilde q = 2 + e_3$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - e_3)/3$.</p>
 <p><strong>Example (the twisted multiplication).</strong> Take $A_1 = 1$, $A_2 = e_2$, $B_1 = 1$, $B_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = e_2^{\natural}\, e_1$. This is the concrete content of the twisted formula above.</p>
 <p><strong>Example (the isotropic lines).</strong> For the first plane, $(1 + e_2)(1 - e_2) = 0$; for the second, $(1 + e_3)(1 - e_3) = 0$. The four lines $\mathbb{R}(1\pm e_2)$, $\mathbb{R}(1\pm e_3)$ are the split-complex traces of the null cone.</p>
@@ -210,7 +210,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$e_\pm = \tfrac{1}{2}(1\pm j)$</td>
+<td>$\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$</td>
 <td>the idempotents of the abstract $\mathbb{D}$</td>
 <td><em>Split-Complex Algebra</em></td>
 </tr>
@@ -220,7 +220,7 @@ $$</p>
 <td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
 </tr>
 <tr>
-<td>$N(q_0+q_2e_2) = q_0^2-q_2^2$</td>
+<td>$\langle q_0+q_2e_2\rangle_{\natural} = q_0^2-q_2^2$</td>
 <td>the form restricted to a split-complex plane, signature $(1,1)$</td>
 <td>this article</td>
 </tr>

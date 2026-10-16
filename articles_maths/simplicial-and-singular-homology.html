@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The fundamental group of <em>The Fundamental Group and Covering Spaces</em> is an invariant of a space that is easy to define and hard to compute, and it is not abelian. <strong>Homology</strong> replaces it by a sequence of abelian groups, one in each degree, which are computable from a chain complex and which are the natural home of the machinery — exact sequences, excision, the Künneth formula — that makes algebraic topology a computational subject. A chain complex is an algebraic object of Part I: a sequence of abelian groups with maps $\partial_n$ satisfying $\partial_{n-1}\partial_n = 0$, exactly as in <em>Exact Sequences</em> and the planned <em>Homological Algebra</em>. Homology is its derived invariant, and the present article attaches such a complex to a space, first combinatorially and then, in full generality, by taking chains to be formal sums of continuous maps of simplices.</p>
 <p>Two constructions are given. <strong>Simplicial homology</strong> is defined for a simplicial complex, a space built from genuine simplices glued along faces, and it is finite and computable: the chain groups are free of rank equal to the number of $n$-simplices, and the boundary is read from incidence. <strong>Singular homology</strong> is defined for every topological space: the $n$-chains are the formal sums of all continuous maps $\Delta_n \to X$, so the construction is manifestly invariant, at the cost of enormous chain groups; the reward is that functoriality, homotopy invariance, excision and the long exact sequence of a pair are all formal consequences of the definitions. The two theories agree on the spaces where both are defined, and for a CW complex both agree with the cellular homology of <em>CW Complexes and Cellular Approximation</em>.</p>
-<p>The companion article <em>CW Complexes and Cellular Approximation</em> supplies the cell structures, the homotopy extension property and the cellular boundary formula, all of which are used here. The homological algebra — exact sequences, the snake lemma, the five lemma, chain homotopy — is that of <em>Exact Sequences</em>, and the general theory of chain complexes over a ring is the planned <em>Homological Algebra</em> of Part I, written in parallel; it is cited for the algebraic constructions and not restated. Coefficients are taken in a commutative ring $R$ with identity $1 \neq 0$, so that $H_n(X;R)$ is an $R$-module; the default $R = \mathbb{Z}$ gives abelian groups, and the case of a general coefficient module is not covered here. <strong>Reduced homology</strong> is written $\tilde H_n$.</p>
+<p>The companion article <em>CW Complexes and Cellular Approximation</em> supplies the cell structures, the homotopy extension property and the cellular boundary formula, all of which are used here. The homological algebra — exact sequences, the snake lemma, the five lemma, chain homotopy — is that of <em>Exact Sequences</em>, and the general theory of chain complexes over a ring is the planned <em>Homological Algebra</em> of Part I, written in parallel; it is cited for the algebraic constructions and not restated. Coefficients are taken in a commutative ring $R$ with identity $1 \neq 0$, so that $H_n(X;R)$ is an $R$-module; the default $R = \mathbb{Z}$ gives abelian groups, and the case of a general coefficient module is not covered here. <strong>Reduced homology</strong> is written $H_{n,\mathrm{red}}$.</p>
 <h2 id="simplicial-complexes">Simplicial Complexes</h2>
 <h3 id="simplices-and-complexes">Simplices and Complexes</h3>
 <p><strong>Definition.</strong> Let $v_0, \ldots, v_n$ be points of $\mathbb{R}^N$ in general position, meaning that the vectors $v_1 - v_0, \ldots, v_n - v_0$ are linearly independent. The <strong>$n$-simplex</strong> they span is the convex set</p>
@@ -109,7 +109,7 @@ $$</p>
 H_n(X;R) = \ker\partial_n / \operatorname{im}\partial_{n+1}.
 $$</p>
 <p>A space $X$ with $H_n(X;R) = 0$ for all $n \geq 1$ and $H_0(X;R) \cong R$ is <strong>acyclic</strong> over $R$.</p>
-<p><strong>Definition (reduced homology).</strong> Let $\varepsilon : C_0(X;R) \to R$ be the <strong>augmentation</strong> sending every singular $0$-simplex to $1$. The <strong>reduced chain complex</strong> is obtained by adjoining $R$ in degree $-1$ with $\varepsilon$ as the boundary, and its homology is the <strong>reduced homology</strong> $\tilde H_n(X;R)$, so $\tilde H_n = H_n$ for $n \geq 1$ and $\tilde H_0 \cong H_0 \oplus R / (\text{image of } \varepsilon)$; for nonempty $X$, $\tilde H_0(X;R)$ is the kernel of $\varepsilon$ on cycles.</p>
+<p><strong>Definition (reduced homology).</strong> Let $\varepsilon : C_0(X;R) \to R$ be the <strong>augmentation</strong> sending every singular $0$-simplex to $1$. The <strong>reduced chain complex</strong> is obtained by adjoining $R$ in degree $-1$ with $\varepsilon$ as the boundary, and its homology is the <strong>reduced homology</strong> $H_{n,\mathrm{red}}(X;R)$, so $H_{n,\mathrm{red}} = H_n$ for $n \geq 1$ and $H_{0,\mathrm{red}} \cong H_0 \oplus R / (\text{image of } \varepsilon)$; for nonempty $X$, $H_{0,\mathrm{red}}(X;R)$ is the kernel of $\varepsilon$ on cycles.</p>
 <h3 id="functoriality">Functoriality</h3>
 <p><strong>Theorem.</strong> A continuous map $f : X \to Y$ induces a chain map $f_\# : C_*(X;R) \to C_*(Y;R)$ by $f_\#(\sigma) = f \circ \sigma$, and hence homomorphisms $f_* : H_n(X;R) \to H_n(Y;R)$. The assignments satisfy $(g \circ f)_* = g_* f_*$ and $(\mathrm{id}_X)_* = \mathrm{id}$, so $H_n(-;R)$ is a functor from topological spaces to $R$-modules.</p>
 <p><em>Proof.</em> The chain map property is $f_\# \partial(\sigma) = \sum_i (-1)^i f \sigma \delta^i = \partial f_\#(\sigma)$, an identity of maps; a chain map induces a map on homology because it carries cycles to cycles and boundaries to boundaries. The functorial identities are immediate from associativity of composition.</p>
@@ -137,7 +137,7 @@ $$</p>
 <p>for all $n$.</p>
 <p><em>Proof sketch.</em> Every relative cycle in $H_n(X,A;R)$ is represented by a chain whose simplices are small in the sense that each is contained in $X \setminus Z$ or in $A$: subdivide by iterated barycentric subdivision, using that each singular simplex is a compact subset of $X$ and that the interiors of the sets in the cover $\{X \setminus Z, \operatorname{int}(A)\}$ cover $X$, together with the Lebesgue number lemma. Chains of this form are chains in $C_*(X\setminus Z, A \setminus Z)$, so the inclusion is surjective on homology; the same argument on chains bounding shows injectivity.</p>
 <p><strong>Corollary (excision, symmetric form).</strong> If $A, B$ are subspaces with $X = \operatorname{int}(A) \cup \operatorname{int}(B)$ then the inclusion $(B, A \cap B) \hookrightarrow (X,A)$ induces isomorphisms in homology.</p>
-<p><strong>Corollary.</strong> For a CW pair $(X,A)$ the collapse $X \to X/A$ induces $H_n(X,A;R) \cong \tilde H_n(X/A;R)$, so the cellular computation of the previous article is a homology computation. In particular, for the $n$-disc pair $(D^n, S^{n-1})$,</p>
+<p><strong>Corollary.</strong> For a CW pair $(X,A)$ the collapse $X \to X/A$ induces $H_n(X,A;R) \cong H_{n,\mathrm{red}}(X/A;R)$, so the cellular computation of the previous article is a homology computation. In particular, for the $n$-disc pair $(D^n, S^{n-1})$,</p>
 <p>$$
 H_k(D^n, S^{n-1};R) \cong \begin{cases} R, & k = n, \\ 0, & k \neq n,\end{cases}
 $$</p>
@@ -152,8 +152,8 @@ $$</p>
 <p><strong>Example.</strong> The sphere $S^n$ for $n \geq 1$ is the union of two open discs whose intersection deformation retracts to $S^{n-1}$. Induction with the Mayer–Vietoris sequence gives $H_k(S^n;R) \cong R$ for $k = 0, n$ and $0$ otherwise.</p>
 <h2 id="the-homology-of-spheres-and-graphs">The Homology of Spheres and Graphs</h2>
 <h3 id="spheres-and-the-suspension">Spheres and the Suspension</h3>
-<p><strong>Theorem.</strong> For $n \geq 0$, $H_k(S^n;R) \cong R$ for $k = 0$ and $k = n$, and $H_k(S^n;R) = 0$ otherwise; in reduced homology, $\tilde H_k(S^n;R) \cong R$ for $k = n$ and $0$ otherwise.</p>
-<p><em>Proof.</em> The case $n = 0$ is $S^0$, two points, with $H_0$ free of rank two and nothing else. For $n \geq 1$ use the Mayer–Vietoris sequence of the two hemispheres, whose intersection is a neighbourhood of the equator, deformation retracting to $S^{n-1}$. The sequence reads $\tilde H_k(S^{n-1}) \to \tilde H_k(S^n) \to 0$ for $k \geq 1$ and $0 \to \tilde H_n(S^n)\to \tilde H_{n-1}(S^{n-1}) \to 0$ in degree $n$, giving the result by induction.</p>
+<p><strong>Theorem.</strong> For $n \geq 0$, $H_k(S^n;R) \cong R$ for $k = 0$ and $k = n$, and $H_k(S^n;R) = 0$ otherwise; in reduced homology, $H_{k,\mathrm{red}}(S^n;R) \cong R$ for $k = n$ and $0$ otherwise.</p>
+<p><em>Proof.</em> The case $n = 0$ is $S^0$, two points, with $H_0$ free of rank two and nothing else. For $n \geq 1$ use the Mayer–Vietoris sequence of the two hemispheres, whose intersection is a neighbourhood of the equator, deformation retracting to $S^{n-1}$. The sequence reads $H_{k,\mathrm{red}}(S^{n-1}) \to H_{k,\mathrm{red}}(S^n) \to 0$ for $k \geq 1$ and $0 \to H_{n,\mathrm{red}}(S^n)\to H_{n-1,\mathrm{red}}(S^{n-1}) \to 0$ in degree $n$, giving the result by induction.</p>
 <p><strong>Corollary.</strong> The degree of a self-map of $S^n$ is well defined by $f_* = \deg(f)\cdot \mathrm{id}$ on $H_n(S^n) \cong \mathbb{Z}$, and the properties quoted in <em>CW Complexes and Cellular Approximation</em> hold by functoriality.</p>
 <h3 id="graphs">Graphs</h3>
 <p><strong>Definition.</strong> A finite connected graph is a CW complex of dimension one; write $V$ for its $0$-cells and $E$ for its $1$-cells.</p>
@@ -217,7 +217,7 @@ $$</p>
 <td>Simplicial homology</td>
 </tr>
 <tr>
-<td>$\tilde H_n(X;R)$</td>
+<td>$H_{n,\mathrm{red}}(X;R)$</td>
 <td>Reduced homology; $\varepsilon$ the augmentation</td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ $$</p>
 </tr>
 <tr>
 <td>Acyclic</td>
-<td>$\tilde H_n = 0$ for all $n$</td>
+<td>$H_{n,\mathrm{red}} = 0$ for all $n$</td>
 </tr>
 </tbody>
 </table></div>

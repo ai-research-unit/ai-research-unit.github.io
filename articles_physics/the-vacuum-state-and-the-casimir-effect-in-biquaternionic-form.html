@@ -78,17 +78,17 @@ with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}
 $$
 \mathcal{F}=\bigoplus_{n\ge0}\Big(\mathcal{H}_1^{\otimes n}\Big)_{\pm},\qquad |0\rangle\ \text{spans the } n=0 \text{ term},
 $$
-annihilated by every annihilation operator, $\hat a_r|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(\hat a_0-\hat a_3)$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.</p>
+annihilated by every annihilation operator, $a^{\mathrm{fop}}_r|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.</p>
 <p>The question that is specific to the framework is: <strong>is the vacuum state an object of $\mathbb{B}$?</strong> The answer has a positive part and a negative part, and they apply to different things.</p>
 <p><strong>The one-mode vacuum is native.</strong> For a single fermionic mode the algebra contains the whole ladder, as <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> establishes. With
 $$
-\hat\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
-\hat\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
-\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0,
+\vec\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
+\vec\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
+\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0,
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\hat\Upsilon_2\hat\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\vec\Upsilon_2\vec\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
 $$
 so the <strong>vacuum projector</strong> is the complementary idempotent
 $$
@@ -104,15 +104,15 @@ which is the Born rule of the informational sector specialized to the vacuum. Th
 <h2 id="the-zero-point-energy-and-the-trace-part">The Zero-Point Energy and the Trace Part</h2>
 <p><strong>From the mode expansion.</strong> The free Maxwell potential expands in four covariant polarisations,
 $$
-\hat A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\Big(\hat a_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,e^{-ik\cdot x}
-+\hat a_r^{\dagger}(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,e^{+ik\cdot x}\Big),
+A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
+\Big(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
++a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[\hat a_r(\vec k),\hat a_s^{\dagger}(\vec k')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k'),
+\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k'),
 $$
 with $\zeta=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!\hat H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,\hat a_r^{\dagger}(\vec k)\hat a_r(\vec k),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,a^{\mathrm{fop}\dagger}_r(\vec k)a^{\mathrm{fop}}_r(\vec k),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.</p>
 <p><strong>Its value.</strong> Reordering the modes produces, per mode, the contribution $\sum_r\zeta_r\,\tfrac12\hbar\omega_k$. Since
@@ -131,7 +131,7 @@ $$
 E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.</p>
-<p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=e^{-i\tilde Ht/\hbar}$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.</p>
+<p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht/\hbar)$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.</p>
 <p>This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A <strong>constant</strong> central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the <em>variation</em> of a central scalar observable, and that is all the Casimir effect requires.</p>
 <h2 id="the-parallel-plate-configuration-and-the-divergent-sum">The Parallel-Plate Configuration and the Divergent Sum</h2>
 <p><strong>The configuration.</strong> Two perfectly conducting parallel plates of area $A$, separated by a distance $a$ along $e_3$, bound a region of the vacuum. The plates are idealised: they impose $E_\parallel=0$ and $B_\perp=0$ on their surfaces, which is a boundary condition on the field, not a property of the algebra. It should be said at the outset that <strong>the framework has no native description of a boundary</strong>: the free-field algebra of the companion articles is formulated on the whole of spacetime, and the conductors are external structure. What the framework does supply is the space in which the mode structure is counted, as the next section makes precise.</p>
@@ -199,8 +199,8 @@ This is the Casimir energy per unit area of a <strong>single</strong> massless s
 <p><strong>The heat kernel.</strong> For the Dirichlet-type problem the heat kernel per unit area is
 $$
 K(t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
-e^{-t(\vec k_\perp^{2}+(\pi n/a)^{2})}
-=\frac{1}{4\pi t}\sum_{n=1}^{\infty}e^{-(\pi n/a)^{2}t},
+\exp(-t(\vec k_\perp^{2}+(\pi n/a)^{2}))
+=\frac{1}{4\pi t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}t),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
 $$
@@ -208,12 +208,12 @@ K_\infty(t)=\frac{1}{4\pi t}\cdot\frac{a}{2\sqrt{\pi t}}=\frac{a}{8\pi^{3/2}t^{3
 $$
 The <strong>Jacobi modular relation</strong> for the theta function,
 $$
-\sum_{n=-\infty}^{\infty}e^{-\alpha n^{2}}=\sqrt{\frac{\pi}{\alpha}}\sum_{m=-\infty}^{\infty}e^{-\pi^{2}m^{2}/\alpha},
+\sum_{n=-\infty}^{\infty}\exp(-\alpha n^{2})=\sqrt{\frac{\pi}{\alpha}}\sum_{m=-\infty}^{\infty}\exp(-\pi^{2}m^{2}/\alpha),
 $$
 with $\alpha=\pi^{2}t/a^{2}$, gives the exact difference
 $$
 K(t)-K_\infty(t)=-\frac{1}{8\pi t}
-+\frac{a}{4\pi^{3/2}t^{3/2}}\sum_{m=1}^{\infty}e^{-a^{2}m^{2}/t}.
++\frac{a}{4\pi^{3/2}t^{3/2}}\sum_{m=1}^{\infty}\exp(-a^{2}m^{2}/t).
 $$
 The first term is $a$-independent: it is a constant energy, contributes nothing to the force, and is the vestige of the surface divergence. The second term is the <strong>Casimir part</strong>: it is exponentially small as $t\to0$, so its zeta integral converges without any subtraction, and it vanishes as $a\to\infty$, which is what a Casimir energy must do. Its appearance from a modular transformation is the precise sense in which the finite part comes from the "winding" of the free modes around the compact direction of size $a$, not from the divergent mode count.</p>
 <p><strong>The value.</strong> The Casimir energy per unit area is
@@ -222,7 +222,7 @@ $$
 $$
 and with the Casimir part of the exact heat-kernel difference the $t$-integral is elementary,
 $$
-\int_{0}^{\infty}t^{-3}\,e^{-a^{2}m^{2}/t}\,dt=\frac{1}{a^{4}m^{4}} .
+\int_{0}^{\infty}t^{-3}\,\exp(-a^{2}m^{2}/t)\,dt=\frac{1}{a^{4}m^{4}} .
 $$
 Therefore
 $$
@@ -244,7 +244,7 @@ $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\Big)=-\frac{\pi^{2}\hbar c}{720\,a^{3}} .
 $$</p>
 <p><strong>From the indefinite metric.</strong> In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, <strong>double</strong> the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.</p>
-<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $N(\tilde{Q})=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat k$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
+<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
 <p>The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.</p>
 <h2 id="the-casimir-force-sign-convention-and-two-verifications">The Casimir Force: Sign Convention and Two Verifications</h2>
 <p><strong>Sign convention.</strong> Let $E(a)$ be the vacuum energy of the bounded region at separation $a$, per unit area. The force per unit area on a plate is
@@ -300,7 +300,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Two physical transverse polarisations</td>
 <td>Native</td>
-<td>$\hat k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$</td>
+<td>$\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$</td>
 </tr>
 <tr>
 <td>Indefinite metric $\zeta=(-1,+1,+1,+1)$</td>
@@ -418,8 +418,8 @@ $$
 <td>Trace formula; $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$\hat\Upsilon_1,\hat\Upsilon_2$</td>
-<td>One-mode ladder, $\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0$</td>
+<td>$\vec\Upsilon_1,\vec\Upsilon_2$</td>
+<td>One-mode ladder, $\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0$</td>
 </tr>
 <tr>
 <td>$\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$</td>
@@ -438,16 +438,16 @@ $$
 <td>Field vacuum, degree-zero term of the Fock space</td>
 </tr>
 <tr>
-<td>$\hat a_r,\hat a_r^\dagger$, $\epsilon^{(r)}_\mu$</td>
+<td>$a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$, $\epsilon^{(r)}_\mu$</td>
 <td>Covariant mode operators and polarization vectors</td>
 </tr>
 <tr>
 <td>$\zeta=(-1,+1,+1,+1)$</td>
-<td>Indefinite metric; biquaternion norm $N(\tilde{Q})=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$</td>
+<td>Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\hat k$</td>
-<td>Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$</td>
+<td>$\vec u_k$</td>
+<td>Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$</td>
 </tr>
 <tr>
 <td>$a$, $A$</td>

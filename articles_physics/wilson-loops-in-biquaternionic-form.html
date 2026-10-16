@@ -121,7 +121,7 @@ $$</p>
 \qquad
 W(C) = \exp\left(\frac{i}{2}F_{\mu\nu}\Sigma^{\mu\nu}\right),
 $$</p>
-<p>with $\Sigma^{\mu\nu}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=e^{iB_3\mathcal{A}}$; a loop in the $xt$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\hat u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\hat u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.</p>
+<p>with $\Sigma^{\mu\nu}$ the (oriented) area bivector of the loop. A loop in the $xy$ plane of area $\mathcal{A}$ measures only the magnetic component, $W=\exp(iB_3\mathcal{A})$; a loop in the $xt$ plane measures only the electric component, with the sign fixed by the orientation of the loop; and a loop tilted into a general plane measures the combination $\vec B\cdot\vec u\,\mathcal{A}$ for a spacelike plane and $\vec E\cdot\vec u\,\mathcal{A}$ for a timelike one. This was verified for the plaquette of the preceding paragraph, where the enclosed flux was exactly $h^2F$. In the biquaternion language the exponent is the scalar part of the product of the area bivector with the field strength, and the electric and magnetic parts of $\tilde{F}$ are measured by timelike and spacelike loops respectively. The two invariants of $\tilde{F}^2$ are what remain when the loop is allowed to explore both kinds of plane; a single loop sees only one component.</p>
 <h2 id="the-gaussian-average-of-the-loop">The Gaussian Average of the Loop</h2>
 <p>The loop's expectation value is Gaussian in the free theory, and the Gaussian average is the direct transcription of the generating functional of the preceding article. With the source $J^\mu$ replaced by the line current carried by the loop,</p>
 <p>$$
@@ -139,7 +139,7 @@ $$</p>
 $$</p>
 <p>with $\kappa_{\mathrm{div}}$ a real divergent coefficient, so that the divergent part of the loop is a phase proportional to the perimeter, the Minkowski form of the perimeter law. The physical statement is that this divergence is absorbed by the mass renormalization of the external sources that the loop describes, and the renormalized loop is finite; the free theory thus produces the perimeter law, while the area law requires the nonperturbative dynamics. The biquaternion content is that the propagator whose double integral appears is the material-sector propagator and the line current is a material-sector current, so the loop's self-interaction is a statement entirely within $\mathbb{M}_-$.</p>
 <h2 id="the-aharonovbohm-phase">The Aharonov–Bohm Phase</h2>
-<p>For an abelian loop that encircles a region of confined flux, the loop integral equals the enclosed flux by Stokes' theorem, whether or not the field vanishes on the loop itself. If the flux $\Phi=\frac12\int_S F_{\mu\nu}d\Sigma^{\mu\nu}$ is confined to a tube that the loop encloses but does not touch, then $W(C)=e^{i\Phi}$ even though $\tilde{F}=0$ at every point of the loop. This is the Aharonov–Bohm phase, and it shows that the connection carries physical information that the field strength at the loop does not: the holonomy is the primary observable and the field strength is its local density. In the framework the loop's phase is the exponential of a scalar-part integral of the material connection, and the flux it measures is the integral of the field strength biquaternion over the enclosed surface.</p>
+<p>For an abelian loop that encircles a region of confined flux, the loop integral equals the enclosed flux by Stokes' theorem, whether or not the field vanishes on the loop itself. If the flux $\Phi=\frac12\int_S F_{\mu\nu}d\Sigma^{\mu\nu}$ is confined to a tube that the loop encloses but does not touch, then $W(C)=\exp(i\Phi)$ even though $\tilde{F}=0$ at every point of the loop. This is the Aharonov–Bohm phase, and it shows that the connection carries physical information that the field strength at the loop does not: the holonomy is the primary observable and the field strength is its local density. In the framework the loop's phase is the exponential of a scalar-part integral of the material connection, and the flux it measures is the integral of the field strength biquaternion over the enclosed surface.</p>
 <h2 id="the-non-abelian-loop-and-the-surface">The Non-Abelian Loop and the Surface</h2>
 <p>For the non-abelian theory there is a surface form of the holonomy, but it is not the naive exponentiation of the flux: because the field strength does not commute with itself at different points, the surface integral must itself be path ordered, and the non-abelian Stokes theorem reads</p>
 <p>$$
@@ -152,23 +152,23 @@ $$</p>
 <h3 id="expectation-value-and-the-perimeter-and-area-laws">Expectation Value and the Perimeter and Area Laws</h3>
 <p>The Wilson loop becomes a quantum observable when averaged in the gauge-field path integral,</p>
 <p>$$
-\langle W(C)\rangle = \frac{\displaystyle\int\mathcal{D}\tilde{A}\;W(C)\,e^{iS[\tilde{A}]}}{\displaystyle\int\mathcal{D}\tilde{A}\;e^{iS[\tilde{A}]}},
+\langle W(C)\rangle = \frac{\displaystyle\int\mathcal{D}\tilde{A}\;W(C)\,\exp(iS[\tilde{A}])}{\displaystyle\int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}])},
 $$</p>
 <p>with the gauge fixing of the preceding article and, where needed, the ghost and envelope structure. Its asymptotic behaviour for large loops is the standard diagnostic of confinement, and the two laws below are quoted in Euclidean signature, where the exponent is real and negative; the free-theory average of the preceding section was written in Minkowski signature, where the same perimeter divergence appears as a phase. A <strong>perimeter law</strong>,</p>
 <p>$$
-\langle W(C)\rangle \sim e^{-\kappa\,\mathrm{perim}(C)} ,
+\langle W(C)\rangle \sim \exp(-\kappa\,\mathrm{perim}(C)) ,
 $$</p>
 <p>is the behaviour of a theory in a phase where the flux between two sources can spread, and an <strong>area law</strong>,</p>
 <p>$$
-\langle W(C)\rangle \sim e^{-\sigma\,\mathrm{area}(C)} ,
+\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C)) ,
 $$</p>
-<p>is the behaviour of a confining phase, where a flux tube forms and the coefficient $\sigma$ is the string tension. The rectangular loop of width $L$ and time extent $T$ gives the static potential between two heavy sources through $\langle W(C)\rangle\sim e^{-iT\,V(L)}$, so that an area law corresponds to a linearly rising $V(L)=\sigma L$ and a perimeter law to a screened potential. These statements are standard and are the reason the Wilson loop is the natural order parameter of the gauge theory; the lattice regularization in which the area law is established and the strong-coupling expansion that produces it belong to the companion subcategory on gauge fields and are not repeated here.</p>
+<p>is the behaviour of a confining phase, where a flux tube forms and the coefficient $\sigma$ is the string tension. The rectangular loop of width $L$ and time extent $T$ gives the static potential between two heavy sources through $\langle W(C)\rangle\sim \exp(-iT\,V(L))$, so that an area law corresponds to a linearly rising $V(L)=\sigma L$ and a perimeter law to a screened potential. These statements are standard and are the reason the Wilson loop is the natural order parameter of the gauge theory; the lattice regularization in which the area law is established and the strong-coupling expansion that produces it belong to the companion subcategory on gauge fields and are not repeated here.</p>
 <h3 id="the-rectangular-loop-and-the-static-potential">The Rectangular Loop and the Static Potential</h3>
 <p>The most common loop is the rectangle of spatial width $L$ and temporal extent $T$, with $T\gg L$. For large $T$ the expectation value exponentiates the energy of the state that the loop creates,</p>
 <p>$$
-\langle W(\Box_{L\times T})\rangle \;\sim\; e^{-iT\,V(L)} ,
+\langle W(\Box_{L\times T})\rangle \;\sim\; \exp(-iT\,V(L)) ,
 $$</p>
-<p>so that the loop is the worldline of a pair of static sources separated by $L$ and the exponent is the potential between them. An area law $e^{-\sigma LT}$ corresponds to $V(L)=\sigma L$, a linearly rising potential, which is confinement; a perimeter law corresponds to a potential that flattens at large $L$, which is screening. In the abelian free theory the evaluation of the previous sections gives the Coulomb potential $V(L)\sim g^2/L$ with the perimeter divergence removed, and the biquaternion interpretation is that the loop's Gaussian average is the self-interaction of the material line current through the material propagator. The potential is therefore the quantity that the loop expectation value encodes, and the confinement question is the question of whether the exponent grows with $L$ or with the perimeter.</p>
+<p>so that the loop is the worldline of a pair of static sources separated by $L$ and the exponent is the potential between them. An area law $\exp(-\sigma LT)$ corresponds to $V(L)=\sigma L$, a linearly rising potential, which is confinement; a perimeter law corresponds to a potential that flattens at large $L$, which is screening. In the abelian free theory the evaluation of the previous sections gives the Coulomb potential $V(L)\sim g^2/L$ with the perimeter divergence removed, and the biquaternion interpretation is that the loop's Gaussian average is the self-interaction of the material line current through the material propagator. The potential is therefore the quantity that the loop expectation value encodes, and the confinement question is the question of whether the exponent grows with $L$ or with the perimeter.</p>
 <h3 id="the-biquaternion-form-of-the-order-parameter">The Biquaternion Form of the Order Parameter</h3>
 <p>In the framework the order parameter is the expectation of the scalar part of the holonomy of a material-sector connection, taken around a closed curve,</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 <p>The quantum Wilson loop is constrained by the Schwinger–Dyson equation of the gauge-field path integral. Varying the connection in the integral and using the definition of the loop, one obtains the <strong>loop equation</strong>, in which the area derivative of $\langle W(C)\rangle$ is expressed through the loop self-intersection. The derivation is short enough to indicate: the variation of the loop under $A_\mu\to A_\mu+\delta A_\mu$ gives $i\oint_C\delta A_\mu dx^\mu$ times the loop, and the variation of the action gives the field equation; integrating by parts and using the equation of motion expresses the result through the area derivative</p>
 <p>$$
 \frac{\delta}{\delta\sigma_{\mu\nu}(x)}\langle W(C)\rangle
-= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\mu\nu}(x)\,e^{i\oint_C A}\right)\right\rangle ,
+= \left\langle \mathrm{Tr}\,\mathcal{P}\left(F_{\mu\nu}(x)\,\exp(i\oint_C A)\right)\right\rangle ,
 $$</p>
 <p>the statement that the area derivative inserts the field strength at a point of the loop. Iterating and using the field equation produces the loop equation. For the abelian theory the content is the free-field equation for the field strength; for the non-abelian theory the equation couples loops with different numbers of windings, and closing it requires an additional assumption such as the factorization of the large-$N$ limit. These equations are standard and are cited below; their biquaternion rendition adds nothing beyond the observation already made, that the loop is the trace of a holonomy of a material connection over an informational realization, and that the loop equation is the statement that this holonomy is a functional of the field strength obeying the nonlinear field equation of the companion articles.</p>
 <h2 id="the-loop-the-two-sectors-and-the-algebra">The Loop, the Two Sectors, and the Algebra</h2>
@@ -285,7 +285,7 @@ $$</p>
 <td>Central element; its two scalar parts are the Maxwell invariants (verified)</td>
 </tr>
 <tr>
-<td>$\langle W(C)\rangle\sim e^{-\kappa\,\mathrm{perim}}$ / $e^{-\sigma\,\mathrm{area}}$</td>
+<td>$\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$</td>
 <td>Perimeter law (screening) / area law (confinement)</td>
 </tr>
 <tr>

@@ -133,7 +133,7 @@ $$</p>
 $$</p>
 <p>Hence the exponential carries the bounded derivations into the automorphism group $\operatorname{Aut}(A)$.</p>
 <p><strong>Proof.</strong> The series converges absolutely because $\lVert D^n\rVert \leq \lVert D\rVert^n$ and $\sum\lVert D\rVert^n/n!$ is finite; $B(A)$ is complete. That $\exp D$ is multiplicative is the Leibniz rule reorganized: $D^n(ab) = \sum_{i=0}^{n} \binom{n}{i} D^i(a)D^{n-i}(b)$, which is the binomial theorem for the derivation, and summing against $1/n!$ gives $(\exp D)(ab) = (\exp Da)(\exp Db)$. The identity $\exp(D)\exp(-D) = \mathrm{id}$ is the Cauchy product and $\exp(0) = \mathrm{id}$.</p>
-<p><strong>Example (the matrix algebra).</strong> On $A = M_n(\mathbb{K})$ every derivation is inner, $D = \operatorname{ad}_X$ for some $X$, and the exponential of $\operatorname{ad}_X$ is the inner automorphism $Y \mapsto e^{X}Ye^{-X}$, whose inverse is conjugation by $e^{-X}$; the derivation $\operatorname{ad}_X$ is the operator $Y \mapsto XY - YX$ of commutator with $X$.</p>
+<p><strong>Example (the matrix algebra).</strong> On $A = M_n(\mathbb{K})$ every derivation is inner, $D = \operatorname{ad}_X$ for some $X$, and the exponential of $\operatorname{ad}_X$ is the inner automorphism $Y \mapsto \exp(X)Y\exp(-X)$, whose inverse is conjugation by $\exp(-X)$; the derivation $\operatorname{ad}_X$ is the operator $Y \mapsto XY - YX$ of commutator with $X$.</p>
 <h2 id="automatic-continuity">Automatic Continuity</h2>
 <p>Completeness constrains the unital multiplicative maps and the derivations. The device is the separating space of a linear map.</p>
 <p><strong>Definition.</strong> For a linear map $T : A \to A$ the <strong>separating space</strong> is</p>

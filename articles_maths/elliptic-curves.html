@@ -167,9 +167,9 @@ $$</p>
 <p>$$
 \mathbb{Z}/n\mathbb{Z}\ (1 \leq n \leq 10,\ n = 12), \qquad (\mathbb{Z}/2\mathbb{Z})\times(\mathbb{Z}/2n\mathbb{Z})\ (1 \leq n \leq 4).
 $$</p>
-<p><strong>Theorem (reduction).</strong> Let $K$ be a number field, $\mathrm{P}$ a nonzero prime of $\mathcal{O}_K$ of residue characteristic $p$, and $E$ an elliptic curve over $K$ with a Weierstrass equation integral at $\mathrm{P}$ whose discriminant is not divisible by $\mathrm{P}$, so that the reduced equation is nonsingular and defines an elliptic curve $\tilde E$ over $\kappa(\mathrm{P})$. Then the reduction map $E(K) \to \tilde E(\kappa(\mathrm{P}))$ is injective on the torsion subgroup of order coprime to $p$, and</p>
+<p><strong>Theorem (reduction).</strong> Let $K$ be a number field, $\mathrm{P}$ a nonzero prime of $\mathcal{O}_K$ of residue characteristic $p$, and $E$ an elliptic curve over $K$ with a Weierstrass equation integral at $\mathrm{P}$ whose discriminant is not divisible by $\mathrm{P}$, so that the reduced equation is nonsingular and defines an elliptic curve $E^{\mathrm{res}}$ over $\kappa(\mathrm{P})$. Then the reduction map $E(K) \to E^{\mathrm{res}}(\kappa(\mathrm{P}))$ is injective on the torsion subgroup of order coprime to $p$, and</p>
 <p>$$
-\lvert E(K)_{\mathrm{tors}}\rvert \ \text{divides}\ \ \lvert \tilde E(\kappa(\mathrm{P}))\rvert \ \text{whenever}\ \mathrm{P}\nmid \lvert E(K)_{\mathrm{tors}}\rvert .
+\lvert E(K)_{\mathrm{tors}}\rvert \ \text{divides}\ \ \lvert E^{\mathrm{res}}(\kappa(\mathrm{P}))\rvert \ \text{whenever}\ \mathrm{P}\nmid \lvert E(K)_{\mathrm{tors}}\rvert .
 $$</p>
 <p><strong>Example.</strong> For $E: y^2 = x^3 - x$ over $\mathbb{Q}$ and $\mathrm{P} = (5)$, the reduced curve over $\mathbb{F}_5$ has $8$ points, and indeed $E(\mathbb{Q})_{\mathrm{tors}} = (\mathbb{Z}/2\mathbb{Z})^2$ of order $4$ divides $8$. For $E: y^2 = x^3 - x$ and $\mathrm{P} = (3)$, the reduced curve over $\mathbb{F}_3$ has $\lvert E(\mathbb{F}_3)\rvert = 4$ points (the affine points being $(0,0)$, $(1,0)$, $(2,0)$, plus $O$), and the reduction of the torsion of order $4$ is injective.</p>
 <p><strong>Remark.</strong> The finer theory of the reduction type — good, multiplicative, additive reduction, the Kodaira–Néron classification, the conductor of $E$ and the criterion of Néron–Ogg–Shafarevich — is local at a place and requires the completion of $K$ at $\mathrm{P}$, and is therefore treated in Part II together with the local field that carries it.</p>
@@ -264,7 +264,7 @@ $$</p>
 <td>Rank of $E(K)$</td>
 </tr>
 <tr>
-<td>$\tilde E$, $\kappa(\mathrm{P})$</td>
+<td>$E^{\mathrm{res}}$, $\kappa(\mathrm{P})$</td>
 <td>Reduced curve, residue field</td>
 </tr>
 <tr>

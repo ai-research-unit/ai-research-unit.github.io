@@ -160,13 +160,13 @@ $$</p>
 <h3 id="dispersion-relation">Dispersion relation</h3>
 <p>Write a plane-wave potential</p>
 <p>$$
-\tilde{A} = \tilde{A}_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}, \qquad
+\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})), \qquad
 \tilde{A}_0 = A_0e_0 + \vec a, \qquad
 \tilde{K} = i\frac{\omega}{c}\,e_0 + \vec k,
 $$</p>
 <p>where $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot\vec x - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_0$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde{K}^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as</p>
 <p>$$
-\Box\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})} = \left(\frac{\omega^2}{c^2} - \vec k^2\right)e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})},
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
 $$</p>
 <p>as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires</p>
 <p>$$
@@ -203,7 +203,7 @@ $$</p>
 $$</p>
 <p>the combination $\tilde{A}+\tilde{\nabla}\chi$ is invariant, so the mass term is gauge invariant and the symmetry is restored. On a plane wave the scalar $\chi$ contributes a piece along the wavevector, and the longitudinal state is carried by that piece; as $m\to0$ it decouples, carrying the third polarization away with it. The Stueckelberg form is a rewriting of the Proca system by a field redefinition, not a different theory, and it is mentioned here only to record that the algebra accommodates it without a change of structure.</p>
 <h2 id="the-massive-field-strength-and-the-self-dual-split">The Massive Field Strength and the Self-Dual Split</h2>
-<p>The companion article of this subcategory shows that the field-strength biquaternion lies in the complex three-dimensional vector part of the algebra and that the Hodge dual acts on it as $\star\tilde{F} = -i\tilde{F}$; the field-strength biquaternion of a real field carries the self-dual coordinate $\vec V = \vec E+ic\vec B$, on which the dual is $-i$, and the anti-self-dual coordinate is the conjugate combination $\vec V^* = \vec E-ic\vec B$, on which it is $+i$. That statement is a property of the vector part and holds for the Proca field as much as for the Maxwell field: the massive field strength is still a pure vector of the algebra, and the split is still available.</p>
+<p>The companion article of this subcategory shows that the field-strength biquaternion lies in the complex three-dimensional vector part of the algebra and that the Hodge dual acts on it as $\star\tilde{F} = -i\tilde{F}$; the field-strength biquaternion of a real field carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which the dual is $-i$, and the anti-self-dual coordinate is the conjugate combination $\vec N^* = \vec E-ic\vec B$, on which it is $+i$. That statement is a property of the vector part and holds for the Proca field as much as for the Maxwell field: the massive field strength is still a pure vector of the algebra, and the split is still available.</p>
 <p>What the mass changes is not the split but the equation that the field strength satisfies. In the Maxwell case the source-free equation $\tilde{\nabla}\tilde{F}=0$ makes the field strength harmonic, and the two helicities are the two halves. In the Proca case the equation is</p>
 <p>$$
 \tilde{\nabla}\tilde{F} = \frac{m^2c^2}{\hbar^2}\,\tilde{A},
@@ -266,7 +266,7 @@ $$</p>
 $$</p>
 <p>with $\tilde{A}\in\mathbb{M}_-$ and $\tilde{F}\in\mathrm{Vect}(\mathbb{B})$. Unlike the massless Maxwell equation, it is not gauge invariant: the mass term couples the potential to itself, and the gauge freedom of the massless theory is absent.</p>
 <p>The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the <strong>Lorenz condition</strong> $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{A}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.</p>
-<p>The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it is the self-dual coordinate $\vec V=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.</p>
+<p>The plane-wave solutions carry a real spatial amplitude and a time component fixed by the Lorenz condition, with the dispersion relation $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The three real components of the spatial amplitude are the three polarizations: two transverse and one longitudinal. The longitudinal mode is physical because there is no gauge freedom to remove it; in the massless limit the residual gauge transformation removes exactly that mode and leaves the two transverse polarizations. The field strength remains a pure vector of the algebra and so retains the self-dual split of the companion article — it is the self-dual coordinate $\vec N=\vec E+ic\vec B$ of the real field — but it is not harmonic, and the mass term is precisely the source that the biquaternion Maxwell equation requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -338,7 +338,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>

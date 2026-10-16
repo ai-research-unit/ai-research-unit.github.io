@@ -63,7 +63,7 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -87,7 +87,7 @@ $$</p>
 <p>which follows from $\rho^2 = -e_0$ alone: the two factors multiply to $\cos^2 + \sin^2 = e_0$. This is a closed form that holds for <strong>every</strong> root, and it is the form the inverse transform uses.</p>
 <p><strong>The conjugate and the norm, for a pure root.</strong> When the root is pure, that is, when its scalar part vanishes, the quaternion conjugate of the kernel is this inverse and the norm is the identity:</p>
 <p>$$
-\overline{W(t, \omega)} = W(t, \omega)^{-1}, \qquad N(W(t, \omega)) = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = e_0 ,
+\overline{W(t, \omega)} = W(t, \omega)^{-1}, \qquad \langle W(t, \omega)\rangle_{\natural} = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = e_0 ,
 $$</p>
 <p>because $\bar\rho = -\rho$ for a pure element. The first family $\rho = \pm i$ is the exception: it is not pure, the quaternion conjugate leaves the kernel unchanged, and the inverse is the complex conjugate $\exp(2\pi\omega t\, i)$. In that family the kernel is a complex scalar and the transform is the ordinary complex Fourier transform of each component simultaneously. The distinction affects only that family, and the statements below that use the conjugate of the kernel are stated for a pure root.</p>
 <h3 id="the-condition-on-the-root">The Condition on the Root</h3>
@@ -251,9 +251,9 @@ $$</p>
 <h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
 <p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
 <h3 id="the-gradient">The Gradient</h3>
-<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $\tilde{F} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
+<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:</p>
 <p>$$
-\mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
+\mathcal{F}[\partial_0 F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
 $$</p>
 <p>where the sign depends on the convention for the kernel (the sign is positive for the kernel $\exp(+2\pi \rho \omega t)$ and negative for $\exp(-2\pi \rho \omega t)$).</p>
 <p>If the transform is taken in all four variables, the gradient becomes multiplication by the biquaternion</p>
@@ -264,13 +264,13 @@ $$</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
 <p>The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
 <p>$$
-\mathcal{F}[\Box \tilde{F}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[\tilde{F}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[\tilde{F}](\omega).
+\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$</p>
 <p>The multiplier is a scalar (times $e_0$), and it vanishes on the <strong>light cone</strong></p>
 <p>$$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$</p>
-<p>So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on the light cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
+<p>So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the light cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
 <p>$$
@@ -319,20 +319,20 @@ $$</p>
 K = \cos(\theta_1 + \theta_2) \, e_0 - \sin(\theta_1 + \theta_2) \, \rho ,
 $$</p>
 <p>which is the kernel $W$ of this article read on the linear form $\omega_1 Q_1 + \omega_2 Q_2$, and it is the kernel of the two-dimensional transform of the discrete case. The one-unit theory is therefore the case in which the two units are equal, and the two-unit transform is its refinement.</p>
-<p><strong>The kernel is invertible for every pair of roots.</strong> The norm is multiplicative, $N(K) = N(W_1) N(W_2)$, and the inverse is the kernel with both frequencies negated and the two factors exchanged:</p>
+<p><strong>The kernel is invertible for every pair of roots.</strong> The norm is multiplicative, $\langle K\rangle_{\natural} = \langle W_1\rangle_{\natural} \langle W_2\rangle_{\natural}$, and the inverse is the kernel with both frequencies negated and the two factors exchanged:</p>
 <p>$$
-K(\tilde{Q}, \omega)^{-1} = W_2(Q_2, -\omega_2) \, W_1(Q_1, -\omega_1).
+\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_2, -\omega_2) \, W_1(Q_1, -\omega_1).
 $$</p>
 <p>For two pure roots the kernel is unitary in the sense of the previous section,</p>
 <p>$$
-N(K) = e_0, \qquad \overline{K(\tilde{Q}, \omega)} = K(\tilde{Q}, \omega)^{-1},
+\langle K\rangle_{\natural} = e_0, \qquad \overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},\omega\rangle_{\natural*}^{-1},
 $$</p>
 <p>and this holds for every pair of pure roots, commuting or not. The unit-norm property is thus a property of each factor and is inherited by the product.</p>
 <p><strong>Frequency reversal.</strong> Reversing the sign of the frequencies conjugates the kernel <strong>and exchanges the two factors</strong>:</p>
 <p>$$
-\overline{K(\tilde{Q}, \omega)} = K^{\mathrm{ex}}(\tilde{Q}, -\omega),
+\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K^{\mathrm{ex}}(\tilde{Q}, -\omega),
 $$</p>
-<p>where $K^{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{K(\tilde{Q},\omega)} = K(\tilde{Q},-\omega)$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.</p>
+<p>where $K^{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.</p>
 <p><strong>On the factorisation into complex transforms.</strong> The factorisation of the next section diagonalises one root. Two elements that are simultaneously diagonalisable commute, so two roots that do not commute admit no common eigenbasis, and there is no basis in which both units of the two-unit kernel act diagonally at once. The pairs that do commute — equal roots, opposite roots, and any pair containing the central imaginary $i$ — keep a common eigenbasis, and there the one-unit factorisation applies to both variables. Whether the two-unit transform with a non-commuting pair still reduces to a fixed finite family of complex transforms is not settled here, and it is listed among the open questions.</p>
 <h2 id="the-transform-of-a-measure-and-the-failure-of-positivity">The Transform of a Measure, and the Failure of Positivity</h2>
 <p><strong>Definition.</strong> Let $\mu$ be a finite positive measure on $\mathbb{R}^n$ and let $\rho$ be a pure root of $-1$. The <strong>transform of the measure</strong> is</p>
@@ -350,13 +350,13 @@ $$</p>
 <p><strong>The real-quaternion case.</strong> If the root is a real quaternion and the coefficients are real, then $Z = a - b\rho$ with $a$ and $b$ real and the integrand is $a^2 + b^2 \ge 0$. The form is non-negative and the transform of the measure is positive definite, which is the hypothesis the classical theorem of Bochner runs on; the quaternion form of that statement, in one and in two variables, is the subject of <em>Quaternion Harmonic Analysis</em>.</p>
 <p><strong>The biquaternion case: the form is the norm, and the norm is indefinite.</strong> For $\mathbb{B}$ the integrand is the norm itself, and the norm is complex-valued:</p>
 <p>$$
-N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \Re N(\tilde{Q}) = \sum_{\mu=0}^{3} (\Re Q_\mu)^2 - \sum_{\mu=0}^{3} (\Im Q_\mu)^2
+\langle\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \Re \langle\tilde{Q}\rangle_{\natural} = \sum_{\mu=0}^{3} (\Re Q_\mu)^2 - \sum_{\mu=0}^{3} (\Im Q_\mu)^2
 $$</p>
 <p>in the eight real components of $\tilde{Q}$. The failure needs no zero divisor and no exceptional value. At $N = 1$, with the central imaginary unit for coefficient,</p>
 <p>$$
 A_1 = i: \qquad \bar A_1 A_1 \, G(0) = i^2 \, \mu(\mathbb{R}^n) = -\mu(\mathbb{R}^n) \, e_0 ,
 $$</p>
-<p>which is negative for every non-zero measure, because $N(i) = -1$. The scalar imaginary is a unit of the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence <strong>the transform of a measure is not a positive-definite function for $\mathbb{B}$</strong>, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.</p>
+<p>which is negative for every non-zero measure, because $\langle i\rangle_{\natural} = -1$. The scalar imaginary is a unit of the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence <strong>the transform of a measure is not a positive-definite function for $\mathbb{B}$</strong>, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.</p>
 <p><strong>The repair, and what it costs.</strong> Positivity returns when the norm is replaced by a definite pairing. The integrand of the Euclidean form is a sum of squares of moduli,</p>
 <p>$$
 \|Z(\tilde{Q})\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
@@ -369,7 +369,7 @@ $$</p>
 <h3 id="periodization">Periodization</h3>
 <p>Conversely, the discrete transform is the periodization of the continuous transform. If $f$ is a function with continuous transform $F$, then the discrete transform of the samples $f(nT)$ is the periodization of $F$:</p>
 <p>$$
-F_{\text{disc}}[u] = \frac{1}{T} \sum_{k \in \mathbb{Z}} F\left(\frac{u}{NT} + \frac{k}{T}\right).
+F_{\text{disc}}[x] = \frac{1}{T} \sum_{k \in \mathbb{Z}} F\left(\frac{x}{NT} + \frac{k}{T}\right).
 $$</p>
 <p>This is the standard Poisson summation formula, and it holds in the biquaternion case with the same proof, because the kernel is the ordinary complex kernel in the direction $\rho$.</p>
 <h3 id="the-sampling-theorem">The Sampling Theorem</h3>
@@ -384,7 +384,7 @@ $$</p>
 <p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.</p>
 </li>
 <li>
-<p><strong>The support of the transform of solutions of $\tilde{\nabla}\tilde{F} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}\tilde{F} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+<p><strong>The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
 </li>
 <li>
 <p><strong>The Plancherel theorem for general functions.</strong> Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.</p>
@@ -410,7 +410,7 @@ $$</p>
 <p>The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem for the roots with $\rho^{*} = -\rho$. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.</p>
 <p>The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.</p>
 <p>The vanishing-norm issue is a genuinely biquaternionic feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
-<p>A two-unit kernel is recorded beside the one-unit kernel, one unit per variable. Its closed form carries the product of the two roots in its fourth term, it reduces to the one-unit kernel when the two roots coincide, it is invertible for every pair of roots, and its conjugate is the kernel with the two units exchanged. The transform of a finite positive measure has a quadratic form which is the integral of the biquaternion norm of a trigonometric sum: non-negative for real coefficients and a real root, which is the classical positive definiteness of a measure transform, and false for $\mathbb{B}$ at a single term with $A = i$, because $N(i) = -1$. The Euclidean pairing restores positivity and is not the norm of the algebra.</p>
+<p>A two-unit kernel is recorded beside the one-unit kernel, one unit per variable. Its closed form carries the product of the two roots in its fourth term, it reduces to the one-unit kernel when the two roots coincide, it is invertible for every pair of roots, and its conjugate is the kernel with the two units exchanged. The transform of a finite positive measure has a quadratic form which is the integral of the biquaternion norm of a trigonometric sum: non-negative for real coefficients and a real root, which is the classical positive definiteness of a measure transform, and false for $\mathbb{B}$ at a single term with $A = i$, because $\langle i\rangle_{\natural} = -1$. The Euclidean pairing restores positivity and is not the norm of the algebra.</p>
 <p>The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -451,18 +451,18 @@ $$</p>
 </tr>
 <tr>
 <td>$K = W_1W_2$</td>
-<td>Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $K(\tilde{Q},\omega)^{-1} = W_2(Q_2,-\omega_2)W_1(Q_1,-\omega_1)$</td>
+<td>Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_2,-\omega_2)W_1(Q_1,-\omega_1)$</td>
 </tr>
 <tr>
 <td>$\mu$, $G(\omega) = \int \chi_\omega \, d\mu$</td>
-<td>Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int N(Z) \, d\mu$ for central coefficients</td>
+<td>Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int \langle Z\rangle_{\natural} \, d\mu$ for central coefficients</td>
 </tr>
 <tr>
 <td>$\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
 <td>Vector part of a biquaternion</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$</td>
+<td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
 <td>Biquaternion norm; it vanishes on the zero divisors</td>
 </tr>
 <tr>

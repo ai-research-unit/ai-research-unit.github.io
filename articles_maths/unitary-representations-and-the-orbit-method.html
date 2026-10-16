@@ -85,9 +85,9 @@ $$</p>
 $$</p>
 <p>is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\xi$ and not on the polarisation, and the assignment $\mathcal{O}\mapsto\pi_\xi$ is a bijection from the coadjoint orbits onto the unitary dual $\widehat{G}$.</p>
 <p><em>Proof (sketch).</em> The irreducibility is proved by computing the commutant with the theory of the induced representations and the nilpotency, which makes the orbit method exact; the independence of the polarisation is the theorem that two polarisations of the same functional give equivalent representations; the surjectivity and the injectivity of the assignment are the Kirillov orbit bijection. The complete proof is in the references.</p>
-<p><strong>Theorem (the character formula).</strong> For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $\hat f(\xi) = \int_{\mathrm{G}}f(X)e^{-2\pi i\langle\xi,X\rangle}\,dX$ on the algebra,</p>
+<p><strong>Theorem (the character formula).</strong> For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $(\mathcal F f)(\xi) = \int_{\mathrm{G}}f(X)\exp(-2\pi i\langle\xi,X\rangle)\,dX$ on the algebra,</p>
 <p>$$
-\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
+\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}(\mathcal F f)(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
 $$</p>
 <p>where $\beta$ is the Liouville measure of the symplectic form on the orbit and $2n$ is its dimension; equivalently the character of $\pi_\xi$ is the Fourier transform of the invariant measure on the orbit.</p>
 <p><em>Proof (sketch).</em> Both sides are invariant distributions, they agree on the Zariski-dense set of the functionals with a polarisation of a fixed type, and the agreement extends by continuity; the proof is the computation of the character on the orbit through the Fourier transform, and it is in the references.</p>
@@ -171,7 +171,7 @@ $$</p>
 <td>the representation of the orbit</td>
 </tr>
 <tr>
-<td>$\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f\,d\beta/(2\pi)^n$</td>
+<td>$\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\mathcal F f\,d\beta/(2\pi)^n$</td>
 <td>the Kirillov character formula</td>
 </tr>
 <tr>

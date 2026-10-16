@@ -132,15 +132,15 @@ $$</p>
 <p>The passage from contact geometry to symplectic geometry is the <strong>symplectisation</strong>.</p>
 <p><strong>Definition.</strong> Let $(M, \alpha)$ be a cooriented contact manifold of dimension $2n+1$. The <strong>symplectisation</strong> is the manifold $M\times\mathbb{R}$ with coordinate $t$ in the second factor and the $2$-form</p>
 <p>$$
-\omega = d(e^t\alpha) = e^t\,(dt\wedge\alpha + d\alpha).
+\omega = d(\exp(t)\alpha) = \exp(t)\,(dt\wedge\alpha + d\alpha).
 $$</p>
-<p><strong>Proposition.</strong> The form $\omega = d(e^t\alpha)$ is symplectic on $M\times\mathbb{R}$.</p>
+<p><strong>Proposition.</strong> The form $\omega = d(\exp(t)\alpha)$ is symplectic on $M\times\mathbb{R}$.</p>
 <p><strong>Proof.</strong> It is closed because it is exact. For nondegeneracy, compute the top power:</p>
 <p>$$
-\omega^{\wedge(n+1)} = e^{(n+1)t}\,(dt\wedge\alpha + d\alpha)^{\wedge(n+1)} = (n+1)\,e^{(n+1)t}\,dt\wedge\alpha\wedge(d\alpha)^{\wedge n},
+\omega^{\wedge(n+1)} = \exp((n+1)t)\,(dt\wedge\alpha + d\alpha)^{\wedge(n+1)} = (n+1)\,\exp((n+1)t)\,dt\wedge\alpha\wedge(d\alpha)^{\wedge n},
 $$</p>
 <p>where all terms containing a repeated factor among $dt$, $\alpha$ and $d\alpha$ vanish except the displayed one: the only surviving term is the one with one factor $dt\wedge\alpha$ and $n$ factors of $d\alpha$, whose coefficient is $\binom{n+1}{1} = n+1$, and $\alpha\wedge(d\alpha)^{\wedge n}\neq 0$ by the contact condition. Hence the top power is nowhere vanishing and $\omega$ is nondegenerate.</p>
-<p><strong>Remark.</strong> The symplectisation is the precise sense in which a contact manifold is the boundary at infinity of a symplectic manifold: the level sets $M\times\{t\}$ are contact-type hypersurfaces, the restriction of $\omega$ to each is $e^t d\alpha$, and the contact form is recovered as the contraction of $\omega$ with a suitable transverse field. Conversely, a hypersurface in a symplectic manifold along which the symplectic form has this shape is said to be of <strong>contact type</strong>, and the contact geometry is the study of the boundary. Legendrian submanifolds of $M$ lift to <strong>Lagrangian</strong> submanifolds of the symplectisation by $L \mapsto L\times\mathbb{R}$, which is the geometric content of the correspondence: $\omega$ restricts to zero on $L\times\mathbb{R}$ because it restricts to zero on $L$ and $dt$ pairs with $\alpha$ only through the transverse direction.</p>
+<p><strong>Remark.</strong> The symplectisation is the precise sense in which a contact manifold is the boundary at infinity of a symplectic manifold: the level sets $M\times\{t\}$ are contact-type hypersurfaces, the restriction of $\omega$ to each is $\exp(t) d\alpha$, and the contact form is recovered as the contraction of $\omega$ with a suitable transverse field. Conversely, a hypersurface in a symplectic manifold along which the symplectic form has this shape is said to be of <strong>contact type</strong>, and the contact geometry is the study of the boundary. Legendrian submanifolds of $M$ lift to <strong>Lagrangian</strong> submanifolds of the symplectisation by $L \mapsto L\times\mathbb{R}$, which is the geometric content of the correspondence: $\omega$ restricts to zero on $L\times\mathbb{R}$ because it restricts to zero on $L$ and $dt$ pairs with $\alpha$ only through the transverse direction.</p>
 <p><strong>Example.</strong> The symplectisation of the standard contact sphere $S^{2n+1}$ is $\mathbb{C}^{n+1}\setminus\{0\}$ with the standard symplectic form, and the contact form is the restriction of the Liouville form to the spheres of each radius. The unit sphere is the boundary of the unit ball, which is a Stein doma, and the contact structure it inherits is the standard one. This is the model of a <strong>symplectic filling</strong>, and the existence and classification of fillings is a central problem.</p>
 <h2 id="contact-structures-from-complex-geometry">Contact Structures from Complex Geometry</h2>
 <p><strong>Definition.</strong> Let $X$ be a complex manifold of complex dimension $n+1$, let $\rho : X \to \mathbb{R}$ be a smooth function and let $\Sigma = \rho^{-1}(0)$ be a regular level set. The hypersurface $\Sigma$ is <strong>strictly pseudoconvex</strong> if the Levi form of $\rho$ is positive definite on the complex tangent space $T\Sigma\cap i\,T\Sigma$ at each point.</p>
@@ -150,7 +150,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>A contact manifold is a manifold of odd dimension $2n+1$ carrying a hyperplane field $\xi = \ker\alpha$ defined by a $1$-form $\alpha$ with $\alpha\wedge(d\alpha)^{\wedge n}\neq 0$. The field is maximally non-integrable: the integral manifolds of $\xi$ have dimension at most $n$, and the maximal ones are the Legendrian submanifolds. The contact structure is the field, not the form; a defining form is unique up to a nowhere vanishing factor $f$, under which $\alpha\wedge(d\alpha)^{\wedge n}$ scales by $f^{\,n+1}$, and a cooriented contact manifold is oriented by that volume form.</p>
 <p>The standard examples are $\mathbb{R}^{2n+1}$ with $\alpha_0 = dz + \sum_i x_i\,dy_i$, the sphere $S^{2n+1}$ with the restriction of the radial form, the spherical cotangent bundle $ST^*Q$ with the geodesic contact structure, and the jet space $J^1(N)$ with $\alpha = dz - \sum_i p_i\,dq^i$, in which the $1$-jets of functions are Legendrian. The Darboux theorem puts every contact form locally into the standard shape, and Gray's theorem shows that a deformation of contact forms on a closed manifold is realised by an isotopy; so a contact structure has no local invariants. Every contact form has a unique Reeb vector field $R_\alpha$ with $\alpha(R_\alpha) = 1$ and $\iota_{R_\alpha}d\alpha = 0$, transverse to the contact planes.</p>
-<p>Legendrian submanifolds are the isotropic submanifolds of dimension $n$, and a neighbourhood of a Legendrian is modelled on a neighbourhood of the zero section of a jet space. The symplectisation $M\times\mathbb{R}$ with $\omega = d(e^t\alpha)$ is a symplectic manifold whose level sets are contact-type hypersurfaces, and Legendrians lift to Lagrangians; conversely, a hypersurface of contact type in a symplectic manifold inherits a contact structure. Finally, a strictly pseudoconvex hypersurface in a complex manifold is contact, the unit sphere in $\mathbb{C}^{n+1}$ being the model, and the compatible metric structures are the Sasakian ones.</p>
+<p>Legendrian submanifolds are the isotropic submanifolds of dimension $n$, and a neighbourhood of a Legendrian is modelled on a neighbourhood of the zero section of a jet space. The symplectisation $M\times\mathbb{R}$ with $\omega = d(\exp(t)\alpha)$ is a symplectic manifold whose level sets are contact-type hypersurfaces, and Legendrians lift to Lagrangians; conversely, a hypersurface of contact type in a symplectic manifold inherits a contact structure. Finally, a strictly pseudoconvex hypersurface in a complex manifold is contact, the unit sphere in $\mathbb{C}^{n+1}$ being the model, and the compatible metric structures are the Sasakian ones.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -205,7 +205,7 @@ $$</p>
 <td>$TL\subseteq\xi$; isotropic of dimension $n$</td>
 </tr>
 <tr>
-<td>$M\times\mathbb{R}$, $\omega = d(e^t\alpha)$</td>
+<td>$M\times\mathbb{R}$, $\omega = d(\exp(t)\alpha)$</td>
 <td>Symplectisation; contact manifold as a contact-type boundary</td>
 </tr>
 <tr>

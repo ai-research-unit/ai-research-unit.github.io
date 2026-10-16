@@ -149,15 +149,15 @@ $$</p>
 $$</p>
 <p>is well defined and injective; its image is a closed smooth submanifold, and the map is an embedding. The image is the set of <strong>decomposable</strong> classes, characterised by the <strong>Plücker relations</strong>: for $1 \leq k \leq n$ and indices $i_1, \ldots, i_{k+1}$ and $j_1, \ldots, j_{k-1}$,</p>
 <p>$$
-\sum_{r=1}^{k+1}(-1)^r p_{i_1 \ldots \widehat{i_r} \ldots i_{k+1}}\, p_{i_r j_1 \ldots j_{k-1}} = 0,
+\sum_{r=1}^{k+1}(-1)^r n_{i_1 \ldots \widehat{i_r} \ldots i_{k+1}}\, n_{i_r j_1 \ldots j_{k-1}} = 0,
 $$</p>
-<p>where $p_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.</p>
+<p>where $n_{i_1\ldots i_k}$ are the coordinates of the class in the basis $e_{i_1}\wedge\cdots\wedge e_{i_k}$.</p>
 <p><strong>Proof sketch.</strong> Injectivity: $W$ is recovered from $[w_1\wedge\cdots\wedge w_k]$ as the set of $v$ with $v \wedge (w_1\wedge\cdots\wedge w_k) = 0$. Well definedness: a change of basis multiplies the wedge by a nonzero scalar, which is the projectivisation. The map is an injective immersion of the compact Grassmannian into the projective space, hence a closed embedding; the Plücker relations, obtained by expanding the identity $w_{k+1}\wedge w_1\wedge\cdots\wedge w_k = 0$ in coordinates, cut out the decomposable classes.</p>
-<p><strong>Example (lines in $\mathbb{P}^3$).</strong> For $k = 2$, $n = 4$ the Plücker vector has six coordinates $p_{ij}$, $i<j$, and there is a single Plücker relation</p>
+<p><strong>Example (lines in $\mathbb{P}^3$).</strong> For $k = 2$, $n = 4$ the Plücker vector has six coordinates $n_{ij}$, $i<j$, and there is a single Plücker relation</p>
 <p>$$
-p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0,
+n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0,
 $$</p>
-<p>which is the <strong>Klein quadric</strong>, a smooth quadric hypersurface in $\mathbb{RP}^5$. The Grassmannian $\mathrm{Gr}_2(\mathbb{R}^4)$ is therefore a four-dimensional quadric in $\mathbb{RP}^5$, the Klein quadric, whose two rulings are the two families of lines of $\mathbb{RP}^3$ and realise the Klein correspondence between the points of one projective three-space and the lines of another. The relation is verified by expanding the six minors of a $2 \times 4$ matrix: the identity $p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$ is the Laplace expansion of the determinant of a $2\times 2$ matrix with repeated rows. The projective theory of the quadric and of the correspondence is in the article <em>Projective Geometry</em>, written in parallel.</p>
+<p>which is the <strong>Klein quadric</strong>, a smooth quadric hypersurface in $\mathbb{RP}^5$. The Grassmannian $\mathrm{Gr}_2(\mathbb{R}^4)$ is therefore a four-dimensional quadric in $\mathbb{RP}^5$, the Klein quadric, whose two rulings are the two families of lines of $\mathbb{RP}^3$ and realise the Klein correspondence between the points of one projective three-space and the lines of another. The relation is verified by expanding the six minors of a $2 \times 4$ matrix: the identity $n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0$ is the Laplace expansion of the determinant of a $2\times 2$ matrix with repeated rows. The projective theory of the quadric and of the correspondence is in the article <em>Projective Geometry</em>, written in parallel.</p>
 <p><strong>Remark (complex and quaternionic analogues).</strong> The same construction with $\mathbb{C}$ or $\mathbb{H}$ in place of $\mathbb{R}$ gives the complex Grassmannian $\mathrm{Gr}_k(\mathbb{C}^n)$ and the quaternionic Grassmannian $\mathrm{Gr}_k(\mathbb{H}^n)$, of real dimensions $2k(n-k)$ and $4k(n-k)$, each a complex or quaternionic manifold and a symmetric space of compact type; the complex case carries the natural Kähler structure of the article <em>Kähler Geometry</em>, written in parallel, whose fundamental form and complex structure are defined there, and the complex Grassmannians are the simplest Kähler symmetric spaces. The real dimensions are computed from $\dim_{\mathbb{R}}\mathbb{K} = 1, 2, 4$ for $\mathbb{K} = \mathbb{R}, \mathbb{C}, \mathbb{H}$ and are $(\dim_{\mathbb{R}}\mathbb{K})k(n-k)$.</p>
 <h2 id="schubert-cells-and-the-cohomology">Schubert Cells and the Cohomology</h2>
 <h3 id="the-cell-decomposition">The Cell Decomposition</h3>
@@ -185,7 +185,7 @@ $$</p>
 \chi(\mathrm{Gr}_k(\mathbb{R}^n)) = \binom{n}{k}_{t=-1} = \begin{cases} 0, & n \text{ even and } k \text{ odd}, \\ \displaystyle\binom{\lfloor n/2\rfloor}{\lfloor k/2\rfloor}, & \text{otherwise}, \end{cases}
 $$</p>
 <p>and in particular $\chi(\mathbb{RP}^{n-1}) = 1$ for $n$ odd and $0$ for $n$ even.</p>
-<p><strong>Proof sketch.</strong> The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $q \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.</p>
+<p><strong>Proof sketch.</strong> The generating function $\sum_\lambda t^{|\lambda|}$, over the $k$-element subsets $\lambda$ of $\{1,\ldots,n\}$, is by definition the Gaussian binomial coefficient $\binom{n}{k}_t$, the generating function of the partitions fitting in a $k \times (n-k)$ box; the evaluation at $t = -1$ is the standard $m \to -1$ evaluation of the Gaussian binomial, which gives the stated case distinction. The projective-space case $k = 1$ is the alternating sum $1 - 1 + 1 - \cdots$ of $n$ cells of dimensions $0, 1, \ldots, n-1$.</p>
 <p><strong>Example.</strong> For $k = 2$, $n = 4$ the cells have dimensions $0, 1, 2, 2, 3, 4$ and $\chi = 1 - 1 + 2 - 1 + 1 = 2 = \binom{2}{1}$; the integral cohomology has $2$-torsion in degree $3$, so the integral Betti numbers are not the cell counts while the mod-$2$ Betti numbers are.</p>
 <p><strong>Remark (Schubert calculus).</strong> The intersection ring of the Grassmannian is the ring of symmetric polynomials modulo an ideal; the classes of the Schubert varieties form a basis, and the structure constants are the Littlewood–Richardson coefficients. This is the Schubert calculus, the intersection theory of the Grassmannian, and it belongs to the algebraic-geometric side of the corpus and is quoted here as standard; it is the reason the Grassmannian is the universal home of the enumerative problems of linear geometry.</p>
 <h2 id="the-classifying-space">The Classifying Space</h2>
@@ -196,7 +196,7 @@ $$</p>
 <p>the classifying space of rank-$k$ real vector bundles, and for a suitable topology every rank-$k$ real vector bundle over a paracompact base is the pullback of $\gamma_k$ along a classifying map unique up to homotopy.</p>
 <p><strong>Proof sketch.</strong> The tautological bundle over the limit Grassmannian is the universal bundle because the space of $k$-frames in $\mathbb{R}^\infty$ is contractible, a fact of the stable linear algebra; the classification theorem is the bundle theory of <em>Fibre Bundles, Connections and Curvature</em>.</p>
 <p><strong>Corollary.</strong> The characteristic classes of a real vector bundle are the pullbacks of the classes of the universal bundle on $BO(k)$; the Stiefel–Whitney and Pontryagin classes are computed by the cohomology of the Grassmannian, which is why the Schubert cells of the previous section are the computational device for the characteristic classes.</p>
-<p><strong>Theorem (Gauss map).</strong> Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The <strong>Gauss map</strong> $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(p) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.</p>
+<p><strong>Theorem (Gauss map).</strong> Let $M \subseteq \mathbb{R}^n$ be a submanifold of dimension $k$. The <strong>Gauss map</strong> $\nu : M \to \mathrm{Gr}_{n-k}(\mathbb{R}^n)$ sending a point to its normal subspace, $\nu(n) = (T_pM)^\perp$, is smooth, and the pullback of the tautological bundle along $\nu$ is the normal bundle of $M$ in $\mathbb{R}^n$, while the pullback of the complement bundle is the tangent bundle.</p>
 <p><strong>Proof.</strong> The tangent space varies smoothly with the point, so the normal subspace does too; the two pullback identifications are the definitions of the bundles involved.</p>
 <p><strong>Corollary.</strong> The Gauss map is the reason the Grassmannian is the natural home of the extrinsic geometry of submanifolds: the second fundamental form of <em>Riemannian Geometry</em> is the derivative of the Gauss map, and the curvature of a submanifold is computed from its Gauss image in the Grassmannian.</p>
 <h2 id="summary">Summary</h2>
@@ -253,11 +253,11 @@ $$</p>
 <td>Plücker embedding; image cut out by the Plücker relations</td>
 </tr>
 <tr>
-<td>$p_{i_1\ldots i_k}$</td>
+<td>$n_{i_1\ldots i_k}$</td>
 <td>Plücker coordinates in the basis of exterior monomials</td>
 </tr>
 <tr>
-<td>$p_{12}p_{34} - p_{13}p_{24} + p_{14}p_{23} = 0$</td>
+<td>$n_{12}n_{34} - n_{13}n_{24} + n_{14}n_{23} = 0$</td>
 <td>The Klein quadric, for $k=2$, $n=4$</td>
 </tr>
 <tr>

@@ -106,7 +106,7 @@ $$</p>
 S_1\subseteq S_p\subseteq S_q\subseteq K(H)\qquad(1\le p\le q<\infty),
 $$</p>
 <p>with $S_1$ the <strong>trace class</strong> and $S_2$ the <strong>Hilbert–Schmidt class</strong>.</p>
-<p><em>Proof.</em> The inclusion of the classes is the comparison of $\ell^p$ norms on the singular values; the ideal property follows because the singular values of $ATB$ are dominated by $\|A\|\,\|B\|$ times those of $T$ (a standard majorisation), and $(S_p)^*=S_p$ because $|T^*|$ and $|T|$ are unitarily equivalent and have the same singular values.</p>
+<p><em>Proof.</em> The inclusion of the classes is the comparison of $\ell^{n}$ norms on the singular values; the ideal property follows because the singular values of $ATB$ are dominated by $\|A\|\,\|B\|$ times those of $T$ (a standard majorisation), and $(S_p)^*=S_p$ because $|T^*|$ and $|T|$ are unitarily equivalent and have the same singular values.</p>
 <p><strong>Proposition (norms and Hölder).</strong> $\|\cdot\|_p$ is a norm on $S_p$ making it a Banach space, $\|T\|_\infty=\|T\|$ is the limit of $\|T\|_p$ as $p\to\infty$, and for $\frac1p+\frac1q=\frac1r$,</p>
 <p>$$
 \|ST\|_r\le\|S\|_p\|T\|_q .
@@ -116,7 +116,7 @@ $$</p>
 \langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*),
 $$</p>
 <p>under which $S_2(H)$ is a Hilbert space.</p>
-<p><em>Proof.</em> The triangle inequality for $\|\cdot\|_p$ is the majorisation form of the triangle inequality in $\ell^p$; the limiting statement is immediate from $s_n\to0$; Hölder's inequality for singular values gives the product estimate; the Hilbert–Schmidt inner product is linear in the first argument and conjugate-linear in the second by the properties of the trace.</p>
+<p><em>Proof.</em> The triangle inequality for $\|\cdot\|_p$ is the majorisation form of the triangle inequality in $\ell^{n}$; the limiting statement is immediate from $s_n\to0$; Hölder's inequality for singular values gives the product estimate; the Hilbert–Schmidt inner product is linear in the first argument and conjugate-linear in the second by the properties of the trace.</p>
 <p><strong>Theorem (trace and duality).</strong> For $T\in S_1(H)$ the series $\operatorname{tr}T=\sum_n\langle Te_n,e_n\rangle$ converges absolutely and is independent of the orthonormal basis; $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ for $S\in B(H)$, $T\in S_1(H)$; and the pairing $(S,T)\mapsto\operatorname{tr}(ST)$ identifies</p>
 <p>$$
 S_1(H)^*=B(H),\qquad K(H)^*=S_1(H),\qquad B(H)_*=S_1(H),
@@ -132,7 +132,7 @@ $$</p>
 $$</p>
 <p>is Hilbert–Schmidt on $L^2(X,\mu)$ with $\|T_k\|_{\mathrm{HS}}=\|k\|_2$ and $T_k^*=T_{\bar k}$ for the transposed kernel $\bar k(x,y)=\overline{k(y,x)}$; hence $T_k$ is compact, and it is self-adjoint exactly when $k(x,y)=\overline{k(y,x)}$ almost everywhere.</p>
 <h3 id="diagonal-operators">Diagonal Operators</h3>
-<p>On $\ell^2$ let $D_a e_n=a_n e_n$ with $a\in\ell^\infty$. Then $D_a$ is compact exactly when $a_n\to0$, in which case $s_n(D_a)$ is the non-increasing rearrangement of $|a_n|$, and $D_a\in S_p$ exactly when $(a_n)\in\ell^p$. So $S_1$ is the space of summable diagonals, $S_2$ of square-summable diagonals, and the modulus of a compact diagonal operator realises the absolute value of the symbol.</p>
+<p>On $\ell^2$ let $D_a e_n=a_n e_n$ with $a\in\ell^\infty$. Then $D_a$ is compact exactly when $a_n\to0$, in which case $s_n(D_a)$ is the non-increasing rearrangement of $|a_n|$, and $D_a\in S_p$ exactly when $(a_n)\in\ell^{n}$. So $S_1$ is the space of summable diagonals, $S_2$ of square-summable diagonals, and the modulus of a compact diagonal operator realises the absolute value of the symbol.</p>
 <h3 id="finite-rank">Finite Rank</h3>
 <p>In finite dimension every operator is compact, $K(H)=B(H)=S_1=S_2=F(H)$, the singular values are the eigenvalues of $|T|$, and $\|T\|_1=\operatorname{tr}|T|$ and $\|T\|_2$ are the trace and Frobenius norms of the matrix. The strict chain of the infinite-dimensional case collapses to a single class.</p>
 <h2 id="summary">Summary</h2>

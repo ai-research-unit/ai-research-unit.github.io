@@ -60,14 +60,14 @@
 <p>$$
 \vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$</p>
-<p>A rotation by angle $\theta$ about the unit axis $\hat u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{-1}$.</p>
+<p>A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{-1}$.</p>
 <h2 id="inertial-and-rotating-frames">Inertial and Rotating Frames</h2>
 <h3 id="the-rotor-of-the-frame">The Rotor of the Frame</h3>
-<p>Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\hat u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family</p>
+<p>Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family</p>
 <p>$$
-R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = \overline{R}(t) ,
+R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = \bar{R}(t) ,
 $$</p>
-<p>so that after a time $t$ the frame has turned by the angle $\Omega t$ about $\hat u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components</p>
+<p>so that after a time $t$ the frame has turned by the angle $\Omega t$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components</p>
 <p>$$
 \vec a_{\text{rot}}(t) = R^{-1}(t)\,\vec a_{\text{in}}\,R(t) .
 $$</p>
@@ -98,13 +98,13 @@ $$</p>
 <p>since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.</p>
 <h2 id="the-pendulum-in-the-rotating-frame">The Pendulum in the Rotating Frame</h2>
 <h3 id="the-geometry-of-the-local-frame">The Geometry of the Local Frame</h3>
-<p>Place the origin at the point of suspension, taken to be fixed in the rotating frame, and choose local axes with $\hat z$ along the local vertical (the outward radial direction), $\hat x$ pointing east and $\hat y$ pointing north. At latitude $\lambda$ the Earth's angular velocity has components</p>
+<p>Place the origin at the point of suspension, taken to be fixed in the rotating frame, and choose local axes with $\vec u_z$ along the local vertical (the outward radial direction), $\vec u_x$ pointing east and $\vec u_y$ pointing north. At latitude $\lambda$ the Earth's angular velocity has components</p>
 <p>$$
-\vec\Omega = \Omega\cos\lambda\,\hat y + \Omega\sin\lambda\,\hat z
+\vec\Omega = \Omega\cos\lambda\,\vec u_y + \Omega\sin\lambda\,\vec u_z
 $$</p>
 <p>in these axes: the component along the local vertical is $\Omega\sin\lambda$, and the component along north is $\Omega\cos\lambda$. Only the vertical component enters the precession to leading order. The horizontal component, and the centrifugal term that accompanies it, are of the same order in $\Omega$ as the Coriolis term that does the work; their effect on the precession rate is computed below and is of relative order $(\Omega\sin\lambda/\omega_0)^2$.</p>
 <h3 id="small-oscillations">Small Oscillations</h3>
-<p>For small horizontal displacements $\vec\rho = x\hat x + y\hat y$ the restoring force of the pendulum is $-m\omega_0^2\vec\rho$, with $\omega_0 = \sqrt{g/\ell}$ the pendulum frequency, and the equation of motion in the rotating frame is</p>
+<p>For small horizontal displacements $\vec\rho = x\vec u_x + y\vec u_y$ the restoring force of the pendulum is $-m\omega_0^2\vec\rho$, with $\omega_0 = \sqrt{g/\ell}$ the pendulum frequency, and the equation of motion in the rotating frame is</p>
 <p>$$
 \ddot{\vec\rho} = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\dot{\vec\rho} .
 $$</p>
@@ -118,18 +118,18 @@ $$</p>
 <p>$$
 \ddot z + 2i\Omega\sin\lambda\,\dot z + \omega_0^2 z = 0 .
 $$</p>
-<p>Writing $z(t) = e^{-i\Omega\sin\lambda\,t}\,w(t)$ removes the first-derivative term: $w$ satisfies $\ddot w + \omega^2 w = 0$ with</p>
+<p>Writing $z(t) = \exp(-i\Omega\sin\lambda\,t)\,w(t)$ removes the first-derivative term: $w$ satisfies $\ddot w + \omega^2 w = 0$ with</p>
 <p>$$
 \omega^2 = \omega_0^2 + \Omega^2\sin^2\lambda .
 $$</p>
 <p>Hence</p>
 <p>$$
-z(t) = e^{-i\Omega\sin\lambda\,t}\left(Ae^{i\omega t} + Be^{-i\omega t}\right),
+z(t) = \exp(-i\Omega\sin\lambda\,t)\left(A\exp(i\omega t) + B\exp(-i\omega t)\right),
 $$</p>
 <p>a fast oscillation of frequency $\omega$ whose <strong>envelope rotates at the rate $-\Omega\sin\lambda$</strong>. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\lambda$, that is, at the rate $\Omega\sin\lambda$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.</p>
 <p>For the retained equations the relation below is in fact an identity: $T$ is an exact period of the fast factor, so the envelope factor is the only thing that survives one period, and the numerical integration of the coupled equations reproduces it to machine precision. Integrating with $\omega_0 = 1$ and a representative $\Omega\sin\lambda = 0.457$ — chosen so that the envelope rotation is visible within a single period, and larger relative to the pendulum frequency than the Earth's by a factor of some $3\times10^3$ for a $67$-metre pendulum — the complex amplitude satisfies</p>
 <p>$$
-z(t + T) = e^{-i\Omega\sin\lambda\,T}z(t)
+z(t + T) = \exp(-i\Omega\sin\lambda\,T)z(t)
 $$</p>
 <p>to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\lambda\,T$. Over one sidereal day, $T_{\text{day}} = 2\pi/\Omega$, the accumulated precession is</p>
 <p>$$
@@ -139,7 +139,7 @@ $$</p>
 <h3 id="the-size-of-the-neglected-centrifugal-term">The Size of the Neglected Centrifugal Term</h3>
 <p>The retained equations omit the centrifugal force, which is of the same order in $\Omega$ as the Coriolis force that produces the precession. Its size is worth fixing, because the rate $\Omega\sin\lambda$ is often quoted without qualification and the neglected term is not merely a renormalization of the local vertical. In the local axes the horizontal projection of the centrifugal acceleration is</p>
 <p>$$
--\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = \Omega^2x\,\hat x + \Omega^2\sin^2\lambda\,y\,\hat y ,
+-\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = \Omega^2x\,\vec u_x + \Omega^2\sin^2\lambda\,y\,\vec u_y ,
 $$</p>
 <p>the east component being the full $\Omega^2\rho$ because the east direction is perpendicular to the Earth's axis, and the north component being reduced by $\sin^2\lambda$. Restoring it, the horizontal equations become</p>
 <p>$$
@@ -166,7 +166,7 @@ $$</p>
 <p>The derivation shows that the precession rate $-\Omega\sin\lambda$ is independent of the pendulum frequency $\omega_0$. The frequency appears only in the fast oscillation $\omega \approx \omega_0$; the envelope's rotation is fixed by the coupling. Reparametrizing the pendulum — changing its length, its mass or the local gravity — changes $\omega_0$ and leaves the precession untouched. This is the first indication that the angle is geometric: it depends on the angular velocity of the frame and on the latitude, that is, on the path of the pivot, and not on the dynamics of the bob.</p>
 <h2 id="the-geometric-meaning-geodesic-turning-and-holonomy">The Geometric Meaning: Geodesic Turning and Holonomy</h2>
 <h3 id="the-path-on-the-sphere">The Path on the Sphere</h3>
-<p>As the Earth rotates, the local vertical $\hat r$ at the laboratory traces a circle of latitude on the unit sphere of directions. Its colatitude is $\theta_0 = \frac{\pi}{2} - \lambda$, so its polar distance from the axis is $\sin\theta_0 = \cos\lambda$ and its height is $\cos\theta_0 = \sin\lambda$. The path is parametrized by the rotation angle $t$,</p>
+<p>As the Earth rotates, the local vertical $\vec u_r$ at the laboratory traces a circle of latitude on the unit sphere of directions. Its colatitude is $\theta_0 = \frac{\pi}{2} - \lambda$, so its polar distance from the axis is $\sin\theta_0 = \cos\lambda$ and its height is $\cos\theta_0 = \sin\lambda$. The path is parametrized by the rotation angle $t$,</p>
 <p>$$
 \boldsymbol\gamma(t) = \left(\sin\theta_0\cos t,\ \sin\theta_0\sin t,\ \cos\theta_0\right),
 $$</p>
@@ -176,7 +176,7 @@ $$</p>
 <p>$$
 \oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda .
 $$</p>
-<p>This was computed numerically by evaluating $\kappa_g = \hat u\cdot(\boldsymbol\gamma''\times\boldsymbol\gamma')/|\boldsymbol\gamma'|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\hat u$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.</p>
+<p>This was computed numerically by evaluating $\kappa_g = \vec u\cdot(\boldsymbol\gamma''\times\boldsymbol\gamma')/|\boldsymbol\gamma'|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\vec u$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.</p>
 <h3 id="gaussbonnet-and-the-solid-angle">Gauss–Bonnet and the Solid Angle</h3>
 <p>The Gauss–Bonnet theorem for the spherical cap bounded by the latitude circle states</p>
 <p>$$
@@ -201,7 +201,7 @@ $$</p>
 <h2 id="the-rotor-and-the-double-cover">The Rotor and the Double Cover</h2>
 <p>The rotating-frame transformation is implemented by the rotor $R(t)$ of the first section, and after one sidereal day the rotor has turned by the angle $2\pi$ about the Earth's axis:</p>
 <p>$$
-R(T_{\text{day}}) = \cos\pi + \sin\pi\,\hat u = -e_0 .
+R(T_{\text{day}}) = \cos\pi + \sin\pi\,\vec u = -e_0 .
 $$</p>
 <p>The rotor is therefore $-e_0$, not $e_0$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_0$ is the identity, however, since $(-e_0)\vec a(-e_0)^{-1} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction <strong>relative to the local frame</strong>, that is, about the local vertical, not the full rotation about the Earth's axis.</p>
 <p>This is worth a remark about the double cover. The lift of the one-day loop to $SU(2)$ is the path from $e_0$ to $-e_0$, a path that does not close; but the classical pendulum is described by vectors, on which the group acts through the adjoint representation, and the adjoint representation factors through $SO(3)$, where the loop does close. There is no observable spinor sign for a structureless pendulum, because a spinor sign is a statement about the action on a half-integer-spin state, and the bob carries spin zero. The geometric phase of the present article is an element of the rotation group; whether it lifts to one or the other element of the double cover is a question that has no physical content for a spinless classical system.</p>
@@ -210,7 +210,7 @@ $$</p>
 <p><strong>The classical analogy.</strong> For a slowly varying periodic classical system the angle conjugate to an adiabatic invariant accumulates a geometric part, the Hannay angle, in analogy with the quantum Berry phase. The Foucault pendulum is a mechanical realization of an anholonomy: the swing plane is the transported object, the latitude circle is the loop, and the precession is the geometric angle. The general theory of such angles belongs to the generalities of the framework rather than to this article, and the present treatment uses only the elementary spherical holonomy.</p>
 <p><strong>The quantum companion.</strong> The companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em> treats the geometric phase of a quantum state, where the phase is carried by a ray in Hilbert space and the loop is a loop in parameter space. The Foucault angle is not a phase of a state; it is a rotation of a classical frame. What the two share is the structure of a holonomy — a closed loop, a transport, and a net transformation that depends on the geometry of the loop — and the classical case is the one in which the transport is the ordinary parallel transport of a vector on a curved surface, with no state space and no phase factor.</p>
 <h2 id="summary">Summary</h2>
-<p>The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,</p>
+<p>The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,</p>
 <p>$$
 \vec F_{\text{Cor}} = -m[\vec\Omega,\dot{\vec\rho}], \qquad
 \vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]] .
@@ -223,7 +223,7 @@ $$</p>
 $$</p>
 <p>with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\lambda$,</p>
 <p>$$
-z(t) = e^{-i\Omega\sin\lambda\,t}\left(Ae^{i\omega t} + Be^{-i\omega t}\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\lambda ,
+z(t) = \exp(-i\Omega\sin\lambda\,t)\left(A\exp(i\omega t) + B\exp(-i\omega t)\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\lambda ,
 $$</p>
 <p>giving the Foucault angle $2\pi\sin\lambda$ per sidereal day, independent of $\omega_0$, of the mass and of the amplitude.</p>
 <p>The angle is geometric. The local vertical traces a circle of latitude with total geodesic turning</p>
@@ -266,11 +266,11 @@ $$</p>
 <td>Angular velocity of the rotating frame; real vector</td>
 </tr>
 <tr>
-<td>$\Omega = |\vec\Omega|$, $\hat u = \vec\Omega/\Omega$</td>
+<td>$\Omega = |\vec\Omega|$, $\vec u = \vec\Omega/\Omega$</td>
 <td>Angular speed; rotation axis</td>
 </tr>
 <tr>
-<td>$R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat u$</td>
+<td>$R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\vec u$</td>
 <td>Frame rotor; $\vec a_{\text{rot}} = R^{-1}\vec a_{\text{in}}R$</td>
 </tr>
 <tr>
@@ -290,7 +290,7 @@ $$</p>
 <td>Centrifugal force as a double commutator</td>
 </tr>
 <tr>
-<td>$\vec\rho = x\hat x + y\hat y$</td>
+<td>$\vec\rho = x\vec u_x + y\vec u_y$</td>
 <td>Horizontal displacement of the bob</td>
 </tr>
 <tr>
@@ -306,7 +306,7 @@ $$</p>
 <td>Complex horizontal coordinate</td>
 </tr>
 <tr>
-<td>$z(t) = e^{-i\Omega\sin\lambda\,t}(Ae^{i\omega t}+Be^{-i\omega t})$</td>
+<td>$z(t) = \exp(-i\Omega\sin\lambda\,t)(A\exp(i\omega t)+B\exp(-i\omega t))$</td>
 <td>Solution; envelope rotation $-\Omega\sin\lambda$</td>
 </tr>
 <tr>

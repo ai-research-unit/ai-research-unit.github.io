@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions"><strong>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article solves the equations $T^{2}=1$ and $T^{2}=T$ in the multiplication of the general plain algebra and reads the solutions. The <strong>roots of one</strong> are the four elements
+$$
+1,\quad -1,\quad j,\quad -j,
+$$
+and the <strong>idempotents</strong> are the four elements
+$$
+0,\quad 1,\quad \Pi_{1}=\tfrac12(1+j),\quad \Pi_{2}=\tfrac12(1-j).
+$$
+The two lists are exchanged by the <strong>halving map</strong> $T\mapsto\tfrac12(1+T)$, which sends a root of one to an idempotent and back; the two nontrivial idempotents are complementary and orthogonal, $\Pi_{1}+\Pi_{2}=1$ and $\Pi_{1}\Pi_{2}=0$, and each carries a <strong>projection</strong>, the map $T\mapsto\Pi_{i}T$, so that the algebra resolves as the sum of the two idempotent lines.</p>
+<p>The computation is short because the multiplication is componentwise in the idempotent coordinates: for $T=(q_1,q_2)$ one has $T^{2}=(q_1^{2},q_2^{2})$, so $T^{2}=1$ is the pair of complex equations $q_1^{2}=1$, $q_2^{2}=1$ and $T^{2}=T$ is the pair $q_1^{2}=q_1$, $q_2^{2}=q_2$. Every list of solutions is therefore a product of two complex lists, and the four figures come from the two solutions $\pm1$ and the two solutions $0,1$ of the complex equations.</p>
+<p><strong>The results.</strong> The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_{1},\Pi_{2}$, of which $\Pi_{1}$ and $\Pi_{2}$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $e$ carries the projection $P_{e}(T)=eT$, with $P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_{1}}P_{\Pi_{2}}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, below this article in this category. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_{1}^{\natural}=\Pi_{2}=\Pi_{1}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{i}}=\Pi_{i}$.</p>
+<p><strong>Boundaries.</strong> The algebra, its product and its structure as a direct product of two fields are <em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>, above this article in this category. The involutions and the idempotents' behaviour under them are <em>The Two Involutions and the Group of Involutions</em>, above this article. The zero divisors and the two lines are <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>, above this article; the annihilators are <em>Annihilators of the General Plain Algebra of the Reduced Biquaternions</em>, above this article; and the roots of zero and the nilpotents are <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra of the Reduced Biquaternions</em>, below this article. The Peirce decomposition into the ideals the idempotents carry is <em>Ideals and Peirce Decomposition</em>, below this article in this category.</p>
+<h2 id="the-roots-of-one">The Roots of One</h2>
+<h3 id="the-equation-and-the-four-roots">The Equation and the Four Roots</h3>
+<p><strong>The equation $T^{2}=1$ has exactly four solutions: $1$, $-1$, $j$ and $-j$.</strong></p>
+<p><strong>Theorem (the roots of one).</strong> The solutions of $T^{2}=1$ in the multiplication are
+$$
+T=1,\qquad T=-1,\qquad T=j,\qquad T=-j,
+$$
+and there are no others.</p>
+<p><em>Proof.</em> In the idempotent coordinates $T=(q_1,q_2)$ with $q_1=A+B$ and $q_2=A-B$, the product is componentwise, so $T^{2}=(q_1^{2},q_2^{2})$ (<em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em>). The equation $T^{2}=1$ is the pair $q_1^{2}=1$ and $q_2^{2}=1$; a complex number has the two square roots of $1$, namely $\pm1$, so $q_1,q_2\in\{1,-1\}$. The four pairs $(q_1,q_2)$ give, by $A=\tfrac12(q_1+q_2)$ and $B=\tfrac12(q_1-q_2)$,
+$$
+(q_1,q_2)=(1,1)\to T=1,\quad (1,-1)\to T=j,\quad (-1,1)\to T=-j,\quad (-1,-1)\to T=-1 .
+$$</p>
+<p><strong>Corollary (the roots of one in the real basis).</strong> In the real coordinates the roots are $1=(1,0,0,0)$, $-1=(-1,0,0,0)$, $j=(0,0,1,0)$ and $-j=(0,0,-1,0)$; all four lie in the real subalgebra $\mathbb{R}\{1,j\}$.</p>
+<p><em>Proof.</em> The four elements are $\pm1$ and $\pm j$, read in the real basis; both $A$ and $B$ are real at each of them.</p>
+<p><strong>Remark (the roots of $-1$ are different).</strong> The equation $T^{2}=-1$ has the four solutions $\pm i$ and $\pm ij$, the roots of $-1$ of <em>Conventions in Mathematics</em>, §<em>The Roots</em>: they are the roots of one multiplied by $i$, and they lie in the translate $i\mathbb{R}\{1,j\}$. The roots of one are not the roots of $-1$, and the distinction is stated here because the two families are both four.</p>
+<h3 id="the-group-of-the-roots">The Group of the Roots</h3>
+<p><strong>The four roots of one form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication.</strong></p>
+<p><strong>Theorem.</strong> The set $\{1,-1,j,-j\}$ is closed under the multiplication, and it is a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$; its non-identity elements are the three involutions $-1$, $j$ and $-j$, and the product of any two distinct non-identity elements is the third.</p>
+<p><em>Proof.</em> The products are read from $j^{2}=1$ and $(-1)^{2}=1$:
+$$
+(-1)j=-j,\qquad (-1)(-j)=j,\qquad j(-j)=-j^{2}=-1,
+$$
+so the set is closed, and $1$ is the identity; every element is its own inverse. A group of four elements with every element of order two is $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$.</p>
+<p><strong>Corollary (the two lists are distinct).</strong> The roots of one and the idempotents meet in the single element $1$; the halving map of §<em>The Halving Map</em> is a bijection between the two lists, and it is not the identity.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<h3 id="the-idempotent-equation-and-the-four-idempotents">The Idempotent Equation and the Four Idempotents</h3>
+<p><strong>The equation $T^{2}=T$ has exactly four solutions: $0$, $1$, $\Pi_{1}$ and $\Pi_{2}$.</strong></p>
+<p><strong>Definition.</strong> An <strong>idempotent</strong> is a solution of $T^{2}=T$; the <strong>nontrivial idempotents</strong> are the idempotents different from $0$ and $1$.</p>
+<p><strong>Theorem (the idempotents).</strong> The solutions of $T^{2}=T$ are
+$$
+T=0,\qquad T=1,\qquad T=\Pi_{1}=\tfrac12(1+j),\qquad T=\Pi_{2}=\tfrac12(1-j),
+$$
+and there are no others.</p>
+<p><em>Proof.</em> In the idempotent coordinates the equation is the pair $q_1^{2}=q_1$ and $q_2^{2}=q_2$; a complex number satisfies $z^{2}=z$ iff $z=0$ or $z=1$. The four pairs $(q_1,q_2)$ give, by $A=\tfrac12(q_1+q_2)$ and $B=\tfrac12(q_1-q_2)$,
+$$
+(0,0)\to T=0,\quad (1,1)\to T=1,\quad (1,0)\to T=\Pi_{1},\quad (0,1)\to T=\Pi_{2}.
+$$</p>
+<h3 id="the-two-nontrivial-idempotents">The Two Nontrivial Idempotents</h3>
+<p><strong>The two nontrivial idempotents are complementary, orthogonal and zero divisors, and they are the generators of the two lines.</strong></p>
+<p><strong>Theorem (complementarity and orthogonality).</strong> The two nontrivial idempotents satisfy
+$$
+\Pi_{1}^{2}=\Pi_{1},\qquad \Pi_{2}^{2}=\Pi_{2},\qquad \Pi_{1}\Pi_{2}=0,\qquad \Pi_{1}+\Pi_{2}=1 .
+$$</p>
+<p><em>Proof.</em> Read in the idempotent coordinates, $\Pi_{1}=(1,0)$ and $\Pi_{2}=(0,1)$, so the four relations are the componentwise relations in $\mathbb{C}\oplus\mathbb{C}$; equivalently, the direct computation of <em>Reduced Biquaternion Space</em>. The orthogonality $\Pi_{1}\Pi_{2}=0$ makes each a <strong>zero divisor</strong>, and the two lines they generate are the null cone of <em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p><strong>Corollary (the idempotents and the roots of one).</strong> The two nontrivial idempotents are $\Pi_{1}=\tfrac12(1+j)$ and $\Pi_{2}=\tfrac12(1-j)$, the halves of the sum and the difference of the identity and the root $j$ of one.</p>
+<p><em>Proof.</em> The two displays are the definitions; the root of one used is $j$, since $j^{2}=1$ is what makes $\Pi_{i}^{2}=\Pi_{i}$.</p>
+<h2 id="the-projections">The Projections</h2>
+<h3 id="the-projection-onto-an-idempotent-line">The Projection onto an Idempotent Line</h3>
+<p><strong>Each idempotent $e$ carries the projection $P_{e}(T)=eT$, the orthogonal projection onto the line $\mathbb{C}e$ along the other line.</strong></p>
+<p><strong>Definition.</strong> For an idempotent $e$ of the multiplication, the <strong>projection</strong> it carries is
+$$
+P_{e}(T)=eT.
+$$</p>
+<p><strong>Theorem (the projections are projections).</strong> For $e=\Pi_{1}$ and $e=\Pi_{2}$,
+$$
+P_{e}^{2}=P_{e},\qquad P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id},\qquad P_{\Pi_{1}}P_{\Pi_{2}}=0=P_{\Pi_{2}}P_{\Pi_{1}}.
+$$</p>
+<p><em>Proof.</em> $P_{e}^{2}(T)=e(eT)=e^{2}T=eT$; the sum is $(\Pi_{1}+\Pi_{2})T=1\,T=T$; and the product is $\Pi_{1}\Pi_{2}T=0$. The identity $P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id}$ is the <strong>resolution of the identity</strong>, and the two projections are the Peirce projections of the algebra.</p>
+<p><strong>Proposition (the explicit projections).</strong> For $T=C+Dj$,
+$$
+P_{\Pi_{1}}(T)=(C+D)\Pi_{1},\qquad P_{\Pi_{2}}(T)=(C-D)\Pi_{2},
+$$
+so the image of $P_{\Pi_{1}}$ is the first idempotent line and the image of $P_{\Pi_{2}}$ the second.</p>
+<p><em>Proof.</em> $\Pi_{1}T=\Pi_{1}(C+Dj)=C\Pi_{1}+D\Pi_{1}j$; and $\Pi_{1}j=\tfrac12(1+j)j=\tfrac12(j+1)=\Pi_{1}$, so $\Pi_{1}T=(C+D)\Pi_{1}$. The same for $\Pi_{2}$, using $\Pi_{2}j=-\Pi_{2}$.</p>
+<h3 id="the-resolution-of-the-identity">The Resolution of the Identity</h3>
+<p><strong>The algebra is the direct sum of the two images, and the resolution of the identity is the decomposition of every element into its two idempotent coordinates.</strong></p>
+<p><strong>Theorem (the direct sum).</strong> The algebra is the direct sum of the two images,
+$$
+\mathbb{B}_{\mathrm{r}}=\operatorname{im}P_{\Pi_{1}}\oplus\operatorname{im}P_{\Pi_{2}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2},
+$$
+and every element has the unique decomposition $T=P_{\Pi_{1}}(T)+P_{\Pi_{2}}(T)$.</p>
+<p><em>Proof.</em> $P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id}$ gives the decomposition, and $P_{\Pi_{1}}P_{\Pi_{2}}=0$ gives its uniqueness; the images are the two lines, which meet only at the origin (<em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em>). The decomposition of a general element reads $T=(A+B)\Pi_{1}+(A-B)\Pi_{2}$ (<em>Reduced Biquaternion Space</em>).</p>
+<p><strong>Remark (the Peirce decomposition).</strong> The projections and the lines they carry are the <strong>Peirce</strong> data of the two idempotents; the spaces in the general Peirce decomposition of a pair of idempotents, the four subspaces $e\mathbb{B}e$, $e\mathbb{B}(1-e)$, $(1-e)\mathbb{B}e$ and $(1-e)\mathbb{B}(1-e)$, are <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>, below this article in this category; here only the two projections and the two lines they carry are read.</p>
+<h2 id="the-idempotents-under-the-involutions">The Idempotents Under the Involutions</h2>
+<p><strong>The natural sign and the star both exchange the two nontrivial idempotents, and only the bar fixes every idempotent.</strong></p>
+<p><strong>Theorem.</strong> $\Pi_{1}^{\natural}=\Pi_{2}=\Pi_{1}^{*}$, $\Pi_{2}^{\natural}=\Pi_{1}=\Pi_{2}^{*}$, and $\overline{\Pi_{i}}=\Pi_{i}$; the flat sends each idempotent to the negative of the other, $\Pi_{1}^{\flat}=-\Pi_{2}$ and $\Pi_{2}^{\flat}=-\Pi_{1}$, which is not an idempotent.</p>
+<p><em>Proof.</em> $\Pi_{1}^{\natural}=\tfrac12(1+j)^{\natural}=\tfrac12(1-j)=\Pi_{2}$, and $\Pi_{2}^{\natural}=\Pi_{1}$ (<em>The Two Involutions and the Group of Involutions</em>); the bar conjugates the coefficients of $\Pi_{i}=\tfrac12\pm\tfrac12 j$, which are real, so it fixes $\Pi_{i}$; the star is $\bar{\cdot}\circ{}^{\natural}$, so $\Pi_{1}^{*}=\overline{\Pi_{1}^{\natural}}=\overline{\Pi_{2}}=\Pi_{2}$ and $\Pi_{2}^{*}=\Pi_{1}$, the star exchanging the two as the natural sign does. The flat is $-{}^{*}$, so it sends $\Pi_{i}$ to the negative of the other idempotent.</p>
+<p><strong>Corollary (the involution swaps the two lines).</strong> The natural sign restricts to a $\mathbb{C}$-linear exchange of the two idempotent lines, $\mathbb{C}\Pi_{1}\leftrightarrow\mathbb{C}\Pi_{2}$, and the two lines are therefore conjugate under the intrinsic conjugate.</p>
+<h2 id="the-halving-map">The Halving Map</h2>
+<p><strong>The map $T\mapsto\tfrac12(1+T)$ sends the roots of one bijectively to the idempotents, and its inverse on the idempotents is $e\mapsto 2e-1$.</strong></p>
+<p><strong>Theorem (the halving map).</strong> The map
+$$
+H(T)=\tfrac12(1+T)
+$$
+restricts to a bijection from the roots of one $\{1,-1,j,-j\}$ onto the idempotents $\{0,1,\Pi_{1},\Pi_{2}\}$, with
+$$
+H(1)=1,\qquad H(-1)=0,\qquad H(j)=\Pi_{1},\qquad H(-j)=\Pi_{2},
+$$
+and the inverse on the idempotents is $e\mapsto 2e-1$.</p>
+<p><em>Proof.</em> The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_{1}$, $\tfrac12(1-j)=\Pi_{2}$. If $T^{2}=1$ then $H(T)^{2}=\tfrac14(1+2T+T^{2})=\tfrac14(2+2T)=H(T)$, so $H$ maps roots of one into idempotents; if $e^{2}=e$ then $2e-1$ has $(2e-1)^{2}=4e^{2}-4e+1=1$, so $2e-1$ is a root of one; and the two maps are inverse, since $H(2e-1)=\tfrac12(1+2e-1)=e$.</p>
+<p><strong>Remark (the classical form of the correspondence).</strong> The correspondence between the roots of one and the idempotents by halving is the classical correspondence between an involution and the projection it carries; here it reads the two nontrivial idempotents as the halves of the sum and the difference of the identity and the two nontrivial roots $j$ and $-j$.</p>
+<h2 id="summary">Summary</h2>
+<p>The roots of one of the general plain algebra are the four elements
+$$
+1,\quad -1,\quad j,\quad -j,
+$$
+and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication; they all lie in the real subalgebra $\mathbb{R}\{1,j\}$. The idempotents are the four elements
+$$
+0,\quad 1,\quad \Pi_{1}=\tfrac12(1+j),\quad \Pi_{2}=\tfrac12(1-j),
+$$
+solutions of $T^{2}=T$, and the two nontrivial ones are complementary, orthogonal and zero divisors,
+$$
+\Pi_{1}^{2}=\Pi_{1},\quad \Pi_{2}^{2}=\Pi_{2},\quad \Pi_{1}\Pi_{2}=0,\quad \Pi_{1}+\Pi_{2}=1 .
+$$</p>
+<p>Each idempotent $e$ carries the projection $P_{e}(T)=eT$, with $P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_{1}}P_{\Pi_{2}}=0$; the explicit projections are $P_{\Pi_{1}}(C+Dj)=(C+D)\Pi_{1}$ and $P_{\Pi_{2}}(C+Dj)=(C-D)\Pi_{2}$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_{1}^{\natural}=\Pi_{2}=\Pi_{1}^{*}$ and $\Pi_{2}^{\natural}=\Pi_{1}=\Pi_{2}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{i}}=\Pi_{i}$. The <strong>halving map</strong> $H(T)=\tfrac12(1+T)$ is a bijection from the roots of one onto the idempotents, with inverse $e\mapsto2e-1$, and it sends $-1$ to $0$, $j$ to $\Pi_{1}$ and $-j$ to $\Pi_{2}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1,-1,j,-j$</td>
+<td>the four roots of one, a group $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$</td>
+</tr>
+<tr>
+<td>$0,1,\Pi_{1},\Pi_{2}$</td>
+<td>the four idempotents</td>
+</tr>
+<tr>
+<td>$\Pi_{1,2}=\tfrac12(1\pm j)$</td>
+<td>the two nontrivial idempotents</td>
+</tr>
+<tr>
+<td>$P_{e}(T)=eT$</td>
+<td>the projection carried by an idempotent</td>
+</tr>
+<tr>
+<td>$P_{\Pi_{1}}+P_{\Pi_{2}}=\mathrm{id}$</td>
+<td>the resolution of the identity</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$</td>
+<td>the direct sum, the Peirce lines</td>
+</tr>
+<tr>
+<td>$H(T)=\tfrac12(1+T)$</td>
+<td>the halving map from the roots of one to the idempotents</td>
+</tr>
+<tr>
+<td>$e\mapsto2e-1$</td>
+<td>the inverse halving map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), above this article in this category, for the algebra and the idempotent coordinates.</li>
+<li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), above this article, for the action of the four maps on the idempotents.</li>
+<li><em>Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), above this article, for the two lines the idempotents generate.</li>
+<li><em>Annihilators of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), above this article, for the annihilators of the idempotent lines.</li>
+<li><em>Square Roots of Zero and the Nilpotents of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article, for the companion equation $T^{2}=0$.</li>
+<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), below this article in this category, for the full Peirce decomposition.</li>
+<li><em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code>), the non-commutative counterpart, where the roots of one and the idempotents form larger families.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
