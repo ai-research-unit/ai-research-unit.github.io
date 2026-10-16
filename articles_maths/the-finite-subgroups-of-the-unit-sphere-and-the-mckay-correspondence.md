@@ -20,14 +20,14 @@ The binary tetrahedral group $2T$ is the group of units of the Hurwitz order, of
 
 ## The McKay Correspondence
 
-The **McKay correspondence** associates to each finite subgroup $\Gamma\subset Sp(1)$ a graph whose vertices are the irreducible representations of $\Gamma$ and whose edges are the tensoring by the two-dimensional defining representation. The resulting graph is an extended (affine) Dynkin diagram:
+The **McKay correspondence** associates to each finite subgroup $\Gamma\subset Sp(1)$ a graph whose vertices are the irreducible representations of $\Gamma$ and whose edges are the tensoring by the two-dimensional defining representation. The resulting graph is an extended (affine) Dynkin diagram, written here with the **affine superscript** $(1)$ so that the tilde stays the mark of an element of the algebra; the correspondence is
 
 $$
-\mathbb Z/n\leftrightarrow \tilde A_{n-1},\qquad
-2D_n\leftrightarrow \tilde D_{n+2},\qquad
-2T\leftrightarrow \tilde E_6,\qquad
-2O\leftrightarrow \tilde E_7,\qquad
-2I\leftrightarrow \tilde E_8 .
+\mathbb Z/n\leftrightarrow A_{n-1}^{(1)},\qquad
+2D_n\leftrightarrow D_{n+2}^{(1)},\qquad
+2T\leftrightarrow E_{6}^{(1)},\qquad
+2O\leftrightarrow E_{7}^{(1)},\qquad
+2I\leftrightarrow E_{8}^{(1)} .
 $$
 
 The correspondence is the bridge between the finite unit groups and the simply laced Lie algebras, and its Clifford and reflection-group lift — the finite reflection groups and their root systems — is stated in *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification* of Part II, cited and not restated here.
@@ -38,7 +38,7 @@ This article owns the geometric and finite-group reading of the unit groups: the
 
 ## Summary
 
-The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic groups, the binary dihedral groups and the three binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The binary tetrahedral group is the group of units of the Hurwitz order and its vertices are the regular $24$-cell, with the twelve rotations of $A_4$ its realisation in the real slice. The McKay correspondence assigns to each finite subgroup an affine Dynkin diagram, $\tilde A$, $\tilde D$ or $\tilde E$.
+The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic groups, the binary dihedral groups and the three binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The binary tetrahedral group is the group of units of the Hurwitz order and its vertices are the regular $24$-cell, with the twelve rotations of $A_4$ its realisation in the real slice. The McKay correspondence assigns to each finite subgroup an affine Dynkin diagram, $A^{(1)}$, $D^{(1)}$ or $E^{(1)}$, written with the affine superscript and not with a tilde.
 
 ## Summary of Notation
 
@@ -46,7 +46,7 @@ The finite subgroups of the unit sphere $S^3$ of the real slice are the cyclic g
 |---|---|
 | $S^3=Sp(1)$ | the unit sphere of the real slice |
 | $2T,2O,2I$ | the binary tetrahedral, octahedral and icosahedral groups, of orders $24$, $48$, $120$ |
-| $\tilde A,\tilde D,\tilde E$ | the affine Dynkin diagrams of the McKay correspondence |
+| $A^{(1)},D^{(1)},E^{(1)}$ | the affine Dynkin diagrams of the McKay correspondence, with the affine superscript |
 | the $24$-cell | the polytope whose vertices are the Hurwitz units |
 
 ## Further Reading

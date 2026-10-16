@@ -69,7 +69,7 @@ The comparison theorems translate a curvature bound into a statement about the g
 
 | Theorem | The comparison it makes | Introduced in |
 |---|---|---|
-| the comparison field $s_{\tilde K}(t)$ | the Jacobi field of the constant-curvature model, the standard of comparison | *Riemannian Geometry* |
+| the comparison field $s_{K_c}(t)$ | the Jacobi field of the constant-curvature model, the standard of comparison | *Riemannian Geometry* |
 | the Rauch comparison theorem | a curvature bound compares Jacobi fields and the exponential map with the model | *Riemannian Geometry* |
 | the Bishop–Gromov volume comparison | a Ricci bound compares the volumes of balls with the model | *Gromov–Hausdorff Convergence* |
 | the Cartan–Hadamard theorem | $K \leq 0$, complete and simply connected implies $\exp_p$ is a diffeomorphism | *Riemannian Geometry* |

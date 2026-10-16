@@ -6,7 +6,7 @@ The quaternion algebra carries a norm with integer values on certain lattices, a
 
 **Boundaries.** The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the group of units of the whole algebra and its topology are *The Quaternion Unit Group as a Topological Group*, above this article in this category; the unit sphere as a topological group is the same article.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The **quaternion form** is $N(\tilde q)=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
 
 ## The Quaternion Orders
 
@@ -46,7 +46,7 @@ $$
 
 the binary tetrahedral group of order twenty-four.
 
-*Proof.* An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/N(\tilde q)$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.
+*Proof.* An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.
 
 **Remark (the unit groups are finite, against the group of units of the algebra).** The group of units of the whole algebra, $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, is infinite and is *The Quaternion Unit Group as a Topological Group*, above this article in this category; the orders cut it down to the finite groups of the theorem. The two are different objects, and the group of units of the algebra is stated once, there.
 
@@ -80,7 +80,7 @@ The centre of $S^3$ is $\{\pm e_0\}$ by *The Quaternion Unit Group as a Topologi
 
 | family | $C_n$ | $2D_n$ | $2T$ | $2O$ | $2I$ |
 |---|---|---|---|---|---|
-| diagram | $\widetilde A_{n-1}$ | $\widetilde D_{n+2}$ | $\widetilde E_6$ | $\widetilde E_7$ | $\widetilde E_8$ |
+| diagram | $A_{{n-1}}^{(1)}$ | $D_{{n+2}}^{(1)}$ | $E_{6}^{(1)}$ | $E_{7}^{(1)}$ | $E_{8}^{(1)}$ |
 
 the correspondence assigning to a finite subgroup the affine Dynkin diagram of the components of the representation of its double by the fundamental representation.
 
@@ -97,7 +97,7 @@ The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ 
 | $\omega=\tfrac12(1+i+j+k)$, $\omega^{2}=\omega-1$ | the order-six element of $\mathcal H$ |
 | $Q_8$, $2T$ | the unit groups, of orders $8$ and $24$ |
 | $C_n$, $2D_n$, $2T$, $2O$, $2I$ | the finite subgroups of $S^3$ |
-| $\widetilde A_{n-1}$, $\widetilde D_{n+2}$, $\widetilde E_6$, $\widetilde E_7$, $\widetilde E_8$ | the McKay diagrams |
+| $A_{{n-1}}^{(1)}$, $D_{{n+2}}^{(1)}$, $E_{6}^{(1)}$, $E_{7}^{(1)}$, $E_{8}^{(1)}$ | the McKay diagrams |
 
 ## Further Reading
 

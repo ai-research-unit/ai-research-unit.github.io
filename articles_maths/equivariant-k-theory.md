@@ -47,7 +47,7 @@ The value at a point is the representation ring, and the whole theory is thus a 
 **Definition.** For $n \geq 0$ the higher equivariant $K$-groups are
 
 $$
-K_G^{-n}(X) = K_G^0(\Sigma^n X_+), \qquad K_G^{-n}(X,Y) = \tilde K_G^0(\Sigma^n (X/Y)),
+K_G^{-n}(X) = K_G^0(\Sigma^n X_+), \qquad K_G^{-n}(X,Y) = K_{G}^{0}{}_{\mathrm{red}}(\Sigma^n (X/Y)),
 $$
 
 with the reduced groups defined by the base point, and $K_G^{-n} = K_G^n$ by the periodicity below; the pair of functions $K_G^0$ and $K_G^1$ together with the connecting maps is an equivariant generalised cohomology theory on the category of compact $G$-spaces.

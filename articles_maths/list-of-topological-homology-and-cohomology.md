@@ -17,7 +17,7 @@ These theories attach a graded module to a space, a pair or a simplicial complex
 |---|---|---|
 | simplicial homology $H_n^\Delta(K;R)$ | an $R$-module, $R$ commutative with $1 \neq 0$; the chain groups are free of rank the number of $n$-simplices | *Simplicial and Singular Homology* |
 | singular homology $H_n(X;R)$ | an $R$-module; the $n$-chains are formal sums of continuous maps $\Delta_n \to X$ | *Simplicial and Singular Homology* |
-| reduced homology $\tilde H_n(X;R)$ | an $R$-module; the augmentation removes the degree-zero class of a point | *Simplicial and Singular Homology* |
+| reduced homology $H_{n,\mathrm{red}}(X;R)$ | an $R$-module; the augmentation removes the degree-zero class of a point | *Simplicial and Singular Homology* |
 | relative homology $H_n(X,A;R)$ | an $R$-module; the long exact sequence of a pair has connecting map $\partial$ | *Simplicial and Singular Homology* |
 | cellular homology $H_n^{\mathrm{CW}}(X;R)$ | an $R$-module; agrees with the singular theory on a CW complex | *CW Complexes and Cellular Approximation* |
 | singular cohomology $H^n(X;G)$ | an $R$-module $G$; contravariant in $X$, with the universal coefficient sequence and the Bockstein | *Cohomology and the Universal Coefficient Theorem* |
@@ -37,11 +37,11 @@ The theories of a manifold take their coefficients from the differential forms, 
 | de Rham cohomology $H^\bullet_{dR}(M)$ | real coefficients, through the differential forms; $H^\bullet_{dR}(M) \cong H^\bullet(M;\mathbb{R})$ for a smooth manifold | *Sheaves and the de Rham Complex* |
 | the de Rham complex as a resolution | the constant sheaf $\underline{\mathbb{R}}$; the Poincaré lemma makes the complex a resolution, so sheaf cohomology computes de Rham cohomology | *Sheaf Cohomology*; *Sheaves and the de Rham Complex* |
 | Stokes' theorem and the de Rham pairing | real coefficients; the integration of an $n$-form over an $n$-cycle | *Differential Forms and Stokes' Theorem* |
-| Dolbeault cohomology $H^{p,q}_{\bar\partial}(M)$ | complex coefficients; the $\bar\partial$-closed $(p,q)$-forms modulo the $\bar\partial$-exact ones | *Sheaves and the de Rham Complex*; *Several Complex Variables* |
-| the Hodge decomposition | complex coefficients on a compact Kähler manifold; $H^k(M;\mathbb{C}) = \bigoplus_{p+q=k}H^{p,q}$ | *Kähler Geometry*; *Sheaves and the de Rham Complex* |
+| Dolbeault cohomology $H^{n,m}_{\bar\partial}(M)$ | complex coefficients; the $\bar\partial$-closed $(n,m)$-forms modulo the $\bar\partial$-exact ones | *Sheaves and the de Rham Complex*; *Several Complex Variables* |
+| the Hodge decomposition | complex coefficients on a compact Kähler manifold; $H^k(M;\mathbb{C}) = \bigoplus_{n+m=k}H^{n,m}$ | *Kähler Geometry*; *Sheaves and the de Rham Complex* |
 | the Hodge theorem | real coefficients; each de Rham class has a unique harmonic representative | *Differential Forms and Stokes' Theorem*; *Kähler Geometry* |
 | the de Rham theorem | the comparison of the smooth theory with the singular one, over $\mathbb{R}$ | *Sheaves and the de Rham Complex* |
-| the Dolbeault theorem | the identification of $H^{p,q}_{\bar\partial}$ with the sheaf cohomology $H^q(M,\Omega^p)$ | *Sheaves and the de Rham Complex*; *Coherent Sheaves* |
+| the Dolbeault theorem | the identification of $H^{n,m}_{\bar\partial}$ with the sheaf cohomology $H^q(M,\Omega^n)$ | *Sheaves and the de Rham Complex*; *Coherent Sheaves* |
 
 ## The Sheaf and Grothendieck Theories
 
@@ -52,13 +52,13 @@ A sheaf cohomology theory takes its coefficients in a sheaf of abelian groups on
 | sheaf cohomology $H^i(X,\mathcal{F})$ | a sheaf of abelian groups $\mathcal{F}$; $H^0$ is the global sections, and flabby and soft resolutions compute | *Sheaf Cohomology* |
 | the comparison with singular cohomology | the constant sheaf $\underline{A}$ on a locally contractible paracompact space; $H^i(X,\underline{A}) \cong H^i(X;A)$ | *Sheaf Cohomology* |
 | cohomology with support | a family $\Phi$ of supports, in particular the compact supports $H^i_c$ | *Sheaf Cohomology* |
-| higher direct images and the Leray spectral sequence | a sheaf $\mathcal{F}$ and a map $f$; $E_2^{p,q} = H^p(Y,R^qf_*\mathcal{F})$ | *Sheaf Cohomology*; *The Leray–Serre Spectral Sequence* |
-| Čech cohomology $\check H^p(X,\mathcal{F})$ | a sheaf $\mathcal{F}$; agrees with sheaf cohomology over a good cover by the Leray theorem | *Čech Cohomology* |
+| higher direct images and the Leray spectral sequence | a sheaf $\mathcal{F}$ and a map $f$; $E_2^{n,m} = H^n(Y,R^qf_*\mathcal{F})$ | *Sheaf Cohomology*; *The Leray–Serre Spectral Sequence* |
+| Čech cohomology $\check H^n(X,\mathcal{F})$ | a sheaf $\mathcal{F}$; agrees with sheaf cohomology over a good cover by the Leray theorem | *Čech Cohomology* |
 | coherent sheaf cohomology $H^i(X,\mathcal{F})$ | a coherent $\mathcal{O}_X$-module on a scheme or a complex manifold | *Coherent Sheaves*; *Sheaves in Algebraic Geometry* |
 | Serre duality | a coherent sheaf on a smooth projective variety; $H^i(X,\mathcal{F}) \cong H^{n-i}(X,\mathcal{F}^\vee\otimes\omega_X)^\vee$ | *Coherent Sheaves*; *Sheaves in Algebraic Geometry* |
 | sheaf cohomology on a site, and étale cohomology | a sheaf on a Grothendieck site; the étale site of a scheme with coefficients in a sheaf of abelian groups | *Sheaves on Sites*; *Schemes* |
 | the derived functors of a left exact functor | an abelian category with enough injectives; $R^iF$ with the long exact sequence | *Derived Functors*; *Derived Categories* |
-| the Grothendieck spectral sequence | the composite of two derived functors; $E_2^{p,q} = R^pG(R^qF(A))$ | *Spectral Sequences* |
+| the Grothendieck spectral sequence | the composite of two derived functors; $E_2^{n,m} = R^pG(R^qF(A))$ | *Spectral Sequences* |
 | the Čech-to-derived spectral sequence | a sheaf and its presheaf of cohomology; converges to the sheaf cohomology | *Čech Cohomology* |
 
 ## The Algebraic Theories: Groups, Galois, Lie and Hochschild
@@ -94,7 +94,7 @@ A generalised cohomology theory is a graded functor on spaces that satisfies the
 | $K$-theory of operator algebras | the projection classes of a $\mathrm{C}^*$-algebra in $K_0$ and the unitaries in $K_1$ | *K-Theory of Operator Algebras* |
 | $KK$-theory | the Kasparov bimodules; the bivariant theory whose $KK(A,B)$ classifies the extensions | *KK-Theory* |
 | higher algebraic $K$-theory | the Quillen $K$-groups of an exact category; coefficients in the category of modules | *Higher Algebraic K-Theory* |
-| cohomology operations and the Steenrod algebra | $\mathbb{Z}/2$ and $\mathbb{Z}/p$ coefficients; the algebra of stable operations | *Classifying Spaces and Cohomology Operations* |
+| cohomology operations and the Steenrod algebra | $\mathbb{Z}/2$ and $\mathbb{Z}/n$ coefficients; the algebra of stable operations | *Classifying Spaces and Cohomology Operations* |
 | cobordism | the bordism classes of manifolds, with the Thom spectrum coefficients | *Cobordism and Surgery Theory* |
 | Floer homology | analytic coefficients, through the moduli spaces of trajectories; the homology of an infinite-dimensional Morse theory | *Floer Homology* |
 | Poincaré duality | a fundamental class over $\mathbb{Z}$ for a closed orientable manifold, and over $\mathbb{Z}/2$ in general | *Poincaré Duality* |
@@ -161,8 +161,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $H_n(X;R)$, $H^n(X;G)$ | singular homology and cohomology; the semicolon separates the space from the coefficient |
 | $H^i(X,\mathcal{F})$ | sheaf cohomology; the comma is the convention of *Sheaf Cohomology*, deliberately distinct from the semicolon |
-| $\check H^p$ | Čech cohomology, with the check |
-| $\tilde H_n$, $\tilde H^n$ | reduced homology and cohomology |
+| $\check H^n$ | Čech cohomology, with the check |
+| $H_{n,\mathrm{red}}$, $H^{n,\mathrm{red}}$ | reduced homology and cohomology |
 | $\partial$, $\delta$ | the boundary and the coboundary |
 | $\smile$, $\frown$ | the cup and cap products |
 | $\chi(X)$ | the Euler characteristic |

@@ -93,7 +93,7 @@ so the two sides agree on the generators and therefore on all chains. A chain ma
 
 The proof uses only that the deck action is by homeomorphisms and that lifts of faces are faces of lifts; no smoothness and no analytic structure is involved.
 
-**Corollary (reduced homology).** The transfer descends to reduced homology, $\tau_* : \tilde H_n(B;R) \to \tilde H_n(E;R)$, and the identities of the previous proposition hold with $\tilde H$ in place of $H$.
+**Corollary (reduced homology).** The transfer descends to reduced homology, $\tau_* : H_{n,\mathrm{red}}(B;R) \to H_{n,\mathrm{red}}(E;R)$, and the identities of the previous proposition hold with $H^{\mathrm{red}}$ in place of $H$.
 
 *Proof.* The augmentation $\varepsilon : C_0 \to R$ of *Simplicial and Singular Homology* satisfies $\varepsilon p_\# = \varepsilon$ on $C_0(E;R)$, so $\tau$ carries the augmented complex of the base to the augmented complex of the cover; the induced map is the reduced transfer.
 
@@ -213,7 +213,7 @@ The transfer of a regular finite covering $p : E \to B$ with deck group $G$ of o
 | $M^G$, $M_G$ | Invariant and coinvariant parts of a complex of $R[G]$-modules |
 | $\tau^*$ | Cohomology transfer, the dual of $\tau_*$; adjoint under the evaluation pairing |
 | $p_*$, $p^*$ | Projection on homology; pullback on cohomology |
-| $\tilde H_n$ | Reduced homology; the transfer preserves the augmentation |
+| $H_{n,\mathrm{red}}$ | Reduced homology; the transfer preserves the augmentation |
 | $p_*\tau_* = d$, $\tau_* p_* = \sum_g g_*$ | The two composite laws; the composition with the projection |
 | $\partial$ | Boundary operator and connecting homomorphism of a pair; $\partial\tau = \tau\partial$ |
 

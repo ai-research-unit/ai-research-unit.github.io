@@ -37,7 +37,7 @@ $$
 
 the **cocycles** modulo the **coboundaries**. In degree zero, $H^0(X;G)$ is the module of locally constant functions $X \to G$, so $H^0(X;G) \cong G$ for connected $X$ and $H^0(X;G) \cong G^{\pi_0(X)}$ in general.
 
-**Definition (reduced cohomology).** Dualising the augmented chain complex of *Simplicial and Singular Homology* gives the **reduced cohomology** $\tilde H^n(X;G)$, with $\tilde H^n = H^n$ for $n \geq 1$ and $\tilde H^0(X;G) \cong \operatorname{coker}\bigl(\varepsilon^* : G \to \operatorname{Hom}_R(C_0(X;R),G)\bigr)$; for path-connected $X$, $\tilde H^0(X;G) = 0$.
+**Definition (reduced cohomology).** Dualising the augmented chain complex of *Simplicial and Singular Homology* gives the **reduced cohomology** $H^{n,\mathrm{red}}(X;G)$, with $H^{n,\mathrm{red}} = H^n$ for $n \geq 1$ and $H^{0,\mathrm{red}}(X;G) \cong \operatorname{coker}\bigl(\varepsilon^* : G \to \operatorname{Hom}_R(C_0(X;R),G)\bigr)$; for path-connected $X$, $H^{0,\mathrm{red}}(X;G) = 0$.
 
 ### Functoriality and Covariance
 
@@ -234,7 +234,7 @@ The universal coefficient theorem expresses cohomology in terms of homology: the
 | $C^n(X;G) = \operatorname{Hom}_R(C_n(X;R),G)$ | Singular $n$-cochains |
 | $\delta^n = \partial_{n+1}^*$ | Coboundary; $\delta\delta = 0$ |
 | $H^n(X;G) = \ker\delta/\operatorname{im}\delta$ | Singular cohomology; cocycles modulo coboundaries |
-| $\tilde H^n(X;G)$ | Reduced cohomology |
+| $H^{n,\mathrm{red}}(X;G)$ | Reduced cohomology |
 | $H^n(X,A;G)$ | Relative cohomology |
 | $f^* : H^n(Y;G) \to H^n(X;G)$ | Contravariant pullback along $f : X \to Y$ |
 | $\alpha : H^n(X;G) \to \operatorname{Hom}_R(H_n(X;R),G)$ | Evaluation (Kronecker) map |

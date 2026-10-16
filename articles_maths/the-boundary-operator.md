@@ -40,7 +40,7 @@ The homology measures the failure of the operator to be as injective and as surj
 
 ### The Augmentation and the Reduced Complex
 
-**Definition.** An **augmentation** of a complex of non-negative degree is an $R$-linear map $\varepsilon : C_0 \to R$ with $\varepsilon \partial_1 = 0$; the **reduced complex** is obtained by replacing $C_0$ by $\ker\varepsilon$ and restricting $\partial_1$, and its homology is the **reduced homology** $\tilde H_*$.
+**Definition.** An **augmentation** of a complex of non-negative degree is an $R$-linear map $\varepsilon : C_0 \to R$ with $\varepsilon \partial_1 = 0$; the **reduced complex** is obtained by replacing $C_0$ by $\ker\varepsilon$ and restricting $\partial_1$, and its homology is the **reduced homology** $H_{*,\mathrm{red}}$.
 
 The augmentation is a map of complexes to the complex concentrated in degree zero, so it is an operator of the same kind as $\partial$, and the reduced complex is the kernel of that operator. The singular complex of a non-empty space carries the augmentation $\varepsilon(\sigma) = 1$ and the reduced complex of *Simplicial and Singular Homology* is this construction.
 
@@ -186,7 +186,7 @@ A **chain complex** is a graded module with a degree-lowering endomorphism $\par
 | $\partial$, $\partial_n$ | Boundary operator, of degree $-1$, with $\partial^2 = 0$ |
 | $Z_n = \ker\partial_n$, $B_n = \operatorname{im}\partial_{n+1}$ | Cycles and boundaries |
 | $H_n = Z_n/B_n$ | Homology of the complex |
-| $\varepsilon : C_0 \to R$ | Augmentation, $\varepsilon\partial_1 = 0$; reduced complex and $\tilde H_*$ |
+| $\varepsilon : C_0 \to R$ | Augmentation, $\varepsilon\partial_1 = 0$; reduced complex and $H_{*,\mathrm{red}}$ |
 | $C^*$, $\delta$ | Dual cochain complex and coboundary; $H^n$ |
 | chain map $f$, $H_n(f)$ | Operator commuting with $\partial$ and its induced map |
 | $P$, $\partial P + P\partial = g - f$ | Chain homotopy; equality of induced maps |

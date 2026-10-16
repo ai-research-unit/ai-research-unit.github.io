@@ -283,7 +283,7 @@ a polynomial algebra on generators of even degree; the classes $c_i$ are the uni
 
 **Example.** $BU(1) = \mathbb{C}P^\infty$ and $H^*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[c_1]$, matching the earlier example; $BO(1) = \mathbb{R}P^\infty$ and $H^*(\mathbb{R}P^\infty;\mathbb{F}_2) = \mathbb{F}_2[w_1]$; $BSO(2) = BU(1) = \mathbb{C}P^\infty$, with Euler class $c_1$; and the classifying space of the circle is $\mathbb{C}P^\infty = K(\mathbb{Z},2)$.
 
-**Remark.** The cohomology of the classifying spaces is where the characteristic classes of *Fibre Bundles, Connections and Curvature* and of *Characteristic Classes*, both earlier in this Part, live; the relation $H^*(BG)\otimes\mathbb{Q} \cong (S^W)$ gives the invariant-theoretic description of the classes, the Schubert basis gives their integral refinement, and the Grothendieck group of complex vector bundles on a space is $\tilde K^0(X) = [X, BU\times\mathbb{Z}]$, so that $BU$ is the representing space of the complex topological $K$-theory mentioned in *Stable Homotopy Theory* and treated in another article of this Part.
+**Remark.** The cohomology of the classifying spaces is where the characteristic classes of *Fibre Bundles, Connections and Curvature* and of *Characteristic Classes*, both earlier in this Part, live; the relation $H^*(BG)\otimes\mathbb{Q} \cong (S^W)$ gives the invariant-theoretic description of the classes, the Schubert basis gives their integral refinement, and the Grothendieck group of complex vector bundles on a space is $K^{0}_{\mathrm{red}}(X) = [X, BU\times\mathbb{Z}]$, so that $BU$ is the representing space of the complex topological $K$-theory mentioned in *Stable Homotopy Theory* and treated in another article of this Part.
 
 ## Summary
 

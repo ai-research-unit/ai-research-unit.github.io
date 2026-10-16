@@ -32,11 +32,11 @@ The curve is **rectifiable** when $\ell(\gamma) < \infty$, and a subset $E \subs
 
 **(c)** $\gamma$ is rectifiable if and only if it has a Lipschitz reparametrisation, if and only if the function $s(t) = \ell(\gamma|_{[a,t]})$ satisfies $s(t) - s(t') \geq d(\gamma(t), \gamma(t'))$ and is finite;
 
-**(d)** if $\gamma$ is rectifiable then $s$ is continuous, non-decreasing and finite, and $\gamma(t) = \tilde{\gamma}(s(t))$ for a unique map $\tilde{\gamma}$ on $[0, \ell(\gamma)]$, the **arc-length parametrisation**.
+**(d)** if $\gamma$ is rectifiable then $s$ is continuous, non-decreasing and finite, and $\gamma(t) = \gamma^{\mathrm{arc}}(s(t))$ for a unique map $\gamma^{\mathrm{arc}}$ on $[0, \ell(\gamma)]$, the **arc-length parametrisation**.
 
-**Proof sketch.** (a) is the additivity of the supremum over partitions and the triangle inequality. (b) a partition of $\gamma$ is approximated by the same partition of $\gamma_k$ for large $k$. (c) if $\ell(\gamma) < \infty$ then $d(\gamma(t),\gamma(t')) \leq \ell(\gamma|_{[t,t']}) = s(t') - s(t)$, so $s$ is monotone and $\tilde\gamma$ is $1$-Lipschitz; conversely a Lipschitz map has finite length bounded by the Lipschitz constant times the length of the interval. (d) $s$ is continuous because $d(\gamma(t),\gamma(t')) \to 0$ as $t \to t'$ by uniform continuity of $\gamma$ on the compact interval, and $s$ is onto $[0,\ell(\gamma)]$ by the intermediate value theorem; $\tilde\gamma$ is well defined because $s(t)=s(t')$ forces $\gamma(t)=\gamma(t')$.
+**Proof sketch.** (a) is the additivity of the supremum over partitions and the triangle inequality. (b) a partition of $\gamma$ is approximated by the same partition of $\gamma_k$ for large $k$. (c) if $\ell(\gamma) < \infty$ then $d(\gamma(t),\gamma(t')) \leq \ell(\gamma|_{[t,t']}) = s(t') - s(t)$, so $s$ is monotone and $\gamma^{\mathrm{arc}}$ is $1$-Lipschitz; conversely a Lipschitz map has finite length bounded by the Lipschitz constant times the length of the interval. (d) $s$ is continuous because $d(\gamma(t),\gamma(t')) \to 0$ as $t \to t'$ by uniform continuity of $\gamma$ on the compact interval, and $s$ is onto $[0,\ell(\gamma)]$ by the intermediate value theorem; $\gamma^{\mathrm{arc}}$ is well defined because $s(t)=s(t')$ forces $\gamma(t)=\gamma(t')$.
 
-**Example (smooth and piecewise smooth curves in $\mathbb{R}^n$).** If $\gamma$ is $C^1$ then $\tilde\gamma$ is $1$-Lipschitz, hence differentiable almost everywhere with $|\tilde\gamma'| \leq 1$ by Rademacher's theorem, and
+**Example (smooth and piecewise smooth curves in $\mathbb{R}^n$).** If $\gamma$ is $C^1$ then $\gamma^{\mathrm{arc}}$ is $1$-Lipschitz, hence differentiable almost everywhere with $|\gamma^{\mathrm{arc}}'| \leq 1$ by Rademacher's theorem, and
 
 $$
 \ell(\gamma) = \int_a^b |\gamma'(t)|\,dt .
@@ -46,13 +46,13 @@ The formula is the classical integral formula for arc length, and it is the case
 
 ## The Arc-Length Parametrisation
 
-**Theorem (unit speed, and the integral formula).** Let $\gamma$ be rectifiable and let $\tilde\gamma : [0,\ell] \to X$ be its arc-length parametrisation. Then $\tilde\gamma$ is $1$-Lipschitz with $\ell(\tilde\gamma|_{[0,s]}) = s$ for every $s$; if $X = \mathbb{R}^n$ then $|\tilde\gamma'(s)| = 1$ for almost every $s$, and more generally for a Lipschitz $\gamma$
+**Theorem (unit speed, and the integral formula).** Let $\gamma$ be rectifiable and let $\gamma^{\mathrm{arc}} : [0,\ell] \to X$ be its arc-length parametrisation. Then $\gamma^{\mathrm{arc}}$ is $1$-Lipschitz with $\ell(\gamma^{\mathrm{arc}}|_{[0,s]}) = s$ for every $s$; if $X = \mathbb{R}^n$ then $|\gamma^{\mathrm{arc}}'(s)| = 1$ for almost every $s$, and more generally for a Lipschitz $\gamma$
 
 $$
 \ell(\gamma) = \int_a^b |\gamma'(t)|\,dt .
 $$
 
-**Proof sketch.** By construction $\ell(\tilde\gamma|_{[0,s]}) = s$, so the length grows at unit rate; in $\mathbb{R}^n$ the function $s \mapsto \tilde\gamma(s)$ is Lipschitz with $|\tilde\gamma'| \le 1$ almost everywhere, and if $|\tilde\gamma'| < 1$ on a set of positive measure then the length of the restriction would be strictly less than the parameter increment, a contradiction; the general formula follows by reparametrising $\gamma$ by $s$.
+**Proof sketch.** By construction $\ell(\gamma^{\mathrm{arc}}|_{[0,s]}) = s$, so the length grows at unit rate; in $\mathbb{R}^n$ the function $s \mapsto \gamma^{\mathrm{arc}}(s)$ is Lipschitz with $|\gamma^{\mathrm{arc}}'| \le 1$ almost everywhere, and if $|\gamma^{\mathrm{arc}}'| < 1$ on a set of positive measure then the length of the restriction would be strictly less than the parameter increment, a contradiction; the general formula follows by reparametrising $\gamma$ by $s$.
 
 The arc-length parametrisation is therefore the **normalisation** of a rectifiable curve: it is the unique reparametrisation that traverses the curve at unit speed almost everywhere, and it makes the measure-theoretic and the geometric notions of length coincide. Its existence is the content of rectifiability, and it is the reason that rectifiable curves behave like intervals and not like fractals.
 
@@ -170,7 +170,7 @@ A curve in a metric space has a length, the supremum of the lengths of the inscr
 |---|---|
 | $\gamma$, $\ell(\gamma)$ | Curve, its length as a supremum over inscribed polygonal arcs |
 | Rectifiable | Finite length; equivalently a Lipschitz reparametrisation exists |
-| $s(t)$, $\tilde\gamma$ | Arc-length function; the arc-length parametrisation, of unit speed |
+| $s(t)$, $\gamma^{\mathrm{arc}}$ | Arc-length function; the arc-length parametrisation, of unit speed |
 | $\mathcal{H}^1(E)$, $\mathcal{H}^s(E)$ | Cover-defined one- and $s$-dimensional content of *Fractal Geometry* |
 | Approximate tangent line | Tangent up to an $\mathcal{H}^1$-null set in the limit of the blow-ups |
 | Countably rectifiable | Contained up to an $\mathcal{H}^1$-null set in countably many Lipschitz images of $\mathbb{R}$ |

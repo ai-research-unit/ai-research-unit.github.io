@@ -264,13 +264,13 @@ Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to th
 
 **Theorem (the Jordan–Brouwer separation theorem).** Let $\Sigma \subseteq S^n$ be a subset homeomorphic to $S^{n-1}$, with $n \geq 2$. Then $S^n \setminus \Sigma$ has exactly two connected components, and $\Sigma$ is the boundary of each.
 
-*Proof sketch.* By **Alexander duality**, which for a compact subset $K \subseteq S^n$ states $\tilde H_i(S^n\setminus K;\mathbb{Z}) \cong \tilde H^{n-i-1}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of *Poincaré Duality* applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives
+*Proof sketch.* By **Alexander duality**, which for a compact subset $K \subseteq S^n$ states $H_{i,\mathrm{red}}(S^n\setminus K;\mathbb{Z}) \cong H^{n-i-1,\mathrm{red}}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of *Poincaré Duality* applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives
 
 $$
-\tilde H_0(S^n\setminus\Sigma) \cong \tilde H^{n-1}(S^{n-1}) \cong \mathbb{Z}, \qquad \tilde H_i(S^n\setminus\Sigma) \cong \tilde H^{n-i-1}(S^{n-1}) = 0 \quad (i \neq 0),
+H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0),
 $$
 
-where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $\tilde H_0$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
+where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{0,\mathrm{red}}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
 
 **Theorem (invariance of domain; Brouwer).** If $U \subseteq \mathbb{R}^n$ is open and $f : U \to \mathbb{R}^n$ is injective and continuous, then $f(U)$ is open and $f$ is a homeomorphism onto its image.
 
@@ -305,7 +305,7 @@ Brouwer's fixed point theorem, that every continuous self-map of $D^{n+1}$ has a
 | $L(f) = \det(I - A)$ | Lefschetz number of a self-map of $T^n$, $A = f_*|H_1$ |
 | $X$, $\mathrm{ind}_x X$ | Vector field and index of a zero; $\sum\mathrm{ind}_x X = \chi(M)$ |
 | $g$ odd, $g(-x) = -g(x)$ | Odd map; odd degree (Borsuk) |
-| $\tilde H_i(S^n\setminus K)$ | Alexander duality: $\cong \tilde H^{n-i-1}(K)$ |
+| $H_{i,\mathrm{red}}(S^n\setminus K)$ | Alexander duality: $\cong H^{n-i-1,\mathrm{red}}(K)$ |
 
 
 
