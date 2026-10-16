@@ -107,7 +107,7 @@ $$
 \pi_1(\mathbb{B}^{\times}_1)=0,\quad \pi_2(\mathbb{B}^{\times}_1)=0,\quad \pi_3(\mathbb{B}^{\times}_1)\cong\mathbb{Z},
 $$
 
-and the universal covers are $\widetilde{\mathbb{B}^{\times}}\congU(\mathbb{B})^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
+and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\congU(\mathbb{B})^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
 
 **Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_1=\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of units by the homotopy equivalence.
 

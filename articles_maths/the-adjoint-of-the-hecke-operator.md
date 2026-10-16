@@ -55,7 +55,7 @@ and $T_n$ is normal, $T_nT_n^*=T_n^*T_n$. In particular $T_n^*=T_n$ for $\gcd(n,
 
 **Theorem.** For $p\mid N$ the operator $U_p$ is not self-adjoint and not normal in general; its adjoint is
 $$
-U_p^*=w_N^{-1}\widetilde{U}_p\,w_N ,
+U_p^*=w_N^{-1}U_p^{\vee}\,w_N ,
 $$
 where $U_p^{\vee}$ is the Hecke operator of the dual double coset, and the deviation from self-adjointness is measured by the Atkin–Lehner theory. On the newforms of level $N$ the operator $U_p$ has the eigenvalue $a_p$ with $|a_p|\le2p^{(k-1)/2}$ in the analytic normalisation.
 
