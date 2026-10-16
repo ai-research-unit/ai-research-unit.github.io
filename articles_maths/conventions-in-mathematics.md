@@ -113,6 +113,10 @@ This is a **preferred convention** — a preference, not a strict rule, not to b
 
 
 
+
+
+
+
 ### The Tilde and the Other Fields
 
 The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
@@ -142,6 +146,7 @@ The tilde is the mark of the quaternionic factor here, and that reading of the a
 | The reduced homology of a space | $\tilde H_n(X)$ | $H^{\mathrm{red}}_n(X)$ |
 | The reduced Euler characteristic | $\tilde\chi(X)$ | $\chi^{\mathrm{red}}(X)$ |
 | A reduced cohomology theory | $\tilde E^k(X)$ | $E^{k,\mathrm{red}}(X)$ |
+| The ordered Čech complex | $\tilde C^p$ | $C^p_{\mathrm{ord}}$ |
 | A lift of a path or a section | $\tilde\gamma$, $\tilde\sigma$ | $\gamma^{\mathrm{lift}}$, $\sigma^{\mathrm{lift}}$ |
 
 **The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
@@ -153,6 +158,148 @@ The tilde is the mark of the quaternionic factor here, and that reading of the a
 
 
 
+
+
+
+
+### The Tilde and the Other Fields
+
+The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
+
+| Object | Customary glyph | Written here as |
+|---|---|---|
+| The reverse of a multivector, in geometric algebra | $\tilde A$ | $A^{\mathrm{rev}}$ |
+| The quaternion conjugate, in the older quaternion literature | $\tilde q$ | $\tilde q^{\natural}$ |
+| A universal cover, $\tilde X \to X$ | $\tilde X$ | $X^{\mathrm{cov}}$ |
+| A lift of $x$ | $\tilde x$ | $x^{\mathrm{lift}}$ |
+| The sheaf attached to a module | $\tilde M$ | $M^{\mathrm{sh}}$ |
+| A normalisation | $\tilde X$ | $X^{\mathrm{norm}}$ |
+| The Fourier transform of $f$ | $\tilde f(\omega)$ | $f^{\wedge}(\omega)$ |
+| The reflection of a function, $\mathcal F^2$ | $\tilde f$ | $f^{\mathrm{refl}}$ |
+| A contragredient representation | $\tilde\pi$ | $\pi^{\vee}$ |
+| The dual group | $\tilde G$ | $G^{\vee}$ |
+| The sample median | $\tilde x$ | $\operatorname{med}(x)$ |
+| An estimator | $\tilde\theta$ | $\theta^{\mathrm{est}}$ |
+| A kernel density | $\tilde f$ | $f^{\mathrm{ker}}$ |
+| A computed or approximate value | $\tilde x$ | $x^{\mathrm{num}}$ |
+| A nondimensionalised variable | $\tilde t = t/t_0$ | the ratio $t/t_0$ itself |
+| A comparison manifold, metric, curvature | $\tilde M, \tilde g, \tilde K$ | $M_c, g_c, K_c$ |
+| An affine Dynkin or Coxeter type | $\tilde A_n$ | $A_n^{(1)}$ |
+
+**The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
+
+
+
+
+
+
+
+
+
+
+
+### The Tilde and the Other Fields
+
+The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
+
+| Object | Customary glyph | Written here as |
+|---|---|---|
+| The reverse of a multivector, in geometric algebra | $\tilde A$ | $A^{\mathrm{rev}}$ |
+| The quaternion conjugate, in the older quaternion literature | $\tilde q$ | $\tilde q^{\natural}$ |
+| A universal cover, $\tilde X \to X$ | $\tilde X$ | $X^{\mathrm{cov}}$ |
+| A lift of $x$ | $\tilde x$ | $x^{\mathrm{lift}}$ |
+| The sheaf attached to a module | $\tilde M$ | $M^{\mathrm{sh}}$ |
+| A normalisation | $\tilde X$ | $X^{\mathrm{norm}}$ |
+| The Fourier transform of $f$ | $\tilde f(\omega)$ | $f^{\wedge}(\omega)$ |
+| The reflection of a function, $\mathcal F^2$ | $\tilde f$ | $f^{\mathrm{refl}}$ |
+| A contragredient representation | $\tilde\pi$ | $\pi^{\vee}$ |
+| The dual group | $\tilde G$ | $G^{\vee}$ |
+| The sample median | $\tilde x$ | $\operatorname{med}(x)$ |
+| An estimator | $\tilde\theta$ | $\theta^{\mathrm{est}}$ |
+| A kernel density | $\tilde f$ | $f^{\mathrm{ker}}$ |
+| A computed or approximate value | $\tilde x$ | $x^{\mathrm{num}}$ |
+| A nondimensionalised variable | $\tilde t = t/t_0$ | the ratio $t/t_0$ itself |
+| A comparison manifold, metric, curvature | $\tilde M, \tilde g, \tilde K$ | $M_c, g_c, K_c$ |
+| An affine Dynkin or Coxeter type | $\tilde A_n$ | $A_n^{(1)}$ |
+
+**The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
+
+
+
+
+
+
+
+
+
+
+### The Tilde and the Other Fields
+
+The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
+
+| Object | Customary glyph | Written here as |
+|---|---|---|
+| The reverse of a multivector, in geometric algebra | $\tilde A$ | $A^{\mathrm{rev}}$ |
+| The quaternion conjugate, in the older quaternion literature | $\tilde q$ | $\tilde q^{\natural}$ |
+| A universal cover, $\tilde X \to X$ | $\tilde X$ | $X^{\mathrm{cov}}$ |
+| A lift of $x$ | $\tilde x$ | $x^{\mathrm{lift}}$ |
+| The sheaf attached to a module | $\tilde M$ | $M^{\mathrm{sh}}$ |
+| A normalisation | $\tilde X$ | $X^{\mathrm{norm}}$ |
+| The Fourier transform of $f$ | $\tilde f(\omega)$ | $f^{\wedge}(\omega)$ |
+| The reflection of a function, $\mathcal F^2$ | $\tilde f$ | $f^{\mathrm{refl}}$ |
+| A contragredient representation | $\tilde\pi$ | $\pi^{\vee}$ |
+| The dual group | $\tilde G$ | $G^{\vee}$ |
+| The sample median | $\tilde x$ | $\operatorname{med}(x)$ |
+| An estimator | $\tilde\theta$ | $\theta^{\mathrm{est}}$ |
+| A kernel density | $\tilde f$ | $f^{\mathrm{ker}}$ |
+| A computed or approximate value | $\tilde x$ | $x^{\mathrm{num}}$ |
+| A nondimensionalised variable | $\tilde t = t/t_0$ | the ratio $t/t_0$ itself |
+| A comparison manifold, metric, curvature | $\tilde M, \tilde g, \tilde K$ | $M_c, g_c, K_c$ |
+| An affine Dynkin or Coxeter type | $\tilde A_n$ | $A_n^{(1)}$ |
+
+**The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
+
+
+
+
+
+
+
+
+
+### The Tilde and the Other Fields
+
+The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
+
+| Object | Customary glyph | Written here as |
+|---|---|---|
+| The reverse of a multivector, in geometric algebra | $\tilde A$ | $A^{\mathrm{rev}}$ |
+| The quaternion conjugate, in the older quaternion literature | $\tilde q$ | $\tilde q^{\natural}$ |
+| A universal cover, $\tilde X \to X$ | $\tilde X$ | $X^{\mathrm{cov}}$ |
+| A lift of $x$ | $\tilde x$ | $x^{\mathrm{lift}}$ |
+| The sheaf attached to a module | $\tilde M$ | $M^{\mathrm{sh}}$ |
+| A normalisation | $\tilde X$ | $X^{\mathrm{norm}}$ |
+| The Fourier transform of $f$ | $\tilde f(\omega)$ | $f^{\wedge}(\omega)$ |
+| The reflection of a function, $\mathcal F^2$ | $\tilde f$ | $f^{\mathrm{refl}}$ |
+| A contragredient representation | $\tilde\pi$ | $\pi^{\vee}$ |
+| The dual group | $\tilde G$ | $G^{\vee}$ |
+| The sample median | $\tilde x$ | $\operatorname{med}(x)$ |
+| An estimator | $\tilde\theta$ | $\theta^{\mathrm{est}}$ |
+| A kernel density | $\tilde f$ | $f^{\mathrm{ker}}$ |
+| A computed or approximate value | $\tilde x$ | $x^{\mathrm{num}}$ |
+| A nondimensionalised variable | $\tilde t = t/t_0$ | the ratio $t/t_0$ itself |
+| A comparison manifold, metric, curvature | $\tilde M, \tilde g, \tilde K$ | $M_c, g_c, K_c$ |
+| An affine Dynkin or Coxeter type | $\tilde A_n$ | $A_n^{(1)}$ |
+
+**The sharpest of the list is the reverse of geometric algebra**, because the field is a neighbour of this one: there the tilde is the reverse, whereas here the reverse is the natural sign, $\tilde Q^{\natural}$, and the other two accents of that field are taken as well, the bar by coefficientwise conjugation, $\bar Q$, and the hat by purity, $\hat Q$. **No mark of this convention is borrowed by the third column**: an entry qualifies the usual letter, as $M^{\mathrm{sh}}$ and $f^{\wedge}$ do, or takes a letter the algebra leaves free, as $\operatorname{med}$ does, and a quantity with no settled glyph is written out, as the ratio $t/t_0$.
+
+
+
+
+
+
+
+
 ### The Tilde and the Other Fields
 
 The tilde is the mark of the quaternionic factor here, and that reading of the accent is peculiar to this corpus. In the rest of mathematics the same accent marks several unrelated objects, and the table below gives the object, its customary glyph, and the glyph written here when the object occurs beside an element of the algebra. **The rule is that the tilde is never borrowed**: an object of the list occurring in an article of the corpus is written with the qualifier of the third column.
@@ -339,7 +486,7 @@ The tilde is the mark of the quaternionic factor here, and that reading of the a
 | The reverse of a multivector, in geometric algebra | $\tilde A$ | $A^{\mathrm{rev}}$ |
 | The quaternion conjugate, in the older quaternion literature | $\tilde q$ | $\tilde q^{\natural}$ |
 | A universal cover, $\tilde X \to X$ | $\tilde X$ | $X^{\mathrm{cov}}$ |
-| A lift of $x$ | $\tilde x$ | $x^{\mathrm{lift}}$ |
+| A lift of $x$ | $\tilde x$ | $\ell(x)$ |
 | The sheaf attached to a module | $\tilde M$ | $M^{\mathrm{sh}}$ |
 | A normalisation | $\tilde X$ | $X^{\mathrm{norm}}$ |
 | The Fourier transform of $f$ | $\tilde f(\omega)$ | $f^{\wedge}(\omega)$ |

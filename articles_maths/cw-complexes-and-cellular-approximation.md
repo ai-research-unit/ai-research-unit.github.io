@@ -59,7 +59,7 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 ### The Homotopy Extension Property
 
-**Definition.** A pair $(X,A)$ has the **homotopy extension property (HEP)** if, for every space $Y$, every homotopy $H : A \times I \to Y$ and every map $f : X \to Y$ with $f|_A = H(\cdot, 0)$, there exists a homotopy $\tilde H : X \times I \to Y$ with $\tilde H|_{A \times I} = H$ and $\tilde H(\cdot, 0) = f$. Equivalently, every pair of maps $X \times \{0\} \cup A \times I \to Y$ extends to $X \times I$.
+**Definition.** A pair $(X,A)$ has the **homotopy extension property (HEP)** if, for every space $Y$, every homotopy $H : A \times I \to Y$ and every map $f : X \to Y$ with $f|_A = H(\cdot, 0)$, there exists a homotopy $H^{\mathrm{lift}} : X \times I \to Y$ with $H^{\mathrm{lift}}|_{A \times I} = H$ and $H^{\mathrm{lift}}(\cdot, 0) = f$. Equivalently, every pair of maps $X \times \{0\} \cup A \times I \to Y$ extends to $X \times I$.
 
 **Theorem.** A CW pair $(X,A)$ has the homotopy extension property.
 
@@ -67,7 +67,7 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 **Definition.** A pair with the HEP is a **cofibration**; a map $A \hookrightarrow X$ is a cofibration exactly when it has the HEP. Cofibrations are, up to homotopy, the inclusions one may quotient by and attach along without changing the homotopy type.
 
-**Corollary.** If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong \tilde H_n(X/A)$.
+**Corollary.** If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong H_{n,\mathrm{red}}(X/A)$.
 
 *Proof.* By the HEP the inclusion $A \subseteq X$ is a cofibration and the collapse $X \to X/A$ is a homotopy equivalence of pairs.
 

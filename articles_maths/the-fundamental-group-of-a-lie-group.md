@@ -3,11 +3,11 @@
 
 ## Introduction
 
-A Lie group is a group and a manifold at once, and the two structures constrain each other sharply: the multiplication is smooth, so the group acts on itself by diffeomorphisms, and every local question can be translated to the identity. The first topological invariant of a Lie group is its fundamental group, and the theory of *The Fundamental Group and Covering Spaces* applies with an extra rigidity. The fundamental group of any topological group is **abelian**; the universal cover of a connected Lie group carries a Lie group structure, so that every connected Lie group is a quotient $\tilde G \to G$ of a simply connected Lie group by a discrete central subgroup isomorphic to $\pi_1(G)$; and for a compact connected Lie group the fundamental group is finite and computable from the combinatorial data of a maximal torus and its roots. The classical groups are the standard examples: $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = 0$, $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and the double cover $SU(2) \to SO(3)$ is the first case of the spin cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+A Lie group is a group and a manifold at once, and the two structures constrain each other sharply: the multiplication is smooth, so the group acts on itself by diffeomorphisms, and every local question can be translated to the identity. The first topological invariant of a Lie group is its fundamental group, and the theory of *The Fundamental Group and Covering Spaces* applies with an extra rigidity. The fundamental group of any topological group is **abelian**; the universal cover of a connected Lie group carries a Lie group structure, so that every connected Lie group is a quotient $G^{\mathrm{cov}} \to G$ of a simply connected Lie group by a discrete central subgroup isomorphic to $\pi_1(G)$; and for a compact connected Lie group the fundamental group is finite and computable from the combinatorial data of a maximal torus and its roots. The classical groups are the standard examples: $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = 0$, $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and the double cover $SU(2) \to SO(3)$ is the first case of the spin cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 The Lie theory itself — the correspondence between Lie groups and Lie algebras, the exponential map, the closed subgroup theorem, the maximal torus theory — is assumed from the companion article *Lie Groups* of Part I, and the topological group theory from *Topological Groups* and *Abelian Topological Groups*. What this article supplies is the topological computation: the abelianness of $\pi_1$ and its consequences, the classification of connected coverings of a Lie group and the universal covering group, the reduction of $\pi_1(G)$ to the fundamental group of a maximal compact subgroup, the computation of $\pi_1$ for a compact connected group from the coroot lattice of a maximal torus, and the long exact sequence of a homogeneous space, which relates $\pi_1$ of a Lie group to $\pi_1$ of the quotients by closed subgroups. The higher homotopy groups of Lie groups and their homogeneous spaces, and the homology computations that follow from them, are not covered here; the covering-space correspondence is that of *The Fundamental Group and Covering Spaces*, and the classification of coverings by subgroups of $\pi_1$ is used throughout.
 
-Throughout, $G$ is a topological group or a Lie group, $\mathrm{G}$ its Lie algebra, $G_0$ the identity component, $\pi_0(G) = G/G_0$ the group of components, $\tilde G$ the universal cover, and $\exp : \mathrm{G} \to G$ the exponential map. The symbol $K$ denotes a maximal compact subgroup of a connected Lie group and $T$ a maximal torus of a compact connected Lie group.
+Throughout, $G$ is a topological group or a Lie group, $\mathrm{G}$ its Lie algebra, $G_0$ the identity component, $\pi_0(G) = G/G_0$ the group of components, $G^{\mathrm{cov}}$ the universal cover, and $\exp : \mathrm{G} \to G$ the exponential map. The symbol $K$ denotes a maximal compact subgroup of a connected Lie group and $T$ a maximal torus of a compact connected Lie group.
 
 ## The Fundamental Group is Abelian
 
@@ -39,29 +39,29 @@ Throughout, $G$ is a topological group or a Lie group, $\mathrm{G}$ its Lie alge
 
 *Proof.* Fix the basepoint $\hat e$ over $e$ and define $\hat\mu : \hat G\times\hat G \to \hat G$ as the lift of $\mu \circ (p\times p) : \hat G\times \hat G\to G$ sending $(\hat e,\hat e)$ to $\hat e$; the lift exists and is unique because $\hat G \times \hat G$ is simply connected when $\hat G$ is, and the group axioms follow by uniqueness of lifts of the corresponding maps on the simply connected cover. The statement for a general connected covering follows by factoring through the universal cover. The correspondence between coverings and subgroups is that of *The Fundamental Group and Covering Spaces*.
 
-**Corollary (the universal covering group).** Let $G$ be a connected Lie group with universal cover $\tilde G$. Then $\tilde G$ is a simply connected Lie group, and
+**Corollary (the universal covering group).** Let $G$ be a connected Lie group with universal cover $G^{\mathrm{cov}}$. Then $G^{\mathrm{cov}}$ is a simply connected Lie group, and
 
 $$
-1 \to \pi_1(G) \to \tilde G \xrightarrow{\ p\ } G \to 1
+1 \to \pi_1(G) \to G^{\mathrm{cov}} \xrightarrow{\ p\ } G \to 1
 $$
 
 is an exact sequence of Lie groups in which $\pi_1(G) \cong p^{-1}(e)$ is a discrete central subgroup.
 
-*Proof.* The group structure is that of the theorem. The kernel $p^{-1}(e)$ is discrete, being a fibre of a covering, and is central because $\tilde G$ is connected and the conjugation action of $\tilde G$ on the discrete kernel is continuous, hence trivial.
+*Proof.* The group structure is that of the theorem. The kernel $p^{-1}(e)$ is discrete, being a fibre of a covering, and is central because $G^{\mathrm{cov}}$ is connected and the conjugation action of $G^{\mathrm{cov}}$ on the discrete kernel is continuous, hence trivial.
 
 **Corollary.** For a connected Lie group $G$, the connected coverings of $G$ stand in bijection with the subgroups of $\pi_1(G)$; since $\pi_1(G)$ is abelian, every subgroup is normal, and every connected covering of $G$ is again a Lie group with the covering map a homomorphism. In particular, every connected covering of a connected Lie group is a covering *group*.
 
-**Example.** For $G = U(1)$ the universal cover is $\mathbb{R} \to U(1)$, $t \mapsto e^{2\pi i t}$, with kernel $\mathbb{Z} \cong \pi_1(U(1))$; the connected coverings are the maps $z \mapsto z^n$. For $G = SO(3) \cong \mathbb{RP}^3$ the universal cover is $SU(2) \cong S^3$ and $\pi_1(SO(3)) \cong \mathbb{Z}/2$; this is the case $n = 3$ of the spin cover $\mathrm{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+**Example.** For $G = U(1)$ the universal cover is $\mathbb{R} \to U(1)$, $t \mapsto \exp(2\pi i t)$, with kernel $\mathbb{Z} \cong \pi_1(U(1))$; the connected coverings are the maps $z \mapsto z^n$. For $G = SO(3) \cong \mathbb{RP}^3$ the universal cover is $SU(2) \cong S^3$ and $\pi_1(SO(3)) \cong \mathbb{Z}/2$; this is the case $n = 3$ of the spin cover $\mathrm{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ### The Case of Finite Fundamental Group
 
 **Theorem.** Let $G$ be a compact connected Lie group. Then $\pi_1(G)$ is finitely generated and abelian, and:
 
-1. $\tilde G$ is compact if and only if $\pi_1(G)$ is finite.
-2. If $\pi_1(G)$ is finite then $G = \tilde G/N$ with $N$ a finite central subgroup, and every finite-dimensional representation of $G$ is a representation of $\tilde G$ on which $N$ acts trivially.
-3. The simply connected cover $\tilde G$ of a compact connected Lie group is compact and is a product of a torus and simply connected simple compact factors.
+1. $G^{\mathrm{cov}}$ is compact if and only if $\pi_1(G)$ is finite.
+2. If $\pi_1(G)$ is finite then $G = G^{\mathrm{cov}}/N$ with $N$ a finite central subgroup, and every finite-dimensional representation of $G$ is a representation of $G^{\mathrm{cov}}$ on which $N$ acts trivially.
+3. The simply connected cover $G^{\mathrm{cov}}$ of a compact connected Lie group is compact and is a product of a torus and simply connected simple compact factors.
 
-*Proof.* (1) If $\tilde G$ is compact then $\pi_1(G) = p^{-1}(e)$ is a discrete closed subset of a compact space, hence finite. Conversely, if $\pi_1(G)$ is finite then $\tilde G$ is a finite covering of a compact space, hence compact. (2) is the exact sequence of the corollary applied to a compact group. (3) is the structure theory of compact connected Lie groups (the classification of *Lie Groups*): $\tilde G$ is a product of a torus and simply connected simple compact Lie groups, and the splitting follows from the theory of maximal tori.
+*Proof.* (1) If $G^{\mathrm{cov}}$ is compact then $\pi_1(G) = p^{-1}(e)$ is a discrete closed subset of a compact space, hence finite. Conversely, if $\pi_1(G)$ is finite then $G^{\mathrm{cov}}$ is a finite covering of a compact space, hence compact. (2) is the exact sequence of the corollary applied to a compact group. (3) is the structure theory of compact connected Lie groups (the classification of *Lie Groups*): $G^{\mathrm{cov}}$ is a product of a torus and simply connected simple compact Lie groups, and the splitting follows from the theory of maximal tori.
 
 **Example ($SO(n)$ and the spin groups).** For $n \geq 3$ the group $SO(n)$ is compact connected with $\pi_1 \cong \mathbb{Z}/2$ and universal cover $\mathrm{Spin}(n)$, so $\mathrm{Spin}(n) \to SO(n)$ is a double cover and $\mathrm{Spin}(n)$ is compact simply connected; for $n \geq 7$, $\mathrm{Spin}(n)$ is simple. For $n = 2$, $SO(2) \cong U(1)$ has $\pi_1 \cong \mathbb{Z}$ and universal cover $\mathbb{R}$; for $n = 1$, $SO(1)$ is trivial.
 
@@ -179,11 +179,11 @@ the centre of the simply connected cover.
 
 *Proof.* The coverings of a connected space correspond to the subgroups of its fundamental group by *The Fundamental Group and Covering Spaces*; the fundamental group of a compact connected Lie group is finite by the theorem of Bott, since the coroot lattice has finite index in the coweight lattice. Comparing indices gives the stated covers and the finiteness.
 
-**Remark.** The finite coverings of a compact connected Lie group are the quotients of the simply connected cover $\tilde G$ by the subgroups of its centre; the simply connected cover is compact by the theorem of the previous section, so this is a classification internal to compact groups.
+**Remark.** The finite coverings of a compact connected Lie group are the quotients of the simply connected cover $G^{\mathrm{cov}}$ by the subgroups of its centre; the simply connected cover is compact by the theorem of the previous section, so this is a classification internal to compact groups.
 
 ## Summary
 
-The fundamental group of a topological group is abelian, by the Eckmann–Hilton interchange argument; for a Lie group, $\pi_1$ depends only on the identity component, equals $H_1$ by Hurewicz, and acts trivially on all the higher homotopy groups, so the local coefficients of the general fibration theory are constant in this setting. Every connected covering of a connected Lie group is again a Lie group, by lifting the multiplication to the covering, and the connected coverings are classified by the subgroups of $\pi_1(G)$; in particular the universal cover $\tilde G$ is a simply connected Lie group and $G \cong \tilde G/N$ with $N \cong \pi_1(G)$ discrete central. For a compact connected $G$ the fundamental group is finite, $\tilde G$ is compact, and $G$ is a quotient of $\tilde G$ by a finite central subgroup.
+The fundamental group of a topological group is abelian, by the Eckmann–Hilton interchange argument; for a Lie group, $\pi_1$ depends only on the identity component, equals $H_1$ by Hurewicz, and acts trivially on all the higher homotopy groups, so the local coefficients of the general fibration theory are constant in this setting. Every connected covering of a connected Lie group is again a Lie group, by lifting the multiplication to the covering, and the connected coverings are classified by the subgroups of $\pi_1(G)$; in particular the universal cover $G^{\mathrm{cov}}$ is a simply connected Lie group and $G \cong G^{\mathrm{cov}}/N$ with $N \cong \pi_1(G)$ discrete central. For a compact connected $G$ the fundamental group is finite, $G^{\mathrm{cov}}$ is compact, and $G$ is a quotient of $G^{\mathrm{cov}}$ by a finite central subgroup.
 
 The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to that of a maximal compact subgroup, so $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n))$ and $\pi_1(GL_n(\mathbb{C})) \cong \pi_1(U(n))$. For a compact connected group with maximal torus $T$, Bott's theorem identifies $\pi_1(G) \cong X_*(T)/Q^\vee$ with the quotient of the coweight lattice by the coroot lattice; this gives $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = \pi_1(Sp(n)) = 0$ and $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and identifies $\pi_1$ of the adjoint group with the centre of the simply connected cover, so that the double cover $SU(2)\to SO(3)$ is the first case of the spin covers. Finally, the long exact homotopy sequence of the fibration $H \to G \to G/H$ computes $\pi_1$ of a homogeneous space from that of the group and the stabiliser; a quotient of a simply connected group by a connected closed subgroup is simply connected.
 
@@ -193,7 +193,7 @@ The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to th
 |---|---|
 | $G$, $G_0$, $\pi_0(G) = G/G_0$ | Lie group; identity component; component group |
 | $\mathrm{G}$, $\mathrm{T}$, $\exp$ | Lie algebra, Cartan subalgebra of $\mathrm{T}$, exponential map |
-| $\tilde G$, $p : \tilde G \to G$ | Universal covering group and its projection |
+| $G^{\mathrm{cov}}$, $p : G^{\mathrm{cov}} \to G$ | Universal covering group and its projection |
 | $\pi_1(G)$, $H_1(G;\mathbb{Z})$ | Fundamental group of a Lie group; abelian, equals $H_1$ |
 | $\mu$ | Multiplication $G\times G \to G$; the H-space structure |
 | $K$ | Maximal compact subgroup; $G \simeq K$ (Malcev–Iwasawa) |

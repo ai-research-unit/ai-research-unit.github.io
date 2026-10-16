@@ -100,7 +100,7 @@ with the tangent spaces identified by $d\sigma_p$, and at the centre it conjugat
 
 **Proof sketch.** Define the extension along the geodesics from $p$ by $\gamma(t)\mapsto\gamma(-t)$; this is well defined on the whole of $M$ because $M$ is complete; it is smooth because every point is joined to $p$ by geodesics that depend smoothly on the endpoint through the exponential map, and simply connected because the different geodesics from $p$ to a point give the same value of the extension, the ambiguity being measured by the holonomy of a loop, which the parallel curvature makes trivial. The extension is then a local isometry, and a local isometry defined on all of a complete connected manifold is an isometry. The details are in *Symmetric Spaces*, where the geodesic symmetry is taken as the definition and the equivalence with the present local condition is proved.
 
-**Corollary (the general locally symmetric space).** A complete locally symmetric manifold is the quotient $\tilde M/\Gamma$ of its simply connected cover $\tilde M$, which is a symmetric space, by a discrete group $\Gamma$ of isometries of $\tilde M$ acting freely and properly discontinuously; conversely every such quotient is locally symmetric.
+**Corollary (the general locally symmetric space).** A complete locally symmetric manifold is the quotient $M^{\mathrm{cov}}/\Gamma$ of its simply connected cover $M^{\mathrm{cov}}$, which is a symmetric space, by a discrete group $\Gamma$ of isometries of $M^{\mathrm{cov}}$ acting freely and properly discontinuously; conversely every such quotient is locally symmetric.
 
 **Proof.** The universal cover of a complete manifold is complete and is locally symmetric with the pulled-back metric; it is simply connected, so it is a symmetric space by the theorem. The deck transformations are isometries acting freely and properly discontinuously, and the quotient recovers $M$. The converse is the covering statement of the preceding section.
 
@@ -130,7 +130,7 @@ On a locally symmetric manifold all the covariant derivatives of the curvature v
 | $\nabla^kR=0$ | All the covariant derivatives vanish on a locally symmetric space |
 | $\mathcal{R}$, $P_\gamma$ | Curvature operator, parallel on a locally symmetric space |
 | Cartan extension | A complete simply connected locally symmetric space is symmetric |
-| $\tilde M/\Gamma$ | Locally symmetric space as a quotient of a symmetric space |
+| $M^{\mathrm{cov}}/\Gamma$ | Locally symmetric space as a quotient of a symmetric space |
 
 ## Further Reading
 

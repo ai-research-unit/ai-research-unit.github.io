@@ -89,8 +89,8 @@ $$
 $$
 of complex dimension $4^n$. The trace on the tensor power is the product of the single-algebra traces,
 $$
-\mathrm{Tr}\big(\tilde A_1\otimes\cdots\otimes\tilde A_n\big)
-=\mathrm{Tr}(\tilde A_1)\cdots\mathrm{Tr}(\tilde A_n),
+\mathrm{Tr}\big(A_1^{(1)}\otimes\cdots\otimesA_n^{(1)}\big)
+=\mathrm{Tr}(A_1^{(1)})\cdots\mathrm{Tr}(A_n^{(1)}),
 \qquad
 \mathrm{Tr}\big(e_0^{\otimes n}\big)=2^n,
 $$
@@ -302,7 +302,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
-| $\mathrm{Tr}(\tilde A_1\otimes\cdots\otimes\tilde A_n)=\prod_i\mathrm{Tr}(\tilde A_i)$ | Product trace; $\mathrm{Tr}(e_0^{\otimes n})=2^n$ |
+| $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimesA_n^{(1)})=\prod_i\mathrm{Tr}(\tilde A_i)$ | Product trace; $\mathrm{Tr}(e_0^{\otimes n})=2^n$ |
 | $\rho_{AB},\rho_{BC},\rho_B$ | Reduced states (partial traces) |
 | $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ | von Neumann entropy |
 | $S(\rho_{ABC})+S(\rho_B)\le S(\rho_{AB})+S(\rho_{BC})$ | Strong subadditivity |

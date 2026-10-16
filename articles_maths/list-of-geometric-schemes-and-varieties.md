@@ -45,7 +45,7 @@ A variety is the classical geometric object: a reduced scheme of finite type ove
 | a morphism of varieties and its pullback | a polynomial map and the ring map $\varphi^* : k[Y] \to k[X]$ | *Algebraic Geometry* |
 | the function field $k(X)$ | the fraction field of $k[X]$, of transcendence degree $\dim X$ | *Algebraic Geometry* |
 | a rational map and a birational map | a morphism on a dense open set; a rational map with a rational inverse | *Algebraic Geometry* |
-| the blow-up $\tilde X \to X$ | the birational map that replaces a subvariety by a divisor | *Algebraic Geometry* |
+| the blow-up $X^{\mathrm{cov}} \to X$ | the birational map that replaces a subvariety by a divisor | *Algebraic Geometry* |
 | a smooth point and the singular locus | $\dim_kT_PX = \dim X$; the singular locus is closed and proper | *Algebraic Geometry* |
 | the theorem of Bézout and the intersection multiplicity | the number of intersections of two plane curves, counted with multiplicity | *Algebraic Curves*, §Plane Curves |
 | an arithmetic scheme | a scheme over $\mathbb{Z}$, with $\operatorname{Spec}\mathbb{Z}$ the base | *Algebraic Number Theory* |

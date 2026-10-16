@@ -116,7 +116,7 @@ is a smooth manifold carrying an induced hyperkähler structure, of dimension $\
 **Theorem (Bogomolov decomposition, statement).** Let $M$ be a compact Kähler manifold with $c_1(M)=0$ in $H^2(M;\mathbb{R})$. Then $M$ has a finite étale cover
 
 $$
-\tilde M = T \times \prod_{i} Y_i \times \prod_{j} Z_j,
+M^{\mathrm{cov}} = T \times \prod_{i} Y_i \times \prod_{j} Z_j,
 $$
 
 where $T$ is a complex torus, each $Y_i$ is a simply connected Calabi–Yau manifold of complex dimension at least $3$ with holonomy $SU(\dim_{\mathbb{C}}Y_i)$, each $Z_j$ is a simply connected irreducible hyperkähler manifold with holonomy $Sp(\dim_{\mathbb{C}}Z_j/2)$, and the decomposition is unique up to order and isometry.
@@ -151,7 +151,7 @@ The examples are the flat quaternionic spaces and their torus quotients, the com
 | $M \mathbin{/\!\!/} K = \mu^{-1}(0)/K$ | Hyperkähler quotient, $\dim = \dim M - 4\dim K$ |
 | $\nabla$, $\mathrm{Ric}$ | Levi-Civita connection and Ricci tensor (from *Riemannian Geometry*); $\mathrm{Ric}=0$ here |
 | ALE | Asymptotically locally Euclidean; the hyperkähler resolution of $\mathbb{C}^2/\Gamma$ |
-| Bogomolov decomposition | $\tilde M = T\times\prod Y_i\times\prod Z_j$ for a compact Kähler $M$ with $c_1=0$ |
+| Bogomolov decomposition | $M^{\mathrm{cov}} = T\times\prod Y_i\times\prod Z_j$ for a compact Kähler $M$ with $c_1=0$ |
 
 
 

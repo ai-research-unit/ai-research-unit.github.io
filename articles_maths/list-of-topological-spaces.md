@@ -85,7 +85,7 @@ The corpus constructs spaces as well as naming them, and the constructions are e
 | the adjunction space $X \cup_f Y$ | a quotient of the disjoint union; Hausdorffness requires $f$ to be closed or the pair to be a relative CW pair | *CW Complexes and Cellular Approximation* |
 | the CW complex | Hausdorff and paracompact; compact exactly when the cell complex is finite | *CW Complexes and Cellular Approximation* |
 | the simplicial complex | metrisable and compact when finite, and Hausdorff for the weak topology in general | *Simplicial and Singular Homology* |
-| the covering space $\tilde X \to X$ | locally homeomorphic to $X$, hence carries the same local separation and compactness; $\tilde X$ is compact exactly when the covering is finite over a compact base | *The Fundamental Group and Covering Spaces* |
+| the covering space $X^{\mathrm{cov}} \to X$ | locally homeomorphic to $X$, hence carries the same local separation and compactness; $X^{\mathrm{cov}}$ is compact exactly when the covering is finite over a compact base | *The Fundamental Group and Covering Spaces* |
 | the inverse limit $\varprojlim X_i$ | a closed subspace of the product; compact when the $X_i$ are compact Hausdorff | *Nets, Filters and Convergence*; *Topological Groups* |
 | the nerve $\lvert N(\mathcal{U})\rvert$ of a cover | a simplicial complex, hence metrisable; homotopy equivalent to the space when the cover is good | *Čech Cohomology* |
 

@@ -176,10 +176,10 @@ is a closed embedding whose image is a linearly normal variety, and it linearise
 
 **Theorem (blow-ups and the resolution of singularities).** Let $X$ be an irreducible variety and $Z\subseteq X$ a closed subvariety.
 
-1. The **blow-up** of $X$ along a closed subvariety $Z$ of codimension at least one exists: a variety $\tilde X$ with a morphism $\pi : \tilde X\to X$ which is an isomorphism over $X\setminus Z$ and such that the inverse image of $Z$ is a divisor on $\tilde X$; when $X = \mathbb{A}^n_k$ and $Z = \{0\}$, the blow-up is
-   $$\tilde X = \{(a,[b])\in\mathbb{A}^n_k\times\mathbb{P}^{n-1}_k : a_ib_j = a_jb_i \text{ for all } i,j\},$$
+1. The **blow-up** of $X$ along a closed subvariety $Z$ of codimension at least one exists: a variety $X^{\mathrm{bl}}$ with a morphism $\pi : X^{\mathrm{bl}}\to X$ which is an isomorphism over $X\setminus Z$ and such that the inverse image of $Z$ is a divisor on $X^{\mathrm{bl}}$; when $X = \mathbb{A}^n_k$ and $Z = \{0\}$, the blow-up is
+   $$X^{\mathrm{bl}} = \{(a,[b])\in\mathbb{A}^n_k\times\mathbb{P}^{n-1}_k : a_ib_j = a_jb_i \text{ for all } i,j\},$$
    which is the closure of the graph of the rational map $a\mapsto[a]$ and is an isomorphism over $\mathbb{A}^n_k\setminus\{0\}$.
-2. **Resolution of singularities**: for a variety over a field of characteristic zero there is a proper birational morphism $\pi : \tilde X\to X$ with $\tilde X$ smooth, obtained by a finite sequence of blow-ups along smooth centres. This is Hironaka's theorem, quoted as the standard result; it is an existence theorem in the birational category and it is not constructive in the present article.
+2. **Resolution of singularities**: for a variety over a field of characteristic zero there is a proper birational morphism $\pi : X^{\mathrm{bl}}\to X$ with $X^{\mathrm{bl}}$ smooth, obtained by a finite sequence of blow-ups along smooth centres. This is Hironaka's theorem, quoted as the standard result; it is an existence theorem in the birational category and it is not constructive in the present article.
 
 *Proof.* (1) The equations $a_ib_j = a_jb_i$ define a closed subvariety of $\mathbb{A}^n\times\mathbb{P}^{n-1}$, and the projection to $\mathbb{A}^n$ is an isomorphism away from the origin because $a\neq0$ determines $[b] = [a]$; over the origin the fibre is all of $\mathbb{P}^{n-1}$, the exceptional divisor. (2) is quoted.
 
@@ -227,7 +227,7 @@ Morphisms of affine varieties are the polynomial maps, and they are contravarian
 | morphism, $\varphi^*$ | polynomial map; pullback $k[Y]\to k[X]$ |
 | $k(X)$ | function field; fraction field of $k[X]$; transcendence degree $\dim X$ |
 | rational map, birational | morphism on a dense open set up to agreement; inverse rational map |
-| blow-up | $\tilde X\to X$ isomorphism over $X\setminus Z$ with inverse image of $Z$ a divisor |
+| blow-up | $X^{\mathrm{bl}}\to X$ isomorphism over $X\setminus Z$ with inverse image of $Z$ a divisor |
 | $T_PX$, smooth, singular | tangent space; $\dim_kT_PX = \dim X$; $\operatorname{Sing}(X)$ closed and proper |
 | dimension | Krull dimension of $k[X]$ = transcendence degree of $k(X)$ = chain length |
 

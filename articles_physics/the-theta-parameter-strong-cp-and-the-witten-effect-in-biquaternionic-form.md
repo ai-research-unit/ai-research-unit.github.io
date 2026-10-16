@@ -14,18 +14,18 @@ $$
 I_2=\vec E\cdot\vec B ,
 $$
 
-as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **pseudoscalar** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
+as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **pseudoscalar** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
 
 Three things follow, and the article states them separately. The algebra **supplies** the theta term's density and its discrete periodicity; it **supplies** the structure of the Witten effect, in the sense that a theta shift and a magnetic charge together generate an electric charge; and it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The field-strength biquaternion is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, its dual is $\tilde F_\star=-i\tilde F$, and the invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The topological charge and theta term are
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The field-strength biquaternion is $F^{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, its dual is $F^{\mathrm{dual}}_\star=-iF^{\mathrm{dual}}$, and the invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The topological charge and theta term are
 
 $$
-Q=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
+Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}\tilde F^{\mu\nu} ,
+S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu} ,
 \qquad
-\tilde F^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} ,
+F^{\mathrm{dual}}^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
 with all indices summed in the $ict$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the informational trace formula.
@@ -41,14 +41,14 @@ with all indices summed in the $ict$ convention as in the companion gauge articl
 The theta term of a non-abelian gauge theory is
 
 $$
-S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}\tilde F^{a\,\mu\nu}
+S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}F^{\mathrm{dual}}^{a\,\mu\nu}
 =\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr) ,
 $$
 
-so that $S_\theta=\theta\,Q$ with the charge normalisation used here, since $\int F^a\tilde F^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Q$. It is a total derivative,
+so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int F^aF^{\mathrm{dual}}^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
-F^a_{\mu\nu}\tilde F^{a\,\mu\nu}=\partial_\mu K^\mu ,
+F^a_{\mu\nu}F^{\mathrm{dual}}^{a\,\mu\nu}=\partial_\mu K^\mu ,
 \qquad
 K^\mu=\epsilon^{\mu\nu\rho\sigma}\Bigl(A^a_\nu F^a_{\rho\sigma}
 -\tfrac{g}{3}\,\epsilon^{abc}A^a_\nu A^b_\rho A^c_\sigma\Bigr),
@@ -59,9 +59,9 @@ the standard non-abelian Chern–Simons current, whose abelian part is the primi
 **The abelian density is the framework's invariant.** In the Maxwell sector the density collapses to the second invariant,
 
 $$
-F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
+F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
-F_{\mu\nu}\tilde F^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
+F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$
@@ -83,24 +83,24 @@ The theta term is thus the integral of the framework's own parity-odd invariant,
 The theta dependence enters the partition function through the instanton sum of *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*,
 
 $$
-Z(\theta)=\sum_{Q\in\mathbb Z}e^{iQ\theta}Z_Q ,
+Z(\theta)=\sum_{Ϙ\in\mathbb Z}\exp(iϘ\theta)Z_Ϙ ,
 $$
 
-and the integrality of the topological charge $Q$ makes the partition function periodic,
+and the integrality of the topological charge $Ϙ$ makes the partition function periodic,
 
 $$
-Z(\theta+2\pi)=\sum_Q e^{iQ(\theta+2\pi)}Z_Q=\sum_Q e^{iQ\theta}Z_Q=Z(\theta),
+Z(\theta+2\pi)=\sum_Ϙ \exp(iϘ(\theta+2\pi))Z_Ϙ=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ=Z(\theta),
 $$
 
-which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta$ and $\theta+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta\to\theta+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Q\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
+which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta$ and $\theta+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta\to\theta+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Ϙ\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
 
 The small-$\theta$ dependence of the vacuum energy is the same as in the semiclassical article,
 
 $$
-\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,e^{-8\pi^2/g^2}+\cdots ,
+\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots ,
 $$
 
-so the vacuum is CP-conserving at $\theta=0$ and $\theta=\pi$, and CP-violating elsewhere. The special value $\theta=\pi$ is the boundary between the two, and it is a genuine CP-conserving point because $e^{iQ\pi}=(-1)^Q$ is real.
+so the vacuum is CP-conserving at $\theta=0$ and $\theta=\pi$, and CP-violating elsewhere. The special value $\theta=\pi$ is the boundary between the two, and it is a genuine CP-conserving point because $\exp(iϘ\pi)=(-1)^Ϙ$ is real.
 
 ## Strong CP and the Value of Theta
 
@@ -125,17 +125,17 @@ The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small
 The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. Consider a common axial rotation of the quark fields,
 
 $$
-\psi\;\longmapsto\;e^{i\alpha\gamma_5}\,\psi ,
+\psi\;\longmapsto\;\exp(i\alpha\gamma_5)\,\psi ,
 \qquad
-\psi_L\mapsto e^{-i\alpha}\psi_L ,
+\psi_L\mapsto \exp(-i\alpha)\psi_L ,
 \qquad
-\psi_R\mapsto e^{+i\alpha}\psi_R ,
+\psi_R\mapsto \exp(+i\alpha)\psi_R ,
 $$
 
 under which the mass matrix in the fermion bilinear $\bar\psi_L M_q\psi_R$ transforms as
 
 $$
-M_q\;\longmapsto\;e^{2i\alpha}M_q ,
+M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
 \qquad
 \arg\det M_q\;\longmapsto\;\arg\det M_q+2N_f\alpha ,
 $$
@@ -164,9 +164,9 @@ The Witten effect is the statement that in the presence of a theta angle a magne
 Consider a monopole of magnetic charge $g_m$ in a theory with theta angle $\theta$. The theta term, although a total derivative, is not gauge invariant as a bulk term in the presence of a boundary or a monopole; on the monopole configuration it contributes an effective electric charge through the Wess–Zumino term. The standard result for the charges of a dyon is
 
 $$
-q_e=e\left(m+\frac{\theta}{2\pi}\,n\right),
+ϙ_e=e\left(m+\frac{\theta}{2\pi}\,n\right),
 \qquad
-q_m=\frac{4\pi}{e}\,n ,
+ϙ_m=\frac{4\pi}{e}\,n ,
 \qquad
 m,n\in\mathbb Z ,
 $$
@@ -175,7 +175,7 @@ so that a monopole with $n=1$ acquires the electric charge $e\theta/2\pi$ in add
 
 The two properties that make the shift consistent were verified explicitly.
 
-- **Periodicity in $\theta$.** Under $\theta\to\theta+2\pi$ the electric charge changes by $en$, $q_e\to q_e+en$, which is exactly the relabelling $m\to m+n$ of the integer electric quantum number. Hence the physics is invariant under $\theta\to\theta+2\pi$, as it must be, and the shift is a rotation of the charge lattice rather than a change of the spectrum. On a sample with $m=2$, $n=3$, the charge changed by $2.999999999999999$, equal to $en=3$ within rounding, and the shifted state coincided with the relabelled one.
+- **Periodicity in $\theta$.** Under $\theta\to\theta+2\pi$ the electric charge changes by $en$, $ϙ_e\to ϙ_e+en$, which is exactly the relabelling $m\to m+n$ of the integer electric quantum number. Hence the physics is invariant under $\theta\to\theta+2\pi$, as it must be, and the shift is a rotation of the charge lattice rather than a change of the spectrum. On a sample with $m=2$, $n=3$, the charge changed by $2.999999999999999$, equal to $en=3$ within rounding, and the shifted state coincided with the relabelled one.
 - **Consistency with the modular action.** The combined transformation $(\theta\to\theta+2\pi,\ m\to m+n)$ is precisely the $T$ generator of $SL(2,\mathbb Z)$ acting on the charge lattice of *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form*. The Witten effect is therefore the statement that the theta shift and the charge relabelling are one symmetry, and it is the physical content of the $T$ generator.
 
 **The framework's interpretation of the effect.** The Witten effect is the place where the article's three ingredients meet: the theta angle, the magnetic charge of *The Magnetic Monopole in Biquaternionic Form* and *The 't Hooft–Polyakov Monopole in Biquaternionic Form*, and the duality rotation of *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form*. In the framework's variables the effect is the statement that the theta angle and the magnetic charge together generate an electric charge through the parity-odd invariant: the term $\theta\int I_2$ has a nonzero cross term with the monopole's magnetic field, and the cross term is an electric source. The algebra makes the structure visible — the CP-odd invariant is $I_2$, and a magnetic field plus a theta angle is an electric charge — but the coefficient $e\theta/2\pi$ follows from the standard Wess–Zumino analysis and is imported, as is the quantisation that makes $m$ and $n$ integers.
@@ -183,7 +183,7 @@ The two properties that make the shift consistent were verified explicitly.
 **Dyon masses.** A dyon with charges $(m,n)$ has a mass bounded below by the BPS formula
 
 $$
-M\;\ge\;v\sqrt{q_m^2+q_e^2}
+M\;\ge\;v\sqrt{ϙ_m^2+ϙ_e^2}
 \;=\;\frac{4\pi v}{g}\sqrt{n^2+\Bigl(\frac{g^2}{4\pi}\Bigr)^{\!2}\Bigl(m+\frac{\theta}{2\pi}n\Bigr)^{\!2}} ,
 $$
 
@@ -191,41 +191,41 @@ which reduces at $\theta=0$ to the monopole mass $M=4\pi v/g$ of the monopole ar
 
 ## Summary
 
-The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}\tilde F^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
+The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
 
 $$
-F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
+F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-F_{\mu\nu}\tilde F^{\mu\nu}=4\,I_2 \quad(\text{Euclidean}).
+F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=4\,I_2 \quad(\text{Euclidean}).
 $$
 
-Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta)=\sum_Qe^{iQ\theta}Z_Q$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.
+Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta)=\sum_Ϙ\exp(iϘ\theta)Z_Ϙ$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.
 
 The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$ and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The Witten effect states that a monopole of magnetic charge $q_m=4\pi n/e$ carries the electric charge $q_e=e(m+\theta n/2\pi)$. Under $\theta\to\theta+2\pi$ this changes by $en$, which is the relabelling $m\to m+n$, verified numerically; the effect is the physical content of the $T$ generator, and the framework makes its structure visible as the cross term of the theta angle with the monopole field through the parity-odd invariant, while the coefficient and the quantisation are standard and imported.
+The Witten effect states that a monopole of magnetic charge $ϙ_m=4\pi n/e$ carries the electric charge $ϙ_e=e(m+\theta n/2\pi)$. Under $\theta\to\theta+2\pi$ this changes by $en$, which is the relabelling $m\to m+n$, verified numerically; the effect is the physical content of the $T$ generator, and the framework makes its structure visible as the cross term of the theta angle with the monopole field through the parity-odd invariant, while the coefficient and the quantisation are standard and imported.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
-| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
-| $\tilde F_\star=-i\tilde F$ | Dual field-strength biquaternion |
+| $F^{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
+| $F^{\mathrm{dual}}_\star=-iF^{\mathrm{dual}}$ | Dual field-strength biquaternion |
 | $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
 | $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd, pseudoscalar); theta density |
 | $\theta$ | Theta angle; coefficient of the topological term |
-| $S_\theta=\frac{\theta}{32\pi^2}\int F\tilde F$ | Theta term of the action |
-| $\tilde F^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
-| $Q=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Q\in\mathbb Z$ |
-| $K^\mu$ | Chern–Simons current, $F\tilde F=\partial_\mu K^\mu$ |
-| $Z(\theta)=\sum_Q e^{iQ\theta}Z_Q$ | Theta-dependent partition function, period $2\pi$ |
+| $S_\theta=\frac{\theta}{32\pi^2}\int FF^{\mathrm{dual}}$ | Theta term of the action |
+| $F^{\mathrm{dual}}^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
+| $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
+| $K^\mu$ | Chern–Simons current, $FF^{\mathrm{dual}}=\partial_\mu K^\mu$ |
+| $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix (imported) |
-| $q_e=e(m+\theta n/2\pi)$ | Witten-shifted electric charge of a dyon |
-| $q_m=4\pi n/e$ | Magnetic charge |
+| $ϙ_e=e(m+\theta n/2\pi)$ | Witten-shifted electric charge of a dyon |
+| $ϙ_m=4\pi n/e$ | Magnetic charge |
 | $m,n\in\mathbb Z$ | Electric and magnetic quantum numbers |
-| $M\ge v\sqrt{q_m^2+q_e^2}$ | BPS dyon mass bound |
+| $M\ge v\sqrt{ϙ_m^2+ϙ_e^2}$ | BPS dyon mass bound |
 
 ## Further Reading
 
