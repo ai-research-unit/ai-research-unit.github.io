@@ -86,7 +86,7 @@ $$
 where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the level splitting, and $g$ the single-spin coupling. The interaction conserves the total excitation number
 
 $$
-\tilde{N}_{\mathrm{exc}} = a^\dagger a + \frac{\tilde{J}_3}{\hbar} + \frac{N}{2},
+N^{\mathrm{fop}}_{\mathrm{exc}} = a^\dagger a + \frac{\tilde{J}_3}{\hbar} + \frac{N}{2},
 $$
 
 which counts the photons plus the number of excited spins; this is the collective version of the Jaynes–Cummings excitation number. The model is integrable in each excitation sector.

@@ -201,7 +201,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qqu
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
 \tilde K=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
 $$
@@ -326,7 +326,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+\log Z\,e_t$.
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single fermionic mode, $\tilde{N}_{\mathrm{tr}}$, and the parity $(-1)^F$.
+- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single fermionic mode, $\tilde\Pi_-$, and the parity $(-1)^F$.
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector and the four-vectors.
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the $i$-exchange between the sectors.

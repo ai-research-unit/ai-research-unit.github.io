@@ -46,13 +46,13 @@ $$
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\big(e_t-i\vec e_z\big)=\tilde\Pi_-\in\mathbb{M}_+,
+\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\big(e_t-i\vec e_z\big)\in\mathbb{M}_+,
 $$
 so the **vacuum projector** is the complementary idempotent
 $$
-\vert 0\rangle\langle 0\vert=e_t-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{M}_+.
+\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{M}_+.
 $$
-Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde N_{\mathrm{tr}}=i\vec e_z$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
 \langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde H\big),
 $$
@@ -333,7 +333,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; home of the zero-point scalar |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | One-mode ladder, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ |
-| $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ | One-mode number operator (idempotent) |
+| $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | One-mode number operator (idempotent) |
 | $\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | One-mode vacuum projector (idempotent in $\mathbb{M}_+$) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode) |
 | $\vert 0\rangle$ | Field vacuum, degree-zero term of the Fock space |

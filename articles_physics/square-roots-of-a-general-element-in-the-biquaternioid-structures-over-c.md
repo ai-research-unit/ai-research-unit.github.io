@@ -579,8 +579,8 @@ root's splitting and the restoration of the conformal symmetry are one event.
   vanishes — the conformal symmetry is restored exactly where the root's splitting is lost.
 - The root can live on a **curved background**, and then the value it realises is not a constant.
   In *Curved Spacetime and the Biquaternion Framework* squaring the one-sided Dirac operator
-  $\tilde{\not D}=\tilde E^\mu D_\mu$ gives the **Lichnerowicz** form
-  $\tilde{\not D}^{2}=\Box_g-\tfrac14R$: the wave operator minus a quarter of the Ricci scalar, so that a
+  $\not D=\tilde E^\mu D_\mu$ gives the **Lichnerowicz** form
+  $\not D^{2}=\Box_g-\tfrac14R$: the wave operator minus a quarter of the Ricci scalar, so that a
   Dirac field obeys a Klein–Gordon-type equation with the $-R/4$ coupling even with no source. "The square
   of a first-order operator is second order" is the flat statement; off the flat case the radicand carries
   the curvature, and the alternative first-order operator whose square is exactly the Laplacian — the

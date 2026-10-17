@@ -194,7 +194,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $\mathrm{Tr}(\exp(-\tilde K))=\mathrm{Tr}(\tilde{Ϛ})=1$ | $1.0$ to $10^{-39}$ |
 
-The second state is the single-mode thermal state of the partition-function article, $\tilde H=\omega\tilde N_{\mathrm{tr}}$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
+The second state is the single-mode thermal state of the partition-function article, $\tilde H=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
 \tilde K=\beta\tilde H+(\log Z)e_t,
 \qquad

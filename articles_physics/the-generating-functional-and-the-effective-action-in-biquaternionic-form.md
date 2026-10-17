@@ -179,7 +179,7 @@ $$
 V(\tilde\phi) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde\phi^{*}\tilde\phi\big)
 = \tfrac12 m^2\,\big\langle \tilde\phi,\tilde\phi\big\rangle ,
 $$
-whose minimum is $\tilde\phi=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator $\tilde N$ is a projector, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The effective potential's minimum is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
+whose minimum is $\tilde\phi=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is the projector $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The effective potential's minimum is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
 
 **The one-loop potential and convexity.** The one-loop correction
 $$

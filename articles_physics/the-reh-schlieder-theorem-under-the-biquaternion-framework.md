@@ -104,7 +104,7 @@ the classes $\Omega=[e_t]$ and $\vec\Upsilon_y\Omega=[\vec\Upsilon_y]$ are ortho
 
 ### The Vacuum Is Not Separating: A Zero-Divisor Witness
 
-The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde N_{\mathrm{tr}}=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
+The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
 $$
 \big\langle\Omega_{\tilde{Ϛ}}\big|\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}}\big\rangle
 =\mathrm{Tr}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
@@ -257,7 +257,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\tilde{Ϛ}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Single-mode vacuum state (minimal idempotent) |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | One-particle module; vacuum GNS space |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
-| $\tilde N_{\mathrm{tr}}=\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$ | Number operator (occupied projector) |
+| $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ | Number operator (occupied projector) |
 | $\tilde a(f)=f\vec\Upsilon_x$ | Smeared annihilation operator |
 | $\{\tilde a(f),\tilde a^\dagger(g)\}=\langle f,g\rangle e_t$ | CAR relations |
 | $\Delta,J,\sigma_t$ | Modular operator, conjugation, flow |

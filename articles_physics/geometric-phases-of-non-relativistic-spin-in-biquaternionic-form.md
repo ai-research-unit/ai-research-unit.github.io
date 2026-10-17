@@ -197,10 +197,10 @@ $$
 \vec u_x(t) = \left(\sin\theta_0\cos\omega t,\,-\sin\theta_0\sin\omega t,\,\cos\theta_0\right),
 $$
 
-with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian
+with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde u_R^{*}\tilde{H}\tilde u_R - i\hbar\,\tilde u_R^{*}\partial/\partial t\tilde u_R
+\tilde{H}_R = \tilde u_{\mathrm r}^{*}\tilde{H}\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\partial/\partial t\tilde u_{\mathrm r}
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$
 
@@ -291,7 +291,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\theta_0$ | Half-angle of the precession cone / polar angle of the loop |
 | $\tilde{u}(2\pi) = -e_t$ | One-period rotor; spinor double-valuedness |
 | $\tilde{u} = \exp(-\frac{1}{2}\Phi\vec u_x)$ | Holonomy rotor; $\Phi$ the turn of the Bloch vector |
-| $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
+| $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
 | $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
 | $\arg\langle\psi_1|\psi_2\rangle = \arg\mathrm{Tr}(\psi_1^\dagger\psi_2)$ | Pancharatnam connection |

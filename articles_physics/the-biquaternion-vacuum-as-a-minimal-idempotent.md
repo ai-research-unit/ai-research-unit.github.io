@@ -13,7 +13,7 @@ $$
 $$
 
 Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
-It is an element of the informational sector $\mathbb{M}_+$, it is **minimal** in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_+) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde N_{\mathrm{tr}} = \tfrac12(e_t - i\vec e_z)$ is the occupied-state projector, and the two form a resolution of the identity, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_- = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
+It is an element of the informational sector $\mathbb{M}_+$, it is **minimal** in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_+) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$ is the occupied-state projector, and the two form a resolution of the identity, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_- = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
 - **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $\langle\tilde\Pi_+\rangle_{\natural} = \tilde\Pi_+\tilde\Pi_+^{\natural} = 0$, and its matrix representative has vanishing determinant, $\det\mathsf{M}_2(\tilde\Pi_+) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.
 - **The vacuum manifold.** The construction depends on a unit vector $\vec u\in S^2$ through $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$. Every such idempotent is a legitimate one-mode vacuum, and the family is the two-sphere — the Bloch sphere of the state space. The framework does not single one out; a global $SU(2)$ rotation moves one into another, and the orbit is the vacuum manifold.
 - **Gap, left visible.** For a **field** the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy $[\tilde a,\tilde a^\dagger]=e_t$ because a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.
@@ -100,11 +100,11 @@ $$
 \qquad
 (\vec\Upsilon_y)^2 = 0,
 \qquad
-\tilde N_{\mathrm{tr}} = \vec\Upsilon_y \vec\Upsilon_x = \tfrac12\big(e_t - i\vec e_z\big).
+\tilde\Pi_- = \vec\Upsilon_y \vec\Upsilon_x = \tfrac12\big(e_t - i\vec e_z\big).
 $$
 The number operator is a projector, so its spectrum is $\{0,1\}$: the mode is either empty or occupied. The **vacuum projector** is the spectral projector onto the empty eigenvalue,
 $$
-|0\rangle\langle 0| \;=\; e_t - \tilde N_{\mathrm{tr}} \;=\; \tfrac12\big(e_t + i\vec e_z\big) \;=\; \tilde\Pi_+.
+|0\rangle\langle 0| \;=\; e_t - \tilde\Pi_- \;=\; \tfrac12\big(e_t + i\vec e_z\big) \;=\; \tilde\Pi_+.
 $$
 Here and below
 $$
@@ -148,9 +148,9 @@ $$
 
 **A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\mathsf{M}_2$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_+^2-\tilde\Pi_+=0$; $\tilde\Pi_+^{*}-\tilde\Pi_+=0$; $\det\mathsf{M}_2(\tilde\Pi_+)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde\Pi_+)=1$; $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=I_2$; $\mathsf{M}_2((-1)^F)=\sigma_3$; and $\mathsf{M}_2((-1)^F\vec\Upsilon_x(-1)^F) = -\mathsf{M}_2(\vec\Upsilon_x)$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
 $$
-\langle \vec\Upsilon_y \vec\Upsilon_x\rangle_t = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0,
+\langle \vec\Upsilon_y \vec\Upsilon_x\rangle_t = \mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0,
 \qquad
-\langle \vec\Upsilon_x \vec\Upsilon_y\rangle_t = \mathrm{Tr}\big(\tilde\Pi_1(e_t-\tilde N_{\mathrm{tr}})\big) = 1,
+\langle \vec\Upsilon_x \vec\Upsilon_y\rangle_t = \mathrm{Tr}\big(\tilde\Pi_1(e_t-\tilde\Pi_-)\big) = 1,
 $$
 which are the statements that the vacuum is empty and the mode anticommutator is normalized.
 
@@ -257,7 +257,7 @@ For a single fermionic mode the vacuum of the biquaternion framework is a concre
 $$
 |0\rangle\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
 \qquad
-\tilde N_{\mathrm{tr}} = \tfrac12\big(e_t-i\vec e_z\big) = \tilde\Pi_-,
+\tilde\Pi_- = \tfrac12\big(e_t-i\vec e_z\big) = \tilde\Pi_-,
 $$
 with $\tilde\Pi_++\tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_-=0$, and $(-1)^F = i\vec e_z = \tilde\Pi_+-\tilde\Pi_-$. Minimality is equivalently rank one, equivalently the one-dimensional Peirce corner $\tilde P\mathbb{B}\tilde P\cong\mathbb{C}$, equivalently the minimality of the left ideal $\mathbb{B}\tilde\Pi_+$. That ideal is the two-complex-dimensional fundamental module — the one-particle spinor space — so the vacuum idempotent determines the module on which the field lives.
 
@@ -279,7 +279,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, $\vec u\in S^2$ | Minimal idempotents; vacuum projectors |
 | $|0\rangle\langle 0|=\tilde\Pi_+$ | One-mode vacuum projector |
-| $\tilde N_{\mathrm{tr}}=\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$ | Number operator (occupied projector) |
+| $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ | Number operator (occupied projector) |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
 | $(-1)^F=i\vec e_z=\tilde\Pi_+-\tilde\Pi_-$ | Fermion-parity grading |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Minimal left ideal; one-particle (spinor) module |

@@ -154,17 +154,17 @@ The classification of one-parameter subgroups established in *Split-Biquaternion
 
 ### Horospheres and the Busemann Function
 
-**Definition.** For a boundary point $\xi = [\tilde N]\in\partial H^3$ and a real number $s$, the **horosphere** centred at $\xi$ is
+**Definition.** For a boundary point $\xi = [\tilde Q_{\mathrm{n}}]\in\partial H^3$ and a real number $s$, the **horosphere** centred at $\xi$ is
 
 $$
-\operatorname{Hor}(\xi,s) = \left\{\tilde{Q}\in H^3 : -\log\!\left(-g(\tilde{Q},\tilde N)\right) = s\right\},
+\operatorname{Hor}(\xi,s) = \left\{\tilde{Q}\in H^3 : -\log\!\left(-g(\tilde{Q},\tilde Q_{\mathrm{n}})\right) = s\right\},
 $$
 
-where $\tilde N$ is a null vector on the ray $\xi$, normalised so that the sign of $g(\tilde{Q},\tilde N)$ is positive for all $\tilde{Q}\in H^3$.
+where $\tilde Q_{\mathrm{n}}$ is a null vector on the ray $\xi$, normalised so that the sign of $g(\tilde{Q},\tilde Q_{\mathrm{n}})$ is positive for all $\tilde{Q}\in H^3$.
 
 **Proposition.** Every horosphere is a smooth surface diffeomorphic to $\mathbb{R}^2$, it is orthogonal to every geodesic ending at $\xi$, and the parabolic one-parameter subgroups act simply transitively on it. In the upper half-space model with $\xi$ the point at infinity, the horospheres are the horizontal planes.
 
-*Proof.* The function $\tilde{Q}\mapsto-\log(-g(\tilde{Q},\tilde N))$ is the Busemann function of the ray $\xi$; its level sets are the horospheres, and the standard properties of the Busemann function give the orthogonality to the geodesics ending at $\xi$ and the transitivity of the parabolic stabiliser, whose Lie algebra is the nilpotent part of the Iwasawa decomposition of $\mathrm{SO}(3,1)$; in the upper half-space model the level sets of the height function are horizontal planes.
+*Proof.* The function $\tilde{Q}\mapsto-\log(-g(\tilde{Q},\tilde Q_{\mathrm{n}}))$ is the Busemann function of the ray $\xi$; its level sets are the horospheres, and the standard properties of the Busemann function give the orthogonality to the geodesics ending at $\xi$ and the transitivity of the parabolic stabiliser, whose Lie algebra is the nilpotent part of the Iwasawa decomposition of $\mathrm{SO}(3,1)$; in the upper half-space model the level sets of the height function are horizontal planes.
 
 Note that the parabolic subgroups of $SO^{+}(3,1)$ are represented by nilpotent elements of the Lie algebra although the split biquaternion algebra contains no nilpotent; the nilpotents reside in the Lie algebra of the isometry group and not in the coefficient algebra. This is the geometric form of the negative statement of *Split-Biquaternion Rotations and the Lorentz Group*.
 
@@ -220,7 +220,7 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $O(3,1)$, $SO^{+}(3,1)$, $O^{\uparrow}(3,1)$ | Lorentz group, restricted Lorentz group, sheet-preserving subgroup |
 | $SO(3)$, $O(4)$, $SO(4)$ | Isotropy and the rotational comparison groups |
 | $\partial H^3$ | Boundary at infinity, the projectivised null cone $\cong S^2$ |
-| $\xi = [\tilde N]$ | Boundary point, ray of the null vector $\tilde N$ |
+| $\xi = [\tilde Q_{\mathrm{n}}]$ | Boundary point, ray of the null vector $\tilde Q_{\mathrm{n}}$ |
 | $S^2$, $S^3$, $\mathbb{C}P^1$ | Boundary two-sphere, quaternion sphere, Riemann sphere |
 | $PSL_2(\mathbb{C})$, $PSU(2)$, $SL_2(\mathbb{C})$ | Isometry group of $H^3$ through its boundary action, its isotropy, and its double cover |
 | $\alpha,\beta,\gamma,\delta$ | Matrix entries of a Möbius transformation of the boundary |

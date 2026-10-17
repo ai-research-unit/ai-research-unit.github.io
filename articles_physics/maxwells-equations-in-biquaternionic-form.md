@@ -549,10 +549,10 @@ The energy–momentum tensor is the natural bridge between the electromagnetic f
 The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
 
 $$
-\int_{\partial D} \tilde{n} \tilde{W}\,dS = -\int_D \tilde{P}\,dV,
+\int_{\partial D} \tilde U_{\mathrm n} \tilde{W}\,dS = -\int_D \tilde{P}\,dV,
 $$
 
-where $\tilde{n}$ is the biquaternion-valued outward normal on $\partial D$. This is the biquaternionic form of the **Poynting theorem**: the flux of energy–momentum through the boundary equals the work done by the sources inside.
+where $\tilde U_{\mathrm n} = i n_t e_t + \vec n$, $n_t^2 + \lvert\vec n\rvert^2 = 1$, is the outward unit normal on $\partial D$. This is the biquaternionic form of the **Poynting theorem**: the flux of energy–momentum through the boundary equals the work done by the sources inside.
 
 The conservation law implies the **uniqueness** of solutions of the Cauchy problem. Suppose two solutions $\tilde{F}_1$ and $\tilde{F}_2$ satisfy the same initial data at $t = 0$ and the same four-current $\tilde J$. Their difference $\tilde{F} = \tilde{F}_1 - \tilde{F}_2$ satisfies the homogeneous equation $\tilde{\nabla}\tilde{F} = 0$ with zero initial data. The energy integral
 

@@ -7,7 +7,7 @@ A spin-1/2 placed in a static magnetic field $B_0\vec u_z$ precesses at the Larm
 This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. The physical content is standard and is reproduced here exactly. What the article establishes is **where** the driven problem lives in the algebra and which of the framework's structures the resonance condition and the Rabi formula expose:
 
 1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_1 = \tfrac{\hbar}{2}i\vec e_x$ and $\tilde{S}_2 = \tfrac{\hbar}{2}i\vec e_y$, both in $\mathbb{M}_+$; the total Hamiltonian remains in $\mathbb{M}_+$ for all times. No element of the material sector enters the spin dynamics.
-2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)\in\mathbb{H}_{\mathbb{B}}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
+2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)\in\mathbb{H}_{\mathbb{B}}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
 3. **The effective Hamiltonian is static and traceless**,
    $$
    \tilde{H}_R = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{M}_+,
@@ -76,16 +76,16 @@ which in the algebra is a product of unitaries in the limit of infinitesimal ste
 Define the rotating-frame state and observable by
 
 $$
-\psi_R(t) = \tilde u_R(t)^{*}\,\psi(t),
+\psi_R(t) = \tilde u_{\mathrm r}(t)^{*}\,\psi(t),
 \qquad
-\tilde u_R(t) = \exp\!\left(-\frac{\omega t}{2}\vec e_z\right)
+\tilde u_{\mathrm r}(t) = \exp\!\left(-\frac{\omega t}{2}\vec e_z\right)
 = \cos\frac{\omega t}{2}\,e_t - \sin\frac{\omega t}{2}\,\vec e_z .
 $$
 
-The rotor $\tilde u_R$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\,d\psi/dt = \tilde{H}\psi$ becomes $i\hbar\,d\psi_{R}/dt = \tilde{H}_R\psi_R$ with
+The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\,d\psi/dt = \tilde{H}\psi$ becomes $i\hbar\,d\psi_{R}/dt = \tilde{H}_R\psi_R$ with
 
 $$
-\tilde{H}_R = \tilde u_R^{*}\,\tilde{H}\,\tilde u_R - i\hbar\,\tilde u_R^{*}\,\partial/\partial t\tilde u_R .
+\tilde{H}_R = \tilde u_{\mathrm r}^{*}\,\tilde{H}\,\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\,\partial/\partial t\tilde u_{\mathrm r} .
 $$
 
 The second term is the "fictitious" term produced by the time dependence of the frame; it is what makes the transformation a change of description rather than a mere relabelling.
@@ -95,10 +95,10 @@ The second term is the "fictitious" term produced by the time dependence of the 
 The three terms of $\tilde{H}$ transform as follows. The longitudinal term is proportional to $i\vec e_z$, which commutes with the rotor, so it is unchanged. The transverse combination is rotated into a fixed direction: using the conjugation rule for a rotor about $\vec e_z$, one finds
 
 $$
-\tilde u_R^{*}\left(i\vec e_x\cos\omega t - i\vec e_y\sin\omega t\right)\tilde u_R = i\vec e_x ,
+\tilde u_{\mathrm r}^{*}\left(i\vec e_x\cos\omega t - i\vec e_y\sin\omega t\right)\tilde u_{\mathrm r} = i\vec e_x ,
 $$
 
-so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde u_R^{*}\partial/\partial t\tilde u_R = +\tfrac{\hbar\omega}{2}i\vec e_z$. Adding the three contributions,
+so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde u_{\mathrm r}^{*}\partial/\partial t\tilde u_{\mathrm r} = +\tfrac{\hbar\omega}{2}i\vec e_z$. Adding the three contributions,
 
 $$
 \boxed{\;\tilde{H}_R = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{M}_+ \;}
@@ -150,7 +150,7 @@ $$
 = \cos\frac{\tilde\Omega t}{2}\,e_t - \sin\frac{\tilde\Omega t}{2}\;\frac{\omega_1 \vec e_x + \Delta \vec e_z}{\tilde\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde u_H\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(t) = \tilde u_R(t)\tilde{Ϛ}_R(t)\tilde u_R(t)^{*}$, and the transition probability is the trace pairing with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde u_H\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\tilde\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(t) = \tilde u_{\mathrm r}(t)\tilde{Ϛ}_R(t)\tilde u_{\mathrm r}(t)^{*}$, and the transition probability is the trace pairing with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
 P_{\downarrow}(t) = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}(t)\right)
@@ -165,7 +165,7 @@ $$
 
 the elementary sinusoidal oscillation between the two levels at the Rabi frequency.
 
-The derivation contains one geometric fact worth isolating. In the rotating frame the evolution is a rotation of the Bloch vector about the fixed axis $\vec u_R$; the laboratory measurement axis $\vec u_z$ is itself carried by the rotor $\tilde u_R(t)$ in the laboratory frame, and the overlap of the two rotations is what produces the factor $\omega_1^2/\tilde\Omega^2$ and the argument $\tilde\Omega t/2$. Both factors are the standard ones; the biquaternion setting writes each rotation as a rotor and the probability as a trace.
+The derivation contains one geometric fact worth isolating. In the rotating frame the evolution is a rotation of the Bloch vector about the fixed axis $\vec u_R$; the laboratory measurement axis $\vec u_z$ is itself carried by the rotor $\tilde u_{\mathrm r}(t)$ in the laboratory frame, and the overlap of the two rotations is what produces the factor $\omega_1^2/\tilde\Omega^2$ and the argument $\tilde\Omega t/2$. Both factors are the standard ones; the biquaternion setting writes each rotation as a rotor and the probability as a trace.
 
 ### The Rotating-Wave Approximation
 
@@ -213,7 +213,7 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 
 **What the algebra organises.**
 
-- **A single sector.** The drive, the static field and the effective field are all Hermitian elements of $\mathbb{M}_+$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde u_R$, which is a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
+- **A single sector.** The drive, the static field and the effective field are all Hermitian elements of $\mathbb{M}_+$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde u_{\mathrm r}$, which is a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
 - **The rotor as the natural variable.** The rotating frame is not an ad hoc complex exponential; it is conjugation by the unit real quaternion $\exp(-\tfrac{\omega t}{2}\vec e_z)$, the same rotor that carries the Larmor precession. The effective Hamiltonian is the transformed observable, and the resonance condition is the vanishing of its longitudinal component.
 - **The spectral gap as the Rabi frequency.** The generalized Rabi frequency is the difference of the two eigenvalues of the effective Hamiltonian, $\pm\hbar\tilde\Omega/2$, so it is a spectral quantity of a Hermitian element of $\mathbb{M}_+$. The maximum transition amplitude $\omega_1^2/(\omega_1^2+\Delta^2)$ is the square of the transverse fraction of the effective field, i.e. the geometric tilt of $\vec u_R$ from the equator.
 - **No privileged counter-rotating terms.** Because the drive is written as a Hermitian element with an explicit time dependence, the RWA is exposed as a physical approximation about which rotor the drive tracks, not as an algebraic necessity.
@@ -240,10 +240,10 @@ $$
 \tilde{H}(t) = -\frac{\hbar\omega_0}{2}i\vec e_z - \frac{\hbar\omega_1}{2}\left(i\vec e_x\cos\omega t - i\vec e_y\sin\omega t\right) \in \mathbb{M}_+,
 $$
 
-with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, and it produces the static effective Hamiltonian
+with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, and it produces the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde u_R^{*}\tilde{H}\tilde u_R - i\hbar\tilde u_R^{*}\partial/\partial t\tilde u_R
+\tilde{H}_R = \tilde u_{\mathrm r}^{*}\tilde{H}\tilde u_{\mathrm r} - i\hbar\tilde u_{\mathrm r}^{*}\partial/\partial t\tilde u_{\mathrm r}
 = -\frac{\hbar}{2}\Big[(\omega_0-\omega)i\vec e_z + \omega_1 i\vec e_x\Big].
 $$
 
@@ -272,7 +272,7 @@ which reduces to $\sin^2(\omega_1t/2)$ on resonance. The $\pi$-pulse $t = \pi/\o
 | $\omega_1 = \gamma B_1$ | Rabi frequency |
 | $\Delta = \omega_0-\omega$ | Detuning |
 | $\tilde{H}(t) = -\tfrac{\hbar\omega_0}{2}i\vec e_z-\tfrac{\hbar\omega_1}{2}(i\vec e_x\cos\omega t-i\vec e_y\sin\omega t)$ | Laboratory Hamiltonian |
-| $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor |
+| $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor |
 | $\tilde{H}_R = -\tfrac{\hbar}{2}[(\omega_0-\omega)i\vec e_z+\omega_1i\vec e_x]$ | Effective Hamiltonian in the rotating frame |
 | $\tilde\Omega = \sqrt{\omega_1^2+\Delta^2}$ | Generalized Rabi frequency (spectral gap) |
 | $\vec u_R = (\omega_1\vec e_x+\Delta \vec e_z)/\tilde\Omega$ | Effective rotation axis |

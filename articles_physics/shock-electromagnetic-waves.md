@@ -78,7 +78,7 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \vec u$ for a spatial surface and $\tilde{n} = i\nu_t\,e_t + \vec u$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
+The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
 
 $$
 \partial/\partial Q_\mu \tilde{F} = \{\partial/\partial Q_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
@@ -91,10 +91,10 @@ where $\{\partial/\partial Q_\mu \tilde{F}\}$ denotes the classical derivative a
 Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
 
 $$
-\tilde{n}\,[\tilde{F}]_S = 0.
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0.
 $$
 
-**Consequence for a homogeneous medium.** In a homogeneous medium, the normal $\tilde{n}$ is invertible for any **non-characteristic** surface. For such surfaces, the jump condition $\tilde{n}[\tilde{F}]_S = 0$ forces the jump to vanish:
+**Consequence for a homogeneous medium.** In a homogeneous medium, the normal $\tilde U_{\mathrm n}$ is invertible for any **non-characteristic** surface. For such surfaces, the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ forces the jump to vanish:
 
 $$
 [\tilde{F}]_S = 0 \qquad \text{(non-characteristic surface, homogeneous medium)}.
@@ -102,9 +102,9 @@ $$
 
 So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.
 
-**Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde{n}\tilde{n}^{\natural} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
+**Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde U_{\mathrm n}\tilde U_{\mathrm n}^{\natural} = 0$), then $\tilde U_{\mathrm n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
 
-**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.
+**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ in a homogeneous medium.
 
 ### The Light-Cone Condition
 
@@ -134,7 +134,7 @@ $$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
 [b] + i(\vec u,[\vec B]) = 0 ,
@@ -171,7 +171,7 @@ $$
 [W]_{F_t} = c^{-1}\,(\vec u,[\vec P]_{F_t}),
 $$
 
-which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S$.
+which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{P}]_S$.
 
 ### The Shock Waves of the Charge–Current Field
 
@@ -327,11 +327,11 @@ where $\tilde J_{\mathrm{eff}}$ includes both the external sources (free charges
 A shock front is a surface $S$ across which the effective four-current $\tilde J_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:
 
 $$
-\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde J_{\mathrm{eff}} \text{ is continuous across } S,
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde J_{\mathrm{eff}} \text{ is continuous across } S,
 $$
 
 $$
-\tilde{n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\mathrm{eff}}]_S \quad \text{when } \tilde J_{\mathrm{eff}} \text{ jumps across } S.
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\mathrm{eff}}]_S \quad \text{when } \tilde J_{\mathrm{eff}} \text{ jumps across } S.
 $$
 
 In the linear vacuum case, $\tilde J_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\sqrt{\mu}\,\tilde{J}_{\mathrm{eff}}$ provides the driving term for the shock.
@@ -348,10 +348,10 @@ For a shock front in a nonlinear medium, the **energy** of the electromagnetic f
 
 ### The Jump Relation
 
-Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde{n}$, the jump satisfies
+Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde U_{\mathrm n}$, the jump satisfies
 
 $$
-[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S,
+[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{P}]_S,
 $$
 
 where $\tilde{P}$ is the biquaternionic power–force density. This is the biquaternionic form of the **Rankine–Hugoniot condition** for electromagnetic shocks, and it is the counterpart of the standard conservation-law relation for fluid shocks.
@@ -406,7 +406,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
-| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\vec u$ for spatial, $i\nu_t e_t + \vec u$ for general) |
+| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |

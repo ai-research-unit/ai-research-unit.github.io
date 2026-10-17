@@ -147,7 +147,7 @@ Three structural consequences follow, and they are the content of the constructi
 
 **The annihilation operator is in the radical.** For the vacuum state,
 $$
-\omega_0\big(\vec\Upsilon_y \vec\Upsilon_x\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0
+\omega_0\big(\vec\Upsilon_y \vec\Upsilon_x\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0
 \quad\Longrightarrow\quad
 \pi_t(\vec\Upsilon_x)\,\Omega_0 = [\vec\Upsilon_x] = 0 ,
 $$

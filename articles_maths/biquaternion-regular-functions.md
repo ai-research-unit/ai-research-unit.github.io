@@ -115,13 +115,13 @@ The integral theory is developed on $\mathbb{H}_{\mathbb{B}}$, where it is the s
 **Theorem (Cauchy integral formula).** Let $F^{\mathrm{fn}}$ be continuously differentiable on a domain $\Omega \subset \mathbb{H}_{\mathbb{B}}$ with piecewise smooth boundary $\partial\Omega$, and let $\tilde{Q}_0$ be an interior point. Then
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde{n}F^{\mathrm{fn}}(\tilde{Q})\,dS - \frac{1}{2\pi^2}\int_{\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)(\tilde{\nabla}F^{\mathrm{fn}})(\tilde{Q})\,dV,
+F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde u_{\mathrm n}F^{\mathrm{fn}}(\tilde{Q})\,dS - \frac{1}{2\pi^2}\int_{\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)(\tilde{\nabla}F^{\mathrm{fn}})(\tilde{Q})\,dV,
 $$
 
-where $\tilde{n}$ is the biquaternion-valued outward unit normal. If $F^{\mathrm{fn}}$ is regular, the volume term vanishes and
+where $\tilde u_{\mathrm n}$ is the biquaternion-valued outward unit normal. If $F^{\mathrm{fn}}$ is regular, the volume term vanishes and
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde{n}F^{\mathrm{fn}}(\tilde{Q})\,dS.
+F^{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G^{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)\tilde u_{\mathrm n}F^{\mathrm{fn}}(\tilde{Q})\,dS.
 $$
 
 Three hypotheses must be emphasized: the formula holds on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, where all four coefficients of $\tilde{Q}$ are real, and is **not** asserted on $\mathbb{M}_+$ or $\mathbb{M}_-$ or on the full algebra $\mathbb{B}$ (§*Where the Complex Analogy Fails: Zero Divisors and the Null Cone*); regularity is required on all of $\Omega$, not merely on the boundary; and the operator inverted is the first-order operator $\tilde{\nabla}$, normalized by $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2\delta_0 e_t$. The mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates, and the residue theory for isolated singularities then follow, as in the integration article, on $\mathbb{H}_{\mathbb{B}}$ only.

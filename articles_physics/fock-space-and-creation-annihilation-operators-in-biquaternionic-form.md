@@ -165,7 +165,7 @@ The single mode is already in the corpus. The harmonic oscillator article constr
 $$
 \vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),\qquad
-\tilde N_{\mathrm{tr}}=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),
+\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),
 $$
 
 and reads them as an unfaithful truncation of a **bosonic** oscillator: the commutator is $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\ne e_t$, which is a failure of the bosonic canonical relation. That interpretation is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives
@@ -173,7 +173,7 @@ and reads them as an unfaithful truncation of a **bosonic** oscillator: the comm
 $$
 \vec\Upsilon_x^2=0,\qquad (\vec\Upsilon_y)^2=0,\qquad
 \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad
-\tilde N_{\mathrm{tr}}^2=\tilde N_{\mathrm{tr}},
+\tilde\Pi_-^2=\tilde\Pi_-,
 $$
 
 so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ they have the images
@@ -181,7 +181,7 @@ so the truncated ladder satisfies the **fermionic** canonical anticommutation re
 $$
 \mathsf{M}_2(\vec\Upsilon_x)=|0\rangle\langle1|,\qquad
 \mathsf{M}_2(\vec\Upsilon_y)=|1\rangle\langle0|,\qquad
-\mathsf{M}_2(\tilde N_{\mathrm{tr}})=|1\rangle\langle1|,\qquad
+\mathsf{M}_2(\tilde\Pi_-)=|1\rangle\langle1|,\qquad
 \mathsf{M}_2(i\vec e_z)=\sigma_3,
 $$
 
@@ -189,15 +189,15 @@ where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the mod
 
 Three consequences follow at once, all of them recomputed above.
 
-- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
+- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$, and $\tilde\Pi_-=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
 - **The grading is an element of the algebra.** Fermion parity for one mode is
 
 $$
-(-1)^F=e_t-2\tilde N_{\mathrm{tr}}=i\vec e_z,
+(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z,
 $$
 
-which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde N_{\mathrm{tr}}(-1)^F=\tilde N_{\mathrm{tr}}$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized **inside** $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
-- **The grading is not unique.** The choice $i\vec e_z$ is the choice of a mode; for any unit pure quaternion $\vec u$ the element $i\vec u$ is Hermitian, squares to $e_t$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec u)$. This was checked on $\vec u=(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$, a direction chosen after the claim rather than the $\vec e_z$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\vec u$ and $-\vec u$ giving the same grading.
+which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde\Pi_-(-1)^F=\tilde\Pi_-$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized **inside** $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
+- **The grading is not unique.** The choice $i\vec e_z$ is the choice of a mode; for any unit pure quaternion $\vec u$ the element $i\vec u$ is Hermitian, squares to $e_t$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$. This was checked on $\vec u=(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$, a direction chosen after the claim rather than the $\vec e_z$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\vec u$ and $-\vec u$ giving the same grading.
 
 ### What the Capacity Statement Does and Does Not Say
 
@@ -236,7 +236,7 @@ The table's last row is the article's finding in one line. The statistics is car
 
 **Established, and recomputed here.**
 
-- The single fermionic mode is realized in $\mathbb{B}$: $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and are nilpotent, with $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ idempotent.
+- The single fermionic mode is realized in $\mathbb{B}$: $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and are nilpotent, with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ idempotent.
 - The one-mode Fock space is the fundamental module of $\mathbb{B}$, and $\mathbb{B}$ is its endomorphism algebra.
 - Fermion parity for one mode is the element $(-1)^F=i\vec e_z\in\mathbb{M}_+$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.
 - The capacity of $\mathbb{B}$ is one fermionic mode: $N$ modes generate $M_{2^N}(\mathbb{C})$, of dimension $4^N$, which exceeds four for $N\ge2$.
@@ -255,7 +255,7 @@ The table's last row is the article's finding in one line. The statistics is car
 
 ## Summary
 
-The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.
+The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.
 
 The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mathbb{C})$ of dimension $4^N$, which leaves no room in a four-dimensional algebra as soon as $N\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.
 
@@ -279,7 +279,7 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $N_\gamma$ | Photon number (transverse sum) |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator in $\mathbb{B}$ |
 | $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode creation operator in $\mathbb{B}$ |
-| $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
+| $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode); conjugation is the $\mathbb{Z}/2$ grading |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ | Canonical anticommutator, realized in $\mathbb{B}$ |
 | $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |

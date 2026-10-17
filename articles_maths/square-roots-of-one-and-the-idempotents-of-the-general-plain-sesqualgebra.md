@@ -351,30 +351,30 @@ $$
 
 **The idempotents of the algebra are the halving map applied to its own roots of $+1$, a real four-parameter family together with the trivial pair; the idempotents of the block are the Hermitian ones, so the two sets agree exactly on the trivial pair and the projections, and every non-Hermitian idempotent of the algebra is dropped by the block.**
 
-The idempotents of the associative product are the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Sigma)$ over the roots $\tilde\Sigma$ of $+1$ of the algebra, $\tilde\Sigma^{2}=e_t$, by the halving map of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, where those roots are classified; the map $\tilde\Sigma\mapsto\tilde\Pi$ is a bijection from the algebra's roots of $+1$ onto its idempotents, and the non-trivial roots give the non-trivial idempotents, a real four-parameter family. The block's idempotents are the **Hermitian** idempotents of the algebra, by the reduction, and they are the subfamily with $\tilde\Sigma$ Hermitian.
+The idempotents of the associative product are the elements $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the algebra, $\tilde\Xi^{2}=e_t$, by the halving map of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, where those roots are classified; the map $\tilde\Xi\mapsto\tilde\Pi$ is a bijection from the algebra's roots of $+1$ onto its idempotents, and the non-trivial roots give the non-trivial idempotents, a real four-parameter family. The block's idempotents are the **Hermitian** idempotents of the algebra, by the reduction, and they are the subfamily with $\tilde\Xi$ Hermitian.
 
 | idempotent set | description | size |
 |---|---|---|
-| of the associative product $\tilde P\tilde Q$ | the elements $\tfrac12(e_t+\tilde\Sigma)$ over the roots $\tilde\Sigma$ of $+1$ of the algebra | a real four-parameter family together with two isolated points |
+| of the associative product $\tilde P\tilde Q$ | the elements $\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the algebra | a real four-parameter family together with two isolated points |
 | of the block $\star$ | the trivial pair and the projections $\tilde\Pi_+(\tilde\Xi)$ over the Hermitian roots $\tilde\Xi$ of $+1$ | a real two-parameter family together with two isolated points |
 | in common | the trivial pair $0,e_t$ and the projections | the whole block set |
 
-**Example (the simplest non-Hermitian idempotent).** Take the root of $+1$ of the algebra $\tilde\Sigma=\sqrt2\,i\vec e_x-\vec e_y$, so that $\tilde\Sigma^{2}=e_t$ and
+**Example (the simplest non-Hermitian idempotent).** Take the root of $+1$ of the algebra $\tilde\Xi=\sqrt2\,i\vec e_x-\vec e_y$, so that $\tilde\Xi^{2}=e_t$ and
 
 $$
-\tilde\Pi=\tfrac12(e_t+\tilde\Sigma)=\tfrac12e_t+\tfrac12\bigl(\sqrt2\,i\vec e_x-\vec e_y\bigr)
+\tilde\Pi=\tfrac12(e_t+\tilde\Xi)=\tfrac12e_t+\tfrac12\bigl(\sqrt2\,i\vec e_x-\vec e_y\bigr)
 $$
 
-is an idempotent of the algebra, not Hermitian: $\tilde\Sigma^{*}=\sqrt2\,i\vec e_x+\vec e_y\neq\tilde\Sigma$, so $\tilde\Pi^{*}\neq\tilde\Pi$. Its square in the block is
+is an idempotent of the algebra, not Hermitian: $\tilde\Xi^{*}=\sqrt2\,i\vec e_x+\vec e_y\neq\tilde\Xi$, so $\tilde\Pi^{*}\neq\tilde\Pi$. Its square in the block is
 
 $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=e_t+\tfrac{\sqrt2}{2}\,i\vec e_x+\tfrac{\sqrt2}{2}\,i\vec e_z\neq\tilde\Pi .
 $$
 
-*Proof.* The idempotence for the algebra is the halving map at the root $\tilde\Sigma$ of $+1$; the failure of Hermitianness is read from $\tilde\Sigma^{*}=\sqrt2\,i\vec e_x+\vec e_y$. For the square, $\tilde\Pi\tilde\Pi^{*}=\tfrac14(e_t+\tilde\Sigma)(e_t+\tilde\Sigma^{*})=\tfrac14(e_t+\tilde\Sigma+\tilde\Sigma^{*}+\tilde\Sigma\tilde\Sigma^{*})$. Here $\tilde\Sigma+\tilde\Sigma^{*}=2\sqrt2\,i\vec e_x$ and
+*Proof.* The idempotence for the algebra is the halving map at the root $\tilde\Xi$ of $+1$; the failure of Hermitianness is read from $\tilde\Xi^{*}=\sqrt2\,i\vec e_x+\vec e_y$. For the square, $\tilde\Pi\tilde\Pi^{*}=\tfrac14(e_t+\tilde\Xi)(e_t+\tilde\Xi^{*})=\tfrac14(e_t+\tilde\Xi+\tilde\Xi^{*}+\tilde\Xi\tilde\Xi^{*})$. Here $\tilde\Xi+\tilde\Xi^{*}=2\sqrt2\,i\vec e_x$ and
 
 $$
-\tilde\Sigma\tilde\Sigma^{*}=\bigl(\sqrt2\,i\vec e_x-\vec e_y\bigr)\bigl(\sqrt2\,i\vec e_x+\vec e_y\bigr)=3e_t+2\sqrt2\,i\vec e_z ,
+\tilde\Xi\tilde\Xi^{*}=\bigl(\sqrt2\,i\vec e_x-\vec e_y\bigr)\bigl(\sqrt2\,i\vec e_x+\vec e_y\bigr)=3e_t+2\sqrt2\,i\vec e_z ,
 $$
 
 by the multiplication of the basis, so the sum is $\tfrac14(4e_t+2\sqrt2\,i\vec e_x+2\sqrt2\,i\vec e_z)=e_t+\tfrac{\sqrt2}{2}i\vec e_x+\tfrac{\sqrt2}{2}i\vec e_z$, which differs from $\tilde\Pi$.
@@ -432,7 +432,7 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 | $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$, $\tilde\Pi_-(\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(-\tilde\Xi)$ | the projections, the roots $\tilde\Xi=i\vec u$ over the real unit vectors $\vec u$, and the complementary pairing |
 | $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_t\pm\tilde\Xi)$ | the two idempotents of a Hermitian root $\tilde\Xi$ of $+1$, a complete orthogonal pair |
 | $\tfrac12(e_t+\tilde\Xi)$, $\tilde\Xi=2\tilde\Pi-e_t$ | the halving map and its inverse |
-| $\tilde\Sigma^{2}=e_t$ | a root of $+1$ of the algebra |
+| $\tilde\Xi^{2}=e_t$ | a root of $+1$ of the algebra, not necessarily Hermitian |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ |
 | $E_{11},E_{22}$ | the diagonal matrix units, $\mathsf{M}_2(\tilde\Pi_+),\mathsf{M}_2(\tilde\Pi_-)$ |
 

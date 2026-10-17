@@ -88,17 +88,17 @@ $$
 So the truncated ladder satisfies the **fermionic** canonical anticommutation relations exactly, with no truncation error, while its commutator fails the bosonic relation by a nonzero, non-central element. The number operator and the fermion-parity element are
 
 $$
-\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_-,\qquad
-(-1)^F=e_t-2\tilde N=i\vec e_z=\frac{2\tilde S_3}{\hbar},
+\tilde\Pi_-=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec e_z),\qquad
+(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z=\frac{2\tilde S_3}{\hbar},
 $$
 
-with $\tilde N^2=\tilde N$, so that $\tilde N$ is a pure-state projector and the single-mode occupation is valued in $\{0,1\}$. The parity element is Hermitian, squares to $e_t$, and gives the $\mathbb{Z}/2$ grading by inner automorphism,
+with $\tilde\Pi_-^2=\tilde\Pi_-$, so that $\tilde\Pi_-$ is a pure-state projector and the single-mode occupation is valued in $\{0,1\}$. The parity element is Hermitian, squares to $e_t$, and gives the $\mathbb{Z}/2$ grading by inner automorphism,
 
 Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 $$
 (-1)^F\tilde a\,(-1)^F=-\tilde a,\qquad
-(-1)^F\tilde N\,(-1)^F=\tilde N .
+(-1)^F\tilde\Pi_-\,(-1)^F=\tilde\Pi_-.
 $$
 
 This is a sharp statement about the $\mathbb{Z}/2$ grading that the KMS article identifies as missing: for one mode it is not missing at all. It is realized **inside** $\mathbb{B}$ as conjugation by a Hermitian involution of the informational sector, and its odd subspace is the two-complex-dimensional span of $\tilde a$ and $\tilde a^\dagger$. What the KMS article requires for a field is a grading on the *operator algebra of all modes*; the single-mode element above is not that, and the field grading is not an element of $\mathbb{B}$ by the dimension count. The two statements are compatible: the grading is algebraic for one mode and external for the field.
@@ -205,7 +205,7 @@ $$
 
 which is non-negative on the Fock space up to the c-number $E_0$ that normal ordering removes. With the **Bose choice**, $b^{\mathrm{fop}}b^{\mathrm{fop}\dagger}=e_t+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}$, and the antiparticle contribution enters with the opposite sign, $a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}$: the energy is unbounded below as antiparticle number grows, and the vacuum is unstable. The same sign appears in the norm: the anticommutator gives the positive-definite fermionic Fock space, the commutator gives an indefinite metric. This is the parent quantization article's argument, and it is stated here because it is half of the theorem's force.
 
-The finite algebra shows the same identity in miniature. The single fermionic mode satisfies $\tilde a\tilde a^\dagger=e_t-\tilde a^\dagger\tilde a$, so the normal-ordered Hamiltonian of one mode is $\hbar\omega\,\tilde a^\dagger\tilde a\ge 0$ on the module, with spectrum $\{0,\hbar\omega\}$ because $\tilde N$ is a projector. Its would-be bosonic partner would need $\tilde a\tilde a^\dagger=e_t+\tilde a^\dagger\tilde a$, i.e. $[\tilde a,\tilde a^\dagger]=e_t$, which the trace identity excludes. The positivity of the energy and the fermionic bracket are the same statement about the sign in $\tilde a\tilde a^\dagger=e_t\mp\tilde a^\dagger\tilde a$.
+The finite algebra shows the same identity in miniature. The single fermionic mode satisfies $\tilde a\tilde a^\dagger=e_t-\tilde a^\dagger\tilde a$, so the normal-ordered Hamiltonian of one mode is $\hbar\omega\,\tilde a^\dagger\tilde a\ge 0$ on the module, with spectrum $\{0,\hbar\omega\}$ because $\tilde\Pi_-$ is a projector. Its would-be bosonic partner would need $\tilde a\tilde a^\dagger=e_t+\tilde a^\dagger\tilde a$, i.e. $[\tilde a,\tilde a^\dagger]=e_t$, which the trace identity excludes. The positivity of the energy and the fermionic bracket are the same statement about the sign in $\tilde a\tilde a^\dagger=e_t\mp\tilde a^\dagger\tilde a$.
 
 ## The Four Quantizations
 
@@ -281,8 +281,8 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde u(2\pi,\vec u)=-e_t$, $\tilde u(4\pi,\vec u)=e_t$ | The two-valued sign of the spinor module |
 | $\tilde S_\mu=\tfrac{\hbar}{2}i\vec e_\mu$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin operators in $\mathbb{M}_+$; ladders in $\mathbb{B}$ (they are not Hermitian) |
 | $\tilde a=\tfrac12(i\vec e_x-\vec e_y)=\tilde S_+/\hbar$, $\tilde a^\dagger=\tilde S_-/\hbar$ | Single fermionic mode ladder |
-| $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_-$ | Single-mode number operator (idempotent) |
-| $(-1)^F=i\vec e_z=e_t-2\tilde N=2\tilde S_3/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
+| $\tilde\Pi_-=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
+| $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_3/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\tilde a,\tilde a^\dagger\}=e_t$, $[\tilde a,\tilde a^\dagger]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
 | $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\gamma^0$ | Quantized spinor-module field and its Dirac adjoint |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_r(\vec p)$ | Annihilation and antiparticle creation operators |

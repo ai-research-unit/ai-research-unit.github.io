@@ -36,12 +36,12 @@ of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T
 
 The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W^a_\mu$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g'$. The kinetic terms are
 $$
-\mathcal{L}_{\mathrm{kin}}=-\mathrm{Tr}\langle\tilde{\mathcal{W}}\rangle_{\natural}-\tfrac12\langle\tilde\nabla\tilde B\rangle_{\natural},
+\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_a W^a_{\mu\nu}W^{a\,\mu\nu}-\tfrac14\,B_{\mu\nu}B^{\mu\nu},
 $$
 $$
-\tilde{\mathcal{W}}=\tilde\nabla\tilde W+\tfrac{g}{2}\,[\tilde W,\tilde W],\qquad \tilde W=\sum_a\tilde W^aT^a ,
+W^a_{\mu\nu}=\frac{\partial W^a_\nu}{\partial Q_\mu}-\frac{\partial W^a_\mu}{\partial Q_\nu}+g\,\varepsilon^{abc}W^b_\mu W^c_\nu,
 \qquad
-\tilde B=\sum_\mu B_\mu e_\mu .
+B_{\mu\nu}=\frac{\partial B_\nu}{\partial Q_\mu}-\frac{\partial B_\mu}{\partial Q_\nu}.
 $$
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$

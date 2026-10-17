@@ -92,7 +92,7 @@ $$
 is a rank-one projection. The **minimal left ideal**
 
 $$
-\mathbb{B}\tilde{P} = \{\tilde{\chi}\tilde{P} : \tilde{\chi} \in \mathbb{B}\}
+\mathbb{B}\tilde{P} = \{\tilde{Q}\tilde{P} : \tilde{Q} \in \mathbb{B}\}
 $$
 
 is the state module; in the matrix picture it is the space of matrices with only the first column nonzero, i.e. the column spinors $\mathbb{C}^2$. An element $\psi \in \mathbb{B}\tilde{P}$ is a **spinor**, characterized by $\psi\tilde{P} = \psi$.
