@@ -52,16 +52,16 @@
         <h1 id="the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation"><strong>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A Lorentz boost acts on a plane wave in three apparently different ways: it shifts the frequency by the Doppler factor, it alters the propagation direction by aberration, and it rotates the polarisation. In the biquaternion algebra these are a single operation. The wave element and the field amplitude of a null wave are carried by a <strong>spatial rotation composed with a dilation</strong>, and the rotation and the dilation are the same for both.</p>
-<p>The result is due to William E. Baylis (<em>Relativity in Introductory Physics</em>, Can. J. Phys. <strong>82</strong> (2004) 853–873, arXiv:physics/0406158), who derived it in the algebra of physical space and flagged it as the paper's new result on the boost of a wave. The present article states it in the conventions of this series and verifies it. Two objects enter: the <strong>wave biquaternion</strong> $\tilde{K}$, which is a null element of the material sector and whose coefficient of $i$ is the frequency, and the <strong>field-strength biquaternion</strong> $\tilde{F}$ of <em>The Field-Strength Biquaternion and Its Invariants</em>, which is a null pure vector. Written for a wave of direction $\vec u_k$, wave speed $c$ and angular frequency $\omega$,</p>
+<p>The result is due to William E. Baylis (<em>Relativity in Introductory Physics</em>, Can. J. Phys. <strong>82</strong> (2004) 853–873, arXiv:physics/0406158), who derived it in the algebra of physical space and flagged it as the paper's new result on the boost of a wave. The present article states it in the conventions of this series and verifies it. Two objects enter: the <strong>wave biquaternion</strong> $\tilde P$, which is a null element of the material sector and whose coefficient of $i$ is the frequency, and the <strong>field-strength biquaternion</strong> $\tilde{F}$ of <em>The Field-Strength Biquaternion and Its Invariants</em>, which is a null pure vector. Written for a wave of direction $\vec u_k$, wave speed $c$ and angular frequency $\omega$,</p>
 <p>$$
-\tilde{K} = \frac{\omega}{c}\left(i + \vec u_k\right),
+\tilde P = \frac{\omega}{c}\left(i + \vec u_k\right),
 \qquad
-\langle\tilde{K}\rangle_{\natural} = 0 ,
+\langle\tilde P\rangle_{\natural} = 0 ,
 $$</p>
-<p>which is the four-wavevector $\tilde{K} = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with rotor $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a <strong>unit real quaternion</strong> $\tilde{u}$ and a positive scalar $\exp(d)$ for which</p>
+<p>which is the four-wavevector $\tilde P = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with rotor $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a <strong>unit real quaternion</strong> $\tilde{u}$ and a positive scalar $\exp(d)$ for which</p>
 <p>$$
 \boxed{\;
-\tilde{K}' \;=\; \tilde U\,\tilde{K}\,\tilde U^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde{K}\,\tilde{u}^{\natural},
+\tilde P' \;=\; \tilde U\,\tilde P\,\tilde U^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
 \qquad
 \tilde{F}' \;=\; \tilde U^{\natural}\,\tilde{F}\,\tilde U \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
 \;}
@@ -79,9 +79,9 @@ $$</p>
 <p>$$
 \left(i\vec u_k\right)\left(e_t + i\vec u_k\right) \;=\; \left(e_t + i\vec u_k\right)\left(i\vec u_k\right) \;=\; e_t + i\vec u_k.
 $$</p>
-<p><strong>The nullity of the wave element.</strong> The lemma is why $\tilde{K} = \frac{\omega}{c}(i+\vec u_k)$ has vanishing norm. Indeed $\tilde{K}^{\natural} = \frac{\omega}{c}(i-\vec u_k)$ and</p>
+<p><strong>The nullity of the wave element.</strong> The lemma is why $\tilde P = \frac{\omega}{c}(i+\vec u_k)$ has vanishing norm. Indeed $\tilde P^{\natural} = \frac{\omega}{c}(i-\vec u_k)$ and</p>
 <p>$$
-\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = \frac{\omega^2}{c^2}\left(i+\vec u_k\right)\left(i-\vec u_k\right)
+\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \frac{\omega^2}{c^2}\left(i+\vec u_k\right)\left(i-\vec u_k\right)
 = \frac{\omega^2}{c^2}\left(i^2 - \vec u_k\vec u_k\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
 $$</p>
 <p>because $\vec u_k\vec u_k = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (<em>Zero Divisors of the Biquaternion Algebra</em>, <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>), and this is the algebraic form of the statement that light has no rest frame.</p>
@@ -149,7 +149,7 @@ $$</p>
 \vec u_e \;=\; \frac{\vec u - \cos\alpha\,\vec u_k}{\sin\alpha},
 $$</p>
 <p>where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_k$, perpendicular to $\vec u_k$ and pointing from $\vec u_k$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_k$, normalized; in particular $\vec u = \cos\alpha\,\vec u_k + \sin\alpha\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_k = 0$ this reduces to the source's $\tilde{u}\vec u_k\tilde{u}^{\natural} = \vec u_k\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.</p>
-<p>The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U$ points opposite to the velocity, so that $\vec u_k$ moves <em>away</em> from $\vec u$ and hence <em>toward</em> the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde{K}$ and on the field $\tilde{F}$ through the same sandwich, and since $\tilde{u}^{\natural} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.</p>
+<p>The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U$ points opposite to the velocity, so that $\vec u_k$ moves <em>away</em> from $\vec u$ and hence <em>toward</em> the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P$ and on the field $\tilde{F}$ through the same sandwich, and since $\tilde{u}^{\natural} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.</p>
 <p><strong>The transverse case.</strong> When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_k = 0$, so $\cos\alpha = 0$ and the formulas simplify to the ones the source exhibits:</p>
 <p>$$
 \exp(d) = \cosh w = \gamma,
@@ -161,7 +161,7 @@ $$</p>
 <p>The first is the <strong>transverse Doppler</strong> factor: a wave crossing the boost perpendicular to it is blueshifted by $\gamma$, with no first-order term. The second says the aberration drag of a transversely crossing ray by a boost of rapidity $w$ is the angle whose half-tangent is $\tanh\frac{w}{2}$, that is $\cos\theta = \operatorname{sech}w$, so the ray is dragged forward and its angle to the boost tends to $\pi/2$ as $w\to\infty$. In this case $\vec u_b = \vec u\times\vec u_k$ is exactly the unit rotation axis and $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u\vec u_k$.</p>
 <p><strong>Parallel propagation.</strong> When $\vec u\times\vec u_k = 0$, the axis is undefined, $\theta = 0$ and the boost is a pure dilation: $\exp(d) = \cosh w \mp \sinh w = \exp(\mp w)$ for $\vec u_k = \pm\vec u$. There is no rotation, and the wave element and field are simply rescaled.</p>
 <h2 id="the-field-transforms-the-same-way">The Field Transforms the Same Way</h2>
-<p>The field strength of a source-free plane wave is a null pure vector, and it is tied to the wave element by the annihilation condition $\tilde{K}\tilde{F} = 0$ of the plane-wave exercise. Under the boost it transforms in the bivector representation, $\tilde{F}\mapsto\tilde U^{\natural}\tilde{F}\tilde U$, not in the four-vector representation (<em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em>, Problem 5, where the four-vector candidate is shown to fail on a boost). The theorem of the section above applies to it with the same rotation and the same dilation.</p>
+<p>The field strength of a source-free plane wave is a null pure vector, and it is tied to the wave element by the annihilation condition $\tilde P\tilde{F} = 0$ of the plane-wave exercise. Under the boost it transforms in the bivector representation, $\tilde{F}\mapsto\tilde U^{\natural}\tilde{F}\tilde U$, not in the four-vector representation (<em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em>, Problem 5, where the four-vector candidate is shown to fail on a boost). The theorem of the section above applies to it with the same rotation and the same dilation.</p>
 <p><strong>Proposition.</strong> With $\tilde{u}$ and $\exp(d)$ as above, the null field strength of the same wave satisfies</p>
 <p>$$
 \tilde U^{\natural}\,\tilde{F}\,\tilde U \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
@@ -171,12 +171,12 @@ $$</p>
 <h2 id="physical-reading">Physical Reading</h2>
 <p>The identity turns the kinematics of a boosted wave into three interpretations of one formula:</p>
 <ul>
-<li><strong>Frequency.</strong> The coefficient of $i$ in $\tilde{K}'$ is $\exp(d)\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of <em>Exercise: The Relativistic Doppler Effect</em>, recovered here as the scalar factor of the dilation.</li>
+<li><strong>Frequency.</strong> The coefficient of $i$ in $\tilde P'$ is $\exp(d)\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of <em>Exercise: The Relativistic Doppler Effect</em>, recovered here as the scalar factor of the dilation.</li>
 <li><strong>Direction.</strong> The rotation $\tilde{u}$ carries $\vec u_k$ to $\cos\theta\,\vec u_k - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\alpha\,\vec u_k)/\sin\alpha$ the transverse direction of $\vec u$, so that $\vec u_k$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_k\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.</li>
 <li><strong>Amplitude and polarisation.</strong> The field is rotated by $\tilde{u}$ and scaled by $\exp(d)$, so the Poynting vector and the energy density inherit the same similarity.</li>
 </ul>
 <p>What the identity does <strong>not</strong> say is equally worth stating. The rotation $\tilde{u}$ is a rotation of physical space, not a Lorentz transformation of spacetime; the Lorentz character of the boost has been entirely absorbed into the dilation $\exp(d)$ and the rotation $\tilde{u}$, and this is possible only because the wave is null. For a massive particle the same boost cannot be so reduced: the boost of a timelike four-velocity mixes the temporal and spatial components irreducibly, and there is no dilation and rotation of three-space that reproduces it. The reduction is thus a property of light, not of the Lorentz group.</p>
-<p>A second caution is the medium. The identity is an identity of the vacuum algebra, where the source-free system is Lorentz covariant and the field strength transforms in the bivector representation. In a material medium the Lorentz action on the field needs the constitutive relations, and the plane-wave exercise records that the medium setting does not by itself establish the Lorentz covariance of the invariants; the wave element $\tilde{K}$ and the boost rotor are unaffected, since they are kinematic, but the field statement is a vacuum statement unless the medium is at rest in a frame in which the constitutive laws are prescribed.</p>
+<p>A second caution is the medium. The identity is an identity of the vacuum algebra, where the source-free system is Lorentz covariant and the field strength transforms in the bivector representation. In a material medium the Lorentz action on the field needs the constitutive relations, and the plane-wave exercise records that the medium setting does not by itself establish the Lorentz covariance of the invariants; the wave element $\tilde P$ and the boost rotor are unaffected, since they are kinematic, but the field statement is a vacuum statement unless the medium is at rest in a frame in which the constitutive laws are prescribed.</p>
 <h2 id="summary">Summary</h2>
 <p>A boost of an electromagnetic plane wave is a rotation of physical space composed with a dilation, and the rotation and the dilation are the same for the wave element and for the field. The whole result rests on the <strong>pacwoman property</strong> of the null element, $\vec u_k(i+\vec u_k) = i(i+\vec u_k) = (i+\vec u_k)\vec u_k$, which factors the boost rotor against the null element,</p>
 <p>$$
@@ -192,7 +192,7 @@ $$</p>
 $$</p>
 <p>where $\alpha$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then</p>
 <p>$$
-\tilde{K}' = \tilde U\tilde{K}\tilde U^{*} = \exp(d)\tilde{u}\tilde{K}\tilde{u}^{\natural},
+\tilde P' = \tilde U\tilde P\tilde U^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
 \qquad
 \tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
 $$</p>
@@ -223,12 +223,12 @@ $$</p>
 <td>Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction</td>
 </tr>
 <tr>
-<td>$\tilde{K} = \frac{\omega}{c}(i+\vec u_k)$</td>
-<td>Wave biquaternion (four-wavevector), null, $\langle\tilde{K}\rangle_{\natural} = 0$</td>
+<td>$\tilde P = \frac{\omega}{c}(i+\vec u_k)$</td>
+<td>Wave biquaternion (four-wavevector), null, $\langle\tilde P\rangle_{\natural} = 0$</td>
 </tr>
 <tr>
 <td>$\tilde{F}$</td>
-<td>Field-strength biquaternion, pure vector, null for a plane wave, $\tilde{K}\tilde{F}=0$</td>
+<td>Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P\tilde{F}=0$</td>
 </tr>
 <tr>
 <td>$\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$</td>

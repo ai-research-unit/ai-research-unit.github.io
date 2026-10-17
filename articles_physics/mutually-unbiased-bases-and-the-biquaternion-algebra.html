@@ -142,13 +142,13 @@ $$</p>
 <p>The pattern — identity blocks on the diagonal, constant blocks off it — is the matrix form of mutual unbiasedness. It was verified by explicit computation of all thirty-six entries; the off-diagonal constant is exactly $\tfrac12$.</p>
 <h2 id="reconstruction-from-mutually-unbiased-measurements">Reconstruction from Mutually Unbiased Measurements</h2>
 <h3 id="the-reconstruction-formula">The reconstruction formula</h3>
-<p>Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)} = \mathrm{Tr}(\tilde{\rho}\tilde\Pi_i^{(b)})$. Then</p>
+<p>Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)} = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi_i^{(b)})$. Then</p>
 <p>$$
-\tilde{\rho} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t ,
+\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t ,
 $$</p>
-<p>for a trace-one state, so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{\rho}$, and the formula above reconstructs it.</p>
+<p>for a trace-one state, so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.</p>
 <h3 id="verification-for-the-qubit">Verification for the qubit</h3>
-<p>Let $\tilde{\rho} = \tfrac12(e_t+i\vec r)$ and let $r_k = \vec r\cdot\vec u_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is</p>
+<p>Let $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ and let $r_k = \vec r\cdot\vec u_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is</p>
 <p>$$
 p_+^{(k)}\tilde\Pi_1(\vec u_k) + p_-^{(k)}\tilde\Pi_2(\vec u_k)
 = \tfrac12\bigl(e_t + i r_k\vec u_k\bigr),
@@ -158,7 +158,7 @@ $$</p>
 \sum_{k=1}^{3}\tfrac12\bigl(e_t + i r_k\vec u_k\bigr)
 = \tfrac{3}{2}e_t + \tfrac12 i\vec r
 = e_t + \tfrac12\bigl(e_t + i\vec r\bigr)
-= e_t + \tilde{\rho} ,
+= e_t + \tilde{Ϛ} ,
 $$</p>
 <p>which rearranges to the reconstruction formula. Every step was verified numerically on a generic state with all three Bloch components non-zero; the reconstruction returned the input state to machine precision. The identity is the tomographic statement anticipated in the article on the native qubit: the three coordinate measurements determine the state, and no fourth measurement is needed.</p>
 <h3 id="complementarity-and-information">Complementarity and information</h3>
@@ -198,7 +198,7 @@ $$</p>
 <li>It identifies a basis of the defining module with an idempotent basis $\{\tilde\Pi_i\}$, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$, and the overlap between rays with the trace pairing of idempotents.</li>
 <li>It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)) = \tfrac12$ for $j\neq k$.</li>
 <li>It exhibits the maximal set: three bases for the qubit, with the explicit block-form overlap matrix.</li>
-<li>It gives the reconstruction formula $\tilde{\rho} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ and verifies it for the qubit.</li>
+<li>It gives the reconstruction formula $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ and verifies it for the qubit.</li>
 <li>It shows that the tensor product does not preserve maximality of MUB sets, and that the Bell basis is not unbiased with respect to the product basis.</li>
 </ul>
 <p><strong>What it does not.</strong></p>
@@ -224,7 +224,7 @@ $$</p>
 \mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)\bigr) = \tfrac12 , \qquad
 \mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s'}(\vec u_k)\bigr) = \delta_{ss'} .
 $$</p>
-<p>The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{\rho} = \sum_{k=1}^{3}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_s(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.</p>
+<p>The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ} = \sum_{k=1}^{3}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_s(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -275,7 +275,7 @@ $$</p>
 <td>Unbiasedness of the coordinate bases</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$</td>
+<td>$\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$</td>
 <td>Reconstruction from a complete MUB set</td>
 </tr>
 <tr>

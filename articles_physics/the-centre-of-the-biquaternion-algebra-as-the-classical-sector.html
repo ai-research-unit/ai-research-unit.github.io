@@ -74,7 +74,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{\rho}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.</p>
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.</p>
 <h2 id="the-centre-definition-and-computation">The Centre: Definition and Computation</h2>
 <p><strong>Definition.</strong> The centre of $\mathbb{B}$ is the set of elements that commute with every element,
 $$
@@ -166,14 +166,14 @@ which equals $\tilde{H}\tilde{K}$ if and only if $[\tilde{H},\tilde{K}]=0$. The 
 <p>The absence of central projections is therefore a genuine algebraic limitation, and it is the structural reason that the framework's classical sector is minimal. A reader who expects the two sectors, or the two spin components, to furnish superselection labels will not find them in the centre; the centre contains only the scalars.</p>
 <h2 id="the-centre-as-the-classical-sector">The Centre as the Classical Sector</h2>
 <p>The limitations of the preceding section are structural, and they do not diminish the sense in which the centre <strong>is</strong> the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.</p>
-<p><strong>1. Central observables have no dispersion and no state dependence.</strong> Let $\tilde{C}=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{\rho}$ be any state. The trace formula gives
+<p><strong>1. Central observables have no dispersion and no state dependence.</strong> Let $\tilde{C}=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}$ be any state. The trace formula gives
 $$
-\langle\tilde{C}\rangle_{\tilde{\rho}}=\mathrm{Tr}\bigl(\tilde{\rho}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{\rho}\bigr)=\lambda ,
+\langle\tilde{C}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\bigl(\tilde{Ϛ}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}\bigr)=\lambda ,
 $$
 independently of the state. The variance vanishes in every state,
 $$
-\bigl\langle(\tilde{C}-\lambda e_t)^2\bigr\rangle_{\tilde{\rho}}
-=\mathrm{Tr}\Bigl(\tilde{\rho}\,(\tilde{C}-\lambda e_t)^2\Bigr)=0 .
+\bigl\langle(\tilde{C}-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}}
+=\mathrm{Tr}\Bigl(\tilde{Ϛ}\,(\tilde{C}-\lambda e_t)^2\Bigr)=0 .
 $$
 A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a <strong>parameter</strong>. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.</p>
 <p><strong>2. Central elements are conserved under every dynamics.</strong> For any Hermitian generator $\tilde{H}\in\mathbb{M}_+$, the Heisenberg evolution of a central element is trivial,
@@ -229,10 +229,10 @@ $$
 because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}'=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.</p>
 <p><strong>2. Trivial action on the projective state space.</strong> A central element acts on the state module by scalar multiplication, $\tilde{C}\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the <strong>kernel of the action of $\mathbb{B}^\times$ on the projective state space</strong>: its unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
-\Gamma_{\tilde{C}}(\tilde{\rho})=(\lambda e_t)\,\tilde{\rho}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{\rho},
+\Gamma_{\tilde{C}}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
 $$
-a positive multiple of $\tilde{\rho}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.</p>
-<p><strong>3. The central normalizations.</strong> The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{\rho})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\psi^\dagger\psi)=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.</p>
+a positive multiple of $\tilde{Ϛ}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.</p>
+<p><strong>3. The central normalizations.</strong> The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\psi^\dagger\psi)=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.</p>
 <p><strong>4. The centre through the passage $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$.</strong> The three division algebras have centres $\mathbb{R}$, $\mathbb{R}$, and $\mathbb{C}$ respectively:
 $$
 Z(\mathbb{R})=\mathbb{R},

@@ -53,11 +53,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive trace-one element</p>
 <p>$$
-\tilde{\rho} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3,
+\tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3,
 $$</p>
 <p>and a gate is a <strong>single element of the algebra</strong> acting on it by conjugation:</p>
 <p>$$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}, \qquad \tilde{U}\tilde{U}^{*} = e_t .
+\tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}, \qquad \tilde{U}\tilde{U}^{*} = e_t .
 $$</p>
 <p>The acting element $\tilde{U}$ is a <strong>unitary biquaternion</strong>; the unitaries form the group $\mathrm{U}(2) \subset \mathbb{B}$. A circuit is then a <strong>product</strong> of such elements. Composing two gates is multiplying two unitaries, and the effect of a whole circuit is a single conjugation by that product. The algebraic product in $\mathbb{B}$ (or in the tensor product $\mathbb{B}^{\otimes n}$ for $n$ qubits) is what the wiring of a circuit expresses.</p>
 <p>This formulation is the one already used in the companion articles: states and observables in $\mathbb{M}_+$, reversible evolution by rotor conjugation, irreversible measurement by the sandwich operation. The companion article <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> established that the reversible state maps are exactly the conjugations by unitary biquaternions — the channels of Kraus rank one — and that everything else is a sum of conjugations. The present article reads the standard gate and circuit notation through that result: <strong>a gate is a Kraus-rank-one channel, a circuit of gates is again a gate, and the moment a circuit contains a measurement it is a channel and no longer a gate.</strong></p>
@@ -65,7 +65,7 @@ $$</p>
 <p>First, the mathematics below is <strong>standard quantum information theory</strong> transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.</p>
 <p>Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, but the condition on the acting element is different. The material-sector rotor satisfies the <strong>unit-norm</strong> condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ and generates $SL(2,\mathbb{C})$; a gate satisfies the <strong>matrix-unitarity</strong> condition $\tilde{U}\tilde{U}^{*} = e_t$ and generates $\mathrm{U}(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 \neq e_t$: it is a perfectly good rotor on $\mathbb{M}_-$ but <strong>not</strong> a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.</p>
 <p>The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
 <p>$$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
 $$</p>
@@ -76,18 +76,18 @@ $$</p>
 <p>$$
 \mathcal{U} \;=\; \{\tilde{U} \in \mathbb{B} : \tilde{U}\tilde{U}^{*} = e_t\} \;\cong\; \mathrm{U}(2),
 $$</p>
-<p>acting on a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ by <strong>rotor conjugation</strong></p>
+<p>acting on a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ by <strong>rotor conjugation</strong></p>
 <p>$$
-\Phi_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*} .
+\Phi_{\tilde{U}}(\tilde{Ϛ}) = \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*} .
 $$</p>
-<p>The image is again Hermitian, positive, and of trace one: since $\tilde{\rho}^{*} = \tilde{\rho}$ and $\tilde{U}^{*}\tilde{U} = e_t$,</p>
+<p>The image is again Hermitian, positive, and of trace one: since $\tilde{Ϛ}^{*} = \tilde{Ϛ}$ and $\tilde{U}^{*}\tilde{U} = e_t$,</p>
 <p>$$
-\Phi_{\tilde{U}}(\tilde{\rho})^{*} = \tilde{U}\tilde{\rho}\tilde{U}^{*} = \Phi_{\tilde{U}}(\tilde{\rho}),
+\Phi_{\tilde{U}}(\tilde{Ϛ})^{*} = \tilde{U}\tilde{Ϛ}\tilde{U}^{*} = \Phi_{\tilde{U}}(\tilde{Ϛ}),
 \qquad
-\mathrm{Tr}\!\left(\Phi_{\tilde{U}}(\tilde{\rho})\right) = \mathrm{Tr}(\tilde{\rho}) = 1 .
+\mathrm{Tr}\!\left(\Phi_{\tilde{U}}(\tilde{Ϛ})\right) = \mathrm{Tr}(\tilde{Ϛ}) = 1 .
 $$</p>
 <p>So a gate maps states to states.</p>
-<p><strong>The gate is a channel of Kraus rank one.</strong> In the language of the companion article on quantum channels, $\Phi_{\tilde{U}}$ has the single Kraus operator $\tilde{K} = \tilde{U}$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are <strong>invertible within the channels</strong>, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^{*}}$ (whose Kraus operator is $\tilde{U}^{*}$); it is also exactly the class that <strong>preserves purity</strong>, $\mathrm{Tr}(\Phi_{\tilde{U}}(\tilde{\rho})^2) = \mathrm{Tr}(\tilde{\rho}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.</p>
+<p><strong>The gate is a channel of Kraus rank one.</strong> In the language of the companion article on quantum channels, $\Phi_{\tilde{U}}$ has the single Kraus operator $\tilde{K} = \tilde{U}$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are <strong>invertible within the channels</strong>, with inverse $\Phi_{\tilde{U}}^{-1} = \Phi_{\tilde{U}^{*}}$ (whose Kraus operator is $\tilde{U}^{*}$); it is also exactly the class that <strong>preserves purity</strong>, $\mathrm{Tr}(\Phi_{\tilde{U}}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.</p>
 <h3 id="why-matrix-unitarity-and-not-unit-norm">Why Matrix-Unitarity and Not Unit Norm</h3>
 <p>The condition $\tilde{U}\tilde{U}^{*} = e_t$ must not be confused with the unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ that defines the Lorentz rotors $SL(2,\mathbb{C})$. The two conditions pick out two different subgroups of the same algebra, and only the first is a group of gates.</p>
 <p>The distinction is visible in a single example. A <strong>boost biquaternion</strong></p>
@@ -96,7 +96,7 @@ $$</p>
 $$</p>
 <p>is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and has unit norm, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$. Hence $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 \neq e_t$, and conjugation by $\tilde{\Lambda}$ does not preserve the trace:</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}\right) \neq \mathrm{Tr}(\tilde{\rho}) \quad \text{in general}.
+\mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{Ϛ}\tilde{\Lambda}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}) \quad \text{in general}.
 $$</p>
 <p>A boost is a rotor on the material sector $\mathbb{M}_-$ and <strong>not</strong> a gate on the informational sector $\mathbb{M}_+$. The distinction is not a technicality: it is the algebraic expression of the fact that the Lorentz group and the gate group are different groups inside one algebra, related to the two complementary subspaces.</p>
 <p>The two actions are collected here for contrast.</p>
@@ -122,12 +122,12 @@ $$</p>
 <tr>
 <td>Acting on</td>
 <td>$\tilde{Q}\in\mathbb{M}_-$</td>
-<td>$\tilde{\rho}\in\mathbb{M}_+$</td>
+<td>$\tilde{Ϛ}\in\mathbb{M}_+$</td>
 </tr>
 <tr>
 <td>Action</td>
 <td>$\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$</td>
-<td>$\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$</td>
+<td>$\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$</td>
 </tr>
 <tr>
 <td>Pure boost</td>
@@ -140,38 +140,38 @@ $$</p>
 <p>Every unitary biquaternion factorises into a central phase and a unit real quaternion:</p>
 <p>$$
 \mathrm{U}(2) \;=\; \mathrm{U}(1)\cdot SU(2), \qquad
-\tilde{U} = \exp(i\phi)\,\tilde{R}, \qquad \phi\in\mathbb{R}, \quad \tilde{R}\in\mathbb{H}_{\mathbb{B}}, \quad \tilde{R}\tilde{R}^{\natural} = e_t .
+\tilde{U} = \exp(i\phi)\,\tilde u_{\mathrm r}, \qquad \phi\in\mathbb{R}, \quad \tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}, \quad \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t .
 $$</p>
-<p>Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde{R} = \tilde{R}\tilde{R}^{\natural} = 1$. The phase $\exp(i\phi)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$, and $i\mathbb{M}_+ = \mathbb{M}_-$ for the anti-Hermitian generators.</p>
+<p>Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde u_{\mathrm r} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\phi)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$, and $i\mathbb{M}_+ = \mathbb{M}_-$ for the anti-Hermitian generators.</p>
 <p>The phase is <strong>not observable in the action</strong>. Conjugation by a central element is trivial:</p>
 <p>$$
-(\exp(i\phi)\tilde{R})\,\tilde{\rho}\,(\exp(i\phi)\tilde{R})^\dagger
-= \exp(i\phi)\tilde{R}\,\tilde{\rho}\,\tilde{R}^{*} \exp(-i\phi)
-= \tilde{R}\,\tilde{\rho}\,\tilde{R}^{*} .
+(\exp(i\phi)\tilde u_{\mathrm r})\,\tilde{Ϛ}\,(\exp(i\phi)\tilde u_{\mathrm r})^\dagger
+= \exp(i\phi)\tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} \exp(-i\phi)
+= \tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} .
 $$</p>
 <p>Hence the kernel of $\tilde{U}\mapsto\Phi_{\tilde{U}}$ is the unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, and the effective group of gates is</p>
 <p>$$
 \mathrm{U}(2)/\mathrm{U}(1) \;\cong\; PU(2) \;\cong\; SO(3),
 $$</p>
 <p>acting on the Bloch ball by rotations. This is the algebraic form of the unobservability of the global phase: two unitaries that differ by a central phase define the same gate.</p>
-<p><strong>The action on the Bloch vector.</strong> Writing the state as $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, a gate acts as</p>
+<p><strong>The action on the Bloch vector.</strong> Writing the state as $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, a gate acts as</p>
 <p>$$
 \vec r \;\longmapsto\; R(\tilde{U})\,\vec r, \qquad R(\tilde{U}) \in SO(3),
 $$</p>
-<p>a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.</p>
+<p>a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.</p>
 <p><strong>Rotation gates.</strong> The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta$,</p>
 <p>$$
-\tilde{R}_{\vec u_{\mathrm r}}(\theta) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r},
+\tilde u_{\mathrm r}(\theta) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r},
 \qquad \vec u_{\mathrm r}^2 = -e_t ,
 $$</p>
-<p>acts on the Bloch vector as the rotation by $\theta$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde{R}_{\vec u_{\mathrm r}}(\theta + 2\pi) = -\tilde{R}_{\vec u_{\mathrm r}}(\theta)$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\phi)\tilde{R}_{\vec u_{\mathrm r}}(\theta)$, and modulo the phase it is a rotation.</p>
+<p>acts on the Bloch vector as the rotation by $\theta$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde u_{\mathrm r}(\theta + 2\pi) = -\tilde u_{\mathrm r}(\theta)$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\phi)\tilde u_{\mathrm r}(\theta)$, and modulo the phase it is a rotation.</p>
 <h3 id="involutions-the-hermitian-unitaries">Involutions: The Hermitian Unitaries</h3>
 <p>A unitary can be Hermitian, $\tilde{U} = \tilde{U}^{*}$. Then $\tilde{U}^2 = \tilde{U}\tilde{U}^{*} = e_t$, so a Hermitian unitary is an <strong>involution</strong>. Apart from $\pm e_t$, the Hermitian unitaries are exactly</p>
 <p>$$
 \tilde{U} = \pm\, i\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r} \text{ a unit pure real quaternion},
 $$</p>
 <p>since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^\dagger = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{M}_+$, and as rotations they are the <strong>$\pi$-rotations</strong> of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec r\mapsto 2(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r} - \vec r$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.</p>
-<p>A caution about representatives. A gate is a coset $\tilde{U}\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{M}_+$ or in $\mathbb{H}_{\mathbb{B}}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde{U} = \exp(i\phi)\tilde{R}$: <strong>every gate is a central phase times a rotation, and no gate is anything else.</strong></p>
+<p>A caution about representatives. A gate is a coset $\tilde{U}\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{M}_+$ or in $\mathbb{H}_{\mathbb{B}}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde{U} = \exp(i\phi)\tilde u_{\mathrm r}$: <strong>every gate is a central phase times a rotation, and no gate is anything else.</strong></p>
 <h2 id="the-standard-single-qubit-gate-set">The Standard Single-Qubit Gate Set</h2>
 <p>Under the isomorphism $\vec e_k \mapsto -i\sigma_k$, the image of $i \vec e_k$ is $\sigma_k$. The standard gate set therefore reads as follows. In each row the second column is a biquaternion representative; a representative differing by a central phase gives the same gate.</p>
 <div class="table-scroll"><table>
@@ -260,14 +260,14 @@ $$</p>
 <h3 id="the-phase-and-math186-gates">The Phase and $T$ Gates</h3>
 <p>The phase gate is the rotation by $\pi/2$ about $\vec e_z$:</p>
 <p>$$
-\tilde{S} = \frac{1}{\sqrt{2}}\left(e_t + \vec e_z\right) = \tilde{R}_{\vec u_{e,3}}\!\left(\frac{\pi}{2}\right),
+\tilde{S} = \frac{1}{\sqrt{2}}\left(e_t + \vec e_z\right) = \tilde u_{e,3}\!\left(\frac{\pi}{2}\right),
 \qquad
 \tilde{S}^2 = \vec e_z .
 $$</p>
 <p>The element $\vec e_z$ is not $Z = i \vec e_z$; it differs from it by the central phase $-i$, so $\tilde{S}^2$ and $\tilde Z$ define the same gate. In the standard normalisation, $S^2 = Z$ exactly; in the biquaternion representative, $S^2 = Z$ <strong>up to a central phase</strong>, which is the honest statement.</p>
 <p>The $T$ gate is the rotation by $\pi/4$ about $\vec e_z$:</p>
 <p>$$
-\tilde{T} = \cos\frac{\pi}{8}\,e_t + \sin\frac{\pi}{8}\,\vec e_z = \tilde{R}_{\vec u_{e,3}}\!\left(\frac{\pi}{4}\right),
+\tilde{T} = \cos\frac{\pi}{8}\,e_t + \sin\frac{\pi}{8}\,\vec e_z = \tilde u_{e,3}\!\left(\frac{\pi}{4}\right),
 \qquad
 \tilde{T}^2 = \tilde{S}, \qquad
 \tilde{T}^{8} = -e_t, \qquad
@@ -278,9 +278,9 @@ $$</p>
 <h3 id="the-product-law">The Product Law</h3>
 <p>Let $\tilde{U}$ and $\tilde{V}$ be gates, and consider the physical process that applies $\tilde{U}$ first and $\tilde{V}$ second. The state passes through</p>
 <p>$$
-\tilde{\rho} \;\xrightarrow{\ \tilde{U}\ }\; \tilde{U}\tilde{\rho}\tilde{U}^{*}
-\;\xrightarrow{\ \tilde{V}\ }\; \tilde{V}\tilde{U}\tilde{\rho}\tilde{U}^{*}\tilde{V}^{*}
-= (\tilde{V}\tilde{U})\,\tilde{\rho}\,(\tilde{V}\tilde{U})^{*} .
+\tilde{Ϛ} \;\xrightarrow{\ \tilde{U}\ }\; \tilde{U}\tilde{Ϛ}\tilde{U}^{*}
+\;\xrightarrow{\ \tilde{V}\ }\; \tilde{V}\tilde{U}\tilde{Ϛ}\tilde{U}^{*}\tilde{V}^{*}
+= (\tilde{V}\tilde{U})\,\tilde{Ϛ}\,(\tilde{V}\tilde{U})^{*} .
 $$</p>
 <p>So the composite gate is the <strong>product</strong> $\tilde{W} = \tilde{V}\tilde{U}$, and the map on channels is</p>
 <p>$$
@@ -331,7 +331,7 @@ $$</p>
 <p>where the cross terms vanish because $\tilde\Pi_1\tilde\Pi_2 = 0$ and the last step uses the resolution of the identity $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ together with $\tilde{U}\tilde{U}^{*} = e_t$. The same computation with a general single-qubit $\tilde{U}$ shows that <strong>any</strong> unitary target operation is admitted, so the construction defines $\tilde{C}_{\tilde{U}}$ for every gate $\tilde{U}$.</p>
 <p>The unitarity of the controlled gate uses exactly two properties: the idempotents are complementary and orthogonal, and the target element is unitary. It is worth pausing on this, because the same idempotents, used differently, are the operators of an irreversible measurement. The controlled gate is the <strong>coherent</strong> use of an idempotent: the two outcomes are kept, paired with two different target operations, and added inside a single unitary element. The measurement channel, in contrast, adds the two <em>conjugated states</em>,</p>
 <p>$$
-\tilde{\rho} \;\longmapsto\; \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2 ,
+\tilde{Ϛ} \;\longmapsto\; \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2 ,
 $$</p>
 <p>which is a sum of conjugations and not a single conjugation. This is the algebraic distinction between a reversible gate and an irreversible measurement, and it is taken up again in the section on channels.</p>
 <h3 id="cnot-cz-and-swap">CNOT, CZ, and SWAP</h3>
@@ -377,20 +377,20 @@ $$</p>
 <h2 id="a-simple-circuit-preparing-a-bell-state">A Simple Circuit: Preparing a Bell State</h2>
 <p>The composition law is best seen in a circuit that produces something the algebra names. Consider two qubits prepared in the pure state</p>
 <p>$$
-\tilde{\rho}_0 = \tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z) ,
+\tilde{Ϛ}_0 = \tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z) ,
 $$</p>
 <p>the biquaternion idempotent corresponding to $|00\rangle$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product</p>
 <p>$$
 \tilde{W} = \tilde{C}_{\tilde X}\,\left(\tilde{H}\otimes e_t\right), \qquad \tilde{C}_{\tilde X} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
 $$</p>
-<p>and the output state is $\tilde{W}\tilde{\rho}_0\tilde{W}^{*}$, a single conjugation because $\tilde{W}$ is a single gate.</p>
+<p>and the output state is $\tilde{W}\tilde{Ϛ}_0\tilde{W}^{*}$, a single conjugation because $\tilde{W}$ is a single gate.</p>
 <p><strong>Step one: the Hadamard.</strong> Since $\tilde{H}$ is Hermitian and $\tilde{H}^2 = e_t$, the conjugation of the first factor gives</p>
 <p>$$
 \tilde{H}\,\tilde\Pi_1(\vec u_z)\,\tilde{H} = \tilde\Pi_1(\vec u_x),
 $$</p>
 <p>computed directly from the quaternion product. So after the Hadamard the state is</p>
 <p>$$
-\left(\tilde{H}\otimes e_t\right)\tilde{\rho}_0\left(\tilde{H}\otimes e_t\right) = \tilde\Pi_1(\vec u_x)\otimes\tilde\Pi_1(\vec u_z),
+\left(\tilde{H}\otimes e_t\right)\tilde{Ϛ}_0\left(\tilde{H}\otimes e_t\right) = \tilde\Pi_1(\vec u_x)\otimes\tilde\Pi_1(\vec u_z),
 $$</p>
 <p>the product state $|{+}\rangle|0\rangle$.</p>
 <p><strong>Step two: the CNOT.</strong> Write $\tilde{A} = \tilde\Pi_1(\vec u_x)$, $\tilde{B} = \tilde\Pi_1(\vec u_z)$, $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$, and $\tilde{C} = \tilde{C}_{\tilde X}$. Since $\tilde{C} = \tilde{C}^{*}$ and $\tilde{C}^2 = e_t\otimes e_t$, conjugation by $\tilde{C}$ expands into four terms:</p>
@@ -421,7 +421,7 @@ $$</p>
 <p>The output is not a product of idempotents; its partial trace is $\tfrac12 e_t$, the maximally mixed qubit state, by the computation of the companion article. The circuit has converted a product state into a maximally entangled state by a single conjugation, and every step of the conversion is an algebraic product and conjugation in $\mathbb{B}\otimes\mathbb{B}$.</p>
 <h2 id="gates-and-the-irreversible-channels">Gates and the Irreversible Channels</h2>
 <p>The read list for this article closes with <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and the contrast between the two is the conceptual content of the gate formalism.</p>
-<p>A <strong>state map</strong> is a completely positive, trace-preserving map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and written in Kraus form $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:</p>
+<p>A <strong>state map</strong> is a completely positive, trace-preserving map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and written in Kraus form $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:</p>
 <p>$$
 \text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde{U}}\ \text{for a unitary } \tilde{U} \quad\Longleftrightarrow\quad \Phi \text{ is a gate.}
 $$</p>
@@ -429,14 +429,14 @@ $$</p>
 <p><strong>Closure.</strong> The composition of two gates is a gate, because the product of two unitaries is unitary. Hence <strong>a circuit built only from gates is a gate</strong>: it is one element, it has Kraus rank one, and it is invertible. The inverse circuit is the product of the inverses in the reverse order, which in the algebra is just $\tilde{W}^{*}$. The Bell-preparation circuit above is reversible for exactly this reason, even though it creates entanglement: entanglement is not irreversibility.</p>
 <p><strong>Irreversibility is a sum.</strong> A channel is irreversible precisely when its Kraus rank is at least two, i.e. when it is a <em>sum</em> of conjugations rather than one conjugation. The canonical example is <strong>dephasing</strong> along $\vec u_{\mathrm r}$,</p>
 <p>$$
-\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\tilde{\rho} + p\left(\tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2\right),
+\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p\left(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\right),
 $$</p>
 <p>which acts on the Bloch vector as $\vec r\mapsto(1-p)\vec r + p(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r}$. Its Bloch matrix is $\operatorname{diag}(1-p,1-p,1)$ in the eigenbasis of $\vec u_{\mathrm r}$, of determinant $(1-p)^2$. A gate acts by a rotation, whose Bloch matrix has determinant $+1$ and is orthogonal; hence for $0<p\leq 1$ the dephasing map <strong>is not a gate</strong>, and no representative of it is a single unitary conjugation. It is the canonical irreversible channel, and the companion article on decoherence analyses its effect on idempotency in detail.</p>
 <p><strong>The same idempotents, used coherently and incoherently.</strong> The sharpest contrast is between two objects built from the same complementary idempotents:</p>
 <p>$$
 \tilde{C}_{\tilde{U}} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde{U} \quad\text{(a gate)},
 \qquad
-\Phi(\tilde{\rho}) = \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2 \quad\text{(a channel)}.
+\Phi(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2 \quad\text{(a channel)}.
 $$</p>
 <p>In the first, the idempotents sit inside a <strong>single unitary element</strong> and the sum is over the two control branches; both branches survive, the coherence between them is retained, and the result is reversible. In the second, the state itself is replaced by the sum of its two projected pieces; the coherence between the branches is discarded, the map contracts the Bloch ball, and the result is irreversible. This is the algebraic content of the familiar statement that a controlled gate is a measurement made coherent: the difference is not in the idempotents but in whether the sum is taken inside one element or between two conjugated states. It is the same reversible/irreversible dichotomy the framework already expresses as unitary versus idempotent acting elements.</p>
 <p>The channel set is convex, with the gates among its extreme points; the companion article establishes this and the associated Stinespring picture, in which every irreversible channel is the reduction of a reversible evolution on a larger system after the environment is discarded. A circuit that contains a measurement, or a dephasing step, has left the gate group and is a general channel; it may still be drawn as a circuit, but it is no longer a single element of $\mathbb{B}^{\otimes n}$ and no longer invertible within the channels.</p>
@@ -466,7 +466,7 @@ $$</p>
 <p><strong>5. The $T$ gate and the non-compact directions.</strong> The gates generated by $H$ and $T$ lie, modulo phase, in the compact subgroup $SU(2)$ of $SL(2,\mathbb{C})$. The non-compact directions of the algebra — the boosts — are not reachable as gates. Is there any operation on the informational sector that involves them, or is the gate group necessarily compact?</p>
 <p><strong>6. Empirical content.</strong> As everywhere in the framework, a reformulation of gates and circuits is empirically empty. What, if anything, distinguishes it from standard quantum computation is the central open question.</p>
 <h2 id="summary">Summary</h2>
-<p>A gate in the biquaternion framework is a <strong>unitary element</strong> $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^{*} = e_t$, acting on a state $\tilde{\rho}\in\mathbb{M}_+$ by <strong>rotor conjugation</strong> $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^{*} = e_t$ is <strong>not</strong> the unit-norm condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.</p>
+<p>A gate in the biquaternion framework is a <strong>unitary element</strong> $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^{*} = e_t$, acting on a state $\tilde{Ϛ}\in\mathbb{M}_+$ by <strong>rotor conjugation</strong> $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^{*} = e_t$ is <strong>not</strong> the unit-norm condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.</p>
 <p>The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde X=i\vec e_x$, $\tilde Y=i\vec e_y$, $\tilde Z=i\vec e_z$; the Hadamard is $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\phi)(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.</p>
 <p><strong>Composition</strong> is the algebra product: applying $\tilde{U}$ then $\tilde{V}$ gives $\tilde{V}\tilde{U}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.</p>
 <p>In the <strong>multi-qubit</strong> arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{C}_{\tilde{U}} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde{U}$, unitary by the complementarity of the idempotents and the unitarity of $\tilde{U}$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.</p>
@@ -509,7 +509,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
 <td>State of a qubit</td>
 </tr>
 <tr>
@@ -525,11 +525,11 @@ $$</p>
 <td>Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate</td>
 </tr>
 <tr>
-<td>$\Phi_{\tilde{U}}(\tilde{\rho})=\tilde{U}\tilde{\rho}\tilde{U}^{*}$</td>
+<td>$\Phi_{\tilde{U}}(\tilde{Ϛ})=\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$</td>
 <td>Rotor conjugation (gate action)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
+<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
 <td>Trace formula (Born rule)</td>
 </tr>
 <tr>
@@ -545,7 +545,7 @@ $$</p>
 <td>Phase and $T$ gates</td>
 </tr>
 <tr>
-<td>$\tilde{R}_{\vec u_{\mathrm r}}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\tilde u_{\mathrm r}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>General rotation gate</td>
 </tr>
 <tr>
@@ -565,7 +565,7 @@ $$</p>
 <td>Swap gate</td>
 </tr>
 <tr>
-<td>$\Phi(\tilde{\rho})=\sum_l\tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$</td>
+<td>$\Phi(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$</td>
 <td>Kraus representation of a channel</td>
 </tr>
 <tr>

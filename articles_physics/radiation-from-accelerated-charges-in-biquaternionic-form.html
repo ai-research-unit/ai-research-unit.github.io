@@ -63,7 +63,7 @@ $$</p>
 <h2 id="the-retarded-solution-for-a-point-source">The Retarded Solution for a Point Source</h2>
 <p>The Maxwell article establishes that in the Lorenz gauge the potential biquaternion satisfies the biquaternionic wave equation</p>
 <p>$$
-\Box \tilde{A} = -\mu\,\tilde{R}', \qquad \tilde{R}' = ic\rho + \vec J,
+\Box \tilde{A} = -\mu\,\tilde J, \qquad \tilde J = ic\rho\,e_t + \vec J,
 $$</p>
 <p>and that the physically correct solution is the <strong>retarded</strong> one, built by convolution over the past light cone. The scalar Green's function of this second-order equation, distinct from the scalar part of that article's biquaternion-valued retarded Green's function (a first-order kernel of the opposite sign), is the familiar retarded kernel of the d'Alembertian,</p>
 <p>$$
@@ -71,7 +71,7 @@ G_{\Box}(\tilde{Q}) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right), \q
 $$</p>
 <p>so that</p>
 <p>$$
-\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^4Y .
+\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde J(\tilde{Y})\,d^4Y .
 $$</p>
 <p>We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(t)$, the source is</p>
 <p>$$
@@ -80,7 +80,7 @@ $$</p>
 $$</p>
 <p>and therefore</p>
 <p>$$
-\tilde{R}'(\tilde{Y}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
+\tilde J(\tilde{Y}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$</p>
 <p>Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the <strong>retarded time</strong> $t_r$ defined implicitly by</p>
 <p>$$
@@ -158,13 +158,13 @@ $$</p>
 <p>Every zero divisor factorises, and the source's spinor treatment of the retarded field is such a factorisation, written in objects that this article has already defined. Three of them are the source's, and it is worth naming each once against the conventions here.</p>
 <p><strong>The invariant retarded distance.</strong> The source's scalar is</p>
 <p>$$
-\xi = -i\,\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right),
+\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right),
 \qquad
-\tilde{v} = \frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
+\frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
 $$</p>
-<p>where $\tilde{v}$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,</p>
+<p>where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right)
 = \gamma\,(iR) - (-i\gamma\vec\beta)\cdot(-\vec R)
 = i\gamma\left(R - \vec R\cdot\vec\beta\right)
 = i\gamma D ,
@@ -400,7 +400,7 @@ D = R - \vec R\cdot\vec\beta
 = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right),
 $$</p>
 <p>built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(t_r)\right)$, both in $\mathbb{M}_-$.</p>
-<p>The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}}) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:</p>
+<p>The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:</p>
 <p>$$
 \tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,\tilde{B}^2,
 $$</p>
@@ -458,15 +458,15 @@ $$</p>
 <td>Potential biquaternion (Liénard–Wiechert)</td>
 </tr>
 <tr>
-<td>$\tilde{R}' = ic\rho + \vec J$</td>
-<td>Source biquaternion of the potential wave equation</td>
+<td>$\tilde J = ic\rho\,e_t + \vec J$</td>
+<td>Four-current of the potential wave equation</td>
 </tr>
 <tr>
 <td>$t_r$</td>
-<td>Retarded time, $t_r = t - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)|/c$</td>
+<td>Retarded time, $t_r = t - \lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)\rvert/c$</td>
 </tr>
 <tr>
-<td>$\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)$, $R = |\vec R|$</td>
+<td>$\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)$, $R = \lvert\vec R\rvert$</td>
 <td>Retarded separation</td>
 </tr>
 <tr>
@@ -486,7 +486,7 @@ $$</p>
 <td>Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$</td>
 </tr>
 <tr>
-<td>$\vec\beta = \vec v(t_r)/c$, $\beta = |\vec\beta|$</td>
+<td>$\vec\beta = \vec v(t_r)/c$, $\beta = \lvert\vec\beta\rvert$</td>
 <td>Dimensionless retarded velocity</td>
 </tr>
 <tr>
@@ -502,12 +502,8 @@ $$</p>
 <td>Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}})$</td>
 </tr>
 <tr>
-<td>$\xi = \gamma D = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}})$</td>
+<td>$\xi = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right)$</td>
 <td>Invariant retarded distance (the source's $\xi$)</td>
-</tr>
-<tr>
-<td>$\tilde{v} = \tilde{V}/(ic)$</td>
-<td>Four-velocity at unit biquaternion norm, $\tilde{v} = \gamma(e_t - i\vec\beta)$</td>
 </tr>
 <tr>
 <td>$\tilde{B}$, $\tilde{B}^2 = \tilde{V}/(ic)$, $\tilde{B}^+ = \tilde{B}$</td>

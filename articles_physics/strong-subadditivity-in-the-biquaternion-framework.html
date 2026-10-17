@@ -138,13 +138,13 @@ $$
 $$
 and a state is an element
 $$
-\tilde\rho_n\in\big(\mathbb{M}_+^{\otimes n}\big),\qquad
-\tilde\rho_n\ge0,\qquad
-\mathrm{Tr}(\tilde\rho_n)=1 .
+\tilde{Ϛ}_n\in\big(\mathbb{M}_+^{\otimes n}\big),\qquad
+\tilde{Ϛ}_n\ge0,\qquad
+\mathrm{Tr}(\tilde{Ϛ}_n)=1 .
 $$
 For $n=1$ this is the Bloch ball of the GNS companion article; for $n\ge2$ it is the set of $2^n\times2^n$ density matrices, and the entropy functional is
 $$
-S(\tilde\rho_n)=-\mathrm{Tr}\big(\tilde\rho_n\log\tilde\rho_n\big),
+S(\tilde{Ϛ}_n)=-\mathrm{Tr}\big(\tilde{Ϛ}_n\log\tilde{Ϛ}_n\big),
 $$
 the ordinary von Neumann entropy with the product trace. Every state of the tensor power is a density matrix, so every theorem about density matrices applies to it. This is the sense in which the framework inherits strong subadditivity.</p>
 <p>The tensor power is not a subalgebra of $\mathbb{B}$. The dimension already says so: $\dim_\mathbb{C}\mathbb{B}^{\otimes n}=4^n$ while $\dim_\mathbb{C}\mathbb{B}=4$, and the two agree only at $n=1$. This is the same capacity statement as in the Fock-space companion article, where the algebra carries exactly one fermionic mode: everything beyond one mode is built on the outside, on modules over $\mathbb{B}$, and the many-mode states are states of those modules.</p>
@@ -163,24 +163,24 @@ $$
 $$
 The three operators do not commute in general — $a$ is nontrivial on $AB$, $b$ on $BC$, and the two share $B$ — so $\log a+\log b-\log c$ is not the logarithm of the product $abc$. It is the logarithm of $\tilde\sigma_{ABC}$ by construction: the exponential of a Hermitian algebra element is positive and nonsingular, and its logarithm is that element. Hence
 $$
-\mathrm{Tr}\big[\tilde\rho_{ABC}\log\tilde\sigma_{ABC}\big]
-=\mathrm{Tr}\big[\tilde\rho_{ABC}\log a\big]
-+\mathrm{Tr}\big[\tilde\rho_{ABC}\log b\big]
--\mathrm{Tr}\big[\tilde\rho_{ABC}\log c\big],
+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde\sigma_{ABC}\big]
+=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log a\big]
++\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log b\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log c\big],
 $$
 and each term is a marginal identity,
 $$
-\mathrm{Tr}\big[\tilde\rho_{ABC}\log a\big]
+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log a\big]
 =\mathrm{Tr}_{AB}\big[\rho_{AB}\log\rho_{AB}\big]=-S(\rho_{AB}),
 $$
 and its analogues, which use only that the $AB$ marginal of $\rho_{ABC}$ is $\rho_{AB}$ and that $\log a$ acts trivially on $C$. With these,
 $$
-S(\tilde\rho_{ABC}\|\tilde\sigma_{ABC})
-=\mathrm{Tr}\big[\tilde\rho_{ABC}\log\tilde\rho_{ABC}\big]
--\mathrm{Tr}\big[\tilde\rho_{ABC}\log\tilde\sigma_{ABC}\big]
+S(\tilde{Ϛ}_{ABC}\|\tilde\sigma_{ABC})
+=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde{Ϛ}_{ABC}\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde\sigma_{ABC}\big]
 =-S(\rho_{ABC})+S(\rho_{AB})+S(\rho_{BC})-S(\rho_B).
 $$
-The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde\rho_{ABC}\|\tilde\sigma_{ABC})\ge0$ <strong>is</strong> strong subadditivity. The operator $\tilde\sigma_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde\sigma_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{ab}p_{bc}/p_b$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.</p>
+The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde{Ϛ}_{ABC}\|\tilde\sigma_{ABC})\ge0$ <strong>is</strong> strong subadditivity. The operator $\tilde\sigma_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde\sigma_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{ab}p_{bc}/p_b$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.</p>
 <p>The proof is cleanest in the form in which both reference states are products. Partial trace is a completely positive trace-preserving map, so by the monotonicity of relative entropy the pair $(\rho_{ABC},\rho_{AB}\otimes\rho_C)$ dominates its image $(\rho_{BC},\rho_B\otimes\rho_C)$ under $\mathrm{Tr}_A$:
 $$
 S(\rho_{ABC}\|\rho_{AB}\otimes\rho_C)\ \ge\ S(\rho_{BC}\|\rho_B\otimes\rho_C).

@@ -134,13 +134,13 @@ Z_0[\eta,\bar\eta]=\det\big(i\not\partial-m\big)\;
 $$</p>
 <p>where $S_F$ is the propagator amplitude of the companion article in configuration space. The determinant, the trace-log and the systematic evaluation of the functional determinant are outside this article's subject; what belongs here is the biquaternion form of the result.</p>
 <h3 id="the-biquaternion-form-of-the-kernel">The Biquaternion Form of the Kernel</h3>
-<p>Writing the wave biquaternion $\tilde k=iE\,e_t+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^y$, the momentum-space kernel is</p>
+<p>Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^y$, the momentum-space kernel is</p>
 <p>$$
-S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$</p>
 <p>the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict$ axis of the material sector:</p>
 <p>$$
-\det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde k\tilde k^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$</p>
 <p>formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.</p>
 <h2 id="the-pfaffian-and-the-real-structure">The Pfaffian and the Real Structure</h2>
@@ -213,7 +213,7 @@ $$</p>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.</p>
-<p>The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde k\tilde k^{\natural}+m^2-i\epsilon)$.</p>
+<p>The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.</p>
 <p>For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ offers the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$, verified to nine decimals and equivalent to $\omega_n=(2n+1)\pi/\beta$.</p>
 <p>The algebra contributes the centrality of the phase, the sector location of the deformation, and the existence of the pairing. It does not supply the measure, the evaluation of the determinant, or the phase, and the article says so.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -266,7 +266,7 @@ $$</p>
 <td>Field-level free functional</td>
 </tr>
 <tr>
-<td>$S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}$</td>
+<td>$S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$</td>
 <td>Kernel in the deformed-mass-shell form</td>
 </tr>
 <tr>

@@ -249,13 +249,13 @@ $$</p>
 <h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
 <p>The <strong>Cauchy kernel</strong> is the fundamental solution of the gradient:</p>
 <p>$$
-\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G^{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$</p>
-<p>It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:</p>
+<p>It satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:</p>
 <p>$$
-\tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) \tilde\Pi_1 + \tilde{G}(\tilde{Q}_-) \tilde\Pi_2,
+G^{\mathrm{fn}}(\tilde{Q}) = G^{\mathrm{fn}}(\tilde{Q}_+) \tilde\Pi_1 + G^{\mathrm{fn}}(\tilde{Q}_-) \tilde\Pi_2,
 $$</p>
-<p>where $\tilde{G}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.</p>
+<p>where $G^{\mathrm{fn}}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
 <p>$$
@@ -378,11 +378,11 @@ $$</p>
 <td>Riemann zeta function</td>
 </tr>
 <tr>
-<td>$\tilde{K}$</td>
-<td>Cauchy kernel</td>
+<td>$G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$</td>
+<td>Cauchy kernel, fundamental solution of $\tilde\nabla$</td>
 </tr>
 <tr>
-<td>$P(\tilde{Q}, \zeta)$</td>
+<td>$P(\tilde{Q}, \tilde{R})$</td>
 <td>Poisson kernel</td>
 </tr>
 <tr>

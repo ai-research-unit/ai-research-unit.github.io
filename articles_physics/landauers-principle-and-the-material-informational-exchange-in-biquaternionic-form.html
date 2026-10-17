@@ -56,9 +56,9 @@
 Q_{\min} = k_B T \log 2
 $$</p>
 <p>of heat into an environment at temperature $T$. It is the bridge between the informational and the material descriptions of a physical process. It is also the reason the two descriptions cannot be kept apart: a memory is a physical system, its logical states are physical states, and the reset of those states has a thermodynamic price.</p>
-<p>This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The <strong>material sector</strong> $\mathbb{M}_-$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The <strong>informational sector</strong> $\mathbb{M}_+$ is the Hermitian subspace; its states are $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>,</p>
+<p>This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The <strong>material sector</strong> $\mathbb{M}_-$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The <strong>informational sector</strong> $\mathbb{M}_+$ is the Hermitian subspace; its states are $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>,</p>
 <p>$$
-\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right) = h(|\vec r|),
+\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right) = h(|\vec r|),
 $$</p>
 <p>which is a function of the sector's biquaternion norm. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of <strong>rank two</strong> in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.</p>
 <p>The biquaternion content of the article is structural. The two ledgers of the exchange are the biquaternion norms of the two sectors, and the two biquaternion norms are exchanged by the central factor $i$: for every element, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does <strong>not</strong> supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.</p>
@@ -91,11 +91,11 @@ $$</p>
 <h3 id="the-informational-ledger">The Informational Ledger</h3>
 <p>A classical bit in the informational sector is a state diagonal in a pointer basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$:</p>
 <p>$$
-\tilde{\rho} = p_+\,\tilde\Pi_1(\vec u) + p_-\,\tilde\Pi_2(\vec u), \qquad p_\pm \ge 0, \quad p_+ + p_- = 1 .
+\tilde{Ϛ} = p_+\,\tilde\Pi_1(\vec u) + p_-\,\tilde\Pi_2(\vec u), \qquad p_\pm \ge 0, \quad p_+ + p_- = 1 .
 $$</p>
 <p>Its Bloch vector is $\vec r = (p_+ - p_-)\vec u$, of length $|\vec r| = |p_+ - p_-| \le 1$, and its entropy functional is</p>
 <p>$$
-\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right) = -p_+\log p_+ - p_-\log p_- = h(|p_+ - p_-|).
+\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right) = -p_+\log p_+ - p_-\log p_- = h(|p_+ - p_-|).
 $$</p>
 <p>The state is genuinely <strong>classical</strong>: it is a mixture of two orthogonal idempotents with no coherence between them, so its information content is the Shannon entropy of its pointer distribution and nothing else. The maximally ignorant bit has $p_\pm = \tfrac{1}{2}$, $\vec r = 0$, and $\mathcal{S} = \log 2$; a definite bit has $|p_+ - p_-| = 1$, $\vec r$ on the sphere, and $\mathcal{S} = 0$.</p>
 <h3 id="the-material-ledger">The Material Ledger</h3>
@@ -126,9 +126,9 @@ $$</p>
 <h3 id="the-erasure-map">The Erasure Map</h3>
 <p><strong>Erasure</strong> is the reset of the memory to one standard pointer state, independent of its prior state. In the sector it is the map</p>
 <p>$$
-\mathcal{E}_{\vec u} : \tilde{\rho} \longmapsto \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{\rho}),
+\mathcal{E}_{\vec u} : \tilde{Ϛ} \longmapsto \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}),
 $$</p>
-<p>which discards the state entirely and returns the fixed idempotent, scaled by the trace; on the states of the sector, $\mathrm{Tr}(\tilde{\rho}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by</p>
+<p>which discards the state entirely and returns the fixed idempotent, scaled by the trace; on the states of the sector, $\mathrm{Tr}(\tilde{Ϛ}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by</p>
 <p>$$
 \vec r \longmapsto \vec u,
 $$</p>
@@ -139,11 +139,11 @@ $$</p>
 <p>$$
 K_1 = |0\rangle\langle 0|, \qquad K_2 = |0\rangle\langle 1| ,
 $$</p>
-<p>where $K_1$ is $\tilde\Pi_1(\vec u)$ itself and $K_2$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{\rho}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{\rho})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{\rho}$ is $\tilde\Pi_1$ independent of $\tilde{\rho}$. The minimal Kraus rank of the reset channel is two.</p>
+<p>where $K_1$ is $\tilde\Pi_1(\vec u)$ itself and $K_2$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.</p>
 <h3 id="the-entropy-change">The Entropy Change</h3>
 <p>The entropy change of the memory is the difference between the entropies of the image and the state:</p>
 <p>$$
-\Delta\mathcal{S} = \mathcal{S}\!\left(\tilde\Pi_1(\vec u)\right) - \mathcal{S}(\tilde{\rho}) = 0 - \mathcal{S}(\tilde{\rho}) = -\mathcal{S}(\tilde{\rho}),
+\Delta\mathcal{S} = \mathcal{S}\!\left(\tilde\Pi_1(\vec u)\right) - \mathcal{S}(\tilde{Ϛ}) = 0 - \mathcal{S}(\tilde{Ϛ}) = -\mathcal{S}(\tilde{Ϛ}),
 $$</p>
 <p>because the erased state is pure, hence a zero divisor, hence of zero entropy. Erasure therefore removes exactly the state's entropy and nothing else. Three cases are worth isolating.</p>
 <p><strong>A full bit.</strong> For the maximally ignorant pointer state, $p_\pm = \tfrac{1}{2}$,</p>
@@ -152,7 +152,7 @@ $$</p>
 $$</p>
 <p>using $h(0) = \log 2$.</p>
 <p><strong>A biased bit.</strong> For a classical bit with $|\vec r| = |p_+ - p_-| \ne 0$, the removal is $\Delta\mathcal{S} = -h(|\vec r|)$, less than a full bit.</p>
-<p><strong>A superposition.</strong> For the interior state $\tilde{\rho} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y))$, with $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ and $|\vec r| = 1/\sqrt{2}$, the functional gives $\mathcal{S} = 0.4164955307$ and erasure to any idempotent gives</p>
+<p><strong>A superposition.</strong> For the interior state $\tilde{Ϛ} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y))$, with $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ and $|\vec r| = 1/\sqrt{2}$, the functional gives $\mathcal{S} = 0.4164955307$ and erasure to any idempotent gives</p>
 <p>$$
 \Delta\mathcal{S} = -0.4164955307 .
 $$</p>
@@ -176,7 +176,7 @@ $$</p>
 <p>which is Landauer's principle. The <strong>exchange rate</strong> is therefore $k_B T$ per nat of erased information, or $k_B T \log 2$ per bit; the heat is the material ledger's entry corresponding to the informational ledger's debit.</p>
 <p>For a general state the same argument gives</p>
 <p>$$
-Q \ge k_B T\,\mathcal{S}(\tilde{\rho}) ,
+Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) ,
 $$</p>
 <p>so the cost is the entropy functional of the erased state, read in units of $k_B T$. The material cost is thus controlled by the biquaternion norm that controls the entropy: a state near the null cone is cheap to erase, and the maximally mixed state is the most expensive, at $k_BT\log2$.</p>
 <h3 id="a-worked-model">A Worked Model</h3>
@@ -205,7 +205,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Reversible gate (rotor conjugation)</td>
-<td>$\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$, $\tilde{R}\tilde{R}^{*}=e_t$</td>
+<td>$\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$, $\tilde u\tilde u^{*}=e_t$</td>
 <td>$0$</td>
 <td>$\{0,0,0\}$</td>
 </tr>
@@ -218,7 +218,7 @@ $$</p>
 <tr>
 <td>Erasure</td>
 <td>reset to $\tilde\Pi_1(\vec u)$</td>
-<td>$-\mathcal{S}(\tilde{\rho})$ on the memory, $+\mathcal{S}(\tilde{\rho})$ on the environment</td>
+<td>$-\mathcal{S}(\tilde{Ϛ})$ on the memory, $+\mathcal{S}(\tilde{Ϛ})$ on the environment</td>
 <td>$-\infty$ (linear part $L=0$)</td>
 </tr>
 </tbody>
@@ -226,18 +226,18 @@ $$</p>
 <p>A <strong>reversible</strong> operation is an isometry: it preserves the biquaternion norm, produces no entropy, and has a vanishing Lyapunov spectrum. An <strong>irreversible</strong> operation is a contraction: it destroys distinctions, produces entropy in the combined account, and has non-positive exponents. Erasure is the extreme case of the second class. The thermodynamic cost appears <strong>only</strong> in the second class, and it appears as the compensating environment entropy required by the second law. This is the operational meaning of the material–informational exchange: the informational sector's reversible operations are free, and its irreversible operations are paid for in the material sector.</p>
 <p>It is worth stating what is not claimed. The framework does not derive the Landauer bound; the bound follows from the second law and the Clausius relation, both standard. The framework's contribution is the exact expression of the informational debit — the entropy functional of the state, a function of the biquaternion norm — and the identification of the material credit with the energy component of a material-sector four-vector. The rate $T$ is thermodynamic input.</p>
 <h2 id="what-is-derived-and-what-is-imported">What Is Derived and What Is Imported</h2>
-<p><strong>Derived from the algebra.</strong> The representation of a classical bit as a diagonal state $\tilde{\rho} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ and the identification of its entropy with the Shannon entropy of the pointer distribution; the erasure map, its idempotent and non-unital character, and its minimal Kraus rank two, with the completeness and reset identities checked in the $2\times2$ representation; the entropy debit $\Delta\mathcal{S} = -\mathcal{S}(\tilde{\rho})$ and its contrast with the monotonicity of a unital coarse-graining; the value $-\log 2$ for a full bit and the superposition value $-0.4164955307$ for the interior state $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$; the energy-carrying role of the material sector; and the sector exchange $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.</p>
+<p><strong>Derived from the algebra.</strong> The representation of a classical bit as a diagonal state $\tilde{Ϛ} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ and the identification of its entropy with the Shannon entropy of the pointer distribution; the erasure map, its idempotent and non-unital character, and its minimal Kraus rank two, with the completeness and reset identities checked in the $2\times2$ representation; the entropy debit $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ})$ and its contrast with the monotonicity of a unital coarse-graining; the value $-\log 2$ for a full bit and the superposition value $-0.4164955307$ for the interior state $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$; the energy-carrying role of the material sector; and the sector exchange $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.</p>
 <p><strong>Imported from standard thermodynamics.</strong> Landauer's principle and its derivation from the second law; the tightness of the bound and the refinements for correlated memories; the Clausius relation and the ideal-gas isothermal work; and the ideal-gas equation of state. These are copied from the standard literature.</p>
 <p><strong>Not supplied.</strong> The framework does not produce the value $k_BT\log2$, does not select a physical implementation of erasure, and does not derive the temperature of the environment. It predicts no departure from the standard Landauer accounting; it reorganises that accounting into the two sectors of the algebra.</p>
 <h2 id="summary">Summary</h2>
-<p>The informational and material sectors of the framework are the two ledgers of Landauer's principle. A classical bit is a state $\tilde{\rho} = p_+\tilde\Pi_1(\vec u) + p_-\tilde\Pi_2(\vec u)$ of the informational sector, with entropy $\mathcal{S}(\tilde{\rho}) = h(|p_+ - p_-|)$ equal to the Shannon entropy of its pointer distribution. Energy and heat are carried by the material sector as the four-vector $\tilde{P} = i(E/c)e_t + \vec p$.</p>
-<p><strong>Erasure</strong> is the reset $\tilde{\rho}\mapsto\tilde\Pi_1(\vec u)$, a rank-two completely positive trace-preserving map and the extreme case of the irreversible class. Its entropy debit is</p>
+<p>The informational and material sectors of the framework are the two ledgers of Landauer's principle. A classical bit is a state $\tilde{Ϛ} = p_+\tilde\Pi_1(\vec u) + p_-\tilde\Pi_2(\vec u)$ of the informational sector, with entropy $\mathcal{S}(\tilde{Ϛ}) = h(|p_+ - p_-|)$ equal to the Shannon entropy of its pointer distribution. Energy and heat are carried by the material sector as the four-vector $\tilde{P} = i(E/c)e_t + \vec p$.</p>
+<p><strong>Erasure</strong> is the reset $\tilde{Ϛ}\mapsto\tilde\Pi_1(\vec u)$, a rank-two completely positive trace-preserving map and the extreme case of the irreversible class. Its entropy debit is</p>
 <p>$$
-\Delta\mathcal{S} = -\mathcal{S}(\tilde{\rho}) \qquad (\text{a full bit: } -\log 2),
+\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } -\log 2),
 $$</p>
-<p>and the second law forces a compensating environment entropy $\Delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{\rho})$, hence a heat</p>
+<p>and the second law forces a compensating environment entropy $\Delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{Ϛ})$, hence a heat</p>
 <p>$$
-Q \ge k_B T\,\mathcal{S}(\tilde{\rho}) \qquad (\text{a full bit: } k_BT\log 2).
+Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}) \qquad (\text{a full bit: } k_BT\log 2).
 $$</p>
 <p>The exchange rate between the sectors is $k_BT$ per nat. The two ledgers are related by the central factor $i$, which exchanges the sectors and reverses the sign of the biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.</p>
 <p>Reversible operations — rotor conjugations — preserve the biquaternion norm, produce no entropy and have a vanishing Lyapunov spectrum; irreversible operations — coarse-grainings, and erasure above all — contract, produce entropy in the combined account, and are paid for in the material sector. This is the material–informational exchange: the reversible part of the informational sector is free, and the irreversible part costs $k_BT$ per nat, at the exchange rate set by the temperature.</p>
@@ -267,7 +267,7 @@ $$</p>
 <td>Central scalar imaginary; exchanges the sectors</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$</td>
 <td>State of the informational sector</td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ $$</p>
 <td>Pointer idempotents (logical states)</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$</td>
+<td>$\tilde{Ϛ} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$</td>
 <td>Classical bit (diagonal state)</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ $$</p>
 <td>Sector exchange of the quadratic form</td>
 </tr>
 <tr>
-<td>$\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\vec r|)$</td>
+<td>$\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}) = h(|\vec r|)$</td>
 <td>Entropy functional (nats)</td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ $$</p>
 <td>Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$</td>
 </tr>
 <tr>
-<td>$\mathcal{E}_{\vec u}(\tilde{\rho}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{\rho})$</td>
+<td>$\mathcal{E}_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$</td>
 <td>Erasure map (non-unital reset)</td>
 </tr>
 <tr>
@@ -307,7 +307,7 @@ $$</p>
 <td>Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$</td>
 </tr>
 <tr>
-<td>$\Delta\mathcal{S} = -\mathcal{S}(\tilde{\rho})$</td>
+<td>$\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ})$</td>
 <td>Entropy debit of erasure</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ $$</p>
 <td>Landauer cost of erasing one bit</td>
 </tr>
 <tr>
-<td>$Q \ge k_BT\,\mathcal{S}(\tilde{\rho})$</td>
+<td>$Q \ge k_BT\,\mathcal{S}(\tilde{Ϛ})$</td>
 <td>Landauer bound for a general state</td>
 </tr>
 <tr>

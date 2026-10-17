@@ -257,11 +257,11 @@ $$</p>
 <p><strong>The complex case keeps two blocks instead of four, and the number of unknowns is $n^{2}$.</strong></p>
 <p><strong>Proposition.</strong> In the complex case the half-vectorisation is $z=(\mathrm{vec}_{S}(X_{0}),\mathrm{vec}_{A}(X_{1}))^{\mathsf T}$, of length $n^{2}$, and the reduction is that of §<em>The Reduction to One Real System</em> with</p>
 <p>$$
-\tilde Q=\operatorname{diag}\bigl(K_{S},-K_{A}\bigr),\qquad \tilde R=\operatorname{diag}\bigl(K_{S},K_{A}\bigr),
+Q_{\mathrm c}=\operatorname{diag}\bigl(K_{S},-K_{A}\bigr),\qquad R_{\mathrm c}=\operatorname{diag}\bigl(K_{S},K_{A}\bigr),
 $$</p>
-<p>the matrices $\tilde P$ and $\tilde J$ built from the two-block real representation $\tilde M^{R}=\begin{pmatrix}M_{0}&-M_{1}\\ M_{1}&M_{0}\end{pmatrix}$ and the row form $\tilde M^{R}_{r}=[M_{0},-M_{1}]$.</p>
+<p>the matrices $P_{\mathrm c}$ and $J_{\mathrm c}$ built from the two-block real representation $M^{R}=\begin{pmatrix}M_{0}&-M_{1}\\ M_{1}&M_{0}\end{pmatrix}$ and the row form $M^{R}_{r}=[M_{0},-M_{1}]$. The subscript $\mathrm c$ marks the complex-case matrices; the four-block matrices of the preceding section carry no subscript.</p>
 <p><em>Proof.</em> The unknown has two real blocks, $X_{0}$ symmetric and $X_{1}$ antisymmetric, so the half-vectorisation has $n(n+1)/2+n(n-1)/2=n^{2}$ coordinates. The row form of the two-block representation is $[X_{0},-X_{1}]$, and the rest of the construction is the same with two blocks in place of four.</p>
-<p>The complex theorems are the source's Theorems 4.1 and 4.2, with the consistency criterion and the uniqueness criterion $\operatorname{rank}(\tilde P\tilde J\tilde Q)=n^{2}$.</p>
+<p>The complex theorems are the source's Theorems 4.1 and 4.2, with the consistency criterion and the uniqueness criterion $\operatorname{rank}(P_{\mathrm c}J_{\mathrm c}Q_{\mathrm c})=n^{2}$.</p>
 <h2 id="the-hermitian-partial-inverse-eigenvalue-problem">The Hermitian Partial Inverse Eigenvalue Problem</h2>
 <h3 id="the-problem">The Problem</h3>
 <p><strong>The partial inverse eigenvalue problem prescribes part of the spectrum and asks for a Hermitian matrix carrying it.</strong></p>
@@ -276,17 +276,17 @@ $$</p>
 <p>$$
 \operatorname{rank}(N)=\operatorname{rank}\bigl([N,t]\bigr),
 $$</p>
-<p>where $\tilde S=(\tilde\Phi^{R})^{\mathsf T}\otimes[I_{n},0]$ is the coefficient matrix of the single equation, $[I_{n},0]$ being the row form of $\tilde I_{n}$, $N=\tilde S\tilde J\tilde Q$ and $t=\mathrm{vec}(\tilde E^{R}_{r})$ with $\tilde E=\Phi\Lambda$.</p>
+<p>where $S_{\mathrm c}=(\Phi^{R})^{\mathsf T}\otimes[I_{n},0]$ is the coefficient matrix of the single equation, $[I_{n},0]$ being the row form of $I_{n}$, $N=S_{\mathrm c}J_{\mathrm c}Q_{\mathrm c}$ and $t=\mathrm{vec}(E^{R}_{r})$ with $E=\Phi\Lambda$.</p>
 <p><em>Proof.</em> Substituting these matrices into the complex pair leaves the single equation $M\Phi=\Phi\Lambda$; the reduction of §<em>The Encodings and the Unknowns</em> applies, and a linear system is solvable exactly when the rank of its matrix equals the rank of the matrix augmented by the right-hand side.</p>
 <p>The criterion is the source's Corollary 4.3.</p>
 <h3 id="non-uniqueness">Non-Uniqueness</h3>
 <p><strong>The prescribed data need not determine the matrix, and the general solution carries an arbitrary vector.</strong></p>
 <p><strong>Proposition.</strong> When the criterion holds, the general solution is</p>
 <p>$$
-\begin{pmatrix}\mathrm{vec}(M_{0})\\ \mathrm{vec}(M_{1})\end{pmatrix}=\tilde R\Bigl((N)_{\mathrm{MP}}\,t+\bigl(I_{n^{2}}-(N)_{\mathrm{MP}}N\bigr)y\Bigr),
+\begin{pmatrix}\mathrm{vec}(M_{0})\\ \mathrm{vec}(M_{1})\end{pmatrix}=R_{\mathrm c}\Bigl((N)_{\mathrm{MP}}\,t+\bigl(I_{n^{2}}-(N)_{\mathrm{MP}}N\bigr)y\Bigr),
 $$</p>
 <p>with $y\in\mathbb{R}^{n^{2}}$ arbitrary, and $M$ is unique exactly when $\operatorname{rank}(N)=n^{2}$.</p>
-<p><em>Proof.</em> The general solution of a consistent linear system is the sum of a particular solution and an arbitrary element of the kernel, and the parametrisation by $\tilde R$ is injective. The source's Remark 4.4 records the non-uniqueness in the same terms.</p>
+<p><em>Proof.</em> The general solution of a consistent linear system is the sum of a particular solution and an arbitrary element of the kernel, and the parametrisation by $R_{\mathrm c}$ is injective. The source's Remark 4.4 records the non-uniqueness in the same terms.</p>
 <h2 id="verification">Verification</h2>
 <p>The following identities were checked by exact recomputation with rational arithmetic on matrices of at most three rows and columns, and on one hundred random instances where an instance count is stated.</p>
 <ul>
@@ -369,7 +369,7 @@ $$</p>
 <td>The rank, and the block diagonal matrix</td>
 </tr>
 <tr>
-<td>$\tilde Q,\tilde R,\tilde P,\tilde S,\tilde J$</td>
+<td>$Q_{\mathrm c},R_{\mathrm c},P_{\mathrm c},S_{\mathrm c},J_{\mathrm c}$</td>
 <td>The complex versions of the encodings, of the selection and of the coefficient matrices</td>
 </tr>
 <tr>

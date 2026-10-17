@@ -56,7 +56,7 @@
 E_n = -\frac{m\kappa^2}{2\hbar^2 n^2},
 $$</p>
 <p>the eigenstates are labelled by the quantum numbers $n,l,m$, and each orbital level carries a two-valued spin factor.</p>
-<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $\tilde L_k=L_k e_t$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde P\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
+<p>This article writes that problem in the notation of the biquaternion framework and asks what the framework contributes to it. The material it uses is already on the shelf. The companion article <em>Angular Momentum and Spin in Biquaternionic Form</em> supplies the orbital operators $L_k e_t$, sitting in the scalar slot, the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, sitting in the vector slots, and the eigenvalue $\hbar^2 l(l+1)$ through which the angular problem couples to the radial one. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> supplies the state module $\mathbb{B}\tilde P\cong\mathbb{C}^2$ and fixes the scalar imaginary $i$ as the unit of the equation.</p>
 <p>The honest summary can be stated before the derivation, and it is simple. The non-relativistic Coulomb Hamiltonian is a <strong>central scalar</strong> element of $\mathbb{M}_+$: its vector part vanishes. It therefore treats the spin as a spectator, and the biquaternion equation reduces componentwise to the ordinary scalar Schrödinger equation. The genuinely algebraic ingredients are the two-dimensional module $\mathbb{B}\tilde P$ that carries the spin factor and the placement of the orbital and spin operators in complementary slots. What the framework does <strong>not</strong> supply is the space in which the bound states live and an algebraic account of the $n^2$ degeneracy; both gaps are stated where they arise and collected in a section of their own, rather than smoothed over.</p>
 <p>The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.</p>
 <p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$.</p>
@@ -109,24 +109,24 @@ $$</p>
 \psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{B}\tilde P \cong \mathbb{C}^2,
 $$</p>
 <p>a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the <strong>argument</strong> of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.</p>
-<p>Under the isomorphism $\mathsf{M}_2$ the field $\psi$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ act on its two components as $\tfrac{\hbar}{2}\sigma_k$, and the orbital operators $\tilde L_k=L_k e_t$ act on the argument as $L_k$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_t$; the spin operators occupy the <strong>vector</strong> slots $i\vec e_k$. Because a scalar multiple of $e_t$ is central, the two families commute:</p>
+<p>Under the isomorphism $\mathsf{M}_2$ the field $\psi$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ act on its two components as $\tfrac{\hbar}{2}\sigma_k$, and the orbital operators $L_k e_t$ act on the argument as $L_k$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_t$; the spin operators occupy the <strong>vector</strong> slots $i\vec e_k$. Because a scalar multiple of $e_t$ is central, the two families commute:</p>
 <p>$$
-[\tilde L_i,\tilde S_j]=0 .
+[L_i,\tilde S_j]=0 .
 $$</p>
 <p>This is the framework's statement that the external and internal degrees of freedom are independent, and it is what makes the separation of the Coulomb problem possible in the form below.</p>
 <h2 id="separation-of-the-coulomb-problem">Separation of the Coulomb Problem</h2>
 <h3 id="conserved-quantities">Conserved quantities</h3>
 <p>Because $\tilde H$ is central it commutes with everything, so</p>
 <p>$$
-[\tilde H,\tilde L_k]=0, \qquad [\tilde H,\tilde S_k]=0, \qquad [\tilde H,\tilde L^2]=0, \qquad [\tilde H,\tilde S^2]=0,
+[\tilde H,L_k]=0, \qquad [\tilde H,\tilde S_k]=0, \qquad [\tilde H,L^2]=0, \qquad [\tilde H,\tilde S^2]=0,
 $$</p>
-<p>with the Casimir operators built from the operators of the companion article, $\tilde L^2=L^2e_t$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$. The orbital magnetic quantum number $m$, the orbital quantum number $l$, and the spin quantum numbers are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.</p>
-<p>One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $\tilde H$ is spin-independent, the <strong>total</strong> angular momentum $\tilde J_k=\tilde L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,j,m_j\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.</p>
-<p>A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $\tilde L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $\tilde H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.</p>
+<p>with the Casimir operators built from the operators of the companion article, $L^2e_t$ and $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$. The orbital magnetic quantum number $m$, the orbital quantum number $l$, and the spin quantum numbers are therefore all good quantum numbers of the non-relativistic Coulomb problem, and the Hamiltonian mixes none of them.</p>
+<p>One consequence deserves emphasis, because it distinguishes this article from the relativistic one. Since $\tilde H$ is spin-independent, the <strong>total</strong> angular momentum $\tilde J_k=L_k+\tilde S_k$ and its coupling are not needed here. The coupled basis $|n,l,j,m_j\rangle$ and the spin–orbit eigenvalues of the angular-momentum article become relevant only when the $1/c^2$ corrections are included; in the non-relativistic problem the natural basis is the uncoupled one, $|n,l,m\rangle\,|\!\uparrow\rangle,|n,l,m\rangle\,|\!\downarrow\rangle$.</p>
+<p>A clarification is owed at this point, because the angular-momentum article introduces the spin–orbit operator $L_k\tilde S_k$ in the same discussion of the hydrogen atom and records its eigenvalues. Those eigenvalues are not properties of the Hamiltonian $\tilde H$ of this article. The Coulomb Hamiltonian above is strictly spin-independent, and the spin–orbit interaction is a relativistic correction of relative order $v^2/c^2$; it enters the spectrum only when the relativistic problem is treated. The coupled-basis construction of the angular-momentum article is the correct machinery for that corrected problem, not for the uncorrected one considered here.</p>
 <h3 id="the-angular-and-spin-factors">The angular and spin factors</h3>
 <p>The orbital angular momentum operators have the standard spherical-coordinate forms and spectra,</p>
 <p>$$
-\tilde L^2\,Y_l^m = \hbar^2 l(l+1)\,Y_l^m, \qquad \tilde L_z\,Y_l^m = \hbar m\,Y_l^m ,
+L^2\,Y_l^m = \hbar^2 l(l+1)\,Y_l^m, \qquad L_z\,Y_l^m = \hbar m\,Y_l^m ,
 $$</p>
 <p>with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\vec u$ has the two eigenspaces</p>
 <p>$$
@@ -150,11 +150,11 @@ $$</p>
 <p>$$
 -\hbar^2\nabla^2 = \frac{L^2}{r^2} - \frac{\hbar^2}{r^2}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),
 $$</p>
-<p>the angular factor is an eigenfunction of $\tilde L^2$ with eigenvalue $\hbar^2l(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:</p>
+<p>the angular factor is an eigenfunction of $L^2$ with eigenvalue $\hbar^2l(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:</p>
 <p>$$
 -\frac{\hbar^2}{2m}u'' + \left[\frac{\hbar^2 l(l+1)}{2mr^2}-\frac{\kappa}{r}\right]u = E\,u .
 $$</p>
-<p>This is the standard radial Coulomb equation. The framework's contribution at this step is the identification of the coupling: the whole of the angular problem enters the radial equation through the single eigenvalue $\hbar^2 l(l+1)$ of $\tilde L^2$, which is exactly the statement the angular-momentum article makes about the operators "that a position-space treatment of the hydrogen atom requires". The spin factor does not enter the radial equation at all, because $\tilde H$ is central; it multiplies the solution.</p>
+<p>This is the standard radial Coulomb equation. The framework's contribution at this step is the identification of the coupling: the whole of the angular problem enters the radial equation through the single eigenvalue $\hbar^2 l(l+1)$ of $L^2$, which is exactly the statement the angular-momentum article makes about the operators "that a position-space treatment of the hydrogen atom requires". The spin factor does not enter the radial equation at all, because $\tilde H$ is central; it multiplies the solution.</p>
 <h2 id="the-spectrum-and-the-eigenstates">The Spectrum and the Eigenstates</h2>
 <h3 id="the-spectrum">The spectrum</h3>
 <p>The bound-state solutions of the radial equation are the standard ones. The spectrum is</p>
@@ -189,7 +189,7 @@ $$</p>
 \psi_{100}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\chi_{m_s},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$</p>
-<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
+<p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\Pi}(\pm \vec e_z)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $L^2$ and $L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
 <h2 id="correspondence-with-the-standard-solution">Correspondence with the Standard Solution</h2>
 <p>Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\psi$ is a two-component column, the central Hamiltonian acts as $h_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.</p>
 <div class="table-scroll"><table>
@@ -213,7 +213,7 @@ $$</p>
 </tr>
 <tr>
 <td>Orbital $L_k$</td>
-<td>$\tilde L_k=L_k e_t$</td>
+<td>$L_k e_t$</td>
 <td>scalar</td>
 </tr>
 <tr>
@@ -242,7 +242,7 @@ $$</p>
 <ol>
 <li><strong>The kinetic term is a biquaternion-norm object.</strong> It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.</li>
 <li><strong>The Hamiltonian is central and the generator is in the material sector.</strong> The observable $\tilde H$ lies in $\mathbb{M}_+$; the generator $\tilde G=-i\tilde H/\hbar$ lies in $\mathbb{M}_-$ along $ie_t$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.</li>
-<li><strong>Orbital and spin operators occupy complementary slots.</strong> The orbital operators are scalar multiples of $e_t$ and central; the spin operators are vector-slot elements. Their commutativity, $[\tilde L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.</li>
+<li><strong>Orbital and spin operators occupy complementary slots.</strong> The orbital operators are scalar multiples of $e_t$ and central; the spin operators are vector-slot elements. Their commutativity, $[L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.</li>
 </ol>
 <h2 id="what-the-framework-does-not-supply">What the Framework Does Not Supply</h2>
 <p>The article's title promises the hydrogen atom in biquaternionic form. What has been delivered is the Coulomb problem written in the framework's notation, plus the structural facts above. The gaps should be recorded plainly.</p>
@@ -253,9 +253,9 @@ $$</p>
 <p>A fifth, smaller point is worth a line. The corpus's biquaternion special-functions article defines Laguerre polynomials $L_n(\tilde Q)$ for a biquaternion argument. Those are not the functions used above: the radial variable is a real scalar, $\rho=2r/(na_0)$, so the radial functions are the ordinary associated Laguerre polynomials with a real argument. The biquaternion-valued special functions are a separate construction and are not needed here; writing them in would be a misapplication.</p>
 <h2 id="where-the-relativistic-case-differs">Where the Relativistic Case Differs</h2>
 <p>The companion article <em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em> would begin from the biquaternion Dirac equation with the Coulomb potential rather than from the Schrödinger equation. Four differences from the present treatment are structural, and each is already visible in the framework's angular-momentum machinery.</p>
-<p><strong>The Hamiltonian ceases to be central.</strong> The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde J_k=\tilde L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $\tilde L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,</p>
+<p><strong>The Hamiltonian ceases to be central.</strong> The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde J_k=L_k+\tilde S_k$ replaces the separate factors. The spin–orbit operator $L_k\tilde S_k$ has the eigenvalues given in the angular-momentum article,</p>
 <p>$$
-\bigl(\tilde L_k\tilde S_k\bigr)_{j=l\pm\frac12} =
+\bigl(L_k\tilde S_k\bigr)_{j=l\pm\frac12} =
 \begin{cases} +\dfrac{\hbar^2 l}{2}, & j=l+\tfrac12,\\[6pt] -\dfrac{\hbar^2(l+1)}{2}, & j=l-\tfrac12, \end{cases}
 $$</p>
 <p>and the relevant basis is the coupled one, $|n,l,j,m_j\rangle$, built with the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.</p>
@@ -355,7 +355,7 @@ $$</p>
 <td>Bohr radius</td>
 </tr>
 <tr>
-<td>$\tilde L_k=L_k e_t$, $\tilde L^2=L^2e_t$</td>
+<td>$L_k e_t$, $L^2e_t$</td>
 <td>Orbital operators, scalar slot</td>
 </tr>
 <tr>
@@ -363,7 +363,7 @@ $$</p>
 <td>Spin operators, vector slots</td>
 </tr>
 <tr>
-<td>$\tilde J_k=\tilde L_k+\tilde S_k$</td>
+<td>$\tilde J_k=L_k+\tilde S_k$</td>
 <td>Total angular momentum (needed only relativistically)</td>
 </tr>
 <tr>

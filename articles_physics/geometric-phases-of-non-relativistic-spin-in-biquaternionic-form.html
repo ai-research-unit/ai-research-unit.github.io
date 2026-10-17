@@ -62,7 +62,7 @@
 <li><strong>The holonomy is a rotor.</strong> The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x)$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.</li>
 <li><strong>The adiabatic Berry phase is the slow limit of the same holonomy.</strong> Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the adiabatic connection, the curvature and the two-route check.
 - Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the spin operators and the pure-state idempotents.
@@ -85,7 +85,7 @@ $$</p>
 $$</p>
 <p>This is the <strong>Aharonov–Anandan phase</strong>. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the trace pairing:</p>
 <p>$$
-\langle\tilde{H}\rangle = \mathrm{Tr}(\tilde{\rho}\tilde{H}), \qquad
+\langle\tilde{H}\rangle = \mathrm{Tr}(\tilde{Ϛ}\tilde{H}), \qquad
 \phi_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\psi(0)^\dagger\psi(T)) .
 $$</p>
 <p>The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.</p>
@@ -150,7 +150,7 @@ $$</p>
 <p>The physical consequences are standard: the spinor must be rotated by $4\pi$ to return, and the interference of spinor amplitudes can reveal the sign. The neutron interferometry of Rauch and collaborators and of Werner and collaborators are the standard demonstrations, and the $4\pi$ periodicity has since been confirmed with neutron resonance interferometry.</p>
 <h2 id="the-holonomy-as-a-rotor">The Holonomy as a Rotor</h2>
 <h3 id="the-spinor-carries-the-phase">The Spinor Carries the Phase</h3>
-<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{\rho} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,</p>
+<p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,</p>
 <p>$$
 \tilde{P} = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
 $$</p>
@@ -180,9 +180,9 @@ $$</p>
 <p>$$
 \vec u_x(t) = \left(\sin\theta_0\cos\omega t,\,-\sin\theta_0\sin\omega t,\,\cos\theta_0\right),
 $$</p>
-<p>with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian</p>
+<p>with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian</p>
 <p>$$
-\tilde{H}_R = \tilde{U}_R^{*}\tilde{H}\tilde{U}_R - i\hbar\,\tilde{U}_R^{*}\partial/\partial t\tilde{U}_R
+\tilde{H}_R = \tilde u_R^{*}\tilde{H}\tilde u_R - i\hbar\,\tilde u_R^{*}\partial/\partial t\tilde u_R
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$</p>
 <p>which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{H}_R = -\tfrac{\hbar}{2}\,i\,\vec h_{\mathrm{eff}}\cdot\mathbf e$ with</p>
@@ -215,7 +215,7 @@ $$</p>
 <p><strong>Non-abelian geometric phases.</strong> The AA and Berry phases here are abelian ($\mathrm{U}(1)$) because the spin-1/2 level is non-degenerate. For a degenerate level the holonomy is non-abelian. The framework of a single spin-1/2 cannot host the non-abelian case; the question is whether the algebra's idempotent structure extends to it, and it is left open by the Berry article as well.</p>
 </li>
 <li>
-<p><strong>The geometric phase of a mixed state.</strong> A mixed state $\tilde\rho = \tfrac12(e_t+i\vec r)$, $|\vec r|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> identifies with a mirror light cone, support a natural phase for the boundary and the interior?</p>
+<p><strong>The geometric phase of a mixed state.</strong> A mixed state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $|\vec r|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> identifies with a mirror light cone, support a natural phase for the boundary and the interior?</p>
 </li>
 <li>
 <p><strong>The local complex structure.</strong> The spinor phase uses the central $i$, while the rotor uses the real units $\vec e_k$. The series allows the complex structure to be local; the geometric phase, however, seems to require a globally defined spinor phase. Whether a local complex structure would modify the phase is unresolved, as it is in the companion articles <em>The Schrödinger Equation in Biquaternionic Form</em> and <em>The Path Integral in Biquaternionic Form</em>.</p>
@@ -318,7 +318,7 @@ $$</p>
 <td>Holonomy rotor; $\Phi$ the turn of the Bloch vector</td>
 </tr>
 <tr>
-<td>$\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$</td>
+<td>$\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$</td>
 <td>Rotating-frame rotor for the driven field</td>
 </tr>
 <tr>

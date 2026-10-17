@@ -58,7 +58,7 @@ $$
 \qquad
 \tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z,
 $$
-with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$. The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$ and vacuum value $c_0$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. The charge $ϙ$ moves on the worldline $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$, with coordinate velocity $\vec v(t) = d(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)/dt$, $\vec\beta = \vec v/c$, and acceleration $d\vec v/dt_r = d\vec v/dt$; all source quantities in the retarded formulas are evaluated at the retarded time. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but used only where the boost rotor is invoked in Problem 5.</p>
+with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised source is $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$. The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$ and vacuum value $c_0$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the shared notation. The charge $ϙ$ moves on the worldline $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$, with coordinate velocity $\vec v(t) = d(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)/dt$, $\vec\beta = \vec v/c$, and acceleration $d\vec v/dt_r = d\vec v/dt$; all source quantities in the retarded formulas are evaluated at the retarded time. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but used only where the boost rotor is invoked in Problem 5.</p>
 <p><strong>What is to be shown.</strong> Problem 1 derives the retarded time and its two derivatives, distinguishes the field point from the source point at retarded time, and assembles the Liénard–Wiechert potential as a single biquaternion. Problem 2 performs the differentiation $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$ and exhibits the exact split of the field into a part independent of $d\vec\beta/dt_r$ and a part linear in $d\vec\beta/dt_r$. Problem 3 treats the velocity field, Problem 4 the acceleration field, and each verifies its falloff law ($1/R^2$ and $1/R$) by recomputation rather than assertion. Problem 5 fixes the boost-rotor direction convention and establishes how the <em>field</em> transforms under a boost, which is not the four-vector rule. Problem 6 checks the retarded denominator $\kappa = 1-\vec u_R\cdot\vec\beta$ and the charge sign on two independent cases, uniform motion and motion with nonzero acceleration.</p>
 <p><strong>The result.</strong> Writing $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r)$ for the retarded separation, $R = |\vec R|$, $\vec u_R = \vec R/R$, and
 $$
@@ -80,11 +80,11 @@ $$
 with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is not null; the acceleration field falls as $1/R$, is transverse to $\vec u_R$, and is null, so that its field-strength biquaternion is a zero divisor, $\tilde{F}_a^2 = 0$. The whole point of the exercise is the split: the two parts have different falloffs, different invariants, and different signs under $d\vec\beta/dt_r\to-d\vec\beta/dt_r$.</p>
 <p><strong>Conventions.</strong> Two conventions are fixed once and used throughout. The first is the retarded-time derivative: the derivative of a source quantity is written $\frac{d}{dt_r}$, not $\frac{d}{dt}$; the parent warns that the observer's-time derivative differs by a factor of $\kappa$, and the formulas above are the retarded-time ones. The second is the boost-rotor direction: the rotor
 $$
-\tilde{U}_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\,\sinh\frac{\psi_b}{2}\,\vec u,
+\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2} + i\,\sinh\frac{\psi_b}{2}\,\vec u,
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
-as fixed by the boosting and two-body exercises of the relativity series, is the rotor that carries the <em>laboratory</em> to the frame moving with $+\vec v_b$. Equivalently, applied to the rest four-velocity it produces velocity $-\vec v_b$: $\tilde{U}_{\vec v_b}(ic\,e_t)\tilde{U}_{\vec v_b}^{*}$ has velocity $-\vec v_b$. Problem 5 states exactly where this convention enters the field problem and why the field does <em>not</em> transform by the rotor conjugation that the four-vector calculus would suggest.</p>
+as fixed by the boosting and two-body exercises of the relativity series, is the rotor that carries the <em>laboratory</em> to the frame moving with $+\vec v_b$. Equivalently, applied to the rest four-velocity it produces velocity $-\vec v_b$: $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v_b$. Problem 5 states exactly where this convention enters the field problem and why the field does <em>not</em> transform by the rotor conjugation that the four-vector calculus would suggest.</p>
 <h2 id="the-problem">The Problem</h2>
 <p>The retarded solution of the biquaternionic Maxwell equation is
 $$
@@ -159,9 +159,9 @@ $$
 $$</p>
 <p>The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}(\tilde{V}/\gamma\bar{\tilde{\mathcal{R}}})/c| \le 4\times10^{-16}$, $|\langle\tilde{\mathcal{R}}\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.</p>
 <h2 id="problem-2-the-field-strength-and-the-velocityacceleration-split">Problem 2: The Field Strength and the Velocity–Acceleration Split</h2>
-<p><strong>Statement.</strong> (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde{\mathcal{K}}d\tilde{Q}/dt_r$ with
+<p><strong>Statement.</strong> (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde K_{\mathrm{ret}}d\tilde{Q}/dt_r$ with
 $$
-\tilde{\mathcal{K}} \equiv \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(\vec u_R - i\,e_t\right),
+\tilde K_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(\vec u_R - i\,e_t\right),
 \qquad
 N\!\left(\vec u_R - i\,e_t\right) = 0 .
 $$
@@ -177,16 +177,16 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Q}
 = \left(\partial/\partial Q_t\,t_r\,e_t - \sum_\mu \partial/\partial Q_\mu\,t_r\,\vec e_\mu\right)d\tilde{Q}/dt_r
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dt_r
-= \tilde{\mathcal{K}}d\tilde{Q}/dt_r .
+= \tilde K_{\mathrm{ret}}d\tilde{Q}/dt_r .
 $$
-The scalar coefficient of $\tilde{\mathcal{K}} = \frac{1}{c\kappa}\left(\vec u_R-ie_t\right)$ is $-\frac{i}{c\kappa}$, so
+The scalar coefficient of $\tilde K_{\mathrm{ret}} = \frac{1}{c\kappa}\left(\vec u_R-ie_t\right)$ is $-\frac{i}{c\kappa}$, so
 $$
 N\!\left(\vec u_R-ie_t\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
 $$
-The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t_r$ ($\|\tilde{\mathcal{K}}_{\text{FD}}-\tilde{\mathcal{K}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).</p>
+The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t_r$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K_{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).</p>
 <p><strong>Solution (b).</strong> The denominator $D$ is <em>not</em> a function of $t_r$ alone: at fixed $t_r$ it still depends explicitly on $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $t_r$ and its action through $t_r$,
 $$
-\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde{\mathcal{K}}dD/dt_r ,
+\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde K_{\mathrm{ret}}dD/dt_r ,
 \qquad
 \,dD/dt_r = -c\,\vec u_R\cdot\vec\beta + c\beta^2 - \vec R\cdot\,d\vec\beta/dt_r .
 $$
@@ -195,7 +195,7 @@ $$
 \tilde{F} = \tilde{\nabla}^{\natural}\frac{g\tilde{V}/\gamma}{D}
 = \frac{g}{D^2}\left[D\,\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) - \left(\tilde{\nabla}^{\natural}D\right)\tilde{V}/\gamma\right].
 $$
-Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde{\mathcal{K}}\,d\tilde{V}/\gamma/dt_r$ with $d\tilde{V}/\gamma/dt_r = cd\vec\beta/dt_r$, and using $D\tilde{\mathcal{K}} = \frac{D}{c\kappa}\tilde{\mathcal{N}} = \frac{R}{c}\tilde{\mathcal{N}}$ with $\tilde{\mathcal{N}} \equiv \vec u_R-ie_t$,
+Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K_{\mathrm{ret}}\,d\tilde{V}/\gamma/dt_r$ with $d\tilde{V}/\gamma/dt_r = cd\vec\beta/dt_r$, and using $D\tilde K_{\mathrm{ret}} = \frac{D}{c\kappa}\tilde{\mathcal{N}} = \frac{R}{c}\tilde{\mathcal{N}}$ with $\tilde{\mathcal{N}} \equiv \vec u_R-ie_t$,
 $$
 \tilde{F} = \frac{g}{D^2}\left[\,R\,\tilde{\mathcal{N}}\,d\vec\beta/dt_r
 + \left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma
@@ -235,7 +235,7 @@ $$
 $$
 whose first term reproduces $\vec E_v$ and whose second reproduces $\vec E_a$ when $D = R\kappa$ and $\vec R = R\vec u_R$ are used. The two factors $1-\beta^2$ and $d\vec\beta/dt_r$ make the two parts transform differently under $d\vec\beta/dt_r\to-d\vec\beta/dt_r$: $\vec E_v$ is even, $\vec E_a$ odd.</p>
 <p>The full identity $\tilde{\nabla}^{\natural}\tilde{A} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with the component formulas above was verified by finite differencing the potential on accelerated subluminal worldlines, with maximum componentwise discrepancy $7\times10^{-12}$; the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ was zero to $5\times10^{-12}$. Separately, the velocity bracket $\tilde{F}_v$ matched $i\sqrt{\epsilon}\,\vec E_v-\sqrt{\mu}\,\vec H_v$ to $4\times10^{-18}$ and the acceleration bracket $\tilde{F}_a$ matched $i\sqrt{\epsilon}\,\vec E_a-\sqrt{\mu}\,\vec H_a$ to $2\times10^{-18}$, so the biquaternion split and the component split are the same split.</p>
-<h2 id="problem-3-the-velocity-field-and-its-math187-falloff">Problem 3: The Velocity Field and Its $1/R^2$ Falloff</h2>
+<h2 id="problem-3-the-velocity-field-and-its-math188-falloff">Problem 3: The Velocity Field and Its $1/R^2$ Falloff</h2>
 <p><strong>Statement.</strong> (a) Show that $\vec E_v$ falls as $1/R^2$ by holding the retarded configuration fixed and scaling the observation point away from the emission event. (b) Evaluate the invariants of $\tilde{F}_v$ and show the velocity field is electric, not null: $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$ and $I_{2,v} = 0$. (c) Recover the Coulomb field in the limit $\vec v\to0$ and fix the sign convention for the charge.</p>
 <p><strong>Solution (a).</strong> $\vec E_v$ is a function of the retarded data $(\vec u_R,\vec\beta,R)$ alone. If the emission event and the direction $\vec u_R$ (hence $\vec\beta$ and $\kappa$) are held fixed while $R$ is scaled, then
 $$
@@ -266,7 +266,7 @@ $$
 \vec B_v = 0 ,
 $$
 the Coulomb field of the charge at its retarded (and, for a stationary charge, present) position. The sign is the physical one: for a positive charge the field points radially away from the source. The acceleration field vanishes as well, so a charge instantaneously at rest with $d\vec v/dt_r\ne0$ still has the full Coulomb $1/R^2$ velocity field at that instant. Flipping $ϙ\to-ϙ$ flips both parts, and this was verified componentwise on both a uniformly moving and an accelerated worldline.</p>
-<h2 id="problem-4-the-acceleration-field-and-its-math232-falloff">Problem 4: The Acceleration Field and Its $1/R$ Falloff</h2>
+<h2 id="problem-4-the-acceleration-field-and-its-math233-falloff">Problem 4: The Acceleration Field and Its $1/R$ Falloff</h2>
 <p><strong>Statement.</strong> (a) Show that $\vec E_a$ falls as $1/R$ by the same scaling argument. (b) Show that the acceleration field is transverse, $\vec u_R\cdot\vec E_a = 0$, and null, $I_{1,a} = I_{2,a} = 0$; conclude that $\tilde{F}_a$ is a zero divisor with $\tilde{F}_a^2 = 0$. (c) Evaluate the field at an instant of rest and verify its sign against $d\vec\beta/dt_r$. (d) Verify the far-zone dominance of $\vec E_a$ over $\vec E_v$.</p>
 <p><strong>Solution (a).</strong> The acceleration field is
 $$
@@ -301,22 +301,22 @@ The acceleration field opposes the retarded transverse acceleration, and it is $
 <p><strong>Statement.</strong> (a) State the direction convention for the boost rotor and verify it on the rest four-velocity. (b) Determine the correct transformation law of the field-strength biquaternion under a boost and show that it is <em>not</em> the four-vector rotor conjugation $\tilde{F}\mapsto\tilde{U}\tilde{F}\tilde{U}^{*}$. (c) Use it to confirm that the velocity field of a uniformly moving charge is the boost of the Coulomb field, as the parent asserts.</p>
 <p><strong>Solution (a).</strong> The convention, fixed by the relativity exercises, is that
 $$
-\tilde{U}_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u,
+\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u,
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
 carries the <em>laboratory</em> to the frame moving with $+\vec v_b$. Applied to the rest four-velocity $\tilde{V}_0 = ic\,e_t$ it gives
 $$
-\tilde{U}_{\vec v_b}\,\tilde{V}_0\,\tilde{U}_{\vec v_b}^{*}
-= ic\,e_t\,\tilde{U}_{\vec v_b}^2
+\tilde U_{\mathrm b}\,\tilde{V}_0\,\tilde U_{\mathrm b}^{*}
+= ic\,e_t\,\tilde U_{\mathrm b}^2
 = ic\left(\cosh\psi_b + i\sinh\psi_b\,\vec u\right)
 = ic\cosh\psi_b - c\sinh\psi_b\,\vec u,
 $$
-whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde{U}^{\natural}_{\vec v_b} = \tilde{U}_{\vec v_b}^{-1}$ generates the inverse (moving-to-lab) transformation.</p>
+whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$ generates the inverse (moving-to-lab) transformation.</p>
 <p><strong>Solution (b).</strong> The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is defined for four-vectors, and it does <em>not</em> give the correct field transformation. The correct law for a pure boost is the similarity
 $$
-\tilde{F}' = \tilde{U}^{\natural}_{\vec v_b}\,\tilde{F}\,\tilde{U}_{\vec v_b}
-= \tilde{U}_{\vec v_b}^{-1}\tilde{F}\,\tilde{U}_{\vec v_b} ,
+\tilde{F}' = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
+= \tilde U_{\mathrm b}^{-1}\tilde{F}\,\tilde U_{\mathrm b} ,
 $$
 which is the biquaternion form of the standard boost of the electromagnetic field. To see the difference concretely, take the test field $\vec E = (0.3,-0.7,0.4)$, $\vec B = (0.5,0.2,-0.6)$ and a boost with $\vec v_b = 0.6c\,\vec u_z$. The standard boost gives $\vec E' = (0.225,-0.5,0.4)$, $\vec B' = (0.1,0.025,-0.6)$, and the similarity reproduces exactly that. The naive conjugation $\tilde{U}\tilde{F}\tilde{U}^{*}$ instead gives $\vec E = (0.3,-0.7,0.5)$ with a magnetic error of $0.4$, so it is not a transformation law for the field at all. More generally, the similarity reproduces the standard relations
 $$
@@ -414,8 +414,8 @@ with $\tilde{\mathcal{N}} = \vec u_R-ie_t$, $dD_{0}/dt_r = -c\left(\vec u_R\cdot
 <td>Potential biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$</td>
-<td>Source biquaternion</td>
+<td>$\tilde J = ic\rho\,e_t + \vec J$</td>
+<td>Four-current; the source is $\sqrt{\mu}\,\tilde J$</td>
 </tr>
 <tr>
 <td>$\epsilon, \mu$</td>
@@ -470,12 +470,12 @@ with $\tilde{\mathcal{N}} = \vec u_R-ie_t$, $dD_{0}/dt_r = -c\left(\vec u_R\cdot
 <td>Retarded null separation, in $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal{K}} = \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}(\vec u_R-ie_t)$</td>
-<td>Gradient of the retarded time (null)</td>
+<td>$\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}(\vec u_R-ie_t)$</td>
+<td>Gradient of the retarded time (null, hence a zero divisor and not unitary)</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal{N}} = \vec u_R-ie_t$</td>
-<td>Null factor of $\tilde{\mathcal{K}}$</td>
+<td>Null factor of $\tilde K_{\mathrm{ret}}$</td>
 </tr>
 <tr>
 <td>$\tilde{F}_v, \tilde{F}_a$</td>
@@ -486,7 +486,7 @@ with $\tilde{\mathcal{N}} = \vec u_R-ie_t$, $dD_{0}/dt_r = -c\left(\vec u_R\cdot
 <td>Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$</td>
 </tr>
 <tr>
-<td>$\tilde{U}_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$</td>
+<td>$\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$</td>
 <td>Boost rotor; carries lab to the frame moving with $+\vec v_b$</td>
 </tr>
 <tr>
@@ -498,7 +498,7 @@ with $\tilde{\mathcal{N}} = \vec u_R-ie_t$, $dD_{0}/dt_r = -c\left(\vec u_R\cdot
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
 <td>Trace formula</td>
 </tr>
 </tbody>

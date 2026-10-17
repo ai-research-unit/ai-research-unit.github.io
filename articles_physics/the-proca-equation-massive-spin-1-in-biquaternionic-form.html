@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 \tilde{\nabla}\tilde{F} = m^2\,\tilde{A}.
 $$</p>
-<p>The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, with the external source $\tilde{R}$ replaced by a current proportional to the potential itself.</p>
+<p>The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the external source $\sqrt{\mu}\,\tilde{J}$ replaced by a current proportional to the potential itself.</p>
 <h3 id="why-the-equation-is-the-right-one">Why the equation is the right one</h3>
 <p>The transcription is not a guess. It is fixed by two requirements: the equation must reproduce the standard Proca system, and it must do so in the series' $ict$ convention without a change of metric. The check is carried out below by solving the equation for plane waves and reading off the dispersion relation. The result is the physical massive shell and the Lorenz condition, and the two together are the standard content of the Proca system. Any other relative sign between the two sides would give a dispersion relation with the wrong sign of $m^2$, that is, a spacelike or tachyonic shell, and the check excludes it.</p>
 <h3 id="the-failure-of-gauge-invariance-explicitly">The failure of gauge invariance, explicitly</h3>
@@ -159,13 +159,13 @@ $$</p>
 <h3 id="dispersion-relation">Dispersion relation</h3>
 <p>Write a plane-wave potential</p>
 <p>$$
-\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})), \qquad
+\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})), \qquad
 \tilde{A}_0 = A_te_t + \vec a, \qquad
-\tilde{K} = i\frac{\omega}{c}\,e_t + \vec k,
+\tilde P = i\frac{\omega}{c}\,e_t + \vec k,
 $$</p>
-<p>where $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde{K}^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as</p>
+<p>where $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde P\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde P^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as</p>
 <p>$$
-\Box\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})),
 $$</p>
 <p>as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires</p>
 <p>$$
@@ -175,9 +175,9 @@ $$</p>
 $$</p>
 <p>the physical relativistic dispersion relation.</p>
 <h3 id="the-lorenz-condition-on-a-plane-wave">The Lorenz condition on a plane wave</h3>
-<p>The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the scalar part of $i\tilde{K}^{\natural}\tilde{A}_0$. Splitting $\tilde{K}^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,</p>
+<p>The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the scalar part of $i\tilde P^{\natural}\tilde{A}_0$. Splitting $\tilde P^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,</p>
 <p>$$
-\mathrm{Sc}\!\left(i\tilde{K}^{\natural}\tilde{A}_0\right)
+\mathrm{Sc}\!\left(i\tilde P^{\natural}\tilde{A}_0\right)
 = -\frac{\omega}{c}\,A_t + i\,\vec k\cdot\vec a,
 $$</p>
 <p>so that the Lorenz condition fixes the time component in terms of the spatial amplitude,</p>
@@ -316,7 +316,7 @@ $$</p>
 <td>Inverse Compton wavevector of the mass; $\mu^2=m^2c^2/\hbar^2$</td>
 </tr>
 <tr>
-<td>$\tilde{K} = i\omega/c\,e_t + \vec k$</td>
+<td>$\tilde P = i\omega/c\,e_t + \vec k$</td>
 <td>Four-wavevector biquaternion</td>
 </tr>
 <tr>

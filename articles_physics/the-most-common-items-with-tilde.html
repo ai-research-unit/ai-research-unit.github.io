@@ -50,14 +50,14 @@
     <main class="article">
       <div class="article-body">
         <h1 id="the-most-common-items-with-a-tilde"><strong>The Most Common Items with a Tilde</strong></h1>
-<p><strong>Scope: tilde glyphs only.</strong> Every symbol in the tables carries a tilde. Four kinds of glyph are outside the scope and are not listed: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$; a mark that is not an element, $\tilde\cdot$, $\tilde\star$; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$, $\Upsilon_\pm$. The first is fixed by the rule that a matrix carries no tilde, §<em>The 2×2 Matrix Representation</em> of <em>Conventions in the Biquaternion Universe</em>; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.</p>
+<p><strong>Scope: tilde glyphs only.</strong> Every symbol in the tables carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$; a mark that is not an element, $\tilde\cdot$, $\tilde\star$; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$, $\Upsilon_\pm$. The first is fixed by the rule that a matrix carries no tilde, §<em>General Matrix Conventions</em> of <em>Conventions in the Biquaternion Universe</em>; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.</p>
 <p>The tilde marks a quaternionic factor. The last column of every table is the number of articles in which the symbol occurs, counted over the articles of <code>articles_maths/</code> and <code>articles_physics/</code> at the last scan. The list is triaged into three sections.</p>
 <ul>
 <li><strong>1. Allowed tilde</strong> — the role is fixed by <em>Conventions in the Biquaternion Universe</em> and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are.</li>
 <li><strong>2. To be tested</strong> — one specific role, plausible but not yet verified. Test before citing. A symbol that is also wrongly generic keeps its role here and its generic claim in section 3.</li>
 <li><strong>3. Wrongly generic, to be rewritten</strong> — one line per work item. It covers a generic claim outside the Q family and a tilde on an object that has no right to it. Do not cite.</li>
 </ul>
-<p>The governing rule: <strong>only the Q family is generic, and only an element carries the tilde.</strong> $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A letter outside the family names an object, or an element bound where it is introduced. A matrix is the image of an element and takes no tilde.</p>
+<p>The governing rule: <strong>only the Q family is generic, and only an element carries the tilde.</strong> $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A generic element that is unitary is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here.</p>
 <h2 id="1-allowed-tilde">1. Allowed tilde</h2>
 <h3 id="the-layer-glyphs">The Layer Glyphs</h3>
 <div class="table-scroll"><table>
@@ -78,7 +78,7 @@
 <td>$Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $Q_\mu\in\mathbb{C}$</td>
 <td>$\mathbb{B}$</td>
 <td>The only generic glyph; a second and a third are $\tilde Q_1,\tilde Q_2$</td>
-<td>647</td>
+<td>646</td>
 </tr>
 <tr>
 <td>$\tilde q$</td>
@@ -94,7 +94,7 @@
 <td>$\Pi_te_t+\vec\Pi$, with $\tilde\Pi^2=\tilde\Pi$</td>
 <td>$\mathbb{B}$; $\mathbb{M}_+$ when $\tilde\Pi^{*}=\tilde\Pi$</td>
 <td>A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module</td>
-<td>267</td>
+<td>270</td>
 </tr>
 <tr>
 <td>$\tilde\Xi$</td>
@@ -102,7 +102,15 @@
 <td>$\Xi_te_t+\vec\Xi$, with $\tilde\Xi^2=\lambda e_t$, $\lambda$ central</td>
 <td>$\mathbb{B}$; $\mathbb{M}_+$ for the roots $i\vec e_k$; $\mathbb{C}_{\mathbb{B}}$ for $\pm i$</td>
 <td>For a root of $1$ the idempotents are $\tfrac12(e_t\pm\tilde\Xi)$</td>
-<td>56</td>
+<td>57</td>
+</tr>
+<tr>
+<td>$\tilde\xi$</td>
+<td>Root of $1$ of the quaternion layer</td>
+<td>$\xi_te_t+\vec\xi$, with $\tilde\xi^2=e_t$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$; the split-quaternion layer writes the same glyph</td>
+<td>The tilde-free layers write $\Xi$</td>
+<td>19</td>
 </tr>
 <tr>
 <td>$\tilde\nu$</td>
@@ -113,12 +121,20 @@
 <td>8</td>
 </tr>
 <tr>
+<td>$\tilde\Upsilon$</td>
+<td>Nilpotent of the biquaternion layer</td>
+<td>$\Upsilon_te_t+\vec\Upsilon$, with $\tilde\Upsilon^2=0$</td>
+<td>The null cone, in neither sector</td>
+<td>The quaternion layer writes $\tilde\nu$</td>
+<td>23</td>
+</tr>
+<tr>
 <td>$\tilde U$</td>
 <td>Norm-one element</td>
 <td>$U_te_t+\vec U$, with $\mathrm{Norm}(\tilde U)=e_t$; $\tilde U^{*}\tilde U=e_t$ in the unitary case</td>
 <td>$\mathbb{B}$</td>
 <td>The rotor; the unitary group is $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$</td>
-<td>167</td>
+<td>168</td>
 </tr>
 <tr>
 <td>$\tilde u$</td>
@@ -127,6 +143,30 @@
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
 <td>The rotor of $\mathrm{Sp}(1)\cong\mathrm{SU}(2)$; a pure unit quaternion is $\vec u$</td>
 <td>60</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}$</td>
+<td>Hermitian positive boost</td>
+<td>$\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$</td>
+<td>$\mathbb{M}_+$, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$</td>
+<td>The boost factor of the polar word, one exponential, three parameters; it is not unitary under ${}^{*}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>Unit real quaternion rotor</td>
+<td>$\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
+<td>The spatial rotation of the polar word; unitary under every product</td>
+<td>11</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm L}$</td>
+<td>Lorentz rotor</td>
+<td>$\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$</td>
+<td>The Lorentz transformation: factors $3$ and $4$ of the polar word multiplied, not the boost alone; $\tilde\Lambda$ of the physics articles, $\tilde U_{\mathrm L}$ where $\tilde\Lambda$ is the eigenspinor</td>
+<td>3</td>
 </tr>
 </tbody>
 </table></div>
@@ -149,7 +189,7 @@
 <td>$e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$</td>
 <td>Operator, $\mathbb{B}$-valued</td>
 <td>Its conjugate $\tilde\nabla^{\natural}=e_t\partial_t-\vec e_k\partial_k$ is the second factor of $\Box$</td>
-<td>203</td>
+<td>204</td>
 </tr>
 </tbody>
 </table></div>
@@ -173,7 +213,15 @@
 <td>$i(E/c)e_t+\vec p$</td>
 <td>$\mathbb{M}_-$</td>
 <td>$\tilde P=m\tilde V$; the letter is never generic</td>
-<td>465</td>
+<td>464</td>
+</tr>
+<tr>
+<td>$\tilde p$</td>
+<td>Canonical momentum quaternion</td>
+<td>$\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dt)$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real quaternion with four components, scalar $p_t$ and vector $\vec p$; the Legendre conjugate of $\tilde q$</td>
+<td>45</td>
 </tr>
 <tr>
 <td>$\tilde V$</td>
@@ -184,12 +232,20 @@
 <td>56</td>
 </tr>
 <tr>
-<td>$\tilde J$</td>
-<td>Four-current</td>
-<td>$J^\nu e_\nu=ic\rho\,e_t+\vec J$</td>
+<td>$\tilde{\mathcal L}$</td>
+<td>Future null four-vector of a pure state</td>
+<td>$\tilde{\mathcal L}=i\tilde\Pi(u)\in\mathbb{M}_-$</td>
 <td>$\mathbb{M}_-$</td>
-<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$; the spatial part $\vec J$ is the current density</td>
-<td>56</td>
+<td>$\langle\tilde{\mathcal L}\rangle_{\natural}=0$; the scalar part $i/2$ is complex, so the majuscule, §<em>The Elements and their Coefficients</em></td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\tilde J$</td>
+<td>Four-current; the Maxwell source; also the Noether current of a continuous symmetry</td>
+<td>$J^\nu e_\nu=ic\rho\,e_t+\vec J$, $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$</td>
+<td>$\mathbb{M}_-$</td>
+<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$; enters Maxwell as $\sqrt{\mu}\,\tilde J$, so $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$; the spatial part $\vec J$ is the current density. The axial current is $\tilde J_5$; the lowercase form of the letter is not used</td>
+<td>93</td>
 </tr>
 <tr>
 <td>$\tilde A$</td>
@@ -197,10 +253,19 @@
 <td>$\tilde A=i\phi/c\,e_t+\vec A\in\mathbb{M}_-$</td>
 <td>$\mathbb{M}_-$</td>
 <td>The potential of the minimal-coupling, hydrogen, Klein–Gordon, Hopf, quadrupole and self-dual articles; the tension biquaternion of the electro-gravimagnetic programme</td>
-<td>217</td>
+<td>216</td>
+</tr>
+<tr>
+<td>$\tilde K_{\mathrm{ret}}$</td>
+<td>Retarded-time gradient coefficient, also the null retarded gradient</td>
+<td>$\tilde K_{\mathrm{ret}}=\tilde\nabla^{\natural}t_r=\frac{1}{c\kappa}(\vec u_R-ie_t)$</td>
+<td>$\mathbb{M}_-$, null</td>
+<td>The gradient of the retarded time: $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dt_r$ for a source depending on $t_r$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not unitary at any $\kappa$</td>
+<td>1</td>
 </tr>
 </tbody>
 </table></div>
+<p>$\tilde j$ no longer occurs: the normalised current density it named is the same object as $\sqrt{\mu}\,\tilde J$, and it is written that way. The lowercase letter was a duplicate of $\tilde J$, not a distinct quantity.</p>
 <h3 id="the-fields">The Fields</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -219,8 +284,8 @@
 <td>Field strength</td>
 <td>$i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, scalar part zero</td>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>Enters $\tilde\nabla\tilde F=-\tilde R$</td>
-<td>107</td>
+<td>Enters $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$</td>
+<td>109</td>
 </tr>
 <tr>
 <td>$\tilde\Psi$</td>
@@ -228,7 +293,7 @@
 <td>$\tilde\Psi_L+\tilde\Psi_R$</td>
 <td>$\mathbb{B}$</td>
 <td>An algebra-valued spinor field, with $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$</td>
-<td>71</td>
+<td>70</td>
 </tr>
 </tbody>
 </table></div>
@@ -246,12 +311,20 @@
 </thead>
 <tbody>
 <tr>
+<td>$\tilde{Ϛ}$</td>
+<td>State (density) element</td>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$</td>
+<td>$\mathbb{M}_+$</td>
+<td>The state of the Bloch ball: Hermitian, positive, $\mathrm{Tr}(\tilde{Ϛ})=1$. The glyph is the upper-case stigma, U+03DA, because the majuscule of rho is the four-momentum $\tilde P$; the older rho and varrho spellings are retired. Its matrix image $\mathsf{M}_2(\tilde{Ϛ})$ carries no tilde</td>
+<td>105</td>
+</tr>
+<tr>
 <td>$\tilde H$</td>
 <td>General Hermitian observable</td>
 <td>$h_0e_t+ih_k\vec e_k$, $h_0,h_k\in\mathbb{R}$</td>
 <td>$\mathbb{M}_+$</td>
-<td>The Born pairing is $\mathrm{Tr}(\tilde\rho\tilde H)$; the tilde belongs to this object only</td>
-<td>225</td>
+<td>The Born pairing is $\mathrm{Tr}(\tilde{Ϛ}\tilde H)$; the tilde belongs to this object only</td>
+<td>223</td>
 </tr>
 <tr>
 <td>$\tilde S$</td>
@@ -259,12 +332,28 @@
 <td>$\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$</td>
 <td>$\mathbb{M}_+$</td>
 <td>The vector slots of $\mathbb{M}_+$, with the total spin $\tilde S$ of a composite</td>
-<td>95</td>
+<td>94</td>
+</tr>
+<tr>
+<td>$\tilde E$</td>
+<td>Effect of a measurement</td>
+<td>$0\le\tilde E\le e_t$, $\tilde E\in\mathbb{M}_+$; $\tilde E_y=\tilde K_y^{*}\tilde K_y$</td>
+<td>$\mathbb{M}_+$</td>
+<td>The outcome of a POVM; a rank-one effect is the idempotent $\tilde\Pi$</td>
+<td>41</td>
+</tr>
+<tr>
+<td>$\tilde K$</td>
+<td>Kraus operator of an instrument</td>
+<td>$\tilde E_y=\tilde K_y^{*}\tilde K_y$, $\tilde K_y\in\mathbb{B}$; $\sum_y\tilde K_y^{*}\tilde K_y=e_t$</td>
+<td>$\mathbb{B}$</td>
+<td>The measurement operator of outcome $y$; the principal square root has $\mathrm{Sc}(\tilde K_y)>0$ and is never pure. The channel and dephasing articles write $\tilde K_l$. The same glyph is also the central kernel of the functional integral and the force biquaternion of the Lorentz-force article; those uses are bound. The retarded-time gradient is the subscripted $\tilde K_{\mathrm{ret}}$ of §<em>The Four-Vectors and the Currents</em></td>
+<td>85</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="2-to-be-tested">2. To be tested</h2>
-<p>One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description.</p>
+<p>One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description. A glyph whose uses are all bound but span several roles is listed separately at the end of the section, with the pass recorded.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -277,41 +366,6 @@
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{\mathcal A}$</td>
-<td>Non-abelian gauge connection</td>
-<td>$\tilde{\mathcal F}=\tilde\nabla\tilde{\mathcal A}+\tfrac12[\tilde{\mathcal A},\tilde{\mathcal A}]$</td>
-<td>The connection of the Yang–Mills, instanton, anomaly and path-integral articles</td>
-<td>7</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal A}$</td>
-<td>A-field, the dual field strength</td>
-<td>$\tilde{\mathcal A}=\sqrt\epsilon\,\vec E+i\sqrt\mu\,\vec H=-i\tilde F$</td>
-<td>A complex three-vector and a biquaternion, not a connection; $D^+\tilde{\mathcal A}+\tilde J=0$ in the electro-gravimagnetic, Maxwell and Lorentz-force articles</td>
-<td>7</td>
-</tr>
-<tr>
-<td>$\tilde a$</td>
-<td>Annihilation operator</td>
-<td>$\tilde a=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde a^2=0$</td>
-<td>The harmonic-oscillator, Fock-space and quantized-field articles; the letter is also used generically in the scalar-product identities</td>
-<td>57</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal B}$</td>
-<td>Hypercharge field strength</td>
-<td>$\tilde{\mathcal B}=\tilde\nabla\tilde B$</td>
-<td>In the electroweak article</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde b$</td>
-<td>Bogoliubov-transformed annihilation operator</td>
-<td>$\tilde b=u\tilde a+v\tilde a^{\dagger}$</td>
-<td>The Bogoliubov article; the letter is also a second real quaternion in the pairing $\mathrm{Sc}(\tilde a^{\natural}\tilde b)$</td>
-<td>22</td>
-</tr>
-<tr>
 <td>$\tilde\chi$</td>
 <td>Spinor component</td>
 <td>—</td>
@@ -321,9 +375,9 @@
 <tr>
 <td>$\tilde D$</td>
 <td>Gauge-covariant derivative</td>
-<td>$\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\tilde{\mathcal A},\tilde F]$</td>
+<td>$\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$</td>
 <td>The Yang–Mills and instanton articles; also a polynomial $\tilde D(s^2)$ in the Bhabha article</td>
-<td>23</td>
+<td>24</td>
 </tr>
 <tr>
 <td>$\tilde\Delta\in\mathbb{M}_-$</td>
@@ -340,81 +394,25 @@
 <td>2</td>
 </tr>
 <tr>
-<td>$\tilde E$</td>
-<td>Element of the unitary slice</td>
-<td>$\tilde E^{*}\tilde E=e_t$</td>
-<td>The slice $\cong U(2)$; an effect $\tilde E_y=\tilde M_y^{*}\tilde M_y$</td>
-<td>46</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf E}$</td>
-<td>Normalised electric field</td>
-<td>$\tilde{\mathbf E}=\sqrt{\epsilon}\,\vec E$</td>
-<td>A real three-vector</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\tilde\ell$</td>
-<td>Future null four-vector of a pure state</td>
-<td>$\tilde\ell=i\tilde\Pi(u)\in\mathbb{M}_-$</td>
-<td>$\langle\tilde\ell\rangle_{\natural}=0$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde\epsilon$</td>
-<td>Gauge parameter</td>
-<td>$\tilde\Psi_\mu\mapsto\tilde\Psi_\mu+\tilde\nabla_\mu\tilde\epsilon$</td>
-<td>—</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\tilde\varepsilon_+$</td>
-<td>Primitive Hermitian idempotent</td>
-<td>$\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z)$</td>
-<td>$\tilde\varepsilon_+^2=\tilde\varepsilon_+$</td>
-<td>3</td>
-</tr>
-<tr>
-<td>$\tilde\eta$</td>
-<td>Fluctuation field</td>
-<td>—</td>
-<td>The one-loop fluctuation about the classical background in the Gaussian expansion $S[\tilde\phi+\tilde\eta]$, in the generating-functional, determinant and effective-potential articles</td>
-<td>3</td>
-</tr>
-<tr>
 <td>$\tilde{\mathcal F}$</td>
 <td>Non-abelian field strength</td>
-<td>$\tilde{\mathcal F}=\tilde\nabla\tilde{\mathcal A}+\tfrac12[\tilde{\mathcal A},\tilde{\mathcal A}]$</td>
+<td>$\tilde{\mathcal F}=\tilde\nabla\mathcal A+\tfrac12[\mathcal A,\mathcal A]$</td>
 <td>The curvature of the Yang–Mills, instanton, anomaly and path-integral articles; the non-abelian analogue of $\tilde F$</td>
 <td>5</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal F}$</td>
 <td>Power–force biquaternion</td>
-<td>$\tilde{\mathcal F}=-\tilde J\circ\tilde{\mathcal A}'$</td>
+<td>$\tilde{\mathcal F}=i\tilde J_{\mathrm{eg}}\circ\tilde F'$</td>
 <td>The scalar part is a power density and the vector part a force density; the Lorentz-force and electro-gravimagnetic articles</td>
 <td>5</td>
 </tr>
 <tr>
-<td>$\tilde f$</td>
-<td>Conjugate function</td>
-<td>$\tilde f=\bar f$</td>
-<td>The conjugate function; a radiation field $\tilde f_{\mathrm{rad}}$</td>
-<td>3</td>
-</tr>
-<tr>
-<td>$\tilde G$</td>
-<td>Algebra-valued Green kernel</td>
-<td>$\tilde G=\tilde Q^{\natural}/\lVert\tilde Q\rVert_E^4$</td>
-<td>A function of the algebra</td>
-<td>25</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal G}$</td>
-<td>Gluon field strength</td>
-<td>$\tilde{\mathcal G}=\tilde\nabla\tilde G+\tfrac{g_s}{2}[\tilde G,\tilde G]$</td>
-<td>—</td>
-<td>1</td>
+<td>$\tilde J_{\mathrm{eg}}$</td>
+<td>Combined electric–magnetic charge–current</td>
+<td>$\tilde J_{\mathrm{eg}}=i\rho+\vec J$</td>
+<td>The electro-gravimagnetic programme; not the corpus four-current $\tilde J$</td>
+<td>5</td>
 </tr>
 <tr>
 <td>$\tilde g$</td>
@@ -431,81 +429,11 @@
 <td>7</td>
 </tr>
 <tr>
-<td>$\tilde{\mathbf H}$</td>
-<td>Normalised magnetic field</td>
-<td>$\tilde{\mathbf H}=\sqrt{\mu}\,\vec H$</td>
-<td>A real three-vector</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\tilde h$</td>
-<td>Element of the Hermitian half</td>
-<td>—</td>
-<td>An element of $\mathbb{M}_+$, as in the bracket $[\tilde h,\tilde h']$</td>
-<td>6</td>
-</tr>
-<tr>
-<td>$\tilde j$</td>
-<td>Current density</td>
-<td>$\tilde j=\vec j/\sqrt{\epsilon}$</td>
-<td>A normalised current density</td>
-<td>15</td>
-</tr>
-<tr>
-<td>$\tilde K$</td>
-<td>Cauchy kernel</td>
-<td>—</td>
-<td>The kernel of the biquaternion Cauchy integral</td>
-<td>84</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal K}$</td>
-<td>Retarded-time gradient coefficient</td>
-<td>$\tilde{\mathcal K}=\tilde{\nabla}^{\natural}t_r=\frac{1}{c\kappa}(\vec u_R-ie_t)$</td>
-<td>—</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde k$</td>
-<td>Wave four-vector</td>
-<td>$\tilde k=ik^0e_t+\vec k\in\mathbb{M}_-$</td>
-<td>—</td>
-<td>35</td>
-</tr>
-<tr>
-<td>$\tilde\kappa_\epsilon$</td>
-<td>Unitary gate</td>
-<td>—</td>
-<td>A Hermitian-Pauli gate element</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde L$</td>
-<td>Limit value or an angular-momentum element</td>
-<td>$\tilde L_k=L_ke_t$</td>
-<td>The value a function tends to; the angular momentum</td>
-<td>19</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf L}$</td>
-<td>Angular-momentum vector</td>
-<td>$\tilde{\mathbf L}=I\tilde{\boldsymbol\omega}$</td>
-<td>—</td>
-<td>1</td>
-</tr>
-<tr>
 <td>$\tilde\Lambda$</td>
 <td>Unit-norm element of the dagger sandwich</td>
 <td>$X\mapsto\mathsf{M}_2(\tilde\Lambda)X\mathsf{M}_2(\tilde\Lambda)^{\dagger}$</td>
 <td>With $\langle\tilde\Lambda\rangle_{\natural}=1$</td>
 <td>54</td>
-</tr>
-<tr>
-<td>$\tilde M$</td>
-<td>Kraus operator</td>
-<td>$\tilde E_y=\tilde M_y^{*}\tilde M_y$</td>
-<td>The Kraus form of an effect</td>
-<td>10</td>
 </tr>
 <tr>
 <td>$\tilde m$</td>
@@ -522,18 +450,18 @@
 <td>1</td>
 </tr>
 <tr>
-<td>$\tilde{\boldsymbol\mu}$</td>
-<td>Bold form of the magnetic moment</td>
-<td>$\tilde{\boldsymbol\mu}=\mu_k\vec e_k$</td>
-<td>The same object as $\tilde\mu$</td>
-<td>2</td>
+<td>$\tilde N$</td>
+<td>Null vector on a boundary ray</td>
+<td>$g(\tilde N,\tilde N)=0$, $\xi=[\tilde N]$</td>
+<td>One role only: the null vector of <em>Split-Biquaternions and Hyperbolic Geometry</em>, whose ray is a point of $\partial H^3$ and whose normalisation is fixed in the notation row of that article</td>
+<td>1</td>
 </tr>
 <tr>
 <td>$\tilde N$</td>
-<td>Null vector or a number operator</td>
-<td>—</td>
-<td>A null vector whose ray is a boundary point; $\tilde N_{\mathrm{exc}}$ an excitation number</td>
-<td>18</td>
+<td>Number operator</td>
+<td>$\tilde N=\tilde a^\dagger\tilde a$</td>
+<td>The algebra number operator of the oscillator and Fock articles, with the truncation $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ and the Tavis–Cummings excitation number $\tilde N_{\mathrm{exc}}=a^\dagger a+\tilde J_3/\hbar+N/2$. Bound where introduced, never a free element</td>
+<td>15</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal N}$</td>
@@ -550,60 +478,18 @@
 <td>6</td>
 </tr>
 <tr>
-<td>$\tilde O$</td>
-<td>Observable element</td>
-<td>—</td>
-<td>An element paired in the trace formula $\mathrm{Tr}(\tilde\rho\tilde O)$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde\Omega$</td>
-<td>Angular-velocity biquaternion</td>
-<td>$\dot{\tilde\mu}=\tfrac12[\tilde\Omega,\tilde\mu]$</td>
-<td>A Larmor or Rabi element</td>
-<td>5</td>
-</tr>
-<tr>
 <td>$\tilde\omega$</td>
-<td>Angular velocity</td>
-<td>$\dot{\tilde L}=\tfrac12[\tilde L,\tilde\omega_b]+\tilde\tau$</td>
-<td>A body-frame angular velocity</td>
-<td>7</td>
-</tr>
-<tr>
-<td>$\tilde{\boldsymbol\omega}$</td>
-<td>Bold form of the angular velocity</td>
-<td>$\tilde{\boldsymbol\omega}=\omega_k\vec e_k$</td>
-<td>The same object as $\tilde\omega$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal P}$</td>
-<td>Momentum biquaternion; also a matrix of biquaternions</td>
-<td>$\tilde{\mathcal P}=\frac{E}{ic}e_t+\vec p$</td>
-<td>In the zero-divisor article; a generic array in $\mathsf{M}_2(\tilde{\mathcal P}\tilde{\mathcal Q})$</td>
-<td>3</td>
-</tr>
-<tr>
-<td>$\tilde p$</td>
-<td>Canonical momentum</td>
-<td>$\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dt)$</td>
-<td>Real quaternion with four components, scalar $p_t$ and vector $\vec p$; the Legendre conjugate of $\tilde q$</td>
-<td>The mechanics and action-units articles; the momentum operator is $\vec p$</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf p}$</td>
-<td>Bold form of $\tilde p$ in the Euclidean dot product $\mathcal{W}=\tilde{\mathbf p}\cdot\tilde{\mathbf q}$</td>
-<td>—</td>
-<td>—</td>
-<td>1</td>
+<td>Angular velocity or its generator</td>
+<td>$d\tilde\mu/dt=\tfrac12[\tilde\mu,\tilde\omega_L]$</td>
+<td>An angular velocity or the generator of a precession</td>
+<td>6</td>
 </tr>
 <tr>
 <td>$\tilde\Phi$</td>
 <td>Central algebra-valued scalar field</td>
 <td>$\tilde\Phi=\varphi e_t$</td>
-<td>The scalar field of the Klein-Gordon and Higgs articles</td>
-<td>55</td>
+<td>The scalar field of the Klein-Gordon and Higgs articles; complex scalar sector, hence the majuscule. The fluctuation about it is $\delta\tilde\Phi$, in the generating-functional, determinant and effective-potential articles</td>
+<td>53</td>
 </tr>
 <tr>
 <td>$\tilde\phi$</td>
@@ -627,13 +513,6 @@
 <td>38</td>
 </tr>
 <tr>
-<td>$\tilde\varpi$</td>
-<td>Canonical four-momentum</td>
-<td>$\tilde\varpi=\tilde P+ϙ\tilde A$</td>
-<td>The canonical four-momentum</td>
-<td>1</td>
-</tr>
-<tr>
 <td>$\tilde\psi$</td>
 <td>Spinor of the state module</td>
 <td>—</td>
@@ -641,30 +520,9 @@
 <td>9</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal Q}$</td>
-<td>Matrix of biquaternions</td>
-<td>$\tilde{\mathcal Q}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z$</td>
-<td>The component writing, with $Q_\mu\in\mathbb{C}^{n\times m}$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf q}$</td>
-<td>Bold form of $\tilde q$ in the Euclidean dot product $\mathcal{W}=\tilde{\mathbf p}\cdot\tilde{\mathbf q}$</td>
-<td>—</td>
-<td>—</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde R$</td>
-<td>Electric source biquaternion, or a rotation rotor</td>
-<td>$\tilde R=\tfrac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$; $\tilde R\tilde R^{\natural}=e_t$ for the rotor</td>
-<td>The Maxwell and S-matrix articles; the two roles are to be separated</td>
-<td>219</td>
-</tr>
-<tr>
 <td>$\tilde{\mathcal R}$</td>
 <td>Combined electric-magnetic source</td>
-<td>$\tilde{\mathcal R}=\tilde R_e+i\tilde R_m$</td>
+<td>$\tilde{\mathcal R}=\sqrt{\mu}\,\tilde J_e+i\sqrt{\epsilon}\,\tilde J_m$</td>
 <td>—</td>
 <td>5</td>
 </tr>
@@ -674,27 +532,6 @@
 <td>$\tilde r=r_\mu\vec e_\mu\in\mathbb{H}_{\mathbb{B}}$</td>
 <td>As in $d\tilde r/dt=\vec\omega_T\times\tilde r$ and in the orbital product $\tilde r\tilde p$</td>
 <td>19</td>
-</tr>
-<tr>
-<td>$\tilde\rho$</td>
-<td>State (density) element</td>
-<td>$\tilde\rho=\tfrac12(e_t+i\vec r)$</td>
-<td>A state of the Bloch ball, $\lvert\vec r\rvert\le1$</td>
-<td>104</td>
-</tr>
-<tr>
-<td>$\tilde\varrho$</td>
-<td>State</td>
-<td>$\tilde\varrho=\tfrac12(e_t+i\vec r)$</td>
-<td>A state of the sesqualgebra, the ancestor of $\tilde\rho$</td>
-<td>3</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf S}$</td>
-<td>Spin three-vector</td>
-<td>$\tilde{\mathbf S}=S_k\vec e_k$</td>
-<td>A pure real quaternion</td>
-<td>2</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal S}$</td>
@@ -721,50 +558,15 @@
 <td>$\tilde\sigma$</td>
 <td>State element</td>
 <td>—</td>
-<td>A second state, as in the relative entropy $S(\tilde\rho\\Vert\tilde\sigma)$</td>
+<td>A second state, as in the relative entropy $S(\tilde{Ϛ}\\Vert\tilde\sigma)$</td>
 <td>13</td>
-</tr>
-<tr>
-<td>$\tilde T$</td>
-<td>Kinetic energy</td>
-<td>$\tilde T=-\tilde p^{\,2}/(2m)$</td>
-<td>In the free-particle and hydrogen articles</td>
-<td>40</td>
-</tr>
-<tr>
-<td>$\tilde\tau$</td>
-<td>Torque</td>
-<td>$\dot{\tilde L}_b=\tfrac12[\tilde L_b,\tilde\omega_b]+\tilde\tau$</td>
-<td>The torque of Euler's equation</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde\Upsilon$</td>
-<td>Nilpotent of the biquaternion layer</td>
-<td>$\tilde\Upsilon^2=0$</td>
-<td>The quaternion layer writes $\tilde\nu$</td>
-<td>23</td>
-</tr>
-<tr>
-<td>$\tilde{\mathbf V}$</td>
-<td>Pure vector</td>
-<td>$\tilde\Omega=\tilde\Omega_0+\tilde{\mathbf V}$</td>
-<td>The vector part in a split such as</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde v$</td>
-<td>Unit four-velocity</td>
-<td>$\tilde v=\tilde V/c$</td>
-<td>The four-velocity in units of $c$</td>
-<td>12</td>
 </tr>
 <tr>
 <td>$\tilde W$</td>
 <td>W-boson gauge field</td>
 <td>$\tilde W=\sum_a\tilde W^aT^a$</td>
-<td>The electroweak article; its field strength is $\tilde{\mathcal W}=\tilde\nabla\tilde W+\tfrac{g}{2}[\tilde W,\tilde W]$</td>
-<td>41</td>
+<td>The electroweak article; the generators $T^a=\tfrac12e_a$ are algebra elements, so the gauge field is an element and not a matrix; its field strength is $\tilde{\mathcal W}=\tilde\nabla\tilde W+\tfrac{g}{2}[\tilde W,\tilde W]$</td>
+<td>42</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal W}$</td>
@@ -773,15 +575,47 @@
 <td>In the electroweak article; $\tilde{\mathcal W}=\tfrac12\tilde F\tilde F^*$ in the gauge article</td>
 <td>2</td>
 </tr>
+</tbody>
+</table></div>
+<p>The wave four-vector and the unit four-velocity are written $\tilde P/\hbar$ and $\tilde V/c$. Each is a quotient of an object already in the list, so neither takes a glyph of its own, and the rows that stood for them are removed.</p>
+<p>$\tilde\tau$ no longer occurs: its one use was the pure torque of <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, now written $\vec\tau$.</p>
+<h3 id="the-bound-roles-of-math260">The Bound Roles of $\tilde R$</h3>
+<p>$\tilde R$ is not a generic glyph. After the electric-source role was removed, its uses are bound where the letter is introduced, and they fall into two roles that do not co-occur in one article.</p>
+<div class="table-scroll"><table>
+<thead>
 <tr>
-<td>$\tilde\xi$</td>
-<td>Root of $1$ of the quaternion layer</td>
-<td>$\tilde\xi^2=e_t$</td>
-<td>The tilde-free layers write $\Xi$</td>
-<td>19</td>
+<th>Role</th>
+<th>Formula</th>
+<th>Occurrences</th>
+<th>Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotation rotor</td>
+<td>$\tilde R=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}\cdot\mathbf e$, $\tilde R\tilde R^{\natural}=e_t$</td>
+<td>372</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Bound element at the point of use</td>
+<td>$\tilde P,\tilde Q,\tilde R$ in a ternary identity; $h(\tilde P,\tilde R)$; a unit in $\operatorname{H}_{\tilde R}$</td>
+<td>2629</td>
+<td>163</td>
 </tr>
 </tbody>
 </table></div>
+<p>The token counts are over <code>articles_maths/</code> and <code>articles_physics/</code>; the article counts are the articles in which the symbol occurs, whether or not they display the defining formula. The two rows account for all 3001 tokens in 179 articles.</p>
+<p><strong>The electric source is written with $\tilde J$, not $\tilde R$.</strong> The Maxwell source is the four-current $\tilde J=ic\rho\,e_t+\vec J$, and the field equation reads $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$. Since $c=1/\sqrt{\epsilon\mu}$,
+$$
+\sqrt{\mu}\,\tilde J=\sqrt{\mu}\left(ic\rho\,e_t+\vec J\right)=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J ,
+$$
+so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is $\sqrt{\mu}\,\tilde J$, not a second object. The factor $\sqrt{\mu}$ is the whole difference, and it is written explicitly in every article. In a magnetic medium the magnetic source is $\sqrt{\epsilon}\,\tilde J_m$. No article of the corpus now writes $\tilde R$ for a source.</p>
+<p><strong>The rotation rotor is a unit real quaternion</strong>, the $SU(2)$ factor of $\tilde S=\exp(i\theta)\tilde R$ in <em>The S-Matrix in Biquaternionic Form</em>; the generic unit quaternion of that layer is $\tilde u$, and the rotor is that object bound to a rotation.</p>
+<p><strong>The second role is a bound element, not a generic one.</strong> In the algebra articles $\tilde R$ is the third multiplicand beside $\tilde P$ and $\tilde Q$, or a unit in a sandwich, bound where it is introduced. The generic element is $\tilde Q_k$.</p>
+<h3 id="a-removed-glyph">A Removed Glyph</h3>
+<p>The discarded limit glyph no longer occurs in any article. The last use was the value a limit tends to; that value is an arbitrary element, so it belongs to the Q family and is now $\tilde Q_2$, with $\tilde Q_3$ for the second limit in the uniqueness proof and the algebra of limits. The logarithm value is $\tilde Q_{\log}$ ($17$ places, $4$ articles). The Lorentz rotor is $\tilde\Lambda$ in <em>The Lorentz Transformation as a Biquaternionic Rotation</em> and $\tilde U_{\mathrm L}$ in <em>The Eigenspinor</em>, where $\tilde\Lambda$ is the eigenspinor itself. The Lindblad jump operators are $\tilde K_k$ ($10$ places, $1$ article). The orbital operators are $L_k e_t$ ($75$ places, $3$ articles).</p>
+<p>The quaternion-layer logarithm is $\tilde q_{\log}$ ($16$ places, $1$ article), the same symbol as the biquaternion layer. The body-frame angular momentum of <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, $37$ places, is a pure real quaternion and is now written $\vec L_b$; the same pass made that article's angular velocity and torque $\vec\omega_b$ and $\vec\tau$, since they are pure as well. The left-inverse dummy of <em>Norm and Invertibility in the General Quaternionic Algebra</em> is now $\tilde Q_3$. The generic uses — the bilinearity dummy of <em>The Born Rule as a Trace Formula</em>, the general identity of <em>Biquaternion Elementary Functions</em>, and the periodicity statement of <em>Split-Biquaternion Spectral Theory</em> — were rewritten to $\tilde Q$. The Noether bivector is pure and is now written $\vec L$; the field strength $\tilde F$ is pure as well and still carries a tilde, so that pair differs in mark and the field strength is the remaining work item of the pair.</p>
 <h2 id="3-wrongly-generic-to-be-rewritten">3. Wrongly generic, to be rewritten</h2>
 <p>Two kinds of work item are collected here. The first is a <strong>wrongly generic</strong> claim: the entry asserts a generic element outside the Q family. The second is a <strong>wrong scope</strong>: the glyph names a real object, but the tilde does not belong to it. A symbol with a real role also appears in section 2 under that role and here under the defect.</p>
 <div class="table-scroll"><table>
@@ -801,31 +635,39 @@
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A second general element beside $\tilde Q$; also an inner derivation $\mathrm{ad}_{\tilde A}$</td>
-<td>Write $\tilde Q_k$ for the generic use; the potential $\tilde A$ keeps its tilde and is listed in section 1.</td>
-<td>217</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$ for the generic use; the potential $\tilde A$ keeps its tilde and is listed in section 1.</td>
+<td>216</td>
 </tr>
 <tr>
 <td>$\tilde B$</td>
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element, as in the form $h(\tilde P\tilde B,\tilde R\tilde B)$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
-<td>126</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
+<td>125</td>
 </tr>
 <tr>
 <td>$\tilde C$</td>
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element acting on the spinor module, $\mathfrak b_\mu(\tilde C\cdot s,\tilde C\cdot t)$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>46</td>
+</tr>
+<tr>
+<td>$\tilde a$</td>
+<td>Annihilation operator</td>
+<td>$\tilde a=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde a^2=0$</td>
+<td>A Fock operator carries the superscript $\mathrm{fop}$ and no tilde; its one-mode truncation as an element is the pure nilpotent $\vec\Upsilon_x$</td>
+<td>Write $a^{\mathrm{fop}}$ for the abstract operator and $\vec\Upsilon_x$ for the element; a bound real quaternion with a scalar part keeps its tilde.</td>
+<td>54</td>
 </tr>
 <tr>
 <td>$\tilde c$</td>
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element of the quaternion layer, as in $L_{\tilde a}L_{\tilde c}=L_{\tilde a\tilde c}$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>12</td>
 </tr>
 <tr>
@@ -833,39 +675,39 @@
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element beside $\tilde c$, as in $T_{\tilde c,\tilde d}$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>5</td>
 </tr>
 <tr>
 <td>$\tilde M$</td>
-<td>General element or a Kraus operator</td>
-<td>$\tilde E_y=\tilde M_y^{*}\tilde M_y$</td>
-<td>A general element; the Kraus form of an effect</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. It also hides the Kraus role.</td>
-<td>10</td>
+<td>General element in the Hadamard scheme</td>
+<td>$\tilde M=M_0e_t+\dots+M_3\vec e_z$</td>
+<td>Two generic multiplicands beside the fixed corner products; <em>The Computational Cost of Biquaternion Arithmetic</em> now writes them $\tilde Q_1,\tilde Q_2$</td>
+<td>Write $\tilde Q_1,\tilde Q_2$; the bound uses (Thomas interval rotor, limit value, conjugating element) are not generic.</td>
+<td>8</td>
 </tr>
 <tr>
 <td>$\tilde p$</td>
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element, as in $L_{\tilde p},R_{\tilde p}$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. The corpus also uses the letter for the momentum operator, which is pure and written $\vec p$.</td>
-<td>43</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The corpus also uses the letter for the momentum operator, which is pure and written $\vec p$.</td>
+<td>45</td>
 </tr>
 <tr>
 <td>$\tilde R$</td>
 <td>General element or a velocity</td>
 <td>—</td>
-<td>A general element; the electric source and the rotation rotor</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. Two roles are mixed: electric source and rotation rotor.</td>
-<td>219</td>
+<td>A general element; the bound roles are the rotation rotor and the third multiplicand beside $\tilde P,\tilde Q$</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. See §<em>The Bound Roles of $\tilde R$</em> for the two bound roles.</td>
+<td>179</td>
 </tr>
 <tr>
 <td>$\tilde r$</td>
 <td>General element of the quaternion layer</td>
 <td>$\tilde r\mapsto\tilde r^{\natural}$</td>
 <td>A general element; the reflection</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. The corpus also uses it as the position vector.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The corpus also uses it as the position vector.</td>
 <td>19</td>
 </tr>
 <tr>
@@ -873,7 +715,15 @@
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element; a unit exactly when $\langle\tilde T\rangle_{\natural}\neq0$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. The physics articles also use it as the kinetic energy.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The physics articles also use it as the kinetic energy, listed in the next row.</td>
+<td>40</td>
+</tr>
+<tr>
+<td>$\tilde T$</td>
+<td>Kinetic energy</td>
+<td>$\tilde T=-\tilde p^{\,2}/(2m)=p^{\,2}/(2m)e_t$</td>
+<td>In the free-particle and hydrogen articles. The object is central, a multiple of $e_t$: the square of the pure momentum is scalar, so no quaternionic factor is left for the tilde to mark</td>
+<td>Drop the tilde, $T=-\tilde p^{\,2}/(2m)=p^{\,2}/(2m)e_t$.</td>
 <td>40</td>
 </tr>
 <tr>
@@ -881,15 +731,15 @@
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element; a basis element of the spinor module</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. The physics articles also use it as the W-boson field.</td>
-<td>41</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The physics articles also use it as the W-boson field.</td>
+<td>42</td>
 </tr>
 <tr>
 <td>$\tilde w$</td>
 <td>General element or unit quaternion</td>
 <td>$\{L_{\tilde w}:\operatorname{Re}\tilde w=\operatorname{Re}\tilde q\}$</td>
 <td>A general element, as in the class</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced. The LSZ article uses it as a constant amplitude.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$; write $\tilde U$ when the element is unitary. The LSZ article uses it as a constant amplitude.</td>
 <td>3</td>
 </tr>
 <tr>
@@ -897,15 +747,15 @@
 <td>General element of the algebra</td>
 <td>$\{\tilde X:\tilde P\tilde X=0\}$</td>
 <td>A general element, as in the annihilator</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
-<td>108</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
+<td>110</td>
 </tr>
 <tr>
 <td>$\tilde x$</td>
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element, as in $L_{\tilde x}(\tilde y)=\tilde x\tilde y$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>16</td>
 </tr>
 <tr>
@@ -913,7 +763,7 @@
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element of the Peirce and sesqualgebra identities</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>90</td>
 </tr>
 <tr>
@@ -921,7 +771,7 @@
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element, as in the plain form $\langle\tilde x,\tilde y\rangle$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>5</td>
 </tr>
 <tr>
@@ -929,7 +779,7 @@
 <td>General element of the algebra</td>
 <td>$\{\tilde Z:\tilde P\tilde Z=0\}$</td>
 <td>A general element, as in the annihilator</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>43</td>
 </tr>
 <tr>
@@ -937,7 +787,7 @@
 <td>General element of the quaternion layer</td>
 <td>—</td>
 <td>A general element paired with $\tilde y$ in the inner product, as in $\langle\tilde y,\tilde z\rangle$</td>
-<td>Write $\tilde Q_k$, or bind the letter where it is introduced.</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
 <td>2</td>
 </tr>
 <tr>
@@ -946,7 +796,7 @@
 <td>—</td>
 <td>In the identity $\tilde\nabla\tilde F$ the letter stands for an arbitrary algebra-valued field. The letter is the field strength and is never generic</td>
 <td>$\tilde\nabla\tilde Q$, or bind the field where it is introduced.</td>
-<td>107</td>
+<td>109</td>
 </tr>
 <tr>
 <td>$\tilde H$</td>
@@ -954,34 +804,19 @@
 <td>$\tilde H=\bigl[-\frac{\hbar^2}{2m}\nabla^2+V\bigr]e_t=h_0e_t$</td>
 <td>In the Schrödinger, free-particle and scattering articles. A scalar is central; the tilde is not its mark</td>
 <td>Drop the tilde, $H=h_0e_t$.</td>
-<td>225</td>
+<td>223</td>
 </tr>
 <tr>
 <td>$\tilde H$</td>
 <td>Oscillator energy</td>
-<td>$\tilde H=\omega(\tilde a^{\dagger}\tilde a+\tfrac12e_t)$</td>
+<td>$\tilde H=\omega(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+\tfrac12e_t)$</td>
 <td>It is Hermitian, but it is not the general Hermitian observable of section 1, and the rule keeps the tilde for that object alone</td>
 <td>Drop the tilde, or write the energy as the section 1 observable when the statement is about the observable.</td>
-<td>225</td>
-</tr>
-<tr>
-<td>$\tilde H$</td>
-<td>Trace dummy</td>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
-<td>No object is behind the letter, and the first slot $\tilde P$ is a dummy of the same kind</td>
-<td>Write the pairing with the Q family, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$.</td>
-<td>225</td>
-</tr>
-<tr>
-<td>$\tilde P$</td>
-<td>Trace dummy</td>
-<td>—</td>
-<td>The first slot of the same formula. The letter is the four-momentum and is never generic</td>
-<td>$\tilde Q_1$; the four-momentum keeps its tilde where it is the momentum.</td>
-<td>465</td>
+<td>223</td>
 </tr>
 </tbody>
 </table></div>
+<p>The trace dummy is resolved: the general identity is written $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ and the pairing $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ across the corpus. The physical pairing of a state and a Hamiltonian, $\mathrm{Tr}(\tilde P\tilde H)=\langle u|H|u\rangle$, keeps its letters.</p>
       </div>
     </main>
   </div>

@@ -199,9 +199,9 @@ $$</p>
 <h3 id="the-gauge-transformation-in-the-algebra">The gauge transformation in the algebra</h3>
 <p>In the massless case the antisymmetrized equation and the trace constraint leave a gauge freedom, and in the biquaternion form the transformation is</p>
 <p>$$
-\tilde{\Psi}_\mu \;\longrightarrow\; \tilde{\Psi}_\mu + \tilde{\nabla}_\mu\,\tilde{\epsilon},
+\tilde{\Psi}_\mu \;\longrightarrow\; \tilde{\Psi}_\mu + \partial/\partial Q_\mu\,\epsilon,
 $$</p>
-<p>where $\tilde{\epsilon}$ is a biquaternion playing the role of the Dirac-spinor parameter and $\tilde{\nabla}_\mu$ is the $\mu$-th component of the gradient. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\tilde{\epsilon}$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.</p>
+<p>where $\epsilon$ is a Dirac-spinor parameter and $\partial/\partial Q_\mu$ is the coordinate derivative. The shift is the derivative of the parameter, not the gradient component $e_\mu\partial/\partial Q_\mu$: the basis factor $e_\mu$ would survive the antisymmetrization and the invariance would fail. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\epsilon$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.</p>
 <h3 id="helicities-and-the-two-physical-states">Helicities and the two physical states</h3>
 <p>The physical content of the massless field is therefore two states per wavevector, the helicities $\pm\tfrac32$. There is no longitudinal or scalar helicity, and the count is the spin-$\tfrac32$ analogue of the two transverse helicities of the photon: in both cases the gauge freedom and the constraint together halve-and-halve the naive index content. The parallel is exact at the level of the representation theory. The photon's two-form is the antisymmetric square of the four-vector, $(1,0)\oplus(0,1)$; the massless Rarita–Schwinger field's two physical states are the two helicities of the $(1,\tfrac12)$ and $(\tfrac12,1)$ summands after the spin-$\tfrac12$ pieces are gauged away. In both cases the framework's self-dual split is the algebraic trace of the helicity structure, and in both cases the massless limit is the case in which the third and lower states are removed by gauge rather than retained by a mass.</p>
 <h2 id="the-massive-case">The Massive Case</h2>
@@ -214,9 +214,9 @@ $$</p>
 <h3 id="the-dispersion-relation">The dispersion relation</h3>
 <p>Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,</p>
 <p>$$
-\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
+\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar),
 $$</p>
-<p>the Dirac equation on the component requires $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,</p>
+<p>the Dirac equation on the component requires $\tilde P\tilde P^{\natural}=-m^2c^2$ in the normalization of the companion Dirac article, that is,</p>
 <p>$$
 \frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
 \qquad\text{i.e.}\qquad
@@ -315,6 +315,10 @@ $$</p>
 <td>Biquaternion-valued components of the vector-spinor</td>
 </tr>
 <tr>
+<td>$\epsilon$</td>
+<td>Dirac-spinor parameter of the massless shift symmetry</td>
+</tr>
+<tr>
 <td>$\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$</td>
 <td>Clifford generators, $g=\mathrm{diag}(+1,-1,-1,-1)$</td>
 </tr>
@@ -345,10 +349,6 @@ $$</p>
 <tr>
 <td>$P_{ij}=\delta_{ij}-\tfrac13\sigma_i\sigma_j$</td>
 <td>Spin-$\tfrac32$ projector on the vector index</td>
-</tr>
-<tr>
-<td>$\tilde{\nabla}_\mu$</td>
-<td>$\mu$-th component of the biquaternionic gradient</td>
 </tr>
 <tr>
 <td>$2\times\tfrac32\oplus4\times\tfrac12$</td>

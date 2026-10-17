@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Video Compression and Deblurring with Reduced Biquaternion Tensors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="color-video-compression-and-deblurring-with-reduced-biquaternion-tensors"><strong>Color Video Compression and Deblurring with Reduced Biquaternion Tensors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A color video is a stack of frames, and a stack of frames is a third-order tensor. Encoding the three color channels as the three imaginary units of a reduced biquaternion puts the whole video into one reduced biquaternion tensor, whose t-SVD compresses it and whose tensor equations deblur it. This article describes the encoding, the compression by the rank-$k$ truncation, the peak signal-to-noise ratio, the deblurring by the tensor equation, and the cost of the algorithms against the quaternion tensor algorithms they improve on.</p>
+<p>The product is <em>The t-Product of Reduced Biquaternion Tensors</em>, the decomposition is <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>, the truncation is <em>The Rank of a Reduced Biquaternion Tensor and its Low-Rank Approximation</em>, and the equation is <em>Tensor Equations over the Reduced Biquaternions</em>. The image counterpart is <em>Non-Negative Matrix Factorization over the Reduced Biquaternions</em>.</p>
+<p>The source is Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion tensors and applications in color video processing", which introduces the Ht-product and the Ht-SVD for this application. The quaternion tensor algorithms it improves on are those of Qin, Ming and Zhang and of the color image processing literature.</p>
+<h2 id="the-color-video-tensor">The Color Video Tensor</h2>
+<p>Let $A_{\mathrm R},A_{\mathrm G},A_{\mathrm B}\in\mathbb{R}^{n_1\times n_2\times n_3}$ be the red, green and blue channels of a video with $n_1\times n_2$ pixels and $n_3$ frames. The <strong>color video tensor</strong> is</p>
+<p>$$
+A_{\mathrm C}(m,n,t)=A_{\mathrm R}(m,n,t)i+A_{\mathrm G}(m,n,t)j+A_{\mathrm B}(m,n,t)ij.
+$$</p>
+<p>The source writes the last term $A_{\mathrm B}k$ with $k=ij$; the basis element is the same. The frame index $t$ is kept apart from the basis symbol $ij$ here.</p>
+<p>The frontal slice $A_{\mathrm C}(:,:,t)$ is the $t$-th frame, and each pixel is a pure reduced biquaternion with no real part. In the notation of the branch, $A_{\mathrm C}=A_0+A_1i+A_2j+A_3ij$ with</p>
+<p>$$
+A_0=0,\qquad A_1=A_{\mathrm R},\qquad A_2=A_{\mathrm G},\qquad A_3=A_{\mathrm B}.
+$$</p>
+<p>The two idempotent coordinates are therefore</p>
+<p>$$
+A_{(1)}=A_{\mathrm G}+i(A_{\mathrm R}+A_{\mathrm B}),\qquad
+A_{(2)}=-A_{\mathrm G}+i(A_{\mathrm R}-A_{\mathrm B}),
+$$</p>
+<p>and the color channels are recovered by</p>
+<p>$$
+A_{\mathrm R}=\frac{A_{(1)}+A_{(2)}}{2i},\qquad
+A_{\mathrm G}=\operatorname{Re}\frac{A_{(1)}-A_{(2)}}{2},\qquad
+A_{\mathrm B}=\operatorname{Im}\frac{A_{(1)}-A_{(2)}}{2}.
+$$</p>
+<p><strong>Remark (the real part).</strong> The encoding uses three of the four real coordinates; the fourth, $A_0$, is zero. The t-product and the t-SVD are taken over the full algebra, and a product or an approximation of pure tensors need not be pure: the real part is a residual, not a color channel. <strong>The color reconstruction reads the coefficients of $i,j,ij$ and discards the real part.</strong> The source's model uses the same pure encoding.</p>
+<p><strong>Remark (the time mode).</strong> The t-product convolves along the third mode circularly. The video is therefore treated as periodic in time. This is the modeling assumption of the t-product, not a property of the video; the first and last frames are coupled by the circular convolution. The source uses the same convention. A non-periodic treatment requires a different transform or a boundary extension, and it is outside this article.</p>
+<h2 id="compression">Compression</h2>
+<p>The compression is the rank-$k$ truncation of <em>The Rank of a Reduced Biquaternion Tensor and its Low-Rank Approximation</em>. Compute the t-SVD</p>
+<p>$$
+A_{\mathrm C}=U\ast S\ast V^{\mathsf H},
+$$</p>
+<p>keep the first $k$ diagonal tubes and the corresponding columns,</p>
+<p>$$
+A_{\mathrm C,k}=\sum_{i=1}^{k}U(:,i,:)\ast S(i,i,:)\ast V(:,i,:)^{\mathsf H},
+$$</p>
+<p>and reconstruct the color channels from $A_{\mathrm C,k}$ by the formulas above. The stored data are</p>
+<p>$$
+U_k\in\mathbb{B}_{\mathrm r}^{n_1\times k\times n_3},\qquad
+S_k\in\mathbb{B}_{\mathrm r}^{k\times k\times n_3},\qquad
+V_k\in\mathbb{B}_{\mathrm r}^{n_2\times k\times n_3},
+$$</p>
+<p>with $S_k$ f-diagonal, so the number of reduced biquaternion entries is $n_3k(n_1+n_2+1)$. Each entry is four real numbers, so the compressed representation has $4n_3k(n_1+n_2+1)$ real scalars. The original color video has $3n_1n_2n_3$ real scalars, and the encoded tensor has $4n_1n_2n_3$ real scalars, one of which is zero at every pixel.</p>
+<p><strong>The compression ratio.</strong> Relative to the encoded tensor, the ratio is</p>
+<p>$$
+\rho_{\mathrm{tensor}}=\frac{n_1n_2}{k(n_1+n_2+1)},
+$$</p>
+<p>and relative to the original RGB video it is</p>
+<p>$$
+\rho_{\mathrm{RGB}}=\frac{3n_1n_2}{4k(n_1+n_2+1)}.
+$$</p>
+<p>For $n_1=n_2=256$, $n_3=100$ and $k=20$, the two ratios are $6.39$ and $4.79$. The ratio grows linearly in the spatial size and inversely in the rank; the number of frames cancels because both the original and the factors carry the same third mode.</p>
+<p><strong>The algorithm.</strong></p>
+<ol>
+<li>Encode the video as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$.</li>
+<li>Compute the t-SVD by the algorithm of <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>: transform the two idempotent coordinates, take the complex SVDs of the transform slices, assemble $U,S,V$, and invert the transform.</li>
+<li>Keep the first $k$ diagonal tubes and the corresponding columns.</li>
+<li>Reconstruct $A_{\mathrm C,k}$ and decode the three channels.</li>
+<li>Clip the channels to the valid range if the reconstruction leaves it.</li>
+</ol>
+<p>The cost is the cost of the t-SVD,</p>
+<p>$$
+O\bigl(n_1n_2n_3\log n_3+n_3\min(n_1^2n_2,n_1n_2^2)\bigr),
+$$</p>
+<p>plus $O(n_3k(n_1+n_2))$ for the reconstruction.</p>
+<p><strong>The optimality.</strong> The truncation is the best approximation of $A_{\mathrm C}$ in the Frobenius norm among all tensors of tubal rank at most $k$. <strong>It is optimal for the tubal rank, not for the perceptual quality of the video</strong>, and it is not the best approximation of a prescribed CP or tensor ring rank.</p>
+<h2 id="the-peak-signal-to-noise-ratio">The Peak Signal-to-Noise Ratio</h2>
+<p>The reconstruction error is measured by the peak signal-to-noise ratio</p>
+<p>$$
+\mathrm{PSNR}=10\log_{10}\frac{3n_1n_2\lVert C\rVert_\infty^2}{\lVert C-C_k\rVert_{\mathrm F}^2},
+$$</p>
+<p>where $C$ and $C_k$ are one frame of the original and of the reconstruction, $\lVert C\rVert_\infty$ is the maximum absolute value of a channel sample, and $\lVert C-C_k\rVert_{\mathrm F}^2$ is the sum of the squared errors over all pixels and all three channels. The factor $3n_1n_2$ is the number of channel samples in a frame; the formula is the per-frame PSNR, and the PSNR of the video is the average of the per-frame values. If the video is normalized to $[0,1]$, the peak is at most $1$; if it is stored in eight bits, the peak is at most $255$. The PSNR is in decibels, and a higher value is a smaller error.</p>
+<p><strong>Remark (what the PSNR does not see).</strong> The PSNR is a global mean of the squared error. It does not measure temporal flicker, motion, or perceptual quality. The t-SVD truncation couples the frames through the transform, and a low-rank approximation can smooth a moving object across frames while keeping a good PSNR. <strong>The PSNR is a necessary check, not a sufficient one</strong>, and the source reports it together with visual comparisons.</p>
+<h2 id="deblurring">Deblurring</h2>
+<p>The blur is modeled by the tensor equation</p>
+<p>$$
+B=H\ast X+N,
+$$</p>
+<p>where $X$ is the clean color video tensor, $H$ is the blur tensor, $B$ is the observed video and $N$ is noise. The t-product applies the blur to each frame and convolves the frames along the time mode. The deblurring solves $H\ast X=B$ for $X$.</p>
+<p><strong>The exact case.</strong> If $H$ is a unit of the tensor algebra, then</p>
+<p>$$
+X=H^{-1}\ast B.
+$$</p>
+<p>The inverse is computed by the criterion of <em>Zero Divisors of the Reduced Biquaternion Tensor Algebra</em>: transform $H$, invert every transform slice in both idempotent coordinates, and invert the transform. The cost is the cost of the transform and of the slicewise matrix inverses, $O(n_1n_2n_3\log n_3+n_3n_1^3)$ for square tensors.</p>
+<p><strong>The general case.</strong> If $H$ is not a unit, the equation may have no exact solution, and one takes the minimum-norm least-squares solution of <em>Tensor Equations over the Reduced Biquaternions</em>,</p>
+<p>$$
+X=H^\dagger\ast B,
+$$</p>
+<p>or the Tikhonov solution</p>
+<p>$$
+X=(H^{\mathsf H}\ast H+\lambda\mathrm I)^{-1}\ast H^{\mathsf H}\ast B
+$$</p>
+<p>for a regularization parameter $\lambda>0$. The pseudoinverse is computed by the t-SVD of $H$; the Tikhonov solution is computed slicewise in the transform. The zero-divisor criterion says when the exact inverse exists: $H$ is a unit exactly when no transform slice is singular in either coordinate.</p>
+<p><strong>The algorithm.</strong></p>
+<ol>
+<li>Encode the observed video as $B$.</li>
+<li>Compute the transform of $B$ and of the blur tensor $H$.</li>
+<li>For each transform slice and each idempotent coordinate, solve the matrix equation $\widehat H^{(k)}\widehat X^{(k)}=\widehat B^{(k)}$ by the matrix inverse, the matrix pseudoinverse, or the regularized inverse.</li>
+<li>Invert the transform and decode the three channels.</li>
+</ol>
+<p>The cost is the cost of the t-SVD of $H$ plus the slicewise matrix solves,</p>
+<p>$$
+O\bigl(n_1n_2n_3\log n_3+n_3\min(n_1^2n_2,n_1n_2^2)\bigr).
+$$</p>
+<p><strong>Remark (the blur tensor).</strong> A scalar blur, the same for the three channels, has the same complex value in both idempotent coordinates. A channel-dependent blur has different coefficients; the reduced biquaternion encoding carries them in one tensor. A blur tensor with a zero idempotent coordinate is a zero divisor and has no inverse; the pseudoinverse or the regularization is then the only recourse. <strong>The t-determinant decides which case applies before any solve is attempted.</strong></p>
+<h2 id="the-cost-against-the-quaternion-algorithms">The Cost Against the Quaternion Algorithms</h2>
+<p>The quaternion tensor algorithms carry four real coordinates per entry and use a quaternion SVD at every transform slice. The reduced biquaternion algorithms carry the same four real coordinates, in two complex coordinates, and use two complex SVDs at every slice; the storage is the same and the decomposition is cheaper. The asymptotic cost is the same up to constants,</p>
+<p>$$
+O\bigl(n_1n_2n_3\log n_3+n_3\min(n_1^2n_2,n_1n_2^2)\bigr),
+$$</p>
+<p>but the constants are smaller: the transform is a complex FFT applied to the two coordinates, the slicewise decomposition is a pair of complex SVDs, and no quaternion iteration is needed. The source reports a lower running time for the reduced biquaternion algorithms on color video compression and deblurring, with a PSNR comparable to the quaternion methods.</p>
+<p><strong>Remark (the quality against the quaternion t-SVD).</strong> The reduced biquaternion t-SVD is algebraically the pair of the two complex t-SVDs of the idempotent coordinates. Its truncation is optimal for the tubal rank, as the quaternion truncation is optimal for the quaternion tubal rank. The two approximations need not coincide, because the quaternion algebra and the reduced biquaternion algebra are different; the source's experiments compare them on the same videos. <strong>The reduced biquaternion advantage is computational, not a different approximation theorem.</strong></p>
+<h2 id="verification">Verification</h2>
+<p>The pipeline was recomputed on a synthetic color video of $4\times4$ pixels and $2$ frames, with $32$ tensor entries and $96$ color samples. The encoding and decoding were inverse to $1.1\times10^{-16}$. The tubal rank of the video tensor was $3$; the per-frame PSNR of the rank-$k$ reconstruction, averaged over the two frames, was $25.6$ dB at $k=1$, $36.2$ dB at $k=2$, and $70.9$ dB at $k=3$, the last being the numerical roundoff of the exact reconstruction. For this small video the compression ratios were $1.78$ against the encoded tensor and $1.33$ against RGB at $k=1$; the formula gives $6.39$ and $4.79$ for $256\times256$ pixels, $100$ frames and $k=20$.</p>
+<p>For the deblurring, the blur tensor was a unit with a cyclic shift of strength $0.15$; the exact deblurring reproduced the clean video to $3.4\times10^{-16}$. With $1\%$ noise, the pseudoinverse reconstruction had a relative error of $8.0\times10^{-3}$ and a per-frame PSNR, averaged over the two frames, of $49.7$ dB. The exact case and the noisy case used the same transform, slicewise solve and inverse transform as the algorithm above.</p>
+<h2 id="summary">Summary</h2>
+<p>A color video is encoded as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$, one frame per frontal slice. The rank-$k$ truncation of its t-SVD compresses the video; the stored factors have $n_3k(n_1+n_2+1)$ reduced biquaternion entries, and the compression ratio is $n_1n_2/[k(n_1+n_2+1)]$ against the encoded tensor and $3n_1n_2/[4k(n_1+n_2+1)]$ against RGB. The reconstruction error is measured by the per-frame PSNR $10\log_{10}(3n_1n_2\lVert C\rVert_\infty^2/\lVert C-C_k\rVert_{\mathrm F}^2)$, averaged over the frames. Deblurring solves $H\ast X=B$: the inverse when $H$ is a unit, the pseudoinverse or a Tikhonov solution otherwise, all slicewise in the Fourier domain. The reduced biquaternion algorithms replace the quaternion SVD by two complex SVDs and the quaternion transform by two complex transforms; the asymptotic cost is the same and the constants are smaller. <strong>The compression is optimal for the tubal rank, the deblurring is the tensor-equation solution, and the color video is one reduced biquaternion tensor.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$</td>
+<td>The color video tensor</td>
+</tr>
+<tr>
+<td>$A_{\mathrm C,k}$</td>
+<td>The rank-$k$ reconstruction</td>
+</tr>
+<tr>
+<td>$U_k,S_k,V_k$</td>
+<td>The truncated t-SVD factors</td>
+</tr>
+<tr>
+<td>$\mathrm{PSNR}$</td>
+<td>The peak signal-to-noise ratio</td>
+</tr>
+<tr>
+<td>$B=H\ast X+N$</td>
+<td>The blur model</td>
+</tr>
+<tr>
+<td>$H^\dagger$</td>
+<td>The Moore-Penrose inverse of the blur tensor</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>The Tikhonov regularization parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Cui-E Yu, Xin Liu, Hui Luo and Yang Zhang, "Reduced biquaternion tensors and applications in color video processing", arXiv:2403.01690 (2024). The Ht-product, the Ht-SVD, the color video compression and the deblurring experiments.</li>
+<li>Z. Qin, Z. Ming and L. Zhang, "Singular value decomposition of third order quaternion tensors", <em>Applied Mathematics Letters</em> <strong>123</strong> (2022) 107597. The quaternion tensor SVD that the reduced biquaternion algorithm improves on.</li>
+<li>Misha E. Kilmer and Carla D. Martin, "Factorization strategies for third-order tensors", <em>Linear Algebra and its Applications</em> <strong>435</strong> (2011) 641–658. The t-product and the t-SVD.</li>
+<li>Soo-Chang Pei, Ja-Han Chang, Jian-Jiun Ding and Ming-Yang Chen, "Eigenvalues and singular value decompositions of reduced biquaternion matrices", <em>IEEE Transactions on Circuits and Systems I</em> <strong>55</strong> (2008) 2673–2685. The matrix algebra and the two idempotent coordinates.</li>
+<li>Tamara G. Kolda and Brett W. Bader, "Tensor decompositions and applications", <em>SIAM Review</em> <strong>51</strong> (2009) 455–500. The tensor vocabulary and the other tensor decompositions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

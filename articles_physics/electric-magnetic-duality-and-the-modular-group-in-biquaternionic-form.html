@@ -100,13 +100,13 @@ $$</p>
 <p>This is the framework's crispest statement about duality. The phase $\exp(-i\theta)$ lies in the unit circle of the centre $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$, and the centre commutes with every element of the algebra, so the rotation is an <strong>internal</strong> symmetry: it does not act on the Lorentz indices, it does not mix with the quaternion units, and it commutes with every Lorentz rotor. It is not a spacetime symmetry, and it is not part of the Lorentz group; it is a $\mathrm{U}(1)$ of the algebra's centre.</p>
 <p>With magnetic sources the rotation is promoted from a symmetry of the free equations to a symmetry of the sourced system. The sourced equation is</p>
 <p>$$
-\tilde\nabla F^{\mathrm{dual}}=-\tilde R_e-i\tilde R_m ,
+\tilde\nabla F^{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_e-i\sqrt{\epsilon}\,\tilde J_m ,
 \qquad
-\tilde R_e=\frac{i\rho_e}{\sqrt{\epsilon}}+\sqrt{\mu}\,\vec J_e ,
+\tilde J_e=ic\rho_e\,e_t+\vec J_e ,
 \qquad
-\tilde R_m=\frac{i\rho_m}{\sqrt{\mu}}+\sqrt{\epsilon}\,\vec J_m ,
+\tilde J_m=ic\rho_m\,e_t+\vec J_m ,
 $$</p>
-<p>and a rotation $F^{\mathrm{dual}}\mapsto \exp(-i\theta)F^{\mathrm{dual}}$ is compensated by rotating the complex source $\tilde{\mathcal R}=\tilde R_e+i\tilde R_m$, which is the algebraic statement that the symmetry exchanges electric and magnetic charge. The rotation is exact, internal and central; its parameter is continuous.</p>
+<p>and a rotation $F^{\mathrm{dual}}\mapsto \exp(-i\theta)F^{\mathrm{dual}}$ is compensated by rotating the complex source $\tilde{\mathcal R}=\sqrt{\mu}\,\tilde J_e+i\sqrt{\epsilon}\,\tilde J_m$, which is the algebraic statement that the symmetry exchanges electric and magnetic charge. The rotation is exact, internal and central; its parameter is continuous.</p>
 <h2 id="the-complex-coupling-and-the-modular-group">The Complex Coupling and the Modular Group</h2>
 <p>The continuous rotation is only half of the duality structure once the theory has a theta angle. The Euclidean action</p>
 <p>$$
@@ -252,8 +252,8 @@ $$</p>
 <td>Second invariant; CP-odd pseudoscalar</td>
 </tr>
 <tr>
-<td>$\tilde R_e,\tilde R_m$</td>
-<td>Electric and magnetic source biquaternions</td>
+<td>$\tilde J_e,\tilde J_m$</td>
+<td>Electric and magnetic four-currents, entering as $\sqrt{\mu}\,\tilde J_e$ and $\sqrt{\epsilon}\,\tilde J_m$</td>
 </tr>
 <tr>
 <td>$\theta$</td>

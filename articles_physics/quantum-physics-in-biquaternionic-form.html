@@ -67,7 +67,7 @@ $$</p>
 <p>The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation ${}^{*}$).</p>
 <p><strong>Trace.</strong> Writing $\mathrm{Sc}(\tilde{Q})$ for the scalar part of $\tilde{Q}$, the <strong>trace</strong> of an element of $\mathbb{M}_+$ is twice its scalar part:</p>
 <p>$$
-\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H}) = 2 h_0.
+\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H) = 2 h_0.
 $$</p>
 <p><strong>Biquaternion norm.</strong> The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{M}_+$:</p>
 <p>$$
@@ -154,23 +154,23 @@ $$</p>
 <h3 id="mixed-states">Mixed States</h3>
 <p>A <strong>mixed state</strong> of a qubit is a positive Hermitian operator of trace one. In $\mathbb{M}_+$, such an element has the form</p>
 <p>$$
-\tilde{\rho} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3.
+\tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3.
 $$</p>
 <p>The <strong>positivity</strong> condition is the condition that the eigenvalues of the corresponding density matrix are non-negative:</p>
 <p>$$
 |\vec r|^2 = r_1^2 + r_2^2 + r_3^2 \leq 1.
 $$</p>
-<p>The eigenvalues of $\tilde{\rho}$ are $\lambda_\pm = (1 \pm |\vec r|)/2$, which are non-negative if and only if $|\vec r| \leq 1$.</p>
-<p>The state is <strong>pure</strong> if and only if $|\vec r| = 1$, i.e., if and only if $\tilde{\rho}$ is idempotent. It is <strong>mixed</strong> if $|\vec r| < 1$. The <strong>maximally mixed state</strong> has $\vec r = 0$, i.e., $\tilde{\rho} = \tfrac{1}{2} e_t$.</p>
+<p>The eigenvalues of $\tilde{Ϛ}$ are $\lambda_\pm = (1 \pm |\vec r|)/2$, which are non-negative if and only if $|\vec r| \leq 1$.</p>
+<p>The state is <strong>pure</strong> if and only if $|\vec r| = 1$, i.e., if and only if $\tilde{Ϛ}$ is idempotent. It is <strong>mixed</strong> if $|\vec r| < 1$. The <strong>maximally mixed state</strong> has $\vec r = 0$, i.e., $\tilde{Ϛ} = \tfrac{1}{2} e_t$.</p>
 <h3 id="the-bloch-ball">The Bloch Ball</h3>
 <p>The set of all states (pure and mixed) is the <strong>Bloch ball</strong> of radius one in $\mathbb{R}^3$:</p>
 <p>$$
 B^3 = \{\vec r \in \mathbb{R}^3 : |\vec r| \leq 1\}.
 $$</p>
 <p>The pure states form the boundary sphere $|\vec r| = 1$; the maximally mixed state is at the centre.</p>
-<p><strong>A structural observation.</strong> The positivity condition $|\vec r| \leq 1$ is equivalent to the condition $\langle\tilde{\rho}\rangle_{\natural} \geq 0$ on the biquaternion norm of $\mathbb{B}$:</p>
+<p><strong>A structural observation.</strong> The positivity condition $|\vec r| \leq 1$ is equivalent to the condition $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ on the biquaternion norm of $\mathbb{B}$:</p>
 <p>$$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t.
+\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t.
 $$</p>
 <p>So the Bloch ball is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ with the <strong>future light cone</strong> of the biquaternion norm. The pure states form the boundary of the cone, which is also the set of zero divisors of $\mathbb{M}_+$ at trace one.</p>
 <p>This is a clean geometric characterization: <strong>states are the trace-one elements of the future light cone of $\mathbb{M}_+$; pure states are the trace-one elements on the cone itself.</strong></p>
@@ -214,39 +214,39 @@ $$</p>
 <h2 id="the-born-rule">The Born Rule</h2>
 <p>The <strong>Born rule</strong> gives the probability of an outcome of a measurement. In the biquaternion framework, it is a consequence of the trace formula.</p>
 <h3 id="expectation-values">Expectation Values</h3>
-<p>For an observable $\tilde{H} = h_0 e_t + i\vec h$ and a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, the <strong>expectation value</strong> is</p>
+<p>For an observable $\tilde{H} = h_0 e_t + i\vec h$ and a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the <strong>expectation value</strong> is</p>
 <p>$$
-\langle \tilde{H}\rangle_{\tilde{\rho}} = \mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h.
+\langle \tilde{H}\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h.
 $$</p>
 <p><strong>Derivation.</strong> We compute</p>
 <p>$$
-\tilde{\rho}\tilde{H} = \tfrac{1}{2}(e_t + i\vec r)(h_0 e_t + i\vec h) = \tfrac{1}{2}\left(h_0 e_t + i\vec h + i h_0 \vec r + (i\vec r)(i\vec h)\right).
+\tilde{Ϛ}\tilde{H} = \tfrac{1}{2}(e_t + i\vec r)(h_0 e_t + i\vec h) = \tfrac{1}{2}\left(h_0 e_t + i\vec h + i h_0 \vec r + (i\vec r)(i\vec h)\right).
 $$</p>
 <p>For pure quaternions, $(i\vec r)(i\vec h) = -\vec r\vec h = \vec r\cdot\vec h - \vec r\times\vec h$. Taking the scalar part,</p>
 <p>$$
-\mathrm{Sc}(\tilde{\rho}\tilde{H}) = \tfrac{1}{2}(h_0 + \vec r\cdot\vec h),
+\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = \tfrac{1}{2}(h_0 + \vec r\cdot\vec h),
 $$</p>
-<p>so $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = 2\mathrm{Sc}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$.</p>
+<p>so $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$.</p>
 <p>This is exactly the standard formula $\mathrm{Tr}(\rho H) = h_0 + \vec r\cdot\vec h$ for a qubit. So the Born rule is a direct consequence of the trace pairing on $\mathbb{M}_+$. It is not an independent postulate.</p>
 <h3 id="probabilities">Probabilities</h3>
-<p>For a projective measurement of an observable $\tilde{H} = h_0 e_t + i\vec h$ in a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_0 \pm |\vec h|$, with probabilities</p>
+<p>For a projective measurement of an observable $\tilde{H} = h_0 e_t + i\vec h$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_0 \pm |\vec h|$, with probabilities</p>
 <p>$$
 p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
 $$</p>
 <p>where $\vec u_h = \vec h/|\vec h|$. The probabilities depend only on the angle between the measurement direction $\vec u_h$ and the Bloch vector $\vec r$.</p>
-<p>The derivation is direct: $p_+ = \mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{\rho}) = \tfrac{1}{2}(1 + \vec u_h\cdot\vec r)$, using the trace formula.</p>
+<p>The derivation is direct: $p_+ = \mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ}) = \tfrac{1}{2}(1 + \vec u_h\cdot\vec r)$, using the trace formula.</p>
 <h3 id="measurement-update">Measurement Update</h3>
 <p>After a measurement of $\tilde{H}$ with outcome $+$, the state is updated by the von Neumann–Lüders rule:</p>
 <p>$$
-\tilde{\rho}' = \frac{\tilde\Pi_1(\vec u_h)\,\tilde{\rho}\,\tilde\Pi_1(\vec u_h)}{\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{\rho})}.
+\tilde{Ϛ}' = \frac{\tilde\Pi_1(\vec u_h)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_h)}{\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ})}.
 $$</p>
-<p>Since $\tilde\Pi_1$ is idempotent, and since $\tilde\Pi_1\tilde{\rho}\tilde\Pi_1$ has rank at most one (as a product of projectors of rank one), the sandwich is proportional to $\tilde\Pi_1$:</p>
+<p>Since $\tilde\Pi_1$ is idempotent, and since $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1$ has rank at most one (as a product of projectors of rank one), the sandwich is proportional to $\tilde\Pi_1$:</p>
 <p>$$
-\tilde\Pi_1\tilde{\rho}\tilde\Pi_1 = p_+ \tilde\Pi_1,
+\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 = p_+ \tilde\Pi_1,
 $$</p>
-<p>where $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{\rho})$. Hence the post-measurement state is simply</p>
+<p>where $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{Ϛ})$. Hence the post-measurement state is simply</p>
 <p>$$
-\tilde{\rho}' = \tilde\Pi_1(\vec u_h).
+\tilde{Ϛ}' = \tilde\Pi_1(\vec u_h).
 $$</p>
 <p>So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.</p>
 <h2 id="dynamics">Dynamics</h2>
@@ -268,16 +268,16 @@ $$</p>
 <p>The element $\tilde{U}(t)$ is <strong>unitary</strong>: $\tilde{U}(t)\tilde{U}(t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_0t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_0t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_0 = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\vec h|$; for $h_0 \neq 0$ both cases contribute, and at each Hermitian time the angle condition and the phase condition hold together, whether the times are sparser or denser than $t = n\pi\hbar/|\vec h|$ depending on $h_0/|\vec h|$. It is a general element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
 <p><strong>The trace part of the Hamiltonian does not affect the state.</strong> Since $\exp(-ih_0 t/\hbar)$ is a central complex scalar, and since the conjugation</p>
 <p>$$
-\tilde{U}(t)\,\tilde\Pi\,\tilde{U}(t)^{*} = \exp(-ih_0 t/\hbar)\tilde R\,\tilde\Pi\,\exp(+ih_0 t/\hbar)\tilde R^{*} = \tilde R\,\tilde\Pi\,\tilde R^{*}
+\tilde{U}(t)\,\tilde\Pi\,\tilde{U}(t)^{*} = \exp(-ih_0 t/\hbar)\tilde u\,\tilde\Pi\,\exp(+ih_0 t/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$</p>
-<p>(with $\tilde R = \cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_0 t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
-<p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:</p>
+<p>(with $\tilde u = \cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_0 t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
+<p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:</p>
 <p>$$
-\tilde{\rho}(t) = \tilde{U}(t)\,\tilde{\rho}(0)\,\tilde{U}(t)^{*}.
+\tilde{Ϛ}(t) = \tilde{U}(t)\,\tilde{Ϛ}(0)\,\tilde{U}(t)^{*}.
 $$</p>
 <p>This is the <strong>von Neumann equation</strong>, expressed as a rotor conjugation. In differential form, it is</p>
 <p>$$
-i\hbar\, \frac{d}{dt}\tilde{\rho}(t) = [\tilde{H}, \tilde{\rho}(t)],
+i\hbar\, \frac{d}{dt}\tilde{Ϛ}(t) = [\tilde{H}, \tilde{Ϛ}(t)],
 $$</p>
 <p>with the commutator defined in the biquaternion algebra.</p>
 <p><strong>Interpretation.</strong> The unitary $\tilde{U}(t)$ is an inner automorphism of the algebra: conjugation by a unitary biquaternion preserves multiplication. Its action on $\mathbb{M}_+$ keeps the scalar part fixed and rotates the imaginary vector part, giving the standard precession of a spin-1/2 in a magnetic field, expressed as the biquaternion rotation.</p>
@@ -307,36 +307,36 @@ $$</p>
 <p>In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same sesquilinear structure, the Hermitian form and its trace pairing.</p>
 <p><strong>Projective measurement.</strong> A projective measurement of $\tilde{H} = h_0 e_t + i\vec h$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$. The outcome $+$ has:</p>
 <ul>
-<li><strong>Probability</strong> $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{\rho})$, from the trace formula.</li>
-<li><strong>Post-measurement state</strong> $\tilde{\rho}' = \tilde\Pi_1$, from the sandwich operation.</li>
+<li><strong>Probability</strong> $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{Ϛ})$, from the trace formula.</li>
+<li><strong>Post-measurement state</strong> $\tilde{Ϛ}' = \tilde\Pi_1$, from the sandwich operation.</li>
 </ul>
 <p><strong>Generalized measurement.</strong> A general measurement is described by a set of <strong>Kraus operators</strong> $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^{*}\tilde{K}_i = e_t$. The action on a state is</p>
 <p>$$
-\tilde{\rho} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{\rho}\,\tilde{K}_i^{*},
+\tilde{Ϛ} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{Ϛ}\,\tilde{K}_i^{*},
 $$</p>
-<p>and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{\rho})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.</p>
+<p>and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{Ϛ})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.</p>
 <p><strong>A structural point.</strong> The <strong>reversible–irreversible distinction</strong> is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\tilde\Pi\tilde\Pi^{*} = \tilde\Pi \neq e_t$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.</p>
 <h2 id="purity-entropy-and-fidelity">Purity, Entropy, and Fidelity</h2>
 <h3 id="purity">Purity</h3>
-<p>The <strong>purity</strong> of a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ is</p>
+<p>The <strong>purity</strong> of a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ is</p>
 <p>$$
-\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
+\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
 $$</p>
 <p>which ranges from $\tfrac{1}{2}$ (maximally mixed, $\vec r = 0$) to $1$ (pure, $|\vec r| = 1$).</p>
 <h3 id="deviation-from-idempotency">Deviation from Idempotency</h3>
-<p>The deviation of $\tilde{\rho}$ from being idempotent is</p>
+<p>The deviation of $\tilde{Ϛ}$ from being idempotent is</p>
 <p>$$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_t.
+\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_t.
 $$</p>
-<p>So the mixedness of a state is captured by the scalar part of $\tilde{\rho}^2 - \tilde{\rho}$. Purity is the condition $\tilde{\rho}^2 = \tilde{\rho}$: the pure states are the fixed points of the squaring map.</p>
+<p>So the mixedness of a state is captured by the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. Purity is the condition $\tilde{Ϛ}^2 = \tilde{Ϛ}$: the pure states are the fixed points of the squaring map.</p>
 <h3 id="spectral-decomposition-and-entropy">Spectral Decomposition and Entropy</h3>
-<p>The <strong>spectral decomposition</strong> of $\tilde{\rho}$ is</p>
+<p>The <strong>spectral decomposition</strong> of $\tilde{Ϛ}$ is</p>
 <p>$$
-\tilde{\rho} = \lambda_+ \tilde\Pi_1(\vec u_r) + \lambda_- \tilde\Pi_2(\vec u_r),
+\tilde{Ϛ} = \lambda_+ \tilde\Pi_1(\vec u_r) + \lambda_- \tilde\Pi_2(\vec u_r),
 $$</p>
 <p>with $\vec u_r = \vec r/|\vec r|$ and $\lambda_\pm = (1 \pm |\vec r|)/2$. The <strong>von Neumann entropy</strong> is</p>
 <p>$$
-S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho}) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
+S(\tilde{Ϛ}) = -\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ}) = -\lambda_+ \log \lambda_+ - \lambda_- \log \lambda_-,
 $$</p>
 <p>which depends only on $|\vec r|$ and vanishes for pure states.</p>
 <h3 id="fidelity">Fidelity</h3>
@@ -350,7 +350,7 @@ $$</p>
 <h3 id="the-unitary-group">The Unitary Group</h3>
 <p>The <strong>unitary group</strong> $\mathrm{U}(2)$ acts on $\mathbb{M}_+$ by conjugation:</p>
 <p>$$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}, \qquad \tilde{U} \in \mathrm{U}(2).
+\tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}, \qquad \tilde{U} \in \mathrm{U}(2).
 $$</p>
 <p>This action preserves the Hermitian property and the trace, so it maps states to states and observables to observables.</p>
 <h3 id="unit-quaternions-and-spin-rotations">Unit Quaternions and Spin Rotations</h3>
@@ -366,7 +366,7 @@ $$</p>
 <p>The companion article listed ten structural requirements for a comprehensive quantum theory. We now assess the biquaternion framework against each.</p>
 <p><strong>1. State space.</strong> The states are the positive trace-one elements of $\mathbb{M}_+$, i.e., the Bloch ball. This is a canonical object of the algebra, not a postulate.</p>
 <p><strong>2. Observables.</strong> The observables are the Hermitian elements of $\mathbb{M}_+$. The spectral decomposition is in terms of idempotents. Each Hermitian element is the representative $iA$ of a <strong>material element</strong> $A\in\mathbb{M}_-$, the object observed; the readings are the eigenvalues of $iA$.</p>
-<p><strong>3. Born rule.</strong> The Born rule is the trace formula $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. It is a consequence of the trace pairing on $\mathbb{M}_+$, not an independent postulate.</p>
+<p><strong>3. Born rule.</strong> The Born rule is the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. It is a consequence of the trace pairing on $\mathbb{M}_+$, not an independent postulate.</p>
 <p><strong>4. Dynamics.</strong> The dynamics is generated by unitary biquaternions via rotor conjugation, with the Schrödinger equation for the unitary and the von Neumann equation for the state. This matches the standard formalism.</p>
 <p><strong>5. Measurement rule.</strong> Projective measurement and state update are expressed as algebraic operations: probability from the trace formula, state update from the sandwich operation. The reversible–irreversible distinction is algebraic (unitary vs. idempotent).</p>
 <p><strong>6. Composition rule.</strong> The tensor product of two qubits corresponds to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B} \cong M_4(\mathbb{C})$ (tensor product over $\mathbb{C}$, treating $\mathbb{B}$ as a $\mathbb{C}$-algebra), and the partial trace is defined in terms of the standard trace on the tensor product. This is a natural extension of the framework.</p>
@@ -407,7 +407,7 @@ $$</p>
 <p>$$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde{\Lambda}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1 .
 $$</p>
-<p>It lies on the <strong>norm-one hyperboloid</strong> of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $N = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,</p>
+<p>It lies on the <strong>norm-one hyperboloid</strong> of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $N = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,</p>
 <p>$$
 \tilde{\Lambda}\,\tfrac{1}{2}e_t\,\tilde{\Lambda}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u_{\mathrm b}\right),
 $$</p>
@@ -423,7 +423,7 @@ $$</p>
 <p><strong>What is standard QM, reformulated.</strong></p>
 <ul>
 <li>The qubit state space (Bloch ball) is recovered.</li>
-<li>The Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H})$.</li>
+<li>The Born rule is $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$.</li>
 <li>The unitary dynamics is rotor conjugation.</li>
 <li>The projective measurement rule is the sandwich operation.</li>
 <li>The spectral decomposition is in terms of idempotents.</li>
@@ -432,7 +432,7 @@ $$</p>
 <p><strong>What is structurally new or newly visible.</strong></p>
 <ol>
 <li>
-<p><strong>States and observables live in the same subspace.</strong> In the standard formalism the two are of different kinds — a normalized positive functional on one side, an operator on the other — or, in the density-matrix formulation, Hermitian matrices told apart by a trace and a positivity. In $\mathbb{M}_+$, both are elements of the same four-dimensional real subspace: the state is the trace-one positive element, the observable a general element, so the two families are nested rather than disjoint and a state is itself an observable. The positivity is the sector's norm condition $\langle\tilde\rho\rangle_{\natural} \geq 0$ on the trace-one slice. The object observed, however, lives one factor of $i$ away, in $\mathbb{M}_-$; it is a <strong>material element</strong>, and its <strong>observable</strong> is the Hermitian representative whose eigenvalues are the readings.</p>
+<p><strong>States and observables live in the same subspace.</strong> In the standard formalism the two are of different kinds — a normalized positive functional on one side, an operator on the other — or, in the density-matrix formulation, Hermitian matrices told apart by a trace and a positivity. In $\mathbb{M}_+$, both are elements of the same four-dimensional real subspace: the state is the trace-one positive element, the observable a general element, so the two families are nested rather than disjoint and a state is itself an observable. The positivity is the sector's norm condition $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ on the trace-one slice. The object observed, however, lives one factor of $i$ away, in $\mathbb{M}_-$; it is a <strong>material element</strong>, and its <strong>observable</strong> is the Hermitian representative whose eigenvalues are the readings.</p>
 </li>
 <li>
 <p><strong>The state space is canonical.</strong> The idempotents of $\mathbb{M}_+$ are canonical objects of the algebra; the Bloch sphere is their parametrization by $S^2$. The Bloch ball is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm.</p>
@@ -444,7 +444,7 @@ $$</p>
 <p><strong>Measurement is algebraic.</strong> The Born rule and state update are algebraic operations on $\mathbb{M}_+$. The reversible–irreversible distinction is a property of the acting element.</p>
 </li>
 <li>
-<p><strong>The positivity condition is a biquaternion-norm condition.</strong> The condition $|\vec r| \leq 1$ on states is equivalent to $\langle\tilde{\rho}\rangle_{\natural} \geq 0$. The "physical" constraint on states is a consequence of the quadratic form of the algebra.</p>
+<p><strong>The positivity condition is a biquaternion-norm condition.</strong> The condition $|\vec r| \leq 1$ on states is equivalent to $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$. The "physical" constraint on states is a consequence of the quadratic form of the algebra.</p>
 </li>
 <li>
 <p><strong>The symmetry group and observables share the same biquaternion space.</strong> The unitary elements of $\mathbb{B}$ act on $\mathbb{M}_+$ by conjugation; their generators lie in $\mathbb{M}_-$.</p>
@@ -464,7 +464,7 @@ $$</p>
 <p><strong>7. Empirical content.</strong> The reformulation reproduces standard quantum physics for a single qubit. Does it predict anything new, or does it only reinterpret? If it predicts new physics, at what scale does the deviation from standard QM appear?</p>
 <p><strong>8. The path integral.</strong> The standard path integral formulation of quantum physics is not obviously expressible in the biquaternion framework. Is there a natural path integral in the biquaternion algebra, with a natural measure inherited from the algebra?</p>
 <h2 id="summary">Summary</h2>
-<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra. The <strong>states</strong> are the positive trace-one elements of $\mathbb{M}_+$ (the Bloch ball), the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$, the <strong>dynamics</strong> is rotor conjugation by unitary biquaternions, and <strong>measurement</strong> is the sandwich operation $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$.</p>
+<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra. The <strong>states</strong> are the positive trace-one elements of $\mathbb{M}_+$ (the Bloch ball), the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$, the <strong>dynamics</strong> is rotor conjugation by unitary biquaternions, and <strong>measurement</strong> is the sandwich operation $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$.</p>
 <p>The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the trace pairing, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.</p>
 <p>The biquaternion space carries the structures the relativistic side reads — the bilinear ones, the spinor module, and the material sector of four-vectors, with the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$ — and the quantum formalism presented here and the relativistic structure coexist within the same biquaternion space. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in the companion article, and the quantization of the spinor field is a natural direction for future work.</p>
 <p>The extension to many qubits, the second-quantized version, the connection to quantum field theory, and the question of empirical content are open.</p>
@@ -498,7 +498,7 @@ $$</p>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$</td>
+<td>$\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$</td>
 <td>State</td>
 </tr>
 <tr>
@@ -510,7 +510,7 @@ $$</p>
 <td>Trace</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$</td>
+<td>$\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$</td>
 <td>Born rule</td>
 </tr>
 <tr>
@@ -526,7 +526,7 @@ $$</p>
 <td>Commutator</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$</td>
+<td>$\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$</td>
 <td>Projective measurement</td>
 </tr>
 <tr>
@@ -534,7 +534,7 @@ $$</p>
 <td>Unitary evolution</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}\tilde{U}(t)^{*}$</td>
+<td>$\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}\tilde{U}(t)^{*}$</td>
 <td>Von Neumann evolution</td>
 </tr>
 <tr>
@@ -542,11 +542,11 @@ $$</p>
 <td>Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\vec r|^2)$</td>
+<td>$\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$</td>
 <td>Purity</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2-1)e_t$</td>
+<td>$\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}(|\vec r|^2-1)e_t$</td>
 <td>Deviation from idempotency</td>
 </tr>
 <tr>

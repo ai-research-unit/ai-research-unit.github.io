@@ -59,7 +59,7 @@
 <li><strong>The biquaternion interpretation.</strong> The variable $\theta$ anticommutes with the algebra and commutes with nothing odd; the density matrix $|\theta\rangle\langle\theta|$ is an even element and hence a state in the sense of $\mathbb{M}_+$; the symbol $\langle\theta|H|\theta\rangle$ is the Grassmann-valued representative of an observable; and the thermal kernel is antiperiodic in imaginary time.</li>
 </ul>
 <p>The signs are the delicate part of any Grassmann construction, so every convention is stated at the point of use and every identity used below was recomputed in that convention.</p>
-<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; the module carries $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$. The Fock space is $\mathcal{F}=\Lambda S$ over the one-particle module $S=\mathbb{B}\tilde\varepsilon_+$. <strong>Grassmann conventions.</strong> To each mode belong two odd generators $\theta$ and $\theta^*$ with</p>
+<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; the module carries $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$. The Fock space is $\mathcal{F}=\Lambda S$ over the one-particle module $S=\mathbb{B}\tilde\Pi_+$. <strong>Grassmann conventions.</strong> To each mode belong two odd generators $\theta$ and $\theta^*$ with</p>
 <p>$$
 \theta^2=\theta^{*2}=0 ,
 \qquad
@@ -172,21 +172,21 @@ $$</p>
 $$</p>
 <p>a top-form element of the Grassmann algebra. The operator is even, its symbol is even, and its expectation in the state $|\theta\rangle$ is a Grassmann number rather than a number — the fermionic feature that makes coherent-state symbols <em>measures</em> rather than probability densities.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
-<p><strong>The labels extend the algebra; the states do not.</strong> The variable $\theta$ is not a biquaternion. It is an odd generator adjoined to the algebra, and the algebra's role in the construction is in the coefficients — the two-dimensional one-particle space $S=\mathbb{B}\tilde\varepsilon_+$ of the Fock-space article is a biquaternion module, and the analytic representation above is its realization as "polynomials of degree at most one". The coherent state as a <em>vector</em> is not a physical state: it has a component along the one-particle space with an odd weight, so it lies in the Grassmann-extended module and its components do not have a definite fermion number. The density matrix it defines,</p>
+<p><strong>The labels extend the algebra; the states do not.</strong> The variable $\theta$ is not a biquaternion. It is an odd generator adjoined to the algebra, and the algebra's role in the construction is in the coefficients — the two-dimensional one-particle space $S=\mathbb{B}\tilde\Pi_+$ of the Fock-space article is a biquaternion module, and the analytic representation above is its realization as "polynomials of degree at most one". The coherent state as a <em>vector</em> is not a physical state: it has a component along the one-particle space with an odd weight, so it lies in the Grassmann-extended module and its components do not have a definite fermion number. The density matrix it defines,</p>
 <p>$$
 \rho_\theta=|\theta\rangle\langle\theta| ,
 $$</p>
 <p>is even. An even operator in the finite Fock space is an element of the observable algebra, and its biquaternion transcription is a <strong>state</strong> in the framework's sense: the density matrices of the two-dimensional one-mode space are the two-by-two Hermitian matrices, a real four-dimensional space, and $\mathbb{M}_+$ is four-real-dimensional, so the identification is by dimension and by the trace,</p>
 <p>$$
-\tilde\rho_\theta\in\mathbb{M}_+ ,
+\tilde{Ϛ}_\theta\in\mathbb{M}_+ ,
 \qquad
-\tilde\rho_\theta=\tilde\rho_\theta^{*} ,
+\tilde{Ϛ}_\theta=\tilde{Ϛ}_\theta^{*} ,
 \qquad
-\mathrm{Tr}\,\tilde\rho_\theta=1 ,
+\mathrm{Tr}\,\tilde{Ϛ}_\theta=1 ,
 $$</p>
 <p>where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the <em>algebra</em> unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the trace pairing</p>
 <p>$$
-\langle O\rangle_\theta=\mathrm{Tr}(\tilde\rho_\theta O)=2\,\mathrm{Sc}(\tilde\rho_\theta O) .
+\langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
 $$</p>
 <p>This is the coherent-state content of the sector assignment used throughout: the field and the generators are in $\mathbb{M}_-$, the states and the observables in $\mathbb{M}_+$, and the Grassmann label rides outside the algebra entirely.</p>
 <p><strong>Parity.</strong> The extended algebra is $\mathbb{Z}/2$-graded, and the parity operator is the degree,
@@ -235,7 +235,7 @@ $$</p>
 $$</p>
 <p>and the trace formula is $\mathrm{Tr}\,O=\int d\theta^*d\theta\,\exp(-\theta^*\theta)\langle-\theta|O|\theta\rangle$, all in the stated Berezin convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the identity, $\sigma_z$ and $\sigma_x$ were recomputed in it and return $2,0,0$.</p>
 <p>In the analytic representation the Fock space becomes polynomials of degree at most one in the odd variable, with $a^{\mathrm{fop}}=\partial/\partial\theta^*$, $a^{\mathrm{fop}\dagger}=\theta^*\times$, the anticommutator $\{\partial/\partial\theta^*,\theta^*\}=\mathrm{id}$ verified on the general polynomial, and the inner product given by the Berezin integral with $\exp(-\theta^*\theta)$.</p>
-<p>The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and expectations given by $\mathrm{Tr}(\tilde\rho_\theta O)=2\,\mathrm{Sc}(\tilde\rho_\theta O)$; the parity is the label reflection $|\theta\rangle\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.</p>
+<p>The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and expectations given by $\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$; the parity is the label reflection $|\theta\rangle\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -302,7 +302,7 @@ $$</p>
 <td>State as an even algebra element</td>
 </tr>
 <tr>
-<td>$\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde\rho_\theta O)$</td>
+<td>$\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$</td>
 <td>Expectation as the trace pairing</td>
 </tr>
 <tr>

@@ -90,7 +90,7 @@ e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z \in Q_8/\{\pm e_t\} \cong \mathbb{Z}_2\time
 $$</p>
 <p>Each is unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by</p>
 <p>$$
-\tilde{\rho} = P_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{\rho}\,(\vec e_k\otimes e_t)^{*} .
+\tilde{Ϛ} = P_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}\,(\vec e_k\otimes e_t)^{*} .
 $$</p>
 <p>Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a <strong>local unitary of the algebra</strong>, and it preserves the spectrum, the trace, and the idempotency of the state.</p>
 <h3 id="the-permutation-of-the-bell-basis">The permutation of the Bell basis</h3>
@@ -139,9 +139,9 @@ $$</p>
 <h3 id="the-bell-measurement">The Bell measurement</h3>
 <p>Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities</p>
 <p>$$
-p_\epsilon = \mathrm{Tr}\bigl(\tilde{\rho}\,P_\epsilon\bigr),
+p_\epsilon = \mathrm{Tr}\bigl(\tilde{Ϛ}\,P_\epsilon\bigr),
 $$</p>
-<p>where $\tilde{\rho}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{\rho} = P_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and</p>
+<p>where $\tilde{Ϛ}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ} = P_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and</p>
 <p>$$
 p_\epsilon = \delta_{\epsilon,\epsilon(k)} ,
 $$</p>
@@ -163,11 +163,11 @@ $$</p>
 <li>The resource is <strong>consumed</strong>. After one use of the protocol Alice's qubit has been transmitted and both halves of the pair are in Bob's possession, so no entanglement remains distributed between the two parties; a fresh Bell pair must be shared before the protocol can be run again. The protocol uses up one ebit per two bits transmitted.</li>
 </ul>
 <h3 id="the-one-bit-ceiling-without-the-resource">The one-bit ceiling without the resource</h3>
-<p>For a single qubit the ceiling follows directly from the Holevo quantity. If Alice prepares an ensemble $\{p_x,\tilde{\rho}_x\}$ on one qubit, the accessible information is bounded by</p>
+<p>For a single qubit the ceiling follows directly from the Holevo quantity. If Alice prepares an ensemble $\{p_x,\tilde{Ϛ}_x\}$ on one qubit, the accessible information is bounded by</p>
 <p>$$
-\chi = S\Bigl(\sum_x p_x\tilde{\rho}_x\Bigr) - \sum_x p_x\,S(\tilde{\rho}_x) \ \leq\ S\Bigl(\sum_x p_x\tilde{\rho}_x\Bigr) \ \leq\ \log_2 2 = 1 \ \text{bit},
+\chi = S\Bigl(\sum_x p_x\tilde{Ϛ}_x\Bigr) - \sum_x p_x\,S(\tilde{Ϛ}_x) \ \leq\ S\Bigl(\sum_x p_x\tilde{Ϛ}_x\Bigr) \ \leq\ \log_2 2 = 1 \ \text{bit},
 $$</p>
-<p>because the von Neumann entropy of a qubit is at most one bit; for an ensemble of pure states the first inequality is an equality and the bound is $\chi = S(\tilde{\rho})\leq 1$. The reason is the dimension of the module: a qubit's defining module has complex dimension two, and at most two orthogonal rays can be accommodated, so at most one bit of perfectly distinguishable signal can be carried. With the shared pair, Bob's decoding space is the tensor-product module of dimension four, which holds four orthogonal codewords, hence two bits. The gain from entanglement is one bit, and it is exactly the logarithm of the ratio of the two module dimensions:</p>
+<p>because the von Neumann entropy of a qubit is at most one bit; for an ensemble of pure states the first inequality is an equality and the bound is $\chi = S(\tilde{Ϛ})\leq 1$. The reason is the dimension of the module: a qubit's defining module has complex dimension two, and at most two orthogonal rays can be accommodated, so at most one bit of perfectly distinguishable signal can be carried. With the shared pair, Bob's decoding space is the tensor-product module of dimension four, which holds four orthogonal codewords, hence two bits. The gain from entanglement is one bit, and it is exactly the logarithm of the ratio of the two module dimensions:</p>
 <p>$$
 2\ \text{bits} - 1\ \text{bit} = \log_2 4 - \log_2 2 = 1\ \text{bit}.
 $$</p>
@@ -261,7 +261,7 @@ $$</p>
 <td>Joint eigenvalues</td>
 </tr>
 <tr>
-<td>$(\vec e_k\otimes e_t)\tilde{\rho}(\vec e_k\otimes e_t)^{*}$</td>
+<td>$(\vec e_k\otimes e_t)\tilde{Ϛ}(\vec e_k\otimes e_t)^{*}$</td>
 <td>Local encoding operation</td>
 </tr>
 <tr>
@@ -269,7 +269,7 @@ $$</p>
 <td>Orthogonality of codewords</td>
 </tr>
 <tr>
-<td>$p_\epsilon = \mathrm{Tr}(\tilde{\rho}P_\epsilon)$</td>
+<td>$p_\epsilon = \mathrm{Tr}(\tilde{Ϛ}P_\epsilon)$</td>
 <td>Decoding probabilities (Born rule)</td>
 </tr>
 <tr>

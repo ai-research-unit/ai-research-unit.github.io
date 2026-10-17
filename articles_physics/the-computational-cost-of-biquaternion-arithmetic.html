@@ -113,7 +113,7 @@ $$</p>
 <p>The naive scheme therefore costs sixteen complex multiplications, or <strong>sixty-four real multiplications</strong>, for a product with all eight components active. On the real-quaternion slice the same scheme costs $4\times4 = 16$ real multiplications, and on the antiquaternion slice the purely imaginary coefficients can be multiplied as real numbers, again sixteen. The naive count is the baseline against which the next section's algorithm is measured.</p>
 <h2 id="the-bilinear-product-sixty-four-to-twenty-four">The Bilinear Product: Sixty-Four to Twenty-Four</h2>
 <p>The reduction rests on writing the four coefficients of the product as fixed linear combinations of <strong>eight</strong> products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,\mathsf{M}_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.</p>
-<p>In the corpus's basis the scheme reads as follows. Let $\tilde{M} = M_0e_t + \dots + M_3\vec e_z$ and $\tilde{N} = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be</p>
+<p>In the corpus's basis the scheme reads as follows. Let $\tilde Q_1 = M_0e_t + \dots + M_3\vec e_z$ and $\tilde Q_2 = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be</p>
 <p>$$
 H_1 = (M_0+M_1+\mathsf{M}_2+M_3)(N_0+N_1+N_2+N_3),
 $$
@@ -126,7 +126,7 @@ $$
 $$
 H_4 = (M_0-M_1-\mathsf{M}_2+M_3)(N_0-N_1-N_2+N_3),
 $$</p>
-<p>and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product satisfy</p>
+<p>and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy</p>
 <p>$$
 4Q_t = 8P_{00} - (H_1+H_2+H_3+H_4),
 $$
@@ -226,7 +226,7 @@ $$</p>
 <h2 id="the-cost-in-the-frameworks-terms">The Cost in the Framework's Terms</h2>
 <p>The two splits of the algebra do not align, and the arithmetic makes the misalignment concrete.</p>
 <p>The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ cuts across it, as <em>Conventions in the Biquaternion Universe</em> records: an element of $\mathbb{M}_-$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore <strong>not</strong> automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.</p>
-<p>The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, is the Born rule; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.</p>
+<p>The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the Born rule; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.</p>
 <p>Beyond the trace and the block structure, the framework enters the cost accounting only through the problem's symmetry. The source's whole construction rests on the fact, developed in the corpus's articles on Kramers degeneracy, that in a time-reversal symmetric problem the Hamiltonian is real-quaternion and in a time-reversal antisymmetric problem it is purely imaginary-quaternion; and it is precisely those two restricted classes that the eight-multiplication regime serves. A problem with both, such as a magnetic perturbation or an open-shell non-collinear system, is the twenty-four-multiplication case. The cost therefore organises itself along the corpus's symmetry classes rather than along its sectors.</p>
 <h2 id="the-benchmarks">The Benchmarks</h2>
 <p>The source measures a library, not a theorem, and the numbers below are its own on a single NVIDIA H200 system, with the corresponding runs on A100 and GH200 systems reported in its appendix. The multiplication kernel is the bilinear scheme of this article for the biquaternion library, against an isomorphic complex-matrix library of the same package, at matrix dimension $N = 44000$ with all components active:</p>

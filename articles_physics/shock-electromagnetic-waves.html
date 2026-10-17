@@ -59,14 +59,14 @@
 <li><strong>Plasma electrodynamics.</strong> In a plasma, the coupling of the electromagnetic field to the charged matter can produce nonlinear behavior. Shock-like electromagnetic structures are observed in astrophysical and laboratory plasmas.</li>
 </ol>
 <p>This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.</p>
-<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\tilde{\nabla}^{\natural}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
+<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
 <h2 id="why-linear-vacuum-maxwell-has-no-shocks">Why Linear Vacuum Maxwell Has No Shocks</h2>
 <h3 id="the-linear-structure">The Linear Structure</h3>
 <p>The biquaternionic Maxwell equation in vacuum is</p>
 <p>$$
-\tilde{\nabla} \tilde{F} = -\tilde{R},
+\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J},
 $$</p>
-<p>where $\tilde{R}$ is the source and $\tilde{F}$ is the field-strength biquaternion. In the absence of sources, $\tilde{R} = 0$, and the equation is</p>
+<p>where $\tilde J$ is the four-current and $\tilde{F}$ is the field-strength biquaternion. In the absence of sources, $\tilde J = 0$, and the equation is</p>
 <p>$$
 \tilde{\nabla} \tilde{F} = 0.
 $$</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>where $\{\partial/\partial Q_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.</p>
 <h3 id="the-jump-condition">The Jump Condition</h3>
-<p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ in a homogeneous medium, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
+<p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ in a homogeneous medium, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
 <p>$$
 \tilde{n}\,[\tilde{F}]_S = 0.
 $$</p>
@@ -140,11 +140,11 @@ $$</p>
 $$</p>
 <p>The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\vec u,[\vec B]) = 0$ and the front is transverse, exactly as in the light-cone condition above. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.</p>
 <h2 id="the-joint-jump-conditions-and-transversality">The Joint Jump Conditions and Transversality</h2>
-<p>The wave-front condition is compact in the biquaternionic variable, but its content on the electric and magnetic fields is a <strong>joint jump system</strong>. Write the A-field of the Maxwell article,</p>
+<p>The wave-front condition is compact in the biquaternionic variable, but its content on the electric and magnetic fields is a <strong>joint jump system</strong>. Write the field strength,</p>
 <p>$$
-\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F},
-$$</p>
-<p>the dual field strength. On a wave front $F_t$ moving with unit normal $\vec u$ at speed $c$, the condition $[\tilde{F}]_{F_t} = -i[\tilde{F}]_{F_t}\times\vec u$ is equivalent to the pair</p>
+\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
+$$
+ On a wave front $F_t$ moving with unit normal $\vec u$ at speed $c$, the condition $[\tilde{F}]_{F_t} = -i[\tilde{F}]_{F_t}\times\vec u$ is equivalent to the pair</p>
 <p>$$
 \sqrt{\epsilon}\,[\vec E]_{F_t} = \sqrt{\mu}\,[\vec H]_{F_t}\times\vec u,
 \qquad
@@ -152,8 +152,8 @@ $$</p>
 $$</p>
 <p>The two are not independent: each follows from the other together with transversality. Three corollaries make the geometry explicit.</p>
 <ul>
-<li><strong>No surface charge.</strong> Taking the inner product with $\vec u$ gives $([\mathcal{A}]_{F_t},\vec u) = 0$, hence $([\vec E]_{F_t},\vec u) = 0$ and $([\vec H]_{F_t},\vec u) = 0$: the normal components are continuous across the front, and no surface charge sits on it.</li>
-<li><strong>Transversality.</strong> If the field ahead of the front vanishes, then $\vec E$, $\vec H$ and $\vec u$ are pairwise orthogonal: both jumps lie in the tangent plane of the front, and the Poynting vector is parallel to the wave vector. This is the sense in which the strong shocks of the A-field equation are transverse.</li>
+<li><strong>No surface charge.</strong> Taking the inner product with $\vec u$ gives $([\tilde F]_{F_t},\vec u) = 0$, hence $([\vec E]_{F_t},\vec u) = 0$ and $([\vec H]_{F_t},\vec u) = 0$: the normal components are continuous across the front, and no surface charge sits on it.</li>
+<li><strong>Transversality.</strong> If the field ahead of the front vanishes, then $\vec E$, $\vec H$ and $\vec u$ are pairwise orthogonal: both jumps lie in the tangent plane of the front, and the Poynting vector is parallel to the wave vector. This is the sense in which the strong shocks of the field equation are transverse.</li>
 <li><strong>Electric and magnetic jumps vanish together.</strong> $[\vec E]_{F_t} = 0$ if and only if $[\vec H]_{F_t} = 0$; an electric discontinuity cannot occur without a magnetic one.</li>
 </ul>
 <p>The energy carried across the front satisfies the jump relation</p>
@@ -162,13 +162,13 @@ $$</p>
 $$</p>
 <p>which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S$.</p>
 <h3 id="the-shock-waves-of-the-chargecurrent-field">The Shock Waves of the Charge–Current Field</h3>
-<p>The A-field is not the only object whose discontinuities the programme considers. The <strong>charge–current field</strong> $\tilde J = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are <strong>not</strong> transverse in general. In a free field that field obeys the first-order system</p>
+<p>The field strength is not the only object whose discontinuities the programme considers. The <strong>charge–current field</strong> $\tilde J_{\mathrm{eg}} = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are <strong>not</strong> transverse in general. In a free field that field obeys the first-order system</p>
 <p>$$
 \partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0,
 \qquad
 \nabla\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$</p>
-<p>which is the scalar and vector part of $D^-\tilde J = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the <strong>simple</strong> null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:</p>
+<p>which is the scalar and vector part of $D^-\tilde J_{\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the <strong>simple</strong> null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:</p>
 <p>$$
 [\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),
 \qquad
@@ -177,10 +177,10 @@ $$</p>
 <p>The second relation fixes the tangential jumps, and its inner product with $\vec m$ recovers the first, so the pair is consistent (checked numerically). The geometric conclusion is immediate:</p>
 <ul>
 <li><strong>The shocks are generally not transverse.</strong> Taking the inner product of the second relation with $\vec m$ gives $(\vec m, [\vec J]_{F_\tau}) = [\rho]_{F_\tau}$: the longitudinal part of the current jump equals the charge jump. A nonzero charge jump therefore puts a longitudinal component into $[\vec J]_{F_\tau}$.</li>
-<li><strong>They are transverse exactly when the charge is continuous.</strong> If $[\rho]_{F_\tau} = 0$, the pair reduces to $(\vec m,[\vec J]_{F_\tau}) = 0$ together with $[\vec J]_{F_\tau} = -i\,\vec m\times[\vec J]_{F_\tau}$, which is the transverse wave-front condition of the A-field.</li>
+<li><strong>They are transverse exactly when the charge is continuous.</strong> If $[\rho]_{F_\tau} = 0$, the pair reduces to $(\vec m,[\vec J]_{F_\tau}) = 0$ together with $[\vec J]_{F_\tau} = -i\,\vec m\times[\vec J]_{F_\tau}$, which is the transverse wave-front condition of the field.</li>
 </ul>
-<p>The contrast with the A-field is the point, and the source states it explicitly: strong A-field shocks are transverse, while the shocks of the charge–current field are not, unless the charge jump vanishes. The jump conditions and the roots are recorded here as the external programme's, in the same sense as the rest of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>; the free system and the two relations above were recomputed, and the derivation from the distributional system is the source's.</p>
-<p>The A-field's own fronts acquire a longitudinal term once the programme restores its scalar field. Taking the field as the scalar $\alpha$ plus the vector part, the jump conditions gain a term fixed by the scalar jump, and the wave fronts are transverse <strong>exactly when the scalar field is continuous</strong>: $[\alpha]_{F_\tau} = 0$ recovers the transverse conditions above, while a non-zero $[\alpha]_{F_\tau}$ puts a longitudinal component into the field jump, the normal components of $[\vec E]$ and $[\vec H]$ being the jumps of the two real parts of $\alpha$. The conditions, and their interpretation as the programme's attraction–resistance field, are recorded in <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>; the classical case is the one above, with $\alpha$ absent.</p>
+<p>The contrast with the field is the point, and the source states it explicitly: strong field shocks are transverse, while the shocks of the charge–current field are not, unless the charge jump vanishes. The jump conditions and the roots are recorded here as the external programme's, in the same sense as the rest of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>; the free system and the two relations above were recomputed, and the derivation from the distributional system is the source's.</p>
+<p>The field's own fronts acquire a longitudinal term once the programme restores its scalar field. Taking the field as the scalar $\alpha$ plus the vector part, the jump conditions gain a term fixed by the scalar jump, and the wave fronts are transverse <strong>exactly when the scalar field is continuous</strong>: $[\alpha]_{F_\tau} = 0$ recovers the transverse conditions above, while a non-zero $[\alpha]_{F_\tau}$ puts a longitudinal component into the field jump, the normal components of $[\vec E]$ and $[\vec H]$ being the jumps of the two real parts of $\alpha$. The conditions, and their interpretation as the programme's attraction–resistance field, are recorded in <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>; the classical case is the one above, with $\alpha$ absent.</p>
 <h2 id="shock-formation-in-nonlinear-media">Shock Formation in Nonlinear Media</h2>
 <p>Shock electromagnetic waves <strong>do</strong> occur in nonlinear media. The mechanism is the same as in fluid dynamics: the nonlinearity causes the wave speed to depend on the field amplitude, and this dependence causes the wave profile to steepen.</p>
 <h3 id="nonlinear-constitutive-relations">Nonlinear Constitutive Relations</h3>
@@ -253,22 +253,22 @@ $$</p>
 <h2 id="the-biquaternionic-formulation-of-shock-fronts">The Biquaternionic Formulation of Shock Fronts</h2>
 <p>The biquaternion framework can be applied to shock fronts in nonlinear media and plasmas, in the following way.</p>
 <h3 id="the-generalized-source">The Generalized Source</h3>
-<p>The nonlinearity of the medium can be absorbed into an effective source $\tilde{R}_{\mathrm{eff}}$. The biquaternionic Maxwell equation becomes</p>
+<p>The nonlinearity of the medium can be absorbed into an effective four-current $\tilde J_{\mathrm{eff}}$, which enters the equation multiplied by $\sqrt{\mu}$. The biquaternionic Maxwell equation becomes</p>
 <p>$$
-\tilde{\nabla}\tilde{F} = -\tilde{R}_{\mathrm{eff}},
+\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\mathrm{eff}},
 $$</p>
-<p>where $\tilde{R}_{\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde{R}_{\mathrm{eff}} \to \tilde{R}$; in a linear medium, $\tilde{R}_{\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.</p>
-<h3 id="the-shock-as-a-jump-in-math169">The Shock as a Jump in $\tilde{R}_{\mathrm{eff}}$</h3>
-<p>A shock front is a surface $S$ across which the effective source $\tilde{R}_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:</p>
+<p>where $\tilde J_{\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde J_{\mathrm{eff}} \to \tilde J$; in a linear medium, $\tilde J_{\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.</p>
+<h3 id="the-shock-as-a-jump-in-math170">The Shock as a Jump in $\tilde J_{\mathrm{eff}}$</h3>
+<p>A shock front is a surface $S$ across which the effective four-current $\tilde J_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ is continuous across } S,
+\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde J_{\mathrm{eff}} \text{ is continuous across } S,
 $$</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ jumps across } S.
+\tilde{n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\mathrm{eff}}]_S \quad \text{when } \tilde J_{\mathrm{eff}} \text{ jumps across } S.
 $$</p>
-<p>In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
+<p>In the linear vacuum case, $\tilde J_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\sqrt{\mu}\,\tilde{J}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
 <h3 id="the-characteristic-structure">The Characteristic Structure</h3>
-<p>The characteristic equation of the nonlinear biquaternionic equation is more complex than in the linear case. It depends on the effective source $\tilde{R}_{\mathrm{eff}}$, which depends on $\tilde{F}$ itself. The characteristics are no longer the light cone; they are the <strong>nonlinear characteristics</strong> of the medium.</p>
+<p>The characteristic equation of the nonlinear biquaternionic equation is more complex than in the linear case. It depends on the effective four-current $\tilde J_{\mathrm{eff}}$, which depends on $\tilde{F}$ itself. The characteristics are no longer the light cone; they are the <strong>nonlinear characteristics</strong> of the medium.</p>
 <p>The precise form of the characteristics, and the resulting shock structure, depends on the specific nonlinearity. This is the subject of ongoing research in nonlinear optics and plasma physics, and the biquaternionic formulation provides a compact language for expressing it.</p>
 <h2 id="the-energy-jump-across-a-shock-front">The Energy Jump Across a Shock Front</h2>
 <p>For a shock front in a nonlinear medium, the <strong>energy</strong> of the electromagnetic field is not conserved across the shock: some of the energy is dissipated into the medium. The jump in the biquaternionic energy–momentum is related to the flux of energy–momentum across the front.</p>
@@ -316,7 +316,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Shock electromagnetic waves are not a feature of linear Maxwell equations in vacuum. The linearity of the equations, together with the constancy of the wave speed, prevents the formation of discontinuities from smooth initial data. Smooth data produces smooth solutions for all time.</p>
 <p>Shock electromagnetic waves <strong>are</strong> a feature of nonlinear media and plasmas. In a Kerr medium, the intensity-dependent refractive index causes the wave profile to steepen, and a shock forms in finite time. In a plasma, the coupling of the electromagnetic field to the charged matter produces a rich variety of shock structures.</p>
-<p>The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\vec u$ unpacks into a joint jump system for $\vec E$ and $\vec H$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\vec u,[\vec P])$ closing the distributional conservation law. The <strong>charge–current field</strong> $\tilde J = i\rho + \vec J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally <strong>not</strong> transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.</p>
+<p>The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\vec u$ unpacks into a joint jump system for $\vec E$ and $\vec H$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\vec u,[\vec P])$ closing the distributional conservation law. The <strong>charge–current field</strong> $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally <strong>not</strong> transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.</p>
 <p>The treatment of shock electromagnetic waves in the biquaternion framework is therefore a treatment of the <strong>linear skeleton</strong> of a nonlinear theory. It describes the geometry of the shock front and the conservation laws that the shock must satisfy, but it does not describe the nonlinear dynamics that creates the shock. That dynamics is the subject of nonlinear optics and plasma physics, and the biquaternion framework provides a natural language for expressing it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -352,11 +352,7 @@ $$</p>
 <td>Jump of $\tilde{F}$ across the surface $S$</td>
 </tr>
 <tr>
-<td>$\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$</td>
-<td>A-field (dual field strength)</td>
-</tr>
-<tr>
-<td>$\tilde J = i\rho + \vec J$</td>
+<td>$\tilde J_{\mathrm{eg}} = i\rho + \vec J$</td>
 <td>Charge–current biquaternion of the electro-gravimagnetic programme</td>
 </tr>
 <tr>
@@ -380,8 +376,8 @@ $$</p>
 <td>Unit normal to the wave front, in the direction of motion</td>
 </tr>
 <tr>
-<td>$\tilde{R}_{\mathrm{eff}}$</td>
-<td>Effective source including nonlinear medium response</td>
+<td>$\tilde J_{\mathrm{eff}}$</td>
+<td>Effective four-current including nonlinear medium response</td>
 </tr>
 </tbody>
 </table></div>
