@@ -51,9 +51,9 @@ the algebra.
 ## The Definition
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$. A nonzero
-element $\tilde Q$ is a **left zero divisor of $\star$** when there is a nonzero $\tilde R$ with
-$\tilde Q\star\tilde R = 0$; a **right zero divisor of $\star$** when there is a nonzero $\tilde R$
-with $\tilde R\star\tilde Q = 0$; and a **zero divisor of $\star$** when it is a left zero divisor
+element $\tilde Q$ is a **left zero divisor of $\star$** when there is a nonzero $\tilde Q_2$ with
+$\tilde Q\star\tilde Q_2 = 0$; a **right zero divisor of $\star$** when there is a nonzero $\tilde Q_2$
+with $\tilde Q_2\star\tilde Q = 0$; and a **zero divisor of $\star$** when it is a left zero divisor
 or a right zero divisor. The equation and the pair both name the product, so the notion is relative
 to it; the general definition, with the two-sided reading, is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
@@ -73,16 +73,16 @@ $$
 C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = 0 .
 $$
 
-**Proof.** The product is $\tilde Q\star\tilde R = \tilde Q^{\natural}\tilde R^{*}$. An element
-$\tilde R$ runs through $\mathbb{B}$ exactly when $\tilde R^{*}$ does, because ${}^{*}$ is a
-bijection, so the existence of a nonzero $\tilde R$ with $\tilde Q\star\tilde R = 0$ is the
+**Proof.** The product is $\tilde Q\star\tilde Q_2 = \tilde Q^{\natural}\tilde Q_2^{*}$. An element
+$\tilde Q_2$ runs through $\mathbb{B}$ exactly when $\tilde Q_2^{*}$ does, because ${}^{*}$ is a
+bijection, so the existence of a nonzero $\tilde Q_2$ with $\tilde Q\star\tilde Q_2 = 0$ is the
 existence of a nonzero $\tilde Q_1$ with $\tilde Q^{\natural}\tilde Q_1 = 0$, that is,
-$\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Q_1 = \tilde R^{*}$.
+$\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Q_1 = \tilde Q_2^{*}$.
 The zero-divisor criterion of the plain algebra says that this happens exactly when
 $C(\tilde Q^{\natural}) = 0$, and the natural conjugation keeps the three vector squares and the
 scalar square, so $C(\tilde Q^{\natural}) = Q_t^2 + \sum_k Q_k^2 = C(\tilde Q)$. The left statement
-follows; the right statement is the same computation with $\tilde R^{\natural}\tilde Q^{*} = 0$,
-which for varying $\tilde R$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;
+follows; the right statement is the same computation with $\tilde Q_2^{\natural}\tilde Q^{*} = 0$,
+which for varying $\tilde Q_2$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;
 the plain criterion applied to $\tilde Q^{*}$ gives back one condition because
 $C(\tilde Q^{*}) = \overline{C(\tilde Q)}$ vanishes exactly when $C(\tilde Q)$ does. The two
 conditions are one, which is the statement.
@@ -94,10 +94,10 @@ the square of a zero divisor need not vanish at all.
 
 **Example.** The element $\tilde Q = \vec e_x + i\vec e_y$ has $\vec Q = \vec e_x + i\vec e_y$, so
 $C(\tilde Q) = 1 + i^2 = 0$ and it is a zero divisor. Its left partner is the element
-$\tilde R = ie_t - \vec e_z$, for which
+$\tilde Q_2 = ie_t - \vec e_z$, for which
 
 $$
-\tilde Q\star\tilde R = (\vec e_x+i\vec e_y)^{\natural}(ie_t-\vec e_z)^{*} = (-\vec e_x-i\vec e_y)(-ie_t+\vec e_z) = 0 ,
+\tilde Q\star\tilde Q_2 = (\vec e_x+i\vec e_y)^{\natural}(ie_t-\vec e_z)^{*} = (-\vec e_x-i\vec e_y)(-ie_t+\vec e_z) = 0 ,
 $$
 
 and its square is
@@ -187,7 +187,7 @@ cones are the same subset of $\mathbb{B}$.
 namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 and it holds for the left and the right reading separately.
 
-**Proof.** The four products are $\theta(\tilde Q)\phi(\tilde R)$ with
+**Proof.** The four products are $\theta(\tilde Q)\phi(\tilde Q_2)$ with
 $\theta \in \{\mathrm{id}, {}^{\natural}\}$ and $\phi \in \{\mathrm{id}, {}^{*}\}$, and both
 $\theta$ and $\phi$ are bijections preserving the vanishing of the central square, so the plain
 criterion transfers to each of the four. The general-argument form is in the cited article.
@@ -213,7 +213,7 @@ $\tilde Q\star\tilde Q = 0$ is a zero divisor of $\star$, and the square-zero el
 proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family.
 
 **Proof.** If $\tilde Q\star\tilde Q = 0$ then $\tilde Q$ is a zero divisor with
-$\tilde R = \tilde Q$. The identification with the family $c(\vec u + i)$, its dimension and its
+$\tilde Q_2 = \tilde Q$. The identification with the family $c(\vec u + i)$, its dimension and its
 non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements

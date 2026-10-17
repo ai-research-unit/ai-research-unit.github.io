@@ -43,7 +43,7 @@ Every class below is defined by an equation whose symbol is the product, so the 
 
 **Principle (relativity).** Let $\star$ be a product and let $\mathcal E_\star(x)$ be any equation in the element $x$ whose only operation is $\star$ and whose constants are fixed elements or scalars. The class of solutions of $\mathcal E_\star$ depends on $\star$: replacing the product replaces the equation and can replace the class.
 
-The definitions of this article are all of that form — $\tilde Q\star\tilde R=0$ for the zero divisor, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ for the idempotent, $\tilde\Upsilon\star\tilde\Upsilon=0$ for the nilpotent, and so on — and none of them is a property of the element alone. The word is therefore always read with *of*: a zero divisor **of** $\star$, an idempotent **of** $\star$. Two products may select the same class and two may not, and when they do not the difference is a computation, of which §9 gives the table for the four general products.
+The definitions of this article are all of that form — $\tilde Q\star\tilde Q_2=0$ for the zero divisor, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ for the idempotent, $\tilde\Upsilon\star\tilde\Upsilon=0$ for the nilpotent, and so on — and none of them is a property of the element alone. The word is therefore always read with *of*: a zero divisor **of** $\star$, an idempotent **of** $\star$. Two products may select the same class and two may not, and when they do not the difference is a computation, of which §9 gives the table for the four general products.
 
 ### Transport Along an Isomorphism
 
@@ -86,9 +86,9 @@ The general reading, for an associative unital algebra, is *Unital Algebras*; th
 
 ## 3. The Zero Divisor and the Annihilator
 
-**Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a **right zero divisor of $\star$** when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; and a **zero divisor of $\star$** when it is one or the other. It is a **two-sided zero divisor of $\star$** when it is both.
+**Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ and there is a nonzero $\tilde Q_2$ with $\tilde Q\star\tilde Q_2=0$; a **right zero divisor of $\star$** when $\tilde Q\neq0$ and there is a nonzero $\tilde Q_2$ with $\tilde Q_2\star\tilde Q=0$; and a **zero divisor of $\star$** when it is one or the other. It is a **two-sided zero divisor of $\star$** when it is both.
 
-Both elements are required to be nonzero, and that is essential: the origin is not a zero divisor of any product, even though $0\star\tilde R=0$ for every $\tilde R$.
+Both elements are required to be nonzero, and that is essential: the origin is not a zero divisor of any product, even though $0\star\tilde Q_2=0$ for every $\tilde Q_2$.
 
 **Definition (annihilator).** Let $\star$ be a product and let $\tilde Q$ be a zero divisor of $\star$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in $\star$ are the sets
 $$
@@ -98,7 +98,7 @@ They are the kernels of the two one-sided multiplications of §7, they are nonze
 
 **Definition (regular element).** An element of a unital product that is neither a left nor a right zero divisor is **regular**.
 
-Written on the four general products, the definition of a left zero divisor is one of $\tilde Q\tilde R=0$, $\tilde Q^{\natural}\tilde R=0$, $\tilde Q\tilde R^{*}=0$, $\tilde Q^{\natural}\tilde R^{*}=0$, and the definition of a right zero divisor is the same with the factors exchanged. The eight equations are the four definitions, and the equation is the whole of the definition. For the biquaternion algebra the four definitions select one and the same set,
+Written on the four general products, the definition of a left zero divisor is one of $\tilde Q\tilde Q_2=0$, $\tilde Q^{\natural}\tilde Q_2=0$, $\tilde Q\tilde Q_2^{*}=0$, $\tilde Q^{\natural}\tilde Q_2^{*}=0$, and the definition of a right zero divisor is the same with the factors exchanged. The eight equations are the four definitions, and the equation is the whole of the definition. For the biquaternion algebra the four definitions select one and the same set,
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$

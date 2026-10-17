@@ -28,7 +28,7 @@ $\mathbb{C}$-linear map
 
 $$
 L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
-L^{\star}_{\tilde A}\tilde R = \tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{\natural}\,e_t .
+L^{\star}_{\tilde A}\tilde Q_1 = \tilde A\star\tilde Q_1 = \langle\tilde A,\tilde Q_1\rangle_{\natural}\,e_t .
 $$
 
 Because the product is commutative the right multiplication coincides with it,
@@ -61,13 +61,13 @@ the two readings apart: the diagonal $\langle\tilde Q\rangle_{\natural}$ is mult
 every element on both sides,
 
 $$
-\operatorname{Rad}(\star) = \{\tilde A\in\mathbb{B}: \tilde A\star\tilde R=0 \text{ and }
-\tilde R\star\tilde A=0 \text{ for every } \tilde R\in\mathbb{B}\}
+\operatorname{Rad}(\star) = \{\tilde A\in\mathbb{B}: \tilde A\star\tilde Q_1=0 \text{ and }
+\tilde Q_1\star\tilde A=0 \text{ for every } \tilde Q_1\in\mathbb{B}\}
 = \{\tilde A\in\mathbb{B}: L^{\star}_{\tilde A}=0\}.
 $$
 
 Because the operation is commutative the two-sided and the one-sided definitions agree, and the radical is the
-common kernel of the left multiplications, $\bigcap_{\tilde R}\ker L^{\star}_{\tilde R}=\{\tilde A: \langle\tilde A,\tilde R\rangle_{\natural}=0 \text{ for all } \tilde R\}$.
+common kernel of the left multiplications, $\bigcap_{\tilde Q_1}\ker L^{\star}_{\tilde Q_1}=\{\tilde A: \langle\tilde A,\tilde Q_1\rangle_{\natural}=0 \text{ for all } \tilde Q_1\}$.
 
 **Theorem (the radical is trivial).** $\operatorname{Rad}(\star)=\{0\}$: the only element annihilated by the
 whole algebra is $0$.
@@ -75,7 +75,7 @@ whole algebra is $0$.
 *Proof.* $\langle\cdot\rangle_{\natural}$ is the standard symmetric form of $\mathbb{C}^4$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose Gram
 matrix is $I_4$; a form with invertible Gram matrix has no nonzero element paired to zero with the whole
 space. Concretely $\tilde A\star e_t=A_te_t$ and $\tilde A\star \vec e_\mu=A_\mu e_t$ for $\mu\in\{x,y,z\}$, so
-$\tilde A\star\tilde R=0$ for all $\tilde R$ forces $A_t=A_x=A_y=A_z=0$.
+$\tilde A\star\tilde Q_1=0$ for all $\tilde Q_1$ forces $A_t=A_x=A_y=A_z=0$.
 
 **Corollary (the operation is not the zero operation, and it is non-degenerate as a form).** The operation is
 nonzero — $\langle e_t,e_t\rangle_{\natural}=1$ — and the form $\langle\cdot\rangle_{\natural}$ is non-degenerate, of rank $4$ over $\mathbb{C}$ and of Gram
@@ -115,7 +115,7 @@ $\tilde Q=\vec e_x+i\vec e_y$ the norm is $N=1+i^2=0$ as well, and the element i
 vector subspace. For $\tilde Q=\vec e_x+\vec e_y+\vec e_z$ the norm is $N=1+1+1=3\ne0$, and the element is not isotropic.
 
 **Remark (isotropy is not the vanishing of the value).** An element with $\langle\tilde Q\rangle_{\natural}=0$ still multiplies
-nonzero elements to nonzero values: the product $\tilde Q\star\tilde R=\langle\tilde Q,\tilde R\rangle_{\natural}e_t$ can be
+nonzero elements to nonzero values: the product $\tilde Q\star\tilde Q_1=\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t$ can be
 nonzero even when $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, because the form is indefinite and not positive. The isotropy of
 $\langle\cdot\rangle_{\natural}$ is the vanishing of the form on one direction, and it is the diagonal that reads it; the radical, by
 contrast, is the vanishing on all directions, and it is trivial. Isotropy is a property of each element, and
@@ -140,36 +140,36 @@ multiplication of $\mathbb{C}$ by the proposition of *Introduction to the Symmet
 Biquaternions*.
 
 **Proposition (the associative law does not collapse).** The operation is not associative: at
-$\tilde P=\tilde Q=\vec e_x$, $\tilde R=e_t$ the two bracketings are
+$\tilde P=\tilde Q=\vec e_x$, $\tilde Q_1=e_t$ the two bracketings are
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R = e_t, \qquad
-\tilde P\star(\tilde Q\star\tilde R) = 0 ,
+(\tilde P\star\tilde Q)\star\tilde Q_1 = e_t, \qquad
+\tilde P\star(\tilde Q\star\tilde Q_1) = 0 ,
 $$
 
 so the associator is the nonzero element $e_t$. The general associator is
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)
-= \Bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t - P_t\langle\tilde Q,\tilde R\rangle_{\natural}\Bigr)e_t .
+(\tilde P\star\tilde Q)\star\tilde Q_1-\tilde P\star(\tilde Q\star\tilde Q_1)
+= \Bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t - P_t\langle\tilde Q,\tilde Q_1\rangle_{\natural}\Bigr)e_t .
 $$
 
-*Proof.* $(\tilde P\star\tilde Q)\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde R)=\langle\tilde Q,\tilde R\rangle_{\natural}\,L^{\star}_{\tilde P}e_t=\langle\tilde Q,\tilde R\rangle_{\natural}P_te_t$. At the witness the first is
+*Proof.* $(\tilde P\star\tilde Q)\star\tilde Q_1=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde Q_1=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde Q_1)=\langle\tilde Q,\tilde Q_1\rangle_{\natural}\,L^{\star}_{\tilde P}e_t=\langle\tilde Q,\tilde Q_1\rangle_{\natural}P_te_t$. At the witness the first is
 $\langle \vec e_x,\vec e_x\rangle_{\natural}\cdot 1\cdot e_t=e_t$ and the second is $\langle \vec e_x,e_t\rangle_{\natural}\cdot 0=0$.
 
 **Remark (the ternary law).** The ternary object the operation carries is the one obtained by composing the
 quaternionic bracket with the product,
 
 $$
-T(\tilde P,\tilde Q,\tilde R) = [\tilde P,\tilde R]_{\natural}\star\tilde Q
-= N\bigl([\tilde P,\tilde R]_{\natural},\tilde Q\bigr)e_t ,
+T(\tilde P,\tilde Q,\tilde Q_1) = [\tilde P,\tilde Q_1]_{\natural}\star\tilde Q
+= N\bigl([\tilde P,\tilde Q_1]_{\natural},\tilde Q\bigr)e_t ,
 $$
 
 which is linear in each of its three arguments and alternating in the first and the third, the bracket
-$[\tilde P,\tilde R]_{\natural}=2\bigl(P_t\vec R-R_t\vec P-\vec P\times\vec R\bigr)$ being alternating. It does
-**not** vanish in general: at $\tilde P=\vec e_x$, $\tilde R=\vec e_y$, $\tilde Q=\vec e_z$ the bracket is
-$[\tilde P,\tilde R]_{\natural}=-2\vec e_z$ and $\langle -2\vec e_z,\vec e_z\rangle_{\natural}=-2$, so $T=-2e_t$, and the sum
-$[\tilde P,\tilde R]_{\natural}\star\tilde Q+\tilde Q\star[\tilde P,\tilde R]_{\natural}=2\langle[\tilde P,\tilde R]_{\natural},\tilde Q\rangle_{\natural}e_t$ is twice this value and is not $0$. The operation therefore
+$[\tilde P,\tilde Q_1]_{\natural}=2\bigl(P_t\vec R-R_t\vec P-\vec P\times\vec R\bigr)$ being alternating. It does
+**not** vanish in general: at $\tilde P=\vec e_x$, $\tilde Q_1=\vec e_y$, $\tilde Q=\vec e_z$ the bracket is
+$[\tilde P,\tilde Q_1]_{\natural}=-2\vec e_z$ and $\langle -2\vec e_z,\vec e_z\rangle_{\natural}=-2$, so $T=-2e_t$, and the sum
+$[\tilde P,\tilde Q_1]_{\natural}\star\tilde Q+\tilde Q\star[\tilde P,\tilde Q_1]_{\natural}=2\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ is twice this value and is not $0$. The operation therefore
 does not kill the bracket by symmetrisation; what is zero is the commutator of $\star$ itself, not its
 composition with the bracket.
 
@@ -207,8 +207,8 @@ $\sum_\mu Q_\mu^2=0$ of $\mathbb{P}^3(\mathbb{C})$, of complex dimension $3$ in 
 witnesses are $e_t+i\vec e_x$ on the Hermitian subspace and $\vec e_x+i\vec e_y$ on the vector subspace. The square-zero
 elements are exactly the isotropic ones; the idempotents are $0$ and $e_t$ alone; the derived law collapses,
 the commutator of $\star$ being identically zero; the associative law does not collapse, the associator being
-$\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde R\rangle_{\natural}$ times $e_t$, nonzero at $\vec e_x,\vec e_x,e_t$; and the ternary
-object $\langle[\tilde P,\tilde R]_{\natural},\tilde Q\rangle_{\natural}e_t$ does not vanish. The two definite rows of the remarkable subspaces
+$\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde Q_1\rangle_{\natural}$ times $e_t$, nonzero at $\vec e_x,\vec e_x,e_t$; and the ternary
+object $\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ does not vanish. The two definite rows of the remarkable subspaces
 contain no nonzero isotropic element.
 
 ## Summary of Notation
@@ -218,11 +218,11 @@ contain no nonzero isotropic element.
 | $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
 | $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ | the quaternion form, the coefficient of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $\langle\cdot\rangle_{\natural}$ |
-| $L^{\star}_{\tilde A}$ | the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde R=\langle\tilde A,\tilde R\rangle_{\natural}e_t$ |
+| $L^{\star}_{\tilde A}$ | the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural}e_t$ |
 | $\operatorname{Rad}(\star)$ | the two-sided annihilator, $\{0\}$ |
 | $[\tilde P,\tilde Q]_{\natural}$ | the quaternionic bracket $\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ |
 | $[\tilde P,\tilde Q]_{\star}$ | the commutator of the operation, identically zero |
-| $T(\tilde P,\tilde Q,\tilde R)=\langle[\tilde P,\tilde R]_{\natural},\tilde Q\rangle_{\natural}e_t$ | the ternary object of the operation |
+| $T(\tilde P,\tilde Q,\tilde Q_1)=\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ | the ternary object of the operation |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 
 ## Further Reading

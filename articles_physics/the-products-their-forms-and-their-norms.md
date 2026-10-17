@@ -156,7 +156,7 @@ written order of the factors being the order of the operations, as in the polar 
 of *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
 Biquaternions*). Three of its properties then carry their physical names.
 
-- Associativity is composability: $\tilde P(\tilde Q\tilde R)=(\tilde P\tilde Q)\tilde R$, so a chain of
+- Associativity is composability: $\tilde P(\tilde Q\tilde{Q}_1)=(\tilde P\tilde Q)\tilde{Q}_1$, so a chain of
 operations can be bracketed at will.
 - The unit $e_t$ is the identity operation: $e_t\tilde Q=\tilde Qe_t=\tilde Q$.
 - Non-commutativity is order dependence: two operations need not commute, and the commutator
@@ -265,14 +265,14 @@ An operation can be attached to the left of an argument or to its right, and the
 the left and the right multiplications
 
 $$
-L_{\tilde Q}(\tilde R)=\tilde Q\tilde R,\qquad R_{\tilde P}(\tilde R)=\tilde R\tilde P,
+L_{\tilde Q}(\tilde{Q}_1)=\tilde Q\tilde{Q}_1,\qquad R_{\tilde P}(\tilde{Q}_1)=\tilde{Q}_1\tilde P,
 \qquad L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q},
 $$
 
 which commute. The composition that the framework actually uses is the **sandwich**
 
 $$
-\Theta_{\tilde Q}(\tilde R)=\tilde Q\,\tilde R\,\tilde Q^{*}=L_{\tilde Q}R_{\tilde Q^{*}}(\tilde R),
+\Theta_{\tilde Q}(\tilde{Q}_1)=\tilde Q\,\tilde{Q}_1\,\tilde Q^{*}=L_{\tilde Q}R_{\tilde Q^{*}}(\tilde{Q}_1),
 $$
 
 the parameter entering once on each side. It is the one action form of the framework: with a parameter of
@@ -352,7 +352,7 @@ invertibility of the general plain bilinear product is decided by the multiplica
 invertible elements are the elements of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with
 the inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ and bounded by the zero-divisor cone, and the Hermitian
 conjugation is an anti-automorphism of the product. The left and right multiplications commute, so the
-sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$ is the composition on both sides. The
+sandwich $\Theta_{\tilde Q}(\tilde{Q}_1)=\tilde Q\tilde{Q}_1\tilde Q^{*}$ is the composition on both sides. The
 distinctions are labelled throughout: what is proved is the algebra on the whole space, and the reading of
 the sector sign, of the sector of a composite and of the reversibility on the material sector is the
 companion article *The Bilinear Product on the Material Sector*; what is proposed is the naming.

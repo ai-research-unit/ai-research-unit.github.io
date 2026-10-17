@@ -113,7 +113,7 @@ $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q \tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2, \qquad \tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu,
 $$
 
-a $\mathbb{C}$-valued form that is multiplicative, $\langle\tilde Q \tilde R\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}\langle\tilde R\rangle_{\natural}$.
+a $\mathbb{C}$-valued form that is multiplicative, $\langle\tilde Q \tilde Q_1\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$.
 
 **Proposition.** The norm of $\mathbb{B}$ is the reduced norm of the central simple algebra $\mathbb{B}$ of degree $2$; equivalently, under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ it is the determinant.
 

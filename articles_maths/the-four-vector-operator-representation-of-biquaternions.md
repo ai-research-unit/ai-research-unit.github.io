@@ -17,8 +17,8 @@ The article owns the two-step component rule, the image of the basis elements, t
 **Conventions.** The product of two elements with four-vectors $A^\mu$ and $Q_1^\mu$ has components
 
 $$
-(\tilde A\tilde Q_1)^0 = A^0Q_1^0 - \sum_{k=1}^{3} A^kQ_1^k, \qquad
-(\tilde A\tilde Q_1)^i = A^0Q_1^i + Q_1^0A^i + \sum_{j,k=1}^{3}\epsilon^{ijk}A^jQ_1^k ,
+(\tilde A\tilde{Q}_1)^0 = A^0Q_1^0 - \sum_{k=1}^{3} A^kQ_1^k, \qquad
+(\tilde A\tilde{Q}_1)^i = A^0Q_1^i + Q_1^0A^i + \sum_{j,k=1}^{3}\epsilon^{ijk}A^jQ_1^k ,
 $$
 
 and the Hermitian conjugate has four-vector
@@ -54,7 +54,7 @@ Two features of the rule carry the meaning of the operator.
 
 The first factor is **not** conjugated and the second **is**: the pair of signs $\overline{Q^0}$ and $-\overline{Q^k}$ is what makes the operator Hermitian rather than an inner automorphism, and it is the coordinate trace of the dagger.
 
-The rule is **linear in $\tilde{Q}_2$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde{Q}_2$ because both steps of the product are bilinear and only one factor carries $\tilde{Q}_2$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde{Q}_2 \mapsto \lambda \tilde{Q}_2$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and that $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $A$: doubling the operand quadruples the operator.
+The rule is **linear in $\tilde{Q}_2$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde{Q}_2$ because both steps of the product are bilinear and only one factor carries $\tilde{Q}_2$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde{Q}_2 \mapsto \lambda \tilde{Q}_2$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\mathrm{H}_{\tilde{Q}\tilde Q_3} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde Q_3}$ and that $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $A$: doubling the operand quadruples the operator.
 
 **Corollary (the operator of a scalar multiple).** In particular $\mathrm{H}_{\tilde{Q}} = 0$ if and only if $\tilde{Q} = 0$, since the scalar component of the rule contains the nonzero factor $\overline{Q^0}$ composed with $Q^0$ as soon as any component of $\tilde{Q}$ is nonzero; and $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$, since $\lvert i\rvert^{2} = 1$.
 

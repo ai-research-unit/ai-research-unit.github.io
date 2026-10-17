@@ -93,9 +93,9 @@ $$
 Q^{\mathsf{T}} = \begin{pmatrix} Q^t & Q^x & Q^y & Q^z \end{pmatrix}.
 $$
 
-The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$: the product is the matrix product $\mathsf{M}_4^{L}(\tilde{Q})\,R$, whose four entries are the coefficients of $\tilde{Q}\tilde{R}$, the column of $\tilde{R}$ being written $R$. The matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this interpretation.
+The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{Q}_1 \mapsto \tilde{Q}\tilde{Q}_1$ sends the coefficients of $\tilde{Q}_1$ linearly to the coefficients of the product, so with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{Q}_1$: the product is the matrix product $\mathsf{M}_4^{L}(\tilde{Q})\,R$, whose four entries are the coefficients of $\tilde{Q}\tilde{Q}_1$, the column of $\tilde{Q}_1$ being written $R$. The matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this interpretation.
 
-**The row is the dual, not a further representation.** The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the *right* action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,
+**The row is the dual, not a further representation.** The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the *right* action, $(\varphi\cdot\tilde{Q})(\tilde{Q}_1) = \varphi(\tilde{Q}\tilde{Q}_1)$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,
 
 $$
 \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural}),
@@ -107,14 +107,14 @@ which is proved in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ o
 
 The product of two biquaternions is computed from the basis and separates into a scalar component and three vector components.
 
-**Proposition (the product in components).** Let $\tilde{Q}$ and $\tilde{R}$ be biquaternions with four-vectors $Q^\mu$ and $R^\mu$. Then the four-vector of the product has components
+**Proposition (the product in components).** Let $\tilde{Q}$ and $\tilde{Q}_1$ be biquaternions with four-vectors $Q^\mu$ and $R^\mu$. Then the four-vector of the product has components
 
 $$
-(\tilde{Q}\tilde{R})^0 = Q^t R^0 - \sum_{k\in\{x,y,z\}} Q^k R^k,
+(\tilde{Q}\tilde{Q}_1)^0 = Q^t R^0 - \sum_{k\in\{x,y,z\}} Q^k R^k,
 $$
 
 $$
-(\tilde{Q}\tilde{R})^i = Q^t R^i + R^0 Q^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k, \qquad i = 1, 2, 3,
+(\tilde{Q}\tilde{Q}_1)^i = Q^t R^i + R^0 Q^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k, \qquad i = 1, 2, 3,
 $$
 
 where $\epsilon^{ijk}$ is the Levi-Civita symbol on the indices $1, 2, 3$.
@@ -124,12 +124,12 @@ where $\epsilon^{ijk}$ is the Levi-Civita symbol on the indices $1, 2, 3$.
 **Corollary (the commutator).** The commutator of two biquaternions is twice the cross product of their vector components,
 
 $$
-\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2 \sum_{i\in\{x,y,z\}} \Big( \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k \Big) e_i .
+\tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q} = 2 \sum_{i\in\{x,y,z\}} \Big( \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k \Big) e_i .
 $$
 
 The scalar component and the symmetric part $Q^tR^i + R^0Q^i$ of each vector component are unchanged by exchanging the factors; the Levi-Civita term is the only part that changes sign, and it is therefore the only trace of non-commutativity visible in this realization. In particular the commutator always has zero scalar component, so it lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$ — the derived subspace of the algebra, which is the complex space sector — and it vanishes exactly when the vector parts of the two factors are linearly dependent over $\mathbb{C}$.
 
-**Example.** For $\tilde{Q} = e_t + \vec e_x$ and $\tilde{R} = e_t + \vec e_y$ the four-vectors are $Q^\mu = (1,1,0,0)$ and $R^\mu = (1,0,1,0)$. The product formula gives $(\tilde{Q}\tilde{R})^\mu = (1,1,1,1)$, that is, $\tilde{Q}\tilde{R} = e_t + \vec e_x + \vec e_y + \vec e_z$, while the reversed product gives $(\tilde{R}\tilde{Q})^\mu = (1,1,1,-1)$, since the only nonzero Levi-Civita term changes sign. The two products differ by $2\vec e_z$, which is twice the cross product of the vector parts.
+**Example.** For $\tilde{Q} = e_t + \vec e_x$ and $\tilde{Q}_1 = e_t + \vec e_y$ the four-vectors are $Q^\mu = (1,1,0,0)$ and $R^\mu = (1,0,1,0)$. The product formula gives $(\tilde{Q}\tilde{Q}_1)^\mu = (1,1,1,1)$, that is, $\tilde{Q}\tilde{Q}_1 = e_t + \vec e_x + \vec e_y + \vec e_z$, while the reversed product gives $(\tilde{Q}_1\tilde{Q})^\mu = (1,1,1,-1)$, since the only nonzero Levi-Civita term changes sign. The two products differ by $2\vec e_z$, which is twice the cross product of the vector parts.
 
 ### The Multiplication Table of the Basis
 

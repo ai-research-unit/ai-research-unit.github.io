@@ -34,7 +34,7 @@ all three of real dimension $7$; the first is homotopy equivalent to $S^{1}$, th
 
 **Proof.** For the first, the map $\tilde{Q}\mapsto c/\|c\|_E$ is defined on the positive region, since $\|c\|_E>\|v\|_E\ge0$ forces $c\neq0$; for fixed $c$ the vector part ranges over the open ball of radius $\|c\|_E$, a contractible set, so the projection onto $\mathbb{C}\setminus\{0\}\simeq S^{1}$ is a homotopy equivalence. For the second, $\|v\|_E>\|c\|_E$ forces $v\neq0$, and the projection onto $v/\|v\|_E\in S^{5}$ has contractible fibres again.
 
-**Theorem (the positive lines form the complex hyperbolic ball).** The positive lines are exactly the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E<1$; the assignment $\tilde{R}\mapsto\mathbb{C}(e_t+\tilde{R})$ is a bijection of the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ onto the set of positive lines. That set is therefore a real manifold of dimension $6$, isomorphic as a homogeneous space to
+**Theorem (the positive lines form the complex hyperbolic ball).** The positive lines are exactly the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\|\tilde Q_1\|_E<1$; the assignment $\tilde Q_1\mapsto\mathbb{C}(e_t+\tilde Q_1)$ is a bijection of the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ onto the set of positive lines. That set is therefore a real manifold of dimension $6$, isomorphic as a homogeneous space to
 
 $$
 \mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3)),
@@ -42,9 +42,9 @@ $$
 
 the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $\mathrm{U}(1,3)$ of the general quaternionic sesquilinear form acts on it transitively with the stabiliser $\mathrm{U}(1)\times \mathrm{U}(3)$ of a positive line.
 
-**Proof.** A positive line is not contained in $\mathbb{V}_{\mathbb{B}}$, since the form is negative definite there; choosing the unique representative $e_t+\tilde{R}$ and using $\langle e_t+\tilde{R},e_t+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$ shows that positivity is exactly $\|\tilde{R}\|_E<1$, and the assignment is bijective. The stabiliser of the line $\mathbb{C}e_t$ in $\mathrm{U}(1,3)$ consists of the isometries preserving the canonical fundamental decomposition, which is $\mathrm{U}(1)\times \mathrm{U}(3)$ (*The Krein Isometry Group and Its $J$-Contractions*), whence the homogeneous description; the two realisations agree because both are the symmetric space of the same Cartan pair (*The Krein Cartan Decomposition of the Operator Algebra*).
+**Proof.** A positive line is not contained in $\mathbb{V}_{\mathbb{B}}$, since the form is negative definite there; choosing the unique representative $e_t+\tilde Q_1$ and using $\langle e_t+\tilde Q_1,e_t+\tilde Q_1\rangle_{\natural*}=1-\|\tilde Q_1\|_E^{2}$ shows that positivity is exactly $\|\tilde Q_1\|_E<1$, and the assignment is bijective. The stabiliser of the line $\mathbb{C}e_t$ in $\mathrm{U}(1,3)$ consists of the isometries preserving the canonical fundamental decomposition, which is $\mathrm{U}(1)\times \mathrm{U}(3)$ (*The Krein Isometry Group and Its $J$-Contractions*), whence the homogeneous description; the two realisations agree because both are the symmetric space of the same Cartan pair (*The Krein Cartan Decomposition of the Operator Algebra*).
 
-**Remark (the boundary).** By *The Isotropic Structure of the General Quaternionic Sesqualgebra* the closure of the ball adds the isotropic lines, $\|\tilde{R}\|_E=1$, a copy of $S^{5}$: it is the boundary sphere of the complex hyperbolic ball, of real dimension $5$, while the ball itself has real dimension $6$.
+**Remark (the boundary).** By *The Isotropic Structure of the General Quaternionic Sesqualgebra* the closure of the ball adds the isotropic lines, $\|\tilde Q_1\|_E=1$, a copy of $S^{5}$: it is the boundary sphere of the complex hyperbolic ball, of real dimension $5$, while the ball itself has real dimension $6$.
 
 ## The Scaling and the Phase Action
 
@@ -57,20 +57,20 @@ the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $\mat
 **Theorem (the Bergman metric).** The ball $\mathbb{B}^{3}\subset\mathbb{V}_{\mathbb{B}}=\mathbb{C}^{3}$ carries the **Bergman metric**
 
 $$
-ds^{2}=\frac{(1-\|\tilde{R}\|_E^{2})\,\|d\tilde{R}\|_E^{2}+\lvert\langle d\tilde{R},\tilde{R}\rangle_{*}\rvert^{2}}{(1-\|\tilde{R}\|_E^{2})^{2}},
+ds^{2}=\frac{(1-\|\tilde Q_1\|_E^{2})\,\|d\tilde Q_1\|_E^{2}+\lvert\langle d\tilde Q_1,\tilde Q_1\rangle_{*}\rvert^{2}}{(1-\|\tilde Q_1\|_E^{2})^{2}},
 $$
 
 which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form acting on the ball; the boundary $S^{5}$ is at infinite distance.
 
-**Proof.** The metric is the Bergman metric of the unit ball of $\mathbb{C}^{3}$, invariant under the biholomorphisms of the ball, and the isometry group of the general quaternionic sesquilinear form is the group of these biholomorphisms (*The Krein Isometry Group and Its $J$-Contractions*); completeness and the constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde{R}\|_E=1$.
+**Proof.** The metric is the Bergman metric of the unit ball of $\mathbb{C}^{3}$, invariant under the biholomorphisms of the ball, and the isometry group of the general quaternionic sesquilinear form is the group of these biholomorphisms (*The Krein Isometry Group and Its $J$-Contractions*); completeness and the constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde Q_1\|_E=1$.
 
-**Theorem (the complex geodesics).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde{R}\neq0$ is the disc $\{z\,\tilde{R}/\|\tilde{R}\|_E:|z|<1\}$. The real geodesics are the curves that solve the geodesic equation; the complex ones are the images of these discs under $\mathrm{U}(1,3)$.
+**Theorem (the complex geodesics).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde Q_1\neq0$ is the disc $\{z\,\tilde Q_1/\|\tilde Q_1\|_E:|z|<1\}$. The real geodesics are the curves that solve the geodesic equation; the complex ones are the images of these discs under $\mathrm{U}(1,3)$.
 
-**Proof.** A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:|z|<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde{R}$ under an isometry because $\mathrm{U}(1,3)$ is transitive on the complex lines that carry positive vectors.
+**Proof.** A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:|z|<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde Q_1$ under an isometry because $\mathrm{U}(1,3)$ is transitive on the complex lines that carry positive vectors.
 
 **Theorem (the totally real slices).** The Minkowski slice $\mathbb{H}_{\mathbb{B}}$ meets the ball in the real unit ball of $\mathbb{R}^{3}$, and the Bergman metric restricts to the Poincaré metric of the real hyperbolic space $H^{3}$; the slice is totally geodesic and totally real in $\mathbb{CH}^{3}$.
 
-**Proof.** On the slice the form is the interval form, and the ball $\{\|\tilde{R}\|_E<1\}$ meets $\mathbb{R}^{3}$ in the real unit ball, on which the Bergman metric is the hyperbolic metric of the disc model; a real subspace of maximal dimension on which the form is real is totally real, and the standard totally geodesic submanifolds of $\mathbb{CH}^{3}$ are the complex lines and the real hyperbolic spaces.
+**Proof.** On the slice the form is the interval form, and the ball $\{\|\tilde Q_1\|_E<1\}$ meets $\mathbb{R}^{3}$ in the real unit ball, on which the Bergman metric is the hyperbolic metric of the disc model; a real subspace of maximal dimension on which the form is real is totally real, and the standard totally geodesic submanifolds of $\mathbb{CH}^{3}$ are the complex lines and the real hyperbolic spaces.
 
 ## The Minkowski Slices
 
@@ -127,9 +127,9 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternioi
 
 **Proof.** The set is the zero set of the single non-constant real polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$, whose partial derivatives with respect to the four real coordinates of $c$ and the six of $v$ are $2(c,-v)\neq0$ off the origin, so the apex is the only singular point; the cone at each radius is the product of the spheres of that radius in the two factors, and the link and homotopy follow from it. This is the real companion of the complex cone of *The Topology of the Zero-Divisor Cone*.
 
-**Theorem (the isotropic lines form $S^{5}$).** The isotropic complex lines of the general quaternionic sesquilinear form are exactly the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E=1$, so the assignment $\tilde{R}\mapsto\mathbb{C}(e_t+\tilde{R})$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.
+**Theorem (the isotropic lines form $S^{5}$).** The isotropic complex lines of the general quaternionic sesquilinear form are exactly the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\|\tilde Q_1\|_E=1$, so the assignment $\tilde Q_1\mapsto\mathbb{C}(e_t+\tilde Q_1)$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.
 
-**Proof.** An isotropic line $\mathbb{C}\tilde{Q}$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$, hence $\|c\|_E=\|v\|_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling it gives exactly one representative of the form $e_t+\tilde{R}$. For that representative $\langle e_t+\tilde{R},e_t+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$, so the line is isotropic exactly for $\|\tilde{R}\|_E=1$; and distinct points $\tilde{R}$ of the unit sphere give distinct lines, since $e_t+\tilde{R}$ and $e_t+\tilde{R}'$ span the same line only if $\tilde{R}=\tilde{R}'$. This is the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the open ball $\|\tilde{R}\|_E<1$.
+**Proof.** An isotropic line $\mathbb{C}\tilde{Q}$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$, hence $\|c\|_E=\|v\|_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling it gives exactly one representative of the form $e_t+\tilde Q_1$. For that representative $\langle e_t+\tilde Q_1,e_t+\tilde Q_1\rangle_{\natural*}=1-\|\tilde Q_1\|_E^{2}$, so the line is isotropic exactly for $\|\tilde Q_1\|_E=1$; and distinct points $\tilde Q_1$ of the unit sphere give distinct lines, since $e_t+\tilde Q_1$ and $e_t+\tilde Q_1'$ span the same line only if $\tilde Q_1=\tilde Q_1'$. This is the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the open ball $\|\tilde Q_1\|_E<1$.
 
 **Proposition (the shape of the Krein cone).** The Krein cone $P_K$ is closed and contractible, being star-shaped with respect to the origin, and its interior of directions is homotopy equivalent to a circle,
 
@@ -149,9 +149,9 @@ its boundary is the Krein null set.
 
 **Two points of the null set.** $e_t+\vec e_x$ and $(e_t+\vec e_x)/\sqrt2$: the first has square $0$ and norm $2$, the second square $0$ and Euclidean norm $1$; the second is on the link, and both are on the boundary of the ball.
 
-**A line inside the ball.** $\mathbb{C}(e_t+\tfrac12\vec e_x)$: $\|\tilde{R}\|_E=\tfrac12<1$, a positive line, a point of the complex hyperbolic ball.
+**A line inside the ball.** $\mathbb{C}(e_t+\tfrac12\vec e_x)$: $\|\tilde Q_1\|_E=\tfrac12<1$, a positive line, a point of the complex hyperbolic ball.
 
-**A line on the boundary.** $\mathbb{C}(e_t+\vec e_x)$: $\|\tilde{R}\|_E=1$, an isotropic line, a point of the boundary sphere $S^{5}$.
+**A line on the boundary.** $\mathbb{C}(e_t+\vec e_x)$: $\|\tilde Q_1\|_E=1$, an isotropic line, a point of the boundary sphere $S^{5}$.
 
 **A real timelike line.** $\tilde{Q}=e_t+\tfrac12\vec e_x$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Minkowski hyperboloid sheet.
 
@@ -167,7 +167,7 @@ its boundary is the Krein null set.
 
 ## Summary
 
-The sign level sets of the general quaternionic sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_t=\sqrt{1+\|\vec q\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone. The phase circle acts freely on the positive level set with quotient $\mathbb{CH}^{3}$, and real scaling relates the positive levels; the ball carries the Bergman metric, complete and of constant negative holomorphic curvature, whose complex geodesics are the intersections with the complex lines and whose totally geodesic real slices are the Minkowski hyperboloids. The Krein cone is the union of the non-negative levels, its interior the positive region and its boundary the null set; the norm's nonzero levels, by contrast, are complex hypersurfaces of real dimension $6$, and only its zero set is a cone.
+The sign level sets of the general quaternionic sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\|\tilde Q_1\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_t=\sqrt{1+\|\vec q\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone. The phase circle acts freely on the positive level set with quotient $\mathbb{CH}^{3}$, and real scaling relates the positive levels; the ball carries the Bergman metric, complete and of constant negative holomorphic curvature, whose complex geodesics are the intersections with the complex lines and whose totally geodesic real slices are the Minkowski hyperboloids. The Krein cone is the union of the non-negative levels, its interior the positive region and its boundary the null set; the norm's nonzero levels, by contrast, are complex hypersurfaces of real dimension $6$, and only its zero set is a cone.
 
 ## Summary of Notation
 
@@ -177,7 +177,7 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 | $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}$ | The negative level set; $\simeq S^{5}$ |
 | $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0}$ | The null set |
 | $\mathcal{P}=\{\lVert c\rVert_E>\lVert v\rVert_E\}$ | The positive region; $\simeq S^{1}$ |
-| $\mathbb{C}(e_t+\tilde R)$, $\lVert\tilde R\rVert_E<1$ | The positive lines; the ball of $\mathbb{C}^{3}$ |
+| $\mathbb{C}(e_t+\tilde Q_1)$, $\lVert\tilde Q_1\rVert_E<1$ | The positive lines; the ball of $\mathbb{C}^{3}$ |
 | $\mathbb{CH}^{3}=\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ | The complex hyperbolic space of positive lines |
 | $q_t^{2}-\lVert\vec q\rVert^{2}=\pm1$ | The real hyperboloids in a Minkowski slice |
 | $q_t=\sqrt{1+\lVert\vec q\rVert^{2}}$ | The hyperboloid model of $H^{3}$ |

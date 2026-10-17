@@ -40,7 +40,7 @@ Q_t - iQ_3 & -iQ_1 - Q_y\\[2pt]
 \mathsf{M}_2(e_t)=I_2,\quad \mathsf{M}_2(\vec e_k)=-i\sigma_k,\quad \mathsf{M}_2(i)=iI_2,
 $$
 
-satisfying $\mathsf{M}_2(\tilde Q\tilde R) = \mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde R)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_t + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
+satisfying $\mathsf{M}_2(\tilde Q\tilde Q_1) = \mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q_1)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_t + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
 
 ## The Massless Momentum as a Zero Divisor
 
@@ -177,10 +177,10 @@ $$
 \lambda \;\longmapsto\; t\,\lambda, \qquad \bar\lambda \;\longmapsto\; t^{-1}\,\bar\lambda, \qquad |t|=1,
 $$
 
-a $\mathrm{U}(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde R = \cos(\theta/2) + \sin(\theta/2)\,\vec u_p$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\vec u_p = \vec p/|\vec p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$. Hence $\tilde R\tilde P\tilde R^{*} = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde R\tilde R^{*} = e_t$ — and on the spinor module $\mathsf{M}_2(\tilde R)$ acts by a phase,
+a $\mathrm{U}(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde u_{\mathrm r} = \cos(\theta/2) + \sin(\theta/2)\,\vec u_p$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\vec u_p = \vec p/|\vec p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$. Hence $\tilde u_{\mathrm r}\tilde P\tilde u_{\mathrm r}^{*} = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*} = e_t$ — and on the spinor module $\mathsf{M}_2(\tilde u_{\mathrm r})$ acts by a phase,
 
 $$
-\mathsf{M}_2(\tilde R)\,\lambda = \exp(\pm i\theta/2)\,\lambda \quad \text{on the two eigen-components},
+\mathsf{M}_2(\tilde u_{\mathrm r})\,\lambda = \exp(\pm i\theta/2)\,\lambda \quad \text{on the two eigen-components},
 $$
 
 so that $\lambda \mapsto t\lambda$ and $\bar\lambda \mapsto t^{-1}\bar\lambda$ with $t = \exp(\mp i\theta/2)$. The little-group scaling is therefore not an abstract relabelling: it is the action of the rotation about $\vec p$ on the two factors, and it is the framework's compact $SU(2)$ rotation subgroup acting on the spinor module.

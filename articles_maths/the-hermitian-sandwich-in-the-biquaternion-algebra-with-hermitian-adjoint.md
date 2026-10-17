@@ -42,7 +42,7 @@ $$
 of *Biquaternion Rotations and Lorentz Transformations*, §*The Dagger Sandwich*. Its two general laws read in this algebra as the composition
 
 $$
-\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}},
+\mathrm{H}_{\tilde{Q}\tilde Q_1} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde Q_1},
 $$
 
 which is $\Theta_{xz} = \Theta_x\circ\Theta_z$, and the central rule
@@ -88,11 +88,11 @@ is the general similarity statement of *The Hermitian Sandwich on a Hermitian Al
 
 ## The Forms and Positivity in Coordinates
 
-**Proposition (the three forms in the biquaternion algebra).** On $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $\tilde{R} = \sum_\mu R_\mu e_\mu$,
+**Proposition (the three forms in the biquaternion algebra).** On $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $\tilde Q_1 = \sum_\mu R_\mu e_\mu$,
 
 $$
-h_{\dagger}(\tilde{Q},\tilde{R}) = \sum_\mu Q_{\bar{\mu}}R_\mu + (\text{blade cross terms}), \qquad
-\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{R}\bigr) = \sum_\mu Q_{\bar{\mu}}R_\mu ,
+h_{\dagger}(\tilde{Q},\tilde Q_1) = \sum_\mu Q_{\bar{\mu}}R_\mu + (\text{blade cross terms}), \qquad
+\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde Q_1\bigr) = \sum_\mu Q_{\bar{\mu}}R_\mu ,
 $$
 
 so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{4}$ and the blade form is the coefficient form twisted by the signature of the quaternion units, as in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
@@ -101,7 +101,7 @@ so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermitian conjugation ${}^{*}$, has a **positive** dagger, since $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}) = \sum_\mu|Q_\mu|^{2}$; the scalar form of the dagger is the Euclidean form of the algebra while the Lorentzian signature of the quaternion norm lives on the Hermitian subspace only. The general operator of the Hermitian sandwich is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{*}$ of the corpus, with the composition law $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and the central rule $\mathrm{H}_{z\tilde{Q}} = |z|^{2}\mathrm{H}_{\tilde{Q}}$, which is the general parameter-semilinearity in coordinates; the Hermitian and anti-Hermitian sectors are preserved, the norm is scaled by $|\langle\tilde{Q}\rangle_{\natural}|^{2}$, and the map is an automorphism exactly on the slice, all of which are the general theorems of the group in one algebra. The **unitary slice is $\mathrm{U}(2)$**, with determinant-one part $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$, compact by the general theorem and distinct from the norm-one slice $SL(2,\mathbb{C})$ that gives the Lorentz action; the forms specialize to the standard Hermitian form of $\mathbb{C}^{4}$ and to the coefficient form twisted by the signature, and the Hermitian cone is the cone of $M_2(\mathbb{C})$ with the Lorentzian cone of $\mathbb{M}_+$ on its diagonal.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermitian conjugation ${}^{*}$, has a **positive** dagger, since $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}) = \sum_\mu|Q_\mu|^{2}$; the scalar form of the dagger is the Euclidean form of the algebra while the Lorentzian signature of the quaternion norm lives on the Hermitian subspace only. The general operator of the Hermitian sandwich is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(x) = \tilde{Q}x\tilde{Q}^{*}$ of the corpus, with the composition law $\mathrm{H}_{\tilde{Q}\tilde Q_1} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde Q_1}$ and the central rule $\mathrm{H}_{z\tilde{Q}} = |z|^{2}\mathrm{H}_{\tilde{Q}}$, which is the general parameter-semilinearity in coordinates; the Hermitian and anti-Hermitian sectors are preserved, the norm is scaled by $|\langle\tilde{Q}\rangle_{\natural}|^{2}$, and the map is an automorphism exactly on the slice, all of which are the general theorems of the group in one algebra. The **unitary slice is $\mathrm{U}(2)$**, with determinant-one part $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$, compact by the general theorem and distinct from the norm-one slice $SL(2,\mathbb{C})$ that gives the Lorentz action; the forms specialize to the standard Hermitian form of $\mathbb{C}^{4}$ and to the coefficient form twisted by the signature, and the Hermitian cone is the cone of $M_2(\mathbb{C})$ with the Lorentzian cone of $\mathbb{M}_+$ on its diagonal.
 
 ## Summary of Notation
 

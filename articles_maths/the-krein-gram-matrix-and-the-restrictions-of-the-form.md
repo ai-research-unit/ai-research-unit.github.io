@@ -4,7 +4,7 @@
 
 The general quaternionic sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{2\mu}Q_{1\mu}$ of this article is a general plain sesquilinear form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the remarkable subspaces of *Introduction to the Remarkable Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*, and it fixes the conventions for all three.
 
-**Conventions.** $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\mathsf{M}_2$ the $2\times2$ matrix representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$.
+**Conventions.** $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\mathsf{M}_2$ the $2\times2$ matrix representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde{Q}_3\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_3)\mathsf{M}_2(\tilde S))$ and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$.
 
 ## The Gram Matrix in the Coefficient Basis
 
@@ -63,7 +63,7 @@ $$
 
 of trace $0$, matching $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}-|i|^{2}=0$: the element is isotropic and its matrix is singular, of rank one.
 
-**Proof.** $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}_2\tilde{Q}_1)=\mathrm{Sc}\bigl((\tilde{Q}_2^{\natural})^{*}\tilde{Q}_1\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2$ a $*$-homomorphism gives the second form.
+**Proof.** $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}_2\tilde{Q}_1)=\mathrm{Sc}\bigl((\tilde{Q}_2^{\natural})^{*}\tilde{Q}_1\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde{Q}_3\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_3)\mathsf{M}_2(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2$ a $*$-homomorphism gives the second form.
 
 **Corollary (the three trace expressions).** The bilinear form, the general plain sesquilinear form and the general quaternionic sesquilinear form are the three pairings
 

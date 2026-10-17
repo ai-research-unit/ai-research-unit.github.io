@@ -135,7 +135,7 @@ The function is **continuous on an open set** if it is continuous at every point
 
 **Theorem (basic properties).** If $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ are continuous at $\tilde{Q}_0$, then so are $F^{\mathrm{fn}} + G^{\mathrm{fn}}$ and $F^{\mathrm{fn}} \circ G^{\mathrm{fn}}$. If $F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$ and $G^{\mathrm{fn}}$ is continuous at $F^{\mathrm{fn}}(\tilde{Q}_0)$, then $G^{\mathrm{fn}} \circ F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|G^{\mathrm{fn}}(\tilde{R}) - G^{\mathrm{fn}}(F^{\mathrm{fn}}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
+**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|G^{\mathrm{fn}}(\tilde{Q}_4) - G^{\mathrm{fn}}(F^{\mathrm{fn}}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{Q}_4 - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 
 **Theorem (component-wise continuity).** A function $F^{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each split complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$, which in turn holds if and only if each of the eight real-valued functions $\Re(F_\mu)$, $\Im(F_\mu)$ (with respect to $j$) is continuous at $\tilde{Q}_0$.
 
@@ -143,7 +143,7 @@ The function is **continuous on an open set** if it is continuous at every point
 
 **Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{H}_{\mathbb{D}}$ is uniformly continuous.
 
-**Proof.** This is the standard argument: if $F^{\mathrm{fn}}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|F^{\mathrm{fn}}(\tilde{Q}_n) - F^{\mathrm{fn}}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $F^{\mathrm{fn}}(\tilde{Q}_n) \to F^{\mathrm{fn}}(\tilde{Q})$ and $F^{\mathrm{fn}}(\tilde{R}_n) \to F^{\mathrm{fn}}(\tilde{Q})$, contradicting the inequality.
+**Proof.** This is the standard argument: if $F^{\mathrm{fn}}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{Q}_{4,n})$ in the compact set with $\|\tilde{Q}_n - \tilde{Q}_{4,n}\|_E \to 0$ but $\|F^{\mathrm{fn}}(\tilde{Q}_n) - F^{\mathrm{fn}}(\tilde{Q}_{4,n})\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{Q}_{4,n} \to \tilde{Q}$, and by continuity $F^{\mathrm{fn}}(\tilde{Q}_n) \to F^{\mathrm{fn}}(\tilde{Q})$ and $F^{\mathrm{fn}}(\tilde{Q}_{4,n}) \to F^{\mathrm{fn}}(\tilde{Q})$, contradicting the inequality.
 
 ## The Problem of Differentiability
 

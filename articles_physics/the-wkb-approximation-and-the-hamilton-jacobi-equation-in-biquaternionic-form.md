@@ -14,7 +14,7 @@ which is the same biquaternion norm whose vanishing defines the zero divisor con
 
 The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm interpretation, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $\vec e_\mu^2=-e_t$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $H = [-\frac{\hbar^2}{2m}\nabla^2 + V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $\vec e_\mu^2=-e_t$.
 
 ## The WKB Ansatz in Biquaternionic Form
 
@@ -49,7 +49,7 @@ The leading term $\nabla S$ is a **real quaternion**, an element of the algebra'
 
 ### The two real equations
 
-Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $\tilde H\psi = E\psi$ with $\tilde H = (-\frac{\hbar^2}{2m}\nabla^2+V)e_t$,
+Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $H\psi = E\psi$ with $H = (-\frac{\hbar^2}{2m}\nabla^2+V)e_t$,
 
 $$
 -\frac{\hbar^2}{2m}\nabla^2\!\left(A \exp(iS/\hbar)\right) + \left(V - E\right)A \exp(iS/\hbar) = 0 ,
@@ -109,7 +109,7 @@ $$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
 $$
 
-an equation in the centre of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $\tilde T=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
+an equation in the centre of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $T_{\mathrm{kin}}=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
 
 ### Rays, trajectories, and the eikonal
 

@@ -69,7 +69,7 @@ k^2:\ \mathsf{M}_2,\ E_3 ,
 k^n:\ M_n,\ E_{n+1} .
 $$
 
-The pairing is worth holding on to: at each order in $k$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k$, the electric octupole and the magnetic quadrupole at order $k^2$, and so on. The electric dipole stands alone at order $k^0$, because there is no magnetic monopole.
+The pairing is worth holding on to: at each order in $k$ the field carries an electric multipole of order $l$ and a magnetic multipole of order $l-1$. The electric quadrupole and the magnetic dipole are partners at order $k$, the electric octupole and the magnetic quadrupole at order $k^2$, and so on. The electric dipole stands alone at order $k^0$: there is no magnetic term at that order.
 
 ### The Vector Spherical Harmonics
 
@@ -325,7 +325,7 @@ Both are standard, and they answer different questions. The first says that the 
 
 ### $l = 0$: The Monopole Is Purely Electric
 
-The monopole is the total charge, and it has no magnetic partner: there is no magnetic monopole. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
+The monopole is the total charge, and it has no magnetic partner at any order. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
 
 ### $l = 1$: The Electric and Magnetic Dipoles
 

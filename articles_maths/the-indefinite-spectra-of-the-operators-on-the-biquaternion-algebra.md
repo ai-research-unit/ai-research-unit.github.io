@@ -6,7 +6,7 @@ The spectral theory of the Hermitian adjoint on the biquaternion algebra gives t
 
 The general theory is *Spectral Theory on Krein Spaces* and *Definitizable Operators and the Krein–Naĭmark Theorem*; the definite counterpart is *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the operator classes are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the element spectra that the operator spectra are read from are *Biquaternion Spectral Theory*; and the symmetry is *The Fundamental Symmetry of the Biquaternioid Algebra*.
 
-**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\mathsf{M}_2(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\mathsf{M}_2(\tilde{R})^{\mathsf T}$.
+**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\mathsf{M}_2(\tilde{Q})\otimes I$ and $R_{\tilde Q_1}\leftrightarrow I\otimes\mathsf{M}_2(\tilde Q_1)^{\mathsf T}$.
 
 ## The Spectral Rules of the Definite Case
 
@@ -18,7 +18,7 @@ $$
 \mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\{\lambda_i\bar\lambda_j\}_{i,j=1}^{2}.
 $$
 
-**Proof.** These are the Kronecker forms $L_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes I$, $R_{\tilde{R}}=I\otimes\mathsf{M}_2(\tilde{R})^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes\overline{\mathsf{M}_2(\tilde{Q})}$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, whose spectra are the sums and products of the spectra of the factors.
+**Proof.** These are the Kronecker forms $L_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes I$, $R_{\tilde Q_1}=I\otimes\mathsf{M}_2(\tilde Q_1)^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes\overline{\mathsf{M}_2(\tilde{Q})}$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, whose spectra are the sums and products of the spectra of the factors.
 
 ## The $J$-Self-Adjoint Left and Right Multiplications
 
@@ -32,7 +32,7 @@ so the spectrum is real and the operator is a real scalar.
 
 **Proof.** The criterion is that of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*, §*The $J$-Adjoint of the Three Families*; a scalar multiple of the identity has the single eigenvalue $t$ with multiplicity $\dim_{\mathbb{C}}\mathbb{B}=4$.
 
-**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_k\vec e_k$ has the two eigenvalues $\lambda=t+i|\vec q|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\vec q=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.
+**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_k\vec e_k$ has the two eigenvalues $\lambda=t+i|\vec q|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\vec q=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde Q_1}$.
 
 **Proof.** The eigenvalues of a real quaternion are those of its $2\times2$ matrix, computed in *Biquaternion Spectral Theory*; the collapse is the criterion above.
 

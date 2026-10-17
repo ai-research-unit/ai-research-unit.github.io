@@ -123,7 +123,7 @@ and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}
 
 The compact slice is not only the compact real form of the algebra; it is the double cover of the rotation group of the Hermitian subspace.
 
-**Theorem.** The inner conjugation $\tilde{U}\mapsto\Theta_{\tilde{U}}$, $\Theta_{\tilde{U}}(\tilde{R})=\tilde{U}\tilde{R}\tilde{U}^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
+**Theorem.** The inner conjugation $\tilde{U}\mapsto\Theta_{\tilde{U}}$, $\Theta_{\tilde{U}}(\tilde Q_1)=\tilde{U}\tilde Q_1\tilde{U}^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
 
 $$
 \mathrm{U}(\mathbb{B})\longrightarrow SO(3),\qquad \tilde{U}\longmapsto \Theta_{\tilde{U}}|_{\mathbb{M}_{+}},

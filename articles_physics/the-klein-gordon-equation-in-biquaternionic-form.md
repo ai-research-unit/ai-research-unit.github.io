@@ -269,22 +269,22 @@ So the verdict on the framework's own question is the following. The second-orde
 There is a check that the biquaternion Klein–Gordon equation is consistent with the parent article rather than merely alongside it. For the central field, remove the rest energy by the substitution
 
 $$
-\tilde{\Phi} = \exp(-imc^2t/\hbar)\,\tilde{\psi},
+\tilde{\Phi} = \exp(-imc^2t/\hbar)\,\psi,
 $$
 
-with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ and using $\partial^2/\partial t^2\!\left(\exp(-imc^2t/\hbar)\tilde{\psi}\right) = \exp(-imc^2t/\hbar)\left(\partial^2/\partial t^2\tilde{\psi} - 2i\frac{mc^2}{\hbar}\partial/\partial t\tilde{\psi} - \frac{m^2c^4}{\hbar^2}\tilde{\psi}\right)$ gives
+with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ and using $\partial^2/\partial t^2\!\left(\exp(-imc^2t/\hbar)\psi\right) = \exp(-imc^2t/\hbar)\left(\partial^2/\partial t^2\psi - 2i\frac{mc^2}{\hbar}\partial/\partial t\psi - \frac{m^2c^4}{\hbar^2}\psi\right)$ gives
 
 $$
-\frac{1}{c^2}\partial^2/\partial t^2\tilde{\psi} - \frac{2im}{\hbar}\partial/\partial t\tilde{\psi} - \Delta\tilde{\psi} = 0 ,
+\frac{1}{c^2}\partial^2/\partial t^2\psi - \frac{2im}{\hbar}\partial/\partial t\psi - \Delta\psi = 0 ,
 $$
 
-in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial t^2\tilde{\psi}/c^2$, which is small when the field varies slowly on the time scale $\hbar/(mc^2)$, leaves
+in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial t^2\psi/c^2$, which is small when the field varies slowly on the time scale $\hbar/(mc^2)$, leaves
 
 $$
-i\hbar\,\partial/\partial t\tilde{\psi} = -\frac{\hbar^2}{2m}\Delta\tilde{\psi},
+i\hbar\,\partial/\partial t\psi = -\frac{\hbar^2}{2m}\Delta\psi,
 $$
 
-the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{M}_+$, and the equation is of the parent article's form $i\hbar\,\partial/\partial t\tilde{\psi} = \tilde{H}\tilde{\psi}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = mc^2/\hbar + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
+the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{M}_+$, and the equation is of the parent article's form $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = mc^2/\hbar + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
 
 One qualification belongs with the limit. The field reduced here is a **scalar**, so the limit lands on the scalar Schrödinger equation, which is the spin-$0$ special case of the parent article's two-component spinor equation, not an identification of the full spinor module. The scalar sector is consistent with the parent, not identical to it.
 

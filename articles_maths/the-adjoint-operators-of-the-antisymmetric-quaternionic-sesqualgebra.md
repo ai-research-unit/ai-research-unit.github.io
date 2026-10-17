@@ -5,10 +5,10 @@
 To an element $\tilde A$ of the antisymmetric quaternionic sesqualgebra of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* the block attaches the left multiplication
 
 $$
-L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\vec A\times\overline{\vec R},
+L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2=\vec A\times\overline{\vec R},
 $$
 
-the map that pairs $\tilde A$ with the second slot of the multiplication. The map is **conjugate-linear** in $\tilde R$, since it is the composition of the coefficient conjugation with a complex-linear map, and this single fact removes the ordinary operator calculus from the block: the left multiplications do not form an associative algebra of operators, the map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear in the parameter (the first slot is the linear one) while the operator itself is conjugate-linear in its argument, and the adjoint with respect to the form of the block is again conjugate-linear. This article reads the operators one by one. The **left multiplication** is described with its matrix in the real basis, its rank, its kernel and its image. The **adjoint** with respect to the Krein form is then computed, in the class of conjugate-linear maps, and it turns out to be the negative of the operator itself. The **derivations** of the block are computed, and they form the direct sum of the endomorphisms of the centre and of the three-dimensional real skew maps of the vector parts; from them the **structure group** of the block, the group of invertible linear maps preserving the multiplication, is read. The **composition** of two left multiplications is finally computed, and with it the conjugate-linear invariants of the block. The reading runs parallel to the operator articles of the two algebras and of the two sesqualgebras, and it is the operator side of the multiplication.
+the map that pairs $\tilde A$ with the second slot of the multiplication. The map is **conjugate-linear** in $\tilde Q_2$, since it is the composition of the coefficient conjugation with a complex-linear map, and this single fact removes the ordinary operator calculus from the block: the left multiplications do not form an associative algebra of operators, the map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear in the parameter (the first slot is the linear one) while the operator itself is conjugate-linear in its argument, and the adjoint with respect to the form of the block is again conjugate-linear. This article reads the operators one by one. The **left multiplication** is described with its matrix in the real basis, its rank, its kernel and its image. The **adjoint** with respect to the Krein form is then computed, in the class of conjugate-linear maps, and it turns out to be the negative of the operator itself. The **derivations** of the block are computed, and they form the direct sum of the endomorphisms of the centre and of the three-dimensional real skew maps of the vector parts; from them the **structure group** of the block, the group of invertible linear maps preserving the multiplication, is read. The **composition** of two left multiplications is finally computed, and with it the conjugate-linear invariants of the block. The reading runs parallel to the operator articles of the two algebras and of the two sesqualgebras, and it is the operator side of the multiplication.
 
 The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
 
@@ -18,18 +18,18 @@ The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its 
 
 ### The Rule and the Class
 
-**Definition.** The **left multiplication** by $\tilde A$ is $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\vec A\times\overline{\vec R}$.
+**Definition.** The **left multiplication** by $\tilde A$ is $L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2=\vec A\times\overline{\vec R}$.
 
 **Proposition.** The left multiplication is **conjugate-linear**:
 
 $$
-L_{\tilde A}(\tilde R+\tilde S)=L_{\tilde A}\tilde R+L_{\tilde A}\tilde S,\qquad
-L_{\tilde A}(A\tilde R)=\overline{A}\,L_{\tilde A}\tilde R\qquad(A\in\mathbb{C}),
+L_{\tilde A}(\tilde Q_2+\tilde S)=L_{\tilde A}\tilde Q_2+L_{\tilde A}\tilde S,\qquad
+L_{\tilde A}(A\tilde Q_2)=\overline{A}\,L_{\tilde A}\tilde Q_2\qquad(A\in\mathbb{C}),
 $$
 
 and it depends on $\tilde A$ through $\vec A$ alone.
 
-*Proof.* The cross product $\vec A\times\overline{\vec R}$ is additive in $\tilde R$ and conjugate-linear in $\overline{\vec R}$; a central $\tilde A$ has $\vec A=0$ and the map is zero.
+*Proof.* The cross product $\vec A\times\overline{\vec R}$ is additive in $\tilde Q_2$ and conjugate-linear in $\overline{\vec R}$; a central $\tilde A$ has $\vec A=0$ and the map is zero.
 
 **Remark (the operator calculus is unavailable).** Because the first slot of the block is the linear one and the second the conjugate-linear one, the map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear in $\tilde A$ while the operator is conjugate-linear in its argument, and the left multiplications do not close under composition into an algebra in the ordinary sense: the composition of two of them is complex-linear, as computed below, so the family of operators is a real vector space stable under composition into a different class, and not a complex algebra of operators. The block is not associative, so there is no regular representation of the kind carried by the algebras, and the reading is done with the single operators and their adjoints.
 
@@ -54,17 +54,17 @@ $$
 
 the centre direct sum a complex line in the kernel, and the complex two-dimensional subspace orthogonal to $\vec A$ for the bilinear dot product in the image. The rank of $L_{\tilde A}$ over $\mathbb{R}$ is $4$, its nullity is $4$, and its trace is $0$.
 
-*Proof.* The equation $\vec A\times\overline{\vec R}=0$ says that $\overline{\vec R}$ is a complex multiple of $\vec A$, that is $\vec R\in\mathbb{C}\overline{\vec A}$; together with the centre, killed by the map, this is the kernel, of real dimension $2+2=4$. The image is the set of cross products with the fixed vector $\vec A$, which is the orthogonal complement of $\vec A$ in the three complex dimensions, of real dimension $4$; the rank is therefore $4$, and the nullity is $8-4=4$. The trace is the sum of the diagonal entries, and each is zero in the basis above: the map is conjugate-linear on the whole space, $L_{\tilde A}(\lambda\tilde R)=\overline{\lambda}\,L_{\tilde A}\tilde R$, and a conjugate-linear map of the real space has zero real trace, its real matrix carrying a block $B$ along the real directions and the block $-B$ along the imaginary ones; concretely the $\vec R$-coefficient of $\vec A\times\overline{\vec R}$ is $(\vec A\times\overline{\vec R},\vec R)=0$ in the real directions, and the imaginary directions obey the same by conjugate-linearity.
+*Proof.* The equation $\vec A\times\overline{\vec R}=0$ says that $\overline{\vec R}$ is a complex multiple of $\vec A$, that is $\vec R\in\mathbb{C}\overline{\vec A}$; together with the centre, killed by the map, this is the kernel, of real dimension $2+2=4$. The image is the set of cross products with the fixed vector $\vec A$, which is the orthogonal complement of $\vec A$ in the three complex dimensions, of real dimension $4$; the rank is therefore $4$, and the nullity is $8-4=4$. The trace is the sum of the diagonal entries, and each is zero in the basis above: the map is conjugate-linear on the whole space, $L_{\tilde A}(\lambda\tilde Q_2)=\overline{\lambda}\,L_{\tilde A}\tilde Q_2$, and a conjugate-linear map of the real space has zero real trace, its real matrix carrying a block $B$ along the real directions and the block $-B$ along the imaginary ones; concretely the $\vec R$-coefficient of $\vec A\times\overline{\vec R}$ is $(\vec A\times\overline{\vec R},\vec R)=0$ in the real directions, and the imaginary directions obey the same by conjugate-linearity.
 
-**Remark (the kernel and the image are complex subspaces).** The kernel and the image of the left multiplication are complex subspaces of the complex space, even though the map itself is conjugate-linear: the kernel is the centre together with a complex line, and the image is the complex plane orthogonal to $\vec A$. The conjugate-linearity of the map sends $i\tilde R$ to $-i\,L_{\tilde A}\tilde R$, but the kernel and the image are stable under $i$, as the formulas show.
+**Remark (the kernel and the image are complex subspaces).** The kernel and the image of the left multiplication are complex subspaces of the complex space, even though the map itself is conjugate-linear: the kernel is the centre together with a complex line, and the image is the complex plane orthogonal to $\vec A$. The conjugate-linearity of the map sends $i\tilde Q_2$ to $-i\,L_{\tilde A}\tilde Q_2$, but the kernel and the image are stable under $i$, as the formulas show.
 
 ## The Adjoint with respect to the Form
 
 **Definition.** For a conjugate-linear map $T$ of the space, its **adjoint** $T^{\dagger}$ is the conjugate-linear map with
 
 $$
-K\bigl(T\tilde R,\tilde S\bigr)=\overline{K\bigl(\tilde R,T^{\dagger}\tilde S\bigr)}
-\qquad\text{for all }\tilde R,\tilde S,
+K\bigl(T\tilde Q_2,\tilde S\bigr)=\overline{K\bigl(\tilde Q_2,T^{\dagger}\tilde S\bigr)}
+\qquad\text{for all }\tilde Q_2,\tilde S,
 $$
 
 the conjugate on the right because both $K$ and $T$ are conjugate-linear, the two conjugations cancelling for the composite.
@@ -75,9 +75,9 @@ $$
 L_{\tilde A}^{\dagger}=-L_{\tilde A},
 $$
 
-a conjugate-linear map. Equivalently, $\langle\tilde A\diamond\tilde R,\tilde S\rangle_{\natural*}=-\overline{\langle\tilde R,\tilde A\diamond\tilde S\rangle_{\natural*}}$.
+a conjugate-linear map. Equivalently, $\langle\tilde A\diamond\tilde Q_2,\tilde S\rangle_{\natural*}=-\overline{\langle\tilde Q_2,\tilde A\diamond\tilde S\rangle_{\natural*}}$.
 
-*Proof.* The left-hand side is $\langle\vec A\times\overline{\vec R},\tilde S\rangle_{\natural*}$, which reads $-\,(\vec A\times\overline{\vec R},\overline{\vec S})$; the right-hand side is $-\overline{\langle\tilde R,\vec A\times\overline{\vec S}\rangle_{\natural*}}$, whose inner term reads $(\vec R,\overline{\vec A\times\overline{\vec S}})$, and conjugating gives $(\overline{\vec R},\vec A\times\overline{\vec S})$. The two sides are $-\det[\vec A,\overline{\vec R},\overline{\vec S}]$ and $\det[\overline{\vec R},\vec A,\overline{\vec S}]$, the two sign readings of the same triple product, and they agree.
+*Proof.* The left-hand side is $\langle\vec A\times\overline{\vec R},\tilde S\rangle_{\natural*}$, which reads $-\,(\vec A\times\overline{\vec R},\overline{\vec S})$; the right-hand side is $-\overline{\langle\tilde Q_2,\vec A\times\overline{\vec S}\rangle_{\natural*}}$, whose inner term reads $(\vec R,\overline{\vec A\times\overline{\vec S}})$, and conjugating gives $(\overline{\vec R},\vec A\times\overline{\vec S})$. The two sides are $-\det[\vec A,\overline{\vec R},\overline{\vec S}]$ and $\det[\overline{\vec R},\vec A,\overline{\vec S}]$, the two sign readings of the same triple product, and they agree.
 
 **Remark (the adjoint is conjugate-linear, and this is settled).** The class of the adjoint is forced: a conjugate-linear map has a conjugate-linear adjoint with respect to a form that is conjugate-linear in one slot, and a linear adjoint would not satisfy the defining identity. The block settles the question in the corpus sense: the adjoint is read in the **conjugate-linear** class, and it is again the negative of the operator. An operator equal to the negative of its adjoint is the analogue for the block of a skew operator, and the relation is the operator form of the conjugate-alternation of the multiplication.
 
@@ -114,60 +114,60 @@ of real dimension $4+3=7$; its Lie algebra is $\mathrm{Der}(\diamond)$.
 
 ## The Composition and the Conjugate Invariants
 
-**Theorem (the square of a left multiplication).** For all $\tilde R$,
+**Theorem (the square of a left multiplication).** For all $\tilde Q_2$,
 
 $$
-L_{\tilde A}^2\tilde R=\overline{\vec A}\,(\vec A,\vec R)-(\vec A,\overline{\vec A})\,\vec R,
+L_{\tilde A}^2\tilde Q_2=\overline{\vec A}\,(\vec A,\vec R)-(\vec A,\overline{\vec A})\,\vec R,
 $$
 
 a complex-linear map of the vector part, nonzero in general.
 
-*Proof.* $L_{\tilde A}^2\tilde R=\vec A\times\overline{\vec A\times\overline{\vec R}}$, and expanding the double cross product gives $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$.
+*Proof.* $L_{\tilde A}^2\tilde Q_2=\vec A\times\overline{\vec A\times\overline{\vec R}}$, and expanding the double cross product gives $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$.
 
-**Remark (the composition of two left multiplications is complex-linear).** More generally $L_{\tilde A}L_{\tilde Q_1}\tilde R=\vec A\times\overline{\vec Q_1\times\overline{\vec R}}$, and the two conjugations cancel, so the composition is $\mathbb{C}$-linear; the family of left multiplications is therefore a real vector space whose products are complex-linear, stable under no complex-linear algebra structure on a single class.
+**Remark (the composition of two left multiplications is complex-linear).** More generally $L_{\tilde A}L_{\tilde Q_1}\tilde Q_2=\vec A\times\overline{\vec Q_1\times\overline{\vec R}}$, and the two conjugations cancel, so the composition is $\mathbb{C}$-linear; the family of left multiplications is therefore a real vector space whose products are complex-linear, stable under no complex-linear algebra structure on a single class.
 
-**Proposition (the operator and its conjugate).** Define the **conjugate** of the left multiplication by $\overline{L}_{\tilde A}\tilde R=\overline{L_{\tilde A}\overline{\tilde R}}$, again conjugate-linear. Then $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, and
+**Proposition (the operator and its conjugate).** Define the **conjugate** of the left multiplication by $\overline{L}_{\tilde A}\tilde Q_2=\overline{L_{\tilde A}\overline{\tilde Q_2}}$, again conjugate-linear. Then $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, and
 
 $$
-L_{\tilde A}L_{\overline{\vec A}}\tilde R=\vec A\times(\vec A\times\vec R),\qquad
-L_{\overline{\vec A}}L_{\tilde A}\tilde R=\overline{\vec A}\times(\overline{\vec A}\times\vec R),
+L_{\tilde A}L_{\overline{\vec A}}\tilde Q_2=\vec A\times(\vec A\times\vec R),\qquad
+L_{\overline{\vec A}}L_{\tilde A}\tilde Q_2=\overline{\vec A}\times(\overline{\vec A}\times\vec R),
 $$
 
 both $\mathbb{C}$-linear.
 
-*Proof.* By definition $\overline{L}_{\tilde A}\tilde R=\overline{\vec A\times\overline{\overline{\tilde R}}}=\overline{\vec A}\times\overline{\tilde R}=L_{\overline{\vec A}}\tilde R$. For the products, $L_{\tilde A}L_{\overline{\vec A}}\tilde R=\vec A\times\overline{\overline{\vec A}\times\overline{\vec R}}=\vec A\times(\vec A\times\vec R)$, the inner conjugation cancelling the coefficient conjugation of $\vec A$ and the one of the slot; the other product is the same with $\vec A$ conjugated.
+*Proof.* By definition $\overline{L}_{\tilde A}\tilde Q_2=\overline{\vec A\times\overline{\overline{\tilde Q_2}}}=\overline{\vec A}\times\overline{\tilde Q_2}=L_{\overline{\vec A}}\tilde Q_2$. For the products, $L_{\tilde A}L_{\overline{\vec A}}\tilde Q_2=\vec A\times\overline{\overline{\vec A}\times\overline{\vec R}}=\vec A\times(\vec A\times\vec R)$, the inner conjugation cancelling the coefficient conjugation of $\vec A$ and the one of the slot; the other product is the same with $\vec A$ conjugated.
 
-**Theorem (the conjugate invariant).** For all $\tilde A,\tilde R$,
+**Theorem (the conjugate invariant).** For all $\tilde A,\tilde Q_2$,
 
 $$
-K\bigl(L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\bigr)
+K\bigl(L_{\tilde A}\tilde Q_2,L_{\tilde A}\tilde Q_2\bigr)
 =-\bigl|\vec A\times\overline{\vec R}\bigr|^{2}\le0,
 $$
 
-and it vanishes exactly when $L_{\tilde A}\tilde R=0$.
+and it vanishes exactly when $L_{\tilde A}\tilde Q_2=0$.
 
 *Proof.* The self-pairing of the pure vector $\vec A\times\overline{\vec R}$ under the form, as in *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**Remark (the invariants are conjugate-linear).** The invariant $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}$ is a quadratic form in $\tilde R$ read through the conjugation of the second slot, and it is the operator form of the negative definiteness of the form on the vector subspace. The block carries no invariant of the ordinary polynomial kind, since its second slot is conjugate-linear; the invariants are the conjugate-linear ones, and the operator admits the real structure of the space and no complex polynomial identity beyond the square above.
+**Remark (the invariants are conjugate-linear).** The invariant $\langle L_{\tilde A}\tilde Q_2,L_{\tilde A}\tilde Q_2\rangle_{\natural*}$ is a quadratic form in $\tilde Q_2$ read through the conjugation of the second slot, and it is the operator form of the negative definiteness of the form on the vector subspace. The block carries no invariant of the ordinary polynomial kind, since its second slot is conjugate-linear; the invariants are the conjugate-linear ones, and the operator admits the real structure of the space and no complex polynomial identity beyond the square above.
 
 ## Summary
 
-The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
+The left multiplication $L_{\tilde A}\tilde Q_2=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde A}\tilde Q_2,L_{\tilde A}\tilde Q_2\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ | the left multiplication, conjugate-linear |
+| $L_{\tilde A}\tilde Q_2=\vec A\times\overline{\vec R}$ | the left multiplication, conjugate-linear |
 | $\ker L_{\tilde A}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ | the kernel, of real dimension $4$ |
 | $\mathrm{im}\,L_{\tilde A}=\{\vec V:(\vec A,\vec V)=0\}$ | the image, a complex plane |
 | rank $4$, nullity $4$, trace $0$ | the invariants of the operator |
 | $L_{\tilde A}^{\dagger}=-L_{\tilde A}$ | the adjoint, conjugate-linear |
 | $\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$ | the derivations, of real dimension $7$ |
 | $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ | the structure group |
-| $L_{\tilde A}^2\tilde R=\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$ | the square of the operator |
-| $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, $L_{\tilde A}L_{\overline{\vec A}}\tilde R=\vec A\times(\vec A\times\vec R)$ | the conjugate operator and the two products |
-| $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-\lvert\vec A\times\overline{\vec R}\rvert^{2}$ | the conjugate invariant |
+| $L_{\tilde A}^2\tilde Q_2=\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$ | the square of the operator |
+| $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, $L_{\tilde A}L_{\overline{\vec A}}\tilde Q_2=\vec A\times(\vec A\times\vec R)$ | the conjugate operator and the two products |
+| $\langle L_{\tilde A}\tilde Q_2,L_{\tilde A}\tilde Q_2\rangle_{\natural*}=-\lvert\vec A\times\overline{\vec R}\rvert^{2}$ | the conjugate invariant |
 
 ## Further Reading
 

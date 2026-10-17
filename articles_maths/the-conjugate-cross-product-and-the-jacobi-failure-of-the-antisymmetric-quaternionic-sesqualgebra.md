@@ -86,10 +86,10 @@ $$
 **Theorem.** The block fails the Jacobi identity. With the cyclic sum declared by the corpus,
 
 $$
-(\tilde P\diamond\tilde Q)\diamond\tilde R+(\tilde Q\diamond\tilde R)\diamond\tilde P+(\tilde R\diamond\tilde P)\diamond\tilde Q,
+(\tilde P\diamond\tilde Q)\diamond\tilde Q_1+(\tilde Q\diamond\tilde Q_1)\diamond\tilde P+(\tilde Q_1\diamond\tilde P)\diamond\tilde Q,
 $$
 
-the triple $(\tilde P,\tilde Q,\tilde R)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$.
+the triple $(\tilde P,\tilde Q,\tilde Q_1)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$.
 
 *Proof.* The three inner values are $\vec e_x\diamond \vec e_x=0$, $\vec e_x\diamond i\vec e_y=\vec e_x\times(-i\vec e_y)=-i\vec e_z$ and $i\vec e_y\diamond \vec e_x=(i\vec e_y)\times \vec e_x=-i\vec e_z$. The three reassociations are therefore $0$, $(-i\vec e_z)\diamond \vec e_x=(-i\vec e_z)\times \vec e_x=-i\vec e_y$ and $(-i\vec e_z)\diamond \vec e_x=-i\vec e_y$, whose sum is $-2i\vec e_y$.
 

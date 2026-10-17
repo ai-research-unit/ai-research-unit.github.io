@@ -47,7 +47,7 @@ $$
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i \vec e_\mu$ corresponds to $\sigma_\mu$, and the quaternion relations $\vec e_\mu \vec e_\nu = \sum_\lambda \epsilon_{\mu\nu\lambda}\vec e_\lambda$ hold on both sides. Two properties of $\mathsf{M}_2$ are used repeatedly:
 
 $$
-\mathsf{M}_2(\tilde{Q}\tilde{R}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R}), \qquad
+\mathsf{M}_2(\tilde{Q}\tilde Q_3) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_3), \qquad
 \det\mathsf{M}_2(\tilde{Q}) = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural},
 $$
 
@@ -90,7 +90,7 @@ $$
 \end{pmatrix}.
 $$
 
-The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\mathsf{M}_2(\tilde{Q})(\mathsf{M}_2(\tilde{R})\psi) = \mathsf{M}_2(\tilde{Q}\tilde{R})\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
+The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\mathsf{M}_2(\tilde{Q})(\mathsf{M}_2(\tilde Q_3)\psi) = \mathsf{M}_2(\tilde{Q}\tilde Q_3)\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
 
 ## The Spinor Module as a Left Ideal
 
@@ -135,13 +135,13 @@ $$
 and a general spinor in $\mathbb{B}\tilde\Pi_+$ is
 
 $$
-\tilde{\psi} = \psi_1\, \tilde\Pi_+ + \psi_2\, \vec\Upsilon_y, \qquad \psi_1,\psi_2 \in \mathbb{C}.
+\psi = \psi_1\, \tilde\Pi_+ + \psi_2\, \vec\Upsilon_y, \qquad \psi_1,\psi_2 \in \mathbb{C}.
 $$
 
-The coordinate map $\tilde{\psi}\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
+The coordinate map $\psi\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
 
 $$
-\tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}\tilde\Pi_+) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
+\tilde{Q}\psi = \psi_1(\tilde{Q}\tilde\Pi_+) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
 $$
 
 For example $\vec e_z \tilde\Pi_+ = -i \tilde\Pi_+$ and $\vec e_z \vec\Upsilon_y = i \vec\Upsilon_y$, matching $\mathsf{M}_2(\vec e_z) = \operatorname{diag}(-i,i)$; and $\vec e_x \tilde\Pi_+ = -i \vec\Upsilon_y$, matching the first column of $\mathsf{M}_2(\vec e_x)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
@@ -209,7 +209,7 @@ The subgroups relevant to the series sit inside it as follows:
 | Element | Characterization | Subspace |
 |---|---|---|
 | Pure boost $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
-| Pure rotation $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
+| Pure rotation $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
 | General $\tilde{U}$ | Unit norm | $\mathbb{B}$ |
 
 Pure boosts satisfy $\tilde{U}^{*} = \tilde{U}$; they do not form a subgroup (the product of two non-collinear boosts is a boost plus a rotation). Pure rotations form the subgroup $SU(2) = SL(2,\mathbb{C})\cap \mathrm{U}(2)$.
@@ -254,7 +254,7 @@ $$
 \qquad \tilde{U}\in SL(2,\mathbb{C}),\quad \psi\in S.
 $$
 
-Equivalently, in the ideal model, $\tilde{\psi}\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde{U}\tilde{\psi}\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:
+Equivalently, in the ideal model, $\psi\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde{U}\psi\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:
 
 $$
 \tilde{U}_2(\tilde{U}_1\psi) = (\tilde{U}_2\tilde{U}_1)\psi.
@@ -273,10 +273,10 @@ $$
 as follows from $\mathsf{M}_2(i\vec u_{\mathrm b}) = \vec u_{\mathrm b}\cdot\boldsymbol{\sigma}$. For $\vec u_{\mathrm b} = \vec u_z$ this is the diagonal matrix $\operatorname{diag}(\exp(\psi/2),\exp(-\psi/2))$, which stretches one spinor component and contracts the other. For a rotation about $\vec u_{\mathrm r}$ by angle $\theta$,
 
 $$
-\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde u_{\mathrm r}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma},
 $$
 
-the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\mathsf{M}_2(\tilde{R})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
+the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\mathsf{M}_2(\tilde u_{\mathrm r})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
 
 ### The Infinitesimal Action
 
@@ -294,7 +294,7 @@ $$
 
 so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathrm{SL}(2,\mathbb{C})$.
 
-The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde{R}^{*}\tilde{R} = e_t$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
+The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
 
 ## Bilinear Pairings and the Vector Representation
 
@@ -534,7 +534,7 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y),\ \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)=\vec e_y\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ of $S$ |
 | $SL(2,\mathbb{C}) = \{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
 | $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
 | $\psi\mapsto\tilde{U}\psi$ | Lorentz action on the spinor module |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | Hermitian form (invariant on $SU(2)$) |

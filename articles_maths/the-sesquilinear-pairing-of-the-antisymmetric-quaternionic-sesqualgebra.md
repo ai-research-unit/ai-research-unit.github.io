@@ -20,7 +20,7 @@ The form is owned by *The Krein Gram Matrix and the Restrictions of the Form* an
 **Proposition (the pairing in coordinates).** For all biquaternions,
 
 $$
-K\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)
+K\bigl(\tilde P\diamond\tilde Q,\tilde Q_1\bigr)
 =-\sum_{\mu\in\{x,y,z\}}\bigl(\vec P\times\overline{\vec Q}\bigr)_\mu\,\overline{R_\mu}
 =-\bigl(\vec P\times\overline{\vec Q},\overline{\vec R}\bigr),
 $$
@@ -66,10 +66,10 @@ the ten remaining pairs being zero.
 **Definition.** A form $\beta$ is **invariant under the block** when
 
 $$
-\beta\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)=-\overline{\beta\bigl(\tilde P,\tilde Q\diamond\tilde R\bigr)}
+\beta\bigl(\tilde P\diamond\tilde Q,\tilde Q_1\bigr)=-\overline{\beta\bigl(\tilde P,\tilde Q\diamond\tilde Q_1\bigr)}
 $$
 
-for all $\tilde P,\tilde Q,\tilde R$. The condition is the one of the corpus for a sesquilinear invariant, read with the conjugate of the value because the block is conjugate-linear in its second slot.
+for all $\tilde P,\tilde Q,\tilde Q_1$. The condition is the one of the corpus for a sesquilinear invariant, read with the conjugate of the value because the block is conjugate-linear in its second slot.
 
 **Theorem (the invariant forms form a line).** In each of the four homogeneous classes of forms of the block — complex-bilinear, linear in the first slot and conjugate-linear in the second, conjugate-linear in the first and linear in the second, and conjugate-linear in both — the forms $\beta$ invariant under the block form a space of complex dimension $1$ and real dimension $2$. In every one of the four the space is spanned by the central form
 
@@ -83,7 +83,7 @@ or the corresponding doubly conjugate-linear form according to the class, and it
 
 *Proof.* Write $\beta$ with a coefficient matrix $G$, of sixteen complex entries in the homogeneous classes, and impose the displayed identity on the triples of the **real** basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, that is on the $8^{3}=512$ real triples. The identity is multilinear over $\mathbb{R}$ and not over $\mathbb{C}$, because the conjugation of the second slot of the block and the conjugations that define the class are not complex-linear; the four-element complex basis of each slot does not suffice, and a check reduced to its $4^{3}=64$ triples reports spurious solutions — the form $i\,(P_x\overline{Q_x}+P_y\overline{Q_y}+P_z\overline{Q_z})$, for instance, passes the $64$ triples and fails the ordinary triple $(\vec e_x,i\vec e_y,\vec e_z)$. The linear system over $\mathbb{R}$ built on the real basis has a solution space of real dimension $2$ in each of the four classes, spanned by the central form above with coefficient $1$ and with coefficient $i$. The computation shows that every solution is supported on the entry $(0,0)$ alone, that is, depends only on the scalar coordinates of the two arguments.
 
-**Remark (the enlarged class is the sum of the four central lines).** If the class is enlarged to all real-bilinear complex-valued forms on the real space, of real dimension $128$, the invariant space has real dimension $8$, the direct sum of the four central lines of the theorem: the forms $a\,P_tQ_t+b\,P_t\overline{Q_t}+c\,\overline{P_t}Q_t+d\,\overline{P_t}\,\overline{Q_t}$ with $a,b,c,d\in\mathbb{C}$. Every invariant is central, and the enlargement adds the sums of one form of each class and no form outside the four lines. The reason is a vanishing forced on the real-bilinear class. Taking the third argument central in the displayed identity kills the right side and leaves $\beta(\tilde P\diamond\tilde Q,\tilde R)=0$ for a central $\tilde R$ and an arbitrary value, so a real-bilinear form vanishes as soon as its first argument is a pure vector and its second is central; taking the first argument central gives the mirror vanishing, on the value that varies in the second slot; and on the pure vectors alone the identity leaves only the zero form. The two scalar coordinates are therefore the only entries that survive.
+**Remark (the enlarged class is the sum of the four central lines).** If the class is enlarged to all real-bilinear complex-valued forms on the real space, of real dimension $128$, the invariant space has real dimension $8$, the direct sum of the four central lines of the theorem: the forms $a\,P_tQ_t+b\,P_t\overline{Q_t}+c\,\overline{P_t}Q_t+d\,\overline{P_t}\,\overline{Q_t}$ with $a,b,c,d\in\mathbb{C}$. Every invariant is central, and the enlargement adds the sums of one form of each class and no form outside the four lines. The reason is a vanishing forced on the real-bilinear class. Taking the third argument central in the displayed identity kills the right side and leaves $\beta(\tilde P\diamond\tilde Q,\tilde Q_1)=0$ for a central $\tilde Q_1$ and an arbitrary value, so a real-bilinear form vanishes as soon as its first argument is a pure vector and its second is central; taking the first argument central gives the mirror vanishing, on the value that varies in the second slot; and on the pure vectors alone the identity leaves only the zero form. The two scalar coordinates are therefore the only entries that survive.
 
 **Remark (why the invariant is central).** The block has zero scalar part and kills the centre in both slots. Its second slot is conjugate-linear, so the invariance condition carries a conjugate on the swapped value, and the only way a form can survive the three arguments is to read the two scalar coordinates alone: every vector index is carried by the block into the vector subspace, where the minus signs of the form and the conjugations of the slot are incompatible with the invariance. The space is therefore the central line, of complex dimension $1$.
 
@@ -116,17 +116,17 @@ The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature 
 
 ## Summary
 
-Read against the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the block pairs a value with a third element as $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{\natural*}=-(\vec P\times\overline{\vec Q},\overline{\vec R})$ and a value with itself as $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{\natural*}=-\lvert\tilde P\diamond\tilde Q\rvert^{2}\le0$, so the block takes its values on the negative side of the form and is null there only when the value is zero. The Gram matrix of the sixteen basis pairs has rank $3$ over $\mathbb{C}$ and radical of complex dimension $13$, the values spanning the vector subspace, and the induced form is negative semidefinite of real rank $6$. The forms invariant under the block form a complex line of real dimension 2 in each of the four homogeneous classes of slot types, spanned by the central form $\beta_0(\tilde P,\tilde Q)=P_t\overline{Q_t}$ in the sesquilinear class and by $P_tQ_t$ in the bilinear class; every invariant of a homogeneous class is central and degenerate on the vector subspace, while the enlarged class of all real-bilinear invariants has real dimension $8$, the direct sum of the four central lines. The trace form vanishes identically. On the remarkable subspaces the pairing reads the negative definite vector row, the block never reaching the positive definite centre.
+Read against the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the block pairs a value with a third element as $\langle\tilde P\diamond\tilde Q,\tilde Q_1\rangle_{\natural*}=-(\vec P\times\overline{\vec Q},\overline{\vec R})$ and a value with itself as $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{\natural*}=-\lvert\tilde P\diamond\tilde Q\rvert^{2}\le0$, so the block takes its values on the negative side of the form and is null there only when the value is zero. The Gram matrix of the sixteen basis pairs has rank $3$ over $\mathbb{C}$ and radical of complex dimension $13$, the values spanning the vector subspace, and the induced form is negative semidefinite of real rank $6$. The forms invariant under the block form a complex line of real dimension 2 in each of the four homogeneous classes of slot types, spanned by the central form $\beta_0(\tilde P,\tilde Q)=P_t\overline{Q_t}$ in the sesquilinear class and by $P_tQ_t$ in the bilinear class; every invariant of a homogeneous class is central and degenerate on the vector subspace, while the enlarged class of all real-bilinear invariants has real dimension $8$, the direct sum of the four central lines. The trace form vanishes identically. On the remarkable subspaces the pairing reads the negative definite vector row, the block never reaching the positive definite centre.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, linear in the first argument |
-| $\langle\tilde P\diamond\tilde Q,\tilde R\rangle_{\natural*}$ | the pairing of a value with a third element |
+| $\langle\tilde P\diamond\tilde Q,\tilde Q_1\rangle_{\natural*}$ | the pairing of a value with a third element |
 | $\langle\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\rangle_{\natural*}=-\lvert\tilde P\diamond\tilde Q\rvert^{2}$ | the self-pairing of a value |
 | the sixteen-by-sixteen Gram matrix | rank $3$ over $\mathbb{C}$, radical of complex dimension $13$ |
-| $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ | the invariance condition |
+| $\beta(\tilde P\diamond\tilde Q,\tilde Q_1)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde Q_1)}$ | the invariance condition |
 | the four homogeneous classes | complex-bilinear, the two mixed sesquilinear, and doubly conjugate-linear |
 | $\beta_0(\tilde P,\tilde Q)=P_t\overline{Q_t}$, $\beta_0(\tilde P,\tilde Q)=P_tQ_t$ | the invariant form of a homogeneous class, of complex dimension $1$ |
 | real dimension $8$ | the invariant space of the enlarged real-bilinear class, the direct sum of the four central lines |

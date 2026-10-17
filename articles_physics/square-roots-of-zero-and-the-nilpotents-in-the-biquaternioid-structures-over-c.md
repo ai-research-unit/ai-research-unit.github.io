@@ -382,7 +382,7 @@ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e
 projectors of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $i\vec e_z$ is a root of $+1$,
 $(i\vec e_z)^2=e_t$, and the two are its associated idempotents. The creation and annihilation operators
 of a single fermionic mode are therefore **nilpotents of the algebra itself**, and the canonical
-anticommutator $\{\tilde a,\tilde a^\dagger\}=e_t$ is the statement that a square-zero pair multiplies to
+anticommutator $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ is the statement that a square-zero pair multiplies to
 the identity. Pauli exclusion is the vanishing square: $\tilde\Upsilon^{2}=0$ says that a second
 application of the same step gives nothing, which is exactly the algebraic form of the statement that a
 mode cannot be occupied twice. The vacuum is the product of the two steps,
@@ -392,8 +392,8 @@ the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaterni
 two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
 
 **Why the ladder is the nilpotent one.** *The Biquaternion Vacuum as a Minimal Idempotent* records that
-the algebra contains no bosonic ladder: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy
-$[\tilde a,\tilde a^\dagger]=e_t$, because a commutator has vanishing trace while
+the algebra contains no bosonic ladder: no pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\in\mathbb{B}$ can satisfy
+$[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because a commutator has vanishing trace while
 $\mathrm{Tr}(e_t)=2$. The trace argument selects the anticommutator, hence the fermionic statistics, for
 this algebra's ladder, and the nilpotent class is the class that can carry it. The nilpotent article
 therefore belongs beside the idempotent article for a reason sharper than a shared position on the cone:
@@ -507,8 +507,8 @@ sharp: nilpotency is what a mode operator does, not what a hole is.
 Transformation in Biquaternionic Form* relates a spin-$\tfrac12$ chain to a chain of fermionic modes, and its
 framework finding is that at one site there is nothing to transform. The spin ladder and the fermionic mode
 are the **same element** of $\mathbb{B}$: the parents' operators
-$\tilde a=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\tilde a^{2}=0$ and
-$\{\tilde a,\tilde a^\dagger\}=e_t$ inside the algebra, so the square-zero mode is not adjoined but found.
+$\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\vec\Upsilon_x^{2}=0$ and
+$\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ inside the algebra, so the square-zero mode is not adjoined but found.
 The Jordan–Wigner string — the product of the other sites' fermion parities — has an empty product at one
 site, and the article states the consequence exactly: the transformation is the **choice of a square root of
 the spin algebra**, and the string is its branch cut. The reading is that nilpotency is the algebra's native
@@ -616,7 +616,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   itself is a difference from the sea, not a nilpotent.
 - The nilpotent mode is **native**, and the map to it is an identity at one site. *The Jordan–Wigner
   Transformation in Biquaternionic Form* finds that the one-site spin ladder is the fermionic mode itself,
-  $\tilde a^{2}=0$, so the transformation is the choice of a square root of the spin algebra and the string
+  $\vec\Upsilon_x^{2}=0$, so the transformation is the choice of a square root of the spin algebra and the string
   is its branch cut. Nilpotency is the algebra's one-site fact; the string appears only with a second site.
 - Nilpotency at the level of a **graded extension** is where the algebra stops. In *Grassmann Coherent States
   in Biquaternionic Form* the coherent-state labels generate a Grassmann algebra by one odd variable per mode,

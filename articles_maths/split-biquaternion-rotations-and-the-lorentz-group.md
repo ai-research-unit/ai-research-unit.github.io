@@ -258,80 +258,80 @@ This is the precise content of the split in the classification: the elliptic and
 
 The unitary action $\tilde Q\mapsto\tilde S\tilde Q\tilde{S}^{*}$ of the preceding section is defined for every unit, unitary or not; taken in that generality it is the **dagger sandwich**, a linear representation of the unit group that is an automorphism only on the unitary subgroup.
 
-**Definition.** The **dagger sandwich** of a unit $\tilde R$ is the real-linear map
+**Definition.** The **dagger sandwich** of a unit $\tilde U$ is the real-linear map
 
 $$
-\operatorname{H}_{\tilde R} : \mathbb{H}_{\mathbb{D}}\longrightarrow\mathbb{H}_{\mathbb{D}}, \qquad \operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\,\tilde Q\,\tilde{R}^{*}.
+\operatorname{H}_{\tilde U} : \mathbb{H}_{\mathbb{D}}\longrightarrow\mathbb{H}_{\mathbb{D}}, \qquad \operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\,\tilde Q\,\tilde U^{*}.
 $$
 
-It is well defined for every unit and depends only on $\tilde R$; the two-sided placement of the Hermitian conjugate is what distinguishes it from left and right multiplication. It is invertible, with inverse $\operatorname{H}_{\tilde R^{-1}}$, since $(\tilde{R}^{*})^{-1} = (\tilde R^{-1})^{\dagger}$.
+It is well defined for every unit and depends only on $\tilde U$; the two-sided placement of the Hermitian conjugate is what distinguishes it from left and right multiplication. It is invertible, with inverse $\operatorname{H}_{\tilde U^{-1}}$, since $(\tilde U^{*})^{-1} = (\tilde U^{-1})^{\dagger}$.
 
-**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde R$ be a unit. Then $\operatorname{H}_{\tilde R}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde R}(\tilde Q_1)\operatorname{H}_{\tilde R}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde{R}^{*}\tilde R = e_t$, that is, if and only if $\tilde R$ is unitary.
+**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde U$ be a unit. Then $\operatorname{H}_{\tilde U}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde U}(\tilde Q_1)\operatorname{H}_{\tilde U}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde U^{*}\tilde U = e_t$, that is, if and only if $\tilde U$ is unitary.
 
-**Proof.** The two sides are $\tilde R\tilde Q_1\tilde Q_2\tilde{R}^{*}$ and $\tilde R\tilde Q_1\tilde{R}^{*}\tilde R\tilde Q_2\tilde{R}^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde{R}^{*}\tilde R$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde{R}^{*} = \tilde R^{-1}$ and $\tilde R$ is unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$.
+**Proof.** The two sides are $\tilde U\tilde Q_1\tilde Q_2\tilde U^{*}$ and $\tilde U\tilde Q_1\tilde U^{*}\tilde U\tilde Q_2\tilde U^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde U^{*}\tilde U$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde U^{*} = \tilde U^{-1}$ and $\tilde U$ is unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$.
 
-**Theorem.** For every unit $\tilde R$ the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
+**Theorem.** For every unit $\tilde U$ the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
 
-**Proof.** If $\tilde Q^{\dagger} = \tilde Q$ then $(\tilde R\tilde Q\tilde{R}^{*})^{\dagger} = \tilde R^{\dagger{}^{*}}\tilde Q^{\dagger}\tilde{R}^{*} = \tilde R\tilde Q\tilde{R}^{*}$, so the image is Hermitian; if $\tilde Q^{\dagger} = -\tilde Q$ the image is anti-Hermitian.
+**Proof.** If $\tilde Q^{\dagger} = \tilde Q$ then $(\tilde U\tilde Q\tilde U^{*})^{\dagger} = \tilde U^{\dagger{}^{*}}\tilde Q^{\dagger}\tilde U^{*} = \tilde U\tilde Q\tilde U^{*}$, so the image is Hermitian; if $\tilde Q^{\dagger} = -\tilde Q$ the image is anti-Hermitian.
 
-**Theorem (the defect under the indefinite form).** With $N_{\pm}(\tilde R) = \lvert\tilde R_{\pm}\rvert^{2}$ the two real components of the split-biquaternion norm,
+**Theorem (the defect under the indefinite form).** With $N_{\pm}(\tilde U) = \lvert\tilde U_{\pm}\rvert^{2}$ the two real components of the split-biquaternion norm,
 
 $$
-N\!\left(\operatorname{H}_{\tilde R}(\tilde Q)\right) = N_+(\tilde R)\,N_-(\tilde R)\,\langle\tilde Q\rangle_{\natural}, \qquad g\!\left(\operatorname{H}_{\tilde R}(\tilde Q)\right) = g(\tilde Q) \ \text{ for unitary } \tilde R .
+N\!\left(\operatorname{H}_{\tilde U}(\tilde Q)\right) = N_+(\tilde U)\,N_-(\tilde U)\,\langle\tilde Q\rangle_{\natural}, \qquad g\!\left(\operatorname{H}_{\tilde U}(\tilde Q)\right) = g(\tilde Q) \ \text{ for unitary } \tilde U .
 $$
 
-**Proof.** The split-biquaternion norm is multiplicative, so $\langle\operatorname{H}_{\tilde R}(\tilde Q)\rangle_{\natural} = \langle\tilde R\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\langle\tilde{R}^{*}\rangle_{\natural}$, and the Hermitian conjugation interchanges the two idempotent components, so $\langle\tilde{R}^{*}\rangle_{\natural} = \lvert\tilde R_-\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_+\rvert^{2}\tilde\Pi_2$ while $\langle\tilde R\rangle_{\natural} = \lvert\tilde R_+\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_-\rvert^{2}\tilde\Pi_2$; their product is the central real number $\lvert\tilde R_+\rvert^{2}\lvert\tilde R_-\rvert^{2}e_t = N_+(\tilde R)N_-(\tilde R)e_t$. For the Hermitian form, a unitary $\tilde R$ satisfies $\tilde{R}^{*} = \tilde R^{-1}$, and $\operatorname{H}_{\tilde R}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger} = \operatorname{H}_{\tilde R}(\tilde Q^{\dagger})$, one has $g(\operatorname{H}_{\tilde R}(\tilde Q)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde R}(\tilde Q)\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde R\,\tilde Q\tilde Q^{\dagger}\tilde R^{-1}\bigr) = \mathrm{Sc}(\tilde Q\tilde Q^{\dagger}) = g(\tilde Q)$.
+**Proof.** The split-biquaternion norm is multiplicative, so $\langle\operatorname{H}_{\tilde U}(\tilde Q)\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\langle\tilde U^{*}\rangle_{\natural}$, and the Hermitian conjugation interchanges the two idempotent components, so $\langle\tilde U^{*}\rangle_{\natural} = \lvert\tilde U_-\rvert^{2}\tilde\Pi_1 + \lvert\tilde U_+\rvert^{2}\tilde\Pi_2$ while $\langle\tilde U\rangle_{\natural} = \lvert\tilde U_+\rvert^{2}\tilde\Pi_1 + \lvert\tilde U_-\rvert^{2}\tilde\Pi_2$; their product is the central real number $\lvert\tilde U_+\rvert^{2}\lvert\tilde U_-\rvert^{2}e_t = N_+(\tilde U)N_-(\tilde U)e_t$. For the Hermitian form, a unitary $\tilde U$ satisfies $\tilde U^{*} = \tilde U^{-1}$, and $\operatorname{H}_{\tilde U}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde U}(\tilde Q)^{\dagger} = \operatorname{H}_{\tilde U}(\tilde Q^{\dagger})$, one has $g(\operatorname{H}_{\tilde U}(\tilde Q)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde U}(\tilde Q)\operatorname{H}_{\tilde U}(\tilde Q)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde U\,\tilde Q\tilde Q^{\dagger}\tilde U^{-1}\bigr) = \mathrm{Sc}(\tilde Q\tilde Q^{\dagger}) = g(\tilde Q)$.
 
-The factor $N_+(\tilde R)N_-(\tilde R)$ is therefore the **defect** of the sandwich under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every unitary element. The biquaternion sandwich has the analogous factor $\lvert \langle\tilde R\rangle_{\natural}\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
+The factor $N_+(\tilde U)N_-(\tilde U)$ is therefore the **defect** of the sandwich under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every unitary element. The biquaternion sandwich has the analogous factor $\lvert \langle\tilde U\rangle_{\natural}\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
 
-**Theorem (kernel).** $\operatorname{H}_{\tilde R} = \mathrm{id}$ if and only if $\tilde R$ is central and unitary, that is $\tilde R = Q_te_t$ with $Q_t = q_t + jq'_t$ and $q_t^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $\langle\tilde R\rangle_{\natural} = e_t$ the kernel reduces to $\{\pm e_t\}$.
+**Theorem (kernel).** $\operatorname{H}_{\tilde U} = \mathrm{id}$ if and only if $\tilde U$ is central and unitary, that is $\tilde U = Q_te_t$ with $Q_t = q_t + jq'_t$ and $q_t^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $\langle\tilde U\rangle_{\natural} = e_t$ the kernel reduces to $\{\pm e_t\}$.
 
-**Proof.** If $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde Q$ for all $\tilde Q$, then $\tilde Q = e_t$ gives $\tilde R\tilde{R}^{*} = e_t$, so $\tilde R$ is unitary, and then $\tilde R\tilde Q = \tilde Q\tilde R$ for all $\tilde Q$, so $\tilde R$ is central. A central element is $Q_te_t$ with $Q_t\in\mathbb{D}$, and it is unitary exactly when $Q_t\bar{Q_t} = q_t^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $\langle\tilde R\rangle_{\natural} = Q_t^{2} = e_t$ gives $Q_t = \pm1$.
+**Proof.** If $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde Q$ for all $\tilde Q$, then $\tilde Q = e_t$ gives $\tilde U\tilde U^{*} = e_t$, so $\tilde U$ is unitary, and then $\tilde U\tilde Q = \tilde Q\tilde U$ for all $\tilde Q$, so $\tilde U$ is central. A central element is $Q_te_t$ with $Q_t\in\mathbb{D}$, and it is unitary exactly when $Q_t\bar{Q_t} = q_t^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $\langle\tilde U\rangle_{\natural} = Q_t^{2} = e_t$ gives $Q_t = \pm1$.
 
 The kernel of the full sandwich is thus the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $\mathrm{U}(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
 
 ### The Comparison with Left Multiplication, and the Table of Subspaces
 
-| | left multiplication $\tilde R\tilde Q$ | the sandwich $\operatorname{H}_{\tilde R}(\tilde Q)$ |
+| | left multiplication $\tilde U\tilde Q$ | the sandwich $\operatorname{H}_{\tilde U}(\tilde Q)$ |
 |---|---|---|
 | type of map | algebra endomorphism | neither multiplicative nor unital; a representation of the units |
-| image of $e_t$ | $\tilde R$ | $\tilde R\tilde{R}^{*}$, Hermitian but not central in general |
+| image of $e_t$ | $\tilde U$ | $\tilde U\tilde U^{*}$, Hermitian but not central in general |
 | kernel on the unit sphere | $\{e_t\}$ | $\{\pm e_t\}$ |
-| effect on the norm | $\langle\tilde R\tilde Q\rangle_{\natural} = \langle\tilde R\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | $\langle\operatorname{H}_{\tilde R}\tilde Q\rangle_{\natural} = N_+(\tilde R)N_-(\tilde R)\langle\tilde Q\rangle_{\natural}$ |
+| effect on the norm | $\langle\tilde U\tilde Q\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | $\langle\operatorname{H}_{\tilde U}\tilde Q\rangle_{\natural} = N_+(\tilde U)N_-(\tilde U)\langle\tilde Q\rangle_{\natural}$ |
 
 The sandwich acts on the four distinguished subspaces as follows.
 
-| subspace | preserved by $\operatorname{H}_{\tilde R}$? | image |
+| subspace | preserved by $\operatorname{H}_{\tilde U}$? | image |
 |---|---|---|
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the centre | no | $\tilde RQ_0\tilde{R}^{*}$, not central in general |
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the centre | no | $\tilde UQ_0\tilde U^{*}$, not central in general |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the quaternion subspace | no | not closed in general |
 | $\mathbb{M}_+$ | yes | $\mathbb{M}_+$ |
 | $\mathbb{M}_-$ | yes | $\mathbb{M}_-$ |
 
-The centre is not preserved: on $e_t$ the sandwich gives $\tilde R\tilde{R}^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
+The centre is not preserved: on $e_t$ the sandwich gives $\tilde U\tilde U^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
 
 ### The Polar Dictionary
 
 **Proposition.** In the idempotent description the sandwich acts componentwise,
 
 $$
-\operatorname{H}_{\tilde R}(\tilde Q)_+ = \tilde R_+\,\tilde Q_+\,\tilde{R}^{\natural}_- , \qquad \operatorname{H}_{\tilde R}(\tilde Q)_- = \tilde R_-\,\tilde Q_-\,\tilde{R}^{\natural}_+ ,
+\operatorname{H}_{\tilde U}(\tilde Q)_+ = \tilde U_+\,\tilde Q_+\,\tilde U^{\natural}_- , \qquad \operatorname{H}_{\tilde U}(\tilde Q)_- = \tilde U_-\,\tilde Q_-\,\tilde U^{\natural}_+ ,
 $$
 
 so that the polar data of the element appear as follows.
 
-| polar datum of $\tilde R$ | what the sandwich sees |
+| polar datum of $\tilde U$ | what the sandwich sees |
 |---|---|
-| the two components $\tilde R_+,\tilde R_-$ | the one-sided multiplications $\tilde R_+(\cdot)\tilde{R}^{\natural}_-$ and $\tilde R_-(\cdot)\tilde{R}^{\natural}_+$ on the two halves |
+| the two components $\tilde U_+,\tilde U_-$ | the one-sided multiplications $\tilde U_+(\cdot)\tilde U^{\natural}_-$ and $\tilde U_-(\cdot)\tilde U^{\natural}_+$ on the two halves |
 | the scale $N_+N_-$ | the dilation $N_+N_-$ of the split-biquaternion norm |
 | the central unitary factor | nothing: it is the kernel, and the sandwich is blind to it |
 | the two unit-sphere parts | the rotation parts of the action |
 
-**Proof.** Multiplication is componentwise in the idempotent description, and the Hermitian conjugation interchanges the components with a quaternion conjugation, $(\tilde{R}^{*})_+ = \tilde{R}^{\natural}_-$ and $(\tilde{R}^{*})_- = \tilde{R}^{\natural}_+$; the display follows. The invisibility of the central unitary factor is the kernel theorem and the scaling is the defect theorem.
+**Proof.** Multiplication is componentwise in the idempotent description, and the Hermitian conjugation interchanges the components with a quaternion conjugation, $(\tilde U^{*})_+ = \tilde U^{\natural}_-$ and $(\tilde U^{*})_- = \tilde U^{\natural}_+$; the display follows. The invisibility of the central unitary factor is the kernel theorem and the scaling is the defect theorem.
 
 ### The Relation to the Biquaternion Dagger Sandwich
 
-In the biquaternion case the dagger sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_t\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde{R}^{*}\neq\tilde R^{-1}$ unless $\tilde R$ is unitary; the Lorentzian form $g$ is preserved on the unitary group $\{\tilde R : \tilde R\tilde{R}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_t$ (*The Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
+In the biquaternion case the dagger sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_t\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde U^{*}\neq\tilde U^{-1}$ unless $\tilde U$ is unitary; the Lorentzian form $g$ is preserved on the unitary group $\{\tilde U : \tilde U\tilde U^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_t$ (*The Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
 
 ## The Hyperboloid, the Null Cone and the Rulings
 
@@ -371,7 +371,7 @@ The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries the Hermitian s
 
 The unit sphere $\{\tilde S : \langle\tilde S\rangle_{\natural} = e_t\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The unitary group $\{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{M}_-$ by isometries, fixes the timelike vector $je_t$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $\exp(\theta j)$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
-The dagger sandwich $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\tilde Q\tilde{R}^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$. It preserves the two sectors $\mathbb{M}_{\pm}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $N_+(\tilde R)N_-(\tilde R)$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every unitary element. Its kernel is the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_t\}$. In the idempotent description the sandwich acts componentwise as $\tilde Q_+\mapsto\tilde R_+\tilde Q_+\tilde{R}^{\natural}_-$ and $\tilde Q_-\mapsto\tilde R_-\tilde Q_-\tilde{R}^{\natural}_+$, so it sees every polar factor of the element except the central unitary one.
+The dagger sandwich $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$. It preserves the two sectors $\mathbb{M}_{\pm}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $N_+(\tilde U)N_-(\tilde U)$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every unitary element. Its kernel is the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_t\}$. In the idempotent description the sandwich acts componentwise as $\tilde Q_+\mapsto\tilde U_+\tilde Q_+\tilde U^{\natural}_-$ and $\tilde Q_-\mapsto\tilde U_-\tilde Q_-\tilde U^{\natural}_+$, so it sees every polar factor of the element except the central unitary one.
 
 In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{M}_-$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $\vec e_x + je_t$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
 
@@ -392,8 +392,8 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |
 | $\mathrm{SO}(n,m)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
 | $\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ | Unitary group |
-| $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\tilde Q\tilde{R}^{*}$ | The dagger sandwich of a general unit; the inner automorphism on the unitary subgroup |
-| $N_+(\tilde R)N_-(\tilde R)$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
+| $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ | The dagger sandwich of a general unit; the inner automorphism on the unitary subgroup |
+| $N_+(\tilde U)N_-(\tilde U)$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
 | kernel of $\operatorname{H}$ | The central unitary group, the split complex units of modulus one |
 | $\exp(\psi j) = \cosh\psi + j\sinh\psi$ | Split complex unit, hyperbolic one-parameter group |
 | $S(\mathbb{H}_{\mathbb{D}})\cong S^3\times S^3$ | Norm-one unit sphere |

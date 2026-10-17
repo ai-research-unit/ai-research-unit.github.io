@@ -72,7 +72,7 @@ A vector element $\vec P$ has $N(\vec P)=(\vec P,\vec P)$, so the **units** of t
 
 ### The Product Rule and the Closure
 
-The quaternion subspace is the real span of the four units, and on its elements the conjugated product $\tilde Q^{\natural}\tilde R$ of *Introduction to the General Quaternionic Algebra* is the ordinary quaternion product. The product $\bullet$ reads there as the **symmetrised quaternion product**,
+The quaternion subspace is the real span of the four units, and on its elements the conjugated product $\tilde Q^{\natural}\tilde Q_1$ of *Introduction to the General Quaternionic Algebra* is the ordinary quaternion product. The product $\bullet$ reads there as the **symmetrised quaternion product**,
 
 $$
 h\bullet k=\tfrac12(hk+kh)=h_tk_t-(\vec h,\vec k)+h_t\vec k+k_t\vec h,

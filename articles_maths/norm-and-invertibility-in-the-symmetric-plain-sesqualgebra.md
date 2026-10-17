@@ -24,7 +24,7 @@ The invertibility is where the article records an **absence**. The block is **no
 
 The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and then read on the products of this space; they are in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
-**Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, a **right unit** when $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and a **two-sided unit**, or an **identity**, when it is both. When a two-sided unit $e$ exists, an element $\tilde{Q}$ is **invertible of $\star$** when there is a $\tilde{R}$ with $\tilde{Q}\star\tilde{R} = \tilde{R}\star\tilde{Q} = e$, the element $\tilde{R}$ being the **inverse of $\tilde{Q}$ of $\star$**; the **group of units of $\star$** is the set of the invertible elements, a group under $\star$. When no two-sided unit exists, the three notions are empty and the group of units is not defined.
+**Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, a **right unit** when $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and a **two-sided unit**, or an **identity**, when it is both. When a two-sided unit $e$ exists, an element $\tilde{Q}$ is **invertible of $\star$** when there is a $\tilde Q_1$ with $\tilde{Q}\star\tilde Q_1 = \tilde Q_1\star\tilde{Q} = e$, the element $\tilde Q_1$ being the **inverse of $\tilde{Q}$ of $\star$**; the **group of units of $\star$** is the set of the invertible elements, a group under $\star$. When no two-sided unit exists, the three notions are empty and the group of units is not defined.
 
 Throughout this article the product is the symmetric plain sesqualgebra $\star$, and another product is named where it is meant.
 
@@ -100,13 +100,13 @@ $$
 
 with equality exactly when $\tilde P$ and $\tilde Q$ are linearly dependent. The algebraic norm is therefore **submultiplicative** and multiplicative exactly on linearly dependent pairs.
 
-**Remark (the identity that replaces multiplicativity).** The block has one exact multiplicativity, read on the form rather than on the algebraic norm: for all $\tilde P,\tilde Q,\tilde R$,
+**Remark (the identity that replaces multiplicativity).** The block has one exact multiplicativity, read on the form rather than on the algebraic norm: for all $\tilde P,\tilde Q,\tilde Q_1$,
 
 $$
-\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\,\langle e_t,\tilde R\rangle_{*},
+\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\,\langle e_t,\tilde Q_1\rangle_{*},
 $$
 
-and dually $\langle\tilde R,\tilde P\star\tilde Q\rangle_{*} = \langle\tilde R,e_t\rangle_{*}\overline{\langle\tilde P,\tilde Q\rangle_{*}}$. The first factor $\langle\tilde P,\tilde Q\rangle_{*}$ is the coefficient of the product, the second is the evaluation of the form on the idempotent $e_t$; the product is central, so the form evaluates it only through that one coefficient.
+and dually $\langle\tilde Q_1,\tilde P\star\tilde Q\rangle_{*} = \langle\tilde Q_1,e_t\rangle_{*}\overline{\langle\tilde P,\tilde Q\rangle_{*}}$. The first factor $\langle\tilde P,\tilde Q\rangle_{*}$ is the coefficient of the product, the second is the evaluation of the form on the idempotent $e_t$; the product is central, so the form evaluates it only through that one coefficient.
 
 **Remark (the algebraic norm is multiplicative on the centre).** On the central line the block is the field rule $(\lambda e_t)\star(\mu e_t) = \lambda\overline{\mu}e_t$ and the algebraic norm is the squared modulus, $\langle \lambda e_t\rangle_{*} = \lvert\lambda\rvert^{2}$; on central elements it is multiplicative, $H\bigl((\lambda e_t)\star(\mu e_t)\bigr) = \langle \lambda e_t\rangle_{*}\langle \mu e_t\rangle_{*}$, because $\mathbb{C}e_t$ is a field. Multiplicativity holds on the centre and fails off it, and the failure is measured by the corollary.
 
@@ -169,7 +169,7 @@ $$
 \langle\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$
 
-a real non-negative definite quadratic map of signature $(8,0)$, invariant under the three conjugations. The algebraic norm is **not multiplicative**: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, the defect is the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and multiplicativity holds on the centre alone. What replaces it is the exact identity $\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde R\rangle_{*}$, and the algebraic norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The **absence of a criterion** is the definiteness, $\langle\tilde{Q}\rangle_{*} = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way.
+a real non-negative definite quadratic map of signature $(8,0)$, invariant under the three conjugations. The algebraic norm is **not multiplicative**: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, the defect is the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and multiplicativity holds on the centre alone. What replaces it is the exact identity $\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde Q_1\rangle_{*}$, and the algebraic norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The **absence of a criterion** is the definiteness, $\langle\tilde{Q}\rangle_{*} = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way.
 
 ## Summary of Notation
 
@@ -180,7 +180,7 @@ a real non-negative definite quadratic map of signature $(8,0)$, invariant under
 | $\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $\tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_t$ | the square map, image $\mathbb{R}_{\geq0}e_t$ |
 | $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$ | the algebraic norm of a product |
-| $\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde R\rangle_{*}$ | the identity that replaces multiplicativity |
+| $\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde Q_1\rangle_{*}$ | the identity that replaces multiplicativity |
 | $\langle\tilde P,\tilde Q\rangle_{*} = \tfrac14\sum_k i^{k}\langle\tilde P + i^{k}\tilde Q\rangle_{*}$ | the Hermitian polarisation of the algebraic norm |
 | $\langle\tilde{Q}\rangle_{*} = 0\Leftrightarrow\tilde{Q} = 0$ | the definiteness, the substitute for the criterion |
 | no unit, no inverse, no group of units | the absence carried by the block |

@@ -51,9 +51,9 @@ $$
 \mathbb{B}\tilde\Pi(\vec u)=\{\tilde{Q}\tilde\Pi(\vec u) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2
 $$
 
-is the **state module** of the framework. Its elements are the spinors $\tilde{\psi}$, characterized by $\tilde{\psi}\tilde{P}=\tilde{\psi}$.
+is the **state module** of the framework. Its elements are the spinors $\psi$, characterized by $\psi\tilde{P}=\psi$.
 
-Two features of this object are fixed by the definitions and used constantly. First, in the matrix picture it is the space of matrices whose only nonzero column is the first, that is, the column spinors $\mathbb{C}^2$; the idempotent $\tilde\Pi(\vec e_z)$ is the diagonal matrix unit $E_{11}=\mathrm{diag}(1,0)$ under the isomorphism above. Second, the algebra acts on it by **left multiplication**, $\tilde{\psi}\mapsto\tilde{Q}\tilde{\psi}$, and this action is complex-linear because the scalar imaginary $i$ is central. The state module is therefore a genuine two-dimensional complex module over $\mathbb{B}$, and
+Two features of this object are fixed by the definitions and used constantly. First, in the matrix picture it is the space of matrices whose only nonzero column is the first, that is, the column spinors $\mathbb{C}^2$; the idempotent $\tilde\Pi(\vec e_z)$ is the diagonal matrix unit $E_{11}=\mathrm{diag}(1,0)$ under the isomorphism above. Second, the algebra acts on it by **left multiplication**, $\psi\mapsto\tilde{Q}\psi$, and this action is complex-linear because the scalar imaginary $i$ is central. The state module is therefore a genuine two-dimensional complex module over $\mathbb{B}$, and
 
 $$
 \mathbb{B}\cong\mathbb{B}\tilde{P}\oplus\mathbb{B}\tilde{Q}=S\oplus S
@@ -66,7 +66,7 @@ as a left module, where $\tilde{Q}=e_t-\tilde{P}$ is the complementary orthogona
 The Lorentz group acts on the state module by left multiplication,
 
 $$
-\tilde{\psi}\;\longmapsto\;\tilde{U}\tilde{\psi},
+\psi\;\longmapsto\;\tilde{U}\psi,
 \qquad
 \tilde{U}\in SL(2,\mathbb{C})=\{\tilde{U}\in\mathbb{B}:\tilde{U}\tilde{U}^{\natural}=e_t\},
 $$
@@ -163,7 +163,7 @@ $$
 
 which lies in the centre only if $\tilde{Q}$ does. Taking $\tilde{Q}$ with a nonzero vector part produces a nonzero vector part in the product, so the centre is not closed under left multiplication by the algebra. In particular the centre contains no nonzero $\mathbb{B}$-submodule: the only $\mathbb{B}$-module it could be is trivial, and $M_2(\mathbb{C})$ has no one-dimensional module with a nonzero action. The centre meets the state module trivially as well: a central element $\lambda e_t$ lies in $\mathbb{B}\tilde{P}$ only if its second column vanishes, which forces $\lambda=0$. This was confirmed in the matrix representation.
 
-The distinction has a second, more elementary face. Every nonzero element of the state module is a **zero divisor**. A spinor satisfies $\tilde{\psi}\tilde{P}=\tilde{\psi}$, hence $\tilde{\psi}(e_t-\tilde{P})=0$ with $e_t-\tilde{P}\neq0$; in the matrix picture its determinant vanishes. A central element $\lambda e_t$, by contrast, has determinant $\lambda^2$ and is invertible whenever $\lambda\neq0$. The scalar line is the algebra's line of invertible complex numbers; the module is its space of non-invertible spinors. They cannot be the same space, and they do not overlap except at zero.
+The distinction has a second, more elementary face. Every nonzero element of the state module is a **zero divisor**. A spinor satisfies $\psi\tilde{P}=\psi$, hence $\psi(e_t-\tilde{P})=0$ with $e_t-\tilde{P}\neq0$; in the matrix picture its determinant vanishes. A central element $\lambda e_t$, by contrast, has determinant $\lambda^2$ and is invertible whenever $\lambda\neq0$. The scalar line is the algebra's line of invertible complex numbers; the module is its space of non-invertible spinors. They cannot be the same space, and they do not overlap except at zero.
 
 ## Three Obstructions, One Reason
 
@@ -194,10 +194,10 @@ $$
 under the rotation subgroup, where the trivial piece is the scalar channel. The trivial representation appears here, in the **bilinear** combination of two spinors, not as a submodule of either factor; the decomposition, however, is a statement about the rotation subgroup only, because under the full Lorentz group $S\otimes\bar{S}=(\tfrac{1}{2},\tfrac{1}{2})$ is irreducible and contains no invariant, and the Lorentz scalars come instead from the antisymmetric square $\Lambda^2 S$ (the symplectic contraction $\varepsilon$) and from the mixed left-right pairing $b$. A scalar is therefore not an element of the state module but a scalar-valued pairing of two module elements. The bilinear
 
 $$
-\tilde{Ϛ}=\tilde{\psi}\tilde{\chi}^{*}\in\mathbb{M}_+
+\tilde{Ϛ}=\psi\chi^{*}\in\mathbb{M}_+
 $$
 
-is the four-vector channel; it is Hermitian, and its diagonal case $\tilde{\chi}=\tilde{\psi}$ gives the positive element whose trace is the conventional density.
+is the four-vector channel; it is Hermitian, and its diagonal case $\chi=\psi$ gives the positive element whose trace is the conventional density.
 
 This is the algebraic content of the standard fact that a spin-$0$ object can be built from two spin-$\tfrac{1}{2}$ objects but is not itself one: the trivial representation of $SU(2)$ sits in the tensor square, not in the defining representation. The companion article *The Dirac Equation in Biquaternionic Form* uses the same bilinears when it forms the Dirac current and the Dirac scalar, and the companion article on the spinor module develops the Hermitian, symplectic and mixed pairings and their invariance properties explicitly.
 
@@ -289,26 +289,26 @@ One structural remark belongs with the equation. The first-order operators of th
 
 The three obstructions above say that a scalar is not an element of the state module. They do not say that the state module is irrelevant to scalar physics, and it is worth recording how scalars actually appear in the standard model, because the framework reproduces the mechanism.
 
-A Lorentz-invariant scalar built from module elements is a **bilinear**, but not every bilinear is one. If $\tilde{\psi},\tilde{\chi}$ are spinors in the state module, then $\tilde{\psi}\tilde{\chi}^{*}$ is a Hermitian element, and its scalar part,
+A Lorentz-invariant scalar built from module elements is a **bilinear**, but not every bilinear is one. If $\psi,\chi$ are spinors in the state module, then $\psi\chi^{*}$ is a Hermitian element, and its scalar part,
 
 $$
-\sigma=\mathrm{Sc}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right)=\tfrac{1}{2}\mathrm{Tr}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right),
+\sigma=\mathrm{Sc}\!\left(\psi\chi^{*}\right)=\tfrac{1}{2}\mathrm{Tr}\!\left(\psi\chi^{*}\right),
 $$
 
-is a complex number. Under a Lorentz transformation the module transforms by left multiplication, $\tilde{\psi}\mapsto\tilde{U}\tilde{\psi}$ and $\tilde{\chi}\mapsto\tilde{U}\tilde{\chi}$, so
+is a complex number. Under a Lorentz transformation the module transforms by left multiplication, $\psi\mapsto\tilde{U}\psi$ and $\chi\mapsto\tilde{U}\chi$, so
 
 $$
-\tilde{\psi}\tilde{\chi}^{*}
+\psi\chi^{*}
 \;\longmapsto\;
-\tilde{U}\,\tilde{\psi}\tilde{\chi}^{*}\,\tilde{U}^{*} ,
+\tilde{U}\,\psi\chi^{*}\,\tilde{U}^{*} ,
 $$
 
-which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{U}^{*}=\tilde{U}^{-1}$, but **not** under boosts, where $\tilde{U}^{*}\tilde{U}\neq e_t$. The object $\tilde{\psi}\tilde{\chi}^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
+which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{U}^{*}=\tilde{U}^{-1}$, but **not** under boosts, where $\tilde{U}^{*}\tilde{U}\neq e_t$. The object $\psi\chi^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
 
 The Lorentz-invariant scalars are instead the two pairings developed in the companion article on the spinor module. The **symplectic pairing** of two spinors of the same chirality,
 
 $$
-\varepsilon(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{T}\epsilon\,\tilde{\chi},
+\varepsilon(\psi,\chi)=\psi^{T}\epsilon\,\chi,
 \qquad
 \epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
@@ -316,11 +316,11 @@ $$
 is invariant because $\tilde{U}^{T}\epsilon\,\tilde{U}=\epsilon$, which holds since $\det\tilde{U}=1$. The **mixed pairing** of a spinor with one in the conjugate module,
 
 $$
-\mathfrak{b}(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
+\mathfrak{b}(\psi,\chi)=\psi^{*}\chi,
 \qquad
-\tilde{\psi}\mapsto\tilde{U}\tilde{\psi},
+\psi\mapsto\tilde{U}\psi,
 \qquad
-\tilde{\chi}\mapsto\mathsf{M}_2(\tilde{U}^{*})\tilde{\chi},
+\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi,
 $$
 
 is invariant because $\tilde{U}^{*}\tilde{U}^{*}=e_t$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the centre; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a *pairing of two module elements*, and the pairing takes its values in the centre.
@@ -337,7 +337,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 4. **The relation to the informational interpretation.** The centre is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational interpretation of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.
 
-5. **Composite scalars and the trace formula.** The bilinear route uses the trace pairing $\mathrm{Tr}(\tilde{\psi}\tilde{\chi}^{*})=2\,\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\tilde{\psi}\tilde{\chi}^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
+5. **Composite scalars and the trace formula.** The bilinear route uses the trace pairing $\mathrm{Tr}(\psi\chi^{*})=2\,\mathrm{Sc}(\psi\chi^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\psi\chi^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
 
 6. **Why the algebra admits only spin $0$ and one-half.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
 
@@ -362,7 +362,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Primitive Hermitian idempotent, $\vec u$ a unit pure real quaternion |
 | $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ | State module (minimal left ideal) |
-| $\tilde{\psi}$ | Spinor, an element of the state module |
+| $\psi$ | Spinor, an element of the state module |
 | $J_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_t$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
@@ -371,9 +371,9 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, central and scalar |
 | $\tilde{\Phi}=\phi e_t$ | Scalar (spin-$0$) field, valued in the centre |
-| $\sigma=\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
-| $\varepsilon(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{T}\epsilon\tilde{\chi}$ | Symplectic pairing; Lorentz scalar of two same-chirality spinors |
-| $\mathfrak{b}(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
+| $\sigma=\mathrm{Sc}(\psi\chi^{*})$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
+| $\varepsilon(\psi,\chi)=\psi^{T}\epsilon\chi$ | Symplectic pairing; Lorentz scalar of two same-chirality spinors |
+| $\mathfrak{b}(\psi,\chi)=\psi^{*}\chi$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

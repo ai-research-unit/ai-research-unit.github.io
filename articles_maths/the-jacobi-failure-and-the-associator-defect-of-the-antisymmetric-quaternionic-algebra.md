@@ -8,23 +8,23 @@ The defect is not shared. Of the six symmetrisations and antisymmetrisations of 
 
 ## The Cyclic Sum and Its Closed Form
 
-**Definition.** The **cyclic sum** of the block at the triple $\tilde P,\tilde Q,\tilde R$ is
+**Definition.** The **cyclic sum** of the block at the triple $\tilde P,\tilde Q,\tilde{Q}_3$ is
 
 $$
-J(\tilde P,\tilde Q,\tilde R) = (\tilde P\diamond\tilde Q)\diamond\tilde R + (\tilde Q\diamond\tilde R)\diamond\tilde P + (\tilde R\diamond\tilde P)\diamond\tilde Q .
+J(\tilde P,\tilde Q,\tilde{Q}_3) = (\tilde P\diamond\tilde Q)\diamond\tilde{Q}_3 + (\tilde Q\diamond\tilde{Q}_3)\diamond\tilde P + (\tilde{Q}_3\diamond\tilde P)\diamond\tilde Q .
 $$
 
 The block satisfies the Jacobi identity exactly when $J$ vanishes identically, and $J$ is the Jacobiator of the operation; it is the cyclic sum declared for the three Jacobi rows of the catalogue.
 
-**Proposition (the closed form).** For all $\tilde P,\tilde Q,\tilde R$,
+**Proposition (the closed form).** For all $\tilde P,\tilde Q,\tilde{Q}_3$,
 
 $$
-J(\tilde P,\tilde Q,\tilde R) = -\,P_t\,(\vec Q\times\vec R) + Q_t\,(\vec P\times\vec R) - R_t\,(\vec P\times\vec Q) .
+J(\tilde P,\tilde Q,\tilde{Q}_3) = -\,P_t\,(\vec Q\times\vec R) + Q_t\,(\vec P\times\vec R) - R_t\,(\vec P\times\vec Q) .
 $$
 
-In particular $J(\tilde P,\tilde Q,\tilde R)$ is a pure vector for every triple, the scalar part of every cyclic sum is zero, and $J$ is a $\mathbb{C}$-trilinear alternating map of its three arguments.
+In particular $J(\tilde P,\tilde Q,\tilde{Q}_3)$ is a pure vector for every triple, the scalar part of every cyclic sum is zero, and $J$ is a $\mathbb{C}$-trilinear alternating map of its three arguments.
 
-*Proof.* Insert the explicit form $\tilde A\diamond\tilde Q_1 = A_t\vec Q_1-Q_{1t}\vec A-\vec A\times\vec Q_1$ into the three terms. The first term is $(\tilde P\diamond\tilde Q)\diamond\tilde R$, whose left factor has scalar part zero and vector part $\vec U = P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$; the term is therefore $0\cdot\vec R - R_t\vec U - \vec U\times\vec R = -R_t\vec U-\vec U\times\vec R$, a pure vector. Collecting the three terms the $R_t\vec U$ parts give $-R_t\bigl(P_t\vec Q-Q_t\vec P-\vec P\times\vec Q\bigr)$ and its two cyclic images, and the cross parts give the three double cross products of $\vec U,\vec V,\vec W$ with $\vec R,\vec P,\vec Q$. The double cross products collapse by the identity $\vec U\times(\vec A\times\vec B) = \vec A(\vec U,\vec B)-\vec B(\vec U,\vec A)$, and the terms with the scalar product of vectors cancel in pairs, leaving the displayed expression; the cancellation is the same one that makes the cyclic sum of the parent product a pure-vector object, and it is carried out monomial by monomial. Alternation follows from the antisymmetry of the cross product: the exchange of two arguments changes the sign of each of the three terms, and the vanishing on a repeated argument is the vanishing of $\vec Q\times\vec Q$.
+*Proof.* Insert the explicit form $\tilde A\diamond\tilde Q_1 = A_t\vec Q_1-Q_{1t}\vec A-\vec A\times\vec Q_1$ into the three terms. The first term is $(\tilde P\diamond\tilde Q)\diamond\tilde{Q}_3$, whose left factor has scalar part zero and vector part $\vec U = P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$; the term is therefore $0\cdot\vec R - R_t\vec U - \vec U\times\vec R = -R_t\vec U-\vec U\times\vec R$, a pure vector. Collecting the three terms the $R_t\vec U$ parts give $-R_t\bigl(P_t\vec Q-Q_t\vec P-\vec P\times\vec Q\bigr)$ and its two cyclic images, and the cross parts give the three double cross products of $\vec U,\vec V,\vec W$ with $\vec R,\vec P,\vec Q$. The double cross products collapse by the identity $\vec U\times(\vec A\times\vec B) = \vec A(\vec U,\vec B)-\vec B(\vec U,\vec A)$, and the terms with the scalar product of vectors cancel in pairs, leaving the displayed expression; the cancellation is the same one that makes the cyclic sum of the parent product a pure-vector object, and it is carried out monomial by monomial. Alternation follows from the antisymmetry of the cross product: the exchange of two arguments changes the sign of each of the three terms, and the vanishing on a repeated argument is the vanishing of $\vec Q\times\vec Q$.
 
 **Proposition (the basis decides).** The cyclic sum is $\mathbb{C}$-trilinear and alternating. It vanishes on all triples exactly when it vanishes on the triples of distinct basis elements, and on the basis it is given by
 
@@ -78,7 +78,7 @@ $$
 **Corollary (the criterion for the block).** For the antisymmetric quaternionic multiplication, half the commutator and half the associator sum stand in the same relation,
 
 $$
-J(\tilde P,\tilde Q,\tilde R) = \tfrac14\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}] ,
+J(\tilde P,\tilde Q,\tilde{Q}_3) = \tfrac14\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}] ,
 $$
 
 with the associator taken in the parent quaternionic product. The block is therefore Lie-admissible exactly when the quaternionic product is Lie-admissible, and it is not.
@@ -92,7 +92,7 @@ The criterion is the exact measure of what associativity would have contributed.
 **Theorem (the associator).** For the parent product, the associator has the closed form
 
 $$
-[\tilde P,\tilde Q,\tilde R] = \bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R ,
+[\tilde P,\tilde Q,\tilde{Q}_3] = \bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde{Q}_3 ,
 $$
 
 and it is nonzero at $(\vec e_x,e_t,e_t)$ and at $24$ of the $64$ basis triples.
@@ -101,13 +101,13 @@ and it is nonzero at $(\vec e_x,e_t,e_t)$ and at $24$ of the $64$ basis triples.
 
 **Computation (the criterion at the witness).** On the triple $(e_t,\vec e_x,\vec e_y)$ the six associators of the parent product are
 
-| ordering | $(\tilde P,\tilde Q,\tilde R)$ | $(\tilde Q,\tilde R,\tilde P)$ | $(\tilde R,\tilde P,\tilde Q)$ | $(\tilde P,\tilde R,\tilde Q)$ | $(\tilde Q,\tilde P,\tilde R)$ | $(\tilde R,\tilde Q,\tilde P)$ |
+| ordering | $(\tilde P,\tilde Q,\tilde{Q}_3)$ | $(\tilde Q,\tilde{Q}_3,\tilde P)$ | $(\tilde{Q}_3,\tilde P,\tilde Q)$ | $(\tilde P,\tilde{Q}_3,\tilde Q)$ | $(\tilde Q,\tilde P,\tilde{Q}_3)$ | $(\tilde{Q}_3,\tilde Q,\tilde P)$ |
 |---|---|---|---|---|---|---|
 | the associator | $0$ | $0$ | $-2\vec e_z$ | $0$ | $2\vec e_z$ | $0$ |
 
 the signed sum of the six associators is $-4\vec e_z$, and its quarter is the cyclic sum $-\vec e_z$ computed above.
 
-*Proof.* The associator of $(e_t,\vec e_x,\vec e_y)$ is $0$: the parent product reads $e_t^{\natural}\vec e_x = \vec e_x$ and $\vec e_x^{\natural}\vec e_y = -\vec e_z$, so $(e_t^{\natural}\vec e_x)^{\natural}\vec e_y = \vec e_x^{\natural}\vec e_y = -\vec e_z$ and $e_t^{\natural}(\vec e_x^{\natural}\vec e_y) = e_t^{\natural}(-\vec e_z) = -\vec e_z$, and the two agree. Similarly for the two cyclic images, the surviving ones being $(\tilde R,\tilde P,\tilde Q)=(\vec e_y,e_t,\vec e_x)$ with the associator $-2\vec e_z$ and $(\tilde Q,\tilde P,\tilde R)=(\vec e_x,e_t,\vec e_y)$ with $2\vec e_z$. The six alternate signs in the order of the display, and the two survivors are the two orderings that put $e_t$ in the middle slot, so the signed sum is $-[2\vec e_z]-[2\vec e_z]=-4\vec e_z$. The quarter is $-\vec e_z$, which is the value of $J(e_t,\vec e_x,\vec e_y)$.
+*Proof.* The associator of $(e_t,\vec e_x,\vec e_y)$ is $0$: the parent product reads $e_t^{\natural}\vec e_x = \vec e_x$ and $\vec e_x^{\natural}\vec e_y = -\vec e_z$, so $(e_t^{\natural}\vec e_x)^{\natural}\vec e_y = \vec e_x^{\natural}\vec e_y = -\vec e_z$ and $e_t^{\natural}(\vec e_x^{\natural}\vec e_y) = e_t^{\natural}(-\vec e_z) = -\vec e_z$, and the two agree. Similarly for the two cyclic images, the surviving ones being $(\tilde{Q}_3,\tilde P,\tilde Q)=(\vec e_y,e_t,\vec e_x)$ with the associator $-2\vec e_z$ and $(\tilde Q,\tilde P,\tilde{Q}_3)=(\vec e_x,e_t,\vec e_y)$ with $2\vec e_z$. The six alternate signs in the order of the display, and the two survivors are the two orderings that put $e_t$ in the middle slot, so the signed sum is $-[2\vec e_z]-[2\vec e_z]=-4\vec e_z$. The quarter is $-\vec e_z$, which is the value of $J(e_t,\vec e_x,\vec e_y)$.
 
 **Remark.** The two nonzero associators are the two orderings that put $e_t$ in the middle slot, exchanged by the transposition of the outer arguments, and the whole failure is the failure of those two to cancel. The identity would hold at this triple if the associator of the parent product vanished on both, and it is the insertion of the conjugation in the first slot of the parent product that prevents it. This is why the block is the one whose defect is non-associativity **alone**: no sesquilinear involution intervenes, and the criterion reads the associator directly.
 
@@ -129,9 +129,9 @@ The vanishing of the alternating centre is the structural difference between the
 
 ## The Elements Whose Adjoint Operators Commute
 
-**Proposition.** Write $L_{\tilde A}$ for the left multiplication operator of the block, $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$. The only element $\tilde Q_1$ with $[L_{\tilde A},L_{\tilde Q_1}]=0$ for all $\tilde A$ is $\tilde Q_1=0$. The centraliser of the four basis operators in the algebra of linear maps is spanned by the identity operator alone, and no nonzero element of $\mathbb{B}$ has its operator in that centraliser.
+**Proposition.** Write $L_{\tilde A}$ for the left multiplication operator of the block, $L_{\tilde A}\tilde{Q}_3=\tilde A\diamond\tilde{Q}_3$. The only element $\tilde Q_1$ with $[L_{\tilde A},L_{\tilde Q_1}]=0$ for all $\tilde A$ is $\tilde Q_1=0$. The centraliser of the four basis operators in the algebra of linear maps is spanned by the identity operator alone, and no nonzero element of $\mathbb{B}$ has its operator in that centraliser.
 
-*Proof.* The identity operator commutes with every operator, so it lies in the centraliser; it is not the operator of an element, since $L_{\tilde Q_1}=c\,\mathrm{id}$ would give $\tilde Q_1\diamond\tilde R=c\,\tilde R$ for all $\tilde R$, and at $\tilde R=e_t$ this is $-\vec Q_1=ce_t$, impossible for a pure vector $-\vec Q_1$. For the rest, the computation of the operators of the block gives the identity $[L_{\tilde A},L_{\tilde Q_1}]=L_{\tilde A\diamond\tilde Q_1}+D(\tilde A,\tilde Q_1)$ with $D(\tilde A,\tilde Q_1)$ the deviation calculated in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*; requiring the bracket to vanish for all $\tilde A$ there reduces to a linear system in $\tilde Q_1$, of the sixteen entries of the four basis operators against the four basis elements, whose only solution is $\tilde Q_1=0$.
+*Proof.* The identity operator commutes with every operator, so it lies in the centraliser; it is not the operator of an element, since $L_{\tilde Q_1}=c\,\mathrm{id}$ would give $\tilde Q_1\diamond\tilde{Q}_3=c\,\tilde{Q}_3$ for all $\tilde{Q}_3$, and at $\tilde{Q}_3=e_t$ this is $-\vec Q_1=ce_t$, impossible for a pure vector $-\vec Q_1$. For the rest, the computation of the operators of the block gives the identity $[L_{\tilde A},L_{\tilde Q_1}]=L_{\tilde A\diamond\tilde Q_1}+D(\tilde A,\tilde Q_1)$ with $D(\tilde A,\tilde Q_1)$ the deviation calculated in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*; requiring the bracket to vanish for all $\tilde A$ there reduces to a linear system in $\tilde Q_1$, of the sixteen entries of the four basis operators against the four basis elements, whose only solution is $\tilde Q_1=0$.
 
 **Remark.** The result is the operator echo of the trivial alternating centre. For a Lie algebra the elements whose adjoint operators commute are the elements of the centre of the enveloping algebra; here there are none but the scalars, and the operator-theoretic centre of the block is trivial. The operators article of the block computes the deviation $D$ itself and shows that it is the operator form of the Jacobi failure.
 
@@ -151,7 +151,7 @@ The failure is carried by the two-dimensional piece of every element and not by 
 
 ## Summary
 
-The cyclic sum of the antisymmetric quaternionic multiplication has the closed form $J(\tilde P,\tilde Q,\tilde R)=-P_t(\vec Q\times\vec R)+Q_t(\vec P\times\vec R)-R_t(\vec P\times\vec Q)$; it is a $\mathbb{C}$-trilinear alternating pure-vector map, and it is decided on the basis, where it is nonzero on the $18$ ordered triples that carry a scalar part and two distinct vector directions, with the minimal witnesses $(e_t,\vec e_x,\vec e_y)$, $(e_t,\vec e_x,\vec e_z)$ and $(e_t,\vec e_y,\vec e_z)$ and values the negatives of the three cross products. The witness of the catalogue is $(e_t,\vec e_x,\vec e_y)$, cyclic sum $-\vec e_z$. The failure is the Lie-admissibility defect of the parent product: by the associator criterion the Jacobi sum of the commutator is the signed sum of the six associators, and here the cyclic sum is a quarter of that signed sum, $J=\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}]$; on the witness two of the six associators survive, $\pm2\vec e_z$, and their signed sum is $-4\vec e_z$ with the quarter $-\vec e_z$. The defect is non-associativity alone, unlike the two sesquilinear failures, whose cause is the obstruction of *Lie Algebras of Sesqualgebras*. The derived bracket of the block is the negative of the cross product on the derived subalgebra $\mathrm{Vect}(\mathbb{B})$, a Lie algebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and it is a Lie bracket there; the failure is the failure of its extension to the whole algebra, and it needs a scalar part in one argument and non-parallel vector parts in the other two. The alternating centre and the annihilator are both zero, the element whose operator commutes with all the operators is zero, and the identity holds on the centre and on the vector subspace and fails on the other four of the remarkable subspaces.
+The cyclic sum of the antisymmetric quaternionic multiplication has the closed form $J(\tilde P,\tilde Q,\tilde{Q}_3)=-P_t(\vec Q\times\vec R)+Q_t(\vec P\times\vec R)-R_t(\vec P\times\vec Q)$; it is a $\mathbb{C}$-trilinear alternating pure-vector map, and it is decided on the basis, where it is nonzero on the $18$ ordered triples that carry a scalar part and two distinct vector directions, with the minimal witnesses $(e_t,\vec e_x,\vec e_y)$, $(e_t,\vec e_x,\vec e_z)$ and $(e_t,\vec e_y,\vec e_z)$ and values the negatives of the three cross products. The witness of the catalogue is $(e_t,\vec e_x,\vec e_y)$, cyclic sum $-\vec e_z$. The failure is the Lie-admissibility defect of the parent product: by the associator criterion the Jacobi sum of the commutator is the signed sum of the six associators, and here the cyclic sum is a quarter of that signed sum, $J=\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}]$; on the witness two of the six associators survive, $\pm2\vec e_z$, and their signed sum is $-4\vec e_z$ with the quarter $-\vec e_z$. The defect is non-associativity alone, unlike the two sesquilinear failures, whose cause is the obstruction of *Lie Algebras of Sesqualgebras*. The derived bracket of the block is the negative of the cross product on the derived subalgebra $\mathrm{Vect}(\mathbb{B})$, a Lie algebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and it is a Lie bracket there; the failure is the failure of its extension to the whole algebra, and it needs a scalar part in one argument and non-parallel vector parts in the other two. The alternating centre and the annihilator are both zero, the element whose operator commutes with all the operators is zero, and the identity holds on the centre and on the vector subspace and fails on the other four of the remarkable subspaces.
 
 ## Summary of Notation
 
@@ -159,13 +159,13 @@ The cyclic sum of the antisymmetric quaternionic multiplication has the closed f
 |---|---|
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ | the quaternionic bracket, twice the operation |
-| $[\tilde P,\tilde Q,\tilde R]=(\tilde P^{\natural}\tilde Q)^{\natural}\tilde R-\tilde P^{\natural}(\tilde Q^{\natural}\tilde R)$ | the associator of the parent product |
-| $J(\tilde P,\tilde Q,\tilde R)$ | the cyclic sum $(\tilde P\diamond\tilde Q)\diamond\tilde R+(\tilde Q\diamond\tilde R)\diamond\tilde P+(\tilde R\diamond\tilde P)\diamond\tilde Q$ |
+| $[\tilde P,\tilde Q,\tilde{Q}_3]=(\tilde P^{\natural}\tilde Q)^{\natural}\tilde{Q}_3-\tilde P^{\natural}(\tilde Q^{\natural}\tilde{Q}_3)$ | the associator of the parent product |
+| $J(\tilde P,\tilde Q,\tilde{Q}_3)$ | the cyclic sum $(\tilde P\diamond\tilde Q)\diamond\tilde{Q}_3+(\tilde Q\diamond\tilde{Q}_3)\diamond\tilde P+(\tilde{Q}_3\diamond\tilde P)\diamond\tilde Q$ |
 | $J=-P_t(\vec Q\times\vec R)+Q_t(\vec P\times\vec R)-R_t(\vec P\times\vec Q)$ | the closed form of the cyclic sum |
 | $J(e_t,\vec e_\mu,\vec e_\nu)=-\vec e_\mu\times \vec e_\nu$ | the cyclic sum on the basis, nonzero for $\mu<\nu$ |
 | $J=\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)[\tilde P_{\sigma(1)},\tilde P_{\sigma(2)},\tilde P_{\sigma(3)}]$ | the associator criterion for the block |
 | $\mathrm{Vect}(\mathbb{B})$ | the derived subalgebra, on which the block is $-\times$ |
-| $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ | the left multiplication operator of the block |
+| $L_{\tilde A}\tilde{Q}_3=\tilde A\diamond\tilde{Q}_3$ | the left multiplication operator of the block |
 | $D(\tilde A,\tilde Q_1)=[L_{\tilde A},L_{\tilde Q_1}]-L_{\tilde A\diamond\tilde Q_1}$ | the operator deviation, the operator form of the failure |
 
 ## Further Reading

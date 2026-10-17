@@ -54,8 +54,8 @@ $\star$.
 
 **Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The
 element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ and there is a
-nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a **right zero divisor of $\star$** when
-$\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; and a **zero
+nonzero $\tilde{Q}_1$ with $\tilde Q\star\tilde{Q}_1=0$; a **right zero divisor of $\star$** when
+$\tilde Q\neq0$ and there is a nonzero $\tilde{Q}_1$ with $\tilde{Q}_1\star\tilde Q=0$; and a **zero
 divisor of $\star$** when it is one or the other. It is a **two-sided zero divisor of $\star$**
 when it is both. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*, and the origin is not a zero divisor, both factors being
@@ -65,7 +65,7 @@ Throughout this article the product is the general quaternionic bilinear product
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. On it the two defining equations are
 
 $$
-\tilde Q^{\natural}\tilde R=0 \quad\text{(left)},\qquad \tilde R^{\natural}\tilde Q=0 \quad\text{(right)} ,
+\tilde Q^{\natural}\tilde{Q}_1=0 \quad\text{(left)},\qquad \tilde{Q}_1^{\natural}\tilde Q=0 \quad\text{(right)} ,
 $$
 
 which are plain-product equations in the conjugated first factor.
@@ -87,13 +87,13 @@ $$
 \tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t=0 ,
 $$
 
-so $\tilde R=\tilde Q$ is a nonzero element with $\tilde Q\star\tilde R=0$ and $\tilde Q$ is a left
+so $\tilde{Q}_1=\tilde Q$ is a nonzero element with $\tilde Q\star\tilde{Q}_1=0$ and $\tilde Q$ is a left
 zero divisor; the mirror computation with the factors exchanged gives the right statement.
-Conversely, suppose $\tilde Q$ is a zero divisor of $\star$: there is a nonzero $\tilde R$ with
-$\tilde Q\star\tilde R=0$, that is $\tilde Q^{\natural}\tilde R=0$. If $\langle\tilde Q\rangle_{\natural}\neq0$ then
+Conversely, suppose $\tilde Q$ is a zero divisor of $\star$: there is a nonzero $\tilde{Q}_1$ with
+$\tilde Q\star\tilde{Q}_1=0$, that is $\tilde Q^{\natural}\tilde{Q}_1=0$. If $\langle\tilde Q\rangle_{\natural}\neq0$ then
 $\tilde Q^{\natural}$ is a unit of the plain product by §*The Criterion* of *Norm and Invertibility
 in the General Quaternionic Algebra*, and multiplying the equation by its inverse gives
-$\tilde R=0$, a contradiction. Hence $\langle\tilde Q\rangle_{\natural}=0$.
+$\tilde{Q}_1=0$, a contradiction. Hence $\langle\tilde Q\rangle_{\natural}=0$.
 
 The criterion is the criterion of the plain product read on this product; the two are the same
 equation because the algebraic norm is the same quadratic form, and the two products are
@@ -279,8 +279,8 @@ $$
 
 and this is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Four General Products Coincide*,
 which this article quotes and does not reprove. What the product changes is the **equation** and
-the **annihilator**: the four left zero-divisor equations are $\tilde Q\tilde R=0$,
-$\tilde Q^{\natural}\tilde R=0$, $\tilde Q\tilde R^{*}=0$ and $\tilde Q^{\natural}\tilde R^{*}=0$,
+the **annihilator**: the four left zero-divisor equations are $\tilde Q\tilde{Q}_1=0$,
+$\tilde Q^{\natural}\tilde{Q}_1=0$, $\tilde Q\tilde{Q}_1^{*}=0$ and $\tilde Q^{\natural}\tilde{Q}_1^{*}=0$,
 four different equations with the same solution set, and the annihilators of one element depend on
 the product, as the coincidence theorem above shows for this one. The one-sided inverse equations
 and their solutions for the four products are the same article's §*The One-Sided Inverse

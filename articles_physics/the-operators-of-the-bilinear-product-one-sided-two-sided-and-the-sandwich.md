@@ -6,8 +6,8 @@ This article is the operator article of the general plain algebra, the algebra o
 that attach an element to an argument:
 
 $$
-L_{\tilde Q}(\tilde R)=\tilde Q\tilde R,\qquad
-R_{\tilde P}(\tilde R)=\tilde R\tilde P,\qquad
+L_{\tilde Q}(\tilde Q_5)=\tilde Q\tilde Q_5,\qquad
+R_{\tilde P}(\tilde Q_5)=\tilde Q_5\tilde P,\qquad
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}} .
 $$
 
@@ -189,10 +189,10 @@ $$
 *Proof.* Apply the two-sided criterion to the pair $(\tilde Q,\tilde Q^{*})$: self-adjointness is
 $\tilde Q^{*}=\lambda\tilde Q$. Applying the conjugate $^{*}$ to both sides gives
 $\tilde Q=\bar{\lambda}\,\tilde Q^{*}$, and combining the two gives $\tilde Q=|\lambda|^{2}\tilde Q$, so
-$|\lambda|=1$; splitting $\tilde Q=\tilde P+\tilde R$ with $\tilde P\in\mathbb{M}_+$ and $\tilde R\in\mathbb{M}_-$ then
-gives $(1-\lambda)\tilde P=(1+\lambda)\tilde R$: for $\lambda=+1$ it reads $\tilde R=0$, for $\lambda=-1$ it reads
-$\tilde P=0$, and for $\lambda\neq\pm1$ both coefficients are nonzero, so $\tilde P$ and $\tilde R$ are proportional
-while lying in opposite sectors, which forces $\tilde P=\tilde R=0$ and $\tilde Q=0$, in both sectors. Hence
+$|\lambda|=1$; splitting $\tilde Q=\tilde P+\tilde Q_6$ with $\tilde P\in\mathbb{M}_+$ and $\tilde Q_6\in\mathbb{M}_-$ then
+gives $(1-\lambda)\tilde P=(1+\lambda)\tilde Q_6$: for $\lambda=+1$ it reads $\tilde Q_6=0$, for $\lambda=-1$ it reads
+$\tilde P=0$, and for $\lambda\neq\pm1$ both coefficients are nonzero, so $\tilde P$ and $\tilde Q_6$ are proportional
+while lying in opposite sectors, which forces $\tilde P=\tilde Q_6=0$ and $\tilde Q=0$, in both sectors. Hence
 $\tilde Q$ is Hermitian or anti-Hermitian.
 
 **Read as a physical statement.** Three interpretations follow, one for each kind of sandwich, and they separate the three

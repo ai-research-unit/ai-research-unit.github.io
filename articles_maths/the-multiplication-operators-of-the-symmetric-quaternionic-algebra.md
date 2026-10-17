@@ -7,7 +7,7 @@ multiplications coincide; the operator of the block is the single family
 
 $$
 L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
-L^{\star}_{\tilde A}\tilde R = \tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{\natural}e_t ,
+L^{\star}_{\tilde A}\tilde Q_4 = \tilde A\star\tilde Q_4 = \langle\tilde A,\tilde Q_4\rangle_{\natural}e_t ,
 $$
 
 of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*. This article reads the
@@ -49,7 +49,7 @@ the whole central line $\mathbb{C}e_t$; for $\tilde A=0$ it is the zero operator
 hyperplane
 
 $$
-\ker L^{\star}_{\tilde A} = \{\tilde R\in\mathbb{B}: \langle\tilde A,\tilde R\rangle_{\natural}=0\},
+\ker L^{\star}_{\tilde A} = \{\tilde Q_4\in\mathbb{B}: \langle\tilde A,\tilde Q_4\rangle_{\natural}=0\},
 $$
 
 of complex dimension $3$ for $\tilde A\ne0$; it is the hyperplane of the elements paired to zero with
@@ -88,7 +88,7 @@ $$
 and the family $\{L^{\star}_{\tilde A}:\tilde A\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
 **monoid of multiplications** of the block.
 
-*Proof.* $L^{\star}_{\tilde A}(L^{\star}_{\tilde Q_1}\tilde R)=L^{\star}_{\tilde A}\bigl(\langle\tilde Q_1,\tilde R\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde R\rangle_{\natural}\langle\tilde A,e_t\rangle_{\natural}e_t=A_t\langle\tilde Q_1,\tilde R\rangle_{\natural}e_t=A_tL^{\star}_{\tilde Q_1}\tilde R$.
+*Proof.* $L^{\star}_{\tilde A}(L^{\star}_{\tilde Q_1}\tilde Q_4)=L^{\star}_{\tilde A}\bigl(\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}\langle\tilde A,e_t\rangle_{\natural}e_t=A_t\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t=A_tL^{\star}_{\tilde Q_1}\tilde Q_4$.
 
 **Corollary (the map is faithful but not multiplicative).** The map $\tilde A\mapsto L^{\star}_{\tilde A}$ is
 injective, its kernel being the radical $\{0\}$ of the operation, so the operator family represents the algebra
@@ -248,7 +248,7 @@ the associative case.
 ## Summary
 
 The operator layer of the symmetric quaternionic algebra is the single commutative family
-$L^{\star}_{\tilde A}\tilde R=\langle\tilde A,\tilde R\rangle_{\natural}e_t$, with matrix in the basis equal to the row of the
+$L^{\star}_{\tilde A}\tilde Q_4=\langle\tilde A,\tilde Q_4\rangle_{\natural}e_t$, with matrix in the basis equal to the row of the
 coordinates of $\tilde A$ in the first row and zero elsewhere. Every nonzero multiplication has rank $1$, image
 the central line $\mathbb{C}e_t$ and kernel the hyperplane $\langle\tilde A,\cdot\rangle_{\natural}=0$ of complex dimension $3$; its
 trace is $A_t$ and its determinant is $0$. The multiplications compose by
@@ -266,7 +266,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\star}_{\tilde A}\tilde R=\tilde A\star\tilde R=\langle\tilde A,\tilde R\rangle_{\natural}e_t$ | the multiplication operator of the block |
+| $L^{\star}_{\tilde A}\tilde Q_4=\tilde A\star\tilde Q_4=\langle\tilde A,\tilde Q_4\rangle_{\natural}e_t$ | the multiplication operator of the block |
 | $\bigl[L^{\star}_{\tilde A}\bigr]_{t\mu}=A_\mu$ | its matrix in the basis, a single nonzero row |
 | $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$, $\det(L^{\star}_{\tilde A})=0$, $\operatorname{rank}=1$ | its invariants for $\tilde A\ne0$ |
 | $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$ | the composition law |

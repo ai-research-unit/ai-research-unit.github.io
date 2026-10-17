@@ -42,25 +42,25 @@ The distinction is not a technicality of the definitions: it separates the two r
 The general plain bilinear product is associative, being the complex-linear extension of the associative quaternion product. The other three products fail it, and each fails it on a triple of basis elements:
 
 $$
-(\tilde P^{\natural}\tilde Q)^{\natural}\tilde R\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde R)
-\quad\text{for}\quad \tilde P=\tilde Q=-\vec e_y,\ \tilde R=\vec e_y ,
+(\tilde P^{\natural}\tilde Q)^{\natural}\tilde Q_3\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde Q_3)
+\quad\text{for}\quad \tilde P=\tilde Q=-\vec e_y,\ \tilde Q_3=\vec e_y ,
 $$
 
 where the left-hand side is $\vec e_y$ and the right-hand side is $-\vec e_y$; and
 
 $$
-(\tilde P\tilde Q^{*})\tilde R^{*}\neq\tilde P(\tilde Q\tilde R^{*})^{*}
-\quad\text{for}\quad \tilde P=-\vec e_z,\ \tilde Q=\tilde R=\vec e_y ,
+(\tilde P\tilde Q^{*})\tilde Q_3^{*}\neq\tilde P(\tilde Q\tilde Q_3^{*})^{*}
+\quad\text{for}\quad \tilde P=-\vec e_z,\ \tilde Q=\tilde Q_3=\vec e_y ,
 $$
 
 where the left-hand side is $\vec e_z$ and the right-hand side is $-\vec e_z$. For the fourth product,
 
 $$
-(\tilde P^{\natural}\tilde Q^{*})^{\natural}\tilde R^{*}\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde R^{*})^{*}
-\quad\text{for}\quad \tilde P=-\vec e_z,\ \tilde Q=\vec e_z,\ \tilde R=e_t ,
+(\tilde P^{\natural}\tilde Q^{*})^{\natural}\tilde Q_3^{*}\neq\tilde P^{\natural}(\tilde Q^{\natural}\tilde Q_3^{*})^{*}
+\quad\text{for}\quad \tilde P=-\vec e_z,\ \tilde Q=\vec e_z,\ \tilde Q_3=e_t ,
 $$
 
-with left-hand side $e_t$ and right-hand side $-e_t$. In each case the two sides differ by the sign of a single basis element, and the reason is the same in all three: associativity of the general plain bilinear product lets the parentheses be dropped, and the operation then conjugates a factor and so transposes two of them. For the ${}^{\natural}$-product, for instance, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, so the two sides of the associative identity read $\tilde Q^{\natural}\tilde P\tilde R$ and $\tilde P^{\natural}\tilde Q^{\natural}\tilde R$, which differ by the transposition of $\tilde P$ and $\tilde Q^{\natural}$ alone.
+with left-hand side $e_t$ and right-hand side $-e_t$. In each case the two sides differ by the sign of a single basis element, and the reason is the same in all three: associativity of the general plain bilinear product lets the parentheses be dropped, and the operation then conjugates a factor and so transposes two of them. For the ${}^{\natural}$-product, for instance, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, so the two sides of the associative identity read $\tilde Q^{\natural}\tilde P\tilde Q_3$ and $\tilde P^{\natural}\tilde Q^{\natural}\tilde Q_3$, which differ by the transposition of $\tilde P$ and $\tilde Q^{\natural}$ alone.
 
 The failure is not repaired by the symmetry of the scalar parts, because that symmetry is a statement about the scalar parts alone. In the first two counterexamples the two sides have the same scalar part, namely zero, and differ in the vector part, and in the third the scalar part changes sign; associativity is a statement about elements, and it is decided on the vector parts.
 
@@ -84,7 +84,7 @@ The general plain bilinear product satisfies all three, being associative, and i
 
 ## The Left Multiplications
 
-The left multiplication by $\tilde P$ is the map sending $\tilde Q_1$ to the value of the operation on the pair $(\tilde P,\tilde Q_1)$. For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, which is associativity, and they form a monoid. For the ${}^{\natural}$-product the same composition law holds in reversed order, $L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde R}=L^{\natural}_{\tilde R\tilde P}$, so the left multiplications form a monoid again, isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$; this is why the row of the table on the left multiplications reads yes, no, yes, no, the two sesquilinear products being excluded by the computation of *Relations Between the Four General Products*, where the composition of two of their left multiplications is shown to be linear and hence not one of them.
+The left multiplication by $\tilde P$ is the map sending $\tilde Q_1$ to the value of the operation on the pair $(\tilde P,\tilde Q_1)$. For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde Q_3}=L_{\tilde P\tilde Q_3}$, which is associativity, and they form a monoid. For the ${}^{\natural}$-product the same composition law holds in reversed order, $L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde Q_3}=L^{\natural}_{\tilde Q_3\tilde P}$, so the left multiplications form a monoid again, isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$; this is why the row of the table on the left multiplications reads yes, no, yes, no, the two sesquilinear products being excluded by the computation of *Relations Between the Four General Products*, where the composition of two of their left multiplications is shown to be linear and hence not one of them.
 
 The row is not implied by the associative row. The ${}^{\natural}$-product is not associative, and its left multiplications still form a monoid, because the composition law holds in reversed order, by the anti-automorphism property of ${}^{\natural}$; and the two sesquilinear products fail the row for the reason given above, namely that the composition of two of their left multiplications leaves the class, which has nothing to do with the associativity of the underlying product.
 
@@ -200,7 +200,7 @@ When they hold, $L_x\circ L_y=L_{xy}$ if $K_1=\mathrm{id}$ and $L_x\circ L_y=L_{
 
 **Theorem (associativity needs both slots trivial, in $\mathbb{B}$).** In $\mathbb{B}$ the product $\star_{K_1K_2}$ is associative if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$.
 
-*Proof.* The product $\star_{\mathrm{id}\,\mathrm{id}}$ is the multiplication of the associative algebra $\mathbb{B}$. For the converse, each of the other three settings is excluded by a triple of §*The Failure of Associativity*: $(\tilde P,\tilde Q,\tilde R)=(-\vec e_y,-\vec e_y,\vec e_y)$ at the setting $({}^{\natural},\mathrm{id})$, $(-\vec e_z,\vec e_y,\vec e_y)$ at $(\mathrm{id},{}^{*})$, and $(-\vec e_z,\vec e_z,e_t)$ at $({}^{\natural},{}^{*})$, the two sides differing by the sign of a single basis element in each case.
+*Proof.* The product $\star_{\mathrm{id}\,\mathrm{id}}$ is the multiplication of the associative algebra $\mathbb{B}$. For the converse, each of the other three settings is excluded by a triple of §*The Failure of Associativity*: $(\tilde P,\tilde Q,\tilde Q_3)=(-\vec e_y,-\vec e_y,\vec e_y)$ at the setting $({}^{\natural},\mathrm{id})$, $(-\vec e_z,\vec e_y,\vec e_y)$ at $(\mathrm{id},{}^{*})$, and $(-\vec e_z,\vec e_z,e_t)$ at $({}^{\natural},{}^{*})$, the two sides differing by the sign of a single basis element in each case.
 
 **Remark (the first two theorems are theorems about the family, the third is not).** The two slot theorems hold in any $A$ of the definition, because their proofs use only that $\varsigma$ is conjugate-linear and not linear and that $\natural$ is an anti-automorphism. Associativity is not read on the slots: when both anti-involutions are the identity the four settings coincide, and with them associativity, so no rule stated in the two slots alone can hold for the whole family at once. Associativity is therefore decided in $\mathbb{B}$, by the triples above, and it remains the row of the property table that the slots do not read.
 

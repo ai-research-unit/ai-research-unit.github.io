@@ -361,7 +361,7 @@ $$
 -\mathrm{Sc}\!\left(\overline{\nabla_{\tilde p}f}\;\nabla_{\tilde q}g\right).\;}
 $$
 
-Only the scalar part of each quaternion product enters. For pure $\tilde q_1,\tilde q_2$ the product $\tilde q_1^{\natural}\tilde q_2$ has a vector part as well, $-\tilde q_1\times\tilde q_2$; in general the vector part is $q_{10}\vec q_2-q_{20}\vec q_1-\vec q_1\times\vec q_2$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.
+Only the scalar part of each quaternion product enters. For pure $\tilde q_1,\tilde q_2$ the product $\tilde q_1^{\natural}\tilde q_2$ has a vector part as well, $-\tilde q_1\times\tilde q_2$; in general the vector part is $q_{1,0}\vec q_2-q_{2,0}\vec q_1-\vec q_1\times\vec q_2$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.
 
 Because the bracket is built from scalar parts of quaternion products, it is automatically bilinear and antisymmetric, and in these coordinates it is the canonical bracket in disguise, so it satisfies the Jacobi identity. The derivation property $\{f,gh\}=\{f,g\}h+g\{f,h\}$ holds for the commutative product of central-valued functions, exactly as in the standard theory.
 

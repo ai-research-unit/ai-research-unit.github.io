@@ -136,14 +136,14 @@ so that at $\tilde Q=\vec e_x+i\vec e_y$ the value is $-2i\vec e_z$.
 **Theorem.** The block fails the **Jacobi identity**. With the cyclic sum declared by the corpus,
 
 $$
-(\tilde P\diamond\tilde Q)\diamond\tilde R+(\tilde Q\diamond\tilde R)\diamond\tilde P+(\tilde R\diamond\tilde P)\diamond\tilde Q,
+(\tilde P\diamond\tilde Q)\diamond\tilde{Q}_1+(\tilde Q\diamond\tilde{Q}_1)\diamond\tilde P+(\tilde{Q}_1\diamond\tilde P)\diamond\tilde Q,
 $$
 
-the triple $(\tilde P,\tilde Q,\tilde R)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$, which is not zero.
+the triple $(\tilde P,\tilde Q,\tilde{Q}_1)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$, which is not zero.
 
 *Proof.* The catalogue *The 12 Products of the Biquaternioid Complex Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $\vec e_x\diamond \vec e_x=0$, $\vec e_x\diamond i\vec e_y=\vec e_x\times\overline{i\vec e_y}=\vec e_x\times(-i\vec e_y)=-i\vec e_z$ and $i\vec e_y\diamond \vec e_x=(i\vec e_y)\times \vec e_x=i(\vec e_y\times \vec e_x)=-i\vec e_z$. Hence the three reassociations are $(\vec e_x\diamond \vec e_x)\diamond i\vec e_y=0$, $(\vec e_x\diamond i\vec e_y)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=(-i\vec e_z)\times \vec e_x=-i\vec e_y$ and $(i\vec e_y\diamond \vec e_x)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=-i\vec e_y$, whose sum is $-2i\vec e_y$.
 
-**Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde R]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2i\vec e_y$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
+**Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde{Q}_1]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2i\vec e_y$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
 
 **Remark (the smallest witness needs a complex element).** The witness uses the complex element $i\vec e_y$ and no triple of the real basis: on real elements the block is the ordinary cross product of *Introduction to the Antisymmetric Plain Algebra*, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and, of the six identity failures the corpus declares (the three Jacobi failures of the antisymmetric parts and the three Jordan failures of the symmetric parts), it is the only one whose witness needs an element off the real basis. It is not the only failure of the complex space: the two sesquilinear antisymmetric parts fail the Jordan identity as soon as a complex element enters, though the corpus does not ask it of them.
 

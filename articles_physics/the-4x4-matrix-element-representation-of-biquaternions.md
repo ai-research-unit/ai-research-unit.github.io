@@ -85,7 +85,7 @@ i & -3 & 1-i & 2+i
 \end{pmatrix}.
 $$
 
-The column of $\tilde{R} = e_t + \vec e_x$, namely $R = (1,1,0,0)$, is carried by this matrix to the column $(1+2i, 3, 3+i, -3+i)$, which is the four-vector of the product $\tilde{Q}\tilde{R}$ computed by the component formula of *The Four-Vector Element Representation of Biquaternions*.
+The column of $\tilde Q_1 = e_t + \vec e_x$, namely $R = (1,1,0,0)$, is carried by this matrix to the column $(1+2i, 3, 3+i, -3+i)$, which is the four-vector of the product $\tilde{Q}\tilde Q_1$ computed by the component formula of *The Four-Vector Element Representation of Biquaternions*.
 
 **A material four-vector.** For an element of $\mathbb{M}_-$, written in the conventions' real parameters as $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$ with $q'_t = ct$ and $(q_x, q_y, q_z) = (x,y,z)$, the regular matrix keeps its shape with $Q_t = iq'_t$ and $Q_\mu = q_\mu$, and it is the matrix form of a four-vector of relativistic physics:
 
@@ -102,10 +102,10 @@ Its diagonal is $iq'_t$, so its trace is $4iq'_t$, purely imaginary — the matr
 
 ## The Left Regular Matrix Is Multiplicative
 
-**Theorem (multiplicativity).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
+**Theorem (multiplicativity).** For all $\tilde{Q}, \tilde Q_1 \in \mathbb{B}$,
 
 $$
-\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{Q}\tilde{R}).
+\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde Q_1) = \mathsf{M}_4^{L}(\tilde{Q}\tilde Q_1).
 $$
 
 Hence $\mathsf{M}_4^{L}$ is an algebra homomorphism, and the coefficient space is a left $\mathbb{B}$-module under it.
@@ -113,20 +113,20 @@ Hence $\mathsf{M}_4^{L}$ is an algebra homomorphism, and the coefficient space i
 **Proof.** For every $\tilde{S}$, the column rule and associativity give
 
 $$
-\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde{R}\tilde{S}) = \operatorname{col}\bigl(\tilde{Q}(\tilde{R}\tilde{S})\bigr) = \operatorname{col}\bigl((\tilde{Q}\tilde{R})\tilde{S}\bigr) = \mathsf{M}_4^{L}(\tilde{Q}\tilde{R})\operatorname{col}(\tilde{S}) ,
+\mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{L}(\tilde Q_1)\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde Q_1\tilde{S}) = \operatorname{col}\bigl(\tilde{Q}(\tilde Q_1\tilde{S})\bigr) = \operatorname{col}\bigl((\tilde{Q}\tilde Q_1)\tilde{S}\bigr) = \mathsf{M}_4^{L}(\tilde{Q}\tilde Q_1)\operatorname{col}(\tilde{S}) ,
 $$
 
-the first step being the column rule applied to $\tilde{R}$, the second the column rule applied to $\tilde{Q}$, and the third associativity; the columns $\operatorname{col}(\tilde{S})$ span $\mathbb{C}^4$, so the two matrices agree.
+the first step being the column rule applied to $\tilde Q_1$, the second the column rule applied to $\tilde{Q}$, and the third associativity; the columns $\operatorname{col}(\tilde{S})$ span $\mathbb{C}^4$, so the two matrices agree.
 
-**Example (a concrete check).** For $\tilde{Q} = e_t + \vec e_x$ and $\tilde{R} = e_t + \vec e_y$ the product is $\tilde{Q}\tilde{R} = e_t + \vec e_x + \vec e_y + \vec e_z$ and the two matrices are
+**Example (a concrete check).** For $\tilde{Q} = e_t + \vec e_x$ and $\tilde Q_1 = e_t + \vec e_y$ the product is $\tilde{Q}\tilde Q_1 = e_t + \vec e_x + \vec e_y + \vec e_z$ and the two matrices are
 
 $$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix} 1 & -1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \\ 0 & 0 & 1 & 1 \end{pmatrix},
 \qquad
-\mathsf{M}_4^{L}(\tilde{R}) = \begin{pmatrix} 1 & 0 & -1 & 0 \\ 0 & 1 & 0 & 1 \\ 1 & 0 & 1 & 0 \\ 0 & -1 & 0 & 1 \end{pmatrix}.
+\mathsf{M}_4^{L}(\tilde Q_1) = \begin{pmatrix} 1 & 0 & -1 & 0 \\ 0 & 1 & 0 & 1 \\ 1 & 0 & 1 & 0 \\ 0 & -1 & 0 & 1 \end{pmatrix}.
 $$
 
-Their product is the matrix of $\mathsf{M}_4^{L}(\tilde{Q}\tilde{R})$, whose first column is $(1,1,1,1)$. The reversed order gives $\mathsf{M}_4^{L}(\tilde{R})\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{R}\tilde{Q})$ with first column $(1,1,1,-1)$, so the two orders differ, exactly as $\tilde{Q}\tilde{R} \neq \tilde{R}\tilde{Q}$. Multiplicativity is what makes the regular matrix a *representation* and not merely a table of coefficients: it is the statement that the algebra multiplication and the matrix multiplication are the same operation in two languages.
+Their product is the matrix of $\mathsf{M}_4^{L}(\tilde{Q}\tilde Q_1)$, whose first column is $(1,1,1,1)$. The reversed order gives $\mathsf{M}_4^{L}(\tilde Q_1)\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde Q_1\tilde{Q})$ with first column $(1,1,1,-1)$, so the two orders differ, exactly as $\tilde{Q}\tilde Q_1 \neq \tilde Q_1\tilde{Q}$. Multiplicativity is what makes the regular matrix a *representation* and not merely a table of coefficients: it is the statement that the algebra multiplication and the matrix multiplication are the same operation in two languages.
 
 ## The Right Regular Matrix
 
@@ -168,10 +168,10 @@ $$
 
 which is $\mathsf{M}_4^{R}(\vec e_y \vec e_x) = \mathsf{M}_4^{R}(-\vec e_z)$ and reproduces $\vec e_x \vec e_y = \vec e_z$ through the reversal. The general rule is $\mathsf{M}_4^{R}(\vec e_\mu)\mathsf{M}_4^{R}(\vec e_\nu) = \mathsf{M}_4^{R}(\vec e_\nu \vec e_\mu)$; reversing the order of the factors reverses the order of the units, so the correspondence is an anti-isomorphism of algebras.
 
-**Theorem (the right regular matrix is anti-multiplicative).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
+**Theorem (the right regular matrix is anti-multiplicative).** For all $\tilde{Q}, \tilde Q_1 \in \mathbb{B}$,
 
 $$
-\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R}) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q}).
+\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde Q_1) = \mathsf{M}_4^{R}(\tilde Q_1\tilde{Q}).
 $$
 
 Hence the assignment $\tilde{Q} \mapsto \mathsf{M}_4^{R}(\tilde{Q})$ is an algebra **anti**-homomorphism, and the right regular matrices are the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, not a second representation of $\mathbb{B}$.
@@ -179,7 +179,7 @@ Hence the assignment $\tilde{Q} \mapsto \mathsf{M}_4^{R}(\tilde{Q})$ is an algeb
 **Proof.** For every $\tilde{S}$, the column rule and associativity give
 
 $$
-\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R})\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{S}\tilde{R}) = \operatorname{col}\bigl((\tilde{S}\tilde{R})\tilde{Q}\bigr) = \operatorname{col}\bigl(\tilde{S}(\tilde{R}\tilde{Q})\bigr) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q})\operatorname{col}(\tilde{S}) ,
+\mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde Q_1)\operatorname{col}(\tilde{S}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{S}\tilde Q_1) = \operatorname{col}\bigl((\tilde{S}\tilde Q_1)\tilde{Q}\bigr) = \operatorname{col}\bigl(\tilde{S}(\tilde Q_1\tilde{Q})\bigr) = \mathsf{M}_4^{R}(\tilde Q_1\tilde{Q})\operatorname{col}(\tilde{S}) ,
 $$
 
 and the columns $\operatorname{col}(\tilde{S})$ span $\mathbb{C}^4$, so the two matrices agree.
@@ -248,13 +248,13 @@ for all columns $R, S$. This is what the failure of the false identity above amo
 
 **Proof.** If $\tilde{Q} = \lambda e_t$ then $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q}) = \lambda I$, since scalar multiplication is central. Conversely, comparing the two closed forms in the lower-right $3 \times 3$ block, the off-diagonal entries agree only when $Q_x = Q_y = Q_z = 0$; then the element is scalar and the two matrices coincide. Comparing the closed forms directly is the whole proof and no module theory is needed.
 
-**Remark (what left and right mean).** The $m$-th column of the difference $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ is the coordinate column of the commutator $[\tilde{Q}, e_m] = \tilde{Q}e_m - e_m\tilde{Q}$. The difference vanishes on the centre and nowhere else, which is the precise sense in which the two matrices differ because the algebra is non-commutative. On the material sector the commutator has a **physical interpretation**: for two four-vectors $\tilde{Q}, \tilde{R} \in \mathbb{M}_-$ with real time parameters $q'_t, r'_t$, the scalar component and the symmetric part $q'_tr_\mu + r'_tq_\mu$ cancel, leaving only the antisymmetric combination of the spatial parameters,
+**Remark (what left and right mean).** The $m$-th column of the difference $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ is the coordinate column of the commutator $[\tilde{Q}, e_m] = \tilde{Q}e_m - e_m\tilde{Q}$. The difference vanishes on the centre and nowhere else, which is the precise sense in which the two matrices differ because the algebra is non-commutative. On the material sector the commutator has a **physical interpretation**: for two four-vectors $\tilde{Q}, \tilde Q_1 \in \mathbb{M}_-$ with real time parameters $q'_t, r'_t$, the scalar component and the symmetric part $q'_tr_\mu + r'_tq_\mu$ cancel, leaving only the antisymmetric combination of the spatial parameters,
 
 $$
-\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2 \sum_{\lambda=1}^{3} \Big( \sum_{\mu,\nu=1}^{3} \epsilon^{\lambda\mu\nu} q_\mu r_\nu \Big) \vec e_\lambda ,
+\tilde{Q}\tilde Q_1 - \tilde Q_1\tilde{Q} = 2 \sum_{\lambda=1}^{3} \Big( \sum_{\mu,\nu=1}^{3} \epsilon^{\lambda\mu\nu} q_\mu r_\nu \Big) \vec e_\lambda ,
 $$
 
-so the matrix $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ carries $\tilde{R}$ to the element of $\mathrm{Vect}(\mathbb{B})$ whose spatial part is twice $\vec q \times \vec r$.
+so the matrix $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ carries $\tilde Q_1$ to the element of $\mathrm{Vect}(\mathbb{B})$ whose spatial part is twice $\vec q \times \vec r$.
 
 ## The Module Structure and the Two Chiralities
 
@@ -537,18 +537,18 @@ which follows from the transpose proposition $\mathsf{M}_4^{L}(\tilde{Q})^{\math
 **Theorem (the centralizer is the right copy).** The set of matrices commuting with every left regular matrix,
 
 $$
-\bigl\{ C \in M_4(\mathbb{C}) : C\,\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})\,C \ \text{ for every } \tilde{R} \in \mathbb{B} \bigr\},
+\bigl\{ C \in M_4(\mathbb{C}) : C\,\mathsf{M}_4^{L}(\tilde Q_1) = \mathsf{M}_4^{L}(\tilde Q_1)\,C \ \text{ for every } \tilde Q_1 \in \mathbb{B} \bigr\},
 $$
 
 is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.
 
-**Proof.** The column rule for the left matrix reads $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_t) = \operatorname{col}(\tilde{R})$. Let $C$ commute with every $\mathsf{M}_4^{L}(\tilde{R})$ and let $\tilde{Q}$ be the element whose column is $C\operatorname{col}(e_t)$. Then, for every $\tilde{R}$,
+**Proof.** The column rule for the left matrix reads $\mathsf{M}_4^{L}(\tilde Q_1)\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde Q_1\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde Q_1)\operatorname{col}(e_t) = \operatorname{col}(\tilde Q_1)$. Let $C$ commute with every $\mathsf{M}_4^{L}(\tilde Q_1)$ and let $\tilde{Q}$ be the element whose column is $C\operatorname{col}(e_t)$. Then, for every $\tilde Q_1$,
 
 $$
-C\operatorname{col}(\tilde{R}) = C\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde{R})\,C\operatorname{col}(e_t) = \operatorname{col}(\tilde{R}\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{R}),
+C\operatorname{col}(\tilde Q_1) = C\,\mathsf{M}_4^{L}(\tilde Q_1)\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde Q_1)\,C\operatorname{col}(e_t) = \operatorname{col}(\tilde Q_1\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde Q_1),
 $$
 
-the last step being the column rule for the right matrix. The columns $\operatorname{col}(\tilde{R})$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde{R})$, because $(\tilde{R}\tilde{S})\tilde{Q} = \tilde{R}(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. That copy has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the column of $\tilde{Q}$, to vanish. The dimension was also computed directly, as the null space of the $48 \times 16$ linear system that the three commutation conditions $M\mathsf{M}_4^{L}(\vec e_\mu) = \mathsf{M}_4^{L}(\vec e_\mu)M$, $\mu = x,y,z$, impose on the entries of $M$; the null space is four-dimensional and is spanned by the four matrices $\mathsf{M}_4^{R}(e_\mu)$.
+the last step being the column rule for the right matrix. The columns $\operatorname{col}(\tilde Q_1)$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde Q_1)$, because $(\tilde Q_1\tilde{S})\tilde{Q} = \tilde Q_1(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. That copy has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the column of $\tilde{Q}$, to vanish. The dimension was also computed directly, as the null space of the $48 \times 16$ linear system that the three commutation conditions $M\mathsf{M}_4^{L}(\vec e_\mu) = \mathsf{M}_4^{L}(\vec e_\mu)M$, $\mu = x,y,z$, impose on the entries of $M$; the null space is four-dimensional and is spanned by the four matrices $\mathsf{M}_4^{R}(e_\mu)$.
 
 **Remark.** The theorem is the regular-module case of the double centralizer phenomenon. In physical terms it says that the matrices commuting with every left regular matrix are exactly the right regular matrices: the left copy is the algebra acting on its four-vector, and the right copy is the largest set of matrices that can be applied to the four-vector without disturbing that left action. The right copy is also the source of the chirality coupling, since it is the only copy with off-diagonal blocks in the chirality basis; the mass term and the centralizer are therefore the same fact seen from two sides.
 
@@ -625,10 +625,10 @@ The rotors split into two families, distinguished by which conjugation fixes the
 **Rotation rotors** have real coefficients, so they lie in the real quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$, and complex conjugation fixes them:
 
 $$
-\tilde{R}(\theta, \vec u) = \cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\vec u\cdot e, \qquad \langle\tilde{R}\rangle_{\natural} = \cos^2\tfrac{\theta}{2} + \sin^2\tfrac{\theta}{2} = e_t, \qquad \tilde{R}^{*} = \tilde{R}^{\natural} .
+\tilde u_{\mathrm r}(\theta, \vec u) = \cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\vec u\cdot e, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = \cos^2\tfrac{\theta}{2} + \sin^2\tfrac{\theta}{2} = e_t, \qquad \tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural} .
 $$
 
-Here $\vec u\cdot e = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with $\vec u$ a real unit vector. Because $\tilde{R}^{*} = \tilde{R}^{\natural}$, the action is the quaternion conjugation $\tilde{Q}\mapsto\tilde{R}\tilde{Q}\tilde{R}^{\natural}$, which is the spatial rotation. Taking $\cos\tfrac{\theta}{2} = \tfrac35$ and $\sin\tfrac{\theta}{2} = \tfrac45$ about the axis $\vec e_x$, so that $\cos\theta = -\tfrac{7}{25}$ and $\sin\theta = \tfrac{24}{25}$,
+Here $\vec u\cdot e = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with $\vec u$ a real unit vector. Because $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural}$, the action is the quaternion conjugation $\tilde{Q}\mapsto\tilde u_{\mathrm r}\tilde{Q}\tilde u_{\mathrm r}^{\natural}$, which is the spatial rotation. Taking $\cos\tfrac{\theta}{2} = \tfrac35$ and $\sin\tfrac{\theta}{2} = \tfrac45$ about the axis $\vec e_x$, so that $\cos\theta = -\tfrac{7}{25}$ and $\sin\theta = \tfrac{24}{25}$,
 
 $$
 \vec e_y \longmapsto \cos\theta\,\vec e_y + \sin\theta\,\vec e_z = -\tfrac{7}{25}\vec e_y + \tfrac{24}{25}\vec e_z, \qquad \vec e_z \longmapsto -\sin\theta\,\vec e_y + \cos\theta\,\vec e_z,
@@ -702,7 +702,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y) \mapsto E_{12}$ | Truncated ladder element (the convention's $\vec\Upsilon_x$); right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\mathsf{M}_4^{L} \cong S \oplus S$ |
 | $\mathsf{M}_4(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
-| $\{C : C\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})C \ \forall \tilde{R}\} = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left copy in $M_4(\mathbb{C})$ is the right copy, of complex dimension $4$: the double centralizer statement |
+| $\{C : C\mathsf{M}_4^{L}(\tilde Q_1) = \mathsf{M}_4^{L}(\tilde Q_1)C \ \forall \tilde Q_1\} = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left copy in $M_4(\mathbb{C})$ is the right copy, of complex dimension $4$: the double centralizer statement |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix; $\det = |N|^4$, $\operatorname{Tr} = 8\operatorname{Re}(Q_t)$ |
 | $q'_t, q_x, q_y, q_z$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; $q'_t = ct$, $(q_x,q_y,q_z) = (x,y,z)$; $\operatorname{Tr}\mathsf{M}_4^{L} = 4iq'_t$, $\det\mathsf{M}_4^{L} = (-(q'_t)^2 + \vec q^2)^2$ |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$ for $\tilde{Q} \in \mathbb{M}_-$ | Traceless real $8 \times 8$ matrix; determinant the fourth power of the interval |
@@ -710,7 +710,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\tilde{U}$, $\langle\tilde{U}\rangle_{\natural} = e_t$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
-| $\tilde{R}(\theta,\vec u)$, $\tilde{B}(s,\vec u)$ | Rotation rotor (real, $\tilde{R}^{*} = \tilde{R}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
+| $\tilde u_{\mathrm r}(\theta,\vec u)$, $\tilde{B}(s,\vec u)$ | Rotation rotor (real, $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |
 | $ict$, $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $ct'$, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Material coordinate; informational coordinate |

@@ -52,19 +52,19 @@ $$
 \{e_t,\; i\,\vec e_x,\; i\,\vec e_y,\; i\,\vec e_z\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde{R} = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,
+As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,
 
 $$
-\tilde{Q}\tilde{R} = \left(q_tr_t + (\vec q_a,\vec v)\right)e_t + i\left(q_t\vec v + r_t\vec q_a\right) - \vec q_a\times\vec v,
+\tilde{Q}\tilde Q_1 = \left(q_tr_t + (\vec q_a,\vec v)\right)e_t + i\left(q_t\vec v + r_t\vec q_a\right) - \vec q_a\times\vec v,
 $$
 
 so the product stays in the sector exactly when the real vector $\vec q_a\times\vec v$ vanishes, that is when the two elements commute; the antisymmetric part alone leaves, and it leaves as the commutator
 
 $$
-\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = -2\,\vec q_a\times\vec v \in \mathbb{M}_- .
+\tilde{Q}\tilde Q_1 - \tilde Q_1\tilde{Q} = -2\,\vec q_a\times\vec v \in \mathbb{M}_- .
 $$
 
-The symmetrised product therefore always stays in the sector, while the commutator leaves it whenever it is not zero, and the square is the commuting case $\tilde{R} = \tilde{Q}$: it is the one product of an element with an element that can never witness the failure of closure, and for $\tilde{Q} = q_te_t + i\vec q'$ it is $\tilde{Q}^2 = q_t^2 + |\vec q'|^2 + 2iq_t\vec q'$. The product rule in its four complex forms, one for each pair of the remarkable subspaces, is computed in *Remarkable Subspaces and the Four General Products*.
+The symmetrised product therefore always stays in the sector, while the commutator leaves it whenever it is not zero, and the square is the commuting case $\tilde Q_1 = \tilde{Q}$: it is the one product of an element with an element that can never witness the failure of closure, and for $\tilde{Q} = q_te_t + i\vec q'$ it is $\tilde{Q}^2 = q_t^2 + |\vec q'|^2 + 2iq_t\vec q'$. The product rule in its four complex forms, one for each pair of the remarkable subspaces, is computed in *Remarkable Subspaces and the Four General Products*.
 
 ### The Defining Involution
 
@@ -305,7 +305,7 @@ Eight statements of the sections above are not properties of the vector space $\
 
 **1. The Born pairing is the Hilbert–Schmidt pairing.** In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian conjugation is the conjugate transpose and the general plain sesquilinear form is the Hilbert–Schmidt form of the matrices, $\langle\tilde Q,\tilde P\rangle_{*}=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr)$. With $\tilde{Ϛ}$ and $\tilde Q$ Hermitian this reads $\operatorname{Tr}(\mathsf{M}_2(\tilde{Ϛ})\mathsf{M}_2(\tilde Q))=\operatorname{Tr}(\tilde{Ϛ}\tilde Q)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde Q)$, so the expectation value of §*The Trace Formula* is a matrix trace in the literal sense and not only in name. The pairing, its Cauchy–Schwarz inequality and the positive functionals it induces are *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
 
-**2. The form makes the algebra a Hilbert space.** The form $\mathrm{Sc}(\tilde R^{*}\tilde S)$ of §*The Hermitian Forms* is positive definite, of signature $(8,0)$ on the real space $\mathbb{B}\cong\mathbb{R}^8$, so $\mathbb{B}$ is a finite-dimensional Hilbert space, the trace formula is continuous in its norm, and the topology the physics uses is the Euclidean one. The completion of the sesqualgebra with respect to that norm is a later and separate construction; nothing above needs it. *The Euclidean Topology of the Biquaternion Algebra*; *The Completion of a Sesqualgebra with a Form*.
+**2. The form makes the algebra a Hilbert space.** The form $\mathrm{Sc}(\tilde Q_1^{*}\tilde S)$ of §*The Hermitian Forms* is positive definite, of signature $(8,0)$ on the real space $\mathbb{B}\cong\mathbb{R}^8$, so $\mathbb{B}$ is a finite-dimensional Hilbert space, the trace formula is continuous in its norm, and the topology the physics uses is the Euclidean one. The completion of the sesqualgebra with respect to that norm is a later and separate construction; nothing above needs it. *The Euclidean Topology of the Biquaternion Algebra*; *The Completion of a Sesqualgebra with a Form*.
 
 **3. The level sets are the groups the physics uses.** Each of the four forms singles out a level set, and the physics reads three of them. The level set of the unit form, $Q^{*}Q=e_t$, is the unitary slice $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$, the internal unitary group of the evolution. The level set of the norm form, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is the norm-one group $\mathbb{B}^{\times}_{1}$, the Lorentz rotors. The Euclidean sphere $S^{7}$, the level set of the general plain sesquilinear form, is **not** used, and the reason is that the general plain bilinear form is not multiplicative: the witness is the element $\vec e_x+i\vec e_y$, whose Euclidean norm is $\sqrt2$ while $\sum_\mu Q_\mu^{2}=0$, so the sphere contains zero divisors and is not a group at all. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *The Euclidean Topology of the Biquaternion Algebra*.
 
@@ -345,7 +345,7 @@ so the norm is **indefinite**: it is negative exactly when the two eigenvalues h
 
 ### The Positive Cone and the Bloch Ball
 
-An element $\tilde{Q} \in \mathbb{M}_+$ is **positive** when it is $\tilde{R}^{*}\tilde{R}$ for some $\tilde{R}$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_t \geq |\vec h|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the **trace-one slice**: with $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ one has $\mathrm{Tr}(\tilde{Ϛ}) = 1$, and writing $\vec r = r\vec u$ the spectral decomposition gives
+An element $\tilde{Q} \in \mathbb{M}_+$ is **positive** when it is $\tilde Q_1^{*}\tilde Q_1$ for some $\tilde Q_1$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_t \geq |\vec h|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the **trace-one slice**: with $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ one has $\mathrm{Tr}(\tilde{Ϛ}) = 1$, and writing $\vec r = r\vec u$ the spectral decomposition gives
 
 $$
 \tilde{Ϛ} = \frac{1+r}{2}\,\tilde\Pi_1(\vec u) + \frac{1-r}{2}\,\tilde\Pi_2(\vec u),
@@ -391,26 +391,26 @@ The families are nested and **not disjoint**: a pure state is a state, a state i
 
 ### The Bracket Table of the Two Sectors
 
-The two sectors are not closed under the product in a haphazard way; the antisymmetric and the symmetric parts go to opposite sectors, and the rule is uniform. Write $[\tilde{Q},\tilde{R}] = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$ and $\{\tilde{Q},\tilde{R}\} = \tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}$. Then the sector of the result is determined by the sectors of the two arguments:
+The two sectors are not closed under the product in a haphazard way; the antisymmetric and the symmetric parts go to opposite sectors, and the rule is uniform. Write $[\tilde{Q},\tilde Q_1] = \tilde{Q}\tilde Q_1 - \tilde Q_1\tilde{Q}$ and $\{\tilde{Q},\tilde Q_1\} = \tilde{Q}\tilde Q_1 + \tilde Q_1\tilde{Q}$. Then the sector of the result is determined by the sectors of the two arguments:
 
 | bracket | $\mathbb{M}_+,\mathbb{M}_+$ | $\mathbb{M}_+,\mathbb{M}_-$ | $\mathbb{M}_-,\mathbb{M}_-$ |
 |---|---|---|---|
-| commutator $[\tilde{Q},\tilde{R}]$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| anticommutator $\{\tilde{Q},\tilde{R}\}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+| commutator $[\tilde{Q},\tilde Q_1]$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| anticommutator $\{\tilde{Q},\tilde Q_1\}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
 
-In coordinates the rule is transparent. For two Hermitian elements $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde{R} = r_te_t + i\vec v$ the product rule of §*Definition and Basis* gives
-
-$$
-[\tilde{Q},\tilde{R}] = -2\,\vec q_a\times\vec v \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} = 2\left(q_tr_t + (\vec q_a,\vec v)\right)e_t + 2i\left(q_t\vec v + r_t\vec q_a\right) \in \mathbb{M}_+,
-$$
-
-and for two anti-Hermitian elements $\tilde{Q} = iq'_te_t + \vec q$, $\tilde{R} = ir'_te_t + \vec r$ the same computation gives
+In coordinates the rule is transparent. For two Hermitian elements $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ the product rule of §*Definition and Basis* gives
 
 $$
-[\tilde{Q},\tilde{R}] = 2\,\vec q\times\vec r \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} \in \mathbb{M}_+.
+[\tilde{Q},\tilde Q_1] = -2\,\vec q_a\times\vec v \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde Q_1\} = 2\left(q_tr_t + (\vec q_a,\vec v)\right)e_t + 2i\left(q_t\vec v + r_t\vec q_a\right) \in \mathbb{M}_+,
 $$
 
-The reason for the alternation is that ${}^{*}$ is an **anti**-automorphism: $(\tilde{Q}\tilde{R})^{*} = \tilde{R}^{*}\tilde{Q}^{*}$, so the sign of the involution on a product is the product of the two signs, and the antisymmetric part collects the difference while the symmetric part collects the sum. Read on the sectors, the rule is fixed by whether the two arguments share a sector: on two elements of **one** sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, while on two elements of **different** sectors the two are exchanged. The commutator and the anticommutator therefore always land in **opposite** sectors. Two consequences:
+and for two anti-Hermitian elements $\tilde{Q} = iq'_te_t + \vec q$, $\tilde Q_1 = ir'_te_t + \vec r$ the same computation gives
+
+$$
+[\tilde{Q},\tilde Q_1] = 2\,\vec q\times\vec r \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde Q_1\} \in \mathbb{M}_+.
+$$
+
+The reason for the alternation is that ${}^{*}$ is an **anti**-automorphism: $(\tilde{Q}\tilde Q_1)^{*} = \tilde Q_1^{*}\tilde{Q}^{*}$, so the sign of the involution on a product is the product of the two signs, and the antisymmetric part collects the difference while the symmetric part collects the sum. Read on the sectors, the rule is fixed by whether the two arguments share a sector: on two elements of **one** sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, while on two elements of **different** sectors the two are exchanged. The commutator and the anticommutator therefore always land in **opposite** sectors. Two consequences:
 
 - The two sectors are closed under **different** brackets, and neither is closed under both. The anticommutator closes on $\mathbb{M}_+$, which is therefore a **special Jordan algebra** under the symmetrised product; the commutator closes on $\mathbb{M}_-$ and not on $\mathbb{M}_+$. The **square** of an element of either sector nevertheless lies in $\mathbb{M}_+$, because $\{Q,Q\} = 2Q^2$ and the two arguments of the anticommutator then lie in one sector; this is the structural fact behind the square formula of §*Definition and Basis*, and it is the reason a square can never witness the failure of closure.
 - The material sector is a **Lie algebra** under the commutator; the informational sector is not, its bracket landing in the other sector. The asymmetry between "the sector that carries the brackets" and "the sector that carries the states" is algebraic, not interpretive, and it is the precise sense in which the two sectors have different characters.
@@ -590,7 +590,7 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure-state projector) of unit trace |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$ | Density matrix (Bloch ball); $\vec r$ the Bloch vector |
 | $\lambda_\pm = h_t \pm |\vec h|$ | Eigenvalues of the Hermitian element $h_te_t + i\vec h$ |
-| $[\tilde{Q},\tilde{R}]$, $\{\tilde{Q},\tilde{R}\}$ | Commutator and anticommutator; the two always land in opposite sectors — on two elements of one sector the first in $\mathbb{M}_-$ and the second in $\mathbb{M}_+$, exchanged on two elements of different sectors |
+| $[\tilde{Q},\tilde Q_1]$, $\{\tilde{Q},\tilde Q_1\}$ | Commutator and anticommutator; the two always land in opposite sectors — on two elements of one sector the first in $\mathbb{M}_-$ and the second in $\mathbb{M}_+$, exchanged on two elements of different sectors |
 | $\tilde{Q}$ | General Hermitian element (observable) |
 | $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
 | $\tilde{Q}_+$, $\tilde{Q}_-$ | Hermitian element of $\mathbb{M}_+$ (operator) and anti-Hermitian element of $\mathbb{M}_-$ (acted upon); written $\tilde{Q}$ when only one element is in play |

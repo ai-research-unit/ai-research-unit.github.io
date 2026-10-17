@@ -362,13 +362,13 @@ which is a biquaternion-valued multiplier. The precise form depends on the sign 
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion
+The convective derivative $\tilde{D} = \tilde Q_3^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion
 
 $$
-\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
+\tilde Q_3^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
-which depends on the velocity biquaternion $\tilde{R}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
+which depends on the velocity biquaternion $\tilde Q_3$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
 
 ### The General Principle
 
@@ -574,7 +574,7 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
 | $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
-| $\tilde{D} = \tilde{R}^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{R}$ |
+| $\tilde{D} = \tilde Q_3^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde Q_3$ |
 
 ## Further Reading
 

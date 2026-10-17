@@ -13,10 +13,10 @@ $$
 and it satisfies
 
 $$
-\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}
+\langle\tilde{Q}\tilde Q_1\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde Q_1\rangle_{\natural}
 $$
 
-for all biquaternions $\tilde{Q},\tilde{R}$. A multiplicative quadratic form on a four-dimensional algebra is a rare object, and the group that preserves it is thereby tied to the algebra's multiplication rather than imposed from outside. The automorphism group of the form on the complex algebra is $O(4,\mathbb{C})$; the automorphisms that also preserve the algebra's **real structure** — the anti-Hermitian material slice — form the Lorentz group.
+for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on a four-dimensional algebra is a rare object, and the group that preserves it is thereby tied to the algebra's multiplication rather than imposed from outside. The automorphism group of the form on the complex algebra is $O(4,\mathbb{C})$; the automorphisms that also preserve the algebra's **real structure** — the anti-Hermitian material slice — form the Lorentz group.
 
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
@@ -42,14 +42,14 @@ $$
 whose polarization is the symmetric bilinear form
 
 $$
-\langle\tilde{Q},\tilde{R}\rangle = \tfrac12\left[\langle\tilde{Q}+\tilde{R}\rangle_{\natural} - \langle\tilde{Q}\rangle_{\natural} - \langle\tilde{R}\rangle_{\natural}\right]
+\langle\tilde{Q},\tilde Q_1\rangle = \tfrac12\left[\langle\tilde{Q}+\tilde Q_1\rangle_{\natural} - \langle\tilde{Q}\rangle_{\natural} - \langle\tilde Q_1\rangle_{\natural}\right]
 = Q_tR_0 + Q_xR_1 + Q_yR_2 + Q_zR_3 .
 $$
 
 In the coordinate basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ its matrix is the identity,
 
 $$
-\langle\tilde{Q},\tilde{R}\rangle = \sum_\mu Q_\mu R_\mu ,
+\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu ,
 \qquad
 G = \mathrm{diag}(+1,+1,+1,+1) ,
 $$
@@ -58,18 +58,18 @@ so $\langle\cdot\rangle_{\natural}$ is a **nondegenerate complex quadratic form 
 
 Two properties make $\langle\cdot\rangle_{\natural}$ the algebra's own form rather than a form on a vector space.
 
-**Multiplicativity.** For all $\tilde{Q},\tilde{R}$,
+**Multiplicativity.** For all $\tilde{Q},\tilde Q_1$,
 
 $$
-\langle\tilde{Q}\tilde{R}\rangle_{\natural}
-= \tilde{Q}\tilde{R}\,\overline{\tilde{Q}\tilde{R}}
-= \tilde{Q}\tilde{R}\,\overline{\tilde{R}}\,\overline{\tilde{Q}}
-= \tilde{Q}\,\langle\tilde{R}\rangle_{\natural}\,\overline{\tilde{Q}}
-= \langle\tilde{R}\rangle_{\natural}\,\tilde{Q}\overline{\tilde{Q}}
-= \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural},
+\langle\tilde{Q}\tilde Q_1\rangle_{\natural}
+= \tilde{Q}\tilde Q_1\,\overline{\tilde{Q}\tilde Q_1}
+= \tilde{Q}\tilde Q_1\,\overline{\tilde Q_1}\,\overline{\tilde{Q}}
+= \tilde{Q}\,\langle\tilde Q_1\rangle_{\natural}\,\overline{\tilde{Q}}
+= \langle\tilde Q_1\rangle_{\natural}\,\tilde{Q}\overline{\tilde{Q}}
+= \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde Q_1\rangle_{\natural},
 $$
 
-where the fourth equality uses that $\langle\tilde{R}\rangle_{\natural}$ is a complex scalar and therefore central in $\mathbb{B}$. The biquaternion norm is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
+where the fourth equality uses that $\langle\tilde Q_1\rangle_{\natural}$ is a complex scalar and therefore central in $\mathbb{B}$. The biquaternion norm is a **homomorphism of multiplicative monoids** from $(\mathbb{B},\cdot)$ to $(\mathbb{C},\cdot)$.
 
 **Compatibility with the real structure.** The conjugations act on the form by
 
@@ -493,7 +493,7 @@ The conventions of the construction are those of the following companion article
 The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a nondegenerate multiplicative quadratic form on $\mathbb{B}\cong\mathbb{C}^4$, with polarization matrix the identity and with
 
 $$
-\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde{R}\rangle_{\natural},
+\langle\tilde{Q}\tilde Q_1\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},
 \qquad
 \langle\tilde{Q}^{*}\rangle_{\natural} = \overline{\langle\tilde{Q}\rangle_{\natural}}.
 $$
@@ -559,7 +559,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_\mu^2=-e_t$); central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
-| $\langle\tilde{Q},\tilde{R}\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
+| $\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $\langle\cdot\rangle_{\natural}$; its identity component |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
 | $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |

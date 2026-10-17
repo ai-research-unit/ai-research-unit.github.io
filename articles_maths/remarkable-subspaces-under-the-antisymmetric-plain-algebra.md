@@ -171,7 +171,7 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 **A mixed bracket.** $\vec e_x\wedge(i\vec e_y)=i\vec e_z$: one real and one imaginary vector give an imaginary vector, the second line of the sector rule.
 
-**A quaternion bracket.** For $\tilde Q=e_t+\vec e_x$ and $\tilde R=e_t+\vec e_y$ in $\mathbb{H}_{\mathbb{B}}$ the bracket is $\tilde Q\wedge\tilde R=\vec e_z$, inside the subspace: the quaternion subspace is stable.
+**A quaternion bracket.** For $\tilde Q=e_t+\vec e_x$ and $\tilde{Q}_1=e_t+\vec e_y$ in $\mathbb{H}_{\mathbb{B}}$ the bracket is $\tilde Q\wedge\tilde{Q}_1=\vec e_z$, inside the subspace: the quaternion subspace is stable.
 
 **An anti-Hermitian bracket.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{M}_-$ the bracket is $x\wedge y=\vec e_z$, inside the subspace: the anti-Hermitian subspace is stable, and the imaginary scalar direction $ie_t$ is central in it.
 

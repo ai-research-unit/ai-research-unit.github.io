@@ -235,7 +235,7 @@ Four statements summarise what the framework contributes to scalar pair creation
 
 **The charge selects pairs.** The framework's canonical continuous symmetry is the central $\mathrm{U}(1)$, whose Noether current $\tilde J$ lies in $\mathbb{M}_-$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
-**The algebra supplies no mechanism of its own.** The mixing is a Bogoliubov transformation on the Fock space built from an imported module; the scalar sector has no native ladder in $\mathbb{B}$, because no pair in the algebra realizes $[\tilde a,\tilde a^\dagger]=e_t$. The framework contributes the central-valued background, the biquaternion-norm interpretation of the asymptotic frequencies, and the notation; it contributes no new creation mechanism. The process is standard scalar quantum field theory in an external background, transcribed.
+**The algebra supplies no mechanism of its own.** The mixing is a Bogoliubov transformation on the Fock space built from an imported module; the scalar sector has no native ladder in $\mathbb{B}$, because no pair in the algebra realizes $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. The framework contributes the central-valued background, the biquaternion-norm interpretation of the asymptotic frequencies, and the notation; it contributes no new creation mechanism. The process is standard scalar quantum field theory in an external background, transcribed.
 
 The standard realizations are worth naming for orientation. Cosmological particle creation in an expanding universe, with the scale factor playing the role of the background, and the dynamical Casimir effect, in which a moving boundary modulates the modes, are the standard examples; the electromagnetic analogue — pair creation in a strong electric field — is the Schwinger process, and it belongs to the charged-field setting rather than to the free scalar background treated here. The framework's notation applies to all of them through the mode equation, and modifies none of them.
 
@@ -280,7 +280,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=1/\vert\alpha_{\vec k}\vert^2$ | Vacuum persistence amplitude |
 | $\vert\beta\vert^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$ | Sudden-quench result |
 | $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Conserved $\mathrm{U}(1)$ charge; pairs have $\u03d8=0$ |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde A,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde A,\tilde{Q}_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

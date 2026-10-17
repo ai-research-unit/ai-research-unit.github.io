@@ -86,10 +86,10 @@ $$
 it is conjugate-linear, and the composite of two of them is the **linear** sandwich
 
 $$
-L_{\tilde P}L_{\tilde R}(\tilde Q_1) = \tilde P^{\natural}\,\tilde Q_1\,\overline{\tilde R} .
+L_{\tilde P}L_{\tilde Q_3}(\tilde Q_1) = \tilde P^{\natural}\,\tilde Q_1\,\overline{\tilde Q_3} .
 $$
 
-**Proof.** The first display is the definition of the product read as an operator identity. For the second, $L_{\tilde P}L_{\tilde R}(\tilde Q_1) = \tilde P^{\natural}\bigl(\tilde R^{\natural}\tilde Q_1^{*}\bigr)^{*}$, and ${}^{*}$ is an anti-automorphism of the plain product with $(\tilde Q_1^{*})^{*} = \tilde Q_1$, $(\tilde R^{\natural})^{*} = \tilde R^{\natural*} = \overline{\tilde R}$ and $(\tilde Q_2^{*})^{*}=\tilde Q_2$, so the bracket is $\tilde Q_1\overline{\tilde R}$ and the composite is $\tilde P^{\natural}\tilde Q_1\overline{\tilde R}$. The composite is linear in $\tilde Q_1$ while each factor is conjugate-linear, which is the parity shift: the product of two conjugate-linear maps is linear, so the family of left multiplications is not stable under composition and is not a monoid. The maps and the sandwich are computed in *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
+**Proof.** The first display is the definition of the product read as an operator identity. For the second, $L_{\tilde P}L_{\tilde Q_3}(\tilde Q_1) = \tilde P^{\natural}\bigl(\tilde Q_3^{\natural}\tilde Q_1^{*}\bigr)^{*}$, and ${}^{*}$ is an anti-automorphism of the plain product with $(\tilde Q_1^{*})^{*} = \tilde Q_1$, $(\tilde Q_3^{\natural})^{*} = \tilde Q_3^{\natural*} = \overline{\tilde Q_3}$ and $(\tilde Q_2^{*})^{*}=\tilde Q_2$, so the bracket is $\tilde Q_1\overline{\tilde Q_3}$ and the composite is $\tilde P^{\natural}\tilde Q_1\overline{\tilde Q_3}$. The composite is linear in $\tilde Q_1$ while each factor is conjugate-linear, which is the parity shift: the product of two conjugate-linear maps is linear, so the family of left multiplications is not stable under composition and is not a monoid. The maps and the sandwich are computed in *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
 **Corollary (no projector, no square-zero operator).** The block has no projector and no square-zero operator in either family: there is no $\tilde P\neq0$ with $L_{\tilde P}^{2} = L_{\tilde P}$ or with $L_{\tilde P}^{2} = 0$, and none with $R_{\tilde P}^{2} = R_{\tilde P}$ or with $R_{\tilde P}^{2} = 0$.
 
@@ -126,7 +126,7 @@ The corollary is the second specificity: the **nontrivial** idempotents of the b
 **Proposition (the ternary product fails).** The ternary product of the block,
 
 $$
-\{\tilde P,\tilde Q,\tilde R\} = (\tilde P\star\tilde Q)\star \tilde R^{*} = \overline{\tilde Q}\,\tilde P\,\tilde R ,
+\{\tilde P,\tilde Q,\tilde Q_3\} = (\tilde P\star\tilde Q)\star \tilde Q_3^{*} = \overline{\tilde Q}\,\tilde P\,\tilde Q_3 ,
 $$
 
 does not satisfy the Jordan triple identity
@@ -137,7 +137,7 @@ $$
 
 of the theory of algebraic $J^{*}$-algebras. At the basis elements $(x,y,u,v,w) = (e_t,\vec e_x,e_t,\vec e_y,e_t)$ the two sides are $\vec e_z$ and $-3\vec e_z$, which differ.
 
-**Proof.** The ternary product is read from the factorization: $(\tilde P\star\tilde Q)\star\tilde R^{*} = (\tilde P\star\tilde Q)^{\natural}(\tilde R^{*})^{*} = \overline{\tilde Q}\tilde P\tilde R$, the plain triple product with the first factor conjugated, because $(\tilde P\star\tilde Q)^{\natural} = \overline{\tilde Q}\tilde P$. The two sides at the quintuple are computed in *The Ternary Product and the Failure of the Jordan Triple Identity*, where the identity is tested on the basis and the count is recorded; the source of the failure is the first slot's natural conjugation, as the reading of §*The First Slot Is the Source* of *Introduction to the General Quaternionic Sesqualgebra* shows.
+**Proof.** The ternary product is read from the factorization: $(\tilde P\star\tilde Q)\star\tilde Q_3^{*} = (\tilde P\star\tilde Q)^{\natural}(\tilde Q_3^{*})^{*} = \overline{\tilde Q}\tilde P\tilde Q_3$, the plain triple product with the first factor conjugated, because $(\tilde P\star\tilde Q)^{\natural} = \overline{\tilde Q}\tilde P$. The two sides at the quintuple are computed in *The Ternary Product and the Failure of the Jordan Triple Identity*, where the identity is tested on the basis and the count is recorded; the source of the failure is the first slot's natural conjugation, as the reading of §*The First Slot Is the Source* of *Introduction to the General Quaternionic Sesqualgebra* shows.
 
 So the block fails even the algebraic identity that the other sesquilinear structures satisfy, and it fails it at a basis quintuple. The failure is not an accident of the product: it is the same first-slot conjugation that gives the criterion of §*The Law* and the Krein form of §*The Square, the Idempotents and the Units*.
 
@@ -153,7 +153,7 @@ The three losses are the reason the block is separated, and they have one source
 
 The general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is the unique one of the twelve structures on the biquaternion space satisfying the star identity $(\tilde P\star\tilde Q)^{*} = \tilde Q\overline{\tilde P}$, equivalently the unique one that factors as $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$. Its two actions of $e_t$ follow by specialization, $\tilde P\star e_t = \tilde P^{\natural}$ and $e_t\star\tilde Q = \tilde Q^{*}$, and they are necessary conditions only: the symmetrisation $\mathrm{SQS}$ shares them and fails the identity. The isolation exhibits, for each of the other structures, a basis pair at which the two sides differ, and the four general products are settled among themselves by the two actions.
 
-The consequences are the specificities of the block. The product is linear in the first slot and conjugate-linear in the second, the left multiplication is $L_{\tilde P}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1^{*}$ with composite the linear sandwich $L_{\tilde P}L_{\tilde R}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1\overline{\tilde R}$, the right multiplication $R_{\tilde P}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde P^{*}$ is linear, and the parity obstruction removes every projector and every square-zero operator, in contrast to the plain and the natural products. The square is the natural conjugate of the plain product, its scalar part is the Krein form of signature $(2,6)$, and its vanishing cuts out, beyond the origin, the family $c(\vec u+i)$ in the non-pure part of the cone. The nontrivial idempotents are the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $\sum_ku_k^2=1$, and they are units of the plain algebra while the block has no unit. The ternary product fails the Jordan triple identity at a basis quintuple, and the first-slot conjugation is the common source of the criterion, the sign vector of the scalar form, the absence of a unit and the failure of the identity. The block has the element theory of the sesquilinear structures and none of their operator theory.
+The consequences are the specificities of the block. The product is linear in the first slot and conjugate-linear in the second, the left multiplication is $L_{\tilde P}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1^{*}$ with composite the linear sandwich $L_{\tilde P}L_{\tilde Q_3}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1\overline{\tilde Q_3}$, the right multiplication $R_{\tilde P}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde P^{*}$ is linear, and the parity obstruction removes every projector and every square-zero operator, in contrast to the plain and the natural products. The square is the natural conjugate of the plain product, its scalar part is the Krein form of signature $(2,6)$, and its vanishing cuts out, beyond the origin, the family $c(\vec u+i)$ in the non-pure part of the cone. The nontrivial idempotents are the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $\sum_ku_k^2=1$, and they are units of the plain algebra while the block has no unit. The ternary product fails the Jordan triple identity at a basis quintuple, and the first-slot conjugation is the common source of the criterion, the sign vector of the scalar form, the absence of a unit and the failure of the identity. The block has the element theory of the sesquilinear structures and none of their operator theory.
 
 ## Summary of Notation
 
@@ -165,10 +165,10 @@ The consequences are the specificities of the block. The product is linear in th
 | $\tilde P\star\tilde Q = (\overline{\tilde Q}\tilde P)^{\natural}$ | the factorization, equivalent to the criterion |
 | $L_{\tilde P}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1^{*}$ | the conjugate-linear left multiplication |
 | $R_{\tilde P}(\tilde Q_1) = \tilde Q_1^{\natural}\tilde P^{*}$ | the linear right multiplication |
-| $L_{\tilde P}L_{\tilde R}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1\overline{\tilde R}$ | the linear sandwich of the composite |
+| $L_{\tilde P}L_{\tilde Q_3}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1\overline{\tilde Q_3}$ | the linear sandwich of the composite |
 | $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, the norm of the plain algebra |
 | $\tilde\Pi = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, $\sum_ku_k^2=1$ | the nontrivial idempotents, units of the plain algebra |
-| $\{\tilde P,\tilde Q,\tilde R\} = \overline{\tilde Q}\tilde P\tilde R$ | the ternary product |
+| $\{\tilde P,\tilde Q,\tilde Q_3\} = \overline{\tilde Q}\tilde P\tilde Q_3$ | the ternary product |
 
 ## Further Reading
 

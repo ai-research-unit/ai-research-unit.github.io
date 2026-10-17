@@ -128,7 +128,7 @@ $$
 **Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$,
 
 $$
-\rho_{\tilde A}(\tilde R)=\tilde R-\frac{2\langle\tilde R,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
+\rho_{\tilde A}(\tilde Q_3)=\tilde Q_3-\frac{2\langle\tilde Q_3,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
 $$
 
 Then the two insertions that read the parameter as it stands keep $V$ stable, and
@@ -140,7 +140,7 @@ $$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 
-*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde R+\tilde R\tilde A=2\langle\tilde A,\tilde R\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_t$.
+*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde Q_3+\tilde Q_3\tilde A=2\langle\tilde A,\tilde Q_3\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_t$.
 
 **Proposition (the star insertions leave $V$ in general).** For $\tilde A\in V$ the right factor of the starred insertions is $(\tilde A^{*})^{-1}=-(\bar{\tilde A})^{-1}$, so the two starred operators are $-L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$ and $+L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde A}$ is a scalar multiple of $\tilde A$, that is when the coefficient vector of $\tilde A$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde A}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
 

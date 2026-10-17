@@ -76,19 +76,19 @@ and the commutator is the cross product of the vector parts with the factor two,
 
 ### The Cyclic Sum
 
-**Definition.** The **cyclic sum** of the operation on a triple $\tilde P,\tilde Q,\tilde R$ is
+**Definition.** The **cyclic sum** of the operation on a triple $\tilde P,\tilde Q,\tilde Q_1$ is
 
 $$
-J(\tilde P,\tilde Q,\tilde R)=(\tilde P\wedge\tilde Q)\wedge\tilde R+(\tilde Q\wedge\tilde R)\wedge\tilde P+(\tilde R\wedge\tilde P)\wedge\tilde Q.
+J(\tilde P,\tilde Q,\tilde Q_1)=(\tilde P\wedge\tilde Q)\wedge\tilde Q_1+(\tilde Q\wedge\tilde Q_1)\wedge\tilde P+(\tilde Q_1\wedge\tilde P)\wedge\tilde Q.
 $$
 
 **Theorem (the Jacobi identity).** The operation satisfies
 
 $$
-(\tilde P\wedge\tilde Q)\wedge\tilde R+(\tilde Q\wedge\tilde R)\wedge\tilde P+(\tilde R\wedge\tilde P)\wedge\tilde Q=0
+(\tilde P\wedge\tilde Q)\wedge\tilde Q_1+(\tilde Q\wedge\tilde Q_1)\wedge\tilde P+(\tilde Q_1\wedge\tilde P)\wedge\tilde Q=0
 $$
 
-for all $\tilde P,\tilde Q,\tilde R\in\mathbb{B}$.
+for all $\tilde P,\tilde Q,\tilde Q_1\in\mathbb{B}$.
 
 *Proof.* Write the operation as the cross product of the vector parts, $\tilde P\wedge\tilde Q=\vec P\times\vec Q$. The three terms are $(\vec P\times\vec Q)\times\vec R$, $(\vec Q\times\vec R)\times\vec P$ and $(\vec R\times\vec P)\times\vec Q$, and the vector triple product gives
 
@@ -177,7 +177,7 @@ $$
 
 **A scalar part that cancels.** For $\tilde P=e_t+\vec e_x$ and $\tilde Q=e_t+\vec e_y$, the plain products are $\tilde P\tilde Q=e_t+\vec e_x+\vec e_y+\vec e_z$ and $\tilde Q\tilde P=e_t+\vec e_x+\vec e_y-\vec e_z$, whose scalar parts and whose $\vec e_x$ and $\vec e_y$ coefficients agree, so the half-difference is $\vec e_z$: $\tilde P\wedge\tilde Q=\vec e_z$, and the scalar parts that agree have cancelled, as the first proposition predicts.
 
-**A cyclic sum on the units.** For $\tilde P=\vec e_x,\tilde Q=\vec e_y,\tilde R=\vec e_z$ the three terms are $(\vec e_x\wedge \vec e_y)\wedge \vec e_z=\vec e_z\wedge \vec e_z=0$, $(\vec e_y\wedge \vec e_z)\wedge \vec e_x=\vec e_x\wedge \vec e_x=0$ and $(\vec e_z\wedge \vec e_x)\wedge \vec e_y=\vec e_y\wedge \vec e_y=0$: the cyclic sum is zero, the basis instance of the Jacobi identity.
+**A cyclic sum on the units.** For $\tilde P=\vec e_x,\tilde Q=\vec e_y,\tilde Q_1=\vec e_z$ the three terms are $(\vec e_x\wedge \vec e_y)\wedge \vec e_z=\vec e_z\wedge \vec e_z=0$, $(\vec e_y\wedge \vec e_z)\wedge \vec e_x=\vec e_x\wedge \vec e_x=0$ and $(\vec e_z\wedge \vec e_x)\wedge \vec e_y=\vec e_y\wedge \vec e_y=0$: the cyclic sum is zero, the basis instance of the Jacobi identity.
 
 **A witness of the neighbouring failure.** For the antisymmetric quaternionic algebra $\mathrm{AQA}$ the same triple $(e_t,\vec e_x,\vec e_y)$ gives the cyclic sum $-\vec e_z$, as recomputed here from its definition $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$. On the pure units $\vec e_x,\vec e_y,\vec e_z$ the two brackets are the negatives of one another, since the natural conjugation reverses each factor and contributes a sign, while on $e_t$ they separate outright: $\mathrm{APA}(e_t,\vec e_x)=0$ and $\mathrm{AQA}(e_t,\vec e_x)=\vec e_x$. It is the scalar direction, invisible to the block and visible to its sibling, that carries the failure.
 
@@ -215,7 +215,7 @@ The antisymmetric part of the plain product of the biquaternions is the operatio
 | $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$ | the image of the operation, the vector subspace |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the algebra, annihilated by the operation |
 | $\vec e_x\wedge \vec e_y=\vec e_z$, $\vec e_y\wedge \vec e_z=\vec e_x$, $\vec e_z\wedge \vec e_x=\vec e_y$ | the three non-trivial brackets of the units |
-| $J(\tilde P,\tilde Q,\tilde R)=0$ | the cyclic sum, the Jacobi identity of the block |
+| $J(\tilde P,\tilde Q,\tilde Q_1)=0$ | the cyclic sum, the Jacobi identity of the block |
 
 ## Further Reading
 

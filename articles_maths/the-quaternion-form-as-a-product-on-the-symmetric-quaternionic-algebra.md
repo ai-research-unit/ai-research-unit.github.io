@@ -126,7 +126,7 @@ nonzero diagonal entry is the one at $(t,t)$, which is $A_t$.
 coefficient of the product, the polarisation of the norm and the Gram data $I_4$ are four readings of the same
 object, and $\langle\cdot\rangle_{\natural}$ is the only form the product produces. The invariance of the next section does not select a
 smaller family of forms: a symmetric $\mathbb{C}$-bilinear form $\beta$ is invariant under $\star$ exactly when
-$\beta(e_t,\tilde R)=0$ for every $\tilde R$, so the invariant forms are the symmetric forms vanishing on the
+$\beta(e_t,\tilde Q_1)=0$ for every $\tilde Q_1$, so the invariant forms are the symmetric forms vanishing on the
 central line, of complex dimension $6$, and every one of them is degenerate. There is no non-degenerate
 symmetric form invariant under the product, and $\langle\cdot,\cdot\rangle_{\natural}$ itself is not invariant. The operator article *The
 Multiplication Operators of the Symmetric Quaternionic Algebra* records the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ and
@@ -137,28 +137,28 @@ the groups that preserve it.
 **Definition.** The form $\langle\cdot,\cdot\rangle_{\natural}$ is **invariant under the product** when
 
 $$
-\langle\tilde P\star\tilde Q,\tilde R\rangle_{\natural} = \langle\tilde P,\tilde Q\star\tilde R\rangle_{\natural}
+\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{\natural} = \langle\tilde P,\tilde Q\star\tilde Q_1\rangle_{\natural}
 $$
 
-for all $\tilde P,\tilde Q,\tilde R\in\mathbb{B}$; equivalently when
-$N\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}e_t,\tilde R\bigr)=N\bigl(\tilde P,\langle\tilde Q,\tilde R\rangle_{\natural}e_t\bigr)$.
+for all $\tilde P,\tilde Q,\tilde Q_1\in\mathbb{B}$; equivalently when
+$N\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}e_t,\tilde Q_1\bigr)=N\bigl(\tilde P,\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t\bigr)$.
 
 **Theorem (the form is not invariant).** The form $\langle\cdot,\cdot\rangle_{\natural}$ is not invariant under $\star$. At
-$\tilde P=\tilde Q=\vec e_x$ and $\tilde R=e_t$ the two sides are $1$ and $0$:
+$\tilde P=\tilde Q=\vec e_x$ and $\tilde Q_1=e_t$ the two sides are $1$ and $0$:
 
 $$
-\langle\tilde P\star\tilde Q,\tilde R\rangle_{\natural}=\langle e_t,e_t\rangle_{\natural}=1, \qquad
-\langle\tilde P,\tilde Q\star\tilde R\rangle_{\natural}=\langle \vec e_x,0\rangle_{\natural}=0 .
+\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{\natural}=\langle e_t,e_t\rangle_{\natural}=1, \qquad
+\langle\tilde P,\tilde Q\star\tilde Q_1\rangle_{\natural}=\langle \vec e_x,0\rangle_{\natural}=0 .
 $$
 
 *Proof.* $\vec e_x\star \vec e_x=e_t$ and $\vec e_x\star e_t=0$; the two displayed forms are then $\langle e_t,e_t\rangle_{\natural}=1$ and
 $\langle \vec e_x,0\rangle_{\natural}=0$.
 
 **Remark (why the failure is forced).** The two sides of the invariance are
-$\langle\tilde P,\tilde Q\rangle_{\natural}R_t$ and $P_t\langle\tilde Q,\tilde R\rangle_{\natural}$, and they agree for all arguments only if the
+$\langle\tilde P,\tilde Q\rangle_{\natural}R_t$ and $P_t\langle\tilde Q,\tilde Q_1\rangle_{\natural}$, and they agree for all arguments only if the
 operation is associative in a way the block does not have. The failure is the same computation as the
 non-vanishing associator of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*,
-because $\langle\tilde P\star\tilde Q,\tilde R\rangle_{\natural}$ is the scalar part of the first bracketing of the associator. A
+because $\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{\natural}$ is the scalar part of the first bracketing of the associator. A
 symmetric form that is invariant under a commutative product and has a unit is the coefficient form of a
 Jordan algebra; here there is no unit and the invariance fails, which is the form-theoretic face of the
 failure of the Jordan identity (*Jordan Algebras*).
@@ -228,7 +228,7 @@ rows of signatures $(4,0)$ and $(0,4)$; its restrictions to the other four subsp
 $(1,1)$, $(3,3)$, $(1,3)$ and $(3,1)$ and carry the isotropic elements recorded in the table. The form is the
 trace form, $\langle\cdot,\cdot\rangle_{\natural}=\operatorname{Sc}(\tilde P^{\natural}\tilde Q)=\tfrac12\operatorname{Tr}(\tilde P^{\natural}\tilde Q)$,
 and the trace of a left multiplication is the scalar part, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$. The
-form is **not** invariant under the product, the two sides of $\langle\tilde P\star\tilde Q,\tilde R\rangle_{\natural}=\langle\tilde P,\tilde Q\star\tilde R\rangle_{\natural}$
+form is **not** invariant under the product, the two sides of $\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{\natural}=\langle\tilde P,\tilde Q\star\tilde Q_1\rangle_{\natural}$
 being $1$ and $0$ at $\vec e_x,\vec e_x,e_t$, which is the form-theoretic face of the failure of the Jordan identity.
 On the real elements the form coincides with the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, which is the form-level statement of the
 collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
@@ -244,7 +244,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 | $\operatorname{diag}(I_4,-I_4)$, signature $(4,4)$ | the realification of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of the restrictions to the remarkable subspaces |
 | $L^{\star}_{\tilde A}$, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$ | the left multiplication and its trace |
-| $\langle\tilde P\star\tilde Q,\tilde R\rangle_{\natural}=\langle\tilde P,\tilde Q\star\tilde R\rangle_{\natural}$ | the invariance that fails |
+| $\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{\natural}=\langle\tilde P,\tilde Q\star\tilde Q_1\rangle_{\natural}$ | the invariance that fails |
 
 ## Further Reading
 

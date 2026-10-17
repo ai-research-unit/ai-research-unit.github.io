@@ -62,7 +62,7 @@ invertibility criterion and the same zero-divisor set.
 
 **The operation.** Read the product as the composition of two operations, as *The Monoid of Acting Maps:
 the Process Is the Multiplication, the State Is the Idempotent* does: an element is the map "multiply by
-it", $L_{\tilde Q}:\tilde R\mapsto\tilde Q\tilde R$. A unit is an invertible map, a zero divisor is a
+it", $L_{\tilde Q}:\tilde{Q}_2\mapsto\tilde Q\tilde{Q}_2$. A unit is an invertible map, a zero divisor is a
 non-invertible one, and the cone is the set of elements whose acting map drops rank. A nonzero element of
 the cone kills a nonzero argument, so it destroys information and no operation can restore it. Off the
 cone, every acting map is invertible and the reversible processes are the units. The light cone is thus
@@ -536,21 +536,20 @@ invertibility are the same set". So the cone is not only the set of operations t
 is also the ideal boundary of the geometry the material sector carries, and the physical unboundedness of
 rapidity is the same fact as the algebraic non-invertibility of the null directions.
 
-**A topological obstruction is not the cone.** *The Magnetic Monopole in Biquaternionic Form* supplies the
-contrast the zero-divisor reading needs. A point monopole cannot be described by one smooth potential: were
+**A topological obstruction is not the cone.** A field whose flux through a closed surface is a nonzero integer supplies the
+contrast the zero-divisor reading needs. It cannot be described by one smooth potential: were
 $\tilde F$ the vector part of $\tilde\nabla^{\natural}\tilde A$ for a single everywhere-defined
-$\tilde A$, the Bianchi identity would hold and no magnetic source could appear. The monopole forces a
+$\tilde A$, the Bianchi identity would hold and no source of that kind could appear. It forces a
 **patchwise** potential, the two patches related on their overlap by a gauge transformation with a
-multivalued parameter — the biquaternionic Dirac string — and the magnetic charge is the **winding** of that
+multivalued parameter — the biquaternionic string — and the flux is the **winding** of that
 parameter, a topological integer fixed by boundary data and not by the local shape of the field. This is a
 different kind of obstruction from the one this article studies, and the difference is the point. A zero
 divisor is an element the product cannot invert: an **algebraic** failure that holds everywhere and is
 detected by the norm. The Dirac string is a **topological** failure of a global potential on one
 configuration: the field is invertible wherever it is smooth, and the obstruction is in the patching, not in
-the norm. The article's own ledger keeps the two honest — the quantisation condition $eg=2\pi n\hbar c$
-emerges as the single-valuedness of the gauge phase around the string, it imports $\hbar$, and it predicts
-neither the existence nor the mass of a monopole. One further fact belongs to this companion's sector
-language: the static monopole field is a **purely real vector of $\mathbb{M}_-$**, where the electric Coulomb
+the norm. The ledger keeps the two honest — the quantisation condition $eg=2\pi n\hbar c$
+emerges as the single-valuedness of the gauge phase around the string, and it imports $\hbar$. One further fact belongs to this companion's sector
+language: the static magnetic field is a **purely real vector of $\mathbb{M}_-$**, where the electric Coulomb
 field is a **purely imaginary vector of $\mathbb{M}_+$**, so that the electric–magnetic split of the field is
 the material–informational split of the algebra, and the duality rotation that exchanges them is a central
 $\mathrm{U}(1)$ symmetry.
@@ -637,12 +636,9 @@ postulate and no commutator enter.
   cone, is the Lorentz-homogeneous object. Complexified, the projectivisation is the **Segre quadric**, whose
   two rulings are the two chiral celestial spheres, and the real sphere is their diagonal, the fixed set of
   the conjugation.
-- The cone is algebraic, and a topological obstruction is a different thing. *The Magnetic Monopole in
-  Biquaternionic Form* is a configuration where no single global potential exists and the charge is a
-  winding, but the field is invertible wherever it is smooth: the failure is in the patching, not in the
-  norm. The monopole also sorts the field by sector — magnetic a real vector of $\mathbb{M}_-$, electric an
-  imaginary vector of $\mathbb{M}_+$ — and its quantisation condition imports $\hbar$ without predicting
-  existence or mass.
+- The cone is algebraic, and a topological obstruction is a different thing. A configuration where no
+  single global potential exists and the charge is a winding is invertible wherever it is smooth: the
+  failure is in the patching, not in the norm, and its quantisation condition imports $\hbar$.
 - The cone is also a **degenerate orbit of the symplectic structure**. On the phase-space biquaternion
   $\tilde Z=\tilde q+i\tilde p$ the Hermitian pairing has real part the Euclidean metric and imaginary part
   the symplectic form, its complex structure is the central $i$, and the cone is the zero-level (degenerate)
@@ -693,7 +689,6 @@ edge of the state space, the critical set of the square and the complement of th
 - The mathematics companion: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the theorem on the twelve sets, the two families and the twelve block criteria.
 - The cone in the algebra: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
 - The boundary of a description: *The Klein Paradox in Biquaternionic Form*, for the central potential shift, the mass gap and the exchange of the two mass-shell roots past it.
-- The obstruction that is topological rather than algebraic: *The Magnetic Monopole in Biquaternionic Form*, for the patchwise potential and the Dirac string, the winding as the magnetic charge, the sector split of the electric and magnetic fields, and the quantisation condition that imports $\hbar$.
 - The cone as a geometric boundary: *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*, for the light cone as the ideal boundary of hyperbolic velocity space and the ideal points as the non-invertible lightlike elements.
 - The comparison of the four general products: *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*.
 - The two families: *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$*; *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$*; *The Biquaternion Vacuum as a Minimal Idempotent*; *Decoherence as Idempotent Projection*.

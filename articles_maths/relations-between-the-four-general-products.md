@@ -190,23 +190,23 @@ $$
 
 The ${}^{\natural}$-product is the left multiplication of the general plain bilinear product re-indexed by the natural sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four general products have a monoid of left multiplications, and it is worth recording, although the property table itself is *Comparison Between the Four General Products*.
 
-For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, the associativity of the product, so they form a monoid, the image of $\mathbb{B}$ in its endomorphism ring. For the ${}^{\natural}$-product,
+For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde Q_3}=L_{\tilde P\tilde Q_3}$, the associativity of the product, so they form a monoid, the image of $\mathbb{B}$ in its endomorphism ring. For the ${}^{\natural}$-product,
 
 $$
-L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde R}
-=L_{\tilde P^{\natural}}\circ L_{\tilde R^{\natural}}
-=L_{\tilde P^{\natural}\tilde R^{\natural}}
-=L^{\natural}_{\tilde R\tilde P} ,
+L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde Q_3}
+=L_{\tilde P^{\natural}}\circ L_{\tilde Q_3^{\natural}}
+=L_{\tilde P^{\natural}\tilde Q_3^{\natural}}
+=L^{\natural}_{\tilde Q_3\tilde P} ,
 $$
 
-since $\tilde P^{\natural}\tilde R^{\natural}=(\tilde R\tilde P)^{\natural}$; the left multiplications are again closed under composition, in reversed order, and they form a monoid isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$.
+since $\tilde P^{\natural}\tilde Q_3^{\natural}=(\tilde Q_3\tilde P)^{\natural}$; the left multiplications are again closed under composition, in reversed order, and they form a monoid isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$.
 
 For the two sesquilinear products the composition leaves the class. For the ${}^{*}$-product,
 
 $$
-L^{*}_{\tilde P}\circ L^{*}_{\tilde R}(\tilde Q_1)
-=\tilde P\bigl(\tilde R\tilde Q_1^{*}\bigr)^{*}
-=\tilde P\tilde Q_1\tilde R^{*} ,
+L^{*}_{\tilde P}\circ L^{*}_{\tilde Q_3}(\tilde Q_1)
+=\tilde P\bigl(\tilde Q_3\tilde Q_1^{*}\bigr)^{*}
+=\tilde P\tilde Q_1\tilde Q_3^{*} ,
 $$
 
 which is $\mathbb{C}$-linear in $\tilde Q_1$; every left multiplication of the ${}^{*}$-product is conjugate-linear, so the composition is not one of them, and the left multiplications of the ${}^{*}$-product do not form a monoid. The same computation with $\overline{\tilde P}$ in place of $\tilde P$ settles the fourth operation, whose left multiplications are the conjugates of the right multiplications of the general plain bilinear product: the composition of two of them is linear and the class is not closed.

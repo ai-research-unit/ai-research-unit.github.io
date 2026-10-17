@@ -20,7 +20,7 @@ Both notions of the title are therefore **absences**. The block has no two-sided
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde P\tilde Q^{*}$, and the product of the block is $\diamond$.
 
-**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_t$ and $\tilde R\diamond\tilde Q=e_t$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $\langle\cdot,\cdot\rangle_{*}$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$.
+**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $\langle\cdot,\cdot\rangle_{*}$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$.
 
 ## The Relative Definitions
 
@@ -28,7 +28,7 @@ The word *unit* and the word *inverse* name a product, so the definitions are st
 
 **Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, a **right unit** when $\tilde Q_1\star e=\tilde Q_1$ for every $\tilde Q_1$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
-**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde R$ with $\tilde R\star\tilde Q=e$, **right-invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=e$, and **invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$. Such an $\tilde R$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
+**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde Q_2$ with $\tilde Q_2\star\tilde Q=e$, **right-invertible** when there is $\tilde Q_2$ with $\tilde Q\star\tilde Q_2=e$, and **invertible** when there is $\tilde Q_2$ with $\tilde Q\star\tilde Q_2=\tilde Q_2\star\tilde Q=e$. Such an $\tilde Q_2$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
 
 Throughout this article the product is the block $\diamond$, and, unqualified, *unit* and *inverse* are read in $\diamond$.
 
@@ -50,7 +50,7 @@ The obstruction is the projection: every value of the block is a pure vector, so
 
 ## The Absence of an Inverse
 
-**No element of the block is invertible and the group of units is empty**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_t$ and $\tilde R\diamond\tilde Q=e_t$ have no solution, because each left member is a pure vector and $e_t$ is not.
+**No element of the block is invertible and the group of units is empty**, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution, because each left member is a pure vector and $e_t$ is not.
 
 **Corollary (no inverse, no group of units).** No element of $\mathbb{B}$ is invertible of the block, and the group of units of $\diamond$ is empty.
 
@@ -59,10 +59,10 @@ The obstruction is the projection: every value of the block is a pure vector, so
 **Proposition (the one-sided equations have no solution).** For every $\tilde Q$ the two equations
 
 $$
-\tilde Q\diamond\tilde R=e_t,\qquad \tilde R\diamond\tilde Q=e_t
+\tilde Q\diamond\tilde Q_2=e_t,\qquad \tilde Q_2\diamond\tilde Q=e_t
 $$
 
-have no solution $\tilde R$.
+have no solution $\tilde Q_2$.
 
 *Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_t$ has scalar part one. A pure vector is never $e_t$, so neither equation holds.
 
@@ -107,14 +107,14 @@ The block has no inverse, but the one-sided multiplication by an element is an o
 **Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde A$,
 
 $$
-L_{\tilde A}\tilde R=\tilde A\diamond\tilde R,
+L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2,
 $$
 
 has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
 
 *Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec A)=0\}$, and the dimension count gives the bijection.
 
-So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
+So the equation $\tilde A\diamond\tilde Q_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
 ## The Invertibility Criterion Is Not Transferred
 
@@ -124,7 +124,7 @@ So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the 
 
 ## Summary
 
-The antisymmetric plain sesqualgebra $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_t$ and $\tilde R\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
+The antisymmetric plain sesqualgebra $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
 
 ## Summary of Notation
 
@@ -136,7 +136,7 @@ The antisymmetric plain sesqualgebra $\tilde P\diamond\tilde Q=\operatorname{Vec
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the Hermitian square |
-| $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
+| $L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, $\operatorname{Vect}(\mathbb{B})$ | the centre, the vector subspace |
 | no unit, no inverse, no group of units | the absence carried by the block |
 

@@ -60,7 +60,7 @@ $$
 \nabla\psi\, I\sigma_3 - eA\psi = m\psi\gamma_0 ,
 $$
 
-with $\nabla = \gamma^\mu\partial_\mu$, a fixed spin plane $I\sigma_3$, and the mass term multiplying on the right by $\gamma_0$. Each term is odd-graded, as it must be, since the vector derivative, the potential and the $\gamma_0$ are all vectors, and $\psi$ is even. The equation is manifestly covariant under Lorentz transformations, which act by $\psi\mapsto R\psi$ with $R$ a rotor ($R\tilde R = 1$), and it is written in the algebra rather than in a matrix representation.
+with $\nabla = \gamma^\mu\partial_\mu$, a fixed spin plane $I\sigma_3$, and the mass term multiplying on the right by $\gamma_0$. Each term is odd-graded, as it must be, since the vector derivative, the potential and the $\gamma_0$ are all vectors, and $\psi$ is even. The equation is manifestly covariant under Lorentz transformations, which act by $\psi\mapsto R\psi$ with $R$ a rotor ($R\tilde Q_1 = 1$), and it is written in the algebra rather than in a matrix representation.
 
 ### Reduction to the matrix equation
 
@@ -94,7 +94,7 @@ J^\mu = \bar\psi\,\gamma^\mu\psi ,
 \bar\psi = \psi^\dagger\gamma_0 ,
 $$
 
-equivalently $J = \psi\gamma_0\tilde\psi$ in the rotor normalisation. It is a future-pointing timelike vector built from the spinor, and its time component is the probability density. The remaining bilinear covariants — the axial current, the magnetisation and the scalar and pseudoscalar densities — are similarly geometric multivectors of definite grade. The framework's statement that the conserved current is the material-sector object $\tilde J\in\mathbb M_-$ is the algebra-level counterpart: the current is a specific real vector built from the field and a fixed Clifford-odd element.
+equivalently $J = \psi\gamma_0\psi^{\mathrm{rev}}$, with $\psi^{\mathrm{rev}}$ the reverse of the spinor, in the rotor normalisation. It is a future-pointing timelike vector built from the spinor, and its time component is the probability density. The remaining bilinear covariants — the axial current, the magnetisation and the scalar and pseudoscalar densities — are similarly geometric multivectors of definite grade. The framework's statement that the conserved current is the material-sector object $\tilde J\in\mathbb M_-$ is the algebra-level counterpart: the current is a specific real vector built from the field and a fixed Clifford-odd element.
 
 ## Symmetries and the Zitterbewegung Reading
 

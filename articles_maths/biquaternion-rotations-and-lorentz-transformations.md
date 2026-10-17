@@ -44,13 +44,13 @@ $$
 
 the **dagger sandwich**. Its carrier is the algebra as a real vector space of dimension eight, with basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and its group is the group of units. Two laws govern it.
 
-**Proposition (composition).** For all $\tilde{Q}$ and $\tilde{R}$,
+**Proposition (composition).** For all $\tilde{Q}$ and $\tilde{Q}_1$,
 
 $$
-\mathrm{H}_{\tilde{Q}\tilde{R}}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}.
+\mathrm{H}_{\tilde{Q}\tilde{Q}_1}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}_1}.
 $$
 
-**Proof.** $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{R}}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{R}\tilde T\tilde{R}^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{R})\tilde T(\tilde{Q}\tilde{R})^{*}=\mathrm{H}_{\tilde{Q}\tilde{R}}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{R})^{*}=\tilde{R}^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.
+**Proof.** $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{Q}_1}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{Q}_1\tilde T\tilde{Q}_1^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{Q}_1)\tilde T(\tilde{Q}\tilde{Q}_1)^{*}=\mathrm{H}_{\tilde{Q}\tilde{Q}_1}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{Q}_1)^{*}=\tilde{Q}_1^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.
 
 **Proposition (the central rule).** For every central $A$ and every $\tilde T$,
 

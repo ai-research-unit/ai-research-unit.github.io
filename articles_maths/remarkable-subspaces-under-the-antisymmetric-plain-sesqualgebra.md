@@ -31,16 +31,16 @@ with $\mathbb{M}_+$ the Hermitian and $\mathbb{M}_-$ the anti-Hermitian half, th
 **Proposition (the action of the centre).** For a central element $\lambda e_t$ and any biquaternion,
 
 $$
-(\lambda e_t)\diamond\tilde R=-\lambda\,\overline{\vec R},\qquad
-\tilde R\diamond(\lambda e_t)=\overline{\lambda}\,\vec R.
+(\lambda e_t)\diamond\tilde Q_1=-\lambda\,\overline{\vec R},\qquad
+\tilde Q_1\diamond(\lambda e_t)=\overline{\lambda}\,\vec R.
 $$
 
-*Proof.* The first is $\lambda\,(e_t\diamond\tilde R)=\lambda\,\mathrm{Vect}(\tilde R^{*})=-\lambda\overline{\vec R}$; the second is $\tilde R\diamond(\lambda e_t)=\mathrm{Vect}(\tilde R(\lambda e_t)^{*})=\mathrm{Vect}(\overline{\lambda}\tilde R)=\overline{\lambda}\vec R$.
+*Proof.* The first is $\lambda\,(e_t\diamond\tilde Q_1)=\lambda\,\mathrm{Vect}(\tilde Q_1^{*})=-\lambda\overline{\vec R}$; the second is $\tilde Q_1\diamond(\lambda e_t)=\mathrm{Vect}(\tilde Q_1(\lambda e_t)^{*})=\mathrm{Vect}(\overline{\lambda}\tilde Q_1)=\overline{\lambda}\vec R$.
 
 **Remark (the centre is not annihilating).** The two displays show that the centre is **not** in the kernel of the operation on either side: a nonzero central element sends every element with nonzero vector part to a nonzero vector part. What is true is the converse direction: the operation annihilates no value in the centre, and the **kernel of the left operator of the unit is the centre**,
 
 $$
-e_t\diamond\tilde R=0\iff \overline{\vec R}=0\iff \tilde R\in\mathbb{C}_{\mathbb{B}},
+e_t\diamond\tilde Q_1=0\iff \overline{\vec R}=0\iff \tilde Q_1\in\mathbb{C}_{\mathbb{B}},
 $$
 
 so the centre is the kernel of the operator $L^{\diamond}_{e_t}$ and not of the operation. The phrase of the scope of this article, *the vanishing on the centre*, is read here in that sense: the diagonal vanishes on the whole centre, no value lies in the centre, and the centre is the kernel of the operator of the unit; the centre is not dead in the arguments.
@@ -67,7 +67,7 @@ $$
 
 which does not vanish in general: at $\vec Q=\vec e_x+i\vec e_y$ it is $2i\vec e_z$. It vanishes exactly when the two vectors are proportional over $\mathbb{C}$, $\vec Q\times\overline{\vec Q}=0$. In particular the **real** vectors and the **purely imaginary** vectors both have square zero, since there $\overline{\vec Q}=\pm\vec Q$ and the cross product of a vector with itself vanishes.
 
-**Remark (the image).** The vector subspace is the image of the block, by *Introduction to the Antisymmetric Plain Sesqualgebra*, so the reading of every other subspace is a reading into the vector subspace. On the vector subspace itself the block is surjective: the left multiplication of the unit sends $\tilde R$ to $-\overline{\vec R}$, and the coefficientwise conjugation is a bijection of the vector subspace, so every $\vec R$ is a value $e_t\diamond\tilde R$.
+**Remark (the image).** The vector subspace is the image of the block, by *Introduction to the Antisymmetric Plain Sesqualgebra*, so the reading of every other subspace is a reading into the vector subspace. On the vector subspace itself the block is surjective: the left multiplication of the unit sends $\tilde Q_1$ to $-\overline{\vec R}$, and the coefficientwise conjugation is a bijection of the vector subspace, so every $\vec R$ is a value $e_t\diamond\tilde Q_1$.
 
 ## The Quaternion Subspace
 
@@ -149,7 +149,7 @@ so the diagonal vanishes exactly on the real vectors of the subspace and on its 
 
 | subspace | the reading of the block | closure | the diagonal | square-zero elements |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $(\lambda e_t)\diamond\tilde R=-\lambda\overline{\vec R}$, $\tilde R\diamond(\lambda e_t)=\overline{\lambda}\vec R$ | closed, the value of two central elements being $0$ | $(\lambda e_t)\diamond(\lambda e_t)=0$ | the whole centre |
+| $\mathbb{C}_{\mathbb{B}}$ | $(\lambda e_t)\diamond\tilde Q_1=-\lambda\overline{\vec R}$, $\tilde Q_1\diamond(\lambda e_t)=\overline{\lambda}\vec R$ | closed, the value of two central elements being $0$ | $(\lambda e_t)\diamond(\lambda e_t)=0$ | the whole centre |
 | $\mathrm{Vect}(\mathbb{B})$ | $\vec P\diamond\vec Q=-\vec P\times\overline{\vec Q}$ | closed, and surjective | $-\vec Q\times\overline{\vec Q}$, $2i\vec e_z$ at $\vec e_x+i\vec e_y$ | the $\vec Q$ with $\vec Q\times\overline{\vec Q}=0$, in particular the real and the imaginary vectors |
 | $\mathbb{H}_{\mathbb{B}}$ | $-P_t\vec Q+Q_t\vec P-\vec P\times\vec Q$, real | closed | $0$ | the whole subspace |
 | $i\mathbb{H}_{\mathbb{B}}$ | $-p_t\vec q+q_t\vec p-\vec p\times\vec q$, real | not closed, image the real vector triple | $0$ | the whole subspace |
@@ -170,7 +170,7 @@ On the remarkable subspaces the block is read as follows. It is central-free: no
 |---|---|
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable real subspaces |
 | $\vec P,\overline{\vec P}$ | a vector part and its coefficientwise conjugate |
-| $(\lambda e_t)\diamond\tilde R=-\lambda\overline{\vec R}$ | the action of the centre, not annihilating |
+| $(\lambda e_t)\diamond\tilde Q_1=-\lambda\overline{\vec R}$ | the action of the centre, not annihilating |
 | $\vec P\diamond\vec Q=-\vec P\times\overline{\vec Q}$ | the block on the vector subspace |
 | $-P_t\vec Q+Q_t\vec P-\vec P\times\vec Q$ | the block on the real span, with real values |
 | $i(P_t\vec q+Q_t\vec p)-\vec p\times\vec q$ | the block on $\mathbb{M}_+$, leaving the half |

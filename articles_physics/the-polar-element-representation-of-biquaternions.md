@@ -32,7 +32,7 @@ The dictionary is as follows, and each line is established in the section on its
 
 Two consequences of the algebraic theorem are physical, and they frame the article.
 
-First, a Lorentz rotor of unit norm has $r = 1$ and $\alpha = 0$, so the representation reduces on the Lorentz group to the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, which is therefore a **special case** of the four-factor representation and not a separate theorem.
+First, a Lorentz rotor of unit norm has $r = 1$ and $\alpha = 0$, so the representation reduces on the Lorentz group to the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde U$, which is therefore a **special case** of the four-factor representation and not a separate theorem.
 
 Second, the biquaternion norm is the determinant of the $2\times2$ representation, so the modulus of the representation is the square root of a determinant, and the four factors are respectively the absolute value of a determinant, an argument of a determinant, a positive Hermitian matrix, and a unitary matrix.
 
@@ -354,7 +354,7 @@ The four factors are read as the **four moduli of a scattering amplitude**: the 
 
 ## Summary
 
-The polar representation of a biquaternion is $r \exp(i\alpha)B\tilde q$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, with the positivity of the boost factor supplying the normalisation.
+The polar representation of a biquaternion is $r \exp(i\alpha)B\tilde q$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde U$, with the positivity of the boost factor supplying the normalisation.
 
 The modulus is $\sqrt{\det\mathsf{M}_2(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $\langle\tilde{\Lambda}\rangle_{\natural}\langle\tilde{\Lambda}^{*}\rangle_{\natural} = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = (\tilde{\Lambda}^{\natural})^2 = -(i/c)\tilde{V}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary.
 

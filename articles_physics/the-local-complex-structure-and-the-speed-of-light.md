@@ -48,19 +48,19 @@ A general element $i q_te_t+\vec q$ of $\mathbb{M}_-$ is sent to $-q_te_t+i\vec 
 
 The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
 $$
-\langle JX,JY\rangle_{\natural}=\langle\tilde{Q},\tilde{R}\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde{R},
+\langle JX,JY\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
 $$
-which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde{R}=JX$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
+which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde Q_3=JX$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
 $$
 \langle JX,-\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; -\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; \langle\tilde{Q},JX\rangle_{\natural}=0 ,
 $$
-so a vector and its image under $J$ are orthogonal. Taking $\tilde{R}=\tilde{Q}$,
+so a vector and its image under $J$ are orthogonal. Taking $\tilde Q_3=\tilde{Q}$,
 $$
 \langle JX,JX\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde{R}$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
 $$
-\langle JY,Z\rangle_{\natural}=\langle J^2\tilde{R},JZ\rangle_{\natural}=-\langle\tilde{R},JZ\rangle_{\natural}=0,
+\langle JY,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 

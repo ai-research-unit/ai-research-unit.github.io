@@ -164,7 +164,7 @@ so that the adjoint is $\bigl(\Theta_{\tilde A}\bigr)^{*}=\Theta_{\tilde A^{*}}$
 
 **A null parameter.** For $\tilde A=\vec e_x+i\vec e_y$, $\langle\tilde A\rangle_{\natural}=0$ and $\Theta_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1\tilde A^{\natural}$; the operator is nonzero but has $\Theta_{\tilde A}(e_t)=0$ and is not invertible, in agreement with the criterion that $\Theta$ is invertible exactly on the units.
 
-**A vector parameter.** For $\tilde R=\vec e_x$ one has $\tilde R^{\natural}=-\vec e_x$, so $\Theta_{\tilde R}(\tilde Q_1)=-\vec e_x\tilde Q_1 \vec e_x$, with $\langle\tilde R\rangle_{\natural}=1$: the operator is a form-preserving map, $\Theta_{\tilde R}(e_t)=e_t$ and $\Theta_{\tilde R}(\vec e_y)=-\vec e_y$. Its restriction to the vector subspace is the reflection, up to sign, described in *The Pin and Spin Groups of the General Quaternionic Algebra*.
+**A vector parameter.** For $\tilde Q_5=\vec e_x$ one has $\tilde Q_5^{\natural}=-\vec e_x$, so $\Theta_{\tilde Q_5}(\tilde Q_1)=-\vec e_x\tilde Q_1 \vec e_x$, with $\langle\tilde Q_5\rangle_{\natural}=1$: the operator is a form-preserving map, $\Theta_{\tilde Q_5}(e_t)=e_t$ and $\Theta_{\tilde Q_5}(\vec e_y)=-\vec e_y$. Its restriction to the vector subspace is the reflection, up to sign, described in *The Pin and Spin Groups of the General Quaternionic Algebra*.
 
 **A parameter of norm minus one.** For $\tilde A=ie_t$, $\langle\tilde A\rangle_{\natural}=-1$ and $\tilde A^{\natural}=ie_t$, so $\Theta_{\tilde A}(\tilde Q_1)=-\tilde Q_1$: the operator is a scalar, of norm $\pm1$ and orthogonal, of determinant $+1$; the kernel $\{\pm e_t\}$ of the assignment contains both $\tilde A$ and $-\tilde A$, and the two give the same operator.
 

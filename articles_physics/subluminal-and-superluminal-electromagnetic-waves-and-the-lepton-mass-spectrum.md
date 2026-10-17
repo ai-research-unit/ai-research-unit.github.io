@@ -1,4 +1,4 @@
-# __Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum__
+# __Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form__
 
 ## Introduction
 
@@ -8,9 +8,9 @@ $$
 \partial F = 0
 $$
 
-for a 2-form field $F$, together with the spinor sector of the same algebra. From that starting point it claims three things. The first is that the free Maxwell equation has **subluminal and superluminal** solutions that are **undistorted progressive waves** and carry **non-null field invariants** and longitudinal field components — a family larger than the transverse plane waves of the textbook account. The second is that, writing the field as a **spinor bilinear** $F=\psi\gamma_{21}\psi^{\mathrm{c}}$, the free Maxwell equation is equivalent to a **non-linear Dirac–Hestenes equation** for $\psi$, and that this non-linear equation **linearises** exactly when the **Takabayasi angle** $\beta$ is constant; the same section shows the massless Dirac equation to be a Maxwell equation with an **axial (magnetic) current**. The third is a **lepton mass spectrum**: at the Takabayasi angles $\pi/2$ and $3\pi/2$ the equation yields the muon mass, and with one further hypothesis the tau mass.
+for a 2-form field $F$, together with the spinor sector of the same algebra. From that starting point it claims two things. The first is that the free Maxwell equation has **subluminal and superluminal** solutions that are **undistorted progressive waves** and carry **non-null field invariants** and longitudinal field components — a family larger than the transverse plane waves of the textbook account. The second is that, writing the field as a **spinor bilinear** $F=\psi\gamma_{21}\psi^{\mathrm{c}}$, the free Maxwell equation is equivalent to a **non-linear Dirac–Hestenes equation** for $\psi$, and that this non-linear equation **linearises** exactly when the **Takabayasi angle** $\beta$ is constant; the same section shows the massless Dirac equation to be a Maxwell equation with an **axial (magnetic) current**.
 
-The corpus records the programme and does not endorse it. Its value to this corpus is twofold. The structural part — the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation — is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial current of *The Magnetic Monopole in Biquaternionic Form*, which the massless equation here reproduces. The mass claim is of a different kind — an algebraic mass-generation proposal — and is recorded with that standing, next to the other two the corpus already holds.
+The corpus records the programme and does not endorse it. Its value to this corpus is twofold. The structural part — the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation — is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial-current form of the massless equation, which the spinor bilinear reproduces.
 
 One convention differs from the corpus and is flagged once, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the convention the corpus itself adopts for its gamma matrices. Its **volume element** $\gamma_5=\gamma_0\gamma_1\gamma_2\gamma_3$ satisfies $\gamma_5^2=-1$, and it sets $i\equiv\gamma_5$: the source's "$i$" in the electric–magnetic notation $F=\vec E+i\vec B$ is therefore the **duality operator**, the corpus's central imaginary unit, and not a second imaginary number. The source's fixed bivector $\gamma_{21}=\gamma_2\gamma_1$ is the **spin plane** that multiplies the spinor on the right, the role played in the corpus's Dirac–Hestenes article by the fixed element $I\sigma_3$. The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary; the source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
 
@@ -166,62 +166,17 @@ $$
 \partial F^\uparrow = -\gamma_5 J_m ,
 $$
 
-that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\gamma_5B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\gamma_5B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source identifies with the pair of **magnetic monopoles** of Lochak's construction. This is the exact counterpart of *The Magnetic Monopole in Biquaternionic Form*, and it is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\gamma_\mu F$.
-
-## The Lepton Mass Spectrum
-
-### The mass formula
-
-The final section of the paper uses the projector family to propose a mass spectrum. The electron is the free configuration $F_e$ with $\beta=0$ (the positron with $\beta=\pi$); the muon is modelled as the electromagnetic configuration $F_e+F^\uparrow$, and the magnetic current $J_m=c\,ϙ_m\,\varphi\gamma_0\varphi^{\mathrm{c}}$ with magnetic charge $ϙ_m$ is inserted into the non-linear equation. In Gaussian units, with the field normalised as $F=k\,(e\hbar/mc)\,\psi\gamma_{21}\psi^{\mathrm{c}}$ and the constant fixed at $k=2\pi/3$, the equation for $\varphi$ becomes a **linear** Dirac–Hestenes equation precisely when the $\gamma_5$-coefficient vanishes,
-
-$$
-N=-\frac{3m}{e}ϙ_m\cos\beta = 0 \quad\Longleftrightarrow\quad \beta=\frac{\pi}{2}\ \text{or}\ \frac{3\pi}{2},
-$$
-
-and the effective mass is then
-
-$$
-M = m + \frac{3m}{e}\,ϙ_m .
-$$
-
-Dirac's quantisation condition for the monopole, $eϙ_m/\hbar c=n/2$, gives $ϙ_m=n\,e/(2\alpha)$ with $\alpha=e^2/\hbar c$ the fine-structure constant, and hence
-
-$$
-M = m\left(1+\frac{3n}{2\alpha}\right).
-$$
-
-At $n=1$ this is the **muon**, $M=206.55\,m_e$: the source reports the muon mass to better than a tenth of a percent from an equation in which the only inputs are the electron mass, the fine-structure constant and a monopole quantum number. An extra hypothesis (the tau as an excited state with $n=p^4$) extends this to the spectrum
-
-$$
-M_p = m\left(1+\frac{3}{2\alpha}\sum_{l=0}^{p} l^4\right),
-$$
-
-which is a formula found earlier by Barut (1980) by quite different arguments. It gives $M_0=m_e$, $M_1=m_\mu$, $\mathsf{M}_2=m_\tau$, and a fourth state $M_3\approx2.0\times10^4\,m_e\approx10.3$ GeV that has not been observed. The projector values $\beta=0,\pi,\pi/2,3\pi/2$ are read as the electron, positron, muon and antimuon respectively — the **discrete phase of the spinor-to-field map becomes a discrete mass**.
-
-### The numbers the formula gives
-
-With $\alpha=1/137.036$ and the electron mass as unit:
-
-| State | $\sum_{l=0}^{p}l^4$ | $M_p/m_e$ | $M_p$ (MeV) | Nearest measured lepton |
-|---|---|---|---|---|
-| $p=0$ | $0$ | $1.000$ | $0.51$ | electron, $0.511$ |
-| $p=1$ | $1$ | $206.55$ | $105.5$ | muon, $105.7$ |
-| $p=2$ | $17$ | $3495.4$ | $1786$ | tau, $1777$ |
-| $p=3$ | $98$ | $20145$ | $10294$ | none known |
-
-The muon reproduction is good to about $0.1\%$ and the tau to about $0.5\%$, which is the sense in which the source calls the agreement excellent. Two printed slips in the source were found in the same check and are recorded in the `.context`: the tau **ratio** is printed as $3845$ where the formula and the source's own printed energy give $3495$, and the projector relation of the previous section is printed without its complement. Neither affects the formula the source proposes; both would mislead a reader who transcribes the paper's printed numbers.
-
-The honest standing of the mass claim is that it is a **third algebraic mass-generation proposal** in the corpus, alongside the eigenvalue sector of the electro-gravimagnetic programme and the eigenvalue equations of Gsponer–Hurni. Like the others it is an algebraic relation that reproduces one or two charged-lepton masses, not a spectrum derived from first principles, and the single formula that extends it to a "spectrum" rests on the ad hoc identification $n=p^4$. The test the corpus applies to all three is the same: whether the **full** charged-lepton and quark spectrum follows with no further input. Until then the formula is recorded as a striking numerical coincidence with a structural origin, not as a derivation.
+that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\gamma_5B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\gamma_5B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\gamma_\mu F$.
 
 ## Status, Contrasts, and Boundaries
 
-What the programme establishes is the **structural half**. That the free Maxwell equation has free solutions with non-null invariants is true and is a genuine correction to the reflex that "free electromagnetic waves are null transverse plane waves"; the classification of *The Field-Strength Biquaternion and Its Invariants* admits such fields but does not exhibit them, and the subluminal construction here supplies the missing example. That the field is a spinor bilinear and that the Maxwell equation for the field is a non-linear Dirac–Hestenes equation which linearises precisely at constant Takabayasi angle is likewise a clean structural statement, and it explains from a second direction why the corpus's plane-wave Dirac solutions are simple. That the massless Dirac equation is a Maxwell equation with an axial current is the third, and it reproduces the corpus's monopole sector.
+What the programme establishes is the **structural half**. That the free Maxwell equation has free solutions with non-null invariants is true and is a genuine correction to the reflex that "free electromagnetic waves are null transverse plane waves"; the classification of *The Field-Strength Biquaternion and Its Invariants* admits such fields but does not exhibit them, and the subluminal construction here supplies the missing example. That the field is a spinor bilinear and that the Maxwell equation for the field is a non-linear Dirac–Hestenes equation which linearises precisely at constant Takabayasi angle is likewise a clean structural statement, and it explains from a second direction why the corpus's plane-wave Dirac solutions are simple. That the massless Dirac equation is a Maxwell equation with an axial current is the third, and it reproduces the corpus's axial-current form.
 
 The boundaries are these. The Clifford-bundle route is an **external formalism**; the corpus's own treatment is the biquaternion one, and the two are related through the even-subalgebra dictionary rather than identified. The "superluminal" of the X-wave is a pattern speed of a localised solution, not a signalling speed, and must not be read otherwise. The **purely electromagnetic particle** is a programme item revived from Einstein and Waite, not a constructed particle. And the mass spectrum is an algebraic proposal whose extension to a full spectrum is a hypothesis, tested above against the two masses it does reproduce.
 
 ## Summary
 
-The programme of Rodrigues and Vaz works in the Clifford bundle and presses the free Maxwell equation $\partial F=0$ in two directions. It exhibits **subluminal and superluminal undistorted progressive wave solutions with non-null invariants and longitudinal components**, built from a Hertz potential and a spherical Helmholtz solution, and connects the free stationary solution to the old question of purely electromagnetic particles. It represents the field as the **spinor bilinear** $F=\psi\gamma_{21}\psi^{\mathrm{c}}$ and shows the Maxwell equation to be a **non-linear Dirac–Hestenes equation**, with the **Takabayasi angle** as the knob: constant $\beta$ makes it linear, $0$ and $\pi$ make it the electron and positron, $\pi/2$ and $3\pi/2$ make it the muon. In the other direction the **massless Dirac equation is a Maxwell equation with an axial (magnetic) current**, which is the route by which a monopole pair appears. The **lepton mass formula** $M_p=m(1+\frac{3}{2\alpha}\sum_{l=0}^{p}l^4)$ reproduces the muon and tau masses to within a percent and predicts a fourth charged lepton near $10.3$ GeV; it is Barut's formula recovered from a geometric phase, and it is a numerical coincidence with a structural origin until a full spectrum follows.
+The programme of Rodrigues and Vaz works in the Clifford bundle and presses the free Maxwell equation $\partial F=0$ in two directions. It exhibits **subluminal and superluminal undistorted progressive wave solutions with non-null invariants and longitudinal components**, built from a Hertz potential and a spherical Helmholtz solution, and connects the free stationary solution to the old question of purely electromagnetic particles. It represents the field as the **spinor bilinear** $F=\psi\gamma_{21}\psi^{\mathrm{c}}$ and shows the Maxwell equation to be a **non-linear Dirac–Hestenes equation**, with the **Takabayasi angle** as the knob: constant $\beta$ makes it linear, $0$ and $\pi$ make it the electron and positron, $\pi/2$ and $3\pi/2$ make it the muon. In the other direction the **massless Dirac equation is a Maxwell equation with an axial (magnetic) current**, which is the route by which a magnetic current appears.
 
 ## Summary of Notation
 
@@ -247,8 +202,6 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $\Lambda_\pm,\ \Lambda_\beta$ | Energy projector $\tfrac12(\psi\pm\gamma_0\psi\gamma_0)$; one-parameter projector family |
 | $S=\tfrac12\psi\gamma_{21}\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 F\gamma_\mu F$ the Maxwell energy–momentum |
 | $\lambda,\kappa,\Lambda,K$ | Scalar coefficients of the spinorial Maxwell and non-linear equations |
-| $ϙ_m$, $n$, $\alpha$ | Magnetic charge, monopole quantum number, fine-structure constant $e^2/\hbar c$ |
-| $M_p=m(1+\frac{3}{2\alpha}\sum_{l=0}^{p}l^4)$ | The lepton mass formula; $p=0,1,2$ electron, muon, tau |
 
 ## Further Reading
 
@@ -258,6 +211,4 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 - J.-y. Lu and J. F. Greenleaf, "Nondiffracting X waves", *IEEE Trans. Ultrason. Ferroelectr. Freq. Control* **39** (1992) 19–31, for the scalar X-wave solutions used as Hertz potentials.
 - D. Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and D. Hestenes and G. Sobczyk, *Clifford Algebra to Geometric Calculus* (Reidel, 1987), for the spacetime-algebra formulation and the bilinear covariants.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the projector operators and the spinor classification.
-- A. O. Barut, *Surveys in High Energy Physics* **1** (1980) 113, for the lepton mass formula the source recovers.
-- G. Lochak, "Wave equation for a magnetic monopole", *International Journal of Theoretical Physics* **24** (1985) 1019, for the monopole interpretation of the parity-split spinor.
 - M. W. Evans, "The present status of the Einstein–de Broglie–Vigier model", *Foundations of Physics* **24** (1994) 1971, cited by the source for evidence of longitudinal electromagnetic fields.

@@ -86,7 +86,7 @@ $$
 
 the light cone of Minkowski space. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* proves the following, and it is quoted here rather than repeated.
 
-**The cone is the zero-divisor set.** A nonzero biquaternion has $\langle\tilde{Q}\rangle_{\natural} = 0$ if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde{R}$ with $\tilde{Q}\tilde{R} = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict$,
+**The cone is the zero-divisor set.** A nonzero biquaternion has $\langle\tilde{Q}\rangle_{\natural} = 0$ if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_1$ with $\tilde{Q}\tilde Q_1 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict$,
 
 $$
 \tilde{Q} = ict\left(e_t - i\vec u_x\right) = 2ict\,\tilde\Pi(-\vec u_x),
@@ -120,7 +120,7 @@ $$
 \tilde{\Lambda} \in \mathbb{B}, \quad \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t,
 $$
 
-as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde{R}\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{\Lambda}\rangle_{\natural}^*$. Hence
+as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}\tilde Q_1\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{\Lambda}\rangle_{\natural}^*$. Hence
 
 $$
 \langle\tilde{Q}'\rangle_{\natural} = \langle\tilde{\Lambda}\rangle_{\natural} \, \langle\tilde{Q}\rangle_{\natural} \, \langle\tilde{\Lambda}^{*}\rangle_{\natural}

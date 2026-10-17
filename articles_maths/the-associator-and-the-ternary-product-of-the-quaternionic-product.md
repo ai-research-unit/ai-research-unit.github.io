@@ -14,7 +14,7 @@ the second of the four general products of the biquaternion algebra $\mathbb{B}$
 For a bilinear product the defect is the **associator**
 
 $$
-[\tilde P,\tilde Q,\tilde R] = (\tilde P\star\tilde Q)\star\tilde R - \tilde P\star(\tilde Q\star\tilde R) ,
+[\tilde P,\tilde Q,\tilde Q_2] = (\tilde P\star\tilde Q)\star\tilde Q_2 - \tilde P\star(\tilde Q\star\tilde Q_2) ,
 $$
 
 a $\mathbb{C}$-trilinear map of three variables that vanishes identically exactly for an associative product (*Non-Associative Algebras and the Property Ladder* §*Algebras, the Associator and Linearisation*). For the associative multiplication $\tilde P\tilde Q$ of the algebra it is identically zero, and the ladder of weaker identities — alternative, flexible, power-associative — is the record of how far an algebra may depart from it. The quaternionic product departs from it at every rung.
@@ -22,30 +22,30 @@ a $\mathbb{C}$-trilinear map of three variables that vanishes identically exactl
 The article establishes four things. First, the associator has the closed form
 
 $$
-[\tilde P,\tilde Q,\tilde R] = \bigl(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R ,
+[\tilde P,\tilde Q,\tilde Q_2] = \bigl(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_2 ,
 $$
 
-which reduces the defect to the insertion of the conjugation and shows at once that it is nonzero. Second, the product satisfies **no** rung of the ladder: it fails the flexible identity, and it fails the weakest rung of all, third-power associativity. Third, the general theory of a bilinear product attaches to its symmetrisation a **ternary product** $\{\tilde P,\tilde Q,\tilde R\}$, the linearisation of the quadratic representation; here that ternary product is computed and found to be central-valued. Fourth, the ternary product is $\mathbb{C}$-linear in each of its three variables — its parities are (linear, linear, linear) — but it fails the five-linear Jordan triple identity, so it is not the triple system that the general theory produces for an associative product.
+which reduces the defect to the insertion of the conjugation and shows at once that it is nonzero. Second, the product satisfies **no** rung of the ladder: it fails the flexible identity, and it fails the weakest rung of all, third-power associativity. Third, the general theory of a bilinear product attaches to its symmetrisation a **ternary product** $\{\tilde P,\tilde Q,\tilde Q_2\}$, the linearisation of the quadratic representation; here that ternary product is computed and found to be central-valued. Fourth, the ternary product is $\mathbb{C}$-linear in each of its three variables — its parities are (linear, linear, linear) — but it fails the five-linear Jordan triple identity, so it is not the triple system that the general theory produces for an associative product.
 
 ## The Associator
 
-**Theorem (the associator).** For all $\tilde P,\tilde Q,\tilde R \in \mathbb{B}$,
+**Theorem (the associator).** For all $\tilde P,\tilde Q,\tilde Q_2 \in \mathbb{B}$,
 
 $$
-[\tilde P,\tilde Q,\tilde R] = \bigl(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R .
+[\tilde P,\tilde Q,\tilde Q_2] = \bigl(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_2 .
 $$
 
 **Proof.** Expand the definition and use that ${}^{\natural}$ is an anti-automorphism of order two: $(\tilde P\star\tilde Q)^{\natural} = (\tilde P^{\natural}\tilde Q)^{\natural} = \tilde Q^{\natural}\tilde P$. Therefore
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R = \tilde Q^{\natural}\tilde P\tilde R , \qquad \tilde P\star(\tilde Q\star\tilde R) = \tilde P^{\natural}\,\tilde Q^{\natural}\tilde R ,
+(\tilde P\star\tilde Q)\star\tilde Q_2 = \tilde Q^{\natural}\tilde P\tilde Q_2 , \qquad \tilde P\star(\tilde Q\star\tilde Q_2) = \tilde P^{\natural}\,\tilde Q^{\natural}\tilde Q_2 ,
 $$
 
 and the difference is the displayed product on the right.
 
 The associator is a $\mathbb{C}$-trilinear map, so it is determined by its values on the $64$ triples of basis elements; on those triples it is computed from the multiplication table.
 
-**Theorem (non-associativity).** The quaternionic product is not associative: $[\tilde P,\tilde Q,\tilde R] \neq 0$ on explicit triples. In particular
+**Theorem (non-associativity).** The quaternionic product is not associative: $[\tilde P,\tilde Q,\tilde Q_2] \neq 0$ on explicit triples. In particular
 
 $$
 [\vec e_x,e_t,e_t] = \bigl(e_t^{\natural}\vec e_x - \vec e_x^{\natural}e_t^{\natural}\bigr)e_t = \bigl(\vec e_x + \vec e_x\bigr)e_t = 2\vec e_x ,
@@ -55,7 +55,7 @@ and $24$ of the $64$ triples of basis elements give a nonzero associator.
 
 **Proof.** The computation displayed uses $e_t^{\natural} = e_t$ and $\vec e_x^{\natural} = -\vec e_x$; the count is the enumeration of the $64$ triples against the closed form.
 
-**Remark.** The alternation of the two signs in the closed form is the whole mechanism: the first term is the plain product with the conjugation inserted in the middle, $(\tilde Q^{\natural}\tilde P)\tilde R$, and the second is the plain product with the conjugation inserted in the first and the second slot, $(\tilde P^{\natural}\tilde Q^{\natural})\tilde R$. The two agree when the conjugation can be moved across the first two factors without cost, that is when $\tilde P^\natural\tilde Q^\natural = \tilde Q^\natural\tilde P$; the associator therefore measures the failure of the two conjugated factors to commute inside the plain product. For the associative multiplication the associator $(\tilde P\tilde Q)\tilde R - \tilde P(\tilde Q\tilde R)$ vanishes identically, by associativity alone; the quaternionic associator does not vanish, because the insertion of ${}^{\natural}$ in the first slot is exactly what associativity cannot absorb.
+**Remark.** The alternation of the two signs in the closed form is the whole mechanism: the first term is the plain product with the conjugation inserted in the middle, $(\tilde Q^{\natural}\tilde P)\tilde Q_2$, and the second is the plain product with the conjugation inserted in the first and the second slot, $(\tilde P^{\natural}\tilde Q^{\natural})\tilde Q_2$. The two agree when the conjugation can be moved across the first two factors without cost, that is when $\tilde P^\natural\tilde Q^\natural = \tilde Q^\natural\tilde P$; the associator therefore measures the failure of the two conjugated factors to commute inside the plain product. For the associative multiplication the associator $(\tilde P\tilde Q)\tilde Q_2 - \tilde P(\tilde Q\tilde Q_2)$ vanishes identically, by associativity alone; the quaternionic associator does not vanish, because the insertion of ${}^{\natural}$ in the first slot is exactly what associativity cannot absorb.
 
 ## The Failure of the Weaker Laws
 
@@ -96,28 +96,28 @@ $$
 **Definition.** The **ternary product** of the quaternionic multiplication is the ternary operation generated by the symmetrisation,
 
 $$
-\{\tilde P,\tilde Q,\tilde R\} = (\tilde P\bullet\tilde Q)\bullet\tilde R + (\tilde R\bullet\tilde Q)\bullet\tilde P - (\tilde P\bullet\tilde R)\bullet\tilde Q .
+\{\tilde P,\tilde Q,\tilde Q_2\} = (\tilde P\bullet\tilde Q)\bullet\tilde Q_2 + (\tilde Q_2\bullet\tilde Q)\bullet\tilde P - (\tilde P\bullet\tilde Q_2)\bullet\tilde Q .
 $$
 
-**Theorem (the ternary product).** For all $\tilde P,\tilde Q,\tilde R \in \mathbb{B}$,
+**Theorem (the ternary product).** For all $\tilde P,\tilde Q,\tilde Q_2 \in \mathbb{B}$,
 
 $$
-\{\tilde P,\tilde Q,\tilde R\} = \Bigl(\beta(\tilde P,\tilde Q)\,R_t + \beta(\tilde R,\tilde Q)\,P_t - \beta(\tilde P,\tilde R)\,Q_t\Bigr)e_t .
+\{\tilde P,\tilde Q,\tilde Q_2\} = \Bigl(\beta(\tilde P,\tilde Q)\,R_t + \beta(\tilde Q_2,\tilde Q)\,P_t - \beta(\tilde P,\tilde Q_2)\,Q_t\Bigr)e_t .
 $$
 
 In particular the ternary product is central-valued, and it depends only on the scalar coordinates $P_t,Q_t,R_t$ and on the pairings $\beta$ among the three arguments.
 
-**Proof.** By the lemma each inner symmetrisation is a central multiple of $e_t$. For a central element $\lambda e_t$ one has $(\lambda e_t)\bullet\tilde Q_1 = \lambda\,(e_t\bullet\tilde Q_1) = \lambda Q_{1t}e_t$, because $e_t\bullet\tilde Q_1 = \tfrac12(e_t\star\tilde Q_1 + \tilde Q_1\star e_t) = \tfrac12(\tilde Q_1 + \tilde Q_1^{\natural}) = Q_{1t}e_t$. Applying this to the three terms gives $\beta(\tilde P,\tilde Q)R_te_t$, $\beta(\tilde R,\tilde Q)P_te_t$ and $-\beta(\tilde P,\tilde R)Q_te_t$, whose sum is displayed.
+**Proof.** By the lemma each inner symmetrisation is a central multiple of $e_t$. For a central element $\lambda e_t$ one has $(\lambda e_t)\bullet\tilde Q_1 = \lambda\,(e_t\bullet\tilde Q_1) = \lambda Q_{1t}e_t$, because $e_t\bullet\tilde Q_1 = \tfrac12(e_t\star\tilde Q_1 + \tilde Q_1\star e_t) = \tfrac12(\tilde Q_1 + \tilde Q_1^{\natural}) = Q_{1t}e_t$. Applying this to the three terms gives $\beta(\tilde P,\tilde Q)R_te_t$, $\beta(\tilde Q_2,\tilde Q)P_te_t$ and $-\beta(\tilde P,\tilde Q_2)Q_te_t$, whose sum is displayed.
 
-**Example.** At $\tilde P = \tilde Q = \tilde R = e_t$ every pairing is $1$ and every scalar coordinate is $1$, so the value is $(1+1-1)e_t = e_t$; at $\tilde P = \tilde Q = \tilde R = \vec e_z$ the pairings are still $1$ but the scalar coordinates vanish, so the value is $0$. The ternary product does not vanish on every triple of nonzero elements; its value is the displayed scalar combination, and it vanishes exactly when $\beta(\tilde P,\tilde Q)R_t + \beta(\tilde R,\tilde Q)P_t = \beta(\tilde P,\tilde R)Q_t$.
+**Example.** At $\tilde P = \tilde Q = \tilde Q_2 = e_t$ every pairing is $1$ and every scalar coordinate is $1$, so the value is $(1+1-1)e_t = e_t$; at $\tilde P = \tilde Q = \tilde Q_2 = \vec e_z$ the pairings are still $1$ but the scalar coordinates vanish, so the value is $0$. The ternary product does not vanish on every triple of nonzero elements; its value is the displayed scalar combination, and it vanishes exactly when $\beta(\tilde P,\tilde Q)R_t + \beta(\tilde Q_2,\tilde Q)P_t = \beta(\tilde P,\tilde Q_2)Q_t$.
 
 ## The Parities and the Triple Identity
 
-**Proposition (the parities).** The ternary product is $\mathbb{C}$-linear in each of its three variables: $\{\lambda\tilde P,\tilde Q,\tilde R\} = \lambda\{\tilde P,\tilde Q,\tilde R\} = \{\tilde P,\lambda\tilde Q,\tilde R\} = \{\tilde P,\tilde Q,\lambda\tilde R\}$ for $\lambda \in \mathbb{C}$. Its parities are (linear, linear, linear), and $\{\cdot,\cdot,\cdot\}$ is a $\mathbb{C}$-trilinear map $\mathbb{B}\times\mathbb{B}\times\mathbb{B} \to \mathbb{B}$.
+**Proposition (the parities).** The ternary product is $\mathbb{C}$-linear in each of its three variables: $\{\lambda\tilde P,\tilde Q,\tilde Q_2\} = \lambda\{\tilde P,\tilde Q,\tilde Q_2\} = \{\tilde P,\lambda\tilde Q,\tilde Q_2\} = \{\tilde P,\tilde Q,\lambda\tilde Q_2\}$ for $\lambda \in \mathbb{C}$. Its parities are (linear, linear, linear), and $\{\cdot,\cdot,\cdot\}$ is a $\mathbb{C}$-trilinear map $\mathbb{B}\times\mathbb{B}\times\mathbb{B} \to \mathbb{B}$.
 
 **Proof.** The symmetrisation $\bullet$ is $\mathbb{C}$-bilinear because $\star$ is and ${}^{\natural}$ is $\mathbb{C}$-linear, and the ternary product is built from $\bullet$ by composition and addition, hence is $\mathbb{C}$-trilinear. This is the bilinear case of the parity bookkeeping of *Algebraic J\*-Algebras*, where the middle slot of a sesquilinear ternary product carries the conjugation; here no slot does.
 
-**Proposition (outer symmetry).** $\{\tilde P,\tilde Q,\tilde R\} = \{\tilde R,\tilde Q,\tilde P\}$.
+**Proposition (outer symmetry).** $\{\tilde P,\tilde Q,\tilde Q_2\} = \{\tilde Q_2,\tilde Q,\tilde P\}$.
 
 **Proof.** Immediate from the formula: the roles of $P_t$ and $R_t$ are exchanged, and $\beta$ is symmetric.
 
@@ -137,7 +137,7 @@ fails for the ternary product of the quaternionic multiplication. At $(x,y,u,v,w
 
 ## Summary
 
-The quaternionic product is not associative, and its associator has the closed form $(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural})\tilde R$, nonzero at $(\vec e_x,e_t,e_t)$ and at $24$ of the $64$ basis triples. The product satisfies no rung of the ladder of weaker identities: it fails flexibility at $(\vec e_z,e_t)$ and it fails the weakest rung, third-power associativity, at $\vec e_z$, so it is not alternative, not flexible and not power-associative. The general theory of a bilinear product attaches a ternary operation to its symmetrisation; here the symmetrisation is the central-valued $\tilde P\bullet\tilde Q = \beta(\tilde P,\tilde Q)e_t$, and the ternary product is central-valued, $\mathbb{C}$-linear in its three variables, symmetric in its outer two, and fails the five-linear Jordan triple identity at $(e_t,e_t,\vec e_x,e_t,\vec e_x)$. The associative multiplication is the contrast throughout: its associator vanishes identically, it satisfies every rung of the ladder, and its ternary product is a Jordan triple system.
+The quaternionic product is not associative, and its associator has the closed form $(\tilde Q^{\natural}\tilde P - \tilde P^{\natural}\tilde Q^{\natural})\tilde Q_2$, nonzero at $(\vec e_x,e_t,e_t)$ and at $24$ of the $64$ basis triples. The product satisfies no rung of the ladder of weaker identities: it fails flexibility at $(\vec e_z,e_t)$ and it fails the weakest rung, third-power associativity, at $\vec e_z$, so it is not alternative, not flexible and not power-associative. The general theory of a bilinear product attaches a ternary operation to its symmetrisation; here the symmetrisation is the central-valued $\tilde P\bullet\tilde Q = \beta(\tilde P,\tilde Q)e_t$, and the ternary product is central-valued, $\mathbb{C}$-linear in its three variables, symmetric in its outer two, and fails the five-linear Jordan triple identity at $(e_t,e_t,\vec e_x,e_t,\vec e_x)$. The associative multiplication is the contrast throughout: its associator vanishes identically, it satisfies every rung of the ladder, and its ternary product is a Jordan triple system.
 
 ## Summary of Notation
 
@@ -151,10 +151,10 @@ The quaternionic product is not associative, and its associator has the closed f
 | $\vec P\times\vec Q$ | the complex bilinear cross product |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_t - \vec P$ |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
-| $[\tilde P,\tilde Q,\tilde R] = (\tilde P\star\tilde Q)\star\tilde R - \tilde P\star(\tilde Q\star\tilde R)$ | the associator of the product |
+| $[\tilde P,\tilde Q,\tilde Q_2] = (\tilde P\star\tilde Q)\star\tilde Q_2 - \tilde P\star(\tilde Q\star\tilde Q_2)$ | the associator of the product |
 | $\tilde P\bullet\tilde Q = \tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$ | the symmetrised product |
 | $\beta(\tilde P,\tilde Q) = P_tQ_t+(\vec P,\vec Q)$ | its central coefficient |
-| $\{\tilde P,\tilde Q,\tilde R\}$ | the ternary product of the symmetrisation |
+| $\{\tilde P,\tilde Q,\tilde Q_2\}$ | the ternary product of the symmetrisation |
 
 ## Further Reading
 

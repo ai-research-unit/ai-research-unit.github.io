@@ -12,7 +12,7 @@ The names of the two corpus groups are the two jobs. The plain algebra is the gr
 
 ### The Unqualified Product Is the Plain Product
 
-Every class of element in the corpus is defined by an equation whose symbol is a product: an idempotent by $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, a nilpotent by $\tilde\Upsilon\star\tilde\Upsilon=0$, a zero divisor by $\tilde Q\star\tilde R=0$. The definitions article *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* states the rule: **the product is part of the definition and not a background convention**, so a class is always relative to a product. The space carries four general products,
+Every class of element in the corpus is defined by an equation whose symbol is a product: an idempotent by $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, a nilpotent by $\tilde\Upsilon\star\tilde\Upsilon=0$, a zero divisor by $\tilde Q\star\tilde Q_1=0$. The definitions article *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* states the rule: **the product is part of the definition and not a background convention**, so a class is always relative to a product. The space carries four general products,
 
 $$
 \tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*},
@@ -85,7 +85,7 @@ The point is the one the Introduction announces: the shape of the basis is a fac
 
 ### The Structure of the Module
 
-The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\tilde\psi\in S$ the product $\tilde Q\tilde\psi$ lies again in $S$, and the action is compatible with the product, so that $\tilde Q(\tilde R\tilde\psi)=(\tilde Q\tilde R)\tilde\psi$. Written on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$, the left multiplications by the four basis elements are
+The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\psi\in S$ the product $\tilde Q\psi$ lies again in $S$, and the action is compatible with the product, so that $\tilde Q(\tilde Q_1\psi)=(\tilde Q\tilde Q_1)\psi$. Written on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$, the left multiplications by the four basis elements are
 
 $$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
@@ -110,7 +110,7 @@ $$
 G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*&\langle\tilde\Pi_+,\vec\Upsilon_y\rangle_*\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_*&\langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_*\end{pmatrix}=\tfrac12 I_2,
 $$
 
-so the restriction is a positive definite inner product and $S$ is a **Hilbert space**. The pairing is complex-linear in its first argument and conjugate-linear in its second, and it is Hermitian, $\langle v,u\rangle_*=\overline{\langle u,v\rangle_*}$. It is the spinor-side form whose module-level origin is the canonical Hermitian form $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$ of the regular module (*The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra*), of which $\langle\cdot,\cdot\rangle_*$ is the scalar part.
+so the restriction is a positive definite inner product and $S$ is a **Hilbert space**. The pairing is complex-linear in its first argument and conjugate-linear in its second, and it is Hermitian, $\langle v,u\rangle_*=\overline{\langle u,v\rangle_*}$. It is the spinor-side form whose module-level origin is the canonical Hermitian form $h(\tilde P,\tilde Q_1)=\tilde P\tilde Q_1^{*}$ of the regular module (*The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra*), of which $\langle\cdot,\cdot\rangle_*$ is the scalar part.
 
 ### The Two Structures Side by Side
 
@@ -120,7 +120,7 @@ An **algebra** reads the second slot plainly; a **sesqualgebra** reads it throug
 |---|---|---|
 | product | plain bilinear, $\tilde P\tilde Q$ | plain sesquilinear, $\tilde P\tilde Q^{*}$ |
 | second slot | plain | through ${}^{*}$ |
-| what the algebra does | acts, $\tilde\psi\mapsto\tilde Q\tilde\psi$ | pairs, $(u,v)\mapsto\langle u,v\rangle_*$ |
+| what the algebra does | acts, $\psi\mapsto\tilde Q\psi$ | pairs, $(u,v)\mapsto\langle u,v\rangle_*$ |
 | linearity in the state | $\mathbb{C}$-linear | conjugate-linear in the second argument |
 | what it carries | the representation, the Lorentz action, the double cover | the norm, the normalisation, the Born rule |
 | algebraic name | general plain algebra | general plain sesqualgebra |
@@ -134,7 +134,7 @@ A Peirce decomposition, a minimal left ideal and a module structure all presuppo
 
 ### The Hilbert Structure Needs the Antilinear Slot
 
-Positivity is not a property of the plain product. The general plain bilinear form $\langle\tilde Q,\tilde R\rangle=\mathrm{Sc}(\tilde Q\tilde R)$ is bilinear and complex-valued, and on the whole real space it is **indefinite**, of signature $(4,4)$; its diagonal $\langle\tilde Q,\tilde Q\rangle$ is not a sum of squared moduli. The inner product needs the second slot read through ${}^{*}$, which is conjugate-linear and turns the diagonal into $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^2$, a sum of squared moduli. So the Hilbert structure is a fact about the sesquilinear product alone, and it exists because the second slot is available.
+Positivity is not a property of the plain product. The general plain bilinear form $\langle\tilde Q,\tilde Q_1\rangle=\mathrm{Sc}(\tilde Q\tilde Q_1)$ is bilinear and complex-valued, and on the whole real space it is **indefinite**, of signature $(4,4)$; its diagonal $\langle\tilde Q,\tilde Q\rangle$ is not a sum of squared moduli. The inner product needs the second slot read through ${}^{*}$, which is conjugate-linear and turns the diagonal into $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^2$, a sum of squared moduli. So the Hilbert structure is a fact about the sesquilinear product alone, and it exists because the second slot is available.
 
 ### The Sector Split Is a Third Structure, and It Is Real
 
@@ -154,7 +154,7 @@ A complex subspace $V$ satisfies $iV\subseteq V$, so $V\subseteq\mathbb{M}_+$ wo
 
 The consequence for the spinor space is a prohibition. $S$ is a complex plane, and it **cannot** be split as $\mathbb{C}\times\mathbb{C}$ with one factor $\mathbb{M}_+$ and the other $\mathbb{M}_-$, nor can either of its two amplitudes be labelled material or informational: the sector split is **transverse** to the module and to the Hilbert structure, cutting each of them rather than coinciding with either. On the ideal $S$ the sectors are visible on the idempotent direction alone, $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent direction $\mathbb{C}\vec\Upsilon_y$ meets neither sector; the full account is *The Complementary Space of the Spinor Space and Its Physical Meaning*, §*The Sectors Cut Across the Two Ideals*.
 
-What **is** compatible with a module is the grading the sector split induces on the symmetrised product $\tilde Q\circ\tilde R=\tilde Q\tilde R+\tilde R\tilde Q$. The Hermitian conjugation is an automorphism of that Jordan algebra, $\mathbb{M}_+$ is its even part and $\mathbb{M}_-$ its odd part, and a homogeneous element of degree $|\tilde A|$ shifts the degree of a module element by $|\tilde A|$, the even elements acting by self-adjoint operators and the odd ones by skew-adjoint (*The Graded Action on a Module over a Jordan Algebra*, *The Graded Adjoint Action on a Module over a Jordan Algebra*). A module compatible with $\mathbb{M}_\pm$ is therefore a **graded** module, the sign rule being carried by the module's own pair of summands, and the statement is never that those summands are the two sectors. This is the corpus's material–informational structure read as a $\mathbb{Z}/2$-grading (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*).
+What **is** compatible with a module is the grading the sector split induces on the symmetrised product $\tilde Q\circ\tilde Q_1=\tilde Q\tilde Q_1+\tilde Q_1\tilde Q$. The Hermitian conjugation is an automorphism of that Jordan algebra, $\mathbb{M}_+$ is its even part and $\mathbb{M}_-$ its odd part, and a homogeneous element of degree $|\tilde A|$ shifts the degree of a module element by $|\tilde A|$, the even elements acting by self-adjoint operators and the odd ones by skew-adjoint (*The Graded Action on a Module over a Jordan Algebra*, *The Graded Adjoint Action on a Module over a Jordan Algebra*). A module compatible with $\mathbb{M}_\pm$ is therefore a **graded** module, the sign rule being carried by the module's own pair of summands, and the statement is never that those summands are the two sectors. This is the corpus's material–informational structure read as a $\mathbb{Z}/2$-grading (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*).
 
 ### The Four Products Tested on the Space
 
@@ -204,7 +204,7 @@ The two structures carry two different physical jobs on one carrier.
 
 ### The Basis and the Gram Matrix
 
-A general spinor of $S$ is $\tilde\psi=\psi_1\tilde\Pi_++\psi_2\vec\Upsilon_y$ with $\psi_1,\psi_2\in\mathbb{C}$, and the coordinate map $\tilde\psi\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of modules. The Gram matrix $G=\tfrac12 I_2$ says that the two basis spinors are orthogonal and of equal length,
+A general spinor of $S$ is $\psi=\psi_1\tilde\Pi_++\psi_2\vec\Upsilon_y$ with $\psi_1,\psi_2\in\mathbb{C}$, and the coordinate map $\psi\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of modules. The Gram matrix $G=\tfrac12 I_2$ says that the two basis spinors are orthogonal and of equal length,
 
 $$
 \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_*=0,\qquad \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_*=\tfrac12 .
@@ -215,7 +215,7 @@ $$
 The norm of the spinor follows from the Gram matrix,
 
 $$
-\langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12\bigl(|\psi_1|^2+|\psi_2|^2\bigr),
+\langle\psi,\psi\rangle_*=\tfrac12\bigl(|\psi_1|^2+|\psi_2|^2\bigr),
 $$
 
 a sum of squared moduli over the two amplitudes. The factor $\tfrac12$ is the corpus normalisation $\mathrm{Tr}(e_t)=2$ and not a defect; the content is the positivity, and it is what makes the amplitude bilinear in the state. The reason the state space of the framework reads as $\mathbb{C}^2$ with its standard inner product is therefore algebraic: the two amplitudes are the coefficients of the two basis spinors, and the metric on them is the restriction of the plain sesquilinear form, which is positive definite and diagonal on the ideal's own basis.
@@ -224,7 +224,7 @@ a sum of squared moduli over the two amplitudes. The factor $\tfrac12$ is the co
 
 ### The Born Rule as a Product
 
-The Born rule is a trace **pairing** because the Hilbert structure is a product-based form. The canonical Hermitian form of the regular module is $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$, whose scalar part is $\langle\tilde P,\tilde R\rangle_*$, and the probability pairing is the scalar part of one of the four general products. It is not an extra axiom laid on a module; it is a product, and the framework's claim that the Born rule is algebraic rather than postulated rests on exactly this. The same fact is why the state space is positive definite **before** any interpretation: the positivity is the definiteness of the plain sesquilinear form, and it needs no probability language to hold.
+The Born rule is a trace **pairing** because the Hilbert structure is a product-based form. The canonical Hermitian form of the regular module is $h(\tilde P,\tilde Q_1)=\tilde P\tilde Q_1^{*}$, whose scalar part is $\langle\tilde P,\tilde Q_1\rangle_*$, and the probability pairing is the scalar part of one of the four general products. It is not an extra axiom laid on a module; it is a product, and the framework's claim that the Born rule is algebraic rather than postulated rests on exactly this. The same fact is why the state space is positive definite **before** any interpretation: the positivity is the definiteness of the plain sesquilinear form, and it needs no probability language to hold.
 
 ### The Two Kinds of Form on One Carrier
 
@@ -250,7 +250,7 @@ The double cover acts on the **module**: the action $\psi\mapsto\tilde\Lambda\ps
 
 ### Normalisation and the Vacuum
 
-Two further physical data attach to the two structures separately. **Normalisation** is a Hilbert datum: $\langle\tilde\psi,\tilde\psi\rangle_*=1$ is a condition on the form, and it makes the amplitudes into probabilities. **The vacuum** is a module datum: the choice of idempotent $\tilde\Pi_+$ selects the module as the ideal it generates (*The Biquaternion Vacuum as a Minimal Idempotent*), and the module is fixed only up to the equivalence of idempotents. The physical reading is that the state space is normalised by the metric and selected by the vacuum, and that the two acts are of different kinds — one is a pairing, the other is a choice of generator.
+Two further physical data attach to the two structures separately. **Normalisation** is a Hilbert datum: $\langle\psi,\psi\rangle_*=1$ is a condition on the form, and it makes the amplitudes into probabilities. **The vacuum** is a module datum: the choice of idempotent $\tilde\Pi_+$ selects the module as the ideal it generates (*The Biquaternion Vacuum as a Minimal Idempotent*), and the module is fixed only up to the equivalence of idempotents. The physical reading is that the state space is normalised by the metric and selected by the vacuum, and that the two acts are of different kinds — one is a pairing, the other is a choice of generator.
 
 ### The Complementary Half
 
@@ -305,7 +305,7 @@ The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y
 
 The two jobs are the two menu labels: the module is the group of **composition** and carries the Lorentz action and the double cover; the Hilbert space is the group of **probability** and carries the norm, the normalisation and the Born rule. On the four products tested against the four elements, only the plain product carries the whole module package, and neither sesquilinear product preserves the carrier at all, since it pairs the space rather than acting on it. This is the structural reason the module and the Hilbert space are two structures and not two views of one object.
 
-The Gram matrix $G=\tfrac12 I_2$ makes the amplitudes the two coefficients of the two basis spinors, with $\langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12(|\psi_1|^2+|\psi_2|^2)$, so the state space reads as $\mathbb{C}^2$ with its standard inner product for an algebraic reason. The split explains why the Born rule is a trace pairing — the probability structure is the scalar part of a product — and why a bilinear and a sesquilinear form coexist on one carrier, the symplectic form on the algebra side and the Hermitian form on the sesqualgebra side. The qubit and the spinor are one carrier read twice; that the physics identifies the two readings is not claimed.
+The Gram matrix $G=\tfrac12 I_2$ makes the amplitudes the two coefficients of the two basis spinors, with $\langle\psi,\psi\rangle_*=\tfrac12(|\psi_1|^2+|\psi_2|^2)$, so the state space reads as $\mathbb{C}^2$ with its standard inner product for an algebraic reason. The split explains why the Born rule is a trace pairing — the probability structure is the scalar part of a product — and why a bilinear and a sesquilinear form coexist on one carrier, the symplectic form on the algebra side and the Hermitian form on the sesqualgebra side. The qubit and the spinor are one carrier read twice; that the physics identifies the two readings is not claimed.
 
 A third structure cuts across the two, and it is real rather than complex: the sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ of the Hermitian conjugation. The scalar imaginary swaps the two sectors, so no nonzero complex subspace lies in a sector, and the complex carrier $S$ can never be read as a $\mathbb{C}\times\mathbb{C}$ splitting into the two sectors — the sector parts of $S$ are the single real lines $\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{R}\{i\tilde\Pi_+\}$, and the nilpotent direction meets neither sector. What the sectors do grade is the symmetrised product, and the module structure compatible with them is the graded module of the Jordan algebra, not a pair of sector summands.
 
@@ -339,7 +339,7 @@ A third structure cuts across the two, and it is real rather than complex: the s
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | The Hermitian (sesquilinear) form on $S$ |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The sector split: Hermitian and anti-Hermitian subspaces |
 | $i\,\mathbb{M}_+=\mathbb{M}_-$, $i\,\mathbb{M}_-=\mathbb{M}_+$ | The imaginary scalar swaps the sectors; no complex subspace lies in a sector |
-| $\tilde Q\circ\tilde R=\tilde Q\tilde R+\tilde R\tilde Q$ | The symmetrised (Jordan) product, of which ${}^{*}$ is an automorphism |
+| $\tilde Q\circ\tilde Q_1=\tilde Q\tilde Q_1+\tilde Q_1\tilde Q$ | The symmetrised (Jordan) product, of which ${}^{*}$ is an automorphism |
 
 ## Further Reading
 

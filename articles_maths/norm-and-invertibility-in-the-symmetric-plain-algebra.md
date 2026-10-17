@@ -62,9 +62,9 @@ $$
 
 ## The Unit and the Degeneracy of the Naive Inverse
 
-**The block is commutative and unital with unit $e_t$, but it is not associative, and its naive inverse equation $\tilde Q\bullet\tilde R=e_t$ is degenerate: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies it for a two-dimensional affine family of $\tilde R$.**
+**The block is commutative and unital with unit $e_t$, but it is not associative, and its naive inverse equation $\tilde Q\bullet\tilde Q_1=e_t$ is degenerate: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies it for a two-dimensional affine family of $\tilde Q_1$.**
 
-The unit of the block is $e_t$: the product is commutative, so its one-sided inverse equations coincide, and $e_t$ is the two-sided unit (*Introduction to the Symmetric Plain Algebra*). The block is **not associative**: $(\tilde P\bullet\tilde Q)\bullet\tilde R\neq\tilde P\bullet(\tilde Q\bullet\tilde R)$ in general, and the single equation $\tilde Q\bullet\tilde R=e_t$ is **degenerate**: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies $\tilde\Upsilon\bullet\tilde R=e_t$ for a two-dimensional affine family of $\tilde R$, because its left multiplication has a two-dimensional kernel. The naive inverse equation therefore does not define an inverse, and the block is treated with the inverse of the Jordan theory in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
+The unit of the block is $e_t$: the product is commutative, so its one-sided inverse equations coincide, and $e_t$ is the two-sided unit (*Introduction to the Symmetric Plain Algebra*). The block is **not associative**: $(\tilde P\bullet\tilde Q)\bullet\tilde Q_1\neq\tilde P\bullet(\tilde Q\bullet\tilde Q_1)$ in general, and the single equation $\tilde Q\bullet\tilde Q_1=e_t$ is **degenerate**: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies $\tilde\Upsilon\bullet\tilde Q_1=e_t$ for a two-dimensional affine family of $\tilde Q_1$, because its left multiplication has a two-dimensional kernel. The naive inverse equation therefore does not define an inverse, and the block is treated with the inverse of the Jordan theory in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ## The Absence of a Criterion from the Algebraic Norm
 
@@ -96,7 +96,7 @@ $$
 
 complex-valued, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set, and it is **not multiplicative**, the pair $(\vec e_x,\vec e_y)$ separating the two sides, $\langle \vec e_x\bullet \vec e_y\rangle=\langle 0\rangle=0$ against $\langle \vec e_x\rangle\langle \vec e_y\rangle=1$.
 
-The block is commutative and unital, with the unit $e_t$, and it is not associative, the naive inverse equation $\tilde Q\bullet\tilde R=e_t$ being degenerate at $\tilde\Upsilon=\vec e_x+i\vec e_y$. Its algebraic norm does **not** decide invertibility: the invertible element $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence; the invertibility the block does have is the invertibility of the Jordan theory, carried by a different quadratic form, which is not the algebraic norm of the block.
+The block is commutative and unital, with the unit $e_t$, and it is not associative, the naive inverse equation $\tilde Q\bullet\tilde Q_1=e_t$ being degenerate at $\tilde\Upsilon=\vec e_x+i\vec e_y$. Its algebraic norm does **not** decide invertibility: the invertible element $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence; the invertibility the block does have is the invertibility of the Jordan theory, carried by a different quadratic form, which is not the algebraic norm of the block.
 
 ## Summary of Notation
 

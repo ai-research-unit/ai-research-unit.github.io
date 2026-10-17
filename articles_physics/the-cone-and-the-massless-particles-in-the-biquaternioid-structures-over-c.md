@@ -655,7 +655,7 @@ pure state on the boundary of the state cone.
 
 The sharper operator reading belongs to the sandwich rather than to the square, and it separates the two
 regimes by a rank of four against one. The sandwich
-$\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$ of *The Operators of the Plain Sesquilinear
+$\Theta_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2\tilde Q^{*}$ of *The Operators of the Plain Sesquilinear
 Product and the Born Pairing* is the operator form of the sesquilinear product; acting on the whole algebra
 it has complex rank four off the cone, where it is a bijection of the matrix algebra, and complex rank one
 on it, where its image is a single Hermitian line. In the matrix model the sandwich is the congruence
@@ -1297,7 +1297,7 @@ non-invertible without being lightlike.
 - $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ the sector sign; $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ the probability weight; $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ the interval; $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ the fourth form.
 - The cone is $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the zero-divisor set; pure means $\mathrm{Sc}\,\tilde Q_1=0$, isotropic means $\sum_k Q_{1k}^{2}=0$.
 - "The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_t$. The gauge metric has its own null set $\{\langle\cdot,\cdot\rangle_{\natural*}=0\}$.
-- The twelve rows: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
+- The twelve rows: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2\tilde Q^{*}$.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.
 - $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
 - $\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; $\mathrm{ISO}(2)$ the massless little group.

@@ -311,10 +311,10 @@ $$
 = -\vec u_1\otimes(\vec u_2-\vec u_2') - \vec u_1'\otimes(\vec u_2+\vec u_2').
 $$
 
-Write $\tilde{Q}=\vec u_1\otimes(\vec u_2-\vec u_2')$ and $\tilde{R}=\vec u_1'\otimes(\vec u_2+\vec u_2')$, so that $\tilde{\mathcal{S}}=-(\tilde{Q}+\tilde{R})$ and
+Write $\tilde{Q}=\vec u_1\otimes(\vec u_2-\vec u_2')$ and $\tilde Q_1=\vec u_1'\otimes(\vec u_2+\vec u_2')$, so that $\tilde{\mathcal{S}}=-(\tilde{Q}+\tilde Q_1)$ and
 
 $$
-\tilde{\mathcal{S}}^2 = \tilde{Q}^2 + \tilde{R}^2 + XY + YX .
+\tilde{\mathcal{S}}^2 = \tilde{Q}^2 + \tilde Q_1^2 + XY + YX .
 $$
 
 Each term is evaluated with the quaternion multiplication rules. First, $\vec u_1^2=-e_t$ and $(\vec u_2-\vec u_2')^2=-|\vec u_2-\vec u_2'|^2e_t=-2(1-c)e_t$ with $c=\vec u_2\cdot\vec u_2'$, so
@@ -326,9 +326,9 @@ $$
 Similarly, $(\vec u_2+\vec u_2')^2=-2(1+c)e_t$, so
 
 $$
-\tilde{R}^2 = 2(1+c)\,e_t\otimes e_t,
+\tilde Q_1^2 = 2(1+c)\,e_t\otimes e_t,
 \qquad
-\tilde{Q}^2+\tilde{R}^2 = 4\,e_t\otimes e_t .
+\tilde{Q}^2+\tilde Q_1^2 = 4\,e_t\otimes e_t .
 $$
 
 For the cross terms, the anti-commutativity of distinct quaternion units gives

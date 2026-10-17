@@ -7,7 +7,7 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-\tilde H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
+H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
 $$
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
@@ -23,12 +23,12 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 For a particle of mass $m$ in a real potential $V(x)$, the stationary equation is
 
 $$
-\tilde H\,\psi = E\,\psi,
+H\,\psi = E\,\psi,
 \qquad
-\tilde H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_0(x)\,e_t,
+H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_0(x)\,e_t,
 $$
 
-with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $\tilde H$ is central, the equation is componentwise the scalar equation
+with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
 -\frac{\hbar^2}{2m}\phi''(x) + V(x)\phi(x) = E\,\phi(x)
@@ -439,7 +439,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
-| $\tilde H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$ | Central Hamiltonian |
+| $H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$ | Central Hamiltonian |
 | $\psi = \phi\,\chi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |

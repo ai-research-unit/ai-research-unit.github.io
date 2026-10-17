@@ -22,7 +22,6 @@ The framework results used here are those of the companion articles:
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, whose sub-section *The Gürsey Reading, the Reversion Test, and the Einstein–Mayer Equation* first records the Lanczos system, the Einstein–Mayer equation and the isospin interpretation; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternionic Dirac equation, its linear off-diagonal mass term, and the relation of the massive equation to the massless one.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-1 equation that the same feedback produces.
-- Companion article *The Magnetic Monopole in Biquaternionic Form*, for the source-free half of the Maxwell equation that the subtraction of the feedback isolates.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the metric and the d'Alembertian.
 - Companion article *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Comparison of the Remarkable Subspaces*, for the idempotents, the zero divisors and the conjugations.
 - Companion article *The Number of Generations and the Biquaternion Algebra*, for the corpus's standing position that the algebra accommodates but does not derive the particle spectrum.

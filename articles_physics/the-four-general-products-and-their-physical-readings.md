@@ -643,7 +643,7 @@ jobs of the row and must not be exchanged: reading $\langle\cdot,\cdot\rangle$ a
 composition, is the confusion the row invites.
 - **The monoid of acting maps.** The elements are oriented and the plain product is associative, but the
 physical process is not the element; it is the **act** of multiplying. The left multiplications
-$L_{\tilde P}:\tilde R\mapsto\tilde P\tilde R$ form an associative **monoid** under composition, with the
+$L_{\tilde P}:\tilde{Q}_5\mapsto\tilde P\tilde{Q}_5$ form an associative **monoid** under composition, with the
 identity $L_{e_t}$; it is a monoid and not a group, since only the units are invertible. Two consequences
 are read from this. First, the **twisted** actions are not a monoid, because the twisted products are not
 associative; it is the plain action alone that composes. Second, a measurement is a projection, and the

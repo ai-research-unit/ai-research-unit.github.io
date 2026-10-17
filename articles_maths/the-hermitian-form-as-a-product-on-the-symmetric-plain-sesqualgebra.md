@@ -68,7 +68,7 @@ $$
 
 that is $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2} \le \langle\tilde P,\tilde P\rangle_{*}\langle\tilde Q,\tilde Q\rangle_{*}$, with equality if and only if $\tilde P$ and $\tilde Q$ are linearly dependent over $\mathbb{C}$.
 
-*Proof.* If $\tilde Q = 0$ both sides vanish. Let $\tilde Q \neq 0$ and put $\lambda = \langle\tilde P,\tilde Q\rangle_{*}/\langle\tilde Q,\tilde Q\rangle_{*}$ and $\tilde R = \tilde P - \lambda\tilde Q$. Developing $\langle\tilde R,\tilde R\rangle_{*}$ with the linearity in the first argument and the conjugate-linearity in the second gives $\langle\tilde R,\tilde R\rangle_{*} = \langle\tilde P,\tilde P\rangle_{*} - \lambda \langle\tilde Q,\tilde P\rangle_{*} - \overline{\lambda}\langle\tilde P,\tilde Q\rangle_{*} + \lvert\lambda\rvert^{2}\langle\tilde Q,\tilde Q\rangle_{*}$, which reduces to $\langle\tilde P,\tilde P\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}/\langle\tilde Q,\tilde Q\rangle_{*}$. The left-hand side is non-negative by the positivity of the form, so the inequality follows; equality is $\langle\tilde R,\tilde R\rangle_{*} = 0$, which by the absence of isotropic vectors is $\tilde R = 0$, that is $\tilde P = \lambda\tilde Q$.
+*Proof.* If $\tilde Q = 0$ both sides vanish. Let $\tilde Q \neq 0$ and put $\lambda = \langle\tilde P,\tilde Q\rangle_{*}/\langle\tilde Q,\tilde Q\rangle_{*}$ and $\tilde Q_1 = \tilde P - \lambda\tilde Q$. Developing $\langle\tilde Q_1,\tilde Q_1\rangle_{*}$ with the linearity in the first argument and the conjugate-linearity in the second gives $\langle\tilde Q_1,\tilde Q_1\rangle_{*} = \langle\tilde P,\tilde P\rangle_{*} - \lambda \langle\tilde Q,\tilde P\rangle_{*} - \overline{\lambda}\langle\tilde P,\tilde Q\rangle_{*} + \lvert\lambda\rvert^{2}\langle\tilde Q,\tilde Q\rangle_{*}$, which reduces to $\langle\tilde P,\tilde P\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}/\langle\tilde Q,\tilde Q\rangle_{*}$. The left-hand side is non-negative by the positivity of the form, so the inequality follows; equality is $\langle\tilde Q_1,\tilde Q_1\rangle_{*} = 0$, which by the absence of isotropic vectors is $\tilde Q_1 = 0$, that is $\tilde P = \lambda\tilde Q$.
 
 **Remark (an inequality of the form, not of a distance).** The statement is an inequality between values of the sesquilinear form and is algebraic: it uses the positivity of the form and the quadratic development, and no length is attached to the elements. It is the Cauchy and Schwarz inequality of any positive definite Hermitian form, read here on the biquaternion space; the companion quaternion row, whose form $\langle\cdot,\cdot\rangle_{\natural}$ is indefinite, has no such inequality.
 
@@ -94,13 +94,13 @@ the trace identity of the model. There is no fourth form to compare with: the bl
 
 ## The Invariance under the Product
 
-**Theorem (the invariance fails).** The form $\langle\cdot,\cdot\rangle_{*}$ is **not** invariant under the product: there are $\tilde P,\tilde Q,\tilde R$ with
+**Theorem (the invariance fails).** The form $\langle\cdot,\cdot\rangle_{*}$ is **not** invariant under the product: there are $\tilde P,\tilde Q,\tilde Q_1$ with
 
 $$
-\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} \neq \langle\tilde P,\tilde Q\star\tilde R\rangle_{*} .
+\langle\tilde P\star\tilde Q,\tilde Q_1\rangle_{*} \neq \langle\tilde P,\tilde Q\star\tilde Q_1\rangle_{*} .
 $$
 
-The witness is $\tilde P = \tilde Q = \vec e_x$, $\tilde R = e_t$, where
+The witness is $\tilde P = \tilde Q = \vec e_x$, $\tilde Q_1 = e_t$, where
 
 $$
 \langle \vec e_x\star \vec e_x,e_t\rangle_{*} = \langle e_t,e_t\rangle_{*} = 1 , \qquad \langle \vec e_x,\vec e_x\star e_t\rangle_{*} = \langle \vec e_x,0\rangle_{*} = 0 .
@@ -108,7 +108,7 @@ $$
 
 *Proof.* $\vec e_x\star \vec e_x = \langle \vec e_x,\vec e_x\rangle_{*}e_t = e_t$, so the first quantity is $\langle e_t,e_t\rangle_{*} = 1$; and $\vec e_x\star e_t = \langle \vec e_x,e_t\rangle_{*}e_t = 0$, so the second vanishes.
 
-**Remark (the comparison with the symmetric plain block).** The trace form of the symmetric plain block, $\tau(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\bullet\tilde Q) = P_tQ_t - (\vec P,\vec Q)$, **is** invariant, $\tau(\tilde P\bullet\tilde Q,\tilde R) = \tau(\tilde P,\tilde Q\bullet\tilde R)$, and the invariance is the associativity of the plain product read on the Jordan product (*The Trace Form and the Invariance of the Symmetric Plain Algebra*). The block of this article fails the same test, and the reason is the rank-one central image: the invariance $\mathrm{Sc}((\tilde P\star\tilde Q)\star\tilde R) = \mathrm{Sc}(\tilde P\star(\tilde Q\star\tilde R))$ reads $\langle\tilde P,\tilde Q\rangle_{*}\overline{R_t} = \overline{\langle\tilde Q,\tilde R\rangle_{*}}\,P_t = \langle\tilde R,\tilde Q\rangle_{*}P_t$ for all $\tilde P,\tilde Q,\tilde R$, and taking $\tilde P = \tilde Q = \vec e_x$, $\tilde R = e_t$ gives $1$ on the left and $0$ on the right, so the identity fails. The product is conjugate-commutative and central, and its trace form cannot be associative.
+**Remark (the comparison with the symmetric plain block).** The trace form of the symmetric plain block, $\tau(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\bullet\tilde Q) = P_tQ_t - (\vec P,\vec Q)$, **is** invariant, $\tau(\tilde P\bullet\tilde Q,\tilde Q_1) = \tau(\tilde P,\tilde Q\bullet\tilde Q_1)$, and the invariance is the associativity of the plain product read on the Jordan product (*The Trace Form and the Invariance of the Symmetric Plain Algebra*). The block of this article fails the same test, and the reason is the rank-one central image: the invariance $\mathrm{Sc}((\tilde P\star\tilde Q)\star\tilde Q_1) = \mathrm{Sc}(\tilde P\star(\tilde Q\star\tilde Q_1))$ reads $\langle\tilde P,\tilde Q\rangle_{*}\overline{R_t} = \overline{\langle\tilde Q,\tilde Q_1\rangle_{*}}\,P_t = \langle\tilde Q_1,\tilde Q\rangle_{*}P_t$ for all $\tilde P,\tilde Q,\tilde Q_1$, and taking $\tilde P = \tilde Q = \vec e_x$, $\tilde Q_1 = e_t$ gives $1$ on the left and $0$ on the right, so the identity fails. The product is conjugate-commutative and central, and its trace form cannot be associative.
 
 ## The Restriction to the Remarkable Subspaces
 

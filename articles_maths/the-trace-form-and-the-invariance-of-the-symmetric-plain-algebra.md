@@ -8,7 +8,7 @@ $$
 \tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q),
 $$
 
-the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, the operator traces built from it, and its restriction to the remarkable subspaces.
+the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
 The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
 
@@ -74,22 +74,22 @@ of signature $(4,4)$.
 **Theorem.** The trace form is **invariant** under the product:
 
 $$
-\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)
+\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)
 $$
 
-for all $\tilde P,\tilde Q,\tilde R\in\mathbb{B}$.
+for all $\tilde P,\tilde Q,\tilde Q_4\in\mathbb{B}$.
 
 *Proof.* By the definition of the form and the product,
 
 $$
-\tau(\tilde P\bullet\tilde Q,\tilde R)=\mathrm{Sc}\bigl((\tilde P\bullet\tilde Q)\tilde R\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde Q\tilde P\tilde R)\bigr),
+\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\mathrm{Sc}\bigl((\tilde P\bullet\tilde Q)\tilde Q_4\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde Q_4)+\mathrm{Sc}(\tilde Q\tilde P\tilde Q_4)\bigr),
 $$
 
 $$
-\tau(\tilde P,\tilde Q\bullet\tilde R)=\mathrm{Sc}\bigl(\tilde P(\tilde Q\bullet\tilde R)\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde P\tilde R\tilde Q)\bigr).
+\tau(\tilde P,\tilde Q\bullet\tilde Q_4)=\mathrm{Sc}\bigl(\tilde P(\tilde Q\bullet\tilde Q_4)\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde Q_4)+\mathrm{Sc}(\tilde P\tilde Q_4\tilde Q)\bigr).
 $$
 
-The first terms agree, and the second terms agree because $\mathrm{Sc}$ is invariant under the cyclic permutation of its factors, $\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$; equivalently $\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\mathrm{Sc}(\tilde Q_3\tilde Q_1\tilde Q_2)$, the associativity of the plain product read on the scalar part.
+The first terms agree, and the second terms agree because $\mathrm{Sc}$ is invariant under the cyclic permutation of its factors, $\mathrm{Sc}(\tilde Q\tilde P\tilde Q_4)=\mathrm{Sc}(\tilde P\tilde Q_4\tilde Q)$; equivalently $\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\mathrm{Sc}(\tilde Q_3\tilde Q_1\tilde Q_2)$, the associativity of the plain product read on the scalar part.
 
 **Remark (invariance is associativity on the Jordan product).** The plain product is associative, so the scalar part of a triple product is invariant under cyclic permutation; the invariance of the trace form is exactly that statement written with the symmetrised product. **The form is associative in the Jordan sense**, and it is the trace form that the general theory of Jordan algebras attaches to a special Jordan algebra. The plain operator theory of the same form, the association and the transpose relative to the plain product, is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
@@ -192,7 +192,7 @@ The matrices are the same six as in *Remarkable Subspaces and the Four Forms*, b
 
 ## Summary
 
-The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q)=2\tau(\tilde Q,e_t)$ and the generic norm $\langle\tilde Q\rangle_{\natural}=2\tau(\tilde Q,e_t)^2-\tau(\tilde Q,\tilde Q)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, of trace $4P_t=2T(\tilde P)$ and determinant $P_t^2\langle\tilde P\rangle_{\natural}$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_tQ_t-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$. On the remarkable subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
+The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q)=2\tau(\tilde Q,e_t)$ and the generic norm $\langle\tilde Q\rangle_{\natural}=2\tau(\tilde Q,e_t)^2-\tau(\tilde Q,\tilde Q)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, of trace $4P_t=2T(\tilde P)$ and determinant $P_t^2\langle\tilde P\rangle_{\natural}$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_tQ_t-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$. On the remarkable subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
 
 ## Summary of Notation
 
@@ -200,7 +200,7 @@ The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathr
 |---|---|
 | $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$ | the trace form of the block |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
-| $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$ | the invariance of the form |
+| $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$ | the invariance of the form |
 | $T(\tilde Q)=2\tau(\tilde Q,e_t)=2Q_t$ | the trace functional, the generic trace |
 | $\langle\tilde Q\rangle_{\natural}=2\tau(\tilde Q,e_t)^2-\tau(\tilde Q,\tilde Q)$ | the generic norm |
 | $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$ | the multiplication operator of the block |

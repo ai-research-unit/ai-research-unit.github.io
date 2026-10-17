@@ -458,7 +458,7 @@ conservation.
 
 **The kernel is observer-dependent.** A kernel belongs to an operator, and the operator a mode expansion
 defines is not the same for every observer. *Bogoliubov Transformations in Biquaternionic Form* makes this
-precise. A transformation with $v\neq0$ mixes $\tilde a$ with $\tilde a^{\dagger}$; the article records that
+precise. A transformation with $v\neq0$ mixes $a^{\mathrm{fop}}$ with $a^{\mathrm{fop}\dagger}$; the article records that
 it is not implementable by a unitary on the Fock space of the original modes, that it maps the original
 vacuum to a squeezed state, and that the two vacua are not unitarily equivalent as states of the same
 algebra. The transformed annihilator therefore annihilates a different vacuum, and "the state of no

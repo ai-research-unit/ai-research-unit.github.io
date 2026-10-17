@@ -335,13 +335,13 @@ which is a split-biquaternion-valued multiplier.
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
+The convective derivative $\tilde{D} = \tilde Q_1^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
 
 $$
-\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
+\tilde Q_1^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
-which depends on the velocity split biquaternion $\tilde{R}$ and on the frequency variables.
+which depends on the velocity split biquaternion $\tilde Q_1$ and on the frequency variables.
 
 ### The General Principle
 

@@ -162,6 +162,5 @@ The examples are the flat quaternionic spaces and their torus quotients, the com
 - Arnaud Beauville, "Variétés Kähleriennes dont la première classe de Chern est nulle", *Journal of Differential Geometry* 18 (1983), 755–782, for the hyperkähler structure on $S^{[n]}$ and $K_n(A)$ and for the decomposition refined to isometry.
 - Nigel Hitchin, Anders Karlhede, Ulf Lindström and Martin Roček, "Hyperkähler Metrics and Supersymmetry", *Communications in Mathematical Physics* 108 (1987), 535–589, for the hyperkähler quotient and the twistor construction.
 - Nigel Hitchin, "The Self-Duality Equations on a Riemann Surface", *Proceedings of the London Mathematical Society* 55 (1987), 59–126, for the hyperkähler structure on the moduli space of Higgs bundles.
-- Michael Atiyah and Nigel Hitchin, *The Geometry and Dynamics of Magnetic Monopoles* (Princeton University Press, 1988), for the hyperkähler metrics of the ALE and Taub–NUT families.
 - Dominic Joyce, *Compact Manifolds with Special Holonomy* (Oxford University Press, 2000), for the place of $Sp(n)$ and $Sp(n)\cdot Sp(1)$ among the holonomy geometries.
 - Gang Tian and Shing-Tung Yau, "Compact Kähler Manifolds with Zero First Chern Class", *Journal of the American Mathematical Society* 3 (1990), 579–609, for the existence theory underlying the decomposition.

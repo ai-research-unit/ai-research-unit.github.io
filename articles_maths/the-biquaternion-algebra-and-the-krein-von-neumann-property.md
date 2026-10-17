@@ -38,7 +38,7 @@ $$
 
 $\mathcal{M}$ is the **left regular image** of the biquaternion algebra, the algebra of the left multiplications acting on $\mathbb{B}$.
 
-**Proposition (the image is the algebra).** $L:\mathbb{B}\to\mathcal{L}(\mathbb{B})$ is an injective algebra homomorphism, $L_{\tilde Q}L_{\tilde R}=L_{\tilde Q\tilde R}$ and $L_{e_t}=\mathrm{id}$, so $\mathcal{M}\cong\mathbb{B}\cong M_2(\mathbb{C})$; $\mathcal{M}$ is unital, of complex dimension $4$, and finite-dimensional, hence closed in the weak operator topology.
+**Proposition (the image is the algebra).** $L:\mathbb{B}\to\mathcal{L}(\mathbb{B})$ is an injective algebra homomorphism, $L_{\tilde Q}L_{\tilde{Q}_1}=L_{\tilde Q\tilde{Q}_1}$ and $L_{e_t}=\mathrm{id}$, so $\mathcal{M}\cong\mathbb{B}\cong M_2(\mathbb{C})$; $\mathcal{M}$ is unital, of complex dimension $4$, and finite-dimensional, hence closed in the weak operator topology.
 
 **Proof.** Multiplicativity and unitality are associativity and the unit. Injectivity is $L_{\tilde Q}e_t=\tilde Q$, so $L_{\tilde Q}=0$ forces $\tilde Q=0$. Boundedness is automatic in finite dimension, and a finite-dimensional subspace of the operators is weakly closed.
 
@@ -66,7 +66,7 @@ $$
 
 **Corollary (the image is adjoint-closed only on the centre).** $(L_{\tilde Q})^{\dagger}\in\mathcal{M}$ if and only if $\tilde Q$ is central, that is if and only if $\tilde Q\in\mathbb{C}e_t$; then $(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$.
 
-**Proof.** $R_{\bar{\tilde Q}}=L_{\tilde R}$ for some $\tilde R$ forces $R_{\bar{\tilde Q}}\in\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_t$, hence $\bar{\tilde Q}$ central, hence $\tilde Q$ central; conversely a central parameter makes the two multiplications coincide.
+**Proof.** $R_{\bar{\tilde Q}}=L_{\tilde{Q}_1}$ for some $\tilde{Q}_1$ forces $R_{\bar{\tilde Q}}\in\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_t$, hence $\bar{\tilde Q}$ central, hence $\tilde Q$ central; conversely a central parameter makes the two multiplications coincide.
 
 **Corollary (not a Krein–von Neumann algebra, and not a Krein algebra).** $\mathcal{M}$ is not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra on $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*})$. Equivalently, the adjoint axiom of a Krein algebra, $\langle\tilde S',\tilde Q\tilde S\rangle_{\natural*}=\langle\sigma(\tilde Q)\tilde S',\tilde S\rangle_{\natural*}$, holds for **no** involution $\sigma$ of the algebra: it would give $L_{\sigma(\tilde Q)}=(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, which forces $\tilde Q$ central for every $\tilde Q$. So the biquaternion algebra carries no Krein-algebra structure for its general quaternionic sesquilinear form, the involution of the algebra being the definite one.
 

@@ -36,7 +36,7 @@ with the form $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu
 
 The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
-**Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q=\tilde Q$ for every $\tilde Q$, a **right unit** when $\tilde Q\star e=\tilde Q$ for every $\tilde Q$, and a **two-sided unit** when it is both. When a two-sided unit $e$ exists, an element $\tilde Q$ is **invertible of $\star$** when there is a $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$, the element $\tilde R$ being the **inverse of $\tilde Q$**, and the invertible elements form the **group of units of $\star$**. When no two-sided unit exists, the two-sided inverse is not defined.
+**Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q=\tilde Q$ for every $\tilde Q$, a **right unit** when $\tilde Q\star e=\tilde Q$ for every $\tilde Q$, and a **two-sided unit** when it is both. When a two-sided unit $e$ exists, an element $\tilde Q$ is **invertible of $\star$** when there is a $\tilde Q_1$ with $\tilde Q\star\tilde Q_1=\tilde Q_1\star\tilde Q=e$, the element $\tilde Q_1$ being the **inverse of $\tilde Q$**, and the invertible elements form the **group of units of $\star$**. When no two-sided unit exists, the two-sided inverse is not defined.
 
 Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
 
@@ -67,7 +67,7 @@ Consequently $e_t$ is a **right unit** of $\star$, it is **not** a left unit, an
 The one-sided equations are those of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, and in the block they read
 
 $$
-\tilde Q\star\tilde R=e_t\qquad\text{(the right-inverse equation)},\qquad \tilde R\star\tilde Q=e_t\qquad\text{(the left-inverse equation)},
+\tilde Q\star\tilde Q_1=e_t\qquad\text{(the right-inverse equation)},\qquad \tilde Q_1\star\tilde Q=e_t\qquad\text{(the left-inverse equation)},
 $$
 
 with $e_t$ the right unit of the block on the right-hand side. The equations have a solution for a set of elements that is decided by a quadratic form; that form is **not** the algebraic norm of the block, it is not one of the four algebraic norms of this space, and it is not studied here. What the article records is that the block carries **no two-sided invertibility** and that its own algebraic norm does not decide the one-sided question, read in §*The Absence of a Criterion from the Algebraic Norm*.
@@ -123,7 +123,7 @@ $$
 
 so that $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}$ exactly when $\tilde P$ and $\tilde Q$ are linearly dependent over $\mathbb{C}$.
 
-*Proof.* The form is computed on the block-square, $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}$; the square $\tilde P\star\tilde Q$ is too, so polarising the diagonal $\langle\cdot,\cdot\rangle_{*}$ gives $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\tilde Q^{*}\rangle_{*}$ with the explicit value $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$. Indeed $\tilde P\star\tilde Q$ is a single element and $\langle\cdot,\cdot\rangle_{*}$ of an element of the form $\lambda\tilde R$ is $\lvert\lambda\rvert^{2}\langle\tilde R\rangle_{*}$; the identity $\mathrm{Sc}(\tilde P\tilde Q^{*})=\langle\tilde P,\tilde Q\rangle_{*}$ closes the computation. For the equality case, the form $t\mapsto \langle\tilde P-t\tilde Q\rangle_{*}\geq0$ has discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, non-negative, vanishing exactly at proportionality.
+*Proof.* The form is computed on the block-square, $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}$; the square $\tilde P\star\tilde Q$ is too, so polarising the diagonal $\langle\cdot,\cdot\rangle_{*}$ gives $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\tilde Q^{*}\rangle_{*}$ with the explicit value $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$. Indeed $\tilde P\star\tilde Q$ is a single element and $\langle\cdot,\cdot\rangle_{*}$ of an element of the form $\lambda\tilde Q_1$ is $\lvert\lambda\rvert^{2}\langle\tilde Q_1\rangle_{*}$; the identity $\mathrm{Sc}(\tilde P\tilde Q^{*})=\langle\tilde P,\tilde Q\rangle_{*}$ closes the computation. For the equality case, the form $t\mapsto \langle\tilde P-t\tilde Q\rangle_{*}\geq0$ has discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, non-negative, vanishing exactly at proportionality.
 
 **Corollary (the defect is the discriminant).** For all $\tilde P,\tilde Q$,
 

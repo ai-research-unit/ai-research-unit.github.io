@@ -23,7 +23,7 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\phi(\vec r)$ is
 
 $$
-\tilde H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\phi\right]e_t
+H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\phi\right]e_t
 =\frac{1}{2m}\sum_k\tilde\pi_k^2 ,
 \qquad
 \tilde\pi_k=\left(p_k-\frac{ϙ}{c}A_k\right)e_t ,
@@ -60,7 +60,7 @@ Because the commutator is central and proportional to $i$, the transverse mechan
 Choose the Landau gauge $\vec A=(0,Bx,0)$, for which $\vec B=B\vec u_z$ and the Hamiltonian is
 
 $$
-\tilde H=\frac{1}{2m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}x\Big)^2+p_z^2\Big]e_t .
+H=\frac{1}{2m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}x\Big)^2+p_z^2\Big]e_t .
 $$
 
 The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\hbar k$ and $p_z=\hbar k_z$ are conserved, and the envelope has the form
@@ -115,7 +115,7 @@ a=\frac{1}{\sqrt{2m\hbar\omega_c}}\left(\tilde\pi_x+i\tilde\pi_y\right),
 [a,a^\dagger]=\mathrm{sgn}(ϙ)\,e_t ,
 $$
 
-whose commutator is central, so that $\tilde H=\hbar\omega_c(a^\dagger a+\frac12)e_t$ for the transverse part. Second, the energy is **independent of $k$**, so every $k$ allowed by the boundary conditions gives the same transverse energy: each Landau level is massively degenerate. That degeneracy is the subject of the fifth section.
+whose commutator is central, so that $H=\hbar\omega_c(a^\dagger a+\frac12)e_t$ for the transverse part. Second, the energy is **independent of $k$**, so every $k$ allowed by the boundary conditions gives the same transverse energy: each Landau level is massively degenerate. That degeneracy is the subject of the fifth section.
 
 ### The spectrum from the operator algebra
 
@@ -138,11 +138,11 @@ $$
 and the transverse Hamiltonian is
 
 $$
-\tilde H_\perp=\frac{1}{2m}\left(\tilde\pi_x^2+\tilde\pi_y^2\right)
+H_\perp=\frac{1}{2m}\left(\tilde\pi_x^2+\tilde\pi_y^2\right)
 =\hbar\omega_c\left(a^\dagger a+\tfrac12\right)e_t .
 $$
 
-The algebra is thus the canonical oscillator algebra in the centre, and the standard ladder argument applies: from $[\tilde H_\perp,a^\dagger]=\hbar\omega_c\,a^\dagger e_t$ and $a^\dagger a\ge0$, the spectrum is $\hbar\omega_c(n+\frac12)$ with $n=0,1,2,\dots$, the state $a|0\rangle=0$ being the ground state. The zero-point energy $\frac12\hbar\omega_c$ is the floor of the transverse motion, and the spacing is the cyclotron quantum. This derivation exhibits the Landau spectrum as a consequence of one central commutator; the differential-equation route of the previous subsection is its coordinate-space image. (For $ϙ<0$ the two operators are interchanged and the same algebra holds.)
+The algebra is thus the canonical oscillator algebra in the centre, and the standard ladder argument applies: from $[H_\perp,a^\dagger]=\hbar\omega_c\,a^\dagger e_t$ and $a^\dagger a\ge0$, the spectrum is $\hbar\omega_c(n+\frac12)$ with $n=0,1,2,\dots$, the state $a|0\rangle=0$ being the ground state. The zero-point energy $\frac12\hbar\omega_c$ is the floor of the transverse motion, and the spacing is the cyclotron quantum. This derivation exhibits the Landau spectrum as a consequence of one central commutator; the differential-equation route of the previous subsection is its coordinate-space image. (For $ϙ<0$ the two operators are interchanged and the same algebra holds.)
 
 ## The Symmetric Gauge and the Guiding Centre
 
@@ -213,7 +213,7 @@ The identification of the degeneracy with a flux count is exact and is the non-r
 
 ### The flux quantum from the algebra
 
-It is worth recording that $\Phi_0$ is not put in by hand. The commutator $[\tilde\pi_x,\tilde\pi_y]=i\hbar ϙB/c\,e_t$ is a central commutation relation with effective action $\hbar_{\mathrm{eff}}=\hbar ϙB/c$, and the central oscillator $\tilde H_\perp=\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ has spacing $\hbar_{\mathrm{eff}}/m=\hbar\omega_c$: the cyclotron quantum is the field-strength commutator divided by the mass. The count is read from the other central commutator, $[R_x,R_y]=-i\,\mathrm{sgn}(ϙ)\,\ell_B^2\,e_t$: a canonical pair whose commutator is $\pm i$ times an area has one state per $2\pi$ times that area, so a sample of area $A$ holds $A/(2\pi\ell_B^2)=AB/\Phi_0$ states with
+It is worth recording that $\Phi_0$ is not put in by hand. The commutator $[\tilde\pi_x,\tilde\pi_y]=i\hbar ϙB/c\,e_t$ is a central commutation relation with effective action $\hbar_{\mathrm{eff}}=\hbar ϙB/c$, and the central oscillator $H_\perp=\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ has spacing $\hbar_{\mathrm{eff}}/m=\hbar\omega_c$: the cyclotron quantum is the field-strength commutator divided by the mass. The count is read from the other central commutator, $[R_x,R_y]=-i\,\mathrm{sgn}(ϙ)\,\ell_B^2\,e_t$: a canonical pair whose commutator is $\pm i$ times an area has one state per $2\pi$ times that area, so a sample of area $A$ holds $A/(2\pi\ell_B^2)=AB/\Phi_0$ states with
 
 $$
 \Phi_0=2\pi\ell_B^2 B=\frac{hc}{|ϙ|}.
@@ -257,7 +257,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 ## Summary
 
-The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $\tilde H=\frac{1}{2m}\sum_k\tilde\pi_k^2\,e_t$ with $\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$, and the field strength is the central commutator
+The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2m}\sum_k\tilde\pi_k^2\,e_t$ with $\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$, and the field strength is the central commutator
 
 $$
 [\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar ϙ}{c}\varepsilon_{klm}B_m\,e_t ,
@@ -295,7 +295,7 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $H_n$ | Hermite polynomials |
 | $a,a^\dagger$ | Central cyclotron ladder operators, $[a,a^\dagger]=e_t$ |
 | $L_z$ | Conserved central angular momentum (symmetric gauge) |
-| $R_k$ | Guiding-centre operators; commute with $\tilde H$ |
+| $R_k$ | Guiding-centre operators; commute with $H$ |
 | $\Phi_0=hc/\lvert ϙ\rvert$ | Magnetic flux quantum |
 | $N_\phi=AB/\Phi_0$ | Landau-level degeneracy |
 | $\nu=N_e/N_\phi$ | Filling factor |

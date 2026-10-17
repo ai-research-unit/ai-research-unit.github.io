@@ -194,7 +194,7 @@ On the operator side the idempotents of the algebra recover their usual role, wi
 
 **Theorem (the projector criterion).** The left multiplication $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ is a projector, $L_{\tilde P}^{2}=L_{\tilde P}$, if and only if $\tilde P$ is an idempotent of the plain product. Consequently the product has a family of projectors of complex dimension two, indexed by the plain idempotents, while its own idempotents are $0$ and $e_t$ alone.
 
-**Proof.** $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ by the isotope identity, and the plain left multiplications are faithful; so $L_{\tilde P}^{2}=L_{\tilde P}$ exactly when $(\tilde P^{\natural})^2=\tilde P^{\natural}$, that is when $\tilde P$ is a plain idempotent. The family is the plain family of complex dimension two. The theorem and the monoid law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*.
+**Proof.** $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ by the isotope identity, and the plain left multiplications are faithful; so $L_{\tilde P}^{2}=L_{\tilde P}$ exactly when $(\tilde P^{\natural})^2=\tilde P^{\natural}$, that is when $\tilde P$ is a plain idempotent. The family is the plain family of complex dimension two. The theorem and the monoid law $L_{\tilde P}L_{\tilde Q_2}=L_{\tilde Q_2\tilde P}$ are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*.
 
 **Corollary (a projector on a square-zero element).** Every nontrivial plain idempotent is a nilpotent of $\star$ whose left multiplication is a projector,
 

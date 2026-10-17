@@ -89,7 +89,7 @@ $$
 \mathrm{ind}\,\slashed{D}_n \;=\; \frac{1}{2\pi}\int_{S^2}F \;=\; n ,
 $$
 
-the Chern number of the bundle, which the previous article computed to be one for the minimal monopole. The number of zero modes of the Dirac operator coupled to a monopole of charge $n$ is $|n|$, with the sign of $n$ giving the chirality. The two-sphere case is the simplest instance of the same counting: index equals topological charge, and the charge is a winding number of the algebra's group.
+the Chern number of the bundle, which the previous article computed to be one for the minimal bundle. The number of zero modes of the Dirac operator in a charge-$n$ background is $|n|$, with the sign of $n$ giving the chirality. The two-sphere case is the simplest instance of the same counting: index equals topological charge, and the charge is a winding number of the algebra's group.
 
 **Boundary corrections.** On a manifold with boundary the index acquires a boundary contribution, and the theorem is replaced by the Atiyah–Patodi–Singer form
 
@@ -130,7 +130,7 @@ $$
 
 so the abelian index density is the framework's own invariant $I_2$ up to a constant. This is the affirmative half of the story: for the abelian sector the index and the charge are written in the invariant calculus the framework already possesses.
 
-## A Worked Case: the Abelian Index and the Monopole Zero Modes
+## A Worked Case: the Abelian Index and the Charge-$n$ Zero Modes
 
 The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
 
@@ -138,9 +138,9 @@ $$
 \mathrm{ind}\,\slashed{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
 $$
 
-since the A-roof genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a magnetic monopole binds one fermion mode per unit magnetic charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
+since the A-roof genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a charge-$n$ background binds one fermion mode per unit charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly, and they are the framework's monopole harmonics. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections
+The zero modes can be exhibited explicitly, and they are the framework's charged harmonics on the sphere. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections
 
 $$
 \psi_n^{(m)}=f_n^{(m)}(\theta)\,\exp(im\phi),
@@ -180,7 +180,7 @@ A second place where the count is imported is the fermion itself. The index theo
 
 ## Summary
 
-The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\mathrm{ch}(E)\wedge\mathrm{A}(TM)$. On the flat four-dimensional slice the A-roof genus is trivial and the index is $2T(R)Ϙ$, where $Ϙ$ is the instanton charge of *Instantons and Solitons in Biquaternionic Form* and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, giving a single zero mode in the defining module and four in the adjoint for a unit self-dual instanton, $n_+=k$ and $n_+=4k$ respectively. The abelian specialisation on the two-sphere gives index equal to the monopole charge, which is the Chern number one of the Hopf bundle.
+The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\mathrm{ch}(E)\wedge\mathrm{A}(TM)$. On the flat four-dimensional slice the A-roof genus is trivial and the index is $2T(R)Ϙ$, where $Ϙ$ is the instanton charge of *Instantons and Solitons in Biquaternionic Form* and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, giving a single zero mode in the defining module and four in the adjoint for a unit self-dual instanton, $n_+=k$ and $n_+=4k$ respectively. The abelian specialisation on the two-sphere gives index equal to the charge, which is the Chern number one of the Hopf bundle.
 
 The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\vec E\cdot\vec B$. The operator, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the A-roof genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.
 

@@ -18,7 +18,7 @@ $$
 \langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}\bigl(\tilde P^{*}\tilde S\bigr)=\sum_\mu P_\mu^{*}S_\mu,
 $$
 
-Hermitian, positive definite, of Gram matrix the identity in the basis. The **two-sided operator** of $\tilde Q$ is $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, the dagger sandwich of the corpus; the assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is multiplicative in the parameter, $\Theta_{\tilde Q\tilde R}=\Theta_{\tilde Q}\circ\Theta_{\tilde R}$. The **unitary slice** is
+Hermitian, positive definite, of Gram matrix the identity in the basis. The **two-sided operator** of $\tilde Q$ is $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, the dagger sandwich of the corpus; the assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is multiplicative in the parameter, $\Theta_{\tilde Q\tilde{Q}_3}=\Theta_{\tilde Q}\circ\Theta_{\tilde{Q}_3}$. The **unitary slice** is
 
 $$
 U=\{\tilde Q\in\mathbb{B} : \tilde Q^{*}\tilde Q=e_{t}\},
@@ -103,7 +103,7 @@ The two bilinear twins read their isometry parameters on a level set of a scalar
 
 **Proposition (the condition is an equation on a Hermitian element, not on a scalar).** The isometry condition of $\Theta_{\tilde Q}$ is the matrix equation $\tilde Q^{*}\tilde Q=e_{t}$; it is one $\mathbb{C}$-bilinear equation in the pair $(\tilde Q^{*},\tilde Q)$, equivalently the four statements $\sum_\mu\lvert Q_\mu\rvert^{2}=1$ and $\tilde Q^{*}\tilde Q$ central. The set it defines is a group, because the equation is the defining equation of the unitary slice, whereas the corresponding sets $\{q=\pm1\}$ and $\{N=\pm1\}$ of the bilinear twins are not groups.
 
-*Proof.* The equation is the theorem of §*Conventions and the Isometry Condition*; that the slice is a group is the closure of the unitary group under multiplication and inversion, $\tilde Q,\tilde R\in U\Rightarrow(\tilde Q\tilde R)^{*}(\tilde Q\tilde R)=\tilde R^{*}\tilde Q^{*}\tilde Q\tilde R=e_{t}$. The failure of the bilinear shells is the theorem of the twin articles.
+*Proof.* The equation is the theorem of §*Conventions and the Isometry Condition*; that the slice is a group is the closure of the unitary group under multiplication and inversion, $\tilde Q,\tilde{Q}_3\in U\Rightarrow(\tilde Q\tilde{Q}_3)^{*}(\tilde Q\tilde{Q}_3)=\tilde{Q}_3^{*}\tilde Q^{*}\tilde Q\tilde{Q}_3=e_{t}$. The failure of the bilinear shells is the theorem of the twin articles.
 
 **Remark (the phase is invisible).** Because $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$, the pin group and the circle act on the same operators: every parameter and its unitary multiples give one isometry, and the information carried by the parameter is only its class modulo the kernel $\mathrm{U}(1)e_{t}$. This is the reason the image of the cover has real dimension three although the pin group has real dimension four.
 
@@ -171,7 +171,7 @@ The general plain sesquilinear form $\langle\tilde S,\tilde P\rangle_{*}=\mathrm
 |---|---|
 | $\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde P^{*}\tilde S)$ | The general plain sesquilinear form; positive definite, Gram matrix the identity |
 | $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ | The two-sided operator of $\tilde Q$; the dagger sandwich |
-| $\Theta_{\tilde Q\tilde R}=\Theta_{\tilde Q}\circ\Theta_{\tilde R}$ | Composition law; the assignment is multiplicative in the parameter |
+| $\Theta_{\tilde Q\tilde{Q}_3}=\Theta_{\tilde Q}\circ\Theta_{\tilde{Q}_3}$ | Composition law; the assignment is multiplicative in the parameter |
 | $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ | Parameter rule for central $A$; the phase is invisible |
 | $U=\{\tilde Q^{*}\tilde Q=e_{t}\}=\mathrm{U}(2)$ | The unitary slice; real dimension four |
 | $\mathrm{Pin}=U\cong \mathrm{U}(2)$ | The pin group; the isometry parameters of the form |

@@ -73,7 +73,7 @@ and $S_{e_t,e_t}$ is the involution of the algebra.
 
 ### The Two Families Together
 
-**Theorem (the composition table).** For all $\tilde A,\tilde Q_2,\tilde Q_3,\tilde D,\tilde P,\tilde Q,\tilde R,\tilde S$,
+**Theorem (the composition table).** For all $\tilde A,\tilde Q_2,\tilde Q_3,\tilde D,\tilde P,\tilde Q,\tilde Q_6,\tilde S$,
 
 $$
 S_{\tilde Q_3,\tilde D}S_{\tilde A,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde A^{*}\tilde D^{*}} , \qquad
@@ -81,7 +81,7 @@ T_{\tilde P,\tilde Q}S_{\tilde A,\tilde Q_2}=S_{\tilde P\tilde A,\tilde Q^{*}\ti
 $$
 $$
 S_{\tilde Q_3,\tilde D}T_{\tilde P,\tilde Q}=S_{\tilde Q_3\tilde Q^{*},\tilde D\tilde P} , \qquad
-T_{\tilde P,\tilde Q}T_{\tilde R,\tilde S}=T_{\tilde P\tilde R,\tilde S\tilde Q} .
+T_{\tilde P,\tilde Q}T_{\tilde Q_6,\tilde S}=T_{\tilde P\tilde Q_6,\tilde S\tilde Q} .
 $$
 
 **Proof.** Each is the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, transported to the sandwich $S_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}}\circ{}^{*}$; the first is the direct computation $S_{\tilde Q_3,\tilde D}(S_{\tilde A,\tilde Q_2}(\tilde Q_1))=\tilde Q_3(\tilde A\tilde Q_1^{*}\tilde Q_2^{*})^{*}\tilde D^{*}=\tilde Q_3\tilde Q_2\tilde Q_1\tilde A^{*}\tilde D^{*}$, and the others are the same computation with one factor of the involution and one two-sided multiplication in each order.

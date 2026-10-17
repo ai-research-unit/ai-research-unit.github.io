@@ -131,11 +131,11 @@ The parity has three consequences that organize the rest of the article.
 The single-mode truncation of this structure lives *inside* $\mathbb{B}$. The spin–statistics companion computes the truncated ladder
 
 $$
-\tilde a=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},
+\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},
 \qquad
-\tilde a^2=0,
+\vec\Upsilon_x^2=0,
 \qquad
-\{\tilde a,\tilde a^\dagger\}=e_t,
+\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
 \qquad
 (-1)^F=i\vec e_z,
 $$
@@ -292,7 +292,7 @@ The denominator is the deformed mass-shell scalar, and the deformation $-i\epsil
 **What the biquaternion structure supplies.**
 
 - *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ generators $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.
-- *The field as the odd generator, with the grading realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\tilde a=\tilde S_+/\hbar$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
+- *The field as the odd generator, with the grading realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\vec\Upsilon_x=\tilde S_+/\hbar$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
 - *The biquaternion form of the two-point function*, inheriting the deformed mass-shell denominator.
 - *The separation of the four conjugations*, so that the particle–antiparticle exchange is Hermitian conjugation of the operator field and not the algebra's real structure.
 
@@ -318,7 +318,7 @@ $$
 (-1)^F\psi^{\mathrm{fop}}(x)(-1)^F=-\psi^{\mathrm{fop}}(x),
 $$
 
-so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde a=\tilde S_+/\hbar$ and $(-1)^F=i\vec e_z$; for the field it is external.
+so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\vec\Upsilon_x=\tilde S_+/\hbar$ and $(-1)^F=i\vec e_z$; for the field it is external.
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
@@ -348,7 +348,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\tilde P=iHe_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
-| $\tilde a=\tilde S_+/\hbar$, $\tilde a^\dagger=\tilde S_-/\hbar$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
+| $\vec\Upsilon_x=\tilde S_+/\hbar$, $\vec\Upsilon_y=\tilde S_-/\hbar$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(i\not\partial/\partial Q_x+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\vec\Delta)=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |

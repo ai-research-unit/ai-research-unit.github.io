@@ -55,7 +55,7 @@ $$
 
 so the trace pairing of the regular matrices with the second factor transposed is twice the general quaternionic bilinear form of the algebra.
 
-*Proof.* $\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}=\mathsf{M}_4(\tilde{Q}^{\natural})$, so the left-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P}\tilde{Q}^{\natural}))=2\,\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$, using $\operatorname{Tr}\mathsf{M}_4(\tilde{R})=4\,\mathrm{Sc}(\tilde{R})$.
+*Proof.* $\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}=\mathsf{M}_4(\tilde{Q}^{\natural})$, so the left-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P}\tilde{Q}^{\natural}))=2\,\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$, using $\operatorname{Tr}\mathsf{M}_4(\tilde Q_1)=4\,\mathrm{Sc}(\tilde Q_1)$.
 
 **Theorem (the diagonal is the norm).** On the diagonal,
 

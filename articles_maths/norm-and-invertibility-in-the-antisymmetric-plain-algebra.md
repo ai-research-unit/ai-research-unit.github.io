@@ -26,7 +26,7 @@ The word *unit* and the word *inverse* name a product, so the definitions are st
 
 **Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, a **right unit** when $\tilde Q_1\star e=\tilde Q_1$ for every $\tilde Q_1$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
-**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde R$ with $\tilde R\star\tilde Q=e$, **right-invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=e$, and **invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$. Such an $\tilde R$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
+**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde Q_3$ with $\tilde Q_3\star\tilde Q=e$, **right-invertible** when there is $\tilde Q_3$ with $\tilde Q\star\tilde Q_3=e$, and **invertible** when there is $\tilde Q_3$ with $\tilde Q\star\tilde Q_3=\tilde Q_3\star\tilde Q=e$. Such an $\tilde Q_3$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
 
 Throughout this article the product is the antisymmetric plain multiplication $\wedge$ of the block, and the unit, the inverse and the group of units are read in $\wedge$.
 

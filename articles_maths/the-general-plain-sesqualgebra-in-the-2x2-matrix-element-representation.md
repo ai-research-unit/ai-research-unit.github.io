@@ -53,7 +53,7 @@ so $e_t$ is a **right unit and not a left unit** of the product: the right actio
 **The ternary product and the quadratic representation.** The ternary product is the matrix product
 
 $$
-\mathsf{M}_2\bigl(\{\tilde{P},\tilde{Q},\tilde{R}\}\bigr)=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{R}),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
+\mathsf{M}_2\bigl(\{\tilde{P},\tilde{Q},\tilde{Q}_2\}\bigr)=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{Q}_2),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
 $$
 
 the **middle model** of the matrix algebra, and its quadratic representation is $Z\mapsto ZY^{\dagger}Z$.
@@ -89,8 +89,8 @@ The model collects the objects of the group in one dictionary.
 | element $\tilde{Q}=Q_te_t+\vec Q$ | $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$ |
 | involution $\tilde{Q}^{*}$ | the conjugate transpose $\mathsf{M}_2(\tilde{Q})^{\dagger}$ |
 | multiplication $\tilde{P}\star\tilde{Q}$ | $XY^{\dagger}$ |
-| ternary product $\{\tilde{P},\tilde{Q},\tilde{R}\}$ | $XY^{\dagger}Z$ |
-| associator $[\tilde{P},\tilde{Q},\tilde{R}]$ | $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$ |
+| ternary product $\{\tilde{P},\tilde{Q},\tilde{Q}_2\}$ | $XY^{\dagger}Z$ |
+| associator $[\tilde{P},\tilde{Q},\tilde{Q}_2]$ | $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$ |
 | idempotents of the multiplication | the Hermitian projections; the rank-one ones the projective line $\mathbb{CP}^{1}$ |
 | simplicity | $M_2(\mathbb{C})$ simple, centre $\mathbb{C}I$ |
 | left and right multiplications | $Y\mapsto AY^{\dagger}$, $Y\mapsto YA^{\dagger}$ |
@@ -112,7 +112,7 @@ $$
 \langle\tilde{Q},\tilde{P}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
 $$
 
-the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P}^{*}\tilde{Q}))=\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})$ by the trace identity $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$.
+the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P}^{*}\tilde{Q}))=\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.
 
 **Theorem (the Frobenius norm).** On the diagonal,
 

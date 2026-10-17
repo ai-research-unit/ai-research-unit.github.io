@@ -10,21 +10,21 @@ The biquaternion content of the Schrödinger path integral is therefore a statem
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The coordinate $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The coordinate $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the argument of the field.
 
 ## From the State-Vector Equation to a Sum over Paths
 
 ### The evolution operator and the position kernel
 
-The biquaternion Schrödinger equation $i\hbar\partial/\partial t\psi=\tilde H\psi$ is solved formally by
+The biquaternion Schrödinger equation $i\hbar\partial/\partial t\psi=H\psi$ is solved formally by
 
 $$
-\tilde U(t) = \exp(-i\tilde H t/\hbar),
+\tilde U(t) = \exp(-iH t/\hbar),
 \qquad
 \psi(t) = \tilde U(t)\,\psi(0),
 $$
 
-and because $\tilde H$ is central, $\tilde U(t)$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^{*}=e_t$. The evolution operator is a semigroup in time,
+and because $H$ is central, $\tilde U(t)$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^{*}=e_t$. The evolution operator is a semigroup in time,
 
 $$
 \tilde U(t_1+t_2) = \tilde U(t_2)\,\tilde U(t_1),
@@ -101,7 +101,7 @@ Composing the short-time kernel $N$ times and using the semigroup property gives
 
 $$
 \tilde U(t)=\lim_{N\to\infty}\left(\tilde U(t/N)\right)^N
-=\lim_{N\to\infty}\left(\exp(-i\tilde Ht/N\hbar)\right)^N ,
+=\lim_{N\to\infty}\left(\exp(-iHt/N\hbar)\right)^N ,
 $$
 
 and inserting a resolution of the identity between each pair of factors turns the matrix element into an integral over the intermediate positions:
@@ -317,7 +317,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $\tilde K=K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t)=\exp(-iHt/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $\tilde K=K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 \tilde K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
@@ -348,8 +348,8 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the phase and the kernel |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $\tilde H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
-| $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Evolution operator; central unitary, semigroup |
+| $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
+| $\tilde U(t)=\exp(-iHt/\hbar)$ | Evolution operator; central unitary, semigroup |
 | $\tilde K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t_i)=Ke_t$ | Position kernel; central |
 | $\tilde K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |

@@ -65,7 +65,7 @@ so the idempotents of the quaternionic product are exactly $0$ and $e_t$, and th
 
 **The units and the norm.** The product has a unit exactly when the determinant does not vanish: the units of the algebra are the matrices of $GL_2(\mathbb{C})$, the elements with $\langle\tilde{Q}\rangle_{\natural}\neq0$, and the norm-one group is $SL_2(\mathbb{C})$.
 
-**The symmetrisation and the left multiplications.** The central coefficient of the symmetrisation is half the trace of the transported product, $\beta(\tilde{P},\tilde{Q})=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})\bigr)$, and the symmetrised product itself is the scalar matrix $\beta(\tilde{P},\tilde{Q})I=\tfrac12\bigl(\operatorname{adj}(A)B+\operatorname{adj}(B)A\bigr)$, which is the matrix form of the centrality of the symmetrisation. The left multiplication by $\tilde{P}$ is the ordinary multiplication by the adjugate, $\mathsf{M}_2\bigl(L_{\tilde{P}}(\tilde{Q}_1)\bigr)=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q}_1)$, so the composition law $L_{\tilde{P}}\circ L_{\tilde{R}}=L_{\tilde{R}\tilde{P}}$ is the anti-automorphism property $\operatorname{adj}(A)\operatorname{adj}(C)=\operatorname{adj}(CA)$, and the monoid of left multiplications is the opposite of the multiplicative monoid of the matrices.
+**The symmetrisation and the left multiplications.** The central coefficient of the symmetrisation is half the trace of the transported product, $\beta(\tilde{P},\tilde{Q})=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})\bigr)$, and the symmetrised product itself is the scalar matrix $\beta(\tilde{P},\tilde{Q})I=\tfrac12\bigl(\operatorname{adj}(A)B+\operatorname{adj}(B)A\bigr)$, which is the matrix form of the centrality of the symmetrisation. The left multiplication by $\tilde{P}$ is the ordinary multiplication by the adjugate, $\mathsf{M}_2\bigl(L_{\tilde{P}}(\tilde{Q}_1)\bigr)=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q}_1)$, so the composition law $L_{\tilde{P}}\circ L_{\tilde Q_2}=L_{\tilde Q_2\tilde{P}}$ is the anti-automorphism property $\operatorname{adj}(A)\operatorname{adj}(C)=\operatorname{adj}(CA)$, and the monoid of left multiplications is the opposite of the multiplicative monoid of the matrices.
 
 **The associator.** The associator of the transported product $A\star'B=\operatorname{adj}(A)B$ is
 
@@ -73,7 +73,7 @@ $$
 (A\star'B)\star'C-A\star'(B\star'C)=\operatorname{adj}(B)AC-\operatorname{adj}(BA)C=\bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C ,
 $$
 
-the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $\langle\cdot,\cdot\rangle_{\natural}$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde{R}]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde{R}$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.
+the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $\langle\cdot,\cdot\rangle_{\natural}$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde Q_2]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde Q_2$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.
 
 ## The General Quaternionic Bilinear Form in the Model
 
@@ -85,7 +85,7 @@ $$
 
 the trace pairing in which the second argument is adjugated.
 
-*Proof.* $\operatorname{adj}\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(\tilde{Q}^{\natural})$, so the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}^{\natural}))=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})=\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ by the trace identity $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$.
+*Proof.* $\operatorname{adj}\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(\tilde{Q}^{\natural})$, so the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}^{\natural}))=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})=\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ by the trace identity $\mathrm{Sc}(\tilde Q_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde Q_2)\mathsf{M}_2(\tilde{S}))$.
 
 **Theorem (the diagonal is the determinant).** On the diagonal,
 

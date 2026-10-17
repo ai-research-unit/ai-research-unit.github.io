@@ -211,7 +211,7 @@ $$
 \left|\int_{S^2}\omega\right| = 2\pi\hbar,
 $$
 
-the flux of a unit-charge monopole, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $j$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\Omega/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
+the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $j$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\Omega/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
 
 ### Spin Tunnelling and Its Quenching
 
@@ -283,7 +283,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ | Symplectic form of the sphere |
 | $d\vec r/dt = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\bar\psi,\psi$ | Grassmann spinor variables, $\bar\psi\psi=1$ |
-| $\left|\int_{S^2}\omega\right| = 2\pi\hbar$ | Monopole flux; non-exactness of $\omega$ |
+| $\left|\int_{S^2}\omega\right| = 2\pi\hbar$ | Unit-charge flux; non-exactness of $\omega$ |
 
 ## Further Reading
 

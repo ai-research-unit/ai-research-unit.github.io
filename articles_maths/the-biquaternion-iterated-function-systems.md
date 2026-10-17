@@ -40,7 +40,7 @@ $$
 
 so $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
 
-**Proof.** Write $\tilde A=\rho U$ with $U$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde R$ with $\tilde P,\tilde R\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde R$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde R\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
+**Proof.** Write $\tilde A=\rho U$ with $U$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde Q_1$ with $\tilde P,\tilde Q_1\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde Q_1$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde Q_1\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
 
 **Remark (the central multipliers).** For a central multiplier $\tilde A=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
 

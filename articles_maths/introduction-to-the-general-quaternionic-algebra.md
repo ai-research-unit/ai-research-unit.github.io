@@ -68,8 +68,8 @@ The table is not the quaternion table, and the differences are worth naming beca
 **Proposition.** The multiplication is **$\mathbb{C}$-bilinear**: it is additive in each variable and
 
 $$
-(\tilde P+\tilde Q)\star\tilde R=\tilde P\star\tilde R+\tilde Q\star\tilde R , \qquad
-\tilde R\star(\tilde P+\tilde Q)=\tilde R\star\tilde P+\tilde R\star\tilde Q , \qquad
+(\tilde P+\tilde Q)\star\tilde Q_4=\tilde P\star\tilde Q_4+\tilde Q\star\tilde Q_4 , \qquad
+\tilde Q_4\star(\tilde P+\tilde Q)=\tilde Q_4\star\tilde P+\tilde Q_4\star\tilde Q , \qquad
 (A\tilde P)\star\tilde Q=A(\tilde P\star\tilde Q)=\tilde P\star(A\tilde Q) , \qquad A\in\mathbb{C} .
 $$
 
@@ -146,18 +146,18 @@ the insertion of $\natural$ in the first slot being the isotope, and $\natural$ 
 **Proposition (the associator).** The **associator** of the multiplication,
 
 $$
-[\tilde P,\tilde Q,\tilde R]=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R) ,
+[\tilde P,\tilde Q,\tilde Q_4]=(\tilde P\star\tilde Q)\star\tilde Q_4-\tilde P\star(\tilde Q\star\tilde Q_4) ,
 $$
 
 is
 
 $$
-[\tilde P,\tilde Q,\tilde R]=\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R .
+[\tilde P,\tilde Q,\tilde Q_4]=\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4 .
 $$
 
-**Proof.** The product satisfies $(\tilde P\star\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde P\star\tilde Q)\star\tilde R=(\tilde P\star\tilde Q)^{\natural}\tilde R=\tilde Q^{\natural}\tilde P\tilde R$, while $\tilde P\star(\tilde Q\star\tilde R)=\tilde P^{\natural}(\tilde Q\star\tilde R)=\tilde P^{\natural}\tilde Q^{\natural}\tilde R$. The difference is the displayed form.
+**Proof.** The product satisfies $(\tilde P\star\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde P\star\tilde Q)\star\tilde Q_4=(\tilde P\star\tilde Q)^{\natural}\tilde Q_4=\tilde Q^{\natural}\tilde P\tilde Q_4$, while $\tilde P\star(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}\tilde Q^{\natural}\tilde Q_4$. The difference is the displayed form.
 
-**Corollary.** The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}$, on the right by $\tilde R$.
+**Corollary.** The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}$, on the right by $\tilde Q_4$.
 
 **Corollary.** The multiplication agrees with the plain product, and is therefore associative and commutative, on the scalar line $\mathbb{C}e_t$, which is the fixed subspace of $\natural$; and it is not associative on the subspace spanned by $e_t$ and any one of $\vec e_x,\vec e_y,\vec e_z$, by the witness above. Associativity of the $\natural$-product is thus the triviality of the conjugation, which happens on the scalar line alone.
 
@@ -176,12 +176,12 @@ $$
 **Proposition (the left multiplications).** The left multiplications $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ compose in the reversed order of the algebra,
 
 $$
-L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P} ,
+L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P} ,
 $$
 
 so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B}$.
 
-**Proof.** $L_{\tilde P}(L_{\tilde R}(\tilde Q_1))=\tilde P^{\natural}(\tilde R^{\natural}\tilde Q_1)=(\tilde R\tilde P)^{\natural}\tilde Q_1=L_{\tilde R\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.
+**Proof.** $L_{\tilde P}(L_{\tilde Q_4}(\tilde Q_1))=\tilde P^{\natural}(\tilde Q_4^{\natural}\tilde Q_1)=(\tilde Q_4\tilde P)^{\natural}\tilde Q_1=L_{\tilde Q_4\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.
 
 ### Non-Commutativity and the Centre
 
@@ -329,7 +329,7 @@ $$
 \ }
 $$
 
-Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.
+Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.
 
 ## Summary of Notation
 
@@ -345,8 +345,8 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 | $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise conjugation and the star |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ |
-| $[\tilde P,\tilde Q,\tilde R]$ | the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde R$ |
-| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P}$ |
+| $[\tilde P,\tilde Q,\tilde Q_4]$ | the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde Q_4$ |
+| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P}$ |
 | $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the quaternion subspace, on which $\star$ is $\bar hg$ |
 | $\sum_\mu Q_\mu^2$ | the scalar coefficient of the square, $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$ |
 

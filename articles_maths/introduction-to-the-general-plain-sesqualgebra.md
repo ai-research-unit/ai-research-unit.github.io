@@ -4,7 +4,7 @@
 
 The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Read as a multiplication, one of the four makes that space an associative unital algebra, the general plain bilinear product $\tilde P\tilde Q$, and that reading is *Introduction to the Biquaternion Algebra*. A second reading is available, and it is the subject of this article: the **general plain sesquilinear product** $\tilde P\tilde Q^{*}$ is additive in each variable, $\mathbb{C}$-linear in the first and $\mathbb{C}$-**conjugate**-linear in the second, and those are the two scalar rules of a **sesqualgebra** over $\mathbb{C}$ with its conjugation as the base involution (*Sesqualgebras*). The fourth product satisfies the same two rules, its first slot being read through the $\mathbb{C}$-linear ${}^{\natural}$, so the rules alone do not select this product; what does is proved in §*Which of the Four Is a Sesquilinear Multiplication*. This article takes $\tilde P\tilde Q^{*}$ as the multiplication and builds the sesqualgebra it defines.
 
-The consequences are of a different kind from the bilinear case. Associativity is not available: a sesqualgebra of full type with a nontrivial involution is **never** associative, by the collapse theorem of *Sesqualgebras*, and $\mathbb{B}$ is of full type. What survives is the structure that does not need associativity: a unit on one side alone, an involution that exchanges the two slots, the ternary product $\tilde P\tilde Q^{*}\tilde R$ with the algebraic $J^{*}$-algebra it defines, the two halves of the algebra cut out by the involution, the squares that generate the positive cone, and the simplicity of the product as an ideal-theoretic object.
+The consequences are of a different kind from the bilinear case. Associativity is not available: a sesqualgebra of full type with a nontrivial involution is **never** associative, by the collapse theorem of *Sesqualgebras*, and $\mathbb{B}$ is of full type. What survives is the structure that does not need associativity: a unit on one side alone, an involution that exchanges the two slots, the ternary product $\tilde P\tilde Q^{*}\tilde{Q}_3$ with the algebraic $J^{*}$-algebra it defines, the two halves of the algebra cut out by the involution, the squares that generate the positive cone, and the simplicity of the product as an ideal-theoretic object.
 
 Three boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the comparison of their properties is *Comparison Between the Four General Products*. The same space read as an algebra and the question of its base rings are *Introduction to the Biquaternion Algebra* and, with the real scalars, and neither is repeated here. And the elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces* and *Decompositions Along the Remarkable Subspaces*; the subspaces are named here only as the two halves the involution cuts out.
 
@@ -124,18 +124,18 @@ The failure of associativity is not an accident of the chosen basis, and it is n
 **Definition.** The **associator** of the multiplication is
 
 $$
-[\tilde P,\tilde Q,\tilde R] = (\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R) .
+[\tilde P,\tilde Q,\tilde{Q}_3] = (\tilde P \star \tilde Q) \star \tilde{Q}_3 - \tilde P \star (\tilde Q \star \tilde{Q}_3) .
 $$
 
 **Proposition.** For the derived operation of an associative algebra with a $\varsigma$-semilinear involution,
 
 $$
-[\tilde P,\tilde Q,\tilde R] = \tilde P\bigl((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*}\bigr) = \tilde P\bigl(\tilde Q^{*}\tilde R^{*} - \tilde R\tilde Q^{*}\bigr) ,
+[\tilde P,\tilde Q,\tilde{Q}_3] = \tilde P\bigl((\tilde{Q}_3\tilde Q)^{*} - \tilde{Q}_3\tilde Q^{*}\bigr) = \tilde P\bigl(\tilde Q^{*}\tilde{Q}_3^{*} - \tilde{Q}_3\tilde Q^{*}\bigr) ,
 $$
 
-so the associator is $\mathbb{C}$-linear in $\tilde P$, $\varsigma$-semilinear in $\tilde Q$ and carries the difference of the two parities in $\tilde R$.
+so the associator is $\mathbb{C}$-linear in $\tilde P$, $\varsigma$-semilinear in $\tilde Q$ and carries the difference of the two parities in $\tilde{Q}_3$.
 
-**Proof.** The first identity is the general formula of *The Sesquilinear Associator and the Ternary Product* for the derived operation, $\tilde P\bigl((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*}\bigr)$; the expansion $(\tilde R\tilde Q)^{*} = \tilde Q^{*}\tilde R^{*}$ is the anti-multiplicativity of ${}^{*}$. The last clause is the parity theorem of the same article: the two groupings are trilinear on two different modules, $(\tilde P\tilde Q) \star \tilde R$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}^{\varsigma}$ and $\tilde P \star (\tilde Q \star \tilde R)$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}$, so the associator is not homogeneous in the third slot.
+**Proof.** The first identity is the general formula of *The Sesquilinear Associator and the Ternary Product* for the derived operation, $\tilde P\bigl((\tilde{Q}_3\tilde Q)^{*} - \tilde{Q}_3\tilde Q^{*}\bigr)$; the expansion $(\tilde{Q}_3\tilde Q)^{*} = \tilde Q^{*}\tilde{Q}_3^{*}$ is the anti-multiplicativity of ${}^{*}$. The last clause is the parity theorem of the same article: the two groupings are trilinear on two different modules, $(\tilde P\tilde Q) \star \tilde{Q}_3$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}^{\varsigma}$ and $\tilde P \star (\tilde Q \star \tilde{Q}_3)$ on $\mathbb{B} \times \mathbb{B}^{\varsigma} \times \mathbb{B}$, so the associator is not homogeneous in the third slot.
 
 The associator vanishes exactly when the two groupings agree, that is when the product is associative, and it does not. The quantities that replace it are the ternary product and the two halves of the next section.
 
@@ -193,14 +193,14 @@ the first central and the second vector-valued. The two readings are the conjuga
 **Theorem.** The ternary product attached to the multiplication is
 
 $$
-\{\tilde P,\tilde Q,\tilde R\} = (\tilde P \star \tilde Q) \star \tilde R^{*} = \tilde P\tilde Q^{*}\tilde R ,
+\{\tilde P,\tilde Q,\tilde{Q}_3\} = (\tilde P \star \tilde Q) \star \tilde{Q}_3^{*} = \tilde P\tilde Q^{*}\tilde{Q}_3 ,
 $$
 
 and $\mathbb{B}$ with this ternary product is an **algebraic $J^{*}$-algebra**: the operation is additive in each variable, $\mathbb{C}$-linear in the first and the third and conjugate-linear in the second, and satisfies the Jordan triple identity (*Algebraic J\*-Algebras*).
 
 **Proof.** The first equality is the definition of the ternary product of a sesqualgebra, $\{x,y,z\} = (x \star y) \star z^{*}$, and the second is the derived form of *The Sesquilinear Associator and the Ternary Product*; the unital reading $\{\tilde P,\tilde Q,e_t\} = \tilde P \star \tilde Q$ and $\{e_t,\tilde Q,e_t\} = \tilde Q^{*}$ recovers the multiplication and the involution from the ternary product. The axioms are the theorem that the model $xy^{*}z$ of an associative algebra with a sesquilinear involution is an algebraic $J^{*}$-algebra.
 
-**Remark.** The ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, its identities hold where the binary ones fail, and it is defined by a formula, $\tilde P\tilde Q^{*}\tilde R$, in which the middle slot carries the involution and the two outer slots do not. The operator form, the Lie triple system and the adjoint are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*.
+**Remark.** The ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, its identities hold where the binary ones fail, and it is defined by a formula, $\tilde P\tilde Q^{*}\tilde{Q}_3$, in which the middle slot carries the involution and the two outer slots do not. The operator form, the Lie triple system and the adjoint are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*.
 
 ### The Squares and the Positive Cone
 
@@ -322,7 +322,7 @@ $$
 
 The block is the algebraic home of the pairing of two quantum roles. Its two slots are not interchangeable: the first reads its element plainly and the second through the Hermitian conjugation, so the multiplication pairs an element with the adjoint of another. Its scalar part, $\mathrm{Sc}(\tilde P\tilde Q^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ of §*The Scalar Part of the Multiplication*, is the Hermitian form the physics band writes $\langle\cdot,\cdot\rangle_{*}$. The one-sided unit is that asymmetry seen on the identity, the left action by $e_t$ being the involution itself.
 
-The readings are these, and each belongs to the physics article named; this article stops at the algebra. The square $\tilde Q\tilde Q^{*}$ — its positivity, its determinant and its rank — is read as probability, as the interval and as a count of polarisations in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*. The one-sided unit and the involution sitting in the second slot are read as the state/observable asymmetry and as the internal gauge action in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*. The ternary product $\tilde P\tilde Q^{*}\tilde R$ and its associator are read as a three-field coupling and its order dependence in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
+The readings are these, and each belongs to the physics article named; this article stops at the algebra. The square $\tilde Q\tilde Q^{*}$ — its positivity, its determinant and its rank — is read as probability, as the interval and as a count of polarisations in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*. The one-sided unit and the involution sitting in the second slot are read as the state/observable asymmetry and as the internal gauge action in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*. The ternary product $\tilde P\tilde Q^{*}\tilde{Q}_3$ and its associator are read as a three-field coupling and its order dependence in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 
 ## Summary
 
@@ -332,7 +332,7 @@ $$
 \boxed{\ \text{With the general plain sesquilinear product, } \mathbb{B} \text{ is a sesquilinear } \mathbb{C}\text{-algebra, neither associative nor commutative, with a right unit and the involution } {}^{*}. \ }
 $$
 
-The product has the unit $e_t$ on the right and none on the left, the left action by $e_t$ being the involution; it is neither associative nor commutative, by the collapse theorem, with the witnesses $(e_t,\vec e_x,\vec e_x)$ and $(\vec e_x,\vec e_y)$; the involution exchanges the two slots, $(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P$; the Hermitian and skew-Hermitian elements are the two remarkable subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde R$ makes $\mathbb{B}$ an algebraic $J^{*}$-algebra and recovers the multiplication and the involution by inserting the unit; the square $\tilde Q \star \tilde Q$ is fixed by the involution and its scalar part is the sum of the modulus squares of the coordinates; the two-sided ideals are $0$ and $\mathbb{B}$; and the idempotents of the multiplication are the Hermitian idempotents of the algebra.
+The product has the unit $e_t$ on the right and none on the left, the left action by $e_t$ being the involution; it is neither associative nor commutative, by the collapse theorem, with the witnesses $(e_t,\vec e_x,\vec e_x)$ and $(\vec e_x,\vec e_y)$; the involution exchanges the two slots, $(\tilde P \star \tilde Q)^{*} = \tilde Q \star \tilde P$; the Hermitian and skew-Hermitian elements are the two remarkable subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$; the ternary product $\tilde P\tilde Q^{*}\tilde{Q}_3$ makes $\mathbb{B}$ an algebraic $J^{*}$-algebra and recovers the multiplication and the involution by inserting the unit; the square $\tilde Q \star \tilde Q$ is fixed by the involution and its scalar part is the sum of the modulus squares of the coordinates; the two-sided ideals are $0$ and $\mathbb{B}$; and the idempotents of the multiplication are the Hermitian idempotents of the algebra.
 
 Among the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, **both** products carrying the star are multiplications of a sesqualgebra over $\mathbb{C}$ with the conjugation, and the general plain sesquilinear product is the only one that is the **derived operation** $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ of $\mathbb{B}$ with the conjugate-linear involution ${}^{*}$, in the sense of the two conditions (i) and (ii) of §*Which of the Four Is a Sesquilinear Multiplication*. The general quaternionic sesquilinear product shares the involution in the second slot and fails (ii), reading the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well, and equivalently it has no right unit; the two bilinear products have $\sigma = \mathrm{id}$ and fail (i). The conjugation that does this is the star, the conjugate-linear involution; the natural sign ${}^{\natural}$ is $\mathbb{C}$-linear, so a second slot carrying it gives a bilinear product, which is the caution of *Sesqualgebras* made explicit on the biquaternion algebra. The row of *Comparison Between the Four General Products* that names the sesquilinear kind is read with the definition and not with the derived form, and it holds for both star-products; the derived form is the sharper property proved in this article.
 
@@ -349,8 +349,8 @@ Among the four general products of *The Four General Products of the Biquaternio
 | $\sigma(\tilde Q_2) = e_t \star \tilde Q_2$ | the first row of a product, the involution of the derived operation |
 | $\tilde P \star \tilde Q = \tilde P\tilde Q^{*}$ | the general plain sesquilinear product, the multiplication of the sesqualgebra |
 | $\varepsilon = (1,-1,-1,-1)$ | the signs of the involution on the basis, $e^{*}_\nu = \varepsilon_\nu e_\nu$ |
-| $[\tilde P,\tilde Q,\tilde R]$ | the associator, $(\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R)$ |
-| $\{\tilde P,\tilde Q,\tilde R\} = \tilde P\tilde Q^{*}\tilde R$ | the ternary product, the $J^{*}$-structure |
+| $[\tilde P,\tilde Q,\tilde{Q}_3]$ | the associator, $(\tilde P \star \tilde Q) \star \tilde{Q}_3 - \tilde P \star (\tilde Q \star \tilde{Q}_3)$ |
+| $\{\tilde P,\tilde Q,\tilde{Q}_3\} = \tilde P\tilde Q^{*}\tilde{Q}_3$ | the ternary product, the $J^{*}$-structure |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$ |
 | $C(\mathbb{B})$ | the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$ |
 | $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_t+\tilde\Xi)$ | the idempotents of the multiplication, $\vec u$ a real unit vector |

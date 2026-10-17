@@ -313,7 +313,7 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 
 - Y. Aharonov and A. Casher, "Topological Quantum Effects for Neutral Particles," *Physical Review Letters* **53** (1984) 319–321, for the original prediction of the effect.
 - Y. Aharonov and D. Bohm, "Significance of Electromagnetic Potentials in the Quantum Theory," *Physical Review* **115** (1959) 485–491, for the magnetic dual.
-- X.-G. He and B. H. J. McKellar, "Topological Phase Due to Electric Dipole Moment and Magnetic Monopole Interaction," *Physical Review A* **47** (1993) 3424–3425, and A. Wilkens, "Quantum Phase of a Moving Dipole," *Physical Review Letters* **72** (1994) 5–8, for the He–McKellar–Wilkens effect.
+- A. Wilkens, "Quantum Phase of a Moving Dipole," *Physical Review Letters* **72** (1994) 5–8, for the He–McKellar–Wilkens effect.
 - A. Cimmino, G. I. Opat, A. G. Klein, H. Kaiser, S. A. Werner, M. Arif, and R. Clothier, "Observation of the Topological Aharonov–Casher Phase Shift by Neutron Interferometry," *Physical Review Letters* **63** (1989) 380–383, for the neutron measurement.
 - K. Sangster, E. A. Hinds, S. M. Barnett, and E. Riis, "Measurement of the Aharonov–Casher Phase in an Atomic System," *Physical Review Letters* **71** (1993) 3641–3644, for the atom-interferometry measurement.
 - S. Yanagimachi, M. Kajiro, M. Machiya, and A. Morinaga, "Direct Measurement of the Aharonov–Casher Phase and Tensor Stark Polarizability Using a Calcium Atomic Polarization Interferometer," *Physical Review A* **65** (2002) 042104, for a second atom-interferometry measurement.

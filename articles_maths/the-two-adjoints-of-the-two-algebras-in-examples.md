@@ -8,7 +8,7 @@ Each of the two general products carries an adjoint calculus, one adjoint for ea
 
 **Definition.** Let $L_{\tilde q_3}(\tilde q_4)=\tilde q_3\tilde q_4$ and $R_{\tilde q_3}(\tilde q_4)=\tilde q_4\tilde q_3$ be the left and the right multiplication of the plain product, and let $\langle\cdot,\cdot\rangle$ be a pairing. The **adjoint** of an operator $T$ is the operator $T^{\dagger}$ with
 $$
-\langle T\tilde q_4,\tilde q_5\rangle=\langle\tilde q_4,T^{\dagger}\tilde q_5\rangle \qquad\text{for all }\tilde q_4,\tilde q_5.
+\langle T\tilde q_4,\tilde q_5\rangle=\langle\tilde q_4,T^{\dagger}\tilde q_5\rangle \qquad\text{for all }\tilde q_4,\tilde q_5 .
 $$
 
 **Theorem.** For the plain pairing $\langle\tilde q_1,\tilde q_2\rangle=\operatorname{Sc}(\tilde q_1\tilde q_2)$,

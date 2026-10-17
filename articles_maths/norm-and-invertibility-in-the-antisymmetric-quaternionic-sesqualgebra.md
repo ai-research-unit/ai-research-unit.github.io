@@ -19,7 +19,7 @@ Both notions of the title are therefore **absences**, and they fail for one reas
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde P^{\natural}\tilde Q^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$.
 
-**The results.** The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
+**The results.** The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
 
 ## The Relative Definitions
 
@@ -27,7 +27,7 @@ The word *unit* and the word *inverse* name a product, so the definitions are st
 
 **Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, a **right unit** when $\tilde Q_1\star e=\tilde Q_1$ for every $\tilde Q_1$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
-**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde R$ with $\tilde R\star\tilde Q=e$, **right-invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=e$, and **invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$. Such an $\tilde R$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
+**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde{Q}_2$ with $\tilde{Q}_2\star\tilde Q=e$, **right-invertible** when there is $\tilde{Q}_2$ with $\tilde Q\star\tilde{Q}_2=e$, and **invertible** when there is $\tilde{Q}_2$ with $\tilde Q\star\tilde{Q}_2=\tilde{Q}_2\star\tilde Q=e$. Such an $\tilde{Q}_2$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
 
 Throughout this article the product is the block $\diamond$, and, unqualified, *unit* and *inverse* are read in $\diamond$.
 
@@ -43,7 +43,7 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 
 ## The Absence of an Inverse
 
-**No element of the block is left-invertible, right-invertible or invertible, and the group of units is empty; the one-sided equations $\tilde Q\diamond\tilde R=e_t$ and $\tilde R\diamond\tilde Q=e_t$ have no solution.**
+**No element of the block is left-invertible, right-invertible or invertible, and the group of units is empty; the one-sided equations $\tilde Q\diamond\tilde{Q}_2=e_t$ and $\tilde{Q}_2\diamond\tilde Q=e_t$ have no solution.**
 
 **Corollary (no inverse, no group of units).** No element of the block is left-invertible, right-invertible or invertible, and the group of units of the block is empty.
 
@@ -52,10 +52,10 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 **Proposition (the one-sided equations have no solution).** For every $\tilde Q$ the two equations
 
 $$
-\tilde Q\diamond\tilde R=e_t,\qquad \tilde R\diamond\tilde Q=e_t
+\tilde Q\diamond\tilde{Q}_2=e_t,\qquad \tilde{Q}_2\diamond\tilde Q=e_t
 $$
 
-have no solution $\tilde R$.
+have no solution $\tilde{Q}_2$.
 
 *Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_t$ has scalar part one. A pure vector is never $e_t$, so neither equation holds.
 
@@ -93,21 +93,21 @@ a pure vector, generally nonzero. It is central exactly when it vanishes, so the
 
 ## The Relative Inverse
 
-**For a non-central element $\tilde A$, the multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
+**For a non-central element $\tilde A$, the multiplication $L_{\tilde A}\tilde{Q}_2=\vec A\times\overline{\vec R}$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
 
 The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
 **Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde A$,
 
 $$
-L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\vec A\times\overline{\vec R},
+L_{\tilde A}\tilde{Q}_2=\tilde A\diamond\tilde{Q}_2=\vec A\times\overline{\vec R},
 $$
 
 has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
 
 *Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec A)=0\}$, and the dimension count gives the bijection.
 
-So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
+So the equation $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
 ## The Invertibility Criterion Is Not Transferred
 
@@ -129,7 +129,7 @@ The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\tim
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ | the diagonal, a pure vector |
-| $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
+| $L_{\tilde A}\tilde{Q}_2=\vec A\times\overline{\vec R}$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
 | no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading

@@ -7,7 +7,7 @@ The free particle is the problem that fixes the representation. Every article in
 The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,
 
 $$
-\tilde H = \frac{p^{\mathrm{op}2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{\mathrm{op}2}}{2m}\,e_t \in \mathbb{R}e_t \subset \mathbb{M}_+,
 $$
 
 so it is **central**. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a **scalar** wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.
@@ -51,7 +51,7 @@ $$
 so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:
 
 $$
-\tilde T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{\mathrm{op}2}}{2m}\,e_t .
+T = -\frac{\tilde p^2}{2m} = \frac{\tilde p\,\tilde p^{\natural}}{2m} = \frac{p^{\mathrm{op}2}}{2m}\,e_t .
 $$
 
 This is the first instance of a pattern that recurs throughout the subcategory: **the kinetic term is the biquaternion norm of the momentum**, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.
@@ -61,21 +61,21 @@ This is the first instance of a pattern that recurs throughout the subcategory: 
 The free biquaternion Schrödinger equation is
 
 $$
-i\hbar\,\partial/\partial t \psi = \tilde H \psi,
+i\hbar\,\partial/\partial t \psi = H \psi,
 \qquad
-\tilde H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t ,
+H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t ,
 $$
 
-with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $\tilde H = h_0 e_t$ with $h_0 = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
+with $\psi$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_0 e_t$ with $h_0 = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
 
 $$
 i\hbar\,\partial/\partial t \psi = h_0 e_t \psi = h_0 \psi,
 $$
 
-and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(\tilde H) = h_0 I_2$. The generator of the free evolution,
+and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = h_0 I_2$. The generator of the free evolution,
 
 $$
--i\tilde H/\hbar = \frac{i\hbar}{2m}\nabla^2 e_t \in \mathbb{M}_-,
+-iH/\hbar = \frac{i\hbar}{2m}\nabla^2 e_t \in \mathbb{M}_-,
 $$
 
 lies in the **material sector**, as every generator of a unitary flow does in this framework: it is imaginary in the scalar direction and real in the vector direction, with vanishing vector part here.
@@ -97,7 +97,7 @@ so that $\vec k = k_1 \vec e_x + k_2 \vec e_y + k_3 \vec e_z$ is a real quaterni
 $$
 i\hbar\,\partial/\partial t \psi_{\vec k} = \hbar\omega\,\psi_{\vec k},
 \qquad
-\tilde H \psi_{\vec k} = \frac{\hbar^2 k^2}{2m}\,\psi_{\vec k},
+H \psi_{\vec k} = \frac{\hbar^2 k^2}{2m}\,\psi_{\vec k},
 $$
 
 so the equation is satisfied for every constant $\chi$ provided
@@ -108,7 +108,7 @@ $$
 \omega(\vec k) = \frac{\hbar k^2}{2m}.
 $$
 
-Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\chi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $\tilde H \in \mathbb{C}_{\mathbb{B}}$.
+Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\chi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{C}_{\mathbb{B}}$.
 
 The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_k \exp(i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)) = \hbar k_k \exp(i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$,
 
@@ -202,15 +202,15 @@ The zero divisor cone therefore carries the states, while the positive trace for
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\tilde\psi_0(\vec k)\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega(\vec k) t)),
+\psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\psi_0(\vec k)\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega(\vec k) t)),
 \qquad
-\tilde\psi_0(\vec k) \in \mathbb{B}\tilde\Pi .
+\psi_0(\vec k) \in \mathbb{B}\tilde\Pi .
 $$
 
-The amplitudes $\tilde\psi_0(\vec k)$ may depend on $\vec k$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:
+The amplitudes $\psi_0(\vec k)$ may depend on $\vec k$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:
 
 $$
-\tilde\psi(\vec k, t) = \tilde\psi_0(\vec k)\,\exp(-i\omega(\vec k)t),
+\psi(\vec k, t) = \psi_0(\vec k)\,\exp(-i\omega(\vec k)t),
 $$
 
 because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\psi(0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \Phi_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\chi$ with $\chi$ a fixed constant spinor, then
@@ -223,11 +223,11 @@ for all times, where $\Phi$ solves the **scalar** free Schrödinger equation. Th
 
 ### The continuity equation and the current
 
-The probability current is obtained from the equation and its adjoint. Since $\tilde H$ is Hermitian and central, $\psi^\dagger$ obeys $i\hbar\,\partial/\partial t\,\psi^\dagger = -\psi^\dagger \tilde H$, and combining the two equations gives
+The probability current is obtained from the equation and its adjoint. Since $H$ is Hermitian and central, $\psi^\dagger$ obeys $i\hbar\,\partial/\partial t\,\psi^\dagger = -\psi^\dagger H$, and combining the two equations gives
 
 $$
 \partial/\partial t\!\left(\psi^\dagger\psi\right)
-= \frac{1}{i\hbar}\left(\psi^\dagger \tilde H\psi - (\tilde H\psi)^\dagger\psi\right)
+= \frac{1}{i\hbar}\left(\psi^\dagger H\psi - (H\psi)^\dagger\psi\right)
 = \frac{\hbar}{2mi}\sum_k\left(\psi^\dagger \partial^2/\partial Q_k^2\,\psi - (\partial^2/\partial Q_k^2\,\psi)^\dagger\psi\right).
 $$
 
@@ -360,7 +360,7 @@ in which the kernel acts on the body of the field and multiplies the module fact
 The evolution operator is the exponential of the generator,
 
 $$
-\tilde U(t) = \exp(-i\tilde H t/\hbar) = \exp(-i p^{\mathrm{op}2} t/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
+\tilde U(t) = \exp(-iH t/\hbar) = \exp(-i p^{\mathrm{op}2} t/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
 $$
 
 a central unitary element in the framework's sense,
@@ -389,8 +389,8 @@ Two further structural points belong to this section.
 
 **What the biquaternion notation provides.**
 
-- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $\tilde H = h_0 e_t \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $\tilde H \in \mathbb{C}_{\mathbb{B}}$.
-- **The kinetic term as a biquaternion norm.** $\tilde T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
+- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = h_0 e_t \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{C}_{\mathbb{B}}$.
+- **The kinetic term as a biquaternion norm.** $T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
 - **A material-sector location for the dispersion.** The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$, and its biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
 - **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ is a property of the trace pairing on $\mathbb{M}_+$, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
@@ -414,15 +414,15 @@ Two further structural points belong to this section.
 
 ## Summary
 
-The free biquaternion Schrödinger equation is $i\hbar\partial/\partial t\,\psi = \tilde H\psi$ with
+The free biquaternion Schrödinger equation is $i\hbar\partial/\partial t\,\psi = H\psi$ with
 
 $$
-\tilde H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
+H = \frac{p^{\mathrm{op}2}}{2m}\,e_t = \frac{\tilde p\tilde p^{\natural}}{2m} = -\frac{\tilde p^2}{2m} \in \mathbb{R}e_t \subset \mathbb{M}_+,
 \qquad
 \tilde p = -i\hbar\nabla,
 $$
 
-and the kinetic energy is the **biquaternion norm of the momentum**. Because $\tilde H$ is central, the free dynamics is a scalar dynamics: plane waves $\psi_{\vec k} = \chi \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ have the dispersion $\omega = \hbar k^2/2m$ for every constant module element $\chi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-i\tilde H/\hbar$ lies in the material sector $\mathbb{M}_-$.
+and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\psi_{\vec k} = \chi \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ have the dispersion $\omega = \hbar k^2/2m$ for every constant module element $\chi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-iH/\hbar$ lies in the material sector $\mathbb{M}_-$.
 
 The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\psi^\dagger\psi)$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the trace pairing, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial/\partial Q_k\,\psi - (\partial/\partial Q_k\,\psi)^\dagger\psi)$, pairing an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
 
@@ -432,7 +432,7 @@ $$
 K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \left(\frac{m}{2\pi i\hbar t}\right)^{3/2}\exp\!\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t}\right)
 $$
 
-is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-i\tilde Ht/\hbar)$ is a central unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
+is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-iHt/\hbar)$ is a central unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
 
 ## Summary of Notation
 
@@ -448,8 +448,8 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\tilde p = -i\hbar\nabla = \vec e_k p_k$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{M}_+$ |
 | $p_k = -i\hbar\partial/\partial Q_k$ | Momentum component |
 | $\tilde p^2 = -p^{\mathrm{op}2} e_t$, $\tilde p\tilde p^{\natural} = p^{\mathrm{op}2} e_t$ | Quaternion square and biquaternion norm of the momentum |
-| $\tilde H = p^{\mathrm{op}2} e_t/2m$ | Free Hamiltonian; central |
-| $\tilde T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
+| $H = p^{\mathrm{op}2} e_t/2m$ | Free Hamiltonian; central |
+| $T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
 | $\psi_{\vec k} = \chi \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ | Plane wave; $\chi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k) = \hbar k^2/2m$ | Dispersion relation |
 | $\vec v_g = \partial\omega/\partial\vec k = \hbar\vec k/m$ | Group velocity; classical velocity |
@@ -461,7 +461,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $s_0$, $s(t) = s_0\sqrt{1+(\hbar t/2ms_0^2)^2}$ | Initial and time-dependent density width |
 | $\tau = 2ms_0^2/\hbar$ | Spreading time |
 | $K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = (m/2\pi i\hbar t)^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t)$ | Free propagator; central |
-| $\tilde U(t) = \exp(-i\tilde Ht/\hbar)$ | Free evolution; central unitary |
+| $\tilde U(t) = \exp(-iHt/\hbar)$ | Free evolution; central unitary |
 | $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

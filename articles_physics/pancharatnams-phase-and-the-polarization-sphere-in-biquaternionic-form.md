@@ -241,7 +241,7 @@ $$
 =-\frac12\,\Omega_{\text{enclosed}} .
 $$
 
-This is **Pancharatnam's half-solid-angle rule**. The factor $\tfrac12$ is the signature of the double cover: the curvature is half the area form, so the total flux over the whole sphere is $2\pi$ rather than $4\pi$, and the connection is the vector potential of a half-strength monopole at the centre of the Poincaré sphere. The same factor appeared in the companion article on the Berry phase and, in the double cover of the rotor, in the rigid-body article.
+This is **Pancharatnam's half-solid-angle rule**. The factor $\tfrac12$ is the signature of the double cover: the curvature is half the area form, so the total flux over the whole sphere is $2\pi$ rather than $4\pi$, and the connection is the vector potential of a half-strength point degeneracy at the centre of the Poincaré sphere. The same factor appeared in the companion article on the Berry phase and, in the double cover of the rotor, in the rigid-body article.
 
 ### Verification on the Sphere
 

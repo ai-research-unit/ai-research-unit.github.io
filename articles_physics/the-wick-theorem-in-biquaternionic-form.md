@@ -160,7 +160,7 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 $$
 \vec\Upsilon_x\vec\Upsilon_y = e_t - \vec\Upsilon_y\vec\Upsilon_x = e_t - \tilde\Pi_- = \tilde\Pi_+,
 $$
-whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_+^2)=\mathrm{Tr}(\tilde\Pi_+)=1$. Normal ordering moves the creation operator to the left and produces $:\tilde a\tilde a^\dagger:\,=-\tilde a^\dagger\tilde a=-\tilde\Pi_-$. Adding back the contraction gives $-\tilde\Pi_-+e_t=e_t-\tilde\Pi_-$, which is the left-hand side.
+whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_+^2)=\mathrm{Tr}(\tilde\Pi_+)=1$. Normal ordering moves the creation operator to the left and produces $:\vec\Upsilon_x\vec\Upsilon_y:\,=-\vec\Upsilon_y\vec\Upsilon_x=-\tilde\Pi_-$. Adding back the contraction gives $-\tilde\Pi_-+e_t=e_t-\tilde\Pi_-$, which is the left-hand side.
 
 **Why the higher identities are exact.** No induction is needed. The identities $\vec\Upsilon_x^2=0$ and $(\vec\Upsilon_y)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$
@@ -182,16 +182,16 @@ The complete table of the four-point function is the following, in which each en
 
 | $\langle\,\cdot\,\rangle_t$ | direct | pairing sum |
 |---|---|---|
-| $\langle \tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ | $1$ | $1\cdot 1 = 1$ |
-| $\langle \tilde a\tilde a^\dagger\tilde a^\dagger\tilde a\rangle$ | $0$ | $1\cdot 0 = 0$ |
-| $\langle \tilde a^\dagger\tilde a\tilde a^\dagger\tilde a\rangle$ | $0$ | $0\cdot 0 = 0$ |
-| $\langle \tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ | $0$ | $1\cdot 1 - 1\cdot 1 = 0$ |
-| $\langle \tilde a^\dagger\tilde a^\dagger\tilde a\tilde a\rangle$ | $0$ | $0$ |
-| $\langle \tilde a^\dagger\tilde a\tilde a\tilde a^\dagger\rangle$ | $0$ | $0$ |
+| $\langle \vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\rangle$ | $1$ | $1\cdot 1 = 1$ |
+| $\langle \vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_y\vec\Upsilon_x\rangle$ | $0$ | $1\cdot 0 = 0$ |
+| $\langle \vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\rangle$ | $0$ | $0\cdot 0 = 0$ |
+| $\langle \vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_y\rangle$ | $0$ | $1\cdot 1 - 1\cdot 1 = 0$ |
+| $\langle \vec\Upsilon_y\vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_x\rangle$ | $0$ | $0$ |
+| $\langle \vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon_y\rangle$ | $0$ | $0$ |
 
-Two entries carry the sign. For $\langle\tilde a\tilde a\tilde a^\dagger\tilde a^\dagger\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle \tilde{Q}_1\tilde{Q}_3\rangle\langle \tilde{Q}_2\tilde{Q}_4\rangle$ carries the minus and $\langle \tilde{Q}_1\tilde{Q}_4\rangle\langle \tilde{Q}_2\tilde{Q}_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\tilde a^2=0$. For $\langle\tilde a\tilde a^\dagger\tilde a\tilde a^\dagger\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $\tilde\Pi_+^2=\tilde\Pi_+$ with vacuum expectation $1$.
+Two entries carry the sign. For $\langle\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_y\rangle$ the two complete pairings are $(1,3)(2,4)$ and $(1,4)(2,3)$, with relative sign $-1$: in the expansion of the theorem the contraction $\langle \tilde{Q}_1\tilde{Q}_3\rangle\langle \tilde{Q}_2\tilde{Q}_4\rangle$ carries the minus and $\langle \tilde{Q}_1\tilde{Q}_4\rangle\langle \tilde{Q}_2\tilde{Q}_3\rangle$ the plus, since the pairing $(1,3)(2,4)$ requires a single transposition of the four fermionic factors while $(1,4)(2,3)$ is even. Their values are $1\cdot1$ and $1\cdot1$, so the sum is $-1+1=0$, in agreement with the direct value $\vec\Upsilon_x^2=0$. For $\langle\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\rangle$ the only surviving pairing is $(1,2)(3,4)$, of value $1$, and the direct value is $\tilde\Pi_+^2=\tilde\Pi_+$ with vacuum expectation $1$.
 
-**The six-point function.** The six-point contraction $\langle(\tilde a\tilde a^\dagger)^3\rangle_t$ is $1$: $(\tilde a\tilde a^\dagger)^3 = \tilde\Pi_+^3=\tilde\Pi_+$, and the pairing sum has the single nonvanishing complete pairing $(1,2)(3,4)(5,6)$ with sign $+1$ and value $1$. The six-point contractions with any pair in the reversed order vanish, as the direct computation confirms. The pattern is the general one: in the one-mode algebra the only nonvanishing contractible word is the alternating one, and its value is the product of contractions.
+**The six-point function.** The six-point contraction $\langle(\vec\Upsilon_x\vec\Upsilon_y)^3\rangle_t$ is $1$: $(\vec\Upsilon_x\vec\Upsilon_y)^3 = \tilde\Pi_+^3=\tilde\Pi_+$, and the pairing sum has the single nonvanishing complete pairing $(1,2)(3,4)(5,6)$ with sign $+1$ and value $1$. The six-point contractions with any pair in the reversed order vanish, as the direct computation confirms. The pattern is the general one: in the one-mode algebra the only nonvanishing contractible word is the alternating one, and its value is the product of contractions.
 
 ## The Contraction Is the Propagator
 
@@ -229,7 +229,7 @@ and its expansion is contracted by precisely the theorem above: each term of the
 
 **Established (algebra).**
 - The mode operators generate the four-real-dimensional subalgebra $\mathcal{A}_{\mathrm{tr}} = \mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,\vec e_y,i\vec e_z\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, a real form of $\mathbb{B}$; it is closed under multiplication, and the vacuum projector lies in it.
-- The one-mode Wick identity $\tilde a\tilde a^\dagger = \,:\tilde a\tilde a^\dagger:\,+\langle\tilde a\tilde a^\dagger\rangle_t e_t$, with $:\tilde a\tilde a^\dagger:\,=-\tilde\Pi_-$ and $\langle\tilde a\tilde a^\dagger\rangle_t=1$, holds as an identity in $\mathbb{B}$, and every $2m$-point one-mode contraction equals the signed sum over complete pairings.
+- The one-mode Wick identity $\vec\Upsilon_x\vec\Upsilon_y = \,:\vec\Upsilon_x\vec\Upsilon_y:\,+\langle\vec\Upsilon_x\vec\Upsilon_y\rangle_t e_t$, with $:\vec\Upsilon_x\vec\Upsilon_y:\,=-\tilde\Pi_-$ and $\langle\vec\Upsilon_x\vec\Upsilon_y\rangle_t=1$, holds as an identity in $\mathbb{B}$, and every $2m$-point one-mode contraction equals the signed sum over complete pairings.
 - The fermionic sign is implemented by $(-1)^F=i\vec e_z\in\mathcal{A}_{\mathrm{tr}}$, with $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$.
 
 **Standard, and transcribed.**
@@ -259,7 +259,7 @@ $$
 \qquad
 \langle \vec\Upsilon_y\vec\Upsilon_x\rangle_t = 0 ,
 $$
-and every $2m$-point one-mode contraction is the signed sum over complete pairings, with the relative sign supplied by the parity of the pairing. The four-point table and the six-point value were recomputed directly in the matrix representation and agree with the pairing sums to machine precision; the nonzero entries are $\langle(\tilde a\tilde a^\dagger)^k\rangle_t=1$, and the alternating word is the only contractible one.
+and every $2m$-point one-mode contraction is the signed sum over complete pairings, with the relative sign supplied by the parity of the pairing. The four-point table and the six-point value were recomputed directly in the matrix representation and agree with the pairing sums to machine precision; the nonzero entries are $\langle(\vec\Upsilon_x\vec\Upsilon_y)^k\rangle_t=1$, and the alternating word is the only contractible one.
 
 For a field the theorem is standard and transcribed: time-ordered products equal normal-ordered products plus all contractions, the contractions are the Feynman propagators of *The Feynman Propagator in Biquaternionic Form*, and the fermionic sign is implemented by the $\mathbb{Z}_2$ grading whose one-mode realization is $(-1)^F=i\vec e_z$. The field's fermion parity and its mode algebra lie outside $\mathbb{B}$, in the module on which the field acts; that gap is inherited from the Fock article and is not closed here.
 

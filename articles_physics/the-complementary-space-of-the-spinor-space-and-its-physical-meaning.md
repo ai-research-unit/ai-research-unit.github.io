@@ -99,7 +99,7 @@ It is computed on the four matrix units. The form is the normalised Hilbert–Sc
 
 $$
 \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_*=\langle\vec\Upsilon_x,\vec\Upsilon_x\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,\qquad
-\langle\tilde P,\tilde R\rangle_*=0\ \text{for}\ \tilde P\neq\tilde R\ \text{among the four}.
+\langle\tilde P,\tilde Q_1\rangle_*=0\ \text{for}\ \tilde P\neq\tilde Q_1\ \text{among the four}.
 $$
 
 Every element of $\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is therefore orthogonal to every element of $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, and since both are two-dimensional while $\mathbb{B}$ is four-dimensional,
@@ -147,13 +147,13 @@ the same as on $S$. So the complement is a two-dimensional Hilbert space with th
 A general element of the complement is
 
 $$
-\tilde\phi=\phi_1\tilde\Pi_-+\phi_2\vec\Upsilon_x,\qquad \phi_1,\phi_2\in\mathbb{C},
+\phi=\phi_1\tilde\Pi_-+\phi_2\vec\Upsilon_x,\qquad \phi_1,\phi_2\in\mathbb{C},
 $$
 
 with norm
 
 $$
-\langle\tilde\phi,\tilde\phi\rangle_*=\tfrac12\bigl(|\phi_1|^2+|\phi_2|^2\bigr),
+\langle\phi,\phi\rangle_*=\tfrac12\bigl(|\phi_1|^2+|\phi_2|^2\bigr),
 $$
 
 the same expression as for the spinor of $S$ with the coefficients $(\phi_1,\phi_2)$ carried by the other pair of basis elements. The complement has its own two amplitudes, its own two-component coordinate system, and its own normalisation.
@@ -315,7 +315,7 @@ The claims are recomputed on the basis $(\tilde\Pi_+,\vec\Upsilon_y,\vec\Upsilon
 
 - **The idempotents and the complement.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, so $\tilde\Pi_-=e_t-\tilde\Pi_+$.
 - **The complement is a left ideal.** Every left multiplication maps $\{\tilde\Pi_-,\vec\Upsilon_x\}$ into $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, and the action matrices are those of §*The Multiplication of the Complement*.
-- **The two complements coincide.** $\langle\tilde P,\tilde R\rangle_*=0$ for $\tilde P\in\{\tilde\Pi_+,\vec\Upsilon_y\}$ and $\tilde R\in\{\tilde\Pi_-,\vec\Upsilon_x\}$, and $\dim_{\mathbb{C}}S=\dim_{\mathbb{C}}\mathbb{B}\tilde\Pi_-=2$, so $S^{\perp}=\mathbb{B}\tilde\Pi_-$.
+- **The two complements coincide.** $\langle\tilde P,\tilde Q_1\rangle_*=0$ for $\tilde P\in\{\tilde\Pi_+,\vec\Upsilon_y\}$ and $\tilde Q_1\in\{\tilde\Pi_-,\vec\Upsilon_x\}$, and $\dim_{\mathbb{C}}S=\dim_{\mathbb{C}}\mathbb{B}\tilde\Pi_-=2$, so $S^{\perp}=\mathbb{B}\tilde\Pi_-$.
 - **The four units are orthonormal up to $\tfrac12$.** $\langle\tilde P,\tilde P\rangle_*=\tfrac12$ on each of the four matrix units and $0$ between any two distinct ones, so the form is $\tfrac12$ times the Hilbert–Schmidt form of the matrix model.
 - **The conjugate reaches it, the adjoint does not.** $\bar{\tilde\Pi_+}=\tilde\Pi_-$ and $\bar{\vec\Upsilon_y}=-\vec\Upsilon_x$, so $\bar S=\mathbb{B}\tilde\Pi_-$; while $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\vec\Upsilon_y^{*}=\vec\Upsilon_x$, so $S^{*}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}=\tilde\Pi_+\mathbb{B}\neq\mathbb{B}\tilde\Pi_-$.
 - **Right multiplication exchanges the ideals.** $\tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, so $S\vec\Upsilon_x=\mathbb{B}\tilde\Pi_-$; symmetrically $\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y$, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, so $(\mathbb{B}\tilde\Pi_-)\vec\Upsilon_y=\mathbb{B}\tilde\Pi_+$.

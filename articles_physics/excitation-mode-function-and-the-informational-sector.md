@@ -74,25 +74,25 @@ counts the quanta, with $[N,a^{\mathrm{fop}\dagger}_r]=+a^{\mathrm{fop}\dagger}_
 For a single fermionic mode this can be reduced to an object of the finite-dimensional algebra, because $\mathbb{B}\cong M_2(\mathbb{C})$ is exactly the operator algebra of one fermionic mode. The parent Fock-space article exhibits the ladder operators in the algebra as the matrix units
 
 $$
-\tilde a=\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad
-\tilde a^\dagger=\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad
+\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-which satisfy $\{\tilde a,\tilde a^\dagger\}=e_t$ and $\tilde a^2=(\tilde a^\dagger)^2=0$. The occupation-number operator of the single mode is then
+which satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^2=(\vec\Upsilon_y)^2=0$. The occupation-number operator of the single mode is then
 
 $$
-\tilde\Pi_-=\tilde a^\dagger\tilde a=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),
+\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),
 $$
 
 and the vacuum projector is its complement
 
 $$
-e_t-\tilde\Pi_-=\tilde a\,\tilde a^\dagger=\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z).
+e_t-\tilde\Pi_-=\vec\Upsilon_x\,\vec\Upsilon_y=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z).
 $$
 
 These are the one-mode operators of the Fock-space and harmonic-oscillator articles, written in the module realization of this article.
 
-Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\tilde a^\dagger=x^{*}=y\neq\tilde a$ and $\tilde a^\dagger\neq-\tilde a$, since $\tilde a$ has the Hermitian part $\tfrac12 i\vec e_x$ and the anti-Hermitian part $-\tfrac12 \vec e_y$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde\Pi_-$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde\Pi_-^2=\tilde\Pi_-$ and $\tilde\Pi_-^{*}=\tilde\Pi_-$. It is a projector, and it is the operator form of the occupation "one". The pair $\{e_t-\tilde\Pi_-,\tilde\Pi_-\}$ is the pair of orthogonal idempotents $\tilde\Pi_+,\tilde\Pi_-$ whose Peirce decomposition splits the spinor module into its two components.
+Two remarks about the operators are needed before the sector question is posed. First, the **excitation operator is not Hermitian**: $\vec\Upsilon_y=x^{*}=y\neq\vec\Upsilon_x$ and $\vec\Upsilon_y\neq-\vec\Upsilon_x$, since $\vec\Upsilon_x$ has the Hermitian part $\tfrac12 i\vec e_x$ and the anti-Hermitian part $-\tfrac12 \vec e_y$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde\Pi_-$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an **idempotent**: $\tilde\Pi_-^2=\tilde\Pi_-$ and $\tilde\Pi_-^{*}=\tilde\Pi_-$. It is a projector, and it is the operator form of the occupation "one". The pair $\{e_t-\tilde\Pi_-,\tilde\Pi_-\}$ is the pair of orthogonal idempotents $\tilde\Pi_+,\tilde\Pi_-$ whose Peirce decomposition splits the spinor module into its two components.
 
 ## Three Objects, Three Homes
 
@@ -101,7 +101,7 @@ The phrase "an excitation and its state" packs three different objects together,
 | Object | Definition | Algebraic home |
 |---|---|---|
 | Mode function | A definite solution $w^{(r)}(\vec p)\exp(-ip\cdot x)$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{M}_-)$ (Maxwell polarization) |
-| Excitation operator | $\tilde a^\dagger$ (or $a^{\mathrm{fop}\dagger}_r(\vec p)$) | Neither $\mathbb{M}_+$ nor $\mathbb{M}_-$; not Hermitian |
+| Excitation operator | $\vec\Upsilon_y$ (or $a^{\mathrm{fop}\dagger}_r(\vec p)$) | Neither $\mathbb{M}_+$ nor $\mathbb{M}_-$; not Hermitian |
 | Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}$ | State vector: the module; density matrix and $\tilde\Pi_-$: $\mathbb{M}_+$ (one fermionic mode) |
 
 The third row is the assertion that needs care. The **state vector** $|\psi\rangle=\alpha|0\rangle+\beta|1\rangle$ of one mode is an element of the two-dimensional occupation Hilbert space, which is the fundamental module $S\cong\mathbb{C}^2$, not the algebra; it is not an element of $\mathbb{M}_+$. It is the **density matrix**
@@ -128,14 +128,14 @@ $$
 $$
 and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$. The set of such $\tilde{Ϛ}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
 
-**A4. The ladder operators are not in either sector.** For $\tilde a=\tfrac12(i\vec e_x-\vec e_y)$ one has $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)=\tilde a^\dagger\neq\tilde a$, and $\tilde a^\dagger\neq-\tilde a$; splitting into Hermitian and anti-Hermitian parts,
+**A4. The ladder operators are not in either sector.** For $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ one has $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)\neq\vec\Upsilon_x$, and $\vec\Upsilon_y\neq-\vec\Upsilon_x$; splitting into Hermitian and anti-Hermitian parts,
 $$
-\tilde a=\tfrac12 i\vec e_x+\big(-\tfrac12 \vec e_y\big),\qquad
-\tilde a^\dagger=\tfrac12 i\vec e_x+\tfrac12 \vec e_y,
+\vec\Upsilon_x=\tfrac12 i\vec e_x+\big(-\tfrac12 \vec e_y\big),\qquad
+\vec\Upsilon_y=\tfrac12 i\vec e_x+\tfrac12 \vec e_y,
 $$
 with the first term of each in $\mathbb{M}_+$ and the second in $\mathbb{M}_-$. So the excitation operator is a sum of one element of each sector and is an element of neither. This is not a defect; it is the statement that raising and lowering are not observables.
 
-**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\tilde a,\tilde a^\dagger\}=\vec\Upsilon_x\vec\Upsilon_y+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_++\tilde\Pi_-=e_t$, $\tilde a^2=\vec\Upsilon_x^2=0$, $(\tilde a^\dagger)^2=y^2=0$, and $\tilde\Pi_-=\tilde a^\dagger\tilde a=yx$. The bosonic relation $[\tilde a,\tilde a^\dagger]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
+**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\vec\Upsilon_x,\vec\Upsilon_y\}=\vec\Upsilon_x\vec\Upsilon_y+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_++\tilde\Pi_-=e_t$, $\vec\Upsilon_x^2=0$, $(\vec\Upsilon_y)^2=y^2=0$, and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=yx$. The bosonic relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
 
 Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about **one mode**. Both $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the **density matrix** and the **number operator**, not about the state vector. The state vector is in the module, and the module is not $\mathbb{M}_+$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.
 
@@ -185,7 +185,7 @@ The mismatch is a real finding and is stated as one. It does not contradict the 
 
 The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{M}_+$.
 
-The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\tilde\psi=\psi_1\tilde\Pi_++\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,x$, using $y^{*}=x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde\psi^{*}=\tilde\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,x,y$,
+The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\psi=\psi_1\tilde\Pi_++\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,x$, using $y^{*}=x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\psi^{*}=\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,x,y$,
 
 $$
 \psi_2=0\qquad\text{and}\qquad \psi_1=\overline{\psi_1}\ \ (\psi_1\in\mathbb{R}).
@@ -205,7 +205,7 @@ There is an interpretation of the mode function that belongs here as an interpre
 
 ## Summary
 
-An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$ and its density matrix $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
+An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$ and its density matrix $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
 
 The mode function is not in $\mathbb{M}_+$: the solution space meets the sector in the single real ray $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$, so away from the projector a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.
 
@@ -227,8 +227,8 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 | $\mathbb{B}\tilde\Pi_+=\{ \psi_1\tilde\Pi_++\psi_2y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$ |
 | $w^{(r)}(\vec p)\exp(-ip\cdot x)$, $v^{(r)}(\vec p)\exp(+ip\cdot x)$ | Mode functions (positive/negative frequency) |
 | $a^{\mathrm{fop}\dagger}_r(\vec p)$, $a^{\mathrm{fop}}_r(\vec p)$ | Excitation (creation) and annihilation operators |
-| $\tilde a=x$, $\tilde a^\dagger=y$ | One-mode ladder operators in $\mathbb{B}$ |
-| $\tilde\Pi_-=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec u)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
+| $\vec\Upsilon_x=x$, $\vec\Upsilon_y=y$ | One-mode ladder operators in $\mathbb{B}$ |
+| $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec u)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\mathrm{Sc}(\tilde P\tilde H)$ | Hilbert–Schmidt pairing on $\mathbb{M}_+$ (positive definite) |

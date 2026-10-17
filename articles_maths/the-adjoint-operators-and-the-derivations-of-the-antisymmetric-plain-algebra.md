@@ -96,8 +96,8 @@ for all $\tilde P,\tilde Q$; the derivations form a Lie algebra $\operatorname{D
 **Theorem.** Every adjoint is a derivation, because the bracket is the half-commutator of an associative product and the associativity gives the Leibniz rule:
 
 $$
-\operatorname{ad}_{\tilde P}(\tilde Q\wedge\tilde R)
-=\operatorname{ad}_{\tilde P}\tilde Q\wedge\tilde R+\tilde Q\wedge\operatorname{ad}_{\tilde P}\tilde R.
+\operatorname{ad}_{\tilde P}(\tilde Q\wedge\tilde Q_2)
+=\operatorname{ad}_{\tilde P}\tilde Q\wedge\tilde Q_2+\tilde Q\wedge\operatorname{ad}_{\tilde P}\tilde Q_2.
 $$
 
 The inner derivations are the adjoints of the vector subspace; the adjoints of the centre vanish, so
@@ -108,7 +108,7 @@ $$
 
 of complex dimension three and real dimension six.
 
-*Proof.* The Leibniz rule for the commutator is the associativity of the product, $\operatorname{ad}_{\tilde P}(\tilde Q\tilde R)=(\operatorname{ad}_{\tilde P}\tilde Q)\tilde R+\tilde Q(\operatorname{ad}_{\tilde P}\tilde R)$, and the halving carries it to the bracket; this is *Associative Algebras* and *Derivations of a Lie Algebra*. The inner derivations are the image of the adjoint representation, which by the previous section has kernel the centre, so its image is isomorphic to $\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$; the isomorphism is $\operatorname{ad}_{[\,\tilde P,\tilde Q\,]}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$.
+*Proof.* The Leibniz rule for the commutator is the associativity of the product, $\operatorname{ad}_{\tilde P}(\tilde Q\tilde Q_2)=(\operatorname{ad}_{\tilde P}\tilde Q)\tilde Q_2+\tilde Q(\operatorname{ad}_{\tilde P}\tilde Q_2)$, and the halving carries it to the bracket; this is *Associative Algebras* and *Derivations of a Lie Algebra*. The inner derivations are the image of the adjoint representation, which by the previous section has kernel the centre, so its image is isomorphic to $\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$; the isomorphism is $\operatorname{ad}_{[\,\tilde P,\tilde Q\,]}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$.
 
 **Remark.** **The inner derivations are the adjoints, and there are as many of them as the derived algebra has dimensions: three complex and six real.** The identification of the inner derivations with $\mathfrak{sl}(2,\mathbb{C})$ is the same identification as the one of the derived algebra, read through the adjoint representation; the two are the same space, one acting on the algebra and one acted upon.
 

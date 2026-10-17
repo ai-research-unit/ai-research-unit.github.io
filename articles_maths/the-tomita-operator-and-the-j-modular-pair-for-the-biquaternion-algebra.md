@@ -68,7 +68,7 @@ $$
 \omega(L_{\tilde Q})=\langle\xi,\tilde Q\rangle=\mathrm{Sc}(\tilde Q)=Q_t ,
 $$
 
-and it is tracial, $\omega(L_{\tilde Q}L_{\tilde R})=(QR)_0=(RQ)_0=\omega(L_{\tilde R}L_{\tilde Q})$, because $\mathrm{Sc}(\tilde Q\tilde R)=\mathrm{Sc}(\tilde R\tilde Q)$; the functional $\mathrm{Sc}$ is the normalised trace of $\mathbb{B}$, $2\,\mathrm{Sc}(\tilde Q)=\mathrm{Tr}\,\mathsf{M}_2(\tilde Q)$ in the matrix model. So the vector state of the unit **is the trace**, and the modular flow of the pair is the identity flow. The triviality is a property of the vector and not of the algebra: $\mathcal{M}\cong M_2(\mathbb{C})$ is a factor whose trace is not the vector state of a general $\xi$, and a cyclic and separating vector other than a scalar multiple of $e_t$ carries a non-tracial vector state and hence a non-trivial modular operator.
+and it is tracial, $\omega(L_{\tilde Q}L_{\tilde Q_1})=(QR)_0=(RQ)_0=\omega(L_{\tilde Q_1}L_{\tilde Q})$, because $\mathrm{Sc}(\tilde Q\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde Q)$; the functional $\mathrm{Sc}$ is the normalised trace of $\mathbb{B}$, $2\,\mathrm{Sc}(\tilde Q)=\mathrm{Tr}\,\mathsf{M}_2(\tilde Q)$ in the matrix model. So the vector state of the unit **is the trace**, and the modular flow of the pair is the identity flow. The triviality is a property of the vector and not of the algebra: $\mathcal{M}\cong M_2(\mathbb{C})$ is a factor whose trace is not the vector state of a general $\xi$, and a cyclic and separating vector other than a scalar multiple of $e_t$ carries a non-tracial vector state and hence a non-trivial modular operator.
 
 ## The Modular Conjugation and the Two Sides
 

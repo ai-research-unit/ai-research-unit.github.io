@@ -239,7 +239,7 @@ $$
 \mathbb{B} = \tilde\Pi\mathbb{B}\tilde\Pi \oplus \tilde\Pi\mathbb{B}f \oplus f\mathbb{B}\tilde\Pi \oplus f\mathbb{B}f ,
 $$
 
-and each of the four Peirce spaces is a complex line, so that the decomposition is $\mathbb{B} = \mathbb{C}\tilde\Pi \oplus \mathbb{C}\tilde R \oplus \mathbb{C}\tilde T \oplus \mathbb{C}f$ with $\mathbb{C}\tilde R = \tilde\Pi\mathbb{B}f$ and $\mathbb{C}\tilde T = f\mathbb{B}\tilde\Pi$. For $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec e_x)$ the lines are spanned by $\tilde\Pi$, $\vec e_z - i\vec e_y$, $\vec e_z + i\vec e_y$ and $f$, and grouped in pairs they are the four minimal one-sided ideals
+and each of the four Peirce spaces is a complex line, so that the decomposition is $\mathbb{B} = \mathbb{C}\tilde\Pi \oplus \mathbb{C}\tilde Q_5 \oplus \mathbb{C}\tilde T \oplus \mathbb{C}f$ with $\mathbb{C}\tilde Q_5 = \tilde\Pi\mathbb{B}f$ and $\mathbb{C}\tilde T = f\mathbb{B}\tilde\Pi$. For $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec e_x)$ the lines are spanned by $\tilde\Pi$, $\vec e_z - i\vec e_y$, $\vec e_z + i\vec e_y$ and $f$, and grouped in pairs they are the four minimal one-sided ideals
 
 $$
 \mathbb{B}\tilde\Pi = \mathbb{C}\tilde\Pi \oplus \mathbb{C}(\vec e_z + i\vec e_y) , \quad \mathbb{B}f = \mathbb{C}f \oplus \mathbb{C}(\vec e_z - i\vec e_y) , \quad \tilde\Pi\mathbb{B} = \mathbb{C}\tilde\Pi \oplus \mathbb{C}(\vec e_z - i\vec e_y) , \quad f\mathbb{B} = \mathbb{C}f \oplus \mathbb{C}(\vec e_z + i\vec e_y) .

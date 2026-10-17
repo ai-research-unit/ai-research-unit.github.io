@@ -285,7 +285,7 @@ $$
 \tfrac12\left(\nabla\tilde{F} - \tilde{F}^{\sim}\nabla\right) = 0 .
 $$
 
-The **reversal-even** combination is Proca's equation; the **reversal-odd** combination is the statement that there are no magnetic monopoles. The mass term is reversal-even and the monopole-free constraint is reversal-odd, so the two are halves of one equation, and the Maxwell equation of the companion article is what remains when the even half is massless. The splitting requires the potential to be ordinal-invariant — this is the assumption the source notes is made silently when Maxwell's equation is first written — and it is the same assumption under which the field strength is the vector part of the conjugate gradient of the potential.
+The **reversal-even** combination is Proca's equation; the **reversal-odd** combination is the vanishing of the odd source. The mass term is reversal-even and that constraint is reversal-odd, so the two are halves of one equation, and the Maxwell equation of the companion article is what remains when the even half is massless. The splitting requires the potential to be ordinal-invariant — this is the assumption the source notes is made silently when Maxwell's equation is first written — and it is the same assumption under which the field strength is the vector part of the conjugate gradient of the potential.
 
 
 ### The two parities and the two massive particles
@@ -299,7 +299,7 @@ This is Gürsey's theorem, restated: the wave equations of **all** scalar and ve
 Three things that look like separate axioms become one.
 
 - **Why the Proca equation and the corpus's Maxwell equation share their left-hand side.** They are the same descendant in massive and massless form; the mass touches only the right-hand side, which is why the two equations differ there and nowhere else.
-- **Why the monopole-free statement is not an independent law.** It is the reversal-odd part of the same equation, not a second equation imposed on the field from outside.
+- **Why the vanishing of the odd source is not an independent law.** It is the reversal-odd part of the same equation, not a second equation imposed on the field from outside.
 - **Why the classical layer has so few first-order systems.** Dirac, Proca, Maxwell and the massive pseudovector all reduce to Lanczos's pair; the algebra's classical equations are one family and not an unrelated list.
 
 What the parent does **not** do is fix the mass. The Lanczos parameter $m$ and the Einstein–Mayer mass biquaternion of the companion article on the Petiau system are inputs of the parent system, and the algebra supplies no value for either.
@@ -367,7 +367,7 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the massive vector field in the classical theory and the physical third polarization.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the massless limit, the gauge freedom, and the transverse polarizations.
 - Walter Greiner and Joachim Reinhardt, *Field Quantization* (Springer, 1996), for the canonical treatment of the Proca field and its three polarization states.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §9, for the derivation of Proca's equation from Lanczos's coupled system by the reversal-even combination, for the identification of the reversal-odd combination with the absence of magnetic monopoles, and for the conserved current and the energy–momentum tensor in closed quaternion form (46)–(47).
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §9, for the derivation of Proca's equation from Lanczos's coupled system by the reversal-even combination, for the identification of the reversal-odd combination with the vanishing of the odd source, and for the conserved current and the energy–momentum tensor in closed quaternion form (46)–(47).
 - A. Gsponer and J.-P. Hurni, "Comment on formulating and generalizing Dirac's, Proca's, and Maxwell's equations with biquaternions or Clifford numbers," arXiv:math-ph/0201049, *Foundations of Physics Letters* **14** (2001) 77–85, for the spin-0 and spin-1 members of the Lanczos family, the Einstein–Mayer hypercomplex mass, and the same current and energy–momentum tensor printed undoubled in the $\vec{b}$ notation.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system from which the Dirac and Proca equations both descend.
 - F. Gürsey, "Applications of quaternions to field equations," PhD thesis, University of London, 1950, for the classification of the scalar, vector, pseudoscalar and pseudovector equations as degenerate cases of Lanczos's fundamental equation.

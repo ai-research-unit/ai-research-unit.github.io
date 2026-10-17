@@ -143,7 +143,7 @@ This is the central fact of the representation. The biquaternion norm, defined a
 
 **Invertibility. A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
 
-**Multiplicativity. $\langle\tilde{Q}\tilde{R}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde{R}\rangle_{\natural}$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
+**Multiplicativity. $\langle\tilde{Q}\tilde Q_3\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
 
 **Zero divisors. The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $\langle\tilde{Q}\rangle_{\natural} = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.
 
@@ -475,7 +475,7 @@ $$
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
-\tilde{R}(\theta, \vec u_{\mathrm r}) = \exp\!\big(\tfrac{1}{2}\theta \vec u_{\mathrm r}\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(\vec e_k)\big),
+\tilde U(\theta, \vec u_{\mathrm r}) = \exp\!\big(\tfrac{1}{2}\theta \vec u_{\mathrm r}\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(\vec e_k)\big),
 $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.

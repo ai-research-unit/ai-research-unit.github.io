@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Two articles of the corpus describe an element of the biquaternion algebra as an operator. *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions* writes the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ as the congruence $X\mapsto M X M^{\dagger}$ on the matrix image, and *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions* writes the same sandwich as a product of the two regular maps, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$. Both are statements about a matrix that represents the element.
+Two articles of the corpus describe an element of the biquaternion algebra as an operator. *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions* writes the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde{Q}_1) = \tilde{Q}\tilde{Q}_1\tilde{Q}^{*}$ as the congruence $X\mapsto M X M^{\dagger}$ on the matrix image, and *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions* writes the same sandwich as a product of the two regular maps, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$. Both are statements about a matrix that represents the element.
 
-This article records the abstract statement that the two matrix articles realize. An element **is** the map "multiply by it": the left multiplication $L_{\tilde{Q}}:\tilde{R}\mapsto\tilde{Q}\tilde{R}$ and the right multiplication $R_{\tilde{Q}}:\tilde{R}\mapsto\tilde{R}\tilde{Q}$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a **monoid**. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.
+This article records the abstract statement that the two matrix articles realize. An element **is** the map "multiply by it": the left multiplication $L_{\tilde{Q}}:\tilde{Q}_1\mapsto\tilde{Q}\tilde{Q}_1$ and the right multiplication $R_{\tilde{Q}}:\tilde{Q}_1\mapsto\tilde{Q}_1\tilde{Q}$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a **monoid**. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.
 
 The second half turns to the other half of the dictionary. The **states** of the framework are the projectors, not the maps: a projector is a Hermitian idempotent, the projectors that carry the states lie in the informational sector and the material sector has none, and a projector is a **non-invertible** map. So the dictionary of the article is one line. The **process** is the map side, where the reversible processes are the units off the light cone; the **state** is the projector side, and the rank-one projectors are null, so they lie **on** the light cone. The cone is therefore not a border between two disjoint halves: it is where the non-invertible maps are and where the states sit, while a unit is an element off the cone.
 
@@ -13,7 +13,7 @@ The second half turns to the other half of the dictionary. The **states** of the
 For an element $\tilde{P}$ of the algebra, the **left multiplication** and the **right multiplication** are the maps
 
 $$
-L_{\tilde{P}} : \tilde{R} \mapsto \tilde{P}\tilde{R}, \qquad\qquad R_{\tilde{P}} : \tilde{R} \mapsto \tilde{R}\tilde{P}.
+L_{\tilde{P}} : \tilde{Q}_1 \mapsto \tilde{P}\tilde{Q}_1, \qquad\qquad R_{\tilde{P}} : \tilde{Q}_1 \mapsto \tilde{Q}_1\tilde{P}.
 $$
 
 Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_t) = \tilde{P}$ and $R_{\tilde{P}}(e_t) = \tilde{P}$. Their **composition rules** are the associativity of the product read on the maps,
@@ -28,7 +28,7 @@ $$
 L_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}}\circ L_{\tilde{P}},
 $$
 
-for every pair, because $\tilde{P}(\tilde{R}\tilde{Q}) = (\tilde{P}\tilde{R})\tilde{Q}$ is the same associativity. The first of the two rules is the one the article turns on: **the left multiplications compose into the left multiplication of the product**, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.
+for every pair, because $\tilde{P}(\tilde{Q}_1\tilde{Q}) = (\tilde{P}\tilde{Q}_1)\tilde{Q}$ is the same associativity. The first of the two rules is the one the article turns on: **the left multiplications compose into the left multiplication of the product**, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.
 
 ### The Regular Representation
 
@@ -73,7 +73,7 @@ and the boundary is the light cone $N = 0$, the locus the corpus reads as the ca
 The operator of the two matrix articles is the composition of a left action with a right action. With the Hermitian conjugation ${}^{*}$,
 
 $$
-\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*} = L_{\tilde{Q}}\bigl(R_{\tilde{Q}^{*}}(\tilde{R})\bigr) = (L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}})(\tilde{R}),
+\operatorname{H}_{\tilde{Q}}(\tilde{Q}_1) = \tilde{Q}\tilde{Q}_1\tilde{Q}^{*} = L_{\tilde{Q}}\bigl(R_{\tilde{Q}^{*}}(\tilde{Q}_1)\bigr) = (L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}})(\tilde{Q}_1),
 $$
 
 so that
@@ -129,7 +129,7 @@ The sandwich of the two matrix articles is the composition of a left action with
 
 | Symbol | Meaning |
 |---|---|
-| $L_{\tilde{P}}$, $R_{\tilde{P}}$ | left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{R})=\tilde{P}\tilde{R}$, $R_{\tilde{P}}(\tilde{R})=\tilde{R}\tilde{P}$ |
+| $L_{\tilde{P}}$, $R_{\tilde{P}}$ | left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{Q}_1)=\tilde{P}\tilde{Q}_1$, $R_{\tilde{P}}(\tilde{Q}_1)=\tilde{Q}_1\tilde{P}$ |
 | $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ | the composition rule of the left multiplications |
 | $\mathcal{L} = \{L_{\tilde{Q}}\}$ | the monoid of left multiplications |
 | $L_{e_t}$ | the identity of the monoid |

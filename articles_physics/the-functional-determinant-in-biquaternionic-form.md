@@ -77,7 +77,7 @@ where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot
 
 The determinant of $\tilde Q$ is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 
-**Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde{R}\mapsto\tilde Q\tilde R$ and right multiplication $R_{\tilde Q}:\tilde{R}\mapsto \tilde R\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
+**Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde Q_2\mapsto\tilde Q\tilde Q_2$ and right multiplication $R_{\tilde Q}:\tilde Q_2\mapsto \tilde Q_2\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
 \det L_{\tilde Q} = \det R_{\tilde Q} = \langle\tilde Q\rangle_{\natural}^2 .
 $$

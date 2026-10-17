@@ -113,7 +113,7 @@ the word should ask which reading is meant.
 ## The Fifth Reading, Named and Left Out
 
 A fifth interpretation exists and is deliberately not one of the four. The **left-regular eigenvalue
-problem** $L_{\tilde{Q}}\tilde{R}=\lambda\tilde{R}$ has the spectrum of the operator,
+problem** $L_{\tilde{Q}}\tilde Q_1=\lambda\tilde Q_1$ has the spectrum of the operator,
 $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ with each eigenvalue twice, and a
 spectrum is not a label. The operator spectrum is owned by *The Spectra of the Operators on the Biquaternion
 Algebra with Hermitian Adjoint*, and the element spectrum it is built on by *Biquaternion Spectral Theory*.

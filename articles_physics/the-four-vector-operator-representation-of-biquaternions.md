@@ -19,8 +19,8 @@ The article owns the two-step component rule, the image of the basis elements, t
 **Conventions.** The product of two elements with four-vectors $A^\mu$ and $Q_1^\mu$ has components
 
 $$
-(\tilde A\tilde Q_1)^0 = A^0Q_1^0 - \sum_{k=1}^{3} A^kQ_1^k, \qquad
-(\tilde A\tilde Q_1)^i = A^0Q_1^i + Q_1^0A^i + \sum_{j,k=1}^{3}\epsilon^{ijk}A^jQ_1^k ,
+(\tilde A\tilde{Q}_1)^0 = A^0Q_1^0 - \sum_{k=1}^{3} A^kQ_1^k, \qquad
+(\tilde A\tilde{Q}_1)^i = A^0Q_1^i + Q_1^0A^i + \sum_{j,k=1}^{3}\epsilon^{ijk}A^jQ_1^k ,
 $$
 
 and the Hermitian conjugate has four-vector
@@ -63,7 +63,7 @@ Two features of the rule carry the meaning of the operator.
 
 The first factor is **not** conjugated and the second **is**: the pair of signs $\overline{Q^0}$ and $-\overline{Q^k}$ is what makes the operator Hermitian rather than an inner automorphism, and it is the coordinate trace of the dagger.
 
-The rule is **linear in $\tilde W$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde W$ because both steps of the product are bilinear and only one factor carries $\tilde W$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde W \mapsto \lambda \tilde W$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}}$ and that $\operatorname{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\operatorname{H}_{\tilde{Q}}$ for a central $z$: doubling the operand quadruples the operator, and it is the reason the rotor stores the half-rapidity while the transformation it generates has the full one.
+The rule is **linear in $\tilde W$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde W$ because both steps of the product are bilinear and only one factor carries $\tilde W$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde W \mapsto \lambda \tilde W$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\operatorname{H}_{\tilde{Q}\tilde U} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde U}$ and that $\operatorname{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\operatorname{H}_{\tilde{Q}}$ for a central $z$: doubling the operand quadruples the operator, and it is the reason the rotor stores the half-rapidity while the transformation it generates has the full one.
 
 **Corollary (the operator of a scalar multiple).** In particular $\operatorname{H}_{\tilde{Q}} = 0$ if and only if $\tilde{Q} = 0$, since the scalar component of the rule contains the nonzero factor $\overline{Q^0}$ composed with $Q^0$ as soon as any component of $\tilde{Q}$ is nonzero; and $\operatorname{H}_{i\tilde{Q}} = \operatorname{H}_{\tilde{Q}}$, since $\lvert i\rvert^{2} = 1$.
 

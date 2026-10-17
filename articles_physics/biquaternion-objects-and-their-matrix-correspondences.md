@@ -67,7 +67,7 @@ Unlike $\mathsf{M}_2$, the map $\mathsf{M}_4$ is not onto: its image is a four-c
 
 ### The Relation Between the Two
 
-Because $\mathsf{M}_2$ is multiplicative, $\mathsf{M}_2(\tilde{Q}\tilde{R})=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R})$, so left multiplication by $\tilde{Q}$ acts on the four entries of $\mathsf{M}_2(\tilde{R})$ by letting $\mathsf{M}_2(\tilde{Q})$ act on each of the two columns. Reading the columns of $\mathsf{M}_2(\tilde{R})$ as the four coordinates therefore block-diagonalizes the regular matrix, and in that basis the two blocks coincide:
+Because $\mathsf{M}_2$ is multiplicative, $\mathsf{M}_2(\tilde{Q}\tilde{Q}_1)=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q}_1)$, so left multiplication by $\tilde{Q}$ acts on the four entries of $\mathsf{M}_2(\tilde{Q}_1)$ by letting $\mathsf{M}_2(\tilde{Q})$ act on each of the two columns. Reading the columns of $\mathsf{M}_2(\tilde{Q}_1)$ as the four coordinates therefore block-diagonalizes the regular matrix, and in that basis the two blocks coincide:
 
 $$
 \mathsf{M}_4(\tilde{Q})\;=\;
@@ -357,7 +357,7 @@ The algebra $\mathbb{B}$ has one algebra isomorphism $\mathsf{M}_2$ onto $M_2(\m
 | $\tilde u$ | the rotation rotor of the polar form, a unit real quaternion, the compact factor |
 | $g$ | a unit, an element of $\mathbb{B}^{\times}$, acting on the algebra by conjugation |
 | $\mathsf{M}_2$ | the algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
-| $\mathsf{M}_4$ | the left regular matrix, $\mathsf{M}_4(\tilde{Q})\operatorname{col}(\tilde{R})=\operatorname{col}(\tilde{Q}\tilde{R})$ |
+| $\mathsf{M}_4$ | the left regular matrix, $\mathsf{M}_4(\tilde{Q})\operatorname{col}(\tilde{Q}_1)=\operatorname{col}(\tilde{Q}\tilde{Q}_1)$ |
 | $\langle\cdot\rangle_{\natural}$ | the biquaternion norm $\sum_\mu Q_\mu^2$ |
 | ${}^{*}$ | Hermitian conjugation; fixed space $\mathbb{M}_+$, anti-fixed space $\mathbb{M}_-$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |

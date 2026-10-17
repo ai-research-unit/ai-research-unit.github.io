@@ -31,7 +31,7 @@ $$
 and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Conventions in the Biquaternion Universe*: quaternion conjugation ${}^{\natural}$ ($e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form
 
 $$
-\tilde{Q}\circ\tilde{R} = Q_tR_0 - (\vec Q,\vec R) + Q_t\vec R + R_0\vec Q + [\vec Q,\vec R].
+\tilde{Q}\circ\tilde{Q}_4 = Q_tR_0 - (\vec Q,\vec R) + Q_t\vec R + R_0\vec Q + [\vec Q,\vec R].
 $$
 
 ### The gamma side

@@ -46,7 +46,7 @@ i&-3&1-i&2+i
 \end{pmatrix}.
 $$
 
-The column of $\tilde{R}=e_t+\vec e_x$, namely $R=(1,1,0,0)$, is carried to the column $(1+2i,3,3+i,-3+i)$, which is the four-vector of the product $\tilde{Q}\tilde{R}$ computed by the component formula of *The Four-Vector Element Representation of Biquaternions*. Its biquaternion norm, the determinant of the $2\times2$ matrix of the same element, is $11+2i$, so the regular determinant is $(11+2i)^2=117+44i$ and the trace is $4(2+i)=8+4i$.
+The column of $\tilde Q_4=e_t+\vec e_x$, namely $R=(1,1,0,0)$, is carried to the column $(1+2i,3,3+i,-3+i)$, which is the four-vector of the product $\tilde{Q}\tilde Q_4$ computed by the component formula of *The Four-Vector Element Representation of Biquaternions*. Its biquaternion norm, the determinant of the $2\times2$ matrix of the same element, is $11+2i$, so the regular determinant is $(11+2i)^2=117+44i$ and the trace is $4(2+i)=8+4i$.
 
 **Theorem (the left regular matrix is an injective algebra homomorphism).** For all $\tilde Q_1, \tilde Q_2 \in \mathbb{B}$,
 
@@ -58,7 +58,7 @@ so the assignment is an injective algebra homomorphism, of complex dimension $4$
 
 **Proof.** The multiplicativity is read on the basis: for every $\mu$, associativity gives $\tilde Q_1(\tilde Q_2 e_\mu)=(\tilde Q_1\tilde Q_2)e_\mu$, so the two matrices agree on every column $\operatorname{col}(e_\mu)$ and hence everywhere. The injectivity follows from the first column, which is the column of $\tilde Q_2$ and alone recovers the four coefficients.
 
-The two orders differ, and the example $\tilde Q=e_t+\vec e_x$, $\tilde R=e_t+\vec e_y$ shows it: the products $\tilde Q\tilde R=e_t+\vec e_x+\vec e_y+\vec e_z$ and $\tilde R\tilde Q=e_t+\vec e_x+\vec e_y-\vec e_z$ have first columns $(1,1,1,1)$ and $(1,1,1,-1)$, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)\neq\mathsf{M}_4(\tilde R)\mathsf{M}_4(\tilde Q)$, exactly as $\tilde Q\tilde R\neq\tilde R\tilde Q$.
+The two orders differ, and the example $\tilde Q=e_t+\vec e_x$, $\tilde Q_4=e_t+\vec e_y$ shows it: the products $\tilde Q\tilde Q_4=e_t+\vec e_x+\vec e_y+\vec e_z$ and $\tilde Q_4\tilde Q=e_t+\vec e_x+\vec e_y-\vec e_z$ have first columns $(1,1,1,1)$ and $(1,1,1,-1)$, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde Q_4)\neq\mathsf{M}_4(\tilde Q_4)\mathsf{M}_4(\tilde Q)$, exactly as $\tilde Q\tilde Q_4\neq\tilde Q_4\tilde Q$.
 
 **Definition (the right regular matrix).** The **right regular matrix** is the assignment written $\mathsf{M}_4^{R}$. It converts a biquaternion into a $4 \times 4$ complex matrix,
 
@@ -173,7 +173,7 @@ The $2\times2$ realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix El
 
 Here $\epsilon=i\sigma_2$, and the two middle rows are the only ones that look different: the four entries of the $2\times2$ matrix are four $\mathbb{C}$-linear combinations of the four coefficients, so realness of the coefficients is not realness of the entries, whereas the entries of the regular matrix are the coefficients up to sign.
 
-**Theorem (the regular matrix is two copies of the $2\times2$ matrix).** Let $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ and $f=e_t-\tilde\Pi$, so that $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}f$ splits into two minimal left ideals, and let $\tilde R=\vec e_z+i\vec e_y$, $\tilde T=\vec e_z-i\vec e_y$. In the basis $\tilde\Pi,\tilde R,f,\tilde T$ the regular matrix is block diagonal,
+**Theorem (the regular matrix is two copies of the $2\times2$ matrix).** Let $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ and $f=e_t-\tilde\Pi$, so that $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}f$ splits into two minimal left ideals, and let $\tilde Q_4=\vec e_z+i\vec e_y$, $\tilde T=\vec e_z-i\vec e_y$. In the basis $\tilde\Pi,\tilde Q_4,f,\tilde T$ the regular matrix is block diagonal,
 
 $$
 \mathsf{M}_4(\tilde Q)=\begin{pmatrix}A_+&0\\0&A_-\end{pmatrix},\qquad A_+\text{ and }A_-\text{ conjugate to }\mathsf{M}_2(\tilde Q),
@@ -256,7 +256,7 @@ Hence the right regular matrix is the contragredient of the left one up to the f
 
 **Corollary (the difference vanishes exactly on the centre).** The difference $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ is the zero matrix if and only if $\tilde{Q} \in \mathbb{C}_{\mathbb{B}} = \mathbb{C} e_t$.
 
-**Proof.** If $\tilde{Q} = \lambda e_t$ then $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q}) = \lambda I$, since scalar multiplication is central. Conversely, if the two matrices agree then $\tilde{Q}\tilde{R} = \tilde{R}\tilde{Q}$ for every $\tilde{R}$, so $\tilde{Q}$ lies in the centre, which is the scalar subspace. Comparing the two closed forms directly, the entries in the three last rows and columns agree only when $Q_x = Q_y = Q_z = 0$.
+**Proof.** If $\tilde{Q} = \lambda e_t$ then $\mathsf{M}_4^{L}(\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q}) = \lambda I$, since scalar multiplication is central. Conversely, if the two matrices agree then $\tilde{Q}\tilde Q_4 = \tilde Q_4\tilde{Q}$ for every $\tilde Q_4$, so $\tilde{Q}$ lies in the centre, which is the scalar subspace. Comparing the two closed forms directly, the entries in the three last rows and columns agree only when $Q_x = Q_y = Q_z = 0$.
 
 **Remark (what left and right mean).** The two matrices differ **because the algebra is non-commutative**. The $\mu$-th column of the difference $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ is the coordinate column of $\tilde{Q}e_\mu - e_\mu\tilde{Q}$, the commutator $[\tilde{Q}, e_\mu]$; the difference vanishes on $\mathbb{C}_{\mathbb{B}}$ and nowhere else. This is the sense in which the left and right regular matrices of $\mathbb{B}$ are distinct, and the sense in which the row of *The Four-Vector Element Representation of Biquaternions* carries the right action and not a further left one.
 
@@ -334,18 +334,18 @@ which the form of the theorem above gives at once. The eigenvalues themselves, t
 **Theorem (the centralizer is the right copy).** The centralizer of the image $\mathsf{M}_4^{L}(\mathbb{B})$ in $M_4(\mathbb{C})$,
 
 $$
-\bigl\{ C \in M_4(\mathbb{C}) \;:\; C\,\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})\,C \ \text{ for every } \tilde{R} \in \mathbb{B} \bigr\},
+\bigl\{ C \in M_4(\mathbb{C}) \;:\; C\,\mathsf{M}_4^{L}(\tilde Q_4) = \mathsf{M}_4^{L}(\tilde Q_4)\,C \ \text{ for every } \tilde Q_4 \in \mathbb{B} \bigr\},
 $$
 
 is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.
 
-**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_t) = \operatorname{col}(\tilde{R})$. Let $C$ be in the centralizer and let $\vec q_a = C\operatorname{col}(e_t)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde{R}$,
+**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(\tilde S) = \operatorname{col}(\tilde Q_4\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(e_t) = \operatorname{col}(\tilde Q_4)$. Let $C$ be in the centralizer and let $\vec q_a = C\operatorname{col}(e_t)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde Q_4$,
 
 $$
-C\operatorname{col}(\tilde{R}) = C\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde{R})\,C\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{Q}) = \operatorname{col}(\tilde{R}\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{R}),
+C\operatorname{col}(\tilde Q_4) = C\,\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde Q_4)\,C\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(\tilde{Q}) = \operatorname{col}(\tilde Q_4\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde Q_4),
 $$
 
-the last step being the defining property of the right matrix. The four columns $\operatorname{col}(\tilde{R})$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde{R})$, because $(\tilde{R}\tilde{S})\tilde{Q} = \tilde{R}(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. It has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the coordinate column of $\tilde Q$, to vanish.
+the last step being the defining property of the right matrix. The four columns $\operatorname{col}(\tilde Q_4)$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde Q_4)$, because $(\tilde Q_4\tilde{S})\tilde{Q} = \tilde Q_4(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. It has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the coordinate column of $\tilde Q$, to vanish.
 
 **Remark.** The theorem is the regular-module case of the double centralizer phenomenon, and it is the mirror of the identification of $\mathbb{B}$ with the matrix algebra of the simple module in *Modules over the Biquaternion Algebra*: the algebra is recovered as the centralizer of the opposite copy. The two images $\mathsf{M}_4^{L}(\mathbb{B})$ and $\mathsf{M}_4^{R}(\mathbb{B})$ commute, and the products of one matrix from each already span the full matrix algebra $M_4(\mathbb{C})$, as the section on the sixteen products shows.
 
@@ -369,7 +369,7 @@ $$
 
 ## The Sandwich in the Regular Basis
 
-The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra* is read here as a single matrix.
+The Hermitian sandwich $\tilde Q_4 \mapsto \tilde Q\tilde Q_4\tilde Q^{*}$ of *Two-Sided Operators on the General Plain Sesqualgebra* is read here as a single matrix.
 
 **The sandwich matrix.** Put
 
@@ -377,7 +377,7 @@ $$
 \mathsf{H}_{\tilde Q} := \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{Q}^{*}) .
 $$
 
-It is the matrix that carries the coordinate column of $\tilde{R}$ to the coordinate column of $\tilde{Q}\tilde{R}\tilde{Q}^{*}$: indeed $\mathsf{M}_4^{R}(\tilde{Q}^{*})\operatorname{col}(\tilde{R}) = \operatorname{col}(\tilde{R}\tilde{Q}^{*})$ and then $\mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde{R}\tilde{Q}^{*}) = \operatorname{col}(\tilde{Q}\tilde{R}\tilde{Q}^{*})$. In that sense it is the regular-basis reading of the sandwich, and it has three properties that no other realization shows.
+It is the matrix that carries the coordinate column of $\tilde Q_4$ to the coordinate column of $\tilde{Q}\tilde Q_4\tilde{Q}^{*}$: indeed $\mathsf{M}_4^{R}(\tilde{Q}^{*})\operatorname{col}(\tilde Q_4) = \operatorname{col}(\tilde Q_4\tilde{Q}^{*})$ and then $\mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde Q_4\tilde{Q}^{*}) = \operatorname{col}(\tilde{Q}\tilde Q_4\tilde{Q}^{*})$. In that sense it is the regular-basis reading of the sandwich, and it has three properties that no other realization shows.
 
 **Lemma (the left regular matrix respects the dagger).** For every $\tilde{Q}$,
 
@@ -397,7 +397,7 @@ $$
 
 the left regular matrix of $\tilde Q$ multiplied by the right regular matrix of its Hermitian conjugate, in that order.
 
-**Proof.** For every $\tilde{R}$, $\mathsf{M}_4^{R}(\tilde{Q}^{*})\operatorname{col}(\tilde{R}) = \operatorname{col}(\tilde{R}\tilde{Q}^{*})$ and $\mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde{R}\tilde{Q}^{*}) = \operatorname{col}(\tilde{Q}\tilde{R}\tilde{Q}^{*})$, the defining properties of the two matrices applied in turn; the product therefore carries $\operatorname{col}(\tilde{R})$ to $\operatorname{col}(\tilde{Q}\tilde{R}\tilde{Q}^{*})$, which is what defines $\mathsf{H}_{\tilde Q}$.
+**Proof.** For every $\tilde Q_4$, $\mathsf{M}_4^{R}(\tilde{Q}^{*})\operatorname{col}(\tilde Q_4) = \operatorname{col}(\tilde Q_4\tilde{Q}^{*})$ and $\mathsf{M}_4^{L}(\tilde{Q})\operatorname{col}(\tilde Q_4\tilde{Q}^{*}) = \operatorname{col}(\tilde{Q}\tilde Q_4\tilde{Q}^{*})$, the defining properties of the two matrices applied in turn; the product therefore carries $\operatorname{col}(\tilde Q_4)$ to $\operatorname{col}(\tilde{Q}\tilde Q_4\tilde{Q}^{*})$, which is what defines $\mathsf{H}_{\tilde Q}$.
 
 The identity is the regular-basis reading of the double centralizer above: the two factors come from the two commuting images $\mathsf{M}_4^{L}(\mathbb{B})$ and $\mathsf{M}_4^{R}(\mathbb{B})$, and their order is immaterial because the images commute. It also says that the sandwich is a **congruence** and not a similarity: a similarity would pair $\tilde{Q}$ with $\tilde{Q}^{-1}$, whereas here the second factor is $\tilde{Q}^{*}$, equal to the inverse only on the unitary slice.
 
@@ -599,7 +599,7 @@ The left regular matrix $\mathsf{M}_4^{L}$ is the Cayley matrix of the left mult
 
 The right regular matrix $\mathsf{M}_4^{R}$, whose $\mu$-th column is the coordinate column of $e_\mu\tilde Q$, is anti-multiplicative and is the regular representation of the opposite algebra. The naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\mathsf{M}_4^{L} - \mathsf{M}_4^{R}$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, and its $\mu$-th column is the coordinate column of $[\tilde Q, e_\mu]$; that is the precise sense in which left and right differ because the algebra is non-commutative.
 
-The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_+$, $I_2 = \mathbb{B}\tilde\Pi_-$ and $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$, $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$; in the adapted basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+, \tilde\Pi_-, \vec e_x\tilde\Pi_-$ the left regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So the regular module is $V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is the right copy $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$. Over $\mathbb{R}$ the left regular matrix is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_t)$, the dimension doubling by restriction of scalars. The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ has the matrix $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{Q}^{*}) = \mathsf{M}_4^{L}(\tilde{Q})\,D\,\mathsf{M}_4^{L}(\tilde{Q})^{*}\,D$, a congruence and not a similarity; its realification has $\det = |N|^{8}$ and trace $8|Q_t|^{2}$.
+The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_+$, $I_2 = \mathbb{B}\tilde\Pi_-$ and $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$, $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$; in the adapted basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+, \tilde\Pi_-, \vec e_x\tilde\Pi_-$ the left regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So the regular module is $V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is the right copy $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$. Over $\mathbb{R}$ the left regular matrix is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_t)$, the dimension doubling by restriction of scalars. The Hermitian sandwich $\tilde Q_4 \mapsto \tilde Q\tilde Q_4\tilde Q^{*}$ has the matrix $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{Q}^{*}) = \mathsf{M}_4^{L}(\tilde{Q})\,D\,\mathsf{M}_4^{L}(\tilde{Q})^{*}\,D$, a congruence and not a similarity; its realification has $\det = |N|^{8}$ and trace $8|Q_t|^{2}$.
 
 A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to the regular one as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural} = \Delta(A) I$ of the algebra into the scalar matrices, $\Delta = A_t^2 - A_x^2 - A_y^2 - A_z^2$, which is a real quadratic map on the real coefficients and which the regular realization does not have, in contrast with the congruence-shaped quadratic map of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its real slice $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ carries the Minkowski form $D = \operatorname{diag}(-1,1,1,1)$, of signature $(1,3)$, for which the three generators are the infinitesimal generators of $O(1,3)$, $M^{\mathsf T} = -DMD$; this is the form of the realization's real slice and must be distinguished from the general quaternionic bilinear form of signature $(4,4)$, which is the form of the eight-dimensional algebra. In that realization the sixteen products $\mathsf{M}_4^{L}(e_\mu)\mathsf{M}_4^{R}(e_\nu)$ are the Hermitian outer products $E_\muE_\nu^{\mathsf T}$ and form a basis of $M_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{\mu\nu}P_{\lambda\rho}) = 4\delta_{\mu\lambda}\delta_{\nu\rho}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex matrix is a biparavector, $\sum a_{\mu\nu}\,\mathsf{M}_4^{L}(e_\mu)\mathsf{M}_4^{R}(e_\nu)$.
 
@@ -630,7 +630,7 @@ Read as a pairing, the regular matrix carries the general plain bilinear form wi
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}$ | Restriction of scalars |
 | $\operatorname{cent}_{M_4(\mathbb{C})}\mathsf{M}_4^{L}(\mathbb{B}) = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left image is the right copy, of complex dimension $4$ |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ left regular matrix |
-| $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{R}(\tilde{Q}^{*})$ | The sandwich matrix, carrying $\operatorname{col}(\tilde R)$ to $\operatorname{col}(\tilde Q\tilde R\tilde Q^{*})$; closed form $\mathsf{M}_4^{L}(\tilde{Q})D\mathsf{M}_4^{L}(\tilde{Q})^{*}D$, realification with $\det = \lvert N\rvert^{8}$ and trace $8\lvert Q_t\rvert^{2}$ |
+| $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{R}(\tilde{Q}^{*})$ | The sandwich matrix, carrying $\operatorname{col}(\tilde Q_4)$ to $\operatorname{col}(\tilde Q\tilde Q_4\tilde Q^{*})$; closed form $\mathsf{M}_4^{L}(\tilde{Q})D\mathsf{M}_4^{L}(\tilde{Q})^{*}D$, realification with $\det = \lvert N\rvert^{8}$ and trace $8\lvert Q_t\rvert^{2}$ |
 | $\mathsf{M}'_4(A_t, A_x, A_y, A_z)$ | Second $4 \times 4$ realization, on the generators $i\vec e_x, i\vec e_y, i\vec e_z$ with $(i\vec e_x)^2 = (i\vec e_y)^2 = (i\vec e_z)^2 = e_t$ |
 | $K_1, K_2, K_3$ | Coefficient conjugates of $i\vec e_x, i\vec e_y, i\vec e_z$, used in the Hermitian basis of that realization |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac14\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form read in the regular model, $X=\mathsf{M}_4^{L}(\tilde Q_1)$, $Y=\mathsf{M}_4^{L}(\tilde Q_2)$; $\mathrm{E}=-D$; signature $(4,4)$ on the eight real coordinates |

@@ -28,13 +28,13 @@ The instance is not a restatement of the general case, and the reason is a **for
 
 ## Multiplicativity in the Parameter
 
-**Theorem (the family is multiplicative).** For each pair $(\theta,\rho)$ and all invertible $\tilde{Q},\tilde{R}$,
+**Theorem (the family is multiplicative).** For each pair $(\theta,\rho)$ and all invertible $\tilde{Q},\tilde Q_1$,
 
 $$
-\Phi^{\theta,\rho}_{\tilde{Q}\tilde{R}}=\Phi^{\theta,\rho}_{\tilde{Q}}\circ\Phi^{\theta,\rho}_{\tilde{R}} .
+\Phi^{\theta,\rho}_{\tilde{Q}\tilde Q_1}=\Phi^{\theta,\rho}_{\tilde{Q}}\circ\Phi^{\theta,\rho}_{\tilde Q_1} .
 $$
 
-*Proof.* $\bar{\cdot}(\tilde{Q}\tilde{R})=\bar{\cdot}(\tilde{Q})\bar{\cdot}(\tilde{R})$ because the coefficient conjugation is an automorphism, and $(\tilde{Q}\tilde{R})^{\dagger}=\tilde{R}^{*}\tilde{Q}^{*}$ because the dagger is an anti-automorphism. Then $\Phi^{\theta,\rho}_{\tilde{Q}}(\Phi^{\theta,\rho}_{\tilde{R}}(\tilde T))=\theta(\tilde{Q})\theta(\tilde{R})\,\tilde T\,\rho(\tilde{R})\rho(\tilde{Q})$, and the two middle factors combine into $\theta(\tilde{Q}\tilde{R})$ and $\rho(\tilde{Q}\tilde{R})$ respectively.
+*Proof.* $\bar{\cdot}(\tilde{Q}\tilde Q_1)=\bar{\cdot}(\tilde{Q})\bar{\cdot}(\tilde Q_1)$ because the coefficient conjugation is an automorphism, and $(\tilde{Q}\tilde Q_1)^{\dagger}=\tilde Q_1^{*}\tilde{Q}^{*}$ because the dagger is an anti-automorphism. Then $\Phi^{\theta,\rho}_{\tilde{Q}}(\Phi^{\theta,\rho}_{\tilde Q_1}(\tilde T))=\theta(\tilde{Q})\theta(\tilde Q_1)\,\tilde T\,\rho(\tilde Q_1)\rho(\tilde{Q})$, and the two middle factors combine into $\theta(\tilde{Q}\tilde Q_1)$ and $\rho(\tilde{Q}\tilde Q_1)$ respectively.
 
 **Corollary (the parameter rule).** For a central scalar $A$ and an invertible $\tilde{Q}$,
 

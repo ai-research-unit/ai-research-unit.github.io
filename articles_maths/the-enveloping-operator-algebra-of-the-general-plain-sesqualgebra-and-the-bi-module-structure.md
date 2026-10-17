@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An algebra acts on itself from the left and from the right, and the algebra in which the pair of actions naturally lives is the **enveloping algebra** $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, with the sandwich action $(\tilde Q\otimes\tilde P^{\mathrm{opp}})\cdot\tilde R=\tilde Q\tilde R\tilde P$. For the biquaternion **algebra** this is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, whose main theorem is that the action is faithful and exhausts the linear operators, $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, and whose closing remark is that the envelope is a **luxury of the associative unital case**, the other eleven structures of the corpus keeping only their **multiplication algebra**.
+An algebra acts on itself from the left and from the right, and the algebra in which the pair of actions naturally lives is the **enveloping algebra** $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, with the sandwich action $(\tilde Q\otimes\tilde P^{\mathrm{opp}})\cdot\tilde{Q}_3=\tilde Q\tilde{Q}_3\tilde P$. For the biquaternion **algebra** this is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, whose main theorem is that the action is faithful and exhausts the linear operators, $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, and whose closing remark is that the envelope is a **luxury of the associative unital case**, the other eleven structures of the corpus keeping only their **multiplication algebra**.
 
 The **general plain sesqualgebra** is one of those other structures, and the naive envelope of its multiplication is unavailable: the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ is neither associative nor left-unital, so the left regular map $\tilde A\mapsto L_{\tilde A}$, $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$, is not multiplicative and no algebra structure on the parameter space presents it. What the block does carry is a **sandwich**: the operator $\tilde Q_1\mapsto\tilde P\tilde Q_1\tilde Q$ is unambiguous, because the plain product of $\mathbb{B}$ is associative, and pairs $(\tilde P,\tilde Q)$ therefore parametrise $\mathbb{C}$-linear operators even though the product $\tilde P\star\tilde Q$ does not. This article reads the block's operators through that sandwich, and its three results are the following.
 
@@ -46,14 +46,14 @@ So the block's family is the ordinary two-sided multiplication read with the con
 
 ### The Composition of the Two-Sided Multiplications
 
-**Theorem.** For all $\tilde P,\tilde Q,\tilde R,\tilde S$,
+**Theorem.** For all $\tilde P,\tilde Q,\tilde{Q}_3,\tilde S$,
 
 $$
-T_{\tilde P,\tilde Q}\,T_{\tilde R,\tilde S}=T_{\tilde P\tilde R,\tilde S\tilde Q} , \qquad
-S_{\tilde P,\tilde Q}\,S_{\tilde R,\tilde S}=T_{\tilde P\tilde S,(\tilde Q\tilde R)^{*}}=W_{\tilde P\tilde S,\tilde Q\tilde R} .
+T_{\tilde P,\tilde Q}\,T_{\tilde{Q}_3,\tilde S}=T_{\tilde P\tilde{Q}_3,\tilde S\tilde Q} , \qquad
+S_{\tilde P,\tilde Q}\,S_{\tilde{Q}_3,\tilde S}=T_{\tilde P\tilde S,(\tilde Q\tilde{Q}_3)^{*}}=W_{\tilde P\tilde S,\tilde Q\tilde{Q}_3} .
 $$
 
-**Proof.** For the first, $T_{\tilde P,\tilde Q}(T_{\tilde R,\tilde S}(\tilde Q_1))=\tilde P(\tilde R\tilde Q_1\tilde S)\tilde Q=\tilde P\tilde R\,\tilde Q_1\,\tilde S\tilde Q$. For the second, $S_{\tilde P,\tilde Q}(S_{\tilde R,\tilde S}(\tilde Q_1))=S_{\tilde P,\tilde Q}(\tilde R\tilde Q_1^{*}\tilde S^{*})=\tilde P(\tilde R\tilde Q_1^{*}\tilde S^{*})^{*}\tilde Q^{*}=\tilde P\tilde S\tilde Q_1\tilde R^{*}\tilde Q^{*}=T_{\tilde P\tilde S,\tilde R^{*}\tilde Q^{*}}(\tilde Q_1)$, and $\tilde R^{*}\tilde Q^{*}=(\tilde Q\tilde R)^{*}$.
+**Proof.** For the first, $T_{\tilde P,\tilde Q}(T_{\tilde{Q}_3,\tilde S}(\tilde Q_1))=\tilde P(\tilde{Q}_3\tilde Q_1\tilde S)\tilde Q=\tilde P\tilde{Q}_3\,\tilde Q_1\,\tilde S\tilde Q$. For the second, $S_{\tilde P,\tilde Q}(S_{\tilde{Q}_3,\tilde S}(\tilde Q_1))=S_{\tilde P,\tilde Q}(\tilde{Q}_3\tilde Q_1^{*}\tilde S^{*})=\tilde P(\tilde{Q}_3\tilde Q_1^{*}\tilde S^{*})^{*}\tilde Q^{*}=\tilde P\tilde S\tilde Q_1\tilde{Q}_3^{*}\tilde Q^{*}=T_{\tilde P\tilde S,\tilde{Q}_3^{*}\tilde Q^{*}}(\tilde Q_1)$, and $\tilde{Q}_3^{*}\tilde Q^{*}=(\tilde Q\tilde{Q}_3)^{*}$.
 
 **Remark (the reversal).** The first law multiplies the two first parameters in the forward order and the two second parameters in the **reverse** order. The reversal is forced by the association of the plain product, and it is the reason the second tensor factor of the enveloping algebra is written with an $\mathrm{op}$: the two-sided multiplications are the elementary elements of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$. The block's own family, carrying the involution, is treated in §*The Conjugate-Indexed Family and the Sandwich Monoid*.
 
@@ -73,13 +73,13 @@ The family is the ordinary two-sided multiplications read with the conjugate in 
 
 **Proof.** $W_{\tilde P,\tilde Q}(\lambda\tilde Q_1)=\lambda W_{\tilde P,\tilde Q}(\tilde Q_1)$ and $W_{\lambda\tilde P,\tilde Q}=\lambda W_{\tilde P,\tilde Q}$, while $W_{\tilde P,\lambda\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1(\lambda\tilde Q)^{*}=\overline{\lambda}\,W_{\tilde P,\tilde Q}(\tilde Q_1)$. In particular $W_{i\tilde P,\tilde Q}=-W_{\tilde P,i\tilde Q}$, so the family does not descend to the tensor product over $\mathbb{C}$ of the two copies of $\mathbb{B}$; it descends to $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$, the second factor being the conjugate algebra of §*The Enveloping Algebra*.
 
-**Theorem (the forward law).** For all $\tilde P,\tilde Q,\tilde R,\tilde S$,
+**Theorem (the forward law).** For all $\tilde P,\tilde Q,\tilde{Q}_3,\tilde S$,
 
 $$
-W_{\tilde P,\tilde Q}\,W_{\tilde R,\tilde S}=W_{\tilde P\tilde R,\tilde Q\tilde S} .
+W_{\tilde P,\tilde Q}\,W_{\tilde{Q}_3,\tilde S}=W_{\tilde P\tilde{Q}_3,\tilde Q\tilde S} .
 $$
 
-**Proof.** $W_{\tilde P,\tilde Q}W_{\tilde R,\tilde S}=T_{\tilde P,\tilde Q^{*}}T_{\tilde R,\tilde S^{*}}=T_{\tilde P\tilde R,\tilde S^{*}\tilde Q^{*}}=T_{\tilde P\tilde R,(\tilde Q\tilde S)^{*}}=W_{\tilde P\tilde R,\tilde Q\tilde S}$, by the law of §*The Composition of the Two-Sided Multiplications*.
+**Proof.** $W_{\tilde P,\tilde Q}W_{\tilde{Q}_3,\tilde S}=T_{\tilde P,\tilde Q^{*}}T_{\tilde{Q}_3,\tilde S^{*}}=T_{\tilde P\tilde{Q}_3,\tilde S^{*}\tilde Q^{*}}=T_{\tilde P\tilde{Q}_3,(\tilde Q\tilde S)^{*}}=W_{\tilde P\tilde{Q}_3,\tilde Q\tilde S}$, by the law of §*The Composition of the Two-Sided Multiplications*.
 
 **Remark (why the law is forward).** The involution in the second slot reverses the order once, and the composition of the plain two-sided multiplications reverses it once; the two reversals cancel. This is the operator form of the product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ read with the conjugate in the parameter: the antilinearity of $W$ in the second parameter absorbs exactly the reversal of the composition law.
 
@@ -116,11 +116,11 @@ is the sum of the two independent elementary tensors $E_{11}\otimes E_{11}^{\mat
 **Remark (the value at the unit).** The multiplication is the diagonal of the sandwich evaluated at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_t)$, and the two terms of the associator are the two ways of composing the parameters before the evaluation,
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R=W_{\tilde P\tilde Q^{*},\tilde R}(e_t),\qquad
-\tilde P\star(\tilde Q\star\tilde R)=W_{\tilde P,\tilde Q\tilde R^{*}}(e_t).
+(\tilde P\star\tilde Q)\star\tilde{Q}_3=W_{\tilde P\tilde Q^{*},\tilde{Q}_3}(e_t),\qquad
+\tilde P\star(\tilde Q\star\tilde{Q}_3)=W_{\tilde P,\tilde Q\tilde{Q}_3^{*}}(e_t).
 $$
 
-The associator is the difference of the two values, and it does not vanish in general because the two monoid elements $(\tilde P\tilde Q^{*},\tilde R)$ and $(\tilde P,\tilde Q\tilde R^{*})$ are not equal in the quotient $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$; the monoid law itself is not violated, and the non-associativity of the multiplication is the non-equality of those two monoid elements. The associator is computed in *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
+The associator is the difference of the two values, and it does not vanish in general because the two monoid elements $(\tilde P\tilde Q^{*},\tilde{Q}_3)$ and $(\tilde P,\tilde Q\tilde{Q}_3^{*})$ are not equal in the quotient $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$; the monoid law itself is not violated, and the non-associativity of the multiplication is the non-equality of those two monoid elements. The associator is computed in *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
 
 ## The Enveloping Algebra
 
@@ -132,7 +132,7 @@ $$
 \mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}},
 $$
 
-with multiplication the tensor product of the plain multiplications, $(\tilde P\otimes\tilde Q^{\mathrm{opp}})(\tilde R\otimes\tilde S^{\mathrm{opp}})=\tilde P\tilde R\otimes(\tilde S\tilde Q)^{\mathrm{opp}}$, and unit $e_t\otimes e_t^{\mathrm{opp}}$. It has complex dimension $16$, and it acts on $\mathbb{B}$ by the **sandwich action**
+with multiplication the tensor product of the plain multiplications, $(\tilde P\otimes\tilde Q^{\mathrm{opp}})(\tilde{Q}_3\otimes\tilde S^{\mathrm{opp}})=\tilde P\tilde{Q}_3\otimes(\tilde S\tilde Q)^{\mathrm{opp}}$, and unit $e_t\otimes e_t^{\mathrm{opp}}$. It has complex dimension $16$, and it acts on $\mathbb{B}$ by the **sandwich action**
 
 $$
 (\tilde P\otimes\tilde Q^{\mathrm{opp}})\cdot\tilde Q_1=\tilde P\tilde Q_1\tilde Q=T_{\tilde P,\tilde Q}(\tilde Q_1).
@@ -269,7 +269,7 @@ The algebra records a question of which of the two regular actions carries a giv
 
 The claims of the article were recomputed on the model $\mathsf{M}_2$ at no more than one hundred samples per claim.
 
-- **The composition laws.** The laws $T_{\tilde P,\tilde Q}T_{\tilde R,\tilde S}=T_{\tilde P\tilde R,\tilde S\tilde Q}$, $W_{\tilde P,\tilde Q}W_{\tilde R,\tilde S}=W_{\tilde P\tilde R,\tilde Q\tilde S}$, $S_{\tilde P,\tilde Q}S_{\tilde R,\tilde S}=T_{\tilde P\tilde S,(\tilde Q\tilde R)^{*}}$ and the four laws of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* were verified with residual at most $2\cdot10^{-13}$ on a hundred quadruples each.
+- **The composition laws.** The laws $T_{\tilde P,\tilde Q}T_{\tilde{Q}_3,\tilde S}=T_{\tilde P\tilde{Q}_3,\tilde S\tilde Q}$, $W_{\tilde P,\tilde Q}W_{\tilde{Q}_3,\tilde S}=W_{\tilde P\tilde{Q}_3,\tilde Q\tilde S}$, $S_{\tilde P,\tilde Q}S_{\tilde{Q}_3,\tilde S}=T_{\tilde P\tilde S,(\tilde Q\tilde{Q}_3)^{*}}$ and the four laws of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* were verified with residual at most $2\cdot10^{-13}$ on a hundred quadruples each.
 - **The monoid kernel.** The scaling $(\tilde P,\tilde Q)\mapsto(\lambda\tilde P,\overline{\lambda}^{-1}\tilde Q)$ leaves $W_{\tilde P,\tilde Q}$ unchanged on a hundred random pairs and scalars, with residual at most $5\cdot10^{-16}$, and the operator is the identity exactly on that set, as the theorem states.
 - **The span.** The complex span of the sixteen operators $T_{e_\mu,e_\nu}$ over the basis is all of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and the real span of the sandwich operators over the real basis is thirty-two.
 - **The properness of the image.** The operator $D(\tilde Q_1)=E_{11}\tilde XE_{11}+E_{22}\tilde XE_{22}$ has coefficient matrix $\operatorname{diag}(1,0,0,1)$ of rank two in the tensor basis $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$, so it is not an elementary tensor; and the equations of the proof were checked on the matrix units, where $PE_{11}Q=E_{11}$ forces the first column of $P$ and the first row of $Q$ nonzero, $PE_{12}Q=0$ then forces the second row of $Q$ to vanish, and $PE_{22}Q=E_{22}$ forces it not to.

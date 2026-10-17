@@ -210,6 +210,5 @@ The combinatorial models of a three-manifold are the Heegaard splittings, unique
 - Michael Freedman, "The Topology of Four-Dimensional Manifolds", *Journal of Differential Geometry* 17 (1982), 357–453, for the topological classification of simply connected four-manifolds.
 - Simon Donaldson, "An Application of Gauge Theory to Four-Dimensional Topology", *Journal of Differential Geometry* 18 (1983), 279–315, for the obstruction to smoothing the definite intersection forms.
 - John Morgan, *The Seiberg–Witten Equations and Applications to the Topology of Smooth Four-Manifolds* (Princeton University Press, 1996), for the Seiberg–Witten constraints, the $10/8$ problem and the exotic phenomena.
-- Mikio Furuta, "Monopole Equation and the $\frac{11}{8}$-Conjecture", *Mathematical Research Letters* 8 (2001), 279–291, for the $\frac{10}{8}$ inequality for spin four-manifolds.
 - David Gabai, Robert Meyerhoff and Peter Milley, "Minimum Volume Cusped Hyperbolic Three-Manifolds", *Journal of the American Mathematical Society* 22 (2009), 1157–1215, for the minimal volume closed hyperbolic three-manifold and the Weeks manifold.
 - Ian Agol, "The Virtual Haken Conjecture", *Documenta Mathematica* 18 (2013), 1045–1087, for the virtual fibring of hyperbolic three-manifolds.

@@ -97,27 +97,27 @@ The operation carries no Lie structure; the antisymmetric half of the parent car
 
 ### Associativity
 
-**Proposition (the operation is not associative).** At $\tilde P=\tilde Q=\vec e_x$, $\tilde R=e_t$ the two bracketings differ,
+**Proposition (the operation is not associative).** At $\tilde P=\tilde Q=\vec e_x$, $\tilde Q_4=e_t$ the two bracketings differ,
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R=e_t\neq 0=\tilde P\star(\tilde Q\star\tilde R),
+(\tilde P\star\tilde Q)\star\tilde Q_4=e_t\neq 0=\tilde P\star(\tilde Q\star\tilde Q_4),
 $$
 
 and the general associator is
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)
-=\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde R\rangle_{\natural}\bigr)e_t .
+(\tilde P\star\tilde Q)\star\tilde Q_4-\tilde P\star(\tilde Q\star\tilde Q_4)
+=\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde Q_4\rangle_{\natural}\bigr)e_t .
 $$
 
-*Proof.* $(\tilde P\star\tilde Q)\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde R)=\langle\tilde Q,\tilde R\rangle_{\natural}\,P_te_t$. At the witness the first is $\langle \vec e_x,\vec e_x\rangle_{\natural}e_t=e_t$ and the second $\langle \vec e_x,e_t\rangle_{\natural}e_t=0$.
+*Proof.* $(\tilde P\star\tilde Q)\star\tilde Q_4=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde Q_4=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde Q_4)=\langle\tilde Q,\tilde Q_4\rangle_{\natural}\,P_te_t$. At the witness the first is $\langle \vec e_x,\vec e_x\rangle_{\natural}e_t=e_t$ and the second $\langle \vec e_x,e_t\rangle_{\natural}e_t=0$.
 
 ### Power-Associativity
 
 **Proposition (the operation is not power-associative).** The bracketings of the fourth power do not agree. At $\tilde Q_1=e_t+\vec e_x$, whose square is $\tilde Q_1\star\tilde Q_1=2e_t$,
 
 $$
-(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_1\star\tilde Q_1)=4e_t\neq 2e_t=\bigl((\tilde Q_1\star\tilde Q_1)\star\tilde Q_1\bigr)\star\tilde Q_1.
+(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_1\star\tilde Q_1)=4e_t\neq 2e_t=\bigl((\tilde Q_1\star\tilde Q_1)\star\tilde Q_1\bigr)\star\tilde Q_1 .
 $$
 
 *Proof.* $\tilde Q_1\star\tilde Q_1=\langle\tilde Q_1\rangle_{\natural}e_t=2e_t$. On the left the product is $2e_t\star2e_t=4e_t$. On the right, $(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1=2e_t\star\tilde Q_1=2Q_{1t}e_t=2e_t$, and $2e_t\star\tilde Q_1=2e_t$ again; so the right side is $2e_t$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.

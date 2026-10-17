@@ -305,4 +305,3 @@ The framework supplies the target manifold, the flat current, the commutator str
 - R. Rajaraman, *Solitons and Instantons* (North-Holland, 1982), for the topological charge, the Derrick argument, and the homotopy classification.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 2: *Modern Applications* (Cambridge, 1996), for the chiral Lagrangian, its topological terms, and the anomalous Wess–Zumino–Witten action.
 - J. Wess and B. Zumino, "Consequences of anomalous Ward identities," *Physics Letters B* **37** (1971) 95–97, for the anomalous action that the Wess–Zumino–Witten term completes.
-- C. G. Callan and E. Witten, "Monopole catalysis of skyrmion decay," *Nuclear Physics B* **239** (1984) 161–176, for the relation between the skyrmion, the anomaly, and the baryon number.

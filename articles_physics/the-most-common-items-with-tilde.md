@@ -4,9 +4,9 @@
 
 The tilde marks a quaternionic factor. The last column of every table is the number of articles in which the symbol occurs, counted over the articles of `articles_maths/` and `articles_physics/` at the last scan. The list is triaged into three sections.
 
-- **1. Allowed tilde** — the role is fixed by *Conventions in the Biquaternion Universe* and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are.
-- **2. To be tested** — one specific role, plausible but not yet verified. Test before citing. A symbol that is also wrongly generic keeps its role here and its generic claim in section 3. A real object that carries a tilde it has no right to is listed at the end of the section, §*The Wrong Scope*.
-- **3. Wrongly generic, to be rewritten** — one line per work item, a generic claim outside the Q family. Do not cite. A tilde on an object that has no right to it is a wrong scope, not a generic claim, and is listed in section 2.
+- **1. Allowed tilde** — the role is fixed by *Conventions in the Biquaternion Universe*, or by the case-and-mark rule that article states, and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are.
+- **2. To be tested** — one specific role, plausible but not yet verified. Test before citing. A symbol that is also wrongly generic keeps its role here and its generic claim in section 3.
+- **3. Wrongly generic, to be rewritten** — one line per work item, a generic claim outside the Q family. Do not cite.
 
 The governing rule: **only the Q family is generic, and only an element carries the tilde.** $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A generic element that is unitary is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here.
 
@@ -45,11 +45,14 @@ An operator carries the mark of its element: the tilde when the element has a sc
 | $\tilde P$ | Four-momentum | $i(E/c)e_t+\vec p$ | $\mathbb{M}_-$ | $\tilde P=m\tilde V$; the letter is never generic | 464 |
 | $\tilde p$ | Canonical momentum quaternion | $\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dt)$ | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion with four components, scalar $p_t$ and vector $\vec p$; the Legendre conjugate of $\tilde q$ | 45 |
 | $\tilde V$ | Four-velocity | $\gamma(ic\,e_t+\vec v)$ | $\mathbb{M}_-$ | $\langle\tilde V\rangle_{\natural}=-c^2$ | 56 |
+| $\tilde R$ | Material four-position | $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ | $\mathbb{M}_-$ | The position of a world line. Its vector part is pure, $\vec r=x\vec e_x+y\vec e_y+z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dt=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$ | 84 |
 | $\tilde{\mathcal L}$ | Future null four-vector of a pure state | $\tilde{\mathcal L}=i\tilde\Pi(u)\in\mathbb{M}_-$ | $\mathbb{M}_-$ | $\langle\tilde{\mathcal L}\rangle_{\natural}=0$; the scalar part $i/2$ is complex, so the majuscule, §*The Elements and their Coefficients*. The retarded instance of the moving-charge exercise is $\tilde{\mathcal L}_{\mathrm{ret}}=\tilde{\mathcal L}(\vec u_R)$, whose null factor is $-2\tilde{\mathcal L}_{\mathrm{ret}}=\vec u_R-ie_t$ | 2 |
 | $\tilde J$ | Four-current; the Maxwell source; also the Noether current of a continuous symmetry | $J^\nu e_\nu=ic\rho\,e_t+\vec J$, $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ | $\mathbb{M}_-$ | $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$; enters Maxwell as $\sqrt{\mu}\,\tilde J$, so $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$; the spatial part $\vec J$ is the current density. The axial current is $\tilde J_5$; the lowercase form of the letter is not used | 93 |
 | $\tilde A$ | Electromagnetic four-potential, abelian gauge connection | $\tilde A=i\phi/c\,e_t+\vec A\in\mathbb{M}_-$ | $\mathbb{M}_-$ | The potential of the minimal-coupling, hydrogen, Klein–Gordon, Hopf, quadrupole and self-dual articles; the tension biquaternion of the electro-gravimagnetic programme | 216 |
 | $\tilde K_{\mathrm{ret}}$ | Retarded-time gradient coefficient, also the null retarded gradient | $\tilde K_{\mathrm{ret}}=\tilde\nabla^{\natural}t_r=\frac{1}{c\kappa}(\vec u_R-ie_t)$ | $\mathbb{M}_-$, null | The gradient of the retarded time: $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dt_r$ for a source depending on $t_r$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not unitary at any $\kappa$ | 1 |
 | $\tilde Q_{\mathrm d}$ | Gauge parameter of the linearized diffeomorphism | $\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial\tilde Q_{\mathrm d}/\partial Q_\mu$; $\xi_\nu=\langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | $\mathbb{M}_-$ | The image of the diffeomorphism vector, one element of $\mathbb{M}_-$ whose four components remove four of the ten, $16=10+6\to6$. A parameter, not a connection; the central scalar $\Gamma$ of $\tilde A\mapsto\tilde A-\tilde\nabla\Gamma$ is the abelian case | 4 |
+
+$\tilde R$ is new as a glyph. Its count, $84$, is the articles that write the material four-position explicitly, most of them as $\tilde Q=ict\,e_t+\vec q$; the letter itself occurs in $179$ articles, in the bound uses of §*The Bound Role of $\tilde R$*.
 
 $\tilde j$ no longer occurs: the normalised current density it named is the same object as $\sqrt{\mu}\,\tilde J$, and it is written that way. The lowercase letter was a duplicate of $\tilde J$, not a distinct quantity.
 
@@ -74,11 +77,10 @@ The parameter does not take the letter $\Delta$. $\Delta$ is the Laplacian, the 
 
 ## 2. To be tested
 
-One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description. A glyph whose uses are all bound but span several roles is listed separately at the end of the section, with the pass recorded. A real object whose tilde is a defect is listed last, in §*The Wrong Scope*: the role is established, and the mark is the work item.
+One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description. A glyph whose uses are all bound but span several roles is listed separately at the end of the section, with the pass recorded.
 
 | Symbol | Name | Formula | Note | Articles |
 |---|---|---|---|---|
-| $\tilde\chi$ | Second spinor of the state module | $\tilde\chi\in\mathbb{B}\tilde\Pi$, $\tilde\chi\tilde\Pi=\tilde\chi$ | The second argument of $\tilde\psi\tilde\chi^{*}$, $\varepsilon(\tilde\psi,\tilde\chi)$ and $\mathfrak{b}(\tilde\psi,\tilde\chi)$ in the scalar-field and Klein-Gordon articles. An element of the ideal, not a four-vector: it has two complex components, and the four-vector is the bilinear. A column spinor is written $\chi$, without the tilde, as in the Dirac and Pauli articles | 2 |
 | $\tilde{\mathcal F}$ | Power–force biquaternion | $\tilde{\mathcal F}=i\tilde J_{\mathrm{eg}}\circ\tilde F'$ | The scalar part is a power density and the vector part a force density; the Lorentz-force and electro-gravimagnetic articles | 5 |
 | $\tilde J_{\mathrm{eg}}$ | Combined electric–magnetic charge–current | $\tilde J_{\mathrm{eg}}=i\rho+\vec J$ | The electro-gravimagnetic programme; not the corpus four-current $\tilde J$ | 5 |
 | $\tilde g$ | Group element | $\tilde g=\exp(\vec\alpha/2)\in\mathbb{H}^{1}_{\mathbb{B}}$ | The adjoint action $\tilde\pi\mapsto\tilde g\tilde\pi\tilde g^{-1}$ of the pion article | 5 |
@@ -91,8 +93,6 @@ One specific role per entry, not yet verified. The test is one pass over the art
 | $\tilde\phi$ | Field or source variable | $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ | A module-valued field | 8 |
 | $\tilde\varphi$ | Field variable | $\tilde\varphi=\delta W/\delta\tilde J$ | The field of the effective potential | 2 |
 | $\tilde\pi$ | Goldstone field | $\tilde\pi=\pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ | The nonlinear sigma model and Skyrme articles; the idempotent is $\tilde\Pi$ | 38 |
-| $\tilde\psi$ | Spinor of the state module | — | An element of the minimal left ideal $\mathbb{B}\tilde\Pi_+$ | 9 |
-| $\tilde{\mathcal R}$ | Combined electric-magnetic source | $\tilde{\mathcal R}=\sqrt{\mu}\,\tilde J_e+i\sqrt{\epsilon}\,\tilde J_m$ | — | 5 |
 | $\tilde r$ | Position four-vector | $\tilde r=r_\mu\vec e_\mu\in\mathbb{H}_{\mathbb{B}}$ | As in $d\tilde r/dt=\vec\omega_T\times\tilde r$ and in the orbital product $\tilde r\tilde p$ | 19 |
 | $\tilde{\mathcal S}$ | Bell operator | — | A Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$; its image is the CHSH operator | 2 |
 | $\tilde s$ | Skew-Hermitian element | — | An element of $\mathbb{M}_-$, the unitary Lie algebra | 4 |
@@ -109,28 +109,29 @@ $\tilde{\mathcal N}$ no longer occurs. The null factor of the retarded-time grad
 
 $\tilde W$ no longer occurs as a gauge field. The electroweak connection is written in the tensor formalism, $W^a_\mu$ with a Lie-algebra index and a spacetime index, and its curvature $W^a_{\mu\nu}$; neither is a single element, and the tilde marks an element. The W and Z article now writes $\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_a W^a_{\mu\nu}W^{a\,\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu}$. The letter remains in section 3 for its generic use in the algebra articles.
 
-**The pass on $\tilde\chi$.** The glyph occurred in six articles. Two use it as the second spinor element of the state module, in the scalar-field and Klein-Gordon articles, and keep the tilde. In the Dirac and Pauli articles it named the lower component of the column bispinor, a matrix-level object; it is now written $\chi$ without the tilde, and those articles write $\psi,\phi,\chi$ alike. In the set-builder of the Schrödinger article and the conjugation identity of the ideals article it was a generic element; both are now written $\tilde Q$. The row counts the two element-level articles.
+**Spinors carry no tilde.** A spinor is an element of the state module, not a general element of the algebra: the tilde marks the quaternionic factor of an element read as an algebra element, and a module element takes the letter of the module, bare. The algebra-level representative and its matrix column therefore share the glyph, as in the bilinears $\psi\chi^{*}$, $\varepsilon(\psi,\chi)$ and $\mathfrak{b}(\psi,\chi)$, in the plane-wave amplitude $\psi_0(\vec k)\in\mathbb{B}\tilde\Pi$, and in the Dirac and Pauli articles, where the bispinor is $(\phi,\chi)^{\mathsf T}$ and the Pauli spinor is $\phi$. The Dirac field $\tilde\Psi$ keeps its tilde, because its value at each point is an element of $\mathbb{B}$; that is the distinction between a field and a module element. The spinor articles write $\psi,\phi,\chi$ bare throughout. The Dirac–Hestenes article writes the reverse of its spinor as $\psi^{\mathrm{rev}}$, which is a different operation from the element tilde. The two rows that stood for these glyphs are removed, and the Schrödinger and ideals articles write $\tilde Q$ for the generic use that earlier stood there.
 
-### The Bound Roles of $\tilde R$
+### The Bound Role of $\tilde R$
 
-$\tilde R$ is not a generic glyph. After the electric-source role was removed, its uses are bound where the letter is introduced, and they fall into two roles that do not co-occur in one article.
+$\tilde R$ is not a generic glyph. Once the electric-source role and the rotor role are removed, its uses are bound where the letter is introduced, and one kind remains.
 
 | Role | Formula | Occurrences | Articles |
 |---|---|---|---|
-| Rotation rotor | $\tilde R=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}\cdot\mathbf e$, $\tilde R\tilde R^{\natural}=e_t$ | 372 | 16 |
 | Bound element at the point of use | $\tilde P,\tilde Q,\tilde R$ in a ternary identity; $h(\tilde P,\tilde R)$; a unit in $\operatorname{H}_{\tilde R}$ | 2629 | 163 |
 
-The token counts are over `articles_maths/` and `articles_physics/`; the article counts are the articles in which the symbol occurs, whether or not they display the defining formula. The two rows account for all 3001 tokens in 179 articles.
+The token counts are over `articles_maths/` and `articles_physics/`; the article counts are the articles in which the symbol occurs, whether or not they display the defining formula. The row accounts for all 2629 tokens in 163 articles.
 
 **The electric source is written with $\tilde J$, not $\tilde R$.** The Maxwell source is the four-current $\tilde J=ic\rho\,e_t+\vec J$, and the field equation reads $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$. Since $c=1/\sqrt{\epsilon\mu}$,
 $$
 \sqrt{\mu}\,\tilde J=\sqrt{\mu}\left(ic\rho\,e_t+\vec J\right)=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J ,
 $$
-so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is $\sqrt{\mu}\,\tilde J$, not a second object. The factor $\sqrt{\mu}$ is the whole difference, and it is written explicitly in every article. In a magnetic medium the magnetic source is $\sqrt{\epsilon}\,\tilde J_m$. No article of the corpus now writes $\tilde R$ for a source.
+so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is $\sqrt{\mu}\,\tilde J$, not a second object. The factor $\sqrt{\mu}$ is the whole difference, and it is written explicitly in every article. No article of the corpus now writes $\tilde R$ for a source.
 
-**The rotation rotor is a unit real quaternion**, the $SU(2)$ factor of $\tilde S=\exp(i\theta)\tilde R$ in *The S-Matrix in Biquaternionic Form*; the generic unit quaternion of that layer is $\tilde u$, and the rotor is that object bound to a rotation.
+**$\tilde{\mathcal R}$ no longer occurs.** The combined electric-magnetic source was the four-current plus an $i$-rotated copy of it. Both terms were written $ic\rho\,e_t+\vec J$ in the same subspace $\mathbb{M}_-$, so the "complementary sector" of the magnetic term was the scalar $i$ multiplying the same object, not a distinct current. The row was therefore a duplicate of $\tilde J$, and it is removed together with the article that introduced it, which was its only source.
 
-**The second role is a bound element, not a generic one.** In the algebra articles $\tilde R$ is the third multiplicand beside $\tilde P$ and $\tilde Q$, or a unit in a sandwich, bound where it is introduced. The generic element is $\tilde Q_k$.
+**The rotor is written $\tilde u_{\mathrm r}$.** The unit real quaternion of §*The Layer Glyphs* is the $SU(2)$ factor of $\tilde S=\exp(i\theta)\tilde u$ in *The S-Matrix in Biquaternionic Form*, which writes it $\tilde u$. The letter $\tilde R$ never named the rotor in the corpus; the row that recorded it was a residue of the scan, and it is removed.
+
+**The remaining role is a bound element, not a generic one.** In the algebra articles $\tilde R$ is the third multiplicand beside $\tilde P$ and $\tilde Q$, or a unit in a sandwich, bound where it is introduced. The generic element is $\tilde Q_k$.
 
 ### A Removed Glyph
 
@@ -138,21 +139,9 @@ The discarded limit glyph no longer occurs in any article. The last use was the 
 
 The quaternion-layer logarithm is $\tilde q_{\log}$ ($16$ places, $1$ article), the same symbol as the biquaternion layer. The body-frame angular momentum of *Rigid-Body Dynamics and the Biquaternion Rotor*, $37$ places, is a pure real quaternion and is now written $\vec L_b$; the same pass made that article's angular velocity and torque $\vec\omega_b$ and $\vec\tau$, since they are pure as well. The left-inverse dummy of *Norm and Invertibility in the General Quaternionic Algebra* is now $\tilde Q_3$. The generic uses — the bilinearity dummy of *The Born Rule as a Trace Formula*, the general identity of *Biquaternion Elementary Functions*, and the periodicity statement of *Split-Biquaternion Spectral Theory* — were rewritten to $\tilde Q$. The Noether bivector is pure and is now written $\vec L$; the field strength $\tilde F$ is pure as well and still carries a tilde, so that pair differs in mark and the field strength is the remaining work item of the pair.
 
-### The Wrong Scope
-
-These entries are not generic claims. The glyph names a real object, so the letter is not the defect; the tilde is. The fix is to drop the tilde, or to write the object with the mark its class carries. The counts are those of the scan that opened the pass. Cite none of these rows until the fix is made.
-
-| Symbol | Name | Formula | Note | Fix | Articles |
-|---|---|---|---|---|---|
-| $\tilde a$ | Annihilation operator | $\tilde a=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde a^2=0$ | A Fock operator carries the superscript $\mathrm{fop}$ and no tilde; its one-mode truncation as an element is the pure nilpotent $\vec\Upsilon_x$ | Write $a^{\mathrm{fop}}$ for the abstract operator and $\vec\Upsilon_x$ for the element; a bound real quaternion with a scalar part keeps its tilde. | 54 |
-| $\tilde T$ | Kinetic energy | $\tilde T=-\tilde p^{\,2}/(2m)=p^{\,2}/(2m)e_t$ | In the free-particle and hydrogen articles. The object is central, a multiple of $e_t$: the square of the pure momentum is scalar, so no quaternionic factor is left for the tilde to mark | Drop the tilde, $T=-\tilde p^{\,2}/(2m)=p^{\,2}/(2m)e_t$. | 40 |
-| $\tilde H$ | Central Hamiltonian | $\tilde H=\bigl[-\frac{\hbar^2}{2m}\nabla^2+V\bigr]e_t=h_0e_t$ | In the Schrödinger, free-particle and scattering articles. A scalar is central; the tilde is not its mark | Drop the tilde, $H=h_0e_t$. | 223 |
-| $\tilde H$ | Oscillator energy | $\tilde H=\omega(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+\tfrac12e_t)$ | It is Hermitian, but it is not the general Hermitian observable of section 1, and the rule keeps the tilde for that object alone | Drop the tilde, or write the energy as the section 1 observable when the statement is about the observable. | 223 |
-| $\tilde D$ | Polynomial in $s^2$ | $\tilde D(s^2)=\kappa(s^2-m_1^2)(s^2-m_2^2)\cdots(s^2-m_k^2)$ | The determinant $D(p)=\det(\Gamma(p)+mE)$ of the Bhabha and spin-mass articles, written as a function of $s^2$ alone; a central scalar, with no quaternionic factor | Drop the tilde, $D(s^2)=\kappa(s^2-m_1^2)(s^2-m_2^2)\cdots(s^2-m_k^2)$. | 24 |
-
 ## 3. Wrongly generic, to be rewritten
 
-Only the **wrongly generic** claims are collected here: the entry asserts a generic element outside the Q family, or a placeholder where an arbitrary element stands. The fix is to write $\tilde Q$, $\tilde Q_1$, $\tilde Q_2$ or $\tilde q$, $\tilde q_1$, $\tilde q_2$, or to bind the letter where it is introduced. A real object whose tilde is a defect is not a generic claim; it is listed in section 2, §*The Wrong Scope*. The counts are the raw occurrence counts of the scan that opened the pass: most of the generic uses below have since been rewritten to the Q family, so a count is not the number of defects.
+Only the **wrongly generic** claims are collected here: the entry asserts a generic element outside the Q family, or a placeholder where an arbitrary element stands. The fix is to write $\tilde Q$, $\tilde Q_1$, $\tilde Q_2$ or $\tilde q$, $\tilde q_1$, $\tilde q_2$, or to bind the letter where it is introduced. The counts are the raw occurrence counts of the scan that opened the pass: most of the generic uses below have since been rewritten to the Q family, so a count is not the number of defects.
 
 | Symbol | Name | Formula | Note | Fix | Articles |
 |---|---|---|---|---|---|
@@ -163,9 +152,9 @@ Only the **wrongly generic** claims are collected here: the entry asserts a gene
 | $\tilde d$ | General element of the quaternion layer | — | A general element beside $\tilde c$, as in $T_{\tilde c,\tilde d}$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. | 5 |
 | $\tilde M$ | General element in the Hadamard scheme | $\tilde M=M_0e_t+\dots+M_3\vec e_z$ | Two generic multiplicands beside the fixed corner products; *The Computational Cost of Biquaternion Arithmetic* now writes them $\tilde Q_1,\tilde Q_2$ | Write $\tilde Q_1,\tilde Q_2$; the bound uses (Thomas interval rotor, limit value, conjugating element) are not generic. | 8 |
 | $\tilde p$ | General element of the quaternion layer | — | A general element, as in $L_{\tilde p},R_{\tilde p}$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The corpus also uses the letter for the momentum operator, which is pure and written $\vec p$. | 45 |
-| $\tilde R$ | General element or a velocity | — | A general element; the bound roles are the rotation rotor and the third multiplicand beside $\tilde P,\tilde Q$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. See §*The Bound Roles of $\tilde R$* for the two bound roles. | 179 |
+| $\tilde R$ | General element | — | A general element; the bound role is the third multiplicand beside $\tilde P,\tilde Q$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The four-position is the section 1 entry. See §*The Bound Role of $\tilde R$*. | 179 |
 | $\tilde r$ | General element of the quaternion layer | $\tilde r\mapsto\tilde r^{\natural}$ | A general element; the reflection | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The corpus also uses it as the position vector. | 19 |
-| $\tilde T$ | General element of the algebra | — | A general element; a unit exactly when $\langle\tilde T\rangle_{\natural}\neq0$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The physics articles also use it as the kinetic energy, listed in section 2, §*The Wrong Scope*. | 40 |
+| $\tilde T$ | General element of the algebra | — | A general element; a unit exactly when $\langle\tilde T\rangle_{\natural}\neq0$ | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. | 40 |
 | $\tilde W$ | General element of the algebra | — | A general element; a basis element of the spinor module | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. | 41 |
 | $\tilde w$ | General element or unit quaternion | $\{L_{\tilde w}:\operatorname{Re}\tilde w=\operatorname{Re}\tilde q\}$ | A general element, as in the class | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$; write $\tilde U$ when the element is unitary. The LSZ article uses it as a constant amplitude. | 3 |
 | $\tilde X$ | General element of the algebra | $\{\tilde X:\tilde P\tilde X=0\}$ | A general element, as in the annihilator | Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. | 110 |

@@ -61,8 +61,8 @@ The two forms are one rule, and each is used where it is shorter.
 **Proposition.** The symmetric plain product is $\mathbb{C}$-**bilinear**:
 
 $$
-(\tilde P+\tilde R)\bullet\tilde Q=\tilde P\bullet\tilde Q+\tilde R\bullet\tilde Q,\qquad
-\tilde Q\bullet(\tilde P+\tilde R)=\tilde Q\bullet\tilde P+\tilde Q\bullet\tilde R,\qquad
+(\tilde P+\tilde Q_1)\bullet\tilde Q=\tilde P\bullet\tilde Q+\tilde Q_1\bullet\tilde Q,\qquad
+\tilde Q\bullet(\tilde P+\tilde Q_1)=\tilde Q\bullet\tilde P+\tilde Q\bullet\tilde Q_1,\qquad
 (A\tilde P)\bullet\tilde Q=A(\tilde P\bullet\tilde Q)=\tilde P\bullet(A\tilde Q)
 $$
 
@@ -126,7 +126,7 @@ The relation of the associativity of the plain product to the Jordan identity is
 
 **Proposition.** The symmetric plain product is **not associative**.
 
-*Proof.* The witness is the pair $\tilde P=\tilde Q=\vec e_x$ read against $\tilde R=\vec e_y$:
+*Proof.* The witness is the pair $\tilde P=\tilde Q=\vec e_x$ read against $\tilde Q_1=\vec e_y$:
 
 $$
 (\vec e_x\bullet \vec e_x)\bullet \vec e_y=(-e_t)\bullet \vec e_y=-\vec e_y,\qquad

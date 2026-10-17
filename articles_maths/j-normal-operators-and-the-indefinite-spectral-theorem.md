@@ -92,7 +92,7 @@ and in each case the two factors of $T^{\dagger}T$ commute.
 
 **Proof.** $[L_{\tilde{Q}}\tilde{Q}_2,\tilde{Q}_3]=\langle R_{\bar{\tilde{Q}}}\tilde{Q}_3,\tilde{Q}_2\rangle_{\natural*}$ was computed in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}$, and $\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t}=|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.
 
-**Remark (a product of a left and a right multiplication need not be normal).** The composite $L_{\tilde{Q}}R_{\tilde{R}}$ has Krein adjoint $L_{\bar{\tilde{R}}}R_{\bar{\tilde{Q}}}$, and the normality condition is the commutation of the two parameters; it fails for general $\tilde{Q},\tilde{R}$, so the $J$-normal operators are not the whole of the algebra's operator span.
+**Remark (a product of a left and a right multiplication need not be normal).** The composite $L_{\tilde{Q}}R_{\tilde Q_1}$ has Krein adjoint $L_{\bar{\tilde Q_1}}R_{\bar{\tilde{Q}}}$, and the normality condition is the commutation of the two parameters; it fails for general $\tilde{Q},\tilde Q_1$, so the $J$-normal operators are not the whole of the algebra's operator span.
 
 ## The Limits of the Analogy
 

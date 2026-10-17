@@ -8,11 +8,11 @@ Its question is exact: what does "Fock space and creation/annihilation operators
 
 1. **The transcription.** The mode operators supplied by the two quantizations generate a Fock space on a module over $\mathbb{B}$: the exterior algebra of the Dirac one-particle space, the symmetric algebra of the Maxwell polarization space. This part is standard, and the parents already carry it out. It is restated here only far enough to ask where its objects live.
 
-2. **The finite-dimensional core.** The part of the construction that is genuinely an object of $\mathbb{B}$ itself. Here the article has a sharp result. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is, exactly, the operator algebra of **one fermionic mode**: it contains raising and lowering operators satisfying $\{\tilde a,\tilde a^\dagger\}=e_t$ and $\tilde a^2=(\tilde a^\dagger)^2=0$, the number operator is an idempotent of the form $\tfrac12(e_t-i\vec u)$ with $\vec u$ a unit pure quaternion, and the fermion-parity grading is realized inside the algebra as conjugation by a Hermitian element. The identification is the oscillator article's two-level truncation, read for what it is rather than for what it fails to be.
+2. **The finite-dimensional core.** The part of the construction that is genuinely an object of $\mathbb{B}$ itself. Here the article has a sharp result. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is, exactly, the operator algebra of **one fermionic mode**: it contains raising and lowering operators satisfying $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, the number operator is an idempotent of the form $\tfrac12(e_t-i\vec u)$ with $\vec u$ a unit pure quaternion, and the fermion-parity grading is realized inside the algebra as conjugation by a Hermitian element. The identification is the oscillator article's two-level truncation, read for what it is rather than for what it fails to be.
 
 3. **The gap.** There is **no Fock space in $\mathbb{B}$.** The Fock space of a single mode is the two-dimensional fundamental module of $\mathbb{B}$, not a subalgebra of it; the Fock space of two modes already has dimension four while the operator algebra of two modes has dimension sixteen; and the Fock space of a field is infinite-dimensional. The phrase "biquaternion Fock space" therefore cannot mean a Fock space inside the algebra. It has to mean a Fock space built from a $\mathbb{B}$-module, and that is what the parents construct. The title of this article promises a Fock space in biquaternionic form; what the framework contains is one mode of one, inside $\mathbb{B}$, with everything beyond it built the standard way on the outside.
 
-The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[\tilde a,\tilde a^\dagger]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[\tilde a,\tilde a^\dagger]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
+The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.
 
@@ -125,7 +125,7 @@ $$
 (i\vec e_x)(i\vec e_y)=i^2\vec e_x\vec e_y=-\vec e_z\in\mathbb{M}_-,
 $$
 
-whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q,\tilde R$ Hermitian the anticommutator $\{\tilde Q,\tilde R\}$ is Hermitian, for $\tilde{Q},\tilde Q_1$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
+whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q,\tilde Q_2\}$ is Hermitian, for $\tilde{Q},\tilde Q_1$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
 
 **2. The number grading.** The Fock space is $\mathbb{N}$-graded by total particle number, with $N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.
 
@@ -146,13 +146,13 @@ We now ask the question the article is named for in its sharpest finite-dimensio
 
 ### The Capacity of the Algebra
 
-The algebra $\mathbb{B}$ has complex dimension four. A fermionic mode is a pair $\tilde a,\tilde a^\dagger$ satisfying the canonical anticommutation relations
+The algebra $\mathbb{B}$ has complex dimension four. A fermionic mode is a pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ satisfying the canonical anticommutation relations
 
 $$
-\{\tilde a,\tilde a^\dagger\}=e_t,\qquad \tilde a^2=0,\qquad (\tilde a^\dagger)^2=0 .
+\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t,\qquad a^{\mathrm{fop}}^2=0,\qquad (a^{\mathrm{fop}\dagger})^2=0 .
 $$
 
-The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $\tilde a^2=(\tilde a^\dagger)^2=0$ the only monomials are $e_t,\tilde a,\tilde a^\dagger,\tilde a^\dagger\tilde a$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $N$ independent fermionic modes generate the algebra $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ of complex dimension $4^N$, which for $N\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:
+The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $a^{\mathrm{fop}}^2=(a^{\mathrm{fop}\dagger})^2=0$ the only monomials are $e_t,a^{\mathrm{fop}},a^{\mathrm{fop}\dagger},a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $N$ independent fermionic modes generate the algebra $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ of complex dimension $4^N$, which for $N\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:
 
 > Up to the automorphisms of the algebra, $\mathbb{B}$ carries exactly **one** fermionic mode, and it is the whole algebra.
 
@@ -207,10 +207,10 @@ It does not say that the framework **derives** fermionic statistics, or statisti
 
 ## The Bosonic Case
 
-A bosonic mode is a pair satisfying $[\tilde a,\tilde a^\dagger]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[\tilde a,\tilde a^\dagger]=c\,e_t$; but the trace of a commutator vanishes, so
+A bosonic mode is a pair satisfying $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$; but the trace of a commutator vanishes, so
 
 $$
-0=\mathrm{Tr}\big([\tilde a,\tilde a^\dagger]\big)=c\,\mathrm{Tr}(e_t)=2c,
+0=\mathrm{Tr}\big([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c,
 $$
 
 and hence $c=0$. The trace formula $\mathrm{Tr}(e_t)=2\,\mathrm{Sc}(e_t)=2$ is what makes the right-hand side nonzero, and it is the only central scalar available: the centre of $\mathbb{B}=M_2(\mathbb{C})$ is exactly the complex span of $e_t$, so there is no other candidate for a canonical commutator. The oscillator article reaches the same conclusion through the scalar part of the bracket of two Hermitian elements; the trace argument is the stronger statement, because it rules out any finite-dimensional realization of the Heisenberg pair at all.
@@ -221,7 +221,7 @@ The consequence for the framework is worth stating plainly. The Maxwell quantiza
 
 | | Fermionic | Bosonic |
 |---|---|---|
-| Canonical bracket | $\{\tilde a,\tilde a^\dagger\}=e_t$ | $[\tilde a,\tilde a^\dagger]=e_t$ |
+| Canonical bracket | $\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t$ | $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$ |
 | Realizable in $\mathbb{B}$? | Yes, exactly one mode | No, not one mode |
 | Mode operator algebra | $\mathrm{Cl}(2)\cong M_2(\mathbb{C})=\mathbb{B}$ | Weyl algebra, infinite-dimensional |
 | Single-mode Fock space | fundamental module $\mathbb{C}^2$ | $\ell^2(\mathbb{N})$ |
@@ -257,7 +257,7 @@ The table's last row is the article's finding in one line. The statistics is car
 
 The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.
 
-The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mathbb{C})$ of dimension $4^N$, which leaves no room in a four-dimensional algebra as soon as $N\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.
+The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mathbb{C})$ of dimension $4^N$, which leaves no room in a four-dimensional algebra as soon as $N\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.
 
 ## Summary of Notation
 

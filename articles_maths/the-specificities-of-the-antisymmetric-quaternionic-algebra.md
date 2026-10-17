@@ -96,18 +96,18 @@ L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\iff \tilde Q_1=0\ \text{or}\ \tilde Q_1=e_t .
 $$
 The two projectors are the zero operator and the projection onto the vector subspace.
 
-*Proof.* Write $L_{\tilde Q_1}\tilde Q_2=\tilde R$ with
-$\tilde R=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$; the value is pure, so
-$L_{\tilde Q_1}^{2}\tilde Q_2=L_{\tilde Q_1}\tilde R=Q_{1t}\tilde R-\vec Q_1\times\tilde R$, and the
-projector condition reads $Q_{1t}\tilde R-\vec Q_1\times\tilde R=\tilde R$ for every $\tilde Q_2$.
-At $\tilde Q_2=e_t$, where $Q_{2t}=1$ and $\vec Q_2=\mathbf 0$, one has $\tilde R=-\vec Q_1$, and
+*Proof.* Write $L_{\tilde Q_1}\tilde Q_2=\tilde{Q}_3$ with
+$\tilde{Q}_3=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$; the value is pure, so
+$L_{\tilde Q_1}^{2}\tilde Q_2=L_{\tilde Q_1}\tilde{Q}_3=Q_{1t}\tilde{Q}_3-\vec Q_1\times\tilde{Q}_3$, and the
+projector condition reads $Q_{1t}\tilde{Q}_3-\vec Q_1\times\tilde{Q}_3=\tilde{Q}_3$ for every $\tilde Q_2$.
+At $\tilde Q_2=e_t$, where $Q_{2t}=1$ and $\vec Q_2=\mathbf 0$, one has $\tilde{Q}_3=-\vec Q_1$, and
 the condition becomes $(Q_{1t}-1)\vec Q_1=\mathbf 0$; so either $\vec Q_1=\mathbf 0$ or
 $Q_{1t}=1$. If $\vec Q_1=\mathbf 0$, then $L_{\tilde Q_1}\tilde Q_2=Q_{1t}\vec Q_2$ and the projector
 condition is $Q_{1t}^{2}=Q_{1t}$, giving $Q_{1t}=0$ or $Q_{1t}=1$, that is $\tilde Q_1=0$ or
 $\tilde Q_1=e_t$. If $\vec Q_1\neq\mathbf 0$ and $Q_{1t}=1$, the condition reads
-$\vec Q_1\times\tilde R=0$ for every $\tilde Q_2$, so $\tilde R$ is parallel to $\vec Q_1$ at
+$\vec Q_1\times\tilde{Q}_3=0$ for every $\tilde Q_2$, so $\tilde{Q}_3$ is parallel to $\vec Q_1$ at
 every $\tilde Q_2$; taking $\tilde Q_2$ pure with $\vec Q_2$ perpendicular to $\vec Q_1$ gives
-$\tilde R=\vec Q_2-\vec Q_1\times\vec Q_2$, a vector perpendicular to $\vec Q_1$ and nonzero,
+$\tilde{Q}_3=\vec Q_2-\vec Q_1\times\vec Q_2$, a vector perpendicular to $\vec Q_1$ and nonzero,
 against the requirement, so this case is impossible. The two admissible elements give
 $L_0=0$ and $L_{e_t}=P_{\mathrm{Vect}}$ by the governing identity.
 

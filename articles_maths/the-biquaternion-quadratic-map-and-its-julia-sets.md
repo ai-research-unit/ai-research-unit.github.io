@@ -25,10 +25,10 @@ The formula $\tilde Q\mapsto\tilde Q^2$ is unambiguous once a product is chosen 
 **The diagonal of a left or a right multiplication.** For a fixed element $\tilde A$ the two maps
 
 $$
-\tilde R\mapsto \tilde A\tilde R+\tilde C \quad (\text{left}), \qquad \tilde R\mapsto \tilde R\tilde A+\tilde C \quad (\text{right})
+\tilde Q_1\mapsto \tilde A\tilde Q_1+\tilde C \quad (\text{left}), \qquad \tilde Q_1\mapsto \tilde Q_1\tilde A+\tilde C \quad (\text{right})
 $$
 
-are affine: for $\tilde A$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde R=\tilde Q=\tilde A$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
+are affine: for $\tilde A$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde Q_1=\tilde Q=\tilde A$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
 **The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{M}_+$. These are different theories; neither is the theory of this article.
 
@@ -37,7 +37,7 @@ are affine: for $\tilde A$ a unit they are conjugate to a linear map, their orbi
 | general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | holomorphic, quadratic | this article |
 | natural $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$ | scalar-valued, uses the bar | *Square Roots of a General Element in the Biquaternion Algebra* |
 | Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde C$ | real-analytic, not holomorphic | *Norm and Invertibility in the General Quaternionic Algebra* |
-| left or right $\tilde A\tilde R$, $\tilde R\tilde A$ | affine in $\tilde R$ | no fractal | — |
+| left or right $\tilde A\tilde Q_1$, $\tilde Q_1\tilde A$ | affine in $\tilde Q_1$ | no fractal | — |
 | matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
 
 **Remark (why the choice is a choice).** The general plain bilinear product is the canonical multiplication of $\mathbb{B}$ once $\mathbb{B}$ is presented as a $\mathbb{C}$-algebra with the quaternion relations, so the first line of the table is the canonical reading. What is *not* canonical is the size. The algebra carries a complex-valued multiplicative norm $\langle\cdot\rangle_{\natural}$, its modulus $r=\sqrt{|N|}$, and the Euclidean norm $\|\cdot\|_E$, and no one of the three is singled out by the algebra. **The map is canonical; the norm used to define boundedness is a choice of metric, and the escape radius depends on it.** Boundedness itself does not, by the next section.

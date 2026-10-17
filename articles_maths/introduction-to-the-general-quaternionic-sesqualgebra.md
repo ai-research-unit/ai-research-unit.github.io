@@ -55,7 +55,7 @@ Both displays are quoted from *The Four General Products of the Biquaternioid $\
 $$
 (\lambda\tilde P)\star\tilde Q=\lambda\,(\tilde P\star\tilde Q) , \qquad
 \tilde P\star(\lambda\tilde Q)=\bar\lambda\,(\tilde P\star\tilde Q) , \qquad \lambda\in\mathbb{C} , \qquad
-(\tilde P+\tilde R)\star\tilde Q=\tilde P\star\tilde Q+\tilde R\star\tilde Q .
+(\tilde P+\tilde Q_5)\star\tilde Q=\tilde P\star\tilde Q+\tilde Q_5\star\tilde Q .
 $$
 
 **Proof.** The coordinates of the developed form are sums of terms $P_\mu\overline{Q_\nu}$ with fixed coefficients, so they are additive and $\mathbb{C}$-linear in the four coordinates of $\tilde P$ alone and additive and conjugate-linear in the four coordinates of $\tilde Q$ alone. The three displays are that statement read coordinate by coordinate; the natural conjugation is $\mathbb{C}$-linear and contributes no conjugation.
@@ -120,16 +120,16 @@ The table differs from the $\natural$-bilinear table of *Introduction to the Gen
 **Proposition.** The associator of the multiplication,
 
 $$
-[\tilde P,\tilde Q,\tilde R]=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R) ,
+[\tilde P,\tilde Q,\tilde Q_5]=(\tilde P\star\tilde Q)\star\tilde Q_5-\tilde P\star(\tilde Q\star\tilde Q_5) ,
 $$
 
 is
 
 $$
-[\tilde P,\tilde Q,\tilde R]=\overline{\tilde Q}\,\tilde P\,\tilde R^{*}-\tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} .
+[\tilde P,\tilde Q,\tilde Q_5]=\overline{\tilde Q}\,\tilde P\,\tilde Q_5^{*}-\tilde P^{\natural}\,\tilde Q_5\,\overline{\tilde Q} .
 $$
 
-**Proof.** Two identities of §*The Star of a Product* are used: $(\tilde A\star\tilde Q_4)^{*}=\tilde Q_4\overline{\tilde A}$ and $(\tilde A\star\tilde Q_4)^{\natural}=\overline{\tilde Q_4}\tilde A$. Hence $(\tilde P\star\tilde Q)\star\tilde R=(\tilde P\star\tilde Q)^{\natural}\tilde R^{*}=\overline{\tilde Q}\tilde P\tilde R^{*}$ on the one hand, and $\tilde P\star(\tilde Q\star\tilde R)=\tilde P^{\natural}(\tilde Q\star\tilde R)^{*}=\tilde P^{\natural}\tilde R\overline{\tilde Q}$ on the other, and the difference of the two is the associator displayed.
+**Proof.** Two identities of §*The Star of a Product* are used: $(\tilde A\star\tilde Q_4)^{*}=\tilde Q_4\overline{\tilde A}$ and $(\tilde A\star\tilde Q_4)^{\natural}=\overline{\tilde Q_4}\tilde A$. Hence $(\tilde P\star\tilde Q)\star\tilde Q_5=(\tilde P\star\tilde Q)^{\natural}\tilde Q_5^{*}=\overline{\tilde Q}\tilde P\tilde Q_5^{*}$ on the one hand, and $\tilde P\star(\tilde Q\star\tilde Q_5)=\tilde P^{\natural}(\tilde Q\star\tilde Q_5)^{*}=\tilde P^{\natural}\tilde Q_5\overline{\tilde Q}$ on the other, and the difference of the two is the associator displayed.
 
 **Remark.** The associator is a sum of two terms of opposite parity in the second variable and the same parity in the first and the third, and it vanishes under none of the standard hypotheses; the product has no identity on either side, so the associator is not the instrument of an associativity theory for this algebra, and the structural object that survives is the ternary product of §*The Ternary Product*.
 
@@ -392,14 +392,14 @@ a two-parameter family in the real three-dimensional vector subspace.
 **Definition.** The **ternary product** attached to the multiplication is
 
 $$
-\{\tilde P,\tilde Q,\tilde R\}=(\tilde P\star\tilde Q)\star\tilde R^{*}=\overline{\tilde Q}\,\tilde P\,\tilde R ,
+\{\tilde P,\tilde Q,\tilde Q_5\}=(\tilde P\star\tilde Q)\star\tilde Q_5^{*}=\overline{\tilde Q}\,\tilde P\,\tilde Q_5 ,
 $$
 
 the definition $\{x,y,z\}=(x\star y)\star z^{*}$ of *The Sesquilinear Associator and the Ternary Product* read with this multiplication.
 
 **Proposition.** The ternary product is additive in each variable, it is $\mathbb{C}$-linear in the first and the third variables and conjugate-linear in the second, and under the relabelling $\tilde Q\mapsto\tilde Q^{\natural}$ it is the product $\tilde Q_1^{*}\tilde Q_2\tilde Q_3$ of the algebra with its anti-automorphism ${}^{*}$, that is the **left** model of *Algebraic J\*-Algebras* in place of the middle model $\tilde Q_1\tilde Q_2^{*}\tilde Q_3$.
 
-**Proof.** The first display is computed from the rule and the anti-multiplicativity of the two conjugations; the parities are read on the coordinates. For the relabelling, $\overline{\tilde Q}\,\tilde P\,\tilde R=\tilde Q_1^{*}\tilde Q_2\tilde Q_3$ with $\tilde Q_1=\tilde Q^{\natural}$, $\tilde Q_2=\tilde P$ and $\tilde Q_3=\tilde R$, using $\overline{\tilde Q}=\bigl(\tilde Q^{\natural}\bigr)^{*}$; and the map ${}^{*}$ is the conjugate-linear involutive anti-automorphism of the algebra, the datum of the construction.
+**Proof.** The first display is computed from the rule and the anti-multiplicativity of the two conjugations; the parities are read on the coordinates. For the relabelling, $\overline{\tilde Q}\,\tilde P\,\tilde Q_5=\tilde Q_1^{*}\tilde Q_2\tilde Q_3$ with $\tilde Q_1=\tilde Q^{\natural}$, $\tilde Q_2=\tilde P$ and $\tilde Q_3=\tilde Q_5$, using $\overline{\tilde Q}=\bigl(\tilde Q^{\natural}\bigr)^{*}$; and the map ${}^{*}$ is the conjugate-linear involutive anti-automorphism of the algebra, the datum of the construction.
 
 ### The Failure of the Jordan Triple Identity
 
@@ -493,7 +493,7 @@ $$
 \boxed{\ \text{With the general quaternionic sesquilinear product, } \mathbb{B} \text{ is a four-dimensional sesqualgebra over } (\mathbb{C},\varsigma) \text{ with no unit on either side, neither associative nor commutative, and not the derived operation.}\ }
 $$
 
-Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on the left and $\tilde Q^{\natural}$ on the right, so no element is a unit on either side; its table has the unit followed by the negated quaternion units as first row and as first column, and the quaternion table on the imaginary block; its associator is $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$; it is not flexible and not power associative, and its left multiplications do not form a monoid, the composition $L_{\tilde A}\circ L_{\tilde Q_4}$ being the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde Q_4}$, linear where each $L$ is conjugate-linear. The multiplication is $\mathbb{R}$-bilinear and is not a product of the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, being semilinear in its second slot; on the real quaternion subspace it is the reversed conjugate $\overline{qp}$ of the quaternion product; the scalar action $\varphi(A)=Ae_t$ is not multiplicative, $\varphi(z)\star\varphi(w)=\varphi(z\overline{w})$, its image $\mathbb{C}e_t$ is not central, and the centre is trivial, $Z(\mathbb{B})=0$, so the block is a simple sesqualgebra that is not central and not a division algebra, with the nilpotent $e_t+i\vec e_x$ as witness. The star of a product is the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so the involution does not exchange the two slots; the square is $\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$, its scalar part is $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu}$, and on the two halves it is the real scalar $\pm\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, the Hermitian idempotents of the algebra having a vanishing square in the multiplication. The idempotents are $0$, $e_t$ and the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ in the real vector subspace, the family alone lying outside the Hermitian subspace. The ternary product is $\overline{\tilde Q}\tilde P\tilde R$, the left model $\tilde Q_1^{*}\tilde Q_2\tilde Q_3$; it has the parity of an algebraic $J^{*}$-algebra and fails the Jordan triple identity, at $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ with the two sides $\vec e_z$ and $-3\vec e_z$. The sesqualgebra is simple, its ideals being $0$ and $\mathbb{B}$, and its scalar part is $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. The generators $\vec e_x,\vec e_y$ present the underlying plain algebra and not the sesqualgebra, and the one-element subalgebra of a generic element is the whole space, of complex dimension four, while the elements of the real quaternion subspace generate only two-dimensional subalgebras; no one-generator subalgebra is commutative.
+Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on the left and $\tilde Q^{\natural}$ on the right, so no element is a unit on either side; its table has the unit followed by the negated quaternion units as first row and as first column, and the quaternion table on the imaginary block; its associator is $\overline{\tilde Q}\tilde P\tilde Q_5^{*}-\tilde P^{\natural}\tilde Q_5\overline{\tilde Q}$; it is not flexible and not power associative, and its left multiplications do not form a monoid, the composition $L_{\tilde A}\circ L_{\tilde Q_4}$ being the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde Q_4}$, linear where each $L$ is conjugate-linear. The multiplication is $\mathbb{R}$-bilinear and is not a product of the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, being semilinear in its second slot; on the real quaternion subspace it is the reversed conjugate $\overline{qp}$ of the quaternion product; the scalar action $\varphi(A)=Ae_t$ is not multiplicative, $\varphi(z)\star\varphi(w)=\varphi(z\overline{w})$, its image $\mathbb{C}e_t$ is not central, and the centre is trivial, $Z(\mathbb{B})=0$, so the block is a simple sesqualgebra that is not central and not a division algebra, with the nilpotent $e_t+i\vec e_x$ as witness. The star of a product is the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so the involution does not exchange the two slots; the square is $\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$, its scalar part is $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu}$, and on the two halves it is the real scalar $\pm\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, the Hermitian idempotents of the algebra having a vanishing square in the multiplication. The idempotents are $0$, $e_t$ and the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ in the real vector subspace, the family alone lying outside the Hermitian subspace. The ternary product is $\overline{\tilde Q}\tilde P\tilde Q_5$, the left model $\tilde Q_1^{*}\tilde Q_2\tilde Q_3$; it has the parity of an algebraic $J^{*}$-algebra and fails the Jordan triple identity, at $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ with the two sides $\vec e_z$ and $-3\vec e_z$. The sesqualgebra is simple, its ideals being $0$ and $\mathbb{B}$, and its scalar part is $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. The generators $\vec e_x,\vec e_y$ present the underlying plain algebra and not the sesqualgebra, and the one-element subalgebra of a generic element is the whole space, of complex dimension four, while the elements of the real quaternion subspace generate only two-dimensional subalgebras; no one-generator subalgebra is commutative.
 
 ## Summary of Notation
 
@@ -509,13 +509,13 @@ Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on t
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugations on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ and $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
 | $\sigma$ | the first row, $\sigma(\tilde Q)=e_t\star\tilde Q=\tilde Q^{*}$ |
-| $[\tilde P,\tilde Q,\tilde R]$ | the associator, $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$ |
+| $[\tilde P,\tilde Q,\tilde Q_5]$ | the associator, $\overline{\tilde Q}\tilde P\tilde Q_5^{*}-\tilde P^{\natural}\tilde Q_5\overline{\tilde Q}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the skew-Hermitian subspaces, the fixed and the anti-fixed sets of ${}^{*}$ |
 | $Z(\mathbb{B})=0$ | the centre of the multiplication, trivial |
 | $\varphi(A)=Ae_t$ | the scalar action; its image $\mathbb{C}e_t$ is a subalgebra but is not central |
 | $\sum_\mu Q_\mu^{2}$ | the central scalar of the square on either half, $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ |
 | $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the scalar part of the multiplication, with $\varepsilon=(1,-1,-1,-1)$ |
-| $\{\tilde P,\tilde Q,\tilde R\}=\overline{\tilde Q}\tilde P\tilde R$ | the ternary product, the left model $\tilde Q_1^{*}\tilde Q_2\tilde Q_3$ |
+| $\{\tilde P,\tilde Q,\tilde Q_5\}=\overline{\tilde Q}\tilde P\tilde Q_5$ | the ternary product, the left model $\tilde Q_1^{*}\tilde Q_2\tilde Q_3$ |
 | $\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$ | the nontrivial idempotents of the multiplication, in the real vector subspace |
 
 ## Further Reading

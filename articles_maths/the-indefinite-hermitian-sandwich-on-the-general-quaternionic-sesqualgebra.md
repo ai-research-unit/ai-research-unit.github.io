@@ -153,7 +153,7 @@ $$
 
 **Remark (the kernel of the sandwich map).** The sandwich map $Q\mapsto H_Q$ is a homomorphism from the $J$-unitary group into the automorphism group of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ whose kernel is the circle of scalars of modulus one: $H_Q(T)=T$ for all $T$ forces $Q$ central, and the $J$-unitary central operators are the phases. The algebra's own parameters generate inside the $J$-unitary group the subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of *The Krein Isometry Group and Its J-Contractions*, and the sandwich restricts to the automorphisms $\Theta_{\tilde Q}$ themselves, which are inner and depend only on the class of $\tilde Q$ in $PU(2)$.
 
-*Proof.* Multiplicativity and the kernel statement are the propositions of the first section; the subgroup statement is the corollary of the cited article, and the inner reading is the composition law, since $H_{\Theta_{\tilde Q}}(\Theta_{\tilde R}) = \Theta_{\tilde Q}\Theta_{\tilde R}\Theta_{\tilde Q}^{\dagger}$ is conjugation in the group of $J$-unitary operators.
+*Proof.* Multiplicativity and the kernel statement are the propositions of the first section; the subgroup statement is the corollary of the cited article, and the inner reading is the composition law, since $H_{\Theta_{\tilde Q}}(\Theta_{\tilde Q_1}) = \Theta_{\tilde Q}\Theta_{\tilde Q_1}\Theta_{\tilde Q}^{\dagger}$ is conjugation in the group of $J$-unitary operators.
 
 ## Contrast with the Definite Sandwich
 

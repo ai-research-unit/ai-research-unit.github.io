@@ -148,7 +148,7 @@ that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$
 
 ### The Isotopy with the Two by Two Matrices
 
-**Remark (degree two and the matrix model).** The block is a special Jordan algebra of degree two, and it is **isotopic** to the symmetrised matrix algebra $M_2(\mathbb{C})^{+}$: the isomorphism $\mathsf{M}_2$ of *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* carries the symmetric plain product to the symmetrised matrix product, $\mathsf{M}_2(\tilde Q\bullet\tilde R)=\tfrac12(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde R)+\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde Q))$, and carries the generic trace to the matrix trace and the generic norm to the determinant,
+**Remark (degree two and the matrix model).** The block is a special Jordan algebra of degree two, and it is **isotopic** to the symmetrised matrix algebra $M_2(\mathbb{C})^{+}$: the isomorphism $\mathsf{M}_2$ of *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* carries the symmetric plain product to the symmetrised matrix product, $\mathsf{M}_2(\tilde Q\bullet\tilde{Q}_1)=\tfrac12(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde{Q}_1)+\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde Q))$, and carries the generic trace to the matrix trace and the generic norm to the determinant,
 
 $$
 T(\tilde Q)=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q),\qquad
