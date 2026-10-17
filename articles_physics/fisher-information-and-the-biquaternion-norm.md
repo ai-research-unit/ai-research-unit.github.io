@@ -7,10 +7,10 @@ Fisher information is the geometric measure of information. For a family of prob
 This article develops the Fisher information of the informational sector $\mathbb{M}_+$ of the biquaternion algebra, and its relation to the sector's biquaternion norm. The result is a **reciprocity**. The classical Fisher information of the state's own (spectral) two-outcome family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
 
 $$
-g_{rr} = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}},
+g_{rr} = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
 $$
 
-where $\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ is the biquaternion norm of the state. The two interpretations of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.
+where $\langle\tilde{Ϛ}\rangle_{\natural} = \tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ is the biquaternion norm of the state. The two interpretations of a state are therefore reciprocal: the biquaternion norm measures how far the state lies inside the future cone, and the Fisher information measures how sharply a displacement of that position can be detected. The Fisher information is minimal at the maximally mixed state, where the biquaternion norm is largest, and it diverges on the boundary, where the biquaternion norm vanishes.
 
 The boundary is the **zero-divisor cone**. The reciprocity therefore says that the states of maximal information — the states in which an arbitrarily small change of the Bloch radius is detected with arbitrarily high precision — are exactly the pure states, that is, the non-invertible elements of the algebra. The analytic singularity of the logarithm used in the companion article *Coarse-Graining and the Biquaternion Entropy Functional*, the vanishing of the biquaternion norm, and the divergence of the Fisher information are three descriptions of the same locus.
 
@@ -18,7 +18,7 @@ The article proceeds as follows. First the biquaternion norm is set down as a qu
 
 The treatment is **classical**. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{M}_+$ and the material sector is the anti-Hermitian subspace $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r|\le 1$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{M}_+$ and the material sector is the anti-Hermitian subspace $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; and a state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r|\le 1$.
 
 ## The Biquaternion Norm on States
 
@@ -27,29 +27,29 @@ The conventions are those of the companion articles. The biquaternion algebra is
 A state of the informational sector is
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3, \quad |\vec r| \le 1 ,
+\tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3, \quad |\vec r| \le 1 ,
 $$
 
-with $\mathrm{Tr}(\tilde{\rho}) = 1$ and purity $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\vec r|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,
+with $\mathrm{Tr}(\tilde{Ϛ}) = 1$ and purity $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$. Its biquaternion norm is the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on it,
 
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
+\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
 $$
 
-The biquaternion norm is a multiple of the identity because $\tilde{\rho}$ is Hermitian; its scalar coefficient is the **biquaternion-norm defect** $\tfrac{1}{4}(1-|\vec r|^2)$, positive in the interior of the Bloch ball, zero on its boundary, and negative outside. It measures the depth of the state inside the future cone of the form, and the companion article *Coarse-Graining and the Biquaternion Entropy Functional* shows that the entropy functional of the sector is a monotone function of it.
+The biquaternion norm is a multiple of the identity because $\tilde{Ϛ}$ is Hermitian; its scalar coefficient is the **biquaternion-norm defect** $\tfrac{1}{4}(1-|\vec r|^2)$, positive in the interior of the Bloch ball, zero on its boundary, and negative outside. It measures the depth of the state inside the future cone of the form, and the companion article *Coarse-Graining and the Biquaternion Entropy Functional* shows that the entropy functional of the sector is a monotone function of it.
 
 ### The Biquaternion Norm of a Difference
 
-The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{\sigma} = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the traceless element
+The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{\sigma} = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the traceless element
 
 $$
-\tilde{\rho} - \tilde{\sigma} = \tfrac{i}{2}\left(\vec r-\vec s\right),
+\tilde{Ϛ} - \tilde{\sigma} = \tfrac{i}{2}\left(\vec r-\vec s\right),
 $$
 
 and its biquaternion norm is
 
 $$
-N\!\left(\tilde{\rho}-\tilde{\sigma}\right)
+N\!\left(\tilde{Ϛ}-\tilde{\sigma}\right)
 = \sum_k \left(\frac{i\left(r_k-s_k\right)}{2}\right)^2 e_t
 = -\frac{1}{4}\left|\vec r-\vec s\right|^2 e_t .
 $$
@@ -57,20 +57,20 @@ $$
 Equivalently, the trace pairing gives the Hilbert–Schmidt distance. Since $(\vec r-\vec s)^2 = -|\vec r-\vec s|^2 e_t$ for a real pure quaternion,
 
 $$
-\left(\tilde{\rho}-\tilde{\sigma}\right)^2
+\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2
 = \left(\frac{i}{2}\right)^2\left(\vec r-\vec s\right)^2
 = \frac{1}{4}\left|\vec r-\vec s\right|^2 e_t ,
 \qquad
-\mathrm{Tr}\!\left(\left(\tilde{\rho}-\tilde{\sigma}\right)^2\right) = \frac{1}{2}\left|\vec r-\vec s\right|^2 ,
+\mathrm{Tr}\!\left(\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2\right) = \frac{1}{2}\left|\vec r-\vec s\right|^2 ,
 $$
 
 so that the Euclidean distance and the biquaternion norm of the difference carry the same information,
 
 $$
-\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{\rho}-\tilde{\sigma}\right)^2\right) = -4\,\mathrm{Sc}\,N\!\left(\tilde{\rho}-\tilde{\sigma}\right).
+\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2\right) = -4\,\mathrm{Sc}\,N\!\left(\tilde{Ϛ}-\tilde{\sigma}\right).
 $$
 
-Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{\rho}-\tilde{\sigma} = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
+Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}-\tilde{\sigma} = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
 
 This is the quadratic form that the Fisher information will refine: the biquaternion norm of a difference gives a **global** distance between two states, and the Fisher information gives the **local** quadratic form whose square root is the infinitesimal distance. The reciprocity is the statement that the two are inverses rather than multiples of one another, which is why it carries information beyond the geometry.
 
@@ -109,7 +109,7 @@ $$
 ds^2 = \sum_{ij} g_{ij}(\vec\theta)\,d\theta^i d\theta^j ,
 $$
 
-and the finite distance along a path is the integral of $ds$. The metric is invariant under reparametrisation of the family, which is why it is the geometric object and $F$ is only its coordinate expression. The Fisher information is also, by a standard theorem, the second derivative of the relative entropy along the family: for a family of states $\tilde{\rho}(\vec\theta)$, the second derivative of the relative entropy at coincidence is the information matrix. That theorem is used in the section on the relative entropy below, and it is what gives the metric its informational meaning.
+and the finite distance along a path is the integral of $ds$. The metric is invariant under reparametrisation of the family, which is why it is the geometric object and $F$ is only its coordinate expression. The Fisher information is also, by a standard theorem, the second derivative of the relative entropy along the family: for a family of states $\tilde{Ϛ}(\vec\theta)$, the second derivative of the relative entropy at coincidence is the information matrix. That theorem is used in the section on the relative entropy below, and it is what gives the metric its informational meaning.
 
 ## Fisher Information in the Informational Sector
 
@@ -118,7 +118,7 @@ and the finite distance along a path is the integral of $ds$. The metric is inva
 The state carries a natural classical distribution: its two eigenvalues in its own basis. Write $\vec u_r = \vec r/|\vec r|$ for a state with $\vec r\neq0$ and let $\tilde\Pi_{1,2}(\vec u_r)$ be the corresponding idempotents, so that
 
 $$
-\tilde{\rho} = \lambda_+\tilde\Pi_1(\vec u_r) + \lambda_-\tilde\Pi_2(\vec u_r), \qquad
+\tilde{Ϛ} = \lambda_+\tilde\Pi_1(\vec u_r) + \lambda_-\tilde\Pi_2(\vec u_r), \qquad
 \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right).
 $$
 
@@ -139,10 +139,10 @@ $$
 Since $\lambda_+\lambda_- = \tfrac{1}{4}(1-r^2)$, this collapses to
 
 $$
-\boxed{\;F_r(r) = \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}}.\;}
+\boxed{\;F_r(r) = \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}.\;}
 $$
 
-**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-r^2$ is the scalar part of the biquaternion norm of the state, read from $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-r^2)e_t$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{\rho} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$, where $r^2 = \tfrac{1}{2}$, $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{8}e_t$, and both sides give $2$.
+**The Fisher information of the spectral family is the reciprocal of the biquaternion norm.** This is the central identity of the article, and it is a statement about the algebra: the denominator $1-r^2$ is the scalar part of the biquaternion norm of the state, read from $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-r^2)e_t$, so the whole expression is a function of the state's quadratic invariant. The evaluation is elementary and was checked on the interior superposition $\tilde{Ϛ} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$, where $r^2 = \tfrac{1}{2}$, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{8}e_t$, and both sides give $2$.
 
 ### The Information Metric of the Sector
 
@@ -151,16 +151,16 @@ The spectral distribution depends on the Bloch vector only through its length, s
 $$
 g_{ij}(\vec r) = \sum_\pm \frac{\partial/\partial r_i p_\pm\,\partial/\partial r_j p_\pm}{p_\pm}
 = \frac{\vec{u_r}_i\vec{u_r}_j}{1-r^2}
-= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}} .
+= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}} .
 $$
 
 The metric is **rank one**: it is the outer product of the radial unit vector with itself, scaled by the reciprocal of the biquaternion norm. Its single nonzero eigenvalue is
 
 $$
-\frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}},
+\frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
 $$
 
-which is also its trace, since $\vec u_r$ is a unit vector. The rank and the eigenvalue were checked numerically on the interior superposition: at $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ one has $r^2 = \tfrac{1}{2}$, the matrix $\vec{u_r}_i\vec{u_r}_j/(1-r^2) = \vec u_r\vec u_r^{\!\top}/(1-r^2)$ has trace $2$, and its single nonzero eigenvalue is $2 = 1/(1-\tfrac{1}{2}) = 1/(4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural})$. Geometrically this is exactly right: the spectral distribution is invariant under rotations of the Bloch ball, so the information metric is blind to angular displacements and detects only the radial one. The state carries a sphere's worth of directions, and its own eigenvalue pair knows only the radius.
+which is also its trace, since $\vec u_r$ is a unit vector. The rank and the eigenvalue were checked numerically on the interior superposition: at $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ one has $r^2 = \tfrac{1}{2}$, the matrix $\vec{u_r}_i\vec{u_r}_j/(1-r^2) = \vec u_r\vec u_r^{\!\top}/(1-r^2)$ has trace $2$, and its single nonzero eigenvalue is $2 = 1/(1-\tfrac{1}{2}) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$. Geometrically this is exactly right: the spectral distribution is invariant under rotations of the Bloch ball, so the information metric is blind to angular displacements and detects only the radial one. The state carries a sphere's worth of directions, and its own eigenvalue pair knows only the radius.
 
 The rank-one character is a property of the *classical* information and is not shared by the quantum information. The full metric of the Bloch ball — the one that measures angular displacements as well — is the **quantum Fisher information metric** $g^{\rm Q}$, which is the subject of the sibling quantum category; the classical metric is its radial shadow and is bounded above by it, the difference between the two forms being the tangential projection,
 
@@ -170,7 +170,7 @@ g_{ij} = \frac{\vec{u_r}_i\vec{u_r}_j}{1-r^2}, \qquad
 g^{\rm Q}_{ij} - g_{ij} = \delta_{ij} - \vec{u_r}_i\vec{u_r}_j .
 $$
 
-The comparison of the two measures is meaningful only in a stated normalization, and one is fixed here once for the whole article: the quantum Fisher information is taken in the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{\rho}L^2)$, in which the metric has the radial and tangential components $g^{\rm Q}_{rr} = 1/(1-r^2)$ and $g^{\rm Q}_{\Omega\Omega} = r^2$, and the classical metric of the spectral family is exactly its radial component. The **Bures** metric of the standard geometry of mixed states is one quarter of that metric in the normalization in which the Bures distance of two pure states equals their Fubini–Study distance; in that normalization the distance from the maximally mixed state to the boundary is $\pi/4$, whereas the classical Fisher–Rao distance computed below is $\pi/2$. The factor of four is a choice of normalization and not a disagreement between the two accounts, and every comparison between the classical and the quantum measure in this article is made in the quantum Fisher normalization. The contrast is made precise at the end of the article.
+The comparison of the two measures is meaningful only in a stated normalization, and one is fixed here once for the whole article: the quantum Fisher information is taken in the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$, in which the metric has the radial and tangential components $g^{\rm Q}_{rr} = 1/(1-r^2)$ and $g^{\rm Q}_{\Omega\Omega} = r^2$, and the classical metric of the spectral family is exactly its radial component. The **Bures** metric of the standard geometry of mixed states is one quarter of that metric in the normalization in which the Bures distance of two pure states equals their Fubini–Study distance; in that normalization the distance from the maximally mixed state to the boundary is $\pi/4$, whereas the classical Fisher–Rao distance computed below is $\pi/2$. The factor of four is a choice of normalization and not a disagreement between the two accounts, and every comparison between the classical and the quantum measure in this article is made in the quantum Fisher normalization. The contrast is made precise at the end of the article.
 
 ### The Measurement Family
 
@@ -193,13 +193,13 @@ The measurement family also makes the divergence at the boundary transparent. As
 
 ## The Reciprocity and Its Meaning
 
-The identity $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural})$ is a reciprocity in the strict sense: the biquaternion norm of the state and the Fisher information of its spectral family are multiplicative inverses, up to the fixed constant $4$. Four consequences organise the interpretation.
+The identity $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$ is a reciprocity in the strict sense: the biquaternion norm of the state and the Fisher information of its spectral family are multiplicative inverses, up to the fixed constant $4$. Four consequences organise the interpretation.
 
-**The maximally mixed state carries the least radial information.** At $\vec r = 0$ the biquaternion norm is maximal, $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}e_t$, and $F_r = 1$. The state $\tilde{\rho} = \tfrac{1}{2}e_t$ is the state of least distinguishability: its two eigenvalue probabilities are equal and their derivative with respect to the radius is the smallest possible relative to the probabilities. It is the maximum-entropy state of the companion article, and it is the minimum-information state here.
+**The maximally mixed state carries the least radial information.** At $\vec r = 0$ the biquaternion norm is maximal, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}e_t$, and $F_r = 1$. The state $\tilde{Ϛ} = \tfrac{1}{2}e_t$ is the state of least distinguishability: its two eigenvalue probabilities are equal and their derivative with respect to the radius is the smallest possible relative to the probabilities. It is the maximum-entropy state of the companion article, and it is the minimum-information state here.
 
 **The pure states carry unbounded radial information.** At $|\vec r| = 1$ the biquaternion norm vanishes and $F_r$ diverges. The pure states are the zero divisors, the states whose logarithm does not exist, and the states of zero entropy; they are also the states of divergent Fisher information. The coincidence is not accidental. The biquaternion-norm defect $1-r^2$ is the scale at which the state's two eigenvalues are separated from the deterministic endpoints, and a state near an endpoint is maximally informative about its distance from it.
 
-**The information is a function of the biquaternion norm alone.** Every expression above is a function of $\langle\tilde{\rho}\rangle_{\natural}$ and of the direction $\vec u_r$, and the radial part is a function of $\langle\cdot\rangle_{\natural}$ alone. The biquaternion norm is thus the single quadratic invariant that carries the state's geometry, its entropy, and its Fisher information. The three interpretations are monotonically related: as $\langle\cdot\rangle_{\natural}$ decreases from its central maximum to zero, the entropy decreases from $\log 2$ to zero and the Fisher information increases from $1$ to infinity.
+**The information is a function of the biquaternion norm alone.** Every expression above is a function of $\langle\tilde{Ϛ}\rangle_{\natural}$ and of the direction $\vec u_r$, and the radial part is a function of $\langle\cdot\rangle_{\natural}$ alone. The biquaternion norm is thus the single quadratic invariant that carries the state's geometry, its entropy, and its Fisher information. The three interpretations are monotonically related: as $\langle\cdot\rangle_{\natural}$ decreases from its central maximum to zero, the entropy decreases from $\log 2$ to zero and the Fisher information increases from $1$ to infinity.
 
 **The metric is the Hessian of the relative entropy.** The reciprocity can be derived a second way, which identifies the Fisher information as the curvature of the information-theoretic divergence rather than merely as the variance of an estimator. This is the subject of the next section.
 
@@ -208,14 +208,14 @@ The identity $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural})$ i
 The relative entropy of two states of the sector is
 
 $$
-D\!\left(\tilde{\rho}\,\|\,\tilde{\sigma}\right) = \mathrm{Tr}\!\left(\tilde{\rho}\left(\log\tilde{\rho} - \log\tilde{\sigma}\right)\right)
-= 2\,\mathrm{Sc}\!\left(\tilde{\rho}\left(\log\tilde{\rho} - \log\tilde{\sigma}\right)\right),
+D\!\left(\tilde{Ϛ}\,\|\,\tilde{\sigma}\right) = \mathrm{Tr}\!\left(\tilde{Ϛ}\left(\log\tilde{Ϛ} - \log\tilde{\sigma}\right)\right)
+= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\left(\log\tilde{Ϛ} - \log\tilde{\sigma}\right)\right),
 $$
 
 which is the algebra's transcription of the classical Kullback–Leibler divergence; on the diagonal states it is the ordinary divergence of the two outcome distributions. The standard information-geometric theorem states that the Fisher information is the second derivative of this divergence along a family:
 
 $$
-g_{ij}(\vec\theta) = \left.\frac{\partial^2}{\partial\theta^i\partial\theta^j}\right|_{\vec\theta=\vec\theta_0} D\!\left(\tilde{\rho}(\vec\theta)\,\|\,\tilde{\rho}(\vec\theta_0)\right).
+g_{ij}(\vec\theta) = \left.\frac{\partial^2}{\partial\theta^i\partial\theta^j}\right|_{\vec\theta=\vec\theta_0} D\!\left(\tilde{Ϛ}(\vec\theta)\,\|\,\tilde{Ϛ}(\vec\theta_0)\right).
 $$
 
 For the radial spectral family the divergence is
@@ -273,34 +273,34 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{\rho}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than on a pure state.
+**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than on a pure state.
 
-**Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{\rho}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
+**Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
 
 **Not supplied.** The framework does not pick out a preferred measurement axis, so the classical information is measurement-dependent except in the spectral family. It does not supply the angular part of the metric; that is the quantum Fisher information. And it predicts no departure from the standard information geometry of a two-level system, which it reformulates in the algebra's coordinates.
 
 ## Summary
 
-A state of the informational sector is $\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$, $|\vec r|\le1$, with biquaternion norm $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$. The biquaternion norm of a difference of states is a negative multiple of the squared Euclidean distance, $\langle\tilde{\rho}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, so the same quadratic form supplies the sector's metric.
+A state of the informational sector is $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$, $|\vec r|\le1$, with biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$. The biquaternion norm of a difference of states is a negative multiple of the squared Euclidean distance, $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, so the same quadratic form supplies the sector's metric.
 
 The **Fisher information of the spectral family** — the classical two-outcome distribution formed by the state's eigenvalues $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ — is
 
 $$
-F_r = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}},
+F_r = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
 $$
 
 **the reciprocal of the biquaternion norm.** In three dimensions the information metric of the family is the rank-one form
 
 $$
 g_{ij} = \frac{\vec{u_r}_i\vec{u_r}_j}{1-|\vec r|^2}
-= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural}},
+= \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
 $$
 
 whose single nonzero eigenvalue is the reciprocity above. For a measurement along a fixed axis $\vec u$ and a family $\vec r(\theta)$, the classical information is $F(\theta) = (\vec u\cdot\,d\vec r/d\theta)^2/(1-(\vec u\cdot\vec r)^2)$.
 
-The reciprocity is the sector's version of the identification of information with geometry. The biquaternion norm is maximal at the maximally mixed state, where the Fisher information is minimal, and it vanishes on the zero-divisor cone, where the Fisher information diverges; the entropy of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a third monotone interpretation of the same invariant. The Fisher information is also the Hessian of the relative entropy, $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D(\tilde{\rho}(\vec\theta)\|\tilde{\rho}(\vec\theta_0))$, so the biquaternion norm and the curvature of the divergence are inverses. The Fisher–Rao distance from the maximally mixed state to the pure sphere is $\pi/2$, finite even though the information diverges at the boundary.
+The reciprocity is the sector's version of the identification of information with geometry. The biquaternion norm is maximal at the maximally mixed state, where the Fisher information is minimal, and it vanishes on the zero-divisor cone, where the Fisher information diverges; the entropy of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a third monotone interpretation of the same invariant. The Fisher information is also the Hessian of the relative entropy, $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D(\tilde{Ϛ}(\vec\theta)\|\tilde{Ϛ}(\vec\theta_0))$, so the biquaternion norm and the curvature of the divergence are inverses. The Fisher–Rao distance from the maximally mixed state to the pure sphere is $\pi/2$, finite even though the information diverges at the boundary.
 
-The classical metric is the radial shadow of the full quantum Fisher information metric, in the normalization $\mathrm{Tr}(\tilde{\rho}L^2)$ of which the Bures metric of the standard geometry is one quarter; the angular directions and the optimal-measurement bound $F\le F_Q$ belong to the sibling quantum category and are cited as standard.
+The classical metric is the radial shadow of the full quantum Fisher information metric, in the normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ of which the Bures metric of the standard geometry is one quarter; the angular directions and the optimal-measurement bound $F\le F_Q$ belong to the sibling quantum category and are cited as standard.
 
 ## Summary of Notation
 
@@ -310,25 +310,25 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
+| $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
+| $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\tfrac{1}{4}(1-|\vec r|^2)$ | Biquaternion-norm defect |
-| $\langle\tilde{\rho}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |
-| $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$ | Hilbert–Schmidt distance |
+| $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |
+| $\mathrm{Tr}((\tilde{Ϛ}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$ | Hilbert–Schmidt distance |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Spectral (pointer) probabilities |
 | $\vec u_r = \vec r/|\vec r|$ | Bloch direction |
 | $F(\theta) = \sum_x (\partial/\partial\theta p)^2/p$ | Classical Fisher information |
 | $g_{ij}(\vec\theta)$ | Fisher information matrix (metric) |
-| $F_r = 1/(1-|\vec r|^2) = 1/(4\,\mathrm{Sc}\,\langle\tilde{\rho}\rangle_{\natural})$ | Reciprocity of Fisher information and biquaternion norm |
+| $F_r = 1/(1-|\vec r|^2) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$ | Reciprocity of Fisher information and biquaternion norm |
 | $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-|\vec r|^2)$ | Rank-one information metric of the spectral family |
 | $F(\theta) = (\vec u\cdot\,d\vec r/d\theta)^2/(1-(\vec u\cdot\vec r)^2)$ | Measurement-family information |
-| $D(\tilde{\rho}\|\tilde{\sigma}) = 2\,\mathrm{Sc}(\tilde{\rho}(\log\tilde{\rho}-\log\tilde{\sigma}))$ | Relative entropy |
+| $D(\tilde{Ϛ}\|\tilde{\sigma}) = 2\,\mathrm{Sc}(\tilde{Ϛ}(\log\tilde{Ϛ}-\log\tilde{\sigma}))$ | Relative entropy |
 | $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D$ | Fisher information as the Hessian of the relative entropy |
 | $d_{\rm FR}(r) = \arcsin r$ | Fisher–Rao distance from the maximally mixed state |
 | $F_Q(\theta) = |d\vec r/d\theta|^2$ (pure family) | Quantum Fisher information (standard, sibling category) |
-| $g^{\rm Q}_{ij} = \delta_{ij} + r^2\vec{u_r}_i\vec{u_r}_j/(1-r^2)$ | Quantum Fisher information metric, normalization $\mathrm{Tr}(\tilde{\rho}L^2)$ |
+| $g^{\rm Q}_{ij} = \delta_{ij} + r^2\vec{u_r}_i\vec{u_r}_j/(1-r^2)$ | Quantum Fisher information metric, normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ |
 | $g^{\rm Q}_{rr} = 1/(1-r^2)$, $g^{\rm Q}_{\Omega\Omega} = r^2$ | Its radial and tangential components |
 | $g^{\rm Q}_{ij} - g_{ij} = \delta_{ij} - \vec{u_r}_i\vec{u_r}_j$ | Tangential projection by which the classical metric is dominated |
 | $g^{\rm Bures} = \tfrac{1}{4}g^{\rm Q}$ | Bures metric in the Fubini–Study normalization; distance to the boundary $\pi/4$ |

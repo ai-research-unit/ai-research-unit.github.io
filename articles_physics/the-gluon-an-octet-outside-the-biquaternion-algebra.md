@@ -20,7 +20,7 @@ and there is no eight-dimensional compact subalgebra to be found. The algebra th
 
 The article is organised as follows. A first section transcribes the gluon's standard field theory: the eight fields, the field strength, the self-couplings, the invariant tensors, asymptotic freedom and confinement. A second section states what the framework reaches, namely the free kinematics of a single constituent. A third section establishes the obstructions, one at a time: the dimension of the compact algebra, the dimension of the modules, the symmetric invariant tensor, and the failure of the octonion route through non-associativity. A fourth section records the enlarged carrier in which the octet can be embedded and identifies the price — the colour index becomes external data. A fifth section places the result as the ceiling of the category and points to the informational interpretation of confinement.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$; the matrix realization is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material, anti-Hermitian) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational, Hermitian), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=ϙ/\hbar$; and the non-abelian curvature is $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f^{abc},d^{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$; the matrix realization is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material, anti-Hermitian) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational, Hermitian), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=ϙ/\hbar$; and the non-abelian curvature is $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the strong-interaction formulae, where $g_s$ denotes the standard QCD coupling and the standard symbols $f^{abc},d^{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the general theorem of which this article is the gluon case.
 - Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the placement of the strong sector in the framework and the list of open problems.
@@ -40,11 +40,11 @@ We use the conventions of the companion articles. The biquaternion algebra is $\
 
 Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G^a_\mu$, $a=1,\dots,8$, one for each generator $\lambda^a/2$ of $\mathrm{SU}(3)$. The action is
 $$
-S_{\mathrm{QCD}}=-\int d^4x\,\mathrm{Tr}\langle\tilde{\mathcal{G}}\rangle_{\natural},
+S_{\mathrm{QCD}}=-\frac14\int d^4x\,G^a_{\mu\nu}G^a_{\mu\nu},
 \qquad
-\tilde{\mathcal{G}}=\tilde\nabla\tilde G+\tfrac{g_s}{2}\,[\tilde G,\tilde G],\qquad \tilde G=\sum_a\tilde G^aT^a ,
+G^a_{\mu\nu}=\frac{\partial}{\partial Q_\mu}G^a_\nu-\frac{\partial}{\partial Q_\nu}G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu ,
 $$
-with $f^{abc}$ the structure constants of $\mathrm{SU}(3)$, defined by
+where $f^{abc}$ are the structure constants of $\mathrm{SU}(3)$, defined by
 $$
 [\lambda^a,\lambda^b]=2i f^{abc}\lambda^c ,
 \qquad
@@ -94,6 +94,8 @@ $$
 $$
 so that the gluon is charged under its own gauge group and interacts with itself.
 
+The fields $G^a_\mu$ and the field strengths $G^a_{\mu\nu}$ are the standard real QCD fields, and no colour matrix carries a tilde: the tilde marks an element of $\mathbb{B}$, not a matrix. The framework's biquaternion for a fixed colour component is $\tilde G$, and its free field strength is $\tilde F$ of §*What the Framework Reaches: The Free Constituent*.
+
 ### Asymptotic Freedom and Confinement
 
 The one-loop beta function of the strong coupling is
@@ -111,7 +113,7 @@ Three facts about the octet are the ones to hold against the algebra. Its dimens
 
 ## What the Framework Reaches: The Free Constituent
 
-The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G^a_\mu$ is a massless, neutral, spin-one field whose free equation is the Maxwell equation of the companion articles, whose field-strength biquaternion
+The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G^a_\mu$ is a massless, neutral, spin-one field whose free equation is the Maxwell equation of the companion articles. Its biquaternion potential is $\tilde G=iG^a_t e_t+\vec G^a\in\mathbb{M}_-$, in the convention of *The Photon in Biquaternionic Form*, and its field-strength biquaternion
 $$
 \tilde{F}=\tilde{\nabla}^{\natural}\tilde{G}-\mathrm{Sc}\left(\tilde{\nabla}^{\natural}\tilde{G}\right)
 \in\mathbb{M}_- ,
@@ -246,9 +248,9 @@ The interpretation of the strong-sector results is not this article's. Confineme
 
 The gluon is the massless spin-one gauge boson of $SU(3)$, eightfold degenerate in the adjoint representation, with the action
 $$
-S_{\mathrm{QCD}}=-\int d^4x\,\mathrm{Tr}\langle\tilde{\mathcal{G}}\rangle_{\natural},
+S_{\mathrm{QCD}}=-\frac14\int d^4x\,G^a_{\mu\nu}G^a_{\mu\nu},
 \qquad
-\tilde{\mathcal{G}}=\tilde\nabla\tilde G+\tfrac{g_s}{2}\,[\tilde G,\tilde G],\qquad \tilde G=\sum_a\tilde G^aT^a ,
+G^a_{\mu\nu}=\frac{\partial}{\partial Q_\mu}G^a_\nu-\frac{\partial}{\partial Q_\nu}G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu ,
 $$
 self-coupling through $f^{abc}$, asymptotically free with $b_0=11-\frac23N_f$, and confining at long distances. The framework reaches its **free kinematics**: a colour-fixed gluon is a massless material vector with the self-dual/anti-self-dual helicity decomposition and the field-strength invariants of the companion articles, indistinguishable at the level of the free field from the photon.
 
@@ -288,12 +290,13 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $f^{abc}=2\varepsilon^{abc}$, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ | Antisymmetric invariant of the compact factor, in the unnormalized basis $e_a$; vanishing symmetric invariant $d^{abc}=0$ |
 | $\mathrm{SU}(3)$, $\dim_\mathbb{R}\mathrm{SU}(3)=8$ | Colour algebra; not reachable from the compact part |
 | $G^a_\mu$ $(a=1,\dots,8)$ | Gluon fields; adjoint octet |
-| $\tilde{\mathcal{G}}=\tilde\nabla\tilde G+\tfrac{g_s}{2}[\tilde G,\tilde G]$ | Gluon field strength |
+| $G^a_{\mu\nu}=\frac{\partial}{\partial Q_\mu}G^a_\nu-\frac{\partial}{\partial Q_\nu}G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu$ | Gluon field strength; a colour matrix, no tilde |
 | $[\lambda^a,\lambda^b]=2if^{abc}\lambda^c$, $\{\lambda^a,\lambda^b\}=\tfrac43\delta^{ab}I+2d^{abc}\lambda^c$ | Gell-Mann tensors |
 | $f^{123}=1$, $f^{147}=\tfrac12$, $f^{156}=-\tfrac12$, $f^{458}=\tfrac{\sqrt3}{2}$ | Sample nonzero $SU(3)$ components of the invariant $f^{abc}$ (verified) |
 | $d^{118}=\tfrac1{\sqrt3}$, $d^{146}=\tfrac12$, $d^{448}=-\tfrac{1}{2\sqrt3}$, $d^{888}=-\tfrac1{\sqrt3}$ | Sample nonzero $SU(3)$ components of the invariant $d^{abc}$ (verified) |
 | $C_2(\mathrm{adj})=3$, $C_2(\mathrm{fund})=\tfrac43$, $T(\mathrm{fund})=\tfrac12$ | $SU(3)$ Casimir data (verified) |
 | $\beta_{g_s}=-\tfrac{g_s^3}{16\pi^2}b_0$, $b_0=11-\tfrac23N_f$ | One-loop QCD coefficient |
+| $\tilde G=iG^a_t e_t+\vec G^a\in\mathbb{M}_-$ | Biquaternion potential of a fixed colour component |
 | $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{G}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{G})\in\mathbb{M}_-$ | Free field-strength biquaternion of one gluon |
 | $\mathbb{B}\otimes\Lambda$ | Grassmann envelope adjacent to the algebra |
 | $\mathbb{O}$, $\mathrm{Aut}(\mathbb{O})=G_2\supset SU(3)$ | Octonions; the non-associative carrier of $SU(3)$ |
@@ -301,7 +304,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $\mathcal{A}_\mu=g_sG^a_\mu\lambda_a/2$ | Gauge potential in the embedded $\mathfrak{su}(3)$; a $3\times3$ traceless anti-Hermitian block of the enlarged carrier |
 | $\mathrm{U}(1)\times SU(2)$ | The framework's gauge sector; the electroweak factor |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
 
 ## Further Reading
 

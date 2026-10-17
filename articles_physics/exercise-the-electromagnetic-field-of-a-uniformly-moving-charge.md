@@ -10,7 +10,7 @@ $$
 \qquad
 \tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z,
 $$
-with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
+with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the source $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
 
 **What is inherited from the parent.** The charge $ϙ$ moves on the worldline $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$ with coordinate velocity $\vec v(t)$ and $\vec\beta = \vec v/c$. The retarded time is defined implicitly by
 $$
@@ -404,7 +404,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ | Potential biquaternion |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ | Source biquaternion; $\rho$ is the charge density |
+| $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J$, with $\rho$ the charge density |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
 | $ϙ$, $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$, $\vec v(t)$ | Charge, worldline, coordinate velocity |
@@ -422,7 +422,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\tilde{\Lambda}_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$, $\tanh\psi_b = v_b/c$ | Boost rotor; carries the lab to the frame moving with $+\vec v_b$ |
 | $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\vec v_b}\tilde{F}\tilde{\Lambda}_{\vec v_b}$ | Boost of the field (similarity, not rotor conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (recorded, not used) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (recorded, not used) |
 
 ## Further Reading
 

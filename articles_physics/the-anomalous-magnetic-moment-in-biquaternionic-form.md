@@ -23,10 +23,10 @@ $$
 the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ for $p^\mu=(E,\vec p)$. The dictionary companion fixes $\mathsf{M}_4(e_t)=I_4$, $\mathsf{M}_4(\vec e_x)=\gamma^2\gamma^3$, $\mathsf{M}_4(\vec e_y)=\gamma^3\gamma^1$, $\mathsf{M}_4(\vec e_z)=\gamma^1\gamma^2$, $\mathsf{M}_4(i)=-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$, hence $\mathsf{M}_4(i\vec e_\mu)=\gamma^0\gamma^\mu$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
-S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\not p+m)}{\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon} .
+S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
 $$
 
-The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
+The trace pairing is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
 
 ## The Vertex Function and the Form Factors
 

@@ -4,7 +4,7 @@
 
 The companion articles *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*
 and *Harmonic Elementary Particles and the Periodic System of Atoms* record an external programme,
-due to L. A. Alexeyeva: the interpretation of the biquaternionic A-field as an electro-gravimagnetic (EGM)
+due to L. A. Alexeyeva: the interpretation of the dual field strength $-i\tilde F$ as an electro-gravimagnetic (EGM)
 field, under the hypothesis that magnetic-charge density is gravitational mass density. The first
 article follows the programme's field theory and its law structure. The second follows its
 charge–current field into the **monochromatic** sector and records the particle and periodic-system
@@ -19,9 +19,9 @@ exist — which is the one place in the whole programme where a claim can be mea
 observation.
 
 The task is the corpus's usual one: record what is derived, mark what is chosen, and state the cost.
-The conventions are the corpus's. The field is the companion article's A-field,
-$\vec{\mathcal A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$, and the paper's
-biquaternion of *tension*, $\tilde{A} = i\alpha + \vec{\mathcal A}$, is that field with the
+The conventions are the corpus's. The field is the companion article's dual field strength
+$-i\tilde F = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$, and the paper's
+biquaternion of *tension*, $\tilde{A} = i\alpha - i\tilde F$, is that field with the
 scalar part the paper calls the density of the ether. The paper's conjugation — the vector part
 negated and the coefficients complex-conjugated, the paper's **mutual** biquaternion and the
 conjugation it uses for the energy–momentum — is the corpus's ${}^{*}$ throughout. The symbol
@@ -35,20 +35,20 @@ The programme's postulate is the companion article's, and the first thing this p
 to read it as an ontology. The postulate is
 
 $$
-\nabla^{+}\tilde{A} = \tilde J,
+\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}},
 \qquad
 \nabla^{\pm} = \partial_\tau \pm i\nabla ,
 \qquad
-\tilde J = i\rho + \vec J ,
+\tilde J_{\mathrm{eg}} = i\rho + \vec J ,
 $$
 
-with $\tilde{A}$ the tension biquaternion and $\tilde J$ the charge–current biquaternion. On its
+with $\tilde{A}$ the tension biquaternion and $\tilde J_{\mathrm{eg}}$ the charge–current biquaternion. On its
 left is the field, on its right the charges and currents, and the relation says that the sources are
 the bigradient of the field.
 
 One algebraic remark fixes what the object is. The classical biquaternion form of Maxwell's equations
 requires the scalar part of the field biquaternion to vanish, and that constraint is what makes the
-complex three-vector $\vec{\mathcal A}$ the whole of the field. The paper's own statement of
+complex three-vector $-i\tilde F$ the whole of the field. The paper's own statement of
 what its EGM field is: the restriction is **dropped** — the scalar part returns, and the paper
 names it the density of the ether. That is the whole of the extension, and it is the cleanest
 statement in the programme of what the programme is; the object is the one the companion article
@@ -68,7 +68,7 @@ ether, and its vector part is the tension of the electric and gravimagnetic fiel
 Two things must be said about the name, and the corpus says them rather than letting it pass.
 
 - **It is a name and a choice, not a derivation.** Every equation below is the EGM article's equation.
-  Calling the A-field the ether changes nothing algebraically; what it asserts is that the field is
+  Calling the dual field strength the ether changes nothing algebraically; what it asserts is that the field is
   the fundamental object and matter its derivative. That is the same kind of move as the
   magnetic-charge–mass identification, and it carries the same status: chosen, not forced.
 - **It is not the nineteenth-century ether.** No equation of the programme singles out a rest frame;
@@ -90,7 +90,7 @@ so that $\partial_\tau \to -i\omega$. Substituting into the postulate gives the 
 equation**,
 
 $$
-\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 \qquad
 \nabla^{\pm}_{\omega} = \omega \pm \nabla ,
 $$
@@ -145,21 +145,21 @@ monochromatic source,
 
 $$
 \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\right\},
+= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\right\},
 $$
 
 so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
 generalized functions of slow growth — tempered distributions — which is what makes the convolved
 sources here and the layered sources of the light section below legitimate rather than formal. For a
-**concentrated charge**, $\tilde J = -i\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the kernel is
+**concentrated charge**, $\tilde J_{\mathrm{eg}} = -i\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the kernel is
 evaluated at once and the result is the **elementary photon**: a spherical EGM wave whose scalar and
 vector amplitudes are
 
 $$
 \left|\alpha_{0}\right| = \frac{\omega}{4\pi r},
 \qquad
-\left\|\vec{\mathcal A}_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
+\left\|\tilde F_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
 \qquad
 \vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},
 $$
@@ -245,7 +245,7 @@ Because the source enters linearly, the representations compose. Every emitted m
 a superposition of elementary photons weighted by the source,
 
 $$
-\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = i\,\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{\Phi}^{0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{\Phi}^{0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$
 
 the convolution being over the spatial variables, so the elementary photon is the kernel of the map
@@ -373,8 +373,8 @@ reads its monochromatic solutions as **photons**. The programme's own statement 
 line: take the classical biquaternion form of Maxwell's equations, whose field biquaternion is
 required to have no scalar part, and **drop that restriction**; the returned scalar part is the ether
 density and the vector part carries the electric and gravimagnetic fields. The algebra is the
-companion articles': the postulate $\nabla^{+}\tilde{A} = \tilde J$, the monochromatic reduction
-$\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J$ with
+companion articles': the postulate $\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}}$, the monochromatic reduction
+$\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J_{\mathrm{eg}}$ with
 $\nabla^{\pm}_{\omega} = \omega \pm \nabla$, and the factorisation
 $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
@@ -405,20 +405,19 @@ clearest statement of what the programme assumes.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{A} = i\alpha + \vec{\mathcal A}$ | Biquaternion of tension; $\alpha$ is the density of the ether |
-| $\vec{\mathcal A} = \sqrt{\epsilon}\vec E + i\sqrt{\mu}\vec H$ | A-field, the companion article's field |
+| $\tilde{A} = i\alpha - i\tilde F$ | Biquaternion of tension; $\alpha$ is the density of the ether |
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
-| $\tilde J = i\rho + \vec J$ | Charge–current biquaternion (corpus symbol) |
+| $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
 | $\nabla^{\pm} = \partial_\tau \pm i\nabla$ | Mutual complex gradients of the postulate |
 | $\nabla = e_{1}\partial/\partial x+e_{2}\partial/\partial y+e_{3}\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
 | $\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
-| $\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J$ | The photon equation |
+| $\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J_{\mathrm{eg}}$ | The photon equation |
 | $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$ | Helmholtz factorisation of the photon equation |
 | $\psi = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\psi = \delta$ |
 | $\tilde{\Phi}^{0}$ | Elementary photon, the kernel of the source-to-field map |
-| $\alpha_{0}$, $\vec{\mathcal A}_{0}$ | Scalar and vector amplitudes of the elementary photon (the paper writes $\rho_{0}$ and $\|\Phi_{0}\|$) |
+| $\alpha_{0}$, $\tilde F_{0}$ | Scalar amplitude and field-strength amplitude of the elementary photon (the paper writes $\rho_{0}$ and $\|\Phi_{0}\|$) |
 | $\tilde{\Phi}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
 | $\vec u_k = \vec k/\omega$ | Unit wave direction, $\|\vec k\| = \omega$ |
 | $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | Plane Helmholtz potential |
@@ -435,7 +434,7 @@ clearest statement of what the programme assumes.
   Applied Physics* **7**(1) (2020) 96–101, doi:10.14445/23500301/IJAP-V7I1P114, the paper recorded
   here.
 - *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the programme's field
-  theory, its postulate $\nabla^{+}\tilde{A} = \tilde J$, the magnetic-charge–mass hypothesis, its
+  theory, its postulate $\nabla^{+}\tilde{A} = \tilde J_{\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
   Newton-law analogues and its empirical claims.
 - *Harmonic Elementary Particles and the Periodic System of Atoms*, for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the
@@ -449,5 +448,5 @@ clearest statement of what the programme assumes.
   structure, of which the elementary photon is the monochromatic Helmholtz case.
 - *Gravitational Waves in Biquaternionic Form*, for the corpus's own gravitational wave and its two
   polarisations, against which the programme's "no pure gravitational waves" is measured.
-- *Maxwell's Equations in the Biquaternionic Formulation*, for the corpus's A-field, its energy density
+- *Maxwell's Equations in the Biquaternionic Formulation*, for the corpus's dual field strength, its energy density
   and Poynting vector, and the conventions this article restates before quoting the 2020 paper.

@@ -8,7 +8,7 @@ The subject is set up to separate two questions that are easily confused. The fi
 
 The article is careful about what is derived and what is imported. The value $g=2$ is **fixed as a ratio** by the algebra, and this is what the two companion articles presuppose. The *magnitude* of the moment — one Bohr magneton $\mu_B = e\hbar/2m_e$ for the electron spin — is not fixed by the classical algebra, which has no $\hbar$; it is imported from the quantum normalization. The dynamical derivation of the coefficient $1/2m$ from the relativistic Dirac equation is likewise standard and is cited, not reproduced: it is a result of the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, which obtain $g=2$ by eliminating the small component. The two accounts agree, and they agree because they compute the same double-cover factor: the relativistic one dynamically, the non-relativistic one algebraically.
 
-The conventions are those of the foundational articles and of the two companion articles of this subcategory. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central imaginary $i$. The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, the informational sector the Hermitian subspace $\mathbb{M}_+$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace of the rotation rotors. The magnetic moment and the angular momentum are material axial vectors, $\tilde{\boldsymbol{\mu}} = \mu_k\vec e_k$ and $\tilde{\mathbf{S}} = S_k\vec e_k$ in $\mathbb{H}_{\mathbb{B}}$; the intrinsic spin observable is the $\mathbb{M}_+$ element $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$.
+The conventions are those of the foundational articles and of the two companion articles of this subcategory. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central imaginary $i$. The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, the informational sector the Hermitian subspace $\mathbb{M}_+$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace of the rotation rotors. The magnetic moment and the angular momentum are material axial vectors, $\vec\mu = \mu_k\vec e_k$ and $\vec S = S_k\vec e_k$ in $\mathbb{H}_{\mathbb{B}}$; the intrinsic spin observable is the $\mathbb{M}_+$ element $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$.
 
 ## The Gyromagnetic Factor
 
@@ -32,11 +32,11 @@ so that $g$ is dimensionless and is the ratio of the moment to the elementary mo
 In the biquaternion algebra the two quantities whose ratio defines $g$ are the material axial vectors
 
 $$
-\tilde{\boldsymbol{\mu}} = \mu_k\vec e_k \in \mathbb{H}_{\mathbb{B}},
+\vec\mu = \mu_k\vec e_k \in \mathbb{H}_{\mathbb{B}},
 \qquad
-\tilde{\mathbf{S}} = S_k\vec e_k \in \mathbb{H}_{\mathbb{B}},
+\vec S = S_k\vec e_k \in \mathbb{H}_{\mathbb{B}},
 \qquad
-\tilde{\boldsymbol{\mu}} = \gamma\,\tilde{\mathbf{S}},
+\vec\mu = \gamma\,\vec S,
 $$
 
 with the intrinsic moment's informational-sector representative $\mu_k\,i\vec e_k\in\mathbb{M}_+$ available when the moment is paired with the spin observable. The gyromagnetic relation is therefore a scalar proportionality between two elements of the *same* vector slot, and in the algebra the question of $g$ is the question of what fixes that scalar.
@@ -44,9 +44,9 @@ with the intrinsic moment's informational-sector representative $\mu_k\,i\vec e_
 Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{\Psi}\to \exp(i\alpha)\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
-\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\vec u)\,\tilde{\Psi},
+\tilde{\Psi} \;\longmapsto\; \tilde u(\theta,\vec u)\,\tilde{\Psi},
 \qquad
-\tilde{R}(\theta,\vec u) = \exp\!\left(\frac{\theta}{2}\,\vec u_k\vec e_k\right),
+\tilde u(\theta,\vec u) = \exp\!\left(\frac{\theta}{2}\,\vec u_k\vec e_k\right),
 $$
 
 and the generator of the rotation is the half-unit $+\tfrac{1}{2}\vec u_k\vec e_k$ rather than the unit $\vec u_k\vec e_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
@@ -156,7 +156,7 @@ g_k = -\,\frac{1}{2}\,\vec e_k \in \mathbb{H}_{\mathbb{B}},
 [\,g_i, g_j\,] = -\,\epsilon_{ijk}\,g_k .
 $$
 
-A rotation through the angle $\theta$ about $\vec u$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\vec u_k\vec e_k) = \exp(-\theta\,\vec u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\vec u_k\vec e_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
+A rotation through the angle $\theta$ about $\vec u$ is the exponential $\tilde u = \exp(\tfrac{\theta}{2}\vec u_k\vec e_k) = \exp(-\theta\,\vec u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\vec u_k\vec e_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
 
 $$
 \tilde{S}_k = -\,i\hbar\,g_k = \frac{\hbar}{2}\,i \vec e_k \in \mathbb{M}_+ ,
@@ -172,18 +172,18 @@ and its eigenvalues are $\pm\hbar/2$. The half in the angular-momentum generator
 The half in the generator is visible in the rotor as the **double cover**. The rotation rotor
 
 $$
-\tilde{R}(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_k\vec e_k
+\tilde u(\theta,\vec u) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_k\vec e_k
 $$
 
 returns to its starting value only after $\theta$ has advanced by $4\pi$:
 
 $$
-\tilde{R}(\theta + 2\pi,\vec u) = -\,\tilde{R}(\theta,\vec u),
+\tilde u(\theta + 2\pi,\vec u) = -\,\tilde u(\theta,\vec u),
 \qquad
-\tilde{R}(\theta + 4\pi,\vec u) = \tilde{R}(\theta,\vec u).
+\tilde u(\theta + 4\pi,\vec u) = \tilde u(\theta,\vec u).
 $$
 
-A material vector is rotated by conjugation, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\tilde{R}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
+A material vector is rotated by conjugation, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\tilde u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\tilde u^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde u\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
 
 ### The Weights of the Two Couplings
 
@@ -292,7 +292,7 @@ g_k = -\frac{1}{2}\,\vec e_k,
 [\,g_i,g_j\,] = -\epsilon_{ijk}\,g_k,
 $$
 
-with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}i\vec e_k$, and the rotation rotor $\tilde{R} = \exp(\tfrac{\theta}{2}\vec u_k\vec e_k)$ is a double cover, $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $\mathrm{U}(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
+with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}i\vec e_k$, and the rotation rotor $\tilde u = \exp(\tfrac{\theta}{2}\vec u_k\vec e_k)$ is a double cover, $\tilde u(\theta+2\pi) = -\tilde u(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $\mathrm{U}(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
 
 $$
 \frac{\mu}{S} = \frac{ϙ}{2m}\cdot\frac{w_{\mathrm{U}(1)}}{w_{\rm rot}},
@@ -318,13 +318,13 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\mathcal{M}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
 | $I_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
 | $\rho_c$, $\rho_m$ | Charge and mass densities |
-| $\tfrac{1}{2}\vec u_k\vec e_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |
+| $\tfrac{1}{2}\vec u_k\vec e_k$ | Rotation generator; the rotor $\tilde u$ is its exponential |
 | $g_k = -\tfrac{1}{2}\vec e_k$ | Intrinsic angular-momentum generator (half-unit) |
 | $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable in $\mathbb{M}_+$ |
 | $[g_i,g_j] = -\epsilon_{ijk}g_k$ | Generator algebra |
 | $[\tilde{S}_i,\tilde{S}_j] = i\hbar\epsilon_{ijk}\tilde{S}_k$ | Spin algebra |
-| $\tilde{R}(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
-| $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$ | Double cover |
+| $\tilde u(\theta,\vec u) = \cos\tfrac{\theta}{2}e_t + \sin\tfrac{\theta}{2}\vec u_k\vec e_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde u(\theta+2\pi) = -\tilde u(\theta)$ | Double cover |
 | $w_{\mathrm{U}(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
 | $\mu/L = (ϙ/2m)\,w_{\mathrm{U}(1)}/w_{\rm rot}$ | Ratio of the two weights |
 | $g_J$ | Landé factor of the vector model |

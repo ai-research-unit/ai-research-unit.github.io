@@ -14,7 +14,7 @@ $$
 \qquad
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 $$
-of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -36,12 +36,12 @@ of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T
 
 The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W^a_\mu$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g'$. The kinetic terms are
 $$
-\mathcal{L}_{\mathrm{kin}}=-\mathrm{Tr}\langle\tilde{\mathcal{W}}\rangle_{\natural}-\tfrac12\langle\tilde{\mathcal{B}}\rangle_{\natural},
+\mathcal{L}_{\mathrm{kin}}=-\mathrm{Tr}\langle\tilde{\mathcal{W}}\rangle_{\natural}-\tfrac12\langle\tilde\nabla\tilde B\rangle_{\natural},
 $$
 $$
 \tilde{\mathcal{W}}=\tilde\nabla\tilde W+\tfrac{g}{2}\,[\tilde W,\tilde W],\qquad \tilde W=\sum_a\tilde W^aT^a ,
 \qquad
-\tilde{\mathcal{B}}=\tilde\nabla\tilde B .
+\tilde B=\sum_\mu B_\mu e_\mu .
 $$
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$
@@ -283,7 +283,7 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_
 | $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12M^2A_\mu A^\mu$ | Proca Lagrangian; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
 | $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness |
 | $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
 
 ## Further Reading
 

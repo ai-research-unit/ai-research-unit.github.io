@@ -60,9 +60,9 @@ $$
 $$
 and the fermion number current's divergence vanishes while the axial current's does not:
 $$
-\langle\tilde\nabla,\tilde j\rangle_{\natural} = 0 ,
+\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 ,
 \qquad
-\langle\tilde\nabla,\tilde j_5\rangle_{\natural} = -\frac{1}{\pi}\,\Box\phi .
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = -\frac{1}{\pi}\,\Box\phi .
 $$
 The first relation is the current correspondence; the second is the mass correspondence, which is the sine-Gordon interaction; and the third is the anomaly, which is the statement that the axial current is not conserved. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
 
@@ -230,7 +230,7 @@ $$
 \qquad
 \bar\psi\psi\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
 \qquad
-\langle\tilde\nabla,\tilde j_5\rangle_{\natural}=-\frac{1}{\pi}\Box\phi ,
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=-\frac{1}{\pi}\Box\phi ,
 $$
 and the framework's contribution is to name the two sides: the fermion is the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ and the boson is a central scalar, so that the equivalence is a correspondence between a module-valued operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear chirality-off-diagonal mass bosonizes to the cosine, and the mass's central phase bosonizes to a shift of the boson field, the same central phase that weights the $\theta$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 

@@ -6,9 +6,9 @@ This article is one of a series of **worked exercises** that illustrate quantum 
 
 The immediately preceding exercise, *Exercise: The Reduced State of an Entangled Subsystem*, introduced the partial trace $\mathrm{Tr}_2$ and computed the reduced state of the singlet. That exercise is about the **state**; it observed, in passing, that the reduced state $\tfrac12 e_t$ has von Neumann entropy $\log 2$. The present exercise is about that number. It poses the computation of the **entanglement entropy** of a general pure two-qubit state, works the solution by two routes — the Schmidt decomposition, and the partial trace in $\mathbb{B}\otimes\mathbb{B}$ — and closes with further problems left to the reader. The reduced state of the singlet is used here only as a limiting case, and its computation is not repeated.
 
-The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{\rho}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
+The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{Ϛ}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{Ϛ})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, and in particular $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ for idempotent $\tilde{P}$ and Hermitian $\tilde{H}$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$. Throughout, $\log$ denotes the natural logarithm, and
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, and in particular $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ for idempotent $\tilde{P}$ and Hermitian $\tilde{H}$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$. Throughout, $\log$ denotes the natural logarithm, and
 
 $$
 h(p)=-p\log p-(1-p)\log(1-p),\qquad p\in[0,1],
@@ -46,7 +46,7 @@ compute $\rho_1$ and $S$ explicitly, first in the standard formulation and then 
 4. **The entropy functional.** Decide whether the candidate
 
 $$
-S(\tilde{\rho})=-\,2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right)
+S(\tilde{Ϛ})=-\,2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
 $$
 
 proposed as an open question in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* is correct, and state its domain.
@@ -194,7 +194,7 @@ The reduced state is an element of $\mathbb{M}_+$ with Bloch vector of length $|
 $$
 \lambda_\pm=\tfrac12\left(1\pm|\vec r|\right),
 \qquad
-S(\tilde{\rho})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_- .
+S(\tilde{Ϛ})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_- .
 $$
 
 For $\theta\in[0,\tfrac{\pi}{4}]$, $\cos2\theta\ge0$, so $|\vec r|=\cos2\theta$ and
@@ -247,12 +247,12 @@ So the entanglement entropy of a pure two-qubit state is a function of a single 
 
 ## The Entropy Functional on $\mathbb{M}_+$
 
-The parent article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* closes its list of open questions with the following: the logarithm on $\mathbb{B}$ exists but is multivalued, the trace is available but is a scalar, and "a natural candidate would be $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$, but this needs verification." The candidate can now be checked.
+The parent article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* closes its list of open questions with the following: the logarithm on $\mathbb{B}$ exists but is multivalued, the trace is available but is a scalar, and "a natural candidate would be $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, but this needs verification." The candidate can now be checked.
 
-Let $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ be a state with $0<|\vec r|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, both positive, and its spectral decomposition is
+Let $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ be a state with $0<|\vec r|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, both positive, and its spectral decomposition is
 
 $$
-\tilde{\rho}=\lambda_+\,\tilde\Pi_1(\vec u_r)
+\tilde{Ϛ}=\lambda_+\,\tilde\Pi_1(\vec u_r)
 +\lambda_-\,\tilde\Pi_2(\vec u_r),
 \qquad \vec u_r=\vec r/|\vec r| .
 $$
@@ -260,7 +260,7 @@ $$
 The **principal** logarithm of the parent's elementary-functions article, applied to this element, is the spectral logarithm:
 
 $$
-\log\tilde{\rho}
+\log\tilde{Ϛ}
 =\tfrac12\log(\lambda_+\lambda_-)\,e_t
 +\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\vec u_r
 =\log\lambda_+\,\tilde\Pi_1(\vec u_r)
@@ -270,7 +270,7 @@ $$
 The two expressions agree because $\tfrac12(e_t\pm i\vec u_r)=\tilde\Pi_{1,2}(\vec u_r)$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
 
 $$
-\tilde{\rho}\log\tilde{\rho}
+\tilde{Ϛ}\log\tilde{Ϛ}
 =\lambda_+\log\lambda_+\,\tilde\Pi_1(\vec u_r)
 +\lambda_-\log\lambda_-\,\tilde\Pi_2(\vec u_r),
 $$
@@ -278,26 +278,26 @@ $$
 since the idempotents are orthogonal. Using $\mathrm{Sc}(\tilde\Pi_{1,2})=\tfrac12$,
 
 $$
-2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right)
+2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
 =\lambda_+\log\lambda_++\lambda_-\log\lambda_-
-=\mathrm{Tr}\!\left(\tilde{\rho}\log\tilde{\rho}\right),
+=\mathrm{Tr}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right),
 $$
 
 the last equality being the general trace identity $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$. Hence
 
 $$
--2\,\mathrm{Sc}\!\left(\tilde{\rho}\log\tilde{\rho}\right)
-=-\mathrm{Tr}\!\left(\tilde{\rho}\log\tilde{\rho}\right)
-=S(\tilde{\rho}).
+-2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
+=-\mathrm{Tr}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
+=S(\tilde{Ϛ}).
 $$
 
 **The candidate is correct**, for states in the interior of the Bloch ball, with the principal branch of the logarithm. The maximally mixed case $\vec r=0$ is the scalar case, where the same computation with $\log(\tfrac12 e_t)=\log\tfrac12\,e_t$ gives $S=\log2$; the case $|\vec r|=1$ is excluded and is discussed below. The scalar part is not an obstruction: because the trace on $\mathbb{B}$ *is* twice the scalar part, the candidate is not an analogue of the trace formula but the trace formula itself.
 
 Two qualifications belong with the verification, and neither is a defect of the formula.
 
-**The branch is load-bearing.** The biquaternion logarithm is multivalued. The genuine extra branches — an added $2\pi i n\,e_t$ in the scalar part, or a shift $\Theta\mapsto\Theta+2\pi k$ in the angle — change $\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ by a purely imaginary amount, so what is branch-dependent is the *complex* value of the candidate, not its real part. The candidate must nonetheless be read with the principal branch, the one that agrees with the spectral logarithm, because that is the branch that makes $S$ real and equal to $-\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$.
+**The branch is load-bearing.** The biquaternion logarithm is multivalued. The genuine extra branches — an added $2\pi i n\,e_t$ in the scalar part, or a shift $\Theta\mapsto\Theta+2\pi k$ in the angle — change $\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ by a purely imaginary amount, so what is branch-dependent is the *complex* value of the candidate, not its real part. The candidate must nonetheless be read with the principal branch, the one that agrees with the spectral logarithm, because that is the branch that makes $S$ real and equal to $-\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$.
 
-**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of units $\langle\tilde{Q}\rangle_{\natural}\neq0$. A pure state $\tilde{\rho}=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is an idempotent and a zero divisor: $\langle\tilde{\rho}\rangle_{\natural}=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec r|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec r|\to1$, not a value the formula takes. The same is true of the parent's single-qubit entropy formula only in appearance: that formula is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{\rho}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
+**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of units $\langle\tilde{Q}\rangle_{\natural}\neq0$. A pure state $\tilde{Ϛ}=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is an idempotent and a zero divisor: $\langle\tilde{Ϛ}\rangle_{\natural}=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec r|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec r|\to1$, not a value the formula takes. The same is true of the parent's single-qubit entropy formula only in appearance: that formula is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{Ϛ}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
 
 ## A Case the Partial Trace Does Not Decide
 
@@ -377,7 +377,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 
 **The biquaternion route.** For the family $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $P_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\rho_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.
 
-**The entropy functional.** The candidate of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$, is correct for states in the interior of the Bloch ball when the principal branch of the biquaternion logarithm is used. It is the trace formula in disguise, since $\mathrm{Tr}=2\,\mathrm{Sc}$. Two qualifications are recorded: the branch must be the principal one, and the logarithm — hence the formula — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension.
+**The entropy functional.** The candidate of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, is correct for states in the interior of the Bloch ball when the principal branch of the biquaternion logarithm is used. It is the trace formula in disguise, since $\mathrm{Tr}=2\,\mathrm{Sc}$. Two qualifications are recorded: the branch must be the principal one, and the logarithm — hence the formula — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension.
 
 **The limit of the interpretation.** For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $P_{\Phi^+}$ and $P_{\Phi^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.
 
@@ -399,12 +399,12 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $P_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $P_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
-| $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{M}_+$, $|\vec r|\le1$ |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{M}_+$, $|\vec r|\le1$ |
 | $\rho_1=\mathrm{Tr}_2 P$ | Reduced state (Bloch vector $\vec r_1$) |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $h(p)=-p\log p-(1-p)\log(1-p)$ | Binary entropy |
-| $S(\tilde{\rho})=-\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | von Neumann entropy |
-| $S(\tilde{\rho})=-2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$ | Equivalent form (interior of the Bloch ball) |
+| $S(\tilde{Ϛ})=-\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$ | von Neumann entropy |
+| $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ | Equivalent form (interior of the Bloch ball) |
 | $\log$ | Natural logarithm (principal branch) |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

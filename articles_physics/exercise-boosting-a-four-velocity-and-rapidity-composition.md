@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It applies the apparatus of two companion articles: *The Lorentz Transformation as a Biquaternionic Rotation*, which defines the boost biquaternion, the rotor conjugation, and the square-root relation between the rotor and the four-velocity; and *Relativistic Mechanics in Biquaternionic Form*, which fixes the four-velocity and the four-momentum in $\mathbb{M}_-$. Those two articles are the parents of this exercise: every result below is obtained from the tools already defined there, and no new formalism is introduced. The sequence is: boost a general four-velocity (Problem 1); compose two collinear boosts and recover rapidity addition and velocity addition (Problem 2); compose two non-collinear boosts and extract the Thomas–Wigner rotation (Problem 3); and examine the parent's square-root relation between the four-velocity and the boost rotor, whose direction the parent does not state (Problem 4). A set of further problems is left to the reader.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ belongs to the shared notation; no object of the informational sector arises below, so it is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ belongs to the shared notation; no object of the informational sector arises below, so it is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
 $$
 \tilde{\Lambda}_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u_x,
 \qquad
@@ -113,7 +113,7 @@ For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, w
 
 **(a)** Compute the product $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ and show that it is Hermitian if and only if $\phi\in\{0,\pi\}$; for $0<\phi<\pi$ it is not a pure boost.
 
-**(b)** Show that $P$ admits the decomposition $P = \tilde{H}\tilde{R}$ with $\tilde{H}$ a pure boost of unit norm and $\tilde{R}$ a spatial rotation. Derive the total rapidity $\Psi$, the Wigner angle $\theta_W$, and the rotation axis.
+**(b)** Show that $P$ admits the decomposition $P = \tilde{H}\tilde u$ with $\tilde{H}$ a pure boost of unit norm and $\tilde u$ a spatial rotation. Derive the total rapidity $\Psi$, the Wigner angle $\theta_W$, and the rotation axis.
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
@@ -159,23 +159,23 @@ $$
 $$
 The residual element
 $$
-\tilde{R} = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
+\tilde u = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
 = \left(\cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
 $$
-is the unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde{R}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde{R}\tilde{R}^{\natural} = e_t$ with $\tilde{R}$ a unit real quaternion). Its scalar part is
+is the unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u\tilde u^{\natural} = e_t$ with $\tilde u$ a unit real quaternion). Its scalar part is
 $$
-\mathrm{Sc}(\tilde{R}) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\vec u_4\cdot\vec w\right),
+\mathrm{Sc}(\tilde u) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\vec u_4\cdot\vec w\right),
 $$
 where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\vec u_4\perp\vec q$. Now $\vec u_4\cdot\vec w = \vec T\cdot\vec w/\sinh\Psi = 2a|\vec w|^2/\sinh\Psi$, so
 $$
-\mathrm{Sc}(\tilde{R}) = a\cosh\frac{\Psi}{2} - \frac{a|\vec w|^2}{\cosh\frac{\Psi}{2}}
+\mathrm{Sc}(\tilde u) = a\cosh\frac{\Psi}{2} - \frac{a|\vec w|^2}{\cosh\frac{\Psi}{2}}
 = \frac{a\left(\cosh^2\frac{\Psi}{2} - |\vec w|^2\right)}{\cosh\frac{\Psi}{2}} .
 $$
 From (6) and $\Sigma$ one has $\cosh^2\frac{\Psi}{2} = \frac{1+\Sigma}{2} = a^2 + |\vec q|^2 = 1 + |\vec w|^2$, so $\cosh^2\frac{\Psi}{2} - |\vec w|^2 = 1$ and
 $$
-\mathrm{Sc}(\tilde{R}) = \frac{a}{\cosh\frac{\Psi}{2}}.
+\mathrm{Sc}(\tilde u) = \frac{a}{\cosh\frac{\Psi}{2}}.
 $$
-Because $\tilde{R}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
+Because $\tilde u$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
 $$
 \cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\Psi}{2}}
 = \frac{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}{\cosh\frac{\Psi}{2}},
@@ -194,14 +194,14 @@ $$
 $$
 which we verified numerically in several non-coplanar configurations; it is the direction of the antisymmetric, real-vector part $\vec q$ of $P$ in (5). With this, the decomposition is
 $$
-\tilde{\Lambda}_2\tilde{\Lambda}_1 = \tilde{H}\tilde{R},
+\tilde{\Lambda}_2\tilde{\Lambda}_1 = \tilde{H}\tilde u,
 \qquad
 \tilde{H} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\vec u_4,
 \qquad
-\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
+\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
 \tag{12}
 $$
-The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde{R}\tilde{H}'$ with $\tilde{H}' = \tilde{R}^{-1}\tilde{H}\tilde{R}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
+The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u\tilde{H}'$ with $\tilde{H}' = \tilde u^{-1}\tilde{H}\tilde u$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
 **(c)** For equal orthogonal rapidities, $\psi_1 = \psi_2 = \psi$ and $\phi = \pi/2$, so $\cosh\Psi = \cosh^2\psi$ and $a = \cosh^2\frac{\psi}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\psi}{2}\big/\cosh\frac{\Psi}{2}$, and (10) collapses to
 $$
@@ -216,9 +216,9 @@ P = \tilde{\Lambda}_2\tilde{\Lambda}_1 = 1.125 + 0.375\,i\,\vec e_x + 0.375\,i\,
 $$
 which is not Hermitian: the real $\vec e_z$ term $s_1s_2 = 0.125$ is the antisymmetric part. From (8), $\Psi = 1.0163481$ and the composed frame has speed $c\tanh\Psi = 0.7683749c$; the velocity-addition formula (2) applied twice gives the same speed. The Wigner angle (9)–(10) is $\theta_W = 12.68038^{\circ} = 0.2213144$ rad, with
 $$
-\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
+\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
 $$
-The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde{H}$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde{R}\vec u_5\tilde{R}^{-1}$. The two orderings do not agree: $\tilde{\Lambda}_1\tilde{\Lambda}_2$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
+The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde{H}$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde u\vec u_5\tilde u^{-1}$. The two orderings do not agree: $\tilde{\Lambda}_1\tilde{\Lambda}_2$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
 
 ## Problem 4: The Parent's Square-Root Relation and the Direction of the Boost
 
@@ -341,7 +341,7 @@ The following are left to the reader; they extend the same tools and use the sam
 
 5. **Boost in a medium.** Redo Problems 1–3 with the local speed of light $c = 1/\sqrt{\epsilon\mu}$ in place of $c_0$, treating $c$ as a fixed local constant. Which of the results (1)–(12) change, and which are invariant? Discuss the sense in which the rotor becomes a field when $\epsilon$ and $\mu$ vary from point to point.
 
-6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde{H}\tilde{R}$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde{R}^{-1}(\tilde{H}^{\natural})^2\tilde{R}$, and that $\tilde{H}$ alone (a boost) gives a different four-velocity unless $\tilde{R}$ commutes with $(\tilde{H}^{\natural})^2$. Reconcile this with Problem 4(d).
+6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde{H}\tilde u$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde u^{-1}(\tilde{H}^{\natural})^2\tilde u$, and that $\tilde{H}$ alone (a boost) gives a different four-velocity unless $\tilde u$ commutes with $(\tilde{H}^{\natural})^2$. Reconcile this with Problem 4(d).
 
 ## Summary
 
@@ -380,12 +380,12 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\phi$ | Angle between $\vec u_y$ and $\vec u_z$ |
 | $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
-| $\tilde{H}$, $\tilde{R}$ | Boost part and rotation part of $P = \tilde{H}\tilde{R}$ |
+| $\tilde{H}$, $\tilde u$ | Boost part and rotation part of $P = \tilde{H}\tilde u$ |
 | $\Psi$ | Total rapidity, $\cosh\Psi = \cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\phi$ |
 | $\theta_W$ | Thomas–Wigner angle |
 | $\vec u_4$ | Axis of the boost part $\tilde{H}$ |
 | $\vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ | Axis of the Wigner rotation |
-| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |
+| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 
 ## Further Reading
 

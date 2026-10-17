@@ -458,7 +458,7 @@ the three objects involved: the spinor, the $\boldsymbol\sigma\cdot\vec p$ kinet
 mass term that opens the gap. The **Dirac point** is the momentum at which the dispersion is linear and
 the gap closes, and the masslessness of that point is the vanishing of the interval. The nilpotent of
 this article is the momentum element at that point: a lightlike momentum with
-$\tilde k\tilde k^{\natural}=0$, the algebraic form of the linear branch. The article's caution applies here too: the
+$\tilde P\tilde P^{\natural}=0$, the algebraic form of the linear branch. The article's caution applies here too: the
 framework transcribes the low-energy equation, and the lattice, the Fermi velocity and the topological
 invariant are material data and not algebraic output.
 
@@ -629,7 +629,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   gradient is never a nonzero nilpotent; the cone is its asymptotic boundary, reached in the trivial sense
   only where the particle stops, $\nabla S=0$.
 - The Dirac point of graphene and of a topological-insulator surface is a lightlike momentum,
-  $\tilde k\tilde k^{\natural}=0$: the nilpotent is the algebraic form of the linear, gapless branch.
+  $\tilde P\tilde P^{\natural}=0$: the nilpotent is the algebraic form of the linear, gapless branch.
 - On a lattice the null points of the momentum symbol are counted by topology: the index sum is the Euler
   characteristic of the Brillouin zone, so they come in left–right pairs and cannot be removed one at a
   time (Nielsen–Ninomiya). Nilpotency of the discretised symbol is a paired, topological property.

@@ -4,27 +4,27 @@
 
 A Lyapunov exponent is the rate at which a dynamical system loses track of its initial condition. Two trajectories that start a distance $\epsilon$ apart separate as $\epsilon\,\exp(\lambda t)$, and $\lambda$ is the exponent; a positive exponent means exponential divergence, that is, sensitivity to initial conditions, and a negative exponent means exponential contraction, that is, the erasure of a distinction. The exponents are the rates in the information budget of a flow.
 
-This article computes the Lyapunov exponents of the informational sector $\mathbb{M}_+$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$ with $|\vec r|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a traceless element of $\mathbb{M}_+$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{\rho}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is
+This article computes the Lyapunov exponents of the informational sector $\mathbb{M}_+$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ with $|\vec r|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a traceless element of $\mathbb{M}_+$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{Ϛ}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is
 
 $$
-\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|N\!\left(\delta\tilde{\rho}(t)\right)\right|}{\left|N\!\left(\delta\tilde{\rho}(0)\right)\right|},
+\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right|}{\left|N\!\left(\delta\tilde{Ϛ}(0)\right)\right|},
 $$
 
 the factor $\tfrac{1}{2}$ being present because the biquaternion norm is quadratic.
 
-Two classes of dynamics are natural on the sector, and they exhaust what the framework's linear structure supplies. The **reversible** class is rotor conjugation, $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$ with $\tilde{R}\tilde{R}^{*} = e_t$, which is an isometry of the biquaternion norm; and the **irreversible** class is a semigroup of coarse-graining or dephasing channels, whose Bloch action is an affine contraction. The article's central statement is that both classes have **non-positive** Lyapunov spectra. The reversible class is exactly Lyapunov-neutral — every exponent is zero — and the irreversible class is contracting, with exponents set by the contraction coefficients of the channel. In particular the dephasing semigroup of strength $\Gamma$ has the spectrum
+Two classes of dynamics are natural on the sector, and they exhaust what the framework's linear structure supplies. The **reversible** class is rotor conjugation, $\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$ with $\tilde u\tilde u^{*} = e_t$, which is an isometry of the biquaternion norm; and the **irreversible** class is a semigroup of coarse-graining or dephasing channels, whose Bloch action is an affine contraction. The article's central statement is that both classes have **non-positive** Lyapunov spectra. The reversible class is exactly Lyapunov-neutral — every exponent is zero — and the irreversible class is contracting, with exponents set by the contraction coefficients of the channel. In particular the dephasing semigroup of strength $\Gamma$ has the spectrum
 
 $$
 \{0,\,-\Gamma,\,-\Gamma\},
 $$
 
-with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|\langle\delta\tilde{\rho}(t)\rangle_{\natural}|$ decays at twice that rate, $\exp(-2\Gamma t)$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{|N|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.
+with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}|$ decays at twice that rate, $\exp(-2\Gamma t)$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{|N|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.
 
 The article also states what the framework does **not** produce: positive Lyapunov exponents. A positive exponent from linear dynamics would require an expansion, and an expansion carries states out of the Bloch ball, so the linear dynamics of the sector — an isometry in the reversible class, a contraction in the irreversible one — has a non-positive spectrum. The remaining dynamics of the framework is nonlinear, and it lives on a phase space too small to host chaos. The compact coadjoint orbit of the framework is the two-sphere $|\vec S| = \text{const}$ — the Bloch sphere at the spin-$\tfrac{1}{2}$ radius — a two-dimensional symplectic manifold, and every Hamiltonian flow on a two-dimensional symplectic manifold is integrable, so its exponents vanish; for a Hamiltonian flow a positive exponent first becomes possible at four phase-space dimensions, which the material sector supplies and the informational sector does not. The information loss of the framework is therefore **contraction, not chaos**: the entropy produced in a coarse-graining is the deficit of the contracting directions, and the Kolmogorov–Sinai entropy of the framework's linear flows is zero.
 
 The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.
 
 ## Lyapunov Exponents: The Standard Setting
 
@@ -68,38 +68,38 @@ This is the precise sense in which positive Lyapunov exponents are the rate of *
 
 ## Reversible Rotor Flow Is Lyapunov-Neutral
 
-The reversible evolution of the informational sector is rotor conjugation. Let $\tilde{R}(t)$ be a one-parameter family of matrix-unitary elements,
+The reversible evolution of the informational sector is rotor conjugation. Let $\tilde u(t)$ be a one-parameter family of matrix-unitary elements,
 
 $$
-\tilde{R}(t)\tilde{R}(t)^{*} = \tilde{R}(t)^{*}\tilde{R}(t) = e_t ,
+\tilde u(t)\tilde u(t)^{*} = \tilde u(t)^{*}\tilde u(t) = e_t ,
 $$
 
-generated by a skew-Hermitian element, $\tilde{R}(t) = \exp(t\tilde{G})$ with $\tilde{G}^{*} = -\tilde{G}$. The state evolves by
+generated by a skew-Hermitian element, $\tilde u(t) = \exp(t\tilde{G})$ with $\tilde{G}^{*} = -\tilde{G}$. The state evolves by
 
 $$
-\tilde{\rho}(t) = \tilde{R}(t)\,\tilde{\rho}(0)\,\tilde{R}(t)^{*} ,
+\tilde{Ϛ}(t) = \tilde u(t)\,\tilde{Ϛ}(0)\,\tilde u(t)^{*} ,
 $$
 
 and the tangent map is the same conjugation acting on the traceless part,
 
 $$
-\delta\tilde{\rho}(t) = \tilde{R}(t)\,\delta\tilde{\rho}(0)\,\tilde{R}(t)^{*} .
+\delta\tilde{Ϛ}(t) = \tilde u(t)\,\delta\tilde{Ϛ}(0)\,\tilde u(t)^{*} .
 $$
 
 The biquaternion norm is invariant under this action, because the rotor is unitary and the biquaternion norm is multiplicative:
 
 $$
-N\!\left(\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}\right)
-= \tilde{R}\,\tilde{Q}\,\tilde{R}^{*}\,\overline{\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}}
-= \tilde{R}\,\tilde{Q}\,\tilde{Q}^{\natural}\,\tilde{R}^{*}
-= \langle\tilde{Q}\rangle_{\natural}\,\tilde{R}\tilde{R}^{*}
+N\!\left(\tilde u\,\tilde{Q}\,\tilde u^{*}\right)
+= \tilde u\,\tilde{Q}\,\tilde u^{*}\,\overline{\tilde u\,\tilde{Q}\,\tilde u^{*}}
+= \tilde u\,\tilde{Q}\,\tilde{Q}^{\natural}\,\tilde u^{*}
+= \langle\tilde{Q}\rangle_{\natural}\,\tilde u\tilde u^{*}
 = \langle\tilde{Q}\rangle_{\natural} .
 $$
 
-The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde{R}\tilde{Q}\tilde{R}^{*})^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
+The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde u\tilde{Q}\tilde u^{*})^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
 
 $$
-\left|N\!\left(\delta\tilde{\rho}(t)\right)\right| = \left|N\!\left(\delta\tilde{\rho}(0)\right)\right|
+\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right| = \left|N\!\left(\delta\tilde{Ϛ}(0)\right)\right|
 \quad\text{for all } t ,
 $$
 
@@ -177,36 +177,36 @@ so the Bloch ball shrinks in volume at rate $2\Gamma$ and the state is driven on
 
 ### The Biquaternion-Norm Exponent
 
-The tangent vector of the sector is a traceless element of $\mathbb{M}_+$. Writing a tangent displacement as $\delta\tilde{\rho} = \tfrac{i}{2}\,\delta\vec r$, its biquaternion norm is
+The tangent vector of the sector is a traceless element of $\mathbb{M}_+$. Writing a tangent displacement as $\delta\tilde{Ϛ} = \tfrac{i}{2}\,\delta\vec r$, its biquaternion norm is
 
 $$
-N\!\left(\delta\tilde{\rho}\right) = -\frac{1}{4}\left|\delta\vec r\right|^2 e_t ,
+N\!\left(\delta\tilde{Ϛ}\right) = -\frac{1}{4}\left|\delta\vec r\right|^2 e_t ,
 $$
 
 the identity established in the companion article *Fisher Information and the Biquaternion Norm*. Under the dephasing semigroup the transverse displacement decays, so
 
 $$
-\left|N\!\left(\delta\tilde{\rho}(t)\right)\right| = \frac{1}{4}\left|\delta\vec r(t)\right|^2 ,
+\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right| = \frac{1}{4}\left|\delta\vec r(t)\right|^2 ,
 $$
 
 and a transverse tangent vector has
 
 $$
-\lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|\langle\delta\tilde{\rho}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{\rho}(0)\rangle_{\natural}\right|}
+\lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|}
 = \lim_{t\to\infty}\frac{1}{2t}\log \exp(-2\Gamma t)
 = -\Gamma .
 $$
 
-The value is the same as the vector exponent, as it must be: $\lambda$ is the decay rate of the length $\sqrt{|\langle\delta\tilde{\rho}\rangle_{\natural}|} = \tfrac{1}{2}|\delta\vec r|$, which is proportional to the displacement itself. The factor of two is real but it belongs to the **quadratic form**, not to the exponent. The un-normalised logarithm of the biquaternion norm decays at twice the vector rate,
+The value is the same as the vector exponent, as it must be: $\lambda$ is the decay rate of the length $\sqrt{|\langle\delta\tilde{Ϛ}\rangle_{\natural}|} = \tfrac{1}{2}|\delta\vec r|$, which is proportional to the displacement itself. The factor of two is real but it belongs to the **quadratic form**, not to the exponent. The un-normalised logarithm of the biquaternion norm decays at twice the vector rate,
 
 $$
-\frac{1}{t}\log\frac{\left|\langle\delta\tilde{\rho}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{\rho}(0)\rangle_{\natural}\right|} = -2\Gamma ,
+\frac{1}{t}\log\frac{\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|} = -2\Gamma ,
 $$
 
 and the factor $\tfrac{1}{2}$ in the definition of $\lambda$ removes it. **The exponent of the length is the vector exponent; the logarithm of the quadratic form decays at twice that rate.**
 
 
-Both numbers were verified numerically on the transverse tangent element $\delta\tilde{\rho} = \tfrac{i}{2}\vec e_x$, taken as a tangent to the interior superposition state $\tilde{\rho} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than to a single idempotent, under the semigroup with $\Gamma = 0.7$. At $t = 0.5$, $1.0$ and $2.0$ the displacement ratio $|\delta\vec r(t)|/|\delta\vec r(0)| = \exp(-\Gamma t)$ gives the Lyapunov exponent $\lambda = -0.7000000000 = -\Gamma$, while the logarithm of the quadratic form gives $\tfrac{1}{t}\log|\langle\delta\tilde{\rho}(t)\rangle_{\natural}/\langle\delta\tilde{\rho}(0)\rangle_{\natural}| = -1.4000000000 = -2\Gamma$; the two differ by exactly the factor of two that the definition of $\lambda$ absorbs. The representation used is the four-complex-coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with the algebra's product.
+Both numbers were verified numerically on the transverse tangent element $\delta\tilde{Ϛ} = \tfrac{i}{2}\vec e_x$, taken as a tangent to the interior superposition state $\tilde{Ϛ} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than to a single idempotent, under the semigroup with $\Gamma = 0.7$. At $t = 0.5$, $1.0$ and $2.0$ the displacement ratio $|\delta\vec r(t)|/|\delta\vec r(0)| = \exp(-\Gamma t)$ gives the Lyapunov exponent $\lambda = -0.7000000000 = -\Gamma$, while the logarithm of the quadratic form gives $\tfrac{1}{t}\log|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}| = -1.4000000000 = -2\Gamma$; the two differ by exactly the factor of two that the definition of $\lambda$ absorbs. The representation used is the four-complex-coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with the algebra's product.
 
 ### Information Loss and Entropy Production
 
@@ -240,7 +240,7 @@ The last point locates the boundary precisely. Positive Lyapunov exponents are a
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The invariance of the biquaternion norm and the trace pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.
+**Derived from the algebra.** The invariance of the biquaternion norm and the trace pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.
 
 **Imported from standard dynamical-systems theory.** The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_k\lambda_k = \langle\nabla\cdot f\rangle$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.
 
@@ -251,10 +251,10 @@ The last point locates the boundary precisely. Positive Lyapunov exponents are a
 The Lyapunov exponent of a tangent vector of the informational sector is measured by the sector's biquaternion norm,
 
 $$
-\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|\langle\delta\tilde{\rho}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{\rho}(0)\rangle_{\natural}\right|},
+\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|},
 $$
 
-the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.
+the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.
 
 **Reversible rotor flow is Lyapunov-neutral.** Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the trace pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.
 
@@ -270,15 +270,15 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
+| $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\delta\tilde{\rho} = \tfrac{i}{2}\delta\vec r$ | Tangent vector (traceless element of $\mathbb{M}_+$) |
-| $\langle\delta\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
-| $\lambda(v) = \lim_t \tfrac{1}{2t}\log|\langle\delta\tilde{\rho}(t)\rangle_{\natural}/\langle\delta\tilde{\rho}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
+| $\delta\tilde{Ϛ} = \tfrac{i}{2}\delta\vec r$ | Tangent vector (traceless element of $\mathbb{M}_+$) |
+| $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
+| $\lambda(v) = \lim_t \tfrac{1}{2t}\log|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
 | $\lambda_1\ge\lambda_2\ge\lambda_3$ | Lyapunov spectrum |
-| $\tilde{R}(t)$, $\tilde{R}\tilde{R}^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
-| $\tilde{\rho}\mapsto\tilde{R}\tilde{\rho}\tilde{R}^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
+| $\tilde u(t)$, $\tilde u\tilde u^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
+| $\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
 | $\Phi_t$, $L(t)$, $\vec t(t)$ | Channel semigroup and its affine Bloch action |
 | $\vec r\mapsto L(t)\vec r+\vec t(t)$ | Affine Bloch action of a channel |
 | $\sigma_k(L(t))$ | Singular values; $\lambda_k = \lim_t\tfrac{1}{t}\log\sigma_k$ |

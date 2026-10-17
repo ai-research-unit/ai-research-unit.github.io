@@ -12,7 +12,7 @@ Three answers organise the article, and they are not the same answer.
 
 1. **Its value space.** The field is central-valued: at each event it is an operator times $e_t$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.
 2. **Its algebra.** The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a **multiple of the identity**, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves.
-3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
+3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
 
 The article is organised as follows. The next section treats the field as an operator-valued distribution and fixes its value space. The following section separates its positive- and negative-frequency parts. The next section treats the real and complex cases and charge conjugation. The section after that establishes the c-number character of the field commutator. The next section gives the two-point functions and the propagator, read through the biquaternion norm. A section treats the transformation of the field operator under the Poincaré group and the central phase. The final section separates what is standard from what is open.
 
@@ -23,7 +23,7 @@ The article is organised as follows. The next section treats the field as an ope
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the c-number commutator.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde{K}=i\omega\,e_t+\vec p$ in these units.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde P=i\omega\,e_t+\vec p$ in these units.
 
 ## The Field Operator and Its Value Space
 
@@ -74,7 +74,7 @@ $$
 
 so $\phi^{\mathrm{fop}(+)}$ is the **annihilation part** and $\phi^{\mathrm{fop}(-)}$ the **creation part**. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.
 
-**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}t)$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$ is the phase in which the statement is made.
+**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}t)$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$ is the phase in which the statement is made.
 
 
 ## Real and Complex Scalar Fields
@@ -162,15 +162,15 @@ $$
 
 with the $i\epsilon$ prescription that selects the positive-frequency part for the forward propagation. Its scalar two-point function is the Green's function of the parent equation; the companion article *The Feynman Propagator in Biquaternionic Form* constructs the analogous object for the spin-$\tfrac12$ field, and the scalar case is the standard one.
 
-The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde{K}=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde{K}\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde{K}\rangle_{\natural}$ and
+The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde P=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde P\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde P\rangle_{\natural}$ and
 
 $$
-p^2-\mu^2=-\left(\langle\tilde{K}\rangle_{\natural}+\mu^2\right),
+p^2-\mu^2=-\left(\langle\tilde P\rangle_{\natural}+\mu^2\right),
 \qquad
-\Delta_F(\tilde{K})=-\frac{i}{\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon}.
+\Delta_F(\tilde P)=-\frac{i}{\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon}.
 $$
 
-The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde{K}\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article *The Scalar Field Path Integral in Biquaternionic Form* makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.
+The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article *The Scalar Field Path Integral in Biquaternionic Form* makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.
 
 ## Transformation of the Field Operator
 
@@ -244,7 +244,7 @@ $$
 \big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}}(y)\big]=0,
 $$
 
-so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde{K})=-i/(\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $\mathrm{U}(1)$, and the phase is central because the field's value space is.
+so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $\mathrm{U}(1)$, and the phase is central because the field's value space is.
 
 The biquaternion content of the field operator is therefore confined to its value space and its phases: central-valuedness, the trivial rotor action, and the biquaternion-norm interpretation of the mass shell and the propagator pole. The ladder, the Fock space and the correlation functions are the standard bosonic construction on an imported module, and the algebra supplies no part of them; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves the exclusion by the trace of a commutator. The field is a scalar with respect to $\mathbb{B}$ and a standard bosonic operator field on the outside.
 
@@ -267,8 +267,8 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $i\Delta(x-y)=[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)]$ | Commutator function (c-number) |
 | $W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle$ | Wightman function (positive frequency) |
 | $\Delta_F=\theta(x^0-y^0)W(x-y)+\theta(y^0-x^0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
-| $\Delta_F(\tilde{K})=-i/(\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde{K}\rangle_{\natural}=-\mu^2$ |
-| $\tilde{K}=i\omega\,e_t+\vec p$, $\langle\tilde{K}\rangle_{\natural}=\tilde{K}\tilde{K}^{\natural}$ | Material four-wavevector and biquaternion norm |
+| $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P\rangle_{\natural}=-\mu^2$ |
+| $\tilde P=i\omega\,e_t+\vec p$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $\tilde U\in\mathbb{M}_+$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde A,\tilde B]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |

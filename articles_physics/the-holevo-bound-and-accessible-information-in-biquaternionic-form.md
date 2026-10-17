@@ -4,23 +4,23 @@
 
 A quantum source produces a state drawn from an ensemble. The receiver may perform any measurement the algebra admits, and from the outcome tries to recover the index of the state that was sent. How much of the source's classical information can be extracted in this way is the **accessible information** of the ensemble, and its universal upper bound is the **Holevo bound**. This article develops both in the biquaternion language of the informational sector.
 
-The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive trace-one elements $\tilde{\rho}_x$ with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the **POVM** developed in the companion article on the positive cone. The outcome probabilities are the trace pairing
+The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive trace-one elements $\tilde{Ϛ}_x$ with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the **POVM** developed in the companion article on the positive cone. The outcome probabilities are the trace pairing
 
 $$
-p(y|x) = \mathrm{Tr}\bigl(\tilde{\rho}_x\tilde{E}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\rho}_x\tilde{E}_y\bigr),
+p(y|x) = \mathrm{Tr}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr),
 $$
 
 which is the Born rule. The accessible information is the classical mutual information of this channel, maximized over measurements; the Holevo quantity is the entropy difference
 
 $$
-\chi = S(\tilde{\rho}^{\natural}) - \sum_x p_x\,S(\tilde{\rho}_x),
+\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
 \qquad
-\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x ,
+\tilde{Ϛ}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_x ,
 $$
 
 and the Holevo bound is $I_{\mathrm{acc}}\leq\chi$.
 
-The biquaternion interpretation locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its biquaternion norm, $S(\tilde{\rho}^{\natural}) = \langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$, so the Holevo quantity of a pure-state ensemble is a single norm function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.
+The biquaternion interpretation locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its biquaternion norm, $S(\tilde{Ϛ}^{\natural}) = \langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$, so the Holevo quantity of a pure-state ensemble is a single norm function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.
 
 The article proceeds as follows. Ensembles and POVMs are set up on $\mathbb{M}_+$, and the accessible information is defined. The Holevo quantity is introduced and its basic properties are derived, including the qubit form in terms of the biquaternion norm. The Holevo bound is stated and its proof is sketched through the data-processing inequality, with the biquaternion interpretation of each step. Worked examples follow: orthogonal states, where the bound is saturated, and two non-orthogonal pure states, where it is not. A closing section separates what is algebraic from what is standard information theory.
 
@@ -31,26 +31,26 @@ The article proceeds as follows. Ensembles and POVMs are set up on $\mathbb{M}_+
 An **ensemble** is a finite family of states with weights:
 
 $$
-\mathcal{E} = \bigl\{p_x,\ \tilde{\rho}_x\bigr\}_{x\in\mathcal{X}},
+\mathcal{E} = \bigl\{p_x,\ \tilde{Ϛ}_x\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_t + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
+\tilde{Ϛ}_x = \tfrac{1}{2}\bigl(e_t + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
 $$
 
 The **average state** is the convex combination
 
 $$
-\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_t + i\bar{\vec r}\bigr),
+\tilde{Ϛ}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_x = \tfrac{1}{2}\bigl(e_t + i\bar{\vec r}\bigr),
 \qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
 $$
 
 which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,
 
 $$
-S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
+S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$
 
-as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.
+as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{Ϛ}_x) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.
 
 ### Measurements as POVMs
 
@@ -60,9 +60,9 @@ $$
 \tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t ,
 $$
 
-each of which is an **effect**, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{\rho}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{\rho}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
+each of which is an **effect**, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
 
-For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{\rho}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.
+For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.
 
 ### The accessible information
 
@@ -83,20 +83,20 @@ where the entropies are the Shannon entropies of the distributions $p_x$, $p_y$,
 The **Holevo quantity** of the ensemble is
 
 $$
-\chi(\mathcal{E}) = S(\tilde{\rho}^{\natural}) - \sum_x p_x\,S(\tilde{\rho}_x).
+\chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x).
 $$
 
 It is a difference of two entropies of states in $\mathbb{M}_+$. It is non-negative by the concavity of the entropy: the entropy of the average is at least the average of the entropies,
 
 $$
-S\!\left(\sum_x p_x\tilde{\rho}_x\right) \;\geq\; \sum_x p_x\,S(\tilde{\rho}_x),
+S\!\left(\sum_x p_x\tilde{Ϛ}_x\right) \;\geq\; \sum_x p_x\,S(\tilde{Ϛ}_x),
 $$
 
-which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{\rho}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,
+which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,
 
 $$
-\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
-= H\bigl(\langle\tilde{\rho}^{\natural}\rangle_{\natural}\bigr),
+\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+= H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr),
 $$
 
 a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.
@@ -106,21 +106,21 @@ a function of the biquaternion norm of the average state alone. This is the case
 The Holevo quantity is the quantum mutual information of a state that records the source index classically. Introduce an orthonormal register $\{|x\rangle\}$ and form
 
 $$
-\rho_{XQ} = \sum_x p_x\,|x\rangle\langle x| \otimes \tilde{\rho}_x .
+\rho_{XQ} = \sum_x p_x\,|x\rangle\langle x| \otimes \tilde{Ϛ}_x .
 $$
 
 This is a **classical-quantum state**: block diagonal in the register, with the quantum states on the diagonal. Its entropies are
 
 $$
-S(\rho_{XQ}) = H(X) + \sum_x p_x\,S(\tilde{\rho}_x),
-\qquad S(\rho_X) = H(X), \qquad S(\rho_Q) = S(\tilde{\rho}^{\natural}),
+S(\rho_{XQ}) = H(X) + \sum_x p_x\,S(\tilde{Ϛ}_x),
+\qquad S(\rho_X) = H(X), \qquad S(\rho_Q) = S(\tilde{Ϛ}^{\natural}),
 $$
 
 the first by block diagonality and the trace property, and the third because tracing out the register leaves the average state. Hence the quantum mutual information is exactly the Holevo quantity,
 
 $$
 I(X:Q) = S(\rho_X) + S(\rho_Q) - S(\rho_{XQ})
-= H(X) + S(\tilde{\rho}^{\natural}) - H(X) - \sum_x p_x S(\tilde{\rho}_x)
+= H(X) + S(\tilde{Ϛ}^{\natural}) - H(X) - \sum_x p_x S(\tilde{Ϛ}_x)
 = \chi.
 $$
 
@@ -143,7 +143,7 @@ The lower bound is attained when the average state equals a pure state, so that 
 For every ensemble $\mathcal{E}$ and every measurement $\{\tilde{E}_y\}$,
 
 $$
-I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{\rho}^{\natural}) - \sum_x p_x\,S(\tilde{\rho}_x),
+I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
 $$
 
 and therefore
@@ -158,13 +158,13 @@ This is the Holevo bound, sometimes called the Holevo–Schumacher–Westmorelan
 
 The standard proof has two steps, both of which are theorems about entropy under maps.
 
-**Step 1: the measurement is a quantum channel.** A measurement with POVM $\{\tilde{E}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde{M}_y = \tilde{E}_y^{1/2}$ gives $\tilde{E}_y = \tilde{M}_y^{*}\tilde{M}_y$ and
+**Step 1: the measurement is a quantum channel.** A measurement with POVM $\{\tilde{E}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde{K}_y = \tilde{E}_y^{1/2}$ gives $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ and
 
 $$
-\Phi(\tilde{\rho}) = \sum_y \mathrm{Tr}\bigl(\tilde{M}_y\tilde{\rho}\tilde{M}_y^{*}\bigr)\,|y\rangle\langle y| ,
+\Phi(\tilde{Ϛ}) = \sum_y \mathrm{Tr}\bigl(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}\bigr)\,|y\rangle\langle y| ,
 $$
 
-a channel from $\mathbb{M}_+$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $\Phi(\tilde{\rho}^{\natural})$.
+a channel from $\mathbb{M}_+$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $\Phi(\tilde{Ϛ}^{\natural})$.
 
 **Step 2: the data-processing inequality.** For any channel $\Phi$ and any state $\rho_{XQ}$ with a classical register,
 
@@ -181,11 +181,11 @@ Both steps are standard. The first is the Stinespring form of a measurement, dev
 Collecting the ingredients, the Holevo bound in the framework says:
 
 - the **ensemble** is a convex decomposition of the average state in $\mathbb{M}_+$;
-- the **Holevo quantity** is the concave functional $\chi = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x)$ on that decomposition, which for pure-state ensembles is the biquaternion-norm function $\langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$;
+- the **Holevo quantity** is the concave functional $\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ on that decomposition, which for pure-state ensembles is the biquaternion-norm function $\langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$;
 - the **measurement** is a channel from $\mathbb{M}_+$ onto a commutative subalgebra generated by idempotents;
 - the **bound** is the monotonicity of the quantum mutual information under that channel.
 
-In this interpretation the Holevo quantity measures how much of the average state's mixedness is *classical* — attributable to the ensemble weights rather than to the individual states. If the ensemble states are pure, all of the average state's entropy is classical and $\chi = S(\tilde{\rho}^{\natural})$; if the states are themselves mixed, part of the average entropy is quantum, and that part is unavailable to any measurement.
+In this interpretation the Holevo quantity measures how much of the average state's mixedness is *classical* — attributable to the ensemble weights rather than to the individual states. If the ensemble states are pure, all of the average state's entropy is classical and $\chi = S(\tilde{Ϛ}^{\natural})$; if the states are themselves mixed, part of the average entropy is quantum, and that part is unavailable to any measurement.
 
 ## Worked Examples
 
@@ -195,10 +195,10 @@ Let the ensemble be two orthogonal pure states with equal weights,
 
 $$
 p_0 = p_1 = \tfrac12, \qquad
-\tilde{\rho}_0 = \tilde\Pi_1(\vec u_z), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\vec u_z) .
+\tilde{Ϛ}_0 = \tilde\Pi_1(\vec u_z), \qquad \tilde{Ϛ}_1 = \tilde\Pi_2(\vec u_z) .
 $$
 
-The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so
+The average state is $\tilde{Ϛ}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so
 
 $$
 \chi = S(\tfrac12 e_t) = \log 2 .
@@ -217,7 +217,7 @@ $$
 The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_t$ and
 
 $$
-\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+c}{2}\right).
+\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+c}{2}\right).
 $$
 
 The accessible information of this ensemble is known: for two pure states with equal priors the optimal measurement is the square-root measurement, which here coincides in value with the Helstrom minimum-error measurement, and it gives
@@ -242,10 +242,10 @@ The gap is the price of non-orthogonality: as the two states become more alike, 
 For an ensemble of mixed states the Holevo quantity is strictly less than the entropy of the average state, because the individual entropies are subtracted. Take two states with Bloch vectors of length $r$ along opposite directions, equally weighted:
 
 $$
-\tilde{\rho}_\pm = \tfrac12\bigl(e_t \pm i\,r\,\vec u_z\bigr), \qquad p_\pm = \tfrac12 .
+\tilde{Ϛ}_\pm = \tfrac12\bigl(e_t \pm i\,r\,\vec u_z\bigr), \qquad p_\pm = \tfrac12 .
 $$
 
-The average is $\tfrac12 e_t$, so $S(\tilde{\rho}^{\natural}) = \log2$, while each state has entropy $h\!\left(\tfrac{1+r}{2}\right)$. Hence
+The average is $\tfrac12 e_t$, so $S(\tilde{Ϛ}^{\natural}) = \log2$, while each state has entropy $h\!\left(\tfrac{1+r}{2}\right)$. Hence
 
 $$
 \chi = \log 2 - h\!\left(\frac{1+r}{2}\right),
@@ -271,7 +271,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 ## Open Questions
 
-**1. A biquaternion-norm inequality.** The Holevo quantity of a pure-state ensemble is $\langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$, and the bound is $I_{\mathrm{acc}}\leq \langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the trace pairing, without passing through the general data-processing inequality?
+**1. A biquaternion-norm inequality.** The Holevo quantity of a pure-state ensemble is $\langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$, and the bound is $I_{\mathrm{acc}}\leq \langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the trace pairing, without passing through the general data-processing inequality?
 
 **2. Many-qubit ensembles.** For $n$ qubits the average state lives in $\mathbb{M}_+^{\otimes n}$ and its entropy is no longer a function of a single norm. What replaces the biquaternion-norm interpretation of $\chi$, and is there a tensor-product biquaternion norm that controls it?
 
@@ -283,13 +283,13 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 ## Summary
 
-An ensemble in the informational sector is a family of states $\{p_x,\tilde{\rho}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
+An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
 
 $$
-\chi(\mathcal{E}) = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x),
+\chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
 $$
 
-non-negative by concavity, equal to the quantum mutual information $I(X:Q)$ of the classical-quantum state, and equal for a pure-state ensemble to the entropy of the average state, which for a qubit is the biquaternion-norm function $\langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$. The **Holevo bound** is
+non-negative by concavity, equal to the quantum mutual information $I(X:Q)$ of the classical-quantum state, and equal for a pure-state ensemble to the entropy of the average state, which for a qubit is the biquaternion-norm function $\langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$. The **Holevo bound** is
 
 $$
 I_{\mathrm{acc}}(\mathcal{E}) \;\leq\; \chi(\mathcal{E}) \;\leq\; \log 2 ,
@@ -304,16 +304,16 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho}_x = \tfrac12(e_t + i\vec r_x)$ | Ensemble state |
-| $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$ | Average state |
+| $\tilde{Ϛ}_x = \tfrac12(e_t + i\vec r_x)$ | Ensemble state |
+| $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$ | Average state |
 | $\tilde{E}_y \geq 0$, $\sum_y\tilde{E}_y = e_t$ | POVM (effects) |
-| $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{\rho}_x\tilde{E}_y)$ | Outcome probability (Born rule) |
+| $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_x\tilde{E}_y)$ | Outcome probability (Born rule) |
 | $I_{\mathrm{acc}} = \max_{\{\tilde{E}_y\}} I(X:Y)$ | Accessible information |
-| $\chi = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x)$ | Holevo quantity |
-| $S(\tilde{\rho}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
-| $\langle\tilde{\rho}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$ | Biquaternion norm of the average state |
-| $\chi = \langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
-| $\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{\rho}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
+| $\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ | Holevo quantity |
+| $S(\tilde{Ϛ}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
+| $\langle\tilde{Ϛ}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$ | Biquaternion norm of the average state |
+| $\chi = \langle\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\rangle_{*}$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
+| $\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{Ϛ}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
 | $I(X:Y)\leq\chi\leq\log2$ | Holevo bound and qubit ceiling |
 | $c = |\langle\psi_0|\psi_1\rangle|$ | Overlap of two pure states |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |

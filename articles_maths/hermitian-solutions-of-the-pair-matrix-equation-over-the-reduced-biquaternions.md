@@ -315,14 +315,14 @@ The corollary is the reason the source needs the real representation and the hal
 **Proposition.** In the complex case the half-vectorisation is $z=(\mathrm{vec}_{S}(X_{0}),\mathrm{vec}_{A}(X_{1}))^{\mathsf T}$, of length $n^{2}$, and the reduction is that of §*The Reduction to One Real System* with
 
 $$
-\tilde Q=\operatorname{diag}\bigl(K_{S},-K_{A}\bigr),\qquad \tilde R=\operatorname{diag}\bigl(K_{S},K_{A}\bigr),
+Q_{\mathrm c}=\operatorname{diag}\bigl(K_{S},-K_{A}\bigr),\qquad R_{\mathrm c}=\operatorname{diag}\bigl(K_{S},K_{A}\bigr),
 $$
 
-the matrices $\tilde P$ and $\tilde J$ built from the two-block real representation $\tilde M^{R}=\begin{pmatrix}M_{0}&-M_{1}\\ M_{1}&M_{0}\end{pmatrix}$ and the row form $\tilde M^{R}_{r}=[M_{0},-M_{1}]$.
+the matrices $P_{\mathrm c}$ and $J_{\mathrm c}$ built from the two-block real representation $M^{R}=\begin{pmatrix}M_{0}&-M_{1}\\ M_{1}&M_{0}\end{pmatrix}$ and the row form $M^{R}_{r}=[M_{0},-M_{1}]$. The subscript $\mathrm c$ marks the complex-case matrices; the four-block matrices of the preceding section carry no subscript.
 
 *Proof.* The unknown has two real blocks, $X_{0}$ symmetric and $X_{1}$ antisymmetric, so the half-vectorisation has $n(n+1)/2+n(n-1)/2=n^{2}$ coordinates. The row form of the two-block representation is $[X_{0},-X_{1}]$, and the rest of the construction is the same with two blocks in place of four.
 
-The complex theorems are the source's Theorems 4.1 and 4.2, with the consistency criterion and the uniqueness criterion $\operatorname{rank}(\tilde P\tilde J\tilde Q)=n^{2}$.
+The complex theorems are the source's Theorems 4.1 and 4.2, with the consistency criterion and the uniqueness criterion $\operatorname{rank}(P_{\mathrm c}J_{\mathrm c}Q_{\mathrm c})=n^{2}$.
 
 ## The Hermitian Partial Inverse Eigenvalue Problem
 
@@ -348,7 +348,7 @@ $$
 \operatorname{rank}(N)=\operatorname{rank}\bigl([N,t]\bigr),
 $$
 
-where $\tilde S=(\tilde\Phi^{R})^{\mathsf T}\otimes[I_{n},0]$ is the coefficient matrix of the single equation, $[I_{n},0]$ being the row form of $\tilde I_{n}$, $N=\tilde S\tilde J\tilde Q$ and $t=\mathrm{vec}(\tilde E^{R}_{r})$ with $\tilde E=\Phi\Lambda$.
+where $S_{\mathrm c}=(\Phi^{R})^{\mathsf T}\otimes[I_{n},0]$ is the coefficient matrix of the single equation, $[I_{n},0]$ being the row form of $I_{n}$, $N=S_{\mathrm c}J_{\mathrm c}Q_{\mathrm c}$ and $t=\mathrm{vec}(E^{R}_{r})$ with $E=\Phi\Lambda$.
 
 *Proof.* Substituting these matrices into the complex pair leaves the single equation $M\Phi=\Phi\Lambda$; the reduction of §*The Encodings and the Unknowns* applies, and a linear system is solvable exactly when the rank of its matrix equals the rank of the matrix augmented by the right-hand side.
 
@@ -361,12 +361,12 @@ The criterion is the source's Corollary 4.3.
 **Proposition.** When the criterion holds, the general solution is
 
 $$
-\begin{pmatrix}\mathrm{vec}(M_{0})\\ \mathrm{vec}(M_{1})\end{pmatrix}=\tilde R\Bigl((N)_{\mathrm{MP}}\,t+\bigl(I_{n^{2}}-(N)_{\mathrm{MP}}N\bigr)y\Bigr),
+\begin{pmatrix}\mathrm{vec}(M_{0})\\ \mathrm{vec}(M_{1})\end{pmatrix}=R_{\mathrm c}\Bigl((N)_{\mathrm{MP}}\,t+\bigl(I_{n^{2}}-(N)_{\mathrm{MP}}N\bigr)y\Bigr),
 $$
 
 with $y\in\mathbb{R}^{n^{2}}$ arbitrary, and $M$ is unique exactly when $\operatorname{rank}(N)=n^{2}$.
 
-*Proof.* The general solution of a consistent linear system is the sum of a particular solution and an arbitrary element of the kernel, and the parametrisation by $\tilde R$ is injective. The source's Remark 4.4 records the non-uniqueness in the same terms.
+*Proof.* The general solution of a consistent linear system is the sum of a particular solution and an arbitrary element of the kernel, and the parametrisation by $R_{\mathrm c}$ is injective. The source's Remark 4.4 records the non-uniqueness in the same terms.
 
 ## Verification
 
@@ -406,7 +406,7 @@ The pair equation $(AXB,CXD)=(E,F)$ over the reduced biquaternions imposes two e
 | $t$ | $(\mathrm{vec}(E^{R}_{r}),\mathrm{vec}(F^{R}_{r}))^{\mathsf T}$ |
 | $M_{\mathrm{MP}}$ | The Moore–Penrose inverse |
 | $\operatorname{rank}$, $\operatorname{diag}$ | The rank, and the block diagonal matrix |
-| $\tilde Q,\tilde R,\tilde P,\tilde S,\tilde J$ | The complex versions of the encodings, of the selection and of the coefficient matrices |
+| $Q_{\mathrm c},R_{\mathrm c},P_{\mathrm c},S_{\mathrm c},J_{\mathrm c}$ | The complex versions of the encodings, of the selection and of the coefficient matrices |
 | $\Lambda$, $\Phi$ | The prescribed eigenvalues and eigenvectors |
 
 ## Further Reading

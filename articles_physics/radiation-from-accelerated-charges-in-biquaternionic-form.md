@@ -23,7 +23,7 @@ Two later exercises use this article as their declared foundation: *Exercise: Th
 The Maxwell article establishes that in the Lorenz gauge the potential biquaternion satisfies the biquaternionic wave equation
 
 $$
-\Box \tilde{A} = -\mu\,\tilde{R}', \qquad \tilde{R}' = ic\rho + \vec J,
+\Box \tilde{A} = -\mu\,\tilde J, \qquad \tilde J = ic\rho\,e_t + \vec J,
 $$
 
 and that the physically correct solution is the **retarded** one, built by convolution over the past light cone. The scalar Green's function of this second-order equation, distinct from the scalar part of that article's biquaternion-valued retarded Green's function (a first-order kernel of the opposite sign), is the familiar retarded kernel of the d'Alembertian,
@@ -35,7 +35,7 @@ $$
 so that
 
 $$
-\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde{R}'(\tilde{Y})\,d^4Y .
+\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{Y})\,\tilde J(\tilde{Y})\,d^4Y .
 $$
 
 We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(t)$, the source is
@@ -48,7 +48,7 @@ $$
 and therefore
 
 $$
-\tilde{R}'(\tilde{Y}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
+\tilde J(\tilde{Y}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$
 
 Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the **retarded time** $t_r$ defined implicitly by
@@ -160,15 +160,15 @@ Every zero divisor factorises, and the source's spinor treatment of the retarded
 **The invariant retarded distance.** The source's scalar is
 
 $$
-\xi = -i\,\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right),
+\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right),
 \qquad
-\tilde{v} = \frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
+\frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
 $$
 
-where $\tilde{v}$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
+where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
 
 $$
-\mathrm{Sc}\!\left(\tilde{v}\,\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right)
 = \gamma\,(iR) - (-i\gamma\vec\beta)\cdot(-\vec R)
 = i\gamma\left(R - \vec R\cdot\vec\beta\right)
 = i\gamma D ,
@@ -520,7 +520,7 @@ $$
 
 built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(t_r)\right)$, both in $\mathbb{M}_-$.
 
-The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}}) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:
+The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:
 
 $$
 \tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,\tilde{B}^2,
@@ -561,19 +561,18 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity part and acceleration (radiation) part of the field |
 | $\tilde{A} = i\phi/c\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |
-| $\tilde{R}' = ic\rho + \vec J$ | Source biquaternion of the potential wave equation |
-| $t_r$ | Retarded time, $t_r = t - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)|/c$ |
-| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)$, $R = |\vec R|$ | Retarded separation |
+| $\tilde J = ic\rho\,e_t + \vec J$ | Four-current of the potential wave equation |
+| $t_r$ | Retarded time, $t_r = t - \lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)\rvert/c$ |
+| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t_r)$, $R = \lvert\vec R\rvert$ | Retarded separation |
 | $\vec u_R = \vec R/R$ | Unit retarded direction |
 | $\tilde{\mathcal{R}} = iR\,e_t + \vec R$ | Retarded null biquaternion, $\langle\tilde{\mathcal{R}}\rangle_{\natural}=0$ |
 | $\tilde{V}/\gamma = ic\,e_t + \vec v(t_r)$ | Coordinate velocity, the four-velocity divided by $\gamma$ |
 | $\tilde{V} = \gamma\left(ic\,e_t + \vec v(t_r)\right)$ | Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
-| $\vec\beta = \vec v(t_r)/c$, $\beta = |\vec\beta|$ | Dimensionless retarded velocity |
+| $\vec\beta = \vec v(t_r)/c$, $\beta = \lvert\vec\beta\rvert$ | Dimensionless retarded velocity |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor |
 | $\kappa = 1-\vec u_R\cdot\vec\beta$ | Retardation factor |
 | $D = R-\vec R\cdot\vec\beta = R\kappa$ | Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}})$ |
-| $\xi = \gamma D = -i\,\mathrm{Sc}(\tilde{v}\bar{\tilde{\mathcal{R}}})$ | Invariant retarded distance (the source's $\xi$) |
-| $\tilde{v} = \tilde{V}/(ic)$ | Four-velocity at unit biquaternion norm, $\tilde{v} = \gamma(e_t - i\vec\beta)$ |
+| $\xi = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right)$ | Invariant retarded distance (the source's $\xi$) |
 | $\tilde{B}$, $\tilde{B}^2 = \tilde{V}/(ic)$, $\tilde{B}^+ = \tilde{B}$ | Bireal spinor square root of the four-velocity |
 | $\sigma = \tfrac12(e_t + i\vec u)$ | Primitive idempotent; $\vec u$ the line of sight in the charge's rest frame |
 | $\tilde{a} = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ | Rest-frame acceleration biquaternion, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$ |

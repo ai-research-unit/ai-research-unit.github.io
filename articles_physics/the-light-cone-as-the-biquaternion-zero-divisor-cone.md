@@ -16,9 +16,9 @@ Three threads are developed below.
 
 - **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Conventions in the Biquaternion Universe*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone, and the $\mathbb{M}_-$ cone is the physical light cone.
-- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde{K}$ is null exactly when $\langle\tilde{K}\rangle_{\natural} = \langle\tilde{K},\tilde{K}\rangle_{\natural} = 0$. For such a $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \langle\tilde{K},\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
+- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
-**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the central scalar imaginary. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on the real material slice — and the material coordinate is $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
+**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the central scalar imaginary. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on the real material slice — and the material coordinate is $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Biquaternion Norm and Its Vanishing Set
 
@@ -163,15 +163,15 @@ $$
 
 because the cross terms cancel and the spatial part gives $-\sum_{\mu\in\{x,y,z\}}\partial^2/\partial Q_\mu^2$ with the correct sign from $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
-Now let $\tilde{K}$ be a four-wavevector, meaning an element of $\mathbb{M}_-$ written as
+Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{M}_-$ written as
 
 $$
-\tilde{K} = i\,\frac{\omega}{c}\,e_t + \vec k,
+\tilde P = i\,\frac{\omega}{c}\,e_t + \vec k,
 \qquad
-\langle\tilde{K}\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
+\langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
-For a plane-wave phase $\mathsf{M}_2 = f(s)$ with $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives
+For a plane-wave phase $\mathsf{M}_2 = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives
 
 $$
 \partial/\partial Q_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
@@ -185,7 +185,7 @@ $$
 \Box f(s) = \left[(\partial/\partial Q_t\,s)^2 + \sum_{\mu\in\{x,y,z\}}(\partial/\partial Q_\mu s)^2\right] f''(s)
 + \bigl(\Box s\bigr) f'(s)
 = \left[-\frac{\omega^2}{c^2} + \vec k^2\right] f''(s)
-= \langle\tilde{K}\rangle_{\natural}\,f''(s),
+= \langle\tilde P\rangle_{\natural}\,f''(s),
 $$
 
 since $s$ is linear and $\Box s = 0$. Hence
@@ -193,10 +193,10 @@ since $s$ is linear and $\Box s = 0$. Hence
 $$
 \boxed{\; \Box f(s) = 0 \ \text{ for every smooth } f \;}
 \qquad\Longleftrightarrow\qquad
-\langle\tilde{K}\rangle_{\natural} = 0 .
+\langle\tilde P\rangle_{\natural} = 0 .
 $$
 
-A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde{K}\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde{K}\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde{K} = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
+A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
 
 $$
@@ -205,9 +205,9 @@ $$
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde{K}_i\rangle_{\natural} = 0$. Evaluating $\Box\mathsf{M}_2 = \partial^2/\partial Q_t^2\mathsf{M}_2 + \Delta\mathsf{M}_2$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\Box\mathsf{M}_2 = \partial^2/\partial Q_t^2\mathsf{M}_2 + \Delta\mathsf{M}_2$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
-The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\mathsf{M}_2) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
+The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\mathsf{M}_2) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
 ## Invariance of the Cone
 
@@ -236,7 +236,7 @@ The same set appears wherever the biquaternion norm is evaluated, and three guis
 
 - **Momentum space.** The four-momentum $\tilde{P} = iE/c\,e_t + \vec p$ is null when $E = c|\vec p|$: the massless shell. The zero-divisor condition on momentum is the statement that the particle is massless, and for a massive particle $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 < 0$ keeps the momentum strictly timelike.
 - **Field space.** The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure vector $(F_0 = 0)$, so its biquaternion norm is $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_k F_k^2$, and it vanishes exactly for a **null (radiative) field**: $\vec E\perp\vec H$ and $|\vec E| = c|\vec B|$. This is the zero-divisor cone realized inside the six-dimensional complex vector space of the field strength, and it is developed in the companion article *The Field-Strength Biquaternion and Its Invariants*. The energy–momentum tensor of such a field has rank one, as the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor* shows.
-- **Wave space.** The four-wavevector $\tilde{K}$ is null when the plane wave is dispersionless, as derived above.
+- **Wave space.** The four-wavevector $\tilde P$ is null when the plane wave is dispersionless, as derived above.
 
 In each case the statement is the same: a physically distinguished class of objects — massless particles, radiative fields, dispersionless waves — is exactly the class on which the algebra's biquaternion norm vanishes, and the class is closed under the Lorentz group.
 
@@ -294,7 +294,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde{K}$ satisfies $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \langle\tilde{K}\rangle_{\natural}f''$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde{K}\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde{K}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}f''$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which the biquaternion algebra ceases to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
@@ -313,8 +313,8 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
-| $\tilde{K} = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |
-| $\langle\tilde{K}\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
+| $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |
+| $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

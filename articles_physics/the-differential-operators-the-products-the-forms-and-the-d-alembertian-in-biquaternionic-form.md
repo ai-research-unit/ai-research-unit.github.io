@@ -111,7 +111,7 @@ $$
 $$
 
 A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the
-equation $\tilde\nabla\tilde F=-\tilde R$ is the series' Maxwell equation. **On the material sector** the same product is read
+equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material sector** the same product is read
 with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being unchanged.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in §*The Twelve Products and Their
@@ -332,8 +332,8 @@ through a metric, the series writes the element $\tilde F$ itself, the metric be
 ## Physical Interpretation
 
 **The plain product is the one-sided derivative.** $\tilde\nabla\tilde F$ holds the divergence, the gradient and the curl of the
-field in a single biquaternion, and the equation $\tilde\nabla\tilde F=-\tilde R$ is the Maxwell equation of the series, the
-source $\tilde R$ read beside the field (*Maxwell's Equations in Biquaternionic Form*). The half-sum of the two arguments is the
+field in a single biquaternion, and the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation of the series, the
+source $\sqrt{\mu}\,\tilde J$ read beside the field (*Maxwell's Equations in Biquaternionic Form*). The half-sum of the two arguments is the
 symmetric part, whose scalar content is the plain form, and the half-difference is the curl alone.
 
 **The Hermitian form is the kinetic density.** Read on a scalar field $\tilde\Phi=\Phi e_t$, it is the scalar part of the

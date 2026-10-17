@@ -265,9 +265,9 @@ $$
 is invariant under the central phase, and Noether's theorem gives the conserved current
 
 $$
-\tilde j=\frac{i}{2}\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
+\tilde J=\frac{i}{2}\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
 \qquad
-\langle\tilde\nabla,\tilde j\rangle_{\natural}=0\ \text{on shell},
+\langle\tilde\nabla,\tilde J\rangle_{\natural}=0\ \text{on shell},
 $$
 
 whose conservation was checked on a superposition of two on-shell plane waves of different momenta. The time component $j^0$ is the charge density and its integral is the charge; the spatial components are the current. The current vanishes identically for a real field, which is the classical statement that a real scalar is its own antiparticle and carries no charge.
@@ -359,7 +359,7 @@ $$
 
 whose massless limit $E=-\kappa/r$ is exactly the inverse-square central potential of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.
 
-The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$, with conserved current $\tilde j=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
+The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$, with conserved current $\tilde J=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
 
 ## Summary of Notation
 
@@ -384,7 +384,7 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=gg'Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\nabla E=g'\,\nabla\phi=g'\,(d\phi/dr)\,\vec u_r$ | Central force on the test source (inward) |
-| $\tilde j=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\tilde\nabla\phi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla,\tilde j\rangle_{\natural}=0$ |
+| $\tilde J=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\tilde\nabla\phi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

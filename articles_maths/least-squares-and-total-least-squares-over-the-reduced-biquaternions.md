@@ -220,7 +220,7 @@ The effective problem in each case is a complex problem, and the three differ on
 | complex | $X^{+}=X^{-}=X$, complex | two complex problems sharing one complex unknown |
 | real | $X^{+}=X^{-}=X$, real | two complex problems sharing one real unknown |
 
-**Corollary (the complex unknown as a stacked problem).** For the complex unknown the objective is $\tfrac12\lVert \tilde AX-\tilde B\rVert_{F}^{2}$ with the stacked complex matrices $\tilde A=\begin{pmatrix}A^{+}\\ A^{-}\end{pmatrix}$ and $\tilde B=\begin{pmatrix}B^{+}\\ B^{-}\end{pmatrix}$, so the least squares solution is $X=\tilde A_{\mathrm{MP}}\tilde B$; the total least squares and mixed problems are the complex ones for this stack.
+**Corollary (the complex unknown as a stacked problem).** For the complex unknown the objective is $\tfrac12\lVert \mathsf A X-\mathsf B\rVert_{F}^{2}$ with the stacked complex matrices $\mathsf A=\begin{pmatrix}A^{+}\\ A^{-}\end{pmatrix}$ and $\mathsf B=\begin{pmatrix}B^{+}\\ B^{-}\end{pmatrix}$, so the least squares solution is $X=\mathsf A_{\mathrm{MP}}\mathsf B$; the total least squares and mixed problems are the complex ones for this stack.
 
 *Proof.* Setting $X^{+}=X^{-}=X$ in the factorised objective of §*The Idempotent Reduction* gives half the sum of the two complex residual squares, which is half the squared Frobenius norm of the stacked residual; the stacked complex least squares solution is the pseudoinverse one.
 

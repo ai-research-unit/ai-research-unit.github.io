@@ -135,14 +135,14 @@ $$
 \underbrace{a_{11},a_{22}}_{\text{populations}},\qquad \underbrace{a_{12},a_{21}}_{\text{coherences}} .
 $$
 
-Four identities make the reading exact, all of them linear or quadratic in the coordinates and all of them the mathematics of the preceding sections read physically. For a **state** $\tilde\rho$ — a positive, trace-one, Hermitian element, written $\tilde\rho=\tfrac12\bigl(e_t+i\,\vec r\!\cdot\!\mathbf e\bigr)$ on the Bloch ball — and the observable $\tilde\Xi=i\vec\mu$ of unit real $\vec\mu$:
+Four identities make the reading exact, all of them linear or quadratic in the coordinates and all of them the mathematics of the preceding sections read physically. For a **state** $\tilde{Ϛ}$ — a positive, trace-one, Hermitian element, written $\tilde{Ϛ}=\tfrac12\bigl(e_t+i\,\vec r\!\cdot\!\mathbf e\bigr)$ on the Bloch ball — and the observable $\tilde\Xi=i\vec\mu$ of unit real $\vec\mu$:
 
-1. **The populations sum to the trace,** $p_++p_-=a_{11}+a_{22}=2\,\mathrm{Sc}(\tilde\rho)=1$ for a trace-one state. The two populations are the weights of the two outcomes, and they are the two eigenvalues of the observable on the state.
+1. **The populations sum to the trace,** $p_++p_-=a_{11}+a_{22}=2\,\mathrm{Sc}(\tilde{Ϛ})=1$ for a trace-one state. The two populations are the weights of the two outcomes, and they are the two eigenvalues of the observable on the state.
 2. **The populations differ by the mean of the observable,** $p_+-p_-=a_{11}-a_{22}=\vec r\!\cdot\!\vec\mu=\langle\tilde\Xi\rangle$. The observable of square one has values $\pm1$, and the state's mean value is the population difference.
 3. **The populations are probabilities,** $p_\pm=\tfrac12(1\pm\vec r\!\cdot\!\vec\mu)$ lies in $[0,1]$, and the coherences are a conjugate pair, $a_{21}=\overline{a_{12}}$.
-4. **The norm is the population product minus the coherence square,** $\langle\tilde\rho\rangle_{\natural}=a_{11}a_{22}-a_{12}a_{21}=p_+p_--\lvert c\rvert^{2}$ with $c=a_{12}$. The norm of the framework is therefore the classical population product minus the non-classical interference.
+4. **The norm is the population product minus the coherence square,** $\langle\tilde{Ϛ}\rangle_{\natural}=a_{11}a_{22}-a_{12}a_{21}=p_+p_--\lvert c\rvert^{2}$ with $c=a_{12}$. The norm of the framework is therefore the classical population product minus the non-classical interference.
 
-The last identity carries the purity. On the Bloch ball the norm of a Hermitian state is $\langle\tilde\rho\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^{2})$, which vanishes exactly on the pure states, the boundary of the ball. In the population-and-coherence form the vanishing is the **saturation**
+The last identity carries the purity. On the Bloch ball the norm of a Hermitian state is $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^{2})$, which vanishes exactly on the pure states, the boundary of the ball. In the population-and-coherence form the vanishing is the **saturation**
 
 $$
 p_+p_-=\lvert c\rvert^{2}\quad\text{(pure state)},

@@ -258,7 +258,7 @@ The following table lists the seven physical four-vectors that live in $\mathbb{
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $(i\gamma\,\vec f\cdot\vec v/c, \gamma\vec f)$ |
 | Four-potential | $\tilde{A} = i\phi/c\,e_t + \vec A$ | $(i\phi/c, \vec A)$ |
 | Four-current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $(ic\rho, \vec j)$ |
-| Four-wavevector | $\tilde{K} = i\omega/c\,e_t + \vec k$ | $(i\omega/c, \vec k)$ |
+| Four-wavevector | $\tilde P = i\omega/c\,e_t + \vec k$ | $(i\omega/c, \vec k)$ |
 
 In each case, the scalar part is purely imaginary and the vector part is real, matching the structure of $\mathbb{M}_-$.
 
@@ -298,7 +298,7 @@ The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativis
 - The four-force $\tilde{F} = d\tilde{P}/d\tau$.
 - The four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$.
 - The four-current $\tilde{J} = ic\rho\,e_t + \vec j$.
-- The four-wavevector $\tilde{K} = i\omega/c\,e_t + \vec k$.
+- The four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$.
 
 Each has an imaginary scalar part (the time component) and a real vector part (the spatial components). Each transforms under the Lorentz group by rotor conjugation, with the rotor a general unit-norm biquaternion in $\mathbb{B}$ (Hermitian for a pure boost, a real quaternion for a pure spatial rotation).
 

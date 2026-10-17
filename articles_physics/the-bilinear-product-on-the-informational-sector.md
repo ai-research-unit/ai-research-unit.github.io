@@ -239,28 +239,28 @@ strictly positive scalar part (*Square Roots of Zero and the Nilpotents in the B
 the general element of the unit-trace slice,
 
 $$
-\tilde\rho = \tfrac12\bigl(e_t+i\vec r\bigr),\qquad \lvert\vec r\rvert\le 1,
+\tilde{Ϛ} = \tfrac12\bigl(e_t+i\vec r\bigr),\qquad \lvert\vec r\rvert\le 1,
 $$
 
 the two forms read the Bloch vector as
 
 $$
-\langle\tilde\rho,\tilde\rho\rangle_{\natural} = \tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural} = \tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 \qquad
-\langle\tilde\rho,\tilde\rho\rangle = \tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
+\langle\tilde{Ϛ},\tilde{Ϛ}\rangle = \tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 \qquad
-\mathrm{Tr}(\tilde\rho^{2}) = \tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
+\mathrm{Tr}(\tilde{Ϛ}^{2}) = \tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 $$
 
 so the **cone of the norm is the purity boundary of the Bloch ball**: a state is pure exactly when
 $\lvert\vec r\rvert=1$, exactly when $\langle\tilde Q\rangle_{\natural}=0$, exactly when it is a zero divisor; a mixed state is
 interior, $\langle\tilde Q\rangle_{\natural}>0$, and is a unit. The purity is carried by the difference of the two forms,
-$\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\lvert\vec r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
-$\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac12$, and maximally mixed when they coincide, $\langle\tilde\rho,\tilde\rho\rangle-\langle\tilde\rho,\tilde\rho\rangle_{\natural}=0$.
+$\langle\tilde{Ϛ},\tilde{Ϛ}\rangle-\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural}=\lvert\vec r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
+$\langle\tilde{Ϛ},\tilde{Ϛ}\rangle-\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural}=\frac12$, and maximally mixed when they coincide, $\langle\tilde{Ϛ},\tilde{Ϛ}\rangle-\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural}=0$.
 
-**Remark (verified).** $\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ and $\langle\tilde\rho,\tilde\rho\rangle=\frac14(1+\lvert\vec r\rvert^{2})$
+**Remark (verified).** $\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ and $\langle\tilde{Ϛ},\tilde{Ϛ}\rangle=\frac14(1+\lvert\vec r\rvert^{2})$
 on $100$ random unit-trace elements; the Hermitian idempotents satisfy $\langle\tilde Q\rangle_{\natural}=0$ and $\langle\tilde\Pi,\tilde\Pi\rangle=\frac12$ to machine
-precision, and $\mathrm{Tr}(\tilde\rho^{2})$ equals $\frac12(1+\lvert\vec r\rvert^{2})$.
+precision, and $\mathrm{Tr}(\tilde{Ϛ}^{2})$ equals $\frac12(1+\lvert\vec r\rvert^{2})$.
 
 **Proposed interpretation, labelled as such.** The same algebraic cone has **two physical roles on the
 two sides of the algebra**: on $\mathbb{M}_-$ it is the **light cone**, the wall of the massless and the
@@ -400,7 +400,7 @@ The general plain bilinear product reads as the process on the informational sec
 interpretation is the composition of two observational operations. Three further readings follow from
 the sector's place in the algebra. The matrix side of the sector is the Hermitian matrices, so the
 product of two Hermitian matrices is Hermitian exactly when they commute, and the trace formula
-$\mathrm{Tr}(\tilde\rho\tilde Q)=2\,\mathrm{Sc}(\tilde\rho\tilde Q)$ is the algebraic form of the
+$\mathrm{Tr}(\tilde{Ϛ}\tilde Q)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde Q)$ is the algebraic form of the
 expectation value of an observable in a state. The sector is the receiving end of the square, so every
 displacement's square is an operation and the map from the physical four-vectors to the operators is the
 square. And the cone, read on the state space, is the boundary of purity: the pure states are the
@@ -450,10 +450,10 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde Q^{2}\in\mathbb{M}_+$ | The square is informational for an element of either sector |
 | $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$ | The nonzero idempotents; the Bloch sphere; on the cone |
-| $\tilde\rho=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
-| $\langle\tilde\rho,\tilde\rho\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
+| $\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{\natural}=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | Group of units; zero-divisor cone |
-| $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace; $\mathrm{Tr}(\tilde\rho\tilde Q)$ an expectation value |
+| $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace; $\mathrm{Tr}(\tilde{Ϛ}\tilde Q)$ an expectation value |
 | $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

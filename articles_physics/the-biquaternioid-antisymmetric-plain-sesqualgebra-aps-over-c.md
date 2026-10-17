@@ -41,7 +41,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 - **The Jacobi failure is the framework's statement that interference has no symmetry algebra of its own.** The bracket does not close, so the phase structure of the state space carries no group; read against the clock, the failure is not a loss, because the phase itself is supplied by the central rotation and what is missing is a Lie algebra of phases rather than the phase.
 - **A pairing and no symmetry algebra.** An interference term is assembled from two amplitudes and is a relational datum, not an infinitesimal transformation; the failure is the reason the antisymmetric sesquilinear form is a structure of interference and not a gauge algebra, the gauge algebra being carried by the quaternionic row.
 - **The phase operator has one handedness.** The right family is the negative mirror of the left, and the antisymmetry ties the two together; the adjoint conjugates the phase of the parameter without moving the operation to the other side, and the only self-adjoint one-sided phase operators are the central ones, the two-sided ones being the quadratic representations.
-- **One value read on one state splits into a central number and a vector.** For a state $\tilde\varrho=\tfrac12(e_t+i\vec r)$ the algebraic norm of the block is the Bloch vector $\tfrac12 i\vec r$ while the algebraic norm of the companion band is the purity, so the probability and the axis of the phase are one state read twice. The unitary sandwich mirrors the algebra order and agrees with the ordinary conjugation on the state side, so the phase action on a state is unambiguous.
+- **One value read on one state splits into a central number and a vector.** For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ the algebraic norm of the block is the Bloch vector $\tfrac12 i\vec r$ while the algebraic norm of the companion band is the purity, so the probability and the axis of the phase are one state read twice. The unitary sandwich mirrors the algebra order and agrees with the ordinary conjugation on the state side, so the phase action on a state is unambiguous.
 - **The block reads the relative phase, which carries no current.** The absolute, central phase belongs to the material generator of the corpus and not to this band; what survives here is the positive form, so the phase vector has a definite length, and the cross-product algebra of the real rotations, so the block does have an infinitesimal symmetry of another kind.
 
 ## Summary
@@ -57,7 +57,7 @@ The biquaternioid antisymmetric plain sesqualgebra is the structure $\tilde P\st
 | $\mathrm{Sc}(\tilde P\star\tilde Q)=0$ | the vanishing of the trace form |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the product |
 | the Jacobi failure | no symmetry algebra of the phase |
-| $\tilde\varrho=\tfrac12(e_t+i\vec r)$ | a state; $\tfrac12 i\vec r$ is the value of the block |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state; $\tfrac12 i\vec r$ is the value of the block |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $L^{\star}_{\tilde A}$, $R^{\star}_{\tilde A}$ | the two one-sided phase operators; one handedness |
 | $S_{\tilde P,\tilde P^{*}}$ | the two-sided quadratic representation |

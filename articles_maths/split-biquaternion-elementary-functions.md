@@ -178,7 +178,7 @@ Note: in the biquaternion case, the trigonometric functions are defined using th
 The **logarithm** of a split biquaternion $\tilde{Q}$ is defined as the inverse of the exponential:
 
 $$
-\log(\tilde{Q}) = \tilde{L} \iff \exp(\tilde{L}) = \tilde{Q}.
+\log(\tilde{Q}) = \tilde Q_{\log} \iff \exp(\tilde Q_{\log}) = \tilde{Q}.
 $$
 
 The logarithm is multivalued in general, as in the complex case. We compute the principal branch.

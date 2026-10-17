@@ -130,7 +130,7 @@ $$
 \mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) \qquad \text{for all } \tilde{Q}_1, \tilde{Q}_2 \in \mathbb{B},
 $$
 
-where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$.
+where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{Ϛ})$.
 
 **The determinant is the biquaternion norm. Expanding,
 

@@ -57,13 +57,13 @@ q'_+&q_+&q'_-&q_-\\
 q_-&-q'_-&q_+&-q'_+\\
 q'_-&q_-&q'_+&q_+
 \end{pmatrix}
-=\begin{pmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{pmatrix},
+=\begin{pmatrix}A_+&A_-\\ A_-&A_+\end{pmatrix},
 \qquad
-\tilde A=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix},\quad \tilde B=\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix},
+A_+=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix},\quad A_-=\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix},
 $$
-where $\tilde A$ and $\tilde B$ are the real $2\times2$ matrices of the multiplication by the complex numbers $Q_+$ and $Q_-$.
+where $A_+$ and $A_-$ are the real $2\times2$ matrices of the multiplication by the complex numbers $Q_+$ and $Q_-$.
 
-*Proof.* Apply $L_{Q_\pm}$ to the four basis elements and read the coefficients. On $1$: $Q_\pm=q_+\cdot1+q'_+\cdot i+q_-\cdot j+q'_-\cdot ij$ gives the first column. On $i$: $iQ_\pm=iQ_++iQ_-j=(iq_+-q'_+)+(iq_--q'_-)j=-q'_+\cdot1+q_+\cdot i-q'_-\cdot j+q_-\cdot ij$, the second column; on $j$: $jQ_\pm=Q_+j+Q_-=q_-\cdot1+q'_-\cdot i+q_+\cdot j+q'_+\cdot ij$, the third column; on $ij$: $ijQ_\pm=iQ_+j+iQ_-=(iq_+-q'_+)j+(iq_--q'_-)=-q'_-\cdot1+q_-\cdot i-q'_+\cdot j+q_+\cdot ij$, the fourth. The block form is read off the display: the two diagonal blocks are both $\tilde A$ and the two off-diagonal blocks both $\tilde B$, because the two coordinates $Q_+$ and $Q_-$ play the symmetric roles in the product $Q_{\pm,1}Q_{\pm,2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$.
+*Proof.* Apply $L_{Q_\pm}$ to the four basis elements and read the coefficients. On $1$: $Q_\pm=q_+\cdot1+q'_+\cdot i+q_-\cdot j+q'_-\cdot ij$ gives the first column. On $i$: $iQ_\pm=iQ_++iQ_-j=(iq_+-q'_+)+(iq_--q'_-)j=-q'_+\cdot1+q_+\cdot i-q'_-\cdot j+q_-\cdot ij$, the second column; on $j$: $jQ_\pm=Q_+j+Q_-=q_-\cdot1+q'_-\cdot i+q_+\cdot j+q'_+\cdot ij$, the third column; on $ij$: $ijQ_\pm=iQ_+j+iQ_-=(iq_+-q'_+)j+(iq_--q'_-)=-q'_-\cdot1+q_-\cdot i-q'_+\cdot j+q_+\cdot ij$, the fourth. The block form is read off the display: the two diagonal blocks are both $A_+$ and the two off-diagonal blocks both $A_-$, because the two coordinates $Q_+$ and $Q_-$ play the symmetric roles in the product $Q_{\pm,1}Q_{\pm,2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$.
 
 **Corollary (the trace and the determinant).** The real matrix has trace $4q_+=2\operatorname{Re}(Q_{++}+Q_{--})$ and determinant
 $$
@@ -71,9 +71,9 @@ $$
 $$
 so the element is a unit exactly when the real matrix of its multiplication is invertible, and the zero divisors are exactly the non-zero elements whose matrix is singular. The complex matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ has trace $2Q_+$ and determinant $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$.
 
-*Proof.* The trace is the sum of the four diagonal entries $q_++q_++q_++q_+$. The determinant of $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ with commuting blocks $\tilde A,\tilde B$ is $\det(\tilde A^{2}-\tilde B^{2})=\det(\tilde A+\tilde B)\det(\tilde A-\tilde B)$; and $\det(\tilde A+\tilde B)=\lvert Q_++Q_-\rvert^{2}=\lvert Q_{++}\rvert^{2}$, $\det(\tilde A-\tilde B)=\lvert Q_+-Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}$, giving the display. The complex matrix has the two real $2\times2$ blocks combined into the complex entries $Q_+,Q_-$, whence trace $2Q_+$ and determinant $Q_+^{2}-Q_-^{2}=\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$. The unit and zero-divisor readings are the criterion $\langle Q_\pm\rangle_{\natural}\neq0$ of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
+*Proof.* The trace is the sum of the four diagonal entries $q_++q_++q_++q_+$. The determinant of $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ with commuting blocks $A_+,A_-$ is $\det(A_+^{2}-A_-^{2})=\det(A_++A_-)\det(A_+-A_-)$; and $\det(A_++A_-)=\lvert Q_++Q_-\rvert^{2}=\lvert Q_{++}\rvert^{2}$, $\det(A_+-A_-)=\lvert Q_+-Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}$, giving the display. The complex matrix has the two real $2\times2$ blocks combined into the complex entries $Q_+,Q_-$, whence trace $2Q_+$ and determinant $Q_+^{2}-Q_-^{2}=\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$. The unit and zero-divisor readings are the criterion $\langle Q_\pm\rangle_{\natural}\neq0$ of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*.
 
-**Corollary (multiplicativity).** The four-vector matrices multiply, $L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$, so the map $Q_\pm\mapsto L_{Q_\pm}$ is a faithful representation of the algebra by real $4\times4$ matrices with the block structure $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$; the map $Q_\pm\mapsto\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is the same representation over $\mathbb{C}$.
+**Corollary (multiplicativity).** The four-vector matrices multiply, $L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$, so the map $Q_\pm\mapsto L_{Q_\pm}$ is a faithful representation of the algebra by real $4\times4$ matrices with the block structure $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$; the map $Q_\pm\mapsto\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is the same representation over $\mathbb{C}$.
 
 *Proof.* $L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$ is the associativity of the multiplication, and the injectivity is the theorem of *Introduction to Reduced Biquaternion Element Representations*.
 
@@ -166,7 +166,7 @@ with $Q_{++}^{-1}$ and $Q_{--}^{-1}$ the complex inverses.
 
 ## Summary
 
-The reduced biquaternion element is a real quadruple $Q_\pm=(q_+,q'_+,q_-,q'_-)$ on the basis $1,i,j,ij$ and a complex pair $Q_\pm=(Q_+,Q_-)$ on the basis $1,j$, with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$. The left multiplication is the real $4\times4$ matrix with the $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ block structure and the complex $2\times2$ matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$; the **multiplication is commutative**, so the row and the column readings coincide, and the trace and determinant are $4q_+$ and $\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}$ in the real model, $2Q_+$ and $\langle Q_\pm\rangle_{\natural}$ in the complex one. The basis table is symmetric, with the squares $-1,+1,-1$ on the diagonal. The bar flips the second and fourth coordinates, the natural sign the third and fourth, and the star the second and third. The remarkable subspaces are the coordinate planes, and the four algebraic norms on the quadruple are $\langle Q_\pm\rangle=\bigl(q_+^{2}-(q'_+)^{2}+q_-^{2}-(q'_-)^{2}\bigr)+2i(q_+q'_++q_-q'_-)$, $\langle Q_\pm\rangle_{\natural}=\bigl(q_+^{2}-(q'_+)^{2}-q_-^{2}+(q'_-)^{2}\bigr)+2i(q_+q'_+-q_-q'_-)$, $\langle Q_\pm\rangle_{*}=q_+^{2}+(q'_+)^{2}-q_-^{2}-(q'_-)^{2}$ and $\langle Q_\pm\rangle_{\natural*}=q_+^{2}+(q'_+)^{2}+q_-^{2}+(q'_-)^{2}$. The element is a unit exactly when both idempotent coordinates $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ are non-zero; the multiplication **has zero divisors**, the two idempotent lines, and is **not a division algebra**.
+The reduced biquaternion element is a real quadruple $Q_\pm=(q_+,q'_+,q_-,q'_-)$ on the basis $1,i,j,ij$ and a complex pair $Q_\pm=(Q_+,Q_-)$ on the basis $1,j$, with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$. The left multiplication is the real $4\times4$ matrix with the $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ block structure and the complex $2\times2$ matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$; the **multiplication is commutative**, so the row and the column readings coincide, and the trace and determinant are $4q_+$ and $\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}$ in the real model, $2Q_+$ and $\langle Q_\pm\rangle_{\natural}$ in the complex one. The basis table is symmetric, with the squares $-1,+1,-1$ on the diagonal. The bar flips the second and fourth coordinates, the natural sign the third and fourth, and the star the second and third. The remarkable subspaces are the coordinate planes, and the four algebraic norms on the quadruple are $\langle Q_\pm\rangle=\bigl(q_+^{2}-(q'_+)^{2}+q_-^{2}-(q'_-)^{2}\bigr)+2i(q_+q'_++q_-q'_-)$, $\langle Q_\pm\rangle_{\natural}=\bigl(q_+^{2}-(q'_+)^{2}-q_-^{2}+(q'_-)^{2}\bigr)+2i(q_+q'_+-q_-q'_-)$, $\langle Q_\pm\rangle_{*}=q_+^{2}+(q'_+)^{2}-q_-^{2}-(q'_-)^{2}$ and $\langle Q_\pm\rangle_{\natural*}=q_+^{2}+(q'_+)^{2}+q_-^{2}+(q'_-)^{2}$. The element is a unit exactly when both idempotent coordinates $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ are non-zero; the multiplication **has zero divisors**, the two idempotent lines, and is **not a division algebra**.
 
 ## Summary of Notation
 
@@ -174,7 +174,7 @@ The reduced biquaternion element is a real quadruple $Q_\pm=(q_+,q'_+,q_-,q'_-)$
 |---|---|
 | $(q_+,q'_+,q_-,q'_-)$ | the real four-vector of $Q_\pm$ on the basis $1,i,j,ij$ |
 | $(Q_+,Q_-)$ | the complex pair of $Q_\pm$ on the basis $1,j$, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
-| $\tilde A,\tilde B$ | the real $2\times2$ matrices of the multiplication by $Q_+$ and by $Q_-$ |
+| $A_+,A_-$ | the real $2\times2$ matrices of the multiplication by $Q_+$ and by $Q_-$ |
 | $L_{Q_\pm}=\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ | the matrix of the multiplication, complex form |
 | $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ | the idempotent coordinates |
 | $\langle Q_\pm\rangle, \langle Q_\pm\rangle_{\natural}, \langle Q_\pm\rangle_{*}, \langle Q_\pm\rangle_{\natural*}$ | the four algebraic norms on the quadruple |

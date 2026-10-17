@@ -140,17 +140,17 @@ since $\exp(\dagger)\tilde\Pi$ is a nonzero positive semidefinite matrix and its
 
 ## The Unitary Slice
 
-**Theorem (the slice acts by unitaries).** Let $U=\{\tilde E\in\mathbb{B}:\tilde{E}^{*}\tilde E=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde E$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
+**Theorem (the slice acts by unitaries).** Let $U=\{\tilde U\in\mathbb{B}:\tilde{U}^{*}\tilde U=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde U$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
 
 $$
-\langle\tilde E\cdot t,\tilde E\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S .
+\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S .
 $$
 
-*Proof.* By the axiom, $\langle\tilde E\cdot t,\tilde E\cdot s\rangle_{*}=\langle\tilde{E}^{*}\cdot(\tilde E\cdot t),s\rangle_{*}=\langle (\tilde{E}^{*}\tilde E)\cdot t,s\rangle_{*}=\langle t,s\rangle_{*}$ for $\tilde{E}^{*}\tilde E=e_t$.
+*Proof.* By the axiom, $\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle\tilde{U}^{*}\cdot(\tilde U\cdot t),s\rangle_{*}=\langle (\tilde{U}^{*}\tilde U)\cdot t,s\rangle_{*}=\langle t,s\rangle_{*}$ for $\tilde{U}^{*}\tilde U=e_t$.
 
-**Corollary (unitary representation and its Lie algebra).** The assignment $\tilde E\mapsto\rho(\tilde E)|_S$ is a unitary representation of $\mathrm{U}(2)$ on the module $S$. Its Lie algebra is the anti-Hermitian sector, $u(2)=\mathbb{M}_-$; the operators $L_{\tilde B}$ with $\tilde B\in\mathbb{M}_-$ are skew-adjoint, they satisfy $[L_{\tilde B},L_{\tilde C}]=L_{\langle\tilde C,\tilde B\rangle_{\natural*}}$, and the exponential stays in the family, $\exp(L_{\tilde B})=L_{\exp(\tilde B)}$, so the correspondence is a Lie-algebra homomorphism followed by the exponential map (*One-Sided Operators on the General Plain Sesqualgebra*, *The 12 Products of the Biquaternioid Complex Space*).
+**Corollary (unitary representation and its Lie algebra).** The assignment $\tilde U\mapsto\rho(\tilde U)|_S$ is a unitary representation of $\mathrm{U}(2)$ on the module $S$. Its Lie algebra is the anti-Hermitian sector, $u(2)=\mathbb{M}_-$; the operators $L_{\tilde B}$ with $\tilde B\in\mathbb{M}_-$ are skew-adjoint, they satisfy $[L_{\tilde B},L_{\tilde C}]=L_{\langle\tilde C,\tilde B\rangle_{\natural*}}$, and the exponential stays in the family, $\exp(L_{\tilde B})=L_{\exp(\tilde B)}$, so the correspondence is a Lie-algebra homomorphism followed by the exponential map (*One-Sided Operators on the General Plain Sesqualgebra*, *The 12 Products of the Biquaternioid Complex Space*).
 
-**Remark (the norm-one slice does not act unitarily).** The norm-one slice $\mathbb{B}^{\times}_1=\{\langle\tilde E,\tilde E\rangle_{\natural}=1\}\cong SL(2,\mathbb{C})$ is *not* a group of unitary operators of the module form: the unitary condition is $\tilde{E}^{*}\tilde E=e_t$, which is the slice $\mathrm{U}(2)$, and it meets $\mathbb{B}^{\times}_1$ in $SU(2)$ only. The obstruction is not an accident of the normalisation. The spinor representation of the Lorentz group preserves no positive definite form — the invariant bilinear form on $S$ is the antisymmetric $\varepsilon$, not the module form — so a positive definite invariant form can be required only of the unitary part, and it is the unitary part that the module form detects. This is the module-level shadow of the statement that the slice is the definite real form, and it is why the module form is used with the unitary group while the interval form of $\mathbb{M}_+$ is used with the Lorentz group (*Two-Sided Operators on the General Plain Sesqualgebra*).
+**Remark (the norm-one slice does not act unitarily).** The norm-one slice $\mathbb{B}^{\times}_1=\{\langle\tilde U,\tilde U\rangle_{\natural}=1\}\cong SL(2,\mathbb{C})$ is *not* a group of unitary operators of the module form: the unitary condition is $\tilde{U}^{*}\tilde U=e_t$, which is the slice $\mathrm{U}(2)$, and it meets $\mathbb{B}^{\times}_1$ in $SU(2)$ only. The obstruction is not an accident of the normalisation. The spinor representation of the Lorentz group preserves no positive definite form — the invariant bilinear form on $S$ is the antisymmetric $\varepsilon$, not the module form — so a positive definite invariant form can be required only of the unitary part, and it is the unitary part that the module form detects. This is the module-level shadow of the statement that the slice is the definite real form, and it is why the module form is used with the unitary group while the interval form of $\mathbb{M}_+$ is used with the Lorentz group (*Two-Sided Operators on the General Plain Sesqualgebra*).
 
 ## The Dirac Element
 
@@ -199,7 +199,7 @@ The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitar
 | $\langle\tilde T,\tilde R\rangle_{*}=\mathrm{Sc}(\tilde{R}^{*}\tilde T)=\sum_\mu R_{\bar{\mu}}T_\mu$ | Form of the regular module; positive definite |
 | $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ | The idempotents are self-adjoint; hence no isotropic ideal |
 | Gram $=\tfrac12 I_2$ in $\{\tilde\Pi_+,\tilde T\}$ | Positive definite restriction to $S$ |
-| $U=\mathrm{U}(2)=\{\tilde{E}^{*}\tilde E=e_t\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
+| $U=\mathrm{U}(2)=\{\tilde{U}^{*}\tilde U=e_t\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
 | $SL(2,\mathbb{C})$ | Norm-one slice; not unitary on $S$ except on $SU(2)$ |
 | $D_{\mathrm{alg}}=\sum_kL_{\vec e_k}$, $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$ | Dirac element and its restriction |
 | $D_S^{2}=-3\,\mathrm{id}$, $D_S^{*}D_S=3\,\mathrm{id}$ | Clifford square and positive Hermitian square; gap $3$ |

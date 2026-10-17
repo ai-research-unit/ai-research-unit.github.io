@@ -104,7 +104,7 @@ $$
 
 so every nonzero displacement is invertible except the null ones.
 
-**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde{K}$ solves the massless dispersion relation $\langle\tilde{K}\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde{K}$ every function of the phase $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
+**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ solves the massless dispersion relation $\langle\tilde P\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
@@ -293,7 +293,7 @@ $$
 
 A finite composition of boosts has a finite total rapidity $\psi_1+\cdots+\psi_n$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2\exp(-2n\,\mathrm{atanh}\,0.9)$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
 
-The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\tilde{V}^{\natural})$ is strictly positive for every future timelike $\tilde{V}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $\langle\tilde{K}\rangle_{\natural}$ are three faces of the same cone.
+The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ is strictly positive for every future timelike $\tilde{V}$ and every future null $\tilde P$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $\langle\tilde P\rangle_{\natural}$ are three faces of the same cone.
 
 ### The Boundary of the Theorem: a Constant Rapidity
 
@@ -311,15 +311,15 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives the corpus identity
 
 $$
-\Box f(s) = \langle\tilde{K}\rangle_{\natural}\,f''(s),
+\Box f(s) = \langle\tilde P\rangle_{\natural}\,f''(s),
 \qquad
-\langle\tilde{K}\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
+\langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
 $$
 
-because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde{K}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde{K}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
+because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
 
 The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $t = 0$, then the solution of $\Box\tilde{\Phi} = \tilde{S}$ is supported at time $t$ inside the set of points that lie within distance $ct$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
 

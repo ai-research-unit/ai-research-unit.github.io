@@ -245,10 +245,10 @@ The projector is the rest-frame form of the covariant spin-$\tfrac32$ projector 
 In the massless case the antisymmetrized equation and the trace constraint leave a gauge freedom, and in the biquaternion form the transformation is
 
 $$
-\tilde{\Psi}_\mu \;\longrightarrow\; \tilde{\Psi}_\mu + \tilde{\nabla}_\mu\,\tilde{\epsilon},
+\tilde{\Psi}_\mu \;\longrightarrow\; \tilde{\Psi}_\mu + \partial/\partial Q_\mu\,\epsilon,
 $$
 
-where $\tilde{\epsilon}$ is a biquaternion playing the role of the Dirac-spinor parameter and $\tilde{\nabla}_\mu$ is the $\mu$-th component of the gradient. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\tilde{\epsilon}$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.
+where $\epsilon$ is a Dirac-spinor parameter and $\partial/\partial Q_\mu$ is the coordinate derivative. The shift is the derivative of the parameter, not the gradient component $e_\mu\partial/\partial Q_\mu$: the basis factor $e_\mu$ would survive the antisymmetrization and the invariance would fail. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\epsilon$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.
 
 
 ### Helicities and the two physical states
@@ -272,10 +272,10 @@ The massive case is also where the known difficulty lives. The constraint analys
 Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 
 $$
-\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
+\tilde{\Psi}_\mu = \tilde{\Psi}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar),
 $$
 
-the Dirac equation on the component requires $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ in the normalization of the companion Dirac article, that is,
+the Dirac equation on the component requires $\tilde P\tilde P^{\natural}=-m^2c^2$ in the normalization of the companion Dirac article, that is,
 
 $$
 \frac{\omega^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
@@ -336,6 +336,7 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $\mathsf{M}_4$, $\gamma^\mu=\gamma^0\mathsf{M}_4(e^\mu)$ | Dictionary map onto the even Clifford algebra; $e^0=e_t$, $e^k=i\vec e_k$ |
 | $i_{\mathrm{Cl}}$, $\gamma_5=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$ | External imaginary of the complexified Clifford algebra and the chirality operator |
 | $\tilde{\Psi}_\mu\in\mathbb{B}$ | Biquaternion-valued components of the vector-spinor |
+| $\epsilon$ | Dirac-spinor parameter of the massless shift symmetry |
 | $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ | Clifford generators, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ | Antisymmetrized pair, the mass-term structure |
 | $\gamma^{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
@@ -344,7 +345,6 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $\psi_\mu=(\chi_\mu,\eta_\mu)$ | Upper and lower two-component parts in the Dirac representation |
 | $\vec\chi$ | Spatial amplitudes; constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ |
 | $P_{ij}=\delta_{ij}-\tfrac13\sigma_i\sigma_j$ | Spin-$\tfrac32$ projector on the vector index |
-| $\tilde{\nabla}_\mu$ | $\mu$-th component of the biquaternionic gradient |
 | $2\times\tfrac32\oplus4\times\tfrac12$ | $SU(2)$ content of the vector-spinor |
 
 ## Further Reading

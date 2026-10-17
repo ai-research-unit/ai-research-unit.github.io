@@ -223,13 +223,13 @@ the standard isovector current of the pion triplet. It lies in the material sect
 $$
 j_\mu^{a5} = \bar q\gamma_\mu\gamma_5\frac{\tau^a}{2}q ,
 \qquad
-\langle\tilde\nabla,\tilde j^{a5}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\gamma_5\tau^a q ,
+\langle\tilde\nabla,\tilde J^{a5}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\gamma_5\tau^a q ,
 $$
 
 and at the level of the chiral Lagrangian the divergence is proportional to the pion field itself,
 
 $$
-\langle\tilde\nabla,\tilde j^{a5}\rangle_{\natural} = f_\pi m_\pi^2\,\pi^a + \cdots ,
+\langle\tilde\nabla,\tilde J^{a5}\rangle_{\natural} = f_\pi m_\pi^2\,\pi^a + \cdots ,
 \qquad
 \langle 0|j_\mu^{a5}(0)|\pi^b(p)\rangle = i f_\pi p_\mu\,\delta^{ab} ,
 $$
@@ -327,7 +327,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_\mu^{a}$, $j_\mu^{a5}$ | Isospin (vector) and axial currents |
 | $\langle0\vert j_\mu^{a5}(0)\vert\pi^b(p)\rangle = if_\pi p_\mu\delta^{ab}$ | Defining matrix element of $f_\pi$ |
-| $\langle\tilde\nabla,\tilde j^{a5}\rangle_{\natural} = f_\pi m_\pi^2\pi^a$ | PCAC |
+| $\langle\tilde\nabla,\tilde J^{a5}\rangle_{\natural} = f_\pi m_\pi^2\pi^a$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |

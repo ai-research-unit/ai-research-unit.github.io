@@ -19,7 +19,7 @@ The division between what is established and what is interpretation is kept expl
 $$
 \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-, \qquad [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c,
 $$
-with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = \partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
+with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = \partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
 
 ## The Covariant Derivative and the Curvature It Defines
 
@@ -329,7 +329,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_kF_k\vec e_k$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
 | $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Gauge-invariant Yang–Mills density (matrix trace) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Inherited informational trace formula (distinct from the matrix trace) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited informational trace formula (distinct from the matrix trace) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading
@@ -338,7 +338,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *Non-Abelian Gauge Fields in Biquaternionic Form* — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
 - *The Gauge Principle in Biquaternionic Form* — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
-- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ whose homogeneous part is the Bianchi identity.
+- *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^{*}$, distinct from the one-sided gauge connection of this article.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.

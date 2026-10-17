@@ -135,20 +135,20 @@ with the right action $\tilde U\mapsto Ug$. It is instructive to write its local
 Cover the base $S^2$ by the two patches $N=\{(\theta,\phi):\theta<\pi\}$ and $S=\{(\theta,\phi):\theta>0\}$, with the usual spherical angles. Local sections, written as unit quaternions, are built from the standard half-angle spinor sections $(z_0,z_1)\mapsto \mathrm{Re}(z_0)e_t+\mathrm{Im}(z_1)\vec e_x+\mathrm{Re}(z_1)\vec e_y+\mathrm{Im}(z_0)\vec e_z$:
 
 $$
-\tilde U_N(\theta,\phi)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\bigl(\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),
+\tilde u_N(\theta,\phi)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\bigl(\sin\phi\,\vec e_x+\cos\phi\,\vec e_y\bigr),
 \qquad
-\tilde U_S(\theta,\phi)=\cos\tfrac{\theta}{2}\bigl(\cos\phi\,e_t-\sin\phi\,\vec e_z\bigr)+\sin\tfrac{\theta}{2}\,\vec e_y ,
+\tilde u_S(\theta,\phi)=\cos\tfrac{\theta}{2}\bigl(\cos\phi\,e_t-\sin\phi\,\vec e_z\bigr)+\sin\tfrac{\theta}{2}\,\vec e_y ,
 $$
 
-where $\exp(\alpha e_a)=\cos\alpha\,e_t+\sin\alpha\,e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(\tilde U_N)=\pi(\tilde U_S)$; the $\phi$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\phi$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,
+where $\exp(\alpha e_a)=\cos\alpha\,e_t+\sin\alpha\,e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(\tilde u_N)=\pi(\tilde u_S)$; the $\phi$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\phi$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,
 
 $$
-\tilde U_N(\theta,\phi) \;=\; \tilde U_S(\theta,\phi)\,g_{SN}(\phi),
+\tilde u_N(\theta,\phi) \;=\; \tilde u_S(\theta,\phi)\,g_{SN}(\phi),
 \qquad
 g_{SN}(\phi)=\exp(\phi \vec e_z) ,
 $$
 
-a $\mathrm{U}(1)$-valued function with winding number one around the equator, and $\tilde U_S^{-1}\tilde U_N=\exp(\phi \vec e_z)$ was verified to $3.3\times10^{-16}$ on the same sample. This winding is the bundle's classifying integer; a section with a singly-valued fibre is impossible globally, which is the algebraic content of the fact that the monopole string cannot be removed.
+a $\mathrm{U}(1)$-valued function with winding number one around the equator, and $\tilde u_S^{-1}\tilde u_N=\exp(\phi \vec e_z)$ was verified to $3.3\times10^{-16}$ on the same sample. This winding is the bundle's classifying integer; a section with a singly-valued fibre is impossible globally, which is the algebraic content of the fact that the monopole string cannot be removed.
 
 **The local connection.** The canonical invariant connection on the Hopf bundle is read from the Maurer–Cartan form $\tilde U^{-1}dU$ of $S^3$. Projected to the fibre direction $\vec e_z$ it gives the local one-forms
 
@@ -158,7 +158,7 @@ a_N = \tfrac{1}{2}\bigl(1-\cos\theta\bigr)\,d\phi ,
 a_S = -\tfrac{1}{2}\bigl(1+\cos\theta\bigr)\,d\phi ,
 $$
 
-which differ on the overlap by an exact form, $a_N-a_S=d\phi$, the Maurer–Cartan form of the transition function, since $g_{SN}^{-1}dg_{SN}=\vec e_z\,d\phi$. The $\vec e_z$-component of $\tilde U_N^{-1}dU_N$ was evaluated on the sections and equals $\tfrac12(1-\cos\theta)d\phi$ to $4\times10^{-9}$, which is the roundoff floor of a central difference of step $10^{-7}$, and the $\theta$-component vanishes to $8\times10^{-10}$. The curvature is patch-independent,
+which differ on the overlap by an exact form, $a_N-a_S=d\phi$, the Maurer–Cartan form of the transition function, since $g_{SN}^{-1}dg_{SN}=\vec e_z\,d\phi$. The $\vec e_z$-component of $\tilde u_N^{-1}dU_N$ was evaluated on the sections and equals $\tfrac12(1-\cos\theta)d\phi$ to $4\times10^{-9}$, which is the roundoff floor of a central difference of step $10^{-7}$, and the $\theta$-component vanishes to $8\times10^{-10}$. The curvature is patch-independent,
 
 $$
 F = da_N = \tfrac{1}{2}\sin\theta\,d\theta\wedge d\phi = da_S ,

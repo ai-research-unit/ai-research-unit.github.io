@@ -73,17 +73,17 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta t_{\mathrm{ret}}\,\Delta t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta t_{\mathrm{ret}} = 0$ or $\Delta t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde{K} = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta t_{\mathrm{ret}} = 0$ or $\Delta t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t = -\omega\left(t - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t_{\mathrm{ret}},
+\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t = -\omega\left(t - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t_{\mathrm{ret}},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
 
 ### Relays and Superpositions
 
-If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde{K} \mapsto \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
+If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde P \mapsto \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
 
 ## Clocks and Proper Time
 
@@ -374,8 +374,8 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t_{\mathrm{adv}} = t+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
-| $\tilde{K} = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t_{\mathrm{ret}}$ | Plane-wave phase |
+| $\tilde P = i\omega/c\,e_t+\vec k$ | Four-wavevector |
+| $\Phi = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t_{\mathrm{ret}}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |

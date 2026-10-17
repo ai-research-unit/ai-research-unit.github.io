@@ -23,7 +23,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 W(C) = \mathrm{Tr}\,U(C),
 $$
 
-with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\tilde{\rho}\geq0$, $\mathrm{Tr}\tilde{\rho} = 1$, and are parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
+with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{Ϛ}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
 
 ## Confinement and the Order Parameter
 
@@ -121,7 +121,7 @@ One qualification keeps the model honest. The colour symmetry of QCD is local, s
 
 ### The Restricted State and the Vanishing Relative Entropy
 
-The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\vec u$. The **accessible** state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
+The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{Ϛ}\mapsto U\tilde{Ϛ}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\vec u$. The **accessible** state is the restriction of $\tilde{Ϛ}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
 
 $$
 \vec r \;\longmapsto\; (\vec r\cdot\vec u)\,\vec u,
@@ -133,7 +133,7 @@ $$
 \vec r\cdot\vec u = (R_{\vec u}(\theta)\vec r)\cdot\vec u,
 $$
 
-because a rotation about $\vec u$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
+because a rotation about $\vec u$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
 
 The lesson is the article's thesis in its sharpest form. A charge rotation is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -141,7 +141,7 @@ The lesson is the article's thesis in its sharpest form. A charge rotation is no
 
 The contrast with the companion article on gauge redundancy is now exact.
 
-A gauge transformation is implemented by the central phase, which for the framework's gauge group is central and of unit modulus: it therefore fixes the state itself, $\tilde{\rho}\mapsto\lambda\tilde{\rho}\lambda^\dagger = \tilde{\rho}$, and not merely its restriction. The two descriptions are two ways of writing one state, and the coincidence is exact rather than a projection. A charge rotation also acts by a unitary, but the accessible algebra is a **proper subalgebra** — the commutant of the charge — so the rotated state restricts to the same accessible state only because the distinction has been projected out by the restriction, not because it was never there. The map from states to accessible states is many-to-one on a non-trivial fibre, and the fibre is the set of states with the same charge-axis component. That is the structure of a lossy channel, and the next section develops it.
+A gauge transformation is implemented by the central phase, which for the framework's gauge group is central and of unit modulus: it therefore fixes the state itself, $\tilde{Ϛ}\mapsto\lambda\tilde{Ϛ}\lambda^\dagger = \tilde{Ϛ}$, and not merely its restriction. The two descriptions are two ways of writing one state, and the coincidence is exact rather than a projection. A charge rotation also acts by a unitary, but the accessible algebra is a **proper subalgebra** — the commutant of the charge — so the rotated state restricts to the same accessible state only because the distinction has been projected out by the restriction, not because it was never there. The map from states to accessible states is many-to-one on a non-trivial fibre, and the fibre is the set of states with the same charge-axis component. That is the structure of a lossy channel, and the next section develops it.
 
 One more distinction is worth recording. In the gauge case the fibre is a group orbit and a representative recovers the configuration; the locality of the gauge choice is the only obstruction. In the confinement case the fibre contains partonic configurations that no asymptotic operation distinguishes, and the obstruction is the spectrum itself. Redundancy is a property of the description; loss is a property of the theory.
 
@@ -159,14 +159,14 @@ $$
 b_0 = \frac{11}{3}C_2(G) - \frac{2}{3}\sum_{\text{Weyl}}T(r),
 $$
 
-with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are **inputs**, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{k}\tilde{k}^{\natural}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.
+with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3)$. But the article states plainly that the gauge group, the matter content, the action, the measure, and the regulator are **inputs**, and that the beta functions are transcriptions. The flow acts on central scalars, and the algebraically natural sharp cutoff is imposed on the central biquaternion norm $\tilde{P}\tilde{P}^{\natural}$. So the framework houses the form of the flow, and the flow is the coarse-graining that degrades the partonic information, but the group and the matter that give the flow its meaning are the missing objects.
 
 ### Coarse-Graining as a Channel
 
 On general grounds the flow from an ultraviolet description to an infrared description is a **completely positive trace-preserving map** between state spaces, and relative entropy is monotone under it:
 
 $$
-S\bigl(\Phi(\tilde{\rho})\,\big\|\,\Phi(\tilde{\sigma})\bigr) \;\leq\; S(\tilde{\rho}\|\tilde{\sigma}).
+S\bigl(\Phi(\tilde{Ϛ})\,\big\|\,\Phi(\tilde{\sigma})\bigr) \;\leq\; S(\tilde{Ϛ}\|\tilde{\sigma}).
 $$
 
 The inequality is the precise sense in which the flow loses information: two partonic states that were distinguishable at the ultraviolet scale become less distinguishable, or indistinguishable, at the infrared scale. When the image of the map is a proper subalgebra — when distinct states are identified by it, as for the colour-singlet expectation of the next section — the inequality can be strict, and it becomes an equality at zero whenever the two states lie in the same fibre. The restricted relative entropy computed above is exactly that case, and there the loss is total.
@@ -188,7 +188,7 @@ $$
 averaging over the colour group with its normalized Haar measure, is a completely positive unital idempotent map: $E^2 = E$. It is the colour-singlet projection, and it is the natural model of what the asymptotic description retains. Applied to a state, it discards exactly the off-diagonal colour coherences and keeps the colour-neutral content, so that
 
 $$
-S\bigl(E(\tilde{\rho})\,\big\|\,E(\tilde{\sigma})\bigr) \;<\; S(\tilde{\rho}\|\tilde{\sigma})
+S\bigl(E(\tilde{Ϛ})\,\big\|\,E(\tilde{\sigma})\bigr) \;<\; S(\tilde{Ϛ}\|\tilde{\sigma})
 $$
 
 whenever at least one of the two states carries a colour coherence. The model is the same idempotent-projection structure that the companion article on decoherence develops in the informational sector; there, the projection is onto the pointer basis selected by an environment, and here it is onto the colour singlets selected by the spectrum.
@@ -407,13 +407,13 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $\sigma$ | String tension |
 | $_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
-| $\tilde{\rho} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
+| $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $\vec r\cdot\vec u$ | Component along the charge axis; accessible content |
 | $R_{\vec u}(\theta)$, $U = \exp(i\theta n_a ie_a/2)$ | Charge rotation |
-| $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
+| $S(\tilde{Ϛ}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |
 | $\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (bag model) |
 | $\mathcal{N} = i\partial/\partial Q_t + D - m\,i\,C M_{i_3}$ | Biquaternionic form of the Dirac operator with the conjugation $C$ in the mass term |

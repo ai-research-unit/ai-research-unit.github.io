@@ -69,50 +69,50 @@ A **neighborhood** of $\tilde{Q}_0$ is any set containing some $B(\tilde{Q}_0, r
 
 ### Limits of Functions
 
-**Definition (limit).** Let $F^{\mathrm{fn}} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ be a function, $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ a point, and $\tilde{L} \in \mathbb{H}_{\mathbb{D}}$ a split biquaternion. We say that $F^{\mathrm{fn}}(\tilde{Q})$ **tends to** $\tilde{L}$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
+**Definition (limit).** Let $F^{\mathrm{fn}} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ be a function, $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ a point, and $\tilde Q_2 \in \mathbb{H}_{\mathbb{D}}$ a split biquaternion. We say that $F^{\mathrm{fn}}(\tilde{Q})$ **tends to** $\tilde Q_2$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
 
 $$
-\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde{L},
+\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2,
 $$
 
 if for every $\varepsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon.
+0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon.
 $$
 
 The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $F^{\mathrm{fn}}$ at $\tilde{Q}_0$ itself does not affect the limit.
 
 **Theorem (uniqueness).** If the limit exists, it is unique.
 
-**Proof.** Suppose $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}$ and $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}'$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde{L} \neq \tilde{L}'$. Let $\varepsilon = \|\tilde{L} - \tilde{L}'\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}'\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
+**Proof.** Suppose $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde Q_2 \neq \tilde Q_3$. Let $\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
 
 $$
-\|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - F^{\mathrm{fn}}(\tilde{Q})\|_E + \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
+\|\tilde Q_2 - \tilde Q_3\|_E \leq \|\tilde Q_2 - F^{\mathrm{fn}}(\tilde{Q})\|_E + \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < 2\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E,
 $$
 
 a contradiction.
 
-**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $F^{\mathrm{fn}}(\tilde{Q}_n) \to \tilde{L}$.
+**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $F^{\mathrm{fn}}(\tilde{Q}_n) \to \tilde Q_2$.
 
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $F^{\mathrm{fn}}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.
+**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde Q_2$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $F^{\mathrm{fn}}(\tilde{Q}_n) \not\to \tilde Q_2$, contradicting the hypothesis.
 
-**Theorem (algebra of limits).** If $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L}$ and $G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
+**Theorem (algebra of limits).** If $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) + G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad F^{\mathrm{fn}}(\tilde{Q}) \circ G^{\mathrm{fn}}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+F^{\mathrm{fn}}(\tilde{Q}) + G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2 + \tilde Q_3, \qquad F^{\mathrm{fn}}(\tilde{Q}) \circ G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2 \circ \tilde Q_3.
 $$
 
 **Proof.** For the sum, use the triangle inequality:
 
 $$
-\|(F^{\mathrm{fn}} + G^{\mathrm{fn}}) - (\tilde{L} + \tilde{M})\|_E \leq \|F^{\mathrm{fn}} - \tilde{L}\|_E + \|G^{\mathrm{fn}} - \tilde{M}\|_E.
+\|(F^{\mathrm{fn}} + G^{\mathrm{fn}}) - (\tilde Q_2 + \tilde Q_3)\|_E \leq \|F^{\mathrm{fn}} - \tilde Q_2\|_E + \|G^{\mathrm{fn}} - \tilde Q_3\|_E.
 $$
 
 For the product, use the identity
 
 $$
-F^{\mathrm{fn}} G^{\mathrm{fn}} - \tilde{L} \tilde{M} = (F^{\mathrm{fn}} - \tilde{L}) G^{\mathrm{fn}} + \tilde{L} (G^{\mathrm{fn}} - \tilde{M}),
+F^{\mathrm{fn}} G^{\mathrm{fn}} - \tilde Q_2 \tilde Q_3 = (F^{\mathrm{fn}} - \tilde Q_2) G^{\mathrm{fn}} + \tilde Q_2 (G^{\mathrm{fn}} - \tilde Q_3),
 $$
 
 and the fact that $G^{\mathrm{fn}}$ is bounded near $\tilde{Q}_0$ (because it has a limit).

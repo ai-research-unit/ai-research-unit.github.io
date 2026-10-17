@@ -5,7 +5,7 @@
 For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive, trace-one elements of the Hermitian subspace $\mathbb{M}_+$, and that set is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
-\tilde\rho=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
+\tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
 $$
 
 the state space is the closed unit ball, purity is its boundary, and the pure states are at once the idempotents, the extreme rays of the positive cone, and the zero divisors at trace one. The Bloch ball is a canonical object of the algebra because the algebra supplies the cone.
@@ -29,10 +29,10 @@ $$
 of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_0\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
 
 $$
-\tilde\rho=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
+\tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
 $$
 
-with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde\rho\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde\rho$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
+with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde{Ϛ}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde{Ϛ}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
 
 Three features of this account are the ones that must be examined for spin $1$:
 
@@ -73,10 +73,10 @@ which is the total spin operator of the two-spin problem. On the three-dimension
 A state of spin $1$ is a positive, unit-trace element of the symmetric sector. In the two-qubit language,
 
 $$
-\tilde\rho\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde\rho)=1,\qquad P_{\mathrm{asym}}\,\tilde\rho\,P_{\mathrm{asym}}=0 ,
+\tilde{Ϛ}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ})=1,\qquad P_{\mathrm{asym}}\,\tilde{Ϛ}\,P_{\mathrm{asym}}=0 ,
 $$
 
-where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $P_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet projector. The last condition says that the support of $\tilde\rho$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric projector**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
+where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $P_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet projector. The last condition says that the support of $\tilde{Ϛ}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric projector**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
 For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -138,7 +138,7 @@ $$
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
-The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde\rho\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
+The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde{Ϛ}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
 ### The spin directions and the quadrupole directions
 
@@ -231,7 +231,7 @@ which is verified to be the projector onto the rotated highest-weight state for 
 
 The coherent states have three equivalent descriptions, and the equivalence is the content of this subsection:
 
-- they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde R P\tilde R^{*}$;
+- they are the orbit of the highest-weight idempotent under the adjoint action of the unit quaternions, $P\mapsto\tilde u P\tilde u^{*}$;
 - they are the **symmetrised products of two fundamental idempotents**,
 $$
   \rho_{\mathrm{coh}}(\vec u)=P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}},
@@ -275,7 +275,7 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 The article established the following.
 
 - **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_k}(ie_l)=i\hbar\epsilon_{klm}(ie_m)$, and the symmetric combination $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ and $\sum_kF_k^2=2\hbar^2I_3$.
-- **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $P_{\mathrm{asym}}\tilde\rho P_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric projector.
+- **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $P_{\mathrm{asym}}\tilde{Ϛ} P_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric projector.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
 - **The spin directions.** $F_1=\tfrac{1}{\sqrt2}(\lambda_1+\lambda_6)$, $F_2=\tfrac{1}{\sqrt2}(\lambda_2+\lambda_7)$, $F_3=\tfrac12\lambda_3+\tfrac{\sqrt3}{2}\lambda_8$, so the spin vector mixes Bloch coordinates: $s_1=\sqrt{2/3}(b_1+b_6)$, $s_2=\sqrt{2/3}(b_2+b_7)$, $s_3=\tfrac{1}{\sqrt3}b_3+b_8$.
@@ -291,7 +291,7 @@ The article established the following.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
 | $\langle\tilde H\rangle_{\natural}=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
-| $\tilde\rho=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |
 | $\mathrm{ad}_{\tilde S_k}$ | Adjoint action on the traceless part $W$ |

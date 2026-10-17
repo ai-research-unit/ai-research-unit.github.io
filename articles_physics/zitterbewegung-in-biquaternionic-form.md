@@ -73,10 +73,10 @@ $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*},
 $$
 
-with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_tk_0 + \vec k$ and the single mass-shell condition
+with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde P\tilde{Q}/\hbar)$ with wave biquaternion $\tilde P/\hbar = e_tk_0 + \vec k$ and the single mass-shell condition
 
 $$
-\tilde k\tilde k^{\natural} = -\frac{m^2c^2}{\hbar^2}.
+\tilde P\tilde P^{\natural}=-m^2c^2.
 $$
 
 The two roots of that condition — positive and negative frequency — are the two branches $\psi^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\chi^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
@@ -210,7 +210,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\tilde k\tilde k^{\natural} = -m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
+| $\tilde P\tilde P^{\natural} = -m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi^{(r)}, \chi^{(r)}$ | Positive- and negative-frequency spinors |
 | $\beta = \gamma^0$, $\alpha^k = \gamma^0\gamma^k$ | Dirac matrices; $\beta$ odd, $\alpha^k$ even |
 | $H = c\boldsymbol{\alpha}\cdot p + \beta mc^2$ | Dirac Hamiltonian, $H^2 = E^2I$ |

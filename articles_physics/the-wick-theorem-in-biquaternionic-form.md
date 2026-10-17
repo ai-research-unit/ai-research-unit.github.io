@@ -70,7 +70,7 @@ Two definitions make the theorem precise.
 $$
 \Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j\big|0\big\rangle ,
 $$
-the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde k = iEe_t+\vec p$ with $\tilde k\tilde k^{\natural}=-m^2$ on the mass shell. The article does not rebuild them.
+the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P = iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-m^2$ on the mass shell. The article does not rebuild them.
 
 **Normal ordering.** The normal-ordered product $:\!\phi^{\mathrm{fop}}_1\cdots\phi^{\mathrm{fop}}_n\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
 $$
@@ -199,7 +199,7 @@ For the field the contraction is the **Feynman propagator**, and this is the poi
 $$
 \big(i\gamma^\mu\partial/\partial Q_\mu - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$
-and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde k = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde k\tilde k^{\natural} = -m^2$, in the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
+and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -m^2$, in the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
 
 Within the one-mode truncation, the contraction is a **central scalar** times $e_t$: $\langle\vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1$ is an element of $\mathbb{C}_{\mathbb{B}}$. This is the algebraic shadow of the field statement that a contraction is a $c$-number, and it is why the contracted products in the table are scalars. The mode algebra's contractions are the entries of a positive semidefinite matrix — the covariance of the state — and the alternating structure of the one-mode contractions is the $\mathbb{Z}_2$-graded version of the bosonic Gaussian form.
 
@@ -279,7 +279,7 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $T\{\cdots\}$, $:\!\cdots\!:$ | Time ordering, normal ordering |
 | $\langle \tilde{Q}_i\tilde{Q}_j\rangle_t$ | Contraction (two-point function) |
 | $D_F$, $S_F$ | Feynman propagators (scalar, spinor) |
-| $\tilde k=iEe_t+\vec p$, $\tilde k\tilde k^{\natural}=-m^2$ | Wave biquaternion; mass shell |
+| $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-m^2$ | Wave biquaternion; mass shell |
 | $\mathrm{sgn}(\pi)$ | Fermionic sign of a complete pairing |
 | $\mathcal{H}_I$, $S=T\exp(-i\int\mathcal{H}_I)$ | Interaction Hamiltonian; Dyson series |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

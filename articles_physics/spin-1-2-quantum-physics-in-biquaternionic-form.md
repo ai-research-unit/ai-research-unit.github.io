@@ -10,7 +10,7 @@ The consequence is a **structural identification**:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
-This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
+This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
@@ -321,7 +321,7 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 
 The biquaternionic Dirac equation contains:
 
-- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2 c^2/\hbar^2$ for plane-wave solutions.
+- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{\Psi}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
 - The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{\Psi}_{L,R}$, which couples the two chiral components of the spinor.
 
@@ -352,7 +352,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\tilde{R}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 

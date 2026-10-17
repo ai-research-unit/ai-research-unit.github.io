@@ -90,7 +90,7 @@ $$
 $$
 
 with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{Q}\rangle_{\natural}$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
+$ct = 1$ it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.
 
 **Interpretation.** The map is a dictionary and not a dynamics: it names a **state preparation**, the

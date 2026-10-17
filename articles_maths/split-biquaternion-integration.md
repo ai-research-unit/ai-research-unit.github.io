@@ -529,8 +529,7 @@ The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega F^{\mathrm{fn}} \, dV$ | Integral of $F^{\mathrm{fn}}$ over $\Omega$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
-| $\tilde{E}$ | Fundamental solution of $\Box$ |
-| $\tilde{K}$ | Cauchy kernel |
+| $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 | $\mathrm{Res}(F^{\mathrm{fn}}, \tilde{Q}_0)$ | Residue at an isolated singularity |
 
 ## Further Reading

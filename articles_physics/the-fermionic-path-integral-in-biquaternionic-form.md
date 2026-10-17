@@ -133,16 +133,16 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde k=iE\,e_t+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^y$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^y$, the momentum-space kernel is
 
 $$
-S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$
 
 the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict$ axis of the material sector:
 
 $$
-\det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde k\tilde k^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$
 
 formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -248,7 +248,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
-The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde k\tilde k^{\natural}+m^2-i\epsilon)$.
+The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.
 
 For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ offers the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$, verified to nine decimals and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
@@ -268,7 +268,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
 | $Z_0[\eta,\bar\eta]=\det(i\not\partial-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
+| $S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($ict$ direction becomes real) |

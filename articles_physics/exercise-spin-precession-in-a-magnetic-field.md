@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats **dynamics**: the time evolution of a spin state under a time-independent Hamiltonian.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -121,13 +121,13 @@ where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin
 The evolved state is
 
 $$
-\tilde{\rho}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
+\tilde{Ϛ}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
 $$
 
 Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_t + \sin(\omega_L t/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives
 
 $$
-\tilde{\rho}(t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L t)\,\vec e_x - i\sin(\omega_L t)\,\vec e_y\right).
+\tilde{Ϛ}(t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L t)\,\vec e_x - i\sin(\omega_L t)\,\vec e_y\right).
 $$
 
 ### Step 4: The expectation value
@@ -135,13 +135,13 @@ $$
 The expectation value of the spin along $x$ is given by the trace formula
 
 $$
-\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
+\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right),
 $$
 
 with $\tilde{S}_x = \frac{\hbar}{2}\,i \vec e_x$. Computing the product
 
 $$
-\tilde{\rho}(t)\,\tilde{S}_x = \frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L t)\,e_t - \sin(\omega_L t)\,\vec e_z\right),
+\tilde{Ϛ}(t)\,\tilde{S}_x = \frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L t)\,e_t - \sin(\omega_L t)\,\vec e_z\right),
 $$
 
 the scalar part is $\frac{\hbar}{4}\cos(\omega_L t)$. Applying the trace formula,
@@ -167,9 +167,9 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 **2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
-**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_t$ is preserved by the exponential form.
+**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_t$ is preserved by the exponential form.
 
-**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_t + i\vec r(t))$ with
+**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}(t) = \frac{1}{2}(e_t + i\vec r(t))$ with
 
 $$
 \vec r(t) = \cos(\omega_L t)\,\vec e_x - \sin(\omega_L t)\,\vec e_y.
@@ -180,7 +180,7 @@ This is a **unit vector rotating** in the $xy$-plane with angular frequency $\om
 **5. The expectation value is a trace formula.** As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is
 
 $$
-\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
+\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right),
 $$
 
 the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.
@@ -204,7 +204,7 @@ We have solved a second exercise in quantum physics — the Larmor precession of
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotent $P_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{\rho}(t)$, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotent $P_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the trace pairing.
 
@@ -224,8 +224,8 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde{S}_x = \tfrac{\hbar}{2} i\vec e_x$ | Spin observable along $x$ |
 | $\tilde{H} = -\tfrac{\hbar\omega_L}{2} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Evolution biquaternion |
-| $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$ | Evolved state |
-| $\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}(\tilde{\rho}(t)\tilde{S}_x)$ | Expectation value |
+| $\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}(0)\tilde{U}(t)^{*}$ | Evolved state |
+| $\langle\tilde{S}_x\rangle(t) = \mathrm{Tr}(\tilde{Ϛ}(t)\tilde{S}_x)$ | Expectation value |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

@@ -183,10 +183,10 @@ The action is one-sided, it is faithful, and it does not descend to the Lorentz 
 
 ### Probability: the Hilbert Space
 
-The label **probability** belongs to the general plain sesqualgebra because the plain sesquilinear product is the probability pairing. A state is a rank-one projector $\tilde\rho$ of $\mathbb{M}_+$, an observable is a Hermitian element $\tilde H$, and the pairing is the trace formula
+The label **probability** belongs to the general plain sesqualgebra because the plain sesquilinear product is the probability pairing. A state is a rank-one projector $\tilde{Ϛ}$ of $\mathbb{M}_+$, an observable is a Hermitian element $\tilde H$, and the pairing is the trace formula
 
 $$
-\mathrm{Tr}(\tilde\rho\tilde H)=2\,\mathrm{Sc}(\tilde\rho\tilde H),
+\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H),
 $$
 
 which is the framework's Born rule as a pairing on the algebra (*The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *The Born Rule as a Trace Formula — Derivation and Comparison*). On the spinor space the same structure is the inner product of the spinor calculus, $h(\psi,\phi)=\psi^{\dagger}\phi$ in module coordinates, and its restriction to a single chiral half is invariant under the whole unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside the Lorentz group $SL(2,\mathbb{C})$ the invariance is exactly the compact subgroup $SU(2)$, while the generic phase $\exp(i\theta)e_t$, $\theta\notin\pi\mathbb{Z}$, is a further isometry that lies in $\mathrm{U}(2)$ but outside $SL(2,\mathbb{C})$.
@@ -328,7 +328,7 @@ A third structure cuts across the two, and it is real rather than complex: the s
 | $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ | The general plain sesquilinear form, the Hilbert metric on $S$ |
 | $G=\tfrac12 I_2$ | The Gram matrix of the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ | The matrix model, $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\mathrm{Tr}(\tilde\rho\tilde H)=2\,\mathrm{Sc}(\tilde\rho\tilde H)$ | The Born rule as the trace pairing |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ | The Born rule as the trace pairing |
 | $SL(2,\mathbb{C})=\{\tilde\Lambda:\tilde\Lambda\tilde\Lambda^{\natural}=e_t\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
 | $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$ | The unitary slice; the isometries of the Hermitian form, reducing to $SU(2)$ inside $SL(2,\mathbb{C})$ |
 | $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | The algebra is the operator algebra of the module |

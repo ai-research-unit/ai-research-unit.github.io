@@ -61,7 +61,7 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, 
 
 Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.
 
-**What $\mathbb{M}_+$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Its states are the elements $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
+**What $\mathbb{M}_+$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Its states are the elements $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
 
 **An internal algebra.** The algebra describes **internal** degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.
 
@@ -208,7 +208,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ | Shift of the finite Weyl pair |
 | $XZ=\omega ZX$ | Weyl (clock-and-shift) relation; phase in place of $i\hbar$ |
 | $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ | Matrix model of $\mathbb{B}$ |
-| $\tilde{\rho}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | State, the Bloch ball |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | State, the Bloch ball |
 
 ## Further Reading
 

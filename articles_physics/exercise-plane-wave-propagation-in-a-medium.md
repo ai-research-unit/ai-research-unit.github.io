@@ -10,7 +10,7 @@ $$
 \qquad
 \tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_x\,\partial/\partial Q_x - \vec e_y\,\partial/\partial Q_y - \vec e_z\,\partial/\partial Q_z,
 $$
-with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (a pure vector), the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the medium speed and impedance
+with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (a pure vector), the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised source is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the medium speed and impedance
 $$
 c = \frac{1}{\sqrt{\epsilon\mu}}, \qquad Z = \sqrt{\frac{\mu}{\epsilon}}, \qquad c_0 = \frac{1}{\sqrt{\epsilon_0\mu_0}}, \qquad n(\omega) = \frac{c_0}{c(\omega)};
 $$
@@ -18,7 +18,7 @@ the constitutive relations $\vec D = \epsilon\vec E$ and $\vec B = \mu\vec H$, s
 $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S;
 $$
-and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. All of this is the notation contract of the parent articles and is not modified.
+and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. All of this is the notation contract of the parent articles and is not modified.
 
 **What is to be shown.** Five things. (1) The four algebraic plane-wave conditions the parent states, and the dispersion relation $k = \omega/c$, follow from the single biquaternionic equation $\tilde{\nabla}\tilde{F} = 0$. (2) The amplitude $\tilde{F}_0$ is a null field, hence a zero divisor, and it is annihilated by the (null) four-wavevector biquaternion. (3) The impedance relation and the balance of the two normalised halves of $\tilde{F}_0$. (4) The energy density, the energy flux, their time averages, and the energy–momentum biquaternion of the wave. (5) The dispersive case: phase velocity, group velocity, the spectral complex structure, and the vacuum limit. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
@@ -68,22 +68,22 @@ $$
 \qquad
 \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
 $$
-The bracket is $i\tilde{K}$, where
+The bracket is $i\tilde P$, where
 $$
-\tilde{K} = \frac{i\omega}{c}\,e_t + \vec k
+\tilde P = \frac{i\omega}{c}\,e_t + \vec k
 $$
-is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k$ is real, so that $\tilde{K} \in \mathbb{M}_-$. The operator eigenvalue identity is therefore
+is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k$ is real, so that $\tilde P \in \mathbb{M}_-$. The operator eigenvalue identity is therefore
 $$
-\tilde{\nabla} \;\longrightarrow\; i\tilde{K} = -\frac{\omega}{c}\,e_t + i\vec k,
+\tilde{\nabla} \;\longrightarrow\; i\tilde P = -\frac{\omega}{c}\,e_t + i\vec k,
 $$
 and since $i$ is central and invertible, the source-free equation $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the algebraic condition
 $$
-\boxed{\;\tilde{K}\,\tilde{F}_0 = 0\;}.
+\boxed{\;\tilde P\,\tilde{F}_0 = 0\;}.
 $$
 
-**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde{K}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_k$ distributes over components, while the vector part of $\tilde{K}$ multiplies by the quaternion rule $\vec k\tilde{F}_0 = -\vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0$. Thus
+**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_k$ distributes over components, while the vector part of $\tilde P$ multiplies by the quaternion rule $\vec k\tilde{F}_0 = -\vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0$. Thus
 $$
-\tilde{K}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0 .
+\tilde P\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k\cdot\tilde{F}_0 + \vec k\times\tilde{F}_0 .
 $$
 Its scalar part and its vector part must vanish separately:
 $$
@@ -136,7 +136,7 @@ So both classical invariants of the amplitude vanish, $I_1 = \vec E_0^2 - c^2\ve
 
 ## Problem 2: The Null Amplitude and the Wave Biquaternion
 
-**Statement.** (a) Show that the field-strength amplitude is null, $\langle\tilde{F}_0\rangle_{\natural} = 0$, hence that $\tilde{F}_0$ is a zero divisor of $\mathbb{B}$. (b) Show that $\tilde{K}$ is itself null and that it annihilates $\tilde{F}_0$ from the left. (c) Show by contrast that a standing wave in the same medium is not null, so that nullness is a property of the single running plane wave rather than of the Maxwell field in general.
+**Statement.** (a) Show that the field-strength amplitude is null, $\langle\tilde{F}_0\rangle_{\natural} = 0$, hence that $\tilde{F}_0$ is a zero divisor of $\mathbb{B}$. (b) Show that $\tilde P$ is itself null and that it annihilates $\tilde{F}_0$ from the left. (c) Show by contrast that a standing wave in the same medium is not null, so that nullness is a property of the single running plane wave rather than of the Maxwell field in general.
 
 **Solution (a).** Factor out the electric half. From $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$,
 $$
@@ -164,13 +164,13 @@ Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\vec F_0\cdot\vec F_0 = 
 
 **Solution (b).** The four-wavevector is null as well. Its biquaternion norm is
 $$
-\langle\tilde{K}\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 = 0
+\langle\tilde P\rangle_{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + k^2 = 0
 $$
-by the dispersion relation of Problem 1. So $\tilde{K}$ is a nonzero null element, hence a zero divisor, and Problem 1 established that
+by the dispersion relation of Problem 1. So $\tilde P$ is a nonzero null element, hence a zero divisor, and Problem 1 established that
 $$
-\tilde{K}\tilde{F}_0 = 0 .
+\tilde P\tilde{F}_0 = 0 .
 $$
-The statement has a clean interpretation: the field-strength amplitude is annihilated by the four-wavevector of the wave. Both objects lie on the zero-divisor cone, and their product vanishes. This is the algebraic content of the parent's sentence that a free plane wave is a zero divisor, made explicit: neither the nullness of $\tilde{K}$ nor the nullness of $\tilde{F}_0$ alone is the whole statement — it is the annihilation $\tilde{K}\tilde{F}_0 = 0$ of one null element by another. Since $\tilde{K} \in \mathbb{M}_-$ and $\tilde{F}_0$ is a pure vector with one Hermitian and one anti-Hermitian half, the product mixes the sectors; its two parts vanishing separately is exactly the transversality condition and the two curl relations.
+The statement has a clean interpretation: the field-strength amplitude is annihilated by the four-wavevector of the wave. Both objects lie on the zero-divisor cone, and their product vanishes. This is the algebraic content of the parent's sentence that a free plane wave is a zero divisor, made explicit: neither the nullness of $\tilde P$ nor the nullness of $\tilde{F}_0$ alone is the whole statement — it is the annihilation $\tilde P\tilde{F}_0 = 0$ of one null element by another. Since $\tilde P \in \mathbb{M}_-$ and $\tilde{F}_0$ is a pure vector with one Hermitian and one anti-Hermitian half, the product mixes the sectors; its two parts vanishing separately is exactly the transversality condition and the two curl relations.
 
 **Solution (c).** Superpose two counter-propagating waves of the same frequency in the same medium, choosing a linear polarisation:
 $$
@@ -234,14 +234,14 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right).
 $$
-This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde{K}$, with $W_\phi = \partial/\partial\phi\,W$ and $\tilde{K} = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $\exp(\pm 2i\phi)$ are eigenfunctions with eigenvalues $\pm 2i\tilde{K}$, and their combination reproduces $W_\phi\tilde{K}$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde P$, with $W_\phi = \partial/\partial\phi\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $\exp(\pm 2i\phi)$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\phi\tilde P$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
-= W_\phi\,\tilde{K}\left(e_t + i\vec u_k\right).
+= W_\phi\,\tilde P\left(e_t + i\vec u_k\right).
 $$
 Evaluating the product with $\vec k = k\vec u_k$, $k = \omega/c$, and $\vec u_k^2 = -e_t$:
 $$
-\tilde{K}\left(e_t + i\vec u_k\right)
+\tilde P\left(e_t + i\vec u_k\right)
 = \left(\frac{i\omega}{c}e_t + \vec k\right)\left(e_t + i\vec u_k\right)
 = \frac{i\omega}{c}e_t - \frac{\omega}{c}\vec u_k + \vec k + i\,\vec k\vec u_k
 = i\left(\frac{\omega}{c} - k\right)e_t + \left(\vec k - \frac{\omega}{c}\vec u_k\right) = 0,
@@ -282,49 +282,49 @@ an envelope $\cos(\Delta k\,z-\Delta\omega\,t)$ modulating the carrier. The enve
 
 **Solution (c).** In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_k\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.
 
-## Problem 5: The Monochromatic and Stationary A-Fields
+## Problem 5: The Monochromatic and Stationary Field
 
-**Statement.** (a) With the harmonic time dependence $\mathcal{A} = \mathcal{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(-i\omega t)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega t)$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
 
-**Solution (a).** The A-field of the Maxwell article is the complex three-vector $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ — written $\mathcal{A}$ here because the plain $\vec A$ is the vector potential, and **not** the potential biquaternion $\tilde{A}$ of Problems 1–3 — and it satisfies $-c^{-1}\partial/\partial t\,\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$. Substituting the harmonic dependence gives
+**Solution (a).** In the corpus's three-vector form the field satisfies $\partial_{Q_t}\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial_{Q_t}=-c^{-1}\partial_t$. For the harmonic dependence $\partial_{Q_t}=-k$, so
 
 $$
-i\frac{\omega}{c}\,\mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \vec j,
-\qquad\text{equivalently}\qquad
-\mathrm{rot}\,\mathcal{A} - k\,\mathcal{A} = i\,\vec j,
+\mathrm{rot}\,\tilde F - k\,\tilde F = -\vec j,
 \qquad k = \frac{\omega}{c}.
 $$
 
 Applying the rotor and using $\mathrm{rot}\,\mathrm{rot} = \mathrm{grad}\,\mathrm{div} - \Delta$ turns this into the Helmholtz equation for the amplitude,
 
 $$
-\Delta\mathcal{A} + k^2\mathcal{A} = -ik\,\vec J - i\,\mathrm{rot}\,\vec J + c\,\mathrm{grad}\,\rho,
+\Delta\tilde F + k^2\tilde F = \vec{\mathcal S},
 \qquad
-\rho = -i\omega^{-1}\,\mathrm{div}\,\vec J,
+\vec{\mathcal S} = k\,\vec j + \mathrm{rot}\,\vec j + \mathrm{grad}\,R_0,
+\qquad
+R_0 = i\rho/\sqrt{\epsilon},
 $$
 
-whose radiating solution is
+with $\rho$ fixed by charge conservation. Its radiating solution is
 
 $$
-4\pi\mathcal{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = ik\!\!\int \frac{\exp(ikR)}{R}\,\vec J\,d^3 y \;+\; i\,\mathrm{rot}\!\!\int \frac{\exp(ikR)}{R}\,\vec J\,d^3 y \;-\; c\,\mathrm{grad}\!\!\int \frac{\exp(ikR)}{R}\,\rho\,d^3 y,
+4\pi\tilde F(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\int \frac{\exp(ikR)}{R}\,\vec{\mathcal S}(\vec y)\,d^3 y,
 \qquad R = \|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y\|,
 $$
 
 unique in the class of solutions satisfying the Sommerfeld radiation condition. The medium enters only through $k = \omega/c$: the single constant $c$ replaces the pair $(\epsilon,\mu)$, exactly as in the parent's plane-wave dispersion.
 
-**Solution (b).** For a time-independent field the equation becomes the Poisson equation
+**Solution (b).** For a time-independent field the equation becomes the static pair $\mathrm{rot}\,\tilde F = -\vec j$, $\mathrm{div}\,\tilde F = R_0$, hence the Poisson equation
 
 $$
-\Delta\mathcal{A} = -i\,\mathrm{rot}\,\vec J + c\,\mathrm{grad}\,\rho,
+\Delta\tilde F = \mathrm{rot}\,\vec j + \mathrm{grad}\,R_0 ,
 $$
 
-whose solution decaying at infinity is $\mathcal{A} = -c\,\mathrm{grad}\big((4\pi R)^{-1} * \rho\big) + i\,\mathrm{rot}\big((4\pi R)^{-1} * \vec J\big)$. Writing $c^{-1}\mathcal{A} = \mathrm{grad}\,\Phi + i\,\mathrm{rot}\,\Psi$ with $\mathrm{div}\,\Psi = 0$ splits it into $\Delta\Phi = \rho$ and $\Delta\Psi = -c^{-1}\vec J$, solved by the Newton potentials $\Phi = -(4\pi R)^{-1} * \rho$ and $\Psi = (4\pi c R)^{-1} * \vec J$. The energy density of either field is $\tfrac{1}{2}\|\mathcal{A}\|^2 = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\mathcal{A}\times\mathcal{A}^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.
+whose solution decaying at infinity is $\tilde F = -(4\pi R)^{-1} * (\mathrm{rot}\,\vec j + \mathrm{grad}\,R_0)$. With $\tilde F = c(\mathrm{grad}\,\Phi - \mathrm{rot}\,\Psi)$ and $\mathrm{div}\,\Psi = 0$, the two potentials solve $\Delta\Phi = R_0/c$ and $\Delta\Psi = -\vec j/c$, so each is a Newton potential of its source. The energy density is $\tfrac{1}{2}\|\tilde F\|^2 = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\tilde F\times\tilde F^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.
 
 ## Where the Parent Leaves a Gap
 
 An exercise that only confirms its parent has not tested it. The computations above confirm the parent's plane-wave *results* — the four conditions, the dispersion relation, the impedance and amplitude relations, the nullness, and the time-averaged energy relation all survived recomputation on oblique, elliptical, and $\epsilon\neq\mu$ cases. What the exercise does *not* find is equally worth recording: the parent's plane-wave section is correct where it is defined, and the gaps are gaps of coverage and of labelling, not false statements. They are stated here rather than smoothed over.
 
-**1. The conditions are asserted, not derived.** The parent writes that for a source-free plane wave "$\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four algebraic conditions", and then lists them. The exercise has derived them (Problem 1), and the derivation shows that the four conditions are not four independent inputs: the scalar part of $\tilde{K}\tilde{F}_0 = 0$ and the vector part give two equations, from which the two curl relations follow, and the two transversality conditions then follow from the curl relations. The parent's phrasing suggests four parallel conditions; the algebra gives two, with the others as consequences. This is a difference of presentation, not of content, but it matters for a reader who wants to know what is assumed and what is derived.
+**1. The conditions are asserted, not derived.** The parent writes that for a source-free plane wave "$\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four algebraic conditions", and then lists them. The exercise has derived them (Problem 1), and the derivation shows that the four conditions are not four independent inputs: the scalar part of $\tilde P\tilde{F}_0 = 0$ and the vector part give two equations, from which the two curl relations follow, and the two transversality conditions then follow from the curl relations. The parent's phrasing suggests four parallel conditions; the algebra gives two, with the others as consequences. This is a difference of presentation, not of content, but it matters for a reader who wants to know what is assumed and what is derived.
 
 **2. The normalisation must be real, and the absorbing case is outside the framework as written.** Every result above uses $\sqrt{\epsilon(\omega)}$ and $\sqrt{\mu(\omega)}$ as real numbers, which holds in a transparent frequency window. Near a resonance $\epsilon$ and $\mu$ become complex, the electric and magnetic halves of $\tilde{F}$ are no longer purely imaginary and purely real, the split into $\mathbb{M}_+$ and $\mathbb{M}_-$ fails, and $\tilde{F}$ becomes fully complex. The parent states this boundary and declines to pursue the absorbing case; the exercise does not close it either. The consequence for this exercise is explicit: the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ of Problem 2, and with it the zero-divisor interpretation of a plane wave, are established for the *real* normalisation only. Whether they survive for complex $\sqrt{\epsilon},\sqrt{\mu}$, and which real slice is physical, are not determined here.
 
@@ -352,7 +352,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde{K}\tilde{F}_0 = 0$, where $\tilde{K} = \frac{i\omega}{c}e_t + \vec k \in \mathbb{M}_-$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P\tilde{F}_0 = 0$, where $\tilde P = \frac{i\omega}{c}e_t + \vec k \in \mathbb{M}_-$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad
@@ -360,7 +360,7 @@ $$
 $$
 from which the transversality conditions $\vec k\cdot\vec E_0 = \vec k\cdot\vec H_0 = 0$ and the dispersion relation $k = \omega/c$ follow. The impedance relation $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$ gives $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\vec E_0$ and $-\sqrt{\mu}\vec H_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\vec E_0 + i\vec u_k\times\vec E_0)$.
 
-The amplitude is a zero divisor: $\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde{K}\tilde{F}_0 = 0$, with $\langle\tilde{K}\rangle_{\natural} = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\vec S = cW\vec u_k$ and, on time average, $|\langle\vec S\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W} = W(e_t + i\vec u_k)$, it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and it is itself null, $\langle\tilde{W}\rangle_{\natural} = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $\exp(ikR)/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k = \omega/c$ — the "single constant $c$" interpretation made concrete.
+The amplitude is a zero divisor: $\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde P\tilde{F}_0 = 0$, with $\langle\tilde P\rangle_{\natural} = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\vec S = cW\vec u_k$ and, on time average, $|\langle\vec S\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W} = W(e_t + i\vec u_k)$, it is conserved, $\tilde{\nabla}\tilde{W} = 0$, and it is itself null, $\langle\tilde{W}\rangle_{\natural} = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $\exp(ikR)/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k = \omega/c$ — the "single constant $c$" interpretation made concrete.
 
 The exercise confirms the parent's plane-wave results on cases the parent did not use, and it reports the parent's gaps rather than closing them: the conditions are derived here but asserted there; the absorbing case lies outside the real normalisation; the energy density used is non-dispersive; and the "Lorentz invariant" label of the notation table is inherited from the vacuum setting and is not established for a medium.
 
@@ -382,14 +382,13 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $Z = \sqrt{\mu/\epsilon}$, $Z_0$ | Wave impedance of the medium; in vacuum |
 | $n(\omega) = c_0/c(\omega)$ | Refractive index |
-| $\vec k, \omega, \vec u_k = \vec k/|\vec k|$ | Wavevector, angular frequency, unit wavevector |
-| $\tilde{K} = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{M}_-$ |
+| $\vec k, \omega, \vec u_k = \vec k/\lvert\vec k\rvert$ | Wavevector, angular frequency, unit wavevector |
+| $\tilde P = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{M}_-$ |
 | $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ | Potential biquaternion |
-| $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (complex three-vector; not the vector potential) |
-| $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the A-field equation |
+| $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |
 | $k = \omega/c$ | Wave number |
-| $\Phi, \Psi$ | Scalar and vector potentials, $c^{-1}\mathcal{A} = \mathrm{grad}\,\Phi + i\,\mathrm{rot}\,\Psi$ |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ | Source biquaternion |
+| $\Phi, \Psi$ | Scalar and vector potentials of the stationary field |
+| $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J$ |
 | $\vec N = \vec E + ic\vec B$, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ | Riemann–Silberstein vector and the field strength |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Field invariants (see gap 4 on the medium setting) |
@@ -397,7 +396,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
 | $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec S$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
 | $v_p = \omega/k = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

@@ -147,15 +147,17 @@ The field strength is then assembled from the local complex structure, and it in
 
 With the definitions above, the four Maxwell equations in the medium collapse into the single biquaternionic equation of the parent article,
 $$
-\tilde{\nabla}\tilde{F}=-\tilde{R},
+\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J},
 \qquad
-\tilde{R}=R_0+\vec R,
+\tilde J=ic\rho\,e_t+\vec J,
+\qquad
+\sqrt{\mu}\,\tilde{J}=R_0+\vec R,
 \qquad
 R_0=\frac{i\rho}{\sqrt{\epsilon}},
 \qquad
 \vec R=\sqrt{\mu}\,\vec J.
 $$
-The purpose of this section is to display how the medium factors cancel, so that the single equation is manifestly the same equation in every medium.
+The purpose of this section is to display how the medium factors cancel, so that the single equation has the same form in every medium, the medium entering only through $\tilde F$ and the single factor $\sqrt{\mu}$.
 
 For a pure-vector field $\tilde{F}=\vec F$, the biquaternionic gradient acts as
 $$
@@ -180,13 +182,13 @@ The cancellation is the content of the normalisation. In the vector equation, fo
 $$
 \frac{\sqrt{\epsilon}}{c\sqrt{\mu}}=\epsilon,
 $$
-using $\sqrt{\epsilon\mu}=1/c$; likewise the term coupling $\partial/\partial Q_t\,\vec H$ to $\mathrm{rot}\,\vec E$ carries $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields and the factors $1/\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the source are exactly what is required for the medium to disappear from the equation. The biquaternionic Maxwell equation is therefore medium-independent in form; the medium is entirely in the definitions of $\tilde{F}$, $\tilde{R}$, and the operator $\partial/\partial Q_t$.
+using $\sqrt{\epsilon\mu}=1/c$; likewise the term coupling $\partial/\partial Q_t\,\vec H$ to $\mathrm{rot}\,\vec E$ carries $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial Q_t$.
 
-Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\vec A$ satisfies
+Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\vec A$ satisfies
 $$
-\Box\tilde{A}=-\mu\,\tilde{R}',
+\Box\tilde{A}=-\mu\,\tilde J,
 \qquad
-\tilde{R}'=ic\rho+\vec J,
+\tilde J=ic\rho\,e_t+\vec J,
 $$
 where the factor $\mu$ is now explicit. The field-strength formulation hides the medium in the normalisation; the potential formulation displays one of the medium parameters directly.
 
@@ -421,9 +423,9 @@ where $M_\alpha$ denotes left multiplication by $\alpha$, so that the coefficien
 **The reformulation.** The carrier identity with $\phi=\sqrt{\epsilon}$ says that $\frac{1}{\sqrt{\epsilon}}D(\sqrt{\epsilon}\vec E)=(D+M_{\vec{\epsilon}})\vec E$, and with $\phi=\sqrt{\mu}$ the analogous statement holds for $\vec H$. Introducing the normalised fields and the medium speed,
 
 $$
-\tilde E:=\sqrt{\epsilon}\,\vec E,
+\vec{\mathcal E}:=\sqrt{\epsilon}\,\vec E,
 \qquad
-\tilde H:=\sqrt{\mu}\,\vec H,
+\vec{\mathcal H}:=\sqrt{\mu}\,\vec H,
 \qquad
 c=\frac{1}{\sqrt{\epsilon\mu}},
 $$
@@ -431,29 +433,29 @@ $$
 the pair becomes
 
 $$
-D\,\tilde E+\tilde E\,\vec{\epsilon}
-=-\frac{1}{c}\,\partial/\partial Q_t\,\tilde H-\frac{\rho}{\sqrt{\epsilon}},
+D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}
+=-\frac{1}{c}\,\partial/\partial Q_t\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
-D\,\tilde H+\tilde H\,\vec{\mu}
-=\frac{1}{c}\,\partial/\partial Q_t\,\tilde E+\sqrt{\mu}\,\vec j,
+D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
+=\frac{1}{c}\,\partial/\partial Q_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec j,
 $$
 
 the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega t)$ of the preceding sections, with $k=\omega\sqrt{\epsilon\mu}$,
 
 $$
-D\,\tilde E+\tilde E\,\vec{\epsilon}=-ik\,\tilde H-\frac{\rho}{\sqrt{\epsilon}},
+D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-ik\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
-D\,\tilde H+\tilde H\,\vec{\mu}=ik\,\tilde E+\sqrt{\mu}\,\vec j.
+D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}=ik\,\vec{\mathcal E}+\sqrt{\mu}\,\vec j.
 $$
 
-These are exact equivalents of the Maxwell system for arbitrary $\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. "Exact" is meant literally: this is neither a weak-inhomogeneity nor a slowly-varying approximation, and no term has been dropped. At constant $\epsilon,\mu$ the vectors $\vec{\epsilon},\vec{\mu}$ vanish and the pair collapses to $D\tilde E=-ik\tilde H-\rho/\sqrt{\epsilon}$ and $D\tilde H=ik\tilde E+\sqrt{\mu}\,\vec j$, which is the constant-coefficient reduction of the earlier sections written in the normalisation of this one.
+These are exact equivalents of the Maxwell system for arbitrary $\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. "Exact" is meant literally: this is neither a weak-inhomogeneity nor a slowly-varying approximation, and no term has been dropped. At constant $\epsilon,\mu$ the vectors $\vec{\epsilon},\vec{\mu}$ vanish and the pair collapses to $D\vec{\mathcal E}=-ik\vec{\mathcal H}-\rho/\sqrt{\epsilon}$ and $D\vec{\mathcal H}=ik\vec{\mathcal E}+\sqrt{\mu}\,\vec j$, which is the constant-coefficient reduction of the earlier sections written in the normalisation of this one.
 
 **Two conventions meet here, and they should be separated.** The vacuum operator of the source's reduction is $\frac{1}{c}\partial/\partial Q_t+iD$, while the non-chiral reduction recorded in the chiral section above is $M_0=\frac{1}{c}\partial/\partial Q_t-iD$. The two are complex conjugates of one another and not rivals. The field $f$ used below is $\sqrt{\epsilon}$ times the Riemann–Silberstein vector, that is, $\sqrt{\epsilon}$ times the conjugate of the chiral section's purely vectorial field $\vec N=\vec E-iZ\vec H$; conjugating a reduction built on $M_0$ replaces $-iD$ by $+iD$, so the sign of the $iD$ term is carried by which field one starts from. The sections below use the source's convention throughout, and the dictionary to the corpus's field strength is given at the end of this section.
 
 **The single equation, and why it is a Vekua equation.** One further combination collapses the pair. Set
 
 $$
-f:=\tilde E+i\,\tilde H,
+f:=\vec{\mathcal E}+i\,\vec{\mathcal H},
 \qquad
 \vec{c}:=\frac{\mathrm{grad}\sqrt{c}}{\sqrt{c}}=\frac{1}{2}\,\mathrm{grad}\ln c,
 \qquad
@@ -487,7 +489,7 @@ $$
 \tilde{F}=i\,f .
 $$
 
-The field-strength biquaternion of this article is therefore $i$ times this paper's $f$; the two differ by the conjugation that exchanges the electric and magnetic halves, and both describe the same Maxwell system in the normalisation that makes the medium gradient removable. In this dictionary the equation above is the inhomogeneous-medium member of the family whose constant-coefficient member is the single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ of the earlier sections.
+The field-strength biquaternion of this article is therefore $i$ times this paper's $f$; the two differ by the conjugation that exchanges the electric and magnetic halves, and both describe the same Maxwell system in the normalisation that makes the medium gradient removable. In this dictionary the equation above is the inhomogeneous-medium member of the family whose constant-coefficient member is the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ of the earlier sections.
 
 **The same reduction read from the Dirac side.** The carrier identity of this section has a counterpart that reads it as a Dirac potential. The massive Dirac equation with an electric potential, or separately with a scalar potential, becomes after Kravchenko's dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction — the shape the carrier identity produces — and matching the two shapes identifies each such Dirac solution with the static sourceless Maxwell field of a medium whose permittivity is the exponential of the accumulated potential,
 
@@ -502,9 +504,9 @@ $g$ being the potential: the potential is the logarithmic derivative of the squa
 In the static case the reformulation reads
 
 $$
-D\,\tilde E+\tilde E\,\vec{\epsilon}=-\frac{\rho}{\sqrt{\epsilon}},
+D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
-D\,\tilde H+\tilde H\,\vec{\mu}=\sqrt{\mu}\,\vec j,
+D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}=\sqrt{\mu}\,\vec j,
 $$
 
 and both are instances of one operator problem: solve
@@ -867,7 +869,7 @@ $$
 $$
 which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian electric half in $\mathbb{M}_+$ and an anti-Hermitian magnetic half in $\mathbb{M}_-$; the medium sets the relative weight $Z=\sqrt{\mu/\epsilon}$ of the two halves.
 
-The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ is medium-independent in form, the factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ cancelling through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
+The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ is the same in every medium: the field factors cancel through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$, and the only medium factor left explicit in the equation is $\sqrt{\mu}$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
 
 For a plane wave in the medium, the conventions fixed above are: complex amplitudes in the $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ convention, transversality $\vec k\cdot\vec E_0=\vec k\cdot\vec H_0=0$, the relations $\vec k\times\vec E_0=\omega\mu\vec H_0$ and $\vec k\times\vec H_0=-\omega\epsilon\vec E_0$, the dispersion relation $k=\omega/c(\omega)=n(\omega)\omega/c_0$, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$. In these conventions $|\vec E_0|=Z|\vec H_0|=c|\vec B_0|$, the two normalised halves of $\tilde{F}_0$ have equal magnitude, and $\langle\tilde{F}_0\rangle_{\natural}=0$.
 
@@ -879,13 +881,13 @@ The time-harmonic companion of the chiral reduction — the diagonalization into
 
 Beyond the chiral case, inhomogeneity is now handled in two ways that are not the same kind of result. For a medium with arbitrary $\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and no small parameter, the Maxwell system has an exact quaternionic equivalent,
 $$
-D\,\tilde E+\tilde E\,\vec{\epsilon}
-=-\frac{1}{c}\,\partial/\partial Q_t\,\tilde H-\frac{\rho}{\sqrt{\epsilon}},
+D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}
+=-\frac{1}{c}\,\partial/\partial Q_t\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},
 \qquad
-D\,\tilde H+\tilde H\,\vec{\mu}
-=\frac{1}{c}\,\partial/\partial Q_t\,\tilde E+\sqrt{\mu}\,\vec j,
+D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
+=\frac{1}{c}\,\partial/\partial Q_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec j,
 $$
-with the normalised fields $\tilde E=\sqrt{\epsilon}\,\vec E$, $\tilde H=\sqrt{\mu}\,\vec H$ and the half-gradients $\vec{\epsilon}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$, $\vec{\mu}=\mathrm{grad}\sqrt{\mu}/\sqrt{\mu}$; and in one line,
+with the normalised fields $\vec{\mathcal E}=\sqrt{\epsilon}\,\vec E$, $\vec{\mathcal H}=\sqrt{\mu}\,\vec H$ and the half-gradients $\vec{\epsilon}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$, $\vec{\mu}=\mathrm{grad}\sqrt{\mu}/\sqrt{\mu}$; and in one line,
 $$
 \left(\frac{1}{c}\,\partial/\partial Q_t+iD\right)f-f\,(i\vec{c})-f^{*}\,(i\vec{Z})
 =-\left(\sqrt{\mu}\,\vec j+\frac{i\rho}{\sqrt{\epsilon}}\right),
@@ -926,15 +928,14 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $n(\omega)=c_0/c(\omega)$ | Refractive index |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A}=i\phi/c+\vec A$ | Potential biquaternion |
-| $\tilde{R}=i\rho/\sqrt{\epsilon}+\sqrt{\mu}\,\vec J$ | Source biquaternion |
-| $\tilde{R}'=ic\rho+\vec J$ | Source biquaternion of the potential equation |
+| $\tilde J=ic\rho\,e_t+\vec J$ | Four-current, of the potential equation; the Maxwell source is $\sqrt{\mu}\,\tilde J=i\rho/\sqrt{\epsilon}+\sqrt{\mu}\,\vec J$ |
 | $\vec N=\vec E+ic\vec B$ | Riemann–Silberstein vector |
 | $I_1=\vec E^2-c^2\vec B^2,\ I_2=\vec E\cdot\vec B$ | Lorentz invariants of the field |
 | $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm (complex scalar) |
 | $W=\tfrac{1}{2}(\epsilon\vec E^2+\mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S=\vec E\times\vec H$ | Poynting vector |
 | $\vec k,\omega$ | Wavevector and angular frequency |
-| $\vec u_k=\vec k/|\vec k|$ | Unit wavevector |
+| $\vec u_k=\vec k/\lvert\vec k\rvert$ | Unit wavevector |
 | $\beta$ | Chirality measure of a Drude–Born–Fedorov medium (a length) |
 | $D=i_1\partial/\partial x_1+i_2\partial/\partial x_2+i_3\partial/\partial x_3$ | Moisil–Teodoresco operator of the chiral reduction |
 | $M=\beta\sqrt{\epsilon\mu}\,\partial/\partial Q_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial Q_t-iD$ | Quaternionic operator of the chiral Maxwell system |
@@ -946,8 +947,8 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $D=\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ | Moisil–Teodoresco operator in the sources' normalisation, $D^2=-\Delta$ (the same object as the chiral row's $D=i_1\partial/\partial x_1+i_2\partial/\partial x_2+i_3\partial/\partial x_3$) |
 | $\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Inhomogeneous permittivity and permeability |
 | $\vec{\epsilon}=\tfrac12\mathrm{grad}\,\epsilon/\epsilon,\ \vec{\mu}=\tfrac12\mathrm{grad}\,\mu/\mu$ | Half-gradients of the two medium parameters |
-| $\tilde E=\sqrt{\epsilon}\,\vec E,\ \tilde H=\sqrt{\mu}\,\vec H$ | Fields normalised by the carrier functions |
-| $f=\tilde E+i\tilde H$ | Field of the Vekua equation; $\tilde{F}=if$ |
+| $\vec{\mathcal E}=\sqrt{\epsilon}\,\vec E,\ \vec{\mathcal H}=\sqrt{\mu}\,\vec H$ | Fields normalised by the carrier functions |
+| $f=\vec{\mathcal E}+i\vec{\mathcal H}$ | Field of the Vekua equation; $\tilde{F}=if$ |
 | $\vec{c}=\tfrac12\mathrm{grad}\ln c,\ \vec{Z}=\tfrac12\mathrm{grad}\ln Z$ | Coefficient vectors of the Vekua equation (the source's $\vec{c}$ and $\vec{W}$) |
 | $\phi$ | Carrier function of the identity $(D\pm\mathrm{grad}\,\phi/\phi)g^{(\mp)}=\phi^{(\mp1)}D(\phi^{(\pm1)}g)$ |
 | $\vec{\alpha}=\mathrm{grad}\,\phi/\phi$ | Gradient coefficient of the operator $D+M^{\vec{\alpha}}$ |
@@ -976,7 +977,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the modern account of the complex vector.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic treatment of the field and its energy–momentum.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations in a medium.
-- S. M. Grudsky, K. V. Khmelnytskaya and V. V. Kravchenko, "On a quaternionic Maxwell equation for the time-dependent electromagnetic field in a chiral medium", *Journal of Physics A: Mathematical and General* **37** (2004) 4641–4647, DOI 10.1088/0305-4470/37/16/013 (preprint arXiv:math-ph/0309062), for the Drude–Born–Fedorov chiral constitutive relations, the reduction of the time-dependent chiral Maxwell system to the single quaternionic equation $M\vec N=\tilde R$, the exact factorization of $M(\omega)$ with its degenerate frequency $c/\beta$, the two refractive indices, the kernel $K_\alpha$ of $D_\alpha=D+\alpha$ with its defining equation $D_\alpha K_\alpha=\delta$ (note the source's $\Theta_\alpha=-\exp(i\alpha|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)$), and the causal fundamental solution, whose residue series resums to Bessel functions $J_0$ and $J_1$ of $2\sqrt{c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)t}$. This is the paper recorded in the section *A Chiral Medium: One Quaternionic Equation*.
+- S. M. Grudsky, K. V. Khmelnytskaya and V. V. Kravchenko, "On a quaternionic Maxwell equation for the time-dependent electromagnetic field in a chiral medium", *Journal of Physics A: Mathematical and General* **37** (2004) 4641–4647, DOI 10.1088/0305-4470/37/16/013 (preprint arXiv:math-ph/0309062), for the Drude–Born–Fedorov chiral constitutive relations, the reduction of the time-dependent chiral Maxwell system to the single quaternionic equation $M\vec N=\sqrt{\mu}\,\tilde J$, the exact factorization of $M(\omega)$ with its degenerate frequency $c/\beta$, the two refractive indices, the kernel $K_\alpha$ of $D_\alpha=D+\alpha$ with its defining equation $D_\alpha K_\alpha=\delta$ (note the source's $\Theta_\alpha=-\exp(i\alpha|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)$), and the causal fundamental solution, whose residue series resums to Bessel functions $J_0$ and $J_1$ of $2\sqrt{c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)t}$. This is the paper recorded in the section *A Chiral Medium: One Quaternionic Equation*.
 - V. V. Kravchenko and H. Oviedo, "On a Quaternionic Reformulation of Maxwell's Equations for Chiral Media and its Applications", *Zeitschrift für Analysis und ihre Anwendungen (Journal for Analysis and its Applications)* **22** (2003), no. 3, 569–589, DOI 10.4171/ZAA/1163, for the time-harmonic reformulation, the diagonalization with the two wavenumbers $\alpha_1,\alpha_2$, the integral representations, the extendability problem and its complete solution, and the treatment of inhomogeneous (slowly varying, stratified) chiral media. This is the source of the dedicated article *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*, where the reformulation and its applications are recorded.
 - V. V. Kravchenko, "Quaternionic Reformulation of Maxwell Equations for Inhomogeneous Media and New Solutions", *Zeitschrift für Analysis und ihre Anwendungen (Journal for Analysis and its Applications)* (2001), DOI 10.4171/ZAA/1063 (preprint arXiv:math-ph/0104008), for the time-harmonic reformulation of the Maxwell system of an arbitrary inhomogeneous medium, the operator $D+M_{\vec{\alpha}}$ with the gradient coefficient $\vec{\alpha}=\mathrm{grad}\,\phi/\phi$, the reduction to the Schrödinger equation $-\Delta\psi+(\Delta\phi/\phi)\psi=0$, the factorisation with the quaternionic Riccati condition $D\vec{\alpha}+\vec{\alpha}^2=-v$, and the closed-form fundamental solution. This is the source of the section *The Operator $D+M_{\vec{\alpha}}$, the Reduction to the Schrödinger Equation, and a Fundamental Solution*. Its factorisation is the Schrödinger member ($p=1$) of the general family: the paper carries neither the general $(\mathrm{div}\,p\,\mathrm{grad}+q)$ factorisation, nor the conductivity equation, nor the inverse theorems, and those are cited below to the survey's reference $[29]$. The paper's own attribution of the Riccati form is to Bernstein (1996) and Bernstein–Gürlebeck (1999), and it names no conductivity problem.
 - V. V. Kravchenko, "Quaternionic equation for electromagnetic fields in inhomogeneous media" (2002), DOI 10.1142/9789812794253_0042 (preprint arXiv:math-ph/0202010), for the carrier identity $(D\pm\mathrm{grad}\,\phi/\phi)g^{(\mp)}=\phi^{(\mp1)}D(\phi^{(\pm1)}g)$, the scalar-product identity, the exact reduction of the Maxwell system of an arbitrary inhomogeneous medium to the two gradient-corrected equations and then to a single Vekua-type quaternionic equation, and the identification of that equation with the governing equation of the pseudoanalytic functions. This is the source of the section *Arbitrary Inhomogeneous Media: The Carrier Function and the Vekua Equation*.

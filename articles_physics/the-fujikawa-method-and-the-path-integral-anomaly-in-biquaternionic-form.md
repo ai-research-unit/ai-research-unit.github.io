@@ -30,7 +30,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
+with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
 
 The framework results used here are those of the companion articles:
 
@@ -72,7 +72,7 @@ $$
 
 because $\{\gamma_5,\gamma^\mu\}=0$ twice cancels the two phase factors in the bilinear. Under the *local* rotation the derivative term produces a term proportional to $\partial/\partial Q_\mu\,\alpha$, which is the current; under the *global* rotation it produces nothing. A mass term is not invariant, $\bar{\psi}'m\psi'=\bar{\psi}m \exp(2i\alpha\gamma_5)\psi$, which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
 
-**The classical Ward identity, and the question.** Classically, the invariance of the massless action under the local rotation gives the conservation of the axial current, $\langle\tilde\nabla,\tilde j_5\rangle_{\natural}=0$. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
+**The classical Ward identity, and the question.** Classically, the invariance of the massless action under the local rotation gives the conservation of the axial current, $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=0$. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
 **Why the measure can fail.** A change of integration variables in a finite-dimensional integral multiplies the measure by the Jacobian determinant, regardless of whether the integrand is invariant. A symmetry of the action is therefore not automatically a symmetry of the integral; it is a symmetry only if the Jacobian is one. The chiral rotation of a Dirac field is a change of variables whose Jacobian is not one, and no local counterterm can restore it. This is why the anomaly is a property of the measure and why the diagrammatic and path-integral derivations must agree.
 
@@ -196,7 +196,7 @@ using $\int d^4p\,\exp(-p^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4
 **The integral of the density.** The integrated anomaly is a topological invariant. Using the total-derivative form and the index of the Dirac operator,
 
 $$
-\int d^4x\,\langle\tilde\nabla,\tilde j_5\rangle_{\natural}
+\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
 = \int d^4x\,A(x)
 = \frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = 2\,\mathrm{ind}(D\!\!\!/ ),
@@ -276,7 +276,7 @@ The biquaternion content is threefold: the chirality insertion is the volume ele
 | $U=\exp(i\alpha(x)\gamma_5)$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=\exp(-i\int d^4x\,\alpha A)$ | Jacobian of the measure under the rotation, both determinant factors included |
 | $Z[A]=\det(i\gamma^\mu D_\mu-m)$ | Fermion determinant |
-| $\int d^4x\,\langle\tilde\nabla,\tilde j_5\rangle_{\natural}=2\,\mathrm{ind}(D\!\!\!/)$ | Integrated anomaly and index |
+| $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2\,\mathrm{ind}(D\!\!\!/)$ | Integrated anomaly and index |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
 | $2im\bar{\psi}\gamma_5\psi$ | Mass contribution to the axial divergence |

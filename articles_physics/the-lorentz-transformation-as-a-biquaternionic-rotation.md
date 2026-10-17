@@ -115,7 +115,7 @@ The key feature of the boost biquaternion is that the vector part is **purely im
 
 Compare:
 
-- **Spatial rotation** about an axis $\vec u_{\mathrm r}$ by angle $\theta$: the rotor is $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, with a **real** vector part.
+- **Spatial rotation** about an axis $\vec u_{\mathrm r}$ by angle $\theta$: the rotor is $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, with a **real** vector part.
 - **Boost** along a direction $\vec u_{\mathrm b}$ with rapidity $\psi$: the rotor is $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, with a **purely imaginary** vector part.
 
 Both are rotors in the sense of geometric algebra, both satisfy the unit-norm condition, and both act by conjugation. The difference is the **sign** of the vector part squared:
@@ -180,7 +180,7 @@ $$
 = \pm\,\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*},
 $$
 
-so $\Phi_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The A-field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.
+so $\Phi_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.
 
 **It is not an algebra automorphism.** For a product,
 
@@ -240,10 +240,10 @@ where the square root is the biquaternion square root (multivalued by sign) and 
 
 ### Derivation
 
-The derivation is a direct computation. Define the unit four-velocity $\tilde{v} = \tilde{V}/c = \gamma(i\,e_t + \vec v/c)$, so that $\tilde{v}^{\natural} = \gamma(i\,e_t - \vec v/c)$. Then
+The derivation is a direct computation. Define the unit four-velocity $\tilde{V}/c = \gamma(i\,e_t + \vec v/c)$, so that $(\tilde{V}/c)^{\natural} = \gamma(i\,e_t - \vec v/c)$. Then
 
 $$
--i\tilde{v}^{\natural} = -i\gamma(i\,e_t - \vec v/c) = \gamma\,e_t + i\gamma\frac{\vec v}{c}.
+-i(\tilde{V}/c)^{\natural} = -i\gamma(i\,e_t - \vec v/c) = \gamma\,e_t + i\gamma\frac{\vec v}{c}.
 $$
 
 On the other hand, the square of the boost biquaternion is
@@ -257,7 +257,7 @@ where the identification $\vec u_{\mathrm b} = \vec u_v$ (boost direction aligne
 Comparing the two expressions,
 
 $$
-\tilde{\Lambda}^2 = -i\tilde{v}^{\natural} = -\frac{i}{c}\tilde{V}^{\natural},
+\tilde{\Lambda}^2 = -i(\tilde{V}/c)^{\natural} = -\frac{i}{c}\tilde{V}^{\natural},
 $$
 
 and hence
@@ -317,7 +317,7 @@ which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(
 
 **Pure boosts** are the **Hermitian** elements of $SL(2,\mathbb{C})$: those satisfying $\tilde{\Lambda}^{*} = \tilde{\Lambda}$. They do **not** form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.
 
-**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
+**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
 
 The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.
 
@@ -325,13 +325,13 @@ The general Lorentz transformation is the product of a boost and a rotation, and
 
 The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three interpretations, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.
 
-**Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{L}\tilde{Q}\tilde{L}^{*}$, with $\tilde{L}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{L}^{-1}\tilde{Q}\tilde{L}^{-{}^{*}}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
+**Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, with $\tilde{\Lambda}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{\Lambda}^{-1}\tilde{Q}\tilde{\Lambda}^{-{}^{*}}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
 
 $$
-\tilde{R}_{2\leftarrow1} = \tilde{\Lambda}_2\tilde{\Lambda}_1^{-1}
+\tilde{\Lambda}_{2\leftarrow1} = \tilde{\Lambda}_2\tilde{\Lambda}_1^{-1}
 $$
 
-carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{L}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
+carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{\Lambda}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
 **The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
 
@@ -341,12 +341,12 @@ $$
 \mathcal{E}^{0} = e_t,\quad \mathcal{E}^{k} = -\vec e_k,
 $$
 
-the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde{L}$, the components transform as
+the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde{\Lambda}$, the components transform as
 
 $$
 q'^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
 \qquad
-L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{L}\,\mathcal{E}_{\nu}\,\tilde{L}^{*}\right),
+L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{\Lambda}\,\mathcal{E}_{\nu}\,\tilde{\Lambda}^{*}\right),
 $$
 
 and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis.
@@ -499,7 +499,7 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the modern geometric algebra treatment of Lorentz rotors.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection between Clifford algebras and the Lorentz group.
 - V. V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to the Lorentz group.
-- L. A. Alexeyeva, "Lorentz Transformations for One Biquaternionic Model of the Electro-Gravimagnetic Field. Conservation Laws" (2009), for the induced action of the Lorentz transformation on the A-field biquaternions — potential, strength, charge–current and power–force — worked out component by component, and for the finding that the model's charge–mass conservation law is not invariant. The English text of the same work is arXiv:1104.1483v1; arXiv:0904.3446v1 is the Russian preprint.
+- L. A. Alexeyeva, "Lorentz Transformations for One Biquaternionic Model of the Electro-Gravimagnetic Field. Conservation Laws" (2009), for the induced action of the Lorentz transformation on the field biquaternions — potential, strength, charge–current and power–force — worked out component by component, and for the finding that the model's charge–mass conservation law is not invariant. The English text of the same work is arXiv:1104.1483v1; arXiv:0904.3446v1 is the Russian preprint.
 - Jean Surdej, *La relativité restreinte*, chapter 3 of the lecture notes (2015–2016), for the experimental route recorded in *What Fixes the Transformation: The Experimental Route*: aberration of starlight, the Fizeau drag, the Michelson–Morley null result and the source's own interpretation of it, the FitzGerald–Lorentz contraction, Poincaré on the antipathy between Maxwell's equations and the Galilean transformation, the two postulates of 1905, and Einstein's 1955 retrospective on the bearing of the transformation.
 - William E. Baylis, *Relativity in Introductory Physics*, *Canadian Journal of Physics* **82** (2004) 853–873 (arXiv:physics/0406158), §V.B, for the closed-form rotor and the bisector property recorded here, and for the paravector interpretation of the same transformation.
 

@@ -27,7 +27,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 
@@ -88,7 +88,7 @@ $$
 and its divergence is the textbook anomaly-free identity for a massive free field,
 
 $$
-\langle\tilde\nabla,\tilde j_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi ,
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi ,
 $$
 
 which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — is the subject of the companion articles; here it is noted only for completeness, and the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
@@ -98,7 +98,7 @@ which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and t
 $$
 j^\mu = \bar{\psi}\gamma^\mu\psi , \qquad j_5^\mu = \bar{\psi}\gamma^\mu\gamma_5\psi ,
 \qquad
-\langle\tilde\nabla,\tilde j\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde j_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi .
+\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\gamma_5\psi .
 $$
 
 The scalar bilinear $S=\bar{\psi}\psi$ is the one that will acquire a vacuum expectation value.
@@ -299,7 +299,7 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
 | $i\bar{\Psi}\gamma_5\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
 | $j^\mu=\bar{\psi}\gamma^\mu\psi$, $j_5^\mu=\bar{\psi}\gamma^\mu\gamma_5\psi$ | Vector and axial currents |
-| $\langle\tilde\nabla,\tilde j_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi$ | Axial divergence (explicit breaking by $m$) |
+| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\gamma_5\psi$ | Axial divergence (explicit breaking by $m$) |
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |
 | $G$, $G_c=\pi^2/(N_c\Lambda^2)$ | Four-fermion coupling and critical coupling |

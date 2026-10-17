@@ -124,7 +124,7 @@ equivalently, since $\tilde K$ is central and the expectation is linear,
 $$
 \big(\Box-m^2\big)\,\big\langle\tilde\Phi\big\rangle=-\tfrac12\Big\langle\frac{\delta S_{\mathrm{int}}}{\delta\tilde\Phi}\Big\rangle .
 $$
-The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde k)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde k)=\tilde k\tilde k^{\natural}+m^2$ and $\tilde k=iE e_t+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
+The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde P)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde P)=\tilde P\tilde P^{\natural}+m^2$ and $\tilde P=iE e_t+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
 
 ### The Gauge Field and the Fermion
 
@@ -146,7 +146,7 @@ of *The Dirac Equation in Biquaternionic Form*. The variation of the fermionic a
 
 Let $Q$ be a derivation generating a one-parameter group of transformations of the field, $\delta\tilde\Phi=Q\tilde\Phi$, and suppose that the action is invariant in the local sense that
 $$
-Q S=\int d^4x\;\langle\tilde\nabla,\tilde j\rangle_{\natural}(x)
+Q S=\int d^4x\;\langle\tilde\nabla,\tilde J\rangle_{\natural}(x)
 $$
 for some current $j^\mu$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
@@ -155,11 +155,11 @@ $$
 $$
 where the second equality uses the **invariance of the measure**, $\int\mathcal{D}\tilde\Phi\,Q(\;\cdot\;)=0$ — the assumption that the measure, and not only the action, is invariant. Then
 $$
-\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4x\,\langle\tilde\nabla,\tilde j\rangle_{\natural}\Big\rangle=0 .
+\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4x\,\langle\tilde\nabla,\tilde J\rangle_{\natural}\Big\rangle=0 .
 $$
 For $F=1$ this is the statement that the current is conserved inside the vacuum:
 $$
-\Big\langle\,\langle\tilde\nabla,\tilde j\rangle_{\natural}(x)\Big\rangle=0 .
+\Big\langle\,\langle\tilde\nabla,\tilde J\rangle_{\natural}(x)\Big\rangle=0 .
 $$
 For $F$ a product of fields the identity relates the divergence of the current to the variation of the product, and when $Q$ is a local generator, $Q=\int d^4x\,q(x)$, the identity holds locally as
 $$

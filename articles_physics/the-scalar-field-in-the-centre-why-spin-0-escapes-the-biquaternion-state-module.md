@@ -194,7 +194,7 @@ $$
 under the rotation subgroup, where the trivial piece is the scalar channel. The trivial representation appears here, in the **bilinear** combination of two spinors, not as a submodule of either factor; the decomposition, however, is a statement about the rotation subgroup only, because under the full Lorentz group $S\otimes\bar{S}=(\tfrac{1}{2},\tfrac{1}{2})$ is irreducible and contains no invariant, and the Lorentz scalars come instead from the antisymmetric square $\Lambda^2 S$ (the symplectic contraction $\varepsilon$) and from the mixed left-right pairing $b$. A scalar is therefore not an element of the state module but a scalar-valued pairing of two module elements. The bilinear
 
 $$
-\tilde{\rho}=\tilde{\psi}\tilde{\chi}^{*}\in\mathbb{M}_+
+\tilde{Ϛ}=\tilde{\psi}\tilde{\chi}^{*}\in\mathbb{M}_+
 $$
 
 is the four-vector channel; it is Hermitian, and its diagonal case $\tilde{\chi}=\tilde{\psi}$ gives the positive element whose trace is the conventional density.
@@ -261,22 +261,22 @@ with the biquaternion writing carrying no additional content. This is the honest
 The plane-wave solutions exhibit the same point. Writing the four-wavevector in the material sector,
 
 $$
-\tilde{K}=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,
+\tilde P/\hbar=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,
 \qquad
 \tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
 $$
 
-the phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$, a real central element, and the positive-frequency solution is
+the phase is the scalar part $\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$, a real central element, and the positive-frequency solution is
 
 $$
-\tilde{\Phi}=\phi_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))\,e_t
+\tilde{\Phi}=\phi_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar)\,e_t
 =\phi_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))\,e_t .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
 
 $$
-\langle\tilde{K}\rangle_{\natural}=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\vec k^2=-\frac{m^2c^2}{\hbar^2}
+\langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=-\frac{\omega^2}{c^2}+\vec k^2=-\frac{m^2c^2}{\hbar^2}
 \quad\Longleftrightarrow\quad
 \omega^2=c^2\vec k^2+\frac{m^2c^4}{\hbar^2} ,
 $$
@@ -366,7 +366,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $J_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_t$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions; Lorentz group |
 | $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
-| $\tilde{K}=i\omega/c\,e_t+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |
+| $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, central and scalar |
@@ -374,7 +374,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\sigma=\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$ | Scalar part of the module bilinear; a four-vector component, not a Lorentz scalar |
 | $\varepsilon(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{T}\epsilon\tilde{\chi}$ | Symplectic pairing; Lorentz scalar of two same-chirality spinors |
 | $\mathfrak{b}(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi}$ | Mixed pairing; Dirac scalar of a left–right spinor pair |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

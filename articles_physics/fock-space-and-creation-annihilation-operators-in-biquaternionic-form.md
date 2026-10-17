@@ -107,10 +107,10 @@ None of the operators in this section is new. They are displayed together for on
 
 ## The Number Operator and the Born Rule
 
-For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ is Hermitian; and for a state $\tilde\rho\in\mathbb{M}_+$ that is positive and of trace one, the trace formula gives
+For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ is Hermitian; and for a state $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive and of trace one, the trace formula gives
 
 $$
-\langle N\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\,N)=2\,\mathrm{Sc}(\tilde\rho\,N).
+\langle N\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,N)=2\,\mathrm{Sc}(\tilde{Ϛ}\,N).
 $$
 
 For one fermionic mode, whose explicit realization is given in the next section, $N$ is an **idempotent** rather than a counting operator: its spectrum is $\{0,1\}$, and $N^2=N$ is the algebraic statement that a mode is either empty or occupied. The trace formula then returns the occupation probability of the mode, which is the Born rule for the two-valued observable "is the mode occupied". For a field, $N$ acts on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$; the trace formula applies to its finite-dimensional truncations only. The distinction is the same one the whole article turns on, and it is visible here in the simplest possible object.

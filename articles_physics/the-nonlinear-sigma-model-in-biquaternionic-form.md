@@ -189,7 +189,7 @@ $$
 
 for either current. The identity is algebraic, not dynamical: it is the statement that the components of $\tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ are a pure gauge connection, so the field strength of the connection vanishes, and the dynamics of the group-valued field is that of a connection constrained to be pure gauge. The equation of motion of the principal chiral model is the conservation of the flat current,
 $$
-\langle\tilde\nabla,\tilde j^{R}\rangle_{\natural}=0 ,
+\langle\tilde\nabla,\tilde J^{R}\rangle_{\natural}=0 ,
 $$
 and the two statements together are the content of the model: flatness is what distinguishes the group-valued field from a general algebra-valued gauge potential.
 

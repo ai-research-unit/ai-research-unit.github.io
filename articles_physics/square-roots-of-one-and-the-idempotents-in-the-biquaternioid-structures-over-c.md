@@ -621,7 +621,7 @@ ball are exactly the states that are not idempotents.
 
 **A measurement has idempotents for outcomes.** *The Measurement Problem in Algebraic Form* and *Quantum
 Channels and the Reversible/Irreversible Dichotomy* read the sandwich
-$\tilde\rho\mapsto\tilde P\tilde\rho\tilde P$ as the projective measurement, with the idempotent
+$\tilde{Ϛ}\mapsto\tilde P\tilde{Ϛ}\tilde P$ as the projective measurement, with the idempotent
 $\tilde P$ one outcome and the complement $e_t-\tilde P$ the other. The complementation of this article is
 the algebra's two-outcome event: the pair $(\tilde P,e_t-\tilde P)$ is a complete measurement, and the
 failure of the complementation for the gauge family says that a gauge idempotent does not by itself define
@@ -658,11 +658,11 @@ the coarse-graining maps and the polarisation sphere.
 
 **The deviation from idempotency is the entropy coordinate.** *Von Neumann Entropy and the Biquaternion
 Norm* and *Coarse-Graining and the Biquaternion Entropy Functional* compute the deviation from idempotency
-of a state $\tilde\rho=\tfrac12(e_t+i\vec r)$ and find it to be a single scalar,
+of a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and find it to be a single scalar,
 
 $$
-\mathrm{Sc}\bigl(\tilde\rho^{2}-\tilde\rho\bigr)=\tfrac14\bigl(\lvert\vec r\rvert^{2}-1\bigr)
-=-\langle\tilde\rho\rangle_{\natural},
+\mathrm{Sc}\bigl(\tilde{Ϛ}^{2}-\tilde{Ϛ}\bigr)=\tfrac14\bigl(\lvert\vec r\rvert^{2}-1\bigr)
+=-\langle\tilde{Ϛ}\rangle_{\natural},
 $$
 
 so that purity, idempotency and the vanishing of the biquaternion norm are three interpretations of one
@@ -698,7 +698,7 @@ neighbours, and the two readings agree through a **reciprocity**. The classical 
 state's spectral family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
 
 $$
-g_{rr}=\frac{1}{1-|\vec r|^{2}}=\frac{1}{4\,\mathrm{Sc}\,\langle\tilde\rho\rangle_{\natural}} .
+g_{rr}=\frac{1}{1-|\vec r|^{2}}=\frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}} .
 $$
 
 It is minimal at the maximally mixed state, where the norm is largest, and it **diverges on the
@@ -881,7 +881,7 @@ chirality splitting.
   algebra being central simple; the sign of its square fixes the KO-dimension of the triple, and here
   $J^{2}=+e_t$ (*The Spectral Triple of the Biquaternion Algebra*).
 - The idempotents are the zero-entropy states: the deviation
-  $\mathrm{Sc}(\tilde\rho^{2}-\tilde\rho)=\tfrac14(\lvert\vec r\rvert^{2}-1)$ is minus the biquaternion
+  $\mathrm{Sc}(\tilde{Ϛ}^{2}-\tilde{Ϛ})=\tfrac14(\lvert\vec r\rvert^{2}-1)$ is minus the biquaternion
   norm, and the entropy is a monotone function of it that vanishes exactly on the idempotents. The sphere
   of idempotents of $\mathbb{M}_+$ is at once the pure-qubit sphere, the polarisation sphere and the
   boundary of the state cone.

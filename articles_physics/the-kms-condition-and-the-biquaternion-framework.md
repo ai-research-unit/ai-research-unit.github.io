@@ -156,9 +156,9 @@ The thermal formalism downstream of the KMS condition is usually reached by a Wi
 
 **The alternative route, which needs no rotation.** The imaginary direction is already in the material sector, so the thermal construction can stay there. The wave biquaternion is kept as the material element
 $$
-\tilde{k}_E = i\omega_n e_t + \vec p \in \mathbb{M}_- ,
+\tilde{P}_E = i\omega_n e_t + \vec p \in \mathbb{M}_- ,
 $$
-and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $\langle\tilde{k}_E\rangle_{\natural} = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
+and its positivity is carried by the **Hermitian form**, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $\langle\tilde{P}_E\rangle_{\natural} = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
 
 **Where the positivity comes from.** The thermal correlator's positivity is not an extra assumption of the thermal theory: it is the central-root case of the Bochner theorem for the biquaternion transform. The kernel $\exp(i\omega_n\tau)$ is the exponential of the central root $\rho = i$, which is skew-adjoint, $\rho^{*}=-\rho$, and degenerate, and skew-adjointness is exactly the criterion under which the theorem holds — the central imaginary and the real roots being the roots for which the transform of a positive measure is positive definite (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*).
 
@@ -244,7 +244,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $\alpha_t$ | Heisenberg evolution |
 | $F_{AB}(t)$ | Thermal correlation function (complex-valued) |
 | $F_{AB}(t + i\beta) = F_{BA}(-t)$ | KMS condition |
-| $\tilde{k}_E = i\omega_n e_t+\vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |
+| $\tilde{P}_E = i\omega_n e_t+\vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ | Hermitian form; carries the thermal positivity without a rotation |
 | $K = -\log \rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |

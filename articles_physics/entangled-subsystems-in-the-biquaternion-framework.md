@@ -97,13 +97,13 @@ This is the biquaternion expression of EPR steering. The collapse of the joint s
 The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{\rho}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}),
 $$
 
-where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{\rho} = \sum_i a_i\otimes b_i$ of the tensor product,
+where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{Ϛ} = \sum_i a_i\otimes b_i$ of the tensor product,
 
 $$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{Ϛ}).
 $$
 
 No-signaling is not a dynamical theorem in this interpretation; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.

@@ -12,7 +12,7 @@ This article treats the Majorana representation in the biquaternion algebra $\ma
 
 The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2j=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
@@ -221,7 +221,7 @@ Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\T
 
 ### Mixed States Have No Constellation
 
-The Majorana representation is a representation of **pure** states; a mixed state $\tilde{\rho} = \tfrac12(e_t+i\vec r)$ with $|\vec r| < 1$ is an interior point of the Bloch ball and has no unit vector to serve as a star. The constellation picture and the purity condition are therefore tied: the stars live on the boundary of the Bloch ball, and the interior is a convex mixture of boundary points in the usual way. This is the spin-1/2 statement of the general fact that the Majorana representation is a pure-state construction.
+The Majorana representation is a representation of **pure** states; a mixed state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $|\vec r| < 1$ is an interior point of the Bloch ball and has no unit vector to serve as a star. The constellation picture and the purity condition are therefore tied: the stars live on the boundary of the Bloch ball, and the interior is a convex mixture of boundary points in the usual way. This is the spin-1/2 statement of the general fact that the Majorana representation is a pure-state construction.
 
 ## What the Algebra Adds and What It Does Not
 

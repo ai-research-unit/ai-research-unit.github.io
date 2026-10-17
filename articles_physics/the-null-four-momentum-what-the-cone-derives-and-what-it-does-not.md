@@ -75,7 +75,7 @@ What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is no
 
 ### The propagation speed is $c$, and is frame-independent
 
-For a four-wavevector $\tilde{K}=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \langle\tilde{K}\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde{K}\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
+For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
 
 What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}$ of unit norm acts on the sector, and the norm is multiplicative, so
 
@@ -218,7 +218,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $m^2c^2=-\langle\tilde{P}\rangle_{\natural}$ | Mass as the value of the invariant |
 | $E=c\lvert\vec p\rvert$ | The null shell, $m=0$; equivalently $\langle\tilde{P}\rangle_{\natural}=0$ |
 | $v=\lvert\vec p\rvert c^2/E$ | Speed from the shell; $v=c$ exactly at $m=0$ |
-| $\tilde{K}=i\frac{\omega}{c}e_t+\vec k$ | Four-wavevector; $\langle\tilde{K}\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
+| $\tilde P=i\frac{\omega}{c}e_t+\vec k$ | Four-wavevector; $\langle\tilde P\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
 | $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ |

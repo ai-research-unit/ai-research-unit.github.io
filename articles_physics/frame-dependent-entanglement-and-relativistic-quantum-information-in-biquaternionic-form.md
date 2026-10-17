@@ -56,7 +56,7 @@ Three measures are used below, all standard.
 $$
 C(|\Psi\rangle) = \bigl|\langle\Psi|\,\tilde{\Psi}\,|\Psi^{*}\rangle\bigr| = 2\,s_1s_2 ,
 $$
-vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{\rho}$ it is $C(\tilde{\rho}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{\rho}^{1/2}\,\tilde{\Psi}\tilde{\rho}^{*}\tilde{\Psi}\,\tilde{\rho}^{1/2}$.
+vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}$ it is $C(\tilde{Ϛ}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}^{1/2}\,\tilde{\Psi}\tilde{Ϛ}^{*}\tilde{\Psi}\,\tilde{Ϛ}^{1/2}$.
 
 **Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
 
@@ -117,8 +117,8 @@ $$
 $$
 so the boost is a **controlled rotation**: it rotates the spin by an amount that depends on the momentum. When the states $|\tilde{V}_{j,i}\rangle$ are orthogonal, tracing the momentum leaves the spin state
 $$
-\tilde{\rho}_{\mathrm{spin}} \ \longmapsto\
-\sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}_{\mathrm{spin},i}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger ,
+\tilde{Ϛ}_{\mathrm{spin}} \ \longmapsto\
+\sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{Ϛ}_{\mathrm{spin},i}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger ,
 $$
 a **mixed-unitary channel** on the spin factor whose Kraus operators are the branch Wigner rotations. Two features are immediate and are the whole of the mechanism.
 
@@ -133,15 +133,15 @@ $$
 $$
 rotations about a common axis $\vec u_{\mathrm r}$ by opposite angles, and the channel is
 $$
-\tilde{\rho}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{\rho}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{\rho}_A\tilde{W}_{A,-}^{*}\bigr).
+\tilde{Ϛ}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{Ϛ}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{Ϛ}_A\tilde{W}_{A,-}^{*}\bigr).
 $$
-Writing the Bloch vector of $\tilde{\rho}_A$ as $\vec r = r_\parallel\vec u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
+Writing the Bloch vector of $\tilde{Ϛ}_A$ as $\vec r = r_\parallel\vec u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
 r_\parallel \ \longmapsto\ r_\parallel, \qquad \vec r_\perp \ \longmapsto\ \cos\alpha\ \vec r_\perp ,
 $$
 so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\vec u_{\mathrm r}$; for $\vec r\perp\vec u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
 $$
-S(\tilde{\rho}_A') = h\!\left(\frac{1+r'}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
+S(\tilde{Ϛ}_A') = h\!\left(\frac{1+r'}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
 which for a purely transverse initial Bloch vector is $h((1+\cos\alpha)/2)$, and which is the entropy of the spin–momentum correlation the boost has created.
 
@@ -153,7 +153,7 @@ $$
 $$
 to be a maximally entangled state of $A$ and $B$, let $A$ carry the symmetric two-branch momentum superposition with $\theta = 0.8$ and speed $0.5c$, and let $B$ carry a sharp momentum along the boost axis. Boosting with rapidity $\psi$ gives, for the spin state after tracing the momentum,
 
-| $\psi$ | $C(\tilde{\rho}_{\mathrm{spin}})$ | $S(\tilde{\rho}_{\mathrm{spin}})$ |
+| $\psi$ | $C(\tilde{Ϛ}_{\mathrm{spin}})$ | $S(\tilde{Ϛ}_{\mathrm{spin}})$ |
 |---:|---:|---:|
 | $0$ | $1.00000000$ | $0.000000$ |
 | $0.5$ | $0.99514440$ | $0.024587$ |
@@ -240,7 +240,7 @@ with the coefficient $1/2$ confirmed by a numerical limit in which both rapiditi
 
 The framework's contribution to this subject is a structural one, and it can be stated in three points. First, the two objects whose mismatch produces the frame dependence have a single algebraic locus. The Wigner rotation is the compact, material rotation generated by the non-compact, informational boosts: it is the little-group element $\tilde{W}\in SU(2)\subset\mathbb{B}$ extracted from a product of unit-norm biquaternions, and the momentum dependence of $\tilde{W}$ is the momentum dependence of a rotor, i.e. of an element of the same algebra that carries the spin. There is no second structure to be introduced: the boost and the spin rotation are elements of one algebra, and their composition is algebra multiplication.
 
-Second, the entanglement measures are pairings. The correlation function, the concurrence, and the reduced state are all computed from the tensor-product trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$ and the partial trace, and the relativistic action is a congruence on the factors. Read this way, the frame dependence of entanglement is a statement about which pairings the congruence preserves: the full pairing is preserved, the reduced pairing is not, and the difference is exactly the information the boost moves from the spin factor into the spin–momentum correlation.
+Second, the entanglement measures are pairings. The correlation function, the concurrence, and the reduced state are all computed from the tensor-product trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$ and the partial trace, and the relativistic action is a congruence on the factors. Read this way, the frame dependence of entanglement is a statement about which pairings the congruence preserves: the full pairing is preserved, the reduced pairing is not, and the difference is exactly the information the boost moves from the spin factor into the spin–momentum correlation.
 
 Third, the invariant is a spinor bilinear form. The symplectic concurrence that survives the boost is the algebraic invariant of the spinor representation, and its non-invariance after normalization is the algebraic trace of the wave-packet character of the state. This is a genuinely biquaternionic statement, because it is the multiplication of spinors by biquaternions that produces both the invariant and its normalization; the framework makes the split between them explicit in a way that the operator formalism states only through the transformation of a density matrix.
 
@@ -250,7 +250,7 @@ For two particles of definite four-velocity, a Lorentz transformation acts on th
 
 For a momentum superposition, the boost acts branch by branch and is a momentum-controlled rotation; tracing the momentum leaves the spin state acted on by the mixed-unitary channel
 $$
-\tilde{\rho}\ \longmapsto\ \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{\rho}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
+\tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{Ϛ}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
 $$
 The channel is unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r')/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
 

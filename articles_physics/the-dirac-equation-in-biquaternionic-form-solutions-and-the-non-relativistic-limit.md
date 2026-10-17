@@ -8,7 +8,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-together with its massless limit $\tilde{\nabla}\tilde{\Psi} = 0$ and the Klein–Gordon reduction $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. It established the algebraic setting — the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the even subalgebra of the Clifford algebra, the biquaternionic gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ as the biquaternion form of the Dirac operator, the action of the equation on the spinor module of $\mathbb{B}$, and the plane-wave ansatz $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right)$ with the mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2c^2/\hbar^2$. It closed by noting that the massive solution space is four-dimensional over $\mathbb{C}$, corresponding to the four components of the Dirac spinor.
+together with its massless limit $\tilde{\nabla}\tilde{\Psi} = 0$ and the Klein–Gordon reduction $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. It established the algebraic setting — the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the even subalgebra of the Clifford algebra, the biquaternionic gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ as the biquaternion form of the Dirac operator, the action of the equation on the spinor module of $\mathbb{B}$, and the plane-wave ansatz $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right)$ with the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. It closed by noting that the massive solution space is four-dimensional over $\mathbb{C}$, corresponding to the four components of the Dirac spinor.
 
 That article deliberately worked at a summary level. It identified the solution classes and the mass-shell condition, but it did not construct the solutions, did not fix their normalization, did not write the spinor bilinears, and did not carry the equation into the non-relativistic regime. The purpose of the present article is to supply exactly those four things.
 
@@ -152,21 +152,21 @@ with $\eta^{(r){}^{*}}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m}
 
 ### The biquaternion mass shell
 
-The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right)$, carries the wave biquaternion $\tilde{k}$.
+The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right)$, carries the wave biquaternion $\tilde{P}/\hbar$.
 
-With the four-wavevector of the companion article written as $\tilde{K} = i\omega/c\,e_t + \vec k$, the biquaternion norm is
+With the four-wavevector of the companion article written as $\tilde P/\hbar = i\omega/c\,e_t + \vec k$, the biquaternion norm is
 
 $$
-\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 .
+\langle\tilde P/\hbar\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = \left(\frac{i\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
 The mass shell $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$, which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$, is therefore exactly the companion article's condition
 
 $$
-\tilde{k}\tilde{k}^{\natural} = -\frac{m^2c^2}{\hbar^2}.
+\tilde P\tilde P^{\natural}=-m^2c^2.
 $$
 
-The two roots $\omega = \pm\sqrt{c^2\vec k^2 + m^2c^4/\hbar^2}$ are the two frequency branches, so the positive- and negative-frequency solutions above are the two branches of the single biquaternionic mass-shell condition. The polarization equations $i\tilde{k}\tilde{\Psi}_0^R = m\tilde{\Psi}_0^L$, $i\tilde{k}^{\natural}\tilde{\Psi}_0^L = m\tilde{\Psi}_0^R$ are the algebraic form of the momentum-space equation; their solution space is the four-dimensional space spanned by the $w^{(r)}$ and $v^{(r)}$ — two spin states for each of the two frequency branches.
+The two roots $\omega = \pm\sqrt{c^2\vec k^2 + m^2c^4/\hbar^2}$ are the two frequency branches, so the positive- and negative-frequency solutions above are the two branches of the single biquaternionic mass-shell condition. The polarization equations $i\tilde{P}/\hbar\tilde{\Psi}_0^R = m\tilde{\Psi}_0^L$, $i\tilde{P}^{\natural}/\hbar\tilde{\Psi}_0^L = m\tilde{\Psi}_0^R$ are the algebraic form of the momentum-space equation; their solution space is the four-dimensional space spanned by the $w^{(r)}$ and $v^{(r)}$ — two spin states for each of the two frequency branches.
 
 ### Spin structure and helicity
 
@@ -413,7 +413,7 @@ The spin–magnetic coupling is therefore an observable of the informational sec
 The Pauli spinor $\tilde{\phi}$ is a two-component object, and its associated spin state is the idempotent
 
 $$
-\tilde{\rho}_\phi = \frac{\tilde{\phi}\,\tilde{\phi}^{*}}{\tilde{\phi}^{*}\tilde{\phi}} = \tfrac{1}{2}\left(e_t + i\,\vec u\right) \in \mathbb{M}_+ ,
+\tilde{Ϛ}_\phi = \frac{\tilde{\phi}\,\tilde{\phi}^{*}}{\tilde{\phi}^{*}\tilde{\phi}} = \tfrac{1}{2}\left(e_t + i\,\vec u\right) \in \mathbb{M}_+ ,
 $$
 
 with $\vec u$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian element $\tilde{H}_P = \frac{(p-ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m} i\vec B \in \mathbb{M}_+$, and the spin precesses by the corresponding rotor conjugation. For a uniform magnetic field, only the last term contributes to the spin motion, and the precession frequency is the Larmor frequency $\omega_L = ϙB/m$ (natural units), or $\omega_L = g\,ϙB/2m$ in the g-form; up to the sign of $ϙ$ this is the familiar spin precession. The two-component spinor description, the Pauli equation, and the precession are thus all consequences of the single biquaternionic Dirac equation.
@@ -437,7 +437,7 @@ select the two components, and the biquaternion algebra contains their algebraic
 
 ## Summary
 
-The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2c^2/\hbar^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.
+The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.
 
 The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_t + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 
@@ -461,9 +461,9 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\tilde{\Psi}$ | Biquaternion-valued Dirac field |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 
-| $\tilde{k} = i k_0 e_t + \vec k$ | Wave biquaternion |
+| $\tilde{P}/\hbar = i k_0 e_t + \vec k$ | Wave biquaternion |
 
-| $\tilde{k}\tilde{k}^{\natural} = -m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
+| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi = (\psi_L,\psi_R)$ | Dirac spinor in the chiral basis |
 | $\gamma^\mu$, $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; note $g = -\eta$ |

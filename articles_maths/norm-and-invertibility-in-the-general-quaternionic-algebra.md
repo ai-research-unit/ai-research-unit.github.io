@@ -171,7 +171,7 @@ The unit of the general quaternionic product is settled in *Introduction to the 
 
 Relative to a left unit $e_t$ the two halves of the inverse equation remain meaningful, and they are the definition of the one-sided invertibility of the product.
 
-**Definition.** Let $\tilde Q_1\in\mathbb{B}$. An element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2=e_t$ is a **right inverse** of $\tilde Q_1$ relative to $e_t$, and an element $\tilde L$ with $\tilde L\star\tilde Q_1=e_t$ is a **left inverse** of $\tilde Q_1$ relative to $e_t$. The element $\tilde Q_1$ is **right-invertible** when it has a right inverse and **left-invertible** when it has a left inverse.
+**Definition.** Let $\tilde Q_1\in\mathbb{B}$. An element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2=e_t$ is a **right inverse** of $\tilde Q_1$ relative to $e_t$, and an element $\tilde Q_3$ with $\tilde Q_3\star\tilde Q_1=e_t$ is a **left inverse** of $\tilde Q_1$ relative to $e_t$. The element $\tilde Q_1$ is **right-invertible** when it has a right inverse and **left-invertible** when it has a left inverse.
 
 **Theorem (the one-sided equations).** For every $\tilde Q_1\in\mathbb{B}$ the two equations
 
@@ -225,14 +225,14 @@ $$
 \tilde Q^{-1}=\tilde Q^{\natural},
 $$
 
-the quaternion conjugate; this is the case of every rotor. The dagger coincides with it exactly on the unitary elements, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor with real coefficients has $\tilde R^{-1}=\tilde R^{\natural}=\tilde R^{*}$, while a boost rotor is Hermitian, $\tilde B^{*}=\tilde B$, so its dagger is itself and not its inverse,
+the quaternion conjugate; this is the case of every rotor. The dagger coincides with it exactly on the unitary elements, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor with real coefficients has $\tilde u^{-1}=\tilde u^{\natural}=\tilde u^{*}$, while a boost rotor is Hermitian, $\tilde B^{*}=\tilde B$, so its dagger is itself and not its inverse,
 
 $$
 \tilde B = \cosh\frac{\psi}{2}e_t + i\sinh\frac{\psi}{2}\,\vec e_z, \qquad
 \tilde B^{-1} = \tilde B^{\natural} = \cosh\frac{\psi}{2}e_t - i\sinh\frac{\psi}{2}\,\vec e_z \neq \tilde B^{*} = \tilde B .
 $$
 
-The two operations are therefore interchangeable in the rotation case and must be kept apart in the boost case; the distinction is the algebraic form of the statement that the action $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{*}$ is an inner automorphism in the unitary sector and not elsewhere (*Biquaternion Rotations and Lorentz Transformations*; *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*; *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*).
+The two operations are therefore interchangeable in the rotation case and must be kept apart in the boost case; the distinction is the algebraic form of the statement that the action $\tilde Q\mapsto\tilde u\tilde Q\tilde u^{*}$ is an inner automorphism in the unitary sector and not elsewhere (*Biquaternion Rotations and Lorentz Transformations*; *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*; *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*).
 
 ## The Three-Way Classification
 

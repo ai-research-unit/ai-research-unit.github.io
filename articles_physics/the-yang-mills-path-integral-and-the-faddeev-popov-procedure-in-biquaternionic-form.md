@@ -28,7 +28,7 @@ $$
 \qquad
 T_a=\tfrac12 e_a ,\ \ [T_a,T_b]=\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
-with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, the coupling $\kappa=ϙ/\hbar$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
+with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, the coupling $\kappa=ϙ/\hbar$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
 
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the gauge-fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
@@ -47,7 +47,7 @@ The Yang–Mills action of the framework is the gauge-invariant density of the c
 $$
 S_{\mathrm{YM}}[\mathcal{A}]=-\int d^4x\,\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural},
 \qquad
-\tilde{\mathcal{F}}=\tilde\nabla\tilde{\mathcal{A}}+\tfrac{i\kappa}{2}\,[\tilde{\mathcal{A}},\tilde{\mathcal{A}}],\qquad \tilde{\mathcal{A}}=\sum_a\tilde{\mathcal{A}}^aT^a .
+\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}\,[\mathcal{A},\mathcal{A}],\qquad \mathcal{A}=\sum_a\mathcal{A}^aT^a .
 $$
 The trace is the matrix trace on the $\mathrm{SU}(2)$ factor, taken in the defining two-dimensional representation; the combination is invariant because $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ and the trace is cyclic. Under a local gauge transformation $\tilde U(\tilde{Q})$, the connection shifts by an inhomogeneous term,
 $$
@@ -288,7 +288,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $f^{abc}=2\varepsilon^{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
 | $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Connection and coupling |
 | $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
-| $\tilde{\mathcal{F}}=\tilde\nabla\tilde{\mathcal{A}}+\tfrac{i\kappa}{2}[\tilde{\mathcal{A}},\tilde{\mathcal{A}}]$ | Non-abelian curvature |
+| $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_\mu^a$ | Measure on $\mathrm{SU}(2)$-valued configurations |
 | $G^a[\mathcal{A}]=\partial/\partial Q_\mu\,\mathcal{A}^{a\mu}-\omega^a$ | Lorenz gauge-fixing condition |
@@ -305,7 +305,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | Slavnov–Taylor identities | Quantum content of gauge invariance in the non-abelian theory |
 | Gribov copies, Gribov horizon | Multiple solutions of the gauge condition; zeros of $M$ |
 | $b_0=\tfrac{11}{3}C_2(G)$ | One-loop coefficient; $C_2(G)=2$ for $SU(2)$ |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
 
 ## Further Reading
 

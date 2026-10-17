@@ -32,7 +32,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 ,
 $$
 
-the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -184,7 +184,7 @@ $$
 Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega'$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{B}$ and their gauge transforms, the relative entropies therefore agree:
 
 $$
-S(\tilde{\rho}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{B}}) .
+S(\tilde{Ϛ}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{B}}) .
 $$
 
 This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
@@ -193,12 +193,12 @@ Three consequences of the invariance spell out the redundancy.
 
 **No information measure can detect the orbit.** Relative entropy is the sharpest distinguishability measure of the theory, and it is constant along the orbit. Whatever else the orbit is, it is not a difference of states.
 
-**The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under unitary conjugation inherits it: the spectrum of $\tilde{\rho}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
+**The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
 
-**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{\rho}\in\mathbb{M}_+$ its action is
+**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}\in\mathbb{M}_+$ its action is
 
 $$
-\tilde{\rho} \longmapsto \lambda\,\tilde{\rho}\,\lambda^\dagger = |\lambda|^2\tilde{\rho} = \tilde{\rho},
+\tilde{Ϛ} \longmapsto \lambda\,\tilde{Ϛ}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ} = \tilde{Ϛ},
 $$
 
 so the state is not merely unitarily equivalent to its gauge transform — it is *literally unchanged*. The central phase acts trivially on the Hermitian sector. The redundancy is the statement that the algebra carries no Hermitian observable conjugate to its central phase, and therefore no informational content located in the phase direction.
@@ -296,10 +296,10 @@ The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}
 Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
 $$
-S(\tilde{\rho}_{\tilde{A}'}\|\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\|\tilde{\sigma}_{\tilde{B}}).
+S(\tilde{Ϛ}_{\tilde{A}'}\|\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{\sigma}_{\tilde{B}}).
 $$
 
-For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{M}_+$ by $\tilde{\rho}\mapsto|\lambda|^2\tilde{\rho} = \tilde{\rho}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
+For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{M}_+$ by $\tilde{Ϛ}\mapsto|\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
 
 The orbit's only non-empty content is global. A connection can be gauged to zero at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the gauge orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.
 
@@ -327,9 +327,9 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ | Abelian curvature components |
 | $\tilde U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$ | Holonomy; global obstruction |
 | $W(C) = \mathrm{Tr}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
-| $\tilde{\rho} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
-| $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |
+| $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
+| $S(\tilde{Ϛ}\|\tilde{\sigma})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

@@ -16,7 +16,7 @@ and that this is not an extra assumption but the reflection in the state space o
 
 The article develops five things.
 
-- **The one-particle space and its two forms.** The module $S=\mathbb{C}^2$ is the minimal left ideal $\mathbb{B}\tilde\varepsilon$; on it sit the positive-definite Hermitian form, which is the Hilbert-space form of the Fock construction, and the isotropic biquaternion norm $\langle\cdot\rangle_{\natural}$, which is the algebra's own. The two must not be interchanged.
+- **The one-particle space and its two forms.** The module $S=\mathbb{C}^2$ is the minimal left ideal $\mathbb{B}\tilde\Pi_+$; on it sit the positive-definite Hermitian form, which is the Hilbert-space form of the Fock construction, and the isotropic biquaternion norm $\langle\cdot\rangle_{\natural}$, which is the algebra's own. The two must not be interchanged.
 - **The exterior algebra.** Occupation-number states, the wedge product, the Koszul sign, and the reason the Kleinian sign appears in the state space rather than in the operators.
 - **The Lorentz content.** $\Lambda S$ is the reducible representation $\Gamma(\rho)$; its decomposition into irreducibles is computed and contains exactly one $\tfrac12$, one vacuum, and one singlet. The $2\pi$ rotation acts as $(-1)^\text{degree}$, tying the state-space grading to the parity of the number operator.
 - **The functor $\Gamma$ and the grading.** $\Gamma(-I)=(-1)^F$ is derived and recomputed. The Fock space is $\mathbb{Z}/2$-graded, and the grading is the one the observable algebra commutes with.
@@ -24,23 +24,25 @@ The article develops five things.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
 
-**Conventions.** From the companion articles and the conventions article: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ and $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the trace $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$ at the Clifford level, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ at the $ict$ level. All statements about the finite algebra are in $\mathbb{B}$; all statements about the field are on the module.
+**Conventions.** From the companion articles and the conventions article: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ and $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$ at the Clifford level, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ at the $ict$ level. All statements about the finite algebra are in $\mathbb{B}$; all statements about the field are on the module.
 
 ## The One-Particle Space
 
 The one-particle space of the biquaternion Dirac field is the spinor module $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts irreducibly and which the dictionary companion identifies with the minimal left ideals of $\mathbb{B}$:
 
 $$
-S\;\cong\;\mathbb{B}\tilde\varepsilon_+ ,
+S\;\cong\;\mathbb{B}\tilde\Pi_+ ,
 \qquad
-\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z),
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),
 \qquad
-\tilde\varepsilon_+^2=\tilde\varepsilon_+,
+\tilde\Pi_+ + \tilde\Pi_- = e_t ,
 \qquad
-\tilde\varepsilon_+^{*}=\tilde\varepsilon_+ .
+\tilde\Pi_\pm^2=\tilde\Pi_\pm ,
+\qquad
+\tilde\Pi_\pm^{*}=\tilde\Pi_\pm .
 $$
 
-The idempotent is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\varepsilon_+^2-\tilde\varepsilon_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\varepsilon_+)=2$.
+The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as §*The Idempotent Convention* requires.
 
 Two forms live on $S$, and the distinction is one of the framework's standing conventions.
 
@@ -52,9 +54,9 @@ $$
 
 complex-valued, $\mathbb{C}$-antilinear in the first argument and positive definite. This is the Hilbert-space form of the Fock construction, and it is the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's biquaternion norm.
 
-**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\varepsilon_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
+**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\Pi_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
 
-A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\varepsilon_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
+A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\Pi_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
 
 ### The Lorentz Action and the Covering Sign
 
@@ -245,7 +247,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 **The algebra's own.**
 
-- *The one-particle space as a minimal left ideal* $S=\mathbb{B}\tilde\varepsilon_+$, with the two structures on it: the Hermitian form for probabilities and the antisymmetric form for invariants, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it. The distinction is a framework convention and is kept explicit.
+- *The one-particle space as a minimal left ideal* $S=\mathbb{B}\tilde\Pi_+$, with the two structures on it: the Hermitian form for probabilities and the antisymmetric form for invariants, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it. The distinction is a framework convention and is kept explicit.
 - *The one-mode identification of the state space with the algebra's own spin structure*: $\Lambda S$ is four-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=i\vec e_z$ are all statements about $\mathbb{B}$, while over the two spin states of one momentum the state space is $\Lambda S$ itself.
 - *The sector assignment of states and observables*, both in $\mathbb{M}_+$, with the trace pairing as the Born rule.
 
@@ -263,7 +265,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 ## Summary
 
-The fermionic Fock space of the biquaternion spin-$\tfrac12$ field is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states of one momentum; the antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\varepsilon_+$ with $\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
+The fermionic Fock space of the biquaternion spin-$\tfrac12$ field is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states of one momentum; the antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
 
 The occupation-number basis $|0\rangle,|\!\uparrow\rangle,|\!\downarrow\rangle,|\!\uparrow\downarrow\rangle$ has the wedge product with the Koszul sign, which yields Pauli exclusion. The Lorentz content is
 
@@ -281,8 +283,8 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 
 | Symbol | Meaning |
 |---|---|
-| $S=\mathbb{C}^2=\mathbb{B}\tilde\varepsilon_+$ | One-particle spinor module (minimal left ideal) |
-| $\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z)$ | Primitive Hermitian idempotent, $\tilde\varepsilon_+^2=\tilde\varepsilon_+$ |
+| $S=\mathbb{C}^2=\mathbb{B}\tilde\Pi_+$ | One-particle spinor module (minimal left ideal) |
+| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Primitive Hermitian idempotent, $\tilde\Pi_+^2=\tilde\Pi_+$ |
 | $\langle\xi,\eta\rangle=\xi^{*}\eta$ | Positive-definite Hermitian form on $S$ (invariant on $SU(2)$ only) |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm on $\mathbb{B}$; signature $(3,1)$ on $\mathbb{M}_-$, $(1,3)$ on $\mathbb{M}_+$, vanishing on the left ideal |
 | $\varepsilon=i\sigma_2=\Phi(-\vec e_y)$ | Invariant antisymmetric form, $U^{\mathsf T}\varepsilon U=\varepsilon$ |

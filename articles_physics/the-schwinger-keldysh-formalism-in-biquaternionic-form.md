@@ -188,7 +188,7 @@ The generating-functional structure of the previous articles carries over with t
 
 **The contour generating functional.** Doubling the source,
 $$
-\tilde J = \begin{pmatrix}\tilde J_+\\\tilde J_-\end{pmatrix},
+J = \begin{pmatrix}\tilde J_+\\\tilde J_-\end{pmatrix},
 \qquad
 Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\exp(\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)) ,
 $$

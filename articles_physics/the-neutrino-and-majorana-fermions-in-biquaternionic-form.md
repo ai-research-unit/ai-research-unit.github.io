@@ -24,7 +24,7 @@ $$
 \gamma^k=\begin{pmatrix}0&\sigma^k\\ -\sigma^k&0\end{pmatrix},\qquad k=1,2,3,
 $$
 
-with **signature** $g=\mathrm{diag}(+,-,-,-)$, so that $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ and $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=\mathrm{diag}(-I_2,I_2)$. This is the basis and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed in it below. We record that the signature and the basis must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+with **signature** $g=\mathrm{diag}(+,-,-,-)$, so that $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ and $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=\mathrm{diag}(-I_2,I_2)$. This is the basis and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed in it below. We record that the signature and the basis must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.
 
 ## Dirac, Weyl and Majorana: The Three Notions
 
@@ -346,7 +346,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $S C S^{T}$ | Charge-conjugation matrix in a basis $S\gamma^\mu S^{-1}$ |
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing of the informational sector |
 | $[w|v]=w^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing (external geometric usage) |
 | $v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle$ | Majorana-pair bilinear modelling the one-sheeted hyperboloid $H^{sl}$ |
 

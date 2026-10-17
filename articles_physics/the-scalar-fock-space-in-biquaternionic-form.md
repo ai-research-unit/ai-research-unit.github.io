@@ -213,10 +213,10 @@ The consequence for the title of the article is plain. The scalar Fock space is 
 
 ## The Informational Sector and the Trace Formula
 
-The framework's Born rule is a trace over the informational sector: for a state $\tilde\rho\in\mathbb{M}_+$ that is positive and of trace one, the expectation of a Hermitian observable $\tilde O\in\mathbb{M}_+$ is
+The framework's Born rule is a trace over the informational sector: for a state $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive and of trace one, the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is
 
 $$
-\langle\tilde O\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\,\tilde O)=2\,\mathrm{Sc}(\tilde\rho\,\tilde O).
+\langle\tilde H\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde H).
 $$
 
 For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied projectors are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{k,l}\rho_{kl}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
@@ -279,7 +279,7 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $\mathrm{Sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
 | $\mathrm{Tr}([\tilde A,\tilde B])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied projectors (contrast case) |
-| $\mathrm{Tr}(\tilde\rho\tilde O)=2\,\mathrm{Sc}(\tilde\rho\tilde O)$ | Trace formula (Born rule), for finite truncations |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ | Trace formula (Born rule), for finite truncations |
 | $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha \u03d8^{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
 

@@ -145,7 +145,7 @@ they are kept apart.
 - **The zero-divisor cone**, $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the null set of the norm. It is the
   subject of this article, and "the cone" without qualification always means this set here.
 - **The state cone** of the informational sector, the future cone of $\mathbb{M}_+$, that is
-  $\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, sliced by $\mathrm{Tr}\,\tilde\varrho=1$
+  $\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, sliced by $\mathrm{Tr}\,\tilde{Ϛ}=1$
   for the states. It is a cone of *positive* elements, and it is the image of the sesquilinear square; the
   zero-divisor cone is its rank-one boundary, as the next sections show.
 - **The cone of an operation**, the one-dimensional ray $\mathbb{R}_{\ge0}e_t$ that is the image of the
@@ -542,8 +542,8 @@ In the composition the cone is the set of elements that cannot be divided by, an
 failure is propagation.
 
 The wave operator is the norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and a
-four-wavevector $\tilde K$ is null exactly when $\langle\tilde K\rangle_{\natural}=0$. For such a $\tilde K$ every function of
-the phase $\mathrm{Sc}(\tilde K\tilde Q^{\natural})=\langle\tilde K,\tilde Q\rangle$ solves the wave
+four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural}=0$. For such a $\tilde P$ every function of
+the phase $\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\langle\tilde P,\tilde Q\rangle$ solves the wave
 equation, so the null directions are the directions in which the algebra propagates without dispersion.
 The four consequences of the null shell — the shell's uniqueness as a cone, the speed $c$ and its
 frame-independence, the absence of a rest frame, and the motion at $c$ for every momentum — belong to
@@ -600,9 +600,9 @@ it separates no lightlike element from itself. That is the exact counterpart in 
 probability row's statement that the probability weight has no null vector.
 
 The same drop is the algebraic form of the massless limit, and the reading is *Conformal Invariance and the
-Massless Limit in Biquaternionic Form*. On shell the four-momentum is a biquaternion $\tilde K$ and the
+Massless Limit in Biquaternionic Form*. On shell the four-momentum is a biquaternion $\tilde P$ and the
 symbol of the wave operator is its norm: for the massive momentum the norm is $-\mu^{2}\neq0$ and the left
-multiplication by $\tilde K$ has complex rank four, while for the massless one the norm vanishes and the
+multiplication by $\tilde P$ has complex rank four, while for the massless one the norm vanishes and the
 rank is two. In the real count of the table of the twelve rows the drop is eight to four, and it is the
 same drop the row GPA shows at every point of the cone. The massless limit is therefore a **degeneration
 of the symbol** and not merely the removal of a constant: the symbol acquires a kernel, the propagator
@@ -973,7 +973,7 @@ $\tilde H=h_0e_t+i\vec h$, positivity is $\langle\tilde H\rangle_{\natural}=h_0^
 with $h_0\geq0$, that is $h_0\geq\lvert\vec h\rvert$, and this cone is **self-dual** with respect to the
 trace pairing, which is the algebraic reason the pairing serves at once as the Born rule and as the duality
 that makes the measurement formalism work (*POVMs and the Positive Cone in Biquaternionic Form*). The
-**states** are its trace-one slice: $\tilde\rho=\tfrac12(e_t+i\vec r)$ with
+**states** are its trace-one slice: $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with
 $\lvert\vec r\rvert\leq1$, the closed unit ball whose boundary — the pure states — is at once the
 idempotents, the extreme rays of the cone and the zero divisors at trace one
 (*The Bloch Ball as the Trace-One Slice of the Future Light Cone*). The **entropy** is written in the

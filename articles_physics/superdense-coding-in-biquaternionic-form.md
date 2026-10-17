@@ -60,7 +60,7 @@ $$
 Each is unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by
 
 $$
-\tilde{\rho} = P_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{\rho}\,(\vec e_k\otimes e_t)^{*} .
+\tilde{Ϛ} = P_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}\,(\vec e_k\otimes e_t)^{*} .
 $$
 
 Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a **local unitary of the algebra**, and it preserves the spectrum, the trace, and the idempotency of the state.
@@ -107,10 +107,10 @@ Hence the image of $P_{\Phi^+}$ is again a rank-one idempotent, i.e. again a pur
 Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities
 
 $$
-p_\epsilon = \mathrm{Tr}\bigl(\tilde{\rho}\,P_\epsilon\bigr),
+p_\epsilon = \mathrm{Tr}\bigl(\tilde{Ϛ}\,P_\epsilon\bigr),
 $$
 
-where $\tilde{\rho}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{\rho} = P_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
+where $\tilde{Ϛ}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ} = P_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
 
 $$
 p_\epsilon = \delta_{\epsilon,\epsilon(k)} ,
@@ -143,13 +143,13 @@ the maximum being attained by the protocol above. Two features of this statement
 
 ### The one-bit ceiling without the resource
 
-For a single qubit the ceiling follows directly from the Holevo quantity. If Alice prepares an ensemble $\{p_x,\tilde{\rho}_x\}$ on one qubit, the accessible information is bounded by
+For a single qubit the ceiling follows directly from the Holevo quantity. If Alice prepares an ensemble $\{p_x,\tilde{Ϛ}_x\}$ on one qubit, the accessible information is bounded by
 
 $$
-\chi = S\Bigl(\sum_x p_x\tilde{\rho}_x\Bigr) - \sum_x p_x\,S(\tilde{\rho}_x) \ \leq\ S\Bigl(\sum_x p_x\tilde{\rho}_x\Bigr) \ \leq\ \log_2 2 = 1 \ \text{bit},
+\chi = S\Bigl(\sum_x p_x\tilde{Ϛ}_x\Bigr) - \sum_x p_x\,S(\tilde{Ϛ}_x) \ \leq\ S\Bigl(\sum_x p_x\tilde{Ϛ}_x\Bigr) \ \leq\ \log_2 2 = 1 \ \text{bit},
 $$
 
-because the von Neumann entropy of a qubit is at most one bit; for an ensemble of pure states the first inequality is an equality and the bound is $\chi = S(\tilde{\rho})\leq 1$. The reason is the dimension of the module: a qubit's defining module has complex dimension two, and at most two orthogonal rays can be accommodated, so at most one bit of perfectly distinguishable signal can be carried. With the shared pair, Bob's decoding space is the tensor-product module of dimension four, which holds four orthogonal codewords, hence two bits. The gain from entanglement is one bit, and it is exactly the logarithm of the ratio of the two module dimensions:
+because the von Neumann entropy of a qubit is at most one bit; for an ensemble of pure states the first inequality is an equality and the bound is $\chi = S(\tilde{Ϛ})\leq 1$. The reason is the dimension of the module: a qubit's defining module has complex dimension two, and at most two orthogonal rays can be accommodated, so at most one bit of perfectly distinguishable signal can be carried. With the shared pair, Bob's decoding space is the tensor-product module of dimension four, which holds four orthogonal codewords, hence two bits. The gain from entanglement is one bit, and it is exactly the logarithm of the ratio of the two module dimensions:
 
 $$
 2\ \text{bits} - 1\ \text{bit} = \log_2 4 - \log_2 2 = 1\ \text{bit}.
@@ -239,9 +239,9 @@ and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\
 | $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$, $\epsilon_1\epsilon_2\epsilon_3=+1$ | Bell sign pattern |
 | $S_1 = -\vec e_x\otimes \vec e_x$, $S_3 = -\vec e_z\otimes \vec e_z$ | Stabilizer observables (decoding) |
 | $S_1P_\epsilon = -\epsilon_1P_\epsilon$, $S_3P_\epsilon=-\epsilon_3P_\epsilon$ | Joint eigenvalues |
-| $(\vec e_k\otimes e_t)\tilde{\rho}(\vec e_k\otimes e_t)^{*}$ | Local encoding operation |
+| $(\vec e_k\otimes e_t)\tilde{Ϛ}(\vec e_k\otimes e_t)^{*}$ | Local encoding operation |
 | $\mathrm{Tr}(P_\epsilon P_{\epsilon'}) = \delta_{\epsilon\epsilon'}$ | Orthogonality of codewords |
-| $p_\epsilon = \mathrm{Tr}(\tilde{\rho}P_\epsilon)$ | Decoding probabilities (Born rule) |
+| $p_\epsilon = \mathrm{Tr}(\tilde{Ϛ}P_\epsilon)$ | Decoding probabilities (Born rule) |
 | $1$ bit | Holevo bound for one qubit without entanglement |
 | $2$ bits | Entanglement-assisted capacity (superdense coding) |
 

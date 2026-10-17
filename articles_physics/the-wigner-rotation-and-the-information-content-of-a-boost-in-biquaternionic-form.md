@@ -123,13 +123,13 @@ $$
 $$
 which is a **controlled unitary** in the standard sense of quantum information: the momentum plays the role of the control and the spin of the target, and the operation on the target is the branch-dependent Wigner rotation. When the branch momenta are orthogonal, the spin channel obtained by tracing the momentum is
 $$
-\tilde{\rho}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\,\tilde{\rho}\,\tilde{W}_i^{*} ,
+\tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\,\tilde{Ϛ}\,\tilde{W}_i^{*} ,
 $$
 a mixed-unitary channel whose Kraus operators are the branch rotations.
 
 The controlled form is not an approximation or a convenience; it is forced. A boost is a unitary on the full Hilbert space of spin and momentum, and it moves the momentum. If it factored as a momentum operation times a spin operation,
 $$
-\tilde{U}(\tilde{\Lambda}) = \tilde{V}_{\mathrm{mom}}(\tilde{\Lambda})\otimes\tilde{R}(\tilde{\Lambda}),
+\tilde{U}(\tilde{\Lambda}) = \tilde{V}_{\mathrm{mom}}(\tilde{\Lambda})\otimes\tilde u(\tilde{\Lambda}),
 $$
 then the spin operation would be momentum-independent, the cocycle would be a homomorphism, and the third Lie bracket $[\tilde{K},\tilde{K}] = \tilde{J}$ would be contradicted: the composition of two boosts would have to be a boost with no rotation. The Wigner rotation is exactly the obstruction to that factorisation, and the controlled form is its operational statement.
 
@@ -156,7 +156,7 @@ The rotation angle grows with the rapidity and saturates at a finite value; the 
 
 **How well can a boost be read from a spin?** The transverse spin states produced by two different boosts are the dephased states with Bloch vectors of length $\cos\alpha_1$ and $\cos\alpha_2$ along the Wigner axis, and for qubits the trace distance between two such states is one half the Euclidean distance of their Bloch vectors,
 $$
-D(\tilde{\rho}_1,\tilde{\rho}_2) = \tfrac12|\vec r_1-\vec r_2| = \tfrac12|\cos\alpha_1 - \cos\alpha_2| .
+D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12|\vec r_1-\vec r_2| = \tfrac12|\cos\alpha_1 - \cos\alpha_2| .
 $$
 For a particle of speed $0.5c$ at transverse momentum, boosts of rapidity $1$ and $1.5$ give angles $14.11732^\circ$ and $19.31699^\circ$, hence $D = \tfrac12(0.969798-0.943703) = 0.013048$: a single spin measurement distinguishes them with a bias of about one and a third per cent. Even the widely separated rapidities $0.5$ and $2$ give $D = \tfrac12(0.991423-0.920042) = 0.035691$, a bias of under four per cent. The rapidity is thus carried by the spin only weakly at moderate speed, and a boost is much more efficiently read out from the momentum of a particle than from its spin; the information content of the boost is concentrated in the parallel spin component, where the Wigner rotation does nothing.
 

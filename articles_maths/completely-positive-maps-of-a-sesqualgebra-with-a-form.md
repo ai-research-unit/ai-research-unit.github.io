@@ -76,7 +76,7 @@ $$
 \Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)} .
 $$
 
-*Proof.* The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $\tilde a = \operatorname{diag}(a,\dots,a)$ is $(\tilde a X \tilde a^{*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra.
+*Proof.* The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $a^{(n)} = \operatorname{diag}(a,\dots,a)$ is $(a^{(n)} X a^{(n)*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra.
 
 **Corollary (the sandwich is a channel of Kraus rank one).** The sandwich is the composition of the left multiplication and the right multiplication of *The Adjoint under a Hermitian Form*, §*The Multiplications*, $\Theta_{a} = m_{a} \circ R_{a}$ with $m_{a}(x) = ax$ and $R_{a}(x) = xa^{*}$,
 

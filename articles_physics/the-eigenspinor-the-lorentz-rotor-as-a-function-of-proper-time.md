@@ -72,15 +72,15 @@ $$
 
 or, more usefully, component by component from $\tilde{P} = m\tilde{V}$ and the dictionary $\tilde{V} = \gamma(ic\,e_t + \vec v)$.
 
-**Two gauges.** The eigenspinor is not unique. It is defined up to the two-element kernel $\tilde{\Lambda}\to-\tilde{\Lambda}$ of the covering map $SL(2,\mathbb{C})\to SO^+(1,3)$, already recorded in the group-structure section of the companion article, and up to a residual rotation of the rest frame, $\tilde{\Lambda}\to\tilde{\Lambda}\tilde{R}$ with $\tilde{R}$ a unit rotor built from the spatial units alone, which leaves $\tilde{\Lambda}\tilde{\Lambda}^{*}$ unchanged. The first is removed by the branch convention $\mathrm{Sc}(\tilde{\Lambda}) > 0$; the second is physical and is the freedom to orient the spin axes of the rest frame. Neither affects the four-momentum.
+**Two gauges.** The eigenspinor is not unique. It is defined up to the two-element kernel $\tilde{\Lambda}\to-\tilde{\Lambda}$ of the covering map $SL(2,\mathbb{C})\to SO^+(1,3)$, already recorded in the group-structure section of the companion article, and up to a residual rotation of the rest frame, $\tilde{\Lambda}\to\tilde{\Lambda}\tilde u$ with $\tilde u$ a unit rotor built from the spatial units alone, which leaves $\tilde{\Lambda}\tilde{\Lambda}^{*}$ unchanged. The first is removed by the branch convention $\mathrm{Sc}(\tilde{\Lambda}) > 0$; the second is physical and is the freedom to orient the spin axes of the rest frame. Neither affects the four-momentum.
 
-**The one-sided transformation law.** Under a change of Lorentz frame implemented by the fixed rotor $\tilde{L}$, a four-vector transforms as $\tilde{P}' = \tilde{L}\tilde{P}\tilde{L}^{*}$ and, by the definition, the eigenspinor transforms as
+**The one-sided transformation law.** Under a change of Lorentz frame implemented by the fixed Lorentz rotor $\tilde U_{\mathrm L}$, a four-vector transforms as $\tilde{P}' = \tilde U_{\mathrm L}\tilde{P}\tilde U_{\mathrm L}^{*}$ and, by the definition, the eigenspinor transforms as
 
 $$
-\tilde{\Lambda}' = \tilde{L}\,\tilde{\Lambda},
+\tilde{\Lambda}' = \tilde U_{\mathrm L}\,\tilde{\Lambda},
 $$
 
-a **one-sided** multiplication. This is the spinor law, not the two-sided four-vector law, and it is the statement that the eigenspinor belongs to the left module on which the rotors act, exactly as *The Spinor Module in Biquaternionic Form and Its Lorentz Action* describes. The two laws are consistent: $\tilde{P}' = (\tilde{L}\tilde{\Lambda})(imc\,e_t)(\tilde{L}\tilde{\Lambda})^{*}$. The distinction between this active reading of the rotor, the passive reading, and the reading in which a rotor relates two physical frames is set out in *The Lorentz Transformation as a Biquaternionic Rotation*, where the relative rotor between two worldlines is written as the ratio of their eigenspinors.
+a **one-sided** multiplication. This is the spinor law, not the two-sided four-vector law, and it is the statement that the eigenspinor belongs to the left module on which the rotors act, exactly as *The Spinor Module in Biquaternionic Form and Its Lorentz Action* describes. The two laws are consistent: $\tilde{P}' = (\tilde U_{\mathrm L}\tilde{\Lambda})(imc\,e_t)(\tilde U_{\mathrm L}\tilde{\Lambda})^{*}$. The distinction between this active reading of the rotor, the passive reading, and the reading in which a rotor relates two physical frames is set out in *The Lorentz Transformation as a Biquaternionic Rotation*, where the relative rotor between two worldlines is written as the ratio of their eigenspinors.
 
 ## The Evolution Equation and the Norm
 
@@ -113,14 +113,14 @@ $$
 \boxed{\;\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\tilde{\Omega}\,\tilde{P}\right)\;}
 $$
 
-**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. Writing $\tilde{\Omega} = \tilde{\Omega}_0 + \tilde{\mathbf{V}}$ with $\tilde{\Omega}_0$ central and $\tilde{\mathbf{V}}$ a pure vector, the derivative of $\langle\tilde{\Lambda}\rangle_{\natural} = \tilde{\Lambda}\tilde{\Lambda}^{\natural}$ is
+**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. Writing $\tilde{\Omega} = \tilde{\Omega}_0 + \vec V$ with $\tilde{\Omega}_0$ central and $\vec V$ a pure vector, the derivative of $\langle\tilde{\Lambda}\rangle_{\natural} = \tilde{\Lambda}\tilde{\Lambda}^{\natural}$ is
 
 $$
-\frac{d}{d\tau}\langle\tilde{\Lambda}\rangle_{\natural} = \tfrac12\left(\tilde{\Omega} + \tilde{\Omega}^{\natural}\right) = \tilde{\Omega}_0 + \tfrac12\left(\tilde{\mathbf{V}} + \bar{\tilde{\mathbf{V}}}\right)
+\frac{d}{d\tau}\langle\tilde{\Lambda}\rangle_{\natural} = \tfrac12\left(\tilde{\Omega} + \tilde{\Omega}^{\natural}\right) = \tilde{\Omega}_0 + \tfrac12\left(\vec V + \vec V^{\natural}\right)
 = \tilde{\Omega}_0,
 $$
 
-because a pure vector is anti-fixed by quaternion conjugation, $\bar{\tilde{\mathbf{V}}} = -\tilde{\mathbf{V}}$. Norm preservation is therefore exactly the condition that **the rotation rate have no scalar part**,
+because a pure vector is anti-fixed by quaternion conjugation, $\vec V^{\natural} = -\vec V$. Norm preservation is therefore exactly the condition that **the rotation rate have no scalar part**,
 
 $$
 \langle\tilde{\Lambda}\rangle_{\natural} = \text{const} \iff \tilde{\Omega} \in \mathrm{Vect}(\mathbb{B}),
@@ -205,7 +205,7 @@ Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\ti
 
 3. **Non-uniform fields.** The closed form holds for constant $\tilde{\Omega}$. For a varying field the equation of motion is still linear in $\tilde{\Lambda}$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde{\nabla}$ of *The Biquaternion D'Alembertian* supply it?
 
-4. **The gauge of the rest frame.** The residual rotation $\tilde{\Lambda}\to\tilde{\Lambda}\tilde{R}$ is a gauge freedom in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
+4. **The gauge of the rest frame.** The residual rotation $\tilde{\Lambda}\to\tilde{\Lambda}\tilde u$ is a gauge freedom in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
 
 5. **The rate as a connection.** The rate $\tilde{\Omega}$ is an element of $\mathrm{Vect}(\mathbb{B})$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
 
@@ -234,7 +234,7 @@ $$
 = \tfrac12\left(\tilde{\Omega}\tilde{P} + \tilde{P}\tilde{\Omega}^{*}\right).
 $$
 
-With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde{\Lambda}\to\tilde{L}\tilde{\Lambda}$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde{\Lambda} = \exp(\tfrac12\tilde{\Omega}\tau)\tilde{\Lambda}(0)$.
+With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde{\Lambda}\to\tilde U_{\mathrm L}\tilde{\Lambda}$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde{\Lambda} = \exp(\tfrac12\tilde{\Omega}\tau)\tilde{\Lambda}(0)$.
 
 The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
@@ -243,6 +243,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | Symbol | Meaning |
 |---|---|
 | $\tilde{\Lambda}(\tau)$ | Eigenspinor: the rotor carrying the rest frame to the laboratory |
+| $\tilde U_{\mathrm L}$ | Fixed Lorentz rotor acting on the eigenspinor; $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum, in the material sector $\mathbb{M}_-$ |
 | $imc\,e_t$ | Rest four-momentum (central) |
 | $\tilde{\Omega}$ | Spacetime rotation rate, a pure vector, $\tilde{\Omega}^{\natural} = -\tilde{\Omega}$ |

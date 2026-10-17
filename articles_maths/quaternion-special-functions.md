@@ -107,10 +107,10 @@ $$
 
 on the domain of the principal branch. The norm $\lvert \tilde q\rvert$ and the argument $\operatorname{Arg}\tilde q$ are unchanged by conjugation, while the direction $\operatorname{sgn}(\tilde q)$ changes sign, and both sides change sign in the vector part.
 
-**Multi-valuedness and the principal branch.** The function above is single-valued on the complement of the non-positive real axis, but it is one branch of a multi-valued function. A **logarithm** of $\tilde q$ is any $\tilde L \in \mathbb{H}$ with $\exp \tilde L = \tilde q$; for $\tilde q$ with non-zero vector part the function above is one solution, and every other solution is obtained from it by adding an integer multiple of the period:
+**Multi-valuedness and the principal branch.** The function above is single-valued on the complement of the non-positive real axis, but it is one branch of a multi-valued function. A **logarithm** of $\tilde q$ is any $\tilde q_{\log} \in \mathbb{H}$ with $\exp \tilde q_{\log} = \tilde q$; for $\tilde q$ with non-zero vector part the function above is one solution, and every other solution is obtained from it by adding an integer multiple of the period:
 
 $$
-\tilde L = \log \tilde q + 2\pi n \operatorname{sgn}(\tilde q), \qquad n \in \mathbb{Z}.
+\tilde q_{\log} = \log \tilde q + 2\pi n \operatorname{sgn}(\tilde q), \qquad n \in \mathbb{Z}.
 $$
 
 The single-valued function displayed above is the **principal branch**, the one whose argument $\operatorname{Arg}\tilde q$, the $\arccos$ factor in the definition, lies in $[0, \pi]$; it is undefined on the non-positive real axis, where the argument jumps.
@@ -197,13 +197,13 @@ $$
 \lim_{n \to \infty} n\left(\tilde q^{1/n} - 1\right) = \log\tilde q.
 $$
 
-**Proof.** Write $\tilde L = \log\tilde q$ and $\omega = \operatorname{sgn}\tilde L$, so that $\tilde L = \omega\,\lvert \tilde L\rvert$ and the powers of $\tilde L$ commute. Then
+**Proof.** Write $\tilde q_{\log} = \log\tilde q$ and $\omega = \operatorname{sgn}\tilde q_{\log}$, so that $\tilde q_{\log} = \omega\,\lvert \tilde q_{\log}\rvert$ and the powers of $\tilde q_{\log}$ commute. Then
 
 $$
-\tilde q^{1/n} = \exp\left(\frac{\tilde L}{n}\right) = \cos\frac{\lvert\tilde L\rvert}{n} + \omega \sin\frac{\lvert\tilde L\rvert}{n} = 1 + \frac{\tilde L}{n} - \frac{\lvert\tilde L\rvert^2}{2n^2} + O\left(\frac{1}{n^3}\right),
+\tilde q^{1/n} = \exp\left(\frac{\tilde q_{\log}}{n}\right) = \cos\frac{\lvert\tilde q_{\log}\rvert}{n} + \omega \sin\frac{\lvert\tilde q_{\log}\rvert}{n} = 1 + \frac{\tilde q_{\log}}{n} - \frac{\lvert\tilde q_{\log}\rvert^2}{2n^2} + O\left(\frac{1}{n^3}\right),
 $$
 
-so $n(\tilde q^{1/n} - 1) = \tilde L + O(1/n)$.
+so $n(\tilde q^{1/n} - 1) = \tilde q_{\log} + O(1/n)$.
 
 **Corollary (the mean of one and a root).**
 
@@ -211,7 +211,7 @@ $$
 \lim_{n \to \infty}\left(\frac{1 + \tilde q^{1/n}}{2}\right)^n = \tilde q^{1/2}.
 $$
 
-**Proof.** By the expansion, $\frac{1+\tilde q^{1/n}}{2} = 1 + \frac{\tilde L/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde L/2) = \tilde q^{1/2}$.
+**Proof.** By the expansion, $\frac{1+\tilde q^{1/n}}{2} = 1 + \frac{\tilde q_{\log}/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde q_{\log}/2) = \tilde q^{1/2}$.
 
 **Corollary (the mean of several roots).** For $\tilde q_1, \dots, \tilde q_k \neq 0$,
 

@@ -538,33 +538,33 @@ The four-force $\tilde{K}$ of this article acts on a single charged particle. Th
 Let a field's **charge–current biquaternion** be
 
 $$
-\tilde J = i\rho + \vec J,
+\tilde J_{\mathrm{eg}} = i\rho + \vec J,
 \qquad
 \rho = \frac{\rho_E}{\sqrt{\epsilon}} - i\,\frac{\rho_H}{\sqrt{\mu}},
 \qquad
 \vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H,
 $$
 
-where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have A-field
+where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have field strength
 
 $$
-\vec{\mathcal A}' = \sqrt{\epsilon}\,\vec E' + i\sqrt{\mu}\,\vec H' = -i\tilde{F}',
+\tilde F' = i\sqrt{\epsilon}\,\vec E' - \sqrt{\mu}\,\vec H',
 $$
 
-the dual field strength of *The Magnetic-Charge–Mass Hypothesis* (the Maxwell article's A-field in its own sign convention). The programme's **power–force biquaternion** is the product
+the field strength of *The Magnetic-Charge–Mass Hypothesis*, in that article's sign convention. The programme's **power–force biquaternion** is the product
 
 $$
-\tilde{\mathcal F} = -\,\tilde J\circ\tilde{\mathcal A}' .
+\tilde{\mathcal F} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F' .
 $$
 
 Its scalar and vector parts were recomputed here and are
 
 $$
-\mathrm{Sc}\big(\tilde{\mathcal F}\big) = \big(\vec{\mathcal A}',\vec J\big)
+\mathrm{Sc}\big(\tilde{\mathcal F}\big)
 = \frac{1}{c}\left(\vec E'\cdot\vec j_E + \vec H'\cdot\vec j_H\right)
 + i\left(\vec B'\cdot\vec j_E - \vec D'\cdot\vec j_H\right),
 \qquad
-\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\rho\,\vec{\mathcal A}' + \big[\vec{\mathcal A}',\vec J\big],
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F' - i\,\big[\tilde F',\vec J\big],
 $$
 
 where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_k F_kG_k$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
@@ -575,7 +575,7 @@ $$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\vec F_H + i\,\vec F_E\right),
 \qquad
 \vec F_H + i\,\vec F_E = i\,\mathrm{Vect}\big(\tilde{\mathcal F}\big)
-= \rho\,\vec{\mathcal A}' - i\,\vec J\times\vec{\mathcal A}' ,
+= -\,i\rho\,\tilde F' - \vec J\times\tilde F' ,
 $$
 
 so that $\vec F_E = \mathrm{Re}\,\mathrm{Vect}(\tilde{\mathcal F})$ and $\vec F_H = -\mathrm{Im}\,\mathrm{Vect}(\tilde{\mathcal F})$. Expanding with the definitions above gives the four terms of the first half with their coefficients,
@@ -592,7 +592,7 @@ $$
 
 The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}$ and the two must not be identified: $\tilde{K}$ is the four-force on one charge, $\tilde{\mathcal F}$ is a force per unit volume on a continuous distribution, and only the latter carries the power–force pairing in one element.
 
-**Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D'$ where the derivation gives $-c\,\rho_H\vec D'$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J\circ\tilde{\mathcal A}' = -\tilde J'\circ\tilde{\mathcal A}$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
+**Status.** The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D'$ where the derivation gives $-c\,\rho_H\vec D'$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\mathrm{eg}}\circ\tilde F' = -\tilde J_{\mathrm{eg}}'\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the provenance.
 
 
 ## The Lamb-Vector Reading of the Force Law
@@ -632,7 +632,7 @@ Equivalently, $\tilde{K} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \t
 
 The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
 
-At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = -\tilde J\circ\vec{\mathcal A}'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
+At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
 
 ## Summary of Notation
 
@@ -660,9 +660,8 @@ At the level of densities the companion programme replaces the per-particle forc
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum biquaternion |
 | $\tilde{K} = d\tilde{P}/d\tau$ | Four-force (Minkowski force) biquaternion |
-| $\vec{\mathcal A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength, complex three-vector) |
-| $\tilde J = i\rho + \vec J$ | Charge–current biquaternion of a field |
-| $\tilde{\mathcal F} = -\tilde J\circ\vec{\mathcal A}'$ | Power–force density biquaternion (per unit volume; not $\tilde{K}$) |
+| $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of a field |
+| $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F'$ | Power–force density biquaternion (per unit volume; not $\tilde{K}$) |
 | $\rho_E, \rho_H$, $\vec j_E, \vec j_H$ | Electric and magnetic charge and current densities |
 | $\vec D = \epsilon\vec E$, $\vec B = \mu\vec H$ | Electric displacement and magnetic induction |
 | $\vec f = ϙ(\vec E + \vec v\times\vec B)$ | Relativistic three-force |

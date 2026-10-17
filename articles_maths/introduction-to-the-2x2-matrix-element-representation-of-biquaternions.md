@@ -144,7 +144,7 @@ $$
 \mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) \qquad \text{for all } \tilde{Q}_1, \tilde{Q}_2 \in \mathbb{B},
 $$
 
-where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$.
+where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{Ϛ})$.
 
 **The determinant is the biquaternion norm.** Expanding,
 
@@ -539,7 +539,7 @@ $$
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
-\tilde{R}(\theta, \vec u) = \exp\!\big(\tfrac{1}{2}\theta \vec u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(\vec e_k)\big),
+\tilde u(\theta, \vec u) = \exp\!\big(\tfrac{1}{2}\theta \vec u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(\vec e_k)\big),
 $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.

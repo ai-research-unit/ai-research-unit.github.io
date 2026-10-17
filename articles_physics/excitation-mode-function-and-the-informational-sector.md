@@ -12,7 +12,7 @@ The second is an **excitation**: one quantum occupying such a mode, the state $a
 
 The answer has two parts, and the parts should be separated before any algebra is written.
 
-1. **The occupation state is in $\mathbb{M}_+$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ and the density matrix $\tilde\rho$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
+1. **The occupation state is in $\mathbb{M}_+$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ and the density matrix $\tilde{Ϛ}$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
 
 2. **The mode function is not in $\mathbb{M}_+$.** A mode function is a definite solution: one element of the space of solutions of the free equation. That solution space is a module over $\mathbb{B}$ (the spinor module, for the Dirac field) or, for the Maxwell potential and its polarizations, a subspace of the material sector $\mathbb{M}_-$. The only spinor of the Dirac solution space that is Hermitian is the projector itself, a one-dimensional ray.
 
@@ -49,7 +49,7 @@ $$
 
 with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+ip\cdot x)$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
 
-The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde\Psi_0\exp(\tilde k\tilde{Q})$: the four-wavevector $\tilde k=i\omega/c\,e_t+\vec k$ is an element of the material sector $\mathbb{M}_-$ (it appears in the table of four-vectors of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*), and the amplitude $\tilde\Psi_0$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{M}_+$.
+The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde\Psi_0\exp(\tilde P\tilde{Q})$: the four-wavevector $\tilde P=i\omega/c\,e_t+\vec k$ is an element of the material sector $\mathbb{M}_-$ (it appears in the table of four-vectors of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*), and the amplitude $\tilde\Psi_0$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{M}_+$.
 
 The Maxwell case is structurally the same and algebraically simpler. The one-particle space at fixed momentum is the space of transverse polarization amplitudes, two real dimensions, and the companion photon article identifies the polarization directions with the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to the propagation direction $\vec u_k$. The mode function of the potential, $\varepsilon_\mu(\vec k)\exp(-ik\cdot x)$, is a four-vector with a definite **linear** polarization; its polarization vector is then a direction in $\mathbb{M}_-$. Again the definite solution lives on the material side. The photon article states the structural reason: the polarization directions are real spatial vectors and sit in the material sector, while the helicity operator is represented by the Hermitian element $i\vec u_k$ of $\mathbb{M}_+$ and is an *observable* of the mode, not the mode function itself.
 
@@ -102,12 +102,12 @@ The phrase "an excitation and its state" packs three different objects together,
 |---|---|---|
 | Mode function | A definite solution $w^{(r)}(\vec p)\exp(-ip\cdot x)$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{M}_-)$ (Maxwell polarization) |
 | Excitation operator | $\tilde a^\dagger$ (or $a^{\mathrm{fop}\dagger}_r(\vec p)$) | Neither $\mathbb{M}_+$ nor $\mathbb{M}_-$; not Hermitian |
-| Occupation state | $\vert n\rangle$, or the density matrix $\tilde\rho$ | State vector: the module; density matrix and $\tilde N$: $\mathbb{M}_+$ (one fermionic mode) |
+| Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}$ | State vector: the module; density matrix and $\tilde N$: $\mathbb{M}_+$ (one fermionic mode) |
 
 The third row is the assertion that needs care. The **state vector** $|\psi\rangle=\alpha|0\rangle+\beta|1\rangle$ of one mode is an element of the two-dimensional occupation Hilbert space, which is the fundamental module $S\cong\mathbb{C}^2$, not the algebra; it is not an element of $\mathbb{M}_+$. It is the **density matrix**
 
 $$
-\tilde\rho=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r\in\mathbb{R}^3,\quad |\vec r|\leq 1,
+\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r\in\mathbb{R}^3,\quad |\vec r|\leq 1,
 $$
 
 of the mode, and the occupation-number observable $\tilde N$, that are elements of the algebra, and they are elements of $\mathbb{M}_+$. So the precise interpretation of "the informational sector carries the state" is: it carries the *state as a density matrix*, not the *state as a vector*, and it carries the observables. This is the distinction the ontology companion draws when it says that the state is an element of $\mathbb{M}_+$: the object meant there is the density matrix, and the same article records that the algebra does not decide the interpretation of that element.
@@ -120,13 +120,13 @@ The assertions to be checked are now explicit.
 
 **A2. The vacuum projector is in $\mathbb{M}_+$.** The complement $e_t-\tilde N=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_+$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_+\in\mathbb{M}_+$. More generally $\tfrac12(e_t+i\vec u)$ is Hermitian, idempotent, and of trace one for every unit pure quaternion $\vec u$. These are the pure-state projectors of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the single-mode occupation basis is exactly this pair.
 
-**A3. The density matrix of the mode is in $\mathbb{M}_+$.** For $\tilde\rho=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde\rho\in\mathbb{M}_+$ by the definition of the sector. Direct computation gives
+**A3. The density matrix of the mode is in $\mathbb{M}_+$.** For $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde{Ϛ}\in\mathbb{M}_+$ by the definition of the sector. Direct computation gives
 $$
-\tilde\rho^2-\tilde\rho=\tfrac14\big(|\vec r|^2-1\big)e_t,\qquad
-\mathrm{Tr}(\tilde\rho)=1,\qquad
-\tilde\rho^{*}=\tilde\rho,
+\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\big(|\vec r|^2-1\big)e_t,\qquad
+\mathrm{Tr}(\tilde{Ϛ})=1,\qquad
+\tilde{Ϛ}^{*}=\tilde{Ϛ},
 $$
-and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$. The set of such $\tilde\rho$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
+and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$. The set of such $\tilde{Ϛ}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
 
 **A4. The ladder operators are not in either sector.** For $\tilde a=\tfrac12(i\vec e_x-\vec e_y)$ one has $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)=\tilde a^\dagger\neq\tilde a$, and $\tilde a^\dagger\neq-\tilde a$; splitting into Hermitian and anti-Hermitian parts,
 $$
@@ -205,7 +205,7 @@ There is an interpretation of the mode function that belongs here as an interpre
 
 ## Summary
 
-An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde N=\tfrac12(e_t-i\vec u)$ and its density matrix $\tilde\rho=\tfrac12(e_t+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
+An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $N$. Its occupation-number operator $\tilde N=\tfrac12(e_t-i\vec u)$ and its density matrix $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.
 
 The mode function is not in $\mathbb{M}_+$: the solution space meets the sector in the single real ray $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$, so away from the projector a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.
 
@@ -229,7 +229,7 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 | $a^{\mathrm{fop}\dagger}_r(\vec p)$, $a^{\mathrm{fop}}_r(\vec p)$ | Excitation (creation) and annihilation operators |
 | $\tilde a=x$, $\tilde a^\dagger=y$ | One-mode ladder operators in $\mathbb{B}$ |
 | $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_t-i\vec u)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
-| $\tilde\rho=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\mathrm{Sc}(\tilde P\tilde H)$ | Hilbert–Schmidt pairing on $\mathbb{M}_+$ (positive definite) |
 

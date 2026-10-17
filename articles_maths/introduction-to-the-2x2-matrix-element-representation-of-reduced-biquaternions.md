@@ -66,13 +66,13 @@ q'_+&q_+&q'_-&q_-\\
 q_-&-q'_-&q_+&-q'_+\\
 q'_-&q_-&q'_+&q_+
 \end{pmatrix}
-=\begin{pmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{pmatrix},
+=\begin{pmatrix}A_+&A_-\\ A_-&A_+\end{pmatrix},
 \qquad
-\tilde A=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix},\quad
-\tilde B=\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix}.
+A_+=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix},\quad
+A_-=\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix}.
 $$
 
-*Proof.* This is the real form of the complex matrix of §*The Matrix of an Element*, read by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*: each complex entry $Q_+$ becomes the real $2\times2$ block $\tilde A$ and each entry $Q_-$ the block $\tilde B$, and the two $2\times2$ blocks of the complex matrix become the four blocks of the real one.
+*Proof.* This is the real form of the complex matrix of §*The Matrix of an Element*, read by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*: each complex entry $Q_+$ becomes the real $2\times2$ block $A_+$ and each entry $Q_-$ the block $A_-$, and the two $2\times2$ blocks of the complex matrix become the four blocks of the real one.
 
 **Corollary (the two models agree).** The real matrix is the realification of the complex one: the complex $2\times2$ model and the real $4\times4$ model are the same operator on the same space read over the two base fields, and the real one carries the four real coordinates of *The Four-Vector Element Representation of the Reduced Biquaternions*.
 
@@ -91,7 +91,7 @@ $$
 \operatorname{tr}L_{Q_\pm}=4q_+,\qquad \det L_{Q_\pm}=\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}=\lvert Q_{++}\rvert^{2}\lvert Q_{--}\rvert^{2}.
 $$
 
-*Proof.* The trace of $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is $Q_++Q_+=2Q_+$ and its determinant is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$; the real matrix has trace $q_++q_++q_++q_+=4q_+$, which is $\operatorname{tr}\varphi(Q_\pm)+\overline{\operatorname{tr}\varphi(Q_\pm)}$ read in real coordinates, and determinant $\det(\tilde A-\tilde B)\det(\tilde A+\tilde B)=\lvert Q_+-Q_-\rvert^{2}\lvert Q_++Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}\lvert Q_{++}\rvert^{2}$, by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*.
+*Proof.* The trace of $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is $Q_++Q_+=2Q_+$ and its determinant is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$; the real matrix has trace $q_++q_++q_++q_+=4q_+$, which is $\operatorname{tr}\varphi(Q_\pm)+\overline{\operatorname{tr}\varphi(Q_\pm)}$ read in real coordinates, and determinant $\det(A_+-A_-)\det(A_++A_-)=\lvert Q_+-Q_-\rvert^{2}\lvert Q_++Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}\lvert Q_{++}\rvert^{2}$, by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*.
 
 **Corollary (the criterion in the model).** $Q_\pm$ is a **unit** exactly when $\varphi(Q_\pm)$ is invertible, that is $Q_{++}\neq0$ and $Q_{--}\neq0$; $Q_\pm$ is a **zero divisor** exactly when $\varphi(Q_\pm)\neq0$ is singular, that is exactly one of $Q_{++},Q_{--}$ is $0$; and $Q_\pm$ is **nilpotent** exactly when $\varphi(Q_\pm)$ is nilpotent, that is $Q_{++}=Q_{--}=0$, hence $Q_\pm=0$. The multiplication is **not a division algebra**, and the singular non-zero matrices are the images of the zero divisors.
 
@@ -153,14 +153,14 @@ The determinant of the matrix is the reduced norm $\langle\cdot\rangle_{\natural
 
 ## Summary
 
-The reduced biquaternion $Q_\pm=Q_++jQ_-$ is the matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_+$ and the determinant $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ in the complex model, $4q_+$ and $\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{++},Q_{--})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{++}\neq0$ and $Q_{--}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
+The reduced biquaternion $Q_\pm=Q_++jQ_-$ is the matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_+$ and the determinant $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ in the complex model, $4q_+$ and $\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{++},Q_{--})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{++}\neq0$ and $Q_{--}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\varphi(Q_\pm)$ | the $2\times2$ complex matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of the multiplication by $Q_\pm$ |
-| $L_{Q_\pm}$ | the real $4\times4$ matrix $\begin{smallmatrix}\tilde A&\tilde B\\ \tilde B&\tilde A\end{smallmatrix}$ of the multiplication |
+| $L_{Q_\pm}$ | the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ of the multiplication |
 | $\sigma_{1}$ | $\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}$, the image of $j$ in the basis $1,j$ |
 | $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ | the change of basis to the idempotent basis, of determinant $-2$ |
 | $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ | the determinant of $\varphi(Q_\pm)$, the reduced norm |

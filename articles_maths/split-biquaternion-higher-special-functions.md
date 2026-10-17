@@ -302,16 +302,16 @@ are the split biquaternion analogues of holomorphic functions and harmonic funct
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G^{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$
 
-It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:
+It satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:
 
 $$
-\tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) \tilde\Pi_1 + \tilde{G}(\tilde{Q}_-) \tilde\Pi_2,
+G^{\mathrm{fn}}(\tilde{Q}) = G^{\mathrm{fn}}(\tilde{Q}_+) \tilde\Pi_1 + G^{\mathrm{fn}}(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
-where $\tilde{G}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.
+where $G^{\mathrm{fn}}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the component.
 
 ### The Poisson Kernel
 
@@ -401,8 +401,8 @@ The split biquaternion special functions are therefore a partially developed sub
 | ${}_2F_1, {}_pF_q$ | Gauss and generalized hypergeometric functions |
 | $\Gamma$ | Gamma function |
 | $\zeta$ | Riemann zeta function |
-| $\tilde{K}$ | Cauchy kernel |
-| $P(\tilde{Q}, \zeta)$ | Poisson kernel |
+| $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $P(\tilde{Q}, \tilde{R})$ | Poisson kernel |
 | $G(\tilde Q, \tilde R)$ | Green's function |
 
 ## Further Reading

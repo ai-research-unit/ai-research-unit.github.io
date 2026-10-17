@@ -289,33 +289,33 @@ In the Dirac basis the rotation generators are again block diagonal, while the b
 
 **Statement.** Verify the biquaternionic mass-shell condition of the parent article and recover the relativistic energy–momentum relation.
 
-**Solution.** The parent's plane-wave ansatz carries the wave biquaternion $\tilde k$, which the parent identifies with the four-wavevector
+**Solution.** The parent's plane-wave ansatz carries the wave biquaternion $\tilde P/\hbar$, which the parent identifies with the four-wavevector
 
 $$
-\tilde K=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z .
+\tilde P/\hbar=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z .
 $$
 
 This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$,
 
 $$
-\langle\tilde K\rangle_{\natural}=\tilde K\tilde K^{\natural}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\vec k^2 .
+\langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\vec k^2 .
 $$
 
 The relativistic dispersion relation is $\omega^2=c^2\vec k^2+\dfrac{m^2c^4}{\hbar^2}$, so
 
 $$
-\langle\tilde K\rangle_{\natural}=-\frac{1}{c^2}\left(c^2\vec k^2+\frac{m^2c^4}{\hbar^2}\right)+\vec k^2=-\frac{m^2c^2}{\hbar^2},
+\langle\tilde P/\hbar\rangle_{\natural}=-\frac{1}{c^2}\left(c^2\vec k^2+\frac{m^2c^4}{\hbar^2}\right)+\vec k^2=-\frac{m^2c^2}{\hbar^2},
 $$
 
 which is exactly the parent's condition
 
 $$
-\boxed{\;\tilde k\tilde k^{\natural}=-\frac{m^2c^2}{\hbar^2}.\;}
+\boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2.\;}
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the wave biquaternion is the four-momentum biquaternion divided by $\hbar$, $\tilde K=\tilde P/\hbar$; the biquaternion norm being quadratic, $\langle\tilde K\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$, exactly as $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the wave biquaternion is $\tilde P/\hbar$; the biquaternion norm being quadratic, $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$, exactly as $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
 
-The two roots of the dispersion relation, $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$, are the two frequency branches, and they are precisely the positive- and negative-frequency spinors $w$ and $v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space that the parent article quotes for the massive equation. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\vec p|=1\ \mathrm{MeV}/c$, the dispersion relation gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the corresponding wave biquaternion has $\langle\tilde K\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to one part in $10^{15}$.
+The two roots of the dispersion relation, $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$, are the two frequency branches, and they are precisely the positive- and negative-frequency spinors $w$ and $v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space that the parent article quotes for the massive equation. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\vec p|=1\ \mathrm{MeV}/c$, the dispersion relation gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the corresponding wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to one part in $10^{15}$.
 
 ## Summary
 
@@ -326,7 +326,7 @@ The six problems test the parent article's plane-wave solutions and confirm them
 3. **Spin sums.** The completeness relations $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ follow from the two-spinor completeness relation, and satisfy $(\not p+m)(\not p-m)=0$ on shell.
 4. **Massless limit.** In the chiral basis each helicity eigenstate becomes a single Weyl spinor, with positive helicity locking to right-handedness and negative helicity to left-handedness; the mass term is the only term coupling the two chiralities.
 5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
-6. **Mass shell.** The biquaternionic condition $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ is the biquaternion-norm statement $\tilde K=\tilde P/\hbar$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
+6. **Mass shell.** The biquaternionic condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 
 Two items needed in this exercise are not displayed in the parent article: the chiral negative-frequency spinors $v_\pm$ (constructed in Problem 4) and the explicit change-of-basis matrix $U$ (constructed in Problem 5). The parent states the existence of both but does not exhibit them; the constructions above are the ones that reproduce its stated results.
 
@@ -347,8 +347,8 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $\xi^{(r)},\eta^{(r)}$; $\chi_\pm$ | Two-spinors; helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\chi_\pm=\pm\chi_\pm$ |
 | $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
 | $S^{\mu\nu}=\tfrac i4[\gamma^\mu,\gamma^\nu]$ | Lorentz generators of the spinor representation |
-| $\tilde K=i\omega/c\,e_t+\vec k$ | Wave biquaternion (four-wavevector) |
-| $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
+| $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion (four-wavevector) |
+| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
 
 ## Further Reading
 

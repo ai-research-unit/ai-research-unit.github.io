@@ -496,50 +496,50 @@ in agreement with the companion article on the Klein–Gordon equation, whose op
 Plane-wave solutions of the massless biquaternionic Dirac equation are
 
 $$
-\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{k}\tilde{Q}^{\natural}\right)\right)
+\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{Q}^{\natural}\right)/\hbar\right)
 = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)),
 $$
 
-where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{k} = i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde{Q} = e_t (ict) + \vec e_x x + \vec e_y y + \vec e_z z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{\Psi}_0$ and differentiates to left multiplication by $i\tilde{k}$,
+where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{P}/\hbar = i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde{Q} = e_t (ict) + \vec e_x x + \vec e_y y + \vec e_z z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{\Psi}_0$ and differentiates to left multiplication by $i\tilde{P}/\hbar$,
 
 $$
-\tilde{\nabla}\tilde{\Psi} = i\,\tilde{k}\,\tilde{\Psi},
+\tilde{\nabla}\tilde{\Psi} = i\,\tilde P\tilde\Psi/\hbar,
 $$
 
 so the equation $\tilde{\nabla}\tilde{\Psi} = 0$ becomes
 
 $$
-\tilde{k}\tilde{\Psi}_0 = 0,
+\tilde P\tilde\Psi_0/\hbar = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{k}$. This is the biquaternion form of the **Weyl equation** $\not k\psi_0 = 0$.
+i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{P}/\hbar$. This is the biquaternion form of the **Weyl equation** $\not k\psi_0 = 0$.
 
-Nonzero solutions of $\tilde{k}\tilde{\Psi}_0 = 0$ exist only when $\tilde{k}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{k}$ is null: $\tilde{k}\tilde{k}^{\natural} = 0$, equivalently $k_0^2 = \|\vec k\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, corresponding to the two spin states of a massless fermion; for non-null $\tilde{k}$ the kernel is trivial. This matches the two-component structure of the Weyl spinor.
+Nonzero solutions of $\tilde P\tilde\Psi_0/\hbar = 0$ exist only when $\tilde{P}/\hbar$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{P}/\hbar$ is null: $\tilde{P}\tilde{P}^{\natural}/\hbar^{2} = 0$, equivalently $k_0^2 = \|\vec k\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, corresponding to the two spin states of a massless fermion; for non-null $\tilde{P}/\hbar$ the kernel is trivial. This matches the two-component structure of the Weyl spinor.
 
 ### The Massive Case
 
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{k}\tilde{Q}^{\natural}\right)\right) = \tilde{\Psi}_0\,\exp(i\theta), \qquad \theta = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t,
+\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{Q}^{\natural}\right)/\hbar\right) = \tilde{\Psi}_0\,\exp(i\theta), \qquad \theta = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t,
 $$
 
-does solve the pair, with one polarization biquaternion per chirality, $\tilde{\Psi}_0 = \tilde{\Psi}_0^L + \tilde{\Psi}_0^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{k}$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $i\tilde{k}^{\natural}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion per chirality, $\tilde{\Psi}_0 = \tilde{\Psi}_0^L + \tilde{\Psi}_0^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{P}/\hbar$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $i\tilde{P}^{\natural}/\hbar$, so the chiral pair becomes the momentum-space system
 
 $$
-i\tilde{k}\tilde{\Psi}_0^R = m\tilde{\Psi}_0^L, \qquad i\tilde{k}^{\natural}\tilde{\Psi}_0^L = m\tilde{\Psi}_0^R .
+i\tilde P\tilde\Psi_0^R/\hbar = m\tilde{\Psi}_0^L, \qquad i\tilde P^{\natural}\tilde\Psi_0^L/\hbar = m\tilde{\Psi}_0^R .
 $$
 
 Eliminating $\tilde{\Psi}_0^L$ gives
 
 $$
-\tilde{k}\tilde{k}^{\natural}\,\tilde{\Psi}_0^R = -m^2\,\tilde{\Psi}_0^R ,
+\tilde{P}\tilde{P}^{\natural}/\hbar^{2}\,\tilde{\Psi}_0^R = -m^2\,\tilde{\Psi}_0^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
 
 $$
-\tilde{k}\tilde{k}^{\natural} = -m^2 c^2/\hbar^2,
+\tilde P\tilde P^{\natural}=-m^2c^2,
 $$
 
 i.e., $-k_0^2 + \|\vec k\|^2 = -m^2 c^2/\hbar^2$, which is the standard mass-shell relation $k_0^2 = \|\vec k\|^2 + m^2 c^2/\hbar^2$ (with $k_0 = E/\hbar c$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 + m^2 c^4$ (with $\vec p = \hbar\vec k$), the same shell as the four-momentum kinematics of the preceding section. The two signs of $k_0$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four components of the Dirac spinor.
@@ -620,10 +620,10 @@ $$
 \mathrm{rot}\,\vec H = 0, \qquad \mathrm{rot}\,\vec E = 0, \qquad \mathrm{div}(\epsilon\vec E) = 0, \qquad \mathrm{div}(\mu\vec H) = 0 ,
 $$
 
-carries its position dependence only through the two divergence equations, and on the normalised fields $\tilde{\mathbf{E}} := \sqrt{\epsilon}\,\vec E$, $\tilde{\mathbf{H}} := \sqrt{\mu}\,\vec H$ it becomes the pair of first-order equations with constant-free leading part,
+carries its position dependence only through the two divergence equations, and on the normalised fields $\vec E_{\mathrm n} := \sqrt{\epsilon}\,\vec E$, $\vec H_{\mathrm n} := \sqrt{\mu}\,\vec H$ it becomes the pair of first-order equations with constant-free leading part,
 
 $$
-\bigl[D + M_{\vec{\nu}}\bigr]\tilde{\mathbf{E}} = 0, \qquad \bigl[D + M_{\vec{\nu}'}\bigr]\tilde{\mathbf{H}} = 0,
+\bigl[D + M_{\vec{\nu}}\bigr]\vec E_{\mathrm n} = 0, \qquad \bigl[D + M_{\vec{\nu}'}\bigr]\vec H_{\mathrm n} = 0,
 \qquad
 \vec{\nu} := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec{\nu}' := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
 $$
@@ -734,7 +734,7 @@ The biquaternion formulation adds three things:
 
 **2. A compact notation for the spinor structure.** The two-component structure of the Weyl spinor is naturally encoded in the biquaternion algebra, without the need for explicit spinor indices. The left- and right-handed spinors are the two chiral components of the field — the two minimal left ideals of $\mathbb{B}$ — and the mass term is the linear coupling between them.
 
-**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}$, the four-momentum $\tilde{P}$, and the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{k}$ and the four-position $\tilde{Q}$.
+**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}$, the four-momentum $\tilde{P}$, and the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{P}/\hbar$ and the four-position $\tilde{Q}$.
 
 ### The Mass as a Non-Integrable Phase
 
@@ -792,7 +792,7 @@ for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Ps
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{Q} = ict\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}}$.
 
-The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ with $\tilde{k}\tilde{\Psi}_0 = 0$ (nonzero solutions only for null $\tilde{k}$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2 c^2/\hbar^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
+The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
 
 The spherical and cylindrical solutions are constructed by the methods of Clifford analysis, via the monogenic completion of harmonic functions. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
 
@@ -835,7 +835,7 @@ The same construction has two consequences that belong to the equation rather th
 | $P_\pm$ | Right multiplication by the complementary null idempotents $\tfrac12(1\pm\alpha/\gamma)$; they split the pseudoscalar-potential equation into two scalar-coefficient equations, and they are the two helicity projectors of the time-harmonic field |
 | $D_\omega = i\omega\gamma_0 + \sum_{k=1}^{3}\gamma_k\partial/\partial Q_k$ | Amplitude operator of the massless harmonic spinor field |
 | $K_\omega = A^{-1} K A$ | Its Cauchy-type operator; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$ hold for it |
-| $\tilde{k}$ | Wave biquaternion |
+| $\tilde{P}/\hbar$ | Wave biquaternion |
 | $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi K_\mu\gamma^\mu\Psi$; $K_\mu=p_\mu/m$ on shell, $K_\mu K^\mu=1$ |
 | $B^\mu, N^\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=B^\mu g_{\mu\nu}i\gamma^\nu v$, $\Psi_2=N^\mu g_{\mu\nu}i\gamma^\nu u$ |
 | $G^\mu = B^\mu + iN^\mu$ | s-Vector, the vector representation of the same spinor |

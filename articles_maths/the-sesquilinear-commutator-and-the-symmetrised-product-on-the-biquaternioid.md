@@ -105,15 +105,15 @@ so the bracket is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{M}_-$ into the ant
 
 ### The Two Halves
 
-**Theorem (the bracket on the two halves).** For $\tilde h_1,\tilde h_2\in\mathbb{M}_+$ and $\tilde s_1,\tilde s_2\in\mathbb{M}_-$,
+**Theorem (the bracket on the two halves).** For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$ and $\tilde s_1,\tilde s_2\in\mathbb{M}_-$,
 
 $$
-[\tilde h_1,\tilde h_2]_\varsigma=[\tilde h_1,\tilde h_2] , \qquad [\tilde s_1,\tilde s_2]_\varsigma=-[\tilde s_1,\tilde s_2] , \qquad [\tilde s_1,\tilde h_1]_\varsigma=\tilde s_1\tilde h_1+\tilde h_1\tilde s_1 ,
+[\tilde H_1,\tilde H_2]_\varsigma=[\tilde H_1,\tilde H_2] , \qquad [\tilde s_1,\tilde s_2]_\varsigma=-[\tilde s_1,\tilde s_2] , \qquad [\tilde s_1,\tilde H_1]_\varsigma=\tilde s_1\tilde H_1+\tilde H_1\tilde s_1 ,
 $$
 
 where the brackets on the right are the ordinary commutator of the algebra.
 
-**Proof.** For Hermitian $\tilde h_1$ the derived operation is the algebra product in both slots, $\tilde h_1\star\tilde h_2=\tilde h_1\tilde h_2$, so the bracket is the ordinary commutator; for skew-Hermitian $\tilde s_1$ the involution contributes a sign, $\tilde s_1^{*}=-\tilde s_1$, so $[\tilde s_1,\tilde s_2]_\varsigma=-(\tilde s_1\tilde s_2-\tilde s_2\tilde s_1)$; and for the mixed pair $[\tilde s_1,\tilde h_1]_\varsigma=\tilde s_1\tilde h_1^{*}-\tilde h_1\tilde s_1^{*}=\tilde s_1\tilde h_1+\tilde h_1\tilde s_1$. This is the theorem of *The Sesquilinear Commutator*, §*The Two Halves*.
+**Proof.** For Hermitian $\tilde H_1$ the derived operation is the algebra product in both slots, $\tilde H_1\star\tilde H_2=\tilde H_1\tilde H_2$, so the bracket is the ordinary commutator; for skew-Hermitian $\tilde s_1$ the involution contributes a sign, $\tilde s_1^{*}=-\tilde s_1$, so $[\tilde s_1,\tilde s_2]_\varsigma=-(\tilde s_1\tilde s_2-\tilde s_2\tilde s_1)$; and for the mixed pair $[\tilde s_1,\tilde H_1]_\varsigma=\tilde s_1\tilde H_1^{*}-\tilde H_1\tilde s_1^{*}=\tilde s_1\tilde H_1+\tilde H_1\tilde s_1$. This is the theorem of *The Sesquilinear Commutator*, §*The Two Halves*.
 
 **Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
 
@@ -124,23 +124,23 @@ where the brackets on the right are the ordinary commutator of the algebra.
 **Theorem.** The Jacobi identity for the sesquilinear bracket fails on $\mathbb{B}$. With the three Hermitian elements
 
 $$
-\tilde P=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_1(\vec u_z) , \qquad \tilde Q=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_1(-\vec u_z) , \qquad \tilde H=i\vec e_x ,
+\tilde P=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_1(\vec u_z) , \qquad \tilde Q=\tfrac12(e_t-i\vec e_z)=\tilde\Pi_1(-\vec u_z) , \qquad \tilde W=i\vec e_x ,
 $$
 
 the Jacobi sum is
 
 $$
-[[\tilde P,\tilde Q]_\varsigma,\tilde H]_\varsigma+[[\tilde Q,\tilde H]_\varsigma,\tilde P]_\varsigma+[[\tilde H,\tilde P]_\varsigma,\tilde Q]_\varsigma=2\vec e_y\neq0 .
+[[\tilde P,\tilde Q]_\varsigma,\tilde W]_\varsigma+[[\tilde Q,\tilde W]_\varsigma,\tilde P]_\varsigma+[[\tilde W,\tilde P]_\varsigma,\tilde Q]_\varsigma=2\vec e_y\neq0 .
 $$
 
-**Proof.** The three elements are Hermitian: the two projections by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and $\tilde H=i\vec e_x$ because $\vec e_x^{*}=-\vec e_x$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_t+i\vec e_z)(e_t-i\vec e_z)=\tfrac14(e_t-e_t)=0$ and likewise in the other order. The other two are
+**Proof.** The three elements are Hermitian: the two projections by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and $\tilde W=i\vec e_x$ because $\vec e_x^{*}=-\vec e_x$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_t+i\vec e_z)(e_t-i\vec e_z)=\tfrac14(e_t-e_t)=0$ and likewise in the other order. The other two are
 
 $$
-[\tilde Q,\tilde H]_\varsigma=\tilde Q\tilde H-\tilde H\tilde Q=\tfrac12\bigl(\vec e_y+i\vec e_x\bigr)-\tfrac12\bigl(i\vec e_x-\vec e_y\bigr)=\vec e_y , \qquad
-[\tilde H,\tilde P]_\varsigma=\tilde H\tilde P-\tilde P\tilde H=\tfrac12\bigl(\vec e_y+i\vec e_x\bigr)-\tfrac12\bigl(i\vec e_x-\vec e_y\bigr)=\vec e_y ,
+[\tilde Q,\tilde W]_\varsigma=\tilde Q\tilde W-\tilde W\tilde Q=\tfrac12\bigl(\vec e_y+i\vec e_x\bigr)-\tfrac12\bigl(i\vec e_x-\vec e_y\bigr)=\vec e_y , \qquad
+[\tilde W,\tilde P]_\varsigma=\tilde W\tilde P-\tilde P\tilde W=\tfrac12\bigl(\vec e_y+i\vec e_x\bigr)-\tfrac12\bigl(i\vec e_x-\vec e_y\bigr)=\vec e_y ,
 $$
 
-where the basis products of *Introduction to the General Plain Sesqualgebra* give the two expansions. Both inner values are the skew-Hermitian $\vec e_y$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde h]_\varsigma=\tilde s\tilde h+\tilde h\tilde s$:
+where the basis products of *Introduction to the General Plain Sesqualgebra* give the two expansions. Both inner values are the skew-Hermitian $\vec e_y$, and the outer brackets read a skew-Hermitian element with a Hermitian one by the mixed rule $[\tilde s,\tilde H]_\varsigma=\tilde s\tilde H+\tilde H\tilde s$:
 
 $$
 [\vec e_y,\tilde P]_\varsigma=\vec e_y\tilde P+\tilde P\vec e_y=\tfrac12\bigl(\vec e_y+i\vec e_x\bigr)+\tfrac12\bigl(\vec e_y-i\vec e_x\bigr)=\vec e_y , \qquad
@@ -207,19 +207,19 @@ $$
 
 ### The Hermitian Half
 
-**Theorem (the symmetrisation on the Hermitian half).** For $\tilde h_1,\tilde h_2\in\mathbb{M}_+$,
+**Theorem (the symmetrisation on the Hermitian half).** For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$,
 
 $$
-\tilde h_1\circ\tilde h_2=\tfrac12\bigl(\tilde h_1\tilde h_2+\tilde h_2\tilde h_1\bigr) ,
+\tilde H_1\circ\tilde H_2=\tfrac12\bigl(\tilde H_1\tilde H_2+\tilde H_2\tilde H_1\bigr) ,
 $$
 
 the plain symmetrisation, and with this product $\mathbb{M}_+$ is a commutative Jordan algebra over $\mathbb{R}$, with the Jordan identity
 
 $$
-(\tilde h_1\circ\tilde h_2)\circ(\tilde h_1\circ\tilde h_1)=\tilde h_1\circ\bigl(\tilde h_2\circ(\tilde h_1\circ\tilde h_1)\bigr) .
+(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ\bigl(\tilde H_2\circ(\tilde H_1\circ\tilde H_1)\bigr) .
 $$
 
-**Proof.** For Hermitian $\tilde h_1$ the derived operation is the algebra product, $\tilde h_1\star\tilde h_2=\tilde h_1\tilde h_2$ and $\tilde h_2\star\tilde h_1=\tilde h_2\tilde h_1$; the two symmetrisations therefore agree on the half, and the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. This is the theorem of *The Sesquilinear Symmetrised Product*, §*On the Hermitian Part*.
+**Proof.** For Hermitian $\tilde H_1$ the derived operation is the algebra product, $\tilde H_1\star\tilde H_2=\tilde H_1\tilde H_2$ and $\tilde H_2\star\tilde H_1=\tilde H_2\tilde H_1$; the two symmetrisations therefore agree on the half, and the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. This is the theorem of *The Sesquilinear Symmetrised Product*, §*On the Hermitian Part*.
 
 **Remark.** The Jordan algebra is the Hermitian Jordan algebra of *The Hermitian Jordan Algebra* and of *The 12 Products of the Biquaternioid Complex Space*, and it is the positive cone theory of *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*. The sesquilinear symmetrisation is therefore a Jordan product exactly on the Hermitian half, and there it is the same product as the one the algebra symmetrisation of the same article carries on that half.
 
@@ -309,9 +309,9 @@ The symmetrised product is the polarisation of the square, takes its values in t
 | $\tilde P\star\tilde Q=\tilde P\circ\tilde Q+\tfrac12[\tilde P,\tilde Q]_\varsigma$ | the split of the multiplication |
 | $\tilde P\circ\tilde P=\tilde P\star\tilde P=\tilde P\tilde P^{*}$ | the diagonal is the square |
 | $\mathbb{R}=\mathbb{C}^{\varsigma}$ | the fixed field, the ring of scalars of the two operations |
-| $[\tilde h_1,\tilde h_2]_\varsigma=[\tilde h_1,\tilde h_2]$ | the bracket on the Hermitian half |
+| $[\tilde H_1,\tilde H_2]_\varsigma=[\tilde H_1,\tilde H_2]$ | the bracket on the Hermitian half |
 | $[\tilde s_1,\tilde s_2]_\varsigma=-[\tilde s_1,\tilde s_2]$ | the bracket on the skew-Hermitian half, the unitary Lie algebra |
-| $(\tilde h_1\circ\tilde h_2)\circ(\tilde h_1\circ\tilde h_1)=\tilde h_1\circ(\tilde h_2\circ(\tilde h_1\circ\tilde h_1))$ | the Jordan identity, on $\mathbb{M}_+$ |
+| $(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ(\tilde H_2\circ(\tilde H_1\circ\tilde H_1))$ | the Jordan identity, on $\mathbb{M}_+$ |
 | $\tilde\Pi_1(\vec u_z),\tilde\Pi_1(-\vec u_z),i\vec e_x$ | the Hermitian triple whose Jacobi sum is $2\vec e_y$ |
 | $\tfrac12(i\vec e_x-\vec e_y),\tfrac12(e_t-i\vec e_z)$ | the pair whose Jordan identity fails, $\tfrac{i}{4}\vec e_x$ against $0$ |
 | $e_\mu\circ e_\nu=\delta_{\mu\nu}e_t$ | the symmetrised product on the basis |

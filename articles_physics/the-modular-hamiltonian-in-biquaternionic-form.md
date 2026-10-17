@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_t)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=\exp(-\tilde K)$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=\exp(-i\tilde Kt)$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_t+i\vec h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_t)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=\exp(-\tilde K)$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=\exp(-i\tilde Kt)$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_t+i\vec h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -73,17 +73,17 @@ $$
 \Delta=\exp(-\tilde K),\qquad \Delta^{it}=\exp(-i\tilde Kt),\qquad
 \sigma_t(\tilde A)=\exp(-i\tilde Kt)\tilde A \exp(i\tilde Kt).
 $$
-The opposite choice, $\Delta=\exp(+\tilde K)$ with $\Delta^{it}=\exp(+i\tilde Kt)$, is the same equation with $\tilde K\mapsto-\tilde K$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t}$, not $\sigma_t$, and reversing the sign of $\tilde K$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde\rho=\exp(-\tilde K)$ and $\sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\tilde\rho^{-it}$, which is the parent's convention; the generator identity $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it}=\exp(+i\tilde Kt)$ together with $\tilde K=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it}=\Delta^{-it}$ — and the sign is fixed here once, in the direction above, and held.
+The opposite choice, $\Delta=\exp(+\tilde K)$ with $\Delta^{it}=\exp(+i\tilde Kt)$, is the same equation with $\tilde K\mapsto-\tilde K$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t}$, not $\sigma_t$, and reversing the sign of $\tilde K$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}=\exp(-\tilde K)$ and $\sigma_t(\tilde A)=\tilde{Ϛ}^{it}\tilde A\tilde{Ϛ}^{-it}$, which is the parent's convention; the generator identity $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it}=\exp(+i\tilde Kt)$ together with $\tilde K=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it}=\Delta^{-it}$ — and the sign is fixed here once, in the direction above, and held.
 
 ### The State Is Thermal with Respect to $\tilde K$
 
-The KMS property gives $\tilde K$ its **physical interpretation**. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
+The KMS property gives $\tilde K$ its **physical interpretation**. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive definite and of trace one,
 $$
-\omega(\tilde A)=\mathrm{Tr}(\tilde\rho\,\tilde A),
+\omega(\tilde A)=\mathrm{Tr}(\tilde{Ϛ}\,\tilde A),
 \qquad
-\tilde\rho=\exp(-\tilde K),
+\tilde{Ϛ}=\exp(-\tilde K),
 \qquad
-\tilde K=-\log\tilde\rho,
+\tilde K=-\log\tilde{Ϛ},
 $$
 so the state is the Gibbs state of $\tilde K$ at unit temperature. The physical Hamiltonian is recovered by rescaling: for a Gibbs state at inverse temperature $\beta$,
 $$
@@ -100,47 +100,47 @@ so $\tilde K$ differs from $\beta\tilde H$ by the additive scalar $\log Z$ that 
 The parents realize the construction in the algebra itself. Take
 $$
 M=\mathbb{B}\cong M_2(\mathbb{C}),\qquad \Omega=e_t,\qquad
-\omega(\tilde A)=\mathrm{Tr}(\tilde\rho\,\tilde A),
+\omega(\tilde A)=\mathrm{Tr}(\tilde{Ϛ}\,\tilde A),
 $$
-with $\tilde\rho\in\mathbb{M}_+$ positive definite and of trace one, and the GNS inner product
+with $\tilde{Ϛ}\in\mathbb{M}_+$ positive definite and of trace one, and the GNS inner product
 $$
-\langle\tilde A,\tilde B\rangle_{\tilde\rho}=\mathrm{Tr}\big(\tilde\rho\,\tilde A^{*}\tilde B\big).
+\langle\tilde A,\tilde B\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde B\big).
 $$
-The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde\rho>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde A)=\tilde A^{*}$ in closed form:
+The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde{Ϛ}>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde A)=\tilde A^{*}$ in closed form:
 $$
-\Delta(\tilde A)=\tilde\rho\,\tilde A\,\tilde\rho^{-1},
+\Delta(\tilde A)=\tilde{Ϛ}\,\tilde A\,\tilde{Ϛ}^{-1},
 \qquad
-\Delta^{1/2}(\tilde A)=\tilde\rho^{1/2}\tilde A\,\tilde\rho^{-1/2},
+\Delta^{1/2}(\tilde A)=\tilde{Ϛ}^{1/2}\tilde A\,\tilde{Ϛ}^{-1/2},
 \qquad
-J(\tilde A)=\tilde\rho^{1/2}\tilde A^{*}\tilde\rho^{-1/2},
+J(\tilde A)=\tilde{Ϛ}^{1/2}\tilde A^{*}\tilde{Ϛ}^{-1/2},
 \qquad
-\sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\,\tilde\rho^{-it}.
+\sigma_t(\tilde A)=\tilde{Ϛ}^{it}\tilde A\,\tilde{Ϛ}^{-it}.
 $$
-Since $\tilde\rho>0$, its logarithm is defined and
+Since $\tilde{Ϛ}>0$, its logarithm is defined and
 $$
-\tilde K=-\log\tilde\rho\ \in\mathbb{M}_+
+\tilde K=-\log\tilde{Ϛ}\ \in\mathbb{M}_+
 $$
-is a Hermitian element of the algebra. The two displays are the same $\tilde K$ seen twice: as an algebra element, $\tilde\rho=\exp(-\tilde K)$; as the modular operator on the Hilbert space, $\Delta(\tilde A)=\exp(-\tilde K)\tilde A\,\exp(\tilde K)$, so that
+is a Hermitian element of the algebra. The two displays are the same $\tilde K$ seen twice: as an algebra element, $\tilde{Ϛ}=\exp(-\tilde K)$; as the modular operator on the Hilbert space, $\Delta(\tilde A)=\exp(-\tilde K)\tilde A\,\exp(\tilde K)$, so that
 $$
 \Delta^{it}(\tilde A)=\exp(-i\tilde Kt)\tilde A\,\exp(i\tilde Kt).
 $$
-That $\tilde K$ lies in $\mathbb{M}_+$ is the parent's algebraic fact, and it is the reason the corpus says the modular Hamiltonian is an object of the informational sector: the state $\tilde\rho=\exp(-\tilde K)$ and the generator $\tilde K$ are both Hermitian, while the material sector $\mathbb{M}_-$ supplies the imaginary-time direction in which the KMS analyticity takes place.
+That $\tilde K$ lies in $\mathbb{M}_+$ is the parent's algebraic fact, and it is the reason the corpus says the modular Hamiltonian is an object of the informational sector: the state $\tilde{Ϛ}=\exp(-\tilde K)$ and the generator $\tilde K$ are both Hermitian, while the material sector $\mathbb{M}_-$ supplies the imaginary-time direction in which the KMS analyticity takes place.
 
 ### The Spectral Form of $\tilde K$
 
 Write the faithful state in Bloch form,
 $$
-\tilde\rho=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),
+\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),
 \qquad |\vec r|<1,
 \qquad
 \lambda_\pm=\tfrac12\big(1\pm|\vec r|\big)>0,
 $$
-with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde\rho$ and $\vec u_r=\vec r/|\vec r|$. Then
+with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde{Ϛ}$ and $\vec u_r=\vec r/|\vec r|$. Then
 $$
-\tilde K=-\log\tilde\rho
+\tilde K=-\log\tilde{Ϛ}
 =a_0\,e_t+i\,\vec a\cdot\mathbf e,
 \qquad
-a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec r|^2\big)\Big),
+a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec r|^2\big)\Big),
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r.
 $$
@@ -148,9 +148,9 @@ This is the explicit operator: a real scalar part fixed by the determinant of th
 $$
 \tilde K=(\log 2)e_t,\qquad \Delta=1,\qquad \sigma_t=\mathrm{id},
 $$
-the trivial modular flow the parent identifies. A pure state $|\vec r|\to1$ gives $\lambda_-\to0$, so $\det\tilde\rho\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\Delta$ acquires the eigenvalue $0$, and $-\log\Delta$ does not exist.
+the trivial modular flow the parent identifies. A pure state $|\vec r|\to1$ gives $\lambda_-\to0$, so $\det\tilde{Ϛ}\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\Delta$ acquires the eigenvalue $0$, and $-\log\Delta$ does not exist.
 
-The eigenvalues of $\Delta$ on the algebra are the ratios of the eigenvalues of $\tilde\rho$,
+The eigenvalues of $\Delta$ on the algebra are the ratios of the eigenvalues of $\tilde{Ϛ}$,
 $$
 \operatorname{spec}\Delta=\Big\{\frac{\lambda_i}{\lambda_j}\Big\}
 =\Big\{1,\ \frac{\lambda_+}{\lambda_-},\ \frac{\lambda_-}{\lambda_+}\Big\},
@@ -159,9 +159,9 @@ all strictly positive because $\lambda_\pm>0$. This is the concrete form of $\De
 
 ### $\tilde K$ Generates the Same Flow as $\Delta^{it}$
 
-The two displays are equal, not merely analogous. From $\tilde\rho=\exp(-\tilde K)$,
+The two displays are equal, not merely analogous. From $\tilde{Ϛ}=\exp(-\tilde K)$,
 $$
-\Delta^{it}(\tilde A)=\tilde\rho^{it}\tilde A\,\tilde\rho^{-it}
+\Delta^{it}(\tilde A)=\tilde{Ϛ}^{it}\tilde A\,\tilde{Ϛ}^{-it}
 =\big(\exp(-\tilde K)\big)^{it}\tilde A\big(\exp(-\tilde K)\big)^{-it}
 =\exp(-i\tilde Kt)\tilde A\,\exp(i\tilde Kt),
 $$
@@ -189,10 +189,10 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 |---|---|
 | $\Delta$ eigenvalues $\lambda_+/\lambda_-$, $\lambda_-/\lambda_+$ | $3.333849$, $0.299954$, both $>0$ |
 | $\tilde K$ Hermitian, components real | $a_0=0.864392$, $\vec a=(-0.335401,-0.447202,0.223601)$ |
-| $a_0=-\tfrac12\log\det\tilde\rho$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
-| $\sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\tilde\rho^{-it}$ equals $\exp(-i\tilde Kt)\tilde A \exp(i\tilde Kt)$, 12 random $(\tilde A,t)$ | max error $0$ |
+| $a_0=-\tfrac12\log\det\tilde{Ϛ}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
+| $\sigma_t(\tilde A)=\tilde{Ϛ}^{it}\tilde A\tilde{Ϛ}^{-it}$ equals $\exp(-i\tilde Kt)\tilde A \exp(i\tilde Kt)$, 12 random $(\tilde A,t)$ | max error $0$ |
 | $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
-| $\mathrm{Tr}(\exp(-\tilde K))=\mathrm{Tr}(\tilde\rho)=1$ | $1.0$ to $10^{-39}$ |
+| $\mathrm{Tr}(\exp(-\tilde K))=\mathrm{Tr}(\tilde{Ϛ})=1$ | $1.0$ to $10^{-39}$ |
 
 The second state is the single-mode thermal state of the partition-function article, $\tilde H=\omega\tilde N_{\mathrm{tr}}$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
@@ -208,7 +208,7 @@ Z=2\exp(-\beta h_0)\cosh(\beta|\vec h|)=1.547753
 $$
 and $\tilde K-(\beta\tilde H+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
-**The failure when positivity is dropped.** If $\tilde\rho$ is not positive definite — say $\tilde\rho=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde A$ with $\langle\tilde A,\tilde A\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde A^{*}\tilde A)=0$, hence $\tilde A\Omega=0$, and the Tomita rule $\tilde A\Omega\mapsto\tilde A^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde K$ is exactly the hypothesis carried by $\Delta$.
+**The failure when positivity is dropped.** If $\tilde{Ϛ}$ is not positive definite — say $\tilde{Ϛ}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde A$ with $\langle\tilde A,\tilde A\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde A^{*}\tilde A)=0$, hence $\tilde A\Omega=0$, and the Tomita rule $\tilde A\Omega\mapsto\tilde A^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde A)=\tilde{Ϛ}\tilde A\tilde{Ϛ}^{-1}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde K$ is exactly the hypothesis carried by $\Delta$.
 
 The verification was run on the state that was chosen for its genericity and on a second, thermal state; no displayed identity was checked only on the case that suggested it.
 
@@ -222,9 +222,9 @@ $$
 $$
 is what makes the statement "the state is thermal with respect to $\tilde K$" computable, for two reasons.
 
-First, since $\tilde K\in\mathbb{M}_+$, the exponential $\exp(-\tilde K)=\tilde\rho$ also lies in $\mathbb{M}_+$, and its trace is a doubled scalar part:
+First, since $\tilde K\in\mathbb{M}_+$, the exponential $\exp(-\tilde K)=\tilde{Ϛ}$ also lies in $\mathbb{M}_+$, and its trace is a doubled scalar part:
 $$
-\mathrm{Tr}(\exp(-\tilde K))=2\,\mathrm{Sc}(\exp(-\tilde K))=2\,\mathrm{Sc}(\tilde\rho)=1 .
+\mathrm{Tr}(\exp(-\tilde K))=2\,\mathrm{Sc}(\exp(-\tilde K))=2\,\mathrm{Sc}(\tilde{Ϛ})=1 .
 $$
 The state is therefore the Gibbs state of $\tilde K$ at unit temperature with **unit** partition function, and every expectation is a scalar extraction:
 $$
@@ -247,13 +247,13 @@ $$
 $$
 the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h$. The trace formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde K)$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{M}_+$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h)^2=|\vec h|^2e_t$, so $\vec h$ and $e_t$ commute and the exponential splits.
 
-One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta\tilde H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde K$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a^{\mathrm{fop}}$ while leaving the state $\tilde\rho$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
+One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta\tilde H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde K$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a^{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
 
 ## Is the Modular Hamiltonian Local?
 
 ### Locality Is Not Visible in the Finite-Dimensional Model
 
-In $\mathbb{B}\cong M_2(\mathbb{C})$ every element is a finite matrix; there is no spacetime, no region, and no notion of an operator's support. Every faithful $\tilde\rho$ gives some $\tilde K\in\mathbb{M}_+$, and no $\tilde K$ is more or less local than any other. The question of locality therefore has no content in the algebra itself. It becomes meaningful only when the algebra is attached to spacetime regions, $V\mapsto\mathcal A(V)$, as in quantum field theory, and it is asked of the modular Hamiltonian $\tilde K_V$ of the vacuum state restricted to a region $V$.
+In $\mathbb{B}\cong M_2(\mathbb{C})$ every element is a finite matrix; there is no spacetime, no region, and no notion of an operator's support. Every faithful $\tilde{Ϛ}$ gives some $\tilde K\in\mathbb{M}_+$, and no $\tilde K$ is more or less local than any other. The question of locality therefore has no content in the algebra itself. It becomes meaningful only when the algebra is attached to spacetime regions, $V\mapsto\mathcal A(V)$, as in quantum field theory, and it is asked of the modular Hamiltonian $\tilde K_V$ of the vacuum state restricted to a region $V$.
 
 ### The Generic Answer: Nonlocal
 
@@ -322,7 +322,7 @@ $$
 $$
 So the modular Hamiltonian's action here is two-sided, not an inner commutator: writing $\tilde K_W=2\pi G_1$ identifies the algebra element, and the flow it generates on $\mathbb{M}_-$ is the rotor conjugation above. This is the same warning the curved-spacetime and Lorentz-transformation companions give for boosts, and the wedge is a case where it is load-bearing — a reader who generates the flow by $-i[\tilde K_W,\cdot]$ obtains a rotation about $\vec e_x$, not the boost.
 
-There is a structural reason the wedge case looks different from the finite-dimensional model, and it should be stated rather than smoothed over. The wedge algebra of a quantum field theory is a type III von Neumann algebra, and its modular flow is **outer**: no element of the algebra implements it as an inner automorphism, and no trace, hence no density matrix, exists. The finite-dimensional $\mathbb{B}$ is a type I$_2$ factor, semifinite, and its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$; that is why $\tilde K=-\log\tilde\rho$ generates the flow by a commutator there. In the wedge case the modular Hamiltonian $2\pi G_1$ is a **geometric** generator — a local object, a boost — and not an inner element of the algebra, even though its biquaternion representative $G_1=i\vec e_x$ is an element of $\mathbb{B}$. The two statements "$\tilde K\in\mathbb{M}_+$" and "$\tilde K$ generates the modular flow" therefore hold in both cases, but their mechanisms differ: inner commutator in the finite-dimensional model, geometric outer flow in the wedge. The parent's type gap — that $\mathbb{B}$ lies on the semifinite side and cannot host an outer modular flow — is exactly the gap that separates the two.
+There is a structural reason the wedge case looks different from the finite-dimensional model, and it should be stated rather than smoothed over. The wedge algebra of a quantum field theory is a type III von Neumann algebra, and its modular flow is **outer**: no element of the algebra implements it as an inner automorphism, and no trace, hence no density matrix, exists. The finite-dimensional $\mathbb{B}$ is a type I$_2$ factor, semifinite, and its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$; that is why $\tilde K=-\log\tilde{Ϛ}$ generates the flow by a commutator there. In the wedge case the modular Hamiltonian $2\pi G_1$ is a **geometric** generator — a local object, a boost — and not an inner element of the algebra, even though its biquaternion representative $G_1=i\vec e_x$ is an element of $\mathbb{B}$. The two statements "$\tilde K\in\mathbb{M}_+$" and "$\tilde K$ generates the modular flow" therefore hold in both cases, but their mechanisms differ: inner commutator in the finite-dimensional model, geometric outer flow in the wedge. The parent's type gap — that $\mathbb{B}$ lies on the semifinite side and cannot host an outer modular flow — is exactly the gap that separates the two.
 
 ## What Is Established and What Is a Gap
 
@@ -336,7 +336,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 **Established (recomputed here).**
 
 - $\tilde K=-\log\Delta$ is defined by $\Delta=\exp(-\tilde K)$; with this convention $\Delta^{it}=\exp(-i\tilde Kt)$ and $d\sigma_t/dt|_{t=0}=-i[\tilde K,\tilde A]$, and the opposite sign convention reverses which flow is KMS.
-- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde\rho$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde K$ does not exist for a non-faithful one.
+- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde K$ does not exist for a non-faithful one.
 - $\tilde K$ generates the same flow as $\Delta^{it}$: verified symbolically and numerically on a generic rotated state and a thermal state.
 - $\mathrm{Tr}(\exp(-\tilde K))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\vec a=\beta\vec h$.
 - In the wedge, $\tilde K_W=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{M}_+$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
@@ -364,13 +364,13 @@ $$
 $$
 and the KMS state is the thermal state of $\tilde K$ at unit temperature. The definition inherits the whole hypothesis of the Tomita–Takesaki construction — $\Omega$ cyclic and separating, equivalently the state faithful — and strict positivity of $\Delta$ is that same hypothesis read off the spectrum: $\Delta=S^*S\ge0$ is automatic, but $-\log\Delta$ exists only when $\Delta>0$, and a non-faithful state leaves an eigenvalue $0$ at which the logarithm diverges. The sign in $\Delta=\exp(-\tilde K)$ is a convention that reverses which flow is KMS; it is fixed here as in the parents and held.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the parents' finite-dimensional model gives $\tilde\rho=\exp(-\tilde K)$ and
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the parents' finite-dimensional model gives $\tilde{Ϛ}=\exp(-\tilde K)$ and
 $$
-\tilde K=-\log\tilde\rho\in\mathbb{M}_+,
+\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+,
 \qquad
 \tilde K=a_0e_t+i\vec a\cdot\mathbf e,
 \qquad
-a_0=-\tfrac12\log\det\tilde\rho,
+a_0=-\tfrac12\log\det\tilde{Ϛ},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
@@ -393,10 +393,10 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\tilde K=-\log\Delta$ | Modular Hamiltonian; $\Delta=\exp(-\tilde K)$ |
 | $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}=\exp(-i\tilde Kt)\tilde A \exp(i\tilde Kt)$ | Modular flow |
 | $d\sigma_t/dt|_{t=0}=-i[\tilde K,\tilde A]$ | Generator identity (sign convention fixed here) |
-| $\tilde\rho\in\mathbb{M}_+$ | Faithful state, positive definite, trace one |
-| $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$ | Modular Hamiltonian in the finite-dimensional model |
-| $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde\rho$ |
-| $a_0=-\tfrac12\log\det\tilde\rho$ | Scalar part of $\tilde K$ |
+| $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state, positive definite, trace one |
+| $\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian in the finite-dimensional model |
+| $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}$ |
+| $a_0=-\tfrac12\log\det\tilde{Ϛ}$ | Scalar part of $\tilde K$ |
 | $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | Vector part of $\tilde K$ |
 | $\tilde K=\beta\tilde H+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |

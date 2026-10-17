@@ -96,7 +96,7 @@ $$
 $$
 
 A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the
-equation $\tilde\nabla\tilde F=-\tilde R$ is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the
+equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the
 material sector** the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being
 unchanged.
 

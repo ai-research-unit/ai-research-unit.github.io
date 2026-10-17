@@ -390,7 +390,7 @@ so the mass-shell condition is the statement that the four-momentum lies on the 
 **The four-current and the four-potential.** The electric four-current is
 
 $$
-\tilde{J} = i\rho c\,e_t + \vec J, \qquad \langle\tilde{J}\rangle_{\natural} = -\rho^2c^2 + \vec J^2 ,
+\tilde{J} = ic\rho\,e_t + \vec J, \qquad \langle\tilde{J}\rangle_{\natural} = -\rho^2c^2 + \vec J^2 ,
 $$
 
 and the four-potential is

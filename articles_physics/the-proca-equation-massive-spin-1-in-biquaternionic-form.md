@@ -86,7 +86,7 @@ $$
 \tilde{\nabla}\tilde{F} = m^2\,\tilde{A}.
 $$
 
-The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, with the external source $\tilde{R}$ replaced by a current proportional to the potential itself.
+The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the external source $\sqrt{\mu}\,\tilde{J}$ replaced by a current proportional to the potential itself.
 
 
 ### Why the equation is the right one
@@ -176,15 +176,15 @@ The Proca equation equates the first to $\mu^2A_t$ and the second to $\mu^2\vec 
 Write a plane-wave potential
 
 $$
-\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})), \qquad
+\tilde{A} = \tilde{A}_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})), \qquad
 \tilde{A}_0 = A_te_t + \vec a, \qquad
-\tilde{K} = i\frac{\omega}{c}\,e_t + \vec k,
+\tilde P = i\frac{\omega}{c}\,e_t + \vec k,
 $$
 
-where $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde{K}\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde{K}^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde P\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde P^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})),
+\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})),
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
@@ -199,10 +199,10 @@ the physical relativistic dispersion relation.
 
 ### The Lorenz condition on a plane wave
 
-The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the scalar part of $i\tilde{K}^{\natural}\tilde{A}_0$. Splitting $\tilde{K}^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,
+The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the scalar part of $i\tilde P^{\natural}\tilde{A}_0$. Splitting $\tilde P^{\natural} = i(\omega/c)e_t - \vec k$ and using $\vec k\vec a = -\vec k\cdot\vec a + \vec k\times\vec a$,
 
 $$
-\mathrm{Sc}\!\left(i\tilde{K}^{\natural}\tilde{A}_0\right)
+\mathrm{Sc}\!\left(i\tilde P^{\natural}\tilde{A}_0\right)
 = -\frac{\omega}{c}\,A_t + i\,\vec k\cdot\vec a,
 $$
 
@@ -350,7 +350,7 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
 | $\mu = mc/\hbar$ | Inverse Compton wavevector of the mass; $\mu^2=m^2c^2/\hbar^2$ |
-| $\tilde{K} = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
+| $\tilde P = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
 | $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$ | Massive dispersion relation |
 | $\vec a$, $A_t$ | Spatial amplitude (three real components) and time component fixed by Lorenz |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual on the field strength (companion article) |

@@ -32,7 +32,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$
 
-with $\mathbb{H}_{\mathbb{B}}$ the real quaternion subspace. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+with $\mathbb{H}_{\mathbb{B}}$ the real quaternion subspace. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The electron field carries the electron's data in the following objects.
 
@@ -128,8 +128,8 @@ in the notation of the companion solutions article. Its plane-wave solutions com
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $ict$ convention,
 
 $$
-\tilde{K} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
-\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 = -\frac{m_e^2c^2}{\hbar^2},
+\tilde P/\hbar = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
+\langle\tilde P/\hbar\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = -\frac{\omega^2}{c^2} + \vec k^2 = -\frac{m_e^2c^2}{\hbar^2},
 $$
 
 which is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$. The parent Dirac article writes the wave biquaternion with a *real* time component in one paragraph and follows it with an "or equivalently" chain whose clauses are mutually inconsistent; that cluster is recorded as an open item in the parent's companion and is not reproduced here. The form above is the one used by the companion solutions article and the one consistent with the mass shell.
@@ -200,7 +200,7 @@ Two structural points and two cautions.
 | Feature of the electron | Status in the framework | Where it comes from |
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible module; $SL(2,\mathbb{C})$ double cover |
-| Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |
+| Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 | Spin magnitude $\hbar/2$ | Represented | normalisation of $S_k = \tfrac{\hbar}{2}\sigma_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m$ coefficient from the mass term plus minimal coupling |
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ |
@@ -224,7 +224,7 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $\exp(-im_ec^2t/\hbar) = \cos(m_ec^2t/\hbar)e_t - \sin(m_ec^2t/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
 
-The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible module of $\mathbb{B}\cong M_2(\mathbb{C})$, and the spin state and observable structure from the idempotents of $\mathbb{M}_+$ with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small component, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two-chirality structure and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
+The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible module of $\mathbb{B}\cong M_2(\mathbb{C})$, and the spin state and observable structure from the idempotents of $\mathbb{M}_+$ with the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small component, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two-chirality structure and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
 The electron is not an element of either sector: state-like and field-strength-like data are $\mathbb{M}_+$, current is $\mathbb{M}_-$, the real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two chiralities, and the rest-energy phase rotates the sectors into one another. What the framework cannot supply is the electron's mass, its charge, its anomalous moment, its empirical signature, and any reason to single it out among spin-$\tfrac{1}{2}$ fields. Those are the labelled gaps, and they are not closed by the notation.
 
@@ -240,10 +240,10 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (Born rule) |
 | $\tilde{J} = ic\,j^0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |
-| $\tilde{K} = i\omega/c\,e_t + \vec k$ | Four-wavevector; $\langle\tilde{K}\rangle_{\natural} = -m^2c^2/\hbar^2$ |
+| $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Four-wavevector; $\langle\tilde P/\hbar\rangle_{\natural} = -m^2c^2/\hbar^2$ |
 | $m_e$, $e$, $\hbar$ | Electron mass, elementary charge, reduced Planck constant |
 | $\gamma_5$, $\psi_L$, $\psi_R$ | Chirality operator; left- and right-handed Weyl spinors |
 | $g$, $\mu_B = e\hbar/2m_e$ | Gyromagnetic factor; Bohr magneton |

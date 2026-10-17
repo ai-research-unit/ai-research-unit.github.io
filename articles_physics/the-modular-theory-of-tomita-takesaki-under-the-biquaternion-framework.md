@@ -30,7 +30,7 @@ The modular conjugation **conjugates the scalar imaginary** $i$. Every sign in t
 
 The article proceeds as follows. The construction and its structural identities come first. Then the two hypotheses, with an explicit failure when separation is dropped. Then the modular flow and its identification with the KMS flow of the parent article. Then the finite-dimensional realization in $\mathbb{B}$ and the closed-form polar decomposition. Then the biquaternion candidate for $S$ and what the framework does and does not supply. Then the type of $\mathbb{B}$ and the inner/outer classification. It closes with the boundary between what is established and what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_t)=2$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$.
 
 ## The Tomita–Takesaki Construction
 
@@ -131,9 +131,9 @@ Now build $S$ and its polar decomposition explicitly.
 
 ### The GNS Hilbert Space
 
-Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde\rho\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde\rho)=1$. On the vector space $\mathbb{B}$ put the inner product
+Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde{Ϛ}\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde{Ϛ})=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde{B}\rangle_{\tilde\rho} := \mathrm{Tr}\big(\tilde\rho\,\tilde{A}^{*}\tilde{B}\big),
+\langle \tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde{B}\big),
 $$
 let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
 $$
@@ -141,9 +141,9 @@ $$
 $$
 This is the GNS construction of the state
 $$
-\omega(\tilde{A}) = \langle\Omega,\pi(\tilde{A})\Omega\rangle_{\tilde\rho} = \mathrm{Tr}(\tilde\rho\,\tilde{A}).
+\omega(\tilde{A}) = \langle\Omega,\pi(\tilde{A})\Omega\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\,\tilde{A}).
 $$
-Because $\tilde\rho$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{A})e_t=\tilde{A}$ runs over all of $\mathbb{B}$, and separating because $\tilde{A}e_t=\tilde{A}=0$ forces $\tilde{A}=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
+Because $\tilde{Ϛ}$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{A})e_t=\tilde{A}$ runs over all of $\mathbb{B}$, and separating because $\tilde{A}e_t=\tilde{A}=0$ forces $\tilde{A}=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
 
 ### The Tomita Operator, the Modular Operator, and the Modular Conjugation
 
@@ -155,30 +155,30 @@ $$
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
-\langle S_0\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\overline{\langle\tilde{A},S_0^*\tilde{B}\rangle_{\tilde\rho}},
+\langle S_0\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde{B}\rangle_{\tilde{Ϛ}}},
 $$
 is
 $$
-S_0^*(\tilde{B}) = \tilde\rho\,\tilde{B}^{*}\tilde\rho^{-1},
+S_0^*(\tilde{B}) = \tilde{Ϛ}\,\tilde{B}^{*}\tilde{Ϛ}^{-1},
 $$
 whence
 $$
-\Delta(\tilde{A}) = S_0^*S_0(\tilde{A}) = \tilde\rho\,\tilde{A}\,\tilde\rho^{-1}, \qquad
-\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}.
+\Delta(\tilde{A}) = S_0^*S_0(\tilde{A}) = \tilde{Ϛ}\,\tilde{A}\,\tilde{Ϛ}^{-1}, \qquad
+\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}.
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{A}) = \tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}.
+J(\tilde{A}) = \tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}.
 $$
 The **modular flow** is
 $$
-\sigma_t(\tilde{A}) = \Delta^{it}\tilde{A}\Delta^{-it} = \tilde\rho^{it}\tilde{A}\tilde\rho^{-it},
+\sigma_t(\tilde{A}) = \Delta^{it}\tilde{A}\Delta^{-it} = \tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it},
 $$
-which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde\rho^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^{*})=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
+which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^{*})=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
-\tilde K := -\log\tilde\rho \ \in\mathbb{M}_+,
+\tilde K := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
 $$
-one has $\tilde\rho^{it}=\exp(-it\tilde K)$ and
+one has $\tilde{Ϛ}^{it}=\exp(-it\tilde K)$ and
 $$
 \sigma_t(\tilde{A})=\exp(-it\tilde K)\tilde{A}\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{A})\Big|_{t=0}=-i[\tilde K,\tilde{A}].
 $$
@@ -191,19 +191,19 @@ The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-
 
 Take the faithful state with Bloch vector
 $$
-\tilde\rho=\tfrac12\big(e_t+i\vec r\cdot\mathbf{e}\big),\qquad \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec r|^2=\tfrac{29}{100}<1 .
+\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf{e}\big),\qquad \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec r|^2=\tfrac{29}{100}<1 .
 $$
 Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
-\tilde K=-\log\tilde\rho=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
-a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
+\tilde K=-\log\tilde{Ϛ}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
+a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde K=-\log\tilde\rho=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
+\tilde K=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.
 
@@ -215,23 +215,23 @@ S_0:\ \tilde{A}\mapsto\tilde{A}^{*} .
 $$
 This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of ${}^{*}$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.
 
-**The candidate satisfies the hypotheses.** With $\Omega=e_t$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
+**The candidate satisfies the hypotheses.** With $\Omega=e_t$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde{Ϛ}>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
 
-**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
+**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde{Ϛ}$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde{Ϛ}$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
-\tilde\rho=\tfrac12 e_t \qquad(\vec r=0),
+\tilde{Ϛ}=\tfrac12 e_t \qquad(\vec r=0),
 $$
 for which
 $$
 \Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_t=\mathrm{id} :
 $$
-the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde\rho=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde\rho$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
+the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
 ## The Type of the Algebra and Inner Versus Outer Modular Flow
 
-The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde\rho^{it}$ inside $\mathbb{B}$,
+The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde{Ϛ}^{it}$ inside $\mathbb{B}$,
 $$
-\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it},\qquad \tilde\rho^{it}\in\mathbb{B}.
+\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it},\qquad \tilde{Ϛ}^{it}\in\mathbb{B}.
 $$
 No object outside the algebra is needed to implement it. This is the generic behavior of a semifinite factor: **for a semifinite factor the modular flow of any faithful normal state is inner for every $t$.**
 
@@ -250,7 +250,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 
 Read off the last two rows: for a type III$_1$ factor the kernel is trivial, so the modular flow is **outer at every nonzero time**, and for type III$_\lambda$ it is inner only at the discrete times in the kernel. The statement that the modular flow is inner *only* for type III$_1$ is therefore the reverse of the classification: III$_1$ is the case that is outer at every nonzero $t$, and it is the **semifinite** factors — type I, including the finite-dimensional $\mathbb{B}$, and type II — for which the modular flow is everywhere inner. The inner/outer behavior is not a marker of III$_1$ but its opposite.
 
-The KMS connection does not depend on this. The theorem of the earlier section — that a faithful normal state is a KMS state for its modular flow — holds for every type. What the type controls is whether that flow can be absorbed into the algebra as an inner dynamics (semifinite, where it is conjugation by $\tilde\rho^{it}$) or is a genuinely new flow that no element of the algebra implements (type III). Because $\mathbb{B}$ is finite-dimensional it is on the semifinite side, and the outer-flow phenomenon — the reason Tomita–Takesaki theory is indispensable for type III factors — **cannot occur inside $\mathbb{B}$**. An outer modular flow would have to live in an infinite-dimensional algebra, for instance a field algebra built on a $\mathbb{B}$-module as in the Fock-space companion article. This is a second gap, and it is structural: the framework's finite-dimensional algebra admits the construction and lies entirely on the semifinite side of the inner/outer distinction.
+The KMS connection does not depend on this. The theorem of the earlier section — that a faithful normal state is a KMS state for its modular flow — holds for every type. What the type controls is whether that flow can be absorbed into the algebra as an inner dynamics (semifinite, where it is conjugation by $\tilde{Ϛ}^{it}$) or is a genuinely new flow that no element of the algebra implements (type III). Because $\mathbb{B}$ is finite-dimensional it is on the semifinite side, and the outer-flow phenomenon — the reason Tomita–Takesaki theory is indispensable for type III factors — **cannot occur inside $\mathbb{B}$**. An outer modular flow would have to live in an infinite-dimensional algebra, for instance a field algebra built on a $\mathbb{B}$-module as in the Fock-space companion article. This is a second gap, and it is structural: the framework's finite-dimensional algebra admits the construction and lies entirely on the semifinite side of the inner/outer distinction.
 
 ## What Is Established and What Is a Gap
 
@@ -263,11 +263,11 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (recomputed here).**
 
-- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
-- $\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.
+- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
+- $\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}$, $J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}$.
 - $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
-- $\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
-- $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.
+- $\tilde{K}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
+- $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$.
 
 **Interpretation.**
 
@@ -284,21 +284,21 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
 S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
 and the polar decomposition is
 $$
-\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1},\qquad
-J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2},\qquad
-\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}.
+\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1},\qquad
+J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2},\qquad
+\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}.
 $$
 The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
-The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-t}$, and the parent article's modular Hamiltonian $K=-\log\tilde\rho\in\mathbb{M}_+$ generates it, $d\sigma_t/dt|_{t=0}=-i[K,A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
+The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-t}$, and the parent article's modular Hamiltonian $K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ generates it, $d\sigma_t/dt|_{t=0}=-i[K,A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
 
-Two honest limitations. The framework supplies $S$ and a family of faithful states, but no dynamics that selects a state, and the distinguished tracial state gives the trivial flow. And $\mathbb{B}$ is a type I$_2$ factor, hence semifinite, so its modular flow is inner — implemented by $\tilde\rho^{it}\in\mathbb{B}$ — while the outer modular flow of type III factors, the case in which the theory is indispensable, cannot occur inside the finite-dimensional algebra. The modular flow is inner for the semifinite factors and outer for III$_1$; the reverse interpretation is a common error. Whether an infinite-dimensional algebra built on $\mathbb{B}$-modules realizes the type III case is open.
+Two honest limitations. The framework supplies $S$ and a family of faithful states, but no dynamics that selects a state, and the distinguished tracial state gives the trivial flow. And $\mathbb{B}$ is a type I$_2$ factor, hence semifinite, so its modular flow is inner — implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$ — while the outer modular flow of type III factors, the case in which the theory is indispensable, cannot occur inside the finite-dimensional algebra. The modular flow is inner for the semifinite factors and outer for III$_1$; the reverse interpretation is a common error. Whether an infinite-dimensional algebra built on $\mathbb{B}$-modules realizes the type III case is open.
 
 ## Summary of Notation
 
@@ -309,15 +309,15 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal{H},M,\Omega$ | Hilbert space, von Neumann algebra, cyclic separating vector |
 | $S_0,S$ | Tomita operator $A\Omega\mapsto A^*\Omega$ and its closure |
 | $\Delta=S^*S$ | Modular operator |
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
 | $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$ | Modular automorphism group |
-| $\tilde\rho\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
-| $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ | GNS inner product on $\mathbb{B}$ |
-| $\tilde{K}=-\log\tilde\rho$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
+| $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
+| $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ | GNS inner product on $\mathbb{B}$ |
+| $\tilde{K}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(t+i)=F_{BA}(-t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $t\mapsto[\sigma_t]$ |
 

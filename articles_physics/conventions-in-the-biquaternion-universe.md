@@ -56,7 +56,7 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$
 
-and this identification is used constantly. It is fixed by a single isomorphism, written $\mathsf{M}_2$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The 2×2 Matrix Representation* below, and the development of the representation — the general element, the remarkable subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its two **minimal left ideals** are the algebra's two chiralities; the spinor module and the mass term a field equation builds on that structure are the subject of *The Dirac Equation in Biquaternionic Form*.
+and this identification is used constantly. It is fixed by a single isomorphism, written $\mathsf{M}_2$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in §*The 2×2 Matrix Representation* below, and the development of the representation — the general element, the remarkable subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its two **minimal left ideals** are the algebra's two chiralities; the spinor module and the mass term a field equation builds on that structure are the subject of *The Dirac Equation in Biquaternionic Form*.
 
 ## The Base and Its Units
 
@@ -191,12 +191,15 @@ The glyphs a reader meets in every article are collected here, before the conjug
 | $\tilde{U}$ | A unit element, $\mathrm{Norm}(\tilde{U}) = e_t$ for the norm in view (see §*The Unitary Convention*) |
 | $\tilde{u}$ | A unit element of the quaternion or split-quaternion layer, a unit quaternion |
 | $\tilde{\xi}$ | A root of $1$ of the quaternion or split-quaternion layer |
+| $Ϛ$ | The **state** glyph, the upper-case stigma (U+03DA): the state, or density, element $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ of $\mathbb{M}_+$, with $\lvert\vec r\rvert \le 1$, Hermitian, positive and of trace one; it is the point of the Bloch ball, and its matrix image $\mathsf{M}_2(\tilde{Ϛ})$ carries no tilde |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\flat}$ | Quaternion (the natural sign), complex, Hermitian and anti-Hermitian conjugation |
 | $\tilde{Q}^{\natural} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\bar{\tilde{Q}} \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \mathsf{M}_2(-\vec e_y)$ |
 | $\tilde{Q}^{*} \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |
 | $\flat = -{}^{*}$ | The anti-Hermitian conjugation, the algebra's real structure |
 
 The rows are the glyphs of the quaternion and biquaternion layers, gathered here because the conjugations of the next section are read on them.
+
+**The state takes the stigma, because the majuscule of rho is taken.** The case rule asks a complex element for an upper-case glyph, and the upper-case rho is drawn as $P$ and names the four-momentum $\tilde P$, which the series never writes otherwise. The state therefore takes a capital that names nothing else in the corpus, the **stigma** $Ϛ$ (U+03DA). The glyph is bound to the state and is never generic; the earlier lowercase rho spelling, and the varrho variant with it, are retired, and the corpus uses neither. Bare $\rho$ is not the state: it keeps its other roles, the charge density and the radial coordinate among them. The matrix image takes no tilde, as for every element.
 
 ## The Conjugations
 
@@ -691,9 +694,19 @@ $$
 
 **No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict$ convention is what puts the metric into the coefficient — $(ict, \vec q)$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components.
 
-## The 4×4 Matrix Representation
+## The Matrix Representations
 
-Multiplication is read as a linear map on that quadruple, in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The four units act by
+The algebra is read in matrices in two ways, and the two answer different questions. The **4×4 reading** is the regular representation: multiplication by an element becomes a linear map on the coefficient quadruple, and the matrices are operators on that quadruple. The **2×2 reading** is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$: the elements themselves become complex matrices. They are different representations, not two sizes of one: the $4\times4$ matrices act on $\mathbb{C}^4$ and the $2\times2$ matrices on $\mathbb{C}^2$.
+
+### General Matrix Conventions
+
+**A matrix carries no tilde, and the ban is absolute.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4(\tilde Q)$, with the tilde inside the argument. **An array of biquaternions carries no tilde either.** A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_4$ and $\mathsf{M}_4^{R}$, whose subscript gives the size and whose superscript, where present, gives the side of the multiplication. The same ban covers a matrix of biquaternions and a colour matrix.
+
+**The ban is on the array, not on its argument.** The writings $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4(\tilde Q)$ are correct because the tilde stays inside the argument. A tilde on the array — $\tilde I_n$, $\tilde{\mathsf{M}}_2$, $\tilde{\mathcal Q}$, or $\tilde M$ where the matrix $\mathsf{M}_2(\tilde M)$ is meant — is forbidden and is a defect to be rewritten, not a variant to be read: no object is behind it, and the element it would name is already named by the argument.
+
+### The 4×4 Matrix Representation
+
+Multiplication is read as a linear map on the coefficient quadruple, in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The four units act by
 
 $$
 \mathsf{M}_4(e_t) = I_4 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad
@@ -709,7 +722,7 @@ and each of the three vector matrices squares to $-I_4$, as $\vec e_k^2 = -e_t$ 
 
 The determinant and the trace of the two regular matrices, the relation between $\mathsf{M}_4^{R}$ and $\mathsf{M}_4$, and the volume identity $\det\mathsf{M}_4(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^2$ are *The $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
-## The 2×2 Matrix Representation
+### The 2×2 Matrix Representation
 
 The algebra is read as the complex $2 \times 2$ matrices, under the isomorphism
 
@@ -734,7 +747,7 @@ $$
 \operatorname{Tr}(\tilde{Q}) := \operatorname{Tr}\mathsf{M}_2(\tilde{Q}).
 $$
 
-On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$, so on a general element $\operatorname{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$. That factor $2$ is not a normalisation but a consequence of $\mathsf{M}_2(e_t) = I_2$: it comes with the four images above, it cannot be divided out, and every pairing in the series is written with it, the Born rule $p = \operatorname{Tr}(\tilde{Q}_1\tilde{\rho})$ among them. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript. The unrestricted identity $\operatorname{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2)$ is recorded with its verification in the article just named.
+On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$, so on a general element $\operatorname{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$. That factor $2$ is not a normalisation but a consequence of $\mathsf{M}_2(e_t) = I_2$: it comes with the four images above, it cannot be divided out, and every pairing in the series is written with it, the Born rule $p = \operatorname{Tr}(\tilde{Q}_1\tilde{Ϛ})$ among them. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript. The unrestricted identity $\operatorname{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2)$ is recorded with its verification in the article just named.
 
 **The determinant is the norm.** The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of units and the unit-norm group are read from it; the derivations are *The $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
 
@@ -745,8 +758,6 @@ On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$,
 **The realisation is a convention of presentation, not of content.** The isomorphisms that preserve the subspace dictionary are the $\mathsf{M}_2' = S\mathsf{M}_2 S^{-1}$ with $S$ unitary up to a nonzero complex scalar, and an arbitrary invertible $S$ destroys the dictionary. The practical consequence is that a mistake of translation between the algebra and its matrices is repaired **here** — by correcting the assignment or the explicit factors of $i$ — and never by altering the biquaternion norm, the $ict$ assignment or the sector split.
 
 **A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
-
-**A matrix carries no tilde.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4(\tilde Q)$, with the tilde inside the argument. A matrix of biquaternions, whose entries are elements, is written $\tilde{\mathcal Q}$; the tilde there belongs to the entries and not to the array. The identity matrix never takes a tilde.
 
 ## The Operators
 
@@ -839,7 +850,7 @@ $$
 \tilde\nabla\tilde F=\Bigl(\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec F+\nabla F_t+\nabla\times\vec F .
 $$
 
-A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the equation $\tilde\nabla\tilde F=-\tilde R$ is the series' Maxwell equation. **On the material sector** the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being unchanged.
+A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material sector** the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being unchanged.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in §*The Twelve Products and Their Names*. The half-sum keeps the form as its scalar part,
 

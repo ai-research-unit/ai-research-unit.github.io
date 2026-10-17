@@ -58,7 +58,7 @@ The naive scheme therefore costs sixteen complex multiplications, or **sixty-fou
 
 The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,\mathsf{M}_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
 
-In the corpus's basis the scheme reads as follows. Let $\tilde{M} = M_0e_t + \dots + M_3\vec e_z$ and $\tilde{N} = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be
+In the corpus's basis the scheme reads as follows. Let $\tilde Q_1 = M_0e_t + \dots + M_3\vec e_z$ and $\tilde Q_2 = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be
 
 $$
 H_1 = (M_0+M_1+\mathsf{M}_2+M_3)(N_0+N_1+N_2+N_3),
@@ -73,7 +73,7 @@ $$
 H_4 = (M_0-M_1-\mathsf{M}_2+M_3)(N_0-N_1-N_2+N_3),
 $$
 
-and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product satisfy
+and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy
 
 $$
 4Q_t = 8P_{00} - (H_1+H_2+H_3+H_4),
@@ -187,7 +187,7 @@ The two splits of the algebra do not align, and the arithmetic makes the misalig
 
 The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ cuts across it, as *Conventions in the Biquaternion Universe* records: an element of $\mathbb{M}_-$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore **not** automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.
 
-The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, is the Born rule; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.
+The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the Born rule; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.
 
 Beyond the trace and the block structure, the framework enters the cost accounting only through the problem's symmetry. The source's whole construction rests on the fact, developed in the corpus's articles on Kramers degeneracy, that in a time-reversal symmetric problem the Hamiltonian is real-quaternion and in a time-reversal antisymmetric problem it is purely imaginary-quaternion; and it is precisely those two restricted classes that the eight-multiplication regime serves. A problem with both, such as a magnetic perturbation or an open-shell non-collinear system, is the twenty-four-multiplication case. The cost therefore organises itself along the corpus's symmetry classes rather than along its sectors.
 

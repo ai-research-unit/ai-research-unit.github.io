@@ -15,7 +15,7 @@ The findings are stated in advance.
 5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x)$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
 6. **The adiabatic Berry phase is the slow limit of the same holonomy.** Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
@@ -50,7 +50,7 @@ $$
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the trace pairing:
 
 $$
-\langle\tilde{H}\rangle = \mathrm{Tr}(\tilde{\rho}\tilde{H}), \qquad
+\langle\tilde{H}\rangle = \mathrm{Tr}(\tilde{Ϛ}\tilde{H}), \qquad
 \phi_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\psi(0)^\dagger\psi(T)) .
 $$
 
@@ -152,7 +152,7 @@ The physical consequences are standard: the spinor must be rotated by $4\pi$ to 
 
 ### The Spinor Carries the Phase
 
-The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{\rho} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
+The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
 
 $$
 \tilde{P} = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
@@ -197,10 +197,10 @@ $$
 \vec u_x(t) = \left(\sin\theta_0\cos\omega t,\,-\sin\theta_0\sin\omega t,\,\cos\theta_0\right),
 $$
 
-with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian
+with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $\vec u_x(t)_k\tilde{S}_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde{U}_R^{*}\tilde{H}\tilde{U}_R - i\hbar\,\tilde{U}_R^{*}\partial/\partial t\tilde{U}_R
+\tilde{H}_R = \tilde u_R^{*}\tilde{H}\tilde u_R - i\hbar\,\tilde u_R^{*}\partial/\partial t\tilde u_R
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$
 
@@ -240,7 +240,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 1. **Non-abelian geometric phases.** The AA and Berry phases here are abelian ($\mathrm{U}(1)$) because the spin-1/2 level is non-degenerate. For a degenerate level the holonomy is non-abelian. The framework of a single spin-1/2 cannot host the non-abelian case; the question is whether the algebra's idempotent structure extends to it, and it is left open by the Berry article as well.
 
-2. **The geometric phase of a mixed state.** A mixed state $\tilde\rho = \tfrac12(e_t+i\vec r)$, $|\vec r|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with a mirror light cone, support a natural phase for the boundary and the interior?
+2. **The geometric phase of a mixed state.** A mixed state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $|\vec r|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with a mirror light cone, support a natural phase for the boundary and the interior?
 
 3. **The local complex structure.** The spinor phase uses the central $i$, while the rotor uses the real units $\vec e_k$. The series allows the complex structure to be local; the geometric phase, however, seems to require a globally defined spinor phase. Whether a local complex structure would modify the phase is unresolved, as it is in the companion articles *The Schrödinger Equation in Biquaternionic Form* and *The Path Integral in Biquaternionic Form*.
 
@@ -291,7 +291,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\theta_0$ | Half-angle of the precession cone / polar angle of the loop |
 | $\tilde{u}(2\pi) = -e_t$ | One-period rotor; spinor double-valuedness |
 | $\tilde{u} = \exp(-\frac{1}{2}\Phi\vec u_x)$ | Holonomy rotor; $\Phi$ the turn of the Bloch vector |
-| $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
+| $\tilde u_R(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
 | $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
 | $\arg\langle\psi_1|\psi_2\rangle = \arg\mathrm{Tr}(\psi_1^\dagger\psi_2)$ | Pancharatnam connection |

@@ -163,15 +163,15 @@ while for a generic unit the image is a third idempotent, neither $\tilde\Pi_+$ 
 Every realization above writes **one** element. The corpus also uses **several** elements at once, arranged in a rectangular array: an array of size $n\times m$ with entries in $\mathbb{B}$ is written
 
 $$
-\tilde{\mathcal{Q}}=\bigl(\tilde Q_{\lambda\rho}\bigr)\in\mathbb{B}^{n\times m},\qquad\tilde Q_{\lambda\rho}\in\mathbb{B}.
+\mathsf{Q}=\bigl(\tilde Q_{\lambda\rho}\bigr)\in\mathbb{B}^{n\times m},\qquad\tilde Q_{\lambda\rho}\in\mathbb{B}.
 $$
 
-This is not a realization of the algebra $\mathbb{B}$: the entries are biquaternions, and the array is an object of the larger ring $M_\nu(\mathbb{B})$ when it is square. It is recorded here because it is assembled from the realization $\mathsf{M}_2$, and because it is the form in which the applied articles compute — its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
+This is not a realization of the algebra $\mathbb{B}$: the entries are biquaternions, and the array is an object of the larger ring $M_\nu(\mathbb{B})$ when it is square. It is recorded here because it is assembled from the realization $\mathsf{M}_2$, and because it is the form in which the applied articles compute — its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*. The array carries no tilde: the tildes are on its entries, and the array is written with the tilde-free glyph $\mathsf{Q}$.
 
 Two writings of the same array are used. In the **entrywise writing** it is a collection of $nm$ biquaternions. In the **component writing** it is a collection of four complex matrices,
 
 $$
-\tilde{\mathcal{Q}}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z,\qquad Q_\mu\in\mathbb{C}^{n\times m},
+\mathsf{Q}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z,\qquad Q_\mu\in\mathbb{C}^{n\times m},
 $$
 
 where $Q_\mu$ gathers the $\mu$-th coefficients of all the entries and the product by $e_\mu$ is entrywise. Either writing holds $4nm$ complex numbers, that is $8nm$ real numbers; the two carry the same information.
@@ -191,14 +191,14 @@ So an $n\times n$ array of biquaternions **is** the full complex matrix algebra 
 The realization $\mathsf{M}_2$ extends to arrays entry by entry: replace every entry by its $2\times2$ matrix, and read the result as a complex matrix of size $2n\times2m$,
 
 $$
-\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_{\mu\in\{t,x,y,z\}}\mathsf{M}_2(e_\mu)\otimes Q_\mu ,
+\mathsf{M}_2(\mathsf{Q})=\sum_{\mu\in\{t,x,y,z\}}\mathsf{M}_2(e_\mu)\otimes Q_\mu ,
 $$
 
 where $\otimes$ is the Kronecker product and $\mathsf{M}_2(e_t)=\mathrm{I}_2$. The order of the two factors fixes which index runs where; we keep $\mathsf{M}_2(e_\mu)$ first, so that the quadrants of the image, of size $n\times m$, are the block indices and the array indices run inside each block. The other order assembles the same data with the array indices outside, $\sum_\mu Q_\mu\otimes\mathsf{M}_2(e_\mu)=(\mathsf{M}_2(\tilde Q_{\lambda\rho}))$, so that the block in position $(i,j)$ is the image of the entry; the properties below hold in both orders and only the block reading differs. Three properties carry the correspondence, each exact:
 
-1. **Products.** When the sizes are conformable, the image of the product is the product of the images, $\mathsf{M}_2(\tilde{\mathcal{P}}\tilde{\mathcal{Q}})=\mathsf{M}_2(\tilde{\mathcal{P}})\mathsf{M}_2(\tilde{\mathcal{Q}})$; this is the explicit form of $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
-2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\operatorname{tr}\mathsf{M}_2(\tilde{\mathcal{Q}})=2\operatorname{tr}Q_t=2\operatorname{Sc}$ summed over the diagonal; it is a complex number, and it vanishes for a traceless scalar component.
-3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{\lambda\rho}=(\tilde Q_{\rho\lambda})^{*}$, carries the image to the conjugate transpose, $\mathsf{M}_2(\tilde{\mathcal{Q}}^{\dagger})=\mathsf{M}_2(\tilde{\mathcal{Q}})^{\dagger}$.
+1. **Products.** When the sizes are conformable, the image of the product is the product of the images, $\mathsf{M}_2(\mathsf{P}\mathsf{Q})=\mathsf{M}_2(\mathsf{P})\mathsf{M}_2(\mathsf{Q})$; this is the explicit form of $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
+2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\operatorname{tr}\mathsf{M}_2(\mathsf{Q})=2\operatorname{tr}Q_t=2\operatorname{Sc}$ summed over the diagonal; it is a complex number, and it vanishes for a traceless scalar component.
+3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\mathsf{Q}^{\dagger})_{\lambda\rho}=(\tilde Q_{\rho\lambda})^{*}$, carries the image to the conjugate transpose, $\mathsf{M}_2(\mathsf{Q}^{\dagger})=\mathsf{M}_2(\mathsf{Q})^{\dagger}$.
 
 ### Examples
 
@@ -216,7 +216,7 @@ The one-entry case is worth stating separately: the $2\times2$ realization is no
 
 ### Which Realization the Array Is Not
 
-The image $\mathsf{M}_2(\tilde{\mathcal{Q}})$ is **not** the left regular matrix $\mathsf{M}_4(\tilde Q)$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. That matrix is the image of the operator of left multiplication by one element on the algebra, a $4\times4$ array of complex numbers for that element; the array image here is the image of the array's own entries. The two coincide in size only when the array is $2\times2$, and even then they are different objects: the regular matrix is block diagonal in a basis adapted to the two minimal left ideals, with $\mathsf{M}_2(\tilde Q)$ in both diagonal blocks, while the image of a general $2\times2$ array of biquaternions is a general $4\times4$ complex matrix. What the two share is the underlying isomorphism, written out at the element level by $\mathsf{M}_2$ and at the array level by $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
+The image $\mathsf{M}_2(\mathsf{Q})$ is **not** the left regular matrix $\mathsf{M}_4(\tilde Q)$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. That matrix is the image of the operator of left multiplication by one element on the algebra, a $4\times4$ array of complex numbers for that element; the array image here is the image of the array's own entries. The two coincide in size only when the array is $2\times2$, and even then they are different objects: the regular matrix is block diagonal in a basis adapted to the two minimal left ideals, with $\mathsf{M}_2(\tilde Q)$ in both diagonal blocks, while the image of a general $2\times2$ array of biquaternions is a general $4\times4$ complex matrix. What the two share is the underlying isomorphism, written out at the element level by $\mathsf{M}_2$ and at the array level by $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
 
 ## Relations Between the Representations
 
@@ -246,7 +246,7 @@ The biquaternion algebra has two algebraic realizations that are not the subject
 
 The second is the **conjugation action** $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$, an algebra automorphism of $\mathbb{B}$ for every unit, with kernel the centre, so that the image is the whole automorphism group $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$ by Skolem–Noether; it coincides with the dagger sandwich on the unitary elements and differs from it in general by the Hermitian positive right factor $\tilde Q\tilde Q^{*}$, it preserves the centre and the vector subspace for every unit and the other four remarkable subspaces exactly for the complex multiples of a real quaternion, equivalently the units with $\tilde Q\tilde Q^{*}$ central, and it permutes the two minimal left ideals, exchanging them for a unit not commuting with $\tilde\Pi_+$, such as $i\vec e_x$. The inner automorphisms are *Biquaternion Automorphisms and Derivations*.
 
-The third structure is not a realization of a single element. An **array of several biquaternions** is the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ when square, its entrywise image $\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and the image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
+The third structure is not a realization of a single element. An **array of several biquaternions** is the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ when square, its entrywise image $\mathsf{M}_2(\mathsf{Q})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and the image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
 
 ## Summary of Notation
 
@@ -266,8 +266,9 @@ The third structure is not a realization of a single element. An **array of seve
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Idempotents, the minimal left ideals $\mathbb{B}\tilde\Pi_\pm$ |
 | $\mathsf{M}_2$ | Algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_t)=\mathrm{I}_2$ |
 | $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n=m$ the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ |
-| $\tilde{\mathcal{Q}}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z$ | Component writing, $Q_\mu\in\mathbb{C}^{n\times m}$ |
-| $\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ | Entrywise image, a $2n\times2m$ complex matrix |
+| $\mathsf{Q}=(\tilde Q_{\lambda\rho})$ | Entrywise writing, an $n\times m$ array; the array carries no tilde |
+| $\mathsf{Q}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z$ | Component writing, $Q_\mu\in\mathbb{C}^{n\times m}$ |
+| $\mathsf{M}_2(\mathsf{Q})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ | Entrywise image, a $2n\times2m$ complex matrix |
 
 ## Further Reading
 

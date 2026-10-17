@@ -165,13 +165,13 @@ because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the ma
 
 ### The symbol on the light cone and the rank drop
 
-On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_t + \vec k$, and the symbol of the operator is its biquaternion norm,
+On shell the four-momentum is a biquaternion $\tilde P = i(\omega/c)e_t + \vec k$, and the symbol of the operator is its biquaternion norm,
 $$
-\text{massive:}\quad \langle\tilde{K}\rangle_{\natural} = -\mu^2 \neq 0 ,
+\text{massive:}\quad \langle\tilde P\rangle_{\natural} = -\mu^2 \neq 0 ,
 \qquad\qquad
-\text{massless:}\quad \langle\tilde{K}\rangle_{\natural} = 0 .
+\text{massless:}\quad \langle\tilde P\rangle_{\natural} = 0 .
 $$
-In the massless case $\tilde{K}$ is a **zero divisor** of the algebra, and left multiplication by it is a singular linear map. The rank of left multiplication on the complex four-dimensional module was computed for two on-shell momenta: for the massive one with $\langle\tilde{K}\rangle_{\natural} = -0.65$ the rank is four, and for the massless one with $\langle\tilde{K}\rangle_{\natural} = 0$ the rank is two. The drop from four to two is the algebraic form of the massless limit: the operator's symbol acquires a kernel, the propagator acquires a pole on the light cone, and the equation acquires the gauge-like degeneracy that the conformal symmetry organises. The geometry of that cone is the geometry of the algebra's zero divisors; the point for the massless limit is that the limit is a *degeneration of the symbol*, not merely the removal of a constant.
+In the massless case $\tilde P$ is a **zero divisor** of the algebra, and left multiplication by it is a singular linear map. The rank of left multiplication on the complex four-dimensional module was computed for two on-shell momenta: for the massive one with $\langle\tilde P\rangle_{\natural} = -0.65$ the rank is four, and for the massless one with $\langle\tilde P\rangle_{\natural} = 0$ the rank is two. The drop from four to two is the algebraic form of the massless limit: the operator's symbol acquires a kernel, the propagator acquires a pole on the light cone, and the equation acquires the gauge-like degeneracy that the conformal symmetry organises. The geometry of that cone is the geometry of the algebra's zero divisors; the point for the massless limit is that the limit is a *degeneration of the symbol*, not merely the removal of a constant.
 
 ### The limit of the massive theory
 
@@ -294,7 +294,7 @@ $$
 $$
 the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/\langle\tilde{Q}\rangle_{\natural}$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$, and it is the inversion image of the constant.
 
-The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $\langle\tilde{K}\rangle_{\natural} = \langle\tilde{K},\tilde{K}\rangle_{\natural} = -\mu^2\neq0$ and rank two for $\langle\tilde{K}\rangle_{\natural} = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
+The massless limit is the limit in which the on-shell symbol becomes a zero divisor: left multiplication by the on-shell momentum has complex rank four for $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = -\mu^2\neq0$ and rank two for $\langle\tilde P\rangle_{\natural} = 0$, as computed on two on-shell momenta. The limit of the massive invariant kernel is the conformal two-point function, $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)\to1/(4\pi^2\rho^2)$, non-uniformly because the massive support is inside the cone and the massless support on it.
 
 The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell in the framework's normalisation, verified on an off-shell test field and on an on-shell one in the $ict$ coordinates; the trace is proportional to the mass squared and vanishes in the massless limit, which is the local statement of the symmetry. The Maxwell field is conformally invariant with no limit to take and has $\Theta^\mu{}_\mu = 0$; the Proca field is broken by its mass as the scalar is. The Thomson limit of photon–electron scattering is the physical instance of the massless limit treated here, and the polarisation algebra of that limit is the subject of the article that follows.
 
@@ -313,7 +313,7 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $\Box[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
 | $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
 | $\mu = mc/\hbar$ | The unique scale; breaks the conformal symmetry |
-| $\langle\tilde{K}\rangle_{\natural} = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
+| $\langle\tilde P\rangle_{\natural} = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
 | $\Theta_{\mu\nu} = T_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu)\phi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\Theta^\mu{}_\mu = 0$ (Maxwell) | Trace-free conformally invariant vector field |

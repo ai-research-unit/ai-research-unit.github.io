@@ -180,7 +180,7 @@ $$
 $$
 
 a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\sqrt{\epsilon}\,\vec E$. The conventions and the derivation are those of
-- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$.
+- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$.
 
 For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{H}_{\mathbb{B}}$.
 

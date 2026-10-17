@@ -26,7 +26,7 @@ $$
 \mu = \frac{mc}{\hbar},
 $$
 
-so that the mass-shell condition reads $\tilde{K}\tilde{K}^{\natural} = -\mu^2$ and the second-order equation reads $(\Box - \mu^2)\tilde{\Phi} = 0$. In natural units $\hbar = c = 1$ the two symbols coincide and the corpus writes $m$ for both; where the distinction matters below, $\mu$ is written explicitly. This is the same parameter the Klein–Gordon article calls $\mu$, and the sign of $\Box$ is the series sign, not the opposite sign of *Exercise: Chirality and the Weyl Spinors*.
+so that the mass-shell condition reads $\tilde P\tilde P^{\natural} = -\mu^2$ and the second-order equation reads $(\Box - \mu^2)\tilde{\Phi} = 0$. In natural units $\hbar = c = 1$ the two symbols coincide and the corpus writes $m$ for both; where the distinction matters below, $\mu$ is written explicitly. This is the same parameter the Klein–Gordon article calls $\mu$, and the sign of $\Box$ is the series sign, not the opposite sign of *Exercise: Chirality and the Weyl Spinors*.
 
 ## The Matrix Square
 
@@ -194,7 +194,7 @@ $$
 \Box = \partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 .
 $$
 
-The chiral pair retains its form, and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The two-dimensional spinor module has the two chiral halves as its two one-dimensional factors, and the mass is again the off-diagonal coupling. The plane-wave substitution now gives $\tilde{K} = i\omega/c\,e_t + k \vec e_x$, $\tilde{K}\tilde{K}^{\natural} = -\omega^2/c^2 + k^2 = -\mu^2$, hence the 1+1-dimensional dispersion $\omega^2 = k^2c^2 + \mu^2c^2$. Everything the three-dimensional case does, the reduced case does with a single wave number, and the second-order operator is again central.
+The chiral pair retains its form, and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The two-dimensional spinor module has the two chiral halves as its two one-dimensional factors, and the mass is again the off-diagonal coupling. The plane-wave substitution now gives $\tilde P = i\omega/c\,e_t + k \vec e_x$, $\tilde P\tilde P^{\natural} = -\omega^2/c^2 + k^2 = -\mu^2$, hence the 1+1-dimensional dispersion $\omega^2 = k^2c^2 + \mu^2c^2$. Everything the three-dimensional case does, the reduced case does with a single wave number, and the second-order operator is again central.
 
 The reduced form is the one in which the **factorisation** is most visible. Writing the chiral pair as two coupled first-order equations and eliminating one half produces a single second-order equation for the other; conversely, the second-order equation can be recovered from the pair but not the pair from it. This is the setting in which the supersymmetric interpretation of the first-order operator becomes transparent, because the two halves of the pair are then the two components of a two-component object and the off-diagonal mass is a two-by-two matrix, which the companion article on supersymmetric quantum physics exploits.
 
@@ -203,13 +203,13 @@ The reduced form is the one in which the **factorisation** is most visible. Writ
 The square is now applied to the plane waves of the series. Write the four-wavevector and the four-position as
 
 $$
-\tilde{K} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
+\tilde P = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
 \qquad
 \tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
 \qquad \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 $$
 
-and take the phase $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+and take the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial t \longmapsto -i\omega, \qquad \partial/\partial x_j\longmapsto ik_j, \qquad \partial/\partial Q_t \longmapsto -\frac{\omega}{c},
@@ -226,13 +226,13 @@ $$
 The biquaternion norm of the wave biquaternion is
 
 $$
-\langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = \left(i\frac{\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
+\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \left(i\frac{\omega}{c}\right)^2 + \vec k^2 = -\frac{\omega^2}{c^2} + \vec k^2 = -\Box ,
 $$
 
 the last equality holding on the plane wave, so the second-order equation $(\Box - \mu^2)\tilde{\Psi} = 0$ is the mass-shell condition
 
 $$
-\tilde{K}\tilde{K}^{\natural} = -\mu^2,
+\tilde P\tilde P^{\natural} = -\mu^2,
 \qquad\text{equivalently}\qquad
 \omega^2 = \vec k^2c^2 + \mu^2c^2,
 $$
@@ -275,7 +275,7 @@ The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, coupled by the mass, and the pairing is the algebra's image of the Clifford anticommutator. Written as the matrix $\mathcal{D}_\mp$ defined above, the operator identity is $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, the square is the operator identity $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table read in two directions.
 
-The square carries the mass shell $\tilde{K}\tilde{K}^{\natural} = -\mu^2$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the four linear relations that select the first-order solution space from the larger second-order one. For fixed three-momentum the first-order equation has a four-dimensional complex solution space and the second-order equation a strictly larger one, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the diagonal — the bosonic shadow — of a graded first-order object whose off-diagonal entries are the biquaternionic Dirac operator and its conjugate.
+The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the four linear relations that select the first-order solution space from the larger second-order one. For fixed three-momentum the first-order equation has a four-dimensional complex solution space and the second-order equation a strictly larger one, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the diagonal — the bosonic shadow — of a graded first-order object whose off-diagonal entries are the biquaternionic Dirac operator and its conjugate.
 
 ## Summary of Notation
 
@@ -288,9 +288,9 @@ The square carries the mass shell $\tilde{K}\tilde{K}^{\natural} = -\mu^2$, henc
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (the Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde{K} = i\omega/c\,e_t + \vec k$, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
+| $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde{K}\tilde{K}^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
+| $\tilde P\tilde P^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |
 | $\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ | Dirac matrices and Clifford metric |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |

@@ -17,7 +17,7 @@ $$
 \tilde H = h_0\,e_t + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde P=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde P=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t)=\tilde U(t)\tilde{Ϛ}(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -25,10 +25,10 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 
 ### The survival amplitude and the survival probability
 
-Let $\tilde P_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t=0$, and let $\tilde\rho(t)=\tilde U(t)\tilde P_0\tilde U(t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $t$ is the pairing of the evolved state with the initial projector,
+Let $\tilde P_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t=0$, and let $\tilde{Ϛ}(t)=\tilde U(t)\tilde P_0\tilde U(t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $t$ is the pairing of the evolved state with the initial projector,
 
 $$
-P(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde\rho(t)\bigr)
+P(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde{Ϛ}(t)\bigr)
 = \mathrm{Tr}\bigl(\tilde P_0\,\tilde U(t)\,\tilde P_0\,\tilde U(t)^{*}\bigr).
 $$
 

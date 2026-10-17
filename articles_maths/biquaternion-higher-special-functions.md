@@ -334,14 +334,14 @@ are the biquaternion analogues of holomorphic functions and harmonic functions. 
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G^{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$
 
-It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
+It satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
-In the oscillatory regime, with $\theta$ real and $\vec u$ a root of $-1$, $\tilde{G}(\theta \vec u) = -\theta \vec u / (\theta^4 \|\vec u\|_E^4) = -\vec u/(\theta^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
+In the oscillatory regime, with $\theta$ real and $\vec u$ a root of $-1$, $G^{\mathrm{fn}}(\theta \vec u) = -\theta \vec u / (\theta^4 \|\vec u\|_E^4) = -\vec u/(\theta^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
-In the nilpotent regime, $\tilde{G}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
+In the nilpotent regime, $G^{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
 
 ### The Poisson Kernel
 
@@ -430,6 +430,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 | ${}_2F_1$ | Hypergeometric function |
 | $\Gamma, \zeta$ | Gamma and zeta functions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 
 ## Further Reading
 

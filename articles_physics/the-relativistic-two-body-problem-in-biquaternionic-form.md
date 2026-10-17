@@ -37,15 +37,15 @@ $$
 \qquad a = 1, 2,
 $$
 
-which is the biquaternion form of $E_a^2 = \vec p_a^2c^2 + m_a^2c^4$. The **unit four-velocities** are
+which is the biquaternion form of $E_a^2 = \vec p_a^2c^2 + m_a^2c^4$. The **four-velocities** are
 
 $$
-\tilde{v}_a = \frac{\tilde{V}_a}{c} = \gamma_a\left(i\,e_t + \frac{\vec v_a}{c}\right),
+\tilde{V}_a = \gamma_a\left(ic\,e_t + \vec v_a\right),
 \qquad
-\langle\tilde{v}_a\rangle_{\natural} = -1,
+\langle\tilde{V}_a\rangle_{\natural} = -c^2,
 $$
 
-which are the elements of $\mathbb{M}_-$ of unit negative norm.
+which are the elements of $\mathbb{M}_-$ of negative norm.
 
 ### The Invariant Pairing on $\mathbb{M}_-$
 
@@ -75,10 +75,10 @@ $$
 \langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \vec p_1\cdot\vec p_2,
 $$
 
-which is the Minkowski inner product of the two four-momenta in the $ict$ convention, with real time components $E_a/c$. In particular, for the unit four-velocities,
+which is the Minkowski inner product of the two four-momenta in the $ict$ convention, with real time components $E_a/c$. In particular, for the four-velocities,
 
 $$
-\langle \tilde{v}_1, \tilde{v}_2\rangle = -\gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
+\frac{\langle \tilde{V}_1, \tilde{V}_2\rangle}{c^2} = -\gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
 $$
 
 The pairing is invariant under rotor conjugation. Indeed $\langle\tilde Q,\tilde Q\rangle_{\natural}$ is invariant, and $\langle\cdot,\cdot\rangle$ is the polarization of $\langle\cdot,\cdot\rangle_{\natural}$; since rotor conjugation is linear on $\mathbb{M}_-$, the invariance of the quadratic form implies the invariance of its polarization.
@@ -186,7 +186,7 @@ $$
 \tilde{P}^* = \tilde{\Lambda}_{\rm CM}\,\tilde{P}\,\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_t.
 $$
 
-The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{v}_P = \tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation $\tilde{\Lambda} = \sqrt{-i\tilde{v}^{\natural}}$ gives
+The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation gives
 
 $$
 \tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{i}{Mc}\,\tilde{P}^{\natural}},
@@ -238,11 +238,11 @@ The radicand is non-negative when $M \ge m_1+m_2$: a pair with relative motion h
 
 ## The Relative Four-Velocity and the Relative Rapidity
 
-The COM frame exhibits the two bodies moving in opposite directions, but the invariant that governs the pair is the relative motion. The **relative four-velocity** is the four-velocity of body 2 as seen in the rest frame of body 1. It is obtained by rotor conjugation with the boost biquaternion $\tilde{\Lambda}_1 = \sqrt{-i\tilde{v}^{\natural}_1}$ that carries body 1 to rest:
+The COM frame exhibits the two bodies moving in opposite directions, but the invariant that governs the pair is the relative motion. The **relative four-velocity** is the four-velocity of body 2 as seen in the rest frame of body 1. It is obtained by rotor conjugation with the boost biquaternion $\tilde{\Lambda}_1 = \sqrt{-i(\tilde{V}_1/c)^{\natural}}$ that carries body 1 to rest:
 
 $$
-\tilde{v}_{2|1} = \tilde{\Lambda}_1\,\tilde{v}_2\,\tilde{\Lambda}_1^{*}
-= i\gamma_{\rm rel}\,e_t + \gamma_{\rm rel}\,\frac{\vec v_{\rm rel}}{c},
+\tilde{V}_{2|1} = \tilde{\Lambda}_1\,\tilde{V}_2\,\tilde{\Lambda}_1^{*}
+= ic\,\gamma_{\rm rel}\,e_t + \gamma_{\rm rel}\,\vec v_{\rm rel},
 $$
 
 where $\vec v_{\rm rel}$ is the velocity of body 2 in the rest frame of body 1 and
@@ -251,12 +251,12 @@ $$
 \gamma_{\rm rel} = \frac{1}{\sqrt{1 - v_{\rm rel}^2/c^2}}
 $$
 
-is the corresponding Lorentz factor. The four-vector lies in $\mathbb{M}_-$ with $\langle\tilde{v}_{2|1}\rangle_{\natural} = -1$, hence is timelike.
+is the corresponding Lorentz factor. The four-vector lies in $\mathbb{M}_-$ with $\langle\tilde{V}_{2|1}\rangle_{\natural} = -c^2$, hence is timelike.
 
 Because the pairing is invariant under rotor conjugation, the relative Lorentz factor can be read off directly from the two four-velocities without performing the boost:
 
 $$
-\gamma_{\rm rel} = -\langle \tilde{v}_1, \tilde{v}_2\rangle
+\gamma_{\rm rel} = -\frac{\langle \tilde{V}_1, \tilde{V}_2\rangle}{c^2}
 = \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
 $$
 
@@ -481,7 +481,7 @@ The Breit equation is an approximation in both senses at once: quantum-mechanica
 
 The relativistic two-body problem in the biquaternion framework is expressed entirely through the three operations of the algebra restricted to the material sector $\mathbb{M}_-$: addition, the biquaternion norm, and the rotor conjugation. The two four-momenta $\tilde{P}_1, \tilde{P}_2$ are elements of $\mathbb{M}_-$; their sum $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ is again in $\mathbb{M}_-$, with norm $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$, which defines the invariant mass $M$ of the pair. Conservation of four-momentum is the single equation $\tilde{P}_1+\tilde{P}_2 = \text{constant}$, whose scalar and vector parts are energy and momentum conservation.
 
-The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_t$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{v}_1,\tilde{v}_2\rangle$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
+The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_t$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
 
 A two-body decay is the special case in which the total four-momentum is $\tilde{P}_A = iMc\,e_t$; the general results then give the daughter energies, the common momentum magnitude $p^*$, the threshold condition $M \ge m_1+m_2$, and the boost to the laboratory frame. The non-relativistic limit reproduces the Newtonian centre-of-mass motion, the reduced mass, and the partition of the released energy, confirming that the framework reduces correctly to the established theory.
 
@@ -498,11 +498,10 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
 | $\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_t+\vec p_a$ | Four-momentum of body $a$ |
-| $\tilde{v}_a = \tilde{V}_a/c$ | Unit four-velocity, $\langle\tilde{v}_a\rangle_{\natural} = -1$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$ | Invariant mass of the pair |
-| $\tilde{v}_{2|1}$ | Relative four-velocity (body 2 in the rest frame of body 1) |
-| $\gamma_{\rm rel} = \cosh\psi_{\rm rel} = -\langle\tilde{v}_1,\tilde{v}_2\rangle$ | Relative Lorentz factor |
+| $\tilde{V}_{2|1}$ | Relative four-velocity (body 2 in the rest frame of body 1) |
+| $\gamma_{\rm rel} = \cosh\psi_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$ | Relative Lorentz factor |
 | $\psi_{\rm rel}$ | Relative rapidity, $v_{\rm rel} = c\tanh\psi_{\rm rel}$ |
 | $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$ | Boost biquaternion to the centre-of-momentum frame |
 | $E_a^*,$ $\vec p_a^*$ | Energy and momentum in the centre-of-momentum frame |

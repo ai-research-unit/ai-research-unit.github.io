@@ -200,7 +200,7 @@ $$
 $$
 the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \vec k^2$ to the accuracy of the difference scheme, and the mass shell is the level set $\mu^2$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
 $$
-\langle\tilde{K}\rangle_{\natural} = -\mu^2 , \qquad \tilde{K} = i\,\frac{\omega}{c}\,e_t + \vec k ,
+\langle\tilde P\rangle_{\natural} = -\mu^2 , \qquad \tilde P = i\,\frac{\omega}{c}\,e_t + \vec k ,
 $$
 which is the field-theoretic counterpart of the particle's $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ and was verified on a random on-shell momentum. The particle and the field therefore sit on the same biquaternion-norm shell, one for the four-momentum and one for the wave four-vector, and the action is what puts them there.
 

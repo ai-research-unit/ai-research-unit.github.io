@@ -104,7 +104,7 @@ because $\sigma^{\mu\nu}$ is constant and antisymmetric. Dividing by $2m$ gives 
 
 ### A note on the total divergence
 
-The spin term is not separately conserved; its divergence contributes to $\langle\tilde\nabla,\tilde j\rangle_{\natural}$ together with the convection term. What is separately meaningful is the **integrated** spin density, which is the magnetic moment, and the split of the current as a sum of two covariantly defined pieces. The total divergence is what makes the second term a "bound" current rather than a transport current: it can be removed from the current at the price of a surface term, and cannot be removed from the associated moment.
+The spin term is not separately conserved; its divergence contributes to $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ together with the convection term. What is separately meaningful is the **integrated** spin density, which is the magnetic moment, and the split of the current as a sum of two covariantly defined pieces. The total divergence is what makes the second term a "bound" current rather than a transport current: it can be removed from the current at the price of a surface term, and cannot be removed from the associated moment.
 
 ## The Momentum-Space Form
 

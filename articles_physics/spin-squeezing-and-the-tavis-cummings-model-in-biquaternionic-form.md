@@ -13,7 +13,7 @@ The article establishes:
 3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -200,9 +200,9 @@ The **two-axis countertwisting** Hamiltonian $\frac{\chi}{\hbar}(\tilde{J}_+^2 +
 Each $\tilde{J}_\alpha$ is a sum of Hermitian elements $ie_\alpha^{(i)}$ and is Hermitian; the mean spin is the trace pairing
 
 $$
-\langle \tilde{J}_\alpha\rangle = \mathrm{Tr}\!\left(\tilde{\rho}\,\tilde{J}_\alpha\right),
+\langle \tilde{J}_\alpha\rangle = \mathrm{Tr}\!\left(\tilde{Ϛ}\,\tilde{J}_\alpha\right),
 \qquad
-\tilde{\rho} = \text{the collective state},
+\tilde{Ϛ} = \text{the collective state},
 $$
 
 and the covariance is the symmetrised trace pairing of $\tilde{J}_\alpha\tilde{J}_\beta$. Squeezing is thus a statement about the trace pairings of the collective $\mathbb{M}_+$ elements and their products: it is the anisotropy of a quadratic pairing, not of a linear one. The mean spin is a vector, the covariance is a symmetric tensor, and the physics of squeezing lives entirely in the tensor.
@@ -266,7 +266,7 @@ $$
 
 equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde{J}_3^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\xi_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\xi_R^2 = 1$ at $\chi t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\xi^2\propto N^{-1}$.
 
-In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{J}_\alpha)$ and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{H}_{\mathbb{B}}$, while the twisting generator $\tilde{J}_3^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_+$ coupling whose single-excitation gap is the collective Rabi splitting.
+In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{J}_\alpha)$ and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{H}_{\mathbb{B}}$, while the twisting generator $\tilde{J}_3^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_+$ coupling whose single-excitation gap is the collective Rabi splitting.
 
 ## Summary of Notation
 

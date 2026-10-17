@@ -238,26 +238,26 @@ $$
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
-Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0\exp(i\theta)$ and $\tilde{k} = ik_0e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
+Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})) = \tilde{\Psi}_0\exp(i\theta)$ and $\tilde{P} = ik_0e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
 
 $$
 \tilde{\Psi} = \tilde{\Psi}_0\,\exp(i\theta) + \tilde{\Psi}_1\,\exp(-i\theta),
 $$
 
-and the equation becomes a linear system for the pair $(\tilde{\Psi}_0,\tilde{\Psi}_1)$. Its solvability depends on $\tilde{k}$, and the dependence is the whole story.
+and the equation becomes a linear system for the pair $(\tilde{\Psi}_0,\tilde{\Psi}_1)$. Its solvability depends on $\tilde{P}$, and the dependence is the whole story.
 
 Since $\flat$ is antilinear and $i^\flat = -i$, the conjugation acts on the two modes by
 
 $$
-\tilde{\nabla}\tilde{\Psi} = i\tilde{k}\tilde{\Psi}_0\exp(i\theta) - i\tilde{k}\tilde{\Psi}_1\exp(-i\theta), \qquad
+\tilde{\nabla}\tilde{\Psi} = i\tilde{P}\tilde{\Psi}_0\exp(i\theta) - i\tilde{P}\tilde{\Psi}_1\exp(-i\theta), \qquad
 \tilde{\Psi}^\flat = -\tilde{\Psi}_0^{*} \exp(-i\theta) - \tilde{\Psi}_1^{*} \exp(i\theta) ,
 $$
 
 and matching exponentials gives the two matrix equations
 
 $$
-i\tilde{k}\tilde{\Psi}_0 + m\tilde{\Psi}_1^{*} = 0, \qquad
-i\tilde{k}\tilde{\Psi}_1 - m\tilde{\Psi}_0^{*} = 0 .
+i\tilde{P}\tilde{\Psi}_0 + m\tilde{\Psi}_1^{*} = 0, \qquad
+i\tilde{P}\tilde{\Psi}_1 - m\tilde{\Psi}_0^{*} = 0 .
 $$
 
 These are $16$ real linear equations in the $16$ real unknowns $(\tilde{\Psi}_0,\tilde{\Psi}_1)$. Their nullity, computed by elimination and quoted for a representative momentum, is

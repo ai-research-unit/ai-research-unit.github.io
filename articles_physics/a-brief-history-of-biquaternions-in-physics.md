@@ -138,7 +138,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$
 
-These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
+These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
 
 ## Clifford's Rotors: Position, Lines, and Screws
 
@@ -317,7 +317,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position â€
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (Born rule) |
 | $\vec E + ic\vec B$ | Riemannâ€“Silberstein vector (Silberstein, 1907) |
 | $j$ | Split-complex unit, $j^{2} = +1$ (Clifford's twist $\omega$) |
 | $\Pi_x = \tfrac{1}{2}(1 + j), \ \Pi_y = \tfrac{1}{2}(1 - j)$ | Idempotents; right and left vector parts of a motor |

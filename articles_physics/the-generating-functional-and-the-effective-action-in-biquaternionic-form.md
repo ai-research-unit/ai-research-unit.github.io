@@ -65,9 +65,9 @@ and the full correlators are the derivatives of $Z$ itself. The formalism is the
 $$
 W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad\text{equivalently}\qquad
-W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde k\tilde k^{\natural}+m^2},
+W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde P\tilde P^{\natural}+m^2},
 $$
-using the wave biquaternion $\tilde k=iEe_t+\vec p$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
+using the wave biquaternion $\tilde P=iEe_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$, as before.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -195,9 +195,9 @@ The one-loop effective action is the entry point of the determinant, and this se
 
 **The quadratic expansion.** Expand the action about the classical field,
 $$
-S[\tilde\phi+\tilde\eta] = S[\tilde\phi] + \tfrac12\big\langle \tilde\eta, S''[\tilde\phi]\,\tilde\eta\big\rangle + O(\tilde\eta^3) ,
+S[\tilde\phi+\delta\tilde\Phi] = S[\tilde\phi] + \tfrac12\big\langle \delta\tilde\Phi, S''[\tilde\phi]\,\delta\tilde\Phi\big\rangle + O(\delta\tilde\Phi^3) ,
 $$
-where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde\phi=0$. The Gaussian integral over the fluctuation $\tilde\eta$ gives
+where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde\phi=0$. The Gaussian integral over the fluctuation $\delta\tilde\Phi$ gives
 $$
 W[\tilde J] = S[\tilde\phi] + \tfrac12\big\langle \tilde J,\tilde\phi\big\rangle - \frac{i\hbar}{2}\,\mathrm{Tr}\log S''[\tilde\phi] + O(\hbar^2) ,
 $$
@@ -261,6 +261,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(iS/\hbar+\langle\tilde J,\tilde\Phi\rangle)$ | Generating functional |
 | $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |
 | $\tilde\phi=\delta W/\delta\tilde J$ | Classical field (module-valued) |
+| $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\phi+\delta\tilde\Phi$ |
 | $\Gamma[\tilde\phi]=\langle\tilde J,\tilde\phi\rangle-W[\tilde J]$ | Effective action (Legendre transform) |
 | $\Gamma^{(2)}W^{(2)}=I$, $W+\Gamma=\langle\tilde J,\tilde\phi\rangle$ | Inverse-Hessian relation; Legendre identity |
 | $\Gamma=S+\hbar\Gamma_1+\cdots$ | Loop expansion |
@@ -270,7 +271,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $V_{\mathrm{eff}}(\tilde\phi)=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde\phi=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde\phi^2\ge0$ | Vacuum condition; stability (convexity) |
 | $\tilde K=\Box-m^2$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Central kinetic operator |
-| $\tilde k=iEe_t+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
+| $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading
 

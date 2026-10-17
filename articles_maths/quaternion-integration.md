@@ -151,7 +151,7 @@ Ellipticity is the analytic reason the regular functions are smooth and the Cauc
 
 **Definition.** A $C^1$ function $f$ is **left regular** if $Df = 0$ and **right regular** if $fD = 0$, where the right action of the operator is $fD = \partial/\partial Q_t f + (\partial/\partial Q_x f)\vec e_x + (\partial/\partial Q_y f)\vec e_y + (\partial/\partial Q_z f)\vec e_z$.
 
-The two classes are exchanged by quaternion conjugation. Write $\tilde{f} = \bar{f}$; multiplication by a constant is conjugated into multiplication by the conjugate constant, and conjugation reverses the order of factors, so
+The two classes are exchanged by quaternion conjugation. Multiplication by a constant is conjugated into multiplication by the conjugate constant, and conjugation reverses the order of factors, so
 
 $$
 (Df)^{\natural} = \sum_\mu (\partial/\partial q_\mu \bar{f}) e_\mu^{\natural} = \bar{f}\,\bar{D}, \qquad (fD)^{\natural} = \sum_\mu e_\mu^{\natural} (\partial/\partial q_\mu \bar{f}) = \bar{D}\,\bar{f},

@@ -139,7 +139,7 @@ A Green's function of $\Box$ is a distribution $G(\tilde{Q},\tilde{Q}')$ satisfy
 $$
 \Box_{\tilde{Q}}\,G(\tilde{Q},\tilde{Q}') = -\,\delta^{(4)}(\tilde{Q} - \tilde{Q}') ,
 $$
-where $\Box_{\tilde{Q}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde{R}'$ inverted by convolution. With this normalisation the inhomogeneous equation
+where $\Box_{\tilde{Q}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde J$ inverted by convolution. With this normalisation the inhomogeneous equation
 $$
 \Box\tilde{\Phi} = \tilde{J}
 $$
@@ -252,7 +252,7 @@ The short-distance behaviour is the massless kernel, $G^{(\mu)}_{\mathrm{inv}} \
 
 The mass shell is the symbol condition
 $$
-\langle\tilde{K}\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - \vec k^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
+\langle\tilde P\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - \vec k^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
 $$
 which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec k$ in $\mathbb{M}_-$, the biquaternion norm returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
 
@@ -381,7 +381,7 @@ $$
 $$
 which is exactly the definition of the material sector. Its $i$-multiple lies in the informational sector, $i\tilde{G}_1 \in \mathbb{M}_+$, since $i\mathbb{M}_- = \mathbb{M}_+$; the conjugations themselves leave the sector untouched and it is the central multiplication that exchanges the two, as the companion article on the involutions establishes. The operator identities mirror these statements: $\Box$ has real coefficients, hence is fixed by ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ and negated by $\flat$, exactly as the real scalar kernels are, and $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$. The kernel's conjugation behaviour is therefore the operator's own: the reality of the kernel and the reality of the operator are one statement, inherited by the scalar kernel from the operator it inverts. The companion article *Conventions in the Biquaternion Universe* fixes the four conjugations and their real subspaces; the companion article on the involutions develops the lattice, the Klein four-group of $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ with $\flat = -{}^{*}$, and the matrix realisations. What this article adds is the operator content: the wave operator is the biquaternion norm of the gradient, its adjoint is itself because the adjoint of the gradient is $-\tilde{\nabla}^{\natural}$, and the kernel that inverts it is central, while the kernel that inverts the first-order operator is a material four-vector.
 
-A last structural remark ties the kernel theory to the algebra's null cone. The massless symbol vanishes on $\{\langle\tilde{K}\rangle_{\natural} = 0\}$, the zero-divisor cone, and the causal kernels are supported on exactly the corresponding cone in position space. The algebra's zero divisors, its projective geometry, and the light-cone structure are the subject of the companion articles on the null quadric; for the operator theory the point is that the characteristic cone of $\Box$ is the algebra's null cone, so that the propagation described by these Green's functions is the propagation of the biquaternion norm's zero set. That identification — the light cone *is* the zero-divisor cone — is what makes the framework's causal structure algebraic rather than postulated.
+A last structural remark ties the kernel theory to the algebra's null cone. The massless symbol vanishes on $\{\langle\tilde P\rangle_{\natural} = 0\}$, the zero-divisor cone, and the causal kernels are supported on exactly the corresponding cone in position space. The algebra's zero divisors, its projective geometry, and the light-cone structure are the subject of the companion articles on the null quadric; for the operator theory the point is that the characteristic cone of $\Box$ is the algebra's null cone, so that the propagation described by these Green's functions is the propagation of the biquaternion norm's zero set. That identification — the light cone *is* the zero-divisor cone — is what makes the framework's causal structure algebraic rather than postulated.
 
 ## Summary
 

@@ -393,13 +393,13 @@ evaluated with the original bracket. A transformation satisfying these is canoni
 
 ### Angular Momentum
 
-For a particle the quantity
+For a particle, the product of position and momentum is
 
 $$
-\tilde L=\tilde q\,\tilde p
+\tilde q\,\tilde p=-\vec q\cdot\vec p+\vec L,\qquad \vec L=\vec q\times\vec p,
 $$
 
-decomposes, for the pure-vector configuration $\tilde q,\tilde p$ that carries the spatial interpretation, as $\tilde L=-\vec q\cdot\vec p+\vec q\times\vec p$; the scalar part is (minus) the contraction of position and momentum, and the **vector part is the angular momentum** $\vec L=\vec q\times\vec p$. This is the biquaternion form of the cross-product formula $\vec L=\vec r\times\vec p$. Its components satisfy, as in the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*,
+for the pure-vector configuration $\tilde q,\tilde p$ that carries the spatial interpretation. The scalar part is (minus) the contraction of position and momentum, and the **vector part is the angular momentum** $\vec L$. This is the biquaternion form of the cross-product formula $\vec L=\vec r\times\vec p$. Its components satisfy, as in the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*,
 
 $$
 \{L_i,L_j\}=\varepsilon_{ijk}L_k,\qquad \{L_i,q_j\}=\varepsilon_{ijk}q_k,\qquad \{L_i,p_j\}=\varepsilon_{ijk}p_k .
@@ -428,10 +428,10 @@ The symmetries that the algebra makes visible are the following.
 **Configuration-space rotations.** A rotation of the configuration acts by the **rotor conjugation**
 
 $$
-\tilde q\longmapsto \tilde R\,\tilde q\,\tilde R^{*},\qquad \tilde R\in\mathbb{H}_{\mathbb{B}},\quad \tilde R\tilde R^{\natural}=e_t .
+\tilde q\longmapsto \tilde u\,\tilde q\,\tilde u^{*},\qquad \tilde u\in\mathbb{H}_{\mathbb{B}},\quad \tilde u\tilde u^{\natural}=e_t .
 $$
 
-The biquaternion norm is invariant, $\langle\tilde R\tilde q\tilde R^{*}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\tilde L=\tilde q\tilde p$ of the previous section, that is its vector part $\vec q\times\vec p$. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
+The biquaternion norm is invariant, $\langle\tilde u\tilde q\tilde u^{*}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\vec L=\vec q\times\vec p$ of the previous section. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
 
 **The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto \exp(i\alpha)\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $\exp(i\alpha)\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $\mathrm{U}(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(d\tilde q/dt)\mapsto \exp(2i\alpha)L$, so a real Lagrangian is invariant only for $\exp(2i\alpha)=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Z$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm Cone*.
 
@@ -455,7 +455,7 @@ The Lagrangian and Hamiltonian formulations of classical mechanics take the foll
 - Hamilton's equations are $d\tilde q/dt=\partial H/\partial\tilde p$, $d\tilde p/dt=-\partial H/\partial\tilde q$.
 - Position and momentum combine into the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the configuration and whose Hermitian part is $i$ times the momentum. The algebra's complex structure $i$ exchanges the two parts.
 - The Poisson bracket is $\{f,g\}=\mathrm{Sc}(\overline{\nabla_{\tilde q}f}\nabla_{\tilde p}g)-\mathrm{Sc}(\overline{\nabla_{\tilde p}f}\nabla_{\tilde q}g)$, the scalar part of a quaternion expression; the discarded vector part is the cross product that makes the angular-momentum bracket $\{L_i,L_j\}=\varepsilon_{ijk}L_k$ exact.
-- Rotational symmetry acts by rotor conjugation $\tilde q\mapsto\tilde R\tilde q\tilde R^{*}$, and its Noether charge is $\tilde L=\tilde q\tilde p$.
+- Rotational symmetry acts by rotor conjugation $\tilde q\mapsto\tilde u\tilde q\tilde u^{*}$, and its Noether charge is $\vec L=\vec q\times\vec p$.
 - The Lagrangian is determined only up to a total time derivative: $L$ and $L+dF(q,t)/dt$ have the same equations of motion, and their actions differ by the endpoint term $F(t_2)-F(t_1)$, which a variation with fixed endpoints cannot see. This is the same boundary freedom that appears as the symplectic potential in the variation of the action.
 - The Legendre transform may be applied to a subset of the coordinates. The partial transform is the **Routhian**, which puts the transformed coordinates — conventionally the cyclic ones, whose momenta are conserved — in Hamiltonian form and the rest in Lagrangian form; for a central potential it produces the centrifugal term as a transformed potential.
 - In the Hamiltonian description coordinates, velocities and momenta are **mutually independent** variables; the relation $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$ is used only to eliminate the velocity. This is what makes the transform a change of variables and $\tilde Z=\tilde q+i\tilde p$ a coordinate.
@@ -489,8 +489,8 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\tilde Z=\tilde q+i\tilde p$ | Phase-space biquaternion |
 | $\nabla_{\tilde q}f,\nabla_{\tilde p}f$ | Gradients of an observable |
 | $\{f,g\}$ | Poisson bracket |
-| $\tilde L=\tilde q\tilde p$ | Angular momentum (vector part $\vec q\times\vec p$) |
-| $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde R\rangle_{\natural}=e_t$ | Rotation rotor |
+| $\vec L=\vec q\times\vec p$ | Angular momentum |
+| $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotation rotor |
 | $\mathrm{Tr}(e_t)=2$ | Trace normalization |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

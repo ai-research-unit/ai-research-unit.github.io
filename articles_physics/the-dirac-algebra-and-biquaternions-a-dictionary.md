@@ -14,7 +14,7 @@ and the dictionary is the explicit isomorphism. Because a Clifford algebra is no
 
 The relation between the two algebras is not an equality of the full algebras. The Clifford algebra $\mathrm{Cl}_{1,3}$ has real dimension $16$, while the biquaternion algebra has real dimension $8$; $\mathbb{B}$ is the even part of $\mathrm{Cl}_{1,3}$, spanned by the identity, the six bivectors $\gamma^\mu\gamma^\nu$, and the pseudoscalar. The odd part — the vectors $\gamma^\mu$ and the trivectors — is not contained in $\mathbb{B}$. It is reached from the even part by multiplication by a fixed odd element, and the article gives that correspondence too, in the form of the odd generators written as $2\times 2$ matrices over $\mathbb{B}$.
 
-The notation is inherited unchanged from the read list: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, the scalar imaginary $i$, the complex subspace $\mathbb{C}_{\mathbb{B}}$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the two four-dimensional real subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, the biquaternionic gradient $\tilde{\nabla}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. Nothing here renames or rederives them.
+The notation is inherited unchanged from the read list: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, the scalar imaginary $i$, the complex subspace $\mathbb{C}_{\mathbb{B}}$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the two four-dimensional real subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, the biquaternionic gradient $\tilde{\nabla}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Nothing here renames or rederives them.
 
 The article is organized as follows. The conventions — signature, metric, and the explicit representation of the gamma matrices — are fixed first, together with the distinction between the two real Clifford algebras of opposite metric sign. The isomorphism is then stated and verified. The dictionary of basis elements, of products, and of the four real subspaces follows. Separate sections treat the odd part, the chirality operator and its projectors, the biquaternion norm and conjugation, and the operator correspondence. Every table is accompanied by the check that establishes it.
 
@@ -486,7 +486,7 @@ which is the invariant interval of the companion articles. So the interval is th
 The biquaternion algebra is $M_2(\mathbb{C})$ as a real algebra, and the dictionary is consistent with that matrix representation: the even Clifford algebra is the same copy of $M_2(\mathbb{C})$, and each biquaternion has both a $2\times 2$ matrix and an even Clifford representative. The corpus's trace formula is stated in the $2\times 2$ representation and is inherited unchanged:
 
 $$
-\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}).
+\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).
 $$
 
 Two cautions about traces, since the dictionary introduces a second one. First, the trace in the corpus formula is the trace of the $2\times 2$ matrix representing the biquaternion; it is not the trace of the $4\times 4$ Clifford matrix. Second, the two are different functions: the $4\times 4$ trace of an even element is $\mathrm{Tr}\,\mathsf{M}_4(\tilde{Q}) = 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q})$ — for example $\mathrm{Tr}\,\mathsf{M}_4(e_t) = 4$ and $\mathrm{Tr}\,\mathsf{M}_4(i) = \mathrm{Tr}\,\omega = 0$ — while the $2\times 2$ trace is $\mathrm{Tr}_2(\tilde{Q}) = 2Q_t$, so that
@@ -553,7 +553,7 @@ $$
 \mathsf{M}_4(\tilde{\nabla})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{\nabla})\bigr) = \Box\,I_4,
 $$
 
-which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\mathsf{M}_4(\tilde{k})\,\mathrm{rev}(\mathsf{M}_4(\tilde{k})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
+which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\mathsf{M}_4(\tilde{P})\,\mathrm{rev}(\mathsf{M}_4(\tilde{P})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
 
 The gamma-matrix Dirac operator is the **odd** element
 
@@ -610,7 +610,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Gamma-matrix Dirac operator |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (unchanged) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (unchanged) |
 
 ## Further Reading
 

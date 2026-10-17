@@ -488,10 +488,10 @@ These are unequal: $\tfrac{1}{2}\sinh(2) \approx 1.813$, whereas $\sinh\sqrt{2}/
 The **logarithm** of a biquaternion $\tilde{Q}$ is defined as the inverse of the exponential:
 
 $$
-\log(\tilde{Q}) = \tilde{L} \iff \exp(\tilde{L}) = \tilde{Q}.
+\log(\tilde{Q}) = \tilde Q_{\log} \iff \exp(\tilde Q_{\log}) = \tilde{Q}.
 $$
 
-The exponential is never a zero divisor: from the property $\langle\exp(\tilde{L})\rangle_{\natural} = \exp(2 L_0)$ for every $\tilde{L}$, the biquaternion norm of $\exp(\tilde{L})$ is always nonzero. So the logarithm can exist only on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. The following theorem shows that it exists on the whole group of units, and on no larger set.
+The exponential is never a zero divisor: from the property $\langle\exp(\tilde Q)\rangle_{\natural} = \exp(2 Q_t)$ for every $\tilde Q$, the biquaternion norm of $\exp(\tilde Q)$ is always nonzero. So the logarithm can exist only on the group of units $\mathbb{B}^\times = \{\langle\tilde{Q}\rangle_{\natural} \neq 0\}$. The following theorem shows that it exists on the whole group of units, and on no larger set.
 
 ### Existence of the Logarithm
 
@@ -506,13 +506,13 @@ $$
 **Case $B \neq 0$.** Set $R = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$, a fixed square root, $\vec u = \vec Q/B$, and let $\Theta$ be determined by $\cos\Theta = Q_t/R$ and $\sin\Theta = B/R$, so that $Q_t = R\cos\Theta$ and $B = R\sin\Theta$. Since $\langle\tilde{Q}\rangle_{\natural} \neq 0$, we have $R \neq 0$, so the principal branch of $\log R$ is defined. Set
 
 $$
-\tilde{L} = \log R \, e_t + \Theta \vec u.
+\tilde Q_{\log} = \log R \, e_t + \Theta \vec u.
 $$
 
 Then
 
 $$
-\exp(\tilde{L}) = R(\cos\Theta \, e_t + \sin\Theta \, \vec u) = Q_t e_t + B \vec u = \tilde{Q},
+\exp(\tilde Q_{\log}) = R(\cos\Theta \, e_t + \sin\Theta \, \vec u) = Q_t e_t + B \vec u = \tilde{Q},
 $$
 
 using the identity $\exp(\Theta \vec u) = \cos\Theta \, e_t + \sin\Theta \, \vec u$, which follows from $\vec u^2 = -e_t$.
@@ -520,24 +520,24 @@ using the identity $\exp(\Theta \vec u) = \cos\Theta \, e_t + \sin\Theta \, \vec
 **Case $B = 0$, $\vec Q \neq 0$.** Then $\vec Q^2 = 0$ and $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 \neq 0$, so $Q_t \neq 0$. Set
 
 $$
-\tilde{L} = \log Q_t \, e_t + \vec Q/Q_t.
+\tilde Q_{\log} = \log Q_t \, e_t + \vec Q/Q_t.
 $$
 
 Then
 
 $$
-\tilde{L}^2 = (\log Q_t)^2 e_t + 2 \log Q_t \cdot \vec Q/Q_t + (\vec Q/Q_t)^2.
+\tilde Q_{\log}^2 = (\log Q_t)^2 e_t + 2 \log Q_t \cdot \vec Q/Q_t + (\vec Q/Q_t)^2.
 $$
 
 The last term vanishes because $\vec Q^2 = 0$. The middle term commutes with the first term, since it is a scalar multiple of $\vec Q$ and the first term is a scalar multiple of $e_t$. So
 
 $$
-\exp(\tilde{L}) = \exp(\log Q_t \cdot e_t) \exp(\vec Q/Q_t) = Q_t (e_t + \vec Q/Q_t) = Q_t e_t + \vec Q = \tilde{Q}.
+\exp(\tilde Q_{\log}) = \exp(\log Q_t \cdot e_t) \exp(\vec Q/Q_t) = Q_t (e_t + \vec Q/Q_t) = Q_t e_t + \vec Q = \tilde{Q}.
 $$
 
 **Case $\vec Q = 0$.** Then $\tilde{Q} = Q_t e_t$ with $Q_t \neq 0$ (since $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 \neq 0$), and $\log \tilde{Q} = \log Q_t \cdot e_t$, the ordinary complex logarithm.
 
-**Converse.** If $\tilde{Q}$ has a logarithm, then $\tilde{Q} = \exp(\tilde{L})$ for some $\tilde{L}$, and $\langle\tilde{Q}\rangle_{\natural} = \langle\exp(\tilde{L})\rangle_{\natural} = \exp(2 L_0) \neq 0$. So $\tilde{Q}$ is invertible.
+**Converse.** If $\tilde{Q}$ has a logarithm, then $\tilde{Q} = \exp(\tilde Q_{\log})$ for some $\tilde Q_{\log}$, and $\langle\tilde{Q}\rangle_{\natural} = \langle\exp(\tilde Q_{\log})\rangle_{\natural} = \exp\!\bigl(2\,\mathrm{Sc}(\tilde Q_{\log})\bigr) \neq 0$. So $\tilde{Q}$ is invertible.
 
 ### Summary of the Logarithm
 

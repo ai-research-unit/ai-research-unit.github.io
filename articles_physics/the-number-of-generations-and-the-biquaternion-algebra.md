@@ -12,7 +12,7 @@ This article asks what the biquaternion framework says about the number. The ans
 
 The article is organised as follows. A section recalls how the Standard Model counts generations. A section shows how the framework carries a generation index. A section exhibits the invariants that are $N_g$-independent and concludes that the algebra does not fix the number. A section collects the constraints that do touch $N_g$. A section disposes of the "three imaginary units" identification. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and central scalar imaginary $i$, $i^2=-1$; as an algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), each of real dimension four; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The irrep of $\mathbb{B}$ is two-dimensional complex, denoted $S=\mathbb{C}^2$; the Dirac module is $\Delta=S\oplus\bar{S}$ with $S=(\tfrac12,0)$ and $\bar{S}=(0,\tfrac12)$, and $\dim_{\mathbb{C}}\Delta=4$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. A **generation index** $a=1,\dots,N_g$ is carried by a multiplicity space $\mathcal{F}=\mathbb{C}^{N_g}$, and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$. The flavour matrices of the companion article on the CKM matrix are operators on $\mathcal{F}$. Standard-model notation — the $Z$ width, the gauge quantum numbers, the CKM parameters — is used where standard physics is named, and is not framework structure.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and central scalar imaginary $i$, $i^2=-1$; as an algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and $\dim_{\mathbb{R}}\mathbb{B}=8$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), each of real dimension four; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The irrep of $\mathbb{B}$ is two-dimensional complex, denoted $S=\mathbb{C}^2$; the Dirac module is $\Delta=S\oplus\bar{S}$ with $S=(\tfrac12,0)$ and $\bar{S}=(0,\tfrac12)$, and $\dim_{\mathbb{C}}\Delta=4$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. A **generation index** $a=1,\dots,N_g$ is carried by a multiplicity space $\mathcal{F}=\mathbb{C}^{N_g}$, and the $N_g$-generation fermion space is $\Delta\otimes\mathcal{F}$. The flavour matrices of the companion article on the CKM matrix are operators on $\mathcal{F}$. Standard-model notation — the $Z$ width, the gauge quantum numbers, the CKM parameters — is used where standard physics is named, and is not framework structure.
 
 The framework results used here are those of the companion articles:
 
@@ -80,7 +80,7 @@ i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicit
 | $\dim_{\mathbb{C}}\mathbb{C}_{\mathbb{B}}$ | $1$ | none |
 | $\dim_{\mathbb{C}}S$ | $2$ | none |
 | $\dim_{\mathbb{C}}\Delta$ | $4$ | none |
-| Trace formula | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | none |
+| Trace formula | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | none |
 | Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{M}_\pm$ | none |
 | Anomaly conditions (per generation) | all zero | none |
 
@@ -283,7 +283,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\frac{N_g(N_g-1)}{2}$, $\frac{(N_g-1)(N_g-2)}{2}$ | Mixing angles; CP-violating phases |
 | $(N_g-1)^2$ | Total mixing parameters |
 | $N_\nu=2.984\pm0.008$ | Light neutrino species from the $Z$ width |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula, $N_g$-independent |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula, $N_g$-independent |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

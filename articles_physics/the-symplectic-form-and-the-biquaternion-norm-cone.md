@@ -276,21 +276,21 @@ $$
 
 which is the Minkowski interval; its zero set $\langle\tilde{Q}\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
-The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde K=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
+The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
 
 $$
-\langle\tilde K\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2 ,
+\langle\tilde P\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2 ,
 $$
 
-and $\langle\tilde K\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde K=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial Q_t^2+\Delta$ acts as the eigenvalue
+and $\langle\tilde P\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial Q_t^2+\Delta$ acts as the eigenvalue
 
 $$
 (iK_0)^2+(i\vec k)^2
-=-\left(K_0^2+\vec k^2\right)=-\langle\tilde K\rangle_{\natural}=\frac{\omega^2}{c^2}-\vec k^2,
+=-\left(K_0^2+\vec k^2\right)=-\langle\tilde P\rangle_{\natural}=\frac{\omega^2}{c^2}-\vec k^2,
 \qquad K_0=\frac{i\omega}{c},
 $$
 
-so $\Box\tilde\Phi=0$ is exactly $\langle\tilde K\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
+so $\Box\tilde\Phi=0$ is exactly $\langle\tilde P\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
 
 ## The Coadjoint Orbit and the Biquaternion-Norm Level Sets
 
@@ -315,7 +315,7 @@ The biquaternion norm enters in two ways. First, the orbits are the level sets o
 
 ## Darboux Coordinates and the Canonical Frame
 
-In the biquaternion phase space the coordinates $\tilde q,\tilde p$ are already Darboux coordinates: the form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ is constant, and the Poisson brackets are the canonical ones, $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$. A rotor conjugation $\tilde Z\mapsto\tilde R\tilde Z\tilde R^{*}$ with $\langle\tilde R\rangle_{\natural}=e_t$, restricted to the phase space, is a rotation of the phase-space coordinates; it preserves $\langle\cdot,\cdot\rangle_{\natural}$ and $g$ and, when it acts as an algebra automorphism commuting with $i$, it preserves $\omega$ as well. The cubic terms that would obstruct Darboux coordinates in a curved symplectic manifold are absent here because the phase space is linear; the only non-triviality is the noncommutativity of the quaternion product, which affects the interpretation of the coordinates but not the constancy of the form.
+In the biquaternion phase space the coordinates $\tilde q,\tilde p$ are already Darboux coordinates: the form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ is constant, and the Poisson brackets are the canonical ones, $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$. A rotor conjugation $\tilde Z\mapsto\tilde u\tilde Z\tilde u^{*}$ with $\langle\tilde u\rangle_{\natural}=e_t$, restricted to the phase space, is a rotation of the phase-space coordinates; it preserves $\langle\cdot,\cdot\rangle_{\natural}$ and $g$ and, when it acts as an algebra automorphism commuting with $i$, it preserves $\omega$ as well. The cubic terms that would obstruct Darboux coordinates in a curved symplectic manifold are absent here because the phase space is linear; the only non-triviality is the noncommutativity of the quaternion product, which affects the interpretation of the coordinates but not the constancy of the form.
 
 A point worth stating precisely: the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$ is a complexification of the phase-space point, and the symplectic form is the imaginary part of the Hermitian pairing on that complexification. The complexification is not an extra structure added to mechanics; it is the algebra's own complex structure, the same $i$ that appears in the sector decomposition $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and that exchanges the sectors.
 
@@ -341,7 +341,7 @@ The symplectic form and the biquaternion-norm cone are the two canonical quadrat
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\tilde Z,\tilde W)=\omega(\tilde Z,\tilde W)$ and $g(i\tilde Z,i\tilde W)=g(\tilde Z,\tilde W)$.
 - The symplectic potential is $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\tilde Z^{*} d\tilde Z)$, with $d\theta=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\tilde Z\wedge d\tilde Z^{*})$, while $d\tilde Z\wedge d\tilde Z=0$.
 - The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^\dagger\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
-- The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\tilde Z\rangle_{\natural} = \langle\tilde Z,\tilde Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde K\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
+- The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\tilde Z\rangle_{\natural} = \langle\tilde Z,\tilde Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
 The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairing, the metric is its symmetric (real) part, the algebra's complex structure is the compatible $J$, and the biquaternion-norm cone is the isotropic cone of the holomorphic form of the same complex structure. Nothing in this article is quantum: the Hermitian pairing is read as a classical phase-space form, and the cone is the classical light and wave cone.
 
@@ -359,7 +359,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\tilde Z,\tilde W\rangle=\mathrm{Sc}(\tilde Z\tilde W^{\natural}) = \langle\tilde Z,\tilde W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=0$, $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Light cone of the material sector |
-| $\langle\tilde K\rangle_{\natural}=0$, $\tilde K=\frac{i\omega}{c}e_t+\vec k$ | Characteristic cone of $\Box$ |
+| $\langle\tilde P\rangle_{\natural}=0$, $\tilde P=\frac{i\omega}{c}e_t+\vec k$ | Characteristic cone of $\Box$ |
 | $\langle\tilde S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

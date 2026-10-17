@@ -10,7 +10,7 @@ $$
 
 and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t)$ obeying $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{\rho}/dt = [\tilde{H},\tilde{\rho}]$ for $\tilde{\rho} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t)$ obeying $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -99,7 +99,7 @@ is the state module; in the matrix picture it is the space of matrices with only
 
 ### Why the wave function is not a generic element of $\mathbb{M}_+$
 
-The temptation is to let the "state" $\tilde{\rho} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\psi \in \mathbb{M}_+$ the product $\tilde{H}\psi$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$ does not define a flow on $\mathbb{M}_+$.
+The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\psi \in \mathbb{M}_+$ the product $\tilde{H}\psi$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$ does not define a flow on $\mathbb{M}_+$.
 
 That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\psi \in \mathbb{M}_+$ the derivative $\partial/\partial t\psi$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t\psi \in \mathbb{M}_-$ at every instant, and $\tilde{H}\psi$ need not be Hermitian. Take $\tilde{H} = i\,\vec e_x$ and
 
@@ -120,7 +120,7 @@ What disqualifies this $\psi$ is not the equation but the requirement that a wav
 The correct relation between the two kinds of state is bilinear. From $\psi \in \mathbb{B}\tilde{P}$ one forms
 
 $$
-\tilde{\rho} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} \in \mathbb{M}_+,
+\tilde{Ϛ} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} \in \mathbb{M}_+,
 $$
 
 which is Hermitian, positive, and trace one — an element of the Bloch ball, hence a state in the sense of the companion article. The wave function and the density matrix are not the same object; they are related by $\psi \mapsto \psi\psi^\dagger$, and the same element $i$ acts as complex structure on the spinor while exchanging the sectors in which the operator is expressed.
@@ -160,19 +160,19 @@ Differentiating the solution gives $i\hbar\,\partial/\partial t\psi = i\hbar(-i\
 
 **Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_0 = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t) = \cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x) = i\cos(t/\hbar)\vec e_x - i\sin(t/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt = i(-\sin(t/\hbar)e_t + \cos(t/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{\rho} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{\rho} = \psi\psi^\dagger$ and using $\partial/\partial t\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
 $$
-\partial/\partial t\tilde{\rho} = -\frac{i}{\hbar}\tilde{H}\tilde{\rho} + \frac{i}{\hbar}\tilde{\rho}\tilde{H}
-= -\frac{i}{\hbar}[\tilde{H},\tilde{\rho}],
+\partial/\partial t\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
+= -\frac{i}{\hbar}[\tilde{H},\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t\tilde{\rho} = [\tilde{H},\tilde{\rho}],
+i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
 $$
 
-which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
+which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde{\rho}\right) = \tfrac12\left(1 + \vec u\cdot\vec r\right).
+p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}\right) = \tfrac12\left(1 + \vec u\cdot\vec r\right).
 $$
 
 For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = \vec e_z$, and $p_+ = \tfrac12(1 + \vec u\cdot \vec e_z)$, the standard result.
@@ -232,15 +232,15 @@ The generator $\tilde{G}$ is anti-Hermitian; this is the general reason the expo
 - **$\mathbb{M}_+$ interpretation.** The Hamiltonian $\tilde{H} \in \mathbb{M}_+$ is a Hermitian observable — an energy. The equation says that the dynamics is generated by that observable, read through the intertwiner $i$.
 - **$\mathbb{M}_-$ interpretation.** The generator $\tilde{G} \in \mathbb{M}_-$ lies in the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector, and the Hamiltonian is recovered as $\tilde{H} = i\hbar\tilde{G}$.
 
-In the von Neumann form the split is even cleaner. For $\tilde{H}, \tilde{\rho} \in \mathbb{M}_+$,
+In the von Neumann form the split is even cleaner. For $\tilde{H}, \tilde{Ϛ} \in \mathbb{M}_+$,
 
 $$
-\left([\tilde{H},\tilde{\rho}]\right)^\dagger = \tilde{\rho}\tilde{H} - \tilde{H}\tilde{\rho} = -[\tilde{H},\tilde{\rho}],
+\left([\tilde{H},\tilde{Ϛ}]\right)^\dagger = \tilde{Ϛ}\tilde{H} - \tilde{H}\tilde{Ϛ} = -[\tilde{H},\tilde{Ϛ}],
 $$
 
-so $[\tilde{H},\tilde{\rho}] \in \mathbb{M}_-$; and since $\tilde{\rho} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t\tilde{\rho}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[\tilde{H},\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
-A structural caution belongs here. The wave function $\psi$ itself is an element of the state module $\mathbb{B}\tilde{P}$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{\rho} = \psi\psi^\dagger$, not $\psi$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+A structural caution belongs here. The wave function $\psi$ itself is an element of the state module $\mathbb{B}\tilde{P}$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \psi\psi^\dagger$, not $\psi$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
@@ -278,7 +278,7 @@ $$
 
 with $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t\tilde{\rho} = [\tilde{H},\tilde{\rho}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
 
 Using a non-central root $J$ in place of $i$ fails generically: the generator $-\hbar^{-1}J\tilde{H}$ need not be anti-Hermitian, so the flow is not unitary and the norm is not preserved (explicitly for $J = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
@@ -298,7 +298,7 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\tilde{H} = h_0e_t + i\vec h$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
-| $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
+| $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
 | $\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_0 + \vec u\cdot\vec h$ | Trace formula / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |

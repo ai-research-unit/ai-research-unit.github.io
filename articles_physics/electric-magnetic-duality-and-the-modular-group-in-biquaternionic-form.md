@@ -71,14 +71,14 @@ This is the framework's crispest statement about duality. The phase $\exp(-i\the
 With magnetic sources the rotation is promoted from a symmetry of the free equations to a symmetry of the sourced system. The sourced equation is
 
 $$
-\tilde\nabla F^{\mathrm{dual}}=-\tilde R_e-i\tilde R_m ,
+\tilde\nabla F^{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_e-i\sqrt{\epsilon}\,\tilde J_m ,
 \qquad
-\tilde R_e=\frac{i\rho_e}{\sqrt{\epsilon}}+\sqrt{\mu}\,\vec J_e ,
+\tilde J_e=ic\rho_e\,e_t+\vec J_e ,
 \qquad
-\tilde R_m=\frac{i\rho_m}{\sqrt{\mu}}+\sqrt{\epsilon}\,\vec J_m ,
+\tilde J_m=ic\rho_m\,e_t+\vec J_m ,
 $$
 
-and a rotation $F^{\mathrm{dual}}\mapsto \exp(-i\theta)F^{\mathrm{dual}}$ is compensated by rotating the complex source $\tilde{\mathcal R}=\tilde R_e+i\tilde R_m$, which is the algebraic statement that the symmetry exchanges electric and magnetic charge. The rotation is exact, internal and central; its parameter is continuous.
+and a rotation $F^{\mathrm{dual}}\mapsto \exp(-i\theta)F^{\mathrm{dual}}$ is compensated by rotating the complex source $\tilde{\mathcal R}=\sqrt{\mu}\,\tilde J_e+i\sqrt{\epsilon}\,\tilde J_m$, which is the algebraic statement that the symmetry exchanges electric and magnetic charge. The rotation is exact, internal and central; its parameter is continuous.
 
 ## The Complex Coupling and the Modular Group
 
@@ -253,7 +253,7 @@ The framework supplies the continuous $\mathrm{U}(1)$ duality intrinsically, bec
 | $F^{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $F^{\mathrm{dual}}_\star=-iF^{\mathrm{dual}}$ | Hodge dual; duality rotation at $\theta=\pi/2$ |
 | $I_2=\vec E\cdot\vec B$ | Second invariant; CP-odd pseudoscalar |
-| $\tilde R_e,\tilde R_m$ | Electric and magnetic source biquaternions |
+| $\tilde J_e,\tilde J_m$ | Electric and magnetic four-currents, entering as $\sqrt{\mu}\,\tilde J_e$ and $\sqrt{\epsilon}\,\tilde J_m$ |
 | $\theta$ | Theta angle; parameter of the internal rotation |
 | $\tau=\frac{\theta}{2\pi}+\frac{4\pi i}{g^2}$ | Complex coupling, upper half-plane |
 | $g$ | Gauge coupling |

@@ -20,7 +20,7 @@ This article is an explicit study of that resemblance, of the place where it is 
 
 The article is organized as follows. First the two constructions are set down in the notation of the companion articles. Then the generator-level correspondence is stated, and it is verified on two independent Hamiltonians on the spin (coadjoint) orbit; the rotor normalisation $\langle R\rangle_{\natural} = e_t$ is checked alongside. Then the failures are collected and each is verified: the different carriers and dimensions, a non-linear Hamiltonian that is not a rotor, the boost sector, and free motion. The article closes with a precise statement of what the similitude does and does not assert.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_j \vec e_k = \varepsilon_{jkl} e_l$ for $j \neq k$, the scalar imaginary is $i$, and the two four-dimensional real subspaces are the anti-Hermitian material space $\mathbb{M}_-$ (imaginary scalar, real vector) and the Hermitian informational space $\mathbb{M}_+$ (real scalar, imaginary vector). The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre (the complex scalars) is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. The rotor is fixed by the convention $\langle R\rangle_{\natural} = R\bar{R} = e_t$, and $\tilde{R}$ in the title map stands for $R^{*}$. For the boost, we use the **positive-rapidity convention**: the rotor built with $+V$ carries the laboratory frame to the moving frame, so that
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_j \vec e_k = \varepsilon_{jkl} e_l$ for $j \neq k$, the scalar imaginary is $i$, and the two four-dimensional real subspaces are the anti-Hermitian material space $\mathbb{M}_-$ (imaginary scalar, real vector) and the Hermitian informational space $\mathbb{M}_+$ (real scalar, imaginary vector). The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre (the complex scalars) is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The rotor is fixed by the convention $\langle R\rangle_{\natural} = R\bar{R} = e_t$, and $\tilde{R}$ in the title map stands for $R^{*}$. For the boost, we use the **positive-rapidity convention**: the rotor built with $+V$ carries the laboratory frame to the moving frame, so that
 
 $$
 \Lambda = \exp\!\left(+\frac{\psi}{2}\,i\vec u_{\mathrm b}\right)
@@ -280,7 +280,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | $\vec S$, $\{S_i,S_j\} = \varepsilon_{ijk}S_k$ | Coadjoint-orbit coordinate; Lie–Poisson bracket |
 | $H_G = 2G\cdot\vec S$ | Hamiltonian generating the rotor flow $G$ |
 | $\Lambda = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (positive rapidity, laboratory to moving frame) |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading
 

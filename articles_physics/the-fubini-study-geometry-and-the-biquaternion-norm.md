@@ -29,19 +29,19 @@ $$
 \qquad
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_t+i\vec h$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_t+i\vec h$,
 $$
 \langle\tilde{H}\rangle_{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_t .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\vec{u})=\tfrac12(e_t\pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, with matrix units $x=\tfrac12(i\vec e_x-\vec e_y)$, $y=\tfrac12(i\vec e_x+\vec e_y)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
+A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\vec{u})=\tfrac12(e_t\pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, with matrix units $x=\tfrac12(i\vec e_x-\vec e_y)$, $y=\tfrac12(i\vec e_x+\vec e_y)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
 
 ## The State Space and Its Two Forms
 
 An element of the Hermitian subspace is $\tilde{H}=h_0e_t+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, and the state space is the trace-one slice of the future cone,
 $$
-\{\text{states}\}=\left\{\tilde{\rho}\in\mathbb{M}_+:\ \mathrm{Tr}(\tilde{\rho})=1,\ \langle\tilde{\rho}\rangle_{\natural}\geq0\right\},
+\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{M}_+:\ \mathrm{Tr}(\tilde{Ϛ})=1,\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
 \qquad
-\tilde{\rho}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 .
+\tilde{Ϛ}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 .
 $$
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
@@ -68,7 +68,7 @@ The reader should also keep in mind what these forms are *not*. Neither is the a
 
 The boundary of the ball is the sphere $|\vec r|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
 $$
-\langle\tilde{\rho}\rangle_{\natural}=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
+\langle\tilde{Ϛ}\rangle_{\natural}=0,\qquad \tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
 $$
 so a boundary state is an idempotent of trace one and, in the matrix model, a rank-one projection. Writing it as
 $$
@@ -294,11 +294,11 @@ The first is the trace pairing, the second the trace distance of the companion a
 
 The pure states are the boundary; the mixed states are the interior. The metric of the interior is not determined by the boundary metric alone, and the algebra's own favourite quadratic form does not supply it. This section states what the algebra supplies, what is standard, and where the two part company.
 
-**What the biquaternion norm supplies in the interior.** For a state $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the computation of the projector variation goes through unchanged,
+**What the biquaternion norm supplies in the interior.** For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{Ϛ}=\tfrac12 i\,\delta\vec r$, the computation of the projector variation goes through unchanged,
 $$
-\langle\delta\tilde{\rho}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
+\langle\delta\tilde{Ϛ}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
 \qquad
--\langle\delta\tilde{\rho}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
+-\langle\delta\tilde{Ϛ}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
 $$
 but now for **all** displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\vec r|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.
 
@@ -338,7 +338,7 @@ $$
 
 one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\tfrac12 i\,\mathrm{Tr}(\tilde{P}[\delta_1\tilde{P},\delta_2\tilde{P}])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
 
-The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{\rho}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a trace-fixed scale — it determines completely; what it does not determine it leaves named.
+The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a trace-fixed scale — it determines completely; what it does not determine it leaves named.
 
 ## Summary of Notation
 
@@ -352,7 +352,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ | State, $|\vec r|\leq1$ |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | State, $|\vec r|\leq1$ |
 | $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
 | $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | State module, $\cong\mathbb{C}^2$ |
 | $\psi$, $\lvert\psi\rangle$ | Spinor in the state module |
