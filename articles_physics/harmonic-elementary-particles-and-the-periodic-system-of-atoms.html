@@ -57,13 +57,13 @@
 <p>One structural point should be stated at the outset, because it governs the whole assessment. The monochromatic amplitude obeys the <strong>Helmholtz equation</strong>, which is an eigenvalue equation only when a boundary condition is supplied. The programme supplies none: the frequency $\omega$ is a free parameter of the solution, continuous and arbitrary. A real cavity has discrete resonant frequencies because its walls impose a condition at a radius. Here the discreteness of the "periodic system" is imposed from outside, by the musical scale, and the dynamics is indifferent to it. That is the sharpest way to state both what the construction achieves and what it does not.</p>
 <p>Throughout, the conventions are the corpus's, and they are not the 2019 paper's. The charge–current biquaternion is</p>
 <p>$$
-\tilde{\Theta} = i\rho + \vec J,
+\tilde J = i\rho + \vec J,
 $$</p>
 <p>as in the companion EGM article and in <em>Shock Electromagnetic Waves</em>. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\nabla$ means the <strong>pure-vector</strong> gradient, $\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ acting by quaternion multiplication on the left, so that $\nabla\circ\nabla = -\Delta$; this is not the corpus's $\tilde{\nabla}$, which carries the time derivative, and the relation between the two is given in its own section.</p>
 <h2 id="the-free-chargecurrent-field-and-its-monochromatic-sector">The Free Charge–Current Field and Its Monochromatic Sector</h2>
 <p>The programme's free-field law is the one recorded in the companion articles: a charge–current that is subject to no external field satisfies the inertia equation</p>
 <p>$$
-D_-\tilde{\Theta} = 0,
+D_-\tilde J = 0,
 \qquad
 D_- = \partial/\partial\tau - i\nabla,
 \qquad
@@ -72,17 +72,17 @@ $$</p>
 <p>with the paper's pure-vector $\nabla$. Its scalar part is the conservation law $\partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0$ and its vector part the first-order inertia equation for the current; both are in the companion article, and nothing here changes them.</p>
 <p>A <strong>monochromatic</strong> field is one whose time dependence is a single exponential,</p>
 <p>$$
-\tilde{\Theta}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde J(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
 \qquad
 \omega > 0 .
 $$</p>
 <p>Substituting, $\partial/\partial\tau \to -i\omega$, so the inertia equation becomes</p>
 <p>$$
--i\left(\omega + \nabla\right)\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0,
+-i\left(\omega + \nabla\right)\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0,
 \qquad\text{that is}\qquad
-\left(\omega + \nabla\right)\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0 .
+\left(\omega + \nabla\right)\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0 .
 $$</p>
-<p>The <strong>biamplitude</strong> $\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ therefore obeys a first-order equation in which the frequency appears as a mass-like term. The first thing to note is the factorisation. Because $\nabla\circ\nabla = -\Delta$,</p>
+<p>The <strong>biamplitude</strong> $\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ therefore obeys a first-order equation in which the frequency appears as a mass-like term. The first thing to note is the factorisation. Because $\nabla\circ\nabla = -\Delta$,</p>
 <p>$$
 \left(\omega + \nabla\right)\circ\left(\omega - \nabla\right)
 = \omega^2 + \Delta ,
@@ -93,7 +93,7 @@ $$</p>
 $$</p>
 <p>generates a solution of the first-order equation through</p>
 <p>$$
-\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$</p>
 <p>and conversely every biamplitude is of that form for some $\tilde{\Psi}$.</p>
 <p>This is the cleanest part of the programme and it is worth naming. The corpus has plane-wave solutions and it has the retarded-potential and Green-function machinery, but it has no account of the <strong>monochromatic standing</strong> sector of the charge–current field, and that sector is what the rest of the paper is built on. Two consequences follow immediately and are used throughout.</p>
@@ -121,13 +121,13 @@ $$</p>
 <h2 id="pulsars-and-spinors">Pulsars and Spinors</h2>
 <p>The programme divides its generating potentials into two classes. Taking the potential to be a <strong>scalar</strong>, $\tilde{\Psi} = \psi_{nm}$, gives what the paper calls a <strong>pulsar</strong>,</p>
 <p>$$
-\tilde{\Theta}_{nm}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{nm}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \left(\omega - \nabla\right)\circ\,\psi_{nm}
 = \omega\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) - \mathrm{grad}\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$</p>
 <p>because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a <strong>vector</strong> directed along a coordinate axis, $\tilde{\Psi} = \psi_{nm}\vec e_\mu$, gives a <strong>spinor</strong>,</p>
 <p>$$
-\tilde{\Theta}_{nm}^{\,j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{nm}^{\,j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \left(\omega - \nabla\right)\circ\left(\psi_{nm}\vec e_\mu\right)
 = \mathrm{div}\!\left(\psi_{nm}\vec e_\mu\right) + \omega\,\psi_{nm}\vec e_\mu - \mathrm{rot}\!\left(\psi_{nm}\vec e_\mu\right),
 $$</p>
@@ -141,7 +141,7 @@ $$</p>
 <h2 id="the-spherical-harmonic-pulsar">The Spherical Harmonic Pulsar</h2>
 <p>For the spherically symmetric scalar potential $\psi_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $j_0'(z) = -j_1(z)$,</p>
 <p>$$
-\tilde{\Theta}_{00}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{00}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \omega\left(j_0(\omega r) + j_1(\omega r)\,\vec u_x\right),
 \qquad
 \vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},
@@ -149,9 +149,9 @@ $$</p>
 <p>so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed <strong>radially</strong>, $\omega j_1(\omega r)\vec u_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $j_0' = -j_1$ is exact between the two closed forms.</p>
 <p>The energy–momentum biquaternion of the programme is</p>
 <p>$$
-\tilde{\Sigma} = \tfrac12\,\tilde{\Theta}\circ\tilde{\Theta}^{*},
+\tilde{\Sigma} = \tfrac12\,\tilde J\circ\tilde J^{*},
 \qquad
-\tilde{\Theta}^{*} = \bar{s} - \bar{\vec V} \ \ \text{for}\ \ \tilde{\Theta} = s + \vec V;
+\tilde J^{*} = \bar{s} - \bar{\vec V} \ \ \text{for}\ \ \tilde J = s + \vec V;
 $$</p>
 <p>the conjugation negates the vector part and complex-conjugates the coefficients, exactly the corpus's ${}^{*}$. Its scalar part is the energy density and its vector part the Poynting analogue. For the spherical pulsar,</p>
 <p>$$
@@ -159,7 +159,7 @@ W_{00}^{\,0} = \tfrac12\,\omega^2\left(j_0^2(\omega r) + j_1^2(\omega r)\right),
 \qquad
 \vec P_{00}^{\,0} \equiv 0 .
 $$</p>
-<p>Both were verified numerically, the density against the closed form and the vanishing of $\vec P$ against the computed product. The vanishing is not an accident of this solution. Because ${}^{*}$ negates the vector part, the vector part of $\tilde{\Theta}\tilde{\Theta}^{*}$ is $-s\bar{\vec V} + \bar{s}\vec V - [\vec V,\bar{\vec V}]_{\mathrm{vec}}$, which vanishes identically whenever the amplitude's four components are <strong>real</strong>, as they are for every standing monochromatic solution of this kind. A standing wave has no net energy flux, and the model's expression for it says so algebraically. The programme's interpretation is that a harmonic particle does not radiate, and on this point the algebra agrees: $\vec P \equiv 0$ is a theorem about the conjugation, not a hypothesis.</p>
+<p>Both were verified numerically, the density against the closed form and the vanishing of $\vec P$ against the computed product. The vanishing is not an accident of this solution. Because ${}^{*}$ negates the vector part, the vector part of $\tilde J\tilde J^{*}$ is $-s\bar{\vec V} + \bar{s}\vec V - [\vec V,\bar{\vec V}]_{\mathrm{vec}}$, which vanishes identically whenever the amplitude's four components are <strong>real</strong>, as they are for every standing monochromatic solution of this kind. A standing wave has no net energy flux, and the model's expression for it says so algebraically. The programme's interpretation is that a harmonic particle does not radiate, and on this point the algebra agrees: $\vec P \equiv 0$ is a theorem about the conjugation, not a hypothesis.</p>
 <p>The asymptotics follow from the same two closed forms and are the quantitative content of the model at short and long range. As $r\to 0$, with $j_0(0) = 1$ and $j_1(z)\sim z/3$,</p>
 <p>$$
 \rho_{00}^{\,0} \to \omega ,
@@ -185,7 +185,7 @@ $$</p>
 <h2 id="the-spherical-spinor">The Spherical Spinor</h2>
 <p>For the vector potential directed along the first axis, $\tilde{\Psi} = j_0(\omega r)\vec e_x$, the spinor amplitude also closes. Expanding the product gives</p>
 <p>$$
-\tilde{\Theta}_{00}^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{00}^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
@@ -193,7 +193,7 @@ r_{,k} = \frac{x_k}{r},
 $$</p>
 <p>so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is</p>
 <p>$$
-\tilde{\Theta}_{00}^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{00}^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\left(\hat e, \vec u_x\right)
 + \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),
 $$</p>
@@ -211,9 +211,9 @@ $$</p>
 <p>which is exactly the pulsar's energy density, and which the paper states without displaying the identity that makes it work. The same asymptotics follow: the charge density vanishes at the centre as $r$, the current density tends to the finite value $\omega$, and the energy density tends to $\tfrac12\omega^2$.</p>
 <p>So the pulsar and the spinor differ in exactly one respect, and it is a single term: at the centre the pulsar's scalar part is $\omega$ while the spinor's is zero. Their energies, their vanishing Poynting vectors and their far-field falloffs are identical.</p>
 <h2 id="monochromatic-structures-and-crystals">Monochromatic Structures and Crystals</h2>
-<p>The paper's last construction widens the class of monochromatic solutions without solving anything new, and it is the one item of this paper that the corpus does not already have elsewhere. Take any biquaternion function $K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — the paper calls it a <strong>structural biquaternion</strong> — and convolve a solution with it. The operator is a differential operator with constant coefficients, and differentiation passes through a convolution, so the convolution of a solution with any $K$ is again a solution. The same device reappears in the programme's 2020 paper on the field side, where it weights the free-photon cloud; <em>The Ether and Photons in the Electro-Gravimagnetic Programme</em> records it there and cross-refers to this section. In components, for $\tilde{\Theta} = i\rho + \vec J$ and $K = k + \vec K$,</p>
+<p>The paper's last construction widens the class of monochromatic solutions without solving anything new, and it is the one item of this paper that the corpus does not already have elsewhere. Take any biquaternion function $K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — the paper calls it a <strong>structural biquaternion</strong> — and convolve a solution with it. The operator is a differential operator with constant coefficients, and differentiation passes through a convolution, so the convolution of a solution with any $K$ is again a solution. The same device reappears in the programme's 2020 paper on the field side, where it weights the free-photon cloud; <em>The Ether and Photons in the Electro-Gravimagnetic Programme</em> records it there and cross-refers to this section. In components, for $\tilde J = i\rho + \vec J$ and $K = k + \vec K$,</p>
 <p>$$
-\tilde{\Theta} * K = i\,\rho * k - \sum_{j=1}^{3} \vec J_j * \vec K_j
+\tilde J * K = i\,\rho * k - \sum_{j=1}^{3} \vec J_j * \vec K_j
 + \Big\{ i\,\rho * \vec K + \vec J * k
 + \sum_{j,l,m=1}^{3} \varepsilon_{jlm}\,(\vec J_j * \vec K_l)\,e_m \Big\},
 $$</p>
@@ -224,7 +224,7 @@ K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \sum_{l,m,n} a_{lmn}\,\delta(x_1 - l h_
 $$</p>
 <p>and convolution with it is the weighted sum of shifted copies of the base particle,</p>
 <p>$$
-\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \sum_{l,m,n} a_{lmn}\,
+\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \sum_{l,m,n} a_{lmn}\,
 \theta_0\big(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (l h_l,\, m h_m,\, n h_n),\, \omega\big),
 $$</p>
 <p>so a lattice of harmonic pulsars is again a monochromatic solution of the free charge–current equation. Several frequencies may be superposed in the same way, and the paper notes that such a superposition is in general <strong>incommensurable</strong> — it has no common period — which is the same fact that later excludes the equal-tempered scale from its periodic system.</p>
@@ -290,8 +290,8 @@ $$</p>
 <li><strong>No periodic system.</strong> The tone-to-element map is never fixed; the row lengths of the periodic table are not reproduced; and the mass-ratio prediction fails in mass order and is vacuous when the octave is left free.</li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The 2019 formulation of the electro-gravimagnetic programme takes the <strong>monochromatic</strong> sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into <strong>pulsars</strong>, from a scalar potential, and <strong>spinors</strong>, from a vector one.</p>
-<p>The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)\vec u_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde{\Theta}^{*} = \bar s - \bar{\vec V}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.</p>
+<p>The 2019 formulation of the electro-gravimagnetic programme takes the <strong>monochromatic</strong> sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into <strong>pulsars</strong>, from a scalar potential, and <strong>spinors</strong>, from a vector one.</p>
+<p>The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)\vec u_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde J^{*} = \bar s - \bar{\vec V}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.</p>
 <p>The one construction in the paper that the corpus did not already have is the <strong>convolution</strong>: since a constant-coefficient differential operator commutes with convolution, convolving any monochromatic solution with an arbitrary structural biquaternion $K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ yields another solution, and choosing $K$ to be an inhomogeneous lattice of shifted $\delta$-functions produces a lattice of shifted harmonic pulsars — the paper's crystal, body, tissue and filament construction. This part is algebra and it was verified; the naming of the products as crystals is interpretation, and the lattice steps, weights and frequencies are free parameters, as everything else discrete in the programme is.</p>
 <p>What the algebra does not supply is everything the particle interpretation needs. The Helmholtz equation carries no boundary condition, so no frequency is selected and there is no spectrum; the identification of frequency with mass carries no constant, so no mass is predicted; the algebra has no spin or statistics, so the quantum names are labels on a heavy/light split; and the "hydrogen atom" shares nothing with the corpus's hydrogen articles but the spherical harmonics. The periodic system is placed on the just-intonation scale by hand, and its one testable consequence — that atomic masses stand in the ratios $2^n\gamma_k$ — fails in mass order (helium would be $\tfrac98$ of hydrogen, and is $3.97$ times it) and is vacuous when the octave is free, since the scale's ratios are simple rationals and atomic weights are near integers. The argument that the pure scale is required for commensurability is correct in itself and has nothing in the model to act on.</p>
 <p>The corpus's relation to this part of the programme is therefore the same as to the rest of it, and the same verdict applies with less to be said in praise of the additions: the monochromatic algebra — the factorisation, the Helmholtz correspondence, the pulsar and spinor closed forms, and the convolution that builds periodic structures from a single solution — is a genuine and reusable piece of the biquaternion formalism, and the particle, atom, crystal and periodic-system interpretations built on it are choices, none of which is forced by that algebra.</p>
@@ -305,7 +305,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{\Theta} = i\rho + \vec J$</td>
+<td>$\tilde J = i\rho + \vec J$</td>
 <td>Charge–current biquaternion (corpus symbol)</td>
 </tr>
 <tr>
@@ -353,7 +353,7 @@ $$</p>
 <td>Structural biquaternion; any biquaternion function used as a convolution kernel</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta} * K$</td>
+<td>$\tilde J * K$</td>
 <td>Biquaternion convolution, with component convolutions; preserves solutions of the free equation</td>
 </tr>
 <tr>
@@ -361,8 +361,8 @@ $$</p>
 <td>Lattice of shifted $\delta$-functions; the crystal structural biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$</td>
-<td>Biamplitude, $\tilde{\Theta}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
+<td>$\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$</td>
+<td>Biamplitude, $\tilde J(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
 </tr>
 <tr>
 <td>$\tilde{\Psi}$</td>
@@ -377,11 +377,11 @@ $$</p>
 <td>Spherical Bessel function of order $n$</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta}_{nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$</td>
+<td>$\tilde J_{nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$</td>
 <td>Pulsar (scalar potential)</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta}_{nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$</td>
+<td>$\tilde J_{nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$</td>
 <td>Spinor (vector potential)</td>
 </tr>
 <tr>
@@ -393,11 +393,11 @@ $$</p>
 <td>Direction cosines; $\sum_k r_{,k}^2 = 1$</td>
 </tr>
 <tr>
-<td>$\tilde{\Sigma} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{*}$</td>
+<td>$\tilde{\Sigma} = \tfrac12\tilde J\circ\tilde J^{*}$</td>
 <td>Energy–momentum biquaternion</td>
 </tr>
 <tr>
-<td>$\tilde{\Theta}^{*} = \bar s - \bar{\vec V}$</td>
+<td>$\tilde J^{*} = \bar s - \bar{\vec V}$</td>
 <td>Vector-negating, coefficient-conjugating conjugation</td>
 </tr>
 <tr>

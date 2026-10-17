@@ -75,7 +75,7 @@ $$</p>
 <p><strong>Definition (the algebraic norm of an operation).</strong> Let $f$ be an operation on $\mathbb{H}$ with scalar-part form $\varphi(\tilde p,\tilde q)=\mathrm{Sc}\,f(\tilde p,\tilde q)$. The <strong>algebraic norm of $f$</strong> is the diagonal of that form, $\varphi_f(\tilde x)=\mathrm{Sc}\,f(\tilde x,\tilde x)$, and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (<em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em>).</p>
 <p><strong>Theorem (the algebraic norm of the block is the zero function).</strong> For the antisymmetric quaternionic multiplication, $\mathrm{Sc}(\tilde p\diamond\tilde q)=0$ for all $\tilde p,\tilde q$, hence $\varphi_{\diamond}(\tilde x)=0$ for all $\tilde x$. The algebraic norm of the operation is identically zero, and the block carries <strong>no algebraic norm</strong>.</p>
 <p><em>Proof.</em> The value $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ is a sum of pure terms, hence of zero scalar part, so the diagonal $\operatorname{Sc}(\tilde x\diamond\tilde x)$ is the zero function; a vanishing quadratic form is not an algebraic norm.</p>
-<p><strong>Remark (the two canonical quadratics of the block).</strong> The operation being alternating, the square vanishes identically, $\tilde x\diamond\tilde x=0$, and the conjugated square is the pure vector $\tilde x\diamond\tilde x^{\natural}=-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The conjugated square is central exactly when $x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0$, that is on the union of the centre $\mathbb{R}e_t$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$, and at $\tilde x=e_t+\vec e_x$ it takes the value $-2\vec e_x$; neither canonical quadratic is central-valued at every element.</p>
+<p><strong>Remark (the two canonical quadratics of the block).</strong> The operation being alternating, the square vanishes identically, $\tilde x\diamond\tilde x=0$, and the conjugated square is the pure vector $\tilde x\diamond\tilde x^{\natural}=-2x_0\vec x$. The conjugated square is central exactly when $x_0\vec x=0$, that is on the union of the centre $\mathbb{R}e_t$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$, and at $\tilde x=e_t+\vec e_x$ it takes the value $-2\vec e_x$; neither canonical quadratic is central-valued at every element.</p>
 <h2 id="the-two-surviving-quadratics">The Two Surviving Quadratics</h2>
 <p>Two quadratic objects survive the loss of the scalar part, one from the scalar coordinates alone and one from the operator calculus.</p>
 <p><strong>Proposition (the scalar-part form).</strong> The form $\varphi(\tilde p,\tilde q)=p_0q_t$ is a symmetric bilinear form of $\mathbb{H}$, of rank one, invariant under the operation, $\varphi(\tilde p\diamond\tilde q,\tilde r)+\varphi(\tilde q,\tilde p\diamond\tilde r)=0$, with radical the vector subspace $\mathrm{Vect}(\mathbb{H})$ and isotropic cone the same subspace.</p>
@@ -103,13 +103,13 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>$K(\tilde x,\tilde x)=3x_0^2-2\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$</td>
+<td>$K(\tilde x,\tilde x)=3x_0^2-2\lvert\vec x\rvert^2$</td>
 <td>$0$</td>
 <td>$9$</td>
 <td>no</td>
 </tr>
 <tr>
-<td>$N(\tilde x)=x_0^2+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$</td>
+<td>$N(\tilde x)=x_0^2+\lvert\vec x\rvert^2$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>no</td>
@@ -120,7 +120,7 @@ $$</p>
 <h2 id="the-invertibility-criterion-is-not-transferred">The Invertibility Criterion Is Not Transferred</h2>
 <p><strong>Remark (the criterion of the parent is not read here).</strong> The general quaternionic product $\tilde p^{\natural}\tilde q$ is left-unital with left unit $e_t$, and its invertibility is decided by the non-vanishing of its algebraic norm $N$, the diagonal of $\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_t+(\vec p,\vec q)$ (<em>Norm and Invertibility in the General Quaternionic Algebra</em>). That form belongs to a different product, and the block has neither a unit to invert against nor an algebraic norm of its own, so no criterion is transferred. The absence is total in the further sense that every nonzero element is a zero divisor of the block (<em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em>), so the block is as far from a division algebra as its dimension allows.</p>
 <h2 id="summary">Summary</h2>
-<p>The antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde x\diamond\tilde y=e_t$ has no solution because every value is a pure vector. The algebraic norm of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, so the diagonal is the zero function, and a vanishing quadratic form is not an algebraic norm: the block carries <strong>no algebraic norm</strong>. The square vanishes identically and the conjugated square is the pure vector $-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, central exactly on the centre and the vector subspace. Two quadratic objects survive: the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_t$, of rank one, invariant, radical and isotropic cone the vector subspace; and the operator trace form $K(\tilde A,\tilde B)=3A_0B_0-2(\vec A,\vec B)$, non-degenerate of signature $(1,3)$ and not invariant. Neither is multiplicative, and at $(e_t,e_t)$ the left side vanishes while the right side is $1$, $9$, $1$ for $\varphi$, $K$ and $N$. The norm $N$ of the parent product is a form of a different product; no invertibility criterion is transferred, and the place of both the norm and the inverse is taken by their absence.</p>
+<p>The antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde x\diamond\tilde y=e_t$ has no solution because every value is a pure vector. The algebraic norm of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, so the diagonal is the zero function, and a vanishing quadratic form is not an algebraic norm: the block carries <strong>no algebraic norm</strong>. The square vanishes identically and the conjugated square is the pure vector $-2x_0\vec x$, central exactly on the centre and the vector subspace. Two quadratic objects survive: the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_t$, of rank one, invariant, radical and isotropic cone the vector subspace; and the operator trace form $K(\tilde A,\tilde B)=3A_0B_0-2(\vec A,\vec B)$, non-degenerate of signature $(1,3)$ and not invariant. Neither is multiplicative, and at $(e_t,e_t)$ the left side vanishes while the right side is $1$, $9$, $1$ for $\varphi$, $K$ and $N$. The norm $N$ of the parent product is a form of a different product; no invertibility criterion is transferred, and the place of both the norm and the inverse is taken by their absence.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -143,7 +143,7 @@ $$</p>
 <td>the algebraic norm of the block, the zero function; the block carries no algebraic norm</td>
 </tr>
 <tr>
-<td>$\tilde x\diamond\tilde x=0$, $\tilde x\diamond\tilde x^{\natural}=-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$</td>
+<td>$\tilde x\diamond\tilde x=0$, $\tilde x\diamond\tilde x^{\natural}=-2x_0\vec x$</td>
 <td>the square vanishes; the conjugated square is a pure vector</td>
 </tr>
 <tr>
