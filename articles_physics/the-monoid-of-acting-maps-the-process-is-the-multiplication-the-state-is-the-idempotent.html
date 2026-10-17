@@ -51,13 +51,13 @@
       <div class="article-body">
         <h1 id="the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent"><strong>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Two articles of the corpus describe an element of the biquaternion algebra as an operator. <em>The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</em> writes the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*}$ as the congruence $X\mapsto M X M^{\dagger}$ on the matrix image, and <em>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em> writes the same sandwich as a product of the two regular maps, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$. Both are statements about a matrix that represents the element.</p>
-<p>This article records the abstract statement that the two matrix articles realize. An element <strong>is</strong> the map "multiply by it": the left multiplication $L_{\tilde{Q}}:\tilde{R}\mapsto\tilde{Q}\tilde{R}$ and the right multiplication $R_{\tilde{Q}}:\tilde{R}\mapsto\tilde{R}\tilde{Q}$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a <strong>monoid</strong>. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.</p>
+<p>Two articles of the corpus describe an element of the biquaternion algebra as an operator. <em>The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</em> writes the sandwich $\operatorname{H}_{\tilde{Q}}(\tilde{Q}_1) = \tilde{Q}\tilde{Q}_1\tilde{Q}^{*}$ as the congruence $X\mapsto M X M^{\dagger}$ on the matrix image, and <em>The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</em> writes the same sandwich as a product of the two regular maps, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$. Both are statements about a matrix that represents the element.</p>
+<p>This article records the abstract statement that the two matrix articles realize. An element <strong>is</strong> the map "multiply by it": the left multiplication $L_{\tilde{Q}}:\tilde{Q}_1\mapsto\tilde{Q}\tilde{Q}_1$ and the right multiplication $R_{\tilde{Q}}:\tilde{Q}_1\mapsto\tilde{Q}_1\tilde{Q}$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a <strong>monoid</strong>. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.</p>
 <p>The second half turns to the other half of the dictionary. The <strong>states</strong> of the framework are the projectors, not the maps: a projector is a Hermitian idempotent, the projectors that carry the states lie in the informational sector and the material sector has none, and a projector is a <strong>non-invertible</strong> map. So the dictionary of the article is one line. The <strong>process</strong> is the map side, where the reversible processes are the units off the light cone; the <strong>state</strong> is the projector side, and the rank-one projectors are null, so they lie <strong>on</strong> the light cone. The cone is therefore not a border between two disjoint halves: it is where the non-invertible maps are and where the states sit, while a unit is an element off the cone.</p>
 <h2 id="the-two-one-sided-actions">The Two One-Sided Actions</h2>
 <p>For an element $\tilde{P}$ of the algebra, the <strong>left multiplication</strong> and the <strong>right multiplication</strong> are the maps</p>
 <p>$$
-L_{\tilde{P}} : \tilde{R} \mapsto \tilde{P}\tilde{R}, \qquad\qquad R_{\tilde{P}} : \tilde{R} \mapsto \tilde{R}\tilde{P}.
+L_{\tilde{P}} : \tilde{Q}_1 \mapsto \tilde{P}\tilde{Q}_1, \qquad\qquad R_{\tilde{P}} : \tilde{Q}_1 \mapsto \tilde{Q}_1\tilde{P}.
 $$</p>
 <p>Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_t) = \tilde{P}$ and $R_{\tilde{P}}(e_t) = \tilde{P}$. Their <strong>composition rules</strong> are the associativity of the product read on the maps,</p>
 <p>$$
@@ -67,7 +67,7 @@ $$</p>
 <p>$$
 L_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}}\circ L_{\tilde{P}},
 $$</p>
-<p>for every pair, because $\tilde{P}(\tilde{R}\tilde{Q}) = (\tilde{P}\tilde{R})\tilde{Q}$ is the same associativity. The first of the two rules is the one the article turns on: <strong>the left multiplications compose into the left multiplication of the product</strong>, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.</p>
+<p>for every pair, because $\tilde{P}(\tilde{Q}_1\tilde{Q}) = (\tilde{P}\tilde{Q}_1)\tilde{Q}$ is the same associativity. The first of the two rules is the one the article turns on: <strong>the left multiplications compose into the left multiplication of the product</strong>, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The rule $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ has a name and a consequence. The map</p>
 <p>$$
@@ -94,7 +94,7 @@ $$</p>
 <h2 id="the-sandwich-as-a-composition-of-two-actions">The Sandwich as a Composition of Two Actions</h2>
 <p>The operator of the two matrix articles is the composition of a left action with a right action. With the Hermitian conjugation ${}^{*}$,</p>
 <p>$$
-\operatorname{H}_{\tilde{Q}}(\tilde{R}) = \tilde{Q}\tilde{R}\tilde{Q}^{*} = L_{\tilde{Q}}\bigl(R_{\tilde{Q}^{*}}(\tilde{R})\bigr) = (L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}})(\tilde{R}),
+\operatorname{H}_{\tilde{Q}}(\tilde{Q}_1) = \tilde{Q}\tilde{Q}_1\tilde{Q}^{*} = L_{\tilde{Q}}\bigl(R_{\tilde{Q}^{*}}(\tilde{Q}_1)\bigr) = (L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}})(\tilde{Q}_1),
 $$</p>
 <p>so that</p>
 <p>$$
@@ -137,7 +137,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$L_{\tilde{P}}$, $R_{\tilde{P}}$</td>
-<td>left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{R})=\tilde{P}\tilde{R}$, $R_{\tilde{P}}(\tilde{R})=\tilde{R}\tilde{P}$</td>
+<td>left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{Q}_1)=\tilde{P}\tilde{Q}_1$, $R_{\tilde{P}}(\tilde{Q}_1)=\tilde{Q}_1\tilde{P}$</td>
 </tr>
 <tr>
 <td>$L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$</td>

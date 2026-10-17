@@ -128,8 +128,8 @@ $$</p>
 <h3 id="additivity-and-the-determination-by-the-table">Additivity and the Determination by the Table</h3>
 <p><strong>Proposition.</strong> The multiplication is <strong>$\mathbb{C}$-bilinear</strong>: it is additive in each variable and</p>
 <p>$$
-(\tilde P+\tilde Q)\star\tilde R=\tilde P\star\tilde R+\tilde Q\star\tilde R , \qquad
-\tilde R\star(\tilde P+\tilde Q)=\tilde R\star\tilde P+\tilde R\star\tilde Q , \qquad
+(\tilde P+\tilde Q)\star\tilde Q_4=\tilde P\star\tilde Q_4+\tilde Q\star\tilde Q_4 , \qquad
+\tilde Q_4\star(\tilde P+\tilde Q)=\tilde Q_4\star\tilde P+\tilde Q_4\star\tilde Q , \qquad
 (A\tilde P)\star\tilde Q=A(\tilde P\star\tilde Q)=\tilde P\star(A\tilde Q) , \qquad A\in\mathbb{C} .
 $$</p>
 <p><strong>Proof.</strong> The natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde P)^{\natural}=\lambda\tilde P^{\natural}$, and the plain product is $\mathbb{C}$-bilinear; the three identities follow. Equivalently they are read coordinate by coordinate on the developed form, every coordinate of which is a sum of terms $P_\mu Q_\nu$ with fixed coefficients.</p>
@@ -200,14 +200,14 @@ $$</p>
 <p><strong>Proof.</strong> $(\vec e_x\star \vec e_x)\star \vec e_x=e_t\star \vec e_x=\vec e_x$ while $\vec e_x\star(\vec e_x\star \vec e_x)=\vec e_x\star e_t=-\vec e_x$, and the two differ because $\vec e_x\neq-\vec e_x$.</p>
 <p><strong>Proposition (the associator).</strong> The <strong>associator</strong> of the multiplication,</p>
 <p>$$
-[\tilde P,\tilde Q,\tilde R]=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R) ,
+[\tilde P,\tilde Q,\tilde Q_4]=(\tilde P\star\tilde Q)\star\tilde Q_4-\tilde P\star(\tilde Q\star\tilde Q_4) ,
 $$</p>
 <p>is</p>
 <p>$$
-[\tilde P,\tilde Q,\tilde R]=\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R .
+[\tilde P,\tilde Q,\tilde Q_4]=\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4 .
 $$</p>
-<p><strong>Proof.</strong> The product satisfies $(\tilde P\star\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde P\star\tilde Q)\star\tilde R=(\tilde P\star\tilde Q)^{\natural}\tilde R=\tilde Q^{\natural}\tilde P\tilde R$, while $\tilde P\star(\tilde Q\star\tilde R)=\tilde P^{\natural}(\tilde Q\star\tilde R)=\tilde P^{\natural}\tilde Q^{\natural}\tilde R$. The difference is the displayed form.</p>
-<p><strong>Corollary.</strong> The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}$, on the right by $\tilde R$.</p>
+<p><strong>Proof.</strong> The product satisfies $(\tilde P\star\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde P\star\tilde Q)\star\tilde Q_4=(\tilde P\star\tilde Q)^{\natural}\tilde Q_4=\tilde Q^{\natural}\tilde P\tilde Q_4$, while $\tilde P\star(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}\tilde Q^{\natural}\tilde Q_4$. The difference is the displayed form.</p>
+<p><strong>Corollary.</strong> The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}$, on the right by $\tilde Q_4$.</p>
 <p><strong>Corollary.</strong> The multiplication agrees with the plain product, and is therefore associative and commutative, on the scalar line $\mathbb{C}e_t$, which is the fixed subspace of $\natural$; and it is not associative on the subspace spanned by $e_t$ and any one of $\vec e_x,\vec e_y,\vec e_z$, by the witness above. Associativity of the $\natural$-product is thus the triviality of the conjugation, which happens on the scalar line alone.</p>
 <h3 id="the-unit">The Unit</h3>
 <p><strong>Proposition.</strong> The element $e_t$ is a <strong>left unit</strong> of the multiplication: $e_t\star\tilde Q=\tilde Q$ for every $\tilde Q$. It is the only left unit.</p>
@@ -217,10 +217,10 @@ $$</p>
 <p><strong>Remark.</strong> The two actions of the unit by multiplication are therefore the identity and a conjugation: the left action is the identity, $e_t\star\tilde Q=\tilde Q$, and the right action is the natural conjugation, $\tilde Q\star e_t=\tilde Q^{\natural}$. Neither is a two-sided unit, and no element of $\mathbb{B}$ is one, so the multiplication has a unit on one side alone. The left multiplications nonetheless compose, in reversed order, by the proposition below, and that is why the comparison of the four records a monoid of left multiplications for this product although the product has no two-sided unit.</p>
 <p><strong>Proposition (the left multiplications).</strong> The left multiplications $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ compose in the reversed order of the algebra,</p>
 <p>$$
-L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P} ,
+L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P} ,
 $$</p>
 <p>so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B}$.</p>
-<p><strong>Proof.</strong> $L_{\tilde P}(L_{\tilde R}(\tilde Q_1))=\tilde P^{\natural}(\tilde R^{\natural}\tilde Q_1)=(\tilde R\tilde P)^{\natural}\tilde Q_1=L_{\tilde R\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.</p>
+<p><strong>Proof.</strong> $L_{\tilde P}(L_{\tilde Q_4}(\tilde Q_1))=\tilde P^{\natural}(\tilde Q_4^{\natural}\tilde Q_1)=(\tilde Q_4\tilde P)^{\natural}\tilde Q_1=L_{\tilde Q_4\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.</p>
 <h3 id="non-commutativity-and-the-centre">Non-Commutativity and the Centre</h3>
 <p><strong>Proposition.</strong> The multiplication is <strong>not commutative</strong>.</p>
 <p><strong>Proof.</strong> $\vec e_x\star \vec e_y=-\vec e_z$ while $\vec e_y\star \vec e_x=\vec e_z$.</p>
@@ -303,7 +303,7 @@ $$</p>
 \end{aligned}
 \ }
 $$</p>
-<p>Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.</p>
+<p>Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -354,12 +354,12 @@ $$</p>
 <td>the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$</td>
 </tr>
 <tr>
-<td>$[\tilde P,\tilde Q,\tilde R]$</td>
-<td>the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde R$</td>
+<td>$[\tilde P,\tilde Q,\tilde Q_4]$</td>
+<td>the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde Q_4$</td>
 </tr>
 <tr>
 <td>$L_{\tilde P}$</td>
-<td>the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P}$</td>
+<td>the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P}$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$</td>

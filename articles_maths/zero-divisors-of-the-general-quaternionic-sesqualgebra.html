@@ -89,9 +89,9 @@ the algebra.</p>
 <p><strong>The results.</strong> A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_t=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_t\neq0$ with $\sum_k Q_k^{2}=-Q_t^{2}$, and the square-zero elements, of real dimension four, lie in the <strong>non-pure</strong> family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.</p>
 <h2 id="the-definition">The Definition</h2>
 <p><strong>Definition (zero divisor of a product).</strong> Let $\star$ be a product on $\mathbb{B}$. A nonzero
-element $\tilde Q$ is a <strong>left zero divisor of $\star$</strong> when there is a nonzero $\tilde R$ with
-$\tilde Q\star\tilde R = 0$; a <strong>right zero divisor of $\star$</strong> when there is a nonzero $\tilde R$
-with $\tilde R\star\tilde Q = 0$; and a <strong>zero divisor of $\star$</strong> when it is a left zero divisor
+element $\tilde Q$ is a <strong>left zero divisor of $\star$</strong> when there is a nonzero $\tilde Q_2$ with
+$\tilde Q\star\tilde Q_2 = 0$; a <strong>right zero divisor of $\star$</strong> when there is a nonzero $\tilde Q_2$
+with $\tilde Q_2\star\tilde Q = 0$; and a <strong>zero divisor of $\star$</strong> when it is a left zero divisor
 or a right zero divisor. The equation and the pair both name the product, so the notion is relative
 to it; the general definition, with the two-sided reading, is <em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
 <p>Throughout this article the product is the general quaternionic sesquilinear product
@@ -105,16 +105,16 @@ if</p>
 <p>$$
 C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = 0 .
 $$</p>
-<p><strong>Proof.</strong> The product is $\tilde Q\star\tilde R = \tilde Q^{\natural}\tilde R^{*}$. An element
-$\tilde R$ runs through $\mathbb{B}$ exactly when $\tilde R^{*}$ does, because ${}^{*}$ is a
-bijection, so the existence of a nonzero $\tilde R$ with $\tilde Q\star\tilde R = 0$ is the
+<p><strong>Proof.</strong> The product is $\tilde Q\star\tilde Q_2 = \tilde Q^{\natural}\tilde Q_2^{*}$. An element
+$\tilde Q_2$ runs through $\mathbb{B}$ exactly when $\tilde Q_2^{*}$ does, because ${}^{*}$ is a
+bijection, so the existence of a nonzero $\tilde Q_2$ with $\tilde Q\star\tilde Q_2 = 0$ is the
 existence of a nonzero $\tilde Q_1$ with $\tilde Q^{\natural}\tilde Q_1 = 0$, that is,
-$\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Q_1 = \tilde R^{*}$.
+$\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Q_1 = \tilde Q_2^{*}$.
 The zero-divisor criterion of the plain algebra says that this happens exactly when
 $C(\tilde Q^{\natural}) = 0$, and the natural conjugation keeps the three vector squares and the
 scalar square, so $C(\tilde Q^{\natural}) = Q_t^2 + \sum_k Q_k^2 = C(\tilde Q)$. The left statement
-follows; the right statement is the same computation with $\tilde R^{\natural}\tilde Q^{*} = 0$,
-which for varying $\tilde R$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;
+follows; the right statement is the same computation with $\tilde Q_2^{\natural}\tilde Q^{*} = 0$,
+which for varying $\tilde Q_2$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;
 the plain criterion applied to $\tilde Q^{*}$ gives back one condition because
 $C(\tilde Q^{*}) = \overline{C(\tilde Q)}$ vanishes exactly when $C(\tilde Q)$ does. The two
 conditions are one, which is the statement.</p>
@@ -124,9 +124,9 @@ an element of $C = 0$ whose scalar part vanishes is a nilpotent of the plain alg
 the square of a zero divisor need not vanish at all.</p>
 <p><strong>Example.</strong> The element $\tilde Q = \vec e_x + i\vec e_y$ has $\vec Q = \vec e_x + i\vec e_y$, so
 $C(\tilde Q) = 1 + i^2 = 0$ and it is a zero divisor. Its left partner is the element
-$\tilde R = ie_t - \vec e_z$, for which</p>
+$\tilde Q_2 = ie_t - \vec e_z$, for which</p>
 <p>$$
-\tilde Q\star\tilde R = (\vec e_x+i\vec e_y)^{\natural}(ie_t-\vec e_z)^{*} = (-\vec e_x-i\vec e_y)(-ie_t+\vec e_z) = 0 ,
+\tilde Q\star\tilde Q_2 = (\vec e_x+i\vec e_y)^{\natural}(ie_t-\vec e_z)^{*} = (-\vec e_x-i\vec e_y)(-ie_t+\vec e_z) = 0 ,
 $$</p>
 <p>and its square is</p>
 <p>$$
@@ -189,7 +189,7 @@ cones are the same subset of $\mathbb{B}$.</p>
 <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> have the same zero-divisor set,
 namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is <em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>,
 and it holds for the left and the right reading separately.</p>
-<p><strong>Proof.</strong> The four products are $\theta(\tilde Q)\phi(\tilde R)$ with
+<p><strong>Proof.</strong> The four products are $\theta(\tilde Q)\phi(\tilde Q_2)$ with
 $\theta \in \{\mathrm{id}, {}^{\natural}\}$ and $\phi \in \{\mathrm{id}, {}^{*}\}$, and both
 $\theta$ and $\phi$ are bijections preserving the vanishing of the central square, so the plain
 criterion transfers to each of the four. The general-argument form is in the cited article.</p>
@@ -209,7 +209,7 @@ place where the GQS zero-divisor theory says something the plain theory does not
 $\tilde Q\star\tilde Q = 0$ is a zero divisor of $\star$, and the square-zero elements form a
 proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family.</p>
 <p><strong>Proof.</strong> If $\tilde Q\star\tilde Q = 0$ then $\tilde Q$ is a zero divisor with
-$\tilde R = \tilde Q$. The identification with the family $c(\vec u + i)$, its dimension and its
+$\tilde Q_2 = \tilde Q$. The identification with the family $c(\vec u + i)$, its dimension and its
 non-purity are <em>Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra</em>.</p>
 <p><strong>Corollary (the contrast with the plain product).</strong> In the plain algebra the square-zero elements
 are the pure zero divisors and the non-pure zero divisors have non-vanishing square; in the GQS the

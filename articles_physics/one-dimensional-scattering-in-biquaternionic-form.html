@@ -54,7 +54,7 @@
 <p>One-dimensional scattering is the simplest problem in which a quantum system meets a potential it cannot be confined by: a wave comes in from the left, and part of it is reflected and part transmitted. It is also the problem in which the two quantities that every later scattering article of this subcategory uses — the <strong>flux</strong> and the <strong>scattering matrix</strong> — are constructed from scratch, in the clearest possible setting. This article treats the one-dimensional biquaternion Schrödinger equation for a piecewise-constant potential, obtains the reflection and transmission amplitudes for the step, the rectangular barrier, the delta potential, and the square well, and reads the results in the algebra.</p>
 <p>The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is</p>
 <p>$$
-\tilde H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
+H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
 $$</p>
 <p>a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is <strong>no spin-flip channel</strong>, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.</p>
 <p>The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.</p>
@@ -63,11 +63,11 @@ $$</p>
 <h3 id="the-equation-and-its-reduction">The equation and its reduction</h3>
 <p>For a particle of mass $m$ in a real potential $V(x)$, the stationary equation is</p>
 <p>$$
-\tilde H\,\psi = E\,\psi,
+H\,\psi = E\,\psi,
 \qquad
-\tilde H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_0(x)\,e_t,
+H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_0(x)\,e_t,
 $$</p>
-<p>with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $\tilde H$ is central, the equation is componentwise the scalar equation</p>
+<p>with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation</p>
 <p>$$
 -\frac{\hbar^2}{2m}\phi''(x) + V(x)\phi(x) = E\,\phi(x)
 $$</p>
@@ -376,7 +376,7 @@ $$</p>
 <td>State module</td>
 </tr>
 <tr>
-<td>$\tilde H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$</td>
+<td>$H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$</td>
 <td>Central Hamiltonian</td>
 </tr>
 <tr>

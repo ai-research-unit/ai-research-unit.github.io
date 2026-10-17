@@ -81,7 +81,7 @@ $$</p>
 <h2 id="the-sesquilinear-objects-in-the-model">The Sesquilinear Objects in the Model</h2>
 <p><strong>The ternary product and the quadratic representation.</strong> The ternary product is the matrix product</p>
 <p>$$
-\mathsf{M}_2\bigl(\{\tilde{P},\tilde{Q},\tilde{R}\}\bigr)=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{R}),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
+\mathsf{M}_2\bigl(\{\tilde{P},\tilde{Q},\tilde{Q}_2\}\bigr)=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{Q}_2),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
 $$</p>
 <p>the <strong>middle model</strong> of the matrix algebra, and its quadratic representation is $Z\mapsto ZY^{\dagger}Z$.</p>
 <p><strong>The associator.</strong> The associator is</p>
@@ -120,11 +120,11 @@ $$</p>
 <td>$XY^{\dagger}$</td>
 </tr>
 <tr>
-<td>ternary product $\{\tilde{P},\tilde{Q},\tilde{R}\}$</td>
+<td>ternary product $\{\tilde{P},\tilde{Q},\tilde{Q}_2\}$</td>
 <td>$XY^{\dagger}Z$</td>
 </tr>
 <tr>
-<td>associator $[\tilde{P},\tilde{Q},\tilde{R}]$</td>
+<td>associator $[\tilde{P},\tilde{Q},\tilde{Q}_2]$</td>
 <td>$X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$</td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@ $$</p>
 <p>$$
 \langle\tilde{Q},\tilde{P}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
 $$</p>
-<p>the <strong>Hilbert–Schmidt pairing</strong> of the matrices; since $\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P}^{*}\tilde{Q}))=\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})$ by the trace identity $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$.</p>
+<p>the <strong>Hilbert–Schmidt pairing</strong> of the matrices; since $\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P}^{*}\tilde{Q}))=\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.</p>
 <p><strong>Theorem (the Frobenius norm).</strong> On the diagonal,</p>
 <p>$$
 \langle\tilde{Q},\tilde{Q}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr) = \tfrac12\bigl\lVert \mathsf{M}_2(\tilde{Q})\bigr\rVert_F^2 = \sum_\mu|Q_\mu|^2 = \lVert\tilde{Q}\rVert_E^2 ,
